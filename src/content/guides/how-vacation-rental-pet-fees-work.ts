@@ -125,7 +125,7 @@ Airbnb's current help page allows hosts to use four structures:
 - A flat fee per pet.
 - A flat fee per pet per night.
 
-It also says guests can specify how many pets they plan to bring and that the pet fee is shown as part of the nightly rate and in the total price at checkout. [[2]](https://www.airbnb.com/help/article/3623)
+It also says guests can specify how many pets they plan to bring and that the pet fee is shown as part of the nightly rate and in the total price at checkout. [[1]](https://www.airbnb.com/help/article/3623)
 
 This matters because older explanations may describe Airbnb pet fees as flat per-stay charges only. Do not apply that assumption to a current booking.
 
@@ -137,7 +137,7 @@ Seeing a fee reflected in a nightly display does not prove the host charges it o
 
 ### Enter the pet details before comparing totals
 
-Airbnb recommends telling the host about your pets and checking restrictions even when the property allows them. A pet-friendly label does not establish that your animal's size, breed, count, or intended routine is accepted. [[3]](https://www.airbnb.com/help/article/86)
+Airbnb recommends telling the host about your pets and checking restrictions even when the property allows them. A pet-friendly label does not establish that your animal's size, breed, count, or intended routine is accepted. [[2]](https://www.airbnb.com/help/article/86)
 
 For a reliable quote:
 
@@ -151,9 +151,9 @@ If a fee mentioned in messages appears inconsistent with the quoted total, ask w
 
 ## How Vrbo says fees are displayed
 
-Vrbo's current upfront-pricing help page says displayed prices include mandatory fees and service fees. Its general description excludes taxes until checkout, while also noting that some jurisdictions require taxes to be included earlier. It says travelers see the final breakdown, including taxes, before confirming. [[4]](https://help.vrbo.com/articles/About-Price-Display)
+Vrbo's current upfront-pricing help page says displayed prices include mandatory fees and service fees. Its general description excludes taxes until checkout, while also noting that some jurisdictions require taxes to be included earlier. It says travelers see the final breakdown, including taxes, before confirming. [[3]](https://help.vrbo.com/articles/About-Price-Display)
 
-Its fee-management help page identifies pets, cleaning, and extra guests as standard fee categories and tells hosts to enter charges in the fee settings rather than merely in listing text. [[5]](https://help.vrbo.com/articles/How-do-I-manage-my-fees)
+Its fee-management help page identifies pets, cleaning, and extra guests as standard fee categories and tells hosts to enter charges in the fee settings rather than merely in listing text. [[4]](https://help.vrbo.com/articles/How-do-I-manage-my-fees)
 
 ### What this means for a dog owner
 
@@ -184,7 +184,7 @@ Rental B has a pet fee but is $10 cheaper at this stage. Taxes, service charges,
 
 Use the [comparison tool](/tools/compare) with identical dates, people, and pets. Compare the final payable expense alongside cancellation terms and practical suitability.
 
-A $20 saving is not useful if the dog is too large for the policy or cannot manage the entrance. Pair the cost check with our [large-dog rental guide](/guides/vacation-rentals-that-welcome-large-dogs) or [rental checklist](/guides/pet-friendly-vacation-rental-checklist).
+A $10 saving is not useful if the dog is too large for the policy or cannot manage the entrance. Pair the cost check with our [large-dog rental guide](/guides/vacation-rentals-that-welcome-large-dogs) or [rental checklist](/guides/pet-friendly-vacation-rental-checklist).
 
 ### Find the break-even point
 
@@ -198,11 +198,11 @@ That comparison concerns only the pet charge. It becomes useful after you establ
 
 ## Service animals cannot be charged ordinary pet fees
 
-Service animals are not pets. Under the ADA, covered entities cannot charge a pet surcharge for a service animal. The Department of Justice also explains that hotels cannot charge a special cleaning fee for hair or dander from a service animal, although actual damage can be charged under the same general damage rules applied to other guests. [[6]](https://www.ada.gov/resources/service-animals-faqs/)
+Service animals are not pets. The Department of Justice's ADA service-animal requirements say that a business requiring a deposit or fee from patrons with pets must waive that charge for service animals, and that people with service animals cannot be charged fees not charged to other patrons without animals. [[7]](https://www.ada.gov/resources/service-animals-2010-requirements/) Its FAQ adds that hotels may not charge guests for cleaning hair or dander shed by a service animal, although a hotel may charge the same fee for damage as it charges other guests. [[6]](https://www.ada.gov/resources/service-animals-faqs/)
 
 The scope matters: the ADA does not automatically apply identically to every privately rented home. Other laws and platform rules may also apply.
 
-Airbnb's pet-fee help page explicitly states that service animals stay free. Vrbo states that hosts with properties in countries that have service-animal laws must accommodate guests requiring service animals regardless of the normal pet policy. [[7]](https://www.airbnb.com/help/article/3623) [[8]](https://help.vrbo.com/articles/What-is-HomeAway-s-service-animal-policy)
+Airbnb's pet-fee help page explicitly states that service animals stay free. Vrbo states that hosts with properties in countries that have service-animal laws must accommodate guests requiring service animals regardless of the normal pet policy. [[1]](https://www.airbnb.com/help/article/3623) [[5]](https://help.vrbo.com/articles/What-is-HomeAway-s-service-animal-policy)
 
 ### Keep three distinctions clear
 
@@ -210,7 +210,7 @@ Airbnb's pet-fee help page explicitly states that service animals stay free. Vrb
 
 **Actual damage is different from routine animal presence.** A service animal's protected status does not provide blanket immunity from legitimate damage charges.
 
-**Emotional support animals are not automatically ADA service animals.** The ADA generally defines a service dog by trained work or tasks related to a disability. Other jurisdictions and platform policies can provide additional protections. Check the applicable current policy rather than assuming every category is treated identically. [[9]](https://www.ada.gov/resources/service-animals-2010-requirements/)
+**Emotional support animals are not automatically ADA service animals.** The ADA generally defines a service dog by trained work or tasks related to a disability. Other jurisdictions and platform policies can provide additional protections. Check the applicable current policy rather than assuming every category is treated identically. [[7]](https://www.ada.gov/resources/service-animals-2010-requirements/)
 
 If you encounter an animal-related surcharge that appears inconsistent with these protections, save the message and price details and contact the platform. Do not misrepresent a pet as a service animal to avoid charges.
 
@@ -226,7 +226,7 @@ First, establish what the charge is for. It may be a missing pet declaration, an
 4. Ask where it was disclosed before booking.
 5. Contact platform support if the explanation conflicts with the booking.
 
-Vrbo's fee-management guidance says hosts can send a payment request to add a charge to an existing reservation. That describes a collection mechanism; it does not by itself establish that every proposed extra charge is valid. [[10]](https://help.vrbo.com/articles/How-do-I-manage-my-fees)
+Vrbo's fee-management guidance says hosts can send a payment request to add a charge to an existing reservation. That describes a collection mechanism; it does not by itself establish that every proposed extra charge is valid. [[4]](https://help.vrbo.com/articles/How-do-I-manage-my-fees)
 
 Do not silently ignore a request, but do not pay an unexplained duplicate simply to end the conversation.
 
@@ -305,7 +305,7 @@ Add the financial tasks to the [trip checklist](/tools/checklist). Once you know
     },
     {
       q: "Can a rental charge a pet fee for a service animal?",
-      a: "Ordinary pet surcharges cannot be imposed on service animals under applicable ADA protections, and Airbnb explicitly says service animals stay free. Legal coverage and platform rules must be considered for the particular accommodation. Actual damage and standard charges applying to all guests are separate matters.",
+      a: "Where the ADA applies, DOJ says pet fees and deposits must be waived for service animals and hotels cannot charge for cleaning hair or dander, and Airbnb explicitly says service animals stay free. Legal coverage and platform rules must be considered for the particular accommodation. Actual damage and standard charges applying to all guests are separate matters.",
     },
     {
       q: "Does paying a pet fee cover damage?",
@@ -392,13 +392,13 @@ Add the financial tasks to the [trip checklist](/tools/checklist). Once you know
           "Guest comparison needs, refundable-money accounting, and verified platform displays need a separate treatment.",
       },
       {
-        url: "https://www.homeexchange.com/blog/pet-friendly-airbnb-alternative/",
-        title: "Which Platforms Let You Filter For Pet Friendly Accommodations?",
+        url: "https://encyclopedia.lodgify.com/pet-fee",
+        title: "Pet Fee",
         checkedOn: "2026-11-16",
         coversWell:
-          "Cross-platform discovery filters and the limits of pet-friendly labels.",
+          "Definition of a flat nonrefundable pet fee versus a refundable deposit, per-stay, per-night and per-pet structures, and a short service-animal note.",
         gaps:
-          "Some fee-display descriptions differ from current official help pages; traveler arithmetic and deposit distinctions are limited.",
+          "Written almost entirely from the host side; no guest total-cost arithmetic, cancellation treatment, caps, or sourcing for its price ranges and legal claims.",
       },
       {
         url: "https://community.hospitable.com/industry-conversations-33/vrbo-pet-fees-1391",

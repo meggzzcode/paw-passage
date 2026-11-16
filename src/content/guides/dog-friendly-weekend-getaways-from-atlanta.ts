@@ -38,24 +38,26 @@ The recommendations below are editorial matches, not claims that every part of a
 | Red Top Mountain State Park | A park-centered trip without making a farther mountain town essential | Is the park open, and which route matches your dog’s ability? |
 | Tallulah Gorge State Park | A rim-view outing with clear limits | Are you content to skip the suspension-bridge staircase and gorge floor? |
 
-Official tourism sources describe Dahlonega, Ellijay, Helen, and Blue Ridge as North Georgia destinations. The park descriptions and dog-access distinctions in this guide come from Georgia DNR, not from a general destination label. [[1]](https://exploregeorgia.org/city/blue-ridge) [[10]](https://exploregeorgia.org/city/dahlonega) [[2]](https://www.blueridgemountains.com/) [[3]](https://gastateparks.org/RedTopMountain) [[4]](https://gastateparks.org/TallulahGorge/)
+Official tourism sources profile Dahlonega [[5]](https://www.dahlonega.org/plan/getting-here/) [[10]](https://exploregeorgia.org/city/dahlonega), Ellijay [[6]](https://exploregeorgia.org/international/featured-destination/ellijay), Helen [[7]](https://exploregeorgia.org/things-to-do/list/top-things-to-do-in-helen-georgia), and Blue Ridge [[1]](https://exploregeorgia.org/city/blue-ridge) [[2]](https://www.blueridgemountains.com/) as destinations north of Atlanta. The park descriptions and dog-access distinctions in this guide come from Georgia DNR, not from a general destination label. [[3]](https://gastateparks.org/RedTopMountain) [[4]](https://gastateparks.org/TallulahGorge/)
 
 ## Driving: what the published estimates actually tell you
 
 An “Atlanta” drive time is incomplete without a departure address, destination address, traffic assumption, and allowance for stops. Do not use a tourism headline as a promise about a Friday departure from your home.
 
-Here is what the sources reviewed actually publish:
+Here is what the sources reviewed actually publish, beside a modeled estimate for each route:
 
-| Destination | Published baseline | How to use it |
-| --- | --- | --- |
-| Dahlonega | Discover Dahlonega says one hour north of Atlanta and lists Atlanta at 71 miles; Explore Georgia also says an hour’s drive north | Treat this as a broad visitor-bureau estimate; route your own address |
-| Ellijay | Explore Georgia describes it as 90 minutes north of Atlanta; Atlanta.com gives about 85 miles and 1 hour 45 minutes from downtown with no major delays, and warns Friday afternoons and fall apple-season weekends are slowest | Use it for initial comparison, not a guaranteed arrival time |
-| Helen | Explore Georgia says 90 minutes north of Atlanta; Atlanta.com gives roughly 1 hour 45 minutes to 2 hours from downtown | The reviewed estimates span about 90–120 minutes, but their starting assumptions differ |
-| Blue Ridge | Its tourism office says 90 miles north of Atlanta; Atlanta.com gives about 93 miles from downtown (Five Points) and about 2 hours in moderate traffic, within a 1 hour 45 minutes to 2 hours 15 minutes range | Plan on roughly 2 hours from downtown, more on a Friday evening |
-| Red Top Mountain | Atlanta.com gives about 35–45 miles and 40–50 minutes from downtown (Five Points), without stating a traffic assumption | Heavy Friday-evening and Sunday-afternoon I-75 traffic can lengthen it |
-| Tallulah Gorge | No official or tourism-bureau route time was found. The park page gives a street address only | Obtain a current route estimate before comparing it by travel time |
+| Destination | Published baseline | Modeled free-flow estimate (no traffic) | How to use it |
+| --- | --- | --- | --- |
+| Dahlonega | Discover Dahlonega says one hour north of Atlanta and lists Atlanta at 71 miles; Explore Georgia also says an hour’s drive north | About 84 min / 65 mi | Treat the published figure as a broad visitor-bureau estimate; route your own address |
+| Ellijay | Explore Georgia describes it as 90 minutes north of Atlanta; Atlanta.com gives about 85 miles and 1 hour 45 minutes from downtown with no major delays, and warns Friday afternoons and fall apple-season weekends are slowest | About 94 min / 78 mi | Use it for initial comparison, not a guaranteed arrival time |
+| Helen | Explore Georgia says 90 minutes north of Atlanta; Atlanta.com gives roughly 1 hour 45 minutes to 2 hours from downtown | About 113 min / 87 mi | The reviewed published estimates span about 90–120 minutes, but their starting assumptions differ |
+| Blue Ridge | Its tourism office says 90 miles north of Atlanta via I-575 (no drive time given); Atlanta.com gives about 93 miles from downtown (Five Points) and about 2 hours in moderate traffic, within a 1 hour 45 minutes to 2 hours 15 minutes range | About 111 min / 93 mi | Plan on roughly 2 hours from downtown, more on a Friday evening |
+| Red Top Mountain | Atlanta.com gives about 35–45 miles and 40–50 minutes from downtown (Five Points), without stating a traffic assumption | About 51 min / 40 mi | Heavy Friday-evening and Sunday-afternoon I-75 traffic can lengthen it |
+| Tallulah Gorge | No official or tourism-bureau route time was found. The park page gives a street address and GPS coordinates but no route time | About 133 min / 99 mi | Use the modeled figure for comparison only, and check a current route estimate before travel |
 
 Sources for the published driving information are Discover Dahlonega, Explore Georgia, Atlanta.com (the Atlanta tourism site), and the Blue Ridge tourism office. These are published estimates, not live traffic measurements or independently timed drives, and no single traffic assumption applies across them. [[5]](https://www.dahlonega.org/plan/getting-here/) [[6]](https://exploregeorgia.org/international/featured-destination/ellijay) [[7]](https://exploregeorgia.org/things-to-do/list/top-things-to-do-in-helen-georgia) [[8]](https://atlanta.com/faq/getting-here-and-around/how-far-from-atlanta-to-helen-ga) [[9]](https://www.blueridgemountains.com/plan-your-trip/getting-here/) [[10]](https://exploregeorgia.org/city/dahlonega) [[20]](https://atlanta.com/faq/getting-here-and-around/how-far-is-ellijay-from-atlanta) [[21]](https://atlanta.com/faq/getting-here-and-around/how-far-is-blue-ridge-from-atlanta) [[22]](https://atlanta.com/articles/state/state-parks-in-georgia-near-atlanta)
+
+The modeled column is our own computation, not a published figure. It uses OpenStreetMap road data through the public OSRM routing engine, run on 2026-11-16 from the Georgia State Capitol in downtown Atlanta to each town’s centre or the park’s coordinates. It assumes free-flowing traffic with no stops, so real trips are usually longer, especially on Friday afternoons. [[23]](https://project-osrm.org/)
 
 For your own comparison, enter the actual departure and accommodation addresses, choose your intended departure time, and record the range returned by your mapping service. Then add your dog’s normal stop needs and any final cabin-access instructions.
 
@@ -136,7 +138,7 @@ FIND Outdoors’ pet guidance says dogs are welcome at Anna Ruby Falls as long a
 
 Before making the waterfall your essential outing, check the current FIND Outdoors page for hours, trail conditions, and any alerts.
 
-For Unicoi, Georgia DNR identifies the park as managed and operated by the North Georgia Mountains Authority and Coral Hospitality and links visitors to its official operator. Use that route to obtain current information rather than assuming every detail is covered by a general state-park summary. [[14]](https://gastateparks.org/unicoi/)
+For Unicoi, Georgia DNR identifies the park as managed and operated by the North Georgia Mountains Authority and Coral Hospitality, and its page has a “Visit official website” link. Use the park’s official website or contact channels to obtain current information rather than assuming every detail is covered by a general state-park summary. [[14]](https://gastateparks.org/unicoi/)
 
 Helen works best here as a base to investigate, not as a blanket endorsement of every nearby activity.
 
@@ -160,7 +162,7 @@ That distinction should decide the outing.
 
 If the suspension bridge is your main reason for going, this is not the dog-inclusive version of that visit. Do not arrive expecting a member of your group to improvise an unsuitable waiting arrangement with the dog.
 
-The official trails page describes the North and South Rim Trails as having exposed roots, inclines, and some stairs. “Rim” does not mean flat or automatically suitable for a dog with limited mobility. Review the map and ask staff which section matches your requirements. [[16]](https://gastateparks.org/TallulahGorge/Trails)
+The official trails page describes both the North and South Rim Trails as having mulched surfaces with exposed roots and as moderate with inclines; only the North Rim Trail is described as having stairs. “Rim” does not mean flat or automatically suitable for a dog with limited mobility. Review the map and ask staff which section matches your requirements. [[16]](https://gastateparks.org/TallulahGorge/Trails)
 
 For an active dog comfortable on an appropriate leash walk, a permitted rim outing may fit. For a dog that needs level ground or substantial distance from passersby, investigate alternatives before paying for a stay organized around this park.
 
@@ -201,7 +203,7 @@ Read our [two-dog guide](/guides/traveling-with-two-dogs-accommodation-guide), [
 
 ## Keep the safety plan simple and usable
 
-The AVMA recommends appropriate vehicle restraint and warns against leaving pets unattended in vehicles. A shaded parking space and cracked windows do not make a parked car safe. Choose meals, errands, and attractions that do not depend on that arrangement. [[18]](https://www.avma.org/resources-tools/pet-owners/petcare/pets-vehicles)
+The AVMA recommends appropriate vehicle restraint and warns against leaving pets unattended in vehicles. Choose meals, errands, and attractions that do not depend on leaving your dog in a parked vehicle. [[18]](https://www.avma.org/resources-tools/pet-owners/petcare/pets-vehicles) The American Kennel Club likewise states that cracking windows does not keep a parked car safe for dogs. [[24]](https://www.akc.org/expert-advice/home-living/dogs-in-hot-cars/)
 
 For a mountain stay, follow Georgia DNR’s BearWise guidance: secure food and rubbish, do not leave pet food outdoors, clean grills, and never approach or feed bears. Ask the host where food and waste should be stored. [[19]](https://georgiawildlife.com/sites/default/files/wrd/pdf/Bearwise%20Basics.pdf)
 
@@ -236,7 +238,7 @@ For the final booking audit, use our [vacation-rental checklist](/guides/pet-fri
     },
     {
       q: "How long does it take to drive from Atlanta to Helen?",
-      a: "The reviewed sources give estimates spanning roughly 90–120 minutes, but they do not all use identical starting assumptions. Atlanta.com specifies about 1 hour 45 minutes to 2 hours from downtown. Check your exact departure and lodging addresses for your travel time.",
+      a: "The reviewed published estimates span roughly 90–120 minutes, but they do not all use identical starting assumptions. Atlanta.com specifies about 1 hour 45 minutes to 2 hours from downtown. Our modeled free-flow estimate from downtown Atlanta is about 113 minutes (87 miles) with no traffic or stops, so real trips are usually longer. Check your exact departure and lodging addresses for your travel time.",
     },
     {
       q: "Can I bring my dog to Tallulah Gorge’s suspension bridge?",
@@ -399,6 +401,18 @@ For the final booking audit, use our [vacation-rental checklist](/guides/pet-fri
       publisher: "Atlanta.com",
       accessedOn: "2026-11-16",
     },
+    {
+      title: "OSRM routing engine / OpenStreetMap contributors",
+      url: "https://project-osrm.org/",
+      publisher: "OpenStreetMap contributors / Project OSRM",
+      accessedOn: "2026-11-16",
+    },
+    {
+      title: "Dogs in Hot Cars",
+      url: "https://www.akc.org/expert-advice/home-living/dogs-in-hot-cars/",
+      publisher: "American Kennel Club",
+      accessedOn: "2026-11-16",
+    },
   ],
   research: {
     primaryKeyword: "dog friendly weekend getaways from Atlanta",
@@ -464,14 +478,14 @@ For the final booking audit, use our [vacation-rental checklist](/guides/pet-fri
         coversWell:
           "Ten destinations at varying distances with mileage from Atlanta, contributor tips, and a note that the author travels with a dog.",
         gaps:
-          "Only Helen and Chattanooga are described as dog-friendly. Drive times are inconsistent (mostly mileage only), the page appears dated to around 2020, and several destinations are 200-plus miles away. It has no route-specific rule audit and no lodging contingency plan.",
+          "The intro says most trips are dog-friendly or can be adapted, but only Helen and Chattanooga are specifically described as dog-friendly. Drive times are inconsistent (mostly mileage only), the page appears dated to around 2020, and several destinations are 200-plus miles away. It has no route-specific rule audit and no lodging contingency plan.",
       },
       {
         url: "https://exploregeorgia.org/things-to-do/article/wag-your-way-across-georgia-on-a-pet-friendly-road-trip",
         title: "Top Pet-Friendly Road Trips in Georgia | Explore Georgia",
         checkedOn: "2026-11-16",
         coversWell:
-          "An Alpharetta, Columbus, Thomasville, and state-parks route with practical venue details, such as a two-dog, 50-pound-each hotel limit and a restaurant that seats dogs only at the front.",
+          "An Alpharetta, Columbus, Thomasville, and state-parks route with practical venue details, such as a hotel limit of up to two dogs weighing up to 50 pounds and a restaurant that seats dogs only at the front.",
         gaps:
           "No drive times, mileage, or trip length. Pet policies are unverified for most venues, there are no prices or hours, and the statewide route is a different job from a two-night Atlanta decision guide.",
       },
@@ -484,7 +498,7 @@ For the final booking audit, use our [vacation-rental checklist](/guides/pet-fri
       "An unavailable-outing fallback matters on a short trip.",
     ],
     differentiators: [
-      "A transparent table separating sourced tourism estimates, their stated starting points, and the destination (Tallulah Gorge) with no published route time.",
+      "A transparent table separating sourced tourism estimates, their stated starting points, and the destination (Tallulah Gorge) with no published route time, plus a labeled modeled no-traffic estimate for each route.",
       "Dog-type decision criteria rather than an unsupported ranking of towns.",
       "An explicit Tallulah Gorge rim-versus-bridge distinction using park rules.",
       "Separate treatment of Anna Ruby Falls and Unicoi access, fees, and operators, with FIND Outdoors' pet rules.",

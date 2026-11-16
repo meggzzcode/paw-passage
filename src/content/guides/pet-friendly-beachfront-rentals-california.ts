@@ -45,7 +45,7 @@ The City of San Diego identifies Dog Beach at the west end of the San Diego Rive
 
 For an active, socially comfortable dog, proximity to that specific area may matter more than a direct ocean view. For a dog who finds approaching dogs stressful, a designated leash-free beach may be the wrong centerpiece for the holiday even when keeping your own dog leashed is possible.
 
-San Diego also identifies Fiesta Island as leash optional, generally open from 4 a.m. to 10 p.m. Its current guidance excludes nesting sites and the Youth Aquatic Center/Camp, with additional marked nesting-buffer closures from April 15 through September 15. Those buffers concern least terns; they should not be confused with snowy-plover restrictions elsewhere. [[2]](https://www.sandiego.gov/park-and-recreation/parks/dogs/bchdog)
+San Diego also identifies Fiesta Island as leash optional, generally open from 4 a.m. to 10 p.m. Its current guidance excludes nesting sites and the Youth Aquatic Center/Camp, with additional marked nesting-buffer closures from April 15 through September 15. The city names least terns only for the gated nesting sites, so do not read the buffer closures as a separate tern rule or confuse them with snowy-plover restrictions elsewhere. [[2]](https://www.sandiego.gov/park-and-recreation/parks/dogs/bchdog)
 
 Outside the designated dog areas, the city's page says dogs are restricted at other beaches and bays without listing hours for each. For other areas of Mission Bay Park it lists time-of-day restrictions (no dogs from 9 a.m. to 4 p.m. between October 31 and March 31, or from 9 a.m. to 6 p.m. between April 1 and October 31, with leashes required at other times). Because those date ranges overlap on October 31, the page does not settle which rule applies that day; it points readers to the city's Ask Parks contact. For any ordinary beach, check the city page and the entrance sign for current hours. A host's “dogs love the beach here” is not an adequate rule check.
 
@@ -140,7 +140,7 @@ Include the parking lot and approach in your heat assessment, not just the tempe
 
 ### Saltwater and sand ingestion
 
-Bring drinking water and a bowl. The ASPCA advises rinsing dogs after swimming and not leaving pets unsupervised near water. Its summer-conditions release lists sand and saltwater ingestion as preventable beach hazards and advises watching pets closely. [[13]](https://www.aspca.org/pet-care/general-pet-care/hot-weather-safety-tips) [[14]](https://www.aspca.org/about-us/press-releases/aspca-reveals-top-5-preventable-pet-conditions-summer)
+Bring drinking water and a bowl. The ASPCA advises rinsing dogs after swimming and not leaving pets unsupervised around a pool. Its summer-conditions release lists sand and saltwater ingestion as preventable beach hazards and advises watching pets closely. [[13]](https://www.aspca.org/pet-care/general-pet-care/hot-weather-safety-tips) [[14]](https://www.aspca.org/about-us/press-releases/aspca-reveals-top-5-preventable-pet-conditions-summer)
 
 Interrupt digging, chewing sand-covered toys, or repeated gulping at waves. If your dog becomes ill after suspected ingestion, contact a veterinarian promptly rather than assuming it is ordinary travel upset. Ask your own vet about medical concerns before the trip.
 
@@ -333,7 +333,7 @@ If you are starting in Los Angeles, compare the travel commitment with our [week
         title: "Dog Friendly Vacation Rentals in San Diego | Salt & Sky",
         checkedOn: "2026-11-16",
         coversWell:
-          "Lists 12 dog-welcoming homes grouped by area, notes that pet fees and dog limits vary by home, and asks guests to add the dog when booking.",
+          "Lists 12 dog-welcoming listings (some overlap, since one is a bundle of four other listed homes) grouped by area, notes that pet fees and dog limits vary by home, and asks guests to add the dog when booking.",
         gaps:
           "Inventory-led. Gives no fee amounts, dog limits, breed or size rules, or Dog Beach rules, and does not address beach access outside Ocean Beach.",
       },
@@ -362,7 +362,7 @@ If you are starting in Los Angeles, compare the travel commitment with our [week
         coversWell:
           "Directory page describing dog-welcoming beachfront rentals in Oceanside, Carlsbad, and Encinitas, with unit sizes suited to solo trips or groups, and advice to call ahead about access.",
         gaps:
-          "Replaces beachfront-only.com, which returned HTTP 403 when fetched. Gives no pet fees, dog limits, leash or beach rules, and lists step-free access and suitability for older dogs as unconfirmed.",
+          "Replaces beachfrontonly.com, which returned HTTP 403 when fetched. Gives no pet fees, dog limits, leash or beach rules, and lists step-free access and suitability for older dogs as unconfirmed.",
       },
     ],
     gapsFound: [

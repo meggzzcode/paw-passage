@@ -22,7 +22,7 @@ You cannot establish that from a lawn photograph. Before paying, ask for the com
 
 Write a short containment profile before searching. Include your dog's size, known escape behavior, reactions to wildlife or passing dogs, and anything that changes in unfamiliar places. A dog who stays beside you at home may still need careful management at a strange house.
 
-The American Kennel Club's fence guidance emphasizes matching the boundary to the dog's behavior, strength, and activity level, rather than choosing on appearance alone. Its escape-prevention advice considers jumping, climbing, and digging as different problems. [[1]](https://www.akc.org/expert-advice/home-living/types-dog-fences/) [[2]](https://www.akc.org/expert-advice/home-living/how-to-keep-a-dog-from-escaping-the-yard/)
+The American Kennel Club's fence guidance says a dog's habits and activity level help determine the right fence, and that dogs who chase wildlife need height and strength. It also lists looks, privacy, and budget among the considerations. Its escape-prevention advice considers jumping, climbing, and digging as different problems. [[1]](https://www.akc.org/expert-advice/home-living/types-dog-fences/) [[2]](https://www.akc.org/expert-advice/home-living/how-to-keep-a-dog-from-escaping-the-yard/)
 
 For booking purposes, translate that into specific questions:
 
@@ -240,7 +240,7 @@ Save your arrival checks in the [travel checklist](/tools/checklist). The best o
         "title": "Secure Enclosed Garden Holiday Cottages: What to Look For",
         "url": "https://www.bolberrycourt.com/blog/secure-enclosed-garden-holiday-cottages",
         "checkedOn": "2026-11-16",
-        "coversWell": "Full page read. Covers checking gates for working latches, gaps under fencing, broken boards, and hedging density, and asks hosts for multi-angle photos, a video walkthrough, fence height, recent maintenance records, and reviews from dog owners.",
+        "coversWell": "Full page read. Covers checking gates for working latches, gaps under fencing, broken boards, and hedging density, and asks hosts for multi-angle photos, a video walkthrough, fence height, and reviews from dog owners; asks how often fencing and gates are inspected and maintained, whether there are known weak points or repairs needed, and requests photos of any recent maintenance work.",
         "gaps": "Published by a single cottage and promotes it. No pool or water-feature guidance beyond a mention of ponds, no service or contractor access, and the 1.2 to 1.8 metre height range in its FAQ has no source."
       },
       {
@@ -248,20 +248,20 @@ Save your arrival checks in the [travel checklist](/tools/checklist). The best o
         "url": "https://dogtripbritain.com/guides/self-catering-dog-secure-garden/",
         "checkedOn": "2026-11-16",
         "coversWell": "Full page read. Defines a secure garden as sole-use and enclosed on every side, matches boundaries to jumpers, diggers, and squeezers, flags launch points and gate gaps, lists seven pre-booking questions, and describes a daylight arrival walk with the first outing on a lead.",
-        "gaps": "UK-focused, with metric height bands that are not sourced. Mentions hot tub covers and ponds but has no pool-separation workflow, no service-visit or gate-handoff planning, and no evidence-pack or dated-record approach."
+        "gaps": "UK-focused, with metric height bands that are not sourced. Mentions hot tubs and ponds as hazards but has no pool-separation workflow, no service-visit or gate-handoff planning, and no evidence-pack or dated-record approach."
       },
       {
         "title": "The Garden Clarity Assessment Kit",
         "url": "https://wagabode.com/resources/garden-clarity-assessment",
         "checkedOn": "2026-11-16",
         "coversWell": "Full page read. Describes a five-check framework (lowest boundary, exit points, shared or overlooked space, what lies beyond, supporting evidence), separates confirmed findings from unknowns, and states that it is a guide, not a safety certificate.",
-        "gaps": "The page describes the downloadable workbook but does not reproduce its prompts, so the workbook itself was not reviewed. No heights or measurement method, and no pool or service-access guidance on the page."
+        "gaps": "The page describes the downloadable workbook but does not reproduce its prompts, so the workbook itself was not reviewed. Asks how high the lowest boundary is but gives no measurement method, and no pool or service-access guidance on the page."
       },
       {
         "title": "What “secure garden” really means on a Dog-Friendly holiday",
         "url": "https://woodfarmbarns.com/blog/what-secure-garden-really-means-on-a-dog-friendly-holiday/",
         "checkedOn": "2026-11-16",
-        "coversWell": "Full page read. Frames security as suitability for the individual dog, stresses the gap beneath gates, dips and older boundary sections, solid versus see-through boundaries for reactive dogs, and the risk of arrival and unloading moments.",
+        "coversWell": "Full page read. Frames security as suitability for the individual dog, stresses the gap beneath gates, dips, thinning hedges and weak boundary sections, solid versus see-through boundaries for reactive dogs, and the risk of arrival and unloading moments.",
         "gaps": "Short and partly promotional. No heights, gap sizes, inspection method, or evidence requests, and no coverage of pools, water, or service access."
       },
       {

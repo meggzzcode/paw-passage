@@ -19,7 +19,7 @@ export const guide: Guide = {
 
 For a dog-friendly cabin in Georgia, “fenced yard” should be the beginning of your questions, not the end. Your useful question is more specific: can your particular dog move from the cabin into a private outdoor area without encountering an open driveway, an unsuitable flight of stairs, or a gap in the boundary?
 
-Airbnb advises guests to contact the host even when a listing allows pets, explain which animals are coming, and confirm restrictions. Its host guidance also treats a fenced yard and a private patio as separate features worth describing. Neither a pet-friendly filter nor a photograph of one fence section answers all your enclosure questions. [[1]](https://www.airbnb.com/help/article/86) [[2]](https://www.airbnb.com/resources/hosting-homes/a/what-you-need-to-know-about-hosting-pets-463)
+Airbnb advises guests to contact the host even when a listing allows pets, tell the host about the pets you are bringing, and ask whether restrictions apply. Airbnb’s host guidance lists a fenced-in yard or a private patio among the pet-related features guests may want to know about. Neither a pet-friendly filter nor a photograph of one fence section answers all your enclosure questions. [[1]](https://www.airbnb.com/help/article/86) [[2]](https://www.airbnb.com/resources/hosting-homes/a/what-you-need-to-know-about-hosting-pets-463)
 
 This guide is a booking method, not a list of endorsed cabins. No rental has been inspected or tested for this article. Use it when comparing listings around Blue Ridge, Ellijay, Helen, Dahlonega, and the surrounding North Georgia mountains.
 
@@ -145,7 +145,7 @@ Our [host-question tool](/tools/host-questions) can help you turn those concerns
 
 Blue Ridge, Ellijay, Helen, and Dahlonega are useful search areas, not substitutes for checking the actual cabin location.
 
-Official tourism information describes Blue Ridge as a North Georgia mountain destination, while Explore Georgia presents Ellijay, Helen, and Dahlonega as separate North Georgia mountain destinations. Dahlonega’s visitor bureau provides an approach via GA-400; Blue Ridge’s tourism office provides directions via I-75, I-575, and Highway 515. Your final cabin approach still needs its own check. [[3]](https://www.blueridgemountains.com/plan-your-trip/getting-here/) [[4]](https://exploregeorgia.org/article/a-black-travelers-guide-to-the-north-georgia-mountains) [[5]](https://www.dahlonega.org/plan/getting-here/)
+Official tourism information places Blue Ridge within the North Georgia Mountains and the Southern Blue Ridge, while Explore Georgia’s city pages place Ellijay, Helen, and Dahlonega in the North Georgia mountains. Dahlonega’s visitor bureau provides an approach via GA-400; Blue Ridge’s tourism office provides directions via I-75, I-575, and Highway 515. Your final cabin approach still needs its own check. [[3]](https://www.blueridgemountains.com/plan-your-trip/getting-here/) [[4]](https://exploregeorgia.org/city/ellijay) [[13]](https://exploregeorgia.org/city/helen) [[14]](https://exploregeorgia.org/city/dahlonega) [[5]](https://www.dahlonega.org/plan/getting-here/)
 
 Instead of choosing a town first and accepting any nearby cabin, compare three actual addresses:
 
@@ -200,7 +200,7 @@ Then do the local verification yourself:
 
 Ask the host about the final road approach, gate codes, and any access issue that could complicate leaving after dark. Do not mistake a map listing marked “open” for confirmation that a veterinarian can receive your dog.
 
-For the journey, the AVMA recommends appropriate vehicle restraint and warns against leaving pets unattended in vehicles; shade and cracked windows do not make a parked vehicle safe. [[10]](https://www.avma.org/resources-tools/pet-owners/petcare/pets-vehicles)
+For the journey, the CDC advises keeping a pet in the back seat in a harness attached to the seat buckle, or securing a crate so it will not slide, and says never to leave a pet alone in a parked vehicle. [[10]](https://www.cdc.gov/healthy-pets/travel/index.html) The ASPCA adds that it is never safe to leave an animal alone in a parked vehicle even with the windows cracked. [[12]](https://www.aspca.org/news/dangers-leaving-animal-hot-car-and-other-heat-related-hazards)
 
 ## Make the season part of your questions
 
@@ -293,8 +293,8 @@ For the rest of the booking process, use the [vacation-rental checklist](/guides
       accessedOn: "2026-11-16",
     },
     {
-      title: "A Black Traveler's Guide to the North Georgia Mountains",
-      url: "https://exploregeorgia.org/article/a-black-travelers-guide-to-the-north-georgia-mountains",
+      title: "Ellijay, Georgia",
+      url: "https://exploregeorgia.org/city/ellijay",
       publisher: "Explore Georgia",
       accessedOn: "2026-11-16",
     },
@@ -329,14 +329,32 @@ For the rest of the booking process, use the [vacation-rental checklist](/guides
       accessedOn: "2026-11-16",
     },
     {
-      title: "Pet safety in vehicles",
-      url: "https://www.avma.org/resources-tools/pet-owners/petcare/pets-vehicles",
-      publisher: "American Veterinary Medical Association",
+      title: "Pet Travel Safety",
+      url: "https://www.cdc.gov/healthy-pets/travel/index.html",
+      publisher: "Centers for Disease Control and Prevention",
       accessedOn: "2026-11-16",
     },
     {
       title: "Top Things to Do in Helen, Georgia",
       url: "https://exploregeorgia.org/things-to-do/list/top-things-to-do-in-helen-georgia",
+      publisher: "Explore Georgia",
+      accessedOn: "2026-11-16",
+    },
+    {
+      title: "The Dangers of Leaving an Animal in a Hot Car and Other Heat-Related Hazards",
+      url: "https://www.aspca.org/news/dangers-leaving-animal-hot-car-and-other-heat-related-hazards",
+      publisher: "ASPCA",
+      accessedOn: "2026-11-16",
+    },
+    {
+      title: "Helen, Georgia",
+      url: "https://exploregeorgia.org/city/helen",
+      publisher: "Explore Georgia",
+      accessedOn: "2026-11-16",
+    },
+    {
+      title: "Dahlonega, Georgia",
+      url: "https://exploregeorgia.org/city/dahlonega",
       publisher: "Explore Georgia",
       accessedOn: "2026-11-16",
     },
@@ -407,7 +425,7 @@ For the rest of the booking process, use the [vacation-rental checklist](/guides
         coversWell:
           "Read in full. Gives a $50-per-dog fee, a two-dog maximum, house-training and waste rules, supplied dog beds and bowls, and describes the cabin as fully fenced with gates at the staircase.",
         gaps:
-          "Gives no fence height, materials, gate locks, or confirmation that the perimeter is complete, and its bed counts are inconsistent. Does not say whether the resort's dog park is open to guests' dogs, and has no veterinary or wildlife guidance.",
+          "Gives no fence height, materials, gate locks, or confirmation that the perimeter is complete, and its bed counts are inconsistent. Does not say whether the resort's dog park is open to guests' dogs, and has no veterinary guidance and only a passing wildlife note.",
       },
     ],
     gapsFound: [

@@ -6,6 +6,14 @@ export interface AffiliateLink {
   url: string;
   approved: boolean;
   notes?: string;
+  /** "product" links (gear guides) vs "stay" links (booking buttons). Defaults to "stay". */
+  kind?: "stay" | "product";
+}
+
+/** Amazon requires this exact kind of statement wherever its links appear. */
+export const AMAZON_DISCLOSURE = "As an Amazon Associate we earn from qualifying purchases.";
+export function isAmazon(link: AffiliateLink) {
+  return /amazon/i.test(link.network);
 }
 
 export const affiliateLinks: AffiliateLink[] = [];

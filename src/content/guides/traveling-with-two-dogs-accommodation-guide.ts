@@ -120,7 +120,7 @@ Crating is useful only when the individual dog is comfortable with it and the ho
 
 ## Plan meals and resources before arrival
 
-The ASPCA explains that resource guarding can involve food, toys, chew items, and scavenged objects. It describes separate rooms, crates, and barriers as management options for feeding and recommends professional help where risk is significant. [[3]](https://www.aspca.org/pet-care/dog-care/common-dog-behavior-issues/food-guarding)
+The ASPCA explains that resource guarding can involve food, toys, chew items, and scavenged objects. It describes separate rooms, crates, and barriers as management options for feeding and recommends consulting a certified applied animal behaviorist (CAAB/ACAAB) or a veterinary behaviorist, rather than attempting treatment on your own, if you think a dog is likely to bite. [[3]](https://www.aspca.org/pet-care/dog-care/common-dog-behavior-issues/food-guarding)
 
 For a trip, the practical lesson is simple: do not use a holiday rental to test whether the dogs can share more closely than usual.
 
@@ -136,7 +136,7 @@ If either dog guards, use the separation method recommended by your veterinarian
 
 Avoid scattering high-value treats between both dogs, giving chews together in a cramped living room, or leaving a single prized toy in a shared resting area. Take familiar beds rather than relying on one attractive rental-provided bed.
 
-Stiffness, freezing, growling, snapping, or blocking access deserve attention—not an assumption that the dogs will sort it out. The [ASPCA's aggression guidance](https://www.aspca.org/pet-care/dog-care/common-dog-behavior-issues/aggression) describes warning behaviors and the importance of professional assessment. Do not reach between fighting dogs or attempt an improvised confrontation over a guarded object.
+Stiffness, freezing, growling, snapping, or blocking access deserve attention—not an assumption that the dogs will sort it out. The ASPCA's aggression guidance describes warning behaviors and recommends a veterinary check followed by a qualified behavior professional. It also warns that people are often bitten when they try to break up dog fights, because of redirected aggression, so plan to avoid an improvised confrontation over a guarded object. [[4]](https://www.aspca.org/pet-care/dog-care/common-dog-behavior-issues/aggression)
 
 ## Treat the car as part of the booking decision
 
@@ -144,7 +144,7 @@ A property is not a good fit if reaching it requires an unsafe vehicle arrangeme
 
 Before committing, load the actual restraints or secured carriers, both dogs' equipment, and your luggage. Confirm that each dog has an appropriate place without loose cases stacked around them or supplies obstructing access.
 
-The AVMA recommends preparing for pet travel, using appropriate restraint or a secured carrier, and never leaving an animal unattended in a parked vehicle. Discuss medication with your veterinarian rather than borrowing another dog's prescription or improvising a sedative. [[4]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-travel-with-pet-2023.pdf)
+The AVMA recommends preparing for pet travel, safely restraining dogs with harnesses, tethers, or similar accessories, and never leaving pets unattended in a car. It advises talking to your veterinarian about carsickness, and cautions against tranquilizers or sedatives for travel without veterinary advice. [[5]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-travel-with-pet-2023.pdf)
 
 ### Work through the solo-driver problem
 
@@ -183,7 +183,7 @@ For a fenced property, inspect the entire boundary before relying on it. Shared 
 
 ## Solve unattended time before planning outings
 
-Some accommodations prohibit leaving pets alone; others require crating or impose conditions. Veterinary lodging guidance from VCA recommends checking this before the stay rather than assuming it is permitted. [[5]](https://vcahospitals.com/know-your-pet/traveling-with-your-pet-pet-friendly-hotels)
+Some accommodations prohibit leaving pets alone; others require crating or impose conditions. Veterinary lodging guidance from VCA recommends checking this before the stay rather than assuming it is permitted. [[6]](https://vcahospitals.com/know-your-pet/traveling-with-your-pet-pet-friendly-hotels)
 
 There are two separate questions:
 

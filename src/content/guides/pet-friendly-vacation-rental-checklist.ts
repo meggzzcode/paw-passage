@@ -147,7 +147,7 @@ If there is a disagreement, contact platform accessibility support and seek appr
 
 Save the policy shown for your booking, including the deadline, property time zone, refund percentages, and treatment of fees. Check whether there are separate terms for shortening the stay, changing dates, or removing a dog.
 
-Vrbo's cancellation guidance describes multiple policies, seasonal variations, and refund windows measured in the property's time zone. This is why a policy name alone is not enough: read the actual schedule attached to your dates. [[9]](https://help.vrbo.com/articles/What-are-the-cancellation-policy-options)
+Vrbo's cancellation guidance describes several policy options a host can choose from, seasonal variations, and refund windows measured in the property's time zone. This is why a policy name alone is not enough: read the actual schedule attached to your dates. [[9]](https://help.vrbo.com/articles/What-are-the-cancellation-policy-options)
 
 Do not assume a dog's illness, a rejected pet request, or a canceled activity automatically creates a refund right. If buying trip insurance, read covered reasons, pet-related provisions, exclusions, and documentation requirements. Ask the insurer about unclear scenarios rather than relying on a host's description of coverage.
 
@@ -323,18 +323,18 @@ The goal is not to eliminate every inconvenience. It is to avoid discovering, af
         "gaps": "Names fees and refundable deposits without amounts or explanation of how they differ, does not cover cancellation terms or service animals, and gives no guidance on unattended time beyond asking. No platform policy sources."
       },
       {
-        "title": "What to Check Before Booking Dog-Friendly Accommodation",
-        "url": "https://www.pawtal.com.au/dog-friendly-accommodation-checklist/",
+        "title": "8 Pet-friendly Vacation Tips for Rental Guests",
+        "url": "https://blog.itrip.net/vacation-rentals-let-you-bring-your-pets-along/",
         "checkedOn": "2026-11-16",
-        "coversWell": "Read in full. Stresses confirming the exact unit, written policy and approval, access from car to room, fence height and gaps, toilet breaks, noise, shade and heat, unattended dogs, and a place for the dog to settle.",
-        "gaps": "Australian focus. Lists charge types (one-off, nightly, bond) without amounts, and does not cover cancellation, service animals, local regulations or veterinary access. Promotes the site's own paid planning product."
+        "coversWell": "Read in full. Eight short tips: review the pet policy (fees, insurance, liability, terms) before booking, ask the manager about the yard and area, check photos for fenced yards and walkways, prepare the pet for travel, pack familiar food, use ID tags, bring vaccination paperwork, and exercise the pet before departure.",
+        "gaps": "Gives no amounts, and does not cover deposits, cancellation, service animals, unattended-pet rules, or breed, size and number limits. Veterinary content is limited to asking a vet about travel and medications. Published by a rental management company with its own promotional links."
       },
       {
         "title": "How to Find a Truly Pet-Friendly Vacation Rental",
         "url": "https://www.vacationrentalsguide.com/vacation-rental-guides/pet-friendly-vacation-rentals",
         "checkedOn": "2026-11-16",
         "coversWell": "Read in full. Short guide urging readers to read full house rules; asks about per-pet versus per-stay fees, weight, breed and number limits, alone-time and crating, yard fence security, and furniture; notes beach and trail leash rules vary by town and season.",
-        "gaps": "Does not cover deposits, cancellation, service animals or veterinary care, and gives no way to verify a policy. Brief overall."
+        "gaps": "Lists topics to ask about but does not cover deposits, cancellation, service animals or veterinary content. Brief overall."
       },
       {
         "title": "Tips for finding and booking pet-friendly holiday rentals",

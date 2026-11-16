@@ -89,15 +89,15 @@ A practical sequence:
 
 The filter does not establish a no-weight-limit policy. Nor does a pet shown in a photograph prove that guest dogs of the same size are accepted.
 
-### Directories: use size labels to build a shortlist
+### Directories and managers: use summaries to build a shortlist
 
-BringFido's vacation-rental directory displays policy summaries such as “Big dogs OK,” maximum pet counts, and fee wording on results. These are useful for discovering candidates. Read the full policy and confirm the final terms with the accommodation provider before booking. [[2]](https://www.bringfido.com/lodging/rentals/)
+Large managers and pet-travel directories publish general pet pages, but those pages are often not where the limits live. Vacasa's pet-friendly page, for example, says weight limits and the number of dogs allowed vary by home, and that any limits are stated in each listing. [[2]](https://www.vacasa.com/explore/pet-friendly-vacation-rentals) Treat a general page or size label as a way to find candidates, then read the full policy and confirm the final terms with the accommodation provider before booking.
 
-Do not treat a directory summary as more authoritative than a conflicting current rental agreement. Ask the provider to resolve the discrepancy; save the answer.
+Do not treat a summary as more authoritative than a conflicting current rental agreement. Ask the provider to resolve the discrepancy; save the answer.
 
 ### Local managers: search their actual policy vocabulary
 
-Some regional managers organize inventory by their own size categories. One reviewed manager uses a specific “Dogs Over 30lbs” filter, illustrating why a general “large dogs” search may miss relevant inventory. That is a discovery example, not a recommendation of its homes. [[3]](https://www.sunpalacevacationhomes.com/pet-friendly/)
+Some regional managers organize inventory by their own size categories. One reviewed manager uses a specific “Dogs Over 30lb” filter, illustrating why a general “large dogs” search may miss relevant inventory. That is a discovery example, not a recommendation of its homes. [[3]](https://www.sunpalacevacationhomes.com/pet-friendly/)
 
 Useful searches include:
 
@@ -213,7 +213,7 @@ A property without a yard may still work if it has a safe toilet route and suits
 
 ## Match unattended rules to your itinerary
 
-VCA's veterinary lodging guidance recommends verifying whether a pet may stay in the room alone and notes that lodging rules vary. [[6]](https://vcahospitals.com/know-your-pet/traveling-with-your-pet-pet-friendly-hotels)
+VCA's guidance is written for hotels rather than rentals, but the principle carries over. It advises verifying that the hotel allows a pet to stay in the room alone, and notes that some establishments have size or number limits and some have more stringent housekeeping rules. Apply it to a rental as a prompt to ask, not as a rule the rental must follow. [[6]](https://vcahospitals.com/know-your-pet/traveling-with-your-pet-pet-friendly-hotels)
 
 Ask whether:
 
@@ -318,9 +318,9 @@ Save those decisions in the [trip checklist](/tools/checklist). Once a place cle
       accessedOn: "2026-11-16",
     },
     {
-      title: "Top Pet Friendly Vacation Rentals Worldwide",
-      url: "https://www.bringfido.com/lodging/rentals/",
-      publisher: "BringFido",
+      title: "Pet-friendly vacation rentals",
+      url: "https://www.vacasa.com/explore/pet-friendly-vacation-rentals",
+      publisher: "Vacasa",
       accessedOn: "2026-11-16",
     },
     {
@@ -375,40 +375,40 @@ Save those decisions in the [trip checklist](/tools/checklist). Once a place cle
           "Inventory-led rather than a general framework for verifying access, flooring, and written exceptions.",
       },
       {
-        url: "https://www.bringfido.com/lodging/rentals/",
-        title: "Top Pet Friendly Vacation Rentals Worldwide",
+        url: "https://www.vacasa.com/explore/pet-friendly-vacation-rentals",
+        title: "Pet Friendly Vacation Rentals",
         checkedOn: "2026-11-16",
         coversWell:
-          "Scannable large-dog labels, pet counts, and fee summaries across many destinations.",
+          "States that weight limits and dog counts vary by home and are listed in each listing; notes per-dog fees and an unattended-dog rule.",
         gaps:
-          "Readers still need a method to reconcile current host terms and assess mobility or room dimensions.",
+          "Gives no thresholds and does not mention stairs, flooring, written approval, or insurance.",
       },
       {
         url: "https://searanchsonoma.com/pet-friendly",
         title: "Dog-Friendly Vacation Rentals — Sea Ranch to Wine Country",
         checkedOn: "2026-11-16",
         coversWell:
-          "States an explicit weight ceiling and explains property-specific dog counts and fee display.",
+          "States an explicit 50-pound weight ceiling and explains property-specific dog counts and fee display.",
         gaps:
           "Regional inventory with a weight ceiling, not a broader search strategy for dogs above that ceiling.",
       },
       {
-        url: "https://www.bringfido.com/lodging/1086052",
-        title: "Naples Retreat Pet Policy",
+        url: "https://pawventures.pages.dev/blog/dog-friendly-vacation-rental-booking-guide-2026/",
+        title: "Dog Friendly Vacation Rental Booking Guide 2026",
         checkedOn: "2026-11-16",
         coversWell:
-          "A property-policy result illustrating count and weight limits despite general pet-friendly labeling.",
+          "Explains that the pets-allowed filter does not filter by weight, lists common weight cutoffs, and advises written approval and asking whether breed rules are insurance-driven.",
         gaps:
-          "Single-property information; no general method for finding alternatives or checking physical fit.",
+          "Does not define a large dog, and omits stairs, crate sizing, and traction; affiliate-style blog with unverified figures.",
       },
       {
-        url: "https://www.bringfido.com/lodging/597744",
-        title: "Pine Lodge Pet Policy",
+        url: "https://www.avantstay.com/blog/pet-friendly-vacation-rentals-with-fenced-yard/",
+        title: "Pet Friendly Vacation Rentals With Fenced Yard",
         checkedOn: "2026-11-16",
         coversWell:
-          "An explicit example of weight, count, fee, and prior-approval requirements in one policy.",
+          "Fenced-yard listicle with a note that properties may limit pet counts, breeds, or weight, plus a durable-flooring tip.",
         gaps:
-          "Single-property result, not a planning guide; does not address large-dog access or insurance distinctions.",
+          "Does not address large dogs, fence height, stairs, written approval, or insurance.",
       },
     ],
     gapsFound: [

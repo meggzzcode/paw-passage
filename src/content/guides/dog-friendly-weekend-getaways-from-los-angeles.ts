@@ -48,7 +48,20 @@ Two official tourism sources provide useful baselines:
 - Visit Big Bear describes the trip from Los Angeles or San Diego as about **two to three hours**. This is a published range, not a guaranteed arrival window. [[6]](https://www.bigbear.com/travel-tools/big-bear-lake-visitor-safety/)
 - Visit Greater Palm Springs lists **two hours from Los Angeles**. That is a destination-wide planning baseline, not a verified upper bound. [[7]](https://www.visitgreaterpalmsprings.com/plan/getting-here-and-around/)
 
-Visit Santa Barbara's driving page verifies a distance of **92 miles from Los Angeles**, but does not provide a travel-time range. This guide therefore does not attach an invented hour estimate to Santa Barbara. [[8]](https://santabarbaraca.com/plan-your-trip/know-before-you-go/transportation/driving-here/)
+Visit Santa Barbara's driving page verifies a distance of **92 miles from Los Angeles**, but does not provide a travel-time range. [[8]](https://santabarbaraca.com/plan-your-trip/know-before-you-go/transportation/driving-here/)
+
+To fill the gaps, we also computed modeled free-flow routes with the public OSRM router, using OpenStreetMap data, from Los Angeles City Hall to each town's centre on 2026-11-16. These are modeled no-traffic estimates with no stops, not published baselines, and real LA-area trips are usually much longer on Fridays. [[14]](https://project-osrm.org/)
+
+| Destination | Modeled no-traffic time | Modeled distance | Published baseline |
+| --- | --- | --- | --- |
+| Santa Barbara | 117 min | 96 mi | 92 mi (Visit Santa Barbara) |
+| Big Bear Lake Village | 134 min | 98 mi | About 2–3 h (Visit Big Bear) |
+| Palm Springs | 124 min | 107 mi | 2 h (Visit Greater Palm Springs) |
+| Joshua Tree | 153 min | 128 mi | None used |
+| San Diego | 144 min | 120 mi | None used |
+| Idyllwild | 134 min | 109 mi | None used |
+
+Treat the modeled figures as a floor, not a forecast.
 
 Before choosing a rental, enter your actual starting address, destination address, and intended departure time into a current routing service. Check again shortly before leaving. Add your own dog breaks separately rather than assuming they are included in the estimate.
 
@@ -110,7 +123,7 @@ Here, the accommodation needs to carry more of the holiday. Confirm effective ai
 
 Do not book a desert rental on the assumption that you can take your dog along the famous trails in Joshua Tree National Park.
 
-The National Park Service requires leashes no longer than six feet at all times and limits pets to within 100 feet of roads, parking areas, picnic areas, and campgrounds, plus the paved Oasis of Mara and Keys View trails. Pets are not permitted on hiking trails, in the backcountry, or in park buildings, even if carried. Leaving a pet unattended is prohibited. Use the park's own pet page to plan any allowed roadside or developed-area visit rather than interpreting general park admission as dog access. [[3]](https://www.nps.gov/jotr/planyourvisit/pets.htm)
+The National Park Service requires leashes no longer than six feet at all times and requires pets to remain within 100 feet of roads, parking areas, and campgrounds, and also permits them on the paved Oasis of Mara and Keys View trails. Pets are not permitted on hiking trails, in the backcountry, or in park buildings. Leaving a pet unattended is prohibited. Use the park's own pet page to plan any allowed roadside or developed-area visit rather than interpreting general park admission as dog access. [[3]](https://www.nps.gov/jotr/planyourvisit/pets.htm)
 
 A brief permitted visit and a hiking holiday are different products. If the point of your trip is long national-park hikes, arrange appropriate care for the dog or choose another destination. Do not leave the dog in a parked vehicle while you walk.
 
@@ -128,7 +141,7 @@ The City of San Diego identifies Dog Beach at the west end of the San Diego Rive
 
 Choose this alternative because that particular dog-beach outing fits your dog. Do not choose it solely because a rental says “near the beach.”
 
-This guide does not supply an LA-to-San-Diego driving range because no official source for one was available. Check a live route for the actual stay rather than borrowing an optimistic city-to-city estimate from a roundup.
+The modeled no-traffic route from Los Angeles City Hall to central San Diego is about 144 minutes and 120 miles, but real trips are usually longer. Check a live route for the actual stay and departure time. [[14]](https://project-osrm.org/)
 
 ### Idyllwild: pet-welcoming accommodation does not open state-park wilderness
 
@@ -136,7 +149,7 @@ Mount San Jacinto State Park states that dogs are allowed only in the Idyllwild 
 
 That does not mean every surrounding land manager has identical rules. It means you must verify a proposed trail with its actual manager rather than assuming that “Idyllwild is dog-friendly” answers the question.
 
-Treat Idyllwild as a possible quiet accommodation stay until you have established a legal public-outing plan. This guide does not supply a driving-time range for Idyllwild because no official tourism source for one was available; check a live route.
+Treat Idyllwild as a possible quiet accommodation stay until you have established a legal public-outing plan. The modeled no-traffic route from Los Angeles City Hall to Idyllwild is about 134 minutes and 109 miles, with mountain roads and weather not reflected; check a live route. [[14]](https://project-osrm.org/)
 
 ## National-park mistakes worth avoiding
 
@@ -170,7 +183,7 @@ Do not use the word “accessible” as a substitute for measurements. Explain t
 
 ### For heat-sensitive dogs
 
-The ASPCA identifies flat-faced, elderly, overweight, and heart- or lung-compromised pets as needing particular care in hot conditions. It recommends shade, fresh water, avoiding excessive exercise, and air-conditioned indoor space for vulnerable animals. [[12]](https://www.aspca.org/pet-care/general-pet-care/hot-weather-safety-tips)
+The ASPCA identifies flat-faced, elderly, overweight, and heart- or lung-compromised pets as needing particular care in hot conditions. It recommends a shady place, plenty of fresh water, not over-exercising pets, and keeping them indoors when it is extremely hot, with air-conditioned rooms for higher-risk animals. [[12]](https://www.aspca.org/pet-care/general-pet-care/hot-weather-safety-tips)
 
 Choose the forecast and the cooling setup before the destination aesthetic. There is no universal air temperature in this guide that makes exercise safe for every dog.
 
@@ -212,11 +225,11 @@ The right getaway is the one where the dog can join the actual plan comfortably.
   faqs: [
     {
       q: "How long does it take to drive from Los Angeles to Big Bear with a dog?",
-      a: "Visit Big Bear publishes an approximate two-to-three-hour driving range from Los Angeles or San Diego. Treat that as a baseline, then check your exact route and add dog stops separately.",
+      a: "Visit Big Bear publishes an approximate two-to-three-hour driving range from Los Angeles or San Diego. A modeled no-traffic OSRM route from Los Angeles City Hall to Big Bear Lake Village takes about 134 minutes (98 miles), and real trips are usually longer. Check live traffic and add dog stops separately.",
     },
     {
       q: "Can I hike with my dog in Joshua Tree National Park?",
-      a: "Pets are not permitted on hiking trails or in the backcountry. The National Park Service also requires leashes no longer than six feet and limits pets to within 100 feet of roads, parking areas, picnic areas, and campgrounds, plus the paved Oasis of Mara and Keys View trails.",
+      a: "Pets are not permitted on hiking trails or in the backcountry. The National Park Service also requires leashes no longer than six feet and requires pets to remain within 100 feet of roads, parking areas, and campgrounds, and also permits them on the paved Oasis of Mara and Keys View trails.",
     },
     {
       q: "Is Santa Barbara suitable for an off-leash beach weekend?",
@@ -322,6 +335,12 @@ The right getaway is the one where the dog can join the actual plan comfortably.
       publisher: "National Weather Service",
       accessedOn: "2026-11-16",
     },
+    {
+      title: "OSRM routing engine / OpenStreetMap contributors",
+      url: "https://project-osrm.org/",
+      publisher: "OpenStreetMap contributors / Project OSRM",
+      accessedOn: "2026-11-16",
+    },
   ],
   research: {
     primaryKeyword: "dog friendly weekend getaways from Los Angeles",
@@ -347,9 +366,9 @@ The right getaway is the one where the dog can join the actual plan comfortably.
         title: "The Best Dog-Friendly Weekend Getaways from Los Angeles (2026)",
         checkedOn: "2026-11-16",
         coversWell:
-          "Groups about a dozen destinations by drive time, with dog activities, restaurants, lodging, and example pet fees for each. Notes that Joshua Tree allows leashed dogs only on roads, in campgrounds, and at picnic areas, and gives traffic, heat, and altitude tips.",
+          "Groups nine destinations by drive time, with dog activities, restaurants, lodging, and example pet fees for each. Notes that Joshua Tree allows leashed dogs only on roads, in campgrounds, and at picnic areas, and gives traffic, heat, and altitude tips.",
         gaps:
-          "Drive times contradict each other between headings and body text (Santa Barbara, Big Bear, Joshua Tree). Pet fees and policies carry no dates or sources, some visits were hosted, one entry ends mid-sentence, and destinations are not matched to reactive, senior, or heat-sensitive dogs.",
+          "Drive times contradict each other between headings and body text (Joshua Tree, Montecito & Summerland, Big Bear). Pet fees and policies carry no dates or sources, the Huntington Beach visit was hosted, one entry ends mid-sentence, and destinations are not matched to reactive, senior, or heat-sensitive dogs.",
       },
       {
         url: "https://dogtrekker.com/dog-friendly-ojai-ventura/",
@@ -376,14 +395,14 @@ The right getaway is the one where the dog can join the actual plan comfortably.
         coversWell:
           "Ranks 12 small towns within about three hours by drive time, with nightly price ranges, and says it lists a stay as pet-friendly only when the provider's data explicitly allows pets (it lists none for Idyllwild, Tehachapi, or Morongo Valley).",
         gaps:
-          "Names no specific pet-friendly property, pet fees, weight limits, leash rules, or dog-allowed trails and beaches. Offers no seasonal or road notes, and prices are generic town ranges rather than quotes.",
+          "Names no specific pet-friendly property, pet fees, weight limits, leash rules, or dog-allowed trails and beaches. Offers no seasonal notes and only a general remark that times are road estimates, and prices are generic town ranges rather than quotes.",
       },
       {
         url: "https://wetnoseescapades.com/dog-friendly-day-trips-los-angeles/",
         title: "10 BEST Dog-Friendly Day Trips from Los Angeles (2026)",
         checkedOn: "2026-11-16",
         coversWell:
-          "Covers ten day trips with stated no-traffic drive times and some concrete rules: Joshua Tree's six-foot leash and 100-foot-from-roads limit, Catalina ferry muzzle or carrier rules, and Corona del Mar's morning and evening dog hours.",
+          "Covers ten day trips with drive times, most labeled no-traffic, and some concrete rules: Joshua Tree's six-foot leash and 100-foot-from-roads limit, Catalina ferry muzzle or carrier rules, and Corona del Mar's morning and evening dog hours.",
         gaps:
           "Day-trip framing says little about rentals or quiet downtime. Most destinations lack specific leash rules, the page was last updated April 2023, it carries many affiliate links, and heat guidance is limited to general warnings.",
       },
@@ -395,7 +414,7 @@ The right getaway is the one where the dog can join the actual plan comfortably.
       "Accommodation fallback quality matters when the main outdoor activity becomes unsuitable.",
     ],
     differentiators: [
-      "Separates a verified published driving range from a single-point tourism baseline and an unsourced estimate.",
+      "Separates a verified published driving range from a single-point tourism baseline and a labeled modeled no-traffic estimate.",
       "Matches destinations to dog behavior, mobility, and heat sensitivity.",
       "Uses named public-place rules and highlights national-park and state-park exclusions.",
       "Provides a low-pressure two-night structure with accommodation-based fallbacks.",

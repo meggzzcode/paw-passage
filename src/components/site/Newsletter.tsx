@@ -4,12 +4,22 @@ import { site } from "@/config/site";
 export function Newsletter() {
   const { formAction, emailFieldName } = site.newsletter;
   if (!formAction) {
-    if (!import.meta.env.DEV) return null;
+    if (!import.meta.env.DEV) {
+      return (
+        <section className="no-print container-page mt-24">
+          <div className="rounded-xl bg-secondary p-8 text-center">
+            <p className="eyebrow">The Passage letter</p>
+            <h2 className="mt-2 text-2xl">Our newsletter is coming soon.</h2>
+            <p className="mt-2 text-sm text-muted-foreground">New guides and verified stays, now and then. Check back shortly.</p>
+          </div>
+        </section>
+      );
+    }
     return (
       <section className="no-print container-page mt-24">
         <div className="rounded-xl border border-dashed border-terracotta/60 bg-accent/40 p-8 text-sm">
           <p className="font-semibold">Newsletter signup, preview only</p>
-          <p className="mt-1 text-muted-foreground">This section stays hidden on the live site until a Kit or MailerLite form is connected in the site settings, so nobody signs up to a form that saves nothing.</p>
+          <p className="mt-1 text-muted-foreground">The live site shows a "coming soon" note here until a Kit or MailerLite form is connected in the site settings, so nobody signs up to a form that saves nothing.</p>
         </div>
       </section>
     );

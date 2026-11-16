@@ -9,6 +9,13 @@ interface PageMetaInput {
   image?: string; // absolute https only
 }
 
+/** Absolute URL for a path once siteUrl is configured; otherwise the path unchanged. */
+export function absoluteUrl(path: string) {
+  const base: string = site.siteUrl;
+  if (!base || /^https?:\/\//.test(path)) return path;
+  return base.replace(/\/+$/, "") + (path.startsWith("/") ? path : `/${path}`);
+}
+
 export function pageHead({ title, description, path, type = "website", noindex, image }: PageMetaInput) {
   const fullTitle = title.includes(site.name) ? title : `${title} | ${site.name}`;
   const meta: Record<string, string>[] = [
@@ -17,14 +24,15 @@ export function pageHead({ title, description, path, type = "website", noindex, 
     { property: "og:title", content: fullTitle },
     { property: "og:description", content: description },
     { property: "og:type", content: type },
-    { property: "og:url", content: path },
+    { property: "og:url", content: absoluteUrl(path) },
+    { property: "og:site_name", content: site.name },
     { name: "twitter:card", content: "summary_large_image" },
     { name: "twitter:title", content: fullTitle },
     { name: "twitter:description", content: description },
   ];
   if (noindex) meta.push({ name: "robots", content: "noindex, nofollow" });
   if (image) meta.push({ property: "og:image", content: image }, { name: "twitter:image", content: image });
-  return { meta, links: [{ rel: "canonical", href: path }] };
+  return { meta, links: [{ rel: "canonical", href: absoluteUrl(path) }] };
 }
 
 export function breadcrumbLd(items: { name: string; path: string }[]) {

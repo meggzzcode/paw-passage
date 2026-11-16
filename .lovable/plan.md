@@ -1,143 +1,158 @@
-# Paw & Passage — launch-ready build plan
+# Paw & Passage — content-first build, no backend (v1)
 
-The design, page structure and Georgia + California focus from the last plan stay the same. This version restores the full business scope and runs on a Supabase account that you own.
+**Brand:** Paw & Passage. **Tagline:** "Better adventures, together."
+Both live in one settings file, along with the contact email and disclosure text.
 
-## 1. Brand
-- **Paw & Passage** everywhere: page titles, sharing tags, footer, articles and documentation.
-- Name, tagline, contact email and disclosure text live in one settings file.
+The site is a premium editorial travel publication with a searchable stay directory and practical tools. It runs without Lovable Cloud or Supabase. Everything is stored in organized files inside the project, so it exports cleanly to GitHub and can be hosted anywhere.
 
-## 2. Backend: your own Supabase (no Lovable Cloud)
-- **Why this works:** you own the account and the bill, it is easy to hand to a buyer, and I can build everything on it. I see no technical reason to switch to Lovable Cloud.
-- **One limitation:** Lovable's docs describe connecting your own Supabase when a project is created (dashboard, + in the prompt box, Databases, Supabase). This project may need to be recreated that way. If so, I'll carry this plan over.
-- **What I'll build on it:**
-  - Database tables for stays, places, articles and the money features.
-  - Admin sign-in with an admin role stored separately from accounts.
-  - Access rules on every table.
-  - Photo storage for stays and articles.
-- **No fake demo:** until Supabase is connected, I won't fake saving data. Work that doesn't need it gets built first (see milestones).
+## Pages
+- Home
+- Stays directory (`/stays`) and a page for each stay (`/stays/$slug`)
+- Destinations (`/destinations`), Georgia and California pages, and town pages: Blue Ridge, Ellijay, Helen, Dahlonega, San Diego, Santa Barbara, Monterey, Mendocino
+- Guides (`/guides`) and a page for each guide (`/guides/$slug`)
+- Tools (`/tools`), with a page for each of the 4 tools
+- About, Contact, List Your Property, Affiliate Disclosure, Privacy, Terms, Editorial Standards
+- Shared header and footer, breadcrumbs, and a 404 page
 
-## 3. Listings
-- Search and filters read real database records. Filters stay in the web address so results can be shared.
-- **Every stay has a status:** draft, needs verification, verified, published or archived. Only verified and published stays appear publicly.
-- Each stay records when it was last verified, its source, and photo permission.
-- **Demo stays** are flagged as demos, labeled "Example" on screen, hidden from search engines and left out of the sitemap. Demos can be switched off everywhere with one setting.
-- **Admin area for stays:**
-  - Add, edit, verify, publish and remove stays.
-  - Upload photos.
-  - CSV import with a preview, error checking per row, and a downloadable template. Imported stays always start as unverified drafts.
+## Look
+Unchanged from the original brief:
+- **Colors:** ivory background, deep evergreen, terracotta accents, sage and pale blue, charcoal text
+- **Fonts:** Fraunces headings, DM Sans body
+- **Layout and feel:** magazine-style, large destination photos, a few card styles that vary, subtle motion, built for phones first
+- **Avoid:** paw-print clutter, cartoons and repeated sections
 
-## 4. All ten guides (full articles)
+## Stays directory
+**Filters that work together:**
+- Location and stay type
+- Fenced yard, private outdoor space
+- Large dogs, multiple dogs, number of dogs
+- No pet fee, no breed restrictions
+- Beach, mountain, hot tub
+
+**Search page:**
+- Filters stay in the web address, so results can be shared
+- Sort options and a friendly "nothing found" state
+- A filter drawer on phones
+
+**Each stay record holds:**
+- A verification status, its source and the date it was last verified
+- Photo permission
+- An affiliate link (optional)
+- Sponsored settings
+
+**What visitors see:**
+- Only **verified** stays show as real recommendations.
+- Sample stays carry an "Example" label, are hidden from search engines and left out of the sitemap. One setting turns them off everywhere.
+- Unverified stays are never shown.
+
+**Adding stays:**
+- A stays template (CSV plus matching data format) and a small script that converts the CSV into the stay files.
+- No real properties get added until you or I can verify them with permission. Launch therefore starts with labeled examples, and the gap is reported honestly.
+
+## Ten guides (complete articles)
 1. Dog-Friendly Cabins With Fenced Yards in Georgia
 2. Pet-Friendly Beachfront Rentals in California
 3. Dog-Friendly Weekend Getaways From Atlanta
 4. Dog-Friendly Weekend Getaways From Los Angeles
 5. How to Find a Vacation Rental With a Truly Secure Fenced Yard
-6. What to Check Before Booking a Pet-Friendly Airbnb or Vacation Rental
-7. Traveling With Two Dogs: Accommodation Booking Checklist
-8. How to Find Rentals That Welcome Large Dogs
-9. The Ultimate Dog-Friendly Cabin Packing Checklist
-10. Understanding Vacation Rental Pet Fees and Restrictions
+6. What to Check Before Booking a Pet-Friendly Vacation Rental
+7. Traveling With Two Dogs: The Accommodation Planning Guide
+8. How to Find Vacation Rentals That Welcome Large Dogs
+9. What to Pack for a Dog-Friendly Cabin Vacation
+10. How Pet Fees Actually Work at Vacation Rentals
 
-**For each article:**
-- Live web research of at least 5 real competing pages, recording each page's address, title and the date I checked it.
-- Gaps in what those pages cover, plus checks against official sources such as state parks, tourism boards, beach rules and leash laws.
-- At least 3 genuine extras, where the evidence supports them.
-- A full written article in a warm, friend-to-friend voice. No outlines or filler.
-- A research brief saved alongside it.
+**Research for each guide:**
+- Search intent and the questions readers actually ask
+- Live web research of at least 5 real competing pages, recording each page's address, title and the date checked
+- What they cover well, and the gaps
+- Fact checks against official sources: state parks, tourism boards, beach and leash rules, vet guidance
+- A distinctive angle and at least 3 genuine extras
 
-**Articles that will be held as drafts:**
-- Any article missing verified facts is held as a draft, and its brief lists what still needs checking.
-- No article will name a specific property as dog-friendly unless that property has been verified.
+**Each written article includes:**
+- A friend-to-friend voice
+- Checklists, mistakes to avoid and comparisons
+- Links to related guides and tools
+- Sources and a "last reviewed" date
+- Its own search title and description
+- An FAQ, where useful
 
-## 5. Article editor (no coding needed)
-- Create, edit and preview articles in a rich-text editor.
-- **Each article moves through:** draft, research, fact-check, approved, published.
-- **Saved with each article:**
-  - The research brief: keyword, questions, competitors, gaps, angle and sources.
-  - Its sources.
-  - Title and description for search engines, and a sharing image.
-  - Whether search engines may show it.
-  - The last-reviewed date, the author, and related stays and places.
-- Places (states, regions, towns) are editable the same way.
+**Honesty rules:**
+- No invented visits, stays or interviews.
+- Each article keeps a research brief in its file.
+- Any article with unverified facts stays an **unpublished draft**: hidden from search engines and the sitemap, with what's missing listed.
+- Property-specific suggestions appear only when the property is verified.
 
-## 6. Money features
-- **Partner links:** a library of affiliate links for each stay, each with a network name, status (pending/approved) and notes. Booking buttons only show when an approved link exists.
-- **Click tracking:** outbound clicks pass through a redirect at `/go/...` that records the stay, the page and the time, then forwards the visitor. The admin sees click totals.
-- **Sponsored stays:** an on/off switch with start and end dates and an order setting. Sponsored stays carry a visible "Sponsored" label and sponsored links are marked for search engines.
-- **Newsletter:** signups are saved with proof of consent, protected against spam, and exportable as a CSV for the admin. They're ready to connect to an email tool later.
-- **Host inquiries:** a "List your property" form that saves to an admin inbox with statuses. Email alerts can be added later.
+## Interactive tools (work in the browser)
+- **Before-you-book checklist:** tick items off, it saves on your device, and it prints neatly.
+- **Host question generator:** pick your dog's needs (size, count, fencing, breed, fees, pool, crate, quiet hours) and get a ready-to-copy message for the host, plus a list of photos to request.
+- **Pet fee and trip cost calculator:** compare up to 3 stays by nightly rate, pet fees per dog or per stay, cleaning, deposits and taxes, and see the true total.
+- **Stay comparison:** verified (or clearly labeled example) stays side by side, with "not confirmed" shown where data is missing.
+- Each tool links into the matching guides, and the guides link back to the tools.
 
-## 6b. Interactive tools (top priority after listings)
-These tools give visitors a reason to come back and are hard for competitors to copy.
-- **Host-question generator:** visitors answer a few questions about their trip, then get a tailored list of questions to send the host. It covers fence height and gaps, gates, whether the yard is shared or private, pools, crates, how many dogs, size and breed limits, fees and deposits, and quiet hours. It also lists photos to ask for. Visitors can copy, print or email the list to themselves. Results live in a shareable link.
-- **Stay comparison:** pick 2–4 verified stays and see them side by side. It compares pet fees, the dog limit, size and breed rules, fencing, outdoor space, beach or trail access, and when each stay was last verified. Gaps are clearly marked "not confirmed".
-- **Pet-fee calculator:** enter nights and number of dogs, then see the estimated total pet cost for a stay using its stored fee rules.
-- **Searchable inventory:** the verified stay search from section 3 also links into the tools, for example "Compare these" and "Questions for this host".
-- **Packing checklist:** an interactive version of guide 9 that you can tick off, saved on your device.
-- **Built into the guides:** each tool appears inside the matching guides. The guides link to the tools, and the tools link back to the guides.
-- **Measuring use:** tool use is recorded anonymously in the admin area, so you can show return-visit value to a buyer.
+## Money features (no backend needed)
+- **Affiliate links:** one file stores every affiliate link. Booking buttons appear only when a real link exists and carry the right "sponsored" tags. No made-up partnerships.
+- **Sponsored stays:** an on/off switch, a placement setting and a visible "Sponsored" label.
+- **Click tracking:** Google Analytics 4 records outbound clicks once you add your measurement ID. Until then nothing is sent and nothing pretends to track.
+- **Newsletter:** a setting for a Kit or MailerLite form. With no service connected, the public site shows no signup form, only a preview notice in development.
+- **List Your Property:** a clear page explaining what to send, with a business email link.
 
-## 7. Search engines
+## Search engines
 - Every page is fully built on the server.
-- **Every page gets:** its own title and description, a canonical tag, and a noindex setting for drafts, demos and filtered search pages.
-- A sitemap generated from published records, plus a robots file.
-- **Structured data:** articles, breadcrumbs, lodging details and FAQs where real.
-- **Internal links** between guides, destinations and stays.
+- **Every page gets:** a unique title and description, a canonical tag, and social sharing tags.
+- Proper heading order and breadcrumbs.
+- **Structured data:** articles, breadcrumbs, places, lodging and FAQs, where real.
+- A sitemap generated from published content, and a robots file.
+- **Hidden from search engines:** drafts, examples and filtered search pages.
+- Descriptive alt text, compressed images and internal links between destinations, stays and guides.
 
-## 8. Testing
+## Testing
 - **Automated tests:**
-  - Filters combine correctly.
-  - Only verified stays are public.
-  - Demo stays are noindexed.
-  - The CSV importer flags bad rows.
-  - Clicks are recorded.
-  - The question generator gives the right questions for each answer.
-  - The fee calculator gets the math right.
-  - Comparison only accepts verified stays.
-  - Signups and inquiries save.
-  - Non-admins are blocked.
-- A real browser run-through of the main paths, done signed in as admin.
-- **No fake buttons:** nothing on the site pretends to work. Anything waiting on an outside account says so.
+  - Filters combine correctly
+  - Only verified stays are recommended
+  - Drafts and examples are noindexed and left out of the sitemap
+  - The question generator gives the right questions for each answer
+  - The fee calculator gets the math right
+  - Affiliate buttons only appear with a real link
+- A real browser run-through of every page on desktop and phone, checking for dead buttons, broken images and broken links.
+- A separate review pass on the articles.
 
-## 9. Handover to a buyer
-- A `HANDOVER.md` covering:
-  - How to update stays and run CSV imports.
-  - How to publish articles.
-  - How to export data.
-  - How to move the Supabase, GitHub, domain and affiliate accounts to a new owner.
-- An export button in the admin area for stays, articles, subscribers, inquiries and clicks.
-- **GitHub:** you connect it in Project settings, Git. I can't connect it for you.
+## Handover
+A `HANDOVER.md` covering how to:
+- Add a stay, or update a stay's pet policy
+- Add a destination
+- Publish a guide
+- Update affiliate links and change images
+- Connect GA4 and the email service
+- Export to GitHub and deploy elsewhere
 
-## Milestones
-1. Design system, layout, public pages, settings file, SEO groundwork.
-2. Database, admin sign-in, access rules, storage (once Supabase is connected).
-3. Stays: search, detail pages, admin editor, CSV import, demo separation.
-4. Article editor, then the ten researched articles: briefs first, then full articles.
-5. Interactive tools: host-question generator, comparison, fee calculator, checklist.
-6. Money features: partner links, click redirect, sponsored stays, newsletter, host inquiries.
-7. Sitemap, structured data, tests, browser run-through, handover guide.
+The code is organized so a database can be added later without a redesign.
+
+## Order of work
+1. Design system, settings, layout, info pages
+2. Data formats, example stays, destinations, directory and stay pages
+3. Tools
+4. Guides: research briefs, then all ten articles
+5. Search engine setup and sitemap
+6. Tests, browser checks, handover guide
 
 ## Who does what
-**I can build now:** everything in sections 1–9 except the items below.
+**I can do now:** everything above.
 
-**Needs you to connect or approve:**
-- Your Supabase project.
-- GitHub.
-- Affiliate network approvals and their real links.
-- An email marketing tool (for newsletter sending).
-- Optionally, email alerts for host inquiries.
-- Your domain.
-- Legal review of the privacy policy, terms and disclosures (I'll draft them).
+**Needs you:**
+- Your GA4 measurement ID
+- A Kit or MailerLite account and form
+- Approved affiliate links
+- Your business email
+- A domain
+- Connecting GitHub (Project settings, Git)
+- Legal review of the policies I draft
 
 **Needs independent checking:**
-- Every real property: pet policy, fees, fencing, breed and size limits, photos and permission to use them.
-- Article facts marked "unverified" in the research briefs.
-- Current pricing.
+- Every real property (policy, fees, fencing, photos and permission to use them)
+- Any article facts flagged in its research brief
 
-**Can safely wait:**
-- Maps.
-- Member accounts and saved favorites.
-- Advanced analytics.
-- Reviews.
-- Automated price syncing.
-- More states.
+**Can wait:**
+- A database and admin area
+- Member accounts and saved favorites
+- Maps, reviews, price syncing
+- More states

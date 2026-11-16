@@ -29,12 +29,12 @@ export const images = {
   "guide-two-dogs": { src: twoDogs, alt: "Two dogs, one tan and one speckled, sitting side by side on green grass and looking happy" },
   "guide-fenced-yard": { src: fencedYard, alt: "A black dog resting its chin on a stone ledge and looking out from behind a metal fence among green leaves" },
   "guide-large-dogs": { src: largeDogs, alt: "A large brindle Great Dane lying on a couch in a living room with a stone fireplace" },
-  "guide-cabin-packing": { src: cabinPacking, alt: "A black, white and tan collie-type dog lying beside a packed canvas duffel bag in the open back of a car" },
+  "guide-cabin-packing": { src: cabinPacking, alt: "A white dog on a leash wearing a grey and charcoal saddlebag-style pack, standing on a boulder beside a mountain lake" },
   "gear-car-safety": { src: gearCarSafety, alt: "A small tan dog and a small curly black dog, the black one in a harness, sitting together in a padded booster seat on the back seat of a car" },
-  "gear-first-aid": { src: gearFirstAid, alt: "Close-up of a golden-brown dog's paws and pads resting on a sunlit wooden deck" },
+  "gear-first-aid": { src: gearFirstAid, alt: "A small fluffy white dog in a purple hoodie and yellow protective boots standing on rocks and fallen leaves on a forest trail" },
   "gear-feeding": { src: gearFeeding, alt: "A small white dog in a bandana drinking from a bottle with an attached drinking spout held by a person whose face is not shown" },
   "gear-rental-protection": { src: gearRentalProtection, alt: "A pug wrapped in a soft tan throw blanket on a bed with white bedding" },
-  "gear-portable-fence": { src: gearPortableFence, alt: "Black-and-white photo of a happy puppy standing inside a white wire exercise pen" },
+  "gear-portable-fence": { src: gearPortableFence, alt: "A fluffy brown-and-white dog smiling at the camera from the grass behind a white portable mesh fence" },
   "gear-id-tracking": { src: gearIdTracking, alt: "Close-up of a dog's red leather collar with a brass buckle and a round brass ID tag, with a green blurred background outdoors" },
 } as const;
 

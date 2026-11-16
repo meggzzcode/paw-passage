@@ -115,7 +115,7 @@ We do not recommend a specific towel in this guide. We looked at wearable, absor
 
 A back-seat cover protects upholstery from hair, mud, drool and scratches. It is useful in your own car, and it can be useful on a road trip where you will be getting in and out of the car at rest stops, trailheads and beaches.
 
-**A back-seat cover is not a restraint.** It does not keep a dog from being thrown in a collision, and it is not crash protection. Makers rarely claim otherwise. The Ruffwear page, for example, makes no crash-safety or restraint claims. [[6]](https://www.ruffwear.com/products/dirtbag-seat-cover) Treat a cover as an upholstery layer and use a properly fitted harness or crate for safety. Our editors do not have a dedicated car-safety guide published yet, so check your harness or crate maker's own instructions.
+**A back-seat cover is not a restraint.** It does not keep a dog from being thrown in a collision, and it is not crash protection. Makers rarely claim otherwise. The Ruffwear page, for example, makes no crash-safety or restraint claims. [[6]](https://www.ruffwear.com/products/dirtbag-seat-cover) Treat a cover as an upholstery layer and use a properly fitted harness or crate for safety. Our [car-safety guide](/guides/dog-car-safety-harness-and-crate-guide) covers harnesses and crates, and you should also check your harness or crate maker's own instructions.
 
 ### Bench cover or hammock
 
@@ -282,6 +282,7 @@ For the money side, read how [pet fees actually work](/guides/how-vacation-renta
     "pet-friendly-vacation-rental-checklist",
     "dog-friendly-cabin-packing-list",
     "vacation-rentals-that-welcome-large-dogs",
+    "dog-car-safety-harness-and-crate-guide",
   ],
   relatedTools: ["host-questions", "checklist"],
   sources: [

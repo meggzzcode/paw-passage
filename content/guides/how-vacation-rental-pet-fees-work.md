@@ -1,21 +1,128 @@
-import type { Guide } from "../types";
+---
+title: How Pet Fees Actually Work at Vacation Rentals
+seoTitle: How Vacation Rental Pet Fees Actually Work
+seoDescription: Understand per-night, per-stay, and per-dog pet fees, deposits, cleaning charges, Airbnb and Vrbo pricing, and service-animal fee protections.
+dek: Decode the fee wording, separate real costs from refundable money, and compare the total for your actual trip.
+category: Planning
+states: []
+status: published
+author: Paws & Passage Editors
+publishedOn: 2026-11-16
+lastReviewed: 2026-11-16
+readingMinutes: 11
+heroImage: guide-pet-fees
+faqs:
+  - q: Are vacation-rental pet fees charged per night or per stay?
+    a: Either is possible, and fees may also apply per dog or per dog per night. Ask for the complete charge for your exact dates and pet count.
+  - q: Does Airbnb only allow a flat pet fee?
+    a: No. Its current help page describes fees per booking, per night, per pet, and per pet per night. Review the actual booking total rather than relying on older descriptions.
+  - q: Does Vrbo include pet fees in its displayed prices?
+    a: Vrbo says mandatory fees are included in upfront pricing and identifies pet charges as a standard fee category. Enter accurate pet information and reconcile the displayed total with the property's policy. Tax display can vary by jurisdiction.
+  - q: Is a pet deposit the same as a pet fee?
+    a: No. A fee is an agreed expense under the booking terms. A refundable deposit is money that may be returned subject to its conditions. A card hold is another arrangement and can temporarily reduce available credit.
+  - q: Can a rental charge a pet fee for a service animal?
+    a: Where the ADA applies, DOJ says pet fees and deposits must be waived for service animals and hotels cannot charge for cleaning hair or dander, and Airbnb explicitly says service animals stay free. Legal coverage and platform rules must be considered for the particular accommodation. Actual damage and standard charges applying to all guests are separate matters.
+  - q: Does paying a pet fee cover damage?
+    a: Do not assume so. Routine pet cleaning, damage liability, deposits, and damage waivers are distinct. Read the agreement and any protection product's terms.
+relatedGuides:
+  - traveling-with-two-dogs-accommodation-guide
+  - vacation-rentals-that-welcome-large-dogs
+  - pet-friendly-vacation-rental-checklist
+  - vacation-rental-secure-fenced-yard
+relatedTools:
+  - checklist
+  - host-questions
+  - cost-calculator
+  - compare
+sources:
+  - title: Charging pet fees
+    url: https://www.airbnb.com/help/article/3623
+    publisher: Airbnb
+    accessedOn: 2026-11-16
+  - title: Finding places that allow pets
+    url: https://www.airbnb.com/help/article/86
+    publisher: Airbnb
+    accessedOn: 2026-11-16
+  - title: About Vrbo's upfront pricing
+    url: https://help.vrbo.com/articles/About-Price-Display
+    publisher: Vrbo
+    accessedOn: 2026-11-16
+  - title: Manage your fees
+    url: https://help.vrbo.com/articles/How-do-I-manage-my-fees
+    publisher: Vrbo
+    accessedOn: 2026-11-16
+  - title: About the service animal policy
+    url: https://help.vrbo.com/articles/What-is-HomeAway-s-service-animal-policy
+    publisher: Vrbo
+    accessedOn: 2026-11-16
+  - title: Frequently Asked Questions about Service Animals and the ADA
+    url: https://www.ada.gov/resources/service-animals-faqs/
+    publisher: U.S. Department of Justice
+    accessedOn: 2026-11-16
+  - title: "ADA Requirements: Service Animals"
+    url: https://www.ada.gov/resources/service-animals-2010-requirements/
+    publisher: U.S. Department of Justice
+    accessedOn: 2026-11-16
+research:
+  primaryKeyword: how vacation rental pet fees work
+  relatedKeywords:
+    - Airbnb pet fee per night
+    - Vrbo pet fees
+    - pet deposit vs pet fee
+    - vacation rental cleaning fee dogs
+    - service animal pet fee
+  readerQuestions:
+    - Is a pet fee per dog, per night, or per booking?
+    - How do Airbnb and Vrbo display pet-related charges?
+    - Is a refundable deposit part of the trip cost?
+    - Can ordinary cleaning and pet charges both apply?
+    - Can a service animal be charged a pet fee?
+  intendedReader: Travelers comparing pet-friendly vacation-rental prices and trying to avoid misunderstood or duplicate charges.
+  competitors:
+    - url: https://www.hostaway.com/vacation-rental-guide/pet-friendly-hosting/fees/
+      title: "How to Price Pet Fees for Your Vacation Rental: Structures That Maximize Revenue"
+      checkedOn: 2026-11-16
+      coversWell: Fee structures, tiered pricing, deposits, and damage products from a host perspective.
+      gaps: Guest comparison needs, refundable-money accounting, and verified platform displays need a separate treatment.
+    - url: https://encyclopedia.lodgify.com/pet-fee
+      title: Pet Fee
+      checkedOn: 2026-11-16
+      coversWell: Definition of a flat nonrefundable pet fee versus a refundable deposit, per-stay, per-night and per-pet structures, and a short service-animal note.
+      gaps: Written almost entirely from the host side; no guest total-cost arithmetic, cancellation treatment, caps, or sourcing for its price ranges and legal claims.
+    - url: https://community.hospitable.com/industry-conversations-33/vrbo-pet-fees-1391
+      title: VRBO pet fees
+      checkedOn: 2026-11-16
+      coversWell: A real host discussion illustrating pet declaration and fee-visibility confusion.
+      gaps: Community claims are not authoritative platform policy and include interface-specific observations.
+    - url: https://www.uplisting.io/blog/vrbo-can-i-charge-pet-fees-policy-listing-setup-guide
+      title: "Vrbo: Can I Charge Pet Fees? Policy & Listing Setup Guide"
+      checkedOn: 2026-11-16
+      coversWell: Host fee setup, disclosure, and service-animal considerations.
+      gaps: Broad configuration claims need primary-source checking; legal scope and routine versus damage charges need nuance.
+    - url: https://staystra.com/short-term-rental-pet-policy-2026/
+      title: "The STR Host Guide to Pet-Friendly Rentals in 2026: Revenue Premiums, Risk Management, and How to Set the Right Policy"
+      checkedOn: 2026-11-16
+      coversWell: Current host-side discussion of pet-fee structures and rental policy design.
+      gaps: Revenue-led rather than a guest budgeting guide; no need to repeat its proprietary performance claims.
+  gapsFound:
+    - Search results mix older platform descriptions with current fee configurations.
+    - Guest-facing total-cost arithmetic is less common than host pricing advice.
+    - Refundable deposits and card holds are often conflated with final expenses.
+    - Service-animal advice often omits legal scope and the distinction between routine cleaning and damage.
+  differentiators:
+    - Current Airbnb fee structures and Vrbo display policy sourced to official help pages.
+    - Clearly hypothetical comparisons covering four fee units, caps, and break-even pricing.
+    - Separate accounting for final expense, collected deposits, and authorization holds.
+    - Service-animal section distinguishing applicable ADA duties, platform policy, standard charges, and damage.
+    - Practical workflow for reconciling and disputing unexpected charges without promising outcomes.
+  angle: Treat pet fees as a transparent formula and compare final expense separately from temporary cash or credit requirements.
+  unverified: []
+  researchComplete: true
+approvedBy: Paws & Passage Editors
+approvedOn: 2026-11-16
+---
 
-export const guide: Guide = {
-  slug: "how-vacation-rental-pet-fees-work",
-  title: "How Pet Fees Actually Work at Vacation Rentals",
-  seoTitle: "How Vacation Rental Pet Fees Actually Work",
-  seoDescription:
-    "Understand per-night, per-stay, and per-dog pet fees, deposits, cleaning charges, Airbnb and Vrbo pricing, and service-animal fee protections.",
-  dek: "Decode the fee wording, separate real costs from refundable money, and compare the total for your actual trip.",
-  category: "Planning",
-  states: [],
-  status: "published",
-  author: "Paws & Passage Editors",
-  publishedOn: "2026-11-16",
-  lastReviewed: "2026-11-16",
-  readingMinutes: 11,
-  heroImage: "guide-pet-fees",
-  body: `## A pet fee is a formula, not just a number
+## A pet fee is a formula, not just a number
 
 “Dogs welcome, $40 pet fee” is not enough information to budget a stay.
 
@@ -285,165 +392,4 @@ Routine pet cleaning and damage are different categories. Read the agreement.
 - [ ] Dog acceptance and care rules are confirmed.
 - [ ] Relevant terms and messages are saved.
 
-Add the financial tasks to the [trip checklist](/tools/checklist). Once you know the formula, the final expense, and the temporary money required, pet fees become a comparison exercise rather than a checkout surprise.`,
-  faqs: [
-    {
-      q: "Are vacation-rental pet fees charged per night or per stay?",
-      a: "Either is possible, and fees may also apply per dog or per dog per night. Ask for the complete charge for your exact dates and pet count.",
-    },
-    {
-      q: "Does Airbnb only allow a flat pet fee?",
-      a: "No. Its current help page describes fees per booking, per night, per pet, and per pet per night. Review the actual booking total rather than relying on older descriptions.",
-    },
-    {
-      q: "Does Vrbo include pet fees in its displayed prices?",
-      a: "Vrbo says mandatory fees are included in upfront pricing and identifies pet charges as a standard fee category. Enter accurate pet information and reconcile the displayed total with the property's policy. Tax display can vary by jurisdiction.",
-    },
-    {
-      q: "Is a pet deposit the same as a pet fee?",
-      a: "No. A fee is an agreed expense under the booking terms. A refundable deposit is money that may be returned subject to its conditions. A card hold is another arrangement and can temporarily reduce available credit.",
-    },
-    {
-      q: "Can a rental charge a pet fee for a service animal?",
-      a: "Where the ADA applies, DOJ says pet fees and deposits must be waived for service animals and hotels cannot charge for cleaning hair or dander, and Airbnb explicitly says service animals stay free. Legal coverage and platform rules must be considered for the particular accommodation. Actual damage and standard charges applying to all guests are separate matters.",
-    },
-    {
-      q: "Does paying a pet fee cover damage?",
-      a: "Do not assume so. Routine pet cleaning, damage liability, deposits, and damage waivers are distinct. Read the agreement and any protection product's terms.",
-    },
-  ],
-  relatedGuides: [
-    "traveling-with-two-dogs-accommodation-guide",
-    "vacation-rentals-that-welcome-large-dogs",
-    "pet-friendly-vacation-rental-checklist",
-    "vacation-rental-secure-fenced-yard",
-  ],
-  relatedTools: ["checklist", "host-questions", "cost-calculator", "compare"],
-  sources: [
-    {
-      title: "Charging pet fees",
-      url: "https://www.airbnb.com/help/article/3623",
-      publisher: "Airbnb",
-      accessedOn: "2026-11-16",
-    },
-    {
-      title: "Finding places that allow pets",
-      url: "https://www.airbnb.com/help/article/86",
-      publisher: "Airbnb",
-      accessedOn: "2026-11-16",
-    },
-    {
-      title: "About Vrbo's upfront pricing",
-      url: "https://help.vrbo.com/articles/About-Price-Display",
-      publisher: "Vrbo",
-      accessedOn: "2026-11-16",
-    },
-    {
-      title: "Manage your fees",
-      url: "https://help.vrbo.com/articles/How-do-I-manage-my-fees",
-      publisher: "Vrbo",
-      accessedOn: "2026-11-16",
-    },
-    {
-      title: "About the service animal policy",
-      url: "https://help.vrbo.com/articles/What-is-HomeAway-s-service-animal-policy",
-      publisher: "Vrbo",
-      accessedOn: "2026-11-16",
-    },
-    {
-      title: "Frequently Asked Questions about Service Animals and the ADA",
-      url: "https://www.ada.gov/resources/service-animals-faqs/",
-      publisher: "U.S. Department of Justice",
-      accessedOn: "2026-11-16",
-    },
-    {
-      title: "ADA Requirements: Service Animals",
-      url: "https://www.ada.gov/resources/service-animals-2010-requirements/",
-      publisher: "U.S. Department of Justice",
-      accessedOn: "2026-11-16",
-    },
-  ],
-  research: {
-    primaryKeyword: "how vacation rental pet fees work",
-    relatedKeywords: [
-      "Airbnb pet fee per night",
-      "Vrbo pet fees",
-      "pet deposit vs pet fee",
-      "vacation rental cleaning fee dogs",
-      "service animal pet fee",
-    ],
-    readerQuestions: [
-      "Is a pet fee per dog, per night, or per booking?",
-      "How do Airbnb and Vrbo display pet-related charges?",
-      "Is a refundable deposit part of the trip cost?",
-      "Can ordinary cleaning and pet charges both apply?",
-      "Can a service animal be charged a pet fee?",
-    ],
-    intendedReader:
-      "Travelers comparing pet-friendly vacation-rental prices and trying to avoid misunderstood or duplicate charges.",
-    competitors: [
-      {
-        url: "https://www.hostaway.com/vacation-rental-guide/pet-friendly-hosting/fees/",
-        title: "How to Price Pet Fees for Your Vacation Rental: Structures That Maximize Revenue",
-        checkedOn: "2026-11-16",
-        coversWell:
-          "Fee structures, tiered pricing, deposits, and damage products from a host perspective.",
-        gaps:
-          "Guest comparison needs, refundable-money accounting, and verified platform displays need a separate treatment.",
-      },
-      {
-        url: "https://encyclopedia.lodgify.com/pet-fee",
-        title: "Pet Fee",
-        checkedOn: "2026-11-16",
-        coversWell:
-          "Definition of a flat nonrefundable pet fee versus a refundable deposit, per-stay, per-night and per-pet structures, and a short service-animal note.",
-        gaps:
-          "Written almost entirely from the host side; no guest total-cost arithmetic, cancellation treatment, caps, or sourcing for its price ranges and legal claims.",
-      },
-      {
-        url: "https://community.hospitable.com/industry-conversations-33/vrbo-pet-fees-1391",
-        title: "VRBO pet fees",
-        checkedOn: "2026-11-16",
-        coversWell:
-          "A real host discussion illustrating pet declaration and fee-visibility confusion.",
-        gaps:
-          "Community claims are not authoritative platform policy and include interface-specific observations.",
-      },
-      {
-        url: "https://www.uplisting.io/blog/vrbo-can-i-charge-pet-fees-policy-listing-setup-guide",
-        title: "Vrbo: Can I Charge Pet Fees? Policy & Listing Setup Guide",
-        checkedOn: "2026-11-16",
-        coversWell:
-          "Host fee setup, disclosure, and service-animal considerations.",
-        gaps:
-          "Broad configuration claims need primary-source checking; legal scope and routine versus damage charges need nuance.",
-      },
-      {
-        url: "https://staystra.com/short-term-rental-pet-policy-2026/",
-        title: "The STR Host Guide to Pet-Friendly Rentals in 2026: Revenue Premiums, Risk Management, and How to Set the Right Policy",
-        checkedOn: "2026-11-16",
-        coversWell:
-          "Current host-side discussion of pet-fee structures and rental policy design.",
-        gaps:
-          "Revenue-led rather than a guest budgeting guide; no need to repeat its proprietary performance claims.",
-      },
-    ],
-    gapsFound: [
-      "Search results mix older platform descriptions with current fee configurations.",
-      "Guest-facing total-cost arithmetic is less common than host pricing advice.",
-      "Refundable deposits and card holds are often conflated with final expenses.",
-      "Service-animal advice often omits legal scope and the distinction between routine cleaning and damage.",
-    ],
-    differentiators: [
-      "Current Airbnb fee structures and Vrbo display policy sourced to official help pages.",
-      "Clearly hypothetical comparisons covering four fee units, caps, and break-even pricing.",
-      "Separate accounting for final expense, collected deposits, and authorization holds.",
-      "Service-animal section distinguishing applicable ADA duties, platform policy, standard charges, and damage.",
-      "Practical workflow for reconciling and disputing unexpected charges without promising outcomes.",
-    ],
-    angle:
-      "Treat pet fees as a transparent formula and compare final expense separately from temporary cash or credit requirements.",
-    unverified: [],
-    researchComplete: true,
-  },
-};
+Add the financial tasks to the [trip checklist](/tools/checklist). Once you know the formula, the final expense, and the temporary money required, pet fees become a comparison exercise rather than a checkout surprise.

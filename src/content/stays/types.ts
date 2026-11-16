@@ -1,5 +1,3 @@
-import type { ImageKey } from "@/lib/images";
-
 export type StayType = "cabin" | "vacation-home" | "cottage" | "beach-house" | "unique";
 export type VerificationStatus = "verified" | "unverified" | "sample";
 export type FeeBasis = "stay" | "night" | "dog" | "dog-night";
@@ -35,7 +33,9 @@ export interface Stay {
   hotTub: boolean | null;
   nearby: string[];
   houseRules: string[];
-  image: ImageKey;
+  /** Name of a built-in photo, or leave empty when imageUpload is used. */
+  image?: string;
+  imageUpload?: string;
   /** Where the facts came from (listing URL, host email, etc.) */
   sourceUrl: string;
   lastVerified: string | null; // YYYY-MM-DD

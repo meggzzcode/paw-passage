@@ -1,6 +1,6 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { getGuide, isPublic } from "@/content/guides";
-import { images } from "@/lib/images";
+import { guideHero } from "@/lib/images";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { Markdown } from "@/components/site/Markdown";
 import { GearPicks } from "@/components/site/GearPicks";
@@ -39,7 +39,7 @@ export const Route = createFileRoute("/guides/$slug")({
 
 function GuidePage() {
   const { guide: g } = Route.useLoaderData();
-  const img = images[g.heroImage];
+  const img = guideHero(g);
   const related = g.relatedGuides.map((s) => getGuide(s)).filter((x) => !!x).slice(0, 3);
   return (
     <article>

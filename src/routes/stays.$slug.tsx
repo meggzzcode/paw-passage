@@ -1,6 +1,6 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { getStay } from "@/content/stays";
-import { images } from "@/lib/images";
+import { stayPhoto } from "@/lib/images";
 import { getState, townName } from "@/content/destinations";
 import { stayTypeLabels } from "@/lib/filters";
 import { describeFee, yesNo } from "@/lib/stay-format";
@@ -28,7 +28,7 @@ export const Route = createFileRoute("/stays/$slug")({
 
 function StayPage() {
   const { stay: s } = Route.useLoaderData();
-  const img = images[s.image];
+  const img = stayPhoto(s);
   const facts: [string, string][] = [
     ["Dogs allowed", s.maxDogs === null ? "Not confirmed" : `Up to ${s.maxDogs}`],
     ["Large dogs", yesNo(s.largeDogsOk)],

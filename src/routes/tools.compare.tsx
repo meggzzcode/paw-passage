@@ -1,4 +1,4 @@
-import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
+import { createFileRoute, Link, useNavigate, stripSearchParams } from "@tanstack/react-router";
 import { zodValidator, fallback } from "@tanstack/zod-adapter";
 import { z } from "zod";
 import { visibleStays } from "@/content/stays";
@@ -12,6 +12,8 @@ import { pageHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/tools/compare")({
   validateSearch: zodValidator(z.object({ ids: fallback(z.string(), "").default("") })),
+  // Keep the bare /tools/compare URL clean (no redirect to ?ids=).
+  search: { middlewares: [stripSearchParams({ ids: "" })] },
   head: ({ match }) => pageHead({ title: "Compare dog-friendly stays side by side", description: "Compare verified dog-friendly stays by dog limits, pet fees, fencing, breed rules and outdoor space.", path: "/tools/compare", noindex: !!match.search.ids }),
   component: ComparePage,
 });

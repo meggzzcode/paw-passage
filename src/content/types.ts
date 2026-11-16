@@ -1,7 +1,6 @@
 // Content model for Paws & Passage. Plain files, no backend.
 // Shapes mirror future database tables so a CMS/DB can be added later.
 
-import type { ImageKey } from "@/lib/images";
 import type { GearPick } from "./gear";
 
 export type GuideStatus = "published" | "draft";
@@ -55,7 +54,14 @@ export interface Guide {
   publishedOn: string; // YYYY-MM-DD
   lastReviewed: string; // YYYY-MM-DD
   readingMinutes: number;
-  heroImage: ImageKey;
+  /** Name of a built-in photo (see src/lib/images.ts). Leave empty when heroUpload is used. */
+  heroImage?: string;
+  /** Path of an uploaded photo, e.g. /uploads/my-photo.jpg. Takes priority over heroImage. */
+  heroUpload?: string;
+  heroAlt?: string;
+  /** Who approved this for publishing, and when. A guide is not public without both. */
+  approvedBy?: string;
+  approvedOn?: string;
   /** Article body in Markdown (GFM). Use ## and ### headings only (H1 is the title). Internal links like /guides/<slug> or /tools/<tool>. */
   body: string;
   faqs: FAQ[];

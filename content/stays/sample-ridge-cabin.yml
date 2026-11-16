@@ -1,0 +1,32 @@
+# SAMPLE record used to preview how a listing looks. It never appears on the live site.
+# To list a real property: add a new stay, set Status to "verified", and fill in only what the host confirmed.
+name: "Sample: Ridge Hollow Cabin"
+status: sample
+type: cabin
+state: georgia
+town: blue-ridge
+summary: Fictional two-bedroom cabin used to preview the stay layout.
+description: This is not a real property. It shows how a verified cabin with a fully fenced yard will appear.
+sleeps: 4
+bedrooms: 2
+maxDogs: 2
+largeDogsOk: "yes"
+weightLimitLbs:
+fencedYard: full
+fenceNotes: "Example note: 5 ft wood fence, self-closing gate."
+privateOutdoor: "yes"
+petFee: charged
+petFeeAmount: 75
+petFeeBasis: stay
+breedRestrictions: "no"
+beach: false
+mountain: true
+hotTub: "yes"
+nearby:
+  - "Example: national forest trailheads"
+houseRules:
+  - "Example: dogs off furniture"
+image: guide-ga-cabins
+sourceUrl: ""
+lastVerified:
+photoPermission: false

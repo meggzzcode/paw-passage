@@ -39,3 +39,21 @@ export const images = {
 } as const;
 
 export type ImageKey = keyof typeof images;
+
+export type ResolvedImage = { src: string; card?: string; alt: string };
+
+/** The photo for a guide: an uploaded file if there is one, otherwise a built-in photo by name. */
+export function guideHero(g: { heroImage?: string; heroUpload?: string; heroAlt?: string; title: string }): ResolvedImage {
+  if (g.heroUpload) return { src: g.heroUpload, alt: g.heroAlt || g.title };
+  const found = g.heroImage ? (images as Record<string, ResolvedImage>)[g.heroImage] : undefined;
+  if (!found) throw new Error(`Guide "${g.title}" uses a built-in image called "${g.heroImage}" that does not exist.`);
+  return found;
+}
+
+/** The photo for a stay (same rule). */
+export function stayPhoto(s: { image?: string; imageUpload?: string; name: string }): ResolvedImage {
+  if (s.imageUpload) return { src: s.imageUpload, alt: `Photo of ${s.name}` };
+  const found = s.image ? (images as Record<string, ResolvedImage>)[s.image] : undefined;
+  if (!found) throw new Error(`Stay "${s.name}" uses a built-in image called "${s.image}" that does not exist.`);
+  return found;
+}

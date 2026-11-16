@@ -1,11 +1,11 @@
 import { Link } from "@tanstack/react-router";
 import type { Guide } from "@/content/types";
-import { images } from "@/lib/images";
+import { guideHero } from "@/lib/images";
 import { isPublic } from "@/content/guides";
 import { PreviewBadge } from "./StatusBadge";
 
 export function GuideCard({ guide, variant = "default" }: { guide: Guide; variant?: "default" | "wide" | "compact" }) {
-  const img = images[guide.heroImage];
+  const img = guideHero(guide);
   if (variant === "compact") {
     return (
       <Link to="/guides/$slug" params={{ slug: guide.slug }} className="group flex gap-4">

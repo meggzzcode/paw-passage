@@ -4,16 +4,6 @@ import type { Stay } from "./types";
 // They are never rendered in production builds, never indexed and never in the sitemap.
 export const sampleStays: Stay[] = [
   {
-    slug: "sample-ridge-cabin", name: "Sample: Ridge Hollow Cabin", status: "sample", type: "cabin",
-    state: "georgia", town: "blue-ridge", summary: "Fictional two-bedroom cabin used to preview the stay layout.",
-    description: "This is not a real property. It shows how a verified cabin with a fully fenced yard will appear.",
-    sleeps: 4, bedrooms: 2, maxDogs: 2, largeDogsOk: true, weightLimitLbs: null, fencedYard: "full",
-    fenceNotes: "Example note: 5 ft wood fence, self-closing gate.", privateOutdoor: true,
-    petFee: { amount: 75, basis: "stay" }, breedRestrictions: false, beach: false, mountain: true, hotTub: true,
-    nearby: ["Example: national forest trailheads"], houseRules: ["Example: dogs off furniture"],
-    image: "guide-ga-cabins", sourceUrl: "", lastVerified: null, photoPermission: false,
-  },
-  {
     slug: "sample-orchard-cottage", name: "Sample: Orchard Lane Cottage", status: "sample", type: "cottage",
     state: "georgia", town: "ellijay", summary: "Fictional cottage with a partially fenced yard.",
     description: "Not a real property. Demonstrates how partial fencing and per-dog fees are displayed.",

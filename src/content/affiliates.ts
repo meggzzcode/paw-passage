@@ -1,3 +1,5 @@
+import { affiliates } from "virtual:content";
+
 // Affiliate / booking links, managed in one place. A booking button is shown ONLY when the
 // link exists AND approved is true. Never add a partner you are not approved with.
 export interface AffiliateLink {
@@ -16,7 +18,8 @@ export function isAmazon(link: AffiliateLink) {
   return /amazon/i.test(link.network);
 }
 
-export const affiliateLinks: AffiliateLink[] = [];
+// The list lives in content/affiliates.yml so it can be edited in Pages CMS (no code).
+export const affiliateLinks: AffiliateLink[] = affiliates;
 
 export function getApprovedLink(id?: string, links: AffiliateLink[] = affiliateLinks): AffiliateLink | undefined {
   if (!id) return undefined;

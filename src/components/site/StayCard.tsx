@@ -1,13 +1,13 @@
 import { Link } from "@tanstack/react-router";
 import type { Stay } from "@/content/stays/types";
-import { images } from "@/lib/images";
+import { stayPhoto } from "@/lib/images";
 import { townName } from "@/content/destinations";
 import { stayTypeLabels } from "@/lib/filters";
 import { describeFee } from "@/lib/stay-format";
 import { PreviewBadge } from "./StatusBadge";
 
 export function StayCard({ stay }: { stay: Stay }) {
-  const img = images[stay.image];
+  const img = stayPhoto(stay);
   const chips: string[] = [];
   if (stay.fencedYard === "full") chips.push("Fully fenced yard");
   else if (stay.fencedYard === "partial") chips.push("Partly fenced");

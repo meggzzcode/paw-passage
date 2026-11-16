@@ -1,0 +1,8 @@
+# Business details. Edit these in Pages CMS ("Site settings"). Leave a value empty if you do not have it yet:
+# the site then shows an honest "coming soon" message instead of a broken link.
+contactEmail: ""
+siteUrl: ""
+ga4MeasurementId: ""
+newsletterProvider: ""
+newsletterFormAction: ""
+newsletterEmailFieldName: email_address

@@ -8,8 +8,11 @@
 // hosting already compresses at the edge.
 // You can pass additional config via defineConfig({ vite: { ... }, etc... }) if needed.
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
+import { contentPlugin } from "./plugins/content";
 
 export default defineConfig({
+  // Reads the files in /content (edited by Pages CMS), checks them, and leaves unpublished content out.
+  vite: { plugins: [contentPlugin()] },
   tanstackStart: {
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
     // nitro/vite builds from this

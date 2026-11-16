@@ -1,0 +1,332 @@
+# Pages CMS configuration (https://pagescms.org/docs/configuration/).
+# This file tells Pages CMS what forms to show for each kind of content. It only ever edits the
+# files in /content and the photos in /public/uploads. It cannot change the website's code.
+#
+# STATUS: written from Pages CMS's published documentation. It has NOT yet been opened in the live
+# Pages CMS app (that needs the owner's GitHub login). See BUYER_HANDOVER.md, "First-time CMS test".
+
+# Keep any setting in a file that this form doesn't know about, instead of deleting it on save.
+settings:
+  content:
+    merge: true
+
+# Photos the editor uploads are saved here and appear on the site at /uploads/<file name>.
+media:
+  input: public/uploads
+  output: /uploads
+  categories: [image]
+
+content:
+  # ---------------------------------------------------------------- Articles
+  - name: guides
+    label: Articles
+    type: collection
+    path: content/guides
+    format: yaml-frontmatter
+    filename: "{primary}.md"
+    view:
+      fields: [title, category, status, lastReviewed]
+      primary: title
+      sort: [lastReviewed, title]
+      default:
+        sort: lastReviewed
+        order: desc
+    fields:
+      - name: status
+        label: Status
+        type: select
+        required: true
+        description: "Keep on Draft while you write. A article goes live only when it is Published AND has an 'Approved by' name and date below."
+        options:
+          values:
+            - { value: draft, label: "Draft (not on the website)" }
+            - { value: published, label: "Published (live once approved below)" }
+      - name: approvedBy
+        label: Approved by
+        type: string
+        description: "Type the name of the person who checked this article and approved it for the website. Leave empty until approved."
+      - name: approvedOn
+        label: Approved on
+        type: date
+        description: "The day it was approved. Leave empty until approved."
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: dek
+        label: One-line summary (shown under the title)
+        type: text
+        required: true
+      - name: category
+        label: Type of article
+        type: select
+        required: true
+        options:
+          values: [Destination, Planning, Checklist, Gear]
+      - name: states
+        label: States covered (if any)
+        type: select
+        list: true
+        options:
+          values: [georgia, california]
+      - name: author
+        label: Author name shown on the article
+        type: string
+        required: true
+      - name: publishedOn
+        label: First published on
+        type: date
+        required: true
+      - name: lastReviewed
+        label: Last checked on
+        type: date
+        required: true
+      - name: readingMinutes
+        label: Reading time (minutes)
+        type: number
+        required: true
+      - name: seoTitle
+        label: Title for Google (60 characters or fewer)
+        type: string
+        required: true
+        options:
+          maxlength: 60
+      - name: seoDescription
+        label: Description for Google (160 characters or fewer)
+        type: text
+        required: true
+        options:
+          maxlength: 160
+      - name: heroImage
+        label: Top photo (choose one of the built-in photos)
+        type: select
+        description: "Use this OR upload your own photo in the next box."
+        options:
+          values:
+            - guide-ga-cabins
+            - guide-atlanta-getaways
+            - guide-la-getaways
+            - guide-ca-beach
+            - guide-pet-fees
+            - guide-rental-checklist
+            - guide-two-dogs
+            - guide-fenced-yard
+            - guide-large-dogs
+            - guide-cabin-packing
+            - gear-car-safety
+            - gear-first-aid
+            - gear-feeding
+            - gear-rental-protection
+            - gear-portable-fence
+            - gear-id-tracking
+      - name: heroUpload
+        label: Top photo (upload your own - replaces the built-in photo)
+        type: image
+        description: "Use a landscape photo about 1600 pixels wide and under 400 KB. You must have the right to use it."
+      - name: heroAlt
+        label: Describe the top photo (for screen readers)
+        type: string
+      - name: body
+        label: Article text
+        type: rich-text
+        options:
+          format: markdown
+        description: "Sources are linked like [[1]](https://...). Keep the numbers in the same order as the Sources list below."
+      - name: faqs
+        label: Questions and answers at the end
+        type: object
+        list: true
+        fields:
+          - { name: q, label: Question, type: string, required: true }
+          - { name: a, label: Answer, type: text, required: true }
+      - name: sources
+        label: Sources (shown at the end of the article)
+        type: object
+        list: true
+        description: "Number 1 here is the [[1]] link in the article, and so on."
+        fields:
+          - { name: title, label: Page title, type: string, required: true }
+          - { name: url, label: Web address, type: string, required: true }
+          - { name: publisher, label: Who published it, type: string, required: true }
+          - { name: accessedOn, label: Date you checked it, type: date, required: true }
+      - name: relatedGuides
+        label: Related articles (the web-address names of other articles)
+        type: string
+        list: true
+      - name: relatedTools
+        label: Related tools
+        type: select
+        list: true
+        options:
+          values: [checklist, host-questions, cost-calculator, compare]
+      - name: gear
+        label: Product picks (gear articles only)
+        type: object
+        list: true
+        fields:
+          - { name: productId, label: Product id, type: string, required: true }
+          - { name: bestFor, label: Best for, type: string, required: true }
+          - { name: whyItMadeTheList, label: Why it made the list, type: text, required: true }
+          - { name: watchOuts, label: Things to check before buying, type: string, list: true }
+      - name: research
+        label: Research notes (how this article was checked)
+        type: object
+        fields:
+          - { name: researchComplete, label: "Fact-checking finished? (must be ticked for the article to go live)", type: boolean }
+          - { name: unverified, label: "Claims still unchecked (must be empty for the article to go live)", type: string, list: true }
+          - { name: primaryKeyword, label: Main search phrase, type: string, required: true }
+          - { name: relatedKeywords, label: Other search phrases, type: string, list: true }
+          - { name: readerQuestions, label: Questions readers ask, type: string, list: true }
+          - { name: intendedReader, label: Who this is for, type: text, required: true }
+          - { name: angle, label: What makes this article different, type: text, required: true }
+          - { name: gapsFound, label: Gaps found in other articles, type: string, list: true }
+          - { name: differentiators, label: What we add, type: string, list: true }
+          - { name: followUps, label: Open follow-ups (must be empty for the article to go live), type: string, list: true }
+          - name: competitors
+            label: Other articles we read
+            type: object
+            list: true
+            fields:
+              - { name: url, label: Web address, type: string, required: true }
+              - { name: title, label: Title, type: string, required: true }
+              - { name: checkedOn, label: Date read, type: date, required: true }
+              - { name: coversWell, label: What it covers well, type: text, required: true }
+              - { name: gaps, label: What it misses, type: text, required: true }
+
+  # ------------------------------------------------------------ Accommodation listings
+  - name: stays
+    label: Stays (accommodation listings)
+    type: collection
+    path: content/stays
+    format: yaml
+    filename: "{primary}.yml"
+    view:
+      fields: [name, status, town, type]
+      primary: name
+    fields:
+      - name: status
+        label: Status
+        type: select
+        required: true
+        description: "Only 'Verified' stays appear on the website. A stay is verified only after the host confirmed the details."
+        options:
+          values:
+            - { value: unverified, label: "Unverified (not on the website)" }
+            - { value: verified, label: "Verified (on the website)" }
+            - { value: sample, label: "Sample (preview only, never live)" }
+      - { name: name, label: Name of the stay, type: string, required: true }
+      - name: type
+        label: Type
+        type: select
+        required: true
+        options:
+          values: [cabin, vacation-home, cottage, beach-house, unique]
+      - name: state
+        label: State
+        type: select
+        required: true
+        options:
+          values: [georgia, california]
+      - { name: town, label: "Town (web-address name, e.g. blue-ridge)", type: string, required: true }
+      - { name: summary, label: One-line summary, type: text, required: true }
+      - { name: description, label: Description, type: text, required: true }
+      - { name: sleeps, label: Sleeps (people), type: number }
+      - { name: bedrooms, label: Bedrooms, type: number }
+      - { name: maxDogs, label: "Most dogs allowed (leave empty if not confirmed)", type: number }
+      - { name: weightLimitLbs, label: "Weight limit per dog in lbs (leave empty if none stated)", type: number }
+      - name: largeDogsOk
+        label: Large dogs allowed?
+        type: select
+        options: &tri
+          values: [yes, no, not-confirmed]
+      - name: fencedYard
+        label: Fenced yard
+        type: select
+        options:
+          values: [full, partial, none, not-confirmed]
+      - { name: fenceNotes, label: "Fence details (height, gate, gaps)", type: text }
+      - { name: privateOutdoor, label: Private outdoor space?, type: select, options: *tri }
+      - name: petFee
+        label: Pet fee
+        type: select
+        options:
+          values: [not-confirmed, none, charged]
+      - { name: petFeeAmount, label: "Pet fee amount in dollars (only if 'charged')", type: number }
+      - name: petFeeBasis
+        label: "Pet fee is charged per... (only if 'charged')"
+        type: select
+        options:
+          values:
+            - { value: stay, label: "per stay" }
+            - { value: night, label: "per night" }
+            - { value: dog, label: "per dog" }
+            - { value: dog-night, label: "per dog, per night" }
+      - { name: breedRestrictions, label: Breed restrictions stated?, type: select, options: *tri }
+      - { name: beach, label: Beach access, type: boolean }
+      - { name: mountain, label: Mountain location, type: boolean }
+      - { name: hotTub, label: Hot tub?, type: select, options: *tri }
+      - { name: nearby, label: Nearby dog-friendly places, type: string, list: true }
+      - { name: houseRules, label: House rules about dogs, type: string, list: true }
+      - name: image
+        label: Photo (choose a built-in photo)
+        type: select
+        description: "Use this OR upload the property's photo in the next box."
+        options:
+          values: [guide-ga-cabins, guide-ca-beach, guide-fenced-yard, guide-two-dogs, guide-large-dogs]
+      - { name: imageUpload, label: "Photo (upload - only with the owner's permission)", type: image }
+      - { name: photoPermission, label: "Do we have the owner's permission to use this photo?", type: boolean }
+      - { name: sourceUrl, label: "Where the facts came from (listing link)", type: string }
+      - { name: lastVerified, label: "Date the host confirmed the details", type: date }
+      - { name: affiliateId, label: "Booking link (the 'id' of a link in Affiliate links)", type: string }
+
+  # ---------------------------------------------------------- Affiliate links
+  - name: affiliates
+    label: Affiliate links
+    type: file
+    path: content/affiliates.yml
+    format: yaml
+    operations:
+      create: false
+      delete: false
+    fields:
+      - name: links
+        label: "Links (a Book or Buy button shows only for links marked Approved)"
+        type: object
+        list: true
+        fields:
+          - { name: id, label: "Short name (lowercase, no spaces, e.g. vrbo-ridge-cabin)", type: string, required: true }
+          - { name: network, label: "Company (e.g. Vrbo, Amazon Associates)", type: string, required: true }
+          - { name: url, label: "Your affiliate link (starts with https://)", type: string, required: true }
+          - { name: approved, label: "Approved? (tick only after the company approved you)", type: boolean }
+          - name: kind
+            label: Used for
+            type: select
+            options:
+              values:
+                - { value: stay, label: "A place to stay" }
+                - { value: product, label: "A product" }
+          - { name: notes, label: Notes to yourself, type: text }
+
+  # ------------------------------------------------------------ Business settings
+  - name: settings
+    label: Business settings
+    type: file
+    path: content/settings.yml
+    format: yaml
+    operations:
+      create: false
+      delete: false
+    fields:
+      - { name: contactEmail, label: Business email address (shown on the Contact page), type: string }
+      - { name: siteUrl, label: "Website address, e.g. https://pawsandpassage.com (no slash at the end)", type: string }
+      - { name: ga4MeasurementId, label: "Google Analytics ID (looks like G-XXXXXXXXXX)", type: string }
+      - name: newsletterProvider
+        label: Newsletter service
+        type: select
+        options:
+          values:
+            - { value: "", label: "Not set up yet" }
+            - { value: kit, label: Kit }
+            - { value: mailerlite, label: MailerLite }
+      - { name: newsletterFormAction, label: "Newsletter form address (from your newsletter service)", type: string }
+      - { name: newsletterEmailFieldName, label: "Newsletter email field name (usually email_address)", type: string }

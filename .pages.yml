@@ -126,6 +126,12 @@ content:
       - name: heroAlt
         label: Describe the top photo (for screen readers)
         type: string
+      # If the live test (docs/LIVE-TEST-RUNBOOK.md, B2) shows the visual editor changing tables or
+      # citations, replace the three lines "type: rich-text" / "options:" / "format: markdown" below with:
+      #     type: code
+      #     options:
+      #       language: markdown
+      # (the plain-text Markdown editor, which never rewrites anything). Written from the Pages CMS docs; not yet tried.
       - name: body
         label: Article text
         type: rich-text

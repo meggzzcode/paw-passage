@@ -47,7 +47,7 @@ Commit to `main`.
 - *Pass:* you see four sections: **Articles, Stays, Affiliate links, Business settings**.
 
 **B2. Rich-text round trip (the one most likely to need a fix).** Open the article **"CMS TEST - rich text round trip"**. It contains a table, bold and italic text, links, two source citations like `[[1]](https://example.com/one)`, nested bullets, a numbered list, a tick-box list and a quote. Change **exactly one word** in the last sentence ("ONE") and save. Do not touch anything else.
-- *Claude checks* the commit on GitHub. *Pass:* only that one word differs. *Fail:* if the table, citations, tick boxes or anything else changed, the editor is damaging articles. Claude then switches the body to the plain-text (Markdown) editor, which is already prepared as a fallback, and repeats the test.
+- *Claude checks* the commit on GitHub. *Pass:* only that one word differs. *Fail:* if the table, citations, tick boxes or anything else changed, the editor is damaging articles. Claude then switches the body to the plain-text (Markdown) editor (a one-line change, written down in `.pages.yml` but not yet tried) and repeats the test.
 - Also record: who the commit is attributed to, the commit message, and which branch it went to.
 
 **B3. Create a brand-new article from scratch using only the form.** Articles > New. Fill in the form as a first-time buyer would, with a made-up article about anything. Keep Status on *Draft*. Save.

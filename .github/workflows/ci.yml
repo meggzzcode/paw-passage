@@ -8,7 +8,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      # Netlify installs with npm, so check that a clean npm install works (catches an out-of-date package-lock.json).
+      - run: npm ci
+      - run: npx vitest run
+      - run: npm run build
+      # Lovable installs with bun, so check that its lockfile is up to date too.
       - uses: oven-sh/setup-bun@v2
       - run: bun install --frozen-lockfile
-      - run: bunx vitest run
-      - run: bun run build

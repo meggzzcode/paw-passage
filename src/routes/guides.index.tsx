@@ -13,6 +13,7 @@ const groups = [
   { key: "Destination", title: "Destination guides" },
   { key: "Planning", title: "Planning guides" },
   { key: "Checklist", title: "Checklists" },
+  { key: "Gear", title: "Gear guides" },
 ] as const;
 
 function GuidesPage() {

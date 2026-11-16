@@ -1,6 +1,9 @@
 // Content model for Paws & Passage. Plain files, no backend.
 // Shapes mirror future database tables so a CMS/DB can be added later.
 
+import type { ImageKey } from "@/lib/images";
+import type { GearPick } from "./gear";
+
 export type GuideStatus = "published" | "draft";
 
 export interface CompetitorReview {
@@ -45,27 +48,19 @@ export interface Guide {
   seoTitle: string; // <= 60 chars
   seoDescription: string; // <= 160 chars
   dek: string; // one-line standfirst under the title
-  category: "Destination" | "Planning" | "Checklist";
+  category: "Destination" | "Planning" | "Checklist" | "Gear";
   states: ("georgia" | "california")[];
   status: GuideStatus;
   author: string;
   publishedOn: string; // YYYY-MM-DD
   lastReviewed: string; // YYYY-MM-DD
   readingMinutes: number;
-  heroImage:
-    | "guide-ga-cabins"
-    | "guide-atlanta-getaways"
-    | "guide-la-getaways"
-    | "guide-ca-beach"
-    | "guide-pet-fees"
-    | "guide-rental-checklist"
-    | "guide-two-dogs"
-    | "guide-fenced-yard"
-    | "guide-large-dogs"
-    | "guide-cabin-packing";
+  heroImage: ImageKey;
   /** Article body in Markdown (GFM). Use ## and ### headings only (H1 is the title). Internal links like /guides/<slug> or /tools/<tool>. */
   body: string;
   faqs: FAQ[];
+  /** Gear guides only: the products recommended, rendered as picks with optional affiliate buttons. */
+  gear?: GearPick[];
   relatedGuides: string[]; // slugs
   relatedTools: ("checklist" | "host-questions" | "cost-calculator" | "compare")[];
   sources: Source[];

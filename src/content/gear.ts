@@ -25,8 +25,10 @@ export interface GearPick {
   watchOuts: string[];
 }
 
-// Add products here. Each guide's `gear` array refers to these by id.
-export const products: Product[] = [];
+// Each gear guide keeps its products in src/content/gear/<guide-slug>.ts (export const products).
+// They are collected here; a guide's `gear` array refers to them by id.
+const modules = import.meta.glob<{ products: Product[] }>("./gear/*.ts", { eager: true });
+export const products: Product[] = Object.values(modules).flatMap((m) => m.products ?? []);
 
 export function getProduct(id: string, list: Product[] = products): Product | undefined {
   return list.find((p) => p.id === id);

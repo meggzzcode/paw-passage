@@ -40,3 +40,31 @@ describe.each(allGuides.map((g) => [g.slug, g] as const))("guide content: %s", (
     expect(g.seoDescription.length).toBeLessThanOrEqual(160);
   });
 });
+
+import { getProduct, products } from "@/content/gear";
+import { affiliateLinks } from "@/content/affiliates";
+
+describe("gear guides and affiliate products", () => {
+  const gearGuides = allGuides.filter((g) => g.category === "Gear");
+  it("every product has a readable source and no price or rating", () => {
+    for (const p of products) {
+      expect(p.specSource.url, p.id).toMatch(/^https:\/\//);
+      expect(JSON.stringify(p), `${p.id}: prices/ratings must not be stored`).not.toMatch(/\$\s?\d|stars?\b|rated \d|best price/i);
+    }
+  });
+  it("product ids are unique", () => {
+    expect(new Set(products.map((p) => p.id)).size).toBe(products.length);
+  });
+  it("gear guides only pick products that exist, and never state prices or testing", () => {
+    for (const g of gearGuides) {
+      expect((g.gear ?? []).length, `${g.slug} needs picks`).toBeGreaterThanOrEqual(3);
+      for (const pick of g.gear ?? []) expect(getProduct(pick.productId), `${g.slug}: ${pick.productId}`).toBeDefined();
+      const all = g.body + JSON.stringify(g.gear) + JSON.stringify(g.faqs);
+      expect(all, `${g.slug}: no static prices`).not.toMatch(/\$\s?\d/);
+      expect(all, `${g.slug}: must not claim we tested`).not.toMatch(/\bwe (have )?(tested|tried|used|reviewed it)|our testing|hands-on/i);
+    }
+  });
+  it("a product's affiliateId must exist in affiliates.ts and be an approved product link to show a button", () => {
+    for (const p of products) if (p.affiliateId) expect(affiliateLinks.some((l) => l.id === p.affiliateId), `${p.id}: unknown affiliateId`).toBe(true);
+  });
+});

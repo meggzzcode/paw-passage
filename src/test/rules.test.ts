@@ -54,7 +54,7 @@ describe("live site visibility", () => {
     }
   });
   it("all ten launch guides exist", () => {
-    expect(allGuides.length).toBe(10);
+    expect(allGuides.length).toBeGreaterThanOrEqual(10);
   });
 });
 

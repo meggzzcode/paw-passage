@@ -1,4 +1,4 @@
-import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
+import { createFileRoute, Link, useNavigate, stripSearchParams } from "@tanstack/react-router";
 import { zodValidator } from "@tanstack/zod-adapter";
 import { useState } from "react";
 import { SlidersHorizontal, X } from "lucide-react";
@@ -12,6 +12,9 @@ import { pageHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/stays/")({
   validateSearch: zodValidator(staySearchSchema),
+  // Keep /stays clean: drop params that equal their defaults so the bare URL is not redirected
+  // to a long query string (which crawlers would see as a redirect, not a page).
+  search: { middlewares: [stripSearchParams(staySearchSchema.parse({}))] },
   head: ({ match }) => {
     const filtered = activeFilterCount(match.search) > 0 || match.search.sort !== "recommended";
     return pageHead({

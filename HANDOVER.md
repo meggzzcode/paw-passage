@@ -54,6 +54,20 @@ Set `siteUrl` (e.g. `https://pawsandpassage.com`) in `src/config/site.ts`. `/sit
 - Locally: `bun install`, `bun run dev`, `bun run build`, `bunx vitest run`.
 - It builds for Cloudflare Workers by default. Any host that runs TanStack Start works.
 
+## Deploying on Hostinger (Node.js web app)
+
+Tested 2026-11-16: the app builds as a plain Node server and renders pages on the server.
+
+- **Plan:** Hostinger runs Node.js web apps only on **Business Web Hosting** and **Cloud** plans (Startup, Professional, Enterprise, Enterprise Plus), or on a VPS with manual setup. Cheaper shared plans (Single, Premium and the like) and website-builder or WordPress plans do not. Check hPanel's Node.js section before paying.
+- **Framework preset:** Nitro (this app is built with Nitro). Node 22 or 24; `package.json` declares `engines.node >= 22`.
+- **Install:** Hostinger uses npm when it finds `package-lock.json`. The repo includes it, plus an `.npmrc` with `legacy-peer-deps=true`, because plain `npm install` otherwise crashes on this dependency set.
+- **Build command:** `build:node` (runs `NITRO_PRESET=node-server vite build`). Do **not** use plain `build`: it targets Cloudflare Workers, which Lovable's own publishing uses.
+- **Output directory:** `.output`  **Entry file:** `server/index.mjs` (relative to the output directory).
+- **Port:** the server reads `PORT`, which Hostinger sets.
+- **Limits to know:** each request is cut off after 120 seconds, no inbound WebSockets, no always-on background workers, and all Node apps on a plan share one process and memory pool (Business: 5 apps). This site needs none of those; it used about 95 MB of memory in testing.
+- After switching on a domain, set `siteUrl` in `src/config/site.ts` and redeploy so canonical tags and the sitemap use it.
+- Lovable's built-in publish and Hostinger are separate deployments. Pick one as the live site so the two don't drift.
+
 ## Transferring the business
 Hand over: the GitHub repo, the domain registrar, the GA4 property (add the buyer as admin), the email-service account (export subscribers), and each affiliate account (most networks need the new owner to re-apply).
 

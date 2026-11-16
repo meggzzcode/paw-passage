@@ -148,8 +148,8 @@ function EmptyInventory() {
       <p className="mt-2 max-w-2xl text-muted-foreground">We only publish a stay once its pet policy, fees and fencing are confirmed with the host, and we never list a property we haven't checked. While we verify our first ones, these will help you vet any rental yourself:</p>
       <div className="mt-6 flex flex-wrap gap-3">
         <Link to="/tools/host-questions" className="rounded-full bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground">Host question generator</Link>
-        <Link to="/guides/vacation-rental-secure-fenced-yard" className="rounded-full border border-input px-5 py-2.5 text-sm font-medium">Checking a fenced yard</Link>
-        <Link to="/guides/pet-friendly-vacation-rental-checklist" className="rounded-full border border-input px-5 py-2.5 text-sm font-medium">Before-you-book guide</Link>
+        <Link to="/guides/$slug" params={{ slug: "vacation-rental-secure-fenced-yard" }} className="rounded-full border border-input px-5 py-2.5 text-sm font-medium">Checking a fenced yard</Link>
+        <Link to="/guides/$slug" params={{ slug: "pet-friendly-vacation-rental-checklist" }} className="rounded-full border border-input px-5 py-2.5 text-sm font-medium">Before-you-book guide</Link>
       </div>
     </div>
   );

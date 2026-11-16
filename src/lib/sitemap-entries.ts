@@ -16,7 +16,7 @@ export function sitemapEntries(): { path: string; lastmod?: string }[] {
     for (const t of d.towns) out.push({ path: `/destinations/${d.slug}/${t.slug}` });
   }
   for (const g of allGuides.filter(isPublic)) out.push({ path: `/guides/${g.slug}`, lastmod: g.lastReviewed });
-  for (const s of visibleStays({ includeSamples: false })) out.push({ path: `/stays/${s.slug}`, lastmod: s.lastVerified ?? undefined });
+  for (const s of visibleStays({ includeSamples: false })) out.push({ path: `/stays/${s.slug}`, ...(s.lastVerified ? { lastmod: s.lastVerified } : {}) });
   return out;
 }
 

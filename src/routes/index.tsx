@@ -26,7 +26,7 @@ const styles = [
   { label: "Cabins", search: { type: "cabin" }, img: "mountain-cabin" },
   { label: "Beach houses", search: { beach: true }, img: "beach" },
   { label: "Mountain escapes", search: { mountain: true }, img: "hero-porch" },
-  { label: "Weekend getaways", to: "/guides/dog-friendly-weekend-getaways-from-atlanta", img: "road-trip" },
+  { label: "Weekend getaways", guide: "dog-friendly-weekend-getaways-from-atlanta", img: "road-trip" },
   { label: "Unique stays", search: { type: "unique" }, img: "coast-bluff" },
 ] as const;
 
@@ -108,8 +108,8 @@ function Home() {
                 <span className="absolute bottom-4 left-4 font-display text-xl text-primary-foreground">{s.label}</span>
               </>
             );
-            return "to" in s ? (
-              <Link key={s.label} to={s.to} className="group relative overflow-hidden rounded-lg">{inner}</Link>
+            return "guide" in s ? (
+              <Link key={s.label} to="/guides/$slug" params={{ slug: s.guide }} className="group relative overflow-hidden rounded-lg">{inner}</Link>
             ) : (
               <Link key={s.label} to="/stays" search={(p) => ({ ...p, ...s.search })} className="group relative overflow-hidden rounded-lg">{inner}</Link>
             );

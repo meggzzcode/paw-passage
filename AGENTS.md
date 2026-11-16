@@ -28,3 +28,11 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+- No backend in v1: all content lives in typed files under `src/content/` and `src/config/site.ts` so the site stays portable and backend-free; shapes mirror future DB tables.
+- Only `status: "verified"` stays render in production; samples render only when `import.meta.env.DEV`, so no fictional inventory ever goes live.
+- A guide is public only when `status === "published"` and `research.unverified` is empty; otherwise noindexed, preview-only, and left out of the sitemap, to keep unverified claims off the live site.
+- Filters match only confirmed values (`null` = not confirmed never passes), so listings never overstate dog-friendliness.
+- Booking buttons render only for approved links in `src/content/affiliates.ts`, using `rel="sponsored"`, to avoid fake or unauthorized affiliate links.
+- Newsletter, GA4 and sitemap stay inert until configured in `site.ts`, so no feature pretends to work.

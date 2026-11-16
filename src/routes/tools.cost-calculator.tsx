@@ -27,12 +27,12 @@ function CostPage() {
   const [stays, setStays] = useState<CostInput[]>([blank("Stay A"), blank("Stay B")]);
   const upd = (i: number, patch: Partial<CostInput>) => setStays((s) => s.map((x, j) => (j === i ? { ...x, ...patch } : x)));
   const results = stays.map(computeCost);
-  const cheapest = results.length > 1 && results.some((r) => r.total > 0) ? results.reduce((m, r, i) => (r.total < results[m].total ? i : m), 0) : -1;
+  const cheapest = results.length > 1 && results.some((r) => r.total > 0) ? results.reduce((m, r, i) => (r.total < (results[m]?.total ?? Infinity) ? i : m), 0) : -1;
   return (
     <ToolShell title="Pet fee & trip cost calculator" intro="Headline nightly rates hide a lot. Enter what each listing actually charges and see the real total, including pet fees that scale per dog or per night. Refundable deposits are shown separately." guides={[{ slug: "how-vacation-rental-pet-fees-work", label: "How pet fees actually work at vacation rentals" }, { slug: "traveling-with-two-dogs-accommodation-guide", label: "Traveling with two dogs" }]}>
       <div className="grid gap-6 lg:grid-cols-3">
         {stays.map((s, i) => {
-          const r = results[i];
+          const r = results[i] ?? computeCost(s);
           return (
             <section key={i} className={`rounded-xl border bg-card p-6 shadow-card ${i === cheapest ? "border-primary ring-2 ring-primary/20" : "border-border"}`}>
               <div className="flex items-center gap-2">

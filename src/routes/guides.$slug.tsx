@@ -59,7 +59,7 @@ function GuidePage() {
           <p className="mt-5 text-sm text-muted-foreground">By {g.author} · Last reviewed {g.lastReviewed} · {g.readingMinutes} min read</p>
         </header>
       </div>
-      <img src={img.src} alt={img.alt} width={1600} height={1008} className="mx-auto mt-10 aspect-[21/9] w-full max-w-6xl object-cover md:rounded-xl" />
+      <img src={img.src} alt={img.alt} width={1600} height={1008} decoding="async" fetchPriority="high" className="mx-auto mt-10 aspect-[21/9] w-full max-w-6xl object-cover md:rounded-xl" />
       <div className="container-page mt-12 grid gap-12 lg:grid-cols-[1fr_260px]">
         <div className="mx-auto w-full max-w-[42rem]">
           <Markdown source={g.body} />

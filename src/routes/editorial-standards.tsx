@@ -25,7 +25,7 @@ A stay appears on Paws & Passage only after we confirm its pet policy (dog count
 
 ## Images
 
-Photos on our guides and destination pages are licensed stock photographs (Unsplash License). They are shown for illustration only and are not pictures of a specific rental. Property photos appear only with the owner's permission.
+Photos on our guides and destination pages are licensed stock photographs (Unsplash License). The large image at the top of the home page is an AI-generated illustration of a travel scene, not a photograph. All images are shown for illustration only and are not pictures of a specific rental. Property photos appear only with the owner's permission.
 
 ## Money
 

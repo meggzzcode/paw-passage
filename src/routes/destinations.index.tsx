@@ -18,7 +18,7 @@ function DestinationsPage() {
       <div className="mt-12 space-y-20">
         {destinations.map((d, i) => (
           <section key={d.slug} className={`grid gap-10 md:grid-cols-2 md:items-center ${i % 2 ? "md:[&>*:first-child]:order-2" : ""}`}>
-            <img src={images[d.image].src} alt={images[d.image].alt} loading="lazy" width={1600} height={1008} className="aspect-[4/3] w-full rounded-xl object-cover" />
+            <img src={images[d.image].card ?? images[d.image].src} alt={images[d.image].alt} loading="lazy" decoding="async" width={1600} height={1008} className="aspect-[4/3] w-full rounded-xl object-cover" />
             <div>
               <p className="eyebrow">{d.focus}</p>
               <h2 className="mt-2 text-4xl">{d.name}</h2>

@@ -9,6 +9,12 @@ import twoDogs from "@/assets/guide-two-dogs.jpg";
 import fencedYard from "@/assets/guide-fenced-yard.jpg";
 import largeDogs from "@/assets/guide-large-dogs.jpg";
 import cabinPacking from "@/assets/guide-cabin-packing.jpg";
+import gearCarSafety from "@/assets/gear-car-safety.jpg";
+import gearFirstAid from "@/assets/gear-first-aid.jpg";
+import gearFeeding from "@/assets/gear-feeding.jpg";
+import gearRentalProtection from "@/assets/gear-rental-protection.jpg";
+import gearPortableFence from "@/assets/gear-portable-fence.jpg";
+import gearIdTracking from "@/assets/gear-id-tracking.jpg";
 
 // Editorial stock photographs (Unsplash License), shown for illustration only and never as pictures of a specific rental.
 // Photographer credits live in src/content/image-credits.ts.
@@ -24,6 +30,12 @@ export const images = {
   "guide-fenced-yard": { src: fencedYard, alt: "A black dog resting its chin on a stone ledge and looking out from behind a metal fence among green leaves" },
   "guide-large-dogs": { src: largeDogs, alt: "A large brindle Great Dane lying on a couch in a living room with a stone fireplace" },
   "guide-cabin-packing": { src: cabinPacking, alt: "A black, white and tan collie-type dog lying beside a packed canvas duffel bag in the open back of a car" },
+  "gear-car-safety": { src: gearCarSafety, alt: "A small tan dog and a small curly black dog, the black one in a harness, sitting together in a padded booster seat on the back seat of a car" },
+  "gear-first-aid": { src: gearFirstAid, alt: "Close-up of a golden-brown dog's paws and pads resting on a sunlit wooden deck" },
+  "gear-feeding": { src: gearFeeding, alt: "A small white dog in a bandana drinking from a bottle with an attached drinking spout held by a person whose face is not shown" },
+  "gear-rental-protection": { src: gearRentalProtection, alt: "A pug wrapped in a soft tan throw blanket on a bed with white bedding" },
+  "gear-portable-fence": { src: gearPortableFence, alt: "Black-and-white photo of a happy puppy standing inside a white wire exercise pen" },
+  "gear-id-tracking": { src: gearIdTracking, alt: "Close-up of a dog's red leather collar with a brass buckle and a round brass ID tag, with a green blurred background outdoors" },
 } as const;
 
 export type ImageKey = keyof typeof images;

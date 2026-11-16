@@ -15,4 +15,10 @@ export const imageCredits: ImageCredit[] = [
   { key: "guide-fenced-yard", photographer: "Sanela Arsenić", unsplashUrl: "https://unsplash.com/photos/a-black-dog-peeking-out-from-behind-a-fence-qKDvxV0ImTA" },
   { key: "guide-large-dogs", photographer: "George Pagan III", unsplashUrl: "https://unsplash.com/photos/a-large-brown-dog-laying-on-top-of-a-couch-tcAB9AAEJ4s" },
   { key: "guide-cabin-packing", photographer: "Christian Crocker", unsplashUrl: "https://unsplash.com/photos/REFa-Kh22KU" },
+  { key: "gear-car-safety", photographer: "Gary Samaha", unsplashUrl: "https://unsplash.com/photos/two-dogs-on-pet-bed-in-car-bsAfOX0WDsU" },
+  { key: "gear-first-aid", photographer: "engin akyurt", unsplashUrl: "https://unsplash.com/photos/a-close-up-of-a-dogs-paw-on-a-wooden-surface-did3AwSstsE" },
+  { key: "gear-feeding", photographer: "Treddy Chen", unsplashUrl: "https://unsplash.com/photos/person-holding-green-water-dispenser-with-dog-drinking-on-it-F94kUL8aQGA" },
+  { key: "gear-rental-protection", photographer: "Matthew Henry", unsplashUrl: "https://unsplash.com/photos/pug-covered-with-blanket-on-bedspread-2Ts5HnA67k8" },
+  { key: "gear-portable-fence", photographer: "Vicky", unsplashUrl: "https://unsplash.com/photos/O8u-PY0Sm-U" },
+  { key: "gear-id-tracking", photographer: "Lepeto", unsplashUrl: "https://unsplash.com/photos/vFHzS5cxhWY" },
 ];

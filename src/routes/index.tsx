@@ -23,11 +23,11 @@ export const Route = createFileRoute("/")({
 });
 
 const styles = [
-  { label: "Cabins", search: { type: "cabin" }, img: "mountain-cabin" },
-  { label: "Beach houses", search: { beach: true }, img: "beach" },
+  { label: "Cabins", search: { type: "cabin" }, img: "guide-ga-cabins" },
+  { label: "Beach houses", search: { beach: true }, img: "guide-ca-beach" },
   { label: "Mountain escapes", search: { mountain: true }, img: "hero-porch" },
-  { label: "Weekend getaways", guide: "dog-friendly-weekend-getaways-from-atlanta", img: "road-trip" },
-  { label: "Unique stays", search: { type: "unique" }, img: "coast-bluff" },
+  { label: "Weekend getaways", guide: "dog-friendly-weekend-getaways-from-atlanta", img: "guide-atlanta-getaways" },
+  { label: "Unique stays", search: { type: "unique" }, img: "guide-la-getaways" },
 ] as const;
 
 const mustHaves: { key: FeatureKey; label: string; icon: typeof Fence; note: string }[] = [

@@ -10,11 +10,11 @@ export const guide: Guide = {
   category: "Planning",
   states: [],
   status: "published",
-  author: "Paw & Passage Editors",
+  author: "Paws & Passage Editors",
   publishedOn: "2026-11-16",
   lastReviewed: "2026-11-16",
   readingMinutes: 11,
-  heroImage: "fees",
+  heroImage: "guide-pet-fees",
   body: `## A pet fee is a formula, not just a number
 
 “Dogs welcome, $40 pet fee” is not enough information to budget a stay.

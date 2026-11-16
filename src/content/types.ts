@@ -1,4 +1,4 @@
-// Content model for Paw & Passage. Plain files, no backend.
+// Content model for Paws & Passage. Plain files, no backend.
 // Shapes mirror future database tables so a CMS/DB can be added later.
 
 export type GuideStatus = "published" | "draft";
@@ -52,7 +52,17 @@ export interface Guide {
   publishedOn: string; // YYYY-MM-DD
   lastReviewed: string; // YYYY-MM-DD
   readingMinutes: number;
-  heroImage: "mountain-cabin" | "beach" | "fenced-yard" | "two-dogs" | "large-dog" | "packing" | "road-trip" | "fees";
+  heroImage:
+    | "guide-ga-cabins"
+    | "guide-atlanta-getaways"
+    | "guide-la-getaways"
+    | "guide-ca-beach"
+    | "guide-pet-fees"
+    | "guide-rental-checklist"
+    | "guide-two-dogs"
+    | "guide-fenced-yard"
+    | "guide-large-dogs"
+    | "guide-cabin-packing";
   /** Article body in Markdown (GFM). Use ## and ### headings only (H1 is the title). Internal links like /guides/<slug> or /tools/<tool>. */
   body: string;
   faqs: FAQ[];

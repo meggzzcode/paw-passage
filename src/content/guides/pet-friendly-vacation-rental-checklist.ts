@@ -9,11 +9,11 @@ export const guide: Guide = {
   "category": "Checklist",
   "states": [],
   "status": "published",
-  "author": "Paw & Passage Editors",
+  "author": "Paws & Passage Editors",
   "publishedOn": "2026-11-16",
   "lastReviewed": "2026-11-16",
   "readingMinutes": 13,
-  "heroImage": "mountain-cabin",
+  "heroImage": "guide-rental-checklist",
   "body": `The most useful sentence in a pet-friendly listing is not “dogs welcome.” It is the written confirmation that your actual dogs can stay in the exact accommodation, on your dates, under rules your trip can realistically follow.
 
 Before paying, resolve three things: permission, practicality, and total cost. A beautiful rental can fail any one of them. Two approved dogs do not help if the property forbids leaving them alone and your main activity excludes dogs. A low pet fee does not make a shared stairwell workable for a dog who struggles with close encounters.

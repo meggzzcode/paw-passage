@@ -3,8 +3,8 @@ import { InfoPage } from "@/components/site/InfoPage";
 import { pageHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/terms")({
-  head: () => pageHead({ title: "Terms of use", description: "The terms for using Paw & Passage's travel guides, tools and stay listings.", path: "/terms" }),
-  component: () => <InfoPage title="Terms of use" updated="2026-11-16" body={`By using Paw & Passage you agree to these terms.
+  head: () => pageHead({ title: "Terms of use", description: "The terms for using Paws & Passage's travel guides, tools and stay listings.", path: "/terms" }),
+  component: () => <InfoPage title="Terms of use" updated="2026-11-16" body={`By using Paws & Passage you agree to these terms.
 
 ## Information, not a guarantee
 
@@ -24,11 +24,11 @@ You are responsible for your dog's safety and behavior, and for following local 
 
 ## Content
 
-The text, design and tools on this site belong to Paw & Passage. You're welcome to share links and short quotes with attribution. Please don't republish whole guides.
+The text, design and tools on this site belong to Paws & Passage. You're welcome to share links and short quotes with attribution. Please don't republish whole guides.
 
 ## Liability
 
-To the extent permitted by law, Paw & Passage is not liable for losses arising from reliance on information on this site or from bookings made with third parties.
+To the extent permitted by law, Paws & Passage is not liable for losses arising from reliance on information on this site or from bookings made with third parties.
 
 ## Changes
 

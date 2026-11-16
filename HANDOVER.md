@@ -1,4 +1,4 @@
-# Paw & Passage: owner's handbook
+# Paws & Passage: owner's handbook
 
 Everything on this site lives in plain files. There is no database, no admin login, and no paid service required. Edit a file, commit it, and publish.
 
@@ -47,7 +47,7 @@ Set `ga4MeasurementId` in `src/config/site.ts`. Outbound booking clicks are sent
 In Kit or MailerLite, create an embedded form and copy its form `action` URL and email field name into `site.newsletter`. The signup block appears on the live site only once this is set.
 
 ## 9. Sitemap and domain
-Set `siteUrl` (e.g. `https://pawandpassage.com`) in `src/config/site.ts`. `/sitemap.xml` then lists every published page; until then it returns 503. Then add `Sitemap: https://yourdomain/sitemap.xml` to `public/robots.txt`.
+Set `siteUrl` (e.g. `https://pawsandpassage.com`) in `src/config/site.ts`. `/sitemap.xml` then lists every published page; until then it returns 503. Then add `Sitemap: https://yourdomain/sitemap.xml` to `public/robots.txt`.
 
 ## 10. Export and deploy elsewhere
 - Connect GitHub in Lovable (Project settings → Git). The repository is a standard TanStack Start + Vite app.

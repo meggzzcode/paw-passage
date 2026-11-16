@@ -9,11 +9,11 @@ export const guide: Guide = {
   "category": "Planning",
   "states": [],
   "status": "published",
-  "author": "Paw & Passage Editors",
+  "author": "Paws & Passage Editors",
   "publishedOn": "2026-11-16",
   "lastReviewed": "2026-11-16",
   "readingMinutes": 11,
-  "heroImage": "fenced-yard",
+  "heroImage": "guide-fenced-yard",
   "body": `A fenced yard can make a rental much easier to live in. It can also be a three-sided lawn with an open driveway, a low decorative gate, or a shared space where someone else's dog appears without warning. The useful question isn't “Does it have a fence?” It's “What exactly closes this space, and will that arrangement work for my dog?”
 
 You cannot establish that from a lawn photograph. Before paying, ask for the complete boundary, the weakest measurements, and a clear explanation of who opens each gate. Then check it again on arrival. Even a well-chosen yard calls for supervision; no listing description makes a dog escape-proof.

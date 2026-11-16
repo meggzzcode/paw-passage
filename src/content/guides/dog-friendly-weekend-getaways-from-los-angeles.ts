@@ -10,11 +10,11 @@ export const guide: Guide = {
   category: "Destination",
   states: ["california"],
   status: "published",
-  author: "Paw & Passage Editors",
+  author: "Paws & Passage Editors",
   publishedOn: "2026-11-16",
   lastReviewed: "2026-11-16",
   readingMinutes: 12,
-  heroImage: "road-trip",
+  heroImage: "guide-la-getaways",
   body: `## Choose a weekend your dog can participate in
 
 A mountain cabin is not automatically a hiking holiday with your dog. A desert rental near a national park is not automatically a base for dog-friendly trails. And a coastal town with a famous off-leash beach may be exhausting for a dog who dislikes unfamiliar dogs.

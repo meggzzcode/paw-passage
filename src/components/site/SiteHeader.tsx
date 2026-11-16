@@ -9,7 +9,7 @@ export function SiteHeader() {
     <header className="no-print sticky top-0 z-40 border-b border-border/70 bg-background/90 backdrop-blur">
       <div className="container-page flex h-16 items-center justify-between gap-6">
         <Link to="/" className="font-display text-xl font-medium tracking-tight text-primary" onClick={() => setOpen(false)}>
-          Paw <span className="text-terracotta">&amp;</span> Passage
+          Paws <span className="text-terracotta">&amp;</span> Passage
           <span className="sr-only"> home</span>
         </Link>
         <nav className="hidden items-center gap-8 md:flex" aria-label="Main">

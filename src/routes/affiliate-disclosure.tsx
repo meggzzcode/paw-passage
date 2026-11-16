@@ -3,8 +3,8 @@ import { InfoPage } from "@/components/site/InfoPage";
 import { pageHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/affiliate-disclosure")({
-  head: () => pageHead({ title: "Affiliate disclosure", description: "How Paw & Passage earns money through affiliate links and sponsored listings, and how we keep that separate from our recommendations.", path: "/affiliate-disclosure" }),
-  component: () => <InfoPage title="Affiliate disclosure" updated="2026-11-16" body={`Paw & Passage is free to read. To keep it that way, some links on this site may be **affiliate links**. If you click one and make a booking, we may earn a commission from the booking platform or partner, at no extra cost to you.
+  head: () => pageHead({ title: "Affiliate disclosure", description: "How Paws & Passage earns money through affiliate links and sponsored listings, and how we keep that separate from our recommendations.", path: "/affiliate-disclosure" }),
+  component: () => <InfoPage title="Affiliate disclosure" updated="2026-11-16" body={`Paws & Passage is free to read. To keep it that way, some links on this site may be **affiliate links**. If you click one and make a booking, we may earn a commission from the booking platform or partner, at no extra cost to you.
 
 ## How this works in practice
 

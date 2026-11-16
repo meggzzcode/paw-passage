@@ -1,4 +1,4 @@
-# Paw & Passage
+# Paws & Passage
 
 A dog-friendly travel site: researched guides, planning tools and a directory of
 verified stays. Plain-file content, no database, no admin login.

@@ -11,7 +11,7 @@ export const sampleStays: Stay[] = [
     fenceNotes: "Example note: 5 ft wood fence, self-closing gate.", privateOutdoor: true,
     petFee: { amount: 75, basis: "stay" }, breedRestrictions: false, beach: false, mountain: true, hotTub: true,
     nearby: ["Example: national forest trailheads"], houseRules: ["Example: dogs off furniture"],
-    image: "mountain-cabin", sourceUrl: "", lastVerified: null, photoPermission: false,
+    image: "guide-ga-cabins", sourceUrl: "", lastVerified: null, photoPermission: false,
   },
   {
     slug: "sample-orchard-cottage", name: "Sample: Orchard Lane Cottage", status: "sample", type: "cottage",
@@ -20,7 +20,7 @@ export const sampleStays: Stay[] = [
     sleeps: 2, bedrooms: 1, maxDogs: 1, largeDogsOk: false, weightLimitLbs: 40, fencedYard: "partial",
     privateOutdoor: true, petFee: { amount: 25, basis: "dog-night" }, breedRestrictions: null,
     beach: false, mountain: true, hotTub: false, nearby: [], houseRules: [],
-    image: "fenced-yard", sourceUrl: "", lastVerified: null, photoPermission: false,
+    image: "guide-fenced-yard", sourceUrl: "", lastVerified: null, photoPermission: false,
   },
   {
     slug: "sample-tide-house", name: "Sample: Tideline Beach House", status: "sample", type: "beach-house",
@@ -29,7 +29,7 @@ export const sampleStays: Stay[] = [
     sleeps: 6, bedrooms: 3, maxDogs: 3, largeDogsOk: true, weightLimitLbs: null, fencedYard: "full",
     privateOutdoor: true, petFee: { amount: 0, basis: "stay" }, breedRestrictions: false,
     beach: true, mountain: false, hotTub: null, nearby: [], houseRules: [],
-    image: "beach", sourceUrl: "", lastVerified: null, photoPermission: false,
+    image: "guide-ca-beach", sourceUrl: "", lastVerified: null, photoPermission: false,
   },
   {
     slug: "sample-headland-retreat", name: "Sample: Headland Retreat", status: "sample", type: "unique",
@@ -37,6 +37,6 @@ export const sampleStays: Stay[] = [
     description: "Not a real property. Demonstrates how unconfirmed details show as \"not confirmed\".",
     sleeps: 2, bedrooms: 1, maxDogs: null, largeDogsOk: null, weightLimitLbs: null, fencedYard: null,
     privateOutdoor: null, petFee: null, breedRestrictions: null, beach: true, mountain: false, hotTub: null,
-    nearby: [], houseRules: [], image: "coast-bluff", sourceUrl: "", lastVerified: null, photoPermission: false,
+    nearby: [], houseRules: [], image: "guide-ca-beach", sourceUrl: "", lastVerified: null, photoPermission: false,
   },
 ];

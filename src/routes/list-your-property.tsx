@@ -4,7 +4,7 @@ import { ContactEmail } from "@/components/site/ContactEmail";
 import { pageHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/list-your-property")({
-  head: () => pageHead({ title: "List your dog-friendly property", description: "Host a genuinely dog-friendly cabin, cottage or beach house? Here's what we need to verify and list your stay on Paw & Passage.", path: "/list-your-property" }),
+  head: () => pageHead({ title: "List your dog-friendly property", description: "Host a genuinely dog-friendly cabin, cottage or beach house? Here's what we need to verify and list your stay on Paws & Passage.", path: "/list-your-property" }),
   component: () => (
     <InfoPage title="List your property" intro="We feature stays whose pet policies we can verify. Here's what helps us review yours quickly." body={`## What we look for
 

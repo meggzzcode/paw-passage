@@ -10,11 +10,11 @@ export const guide: Guide = {
   category: "Destination",
   states: ["georgia"],
   status: "published",
-  author: "Paw & Passage Editors",
+  author: "Paws & Passage Editors",
   publishedOn: "2026-11-16",
   lastReviewed: "2026-11-16",
   readingMinutes: 12,
-  heroImage: "road-trip",
+  heroImage: "guide-atlanta-getaways",
   body: `## Choose by dog first, destination second
 
 The most useful dog-friendly weekend from Atlanta is not necessarily the place with the most patios or the biggest waterfall. It is the place where your dog can travel comfortably, join the activities you actually want to do, and settle somewhere suitable afterward.

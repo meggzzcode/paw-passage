@@ -3,8 +3,8 @@ import { InfoPage } from "@/components/site/InfoPage";
 import { pageHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/privacy")({
-  head: () => pageHead({ title: "Privacy policy", description: "What information Paw & Passage collects, how analytics and newsletter signups work, and your choices.", path: "/privacy" }),
-  component: () => <InfoPage title="Privacy policy" updated="2026-11-16" body={`This policy explains what happens to information when you use Paw & Passage.
+  head: () => pageHead({ title: "Privacy policy", description: "What information Paws & Passage collects, how analytics and newsletter signups work, and your choices.", path: "/privacy" }),
+  component: () => <InfoPage title="Privacy policy" updated="2026-11-16" body={`This policy explains what happens to information when you use Paws & Passage.
 
 ## Information you type into our tools
 

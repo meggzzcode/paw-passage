@@ -13,7 +13,7 @@ export function SiteFooter() {
     <footer className="no-print mt-24 bg-primary text-primary-foreground">
       <div className="container-page grid gap-10 py-16 md:grid-cols-[1.4fr_repeat(4,1fr)]">
         <div>
-          <p className="font-display text-2xl">Paw <span className="text-terracotta">&amp;</span> Passage</p>
+          <p className="font-display text-2xl">Paws <span className="text-terracotta">&amp;</span> Passage</p>
           <p className="mt-3 max-w-xs text-sm text-primary-foreground/75">{site.tagline} Practical, researched advice for traveling with dogs, without fake reviews or invented listings.</p>
         </div>
         {cols.map((c) => (

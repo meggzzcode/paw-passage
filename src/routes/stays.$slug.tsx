@@ -57,8 +57,8 @@ function StayPage() {
         </div>
         <div className="md:text-right"><BookingButton stay={s} /></div>
       </header>
-      <img src={img.src} alt={s.photoPermission ? img.alt : "Illustrative scene, not a photo of this property"} width={1600} height={1008} className="mt-8 aspect-[16/8] w-full rounded-xl object-cover" />
-      {!s.photoPermission && <p className="mt-2 text-xs text-muted-foreground">Illustrative image. Not a photo of this property.</p>}
+      <img src={img.src} alt={s.photoPermission ? img.alt : "Stock photo, not a photo of this property"} width={1600} height={1008} className="mt-8 aspect-[16/8] w-full rounded-xl object-cover" />
+      {!s.photoPermission && <p className="mt-2 text-xs text-muted-foreground">Stock photo for illustration. Not a photo of this property.</p>}
       <div className="mt-12 grid gap-12 md:grid-cols-[1.4fr_1fr]">
         <div>
           <h2 className="text-2xl">About this stay</h2>

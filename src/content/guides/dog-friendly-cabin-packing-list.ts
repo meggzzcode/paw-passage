@@ -3,18 +3,18 @@ import type { Guide } from "../types";
 export const guide: Guide = {
   slug: "dog-friendly-cabin-packing-list",
   title: "What to Pack for a Dog-Friendly Cabin Vacation",
-  seoTitle: "Dog-Friendly Cabin Packing List | Paw & Passage",
+  seoTitle: "Dog-Friendly Cabin Packing List | Paws & Passage",
   seoDescription:
     "Pack for a cabin stay with your dog: food, records, first aid, stair barriers, furniture covers, tick checks, winter hazards, and bear-aware storage.",
   dek: "A practical packing list for muddy entrances, unfamiliar stairs, quiet nights, and the things a remote cabin cannot supply.",
   category: "Checklist",
   states: [],
   status: "published",
-  author: "Paw & Passage Editors",
+  author: "Paws & Passage Editors",
   publishedOn: "2026-11-16",
   lastReviewed: "2026-11-16",
   readingMinutes: 12,
-  heroImage: "packing",
+  heroImage: "guide-cabin-packing",
   body: `
 ## Pack for the cabin you booked, not the cabin in the photographs
 

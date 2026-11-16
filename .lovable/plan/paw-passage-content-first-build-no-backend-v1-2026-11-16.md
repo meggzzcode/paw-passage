@@ -1,6 +1,6 @@
-# Paw & Passage — content-first build, no backend (v1)
+# Paws & Passage — content-first build, no backend (v1)
 
-**Brand:** Paw & Passage. **Tagline:** "Better adventures, together."
+**Brand:** Paws & Passage. **Tagline:** "Better adventures, together."
 Both live in one settings file, along with the contact email and disclosure text.
 
 The site is a premium editorial travel publication with a searchable stay directory and practical tools. It runs without Lovable Cloud or Supabase. Everything is stored in organized files inside the project, so it exports cleanly to GitHub and can be hosted anywhere.

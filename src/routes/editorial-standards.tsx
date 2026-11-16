@@ -3,7 +3,7 @@ import { InfoPage } from "@/components/site/InfoPage";
 import { pageHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/editorial-standards")({
-  head: () => pageHead({ title: "Editorial standards", description: "How Paw & Passage researches guides, verifies dog-friendly stays and handles corrections. No fake reviews, no invented experiences.", path: "/editorial-standards" }),
+  head: () => pageHead({ title: "Editorial standards", description: "How Paws & Passage researches guides, verifies dog-friendly stays and handles corrections. No fake reviews, no invented experiences.", path: "/editorial-standards" }),
   component: () => <InfoPage title="Editorial standards" updated="2026-11-16" body={`## How we research guides
 
 1. **Start with the reader's real question.** We look at what people actually search for and ask.
@@ -21,11 +21,11 @@ export const Route = createFileRoute("/editorial-standards")({
 
 ## How we verify stays
 
-A stay appears on Paw & Passage only after we confirm its pet policy (dog count, size and breed rules), pet fees, and fencing with the host or an authoritative listing, and have permission to use its photos. Every stay shows when it was last verified. Details we couldn't confirm are shown as "not confirmed," and our filters never treat "not confirmed" as a yes.
+A stay appears on Paws & Passage only after we confirm its pet policy (dog count, size and breed rules), pet fees, and fencing with the host or an authoritative listing, and have permission to use its photos. Every stay shows when it was last verified. Details we couldn't confirm are shown as "not confirmed," and our filters never treat "not confirmed" as a yes.
 
 ## Images
 
-Photos on our guides and destination pages are illustrative travel scenes. They are never presented as pictures of a specific rental. Property photos appear only with the owner's permission.
+Photos on our guides and destination pages are licensed stock photographs (Unsplash License). They are shown for illustration only and are not pictures of a specific rental. Property photos appear only with the owner's permission.
 
 ## Money
 

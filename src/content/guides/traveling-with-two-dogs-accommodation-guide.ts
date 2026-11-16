@@ -10,11 +10,11 @@ export const guide: Guide = {
   category: "Planning",
   states: [],
   status: "published",
-  author: "Paw & Passage Editors",
+  author: "Paws & Passage Editors",
   publishedOn: "2026-11-16",
   lastReviewed: "2026-11-16",
   readingMinutes: 11,
-  heroImage: "two-dogs",
+  heroImage: "guide-two-dogs",
   body: `## The second dog changes the accommodation brief
 
 A rental can allow two dogs and still be a poor place to stay with yours. Perhaps the only bedroom door separates you from both dogs rather than separating them from each other. Perhaps “50-pound limit” applies to their combined weight. Or the advertised pet fee turns out to be per dog, per night.

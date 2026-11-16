@@ -10,11 +10,11 @@ export const guide: Guide = {
   category: "Planning",
   states: [],
   status: "published",
-  author: "Paw & Passage Editors",
+  author: "Paws & Passage Editors",
   publishedOn: "2026-11-16",
   lastReviewed: "2026-11-16",
   readingMinutes: 11,
-  heroImage: "large-dog",
+  heroImage: "guide-large-dogs",
   body: `## “Pet-friendly” is only the first filter
 
 The difficult part of booking with a large dog is rarely finding a photograph of a dog beside a fireplace. It is establishing whether your particular dog is accepted—and whether the building works once you arrive.

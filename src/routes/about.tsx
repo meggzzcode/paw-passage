@@ -3,10 +3,10 @@ import { InfoPage } from "@/components/site/InfoPage";
 import { pageHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/about")({
-  head: () => pageHead({ title: "About Paw & Passage", description: "Why we started a dog-friendly travel guide built around the details that decide whether a stay works for your dog.", path: "/about" }),
-  component: () => <InfoPage title="About Paw & Passage" intro="Better adventures, together." body={`Most travel sites treat "pet-friendly" as a single checkbox. Anyone who has turned up at a "fenced" cabin to find three sides of fence and a gravel road on the fourth knows that isn't enough.
+  head: () => pageHead({ title: "About Paws & Passage", description: "Why we started a dog-friendly travel guide built around the details that decide whether a stay works for your dog.", path: "/about" }),
+  component: () => <InfoPage title="About Paws & Passage" intro="Better adventures, together." body={`Most travel sites treat "pet-friendly" as a single checkbox. Anyone who has turned up at a "fenced" cabin to find three sides of fence and a gravel road on the fourth knows that isn't enough.
 
-Paw & Passage is a travel guide for people who plan around their dogs. We focus on the specifics that decide whether a stay actually works: whether the fence goes all the way around, how the pet fee is charged, weight and breed limits, how many dogs are welcome, and what the local beach and trail rules really say.
+Paws & Passage is a travel guide for people who plan around their dogs. We focus on the specifics that decide whether a stay actually works: whether the fence goes all the way around, how the pet fee is charged, weight and breed limits, how many dogs are welcome, and what the local beach and trail rules really say.
 
 ## What we do
 

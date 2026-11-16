@@ -10,11 +10,11 @@ export const guide: Guide = {
   category: "Destination",
   states: ["california"],
   status: "published",
-  author: "Paw & Passage Editors",
+  author: "Paws & Passage Editors",
   publishedOn: "2026-11-16",
   lastReviewed: "2026-11-16",
   readingMinutes: 13,
-  heroImage: "beach",
+  heroImage: "guide-ca-beach",
   body: `## Start with the beach rules, not the ocean-view photograph
 
 A rental can welcome dogs while the sand outside does not. It can also sit directly above the ocean without offering a usable route down to it. Those are different problems, and neither is solved by a pet-friendly search filter.

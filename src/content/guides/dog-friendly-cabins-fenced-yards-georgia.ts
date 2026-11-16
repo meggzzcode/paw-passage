@@ -10,11 +10,11 @@ export const guide: Guide = {
   category: "Destination",
   states: ["georgia"],
   status: "published",
-  author: "Paw & Passage Editors",
+  author: "Paws & Passage Editors",
   publishedOn: "2026-11-16",
   lastReviewed: "2026-11-16",
   readingMinutes: 12,
-  heroImage: "mountain-cabin",
+  heroImage: "guide-ga-cabins",
   body: `## Start with the enclosure, not the view
 
 For a dog-friendly cabin in Georgia, “fenced yard” should be the beginning of your questions, not the end. Your useful question is more specific: can your particular dog move from the cabin into a private outdoor area without encountering an open driveway, an unsuitable flight of stairs, or a gap in the boundary?

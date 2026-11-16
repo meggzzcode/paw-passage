@@ -87,6 +87,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "theme-color", content: "#234D44" },
+      // A private preview build (SHOW_DRAFTS=true) can show unpublished drafts, so keep ALL of it out of search engines.
+      ...(site.showDraftGuides && !import.meta.env.DEV ? [{ name: "robots", content: "noindex, nofollow" }] : []),
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },

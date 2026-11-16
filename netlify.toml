@@ -4,3 +4,12 @@
 
 [build.environment]
   NODE_VERSION = "22"
+
+# Private previews. Only branch and pull-request previews show unpublished drafts (and say "noindex" to
+# search engines). The live site (the "production" context) never does. Preview links are not password
+# protected unless you pay for that: anyone with the link can read the drafts, so share them carefully.
+[context.branch-deploy.environment]
+  SHOW_DRAFTS = "true"
+
+[context.deploy-preview.environment]
+  SHOW_DRAFTS = "true"

@@ -10,7 +10,7 @@ One article (`how-vacation-rental-pet-fees-work`), one sample stay, affiliate li
 | Content | Count | Where it is now | Target |
 |---|---|---|---|
 | Articles | 15 (9 guides, 6 gear guides) | `src/content/guides/*.ts` | `content/guides/*.md` |
-| Gear products | 29 across 6 files | `src/content/gear/*.ts` | `content/products/*.yml` |
+| Gear products | 27 across 6 files | `src/content/gear/*.ts` | `content/products/*.yml` |
 | Towns and states | 2 states, 8 towns | `src/content/destinations.ts` | `content/destinations/*.yml` |
 | Sample stays | 3 | `src/content/stays/samples.ts` | `content/stays/*.yml` |
 | Real stays | 0 yet | `src/content/stays/verified.ts` + `scripts/import-stays.ts` (CSV) | `content/stays/*.yml` |

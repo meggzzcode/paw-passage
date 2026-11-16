@@ -43,7 +43,7 @@ function StatePage() {
         <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {d.towns.map((t) => (
             <Link key={t.slug} to="/destinations/$state/$town" params={{ state: d.slug, town: t.slug }} className="group">
-              <img src={images[t.image].src} alt="" loading="lazy" width={800} height={600} className="aspect-[4/3] w-full rounded-lg object-cover" />
+              <img src={images[t.image].card ?? images[t.image].src} alt="" loading="lazy" decoding="async" width={800} height={600} className="aspect-[4/3] w-full rounded-lg object-cover" />
               <p className="mt-3 font-display text-xl group-hover:text-primary">{t.name}</p>
               <p className="text-xs text-muted-foreground">{t.region}</p>
               <p className="mt-2 text-sm text-muted-foreground">{t.blurb}</p>

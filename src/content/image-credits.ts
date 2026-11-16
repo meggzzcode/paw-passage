@@ -4,7 +4,6 @@ export type ImageCredit = { key: ImageKey; photographer: string; unsplashUrl: st
 
 // All photos are used under the Unsplash License (https://unsplash.com/license).
 export const imageCredits: ImageCredit[] = [
-  { key: "hero-porch", photographer: "Illia Bondar", unsplashUrl: "https://unsplash.com/photos/person-and-dog-on-mountain-deck-H5LOYby0rI8" },
   { key: "guide-ga-cabins", photographer: "Kristīne Kozaka", unsplashUrl: "https://unsplash.com/photos/sf9K6IdfQFM" },
   { key: "guide-atlanta-getaways", photographer: "Kristin Melville", unsplashUrl: "https://unsplash.com/photos/a-dog-sitting-on-a-rock-looking-out-over-a-valley-with-trees-and-mountains-xbv0NB2W2gA" },
   { key: "guide-la-getaways", photographer: "Sasha Matveeva", unsplashUrl: "https://unsplash.com/photos/yAwVnvWDf8Q" },

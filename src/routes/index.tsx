@@ -103,7 +103,7 @@ function Home() {
             const img = images[s.img];
             const inner = (
               <>
-                <img src={img.src} alt="" loading="lazy" width={800} height={1000} className={`w-full object-cover transition duration-700 group-hover:scale-105 ${i % 2 ? "aspect-[3/4]" : "aspect-[4/5]"}`} />
+                <img src={img.card ?? img.src} alt="" loading="lazy" decoding="async" width={800} height={1000} className={`w-full object-cover transition duration-700 group-hover:scale-105 ${i % 2 ? "aspect-[3/4]" : "aspect-[4/5]"}`} />
                 <div className="absolute inset-0 bg-scrim" />
                 <span className="absolute bottom-4 left-4 font-display text-xl text-primary-foreground">{s.label}</span>
               </>
@@ -125,7 +125,7 @@ function Home() {
         <div className="mt-8 grid gap-6 md:grid-cols-2">
           {destinations.map((d) => (
             <Link key={d.slug} to="/destinations/$state" params={{ state: d.slug }} className="group relative block overflow-hidden rounded-xl">
-              <img src={images[d.image].src} alt={images[d.image].alt} loading="lazy" width={1600} height={1008} className="aspect-[16/11] w-full object-cover transition duration-700 group-hover:scale-[1.03]" />
+              <img src={images[d.image].card ?? images[d.image].src} alt={images[d.image].alt} loading="lazy" decoding="async" width={1600} height={1008} className="aspect-[16/11] w-full object-cover transition duration-700 group-hover:scale-[1.03]" />
               <div className="absolute inset-0 bg-scrim" />
               <div className="absolute bottom-0 p-7 text-primary-foreground">
                 <p className="text-xs font-semibold uppercase tracking-[0.16em] text-sage">{d.focus}</p>

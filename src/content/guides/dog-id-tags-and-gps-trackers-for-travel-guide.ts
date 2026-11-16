@@ -47,7 +47,7 @@ Think about who will read it: a stranger, possibly in a hurry, possibly far from
 
 ### Keep the tag attached
 
-The usual failure is a tag that detaches. Check the ring and the connection before every trip, or choose a collar with the details built into a nameplate. If your dog's tags jingle against a rabies tag, a silicone cover can help; AKC Reunite lists one for its own tag. [[6]](https://www.akcreunite.org/idtags/) A loose collar can also slip over a dog's head, so for a dog that backs out of collars, walk in new places on a fitted harness and keep a spare tag in the car.
+The usual failure is a tag that detaches. Check the ring and the connection before every trip, or choose a collar with the details built into a nameplate. If your dog's tags jingle against a rabies tag, a tag silencer can help; AKC Reunite lists a glow-in-the-dark plastic one for its own tag. [[6]](https://www.akcreunite.org/idtags/) A loose collar can also slip over a dog's head, so for a dog that backs out of collars, walk in new places on a fitted harness and keep a spare tag in the car.
 
 ## Layer two: the microchip and its registration
 
@@ -62,7 +62,7 @@ The same page makes a point many owners miss: a microchip ID number does not do 
 ### What a microchip does not do
 
 - **It does not locate your dog.** AKC Reunite's travel page calls a microchip not a tracking device but a unique ID number. [[4]](https://www.akcreunite.org/travel/)
-- **It does not help until someone scans it.** Veterinarians and shelters have scanners. A person who finds your dog on the street will not know your dog is chipped unless they take the dog to one, or the dog is wearing a tag that says so.
+- **It does not help until someone scans it.** Veterinarians and shelters have scanners. A person who finds your dog may not know the dog is chipped unless they take the dog to one of those scanners, or the dog is wearing a tag that says so. (That last point is our own reasoning, not a statement from the sources below.)
 - **It does not show your details by itself.** AKC Reunite says only the microchip ID number appears when it is scanned, and then the registry is contacted to get the enrollment information linked to that number. [[4]](https://www.akcreunite.org/travel/)
 
 ### Registration: the part that goes wrong

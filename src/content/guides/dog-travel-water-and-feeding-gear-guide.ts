@@ -105,13 +105,13 @@ BearWise notes that pet food is rich in fat and protein, which makes it extremel
 - Store pet food where bears cannot see or smell it.
 - Do not leave food out for stray animals. [[5]](https://bearwise.org/bearwise-basics/never-leave-pet-food-outdoors/)
 
-BearWise also points out that bags can be dragged away or torn into, and says a container with a screw-on lid will keep bears out of pet food that has to be stored outdoors. [[5]](https://bearwise.org/bearwise-basics/never-leave-pet-food-outdoors/)
+BearWise also points out that a bear can drag pet food bags away, and says storing pet food in a screw-top container will keep black bears out of it. [[5]](https://bearwise.org/bearwise-basics/never-leave-pet-food-outdoors/)
 
 None of the products in this guide claims to be bear-resistant, so treat them as freshness and organization tools, not as wildlife protection. If you are in bear country, the main protection is where the container is kept, not what it is made of.
 
 ### What the National Park Service says
 
-The National Park Service's food storage page treats a broad range of scented items, including ice chests, as food that must be stored properly. It tells visitors to keep food within reach at all times, to keep food inside the room when staying in cabins and hotels, and to close windows and doors when leaving. [[4]](https://www.nps.gov/subjects/bears/storingfood.htm)
+The National Park Service's food storage page treats a broad range of scented items, including ice chests, as food that must be stored properly. It tells visitors to keep food within arm's reach in picnic areas and campgrounds, to keep food inside the room when staying in cabins and hotels, and to close windows and doors when leaving. [[4]](https://www.nps.gov/subjects/bears/storingfood.htm)
 
 On vehicles, the page says rules vary by park: some allow food inside a car if it is out of sight with the windows closed, while others require lockers. It says food must never be stored in a pickup truck bed or strapped to the outside of a vehicle. [[4]](https://www.nps.gov/subjects/bears/storingfood.htm) Breaking the rules can mean fines, confiscation of food, towing or other penalties. [[4]](https://www.nps.gov/subjects/bears/storingfood.htm)
 
@@ -164,7 +164,7 @@ It fits the "one rigid kit for a cabin or camp weekend" situation: food, a seal 
 
 ### Kurgo Kibble Carrier
 
-The maker lists a capacity of up to 5 lbs of dry food, roughly 20 cups of average-sized kibble. It describes ripstop material with a food-safe PEVA liner and heat-sealed seams, a roll-top that rolls down and clips, a buckle, and hand-wash, air-dry care.
+The maker lists a capacity of up to 5 lbs of dry food, roughly 20 cups of average-sized kibble. It describes ripstop material with a food-safe PEVA liner and heat-sealed seams, a roll-top that rolls and clips with a simple buckle closure, and hand-wash, air-dry care.
 
 It is a packing tool: lighter and easier to squeeze into a bag than a rigid bin. The trade-off is that a soft bag offers no protection against a determined animal and the maker does not claim any, so keep it inside, as described above.
 
@@ -299,7 +299,7 @@ Choose gear for how you travel, and follow the official guidance for heat and wi
       productId: "kurgo-kibble-carrier",
       bestFor: "Packing a few days of kibble where weight and space matter",
       whyItMadeTheList:
-        "The maker lists up to 5 lbs of dry food, ripstop material with a food-safe PEVA liner, heat-sealed seams and a roll-top that rolls down and clips. It is a soft, packable option for short trips.",
+        "The maker lists up to 5 lbs of dry food, ripstop material with a food-safe PEVA liner, heat-sealed seams and a roll-top that rolls and clips. It is a soft, packable option for short trips.",
       watchOuts: [
         "Hand wash and air dry only, per the maker.",
         "A soft bag offers no stated protection against animals; store it indoors.",
@@ -390,7 +390,7 @@ Choose gear for how you travel, and follow the official guidance for heat and wi
         coversWell:
           "A clear eight-factor buying guide including material, capacity, cleaning and multi-functionality, plus a travel bottle.",
         gaps:
-          "Dated 2023 with heavy promotional content, minimal veterinary guidance, and no heat, water-amount or hydration advice.",
+          "Dated 2023, lists nine products under an '8 Best' title, relies on affiliate shopping links, and gives no veterinary, heat, water-amount or hydration advice.",
       },
       {
         url: "https://www.cuteness.com/13730996/best-dog-food-container",

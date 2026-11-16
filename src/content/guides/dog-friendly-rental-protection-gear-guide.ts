@@ -64,7 +64,7 @@ If the host allows your dog on a sofa or chair, the cover is the first piece of 
 
 ### Fit
 
-A loose cover bunches, slides and leaves gaps where hair gets in. Measure the width of the sofa between the arms and the depth of the seat before you choose. Makers who sell sized covers give a table. For example, the Orvis Grip-Tight Furniture Protectors are listed in loveseat, couch and XL couch widths of 55, 70 and 86 inches with a 26-inch seat depth. [[4]](https://www.orvis.com/p/grip-tight-quilted-furniture-protector-with-zip-off-bolster/20NE) You will not know the host's furniture in advance, so ask for approximate dimensions or a photo, or choose a throw that tolerates a range of sizes.
+A loose cover bunches, slides and leaves gaps where hair gets in. Measure the width of the sofa between the arms and the depth of the seat before you choose. Fitted covers are sold in sizes by sofa width, so check the maker's size table. A throw is not fitted. The Orvis Embossed Sherpa Throw is listed at 40 by 40 inches, which is a lap-and-seat-sized layer rather than full coverage. [[4]](https://www.orvis.com/p/embossed-sherpa-throw/28F4) You will not know the host's furniture in advance, so ask for approximate dimensions or a photo, or choose a throw that tolerates a range of sizes.
 
 ### Grip
 
@@ -72,15 +72,15 @@ A cover that slides under a dog does not protect much. Non-slip backing and wrap
 
 ### Moisture
 
-Water resistance is a useful extra for a swimming dog, a rainy hike or an accident. Read the exact wording. The Orvis page describes a breathable, water-resistant membrane, and it says water-resistant, not waterproof. [[4]](https://www.orvis.com/p/grip-tight-quilted-furniture-protector-with-zip-off-bolster/20NE) A towel or a waterproof throw is still the better first line for a soaked dog.
+Water resistance is a useful extra for a swimming dog, a rainy hike or an accident. Read the exact wording. The Orvis throw page lists no waterproof or water-resistant claim, so treat it as a hair-and-dirt layer rather than a moisture barrier. [[4]](https://www.orvis.com/p/embossed-sherpa-throw/28F4) A towel or a waterproof throw is still the better first line for a soaked dog.
 
 ### Washing
 
-Machine-washable matters because the cover will pick up hair, smell and dirt over a trip, and you want to wash it before you return home. Check whether it must be washed with a gentle cycle, whether it can be dried in a machine and whether it will survive more than a few washes. Orvis lists the protector as machine washable with a care label reading machine wash. [[4]](https://www.orvis.com/p/grip-tight-quilted-furniture-protector-with-zip-off-bolster/20NE)
+Machine-washable matters because the cover will pick up hair, smell and dirt over a trip, and you want to wash it before you return home. Check whether it must be washed with a gentle cycle, whether it can be dried in a machine and whether it will survive more than a few washes. Orvis lists the throw's care as machine wash and gives no other washing details, so check the label when it arrives. [[4]](https://www.orvis.com/p/embossed-sherpa-throw/28F4)
 
 ### Packability
 
-A full couch protector is bulky for a suitcase or a car. If you travel by air, or you have little cargo space, a washable throw blanket in a familiar fabric may be a better choice. Your own cotton throw or an old bedsheet is a perfectly reasonable low-tech option, as long as it is clean and, ideally, one the dog already knows.
+A full fitted couch protector is bulky for a suitcase or a car. If you travel by air, or you have little cargo space, a washable throw blanket in a familiar fabric is usually easier to pack. Your own cotton throw or an old bedsheet is a perfectly reasonable low-tech option, as long as it is clean and, ideally, one the dog already knows.
 
 ## Travel beds and mats
 
@@ -94,7 +94,7 @@ The easiest way to protect furniture is to give the dog a place that is clearly 
 - **Packed size and weight**, especially for a flight or a small car.
 - **A moisture barrier**, if the dog will often be damp.
 
-The Ruffwear Highlands Dog Pad is a good example of the type. The maker lists a medium that is 23.6 by 33.25 inches flat and a large that is 26.8 by 43.3 inches, folded sizes of about 12 by 5 inches and 14 by 6 inches, and weights of 0.75 and 1.05 pounds. It describes a non-slip waterproof base that creates a moisture barrier, and it gives hand wash, mild detergent and air dry as care instructions. [[5]](https://ruffwear.com/products/mt-bachelor-pad-dog-bed) A thin pad like this is about a one-inch loft, so it is a boundary and a surface, not an orthopedic bed.
+The Kurgo Loft Wander Dog Bed is an example of the type. The maker lists a medium that is 27 by 36 by 2 inches open and 12.5 by 8 inches rolled up, and a large that is 36 by 48 by 3 inches open and 17 by 9.5 inches rolled up. It lists a waterproof bottom, a nonslip bottom and a handle for toting. For care it says to wash by hand or machine on a gentle cycle with cold water, mild detergent and no bleach, then hang dry. [[5]](https://www.kurgo.com/p/tago-bed/K81022) The page lists no weight, so check the packed size against your luggage. A bed this thin is a boundary and a surface, not an orthopedic bed.
 
 ### A bed is not a barrier
 
@@ -115,23 +115,23 @@ We do not recommend a specific towel in this guide. We looked at wearable, absor
 
 A back-seat cover protects upholstery from hair, mud, drool and scratches. It is useful in your own car, and it can be useful on a road trip where you will be getting in and out of the car at rest stops, trailheads and beaches.
 
-**A back-seat cover is not a restraint.** It does not keep a dog from being thrown in a collision, and it is not crash protection. Makers rarely claim otherwise. The Ruffwear page, for example, makes no crash-safety or restraint claims. [[6]](https://www.ruffwear.com/products/dirtbag-seat-cover) Treat a cover as an upholstery layer and use a properly fitted harness or crate for safety. Our [car-safety guide](/guides/dog-car-safety-harness-and-crate-guide) covers harnesses and crates, and you should also check your harness or crate maker's own instructions.
+**A back-seat cover is not a restraint.** It does not keep a dog from being thrown in a collision, and it is not crash protection. Makers rarely claim otherwise. The Kurgo Heather Hammock page, for example, makes no crash-test or restraint claims. [[6]](https://www.kurgo.com/p/heather-hammock/K01598) Treat a cover as an upholstery layer and use a properly fitted harness or crate for safety. Our [car-safety guide](/guides/dog-car-safety-harness-and-crate-guide) covers harnesses and crates, and you should also check your harness or crate maker's own instructions.
 
 ### Bench cover or hammock
 
 - **A bench cover** lies over the seat. It is simpler and works if the dog sits or lies on the seat.
 - **A hammock** attaches to the front and back headrests and spans the gap to the front seats. It adds a barrier between the dog and the footwell, and it catches hair and mud there. Some convert between the two forms.
 
-Hammocks are made for bench seats. The Kurgo Heather Hammock page says to use it in vehicles with bench seats under it and not to use it with bucket seats or over an open space without a bench seat. [[7]](https://www.kurgo.com/p/heather-hammock/K01598) Check your car's seat layout before you buy.
+Hammocks are made for bench seats. The Kurgo Heather Hammock page says to use it in vehicles with bench seats under it and not to use it with bucket seats or over an open space without a bench seat. [[6]](https://www.kurgo.com/p/heather-hammock/K01598) Check your car's seat layout before you buy.
 
 ### What to look for
 
-- **Fit to your vehicle.** Measure the width of your back seat. The Kurgo hammock is 55 inches wide by 56 inches long and says it may not fit large trucks or SUVs. [[7]](https://www.kurgo.com/p/heather-hammock/K01598) The Ruffwear Dirtbag cover is listed at 55 inches wide by 63 inches long. [[6]](https://www.ruffwear.com/products/dirtbag-seat-cover)
-- **Seat-belt access.** Hook-and-loop openings or zippers let a person use the belt and let you attach a harness tether if the harness maker allows it. Kurgo lists hook-and-loop openings for seat belts and latch systems, and Ruffwear lists two-way zippers for seat-belt access. [[7]](https://www.kurgo.com/p/heather-hammock/K01598) [[6]](https://www.ruffwear.com/products/dirtbag-seat-cover)
-- **Secure attachment.** Kurgo says its hammock attaches at eight points with anchors and under-seat paracord. [[7]](https://www.kurgo.com/p/heather-hammock/K01598) A cover that slides can be a distraction in a moving car.
-- **A way to seat a person.** Kurgo's center zipper folds back half the cover so a human passenger can sit. [[7]](https://www.kurgo.com/p/heather-hammock/K01598)
-- **Material and water claims.** Ruffwear lists a 300D recycled polyester shell with a DWR finish and describes the cover as waterproof, with no specific rating given. [[6]](https://www.ruffwear.com/products/dirtbag-seat-cover) Kurgo describes its hammock as waterproof and stain resistant. [[7]](https://www.kurgo.com/p/heather-hammock/K01598) Seams, zippers and belt openings can still let liquid through, so treat these as water-resistant to a degree and wipe spills quickly.
-- **Washing.** Ruffwear describes the cover as machine washable and gives cold water, gentle cycle, mild detergent and hang dry as care steps. [[6]](https://www.ruffwear.com/products/dirtbag-seat-cover) Kurgo points to a separate care PDF, which we did not review.
+- **Fit to your vehicle.** Measure the width of your back seat. The Kurgo hammock is 55 inches wide by 56 inches long and says it may not fit large trucks or SUVs. [[6]](https://www.kurgo.com/p/heather-hammock/K01598)
+- **Seat-belt access.** Hook-and-loop openings or zippers let a person use the belt and let you attach a harness tether if the harness maker allows it. Kurgo lists hook-and-loop openings for seat belts and latch systems. [[6]](https://www.kurgo.com/p/heather-hammock/K01598)
+- **Secure attachment.** Kurgo says its hammock attaches at eight points with anchors and under-seat paracord. [[6]](https://www.kurgo.com/p/heather-hammock/K01598) A cover that slides can be a distraction in a moving car.
+- **A way to seat a person.** Kurgo's center zipper folds back half the cover so a human passenger can sit. [[6]](https://www.kurgo.com/p/heather-hammock/K01598)
+- **Material and water claims.** Kurgo describes its hammock as waterproof and stain resistant and lists no material composition or waterproof rating. [[6]](https://www.kurgo.com/p/heather-hammock/K01598) Seams, zippers and belt openings can still let liquid through, so treat these as water-resistant to a degree and wipe spills quickly.
+- **Washing.** Kurgo's product page points to a separate instructions PDF. That PDF says washing by hand and hang air-drying is the best way to care for Kurgo products. [[7]](https://cdn.shopify.com/s/files/1/0554/6252/7165/files/Heather_Hammock_En-Fr-DE-ES_10-18_20faa73e-d121-4cf6-aae4-4f1842c10e35.pdf?v=1628066949) The same PDF says the hammock should rest on the seat fully and not hang over it.
 
 ### A note on a rental car
 
@@ -139,33 +139,28 @@ If you are renting a car rather than a vacation home, check the rental company's
 
 ## The picks, by situation
 
-These are specification-based picks, not tested products. Each one is described using the maker's own page. We list no prices, and availability varies, so confirm the product is in stock in your size on the maker's page before relying on it.
+These are specification-based picks, not tested products. Each one is described using the maker's own page. We list no prices. We checked each seller's page on 2026-11-16 and each showed an Add to Cart button, but availability changes, and a page can show a button for a size or color that is sold out, so confirm that the product is in stock in your size on the seller's page before relying on it. Sizes and colors can sell out without notice.
 
-### If the host allows your dog on the sofa: Orvis Grip-Tight Furniture Protectors
+### If the host allows your dog on the sofa: Orvis Embossed Sherpa Throw
 
-This is a sized couch cover with a non-slip backing and a water-resistant membrane. It suits a trip where you know the host allows dogs on the sofa and you have car space. It is bulky, and sizes are by sofa width, so you need to know roughly what you will find. Stock on the maker's page varied when we checked, so confirm that before you plan around it.
+A 40-by-40-inch two-layer sherpa fleece throw that you lay over the sofa or chair, listed as machine wash. It suits a trip where you know the host allows dogs on the sofa and you want something easy to pack and wash. It is a throw, not a fitted cover, so it will not stay put on its own, and the page lists no water-resistance claim.
 
-### If you want a place that is the dog's own: Ruffwear Highlands Dog Pad
+### If you want a place that is the dog's own: Kurgo Loft Wander Dog Bed
 
-A light, foldable pad with a non-slip waterproof base. It suits a dog that settles on a floor spot and a trip where packing space is tight. It is thin, so it is a boundary and not a plush bed.
+A roll-up travel bed in medium and large with a nonslip, waterproof bottom and a handle. It suits a dog that settles on a floor spot and a trip where you can carry a rolled bundle. It is thin, so it is a boundary and not a plush bed.
 
 ### If you are driving with a dog on a bench seat: Kurgo Heather Hammock
 
 A hammock with seat-belt openings and a center zipper that folds back for a person. It suits a typical sedan or smaller SUV with a bench seat. Check the width and the bucket-seat warning first.
-
-### If you want convertible bench or hammock coverage: Ruffwear Dirtbag Dog Car Seat Cover
-
-A cover that works either as a bench cover or a hammock, with a mesh window and zippers for seat-belt access. It suits a driver who wants one cover for different trips. The page lists no sizes beyond one set of dimensions, so check the fit.
 
 ### Quick comparison
 
 | Situation | Gear type | Main thing to check |
 | --- | --- | --- |
 | Host allows dog on sofa | Fitted couch cover or throw | Width between arms, grip, host permission |
-| Dog should stay on the floor | Travel pad or mat | Non-slip base, size, washing |
+| Dog should stay on the floor | Travel bed or mat | Non-slip base, size, washing |
 | Muddy or wet dog | Dog-only towels, entrance mat | Quick drying, machine washable |
 | Road trip, bench seat | Hammock | Seat width, bench-only warning, belt access |
-| Different cars or vehicles | Convertible bench/hammock cover | Dimensions, how it attaches |
 | Small dog | Throw or small bed | Weight and size, not just coverage |
 
 ## How to use gear without making it worse
@@ -229,39 +224,27 @@ For the money side, read how [pet fees actually work](/guides/how-vacation-renta
   ],
   gear: [
     {
-      productId: "orvis-grip-tight-furniture-protectors",
-      bestFor: "A trip where the host has said dogs may use the sofa and you have space to pack a fitted cover",
+      productId: "orvis-embossed-sherpa-throw",
+      bestFor: "A trip where the host has said dogs may use the sofa and you want an easy-to-pack washable layer",
       whyItMadeTheList:
-        "It lists sizes by sofa width with a stated seat depth, a non-slip backing with a wraparound flap, a water-resistant membrane, and machine-washable care, which match the fit, grip, moisture and washing criteria.",
+        "The maker lists a size, a two-layer sherpa fleece construction and machine-wash care, which fit the packability and washing criteria for a throw.",
       watchOuts: [
-        "Water-resistant is the maker's wording; it does not say waterproof.",
-        "It is bulkier than a throw, and you may not know the host's sofa size in advance.",
-        "Stock was shown as unavailable on the maker's page when we checked, so confirm availability.",
+        "It is a 40 by 40 inch throw, not a fitted cover, so it can slide and covers only part of a sofa.",
+        "The page lists no waterproof or water-resistant claim and gives only 'machine wash' as care.",
         "It does not stop claws or chewing, and it does not replace asking the host about furniture.",
+        "Availability changes, so confirm it is in stock on the seller's page.",
       ],
     },
     {
-      productId: "ruffwear-highlands-dog-pad",
-      bestFor: "Giving a dog its own floor spot in a rental, especially when packing space or weight is limited",
+      productId: "kurgo-loft-wander-dog-bed",
+      bestFor: "Giving a dog its own floor spot in a rental, especially when the bed needs to roll up for the car",
       whyItMadeTheList:
-        "The maker lists flat and folded sizes, weights, a non-slip waterproof base and care instructions, which fit the travel bed criteria of portability, grip and easy cleaning.",
+        "The maker lists open and rolled-up sizes, a waterproof nonslip bottom, a handle and washing instructions, which fit the travel bed criteria of portability, grip and easy cleaning.",
       watchOuts: [
-        "Loft is listed at 1 inch, so it is thin and not an orthopedic bed.",
-        "Care is hand wash and air dry, so it is not a machine-wash item.",
-        "Compare the flat size with your dog's length lying down.",
+        "Open depth is listed at 2 to 3 inches, so it is a travel bed and not an orthopedic bed.",
+        "No weight is listed, and the rolled-up large is 17 by 9.5 inches, so check your luggage space.",
+        "Compare the open size with your dog's length lying down.",
         "It does not stop a dog from climbing onto furniture.",
-      ],
-    },
-    {
-      productId: "ruffwear-dirtbag-seat-cover",
-      bestFor: "One back-seat cover that can be set up as a bench cover or a hammock",
-      whyItMadeTheList:
-        "It lists dimensions, a recycled polyester shell, zippers for seat-belt access, headrest attachment and machine-washable care, which match the fit and cleaning criteria for a car cover.",
-      watchOuts: [
-        "It is not a restraint; the page makes no crash-safety claims, so use a harness or crate separately.",
-        "Waterproof is the maker's wording with no rating given; seams and zippers can still let liquid through.",
-        "Only one set of dimensions is listed, so measure your back seat first.",
-        "One colour showed as out of stock on the maker's page when we checked, so confirm availability.",
       ],
     },
     {
@@ -272,7 +255,7 @@ For the money side, read how [pet fees actually work](/guides/how-vacation-renta
       watchOuts: [
         "The maker says it may not fit large trucks or SUVs and is for bench seats only.",
         "It is not a restraint or crash protection.",
-        "No material composition is listed on the page, and care instructions are in a separate PDF we did not review.",
+        "No material composition is listed on the page, and the linked care PDF says hand washing and hang air-drying is best.",
         "Measure your back seat before you buy.",
       ],
     },
@@ -305,26 +288,26 @@ For the money side, read how [pet fees actually work](/guides/how-vacation-renta
       accessedOn: "2026-11-16",
     },
     {
-      title: "Grip-Tight Furniture Protectors",
-      url: "https://www.orvis.com/p/grip-tight-quilted-furniture-protector-with-zip-off-bolster/20NE",
+      title: "Embossed Sherpa Throw",
+      url: "https://www.orvis.com/p/embossed-sherpa-throw/28F4",
       publisher: "Orvis",
       accessedOn: "2026-11-16",
     },
     {
-      title: "Highlands Dog Pad",
-      url: "https://ruffwear.com/products/mt-bachelor-pad-dog-bed",
-      publisher: "Ruffwear",
-      accessedOn: "2026-11-16",
-    },
-    {
-      title: "Dirtbag Dog Car Seat Cover",
-      url: "https://www.ruffwear.com/products/dirtbag-seat-cover",
-      publisher: "Ruffwear",
+      title: "Loft Wander Dog Bed",
+      url: "https://www.kurgo.com/p/tago-bed/K81022",
+      publisher: "Kurgo",
       accessedOn: "2026-11-16",
     },
     {
       title: "Heather Hammock",
       url: "https://www.kurgo.com/p/heather-hammock/K01598",
+      publisher: "Kurgo",
+      accessedOn: "2026-11-16",
+    },
+    {
+      title: "Heather Hammock: instructions and care (PDF)",
+      url: "https://cdn.shopify.com/s/files/1/0554/6252/7165/files/Heather_Hammock_En-Fr-DE-ES_10-18_20faa73e-d121-4cf6-aae4-4f1842c10e35.pdf?v=1628066949",
       publisher: "Kurgo",
       accessedOn: "2026-11-16",
     },
@@ -355,7 +338,7 @@ For the money side, read how [pet fees actually work](/guides/how-vacation-renta
         coversWell:
           "Explains hammock use, selection criteria, materials, fit, mesh and door-protection trade-offs, and says a hammock is not a replacement for a crate or seat belt.",
         gaps:
-          "No rental or host-etiquette content, few dimensions or weight limits, waterproof claims repeated from marketing copy, heading and product counts that do not match, and affiliate-driven rankings.",
+          "No rental or host-etiquette content, no specific dimensions or weight limits (sizes are described only loosely), waterproof claims repeated from marketing copy, a headline of 10 and a subheading of 12 against 9 products listed, and retailer links with affiliate tags that the page discloses.",
       },
       {
         url: "https://www.treelinereview.com/gearreviews/best-dog-car-seat-covers",
@@ -371,7 +354,7 @@ For the money side, read how [pet fees actually work](/guides/how-vacation-renta
         title: "Dog Furniture Protectors",
         checkedOn: "2026-11-16",
         coversWell:
-          "How to measure for sofa and chair covers, a shake-and-wash care note, and an honest statement that no cover is completely dog-proof.",
+          "How to measure for sofa and chair covers (space between the arms, standard sizing for seat depths up to 26 inches), a shake-off-the-hair-and-wash care note, and an honest statement that no cover is completely dog-proof.",
         gaps:
           "A retailer category page with only two items shown, no dimensions on the listed throws, no care detail beyond machine washable, and nothing on host permission.",
       },
@@ -396,8 +379,9 @@ For the money side, read how [pet fees actually work](/guides/how-vacation-renta
     ],
     gapsFound: [
       "No readable maker page was found for towels or wearable drying towels, so none are recommended.",
-      "Kurgo's care instructions are in a separate PDF that this guide does not cover; the article says so.",
-      "Stock availability changes: the Orvis protectors and one Ruffwear Dirtbag colour showed as out of stock on the check date, and the article tells readers to confirm availability.",
+      "Stock availability changes: an earlier check found other products out of stock, so each pick was re-checked on 2026-11-16 (each page showed an Add to Cart button, though the pages did not state stock levels), and the article tells readers to confirm availability on the seller's page.",
+      "The Kurgo Loft Wander bed page lists no weight, and the Orvis throw page lists no water-resistance claim or care detail beyond machine wash.",
+      "No second back-seat cover from a different maker was added; the guide keeps one car pick.",
       "Car-cover roundups rarely mention vacation rentals; furniture-cover pages rarely mention asking the host.",
       "Waterproof claims are repeated from marketing copy, often without a rating or an explanation of seams and openings.",
       "Hammock pages sometimes blur protecting upholstery with restraining the dog.",

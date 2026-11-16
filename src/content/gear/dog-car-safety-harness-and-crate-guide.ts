@@ -7,9 +7,9 @@ export const products: Product[] = [
     name: "Clickit Range Crash-Tested Harness",
     brand: "Sleepypod",
     summary:
-      "A vest-style car harness that threads onto a rear-seat seat belt and is built for larger dogs and deep-chested builds.",
+      "A vest-style car harness that threads onto a rear-seat seat belt, listed by the maker for dogs from 18 to 110 lbs with Regular and Long fits.",
     keySpecs: [
-      "Sizes Small to 2X-Large, each offered in Regular and Long fits",
+      "Maker lists sizes Small to 2X-Large with Regular and Long fits; the CPS listing covers Small, Medium, Large and X-Large only (tested at 110 lbs, November 2024)",
       "Maker states it is rated up to 110 lbs by the Center for Pet Safety",
       "Three-point design for the rear passenger seat that connects to a vehicle seat belt",
       "Includes an S-Clip and a Buckle Shield",
@@ -27,13 +27,14 @@ export const products: Product[] = [
     name: "Atom Crash-Tested Carrier",
     brand: "Sleepypod",
     summary:
-      "A soft, fold-flat carrier that doubles as a car seat for very small dogs, with a safety tether inside.",
+      "A soft, fold-flat carrier that for very small dogs that the maker says can be used as a car seat, with a safety tether inside.",
     keySpecs: [
       "Maker states it is rated to 12 lbs (5.5 kg) by the Center for Pet Safety",
       "Mesh panels on three sides and plush bedding",
       "Folds flat for storage",
       "Includes a safety tether to prevent escapes",
       "Maker warns it should not be used with non-Sleepypod accessories",
+      "Product page does not describe how to secure it in a vehicle; get the maker's instructions and never leave it loose on a seat",
     ],
     specSource: {
       title: "Sleepypod Atom Crash-Tested Carrier",

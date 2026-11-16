@@ -6,7 +6,7 @@ export const products: Product[] = [
     name: "Adventure Dog Medical Kit: Me & My Dog",
     brand: "Adventure Medical Kits",
     summary:
-      "A larger kit for people and dogs, packed in two waterproof bags, with a pet first aid manual and a general wilderness and travel medicine guide.",
+      "A larger kit for people and dogs, packed in two waterproof bags, with a general wilderness and travel medicine guide in its contents list; the feature text also mentions a pet first aid manual.",
     keySpecs: [
       "Listed contents include adhesive bandages, sterile gauze dressings, non-adherent dressings, a 2 inch conforming gauze bandage, cloth tape, a self-adhering bandage, a triangular bandage and a cold pack",
       "Also lists a 10 cc wound irrigation tool, splinter/tick remover forceps, 4 inch EMT shears, latex-free gloves, safety pins, a 60 inch nylon leash and an emergency blanket",
@@ -68,7 +68,7 @@ export const products: Product[] = [
     summary:
       "A smaller MOLLE-compatible kit the maker designed to attach to its RSG harnesses and utility belt, with a similar contents list to Kurgo's larger kit.",
     keySpecs: [
-      "Maker describes it as 49 pieces; the page lists 21 line items",
+      "Maker describes it as 49 pieces; the page lists about 20 line items",
       "Listed contents include parachute cord, first aid guide, sting relief pads, tweezers, a 2 inch crepe bandage, gauze pads and roll, a 5 x 9 inch trauma pad, an instant cold pack, an emergency blanket, scissors and iodine prep pads",
       "MOLLE-compatible with MOLLE clips or patches; designed to work with RSG harnesses and the Active Utility Belt",
       "Maker offers a lifetime guarantee against manufacturing defects and a 45-day return window",

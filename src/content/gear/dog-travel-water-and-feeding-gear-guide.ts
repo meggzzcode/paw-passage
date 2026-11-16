@@ -86,7 +86,7 @@ export const products: Product[] = [
     keySpecs: [
       "Holds up to 5 lbs of dry food, roughly 20 cups of average-sized kibble, per the maker",
       "Ripstop material with a food-safe PEVA liner and heat-sealed seams",
-      "Roll-top closure that rolls down and clips, plus a buckle",
+      "Roll-top closure that rolls and clips, with a simple buckle closure",
       "Hand wash, then air dry",
     ],
     specSource: {

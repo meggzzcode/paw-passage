@@ -93,7 +93,7 @@ North States limits its play yard to square or octagon shapes, says not to use m
 
 ### Latches, doors and collars
 
-Look at the door and how it closes. MidWest describes a door that closes over a safety lock with two slide-bolt latches, and a safety clip for added security. [[2]](https://www.midwesthomes4pets.com/wp-content/uploads/ExPen_550DR_Eng.pdf) North States describes a 9.5 by 8 inch door that swings and locks for containment. [[4]](https://northstatesind.com/north-states-mypet-petyard-passage-8-panel/)
+Look at the door and how it closes. MidWest describes a door that closes over a safety lock with two slide-bolt latches, and a safety clip for added security. [[2]](https://www.midwesthomes4pets.com/wp-content/uploads/ExPen_550DR_Eng.pdf) North States' page describes a 9.5 x 8 inch swinging door panel that locks; which door panel ships is not stated. [[4]](https://northstatesind.com/north-states-mypet-petyard-passage-8-panel/)
 
 MidWest also tells owners to remove collars, tags and leads from the pet before placing it inside to prevent possible entanglement. [[2]](https://www.midwesthomes4pets.com/wp-content/uploads/ExPen_550DR_Eng.pdf) Follow that instruction whichever pen you buy, and read your pen's own manual.
 
@@ -113,7 +113,7 @@ These are not ranked and not tested. Each is described only from what its maker 
 
 **Maker-stated specs:** instructions cover model numbers 550-24DR, 552-30DR, 554-36DR, 556-42DR and 558-48DR; eight connected panels; eight ground anchors, eight corner stabilizers and four snaps are included. [[2]](https://www.midwesthomes4pets.com/wp-content/uploads/ExPen_550DR_Eng.pdf)
 
-**Why it made the list:** a wide height range gives you a choice for different dogs, and the corner stabilizers double as floor protectors when placed on the bottom of the pen, which is directly relevant to a rental floor. The page for this model lists heights from 24 to 48 inches. [[3]](https://www.midwesthomes4pets.com/product/dogs/pens-gates-barriers/exercise-pen-with-door/)
+**Why it made the list:** a wide height range gives you a choice for different dogs, and the corner stabilizers can serve as floor protectors when placed on the bottom of the pen, which is directly relevant to a rental floor, though the manual says all 8 on top gives maximum stability and bottom placement trades some of that away. The page for this model lists heights from 24 to 48 inches. [[3]](https://www.midwesthomes4pets.com/product/dogs/pens-gates-barriers/exercise-pen-with-door/)
 
 **Watch out:** the ground anchors are designed to be installed in the ground, so ask first before putting them into a lawn. The maker's warning about untrained pets and unsupervised young animals applies. The pen's weight, enclosed area and intended dog size are not stated on the sources we read.
 
@@ -127,7 +127,7 @@ These are not ranked and not tested. Each is described only from what its maker 
 
 ### Carlson Extra Wide Walk-Thru Pet Gate with Small Pet Door (#0930 PW)
 
-**Maker-stated specs:** 30 inches tall; fits openings from 29 to 36.5 inches; adjustable pressure mounts by default, with wall cups included; 16.5-inch door opening; steel frame; limited 6-month warranty. [[5]](https://carlsonpetproducts.com/products/extra-wide-walk-thru-pet-gate-white)
+**Maker-stated specs:** 30 inches tall; fits openings from 29 to 36.5 inches; adjustable pressure mounts by default, with wall cups included; 16.5-inch door opening; all-metal frame; limited 6-month warranty. [[5]](https://carlsonpetproducts.com/products/extra-wide-walk-thru-pet-gate-white)
 
 **Why it made the list:** pressure mounting is the lowest-commitment way to close an interior opening, and the walk-through door means you do not step over it.
 
@@ -180,7 +180,7 @@ Keep the answers in writing. Then add the setup to your [trip checklist](/tools/
 
 ### Protect the surface
 
-The MidWest corner stabilizers can serve as floor protectors when placed on the bottom of the pen, according to the maker. [[2]](https://www.midwesthomes4pets.com/wp-content/uploads/ExPen_550DR_Eng.pdf) Beyond that, think about a rug or mat under any pen with metal feet. Pressure gates can rub on paint, so check the spot on arrival and photograph the condition, both before and after.
+The MidWest corner stabilizers can serve as floor protectors when placed on the bottom of the pen, according to the maker, but the manual says that for maximum stability all 8 go on top, every other one on the bottom gives a mix of stability and floor protection, and all 8 on the bottom is for floor protection only. [[2]](https://www.midwesthomes4pets.com/wp-content/uploads/ExPen_550DR_Eng.pdf) Beyond that, think about a rug or mat under any pen with metal feet. Pressure gates can rub on paint, so check the spot on arrival and photograph the condition, both before and after.
 
 ### Outdoor use and the lawn
 
@@ -239,7 +239,7 @@ The best portable setup is one that fits the dog you actually have. A gate for a
   faqs: [
     {
       q: "Can a portable dog fence replace a fenced yard at a rental?",
-      a: "No. A pen or gate is a short, supervised tool. Makers warn that a dog not trained to be restricted may try to escape and be injured. If your trip depends on unsupervised yard time, book a rental with a genuinely secure yard instead. [[2]](https://www.midwesthomes4pets.com/wp-content/uploads/ExPen_550DR_Eng.pdf)",
+      a: "No. A pen or gate is a short, supervised tool. MidWest warns that a dog not trained to be restricted may try to escape and be injured. If your trip depends on unsupervised yard time, book a rental with a genuinely secure yard instead. [[2]](https://www.midwesthomes4pets.com/wp-content/uploads/ExPen_550DR_Eng.pdf)",
     },
     {
       q: "Do I need the host's permission to bring a pen or gate?",
@@ -259,15 +259,15 @@ The best portable setup is one that fits the dog you actually have. A gate for a
     },
     {
       q: "Can I leave my dog in a pen while I go out?",
-      a: "We do not recommend it. Makers advise against leaving young animals unsupervised for extended periods, and rentals often have their own unattended-pet rules. Ask the host and plan to stay with your dog. [[2]](https://www.midwesthomes4pets.com/wp-content/uploads/ExPen_550DR_Eng.pdf)",
+      a: "We do not recommend it. MidWest advises against leaving young animals unsupervised for extended periods, and rentals often have their own unattended-pet rules. Ask the host and plan to stay with your dog. [[2]](https://www.midwesthomes4pets.com/wp-content/uploads/ExPen_550DR_Eng.pdf)",
     },
   ],
   gear: [
     {
       productId: "midwest-exercise-pen-with-door",
-      bestFor: "A flexible pen with a choice of heights and floor-protecting corner stabilizers",
+      bestFor: "A flexible pen with a choice of heights and corner stabilizers that can double as floor protectors",
       whyItMadeTheList:
-        "The maker's instructions describe eight connected panels, a two-latch door with a safety clip, ground anchors for outdoor use, and corner stabilizers that can sit on the bottom of the pen as floor protectors. A range of heights lets you match the pen to your dog.",
+        "The maker's instructions describe eight connected panels, a two-latch door with a safety clip, ground anchors for outdoor use, and corner stabilizers that can sit on the bottom of the pen as floor protectors, at some cost to stability versus placing them on top. A range of heights lets you match the pen to your dog.",
       watchOuts: [
         "Maker says a pet not trained to be restricted may attempt to escape, risking injury to the pet or the product",
         "Maker says not to leave young animals unsupervised for extended periods",
@@ -291,7 +291,7 @@ The best portable setup is one that fits the dog you actually have. A gate for a
       productId: "carlson-extra-wide-walk-thru-gate-0930",
       bestFor: "Closing off a doorway or hallway without screws",
       whyItMadeTheList:
-        "A 30-inch steel gate that installs with adjustable pressure mounts by default, fits 29 to 36.5 inch openings with its included extension, and has a walk-through door.",
+        "A 30-inch all-metal gate that installs with adjustable pressure mounts by default, fits 29 to 36.5 inch openings with its included extension, and has a walk-through door.",
       watchOuts: [
         "Does not fit openings between 32 and 34 inches",
         "Pressure mounts can mark trim, so ask the host",
@@ -333,7 +333,7 @@ The best portable setup is one that fits the dog you actually have. A gate for a
   relatedTools: ["checklist", "host-questions"],
   sources: [
     {
-      title: "Chaining and tethering",
+      title: "Is it okay to chain or tether dogs?",
       url: "https://www.humaneworld.org/chaining",
       publisher: "Humane World for Animals (formerly the Humane Society of the United States)",
       accessedOn: "2026-11-16",
@@ -450,7 +450,7 @@ The best portable setup is one that fits the dog you actually have. A gate for a
       },
     ],
     gapsFound: [
-      "Outdoorsy's portable-dog-fence page returned HTTP 403 and was not read.",
+      "One further ranking page (Outdoorsy) returned HTTP 403 and was not used.",
       "Tether laws vary by state and city and were not researched here.",
       "Product pages do not state weights for several items.",
       "Most roundups are written for camping or RVs rather than vacation rentals.",

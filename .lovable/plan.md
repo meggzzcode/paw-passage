@@ -86,7 +86,7 @@ Unchanged from the original brief:
 - **Before-you-book checklist:** tick items off, it saves on your device, and it prints neatly.
 - **Host question generator:** pick your dog's needs (size, count, fencing, breed, fees, pool, crate, quiet hours) and get a ready-to-copy message for the host, plus a list of photos to request.
 - **Pet fee and trip cost calculator:** compare up to 3 stays by nightly rate, pet fees per dog or per stay, cleaning, deposits and taxes, and see the true total.
-- **Stay comparison:** verified (or clearly labeled example) stays side by side, with "not confirmed" shown where data is missing.
+- **Stay comparison:** verified stays side by side (sample stays in the preview only), with "not confirmed" shown where data is missing.
 - Each tool links into the matching guides, and the guides link back to the tools.
 
 ## Money features (no backend needed)
@@ -129,7 +129,7 @@ The code is organized so a database can be added later without a redesign.
 
 ## Order of work
 1. Design system, settings, layout, info pages
-2. Data formats, example stays, destinations, directory and stay pages
+2. Data formats, preview-only sample stays, destinations, directory and stay pages
 3. Tools
 4. Guides: research briefs, then all ten articles
 5. Search engine setup and sitemap

@@ -6,26 +6,34 @@
 
 **Cost.** Everything below is free: a GitHub repository, Netlify's free plan and Pages CMS's hosted app. Stop and ask before clicking anything that mentions a price, a trial or "upgrade".
 
-## Why a separate test repository
+## The setup: the existing repository, the CMS branch only
 
-The CMS version of the site lives on the `claude/cms-poc` branch. Pages CMS's documentation does not say whether it can edit a branch other than the default one, and changing your real repository's default branch would change what Lovable syncs. So the tests use a **separate, private test repository** whose `main` is a copy of the CMS branch. Your real repository's `main` is not touched.
+The tests use the **existing repository** (`meggzzcode/paw-passage`) but only its **`claude/cms-poc` branch**. The real site code on `main` must not change until the tests pass and you approve the merge.
 
-## Part 0: the test repository (5 minutes)
+- **Netlify** can build from any branch you choose, so we tell it that `claude/cms-poc` is the "production branch" for this test project.
+- **Lovable** only syncs the default branch (`main`), so it ignores `claude/cms-poc`.
+- **Pages CMS** reads its settings file "per repository and per branch" according to its docs, so it should be able to open this branch. This has not been confirmed. **If Pages CMS offers no way to choose or switch to `claude/cms-poc`, stop and tell Claude. Do not edit anything.** The fallback is a separate test repository.
 
-1. On GitHub, create a new **private**, **empty** repository (no README, no licence), for example `paws-passage-cms-test`, under the account that will be used for the tests.
-2. Tell Claude the repository's name. Claude attaches it to this session and copies the CMS branch into it as `main`. (Claude can only write to repositories you have attached; nothing else is touched.)
-3. Check on GitHub that the files appear (`content/`, `.pages.yml`, `netlify.toml`, `BUYER_HANDOVER.md`).
+**One real risk.** On GitHub's free plan, a private repository cannot lock `main` against changes. So a mistake in Pages CMS (saving while it is pointed at `main`) could write to `main`. To manage this:
+1. Before every save in Pages CMS, look at which branch it shows. It must say `claude/cms-poc`.
+2. Claude checks that `main` is still at commit `8f50649` after each test (`git ls-remote origin refs/heads/main`). If it ever moves, the test stops and Claude reports it.
+3. `main` has nothing to edit in Pages CMS anyway (it has no `.pages.yml` or `content` folder yet), so a save there would fail rather than overwrite anything. Still, check.
+
+## Part 0: before you start (2 minutes)
+
+1. Open the repository on GitHub and confirm the branch `claude/cms-poc` exists and its latest commit is the one Claude names in chat.
+2. Make sure you are signed in to GitHub as the owner of that repository.
 
 ## Part A: Netlify (does GitHub deploy the site without Lovable?)
 
-**A1. Connect.** Sign in to Netlify (a free account is fine; signing in with GitHub is simplest). Add a new project, import an existing project from GitHub, authorise Netlify for the **test repository only**, and choose the `main` branch. Netlify should read `netlify.toml` and fill in the build command (`npm run build`) and publish folder (`dist`) by itself. If it shows different values, do not change them: send Claude a screenshot. Press Deploy.
+**A1. Connect.** Sign in to Netlify (a free account is fine; signing in with GitHub is simplest). Add a new project, import an existing project from GitHub, and authorise Netlify for **this one repository only** (not all your repositories). When it asks for the branch to deploy, choose **`claude/cms-poc`**. (If it only offers `main`, finish the import, then open Project configuration > Build & deploy > Branches and set the **production branch** to `claude/cms-poc` before the first real deploy.) Netlify should read `netlify.toml` and fill in the build command (`npm run build`) and publish folder (`dist`) by itself. If it shows different values, do not change them: send Claude a screenshot. Press Deploy.
 - *Pass:* the first deploy finishes and the site opens at a `something.netlify.app` address.
 - *Send Claude:* the address, and a screenshot of the deploy log if it failed.
 
 **A2. Claude runs the site checker** against that address (about 200 checks: readable page text, every article, real 404s, images, sitemap, drafts hidden).
 - *Pass:* zero failures, apart from at most one check about image caching (see the handover; a developer can fix that).
 
-**A3. Automatic publishing without Lovable.** On GitHub, open `content/guides/how-vacation-rental-pet-fees-work.md`, click the pencil, change `lastReviewed: 2026-11-16` to `lastReviewed: 2026-11-17`, and commit directly to `main`.
+**A3. Automatic publishing without Lovable.** On GitHub, **switch to the `claude/cms-poc` branch** (top-left branch menu), open `content/guides/how-vacation-rental-pet-fees-work.md`, click the pencil, change `lastReviewed: 2026-11-16` to `lastReviewed: 2026-11-17`, and commit directly to **`claude/cms-poc`** (not `main`).
 - *Pass:* within a few minutes Netlify starts a new deploy **by itself**, and the live article now says "Reviewed 2026-11-17". Nobody opened Lovable, Claude or a command line.
 
 **A4. A mistake does not break the live site.** On GitHub, edit `content/affiliates.yml` and replace the file's contents with:
@@ -35,14 +43,14 @@ links:
     network: Test
     url: not-a-link
 ```
-Commit to `main`.
+Commit to **`claude/cms-poc`** (not `main`).
 - *Pass:* the Netlify deploy **fails**, the log names `content/affiliates.yml` and the `url` field in plain words, the live site is still the previous version, and Netlify sends a failure email (turn on deploy notifications first). Then restore the file (`links: []`) and confirm the next deploy succeeds.
 
 **A5. Private previews (optional).** Not needed for the buyer workflow; skip unless you want drafts previewable.
 
 ## Part B: Pages CMS (can a non-developer do the real work?)
 
-**B1. Connect.** Go to app.pagescms.org, sign in with GitHub, and install the Pages CMS GitHub App on the **test repository only** (choose "Only select repositories"). Open the repository.
+**B1. Connect.** Go to app.pagescms.org, sign in with GitHub, and install the Pages CMS GitHub App on **this one repository only** (choose "Only select repositories"). Open the repository and **choose the branch `claude/cms-poc`** (look for a branch picker or a branch name near the top). If there is no way to do this, stop.
 - Note and screenshot: which branch it shows or lets you pick, and **any message about plans, "Pro", limits or upgrading** (this answers the free-plan question).
 - *Pass:* you see four sections: **Articles, Stays, Affiliate links, Business settings**.
 
@@ -87,6 +95,7 @@ Commit to `main`.
 | B2 fails on both | Stop. Pages CMS is not safe for articles; look at the alternatives in the evaluation. |
 | B3 takes a buyer more than ~20 minutes or the form is confusing | Simplify the form before migrating the rest. |
 | B10 requires GitHub or a paid plan | Update the handover: buyers' helpers need GitHub accounts (free), or consider the self-hosted option. |
+| Pages CMS cannot open `claude/cms-poc` | Stop. Use a separate private test repository holding a copy of the CMS branch, and repeat Part B there. |
 | Everything passes | Merge the CMS branch (with your approval) and migrate the remaining content (`docs/MIGRATION-PLAN.md`). |
 
 ## After the tests

@@ -27,7 +27,9 @@ export interface ResearchBrief {
   gapsFound: string[];
   differentiators: string[]; // at least 3
   angle: string;
-  /** Claims that still need independent verification. Non-empty => keep as draft. */
+  /** Process notes for a future editor (e.g. competitor pages only seen as excerpts). Not factual claims. */
+  followUps?: string[];
+  /** Factual claims in the article that still need independent verification. Non-empty => keep as draft. */
   unverified: string[];
   researchComplete: boolean;
 }

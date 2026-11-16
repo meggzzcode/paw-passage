@@ -4,6 +4,8 @@ export const site = {
   tagline: "Better adventures, together.",
   description:
     "Dog-friendly travel guides, practical planning tools and carefully verified stays for people who travel with their dogs.",
+  /** Public site origin, e.g. "https://pawandpassage.com". Required for sitemap.xml (returns 503 until set). */
+  siteUrl: "",
   /** Business email for contact + property submissions. Leave "" until you have one: pages then say so honestly instead of showing a dead link. */
   contactEmail: "",
   /** Google Analytics 4 measurement ID, e.g. "G-XXXXXXX". Leave "" to send nothing. */

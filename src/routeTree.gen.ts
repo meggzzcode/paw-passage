@@ -10,33 +10,297 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AboutRouteImport } from './routes/about'
+import { Route as AffiliateDisclosureRouteImport } from './routes/affiliate-disclosure'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as EditorialStandardsRouteImport } from './routes/editorial-standards'
+import { Route as ListYourPropertyRouteImport } from './routes/list-your-property'
+import { Route as PrivacyRouteImport } from './routes/privacy'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as TermsRouteImport } from './routes/terms'
+import { Route as DestinationsIndexRouteImport } from './routes/destinations.index'
+import { Route as GuidesIndexRouteImport } from './routes/guides.index'
+import { Route as GuidesSlugRouteImport } from './routes/guides.$slug'
+import { Route as StaysIndexRouteImport } from './routes/stays.index'
+import { Route as StaysSlugRouteImport } from './routes/stays.$slug'
+import { Route as ToolsIndexRouteImport } from './routes/tools.index'
+import { Route as ToolsChecklistRouteImport } from './routes/tools.checklist'
+import { Route as ToolsCompareRouteImport } from './routes/tools.compare'
+import { Route as ToolsCostCalculatorRouteImport } from './routes/tools.cost-calculator'
+import { Route as ToolsHostQuestionsRouteImport } from './routes/tools.host-questions'
+import { Route as DestinationsStateIndexRouteImport } from './routes/destinations.$state.index'
+import { Route as DestinationsStateTownRouteImport } from './routes/destinations.$state.$town'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AffiliateDisclosureRoute = AffiliateDisclosureRouteImport.update({
+  id: '/affiliate-disclosure',
+  path: '/affiliate-disclosure',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EditorialStandardsRoute = EditorialStandardsRouteImport.update({
+  id: '/editorial-standards',
+  path: '/editorial-standards',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ListYourPropertyRoute = ListYourPropertyRouteImport.update({
+  id: '/list-your-property',
+  path: '/list-your-property',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivacyRoute = PrivacyRouteImport.update({
+  id: '/privacy',
+  path: '/privacy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TermsRoute = TermsRouteImport.update({
+  id: '/terms',
+  path: '/terms',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DestinationsIndexRoute = DestinationsIndexRouteImport.update({
+  id: '/destinations/',
+  path: '/destinations/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GuidesIndexRoute = GuidesIndexRouteImport.update({
+  id: '/guides/',
+  path: '/guides/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GuidesSlugRoute = GuidesSlugRouteImport.update({
+  id: '/guides/$slug',
+  path: '/guides/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const StaysIndexRoute = StaysIndexRouteImport.update({
+  id: '/stays/',
+  path: '/stays/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const StaysSlugRoute = StaysSlugRouteImport.update({
+  id: '/stays/$slug',
+  path: '/stays/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ToolsIndexRoute = ToolsIndexRouteImport.update({
+  id: '/tools/',
+  path: '/tools/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ToolsChecklistRoute = ToolsChecklistRouteImport.update({
+  id: '/tools/checklist',
+  path: '/tools/checklist',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ToolsCompareRoute = ToolsCompareRouteImport.update({
+  id: '/tools/compare',
+  path: '/tools/compare',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ToolsCostCalculatorRoute = ToolsCostCalculatorRouteImport.update({
+  id: '/tools/cost-calculator',
+  path: '/tools/cost-calculator',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ToolsHostQuestionsRoute = ToolsHostQuestionsRouteImport.update({
+  id: '/tools/host-questions',
+  path: '/tools/host-questions',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DestinationsStateIndexRoute = DestinationsStateIndexRouteImport.update({
+  id: '/destinations/$state/',
+  path: '/destinations/$state/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DestinationsStateTownRoute = DestinationsStateTownRouteImport.update({
+  id: '/destinations/$state/$town',
+  path: '/destinations/$state/$town',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/affiliate-disclosure': typeof AffiliateDisclosureRoute
+  '/contact': typeof ContactRoute
+  '/editorial-standards': typeof EditorialStandardsRoute
+  '/list-your-property': typeof ListYourPropertyRoute
+  '/privacy': typeof PrivacyRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/terms': typeof TermsRoute
+  '/guides/$slug': typeof GuidesSlugRoute
+  '/stays/$slug': typeof StaysSlugRoute
+  '/tools/checklist': typeof ToolsChecklistRoute
+  '/tools/compare': typeof ToolsCompareRoute
+  '/tools/cost-calculator': typeof ToolsCostCalculatorRoute
+  '/tools/host-questions': typeof ToolsHostQuestionsRoute
+  '/destinations/': typeof DestinationsIndexRoute
+  '/guides/': typeof GuidesIndexRoute
+  '/stays/': typeof StaysIndexRoute
+  '/tools/': typeof ToolsIndexRoute
+  '/destinations/$state/$town': typeof DestinationsStateTownRoute
+  '/destinations/$state/': typeof DestinationsStateIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/affiliate-disclosure': typeof AffiliateDisclosureRoute
+  '/contact': typeof ContactRoute
+  '/editorial-standards': typeof EditorialStandardsRoute
+  '/list-your-property': typeof ListYourPropertyRoute
+  '/privacy': typeof PrivacyRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/terms': typeof TermsRoute
+  '/guides/$slug': typeof GuidesSlugRoute
+  '/stays/$slug': typeof StaysSlugRoute
+  '/tools/checklist': typeof ToolsChecklistRoute
+  '/tools/compare': typeof ToolsCompareRoute
+  '/tools/cost-calculator': typeof ToolsCostCalculatorRoute
+  '/tools/host-questions': typeof ToolsHostQuestionsRoute
+  '/destinations': typeof DestinationsIndexRoute
+  '/guides': typeof GuidesIndexRoute
+  '/stays': typeof StaysIndexRoute
+  '/tools': typeof ToolsIndexRoute
+  '/destinations/$state/$town': typeof DestinationsStateTownRoute
+  '/destinations/$state': typeof DestinationsStateIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/affiliate-disclosure': typeof AffiliateDisclosureRoute
+  '/contact': typeof ContactRoute
+  '/editorial-standards': typeof EditorialStandardsRoute
+  '/list-your-property': typeof ListYourPropertyRoute
+  '/privacy': typeof PrivacyRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/terms': typeof TermsRoute
+  '/guides/$slug': typeof GuidesSlugRoute
+  '/stays/$slug': typeof StaysSlugRoute
+  '/tools/checklist': typeof ToolsChecklistRoute
+  '/tools/compare': typeof ToolsCompareRoute
+  '/tools/cost-calculator': typeof ToolsCostCalculatorRoute
+  '/tools/host-questions': typeof ToolsHostQuestionsRoute
+  '/destinations/': typeof DestinationsIndexRoute
+  '/guides/': typeof GuidesIndexRoute
+  '/stays/': typeof StaysIndexRoute
+  '/tools/': typeof ToolsIndexRoute
+  '/destinations/$state/$town': typeof DestinationsStateTownRoute
+  '/destinations/$state/': typeof DestinationsStateIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/affiliate-disclosure'
+    | '/contact'
+    | '/editorial-standards'
+    | '/list-your-property'
+    | '/privacy'
+    | '/sitemap.xml'
+    | '/terms'
+    | '/guides/$slug'
+    | '/stays/$slug'
+    | '/tools/checklist'
+    | '/tools/compare'
+    | '/tools/cost-calculator'
+    | '/tools/host-questions'
+    | '/destinations/'
+    | '/guides/'
+    | '/stays/'
+    | '/tools/'
+    | '/destinations/$state/$town'
+    | '/destinations/$state/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/about'
+    | '/affiliate-disclosure'
+    | '/contact'
+    | '/editorial-standards'
+    | '/list-your-property'
+    | '/privacy'
+    | '/sitemap.xml'
+    | '/terms'
+    | '/guides/$slug'
+    | '/stays/$slug'
+    | '/tools/checklist'
+    | '/tools/compare'
+    | '/tools/cost-calculator'
+    | '/tools/host-questions'
+    | '/destinations'
+    | '/guides'
+    | '/stays'
+    | '/tools'
+    | '/destinations/$state/$town'
+    | '/destinations/$state'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/affiliate-disclosure'
+    | '/contact'
+    | '/editorial-standards'
+    | '/list-your-property'
+    | '/privacy'
+    | '/sitemap.xml'
+    | '/terms'
+    | '/guides/$slug'
+    | '/stays/$slug'
+    | '/tools/checklist'
+    | '/tools/compare'
+    | '/tools/cost-calculator'
+    | '/tools/host-questions'
+    | '/destinations/'
+    | '/guides/'
+    | '/stays/'
+    | '/tools/'
+    | '/destinations/$state/$town'
+    | '/destinations/$state/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
+  AffiliateDisclosureRoute: typeof AffiliateDisclosureRoute
+  ContactRoute: typeof ContactRoute
+  EditorialStandardsRoute: typeof EditorialStandardsRoute
+  ListYourPropertyRoute: typeof ListYourPropertyRoute
+  PrivacyRoute: typeof PrivacyRoute
+  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  TermsRoute: typeof TermsRoute
+  GuidesSlugRoute: typeof GuidesSlugRoute
+  StaysSlugRoute: typeof StaysSlugRoute
+  ToolsChecklistRoute: typeof ToolsChecklistRoute
+  ToolsCompareRoute: typeof ToolsCompareRoute
+  ToolsCostCalculatorRoute: typeof ToolsCostCalculatorRoute
+  ToolsHostQuestionsRoute: typeof ToolsHostQuestionsRoute
+  DestinationsIndexRoute: typeof DestinationsIndexRoute
+  GuidesIndexRoute: typeof GuidesIndexRoute
+  StaysIndexRoute: typeof StaysIndexRoute
+  ToolsIndexRoute: typeof ToolsIndexRoute
+  DestinationsStateTownRoute: typeof DestinationsStateTownRoute
+  DestinationsStateIndexRoute: typeof DestinationsStateIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +312,171 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/affiliate-disclosure': {
+      id: '/affiliate-disclosure'
+      path: '/affiliate-disclosure'
+      fullPath: '/affiliate-disclosure'
+      preLoaderRoute: typeof AffiliateDisclosureRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/editorial-standards': {
+      id: '/editorial-standards'
+      path: '/editorial-standards'
+      fullPath: '/editorial-standards'
+      preLoaderRoute: typeof EditorialStandardsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/list-your-property': {
+      id: '/list-your-property'
+      path: '/list-your-property'
+      fullPath: '/list-your-property'
+      preLoaderRoute: typeof ListYourPropertyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privacy': {
+      id: '/privacy'
+      path: '/privacy'
+      fullPath: '/privacy'
+      preLoaderRoute: typeof PrivacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/terms': {
+      id: '/terms'
+      path: '/terms'
+      fullPath: '/terms'
+      preLoaderRoute: typeof TermsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/destinations/': {
+      id: '/destinations/'
+      path: '/destinations'
+      fullPath: '/destinations/'
+      preLoaderRoute: typeof DestinationsIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/guides/': {
+      id: '/guides/'
+      path: '/guides'
+      fullPath: '/guides/'
+      preLoaderRoute: typeof GuidesIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/guides/$slug': {
+      id: '/guides/$slug'
+      path: '/guides/$slug'
+      fullPath: '/guides/$slug'
+      preLoaderRoute: typeof GuidesSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/stays/': {
+      id: '/stays/'
+      path: '/stays'
+      fullPath: '/stays/'
+      preLoaderRoute: typeof StaysIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/stays/$slug': {
+      id: '/stays/$slug'
+      path: '/stays/$slug'
+      fullPath: '/stays/$slug'
+      preLoaderRoute: typeof StaysSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tools/': {
+      id: '/tools/'
+      path: '/tools'
+      fullPath: '/tools/'
+      preLoaderRoute: typeof ToolsIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tools/checklist': {
+      id: '/tools/checklist'
+      path: '/tools/checklist'
+      fullPath: '/tools/checklist'
+      preLoaderRoute: typeof ToolsChecklistRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tools/compare': {
+      id: '/tools/compare'
+      path: '/tools/compare'
+      fullPath: '/tools/compare'
+      preLoaderRoute: typeof ToolsCompareRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tools/cost-calculator': {
+      id: '/tools/cost-calculator'
+      path: '/tools/cost-calculator'
+      fullPath: '/tools/cost-calculator'
+      preLoaderRoute: typeof ToolsCostCalculatorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tools/host-questions': {
+      id: '/tools/host-questions'
+      path: '/tools/host-questions'
+      fullPath: '/tools/host-questions'
+      preLoaderRoute: typeof ToolsHostQuestionsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/destinations/$state/': {
+      id: '/destinations/$state/'
+      path: '/destinations/$state'
+      fullPath: '/destinations/$state/'
+      preLoaderRoute: typeof DestinationsStateIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/destinations/$state/$town': {
+      id: '/destinations/$state/$town'
+      path: '/destinations/$state/$town'
+      fullPath: '/destinations/$state/$town'
+      preLoaderRoute: typeof DestinationsStateTownRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
+  AffiliateDisclosureRoute: AffiliateDisclosureRoute,
+  ContactRoute: ContactRoute,
+  EditorialStandardsRoute: EditorialStandardsRoute,
+  ListYourPropertyRoute: ListYourPropertyRoute,
+  PrivacyRoute: PrivacyRoute,
+  SitemapDotxmlRoute: SitemapDotxmlRoute,
+  TermsRoute: TermsRoute,
+  GuidesSlugRoute: GuidesSlugRoute,
+  StaysSlugRoute: StaysSlugRoute,
+  ToolsChecklistRoute: ToolsChecklistRoute,
+  ToolsCompareRoute: ToolsCompareRoute,
+  ToolsCostCalculatorRoute: ToolsCostCalculatorRoute,
+  ToolsHostQuestionsRoute: ToolsHostQuestionsRoute,
+  DestinationsIndexRoute: DestinationsIndexRoute,
+  GuidesIndexRoute: GuidesIndexRoute,
+  StaysIndexRoute: StaysIndexRoute,
+  ToolsIndexRoute: ToolsIndexRoute,
+  DestinationsStateTownRoute: DestinationsStateTownRoute,
+  DestinationsStateIndexRoute: DestinationsStateIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

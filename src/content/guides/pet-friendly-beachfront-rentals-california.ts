@@ -47,7 +47,7 @@ For an active, socially comfortable dog, proximity to that specific area may mat
 
 San Diego also identifies Fiesta Island as leash optional, generally open from 4 a.m. to 10 p.m. Its current guidance excludes nesting sites and the Youth Aquatic Center/Camp, with additional marked nesting-buffer closures from April 15 through September 15. Those buffers concern least terns; they should not be confused with snowy-plover restrictions elsewhere. [[2]](https://www.sandiego.gov/park-and-recreation/parks/dogs/bchdog)
 
-Outside the designated dog areas, the city publishes seasonal beach and bay access restrictions. Because the page's date ranges overlap on October 31, do not use that boundary date to infer access without confirmation. For any ordinary beach, verify the current hours directly and read the entrance sign. A host's “dogs love the beach here” is not an adequate rule check.
+Outside the designated dog areas, the city's page says dogs are restricted at other beaches and bays without listing hours for each. For other areas of Mission Bay Park it lists time-of-day restrictions (no dogs from 9 a.m. to 4 p.m. between October 31 and March 31, or from 9 a.m. to 6 p.m. between April 1 and October 31, with leashes required at other times). Because those date ranges overlap on October 31, the page does not settle which rule applies that day; it points readers to the city's Ask Parks contact. For any ordinary beach, check the city page and the entrance sign for current hours. A host's “dogs love the beach here” is not an adequate rule check.
 
 ### Santa Barbara: the creek is a meaningful boundary
 
@@ -55,7 +55,7 @@ At Arroyo Burro County Beach Park, dogs must be leashed within the county park. 
 
 Ask where the host's suggested route ends. Does it reach the leashed park area, the designated off-leash shoreline, or a staircase farther along the coast? Request a map pin rather than accepting “a few minutes away.”
 
-The city's dog-access handout also identifies Arroyo Burro and several other designated off-leash locations, while requiring off-leash dogs to remain under sight and voice control and owners to carry a leash. Off leash does not mean free to approach everyone. [[7]](https://sbparksandrec.santabarbaraca.gov/sites/default/files/2024-08/Where%20Can%20I%20Take%20My%20Dog%20Full%20Page.pdf)
+The city's dog-access handout lists Arroyo Burro Beach and several other beaches and parks as off-leash locations, noting that off-leash dogs must be under sight and voice control and that owners must have a leash at all times. Off leash does not mean free to approach everyone. Because the county page and the city handout are worded differently, follow the stricter reading (leashed, except east of the creek) unless signs say otherwise. [[7]](https://sbparksandrec.santabarbaraca.gov/sites/default/files/2024-08/Where%20Can%20I%20Take%20My%20Dog%20Full%20Page.pdf)
 
 If stairs, uncertain footing, or a creek crossing would make the outing impractical, treat that as a reason to choose a different route—not something to solve on arrival with luggage and an excited dog.
 
@@ -63,11 +63,11 @@ If stairs, uncertain footing, or a creek crossing would make the outing impracti
 
 Carmel Beach is a city beach. Carmel River State Beach is a different place with a different managing authority. Do not transfer the rules from one to the other.
 
-Carmel's city guidance permits dogs on Carmel Beach under voice control. The city's animal-services page defines that control specifically: carry a means of leashing the dog, keep the dog within 25 feet, have the dog return within three feet on command, and keep the dog within three feet when other people or animals are present. That is a much higher standard than occasionally responding to a recall cue. [[4]](https://ci.carmel.ca.us/post/carmel-beach) [[8]](https://ci.carmel.ca.us/post/animal-services)
+Carmel's city guidance permits dogs on Carmel Beach under voice control. The city's animal-services page defines that control specifically: carry a means of leashing the dog, keep the dog within 25 feet, have the dog return within three feet on command, and keep the dog within three feet when other people or animals are present. That is a much higher standard than occasionally responding to a recall cue. The city also asks owners to leash dogs at the bottom of stairways and sand ramps when leaving the beach. [[4]](https://ci.carmel.ca.us/post/carmel-beach) [[8]](https://ci.carmel.ca.us/post/animal-services)
 
 For a dog without that reliability, plan to remain leashed and avoid situations that depend on other dogs leaving yours alone. For a senior dog, ask about the approach and the return climb rather than focusing only on distance.
 
-There is an immediate caution at this review date: the Monterey District page reports November 2026 high-surf closures affecting Carmel River, Garrapata, and Asilomar state beaches, with possible extensions. Carmel River's individual page also displays a closure notice. These are reasons to check live alerts, not permanent statements that the beaches are unavailable. [[9]](https://www.parks.ca.gov/?page_id=21284) [[10]](https://www.parks.ca.gov/?page_id=567)
+State Parks posts high-surf and other temporary closures for the Monterey District, which includes Carmel River State Beach. Check the district's current-closures page before you travel rather than relying on a listing or this guide. [[9]](https://www.parks.ca.gov/?page_id=21284)
 
 ### Mendocino: separate headland access from a sand-access promise
 
@@ -87,7 +87,7 @@ Do not book a rental beside a preserve on the assumption that nearby sand has th
 
 ## Snowy plovers: seasonal habitat protection changes the usable beach
 
-Western snowy plovers nest on California beaches, and their nests can be extremely difficult to see. State Parks identifies March through September as nesting season and describes the use of roped-off habitat protection. Dogs and people can disturb nesting birds even without directly stepping on a nest. [[11]](https://www.parks.ca.gov/?page_id=22262)
+Western snowy plovers nest on California beaches, and their nests can be extremely difficult to see. State Parks identifies March through September as nesting season and describes the use of roped-off habitat protection. Dogs and people can disturb nesting birds even without directly stepping on a nest. [[10]](https://www.parks.ca.gov/?page_id=22262)
 
 There is no single statewide date range that tells you every beach's closure boundaries. Nesting season is not the same thing as a universal dog-access calendar. A beach may have year-round dog exclusions, seasonal protected sections, or a permitted route that changes around habitat.
 
@@ -126,21 +126,21 @@ A legal dog beach is not a declaration that the water is safe.
 
 ### Sneaker waves, surf, and rip currents
 
-The National Weather Service warns that sneaker waves can surge much farther up the beach than expected and move heavy logs. Its North Coast guidance also warns about rip currents, rising tides cutting off routes, unstable cliffs, and people entering the ocean to rescue dogs. [[12]](https://www.weather.gov/safety/ripcurrent-waves) [[13]](https://www.weather.gov/media/eka/Beach_Safety_Brochure_2022.pdf)
+The National Weather Service warns that sneaker waves can surge much farther up the beach than expected and move heavy logs. Its North Coast brochure also warns about rip currents, rising tides cutting off routes, collapsing cliffs, and going into the water after a dog, noting that dogs pulled into surf almost always get out on their own while their rescuers usually do not. [[11]](https://www.weather.gov/safety/ripcurrent-waves) [[12]](https://www.weather.gov/media/eka/Beach_Safety_Brochure_2022.pdf)
 
 Build the outing around walking rather than water entry. Check the coastal forecast and beach alerts, avoid exposed rocks and driftwood in the wave zone, and maintain an inland exit. A quiet-looking interval does not prove that the next set will be small.
 
-If a dog is swept away, do not make an impulsive water rescue. Call 911 and alert a lifeguard if present. Keeping the dog away from dangerous surf is the safer plan.
+If a dog is swept away, do not enter the water after it. The North Coast brochure advises staying on dry land, and calling 911 if a person is pulled into the surf. Keeping the dog away from dangerous surf is the safer plan.
 
 ### Heat and hot surfaces
 
-The ASPCA advises fresh water, shade, avoiding overexercise, and keeping pets indoors in extreme heat. It identifies flat-faced, elderly, overweight, and heart- or lung-compromised animals as needing particular care. It also warns against lingering on hot asphalt. [[14]](https://www.aspca.org/pet-care/general-pet-care/hot-weather-safety-tips)
+The ASPCA advises fresh water, shade, avoiding overexercise, and keeping pets indoors in extreme heat. It identifies flat-faced, elderly, overweight, and heart- or lung-compromised animals as needing particular care. It also warns against lingering on hot asphalt. [[13]](https://www.aspca.org/pet-care/general-pet-care/hot-weather-safety-tips)
 
 Include the parking lot and approach in your heat assessment, not just the temperature beside the water. If the sand or route seems uncomfortably hot, skip it rather than trying to complete a planned walk. Bring shade, but do not treat a beach umbrella as a substitute for a cool indoor retreat.
 
 ### Saltwater and sand ingestion
 
-Bring drinking water and a bowl. The ASPCA recommends preventing ocean-water ingestion and rinsing salt from a dog's coat after swimming. It also identifies sand and saltwater ingestion as preventable summer hazards. [[14]](https://www.aspca.org/pet-care/general-pet-care/hot-weather-safety-tips) [[15]](https://www.aspca.org/about-us/press-releases/aspca-reveals-top-5-preventable-pet-conditions-summer)
+Bring drinking water and a bowl. The ASPCA advises rinsing dogs after swimming and not leaving pets unsupervised near water. Its summer-conditions release lists sand and saltwater ingestion as preventable beach hazards and advises watching pets closely. [[13]](https://www.aspca.org/pet-care/general-pet-care/hot-weather-safety-tips) [[14]](https://www.aspca.org/about-us/press-releases/aspca-reveals-top-5-preventable-pet-conditions-summer)
 
 Interrupt digging, chewing sand-covered toys, or repeated gulping at waves. If your dog becomes ill after suspected ingestion, contact a veterinarian promptly rather than assuming it is ordinary travel upset. Ask your own vet about medical concerns before the trip.
 
@@ -164,7 +164,7 @@ Then ask:
 
 For fence assessment, use our [secure fenced-yard guide](/guides/vacation-rental-secure-fenced-yard). Do not interpret written pet approval as confirmation that the yard is escape-resistant.
 
-Airbnb's help page describes several pet-fee structures, including per-booking, per-night, and per-pet options. Compare your actual dates and pet count, not a headline nightly rate. [[16]](https://www.airbnb.com/help/article/3623)
+Airbnb's help page describes several pet-fee structures a host can choose: per booking, per night, per pet, or per pet per night. Compare your actual dates and pet count, not a headline nightly rate. [[15]](https://www.airbnb.com/help/article/3623)
 
 ## A final shortlist check
 
@@ -265,12 +265,6 @@ If you are starting in Los Angeles, compare the travel commitment with our [week
       accessedOn: "2026-11-16",
     },
     {
-      title: "Carmel River State Beach",
-      url: "https://www.parks.ca.gov/?page_id=567",
-      publisher: "California State Parks",
-      accessedOn: "2026-11-16",
-    },
-    {
       title: "Western Snowy Plover",
       url: "https://www.parks.ca.gov/?page_id=22262",
       publisher: "California State Parks",
@@ -330,45 +324,45 @@ If you are starting in Los Angeles, compare the travel commitment with our [week
         title: "Ocean Beach Vacation Rentals | Dog-Friendly OB Homes | Titan Beach Rentals",
         checkedOn: "2026-11-16",
         coversWell:
-          "Search-returned excerpt connects Ocean Beach accommodation searches with Dog Beach and local rental support.",
+          "Names Dog Beach as an off-leash beach, says many Ocean Beach rentals accept pets, advises confirming each property's pet policy and fees, and points to the pier and Sunset Cliffs as nearby outings.",
         gaps:
-          "Excerpt does not establish a statewide comparison, access-route audit, or plover guidance. Full page was not independently reviewed.",
+          "Calls Dog Beach one of the only San Diego beaches where dogs run off leash without a statewide comparison or citing the city. Gives no route, parking, hours, leash conditions, or plover guidance.",
       },
       {
         url: "https://www.saltandskylodgingco.com/dog-friendly-vacation-rentals-san-diego",
         title: "Dog Friendly Vacation Rentals in San Diego | Salt & Sky",
         checkedOn: "2026-11-16",
         coversWell:
-          "Search-returned excerpt distinguishes neighborhoods and provides some dog-related accommodation features.",
+          "Lists 12 dog-welcoming homes grouped by area, notes that pet fees and dog limits vary by home, and asks guests to add the dog when booking.",
         gaps:
-          "Excerpt is inventory-led and does not establish beach-by-beach legal access. Full page was not independently reviewed.",
+          "Inventory-led. Gives no fee amounts, dog limits, breed or size rules, or Dog Beach rules, and does not address beach access outside Ocean Beach.",
       },
       {
         url: "https://www.saltandskylodgingco.com/obsurfersparadise",
-        title: "Dog-Friendly Ocean Beach Rental | OB Surfer’s Paradise",
+        title: "Dog-Friendly Ocean Beach Rental | OB Surfer\u2019s Paradise",
         checkedOn: "2026-11-16",
         coversWell:
-          "Search-returned property-page excerpt supplies a stated walk to Dog Beach and accommodation amenities.",
+          "Single-property page stating the dog policy (up to two dogs, $150 fee), a fenced turf yard, dog wash, and a roughly 15-minute walk to Dog Beach.",
         gaps:
-          "Single-property sales page rather than regional decision support. Full page was not independently reviewed; property is not recommended here.",
+          "Sales page for one home. Does not state whether the fee is per stay or per night, gives no Dog Beach hours or leash rules, and does not address stairs. Property is not recommended here.",
       },
       {
         url: "https://searanchabalonebay.com/our-house/",
         title: "Our House - Sea Ranch Abalone Bay: Rest, Relax, Work Remotely",
         checkedOn: "2026-11-16",
         coversWell:
-          "Search-returned excerpt distinguishes an oceanfront bluff setting and an enclosed courtyard.",
+          "Describes an oceanfront house with an enclosed courtyard, up to two dogs at $80 per dog, bluffs as leash-only, and a short walk to staircase beach access.",
         gaps:
-          "Excerpt does not establish a dog-legal sand route or statewide rules comparison. Full page was not independently reviewed; property is not recommended here.",
+          "Does not say whether dogs are allowed on the nearby beaches, gives no stair conditions or distances, and has no ocean-safety guidance. Property is not recommended here.",
       },
       {
-        url: "https://www.beachfrontonly.com/808/san-diego-pet-friendly-vacation-rentals/",
-        title: "San Diego Pet Friendly Vacation Rentals - Beachfront Only Vacation Rentals",
+        url: "https://dogtrekker.com/directories/beachfront-only-vacation-rentals/",
+        title: "Beachfront Only - Dog-Friendly in Oceanside | DogTrekker",
         checkedOn: "2026-11-16",
         coversWell:
-          "Search-returned excerpt combines rental inventory with dog-outing suggestions.",
+          "Directory page describing dog-welcoming beachfront rentals in Oceanside, Carlsbad, and Encinitas, with unit sizes suited to solo trips or groups, and advice to call ahead about access.",
         gaps:
-          "Broad beach language requires checking against municipal rules. Full page was not independently reviewed.",
+          "Replaces beachfront-only.com, which returned HTTP 403 when fetched. Gives no pet fees, dog limits, leash or beach rules, and lists step-free access and suitability for older dogs as unconfirmed.",
       },
     ],
     gapsFound: [
@@ -385,10 +379,8 @@ If you are starting in Los Angeles, compare the travel commitment with our [week
     ],
     angle:
       "Choose legal dog access first, then evaluate the rental's route, containment, cooling, and total cost.",
-    followUps: ["Complete full-page reviews of all five competitors; only search-returned excerpts were inspected.",
-      "Confirm current San Diego ordinary-beach seasonal boundary wording, which overlaps on October 31.",
-      "Refresh Monterey District temporary surf-closure status immediately before publication.",],
+    followUps: [],
     unverified: [],
-    researchComplete: false,
+    researchComplete: true,
   },
 };

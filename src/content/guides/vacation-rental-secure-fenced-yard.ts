@@ -110,7 +110,7 @@ Also ask what lies immediately outside: a walking path, neighboring kennel, road
 
 If the host says “invisible,” “wireless,” “GPS,” or “electric,” ask exactly what they mean. A buried-wire or GPS boundary typically relies on a compatible collar and a learned boundary. Electrified livestock fencing is a different installation again. None should be mistaken for a continuous physical dog fence.
 
-For a short rental stay, our booking standard is simple: if your plan requires a physical enclosure, a virtual boundary does not satisfy it. Do not assume your dog understands a new system or that outside dogs and wildlife are excluded. The AKC's discussion of fence types is useful background, but a rental's specific equipment and condition still need checking. [[1]](https://www.akc.org/expert-advice/home-living/types-dog-fences/)
+For a short rental stay, our booking standard is simple: if your plan requires a physical enclosure, a virtual boundary does not satisfy it. Do not assume your dog understands a new system or that outside dogs and wildlife are excluded. VCA Animal Hospitals notes that such a fence relies on the dog learning where the boundary is, can fail if something like a collar battery dies, and does not stop stray dogs or wild animals from entering the yard. [[4]](https://vcahospitals.com/know-your-pet/invisible-fences) A rental's specific equipment and condition still need checking.
 
 You may still choose such a home for supervised, leashed outdoor time. Record it honestly in your shortlist rather than treating the system as a bonus physical barrier.
 
@@ -176,7 +176,7 @@ Save your arrival checks in the [travel checklist](/tools/checklist). The best o
     },
     {
       "q": "Is an invisible fence enough for a short rental stay?",
-      "a": "Do not count it as a physical enclosure. Such systems rely on equipment and learned boundaries and do not physically exclude outside animals. If your trip requires physical fencing, choose that explicitly."
+      "a": "Do not count it as a physical enclosure. Such systems rely on a learned boundary and working equipment, and they do not stop other animals from entering. If your trip requires physical fencing, choose that explicitly."
     },
     {
       "q": "What if the fence is damaged when I arrive?",
@@ -214,9 +214,9 @@ Save your arrival checks in the [travel checklist](/tools/checklist). The best o
       "accessedOn": "2026-11-16"
     },
     {
-      "title": "Safety Barrier Guidelines for Home Pools",
-      "url": "https://www.cpsc.gov/safety-education/safety-guides/pools-and-spas/safety-barrier-guidelines-home-pools",
-      "publisher": "U.S. Consumer Product Safety Commission",
+      "title": "The Pros and Cons of Invisible Fences for Dogs",
+      "url": "https://vcahospitals.com/know-your-pet/invisible-fences",
+      "publisher": "VCA Animal Hospitals",
       "accessedOn": "2026-11-16"
     }
   ],
@@ -240,36 +240,36 @@ Save your arrival checks in the [travel checklist](/tools/checklist). The best o
         "title": "Secure Enclosed Garden Holiday Cottages: What to Look For",
         "url": "https://www.bolberrycourt.com/blog/secure-enclosed-garden-holiday-cottages",
         "checkedOn": "2026-11-16",
-        "coversWell": "Directly retrieved article discusses current photos, gates, gaps, maintenance, and host questions.",
-        "gaps": "Promotional property focus; does not provide a detailed service-access and pool-separation decision workflow."
+        "coversWell": "Full page read. Covers checking gates for working latches, gaps under fencing, broken boards, and hedging density, and asks hosts for multi-angle photos, a video walkthrough, fence height, recent maintenance records, and reviews from dog owners.",
+        "gaps": "Published by a single cottage and promotes it. No pool or water-feature guidance beyond a mention of ponds, no service or contractor access, and the 1.2 to 1.8 metre height range in its FAQ has no source."
       },
       {
         "title": "Dog friendly cottage secure garden: a UK self-catering guide",
         "url": "https://dogtripbritain.com/guides/self-catering-dog-secure-garden/",
         "checkedOn": "2026-11-16",
-        "coversWell": "Directly retrieved text defines sole-use continuous enclosure and covers dog-specific boundaries and arrival checks.",
-        "gaps": "UK-focused; a US booking-specific evidence record and cleaner/driveway handoff add a different operational emphasis."
+        "coversWell": "Full page read. Defines a secure garden as sole-use and enclosed on every side, matches boundaries to jumpers, diggers, and squeezers, flags launch points and gate gaps, lists seven pre-booking questions, and describes a daylight arrival walk with the first outing on a lead.",
+        "gaps": "UK-focused, with metric height bands that are not sourced. Mentions hot tub covers and ponds but has no pool-separation workflow, no service-visit or gate-handoff planning, and no evidence-pack or dated-record approach."
       },
       {
         "title": "The Garden Clarity Assessment Kit",
         "url": "https://wagabode.com/resources/garden-clarity-assessment",
         "checkedOn": "2026-11-16",
-        "coversWell": "Search-returned text covers lowest boundaries, exits, shared access, outside triggers, and evidence.",
-        "gaps": "Direct response yielded no readable article text; workbook contents were not independently reviewed, so no claim of an absent workbook topic."
+        "coversWell": "Full page read. Describes a five-check framework (lowest boundary, exit points, shared or overlooked space, what lies beyond, supporting evidence), separates confirmed findings from unknowns, and states that it is a guide, not a safety certificate.",
+        "gaps": "The page describes the downloadable workbook but does not reproduce its prompts, so the workbook itself was not reviewed. No heights or measurement method, and no pool or service-access guidance on the page."
       },
       {
         "title": "What “secure garden” really means on a Dog-Friendly holiday",
         "url": "https://woodfarmbarns.com/blog/what-secure-garden-really-means-on-a-dog-friendly-holiday/",
         "checkedOn": "2026-11-16",
-        "coversWell": "Search-returned text discusses dog-specific suitability, bottom gaps, low points, and visual reactivity.",
-        "gaps": "Direct retrieval returned 403; complete coverage could not be assessed."
+        "coversWell": "Full page read. Frames security as suitability for the individual dog, stresses the gap beneath gates, dips and older boundary sections, solid versus see-through boundaries for reactive dogs, and the risk of arrival and unloading moments.",
+        "gaps": "Short and partly promotional. No heights, gap sizes, inspection method, or evidence requests, and no coverage of pools, water, or service access."
       },
       {
         "title": "Cornwall Cottages With Enclosed Gardens: What to Check",
         "url": "https://wagabode.com/guides/cornwall-cottages-with-enclosed-gardens-what-enclosed-really-means",
         "checkedOn": "2026-11-16",
-        "coversWell": "Search-returned text distinguishes enclosed from escape-proof and describes mixed boundaries and minimum height.",
-        "gaps": "Direct response yielded no readable text; full pool and access-management coverage could not be assessed."
+        "coversWell": "Full page read. Distinguishes enclosed from escape-proof, covers mixed boundaries, gaps where materials meet, partial enclosure, lowest-section height, private versus shared use, and sightlines to roads and livestock.",
+        "gaps": "Does not mention pools, hot tubs, or other water features. No numeric standards, no liability guidance, and no gate-routine or service-access workflow."
       }
     ],
     "gapsFound": [
@@ -284,8 +284,8 @@ Save your arrival checks in the [travel checklist](/tools/checklist). The best o
       "Explicit distinction between CPSC child-safety guidance and dog suitability."
     ],
     "angle": "Evaluate the weakest boundary and its everyday operation, not just fence presence.",
-    "followUps": ["Complete competitor-page review remains pending for three of five entries; only search-returned text was readable for those pages."],
+    "followUps": [],
     "unverified": [],
-    "researchComplete": false
+    "researchComplete": true
   }
 };

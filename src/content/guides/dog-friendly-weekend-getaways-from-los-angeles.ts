@@ -45,7 +45,7 @@ Los Angeles is not one departure point. A published time from “LA” cannot te
 
 Two official tourism sources provide useful baselines:
 
-- Visit Big Bear describes the trip from Los Angeles or San Diego as approximately **two to three hours** for most travelers. This is a published range, not a guaranteed arrival window. [[6]](https://www.bigbear.com/travel-tools/big-bear-lake-visitor-safety/)
+- Visit Big Bear describes the trip from Los Angeles or San Diego as about **two to three hours**. This is a published range, not a guaranteed arrival window. [[6]](https://www.bigbear.com/travel-tools/big-bear-lake-visitor-safety/)
 - Visit Greater Palm Springs lists **two hours from Los Angeles**. That is a destination-wide planning baseline, not a verified upper bound. [[7]](https://www.visitgreaterpalmsprings.com/plan/getting-here-and-around/)
 
 Visit Santa Barbara's driving page verifies a distance of **92 miles from Los Angeles**, but does not provide a travel-time range. This guide therefore does not attach an invented hour estimate to Santa Barbara. [[8]](https://santabarbaraca.com/plan-your-trip/know-before-you-go/transportation/driving-here/)
@@ -60,7 +60,7 @@ Santa Barbara is a reasonable coastal candidate when your main aim is a beach ou
 
 At Arroyo Burro County Beach Park, dogs must be leashed. The county-park visitor page identifies an off-leash beach area east of the creek. Keep the dog leashed through the park and confirm the boundary before releasing a dog with appropriate recall. [[1]](https://santabarbaraparks.com/parks/arroyo-burro-county-beach-park/)
 
-The city's dog-access handout requires off-leash dogs to remain under sight and voice control, with a leash carried by the owner. If that standard is not realistic for your dog in a beach setting, remain leashed and choose your space carefully—or make a different type of outing the centerpiece. [[9]](https://sbparksandrec.santabarbaraca.gov/sites/default/files/2024-08/Where%20Can%20I%20Take%20My%20Dog%20Full%20Page.pdf)
+The City of Santa Barbara's Parks and Recreation page requires off-leash dogs to be under sight and voice control and says owners must keep a leash with them at all times. If that standard is not realistic for your dog in a beach setting, remain leashed and choose your space carefully—or make a different type of outing the centerpiece. [[9]](https://sbparksandrec.santabarbaraca.gov/node/9272)
 
 ### Who this suits
 
@@ -94,7 +94,7 @@ Ask about steps between parking and the entrance, slippery interior flooring, he
 
 Request current fence details rather than relying on a snow-covered photograph or a wide-angle image. Our [secure-yard guide](/guides/vacation-rental-secure-fenced-yard) covers gaps, gates, shared access, and barriers that are decorative rather than containing.
 
-Visit Big Bear provides route-planning information alongside its approximate two-to-three-hour driving baseline. Check current road and weather conditions before committing to the journey, particularly when winter weather is possible. [[6]](https://www.bigbear.com/travel-tools/big-bear-lake-visitor-safety/)
+Visit Big Bear provides route-planning information alongside its approximate two-to-three-hour driving baseline. The same page says vehicles in mountain regions must carry chains from November 1 to April 30, and that Caltrans can stop traffic to check for them during stormy or icy conditions. Check current road and weather conditions before committing to the journey. [[6]](https://www.bigbear.com/travel-tools/big-bear-lake-visitor-safety/)
 
 Do not build the itinerary around arriving, unpacking, and completing a long walk before dark. Make the arrival-day outing optional.
 
@@ -110,7 +110,7 @@ Here, the accommodation needs to carry more of the holiday. Confirm effective ai
 
 Do not book a desert rental on the assumption that you can take your dog along the famous trails in Joshua Tree National Park.
 
-The National Park Service's pet guidance restricts where pets can go and requires leashes no longer than six feet. Pets are not permitted on hiking trails, in the backcountry, or in park buildings. Use the park's own pet page to plan any allowed roadside or developed-area visit rather than interpreting general park admission as dog access. [[3]](https://www.nps.gov/jotr/planyourvisit/pets.htm)
+The National Park Service requires leashes no longer than six feet at all times and limits pets to within 100 feet of roads, parking areas, picnic areas, and campgrounds, plus the paved Oasis of Mara and Keys View trails. Pets are not permitted on hiking trails, in the backcountry, or in park buildings, even if carried. Leaving a pet unattended is prohibited. Use the park's own pet page to plan any allowed roadside or developed-area visit rather than interpreting general park admission as dog access. [[3]](https://www.nps.gov/jotr/planyourvisit/pets.htm)
 
 A brief permitted visit and a hiking holiday are different products. If the point of your trip is long national-park hikes, arrange appropriate care for the dog or choose another destination. Do not leave the dog in a parked vehicle while you walk.
 
@@ -128,7 +128,7 @@ The City of San Diego identifies Dog Beach at the west end of the San Diego Rive
 
 Choose this alternative because that particular dog-beach outing fits your dog. Do not choose it solely because a rental says “near the beach.”
 
-This guide has not independently verified an authoritative LA-to-San-Diego driving range. Check a live route for the actual stay rather than borrowing an optimistic city-to-city estimate from a roundup.
+This guide does not supply an LA-to-San-Diego driving range because no official source for one was available. Check a live route for the actual stay rather than borrowing an optimistic city-to-city estimate from a roundup.
 
 ### Idyllwild: pet-welcoming accommodation does not open state-park wilderness
 
@@ -136,17 +136,17 @@ Mount San Jacinto State Park states that dogs are allowed only in the Idyllwild 
 
 That does not mean every surrounding land manager has identical rules. It means you must verify a proposed trail with its actual manager rather than assuming that “Idyllwild is dog-friendly” answers the question.
 
-Treat Idyllwild as a possible quiet accommodation stay until you have established a legal public-outing plan. An authoritative driving-time range was not verified for this draft, so none is supplied.
+Treat Idyllwild as a possible quiet accommodation stay until you have established a legal public-outing plan. This guide does not supply a driving-time range for Idyllwild because no official tourism source for one was available; check a live route.
 
 ## National-park mistakes worth avoiding
 
 National parks do not share a single simple pet policy. Check the individual park before making it part of a weekend.
 
-Joshua Tree's restrictions make it unsuitable as an assumed dog-hiking destination. Channel Islands National Park is a different case: the National Park Service states that pets are not allowed in the park to protect island wildlife. Service-animal arrangements involve additional considerations and should be handled directly with the park. [[3]](https://www.nps.gov/jotr/planyourvisit/pets.htm) [[10]](https://www.nps.gov/chis/planyourvisit/pets.htm)
+Joshua Tree's restrictions make it unsuitable as an assumed dog-hiking destination. Channel Islands National Park is a different case: the National Park Service states that pets are not allowed in the park to protect island wildlife. The park says service animals are admitted only after a vaccination, parasite-prevention, and health-exam protocol, so contact the park directly. [[3]](https://www.nps.gov/jotr/planyourvisit/pets.htm) [[10]](https://www.nps.gov/chis/planyourvisit/pets.htm)
 
 A coastal mainland rental therefore does not make an island excursion a dog-inclusive activity.
 
-Likewise, “state park” does not mean “dogs welcome on trails.” California State Parks generally restricts dogs from trails and undeveloped areas unless specifically designated otherwise, and requires a maximum six-foot leash where dogs are permitted. [[11]](https://www.parks.ca.gov/Dogs)
+Likewise, “state park” does not mean “dogs welcome on trails.” California State Parks says dogs are generally not allowed on trails unless a trail is specifically designated as open to dogs on leash, and are not permitted on most beaches. Where dogs are permitted, they must be on a leash of six feet or less and physically under your control. [[11]](https://www.parks.ca.gov/Dogs)
 
 Read the rule for the actual place, not just the destination's tourism introduction.
 
@@ -216,7 +216,7 @@ The right getaway is the one where the dog can join the actual plan comfortably.
     },
     {
       q: "Can I hike with my dog in Joshua Tree National Park?",
-      a: "Pets are not permitted on hiking trails or in the backcountry. The National Park Service also restricts other access and requires leashes no longer than six feet. Check its pet page for allowed developed-area and roadside options.",
+      a: "Pets are not permitted on hiking trails or in the backcountry. The National Park Service also requires leashes no longer than six feet and limits pets to within 100 feet of roads, parking areas, picnic areas, and campgrounds, plus the paved Oasis of Mara and Keys View trails.",
     },
     {
       q: "Is Santa Barbara suitable for an off-leash beach weekend?",
@@ -232,7 +232,7 @@ The right getaway is the one where the dog can join the actual plan comfortably.
     },
     {
       q: "Can my dog come on a Channel Islands National Park excursion?",
-      a: "Pets are not allowed in Channel Islands National Park. Service-animal arrangements require direct consultation with the park and should not be treated as ordinary pet permission.",
+      a: "Pets are not allowed in Channel Islands National Park. The park says service animals are admitted only after a vaccination, parasite-prevention, and health-exam protocol; contact the park directly.",
     },
   ],
   relatedGuides: [
@@ -293,8 +293,8 @@ The right getaway is the one where the dog can join the actual plan comfortably.
       accessedOn: "2026-11-16",
     },
     {
-      title: "Where Can I Take My Dog?",
-      url: "https://sbparksandrec.santabarbaraca.gov/sites/default/files/2024-08/Where%20Can%20I%20Take%20My%20Dog%20Full%20Page.pdf",
+      title: "Celebrate National Dog Day in Santa Barbara",
+      url: "https://sbparksandrec.santabarbaraca.gov/node/9272",
       publisher: "City of Santa Barbara Parks and Recreation",
       accessedOn: "2026-11-16",
     },
@@ -347,45 +347,45 @@ The right getaway is the one where the dog can join the actual plan comfortably.
         title: "The Best Dog-Friendly Weekend Getaways from Los Angeles (2026)",
         checkedOn: "2026-11-16",
         coversWell:
-          "Search-returned excerpt organizes destinations by drive time and gives concrete activity ideas.",
+          "Groups about a dozen destinations by drive time, with dog activities, restaurants, lodging, and example pet fees for each. Notes that Joshua Tree allows leashed dogs only on roads, in campgrounds, and at picnic areas, and gives traffic, heat, and altitude tips.",
         gaps:
-          "Precise access and operating-hour claims need official checks. Full page was not independently reviewed.",
+          "Drive times contradict each other between headings and body text (Santa Barbara, Big Bear, Joshua Tree). Pet fees and policies carry no dates or sources, some visits were hosted, one entry ends mid-sentence, and destinations are not matched to reactive, senior, or heat-sensitive dogs.",
       },
       {
         url: "https://dogtrekker.com/dog-friendly-ojai-ventura/",
         title: "Dog-friendly Ojai and Ventura: a Southern California escape",
         checkedOn: "2026-11-16",
         coversWell:
-          "Search-returned excerpt explains pairing two neighboring destinations and describes lodging and dining categories.",
+          "Suggests pairing Ventura and Ojai, about 30 minutes apart on Highway 33, with a night or two in each, and lists named hotels and restaurants for Ojai and directory counts for Ventura.",
         gaps:
-          "Broad beach-access descriptions do not establish entrance-specific rules. Full page was not independently reviewed.",
+          "Gives almost no rules: no leash laws, fees, size limits, named trails, or entrance-specific beach rules. Listing counts come from its own directory, the article is undated, and much of the page is navigation and sign-up prompts.",
       },
       {
-        url: "https://www.latimes.com/travel/list/dog-friendly-trips-vacations-california",
-        title: "8 California weekend destinations to escape to with your dog",
+        url: "https://www.cbsnews.com/losangeles/news/dog-friendly-getaways-near-los-angeles",
+        title: "Dog-Friendly Getaways Near Los Angeles (CBS Los Angeles)",
         checkedOn: "2026-11-16",
         coversWell:
-          "Accessible search excerpt frames California weekend variety for dog owners.",
+          "Short list of five places including Big Bear Lake beaches with access to the Alpine Path, Santa Barbara's State Street Sunday art show, and Griffith Park, with a tip to start the shadeless Mount Hollywood Trail early and keep dogs hydrated.",
         gaps:
-          "Available excerpt was too short to assess destination-level rules or logistics. Full article was not reviewed.",
+          "Appears to date from 2017, gives no drive times, names no lodging despite saying hotels are included, and states almost no leash or pet-policy rules. Replaces an LA Times page that could not be fetched.",
       },
       {
         url: "https://tumblemaker.com/dog-friendly-small-towns-from-los-angeles",
         title: "Dog-Friendly Small Towns Near Los Angeles",
         checkedOn: "2026-11-16",
         coversWell:
-          "Search-returned excerpt compares towns, stated drive times, and whether pet policies are confirmed by its providers.",
+          "Ranks 12 small towns within about three hours by drive time, with nightly price ranges, and says it lists a stay as pet-friendly only when the provider's data explicitly allows pets (it lists none for Idyllwild, Tehachapi, or Morongo Valley).",
         gaps:
-          "Exact time and price claims need independent validation; excerpt does not establish public-land dog access. Full page was not independently reviewed.",
+          "Names no specific pet-friendly property, pet fees, weight limits, leash rules, or dog-allowed trails and beaches. Offers no seasonal or road notes, and prices are generic town ranges rather than quotes.",
       },
       {
         url: "https://wetnoseescapades.com/dog-friendly-day-trips-los-angeles/",
         title: "10 BEST Dog-Friendly Day Trips from Los Angeles (2026)",
         checkedOn: "2026-11-16",
         coversWell:
-          "Search-returned excerpt supplies nearby trip ideas and acknowledges the effect of traffic.",
+          "Covers ten day trips with stated no-traffic drive times and some concrete rules: Joshua Tree's six-foot leash and 100-foot-from-roads limit, Catalina ferry muzzle or carrier rules, and Corona del Mar's morning and evening dog hours.",
         gaps:
-          "Day-trip framing is less useful for rental selection and quiet downtime. Full page was not independently reviewed.",
+          "Day-trip framing says little about rentals or quiet downtime. Most destinations lack specific leash rules, the page was last updated April 2023, it carries many affiliate links, and heat guidance is limited to general warnings.",
       },
     ],
     gapsFound: [
@@ -402,11 +402,8 @@ The right getaway is the one where the dog can join the actual plan comfortably.
     ],
     angle:
       "Choose the weekend by what the dog can legally and comfortably do, then book accommodation that supports rest and weather changes.",
-    followUps: ["Complete full-page reviews of all five competitors; only search-returned excerpts were inspected.",
-      "Verify authoritative drive-time ranges for Santa Barbara, San Diego, and Idyllwild before presenting them as timed destination recommendations.",
-      "Greater Palm Springs source supplies a two-hour baseline, not a verified travel-time range.",
-      "Confirm all Joshua Tree pet-rule details against the complete official page before publication; the retrieved result emphasized the leash rule but did not expose every restriction in full.",],
+    followUps: [],
     unverified: [],
-    researchComplete: false,
+    researchComplete: true,
   },
 };

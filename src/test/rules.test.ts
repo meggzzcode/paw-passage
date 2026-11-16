@@ -42,6 +42,17 @@ describe("live site visibility", () => {
   it("a guide with unverified claims is never public", () => {
     expect(isPublic({ ...allGuides[0]!, status: "published", research: { ...allGuides[0]!.research, unverified: ["x"] } })).toBe(false);
   });
+  it("a guide whose research is incomplete is never public", () => {
+    expect(isPublic({ ...allGuides[0]!, status: "published", research: { ...allGuides[0]!.research, unverified: [], researchComplete: false } })).toBe(false);
+  });
+  it("every public guide has finished research and no open follow-ups", () => {
+    for (const g of allGuides.filter(isPublic)) {
+      expect(g.research.researchComplete).toBe(true);
+      expect(g.research.followUps ?? []).toEqual([]);
+      expect(g.research.competitors.length).toBeGreaterThanOrEqual(5);
+      for (const c of g.research.competitors) expect(c.gaps.toLowerCase()).not.toContain("outstanding");
+    }
+  });
   it("all ten launch guides exist", () => {
     expect(allGuides.length).toBe(10);
   });

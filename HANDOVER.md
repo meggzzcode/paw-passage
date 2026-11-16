@@ -31,7 +31,7 @@ Add a town object to the right state in `src/content/destinations.ts`. Its page 
 ## 4. Publish a guide
 1. Copy an existing file in `src/content/guides/` and rename it to `<slug>.ts`. It is picked up automatically.
 2. Write the body in Markdown inside `body`. Fill in `sources`, the `research` brief and `faqs`.
-3. A guide is public only if `status: "published"` **and** `research.unverified` is empty. Otherwise it stays a draft: visible in preview only, noindexed, and left out of the sitemap.
+3. A guide is public only if `status: "published"`, `research.researchComplete` is `true` **and** `research.unverified` is empty (a test also requires `followUps` to be empty and at least five competitor pages read in full). Otherwise it stays a draft: visible in preview only, noindexed, and left out of the sitemap.
 4. Update `lastReviewed` whenever you re-check facts.
 
 ## 5. Update affiliate links

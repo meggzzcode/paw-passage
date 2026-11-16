@@ -129,7 +129,7 @@ Our [secure fenced-yard guide](/guides/vacation-rental-secure-fenced-yard) provi
 
 ## Understand service animals separately from pets
 
-Service-animal access is not a way to bypass an inconvenient pet policy. Under the ADA, a service animal is generally a dog individually trained to do work or perform tasks for a person with a disability. Emotional support alone does not make an animal a service animal under that definition. The Department of Justice also explains separate provisions concerning miniature horses. [[6]](https://www.ada.gov/resources/service-animals-faqs/)
+Service-animal access is not a way to bypass an inconvenient pet policy. Under the ADA, a service animal is generally a dog individually trained to do work or perform tasks for a person with a disability. Emotional support alone does not make an animal a service animal under that definition. [[6]](https://www.ada.gov/resources/service-animals-faqs/)
 
 Where ADA public-accommodation rules apply, staff may ask only the permitted disability-related service-animal questions when the need is not apparent; they cannot demand certification as proof of service-animal status. The DOJ guidance also addresses control, house-training, removal in specified circumstances, and limits on surcharges. Actual damage may be charged on the same basis as damage caused by other guests. [[6]](https://www.ada.gov/resources/service-animals-faqs/)
 
@@ -163,7 +163,7 @@ Look for a practical legal walking option close to the rental, including a backu
 
 Locate a routine clinic and an after-hours emergency hospital serving the actual rental location. Verify hours and whether the emergency provider can currently receive patients; a map label is not a guarantee. Save addresses, phone numbers, and a backup route offline.
 
-AVMA recommends carrying veterinary and local emergency-hospital contacts while traveling and calling ahead in an emergency so the hospital can prepare. First aid is not a substitute for veterinary care. [[10]](https://www.avma.org/resources-tools/pet-owners/emergencycare/first-aid-tips-pet-owners)
+AVMA advises calling your veterinarian or a local veterinary emergency hospital in an emergency so they can be ready when you arrive, and notes that first aid is not a substitute for veterinary care. Saving those numbers before you travel is how you make that call possible. [[10]](https://www.avma.org/resources-tools/pet-owners/emergencycare/first-aid-tips-pet-owners)
 
 Carry medication details, relevant records, your regular veterinarian's contact information, and identification information. Keep transport accessible at night. If mobile coverage is limited, download directions and ask how to contact the host without relying on a strong data signal.
 
@@ -312,36 +312,36 @@ The goal is not to eliminate every inconvenience. It is to avoid discovering, af
         "title": "Pet-Friendly Vacation Rental Checklist: What to Confirm Before You Book",
         "url": "https://www.swackvacations.com/pet-friendly-vacation-rental-checklist-what-to-confirm-before-you-book/",
         "checkedOn": "2026-11-16",
-        "coversWell": "Search-returned text covers count, size, breed approval, and portfolio-specific policy examples.",
-        "gaps": "Direct retrieval returned 403; full cancellation and service-animal treatment could not be assessed."
+        "coversWell": "Read in full. Covers dog-only policies, two-dog limits, size and breed rules tied to insurance or owners, approval before paying a deposit, per-stay versus per-pet fees, restricted areas such as pool areas, and leash rules at destinations.",
+        "gaps": "Gives no fee or deposit amounts, nothing on cancellation or refunds, no unattended-dog guidance beyond \"ask,\" no veterinary information, and only a brief service-animal note (ask the team; one registration requirement for specific condos). Written around the company's own homes."
       },
       {
         "title": "The Complete Checklist for Booking a Pet-Friendly Vacation Rental",
         "url": "https://holidaycottage.us/pet-friendly-vacation-rental-booking-checklist",
         "checkedOn": "2026-11-16",
-        "coversWell": "Directly retrieved article offers staged checks for rules, outdoor space, local suitability, and emergencies.",
-        "gaps": "Our treatment adds linked platform fee rules and a more explicit distinction between ADA coverage and platform policy."
+        "coversWell": "Read in full. A three-stage checklist (before shortlisting, before booking, before departure) covering pet type and limits, where pets may go, layout hazards, secure outdoor space, walking routes, unattended-pet, crate and noise rules, local beach and trail restrictions, emergency planning and nearby veterinary services.",
+        "gaps": "Names fees and refundable deposits without amounts or explanation of how they differ, does not cover cancellation terms or service animals, and gives no guidance on unattended time beyond asking. No platform policy sources."
       },
       {
         "title": "What to Check Before Booking Dog-Friendly Accommodation",
         "url": "https://www.pawtal.com.au/dog-friendly-accommodation-checklist/",
         "checkedOn": "2026-11-16",
-        "coversWell": "Directly retrieved article emphasizes exact units and dates, written policies, layout, and realistic trip needs.",
-        "gaps": "Australian focus; US ADA context and US-facing platform policy require separate primary sourcing."
+        "coversWell": "Read in full. Stresses confirming the exact unit, written policy and approval, access from car to room, fence height and gaps, toilet breaks, noise, shade and heat, unattended dogs, and a place for the dog to settle.",
+        "gaps": "Australian focus. Lists charge types (one-off, nightly, bond) without amounts, and does not cover cancellation, service animals, local regulations or veterinary access. Promotes the site's own paid planning product."
       },
       {
         "title": "How to Find a Truly Pet-Friendly Vacation Rental",
         "url": "https://www.vacationrentalsguide.com/vacation-rental-guides/pet-friendly-vacation-rentals",
         "checkedOn": "2026-11-16",
-        "coversWell": "Directly retrieved short guide asks about fees, dog limits, unattended time, fencing, and furniture.",
-        "gaps": "Brief treatment does not explain service-animal legal scope or deposit and platform-protection distinctions."
+        "coversWell": "Read in full. Short guide urging readers to read full house rules; asks about per-pet versus per-stay fees, weight, breed and number limits, alone-time and crating, yard fence security, and furniture; notes beach and trail leash rules vary by town and season.",
+        "gaps": "Does not cover deposits, cancellation, service animals or veterinary care, and gives no way to verify a policy. Brief overall."
       },
       {
-        "title": "How To Book a Pet-Friendly Vacation Rental",
-        "url": "https://www.bringfido.com/blog/how-to-book-pet-friendly-vacation-rental/",
+        "title": "Tips for finding and booking pet-friendly holiday rentals",
+        "url": "https://www.booking.com/articles/pet-friendly-holiday-rentals-tips.html",
         "checkedOn": "2026-11-16",
-        "coversWell": "Search-returned text covers choosing a destination and using rental search tools.",
-        "gaps": "Direct retrieval returned 403; complete page coverage and later booking tips could not be assessed."
+        "coversWell": "Read in full (replacing a BringFido page that returned 403). Covers per-pet, per-stay or per-night fees, refundable damage deposits, extra cleaning charges, varying unattended-pet rules, a note that service and support animals may follow different rules, and checking for a nearby vet and packing records.",
+        "gaps": "No fee amounts, no cancellation or refund terms, no detail on local regulations or on how service-animal rules differ legally, and little on size or breed limits."
       }
     ],
     "gapsFound": [
@@ -356,8 +356,8 @@ The goal is not to eliminate every inconvenience. It is to avoid discovering, af
       "Day-in-the-trip audit that tests furniture, crates, and unattended rules against the itinerary."
     ],
     "angle": "A pre-payment audit that separates permission from a stay that actually works.",
-    "followUps": ["Full competitor-page review remains pending for two of five entries because direct retrieval was blocked; assessments of those pages use search-returned text only."],
+    "followUps": [],
     "unverified": [],
-    "researchComplete": false
+    "researchComplete": true
   }
 };

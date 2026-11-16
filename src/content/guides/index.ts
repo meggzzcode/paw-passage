@@ -10,7 +10,7 @@ export const allGuides: Guide[] = Object.entries(modules)
   .sort((a, b) => a.title.localeCompare(b.title));
 
 export function isPublic(g: Guide) {
-  return g.status === "published" && g.research.unverified.length === 0;
+  return g.status === "published" && g.research.researchComplete === true && g.research.unverified.length === 0;
 }
 
 export function visibleGuides(includeDrafts: boolean = site.showDraftGuides): Guide[] {

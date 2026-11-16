@@ -156,3 +156,12 @@ The code is organized so a database can be added later without a redesign.
 - Member accounts and saved favorites
 - Maps, reviews, price syncing
 - More states
+
+## Final quality safeguards (agreed)
+1. **Guides:** all ten guides are fully researched and fully written. No outlines or filler. Sources are cited, and anything I can't verify is flagged and kept unpublished.
+2. **Search engines:** every public page arrives fully built from the server, so search engines can read it without running the page's scripts. I'll confirm this by checking the raw page source, not just the browser view.
+3. **Stays:** no invented properties, policies, prices, amenities, availability or ratings. Examples are noindexed and never appear as recommendations.
+4. **Easy upkeep:** stays, destinations, guides, sources and affiliate links each live in their own clearly named files, all covered in the handover guide.
+5. **Nothing fake:** no forms that don't save, no dead buttons, no pretend tracking.
+6. **Resale-ready:** few extra libraries, no paid services required, and the whole site moves cleanly through GitHub.
+7. **Launch report:** I'll test the real site, review the guides in a separate pass, and finish with a clear list of what works, what's waiting on verification, and what's waiting on your accounts.

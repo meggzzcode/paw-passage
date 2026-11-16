@@ -67,6 +67,16 @@ The design, page structure and Georgia + California focus from the last plan sta
 - **Newsletter:** signups are saved with proof of consent, protected against spam, and exportable as a CSV for the admin. They're ready to connect to an email tool later.
 - **Host inquiries:** a "List your property" form that saves to an admin inbox with statuses. Email alerts can be added later.
 
+## 6b. Interactive tools (top priority after listings)
+These tools give visitors a reason to come back and are hard for competitors to copy.
+- **Host-question generator:** visitors answer a few questions about their trip, then get a tailored list of questions to send the host. It covers fence height and gaps, gates, whether the yard is shared or private, pools, crates, how many dogs, size and breed limits, fees and deposits, and quiet hours. It also lists photos to ask for. Visitors can copy, print or email the list to themselves. Results live in a shareable link.
+- **Stay comparison:** pick 2–4 verified stays and see them side by side. It compares pet fees, the dog limit, size and breed rules, fencing, outdoor space, beach or trail access, and when each stay was last verified. Gaps are clearly marked "not confirmed".
+- **Pet-fee calculator:** enter nights and number of dogs, then see the estimated total pet cost for a stay using its stored fee rules.
+- **Searchable inventory:** the verified stay search from section 3 also links into the tools, for example "Compare these" and "Questions for this host".
+- **Packing checklist:** an interactive version of guide 9 that you can tick off, saved on your device.
+- **Built into the guides:** each tool appears inside the matching guides. The guides link to the tools, and the tools link back to the guides.
+- **Measuring use:** tool use is recorded anonymously in the admin area, so you can show return-visit value to a buyer.
+
 ## 7. Search engines
 - Every page is fully built on the server.
 - **Every page gets:** its own title and description, a canonical tag, and a noindex setting for drafts, demos and filtered search pages.
@@ -81,6 +91,9 @@ The design, page structure and Georgia + California focus from the last plan sta
   - Demo stays are noindexed.
   - The CSV importer flags bad rows.
   - Clicks are recorded.
+  - The question generator gives the right questions for each answer.
+  - The fee calculator gets the math right.
+  - Comparison only accepts verified stays.
   - Signups and inquiries save.
   - Non-admins are blocked.
 - A real browser run-through of the main paths, done signed in as admin.
@@ -100,8 +113,9 @@ The design, page structure and Georgia + California focus from the last plan sta
 2. Database, admin sign-in, access rules, storage (once Supabase is connected).
 3. Stays: search, detail pages, admin editor, CSV import, demo separation.
 4. Article editor, then the ten researched articles: briefs first, then full articles.
-5. Money features: partner links, click redirect, sponsored stays, newsletter, host inquiries.
-6. Sitemap, structured data, tests, browser run-through, handover guide.
+5. Interactive tools: host-question generator, comparison, fee calculator, checklist.
+6. Money features: partner links, click redirect, sponsored stays, newsletter, host inquiries.
+7. Sitemap, structured data, tests, browser run-through, handover guide.
 
 ## Who does what
 **I can build now:** everything in sections 1–9 except the items below.

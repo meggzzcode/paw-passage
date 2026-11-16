@@ -6,7 +6,7 @@ import { Markdown } from "@/components/site/Markdown";
 import { GearPicks } from "@/components/site/GearPicks";
 import { GuideCard } from "@/components/site/GuideCard";
 import { PreviewBadge } from "@/components/site/StatusBadge";
-import { pageHead, breadcrumbLd } from "@/lib/seo";
+import { pageHead, breadcrumbLd, jsonLd } from "@/lib/seo";
 import { site } from "@/config/site";
 
 const toolLabels = {
@@ -28,10 +28,10 @@ export const Route = createFileRoute("/guides/$slug")({
     const path = `/guides/${params.slug}`;
     const h = pageHead({ title: g.seoTitle, description: g.seoDescription, path, type: "article", noindex: !isPublic(g) });
     const scripts = [
-      { type: "application/ld+json", children: JSON.stringify({ "@context": "https://schema.org", "@type": "Article", headline: g.title, description: g.seoDescription, datePublished: g.publishedOn, dateModified: g.lastReviewed, author: { "@type": "Organization", name: g.author }, publisher: { "@type": "Organization", name: site.name }, mainEntityOfPage: path }) },
+      { type: "application/ld+json", children: jsonLd({ "@context": "https://schema.org", "@type": "Article", headline: g.title, description: g.seoDescription, datePublished: g.publishedOn, dateModified: g.lastReviewed, author: { "@type": "Organization", name: g.author }, publisher: { "@type": "Organization", name: site.name }, mainEntityOfPage: path }) },
       breadcrumbLd([{ name: "Guides", path: "/guides" }, { name: g.title, path }]),
     ];
-    if (g.faqs.length) scripts.push({ type: "application/ld+json", children: JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: g.faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }) });
+    if (g.faqs.length) scripts.push({ type: "application/ld+json", children: jsonLd({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: g.faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }) });
     return { ...h, meta: [...h.meta, { property: "article:modified_time", content: g.lastReviewed }], scripts };
   },
   component: GuidePage,

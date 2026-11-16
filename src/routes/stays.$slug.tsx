@@ -7,7 +7,7 @@ import { describeFee, yesNo } from "@/lib/stay-format";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { BookingButton } from "@/components/site/BookingButton";
 import { PreviewBadge } from "@/components/site/StatusBadge";
-import { pageHead, breadcrumbLd } from "@/lib/seo";
+import { pageHead, breadcrumbLd, jsonLd } from "@/lib/seo";
 import { getGuide } from "@/content/guides";
 import { GuideCard } from "@/components/site/GuideCard";
 
@@ -21,7 +21,7 @@ export const Route = createFileRoute("/stays/$slug")({
     if (!loaderData) return { meta: [{ title: "Stay not found" }, { name: "robots", content: "noindex" }] };
     const s = loaderData.stay;
     const h = pageHead({ title: `${s.name}, dog-friendly ${stayTypeLabels[s.type].toLowerCase()} in ${townName(s.town)}`, description: s.summary, path: `/stays/${params.slug}`, noindex: s.status !== "verified" });
-    return { ...h, scripts: s.status === "verified" ? [{ type: "application/ld+json", children: JSON.stringify({ "@context": "https://schema.org", "@type": "LodgingBusiness", name: s.name, description: s.summary, petsAllowed: true, address: { "@type": "PostalAddress", addressLocality: townName(s.town), addressRegion: getState(s.state)?.name } }) }, breadcrumbLd([{ name: "Stays", path: "/stays" }, { name: s.name, path: `/stays/${s.slug}` }])] : [] };
+    return { ...h, scripts: s.status === "verified" ? [{ type: "application/ld+json", children: jsonLd({ "@context": "https://schema.org", "@type": "LodgingBusiness", name: s.name, description: s.summary, petsAllowed: true, address: { "@type": "PostalAddress", addressLocality: townName(s.town), addressRegion: getState(s.state)?.name } }) }, breadcrumbLd([{ name: "Stays", path: "/stays" }, { name: s.name, path: `/stays/${s.slug}` }])] : [] };
   },
   component: StayPage,
 });

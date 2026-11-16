@@ -1,9 +1,30 @@
-import { marked } from "marked";
+import { marked, type Tokens, type Renderer } from "marked";
 import { cn } from "@/lib/utils";
 
-marked.setOptions({ gfm: true });
+const escapeHtml = (s: string) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+/** Only web, email and on-site addresses are allowed in links and images. Anything else (javascript:, data:...) is dropped. */
+const safeUrl = (href: string | null | undefined) => (href && /^(https?:\/\/|mailto:|\/(?!\/)|#)/i.test(href.trim()) ? href.trim() : null);
 
-/** Renders trusted, repo-authored Markdown (guide bodies). Not for user input. */
+// Articles are edited in a CMS, so treat the text as untrusted: raw HTML typed into an article is shown as
+// plain text instead of being run, and unsafe link addresses are removed.
+marked.use({
+  gfm: true,
+  renderer: {
+    html: (token: Tokens.HTML | Tokens.Tag) => escapeHtml(token.text),
+    link(this: Renderer, { href, title, tokens }: Tokens.Link) {
+      const text = this.parser.parseInline(tokens);
+      const url = safeUrl(href);
+      if (!url) return text;
+      return `<a href="${escapeHtml(url)}"${title ? ` title="${escapeHtml(title)}"` : ""}>${text}</a>`;
+    },
+    image({ href, text }: Tokens.Image) {
+      const url = safeUrl(href);
+      return url ? `<img src="${escapeHtml(url)}" alt="${escapeHtml(text)}" loading="lazy" />` : escapeHtml(text);
+    },
+  },
+});
+
+/** Renders Markdown for articles. Raw HTML in the text is escaped, never run. */
 export function Markdown({ source, className }: { source: string; className?: string }) {
   const html = (marked.parse(source, { async: false }) as string)
     .replace(/<a href="(https?:\/\/[^"]+)"/g, '<a href="$1" target="_blank" rel="noopener noreferrer"');

@@ -35,10 +35,15 @@ export function pageHead({ title, description, path, type = "website", noindex, 
   return { meta, links: [{ rel: "canonical", href: absoluteUrl(path) }] };
 }
 
+/** JSON for a <script type="application/ld+json"> block. "<" is escaped so text can never close the script tag. */
+export function jsonLd(value: unknown): string {
+  return JSON.stringify(value).replace(/</g, "\\u003c").replace(/\u2028/g, "\\u2028").replace(/\u2029/g, "\\u2029");
+}
+
 export function breadcrumbLd(items: { name: string; path: string }[]) {
   return {
     type: "application/ld+json",
-    children: JSON.stringify({
+    children: jsonLd({
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       itemListElement: items.map((it, i) => ({ "@type": "ListItem", position: i + 1, name: it.name, item: it.path })),

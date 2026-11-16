@@ -48,9 +48,37 @@ function splitFrontmatter(file: string, text: string): { data: unknown; body: st
   }
 }
 
-export function loadContent(root: string, includeUnpublished: boolean) {
+/** Web addresses already used by guides written as code files. */
+function codeGuideSlugs(root: string): Set<string> {
+  const d = join(root, "src", "content", "guides");
+  return new Set(existsSync(d) ? readdirSync(d).filter((n) => n.endsWith(".ts") && n !== "index.ts").map((n) => basename(n, ".ts")) : []);
+}
+/** Web addresses already used by stays written as code files. */
+function codeStaySlugs(root: string): Set<string> {
+  const out = new Set<string>();
+  for (const f of ["samples.ts", "verified.ts"]) {
+    const p = join(root, "src", "content", "stays", f);
+    if (existsSync(p)) for (const m of readFileSync(p, "utf8").matchAll(/\bslug:\s*"([a-z0-9-]+)"/g)) out.add(m[1]!);
+  }
+  return out;
+}
+/** Names of the built-in photos (the keys of `images` in src/lib/images.ts). */
+function builtInImageKeys(root: string): Set<string> {
+  const p = join(root, "src", "lib", "images.ts");
+  const text = existsSync(p) ? readFileSync(p, "utf8") : "";
+  const start = text.indexOf("export const images");
+  const body = start >= 0 ? text.slice(start) : "";
+  return new Set([...body.matchAll(/^\s{2}"?([a-z0-9-]+)"?:\s*\{/gm)].map((m) => m[1]!));
+}
+
+export function loadContent(root: string, includeUnpublished: boolean, opts: { skipBrokenDrafts?: boolean } = {}) {
+  const skipBrokenDrafts = opts.skipBrokenDrafts ?? true;
   const dir = join(root, "content");
   const slugs = new Set<string>();
+  const imageKeys = builtInImageKeys(root);
+  const codeGuides = codeGuideSlugs(root);
+  const codeStays = codeStaySlugs(root);
+  const contentGuideSlugs = new Set<string>();
 
   const guides: unknown[] = [];
   const gdir = join(dir, "guides");
@@ -59,13 +87,24 @@ export function loadContent(root: string, includeUnpublished: boolean) {
       const file = join("content", "guides", f);
       const { data, body } = splitFrontmatter(file, readFileSync(join(gdir, f), "utf8"));
       const parsed = guideSchema.safeParse(data);
-      if (!parsed.success) throw new ContentError(formatIssues(file, parsed.error));
+      const isDraft = (data as { status?: string })?.status !== "published";
+      if (!parsed.success) {
+        // A half-written DRAFT must never stop other changes from being published: leave it out and say so.
+        if (isDraft && skipBrokenDrafts) {
+          console.warn(`[content] ${file} is a draft that is not finished yet, so it is left out for now.${formatIssues(file, parsed.error)}`);
+          continue;
+        }
+        throw new ContentError(formatIssues(file, parsed.error));
+      }
       const slug = basename(f, ".md");
+      if (codeGuides.has(slug)) throw new ContentError(`\n\nContent problem in ${file}:\n  - an article with the web address "${slug}" already exists. Open that article instead of creating a new one, or choose a different file name.\n`);
+      contentGuideSlugs.add(slug);
       if (!/^[a-z0-9-]+$/.test(slug)) throw new ContentError(`\n\nContent problem in ${file}:\n  - the file name must use only lowercase letters, numbers and hyphens\n`);
       if (slugs.has(`guide:${slug}`)) throw new ContentError(`\n\nTwo guides share the web address "${slug}".\n`);
       slugs.add(`guide:${slug}`);
       const g = parsed.data;
       if (!g.heroImage && !g.heroUpload) throw new ContentError(`\n\nContent problem in ${file}:\n  - pick a built-in hero image or upload one\n`);
+      if (!g.heroUpload && g.heroImage && imageKeys.size > 0 && !imageKeys.has(g.heroImage)) throw new ContentError(`\n\nContent problem in ${file}:\n  - the built-in photo "${g.heroImage}" does not exist. Pick one from the list or upload your own.\n`);
       if (g.heroUpload && !existsSync(join(root, "public", g.heroUpload))) throw new ContentError(`\n\nContent problem in ${file}:\n  - heroUpload "${g.heroUpload}" is not in the uploads folder\n`);
       if (g.status === "published" && (!g.approvedBy || !g.approvedOn)) {
         // Not an error: it simply stays a draft until someone approves it. Say so in the build log.
@@ -76,19 +115,37 @@ export function loadContent(root: string, includeUnpublished: boolean) {
     }
   }
 
+  for (const g of guides as { slug: string; relatedGuides: string[] }[]) {
+    for (const r of g.relatedGuides) {
+      if (!contentGuideSlugs.has(r) && !codeGuides.has(r)) throw new ContentError(`\n\nContent problem in content/guides/${g.slug}.md:\n  - related article "${r}" does not exist\n`);
+    }
+  }
+
   const stays: unknown[] = [];
   const sdir = join(dir, "stays");
   if (existsSync(sdir)) {
     for (const f of readdirSync(sdir).filter((n) => n.endsWith(".yml") || n.endsWith(".yaml")).sort()) {
       const file = join("content", "stays", f);
-      const parsed = stayYamlSchema.safeParse(readYamlFile(join(sdir, f)));
-      if (!parsed.success) throw new ContentError(formatIssues(file, parsed.error));
+      const raw = readYamlFile(join(sdir, f));
+      const parsed = stayYamlSchema.safeParse(raw);
+      const notLive = (raw as { status?: string })?.status !== "verified";
+      if (!parsed.success) {
+        if (notLive && skipBrokenDrafts) {
+          console.warn(`[content] ${file} is not finished yet, so it is left out for now.${formatIssues(file, parsed.error)}`);
+          continue;
+        }
+        throw new ContentError(formatIssues(file, parsed.error));
+      }
       const slug = basename(f).replace(/\.ya?ml$/, "");
+      if (!/^[a-z0-9-]+$/.test(slug)) throw new ContentError(`\n\nContent problem in ${file}:\n  - the file name must use only lowercase letters, numbers and hyphens\n`);
+      if (codeStays.has(slug)) throw new ContentError(`\n\nContent problem in ${file}:\n  - a stay with the web address "${slug}" already exists\n`);
       if (slugs.has(`stay:${slug}`)) throw new ContentError(`\n\nTwo stays share the web address "${slug}".\n`);
       slugs.add(`stay:${slug}`);
       const s = parsed.data;
       if (!s.image && !s.imageUpload) throw new ContentError(`\n\nContent problem in ${file}:\n  - pick a built-in photo or upload one\n`);
-      if (s.petFee === "charged" && (s.petFeeAmount === undefined || !s.petFeeBasis)) throw new ContentError(`\n\nContent problem in ${file}:\n  - pet fee is "charged", so enter the amount and what it is charged per\n`);
+      if (!s.imageUpload && s.image && imageKeys.size > 0 && !imageKeys.has(s.image)) throw new ContentError(`\n\nContent problem in ${file}:\n  - the built-in photo "${s.image}" does not exist\n`);
+      if (s.imageUpload && !existsSync(join(root, "public", s.imageUpload))) throw new ContentError(`\n\nContent problem in ${file}:\n  - imageUpload "${s.imageUpload}" is not in the uploads folder\n`);
+      if (s.petFee === "charged" && (!s.petFeeAmount || !s.petFeeBasis)) throw new ContentError(`\n\nContent problem in ${file}:\n  - pet fee is "charged", so enter an amount above zero and what it is charged per\n`);
       if (s.status === "verified" && !s.lastVerified) throw new ContentError(`\n\nContent problem in ${file}:\n  - a verified stay needs a "last verified" date\n`);
       const stay = toStay(slug, s);
       if (includeUnpublished || stayIsPublic(stay)) stays.push(stay);
@@ -108,13 +165,30 @@ export function loadContent(root: string, includeUnpublished: boolean) {
   const sparsed = settingsSchema.safeParse(existsSync(sfile) ? readYamlFile(sfile) : {});
   if (!sparsed.success) throw new ContentError(formatIssues("content/settings.yml", sparsed.error));
 
-  return { guides, stays, affiliates: aparsed.data.links, settings: sparsed.data, showDrafts: includeUnpublished };
+  // Private editorial notes and unapproved links are not needed by the pages, so they are not shipped to visitors.
+  const publicGuides = includeUnpublished
+    ? guides
+    : (guides as { research: { competitors: { checkedOn: string }[] } }[]).map((g) => ({
+        ...g,
+        research: {
+          primaryKeyword: "", relatedKeywords: [], readerQuestions: [], intendedReader: "", angle: "", gapsFound: [], differentiators: [],
+          followUps: [], unverified: [], researchComplete: true,
+          competitors: g.research.competitors.map((c) => ({ url: "", title: "", checkedOn: c.checkedOn, coversWell: "", gaps: "" })),
+        },
+      }));
+  const links = includeUnpublished ? aparsed.data.links : aparsed.data.links.filter((l) => l.approved).map(({ notes: _notes, ...l }) => l);
+  return { guides: publicGuides, stays, affiliates: links, settings: sparsed.data, showDrafts: includeUnpublished };
 }
 
 export function contentPlugin(): Plugin {
   let root = process.cwd();
   let isBuild = false;
-  const includeUnpublished = () => !isBuild || process.env["SHOW_DRAFTS"] === "true";
+  const includeUnpublished = () => {
+    if (isBuild && process.env["SHOW_DRAFTS"] === "true" && process.env["CONTEXT"] === "production") {
+      throw new ContentError("\n\nSHOW_DRAFTS is switched on for the LIVE site. That would publish unfinished articles. Remove SHOW_DRAFTS from the site-wide environment settings; it belongs only to preview deploys.\n");
+    }
+    return !isBuild || process.env["SHOW_DRAFTS"] === "true";
+  };
   return {
     name: "paws-content",
     configResolved(config) {
@@ -138,7 +212,7 @@ export function contentPlugin(): Plugin {
       };
       walk(dir);
       try {
-        const data = loadContent(root, includeUnpublished());
+        const data = loadContent(root, includeUnpublished(), { skipBrokenDrafts: isBuild });
         return Object.entries(data)
           .map(([k, v]) => `export const ${k} = ${JSON.stringify(v)};`)
           .join("\n");

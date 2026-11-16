@@ -3,7 +3,18 @@
 // Pure (no "@/" imports) because the build tool loads this file too.
 import { z } from "zod";
 
-const date = z.string().regex(/^\d{4}-\d{2}-\d{2}$/, "must be a date written YYYY-MM-DD");
+const date = z
+  .string()
+  .regex(/^\d{4}-\d{2}-\d{2}$/, "must be a date written YYYY-MM-DD")
+  .refine((v) => {
+    const d = new Date(`${v}T00:00:00Z`);
+    return !Number.isNaN(d.getTime()) && d.toISOString().slice(0, 10) === v && d.getUTCFullYear() >= 2000 && d.getUTCFullYear() <= 2100;
+  }, "is not a real date");
+const httpsUrl = z.string().url("must be a full web address").refine((v) => v.startsWith("https://"), "must start with https://");
+const uploadPath = z
+  .string()
+  .regex(/^\/uploads\/[A-Za-z0-9._-]+\.(jpe?g|png|webp|gif|avif)$/i, "must be a photo in the uploads folder, like /uploads/my-photo.jpg")
+  .refine((v) => !v.includes(".."), "must not contain ..");
 const nonEmpty = z.string().trim().min(1, "must not be empty");
 const optText = z.string().optional().transform((v) => (v && v.trim() ? v : undefined));
 
@@ -23,7 +34,7 @@ export const guideSchema = z.object({
   lastReviewed: date,
   readingMinutes: z.coerce.number().int().min(1),
   heroImage: optText,
-  heroUpload: optText,
+  heroUpload: z.string().optional().transform((v) => (v && v.trim() ? v.trim() : undefined)).pipe(uploadPath.optional()),
   heroAlt: optText,
   faqs: z.array(z.object({ q: nonEmpty, a: nonEmpty })).default([]),
   relatedGuides: z.array(z.string()).default([]),
@@ -31,13 +42,13 @@ export const guideSchema = z.object({
   gear: z
     .array(z.object({ productId: nonEmpty, bestFor: nonEmpty, whyItMadeTheList: nonEmpty, watchOuts: z.array(z.string()).default([]) }))
     .optional(),
-  sources: z.array(z.object({ title: nonEmpty, url: z.string().url(), publisher: nonEmpty, accessedOn: date })).default([]),
+  sources: z.array(z.object({ title: nonEmpty, url: httpsUrl, publisher: nonEmpty, accessedOn: date })).default([]),
   research: z.object({
     primaryKeyword: nonEmpty,
     relatedKeywords: z.array(z.string()).default([]),
     readerQuestions: z.array(z.string()).default([]),
     intendedReader: nonEmpty,
-    competitors: z.array(z.object({ url: z.string().url(), title: nonEmpty, checkedOn: date, coversWell: nonEmpty, gaps: nonEmpty })).default([]),
+    competitors: z.array(z.object({ url: httpsUrl, title: nonEmpty, checkedOn: date, coversWell: nonEmpty, gaps: nonEmpty })).default([]),
     gapsFound: z.array(z.string()).default([]),
     differentiators: z.array(z.string()).default([]),
     angle: nonEmpty,
@@ -80,7 +91,7 @@ export const stayYamlSchema = z.object({
   nearby: z.array(z.string()).default([]),
   houseRules: z.array(z.string()).default([]),
   image: optText,
-  imageUpload: optText,
+  imageUpload: z.string().optional().transform((v) => (v && v.trim() ? v.trim() : undefined)).pipe(uploadPath.optional()),
   sourceUrl: z.string().default(""),
   lastVerified: z.string().optional().transform((v) => (v && v.trim() ? v : null)).pipe(date.nullable()),
   photoPermission: z.boolean().default(false),
@@ -129,7 +140,7 @@ export const affiliatesSchema = z.object({
       z.object({
         id: z.string().regex(/^[a-z0-9-]+$/, "use lowercase letters, numbers and hyphens"),
         network: nonEmpty,
-        url: z.string().url("must be a full web address starting with https://"),
+        url: httpsUrl,
         approved: z.boolean().default(false),
         kind: z.enum(["stay", "product"]).default("stay"),
         notes: optText,
@@ -140,7 +151,7 @@ export const affiliatesSchema = z.object({
 
 export const settingsSchema = z.object({
   contactEmail: z.string().trim().refine((v) => v === "" || /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v), "must be an email address or left empty").default(""),
-  siteUrl: z.string().trim().refine((v) => v === "" || /^https:\/\/[^\s/]+$/.test(v), "must look like https://yourdomain.com (no slash at the end) or be left empty").default(""),
+  siteUrl: z.string().trim().refine((v) => v === "" || /^https:\/\/[A-Za-z0-9.-]+(:\d+)?$/.test(v), "must look like https://yourdomain.com (no slash, no extra text at the end) or be left empty").default(""),
   ga4MeasurementId: z.string().trim().refine((v) => v === "" || /^G-[A-Z0-9]{6,}$/.test(v), "must look like G-XXXXXXXXXX or be left empty").default(""),
   newsletterProvider: z.enum(["", "kit", "mailerlite"]).default(""),
   newsletterFormAction: z.string().trim().refine((v) => v === "" || /^https:\/\//.test(v), "must be the https:// form address from your email provider or left empty").default(""),

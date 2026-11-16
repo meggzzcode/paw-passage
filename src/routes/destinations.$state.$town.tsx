@@ -6,7 +6,7 @@ import { images } from "@/lib/images";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { GuideCard } from "@/components/site/GuideCard";
 import { StayCard } from "@/components/site/StayCard";
-import { pageHead, breadcrumbLd } from "@/lib/seo";
+import { pageHead, breadcrumbLd, jsonLd } from "@/lib/seo";
 
 export const Route = createFileRoute("/destinations/$state/$town")({
   loader: ({ params }) => {
@@ -19,7 +19,7 @@ export const Route = createFileRoute("/destinations/$state/$town")({
     if (!loaderData) return { meta: [{ title: "Destination not found" }, { name: "robots", content: "noindex" }] };
     const { d, t } = loaderData;
     const path = `/destinations/${params.state}/${params.town}`;
-    return { ...pageHead({ title: `Dog-friendly ${t.name}, ${d.name}: planning notes`, description: `${t.blurb} What to check before booking a dog-friendly stay in ${t.name}.`, path }), scripts: [breadcrumbLd([{ name: "Destinations", path: "/destinations" }, { name: d.name, path: `/destinations/${d.slug}` }, { name: t.name, path }]), { type: "application/ld+json", children: JSON.stringify({ "@context": "https://schema.org", "@type": "TouristDestination", name: `${t.name}, ${d.name}`, description: t.blurb }) }] };
+    return { ...pageHead({ title: `Dog-friendly ${t.name}, ${d.name}: planning notes`, description: `${t.blurb} What to check before booking a dog-friendly stay in ${t.name}.`, path }), scripts: [breadcrumbLd([{ name: "Destinations", path: "/destinations" }, { name: d.name, path: `/destinations/${d.slug}` }, { name: t.name, path }]), { type: "application/ld+json", children: jsonLd({ "@context": "https://schema.org", "@type": "TouristDestination", name: `${t.name}, ${d.name}`, description: t.blurb }) }] };
   },
   component: TownPage,
 });

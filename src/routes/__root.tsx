@@ -1,3 +1,4 @@
+import { jsonLd } from "@/lib/seo";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import {
   Outlet,
@@ -98,7 +99,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
     ],
     scripts: [
-      { type: "application/ld+json", children: JSON.stringify({ "@context": "https://schema.org", "@type": "Organization", name: site.name, slogan: site.tagline, description: site.description }) },
+      { type: "application/ld+json", children: jsonLd({ "@context": "https://schema.org", "@type": "Organization", name: site.name, slogan: site.tagline, description: site.description }) },
       ...(site.ga4MeasurementId
         ? [
             { src: `https://www.googletagmanager.com/gtag/js?id=${site.ga4MeasurementId}`, async: true },

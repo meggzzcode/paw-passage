@@ -41,13 +41,13 @@ Unchanged from the original brief:
 - Sponsored settings
 
 **What visitors see:**
-- Only **verified** stays show as real recommendations.
-- Sample stays carry an "Example" label, are hidden from search engines and left out of the sitemap. One setting turns them off everywhere.
+- Only **verified** stays appear on the live site.
+- Sample stays appear only in development and the private preview. They never appear on the published site, not even with a label, and they are always noindexed and left out of the sitemap.
 - Unverified stays are never shown.
 
 **Adding stays:**
 - A stays template (CSV plus matching data format) and a small script that converts the CSV into the stay files.
-- No real properties get added until you or I can verify them with permission. Launch therefore starts with labeled examples, and the gap is reported honestly.
+- No real properties get added until you or I can verify them with permission. Until verified stays are added, the live directory shows an honest "stays coming soon" message with links to the guides and tools.
 
 ## Ten guides (complete articles)
 1. Dog-Friendly Cabins With Fenced Yards in Georgia
@@ -160,8 +160,9 @@ The code is organized so a database can be added later without a redesign.
 ## Final quality safeguards (agreed)
 1. **Guides:** all ten guides are fully researched and fully written. No outlines or filler. Sources are cited, and anything I can't verify is flagged and kept unpublished.
 2. **Search engines:** every public page arrives fully built from the server, so search engines can read it without running the page's scripts. I'll confirm this by checking the raw page source, not just the browser view.
-3. **Stays:** no invented properties, policies, prices, amenities, availability or ratings. Examples are noindexed and never appear as recommendations.
+3. **Stays:** no invented properties, policies, prices, amenities, availability or ratings. Sample stays appear only in the preview, never on the live site.
 4. **Easy upkeep:** stays, destinations, guides, sources and affiliate links each live in their own clearly named files, all covered in the handover guide.
 5. **Nothing fake:** no forms that don't save, no dead buttons, no pretend tracking.
 6. **Resale-ready:** few extra libraries, no paid services required, and the whole site moves cleanly through GitHub.
 7. **Launch report:** I'll test the real site, review the guides in a separate pass, and finish with a clear list of what works, what's waiting on verification, and what's waiting on your accounts.
+8. **Article depth:** the guides are never shortened to make room for the rest of the build. They stay the top priority.

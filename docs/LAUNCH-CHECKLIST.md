@@ -21,3 +21,19 @@ Update the status column as things happen. Dated detail goes in `RECORD-TRAIL.md
 | 14 | Record monthly: visitors, top pages, search clicks, affiliate earnings | Owner | After launch | This history is what a buyer pays for. |
 
 Legal review of the privacy, terms and disclosure pages was skipped by the owner's decision (2026-11-17).
+
+## Sale readiness (what a buyer's checks will look for)
+
+| Item | Why a buyer cares | Status |
+|---|---|---|
+| Google Analytics 4 and Search Console running for months | Proves traffic. Buyers usually want read-only access to both, not screenshots | Not set up (steps 7-8 above) |
+| Affiliate account(s) with earnings history | Proves the site makes money. Without revenue the site is priced as a build, not a business | None joined (owner's hold) |
+| Monthly numbers log: visitors, top pages, search clicks, income, costs | Gives a profit-and-loss story. A simple spreadsheet is enough | Not started |
+| Asset inventory: domain, mailbox, hosting, GitHub, CMS | Buyer must know everything transfers | Done: `OPERATIONS-RECORD.md`, `DNS-AND-TRANSFER.md`. Re-check after the domain is live |
+| Handover steps for each account | Non-technical buyer must be able to take over | Done: `BUYER_HANDOVER.md`. Update after Part D |
+| Content ownership: articles are original; photos are licensed | Buyer wants no copyright risk | Photos are from Unsplash with credits in `image-credits.ts`. No maker photos used |
+| Name check: is "Paws & Passage" already used by another business or trademark in travel or pet services? | A conflict could force a rebrand | **Not checked.** Search the US trademark database and the web before listing |
+| Business owner of record for the accounts (the owner or the owner's company) | The sale must transfer the accounts from the right party | Confirm |
+| Backlinks and social profiles (Pinterest first for travel) | Extra proof of reach | None yet |
+| A 12-month content plan (list of next articles) | Shows the buyer where growth comes from | Not written. Search research is being done in `REVIEW-SEARCH.md` |
+| Where to list it (a site-flipping marketplace) and what its minimums are | Some marketplaces only take sites with revenue and months of history | Not researched |

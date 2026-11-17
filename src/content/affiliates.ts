@@ -12,8 +12,8 @@ export interface AffiliateLink {
   kind?: "stay" | "product";
 }
 
-/** Amazon requires this exact kind of statement wherever its links appear. */
-export const AMAZON_DISCLOSURE = "As an Amazon Associate we earn from qualifying purchases.";
+/** Amazon's required sentence, exactly as in its Operating Agreement (Section 5). Do not reword it (for example "we"): the agreement allows only substantially similar statements it previously allowed. */
+export const AMAZON_DISCLOSURE = "As an Amazon Associate I earn from qualifying purchases.";
 export function isAmazon(link: AffiliateLink) {
   return /amazon/i.test(link.network);
 }

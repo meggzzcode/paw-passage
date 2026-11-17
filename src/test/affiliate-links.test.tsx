@@ -13,6 +13,7 @@ vi.mock("@/content/affiliates", async (orig) => {
 
 import { Markdown } from "@/components/site/Markdown";
 import { affiliateUsage, inlineAffiliateIds, productLinkId } from "@/content/affiliate-usage";
+import { AMAZON_DISCLOSURE } from "@/content/affiliates";
 
 const html = (s: string) => renderToStaticMarkup(<Markdown source={s} />);
 
@@ -59,3 +60,10 @@ describe("which affiliate links an article shows", () => {
     expect(affiliateUsage({ body: "[b](aff:ruffwear-pad)" }).count).toBe(0);
   });
 });
+
+describe("Amazon's required disclosure", () => {
+  it("is Amazon's exact sentence from the Operating Agreement (Section 5)", () => {
+    expect(AMAZON_DISCLOSURE).toBe("As an Amazon Associate I earn from qualifying purchases.");
+  });
+});
+

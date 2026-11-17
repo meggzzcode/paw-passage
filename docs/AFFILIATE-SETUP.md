@@ -16,7 +16,7 @@ A link to a product or a place to book appears on the site **only if** it is lis
 
 - Adds `sponsored` and `nofollow` to every affiliate link, so search engines know they are paid links.
 - Adds a notice at the top of any article that really has an approved link: *"This article contains affiliate links... we may earn a commission at no extra cost to you..."* with a link to the disclosure page. It does not appear on articles without links.
-- Adds Amazon's required sentence (*"As an Amazon Associate we earn from qualifying purchases."*) whenever an Amazon link is on the page.
+- Adds Amazon's required sentence (*"As an Amazon Associate I earn from qualifying purchases."*) whenever an Amazon link is on the page.
 - Records a click event in Google Analytics (once you add your analytics ID), so you can see which links are used.
 - Refuses to publish if an article uses a link name that does not exist (it stops the update with a message naming the article, so a typo can never create a dead link).
 - Never shows prices or star ratings. The articles do not say the products were tested.

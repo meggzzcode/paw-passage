@@ -114,14 +114,14 @@ No brand on the list was found to offer an embed or widget for product images. T
 4. Once Amazon approves us, use Amazon's own image links for Amazon-sold products and never save Amazon images ourselves.
 5. For a handful of cheap, central products, buy them and take our own photos.
 6. Until a product has a real photo, show text only, or a clearly labelled illustration. Stock photos only with the caption "Illustration only, not the product."
-7. Re-check in three months and ask a lawyer before using any hotlinking or fair-use argument.
+7. Re-check in three months. Do not rely on any hotlinking or fair-use argument.
 
 ## Risks
 
 - Permission replies may be slow, partial (limited images), or time-limited; keep the email and obey its terms.
 - A permission or affiliate asset may be revoked; be ready to swap images fast.
 - Amazon images are only usable through Amazon's tools while we are approved; losing the account (or a failed 180-day test) removes them. PA-API is being replaced by Creators API.
-- Hotlinking law is split between circuits; a maker could still complain or claim damages. Ask a lawyer.
+- Hotlinking law is split between circuits; a maker could still complain or claim damages. So we do not hotlink.
 - Fair use is judged case by case and a commission-earning page weakens it.
 - Unsplash and similar licences do not cover trademarks in the photo, and the legal "not the product" caption must be visible.
 - Many terms in this file are NOT CONFIRMED (Awin US clause, AvantLink, Impact, Pepperjam terms, Kurgo guide PDF, Tractive and Sleepypod T&Cs). Some facts come from search snippets rather than full pages and should be re-read before acting.

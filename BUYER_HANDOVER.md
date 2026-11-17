@@ -32,6 +32,8 @@ The plan is that you can run it day to day without a developer:
 
 There is no custom database or backend, and Hostinger is not used.
 
+**Records:** every service, domain, mailbox and cost is listed in `docs/OPERATIONS-RECORD.md`; dated decisions and actions are in `docs/RECORD-TRAIL.md`.
+
 ## 3. How publishing works
 
 1. You edit something in Pages CMS and save.
@@ -134,7 +136,7 @@ The detailed, step-by-step instructions are in **`docs/DNS-AND-TRANSFER.md`**. I
 7. **Draft preview links are public.** Private preview deploys (set up in `netlify.toml`) show drafts to anyone who has the link, and are not password protected on a free plan. They tell search engines to stay away.
 8. **Netlify free plan limits and terms.** Usage limits apply, and whether commercial use is allowed on the free plan is not confirmed: read Netlify's current terms.
 9. **Affiliate programs must be re-applied for** by the buyer, and Amazon requires its exact disclosure sentence wherever its links appear (the site adds it automatically).
-10. **The legal pages (privacy, terms, affiliate disclosure) are drafts** and have not had a lawyer's review. Do that before launch and after any change of owner.
+10. **The legal pages (privacy, terms, affiliate disclosure) were written by the original owner's assistant and have not been reviewed by a lawyer.** The owner decided on 2026-11-17 not to obtain a legal review. A new owner may make their own choice; the pages are plain Markdown-style files that are easy to change.
 11. **The site loads fonts from Google Fonts**, and Google Analytics only once an ID is entered. The privacy page should say so.
 12. **Photos:** stock photos are free-to-use under the Unsplash licence; the home page picture is AI-generated. Any photo of a real rental needs the owner's written permission.
 13. **No failure emails on Netlify's free plan, and new projects may default to Private.** A failed build is silent unless someone looks at the Deploys page. A project set to Private makes the website ask visitors to sign in to Netlify: a live site must be set to public. Check this on day one.

@@ -75,5 +75,5 @@ Hand over: the GitHub repo, the domain registrar, the GA4 property (add the buye
 - Business email (`contactEmail`), domain (`siteUrl`), GA4 ID, newsletter form.
 - Approved affiliate partnerships.
 - Real verified stays.
-- Legal review of the privacy policy, terms and disclosure.
+- Legal pages: the owner decided (2026-11-17) not to get a legal review. They are unreviewed drafts.
 - Each guide's `research.followUps` lists optional editor follow-ups, such as competitor pages that could only be read as search excerpts.

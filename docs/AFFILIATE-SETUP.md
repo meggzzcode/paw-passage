@@ -31,7 +31,7 @@ You can also add links one at a time in Pages CMS (Affiliate links > add).
 
 ## Before you apply to any program
 
-- The site must be live on your own domain, with the **affiliate disclosure**, **privacy** and **contact** pages (they exist, but they are drafts that need a lawyer's review).
+- The site must be live on your own domain, with the **affiliate disclosure**, **privacy** and **contact** pages (they exist; they have not had a legal review, by the owner's decision).
 - Most programs want a working business email address.
 - Read each program's rules. The research notes are in `docs/AFFILIATE-PROGRAMS.md` (which programs exist for each product, and what they require).
 - **Amazon Associates accounts belong to the person who opened them**, and Amazon's rules normally do not allow handing one to a buyer. A buyer should expect to open their own account and replace every Amazon link (see `docs/AFFILIATE-PROGRAMS.md`).

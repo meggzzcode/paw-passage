@@ -1,0 +1,19 @@
+# Record trail
+
+Dated log of decisions and actions, newest at the bottom. Add a line whenever something is decided, bought, set up or changed. Evidence = where to check it.
+
+| Date | What | Evidence |
+|---|---|---|
+| 2026-11-16 | Site built in Lovable (TanStack Start), content-first, no backend | `.lovable/plan/` |
+| 2026-11-16 | Hostinger rejected; stack set to Namecheap + Netlify + GitHub + Pages CMS | BUYER_HANDOVER.md |
+| 2026-11-16 | Brand name set to "Paws & Passage" everywhere | git history |
+| 2026-11-17 | Photo branch (restored hero, sharper images) approved and merged to main | `main` history |
+| 2026-11-17 | Netlify test deploy `paws-passage-test` verified (198 site checks, 61 browser checks) | docs/LIVE-TEST-RESULTS.md |
+| 2026-11-17 | Repo made public (free GitHub cannot protect `main` while private) | GitHub settings |
+| 2026-11-17 | Bought `pawsandpassage.com` and Private Email "Launch" at Namecheap ($24.16 order) | Namecheap order (screenshot seen by assistant) |
+| 2026-11-17 | Pages CMS article editor switched from rich text to plain Markdown after the rich editor turned tick boxes into bullets | LIVE-TEST-RESULTS.md, `.pages.yml` |
+| 2026-11-17 | Owner decided to hold Amazon and all affiliate sign-ups for now | AFFILIATE-PROGRAMS.md |
+| 2026-11-17 | Owner decided product buttons link directly to makers' pages for now; affiliate link replaces it when approved | `productButton()` in `src/content/affiliate-usage.ts` |
+| 2026-11-17 | Two-dog article wording corrected (AVMA does not say "tethers"); source added | guide file |
+| 2026-11-17 | Owner decided to skip legal review of privacy, terms and disclosure pages | this log |
+| 2026-11-17 | Product photo licensing researched; none added | docs/PRODUCT-PHOTOS.md |

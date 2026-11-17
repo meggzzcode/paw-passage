@@ -31,5 +31,5 @@ Keep this list current. It is used for the account exit step in `LAUNCH-CHECKLIS
 |---|---|---|
 | Namecheap, Netlify, GitHub, Pages CMS | (fill in) | No |
 | Google Analytics and Search Console | (fill in) | No |
-| Affiliate programs (when approved) | hello@ address (recommended) | **Yes**: exit step required |
+| Affiliate programs (when approved) | A separate email the owner controls (NOT hello@; decided 2026-11-17) | **Yes**: exit step required |
 | Pinterest Business | hello@ address | No |

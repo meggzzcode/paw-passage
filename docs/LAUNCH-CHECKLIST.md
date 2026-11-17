@@ -47,3 +47,6 @@ Anyone who controls the business mailbox can reset passwords on every account th
 3. For the infrastructure accounts (Namecheap, Netlify, GitHub, Google): hand over or add the buyer as owner per `BUYER_HANDOVER.md`, then remove the seller.
 4. Change the mailbox password at handover and sign out other sessions.
 5. The buyer applies for their own affiliate accounts with the business email.
+
+### Decision (2026-11-17): affiliate accounts do not use the business email
+Affiliate networks usually require each email address and each website to be registered on only one account, and it is not confirmed that a closed account frees them. So accounts tied to the seller's tax ID or payout use a separate email the seller owns, never `hello@pawsandpassage.com`. That leaves `hello@` unused by any network, so the buyer can register with it. Pinterest, Google Analytics, Search Console, Netlify and GitHub (no tax ID or payout) may use `hello@`. The promoted website address still has to be given to each network: before the sale, remove it from the seller's account or close the account, and if a network still rejects the buyer for "site already registered", the buyer contacts that network's support with proof of domain ownership (unconfirmed outcome).

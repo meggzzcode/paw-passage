@@ -8,7 +8,7 @@ states: []
 status: published
 author: Paws & Passage Editors
 publishedOn: 2026-11-16
-lastReviewed: 2026-11-16
+lastReviewed: 2026-11-17
 readingMinutes: 11
 heroImage: guide-pet-fees
 faqs:

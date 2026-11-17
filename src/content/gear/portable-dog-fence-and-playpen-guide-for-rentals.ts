@@ -18,6 +18,8 @@ export const products: Product[] = [
       "Maker says a pet not trained to be restricted may attempt to escape, which could cause serious injury to the pet or the product",
       "Maker says to remove collars, tags and leads before placing a pet inside, and not to leave young animals unsupervised for extended periods",
     ],
+    // The spec source below is an assembly manual (a PDF), so the button uses the maker's product page instead.
+    productUrl: "https://www.midwesthomes4pets.com/product/dogs/pens-gates-barriers/exercise-pen-with-door/",
     specSource: {
       title: "Assembly Instructions for Model Number 550-24DR, 552-30DR, 554-36DR, 556-42DR, 558-48DR",
       url: "https://www.midwesthomes4pets.com/wp-content/uploads/ExPen_550DR_Eng.pdf",

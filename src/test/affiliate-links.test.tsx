@@ -67,3 +67,30 @@ describe("Amazon's required disclosure", () => {
   });
 });
 
+
+import { productButton } from "@/content/affiliate-usage";
+import type { Product } from "@/content/gear";
+
+const base: Product = { id: "some-product", name: "Thing", brand: "Maker", summary: "s", keySpecs: [], specSource: { title: "t", url: "https://maker.example/thing", publisher: "Maker", accessedOn: "2026-11-16" } };
+
+describe("the button under a product pick", () => {
+  it("goes to the maker's own page when there is no approved affiliate link", () => {
+    const b = productButton(base)!;
+    expect(b.kind).toBe("direct");
+    expect(b.url).toBe("https://maker.example/thing");
+    expect(b.label).toBe("See it on Maker's website");
+  });
+  it("uses the product page instead of a PDF manual", () => {
+    expect(productButton({ ...base, specSource: { ...base.specSource, url: "https://maker.example/manual.pdf" }, productUrl: "https://maker.example/product" })!.url).toBe("https://maker.example/product");
+    expect(productButton({ ...base, specSource: { ...base.specSource, url: "https://maker.example/manual.pdf" } })).toBeUndefined();
+  });
+  it("is replaced by the affiliate link once that link is approved", () => {
+    const b = productButton({ ...base, id: "kurgo-heather-hammock" })!;
+    expect(b.kind).toBe("affiliate");
+    expect(b.url).toContain("amazon.com");
+    expect(b.label).toBe("See it at Amazon");
+  });
+  it("an unapproved affiliate link does not replace the direct link", () => {
+    expect(productButton({ ...base, id: "ruffwear-pad" })!.kind).toBe("direct");
+  });
+});

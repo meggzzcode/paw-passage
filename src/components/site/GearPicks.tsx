@@ -2,7 +2,7 @@ import { useLocation } from "@tanstack/react-router";
 import { AMAZON_DISCLOSURE, getApprovedLink, isAmazon } from "@/content/affiliates";
 import { getProduct, type GearPick } from "@/content/gear";
 import { trackProductClick } from "@/lib/analytics";
-import { productLinkId } from "@/content/affiliate-usage";
+import { productLinkId, productButton } from "@/content/affiliate-usage";
 
 /** Disclosure shown above the picks whenever at least one approved link will render. */
 export function hasAffiliateLinks(picks: GearPick[]) {
@@ -38,17 +38,26 @@ export function GearPicks({ picks }: { picks: GearPick[] }) {
               <p className="mt-3 text-sm font-medium">Check before you buy</p>
               <ul className="list-disc pl-5 text-sm text-muted-foreground">{pick.watchOuts.map((w) => <li key={w}>{w}</li>)}</ul>
               <p className="mt-3 text-xs text-muted-foreground">Specs from <a className="underline" href={product!.specSource.url} target="_blank" rel="noopener noreferrer">{product!.specSource.title}</a> ({product!.specSource.publisher}, accessed {product!.specSource.accessedOn}). Sizes, models and availability change: confirm on the seller's page.</p>
-              {link && (
-                <a
-                  href={link.url}
-                  target="_blank"
-                  rel="sponsored nofollow noopener noreferrer"
-                  onClick={() => trackProductClick({ product: product!.id, partner: link.network, url: link.url, page: loc.pathname })}
-                  className="mt-4 inline-flex h-11 items-center justify-center rounded-full bg-terracotta px-6 font-medium text-terracotta-foreground transition hover:brightness-95"
-                >
-                  See it at {link.network.replace(/ Associates$/i, "")}
-                </a>
-              )}
+              {(() => {
+                const btn = productButton(product!);
+                if (!btn) return null;
+                const affiliate = btn.kind === "affiliate";
+                return (
+                  <a
+                    href={btn.url}
+                    target="_blank"
+                    rel={affiliate ? "sponsored nofollow noopener noreferrer" : "noopener noreferrer"}
+                    onClick={() => trackProductClick({ product: product!.id, partner: affiliate ? btn.network : "maker website", url: btn.url, page: loc.pathname })}
+                    className={
+                      affiliate
+                        ? "mt-4 inline-flex h-11 items-center justify-center rounded-full bg-terracotta px-6 font-medium text-terracotta-foreground transition hover:brightness-95"
+                        : "mt-4 inline-flex h-11 items-center justify-center rounded-full border border-border bg-background px-6 font-medium text-foreground transition hover:bg-muted"
+                    }
+                  >
+                    {btn.label}
+                  </a>
+                );
+              })()}
             </li>
           );
         })}

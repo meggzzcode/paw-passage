@@ -10,6 +10,11 @@ export interface Product {
   /** Specs/claims taken from `specSource` (size range, weight limit, certification...). */
   keySpecs: string[];
   specSource: { title: string; url: string; publisher: string; accessedOn: string };
+  /**
+   * The maker's own page for this product. The pick's button goes here until an affiliate link is approved
+   * (then the affiliate link takes the button's place). If left out, the spec source is used when it is a web page.
+   */
+  productUrl?: string;
   /** Id of an entry in affiliates.ts. Leave unset until you are approved: no button is shown. */
   affiliateId?: string;
 }

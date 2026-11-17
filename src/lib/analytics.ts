@@ -41,7 +41,7 @@ export function trackTool(event: ToolEvent, params: { tool: string; label?: stri
 /** Fires an event only the first time per page view, e.g. "tool_start" when a visitor first touches a tool. */
 const fired = new Set<string>();
 export function trackToolOnce(event: ToolEvent, params: { tool: string; label?: string; count?: number }) {
-  const key = `${event}:${params.tool}`;
+  const key = `${event}:${params.tool}:${params.label ?? ""}`;
   if (fired.has(key)) return false;
   const sent = trackTool(event, params);
   if (sent) fired.add(key);

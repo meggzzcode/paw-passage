@@ -5,6 +5,7 @@ import { checklist } from "@/content/checklist";
 import { ToolShell } from "@/components/site/ToolShell";
 import { parseChecklist } from "@/lib/checklist-storage";
 import { pageHead } from "@/lib/seo";
+import { trackTool, trackToolOnce } from "@/lib/analytics";
 
 export const Route = createFileRoute("/tools/checklist")({
   head: () => pageHead({ title: "Dog-friendly rental checklist (printable)", description: "An interactive before-you-book checklist for dog-friendly vacation rentals: pet policy, fence, house layout, local rules and packing.", path: "/tools/checklist" }),
@@ -28,7 +29,7 @@ function ChecklistPage() {
       <div className="no-print mb-6 flex flex-wrap items-center gap-3">
         <div className="h-2 w-48 overflow-hidden rounded-full bg-muted"><div className="h-full bg-primary transition-all" style={{ width: `${(count / total) * 100}%` }} /></div>
         <span className="text-sm text-muted-foreground" aria-live="polite">{count} of {total} done</span>
-        <button type="button" onClick={() => window.print()} className="ml-auto inline-flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-sm font-medium text-primary-foreground"><Printer className="size-4" /> Print</button>
+        <button type="button" onClick={() => { trackTool("tool_print", { tool: "checklist" }); window.print(); }} className="ml-auto inline-flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-sm font-medium text-primary-foreground"><Printer className="size-4" /> Print</button>
         <button type="button" onClick={() => setDone({})} className="inline-flex items-center gap-2 rounded-full border border-input px-4 py-2 text-sm"><RotateCcw className="size-4" /> Reset</button>
       </div>
       <div className="grid gap-8 md:grid-cols-2">
@@ -41,7 +42,7 @@ function ChecklistPage() {
                 return (
                   <li key={id}>
                     <label className="flex cursor-pointer gap-3 text-sm">
-                      <input type="checkbox" checked={!!done[id]} onChange={(e) => setDone((d) => ({ ...d, [id]: e.target.checked }))} className="mt-0.5 size-4 shrink-0 accent-[var(--primary)]" />
+                      <input type="checkbox" checked={!!done[id]} onChange={(e) => { trackToolOnce("tool_start", { tool: "checklist" }); setDone((d) => ({ ...d, [id]: e.target.checked })); }} className="mt-0.5 size-4 shrink-0 accent-[var(--primary)]" />
                       <span className={done[id] ? "text-muted-foreground line-through" : ""}>{it}</span>
                     </label>
                   </li>

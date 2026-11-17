@@ -1,5 +1,5 @@
 # Business details. Edit these in Pages CMS ("Site settings"). Leave a value empty if you do not have it yet:
 # the site then shows an honest "coming soon" message instead of a broken link.
 contactEmail: "hello@pawsandpassage.com"
-siteUrl: ""
-ga4MeasurementId: ""
+siteUrl: "https://www.pawsandpassage.com"
+ga4MeasurementId: "G-1J97C8CPC1"

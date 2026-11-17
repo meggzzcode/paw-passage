@@ -3,9 +3,9 @@ import type { Guide } from "../types";
 export const guide: Guide = {
   slug: "portable-dog-fence-and-playpen-guide-for-rentals",
   title: "Portable Dog Fences, Playpens and Gates for Rentals Without a Fenced Yard",
-  seoTitle: "Portable Dog Fence & Playpen Guide for Rentals",
+  seoTitle: "No Fenced Yard? Pens and Gates for Rentals",
   seoDescription:
-    "Exercise pens, pressure-mounted gates and tie-out alternatives for rentals with no fenced yard, with maker-stated specs, host etiquette and honest limits.",
+    "Compare exercise pens and pressure-mounted gates for rentals with no fence: five spec-based picks, host etiquette, and why we steer away from tie-outs.",
   dek: "How to choose a freestanding pen or gate, match it to your dog, ask the host first, and know when a portable barrier is the wrong tool.",
   category: "Gear",
   states: [],
@@ -20,7 +20,7 @@ export const guide: Guide = {
 - A folding pen or pressure-mounted gate is a short, supervised tool for a rental with no fenced yard. It does not replace a fenced yard, and we do not recommend leaving any dog alone in one.
 - A pen is only as strong as the dog is calm: MidWest says a pet not trained to be restricted may attempt to escape, which could cause serious injury. [[2]](https://www.midwesthomes4pets.com/wp-content/uploads/ExPen_550DR_Eng.pdf)
 - Ask the host before bringing anything that could mark a floor, door frame, deck or lawn, and get the answer in writing.
-- We steer away from tie-outs. Humane World for Animals calls tethering a high-risk factor in serious dog bites and attacks. [[1]](https://www.humaneworld.org/chaining)
+- We steer away from tie-outs. Humane World for Animals calls tethering a high-risk factor in serious dog bites and attacks. [[1]](https://www.humaneworld.org/en/resources/it-okay-chain-or-tether-dogs)
 - Match height to how your dog actually jumps and climbs, and practice at home first.
 
 If the trip depends on a yard, start with our guide to [finding a rental with a secure fenced yard](/guides/vacation-rental-secure-fenced-yard) and compare listings with our [pet-friendly rental checklist](/guides/pet-friendly-vacation-rental-checklist).
@@ -35,7 +35,7 @@ Paws & Passage did not test these products. Every spec comes from the maker's ow
 
 **Pressure-mounted and freestanding gates** close a doorway; they are not for building an outdoor enclosure. Carlson's 30-inch walk-thru gate lists adjustable pressure mounts as its default install. [[5]](https://carlsonpetproducts.com/products/extra-wide-walk-thru-pet-gate-white) Pressure may leave marks on trim or paint, and Carlson's taller model's page says hardware is included for required wall mounting [[6]](https://carlsonpetproducts.com/products/36-extra-tall-walk-thru-pet-gate-white), which a rental host will often refuse. Carlson's Design Paw gate is freestanding with no drilling, but it is only 20 inches tall and the maker describes it as specifically designed for puppies and toy breeds. [[7]](https://carlsonpetproducts.com/products/design-paw-extra-wide-freestanding-pet-gate)
 
-**Tie-outs and tethers** are the option we steer away from. Humane World for Animals, formerly the Humane Society of the United States, describes tethering as fastening a dog to a stationary object and leaving them unattended. It says intensive confinement or long-term restraint can severely damage a dog's physical and psychological well-being, that tethering is a high-risk factor in serious dog bites and attacks, and that keeping an animal tethered for long periods or during extreme weather is never acceptable. [[1]](https://www.humaneworld.org/chaining) We do not feature any. If you clip a leash to your own chair or railing for a moment, stay within arm's reach and keep the dog in sight. Tether laws vary by state and city and we did not research them, so check local rules and house rules.
+**Tie-outs and tethers** are the option we steer away from. Humane World for Animals, formerly the Humane Society of the United States, describes tethering as fastening a dog to a stationary object and leaving them unattended. It says intensive confinement or long-term restraint can severely damage a dog's physical and psychological well-being, that tethering is a high-risk factor in serious dog bites and attacks, and that keeping an animal tethered for long periods or during extreme weather is never acceptable. [[1]](https://www.humaneworld.org/en/resources/it-okay-chain-or-tether-dogs) We do not feature any. If you clip a leash to your own chair or railing for a moment, stay within arm's reach and keep the dog in sight. Tether laws vary by state and city and we did not research them, so check local rules and house rules.
 
 ## What to check on any pen or gate
 
@@ -130,7 +130,7 @@ Some links on this site are affiliate links. When an article contains one, a not
     },
     {
       q: "Is a tie-out a good alternative when there is no fence?",
-      a: "We do not recommend it for a dog left alone. Humane World for Animals describes tethering as fastening a dog to a stationary object and leaving them unattended, and calls it a high-risk factor in serious dog bites and attacks. [[1]](https://www.humaneworld.org/chaining)",
+      a: "We do not recommend it for a dog left alone. Humane World for Animals describes tethering as fastening a dog to a stationary object and leaving them unattended, and calls it a high-risk factor in serious dog bites and attacks. [[1]](https://www.humaneworld.org/en/resources/it-okay-chain-or-tether-dogs)",
     },
     {
       q: "How tall should a pen or gate be?",
@@ -217,7 +217,7 @@ Some links on this site are affiliate links. When an article contains one, a not
   sources: [
     {
       title: "Is it okay to chain or tether dogs?",
-      url: "https://www.humaneworld.org/chaining",
+      url: "https://www.humaneworld.org/en/resources/it-okay-chain-or-tether-dogs",
       publisher: "Humane World for Animals (formerly the Humane Society of the United States)",
       accessedOn: "2026-11-16",
     },

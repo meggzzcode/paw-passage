@@ -3,9 +3,9 @@ import type { Guide } from "../types";
 export const guide: Guide = {
   slug: "dog-friendly-cabin-packing-list",
   title: "What to Pack for a Dog-Friendly Cabin Vacation",
-  seoTitle: "Dog-Friendly Cabin Packing List | Paws & Passage",
+  seoTitle: "Dog Cabin Packing List: Ticks, Bears, Cold",
   seoDescription:
-    "Pack for a cabin stay with your dog: food, records, first aid, stair barriers, furniture covers, tick checks, winter hazards, and bear-aware storage.",
+    "What to pack for a cabin stay with your dog: food and records, stair barriers, tick checks, winter hazards and bear-aware food storage.",
   dek: "A practical packing list for muddy entrances, unfamiliar stairs, quiet nights, and the things a remote cabin cannot supply.",
   category: "Checklist",
   states: [],
@@ -122,7 +122,7 @@ First aid should help you respond while arranging veterinary care, not encourage
 
 AVMA's first-aid brochure advises always contacting your veterinarian or poison control center before inducing vomiting. [[10]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf) Do not try to induce vomiting or give any medication unless a veterinarian or poison control tells you to. Keep any product container available and ask the veterinarian before using items such as hydrogen peroxide or activated charcoal.
 
-Save the ASPCA Animal Poison Control number: **888-426-4435**. ASPCA says a consultation fee may apply. [[11]](https://www.aspca.org/pet-care/animal-poison-control) AVMA also lists the Pet Poison Helpline at 855-764-7661, which may also charge. [[10]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf) Keep the packaging or photograph the label and call promptly; do not wait for symptoms. Replace expired supplies before each trip.
+Save the ASPCA Animal Poison Control number: **888-426-4435**. ASPCA says a consultation fee may apply. [[11]](https://www.aspca.org/pet-care/aspca-poison-control) AVMA also lists the Pet Poison Helpline at 855-764-7661, which may also charge. [[10]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf) Keep the packaging or photograph the label and call promptly; do not wait for symptoms. Replace expired supplies before each trip.
 
 ## Tick prevention and the evening inspection
 
@@ -184,7 +184,7 @@ Turn this into your own list with our [before-you-book checklist](/tools/checkli
     { title: "Pet Safety Tips for Closing Down the RV and Cabin for the Season", url: "https://www.aspca.org/news/pet-safety-tips-closing-down-rv-and-cabin-season", publisher: "ASPCA Animal Poison Control Center", accessedOn: "2026-11-16" },
     { title: "Digging Deeper: Getting the Facts on the Dangers of Antifreeze and Your Pets", url: "https://www.aspca.org/news/digging-deeper-getting-facts-dangers-antifreeze-and-your-pets", publisher: "ASPCA Animal Poison Control Center", accessedOn: "2026-11-16" },
     { title: "Pet First Aid (brochure with first aid kit checklist)", url: "https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf", publisher: "American Veterinary Medical Association", accessedOn: "2026-11-16" },
-    { title: "ASPCA Poison Control", url: "https://www.aspca.org/pet-care/animal-poison-control", publisher: "ASPCA", accessedOn: "2026-11-16" },
+    { title: "ASPCA Poison Control", url: "https://www.aspca.org/pet-care/aspca-poison-control", publisher: "ASPCA", accessedOn: "2026-11-16" },
     { title: "Antifreeze Poisoning in Dogs & Cats (Ethylene Glycol Poisoning)", url: "https://www.petpoisonhelpline.com/uncategorized/antifreeze-poisoning-in-dogs-cats-ethylene-glycol-poisoning/", publisher: "Pet Poison Helpline", accessedOn: "2026-11-16" },
   ],
   research: {

@@ -23,20 +23,24 @@ export interface HostQuestionsResult {
   message: string;
 }
 
+const countWord = ["no", "one", "two", "three", "four"];
+const numWord = (n: number) => countWord[n] ?? String(n);
+
 const sizeWord = { small: "small", medium: "medium-sized", large: "large", giant: "giant-breed" } as const;
 
 export function buildHostQuestions(p: DogProfile, stayName = ""): HostQuestionsResult {
   const q: string[] = [];
   const photos: string[] = [];
   const many = p.dogs > 1;
-  const them = many ? "them" : (p.dogName.trim() || "my dog");
+  const name = p.dogName.trim();
+  const them = many ? "the dogs" : (name || "my dog");
 
   // Always ask
   q.push(`Is the pet fee charged per stay, per night or per dog, and is any part of it refundable?`);
   q.push(many
-    ? `Are ${p.dogs} dogs allowed, and is there a combined weight limit?`
+    ? `Are ${p.dogs} dogs allowed, and is there a combined weight limit? The largest of our dogs is ${sizeWord[p.size]}.`
     : `Is there a weight or size limit? My dog is ${sizeWord[p.size]}.`);
-  if (p.breed.trim()) q.push(`Are there any breed restrictions (for example from your insurance or HOA)? My dog is a ${p.breed.trim()}.`);
+  if (p.breed.trim()) q.push(`Are there any breed restrictions (for example from your insurance or HOA)? ${many ? "Our dogs include a" : "My dog is a"} ${p.breed.trim()}.`);
   else q.push(`Are there any breed restrictions, for example from your insurance or HOA?`);
 
   if (p.needs.fencedYard || p.needs.jumper || p.needs.digger) {
@@ -74,7 +78,7 @@ export function buildHostQuestions(p: DogProfile, stayName = ""): HostQuestionsR
 
   const greeting = stayName.trim() ? `Hi! We're interested in ${stayName.trim()}` : "Hi! We're interested in your place";
   const dogLine = many
-    ? `and would be traveling with ${p.dogs} dogs.`
+    ? `and would be traveling with ${numWord(p.dogs)} dogs${name ? `, including ${name}` : ""}. The largest is ${sizeWord[p.size]}${p.breed.trim() ? ` and our dogs include a ${p.breed.trim()}` : ""}.`
     : `and would be traveling with ${p.dogName.trim() || "our dog"}, a ${sizeWord[p.size]} ${p.breed.trim() || "dog"}.`;
   const photoLine = photos.length ? `\n\nIf it's easy, could you also send photos of:\n${photos.map((x) => `- ${x}`).join("\n")}` : "";
   const message = `${greeting} ${dogLine} Before booking, could you help with a few questions?\n\n${q.map((x, i) => `${i + 1}. ${x}`).join("\n")}${photoLine}\n\nThank you, we really appreciate it!`;

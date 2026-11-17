@@ -3,9 +3,9 @@ import type { Guide } from "../types";
 export const guide: Guide = {
   slug: "dog-id-tags-and-gps-trackers-for-travel-guide",
   title: "Dog ID Tags, Microchips and GPS Trackers for Travel",
-  seoTitle: "Dog ID Tags, Microchips and GPS Trackers for Travel",
+  seoTitle: "Dog GPS Tracker vs Microchip vs ID Tag",
   seoDescription:
-    "What ID tags, microchip registration and GPS or Bluetooth trackers each do on the road, plus a plan if your dog goes missing somewhere unfamiliar.",
+    "A microchip does not track your dog. See what a tag, a microchip and a GPS or Bluetooth tracker each do on the road, and what to do if yours goes missing.",
   dek: "Layer a tag, a registered microchip and, if it suits your trip, a tracker, then know exactly what to do in the first hour if your dog slips away in a place you do not know.",
   category: "Gear",
   states: [],
@@ -67,11 +67,11 @@ AKC Reunite sells enrollment and collar tags, so read its pages with that in min
 
 ### Cellular GPS trackers
 
-They send location to a phone app over a cellular connection. Tractive says its tracker has a built-in SIM, like a phone, with mobile network fees covered by a subscription. [[7]](https://tractive.com/en/pd/gps-tracker-dog) Fi's app page describes GPS and LTE tracking with live updates. [[9]](https://tryfi.com/theapp)
+They send location to a phone app over a cellular connection. Tractive says its tracker has a built-in SIM, like a phone, with mobile network fees covered by a subscription. [[7]](https://tractive.com/en/pd/gps-tracker-dog) Fi's app page describes GPS and LTE tracking with live updates. [[9]](https://fitracking.com/theapp)
 
 - **Subscription.** Plans and inclusions change, so check current terms before you buy.
 - **Coverage.** Tractive says its trackers connect where there is 2G and/or LTE (CatM1) coverage from one of its 500+ partners, in 175+ countries. [[7]](https://tractive.com/en/pd/gps-tracker-dog) A remote trailhead or campground may be a dead zone, so use the maker's coverage tool for your route.
-- **Battery.** Figures depend on settings. Tractive lists up to 6 days for the DOG 6 without Power Saving Zones and up to 2 weeks with them. [[7]](https://tractive.com/en/pd/gps-tracker-dog) Fi lists up to 3 months. [[8]](https://tryfi.com/collar) An uncharged tracker finds nothing.
+- **Battery.** Figures depend on settings. Tractive lists up to 6 days for the DOG 6 without Power Saving Zones and up to 2 weeks with them. [[7]](https://tractive.com/en/pd/gps-tracker-dog) Fi lists up to 3 months. [[8]](https://fitracking.com/collar) An uncharged tracker finds nothing.
 - **Size.** Tractive lists the DOG 6 for dogs above 8.8 lbs and the DOG 6 XL for dogs above 44.1 lbs. [[7]](https://tractive.com/en/pd/gps-tracker-dog)
 - **It must stay on.** Check the attachment daily.
 
@@ -100,7 +100,7 @@ Some links are affiliate links, marked as sponsored, with a notice at the top of
 
 ## Notes on the picks
 
-The two AKC Reunite items put an ID number and helpline where a finder can read it, but tie to an AKC Reunite record; any durable, legible tag with a mobile number does the visible job. [[6]](https://www.akcreunite.org/idtags/) Tractive's page states weight ranges, collar widths, battery, connectivity and subscription plainly. [[7]](https://tractive.com/en/pd/gps-tracker-dog) Fi's collar page lists a long battery life, [[8]](https://tryfi.com/collar) but not carrier, coverage or subscription terms, and its membership page describes the collar as part of a membership, so confirm both before you buy. [[11]](https://tryfi.com/membership)
+The two AKC Reunite items put an ID number and helpline where a finder can read it, but tie to an AKC Reunite record; any durable, legible tag with a mobile number does the visible job. [[6]](https://www.akcreunite.org/idtags/) Tractive's page states weight ranges, collar widths, battery, connectivity and subscription plainly. [[7]](https://tractive.com/en/pd/gps-tracker-dog) Fi's collar page lists a long battery life, [[8]](https://fitracking.com/collar) but not carrier, coverage or subscription terms, and its membership page describes the collar as part of a membership, so confirm both before you buy. [[11]](https://fitracking.com/membership)
 
 ## If your dog goes missing in an unfamiliar place
 
@@ -278,13 +278,13 @@ Heading to a cabin? See our [cabin packing list](/guides/dog-friendly-cabin-pack
     },
     {
       title: "GPS Dog Collar with Health & Activity Tracking",
-      url: "https://tryfi.com/collar",
+      url: "https://fitracking.com/collar",
       publisher: "Fi",
       accessedOn: "2026-11-16",
     },
     {
       title: "The Fi App: Live GPS Tracking, Sleep and Activity",
-      url: "https://tryfi.com/theapp",
+      url: "https://fitracking.com/theapp",
       publisher: "Fi",
       accessedOn: "2026-11-16",
     },
@@ -296,7 +296,7 @@ Heading to a cabin? See our [cabin packing list](/guides/dog-friendly-cabin-pack
     },
     {
       title: "Membership and Community",
-      url: "https://tryfi.com/membership",
+      url: "https://fitracking.com/membership",
       publisher: "Fi",
       accessedOn: "2026-11-16",
     },

@@ -1,7 +1,7 @@
 ---
 title: How Pet Fees Actually Work at Vacation Rentals
-seoTitle: How Vacation Rental Pet Fees Actually Work
-seoDescription: Understand per-night, per-stay, and per-dog pet fees, deposits, cleaning charges, Airbnb and Vrbo pricing, and service-animal fee protections.
+seoTitle: "Vacation Rental Pet Fees: $80 or $160?"
+seoDescription: "Same two dogs, same four nights: a pet fee can total $80 or $160 depending on wording. See the four fee structures and how deposits and holds differ."
 dek: Decode the fee wording, separate real costs from refundable money, and compare the total for your actual trip.
 category: Planning
 states: []

@@ -2,7 +2,7 @@ import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { getGuide, isPublic } from "@/content/guides";
 import { guideHero } from "@/lib/images";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
-import { Markdown } from "@/components/site/Markdown";
+import { Markdown, articleHeadings } from "@/components/site/Markdown";
 import { GearPicks } from "@/components/site/GearPicks";
 import { AffiliateNotice } from "@/components/site/AffiliateNotice";
 import { GuideCard } from "@/components/site/GuideCard";
@@ -10,6 +10,8 @@ import { PreviewBadge } from "@/components/site/StatusBadge";
 import { pageHead, breadcrumbLd, jsonLd } from "@/lib/seo";
 import { site } from "@/config/site";
 import { Newsletter } from "@/components/site/Newsletter";
+import { TableOfContents } from "@/components/site/TableOfContents";
+import { ArticleActions, TrustStrip } from "@/components/site/ArticleActions";
 import { hasStays } from "@/lib/launch";
 
 const toolLabels = {
@@ -43,10 +45,12 @@ export const Route = createFileRoute("/guides/$slug")({
 function GuidePage() {
   const { guide: g } = Route.useLoaderData();
   const img = guideHero(g);
+  const headings = articleHeadings(g.body);
+  const tools = g.relatedTools.filter((t) => hasStays() || t !== "compare");
   const related = g.relatedGuides.map((s) => getGuide(s)).filter((x) => !!x).slice(0, 3);
   return (
     <article>
-      <div className="container-page pt-10">
+      <div className="container-page pt-6 sm:pt-10">
         <Breadcrumbs items={[{ label: "Home", to: "/" }, { label: "Guides", to: "/guides" }, { label: g.title }]} />
         {!isPublic(g) && (
           <div className="mt-6 rounded-lg border border-dashed border-terracotta/60 bg-accent/40 p-4 text-sm">
@@ -55,23 +59,26 @@ function GuidePage() {
             <ul className="mt-2 list-disc pl-6">{g.research.unverified.map((u) => <li key={u}>{u}</li>)}</ul>
           </div>
         )}
-        <header className="mx-auto mt-10 max-w-3xl text-center">
+        <header className="mx-auto mt-6 max-w-3xl text-center sm:mt-10">
           <p className="eyebrow">{g.category} guide</p>
           <h1 className="mt-3 text-4xl leading-tight md:text-6xl">{g.title}</h1>
-          <p className="mt-5 text-lg text-muted-foreground">{g.dek}</p>
-          <p className="mt-5 text-sm text-muted-foreground">By {g.author} · Last reviewed {g.lastReviewed} · {g.readingMinutes} min read</p>
+          <p className="mt-4 text-lg text-muted-foreground">{g.dek}</p>
+          <p className="mt-4 text-sm text-muted-foreground sm:mt-5">By {g.author} · {g.readingMinutes} min read</p>
+          <TrustStrip guide={g} />
+          <ArticleActions />
         </header>
       </div>
-      <img src={img.src} alt={img.alt} width={1600} height={1008} decoding="async" fetchPriority="high" className="mx-auto mt-10 aspect-[21/9] w-full max-w-6xl object-cover md:rounded-xl" />
-      <div className="container-page mt-12 grid gap-12 lg:grid-cols-[1fr_260px]">
-        <div className="mx-auto w-full max-w-[42rem]">
+      <img src={img.src} alt={img.alt} width={1600} height={1008} decoding="async" fetchPriority="high" className="mx-auto mt-6 aspect-[16/9] sm:mt-10 sm:aspect-[21/9] w-full max-w-6xl object-cover md:rounded-xl" />
+      <div className="container-page mt-8 grid gap-12 sm:mt-12 lg:grid-cols-[minmax(0,1fr)_260px]">
+        <div className="mx-auto w-full min-w-0 max-w-[42rem]">
           <AffiliateNotice guide={g} />
+          <TableOfContents headings={headings} variant="mobile" />
           <Markdown source={g.body} />
           {g.gear && g.gear.length > 0 && <GearPicks picks={g.gear} />}
           {g.faqs.length > 0 && (
             <section className="mt-16">
               <h2 className="text-3xl">Questions people ask</h2>
-              <div className="mt-6 divide-y divide-border border-y border-border">
+              <div className="mt-6 divide-y divide-border border-y border-border print:hidden">
                 {g.faqs.map((f) => (
                   <details key={f.q} className="group py-4">
                     <summary className="cursor-pointer list-none font-display text-lg marker:hidden">{f.q}<span className="float-right text-terracotta group-open:rotate-45 transition">+</span></summary>
@@ -79,6 +86,27 @@ function GuidePage() {
                   </details>
                 ))}
               </div>
+              {/* Closed <details> hide their answers when printing, so print gets a plain list of answers instead. */}
+              <dl className="mt-6 hidden space-y-4 print:block">
+                {g.faqs.map((f) => <div key={f.q}><dt className="font-display text-lg">{f.q}</dt><dd className="mt-1">{f.a}</dd></div>)}
+              </dl>
+            </section>
+          )}
+          {(tools.length > 0 || related.length > 0) && (
+            <section className="no-print mt-16 rounded-xl border border-border bg-card p-6 lg:hidden">
+              <h2 className="font-display text-2xl">What next?</h2>
+              {tools.length > 0 && (
+                <>
+                  <p className="mt-3 text-sm font-medium">Free tools for this</p>
+                  <ul className="mt-2 space-y-1.5 text-sm">{tools.map((t) => <li key={t}><Link to={toolLabels[t].to} className="text-primary underline">{toolLabels[t].label}</Link></li>)}</ul>
+                </>
+              )}
+              {related.length > 0 && (
+                <>
+                  <p className="mt-4 text-sm font-medium">Keep reading</p>
+                  <ul className="mt-2 space-y-1.5 text-sm">{related.map((r) => <li key={r!.slug}><Link to="/guides/$slug" params={{ slug: r!.slug }} className="text-primary underline">{r!.title}</Link></li>)}</ul>
+                </>
+              )}
             </section>
           )}
           <section className="mt-16 rounded-xl bg-muted p-6 text-sm">
@@ -90,17 +118,18 @@ function GuidePage() {
           </section>
           <Newsletter compact />
         </div>
-        <aside className="no-print space-y-6 lg:sticky lg:top-24 lg:self-start">
-          {g.relatedTools.filter((t) => hasStays() || t !== "compare").length > 0 && (
+        <aside className="no-print hidden space-y-6 lg:block lg:sticky lg:top-24 lg:self-start">
+          <TableOfContents headings={headings} variant="sidebar" />
+          {tools.length > 0 && (
             <div className="rounded-xl border border-border bg-card p-5">
               <p className="font-display text-lg">Tools for this</p>
-              <ul className="mt-3 space-y-2 text-sm">{g.relatedTools.filter((t) => hasStays() || t !== "compare").map((t) => <li key={t}><Link to={toolLabels[t].to} className="text-primary underline">{toolLabels[t].label}</Link></li>)}</ul>
+              <ul className="mt-3 space-y-2 text-sm">{tools.map((t) => <li key={t}><Link to={toolLabels[t].to} className="text-primary underline">{toolLabels[t].label}</Link></li>)}</ul>
             </div>
           )}
         </aside>
       </div>
       {related.length > 0 && (
-        <section className="container-page mt-20"><h2 className="text-3xl">Keep reading</h2><div className="mt-6 grid gap-8 md:grid-cols-3">{related.map((r) => <GuideCard key={r!.slug} guide={r!} />)}</div></section>
+        <section className="container-page mt-20 max-lg:hidden print:hidden"><h2 className="text-3xl">Keep reading</h2><div className="mt-6 grid gap-8 md:grid-cols-3">{related.map((r) => <GuideCard key={r!.slug} guide={r!} />)}</div></section>
       )}
     </article>
   );

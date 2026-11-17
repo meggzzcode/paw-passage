@@ -3,9 +3,9 @@ import type { Guide } from "../types";
 export const guide: Guide = {
   slug: "dog-friendly-rental-protection-gear-guide",
   title: "Gear That Protects Rental Furniture and Cars From Dog Hair, Mud and Accidents",
-  seoTitle: "Rental and Car Protection Gear for Dogs",
+  seoTitle: "Protect a Rental and Car From Dog Hair",
   seoDescription:
-    "Washable throws, couch covers, travel mats and back-seat covers for dog trips, plus what to ask your host first. Picks are spec-based, not tested.",
+    "Washable throws, couch covers, travel mats and back-seat covers, plus what to ask your host first. Picks are chosen on maker specs, not hands-on tests.",
   dek: "Choose washable covers, a travel bed and a car seat cover by situation, and ask the host about furniture before you pack any of it.",
   category: "Gear",
   states: [],
@@ -49,10 +49,10 @@ If your dog scratches or chews furniture, crate or supervise, talk to the host, 
 
 If the host allows your dog on a sofa or chair, this is the first piece of gear to think about.
 
-- **Fit.** A loose cover bunches and leaves gaps. Measure sofa width between the arms and seat depth, and check the maker's size table. A throw is not fitted: the Orvis Embossed Sherpa Throw is listed at 40 by 40 inches, a lap-and-seat-sized layer rather than full coverage. [[4]](https://www.orvis.com/p/embossed-sherpa-throw/28F4) Ask the host for dimensions or a photo.
+- **Fit.** A loose cover bunches and leaves gaps. Measure sofa width between the arms and seat depth, and check the maker's size table. A throw is not fitted: the Orvis Embossed Sherpa Throw is listed at 40 by 40 inches, a lap-and-seat-sized layer rather than full coverage. [[4]](https://www.orvis.com/product/embossed-sherpa-throw/28F4.html) Ask the host for dimensions or a photo.
 - **Grip.** A cover that slides under a dog protects little. Non-slip backing, wraparound flaps and tucked edges help. Check it after the dog first jumps up, and if the furniture is leather, ask whether a cover is acceptable at all.
-- **Moisture.** Read the exact wording. The Orvis page lists no waterproof or water-resistant claim, so treat it as a hair-and-dirt layer. [[4]](https://www.orvis.com/p/embossed-sherpa-throw/28F4) For a soaked dog a towel or waterproof throw is still the better first line.
-- **Washing.** Check the cycle, whether it can go in a dryer and whether it survives repeated washes. Orvis lists the care as machine wash and gives no other details, so check the label. [[4]](https://www.orvis.com/p/embossed-sherpa-throw/28F4)
+- **Moisture.** Read the exact wording. The Orvis page lists no waterproof or water-resistant claim, so treat it as a hair-and-dirt layer. [[4]](https://www.orvis.com/product/embossed-sherpa-throw/28F4.html) For a soaked dog a towel or waterproof throw is still the better first line.
+- **Washing.** Check the cycle, whether it can go in a dryer and whether it survives repeated washes. Orvis lists the care as machine wash and gives no other details, so check the label. [[4]](https://www.orvis.com/product/embossed-sherpa-throw/28F4.html)
 - **Packability.** A full fitted protector is bulky. A washable throw is easier to pack, and your own clean cotton throw or old bedsheet is a fine low-tech option, ideally one the dog already knows.
 
 ## Travel beds and mats
@@ -229,7 +229,7 @@ Add the packing items to the [trip checklist](/tools/checklist), and send your q
     },
     {
       title: "Embossed Sherpa Throw",
-      url: "https://www.orvis.com/p/embossed-sherpa-throw/28F4",
+      url: "https://www.orvis.com/product/embossed-sherpa-throw/28F4.html",
       publisher: "Orvis",
       accessedOn: "2026-11-16",
     },
@@ -290,7 +290,7 @@ Add the packing items to the [trip checklist](/tools/checklist), and send your q
           "Small sample of two vehicles and three dogs, vague water-test results, a conflicting dimension, no furniture or rental advice, and affiliate links.",
       },
       {
-        url: "https://www.orvis.com/dogs-in-the-house",
+        url: "https://www.orvis.com/dog/furniture-protectors-throws",
         title: "Dog Furniture Protectors",
         checkedOn: "2026-11-16",
         coversWell:

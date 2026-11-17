@@ -3,9 +3,9 @@ import type { Guide } from "../types";
 export const guide: Guide = {
   slug: "pet-friendly-beachfront-rentals-california",
   title: "Pet-Friendly Beachfront Rentals in California",
-  seoTitle: "Pet-Friendly Beachfront Rentals in California",
+  seoTitle: "California Beach Rentals: Dogs on the Sand?",
   seoDescription:
-    "Choose a California beach rental with verified dog access, practical host questions, coastal safety advice, and regional beach-rule comparisons.",
+    "A dog-friendly beachfront rental doesn't mean dogs are allowed on the beach. Compare leash rules, snowy-plover season and what to ask the host first.",
   dek: "Choose the beach your dog can actually use, then check whether the rental makes getting there easy.",
   category: "Destination",
   states: ["california"],
@@ -99,7 +99,7 @@ A legal dog beach is not a declaration that the water is safe.
 
 **Heat.** The ASPCA advises fresh water, shade, avoiding overexercise and keeping pets indoors in extreme heat, with particular care for flat-faced, elderly, overweight, and heart- or lung-compromised animals, and warns against lingering on hot asphalt. [[13]](https://www.aspca.org/pet-care/general-pet-care/hot-weather-safety-tips) Count the parking lot and approach, and skip a route that seems uncomfortably hot. An umbrella is not a substitute for a cool indoor retreat.
 
-**Saltwater and sand.** Bring drinking water and a bowl. The ASPCA advises rinsing dogs after swimming and not leaving pets unsupervised around a pool, and lists sand and saltwater ingestion as preventable beach hazards. [[13]](https://www.aspca.org/pet-care/general-pet-care/hot-weather-safety-tips) [[14]](https://www.aspca.org/about-us/press-releases/aspca-reveals-top-5-preventable-pet-conditions-summer) Interrupt digging, chewing sand-covered toys and repeated gulping at waves, and call a veterinarian promptly if your dog becomes ill after suspected ingestion.
+**Saltwater and sand.** Bring drinking water and a bowl. The ASPCA advises rinsing dogs after swimming and not leaving pets unsupervised around a pool. [[13]](https://www.aspca.org/pet-care/general-pet-care/hot-weather-safety-tips) A 2013 ASPCA press release lists sand and saltwater ingestion among preventable summer pet conditions. [[14]](https://www.aspca.org/about-us/press-releases/aspca-reveals-top-5-preventable-pet-conditions-summer) Interrupt digging, chewing sand-covered toys and repeated gulping at waves, and call a veterinarian promptly if your dog becomes ill after suspected ingestion.
 
 ## Host questions that are hard to misunderstand
 

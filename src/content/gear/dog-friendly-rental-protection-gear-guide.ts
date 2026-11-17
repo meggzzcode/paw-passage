@@ -17,7 +17,7 @@ export const products: Product[] = [
     ],
     specSource: {
       title: "Embossed Sherpa Throw",
-      url: "https://www.orvis.com/p/embossed-sherpa-throw/28F4",
+      url: "https://www.orvis.com/product/embossed-sherpa-throw/28F4.html",
       publisher: "Orvis",
       accessedOn: "2026-11-16",
     },

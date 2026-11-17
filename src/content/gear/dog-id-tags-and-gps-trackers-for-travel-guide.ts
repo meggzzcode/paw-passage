@@ -103,7 +103,7 @@ export const products: Product[] = [
     ],
     specSource: {
       title: "GPS Dog Collar with Health & Activity Tracking",
-      url: "https://tryfi.com/collar",
+      url: "https://fitracking.com/collar",
       publisher: "Fi",
       accessedOn: "2026-11-16",
     },

@@ -3,9 +3,9 @@ import type { Guide } from "../types";
 export const guide: Guide = {
   slug: "dog-friendly-weekend-getaways-from-atlanta",
   title: "Dog-Friendly Weekend Getaways From Atlanta",
-  seoTitle: "Dog-Friendly Weekend Getaways From Atlanta",
+  seoTitle: "Atlanta Dog Weekends: 6 Bases by Dog Type",
   seoDescription:
-    "Choose a Georgia weekend by your dog’s needs, with mountain bases, official park rules, honest driving assumptions, rental checks, and flexible itineraries.",
+    "Dahlonega, Ellijay, Blue Ridge, Helen, Red Top or Tallulah Gorge? Compare six Georgia weekends by dog type, with drive times and park rules.",
   dek: "Choose the weekend your dog can enjoy, not the longest list of places you can squeeze into two days.",
   category: "Destination",
   states: ["georgia"],
@@ -36,7 +36,7 @@ Ask what would make this weekend easy for this dog. A car-sensitive dog may need
 | Red Top Mountain State Park | A park-centered trip close to Atlanta | Is the park open, and which route fits your dog? |
 | Tallulah Gorge State Park | A rim-view outing with clear limits | Are you content to skip the bridge staircase and gorge floor? |
 
-Official tourism sources profile Dahlonega [[5]](https://www.dahlonega.org/plan/getting-here/) [[10]](https://exploregeorgia.org/city/dahlonega), Ellijay [[6]](https://exploregeorgia.org/international/featured-destination/ellijay), Helen [[7]](https://exploregeorgia.org/things-to-do/list/top-things-to-do-in-helen-georgia) and Blue Ridge [[1]](https://exploregeorgia.org/city/blue-ridge) [[2]](https://www.blueridgemountains.com/) as destinations north of Atlanta. The park dog-access details come from Georgia DNR. [[3]](https://gastateparks.org/RedTopMountain) [[4]](https://gastateparks.org/TallulahGorge/)
+Official tourism sources profile Dahlonega [[5]](https://www.dahlonega.org/plan/getting-here/) [[10]](https://exploregeorgia.org/city/dahlonega), Ellijay [[6]](https://exploregeorgia.org/international/featured-destination/ellijay), Helen [[7]](https://exploregeorgia.org/things-to-do/list/top-things-to-do-in-helen-georgia) and Blue Ridge [[1]](https://exploregeorgia.org/city/blue-ridge) [[2]](https://www.blueridgemountains.com/) as destinations north of Atlanta. The dog rules for state parks come from Georgia State Parks' general pet rule [[15]](https://gastateparks.org/ParkRules) and the Tallulah Gorge page [[4]](https://gastateparks.org/TallulahGorge/). The Red Top Mountain page [[3]](https://gastateparks.org/RedTopMountain) is cited for trail and closure details, not dog policy.
 
 ## Driving: what the published estimates tell you
 

@@ -3,9 +3,9 @@ import type { Guide } from "../types";
 export const guide: Guide = {
   slug: "vacation-rentals-that-welcome-large-dogs",
   title: "How to Find Vacation Rentals That Welcome Large Dogs",
-  seoTitle: "How to Find Vacation Rentals for Large Dogs",
+  seoTitle: "Renting With a Large Dog: 5 Checks",
   seoDescription:
-    "Find rentals that accept your large dog, decode weight and breed rules, check stairs and flooring, and get useful written approval before booking.",
+    "“Large dogs considered” is not a yes. Read weight and breed limits literally, check stairs and floors, and get written approval naming your dog's weight.",
   dek: "Look beyond the pets-allowed filter to the rules, dimensions, and daily routines that make a stay workable.",
   category: "Planning",
   states: [],

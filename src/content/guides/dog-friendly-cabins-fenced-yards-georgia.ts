@@ -3,9 +3,9 @@ import type { Guide } from "../types";
 export const guide: Guide = {
   slug: "dog-friendly-cabins-fenced-yards-georgia",
   title: "Dog-Friendly Cabins With Fenced Yards in Georgia",
-  seoTitle: "Dog-Friendly Cabins With Fenced Yards in Georgia",
+  seoTitle: "Georgia Cabin Fenced Yards: What to Check",
   seoDescription:
-    "Choose a North Georgia cabin with a genuinely enclosed yard. Check gates, mountain terrain, decks, pet rules, wildlife precautions, and emergency plans.",
+    "Not every “fenced” cabin yard is dog-safe. Check gates, slopes, decks, shared access, bear precautions and the nearest emergency vet before you book.",
   dek: "A mountain view is easy to judge from a photograph. A yard that works for your dog takes a few better questions.",
   category: "Destination",
   states: ["georgia"],

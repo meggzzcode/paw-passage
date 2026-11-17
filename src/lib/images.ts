@@ -77,3 +77,25 @@ export function stayPhoto(s: { image?: string; imageUpload?: string; name: strin
   if (!found) throw new Error(`Stay "${s.name}" uses a built-in image called "${s.image}" that does not exist.`);
   return found;
 }
+
+// 800 px phone variants (made by scripts/optimize-images.py), emitted with hashed names by Vite.
+const phoneVariants = import.meta.glob("../assets/*-800.jpg", { eager: true, query: "?url", import: "default" }) as Record<string, string>;
+
+/** URL of the 800 px-wide variant for a built-in photo, if one exists. */
+export function phoneSrcFor(key: ImageKey): string | undefined {
+  return phoneVariants[`../assets/${key}-800.jpg`];
+}
+
+/** `srcSet` string ("... 800w, ... 1600w") for a built-in photo; undefined when there is no phone variant. */
+export function srcSetFor(key: ImageKey): string | undefined {
+  const small = phoneSrcFor(key);
+  return small ? `${small} 800w, ${images[key].src} 1600w` : undefined;
+}
+
+/** Same as srcSetFor but takes a loose key string (e.g. a guide's heroImage field) and ignores unknown keys. */
+export function srcSetForKey(key: string | undefined): string | undefined {
+  return key && key in images ? srcSetFor(key as ImageKey) : undefined;
+}
+
+/** Suggested `sizes` for full-width article/hero images (page column is at most about 760 px on desktop). */
+export const HERO_SIZES = "(max-width: 800px) 100vw, 800px";

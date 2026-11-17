@@ -3,9 +3,9 @@ import type { Guide } from "../types";
 export const guide: Guide = {
   slug: "dog-car-safety-harness-and-crate-guide",
   title: "Dog Car Safety: How to Choose a Crash-Tested Harness or Secured Crate",
-  seoTitle: "Dog Car Safety: Crash-Tested Harness & Crate Guide",
+  seoTitle: "Crash-Tested Dog Harness? How to Verify It",
   seoDescription:
-    "How to choose a crash-tested dog harness or secured crate for road trips: what testing means, fit and sizing checks, anchoring, and picks by situation.",
+    "“Crash tested” is not regulated. Check a harness or crate in the Center for Pet Safety directory, match your dog's weight, and skip extension tethers.",
   dek: "What “crash-tested” does and does not prove, how to size and install a restraint, and seven criteria to check before you buy.",
   category: "Gear",
   states: [],

@@ -3,8 +3,8 @@ import type { Guide } from "../types";
 export const guide: Guide = {
   "slug": "vacation-rental-secure-fenced-yard",
   "title": "How to Find a Vacation Rental With a Truly Secure Fenced Yard",
-  "seoTitle": "How to Find a Rental With a Secure Fenced Yard",
-  "seoDescription": "Check fence continuity, gate gaps, shared access, pools, and the photos to request before booking a vacation rental with your dog.",
+  "seoTitle": "Is a Rental's Fenced Yard Really Dog-Safe?",
+  "seoDescription": "A lawn photo proves nothing. Find the weakest fence section, inspect gates and latches, and ask the host for a sketch, measured photos and a gate video.",
   "dek": "Look past the lawn photo: check the weakest boundary, the gate routine, and the evidence that matters for your dog.",
   "category": "Planning",
   "states": [],

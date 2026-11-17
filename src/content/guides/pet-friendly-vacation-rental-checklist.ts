@@ -3,8 +3,8 @@ import type { Guide } from "../types";
 export const guide: Guide = {
   "slug": "pet-friendly-vacation-rental-checklist",
   "title": "What to Check Before Booking a Pet-Friendly Vacation Rental",
-  "seoTitle": "Pet-Friendly Vacation Rental Booking Checklist",
-  "seoDescription": "Verify dog approval, fees, deposits, alone-time rules, yard safety, cancellation terms, local access, and emergency care before booking.",
+  "seoTitle": "Dog-Friendly Rental Checklist: 8 Questions",
+  "seoDescription": "Eight questions before you pay for a dog-friendly rental: written approval, total price, unattended-dog rules, cancellation terms and an emergency vet.",
   "dek": "A practical booking audit for the dogs you have, the trip you want, and the rules you can actually follow.",
   "category": "Checklist",
   "states": [],

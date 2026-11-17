@@ -13,3 +13,9 @@
 
 [context.deploy-preview.environment]
   SHOW_DRAFTS = "true"
+
+# Hashed build output never changes, so browsers and the CDN may keep it for a year.
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

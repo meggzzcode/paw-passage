@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { Printer, RotateCcw } from "lucide-react";
 import { checklist } from "@/content/checklist";
 import { ToolShell } from "@/components/site/ToolShell";
+import { parseChecklist } from "@/lib/checklist-storage";
 import { pageHead } from "@/lib/seo";
 import { Newsletter } from "@/components/site/Newsletter";
 
@@ -17,10 +18,10 @@ function ChecklistPage() {
   const [done, setDone] = useState<Record<string, boolean>>({});
   const [loaded, setLoaded] = useState(false);
   useEffect(() => {
-    try { setDone(JSON.parse(localStorage.getItem(KEY) || "{}")); } catch { /* ignore */ }
+    try { setDone(parseChecklist(localStorage.getItem(KEY))); } catch { /* storage blocked */ }
     setLoaded(true);
   }, []);
-  useEffect(() => { if (loaded) localStorage.setItem(KEY, JSON.stringify(done)); }, [done, loaded]);
+  useEffect(() => { if (loaded) { try { localStorage.setItem(KEY, JSON.stringify(done)); } catch { /* storage blocked */ } } }, [done, loaded]);
   const total = checklist.reduce((n, g) => n + g.items.length, 0);
   const count = Object.values(done).filter(Boolean).length;
   return (

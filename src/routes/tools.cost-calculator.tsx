@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
-import { Plus, Trash2 } from "lucide-react";
-import { computeCost, type CostInput } from "@/lib/cost";
+import { Plus, Trash2, Copy, Check, Printer } from "lucide-react";
+import { computeCost, blankStay, parseStay, lowestIndex, differenceText, summaryText, exampleStays, formatMoney, type StayForm } from "@/lib/cost";
 import type { FeeBasis } from "@/content/stays/types";
 import { ToolShell } from "@/components/site/ToolShell";
 import { pageHead } from "@/lib/seo";
@@ -11,28 +11,43 @@ export const Route = createFileRoute("/tools/cost-calculator")({
   component: CostPage,
 });
 
-const blank = (label: string): CostInput => ({ label, nightly: 0, nights: 3, cleaning: 0, otherFees: 0, petFee: 0, petFeeBasis: "stay", dogs: 1, taxPct: 0, deposit: 0 });
-const money = (n: number) => n.toLocaleString("en-US", { style: "currency", currency: "USD" });
+const money = formatMoney;
 
-function NumField({ label, value, onChange, step = 1, suffix }: { label: string; value: number; onChange: (n: number) => void; step?: number; suffix?: string }) {
+function NumField({ label, value, onChange, step = 1, suffix }: { label: string; value: string; onChange: (v: string) => void; step?: number; suffix?: string }) {
   return (
     <label className="block text-sm">
       <span className="text-muted-foreground">{label}{suffix ? ` (${suffix})` : ""}</span>
-      <input type="number" min={0} step={step} value={Number.isFinite(value) ? value : 0} onChange={(e) => onChange(Math.max(0, Number(e.target.value) || 0))} className="mt-1 h-10 w-full rounded-md border border-input bg-background px-3" />
+      <input type="number" inputMode="decimal" min={0} step={step} placeholder="0" value={value} onChange={(e) => onChange(e.target.value)} className="mt-1 h-10 w-full rounded-md border border-input bg-background px-3" />
     </label>
   );
 }
 
 function CostPage() {
-  const [stays, setStays] = useState<CostInput[]>([blank("Stay A"), blank("Stay B")]);
-  const upd = (i: number, patch: Partial<CostInput>) => setStays((s) => s.map((x, j) => (j === i ? { ...x, ...patch } : x)));
-  const results = stays.map(computeCost);
-  const cheapest = results.length > 1 && results.some((r) => r.total > 0) ? results.reduce((m, r, i) => (r.total < (results[m]?.total ?? Infinity) ? i : m), 0) : -1;
+  const fresh = () => [blankStay("Stay A"), blankStay("Stay B")];
+  const [stays, setStays] = useState<StayForm[]>(fresh);
+  const [isExample, setIsExample] = useState(false);
+  const [copied, setCopied] = useState(false);
+  const upd = (i: number, patch: Partial<StayForm>) => setStays((s) => s.map((x, j) => (j === i ? { ...x, ...patch } : x)));
+  const results = stays.map((s) => computeCost(parseStay(s)));
+  const cheapest = lowestIndex(stays);
+  const diff = differenceText(stays);
+  async function copySummary() {
+    try { await navigator.clipboard.writeText(summaryText(stays)); setCopied(true); setTimeout(() => setCopied(false), 2000); } catch { /* clipboard unavailable */ }
+  }
   return (
-    <ToolShell title="Pet fee & trip cost calculator" intro="Headline nightly rates hide a lot. Enter what each listing actually charges and see the real total, including pet fees that scale per dog or per night. Refundable deposits are shown separately." guides={[{ slug: "how-vacation-rental-pet-fees-work", label: "How pet fees actually work at vacation rentals" }, { slug: "traveling-with-two-dogs-accommodation-guide", label: "Traveling with two dogs" }]}>
+    <ToolShell title="Pet fee & trip cost calculator" intro="Headline nightly rates hide a lot. Enter what each listing actually charges and see the real total, including pet fees that scale per dog or per night. Refundable deposits are shown separately." guides={[{ slug: "how-vacation-rental-pet-fees-work", label: "How pet fees actually work at vacation rentals" }]} links={[{ to: "/tools/host-questions", label: "Generate the questions to send a host" }]}>
+      <div className="no-print mb-6 flex flex-wrap items-center gap-3">
+        <button type="button" onClick={() => { setStays(exampleStays()); setIsExample(true); }} className="rounded-full border border-input px-4 py-2 text-sm">Load an example</button>
+        <button type="button" onClick={() => { setStays(fresh()); setIsExample(false); }} className="rounded-full border border-input px-4 py-2 text-sm">Clear</button>
+        <button type="button" onClick={copySummary} className="inline-flex items-center gap-2 rounded-full border border-input px-4 py-2 text-sm">{copied ? <Check className="size-4" /> : <Copy className="size-4" />}{copied ? "Copied" : "Copy summary"}</button>
+        <button type="button" onClick={() => window.print()} className="inline-flex items-center gap-2 rounded-full border border-input px-4 py-2 text-sm"><Printer className="size-4" /> Print</button>
+      </div>
+      {isExample && <p className="mb-4 text-sm text-muted-foreground">Example numbers only, not real listings. Replace them with your own or press Clear.</p>}
+      {diff && <p role="status" className="mb-6 rounded-lg bg-secondary/70 p-4 font-semibold">{diff}</p>}
       <div className="grid gap-6 lg:grid-cols-3">
         {stays.map((s, i) => {
-          const r = results[i] ?? computeCost(s);
+          const r = results[i] ?? computeCost(parseStay(s));
+          const c = parseStay(s);
           return (
             <section key={i} className={`rounded-xl border bg-card p-6 shadow-card ${i === cheapest ? "border-primary ring-2 ring-primary/20" : "border-border"}`}>
               <div className="flex items-center gap-2">
@@ -56,12 +71,12 @@ function CostPage() {
               </div>
               <dl className="mt-6 space-y-1.5 border-t border-border pt-4 text-sm">
                 <div className="flex justify-between"><dt>Lodging</dt><dd>{money(r.lodging)}</dd></div>
-                <div className="flex justify-between"><dt>Cleaning + other</dt><dd>{money(s.cleaning + s.otherFees)}</dd></div>
+                <div className="flex justify-between"><dt>Cleaning + other</dt><dd>{money(c.cleaning + c.otherFees)}</dd></div>
                 <div className="flex justify-between"><dt>Pet fees</dt><dd>{money(r.pet)}</dd></div>
                 <div className="flex justify-between"><dt>Tax</dt><dd>{money(r.tax)}</dd></div>
                 <div className="flex justify-between border-t border-border pt-2 font-display text-xl"><dt>Total</dt><dd>{money(r.total)}</dd></div>
                 <div className="flex justify-between text-muted-foreground"><dt>Effective per night</dt><dd>{money(r.perNight)}</dd></div>
-                {s.deposit > 0 && <div className="flex justify-between text-muted-foreground"><dt>Up front incl. deposit</dt><dd>{money(r.upfront)}</dd></div>}
+                {c.deposit > 0 && <div className="flex justify-between text-muted-foreground"><dt>Up front incl. deposit</dt><dd>{money(r.upfront)}</dd></div>}
                 {r.pet > 0 && <p className="pt-2 text-xs text-muted-foreground">Pet fees are {r.petShare}% of this total.</p>}
               </dl>
               {i === cheapest && <p className="mt-3 text-sm font-semibold text-primary">Lowest total</p>}
@@ -69,7 +84,7 @@ function CostPage() {
           );
         })}
         {stays.length < 3 && (
-          <button type="button" onClick={() => setStays((s) => [...s, blank(`Stay ${String.fromCharCode(65 + s.length)}`)])} className="flex min-h-48 flex-col items-center justify-center gap-2 rounded-xl border-2 border-dashed border-border text-muted-foreground hover:border-primary hover:text-primary">
+          <button type="button" onClick={() => setStays((s) => [...s, blankStay(`Stay ${String.fromCharCode(65 + s.length)}`)])} className="flex min-h-48 flex-col items-center justify-center gap-2 rounded-xl border-2 border-dashed border-border text-muted-foreground hover:border-primary hover:text-primary">
             <Plus className="size-6" /> Add a stay
           </button>
         )}

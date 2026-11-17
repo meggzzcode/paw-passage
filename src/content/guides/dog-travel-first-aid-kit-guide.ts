@@ -3,9 +3,9 @@ import type { Guide } from "../types";
 export const guide: Guide = {
   slug: "dog-travel-first-aid-kit-guide",
   title: "Dog First-Aid Kit for Trips and Cabin Stays: What to Carry",
-  seoTitle: "Dog First-Aid Kit for Travel: What to Pack and Buy",
+  seoTitle: "Dog Travel First-Aid Kit: AVMA Checklist",
   seoDescription:
-    "What belongs in a dog first-aid kit for trips and cabin stays, based on AVMA guidance, plus ready-made kits and add-on items worth carrying.",
+    "A travel kit built on the AVMA checklist, plus what ready-made kits usually lack: a digital thermometer, contact numbers and your dog's records.",
   dek: "Build or buy a kit around what veterinary sources say it should hold, then check the contents against your dog and your destination.",
   category: "Gear",
   states: [],
@@ -25,7 +25,7 @@ export const guide: Guide = {
 
 ## How we built this list
 
-The core list follows the AVMA's pet first-aid brochure and kit checklist [[1]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf), cross-checked against the ASPCA's poison control page [[2]](https://www.aspca.org/pet-care/animal-poison-control) and several kit guides. [[3]](https://www.petmd.com/dog/slideshows/emergency/pet-first-aid-kit) [[4]](https://www.smalldoorvet.com/learning-center/medical/pet-first-aid-kit/) [[5]](https://www.preventivevet.com/pet-first-aid-kit) Where they disagree, we lean cautious and say so. Product details come only from each maker's page, read on 2026-11-16 and subject to change. Paws & Passage has not tested any product and gives no prices or ratings.
+The core list follows the AVMA's pet first-aid brochure and kit checklist [[1]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf), cross-checked against the ASPCA's poison control page [[2]](https://www.aspca.org/pet-care/aspca-poison-control) and several kit guides. [[3]](https://www.petmd.com/general-health/must-have-items-for-pet-first-aid-kit) [[4]](https://www.smalldoorvet.com/learning-center/medical/pet-first-aid-kit/) [[5]](https://www.preventivevet.com/how-to-make-a-pet-first-aid-kit) Where they disagree, we lean cautious and say so. Product details come only from each maker's page, read on 2026-11-16 and subject to change. Paws & Passage has not tested any product and gives no prices or ratings.
 
 ## The AVMA kit checklist
 
@@ -56,7 +56,7 @@ Many items in a family first-aid kit work for pets, and your vet may recommend m
 
 ## Poison control and emergency numbers
 
-Write these in the kit and phone: ASPCA Poison Control 888-426-4435 and Pet Poison Helpline 855-764-7661. A consultation fee may apply to either call. [[1]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf) [[2]](https://www.aspca.org/pet-care/animal-poison-control)
+Write these in the kit and phone: ASPCA Poison Control 888-426-4435 and Pet Poison Helpline 855-764-7661. A consultation fee may apply to either call. [[1]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf) [[2]](https://www.aspca.org/pet-care/aspca-poison-control)
 
 If your dog may have swallowed or touched something harmful, call your vet, a local hospital or a hotline right away. Keep the product or container for reference, and collect any vomited or chewed material in a sealed plastic bag. Do not induce vomiting unless a veterinarian or poison control tells you to. [[1]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf)
 
@@ -64,7 +64,7 @@ Cabins add easy-to-miss risks: cleaners under sinks, rodent bait in outbuildings
 
 ## What changes when you travel
 
-**Pack for the trip you are taking.** One veterinary-written guide splits its list into a home kit and a smaller kit for car trips, hiking and camping. [[5]](https://www.preventivevet.com/pet-first-aid-kit) Another suggests a larger evacuation-style kit adds travel bowls, a leash and collar, towels or a blanket, a soft muzzle, and a pill organizer with a supply of medications. [[4]](https://www.smalldoorvet.com/learning-center/medical/pet-first-aid-kit/) Plan three layers:
+**Pack for the trip you are taking.** One veterinary-written guide splits its list into a home kit and a smaller kit for car trips, hiking and camping. [[5]](https://www.preventivevet.com/how-to-make-a-pet-first-aid-kit) Another suggests a larger evacuation-style kit adds travel bowls, a leash and collar, towels or a blanket, a soft muzzle, and a pill organizer with a supply of medications. [[4]](https://www.smalldoorvet.com/learning-center/medical/pet-first-aid-kit/) Plan three layers:
 
 1. **The cabin or rental:** the full kit, where every adult can find it.
 2. **The car:** a smaller grab kit, kept somewhere that does not bake in summer or freeze in winter.
@@ -78,7 +78,7 @@ Cabins add easy-to-miss risks: cleaners under sinks, rodent bait in outbuildings
 
 ## Ready-made kit or build your own?
 
-A hybrid is often best: a ready-made kit gives you organized, often waterproof basics. One veterinary-written guide recommends buying a pre-made travel kit and supplementing it because many lack necessary items [[5]](https://www.preventivevet.com/pet-first-aid-kit), and a travel-blog guide notes a custom kit may suit a dog better. [[7]](https://puretravel.com/blog/2022/05/19/what-should-you-include-in-your-dogs-travel-first-aid-kit)
+A hybrid is often best: a ready-made kit gives you organized, often waterproof basics. One veterinary-written guide recommends buying a pre-made travel kit and supplementing it because many lack necessary items [[5]](https://www.preventivevet.com/how-to-make-a-pet-first-aid-kit), and a travel-blog guide notes a custom kit may suit a dog better. [[7]](https://puretravel.com/blog/2022/05/19/what-should-you-include-in-your-dogs-travel-first-aid-kit)
 
 ## How the ready-made kits compare
 
@@ -115,14 +115,14 @@ See also our [fenced-yard rental guide](/guides/vacation-rental-secure-fenced-ya
 
 - **A thermometer you know how to use** (ask your vet how and what readings should prompt a call).
 - **An instant cold pack and a foil emergency blanket**, both in veterinary-written lists. [[4]](https://www.smalldoorvet.com/learning-center/medical/pet-first-aid-kit/)
-- **Styptic product for nail bleeding.** Several guides list it; one notes the product it names contains benzocaine and is for mild bleeding. [[3]](https://www.petmd.com/dog/slideshows/emergency/pet-first-aid-kit) Ask your vet which product suits your dog.
+- **Styptic product for nail bleeding.** Several guides list it; one notes the product it names contains benzocaine and is for mild bleeding. [[3]](https://www.petmd.com/general-health/must-have-items-for-pet-first-aid-kit) Ask your vet which product suits your dog.
 - **A tick remover.** Ask your vet about tick removal and tick-borne illness at your destination.
 
 **Leave out unless your vet says otherwise**
 
 - Hydrogen peroxide for cleaning wounds, which the AVMA says not to use on wounds; a travel guide says vets advise against it. [[7]](https://puretravel.com/blog/2022/05/19/what-should-you-include-in-your-dogs-travel-first-aid-kit)
 - Human painkillers. [[6]](https://momgoescamping.com/dog-first-aid-kit/)
-- Antibiotic ointment you have not cleared with your vet. One guide warns triple antibiotic ointment should not be ingested by cats, because its polymyxin B can cause anaphylaxis in cats, and says not to let a cat lick the site; ask your vet what applies to your dog. [[5]](https://www.preventivevet.com/pet-first-aid-kit)
+- Antibiotic ointment you have not cleared with your vet. One guide warns triple antibiotic ointment should not be ingested by cats, because its polymyxin B can cause anaphylaxis in cats, and says not to let a cat lick the site; ask your vet what applies to your dog. [[5]](https://www.preventivevet.com/how-to-make-a-pet-first-aid-kit)
 - Anything you do not know how to use. A poorly applied bandage or splint can do more harm than good, and the AVMA says to leave the step to the vet if you are uncertain. [[1]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf)
 
 ## Learn the basics before you need them
@@ -138,7 +138,7 @@ A first-aid class taught by a veterinary professional teaches the practical part
 
 ## Keep the kit current
 
-Check the kit before every trip and replace anything used, damaged or past its expiry date. One list recommends reviewing it every six months, another every few months. [[3]](https://www.petmd.com/dog/slideshows/emergency/pet-first-aid-kit) [[4]](https://www.smalldoorvet.com/learning-center/medical/pet-first-aid-kit/)
+Check the kit before every trip and replace anything used, damaged or past its expiry date. One list recommends reviewing it every six months, another every few months. [[3]](https://www.petmd.com/general-health/must-have-items-for-pet-first-aid-kit) [[4]](https://www.smalldoorvet.com/learning-center/medical/pet-first-aid-kit/)
 
 - [ ] Vet, emergency clinic near the destination, and both poison control numbers saved and written down.
 - [ ] Medical records and medication list copied.
@@ -250,13 +250,13 @@ Add these to your [trip checklist](/tools/checklist) so the kit gets packed with
     },
     {
       title: "Animal Poison Control",
-      url: "https://www.aspca.org/pet-care/animal-poison-control",
+      url: "https://www.aspca.org/pet-care/aspca-poison-control",
       publisher: "ASPCA",
       accessedOn: "2026-11-16",
     },
     {
       title: "10 Must-Have Items for Your Pet First-Aid Kit",
-      url: "https://www.petmd.com/dog/slideshows/emergency/pet-first-aid-kit",
+      url: "https://www.petmd.com/general-health/must-have-items-for-pet-first-aid-kit",
       publisher: "PetMD",
       accessedOn: "2026-11-16",
     },
@@ -268,7 +268,7 @@ Add these to your [trip checklist](/tools/checklist) so the kit gets packed with
     },
     {
       title: "What to Put in Your Pet's First-Aid Kit and Why",
-      url: "https://www.preventivevet.com/pet-first-aid-kit",
+      url: "https://www.preventivevet.com/how-to-make-a-pet-first-aid-kit",
       publisher: "Preventive Vet",
       accessedOn: "2026-11-16",
     },
@@ -335,7 +335,7 @@ Add these to your [trip checklist](/tools/checklist) so the kit gets packed with
       "Dog owners packing for road trips, cabin stays and hikes who want a kit grounded in veterinary guidance rather than a generic product roundup.",
     competitors: [
       {
-        url: "https://www.petmd.com/dog/slideshows/emergency/pet-first-aid-kit",
+        url: "https://www.petmd.com/general-health/must-have-items-for-pet-first-aid-kit",
         title: "10 Must-Have Items for Your Pet First-Aid Kit",
         checkedOn: "2026-11-16",
         coversWell:
@@ -353,7 +353,7 @@ Add these to your [trip checklist](/tools/checklist) so the kit gets packed with
           "Describes building a kit only, no ready-made options; discusses diphenhydramine and hydrogen peroxide without weight-based dosing and does not address cabin stays.",
       },
       {
-        url: "https://www.preventivevet.com/pet-first-aid-kit",
+        url: "https://www.preventivevet.com/how-to-make-a-pet-first-aid-kit",
         title: "What to Put in Your Pet's First-Aid Kit and Why",
         checkedOn: "2026-11-16",
         coversWell:

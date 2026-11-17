@@ -3,9 +3,9 @@ import type { Guide } from "../types";
 export const guide: Guide = {
   slug: "traveling-with-two-dogs-accommodation-guide",
   title: "Traveling With Two Dogs: The Accommodation Planning Guide",
-  seoTitle: "Traveling With Two Dogs: Accommodation Planning",
+  seoTitle: "Two Dogs, One Rental: Fees, Limits, Layout",
   seoDescription:
-    "Plan a two-dog stay with clear fee calculations, weight-limit questions, separate feeding spaces, safe car logistics, and a practical arrival routine.",
+    "“Two dogs allowed” can hide a weight cap. Ask whether limits are per dog or combined, price the stay for two dogs, and plan separate feeding spaces.",
   dek: "Book for two individual dogs—not just a listing that happens to allow pets.",
   category: "Planning",
   states: [],

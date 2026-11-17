@@ -1,11 +1,20 @@
-import { Link } from "@tanstack/react-router";
-import { useState } from "react";
+import { Link, useRouterState } from "@tanstack/react-router";
+import { useEffect, useRef, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { nav, site } from "@/config/site";
 import { hasStays } from "@/lib/launch";
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
+  const btnRef = useRef<HTMLButtonElement>(null);
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
+  useEffect(() => { setOpen(false); }, [pathname]);
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") { setOpen(false); btnRef.current?.focus(); } };
+    document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
+  }, [open]);
   const stays = hasStays();
   const items = nav.filter((n) => stays || n.to !== "/stays");
   return (
@@ -25,12 +34,19 @@ export function SiteHeader() {
             {stays ? "Find a stay" : "Free tools"}
           </Link>
         </nav>
-        <button type="button" className="md:hidden" aria-label={open ? "Close menu" : "Open menu"} aria-expanded={open} onClick={() => setOpen((v) => !v)}>
+        <button ref={btnRef} type="button" aria-controls="mobile-nav" className="-mr-2 inline-flex size-11 items-center justify-center md:hidden" aria-label={open ? "Close menu" : "Open menu"} aria-expanded={open} onClick={() => setOpen((v) => !v)}>
           {open ? <X className="size-6" /> : <Menu className="size-6" />}
         </button>
       </div>
+      <noscript>
+        <nav className="border-t border-border bg-background md:hidden" aria-label="Main (no JavaScript)">
+          <div className="container-page flex flex-wrap gap-x-5 gap-y-1 py-2">
+            {items.map((n) => <a key={n.to} href={n.to} className="py-2 text-sm font-medium">{n.label}</a>)}
+          </div>
+        </nav>
+      </noscript>
       {open && (
-        <nav className="border-t border-border bg-background md:hidden" aria-label="Mobile">
+        <nav id="mobile-nav" className="border-t border-border bg-background md:hidden" aria-label="Mobile">
           <div className="container-page flex flex-col py-3">
             {items.map((n) => (
               <Link key={n.to} to={n.to} className="py-3 font-display text-lg" onClick={() => setOpen(false)}>{n.label}</Link>

@@ -1,4 +1,4 @@
-import { marked, type Tokens, type Renderer } from "marked";
+import { marked, type Tokens, type Token, type TokensList, type Renderer } from "marked";
 import { cn } from "@/lib/utils";
 import { getApprovedLink } from "@/content/affiliates";
 import { trackProductClick } from "@/lib/analytics";
@@ -27,6 +27,11 @@ marked.use({
       if (!url) return text;
       return `<a href="${escapeHtml(url)}"${title ? ` title="${escapeHtml(title)}"` : ""}>${text}</a>`;
     },
+    heading(this: Renderer, token: Tokens.Heading & { id?: string }) {
+      const inner = this.parser.parseInline(token.tokens);
+      const id = token.id ? ` id="${escapeHtml(token.id)}" class="scroll-mt-28"` : "";
+      return `<h${token.depth}${id}>${inner}</h${token.depth}>\n`;
+    },
     image({ href, text }: Tokens.Image) {
       const url = safeUrl(href);
       return url ? `<img src="${escapeHtml(url)}" alt="${escapeHtml(text)}" loading="lazy" />` : escapeHtml(text);
@@ -34,9 +39,38 @@ marked.use({
   },
 });
 
+const plain = (t: Token): string => ("tokens" in t && Array.isArray(t.tokens) ? (t.tokens as Token[]).map(plain).join("") : "text" in t ? String((t as { text: string }).text) : t.raw);
+export const slugify = (s: string) => s.toLowerCase().replace(/&/g, " and ").replace(/['\u2019]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "") || "section";
+
+export interface ArticleHeading { id: string; text: string; depth: 2 | 3 }
+
+/** Lexes the article and gives every ## and ### a stable id, unique within the article (repeats get -2, -3...). */
+function lexWithIds(source: string): { tokens: TokensList; headings: ArticleHeading[] } {
+  const tokens = marked.lexer(source);
+  const seen = new Map<string, number>();
+  const headings: ArticleHeading[] = [];
+  for (const t of tokens) {
+    if (t.type !== "heading" || (t.depth !== 2 && t.depth !== 3)) continue;
+    const text = plain(t).trim();
+    const base = slugify(text);
+    const n = (seen.get(base) ?? 0) + 1;
+    seen.set(base, n);
+    const id = n === 1 ? base : `${base}-${n}`;
+    (t as Tokens.Heading & { id?: string }).id = id;
+    headings.push({ id, text, depth: t.depth });
+  }
+  return { tokens, headings };
+}
+
+/** The article's ## and ### headings with the same ids the rendered article uses. */
+export const articleHeadings = (source: string): ArticleHeading[] => lexWithIds(source).headings;
+
 /** Renders Markdown for articles. Raw HTML in the text is escaped, never run. */
 export function Markdown({ source, className }: { source: string; className?: string }) {
-  const html = (marked.parse(source, { async: false }) as string)
+  const html = marked.parser(lexWithIds(source).tokens)
+    // Wide tables scroll sideways inside their own box instead of widening the page on phones.
+    .replace(/<table>/g, '<div class="table-scroll max-w-full overflow-x-auto"><table>')
+    .replace(/<\/table>/g, "</table></div>")
     .replace(/<a href="(https?:\/\/[^"]+)"/g, '<a href="$1" target="_blank" rel="noopener noreferrer"');
   const onClick = (e: import("react").MouseEvent<HTMLDivElement>) => {
     const a = (e.target as HTMLElement).closest?.("a[data-aff]") as HTMLAnchorElement | null;

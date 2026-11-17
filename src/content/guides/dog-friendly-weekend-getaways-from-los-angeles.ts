@@ -3,9 +3,9 @@ import type { Guide } from "../types";
 export const guide: Guide = {
   slug: "dog-friendly-weekend-getaways-from-los-angeles",
   title: "Dog-Friendly Weekend Getaways From Los Angeles",
-  seoTitle: "Dog-Friendly Weekend Getaways From Los Angeles",
+  seoTitle: "LA Dog Weekends: Beach, Mountain, Desert",
   seoDescription:
-    "Compare coast, mountain, and desert weekends from LA by your dog's needs, with official park rules, travel-time caveats, and practical rental checks.",
+    "Santa Barbara, Big Bear or Palm Springs? Compare weekends about 2 to 2.5 hours from LA by your dog's needs, with drive times and official dog rules.",
   dek: "Match the weekend to your dog's energy, heat tolerance, and comfort around other dogs—not just the destination photograph.",
   category: "Destination",
   states: ["california"],
@@ -61,7 +61,7 @@ Treat the modeled figures as a floor. Check a live route from your real start ad
 "Dog beach" means a designated area, not the whole shoreline.
 
 - At Arroyo Burro County Beach Park, dogs must be leashed. The county page identifies an off-leash beach area east of the creek. Keep the dog leashed through the park and confirm the boundary first. [[1]](https://santabarbaraparks.com/parks/arroyo-burro-county-beach-park/)
-- The City of Santa Barbara's Parks and Recreation page requires off-leash dogs to be under sight and voice control and says owners must keep a leash with them at all times. The county page and city handout are worded differently, so follow the stricter reading (leashed, except east of the creek) unless signs say otherwise. [[9]](https://sbparksandrec.santabarbaraca.gov/node/9272)
+- The City of Santa Barbara's Parks and Recreation page requires off-leash dogs to be under sight and voice control and says owners must keep a leash with them at all times. The county page and city handout are worded differently, so follow the stricter reading (leashed, except east of the creek) unless signs say otherwise. [[9]](https://sbparksandrec.santabarbaraca.gov/news/celebrate-national-dog-day-santa-barbara)
 
 Be cautious if your dog needs distance from other dogs: a leashed dog in an off-leash area can still be approached.
 
@@ -218,7 +218,7 @@ Use the [cost calculator](/tools/cost-calculator) to compare the whole weekend r
     },
     {
       title: "Celebrate National Dog Day in Santa Barbara",
-      url: "https://sbparksandrec.santabarbaraca.gov/node/9272",
+      url: "https://sbparksandrec.santabarbaraca.gov/news/celebrate-national-dog-day-santa-barbara",
       publisher: "City of Santa Barbara Parks and Recreation",
       accessedOn: "2026-11-16",
     },

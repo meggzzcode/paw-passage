@@ -25,6 +25,9 @@ export const Route = createFileRoute("/")({
   component: Home,
 });
 
+/** Preferred order for the homepage guides. Slugs that do not exist or are not public are skipped; the rest fill in. */
+const featuredGuideSlugs = ["how-vacation-rental-pet-fees-work", "pet-friendly-vacation-rental-checklist", "vacation-rental-secure-fenced-yard", "dog-car-safety-harness-and-crate-guide"];
+
 const styles = [
   { label: "Cabins", search: { type: "cabin" }, img: "guide-ga-cabins" },
   { label: "Beach houses", search: { beach: true }, img: "guide-ca-beach" },
@@ -46,7 +49,8 @@ function Home() {
   const [type, setType] = useState("");
   const [feature, setFeature] = useState("");
   const guides = visibleGuides();
-  const featuredGuides = guides.slice(0, 4);
+  const preferred = featuredGuideSlugs.map((slug) => guides.find((g) => g.slug === slug)).filter((g): g is (typeof guides)[number] => !!g);
+  const featuredGuides = [...preferred, ...guides.filter((g) => !preferred.includes(g))].slice(0, 4);
   const stays = visibleStays().slice(0, 3);
   const anyStays = hasStays();
 
@@ -171,23 +175,12 @@ function Home() {
         </div>
       </section>
 
+      {stays.length > 0 && (
       <section className="container-page mt-24">
         <div className="flex items-end justify-between"><div><p className="eyebrow">Stays</p><h2 className="mt-2 text-3xl md:text-4xl">Featured stays</h2></div></div>
-        {stays.length ? (
           <div className="mt-8 grid gap-6 md:grid-cols-3">{stays.map((s) => <StayCard key={s.slug} stay={s} />)}</div>
-        ) : (
-          <div className="mt-8 grid gap-6 rounded-xl border border-border bg-card p-8 md:grid-cols-[1.5fr_1fr] md:items-center">
-            <div>
-              <h3 className="text-2xl">We're verifying our first stays one by one.</h3>
-              <p className="mt-2 text-muted-foreground">Every listing we publish has its pet policy, fees and fencing confirmed with the host. Until the first ones are ready, our guides and tools will help you vet any rental yourself.</p>
-            </div>
-            <div className="flex flex-wrap gap-3 md:justify-end">
-              <Link to="/tools/host-questions" className="rounded-full bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground">Ask a host the right questions</Link>
-              <Link to="/list-your-property" className="rounded-full border border-input px-5 py-2.5 text-sm font-medium">List your property</Link>
-            </div>
-          </div>
-        )}
       </section>
+      )}
 
       {anyStays && (
       <section className="container-page mt-24">

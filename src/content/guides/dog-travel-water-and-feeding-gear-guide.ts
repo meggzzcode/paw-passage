@@ -3,9 +3,9 @@ import type { Guide } from "../types";
 export const guide: Guide = {
   slug: "dog-travel-water-and-feeding-gear-guide",
   title: "Dog Travel Water and Feeding Gear: Bowls, Bottles and Food Containers",
-  seoTitle: "Dog Travel Water & Feeding Gear Guide",
+  seoTitle: "Dog Travel Bowls, Bottles and Food Storage",
   seoDescription:
-    "How to choose collapsible dog bowls, travel water bottles and airtight food containers for road trips and cabins, with heat and wildlife-safe storage advice.",
+    "Collapsible bowls, water bottles and airtight food containers for road trips and cabins, with heat and wildlife advice. Picks are spec-based, not tested.",
   dek: "Pick bowls, water bottles and food containers by how you travel, then handle heat, water and food storage the way park and animal-welfare guidance says to.",
   category: "Gear",
   states: [],
@@ -17,25 +17,25 @@ export const guide: Guide = {
   heroImage: "gear-feeding",
   body: `## The short answer
 
-- Pack water from home or bottled water: the ASPCA says drinking water from an unfamiliar area could upset a pet's stomach. [[2]](https://www.aspca.org/node/69318)
+- Pack water from home or bottled water: the ASPCA says drinking water from an unfamiliar area could upset a pet's stomach. [[2]](https://www.aspca.org/news/traveling-pets-follow-these-expert-dos-and-donts-keep-them-safe)
 - Never leave a dog alone in a parked car. The CDC says temperatures can rise within minutes and cause death, and no bowl or bottle changes that. [[1]](https://www.cdc.gov/healthy-pets/travel/index.html)
 - Pick a bowl or bottle by capacity (how long until your next refill), packed size and how easy it is to clean.
-- "Airtight" is not "bear-resistant." In bear country, where dog food is kept matters more than the container. [[5]](https://bearwise.org/bearwise-basics/never-leave-pet-food-outdoors/)
+- "Airtight" is not "bear-resistant." In bear country, where dog food is kept matters more than the container. [[5]](https://bearwise.org/six-bearwise-basics/never-leave-pet-food-outdoors/)
 - Our five picks are chosen on maker-published specs, not tested; see "Our five picks" below.
 
 ## Hydration and heat come first
 
 Gear only helps if it gets water into a dog that needs it.
 
-**Pack water for the trip.** The CDC tells people travelling by car to pack water and food along with a bowl, leash, waste bags and the rest of a travel kit. [[1]](https://www.cdc.gov/healthy-pets/travel/index.html) The ASPCA recommends bottled water or water from home on a road trip. [[2]](https://www.aspca.org/node/69318) Plan container capacity around your longest gap between refills, not around the size of the bowl.
+**Pack water for the trip.** The CDC tells people travelling by car to pack water and food along with a bowl, leash, waste bags and the rest of a travel kit. [[1]](https://www.cdc.gov/healthy-pets/travel/index.html) The ASPCA recommends bottled water or water from home on a road trip. [[2]](https://www.aspca.org/news/traveling-pets-follow-these-expert-dos-and-donts-keep-them-safe) Plan container capacity around your longest gap between refills, not around the size of the bowl.
 
-**Heat builds fast.** The ASPCA says pets can become dehydrated quickly when it is hot or humid and should be given plenty of fresh, clean water, a shady place out of the sun, and no lingering on hot asphalt, where paw pads can burn. [[3]](https://www.aspca.org/pet-care/general-pet-care/hot-weather-safety-tips) The CDC says never leave a pet alone in a parked vehicle. [[1]](https://www.cdc.gov/healthy-pets/travel/index.html) The ASPCA adds that cracking a window is not adequate because the car heats at almost the same rate, and that flat-faced breeds such as Pugs and French Bulldogs are especially vulnerable to heat exhaustion. [[2]](https://www.aspca.org/node/69318) If your plan depends on leaving the dog in the vehicle with a bowl of water, change the plan, not the gear.
+**Heat builds fast.** The ASPCA says pets can become dehydrated quickly when it is hot or humid and should be given plenty of fresh, clean water, a shady place out of the sun, and no lingering on hot asphalt, where paw pads can burn. [[3]](https://www.aspca.org/pet-care/general-pet-care/hot-weather-safety-tips) The CDC says never leave a pet alone in a parked vehicle. [[1]](https://www.cdc.gov/healthy-pets/travel/index.html) The ASPCA adds that cracking a window is not adequate because the car heats at almost the same rate, and that flat-faced breeds such as Pugs and French Bulldogs are especially vulnerable to heat exhaustion. [[2]](https://www.aspca.org/news/traveling-pets-follow-these-expert-dos-and-donts-keep-them-safe) If your plan depends on leaving the dog in the vehicle with a bowl of water, change the plan, not the gear.
 
 **Warning signs.** The ASPCA lists heatstroke signs including excessive panting or difficulty breathing, an increased heart and respiratory rate, drooling, mild weakness, stupor or collapse. Flat-faced breeds, older pets, overweight pets and pets with heart or lung disease should stay in air-conditioned rooms as much as possible during extreme heat. [[3]](https://www.aspca.org/pet-care/general-pet-care/hot-weather-safety-tips) If you suspect heatstroke, contact a veterinarian right away. This guide is not veterinary advice; questions about your dog's water or feeding routine are for your own vet.
 
 **Lakes, pools and beaches.** The ASPCA says to bring fresh water and keep pets from drinking pool or ocean water. [[3]](https://www.aspca.org/pet-care/general-pet-care/hot-weather-safety-tips) A squeeze bottle lets you offer a drink every time your dog heads for the shoreline.
 
-**Feeding before travel.** The CDC says to feed your pet three to four hours before leaving to help prevent car sickness or vomiting. [[1]](https://www.cdc.gov/healthy-pets/travel/index.html) The ASPCA gives the same timing, says not to feed a pet in a moving vehicle, and on longer rides to offer only an occasional small snack. [[2]](https://www.aspca.org/node/69318) We do not repeat the claim some roundups make that raised bowls reduce bloat risk; our sources do not make it, so ask your vet, especially for deep-chested breeds.
+**Feeding before travel.** The CDC says to feed your pet three to four hours before leaving to help prevent car sickness or vomiting. [[1]](https://www.cdc.gov/healthy-pets/travel/index.html) The ASPCA gives the same timing, says not to feed a pet in a moving vehicle, and on longer rides to offer only an occasional small snack. [[2]](https://www.aspca.org/news/traveling-pets-follow-these-expert-dos-and-donts-keep-them-safe) We do not repeat the claim some roundups make that raised bowls reduce bloat risk; our sources do not make it, so ask your vet, especially for deep-chested breeds.
 
 ## What to look for in a collapsible bowl
 
@@ -62,9 +62,9 @@ Travel food containers keep kibble dry and fresh and keep it away from anything 
 
 "Airtight" describes a seal that limits air and moisture, which helps freshness. It does not stop a determined animal or hide the smell.
 
-BearWise notes that pet food is rich in fat and protein, which makes it extremely attractive to bears. Its rules: feed pets indoors when possible; if you must feed outdoors, feed single portions and remove food and bowls afterward; bring bowls inside at night; store pet food where bears cannot see or smell it; do not leave food out for stray animals. [[5]](https://bearwise.org/bearwise-basics/never-leave-pet-food-outdoors/)
+BearWise notes that pet food is rich in fat and protein, which makes it extremely attractive to bears. Its rules: feed pets indoors when possible; if you must feed outdoors, feed single portions and remove food and bowls afterward; bring bowls inside at night; store pet food where bears cannot see or smell it; do not leave food out for stray animals. [[5]](https://bearwise.org/six-bearwise-basics/never-leave-pet-food-outdoors/)
 
-BearWise also points out that a bear can drag pet food bags away, and says black bears can be kept out of pet food stored in a screw-top container shown on its page "or other bear-resistant storage", pointing readers to certified bear-resistant containers. An ordinary or airtight food container is not bear-resistant. Keep dog food, treats and bowls indoors, out of sight and smell, and follow the park's or host's rules. [[5]](https://bearwise.org/bearwise-basics/never-leave-pet-food-outdoors/) None of the products below claims to be bear-resistant, so treat them as freshness and organization tools.
+BearWise also points out that a bear can drag pet food bags away, and says black bears can be kept out of pet food stored in a screw-top container shown on its page "or other bear-resistant storage", pointing readers to certified bear-resistant containers. An ordinary or airtight food container is not bear-resistant. Keep dog food, treats and bowls indoors, out of sight and smell, and follow the park's or host's rules. [[5]](https://bearwise.org/six-bearwise-basics/never-leave-pet-food-outdoors/) None of the products below claims to be bear-resistant, so treat them as freshness and organization tools.
 
 ### What the National Park Service says
 
@@ -234,7 +234,7 @@ Some links on this site are affiliate links. When an article contains one, a not
     },
     {
       title: "Traveling With Pets? Follow These Expert Dos and Don'ts to Keep Them Safe",
-      url: "https://www.aspca.org/node/69318",
+      url: "https://www.aspca.org/news/traveling-pets-follow-these-expert-dos-and-donts-keep-them-safe",
       publisher: "ASPCA",
       accessedOn: "2026-11-16",
     },
@@ -252,7 +252,7 @@ Some links on this site are affiliate links. When an article contains one, a not
     },
     {
       title: "Never Leave Pet Food Outdoors",
-      url: "https://bearwise.org/bearwise-basics/never-leave-pet-food-outdoors/",
+      url: "https://bearwise.org/six-bearwise-basics/never-leave-pet-food-outdoors/",
       publisher: "BearWise",
       accessedOn: "2026-11-16",
     },
@@ -304,7 +304,7 @@ Some links on this site are affiliate links. When an article contains one, a not
           "Dated 2023, lists nine products under an '8 Best' title, relies on affiliate shopping links, and gives no veterinary, heat, water-amount or hydration advice.",
       },
       {
-        url: "https://www.cuteness.com/13730996/best-dog-food-container",
+        url: "https://www.cuteness.com/13769601/best-pet-food-storage-containers/",
         title: "Storage Containers To Keep Your Pet's Food Fresh And Secure",
         checkedOn: "2026-11-16",
         coversWell:

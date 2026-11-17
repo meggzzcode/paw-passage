@@ -2,4 +2,4 @@ links:
   - id: cowork-test
     network: Test
     url: https://example.com/test
-    approved: true
+    approved: false

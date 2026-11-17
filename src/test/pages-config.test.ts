@@ -45,6 +45,12 @@ describe("Pages CMS form matches the content rules", () => {
     expect(names(comp.fields!)).toEqual(shapeKeys(elementOf(unwrap(unwrap(guideSchema).shape.research).shape.competitors)));
   });
 
+  it("article text uses the plain Markdown editor, not the rich-text editor (the visual editor turned tick boxes into plain bullets in the live test)", () => {
+    const body = entry("guides").fields.find((x) => x.name === "body")!;
+    expect(body.type).toBe("code");
+    expect((body as { options?: { format?: string } }).options?.format).toBe("markdown");
+  });
+
   it("articles: drop-down choices equal the allowed values", () => {
     const f = (n: string) => entry("guides").fields.find((x) => x.name === n)!;
     const sh = unwrap(guideSchema).shape;

@@ -85,7 +85,7 @@ If an editor saves a half-finished draft, the build skips it and carries on. If 
 | Pages CMS itself: signing in, installing its GitHub App, the editing forms, saving | Needs your GitHub login. The form file (`.pages.yml`) was written from Pages CMS's documentation and checked by tests, but never opened in the real app. |
 | Whether Pages CMS saves straight to the main branch or can use branches / pull requests | The documentation does not say. The "Approved by" safeguard works either way. |
 | Whether a collaborator with no GitHub account can sign in to Pages CMS | Not stated in the documentation. |
-| Rich-text editor round trip: whether saving an article in Pages CMS keeps tables and the `[[1]](link)` source links intact | Must be tried once (section 6). |
+| Plain Markdown editor round trip | The visual editor was tested on 2026-11-17: it kept tables, citations, links and formatting but **turned tick-box lists into plain bullets**, so articles now use the plain Markdown editor (`docs/WRITING-IN-MARKDOWN.md`). The plain editor itself still has to be tested the same way (section 6, step 7). |
 | HTTPS certificate, DNS, domain transfer, Private Email transfer, GitHub and Netlify ownership transfer | Written from the companies' published instructions only: see `docs/DNS-AND-TRANSFER.md`. |
 | Google Analytics, the newsletter form, affiliate programs | Not set up yet. |
 

@@ -11,9 +11,9 @@ Repository: existing (`meggzzcode/paw-passage`), branch `claude/cms-poc`. `main`
 | A3 | A change made on GitHub deploys automatically, without Lovable | **Pass** | Commit `7172146` triggered a deploy by itself; live about 1 min later with an 18 s build; article showed "Last reviewed 2026-11-17" | Reported by tester; commits confirmed in GitHub history. |
 | A4 | A bad edit fails the build, live site stays up, failure email arrives | **Partly passed** | Commit `590df80`: deploy failed ("Build script returned non-zero exit code: 2") with `Content problem in content/affiliates.yml: links > 0 > url: must be a full web address / must start with https://`. Live site stayed on the last good deploy. Restored by `7b164af`. | **The email part could not be tested: email notifications are a paid (Pro) feature on Netlify's free plan.** A failed build is silent unless someone looks at the Netlify Deploys page. See the handover. |
 | B1 | Pages CMS signs in, installs, shows the four sections; plan / Pro messages recorded | Not run | | |
-| B2 | Rich-text round trip: only one word changes | Not run | | |
-| B3 | New article from the form; stays hidden as a draft | Not run | | |
-| B4 | Published without approval: still hidden | Not run | | |
+| B2 | Rich-text round trip: only one word changes | **Fail (rich-text editor)** | Commit `2f0e4f6` ("Update content/guides/cms-test-article.md (via Pages CMS)", author = the signed-in GitHub user). The word changed correctly (`ONE` to `1`). Table, both `[[1]]`/`[[2]]` citations, links, bold, italic, inline code, nested bullets, numbered list and quote all survived. **Tick-box list was damaged: `- [ ] Not done yet` / `- [x] Already done` became plain bullets.** The settings block at the top was also reformatted (indentation, quotes on dates removed, empty lists dropped): harmless. | 9 of 16 articles use tick-box lists, so the visual editor is unsafe for article text. **Fix applied:** body field changed to the plain Markdown editor (`type: code`, `format: markdown`), plus a test that keeps it that way. **To do: repeat B2 with the plain editor** (test article restored to its original text). |
+| B3 | New article from the form; stays hidden as a draft | **Partly passed** | Commit `2f5fd4e`: Pages CMS created `content/guides/cowork-test-article.md`. The title became a lowercase, hyphenated file name automatically. Empty optional fields were left out; the file is valid. Live site: article is hidden (404, not in the guides list). | Time taken and confusing fields: awaiting the tester's report. |
+| B4 | Published without approval: still hidden | **Partly passed** | Commit `7cbb01f` set Status to Published and added `approvedOn` but no approved-by name; the article is still 404 on the live site. | Fact-checking was also still unticked, so two gates held; repeat with only the approval missing if needed. |
 | B5 | Approved and published: goes live; back to draft: disappears | Not run | | |
 | B6 | New verified stay appears, filters work, unverified stays hidden | Not run | | |
 | B7 | Affiliate button appears only when the link is approved | Not run | | |
@@ -24,14 +24,14 @@ Repository: existing (`meggzzcode/paw-passage`), branch `claude/cms-poc`. `main`
 
 ## Answers to the open questions (fill in)
 
-- Which branch does Pages CMS commit to, and can `claude/cms-poc` be chosen? _(unknown)_
+- Which branch does Pages CMS commit to, and can `claude/cms-poc` be chosen? **Yes: its commits landed on `claude/cms-poc`, labelled "(via Pages CMS)", authored as the signed-in GitHub user. `main` was untouched.** (Whether it opens other branches via a picker: see the tester's screenshots.)
 - Did `main` stay at `8f50649` throughout? **Yes** (checked after Part A by the tester and independently from GitHub).
 - Decision (owner): failure alerts will NOT be set up by the seller; documented as an optional buyer upgrade.
 - Netlify free plan: email deploy-failure notifications are a Pro feature; Slack is also locked. Free options: GitHub commit status, GitHub PR comments, HTTP POST (webhook).
 - Netlify project visibility: new projects here defaulted to **Private** (visitors must sign in to Netlify), which blocks outside checks and is the wrong setting for a live public site.
 - Does the free hosted plan support email-only collaborators? _(unknown; the Pages CMS site says it is "100% free" and lists "Invite users via email, no other account needed", but this has not been tried)_
 - Does a collaborator need a GitHub account to sign in? _(unknown)_
-- Does the rich-text editor preserve tables, citations and formatting? _(unknown)_
+- Does the rich-text editor preserve tables, citations and formatting? **Partly: tables, citations, links, bold, italic, code, lists and quotes survived; tick-box lists did not.** The plain Markdown editor is now used instead (to be re-tested).
 
 ## Finding from the live run: React error #418 on Netlify's free plan (fixed)
 

@@ -126,18 +126,16 @@ content:
       - name: heroAlt
         label: Describe the top photo (for screen readers)
         type: string
-      # If the live test (docs/LIVE-TEST-RUNBOOK.md, B2) shows the visual editor changing tables or
-      # citations, replace the three lines "type: rich-text" / "options:" / "format: markdown" below with:
-      #     type: code
-      #     options:
-      #       language: markdown
-      # (the plain-text Markdown editor, which never rewrites anything). Written from the Pages CMS docs; not yet tried.
+      # The article text is edited as plain Markdown on purpose. The visual (rich-text) editor was tested live on
+      # 2026-11-17 and silently turned tick-box lists ("- [ ]" / "- [x]") into plain bullets, and 9 of the 16
+      # articles use them. A plain-text editor never rewrites what it was not asked to change.
+      # (Written from the Pages CMS docs; the "format: markdown" setting is documented for the code field.)
       - name: body
-        label: Article text
-        type: rich-text
+        label: "Article text (written in Markdown: see docs/WRITING-IN-MARKDOWN.md)"
+        type: code
         options:
           format: markdown
-        description: "Sources are linked like [[1]](https://...). Keep the numbers in the same order as the Sources list below."
+        description: "Sources are linked like [[1]](https://...). Keep the numbers in the same order as the Sources list below. Tick boxes are written - [ ] and - [x]."
       - name: faqs
         label: Questions and answers at the end
         type: object

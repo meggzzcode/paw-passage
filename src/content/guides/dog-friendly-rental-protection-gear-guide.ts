@@ -59,7 +59,7 @@ If the host allows your dog on a sofa or chair, this is the first piece of gear 
 
 A travel bed gives the dog a place that is clearly theirs. It takes hair, mud and damp, settles the dog in an unfamiliar room, and is easy to wash or shake out before checkout. Look for a non-slip base, stated care instructions, room to stretch out, a small packed size and a moisture barrier if the dog is often damp.
 
-The Kurgo Loft Wander Dog Bed is an example. The maker lists a medium at 27 by 36 by 2 inches open and 12.5 by 8 inches rolled, and a large at 36 by 48 by 3 inches open and 17 by 9.5 inches rolled, with a waterproof, nonslip bottom and a handle. Care is hand or gentle machine wash in cold water with mild detergent and no bleach, then hang dry. [[5]](https://www.kurgo.com/p/tago-bed/K81022) The page lists no weight, so check the packed size against your luggage. A bed this thin is a boundary and a surface, not an orthopedic bed.
+The Kurgo Loft Wander Dog Bed is an example. The maker lists a medium at 27 by 36 by 2 inches open and 12.5 by 8 inches rolled, and a large at 36 by 48 by 3 inches open and 17 by 9.5 inches rolled, with a waterproof, nonslip bottom and a handle. Care is hand or gentle machine wash in cold water with mild detergent and no bleach, then hang dry. [[5]](https://www.kurgo.com/p/loft-wander-dog-bed/K01560) The page lists no weight, so check the packed size against your luggage. A bed this thin is a boundary and a surface, not an orthopedic bed.
 
 A pad does not stop a dog climbing onto a sofa. Teach the spot at home and bring the same bed.
 
@@ -235,7 +235,7 @@ Add the packing items to the [trip checklist](/tools/checklist), and send your q
     },
     {
       title: "Loft Wander Dog Bed",
-      url: "https://www.kurgo.com/p/tago-bed/K81022",
+      url: "https://www.kurgo.com/p/loft-wander-dog-bed/K01560",
       publisher: "Kurgo",
       accessedOn: "2026-11-16",
     },

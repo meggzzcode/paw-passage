@@ -38,7 +38,7 @@ export const products: Product[] = [
     ],
     specSource: {
       title: "Loft Wander Dog Bed",
-      url: "https://www.kurgo.com/p/tago-bed/K81022",
+      url: "https://www.kurgo.com/p/loft-wander-dog-bed/K01560",
       publisher: "Kurgo",
       accessedOn: "2026-11-16",
     },

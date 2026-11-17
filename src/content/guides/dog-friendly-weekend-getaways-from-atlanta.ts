@@ -59,7 +59,7 @@ Route your own addresses and departure time, add your dog's stop needs, and choo
 
 ## Dahlonega: build around a suitable base
 
-Discover Dahlonega gives directions to its Historic Square, and Explore Georgia describes a downtown of restaurants, shops, galleries and historical buildings. That sets the scene; it does not mean each business admits pets. Ask each one directly. [[5]](https://www.dahlonega.org/plan/getting-here/) [[10]](https://exploregeorgia.org/city/dahlonega)
+Discover Dahlonega gives directions to its Historic Square, and Explore Georgia describes a historic downtown with shopping, dining and arts. That sets the scene; it does not mean each business admits pets. Ask each one directly. [[5]](https://www.dahlonega.org/plan/getting-here/) [[10]](https://exploregeorgia.org/city/dahlonega)
 
 Find lodging first, then choose one confirmed outing. For a dog that needs space, ask about the entrance, neighboring dogs and outdoor visibility. For a senior dog, prioritize the route from bed to toilet area over "close to town".
 
@@ -94,7 +94,7 @@ Carry water and leave time for rest. Verify the food stop as carefully as the tr
 
 ## Helen: separate the town, the park and the waterfall
 
-Explore Georgia describes Helen's Bavarian-style town center, seasonal Oktoberfest, outdoor activities and nearby Anna Ruby Falls. [[7]](https://exploregeorgia.org/things-to-do/list/top-things-to-do-in-helen-georgia) If your dog struggles with crowds, check the event calendar first.
+Explore Georgia describes Helen's Bavarian-style town center, seasonal Oktoberfest and outdoor activities, and lists Anna Ruby Falls among Helen's things to do. [[7]](https://exploregeorgia.org/things-to-do/list/top-things-to-do-in-helen-georgia) If your dog struggles with crowds, check the event calendar first.
 
 **Anna Ruby Falls** is a Forest Service recreation area. FIND Outdoors says Anna Ruby Falls and Unicoi State Park have separate entrance areas and fees, and a Georgia State Park Pass does not cover Anna Ruby Falls admission. Its pet guidance says dogs are welcome if leashed, well-behaved and under control at all times, in outdoor areas but not inside the gift shop or restrooms. The main trail is paved but has steep sections, so "paved" does not mean easy for a dog with limited mobility. The Forest Service page itself states no pet rule, and the official sources give differing operating details, so check the current FIND Outdoors page for hours, conditions and alerts. [[12]](https://www.fs.usda.gov/r08/chattahoochee-oconee/recreation/anna-ruby-falls-recreation-area) [[13]](https://gofindoutdoors.org/anna-ruby-know-before-you-go/)
 

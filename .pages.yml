@@ -162,7 +162,13 @@ content:
         type: select
         list: true
         options:
-          values: [checklist, host-questions, cost-calculator, compare]
+          values: [checklist, pet-cost-check]
+      - name: embeddedTool
+        label: Tool shown inside the article
+        type: select
+        required: false
+        options:
+          values: [pet-cost-workflow]
       - name: gear
         label: Product picks (gear articles only)
         type: object

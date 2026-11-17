@@ -9,8 +9,9 @@ import { readdirSync, readFileSync, existsSync, statSync } from "node:fs";
 import { join, basename, resolve } from "node:path";
 import { parse as parseYaml } from "yaml";
 import type { Plugin, ViteDevServer } from "vite";
-import { guideSchema, stayYamlSchema, toStay, affiliatesSchema, settingsSchema } from "../src/content/schema";
-import { guideIsPublic, stayIsPublic } from "../src/content/publish-rule";
+import { guideSchema, stayYamlSchema, toStay, placeYamlSchema, toPlace, affiliatesSchema, settingsSchema } from "../src/content/schema";
+import { guideIsPublic, stayIsPublic, placeIsPublic } from "../src/content/publish-rule";
+import { destinations } from "../src/content/destinations";
 
 const VIRTUAL = "virtual:content";
 const RESOLVED = "\0" + VIRTUAL;
@@ -189,6 +190,47 @@ export function loadContent(root: string, includeUnpublished: boolean, opts: { s
     }
   }
 
+  // Dog rules for places. Only places that are verified AND carry the official source, the exact quote and a
+  // check date are public; everything else is left out of the production code (same as unpublished stays).
+  const places: unknown[] = [];
+  const pdir = join(dir, "places");
+  if (existsSync(pdir)) {
+    const townSlugs = new Set(destinations.flatMap((d) => d.towns.map((t) => t.slug)));
+    for (const f of readdirSync(pdir).filter((n) => n.endsWith(".yml") || n.endsWith(".yaml")).sort()) {
+      const file = join("content", "places", f);
+      const raw = readYamlFile(join(pdir, f));
+      const parsed = placeYamlSchema.safeParse(raw);
+      const notLive = (raw as { status?: string })?.status !== "verified";
+      if (!parsed.success) {
+        if (notLive && skipBrokenDrafts) {
+          console.warn(`[content] ${file} is not finished yet, so it is left out for now.${formatIssues(file, parsed.error)}`);
+          continue;
+        }
+        throw new ContentError(formatIssues(file, parsed.error));
+      }
+      const slug = basename(f).replace(/\.ya?ml$/, "");
+      if (!/^[a-z0-9-]+$/.test(slug)) {
+        const msg = `\n\nContent problem in ${file}:\n  - the file name must use only lowercase letters, numbers and hyphens (rename the file, for example to "${slug.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "")}.yml")\n`;
+        if (notLive && skipBrokenDrafts) {
+          console.warn(`[content] ${file} is not live and its file name is not valid yet, so it is left out for now.${msg}`);
+          continue;
+        }
+        throw new ContentError(msg);
+      }
+      if (slugs.has(`place:${slug}`)) throw new ContentError(`\n\nTwo places share the web address "${slug}".\n`);
+      slugs.add(`place:${slug}`);
+      const p = parsed.data;
+      if (p.nearTown && !townSlugs.has(p.nearTown)) throw new ContentError(`\n\nContent problem in ${file}:\n  - "nearTown" must be the web-address name of one of our towns (${[...townSlugs].join(", ")}) or left empty\n`);
+      if (p.claimFrom && !contentGuideSlugs.has(p.claimFrom) && !codeGuides.has(p.claimFrom)) throw new ContentError(`\n\nContent problem in ${file}:\n  - "claimFrom" names an article that does not exist: "${p.claimFrom}"\n`);
+      const place = toPlace(slug, p);
+      if (place.status === "verified" && !placeIsPublic(place)) {
+        // Not an error: it simply stays unpublished until the source, the exact quote and the check date are all filled in.
+        console.warn(`[content] ${file} is set to Verified but is missing its official source address, the exact quote or the date checked, so it is not published.`);
+      }
+      if (includeUnpublished || placeIsPublic(place)) places.push(place);
+    }
+  }
+
   const afile = join(dir, "affiliates.yml");
   const aparsed = affiliatesSchema.safeParse(existsSync(afile) ? readYamlFile(afile) : {});
   if (!aparsed.success) throw new ContentError(formatIssues("content/affiliates.yml", aparsed.error));
@@ -214,7 +256,7 @@ export function loadContent(root: string, includeUnpublished: boolean, opts: { s
         },
       }));
   const links = includeUnpublished ? aparsed.data.links : aparsed.data.links.filter((l) => l.approved).map(({ notes: _notes, ...l }) => l);
-  return { guides: publicGuides, stays, affiliates: links, settings: sparsed.data, showDrafts: includeUnpublished };
+  return { guides: publicGuides, stays, places, affiliates: links, settings: sparsed.data, showDrafts: includeUnpublished };
 }
 
 export function contentPlugin(): Plugin {

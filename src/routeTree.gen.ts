@@ -25,7 +25,7 @@ import { Route as StaysIndexRouteImport } from './routes/stays.index'
 import { Route as StaysSlugRouteImport } from './routes/stays.$slug'
 import { Route as ToolsIndexRouteImport } from './routes/tools.index'
 import { Route as ToolsChecklistRouteImport } from './routes/tools.checklist'
-import { Route as ToolsCompareRouteImport } from './routes/tools.compare'
+import { Route as ToolsPetCostCheckRouteImport } from './routes/tools.pet-cost-check'
 import { Route as ToolsCostCalculatorRouteImport } from './routes/tools.cost-calculator'
 import { Route as ToolsHostQuestionsRouteImport } from './routes/tools.host-questions'
 import { Route as DestinationsStateIndexRouteImport } from './routes/destinations.$state.index'
@@ -111,9 +111,9 @@ const ToolsChecklistRoute = ToolsChecklistRouteImport.update({
   path: '/tools/checklist',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ToolsCompareRoute = ToolsCompareRouteImport.update({
-  id: '/tools/compare',
-  path: '/tools/compare',
+const ToolsPetCostCheckRoute = ToolsPetCostCheckRouteImport.update({
+  id: '/tools/pet-cost-check',
+  path: '/tools/pet-cost-check',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ToolsCostCalculatorRoute = ToolsCostCalculatorRouteImport.update({
@@ -150,7 +150,7 @@ export interface FileRoutesByFullPath {
   '/guides/$slug': typeof GuidesSlugRoute
   '/stays/$slug': typeof StaysSlugRoute
   '/tools/checklist': typeof ToolsChecklistRoute
-  '/tools/compare': typeof ToolsCompareRoute
+  '/tools/pet-cost-check': typeof ToolsPetCostCheckRoute
   '/tools/cost-calculator': typeof ToolsCostCalculatorRoute
   '/tools/host-questions': typeof ToolsHostQuestionsRoute
   '/destinations/': typeof DestinationsIndexRoute
@@ -173,7 +173,7 @@ export interface FileRoutesByTo {
   '/guides/$slug': typeof GuidesSlugRoute
   '/stays/$slug': typeof StaysSlugRoute
   '/tools/checklist': typeof ToolsChecklistRoute
-  '/tools/compare': typeof ToolsCompareRoute
+  '/tools/pet-cost-check': typeof ToolsPetCostCheckRoute
   '/tools/cost-calculator': typeof ToolsCostCalculatorRoute
   '/tools/host-questions': typeof ToolsHostQuestionsRoute
   '/destinations': typeof DestinationsIndexRoute
@@ -197,7 +197,7 @@ export interface FileRoutesById {
   '/guides/$slug': typeof GuidesSlugRoute
   '/stays/$slug': typeof StaysSlugRoute
   '/tools/checklist': typeof ToolsChecklistRoute
-  '/tools/compare': typeof ToolsCompareRoute
+  '/tools/pet-cost-check': typeof ToolsPetCostCheckRoute
   '/tools/cost-calculator': typeof ToolsCostCalculatorRoute
   '/tools/host-questions': typeof ToolsHostQuestionsRoute
   '/destinations/': typeof DestinationsIndexRoute
@@ -222,7 +222,7 @@ export interface FileRouteTypes {
     | '/guides/$slug'
     | '/stays/$slug'
     | '/tools/checklist'
-    | '/tools/compare'
+    | '/tools/pet-cost-check'
     | '/tools/cost-calculator'
     | '/tools/host-questions'
     | '/destinations/'
@@ -245,7 +245,7 @@ export interface FileRouteTypes {
     | '/guides/$slug'
     | '/stays/$slug'
     | '/tools/checklist'
-    | '/tools/compare'
+    | '/tools/pet-cost-check'
     | '/tools/cost-calculator'
     | '/tools/host-questions'
     | '/destinations'
@@ -268,7 +268,7 @@ export interface FileRouteTypes {
     | '/guides/$slug'
     | '/stays/$slug'
     | '/tools/checklist'
-    | '/tools/compare'
+    | '/tools/pet-cost-check'
     | '/tools/cost-calculator'
     | '/tools/host-questions'
     | '/destinations/'
@@ -292,7 +292,7 @@ export interface RootRouteChildren {
   GuidesSlugRoute: typeof GuidesSlugRoute
   StaysSlugRoute: typeof StaysSlugRoute
   ToolsChecklistRoute: typeof ToolsChecklistRoute
-  ToolsCompareRoute: typeof ToolsCompareRoute
+  ToolsPetCostCheckRoute: typeof ToolsPetCostCheckRoute
   ToolsCostCalculatorRoute: typeof ToolsCostCalculatorRoute
   ToolsHostQuestionsRoute: typeof ToolsHostQuestionsRoute
   DestinationsIndexRoute: typeof DestinationsIndexRoute
@@ -417,11 +417,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ToolsChecklistRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/tools/compare': {
-      id: '/tools/compare'
-      path: '/tools/compare'
-      fullPath: '/tools/compare'
-      preLoaderRoute: typeof ToolsCompareRouteImport
+    '/tools/pet-cost-check': {
+      id: '/tools/pet-cost-check'
+      path: '/tools/pet-cost-check'
+      fullPath: '/tools/pet-cost-check'
+      preLoaderRoute: typeof ToolsPetCostCheckRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/tools/cost-calculator': {
@@ -468,7 +468,7 @@ const rootRouteChildren: RootRouteChildren = {
   GuidesSlugRoute: GuidesSlugRoute,
   StaysSlugRoute: StaysSlugRoute,
   ToolsChecklistRoute: ToolsChecklistRoute,
-  ToolsCompareRoute: ToolsCompareRoute,
+  ToolsPetCostCheckRoute: ToolsPetCostCheckRoute,
   ToolsCostCalculatorRoute: ToolsCostCalculatorRoute,
   ToolsHostQuestionsRoute: ToolsHostQuestionsRoute,
   DestinationsIndexRoute: DestinationsIndexRoute,

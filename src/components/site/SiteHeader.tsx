@@ -2,7 +2,7 @@ import { Link, useRouterState } from "@tanstack/react-router";
 import { useEffect, useRef, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { nav, site } from "@/config/site";
-import { hasStays } from "@/lib/launch";
+import { hasStays, hasPlaces } from "@/lib/launch";
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
@@ -16,7 +16,8 @@ export function SiteHeader() {
     return () => document.removeEventListener("keydown", onKey);
   }, [open]);
   const stays = hasStays();
-  const items = nav.filter((n) => stays || n.to !== "/stays");
+  const places = hasPlaces();
+  const items = nav.filter((n) => (stays || n.to !== "/stays") && (places || n.to !== "/dog-rules"));
   return (
     <header className="no-print sticky top-0 z-40 border-b border-border/70 bg-background/90 backdrop-blur">
       <div className="container-page flex h-16 items-center justify-between gap-6">

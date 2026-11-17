@@ -24,3 +24,27 @@ export function guideIsPublic(g: GuideGate): boolean {
 export function stayIsPublic(s: { status: string }): boolean {
   return s.status === "verified";
 }
+
+export interface PlaceGate {
+  status: string;
+  sourceUrl?: string | null | undefined;
+  sourceQuote?: string | null | undefined;
+  lastChecked?: string | null | undefined;
+}
+
+/**
+ * A place's dog rules go live only when someone marked it Verified AND it carries the official page's
+ * address, the exact quoted sentence and the date the page was read. Anything less stays unpublished.
+ */
+export function placeIsPublic(p: PlaceGate): boolean {
+  return p.status === "verified" && !!p.sourceUrl?.trim() && !!p.sourceQuote?.trim() && !!p.lastChecked?.trim();
+}
+
+/** A verified place is flagged "needs recheck" once its last check is more than 12 months old (computed when the page is shown). */
+export function placeNeedsRecheck(p: { lastChecked?: string | null | undefined }, now: Date = new Date()): boolean {
+  if (!p.lastChecked) return true;
+  const checked = new Date(`${p.lastChecked}T00:00:00Z`);
+  if (Number.isNaN(checked.getTime())) return true;
+  const limit = new Date(Date.UTC(checked.getUTCFullYear() + 1, checked.getUTCMonth(), checked.getUTCDate()));
+  return now.getTime() > limit.getTime();
+}

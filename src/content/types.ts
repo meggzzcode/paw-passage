@@ -68,7 +68,9 @@ export interface Guide {
   /** Gear guides only: the products recommended, rendered as picks with optional affiliate buttons. */
   gear?: GearPick[];
   relatedGuides: string[]; // slugs
-  relatedTools: ("checklist" | "host-questions" | "cost-calculator" | "compare")[];
+  relatedTools: ("checklist" | "pet-cost-check")[];
+  /** An interactive tool shown inside the article, after the body and before the questions. */
+  embeddedTool?: "pet-cost-workflow";
   sources: Source[];
   research: ResearchBrief;
 }

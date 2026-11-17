@@ -38,7 +38,9 @@ export const guideSchema = z.object({
   heroAlt: optText,
   faqs: z.array(z.object({ q: nonEmpty, a: nonEmpty })).default([]),
   relatedGuides: z.array(z.string()).default([]),
-  relatedTools: z.array(z.enum(["checklist", "host-questions", "cost-calculator", "compare"])).default([]),
+  relatedTools: z.array(z.enum(["checklist", "pet-cost-check"])).default([]),
+  // An interactive tool shown inside the article, after the text. Unknown names stop the build.
+  embeddedTool: z.enum(["pet-cost-workflow"], { message: 'must be "pet-cost-workflow" (the only tool that can be shown inside an article), or left empty' }).optional(),
   gear: z
     .array(z.object({ productId: nonEmpty, bestFor: nonEmpty, whyItMadeTheList: nonEmpty, watchOuts: z.array(z.string()).default([]) }))
     .optional(),
@@ -155,3 +157,67 @@ export const settingsSchema = z.object({
   ga4MeasurementId: z.string().trim().refine((v) => v === "" || /^G-[A-Z0-9]{6,}$/.test(v), "must look like G-XXXXXXXXXX or be left empty").default(""),
 });
 export type SiteSettings = z.infer<typeof settingsSchema>;
+
+// ---- Dog rules for places (parks, trails, beaches). A place goes live only when it is verified AND
+// has the official source address, the exact quoted sentence and the date someone read the page
+// (see placeIsPublic in publish-rule.ts). ----
+export const placeKinds = ["state-park", "national-park", "national-forest", "county-park", "city-park", "beach", "trail"] as const;
+export const placeRules = ["yes", "leash", "no", "some"] as const;
+const optHttpsUrl = z
+  .string()
+  .optional()
+  .transform((v) => (v && v.trim() ? v.trim() : undefined))
+  .pipe(httpsUrl.optional());
+const optDate = z.string().optional().transform((v) => (v && v.trim() ? v.trim() : undefined)).pipe(date.optional());
+
+export const placeYamlSchema = z.object({
+  // If the Status box is ever left empty, the safe answer is "unverified" (never shown on the live site).
+  status: z.enum(["unverified", "verified"]).default("unverified"),
+  name: nonEmpty,
+  state: z.enum(["georgia", "california"]),
+  managedBy: nonEmpty,
+  kind: z.enum(placeKinds),
+  nearTown: optText,
+  dogsAllowed: z
+    .array(z.object({ area: nonEmpty, rule: z.enum(placeRules), note: optText }))
+    .default([]),
+  leash: optText,
+  fees: optText,
+  exclusions: z.array(z.string()).default([]),
+  seasonal: optText,
+  nearbyAlternative: optText,
+  conflictNote: optText,
+  sourceUrl: optHttpsUrl,
+  sourceQuote: optText,
+  sourcePageDate: optText,
+  lastChecked: optDate,
+  verifiedBy: optText,
+  claimFrom: optText,
+});
+export type PlaceYaml = z.infer<typeof placeYamlSchema>;
+
+export function toPlace(slug: string, raw: PlaceYaml) {
+  return {
+    slug,
+    status: raw.status,
+    name: raw.name,
+    state: raw.state,
+    managedBy: raw.managedBy,
+    kind: raw.kind,
+    nearTown: raw.nearTown ?? null,
+    dogsAllowed: raw.dogsAllowed.map((d) => ({ area: d.area, rule: d.rule, note: d.note ?? null })),
+    leash: raw.leash ?? null,
+    fees: raw.fees ?? null,
+    exclusions: raw.exclusions.filter((e) => e.trim()),
+    seasonal: raw.seasonal ?? null,
+    nearbyAlternative: raw.nearbyAlternative ?? null,
+    conflictNote: raw.conflictNote ?? null,
+    sourceUrl: raw.sourceUrl ?? null,
+    sourceQuote: raw.sourceQuote ?? null,
+    sourcePageDate: raw.sourcePageDate ?? null,
+    lastChecked: raw.lastChecked ?? null,
+    verifiedBy: raw.verifiedBy ?? null,
+    claimFrom: raw.claimFrom ?? null,
+  };
+}
+export type Place = ReturnType<typeof toPlace>;

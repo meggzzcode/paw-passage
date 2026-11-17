@@ -210,7 +210,7 @@ We pick products using the criteria in this guide, and we check each product's s
 
 We have not tested these products, and we do not claim they are the best available. A product can meet the criteria and still not suit your dog.
 
-This site may earn a commission if you buy through an affiliate link, at no extra cost to you. At the time this guide was published, none of the products has an active affiliate link. If that changes, any button will be marked as sponsored. Read the details on our [affiliate disclosure](/affiliate-disclosure) page.
+Some links on this site are affiliate links. When an article contains one, a notice appears at the top of the article and the link is marked as sponsored. If you buy through an affiliate link, Paws & Passage may earn a commission at no extra cost to you. A commission never changes which products we list or what we say about them. Read the full [affiliate disclosure](/affiliate-disclosure).
 
 ## Final checklist
 

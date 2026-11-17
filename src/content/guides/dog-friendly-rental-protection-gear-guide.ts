@@ -56,7 +56,7 @@ A cover does not remove your responsibility. It can reduce hair and moisture rea
 
 We chose products using criteria, from specifications rather than from using the products. For each pick we looked for a product the maker currently lists, a clear statement of size and materials, a washing instruction or a washable claim, and a design that matches a real rental or road-trip situation. We recorded the specs from the maker's own page on the date shown in each source and dropped products whose pages we could not read or confirm. The picks are specification-based; none were tested by us.
 
-Paws & Passage may earn a commission if you buy through an affiliate link on this site. No such links are active in this guide at the time of writing, and a commission never changes which products we list or what we say about them. Read the full [affiliate disclosure](/affiliate-disclosure).
+Some links on this site are affiliate links. When an article contains one, a notice appears at the top of the article and the link is marked as sponsored. If you buy through an affiliate link, Paws & Passage may earn a commission at no extra cost to you. A commission never changes which products we list or what we say about them. Read the full [affiliate disclosure](/affiliate-disclosure).
 
 ## Choosing a washable furniture cover or throw
 
@@ -219,7 +219,7 @@ For the money side, read how [pet fees actually work](/guides/how-vacation-renta
     },
     {
       q: "Do these gear picks cost extra through this site?",
-      a: "This guide lists no prices. If an affiliate link is added later, the site may earn a commission at no extra cost to you, and that does not change which products are listed. See the affiliate disclosure.",
+      a: "This guide lists no prices. Some product links may be affiliate links: if you buy through one, the site may earn a commission at no extra cost to you, and that does not change which products are listed. See the affiliate disclosure.",
     },
   ],
   gear: [

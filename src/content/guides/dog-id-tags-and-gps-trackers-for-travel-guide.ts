@@ -123,7 +123,7 @@ A tracker shows a location. It does not retrieve the dog, and a dog that is movi
 
 The picks below are chosen from criteria and from specifications on each maker's own product page. Paws & Passage has not tested, used or reviewed any of these products, and nothing here is a performance claim. The criteria are: a product the maker currently lists, a clearly stated size or weight range, a clearly stated power source and battery life where there is one, a plain statement of any subscription and coverage requirement, and fit for the situation described. Where a page does not say something, such as Fi's coverage area, we say so instead of guessing.
 
-Paws & Passage may earn a commission if you buy through an affiliate link on this site. No such links are active in this guide at the time of writing, and a commission never changes which products are listed. See our [affiliate disclosure](/affiliate-disclosure) for the details.
+Some links on this site are affiliate links. When an article contains one, a notice appears at the top of the article and the link is marked as sponsored. If you buy through an affiliate link, Paws & Passage may earn a commission at no extra cost to you. A commission never changes which products we list or what we say about them. Read the full [affiliate disclosure](/affiliate-disclosure).
 
 ## Pick by situation
 

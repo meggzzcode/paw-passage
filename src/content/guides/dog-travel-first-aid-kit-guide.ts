@@ -144,7 +144,7 @@ The Baskerville Ultra is a basket-style muzzle made of thermoplastic rubber. Its
 
 We pick products by criteria: whether the maker's own page lists the item types that the AVMA checklist and other sources describe, whether the listing is specific about contents, whether the product is a real, currently listed item, and how well it fits a particular kind of trip. We rely on maker specifications and independent standards such as the AVMA checklist. We do not tell you a kit is better because of testing, because we have not tested these products.
 
-Some links on this site may become affiliate links in future. If you buy through one, Paws & Passage may earn a commission at no extra cost to you. No affiliate link is active on this page at the time of writing, and a commission would never change what we recommend. See our [affiliate disclosure](/affiliate-disclosure) for how this works.
+Some links on this site are affiliate links. When an article contains one, a notice appears at the top of the article and the link is marked as sponsored. If you buy through an affiliate link, Paws & Passage may earn a commission at no extra cost to you. A commission never changes which products we list or what we say about them. Read the full [affiliate disclosure](/affiliate-disclosure).
 
 ## Pick by situation
 

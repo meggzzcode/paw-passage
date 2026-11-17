@@ -144,7 +144,7 @@ A property is not a good fit if reaching it requires an unsafe vehicle arrangeme
 
 Before committing, load the actual restraints or secured carriers, both dogs' equipment, and your luggage. Confirm that each dog has an appropriate place without loose cases stacked around them or supplies obstructing access.
 
-The AVMA recommends preparing for pet travel, safely restraining dogs with harnesses, tethers, or similar accessories, and never leaving pets unattended in a car. It advises talking to your veterinarian about carsickness, and cautions against tranquilizers or sedatives for travel without veterinary advice. [[5]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-travel-with-pet-2023.pdf)
+The AVMA recommends preparing for pet travel, safely restraining dogs with harnesses, tethers, or similar accessories, and never leaving pets unattended in a car. It advises talking to your veterinarian about carsickness, and cautions against tranquilizers or sedatives for travel without veterinary advice. [[5]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-travel-with-pet-2023.pdf) Not every tether is a safe choice: the Center for Pet Safety warns that extension tethers and zipline-style products increase the risk of injury, [[7]](https://centerforpetsafety.org/extension-tether-advisory/) so read our [car-safety guide](/guides/dog-car-safety-harness-and-crate-guide) before choosing restraints for two dogs.
 
 ### Work through the solo-driver problem
 
@@ -314,6 +314,12 @@ Save the trip-specific version in the [travel checklist](/tools/checklist), then
       title: "Traveling With Your Pet: Pet-Friendly Hotels",
       url: "https://vcahospitals.com/know-your-pet/traveling-with-your-pet-pet-friendly-hotels",
       publisher: "VCA Animal Hospitals",
+      accessedOn: "2026-11-16",
+    },
+    {
+      title: "Warning: Extension Tethers Put Pets and Families at Risk",
+      url: "https://centerforpetsafety.org/extension-tether-advisory/",
+      publisher: "Center for Pet Safety",
       accessedOn: "2026-11-16",
     },
   ],

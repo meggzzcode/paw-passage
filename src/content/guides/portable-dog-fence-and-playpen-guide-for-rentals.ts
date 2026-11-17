@@ -231,7 +231,7 @@ If your dog needs a fenced yard to be comfortable, search for one on purpose. Ou
 
 We choose products by published specifications and by how well they fit the problem: portability, maker-stated height and dog-size information, and whether the product avoids drilling. Nothing in this guide is based on testing, because we have not tested these products. We do not include prices, ratings or deal language, because those change and we cannot verify them.
 
-Paws & Passage may earn a commission if you buy through a link on a page like this one. No commission links appear in this guide yet, and a commission would not change what we write. Read the full explanation on our [affiliate disclosure](/affiliate-disclosure) page.
+Some links on this site are affiliate links. When an article contains one, a notice appears at the top of the article and the link is marked as sponsored. If you buy through an affiliate link, Paws & Passage may earn a commission at no extra cost to you. A commission never changes which products we list or what we say about them. Read the full [affiliate disclosure](/affiliate-disclosure).
 
 ## Final thoughts
 

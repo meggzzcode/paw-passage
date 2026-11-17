@@ -179,7 +179,7 @@ Both CDC and ASPCA recommend building up to a long trip through a series of shor
 
 ## How we choose and how this site earns money
 
-We choose products by the criteria in this guide, using maker specifications and independent standards. We have not tested any of them. Some links in gear guides may become affiliate links in future, which means Paws & Passage may earn a commission if you buy through them, at no extra cost to you. We do not accept payment for placement. Read the full [affiliate disclosure](/affiliate-disclosure).`,
+We choose products by the criteria in this guide, using maker specifications and independent standards. We have not tested any of them. Some links in gear guides are affiliate links. When an article contains one, a notice appears at the top of the article and the link is marked as sponsored. If you buy through one, Paws & Passage may earn a commission at no extra cost to you. We do not accept payment for placement. Read the full [affiliate disclosure](/affiliate-disclosure).`,
   faqs: [
     {
       q: "Is a crash-tested harness enough, or do I need a crate?",

@@ -29,7 +29,7 @@ Photos on our guides and destination pages are licensed stock photographs (Unspl
 
 ## Money
 
-We may earn commissions from some booking links, and some placements may be sponsored and labeled as such. This never changes what we report. See our [affiliate disclosure](/affiliate-disclosure).
+We may earn commissions from some booking and product links, and some placements may be sponsored and labeled as such. An article that contains affiliate links says so at the top. This never changes what we report. See our [affiliate disclosure](/affiliate-disclosure).
 
 ## Corrections
 

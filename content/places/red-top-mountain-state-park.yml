@@ -1,0 +1,37 @@
+# UNVERIFIED seed from our articles. Not public until verified against the official page.
+# To publish: someone reads the official page, pastes the exact sentence into sourceQuote, fills in lastChecked and verifiedBy,
+# corrects anything below that the page does not say, then sets status to verified. Until then this place never reaches the live site.
+# Our current claim (from the article "dog-friendly-weekend-getaways-from-atlanta"; our wording, NOT an official quote):
+#   The dog rules for state parks come from Georgia State Parks' general pet rule and the Tallulah Gorge page. The
+#   Red Top Mountain page is cited for trail and closure details, not dog policy. The Iron Hill Trail is gravel-
+#   topped, about four miles, shared by hikers and cyclists, so a dog uncomfortable around bicycles may not suit
+#   it.
+# Verifier note: Our article says this page contains NO dog policy. If so, say so: it cannot be verified from
+# this page alone and may need the general rules entry instead.
+status: unverified
+name: "Red Top Mountain State Park"
+state: georgia
+managedBy: "Georgia State Parks"
+kind: state-park
+nearTown:
+dogsAllowed:
+  - area: "Trails and park grounds (state-park general rule)"
+    rule: "leash"
+    note: "We apply the Georgia State Parks general pet rule. Our article says the Red Top Mountain page is cited for trails and closures, not dog policy."
+  - area: "Buildings, lodges, swimming areas and beaches"
+    rule: "no"
+leash: "Leash no longer than six feet (Georgia State Parks general rule)."
+fees:
+exclusions:
+  - "Buildings and lodges"
+  - "Swimming areas and beaches"
+  - "Some trails (check the park's own page)"
+seasonal:
+nearbyAlternative:
+conflictNote:
+sourceUrl: "https://gastateparks.org/RedTopMountain"
+sourceQuote:
+sourcePageDate:
+lastChecked:
+verifiedBy:
+claimFrom: dog-friendly-weekend-getaways-from-atlanta

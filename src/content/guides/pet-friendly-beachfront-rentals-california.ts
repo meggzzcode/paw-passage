@@ -89,7 +89,7 @@ These are due-diligence prompts, not legal definitions.
 | Private beach access | Does this describe the path rather than exclusive use of the beach? |
 | Enclosed patio | Is it genuinely dog-secure, or simply bounded by railings? |
 
-Ask for a continuous description: front door, gate, path, road, stairs and arrival point on the sand. For a dog you cannot carry, count the return journey, and request photos of the whole stairway, landings, surface, handrails and gaps below railings. Record access facts in the [rental comparison tool](/tools/compare); "great view" should not cancel out "unknown route."
+Ask for a continuous description: front door, gate, path, road, stairs and arrival point on the sand. For a dog you cannot carry, count the return journey, and request photos of the whole stairway, landings, surface, handrails and gaps below railings. Record access facts for each candidate in your own notes; "great view" should not cancel out "unknown route."
 
 ## Beach safety that does not depend on swimming
 
@@ -103,7 +103,7 @@ A legal dog beach is not a declaration that the water is safe.
 
 ## Host questions that are hard to misunderstand
 
-Use the [host-question tool](/tools/host-questions), then adapt this message:
+Use the [pet cost and host confirmation tool](/tools/pet-cost-check), then adapt this message:
 
 "We are bringing one dog weighing ___, with these mobility or behavior needs: ___. Please confirm approval in writing. Which exact public beach entrance do you recommend for dogs, and what are its leash, time, and seasonal restrictions? Can you send a map pin and describe every road crossing, stairway, gate, and steep section between the home and that entrance?"
 
@@ -126,7 +126,7 @@ Put these six items beside each candidate:
 5. **Containment:** outdoor boundaries are described, not merely photographed.
 6. **Real total:** pet charges and other mandatory costs are included.
 
-Use the [cost calculator](/tools/cost-calculator), the [travel checklist](/tools/checklist) and our [pet-friendly vacation-rental checklist](/guides/pet-friendly-vacation-rental-checklist). Starting from Los Angeles? Compare the travel commitment with our [weekend-getaway guide](/guides/dog-friendly-weekend-getaways-from-los-angeles).`,
+Use the [pet cost and host confirmation tool](/tools/pet-cost-check), the [travel checklist](/tools/checklist) and our [pet-friendly vacation-rental checklist](/guides/pet-friendly-vacation-rental-checklist). Starting from Los Angeles? Compare the travel commitment with our [weekend-getaway guide](/guides/dog-friendly-weekend-getaways-from-los-angeles).`,
   faqs: [
     {
       q: "Does a pet-friendly beachfront rental mean dogs can use the beach?",
@@ -155,7 +155,7 @@ Use the [cost calculator](/tools/cost-calculator), the [travel checklist](/tools
     "pet-friendly-vacation-rental-checklist",
     "how-vacation-rental-pet-fees-work",
   ],
-  relatedTools: ["checklist", "host-questions", "cost-calculator", "compare"],
+  relatedTools: ["checklist", "pet-cost-check"],
   sources: [
     {
       title: "Visiting State Parks With Your Dog",

@@ -8,7 +8,7 @@ export const Route = createFileRoute("/privacy")({
 
 ## Information you type into our tools
 
-The checklist, host question generator, cost calculator and comparison tool run entirely in your browser. What you enter is **not sent to us**. The checklist saves your ticks in your browser's local storage on your device only; you can clear it with the Reset button or your browser settings.
+The checklist and the pet cost and host confirmation tool run entirely in your browser. What you enter is **not sent to us**. The checklist saves your ticks in your browser's local storage on your device only; you can clear it with the Reset button or your browser settings.
 
 ## Analytics
 

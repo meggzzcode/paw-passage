@@ -4,7 +4,7 @@
 
 ## 1. What you are buying
 
-Paws & Passage is a dog-friendly travel website: researched articles, planning tools (a checklist, a cost calculator, a question writer) and a directory of verified places to stay. It earns money from affiliate links (a commission when a visitor books or buys through your link). It has **no database, no logins and no server you have to look after**. Everything on the site is plain files stored in GitHub.
+Paws & Passage is a dog-friendly travel website: researched articles, planning tools (a checklist and a pet cost and host confirmation tool) and a directory of verified places to stay. It earns money from affiliate links (a commission when a visitor books or buys through your link). It has **no database, no logins and no server you have to look after**. Everything on the site is plain files stored in GitHub.
 
 The plan is that you can run it day to day without a developer:
 

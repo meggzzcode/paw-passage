@@ -124,7 +124,7 @@ CDC and ASPCA recommend building up to a long trip through short drives: restrai
 - No extension tethers or zipline-style add-ons.
 - Microchip and contact details are current, [[7]](https://www.cdc.gov/healthy-pets/travel/index.html) and, as the ASPCA suggests, your dog wears a temporary travel tag with your cell phone and destination phone number. [[8]](https://www.aspca.org/pet-care/general-pet-care/travel-safety-tips)
 - Water, bowl, leash, waste bags and medications are packed. Our [cabin packing list](/guides/dog-friendly-cabin-packing-list) covers more.
-- Your destination's rules and host's pet policy are confirmed; our [host-question tool](/tools/host-questions) can help.
+- Your destination's rules and host's pet policy are confirmed; our [pet cost and host confirmation tool](/tools/pet-cost-check) can help.
 
 ## How this site earns money
 
@@ -215,7 +215,7 @@ Some links on this site are affiliate links, marked as sponsored with a notice a
     "vacation-rentals-that-welcome-large-dogs",
     "traveling-with-two-dogs-accommodation-guide",
   ],
-  relatedTools: ["checklist", "host-questions"],
+  relatedTools: ["checklist", "pet-cost-check"],
   sources: [
     {
       title: "CPS Certified Products",

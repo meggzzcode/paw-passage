@@ -1,0 +1,32 @@
+# UNVERIFIED seed from our articles. Not public until verified against the official page.
+# To publish: someone reads the official page, pastes the exact sentence into sourceQuote, fills in lastChecked and verifiedBy,
+# corrects anything below that the page does not say, then sets status to verified. Until then this place never reaches the live site.
+# Our current claim (from the article "pet-friendly-beachfront-rentals-california"; our wording, NOT an official quote):
+#   At Arroyo Burro County Beach Park, dogs must be leashed within the county park, and the visitor page describes
+#   an off-leash beach area east of the creek. (Also in dog-friendly-weekend-getaways-from-los-angeles.) Stricter-
+#   reading advice is ours, not the county's.
+status: unverified
+name: "Arroyo Burro Beach County Park"
+state: california
+managedBy: "Santa Barbara County Parks"
+kind: beach
+nearTown: santa-barbara
+dogsAllowed:
+  - area: "Within the county park"
+    rule: "leash"
+    note: "Dogs must be leashed."
+  - area: "Off-leash beach area east of the creek"
+    rule: "yes"
+    note: "The county visitor page describes an off-leash beach area east of the creek. Confirm the boundary before you unclip the leash."
+leash: "Leashed within the county park; the off-leash area is east of the creek."
+fees:
+exclusions: []
+seasonal:
+nearbyAlternative:
+conflictNote: "The county page and the City of Santa Barbara's dog-access handout (https://sbparksandrec.santabarbaraca.gov/sites/default/files/2024-08/Where%20Can%20I%20Take%20My%20Dog%20Full%20Page.pdf) are worded differently. The handout lists Arroyo Burro Beach and other beaches as off-leash locations, with dogs under sight and voice control and a leash carried at all times. The county page says dogs must be leashed in the county park, with an off-leash area east of the creek. Our article follows the stricter reading (leashed, except east of the creek) unless signs say otherwise. Locals also call the beach Hendry's."
+sourceUrl: "https://santabarbaraparks.com/parks/arroyo-burro-county-beach-park/"
+sourceQuote:
+sourcePageDate:
+lastChecked:
+verifiedBy:
+claimFrom: pet-friendly-beachfront-rentals-california

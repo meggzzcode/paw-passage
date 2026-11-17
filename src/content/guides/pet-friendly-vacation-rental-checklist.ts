@@ -65,7 +65,7 @@ Enter accurate dates, guest count and pet count before comparing, and save the f
 | Additional cleaning or damage | What process and evidence apply? | A pet fee buys permission for damage |
 | Pet care | Does the itinerary require a sitter or day care? | The cheapest rental is the cheapest trip |
 
-Use the [cost calculator](/tools/cost-calculator) to compare complete stays, and our [pet-fee explainer](/guides/how-vacation-rental-pet-fees-work) for terminology. Include refundable amounts in the cash you must have available.
+Use the [pet cost and host confirmation tool](/tools/pet-cost-check) to compare complete stays, and our [pet-fee explainer](/guides/how-vacation-rental-pet-fees-work) for terminology. Include refundable amounts in the cash you must have available.
 
 **Keep payments on-platform.** Airbnb requires mandatory fees to be disclosed before booking and generally paid on-platform, with exceptions for some hosts. Check a later request to pay a mandatory pet charge elsewhere with platform support rather than transferring automatically. [[3]](https://www.airbnb.com/help/article/2799) Resolve any quote-versus-checkout discrepancy before paying.
 
@@ -126,7 +126,7 @@ Carry medication details, records and your regular vet's contact. If mobile cove
 
 "We are considering [unit] for [dates] with [number, ages, approximate weights, and breeds or mixes]. Please confirm they are approved and share the complete pet rules and all charges. We need clarity on furniture, bedroom access, crates, unattended time, toilet areas, yard access, and any scheduled staff visits. Please also confirm the cancellation terms and any deposit or damage-protection requirement."
 
-Use the [host-question tool](/tools/host-questions) to tailor it. A clear written approval should name the relevant dogs and stay, not just repeat "we're pet-friendly." Keep service-animal questions on the accessibility-policy track, not pet permission.
+Use the [pet cost and host confirmation tool](/tools/pet-cost-check) to tailor it. A clear written approval should name the relevant dogs and stay, not just repeat "we're pet-friendly." Keep service-animal questions on the accessibility-policy track, not pet permission.
 
 | Decision | What it looks like | Next step |
 | --- | --- | --- |
@@ -135,7 +135,7 @@ Use the [host-question tool](/tools/host-questions) to tailor it. A clear writte
 | Workable compromise | No off-leash yard, but a good legal walking route | Budget the time and accept the limitation explicitly |
 | Reject | Your trip requires violating a rule or ignoring a known mismatch | Choose another stay |
 
-Use the [comparison tool](/tools/compare) for two or three candidates, and keep deal-breakers separate from preferences.
+Keep notes on two or three candidates side by side, and keep deal-breakers separate from preferences.
 
 ## Reconfirm and inspect on arrival
 
@@ -175,12 +175,7 @@ On arrival, secure the dog while you inspect exits, gates, accessible food, clea
     "traveling-with-two-dogs-accommodation-guide",
     "vacation-rentals-that-welcome-large-dogs"
   ],
-  "relatedTools": [
-    "checklist",
-    "host-questions",
-    "cost-calculator",
-    "compare"
-  ],
+  "relatedTools": ["checklist", "pet-cost-check"],
   "sources": [
     {
       "title": "About house rules",

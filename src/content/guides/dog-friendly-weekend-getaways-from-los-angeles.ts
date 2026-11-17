@@ -112,7 +112,7 @@ On the coast, check surf and beach alerts as well as air temperature. The Nation
 
 ## Ask these questions before paying
 
-Use the [host-question tool](/tools/host-questions) to get written answers:
+Use the [pet cost and host confirmation tool](/tools/pet-cost-check) to get written answers:
 
 - Are our dog's number, size, and relevant needs explicitly approved?
 - Is the yard private, and what are its fence height and ground gaps?
@@ -124,7 +124,7 @@ Use the [host-question tool](/tools/host-questions) to get written answers:
 - What is the complete price with the correct pet count and dates?
 - What is the cancellation policy if weather changes our plans?
 
-Enter the answers in the [comparison tool](/tools/compare). For two dogs, also use our [two-dog accommodation guide](/guides/traveling-with-two-dogs-accommodation-guide): approval for one dog does not answer the question for both.
+Write the answers down for each candidate. For two dogs, also use our [two-dog accommodation guide](/guides/traveling-with-two-dogs-accommodation-guide): approval for one dog does not answer the question for both.
 
 ## A two-night structure
 
@@ -132,7 +132,7 @@ Enter the answers in the [comparison tool](/tools/compare). For two dogs, also u
 - **Saturday:** the verified main outing when conditions suit; turn back before the dog is tired.
 - **Sunday:** easy morning. Inspect the yard for waste, repack medication, leave without rushing.
 
-Use the [cost calculator](/tools/cost-calculator) to compare the whole weekend rather than nightly prices, save the [departure checklist](/tools/checklist), and see our [dog-friendly cabin packing list](/guides/dog-friendly-cabin-packing-list) for a mountain stay.`,
+Use the [pet cost and host confirmation tool](/tools/pet-cost-check) to compare the whole weekend rather than nightly prices, save the [departure checklist](/tools/checklist), and see our [dog-friendly cabin packing list](/guides/dog-friendly-cabin-packing-list) for a mountain stay.`,
   faqs: [
     {
       q: "How long does it take to drive from Los Angeles to Big Bear with a dog?",
@@ -166,7 +166,7 @@ Use the [cost calculator](/tools/cost-calculator) to compare the whole weekend r
     "traveling-with-two-dogs-accommodation-guide",
     "dog-friendly-cabin-packing-list",
   ],
-  relatedTools: ["checklist", "host-questions", "cost-calculator", "compare"],
+  relatedTools: ["checklist", "pet-cost-check"],
   sources: [
     {
       title: "Arroyo Burro County Beach Park",

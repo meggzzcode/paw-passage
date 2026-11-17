@@ -40,7 +40,7 @@ const strip = (h) => h.replace(/<script[\s\S]*?<\/script>/g, " ").replace(/<styl
 const meta = (html, re) => (html.match(re) ?? [])[1];
 
 // ---------- 1. Core pages return readable HTML ----------
-const core = ["/", "/guides", "/destinations", "/stays", "/tools", "/tools/checklist", "/tools/host-questions", "/tools/cost-calculator", "/tools/compare", "/about", "/contact", "/list-your-property", "/privacy", "/terms", "/affiliate-disclosure", "/editorial-standards"];
+const core = ["/", "/guides", "/destinations", "/stays", "/tools", "/tools/checklist", "/tools/pet-cost-check", "/about", "/contact", "/list-your-property", "/privacy", "/terms", "/affiliate-disclosure", "/editorial-standards"];
 const pages = {};
 for (const p of core) {
   const r = await get(p);

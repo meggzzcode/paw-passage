@@ -29,11 +29,10 @@ relatedGuides:
   - vacation-rentals-that-welcome-large-dogs
   - pet-friendly-vacation-rental-checklist
   - vacation-rental-secure-fenced-yard
+embeddedTool: pet-cost-workflow
 relatedTools:
   - checklist
-  - host-questions
-  - cost-calculator
-  - compare
+  - pet-cost-check
 sources:
   - title: Charging pet fees
     url: https://www.airbnb.com/help/article/3623
@@ -177,7 +176,7 @@ The agreement matters more than an informal name.
 
 A hypothetical booking: accommodation $800, ordinary cleaning $120, nonrefundable pet fee $90, and a separately collected refundable deposit of $250.
 
-Before taxes and other charges, the definite expense is $1,010. If everything is collected, the initial money required is $1,260, and the eventual expense stays $1,010 if the deposit is returned. If the $250 is only a card authorization, call it a hold rather than money paid; it can still reduce the credit available for the trip. The [cost calculator](/tools/cost-calculator) helps organize charges; keep a separate note for refundable money and holds.
+Before taxes and other charges, the definite expense is $1,010. If everything is collected, the initial money required is $1,260, and the eventual expense stays $1,010 if the deposit is returned. If the $250 is only a card authorization, call it a hold rather than money paid; it can still reduce the credit available for the trip. The [pet cost and host confirmation tool](/tools/pet-cost-check) helps organize charges; keep a separate note for refundable money and holds.
 
 ## Why cleaning and pet fees may both appear
 
@@ -214,7 +213,7 @@ A no-pet-fee rental can cost more overall. A hypothetical three-night comparison
 | Pet fee | $0 | $60 |
 | Subtotal before other applicable charges | $850 | $840 |
 
-Rental B has a pet fee but is $10 cheaper at this stage; taxes, service charges, discounts and refundable amounts still need checking. Use the [comparison tool](/tools/compare) with identical dates, people and pets, and weigh cancellation terms and suitability. A $10 saving is no use if the dog is too large for the policy; see our [large-dog rental guide](/guides/vacation-rentals-that-welcome-large-dogs) or [rental checklist](/guides/pet-friendly-vacation-rental-checklist).
+Rental B has a pet fee but is $10 cheaper at this stage; taxes, service charges, discounts and refundable amounts still need checking. Compare the two with identical dates, people and pets, and weigh cancellation terms and suitability. A $10 saving is no use if the dog is too large for the policy; see our [large-dog rental guide](/guides/vacation-rentals-that-welcome-large-dogs) or [rental checklist](/guides/pet-friendly-vacation-rental-checklist).
 
 ### Find the break-even point
 
@@ -251,7 +250,7 @@ If asked to pay outside the booking system, check the platform's current payment
 
 ## Questions to send before you book
 
-Copy this into the [host-question tool](/tools/host-questions):
+Send something like this to the host, or build a message with your own numbers in the [pet cost and host confirmation tool](/tools/pet-cost-check) at the end of this guide:
 
 “We are traveling with [number] pet dog(s) for [number] nights. Please confirm the complete pet-related charge for this reservation, whether it is per stay, per night, per dog, or per dog per night, and whether it is already included in the displayed total. Please also identify any separate cleaning charge, refundable deposit, card hold, cap, or required damage product.”
 

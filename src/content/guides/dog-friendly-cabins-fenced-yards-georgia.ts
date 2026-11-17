@@ -101,7 +101,7 @@ If your dog needs distance from other dogs, ask for photos of the view through t
 
 Blue Ridge's tourism office places Blue Ridge in the North Georgia Mountains, and Explore Georgia's city pages describe Ellijay as an orchard and winery town, Helen as a Bavarian-style village and Dahlonega as a Gold Rush town in wine country. Dahlonega's visitor bureau gives an approach via GA-400; Blue Ridge's tourism office gives directions via I-75, I-575 and Highway 515. Your final cabin approach still needs its own check. [[3]](https://www.blueridgemountains.com/plan-your-trip/getting-here/) [[4]](https://exploregeorgia.org/city/ellijay) [[13]](https://exploregeorgia.org/city/helen) [[14]](https://exploregeorgia.org/city/dahlonega) [[5]](https://www.dahlonega.org/plan/getting-here/)
 
-Compare actual addresses on the car time from your departure point, the door-to-ground route for toilet breaks, shared access and neighboring animals, the confirmed receiving veterinary hospital, and the exact trail's dog rules and alerts. Use the [comparison tool](/tools/compare) to record the evidence; a less dramatic view can be a fair trade for a simpler entrance and more usable ground.
+Compare actual addresses on the car time from your departure point, the door-to-ground route for toilet breaks, shared access and neighboring animals, the confirmed receiving veterinary hospital, and the exact trail's dog rules and alerts. Record the evidence for each candidate in your own notes; a less dramatic view can be a fair trade for a simpler entrance and more usable ground.
 
 ## Nearby parks: verify the route
 
@@ -144,7 +144,7 @@ Our [cabin packing list](/guides/dog-friendly-cabin-packing-list) covers the bas
 
 "Hello. We are considering these dates with one dog weighing approximately __. Our dog __, so enclosure details matter to us. Could you confirm the shortest fence height, largest gaps, gate arrangement, and whether the driveway enters the enclosure? We would appreciate a recent continuous video from the cabin door around the entire boundary. Is the yard exclusively ours, and can anyone enter it during the stay? How many stairs lead to usable ground? Please also confirm the pet fee, furniture rules, unattended-dog rules, and any planned maintenance."
 
-For two dogs or a large dog, get approval for the actual animals. See our [large-dog accommodation guide](/guides/vacation-rentals-that-welcome-large-dogs) and [pet-fee guide](/guides/how-vacation-rental-pet-fees-work), and use the [cost calculator](/tools/cost-calculator) to compare the whole stay.
+For two dogs or a large dog, get approval for the actual animals. See our [large-dog accommodation guide](/guides/vacation-rentals-that-welcome-large-dogs) and [pet-fee guide](/guides/how-vacation-rental-pet-fees-work), and use the [pet cost and host confirmation tool](/tools/pet-cost-check) to compare the whole stay.
 
 ## Your final arrival checklist
 
@@ -191,7 +191,7 @@ For the rest of the booking, use the [vacation-rental checklist](/guides/pet-fri
     "dog-friendly-cabin-packing-list",
     "how-vacation-rental-pet-fees-work",
   ],
-  relatedTools: ["checklist", "host-questions", "cost-calculator", "compare"],
+  relatedTools: ["checklist", "pet-cost-check"],
   sources: [
     {
       title: "Finding places that allow pets",

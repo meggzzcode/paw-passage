@@ -12,10 +12,11 @@ describe("site before the first verified stay", () => {
     // Tests run in development mode, where sample stays are visible; the sitemap never includes them.
     expect(typeof hasStays()).toBe("boolean");
   });
-  it("leaves the stays directory, the compare tool and town pages out of the sitemap", () => {
+  it("leaves the stays directory and town pages out of the sitemap", () => {
     const paths = sitemapEntries().map((e) => e.path);
     expect(paths).not.toContain("/stays");
     expect(paths).not.toContain("/tools/compare");
+    expect(paths).toContain("/tools/pet-cost-check");
     expect(paths.filter((p) => /^\/destinations\/[a-z-]+\/[a-z-]+$/.test(p))).toEqual([]);
     expect(paths).toContain("/guides");
     expect(paths.some((p) => p.startsWith("/guides/"))).toBe(true);

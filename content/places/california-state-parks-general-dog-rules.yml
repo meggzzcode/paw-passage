@@ -1,0 +1,39 @@
+# UNVERIFIED seed from our articles. Not public until verified against the official page.
+# To publish: someone reads the official page, pastes the exact sentence into sourceQuote, fills in lastChecked and verifiedBy,
+# corrects anything below that the page does not say, then sets status to verified. Until then this place never reaches the live site.
+# Our current claim (from the article "pet-friendly-beachfront-rentals-california"; our wording, NOT an official quote):
+#   California State Parks warns that dogs are prohibited on most state beaches. Where permitted, the general
+#   state-park rule is a leash no longer than six feet and physical control, and individual parks list their own
+#   exceptions. A nearby city beach can have a different policy. 'State park' does not mean dogs are welcome on
+#   trails: dogs are generally not allowed on trails unless a trail is specifically designated as open to dogs on
+#   leash. (Also in dog-friendly-weekend-getaways-from-los-angeles.)
+status: unverified
+name: "California State Parks: general dog rules"
+state: california
+managedBy: "California State Parks"
+kind: state-park
+nearTown:
+dogsAllowed:
+  - area: "Most state beaches"
+    rule: "no"
+    note: "Individual parks list their own exceptions."
+  - area: "Trails"
+    rule: "some"
+    note: "Generally not allowed unless a trail is specifically designated as open to dogs on leash."
+  - area: "Where a park permits dogs"
+    rule: "leash"
+    note: "Leash of six feet or less, dog physically under your control."
+leash: "Six feet or less; the dog must be physically under your control."
+fees:
+exclusions:
+  - "Dogs are prohibited on most state beaches"
+  - "Dogs are generally not allowed on trails unless a trail is specifically designated as open to dogs on leash"
+seasonal:
+nearbyAlternative:
+conflictNote: "A nearby city beach can have a different policy from a state beach."
+sourceUrl: "https://www.parks.ca.gov/Dogs"
+sourceQuote:
+sourcePageDate:
+lastChecked:
+verifiedBy:
+claimFrom: pet-friendly-beachfront-rentals-california

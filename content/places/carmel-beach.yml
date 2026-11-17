@@ -1,0 +1,30 @@
+# UNVERIFIED seed from our articles. Not public until verified against the official page.
+# To publish: someone reads the official page, pastes the exact sentence into sourceQuote, fills in lastChecked and verifiedBy,
+# corrects anything below that the page does not say, then sets status to verified. Until then this place never reaches the live site.
+# Our current claim (from the article "pet-friendly-beachfront-rentals-california"; our wording, NOT an official quote):
+#   Carmel permits dogs on Carmel Beach under voice control (defined on the city's animal-services page,
+#   https://ci.carmel.ca.us/post/animal-services). Carmel Beach is a city beach; Carmel River State Beach is a
+#   different place under a different authority, so rules do not transfer between them. State Parks posts high-
+#   surf and other temporary closures for Carmel River State Beach (https://www.parks.ca.gov/?page_id=21284).
+status: unverified
+name: "Carmel Beach"
+state: california
+managedBy: "City of Carmel-by-the-Sea"
+kind: beach
+nearTown: monterey
+dogsAllowed:
+  - area: "Carmel Beach"
+    rule: "yes"
+    note: "Dogs are permitted under voice control. The city defines this: carry a means of leashing the dog, keep it within 25 feet, have it return within three feet on command, and keep it within three feet when other people or animals are present."
+leash: "Voice control as the city defines it; the city asks owners to leash dogs at the bottom of stairways and sand ramps when leaving."
+fees:
+exclusions: []
+seasonal:
+nearbyAlternative:
+conflictNote:
+sourceUrl: "https://ci.carmel.ca.us/post/carmel-beach"
+sourceQuote:
+sourcePageDate:
+lastChecked:
+verifiedBy:
+claimFrom: pet-friendly-beachfront-rentals-california

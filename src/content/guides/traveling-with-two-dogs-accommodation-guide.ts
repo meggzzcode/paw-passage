@@ -58,7 +58,7 @@ Unclear wording is a reason to ask, not to reject a listing. For two larger dogs
 
 "We are considering a three-night stay with two dogs: a 42-pound adult mixed breed and a 58-pound adult Labrador. Please confirm that both dogs are accepted together, whether any weight limit is individual or combined, and the complete pet charge for this stay. We also need two separate feeding areas and would like to confirm your unattended-pet and crate rules."
 
-Add accurate details about age and behavior, and do not promise perfect behavior or uninterrupted crating you cannot deliver. Keep the reply in the platform thread; if it conflicts with the listing, ask the host to clarify before paying. Our [host-question tool](/tools/host-questions) keeps the details together.
+Add accurate details about age and behavior, and do not promise perfect behavior or uninterrupted crating you cannot deliver. Keep the reply in the platform thread; if it conflicts with the listing, ask the host to clarify before paying. Our [pet cost and host confirmation tool](/tools/pet-cost-check) keeps the details together.
 
 ## Calculate the two-dog price
 
@@ -72,7 +72,7 @@ Airbnb's help page describes four fee structures: per booking, per night, per pe
 | $20 per dog per night | $20 × 2 × 3 | $120 |
 | $20 per dog per night, $100 total cap | $120 reduced to stated cap | $100 |
 
-Also ask whether the pet charge is on top of the cleaning fee, whether tax is included, and whether a refundable deposit or authorization hold applies (it still ties up your cash or credit). Compare the full total for the same dates and both dogs, not the nightly headline. Use the [cost calculator](/tools/cost-calculator) and our [pet-fee explainer](/guides/how-vacation-rental-pet-fees-work).
+Also ask whether the pet charge is on top of the cleaning fee, whether tax is included, and whether a refundable deposit or authorization hold applies (it still ties up your cash or credit). Compare the full total for the same dates and both dogs, not the nightly headline. Use the [pet cost and host confirmation tool](/tools/pet-cost-check) and our [pet-fee explainer](/guides/how-vacation-rental-pet-fees-work).
 
 ## Choose a layout with two usable zones
 
@@ -142,7 +142,7 @@ Do not book a long indoor event or restaurant meal expecting a camera to solve s
 
 ## Compare the awkward details
 
-Use the [comparison tool](/tools/compare) to score shortlisted stays on what actually affects you: both dogs accepted, weight conditions, full price, separate meal spaces, stairs and floors, the unattended routine, any yard, and a late-night toilet route.
+Score shortlisted stays on what actually affects you: both dogs accepted, weight conditions, full price, separate meal spaces, stairs and floors, the unattended routine, any yard, and a late-night toilet route.
 
 Save written confirmation, the quote and checkout total, and current photos as evidence.
 
@@ -191,7 +191,7 @@ Save the trip-specific version in the [travel checklist](/tools/checklist), then
     "pet-friendly-vacation-rental-checklist",
     "dog-friendly-cabin-packing-list",
   ],
-  relatedTools: ["checklist", "host-questions", "cost-calculator", "compare"],
+  relatedTools: ["checklist", "pet-cost-check"],
   sources: [
     {
       title: "Finding places that allow pets",

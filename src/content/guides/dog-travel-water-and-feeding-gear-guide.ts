@@ -75,7 +75,7 @@ The NPS treats a broad range of scented items, including ice chests, as food tha
 1. Keep the food container and bowls inside, in a closed room or cupboard, not on a porch or deck.
 2. Feed indoors, then pick up and rinse the bowls.
 3. Take treats and dog food out of the car overnight if local rules or the host ask you to, and keep it out of sight if told to leave it in.
-4. Ask the host what is expected; our [host-question tool](/tools/host-questions) has prompts for this. For more, see our [dog-friendly cabin packing list](/guides/dog-friendly-cabin-packing-list).
+4. Ask the host what is expected; our [pet cost and host confirmation tool](/tools/pet-cost-check) has prompts for this. For more, see our [dog-friendly cabin packing list](/guides/dog-friendly-cabin-packing-list).
 
 For a weekend, a small container or soft bag is easier to carry than a large bin; for a long trip with a large dog's full supply, a rigid container keeps food dry but takes more car space. Photograph the bag's label before you pour: lot numbers and best-by dates matter if a recall is announced.
 
@@ -224,7 +224,7 @@ Some links on this site are affiliate links. When an article contains one, a not
     "traveling-with-two-dogs-accommodation-guide",
     "vacation-rentals-that-welcome-large-dogs",
   ],
-  relatedTools: ["checklist", "host-questions"],
+  relatedTools: ["checklist", "pet-cost-check"],
   sources: [
     {
       title: "Pet Travel Safety",

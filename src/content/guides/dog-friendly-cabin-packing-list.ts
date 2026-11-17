@@ -25,7 +25,7 @@ export const guide: Guide = {
 
 ## Before packing: six questions for the host
 
-Ask through the booking platform so the answers are saved. Our [host question generator](/tools/host-questions) helps, and the [pet-friendly vacation rental checklist](/guides/pet-friendly-vacation-rental-checklist) covers wider booking checks.
+Ask through the booking platform so the answers are saved. Our [host question generator](/tools/pet-cost-check) helps, and the [pet-friendly vacation rental checklist](/guides/pet-friendly-vacation-rental-checklist) covers wider booking checks.
 
 - **Where can the dog go?** Furniture, bedroom, deck, and hot-tub-area restrictions.
 - **Can the dog stay alone?** Is crating required, and is there a time limit?
@@ -172,7 +172,7 @@ Turn this into your own list with our [before-you-book checklist](/tools/checkli
     { q: "What should I do if my dog may have swallowed antifreeze?", a: "Contact a veterinarian, emergency veterinary hospital, ASPCA Animal Poison Control at 888-426-4435, or Pet Poison Helpline at 855-764-7661 immediately. ASPCA's antifreeze guidance says to get the dog to a veterinary hospital right away, as signs can be missed early. [[9]](https://www.aspca.org/news/digging-deeper-getting-facts-dangers-antifreeze-and-your-pets) Do not induce vomiting unless a veterinary professional directs you. Keep the product label available if possible; a consultation fee may apply." },
   ],
   relatedGuides: ["dog-friendly-cabins-fenced-yards-georgia", "pet-friendly-vacation-rental-checklist", "vacation-rental-secure-fenced-yard", "traveling-with-two-dogs-accommodation-guide"],
-  relatedTools: ["checklist", "host-questions"],
+  relatedTools: ["checklist", "pet-cost-check"],
   sources: [
     { title: "Bear Safety: Storing Food", url: "https://www.nps.gov/articles/bearsafetyfood.htm", publisher: "National Park Service", accessedOn: "2026-11-16" },
     { title: "Traveling With Your Pet", url: "https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-travel-with-pet-2023.pdf", publisher: "American Veterinary Medical Association", accessedOn: "2026-11-16" },

@@ -16,9 +16,7 @@ faqs:
       except what you meant to change.
 relatedTools:
   - checklist
-  - host-questions
-  - cost-calculator
-  - compare
+  - pet-cost-check
 sources:
   - title: Example source one
     url: https://example.com/one

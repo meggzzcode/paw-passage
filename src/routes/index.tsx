@@ -1,6 +1,6 @@
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useState } from "react";
-import { ArrowRight, Fence, Ruler, Dog, BadgeDollarSign, ShieldCheck, MessageSquareText, Calculator, ListChecks } from "lucide-react";
+import { ArrowRight, Fence, Ruler, Dog, BadgeDollarSign, Calculator, ListChecks } from "lucide-react";
 import { images, srcSetFor } from "@/lib/images";
 import { destinations } from "@/content/destinations";
 import { visibleGuides } from "@/content/guides";
@@ -206,13 +206,11 @@ function Home() {
         <div className="rounded-2xl bg-primary p-8 text-primary-foreground md:p-12">
           <p className="text-xs font-semibold uppercase tracking-[0.16em] text-sage">Free planning tools</p>
           <h2 className="mt-2 max-w-2xl text-4xl">Tools that do the awkward part of booking for you</h2>
-          <div className={`mt-8 grid gap-4 ${anyStays ? "md:grid-cols-4" : "md:grid-cols-3"}`}>
+          <div className="mt-8 grid gap-4 md:grid-cols-2">
             {[
-              { to: "/tools/host-questions", icon: MessageSquareText, t: "Host question generator", d: "A ready-to-send message built around your dog." },
-              { to: "/tools/cost-calculator", icon: Calculator, t: "True cost calculator", d: "Compare totals with pet fees, cleaning and tax." },
+              { to: "/tools/pet-cost-check", icon: Calculator, t: "Pet cost and host confirmation", d: "See what your dog really costs, then get a message that asks the host to confirm it in writing." },
               { to: "/tools/checklist", icon: ListChecks, t: "Before-you-book checklist", d: "Tick it off, save it, print it." },
-              { to: "/tools/compare", icon: ShieldCheck, t: "Compare stays", d: "Verified details side by side." },
-            ].filter((t) => anyStays || t.to !== "/tools/compare").map((t) => (
+            ].map((t) => (
               <Link key={t.to} to={t.to} className="rounded-lg bg-primary-foreground/10 p-5 transition hover:bg-primary-foreground/15">
                 <t.icon className="size-6 text-terracotta" />
                 <p className="mt-3 font-display text-lg">{t.t}</p>

@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { allGuides, isPublic } from "@/content/guides";
 
-const tools = ["checklist", "host-questions", "cost-calculator", "compare"];
+const tools = ["checklist", "pet-cost-check"];
 const text = (g: (typeof allGuides)[number]) => g.body + "\n" + g.faqs.map((f) => f.a).join("\n");
 
 describe.each(allGuides.map((g) => [g.slug, g] as const))("guide content: %s", (_slug, g) => {

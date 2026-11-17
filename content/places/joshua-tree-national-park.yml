@@ -1,0 +1,42 @@
+# UNVERIFIED seed from our articles. Not public until verified against the official page.
+# To publish: someone reads the official page, pastes the exact sentence into sourceQuote, fills in lastChecked and verifiedBy,
+# corrects anything below that the page does not say, then sets status to verified. Until then this place never reaches the live site.
+# Our current claim (from the article "dog-friendly-weekend-getaways-from-los-angeles"; our wording, NOT an official quote):
+#   The National Park Service requires leashes no longer than six feet at all times and requires pets to remain
+#   within 100 feet of roads, parking areas, and campgrounds. It also permits them on the paved Oasis of Mara and
+#   Keys View trails. Pets are not permitted on hiking trails, in the backcountry, or in park buildings, and
+#   leaving a pet unattended is prohibited.
+status: unverified
+name: "Joshua Tree National Park"
+state: california
+managedBy: "National Park Service"
+kind: national-park
+nearTown:
+dogsAllowed:
+  - area: "Roads, parking areas and campgrounds (within 100 feet)"
+    rule: "leash"
+    note: "Leash no longer than six feet at all times."
+  - area: "Paved Oasis of Mara and Keys View trails"
+    rule: "leash"
+  - area: "Hiking trails"
+    rule: "no"
+  - area: "Backcountry"
+    rule: "no"
+  - area: "Park buildings"
+    rule: "no"
+leash: "Six feet or less at all times; pets must stay within 100 feet of roads, parking areas and campgrounds."
+fees:
+exclusions:
+  - "Hiking trails"
+  - "Backcountry"
+  - "Park buildings"
+  - "Leaving a pet unattended is prohibited"
+seasonal:
+nearbyAlternative:
+conflictNote:
+sourceUrl: "https://www.nps.gov/jotr/planyourvisit/pets.htm"
+sourceQuote:
+sourcePageDate:
+lastChecked:
+verifiedBy:
+claimFrom: dog-friendly-weekend-getaways-from-los-angeles

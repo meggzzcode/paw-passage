@@ -1,0 +1,38 @@
+# UNVERIFIED seed from our articles. Not public until verified against the official page.
+# To publish: someone reads the official page, pastes the exact sentence into sourceQuote, fills in lastChecked and verifiedBy,
+# corrects anything below that the page does not say, then sets status to verified. Until then this place never reaches the live site.
+# Our current claim (from the article "dog-friendly-weekend-getaways-from-atlanta"; our wording, NOT an official quote):
+#   Leashed pets are welcome on rim trails, but pets are prohibited on the gorge floor, Sliding Rock Trail and the
+#   Hurricane Falls staircase to the suspension bridge. (Also in dog-friendly-cabins-fenced-yards-georgia.) Trails
+#   page we cited: https://gastateparks.org/TallulahGorge/Trails
+status: unverified
+name: "Tallulah Gorge State Park"
+state: georgia
+managedBy: "Georgia State Parks"
+kind: state-park
+nearTown:
+dogsAllowed:
+  - area: "Rim trails"
+    rule: "leash"
+    note: "Leashed pets are welcome on the rim trails."
+  - area: "Gorge floor"
+    rule: "no"
+  - area: "Sliding Rock Trail"
+    rule: "no"
+  - area: "Hurricane Falls staircase to the suspension bridge"
+    rule: "no"
+leash: "Leash no longer than six feet (Georgia State Parks general rule); keep control at overlooks."
+fees:
+exclusions:
+  - "Gorge floor"
+  - "Sliding Rock Trail"
+  - "Hurricane Falls staircase to the suspension bridge"
+seasonal:
+nearbyAlternative: "The North and South Rim Trails are mulched with exposed roots and moderate inclines; only the North Rim Trail has stairs. Ask staff which section fits your dog."
+conflictNote:
+sourceUrl: "https://gastateparks.org/TallulahGorge/"
+sourceQuote:
+sourcePageDate:
+lastChecked:
+verifiedBy:
+claimFrom: dog-friendly-weekend-getaways-from-atlanta

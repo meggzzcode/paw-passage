@@ -125,7 +125,7 @@ The official trails page describes both the North and South Rim Trails as mulche
 | Sociable in public | Confirmed seating areas and brief town stops | That all shops admit pets |
 | Traveling as a pair | Written approval for both dogs | That "pets allowed" means two dogs |
 
-Ask your veterinarian about travel fitness, motion sickness or mobility. Use the [comparison tool](/tools/compare) to score actual accommodation-and-outing combinations.
+Ask your veterinarian about travel fitness, motion sickness or mobility. Score actual accommodation-and-outing combinations side by side in your own notes.
 
 ## Get the accommodation rules in writing
 
@@ -140,7 +140,7 @@ Airbnb advises guests to contact hosts even when a listing allows pets, disclose
 
 A designated Georgia state-park cottage is limited by the state's rules to two dogs, and dogs may not be left unattended. Do not apply a private host's policy to park accommodation. [[15]](https://gastateparks.org/ParkRules)
 
-See our [two-dog guide](/guides/traveling-with-two-dogs-accommodation-guide), [large-dog guide](/guides/vacation-rentals-that-welcome-large-dogs) and [pet-fee explanation](/guides/how-vacation-rental-pet-fees-work), and compare complete totals in the [cost calculator](/tools/cost-calculator).
+See our [two-dog guide](/guides/traveling-with-two-dogs-accommodation-guide), [large-dog guide](/guides/vacation-rentals-that-welcome-large-dogs) and [pet-fee explanation](/guides/how-vacation-rental-pet-fees-work), and compare complete totals in the [pet cost and host confirmation tool](/tools/pet-cost-check).
 
 ## Keep the safety plan simple
 
@@ -155,7 +155,7 @@ See our [two-dog guide](/guides/traveling-with-two-dogs-accommodation-guide), [l
 - **Saturday:** one anchor outing with its rules checked, then back to the accommodation; a good fallback is part of the plan.
 - **Sunday:** a short walk, pack before opening vehicle gates or loading the dog, and leave room for breaks on the way home.
 
-Before booking, ask: if the main outing were unavailable, would this accommodation still make a worthwhile weekend? If not, improve the fallback or choose a different trip. For the final audit, use our [vacation-rental checklist](/guides/pet-friendly-vacation-rental-checklist) and [host-question tool](/tools/host-questions).
+Before booking, ask: if the main outing were unavailable, would this accommodation still make a worthwhile weekend? If not, improve the fallback or choose a different trip. For the final audit, use our [vacation-rental checklist](/guides/pet-friendly-vacation-rental-checklist) and [pet cost and host confirmation tool](/tools/pet-cost-check).
 `,
   faqs: [
     {
@@ -193,7 +193,7 @@ Before booking, ask: if the main outing were unavailable, would this accommodati
     "how-vacation-rental-pet-fees-work",
     "dog-friendly-weekend-getaways-from-los-angeles",
   ],
-  relatedTools: ["checklist", "host-questions", "cost-calculator", "compare"],
+  relatedTools: ["checklist", "pet-cost-check"],
   sources: [
     {
       title: "Blue Ridge, Georgia",

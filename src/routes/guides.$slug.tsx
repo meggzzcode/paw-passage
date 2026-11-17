@@ -11,13 +11,11 @@ import { pageHead, breadcrumbLd, jsonLd } from "@/lib/seo";
 import { site } from "@/config/site";
 import { TableOfContents } from "@/components/site/TableOfContents";
 import { ArticleActions, TrustStrip } from "@/components/site/ArticleActions";
-import { hasStays } from "@/lib/launch";
+import { PetCostWorkflow } from "@/components/site/PetCostWorkflow";
 
 const toolLabels = {
   checklist: { to: "/tools/checklist", label: "Before-you-book checklist" },
-  "host-questions": { to: "/tools/host-questions", label: "Host question generator" },
-  "cost-calculator": { to: "/tools/cost-calculator", label: "Trip cost calculator" },
-  compare: { to: "/tools/compare", label: "Compare stays" },
+  "pet-cost-check": { to: "/tools/pet-cost-check", label: "Pet cost and host confirmation" },
 } as const;
 
 export const Route = createFileRoute("/guides/$slug")({
@@ -45,7 +43,7 @@ function GuidePage() {
   const { guide: g } = Route.useLoaderData();
   const img = guideHero(g);
   const headings = articleHeadings(g.body);
-  const tools = g.relatedTools.filter((t) => hasStays() || t !== "compare");
+  const tools = g.relatedTools;
   const related = g.relatedGuides.map((s) => getGuide(s)).filter((x) => !!x).slice(0, 3);
   return (
     <article>
@@ -74,6 +72,12 @@ function GuidePage() {
           <TableOfContents headings={headings} variant="mobile" />
           <Markdown source={g.body} />
           {g.gear && g.gear.length > 0 && <GearPicks picks={g.gear} />}
+          {g.embeddedTool === "pet-cost-workflow" && (
+            <section id="pet-cost-tool" className="mt-16 rounded-xl border border-border bg-card p-5 sm:p-8">
+              <h2 className="text-3xl">What will my dog really cost, and how do I lock it in?</h2>
+              <div className="mt-6"><PetCostWorkflow /></div>
+            </section>
+          )}
           {g.faqs.length > 0 && (
             <section className="mt-16">
               <h2 className="text-3xl">Questions people ask</h2>

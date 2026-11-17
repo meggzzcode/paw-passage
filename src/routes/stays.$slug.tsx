@@ -68,7 +68,7 @@ function StayPage() {
           {s.nearby.length > 0 && (<><h3 className="mt-8 text-xl">Nearby</h3><ul className="mt-2 list-disc pl-5">{s.nearby.map((r) => <li key={r}>{r}</li>)}</ul></>)}
           <div className="mt-10 rounded-lg bg-secondary/70 p-6">
             <p className="font-display text-lg">Before you book</p>
-            <p className="mt-1 text-sm text-muted-foreground">Policies change. Confirm the fee, dog limits and fence with the host in writing. Our <Link to="/tools/host-questions" className="text-primary underline">host question generator</Link> writes the message for you.</p>
+            <p className="mt-1 text-sm text-muted-foreground">Policies change. Confirm the fee, dog limits and fence with the host in writing. Our <Link to="/tools/pet-cost-check" className="text-primary underline">pet cost and host confirmation tool</Link> writes the message for you.</p>
           </div>
         </div>
         <aside>
@@ -80,7 +80,6 @@ function StayPage() {
               ))}
             </dl>
             <p className="mt-4 text-xs text-muted-foreground">{s.lastVerified ? `Last verified ${s.lastVerified}` : "Not yet verified"}</p>
-            <Link to="/tools/compare" search={{ ids: s.slug }} className="mt-4 inline-block text-sm font-medium text-primary underline">Compare with other stays</Link>
           </div>
         </aside>
       </div>

@@ -70,7 +70,7 @@ Cabins add easy-to-miss risks: cleaners under sinks, rodent bait in outbuildings
 2. **The car:** a smaller grab kit, kept somewhere that does not bake in summer or freeze in winter.
 3. **The trail:** a compact kit on you or your dog's pack.
 
-**Map your emergency options.** Rural cabins can be far from a clinic. Look up the nearest emergency vet hospital to your accommodation, check whether it takes walk-ins, and save the number. [[4]](https://www.smalldoorvet.com/learning-center/medical/pet-first-aid-kit/) The [host-question tool](/tools/host-questions) helps you ask your host about nearby vets.
+**Map your emergency options.** Rural cabins can be far from a clinic. Look up the nearest emergency vet hospital to your accommodation, check whether it takes walk-ins, and save the number. [[4]](https://www.smalldoorvet.com/learning-center/medical/pet-first-aid-kit/) The [pet cost and host confirmation tool](/tools/pet-cost-check) helps you ask your host about nearby vets.
 
 **Medications and records.** Bring regular medications in their original labeled containers, with a little extra if your vet agrees. Do not give human medication on your own initiative. Kit guides list human antihistamines, pain relievers and ointments and disagree on products and amounts. One says not to give human over-the-counter painkillers such as ibuprofen, acetaminophen or aspirin unless your vet says otherwise, and to check with a vet first, including about dosage, even for dog-specific prescription pain medication. [[6]](https://momgoescamping.com/dog-first-aid-kit/) We list no doses because the right answer depends on your dog.
 
@@ -240,7 +240,7 @@ Add these to your [trip checklist](/tools/checklist) so the kit gets packed with
     "vacation-rental-secure-fenced-yard",
     "traveling-with-two-dogs-accommodation-guide",
   ],
-  relatedTools: ["checklist", "host-questions"],
+  relatedTools: ["checklist", "pet-cost-check"],
   sources: [
     {
       title: "Pet First Aid brochure and kit checklist (2025)",

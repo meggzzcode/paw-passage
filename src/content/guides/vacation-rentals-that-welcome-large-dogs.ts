@@ -52,7 +52,7 @@ Do not round your dog's weight down. If the dog is near a limit, give the curren
 
 “We would like to book these dates with one adult dog, currently 82 pounds, described as a Labrador–mastiff mix. Please confirm that this dog is accepted under the property's weight, breed, and building rules. We also need to confirm the entrance steps, sleeping-level access, unattended-pet policy, and total pet charge.”
 
-If the breed is unknown, say so. Keep the reply on the booking platform; “we love dogs” does not answer a weight question. The [host-question tool](/tools/host-questions) turns unresolved details into direct questions.
+If the breed is unknown, say so. Keep the reply on the booking platform; “we love dogs” does not answer a weight question. The [pet cost and host confirmation tool](/tools/pet-cost-check) turns unresolved details into direct questions.
 
 ## Use platform filters to find candidates
 
@@ -117,7 +117,7 @@ Ask whether dogs may ever be left alone, whether crating is required, whether a 
 
 ## Compare the complete cost
 
-“No weight limit” does not mean “no pet fee,” and a higher fee does not prove better facilities. Calculate the total with your real pet count, dates, cleaning charges and taxes, and keep refundable deposits separate. Use the [cost calculator](/tools/cost-calculator), the [pet-fee guide](/guides/how-vacation-rental-pet-fees-work) and the [comparison tool](/tools/compare).
+“No weight limit” does not mean “no pet fee,” and a higher fee does not prove better facilities. Calculate the total with your real pet count, dates, cleaning charges and taxes, and keep refundable deposits separate. Use the [pet cost and host confirmation tool](/tools/pet-cost-check), and the [pet-fee guide](/guides/how-vacation-rental-pet-fees-work).
 
 A cheaper rental with an unsuitable sleeping arrangement is no bargain if it forces a change of accommodation. The useful comparison is “works without improvisation” versus “needs daily workarounds.”
 
@@ -174,7 +174,7 @@ Save those decisions in the [trip checklist](/tools/checklist). Once a place pas
     "how-vacation-rental-pet-fees-work",
     "dog-friendly-cabin-packing-list",
   ],
-  relatedTools: ["checklist", "host-questions", "cost-calculator", "compare"],
+  relatedTools: ["checklist", "pet-cost-check"],
   sources: [
     {
       title: "Finding places that allow pets",

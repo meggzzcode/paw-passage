@@ -1,0 +1,37 @@
+# UNVERIFIED seed from our articles. Not public until verified against the official page.
+# To publish: someone reads the official page, pastes the exact sentence into sourceQuote, fills in lastChecked and verifiedBy,
+# corrects anything below that the page does not say, then sets status to verified. Until then this place never reaches the live site.
+# Our current claim (from the article "pet-friendly-beachfront-rentals-california"; our wording, NOT an official quote):
+#   The city identifies Dog Beach at the west end of the San Diego River Floodway as a designated leash-free area.
+#   Fiesta Island is leash optional, generally open 4 a.m. to 10 p.m., excluding nesting sites and the Youth
+#   Aquatic Center/Camp, with marked nesting-buffer closures from April 15 through September 15. Dogs are
+#   restricted at other beaches and bays.
+status: unverified
+name: "San Diego: Dog Beach and Fiesta Island"
+state: california
+managedBy: "City of San Diego Parks and Recreation"
+kind: beach
+nearTown: san-diego
+dogsAllowed:
+  - area: "Dog Beach (west end of the San Diego River Floodway)"
+    rule: "yes"
+    note: "Designated leash-free area. Not permission to use other city beaches off leash."
+  - area: "Fiesta Island"
+    rule: "yes"
+    note: "Leash optional, generally open 4 a.m. to 10 p.m."
+  - area: "Other areas of Mission Bay Park"
+    rule: "some"
+    note: "No dogs during posted daytime hours (see seasonal); leashes required at other times."
+leash: "Leash-free only in the designated areas; leashes required elsewhere."
+fees:
+exclusions:
+  - "Fiesta Island: nesting sites and the Youth Aquatic Center/Camp are excluded"
+seasonal: "Fiesta Island nesting-buffer closures run April 15 through September 15. Other Mission Bay Park areas: no dogs 9 a.m. to 4 p.m. between October 31 and March 31, or 9 a.m. to 6 p.m. between April 1 and October 31."
+nearbyAlternative:
+conflictNote: "The page's Mission Bay hour ranges overlap on October 31 and the page does not say which applies. It points to the city's Ask Parks contact."
+sourceUrl: "https://www.sandiego.gov/park-and-recreation/parks/dogs/bchdog"
+sourceQuote:
+sourcePageDate:
+lastChecked:
+verifiedBy:
+claimFrom: pet-friendly-beachfront-rentals-california

@@ -30,7 +30,7 @@ Some links are affiliate links, marked as sponsored, with a notice at the top of
 
 ## What to ask the host before you pack anything
 
-Vrbo's house-rules page says hosts can state whether pets are allowed, how many, what kind and any size limit, and that travelers must agree to the house rules before booking. [[3]](https://help.vrbo.com/articles/what-are-house-rules) Put your questions in writing through the booking platform so the answer is on record; our [host-question tool](/tools/host-questions) has a ready list.
+Vrbo's house-rules page says hosts can state whether pets are allowed, how many, what kind and any size limit, and that travelers must agree to the house rules before booking. [[3]](https://help.vrbo.com/articles/what-are-house-rules) Put your questions in writing through the booking platform so the answer is on record; our [pet cost and host confirmation tool](/tools/pet-cost-check) has a ready list.
 
 1. **Are dogs allowed on the furniture, and which pieces?** Some hosts allow a sofa but not beds, or only with a throw. Ask for the specific rule.
 2. **May I bring my own throw, cover or dog bed, and where would you prefer it go?**
@@ -135,7 +135,7 @@ We checked each seller's page on 2026-11-16 and each showed an Add to Cart butto
 - [ ] Took before photos and saved the host's messages.
 - [ ] Washed or shook out the gear before checkout.
 
-Add the packing items to the [trip checklist](/tools/checklist), and send your questions with the [host-question tool](/tools/host-questions).`,
+Add the packing items to the [trip checklist](/tools/checklist), and send your questions with the [pet cost and host confirmation tool](/tools/pet-cost-check).`,
   faqs: [
     {
       q: "Can I use a couch cover at a vacation rental without asking?",
@@ -207,7 +207,7 @@ Add the packing items to the [trip checklist](/tools/checklist), and send your q
     "vacation-rentals-that-welcome-large-dogs",
     "dog-car-safety-harness-and-crate-guide",
   ],
-  relatedTools: ["host-questions", "checklist"],
+  relatedTools: ["pet-cost-check", "checklist"],
   sources: [
     {
       title: "Finding places that allow pets",

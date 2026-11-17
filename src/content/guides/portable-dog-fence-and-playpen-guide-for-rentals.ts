@@ -78,7 +78,7 @@ For multi-dog households, see our [two-dog accommodation guide](/guides/travelin
 
 ## Rental etiquette: ask before you install
 
-A gate or pen can leave marks, so tell the host what you plan to bring; our [host-questions tool](/tools/host-questions) helps. Ask before arrival, and keep the answers in writing:
+A gate or pen can leave marks, so tell the host what you plan to bring; our [host-questions tool](/tools/pet-cost-check) helps. Ask before arrival, and keep the answers in writing:
 
 - Is a freestanding pen allowed on the deck, patio or lawn?
 - May I use pressure-mounted gates? Any door frames or painted trim to avoid?
@@ -213,7 +213,7 @@ Some links on this site are affiliate links. When an article contains one, a not
     "traveling-with-two-dogs-accommodation-guide",
     "vacation-rentals-that-welcome-large-dogs",
   ],
-  relatedTools: ["checklist", "host-questions"],
+  relatedTools: ["checklist", "pet-cost-check"],
   sources: [
     {
       title: "Is it okay to chain or tether dogs?",

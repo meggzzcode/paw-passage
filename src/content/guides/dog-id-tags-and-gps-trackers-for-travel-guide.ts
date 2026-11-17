@@ -232,7 +232,7 @@ Heading to a cabin? See our [cabin packing list](/guides/dog-friendly-cabin-pack
     "traveling-with-two-dogs-accommodation-guide",
     "vacation-rentals-that-welcome-large-dogs",
   ],
-  relatedTools: ["checklist", "host-questions"],
+  relatedTools: ["checklist", "pet-cost-check"],
   sources: [
     {
       title: "Finding a Lost Pet",

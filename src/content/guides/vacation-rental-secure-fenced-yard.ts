@@ -115,7 +115,7 @@ Send one organized request and save the response with the exact listing, travel 
 - [ ] A layout showing separation from pools, roads, and parking.
 - [ ] Written disclosure of damage, repairs, or changes since the photos.
 
-Use our [host-question builder](/tools/host-questions). Suggested wording: "We are considering these dates with one dog who digs and squeezes under gates. Could you confirm the complete enclosed area, minimum fence height, largest ground-level openings, gate latch arrangements, and anyone else's access? Recent perimeter photos and a gate-closing video would help us decide." Ask for observable facts, not guarantees.
+Use our [host-question builder](/tools/pet-cost-check). Suggested wording: "We are considering these dates with one dog who digs and squeezes under gates. Could you confirm the complete enclosed area, minimum fence height, largest ground-level openings, gate latch arrangements, and anyone else's access? Recent perimeter photos and a gate-closing video would help us decide." Ask for observable facts, not guarantees.
 
 ## Make a decision without false precision
 
@@ -126,7 +126,7 @@ Use our [host-question builder](/tools/host-questions). Suggested wording: "We a
 | Gate gaps, shared access, or pool separation remain unclear | Pause and request specifics | Unknown is not the same as acceptable |
 | Boundary conflicts with your dog's known abilities | Reject for off-leash use | More enthusiastic wording won't fix the mismatch |
 
-Put comparable facts into the [rental comparison tool](/tools/compare), not a numerical "safety score," and use the [cost calculator](/tools/cost-calculator) to compare the real trip budget. The [complete pre-booking checklist](/guides/pet-friendly-vacation-rental-checklist) covers the rules and costs that fencing cannot answer.
+Put comparable facts side by side in your own notes, not a numerical "safety score," and use the [pet cost and host confirmation tool](/tools/pet-cost-check) to compare the real trip budget. The [complete pre-booking checklist](/guides/pet-friendly-vacation-rental-checklist) covers the rules and costs that fencing cannot answer.
 
 ## Walk the perimeter before unclipping the leash
 
@@ -163,12 +163,7 @@ Save your arrival checks in the [travel checklist](/tools/checklist). The aim is
     "traveling-with-two-dogs-accommodation-guide",
     "dog-friendly-cabins-fenced-yards-georgia"
   ],
-  "relatedTools": [
-    "checklist",
-    "host-questions",
-    "cost-calculator",
-    "compare"
-  ],
+  "relatedTools": ["checklist", "pet-cost-check"],
   "sources": [
     {
       "title": "What Type of Dog Fence Should I Have?",

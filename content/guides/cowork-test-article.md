@@ -1,5 +1,5 @@
 ---
-status: draft
+status: published
 title: Cowork test article
 dek: A test article for checking the editing form.
 category: Planning
@@ -15,6 +15,7 @@ research:
   primaryKeyword: test
   intendedReader: testers
   angle: it is a test
+approvedOn: 2026-11-16
 ---
 This is the first short paragraph of the test article.
 

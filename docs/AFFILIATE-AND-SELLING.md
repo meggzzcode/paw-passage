@@ -16,3 +16,6 @@ Researched 2026-11-17 from search results (broker pages, network help pages, sel
 4. Offer the buyer a transition period (for example 30 days of help swapping links and answering questions).
 5. If a network offers an ownership transfer (Impact documented; Awin on request), it is optional. It could keep brand approvals but ties the buyer to the seller's account history, so decide at sale time.
 6. Do not promise a buyer a transfer. Say in the listing that affiliate accounts are excluded and the buyer applies for their own.
+
+## One account for several sites (owner's plan, 2026-11-17)
+Most programs let one account promote several websites (Awin and Impact: add each site as a separate promotional space or property; Amazon: list each site; exact limits NOT CONFIRMED per program). Benefits for a sale: remove only the sold site from the seller's account instead of closing the account. To keep each site's earnings provable: use a separate tracking ID or property per site, download each site's report monthly and file it per site, and never reuse links across sites. Each site is reviewed separately, and a rule breach on one site can put the whole account at risk.

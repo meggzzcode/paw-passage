@@ -15,6 +15,7 @@ Living register. Update it whenever a service is added, changed or dropped. **Ne
 | Unsplash | Photos used on the site | In use | Licence: Unsplash licence. Per-photo credits are kept with the images. |
 | Google Fonts | Fonts | In use | |
 | Google Analytics (GA4) | Visitor statistics | **Not set up** | Add the ID under Business settings in Pages CMS. |
+| Business email address | Shown on the Contact page | Set in `content/settings.yml` 2026-11-17 | Mailbox itself is the Namecheap Private Email one above. |
 | Newsletter (Kit or MailerLite) | Email list | **Not set up** | |
 | Affiliate programs (Amazon Associates, others) | Earning from product and booking links | **None joined yet** (owner chose to hold) | See AFFILIATE-PROGRAMS.md. Product buttons currently link to the makers' own pages. |
 | Product photos | Pictures of the gear picks | None added | Maker photos need permission. See PRODUCT-PHOTOS.md. |

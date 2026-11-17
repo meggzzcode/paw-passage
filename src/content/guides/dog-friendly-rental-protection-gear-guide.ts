@@ -127,7 +127,7 @@ Hammocks are made for bench seats. The Kurgo Heather Hammock page says to use it
 ### What to look for
 
 - **Fit to your vehicle.** Measure the width of your back seat. The Kurgo hammock is 55 inches wide by 56 inches long and says it may not fit large trucks or SUVs. [[6]](https://www.kurgo.com/p/heather-hammock/K01598)
-- **Seat-belt access.** Hook-and-loop openings or zippers let a person use the belt and let you attach a harness tether if the harness maker allows it. Kurgo lists hook-and-loop openings for seat belts and latch systems. [[6]](https://www.kurgo.com/p/heather-hammock/K01598)
+- **Seat-belt access.** Hook-and-loop openings or zippers let a person use the belt. They are not a place to add a tether or any other accessory to a dog's harness. Connect the harness to the seat belt only as the harness maker instructs, and never add an extension tether or zipline-style device. Kurgo lists hook-and-loop openings for seat belts and latch systems. [[6]](https://www.kurgo.com/p/heather-hammock/K01598)
 - **Secure attachment.** Kurgo says its hammock attaches at eight points with anchors and under-seat paracord. [[6]](https://www.kurgo.com/p/heather-hammock/K01598) A cover that slides can be a distraction in a moving car.
 - **A way to seat a person.** Kurgo's center zipper folds back half the cover so a human passenger can sit. [[6]](https://www.kurgo.com/p/heather-hammock/K01598)
 - **Material and water claims.** Kurgo describes its hammock as waterproof and stain resistant and lists no material composition or waterproof rating. [[6]](https://www.kurgo.com/p/heather-hammock/K01598) Seams, zippers and belt openings can still let liquid through, so treat these as water-resistant to a degree and wipe spills quickly.

@@ -105,7 +105,7 @@ BearWise notes that pet food is rich in fat and protein, which makes it extremel
 - Store pet food where bears cannot see or smell it.
 - Do not leave food out for stray animals. [[5]](https://bearwise.org/bearwise-basics/never-leave-pet-food-outdoors/)
 
-BearWise also points out that a bear can drag pet food bags away, and says storing pet food in a screw-top container will keep black bears out of it. [[5]](https://bearwise.org/bearwise-basics/never-leave-pet-food-outdoors/)
+BearWise also points out that a bear can drag pet food bags away, and says black bears can be kept out of pet food stored in a screw-top container shown on its page "or other bear-resistant storage", pointing readers to certified bear-resistant containers. An ordinary or airtight food container is not bear-resistant. Keep dog food, treats and bowls indoors, out of sight and smell, and follow the park's or host's rules. [[5]](https://bearwise.org/bearwise-basics/never-leave-pet-food-outdoors/)
 
 None of the products in this guide claims to be bear-resistant, so treat them as freshness and organization tools, not as wildlife protection. If you are in bear country, the main protection is where the container is kept, not what it is made of.
 

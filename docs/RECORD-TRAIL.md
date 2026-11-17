@@ -17,3 +17,5 @@ Dated log of decisions and actions, newest at the bottom. Add a line whenever so
 | 2026-11-17 | Two-dog article wording corrected (AVMA does not say "tethers"); source added | guide file |
 | 2026-11-17 | Owner decided to skip legal review of privacy, terms and disclosure pages | this log |
 | 2026-11-17 | Product photo licensing researched; none added | docs/PRODUCT-PHOTOS.md |
+| 2026-11-17 | Business contact email entered in Business settings (`content/settings.yml`); Contact page now shows a mailto button | `content/settings.yml` |
+| 2026-11-17 | Consistency audit run across all 16 articles (35 findings). Safety fixes applied: tether wording, stair gates, bear-food storage, poison/vomiting wording, pen collar/ID, first-aid ointment. Surf-rescue claim checked against the NWS brochure: wording confirmed, no change | docs/CONSISTENCY-AUDIT.md |

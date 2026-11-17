@@ -111,7 +111,7 @@ Sleepypod's sizing page gives rib cage ranges and separate Regular and Long char
 
 ### Sleepypod Atom (carrier for very small dogs)
 
-The maker describes a crash-tested carrier rated to 12 lbs by CPS, with a safety tether (described as preventing escapes) and a fold-flat design, and says it can be used as a car seat. [[11]](https://sleepypod.com/products/atom) CPS lists the Atom (one size) as tested in August 2024 with a 12 lb test dog. [[15]](https://centerforpetsafety.org/sleepypod-atom/) This is for toy and very small dogs only. The maker's product page does not describe how to secure the carrier in a vehicle, so get the installation instructions from the maker before you drive.
+The maker describes a crash-tested carrier rated to 12 lbs by CPS, with a built-in tether inside the carrier (described as preventing escapes; it is not a vehicle tether) and a fold-flat design, and says it can be used as a car seat. [[11]](https://sleepypod.com/products/atom) CPS lists the Atom (one size) as tested in August 2024 with a 12 lb test dog. [[15]](https://centerforpetsafety.org/sleepypod-atom/) This is for toy and very small dogs only. The maker's product page does not describe how to secure the carrier in a vehicle, so get the installation instructions from the maker before you drive.
 
 ### GUNNER G1 Kennel (crate)
 
@@ -142,7 +142,7 @@ The maker lists Medium (under 50 lbs), Intermediate (under 70 lbs) and Large (70
 
 ### Carrier basics
 
-1. Secure the carrier in the vehicle exactly as the maker instructs. The Atom's product page does not spell out the method, so get the maker's instructions and any tether guidance before your first trip. [[11]](https://sleepypod.com/products/atom)
+1. Secure the carrier in the vehicle exactly as the maker instructs. The Atom's product page does not spell out the method, so get the maker's instructions for securing the carrier before your first trip. [[11]](https://sleepypod.com/products/atom)
 2. Never leave a carrier loose on a seat or the floor.
 3. Use only the maker's own accessories. [[11]](https://sleepypod.com/products/atom)
 

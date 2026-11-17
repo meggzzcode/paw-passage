@@ -32,7 +32,7 @@ export const products: Product[] = [
       "Maker states it is rated to 12 lbs (5.5 kg) by the Center for Pet Safety",
       "Mesh panels on three sides and plush bedding",
       "Folds flat for storage",
-      "Includes a safety tether to prevent escapes",
+      "Includes a built-in tether inside the carrier to prevent escapes (not a vehicle tether)",
       "Maker warns it should not be used with non-Sleepypod accessories",
       "Product page does not describe how to secure it in a vehicle; get the maker's instructions and never leave it loose on a seat",
     ],

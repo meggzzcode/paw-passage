@@ -120,11 +120,11 @@ These are the kits we picked, based on the criteria in the next section. Content
 
 This is the larger of the two Adventure Medical Kits options. The maker lists wound-care dressings, bandages, a cold pack, a 10 cc irrigation tool, forceps for splinters and ticks, EMT shears, gloves, a nylon leash, an emergency blanket and a copy of Wilderness & Travel Medicine: A Comprehensive Guide, packed in two waterproof bags. The page's feature text also mentions a pet first aid manual that its contents list does not show, so confirm what arrives. [[8]](https://www.adventuremedicalkits.com/products/adventure-dog-medical-kit-me-my-dog)
 
-It also lists human-use medications, including aspirin, diphenhydramine and 3% hydrogen peroxide. Given the AVMA's position on medications and vomiting, treat those items as a conversation to have with your vet. Ask whether they belong in your kit, what is appropriate for your dog, and whether you would rather remove them. Do not use them on your own judgment.
+It also lists human-use medications, including aspirin, diphenhydramine and 3% hydrogen peroxide, and the kits below also include single-use triple antibiotic ointment. Given the AVMA's position on medications and vomiting, treat those items as a conversation to have with your vet. Ask whether they belong in your kit, what is appropriate for your dog, and whether you would rather remove them. Do not use them on your own judgment.
 
 ### Adventure Medical Kits: Trail Dog
 
-The maker lists a smaller, dog-focused kit at 12 oz, with gauze, a self-adhering bandage, a triangular bandage, an irrigation tool, tick forceps, saline and a pet first aid handbook in a waterproof bag. [[9]](https://www.adventuremedicalkits.com/products/adventure-dog-medical-kit-trail-dog) It lists fewer items than Me & My Dog, which suits a day pack, but it also lists diphenhydramine and hydrogen peroxide, with the same caution applying.
+The maker lists a smaller, dog-focused kit at 12 oz, with gauze, a self-adhering bandage, a triangular bandage, an irrigation tool, tick forceps, saline and a pet first aid handbook in a waterproof bag. [[9]](https://www.adventuremedicalkits.com/products/adventure-dog-medical-kit-trail-dog) It lists fewer items than Me & My Dog, which suits a day pack, but it also lists diphenhydramine, hydrogen peroxide and triple antibiotic ointment, with the same caution applying.
 
 ### Kurgo: Dog First Aid Kit
 
@@ -236,7 +236,7 @@ Add these to your [trip checklist](/tools/checklist) so the kit gets packed with
       whyItMadeTheList:
         "The maker lists a wide range of bandaging supplies, an irrigation tool, saline, tick forceps, shears, a leash and a Wilderness & Travel Medicine guide, in waterproof bags. The feature text also mentions a pet first aid manual, but the contents list does not. That covers many items on the AVMA checklist's wound-care side.",
       watchOuts: [
-        "Lists human-use medications (aspirin, diphenhydramine, 3% hydrogen peroxide). Ask your vet before relying on any of them, and do not use them on your own judgment.",
+        "Lists human-use medications (aspirin, diphenhydramine, 3% hydrogen peroxide, triple antibiotic ointment). Ask your vet before relying on any of them, and do not use them on your own judgment.",
         "No thermometer, muzzle or contact card is listed; add your own.",
         "Written for people and dogs, so check which items are relevant to your dog.",
         "Weight and dimensions are not stated on the page.",

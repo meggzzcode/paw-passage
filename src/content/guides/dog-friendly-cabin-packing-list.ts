@@ -112,7 +112,7 @@ Keep a leash by the exit. The first toilet trip should not require searching the
 
 A portable gate or exercise pen can help separate a dog from an entrance, food preparation, or an unsuitable room. Confirm the opening dimensions and host permission first.
 
-For stairs, do not assume an ordinary pressure-fit travel gate is safe at the top. Use only a barrier approved by its manufacturer for that position and installed as directed. If safe installation is impossible without prohibited alterations, keep the dog downstairs behind another secure boundary or choose different accommodation.
+For stairs, do not use a pressure-mounted gate at the top of stairs. Use a stair gate only if its maker approves it for that position, which usually means hardware mounting, and get the host's permission before anything is screwed into a wall. If safe installation is impossible without prohibited alterations, keep the dog downstairs behind another secure boundary or choose different accommodation.
 
 Bring washable nonslip runners if the host approves them and your dog struggles on smooth floors. Check that they stay flat and do not slide or become a trip hazard.
 
@@ -181,7 +181,7 @@ Discuss the contents with your veterinarian, especially if your dog has an exist
 - Written emergency instructions.
 - Any dog-specific supplies recommended by your veterinarian.
 
-AVMA's first-aid brochure advises always contacting your veterinarian or poison control center before inducing vomiting. [[10]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf) Keep any product container available and ask the veterinarian before using items such as hydrogen peroxide or activated charcoal.
+AVMA's first-aid brochure advises always contacting your veterinarian or poison control center before inducing vomiting. [[10]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf) Do not try to induce vomiting or give any medication unless a veterinarian or poison control tells you to. Keep any product container available and ask the veterinarian before using items such as hydrogen peroxide or activated charcoal.
 
 Save the ASPCA Animal Poison Control number: **888-426-4435**. ASPCA says a consultation fee may apply. [[11]](https://www.aspca.org/pet-care/animal-poison-control) AVMA also lists the Pet Poison Helpline at 855-764-7661, which may also charge. [[10]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf) If an exposure happens, keep the packaging or photograph the product label and call promptly; do not wait for symptoms to decide whether to ask for help.
 
@@ -254,10 +254,10 @@ The goal is not to take the entire house. It is to arrive with the few things th
 `,
   faqs: [
     { q: "How much dog food should I pack for a cabin vacation?", a: "Measure your dog's usual food for all travel and cabin days, then add a reserve appropriate to the property's remoteness and likely delays. Keep the normal measuring scoop and food identification details with it. Follow local wildlife-storage rules." },
-    { q: "Should I bring a dog gate to a rental cabin?", a: "Possibly, but first confirm doorway dimensions, stair layout, and host permission. A portable gate is not automatically safe at the top of stairs. Use only a barrier approved for the position and installed as directed; otherwise arrange a different secure sleeping area." },
+    { q: "Should I bring a dog gate to a rental cabin?", a: "Possibly, but first confirm doorway dimensions, stair layout, and host permission. Do not use a pressure-mounted gate at the top of stairs. Use a stair gate only if its maker approves it for that position, which usually means hardware mounting, and get the host's permission first; otherwise arrange a different secure sleeping area." },
     { q: "Can I leave dog food on the cabin deck in a sealed bin?", a: "Do not assume a sealed household bin is bear-resistant. NPS says bear-resistant containers only work when closed and locked, and lists ice chests among items bears treat as food, so do not count a cooler as bear-proof. [[1]](https://www.nps.gov/articles/bearsafetyfood.htm) Store pet food, treats, used bowls, and waste according to the property's instructions and local wildlife rules." },
     { q: "Do I need furniture covers if the cabin charges a pet fee?", a: "A pet fee does not establish furniture permission. Confirm the rules first. Where dogs are allowed on furniture, a washable cover can help manage hair and damp paws, but it does not eliminate responsibility for damage." },
-    { q: "What should I do if my dog may have swallowed antifreeze?", a: "Contact a veterinarian, emergency veterinary hospital, or ASPCA Animal Poison Control at 888-426-4435 immediately. ASPCA's antifreeze guidance says to get the dog to a veterinary hospital right away, as signs can be missed early. [[9]](https://www.aspca.org/news/digging-deeper-getting-facts-dangers-antifreeze-and-your-pets) Do not induce vomiting unless a veterinary professional directs you. Keep the product label available if possible; a consultation fee may apply." },
+    { q: "What should I do if my dog may have swallowed antifreeze?", a: "Contact a veterinarian, emergency veterinary hospital, ASPCA Animal Poison Control at 888-426-4435, or Pet Poison Helpline at 855-764-7661 immediately. ASPCA's antifreeze guidance says to get the dog to a veterinary hospital right away, as signs can be missed early. [[9]](https://www.aspca.org/news/digging-deeper-getting-facts-dangers-antifreeze-and-your-pets) Do not induce vomiting unless a veterinary professional directs you. Keep the product label available if possible; a consultation fee may apply." },
   ],
   relatedGuides: ["dog-friendly-cabins-fenced-yards-georgia", "pet-friendly-vacation-rental-checklist", "vacation-rental-secure-fenced-yard", "traveling-with-two-dogs-accommodation-guide"],
   relatedTools: ["checklist", "host-questions"],

@@ -19,7 +19,7 @@ export const guide: Guide = {
 
 A rental that welcomes dogs but has no fenced yard leaves you with a practical question: where does the dog stand while you carry in the luggage, cook dinner, or sit on a deck that opens onto an unfenced lawn?
 
-Portable containment can help with those short, supervised moments. A folding exercise pen makes a small, defined space. A pressure-mounted gate can close off a staircase, a kitchen or a hallway. Both are easy to pack and neither needs a permanent fixture.
+Portable containment can help with those short, supervised moments. A folding exercise pen makes a small, defined space. A pressure-mounted gate can close off the bottom of a staircase, a kitchen or a hallway. Both are easy to pack and neither needs a permanent fixture.
 
 They are not a replacement for a properly fenced yard. If you want the real thing, start with our guide to [finding a rental with a secure fenced yard](/guides/vacation-rental-secure-fenced-yard), and use our [pet-friendly rental checklist](/guides/pet-friendly-vacation-rental-checklist) to compare what a listing actually offers.
 
@@ -48,7 +48,7 @@ What they do not do: stop a determined jumper or climber, stand up to a dog lean
 
 A pressure-mounted gate holds itself between two surfaces with adjustable mounts instead of screws. Carlson's 30-inch walk-thru gate lists adjustable pressure mounts as its default way to install. [[5]](https://carlsonpetproducts.com/products/extra-wide-walk-thru-pet-gate-white)
 
-Gates are best for closing a doorway, not for building an outdoor enclosure. Use them to keep a dog out of a bedroom, away from a stairwell, or in the room where you are.
+Gates are best for closing a doorway, not for building an outdoor enclosure. Use them to keep a dog out of a bedroom, away from the bottom of a stairwell, or in the room where you are.
 
 Note the word "pressure." It may leave marks on trim or paint, and Carlson sells a taller model whose page says hardware is included for required wall mounting. [[6]](https://carlsonpetproducts.com/products/36-extra-tall-walk-thru-pet-gate-white) Drilling into a rental's walls is something to ask about first, and often the answer will be no.
 
@@ -95,7 +95,7 @@ North States limits its play yard to square or octagon shapes, says not to use m
 
 Look at the door and how it closes. MidWest describes a door that closes over a safety lock with two slide-bolt latches, and a safety clip for added security. [[2]](https://www.midwesthomes4pets.com/wp-content/uploads/ExPen_550DR_Eng.pdf) North States' page describes a 9.5 x 8 inch swinging door panel that locks; which door panel ships is not stated. [[4]](https://northstatesind.com/north-states-mypet-petyard-passage-8-panel/)
 
-MidWest also tells owners to remove collars, tags and leads from the pet before placing it inside to prevent possible entanglement. [[2]](https://www.midwesthomes4pets.com/wp-content/uploads/ExPen_550DR_Eng.pdf) Follow that instruction whichever pen you buy, and read your pen's own manual.
+MidWest also tells owners to remove collars, tags and leads from the pet before placing it inside to prevent possible entanglement. [[2]](https://www.midwesthomes4pets.com/wp-content/uploads/ExPen_550DR_Eng.pdf) Follow that instruction whichever pen you buy, and read your pen's own manual. Put the collar and ID tag back on as soon as the dog is out of the pen, and keep the microchip record current, because the dog has no visible ID while it is inside.
 
 ### Fit for the opening
 

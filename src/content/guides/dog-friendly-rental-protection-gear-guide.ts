@@ -48,7 +48,7 @@ Save the host's reply with the booking. If a disagreement comes up later, a writ
 
 ### Where cleaning and damage fit
 
-Airbnb's help page on pet fees says a pet fee should only cover the expected cleaning, which is different from damage. [[2]](https://www.airbnb.com/help/article/3623) That helps explain why hair on a sofa is a different matter from a torn cushion. Our guide to [how vacation rental pet fees work](/guides/how-vacation-rental-pet-fees-work) covers the fee structures, deposits, holds and damage terms in detail, and our [pet-friendly rental checklist](/guides/pet-friendly-vacation-rental-checklist) covers the rest of the pre-booking questions.
+Airbnb's help page on pet fees says a pet fee should cover the expected cleaning that comes with hosting pets, and it separates that from unexpected damage. [[2]](https://www.airbnb.com/help/article/3623) That helps explain why hair on a sofa is a different matter from a torn cushion. Our guide to [how vacation rental pet fees work](/guides/how-vacation-rental-pet-fees-work) covers the fee structures, deposits, holds and damage terms in detail, and our [pet-friendly rental checklist](/guides/pet-friendly-vacation-rental-checklist) covers the rest of the pre-booking questions.
 
 A cover does not remove your responsibility. It can reduce hair and moisture reaching a surface. It does not stop claws, chewing or a determined dog. If your dog scratches or chews furniture, the right plan is crating or supervision, a conversation with the host, or a different rental, not a thicker cover.
 
@@ -151,7 +151,7 @@ A roll-up travel bed in medium and large with a nonslip, waterproof bottom and a
 
 ### If you are driving with a dog on a bench seat: Kurgo Heather Hammock
 
-A hammock with seat-belt openings and a center zipper that folds back for a person. It suits a typical sedan or smaller SUV with a bench seat. Check the width and the bucket-seat warning first.
+A hammock with seat-belt openings and a center zipper that folds back for a person. The maker says it is for bench seats and may not fit large trucks or SUVs, so measure your rear seat against 55 by 56 inches. Check the width and the bucket-seat warning first.
 
 ### Quick comparison
 
@@ -203,7 +203,7 @@ For the money side, read how [pet fees actually work](/guides/how-vacation-renta
     },
     {
       q: "Does a pet fee cover hair and mud?",
-      a: "Airbnb's help page says a pet fee should only cover the expected cleaning, which is separate from damage. Ask the host what the fee covers and what checkout tasks are expected.",
+      a: "Airbnb's help page says a pet fee should cover the expected cleaning that comes with hosting pets, and it separates that from unexpected damage. Ask the host what the fee covers and what checkout tasks are expected.",
     },
     {
       q: "Is a back-seat hammock a safe way to restrain my dog?",
@@ -219,7 +219,7 @@ For the money side, read how [pet fees actually work](/guides/how-vacation-renta
     },
     {
       q: "Do these gear picks cost extra through this site?",
-      a: "This guide lists no prices. Some product links may be affiliate links: if you buy through one, the site may earn a commission at no extra cost to you, and that does not change which products are listed. See the affiliate disclosure.",
+      a: "This guide lists no prices. Some links on this site are affiliate links. If you buy through one, Paws & Passage may earn a commission at no extra cost to you. A commission never changes which products we list or what we say about them. See the affiliate disclosure.",
     },
   ],
   gear: [

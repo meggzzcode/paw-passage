@@ -73,7 +73,7 @@ Santa Barbara is a reasonable coastal candidate when your main aim is a beach ou
 
 At Arroyo Burro County Beach Park, dogs must be leashed. The county-park visitor page identifies an off-leash beach area east of the creek. Keep the dog leashed through the park and confirm the boundary before releasing a dog with appropriate recall. [[1]](https://santabarbaraparks.com/parks/arroyo-burro-county-beach-park/)
 
-The City of Santa Barbara's Parks and Recreation page requires off-leash dogs to be under sight and voice control and says owners must keep a leash with them at all times. If that standard is not realistic for your dog in a beach setting, remain leashed and choose your space carefully—or make a different type of outing the centerpiece. [[9]](https://sbparksandrec.santabarbaraca.gov/node/9272)
+The City of Santa Barbara's Parks and Recreation page requires off-leash dogs to be under sight and voice control and says owners must keep a leash with them at all times. The county page and the city's dog-access handout are worded differently, so follow the stricter reading (leashed, except east of the creek) unless signs say otherwise. If that standard is not realistic for your dog in a beach setting, remain leashed and choose your space carefully—or make a different type of outing the centerpiece. [[9]](https://sbparksandrec.santabarbaraca.gov/node/9272)
 
 ### Who this suits
 
@@ -155,7 +155,7 @@ Treat Idyllwild as a possible quiet accommodation stay until you have establishe
 
 National parks do not share a single simple pet policy. Check the individual park before making it part of a weekend.
 
-Joshua Tree's restrictions make it unsuitable as an assumed dog-hiking destination. Channel Islands National Park is a different case: the National Park Service states that pets are not allowed in the park to protect island wildlife. The park says service animals are admitted only after a vaccination, parasite-prevention, and health-exam protocol, so contact the park directly. [[3]](https://www.nps.gov/jotr/planyourvisit/pets.htm) [[10]](https://www.nps.gov/chis/planyourvisit/pets.htm)
+Joshua Tree's restrictions make it unsuitable as an assumed dog-hiking destination. Channel Islands National Park is a different case: the National Park Service states that pets are not allowed in the park to protect island wildlife. The park says service animals are admitted only after a vaccination, parasite-prevention, and health-exam protocol, so contact the park directly. These are the park's own rules; the ADA summary in our fee and checklist guides covers rental accommodation and public businesses, not national-park access. [[3]](https://www.nps.gov/jotr/planyourvisit/pets.htm) [[10]](https://www.nps.gov/chis/planyourvisit/pets.htm)
 
 A coastal mainland rental therefore does not make an island excursion a dog-inclusive activity.
 
@@ -245,7 +245,7 @@ The right getaway is the one where the dog can join the actual plan comfortably.
     },
     {
       q: "Can my dog come on a Channel Islands National Park excursion?",
-      a: "Pets are not allowed in Channel Islands National Park. The park says service animals are admitted only after a vaccination, parasite-prevention, and health-exam protocol; contact the park directly.",
+      a: "Pets are not allowed in Channel Islands National Park. The park says service animals are admitted only after a vaccination, parasite-prevention, and health-exam protocol; contact the park directly. These are the park's own rules, separate from the ADA rules that apply to rentals and public businesses.",
     },
   ],
   relatedGuides: [

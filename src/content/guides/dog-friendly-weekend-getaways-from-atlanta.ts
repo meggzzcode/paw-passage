@@ -27,7 +27,7 @@ This guide focuses on Georgia mountain bases and a closer-to-Atlanta park option
 
 ## A practical shortlist
 
-The recommendations below are editorial matches, not claims that every part of a town or park suits every dog.
+The options below are editorial matches, not claims that every part of a town or park suits every dog.
 
 | Base or destination | Consider it when you want | Main question before booking |
 | --- | --- | --- |

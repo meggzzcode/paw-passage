@@ -17,7 +17,7 @@ faqs:
   - q: Does Airbnb only allow a flat pet fee?
     a: No. Its current help page describes fees per booking, per night, per pet, and per pet per night. Review the actual booking total rather than relying on older descriptions.
   - q: Does Vrbo include pet fees in its displayed prices?
-    a: Vrbo says mandatory fees are included in upfront pricing and identifies pet charges as a standard fee category. Enter accurate pet information and reconcile the displayed total with the property's policy. Tax display can vary by jurisdiction.
+    a: Vrbo says displayed prices include mandatory fees, and its fee help lists pets among standard fee categories. Whether a given pet charge appears in the displayed total depends on the listing, so check the full quote before you book. Enter accurate pet information and reconcile the displayed total with the property's policy. Tax display can vary by jurisdiction.
   - q: Is a pet deposit the same as a pet fee?
     a: No. A fee is an agreed expense under the booking terms. A refundable deposit is money that may be returned subject to its conditions. A card hold is another arrangement and can temporarily reduce available credit.
   - q: Can a rental charge a pet fee for a service animal?

@@ -18,10 +18,10 @@ export function GearPicks({ picks }: { picks: GearPick[] }) {
   const anyAmazon = links.some((l) => l && isAmazon(l));
   return (
     <section className="mt-12" aria-labelledby="gear-picks">
-      <h2 id="gear-picks" className="text-3xl">Our picks</h2>
+      <h2 id="gear-picks" className="text-3xl">Picks by criteria</h2>
       {anyAffiliate && (
         <p className="mt-3 rounded-lg bg-muted p-4 text-sm text-muted-foreground">
-          Some links below are affiliate links. If you buy through them we may earn a commission at no extra cost to you. It never changes what we recommend. {anyAmazon && AMAZON_DISCLOSURE}
+          Some links below are affiliate links. If you buy through them we may earn a commission at no extra cost to you. It never changes which products we list or what we say about them. {anyAmazon && AMAZON_DISCLOSURE}
         </p>
       )}
       <p className="mt-3 text-sm text-muted-foreground">We haven't tested these products. They were chosen against the criteria above using the maker's published specifications and independent standards, which are linked for each one.</p>

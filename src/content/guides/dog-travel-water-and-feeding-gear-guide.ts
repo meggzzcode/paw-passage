@@ -71,7 +71,7 @@ A travel bowl lives in a door pocket, a backpack or a cupholder, gets stepped on
 
 Some roundups say raised bowls reduce bloat risk. We do not repeat that; our sources do not make that claim, and no travel bowl replaces your veterinarian's advice, especially for deep-chested breeds.
 
-The CDC does give one feeding-schedule tip that is relevant to car travel: feed your pet three to four hours before leaving on a trip to help prevent car sickness or vomiting. [[1]](https://www.cdc.gov/healthy-pets/travel/index.html) The ASPCA likewise says not to feed a pet in a moving vehicle, and on longer rides to offer only an occasional small snack. [[2]](https://www.aspca.org/node/69318)
+The CDC does give one feeding-schedule tip that is relevant to car travel: feed your pet three to four hours before leaving on a trip to help prevent car sickness or vomiting. [[1]](https://www.cdc.gov/healthy-pets/travel/index.html) The ASPCA gives the same timing, says not to feed a pet in a moving vehicle, and on longer rides to offer only an occasional small snack. [[2]](https://www.aspca.org/node/69318)
 
 ## What to look for in a travel water bottle or dispenser
 
@@ -239,7 +239,7 @@ Choose gear for how you travel, and follow the official guidance for heat and wi
     },
     {
       q: "Can I leave dog food in my car at a national park?",
-      a: "It depends on the park. The National Park Service says some parks allow food stored out of sight inside a car with the windows closed, while others require lockers, and food must never be left in a truck bed or strapped to the outside of a vehicle. Its page does not name pet food, so check the specific park's rules before you go.",
+      a: "Rules vary by park, so ask the park or host before you rely on the car. The National Park Service says some parks allow food stored out of sight inside a car with the windows closed, while others require lockers, and food must never be left in a truck bed or strapped to the outside of a vehicle. Its page does not name pet food, so check the specific park's rules before you go.",
     },
     {
       q: "Do travel water bottles with attached bowls leak?",

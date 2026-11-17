@@ -60,7 +60,7 @@ A tie-out clips a dog to a stake, a cable or a fixed object. It looks like a sim
 
 Humane World for Animals, formerly the Humane Society of the United States, describes tethering as fastening a dog to a stationary object and leaving them unattended. It says intensive confinement or long-term restraint can severely damage a dog's physical and psychological well-being, that tethering is a high-risk factor in serious dog bites and attacks, and that keeping an animal tethered for long periods or during extreme weather is never acceptable. [[1]](https://www.humaneworld.org/chaining)
 
-Our position follows from that: we do not recommend tie-outs for a dog on its own, and we do not feature any. The alternatives in this guide all assume you are present. If you ever clip a leash to your own chair or railing for a moment, stay within arm's reach and keep the dog in sight.
+Our position follows from that: we do not recommend tie-outs, and we do not feature any. The alternatives in this guide all assume you are present. If you ever clip a leash to your own chair or railing for a moment, stay within arm's reach and keep the dog in sight.
 
 Laws about tethering vary by state and city, and we did not research them for this guide. If a tie-out is part of your plan anywhere, check local rules and the rental's house rules first.
 
@@ -155,7 +155,7 @@ These are not ranked and not tested. Each is described only from what its maker 
 | --- | --- | --- |
 | Small dog, hard floors, host says no screws | Freestanding gate or play yard | Low height; match to maker's stated dog size |
 | Puppy or toy breed, wide opening | Design Paw freestanding gate | Specifically for puppies and toy breeds, per the maker |
-| Jumper, host allows pressure mounts only | Taller pressure-mounted gate | Check the model: some include required wall mounting |
+| Jumper, host allows pressure mounts only | No gate in this guide is a confirmed tall pressure-only option | Ask the host about wall mounting, or choose another barrier. Check the model: some require wall mounting |
 | Need a temporary outdoor enclosure on grass | Exercise pen with ground anchors | Ask before staking into a lawn |
 | Two dogs | Larger pen, or gate plus a closed door | Each dog's behavior in a pen matters, not just the count |
 | Large dog | Check the maker's stated dog size first | Many portable pens do not state a size limit |

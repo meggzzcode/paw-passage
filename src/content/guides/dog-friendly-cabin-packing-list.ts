@@ -65,7 +65,7 @@ Use a closed container to contain kibble spills and keep packaging tidy. Retain 
 
 A regular food bin is **not** a bear-resistant container. Neither is an ordinary cooler. Pet meals, treats, used bowls, and food rubbish belong in your wildlife-storage plan, not on the deck overnight. National Park Service guidance says bears treat anything with a scent as food, lists items such as trash, toiletries, and ice chests among those that must be stored properly, and notes that rules differ from park to park. It does not name pet food specifically, so treat these items as scented and ask the host. [[1]](https://www.nps.gov/articles/bearsafetyfood.htm)
 
-Ask where food should go at this particular cabin. Follow local rules and property instructions; do not assume that leaving it in the car is an acceptable alternative.
+Ask where food should go at this particular cabin. Follow local rules and property instructions; rules vary by park, and some allow food in a closed car out of sight while others require lockers, so do not assume the car is acceptable.
 
 Feed in a manageable indoor spot, clean up crumbs, wash bowls, and put supplies away afterward. Pack a washable feeding mat if your dog tends to distribute dinner across the floor.
 
@@ -104,7 +104,7 @@ Pack:
 - A visible collar light or reflective accessory for dark toilet trips.
 - Your usual vehicle restraint or secured travel crate.
 
-Check the rules for each park and trail rather than applying one leash-length rule to an entire state. An accommodation accepting dogs does not mean nearby trails do.
+Check the rules for each park and trail rather than applying one leash-length rule to an entire state. State parks in Georgia and California generally cap leashes at six feet, but national forests, counties and cities differ. An accommodation accepting dogs does not mean nearby trails do.
 
 Keep a leash by the exit. The first toilet trip should not require searching the car while someone holds the cabin door open.
 

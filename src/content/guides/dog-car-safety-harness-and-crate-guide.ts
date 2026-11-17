@@ -99,7 +99,7 @@ Both can be reasonable choices. Which one is better depends on the dog, the vehi
 
 The ASPCA says a crate is the safest option and describes a harness attached to a secured seat belt as the alternative. [[8]](https://www.aspca.org/pet-care/general-pet-care/travel-safety-tips) The CDC similarly lists both. [[7]](https://www.cdc.gov/healthy-pets/travel/index.html) What matters is that whichever you pick is a tested, correctly fitted, correctly anchored system.
 
-## Four products that meet the criteria
+## Four products we checked against the criteria
 
 These four products appear on a maker page we could load and, for the tested configurations noted, in CPS listings. We list sizes and specs from the sources only. We are not saying they are the only good options, and we have not tested them. Each is described in the pick cards on this page; the notes below explain where each fits.
 
@@ -179,7 +179,7 @@ Both CDC and ASPCA recommend building up to a long trip through a series of shor
 
 ## How we choose and how this site earns money
 
-We choose products by the criteria in this guide, using maker specifications and independent standards. We have not tested any of them. Some links in gear guides are affiliate links. When an article contains one, a notice appears at the top of the article and the link is marked as sponsored. If you buy through one, Paws & Passage may earn a commission at no extra cost to you. We do not accept payment for placement. Read the full [affiliate disclosure](/affiliate-disclosure).`,
+We choose products by the criteria in this guide, using maker specifications and independent standards. We have not tested any of them. Some links on this site are affiliate links. When an article contains one, a notice appears at the top of the article and the link is marked as sponsored. If you buy through one, Paws & Passage may earn a commission at no extra cost to you. A commission never changes which products we list or what we say about them. Read the full [affiliate disclosure](/affiliate-disclosure).`,
   faqs: [
     {
       q: "Is a crash-tested harness enough, or do I need a crate?",

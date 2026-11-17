@@ -185,7 +185,7 @@ If the answer is no, move on. Concealing the dog's size or breed creates a booki
 
 ### Separate health insurance from liability cover
 
-A pet health policy is not the same product as liability protection for injuries or damage your dog causes. The Insurance Information Institute distinguishes pet health coverage from other financial protections. [[5]](https://www.iii.org/article/facts-about-pet-insurance)
+A pet health policy is not the same product as liability protection for injuries or damage your dog causes. For the liability side, see the Insurance Information Institute's dog-bite liability page. [[4]](https://www.iii.org/article/spotlight-on-dog-bite-liability) For health coverage, see its pet insurance facts. [[5]](https://www.iii.org/article/facts-about-pet-insurance)
 
 Ask your own insurer whether any relevant liability coverage extends to a temporary rental, and whether exclusions apply to your dog or the intended activity. Do not assume that a policy name, a host's damage program, or a travel policy means every loss is covered.
 

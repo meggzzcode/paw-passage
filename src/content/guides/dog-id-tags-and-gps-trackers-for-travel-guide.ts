@@ -29,7 +29,7 @@ This guide covers three layers of findability and how they fit together:
 
 It then gives a lost-dog plan for an unfamiliar place, and a pick-by-situation section for gear. No gear can promise a dog will not get lost. What the layers do is shorten the time between "gone" and "found," and none of them replaces watching the dog, a secure leash or harness, and a secure rental.
 
-Related reading: our [pet-friendly rental checklist](/guides/pet-friendly-vacation-rental-checklist) covers the rental itself, and the [secure fenced yard guide](/guides/vacation-rental-secure-fenced-yard) covers the most common escape route. You can add ID tasks to the [trip checklist](/tools/checklist).
+Related reading: our [pet-friendly rental checklist](/guides/pet-friendly-vacation-rental-checklist) covers the rental itself, and the [secure fenced yard guide](/guides/vacation-rental-secure-fenced-yard) covers checking a yard before you rely on it. You can add ID tasks to the [trip checklist](/tools/checklist).
 
 ## Layer one: the visible ID tag
 
@@ -135,7 +135,7 @@ Some links on this site are affiliate links. When an article contains one, a not
 | A small dog | Check weight and size limits first. Some trackers are listed for dogs above a minimum weight. |
 | Two or more dogs | A tag per dog, a record per dog, and a tracker and plan per dog if you choose to track. See our [two-dog planning guide](/guides/traveling-with-two-dogs-accommodation-guide). |
 | Camping or remote areas | Coverage first. A cellular tracker needs cellular coverage, so check the maker's coverage tool for the route. |
-| A trip abroad | Check your destination's rules and the maker's coverage list. AKC Reunite says a microchip is required to travel outside the US or to Hawaii, and that the pet must be microchipped before the health certificate process begins. [[4]](https://www.akcreunite.org/travel/) |
+| A trip abroad | Check your destination's rules and the maker's coverage list. AKC Reunite says that for travel outside the US or to Hawaii, the pet must be microchipped before the health certification process begins. Your destination sets the other requirements, so check them with an accredited vet. [[4]](https://www.akcreunite.org/travel/) |
 
 ## Notes on the picks
 

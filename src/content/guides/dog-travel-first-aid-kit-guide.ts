@@ -157,7 +157,7 @@ Some links on this site are affiliate links. When an article contains one, a not
 | Dog on regular medication | Original-labeled medication, a records copy, and your vet's advice | Any kit, plus your vet's guidance |
 | Two or more dogs | Duplicate key items, since one kit may not stretch | See our [two-dog guide](/guides/traveling-with-two-dogs-accommodation-guide) |
 
-Pair these choices with the gear and planning advice in our [fenced-yard rental guide](/guides/vacation-rental-secure-fenced-yard), since a secure yard prevents some emergencies altogether.
+Pair these choices with the gear and planning advice in our [fenced-yard rental guide](/guides/vacation-rental-secure-fenced-yard), since checking the yard can prevent some emergencies.
 
 ## Add-ons that are usually worth carrying
 

@@ -143,6 +143,15 @@ describe("content build step", () => {
     expect(JSON.stringify(loadContent(root, true))).toContain("SECRET-NOTE");
   });
 
+  it("an unfinished draft with an invalid file name is skipped (not a build failure), and the message suggests a valid name", () => {
+    reset();
+    writeFileSync(join(root, "content/guides/My Draft Title.md"), guideWith((t) => t.replace("status: published", "status: draft")));
+    const out = loadContent(root, false);
+    expect(out.guides).toEqual([]);
+    writeFileSync(join(root, "content/guides/My Published Title.md"), guideWith((t) => t));
+    expect(() => loadContent(root, false)).toThrow(/my-published-title\.md/);
+  });
+
   it("rejects unsafe or sloppy values", () => {
     reset();
     const bad = (file: string, text: string, re: RegExp) => {
@@ -156,7 +165,7 @@ describe("content build step", () => {
     bad("content/guides/dates.md", guideWith((t) => t.replace(/^publishedOn:.*$/m, "publishedOn: 2026-13-45")), /real date/);
     bad("content/guides/trav.md", guideWith((t) => t.replace(/^heroImage:.*$/m, "heroUpload: /uploads/../../package.json")), /uploads/);
     bad("content/guides/Bad Name.md", guideWith((t) => t), /lowercase letters/);
-    bad("content/stays/Bad Name.yml", "name: X\nstatus: sample\ntype: cabin\nstate: georgia\ntown: a\nsummary: s\ndescription: d\nimage: guide-ga-cabins\n", /lowercase letters/);
+    bad("content/stays/Bad Name.yml", "name: X\nstatus: verified\nlastVerified: 2026-11-16\ntype: cabin\nstate: georgia\ntown: a\nsummary: s\ndescription: d\nimage: guide-ga-cabins\n", /lowercase letters/);
     bad("content/stays/zero.yml", "name: X\nstatus: sample\ntype: cabin\nstate: georgia\ntown: a\nsummary: s\ndescription: d\nimage: guide-ga-cabins\npetFee: charged\npetFeeAmount: 0\npetFeeBasis: stay\n", /above zero/);
   });
 });

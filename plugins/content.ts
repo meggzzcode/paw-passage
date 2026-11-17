@@ -99,7 +99,14 @@ export function loadContent(root: string, includeUnpublished: boolean, opts: { s
       const slug = basename(f, ".md");
       if (codeGuides.has(slug)) throw new ContentError(`\n\nContent problem in ${file}:\n  - an article with the web address "${slug}" already exists. Open that article instead of creating a new one, or choose a different file name.\n`);
       contentGuideSlugs.add(slug);
-      if (!/^[a-z0-9-]+$/.test(slug)) throw new ContentError(`\n\nContent problem in ${file}:\n  - the file name must use only lowercase letters, numbers and hyphens\n`);
+      if (!/^[a-z0-9-]+$/.test(slug)) {
+        const msg = `\n\nContent problem in ${file}:\n  - the file name must use only lowercase letters, numbers and hyphens (rename the file, for example to "${slug.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "")}.md")\n`;
+        if (isDraft && skipBrokenDrafts) {
+          console.warn(`[content] ${file} is a draft whose file name is not valid yet, so it is left out for now.${msg}`);
+          continue;
+        }
+        throw new ContentError(msg);
+      }
       if (slugs.has(`guide:${slug}`)) throw new ContentError(`\n\nTwo guides share the web address "${slug}".\n`);
       slugs.add(`guide:${slug}`);
       const g = parsed.data;
@@ -137,7 +144,14 @@ export function loadContent(root: string, includeUnpublished: boolean, opts: { s
         throw new ContentError(formatIssues(file, parsed.error));
       }
       const slug = basename(f).replace(/\.ya?ml$/, "");
-      if (!/^[a-z0-9-]+$/.test(slug)) throw new ContentError(`\n\nContent problem in ${file}:\n  - the file name must use only lowercase letters, numbers and hyphens\n`);
+      if (!/^[a-z0-9-]+$/.test(slug)) {
+        const msg = `\n\nContent problem in ${file}:\n  - the file name must use only lowercase letters, numbers and hyphens (rename the file, for example to "${slug.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "")}.yml")\n`;
+        if (notLive && skipBrokenDrafts) {
+          console.warn(`[content] ${file} is not live and its file name is not valid yet, so it is left out for now.${msg}`);
+          continue;
+        }
+        throw new ContentError(msg);
+      }
       if (codeStays.has(slug)) throw new ContentError(`\n\nContent problem in ${file}:\n  - a stay with the web address "${slug}" already exists\n`);
       if (slugs.has(`stay:${slug}`)) throw new ContentError(`\n\nTwo stays share the web address "${slug}".\n`);
       slugs.add(`stay:${slug}`);

@@ -119,6 +119,10 @@ function RootShell({ children }: { children: ReactNode }) {
     <html lang="en">
       <head>
         <HeadContent />
+        {/* Some hosts (Netlify's free plan) add an HTML comment and a blank line to the top of every page's <head>. React treats an
+            unexpected node there as a mismatch ("hydration error #418") and rebuilds the page in the browser.
+            This tiny script runs while the page loads and removes any comments and blank text from <head> before React starts. */}
+        <script dangerouslySetInnerHTML={{ __html: "(function(){var h=document.head;if(!h)return;var n=h.firstChild;while(n){var x=n.nextSibling;if(n.nodeType===8||(n.nodeType===3&&!/\\S/.test(n.nodeValue||'')))h.removeChild(n);n=x}})();" }} />
       </head>
       <body>
         {children}

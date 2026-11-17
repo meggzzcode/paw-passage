@@ -67,6 +67,7 @@ If an editor saves a half-finished draft, the build skips it and carries on. If 
 
 ### Tested (on 2026-11-16, in a test setup that imitates Netlify; not on Netlify itself)
 
+- **On real Netlify (2026-11-17):** 198 automatic site checks and 61 real-browser checks passed on the live test site. The first browser run found a hydration error caused by Netlify's free plan adding content to every page; it was fixed and re-tested.
 - **A fresh start works.** A brand-new copy of the code from GitHub installs, passes its 155 automatic tests and builds, using only what is in the repository. It needs no Lovable account and none of the previous owner's personal accounts. (A first attempt failed because a lock file was out of date. That was found, fixed, and a check now guards against it.)
 - **Netlify's own command-line tool** (a local imitation of Netlify's servers) built and ran the site: 216 automatic checks passed. These cover readable page text for search engines, every article, real "404 not found" pages for unknown addresses, correct canonical addresses and sitemap for a configured domain, images, scripts and fonts loading, and no empty pages.
 - **61 real-browser checks passed** on a desktop and a phone-sized screen: no errors, every image loaded, no sideways scrolling, and the checklist (it remembers ticks), cost calculator and question writer all work.
@@ -80,12 +81,11 @@ If an editor saves a half-finished draft, the build skips it and carries on. If 
 
 | Not verified | Why |
 |---|---|
-| ~~A real deploy on Netlify and automatic rebuild when GitHub changes~~ | **Now tested (2026-11-17):** a real deploy worked, a GitHub change published itself in about a minute, and a deliberately bad edit failed the build while the live site stayed up. See `docs/LIVE-TEST-RESULTS.md`. Still open: the full site checker (the test project is set to Private, which blocks outside checks) and failure emails (a paid Netlify feature). |
+| ~~A real deploy on Netlify and automatic rebuild when GitHub changes~~ | **Tested (2026-11-17):** a real deploy worked; a GitHub change published itself in about a minute; a deliberately bad edit failed the build while the live site stayed up; the live site then passed 198 automatic checks and 61 real-browser checks (desktop and phone). See `docs/LIVE-TEST-RESULTS.md`. Still open: failure emails (a paid Netlify feature, left for the buyer). |
 | Pages CMS itself: signing in, installing its GitHub App, the editing forms, saving | Needs your GitHub login. The form file (`.pages.yml`) was written from Pages CMS's documentation and checked by tests, but never opened in the real app. |
 | Whether Pages CMS saves straight to the main branch or can use branches / pull requests | The documentation does not say. The "Approved by" safeguard works either way. |
 | Whether a collaborator with no GitHub account can sign in to Pages CMS | Not stated in the documentation. |
 | Rich-text editor round trip: whether saving an article in Pages CMS keeps tables and the `[[1]](link)` source links intact | Must be tried once (section 6). |
-| Long-term image caching on Netlify | The local imitation ignores Netlify's headers file. Check after the first deploy (section 6). |
 | HTTPS certificate, DNS, domain transfer, Private Email transfer, GitHub and Netlify ownership transfer | Written from the companies' published instructions only: see `docs/DNS-AND-TRANSFER.md`. |
 | Google Analytics, the newsletter form, affiliate programs | Not set up yet. |
 

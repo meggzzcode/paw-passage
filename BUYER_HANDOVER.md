@@ -37,7 +37,7 @@ There is no custom database or backend, and Hostinger is not used.
 1. You edit something in Pages CMS and save.
 2. Pages CMS saves your change into GitHub.
 3. Netlify notices the change, rebuilds the site, and publishes it. This usually takes a few minutes.
-4. If the rebuild fails, Netlify keeps showing the previous version of the site, so visitors never see a broken page. You will get an email from Netlify (turn on "deploy failed" notifications in Netlify, section 6).
+4. If the rebuild fails, Netlify keeps showing the previous version of the site, so visitors never see a broken page. **On Netlify's free plan you are not emailed about a failed build** (email alerts are a paid feature; tested 2026-11-17). So after saving a change, wait about three minutes and check that it appeared. If it did not, open Netlify's **Deploys** page: a failed build shows there with a plain message naming the file and the field to fix. Optional free alert: Netlify can post a pass/fail mark on each GitHub commit (see section 6, step 4).
 
 ### Saving is not publishing
 
@@ -80,7 +80,7 @@ If an editor saves a half-finished draft, the build skips it and carries on. If 
 
 | Not verified | Why |
 |---|---|
-| A real deploy on Netlify, and automatic rebuild when GitHub changes | No Netlify account was available. The settings are prepared in `netlify.toml`. |
+| ~~A real deploy on Netlify and automatic rebuild when GitHub changes~~ | **Now tested (2026-11-17):** a real deploy worked, a GitHub change published itself in about a minute, and a deliberately bad edit failed the build while the live site stayed up. See `docs/LIVE-TEST-RESULTS.md`. Still open: the full site checker (the test project is set to Private, which blocks outside checks) and failure emails (a paid Netlify feature). |
 | Pages CMS itself: signing in, installing its GitHub App, the editing forms, saving | Needs your GitHub login. The form file (`.pages.yml`) was written from Pages CMS's documentation and checked by tests, but never opened in the real app. |
 | Whether Pages CMS saves straight to the main branch or can use branches / pull requests | The documentation does not say. The "Approved by" safeguard works either way. |
 | Whether a collaborator with no GitHub account can sign in to Pages CMS | Not stated in the documentation. |
@@ -100,13 +100,13 @@ Do these in order. Each step says what "working" looks like.
 3. **Run the site checker** against that address (needs only Node 22):
    `node scripts/verify-site.mjs https://YOUR-NAME.netlify.app`
    *Working:* it ends with "0 failed". It will report one failed check about image caching if Netlify is not applying the headers file; if so, tell a developer.
-4. **Turn on deploy-failed emails** in Netlify's notification settings so you hear about a broken edit (the exact menu name may differ; look for "Notifications" or "Deploy notifications").
+4. **Failure alerts.** Email alerts are not available on Netlify's free plan. Either accept that you check the Deploys page after a change, or add the free "GitHub commit status" notification in Netlify so each commit in GitHub shows a pass or fail mark. (It posts statuses on the repository's commits.)
 5. **Pages CMS.** Open app.pagescms.org, sign in with GitHub, install its GitHub App on the repository, and open the project. *Working:* you see Articles, Stays, Affiliate links and Business settings.
 6. **Harmless edit test.** Change the "Last checked on" date of the sample article, save, then look in GitHub for a new entry in the history. *Working:* a commit appears, Netlify starts a build, and a few minutes later the live article shows the new date. Write down which branch the commit went to.
 7. **Rich-text test.** Open an article, change one word, save, and in GitHub look at what changed. *Working:* only that word changed. *Not working:* if tables or the source links changed, stop and ask a developer to switch that field to the plain-text editor.
 8. **Draft test.** Create a new article, leave it on *Draft*, save. *Working:* it does not appear on the live site, and its address shows "404".
 9. **Unapproved test.** Set Status to *Published* but leave *Approved by* empty. *Working:* still not on the live site.
-10. **Mistake test.** Put the wrong text in a link (for example `abc`) in the Affiliate links form and save. *Working:* the Netlify build fails with a message naming the field, the live site keeps working, and you get an email. Fix it and save again.
+10. **Mistake test.** Put the wrong text in a link (for example `abc`) in the Affiliate links form and save. *Working:* the Netlify build fails with a message naming the field, and the live site keeps working. (Tested on 2026-11-17.) Fix it and save again.
 11. **Collaborator test.** Invite a second person by email in Pages CMS. *Working:* they can sign in and edit. Note whether they needed a GitHub account.
 12. **Set the real details** in Business settings (website address, email, Google Analytics ID), then re-run the site checker with `--site-url https://yourdomain.com` to check canonical addresses and the sitemap.
 
@@ -126,7 +126,7 @@ The detailed, step-by-step instructions are in **`docs/DNS-AND-TRANSFER.md`**. I
 ## 8. Remaining transfer risks (most important first)
 
 1. **Most content is not editable in Pages CMS yet.** 15 articles, the towns, the gear product lists and the legal pages are code. Until `docs/MIGRATION-PLAN.md` is carried out, editing them needs a developer.
-2. **Nothing has been tested on real accounts.** Section 5 lists what remains. The most important unknowns are a real Netlify deploy and the real Pages CMS editing forms.
+2. **Only the Netlify part has been tested on a real account** (2026-11-17). Pages CMS, Namecheap and the ownership transfers have not. The most important unknown is the real Pages CMS editing forms.
 3. **Private Email cannot be pushed with the domain.** Plan this early; fees and downtime are unconfirmed.
 4. **A hidden build dependency on Lovable's published configuration package** (`@lovable.dev/vite-tanstack-config`, version-pinned, from the public npm registry). It installs fine today. If Lovable ever withdrew it, a fresh install would fail. A developer can replace it with a standard configuration. The code also has a harmless error-reporting hook for Lovable's editor that does nothing without it.
 5. **Two package lists in the repository** (`package-lock.json` for Netlify, `bun.lock` for Lovable). They can drift apart; the automatic GitHub check now fails if they do.
@@ -137,7 +137,8 @@ The detailed, step-by-step instructions are in **`docs/DNS-AND-TRANSFER.md`**. I
 10. **The legal pages (privacy, terms, affiliate disclosure) are drafts** and have not had a lawyer's review. Do that before launch and after any change of owner.
 11. **The site loads fonts from Google Fonts**, and Google Analytics only once an ID is entered. The privacy page should say so.
 12. **Photos:** stock photos are free-to-use under the Unsplash licence; the home page picture is AI-generated. Any photo of a real rental needs the owner's written permission.
-13. **Domain basics:** keep auto-renew on, keep the Namecheap sign-in and recovery email under the buyer's control, and check whether changing the owner's contact details triggers a transfer lock (the sources conflict).
+13. **No failure emails on Netlify's free plan, and new projects may default to Private.** A failed build is silent unless someone looks at the Deploys page. A project set to Private makes the website ask visitors to sign in to Netlify: a live site must be set to public. Check this on day one.
+14. **Domain basics:** keep auto-renew on, keep the Namecheap sign-in and recovery email under the buyer's control, and check whether changing the owner's contact details triggers a transfer lock (the sources conflict).
 
 ## 9. Where things live (for a developer)
 

@@ -13,147 +13,93 @@ export const guide: Guide = {
   author: "Paws & Passage Editors",
   publishedOn: "2026-11-16",
   lastReviewed: "2026-11-16",
-  readingMinutes: 14,
+  readingMinutes: 9,
   heroImage: "gear-rental-protection",
-  body: `## Start with the host, then the gear
+  body: `## The short answer
 
-Most dog mess at a rental is predictable: hair on upholstery, mud on a floor, a wet dog on a bed, an occasional accident. A few pieces of washable gear handle a lot of it. But gear is the second step, not the first.
+- Ask the host before you pack anything. Airbnb says that even when pets are allowed, you should contact the host to confirm, and gives the example that pets may not be allowed on beds or sofas. [[1]](https://www.airbnb.com/help/article/86)
+- A cover helps you follow a permission the host has given. It is not a way around a rule, and it does not stop claws or chewing.
+- For most trips, a washable throw, a roll-up travel bed and dog-only towels cover the common mess.
+- A back-seat cover or hammock protects upholstery. It is not a restraint and not crash protection, so use a properly fitted harness or crate as well. [[6]](https://www.kurgo.com/p/heather-hammock/K01598)
 
-The first step is the host's rules. Airbnb's help page says that even when a listing allows pets, you should always contact the host to confirm, tell them which pets you plan to bring, and ask whether restrictions apply. It gives one example of a restriction: pets may not be allowed on beds or sofas. [[1]](https://www.airbnb.com/help/article/86) Vrbo's house-rules page says hosts can state whether pets are allowed, how many, what kind and any size limit, and that travelers must agree to the house rules before they can book. [[3]](https://help.vrbo.com/articles/what-are-house-rules)
+## How we picked these
 
-That is why a couch cover does not replace asking about furniture. A cover is a tool for following a rule or a permission the host has given you. It is not a way around a rule, and nothing in this guide suggests hiding a dog, hiding hair, or ignoring a no-furniture rule.
+The picks come from criteria and from specifications on each maker's own product page. Paws & Passage has not tested, used or reviewed these products, and nothing here is a performance claim of ours. Words like waterproof or machine washable are the maker's wording. We looked for a currently listed product with a clear statement of size and materials, a washing instruction or washable claim, and a design that fits a real rental or road-trip situation, and dropped products whose pages we could not read. We list no prices because they change. Availability also changes, so confirm your size is in stock on the seller's page.
 
-### What this guide covers
-
-- Furniture covers and throws for sofas and chairs, where the host allows dogs on them.
-- A travel bed or mat, so the dog has its own place and the furniture is less tempting.
-- Towels and wipe-down habits for mud, rain and swimming.
-- Back-seat covers and hammocks for protecting the car interior.
-- What to ask the host, and how pet fees relate to cleaning.
-
-**Important framing.** The picks here are chosen from criteria and from specifications on each maker's own product page. Paws & Passage has not tested, used or reviewed these products, and nothing here is a performance claim of ours. Claims like waterproof or machine washable are the maker's wording, and we say so. We list no prices because they change.
+Some links are affiliate links, marked as sponsored, with a notice at the top of the article. If you buy through one, Paws & Passage may earn a commission at no extra cost to you; that never changes which products we list or what we say. Read the full [affiliate disclosure](/affiliate-disclosure).
 
 ## What to ask the host before you pack anything
 
-Put the questions in writing through the booking platform so the answer is on record. Our [host-question tool](/tools/host-questions) has a ready list; the ones that matter for this guide are below.
+Vrbo's house-rules page says hosts can state whether pets are allowed, how many, what kind and any size limit, and that travelers must agree to the house rules before booking. [[3]](https://help.vrbo.com/articles/what-are-house-rules) Put your questions in writing through the booking platform so the answer is on record; our [host-question tool](/tools/host-questions) has a ready list.
 
-1. **Are dogs allowed on the furniture, and which pieces?** Some hosts allow dogs on a sofa but not on beds. Some allow it only with a throw. Ask for the specific rule rather than assuming.
-2. **May I bring my own throw, cover or dog bed, and is there anywhere you would prefer it go?** Most hosts are glad to hear a guest plans to protect the furniture. A few have their own cover or a designated spot.
-3. **Is there a rule about dogs on the bed or in bedrooms?** Bedding is the most commonly restricted item, so check it by name.
-4. **Where should I dry and rinse a muddy dog?** An outdoor tap, a mudroom, a bathtub, or none of the above. Ask before you use the tub or a washing machine.
-5. **Can I use the washer for my dog's bed or cover?** Some hosts say no to pet items in the household washer. Others are fine with it. Ask rather than guess.
-6. **What does the pet fee cover?** See the next section.
-
-Save the host's reply with the booking. If a disagreement comes up later, a written answer about furniture is much more useful than a memory.
+1. **Are dogs allowed on the furniture, and which pieces?** Some hosts allow a sofa but not beds, or only with a throw. Ask for the specific rule.
+2. **May I bring my own throw, cover or dog bed, and where would you prefer it go?**
+3. **Is there a rule about dogs on beds or in bedrooms?** Bedding is the most commonly restricted item.
+4. **Where should I rinse a muddy dog?** Ask before you use the tub.
+5. **Can I wash the dog's bed or cover in your washer?** Some hosts say no.
+6. **What does the pet fee cover?**
 
 ### Where cleaning and damage fit
 
-Airbnb's help page on pet fees says a pet fee should cover the expected cleaning that comes with hosting pets, and it separates that from unexpected damage. [[2]](https://www.airbnb.com/help/article/3623) That helps explain why hair on a sofa is a different matter from a torn cushion. Our guide to [how vacation rental pet fees work](/guides/how-vacation-rental-pet-fees-work) covers the fee structures, deposits, holds and damage terms in detail, and our [pet-friendly rental checklist](/guides/pet-friendly-vacation-rental-checklist) covers the rest of the pre-booking questions.
+Airbnb's help page on pet fees says a pet fee should cover the expected cleaning that comes with hosting pets, and separates that from unexpected damage. [[2]](https://www.airbnb.com/help/article/3623) That is why hair on a sofa is a different matter from a torn cushion. See [how vacation rental pet fees work](/guides/how-vacation-rental-pet-fees-work) and our [pet-friendly rental checklist](/guides/pet-friendly-vacation-rental-checklist).
 
-A cover does not remove your responsibility. It can reduce hair and moisture reaching a surface. It does not stop claws, chewing or a determined dog. If your dog scratches or chews furniture, the right plan is crating or supervision, a conversation with the host, or a different rental, not a thicker cover.
-
-## How we choose and how this site earns money
-
-We chose products using criteria, from specifications rather than from using the products. For each pick we looked for a product the maker currently lists, a clear statement of size and materials, a washing instruction or a washable claim, and a design that matches a real rental or road-trip situation. We recorded the specs from the maker's own page on the date shown in each source and dropped products whose pages we could not read or confirm. The picks are specification-based; none were tested by us.
-
-Some links on this site are affiliate links. When an article contains one, a notice appears at the top of the article and the link is marked as sponsored. If you buy through an affiliate link, Paws & Passage may earn a commission at no extra cost to you. A commission never changes which products we list or what we say about them. Read the full [affiliate disclosure](/affiliate-disclosure).
+If your dog scratches or chews furniture, crate or supervise, talk to the host, or choose a different rental; a thicker cover is not the answer.
 
 ## Choosing a washable furniture cover or throw
 
-If the host allows your dog on a sofa or chair, the cover is the first piece of gear to think about. Here is what separates one cover from another.
+If the host allows your dog on a sofa or chair, this is the first piece of gear to think about.
 
-### Fit
-
-A loose cover bunches, slides and leaves gaps where hair gets in. Measure the width of the sofa between the arms and the depth of the seat before you choose. Fitted covers are sold in sizes by sofa width, so check the maker's size table. A throw is not fitted. The Orvis Embossed Sherpa Throw is listed at 40 by 40 inches, which is a lap-and-seat-sized layer rather than full coverage. [[4]](https://www.orvis.com/p/embossed-sherpa-throw/28F4) You will not know the host's furniture in advance, so ask for approximate dimensions or a photo, or choose a throw that tolerates a range of sizes.
-
-### Grip
-
-A cover that slides under a dog does not protect much. Non-slip backing and wraparound flaps help, and so does tucking the edges into the cushions. Slick leather or microfiber can let any cover shift, so check it after the dog first jumps up. If the host's furniture is leather, ask whether a cover is acceptable at all before you bring one.
-
-### Moisture
-
-Water resistance is a useful extra for a swimming dog, a rainy hike or an accident. Read the exact wording. The Orvis throw page lists no waterproof or water-resistant claim, so treat it as a hair-and-dirt layer rather than a moisture barrier. [[4]](https://www.orvis.com/p/embossed-sherpa-throw/28F4) A towel or a waterproof throw is still the better first line for a soaked dog.
-
-### Washing
-
-Machine-washable matters because the cover will pick up hair, smell and dirt over a trip, and you want to wash it before you return home. Check whether it must be washed with a gentle cycle, whether it can be dried in a machine and whether it will survive more than a few washes. Orvis lists the throw's care as machine wash and gives no other washing details, so check the label when it arrives. [[4]](https://www.orvis.com/p/embossed-sherpa-throw/28F4)
-
-### Packability
-
-A full fitted couch protector is bulky for a suitcase or a car. If you travel by air, or you have little cargo space, a washable throw blanket in a familiar fabric is usually easier to pack. Your own cotton throw or an old bedsheet is a perfectly reasonable low-tech option, as long as it is clean and, ideally, one the dog already knows.
+- **Fit.** A loose cover bunches and leaves gaps. Measure sofa width between the arms and seat depth, and check the maker's size table. A throw is not fitted: the Orvis Embossed Sherpa Throw is listed at 40 by 40 inches, a lap-and-seat-sized layer rather than full coverage. [[4]](https://www.orvis.com/p/embossed-sherpa-throw/28F4) Ask the host for dimensions or a photo.
+- **Grip.** A cover that slides under a dog protects little. Non-slip backing, wraparound flaps and tucked edges help. Check it after the dog first jumps up, and if the furniture is leather, ask whether a cover is acceptable at all.
+- **Moisture.** Read the exact wording. The Orvis page lists no waterproof or water-resistant claim, so treat it as a hair-and-dirt layer. [[4]](https://www.orvis.com/p/embossed-sherpa-throw/28F4) For a soaked dog a towel or waterproof throw is still the better first line.
+- **Washing.** Check the cycle, whether it can go in a dryer and whether it survives repeated washes. Orvis lists the care as machine wash and gives no other details, so check the label. [[4]](https://www.orvis.com/p/embossed-sherpa-throw/28F4)
+- **Packability.** A full fitted protector is bulky. A washable throw is easier to pack, and your own clean cotton throw or old bedsheet is a fine low-tech option, ideally one the dog already knows.
 
 ## Travel beds and mats
 
-The easiest way to protect furniture is to give the dog a place that is clearly theirs. A travel bed or mat does three jobs. It takes the hair, mud and dampness the dog brings in, it gives the dog a settled spot in an unfamiliar room, and it is easy to wash or shake out before checkout.
+A travel bed gives the dog a place that is clearly theirs. It takes hair, mud and damp, settles the dog in an unfamiliar room, and is easy to wash or shake out before checkout. Look for a non-slip base, stated care instructions, room to stretch out, a small packed size and a moisture barrier if the dog is often damp.
 
-### What to look for
+The Kurgo Loft Wander Dog Bed is an example. The maker lists a medium at 27 by 36 by 2 inches open and 12.5 by 8 inches rolled, and a large at 36 by 48 by 3 inches open and 17 by 9.5 inches rolled, with a waterproof, nonslip bottom and a handle. Care is hand or gentle machine wash in cold water with mild detergent and no bleach, then hang dry. [[5]](https://www.kurgo.com/p/tago-bed/K81022) The page lists no weight, so check the packed size against your luggage. A bed this thin is a boundary and a surface, not an orthopedic bed.
 
-- **A non-slip base**, so it stays put on hardwood or tile.
-- **Easy cleaning**, either machine washable or wipeable, with the care instructions stated by the maker.
-- **Size**, so the dog can stretch out. Compare the maker's flat dimensions with your dog's length lying down.
-- **Packed size and weight**, especially for a flight or a small car.
-- **A moisture barrier**, if the dog will often be damp.
-
-The Kurgo Loft Wander Dog Bed is an example of the type. The maker lists a medium that is 27 by 36 by 2 inches open and 12.5 by 8 inches rolled up, and a large that is 36 by 48 by 3 inches open and 17 by 9.5 inches rolled up. It lists a waterproof bottom, a nonslip bottom and a handle for toting. For care it says to wash by hand or machine on a gentle cycle with cold water, mild detergent and no bleach, then hang dry. [[5]](https://www.kurgo.com/p/tago-bed/K81022) The page lists no weight, so check the packed size against your luggage. A bed this thin is a boundary and a surface, not an orthopedic bed.
-
-### A bed is not a barrier
-
-A pad does not prevent a dog from climbing onto a sofa. Teach the spot at home before the trip and bring the same bed, so it already smells right. For many dogs, a familiar bed placed near the family does more than any cover.
+A pad does not stop a dog climbing onto a sofa. Teach the spot at home and bring the same bed.
 
 ## Towels and the arrival routine
 
-A good towel does more for a rental floor than most other gear. Dry the dog at the door, before they walk across the carpet, and wipe paws.
+A good towel does more for a rental floor than most gear. Dry the dog at the door and wipe paws before they cross the carpet.
 
-- Bring two or three towels that are only for the dog, in a color you will recognize. Do not use the rental's bath towels unless the host says it is fine.
-- Pack a small mat or old towel for the entrance, and a roll of bags and a small brush or lint roller.
-- Rinse muddy paws outside if possible, or ask the host about the best spot. Do not wash a dog in a sink or tub without checking.
-- Before checkout, vacuum or brush the areas the dog used if the rental's guidelines ask for it, and follow any checkout cleaning instructions in the listing.
+- Bring two or three dog-only towels in a color you will recognize. Do not use the rental's bath towels unless the host says it is fine.
+- Pack an entrance mat or old towel, waste bags and a lint roller.
+- Rinse muddy paws outside if possible. Do not wash a dog in a sink or tub without checking.
+- Before checkout, vacuum or brush the areas the dog used if the listing asks, and follow any checkout cleaning instructions.
 
-We do not recommend a specific towel in this guide. We looked at wearable, absorbent towels and could not confirm current availability on a maker page, so we left them out rather than guess. Any towel you pick should be absorbent, quick to dry and machine washable, and you should wash it before you return home.
+We recommend no specific towel, as we could not confirm current availability on a maker page. Choose one that is absorbent, quick to dry and machine washable.
 
 ## Back-seat covers and hammocks for the car
 
-A back-seat cover protects upholstery from hair, mud, drool and scratches. It is useful in your own car, and it can be useful on a road trip where you will be getting in and out of the car at rest stops, trailheads and beaches.
+A back-seat cover protects upholstery from hair, mud, drool and scratches at rest stops, trailheads and beaches.
 
-**A back-seat cover is not a restraint.** It does not keep a dog from being thrown in a collision, and it is not crash protection. Makers rarely claim otherwise. The Kurgo Heather Hammock page, for example, makes no crash-test or restraint claims. [[6]](https://www.kurgo.com/p/heather-hammock/K01598) Treat a cover as an upholstery layer and use a properly fitted harness or crate for safety. Our [car-safety guide](/guides/dog-car-safety-harness-and-crate-guide) covers harnesses and crates, and you should also check your harness or crate maker's own instructions.
+**A back-seat cover is not a restraint.** It does not keep a dog from being thrown in a collision, and it is not crash protection. The Kurgo Heather Hammock page, for example, makes no crash-test or restraint claims. [[6]](https://www.kurgo.com/p/heather-hammock/K01598) Use a properly fitted harness or crate, following the maker's instructions; our [car-safety guide](/guides/dog-car-safety-harness-and-crate-guide) covers both.
 
-### Bench cover or hammock
+- **A bench cover** lies over the seat and works if the dog sits or lies on it.
+- **A hammock** attaches to the front and back headrests, adds a barrier above the footwell and catches hair and mud there.
 
-- **A bench cover** lies over the seat. It is simpler and works if the dog sits or lies on the seat.
-- **A hammock** attaches to the front and back headrests and spans the gap to the front seats. It adds a barrier between the dog and the footwell, and it catches hair and mud there. Some convert between the two forms.
+Hammocks are made for bench seats. Kurgo says to use its hammock with a bench seat underneath, and not with bucket seats or over an open space. [[6]](https://www.kurgo.com/p/heather-hammock/K01598) What to check:
 
-Hammocks are made for bench seats. The Kurgo Heather Hammock page says to use it in vehicles with bench seats under it and not to use it with bucket seats or over an open space without a bench seat. [[6]](https://www.kurgo.com/p/heather-hammock/K01598) Check your car's seat layout before you buy.
+- **Fit.** Measure your back seat. The Kurgo hammock is 55 inches wide by 56 inches long and may not fit large trucks or SUVs. [[6]](https://www.kurgo.com/p/heather-hammock/K01598)
+- **Seat-belt access.** Hook-and-loop openings or zippers let a person use the belt; Kurgo lists them for seat belts and latch systems. [[6]](https://www.kurgo.com/p/heather-hammock/K01598) They are not a place to add a tether or any other accessory to a dog's harness. Connect the harness to the seat belt only as the harness maker instructs, and never add an extension tether or zipline-style device.
+- **Secure attachment.** Kurgo says its hammock attaches at eight points with anchors and under-seat paracord. A cover that slides can be a distraction in a moving car. A center zipper folds back half the cover so a person can sit. [[6]](https://www.kurgo.com/p/heather-hammock/K01598)
+- **Water claims.** Kurgo describes the hammock as waterproof and stain resistant and lists no material composition or rating. [[6]](https://www.kurgo.com/p/heather-hammock/K01598) Seams, zippers and belt openings can still let liquid through, so wipe spills quickly.
+- **Washing.** Kurgo's separate instructions PDF says hand washing and hang air-drying is the best care, and that the hammock should rest on the seat fully and not hang over it. [[7]](https://cdn.shopify.com/s/files/1/0554/6252/7165/files/Heather_Hammock_En-Fr-DE-ES_10-18_20faa73e-d121-4cf6-aae4-4f1842c10e35.pdf?v=1628066949)
 
-### What to look for
-
-- **Fit to your vehicle.** Measure the width of your back seat. The Kurgo hammock is 55 inches wide by 56 inches long and says it may not fit large trucks or SUVs. [[6]](https://www.kurgo.com/p/heather-hammock/K01598)
-- **Seat-belt access.** Hook-and-loop openings or zippers let a person use the belt. They are not a place to add a tether or any other accessory to a dog's harness. Connect the harness to the seat belt only as the harness maker instructs, and never add an extension tether or zipline-style device. Kurgo lists hook-and-loop openings for seat belts and latch systems. [[6]](https://www.kurgo.com/p/heather-hammock/K01598)
-- **Secure attachment.** Kurgo says its hammock attaches at eight points with anchors and under-seat paracord. [[6]](https://www.kurgo.com/p/heather-hammock/K01598) A cover that slides can be a distraction in a moving car.
-- **A way to seat a person.** Kurgo's center zipper folds back half the cover so a human passenger can sit. [[6]](https://www.kurgo.com/p/heather-hammock/K01598)
-- **Material and water claims.** Kurgo describes its hammock as waterproof and stain resistant and lists no material composition or waterproof rating. [[6]](https://www.kurgo.com/p/heather-hammock/K01598) Seams, zippers and belt openings can still let liquid through, so treat these as water-resistant to a degree and wipe spills quickly.
-- **Washing.** Kurgo's product page points to a separate instructions PDF. That PDF says washing by hand and hang air-drying is the best way to care for Kurgo products. [[7]](https://cdn.shopify.com/s/files/1/0554/6252/7165/files/Heather_Hammock_En-Fr-DE-ES_10-18_20faa73e-d121-4cf6-aae4-4f1842c10e35.pdf?v=1628066949) The same PDF says the hammock should rest on the seat fully and not hang over it.
-
-### A note on a rental car
-
-If you are renting a car rather than a vacation home, check the rental company's pet policy before you bring a dog, and ask whether a cover is acceptable. This guide does not cover rental-car rules, which differ by company.
+Renting a car? Check the rental company's pet policy first; this guide does not cover rental-car rules.
 
 ## The picks, by situation
 
-These are specification-based picks, not tested products. Each one is described using the maker's own page. We list no prices. We checked each seller's page on 2026-11-16 and each showed an Add to Cart button, but availability changes, and a page can show a button for a size or color that is sold out, so confirm that the product is in stock in your size on the seller's page before relying on it. Sizes and colors can sell out without notice.
+We checked each seller's page on 2026-11-16 and each showed an Add to Cart button, but a page can show a button for a size or color that is sold out.
 
-### If the host allows your dog on the sofa: Orvis Embossed Sherpa Throw
-
-A 40-by-40-inch two-layer sherpa fleece throw that you lay over the sofa or chair, listed as machine wash. It suits a trip where you know the host allows dogs on the sofa and you want something easy to pack and wash. It is a throw, not a fitted cover, so it will not stay put on its own, and the page lists no water-resistance claim.
-
-### If you want a place that is the dog's own: Kurgo Loft Wander Dog Bed
-
-A roll-up travel bed in medium and large with a nonslip, waterproof bottom and a handle. It suits a dog that settles on a floor spot and a trip where you can carry a rolled bundle. It is thin, so it is a boundary and not a plush bed.
-
-### If you are driving with a dog on a bench seat: Kurgo Heather Hammock
-
-A hammock with seat-belt openings and a center zipper that folds back for a person. The maker says it is for bench seats and may not fit large trucks or SUVs, so measure your rear seat against 55 by 56 inches. Check the width and the bucket-seat warning first.
-
-### Quick comparison
+- **Host allows your dog on the sofa: Orvis Embossed Sherpa Throw.** A 40-by-40-inch two-layer sherpa fleece throw, listed as machine wash. Easy to pack, but it will not stay put on its own.
+- **A place that is the dog's own: Kurgo Loft Wander Dog Bed.** A roll-up bed in medium and large with a nonslip, waterproof bottom and a handle.
+- **Driving with a dog on a bench seat: Kurgo Heather Hammock.** Seat-belt openings and a center zipper. Measure your rear seat against 55 by 56 inches and check the bucket-seat warning first.
 
 | Situation | Gear type | Main thing to check |
 | --- | --- | --- |
@@ -165,24 +111,18 @@ A hammock with seat-belt openings and a center zipper that folds back for a pers
 
 ## How to use gear without making it worse
 
-1. **Test the setup at home.** Put the cover, pad or hammock in place and see whether the dog slides, scratches or refuses. A cover the dog hates is no protection.
-2. **Pack a clean spare.** A second cover or throw means one can be in the wash.
-3. **Do not leave a dog alone on a cover.** Many rentals have rules about unattended pets, so check the listing before you leave the dog in the unit.
-4. **Photograph the condition on arrival.** Report pre-existing damage through the booking channel, as in our fee guide. A photo of the furniture before you put the cover on is useful.
-5. **Wash and fold before checkout.** If the rental has laundry rules, follow them. Otherwise take the covers home to wash.
-6. **Shake and vacuum the dog's spots.** Brush the places the dog used before you go, as a courtesy, and follow any checkout cleaning steps in the listing.
-
-Add the packing items to the [trip checklist](/tools/checklist), so the towels, spare cover and entrance mat go in the bag with the leash.
+1. **Test the setup at home.** A cover the dog hates is no protection.
+2. **Pack a clean spare** so one can be in the wash.
+3. **Do not leave a dog alone on a cover.** Many rentals have rules about unattended pets, so check the listing.
+4. **Photograph the condition on arrival** and report pre-existing damage through the booking channel, as in our fee guide.
+5. **Wash and fold before checkout,** following any laundry rules; otherwise take covers home to wash.
 
 ## What gear cannot do
 
-Be honest about the limits.
-
-- **It cannot stop claws or teeth.** A cover masks hair and moisture. It does not stop a dog that scratches, digs or chews.
-- **It cannot make a no-dogs-on-furniture rule go away.** If the host says no, the dog stays off the sofa. Use a bed and a crate instead.
-- **It cannot replace asking.** Even a host who allows dogs on furniture may prefer a particular approach. Ask, and keep the answer.
+- **It cannot stop claws or teeth.** A cover masks hair and moisture, not a dog that scratches, digs or chews.
+- **It cannot make a no-dogs-on-furniture rule go away.** If the host says no, use a bed and a crate instead.
 - **It cannot protect in a collision.** A back-seat cover is not a restraint.
-- **It does not replace cleaning.** Pet-fee terms and checkout instructions still apply, and so does leaving the place in good condition.
+- **It does not replace cleaning.** Pet-fee terms and checkout instructions still apply.
 
 ## Final checklist
 
@@ -195,7 +135,7 @@ Be honest about the limits.
 - [ ] Took before photos and saved the host's messages.
 - [ ] Washed or shook out the gear before checkout.
 
-For the money side, read how [pet fees actually work](/guides/how-vacation-rental-pet-fees-work), then run through the [pet-friendly rental checklist](/guides/pet-friendly-vacation-rental-checklist) and send the questions with the [host-question tool](/tools/host-questions).`,
+Add the packing items to the [trip checklist](/tools/checklist), and send your questions with the [host-question tool](/tools/host-questions).`,
   faqs: [
     {
       q: "Can I use a couch cover at a vacation rental without asking?",

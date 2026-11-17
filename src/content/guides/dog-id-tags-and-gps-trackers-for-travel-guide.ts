@@ -13,162 +13,118 @@ export const guide: Guide = {
   author: "Paws & Passage Editors",
   publishedOn: "2026-11-16",
   lastReviewed: "2026-11-16",
-  readingMinutes: 14,
+  readingMinutes: 9,
   heroImage: "gear-id-tracking",
-  body: `## Why travel changes the lost-dog problem
+  body: `## The short answer
 
-At home, a dog that slips out of the yard is usually in familiar territory, near neighbors who know the dog and a vet who has the records. On a trip, almost none of that is true. The streets are unfamiliar, the smells are new, the dog may be tired or startled, and you do not know the nearest shelter, the local animal control number or which neighborhood group to post in.
+- Use three layers that cover for each other: a visible tag, a registered microchip and, if your trip suits it, a tracker. No gear stops a dog getting lost; it shortens the time between "gone" and "found."
+- A microchip is an ID number, not a tracker. It only helps if the registry record is current and someone scans the dog. [[4]](https://www.akcreunite.org/travel/)
+- A cellular GPS tracker needs a subscription, cellular coverage and a charged battery. A Bluetooth item tag depends on other people's phones being nearby. [[7]](https://tractive.com/en/pd/gps-tracker-dog)
+- If your dog goes missing, start searching close to where it was last seen right away, then call your registry, animal control, vets and shelters. [[3]](https://www.akcreunite.org/lostpettips/)
 
-That is why identification deserves more thought on the road than it gets in daily life. A dog that is easy to identify, and whose contact details are current, is easier to return to you wherever you happen to be.
-
-This guide covers three layers of findability and how they fit together:
-
-- **A visible ID tag** that anyone can read on the spot.
-- **A microchip with a registration record** that works even if the collar is gone.
-- **A GPS or Bluetooth tracker** that can help you work out where to look.
-
-It then gives a lost-dog plan for an unfamiliar place, and a pick-by-situation section for gear. No gear can promise a dog will not get lost. What the layers do is shorten the time between "gone" and "found," and none of them replaces watching the dog, a secure leash or harness, and a secure rental.
-
-Related reading: our [pet-friendly rental checklist](/guides/pet-friendly-vacation-rental-checklist) covers the rental itself, and the [secure fenced yard guide](/guides/vacation-rental-secure-fenced-yard) covers checking a yard before you rely on it. You can add ID tasks to the [trip checklist](/tools/checklist).
+Related: our [pet-friendly rental checklist](/guides/pet-friendly-vacation-rental-checklist), the [secure fenced yard guide](/guides/vacation-rental-secure-fenced-yard) and the [trip checklist](/tools/checklist).
 
 ## Layer one: the visible ID tag
 
-A tag is the fastest layer because it needs no equipment. A person who finds your dog can read it and call you.
+The ASPCA advises a collar with an ID tag listing the owner's name, current phone number and other contact details, even for indoor-only pets. [[1]](https://www.aspca.org/pet-care/general-pet-care/finding-lost-pet) AKC Reunite adds that a visible tag lets a Good Samaritan help immediately, with no wait for Animal Control to scan for a chip. [[6]](https://www.akcreunite.org/idtags/)
 
-The ASPCA advises that pets wear a collar with an ID tag listing the owner's name, current phone number and other contact details, and says this applies even to indoor-only pets. [[1]](https://www.aspca.org/pet-care/general-pet-care/finding-lost-pet) AKC Reunite makes the same practical point from the other side: a visible collar tag means a Good Samaritan can help immediately, with no trip to a veterinary clinic and no wait for Animal Control to scan for a microchip. [[6]](https://www.akcreunite.org/idtags/)
+**What a travel tag should say:**
 
-### What a travel tag should say
+- **A mobile number you will answer while traveling.** It beats a landline you cannot pick up.
+- **A second contact.** The ASPCA's flyer advice lists two phone numbers, one for a friend or relative; the same logic works on a tag. [[1]](https://www.aspca.org/pet-care/general-pet-care/finding-lost-pet)
+- **Short and legible.** Collars break and tags fall off or wear smooth, as AKC Reunite notes. [[2]](https://www.akcreunite.org/importance/)
 
-Think about who will read it: a stranger, possibly in a hurry, possibly far from your home.
-
-- **A phone number that will be answered while you travel.** A mobile number beats a landline you cannot pick up.
-- **A second contact.** The ASPCA's flyer advice lists your name and two phone numbers, with one for a friend or relative. The same logic works on a tag or in your records. [[1]](https://www.aspca.org/pet-care/general-pet-care/finding-lost-pet)
-- **Short and legible.** Collars break and tags can fall off or become hard to read, as AKC Reunite notes. [[2]](https://www.akcreunite.org/importance/) Deep engraving and a tag that is not scratched flat matter more than extra words.
-
-### Keep the tag attached
-
-The usual failure is a tag that detaches. Check the ring and the connection before every trip, or choose a collar with the details built into a nameplate. If your dog's tags jingle against a rabies tag, a tag silencer can help; AKC Reunite lists a glow-in-the-dark plastic one for its own tag. [[6]](https://www.akcreunite.org/idtags/) A loose collar can also slip over a dog's head, so for a dog that backs out of collars, walk in new places on a fitted harness and keep a spare tag in the car.
+**Keep it attached.** The usual failure is a tag that detaches. Check the ring and connection before every trip, or choose a collar with the details on a built-in nameplate. AKC Reunite lists a glow-in-the-dark plastic silencer to stop jingling against a rabies tag. [[6]](https://www.akcreunite.org/idtags/) For a dog that backs out of collars, walk in new places on a fitted harness and keep a spare tag in the car.
 
 ## Layer two: the microchip and its registration
 
-A microchip is a permanent form of ID, but it does a narrower job than many owners assume.
+AKC Reunite describes a microchip as a grain-sized capsule a vet implants under the skin between the shoulder blades. It has no power source: a passive antenna is activated when a scanner passes over it, and the scanner reads an ID number. The number is like a blank collar tag until it is registered with your contact information. [[2]](https://www.akcreunite.org/importance/)
 
-### What a microchip is
+**What a microchip does not do:**
 
-AKC Reunite describes a microchip as a grain-sized capsule that a veterinarian implants under the skin between a dog's or cat's shoulder blades. It has no power source, so it is not a GPS and not an online directory. A small passive antenna is activated when a scanner passes over it, and the scanner reads an ID number. [[2]](https://www.akcreunite.org/importance/)
-
-The same page makes a point many owners miss: a microchip ID number does not do much on its own, and it is similar to a blank collar tag. The number has to be registered with your contact information. [[2]](https://www.akcreunite.org/importance/)
-
-### What a microchip does not do
-
-- **It does not locate your dog.** AKC Reunite's travel page calls a microchip not a tracking device but a unique ID number. [[4]](https://www.akcreunite.org/travel/)
-- **It does not help until someone scans it.** Veterinarians and shelters have scanners. A person who finds your dog may not know the dog is chipped unless they take the dog to one of those scanners, or the dog is wearing a tag that says so. (That last point is our own reasoning, not a statement from the sources below.)
-- **It does not show your details by itself.** AKC Reunite says only the microchip ID number appears when it is scanned, and then the registry is contacted to get the enrollment information linked to that number. [[4]](https://www.akcreunite.org/travel/)
+- **It does not locate your dog.** AKC Reunite's travel page calls it not a tracking device but a unique ID number. [[4]](https://www.akcreunite.org/travel/)
+- **It does not help until someone scans it.** A finder may not know the dog is chipped unless they take it to a vet or shelter scanner, or the tag says so. (Our own reasoning, not from the sources.)
+- **It does not show your details by itself.** Only the ID number appears on a scan; the registry is then contacted for the enrollment information linked to it. [[4]](https://www.akcreunite.org/travel/)
 
 ### Registration: the part that goes wrong
 
-The ASPCA says a microchip is only as good as the information provided to the chip's company, and tells owners to update the registration after moving or changing phone numbers. [[1]](https://www.aspca.org/pet-care/general-pet-care/finding-lost-pet)
+The ASPCA says a microchip is only as good as the information given to the chip's company, and tells owners to update it after moving or changing phone numbers. [[1]](https://www.aspca.org/pet-care/general-pet-care/finding-lost-pet) AKC Reunite says that, especially when traveling, you should verify your pet's enrollment information is up to date. [[4]](https://www.akcreunite.org/travel/) Before a trip, spend ten minutes on this:
 
-Before a trip, spend ten minutes on this:
+1. **Find the chip number** (vet records, adoption paperwork or registration email) and the registry holding it. If unsure, a vet can scan the chip and tell you who to call.
+2. **Check what is on file:** phone, email and any alternate contact.
+3. **Add an alternate contact.** AKC Reunite recommends one who lives outside your immediate area, in case a disaster knocks out phones or internet at home. [[5]](https://www.akcreunite.org/lostfoundpetfaq/)
+4. **Save the registry's number in your phone.** You may need to call them yourself.
 
-1. **Find the number.** Your vet's records, the adoption paperwork or the chip's registration email usually show it.
-2. **Find the registry.** If you are not sure which company holds the record, a vet can scan the chip and tell you the number to call.
-3. **Check what is on file.** Confirm that the phone number, the email and any alternate contact are current.
-4. **Add an alternate contact.** AKC Reunite recommends at least one alternate contact who lives outside your immediate area, in case a disaster knocks out phones or internet where you live. [[5]](https://www.akcreunite.org/lostfoundpetfaq/) For travel, an alternate who is home and reachable is just as useful.
-5. **Save the registry's number in your phone.** You may need to call them yourself, not wait to be called.
+### The universal lookup, and registration is not ownership
 
-AKC Reunite's travel page says explicitly that, especially when traveling, you should verify that your pet's enrollment information is up to date. [[4]](https://www.akcreunite.org/travel/)
+More than one pet recovery registry operates in the US, so a chip may be registered with one you have forgotten. An AAHA statement in the AKC Reunite FAQ describes its Universal Microchip Lookup Tool, which lets vets, humane organizations and owners search participating registries to see which hold a chip. AAHA says it keeps no database of microchips, only links to registries, and searches only companies that choose to participate. [[5]](https://www.akcreunite.org/lostfoundpetfaq/) Use a lookup to find the registry, then contact it to check or change the record.
 
-### The universal lookup and what it cannot do
+AKC Reunite also notes that enrollment helps the safe return of a pet but does not signify ownership. [[5]](https://www.akcreunite.org/lostfoundpetfaq/) Keep vet paperwork, clear photos and the chip number.
 
-There is more than one pet recovery registry in the United States, and a chip may be registered with one you have forgotten. The AKC Reunite FAQ carries a statement from the American Animal Hospital Association (AAHA) describing its Universal Microchip Lookup Tool. It says the tool lets veterinarians, humane organizations, pet owners and others search participating pet recovery registries to identify which ones have a particular microchip registered. AAHA says it does not maintain a database of microchips and only links to registries, and that the tool searches only companies that choose to participate. [[5]](https://www.akcreunite.org/lostfoundpetfaq/)
-
-In practice: use a lookup to learn where the chip is registered, then contact that registry to check or change the record. A lookup is not the registry.
-
-### Registration is not ownership
-
-AKC Reunite notes that enrollment helps the safe return of a pet but does not signify ownership. [[5]](https://www.akcreunite.org/lostfoundpetfaq/) Keep your own records: vet paperwork, a few clear photos of your dog, and the chip number.
-
-### A note on sources
-
-AKC Reunite is a registry that sells enrollment and collar tags, so read its pages with that in mind. It says it enrolls all brands of microchips. [[2]](https://www.akcreunite.org/importance/) The facts used here are mechanical ones about how chips and records work, and the ASPCA's guidance points the same way.
+AKC Reunite sells enrollment and collar tags, so read its pages with that in mind; the facts used here are mechanical ones the ASPCA's guidance backs. It says it enrolls all brands of microchips. [[2]](https://www.akcreunite.org/importance/)
 
 ## Layer three: GPS and Bluetooth trackers
 
-A tracker is the only layer that can show you where your dog is. It is also the layer with the most trade-offs, so it helps to separate the two common types.
-
 ### Cellular GPS trackers
 
-These carry a GPS receiver, a battery and a cellular connection, and send location to an app on your phone. Tractive's page puts it plainly: the tracker has a built-in SIM, like a phone, that uses mobile networks to send location, and the fees for that are covered by a subscription. [[7]](https://tractive.com/en/pd/gps-tracker-dog) Fi's app page says GPS and LTE track your pet's location and send live updates through the app. [[9]](https://tryfi.com/theapp)
+They send location to a phone app over a cellular connection. Tractive says its tracker has a built-in SIM, like a phone, with mobile network fees covered by a subscription. [[7]](https://tractive.com/en/pd/gps-tracker-dog) Fi's app page describes GPS and LTE tracking with live updates. [[9]](https://tryfi.com/theapp)
 
-What that means in practice:
-
-- **A subscription is part of the deal.** Check the maker's current terms before you buy, because plans and what they include change.
-- **Coverage matters.** Tractive says its trackers connect where there is 2G and/or LTE (CatM1) cellular coverage from one of its 500+ partners, in 175+ countries. [[7]](https://tractive.com/en/pd/gps-tracker-dog) If your route crosses patchy coverage, such as a remote trailhead or a campground, a cellular tracker may be quiet exactly when you need it. Look up the maker's coverage tool for the places you are going.
-- **Battery is a real limit.** The batteries on the two makers' pages range from days to months, and the figures depend on settings. Tractive lists up to 6 days for the DOG 6 without Power Saving Zones and up to 2 weeks with them. [[7]](https://tractive.com/en/pd/gps-tracker-dog) Fi lists up to 3 months. [[8]](https://tryfi.com/collar) A tracker that is not charged finds nothing.
-- **Size and fit.** Tractive lists the DOG 6 for dogs above 8.8 lbs and the DOG 6 XL for dogs above 44.1 lbs. [[7]](https://tractive.com/en/pd/gps-tracker-dog) A tracker that does not fit your dog or collar will be left at home.
-- **It must stay on.** A clip-on tracker that falls off is no help. Check the attachment each day, and think about wearing it on a harness.
+- **Subscription.** Plans and inclusions change, so check current terms before you buy.
+- **Coverage.** Tractive says its trackers connect where there is 2G and/or LTE (CatM1) coverage from one of its 500+ partners, in 175+ countries. [[7]](https://tractive.com/en/pd/gps-tracker-dog) A remote trailhead or campground may be a dead zone, so use the maker's coverage tool for your route.
+- **Battery.** Figures depend on settings. Tractive lists up to 6 days for the DOG 6 without Power Saving Zones and up to 2 weeks with them. [[7]](https://tractive.com/en/pd/gps-tracker-dog) Fi lists up to 3 months. [[8]](https://tryfi.com/collar) An uncharged tracker finds nothing.
+- **Size.** Tractive lists the DOG 6 for dogs above 8.8 lbs and the DOG 6 XL for dogs above 44.1 lbs. [[7]](https://tractive.com/en/pd/gps-tracker-dog)
+- **It must stay on.** Check the attachment daily.
 
 ### Bluetooth item trackers
 
-A Bluetooth tag works differently. Apple's page describes AirTag as sending a secure Bluetooth signal that nearby devices in the Find My network can detect, which then send the location to iCloud so you can see it on a map. [[10]](https://www.apple.com/airtag/) That design is meant for objects. Apple's page describes keys, bags and similar items and does not describe pet use, so check how any Bluetooth tag's maker treats pets before using it on a collar.
+Apple describes AirTag as sending a Bluetooth signal that nearby Find My devices detect and relay to iCloud, so you can see it on a map. [[10]](https://www.apple.com/airtag/) The page describes keys, bags and similar items, not pet use, so check how any Bluetooth tag's maker treats pets before using one on a collar. It depends on other people's devices being close: fine in a busy place, but on a trail or at night there may be none. Treat it as a weaker aid than cellular GPS, and no substitute for a tag or chip.
 
-The key difference is that it depends on other people's devices being close. Where there are lots of phones, that can help. On a trail, in a field, or at night in a quiet area, there may be none. Treat a Bluetooth tag as a weaker aid than a cellular GPS tracker, and not as a substitute for either a tag or a registered chip. A tracker with a battery is also a device that can fail, run flat or be lost.
+A tracker shows a location; it does not retrieve the dog, which may have moved by the time you arrive. If someone else finds your dog, the tag and chip are how they reach you.
 
-### What no tracker does
+## How we picked these, and how this site earns money
 
-A tracker shows a location. It does not retrieve the dog, and a dog that is moving, frightened or in a car may not be where the map says by the time you arrive. A tracker is a tool for the search plan below, not a replacement for it. And it is no substitute for a visible tag and a current microchip record: if someone else finds your dog, the tag and the chip are how they reach you.
+The picks below come from criteria and from specifications on each maker's own product page. Paws & Passage has not tested, used or reviewed any of them, and nothing here is a performance claim. We looked for a currently listed product with a clearly stated size range, battery life, and subscription and coverage terms. Where a page is silent, we say so.
 
-## How we choose and how this site earns money
-
-The picks below are chosen from criteria and from specifications on each maker's own product page. Paws & Passage has not tested, used or reviewed any of these products, and nothing here is a performance claim. The criteria are: a product the maker currently lists, a clearly stated size or weight range, a clearly stated power source and battery life where there is one, a plain statement of any subscription and coverage requirement, and fit for the situation described. Where a page does not say something, such as Fi's coverage area, we say so instead of guessing.
-
-Some links on this site are affiliate links. When an article contains one, a notice appears at the top of the article and the link is marked as sponsored. If you buy through an affiliate link, Paws & Passage may earn a commission at no extra cost to you. A commission never changes which products we list or what we say about them. Read the full [affiliate disclosure](/affiliate-disclosure).
+Some links are affiliate links, marked as sponsored, with a notice at the top of the article. If you buy through one, Paws & Passage may earn a commission at no extra cost to you; that never changes which products we list or what we say. Read the full [affiliate disclosure](/affiliate-disclosure).
 
 ## Pick by situation
 
 | Your situation | What to look at first |
 | --- | --- |
 | A short road trip with a dog that stays on leash | A current tag and a checked microchip record. A tracker is optional. |
-| A rental with a yard, or a dog that escapes | A clip-on or collar GPS tracker, plus the rental checks in our [secure fenced yard guide](/guides/vacation-rental-secure-fenced-yard). |
-| A large dog | A large-dog-sized tracker, plus the points in our [large-dog rental guide](/guides/vacation-rentals-that-welcome-large-dogs). |
-| A small dog | Check weight and size limits first. Some trackers are listed for dogs above a minimum weight. |
-| Two or more dogs | A tag per dog, a record per dog, and a tracker and plan per dog if you choose to track. See our [two-dog planning guide](/guides/traveling-with-two-dogs-accommodation-guide). |
+| A rental with a yard, or a dog that escapes | A clip-on or collar GPS tracker, plus the checks in our [secure fenced yard guide](/guides/vacation-rental-secure-fenced-yard). |
+| A small or large dog | Check each tracker's weight range first; some list a minimum. See our [large-dog rental guide](/guides/vacation-rentals-that-welcome-large-dogs). |
+| Two or more dogs | A tag, a record and (if tracking) a tracker and plan per dog. See our [two-dog planning guide](/guides/traveling-with-two-dogs-accommodation-guide). |
 | Camping or remote areas | Coverage first. A cellular tracker needs cellular coverage, so check the maker's coverage tool for the route. |
 | A trip abroad | Check your destination's rules and the maker's coverage list. AKC Reunite says that for travel outside the US or to Hawaii, the pet must be microchipped before the health certification process begins. Your destination sets the other requirements, so check them with an accredited vet. [[4]](https://www.akcreunite.org/travel/) |
 
 ## Notes on the picks
 
-The two AKC Reunite items put the ID number and a helpline where a finder can read it, which is what the first layer is for. [[6]](https://www.akcreunite.org/idtags/) They are tied to an AKC Reunite record, so they suit owners who register with that service; any durable, legible tag with a mobile number does the visible job. Tractive appears because its page states weight ranges, collar widths, battery figures, connectivity and the subscription requirement plainly. [[7]](https://tractive.com/en/pd/gps-tracker-dog) Fi's collar page lists a long battery life in a collar-style design, [[8]](https://tryfi.com/collar) but it does not state carrier, coverage or subscription terms, and Fi's membership page describes the collar as part of a membership, so confirm both with Fi before you buy. [[11]](https://tryfi.com/membership)
+The two AKC Reunite items put an ID number and helpline where a finder can read it, but tie to an AKC Reunite record; any durable, legible tag with a mobile number does the visible job. [[6]](https://www.akcreunite.org/idtags/) Tractive's page states weight ranges, collar widths, battery, connectivity and subscription plainly. [[7]](https://tractive.com/en/pd/gps-tracker-dog) Fi's collar page lists a long battery life, [[8]](https://tryfi.com/collar) but not carrier, coverage or subscription terms, and its membership page describes the collar as part of a membership, so confirm both before you buy. [[11]](https://tryfi.com/membership)
 
 ## If your dog goes missing in an unfamiliar place
 
-Speed matters, and so does a calm, repeatable routine. This plan draws on the ASPCA's and AKC Reunite's guidance.
-
 ### The first hour
 
-1. **Start searching immediately, close to where the dog was last seen.** AKC Reunite advises beginning right away within a 2 mile radius of where your pet was last seen, before the pet has time to roam too far. [[3]](https://www.akcreunite.org/lostpettips/)
-2. **Bring help and bring something familiar.** Gather the people you are traveling with, neighbors or hosts. AKC Reunite suggests bringing a favorite treat or toy and calling out words your pet responds to, along with the dog's name. [[3]](https://www.akcreunite.org/lostpettips/)
-3. **Look in hiding places first.** The ASPCA recommends checking hiding spots, and if the pet is not nearby, walking or driving the area with a recent photo and asking people to check sheds and garages. [[1]](https://www.aspca.org/pet-care/general-pet-care/finding-lost-pet)
-4. **Check your tracker, if you have one.** Open the app, look at the live location and last update, and use any light or sound feature the maker provides.
-5. **Tell your host or the property manager.** They know the area and may know neighbors.
+1. **Search immediately, close to where the dog was last seen.** AKC Reunite advises starting right away within a 2 mile radius, before the pet roams too far. [[3]](https://www.akcreunite.org/lostpettips/)
+2. **Bring help and something familiar,** such as a favorite treat or toy, and call the dog's name. [[3]](https://www.akcreunite.org/lostpettips/)
+3. **Check hiding places first,** then walk or drive the area with a recent photo and ask people to check sheds and garages. [[1]](https://www.aspca.org/pet-care/general-pet-care/finding-lost-pet)
+4. **Check your tracker.** Check the live location and last update.
+5. **Tell your host or property manager,** who know the area.
 
 ### The first day
 
-1. **Call your microchip registry.** AKC Reunite tells owners to notify its helpline so it can confirm your contact information is current. [[3]](https://www.akcreunite.org/lostpettips/) Whichever registry holds your dog's record, report the dog missing and check that your phone number is right.
-2. **Call local animal control, vets and shelters.** The ASPCA's list is animal control, veterinary hospitals, municipal and private shelters and local rescue groups, since one may already have the pet. If no shelter is nearby, it says to contact the police. [[1]](https://www.aspca.org/pet-care/general-pet-care/finding-lost-pet) Remember that where you are staying may be served by a different shelter from the one you would expect, so ask your host which agency covers the area.
-3. **Visit shelters in person, with a photo.** The ASPCA recommends visiting shelters in person daily, and AKC Reunite notes that staff can change from day to day. [[1]](https://www.aspca.org/pet-care/general-pet-care/finding-lost-pet) [[3]](https://www.akcreunite.org/lostpettips/)
-4. **Make a flyer.** The ASPCA recommends one consistent design with a bold headline, a recent clear photo, breed, sex, coloring, age, weight, distinguishing features and when and where the pet was last seen, with your name and two phone numbers, including a friend or relative's. [[1]](https://www.aspca.org/pet-care/general-pet-care/finding-lost-pet) Prepare a version now with your mobile number so you are not designing one in a panic.
-5. **Put it where people look.** The ASPCA suggests dog parks, pet stores, grooming shops, vet offices and busy businesses, and lampposts and trees near where the pet was lost. [[1]](https://www.aspca.org/pet-care/general-pet-care/finding-lost-pet)
-6. **Use local networks.** The ASPCA suggests emailing contacts, posting on social media and contacting the administrators of local lost-pet groups. [[1]](https://www.aspca.org/pet-care/general-pet-care/finding-lost-pet) In a place you are visiting, ask the host which local groups are active.
+1. **Call your microchip registry.** AKC Reunite tells owners to notify its helpline so it can confirm your contact information is current. [[3]](https://www.akcreunite.org/lostpettips/) Report the dog missing to whichever registry holds the record.
+2. **Call local animal control, vets and shelters.** The ASPCA's list is animal control, veterinary hospitals, municipal and private shelters and local rescue groups; if no shelter is nearby, contact the police. [[1]](https://www.aspca.org/pet-care/general-pet-care/finding-lost-pet) Ask your host which agency covers the area.
+3. **Visit shelters in person, with a photo.** The ASPCA recommends daily visits, and AKC Reunite notes staff can change from day to day. [[1]](https://www.aspca.org/pet-care/general-pet-care/finding-lost-pet) [[3]](https://www.akcreunite.org/lostpettips/)
+4. **Make a flyer and post it.** The ASPCA recommends one consistent design: bold headline, recent clear photo, breed, sex, coloring, age, weight, distinguishing features, when and where last seen, and your name and two phone numbers including a friend or relative's. Post it at dog parks, pet stores, groomers, vet offices, busy businesses and lampposts near where the pet was lost. [[1]](https://www.aspca.org/pet-care/general-pet-care/finding-lost-pet) Prepare one now.
+5. **Use local networks.** Email contacts, post on social media and contact local lost-pet group administrators; your host may know which are active. [[1]](https://www.aspca.org/pet-care/general-pet-care/finding-lost-pet)
 
-### If someone finds your dog
+### If someone finds your dog, and do not give up
 
-Someone who finds a dog may call the number on the tag, or take it to a vet or shelter for a scan. AKC Reunite says that when an enrolled pet is found, it calls, texts and emails each primary and alternate contact on the record. [[5]](https://www.akcreunite.org/lostfoundpetfaq/) That is why current contact details and an alternate contact matter. Keep your phone on and watch for calls from numbers you do not know.
+AKC Reunite says that when an enrolled pet is found, it calls, texts and emails each primary and alternate contact. [[5]](https://www.akcreunite.org/lostfoundpetfaq/) Keep your phone on and answer unknown numbers; finders may call the tag number.
 
-### Do not give up
-
-The ASPCA notes that many lost animals find their way home. [[1]](https://www.aspca.org/pet-care/general-pet-care/finding-lost-pet) If you are separated during an emergency, AKC Reunite advises getting your family to a safe location before you search. [[3]](https://www.akcreunite.org/lostpettips/) When you are reunited, check your dog for injuries and call your veterinarian if there are signs of illness, then tell any registry or group you contacted that your dog is back.
+The ASPCA notes that many lost animals find their way home. [[1]](https://www.aspca.org/pet-care/general-pet-care/finding-lost-pet) If you are separated in an emergency, get your family to safety before you search. [[3]](https://www.akcreunite.org/lostpettips/) When you are reunited, check your dog for injuries, call your vet if there are signs of illness, and tell any registry or group you contacted.
 
 ## A pre-trip routine that takes twenty minutes
 
@@ -182,11 +138,7 @@ The ASPCA notes that many lost animals find their way home. [[1]](https://www.as
 - [ ] Local animal control and shelter numbers saved once you arrive.
 - [ ] Rental escape routes checked: gates, doors, fence gaps. See the [rental checklist](/guides/pet-friendly-vacation-rental-checklist).
 
-If you are packing for a cabin or rural stay, our [cabin packing list](/guides/dog-friendly-cabin-packing-list) pairs well with this routine. Add the ID tasks to your [trip checklist](/tools/checklist) so they are not left to the morning of departure.
-
-## Common mistakes
-
-The usual errors are treating the chip as a tracker, registering once and never checking, buying a tracker and skipping the tag, ignoring cellular coverage, and forgetting a second contact. Write the plan down and share it with everyone traveling with you.`,
+Heading to a cabin? See our [cabin packing list](/guides/dog-friendly-cabin-packing-list).`,
   faqs: [
     {
       q: "Does a microchip track my dog?",
@@ -194,23 +146,23 @@ The usual errors are treating the chip as a tracker, registering once and never 
     },
     {
       q: "Is a microchip enough on its own when I travel?",
-      a: "A microchip helps only if the record is current and someone has the dog scanned. The ASPCA recommends a collar with an ID tag as well, so a person can contact you without a scanner. Treat the tag and the chip as two layers that cover for each other.",
+      a: "Only if the record is current and someone has the dog scanned. The ASPCA recommends a collar with an ID tag as well, so a finder can reach you without a scanner.",
     },
     {
       q: "How do I find out where my dog's microchip is registered?",
-      a: "A veterinarian can scan the chip and tell you the number, and the AAHA Universal Microchip Lookup Tool can show which participating registries hold a chip. AAHA says it keeps no database of its own and searches only registries that choose to take part, so contact the registry itself to check or change your details.",
+      a: "A vet can scan the chip, and the AAHA Universal Microchip Lookup Tool shows which participating registries hold it. AAHA keeps no database of its own, so contact the registry itself to check or change your details.",
     },
     {
       q: "Do GPS dog trackers need a subscription and cell coverage?",
-      a: "Cellular trackers generally do. Tractive says its trackers have a built-in SIM and that the fees for mobile network use are covered by a subscription, and that they connect where 2G and/or LTE cellular coverage is available from its partners. Check the maker's current plan terms and coverage tool for your route before you buy.",
+      a: "Cellular trackers generally do. Tractive says its trackers have a built-in SIM, with mobile network fees covered by a subscription, and connect where its partners offer 2G and/or LTE coverage. Check current plan terms and the coverage tool for your route.",
     },
     {
       q: "Can I use a Bluetooth tag instead of a GPS tracker?",
-      a: "A Bluetooth item tag depends on nearby devices relaying its position, as Apple describes for AirTag, so it works best where many people are around. Apple's AirTag page describes tracking items such as keys and bags and does not describe pet use. In a remote area there may be no devices nearby, so do not rely on one as your only layer.",
+      a: "It depends on nearby devices relaying its position, so it works best where many people are around, and Apple's AirTag page describes keys and bags, not pet use. Do not rely on one as your only layer.",
     },
     {
       q: "What should I do first if my dog goes missing while traveling?",
-      a: "Start searching right away near where the dog was last seen, call your microchip registry to confirm your contact details, and contact local animal control, shelters and vets, visiting shelters in person with a photo. Use a flyer and local lost-pet groups, and ask your host which agencies cover the area.",
+      a: "Search right away near where the dog was last seen, call your microchip registry, and contact local animal control, shelters and vets, visiting shelters in person with a photo.",
     },
   ],
   gear: [

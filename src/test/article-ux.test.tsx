@@ -34,3 +34,15 @@ describe("article UX", () => {
     expect(planning).not.toContain("Affiliate");
   });
 });
+
+describe("source numbers in article text", () => {
+  it("are small superscript links, not full-size bracketed links", async () => {
+    const { renderToStaticMarkup } = await import("react-dom/server");
+    const { Markdown } = await import("@/components/site/Markdown");
+    const html = renderToStaticMarkup(<Markdown source={"A claim. [[5]](https://example.com/a) [[10]](https://example.com/b)"} />);
+    expect(html).toContain('<sup class="cite">');
+    expect(html).toContain('aria-label="Source 5"');
+    expect(html).not.toContain("[5]");
+    expect(html).toContain("https://example.com/b");
+  });
+});

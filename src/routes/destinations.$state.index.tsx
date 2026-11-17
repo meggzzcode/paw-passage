@@ -2,7 +2,7 @@ import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { getState } from "@/content/destinations";
 import { getGuide } from "@/content/guides";
 import { visibleStays } from "@/content/stays";
-import { images } from "@/lib/images";
+import { images, srcSetForKey } from "@/lib/images";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { GuideCard } from "@/components/site/GuideCard";
 import { StayCard } from "@/components/site/StayCard";
@@ -29,7 +29,7 @@ function StatePage() {
   return (
     <div>
       <section className="relative isolate">
-        <img src={images[d.image].src} alt={images[d.image].alt} width={1600} height={1008} className="absolute inset-0 -z-10 h-full w-full object-cover" />
+        <img src={images[d.image].src} srcSet={srcSetForKey(d.image)} sizes="100vw" alt={images[d.image].alt} width={1600} height={1008} className="absolute inset-0 -z-10 h-full w-full object-cover" />
         <div className="absolute inset-0 -z-10 bg-scrim" />
         <div className="container-page pb-14 pt-40 text-primary-foreground">
           <p className="text-xs font-semibold uppercase tracking-[0.16em] text-sage">{d.focus}</p>

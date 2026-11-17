@@ -2,7 +2,7 @@ import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { getState, getTown } from "@/content/destinations";
 import { getGuide } from "@/content/guides";
 import { visibleStays } from "@/content/stays";
-import { images } from "@/lib/images";
+import { images, srcSetForKey } from "@/lib/images";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { GuideCard } from "@/components/site/GuideCard";
 import { StayCard } from "@/components/site/StayCard";
@@ -38,7 +38,7 @@ function TownPage() {
           <h1 className="mt-2 text-5xl">Dog-friendly {t.name}</h1>
           <p className="mt-4 text-lg text-muted-foreground">{t.blurb}</p>
         </div>
-        <img src={images[t.image].src} alt={images[t.image].alt} width={1600} height={1008} className="aspect-[4/3] w-full rounded-xl object-cover" />
+        <img src={images[t.image].src} srcSet={srcSetForKey(t.image)} sizes="(max-width: 768px) 100vw, 50vw" alt={images[t.image].alt} width={1600} height={1008} className="aspect-[4/3] w-full rounded-xl object-cover" />
       </div>
       <section className="mt-16 grid gap-10 md:grid-cols-[1.3fr_1fr]">
         <div>

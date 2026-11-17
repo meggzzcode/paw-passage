@@ -13,7 +13,7 @@ The plan is that you can run it day to day without a developer:
 | Write or edit an article | Pages CMS (a web form) | No |
 | Add or update a place to stay | Pages CMS | No |
 | Change affiliate links | Pages CMS | No |
-| Change your email address, website address, Google Analytics ID, newsletter form | Pages CMS | No |
+| Change your email address, website address, Google Analytics ID | Pages CMS | No |
 | Replace a photo | Pages CMS (upload) | No |
 | Change the design, add a new kind of page, add a new tool | Code | Yes |
 | Update software when security notices arrive | Code | Yes, now and then |
@@ -63,7 +63,7 @@ If an editor saves a half-finished draft, the build skips it and carries on. If 
 
 **Add an affiliate link.** Pages CMS > Affiliate links. Add the link, then tick **Approved** only after the company has approved your account. A Book or Buy button appears on the site only for approved links.
 
-**Change your business details.** Pages CMS > Business settings: email address, website address, Google Analytics ID (looks like `G-XXXXXXXXXX`) and the newsletter form address. Anything left empty shows an honest "coming soon" message instead of a broken link.
+**Change your business details.** Pages CMS > Business settings: email address, website address, Google Analytics ID (looks like `G-XXXXXXXXXX`). Anything left empty shows an honest "coming soon" message instead of a broken link.
 
 **Replace a photo.** Upload a new one in the article or stay form. Use a landscape photo about 1600 pixels wide and under 400 KB, and only one you have the right to use. The site's current photos are free-to-use Unsplash photos (credits are in `src/content/image-credits.ts`); the large picture at the top of the home page is an AI-generated illustration.
 
@@ -91,7 +91,7 @@ If an editor saves a half-finished draft, the build skips it and carries on. If 
 | Whether a collaborator with no GitHub account can sign in to Pages CMS | Not stated in the documentation. |
 | Plain Markdown editor round trip | The visual editor was tested on 2026-11-17: it kept tables, citations, links and formatting but **turned tick-box lists into plain bullets**, so articles now use the plain Markdown editor (`docs/WRITING-IN-MARKDOWN.md`). The plain editor itself still has to be tested the same way (section 6, step 7). |
 | HTTPS certificate, DNS, domain transfer, Private Email transfer, GitHub and Netlify ownership transfer | Written from the companies' published instructions only: see `docs/DNS-AND-TRANSFER.md`. |
-| Google Analytics, the newsletter form, affiliate programs | Not set up yet. |
+| Affiliate programs | Not set up yet. Google Analytics and Search Console are set up. There is no newsletter. |
 
 **Do not treat the handover as complete until section 6 has been done and every box ticked.**
 

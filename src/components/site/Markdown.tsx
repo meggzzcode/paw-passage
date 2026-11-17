@@ -25,6 +25,9 @@ marked.use({
       }
       const url = safeUrl(href);
       if (!url) return text;
+      // A source number written as [[5]](url) is shown as a small, quiet superscript instead of a full-size "[5]" link.
+      const cite = /^\[(\d{1,3})\]$/.exec(text.trim());
+      if (cite) return `<sup class="cite"><a href="${escapeHtml(url)}" aria-label="Source ${cite[1]}">${cite[1]}</a></sup>`;
       return `<a href="${escapeHtml(url)}"${title ? ` title="${escapeHtml(title)}"` : ""}>${text}</a>`;
     },
     heading(this: Renderer, token: Tokens.Heading & { id?: string }) {

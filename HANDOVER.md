@@ -6,7 +6,7 @@ Everything on this site lives in plain files. There is no database, no admin log
 
 | What | File |
 | --- | --- |
-| Brand name, tagline, email, site URL, GA4 ID, newsletter form | `src/config/site.ts` |
+| Brand name, tagline, email, site URL, GA4 ID | `src/config/site.ts` |
 | Stays (real, verified) | `src/content/stays/verified.ts` |
 | Sample stays (preview only, never live) | `src/content/stays/samples.ts` |
 | Affiliate / booking links | `src/content/affiliates.ts` |
@@ -44,7 +44,7 @@ Put the file in `src/assets/`, register it in `src/lib/images.ts` with alt text,
 Set `ga4MeasurementId` in `src/config/site.ts`. Outbound booking clicks are sent as a `booking_click` event. Nothing is sent while it's empty.
 
 ## 8. Connect an email service
-In Kit or MailerLite, create an embedded form and copy its form `action` URL and email field name into `site.newsletter`. The signup block appears on the live site only once this is set.
+There is no newsletter signup on the site (removed by the owner's decision). Research for adding one later is in `docs/LEAD-CAPTURE.md`.
 
 ## 9. Sitemap and domain
 Set `siteUrl` (e.g. `https://pawsandpassage.com`) in `src/config/site.ts`. `/sitemap.xml` then lists every published page; until then it returns 503. Then add `Sitemap: https://yourdomain/sitemap.xml` to `public/robots.txt`.
@@ -72,7 +72,7 @@ Tested 2026-11-16: the app builds as a plain Node server and renders pages on th
 Hand over: the GitHub repo, the domain registrar, the GA4 property (add the buyer as admin), the email-service account (export subscribers), and each affiliate account (most networks need the new owner to re-apply).
 
 ## Still needed before launch
-- Business email (`contactEmail`), domain (`siteUrl`), GA4 ID, newsletter form.
+- Business email (`contactEmail`), domain (`siteUrl`), GA4 ID.
 - Approved affiliate partnerships.
 - Real verified stays.
 - Legal pages: the owner decided (2026-11-17) not to get a legal review. They are unreviewed drafts.

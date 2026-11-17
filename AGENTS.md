@@ -35,4 +35,4 @@ use the editor.
 - A guide is public only when `status === "published"`, `research.researchComplete` is true and `research.unverified` is empty; otherwise noindexed, preview-only, and left out of the sitemap, to keep unverified claims off the live site.
 - Filters match only confirmed values (`null` = not confirmed never passes), so listings never overstate dog-friendliness.
 - Booking buttons render only for approved links in `src/content/affiliates.ts`, using `rel="sponsored"`, to avoid fake or unauthorized affiliate links.
-- Newsletter, GA4 and sitemap stay inert until configured in `site.ts`, so no feature pretends to work.
+- GA4 and the sitemap stay inert until configured in Business settings, so no feature pretends to work. There is no newsletter (removed by the owner's decision, 2026-11-17).

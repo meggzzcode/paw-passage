@@ -1,6 +1,6 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { getGuide, isPublic } from "@/content/guides";
-import { guideHero } from "@/lib/images";
+import { guideHero, srcSetForKey } from "@/lib/images";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { Markdown, articleHeadings } from "@/components/site/Markdown";
 import { GearPicks } from "@/components/site/GearPicks";
@@ -9,7 +9,6 @@ import { GuideCard } from "@/components/site/GuideCard";
 import { PreviewBadge } from "@/components/site/StatusBadge";
 import { pageHead, breadcrumbLd, jsonLd } from "@/lib/seo";
 import { site } from "@/config/site";
-import { Newsletter } from "@/components/site/Newsletter";
 import { TableOfContents } from "@/components/site/TableOfContents";
 import { ArticleActions, TrustStrip } from "@/components/site/ArticleActions";
 import { hasStays } from "@/lib/launch";
@@ -68,7 +67,7 @@ function GuidePage() {
           <ArticleActions />
         </header>
       </div>
-      <img src={img.src} alt={img.alt} width={1600} height={1008} decoding="async" fetchPriority="high" className="mx-auto mt-6 aspect-[16/9] sm:mt-10 sm:aspect-[21/9] w-full max-w-6xl object-cover md:rounded-xl" />
+      <img src={img.src} srcSet={g.heroUpload ? undefined : srcSetForKey(g.heroImage)} sizes="(max-width: 800px) 100vw, 1152px" alt={img.alt} width={1600} height={1008} decoding="async" fetchPriority="high" className="mx-auto mt-6 aspect-[16/9] sm:mt-10 sm:aspect-[21/9] w-full max-w-6xl object-cover md:rounded-xl" />
       <div className="container-page mt-8 grid gap-12 sm:mt-12 lg:grid-cols-[minmax(0,1fr)_260px]">
         <div className="mx-auto w-full min-w-0 max-w-[42rem]">
           <AffiliateNotice guide={g} />
@@ -116,7 +115,6 @@ function GuidePage() {
               {g.sources.map((s) => <li key={s.url}><a href={s.url} target="_blank" rel="noopener noreferrer" className="text-primary underline">{s.title}</a> <span className="text-muted-foreground">({s.publisher}, accessed {s.accessedOn})</span></li>)}
             </ol>
           </section>
-          <Newsletter compact />
         </div>
         <aside className="no-print hidden space-y-6 lg:block lg:sticky lg:top-24 lg:self-start">
           <TableOfContents headings={headings} variant="sidebar" />

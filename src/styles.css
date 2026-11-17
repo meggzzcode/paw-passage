@@ -134,6 +134,12 @@
   & h3 { font-size: 1.3rem; line-height: 1.35; margin-top: 1.8em; font-weight: 500; }
   & a { color: var(--primary); text-decoration: underline; text-decoration-color: var(--terracotta); text-underline-offset: 3px; }
   & a:hover { text-decoration-thickness: 2px; }
+  /* Source numbers: small, muted superscripts. No underline or box; they darken and underline on hover or focus. */
+  & sup.cite { font-size: 0.68em; line-height: 0; margin-left: 0.12em; vertical-align: super; white-space: nowrap; }
+  & sup.cite + sup.cite { margin-left: 0.25em; }
+  & sup.cite a { color: var(--muted-foreground); text-decoration: none; padding: 0 0.1em; border: 0; outline: 0; }
+  & sup.cite a:hover, & sup.cite a:focus-visible { color: var(--primary); text-decoration: underline; text-decoration-color: var(--terracotta); }
+  & sup.cite a:focus-visible { outline: 2px solid var(--terracotta); outline-offset: 2px; border-radius: 2px; }
   & ul { list-style: disc; padding-left: 1.4em; }
   & ol { list-style: decimal; padding-left: 1.4em; }
   & li + li { margin-top: 0.4em; }

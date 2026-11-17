@@ -1,13 +1,12 @@
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useState } from "react";
 import { ArrowRight, Fence, Ruler, Dog, BadgeDollarSign, ShieldCheck, MessageSquareText, Calculator, ListChecks } from "lucide-react";
-import { images } from "@/lib/images";
+import { images, srcSetFor } from "@/lib/images";
 import { destinations } from "@/content/destinations";
 import { visibleGuides } from "@/content/guides";
 import { visibleStays } from "@/content/stays";
 import { GuideCard } from "@/components/site/GuideCard";
 import { StayCard } from "@/components/site/StayCard";
-import { Newsletter } from "@/components/site/Newsletter";
 import { featureFilters, type FeatureKey } from "@/lib/stay-search";
 import { stayTypeLabels } from "@/lib/filters";
 import { pageHead } from "@/lib/seo";
@@ -66,7 +65,7 @@ function Home() {
   return (
     <>
       <section className="relative isolate min-h-[88vh] overflow-hidden">
-        <img src={images["hero-porch"].src} alt={images["hero-porch"].alt} width={1920} height={1088} fetchPriority="high" className="absolute inset-0 -z-10 h-full w-full object-cover" />
+        <img src={images["hero-porch"].src} srcSet={srcSetFor("hero-porch")} sizes="100vw" alt={images["hero-porch"].alt} width={1920} height={1088} fetchPriority="high" className="absolute inset-0 -z-10 h-full w-full object-cover" />
         <div className="absolute inset-0 -z-10 bg-scrim" />
         <div className="container-page flex min-h-[88vh] flex-col justify-end pb-14 pt-32">
           <p className="eyebrow animate-rise !text-sage">Dog-friendly travel, done properly</p>
@@ -223,8 +222,6 @@ function Home() {
           </div>
         </div>
       </section>
-
-      <Newsletter />
 
       <section className="container-page mt-24">
         <div className="grid items-center gap-8 rounded-xl border border-border p-8 md:grid-cols-[1.5fr_1fr] md:p-12">

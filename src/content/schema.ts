@@ -153,8 +153,5 @@ export const settingsSchema = z.object({
   contactEmail: z.string().trim().refine((v) => v === "" || /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v), "must be an email address or left empty").default(""),
   siteUrl: z.string().trim().refine((v) => v === "" || /^https:\/\/[A-Za-z0-9.-]+(:\d+)?$/.test(v), "must look like https://yourdomain.com (no slash, no extra text at the end) or be left empty").default(""),
   ga4MeasurementId: z.string().trim().refine((v) => v === "" || /^G-[A-Z0-9]{6,}$/.test(v), "must look like G-XXXXXXXXXX or be left empty").default(""),
-  newsletterProvider: z.enum(["", "kit", "mailerlite"]).default(""),
-  newsletterFormAction: z.string().trim().refine((v) => v === "" || /^https:\/\//.test(v), "must be the https:// form address from your email provider or left empty").default(""),
-  newsletterEmailFieldName: z.string().trim().default("email_address"),
 });
 export type SiteSettings = z.infer<typeof settingsSchema>;

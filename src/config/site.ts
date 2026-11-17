@@ -1,7 +1,6 @@
 import { settings, showDrafts } from "virtual:content";
 
-// Central brand + integration settings. The business details (domain, email, analytics ID, newsletter
-// form) live in content/settings.yml so an owner can change them in Pages CMS without touching code.
+// Central brand + integration settings. The business details (domain, email, analytics ID) live in content/settings.yml so an owner can change them in Pages CMS without touching code.
 export const site = {
   name: "Paws & Passage",
   tagline: "Better adventures, together.",
@@ -13,15 +12,6 @@ export const site = {
   contactEmail: settings.contactEmail,
   /** Google Analytics 4 measurement ID, e.g. "G-XXXXXXX". Leave "" to send nothing. */
   ga4MeasurementId: settings.ga4MeasurementId,
-  /**
-   * External newsletter form (Kit or MailerLite). Paste the provider's form POST URL and the
-   * name of its email field. Leave formAction "" and no public signup form is shown.
-   */
-  newsletter: {
-    provider: settings.newsletterProvider,
-    formAction: settings.newsletterFormAction,
-    emailFieldName: settings.newsletterEmailFieldName,
-  },
   /** Sample stays render only in development / private preview, never in production builds. */
   showSampleStays: import.meta.env.DEV,
   /** Draft guides render (noindexed, labeled) only in development / private preview builds (SHOW_DRAFTS=true). */

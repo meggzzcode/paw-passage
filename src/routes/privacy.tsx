@@ -3,7 +3,7 @@ import { InfoPage } from "@/components/site/InfoPage";
 import { pageHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/privacy")({
-  head: () => pageHead({ title: "Privacy policy", description: "What information Paws & Passage collects, how analytics and newsletter signups work, and your choices.", path: "/privacy" }),
+  head: () => pageHead({ title: "Privacy policy", description: "What information Paws & Passage collects, how analytics works, and your choices.", path: "/privacy" }),
   component: () => <InfoPage title="Privacy policy" updated="2026-11-16" body={`This policy explains what happens to information when you use Paws & Passage.
 
 ## Information you type into our tools
@@ -13,10 +13,6 @@ The checklist, host question generator, cost calculator and comparison tool run 
 ## Analytics
 
 We may use Google Analytics 4 to understand which pages are useful and how many visitors click through to booking partners. Google Analytics uses cookies and collects information such as pages viewed, approximate location, device and browser type. We do not use it to identify you personally. You can opt out with Google's [browser add-on](https://tools.google.com/dlpage/gaoptout).
-
-## Newsletter
-
-If we offer a newsletter, signup is handled by our email provider (such as Kit or MailerLite), which stores your email address under its own privacy policy. You can unsubscribe at any time from any email.
 
 ## Emails you send us
 

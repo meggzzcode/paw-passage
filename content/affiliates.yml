@@ -1,4 +1,1 @@
-links:
-  - id: oops
-    network: Test
-    url: not-a-link
+links: []

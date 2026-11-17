@@ -10,10 +10,14 @@ export const staticPaths = [
 
 /** Only public, indexable pages: published guides, verified stays. Never drafts or samples. */
 export function sitemapEntries(): { path: string; lastmod?: string }[] {
-  const out: { path: string; lastmod?: string }[] = staticPaths.map((path) => ({ path }));
+  const liveStays = visibleStays({ includeSamples: false });
+  // Until a verified stay exists, the stays directory, the compare tool and the town pages are noindexed, so they are left out of the sitemap too.
+  const out: { path: string; lastmod?: string }[] = staticPaths
+    .filter((path) => liveStays.length > 0 || (path !== "/stays" && path !== "/tools/compare"))
+    .map((path) => ({ path }));
   for (const d of destinations) {
     out.push({ path: `/destinations/${d.slug}` });
-    for (const t of d.towns) out.push({ path: `/destinations/${d.slug}/${t.slug}` });
+    for (const t of d.towns) if (liveStays.some((s) => s.town === t.slug)) out.push({ path: `/destinations/${d.slug}/${t.slug}` });
   }
   for (const g of allGuides.filter(isPublic)) out.push({ path: `/guides/${g.slug}`, lastmod: g.lastReviewed });
   for (const s of visibleStays({ includeSamples: false })) out.push({ path: `/stays/${s.slug}`, ...(s.lastVerified ? { lastmod: s.lastVerified } : {}) });

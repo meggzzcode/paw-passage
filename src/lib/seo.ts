@@ -1,4 +1,5 @@
 import { site } from "@/config/site";
+import { images } from "@/lib/images";
 
 interface PageMetaInput {
   title: string;
@@ -31,7 +32,10 @@ export function pageHead({ title, description, path, type = "website", noindex, 
     { name: "twitter:description", content: description },
   ];
   if (noindex) meta.push({ name: "robots", content: "noindex, nofollow" });
-  if (image) meta.push({ property: "og:image", content: image }, { name: "twitter:image", content: image });
+  // Share previews (Facebook, Pinterest, iMessage...) need an absolute image address, so they appear once siteUrl is set.
+  const preview = image ?? images["hero-porch"].src;
+  const previewUrl = /^https?:\/\//.test(preview) ? preview : site.siteUrl ? absoluteUrl(preview) : "";
+  if (previewUrl) meta.push({ property: "og:image", content: previewUrl }, { name: "twitter:image", content: previewUrl });
   return { meta, links: [{ rel: "canonical", href: absoluteUrl(path) }] };
 }
 

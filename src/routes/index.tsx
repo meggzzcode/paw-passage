@@ -12,11 +12,14 @@ import { featureFilters, type FeatureKey } from "@/lib/stay-search";
 import { stayTypeLabels } from "@/lib/filters";
 import { pageHead } from "@/lib/seo";
 import { site } from "@/config/site";
+import { hasStays } from "@/lib/launch";
 
 export const Route = createFileRoute("/")({
   head: () => pageHead({
-    title: `${site.name}: dog-friendly cabins, beach stays and travel guides`,
-    description: "Find dog-friendly cabins and beach stays by the details that matter: fenced yards, large dogs, multiple dogs and real pet fees. Researched guides and free planning tools.",
+    title: hasStays() ? `${site.name}: dog-friendly cabins, beach stays and travel guides` : `${site.name}: dog-friendly travel guides and planning tools`,
+    description: hasStays()
+      ? "Find dog-friendly cabins and beach stays by the details that matter: fenced yards, large dogs, multiple dogs and real pet fees. Researched guides and free planning tools."
+      : "Researched guides and free planning tools for renting, driving and vacationing with your dog: pet fees, fenced yards, car safety, first aid and local rules, with every source listed.",
     path: "/",
   }),
   component: Home,
@@ -45,6 +48,7 @@ function Home() {
   const guides = visibleGuides();
   const featuredGuides = guides.slice(0, 4);
   const stays = visibleStays().slice(0, 3);
+  const anyStays = hasStays();
 
   function onSearch(e: React.FormEvent) {
     e.preventDefault();
@@ -63,39 +67,47 @@ function Home() {
         <div className="container-page flex min-h-[88vh] flex-col justify-end pb-14 pt-32">
           <p className="eyebrow animate-rise !text-sage">Dog-friendly travel, done properly</p>
           <h1 className="animate-rise mt-4 max-w-3xl text-5xl leading-[1.05] text-primary-foreground md:text-7xl">Their favorite getaway starts here.</h1>
-          <p className="animate-rise mt-5 max-w-xl text-lg text-primary-foreground/90">Discover cabins, beach escapes, and beautiful stays that welcome your dog, with the details that matter.</p>
-          <form onSubmit={onSearch} className="animate-rise mt-9 grid gap-2 rounded-2xl bg-background p-2 shadow-card md:grid-cols-[1.3fr_1fr_1fr_auto]" aria-label="Find dog-friendly stays">
-            <label className="flex flex-col rounded-xl px-4 py-2 hover:bg-muted">
-              <span className="text-xs font-semibold">Destination</span>
-              <select value={where} onChange={(e) => setWhere(e.target.value)} className="bg-transparent text-sm outline-none">
-                <option value="">Anywhere</option>
-                {destinations.map((d) => (
-                  <optgroup key={d.slug} label={d.name}>
-                    <option value={`${d.slug}:`}>All of {d.name}</option>
-                    {d.towns.map((t) => <option key={t.slug} value={`${d.slug}:${t.slug}`}>{t.name}</option>)}
-                  </optgroup>
-                ))}
-              </select>
-            </label>
-            <label className="flex flex-col rounded-xl px-4 py-2 hover:bg-muted">
-              <span className="text-xs font-semibold">Stay type</span>
-              <select value={type} onChange={(e) => setType(e.target.value)} className="bg-transparent text-sm outline-none">
-                <option value="">Any type</option>
-                {Object.entries(stayTypeLabels).map(([k, v]) => <option key={k} value={k}>{v}</option>)}
-              </select>
-            </label>
-            <label className="flex flex-col rounded-xl px-4 py-2 hover:bg-muted">
-              <span className="text-xs font-semibold">Must-have</span>
-              <select value={feature} onChange={(e) => setFeature(e.target.value)} className="bg-transparent text-sm outline-none">
-                <option value="">No preference</option>
-                {featureFilters.map((f) => <option key={f.key} value={f.key}>{f.label}</option>)}
-              </select>
-            </label>
-            <button className="h-14 rounded-xl bg-primary px-6 font-medium text-primary-foreground hover:bg-primary/90">Find dog-friendly stays</button>
-          </form>
+          <p className="animate-rise mt-5 max-w-xl text-lg text-primary-foreground/90">{anyStays ? "Discover cabins, beach escapes, and beautiful stays that welcome your dog, with the details that matter." : "Researched guides and free tools for renting, driving and vacationing with your dog. Every fact is sourced, and anything we could not confirm says so."}</p>
+          {anyStays ? (
+            <form onSubmit={onSearch} className="animate-rise mt-9 grid gap-2 rounded-2xl bg-background p-2 shadow-card md:grid-cols-[1.3fr_1fr_1fr_auto]" aria-label="Find dog-friendly stays">
+              <label className="flex flex-col rounded-xl px-4 py-2 hover:bg-muted">
+                <span className="text-xs font-semibold">Destination</span>
+                <select value={where} onChange={(e) => setWhere(e.target.value)} className="bg-transparent text-sm outline-none">
+                  <option value="">Anywhere</option>
+                  {destinations.map((d) => (
+                    <optgroup key={d.slug} label={d.name}>
+                      <option value={`${d.slug}:`}>All of {d.name}</option>
+                      {d.towns.map((t) => <option key={t.slug} value={`${d.slug}:${t.slug}`}>{t.name}</option>)}
+                    </optgroup>
+                  ))}
+                </select>
+              </label>
+              <label className="flex flex-col rounded-xl px-4 py-2 hover:bg-muted">
+                <span className="text-xs font-semibold">Stay type</span>
+                <select value={type} onChange={(e) => setType(e.target.value)} className="bg-transparent text-sm outline-none">
+                  <option value="">Any type</option>
+                  {Object.entries(stayTypeLabels).map(([k, v]) => <option key={k} value={k}>{v}</option>)}
+                </select>
+              </label>
+              <label className="flex flex-col rounded-xl px-4 py-2 hover:bg-muted">
+                <span className="text-xs font-semibold">Must-have</span>
+                <select value={feature} onChange={(e) => setFeature(e.target.value)} className="bg-transparent text-sm outline-none">
+                  <option value="">No preference</option>
+                  {featureFilters.map((f) => <option key={f.key} value={f.key}>{f.label}</option>)}
+                </select>
+              </label>
+              <button className="h-14 rounded-xl bg-primary px-6 font-medium text-primary-foreground hover:bg-primary/90">Find dog-friendly stays</button>
+            </form>
+          ) : (
+            <div className="animate-rise mt-9 flex flex-wrap gap-3">
+              <Link to="/guides" className="inline-flex h-14 items-center rounded-xl bg-primary px-7 font-medium text-primary-foreground hover:bg-primary/90">Read the guides</Link>
+              <Link to="/tools" className="inline-flex h-14 items-center rounded-xl bg-background px-7 font-medium text-foreground hover:bg-background/90">Use the free tools</Link>
+            </div>
+          )}
         </div>
       </section>
 
+      {anyStays && (
       <section className="container-page mt-20">
         <h2 className="text-3xl md:text-4xl">Browse by travel style</h2>
         <div className="mt-8 grid grid-cols-2 gap-4 md:grid-cols-5">
@@ -116,6 +128,7 @@ function Home() {
           })}
         </div>
       </section>
+      )}
 
       <section className="container-page mt-24">
         <div className="flex items-end justify-between gap-4">
@@ -176,6 +189,7 @@ function Home() {
         )}
       </section>
 
+      {anyStays && (
       <section className="container-page mt-24">
         <h2 className="text-3xl md:text-4xl">Browse by must-have</h2>
         <div className="mt-8 grid gap-4 sm:grid-cols-2 md:grid-cols-4">
@@ -188,6 +202,7 @@ function Home() {
           ))}
         </div>
       </section>
+      )}
 
       <section className="container-page mt-24">
         <div className="flex items-end justify-between"><div><p className="eyebrow">Guides</p><h2 className="mt-2 text-3xl md:text-4xl">Read before you book</h2></div><Link to="/guides" className="text-sm font-medium text-primary hover:underline">All guides →</Link></div>
@@ -199,13 +214,13 @@ function Home() {
         <div className="rounded-2xl bg-primary p-8 text-primary-foreground md:p-12">
           <p className="text-xs font-semibold uppercase tracking-[0.16em] text-sage">Free planning tools</p>
           <h2 className="mt-2 max-w-2xl text-4xl">Tools that do the awkward part of booking for you</h2>
-          <div className="mt-8 grid gap-4 md:grid-cols-4">
+          <div className={`mt-8 grid gap-4 ${anyStays ? "md:grid-cols-4" : "md:grid-cols-3"}`}>
             {[
               { to: "/tools/host-questions", icon: MessageSquareText, t: "Host question generator", d: "A ready-to-send message built around your dog." },
               { to: "/tools/cost-calculator", icon: Calculator, t: "True cost calculator", d: "Compare totals with pet fees, cleaning and tax." },
               { to: "/tools/checklist", icon: ListChecks, t: "Before-you-book checklist", d: "Tick it off, save it, print it." },
               { to: "/tools/compare", icon: ShieldCheck, t: "Compare stays", d: "Verified details side by side." },
-            ].map((t) => (
+            ].filter((t) => anyStays || t.to !== "/tools/compare").map((t) => (
               <Link key={t.to} to={t.to} className="rounded-lg bg-primary-foreground/10 p-5 transition hover:bg-primary-foreground/15">
                 <t.icon className="size-6 text-terracotta" />
                 <p className="mt-3 font-display text-lg">{t.t}</p>

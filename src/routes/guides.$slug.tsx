@@ -9,6 +9,8 @@ import { GuideCard } from "@/components/site/GuideCard";
 import { PreviewBadge } from "@/components/site/StatusBadge";
 import { pageHead, breadcrumbLd, jsonLd } from "@/lib/seo";
 import { site } from "@/config/site";
+import { Newsletter } from "@/components/site/Newsletter";
+import { hasStays } from "@/lib/launch";
 
 const toolLabels = {
   checklist: { to: "/tools/checklist", label: "Before-you-book checklist" },
@@ -27,7 +29,7 @@ export const Route = createFileRoute("/guides/$slug")({
     if (!loaderData) return { meta: [{ title: "Guide unavailable" }, { name: "robots", content: "noindex" }] };
     const g = loaderData.guide;
     const path = `/guides/${params.slug}`;
-    const h = pageHead({ title: g.seoTitle, description: g.seoDescription, path, type: "article", noindex: !isPublic(g) });
+    const h = pageHead({ title: g.seoTitle, description: g.seoDescription, path, type: "article", noindex: !isPublic(g), image: guideHero(g).src });
     const scripts = [
       { type: "application/ld+json", children: jsonLd({ "@context": "https://schema.org", "@type": "Article", headline: g.title, description: g.seoDescription, datePublished: g.publishedOn, dateModified: g.lastReviewed, author: { "@type": "Organization", name: g.author }, publisher: { "@type": "Organization", name: site.name }, mainEntityOfPage: path }) },
       breadcrumbLd([{ name: "Guides", path: "/guides" }, { name: g.title, path }]),
@@ -86,12 +88,13 @@ function GuidePage() {
               {g.sources.map((s) => <li key={s.url}><a href={s.url} target="_blank" rel="noopener noreferrer" className="text-primary underline">{s.title}</a> <span className="text-muted-foreground">({s.publisher}, accessed {s.accessedOn})</span></li>)}
             </ol>
           </section>
+          <Newsletter compact />
         </div>
         <aside className="no-print space-y-6 lg:sticky lg:top-24 lg:self-start">
-          {g.relatedTools.length > 0 && (
+          {g.relatedTools.filter((t) => hasStays() || t !== "compare").length > 0 && (
             <div className="rounded-xl border border-border bg-card p-5">
               <p className="font-display text-lg">Tools for this</p>
-              <ul className="mt-3 space-y-2 text-sm">{g.relatedTools.map((t) => <li key={t}><Link to={toolLabels[t].to} className="text-primary underline">{toolLabels[t].label}</Link></li>)}</ul>
+              <ul className="mt-3 space-y-2 text-sm">{g.relatedTools.filter((t) => hasStays() || t !== "compare").map((t) => <li key={t}><Link to={toolLabels[t].to} className="text-primary underline">{toolLabels[t].label}</Link></li>)}</ul>
             </div>
           )}
         </aside>

@@ -2,9 +2,10 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { MessageSquareText, Calculator, ListChecks, Columns3 } from "lucide-react";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { pageHead } from "@/lib/seo";
+import { hasStays } from "@/lib/launch";
 
 export const Route = createFileRoute("/tools/")({
-  head: () => pageHead({ title: "Free dog travel planning tools", description: "A host question generator, a pet-fee trip cost calculator, a printable before-you-book checklist and a side-by-side stay comparison.", path: "/tools" }),
+  head: () => pageHead({ title: "Free dog travel planning tools", description: hasStays() ? "A host question generator, a pet-fee trip cost calculator, a printable before-you-book checklist and a side-by-side stay comparison." : "A host question generator, a pet-fee trip cost calculator and a printable before-you-book checklist for renting with a dog.", path: "/tools" }),
   component: ToolsPage,
 });
 
@@ -22,7 +23,7 @@ function ToolsPage() {
       <h1 className="mt-6 text-4xl md:text-5xl">Planning tools</h1>
       <p className="mt-3 max-w-2xl text-muted-foreground">Small tools for the fiddly parts of booking with a dog. They run in your browser. Nothing you type is sent anywhere.</p>
       <div className="mt-10 grid gap-6 md:grid-cols-2">
-        {tools.map((t) => (
+        {tools.filter((t) => hasStays() || t.to !== "/tools/compare").map((t) => (
           <Link key={t.to} to={t.to} className="group rounded-xl border border-border bg-card p-7 shadow-card transition hover:border-primary">
             <t.icon className="size-8 text-terracotta" />
             <h2 className="mt-4 text-2xl group-hover:text-primary">{t.t}</h2>

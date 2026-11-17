@@ -79,7 +79,9 @@ for (const s of stayLinks.slice(0, 6)) {
 const filtered = await get("/stays?fenced=true");
 ok(filtered.status === 200, "Filtered stays URL (/stays?fenced=true) is 200", `status ${filtered.status}`);
 ok(/name="robots"[^>]+noindex/.test(filtered.body) || /noindex/.test(filtered.body), "Filtered stays pages are noindex (kept out of search engines)");
-ok(!/name="robots"[^>]+noindex/.test(pages["/stays"].body), "The main /stays page itself is indexable");
+const staysIndexed = !/name="robots"[^>]+noindex/.test(pages["/stays"].body);
+if (stayLinks.length > 0) ok(staysIndexed, "The main /stays page itself is indexable (it lists verified stays)");
+else ok(!staysIndexed, "The /stays page is noindex while it lists no verified stays (empty pages stay out of search)");
 
 // ---------- 4. 404s ----------
 for (const p of ["/this-page-does-not-exist", "/guides/this-guide-does-not-exist", "/stays/this-stay-does-not-exist", "/destinations/nowhere"]) {

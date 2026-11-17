@@ -9,6 +9,7 @@ import { destinations } from "@/content/destinations";
 import { StayCard } from "@/components/site/StayCard";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { pageHead } from "@/lib/seo";
+import { hasStays } from "@/lib/launch";
 
 export const Route = createFileRoute("/stays/")({
   validateSearch: zodValidator(staySearchSchema),
@@ -21,7 +22,7 @@ export const Route = createFileRoute("/stays/")({
       title: "Dog-friendly stays with verified pet policies",
       description: "Search dog-friendly cabins, cottages and beach houses by fenced yard, large dogs, number of dogs, pet fees and breed rules. Only verified stays are listed.",
       path: "/stays",
-      noindex: filtered,
+      noindex: filtered || !hasStays(),
     });
   },
   component: StaysPage,

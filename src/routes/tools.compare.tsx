@@ -9,12 +9,13 @@ import type { Stay } from "@/content/stays/types";
 import { ToolShell } from "@/components/site/ToolShell";
 import { PreviewBadge } from "@/components/site/StatusBadge";
 import { pageHead } from "@/lib/seo";
+import { hasStays } from "@/lib/launch";
 
 export const Route = createFileRoute("/tools/compare")({
   validateSearch: zodValidator(z.object({ ids: fallback(z.string(), "").default("") })),
   // Keep the bare /tools/compare URL clean (no redirect to ?ids=).
   search: { middlewares: [stripSearchParams({ ids: "" })] },
-  head: ({ match }) => pageHead({ title: "Compare dog-friendly stays side by side", description: "Compare verified dog-friendly stays by dog limits, pet fees, fencing, breed rules and outdoor space.", path: "/tools/compare", noindex: !!match.search.ids }),
+  head: ({ match }) => pageHead({ title: "Compare dog-friendly stays side by side", description: "Compare verified dog-friendly stays by dog limits, pet fees, fencing, breed rules and outdoor space.", path: "/tools/compare", noindex: !!match.search.ids || !hasStays() }),
   component: ComparePage,
 });
 

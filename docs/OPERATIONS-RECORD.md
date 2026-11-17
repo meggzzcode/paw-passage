@@ -16,7 +16,7 @@ Living register. Update it whenever a service is added, changed or dropped. **Ne
 | Google Fonts | Fonts | In use | |
 | Google Analytics (GA4) | Visitor statistics | **Not set up** | Add the ID under Business settings in Pages CMS. |
 | Business email address | Shown on the Contact page | Set in `content/settings.yml` 2026-11-17 | Mailbox itself is the Namecheap Private Email one above. |
-| Newsletter (Kit or MailerLite) | Email list | **Not set up** | |
+| Email list (Kit or MailerLite) | Collects signups from guides and the checklist tool | **Not set up.** Signup boxes are built and stay hidden until a form address is entered under Business settings. Provider research and recommended setup: `docs/LEAD-CAPTURE.md` | Create the account under the business mailbox so a buyer can take it over. Needs a postal address for CAN-SPAM. |
 | Affiliate programs (Amazon Associates, others) | Earning from product and booking links | **None joined yet** (owner chose to hold) | See AFFILIATE-PROGRAMS.md. Product buttons currently link to the makers' own pages. |
 | Product photos | Pictures of the gear picks | None added | Maker photos need permission. See PRODUCT-PHOTOS.md. |
 | Legal pages | Privacy, terms, affiliate disclosure | Live as written; **no legal review** (owner's decision 2026-11-17) | |

@@ -4,6 +4,7 @@ import { Printer, RotateCcw } from "lucide-react";
 import { checklist } from "@/content/checklist";
 import { ToolShell } from "@/components/site/ToolShell";
 import { pageHead } from "@/lib/seo";
+import { Newsletter } from "@/components/site/Newsletter";
 
 export const Route = createFileRoute("/tools/checklist")({
   head: () => pageHead({ title: "Dog-friendly rental checklist (printable)", description: "An interactive before-you-book checklist for dog-friendly vacation rentals: pet policy, fence, house layout, local rules and packing.", path: "/tools/checklist" }),
@@ -50,6 +51,7 @@ function ChecklistPage() {
           </fieldset>
         ))}
       </div>
+      <Newsletter compact />
     </ToolShell>
   );
 }

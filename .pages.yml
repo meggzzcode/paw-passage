@@ -241,18 +241,21 @@ content:
       - name: largeDogsOk
         label: Large dogs allowed?
         type: select
+        default: not-confirmed
         options: &tri
           values: [yes, no, not-confirmed]
       - name: fencedYard
         label: Fenced yard
         type: select
+        default: not-confirmed
         options:
           values: [full, partial, none, not-confirmed]
       - { name: fenceNotes, label: "Fence details (height, gate, gaps)", type: text }
-      - { name: privateOutdoor, label: Private outdoor space?, type: select, options: *tri }
+      - { name: privateOutdoor, label: Private outdoor space?, type: select, default: not-confirmed, options: *tri }
       - name: petFee
         label: Pet fee
         type: select
+        default: not-confirmed
         options:
           values: [not-confirmed, none, charged]
       - { name: petFeeAmount, label: "Pet fee amount in dollars (only if 'charged')", type: number }
@@ -265,10 +268,10 @@ content:
             - { value: night, label: "per night" }
             - { value: dog, label: "per dog" }
             - { value: dog-night, label: "per dog, per night" }
-      - { name: breedRestrictions, label: Breed restrictions stated?, type: select, options: *tri }
+      - { name: breedRestrictions, label: Breed restrictions stated?, type: select, default: not-confirmed, options: *tri }
       - { name: beach, label: Beach access, type: boolean }
       - { name: mountain, label: Mountain location, type: boolean }
-      - { name: hotTub, label: Hot tub?, type: select, options: *tri }
+      - { name: hotTub, label: Hot tub?, type: select, default: not-confirmed, options: *tri }
       - { name: nearby, label: Nearby dog-friendly places, type: string, list: true }
       - { name: houseRules, label: House rules about dogs, type: string, list: true }
       - name: image

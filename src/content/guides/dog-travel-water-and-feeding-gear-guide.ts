@@ -13,162 +13,87 @@ export const guide: Guide = {
   author: "Paws & Passage Editors",
   publishedOn: "2026-11-16",
   lastReviewed: "2026-11-16",
-  readingMinutes: 13,
+  readingMinutes: 10,
   heroImage: "gear-feeding",
-  body: `## Start with the trip, not the product
+  body: `## The short answer
 
-Most travel-gear roundups open with a list of bowls. The more useful question is where your dog will actually eat and drink.
-
-A day on a trail, a car ride with long stretches between stops, and a week in a mountain cabin all call for different equipment. The same dog needs water on all three, but the right bowl, the right bottle and the right way to store kibble change with each.
-
-This guide covers three categories: collapsible bowls, travel water bottles or dispensers, and food containers for cabins and road trips. It also covers the parts that gear cannot fix on its own, such as heat, unfamiliar water and keeping dog food away from wildlife. Those come from public guidance by the CDC, the ASPCA, the National Park Service and BearWise, and each claim is cited to its source.
-
-One thing to know up front: **the picks in this guide are chosen on criteria and on specifications published by each maker. They are not the result of Paws & Passage trying the products.** We explain exactly how that works in the section on how we choose and how this site earns money.
+- Pack water from home or bottled water: the ASPCA says drinking water from an unfamiliar area could upset a pet's stomach. [[2]](https://www.aspca.org/node/69318)
+- Never leave a dog alone in a parked car. The CDC says temperatures can rise within minutes and cause death, and no bowl or bottle changes that. [[1]](https://www.cdc.gov/healthy-pets/travel/index.html)
+- Pick a bowl or bottle by capacity (how long until your next refill), packed size and how easy it is to clean.
+- "Airtight" is not "bear-resistant." In bear country, where dog food is kept matters more than the container. [[5]](https://bearwise.org/bearwise-basics/never-leave-pet-food-outdoors/)
+- Our five picks are chosen on maker-published specs, not tested; see "Our five picks" below.
 
 ## Hydration and heat come first
 
-Gear is only useful if it gets water into a dog that needs it. Two points from official guidance frame every choice below.
+Gear only helps if it gets water into a dog that needs it.
 
-### Pack water for the trip
+**Pack water for the trip.** The CDC tells people travelling by car to pack water and food along with a bowl, leash, waste bags and the rest of a travel kit. [[1]](https://www.cdc.gov/healthy-pets/travel/index.html) The ASPCA recommends bottled water or water from home on a road trip. [[2]](https://www.aspca.org/node/69318) Plan container capacity around your longest gap between refills, not around the size of the bowl.
 
-The CDC's pet travel page tells people travelling by car to pack water and food along with a bowl, leash, waste bags and the rest of a travel kit. [[1]](https://www.cdc.gov/healthy-pets/travel/index.html) The ASPCA gives the same advice with an extra reason: it recommends bottled water or water from home on a road trip, because drinking water from an area a pet is not used to could cause an upset stomach. [[2]](https://www.aspca.org/node/69318)
+**Heat builds fast.** The ASPCA says pets can become dehydrated quickly when it is hot or humid and should be given plenty of fresh, clean water, a shady place out of the sun, and no lingering on hot asphalt, where paw pads can burn. [[3]](https://www.aspca.org/pet-care/general-pet-care/hot-weather-safety-tips) The CDC says never leave a pet alone in a parked vehicle. [[1]](https://www.cdc.gov/healthy-pets/travel/index.html) The ASPCA adds that cracking a window is not adequate because the car heats at almost the same rate, and that flat-faced breeds such as Pugs and French Bulldogs are especially vulnerable to heat exhaustion. [[2]](https://www.aspca.org/node/69318) If your plan depends on leaving the dog in the vehicle with a bowl of water, change the plan, not the gear.
 
-That has a practical consequence for gear. A bottle is not only a convenience for a walk; it is how you carry familiar water to a rest stop, a trailhead or a rental where you are unsure about the tap. Plan your container capacity around the length of your longest gap between refills rather than around the size of the dog's bowl.
+**Warning signs.** The ASPCA lists heatstroke signs including excessive panting or difficulty breathing, an increased heart and respiratory rate, drooling, mild weakness, stupor or collapse. Flat-faced breeds, older pets, overweight pets and pets with heart or lung disease should stay in air-conditioned rooms as much as possible during extreme heat. [[3]](https://www.aspca.org/pet-care/general-pet-care/hot-weather-safety-tips) If you suspect heatstroke, contact a veterinarian right away. This guide is not veterinary advice; questions about your dog's water or feeding routine are for your own vet.
 
-### Heat builds faster than most people expect
+**Lakes, pools and beaches.** The ASPCA says to bring fresh water and keep pets from drinking pool or ocean water. [[3]](https://www.aspca.org/pet-care/general-pet-care/hot-weather-safety-tips) A squeeze bottle lets you offer a drink every time your dog heads for the shoreline.
 
-The ASPCA says pets can become dehydrated quickly when it is hot or humid and should be given plenty of fresh, clean water. [[3]](https://www.aspca.org/pet-care/general-pet-care/hot-weather-safety-tips) It also advises giving pets a shady place out of the sun and avoiding letting dogs linger on hot asphalt, where paw pads can burn. [[3]](https://www.aspca.org/pet-care/general-pet-care/hot-weather-safety-tips)
-
-The CDC is direct about parked vehicles: never leave a pet alone in one, and on hot days temperatures can rise within minutes and cause death. [[1]](https://www.cdc.gov/healthy-pets/travel/index.html) The ASPCA adds that cracking a window is not adequate because the car heats at almost the same rate, and that flat-faced breeds such as Pugs and French Bulldogs are especially vulnerable to heat exhaustion. [[2]](https://www.aspca.org/node/69318)
-
-No bottle or bowl changes that. If your plan depends on leaving the dog in the vehicle with a bowl of water while you eat or shop, the plan needs to change, not the gear.
-
-### Know the warning signs
-
-The ASPCA lists heatstroke signs including excessive panting or difficulty breathing, an increased heart and respiratory rate, drooling, mild weakness, stupor or collapse. [[3]](https://www.aspca.org/pet-care/general-pet-care/hot-weather-safety-tips) It lists flat-faced breeds, older pets, overweight pets and pets with heart or lung disease among those that should stay in air-conditioned rooms as much as possible during extreme heat. [[3]](https://www.aspca.org/pet-care/general-pet-care/hot-weather-safety-tips)
-
-If you suspect heatstroke, contact a veterinarian right away. This guide is not veterinary advice, and the right amount of water or the right feeding routine for your dog is a question for your own vet.
-
-### Water at lakes, pools and beaches
-
-When you are near pools, lakes or the ocean, the ASPCA says to bring fresh water and keep pets from drinking pool or ocean water. [[3]](https://www.aspca.org/pet-care/general-pet-care/hot-weather-safety-tips) That is a good use of a squeeze bottle: it lets you offer a drink on your terms every time your dog heads for the shoreline.
+**Feeding before travel.** The CDC says to feed your pet three to four hours before leaving to help prevent car sickness or vomiting. [[1]](https://www.cdc.gov/healthy-pets/travel/index.html) The ASPCA gives the same timing, says not to feed a pet in a moving vehicle, and on longer rides to offer only an occasional small snack. [[2]](https://www.aspca.org/node/69318) We do not repeat the claim some roundups make that raised bowls reduce bloat risk; our sources do not make it, so ask your vet, especially for deep-chested breeds.
 
 ## What to look for in a collapsible bowl
 
-A travel bowl lives in a door pocket, a backpack or a cupholder, gets stepped on, and often goes back into the bag damp. The features that matter follow from that.
+- **Capacity** that matches the gap between refills. A couple of cups is fine for a short stop; a large dog on a hot day will need repeated refills from a small bowl.
+- **Material and cleaning.** Silicone is generally simple to rinse and can often go in the dishwasher; coated fabrics pack smaller but may need hand washing. Care instructions differ, so read the maker's page.
+- **Stability.** Wider bases and thicker walls help; a thin fabric bowl can sag unless full.
+- **Packed size.** Some bowls flatten to about the thickness of a coaster, which matters most on a long hike.
+- **A clip or loop**, so the bowl is within reach when needed.
 
-**Capacity that matches the gap between refills.** A bowl that holds a couple of cups is fine for a short stop. For a large dog on a hot day, a small bowl means refilling repeatedly, which is a real nuisance at a trailhead. Capacity is listed in ounces or cups on a maker's page; compare it to how much you expect your dog to drink in one stop.
+## What to look for in a travel water bottle
 
-**Material and cleaning.** Silicone and coated fabrics are the common choices. Silicone is generally simple to rinse and can often go in the dishwasher; coated fabrics pack smaller but may need hand washing. Read the care instructions on the maker's own page because they differ even between similar-looking bowls.
+A bottle with an attached bowl carries and serves water in one object, so you can offer a drink with one hand while holding a leash. There are two designs:
 
-**Stability.** A collapsible bowl that tips when your dog leans on it wastes water. Wider bases and thicker walls help; a thin fabric bowl can sag unless full.
+- **Squeeze-to-fill.** Squeezing raises water into an attached bowl; releasing lets unused water drain back. Little waste, easy in a car.
+- **Flip-up bowl.** A silicone bowl flips up to drink and folds down for storage. More compact, smaller drinking surface.
 
-**Packed size.** Some bowls flatten to about the thickness of a coaster. If you are carrying a bag on a long hike, that matters more than any other feature.
+Check capacity against your longest gap, and whether the maker says it is dishwasher safe (bottles with bowls have more crevices). A "leak-proof" lock is the maker's description, not a guarantee for your bag, so keep a full bottle upright or in a side pocket. Hand fit and squeeze force are something maker pages cannot tell you, so check return terms.
 
-**A clip or loop.** A carabiner or loop makes it far more likely the bowl is actually within reach when needed.
+## What to look for in a food container
 
-### A note on elevated or slow feeders
-
-Some roundups say raised bowls reduce bloat risk. We do not repeat that; our sources do not make that claim, and no travel bowl replaces your veterinarian's advice, especially for deep-chested breeds.
-
-The CDC does give one feeding-schedule tip that is relevant to car travel: feed your pet three to four hours before leaving on a trip to help prevent car sickness or vomiting. [[1]](https://www.cdc.gov/healthy-pets/travel/index.html) The ASPCA gives the same timing, says not to feed a pet in a moving vehicle, and on longer rides to offer only an occasional small snack. [[2]](https://www.aspca.org/node/69318)
-
-## What to look for in a travel water bottle or dispenser
-
-A water bottle with an attached bowl solves a different problem than a collapsible bowl. It carries the water and serves it in one object, so you can offer a drink with one hand while holding a leash.
-
-There are two common designs:
-
-- **Squeeze-to-fill.** You squeeze the bottle and water rises into an attached bowl; releasing the squeeze lets the unused water drain back into the bottle. This wastes little water and is easy in a car.
-- **Flip-up bowl.** A silicone bowl on top of the bottle flips up for drinking and folds down for storage. It is more compact but offers a smaller drinking surface.
-
-Whichever design you choose, check:
-
-- **Capacity** relative to your dog's size and your longest gap between refills.
-- **Leak claims.** Makers use different wording, and a statement that a lock design is leak-proof is a description by the maker, not a guarantee for your bag. Keep the bottle upright or in a side pocket when it is full.
-- **Cleaning.** Bottles with attached bowls have more crevices than a plain bottle. Look for makers that say whether the bottle is dishwasher safe, and which rack.
-- **Hand fit.** If you will operate it one-handed while holding a leash, the shape and the squeeze force matter. Maker pages cannot tell you this, so read the maker's description and check return terms.
-
-## What to look for in a food container for road trips and cabins
-
-Travel food containers do two jobs: keep kibble dry and fresh, and keep it away from anything that would like to eat it. Those goals can pull in different directions, which is why one container rarely does both.
+Travel food containers keep kibble dry and fresh and keep it away from anything that would like to eat it. One container rarely does both.
 
 ### Airtight is not the same as wildlife-resistant
 
-Makers use "airtight" to describe a seal that limits air and moisture. That is useful for freshness. It does not mean a container will stop a determined animal, and it does not mean the food no longer smells.
+"Airtight" describes a seal that limits air and moisture, which helps freshness. It does not stop a determined animal or hide the smell.
 
-BearWise notes that pet food is rich in fat and protein, which makes it extremely attractive to bears. [[5]](https://bearwise.org/bearwise-basics/never-leave-pet-food-outdoors/) Its guidance for pet food has a few clear rules:
+BearWise notes that pet food is rich in fat and protein, which makes it extremely attractive to bears. Its rules: feed pets indoors when possible; if you must feed outdoors, feed single portions and remove food and bowls afterward; bring bowls inside at night; store pet food where bears cannot see or smell it; do not leave food out for stray animals. [[5]](https://bearwise.org/bearwise-basics/never-leave-pet-food-outdoors/)
 
-- Feed pets indoors when possible.
-- If you must feed outdoors, feed single portions and remove food and bowls afterward.
-- Bring bowls inside at night.
-- Store pet food where bears cannot see or smell it.
-- Do not leave food out for stray animals. [[5]](https://bearwise.org/bearwise-basics/never-leave-pet-food-outdoors/)
-
-BearWise also points out that a bear can drag pet food bags away, and says black bears can be kept out of pet food stored in a screw-top container shown on its page "or other bear-resistant storage", pointing readers to certified bear-resistant containers. An ordinary or airtight food container is not bear-resistant. Keep dog food, treats and bowls indoors, out of sight and smell, and follow the park's or host's rules. [[5]](https://bearwise.org/bearwise-basics/never-leave-pet-food-outdoors/)
-
-None of the products in this guide claims to be bear-resistant, so treat them as freshness and organization tools, not as wildlife protection. If you are in bear country, the main protection is where the container is kept, not what it is made of.
+BearWise also points out that a bear can drag pet food bags away, and says black bears can be kept out of pet food stored in a screw-top container shown on its page "or other bear-resistant storage", pointing readers to certified bear-resistant containers. An ordinary or airtight food container is not bear-resistant. Keep dog food, treats and bowls indoors, out of sight and smell, and follow the park's or host's rules. [[5]](https://bearwise.org/bearwise-basics/never-leave-pet-food-outdoors/) None of the products below claims to be bear-resistant, so treat them as freshness and organization tools.
 
 ### What the National Park Service says
 
-The National Park Service's food storage page treats a broad range of scented items, including ice chests, as food that must be stored properly. It tells visitors to keep food within arm's reach in picnic areas and campgrounds, to keep food inside the room when staying in cabins and hotels, and to close windows and doors when leaving. [[4]](https://www.nps.gov/subjects/bears/storingfood.htm)
-
-On vehicles, the page says rules vary by park: some allow food inside a car if it is out of sight with the windows closed, while others require lockers. It says food must never be stored in a pickup truck bed or strapped to the outside of a vehicle. [[4]](https://www.nps.gov/subjects/bears/storingfood.htm) Breaking the rules can mean fines, confiscation of food, towing or other penalties. [[4]](https://www.nps.gov/subjects/bears/storingfood.htm)
-
-That page does not name pet food specifically. We are not claiming it does. The conservative approach, consistent with BearWise, is to treat dog food and treats like any other food and to ask the park or the host what is required before you arrive.
+The NPS treats a broad range of scented items, including ice chests, as food that must be stored properly. Keep food within arm's reach in picnic areas and campgrounds, keep food inside the room in cabins and hotels, and close windows and doors when leaving. On vehicles, rules vary by park: some allow food inside a car if it is out of sight with the windows closed, others require lockers, and food must never be stored in a pickup truck bed or strapped to the outside of a vehicle. Breaking the rules can mean fines, confiscation of food, towing or other penalties. [[4]](https://www.nps.gov/subjects/bears/storingfood.htm) That page does not name pet food. The conservative approach, consistent with BearWise, is to treat dog food and treats like any other food and ask the park or host what is required before you arrive.
 
 ### Cabin and rental routine
 
-At a cabin or vacation rental:
-
 1. Keep the food container and bowls inside, in a closed room or cupboard, not on a porch or deck.
-2. Feed indoors, pick up bowls after meals and rinse them.
-3. Take treats and dog food out of the car overnight if the local rules or the host ask you to, and keep it out of sight if you are told to leave it in.
-4. Ask the host what is expected. Our [host-question tool](/tools/host-questions) includes prompts for exactly this sort of rule.
+2. Feed indoors, then pick up and rinse the bowls.
+3. Take treats and dog food out of the car overnight if local rules or the host ask you to, and keep it out of sight if told to leave it in.
+4. Ask the host what is expected; our [host-question tool](/tools/host-questions) has prompts for this. For more, see our [dog-friendly cabin packing list](/guides/dog-friendly-cabin-packing-list).
 
-For more on what else to pack for a cabin stay, see our [dog-friendly cabin packing list](/guides/dog-friendly-cabin-packing-list).
-
-### Size the container to the trip
-
-For a weekend, a small container or soft bag holding a few days of food is easier to carry than a large bin. For a longer trip or when you are bringing a large dog's full supply, a rigid container that keeps food dry is more useful, but takes more car space.
-
-Keep the original bag information handy if you can. Lot numbers and best-by dates are useful if a recall is announced, and decanting food can separate you from that information. Taking a quick photo of the bag's label before you pour is a simple workaround.
+For a weekend, a small container or soft bag is easier to carry than a large bin; for a long trip with a large dog's full supply, a rigid container keeps food dry but takes more car space. Photograph the bag's label before you pour: lot numbers and best-by dates matter if a recall is announced.
 
 ## Our five picks
 
-Each product below was chosen because its maker's own page states specifications that match the criteria above. **These are criteria- and spec-based picks, not tested picks.** We have not used these products and make no claim about how they perform in your hands. Specifications come from the maker's page accessed on 16 November 2026; check that page again before you buy because designs change.
+These five are criteria- and spec-based picks, not tested picks. Each maker's own page states specifications that match the criteria above, accessed on 16 November 2026. We have not used the products and make no claim about how they perform in your hands, so check the page again before you buy.
 
-### Kurgo Collaps A Bowl
+**Kurgo Collaps A Bowl.** 24-ounce capacity, collapsed height under one inch, food-grade silicone described as PVC and BPA free, top-rack dishwasher safe, and a Lifetime Guarantee covering manufacturing defects. 24 ounces is small for a large dog on a hot day.
 
-The maker lists a 24-ounce capacity, a collapsed height of less than one inch, food-grade silicone described as PVC and BPA free, and top-rack dishwasher safety. It also states a Lifetime Guarantee covering manufacturing defects.
+**Springland 22oz Original Travel Dog Water Bottle.** Squeeze-to-fill: squeeze to fill the attached bowl, release to drain the excess back, using one hand. Food-safe, BPA-free polypropylene with an aluminum carabiner and a leak-proof lock design; top-rack dishwasher safe only. The page notes it was formerly called the Springer Dog Travel Water Bottle. Suits car trips and walks; more parts to clean.
 
-It earns a place because the spec list covers the practical points from our bowl criteria in a single product: modest capacity, very flat when collapsed, a cleaning instruction that is easy to follow, and a stated warranty. The trade-off is size: 24 ounces is small for a large dog on a hot day.
+**Springland 20oz Flip Travel Dog Water Bottle.** Silicone top bowl flips up to drink and folds down for storage. Same BPA-free polypropylene body, aluminum carabiner, leak-proof lock design and top-rack dishwasher care as the Original, in 20 oz. A compact alternative with a smaller drinking surface, so watch how your dog uses it.
 
-### Springland 22oz Original Travel Dog Water Bottle
+**Vittles Vault Travel-Tainer Portable Food Storage Container.** A 6-cup container with two 3-cup bowls (food and water) and a carry handle; food-grade, BPA-free plastic with an airtight seal. The bowls are dishwasher safe but the clear food container is not, and actual capacity depends on kibble shape and density. Fits a cabin or camp weekend; six cups is not bulk storage for a big dog on a long trip, and an airtight seal is not wildlife protection.
 
-This is the squeeze-to-fill design. The maker says you squeeze to fill the attached bowl and release to drain the excess back into the bottle, using one hand. It describes food-safe, BPA-free polypropylene plastic with an aluminum carabiner and a leak-proof lock design, and says it is dishwasher safe on the top rack only. The page notes that it was formerly called the Springer Dog Travel Water Bottle.
+**Kurgo Kibble Carrier.** Up to 5 lbs of dry food, roughly 20 cups of average-sized kibble; ripstop material with a food-safe PEVA liner and heat-sealed seams; roll-top with a buckle closure; hand-wash, air-dry. Lighter than a rigid bin, but a soft bag offers no protection against a determined animal and the maker does not claim any, so keep it inside.
 
-It suits car trips and walks where you want to pour water without a separate bowl. The caution is the same as for any bottle with a bowl: more parts to clean, and the maker's "leak-proof" wording is a description, not a promise.
-
-### Springland 20oz Flip Travel Dog Water Bottle
-
-The flip design uses a silicone top bowl that flips up to drink and folds down for storage. The maker lists the same BPA-free polypropylene body, aluminum carabiner, leak-proof lock design and top-rack dishwasher care as the Original, with a 20-oz capacity.
-
-We include it as an alternative for people who prefer the compact shape. The silicone bowl is a smaller drinking surface than a separate collapsible bowl, so watch how your dog uses it.
-
-### Vittles Vault Travel-Tainer Portable Food Storage Container
-
-The maker describes a 6-cup container with two 3-cup bowls, one for food and one for water, plus a carry handle. It states the plastic is food-grade and BPA-free and that the container has an airtight seal. It also says the bowls are dishwasher safe but the clear food container is not, and that actual capacity depends on kibble shape and density.
-
-It fits the "one rigid kit for a cabin or camp weekend" situation: food, a seal and two bowls in one package. Six cups holds a limited supply, so it is not a bulk-storage answer for a big dog on a long trip, and as discussed above an airtight seal is not wildlife protection.
-
-### Kurgo Kibble Carrier
-
-The maker lists a capacity of up to 5 lbs of dry food, roughly 20 cups of average-sized kibble. It describes ripstop material with a food-safe PEVA liner and heat-sealed seams, a roll-top that rolls and clips with a simple buckle closure, and hand-wash, air-dry care.
-
-It is a packing tool: lighter and easier to squeeze into a bag than a rigid bin. The trade-off is that a soft bag offers no protection against a determined animal and the maker does not claim any, so keep it inside, as described above.
-
-## Pick by situation
+### Pick by situation
 
 | Situation | What matters most | Pick to look at |
 | --- | --- | --- |
@@ -181,34 +106,22 @@ It is a packing tool: lighter and easier to squeeze into a bag than a rigid bin.
 | Beach, lake or pool | Fresh water so your dog is not tempted to drink from the shoreline | Either Springland bottle or the Kurgo bowl |
 | Large dog on a hot day | Capacity and refills | A larger bowl than the small ones above; check capacity on the maker's page |
 
-If you are travelling with two dogs, the water supply is the first thing to double. Our [two-dog travel guide](/guides/traveling-with-two-dogs-accommodation-guide) covers other planning points, and large dogs bring their own considerations in our [large-dog rental guide](/guides/vacation-rentals-that-welcome-large-dogs).
+With two dogs, double the water first; see our [two-dog travel guide](/guides/traveling-with-two-dogs-accommodation-guide) and [large-dog rental guide](/guides/vacation-rentals-that-welcome-large-dogs).
 
-## A simple packing list for water and feeding
-
-Put these in one bag so you do not have to hunt for them at a rest stop:
+## Packing list for water and feeding
 
 - Water from home or bottled water, in a bottle you can serve one-handed.
 - A collapsible bowl or bottle with attached bowl.
-- Dog food in a sealed container or bag, plus a second bag or container for treats.
+- Dog food in a sealed container or bag, plus a second for treats.
 - A photo of the food bag label for lot and best-by information.
 - Waste bags, a towel to wipe bowls, and a small bottle of dish soap for cabins.
 - Any medications your vet has prescribed.
 
-The CDC's own list also includes a leash, grooming supplies, first-aid items and travel papers such as proof of rabies vaccination. [[1]](https://www.cdc.gov/healthy-pets/travel/index.html) Add these items to our [trip checklist](/tools/checklist) so nothing is forgotten, and see our [rental checklist](/guides/pet-friendly-vacation-rental-checklist) for what to confirm with the host.
-
-## Common mistakes
-
-**Leaving the dog in the car "for a minute."** Vehicles heat within minutes, and cracked windows do not solve it. [[1]](https://www.cdc.gov/healthy-pets/travel/index.html) [[2]](https://www.aspca.org/node/69318)
-
-**Treating airtight as animal-proof.** Freshness and wildlife resistance are different properties.
-
-**Leaving bowls and food on a porch.** BearWise says to bring bowls inside at night. [[5]](https://bearwise.org/bearwise-basics/never-leave-pet-food-outdoors/)
+The CDC's list also includes a leash, grooming supplies, first-aid items and travel papers such as proof of rabies vaccination. [[1]](https://www.cdc.gov/healthy-pets/travel/index.html) Add these to our [trip checklist](/tools/checklist), and see our [rental checklist](/guides/pet-friendly-vacation-rental-checklist) for what to confirm with the host.
 
 ## How we choose and how this site earns money
 
-We pick products using the criteria in this guide, and we check each product's specifications on its maker's own page. We record the page and the date we read it. We do not state prices, because they change, and we do not publish ratings.
-
-We have not tested these products, and we do not claim they are the best available. A product can meet the criteria and still not suit your dog.
+We pick products using the criteria in this guide and check specifications on each maker's own page, recording the page and date. We state no prices and publish no ratings. A product can meet the criteria and still not suit your dog.
 
 Some links on this site are affiliate links. When an article contains one, a notice appears at the top of the article and the link is marked as sponsored. If you buy through an affiliate link, Paws & Passage may earn a commission at no extra cost to you. A commission never changes which products we list or what we say about them. Read the full [affiliate disclosure](/affiliate-disclosure).
 
@@ -221,9 +134,7 @@ Some links on this site are affiliate links. When an article contains one, a not
 - You have asked the host or park what is required for food storage.
 - Food, bowls and treats stay indoors or as directed, never on a porch or deck.
 - Bowls and bottles are rinsed and dried during the trip.
-- Your vet has answered any feeding or hydration questions specific to your dog.
-
-Choose gear for how you travel, and follow the official guidance for heat and wildlife.`,
+- Your vet has answered any feeding or hydration questions specific to your dog.`,
   faqs: [
     {
       q: "Should I bring water from home for a road trip with my dog?",

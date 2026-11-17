@@ -83,8 +83,28 @@ const staysIndexed = !/name="robots"[^>]+noindex/.test(pages["/stays"].body);
 if (stayLinks.length > 0) ok(staysIndexed, "The main /stays page itself is indexable (it lists verified stays)");
 else ok(!staysIndexed, "The /stays page is noindex while it lists no verified stays (empty pages stay out of search)");
 
+// ---------- 3b. Dog rules lookup (/dog-rules) ----------
+// Public only once a verified place exists. Until then the page must be noindex and out of the sitemap.
+const rules = await get("/dog-rules");
+ok(rules.status === 200 && /text\/html/.test(rules.type), "GET /dog-rules is 200 HTML", `status ${rules.status}`);
+const placeLinks = [...new Set([...rules.body.matchAll(/href="(\/dog-rules\/[a-z0-9-]+)"/g)].map((m) => m[1]))];
+const rulesIndexed = !/name="robots"[^>]+noindex/.test(rules.body);
+if (placeLinks.length > 0) {
+  ok(rulesIndexed, "/dog-rules is indexable (it lists verified places)");
+  for (const pl of placeLinks.slice(0, 6)) {
+    const r = await get(pl);
+    ok(r.status === 200 && strip(r.body).length > 400, `GET ${pl} is 200 with readable text`, `status ${r.status}`);
+    ok(!/noindex/.test(r.body), `${pl} is indexable and shows the official source`, /Official source/.test(r.body) ? "" : "no 'Official source' link");
+    ok(/Official source/.test(r.body) && /Last checked/.test(r.body), `${pl} shows 'Official source' and 'Last checked'`);
+  }
+} else {
+  ok(!rulesIndexed, "/dog-rules is noindex while no verified place exists (an empty lookup stays out of search)");
+}
+const rulesFiltered = await get("/dog-rules?state=georgia");
+ok(rulesFiltered.status === 200 && /noindex/.test(rulesFiltered.body), "Filtered /dog-rules pages are noindex");
+
 // ---------- 4. 404s ----------
-for (const p of ["/this-page-does-not-exist", "/guides/this-guide-does-not-exist", "/stays/this-stay-does-not-exist", "/destinations/nowhere"]) {
+for (const p of ["/this-page-does-not-exist", "/guides/this-guide-does-not-exist", "/stays/this-stay-does-not-exist", "/dog-rules/this-place-does-not-exist", "/destinations/nowhere"]) {
   const r = await get(p);
   ok(r.status === 404, `Unknown route ${p} returns a real 404`, `status ${r.status}`);
 }
@@ -137,6 +157,8 @@ if (siteUrl) {
   ok(locs.every((l) => l.startsWith(siteUrl)), "every sitemap URL uses the real domain", `${locs.length} URLs`);
   for (const slug of guideSlugs) ok(locs.includes(`${siteUrl}/guides/${slug}`), `sitemap includes guide ${slug}`);
   ok(!locs.some((l) => /[?]/.test(l)), "sitemap has no filtered/query URLs");
+  ok(locs.includes(`${siteUrl}/dog-rules`) === rulesIndexed, "sitemap lists /dog-rules only when it is indexable (verified places exist)");
+  for (const pl of placeLinks) ok(locs.includes(siteUrl + pl), `sitemap includes ${pl}`);
 } else {
   ok(sm.status === 503 || sm.status === 200, `sitemap.xml responds sensibly before a domain is set (status ${sm.status})`);
   console.log("NOTE  pass --site-url to verify the sitemap and canonical URLs for the real domain");

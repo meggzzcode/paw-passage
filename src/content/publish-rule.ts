@@ -46,5 +46,6 @@ export function placeNeedsRecheck(p: { lastChecked?: string | null | undefined }
   const checked = new Date(`${p.lastChecked}T00:00:00Z`);
   if (Number.isNaN(checked.getTime())) return true;
   const limit = new Date(Date.UTC(checked.getUTCFullYear() + 1, checked.getUTCMonth(), checked.getUTCDate()));
-  return now.getTime() > limit.getTime();
+  const today = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate());
+  return today > limit.getTime();
 }

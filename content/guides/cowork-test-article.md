@@ -1,5 +1,5 @@
 ---
-status: published
+status: draft
 title: Cowork test article
 dek: A test article for checking the editing form.
 category: Planning

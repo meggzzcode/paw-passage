@@ -24,7 +24,7 @@ The plan is that you can run it day to day without a developer:
 
 | Service | What it does | Cost | You need |
 |---|---|---|---|
-| **Namecheap** | Owns the website address (domain) and runs the business email (Private Email) | Yearly domain fee plus an email subscription | A Namecheap account |
+| **Namecheap** | Owns the website address (domain `pawsandpassage.com`, bought 2026-11-17 with free domain privacy) and runs the business email (Private Email, the "Launch" plan with 1 mailbox) | Yearly domain fee plus an email subscription | A Namecheap account |
 | **Netlify** | Hosts the website and rebuilds it automatically when content changes | Has a free plan (usage limits apply; see section 8) | A Netlify account |
 | **GitHub** | Stores the website's files and every change ever made | Free | A GitHub account |
 | **Pages CMS** | The friendly web form for editing content | Free, per its own site | Your GitHub login |

@@ -17,6 +17,7 @@ research:
   angle: it is a test
 approvedOn: 2026-11-16
 approvedBy: Cowork Test
+heroUpload: /uploads/cowork-test-photo.jpg
 ---
 This is the first short paragraph of the test article.
 

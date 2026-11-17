@@ -114,19 +114,19 @@ function Home() {
       <section className="container-page mt-20">
         <h2 className="text-3xl md:text-4xl">Browse by travel style</h2>
         <div className="mt-8 grid grid-cols-2 gap-4 md:grid-cols-5">
-          {styles.map((s, i) => {
+          {styles.map((s) => {
             const img = images[s.img];
             const inner = (
               <>
-                <img src={img.card ?? img.src} alt="" loading="lazy" decoding="async" width={800} height={1000} className={`w-full object-cover transition duration-700 group-hover:scale-105 ${i % 2 ? "aspect-[3/4]" : "aspect-[4/5]"}`} />
+                <img src={img.card ?? img.src} alt="" loading="lazy" decoding="async" width={800} height={1000} className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-scrim" />
                 <span className="absolute bottom-4 left-4 font-display text-xl text-primary-foreground">{s.label}</span>
               </>
             );
             return "guide" in s ? (
-              <Link key={s.label} to="/guides/$slug" params={{ slug: s.guide }} className="group relative overflow-hidden rounded-lg">{inner}</Link>
+              <Link key={s.label} to="/guides/$slug" params={{ slug: s.guide }} className="group relative aspect-[4/5] overflow-hidden rounded-lg">{inner}</Link>
             ) : (
-              <Link key={s.label} to="/stays" search={(p) => ({ ...p, ...s.search })} className="group relative overflow-hidden rounded-lg">{inner}</Link>
+              <Link key={s.label} to="/stays" search={(p) => ({ ...p, ...s.search })} className="group relative aspect-[4/5] overflow-hidden rounded-lg">{inner}</Link>
             );
           })}
         </div>

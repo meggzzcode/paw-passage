@@ -1,0 +1,19 @@
+status: verified
+name: Cowork Test Cabin
+type: cabin
+state: georgia
+town: blue-ridge
+summary: A test cabin used only to check the editing tool.
+description: This is a test listing created to check the editing tool. It is not
+  a real property.
+maxDogs: 2
+largeDogsOk: yes
+fencedYard: full
+petFee: charged
+petFeeAmount: 50
+petFeeBasis: stay
+beach: false
+mountain: false
+image: guide-ga-cabins
+photoPermission: false
+lastVerified: 2026-11-16

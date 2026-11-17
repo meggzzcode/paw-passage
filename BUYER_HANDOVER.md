@@ -32,6 +32,8 @@ The plan is that you can run it day to day without a developer:
 
 There is no custom database or backend, and Hostinger is not used.
 
+**Launch to-do list:** `docs/LAUNCH-CHECKLIST.md`.
+
 **Records:** every service, domain, mailbox and cost is listed in `docs/OPERATIONS-RECORD.md`; dated decisions and actions are in `docs/RECORD-TRAIL.md`.
 
 ## 3. How publishing works

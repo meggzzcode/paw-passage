@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { allGuides } from "@/content/guides";
+import { allGuides, isPublic } from "@/content/guides";
 
 const tools = ["checklist", "host-questions", "cost-calculator", "compare"];
 const text = (g: (typeof allGuides)[number]) => g.body + "\n" + g.faqs.map((f) => f.a).join("\n");
@@ -32,7 +32,7 @@ describe.each(allGuides.map((g) => [g.slug, g] as const))("guide content: %s", (
     expect(text(g)).not.toMatch(/for this draft|full-page review (is )?outstanding|TODO|TBD/i);
   });
   it("has at least five competitors, each with a check date", () => {
-    if (g.status !== "published") return; // drafts (like the CMS test article) are still being written
+    if (!isPublic(g)) return; // drafts and unapproved articles (like the CMS test articles) are still being written
     expect(g.research.competitors.length).toBeGreaterThanOrEqual(5);
     for (const c of g.research.competitors) expect(c.checkedOn).toMatch(/^\d{4}-\d{2}-\d{2}$/);
   });

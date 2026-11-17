@@ -23,3 +23,13 @@ Living register. Update it whenever a service is added, changed or dropped. **Ne
 
 ## Where the accounts live (names only)
 - Namecheap, Netlify, GitHub, Pages CMS: under the original owner's logins. At sale, see DNS-AND-TRANSFER.md and BUYER_HANDOVER.md for handing each one over.
+
+## Login email per account (names only; no passwords)
+Keep this list current. It is used for the account exit step in `LAUNCH-CHECKLIST.md`.
+
+| Account | Login email | Tied to seller's tax ID or payout? |
+|---|---|---|
+| Namecheap, Netlify, GitHub, Pages CMS | (fill in) | No |
+| Google Analytics and Search Console | (fill in) | No |
+| Affiliate programs (when approved) | hello@ address (recommended) | **Yes**: exit step required |
+| Pinterest Business | hello@ address | No |

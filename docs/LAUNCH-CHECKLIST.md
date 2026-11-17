@@ -37,3 +37,13 @@ Legal review of the privacy, terms and disclosure pages was skipped by the owner
 | Backlinks and social profiles (Pinterest first for travel) | Extra proof of reach | Pinterest Business account being set up under the business email (Cowork) |
 | A 12-month content plan (list of next articles) | Shows the buyer where growth comes from | Not written. Search research is being done in `REVIEW-SEARCH.md` |
 | Where to list it (a site-flipping marketplace) and what its minimums are | Some marketplaces only take sites with revenue and months of history | Not researched |
+
+## Before the mailbox is handed to a buyer (account exit step)
+
+Anyone who controls the business mailbox can reset passwords on every account that uses it as the login. So, before handing it over:
+
+1. List every account that logs in with the business email (affiliate programs, Pinterest, Google Analytics and Search Console, Netlify, GitHub, Pages CMS, Namecheap, any other). Keep this list in `OPERATIONS-RECORD.md` (login email only, never passwords).
+2. For each account tied to the seller's tax ID or payout (affiliate programs): download earnings statements and any tax forms, confirm the final payout has been paid, then close the account or change its login email to the seller's personal address and remove payout and tax details.
+3. For the infrastructure accounts (Namecheap, Netlify, GitHub, Google): hand over or add the buyer as owner per `BUYER_HANDOVER.md`, then remove the seller.
+4. Change the mailbox password at handover and sign out other sessions.
+5. The buyer applies for their own affiliate accounts with the business email.

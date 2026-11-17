@@ -26,6 +26,7 @@ Repository: existing (`meggzzcode/paw-passage`), branch `claude/cms-poc`. `main`
 
 - Which branch does Pages CMS commit to, and can `claude/cms-poc` be chosen? _(unknown)_
 - Did `main` stay at `8f50649` throughout? **Yes** (checked after Part A by the tester and independently from GitHub).
+- Decision (owner): failure alerts will NOT be set up by the seller; documented as an optional buyer upgrade.
 - Netlify free plan: email deploy-failure notifications are a Pro feature; Slack is also locked. Free options: GitHub commit status, GitHub PR comments, HTTP POST (webhook).
 - Netlify project visibility: new projects here defaulted to **Private** (visitors must sign in to Netlify), which blocks outside checks and is the wrong setting for a live public site.
 - Does the free hosted plan support email-only collaborators? _(unknown; the Pages CMS site says it is "100% free" and lists "Invite users via email, no other account needed", but this has not been tried)_

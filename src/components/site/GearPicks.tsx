@@ -2,17 +2,18 @@ import { useLocation } from "@tanstack/react-router";
 import { AMAZON_DISCLOSURE, getApprovedLink, isAmazon } from "@/content/affiliates";
 import { getProduct, type GearPick } from "@/content/gear";
 import { trackProductClick } from "@/lib/analytics";
+import { productLinkId } from "@/content/affiliate-usage";
 
 /** Disclosure shown above the picks whenever at least one approved link will render. */
 export function hasAffiliateLinks(picks: GearPick[]) {
-  return picks.some((p) => !!getApprovedLink(getProduct(p.productId)?.affiliateId));
+  return picks.some((p) => !!getApprovedLink(((x) => (x ? productLinkId(x) : undefined))(getProduct(p.productId))));
 }
 
 export function GearPicks({ picks }: { picks: GearPick[] }) {
   const loc = useLocation();
   const rows = picks.map((pick) => ({ pick, product: getProduct(pick.productId) })).filter((r) => !!r.product);
   if (rows.length === 0) return null;
-  const links = rows.map((r) => getApprovedLink(r.product!.affiliateId));
+  const links = rows.map((r) => getApprovedLink(productLinkId(r.product!)));
   const anyAffiliate = links.some(Boolean);
   const anyAmazon = links.some((l) => l && isAmazon(l));
   return (

@@ -135,7 +135,7 @@ content:
         type: code
         options:
           format: markdown
-        description: "Sources are linked like [[1]](https://...). Keep the numbers in the same order as the Sources list below. Tick boxes are written - [ ] and - [x]."
+        description: "Sources are linked like [[1]](https://...). Keep the numbers in the same order as the Sources list below. Tick boxes are written - [ ] and - [x]. An affiliate link is written [the words](aff:short-name), using a short name from Affiliate links; it shows as a link only once that link is Approved."
       - name: faqs
         label: Questions and answers at the end
         type: object
@@ -298,7 +298,7 @@ content:
         type: object
         list: true
         fields:
-          - { name: id, label: "Short name (lowercase, no spaces, e.g. vrbo-ridge-cabin)", type: string, required: true }
+          - { name: id, label: "Short name (lowercase letters, numbers and hyphens). For a product, use the product's id exactly (see docs/affiliate-link-worksheet.csv), for example kurgo-heather-hammock", type: string, required: true }
           - { name: network, label: "Company (e.g. Vrbo, Amazon Associates)", type: string, required: true }
           - { name: url, label: "Your affiliate link (starts with https://)", type: string, required: true }
           - { name: approved, label: "Approved? (tick only after the company approved you)", type: boolean }

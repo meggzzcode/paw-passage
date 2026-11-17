@@ -168,5 +168,25 @@ describe("content build step", () => {
     bad("content/stays/Bad Name.yml", "name: X\nstatus: verified\nlastVerified: 2026-11-16\ntype: cabin\nstate: georgia\ntown: a\nsummary: s\ndescription: d\nimage: guide-ga-cabins\n", /lowercase letters/);
     bad("content/stays/zero.yml", "name: X\nstatus: sample\ntype: cabin\nstate: georgia\ntown: a\nsummary: s\ndescription: d\nimage: guide-ga-cabins\npetFee: charged\npetFeeAmount: 0\npetFeeBasis: stay\n", /above zero/);
   });
+
+  it("affiliate links in article text must exist in Affiliate links (a typo fails the build; an unfinished draft is skipped)", () => {
+    reset();
+    writeFileSync(join(root, "content/guides/aff.md"), guideWith((t) => t.replace("## A pet fee is a formula", "Try the [thing](aff:not-there).\n\n## A pet fee is a formula")));
+    expect(() => loadContent(root, false)).toThrow(/affiliate link "not-there"/);
+    writeFileSync(join(root, "content/affiliates.yml"), "links:\n  - id: not-there\n    network: Test\n    url: https://example.com/x\n    approved: false\n");
+    expect(loadContent(root, false).guides.length).toBe(1);
+    rmSync(join(root, "content/affiliates.yml"));
+    writeFileSync(join(root, "content/guides/aff.md"), guideWith((t) => t.replace("status: published", "status: draft").replace("## A pet fee is a formula", "Try the [thing](aff:not-there).\n\n## A pet fee is a formula")));
+    expect(loadContent(root, false).guides).toEqual([]);
+  });
+
+  it("a stay's booking link must exist in Affiliate links", () => {
+    reset();
+    writeFileSync(
+      join(root, "content/stays/b.yml"),
+      "name: B\nstatus: verified\ntype: cabin\nstate: georgia\ntown: a\nsummary: s\ndescription: d\nimage: guide-ga-cabins\nlastVerified: 2026-11-16\naffiliateId: nope\n",
+    );
+    expect(() => loadContent(root, false)).toThrow(/booking link "nope"/);
+  });
 });
 

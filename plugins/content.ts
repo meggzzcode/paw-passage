@@ -79,6 +79,12 @@ export function loadContent(root: string, includeUnpublished: boolean, opts: { s
   const codeGuides = codeGuideSlugs(root);
   const codeStays = codeStaySlugs(root);
   const contentGuideSlugs = new Set<string>();
+  // Names of all affiliate links in content/affiliates.yml (approved or not). Articles and stays may only refer to these.
+  const affiliateIds = new Set<string>();
+  {
+    const early = affiliatesSchema.safeParse(existsSync(join(dir, "affiliates.yml")) ? readYamlFile(join(dir, "affiliates.yml")) : {});
+    if (early.success) for (const l of early.data.links) affiliateIds.add(l.id);
+  }
 
   const guides: unknown[] = [];
   const gdir = join(dir, "guides");
@@ -110,6 +116,15 @@ export function loadContent(root: string, includeUnpublished: boolean, opts: { s
       if (slugs.has(`guide:${slug}`)) throw new ContentError(`\n\nTwo guides share the web address "${slug}".\n`);
       slugs.add(`guide:${slug}`);
       const g = parsed.data;
+      const unknownAff = [...body.matchAll(/\]\(aff:([a-z0-9-]+)\)/g)].map((m) => m[1]!).filter((id) => !affiliateIds.has(id));
+      if (unknownAff.length) {
+        const msg = `\n\nContent problem in ${file}:\n  - the article uses affiliate link "${[...new Set(unknownAff)].join('", "')}" but there is no link with that name in Affiliate links. Add it there (leave it unapproved until you are approved), or remove it from the text.\n`;
+        if (isDraft && skipBrokenDrafts) {
+          console.warn(`[content] ${file} is a draft that refers to an affiliate link that does not exist yet, so it is left out for now.${msg}`);
+          continue;
+        }
+        throw new ContentError(msg);
+      }
       if (!g.heroImage && !g.heroUpload) throw new ContentError(`\n\nContent problem in ${file}:\n  - pick a built-in hero image or upload one\n`);
       if (!g.heroUpload && g.heroImage && imageKeys.size > 0 && !imageKeys.has(g.heroImage)) throw new ContentError(`\n\nContent problem in ${file}:\n  - the built-in photo "${g.heroImage}" does not exist. Pick one from the list or upload your own.\n`);
       if (g.heroUpload && !existsSync(join(root, "public", g.heroUpload))) throw new ContentError(`\n\nContent problem in ${file}:\n  - heroUpload "${g.heroUpload}" is not in the uploads folder\n`);
@@ -157,6 +172,14 @@ export function loadContent(root: string, includeUnpublished: boolean, opts: { s
       slugs.add(`stay:${slug}`);
       const s = parsed.data;
       if (!s.image && !s.imageUpload) throw new ContentError(`\n\nContent problem in ${file}:\n  - pick a built-in photo or upload one\n`);
+      if (s.affiliateId && !affiliateIds.has(s.affiliateId)) {
+        const msg = `\n\nContent problem in ${file}:\n  - the booking link "${s.affiliateId}" does not exist in Affiliate links\n`;
+        if (notLive && skipBrokenDrafts) {
+          console.warn(`[content] ${file} is not live and refers to a booking link that does not exist yet, so it is left out for now.${msg}`);
+          continue;
+        }
+        throw new ContentError(msg);
+      }
       if (!s.imageUpload && s.image && imageKeys.size > 0 && !imageKeys.has(s.image)) throw new ContentError(`\n\nContent problem in ${file}:\n  - the built-in photo "${s.image}" does not exist\n`);
       if (s.imageUpload && !existsSync(join(root, "public", s.imageUpload))) throw new ContentError(`\n\nContent problem in ${file}:\n  - imageUpload "${s.imageUpload}" is not in the uploads folder\n`);
       if (s.petFee === "charged" && (!s.petFeeAmount || !s.petFeeBasis)) throw new ContentError(`\n\nContent problem in ${file}:\n  - pet fee is "charged", so enter an amount above zero and what it is charged per\n`);

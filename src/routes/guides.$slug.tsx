@@ -4,6 +4,7 @@ import { guideHero } from "@/lib/images";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { Markdown } from "@/components/site/Markdown";
 import { GearPicks } from "@/components/site/GearPicks";
+import { AffiliateNotice } from "@/components/site/AffiliateNotice";
 import { GuideCard } from "@/components/site/GuideCard";
 import { PreviewBadge } from "@/components/site/StatusBadge";
 import { pageHead, breadcrumbLd, jsonLd } from "@/lib/seo";
@@ -62,6 +63,7 @@ function GuidePage() {
       <img src={img.src} alt={img.alt} width={1600} height={1008} decoding="async" fetchPriority="high" className="mx-auto mt-10 aspect-[21/9] w-full max-w-6xl object-cover md:rounded-xl" />
       <div className="container-page mt-12 grid gap-12 lg:grid-cols-[1fr_260px]">
         <div className="mx-auto w-full max-w-[42rem]">
+          <AffiliateNotice guide={g} />
           <Markdown source={g.body} />
           {g.gear && g.gear.length > 0 && <GearPicks picks={g.gear} />}
           {g.faqs.length > 0 && (

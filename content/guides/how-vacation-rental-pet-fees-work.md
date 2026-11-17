@@ -190,6 +190,8 @@ Photograph pre-existing damage on arrival and report it through the booking chan
 
 Airbnb's help page lets hosts charge a flat fee per booking, per night, per pet, or per pet per night. Guests can specify how many pets they plan to bring, and the fee is shown as part of the nightly rate and in the total at checkout. [[1]](https://www.airbnb.com/help/article/3623)
 
+In one check we ran in November 2026 (a Blue Ridge, Georgia cabin, December 11 to 13, two adults), adding one dog raised the total on Airbnb's request-to-book page from $519.11 to $576.61. The $57.50 difference was $50 more on the nightly line ($25 a night for two nights) plus $7.50 more tax, and the price breakdown showed no separate pet-fee line. That is one listing and one date range, so treat it as an example of how the fee can be folded into the nightly price, not a rule. It is also why the tool below asks the host to confirm the total in writing.
+
 A displayed nightly amount is not necessarily the billing unit. A hypothetical $100 per-stay fee shows as $50 a night over two nights and $20 over five. Identify the underlying structure and inspect the total for your dates.
 
 Airbnb recommends telling the host about your pets and checking restrictions even when the property allows them; a pet-friendly label does not establish that your animal's size, breed or count is accepted. [[2]](https://www.airbnb.com/help/article/86) For a reliable quote, enter the correct dates, guests and number of pets, read the house rules, review the checkout price, and ask about any discrepancy before paying.

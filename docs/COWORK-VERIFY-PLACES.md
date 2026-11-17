@@ -234,3 +234,13 @@ Places to check (generated from `content/places/*.yml`):
 - Spot-check at least two quotes in a normal browser yourself before setting `status: verified`.
 - Rows marked `needs human` stay unverified. Places that cannot be confirmed from an official page stay hidden.
 - The site flags a verified place "Needs recheck" 12 months after `lastChecked`; re-run this prompt then.
+
+## Already observed by the browser fact-check (2026-11-17). Re-confirm these specifically:
+- Georgia State Parks cabin pet fee: the official gastateparks.org page showed $50 per dog, limit 2. The "$45" figure was not seen on any official page.
+- Tallulah Gorge: the official pet notice matches our article (rim trails on a leash; gorge floor and suspension bridge not allowed) BUT a trail-page excerpt said "No pets allowed on this trail" for the North Rim page. Resolve which trails allow dogs before this entry is verified.
+- Anna Ruby Falls: no current Forest Service page confirmed any pet rule (only an old activities-page excerpt said pets are not allowed). Answer "no official page states one" unless you find it.
+- Red Top Mountain, Unicoi, Amicalola: not confirmed on screen yet.
+- San Diego beaches: the lifeguard page says 9 a.m. to 4 p.m. November to March and 9 a.m. to 6 p.m. April to October; an older rules page said 9 a.m. to 6 p.m. Find the current official rule.
+- Channel Islands: one page says pets are not allowed in the mainland visitor center; the Laws & Policies page says service animals are welcome there. Quote both.
+- Arroyo Burro: off-leash location (county vs city; east of the creek) is still unresolved.
+- Sleepypod Atom carrier: our car-safety article says CPS lists it (tested August 2024, 12 lb test dog), but it was not on CPS's certified products list on 2026-11-17. Open https://centerforpetsafety.org/sleepypod-atom/ and the certified list and say what each shows.

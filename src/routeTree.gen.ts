@@ -19,17 +19,17 @@ import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as TermsRouteImport } from './routes/terms'
 import { Route as DestinationsIndexRouteImport } from './routes/destinations.index'
+import { Route as DogRulesIndexRouteImport } from './routes/dog-rules.index'
+import { Route as DogRulesSlugRouteImport } from './routes/dog-rules.$slug'
 import { Route as GuidesIndexRouteImport } from './routes/guides.index'
 import { Route as GuidesSlugRouteImport } from './routes/guides.$slug'
 import { Route as StaysIndexRouteImport } from './routes/stays.index'
-import { Route as DogRulesIndexRouteImport } from './routes/dog-rules.index'
 import { Route as StaysSlugRouteImport } from './routes/stays.$slug'
-import { Route as DogRulesSlugRouteImport } from './routes/dog-rules.$slug'
 import { Route as ToolsIndexRouteImport } from './routes/tools.index'
 import { Route as ToolsChecklistRouteImport } from './routes/tools.checklist'
-import { Route as ToolsPetCostCheckRouteImport } from './routes/tools.pet-cost-check'
 import { Route as ToolsCostCalculatorRouteImport } from './routes/tools.cost-calculator'
 import { Route as ToolsHostQuestionsRouteImport } from './routes/tools.host-questions'
+import { Route as ToolsPetCostCheckRouteImport } from './routes/tools.pet-cost-check'
 import { Route as DestinationsStateIndexRouteImport } from './routes/destinations.$state.index'
 import { Route as DestinationsStateTownRouteImport } from './routes/destinations.$state.$town'
 
@@ -83,6 +83,16 @@ const DestinationsIndexRoute = DestinationsIndexRouteImport.update({
   path: '/destinations/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const DogRulesIndexRoute = DogRulesIndexRouteImport.update({
+  id: '/dog-rules/',
+  path: '/dog-rules/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DogRulesSlugRoute = DogRulesSlugRouteImport.update({
+  id: '/dog-rules/$slug',
+  path: '/dog-rules/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const GuidesIndexRoute = GuidesIndexRouteImport.update({
   id: '/guides/',
   path: '/guides/',
@@ -98,19 +108,9 @@ const StaysIndexRoute = StaysIndexRouteImport.update({
   path: '/stays/',
   getParentRoute: () => rootRouteImport,
 } as any)
-const DogRulesIndexRoute = DogRulesIndexRouteImport.update({
-  id: '/dog-rules/',
-  path: '/dog-rules/',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const StaysSlugRoute = StaysSlugRouteImport.update({
   id: '/stays/$slug',
   path: '/stays/$slug',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const DogRulesSlugRoute = DogRulesSlugRouteImport.update({
-  id: '/dog-rules/$slug',
-  path: '/dog-rules/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ToolsIndexRoute = ToolsIndexRouteImport.update({
@@ -123,11 +123,6 @@ const ToolsChecklistRoute = ToolsChecklistRouteImport.update({
   path: '/tools/checklist',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ToolsPetCostCheckRoute = ToolsPetCostCheckRouteImport.update({
-  id: '/tools/pet-cost-check',
-  path: '/tools/pet-cost-check',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const ToolsCostCalculatorRoute = ToolsCostCalculatorRouteImport.update({
   id: '/tools/cost-calculator',
   path: '/tools/cost-calculator',
@@ -136,6 +131,11 @@ const ToolsCostCalculatorRoute = ToolsCostCalculatorRouteImport.update({
 const ToolsHostQuestionsRoute = ToolsHostQuestionsRouteImport.update({
   id: '/tools/host-questions',
   path: '/tools/host-questions',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ToolsPetCostCheckRoute = ToolsPetCostCheckRouteImport.update({
+  id: '/tools/pet-cost-check',
+  path: '/tools/pet-cost-check',
   getParentRoute: () => rootRouteImport,
 } as any)
 const DestinationsStateIndexRoute = DestinationsStateIndexRouteImport.update({
@@ -159,17 +159,17 @@ export interface FileRoutesByFullPath {
   '/privacy': typeof PrivacyRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
+  '/dog-rules/$slug': typeof DogRulesSlugRoute
   '/guides/$slug': typeof GuidesSlugRoute
   '/stays/$slug': typeof StaysSlugRoute
-  '/dog-rules/$slug': typeof DogRulesSlugRoute
   '/tools/checklist': typeof ToolsChecklistRoute
-  '/tools/pet-cost-check': typeof ToolsPetCostCheckRoute
   '/tools/cost-calculator': typeof ToolsCostCalculatorRoute
   '/tools/host-questions': typeof ToolsHostQuestionsRoute
+  '/tools/pet-cost-check': typeof ToolsPetCostCheckRoute
   '/destinations/': typeof DestinationsIndexRoute
+  '/dog-rules/': typeof DogRulesIndexRoute
   '/guides/': typeof GuidesIndexRoute
   '/stays/': typeof StaysIndexRoute
-  '/dog-rules/': typeof DogRulesIndexRoute
   '/tools/': typeof ToolsIndexRoute
   '/destinations/$state/$town': typeof DestinationsStateTownRoute
   '/destinations/$state/': typeof DestinationsStateIndexRoute
@@ -184,17 +184,17 @@ export interface FileRoutesByTo {
   '/privacy': typeof PrivacyRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
+  '/dog-rules/$slug': typeof DogRulesSlugRoute
   '/guides/$slug': typeof GuidesSlugRoute
   '/stays/$slug': typeof StaysSlugRoute
-  '/dog-rules/$slug': typeof DogRulesSlugRoute
   '/tools/checklist': typeof ToolsChecklistRoute
-  '/tools/pet-cost-check': typeof ToolsPetCostCheckRoute
   '/tools/cost-calculator': typeof ToolsCostCalculatorRoute
   '/tools/host-questions': typeof ToolsHostQuestionsRoute
+  '/tools/pet-cost-check': typeof ToolsPetCostCheckRoute
   '/destinations': typeof DestinationsIndexRoute
+  '/dog-rules': typeof DogRulesIndexRoute
   '/guides': typeof GuidesIndexRoute
   '/stays': typeof StaysIndexRoute
-  '/dog-rules': typeof DogRulesIndexRoute
   '/tools': typeof ToolsIndexRoute
   '/destinations/$state/$town': typeof DestinationsStateTownRoute
   '/destinations/$state': typeof DestinationsStateIndexRoute
@@ -210,17 +210,17 @@ export interface FileRoutesById {
   '/privacy': typeof PrivacyRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
+  '/dog-rules/$slug': typeof DogRulesSlugRoute
   '/guides/$slug': typeof GuidesSlugRoute
   '/stays/$slug': typeof StaysSlugRoute
-  '/dog-rules/$slug': typeof DogRulesSlugRoute
   '/tools/checklist': typeof ToolsChecklistRoute
-  '/tools/pet-cost-check': typeof ToolsPetCostCheckRoute
   '/tools/cost-calculator': typeof ToolsCostCalculatorRoute
   '/tools/host-questions': typeof ToolsHostQuestionsRoute
+  '/tools/pet-cost-check': typeof ToolsPetCostCheckRoute
   '/destinations/': typeof DestinationsIndexRoute
+  '/dog-rules/': typeof DogRulesIndexRoute
   '/guides/': typeof GuidesIndexRoute
   '/stays/': typeof StaysIndexRoute
-  '/dog-rules/': typeof DogRulesIndexRoute
   '/tools/': typeof ToolsIndexRoute
   '/destinations/$state/$town': typeof DestinationsStateTownRoute
   '/destinations/$state/': typeof DestinationsStateIndexRoute
@@ -237,17 +237,17 @@ export interface FileRouteTypes {
     | '/privacy'
     | '/sitemap.xml'
     | '/terms'
+    | '/dog-rules/$slug'
     | '/guides/$slug'
     | '/stays/$slug'
-    | '/dog-rules/$slug'
     | '/tools/checklist'
-    | '/tools/pet-cost-check'
     | '/tools/cost-calculator'
     | '/tools/host-questions'
+    | '/tools/pet-cost-check'
     | '/destinations/'
+    | '/dog-rules/'
     | '/guides/'
     | '/stays/'
-    | '/dog-rules/'
     | '/tools/'
     | '/destinations/$state/$town'
     | '/destinations/$state/'
@@ -262,17 +262,17 @@ export interface FileRouteTypes {
     | '/privacy'
     | '/sitemap.xml'
     | '/terms'
+    | '/dog-rules/$slug'
     | '/guides/$slug'
     | '/stays/$slug'
-    | '/dog-rules/$slug'
     | '/tools/checklist'
-    | '/tools/pet-cost-check'
     | '/tools/cost-calculator'
     | '/tools/host-questions'
+    | '/tools/pet-cost-check'
     | '/destinations'
+    | '/dog-rules'
     | '/guides'
     | '/stays'
-    | '/dog-rules'
     | '/tools'
     | '/destinations/$state/$town'
     | '/destinations/$state'
@@ -287,17 +287,17 @@ export interface FileRouteTypes {
     | '/privacy'
     | '/sitemap.xml'
     | '/terms'
+    | '/dog-rules/$slug'
     | '/guides/$slug'
     | '/stays/$slug'
-    | '/dog-rules/$slug'
     | '/tools/checklist'
-    | '/tools/pet-cost-check'
     | '/tools/cost-calculator'
     | '/tools/host-questions'
+    | '/tools/pet-cost-check'
     | '/destinations/'
+    | '/dog-rules/'
     | '/guides/'
     | '/stays/'
-    | '/dog-rules/'
     | '/tools/'
     | '/destinations/$state/$town'
     | '/destinations/$state/'
@@ -313,17 +313,17 @@ export interface RootRouteChildren {
   PrivacyRoute: typeof PrivacyRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   TermsRoute: typeof TermsRoute
+  DogRulesSlugRoute: typeof DogRulesSlugRoute
   GuidesSlugRoute: typeof GuidesSlugRoute
   StaysSlugRoute: typeof StaysSlugRoute
-  DogRulesSlugRoute: typeof DogRulesSlugRoute
   ToolsChecklistRoute: typeof ToolsChecklistRoute
-  ToolsPetCostCheckRoute: typeof ToolsPetCostCheckRoute
   ToolsCostCalculatorRoute: typeof ToolsCostCalculatorRoute
   ToolsHostQuestionsRoute: typeof ToolsHostQuestionsRoute
+  ToolsPetCostCheckRoute: typeof ToolsPetCostCheckRoute
   DestinationsIndexRoute: typeof DestinationsIndexRoute
+  DogRulesIndexRoute: typeof DogRulesIndexRoute
   GuidesIndexRoute: typeof GuidesIndexRoute
   StaysIndexRoute: typeof StaysIndexRoute
-  DogRulesIndexRoute: typeof DogRulesIndexRoute
   ToolsIndexRoute: typeof ToolsIndexRoute
   DestinationsStateTownRoute: typeof DestinationsStateTownRoute
   DestinationsStateIndexRoute: typeof DestinationsStateIndexRoute
@@ -401,6 +401,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof DestinationsIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/dog-rules/': {
+      id: '/dog-rules/'
+      path: '/dog-rules'
+      fullPath: '/dog-rules/'
+      preLoaderRoute: typeof DogRulesIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/dog-rules/$slug': {
+      id: '/dog-rules/$slug'
+      path: '/dog-rules/$slug'
+      fullPath: '/dog-rules/$slug'
+      preLoaderRoute: typeof DogRulesSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/guides/': {
       id: '/guides/'
       path: '/guides'
@@ -422,25 +436,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof StaysIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/dog-rules/': {
-      id: '/dog-rules/'
-      path: '/dog-rules'
-      fullPath: '/dog-rules/'
-      preLoaderRoute: typeof DogRulesIndexRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/stays/$slug': {
       id: '/stays/$slug'
       path: '/stays/$slug'
       fullPath: '/stays/$slug'
       preLoaderRoute: typeof StaysSlugRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/dog-rules/$slug': {
-      id: '/dog-rules/$slug'
-      path: '/dog-rules/$slug'
-      fullPath: '/dog-rules/$slug'
-      preLoaderRoute: typeof DogRulesSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/tools/': {
@@ -457,13 +457,6 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ToolsChecklistRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/tools/pet-cost-check': {
-      id: '/tools/pet-cost-check'
-      path: '/tools/pet-cost-check'
-      fullPath: '/tools/pet-cost-check'
-      preLoaderRoute: typeof ToolsPetCostCheckRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/tools/cost-calculator': {
       id: '/tools/cost-calculator'
       path: '/tools/cost-calculator'
@@ -476,6 +469,13 @@ declare module '@tanstack/react-router' {
       path: '/tools/host-questions'
       fullPath: '/tools/host-questions'
       preLoaderRoute: typeof ToolsHostQuestionsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tools/pet-cost-check': {
+      id: '/tools/pet-cost-check'
+      path: '/tools/pet-cost-check'
+      fullPath: '/tools/pet-cost-check'
+      preLoaderRoute: typeof ToolsPetCostCheckRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/destinations/$state/': {
@@ -505,17 +505,17 @@ const rootRouteChildren: RootRouteChildren = {
   PrivacyRoute: PrivacyRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   TermsRoute: TermsRoute,
+  DogRulesSlugRoute: DogRulesSlugRoute,
   GuidesSlugRoute: GuidesSlugRoute,
   StaysSlugRoute: StaysSlugRoute,
-  DogRulesSlugRoute: DogRulesSlugRoute,
   ToolsChecklistRoute: ToolsChecklistRoute,
-  ToolsPetCostCheckRoute: ToolsPetCostCheckRoute,
   ToolsCostCalculatorRoute: ToolsCostCalculatorRoute,
   ToolsHostQuestionsRoute: ToolsHostQuestionsRoute,
+  ToolsPetCostCheckRoute: ToolsPetCostCheckRoute,
   DestinationsIndexRoute: DestinationsIndexRoute,
+  DogRulesIndexRoute: DogRulesIndexRoute,
   GuidesIndexRoute: GuidesIndexRoute,
   StaysIndexRoute: StaysIndexRoute,
-  DogRulesIndexRoute: DogRulesIndexRoute,
   ToolsIndexRoute: ToolsIndexRoute,
   DestinationsStateTownRoute: DestinationsStateTownRoute,
   DestinationsStateIndexRoute: DestinationsStateIndexRoute,

@@ -11,11 +11,12 @@ seoTitle: Cowork test article
 seoDescription: A test article used only to check the editing form.
 heroImage: guide-pet-fees
 research:
-  researchComplete: false
+  researchComplete: true
   primaryKeyword: test
   intendedReader: testers
   angle: it is a test
 approvedOn: 2026-11-16
+approvedBy: Cowork Test
 ---
 This is the first short paragraph of the test article.
 

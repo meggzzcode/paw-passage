@@ -171,12 +171,12 @@ describe("content build step", () => {
 
   it("affiliate links in article text must exist in Affiliate links (a typo fails the build; an unfinished draft is skipped)", () => {
     reset();
-    writeFileSync(join(root, "content/guides/aff.md"), guideWith((t) => t.replace("## A pet fee is a formula", "Try the [thing](aff:not-there).\n\n## A pet fee is a formula")));
+    writeFileSync(join(root, "content/guides/aff.md"), guideWith((t) => t.replace("## The short answer", "Try the [thing](aff:not-there).\n\n## The short answer")));
     expect(() => loadContent(root, false)).toThrow(/affiliate link "not-there"/);
     writeFileSync(join(root, "content/affiliates.yml"), "links:\n  - id: not-there\n    network: Test\n    url: https://example.com/x\n    approved: false\n");
     expect(loadContent(root, false).guides.length).toBe(1);
     rmSync(join(root, "content/affiliates.yml"));
-    writeFileSync(join(root, "content/guides/aff.md"), guideWith((t) => t.replace("status: published", "status: draft").replace("## A pet fee is a formula", "Try the [thing](aff:not-there).\n\n## A pet fee is a formula")));
+    writeFileSync(join(root, "content/guides/aff.md"), guideWith((t) => t.replace("status: published", "status: draft").replace("## The short answer", "Try the [thing](aff:not-there).\n\n## The short answer")));
     expect(loadContent(root, false).guides).toEqual([]);
   });
 

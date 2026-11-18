@@ -10,7 +10,7 @@ author: Paws & Passage Editors
 publishedOn: 2026-11-18
 lastReviewed: 2026-11-18
 readingMinutes: 13
-heroImage: guide-two-dogs
+heroImage: guide-how-many-dogs
 faqs:
   - q: How many dogs can you bring to an Airbnb?
     a: There is no single platform-wide number we could find. Airbnb's guest page lets you declare 0 to 5 pets, and its host guide lets hosts set a limit from one to five, so the listing's own pet rule is what counts. Ask the host and get the number in writing.

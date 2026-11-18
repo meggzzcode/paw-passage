@@ -10,7 +10,7 @@ author: Paws & Passage Editors
 publishedOn: 2026-11-18
 lastReviewed: 2026-11-18
 readingMinutes: 14
-heroImage: guide-large-dogs
+heroImage: guide-breed
 faqs:
   - q: "Can a vacation rental refuse my dog because of its breed?"
     a: "In the policies we read, yes: hosts and managers set their own pet rules, and some name breeds or set weight caps. Airbnb's pages we read say hosts set the pet rules and do not mention breed. Service animals are treated differently from pets."

@@ -31,6 +31,20 @@ import gearPortableFence from "@/assets/gear-portable-fence.jpg";
 import gearPortableFenceCard from "@/assets/gear-portable-fence-card.jpg";
 import gearIdTracking from "@/assets/gear-id-tracking.jpg";
 import gearIdTrackingCard from "@/assets/gear-id-tracking-card.jpg";
+import guideAirbnbVrbo from "@/assets/guide-airbnb-vrbo.jpg";
+import guideAirbnbVrboCard from "@/assets/guide-airbnb-vrbo-card.jpg";
+import guideHowManyDogs from "@/assets/guide-how-many-dogs.jpg";
+import guideHowManyDogsCard from "@/assets/guide-how-many-dogs-card.jpg";
+import guideNoPetsRental from "@/assets/guide-no-pets-rental.jpg";
+import guideNoPetsRentalCard from "@/assets/guide-no-pets-rental-card.jpg";
+import guideNye from "@/assets/guide-nye.jpg";
+import guideNyeCard from "@/assets/guide-nye-card.jpg";
+import guideAlone from "@/assets/guide-alone.jpg";
+import guideAloneCard from "@/assets/guide-alone-card.jpg";
+import guideBreed from "@/assets/guide-breed.jpg";
+import guideBreedCard from "@/assets/guide-breed-card.jpg";
+import guideSenior from "@/assets/guide-senior.jpg";
+import guideSeniorCard from "@/assets/guide-senior-card.jpg";
 
 // Editorial stock photographs (Unsplash License), shown for illustration only and never as pictures of a specific rental.
 // Photographer credits live in src/content/image-credits.ts.
@@ -54,6 +68,13 @@ const stockImages = {
   "gear-rental-protection": { src: gearRentalProtection, card: gearRentalProtectionCard, alt: "A pug wrapped in a soft tan throw blanket on a bed with white bedding" },
   "gear-portable-fence": { src: gearPortableFence, card: gearPortableFenceCard, alt: "A fluffy brown-and-white dog smiling at the camera from the grass behind a white portable mesh fence" },
   "gear-id-tracking": { src: gearIdTracking, card: gearIdTrackingCard, alt: "Close-up of a dog's red leather collar with a brass buckle and a round brass ID tag, with a green blurred background outdoors" },
+  "guide-airbnb-vrbo": { src: guideAirbnbVrbo, card: guideAirbnbVrboCard, alt: "A merle dachshund puppy resting its chin on a laptop keyboard and looking up at the glowing screen" },
+  "guide-how-many-dogs": { src: guideHowManyDogs, card: guideHowManyDogsCard, alt: "Three dogs, two Australian shepherds and a Cavalier King Charles spaniel, together on a wooden platform at sunset" },
+  "guide-no-pets-rental": { src: guideNoPetsRental, card: guideNoPetsRentalCard, alt: "A black dog resting in a window opening of a weathered log cabin wall in warm light, with snow below" },
+  "guide-nye": { src: guideNye, card: guideNyeCard, alt: "A shaggy gray-brown dog asleep on a blanketed chair in front of a Christmas tree glowing with warm string lights" },
+  "guide-alone": { src: guideAlone, card: guideAloneCard, alt: "A slim brindle dog in a blue coat sleeping alone on a tan leather sofa beside a bright window" },
+  "guide-breed": { src: guideBreed, card: guideBreedCard, alt: "Close portrait of a black and tan Rottweiler with its mouth open in a relaxed smile, with soft blurred water behind" },
+  "guide-senior": { src: guideSenior, card: guideSeniorCard, alt: "An older black Labrador with a graying muzzle resting its head on the arm of a couch, looking calm and sleepy" },
 } as const satisfies Record<string, StockImage>;
 
 export const images: { [K in keyof typeof stockImages]: StockImage } = stockImages;

@@ -20,4 +20,11 @@ export const imageCredits: ImageCredit[] = [
   { key: "gear-rental-protection", photographer: "Matthew Henry", unsplashUrl: "https://unsplash.com/photos/pug-covered-with-blanket-on-bedspread-2Ts5HnA67k8" },
   { key: "gear-portable-fence", photographer: "Leo_Visions", unsplashUrl: "https://unsplash.com/photos/a-brown-and-white-dog-standing-next-to-a-wire-fence-WiulP_LbXaA" },
   { key: "gear-id-tracking", photographer: "Lepeto", unsplashUrl: "https://unsplash.com/photos/vFHzS5cxhWY" },
+  { key: "guide-airbnb-vrbo", photographer: "Kyle Hanson", unsplashUrl: "https://unsplash.com/photos/1pyqUh8Jx3E" },
+  { key: "guide-how-many-dogs", photographer: "Valentin Lacoste", unsplashUrl: "https://unsplash.com/photos/three-dogs-sit-together-watching-the-sunset-5ZNYqX4RGgg" },
+  { key: "guide-no-pets-rental", photographer: "Ainur Khakimov", unsplashUrl: "https://unsplash.com/photos/a-dog-is-looking-out-of-a-window-of-a-log-cabin-d6-mAjvU5BQ" },
+  { key: "guide-nye", photographer: "Natalia Gusakova", unsplashUrl: "https://unsplash.com/photos/a-dog-sleeping-on-a-chair-next-to-a-christmas-tree-XeOwf13d1NI" },
+  { key: "guide-alone", photographer: "Alexis Antoine", unsplashUrl: "https://unsplash.com/photos/a-dog-laying-on-top-of-a-couch-next-to-a-window-tj3KKeRGJ50" },
+  { key: "guide-breed", photographer: "Joel Moysuh", unsplashUrl: "https://unsplash.com/photos/adult-tan-and-black-rottweilfer-face-_lJHFKpWDAU" },
+  { key: "guide-senior", photographer: "Jack Plant", unsplashUrl: "https://unsplash.com/photos/a-large-black-dog-laying-on-top-of-a-couch-AGKt39kI1Ig" },
 ];

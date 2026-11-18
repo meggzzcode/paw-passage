@@ -10,7 +10,7 @@ author: Paws & Passage Editors
 publishedOn: 2026-11-18
 lastReviewed: 2026-11-18
 readingMinutes: 8
-heroImage: guide-rental-checklist
+heroImage: guide-alone
 faqs:
   - q: Can you leave a dog alone in an Airbnb?
     a: It depends on the listing. Airbnb's hosting guidance tells hosts to say in their house rules whether a pet may be left unattended, so read the rules and ask the host in writing.

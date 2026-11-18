@@ -10,7 +10,7 @@ author: Paws & Passage Editors
 publishedOn: 2026-11-18
 lastReviewed: 2026-11-18
 readingMinutes: 12
-heroImage: guide-cabin-packing
+heroImage: guide-senior
 faqs:
   - q: Can I take my senior dog to a vacation rental?
     a: Often yes, if your vet agrees the trip suits your dog and the rental suits your dog's mobility. Age alone is not the test; ask your vet, then check stairs, floors and house rules before booking.

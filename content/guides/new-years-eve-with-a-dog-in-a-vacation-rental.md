@@ -10,7 +10,7 @@ author: Paws & Passage Editors
 publishedOn: 2026-11-18
 lastReviewed: 2026-11-18
 readingMinutes: 11
-heroImage: guide-cabin-packing
+heroImage: guide-nye
 faqs:
   - q: Is a "firework-free" rental really free of fireworks?
     a: Not necessarily. In one first-person account, a park advertised as firework-free had fireworks on arrival, the night before New Year's Eve and at midnight, and staff said they could not control what happens outside the park. Ask how far the nearest homes are.

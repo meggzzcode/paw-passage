@@ -10,7 +10,7 @@ author: Paws & Passage Editors
 publishedOn: 2026-11-18
 lastReviewed: 2026-11-18
 readingMinutes: 7
-heroImage: guide-pet-fees
+heroImage: guide-airbnb-vrbo
 faqs:
   - q: Which is better for dogs, Airbnb or Vrbo?
     a: We could not find a platform-wide rule that makes one better. Pet fees, pet counts and house rules are set listing by listing on both, so compare the complete total and written rules for the two specific places you are considering.

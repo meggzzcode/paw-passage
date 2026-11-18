@@ -10,7 +10,7 @@ author: Paws & Passage Editors
 publishedOn: 2026-11-18
 lastReviewed: 2026-11-18
 readingMinutes: 8
-heroImage: guide-two-dogs
+heroImage: guide-no-pets-rental
 faqs:
   - q: Can you bring a dog to an Airbnb that doesn't allow pets?
     a: Airbnb's ground rules for home guests say guests should not bring pets into a listing designated "no pets" in the house rules. The safer route is to ask the host first, and a host can say no.

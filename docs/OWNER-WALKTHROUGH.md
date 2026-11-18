@@ -75,21 +75,21 @@ Written 2026-11-18. Source checklist: `docs/recovery/FINAL-REPORT.md` section 12
 Which URLs (from `content/guides` and the sitemap rules in `src/lib/sitemap-entries.ts`):
 - Important discrepancy (VERIFIED in the repo today): `content/guides` holds 17 Markdown guides, and 16 of them say `publishedOn: 2026-11-18` (the 17th, how-vacation-rental-pet-fees-work, is 2026-11-16); 7 more guides are TypeScript files in `src/content/guides` dated 2026-11-16. Every guide's sitemap `lastmod` is the same day, so the repo does not identify "the seven new guides" or "the five newest". I used file modification time as a proxy; tell the assistant if you meant a different seven.
 - Day 1, in this order: (1) https://www.pawsandpassage.com/gear
-- Day 1, seven guides (the seven most recently edited files):
-  1. https://www.pawsandpassage.com/guides/airbnb-pet-damage-charge-after-checkout
-  2. https://www.pawsandpassage.com/guides/what-a-dog-really-costs-on-a-vacation-rental
-  3. https://www.pawsandpassage.com/guides/puppy-at-a-vacation-rental
-  4. https://www.pawsandpassage.com/guides/christmas-week-in-a-cabin-with-a-dog
-  5. https://www.pawsandpassage.com/guides/can-dogs-go-in-a-rental-pool-or-hot-tub
-  6. https://www.pawsandpassage.com/guides/vacation-rental-with-a-senior-dog
-  7. https://www.pawsandpassage.com/guides/if-your-dog-gets-loose-on-a-trip
+- Day 1, seven guides (the newest guides, with the time-sensitive Christmas guide first; corrected by the lead):
+  1. https://www.pawsandpassage.com/guides/christmas-week-in-a-cabin-with-a-dog
+  2. https://www.pawsandpassage.com/guides/vacation-rentals-with-no-pet-fee
+  3. https://www.pawsandpassage.com/guides/how-vacation-rental-pet-fees-work
+  4. https://www.pawsandpassage.com/guides/what-a-dog-really-costs-on-a-vacation-rental
+  5. https://www.pawsandpassage.com/guides/pet-friendly-listing-red-flags
+  6. https://www.pawsandpassage.com/guides/vacation-rentals-with-no-dog-weight-limit
+  7. https://www.pawsandpassage.com/guides/puppy-at-a-vacation-rental
 - Day 2, the next five:
-  1. https://www.pawsandpassage.com/guides/new-years-eve-with-a-dog-in-a-vacation-rental
-  2. https://www.pawsandpassage.com/guides/how-many-dogs-can-you-bring-to-a-vacation-rental
-  3. https://www.pawsandpassage.com/guides/breed-restrictions-at-vacation-rentals
-  4. https://www.pawsandpassage.com/guides/can-you-leave-a-dog-alone-in-a-vacation-rental
-  5. https://www.pawsandpassage.com/guides/vacation-rental-with-a-reactive-dog
-- Later, only if quota allows: bringing-a-dog-to-a-no-pets-rental, pet-friendly-listing-red-flags, vacation-rentals-with-no-dog-weight-limit, vacation-rentals-with-no-pet-fee, how-vacation-rental-pet-fees-work (all under /guides/), plus the TypeScript guides (dog-car-safety-harness-and-crate-guide, dog-travel-first-aid-kit-guide, portable-dog-fence-and-playpen-guide-for-rentals, dog-friendly-cabin-packing-list, vacation-rentals-that-welcome-large-dogs, vacation-rental-secure-fenced-yard, pet-friendly-vacation-rental-checklist) and the /gear/<category> pages listed in the sitemap.
+  1. https://www.pawsandpassage.com/guides/vacation-rental-with-a-reactive-dog
+  2. https://www.pawsandpassage.com/guides/can-dogs-go-in-a-rental-pool-or-hot-tub
+  3. https://www.pawsandpassage.com/guides/if-your-dog-gets-loose-on-a-trip
+  4. https://www.pawsandpassage.com/guides/new-years-eve-with-a-dog-in-a-vacation-rental
+  5. https://www.pawsandpassage.com/guides/how-many-dogs-can-you-bring-to-a-vacation-rental
+- Later, only if quota allows: bringing-a-dog-to-a-no-pets-rental, breed-restrictions-at-vacation-rentals, can-you-leave-a-dog-alone-in-a-vacation-rental, vacation-rental-with-a-senior-dog, airbnb-pet-damage-charge-after-checkout (all under /guides/), plus the TypeScript guides (dog-car-safety-harness-and-crate-guide, dog-travel-first-aid-kit-guide, portable-dog-fence-and-playpen-guide-for-rentals, dog-friendly-cabin-packing-list, vacation-rentals-that-welcome-large-dogs, vacation-rental-secure-fenced-yard, pet-friendly-vacation-rental-checklist) and the /gear/<category> pages listed in the sitemap.
 - Leave alone: "Remove URLs", "Change of address", Settings > Ownership verification users, any DNS record.
 
 **Cost:** $0. **Required:** yes. **Time:** 30 min today, check back in 2 days. **Cowork:** docs/cowork/02-search-console.md (sitemap and indexing requests; it never adds DNS or users).

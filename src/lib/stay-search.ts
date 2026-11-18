@@ -16,6 +16,10 @@ export const staySearchSchema = z.object({
   beach: fallback(z.boolean(), false).default(false),
   mountain: fallback(z.boolean(), false).default(false),
   hotTub: fallback(z.boolean(), false).default(false),
+  airCon: fallback(z.boolean(), false).default(false),
+  grill: fallback(z.boolean(), false).default(false),
+  parking: fallback(z.boolean(), false).default(false),
+  weightMin: fallback(z.number(), 0).default(0),
   sort: fallback(z.string(), "recommended").default("recommended"),
 });
 export type StaySearch = z.infer<typeof staySearchSchema>;
@@ -30,5 +34,8 @@ export const featureFilters = [
   { key: "beach", label: "Beach access" },
   { key: "mountain", label: "Mountain location" },
   { key: "hotTub", label: "Hot tub" },
+  { key: "airCon", label: "Air conditioning (listed)" },
+  { key: "grill", label: "Barbecue grill (listed)" },
+  { key: "parking", label: "On-site parking (listed)" },
 ] as const;
 export type FeatureKey = (typeof featureFilters)[number]["key"];

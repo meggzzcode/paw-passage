@@ -4,6 +4,10 @@
 //   node scripts/site-health.mjs links     [--out report.md] [--site https://www.pawsandpassage.com]
 //   node scripts/site-health.mjs freshness [--out report.md]
 //
+//   node scripts/site-health.mjs sitemap   [--out report.md] [--site ...]   (checks the sitemap's structure only)
+//   node scripts/site-health.mjs config    [--out report.md]                (affiliate links; reads files only, no web requests)
+//   node scripts/site-health.mjs digest    [--out report.md]                (runs freshness + config + sitemap in one grouped report; used monthly)
+//
 // links:     reads the live sitemap and checks that every page answers with a normal status code.
 // freshness: lists articles, places and the policy dataset that are overdue for a re-check.
 //
@@ -90,6 +94,85 @@ async function links() {
   finish(broken.length || warnings.length ? lines : []);
 }
 
+// ---- sitemap structure -------------------------------------------------------------------------
+export function validateSitemapXml(xml, site) {
+  const problems = [];
+  const urls = [...xml.matchAll(/<loc>\s*([^<\s]+)\s*<\/loc>/g)].map((m) => m[1]);
+  if (!/<urlset[\s>]/.test(xml)) problems.push("The file is not a <urlset> sitemap.");
+  if (urls.length === 0) problems.push("The sitemap contains no <loc> addresses.");
+  if (urls.length > 50000) problems.push(`The sitemap has ${urls.length} URLs; the limit is 50,000.`);
+  const seen = new Set();
+  const host = new URL(site).hostname;
+  for (const u of urls) {
+    if (seen.has(u)) problems.push(`Duplicate address: ${u}`);
+    seen.add(u);
+    let p;
+    try { p = new URL(u); } catch { problems.push(`Not a valid address: ${u}`); continue; }
+    if (p.protocol !== "https:") problems.push(`Not https: ${u}`);
+    if (p.hostname !== host) problems.push(`Other host (${p.hostname}): ${u}`);
+    if (p.search || p.hash) problems.push(`Has a query string or fragment: ${u}`);
+  }
+  return { urls, problems };
+}
+
+async function sitemapCheck() {
+  const site = (flag("--site") ?? DEFAULT_SITE).replace(/\/+$/, "");
+  const res = await fetch(`${site}/sitemap.xml`, { headers: { "User-Agent": "PawsAndPassage-site-health/1.0" } });
+  if (!res.ok) return sitemapSection([`${site}/sitemap.xml answered with status ${res.status}.`]);
+  const { problems, urls } = validateSitemapXml(await res.text(), site);
+  console.log(`Sitemap lists ${urls.length} addresses.`);
+  return sitemapSection(problems);
+}
+const sitemapSection = (p) => (p.length ? ["## Sitemap structure", ...p.map((x) => `- ${x}`), ""] : []);
+
+// ---- affiliate configuration (no web requests) ---------------------------------------------------
+// Reads content/affiliates.yml as plain text: a flat list of "- id:" blocks.
+export function parseAffiliates(text) {
+  const links = [];
+  let cur = null;
+  for (const line of text.split(/\r?\n/)) {
+    const start = line.match(/^\s*-\s+id:\s*["']?([^"'\s#]*)/);
+    if (start) { cur = { id: start[1] }; links.push(cur); continue; }
+    const kv = line.match(/^\s+(network|url|approved|kind):\s*["']?([^"'#]*?)["']?\s*(#.*)?$/);
+    if (kv && cur) cur[kv[1]] = kv[2];
+  }
+  return links;
+}
+
+export function checkAffiliates(links, referencedIds) {
+  const problems = [];
+  const ids = new Set();
+  for (const l of links) {
+    if (!l.id) { problems.push("An affiliate entry has no id."); continue; }
+    if (!/^[a-z0-9-]+$/.test(l.id)) problems.push(`Affiliate id "${l.id}" must use lowercase letters, numbers and hyphens.`);
+    if (ids.has(l.id)) problems.push(`Affiliate id "${l.id}" appears twice.`);
+    ids.add(l.id);
+    if (l.approved === "true") {
+      if (!l.url || !/^https:\/\/[^\s]+$/.test(l.url)) problems.push(`Approved affiliate "${l.id}" has no https URL.`);
+      if (!l.network) problems.push(`Approved affiliate "${l.id}" has no network name.`);
+    }
+  }
+  for (const [id, where] of referencedIds) {
+    if (!ids.has(id)) problems.push(`${where} refers to affiliate id "${id}", which is not in content/affiliates.yml.`);
+    else if (links.find((l) => l.id === id)?.approved !== "true") problems.push(`${where} refers to "${id}", which is not approved (its button stays hidden).`);
+  }
+  return problems;
+}
+
+function configCheck() {
+  const links = parseAffiliates(readFileSync(join(root, "content/affiliates.yml"), "utf8"));
+  const refs = [];
+  for (const [f, t] of readDir("content/stays", ".yml")) {
+    const m = t.match(/^affiliateId:\s*["']?([^"'\s#]+)/m);
+    if (m) refs.push([m[1], `content/stays/${f}`]);
+  }
+  const prod = join(root, "content/products.yml");
+  if (existsSync(prod)) for (const m of readFileSync(prod, "utf8").matchAll(/^\s*affiliateId:\s*["']?([^"'\s#]+)/gm)) refs.push([m[1], "content/products.yml"]);
+  const problems = checkAffiliates(links, refs);
+  console.log(`Read ${links.length} affiliate entries and ${refs.length} references.`);
+  return problems.length ? ["## Affiliate links (configuration)", ...problems.map((x) => `- ${x}`), ""] : [];
+}
+
 // ---- freshness ---------------------------------------------------------------------------------
 function readDir(rel, ext) {
   const dir = join(root, rel);
@@ -97,7 +180,7 @@ function readDir(rel, ext) {
 }
 const field = (text, name) => text.match(new RegExp(`^\\s*["']?${name}["']?:\\s*["']?(\\d{4}-\\d{2}-\\d{2})`, "m"))?.[1];
 
-function freshness() {
+function freshness(asLines = false) {
   const stale = [];
   const articleLimit = monthsAgo(ARTICLE_MAX_AGE_MONTHS);
   const placeLimit = monthsAgo(PLACE_MAX_AGE_MONTHS);
@@ -127,6 +210,7 @@ function freshness() {
   else if (latest < monthsAgo(DATA_MAX_AGE_MONTHS)) stale.push(`- The 38-manager policy data was last re-checked ${latest}; the rule is every ${DATA_MAX_AGE_MONTHS} months. Follow docs/DATA-RECHECK-LOG.md.`);
 
   console.log(`Looked at ${articles.length} articles and the places and policy data.`);
+  if (asLines) return stale.length ? ["## Content overdue for a re-check", ...stale, ""] : [];
   if (stale.length === 0) return finish([]);
   finish([
     `# Content freshness: ${stale.length} item(s) overdue`,
@@ -138,11 +222,20 @@ function freshness() {
   ]);
 }
 
-try {
+const isMain = process.argv[1] === fileURLToPath(import.meta.url);
+if (isMain) try {
   if (mode === "links") await links();
   else if (mode === "freshness") freshness();
+  else if (mode === "sitemap") { const l = await sitemapCheck(); finish(l.length ? ["# Sitemap check", "", ...l] : []); }
+  else if (mode === "config") { const l = configCheck(); finish(l.length ? ["# Affiliate configuration check", "", ...l] : []); }
+  else if (mode === "digest") {
+    // One grouped report instead of one issue per finding. The monthly workflow turns it into a single issue.
+    const parts = [...freshness(true), ...configCheck(), ...(await sitemapCheck())];
+    const month = new Date().toISOString().slice(0, 7);
+    finish(parts.length ? [`# Monthly site digest ${month}: ${parts.filter((x) => x.startsWith("- ")).length} item(s)`, "", ...parts] : []);
+  }
   else {
-    console.error("Usage: node scripts/site-health.mjs links|freshness [--out file.md]");
+    console.error("Usage: node scripts/site-health.mjs links|freshness|sitemap|config|digest [--out file.md]");
     process.exit(2);
   }
 } catch (e) {

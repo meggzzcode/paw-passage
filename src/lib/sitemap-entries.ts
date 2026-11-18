@@ -4,6 +4,7 @@ import { visibleStays } from "@/content/stays";
 import { visiblePlaces } from "@/content/places";
 import { dogTypes, dogTypeIsLive } from "@/content/dog-types";
 import { hasGear, liveCategories } from "@/content/gear-hub";
+import { indexableStays, townIsIndexable, stateIsIndexable } from "@/lib/seo";
 
 export const staticPaths = [
   "/", "/stays", "/destinations", "/guides", "/tools",
@@ -11,17 +12,18 @@ export const staticPaths = [
   "/about", "/contact", "/list-your-property", "/affiliate-disclosure", "/privacy", "/terms", "/editorial-standards", "/methodology", "/corrections",
 ];
 
-/** Only public, indexable pages: published guides, verified stays. Never drafts or samples. */
+/** Only public, indexable pages: published guides, stays/towns/states that pass the indexing quality rule (src/content/publish-rule.ts). Never drafts or samples. */
 export function sitemapEntries(): { path: string; lastmod?: string }[] {
-  // Only verified stays are indexed; unverified listings are shown on the site but kept out of search.
-  const liveStays = visibleStays({ includeSamples: false }).filter((s) => s.status === "verified");
-  // The stays directory is indexable once any stay is listed; town pages and stay pages wait for a verified stay.
+  // A stay is indexed when it passes the quality rule (not when it is verified); thin stays are shown but kept out of search.
+  const allStays = visibleStays({ includeSamples: false });
+  const liveStays = indexableStays(allStays);
+  // The stays directory is indexable once any stay is listed (its own filter tool and comparison cards are the content).
   const out: { path: string; lastmod?: string }[] = staticPaths
     .filter((path) => visibleStays({ includeSamples: false }).length > 0 || path !== "/stays")
     .map((path) => ({ path }));
   for (const d of destinations) {
-    out.push({ path: `/destinations/${d.slug}` });
-    for (const t of d.towns) if (liveStays.some((s) => s.town === t.slug)) out.push({ path: `/destinations/${d.slug}/${t.slug}` });
+    if (stateIsIndexable(d.slug, allStays)) out.push({ path: `/destinations/${d.slug}` });
+    for (const t of d.towns) if (townIsIndexable(d.slug, t.slug, allStays)) out.push({ path: `/destinations/${d.slug}/${t.slug}` });
   }
   // The dog-rules lookup is noindexed until a verified place exists, so it joins the sitemap only then (verified places only, never unverified seeds).
   const livePlaces = visiblePlaces({ includeUnverified: false });

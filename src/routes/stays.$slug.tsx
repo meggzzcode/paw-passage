@@ -8,7 +8,7 @@ import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { StayFeeCalculator } from "@/components/site/StayFeeCalculator";
 import { BookingButton } from "@/components/site/BookingButton";
 import { PreviewBadge } from "@/components/site/StatusBadge";
-import { pageHead, breadcrumbLd, jsonLd } from "@/lib/seo";
+import { pageHead, breadcrumbLd, jsonLd, stayIsIndexable } from "@/lib/seo";
 import { getGuide } from "@/content/guides";
 import { GuideCard } from "@/components/site/GuideCard";
 
@@ -21,8 +21,10 @@ export const Route = createFileRoute("/stays/$slug")({
   head: ({ loaderData, params }) => {
     if (!loaderData) return { meta: [{ title: "Stay not found" }, { name: "robots", content: "noindex" }] };
     const s = loaderData.stay;
-    const h = pageHead({ title: `${s.name}, dog-friendly ${stayTypeLabels[s.type].toLowerCase()} in ${townName(s.town)}`, description: s.summary, path: `/stays/${params.slug}`, noindex: s.status !== "verified" });
-    return { ...h, scripts: s.status === "verified" ? [{ type: "application/ld+json", children: jsonLd({ "@context": "https://schema.org", "@type": "LodgingBusiness", name: s.name, description: s.summary, petsAllowed: true, address: { "@type": "PostalAddress", addressLocality: townName(s.town), addressRegion: getState(s.state)?.name } }) }, breadcrumbLd([{ name: "Stays", path: "/stays" }, { name: s.name, path: `/stays/${s.slug}` }])] : [] };
+    const h = pageHead({ title: `${s.name}, dog-friendly ${stayTypeLabels[s.type].toLowerCase()} in ${townName(s.town)}`, description: s.summary, path: `/stays/${params.slug}`, noindex: !stayIsIndexable(s) });
+    const indexable = stayIsIndexable(s);
+    // The lodging record is only for host-verified stays; a listing-based page gets breadcrumbs only.
+    return { ...h, scripts: indexable ? [...(s.status === "verified" ? [{ type: "application/ld+json", children: jsonLd({ "@context": "https://schema.org", "@type": "LodgingBusiness", name: s.name, description: s.summary, petsAllowed: true, address: { "@type": "PostalAddress", addressLocality: townName(s.town), addressRegion: getState(s.state)?.name } }) }] : []), breadcrumbLd([{ name: "Stays", path: "/stays" }, { name: s.name, path: `/stays/${s.slug}` }])] : [] };
   },
   component: StayPage,
 });
@@ -135,7 +137,7 @@ function StayPage() {
                 <div key={k} className="flex justify-between gap-4 py-2.5"><dt className="text-muted-foreground">{k}</dt><dd className={`text-right font-medium ${v === "Not confirmed" ? "text-muted-foreground italic" : ""}`}>{v}</dd></div>
               ))}
             </dl>
-            <p className="mt-4 text-xs text-muted-foreground">{s.lastVerified ? `Last verified ${s.lastVerified}` : "Details read from the listing"}</p>
+            <p className="mt-4 text-xs text-muted-foreground">{s.status === "verified" && s.lastVerified ? `Last verified ${s.lastVerified}` : "Details read from the listing, not confirmed with the host"}</p>
             <div className="mt-5"><BookingButton stay={s} book /></div>
           </div>
           <StayFeeCalculator stay={s} />

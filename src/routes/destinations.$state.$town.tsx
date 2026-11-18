@@ -6,7 +6,7 @@ import { images, srcSetForKey } from "@/lib/images";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { GuideCard } from "@/components/site/GuideCard";
 import { StayCard } from "@/components/site/StayCard";
-import { pageHead, breadcrumbLd, jsonLd, townHasVerifiedStay } from "@/lib/seo";
+import { pageHead, breadcrumbLd, jsonLd, townIsIndexable } from "@/lib/seo";
 import { hasStays } from "@/lib/launch";
 import { Stay22Map } from "@/components/site/Stay22Map";
 
@@ -28,7 +28,7 @@ export const Route = createFileRoute("/destinations/$state/$town")({
     if (!loaderData) return { meta: [{ title: "Destination not found" }, { name: "robots", content: "noindex" }] };
     const { d, t } = loaderData;
     const path = `/destinations/${params.state}/${params.town}`;
-    return { ...pageHead({ title: `Dog-friendly ${t.name}: planning notes`, description: fitDescription(`${t.blurb} What to check before booking a dog-friendly stay in ${t.name}.`, t.blurb), path, noindex: !townHasVerifiedStay(t.slug) }), scripts: [breadcrumbLd([{ name: "Destinations", path: "/destinations" }, { name: d.name, path: `/destinations/${d.slug}` }, { name: t.name, path }]), { type: "application/ld+json", children: jsonLd({ "@context": "https://schema.org", "@type": "TouristDestination", name: `${t.name}, ${d.name}`, description: t.blurb }) }] };
+    return { ...pageHead({ title: `Dog-friendly ${t.name}: planning notes`, description: fitDescription(`${t.blurb} What to check before booking a dog-friendly stay in ${t.name}.`, t.blurb), path, noindex: !townIsIndexable(params.state, t.slug) }), scripts: [breadcrumbLd([{ name: "Destinations", path: "/destinations" }, { name: d.name, path: `/destinations/${d.slug}` }, { name: t.name, path }]), { type: "application/ld+json", children: jsonLd({ "@context": "https://schema.org", "@type": "TouristDestination", name: `${t.name}, ${d.name}`, description: t.blurb }) }] };
   },
   component: TownPage,
 });
@@ -68,7 +68,7 @@ function TownPage() {
       {guides.length > 0 && (<section className="mt-16"><h2 className="text-3xl">Read next</h2><div className="mt-6 grid gap-8 md:grid-cols-2">{guides.map((g) => <GuideCard key={g!.slug} guide={g!} />)}</div></section>)}
       <section className="mt-16">
         <h2 className="text-3xl">Stays in {t.name}</h2>
-        {stays.length ? <div className="mt-6 grid gap-6 md:grid-cols-3">{stays.map((s) => <StayCard key={s.slug} stay={s} />)}</div> : <p className="mt-3 text-muted-foreground">No verified stays published here yet.</p>}
+        {stays.length ? <div className="mt-6 grid gap-6 md:grid-cols-3">{stays.map((s) => <StayCard key={s.slug} stay={s} />)}</div> : <p className="mt-3 text-muted-foreground">No stays are listed here yet.</p>}
       </section>
     </div>
   );

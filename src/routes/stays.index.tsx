@@ -74,6 +74,14 @@ function StaysPage() {
           {[1, 2, 3, 4].map((n) => <option key={n} value={n}>{n}{n === 4 ? "+" : ""} dog{n > 1 ? "s" : ""}</option>)}
         </select>
       </label>
+      <label className="block">
+        <span className="text-sm font-semibold">Weight limit</span>
+        <select value={search.weightMin} onChange={(e) => set({ weightMin: Number(e.target.value) })} className="mt-2 h-11 w-full rounded-md border border-input bg-background px-3 text-sm">
+          <option value={0}>Any</option>
+          {[20, 30, 50, 70].map((n) => <option key={n} value={n}>Limit of {n} lb or more stated</option>)}
+        </select>
+        <span className="mt-1 block text-xs text-muted-foreground">Only stays that state a weight limit match. "Not confirmed" never does.</span>
+      </label>
       <fieldset>
         <legend className="text-sm font-semibold">Must-haves</legend>
         <p className="mt-1 text-xs text-muted-foreground">Only stays where the feature is confirmed will match.</p>

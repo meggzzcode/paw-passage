@@ -15,13 +15,18 @@ export interface StayFilters {
   beach: boolean;
   mountain: boolean;
   hotTub: boolean;
+  airCon: boolean;
+  grill: boolean;
+  parking: boolean;
+  /** 0 = any. Otherwise the listing must state a weight limit of at least this many lb. */
+  weightMin: number;
   sort: string; // recommended | name | dogs
 }
 
 export const defaultFilters: StayFilters = {
   q: "", state: "", town: "", type: "", dogs: 0,
   fenced: false, outdoor: false, large: false, multi: false, noFee: false, noBreed: false,
-  beach: false, mountain: false, hotTub: false, sort: "recommended",
+  beach: false, mountain: false, hotTub: false, airCon: false, grill: false, parking: false, weightMin: 0, sort: "recommended",
 };
 
 export const stayTypeLabels: Record<StayType, string> = {
@@ -31,6 +36,11 @@ export const stayTypeLabels: Record<StayType, string> = {
   "beach-house": "Beach house",
   unique: "Unique stay",
 };
+
+/** True only when the amenity text the listing gave names it. A missing mention is "not confirmed", never a no. */
+function listsAmenity(s: Stay, re: RegExp): boolean {
+  return s.amenityGroups.some((g) => g.items.some((i) => re.test(i)));
+}
 
 /** A filter only matches when the feature is CONFIRMED. Unknown (null) never passes. */
 export function filterStays(stays: Stay[], f: StayFilters): Stay[] {
@@ -50,6 +60,11 @@ export function filterStays(stays: Stay[], f: StayFilters): Stay[] {
     if (f.beach && !s.beach) return false;
     if (f.mountain && !s.mountain) return false;
     if (f.hotTub && s.hotTub !== true) return false;
+    if (f.airCon && !listsAmenity(s, /air.?condition/i)) return false;
+    if (f.grill && !listsAmenity(s, /barbecue|\bbbq\b|grill/i)) return false;
+    if (f.parking && !listsAmenity(s, /parking/i)) return false;
+    // A stated weight limit of at least N lb. No limit stated is "not confirmed", so it never matches.
+    if (f.weightMin > 0 && !(s.weightLimitLbs !== null && s.weightLimitLbs >= f.weightMin)) return false;
     return true;
   });
   const sponsoredFirst = (s: Stay) => (s.sponsored?.active && s.sponsored.placement === "top" ? 0 : 1);
@@ -60,6 +75,6 @@ export function filterStays(stays: Stay[], f: StayFilters): Stay[] {
 }
 
 export function activeFilterCount(f: StayFilters): number {
-  const keys: (keyof StayFilters)[] = ["fenced", "outdoor", "large", "multi", "noFee", "noBreed", "beach", "mountain", "hotTub"];
-  return keys.filter((k) => f[k]).length + (f.state ? 1 : 0) + (f.town ? 1 : 0) + (f.type ? 1 : 0) + (f.dogs ? 1 : 0) + (f.q ? 1 : 0);
+  const keys: (keyof StayFilters)[] = ["fenced", "outdoor", "large", "multi", "noFee", "noBreed", "beach", "mountain", "hotTub", "airCon", "grill", "parking"];
+  return keys.filter((k) => f[k]).length + (f.state ? 1 : 0) + (f.town ? 1 : 0) + (f.type ? 1 : 0) + (f.dogs ? 1 : 0) + (f.weightMin ? 1 : 0) + (f.q ? 1 : 0);
 }

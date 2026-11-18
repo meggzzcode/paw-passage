@@ -1,8 +1,8 @@
 ---
 title: "Breed Restrictions at Vacation Rentals: How to Check Before You Book"
-seoTitle: "Breed Restrictions: 15 Rental Policies"
-seoDescription: "Breed restrictions at vacation rentals, from 15 real policies: breed lists, weight caps, fees, why insurers drive them, and how to check before you book."
-dek: Breed lists, weight caps and fees from 15 real pet policies, plus what to ask and a message to send before you pay.
+seoTitle: "Breed Restrictions: 14 Rental Policies"
+seoDescription: "Breed restrictions at vacation rentals, from 14 real policies: breed lists, weight caps, fees, why insurers drive them, and how to check before you book."
+dek: Breed lists, weight caps and fees from 14 real pet policies, plus what to ask and a message to send before you pay.
 category: Planning
 states: []
 status: published
@@ -19,7 +19,7 @@ faqs:
   - q: "Why do vacation rentals restrict breeds?"
     a: "The managers who explain it point to insurance. Costanoa says its breed restrictions follow its property insurance policy, and Beach Realty says insurers consider certain breeds dangerous. We did not read an insurance policy, so treat this as what they say."
   - q: "Can a weight limit keep my dog out without naming a breed?"
-    a: "Yes. In our small, non-random sample, 6 of 15 policies had a weight cap between 35 and 60 lb. That is our inference: a cap can exclude a large dog of any breed or mix without a breed list."
+    a: "Yes. In our small, non-random sample, 6 of 14 policies had a weight cap between 35 and 60 lb. That is our inference: a cap can exclude a large dog of any breed or mix without a breed list."
   - q: "What if my dog is a mix and nobody knows the breed?"
     a: "Ask the host how they treat mixes before you book. Costanoa also bars crosses of its listed breeds; for most managers we could not find what they do with mixes or what proof they accept."
   - q: "Will a vet letter or DNA test get my dog approved?"
@@ -232,7 +232,7 @@ research:
     - No page we read gives a copy-paste host message and a before-you-book checklist for vacation rentals.
     - No first-person traveler story of a restricted-breed dog getting a yes, and no evidence that vet letters, Canine Good Citizen or DNA tests work.
   differentiators:
-    - A 15-row table of named breed lists, weight caps, per-dog fees, source and date.
+    - A 14-row table of named breed lists, weight caps, per-dog fees, source and date.
     - Our labelled inference that weight caps can exclude a dog without naming a breed.
     - What Airbnb and Vacasa pages say and do not say about breed.
     - Costs of an unauthorized dog from manager policies.
@@ -278,7 +278,7 @@ approvedOn: 2026-11-18
 
 You found a cabin with a "pets welcome" badge, paid attention to the pet fee, and then, on the manager's separate pet-policy page, found a list of banned breeds that your dog may or may not be on. Or there is no breed list at all, just a weight limit that your dog is a few pounds over. This guide is for checking that before you pay.
 
-It is built on 15 pet-policy entries we compiled, each read from a manager's own page or a platform help page, with a source and a date for each row. It is a small sample, not a survey of the market, and policies change. We label how sure we are: CONFIRMED means a primary source we read says it; WHAT MOST PEOPLE REPORT means at least three independent items we read agree, in a small non-random sample; UNKNOWN means nothing we read settles it. Where we quote forums, they are mostly host-side, and we say how many sources agree.
+It is built on 14 pet-policy entries we compiled, each read from a manager's own page or a platform help page, with a source and a date for each row. It is a small sample, not a survey of the market, and policies change. We label how sure we are: CONFIRMED means a primary source we read says it; WHAT MOST PEOPLE REPORT means at least three independent items we read agree, in a small non-random sample; UNKNOWN means nothing we read settles it. Where we quote forums, they are mostly host-side, and we say how many sources agree.
 
 ## The short answer
 
@@ -326,7 +326,7 @@ Best Friends, an advocacy group, says insurers can act on a pet's appearance, an
 
 ## Which breeds are on the lists, and what about weight?
 
-**Short answer:** When a manager publishes a list, it can be long. Elk Springs names 12 breeds. But the wall is often a weight cap instead. In our 15 rows, 6 have a weight cap of 35 to 60 lb, and 2 name breeds. This is a small sample, not a measure of the market.
+**Short answer:** When a manager publishes a list, it can be long. Elk Springs names 12 breeds. But the wall is often a weight cap instead. In our 14 rows, 6 have a weight cap of 35 to 60 lb, and 2 name breeds. This is a small sample, not a measure of the market.
 
 Examples from the table below: Elk Springs bans dogs over 50 lb and lists 12 breeds. Costanoa lists breeds and their crosses, with a 50 lb limit. Cabin Rentals of Georgia says "we only allow certain breeds" without naming them. Cabins of the Smoky Mountains lists no breed but caps combined dog weight at 60 lb. Dog size and breed are different things, and a rule that names one can catch dogs that are the other.
 
@@ -334,7 +334,7 @@ Examples from the table below: Elk Springs bans dogs over 50 lb and lists 12 bre
 
 In our separate read of 38 manager pet pages for the [how-many-dogs guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental), only 5 mentioned breed limits and only 2 named breeds. Both samples are small and non-random, and neither is a survey, so use them as a reason to read your own listing, not as odds.
 
-**Two dogs: watch for combined limits.** Our table has a manager that caps dogs at "60 lb total" (row 8) and a reported combined 60 lb at row 16. An Airhosts host in 2021 posted their own scheduled message to guests, which sets "the maximum combined pet mass" at 36 kg (80 lbs) and a maximum of 2 pets. [[33]](https://airhostsforum.com/t/airs-new-pet-policy/50459?page=4) That is one host's own limit, not an Airbnb rule as far as the post shows, but it shows a combined cap can sit in a host's guest message. With two dogs, add their weights and ask whether the cap is per dog or combined. Our [how-many-dogs guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental) covers pet counts.
+**Two dogs: watch for combined limits.** Our table has a manager that caps dogs at "60 lb total" (row 8). An Airhosts host in 2021 posted their own scheduled message to guests, which sets "the maximum combined pet mass" at 36 kg (80 lbs) and a maximum of 2 pets. [[33]](https://airhostsforum.com/t/airs-new-pet-policy/50459?page=4) That is one host's own limit, not an Airbnb rule as far as the post shows, but it shows a combined cap can sit in a host's guest message. With two dogs, add their weights and ask whether the cap is per dog or combined. Our [how-many-dogs guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental) covers pet counts.
 
 **Rules may be shown differently in different places.** One host who also travels with a dog wrote on Airhosts that "this info is inconsistently communicated," and described a hotel whose pet weight limit was shown as 40, 45 or 50 lb depending on where they looked. [[30]](https://airhostsforum.com/t/sneaking-pets-in/55303) One poster, so a single report, but it is a good reason to compare the listing, the house rules and the manager's page and ask which one applies.
 
@@ -342,7 +342,7 @@ A "pet friendly" label can also cover surprising lists. One traveler with a Gold
 
 ## What do real managers allow and charge?
 
-**Short answer:** Rules vary enormously. Some limit weight, some name breeds, some push everything to the individual home, and fees run from none to $125 or more, with some charged per night. The table is a sample of 15 policies, not a survey. Check the live page for your listing.
+**Short answer:** Rules vary enormously. Some limit weight, some name breeds, some push everything to the individual home, and fees run from none to $125 or more, with some charged per night. The table is a sample of 14 policies, not a survey. Check the live page for your listing.
 
 *Table: pet policies as read on 2026-11-18. Policies and fees change; this is a sample, not a survey.*
 
@@ -363,7 +363,7 @@ A "pet friendly" label can also cover surprising lists. One traveler with a Gold
 | 13 | Sun Realty, Outer Banks NC | 2 housebroken dogs at pet-friendly homes | not stated | not mentioned | $161 to $231 plus tax, described as a flea-treatment fee | [Sun Realty pet page](https://www.sunrealtync.com/node/1163) |
 | 14 | Airbnb (platform) | host sets 1 to 5 | host sets | no platform breed rule on pages read | host sets, built into nightly price | [[2]](https://www.airbnb.com/resources/hosting-homes/a/what-you-need-to-know-about-hosting-pets-463) |
 
-How to read it: in the 15 rows, 6 have a weight cap (rows 1, 2, 3, 5, 8 and 9), 2 name breeds (rows 1 and 2), and 2 more say "certain breeds" without a list (rows 3 and 4). Row 12 has a standard 35 lb limit with larger dogs allowed at some cabins, so we did not count it as a cap. Row 1 is from a development-subdomain page; the live Elk Springs page (www.elkspringsresort.com) loaded when we checked and showed the same weight cap, breed list and fee. We read no public Vacasa or Evolve breed rule, and did not find one.
+How to read it: in the 14 rows, 6 have a weight cap (rows 1, 2, 3, 5, 8 and 9), 2 name breeds (rows 1 and 2), and 2 more say "certain breeds" without a list (rows 3 and 4). Row 12 has a standard 35 lb limit with larger dogs allowed at some cabins, so we did not count it as a cap. Row 1 is from a development-subdomain page; the live Elk Springs page (www.elkspringsresort.com) loaded when we checked and showed the same weight cap, breed list and fee. We read no public Vacasa or Evolve breed rule, and did not find one.
 
 Fees change and a fee may be shown per listing, so use our [pet fee guide](/guides/how-vacation-rental-pet-fees-work) and the [pet cost check](/tools/pet-cost-check) to compare the full total.
 

@@ -359,7 +359,7 @@ Read on 2026-11-18. Policies and fees change, many vary by home, and a blank mea
 | [Enchanted Mountain Retreats (georgiaemr.com)](https://www.georgiaemr.com/vacation-rentals/blue-ridge/dog-friendly) | Blue Ridge | 2 | Not stated |
 | [Emmons Realty](https://www.emmonsrealty.com/pages/rental-policies) | St. Simons Island | 2 | $147 |
 | [Georgia Coast Realty](https://www.gacoastrealty.com/rentals/rental-faqs.html) | St. Simons Island | Not stated | Not stated |
-| [St. Simons Island Beach Rentals](https://www.stsimonsislandbeachrentals.com/terms-conditions/) | St. Simons Island | 2 | $250 first dog, $150 second dog; $400 fo per stay |
+| [St. Simons Island Beach Rentals](https://www.stsimonsislandbeachrentals.com/terms-conditions/) | St. Simons Island | 2 | $250 first dog, $150 second dog, per stay; $400 for stays of 14 days or more |
 | [Brindley Beach Vacations](https://www.brindleybeach.com/node/3691) | Outer Banks | 2 | Not stated |
 | [Sun Realty](https://www.sunrealtync.com/node/1163) | Outer Banks | 2 | $161-$231 plus sales tax, varies by prop per pet |
 | [Beach Realty & Construction](https://www.beachrealtync.com/node/707) | Outer Banks | 2 | Not stated |

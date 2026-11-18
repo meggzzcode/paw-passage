@@ -5,14 +5,14 @@
 [build.environment]
   NODE_VERSION = "22"
 
-# Private previews. Only branch and pull-request previews show unpublished drafts (and say "noindex" to
+# Previews no longer show unpublished drafts (the site has no drafts). To preview an unfinished article, set SHOW_DRAFTS to "true" for a branch deploy. Branch and pull-request previews could show unpublished drafts (and say "noindex" to
 # search engines). The live site (the "production" context) never does. Preview links are not password
 # protected unless you pay for that: anyone with the link can read the drafts, so share them carefully.
 [context.branch-deploy.environment]
-  SHOW_DRAFTS = "true"
+  SHOW_DRAFTS = "false"
 
 [context.deploy-preview.environment]
-  SHOW_DRAFTS = "true"
+  SHOW_DRAFTS = "false"
 
 # Hashed build output never changes, so browsers and the CDN may keep it for a year.
 [[headers]]

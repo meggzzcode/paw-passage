@@ -4,9 +4,11 @@ type: cabin
 state: georgia
 town: cherry-log
 summary: One-bedroom cabin with a secluded hot tub near Blue Ridge; pets allowed, no limits stated.
-description: A one-bedroom cabin for 2 with a king bed, a hot tub, a deck and a private garden in a rural mountain area near Blue Ridge, Georgia. The listing also mentions a stone fireplace, board games and records. It says pets are allowed but gives no dog limit, weight limit, fee, breed rule or fence details. Details come from the booking page, read on 2026-11-18, and have not been confirmed with the host.
+description: A one-bedroom cabin for 2 with a king bed, a hot tub, a deck and a private garden in a rural mountain area near Blue Ridge, Georgia. The listing also mentions a stone fireplace, board games and records. It says pets are allowed but gives no dog limit, weight limit, fee, breed rule or fence details. On 2026-11-18 the Vrbo listing page was read to its footer and only says pets are allowed; it states no dog limit, weight limit, fee, deposit, breed rule, fence or alone-time rule. Expedia pages that may be the same cabin under a different title could not be read (HTTP 429), so no pet terms from them are used, and nothing has been confirmed with the host.
 sleeps: 2
 bedrooms: 1
+houseRules:
+  - "Pets are allowed, no details given (Vrbo FAQ: \"Yes, pets are allowed at this property.\")"
 largeDogsOk: not-confirmed
 fencedYard: not-confirmed
 privateOutdoor: yes

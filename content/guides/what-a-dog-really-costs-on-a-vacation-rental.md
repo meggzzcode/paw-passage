@@ -29,7 +29,6 @@ relatedGuides:
   - bringing-a-dog-to-a-no-pets-rental
   - airbnb-pet-damage-charge-after-checkout
   - vacation-rentals-with-no-pet-fee
-  - airbnb-vs-vrbo-with-a-dog
   - how-many-dogs-can-you-bring-to-a-vacation-rental
 embeddedTool: pet-cost-workflow
 relatedTools:
@@ -205,7 +204,7 @@ Airbnb says it may add a guest service fee depending on the listing, and where a
 
 ### Taxes
 
-Airbnb says local taxes depend on where the listing is and may not be in the shown price until checkout. [[2]](https://www.airbnb.com/help/article/125) Vrbo says its displayed price does not include taxes, which are added at checkout. [[4]](https://help.vrbo.com/articles/About-Price-Display) A manager's own page can add its own: Tahoe Vacation Rentals and Big Bear's neighbor-style listings quote fees "plus tax", so a $75 pet fee is more than $75 there. [[9]](https://www.tahoevacationrentals.com/reservation-information/)
+Airbnb says local taxes depend on where the listing is and may not be in the shown price until checkout. [[2]](https://www.airbnb.com/help/article/125) Vrbo says its displayed price does not include taxes, which are added at checkout. [[4]](https://help.vrbo.com/articles/About-Price-Display) A manager's own page can add tax to its fees: Tahoe Vacation Rentals quotes "$75 plus tax per pet", so the pet line is more than $75 there. [[9]](https://www.tahoevacationrentals.com/reservation-information/)
 
 On both platforms, use the price breakdown before you pay. Airbnb points to the Price breakdown option on checkout and the receipt after booking. [[2]](https://www.airbnb.com/help/article/125) Vrbo says travelers see a full breakdown including taxes before confirming. [[4]](https://help.vrbo.com/articles/About-Price-Display)
 
@@ -232,7 +231,7 @@ The same method works for the real fees above. For example, at the Cabin Rentals
 
 ## When the pet fee is not the story
 
-A $0 pet fee is not a promise of a cheaper trip. Twiddy lists nine homes with no additional fee or deposit [[13]](https://blog.twiddy.com/bring-your-pets-on-vacation/), but their nightly rates are what you pay, and only your dates will show that. Compare on the total, then on the rules: a rental that is $50 cheaper and caps dogs below yours is not an option. Our [no pet fee rentals guide](/guides/vacation-rentals-with-no-pet-fee) goes through what the $0 managers say, and the [dog count guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental) covers limits.
+A $0 pet fee is not a promise of a cheaper trip. Twiddy lists nine homes with no additional fee or deposit [[13]](https://blog.twiddy.com/bring-your-pets-on-vacation/), but the nightly rate and cleaning fee still apply, and only your dates will show the total. Compare on the total, then on the rules: a rental that is $50 cheaper and caps dogs below yours is not an option. Our [no pet fee rentals guide](/guides/vacation-rentals-with-no-pet-fee) goes through what the $0 managers say, and the [dog count guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental) covers limits.
 
 ## Charges you avoid by asking first
 
@@ -250,7 +249,7 @@ Two bills are not part of the plan, and both are avoidable.
 5. Ask the host the one question the page leaves open, using the message in the [pet cost tool](/tools/pet-cost-check) below.
 6. Only then look at the rules: dog count, weight, breed, and whether your dog is accepted at all. The [will-my-dog-be-accepted tool](/tools/will-my-dog-be-accepted) helps with that.
 
-If you are choosing between platforms as well as homes, our [Airbnb versus Vrbo guide](/guides/airbnb-vs-vrbo-with-a-dog) compares them.
+If a listing allows several dogs, the [dog count guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental) covers how limits and per-pet fees interact.
 
 ## How sure we are
 

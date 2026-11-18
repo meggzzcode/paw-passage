@@ -4,11 +4,13 @@ type: vacation-home
 state: georgia
 town: cherry-log
 summary: One-bedroom hideaway with a hot tub in Cherry Log; dogs allowed, 2 total, 50 lb limit listed.
-description: A one-bedroom home for 2 in Cherry Log, Georgia, with a king bed, a hot tub, a patio or deck and a barbecue grill. The listing also mentions an arcade or game room and says the national forest is a one-minute walk away. It allows 2 dogs total with a 50 lb maximum per pet, and gives no fee, breed rule or fence details. Details come from the booking page, read on 2026-11-18, and have not been confirmed with the host.
+description: A one-bedroom home for 2 in Cherry Log, Georgia, with a king bed, a hot tub, a patio or deck and a barbecue grill. The listing also mentions an arcade or game room and says the national forest is a one-minute walk away. It allows 2 dogs total with a 50 lb maximum per pet, and gives no fee, breed rule or fence details. On 2026-11-18 the Vrbo listing page was read to its footer; it states the 2-dog and 50 lb limits but no fee, deposit, breed rule, fence or alone-time rule. A Travelocity page that may be the same property could not be read (HTTP 429), so nothing else is confirmed with the host.
 sleeps: 2
 bedrooms: 1
 maxDogs: 2
 weightLimitLbs: 50
+houseRules:
+  - "Dogs only, limit 2 total, maximum 50 lbs per pet (Vrbo FAQ)"
 largeDogsOk: not-confirmed
 fencedYard: not-confirmed
 privateOutdoor: not-confirmed

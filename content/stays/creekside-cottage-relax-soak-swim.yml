@@ -4,8 +4,10 @@ type: cottage
 state: georgia
 town: blue-ridge
 summary: Creekside cottage near Blue Ridge with a hot tub and porch; pets allowed, no limits stated.
-description: A waterfront cottage near Blue Ridge, Georgia, that sleeps 4 with a king bed and a queen bed in the common areas. It has a hot tub, a porch, a patio, a private garden and a barbecue grill. The listing says pets are allowed but gives no dog limit, weight limit, fee, breed rule or fence details. Details come from the booking page, read on 2026-11-18, and have not been confirmed with the host.
+description: A waterfront cottage near Blue Ridge, Georgia, that sleeps 4 with a king bed and a queen bed in the common areas. It has a hot tub, a porch, a patio, a private garden and a barbecue grill. The listing says pets are allowed but gives no dog limit, weight limit, fee, breed rule or fence details. On 2026-11-18 the Vrbo listing page was read to its footer and only says pets are allowed; it states no dog limit, weight limit, fee, deposit, breed rule, fence or alone-time rule. A search for other sites carrying this exact title found no clear match, and nothing has been confirmed with the host.
 sleeps: 4
+houseRules:
+  - "Pets are allowed, no details given (Vrbo FAQ: \"Yes, pets are allowed at this property.\")"
 largeDogsOk: not-confirmed
 fencedYard: not-confirmed
 privateOutdoor: yes

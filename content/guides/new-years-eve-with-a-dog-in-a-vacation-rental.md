@@ -164,7 +164,7 @@ research:
       title: Firework Safety For New Year's Eve
       checkedOn: 2026-11-18
       coversWell: Short, credible veterinary school advice, including asking your vet about medication.
-      gaps: About 525 words, written for home, nothing on rentals, ID plans or host rules.
+      gaps: About 575 words, written for home, nothing on rentals, ID plans or host rules.
     - url: https://www.dogtopia.com/blog/firework-safety-keep-your-dog-safe-this-new-years-eve/
       title: "Firework Safety: Keep Your Dog Safe This New Year's Eve"
       checkedOn: 2026-11-18

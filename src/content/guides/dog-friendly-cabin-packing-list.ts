@@ -43,8 +43,7 @@ If essential access depends on stairs your dog cannot manage, change the sleepin
 Bring:
 
 - Your dog's usual food, measured for every travel and cabin day, plus a reserve sized to how remote the property is.
-- The usual scoop, familiar treats, separate food and water bowls, and a portable bowl.
-- Drinking water for the journey and arrival.
+- The usual scoop, familiar treats, food and water bowls, a portable bowl, and drinking water for the journey and arrival.
 - Prescribed medication in labeled packaging, written dosing instructions, and any measuring device.
 - A cooler or other storage if the medicine requires it.
 
@@ -66,7 +65,7 @@ Wi-Fi is not an emergency plan: save key information offline and carry a paper b
 - The cabin's full address and the host's arrival directions.
 - Contacts and routes for nearby veterinary practices and an emergency hospital.
 
-Check the microchip registration before leaving: a chip number in your phone cannot correct an outdated number in the registry. AVMA's travel brochure advises up-to-date ID tags, checking that your microchip registry contact details are current (your veterinarian can help), and packing a recent photograph, vaccination proof, and copies of relevant medical records. [[2]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-travel-with-pet-2023.pdf)
+Check the microchip registration before leaving, since a chip number in your phone cannot correct an outdated registry entry. AVMA's travel brochure advises up-to-date ID tags, checking that your microchip registry contact details are current (your veterinarian can help), and packing a recent photograph, vaccination proof, and copies of relevant medical records. [[2]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-travel-with-pet-2023.pdf)
 
 Call the emergency practice to confirm hours and overnight staffing, and download the route, including the host's final-approach instructions, while you have service.
 
@@ -81,11 +80,11 @@ Pack:
 
 Check the rules for each park and trail. Georgia State Parks generally require pets on a leash no longer than six feet, and California State Parks' general rule, where dogs are allowed at all, is the same six-foot limit. [[14]](https://gastateparks.org/ParkRules) [[15]](https://www.parks.ca.gov/Dogs) National forests, counties, and cities set their own rules, and a dog-accepting rental does not make nearby trails dog-friendly. Keep a leash by the exit.
 
-**Barriers.** A portable gate or exercise pen can separate a dog from an entrance, food preparation, or an unsuitable room. Confirm opening dimensions and host permission first.
+**Barriers.** A portable gate or exercise pen can separate a dog from an entrance, food preparation or an unsuitable room, once you have confirmed opening dimensions and host permission.
 
 For stairs, do not use a pressure-mounted gate at the top of stairs. Use a stair gate only if its maker approves it for that position, which usually means hardware mounting, and get the host's permission before anything is screwed into a wall. If safe installation is impossible, keep the dog downstairs behind another secure boundary or choose different accommodation.
 
-Bring washable nonslip runners if the host approves. A deck is not an enclosure just because it has railings: keep your dog leashed until you have inspected gaps, steps, and exits. Our [secure fenced-yard guide](/guides/vacation-rental-secure-fenced-yard) explains what to inspect.
+Bring washable nonslip runners if the host approves. A railed deck is not an enclosure; keep your dog leashed until you have inspected gaps, steps and exits, as our [secure fenced-yard guide](/guides/vacation-rental-secure-fenced-yard) explains.
 
 ## Protecting the rental: bed, throw and towels
 
@@ -112,7 +111,7 @@ First aid helps you respond while arranging veterinary care. AVMA's travel broch
 
 AVMA's first-aid brochure advises always contacting your veterinarian or poison control center before inducing vomiting. [[10]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf) Do not try to induce vomiting or give any medication unless a veterinarian or poison control tells you to. Keep any product container available, and check with the veterinarian before using items such as hydrogen peroxide or activated charcoal.
 
-Save the ASPCA Animal Poison Control number: **888-426-4435**. ASPCA says a consultation fee may apply. [[11]](https://www.aspca.org/pet-care/aspca-poison-control) AVMA also lists the Pet Poison Helpline at 855-764-7661, which may also charge. [[10]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf) Keep the packaging or photograph the label and call promptly, before symptoms appear. Replace expired supplies before each trip.
+Save the ASPCA Animal Poison Control number, **888-426-4435**; a consultation fee may apply. [[11]](https://www.aspca.org/pet-care/aspca-poison-control) AVMA also lists the Pet Poison Helpline at 855-764-7661, which may also charge. [[10]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf) Keep the packaging or photograph the label and call promptly, before symptoms appear. Replace expired supplies before each trip.
 
 ## Tick prevention and the evening inspection
 
@@ -120,17 +119,13 @@ Pack your veterinarian-recommended preventive, a tick-removal tool, and a bright
 
 CDC recommends daily tick checks for pets that go outdoors and prompt removal of attached ticks, highlighting the ears, eyelids, collar area, legs, toes, and tail. It also notes that tick vaccines do not keep dogs from bringing ticks into your home, so keep checking even if your dog is vaccinated or on a preventive. [[4]](https://www.cdc.gov/ticks/prevention/preventing-ticks-on-pets.html)
 
-1. Settle your dog somewhere well lit.
-2. Work through the coat and common hiding places.
-3. Remove any attached tick promptly; ask your veterinarian if unsure.
-4. Check yourself and your outdoor clothing.
-5. Note any bite and contact your veterinarian about concerning changes.
+Check in a well-lit spot, work through the coat and common hiding places, remove any attached tick promptly (ask your veterinarian if unsure), and check yourself and your outdoor clothing too.
 
-CDC notes that signs of tickborne disease may not appear for 7 to 21 days or longer after a bite, so keep watching appetite and behavior after the holiday. [[4]](https://www.cdc.gov/ticks/prevention/preventing-ticks-on-pets.html) Do not borrow another animal's preventive.
+CDC notes that signs of tickborne disease may not appear for 7 to 21 days or longer after a bite, so keep watching appetite and behavior after the holiday. [[4]](https://www.cdc.gov/ticks/prevention/preventing-ticks-on-pets.html)
 
 ## Cold weather, wood stoves, and seasonal chemicals
 
-**Heat sources.** Ask whether the cabin has a wood stove, fireplace, or portable heater, and whether a guard is supplied. Cornell's Riney Canine Health Center advises keeping dogs about three feet from heat sources, not leaving them unsupervised near them, and notes that gates, exercise pens, or a fireplace screen can help. [[5]](https://riney.vet.cornell.edu/member-benefits-health-tips/winter-safety-january-2026) Keep beds and blankets clear, and if you cannot create a safe separation, leave the appliance unused. Keep dogs away from ash containers: Cornell's veterinary college warns that fireplace and wood-stove ashes can burn pets if they contain live embers. [[6]](https://www.vet.cornell.edu/about-us/news/20161215/cvm-cold-weather-tips-pet-owners)
+**Heat sources.** Check whether the cabin has a wood stove, fireplace or portable heater, and whether a guard is supplied. Cornell's Riney Canine Health Center advises keeping dogs about three feet from heat sources, not leaving them unsupervised near them, and notes that gates, exercise pens, or a fireplace screen can help. [[5]](https://riney.vet.cornell.edu/member-benefits-health-tips/winter-safety-january-2026) Keep beds and blankets clear, and if you cannot create a safe separation, leave the appliance unused. Keep dogs away from ash containers: Cornell's veterinary college warns that fireplace and wood-stove ashes can burn pets if they contain live embers. [[6]](https://www.vet.cornell.edu/about-us/news/20161215/cvm-cold-weather-tips-pet-owners)
 
 **Ice melt.** ASPCA warns that ice-melting chemicals can be dangerous if swallowed and recommends washing and drying paws and belly after winter walks. [[7]](https://www.aspca.org/pet-care/general-pet-care/cold-weather-safety-tips) Cornell's Riney center says good boots fit securely and provide traction, and suggests paw wax for dogs that resist them. [[5]](https://riney.vet.cornell.edu/member-benefits-health-tips/winter-safety-january-2026) 
 

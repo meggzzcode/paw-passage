@@ -13,7 +13,7 @@ export const products: Product[] = [
       "Collapses to less than 1 inch high",
       "Food-grade silicone, described by the maker as PVC and BPA free",
       "Dishwasher safe on the top rack, per the maker",
-      "Backed by the maker's Lifetime Guarantee covering manufacturing defects",
+      "Backed by the maker's Lifetime Guarantee (the page does not say what it covers)",
     ],
     specSource: {
       title: "Collaps A Bowl",
@@ -28,7 +28,7 @@ export const products: Product[] = [
     brand: "Springland (formerly Springer)",
     summary: "A squeeze-to-fill water bottle with an attached bowl, designed to be operated with one hand.",
     keySpecs: [
-      "22 oz capacity",
+      "Named 22oz; the page gives no separate capacity figure",
       "Squeeze to fill the attached bowl, release to drain the excess back into the bottle",
       "Food-safe, BPA-free polypropylene plastic; aluminum carabiner included",
       "Described by the maker as having a leak-proof lock design",
@@ -47,7 +47,7 @@ export const products: Product[] = [
     brand: "Springland (formerly Springer)",
     summary: "A squeeze-to-drink water bottle topped with a silicone bowl that flips up for drinking and folds down for storage.",
     keySpecs: [
-      "20 oz capacity",
+      "Named 20oz; the page gives no separate capacity figure",
       "Silicone top bowl flips up to drink and folds down for compact storage",
       "Food-safe, BPA-free polypropylene plastic; aluminum carabiner included",
       "Described by the maker as having a leak-proof lock design",

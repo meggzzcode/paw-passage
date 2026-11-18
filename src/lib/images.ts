@@ -1,4 +1,6 @@
 import heroPorch from "@/assets/hero-porch.jpg";
+import heroPorch800 from "@/assets/hero-porch-800.jpg";
+import heroPorchMobile from "@/assets/hero-porch-mobile.jpg";
 import gaCabins from "@/assets/guide-ga-cabins.jpg";
 import gaCabinsCard from "@/assets/guide-ga-cabins-card.jpg";
 import atlantaGetaways from "@/assets/guide-atlanta-getaways.jpg";
@@ -67,13 +69,17 @@ import guideDogLifeJacket from "@/assets/guide-dog-life-jacket.jpg";
 import guideDogLifeJacketCard from "@/assets/guide-dog-life-jacket-card.jpg";
 import guideTrueCost from "@/assets/guide-true-cost.jpg";
 import guideTrueCostCard from "@/assets/guide-true-cost-card.jpg";
+import guideTravelBowls from "@/assets/guide-travel-bowls.jpg";
+import guideTravelBowlsCard from "@/assets/guide-travel-bowls-card.jpg";
+import guideTwoLargeDogsCar from "@/assets/guide-two-large-dogs-car.jpg";
+import guideTwoLargeDogsCarCard from "@/assets/guide-two-large-dogs-car-card.jpg";
 
 // Editorial stock photographs (Unsplash License), shown for illustration only and never as pictures of a specific rental.
 // Photographer credits live in src/content/image-credits.ts.
 type StockImage = { src: string; card?: string; alt: string };
 
 const stockImages = {
-  "hero-porch": { src: heroPorch, alt: "A golden retriever resting on a cabin porch above misty mountains at sunset" },
+  "hero-porch": { src: heroPorch, card: heroPorch800, alt: "A golden retriever resting on a cabin porch above misty mountains at sunset" },
   "guide-ga-cabins": { src: gaCabins, card: gaCabinsCard, alt: "Wooden cabins with mossy roofs among tall pines, with a low picket fence around the grassy yard in warm afternoon light" },
   "guide-atlanta-getaways": { src: atlantaGetaways, card: atlantaGetawaysCard, alt: "A dog in a harness sitting on a granite outcrop beside hiking gear, looking out over green forested mountain ridges" },
   "guide-la-getaways": { src: laGetaways, card: laGetawaysCard, alt: "A hiker holding a retractable leash beside a small dog on a sunlit trail among boulders and desert scrub in the Mojave Desert, California" },
@@ -108,6 +114,8 @@ const stockImages = {
   "guide-loose-dog": { src: guideLooseDog, card: guideLooseDogCard, alt: "A brown German wirehaired pointer with its tongue out, wearing an orange collar with a green tag and attached to a leash, outdoors in front of dry brush" },
   "guide-dog-life-jacket": { src: guideDogLifeJacket, card: guideDogLifeJacketCard, alt: "A small tan and white fluffy dog with its mouth open, wearing a teal life jacket and standing on the carpeted deck of a pontoon boat, with a lake and tree-lined shore behind it under a blue sky" },
   "guide-true-cost": { src: guideTrueCost, card: guideTrueCostCard, alt: "A tan and white Shiba Inu lying on a shop doorstep beside a white rolling suitcase on a city street" },
+  "guide-travel-bowls": { src: guideTravelBowls, card: guideTravelBowlsCard, alt: "A tan and white corgi in a teal harness licking its lips and splashing water beside an orange collapsible silicone bowl on a granite rock outdoors, with grass, boulders and a blue sky with clouds behind" },
+  "guide-two-large-dogs-car": { src: guideTwoLargeDogsCar, card: guideTwoLargeDogsCarCard, alt: "Two large long-haired rough collies, one sitting upright with its mouth open and one lying down, in the open rear cargo area of a parked gray SUV with the tailgate raised, on a black cargo liner" },
 } as const satisfies Record<string, StockImage>;
 
 export const images: { [K in keyof typeof stockImages]: StockImage } = stockImages;
@@ -145,6 +153,12 @@ export function srcSetFor(key: ImageKey): string | undefined {
   const small = phoneSrcFor(key);
   return small ? `${small} 800w, ${images[key].src} 1600w` : undefined;
 }
+
+/**
+ * Portrait phone crop of the home hero: the centre 720 x 907 px of hero-porch.jpg (same source pixels, so as sharp as the 1600 px file on a phone,
+ * where the hero is cropped by object-fit: cover anyway) at about 40% of the bytes. Used by the home hero through <picture media=...>.
+ */
+export const HERO_MOBILE = { src: heroPorchMobile, media: "(max-width: 767px)", width: 720, height: 907 } as const;
 
 /** Same as srcSetFor but takes a loose key string (e.g. a guide's heroImage field) and ignores unknown keys. */
 export function srcSetForKey(key: string | undefined): string | undefined {

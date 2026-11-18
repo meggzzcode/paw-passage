@@ -38,4 +38,6 @@ export const imageCredits: ImageCredit[] = [
   { key: "guide-loose-dog", photographer: "Mike Cox", unsplashUrl: "https://unsplash.com/photos/a-brown-dog-with-a-green-tag-on-its-collar-MrZ-a_1DXL0" },
   { key: "guide-dog-life-jacket", photographer: "Karsten Winegeart", unsplashUrl: "https://unsplash.com/photos/ixW37Eir3W4" },
   { key: "guide-true-cost", photographer: "Eminent Luggage", unsplashUrl: "https://unsplash.com/photos/a-brown-and-white-dog-laying-next-to-a-white-suitcase-039EFeyJs2I" },
+  { key: "guide-travel-bowls", photographer: "Marine Vec", unsplashUrl: "https://unsplash.com/photos/corgi-drinking-water-from-an-orange-bowl-outdoors-oNRyw2qv0zg" },
+  { key: "guide-two-large-dogs-car", photographer: "Mart Brouwers", unsplashUrl: "https://unsplash.com/photos/two-collies-sitting-in-the-back-of-an-open-car-eoCegrRdU1E" },
 ];

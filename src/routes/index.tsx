@@ -2,7 +2,7 @@ import { dogTypes, dogTypeIsLive } from "@/content/dog-types";
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useState } from "react";
 import { ArrowRight, Fence, Ruler, Dog, BadgeDollarSign, Calculator, ListChecks, Backpack } from "lucide-react";
-import { images, srcSetFor } from "@/lib/images";
+import { images, srcSetFor, HERO_MOBILE } from "@/lib/images";
 import { destinations } from "@/content/destinations";
 import { visibleGuides } from "@/content/guides";
 import { visibleStays } from "@/content/stays";
@@ -17,13 +17,25 @@ import { policyStats } from "@/lib/policy-stats";
 import { liveCategories } from "@/content/gear-hub";
 
 export const Route = createFileRoute("/")({
-  head: () => pageHead({
-    title: `${site.name}: ${site.tagline}`,
-    description: hasStays()
-      ? "Dog-friendly stays, researched travel guides and gear picks: fenced yards, large dogs, extra dogs, real pet fees and what to pack for the trip."
-      : "Researched guides and free tools for renting and traveling with your dog: pet fees, fenced yards, car safety and local rules, with every source listed.",
-    path: "/",
-  }),
+  head: () => {
+    const h = pageHead({
+      title: `${site.name}: ${site.tagline}`,
+      description: hasStays()
+        ? "Dog-friendly stays, researched travel guides and gear picks: fenced yards, large dogs, extra dogs, real pet fees and what to pack for the trip."
+        : "Researched guides and free tools for renting and traveling with your dog: pet fees, fenced yards, car safety and local rules, with every source listed.",
+      path: "/",
+    });
+    // The hero is the LCP element. React does not preload an <img> inside <picture>, so preload both candidates explicitly, each limited to the
+    // viewport it serves (the phone crop below 768 px, the 800w/1600w pair above), so a browser never fetches the wrong one.
+    return {
+      ...h,
+      links: [
+        ...h.links,
+        { rel: "preload", as: "image", href: HERO_MOBILE.src, media: HERO_MOBILE.media, fetchPriority: "high" },
+        { rel: "preload", as: "image", imageSrcSet: srcSetFor("hero-porch"), imageSizes: "100vw", media: "(min-width: 768px)", fetchPriority: "high" },
+      ],
+    };
+  },
   component: Home,
 });
 
@@ -69,7 +81,10 @@ function Home() {
   return (
     <>
       <section className="relative isolate min-h-[88vh] overflow-hidden">
-        <img src={images["hero-porch"].src} srcSet={srcSetFor("hero-porch")} sizes="100vw" alt={images["hero-porch"].alt} width={1920} height={1088} fetchPriority="high" className="absolute inset-0 -z-10 h-full w-full object-cover" />
+        <picture>
+          <source media={HERO_MOBILE.media} srcSet={HERO_MOBILE.src} width={HERO_MOBILE.width} height={HERO_MOBILE.height} />
+          <img src={images["hero-porch"].src} srcSet={srcSetFor("hero-porch")} sizes="100vw" alt={images["hero-porch"].alt} width={1920} height={1088} fetchPriority="high" className="absolute inset-0 -z-10 h-full w-full object-cover" />
+        </picture>
         <div className="absolute inset-0 -z-10 bg-scrim" />
         <div className="container-page flex min-h-[88vh] flex-col justify-end pb-14 pt-32">
           <p className="eyebrow animate-rise !text-sage">Dog-friendly travel, done properly</p>

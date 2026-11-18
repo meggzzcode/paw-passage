@@ -3,7 +3,7 @@ title: "Two Large Dogs in One Car: Crates, Harnesses and Barriers"
 seoTitle: "Two Large Dogs in One Car: Safe Setups"
 seoDescription: "Riding with two large dogs? One restraint per dog, crate or harness layouts, where barriers fit, weight math and heat stops, plus what no one has tested."
 dek: One restraint per dog, how to lay out a sedan, wagon or SUV, what a barrier does and does not do, and the multi-dog questions no independent test answers yet.
-category: Gear
+category: Planning
 states: []
 status: draft
 author: Paws & Passage Editors

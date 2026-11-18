@@ -200,7 +200,7 @@ We label how sure we are. **Confirmed** means a platform or manager page says it
 
 ## How long does a host have to charge you for pet damage after checkout?
 
-Both platforms' pages say 14 days, while other Airbnb Resolution Center requests have a 60-day window. We could not confirm how strictly either is enforced.
+Airbnb says damage claims must be filed within 14 days of checkout, and Vrbo gives the host 14 days after your stay; other Airbnb Resolution Center requests have a 60-day window. We could not confirm how strictly either is enforced.
 
 ### The three clocks, as of 2026-11-18
 
@@ -247,7 +247,7 @@ So the argument is about "expected": normal hair is arguably what the fee is for
 
 ## Did you really hide your dog? The undisclosed-pet trap
 
-Some managers charge a flat penalty for an undeclared dog, on top of damage. Samples from four managers' own pages, as of 2026-11-18, not a survey.
+Some managers charge a flat penalty for an undeclared dog, on top of damage. Samples from four managers' own pages, as of 2026-11-18. This is not a survey.
 
 | Manager | Undeclared or unauthorized pet | Source |
 | --- | --- | --- |
@@ -318,7 +318,7 @@ In one 2024 Vrbo case, a bank repeatedly denied a chargeback before crediting af
 
 ## What if the dog is a service animal?
 
-Airbnb's ground rules say service animals, and in some locations emotional support animals, are not pets. [[4]](https://www.airbnb.com/help/article/2894) Airbnb's pet-fee page says service animals stay free, but if one damages property, the host can still request payment under AirCover. [[8]](https://www.airbnb.com/help/article/3623) We did not confirm how Support treats emotional support animals.
+Airbnb's ground rules say service animals, and in some locations emotional support animals, are not pets. [[4]](https://www.airbnb.com/help/article/2894) Airbnb's pet-fee page says service animals stay free, but if one damages property, the host can still request payment under AirCover. [[8]](https://www.airbnb.com/help/article/3623) [[8]](https://www.airbnb.com/help/article/3623) We did not confirm how Support treats emotional support animals.
 
 **Check for yourself:** message Airbnb or Vrbo support, "My animal is a service animal. How are pet fees and damage claims handled?" and save the reply.
 

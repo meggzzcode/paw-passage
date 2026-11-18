@@ -6,11 +6,11 @@ URLs: AKC = https://www.akc.org/expert-advice/health/general-health/dog-stairs-a
 
 | # | Claim | Source | Level |
 | --- | --- | --- | --- |
-| 1 | AKC: ramps generally better for car use (lighter, fold easier) | AKC | 1 |
-| 2 | AKC: ramp can start low and be raised; stairs cannot | AKC | 1 |
+| 1 | AKC: ramps suit car use (easier to fold, often lighter than quality stairs); article no longer says "generally the better choice" | AKC | 1 |
+| 2 | AKC: ramp lets you begin with a low angle (page does not say stairs cannot be raised; claim removed) | AKC | 1 |
 | 3 | AKC lists arthritic, back-prone breeds, large dogs struggling with car access as dogs that benefit | AKC | 1 |
 | 4 | PetMD (DVM-written, 2025-06-20): ramp recommended over stairs for arthritis/joint/back conditions; medium and large dogs may prefer ramps | PM | 1 |
-| 5 | CARE: jumping down from bed/SUV "not recommended for any dog"; stairs or ramps suggested; no car ramp found works for all dogs; must not be too steep | CARE | 1 |
+| 5 | CARE: jumping down from bed/SUV "not recommended for any dog"; stairs or ramps suggested; authors have not found car ramps/steps that "work particularly well for all dogs"; must not be too steep | CARE | 1 |
 | 6 | VCA: vehicle ramp can help reduce stress on back and leg joints; most dogs quickly learn ramps | VCA | 1 |
 | 7 | VCA: prevent stair access when unsupervised, baby gate; better traction helps | VCA | 1 |
 | 8 | Cornell: "Difficulty navigating stairs or jumping on couches" is a sign of OA; non-slip rugs and ramps for beds, couches, cars; OA diagnosed after physical exam | CU | 1 |
@@ -21,9 +21,9 @@ URLs: AKC = https://www.akc.org/expert-advice/health/general-health/dog-stairs-a
 | 13 | None of the four pages describes a senior/mobility product | FR, TR, SS, HS | 1 (absence on pages as read) |
 | 14 | Petful cites a dog behaviorist: incline about 18 to 20 degrees | PF | 1 (one person's figure) |
 | 15 | Height reached = length x sin(angle): 47 in -> 15-16; 62 -> 19-21; 87 -> 27-30 in; 21 in rise needs about 61 in at 20 degrees | arithmetic on rows 10, 9, 14 | 3 (our arithmetic) |
-| 16 | Lean toward a ramp for vehicles across five pages read | AKC, PM, CARE, VCA, CU | 2 (five pages, small sample, not a count of all advice) |
+| 16 | AKC and VCA name a ramp for the vehicle; PM, CARE, CU mention ramps more broadly (five pages) | AKC, PM, CARE, VCA, CU | 1 per page; no pattern claim (downgraded from 2: only 2 pages name vehicle ramps) |
 | 17 | Measure-first steps 1, 5, 6; match top step near sill; ground-floor sleeping spot; ask the host | none | 3 |
-| 18 | AKC: stable surface; weight limit check; narrow ramp risk; barrier on one side | AKC | 1 |
+| 18 | AKC: stable surface; weight limit check; too-narrow STAIRS risk (page says stairs, not ramps); barrier on at least one side | AKC | 1 |
 | 19 | No maker page mentions house or porch steps | FR, TR, SS, HS | 1 (absence on pages as read) |
 
-Notes for the lead: (a) products.yml folding-ramp record omits that the page says "Independently tested and rated to support pets up to 150 lb"; the article states it, attributed to the maker with no tester named. Consider adding it to the record. (b) Hitch step page weight is not stated; page also lists a price and a 45-day return window, deliberately not quoted. (c) The Drive (thedrive.com, 2022/2023) was read and is a competitor entry only, not cited. (d) Category set to Planning because the Gear category requires per-product `gear` picks (content.test). (e) Fetch results were model summaries of the pages; re-check quoted phrases ("not recommended for any dog", "Difficulty navigating stairs or jumping on couches") against the live pages.
+Notes for the lead: (a) products.yml folding-ramp record omits that the page says "Independently tested and rated to support pets up to 150 lb"; the article states it, attributed to the maker with no tester named. Consider adding it to the record. (b) Hitch step page weight is not stated; page also lists a price and a 45-day return window, deliberately not quoted. (c) The Drive (thedrive.com, 2022/2023) was read and is a competitor entry only, not cited. (d) Category set to Planning because the Gear category requires per-product `gear` picks (content.test). (e) Fact-check 2026-11-18: quotes re-verified by a second fetch. products.yml folding-ramp record still omits the maker's "Independently tested" wording and says no testing cited; left untouched, reported. (f) Fetch results were model summaries of the pages; re-check quoted phrases ("not recommended for any dog", "Difficulty navigating stairs or jumping on couches") against the live pages.

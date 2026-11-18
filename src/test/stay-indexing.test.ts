@@ -79,8 +79,9 @@ describe("town and state indexing", () => {
 
 describe("stay data integrity", () => {
   const stays = visibleStays({ includeSamples: false });
-  it("each stay's affiliateId matches the listing id in its sourceUrl and an approved link exists", () => {
-    for (const s of stays) {
+  it("each stay with an affiliateId matches the listing id in its sourceUrl and an approved link exists", () => {
+    // Stays without an affiliateId (non-Vrbo sources, or Vrbo stays still waiting for a deeplink from the Expedia hub) are skipped.
+    for (const s of stays.filter((x) => !!x.affiliateId)) {
       const id = /vrbo\.com\/(\d+)/.exec(s.sourceUrl)?.[1];
       expect(id, s.slug).toBeTruthy();
       expect(s.affiliateId, s.slug).toBe(`vrbo-${id}`);

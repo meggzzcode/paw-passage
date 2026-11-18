@@ -20,14 +20,14 @@ Levels: 1 = confirmed by a source we cite; 2 = what most people report (3+ indep
 | Ruffwear blog: size by girth not weight; buoyancy tested "following the guidelines of human PFDs" with no standard named; leash/tow loop mentioned | https://ruffwear.com/blogs/explored/do-dogs-need-life-jackets | 1 |
 | Whole Dog Journal (2016): more buoyancy not necessarily better; manufacturers do not quantify buoyancy | https://www.whole-dog-journal.com/?p=3315 | 1 |
 | VCA: swimming is hard work; avoid big waves, riptides, strong currents, cold water; offer fresh water; rinse after | https://vcahospitals.com/shop/home/articles/the-dos-and-don-ts-of-dog-water-safety | 1 |
-| Cornell: dogs in and out of water can ingest a lot; half-hour breaks; seawater magnesium laxative; excess salt tremors/seizures; hydrate before beach | https://www.vet.cornell.edu/departments/riney-canine-health-center/canine-health-information/summer-safety-tips | 1 |
+| Cornell: dogs in and out of water can ingest a lot; half-hour breaks; seawater magnesium laxative; excess salt tremors/seizures; well-hydrated before beach (no claim about temptation to drink) | https://www.vet.cornell.edu/departments/riney-canine-health-center/canine-health-information/summer-safety-tips | 1 |
 | AKC: few mouthfuls may cause diarrhea, large amounts can be fatal; vomiting, diarrhea, dehydration; fresh water, shade, break every 15 minutes | https://www.akc.org/expert-advice/health/general-health/dogs-drinking-salt-water/ | 1 |
 | CDC: animals can get very sick or die within hours of harmful algae; blooms look like foam, scum, mats, paint; rinse with tap water | https://www.cdc.gov/harmful-algal-blooms/about/index.html | 1 |
 | National Geographic: appearance does not show toxicity; dogs can ingest toxins by grooming | https://www.nationalgeographic.com/animals/article/algae-toxic-blooms-cyanobacteria-dogs-swimming | 1 |
 | Newman-Dailey: dogs not permitted on the beach or in the pool area; leashed per county | https://www.destinvacation.com/pet-friendly | 1 |
 | Twiddy: Kill Devil Hills and Southern Shores bar dogs 9am-6pm May 15-Sep 15; Duck allows year-round with leash at village/Duck Town Park | https://www.twiddy.com/outer-banks/guests/pets/ | 1 |
 | 7 of 38 manager pages mention dogs and pools/hot tubs and all restrict (convenience sample) | src/content/manager-policies.ts (dataDate 2026-11-18); our pool guide | 1 |
-| Fit checks (two fingers, shallow-water test) are common advice | AKC and Ezydog pages above (2 sources, not 3) | 3 (stated as 2 sources) |
+| Two-finger strap check is on the AKC page only (Ezydog page does not mention it); shallow-water test is on AKC and Ezydog (2 sources, not 3) | AKC and Ezydog pages above | 3 (stated as advice from 2 sources, not a rule) |
 | Lift check with handle (jacket riding past ears) | none | 3 (labelled our suggestion) |
 | Whether any jacket's flotation is independently tested | none found | 3 (unknown) |
 | Whether states or lakes require dog jackets | no official state page read | 3 (unknown) |

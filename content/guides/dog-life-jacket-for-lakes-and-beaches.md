@@ -139,7 +139,7 @@ research:
   researchComplete: true
 ---
 
-You are on a lake dock or a rental's beach path with a dog who is already pulling toward the water, and a jacket you bought online is in the bag. Does it fit, and what is it actually promising? A fit check takes ten minutes at the rental and tells you more than the product title does.
+You are on a lake dock or a rental's beach path with a dog who is already pulling toward the water, and a jacket you bought online is in the bag. Does it fit, and what is it actually promising? A fit check at the rental, before the dog is near deep water, tells you more than the product title does.
 
 This guide is for open water and beaches. For a rental's pool or hot tub, follow our [pool and hot tub guide](/guides/can-dogs-go-in-a-rental-pool-or-hot-tub): in the 38 manager pages we read (a convenience sample, read 2026-11-18), seven mention dogs and pools or hot tubs and all seven restrict them.
 
@@ -186,14 +186,14 @@ Our product records hold the same facts, and the two jackets are on our [beach v
 
 ## Water hazards a jacket does not solve
 
-A jacket keeps a dog up. It does nothing about what the dog swallows or touches, and a rental stay often means unfamiliar water.
+A jacket is meant to add flotation. It does nothing about what the dog swallows or touches, and a rental stay often means unfamiliar water.
 
 - **Fatigue and conditions.** VCA says swimming is hard work and advises avoiding big waves, riptides, strong currents or dangerously cold water. It also says to offer plenty of fresh water and to rinse the dog afterward. [[8]](https://vcahospitals.com/shop/home/articles/the-dos-and-don-ts-of-dog-water-safety)
 - **Too much water.** Cornell says a dog in and out of water all day can ingest a lot of it, and advises frequent half-hour breaks. [[9]](https://www.vet.cornell.edu/departments/riney-canine-health-center/canine-health-information/summer-safety-tips)
-- **Saltwater.** Cornell says seawater's magnesium has a strong laxative effect and that excess salt can cause tremors, disorientation and seizures; it suggests a well-hydrated dog is less tempted to drink saltwater. [[9]](https://www.vet.cornell.edu/departments/riney-canine-health-center/canine-health-information/summer-safety-tips) AKC adds that a few mouthfuls may only cause diarrhea, that large amounts can be fatal, and that vomiting, diarrhea and dehydration can follow. It advises fresh water and shade at the beach and a break from the water every 15 minutes. [[10]](https://www.akc.org/expert-advice/health/general-health/dogs-drinking-salt-water/) The two sources give different break intervals (every 30 minutes and every 15), so there is no single number to quote.
+- **Saltwater.** Cornell says seawater's magnesium has a strong laxative effect and that excess salt can cause tremors, disorientation and seizures; it advises making sure the dog has had plenty of fresh water and is well hydrated before heading to the beach. [[9]](https://www.vet.cornell.edu/departments/riney-canine-health-center/canine-health-information/summer-safety-tips) AKC adds that a few mouthfuls may only cause diarrhea, that large amounts can be fatal, and that vomiting, diarrhea and dehydration can follow. It advises fresh water and shade at the beach and a break from the water every 15 minutes. [[10]](https://www.akc.org/expert-advice/health/general-health/dogs-drinking-salt-water/) The two sources give different break intervals (every 30 minutes and every 15), so there is no single number to quote.
 - **Algae in lakes.** The CDC says animals can get very sick or even die within hours of contact with harmful algae, that blooms can look like foam, scum, mats or paint, and that you should rinse yourself or your animal with tap water right after contact. [[11]](https://www.cdc.gov/harmful-algal-blooms/about/index.html) National Geographic says appearance does not reliably show how toxic a bloom is, and that dogs can swallow toxins by grooming after they leave the water. [[12]](https://www.nationalgeographic.com/animals/article/algae-toxic-blooms-cyanobacteria-dogs-swimming) None of these pages describes a jacket as protection from any of this.
 
-If a dog shows odd behavior after swimming, these sources say to contact a veterinarian promptly. We cannot assess a dog from here.
+The CDC page says to contact a veterinarian right away if an animal seems ill after time in or near water. We cannot assess a dog from here.
 
 ## Beach and lake rules at a rental
 
@@ -217,7 +217,7 @@ A jacket will not make a beach legal. Ask the host for the beach, lake and dock 
 ## How sure we are
 
 - **Confirmed by a source we cite:** the maker specifications and sizing wording (read 2026-11-18), the Coast Guard video statement (2013), the CDC, Cornell, VCA and AKC statements, and the two managers' beach wording.
-- **What most people report:** the fit checks (two fingers, shallow-water test) appear on AKC and Ezydog, two sources, so we treat them as common advice and not as a measured standard.
+- **What most people report:** nothing here rests on reports from many people. The fit checks come from two sources, which is too few to call common: AKC gives the two-finger check, and AKC and Ezydog both advise a shallow-water test. Treat them as advice from 2 sources, not a rule.
 - **Unknown:** whether any jacket's flotation claim has been independently tested, and the items in the table above. Ask the maker, the host or your vet.
 
 ## Your next step

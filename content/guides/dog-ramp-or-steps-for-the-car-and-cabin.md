@@ -13,7 +13,7 @@ readingMinutes: 8
 heroImage: guide-pet-fees
 faqs:
   - q: Is a ramp or steps better for getting a dog into a car?
-    a: The vet and kennel-club pages we read lean toward a ramp for vehicles. AKC says ramps are generally the better choice for car use, and a veterinarian-written PetMD page recommends a ramp over stairs for dogs with arthritis or joint and back conditions. Your vet knows your dog, so ask before you buy.
+    a: The vet and kennel-club pages we read lean toward a ramp for vehicles. AKC points to ramps for car use because they are often lighter and easier to fold, and a veterinarian-written PetMD page recommends a ramp over stairs for dogs with arthritis or joint and back conditions. Your vet knows your dog, so ask before you buy.
   - q: How heavy a dog can these ramps and steps hold?
     a: The makers' pages, read 2026-11-18, state 150 lb for the PetSafe Happy Ride Folding Dog Ramp, 300 lb for the Extra Long Telescoping Ramp, and 200 lb for both the Side Door Pet Steps and the Hitch Step. Those are the makers' ratings, and the two ramp pages say the rating was independently tested without naming who tested it.
   - q: Are these products made for senior dogs?
@@ -132,7 +132,7 @@ Your dog used to leap into the back of the car without a thought, and now he sto
 
 The short version: for a vehicle, the veterinary and kennel-club pages we read lean toward a ramp, and the maker specs below show which of four PetSafe products fit which weight and height. Measure first, since the same ramp can be a gentle slope on a low car and too steep for a tall truck. Ask your vet before buying if your dog has stiffness or pain.
 
-- **Ramps are the usual pick for cars.** AKC says ramps are generally the better choice for car use because they are lighter and fold more easily. [[1]](https://www.akc.org/expert-advice/health/general-health/dog-stairs-and-ramps/)
+- **Ramps are the usual pick for cars.** AKC says ramps suit car use because they are easier to fold and often lighter than quality dog stairs. [[1]](https://www.akc.org/expert-advice/health/general-health/dog-stairs-and-ramps/)
 - **Steps suit a fixed-height door.** The PetSafe Side Door Steps list three set heights.
 - **Weight ratings differ a lot.** The four products here run from 150 lb to 300 lb, as the makers state.
 - **Researched, not tested.** This guide is researched from the maker's specifications and cited sources, not tested by us.
@@ -141,9 +141,9 @@ The short version: for a vehicle, the veterinary and kennel-club pages we read l
 
 We are not vets, and this is not a diagnosis or advice for your dog. These are the statements we read.
 
-AKC lists arthritic dogs, back-prone breeds and large dogs that struggle with car access among the dogs that benefit from stairs or a ramp, and notes a ramp can start low and be raised as a dog gains confidence, which stairs cannot do. [[1]](https://www.akc.org/expert-advice/health/general-health/dog-stairs-and-ramps/) PetMD, in a piece written by a veterinarian, says a ramp is recommended over stairs for dogs with arthritis or other joint or back conditions, and that medium and large dogs may prefer ramps. [[2]](https://www.petmd.com/dog/general-health/does-my-dog-need-dog-stairs-dog-ramp)
+AKC lists arthritic dogs, back-prone breeds and large dogs that struggle with car access among the dogs that benefit from stairs or a ramp, and notes that, unlike stairs, a ramp lets you begin with a low angle and raise it gradually. [[1]](https://www.akc.org/expert-advice/health/general-health/dog-stairs-and-ramps/) PetMD, in a piece written by a veterinarian, says a ramp is recommended over stairs for dogs with arthritis or other joint or back conditions, and that medium and large dogs may prefer ramps. [[2]](https://www.petmd.com/dog/general-health/does-my-dog-need-dog-stairs-dog-ramp)
 
-The Canine Arthritis Resources and Education page says jumping down from a bed or SUV is "not recommended for any dog", and suggests stairs or ramps, especially for getting down. It adds that no car ramp it has found works for every dog, and that a car ramp must not be too steep. [[3]](https://caninearthritis.org/?p=2503) VCA says a ramp for entering and exiting vehicles can help reduce stress on the back and leg joints, and that most dogs can quickly learn to use one. [[4]](https://vcahospitals.com/know-your-pet/helping-your-dog-with-osteoarthritis) Cornell's veterinary college lists "Difficulty navigating stairs or jumping on couches" as a sign of osteoarthritis, suggests non-slip rugs and ramps to reach beds, couches or cars, and says the condition is diagnosed after a physical exam. [[5]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/osteoarthritis)
+The Canine Arthritis Resources and Education page says jumping down from a bed or SUV is "not recommended for any dog", and suggests stairs or ramps, especially for getting down. It adds that its authors have not found car ramps or steps that work particularly well for all dogs, and that they must not be too steep. [[3]](https://caninearthritis.org/?p=2503) VCA says a ramp for entering and exiting vehicles can help reduce stress on the back and leg joints, and that most dogs can quickly learn to use one. [[4]](https://vcahospitals.com/know-your-pet/helping-your-dog-with-osteoarthritis) Cornell's veterinary college lists "Difficulty navigating stairs or jumping on couches" as a sign of osteoarthritis, suggests non-slip rugs and ramps to reach beds, couches or cars, and says the condition is diagnosed after a physical exam. [[5]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/osteoarthritis)
 
 So AKC and VCA name a ramp for the vehicle, PetMD recommends a ramp over stairs for joint conditions, Cornell lists ramps for beds, couches and cars, and CARE names ramps or steps. That is five pages, not a study. If your dog is reluctant to jump or climb, the exam is your vet's job, not a product's.
 
@@ -179,7 +179,7 @@ Read it the other way: if your cargo floor sits 24 in off the ground, the 62 in 
 1. **Ground to the surface your dog must reach.** Measure to the cargo floor, seat edge or door sill, at the spot where you will actually park, with the vehicle loaded as usual. A curb or a slope changes the number.
 2. **Space for the slope.** Ramp length is measured along the slope, so you also need clear ground behind or beside the vehicle. Check you can lay it flat on a stable surface; AKC says to place a ramp or stairs on a stable surface so they do not wobble. [[1]](https://www.akc.org/expert-advice/health/general-health/dog-stairs-and-ramps/)
 3. **Your dog's weight, from a scale or your vet.** Compare it with the rating. AKC says to check the weight limit before buying, because a flimsy ramp could break under a large dog. [[1]](https://www.akc.org/expert-advice/health/general-health/dog-stairs-and-ramps/)
-4. **Width and sides.** AKC says too narrow a ramp or stairs can make a dog lose confidence or fall off the side, and suggests a barrier on at least one side. [[1]](https://www.akc.org/expert-advice/health/general-health/dog-stairs-and-ramps/)
+4. **Width and sides.** AKC says stairs that are too narrow can make a dog lose confidence or fall off the side, and suggests placing a ramp or stairs where there is a barrier on at least one side. [[1]](https://www.akc.org/expert-advice/health/general-health/dog-stairs-and-ramps/)
 5. **Hitch and door, if you are considering steps.** For the hitch step, confirm a 2 in hitch. For the side door steps, compare your sill height with 21.25, 24.75 and 28 in. Matching the top step near the sill is our reasoning, not the maker's instruction.
 6. **Carry and store.** The folding ramp is listed at 10 lb and the telescoping at 18 lb. Can you lift it in and out one-handed at a gas stop?
 
@@ -213,7 +213,7 @@ Message to a host: "Hi [name], we are booking [dates] with one [size] dog who fi
 ## How sure we are
 
 - **Confirmed by a source we cite:** the maker figures in the table (each PetSafe page, read 2026-11-18) and the AKC, PetMD, CARE, VCA, Cornell and Petful statements, each as that page words it.
-- **What most people report:** the lean toward a ramp for vehicles comes from the five pages we read, not a study or a count of all advice.
+- **What the pages we read say (five pages, not a study):** AKC and VCA name a ramp for the vehicle; PetMD, CARE and Cornell mention ramps more broadly. That is a small sample, not a count of all advice.
 - **Unknown:** your dog's needs, your vehicle's real height and any host's rules. Ask your vet, measure and ask the host.
 
 ## Your next step

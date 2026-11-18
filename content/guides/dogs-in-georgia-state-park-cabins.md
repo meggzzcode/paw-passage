@@ -118,12 +118,12 @@ research:
       title: Dogs in Georgia State Parks
       checkedOn: 2026-11-18
       coversWell: Fee, two-dog limit, unattended rule, kennel note and trail exclusions in one page, dated August 13, 2026.
-      gaps: Cabin rules are not attributed to a source, it says the fee applies at booking where the park page says check-in, and it gives no contact or request route.
+      gaps: No source is given for the fee, it says the fee applies at booking where the park page says check-in, and it gives no contact or request route.
     - url: https://gopetfriendly.com/blog/us-state-parks-that-allow-pets-your-guide-to-pet-friendly-cabins-campgrounds-beaches-and-more
       title: State Parks That Allow Pets
       checkedOn: 2026-11-18
       coversWell: Lists dog-friendly cottage numbers by park and states $50 per dog per stay and two dogs per cottage.
-      gaps: Dated August 21, 2024, cites no independent source for the fee, gives no phone number and does not say how to request.
+      gaps: Dated August 21, 2024, cites no independent source for the fee, gives no phone number and only points to the booking site.
   gapsFound:
     - No page we read explains how a dog request actually works or who to call.
     - Competitor pages state the fee without a date or a source, and one places it at booking instead of check-in.
@@ -164,7 +164,7 @@ Kennels are not available at the parks, and pets are not allowed in lodges, yurt
 
 There is no single official list on the pages we read. The cottages page says "Designated dog-friendly cabins are available" and gives two park examples: at Skidaway Island, Cabins A and C do not allow pets while Cabin B, the ADA accessible one, does; Mistletoe has a cabin described as pet-friendly (fee), with no amount shown. [[2]](https://gastateparks.org/Cottages)
 
-Two more park pages show how uneven it is. Smithgall Woods calls Garden Cottage "our singular pet-friendly (with fee) cabin" among six cottages. [[3]](https://gastateparks.org/SmithgallWoods/Cottages) Fort Yargo's page lists 17 cottages but says nothing about pets, and points you to the park at 770-867-3489 for pet policies and cottage rates. [[4]](https://gastateparks.org/FortYargo) Red Top Mountain's page lists 20 cottages and does not mention dogs or leashes. [[5]](https://gastateparks.org/RedTopMountain)
+Two more park pages show how uneven it is. Smithgall Woods calls Garden Cottage "our singular pet-friendly (with fee) cabin" among six cottages. [[3]](https://gastateparks.org/SmithgallWoods/Cottages) Fort Yargo's page lists 17 cottages but says nothing about pets; it gives the park line as 770-867-3489, so that is the number to ask. [[4]](https://gastateparks.org/FortYargo) Red Top Mountain's page lists 20 cottages and does not mention dogs or leashes. [[5]](https://gastateparks.org/RedTopMountain)
 
 An Explore Georgia list (undated) names dog-friendly cottages at Black Rock Mountain (#5, #8 and #10), Crooked River (four), F.D. Roosevelt (four) and Mistletoe (five). [[6]](https://exploregeorgia.org/places-to-stay/list/stay-in-these-cozy-cabins-with-your-dog-at-georgia-state-parks) Treat it as a lead, since cottage designations can change; the park confirms the unit you book.
 
@@ -183,7 +183,7 @@ Booking timing: reservations open 13 months ahead, or 14 for Georgia residents. 
 
 The unattended rule shapes the whole trip. It covers the cottage, your vehicle and the park, so a dog cannot wait in the cabin while you hike, kayak or eat out. [[1]](https://gastateparks.org/ParkRules) Plan trips where the dog goes with you, and see our guide to [leaving a dog alone in a rental](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental) for how private hosts word the same rule.
 
-On trails, pets are welcome at state parks on a leash no longer than six feet, but not on some trails at Panola Mountain and Tallulah Gorge. [[1]](https://gastateparks.org/ParkRules) Tallulah's own page says pets are not allowed on the gorge floor, Sliding Rock Trail or the Hurricane Falls staircase to the suspension bridge, and that leashed pets are welcome on the rim trails. [[9]](https://gastateparks.org/TallulahGorge) That page does not mention cottages, so Tallulah is a day-hike stop in this guide, not a cabin to book. The Red Top Mountain page gives no trail rules for pets, so the general six-foot leash rule is what the official pages support there. [[5]](https://gastateparks.org/RedTopMountain)
+On trails, pets are welcome at state parks on a leash no longer than six feet, but not on some trails at Panola Mountain and Tallulah Gorge. [[1]](https://gastateparks.org/ParkRules) Tallulah's own page says pets are not allowed on the gorge floor, Sliding Rock Trail or the Hurricane Falls staircase to the suspension bridge, and that leashed pets are welcome on the rim trails. [[9]](https://gastateparks.org/TallulahGorge) That page lists no cottages at Tallulah, so Tallulah is a day-hike stop in this guide, not a cabin to book. The Red Top Mountain page gives no trail rules for pets, so the general six-foot leash rule is what the official pages support there. [[5]](https://gastateparks.org/RedTopMountain)
 
 ## What to ask the park
 
@@ -192,7 +192,7 @@ On trails, pets are welcome at state parks on a leash no longer than six feet, b
 - Is the $50 per dog charged at check-in, as the rules page says, or at booking?
 - Which trails near this cabin are open to dogs on a leash?
 - What happens if the dog barks while I am out at dinner, given the unattended rule?
-- If I have a service animal, which of the pet rules change?
+- If I have a service animal, what do I need to do when I book? (The rules page says working service animals are allowed in overnight accommodations.)
 
 ## Message to send
 
@@ -211,13 +211,13 @@ The big difference is how much the park decides for you. A state park cottage se
 | A Blue Ridge Cabin Rental | 2 pets per stay | $150 per pet, non-refundable [[11]](https://ablueridgecabinrental.com/cabin-policies/) | Deeper cleaning can cost more |
 | Sliding Rock Cabins | Not stated | No pet fees, breed or weight limits [[12]](https://slidingrockcabins.com/) | Fenced yards only at select cabins |
 
-For a hypothetical three-night stay with one dog, round numbers show the gap: a state cottage fee is $50, while Cabin Rentals of Georgia's published rates come to $150 for the nights plus $75 cleaning, with the deposit refundable. Our [pet fees guide](/guides/how-vacation-rental-pet-fees-work) explains how those units differ, the [no-pet-fee guide](/guides/vacation-rentals-with-no-pet-fee) lists managers that charge nothing, and the [large-dog guide](/guides/vacation-rentals-that-welcome-large-dogs) covers weight caps, which a state cottage does not set. In our convenience sample of 38 managers (read 2026-11-18), 22 state a two-dog limit and 14 give none. See the [pet policy dataset](/data/pet-policies) and our [how many dogs guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental).
+For a hypothetical three-night stay with one dog, round numbers show the gap: a state cottage fee is $50, while Cabin Rentals of Georgia's published rates come to $150 for the nights plus $75 cleaning, with the deposit refundable. Our [pet fees guide](/guides/how-vacation-rental-pet-fees-work) explains how those units differ, the [no-pet-fee guide](/guides/vacation-rentals-with-no-pet-fee) lists managers that charge nothing, and the [large-dog guide](/guides/vacation-rentals-that-welcome-large-dogs) covers weight caps, which a state cottage does not set. In our convenience sample of 38 managers (read 2026-11-18), 22 give a limit of two (14 for dogs, 4 for pets of any kind, 4 as the usual limit), 2 give three and 14 give none. See the [pet policy dataset](/data/pet-policies) and our [how many dogs guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental).
 
 A private cabin may offer a fenced yard (select Sliding Rock cabins) or no pet fee at all. A state cottage gives a flat per-stay fee and a trail system outside the door.
 
 ## Where other pages differ
 
-Animal of Things (August 13, 2026) says the fee applies at booking, where the park rules page says check-in, and it does not source its cabin rules. [[13]](https://animalofthings.com/dogs-in-state-parks-in-georgia/) GoPetFriendly (August 21, 2024) lists cottage numbers but is two years old. [[14]](https://gopetfriendly.com/blog/us-state-parks-that-allow-pets-your-guide-to-pet-friendly-cabins-campgrounds-beaches-and-more) Explore Georgia, cited above, has no date or request steps.
+Animal of Things (August 13, 2026) says the fee applies at booking, where the park rules page says check-in, and it gives no source for the fee. [[13]](https://animalofthings.com/dogs-in-state-parks-in-georgia/) GoPetFriendly (August 21, 2024) lists cottage numbers but is two years old. [[14]](https://gopetfriendly.com/blog/us-state-parks-that-allow-pets-your-guide-to-pet-friendly-cabins-campgrounds-beaches-and-more) Explore Georgia, cited above, has no date or request steps.
 
 ## What we could not confirm
 
@@ -227,7 +227,7 @@ Animal of Things (August 13, 2026) says the fee applies at booking, where the pa
 | How to submit the request | Rules page says request, not how | Call 1-800-864-7275 or the park office |
 | Whether $50 is charged at booking or check-in | Official page says check-in, one article says booking | Ask when you book |
 | Exact nightly rate | Cottages page says $85 to $250, reservations page $75 to $250 | Quote for your dates |
-| Service animal exemptions | The rules page lists exemptions we did not capture | Ask the park |
+| How service animals are handled at a cottage | Rules page says working service animals are allowed in overnight accommodations; it does not explain booking steps | Ask the park |
 | Pet rules for each park's trails | Red Top and Fort Yargo pages are silent | Ask the park office |
 | Pet fee amount at Mistletoe and Smithgall | Pages say "fee", no amount | Ask the park |
 

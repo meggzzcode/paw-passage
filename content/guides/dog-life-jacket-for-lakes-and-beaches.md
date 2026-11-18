@@ -127,6 +127,16 @@ research:
       checkedOn: 2026-11-18
       coversWell: Detailed fit checks and signs of poor fit, plus body-shape notes.
       gaps: A retailer page that names no standard, and nothing on water hazards or where dogs may go.
+    - url: https://www.boatingmag.com/selecting-dog-life-jacket/
+      title: Selecting a Dog Life Jacket
+      checkedOn: 2026-11-18
+      coversWell: Hands-on impressions of three vests worn by one 67-pound Lab, including comfort, flexibility and handles.
+      gaps: Last updated 2017 with no standard or certification mentioned, no measuring or size guidance, no sources and no supervision or rental guidance; buy links include affiliate-tagged Amazon links with only a general compensation note in the footer.
+    - url: https://fieldmag.com/articles/best-dog-life-jacket-guide
+      title: The 8 Best Dog Life Jackets
+      checkedOn: 2026-11-18
+      coversWell: Chest-girth size ranges for eight jackets and general advice to watch for rubbing and never force a dog into the water.
+      gaps: No formal fit test, no named safety standard, no testing method, last updated 2024 with prices that may be out of date, and nothing on rental or beach rules; shop buttons are affiliate links with a disclosure.
   gapsFound:
     - No competitor page we read connects the fit checks to what the maker pages say or to the missing standard.
     - Competitor pages do not mention that two makers give opposite advice between sizes.

@@ -114,6 +114,16 @@ research:
       checkedOn: 2026-11-18
       coversWell: Four ramps with weight ratings, a training section and one incline target. Updated May 8, 2024.
       gaps: No vehicle height figures, no testing method, no rental-stair advice, no affiliate disclosure, and several older references.
+    - url: https://www.orvis.com/does-your-dog-need-a-dog-ramp-or-dog-stairs
+      title: Does Your Dog Need A Ramp Or Stairs?
+      checkedOn: 2026-11-18
+      coversWell: Which dogs benefit, a telescoping ramp or vehicle step for car-only use, foldable ramps for fearful dogs or tight space, traction, and a top flush with the car floor.
+      gaps: No publication or updated date, no sources cited for injury claims, nothing on weight ratings, incline, measuring or rentals, and store links to its own products.
+    - url: https://www.fitbark.com/blog/does-your-dog-need-dog-stairs-or-a-ramp
+      title: Does Your Dog Need Dog Stairs or a Ramp?
+      checkedOn: 2026-11-18
+      coversWell: Veterinarian-credited advice that ramps are gentler on joints, collapsible ramps for cars and SUVs, 10 to 12 inch stairs for agile dogs, and a tape-measure check of climb height. Published May 4, 2021.
+      gaps: No updated date since 2021, no research cited, no incline or weight figures, no vehicle-measuring method, and nothing on rental or cabin stairs.
   gapsFound:
     - No page we read showed a vehicle-measuring method or turned a ramp length into the height it reaches.
     - Ramp pages skip cabin and rental stairs, and nothing asks the host first.

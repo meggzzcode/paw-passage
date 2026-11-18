@@ -129,6 +129,16 @@ research:
       checkedOn: 2026-11-18
       coversWell: Eight bowls with capacities and weights, buying criteria and cleaning tips, including a food canister pick.
       gaps: Body is dated May 2024 under a 2026 heading, health claims are unsourced, and it never mentions rentals, wildlife or water contamination.
+    - url: https://dogsanddetours.com/blog/best-dog-bowls-for-hiking-and-road-trips/
+      title: Best Dog Bowls for Hiking and Road Trips
+      checkedOn: 2026-11-18
+      coversWell: Six bowls in a comparison table of type, capacity, weight, features and price, plus a table matching trip types to priorities.
+      gaps: Cites no public-health or wildlife agency and links only to maker sites and its own posts, gives inconsistent posted and updated dates, has no rental or bear-country food storage advice or water contamination guidance, and carries affiliate links.
+    - url: https://www.dognotebook.com/best-dog-travel-bowls/
+      title: 12 Best Dog Travel Bowls (November 2026) Expert Reviews
+      checkedOn: 2026-11-18
+      coversWell: Twelve numbered reviews with bulleted specs per product, an overview section and an FAQ.
+      gaps: Dated May 2026 under a November 2026 title, links only to Amazon product pages with no maker pages, mentions an unnamed study on bloat, says nothing on rentals, wildlife or food storage, covers water safety in a single FAQ line, and carries affiliate links.
   gapsFound:
     - Competitor pages rank bowls but do not tie them to food freshness, bear-country storage or a rental kitchen.
     - None of the three pages we read cites a public-health or wildlife agency.

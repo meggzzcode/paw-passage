@@ -126,6 +126,16 @@ research:
       checkedOn: 2026-11-18
       coversWell: Lists dog-friendly cottage numbers by park and states $50 per dog per stay and two dogs per cottage.
       gaps: Dated August 21, 2024, cites no independent source for the fee, gives no phone number and only points to the booking site.
+    - url: https://www.savannah.com/bringing-your-pet-to-a-georgia-state-park/
+      title: Bringing Your Pets to a Georgia State Park
+      checkedOn: 2026-11-18
+      coversWell: States $50 per dog (limit 2) collected at check-in, the two-dog cottage maximum, the request-before-arrival rule, the unattended rule and the Panola Mountain and Tallulah Gorge trail exclusions.
+      gaps: No publication or updated date on the page, the only source is a closing credit to gastateparks.org rather than a specific rules page, and it does not name which parks or cottages take dogs.
+    - url: https://petfriendlytravel.com/pft_parks/georgia-state-parks-pet-policy/
+      title: Georgia State Parks Pet Policy
+      checkedOn: 2026-11-18
+      coversWell: Says some dog-friendly cabins are available, that dogs are kept out of park buildings, lodges and yurts, and that leashes max 6 feet with trail exceptions at Tallulah Gorge and Panola Mountain.
+      gaps: Dated April 12, 2019, gives no pet fee, no dog limit, no request-before-arrival rule and no unattended rule for cabins, and has no phone number.
   gapsFound:
     - No page we read explains how a dog request actually works or who to call.
     - Competitor pages state the fee without a date or a source, and one places it at booking instead of check-in.

@@ -175,6 +175,7 @@ Save those decisions in the [trip checklist](/tools/checklist). Once a place pas
     "pet-friendly-vacation-rental-checklist",
     "how-vacation-rental-pet-fees-work",
     "dog-friendly-cabin-packing-list",
+    "how-many-dogs-can-you-bring-to-a-vacation-rental",
   ],
   relatedTools: ["checklist", "pet-cost-check"],
   sources: [

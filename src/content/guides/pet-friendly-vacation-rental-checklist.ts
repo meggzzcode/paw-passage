@@ -175,7 +175,9 @@ On arrival, secure the dog while you inspect exits, gates, accessible food, clea
     "vacation-rental-secure-fenced-yard",
     "how-vacation-rental-pet-fees-work",
     "traveling-with-two-dogs-accommodation-guide",
-    "vacation-rentals-that-welcome-large-dogs"
+    "vacation-rentals-that-welcome-large-dogs",
+    "airbnb-pet-damage-charge-after-checkout",
+    "can-you-leave-a-dog-alone-in-a-vacation-rental",
   ],
   "relatedTools": ["checklist", "pet-cost-check"],
   "sources": [

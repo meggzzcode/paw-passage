@@ -171,7 +171,9 @@ Turn this into your own list with our [before-you-book checklist](/tools/checkli
     { q: "Do I need furniture covers if the cabin charges a pet fee?", a: "A pet fee does not establish furniture permission, so confirm the rules first. Where furniture is allowed, a washable cover helps with hair and damp paws but does not remove responsibility for damage." },
     { q: "What should I do if my dog may have swallowed antifreeze?", a: "Contact a veterinarian, emergency veterinary hospital, ASPCA Animal Poison Control at 888-426-4435, or Pet Poison Helpline at 855-764-7661 immediately. ASPCA's antifreeze guidance says to get the dog to a veterinary hospital right away, as signs can be missed early. [[9]](https://www.aspca.org/news/digging-deeper-getting-facts-dangers-antifreeze-and-your-pets) Do not induce vomiting unless a veterinary professional directs you. Keep the product label available if possible; a consultation fee may apply." },
   ],
-  relatedGuides: ["dog-friendly-cabins-fenced-yards-georgia", "pet-friendly-vacation-rental-checklist", "vacation-rental-secure-fenced-yard", "traveling-with-two-dogs-accommodation-guide"],
+  relatedGuides: ["dog-friendly-cabins-fenced-yards-georgia", "pet-friendly-vacation-rental-checklist", "vacation-rental-secure-fenced-yard", "traveling-with-two-dogs-accommodation-guide",
+    "new-years-eve-with-a-dog-in-a-vacation-rental",
+  ],
   relatedTools: ["checklist", "pet-cost-check"],
   sources: [
     { title: "Bear Safety: Storing Food", url: "https://www.nps.gov/articles/bearsafetyfood.htm", publisher: "National Park Service", accessedOn: "2026-11-16" },

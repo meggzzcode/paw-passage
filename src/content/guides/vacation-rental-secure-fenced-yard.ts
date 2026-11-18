@@ -163,7 +163,9 @@ Save your arrival checks in the [travel checklist](/tools/checklist). The aim is
   "relatedGuides": [
     "pet-friendly-vacation-rental-checklist",
     "traveling-with-two-dogs-accommodation-guide",
-    "dog-friendly-cabins-fenced-yards-georgia"
+    "dog-friendly-cabins-fenced-yards-georgia",
+    "can-you-leave-a-dog-alone-in-a-vacation-rental",
+    "new-years-eve-with-a-dog-in-a-vacation-rental",
   ],
   "relatedTools": ["checklist", "pet-cost-check"],
   "sources": [

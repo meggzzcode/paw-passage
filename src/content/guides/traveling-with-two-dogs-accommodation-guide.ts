@@ -192,6 +192,7 @@ Save the trip-specific version in the [travel checklist](/tools/checklist), then
     "vacation-rental-secure-fenced-yard",
     "pet-friendly-vacation-rental-checklist",
     "dog-friendly-cabin-packing-list",
+    "how-many-dogs-can-you-bring-to-a-vacation-rental",
   ],
   relatedTools: ["checklist", "pet-cost-check"],
   sources: [

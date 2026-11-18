@@ -29,6 +29,8 @@ relatedGuides:
   - vacation-rentals-that-welcome-large-dogs
   - pet-friendly-vacation-rental-checklist
   - vacation-rental-secure-fenced-yard
+  - airbnb-pet-damage-charge-after-checkout
+  - how-many-dogs-can-you-bring-to-a-vacation-rental
 embeddedTool: pet-cost-workflow
 relatedTools:
   - checklist

@@ -1,0 +1,64 @@
+status: unverified
+name: Mountain Gem, Fenced Yard and Mountain View (Cherry Log)
+type: cabin
+state: georgia
+town: blue-ridge
+summary: Three-bedroom Cherry Log cabin for 6 with a fenced-yard title; 1 dog, no weight cap listed.
+description: A three-bedroom cabin in rural Cherry Log, on the road toward Ellijay, with a king in the loft, a king downstairs and a queen on the main level, plus three bathrooms. The Vrbo FAQ allows a single dog and sets the weight cap at 999 lb, so one big dog is not a problem on paper. The title advertises a fenced yard and a past guest mentions it too. The amenity list adds a balcony, grill, game room with ping pong, and a porch and garden. It suits one large dog rather than a pack. We read this from the public Vrbo listing on 2026-11-18 and have not confirmed it with the host.
+sleeps: 6
+bedrooms: 3
+bathrooms: 3
+beds:
+- 'Loft: 1 king bed'
+- 'Lower level: 1 king bed'
+- 'Main level: 1 queen bed'
+maxDogs: 1
+weightLimitLbs: 999
+largeDogsOk: 'yes'
+fencedYard: not-confirmed
+fenceNotes: The listing title says "Fenced Yard" and a past guest mentions it; the page gives no fence size or material and does not say the yard is fully enclosed.
+privateOutdoor: not-confirmed
+petFee: not-confirmed
+breedRestrictions: not-confirmed
+houseRules:
+- 'Pets: "limit 1" dog, maximum weight "999 lbs per pet" (Vrbo listing).'
+- The pet fee was not readable on the page; no breed rule is shown.
+beach: false
+mountain: true
+hotTub: not-confirmed
+photoPermission: false
+sourceUrl: https://www.vrbo.com/2357464
+amenityGroups:
+- title: Kitchen and dining
+  items:
+  - Kitchen
+  - Separate dining area
+  - Refrigerator
+  - Barbecue grill
+- title: Comfort
+  items:
+  - Air conditioning
+- title: Outdoors
+  items:
+  - Deck or patio
+  - Porch
+  - Balcony
+  - Outdoor play area
+  - Garden
+- title: Fun
+  items:
+  - Game room with ping pong
+- title: Parking and access
+  items:
+  - Onsite parking
+locationNote: In Cherry Log, Fannin County, Georgia, a rural mountain area between Blue Ridge and Ellijay; no street address is given on the listing.
+distances:
+- 'Chattahoochee National Forest: about 1 minute on foot'
+- 'Blue Ridge Scenic Railway: about 18 minutes by car'
+- 'Blue Ridge Lake: about 24 minutes by car'
+- 'Amicalola Falls State Park: about 53 minutes by car'
+checkIn: 4:00 PM
+checkOut: 11:00 AM
+guestNotes:
+- A hot tub is not listed for this cabin.
+- Guests give it top marks from a small number of reviews; the page gives no detail beyond that.

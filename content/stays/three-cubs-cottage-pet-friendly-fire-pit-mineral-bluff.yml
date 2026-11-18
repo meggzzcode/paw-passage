@@ -1,0 +1,63 @@
+status: unverified
+name: Three Cubs Cottage, Fire Pit and Pool Table (Mineral Bluff)
+type: cabin
+state: georgia
+town: blue-ridge
+summary: Three-bedroom Mineral Bluff cabin for 8 with a fire pit and pool table; 2 dogs up to 50 lb each.
+description: A roomy three-bedroom cabin in the Ridgeline Vistas area of Mineral Bluff, a quieter corner of Fannin County west of downtown Blue Ridge. It sleeps eight across a queen, a king and a queen bunk, with three bathrooms. The Vrbo FAQ allows two dogs of up to 50 lb each. Outdoors there is a deck, a balcony and a barbecue grill, the title and guest comments point to a fire pit, and indoors there is a game room with a pool table. The page does not say whether the yard is fenced. We read this from the public Vrbo listing on 2026-11-18 and have not confirmed it with the host.
+sleeps: 8
+bedrooms: 3
+bathrooms: 3
+beds:
+- 'Bedroom 1: 1 queen bed'
+- 'Bedroom 2: 1 king bed'
+- 'Bedroom 3: 1 queen bunk bed'
+maxDogs: 2
+weightLimitLbs: 50
+largeDogsOk: not-confirmed
+fencedYard: not-confirmed
+privateOutdoor: not-confirmed
+petFee: not-confirmed
+breedRestrictions: not-confirmed
+houseRules:
+- 'Pets: "limit 2 total" dogs with a maximum weight of "up to 50 lbs per pet" (Vrbo listing).'
+- No pet fee, fence detail or breed rule is shown on the page.
+beach: false
+mountain: true
+hotTub: not-confirmed
+photoPermission: false
+sourceUrl: https://www.vrbo.com/4195368
+amenityGroups:
+- title: Kitchen and dining
+  items:
+  - Kitchen
+  - Dining area
+  - Refrigerator
+  - Barbecue grill
+- title: Comfort
+  items:
+  - Air conditioning
+  - Towels provided in all three bathrooms
+- title: Outdoors
+  items:
+  - Deck or patio
+  - Balcony
+  - Fire pit (named in the title; not in the amenity list)
+- title: Fun
+  items:
+  - Game room with pool table
+- title: Parking and access
+  items:
+  - Onsite parking
+locationNote: In the Ridgeline Vistas area of Mineral Bluff, Fannin County, Georgia, a rural mountain setting; no street address is given on the listing.
+distances:
+- 'Ocoee River: about 14 minutes by car'
+- 'Chattahoochee National Forest: about 16 minutes by car'
+- 'Rolling Thunder River Company: about 17 minutes by car'
+- 'Blue Ridge Lake: about 18 minutes by car'
+- 'Toccoa River Adventures: about 19 minutes by car'
+checkIn: 4:00 PM
+checkOut: 11:00 AM
+guestNotes:
+- The listing has few reviews so far, all positive; the page gives no more detail than that.
+- The hot tub, washer and dryer are not listed for this cabin.

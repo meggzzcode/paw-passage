@@ -1,0 +1,60 @@
+status: unverified
+name: Fenced Firepit Cottage with Views (Ellijay)
+type: cottage
+state: georgia
+town: ellijay
+summary: Two-bedroom cottage near Ellijay with a fully fenced firepit area; dogs allowed, limit 4.
+description: A small mountain cottage in rural Gilmer County for up to 4 guests, with one king bed in each of its two bedrooms and a single full bath. A photo caption on the Vrbo page says the firepit sits inside a fully fenced area, which is the clearest dog-yard statement we found. Dogs are allowed up to 4 in total and no weight limit is shown. Outdoors there is a patio, deck, porch, garden and barbecue grill, and the kitchen, washer and air conditioning are listed. The county fairgrounds are only minutes away. We read this from the public Vrbo listing on 2026-11-18 and have not confirmed it with the host.
+sleeps: 4
+bedrooms: 2
+bathrooms: 1
+beds:
+- 'Main bedroom: 1 king bed'
+- 'Guest bedroom: 1 king bed'
+maxDogs: 4
+weightLimitLbs: null
+largeDogsOk: not-confirmed
+fencedYard: full
+fenceNotes: A photo caption says the firepit sits "within a fully fenced area" (Vrbo listing); the page gives no fence height or material.
+privateOutdoor: not-confirmed
+petFee: not-confirmed
+breedRestrictions: not-confirmed
+houseRules:
+- 'Dogs: "limit of 4 total" (Vrbo listing); no maximum weight is shown.'
+- No pet fee, deposit or breed rule is shown on the page.
+beach: false
+mountain: true
+hotTub: not-confirmed
+photoPermission: false
+sourceUrl: https://www.vrbo.com/3106796
+amenityGroups:
+- title: Kitchen and dining
+  items:
+  - Kitchen
+  - Dining area
+  - Refrigerator
+  - Barbecue grill
+- title: Comfort
+  items:
+  - Air conditioning
+  - Washer
+- title: Outdoors
+  items:
+  - Patio and deck
+  - Porch
+  - Garden
+  - Outdoor play area
+- title: Parking and access
+  items:
+  - On-site parking
+locationNote: In a rural mountain area near Ellijay, Gilmer County, Georgia; the exact address is not given on the listing.
+distances:
+- 'Gilmer County Fairgrounds: about 4 minutes by car'
+- 'Chattahoochee National Forest: about 7 minutes by car'
+- 'Blue Ridge Scenic Railway: about 29 minutes by car'
+- 'Amicalola Falls State Park: about 32 minutes by car'
+- 'Blue Ridge Lake: about 35 minutes by car'
+checkIn: 4:00 PM
+checkOut: 10:00 AM
+guestNotes:
+- Guests give the cottage very high marks overall; this is a general paraphrase of reviews.

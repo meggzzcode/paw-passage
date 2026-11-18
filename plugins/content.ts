@@ -37,8 +37,8 @@ function dropNulls(v: unknown): unknown {
   return v;
 }
 
-function formatIssues(file: string, error: { issues: { path: (string | number)[]; message: string }[] }) {
-  return `\n\nContent problem in ${file}:\n` + error.issues.map((i) => `  - ${i.path.join(" > ") || "(file)"}: ${i.message}`).join("\n") + "\n";
+function formatIssues(file: string, error: { issues: readonly { path: readonly PropertyKey[]; message: string }[] }) {
+  return `\n\nContent problem in ${file}:\n` + error.issues.map((i) => `  - ${i.path.map(String).join(" > ") || "(file)"}: ${i.message}`).join("\n") + "\n";
 }
 
 /** During a build, leave an unfinished item out rather than letting its photo hold up everything else. */

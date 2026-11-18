@@ -143,3 +143,11 @@ Monthly, and before any sale, merge or large Pages CMS session. Record the date 
 ## 7. Other findings carried from audit 08
 
 Still open and outside WP8: zod and vite advisories (WP2/package files), draft preview links are public (low), unused dependencies. Nothing here changes them.
+
+## 6. Response headers on HTML pages and the frame-protection decision
+
+**Problem (LIVE-AUDIT D1, VERIFIED):** `netlify.toml` `[[headers]]` only applies to static files. Pages are rendered by the server function, so the three headers never reached HTML.
+
+**Fix (COMPLETED):** a TanStack Start request middleware (`src/lib/security-headers.ts`, registered first in `src/start.ts`) adds `Referrer-Policy: strict-origin-when-cross-origin` and `Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()` to every `text/html` response, including 404 and 500 pages, in dev and in production. Checked with a local node production build and `curl -I` on `/`, `/stays`, a guide and a 404. Google Analytics, the Pinterest save link and affiliate links are unaffected (neither header blocks outbound links or scripts; `strict-origin-when-cross-origin` still sends the origin to Vrbo and Amazon, which the affiliate programmes need).
+
+**Trade-off (DECISION):** `X-Frame-Options: SAMEORIGIN` is NOT sent on HTML. The Lovable editor shows the site in an iframe from a different origin, so the header would blank the preview. The cost is that another website can frame pages (clickjacking). Risk is low: there are no logins, forms that change state, payments or accounts. If the site is ever moved off Lovable previews, add `frame-ancestors 'self'` (or `X-Frame-Options: SAMEORIGIN`) to `HTML_SECURITY_HEADERS` in `src/lib/security-headers.ts`; for the Lovable preview use `frame-ancestors 'self' https://*.lovable.app https://*.lovable.dev https://*.lovableproject.com` (RECOMMENDED, not tested against the live editor).

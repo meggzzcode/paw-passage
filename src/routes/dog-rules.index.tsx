@@ -1,5 +1,4 @@
 import { createFileRoute, Link, useNavigate, stripSearchParams } from "@tanstack/react-router";
-import { zodValidator } from "@tanstack/zod-adapter";
 import { placeSearchSchema } from "@/lib/place-search";
 import { visiblePlaces, filterPlaces, placeKindLabels, defaultPlaceFilters } from "@/content/places";
 import { destinations } from "@/content/destinations";
@@ -10,7 +9,7 @@ import { hasPlaces } from "@/lib/launch";
 import { trackTool, trackToolOnce } from "@/lib/analytics";
 
 export const Route = createFileRoute("/dog-rules/")({
-  validateSearch: zodValidator(placeSearchSchema),
+  validateSearch: placeSearchSchema,
   // Keep /dog-rules clean: drop params that equal their defaults so the bare URL is not redirected.
   search: { middlewares: [stripSearchParams(placeSearchSchema.parse({}))] },
   head: ({ match }) => {

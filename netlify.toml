@@ -20,12 +20,13 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
-# Basic security headers on every page. There is deliberately no Content-Security-Policy yet: Google Analytics,
-# Pinterest and the affiliate links would all need testing first (see docs/recovery/08-security-infrastructure.md).
+# Security headers for static files. This block does NOT reach HTML pages: they are rendered by the server function, which
+# sends Referrer-Policy and Permissions-Policy itself (src/lib/security-headers.ts, wired in src/start.ts).
+# X-Frame-Options is not sent on pages because the Lovable editor previews the site in an iframe; see
+# docs/SECURITY-AND-RECOVERY.md section 6. There is deliberately no Content-Security-Policy yet (see docs/recovery/08-security-infrastructure.md).
 [[headers]]
   for = "/*"
   [headers.values]
-    X-Frame-Options = "SAMEORIGIN"
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
 

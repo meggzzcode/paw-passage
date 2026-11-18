@@ -1,0 +1,64 @@
+status: unverified
+name: Cherry Lake Log Cabin, Fenced Yard, Up to 4 Dogs (Blue Ridge)
+type: cabin
+state: georgia
+town: blue-ridge
+summary: Two-bedroom log cabin near Cherry Lake that takes up to 4 dogs with no weight cap; fenced yard and hot tub.
+description: A log cabin in the Cherry Lake area outside Blue Ridge, set up for groups with several dogs. Two king bedrooms plus a futon and two twin beds in the living area sleep six, with two bathrooms. The Vrbo FAQ allows up to four dogs and sets the per-pet weight cap at 999 lb, which in practice means no size limit. The listing title promotes a fenced yard and no pet fee, and the amenity list adds a hot tub, a balcony, a grill, an outdoor play area and a game room. The national forest is a short walk away. We read this from the public Vrbo listing on 2026-11-18 and have not confirmed it with the host.
+sleeps: 6
+bedrooms: 2
+bathrooms: 2
+beds:
+- 'Bedroom 1: 1 king bed'
+- 'Bedroom 2: 1 king bed'
+- 'Living room: 1 double futon and 2 twin beds'
+maxDogs: 4
+weightLimitLbs: 999
+largeDogsOk: 'yes'
+fencedYard: full
+fenceNotes: The listing title says "Fenced Yard" and a photo caption says dog friendly with a fenced yard; fence size, height and material are not stated.
+privateOutdoor: 'yes'
+petFee: none
+breedRestrictions: not-confirmed
+houseRules:
+- 'Pets: "limit 4 total" dogs, maximum weight "999 lbs per pet" (Vrbo listing).'
+- The listing title says "No Pet Fee"; the page shows no fee details, so confirm before booking.
+- No breed rule is shown on the page.
+beach: false
+mountain: true
+hotTub: 'yes'
+photoPermission: false
+sourceUrl: https://www.vrbo.com/3320896
+amenityGroups:
+- title: Comfort
+  items:
+  - Hot tub on site
+  - Air conditioning
+- title: Kitchen and dining
+  items:
+  - Barbecue grill
+- title: Outdoors
+  items:
+  - Deck or patio
+  - Porch
+  - Balcony
+  - Outdoor play area
+  - Garden
+- title: Fun
+  items:
+  - Game room with foosball
+  - Toys
+- title: Parking and access
+  items:
+  - Onsite parking
+locationNote: In the Cherry Lake neighborhood near Blue Ridge, Georgia; the page lists it under Gilmer County and gives no street address.
+distances:
+- 'Chattahoochee National Forest: about 1 minute on foot'
+- 'Blue Ridge Scenic Railway: about 17 minutes by car'
+- 'Blue Ridge Lake: about 24 minutes by car'
+- 'Amicalola Falls State Park: about 47 minutes by car'
+checkIn: 4:00 PM
+checkOut: 10:00 AM
+guestNotes:
+- Guests describe a well-liked stay with mountain views and a good setting for dogs; this is guest opinion, not a host statement.
+- A fire pit appears in a photo caption and reviews but not in the amenity list.

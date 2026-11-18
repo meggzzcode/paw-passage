@@ -1,0 +1,62 @@
+status: unverified
+name: Pacific Beach Townhouse near the Beach Park (Dog Friendly)
+type: vacation-home
+state: california
+town: san-diego
+summary: Three-bedroom Pacific Beach townhouse with garage and shared spa; 2 dogs up to 50 lb each listed.
+description: A three-bedroom Pacific Beach townhouse in San Diego, advertised as half a block from a beach park near Mission Bay. The listing shows six beds including a loft with a queen bed and a sofa bed, and the page gives both sleeps 8 and a six-bed title. The Vrbo FAQ allows 2 dogs, each up to 50 lb; the pet fee and fence status are not readable. Amenities include a balcony, a shared spa, barbecue grill, air conditioning and a garage. The bay and its sandy shoreline are a short walk away, with the ocean beaches a few minutes by car. We read this from the public Vrbo listing on 2026-11-18 and have not confirmed it with the host.
+sleeps: 8
+bedrooms: 3
+bathrooms: 2
+beds:
+- 'Master bedroom: 1 queen bed'
+- 'Bedroom 2: 1 double bed'
+- 'Loft bedroom: 1 queen bed and 1 double sofa bed'
+- 'Living room: 1 double sofa bed'
+- 'Office: 1 twin futon'
+maxDogs: 2
+weightLimitLbs: 50
+largeDogsOk: not-confirmed
+fencedYard: not-confirmed
+privateOutdoor: not-confirmed
+petFee: not-confirmed
+breedRestrictions: not-confirmed
+houseRules:
+- 'Pets: dogs allowed, "limit 2 total", maximum 50 lbs per pet (Vrbo listing).'
+- The pet fee and fence were not readable on the page.
+beach: true
+mountain: false
+hotTub: 'yes'
+photoPermission: false
+sourceUrl: https://www.vrbo.com/3042489
+amenityGroups:
+- title: Kitchen and dining
+  items:
+  - Refrigerator
+  - Barbecue grill
+  - Dining area
+  - Ice maker
+- title: Comfort
+  items:
+  - Air conditioning
+  - Shared spa (hot tub on site)
+  - Smart TV
+- title: Outdoors
+  items:
+  - Balcony
+  - Deck or patio
+- title: Parking and access
+  items:
+  - Onsite parking
+  - Garage
+locationNote: In Pacific Beach, San Diego, California, near Mission Bay; the exact address is not given on the listing.
+distances:
+- 'Mission Bay: about 7 minutes on foot'
+- 'Sail Bay: about 7 minutes on foot'
+- 'Crown Point Shores: about 8 minutes on foot'
+- 'Mission and Pacific Beaches: about 5 minutes by car'
+- 'Mission Beach: about 6 minutes by car'
+checkIn: 4:00 PM
+checkOut: 11:00 AM
+accessNotes:
+- The listing describes the spa as shared; the page does not say whether pets may use shared areas, so confirm with the host.

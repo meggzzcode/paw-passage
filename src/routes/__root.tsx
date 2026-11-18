@@ -78,8 +78,8 @@ function ErrorComponent({ error, reset }: ErrorComponentProps) {
 }
 
 /** True when the matched routes include one that resolved to "not found" (an unknown URL, or a stay/guide slug that does not exist). */
-export function isNotFoundLane(matches: ReadonlyArray<{ status?: string; globalNotFound?: boolean }> | undefined): boolean {
-  return !!matches?.some((m) => m.status === "notFound" || m.globalNotFound === true);
+export function isNotFoundLane(matches: ReadonlyArray<{ status?: string; globalNotFound?: boolean; _notFound?: unknown }> | undefined): boolean {
+  return !!matches?.some((m) => m.status === "notFound" || m.globalNotFound === true || !!m._notFound);
 }
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({

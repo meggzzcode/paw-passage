@@ -1,0 +1,60 @@
+status: unverified
+name: Lovely 1920's Farmhouse, Family and Pet Friendly (Mendocino)
+type: vacation-home
+state: california
+town: mendocino
+summary: Three-bedroom farmhouse near Mendocino Headlands with a garden; Vrbo FAQ allows 2 dogs.
+description: A three-bedroom farmhouse in a rural pocket of Mendocino that sleeps 6 across two queen beds and a double, with a crib on the list, and one bathroom. The listing shows a deck or patio, porch, garden, outdoor play area, kitchen, dining area, barbecue grill, washer and onsite parking, and puts both Mendocino Headlands and Van Damme state parks about an eight-minute walk away. The Vrbo FAQ allows 2 dogs in total; it states no weight limit or pet fee, and the listing itself does not say the yard is fenced. We read this from the public Vrbo listing on 2026-11-18 and have not confirmed it with the host.
+sleeps: 6
+bedrooms: 3
+bathrooms: 1
+beds:
+- 'Bedroom 1: 1 queen bed'
+- 'Bedroom 2: 1 queen bed and 1 crib'
+- 'Bedroom 3: 1 double bed'
+maxDogs: 2
+largeDogsOk: not-confirmed
+fencedYard: not-confirmed
+fenceNotes: The listing shows a garden and an outdoor play area but does not say whether either is fenced; reviews are said to mention a fence, which is guest opinion and not confirmed here.
+privateOutdoor: not-confirmed
+petFee: not-confirmed
+breedRestrictions: not-confirmed
+houseRules:
+- 'Pets: "limit 2 total" dogs (Vrbo listing FAQ).'
+- No weight limit, pet fee, breed rule or house-rules section was readable on the page.
+beach: false
+mountain: false
+hotTub: not-confirmed
+photoPermission: false
+sourceUrl: https://www.vrbo.com/889523
+amenityGroups:
+- title: Kitchen and dining
+  items:
+  - Kitchen
+  - Dining area
+  - Refrigerator
+  - Barbecue grill
+- title: Comfort
+  items:
+  - Washer
+  - Internet
+- title: Outdoors
+  items:
+  - Deck or patio
+  - Porch
+  - Garden
+  - Outdoor play area
+- title: Parking and access
+  items:
+  - Onsite parking
+locationNote: In a rural part of Mendocino, Mendocino County, California, a short walk from Mendocino Headlands State Park; the exact address is not given on the listing.
+distances:
+- 'Mendocino Headlands State Park: about 8 minutes on foot'
+- 'Van Damme State Park: about 8 minutes on foot'
+- 'Russian Gulch State Park: about 12 minutes by car'
+- 'Skunk Train: about 28 minutes by car'
+- 'Glass Beach: about 33 minutes by car'
+checkIn: 3:00 PM
+checkOut: 11:00 AM
+guestNotes:
+- Reviews are generally very positive and mention the setting near the headlands; this is guest opinion, not a host statement.

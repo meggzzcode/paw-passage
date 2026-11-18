@@ -1,0 +1,56 @@
+status: unverified
+name: Azure Springs Mountain Retreat (Dahlonega)
+type: cabin
+state: georgia
+town: dahlonega
+summary: Four-bedroom Dahlonega cabin with a game room; 1 dog up to 50 lb listed.
+description: A four-bedroom cabin in Lumpkin County, Georgia, that sleeps 8, with a king, two queens and a twin bunk bed, three full bathrooms and a half bath. The Vrbo FAQ allows a single dog of up to 50 lb, so it suits one mid-sized or large-ish dog rather than a pack. The amenity list shows a patio, a barbecue grill, a game room, a kitchenette and air conditioning, plus an outdoor play area. The page does not show a pet fee, fence or hot tub. We read this from the public Vrbo listing on 2026-11-18 and have not confirmed it with the host.
+sleeps: 8
+bedrooms: 4
+bathrooms: 3.5
+beds:
+- 'Primary bedroom: 1 king bed'
+- 'Upstairs bedroom: 1 queen bed'
+- 'Upstairs bedroom: 1 queen bed'
+- 'Basement living room: 1 twin bunk bed'
+amenityGroups:
+- title: Kitchen and dining
+  items:
+  - Kitchen
+  - Kitchenette
+  - Barbecue grill
+- title: Comfort and fun
+  items:
+  - Air conditioning
+  - Arcade or game room
+- title: Outdoors
+  items:
+  - Deck or patio
+  - Outdoor play area
+- title: Parking and access
+  items:
+  - Onsite parking
+locationNote: In Dahlonega, Lumpkin County, Georgia, described as a secluded mountain setting; the exact address is not given on the listing.
+distances:
+- 'Chestatee Wildlife Preserve and Zoo: about 6 minutes by car'
+- 'Consolidated Gold Mine: about 11 minutes by car'
+- 'Dahlonega Gold Museum State Historic Site: about 12 minutes by car'
+checkIn: 4:00 PM
+checkOut: 11:00 AM
+guestNotes:
+- The listing is pitched at families; that is the listing's own framing.
+maxDogs: 1
+weightLimitLbs: 50
+largeDogsOk: not-confirmed
+fencedYard: not-confirmed
+privateOutdoor: not-confirmed
+petFee: not-confirmed
+breedRestrictions: not-confirmed
+houseRules:
+- 'Dogs: "limit 1 total" with a maximum weight of "up to 50 lbs per pet" (Vrbo listing).'
+- Pet fee, fence and house rules were not readable on the page we read.
+beach: false
+mountain: true
+hotTub: not-confirmed
+photoPermission: false
+sourceUrl: https://www.vrbo.com/4242052

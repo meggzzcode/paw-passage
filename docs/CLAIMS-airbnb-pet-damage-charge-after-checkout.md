@@ -59,3 +59,16 @@ URLs: A1415 = https://www.airbnb.com/help/article/1415; A3591 = https://www.airb
 | 51 | Opening: Resolution Center request or Vrbo card charge after stay can follow | Intro | VCARD; A1415 | SEEN | 1 | n/a |
 | 52 | Front matter FAQs repeat rows 1-5, 7, 10, 25, 33, 39 | FAQs | as above | SEEN | 1 | n/a |
 | 53 | Hosts in 2 threads: waived sub-$100 claim after guest declined (same thread as row 24) | Claim size | see row 24 | SEEN, anecdote | 2 | n/a |
+
+## Fact-check corrections (2026-11-18, independent pass)
+
+- Row 14: Hometime says the guest has "up to three days (72 hours) to make payment" and the host can "involve Airbnb Support within 30 days of damage occurrence" (after the guest does not comply). Article reworded; status PARTIAL for the original wording.
+- Row 23: only 2 threads (not 3+), so the article label changed from "What most people say" to "Unknown (hosts disagree)"; level 3.
+- Rows 24 and 53: BiggerPockets host did not file a claim; guests "didn't offer" to pay and host waived under-$100 extra cleaning. Article reworded (not "declined").
+- Row 28: the myvacationhaven.com page names My Vacation Haven (Miramar Beach, FL), not Resort Realty. Article, sources and table corrected.
+- Row 40: bank denied the chargeback at least four times per the page; article now says "repeatedly".
+- Row 41: page says guest had not followed Airbnb's dispute steps; it does not state that as the reason the chargeback failed. Reworded.
+- Row 45: Airbnb page 3623 says a service animal's damage can still be requested under AirCover; article updated, ESA handling remains unconfirmed.
+- Row 46: only the 2021 thread is cited; "2019 and 2021" changed to 2021.
+- Rows 32, 36, 38: tallies of 22 include items seen only as snippets (dossier items 16 to 21); article wording no longer says all 22 were read.
+- Surf or Sound location changed from "Outer Banks" to Hatteras Island, NC (its own site).

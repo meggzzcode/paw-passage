@@ -9,7 +9,7 @@ status: draft
 author: Paws & Passage Editors
 publishedOn: 2026-11-18
 lastReviewed: 2026-11-18
-readingMinutes: 11
+readingMinutes: 12
 heroImage: guide-cabin-packing
 faqs:
   - q: Can I take my senior dog to a vacation rental?
@@ -65,7 +65,7 @@ sources:
     publisher: American Kennel Club
     accessedOn: 2026-11-18
   - title: Understanding Behavioral Changes in Senior Dogs
-    url: https://content.dogagingproject.org/understanding-behavioral-changes-in-senior-dogs/
+    url: https://dogagingproject.org/understanding-behavioral-changes-in-senior-dogs/
     publisher: Dog Aging Project
     accessedOn: 2026-11-18
   - title: Recognizing Behavioral Changes in Senior Dogs
@@ -163,7 +163,7 @@ research:
   researchComplete: true
 ---
 
-You booked the cabin with the view, and then you saw the photo of the staircase to the only bedroom. Your fourteen-year-old dog hesitates at two steps at home. Most senior-dog travel advice talks about the car; this guide is about the rental, because a place you cannot change is where an older dog's trip is won or lost.
+You booked the cabin with the view, and then you saw the photo of the staircase to the only bedroom. Your fourteen-year-old dog hesitates at two steps at home. Much senior-dog travel advice talks about the car; this guide is about the rental, because a place you cannot change is where an older dog's trip is won or lost.
 
 This is general information, not veterinary advice. Rules vary by place and host.
 
@@ -193,7 +193,7 @@ Forum threads show the dilemma, but they are anecdotes, not evidence. One owner 
 Check six things: stairs and floors, thresholds, the route from parking to the door, bed and couch height, steps to the yard, and quiet. A listing rarely states all of these, so the answer is usually photos and a message to the host, not the listing text.
 
 - [ ] **Stairs.** Where is the bedroom, and how many flights between the entrance, the bedroom and the bathroom?
-- [ ] **Floors.** Bare wood, tile or laminate give less grip than carpet. Dog Aging Project says to limit an older dog's access to slippery hard floors. [[3]](https://dogagingproject.org/mobility-tips-and-tricks-for-senior-dogs)
+- [ ] **Floors.** Hardwood and tile can be slippery for an older dog. Dog Aging Project says to limit an older dog's access to slippery hard floors, and Banfield suggests non-slip rugs or yoga mats on them. [[3]](https://dogagingproject.org/mobility-tips-and-tricks-for-senior-dogs) [[4]](https://www.banfield.com/Senior-hub/care-for-older-pets/senior-proof-your-home)
 - [ ] **Thresholds and door sills** at the entrance and to the yard.
 - [ ] **Route from where you park to the door.** Steps, curbs, a slope.
 - [ ] **Bed and couch height.** Cornell lists trouble getting onto couches as a sign, and suggests ramps for beds, couches or cars. [[6]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/osteoarthritis)
@@ -208,7 +208,7 @@ Important caveat: these are built for human guests. Whether they describe what i
 
 ## What should you ask the host?
 
-Ask for specific photos and written answers before you pay. Hosts are used to being asked; the point is that a vague "is it accessible?" gets a vague answer, while "send a photo of the steps from the driveway" gets a fact.
+Ask for specific photos and written answers before you pay. The point is that a vague "is it accessible?" gets a vague answer, while "send a photo of the steps from the driveway" gets a fact.
 
 Photos to request:
 
@@ -260,7 +260,7 @@ A practical approach: decide how many minutes you would accept, then check on a 
 
 ## What should you pack and carry?
 
-ASPCA says to carry a copy of medical records if your dog's history is complicated, to use a collar with ID plus a microchip, and to check for an interstate health certificate. [[11]](https://www.aspca.org/news/traveling-your-pets-dos-and-donts) We could not read AVMA's travel page, so we are not stating certificate time windows; ask your vet and the destination state.
+ASPCA says to carry a copy of medical records if your dog's history is complicated, to put visible ID on the collar and consider a microchip, and to check for an interstate health certificate. [[11]](https://www.aspca.org/news/traveling-your-pets-dos-and-donts) We could not read AVMA's travel page, so we are not stating certificate time windows; ask your vet and the destination state.
 
 - [ ] Records, and a medication list written by your vet
 - [ ] Medications, with extra in case the return is delayed
@@ -274,7 +274,7 @@ ASPCA says to carry a copy of medical records if your dog's history is complicat
 
 We found no vet source that gives a stop interval. Some forum replies and commercial blogs give numbers, but we could not trace them to a vet, so we are not repeating them. Ask your vet what suits your dog and watch your dog for discomfort.
 
-**What most people do (level 2, small sample).** We read nine forum threads and owner posts, mostly UK and mostly not about rentals. Five of the nine (three forum threads and two owner posts) mention frequent stops or a slower pace, and three mention shade or heat as a constraint. The threads disagree on the details, and none gives an interval a vet backs, so treat this as a description of what owners say, not advice. The interval itself stays unknown: ask your vet.
+**What most people do (level 2, small sample).** We read nine forum threads and owner posts, mostly UK and mostly not about rentals. Three of the nine (one forum thread and two owner posts) mention frequent stops or a slower pace, and three mention shade or heat as a constraint. The threads disagree on the details, and none gives an interval a vet backs, so treat this as a description of what owners say, not advice. The interval itself stays unknown: ask your vet.
 
 On heat, we found no vet threshold either. ASPCA says never to leave a pet in a parked car. [[11]](https://www.aspca.org/news/traveling-your-pets-dos-and-donts) Some forum replies say a short wait is fine when it is cool; that is anecdote, and the ASPCA line is the safer one for an older dog. Plan stops where someone can stay with your dog, and see our [car safety guide](/guides/dog-car-safety-harness-and-crate-guide). Anything to calm your dog for the drive is a question for your vet.
 
@@ -282,10 +282,10 @@ On heat, we found no vet threshold either. ASPCA says never to leave a pet in a 
 
 Ask your vet before booking if your dog shows any sign below, and again if it appears during the trip. We do not give medical advice here; this list is a prompt to call.
 
-- **Joint signs.** Banfield and Cornell list stiffness, trouble rising, hesitation on stairs and difficulty getting onto couches or beds, and Banfield says not to dismiss them as just old age. [[5]](https://www.banfield.com/Senior-hub/common-health-issues-in-senior-pets/osteoarthritis-in-dogs-cats) [[6]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/osteoarthritis)
+- **Joint signs.** Banfield and Cornell list stiffness, trouble rising, hesitation on stairs and difficulty getting onto couches or other raised surfaces, and Banfield says not to dismiss them as just old age. [[5]](https://www.banfield.com/Senior-hub/common-health-issues-in-senior-pets/osteoarthritis-in-dogs-cats) [[6]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/osteoarthritis)
 - **Behavior changes.** ASPCA lists confusion, changes in sleep, activity or house training and says to report all changes to your vet. [[10]](https://www.aspca.org/pet-care/dog-care/common-dog-behavior-issues/behavior-problems-older-dogs) AKC says a full evaluation by your vet is imperative. [[9]](https://www.akc.org/expert-advice/health/recognizing-behavioral-changes-in-senior-dogs/)
-- **Do not assume dementia.** Dog Aging Project says pain, dental disease, sensory loss and other illness can cause behavior changes. [[8]](https://content.dogagingproject.org/understanding-behavioral-changes-in-senior-dogs/)
-- **Routine.** The same page says older dogs adjust to change less easily, so keep feeding, walks and bedtime as close to normal as you can. [[8]](https://content.dogagingproject.org/understanding-behavioral-changes-in-senior-dogs/)
+- **Do not assume dementia.** Dog Aging Project says pain, dental disease, sensory loss and other illness can cause behavior changes. [[8]](https://dogagingproject.org/understanding-behavioral-changes-in-senior-dogs/)
+- **Routine.** The same page says older dogs have a much tougher time with inconsistencies in routine and that a consistent routine is key; keeping feeding, walks and bedtime as close to normal as you can is our suggestion. [[8]](https://dogagingproject.org/understanding-behavioral-changes-in-senior-dogs/)
 
 ## What we could not confirm
 
@@ -294,12 +294,12 @@ Each item below says what we could not settle, what owners commonly do where we 
 | Question | Level | What we found | Check for yourself: who and what to ask |
 | --- | --- | --- | --- |
 | Minutes from an emergency vet | 3 | No source sets a distance; ASPCA says to save a local emergency hospital | Your vet: "How far from an emergency clinic is too far for my dog?" Then check the clinic's hours on a map |
-| Stop interval and heat limit | 3 | No vet source we read gives one. Five of nine items mention frequent stops, with no agreed number | Your vet: "How often should my dog stop on a drive, and what weather should we avoid?" |
+| Stop interval and heat limit | 3 | No vet source we read gives one. Three of nine items mention frequent stops, with no agreed number | Your vet: "How often should my dog stop on a drive, and what weather should we avoid?" |
 | Rugs or a ramp in a rental | 3 | No policy we read says. Two of nine items mention contacting hosts before booking, below our three-item bar | The host, in writing: "May we put a rubber-backed rug or small ramp down and bring our own bed?" |
 | Cost of an accident | 3 | One manager says unreported accidents are not covered; others are silent | The host or manager: "How are accidents by an older dog handled, and is a deposit involved?" |
 | Do Airbnb step-free filters suit a dog | 3 | Inference only | The host: "Can you send a photo of the entrance route and the steps?" |
 | Age cutoff, pre-trip vet timing | 3 | None found in sources we read | Your vet: "Is the trip suitable, and what check do you advise first?" |
-| Keeping routine and familiar items | 2 | Three of nine items did this, and Dog Aging Project says older dogs adjust to change less easily [[8]](https://content.dogagingproject.org/understanding-behavioral-changes-in-senior-dogs/) | Your vet, if your dog seems unsettled |
+| Keeping routine and familiar items | 3 | Two of nine items mention it, below our three-item bar; Dog Aging Project says older dogs have a much tougher time with inconsistent routines [[8]](https://dogagingproject.org/understanding-behavioral-changes-in-senior-dogs/) | Your vet, if your dog seems unsettled |
 | Parked car for a short stop | split | ASPCA says never; some forum replies say a short, cool wait is fine | Plan stops where someone stays with the dog |
 | Interstate health certificate | 3 | ASPCA says to check; we could not read AVMA's page for timing | Your vet and the destination state's agriculture or animal health office |
 

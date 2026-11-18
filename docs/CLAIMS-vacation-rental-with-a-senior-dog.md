@@ -41,14 +41,14 @@ Article: content/guides/vacation-rental-with-a-senior-dog.md (status: draft). Ch
 | 35 | ASPCA: never leave pet in parked car | Car | same as 31 | SEEN | 1 | "Never leave your pet in a parked car" |
 | 36 | Some forum replies say a short cool wait is fine | Car; confirm table | dossier items 3 and 4 (Mumsnet) | SEEN (anecdote) | 3 (split) | n/a |
 | 37 | No vet source gives stop interval or heat limit | Car; short answer | n/a | NOT CONFIRMED | 3 | n/a |
-| 38 | 5 of 9 items we read mention frequent stops or slower pace; 3 mention heat or shade | Car | dossier section 2 (items 2,3,4,8,9; 3,8,9) | SEEN | 2 (descriptive only) | n/a |
-| 39 | 3 of 9 items used familiar items or routine | Confirm table | dossier items 5,6,8 | SEEN | 2 | n/a |
+| 38 | 3 of 9 items we read mention frequent stops or slower pace (items 2, 8, 9; re-read in fact-check, items 3 and 4 do not); 3 mention heat or shade (3, 8, 9) | Car | dossier section 2 | SEEN | 2 (descriptive only) | n/a |
+| 39 | 2 of 9 items mention familiar items or routine (5, 8; item 6 does not) | Confirm table | dossier items 5,8 | SEEN | 3 (below 3-item bar) | n/a |
 | 40 | 2 of 9 mention contacting hosts before booking | Confirm table | dossier items 2,8 | SEEN | 3 | n/a |
 | 41 | Sample is 9 items, mostly UK, mostly not rentals, Reddit unreadable | Confirm section | n/a | dossier | 3 | n/a |
 | 42 | ASPCA older-dog page: report all behavior changes to vet; lists confusion, sleep, activity, house training | When to ask vet | https://www.aspca.org/pet-care/dog-care/common-dog-behavior-issues/behavior-problems-older-dogs | SEEN | 1 | "Be sure to report all changes you see to your dog's veterinarian" |
 | 43 | AKC: full evaluation by vet imperative | When to ask vet | https://www.akc.org/expert-advice/health/recognizing-behavioral-changes-in-senior-dogs/ | SEEN | 1 | "imperative to get a full and accurate evaluation by your veterinarian" |
-| 44 | DAP: pain, dental disease, sensory loss, other illness can cause behavior changes | When to ask vet | https://content.dogagingproject.org/understanding-behavioral-changes-in-senior-dogs/ | SEEN | 1 | "can all cause behavior changes" |
-| 45 | DAP: older dogs adjust to change less easily; keep routine | When to ask vet; confirm table | same as 44 | SEEN | 1 | "older dogs adjust to change less easily" |
+| 44 | DAP: pain, dental disease, sensory loss, other illness can cause behavior changes | When to ask vet | https://dogagingproject.org/understanding-behavioral-changes-in-senior-dogs/ | SEEN | 1 | "Pain from arthritis, mobility issues, or dental disease can cause behavioral changes" |
+| 45 | DAP: older dogs adjust to change less easily; keep routine | When to ask vet; confirm table | same as 44 | SEEN | 1 | "older dogs have a much tougher time" (page says maintaining a consistent routine is key) |
 | 46 | No age cutoff found | Short answer; Can you take | n/a | NOT CONFIRMED | 3 | n/a |
 | 47 | Vet-first decision table rows | Can you take | cites 7 | inference | 3 | n/a |
 

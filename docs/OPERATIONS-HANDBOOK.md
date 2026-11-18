@@ -2,7 +2,7 @@
 
 Written 2026-11-18. This pulls together what a new owner needs to run Paws & Passage. It points to the detailed documents instead of repeating them. Nothing here is a promise of income, and no figure is invented: where a number is not known, it says so.
 
-Related: `BUYER_HANDOVER.md` (what you are buying), `docs/DNS-AND-TRANSFER.md` (domain and email steps), `docs/OPERATIONS-RECORD.md` (account register), `docs/AFFILIATE-AND-SELLING.md`, `docs/SALE-READINESS.md`, and the audit reports in `docs/recovery/`.
+Related: `BUYER_HANDOVER.md` (what you are buying), `docs/DNS-AND-TRANSFER.md` (domain and email steps), `docs/OPERATIONS-RECORD.md` (account register), `docs/AFFILIATE-AND-SELLING.md`, `docs/SALE-READINESS.md`, and the audit reports in `docs/recovery/`. Verified costs, the owner's action list, email, security, restore steps and the Netlify badge are in `docs/COSTS-AND-ACCOUNTS.md`, `docs/EMAIL-AND-TRANSFER.md`, `docs/SECURITY-AND-RECOVERY.md` and `docs/NETLIFY-BADGE.md` (read 2026-11-18).
 
 ## 1. Architecture in one page
 
@@ -17,10 +17,10 @@ Related: `BUYER_HANDOVER.md` (what you are buying), `docs/DNS-AND-TRANSFER.md` (
 
 | Piece | Where | Notes |
 |---|---|---|
-| Website hosting | Netlify (free plan). Settings in `netlify.toml`. | Rebuilds automatically when GitHub changes. On the free plan you are **not emailed about failed builds** (see section 8, "A build failed"). Whether the free plan allows commercial use is **UNCONFIRMED**: read Netlify's current terms. |
+| Website hosting | Netlify (free plan). Settings in `netlify.toml`. | Rebuilds automatically when GitHub changes. On the free plan you are **not emailed about failed builds** (email alerts need Pro; see section 8). Netlify's agreement (updated 2026-11-04) and acceptable-use policy do **not** prohibit commercial use of the free tier, but Netlify may pause or remove a free site at any time. The free plan has **300 credits a month, hard limit; each production deploy costs 15** (see `docs/COSTS-AND-ACCOUNTS.md` section 1a). A "Powered by Netlify" badge may show: `docs/NETLIFY-BADGE.md`. |
 | Source code and content | GitHub repository `meggzzcode/paw-passage` (public), branch `main` is live | `main` is not protected; anything that can push (Pages CMS, Lovable app) writes straight to the live site. |
 | Domain | Namecheap, `pawsandpassage.com` (free domain privacy) | Bought 2026-11-17. Keep DNS at Namecheap; **never change the nameservers** (email records live there). |
-| Business email | Namecheap Private Email, "Launch" plan, 1 mailbox | Not moved by a normal domain transfer; see `docs/DNS-AND-TRANSFER.md`. |
+| Business email | Namecheap Private Email, "Launch" plan, 1 mailbox (`hello@pawsandpassage.com`, the only public address) | Not moved by a normal domain transfer. Verified options and do-not-do list: `docs/EMAIL-AND-TRANSFER.md`; DNS order: `docs/DNS-AND-TRANSFER.md`. Fees, downtime and password hand-over are still UNCONFIRMED (Namecheap's page is silent). |
 | Editor | Pages CMS (pagescms.org), signs in with GitHub, uses `.pages.yml` | A real sign-in and edit test has not been done by anyone yet (`BUYER_HANDOVER.md` section 5). |
 | Design tool (optional) | Lovable | Not needed to publish. See section 7 for the risk it adds. |
 
@@ -52,19 +52,21 @@ Rules that keep an account safe: use the link exactly as the program gives it, n
 
 ## 5. Monthly expenses
 
-Only costs that are evidenced are listed. Renewal prices have not been read from Namecheap.
+Prices read from official pages on 2026-11-18; full sources and the owner's action list are in `docs/COSTS-AND-ACCOUNTS.md`. Introductory and renewal prices are kept apart.
 
 | Item | Cost | Status |
 |---|---|---|
-| Domain `pawsandpassage.com` + Private Email "Launch" (1 mailbox), first term | $24.16 order total on 2026-11-17 (one order, both items) | Evidenced (`docs/OPERATIONS-RECORD.md`). Not a monthly figure: it covers the first term. |
-| Domain and email renewal price and date | UNCONFIRMED | Read it in Namecheap. |
-| Netlify | $0 (free plan) | Free plan limits apply; commercial-use terms UNCONFIRMED. Paid plan only needed for failure emails or password-protected previews. |
-| GitHub | $0 | Free plan. |
-| Pages CMS | $0 | Free per its site; no guarantee it stays free. |
-| Google Analytics 4 | $0 | Free. |
-| Lovable | Paid Pro plan (amount not seen) | **Not needed to publish.** Cancel or downgrade if unused. A new owner does not need it. |
+| Domain + Private Email "Launch", **first term** | $24.16 order total on 2026-11-17 (one order, both items) | Evidenced (`docs/OPERATIONS-RECORD.md`). Introductory: not the running cost. |
+| Domain `.com` **renewal** | $19.98 a year (from 2026-11-01; excludes the ICANN fee, amount not stated) | Namecheap notice: verified |
+| Private Email Launch (1 mailbox) | $14.88 a year as listed; that page does not say whether it is the renewal price | Listed price verified; "is the renewal" UNCONFIRMED: read the cart |
+| Renewal dates | UNCONFIRMED | Read them in Namecheap and record them |
+| Netlify | $0 (free plan): 300 credits a month hard limit, 15 credits per production deploy | Verified. Commercial use is not prohibited by the agreement or acceptable-use policy; Netlify may pause or remove a free site. Paid plans ($9 or $20 a month) only if credits run out or email alerts are wanted (Pro). |
+| GitHub | $0 (free plan, public repository) | Verified. Secret scanning is free on a public repo and paid on a private one. |
+| Pages CMS | $0 (no price shown on any official Pages CMS page; MIT-licensed, can be self-hosted) | UNCONFIRMED, no guarantee it stays free |
+| Google Analytics 4, Search Console, Bing | $0 | Free |
+| Lovable | Paid Pro plan (listed at $25 a month; amount actually billed not seen) | **Not needed to build, host or edit** (verified in the repo). Owner decides whether to downgrade. |
 | Affiliate networks, Stay22 | No cost evidenced | |
-| Total ongoing | **Unknown** beyond the first-term domain and mailbox | Fill in once Namecheap renewal prices are read. |
+| **Total ongoing, preferred model** | **$34.86 a year ($2.91 a month)** = 19.98 + 14.88, divided by 12 | Domain + one mailbox, everything else free. Add $300 a year if Lovable Pro is kept. |
 
 ## 6. Revenue tracking
 

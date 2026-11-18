@@ -2,7 +2,7 @@
 // No URL is typed by hand: manufacturerUrl = productUrl ?? (specSource.url unless it is a PDF), exactly what
 // productButton() used before. The legacy files stay in place as the baseline for src/test/gear-parity.test.ts.
 // Run: bun scripts/migrate-gear-to-yaml.ts
-import { readdirSync, writeFileSync } from "node:fs";
+import { existsSync, readdirSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { stringify } from "yaml";
 import type { Product } from "../src/content/gear";
@@ -37,6 +37,11 @@ const categories: Record<string, string[]> = {
 };
 
 const dir = join(import.meta.dir, "..", "src", "content", "gear");
+// content/products.yml is now the source of truth (it has many more products and fields than this one-off writes).
+if (existsSync(join(import.meta.dir, "..", "content", "products.yml")) && !process.argv.includes("--force")) {
+  console.error("content/products.yml already exists and is edited by hand now. Re-run with --force only to start over from src/content/gear/*.ts.");
+  process.exit(1);
+}
 const out: Record<string, unknown>[] = [];
 for (const f of readdirSync(dir).filter((n) => n.endsWith(".ts")).sort()) {
   const mod = (await import(join(dir, f))) as { products: Product[] };

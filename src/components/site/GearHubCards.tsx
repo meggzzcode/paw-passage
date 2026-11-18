@@ -1,8 +1,10 @@
-import { useLocation } from "@tanstack/react-router";
+import { Link, useLocation } from "@tanstack/react-router";
 import { AMAZON_DISCLOSURE } from "@/content/affiliates";
 import type { Product } from "@/content/gear";
-import { resolveProductLink } from "@/content/gear-links";
+import { relFor, resolveProductLink } from "@/content/gear-links";
 import { guidePickFor } from "@/content/gear-hub";
+import { getGuide } from "@/content/guides";
+import { isPublic } from "@/content/guides";
 import { trackProductClick } from "@/lib/analytics";
 
 /**
@@ -27,6 +29,7 @@ export function GearProductCard({ product }: { product: Product }) {
   const link = resolveProductLink(product);
   const featured = guidePickFor(product.id);
   const pick = featured?.pick;
+  const related = (product.relatedGuides ?? []).map((slug) => getGuide(slug)).filter((g): g is NonNullable<typeof g> => !!g && isPublic(g)).slice(0, 2);
   return (
     <li id={product.id} className="scroll-mt-24 rounded-xl border border-border bg-card p-6">
       {pick && <p className="eyebrow">{pick.bestFor}</p>}
@@ -36,6 +39,8 @@ export function GearProductCard({ product }: { product: Product }) {
       {pick && <p className="mt-3">{pick.whyItMadeTheList}</p>}
       <p className="mt-3 text-sm font-medium">What the maker states</p>
       <ul className="list-disc pl-5 text-sm">{product.keySpecs.map((s) => <li key={s}>{s}</li>)}</ul>
+      <p className="mt-3 text-sm font-medium">Maker's claims and independent testing</p>
+      <p className="text-sm text-muted-foreground">{product.manufacturerClaimsVsIndependentTesting ?? "none cited"}</p>
       {pick && (
         <>
           <p className="mt-3 text-sm font-medium">Check before you buy</p>
@@ -45,6 +50,9 @@ export function GearProductCard({ product }: { product: Product }) {
       <p className="mt-3 text-xs text-muted-foreground">
         Specs from <a className="underline" href={product.specSource.url} target="_blank" rel="noopener noreferrer">{product.specSource.title}</a> ({product.specSource.publisher}, accessed {product.specSource.accessedOn}). Last verified {product.lastVerified ?? product.specSource.accessedOn}. Sizes, models and availability change: confirm on the seller's page.
       </p>
+      {related.length > 0 && (
+        <p className="mt-3 text-sm">Read with it: {related.map((g, i) => <span key={g.slug}>{i > 0 && ", "}<Link to="/guides/$slug" params={{ slug: g.slug }} className="text-primary underline">{g.title}</Link></span>)}</p>
+      )}
       {link && (
         <div className="mt-4 flex flex-wrap items-center gap-3">
           <a
@@ -61,6 +69,9 @@ export function GearProductCard({ product }: { product: Product }) {
             {link.label}
           </a>
           {link.kind === "affiliate" && <span className="text-xs text-muted-foreground">Affiliate link</span>}
+          {product.alternativeRetailer && (
+            <span className="text-sm text-muted-foreground">Also at <a className="underline" href={product.alternativeRetailer.url} target="_blank" rel={relFor("retailer")}>{product.alternativeRetailer.name}</a></span>
+          )}
         </div>
       )}
     </li>

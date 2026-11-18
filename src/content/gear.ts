@@ -25,6 +25,17 @@ export interface Product {
   /** Plain (non-affiliate) retailer page, used only when there is no approved affiliate link and no maker page. */
   retailerUrl?: string;
   retailerName?: string;
+  /** Name of the affiliate program entry in content/affiliates.yml (reference only; never a URL). */
+  affiliateProgram?: string;
+  /** Plain second retailer shown as "Also at X". Never an affiliate link. */
+  alternativeRetailer?: { name: string; url: string };
+  /** Guide web addresses worth reading with this product. */
+  relatedGuides?: string[];
+  /** Why there is (or is no) photo: "none" = photo-less card. */
+  imageSource?: string;
+  imageRights?: "none" | "permitted" | "own";
+  /** Plain text. "none cited" unless a named independent tester is cited. */
+  manufacturerClaimsVsIndependentTesting?: string;
   /** Date (YYYY-MM-DD) the record was last read against its source page. */
   lastVerified?: string;
   /** false hides the product from guides, the packing tool and /gear while keeping the record. Default true. */
@@ -58,8 +69,20 @@ export const products: Product[] = records.map((r) => ({
   ...(r.manufacturerUrl ? { productUrl: r.manufacturerUrl } : {}),
   ...(r.retailerUrl ? { retailerUrl: r.retailerUrl } : {}),
   ...(r.retailerName ? { retailerName: r.retailerName } : {}),
-  ...(r.affiliateId ? { affiliateId: r.affiliateId } : {}),
+  // affiliateTrackingId is the name of the link entry in content/affiliates.yml, so productLinkId() finds it.
+  ...(r.affiliateTrackingId ? { affiliateId: r.affiliateTrackingId } : {}),
+  ...(r.affiliateProgram ? { affiliateProgram: r.affiliateProgram } : {}),
+  ...(r.alternativeRetailer ? { alternativeRetailer: r.alternativeRetailer } : {}),
+  relatedGuides: r.relatedGuides,
+  imageRights: r.imageRights,
+  ...(r.imageSource ? { imageSource: r.imageSource } : {}),
+  manufacturerClaimsVsIndependentTesting: r.manufacturerClaimsVsIndependentTesting,
 }));
+
+/** Products by id, for components that take ids from a guide's frontmatter. Unknown or inactive ids are skipped. */
+export function getProducts(ids: string[], list: Product[] = products): Product[] {
+  return ids.map((id) => getProduct(id, list)).filter((p): p is Product => !!p);
+}
 
 /** An inactive product is not found, so it drops out of guides, the packing tool and the hub. */
 export function getProduct(id: string, list: Product[] = products): Product | undefined {

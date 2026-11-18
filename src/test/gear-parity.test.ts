@@ -11,9 +11,10 @@ const legacy: Product[] = Object.values(modules).flatMap((m) => m.products ?? []
 const legacyOutbound = (p: Product) => p.productUrl ?? (/\.pdf(\?|#|$)/i.test(p.specSource.url) ? undefined : p.specSource.url);
 
 describe("products.yml parity with the legacy gear files", () => {
-  it("has the same 25 products", () => {
+  it("still has all 25 legacy products (new products have been added since)", () => {
     expect(legacy.length).toBe(25);
-    expect(products.map((p) => p.id).sort()).toEqual(legacy.map((p) => p.id).sort());
+    const ids = products.map((p) => p.id);
+    for (const old of legacy) expect(ids, old.id).toContain(old.id);
   });
   it("keeps every product's facts verbatim", () => {
     for (const old of legacy) {

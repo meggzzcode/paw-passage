@@ -1,8 +1,10 @@
 # Products shown in gear guides, the packing tool and /gear (Pages CMS: "Products").
 # No prices, ratings, commissions or "tested" claims belong here. Facts come from the maker's own page or an
-# independent standard; specSource records where. manufacturerUrl and retailerUrl are plain (non-affiliate) links.
-# affiliateId stays EMPTY unless content/affiliates.yml has an approved entry for this product: the product never
-# stores an affiliate URL. Generated once by scripts/migrate-gear-to-yaml.ts; edit freely from here.
+# independent standard; specSource records where. manufacturerUrl, retailerUrl and alternativeRetailer are plain
+# (non-affiliate) links. A product stores NO affiliate URL: affiliateProgram and affiliateTrackingId are names of
+# entries in content/affiliates.yml and stay EMPTY until that file has an approved entry. See
+# docs/recovery/AFFILIATE-SWAP-PROCEDURE.md. imageRights "none" means the card has no photo.
+# manufacturerClaimsVsIndependentTesting: "none cited" unless a named independent tester is cited.
 products:
   - id: sleepypod-clickit-range
     name: Clickit Range Crash-Tested Harness
@@ -11,6 +13,7 @@ products:
       - road-trips
       - travel-safety
       - large-dogs
+      - car-safety
     summary: A vest-style car harness that threads onto a rear-seat seat belt, listed by the maker for dogs from 18 to 110 lbs with Regular and Long fits.
     keySpecs:
       - Maker lists sizes Small to 2X-Large with Regular and Long fits; the CPS listing covers Small, Medium, Large and X-Large only (tested at 110 lbs, November 2024)
@@ -28,13 +31,23 @@ products:
     retailerName: ""
     lastVerified: 2026-11-16
     active: true
-    affiliateId: ""
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - dog-car-safety-harness-and-crate-guide
+    manufacturerClaimsVsIndependentTesting: Maker states a Center for Pet Safety rating. The CPS listing (tested November 2024, covering Small to X-Large) is recorded in the specs above.
   - id: saker-bomber-harness
     name: Bomber Harness
     brand: Saker Canine
     categories:
       - road-trips
       - travel-safety
+      - car-safety
     summary: A car-and-trail harness whose maker says the car seat belt passes directly through its top handle.
     keySpecs:
       - Sizes XS, S, M and L, listed by girth (XS 13 to 24.8 in; L 14.6 to 45.3 in) and neck range, with no weight limits on the maker's page
@@ -51,13 +64,23 @@ products:
     retailerName: ""
     lastVerified: 2026-11-18
     active: true
-    affiliateId: ""
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - dog-car-safety-harness-and-crate-guide
+    manufacturerClaimsVsIndependentTesting: The Center for Pet Safety lists it as passed (tested November 2022, 75 lb test dog); the specs above record this. The maker's own page does not mention CPS.
   - id: sleepypod-atom
     name: Atom Crash-Tested Carrier
     brand: Sleepypod
     categories:
       - road-trips
       - travel-safety
+      - car-safety
     summary: A soft, fold-flat carrier that for very small dogs that the maker says can be used as a car seat, with a safety tether inside.
     keySpecs:
       - Maker states it is rated to 12 lbs (5.5 kg) by the Center for Pet Safety
@@ -76,7 +99,16 @@ products:
     retailerName: ""
     lastVerified: 2026-11-16
     active: true
-    affiliateId: ""
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - dog-car-safety-harness-and-crate-guide
+    manufacturerClaimsVsIndependentTesting: Maker states it is rated to 12 lbs by the Center for Pet Safety; we have not read a CPS page for it.
   - id: gunner-g1-kennel
     name: G1 Kennel
     brand: GUNNER
@@ -84,6 +116,7 @@ products:
       - road-trips
       - travel-safety
       - large-dogs
+      - car-safety
     summary: A double-walled hard kennel with built-in tie-down pins, designed to be anchored in a vehicle with separately sold straps.
     keySpecs:
       - Small (up to 30 lbs), Medium (up to 45 lbs), Intermediate (up to 70 lbs) and Large (71+ lbs)
@@ -102,7 +135,17 @@ products:
     retailerName: ""
     lastVerified: 2026-11-16
     active: true
-    affiliateId: ""
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - dog-car-safety-harness-and-crate-guide
+      - vacation-rentals-that-welcome-large-dogs
+    manufacturerClaimsVsIndependentTesting: Maker states the Small, Medium and Intermediate sizes are crash tested per the Center for Pet Safety; the Large is not listed as certified. Not independently confirmed here.
   - id: lucky-duck-lucky-kennel
     name: Lucky Kennel
     brand: Lucky Duck
@@ -110,6 +153,7 @@ products:
       - road-trips
       - travel-safety
       - large-dogs
+      - car-safety
     summary: A hard-sided travel kennel with integrated tie-downs, sold in Medium, Intermediate and Large, with a ratchet strap kit sold separately.
     keySpecs:
       - Medium recommended for dogs under 50 lbs; Intermediate under 70 lbs; Large 70 to 110 lbs
@@ -129,13 +173,24 @@ products:
     retailerName: ""
     lastVerified: 2026-11-16
     active: true
-    affiliateId: ""
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - dog-car-safety-harness-and-crate-guide
+      - vacation-rentals-that-welcome-large-dogs
+    manufacturerClaimsVsIndependentTesting: Maker states it is crash-test rated by the Center for Pet Safety. Not independently confirmed here.
   - id: orvis-embossed-sherpa-throw
     name: Embossed Sherpa Throw
     brand: Orvis
     categories:
       - cabin-vacations
       - travel-comfort
+      - cleaning-and-rental-protection
     summary: A two-layer sherpa fleece throw, sold as a general throw rather than a fitted cover, that can be laid over a sofa or chair where the host allows dogs on it.
     keySpecs:
       - Size listed as 40 in x 40 in
@@ -152,13 +207,24 @@ products:
     retailerName: ""
     lastVerified: 2026-11-16
     active: true
-    affiliateId: ""
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - dog-friendly-cabin-packing-list
+      - airbnb-pet-damage-charge-after-checkout
+    manufacturerClaimsVsIndependentTesting: none cited
   - id: kurgo-loft-wander-dog-bed
     name: Loft Wander Dog Bed
     brand: Kurgo
     categories:
       - cabin-vacations
       - travel-comfort
+      - cleaning-and-rental-protection
     summary: A roll-up travel bed with a water-resistant ripstop top and a waterproof, non-slip bottom, meant to give a dog its own spot away from home.
     keySpecs:
       - "Medium open: 27 in x 36 in x 2 in, rolled up 12.5 in x 8 in; Large open: 36 in x 48 in x 3 in, rolled up 17 in x 9.5 in"
@@ -177,13 +243,24 @@ products:
     retailerName: ""
     lastVerified: 2026-11-16
     active: true
-    affiliateId: ""
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - dog-friendly-cabin-packing-list
+      - vacation-rental-with-a-senior-dog
+    manufacturerClaimsVsIndependentTesting: none cited
   - id: kurgo-heather-hammock
     name: Heather Hammock
     brand: Kurgo
     categories:
       - road-trips
       - travel-comfort
+      - cleaning-and-rental-protection
     summary: A bench-seat hammock cover with a center zipper that folds back to free half the seat for a human passenger.
     keySpecs:
       - "Size: 55 in wide x 56 in long; may not fit large trucks or SUVs"
@@ -203,7 +280,17 @@ products:
     retailerName: ""
     lastVerified: 2026-11-16
     active: true
-    affiliateId: ""
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - dog-car-safety-harness-and-crate-guide
+      - dog-friendly-cabin-packing-list
+    manufacturerClaimsVsIndependentTesting: none cited
   - id: amk-me-and-my-dog
     name: "Adventure Dog Medical Kit: Me & My Dog"
     brand: Adventure Medical Kits
@@ -226,7 +313,16 @@ products:
     retailerName: ""
     lastVerified: 2026-11-16
     active: true
-    affiliateId: ""
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - dog-travel-first-aid-kit-guide
+    manufacturerClaimsVsIndependentTesting: none cited
   - id: amk-trail-dog
     name: "Adventure Dog Medical Kit: Trail Dog"
     brand: Adventure Medical Kits
@@ -249,7 +345,16 @@ products:
     retailerName: ""
     lastVerified: 2026-11-16
     active: true
-    affiliateId: ""
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - dog-travel-first-aid-kit-guide
+    manufacturerClaimsVsIndependentTesting: none cited
   - id: kurgo-dog-first-aid-kit
     name: Dog First Aid Kit
     brand: Kurgo
@@ -272,7 +377,16 @@ products:
     retailerName: ""
     lastVerified: 2026-11-16
     active: true
-    affiliateId: ""
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - dog-travel-first-aid-kit-guide
+    manufacturerClaimsVsIndependentTesting: none cited
   - id: kurgo-rsg-dog-first-aid-kit
     name: RSG Dog First Aid Kit
     brand: Kurgo
@@ -295,7 +409,16 @@ products:
     retailerName: ""
     lastVerified: 2026-11-16
     active: true
-    affiliateId: ""
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - dog-travel-first-aid-kit-guide
+    manufacturerClaimsVsIndependentTesting: none cited
   - id: baskerville-ultra-muzzle
     name: Baskerville Ultra Muzzle
     brand: Company of Animals
@@ -318,7 +441,16 @@ products:
     retailerName: ""
     lastVerified: 2026-11-18
     active: true
-    affiliateId: ""
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - dog-travel-first-aid-kit-guide
+    manufacturerClaimsVsIndependentTesting: none cited
   - id: kurgo-collaps-a-bowl
     name: Collaps A Bowl
     brand: Kurgo
@@ -342,7 +474,17 @@ products:
     retailerName: ""
     lastVerified: 2026-11-16
     active: true
-    affiliateId: ""
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - dog-friendly-cabin-packing-list
+      - what-a-dog-really-costs-on-a-vacation-rental
+    manufacturerClaimsVsIndependentTesting: none cited
   - id: springland-22oz-original-travel-bottle
     name: 22oz Original Travel Dog Water Bottle
     brand: Springland (formerly Springer)
@@ -365,7 +507,17 @@ products:
     retailerName: ""
     lastVerified: 2026-11-16
     active: true
-    affiliateId: ""
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - dog-friendly-cabin-packing-list
+      - what-a-dog-really-costs-on-a-vacation-rental
+    manufacturerClaimsVsIndependentTesting: none cited
   - id: springland-20oz-flip-travel-bottle
     name: 20oz Flip Travel Dog Water Bottle
     brand: Springland (formerly Springer)
@@ -388,7 +540,17 @@ products:
     retailerName: ""
     lastVerified: 2026-11-16
     active: true
-    affiliateId: ""
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - dog-friendly-cabin-packing-list
+      - what-a-dog-really-costs-on-a-vacation-rental
+    manufacturerClaimsVsIndependentTesting: none cited
   - id: vittles-vault-travel-tainer
     name: Vittles Vault Travel-Tainer Portable Food Storage Container
     brand: Vittles Vault (Gamma2 / Petmate)
@@ -410,7 +572,17 @@ products:
     retailerName: ""
     lastVerified: 2026-11-16
     active: true
-    affiliateId: ""
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - dog-friendly-cabin-packing-list
+      - what-a-dog-really-costs-on-a-vacation-rental
+    manufacturerClaimsVsIndependentTesting: none cited
   - id: kurgo-kibble-carrier
     name: Kibble Carrier
     brand: Kurgo
@@ -433,7 +605,17 @@ products:
     retailerName: ""
     lastVerified: 2026-11-16
     active: true
-    affiliateId: ""
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - dog-friendly-cabin-packing-list
+      - what-a-dog-really-costs-on-a-vacation-rental
+    manufacturerClaimsVsIndependentTesting: none cited
   - id: akc-reunite-stainless-collar-tag
     name: AKC Reunite ID Tag or ID Collar
     brand: AKC Reunite
@@ -458,7 +640,16 @@ products:
     retailerName: ""
     lastVerified: 2026-11-16
     active: true
-    affiliateId: ""
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - if-your-dog-gets-loose-on-a-trip
+    manufacturerClaimsVsIndependentTesting: none cited
   - id: tractive-dog-6
     name: Tractive DOG 6
     brand: Tractive
@@ -483,7 +674,16 @@ products:
     retailerName: ""
     lastVerified: 2026-11-16
     active: true
-    affiliateId: ""
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - if-your-dog-gets-loose-on-a-trip
+    manufacturerClaimsVsIndependentTesting: none cited
   - id: tractive-dog-6-xl
     name: Tractive DOG 6 XL
     brand: Tractive
@@ -509,7 +709,16 @@ products:
     retailerName: ""
     lastVerified: 2026-11-16
     active: true
-    affiliateId: ""
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - if-your-dog-gets-loose-on-a-trip
+    manufacturerClaimsVsIndependentTesting: none cited
   - id: fi-series-3-plus
     name: Fi Series 3+
     brand: Fi
@@ -533,7 +742,16 @@ products:
     retailerName: ""
     lastVerified: 2026-11-16
     active: true
-    affiliateId: ""
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - if-your-dog-gets-loose-on-a-trip
+    manufacturerClaimsVsIndependentTesting: none cited
   - id: midwest-exercise-pen-with-door
     name: MidWest Exercise Pen with Door
     brand: MidWest Homes for Pets
@@ -558,7 +776,16 @@ products:
     retailerName: ""
     lastVerified: 2026-11-16
     active: true
-    affiliateId: ""
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - portable-dog-fence-and-playpen-guide-for-rentals
+    manufacturerClaimsVsIndependentTesting: none cited
   - id: north-states-petyard-passage-8-panel
     name: MyPet Petyard Passage 8-Panel
     brand: North States
@@ -585,7 +812,16 @@ products:
     retailerName: ""
     lastVerified: 2026-11-16
     active: true
-    affiliateId: ""
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - portable-dog-fence-and-playpen-guide-for-rentals
+    manufacturerClaimsVsIndependentTesting: none cited
   - id: carlson-convertible-pet-yard
     name: "Convertible Pet Yard (Model #2200)"
     brand: Carlson Pet Products
@@ -609,4 +845,1103 @@ products:
     retailerName: ""
     lastVerified: 2026-11-18
     active: true
-    affiliateId: ""
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - portable-dog-fence-and-playpen-guide-for-rentals
+    manufacturerClaimsVsIndependentTesting: none cited
+  - id: ruffwear-load-up-car-harness
+    name: Load Up Dog Car Harness
+    brand: Ruffwear
+    categories:
+      - car-safety
+      - road-trips
+    summary: A padded car harness with a seat belt loop that attaches to a vehicle's existing seat belts, described by the maker as crash tested.
+    keySpecs:
+      - "Sizes XXS to L/XL by girth: XXS 13-17 in, XS 17-22, S 22-27, M 27-32, L/XL 32-42 in; the page advises the smaller size between sizes"
+      - Shell 300D polyester ripstop with PU coating, PE foam padding, nylon webbing, forged anodized 6061 aluminum slide buckles
+      - Maker lists strength-rated metal hardware
+      - Maker states a seat belt loop attaches to existing seat belts
+      - No weight limits are stated on the page
+      - Hand wash, air dry
+    specSource:
+      title: Load Up Dog Car Harness
+      url: https://ruffwear.com/products/load-up-dog-car-harness
+      publisher: Ruffwear
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://ruffwear.com/products/load-up-dog-car-harness
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-18
+    active: true
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - dog-car-safety-harness-and-crate-guide
+    manufacturerClaimsVsIndependentTesting: Maker calls it crash tested. Ruffwear's separate testing page (https://ruffwear.ca/pages/load-up-car-harness-testing-design, read 2026-11-18) says MGA Research Corporation ran sled tests under FMVSS 213 conditions at a 30 mph pulse with 25, 45 and 75 lb dog mannequins, commissioned by Ruffwear. The same page says the harness has not been tested to the Center for Pet Safety protocol and would not meet CPS certification on excursion limits. It is not CPS certified.
+  - id: kurgo-enhanced-strength-tru-fit
+    name: Enhanced Strength Tru-Fit Dog Car Harness
+    brand: Kurgo
+    categories:
+      - car-safety
+      - road-trips
+    summary: A padded dog harness with a 10 in seat belt tether and steel carabiner, sold by the maker as crash tested.
+    keySpecs:
+      - "Size chart on the page: X-Small 5-10 lbs, Small 10-25, Medium 25-50, Large 50-80, X-Large 80-110 lbs; the size selector on the page lists only Small, Medium and Large"
+      - Includes a 10 in seat belt tether with an all-steel carabiner; steel nested buckles and hardware
+      - Five points of adjustment, padded chest plate, back and front leash attachments
+      - Maker states it is crash tested for dogs up to 75 lbs and does not mention Center for Pet Safety certification
+      - Machine washable per one line of the page; another line says gentle machine or hand wash, air dry
+    specSource:
+      title: Enhanced Strength Tru-Fit Dog Car Harness
+      url: https://www.kurgo.com/p/enhanced-strength-dog-car-harness/K01255
+      publisher: Kurgo
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://www.kurgo.com/p/enhanced-strength-dog-car-harness/K01255
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-18
+    active: true
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - dog-car-safety-harness-and-crate-guide
+    manufacturerClaimsVsIndependentTesting: Maker states it was tested at an unnamed university facility using the Federal Motor Vehicle Safety Standard for child restraint systems, with simulated dogs of 25 and 50 lb in the videos. The page does not name the university or any certification body. Treat as a manufacturer claim.
+  - id: kurgo-heather-booster-seat
+    name: Heather Dog Booster Seat
+    brand: Kurgo
+    categories:
+      - car-safety
+      - road-trips
+    summary: A raised booster seat for a bucket seat, with an integrated tether that attaches to a dog's harness, for dogs up to 30 lbs.
+    keySpecs:
+      - Maker states it is suitable for dogs up to 30 lbs
+      - Dimensions 12 D x 16 W x 8 H
+      - Waterproof, stain-resistant exterior with internal metal supports and a removable liner and pad
+      - Installs on any bucket seat; collapses for storage
+      - Liner and pad machine wash gentle, air dry; the outer seat is spot clean only
+      - Maker says to replace the booster seat after an accident
+      - Page does not claim the seat itself is crash tested; it recommends a separate crash-tested harness
+    specSource:
+      title: Heather Dog Booster Seat
+      url: https://www.kurgo.com/p/heather-dog-booster-seat/K01724
+      publisher: Kurgo
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://www.kurgo.com/p/heather-dog-booster-seat/K01724
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-18
+    active: true
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - dog-car-safety-harness-and-crate-guide
+      - puppy-at-a-vacation-rental
+    manufacturerClaimsVsIndependentTesting: none cited
+  - id: kurgo-rover-backseat-bridge
+    name: Rover Backseat Bridge
+    brand: Kurgo
+    categories:
+      - car-safety
+      - road-trips
+    summary: A backseat extender with a fold-down centre barrier that keeps a dog on the back seat.
+    keySpecs:
+      - Dimensions 16 in deep x 52 in wide x 1 in high
+      - Maker states it is not recommended for spaces greater than 13 in from the back of the seat to the seat edge
+      - Maker states the base holds up to 100 pounds
+      - Sides fold up for a human passenger; has a cup holder and a storage pocket
+      - Described as waterproof; the page does not name the materials
+      - Maker's only safety wording is that it is designed to prevent distracted driving
+    specSource:
+      title: Rover Backseat Bridge
+      url: https://www.kurgo.com/p/rover-backseat-bridge-backseat-extender/POG30-17768
+      publisher: Kurgo
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://www.kurgo.com/p/rover-backseat-bridge-backseat-extender/POG30-17768
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-18
+    active: true
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - dog-car-safety-harness-and-crate-guide
+    manufacturerClaimsVsIndependentTesting: none cited. The page names no testing body, and it is a barrier and seat extender, not a restraint.
+  - id: kurgo-backseat-barrier
+    name: Backseat Barrier
+    brand: Kurgo
+    categories:
+      - car-safety
+      - road-trips
+    summary: A cloth and mesh barrier that attaches to the backs of the front seats to keep a dog in the back.
+    keySpecs:
+      - Maker states it can be installed in cars with fixed or removable headrests
+      - Maker states it will not work with 2-door cars or mini vans
+      - Mesh panelling keeps the view open for the dog; includes a cup holder
+      - Integrated horizontal and vertical bars add structure so it will not collapse, per the maker
+      - Dimensions and fabrics are not stated on the page
+      - Maker's only safety wording is that it is designed to prevent distracted driving
+    specSource:
+      title: Backseat Barrier
+      url: https://www.kurgo.com/p/backseat-barrier/K00006
+      publisher: Kurgo
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://www.kurgo.com/p/backseat-barrier/K00006
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-18
+    active: true
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - dog-car-safety-harness-and-crate-guide
+    manufacturerClaimsVsIndependentTesting: none cited. No crash test or certification is claimed, and a barrier is not a restraint.
+  - id: petsafe-happy-ride-dog-barrier
+    name: Happy Ride Dog Barrier
+    brand: PetSafe
+    categories:
+      - car-safety
+      - road-trips
+    summary: An adjustable tension-fit metal barrier for a car or SUV backseat or cargo area.
+    keySpecs:
+      - Product dimensions 2.4 x 57.0 x 49.0 in; adjusts from 32-49 in wide and 33-57 in high
+      - Sturdy metal frame with rubberized caps; held in place by tension, no tools needed
+      - Maker lists a rattle-free design and quick disassembly into an included pouch
+      - The page does not mention crash testing, certifications or a weight capacity
+    specSource:
+      title: Happy Ride Dog Barrier
+      url: https://www.petsafe.com/p/happy-ride-metal-dog-barrier/62409/
+      publisher: PetSafe
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://www.petsafe.com/p/happy-ride-metal-dog-barrier/62409/
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-18
+    active: true
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - dog-car-safety-harness-and-crate-guide
+    manufacturerClaimsVsIndependentTesting: none cited. The page makes no crash-test claim, and a barrier is not a restraint.
+  - id: petsafe-happy-ride-collapsible-crate
+    name: Happy Ride Collapsible Travel Crate
+    brand: PetSafe
+    categories:
+      - road-trips
+    summary: A soft-sided collapsible crate for the back seat, held by the headrest strap and seat belt, for pets up to 60 lb.
+    keySpecs:
+      - Maker says for pets up to 60 lb
+      - Product dimensions 27 x 19 x 28 in when fully expanded; maker notes it may not fit compact vehicles
+      - Two doors that fully unzip, two drawstring openings, two storage pockets
+      - Removable waterproof fleece cover; outer shell and cover machine washable, air dry
+      - Maker says a headrest strap and the vehicle seat belt keep the crate from moving
+      - Maker describes the dog as safely contained, not restrained; the page makes no crash-test claim
+    specSource:
+      title: Happy Ride Collapsible Travel Crate
+      url: https://www.petsafe.com/p/happy-ride-collapsible-travel-crate/ZTV00-17289/
+      publisher: PetSafe
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://www.petsafe.com/p/happy-ride-collapsible-travel-crate/ZTV00-17289/
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-18
+    active: true
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - dog-car-safety-harness-and-crate-guide
+    manufacturerClaimsVsIndependentTesting: "none cited. The page names no testing body and makes no crash-test claim: it is not shown to be crash tested."
+  - id: petsafe-happy-ride-folding-ramp
+    name: Happy Ride Folding Dog Ramp
+    brand: PetSafe
+    categories:
+      - senior-dogs
+      - large-dogs
+      - road-trips
+    summary: A folding ramp for loading a dog into a van, SUV or car.
+    keySpecs:
+      - Measures 62 in long x 16 in wide x 4 in high
+      - Weighs 10 lbs; maker says it is rated to support pets up to 150 lb
+      - Folds in half and locks with a safety latch; the folded size is not stated
+      - High-traction surface, side rails and rubber feet
+      - Page says it is designed for most van, SUV and car models; no vehicle height guidance is given
+      - Materials are not specified; the page does not describe it as a senior or mobility product
+    specSource:
+      title: Happy Ride Folding Dog Ramp
+      url: https://www.petsafe.com/p/happy-ride-folding-dog-ramp/62462/
+      publisher: PetSafe
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://www.petsafe.com/p/happy-ride-folding-dog-ramp/62462/
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-18
+    active: true
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - vacation-rental-with-a-senior-dog
+      - vacation-rentals-that-welcome-large-dogs
+    manufacturerClaimsVsIndependentTesting: none cited. The 150 lb rating is the maker's statement; no testing body is named.
+  - id: petsafe-happy-ride-extra-long-ramp
+    name: Happy Ride Extra Long Telescoping Dog Ramp
+    brand: PetSafe
+    categories:
+      - senior-dogs
+      - large-dogs
+      - road-trips
+    summary: An aluminium telescoping ramp that slides closed and locks for travel.
+    keySpecs:
+      - Extends from 47 to 87 in long, 20 in wide, 4 in high
+      - Weighs 18 lbs; made of aluminum
+      - Maker states it supports pets up to 300 lb and describes the rating as independently tested
+      - High-traction surface with side rails; slides closed and locks with a safety latch
+      - The page does not describe it as a senior or mobility product
+    specSource:
+      title: Happy Ride Extra Long Telescoping Dog Ramp
+      url: https://www.petsafe.com/p/happy-ride-extra-long-telescoping-dog-ramp/62320/
+      publisher: PetSafe
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://www.petsafe.com/p/happy-ride-extra-long-telescoping-dog-ramp/62320/
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-18
+    active: true
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - vacation-rental-with-a-senior-dog
+      - vacation-rentals-that-welcome-large-dogs
+    manufacturerClaimsVsIndependentTesting: Maker says the 300 lb rating was independently tested but names no tester. Treat as a manufacturer claim.
+  - id: petsafe-happy-ride-side-door-steps
+    name: Happy Ride Side Door Pet Steps
+    brand: PetSafe
+    categories:
+      - senior-dogs
+      - large-dogs
+      - road-trips
+    summary: Folding steps with side rails and three height settings for getting a dog into a vehicle through the side door.
+    keySpecs:
+      - Dimensions 44.9 x 18.2 x 8.0 in; weighs 13 lb
+      - Maker states it supports pets up to 200 lb
+      - Adjustable heights of 21.25, 24.75 and 28 in
+      - Textured steps, rubberized feet and side rails; folds for storage and has a built-in handle
+      - The page does not say how it attaches or what it is made of, and does not describe it as a senior product
+    specSource:
+      title: Happy Ride Side Door Pet Steps
+      url: https://www.petsafe.com/p/happy-ride-side-door-pet-steps/ZTV00-17464/
+      publisher: PetSafe
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://www.petsafe.com/p/happy-ride-side-door-pet-steps/ZTV00-17464/
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-18
+    active: true
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - vacation-rental-with-a-senior-dog
+    manufacturerClaimsVsIndependentTesting: none cited. The 200 lb rating is the maker's statement; no testing body is named.
+  - id: petsafe-happy-ride-hitch-step
+    name: Happy Ride Dog Hitch Step
+    brand: PetSafe
+    categories:
+      - senior-dogs
+      - large-dogs
+      - road-trips
+    summary: A folding step that installs on a 2 in vehicle hitch, described by the maker as an alternative to dog ramps.
+    keySpecs:
+      - Maker says it supports pets up to 200 lb
+      - Dimensions 20 in L x 18 in W x 12 in H
+      - Installs on any 2 in vehicle hitch and adjusts to the height of a truck or SUV
+      - Traction on each tread; both steps swivel to fold up and lock in place
+      - Materials are not stated; the page says it was formerly sold under the Solvit brand
+      - The page does not describe it as a senior product
+    specSource:
+      title: Happy Ride Dog Hitch Step
+      url: https://www.petsafe.com/p/happy-ride-dog-hitch-step/62430/
+      publisher: PetSafe
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://www.petsafe.com/p/happy-ride-dog-hitch-step/62430/
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-18
+    active: true
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - vacation-rentals-that-welcome-large-dogs
+    manufacturerClaimsVsIndependentTesting: none cited. The 200 lb rating is the maker's statement.
+  - id: petsafe-happy-ride-bench-seat-cover
+    name: Happy Ride Quilted Bench Seat Cover
+    brand: PetSafe
+    categories:
+      - cleaning-and-rental-protection
+      - road-trips
+    summary: A quilted, waterproof back-seat cover with seat belt access that is machine washable.
+    keySpecs:
+      - Dimensions 45 in long x 56 in wide
+      - Padded heavy cotton twill with waterproof protection, high-grip bottom coating, leather headrest straps and heavy-duty zippers
+      - Maker says it fits the back seat of most cars, trucks and SUVs and that seat belts can be reached without removing it
+      - Adjustable straps and seat anchors; machine washable
+      - A seat cover is not a restraint
+    specSource:
+      title: Happy Ride Quilted Bench Seat Cover
+      url: https://www.petsafe.com/p/happy-ride-quilted-bench-seat-cover/PTV00-17462/
+      publisher: PetSafe
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://www.petsafe.com/p/happy-ride-quilted-bench-seat-cover/PTV00-17462/
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-18
+    active: true
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - what-a-dog-really-costs-on-a-vacation-rental
+    manufacturerClaimsVsIndependentTesting: none cited
+  - id: kurgo-rover-cargo-cape
+    name: Rover Cargo Cape
+    brand: Kurgo
+    categories:
+      - road-trips
+      - cleaning-and-rental-protection
+    summary: A waterproof cargo-area cover with a fold-out bumper guard and a centre zipper for split seats.
+    keySpecs:
+      - Dimensions 52 in wide x 62 in long
+      - Maker says it will fit most vehicles' cargo areas and lists no specific models
+      - Waterproof and stain-resistant fabric (the page does not name it), mesh pockets, hook-and-loop back pieces and a fold-out bumper guard with reflective trim
+      - Centre zipper for 50/50 seat splits
+      - Spot clean or hand wash, then air dry
+    specSource:
+      title: Rover Cargo Cape
+      url: https://www.kurgo.com/p/cargo-cape/POG30-17676
+      publisher: Kurgo
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://www.kurgo.com/p/cargo-cape/POG30-17676
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-18
+    active: true
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides: []
+    manufacturerClaimsVsIndependentTesting: none cited
+  - id: kong-ultimate-cargo-liner
+    name: Ultimate Cargo Liner with Tether
+    brand: KONG
+    categories:
+      - road-trips
+      - cleaning-and-rental-protection
+    summary: A padded water-resistant liner for a station wagon or SUV load space that includes a swivel tether.
+    keySpecs:
+      - Dimensions 43.5 x 17.5 x 32.5 in; weighs 4.5 lbs; one size
+      - "Specs list 85% polyester, 10% steel, 5% nylon, while the feature text says cotton blend: the page conflicts"
+      - Maker describes it as water-resistant, with a zip-up rear section that doubles as a bumper guard
+      - Included tether attaches to a dog harness; the page warns never to attach an in-car tether to a collar
+      - Liner machine washable; the tether should not be washed
+    specSource:
+      title: KONG Ultimate Cargo Liner w/ Tether
+      url: https://www.kongcompany.com/kong-ultimate-cargo-liner-w-tether/
+      publisher: KONG
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://www.kongcompany.com/kong-ultimate-cargo-liner-w-tether/
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-18
+    active: true
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides: []
+    manufacturerClaimsVsIndependentTesting: none cited. The page names no crash test or certification for the tether; its claims about restraint and reducing anxiety are the maker's own.
+  - id: kong-bench-seat-cover-hammock-xl
+    name: 2-in-1 Bench Seat Cover and Dog Hammock for Trucks
+    brand: KONG
+    categories:
+      - large-dogs
+      - road-trips
+      - cleaning-and-rental-protection
+    summary: An extra-large water-resistant bench seat cover that can be used with a front seat barrier as a non-suspended hammock.
+    keySpecs:
+      - Dimensions 62.5 x 67.01 x 0.5 in; weighs 5.1 lbs
+      - Page lists the XL size for dogs between 60 and 90 lb and describes it as especially XL sized for trucks
+      - Six anchor points, with access points for seat belt tethers and LATCH anchors
+      - "Specs list 90% polyester and 10% nylon, while the feature text says cotton blend: the page conflicts"
+      - Machine washable
+    specSource:
+      title: KONG 2-in-1 Bench Seat Cover & Dog Hammock for Trucks
+      url: https://www.kongcompany.com/kong-2-in-1-bench-seat-cover-dog-hammock/
+      publisher: KONG
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://www.kongcompany.com/kong-2-in-1-bench-seat-cover-dog-hammock/
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-18
+    active: true
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - vacation-rentals-that-welcome-large-dogs
+    manufacturerClaimsVsIndependentTesting: none cited
+  - id: ruffwear-float-coat
+    name: Float Coat Dog Life Jacket
+    brand: Ruffwear
+    categories:
+      - beach-vacations
+      - outdoor-adventures
+    summary: A life jacket with a lifting handle and a telescoping neck closure, sold in six girth-based sizes.
+    keySpecs:
+      - "Sizes XXS to XL by girth: XXS 13-17 in, XS 17-22, S 22-27, M 27-32, L 32-36, XL 36-42 in"
+      - Shell 800D ballistic polyester, EVA and PE layered foams, side-release buckles
+      - Maker says it gives optimal buoyancy without restricting mobility and supports a natural swimming position
+      - The page gives no buoyancy figure and names no certification or testing body
+      - Strong low-profile handle for lifting a dog out of water; reflective accents
+      - Hand wash, air dry
+    specSource:
+      title: Float Coat Dog Life Jacket
+      url: https://ruffwear.com/products/float-coat-dog-life-jacket
+      publisher: Ruffwear
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://ruffwear.com/products/float-coat-dog-life-jacket
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-18
+    active: true
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - can-dogs-go-in-a-rental-pool-or-hot-tub
+    manufacturerClaimsVsIndependentTesting: Buoyancy wording is the maker's. No flotation rating, certification or testing body is named on the page.
+  - id: outward-hound-dawson-swim-life-jacket
+    name: Dawson Swim Dog Life Jacket
+    brand: Outward Hound
+    categories:
+      - beach-vacations
+      - outdoor-adventures
+    summary: A neoprene-sided life jacket with a front neck float, described by the maker as a flotation aid for a conscious dog in calm water.
+    keySpecs:
+      - Sizes X-Small to X-Large by girth around the widest part of the rib cage; the page lists no chest or weight ranges
+      - Neoprene side panels; the page does not name other materials
+      - Front neck float and top grab handles (dual rescue handles on Medium to XL)
+      - Maker states it is a flotation aid intended for a conscious dog in calm waters and warns not to leave the dog unattended
+      - Hand wash in warm water, air dry
+    specSource:
+      title: Dawson Swim Dog Life Jacket
+      url: https://outwardhound.com/dawson-swim-dog-life-jacket/
+      publisher: Outward Hound
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://outwardhound.com/dawson-swim-dog-life-jacket/
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-18
+    active: true
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - can-dogs-go-in-a-rental-pool-or-hot-tub
+    manufacturerClaimsVsIndependentTesting: Buoyancy wording is the maker's. No certification, testing body or buoyancy figure is given on the page.
+  - id: ruffwear-swamp-cooler
+    name: Swamp Cooler Cooling Dog Vest
+    brand: Ruffwear
+    categories:
+      - beach-vacations
+      - travel-comfort
+      - outdoor-adventures
+    summary: A vest that is soaked in water and worn, described by the maker as evaporative cooling.
+    keySpecs:
+      - "Sizes XXS to XL by chest girth: XXS 13-17 in, XS 17-22, S 22-27, M 27-32, L 32-36, XL 36-42 in"
+      - Maker says to soak the vest, put it on the dog and re-soak it when it dries
+      - Light-coloured outer fabric (the maker says it reflects solar radiation) with UPF 50+ wording
+      - Polyester air mesh, polyester felt and polyester mesh lining; leash portal on the back
+      - Cold water, gentle cycle wash, air dry
+      - The page makes no claim that it prevents heat illness
+    specSource:
+      title: Swamp Cooler Cooling Dog Vest
+      url: https://ruffwear.com/products/swamp-cooler-dog-cooling-vest
+      publisher: Ruffwear
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://ruffwear.com/products/swamp-cooler-dog-cooling-vest
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-18
+    active: true
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides: []
+    manufacturerClaimsVsIndependentTesting: Cooling and UPF wording are the maker's. No test or certification is named on the page.
+  - id: kurgo-mud-dog-travel-shower
+    name: Mud Dog Travel Shower
+    brand: Kurgo
+    categories:
+      - beach-vacations
+      - cleaning-and-rental-protection
+    summary: A food-grade silicone shower head that screws onto a standard plastic water bottle.
+    keySpecs:
+      - Fits standard PET water and soda bottles from 16 oz to 2 liters
+      - Maker says a 2-liter bottle gives a shower lasting a minute or more
+      - Food-grade silicone; dishwasher safe on the top rack
+      - Dimensions are not stated on the page
+    specSource:
+      title: Mud Dog Travel Shower
+      url: https://www.kurgo.com/p/mud-dog-travel-shower/K01567
+      publisher: Kurgo
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://www.kurgo.com/p/mud-dog-travel-shower/K01567
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-18
+    active: true
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - airbnb-pet-damage-charge-after-checkout
+    manufacturerClaimsVsIndependentTesting: none cited
+  - id: adventure-medical-kits-dog-wipes
+    name: Adventure Dog Wipes (pack of 8)
+    brand: Adventure Medical Kits
+    categories:
+      - cleaning-and-rental-protection
+    summary: Rinse-free pet wipes made to wipe dirt and odour off a dog.
+    keySpecs:
+      - 8 wipes per pack, each 8 x 8 in
+      - Maker lists aloe, rosemary and witch hazel
+      - Maker describes them as rinse-free and says they can be used on the trail, at the park or at home
+      - Maker offers a 60-day satisfaction guarantee
+    specSource:
+      title: Adventure Dog Wipes, Pkg./8
+      url: https://adventuremedicalkits.com/products/adventure-dog-wipes-pkg-8
+      publisher: Adventure Medical Kits
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://adventuremedicalkits.com/products/adventure-dog-wipes-pkg-8
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-18
+    active: true
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - airbnb-pet-damage-charge-after-checkout
+    manufacturerClaimsVsIndependentTesting: none cited. Gentleness and durability wording are the maker's.
+  - id: gunner-long-haul-bed
+    name: Long Haul Bed
+    brand: Gunner
+    categories:
+      - travel-comfort
+      - cleaning-and-rental-protection
+    summary: A bolstered kennel bed with a water-repellent cover and a non-skid base, in four sizes.
+    keySpecs:
+      - Sizes Small, Medium, Intermediate and Large; the page gives no dimensions
+      - Non-skid 900D TPU base, Oxford top fabric and a 3D loop core with no foam
+      - Maker describes the cover as water-repellent, stain-resistant, antimicrobial and hypoallergenic
+      - Cover is machine washable on a cold gentle cycle; the core is hosed off and air dried
+      - Maker says it may not suit dogs that chew, dogs with anxiety or teething puppies
+    specSource:
+      title: Long Haul Bed
+      url: https://gunner.com/products/long-haul-dog-bed
+      publisher: Gunner
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://gunner.com/products/long-haul-dog-bed
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-18
+    active: true
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - dog-friendly-cabin-packing-list
+    manufacturerClaimsVsIndependentTesting: Antimicrobial and hypoallergenic wording is the maker's; no test is cited.
+  - id: ruffwear-highlands-sleeping-bag
+    name: Highlands Dog Sleeping Bag
+    brand: Ruffwear
+    categories:
+      - travel-comfort
+      - outdoor-adventures
+    summary: A compressible synthetic-insulated sleeping bag for dogs, made for trail, camp and backcountry use.
+    keySpecs:
+      - Medium 25.2 x 33.5 in flat, 1.6 lbs; Large 28.3 x 43.3 in flat, 2.2 lbs; 2 in loft in both sizes
+      - 75D cire polyester shell, 120 g recycled polyester insulation, half-length zipper, compression sack included
+      - Cold water gentle cycle, tumble dry low
+      - Made for outdoor use, not for rental furniture; page listed both sizes as out of stock when read
+    specSource:
+      title: Highlands Dog Sleeping Bag
+      url: https://ruffwear.com/products/highlands-dog-sleeping-bag
+      publisher: Ruffwear
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://ruffwear.com/products/highlands-dog-sleeping-bag
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-18
+    active: true
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides: []
+    manufacturerClaimsVsIndependentTesting: none cited. No warmth or temperature rating is stated on the page.
+  - id: ruffwear-quencher-bowl
+    name: Quencher Packable Dog Bowl
+    brand: Ruffwear
+    categories:
+      - feeding-and-hydration
+      - outdoor-adventures
+    summary: A packable fabric food and water bowl listed in one size.
+    keySpecs:
+      - "Medium: 5.5 in opening, 4.2 cups (1 L)"
+      - 300D polyester ripstop shell with a 210D nylon taffeta lining
+      - Maker lists a 4,000 mm waterproof rating on the lining, labelled Food Contact Safe
+      - Shell is described as water-resistant, not waterproof
+      - Hand wash, air dry
+    specSource:
+      title: Quencher Packable Dog Bowl
+      url: https://ruffwear.com/products/quencher-dog-bowl
+      publisher: Ruffwear
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://ruffwear.com/products/quencher-dog-bowl
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-18
+    active: true
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - what-a-dog-really-costs-on-a-vacation-rental
+    manufacturerClaimsVsIndependentTesting: The 4,000 mm and Food Contact Safe wording is the maker's; no tester is named.
+  - id: kurgo-splash-free-wander-bowl
+    name: Splash Free Wander Dog Water Bowl
+    brand: Kurgo
+    categories:
+      - feeding-and-hydration
+      - road-trips
+    summary: A silicone water bowl with a tapered edge and a wedge shape that sits flat on a car seat.
+    keySpecs:
+      - Capacity 24 oz (710 ml); dimensions not stated
+      - Food-grade silicone; PVC- and BPA-free per the maker
+      - Tapered edge to reduce splashing; can be used for food or water
+      - Dishwasher safe, top rack only
+    specSource:
+      title: Splash Free Wander Dog Water Bowl
+      url: https://www.kurgo.com/p/splash-free-wander-dog-water-bowl/K01812
+      publisher: Kurgo
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://www.kurgo.com/p/splash-free-wander-dog-water-bowl/K01812
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-18
+    active: true
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - what-a-dog-really-costs-on-a-vacation-rental
+    manufacturerClaimsVsIndependentTesting: none cited
+  - id: petmate-silicone-travel-bowl-duo
+    name: Silicone Travel Bowl Duo
+    brand: Petmate
+    categories:
+      - feeding-and-hydration
+      - road-trips
+    summary: Two collapsible silicone bowls in a zippered pouch.
+    keySpecs:
+      - Capacity 3 cups; listed size Large
+      - Each bowl collapses to less than 2 inches and can be used at half or full height
+      - Silicone bowls with a vinyl-lined canvas pouch
+      - Dishwasher-safe; the page lists dimensions without units
+    specSource:
+      title: Petmate Silicone Travel Bowl Duo
+      url: https://www.petmate.com/products/petmate-silicone-travel-bowl-duo
+      publisher: Petmate
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://www.petmate.com/products/petmate-silicone-travel-bowl-duo
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-18
+    active: true
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - what-a-dog-really-costs-on-a-vacation-rental
+    manufacturerClaimsVsIndependentTesting: none cited
+  - id: gunner-dog-bowl
+    name: Dog Bowl with Travel Lid
+    brand: Gunner
+    categories:
+      - feeding-and-hydration
+      - road-trips
+    summary: A nylon bowl with a spill-resistant travel lid and non-slip rubber feet.
+    keySpecs:
+      - Includes one bowl body and one travel lid; the page gives no capacity or dimensions
+      - Maker says it is made from ultra-strong nylon, BPA free and food-grade compliant
+      - Maker describes the lid as strong enough to hold water even upside down
+      - Top-rack dishwasher safe; bowls nest for carrying
+      - The maker offers a manufacturer's warranty against defects but gives no details on the page
+    specSource:
+      title: GUNNER Dog Bowl (Black)
+      url: https://gunner.com/products/gunner-dog-bowl-black
+      publisher: Gunner
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://gunner.com/products/gunner-dog-bowl-black
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-18
+    active: true
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides: []
+    manufacturerClaimsVsIndependentTesting: none cited. Spill-proof wording is the maker's.
+  - id: petmate-precision-pet-soft-side-play-yard
+    name: Precision Pet Soft Side Play Yard
+    brand: Petmate
+    categories:
+      - cabin-vacations
+      - road-trips
+    summary: A foldable soft-sided play yard with ground stakes, for indoor or outdoor use.
+    keySpecs:
+      - The page lists size Large and dimensions of 30.5 x 19 x 2.25 with no units
+      - Water-resistant fabric, eight ventilated mesh panels, reinforced corners and protected seams
+      - Removable top and removable washable floor panels
+      - Maker says it sets up with no tools and includes ground stakes
+      - Maker lists use indoors or outdoors, in backyards without fences, camping and road trips
+      - Folded size is not stated
+    specSource:
+      title: Precision Pet Soft Side Play Yard
+      url: https://www.petmate.com/products/precision-pet-soft-side-play-yard
+      publisher: Petmate
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://www.petmate.com/products/precision-pet-soft-side-play-yard
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-18
+    active: true
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - portable-dog-fence-and-playpen-guide-for-rentals
+      - puppy-at-a-vacation-rental
+    manufacturerClaimsVsIndependentTesting: none cited. A soft-sided yard is not shown to hold a determined or large dog; the page makes no containment-strength claim.
+  - id: ruffwear-knot-a-leash
+    name: Knot-a-Leash Rope Dog Leash
+    brand: Ruffwear
+    categories:
+      - outdoor-adventures
+    summary: A 5 ft reflective rope leash with an auto-locking carabiner and an accessory loop for bags.
+    keySpecs:
+      - "5 ft (1.5 m) in both sizes: Small with 7 mm rope, Large with 11 mm rope"
+      - Reflective polypropylene kernmantle rope, polyester webbing handle
+      - Anodized 6061-T6 aluminum tri-action auto-locking carabiner with a silicone swivel cover
+      - No strength rating or guidance by dog weight is stated on the page
+    specSource:
+      title: Knot-a-Leash Rope Dog Leash
+      url: https://ruffwear.com/products/knot-a-leash-dog-leash
+      publisher: Ruffwear
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://ruffwear.com/products/knot-a-leash-dog-leash
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-18
+    active: true
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides: []
+    manufacturerClaimsVsIndependentTesting: none cited
+  - id: ruffwear-grip-trex-boots
+    name: Grip Trex Dog Boots
+    brand: Ruffwear
+    categories:
+      - outdoor-adventures
+    summary: A set of two dog boots with a Vibram outsole for hiking, biking, running and outdoor exploring.
+    keySpecs:
+      - Sold as a set of two; front and rear paws may need different sizes
+      - Sized by paw width from 1.50 in to 3.25 in in 0.25 in steps; maker says to size down if between sizes
+      - 100% polyester mesh upper, non-marking Vibram outsole, hydrophobic hook-and-loop closure
+      - Maker suggests checking the fit about 15 minutes into an activity
+      - Cold gentle cycle wash, air dry
+      - Page listed as out of stock when read
+    specSource:
+      title: Grip Trex Dog Boots
+      url: https://ruffwear.com/products/grip-trex-dog-boots
+      publisher: Ruffwear
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://ruffwear.com/products/grip-trex-dog-boots
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-18
+    active: true
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides: []
+    manufacturerClaimsVsIndependentTesting: none cited. Traction and paw-protection wording is the maker's.
+  - id: ruffwear-web-master-harness
+    name: Web Master Dog Harness with Handle
+    brand: Ruffwear
+    categories:
+      - outdoor-adventures
+    summary: A three-strap harness with a neck buckle and a reinforced handle, made for technical terrain.
+    keySpecs:
+      - "Sizes XXS to L/XL by girth: XXS 13-17 in, XS 17-22, S 22-27, M 27-32, L/XL 32-42 in"
+      - Maker says the reinforced handle offers balanced lift and assist support for navigating technical terrain
+      - 150-denier polyester ripstop with PU coating, closed-cell foam padding, aluminum back V-ring
+      - Three leash attachment points; neck buckle for dogs that dislike going over the head
+      - The page does not mention older or mobility-limited dogs and makes no car or crash-test claim
+    specSource:
+      title: Web Master Dog Harness with Handle
+      url: https://ruffwear.com/products/web-master-dog-harness
+      publisher: Ruffwear
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://ruffwear.com/products/web-master-dog-harness
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-18
+    active: true
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides: []
+    manufacturerClaimsVsIndependentTesting: none cited. Handle and lift wording is the maker's.
+  - id: ruffwear-climate-changer-fleece
+    name: Climate Changer Dog Fleece
+    brand: Ruffwear
+    categories:
+      - winter-travel
+      - outdoor-adventures
+    summary: A fleece jacket with sleeves and a full-length zipper, described by the maker as warmth for cold, clear conditions.
+    keySpecs:
+      - "Sizes XXS to XL by chest girth: XXS 13-17 in, XS 17-22, S 22-27, M 27-32, L 32-36, XL 36-42 in"
+      - 260 g 100% polyester fleece (75% recycled)
+      - Maker says it can be worn alone or layered under other Ruffwear coats
+      - No insulation rating or temperature range is stated
+      - Cold gentle cycle wash, hang to dry
+    specSource:
+      title: Climate Changer Dog Fleece
+      url: https://ruffwear.com/products/climate-changer-fleece-dog-jacket
+      publisher: Ruffwear
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://ruffwear.com/products/climate-changer-fleece-dog-jacket
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-18
+    active: true
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - christmas-week-in-a-cabin-with-a-dog
+    manufacturerClaimsVsIndependentTesting: Warmth wording is the maker's; no test or rating is named.
+  - id: ruffwear-polar-trex-boots
+    name: Polar Trex Winter Dog Boots
+    brand: Ruffwear
+    categories:
+      - winter-travel
+      - outdoor-adventures
+    summary: A set of two winter dog boots with a waterproof, windproof softshell upper and traction lugs.
+    keySpecs:
+      - Sold as a set of two; sized by paw width from 1.50 in to 3.25 in in 0.25 in steps, size down if between sizes
+      - Maker states a waterproof and windproof softshell upper and traction on ice and snow with a micro-cleat effect
+      - Rubber outsole with winter-specific fiberglass lugs; fleece-backed polyester ripstop upper
+      - No insulation rating or temperature range is stated
+      - Hand wash, air dry; page listed as out of stock when read
+    specSource:
+      title: Polar Trex Winter Dog Boots
+      url: https://ruffwear.com/products/polar-trex-winter-dog-boots
+      publisher: Ruffwear
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://ruffwear.com/products/polar-trex-winter-dog-boots
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-18
+    active: true
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - christmas-week-in-a-cabin-with-a-dog
+    manufacturerClaimsVsIndependentTesting: Waterproof, windproof and traction wording is the maker's; no test is named.
+  - id: ruffwear-timberline-fuse-vest
+    name: Timberline Fuse Fleece Vest
+    brand: Ruffwear
+    categories:
+      - winter-travel
+      - outdoor-adventures
+    summary: A fleece vest with a built-in harness, described by the maker as warmth in mild to cool weather.
+    keySpecs:
+      - "Sizes XXS to XL by girth: XXS 13-17 in, XS 17-22, S 22-27, M 27-32, L 32-36, XL 36-42 in"
+      - 380 g polyester fleece with a 600 denier polyester oxford back and belly panel
+      - Built-in harness with an aluminum back V-ring and a front webbing loop, per the maker
+      - Maker says it keeps dogs warm in mild to cool weather; no thermal rating is stated
+      - Cold gentle cycle wash, hang to dry
+    specSource:
+      title: Timberline Fuse Fleece Vest
+      url: https://ruffwear.com/products/timberline-fuse-fleece-vest
+      publisher: Ruffwear
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://ruffwear.com/products/timberline-fuse-fleece-vest
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-18
+    active: true
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides: []
+    manufacturerClaimsVsIndependentTesting: Warmth and harness-strength wording are the maker's; no test is named.

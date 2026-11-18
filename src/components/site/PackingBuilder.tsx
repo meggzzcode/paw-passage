@@ -3,6 +3,7 @@ import { Link, useLocation } from "@tanstack/react-router";
 import { BriefcaseMedical, Car, Check, Copy, Droplets, Fence, FileText, Dog, MapPin, Pill, Printer, Sofa, Bed, Tag, ShieldAlert, Package, Utensils, Shirt, type LucideIcon } from "lucide-react";
 import { packItems, groupsInOrder, recommended, defaultProfile, packingText, type PackProfile, type PackItem } from "@/lib/packing";
 import { getProduct } from "@/content/gear";
+import { liveCategoryFor } from "@/content/gear-hub";
 import { allGuides } from "@/content/guides";
 import { getApprovedLink, isAmazon, AMAZON_DISCLOSURE } from "@/content/affiliates";
 import { productButton, productLinkId } from "@/content/affiliate-usage";
@@ -141,6 +142,7 @@ function Tile({ item, reason, isPacked, expanded, onToggle, onOpen, onFocus }: {
 function Popover({ item, reason, isPacked, onToggle, onClose, pathname, alignRight }: { item: PackItem; reason: string | null; isPacked: boolean; onToggle: () => void; onClose: () => void; pathname: string; alignRight: boolean }) {
   const products = item.productIds.map((id) => getProduct(id)).filter((p): p is NonNullable<ReturnType<typeof getProduct>> => !!p);
   const how = products[0] ? guideFor(products[0].id) : undefined;
+  const cat = products[0] ? liveCategoryFor(products[0]) : undefined;
   return (
     <div role="dialog" aria-label={item.name} className={`no-print z-50 w-full rounded-xl border bg-background p-4 text-sm shadow-card max-md:fixed max-md:inset-x-3 max-md:bottom-3 max-md:max-h-[70vh] max-md:overflow-auto md:absolute md:top-full md:mt-2 md:w-[22rem] ${alignRight ? "md:right-0" : "md:left-0"}`}>
       <div className="flex items-start justify-between gap-3"><p className="font-display text-lg">{item.name}</p><button type="button" onClick={onClose} aria-label="Close" className="text-muted-foreground hover:text-foreground">✕</button></div>
@@ -149,7 +151,7 @@ function Popover({ item, reason, isPacked, onToggle, onClose, pathname, alignRig
       {reason && <p className="mt-2 text-terracotta">{reason}</p>}
       {products.length > 0 && (
         <div className="mt-3 space-y-3 border-t pt-3">
-          <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">Picks from our guides</p>
+          <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">Picks from our research</p>
           {products.slice(0, 3).map((p) => {
             const btn = productButton(p);
             const aff = btn?.kind === "affiliate";
@@ -162,6 +164,7 @@ function Popover({ item, reason, isPacked, onToggle, onClose, pathname, alignRig
             );
           })}
           {how && <p className="text-xs text-muted-foreground">How we chose: <Link to="/guides/$slug" params={{ slug: how.slug }} className="underline">{how.title}</Link>. Check size and specs on the seller's page.</p>}
+          {cat && <p className="text-xs text-muted-foreground">{how ? "More options: " : "Researched, not tested: "}<Link to="/gear/$category" params={{ category: cat.slug }} hash={products[0]!.id} className="underline">{cat.name} gear</Link>. Check size and specs on the seller's page.</p>}
         </div>
       )}
       <button type="button" onClick={onToggle} aria-pressed={isPacked} className="mt-4 h-10 w-full rounded-lg bg-primary font-medium text-primary-foreground hover:bg-primary/90">{isPacked ? "Packed. Tap to remove" : "Add to bag"}</button>

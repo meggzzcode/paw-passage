@@ -1,4 +1,5 @@
-import { useLocation } from "@tanstack/react-router";
+import { Link, useLocation } from "@tanstack/react-router";
+import { liveCategoryFor } from "@/content/gear-hub";
 import { AMAZON_DISCLOSURE, getApprovedLink, isAmazon } from "@/content/affiliates";
 import { getProduct, type GearPick } from "@/content/gear";
 import { trackProductClick } from "@/lib/analytics";
@@ -38,6 +39,10 @@ export function GearPicks({ picks }: { picks: GearPick[] }) {
               <p className="mt-3 text-sm font-medium">Check before you buy</p>
               <ul className="list-disc pl-5 text-sm text-muted-foreground">{pick.watchOuts.map((w) => <li key={w}>{w}</li>)}</ul>
               <p className="mt-3 text-xs text-muted-foreground">Specs from <a className="underline" href={product!.specSource.url} target="_blank" rel="noopener noreferrer">{product!.specSource.title}</a> ({product!.specSource.publisher}, accessed {product!.specSource.accessedOn}). Sizes, models and availability change: confirm on the seller's page.</p>
+              {(() => {
+                const cat = liveCategoryFor(product!);
+                return cat ? <p className="mt-2 text-xs text-muted-foreground">More like this: <Link to="/gear/$category" params={{ category: cat.slug }} hash={product!.id} className="underline">{cat.name} gear</Link></p> : null;
+              })()}
               {(() => {
                 const btn = productButton(product!);
                 if (!btn) return null;

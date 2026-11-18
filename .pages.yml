@@ -432,10 +432,13 @@ content:
                 - { value: beach-vacations, label: "Beach vacations" }
                 - { value: senior-dogs, label: "Senior dogs" }
                 - { value: large-dogs, label: "Large dogs" }
-                - { value: multiple-dogs, label: "Multiple dogs" }
                 - { value: travel-safety, label: "Travel safety" }
                 - { value: feeding-and-hydration, label: "Feeding and hydration" }
                 - { value: travel-comfort, label: "Travel comfort" }
+                - { value: car-safety, label: "Car safety" }
+                - { value: winter-travel, label: "Winter travel" }
+                - { value: outdoor-adventures, label: "Outdoor adventures" }
+                - { value: cleaning-and-rental-protection, label: "Cleaning and rental protection" }
           - { name: summary, label: "What it is, in plain words", type: text, required: true }
           - { name: keySpecs, label: "What the maker states (one fact per line, taken from the source below)", type: string, list: true }
           - name: specSource
@@ -451,7 +454,25 @@ content:
           - { name: retailerName, label: "Retailer name (for the button)", type: string }
           - { name: lastVerified, label: "Date you last re-read the source page (YYYY-MM-DD)", type: string, required: true }
           - { name: active, label: "Show this product? (untick to hide it everywhere but keep the record)", type: boolean }
-          - { name: affiliateId, label: "Affiliate link name. Leave EMPTY unless Affiliate links has an approved entry with this name", type: string }
+          - { name: imageSource, label: "Photo credit or source. Leave EMPTY (no photo) unless you have written permission or took the photo yourself", type: string }
+          - name: imageRights
+            label: "Photo rights. 'none' = the card has no photo"
+            type: select
+            options:
+              values:
+                - { value: none, label: "None (no photo)" }
+                - { value: permitted, label: "Written permission from the maker or photographer" }
+                - { value: own, label: "My own photo" }
+          - { name: affiliateProgram, label: "Affiliate program: the NAME of an entry in Affiliate links. Leave EMPTY unless that entry exists and is approved. Never paste a link or an ID here", type: string }
+          - { name: affiliateTrackingId, label: "Tracked link: the NAME of the entry in Affiliate links that holds this product's link. Leave EMPTY until approved. Change the link itself in Affiliate links, never here", type: string }
+          - name: alternativeRetailer
+            label: "Another seller (plain link, not an affiliate link). Optional"
+            type: object
+            fields:
+              - { name: name, label: Seller name, type: string }
+              - { name: url, label: "Page address (starts with https://)", type: string }
+          - { name: relatedGuides, label: "Guides worth reading with it (guide web address, for example dog-friendly-cabin-packing-list)", type: string, list: true }
+          - { name: manufacturerClaimsVsIndependentTesting, label: "Maker's claims versus independent testing. Write 'none cited' unless a named independent tester is cited with its source", type: text }
 
   # ------------------------------------------------------------ Business settings
   - name: settings

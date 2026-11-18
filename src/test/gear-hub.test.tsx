@@ -10,7 +10,7 @@ import { gearCategories } from "@/content/gear-categories";
 import { categoryProducts, categoryIsLive, liveCategories, hasGear, MIN_LIVE } from "@/content/gear-hub";
 import { relFor, resolveProductLink } from "@/content/gear-links";
 import type { AffiliateLink } from "@/content/affiliates";
-import { gearCategorySlugs, productRecordSchema, productsSchema } from "@/content/products-schema";
+import { gearCategorySlugs, productRecordObject, productRecordSchema, productsSchema } from "@/content/products-schema";
 import { sitemapEntries, staticPaths } from "@/lib/sitemap-entries";
 import { GearDisclosure } from "@/components/site/GearHubCards";
 import { Route as hub } from "@/routes/gear.index";
@@ -32,7 +32,7 @@ describe("gear data", () => {
   it("category slugs are unique and a category is live only with enough active products", () => {
     expect(new Set(gearCategories.map((c) => c.slug)).size).toBe(gearCategories.length);
     for (const c of gearCategories) expect(categoryIsLive(c.slug)).toBe(categoryProducts(c.slug).length >= MIN_LIVE);
-    expect(liveCategories().map((c) => c.slug)).not.toContain("beach-vacations");
+    expect(liveCategories().map((c) => c.slug)).toContain("beach-vacations");
     expect(hasGear()).toBe(true);
   });
   it("inactive products are left out of categories", () => {
@@ -51,7 +51,7 @@ describe("gear data", () => {
     const entry = cfg.content.find((c) => c.name === "products")!;
     expect(entry.path).toBe("content/products.yml");
     const fields = entry.fields[0]!.fields!;
-    expect(fields.map((f) => f.name).sort()).toEqual(Object.keys(productRecordSchema.shape).sort());
+    expect(fields.map((f) => f.name).sort()).toEqual(Object.keys(productRecordObject.shape).sort());
     expect(fields.find((f) => f.name === "categories")!.options!.values.map((v) => v.value).sort()).toEqual([...gearCategorySlugs].sort());
   });
 });
@@ -108,7 +108,7 @@ describe("routes, meta and sitemap", () => {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const load = (slug: string) => (category.options as any).loader({ params: { category: slug } });
     expect(() => load("nope")).toThrow();
-    expect(() => load("beach-vacations")).toThrow();
+    expect(() => load("multiple-dogs")).toThrow();
     expect(load("road-trips")).toEqual({ slug: "road-trips" });
   });
   it("meta names no Expedia Group brand and no product brand, and stays short", () => {

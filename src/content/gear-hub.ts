@@ -40,3 +40,9 @@ export function guidesFeaturing(list: Product[], guides: Guide[] = allGuides): G
   const ids = new Set(list.map((p) => p.id));
   return guides.filter(isPublic).filter((g) => (g.gear ?? []).some((x) => ids.has(x.productId)));
 }
+
+/** The first live /gear category a product belongs to (its primary one when live), for "see more like this" links. */
+export function liveCategoryFor(p: Product, list: Product[] = products): GearCategory | undefined {
+  for (const slug of p.categories ?? []) if (categoryIsLive(slug, list)) return getGearCategory(slug);
+  return undefined;
+}

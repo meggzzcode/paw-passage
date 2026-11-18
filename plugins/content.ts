@@ -12,7 +12,7 @@ import { transformWithOxc, type Plugin, type ViteDevServer } from "vite";
 import { guideSchema, stayYamlSchema, toStay, placeYamlSchema, toPlace, affiliatesSchema, settingsSchema } from "../src/content/schema";
 import { guideIsPublic, stayIsPublic, placeIsPublic } from "../src/content/publish-rule";
 import { destinations } from "../src/content/destinations";
-import { productsSchema } from "../src/content/products-schema";
+import { productsSchema, productReferenceProblems } from "../src/content/products-schema";
 
 const VIRTUAL = "virtual:content";
 const RESOLVED = "\0" + VIRTUAL;
@@ -283,9 +283,9 @@ export function loadContent(root: string, includeUnpublished: boolean, opts: { s
   for (const p of pparsed.data.products) {
     if (productIds.has(p.id)) throw new ContentError(`\n\nContent problem in content/products.yml:\n  - the product id "${p.id}" is used twice\n`);
     productIds.add(p.id);
-    if (p.affiliateId && !affiliateIds.has(p.affiliateId)) throw new ContentError(`\n\nContent problem in content/products.yml:\n  - product "${p.id}" uses affiliate link "${p.affiliateId}", which does not exist in Affiliate links\n`);
-    if (p.affiliateId && aparsed.data.links.find((l) => l.id === p.affiliateId)?.kind === "stay") throw new ContentError(`\n\nContent problem in content/products.yml:\n  - product "${p.id}" uses affiliate link "${p.affiliateId}", which is marked as a place to stay, not a product\n`);
   }
+  const refProblems = productReferenceProblems(pparsed.data.products, aparsed.data.links);
+  if (refProblems.length) throw new ContentError(`\n\nContent problem in content/products.yml:\n${refProblems.map((x) => `  - ${x}`).join("\n")}\n`);
 
   const sfile = join(dir, "settings.yml");
   const sparsed = settingsSchema.safeParse(existsSync(sfile) ? readYamlFile(sfile) : {});

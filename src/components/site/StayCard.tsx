@@ -6,7 +6,6 @@ import { townName, stateAbbr } from "@/content/destinations";
 import { stayTypeLabels } from "@/lib/filters";
 import { describeFee } from "@/lib/stay-format";
 import { PreviewBadge } from "./StatusBadge";
-import { BookingButton } from "./BookingButton";
 
 export function StayCard({ stay }: { stay: Stay }) {
   // A photo shows only when we hold the owner's permission. Otherwise: a plain panel, never a stock picture of a real property.
@@ -46,7 +45,6 @@ export function StayCard({ stay }: { stay: Stay }) {
         <p className="mt-4 border-t border-border pt-3 text-xs text-muted-foreground">Pet fee: {describeFee(stay.petFee)}</p>
       </div>
     </Link>
-      <div className="border-t border-border px-5 py-3"><BookingButton stay={stay} compact /></div>
     </div>
   );
 }

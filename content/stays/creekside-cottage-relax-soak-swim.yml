@@ -3,20 +3,52 @@ name: Creekside Cottage (Relax, Soak, Swim)
 type: cottage
 state: georgia
 town: blue-ridge
-summary: Creekside cottage near Blue Ridge with a hot tub; the listing says pets
-  are allowed.
-description: Listed on Vrbo with a hot tub and a creek. The listing FAQ says
-  pets are allowed but does not give a dog limit, weight limit, fee or fence
-  details. The listing has only 5 reviews. Not yet confirmed with the host.
+summary: Creekside cottage near Blue Ridge with a hot tub and porch; pets allowed, no limits stated.
+description: A waterfront cottage near Blue Ridge, Georgia, that sleeps 4 with a king bed and a queen bed in the common areas. It has a hot tub, a porch, a patio, a private garden and a barbecue grill. The listing says pets are allowed but gives no dog limit, weight limit, fee, breed rule or fence details. Details come from the booking page, read on 2026-11-18, and have not been confirmed with the host.
 sleeps: 4
 largeDogsOk: not-confirmed
 fencedYard: not-confirmed
-privateOutdoor: not-confirmed
+privateOutdoor: yes
 petFee: not-confirmed
 breedRestrictions: not-confirmed
 beach: false
 mountain: false
-hotTub: not-confirmed
+hotTub: yes
 photoPermission: false
 sourceUrl: https://www.vrbo.com/5283109
 affiliateId: vrbo-5283109
+bathrooms: 1.5
+beds:
+  - "Common areas: 1 king bed and 1 queen bed"
+amenityGroups:
+  - title: Kitchen and dining
+    items:
+      - Refrigerator
+  - title: Comfort
+    items:
+      - Air conditioning
+      - Hot tub
+  - title: Outdoors
+    items:
+      - Balcony, terrace or patio, and porch
+      - Private garden
+      - Barbecue grill
+  - title: Parking and access
+    items:
+      - Onsite parking
+locationNote: Waterfront setting near Blue Ridge, Georgia, with the Chattahoochee National Forest about a one-minute walk away. Restaurants and cafes are listed at 5 to 7 minutes by car.
+distances:
+  - "Chattahoochee National Forest: about a 1-minute walk"
+  - "Blue Ridge Lake: about 4 minutes by car"
+  - "Blue Ridge Scenic Railway: about 8 minutes by car"
+  - "Mineral Springs Walking Trail: about 3.1 miles"
+  - "Chattanooga Metropolitan Airport: about 107 minutes by car"
+checkIn: "3:00 PM"
+checkOut: "10:00 AM"
+accessNotes:
+  - "One guest said the property is not wheelchair accessible, with only a few steps from the driveway to the entrance."
+guestNotes:
+  - "Guests describe the cottage as peaceful, clean and comfortable, and enjoy the creek sounds from the porch."
+  - "The hot tub is a favorite, including on cool evenings."
+  - "Guests say it suits couples or small families and is a short drive from downtown and the lake."
+  - "One guest wished for a full-length mirror and recycling."

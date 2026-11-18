@@ -3,23 +3,60 @@ name: Cozy Romantic Cabin with a View and Hot Tub (Near Downtown)
 type: cabin
 state: georgia
 town: blue-ridge
-summary: Two-bedroom cabin with a hot tub near downtown Blue Ridge; dogs
-  allowed, up to 2.
-description: Listed on Vrbo with a hot tub and mountain views. The listing says
-  dogs are allowed, 2 pets total, with a $95 fee per dog. It gives two different
-  weight limits (20 lbs in the house rules, 30 lbs in the pet details), so the
-  real limit is unclear. Fence not stated. Not yet confirmed with the host.
+summary: Two-bedroom cabin with a hot tub near downtown Blue Ridge; dogs up to 20 lbs, 2 max.
+description: This two-bedroom cabin in central Blue Ridge has a hot tub, a deck or porch and a barbecue grill, and sleeps 4 with a king bed in each bedroom. The listing allows dogs, up to 2 pets at a maximum of 20 lbs each. It does not state a pet fee, breed rule or fence. Details come from the booking page, read on 2026-11-18, and have not been confirmed with the host.
 sleeps: 4
 bedrooms: 2
+bathrooms: 2
+beds:
+  - "Bedroom 1: 1 king bed"
+  - "Bedroom 2: 1 king bed"
+amenityGroups:
+  - title: Kitchen and dining
+    items:
+      - Kitchen
+      - Dining area
+  - title: Comfort
+    items:
+      - Air conditioning
+      - Free WiFi
+  - title: Bathroom
+    items:
+      - Two bathrooms, each with a bathtub or shower
+  - title: Outdoors
+    items:
+      - Hot tub on site
+      - Balcony, deck and porch
+      - Barbecue grill
+  - title: Parking and access
+    items:
+      - Onsite parking
+locationNote: In central Blue Ridge, Georgia, about a one-minute walk from Chattahoochee National Forest.
+distances:
+  - "Chattahoochee National Forest: about 1 minute on foot"
+  - "Blue Ridge Scenic Railway: about 12 minutes by car"
+  - "Blue Ridge Lake: about 19 minutes by car"
+  - "Amicalola Falls State Park: about 44 minutes by car"
+  - "Chattanooga Metropolitan Airport: about 99 minutes by car"
+checkIn: "4:00 PM"
+checkOut: "11:00 AM"
+accessNotes:
+  - Reviews mention a gravel or unpaved access road and narrow mountain roads, and suggest a vehicle with some ground clearance.
+guestNotes:
+  - Guests praise the mountain and valley views from the deck and hot tub.
+  - Reviews describe it as clean and cozy, with deer sometimes visiting the back deck.
+  - The setting is called quiet and secluded yet close to town.
+  - Several guests warn about the gravel road and narrow mountain roads.
 maxDogs: 2
+weightLimitLbs: 20
 largeDogsOk: not-confirmed
 fencedYard: not-confirmed
-privateOutdoor: not-confirmed
+privateOutdoor: yes
 petFee: not-confirmed
 breedRestrictions: not-confirmed
 beach: false
 mountain: false
-hotTub: not-confirmed
+hotTub: yes
 photoPermission: false
 sourceUrl: https://www.vrbo.com/989362
 affiliateId: vrbo-989362

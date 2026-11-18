@@ -3,14 +3,46 @@ name: Blue Ridge Downtown Stay (Dog Friendly, King Bed)
 type: vacation-home
 state: georgia
 town: blue-ridge
-summary: Two-bedroom stay in downtown Blue Ridge with a king bed; the listing
-  says pets are allowed.
-description: Listed on Vrbo as dog friendly and close to downtown Blue Ridge.
-  The listing says pets are allowed but does not say how many dogs, any weight
-  limit, any pet fee or whether there is a fence. Not yet confirmed with the
-  host.
+summary: Two-bedroom stay in downtown Blue Ridge with a king bed; the listing says pets are allowed.
+description: This two-bedroom place sits in the center of Blue Ridge, within a short walk of the Arts Center and the Scenic Railway, and sleeps 4. It has a kitchen, a dining area, a balcony and a covered porch with rocking chairs. The listing says pets are allowed but does not state a dog count, weight limit, pet fee, breed rule or fence. Details come from the booking page, read on 2026-11-18, and have not been confirmed with the host.
 sleeps: 4
 bedrooms: 2
+bathrooms: 1
+beds:
+  - "Bedroom 1: 1 king bed"
+  - "Bedroom 2: 1 queen bed"
+amenityGroups:
+  - title: Kitchen and dining
+    items:
+      - Kitchen
+      - Dining area
+      - Refrigerator
+  - title: Comfort
+    items:
+      - Air conditioning
+  - title: Outdoors
+    items:
+      - Balcony
+      - Covered porch with rocking chairs
+      - Barbecue grill
+  - title: Parking and access
+    items:
+      - Onsite parking
+locationNote: In the city center of Blue Ridge, Georgia, with the Arts Center and the Scenic Railway a couple of minutes on foot.
+distances:
+  - "The Arts Center: about 2 minutes on foot"
+  - "Blue Ridge Scenic Railway: about 2 minutes on foot"
+  - "Baugh House Fannin County Historical Museum: about 5 minutes on foot"
+  - "Chattahoochee National Forest: about 11 minutes on foot"
+  - "Mineral Springs Walking Trail: about 14 minutes on foot"
+  - "Chattanooga Metropolitan Airport: about 102 minutes by car"
+checkIn: "4:00 PM"
+checkOut: "11:00 AM"
+guestNotes:
+  - Guests like the walkable location, with restaurants and shops close by.
+  - Reviews call the place clean, well stocked, with comfortable beds, and easy parking near the door.
+  - Some guests say their dogs enjoyed walking around downtown.
+  - One guest had trouble with the door lock at first.
 largeDogsOk: not-confirmed
 fencedYard: not-confirmed
 privateOutdoor: not-confirmed

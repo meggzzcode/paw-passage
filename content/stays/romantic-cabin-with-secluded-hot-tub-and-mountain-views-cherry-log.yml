@@ -3,22 +3,59 @@ name: Romantic Cabin with Secluded Hot Tub and Mountain Views (Cherry Log)
 type: cabin
 state: georgia
 town: cherry-log
-summary: One-bedroom cabin with a hot tub near Blue Ridge; one dog allowed.
-description: Listed on Vrbo with a king bed, a secluded hot tub and mountain
-  views. The listing allows one dog only, with prior notification to the host
-  and a $50 pet fee per stay. Weight limit and fence not stated. Not yet
-  confirmed with the host.
+summary: One-bedroom cabin with a secluded hot tub near Blue Ridge; pets allowed, no limits stated.
+description: A one-bedroom cabin for 2 with a king bed, a hot tub, a deck and a private garden in a rural mountain area near Blue Ridge, Georgia. The listing also mentions a stone fireplace, board games and records. It says pets are allowed but gives no dog limit, weight limit, fee, breed rule or fence details. Details come from the booking page, read on 2026-11-18, and have not been confirmed with the host.
 sleeps: 2
 bedrooms: 1
-maxDogs: 1
 largeDogsOk: not-confirmed
 fencedYard: not-confirmed
-privateOutdoor: not-confirmed
+privateOutdoor: yes
 petFee: not-confirmed
 breedRestrictions: not-confirmed
 beach: false
 mountain: false
-hotTub: not-confirmed
+hotTub: yes
 photoPermission: false
 sourceUrl: https://www.vrbo.com/4396826
 affiliateId: vrbo-4396826
+bathrooms: 1
+beds:
+  - "Bedroom 1: 1 king bed"
+amenityGroups:
+  - title: Kitchen and dining
+    items:
+      - Kitchen and kitchenette
+      - Separate dining area
+  - title: Comfort
+    items:
+      - Air conditioning
+      - Living room
+      - Stone fireplace (named in a photo caption)
+  - title: Outdoors
+    items:
+      - Hot tub, described as secluded
+      - Deck or patio, porch and balcony
+      - Garden
+      - Barbecue grill
+  - title: Bathroom
+    items:
+      - Bathtub or shower; towels, soap, shampoo and hair dryer
+  - title: Entertainment
+    items:
+      - Board games and records
+  - title: Parking and access
+    items:
+      - Onsite parking
+locationNote: In the Cherry Lake neighborhood near Blue Ridge, Georgia, in a rural mountain area with the Chattahoochee National Forest about a one-minute walk away.
+distances:
+  - "Chattahoochee National Forest: about a 1-minute walk"
+  - "Blue Ridge Scenic Railway: about 11 minutes by car"
+  - "Blue Ridge Lake: about 18 minutes by car"
+  - "Amicalola Falls State Park: about 40 minutes by car"
+checkIn: "4:00 PM"
+checkOut: "10:00 AM"
+guestNotes:
+  - "Guests call it clean and well stocked, including kitchen staples."
+  - "The hot tub and deck are frequent highlights, along with mountain views and a quiet, private feel."
+  - "Reviewers say it suits couples, and some mention a dog bed and dog treats."
+  - "Guests report host communication as responsive."

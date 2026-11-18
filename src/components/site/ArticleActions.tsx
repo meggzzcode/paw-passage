@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { affiliateUsage } from "@/content/affiliate-usage";
+import { site } from "@/config/site";
 
 /** Print and copy-link buttons. No third-party scripts. */
-export function ArticleActions() {
+export function ArticleActions({ slug, title }: { slug?: string; title?: string } = {}) {
   const [state, setState] = useState<"idle" | "copied" | "failed">("idle");
   async function copy() {
     const url = window.location.href;
@@ -31,6 +32,9 @@ export function ArticleActions() {
     <div className="no-print mt-5 flex flex-wrap items-center justify-center gap-2">
       <button type="button" onClick={() => window.print()} className={btn}>Print</button>
       <button type="button" onClick={copy} className={btn}>{state === "copied" ? "Copied" : "Copy link"}</button>
+      {slug && title && site.siteUrl && (
+        <a href={`https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent(`${site.siteUrl}/guides/${slug}`)}&media=${encodeURIComponent(`${site.siteUrl}/pins/${slug}.jpg`)}&description=${encodeURIComponent(title)}`} target="_blank" rel="noopener noreferrer" className={btn}>Save to Pinterest</a>
+      )}
       <span role="status" aria-live="polite" className="sr-only">{state === "copied" ? "Link copied" : state === "failed" ? "Could not copy the link" : ""}</span>
       {state === "failed" && <span className="text-sm text-muted-foreground">Copy it from the address bar.</span>}
     </div>

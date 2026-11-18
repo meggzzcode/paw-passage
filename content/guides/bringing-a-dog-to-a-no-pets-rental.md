@@ -33,6 +33,7 @@ relatedGuides:
 relatedTools:
   - checklist
   - pet-cost-check
+  - will-my-dog-be-accepted
 sources:
   - title: Ground rules for home guests
     url: https://www.airbnb.com/help/article/2894
@@ -81,6 +82,38 @@ sources:
   - title: Guest brought a dog in a no pet home (community thread)
     url: https://airhostsforum.com/t/guest-brought-a-dog-in-a-no-pet-home/59098
     publisher: Airhosts Forum
+    accessedOn: 2026-11-18
+  - title: Reservation information
+    url: https://www.tahoevacationrentals.com/reservation-information/
+    publisher: Tahoe Vacation Rentals
+    accessedOn: 2026-11-18
+  - title: Policies
+    url: https://cabin-rentals-of-georgia.com/policies
+    publisher: Cabin Rentals of Georgia
+    accessedOn: 2026-11-18
+  - title: Pet Policy
+    url: https://www.brindleybeach.com/node/3691
+    publisher: Brindley Beach Vacations
+    accessedOn: 2026-11-18
+  - title: Rental policies
+    url: https://www.surforsound.com/vacation-planning/rental-policies/
+    publisher: Surf or Sound Realty
+    accessedOn: 2026-11-18
+  - title: Pet-friendly cabins
+    url: https://www.ashevillecabins.com/accommodations/pet-friendly-cabins/
+    publisher: Asheville Cabins of Willow Winds
+    accessedOn: 2026-11-18
+  - title: Frequently asked questions
+    url: https://hearthsidecabinrentals.com/frequently-asked-questions
+    publisher: Hearthside Cabin Rentals
+    accessedOn: 2026-11-18
+  - title: Rental policies
+    url: https://www.auntbugs.com/rental-policies/
+    publisher: Aunt Bugs Cabin Rentals
+    accessedOn: 2026-11-18
+  - title: Pet-friendly cabins in Gatlinburg and Pigeon Forge
+    url: https://www.bearcampcabins.com/blog/gatlinburg-cabins-pigeon-forge-pet-friendly-cabins
+    publisher: Bear Camp Cabins
     accessedOn: 2026-11-18
 research:
   primaryKeyword: bring a dog to an Airbnb that doesn't allow pets
@@ -147,34 +180,49 @@ approvedOn: 2026-11-18
 
 You found the perfect cabin, the dates work, and the listing says "no pets." Your dog is a quiet, trained, nine-year-old who has never chewed anything, and you are wondering whether anyone would really know. It is a fair thing to wonder, and the honest answer is that you are better off asking.
 
-This guide covers what Airbnb and Vrbo say, what hosts describe when a guest brings a dog anyway, and what to do instead. It is general information, not legal advice; rules vary by place and host.
+This guide covers what the platforms and managers say happens when a guest brings a dog anyway, and what to do instead. It is general information, not legal advice; rules vary by place and host.
 
 ## The short answer
 
 - Airbnb's ground rules say guests should not bring pets into a listing designated "no pets" in the house rules. [[1]](https://www.airbnb.com/help/article/2894) Vrbo says travelers must accept the house rules before they can complete a booking. [[6]](https://help.vrbo.com/articles/What-are-House-Rules)
-- What happens next is mostly the host's call. Airbnb lists contacting the guest, an honest review and reporting to Airbnb among host options. [[1]](https://www.airbnb.com/help/article/2894) Hosts in community threads describe fees, deposit deductions and being asked to leave, but those are anecdotes, not policy.
-- The Airbnb and Vrbo pages we read do not give a fixed penalty for a hidden pet, so we do not state one.
+- What happens next is mostly the host's call; Airbnb lists contacting the guest, an honest review and a report among the options. [[1]](https://www.airbnb.com/help/article/2894)
+- Neither platform publishes a fixed penalty, but 11 of the 38 managers in our dataset do: charges of $200 to $1,000, doubled fees, or being asked to leave. The details are [below](#what-happens-when-a-dog-is-not-declared-or-not-allowed).
 - Service animals are not pets under Airbnb's and Vrbo's policies, but a pet is not a service animal, and emotional support animals are a separate category. [[5]](https://www.airbnb.com/help/article/1869) [[7]](https://help.vrbo.com/articles/What-is-HomeAway-s-service-animal-policy) [[8]](https://www.ada.gov/resources/service-animals-faqs/)
 - The better routes: ask the host first, filter for dog-friendly stays, or, if you already booked, tell the host before you arrive.
 
 ## Is it allowed?
 
-**No, if the house rules say no pets: the platforms treat the rule as one you agree to.** Airbnb says guests are required to follow the host's rules around pets. [[2]](https://www.airbnb.com/help/article/2135/S) Vrbo says house rules show what is and is not allowed before a guest inquires or books, and that guests must accept them before completing a booking. [[6]](https://help.vrbo.com/articles/What-are-House-Rules)
+**No, if the house rules say no pets: the platforms treat the rule as one you agree to.** Airbnb says guests are required to follow the host's rules around pets. [[2]](https://www.airbnb.com/help/article/2135/S) Vrbo says guests must accept the house rules before completing a booking. [[6]](https://help.vrbo.com/articles/What-are-House-Rules)
 
-Two details matter. Airbnb says hosts set their own pet rules, and even where pets are allowed it encourages you to check with the host first, for example about furniture. [[2]](https://www.airbnb.com/help/article/2135/S) [[3]](https://www.airbnb.com/help/article/86) And a host who wrote "no pets" can change their mind: Airbnb's fee page says a host who previously chose "No pets allowed" and then adds a pet fee has the listing changed to "Pets allowed." [[4]](https://www.airbnb.com/help/article/3623)
+A host who wrote "no pets" can also change their mind: Airbnb's fee page says a host who previously chose "No pets allowed" and then adds a pet fee has the listing changed to "Pets allowed." [[4]](https://www.airbnb.com/help/article/3623)
 
-## What can a host or platform do?
+## What happens when a dog is not declared or not allowed?
 
-**A host can contact you, document the problem, ask the platform for payment, leave an honest review or report it; beyond that, the pages we read do not say.** Airbnb's guest ground rules list those host options and say talking to the guest is often the fastest route. [[1]](https://www.airbnb.com/help/article/2894) Airbnb's animal-safety page says that when a policy is broken it takes appropriate action, including educating hosts and guests, issuing warnings or removing accounts. [[2]](https://www.airbnb.com/help/article/2135/S)
+**The platforms leave the penalty to the host, and managers who write theirs down mostly choose a charge, a removal, or both.** Airbnb's ground rules let a host contact you, document the problem, ask the platform for payment, leave an honest review or report it. [[1]](https://www.airbnb.com/help/article/2894) Airbnb's animal-safety page adds that when a policy is broken it takes appropriate action, including educating hosts and guests, issuing warnings or removing accounts. [[2]](https://www.airbnb.com/help/article/2135/S) Neither Airbnb nor Vrbo publishes a fixed fine for a hidden pet.
 
-Vrbo's house-rules page does not describe how those rules are enforced, and we could not load its other help pages on this. We found no official figure for a fine or a penalty on either site, so we do not give one.
+Individual managers do. In our dataset of 38 managers (a convenience sample, read 2026-11-18), 11 describe a specific penalty. Eight are below, each re-read on its live page on 2026-11-18:
 
-### What hosts and guests describe (anecdotes)
+| Manager (place) | What its page says happens | Source |
+| --- | --- | --- |
+| Tahoe Vacation Rentals (Lake Tahoe) | $300 per pet, non-refundable, for a pet in a non-pet-friendly home, and guests are asked to vacate immediately | [[13]](https://www.tahoevacationrentals.com/reservation-information/) |
+| Cabin Rentals of Georgia (Blue Ridge) | All pet fees doubled if an unauthorized dog is found | [[14]](https://cabin-rentals-of-georgia.com/policies) |
+| Brindley Beach Vacations (Outer Banks) | Eviction without refund for a dog in a home not designated "Dogs Welcome" | [[15]](https://www.brindleybeach.com/node/3691) |
+| Surf or Sound Realty (Hatteras Island) | $400 per dog for an undeclared dog ($200 dog fee plus $200); a non-dog-friendly home adds flea treatment and carpet cleaning; grounds for expedited eviction and forfeited rent | [[16]](https://www.surforsound.com/vacation-planning/rental-policies/) |
+| Asheville Cabins of Willow Winds (Asheville) | $200 cleaning fee to the card on file; guests who break pet rules may be asked to leave with no refund | [[17]](https://www.ashevillecabins.com/accommodations/pet-friendly-cabins/) |
+| Hearthside Cabin Rentals (Pigeon Forge/Gatlinburg) | Up to $500 for additional cleaning or misrepresentation | [[18]](https://hearthsidecabinrentals.com/frequently-asked-questions) |
+| Aunt Bugs Cabin Rentals (Gatlinburg/Pigeon Forge) | $500 fine, and you must vacate with no refund | [[19]](https://www.auntbugs.com/rental-policies/) |
+| Bear Camp Cabins (Gatlinburg/Pigeon Forge) | Up to $1,000, immediate removal and all money paid forfeited | [[20]](https://www.bearcampcabins.com/blog/gatlinburg-cabins-pigeon-forge-pet-friendly-cabins) |
 
-These are single stories from public forums, not rules and not typical results:
+The other three are A Blue Ridge Vacation (an automatic $300 charge and possible eviction at non-pet-friendly homes), St. Simons Island Beach Rentals (immediate eviction and loss of monies paid) and Midgett Realty (possible eviction). Three more managers say unauthorized pets bring "additional charges" or damage charges without an amount.
 
-- In a BiggerPockets thread, a cabin host watched a guest sneak in a small dog on camera. Replies split: some said to message the guest and deduct something from the deposit, others said to let it go unless there was damage, with one mentioning extra cleaning for shedding. The thread never reports what the host did. [[11]](https://www.biggerpockets.com/forums/530/topics/812306-unauthorized-pet-in-str)
-- In an Airhosts Forum thread, a host found a dog on doorbell-camera footage the next morning. Other hosts advised contacting Airbnb to document it first, and one said they would leave an honest review and block the guest. The house turned out to be in fairly good shape, with dog hair on a duvet the main problem. [[12]](https://airhostsforum.com/t/guest-brought-a-dog-in-a-no-pet-home/59098)
+Read together, the 11 range from a $200 charge to $1,000, a doubled fee, or being asked to leave, and nine mention removal in some form. Surf or Sound makes a useful distinction: a dog in a dog-friendly home that you simply did not declare costs $400, while a dog in a home that bans them costs the same plus cleaning, with eviction on the table.
+
+### What hosts describe in forums (anecdotes)
+
+These are single stories, not rules and not typical results:
+
+- In a BiggerPockets thread, a cabin host watched a guest sneak in a small dog on camera. Replies split between messaging the guest and deducting from the deposit, and letting it go unless there was damage. The thread never says what the host did. [[11]](https://www.biggerpockets.com/forums/530/topics/812306-unauthorized-pet-in-str)
+- In an Airhosts Forum thread, a host found a dog on doorbell-camera footage the next morning. Other hosts advised contacting Airbnb to document it first, and one would leave an honest review and block the guest. The house was in fairly good shape, with dog hair on a duvet the main problem. [[12]](https://airhostsforum.com/t/guest-brought-a-dog-in-a-no-pet-home/59098)
 
 The point is not that you will get caught or that you will get away with it. Host reactions range widely, and you cannot control which kind of host you booked.
 
@@ -182,25 +230,17 @@ The point is not that you will get caught or that you will get away with it. Hos
 
 **Usually damage, allergies, insurance or liability, according to the people who run rentals.** A short-term-rental insurer's blog lists damage to furnishings, guests with severe dander allergies, insurance policies that may exclude pet-related losses, and dog-bite liability even when the dog is not the host's. [[10]](https://www.proper.insure/blog/pros-and-cons-of-allowing-pets-at-your-rental/) Hosts in the BiggerPockets thread mention shedding and deep cleaning. [[11]](https://www.biggerpockets.com/forums/530/topics/812306-unauthorized-pet-in-str)
 
-We can only report that these are the reasons given. We cannot tell you which one applies to a particular host. That is worth knowing, because your message can address the likely worry: damage, cleaning, or the next guest's allergies.
+Which one applies depends on the host, so let your message address the likely worry: damage, cleaning, or the next guest's allergies.
 
-## What could happen, and what to do instead
+## What to do instead
 
-| What could happen | Who decides | What to do instead |
-| --- | --- | --- |
-| Host messages you, asks you to remove the dog or leave | The host; the platform may get involved | Ask before booking, or before arrival |
-| Extra charge or a deduction from a deposit | The host, then the platform's process or your agreement | Offer a pet fee up front; see our [pet fees guide](/guides/how-vacation-rental-pet-fees-work) |
-| Bad review or a report to the platform | The host; the platform for account action | Choose a listing that allows dogs |
-| Damage claim | The host, then the platform's resolution process | Confirm what a fee covers; Airbnb says pet fees cover expected cleaning, not unexpected damage [[4]](https://www.airbnb.com/help/article/3623) |
-| Losing the trip money if you have to leave | Your booking's cancellation policy [[9]](https://www.airbnb.com/help/article/149) | Check the policy before you book |
-
-Every row depends on the host, the platform and your booking terms. These are possibilities hosts describe, not predictions.
+Ask first, and offer a pet fee up front; our [pet fees guide](/guides/how-vacation-rental-pet-fees-work) explains how they work. Airbnb says pet fees cover expected cleaning, not unexpected damage, so a damage claim can still follow. [[4]](https://www.airbnb.com/help/article/3623) If you have to leave, what you get back depends on your booking's cancellation policy. [[9]](https://www.airbnb.com/help/article/149) Otherwise, choose a listing that allows dogs.
 
 ## What about service animals and emotional support animals?
 
 **A service animal is not a pet under Airbnb's, Vrbo's and the DOJ's wording; an emotional support animal is a different category.** Airbnb's Accessibility Policy says a service animal is not a pet and generally can accompany a guest on a home reservation regardless of rules that prohibit a pet. [[5]](https://www.airbnb.com/help/article/1869) Vrbo says service animals are not classified as pets and requires hosts in countries with service-animal laws to accommodate them regardless of the normal pet policy. [[7]](https://help.vrbo.com/articles/What-is-HomeAway-s-service-animal-policy)
 
-The ADA FAQ defines a service animal as a dog individually trained to do work or perform tasks for a person with a disability, and says emotional support animals, which provide comfort by being present, are not service animals. It adds that some state or local laws allow emotional support animals in public places. [[8]](https://www.ada.gov/resources/service-animals-faqs/) Airbnb's policy treats emotional support animals differently from service animals and says that outside the places where they must be accommodated, a host may decline a reservation if they do not accept pets. [[5]](https://www.airbnb.com/help/article/1869)
+The ADA FAQ defines a service animal as a dog individually trained to do work or perform tasks for a person with a disability, and says emotional support animals are not service animals. [[8]](https://www.ada.gov/resources/service-animals-faqs/) Airbnb treats emotional support animals differently and says a host may decline a reservation if they do not accept pets, outside the places where they must be accommodated. [[5]](https://www.airbnb.com/help/article/1869)
 
 If your dog is a service animal, read the platform policies above and ask the platform if unsure. If your dog is a pet, do not describe it as a service animal to get around a rule. Our [pet fees guide](/guides/how-vacation-rental-pet-fees-work) covers how fees are handled for service animals.
 
@@ -212,7 +252,7 @@ Copy and paste, then edit:
 
 > Hi [name], we love your place and would like to book [dates]. The listing says no pets, and we wanted to ask before booking rather than assume. We would bring one [breed/size], [age], who is house-trained and [crate-trained]. We would be glad to pay a pet fee, share her up-to-date vaccination record, keep her crated when we are out, and keep her off the furniture and beds. It would be a short stay of [number] nights. If this is not something you allow, no problem at all, and we will look elsewhere. Thank you.
 
-Keep it short, give the host a way to say no, and keep the answer in writing in the booking thread.
+Keep it short, give the host a way to say no, and keep the answer in the booking thread.
 
 ## How do I find a place that actually allows dogs?
 
@@ -222,7 +262,7 @@ Then confirm with the host. A pet-friendly label does not mean your dog's size o
 
 ## What if I already booked a no-pets place?
 
-**Contact the host before arrival and check your cancellation terms.** Airbnb says you can find the cancellation policy under your trip's reservation details, and that the refund depends on the policy and when you cancel. [[9]](https://www.airbnb.com/help/article/149) We could not read Vrbo's equivalent page, so check the terms on your Vrbo booking.
+**Contact the host before arrival and check your cancellation terms.** Airbnb says you can find the cancellation policy under your trip's reservation details, and that the refund depends on the policy and when you cancel. [[9]](https://www.airbnb.com/help/article/149) On Vrbo, find the terms on your booking.
 
 1. Open your booking and read the pet line in the house rules and the cancellation policy.
 2. Send the message above, adjusted to say you booked and would like to confirm the dog.
@@ -234,7 +274,13 @@ Waiting until check-in leaves you with less time and fewer options.
 
 Message the host now, honestly, rather than waiting for them to find out. Say the dog is with you, that you should have asked first, and offer a fee and the steps above. If they say no, ask what they would accept and whether the platform can help with the booking, and have a plan for the dog such as a boarding facility or a nearby dog-friendly stay. Save the messages.
 
-We cannot say how a given host or the platform will respond. Telling them yourself at least gives you the chance to explain, which you do not get if they find out first.
+Telling them yourself gives you the chance to explain, which you do not get if they find out first. Our [will-my-dog-be-accepted tool](/tools/will-my-dog-be-accepted) can help you find a stay that fits.
+
+## How sure we are
+
+- **Confirmed by a source we cite:** the platform rules above come from Airbnb's, Vrbo's and the Department of Justice's help pages, and the manager penalties from each manager's own page, re-read on 2026-11-18. Three of the eleven (A Blue Ridge Vacation, St. Simons Island Beach Rentals, Midgett Realty) come from earlier readings of their pages in our dataset; their sites blocked our automated re-read.
+- **What most people report:** 11 of 38 managers state a specific penalty. It is a small convenience sample of managers whose sites we could read, not a random one, and policies change.
+- **Unknown:** what your own host will do. Ask them, in writing, before you book.
 
 ## A final checklist
 

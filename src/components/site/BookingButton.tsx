@@ -13,7 +13,7 @@ export function BookingButton({ stay }: { stay: Stay }) {
     <a
       href={link.url}
       target="_blank"
-      rel="sponsored noopener noreferrer"
+      rel="sponsored nofollow noopener noreferrer"
       onClick={() => trackOutbound({ stay: stay.slug, partner: link.network, url: link.url, page: loc.pathname })}
       className="inline-flex h-12 items-center justify-center rounded-full bg-terracotta px-7 font-medium text-terracotta-foreground transition hover:brightness-95"
     >

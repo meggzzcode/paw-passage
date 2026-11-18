@@ -17,9 +17,9 @@ faqs:
   - q: Can you leave a dog alone in a vacation rental if the listing is pet-friendly?
     a: Not automatically. Pet-friendly usually answers whether dogs may stay, not whether they may be left alone, and some policies explicitly ban leaving pets unattended.
   - q: How long can a dog be left alone in a rental?
-    a: No source we read gives a limit that fits every dog. One commentator describes about four hours as a comfortable range for an adult dog, to be adjusted for each dog, and a new place can make a dog less settled than at home.
+    a: There is no standard answer. The ASPCA's principle is to plan absences shorter than the time it takes your dog to become upset, and a new place can make that time shorter than at home.
   - q: Can I use a pet camera in a vacation rental?
-    a: Airbnb's camera policy is written for hosts and does not address guests' own devices, so we cannot say. Ask the host before setting one up.
+    a: Airbnb's camera policy is written for hosts and does not address guests' own devices. Ask the host before setting one up.
   - q: Should I crate my dog in a vacation rental?
     a: If the host requires a crate, follow the rule. The ASPCA says a crate helps some dogs and adds stress for others, so only use one your dog already accepts.
   - q: Is it safe to leave a dog alone during a storm or fireworks?
@@ -82,6 +82,22 @@ sources:
   - title: Are these reasonable rules for dogs?
     url: https://airhostsforum.com/t/are-these-reasonable-rules-for-dogs/24289
     publisher: Airhosts Forum (host community thread)
+    accessedOn: 2026-11-18
+  - title: Policies
+    url: https://cabin-rentals-of-georgia.com/policies
+    publisher: Cabin Rentals of Georgia
+    accessedOn: 2026-11-18
+  - title: Pet Policy
+    url: https://www.brindleybeach.com/node/3691
+    publisher: Brindley Beach Vacations
+    accessedOn: 2026-11-18
+  - title: Frequently asked questions
+    url: https://hearthsidecabinrentals.com/frequently-asked-questions
+    publisher: Hearthside Cabin Rentals
+    accessedOn: 2026-11-18
+  - title: Pet-friendly cabins in Gatlinburg and Pigeon Forge
+    url: https://www.bearcampcabins.com/blog/gatlinburg-cabins-pigeon-forge-pet-friendly-cabins
+    publisher: Bear Camp Cabins
     accessedOn: 2026-11-18
 research:
   primaryKeyword: can you leave a dog alone in a vacation rental
@@ -152,21 +168,21 @@ You booked a cabin that says dogs are welcome, and the plan includes a dinner re
 
 - It depends on the listing. Airbnb's hosting guidance says hosts should state in their house rules whether it is okay to leave a pet unattended. [[2]](https://www.airbnb.com/resources/hosting-homes/a/what-you-need-to-know-about-hosting-pets-463)
 - "Pet-friendly" does not answer it. A Booking.com guide says some pet policies explicitly state pets must not be left unattended, while others allow short absences if the pet is crated and unlikely to cause disturbance or damage. [[10]](https://www.booking.com/articles/pet-friendly-holiday-rentals-tips.html)
-- No source we read gives one safe number of hours. One commentator describes about four hours as a comfortable range for an adult dog, to be adjusted for each dog. [[9]](https://www.psychologytoday.com/gb/blog/all-dogs-go-heaven/201802/how-long-is-too-long-leave-dog-home-alone)
+- There is no standard number of safe hours; it depends on your dog, and the ASPCA's test is whether you are back before your dog gets upset. [[5]](https://www.aspca.org/pet-care/dog-care/common-dog-behavior-issues/separation-anxiety)
 - A new place changes things. A dog that is fine alone at home may howl or be destructive in unfamiliar surroundings. [[11]](https://www.afar.com/magazine/how-to-find-a-pet-friendly-airbnb-or-vacation-rental)
 - Get the host's answer in writing before booking. A message you can copy is below.
 
-This is general information; rules vary by place and host.
+In our dataset of 38 managers, four state a crate rule or a no-unattended rule, quoted below. This is general information; rules vary by place and host.
 
 ## Is it allowed?
 
-**Direct answer:** Only if the listing's house rules, or the host in writing, say so. Airbnb says a listing's pet policy is in its House rules section, and Vrbo says guests must agree to the house rules before they book. If the rules are silent, you do not have permission by default; you have an unanswered question. [[1]](https://www.airbnb.com/help/article/86) [[4]](https://help.vrbo.com/articles/What-are-House-Rules)
+Only if the listing's house rules, or the host in writing, say so. Airbnb says a listing's pet policy is in its House rules section, and Vrbo says guests must agree to the house rules before they book. If the rules are silent, you have an unanswered question, not permission. [[1]](https://www.airbnb.com/help/article/86) [[4]](https://help.vrbo.com/articles/What-are-House-Rules)
 
-Vrbo describes house rules as what is and is not allowed at the property, shown before a guest inquires or books, with pets, number, type and size limits among them, plus up to three custom rules. [[4]](https://help.vrbo.com/articles/What-are-House-Rules) The Airbnb and Vrbo help pages we read do not set a platform-wide rule on leaving pets alone; they leave it to each host. Our [Airbnb vs Vrbo guide](/guides/airbnb-vs-vrbo-with-a-dog) covers other differences.
+Vrbo describes house rules as what is and is not allowed at the property, shown before a guest inquires or books, with pets, number, type and size limits among them, plus up to three custom rules. [[4]](https://help.vrbo.com/articles/What-are-House-Rules) Neither platform sets a rule on leaving pets alone; both leave it to each host. Our [Airbnb vs Vrbo guide](/guides/airbnb-vs-vrbo-with-a-dog) covers other differences.
 
 ## What do hosts actually write?
 
-**Direct answer:** Wording varies, so read it literally. Examples from a public host forum show a flat ban, a ban with exceptions, and a conditional allowance. Treat these as examples of how hosts write, not as rules for your rental.
+Wording varies, so read it literally. A public host forum shows a flat ban, a ban with exceptions, and a conditional allowance.
 
 In one 2018 forum thread, a host posted a rule that "dogs must not be left on their own except by prior arrangement." Other hosts in the same thread described "your dog is not to be left alone in the apartment" and "Do NOT leave your dog at the cabin unattended." A 2022 reply said dogs should never be left unattended, indoors or outdoors, because unattended dogs cause problems for neighbors. [[12]](https://airhostsforum.com/t/are-these-reasonable-rules-for-dogs/24289)
 
@@ -178,11 +194,20 @@ In one 2018 forum thread, a host posted a rule that "dogs must not be left on th
 | Pets mentioned, nothing about alone time | Unknown | Ask before booking, and keep the reply |
 | "No furniture" or "not on beds or sofas" | Not about alone time, but it matters when no one is watching | Pack a bed or throw and ask what is allowed |
 
+**What managers say.** Four managers in our dataset (38 managers, convenience sample, re-read on their live pages 2026-11-18) wrote an alone-time rule, and no two match:
+
+- Cabin Rentals of Georgia: no dog is to be left unattended in the cabin while the guest is away. [[13]](https://cabin-rentals-of-georgia.com/policies)
+- Brindley Beach Vacations: never leave dogs alone in the beach house unless they are in a crate, and never lock a dog in a bedroom. [[14]](https://www.brindleybeach.com/node/3691)
+- Hearthside Cabin Rentals: pets must be crated when left alone. [[15]](https://hearthsidecabinrentals.com/frequently-asked-questions)
+- Bear Camp Cabins: pets must be crated if left alone on the property in its pet policy, while another line recommends it. [[16]](https://www.bearcampcabins.com/blog/gatlinburg-cabins-pigeon-forge-pet-friendly-cabins)
+
+So expect "never", "only crated", or "crate recommended". None of the pages we re-read mentions cameras.
+
 Airbnb's guest help says to tell the host about any pets you plan to bring and confirm restrictions, such as pets being barred from beds or sofas. [[1]](https://www.airbnb.com/help/article/86) Our [rental checklist](/guides/pet-friendly-vacation-rental-checklist) lists the other questions to settle first.
 
 ## What about noise and neighbors?
 
-**Direct answer:** Barking is the usual way an absence becomes a problem. A dog left in an unfamiliar place may howl, and one guide notes that barking can alert a nearby host. Hosts and neighbors judge by what they hear, not by how long you were gone. [[11]](https://www.afar.com/magazine/how-to-find-a-pet-friendly-airbnb-or-vacation-rental)
+Barking is the usual way an absence becomes a problem. A dog left in an unfamiliar place may howl, and one guide notes that barking can alert a nearby host. Hosts and neighbors judge by what they hear, not by how long you were gone. [[11]](https://www.afar.com/magazine/how-to-find-a-pet-friendly-airbnb-or-vacation-rental)
 
 Booking.com's guide advises against leaving pets alone if they do not handle unfamiliar settings well or bark constantly when left alone. [[10]](https://www.booking.com/articles/pet-friendly-holiday-rentals-tips.html) If your dog does either at home, treat that as a no for the rental too.
 
@@ -190,13 +215,13 @@ Cabins and duplexes can have close neighbors or a host next door. Ask whether an
 
 ## Can I use a crate, and what about the furniture?
 
-**Direct answer:** Follow the listing, and only crate a dog that already accepts it. The ASPCA says a crate helps some dogs and adds stress for others, and suggests a baby gate in one room if a dog is distressed in a crate. [[5]](https://www.aspca.org/pet-care/dog-care/common-dog-behavior-issues/separation-anxiety)
+Follow the listing, and only crate a dog that already accepts it. The ASPCA says a crate helps some dogs and adds stress for others, and suggests a baby gate in one room if a dog is distressed in a crate. [[5]](https://www.aspca.org/pet-care/dog-care/common-dog-behavior-issues/separation-anxiety)
 
-Airbnb's hosting guide does not mention crates. [[2]](https://www.airbnb.com/resources/hosting-homes/a/what-you-need-to-know-about-hosting-pets-463) We found no platform standard, so ask whether the host requires a crate, forbids one, or has space for yours. Our [two-dog guide](/guides/traveling-with-two-dogs-accommodation-guide) covers extra gear for two dogs, and the [cabin packing list](/guides/dog-friendly-cabin-packing-list) covers beds and throws.
+Airbnb's hosting guide does not mention crates. [[2]](https://www.airbnb.com/resources/hosting-homes/a/what-you-need-to-know-about-hosting-pets-463) Ask whether the host requires a crate, forbids one, or has space for yours. Our [two-dog guide](/guides/traveling-with-two-dogs-accommodation-guide) covers extra gear for two dogs, and the [cabin packing list](/guides/dog-friendly-cabin-packing-list) covers beds and throws.
 
 ## Can I leave a pet camera on?
 
-**Direct answer:** Do not assume so. Airbnb's policy says hosts may not have cameras or recording devices that monitor indoor spaces, and it defines these as any device that records or transmits video, images or audio. The page does not address guests' own devices, so we cannot tell you whether a guest camera is allowed. [[3]](https://www.airbnb.com/help/article/3061)
+Not without asking. Airbnb's policy says hosts may not have cameras or recording devices that monitor indoor spaces, and it defines these as any device that records or transmits video, images or audio. The page does not address guests' own devices. [[3]](https://www.airbnb.com/help/article/3061)
 
 What the page does say, about hosts:
 
@@ -204,11 +229,11 @@ What the page does say, about hosts:
 - Exterior cameras are allowed and must be disclosed in the listing, including where they are.
 - Noise decibel monitors must be disclosed, though their locations need not be.
 
-For a guest, the practical step is to ask the host before bringing a camera or any device that records or transmits. The policy also means you may see disclosed exterior cameras or noise monitors, which is worth knowing if your dog will be on the porch. We did not read Vrbo's camera rules, so check them on the listing.
+For a guest, the practical step is to ask the host before bringing a camera or any device that records or transmits. The policy also means you may see disclosed exterior cameras or noise monitors, which is worth knowing if your dog will be on the porch.
 
 ## What are the safety risks?
 
-**Direct answer:** Heat and cold, escape, and stress are the main ones, and a rental makes each harder to predict. The sources below are general pet guidance, not rental rules.
+Heat and cold, escape, and stress are the main ones, and a rental makes each harder to predict. These sources are general pet guidance, not rental rules.
 
 - **Heat.** The ASPCA says never to leave animals alone in a parked vehicle, and to give plenty of fresh water and a shady place. [[6]](https://www.aspca.org/pet-care/general-pet-care/hot-weather-safety-tips) Do not solve "dogs not allowed on the trail" by leaving the dog in the car. Check how the rental heats and cools before you go.
 - **Cold.** The ASPCA says a car can hold the cold and cause animals to freeze, and that pets need a warm place to sleep, off the floor and away from drafts. [[7]](https://www.aspca.org/pet-care/general-pet-care/cold-weather-safety-tips)
@@ -216,9 +241,9 @@ For a guest, the practical step is to ask the host before bringing a camera or a
 
 ## How long is too long?
 
-**Direct answer:** There is no single credible number. Jessica Pierce, writing in Psychology Today, says trainers and veterinarians loosely agree that about four hours is a comfortable range for an adult dog, to be adjusted for each dog, and that puppies should be left for shorter periods. [[9]](https://www.psychologytoday.com/gb/blog/all-dogs-go-heaven/201802/how-long-is-too-long-leave-dog-home-alone) Treat that as a loose reference, not a rental rule.
+**There is no agreed number, so judge your dog.** The ASPCA's principle is to plan absences shorter than the time it takes your dog to become upset. [[5]](https://www.aspca.org/pet-care/dog-care/common-dog-behavior-issues/separation-anxiety) In a new place that time may be shorter than at home, so assume less on day one.
 
-To judge your dog, use the ASPCA's principle: plan absences shorter than the time it takes for your dog to become upset. [[5]](https://www.aspca.org/pet-care/dog-care/common-dog-behavior-issues/separation-anxiety) In a new place that time may be shorter than at home, so assume less on day one.
+If you want a ballpark, a 2018 Psychology Today column by Jessica Pierce says trainers and veterinarians loosely agree on about four hours for an adult dog, with puppies left for less. [[9]](https://www.psychologytoday.com/gb/blog/all-dogs-go-heaven/201802/how-long-is-too-long-leave-dog-home-alone) That is one writer's summary, not a study or a veterinary guideline, and it is no rental rule, so use it only as a starting point.
 
 ## When should you not leave your dog?
 
@@ -247,7 +272,13 @@ Copy and paste this, filled in with your details:
 
 "Hi, we are considering booking [dates] with one [size] dog, [age]. Your house rules mention pets. Are we allowed to leave the dog alone in the rental for a short time, for example a dinner or a few hours, and if so are there conditions such as a crate or a time limit? Is the dog permitted on furniture and beds? Does anyone live on the property or nearby who might hear barking? Are there any cameras or noise monitors we should know about? We would be grateful for a written reply, and we will follow your rules."
 
-Then confirm the totals in our [pet fees guide](/guides/how-vacation-rental-pet-fees-work) and the [pet cost tool](/tools/pet-cost-check).
+Then confirm the totals in our [pet fees guide](/guides/how-vacation-rental-pet-fees-work) and the [pet cost tool](/tools/pet-cost-check), and check your dog against a stay with the [will-my-dog-be-accepted tool](/tools/will-my-dog-be-accepted).
+
+## How sure we are
+
+- **Confirmed by a source we cite:** what Airbnb's hosting and camera pages say, the ASPCA and Cornell guidance, and the four manager rules above.
+- **What most people report:** four of 38 managers state an alone-time rule; that is a small convenience sample, and a few forum posts show how hosts word theirs.
+- **Unknown:** your host's rule, any guest-camera rule, and how long your dog copes in a new place. Ask the host, and test your dog.
 
 ## Before you book
 
@@ -258,4 +289,4 @@ Then confirm the totals in our [pet fees guide](/guides/how-vacation-rental-pet-
 - [ ] Your dog has stayed calmly alone before, and you have a first-night plan.
 - [ ] ID tag and microchip details are current.
 
-Add the answers to your [trip checklist](/tools/checklist).
+Add the answers to your [trip checklist](/tools/checklist) and your [packing list](/tools/packing-list).

@@ -17,15 +17,15 @@ export const guide: Guide = {
   heroImage: "gear-feeding",
   body: `## The short answer
 
+It is 90 degrees, you are two hours from the cabin, and the bowl you packed holds one cup. The gear matters less than the plan for water, shade and where the food sleeps.
+
 - Pack water from home or bottled water: the ASPCA says drinking water from an unfamiliar area could upset a pet's stomach. [[2]](https://www.aspca.org/news/traveling-pets-follow-these-expert-dos-and-donts-keep-them-safe)
 - Never leave a dog alone in a parked car. The CDC says temperatures can rise within minutes and cause death, and no bowl or bottle changes that. [[1]](https://www.cdc.gov/healthy-pets/travel/index.html)
 - Pick a bowl or bottle by capacity (how long until your next refill), packed size and how easy it is to clean.
 - "Airtight" is not "bear-resistant." In bear country, where dog food is kept matters more than the container. [[5]](https://bearwise.org/six-bearwise-basics/never-leave-pet-food-outdoors/)
-- Our five picks are chosen on maker-published specs, not tested; see "Our five picks" below.
+- Our five picks are chosen on maker-published specs; see "Our five picks" below.
 
 ## Hydration and heat come first
-
-Gear only helps if it gets water into a dog that needs it.
 
 **Pack water for the trip.** The CDC tells people travelling by car to pack water and food along with a bowl, leash, waste bags and the rest of a travel kit. [[1]](https://www.cdc.gov/healthy-pets/travel/index.html) The ASPCA recommends bottled water or water from home on a road trip. [[2]](https://www.aspca.org/news/traveling-pets-follow-these-expert-dos-and-donts-keep-them-safe) Plan container capacity around your longest gap between refills, not around the size of the bowl.
 
@@ -35,7 +35,7 @@ Gear only helps if it gets water into a dog that needs it.
 
 **Lakes, pools and beaches.** The ASPCA says to bring fresh water and keep pets from drinking pool or ocean water. [[3]](https://www.aspca.org/pet-care/general-pet-care/hot-weather-safety-tips) A squeeze bottle lets you offer a drink every time your dog heads for the shoreline.
 
-**Feeding before travel.** The CDC says to feed your pet three to four hours before leaving to help prevent car sickness or vomiting. [[1]](https://www.cdc.gov/healthy-pets/travel/index.html) The ASPCA gives the same timing, says not to feed a pet in a moving vehicle, and on longer rides to offer only an occasional small snack. [[2]](https://www.aspca.org/news/traveling-pets-follow-these-expert-dos-and-donts-keep-them-safe) We do not repeat the claim some roundups make that raised bowls reduce bloat risk; our sources do not make it, so ask your vet, especially for deep-chested breeds.
+**Feeding before travel.** The CDC says to feed your pet three to four hours before leaving to help prevent car sickness or vomiting. [[1]](https://www.cdc.gov/healthy-pets/travel/index.html) The ASPCA gives the same timing, says not to feed a pet in a moving vehicle, and on longer rides to offer only an occasional small snack. [[2]](https://www.aspca.org/news/traveling-pets-follow-these-expert-dos-and-donts-keep-them-safe) Ask your vet about raised bowls and bloat, especially for deep-chested breeds.
 
 ## What to look for in a collapsible bowl
 
@@ -81,7 +81,7 @@ For a weekend, a small container or soft bag is easier to carry than a large bin
 
 ## Our five picks
 
-These five are criteria- and spec-based picks, not tested picks. Each maker's own page states specifications that match the criteria above, accessed on 16 November 2026. We have not used the products and make no claim about how they perform in your hands, so check the page again before you buy.
+These five are criteria- and spec-based picks, not tested picks. Each maker's own page states specifications that match the criteria above, accessed on 16 November 2026. We have not used the products, so check the maker's page again before you buy.
 
 **Kurgo Collaps A Bowl.** 24-ounce capacity, collapsed height under one inch, food-grade silicone described as PVC and BPA free, top-rack dishwasher safe, and a Lifetime Guarantee covering manufacturing defects. 24 ounces is small for a large dog on a hot day.
 
@@ -108,22 +108,13 @@ These five are criteria- and spec-based picks, not tested picks. Each maker's ow
 
 With two dogs, double the water first; see our [two-dog travel guide](/guides/traveling-with-two-dogs-accommodation-guide) and [large-dog rental guide](/guides/vacation-rentals-that-welcome-large-dogs).
 
-## Packing list for water and feeding
-
-- Water from home or bottled water, in a bottle you can serve one-handed.
-- A collapsible bowl or bottle with attached bowl.
-- Dog food in a sealed container or bag, plus a second for treats.
-- A photo of the food bag label for lot and best-by information.
-- Waste bags, a towel to wipe bowls, and a small bottle of dish soap for cabins.
-- Any medications your vet has prescribed.
-
-The CDC's list also includes a leash, grooming supplies, first-aid items and travel papers such as proof of rabies vaccination. [[1]](https://www.cdc.gov/healthy-pets/travel/index.html) Add these to our [trip checklist](/tools/checklist), and see our [rental checklist](/guides/pet-friendly-vacation-rental-checklist) for what to confirm with the host.
+The CDC's travel kit list also includes a leash, grooming supplies, first-aid items and travel papers such as proof of rabies vaccination. [[1]](https://www.cdc.gov/healthy-pets/travel/index.html) Add these to our [trip checklist](/tools/checklist), and see our [rental checklist](/guides/pet-friendly-vacation-rental-checklist) for what to confirm with the host.
 
 ## How we choose and how this site earns money
 
 We pick products using the criteria in this guide and check specifications on each maker's own page, recording the page and date. We state no prices and publish no ratings. A product can meet the criteria and still not suit your dog.
 
-Some links on this site are affiliate links. When an article contains one, a notice appears at the top of the article and the link is marked as sponsored. If you buy through an affiliate link, Paws & Passage may earn a commission at no extra cost to you. A commission never changes which products we list or what we say about them. Read the full [affiliate disclosure](/affiliate-disclosure).
+When a link is an affiliate link it is marked sponsored and the page says so; read our [affiliate disclosure](/affiliate-disclosure). A commission never changes which products we list or what we say about them.
 
 ## Final checklist
 
@@ -134,7 +125,9 @@ Some links on this site are affiliate links. When an article contains one, a not
 - You have asked the host or park what is required for food storage.
 - Food, bowls and treats stay indoors or as directed, never on a porch or deck.
 - Bowls and bottles are rinsed and dried during the trip.
-- Your vet has answered any feeding or hydration questions specific to your dog.`,
+- Your vet has answered any feeding or hydration questions specific to your dog.
+
+Next step: run your plan through the [trip checklist](/tools/checklist) so the bowl, bottle and food container get packed with everything else.`,
   faqs: [
     {
       q: "Should I bring water from home for a road trip with my dog?",

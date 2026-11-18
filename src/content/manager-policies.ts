@@ -1,7 +1,7 @@
 // Built from our reading of 38 vacation rental managers' public pet pages on 2026-11-18, each re-checked against the live page.
 // A sample of managers whose sites could be read, not a survey. Policies change and many vary by home.
 export interface ManagerPolicy {
-  name: string; place: string; url: string;
+  name: string; place: string; region: string; url: string;
   /** Stated limit, or null when the page gives none. */
   maxDogs: number | null;
   /** dogs: a dog limit; pets: a limit on pets of any kind; most-homes: usual limit, individual homes may differ. */
@@ -10,6 +10,8 @@ export interface ManagerPolicy {
   breedNamed?: string[];
   weight?: { lb: number; per: "each" | "combined"; soft?: boolean; note?: string };
   fee: string;
+  /** What the page says about dogs in a pool or hot tub, a minimum dog age, and leaving a dog alone. Absent when the page we read said nothing. */
+  pool?: string; minAge?: string; unattended?: string;
 }
 
 export const dataDate = "2026-11-18";
@@ -22,7 +24,9 @@ export const managerPolicies: ManagerPolicy[] = [
   "maxDogs": null,
   "limitBasis": "dogs",
   "breed": "not-stated",
-  "fee": "$40 per night"
+  "fee": "$40 per night",
+  "region": "California",
+  "unattended": "advisory only: may not want to leave dog in house alone"
  },
  {
   "name": "Tahoe Getaways",
@@ -31,7 +35,9 @@ export const managerPolicies: ManagerPolicy[] = [
   "maxDogs": 2,
   "limitBasis": "dogs",
   "breed": "not-stated",
-  "fee": "$35 per night"
+  "fee": "$35 per night",
+  "region": "California",
+  "minAge": "no dogs under 18 months"
  },
  {
   "name": "Tahoe Vacation Rentals",
@@ -40,7 +46,8 @@ export const managerPolicies: ManagerPolicy[] = [
   "maxDogs": 3,
   "limitBasis": "pets",
   "breed": "not-stated",
-  "fee": "$75 plus tax per pet"
+  "fee": "$75 plus tax per pet",
+  "region": "California"
  },
  {
   "name": "Tahoe Signature Properties",
@@ -49,7 +56,8 @@ export const managerPolicies: ManagerPolicy[] = [
   "maxDogs": 2,
   "limitBasis": "pets",
   "breed": "not-stated",
-  "fee": "$100"
+  "fee": "$100",
+  "region": "California"
  },
  {
   "name": "Vacasa",
@@ -58,7 +66,8 @@ export const managerPolicies: ManagerPolicy[] = [
   "maxDogs": null,
   "limitBasis": "dogs",
   "breed": "not-stated",
-  "fee": "Not stated"
+  "fee": "Not stated",
+  "region": "Many regions"
  },
  {
   "name": "AvantStay",
@@ -67,7 +76,8 @@ export const managerPolicies: ManagerPolicy[] = [
   "maxDogs": 2,
   "limitBasis": "most-homes",
   "breed": "not-stated",
-  "fee": "Not stated"
+  "fee": "Not stated",
+  "region": "California"
  },
  {
   "name": "SkyRun Vacation Rentals",
@@ -76,7 +86,8 @@ export const managerPolicies: ManagerPolicy[] = [
   "maxDogs": null,
   "limitBasis": "dogs",
   "breed": "not-stated",
-  "fee": "Not stated"
+  "fee": "Not stated",
+  "region": "Colorado and Florida Gulf Coast"
  },
  {
   "name": "Rocky Mountain Resorts",
@@ -85,7 +96,8 @@ export const managerPolicies: ManagerPolicy[] = [
   "maxDogs": 2,
   "limitBasis": "dogs",
   "breed": "not-stated",
-  "fee": "$25 per night"
+  "fee": "$25 per night",
+  "region": "Colorado and Florida Gulf Coast"
  },
  {
   "name": "Newman-Dailey Resort Properties",
@@ -94,7 +106,10 @@ export const managerPolicies: ManagerPolicy[] = [
   "maxDogs": 2,
   "limitBasis": "most-homes",
   "breed": "not-stated",
-  "fee": "Not stated"
+  "fee": "Not stated",
+  "region": "Colorado and Florida Gulf Coast",
+  "pool": "dogs not permitted in pool area (hot tub/spa not stated)",
+  "unattended": "dogs must be crated when left alone inside property"
  },
  {
   "name": "My Vacation Haven",
@@ -103,7 +118,9 @@ export const managerPolicies: ManagerPolicy[] = [
   "maxDogs": 2,
   "limitBasis": "pets",
   "breed": "not-stated",
-  "fee": "$250 first pet, $100 second pet"
+  "fee": "$250 first pet, $100 second pet",
+  "region": "Colorado and Florida Gulf Coast",
+  "pool": "pets not allowed in pool or hot tub"
  },
  {
   "name": "Rosemary Beach Cottage Rental Company",
@@ -112,7 +129,8 @@ export const managerPolicies: ManagerPolicy[] = [
   "maxDogs": 3,
   "limitBasis": "pets",
   "breed": "not-stated",
-  "fee": "$300 per pet"
+  "fee": "$300 per pet",
+  "region": "Colorado and Florida Gulf Coast"
  },
  {
   "name": "AMI Locals",
@@ -125,7 +143,8 @@ export const managerPolicies: ManagerPolicy[] = [
    "lb": 50,
    "per": "combined"
   },
-  "fee": "$250 per stay"
+  "fee": "$250 per stay",
+  "region": "Colorado and Florida Gulf Coast"
  },
  {
   "name": "Cabin Rentals of Georgia",
@@ -138,7 +157,9 @@ export const managerPolicies: ManagerPolicy[] = [
    "lb": 35,
    "per": "each"
   },
-  "fee": "$50 plus $75 cleaning fee per night"
+  "fee": "$50 per pet per night, plus a $75 cleaning fee",
+  "region": "Georgia",
+  "unattended": "no dog left unattended in cabin; crate trained required"
  },
  {
   "name": "A Blue Ridge Cabin Rental",
@@ -147,7 +168,9 @@ export const managerPolicies: ManagerPolicy[] = [
   "maxDogs": 2,
   "limitBasis": "pets",
   "breed": "not-stated",
-  "fee": "$150 per pet"
+  "fee": "$150 per pet",
+  "region": "Georgia",
+  "minAge": "at least 18 months old"
  },
  {
   "name": "A Blue Ridge Vacation",
@@ -156,7 +179,8 @@ export const managerPolicies: ManagerPolicy[] = [
   "maxDogs": null,
   "limitBasis": "dogs",
   "breed": "not-stated",
-  "fee": "$20 plus small cleaning fee per night"
+  "fee": "$20 per night, plus a small cleaning fee",
+  "region": "Georgia"
  },
  {
   "name": "Cuddle Up Cabin Rentals",
@@ -165,7 +189,8 @@ export const managerPolicies: ManagerPolicy[] = [
   "maxDogs": null,
   "limitBasis": "dogs",
   "breed": "not-stated",
-  "fee": "Not stated"
+  "fee": "Not stated",
+  "region": "Georgia"
  },
  {
   "name": "Sliding Rock Cabins",
@@ -174,7 +199,8 @@ export const managerPolicies: ManagerPolicy[] = [
   "maxDogs": null,
   "limitBasis": "dogs",
   "breed": "none",
-  "fee": "$0"
+  "fee": "$0",
+  "region": "Georgia"
  },
  {
   "name": "Enchanted Mountain Retreats (georgiaemr.com)",
@@ -183,7 +209,8 @@ export const managerPolicies: ManagerPolicy[] = [
   "maxDogs": 2,
   "limitBasis": "dogs",
   "breed": "not-stated",
-  "fee": "Not stated"
+  "fee": "Not stated",
+  "region": "Georgia"
  },
  {
   "name": "Emmons Realty",
@@ -199,7 +226,9 @@ export const managerPolicies: ManagerPolicy[] = [
    "lb": 65,
    "per": "each"
   },
-  "fee": "$147"
+  "fee": "$147",
+  "region": "Georgia",
+  "minAge": "at least 1 year old"
  },
  {
   "name": "Georgia Coast Realty",
@@ -208,7 +237,8 @@ export const managerPolicies: ManagerPolicy[] = [
   "maxDogs": null,
   "limitBasis": "dogs",
   "breed": "not-stated",
-  "fee": "Not stated"
+  "fee": "Not stated",
+  "region": "Georgia"
  },
  {
   "name": "St. Simons Island Beach Rentals",
@@ -217,7 +247,8 @@ export const managerPolicies: ManagerPolicy[] = [
   "maxDogs": 2,
   "limitBasis": "dogs",
   "breed": "not-stated",
-  "fee": "$250 first dog, $150 second dog; $400 for stays of 14+ days per stay"
+  "fee": "$250 first dog, $150 second dog; $400 for stays of 14+ days per stay",
+  "region": "Georgia"
  },
  {
   "name": "Brindley Beach Vacations",
@@ -230,7 +261,10 @@ export const managerPolicies: ManagerPolicy[] = [
    "lb": 60,
    "per": "each"
   },
-  "fee": "Not stated"
+  "fee": "Not stated",
+  "region": "North Carolina",
+  "pool": "dogs not allowed to swim in pool or hot tub",
+  "unattended": "dogs should not be left alone unless crated; never lock in a bedroom"
  },
  {
   "name": "Sun Realty",
@@ -239,7 +273,9 @@ export const managerPolicies: ManagerPolicy[] = [
   "maxDogs": 2,
   "limitBasis": "dogs",
   "breed": "not-stated",
-  "fee": "$161-$231 plus sales tax, varies by property per pet"
+  "fee": "$161 to $231 plus tax (a flea-treatment fee; varies by property)",
+  "region": "North Carolina",
+  "pool": "pets not permitted in pools or hot tubs"
  },
  {
   "name": "Beach Realty & Construction",
@@ -248,7 +284,10 @@ export const managerPolicies: ManagerPolicy[] = [
   "maxDogs": 2,
   "limitBasis": "most-homes",
   "breed": "unnamed",
-  "fee": "Not stated"
+  "fee": "Not stated",
+  "region": "North Carolina",
+  "pool": "no dogs in pool or hot tub",
+  "minAge": "no puppies (adult dogs only)"
  },
  {
   "name": "Resort Realty",
@@ -257,7 +296,9 @@ export const managerPolicies: ManagerPolicy[] = [
   "maxDogs": 2,
   "limitBasis": "dogs",
   "breed": "not-stated",
-  "fee": "up to $1,000, varies by property"
+  "fee": "up to $1,000, varies by property",
+  "region": "North Carolina",
+  "minAge": "no puppies (adult dogs only)"
  },
  {
   "name": "Twiddy & Company",
@@ -266,7 +307,9 @@ export const managerPolicies: ManagerPolicy[] = [
   "maxDogs": 2,
   "limitBasis": "most-homes",
   "breed": "not-stated",
-  "fee": "$0 on homes listed"
+  "fee": "$0 on homes listed",
+  "region": "North Carolina",
+  "pool": "pool: one home (Sunnybuns) bars dogs in pool; hot tub not stated"
  },
  {
   "name": "Carolina Designs Realty",
@@ -275,7 +318,8 @@ export const managerPolicies: ManagerPolicy[] = [
   "maxDogs": null,
   "limitBasis": "dogs",
   "breed": "not-stated",
-  "fee": "Not stated"
+  "fee": "Not stated",
+  "region": "North Carolina"
  },
  {
   "name": "Midgett Realty",
@@ -284,7 +328,8 @@ export const managerPolicies: ManagerPolicy[] = [
   "maxDogs": null,
   "limitBasis": "dogs",
   "breed": "not-stated",
-  "fee": "Not stated"
+  "fee": "Not stated",
+  "region": "North Carolina"
  },
  {
   "name": "Surf or Sound Realty",
@@ -293,7 +338,9 @@ export const managerPolicies: ManagerPolicy[] = [
   "maxDogs": 2,
   "limitBasis": "dogs",
   "breed": "not-stated",
-  "fee": "$200 plus tax per week"
+  "fee": "$200 plus tax per week",
+  "region": "North Carolina",
+  "pool": "dogs strictly prohibited in the pool and spa"
  },
  {
   "name": "Greybeard Rentals",
@@ -302,7 +349,8 @@ export const managerPolicies: ManagerPolicy[] = [
   "maxDogs": 2,
   "limitBasis": "dogs",
   "breed": "not-stated",
-  "fee": "Not stated"
+  "fee": "Not stated",
+  "region": "North Carolina"
  },
  {
   "name": "Asheville Cabins of Willow Winds",
@@ -311,7 +359,8 @@ export const managerPolicies: ManagerPolicy[] = [
   "maxDogs": 2,
   "limitBasis": "dogs",
   "breed": "not-stated",
-  "fee": "$100"
+  "fee": "$100",
+  "region": "North Carolina"
  },
  {
   "name": "Hearthside Cabin Rentals",
@@ -326,7 +375,9 @@ export const managerPolicies: ManagerPolicy[] = [
    "soft": true,
    "note": "Larger dogs are allowed at some cabins for an extra fee."
   },
-  "fee": "$55; $75 one time"
+  "fee": "$55 per pet, one time; $75 for a large pet",
+  "region": "Smoky Mountains, TN",
+  "unattended": "pets must be crated when left alone"
  },
  {
   "name": "Aunt Bugs Cabin Rentals",
@@ -335,7 +386,9 @@ export const managerPolicies: ManagerPolicy[] = [
   "maxDogs": 2,
   "limitBasis": "dogs",
   "breed": "not-stated",
-  "fee": "$75 per night"
+  "fee": "$75 per pet",
+  "region": "Smoky Mountains, TN",
+  "unattended": "dog must be crated when not at the property"
  },
  {
   "name": "Bear Camp Cabins",
@@ -344,7 +397,9 @@ export const managerPolicies: ManagerPolicy[] = [
   "maxDogs": null,
   "limitBasis": "dogs",
   "breed": "not-stated",
-  "fee": "$75 plus tax per pet"
+  "fee": "$75 plus tax per pet",
+  "region": "Smoky Mountains, TN",
+  "unattended": "pets must be crated if left alone (also phrased as recommended)"
  },
  {
   "name": "Elk Springs Resort",
@@ -368,7 +423,8 @@ export const managerPolicies: ManagerPolicy[] = [
    "lb": 50,
    "per": "each"
   },
-  "fee": "$50 per stay"
+  "fee": "$50 per animal",
+  "region": "Smoky Mountains, TN"
  },
  {
   "name": "Hapey Cabin Rentals",
@@ -377,7 +433,9 @@ export const managerPolicies: ManagerPolicy[] = [
   "maxDogs": null,
   "limitBasis": "dogs",
   "breed": "none",
-  "fee": "$0"
+  "fee": "$0",
+  "region": "Smoky Mountains, TN",
+  "unattended": "travel crate recommended when leaving dog alone for a few hours"
  },
  {
   "name": "Cabins USA",
@@ -386,7 +444,8 @@ export const managerPolicies: ManagerPolicy[] = [
   "maxDogs": 2,
   "limitBasis": "pets",
   "breed": "not-stated",
-  "fee": "$50"
+  "fee": "$50",
+  "region": "Smoky Mountains, TN"
  },
  {
   "name": "Hemlock Hills Cabin Rentals",
@@ -395,6 +454,7 @@ export const managerPolicies: ManagerPolicy[] = [
   "maxDogs": null,
   "limitBasis": "dogs",
   "breed": "not-stated",
-  "fee": "Not stated"
+  "fee": "Not stated",
+  "region": "Smoky Mountains, TN"
  }
 ];

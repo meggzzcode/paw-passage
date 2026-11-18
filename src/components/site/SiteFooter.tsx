@@ -4,7 +4,7 @@ import { hasStays, hasPlaces, hasApprovedAffiliates } from "@/lib/launch";
 
 const cols = [
   { title: "Explore", links: [["/stays", "Stays"], ["/destinations", "Destinations"], ["/guides", "Guides"], ["/dog-rules", "Dog rules"], ["/tools", "Tools"]] },
-  { title: "Plan", links: [["/tools/pet-cost-check", "Pet cost and host confirmation"], ["/tools/checklist", "Before-you-book checklist"]] },
+  { title: "Plan", links: [["/tools/will-my-dog-be-accepted", "Will my dog be accepted?"], ["/tools/pet-cost-check", "Pet cost and host confirmation"], ["/tools/packing-list", "Pack your dog's bag"], ["/tools/checklist", "Before-you-book checklist"], ["/data/pet-policies", "Pet policy data"]] },
   { title: "About", links: [["/about", "About us"], ["/editorial-standards", "Editorial standards"], ["/list-your-property", "List your property"], ["/contact", "Contact"]] },
   { title: "Legal", links: [["/affiliate-disclosure", "Affiliate disclosure"], ["/privacy", "Privacy"], ["/terms", "Terms"]] },
 ] as const;

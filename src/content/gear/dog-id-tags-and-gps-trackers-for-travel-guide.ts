@@ -3,38 +3,18 @@ import type { Product } from "../gear";
 export const products: Product[] = [
   {
     id: "akc-reunite-stainless-collar-tag",
-    name: "AKC Reunite Premium Stainless Steel Collar Tag",
+    name: "AKC Reunite ID Tag or ID Collar",
     brand: "AKC Reunite",
     summary:
-      "A visible collar tag that carries the pet's name, an AKC Reunite ID number and the service's 24/7 helpline number, so a finder can act without a scan.",
+      "A visible ID that carries the pet's name, an AKC Reunite ID number and the service's helpline number, so a finder can act without a scan. It comes as a stainless steel collar tag or as a collar with a built-in nameplate; both carry the same kind of ID.",
     keySpecs: [
       "Maker says the personalized tag includes the pet's name, ID number and AKC Reunite's 800 number",
       "Sold in a large size (1.25 inch diameter) and a small size (7/8 inch diameter), or engraved in a round 1-inch diameter style",
       "Includes a 0.8 inch stainless steel collar or key ring attachment",
       "Maker says it will not break or rust and lists an 18-month warranty",
       "Optional add-ons listed: a Quick Scan QR code (not available with the engraved or aluminum tags) and a glow-in-the-dark tag silencer",
+      "The collar version has a built-in nameplate in sizes extra small to large (the large is listed at 18 to 28 inches long and 1 inch wide), reflective stitching, plastic buckles, seven colors and a 6-month guarantee; the maker says it is not recommended for cats",
       "The ID number on the tag points to an AKC Reunite record, so the tag only helps if that record's contact details are current",
-    ],
-    specSource: {
-      title: "Pet ID Tags | AKC Reunite",
-      url: "https://www.akcreunite.org/idtags/",
-      publisher: "AKC Reunite",
-      accessedOn: "2026-11-16",
-    },
-  },
-  {
-    id: "akc-reunite-reflective-id-collar",
-    name: "AKC Reunite Reflective Personalized Dog Collar",
-    brand: "AKC Reunite",
-    summary:
-      "A buckle collar with a built-in personalized nameplate, so the ID information cannot jingle off a separate tag ring.",
-    keySpecs: [
-      "Maker lists extra small, small, medium and large sizes; the large collar is listed at 18 to 28 inches long and 1 inch wide",
-      "Stainless steel, polymer-coated nameplate with the pet's name (up to 12 characters), the AKC Reunite ID number, and the toll-free number and URL",
-      "3M Scotchlite reflective stitching that the maker says is visible to approaching motorists from up to 600 feet away",
-      "Plastic buckles, built-in adjustment slides and a triple nickel-plated D ring",
-      "Seven colors listed; maker states a 6-month guarantee",
-      "Optional QR code add-on listed; maker says the collar is not recommended for cats",
     ],
     specSource: {
       title: "Pet ID Tags | AKC Reunite",

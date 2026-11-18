@@ -12,138 +12,101 @@ export const guide: Guide = {
   "author": "Paws & Passage Editors",
   "publishedOn": "2026-11-16",
   "lastReviewed": "2026-11-16",
-  "readingMinutes": 9,
+  "readingMinutes": 6,
   "heroImage": "guide-rental-checklist",
-  "body": `## The short answer
+  "body": `You found a cabin with a hot tub and a "pets welcome" badge, and then checkout adds a pet fee, a cleaning charge and a rule about leaving the dog alone that none of the photos mentioned. Every line below is a question that would have caught it before you paid. Work top to bottom, and stop at the first line you cannot answer.
 
-- Get written confirmation that your actual dogs can stay in the exact accommodation, on your dates, under rules your trip can follow; "dogs welcome" is not enough.
-- Resolve permission, practicality and total cost before paying. Any one can sink a beautiful rental.
-- Check the charging basis of pet fees, since it matters as much as the amount. [[2]](https://www.airbnb.com/help/article/3623)
-- Treat service animals separately from pets: under the ADA, emotional support alone does not make an animal a service animal. [[6]](https://www.ada.gov/resources/service-animals-faqs/)
-- Save the cancellation terms and an after-hours vet plan before you book.
+Tick it off on your phone in the [interactive checklist](/tools/checklist), and get the real total for your dog count and dates in the [pet cost check](/tools/pet-cost-check).
 
-Our [interactive checklist](/tools/checklist) can hold the practical tasks; keep contractual answers in your booking messages too.
+## The 8-item booking gate
 
-Related questions: before you plan a dinner or hike without the dog, read [can you leave a dog alone in a vacation rental](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental). Choosing between platforms? See [Airbnb vs Vrbo with a dog](/guides/airbnb-vs-vrbo-with-a-dog). Booked a place that says no pets? See [what happens if you bring a dog to a no-pets rental](/guides/bringing-a-dog-to-a-no-pets-rental).
+Do not commit nonrefundable money until you can answer all eight for the exact listing:
 
-## The quick booking gate
+- [ ] **Approval.** Are our dogs approved, by number, weight, breed or mix, and age? (Details in the next section.)
+- [ ] **Total price.** What is the complete price with the right pet count and dates?
+- [ ] **House rules.** Can we follow the furniture, crate, barking and unattended-dog rules?
+- [ ] **Layout.** Are the entrance, indoor layout and toilet-break route suitable for our dog?
+- [ ] **Yard.** If we need a fenced yard, do we have photos or measurements of the real boundary?
+- [ ] **Cancellation.** What is the deadline, and what becomes nonrefundable after it?
+- [ ] **Walks.** Are the beaches, trails and parks we planned open to dogs?
+- [ ] **Vet.** Where is the nearest after-hours emergency hospital?
 
-Do not commit nonrefundable money until you can answer these for the exact listing:
+An unanswered preference can wait. An unanswered deal-breaker cannot.
 
-- [ ] Are our dogs approved, including number, size, breed or mix, and any age restrictions?
-- [ ] What is the complete price with the correct pet count and dates?
-- [ ] Can we comply with furniture, crate, barking, and unattended-dog rules?
-- [ ] Is the entrance, indoor layout, and toilet-break route suitable?
-- [ ] If we need a fenced yard, do we have evidence of its actual boundaries?
-- [ ] What cancellation deadline applies, and what becomes nonrefundable afterward?
-- [ ] Are planned walks and activities legally accessible to dogs?
-- [ ] Where will we get urgent veterinary care, including after hours?
+## Permission
 
-An unanswered preference can sometimes wait; an unanswered deal-breaker cannot. Don't assume adding a second dog after payment is a formality.
+Check the exact unit, not the manager's portfolio. Vrbo's house-rules guidance lets hosts state pet type, number and size limits, so read them instead of trusting the pet-friendly filter. [[1]](https://help.vrbo.com/articles/what-are-house-rules)
 
-## Confirm permission for the exact dogs and unit
+- [ ] Count, weight (per dog or combined), breed and age limits written down.
+- [ ] Approval received in the booking channel, naming each dog and the dates.
 
-Read the listing, house rules, rental agreement and any pet addendum before payment. Check the exact unit, not the manager's portfolio or the resort's general policy; a dog-friendly development can contain individually restricted homes. Vrbo's house-rules guidance lets hosts state pet type, number and size restrictions, so screen for them rather than relying on the pet-friendly filter. [[1]](https://help.vrbo.com/articles/what-are-house-rules)
+Weight limits are real and they differ a lot. Across the 38 managers in our convenience sample (public pages read 2026-11-18), six state one, from 35 to 65 pounds. Our [large-dog guide](/guides/vacation-rentals-that-welcome-large-dogs) names them, and the [two-dog guide](/guides/traveling-with-two-dogs-accommodation-guide) covers counts and combined weight. For a quick yes or no on your own dog, try the [acceptance tool](/tools/will-my-dog-be-accepted). Breed rules have their own [guide](/guides/breed-restrictions-at-vacation-rentals).
 
-State the facts plainly: "We would bring two adult dogs, approximately 22 and 74 pounds, one terrier mix and one Labrador mix." Ask whether each is permitted for your dates and unit, and how "large" or similar categories are defined.
+## Price
 
-- Does a weight limit apply per dog or to the dogs together?
-- Do puppies need separate approval? Are there minimum-age, house-training, vaccination or parasite-prevention requirements, and what documents are accepted?
-- If the host cites insurer, association or building restrictions, can they approve your booking despite them?
+Enter your real dates, guest count and pet count before comparing, and save the final breakdown. Airbnb describes pet fees charged per booking, per night, per pet, or per pet per night, so check the unit, not just the amount. [[2]](https://www.airbnb.com/help/article/3623)
 
-Do not conceal a dog, understate weight, or treat "should be fine" as an exception to a written limit. Get approval in the booking channel. For size, see our [large-dog accommodation guide](/guides/vacation-rentals-that-welcome-large-dogs); for two dogs, our [multi-dog booking guide](/guides/traveling-with-two-dogs-accommodation-guide).
+- [ ] Pet fee: per stay, per night, per dog, or per dog-night?
+- [ ] Cleaning fee: already in the total, or on top of the pet fee?
+- [ ] Refundable deposit: how much, held how, released when?
+- [ ] Damage waiver or protection: what it covers and what it leaves to you.
+- [ ] Taxes and platform charges: the final payable amount.
+- [ ] Any request to pay a pet charge off-platform goes to platform support first. [[3]](https://www.airbnb.com/help/article/2799)
 
-## Calculate the actual price, not just the pet fee
+The same-looking number can bill very differently. As of 2026-11-18, Big Bear Vacations lists $40 per night per pet, while AMI Locals lists $250 per stay. For a 7-night stay with two dogs that is $560 versus $250, using the managers' own stated bases. Vrbo notes that property settings and pending claims can affect a refundable deposit's return. [[4]](https://help.vrbo.com/articles/Does-HomeAway-Payments-automatically-issue-refunds-to-travelers) The [pet-fee explainer](/guides/how-vacation-rental-pet-fees-work) walks through the terms; the [damage-charge guide](/guides/airbnb-pet-damage-charge-after-checkout) covers checkout.
 
-Enter accurate dates, guest count and pet count before comparing, and save the final breakdown. Airbnb's help guidance describes pet fees charged per booking, per night, per pet, or per pet per night, covering expected pet-related cleaning. Verify the unit of charging, not just the dollar amount. [[2]](https://www.airbnb.com/help/article/3623)
+## House rules, on a real day
 
-| Charge or condition | What to ask | What not to assume |
-| --- | --- | --- |
-| Pet fee | Is it per stay, night, dog, or dog-night? | One displayed amount covers both dogs |
-| General cleaning | Is it already in the total? | A pet fee replaces ordinary cleaning |
-| Refundable deposit | How much is held, and when is it released? | It is a nonrefundable fee |
-| Damage waiver or protection | What does it cover, exclude, and require? | It eliminates guest responsibility |
-| Taxes and platform charges | What is the final payable amount? | An early quote captures them all |
-| Additional cleaning or damage | What process and evidence apply? | A pet fee buys permission for damage |
-| Pet care | Does the itinerary require a sitter or day care? | The cheapest rental is the cheapest trip |
+Walk through breakfast, the main activity, dinner, bedtime and the late-night toilet break.
 
-Use the [pet cost and host confirmation tool](/tools/pet-cost-check) to compare complete stays, and our [pet-fee explainer](/guides/how-vacation-rental-pet-fees-work) for terminology. Include refundable amounts in the cash you must have available.
+- [ ] Sofas, chairs, beds and bedrooms: allowed, covered, or off limits?
+- [ ] Crate: required only when alone, or always? If provided, what size?
+- [ ] Unattended time: permitted, for how long, and does a short restaurant pickup count?
+- [ ] A sitter or day care lined up before you book nonrefundable activities.
 
-**Keep payments on-platform.** Airbnb requires mandatory fees to be disclosed before booking and generally paid on-platform, with exceptions for some hosts. Check a later request to pay a mandatory pet charge elsewhere with platform support rather than transferring automatically. [[3]](https://www.airbnb.com/help/article/2799) Resolve any quote-versus-checkout discrepancy before paying.
+A throw does not override a furniture rule, and "crate provided" does not mean your dog fits. The reasoning is in [can you leave a dog alone in a vacation rental](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental).
 
-## Separate pet fees, deposits and damage responsibility
+## The physical stay
 
-A pet fee, a refundable deposit and insurance are different things. Ask whether a deposit is charged, held on your card, or handled another disclosed way, and ask about release timing, deduction conditions and the dispute route. Vrbo's refund guidance describes refundable damage deposits and notes that property settings and pending claims can affect their return, so check your own reservation's terms. [[4]](https://help.vrbo.com/articles/Does-HomeAway-Payments-automatically-issue-refunds-to-travelers)
+- [ ] Route from car to door: stairs, shared corridors, slippery floors.
+- [ ] Sleeping arrangement works for the dog, not just for you.
+- [ ] Toilet area: where, whether it is lit at night, and whether you cross a road.
+- [ ] Fence: continuous, tall enough, gates latch, and no gaps, shown in current photos.
 
-Airbnb's host damage protection includes certain pet-related damage and extra cleaning, but that protects eligible host losses; it is not a promise that guests carry no responsibility. [[5]](https://www.airbnb.com/help/article/279)
+The [fenced-yard guide](/guides/vacation-rental-secure-fenced-yard) has the photo request and arrival inspection. An older dog needs extra checks, so see the [senior-dog guide](/guides/vacation-rental-with-a-senior-dog).
 
-Before unpacking, photograph existing damage and send material concerns through the booking channel. If your dog causes damage, secure the dog, tell the host promptly and follow the documented process; do not try an aggressive cleaner on an unfamiliar surface.
+## Local rules and an emergency plan
 
-## Test the house rules against a real day
+- [ ] Leash, season and time-of-day rules checked on the official city, county, park or beach page.
+- [ ] A legal walking option near the rental, plus a backup.
+- [ ] Routine clinic and after-hours emergency hospital saved offline, with hours confirmed.
 
-"Dogs allowed" does not tell you whether dogs can enter bedrooms, use furniture, or stay behind. Walk through a day on paper: breakfast, the main activity, dinner, bedtime and a late-night toilet break.
+AVMA advises calling your vet or a local emergency hospital on the way, so they can be ready when you arrive. [[5]](https://www.avma.org/resources-tools/pet-owners/emergencycare/first-aid-tips-pet-owners)
 
-**Furniture and bedrooms.** Ask separately about sofas, chairs, beds and bedroom access; a covered sofa does not necessarily mean bedding. A throw does not override a prohibition. If your dog sleeps with you, ask whether their bed fits near yours. Choose another rental rather than planning to hide a predictable violation.
+## Service animals and cancellation
 
-**Crates.** Ask whether a crate is required only when the dog is alone or at other times too, and whether the host provides one (request dimensions and condition; "crate provided" does not mean your dog fits). If your dog is not used to a crate or cannot safely follow a required confinement arrangement, change accommodation or arrange supervision.
+- [ ] **Service animals.** Under the ADA, a service animal is generally a dog individually trained to do work or perform tasks for a person with a disability, and emotional support alone does not qualify. [[6]](https://www.ada.gov/resources/service-animals-faqs/) Coverage of a private rental depends on state law and platform policy, so use the platform's accessibility team, not the pet line.
+- [ ] **Cancellation.** Save the policy for your booking: deadline, property time zone, refund percentages and what happens to fees. Vrbo's policy options vary by host and season, so read the schedule for your dates. [[7]](https://help.vrbo.com/articles/What-are-the-cancellation-policy-options) Calendar the last free-cancellation date and settle pet approval before it.
 
-**Leaving the dog alone.** Ask whether any unattended time is permitted, for how long, and whether "never alone" includes a short restaurant pickup. Written permission is only half the decision; your dog's ability to settle in an unfamiliar place is the other. If you need a sitter or day care, check availability and admission requirements before making nonrefundable activity reservations.
+## One message to send
 
-## Check the physical stay, from parking to bedtime
+"We are considering [unit] for [dates] with [number, ages, approximate weights, breeds or mixes]. Please confirm they are approved and share the complete pet rules and all charges, including furniture, bedroom access, crates, unattended time, toilet areas, yard access and any staff visits. Please also confirm the cancellation terms and any deposit or damage-protection requirement."
 
-Ask about the route from car to door, shared corridors, stairs, slippery floors and sleeping arrangements. A ground-floor bedroom may still involve a long flight of steps from the parking space. Request current photographs and measure steps for a dog with mobility limits; ask your veterinarian rather than relying on an accessibility label. For a dog who needs distance from others, ask about neighboring dogs, shared elevators, narrow entrances and common toilet areas; "quiet location" does not establish separation.
+A clear approval names the dogs and the stay; "we're pet-friendly" is not one. Mark each candidate bookable (all eight answered), pending (one follow-up), or reject.
 
-**The toilet-break route.** Find out where dogs may relieve themselves, whether that area is accessible at night (private or shared, lit, across a road?), and whether waste bags and disposal are provided. For an apartment, picture the last outing of the evening in bad weather: harness, corridor, elevator, exit.
+## Before you leave
 
-**Fencing and water.** If off-leash yard time is essential, verify continuous boundaries, minimum height, openings, gates and other people's access. Request pool separation details rather than assuming the outer fence keeps the dog from water. Our [secure fenced-yard guide](/guides/vacation-rental-secure-fenced-yard) has the photo request and arrival inspection. If the evidence is incomplete, mark off-leash use unresolved and decide whether leashed breaks are enough.
+- [ ] Saved rules reread, check-in access and a no-data way to reach the host confirmed.
+- [ ] Familiar bedding, leads, waste bags, food and any crate packed ([cabin packing guide](/guides/dog-friendly-cabin-packing-list)).
+- [ ] On arrival, inspect exits and gates with the dog secured, and photograph anything off.
 
-## Understand service animals separately from pets
+## How sure we are
 
-Service-animal access is not a way to bypass an inconvenient pet policy. Under the ADA, a service animal is generally a dog individually trained to do work or perform tasks for a person with a disability. Emotional support alone does not make an animal a service animal under that definition. [[6]](https://www.ada.gov/resources/service-animals-faqs/)
+- **Confirmed by a source we cite:** the platform, DOJ, AVMA and manager statements above, each from its cited page.
+- **What most people report:** no survey here; the manager figures come from 38 managers, a convenience sample read 2026-11-18.
+- **Unknown, so ask:** your exact unit's rules, fees and insurer conditions, in writing.
 
-Where ADA public-accommodation rules apply, staff may ask only the permitted disability-related service-animal questions when the need is not apparent; they cannot demand certification as proof of service-animal status. The DOJ guidance also addresses control, house-training, removal in specified circumstances, and limits on surcharges. Actual damage may be charged on the same basis as damage caused by other guests. [[6]](https://www.ada.gov/resources/service-animals-faqs/)
-
-Whether a particular private rental is covered depends on the applicable law and facts, including state and local protections and platform policy. Do not treat a general ADA summary as a legal determination for every privately owned holiday home.
-
-- Airbnb's Accessibility Policy generally permits service animals despite no-pet rules and distinguishes them from emotional support animals. It describes exceptions and jurisdiction-dependent protections, so consult the current policy for your reservation. Its pet-fee guidance states that service animals stay without a pet fee. [[7]](https://www.airbnb.com/help/article/1869) [[2]](https://www.airbnb.com/help/article/3623)
-- Vrbo states that hosts in countries with service-animal laws must accommodate guests requiring service animals regardless of the normal pet policy. [[8]](https://help.vrbo.com/articles/What-is-HomeAway-s-service-animal-policy)
-
-If there is a disagreement, contact platform accessibility support and seek legal guidance when necessary. Do not buy an online certificate expecting it to create legal status, and do not assume a service animal may be left alone under the same conditions as an ordinary pet; check the access rules and platform requirements.
-
-## Read cancellation terms before asking for exceptions
-
-Save the policy shown for your booking, including the deadline, property time zone, refund percentages and treatment of fees, and check separate terms for shortening the stay, changing dates or removing a dog. Vrbo describes several host-selectable policy options, seasonal variations and refund windows measured in the property's time zone, so read the actual schedule for your dates, not just the policy name. [[9]](https://help.vrbo.com/articles/What-are-the-cancellation-policy-options)
-
-Do not assume a dog's illness, a rejected pet request or a canceled activity creates a refund right. If buying trip insurance, read covered reasons, pet-related provisions and exclusions, and ask the insurer rather than relying on a host's description. Calendar the last cancellation date and resolve pet approval before it. A verbal assurance does not change written terms.
-
-## Verify local rules and an emergency plan
-
-Check the official city, county, park, beach or land-manager page for each place you plan to visit: leash requirements, seasonal and time-of-day restrictions, prohibited areas, waste rules and permits. A pet-friendly rental does not make a nearby beach or trail dog-accessible. Find a legal walking option close to the rental plus a backup, save the official pages, and check posted signs on arrival.
-
-**Veterinary help.** Locate a routine clinic and an after-hours emergency hospital serving the actual rental location. Verify hours and whether the emergency provider can currently receive patients; a map label is not a guarantee. Save addresses, numbers and a backup route offline. AVMA advises calling your veterinarian or a local veterinary emergency hospital in an emergency so they can be ready when you arrive, and notes that first aid is not a substitute for veterinary care. [[10]](https://www.avma.org/resources-tools/pet-owners/emergencycare/first-aid-tips-pet-owners)
-
-Carry medication details, records and your regular vet's contact. If mobile coverage is limited, download directions and ask how to reach the host without data.
-
-## Send one clear message, then compare the answers
-
-"We are considering [unit] for [dates] with [number, ages, approximate weights, and breeds or mixes]. Please confirm they are approved and share the complete pet rules and all charges. We need clarity on furniture, bedroom access, crates, unattended time, toilet areas, yard access, and any scheduled staff visits. Please also confirm the cancellation terms and any deposit or damage-protection requirement."
-
-Use the [pet cost and host confirmation tool](/tools/pet-cost-check) to tailor it. A clear written approval should name the relevant dogs and stay, not just repeat "we're pet-friendly." Keep service-animal questions on the accessibility-policy track, not pet permission.
-
-| Decision | What it looks like | Next step |
-| --- | --- | --- |
-| Bookable | Dogs approved, complete total, workable rules, suitable layout | Save the evidence and check cancellation once more |
-| Pending | A material fee, restriction, or physical detail is unknown | Ask a specific follow-up before paying |
-| Workable compromise | No off-leash yard, but a good legal walking route | Budget the time and accept the limitation explicitly |
-| Reject | Your trip requires violating a rule or ignoring a known mismatch | Choose another stay |
-
-Keep notes on two or three candidates side by side, and keep deal-breakers separate from preferences.
-
-## Reconfirm and inspect on arrival
-
-Before departure, reread the saved rules, verify unresolved details, confirm check-in access and check emergency contacts. Bring familiar bedding, leads, waste supplies, food and any required crate; our [cabin packing guide](/guides/dog-friendly-cabin-packing-list) helps.
-
-On arrival, secure the dog while you inspect exits, gates, accessible food, cleaning products and obvious damage. Photograph material discrepancies and message the host through the booking channel. Keep a leashed toilet-break plan until any yard has been checked.
+Booked somewhere that says no pets? Read [what happens if you bring a dog to a no-pets rental](/guides/bringing-a-dog-to-a-no-pets-rental). Choosing a platform? See [Airbnb vs Vrbo with a dog](/guides/airbnb-vs-vrbo-with-a-dog). Next step: run the [pet cost check](/tools/pet-cost-check), then save your answers in the [checklist tool](/tools/checklist).
 `,
   "faqs": [
     {
@@ -206,9 +169,9 @@ On arrival, secure the dog while you inspect exits, gates, accessible food, clea
       "accessedOn": "2026-11-16"
     },
     {
-      "title": "Host damage protection",
-      "url": "https://www.airbnb.com/help/article/279",
-      "publisher": "Airbnb",
+      "title": "First aid tips for pet owners",
+      "url": "https://www.avma.org/resources-tools/pet-owners/emergencycare/first-aid-tips-pet-owners",
+      "publisher": "American Veterinary Medical Association",
       "accessedOn": "2026-11-16"
     },
     {
@@ -218,27 +181,9 @@ On arrival, secure the dog while you inspect exits, gates, accessible food, clea
       "accessedOn": "2026-11-16"
     },
     {
-      "title": "Accessibility Policy",
-      "url": "https://www.airbnb.com/help/article/1869",
-      "publisher": "Airbnb",
-      "accessedOn": "2026-11-16"
-    },
-    {
-      "title": "About the service animal policy",
-      "url": "https://help.vrbo.com/articles/What-is-HomeAway-s-service-animal-policy",
-      "publisher": "Vrbo",
-      "accessedOn": "2026-11-16"
-    },
-    {
       "title": "About cancellation policy options",
       "url": "https://help.vrbo.com/articles/What-are-the-cancellation-policy-options",
       "publisher": "Vrbo",
-      "accessedOn": "2026-11-16"
-    },
-    {
-      "title": "First aid tips for pet owners",
-      "url": "https://www.avma.org/resources-tools/pet-owners/emergencycare/first-aid-tips-pet-owners",
-      "publisher": "American Veterinary Medical Association",
       "accessedOn": "2026-11-16"
     }
   ],

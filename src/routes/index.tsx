@@ -1,7 +1,7 @@
 import { dogTypes, dogTypeIsLive } from "@/content/dog-types";
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useState } from "react";
-import { ArrowRight, Fence, Ruler, Dog, BadgeDollarSign, Calculator, ListChecks } from "lucide-react";
+import { ArrowRight, Fence, Ruler, Dog, BadgeDollarSign, Calculator, ListChecks, Backpack } from "lucide-react";
 import { images, srcSetFor } from "@/lib/images";
 import { destinations } from "@/content/destinations";
 import { visibleGuides } from "@/content/guides";
@@ -13,6 +13,7 @@ import { stayTypeLabels } from "@/lib/filters";
 import { pageHead } from "@/lib/seo";
 import { site } from "@/config/site";
 import { hasVerifiedStays as hasStays } from "@/lib/launch";
+import { policyStats } from "@/lib/policy-stats";
 
 export const Route = createFileRoute("/")({
   head: () => pageHead({
@@ -217,12 +218,28 @@ function Home() {
       </section>
 
       <section className="container-page mt-24">
+        <div className="rounded-2xl border border-border bg-card p-8 md:p-12">
+          <p className="eyebrow">Original research</p>
+          <h2 className="mt-2 max-w-3xl text-3xl md:text-4xl">We read what {policyStats().total} rental managers actually say about dogs</h2>
+          <div className="mt-6 grid gap-4 sm:grid-cols-3">
+            {[[`${policyStats().capTwo} of ${policyStats().total}`, "state a limit of two dogs"], [`${policyStats().zeroFee} of ${policyStats().total}`, "charge no pet fee on the pages we read"], [`${policyStats().breedSilent} of ${policyStats().total}`, "say nothing about breed on their pet page"]].map(([n, t]) => (
+              <div key={t}><p className="font-display text-4xl">{n}</p><p className="mt-1 text-sm text-muted-foreground">{t}</p></div>
+            ))}
+          </div>
+          <p className="mt-6 text-sm text-muted-foreground">A convenience sample, read {policyStats().date}, with a source link for every row.</p>
+          <div className="mt-6 flex flex-wrap gap-3"><Link to="/data/pet-policies" className="inline-flex h-11 items-center rounded-full bg-primary px-6 text-sm font-medium text-primary-foreground hover:bg-primary/90">See the data</Link><Link to="/tools/will-my-dog-be-accepted" className="inline-flex h-11 items-center rounded-full border border-input px-6 text-sm font-medium hover:bg-muted">Check your dog</Link></div>
+        </div>
+      </section>
+
+      <section className="container-page mt-12">
         <div className="rounded-2xl bg-primary p-8 text-primary-foreground md:p-12">
           <p className="text-xs font-semibold uppercase tracking-[0.16em] text-sage">Free planning tools</p>
           <h2 className="mt-2 max-w-2xl text-4xl">Tools that do the awkward part of booking for you</h2>
           <div className="mt-8 grid gap-4 md:grid-cols-2">
             {[
+              { to: "/tools/will-my-dog-be-accepted", icon: Dog, t: "Will my dog be accepted?", d: `Check your dogs against ${policyStats().total} rental managers' own pet policies, with a source for each.` },
               { to: "/tools/pet-cost-check", icon: Calculator, t: "Pet cost and host confirmation", d: "See what your dog really costs, then get a message that asks the host to confirm it in writing." },
+              { to: "/tools/packing-list", icon: Backpack, t: "Pack your dog's bag", d: "Tap the items you need, see what each is for, and print the list." },
               { to: "/tools/checklist", icon: ListChecks, t: "Before-you-book checklist", d: "Tick it off, save it, print it." },
             ].map((t) => (
               <Link key={t.to} to={t.to} className="rounded-lg bg-primary-foreground/10 p-5 transition hover:bg-primary-foreground/15">

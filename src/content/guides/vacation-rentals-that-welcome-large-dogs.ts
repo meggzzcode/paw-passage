@@ -3,9 +3,9 @@ import type { Guide } from "../types";
 export const guide: Guide = {
   slug: "vacation-rentals-that-welcome-large-dogs",
   title: "How to Find Vacation Rentals That Welcome Large Dogs",
-  seoTitle: "Renting With a Large Dog: 5 Checks",
+  seoTitle: "Large Dog Rental: 5 Checks Before You Book",
   seoDescription:
-    "“Large dogs considered” is not a yes. Read weight and breed limits literally, check stairs and floors, and get written approval naming your dog's weight.",
+    "Six managers we read cap dogs at 35 to 65 pounds. See their limits, then five checks: written approval, stairs, floors, yard and total price.",
   dek: "Look beyond the pets-allowed filter to the rules, dimensions, and daily routines that make a stay workable.",
   category: "Planning",
   states: [],
@@ -13,140 +13,85 @@ export const guide: Guide = {
   author: "Paws & Passage Editors",
   publishedOn: "2026-11-16",
   lastReviewed: "2026-11-16",
-  readingMinutes: 8,
+  readingMinutes: 7,
   heroImage: "guide-large-dogs",
   body: `## The short answer
 
-- “Pet-friendly” is only the first filter. A listing can allow dogs but cap their weight, or accept a big dog and put the only bedroom up a steep stair.
-- Test every rental twice: does the rule explicitly allow this dog (permission), and can this dog move, rest and toilet comfortably there (practical fit)?
-- Get approval in writing, naming your dog's current weight and breed. “Large dogs considered” means ask, not yes.
-- Check the route through the property, flooring, yard and unattended-dog rules for your dog, not an average one.
-- Compare the full price, including pet charges, before choosing views over fit.
+You found the cabin, the listing says "dogs welcome," and your Lab is 80 pounds. Then the rules page says 50. In the 38-manager sample we read, six state a weight limit, and the limits run from 35 to 65 pounds, so "welcome" tells you very little until you know whose number applies to your dog.
 
-This guide concerns pet dogs; service animals have separate protections under applicable law and platform policy.
+- A pets-allowed filter is only the first screen. Test every rental twice: does the rule explicitly allow this dog (permission), and can this dog move, rest and toilet comfortably there (practical fit)?
+- "Large dogs considered" means ask, not yes. Get approval in writing, naming your dog's current weight and breed.
+- Price the whole stay with your real dog count before choosing views over fit.
 
-Related questions: turned down for a large dog? See [what happens if you bring a dog to a no-pets rental](/guides/bringing-a-dog-to-a-no-pets-rental). Comparing platforms? See [Airbnb vs Vrbo with a dog](/guides/airbnb-vs-vrbo-with-a-dog).
+This guide is about pet dogs. Service animals have separate protections under applicable law and platform policy.
 
-## Write your dog's requirements first
+## What real weight limits look like
 
-Make a short factual profile: current weight, breed or known mix (described honestly), age and mobility, ability to manage steps and unfamiliar surfaces, sleeping arrangement, crate size, alone-time needs, and any management needs around other dogs.
+Here are the six managers that state one, from public pages read on 2026-11-18. The 38 managers are a convenience sample of sites we could read, not a survey, and many policies vary by home. Larger dogs are not banned everywhere: Sliding Rock Cabins, for example, says every cabin has no weight limits.
 
-Then pick your nonnegotiables. For one dog that might be a ground-floor bedroom and a short, level toilet route; for another, a private outdoor area. Do not make “large garden” the only requirement: an older dog may do better with three manageable entrance steps than an acre reached by a steep flight.
+| Manager | Stated limit | Per dog or combined |
+| --- | --- | --- |
+| Hearthside Cabin Rentals (Smokies, TN) | 35 lb standard; some cabins take larger dogs for a higher fee [[1]](https://hearthsidecabinrentals.com/frequently-asked-questions) | Each |
+| Cabin Rentals of Georgia (Blue Ridge, GA) | Under 35 lb [[2]](https://cabin-rentals-of-georgia.com/policies) | Each |
+| Elk Springs Resort (Gatlinburg, TN) | Over 50 lb not permitted [[3]](https://elkspringsresort.com/?p=1899) | Each |
+| AMI Locals (Anna Maria Island, FL) | 50 lb or less [[4]](https://www.amilocals.com/faqs) | Combined, for two dogs |
+| Brindley Beach Vacations (Outer Banks, NC) | 60 lb or less [[5]](https://www.brindleybeach.com/node/3691) | Each |
+| Emmons Realty (St. Simons Island, GA) | 65 lb maximum [[6]](https://www.emmonsrealty.com/pages/rental-policies) | Each |
 
-Bringing a second dog? Combine this with our [two-dog accommodation guide](/guides/traveling-with-two-dogs-accommodation-guide), since two acceptable dogs may still exceed a count or combined-weight rule.
+Two things jump out. The same word, "limit," can mean per dog or for both dogs together: AMI Locals' 50 pounds is shared, so an 80-pound Lab fails alone and two 30-pound dogs fail together. And the cutoff for a "large" dog is wherever the manager puts it, so a 60-pound dog clears Brindley Beach and is over at Elk Springs. Dog counts at the same managers are covered in [how many dogs you can bring](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental).
 
-## Decode weight limits literally
+Not sure where your dog falls? Enter its weight and count in the [will my dog be accepted tool](/tools/will-my-dog-be-accepted).
 
-There is no universal booking definition of “large”; listings and directories use different thresholds.
+## Decode the wording
+
+There is no universal booking definition of "large." Read the listing literally:
 
 | Listing wording | Safe interpretation | Question to resolve |
 | --- | --- | --- |
-| “Dogs under 50 pounds” | A stated threshold applies | Is a dog at exactly 50 pounds accepted? |
-| “Maximum 50 pounds” | The stated maximum matters | Is that per dog or combined? |
-| “Large dogs considered” | Acceptance is conditional | Has this dog been approved? |
-| “Any size” | No weight ceiling is stated | Are there count, breed, or other restrictions? |
-| “Two dogs welcome” | Count is addressed | What size and breed rules also apply? |
-| “Pets by arrangement” | Prior approval is needed | What exact conditions and charges apply? |
+| "Dogs under 50 pounds" | A stated threshold applies | Is a dog at exactly 50 accepted? |
+| "Maximum 50 pounds" | The limit matters | Per dog or combined? |
+| "Large dogs considered" | Acceptance is conditional | Has this dog been approved? |
+| "Any size" | No weight ceiling stated | Are there count or breed rules? |
+| "Pets by arrangement" | Prior approval needed | What conditions and charges apply? |
 
-Do not round your dog's weight down. If the dog is near a limit, give the current weight and ask directly; a host may have no discretion over a building or insurance condition.
+Do not round your dog's weight down. If the dog is near a limit, give the current weight and ask directly. This message works:
 
-### Ask for approval that identifies the dog
+"We would like to book these dates with one adult dog, currently 82 pounds, a Labrador-mastiff mix. Please confirm in writing that this dog is accepted under the property's weight, breed and building rules, and tell us the entrance steps, sleeping-level access, unattended-pet rule and total pet charge."
 
-“We would like to book these dates with one adult dog, currently 82 pounds, described as a Labrador–mastiff mix. Please confirm that this dog is accepted under the property's weight, breed, and building rules. We also need to confirm the entrance steps, sleeping-level access, unattended-pet policy, and total pet charge.”
+If the breed is unknown, say so. Keep the reply on the booking platform; "we love dogs" does not answer a weight question.
 
-If the breed is unknown, say so. Keep the reply on the booking platform; “we love dogs” does not answer a weight question. The [pet cost and host confirmation tool](/tools/pet-cost-check) turns unresolved details into direct questions.
+## Find candidates
 
-## Use platform filters to find candidates
+- **Airbnb:** add pets with the guest details, or use "Allows pets" under booking options. Airbnb advises contacting the host even when pets are allowed, and the pet policy sits in House rules. [[7]](https://www.airbnb.com/help/article/86) Search the listing text for "weight," "pounds," "breed," "stairs," "crate" and "unattended."
+- **Managers:** Vacasa's page says weight limits and dog counts vary by home and are stated in each listing. [[8]](https://www.vacasa.com/explore/pet-friendly-vacation-rentals) Use summaries to build a shortlist, then read the full policy.
+- **Local managers:** some use their own size categories. One has a "Dogs Over 30lb" filter, which shows why a generic "large dogs" search can miss inventory. [[9]](https://www.sunpalacevacationhomes.com/pet-friendly/) Try searching the destination plus "dogs any size vacation rental" or "ground floor dog friendly rental."
+- **Vrbo and others:** use the pets-allowed controls with accurate animal details, then read house rules and fees.
 
-- **Airbnb:** add pets with the guest details, or use “Allows pets” under booking options. Airbnb advises contacting the host even when pets are allowed, because restrictions can still apply. The pet policy sits in the listing's House rules. [[1]](https://www.airbnb.com/help/article/86) Open the house rules first, then search the listing text for “weight,” “pounds,” “breed,” “stairs,” “crate,” and “unattended.” The filter does not establish a no-weight-limit policy.
-- **Managers and directories:** general pet pages are rarely where the limits live. Vacasa's page says weight limits and dog counts vary by home and are stated in each listing. [[2]](https://www.vacasa.com/explore/pet-friendly-vacation-rentals) Use summaries to build a shortlist, then read the full policy. If a summary conflicts with the current rental agreement, ask the provider to resolve it and save the answer.
-- **Local managers:** some use their own size categories. One reviewed manager has a “Dogs Over 30lb” filter, which shows why a general “large dogs” search can miss inventory. It is a discovery example, not a recommendation. [[3]](https://www.sunpalacevacationhomes.com/pet-friendly/) Try searching the destination plus “dogs any size vacation rental,” “no weight limit dogs,” “large dogs considered,” or “ground floor dog friendly rental.”
-- **Vrbo and others:** use the pets-allowed controls with accurate animal details, then check house rules, fees and rental terms. Interfaces change, so get written confirmation for your dog before paying.
+## Five checks before you pay
 
-## Check the route through the property
+Once a rental passes permission, run these five. They replace the long checklist; the [full booking checklist](/guides/pet-friendly-vacation-rental-checklist) has the rest.
 
-“Single level” does not mean step-free; a home can sit above a steep driveway or a long external flight. Think in routes: parking to entrance, entrance to resting area, resting area to bedroom, bedroom to the nearest nighttime toilet area, and indoors to any yard. Ask for current photographs, a description of each route, or measurements where dimensions matter.
+1. **The limit, in writing, for this dog.** Count, individual weight, combined weight and breed rules, with any exception recorded in the booking messages.
+2. **The route.** Parking to entrance, entrance to bed, bed to the nearest night-time toilet spot. Ask how many entrance steps there are and whether the only bedroom is upstairs or a loft; "single level" is not the same as step-free.
+3. **The floor and the space.** Polished wood, tile and stone are slick for a heavy dog, so ask which surfaces are on the main route and whether rugs stay put. Measure your crate or bed and the narrowest doorway, so the crate door still opens.
+4. **The yard and the alone-time rule.** "Fenced" is not a security inspection: ask about the lowest fence section, gate latches and gaps, and request photos if the yard matters. For long dog-free stretches, read [can you leave a dog alone in a vacation rental](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental) and the [fenced-yard guide](/guides/vacation-rental-secure-fenced-yard).
+5. **The full price.** Pet fees vary a lot between managers, so total your real count, dates, cleaning charges and taxes in the [pet cost tool](/tools/pet-cost-check), and keep refundable deposits separate. The [pet-fee guide](/guides/how-vacation-rental-pet-fees-work) explains the terms.
 
-### Stairs and lofts
+Do not plan around carrying a heavy dog up steps: a wet walk or a minor injury changes what is safe. For a dog with pain or mobility problems, your veterinarian can say what access suits it.
 
-- How many entrance steps are there, and are they open-backed or steep?
-- Is the only bedroom upstairs, or a loft reached by ladder or narrow stair?
-- Are dogs prohibited from the sleeping level?
-- Can a gate be used without damaging walls?
-- Is there a lift, and is it available throughout the stay?
+## When a breed rule applies
 
-Do not plan around carrying a heavy dog unless that is safe for the people traveling. Think about a wet walk, a minor injury or a tired evening, not only the dog's best day. For a dog with pain or mobility problems, ask your veterinarian what access arrangements suit it.
+Restrictions can come from an owner, insurer, association or building. The Insurance Information Institute reports that insurers vary: some restrict certain breeds, some assess individual dogs, and some do not ask about breed. [[10]](https://www.iii.org/article/spotlight-on-dog-bite-liability) So "insurance won't allow it" is a real limit for some properties and not a universal one. Ask whether it is a firm property or insurer rule, or whether the host can approve your dog in writing. If the answer is no, move on, since a vague verbal exception that conflicts with the written agreement is no help. For named-breed lists, see the [breed restrictions guide](/guides/breed-restrictions-at-vacation-rentals).
 
-### Flooring
+A pet health policy is a different product from liability cover for injuries or damage your dog causes. [[11]](https://www.iii.org/article/facts-about-pet-insurance) Check with your own insurer whether liability extends to a temporary rental.
 
-Photographs show surface type but not traction. Ask whether the main route is polished wood, tile, stone or carpet, and whether rugs stay in place. A non-slip runner or familiar mat can help if the host permits it and it lies securely without creating a trip hazard; loose towels are not adequate. Check where the dog rises from bed, turns near doors and waits after a walk.
+## How sure we are
 
-## Measure the space your dog uses
+- **Confirmed by a source we cite:** the six limits above, each from the manager's own page on 2026-11-18, and the platform and insurance statements, each from its cited page.
+- **What most people report:** this page uses no survey; the 38 managers are a small convenience sample, not a picture of the whole market.
+- **Unknown, so ask:** the rule for your specific home, since limits change and many vary by property.
 
-A large bed, crate or travel mat takes more floor than expected. Record bed dimensions, crate exterior size, clearance to open the crate door, and any narrow doorway on the route. Ask before moving small furniture, and restore it before departure if allowed.
-
-If dogs are barred from sofas and beds, make sure there is a comfortable permitted spot near you. Our [vacation-rental checklist](/guides/pet-friendly-vacation-rental-checklist) connects these details to the house rules.
-
-## Understand breed restrictions
-
-Restrictions may come from an owner, insurer, association, lease or building policy. Do not assume which applies unless the host explains.
-
-The Insurance Information Institute reports that insurers vary: some restrict certain breeds, some assess individual dogs, and some do not ask about breed. So “insurance won't allow it” is not universal, but it can be a real restriction for a particular property. [[4]](https://www.iii.org/article/spotlight-on-dog-bite-liability)
-
-Ask: “Is this a firm property or insurer restriction, or can you approve this individual dog in writing?” If the answer is no, move on. Concealing your dog's size or breed creates a booking risk, and a vague verbal exception that conflicts with the written agreement is no help.
-
-### Health insurance is not liability cover
-
-A pet health policy is a different product from liability protection for injuries or damage your dog causes. See the Insurance Information Institute's pages on dog-bite liability [[4]](https://www.iii.org/article/spotlight-on-dog-bite-liability) and pet insurance facts. [[5]](https://www.iii.org/article/facts-about-pet-insurance) Ask your own insurer whether liability coverage extends to a temporary rental and what exclusions apply. A refundable deposit or paid damage waiver is not blanket permission for damage; read its terms and limits.
-
-## Check the yard for this dog
-
-A “fenced” filter is not a security inspection. Ask about:
-
-- The lowest fence section, gate height, latches, and gaps underneath.
-- Shared access for guests, gardeners or neighbors, and whether the whole boundary is enclosed.
-- Retaining walls, furniture or slopes that reduce effective height.
-- Access to pools, roads, livestock or wildlife.
-- Whether dogs must stay supervised outside.
-
-Do not choose by body weight alone; jumping, climbing, digging and boundary reactions are individual. Request current boundary photographs if the yard is essential, and inspect it before releasing the dog. Our [secure fenced-yard guide](/guides/vacation-rental-secure-fenced-yard) goes further. A home with no yard can work if it has a safe toilet route, and a big garden is no trade for unsafe stairs or a size prohibition.
-
-## Match unattended rules to your itinerary
-
-VCA's guidance is written for hotels, not rentals, but the principle carries over: verify whether a pet may stay in the room alone, since some establishments have size or number limits and stricter housekeeping rules. Treat it as a prompt to ask. [[6]](https://vcahospitals.com/know-your-pet/traveling-with-your-pet-pet-friendly-hotels)
-
-Ask whether dogs may ever be left alone, whether crating is required, whether a visiting caregiver is allowed, and whether any time limit or off-limits area applies. Then be honest about what your dog can manage: a large crate does not help a dog that dislikes crates, and a camera does not make a prohibited arrangement acceptable. If the trip needs long dog-free periods, arrange permitted care before booking.
-
-## Compare the complete cost
-
-“No weight limit” does not mean “no pet fee,” and a higher fee does not prove better facilities. Calculate the total with your real pet count, dates, cleaning charges and taxes, and keep refundable deposits separate. Use the [pet cost and host confirmation tool](/tools/pet-cost-check), and the [pet-fee guide](/guides/how-vacation-rental-pet-fees-work).
-
-A cheaper rental with an unsuitable sleeping arrangement is no bargain if it forces a change of accommodation. The useful comparison is “works without improvisation” versus “needs daily workarounds.”
-
-## Common mistakes
-
-- **Starting with photographs.** Check count, weight, breed and unattended rules first.
-- **Treating “large dogs considered” as approval.** Get an answer naming your dog and dates.
-- **Assuming a host can waive every rule.** Association or insurance conditions may be out of their hands; ask, then respect the answer.
-- **Ignoring sleeping arrangements.** A dog barred upstairs may struggle if everyone sleeps in a loft.
-- **Overvaluing acreage.** Private land is not automatically enclosed or safe off-lead.
-- **Hoping for a refund after a mismatch.** Outcomes depend on booking terms; prevention is more reliable.
-
-## A final large-dog booking checklist
-
-- [ ] The host has the dog's accurate current weight and description.
-- [ ] Count, individual weight, combined weight, and breed rules are clear.
-- [ ] Any exception is explicit and recorded in writing.
-- [ ] Entrance steps and sleeping-level access are suitable.
-- [ ] Flooring and resting locations work for the dog.
-- [ ] Bed or crate dimensions fit without blocking exits.
-- [ ] Outdoor access is practical at night and in poor weather.
-- [ ] Yard claims have been checked rather than assumed.
-- [ ] Unattended rules match the trip's care plan.
-- [ ] The full price and deposit arrangements are understood.
-- [ ] Cancellation terms are acceptable.
-
-Save those decisions in the [trip checklist](/tools/checklist). Once a place passes both tests, you can choose between views, kitchens and walks with much more confidence.`,
+Next step: put your dog's weight into the [will my dog be accepted tool](/tools/will-my-dog-be-accepted), then use the [trip checklist](/tools/checklist) to save the answers. Bringing two dogs? Start with the [two-dog guide](/guides/traveling-with-two-dogs-accommodation-guide).`,
   faqs: [
     {
       q: "Can I filter vacation rentals by my dog's weight?",
@@ -180,6 +125,42 @@ Save those decisions in the [trip checklist](/tools/checklist). Once a place pas
   relatedTools: ["checklist", "pet-cost-check"],
   sources: [
     {
+      title: "Frequently asked questions",
+      url: "https://hearthsidecabinrentals.com/frequently-asked-questions",
+      publisher: "Hearthside Cabin Rentals",
+      accessedOn: "2026-11-18",
+    },
+    {
+      title: "Policies",
+      url: "https://cabin-rentals-of-georgia.com/policies",
+      publisher: "Cabin Rentals of Georgia",
+      accessedOn: "2026-11-18",
+    },
+    {
+      title: "Pet policy",
+      url: "https://elkspringsresort.com/?p=1899",
+      publisher: "Elk Springs Resort",
+      accessedOn: "2026-11-18",
+    },
+    {
+      title: "FAQs",
+      url: "https://www.amilocals.com/faqs",
+      publisher: "AMI Locals",
+      accessedOn: "2026-11-18",
+    },
+    {
+      title: "Pet policy",
+      url: "https://www.brindleybeach.com/node/3691",
+      publisher: "Brindley Beach Vacations",
+      accessedOn: "2026-11-18",
+    },
+    {
+      title: "Rental policies",
+      url: "https://www.emmonsrealty.com/pages/rental-policies",
+      publisher: "Emmons Realty",
+      accessedOn: "2026-11-18",
+    },
+    {
       title: "Finding places that allow pets",
       url: "https://www.airbnb.com/help/article/86",
       publisher: "Airbnb",
@@ -207,12 +188,6 @@ Save those decisions in the [trip checklist](/tools/checklist). Once a place pas
       title: "Facts about pet insurance",
       url: "https://www.iii.org/article/facts-about-pet-insurance",
       publisher: "Insurance Information Institute",
-      accessedOn: "2026-11-16",
-    },
-    {
-      title: "Traveling With Your Pet: Pet-Friendly Hotels",
-      url: "https://vcahospitals.com/know-your-pet/traveling-with-your-pet-pet-friendly-hotels",
-      publisher: "VCA Animal Hospitals",
       accessedOn: "2026-11-16",
     },
   ],

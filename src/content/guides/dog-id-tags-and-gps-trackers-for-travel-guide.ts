@@ -17,6 +17,8 @@ export const guide: Guide = {
   heroImage: "gear-id-tracking",
   body: `## The short answer
 
+Your dog bolts out of a rental you have known for six hours, in a town you cannot name the streets of. The first hour depends on what you set up before you left.
+
 - Use three layers that cover for each other: a visible tag, a registered microchip and, if your trip suits it, a tracker. No gear stops a dog getting lost; it shortens the time between "gone" and "found."
 - A microchip is an ID number, not a tracker. It only helps if the registry record is current and someone scans the dog. [[4]](https://www.akcreunite.org/travel/)
 - A cellular GPS tracker needs a subscription, cellular coverage and a charged battery. A Bluetooth item tag depends on other people's phones being nearby. [[7]](https://tractive.com/en/pd/gps-tracker-dog)
@@ -85,7 +87,7 @@ A tracker shows a location; it does not retrieve the dog, which may have moved b
 
 The picks below come from criteria and from specifications on each maker's own product page. Paws & Passage has not tested, used or reviewed any of them, and nothing here is a performance claim. We looked for a currently listed product with a clearly stated size range, battery life, and subscription and coverage terms. Where a page is silent, we say so.
 
-Some links are affiliate links, marked as sponsored, with a notice at the top of the article. If you buy through one, Paws & Passage may earn a commission at no extra cost to you; that never changes which products we list or what we say. Read the full [affiliate disclosure](/affiliate-disclosure).
+When a link is an affiliate link it is marked sponsored and the page says so; read our [affiliate disclosure](/affiliate-disclosure). A commission never changes which products we list or what we say.
 
 ## Pick by situation
 
@@ -100,7 +102,7 @@ Some links are affiliate links, marked as sponsored, with a notice at the top of
 
 ## Notes on the picks
 
-The two AKC Reunite items put an ID number and helpline where a finder can read it, but tie to an AKC Reunite record; any durable, legible tag with a mobile number does the visible job. [[6]](https://www.akcreunite.org/idtags/) Tractive's page states weight ranges, collar widths, battery, connectivity and subscription plainly. [[7]](https://tractive.com/en/pd/gps-tracker-dog) Fi's collar page lists a long battery life, [[8]](https://fitracking.com/collar) but not carrier, coverage or subscription terms, and its membership page describes the collar as part of a membership, so confirm both before you buy. [[11]](https://fitracking.com/membership)
+The AKC Reunite tag and ID collar put an ID number and helpline where a finder can read it, but tie to an AKC Reunite record; any durable, legible tag with a mobile number does the visible job. [[6]](https://www.akcreunite.org/idtags/) Tractive's page states weight ranges, collar widths, battery, connectivity and subscription plainly. [[7]](https://tractive.com/en/pd/gps-tracker-dog) Fi's collar page lists a long battery life, [[8]](https://fitracking.com/collar) but not carrier, coverage or subscription terms, and its membership page describes the collar as part of a membership, so confirm both before you buy. [[11]](https://fitracking.com/membership)
 
 ## If your dog goes missing in an unfamiliar place
 
@@ -168,24 +170,13 @@ Heading to a cabin? See our [cabin packing list](/guides/dog-friendly-cabin-pack
   gear: [
     {
       productId: "akc-reunite-stainless-collar-tag",
-      bestFor: "Putting readable contact details on any dog's existing collar",
+      bestFor: "Putting readable contact details on any dog, as a tag or as a collar with a built-in nameplate",
       whyItMadeTheList:
-        "It is the visible first layer: a finder can read an ID number and a helpline on the spot, and the maker lists a stainless steel build and an 18-month warranty.",
+        "It is the visible first layer: a finder can read an ID number and a helpline on the spot. The tag and the nameplate collar carry the same kind of ID, so pick whichever suits your dog; the maker lists a stainless steel tag with an 18-month warranty and a reflective collar in sizes extra small to large.",
       watchOuts: [
         "It points to an AKC Reunite record, so it is most useful if you are enrolled and keep the record current.",
-        "The tag is only helpful if it stays attached and legible, so check the ring and the collar before each trip.",
-        "Check the maker's page for current options, which can change.",
-      ],
-    },
-    {
-      productId: "akc-reunite-reflective-id-collar",
-      bestFor: "Owners who want ID built into the collar so there is no separate tag to lose",
-      whyItMadeTheList:
-        "The nameplate carries the dog's name, ID number and AKC Reunite's contact details, and the maker lists reflective stitching for walks near roads.",
-      watchOuts: [
-        "Available in extra small to large, so check the length and width against your dog's neck.",
-        "Plastic buckles and a 6-month guarantee, as the maker states; a dog that slips collars may do better on a fitted harness.",
-        "Like the tag, it relies on an AKC Reunite record being current.",
+        "A tag only helps if it stays attached and legible; the collar version removes the separate tag but has plastic buckles and a 6-month guarantee, per the maker.",
+        "Check the collar's length and width against your dog's neck, and check the maker's page for current options.",
       ],
     },
     {

@@ -18,7 +18,7 @@ The plan is that you can run it day to day without a developer:
 | Change the design, add a new kind of page, add a new tool | Code | Yes |
 | Update software when security notices arrive | Code | Yes, now and then |
 
-**Not everything is in Pages CMS yet.** Only one sample article, one sample stay, your affiliate links and your business settings are set up so far. The other 15 articles, the towns, the product lists and the legal pages are still code files. Section 8 lists exactly what is left and `docs/MIGRATION-PLAN.md` explains how it gets done.
+**Not everything is in Pages CMS yet.** As of 2026-11-18 the site has 24 guides: 9 are Markdown files in `content/guides/` (editable in Pages CMS) and 15 are code files in `src/content/guides/` (a developer is needed to edit those until they are migrated; see `docs/MIGRATION-PLAN.md`). Stays, affiliate links, business settings (including the Stay22 account ID) and dog-rules places are in Pages CMS. The towns, the gear product lists and the legal pages are still code files. Section 8 lists exactly what is left.
 
 ## 2. The five services, and who owns what
 
@@ -131,7 +131,7 @@ The detailed, step-by-step instructions are in **`docs/DNS-AND-TRANSFER.md`**. I
 
 ## 8. Remaining transfer risks (most important first)
 
-1. **Most content is not editable in Pages CMS yet.** 15 articles, the towns, the gear product lists and the legal pages are code. Until `docs/MIGRATION-PLAN.md` is carried out, editing them needs a developer.
+1. **Part of the content is not editable in Pages CMS yet.** 15 of the 24 guides, the towns, the gear product lists and the legal pages are code. Until `docs/MIGRATION-PLAN.md` is carried out, editing them needs a developer.
 2. **Only the Netlify part has been tested on a real account** (2026-11-17). Pages CMS, Namecheap and the ownership transfers have not. The most important unknown is the real Pages CMS editing forms.
 3. **Private Email cannot be pushed with the domain.** Plan this early; fees and downtime are unconfirmed.
 4. **A hidden build dependency on Lovable's published configuration package** (`@lovable.dev/vite-tanstack-config`, version-pinned, from the public npm registry). It installs fine today. If Lovable ever withdrew it, a fresh install would fail. A developer can replace it with a standard configuration. The code also has a harmless error-reporting hook for Lovable's editor that does nothing without it.
@@ -161,3 +161,11 @@ The detailed, step-by-step instructions are in **`docs/DNS-AND-TRANSFER.md`**. I
 | Check a live site | `node scripts/verify-site.mjs <address>` |
 | Tests | `npx vitest run` (155 tests) |
 | Developer handbook (older; mentions Hostinger as an alternative host) | `HANDOVER.md` |
+
+## 10. Original data and how to keep it honest (added 2026-11-18)
+
+The site's main original asset is the pet-policy data from 38 vacation rental managers: `src/content/manager-policies.ts` (what the site reads), `public/pet-policies-38-managers.csv` (the public download, made by `bun scripts/make-policy-csv.mjs`), and the raw reading notes in `docs/data/`. It powers the "Will my dog be accepted?" tool and the `/data/pet-policies` page.
+
+- It is a convenience sample read on 2026-11-18, not a survey. Eleven more managers blocked automated reading and are not in it.
+- Policies change. Follow `docs/DATA-RECHECK-LOG.md`: re-read every manager page at least every six months, update the date and counts, and log it. Numbers on the site come from this file, not from hand-typed text, except where an article quotes a count with its date.
+- Accounts for affiliate programs (and Stay22) belong to the previous owner and do not transfer. Apply for your own and add the IDs in Pages CMS.

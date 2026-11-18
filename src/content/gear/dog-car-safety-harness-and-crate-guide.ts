@@ -23,6 +23,26 @@ export const products: Product[] = [
     },
   },
   {
+    id: "saker-bomber-harness",
+    name: "Bomber Harness",
+    brand: "Saker Canine",
+    summary:
+      "A car-and-trail harness whose maker says the car seat belt passes directly through its top handle.",
+    keySpecs: [
+      "Sizes XS, S, M and L, listed by girth (XS 13 to 24.8 in; L 14.6 to 45.3 in) and neck range, with no weight limits on the maker's page",
+      "The Center for Pet Safety lists it as passed testing, tested November 2022 with a 75 lb test dog, protocol CPS-001-014.01",
+      "Maker says the car seat belt needs to be passed directly through the top handle",
+      "Maker's page gives two different force figures (3,000+ lbs and over 3,300 lbs) and does not mention CPS",
+    ],
+    specSource: {
+      title: "Bomber harness",
+      url: "https://sakercanine.com/products/bomber-harness-black",
+      publisher: "Saker Canine",
+      accessedOn: "2026-11-18",
+    },
+    productUrl: "https://sakercanine.com/products/bomber-harness-black",
+  },
+  {
     id: "sleepypod-atom",
     name: "Atom Crash-Tested Carrier",
     brand: "Sleepypod",

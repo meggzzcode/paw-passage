@@ -15,7 +15,9 @@ export const guide: Guide = {
   lastReviewed: "2026-11-16",
   readingMinutes: 9,
   heroImage: "guide-la-getaways",
-  body: `## The short answer
+  body: `It is Friday afternoon, the dog is in the car, and you have not decided between the beach, the mountains and the desert. The right pick depends on what your dog can legally and comfortably do, not on which town has the prettiest rental photo.
+
+## The short answer
 
 - Choose the weekend by what your dog can legally and comfortably do between check-in and checkout, then book a rental that supports rest and bad-weather days.
 - Santa Barbara suits beach-comfortable dogs (leashed park, designated off-leash shoreline east of the creek). Big Bear suits dogs happy on a shared leashed path. Greater Palm Springs is an accommodation-led, cool-weather option. [[1]](https://santabarbaraparks.com/parks/arroyo-burro-county-beach-park/) [[2]](https://www.fs.usda.gov/r05/sanbernardino/recreation/trails/alpine-pedal-path-trail-1e50)
@@ -29,7 +31,7 @@ export const guide: Guide = {
 | --- | --- | --- | --- |
 | Santa Barbara | Dogs comfortable with beach environments | Arroyo Burro's leashed park and adjacent designated off-leash shoreline | Off-leash encounters may not suit reactive dogs |
 | Big Bear | Dogs happy on a shared leashed path | Alpine Pedal Path, with Forest Service leash restrictions | Mountain-road and weather planning |
-| Greater Palm Springs | Owners happy with a cool-weather, accommodation-led weekend | Plan public outings separately; do not assume nearby Joshua Tree trails accept dogs | Heat can remove outdoor plans |
+| Greater Palm Springs | Owners happy with a cool-weather, accommodation-led weekend | Plan public outings separately; Joshua Tree's hiking trails do not admit dogs | Heat can remove outdoor plans |
 | San Diego alternative | Sociable dogs whose owners want a designated dog beach | Ocean Beach Dog Beach | Dog access elsewhere is not automatically all day |
 | Idyllwild alternative | Owners seeking a quiet stay rather than assumed state-park hiking | Mount San Jacinto State Park's explicit dog exclusions | Dogs cannot use the wilderness or tram |
 
@@ -43,7 +45,7 @@ These distinctions come from official local, state, and federal sources, not a n
 - Visit Greater Palm Springs: **two hours from Los Angeles**, a destination-wide baseline, not an upper bound. [[7]](https://www.visitgreaterpalmsprings.com/plan/getting-here-and-around/)
 - Visit Santa Barbara: **92 miles**, with no time range. [[8]](https://santabarbaraca.com/plan-your-trip/know-before-you-go/transportation/driving-here/)
 
-To fill the gaps we computed modeled free-flow routes with the public OSRM router (OpenStreetMap data) from Los Angeles City Hall to each town's centre on 2026-11-16. They assume no traffic and no stops, and real Friday trips are usually much longer. [[14]](https://project-osrm.org/)
+To fill the gaps we computed modeled free-flow routes with the public OSRM router (OpenStreetMap data) from Los Angeles City Hall to each town's centre on 2026-11-16. They assume no traffic and no stops, and real Friday trips are usually much longer. [[13]](https://project-osrm.org/)
 
 | Destination | Modeled no-traffic time | Modeled distance | Published baseline |
 | --- | --- | --- | --- |
@@ -58,18 +60,13 @@ Treat the modeled figures as a floor. Check a live route from your real start ad
 
 ## Santa Barbara: a beach weekend with clear boundaries
 
-"Dog beach" means a designated area, not the whole shoreline.
+"Dog beach" means a designated area, not the whole shoreline. At Arroyo Burro County Beach Park, dogs must be leashed, and the county page identifies an off-leash beach area east of the creek. Keep the dog leashed through the park and confirm the boundary first. [[1]](https://santabarbaraparks.com/parks/arroyo-burro-county-beach-park/) County and city wording differ; our [California beach-rental guide](/guides/pet-friendly-beachfront-rentals-california) explains which reading to follow and how to decode "beachfront" in a listing.
 
-- At Arroyo Burro County Beach Park, dogs must be leashed. The county page identifies an off-leash beach area east of the creek. Keep the dog leashed through the park and confirm the boundary first. [[1]](https://santabarbaraparks.com/parks/arroyo-burro-county-beach-park/)
-- The City of Santa Barbara's Parks and Recreation page requires off-leash dogs to be under sight and voice control and says owners must keep a leash with them at all times. The county page and city handout are worded differently, so follow the stricter reading (leashed, except east of the creek) unless signs say otherwise. [[9]](https://sbparksandrec.santabarbaraca.gov/news/celebrate-national-dog-day-santa-barbara)
-
-Be cautious if your dog needs distance from other dogs: a leashed dog in an off-leash area can still be approached.
-
-**Ask before booking:** the exact public entrance the host recommends, whether the approach has stairs, and whether the dog can reach a toilet area without going to the beach. If a rental says beachfront, ask whether that means sand access, a bluff, or a view across a road; our [California beachfront-rental guide](/guides/pet-friendly-beachfront-rentals-california) explains how to audit that.
+A leashed dog in an off-leash area can still be approached, so think twice if yours needs distance from other dogs. Before booking, get the exact public entrance the host recommends, whether the approach has stairs, and whether the dog can reach a toilet area without going to the beach.
 
 ## Big Bear: a leashed-path weekend
 
-The Forest Service describes the Alpine Pedal Path as an asphalt path along the north shore of Big Bear Lake, shared with other users. Its restrictions require dogs on a leash no longer than six feet or otherwise under physical restrictive control, so bring a six-foot leash.It may have bikes and other dogs. [[2]](https://www.fs.usda.gov/r05/sanbernardino/recreation/trails/alpine-pedal-path-trail-1e50)
+The Forest Service describes the Alpine Pedal Path as an asphalt path along the north shore of Big Bear Lake, shared with other users. Its restrictions require dogs on a leash no longer than six feet or otherwise under physical restrictive control, so bring a six-foot leash. It may have bikes and other dogs. [[2]](https://www.fs.usda.gov/r05/sanbernardino/recreation/trails/alpine-pedal-path-trail-1e50)
 
 An out-and-back outing lets you choose a short turnaround. A paved route is not a medical clearance: ask your veterinarian if your dog has heart, breathing, orthopedic, or other health concerns.
 
@@ -87,44 +84,39 @@ It is a weaker choice for a dog that needs hours of exercise, or if you would fe
 
 ## Two alternatives with caveats
 
-**San Diego.** The City of San Diego identifies Dog Beach at the west end of the San Diego River Floodway as a designated leash-free area. Fiesta Island is leash optional but has restricted areas and seasonal nesting buffers, and other beach and bay areas have time-dependent dog restrictions. The modeled no-traffic route from City Hall is about 144 minutes and 120 miles; real trips are usually longer. [[4]](https://www.sandiego.gov/park-and-recreation/parks/dogs/bchdog) [[14]](https://project-osrm.org/)
+**San Diego.** The City of San Diego identifies Dog Beach at the west end of the San Diego River Floodway as a designated leash-free area. Fiesta Island is leash optional but has restricted areas and seasonal nesting buffers, and other beach and bay areas have time-dependent dog restrictions. The modeled no-traffic route from City Hall is about 144 minutes and 120 miles; real trips are usually longer. [[4]](https://www.sandiego.gov/park-and-recreation/parks/dogs/bchdog) [[13]](https://project-osrm.org/)
 
-**Idyllwild.** Mount San Jacinto State Park allows dogs only in the Idyllwild and Stone Creek campgrounds, not in the wilderness or on the Palm Springs Tram, except for service animals. [[5]](https://www.parks.ca.gov/?page_id=636) Verify any proposed trail with its actual manager, and treat Idyllwild as a quiet stay until you have a legal outing plan. The modeled no-traffic route is about 134 minutes and 109 miles, without mountain roads or weather; check a live route. [[14]](https://project-osrm.org/)
+**Idyllwild.** Mount San Jacinto State Park allows dogs only in the Idyllwild and Stone Creek campgrounds, not in the wilderness or on the Palm Springs Tram, except for service animals. [[5]](https://www.parks.ca.gov/?page_id=636) Verify any proposed trail with its actual manager, and treat Idyllwild as a quiet stay until you have a legal outing plan. The modeled no-traffic route is about 134 minutes and 109 miles, without mountain roads or weather; check a live route. [[13]](https://project-osrm.org/)
 
 ## National and state park rules
 
-National parks have no single pet policy, so check the individual park. Channel Islands National Park does not allow pets, to protect island wildlife. It says service animals are admitted only after a vaccination, parasite-prevention, and health-exam protocol, so contact the park directly. These are the park's own rules; the ADA summary in our fee and checklist guides covers rental accommodation and public businesses, not national-park access. A mainland coastal rental therefore does not make an island excursion dog-inclusive. [[3]](https://www.nps.gov/jotr/planyourvisit/pets.htm) [[10]](https://www.nps.gov/chis/planyourvisit/pets.htm)
+National parks have no single pet policy, so check the individual park. Channel Islands National Park does not allow pets, to protect island wildlife. It says service animals are admitted only after a vaccination, parasite-prevention, and health-exam protocol, so contact the park directly. These are the park's own rules; the ADA summary in our fee and checklist guides covers rental accommodation and public businesses, not national-park access. A mainland coastal rental therefore does not make an island excursion dog-inclusive. [[3]](https://www.nps.gov/jotr/planyourvisit/pets.htm) [[9]](https://www.nps.gov/chis/planyourvisit/pets.htm)
 
-"State park" does not mean dogs are welcome on trails. California State Parks says dogs are generally not allowed on trails unless a trail is specifically designated as open to dogs on leash, and are not permitted on most beaches. Where permitted, dogs must be on a leash of six feet or less and physically under your control. [[11]](https://www.parks.ca.gov/Dogs)
+"State park" does not mean dogs are welcome on trails. California State Parks says dogs are generally not allowed on trails unless a trail is specifically designated as open to dogs on leash, and are not permitted on most beaches. Where permitted, dogs must be on a leash of six feet or less and physically under your control. [[10]](https://www.parks.ca.gov/Dogs)
 
 ## Match the trip to your dog
 
 - **Sociable, energetic dog:** a designated dog beach suits dependable recall. Leave room to stop and rest.
 - **Reactive or easily overwhelmed dog:** prioritize private, verified outdoor space and a low-pressure routine over a famous off-leash area. Ask whether other dogs share gates, fences, corridors, or seating.
 - **Senior or limited-mobility dog:** favor a short doorway-to-toilet route, few steps, and outings you can shorten. Ask for photos from dog height.
-- **Heat-sensitive dog:** the ASPCA identifies flat-faced, elderly, overweight, and heart- or lung-compromised pets as needing particular care in heat. It recommends shade, plenty of fresh water, not over-exercising pets, and keeping them indoors when it is extremely hot, with air-conditioned rooms for higher-risk animals. There is no universal safe air temperature, so choose the forecast and cooling setup before the scenery. [[12]](https://www.aspca.org/pet-care/general-pet-care/hot-weather-safety-tips)
+- **Heat-sensitive dog:** the ASPCA identifies flat-faced, elderly, overweight, and heart- or lung-compromised pets as needing particular care in heat. It recommends shade, plenty of fresh water, not over-exercising pets, and keeping them indoors when it is extremely hot, with air-conditioned rooms for higher-risk animals. There is no universal safe air temperature, so choose the forecast and cooling setup before the scenery. [[11]](https://www.aspca.org/pet-care/general-pet-care/hot-weather-safety-tips)
 
 ## Heat and coastal hazards
 
-The ASPCA warns against leaving animals in parked vehicles and lists excessive panting, breathing difficulty, weakness, drooling, and collapse among overheating signs. If you suspect heat illness, stop and contact a veterinarian immediately. [[12]](https://www.aspca.org/pet-care/general-pet-care/hot-weather-safety-tips)
+The ASPCA lists excessive panting, breathing difficulty, weakness, drooling and collapse among overheating signs; if you suspect heat illness, contact a veterinarian immediately. [[11]](https://www.aspca.org/pet-care/general-pet-care/hot-weather-safety-tips) On the coast, a beach that permits dogs can still be the wrong place when sneaker waves surge far up the sand. [[12]](https://www.weather.gov/safety/ripcurrent-waves) Your fallback should be real: an indoor afternoon together, a shorter permitted outing, or rescheduling. The [California beach-rental guide](/guides/pet-friendly-beachfront-rentals-california) has the surf and heat detail.
 
-On the coast, check surf and beach alerts as well as air temperature. The National Weather Service warns that sneaker waves can travel unexpectedly far up the sand and move logs, so a beach that permits dogs can still be the wrong place that day. [[13]](https://www.weather.gov/safety/ripcurrent-waves) Your fallback should be real: an indoor afternoon together, a shorter permitted outing, or rescheduling.
-
-## Ask these questions before paying
+## Questions to put to the host
 
 Use the [pet cost and host confirmation tool](/tools/pet-cost-check) to get written answers:
 
-- Are our dog's number, size, and relevant needs explicitly approved?
+- Are our dog's number, size and relevant needs explicitly approved, and what is the complete price for our dates?
 - Is the yard private, and what are its fence height and ground gaps?
 - Can a dog reach the toilet area without stairs or shared indoor corridors?
-- Are dogs allowed to remain alone, and under what conditions?
 - Is cooling or heating effective in the rooms available to us?
-- What furniture and bedding restrictions apply?
 - Which nearby public outing does the host suggest, and who manages it?
-- What is the complete price with the correct pet count and dates?
 - What is the cancellation policy if weather changes our plans?
 
-Write the answers down for each candidate. For two dogs, also use our [two-dog accommodation guide](/guides/traveling-with-two-dogs-accommodation-guide): approval for one dog does not answer the question for both.
+For two dogs, also use our [two-dog accommodation guide](/guides/traveling-with-two-dogs-accommodation-guide): approval for one dog does not answer the question for both.
 
 ## A two-night structure
 
@@ -132,7 +124,15 @@ Write the answers down for each candidate. For two dogs, also use our [two-dog a
 - **Saturday:** the verified main outing when conditions suit; turn back before the dog is tired.
 - **Sunday:** easy morning. Inspect the yard for waste, repack medication, leave without rushing.
 
-Use the [pet cost and host confirmation tool](/tools/pet-cost-check) to compare the whole weekend rather than nightly prices, save the [departure checklist](/tools/checklist), and see our [dog-friendly cabin packing list](/guides/dog-friendly-cabin-packing-list) for a mountain stay.`,
+> **How sure we are**
+>
+> - **Confirmed by a source we cite:** the dog rules for Arroyo Burro, the Alpine Pedal Path, Joshua Tree, Mount San Jacinto and Channel Islands, each from the managing agency's own page (read 2026-11-16).
+> - **What most people report:** of five LA getaway roundups we read on 2026-11-16 (a small, non-random sample), one gave drive times that contradict each other and another gave none, which is why our table separates published baselines from modeled ones.
+> - **Unknown, and who to ask:** your real drive time and whether a particular rental suits your dog. A live route from your address and the host's written answers settle both.
+
+## Next step
+
+Price the whole weekend in the [pet cost and host confirmation tool](/tools/pet-cost-check) rather than comparing nightly rates, and check your dog against the host's rules with [will my dog be accepted](/tools/will-my-dog-be-accepted). Pack from the [packing list tool](/tools/packing-list) (our [cabin packing guide](/guides/dog-friendly-cabin-packing-list) suits a mountain stay), then browse [dog-friendly stays](/stays). The [pet-friendly vacation-rental checklist](/guides/pet-friendly-vacation-rental-checklist) covers the booking details.`,
   faqs: [
     {
       q: "How long does it take to drive from Los Angeles to Big Bear with a dog?",
@@ -217,12 +217,6 @@ Use the [pet cost and host confirmation tool](/tools/pet-cost-check) to compare 
       accessedOn: "2026-11-16",
     },
     {
-      title: "Celebrate National Dog Day in Santa Barbara",
-      url: "https://sbparksandrec.santabarbaraca.gov/news/celebrate-national-dog-day-santa-barbara",
-      publisher: "City of Santa Barbara Parks and Recreation",
-      accessedOn: "2026-11-16",
-    },
-    {
       title: "Pets — Channel Islands National Park",
       url: "https://www.nps.gov/chis/planyourvisit/pets.htm",
       publisher: "National Park Service",
@@ -252,6 +246,7 @@ Use the [pet cost and host confirmation tool](/tools/pet-cost-check) to compare 
       publisher: "OpenStreetMap contributors / Project OSRM",
       accessedOn: "2026-11-16",
     },
+
   ],
   research: {
     primaryKeyword: "dog friendly weekend getaways from Los Angeles",

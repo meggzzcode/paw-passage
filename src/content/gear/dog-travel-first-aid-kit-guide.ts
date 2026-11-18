@@ -96,9 +96,9 @@ export const products: Product[] = [
     ],
     specSource: {
       title: "Baskerville Ultra Muzzle",
-      url: "https://companyofanimals.com/uk/brand-product/baskerville-ultra-muzzle/",
+      url: "https://companyofanimals.com/us/brand-product/baskerville-ultra-muzzle/",
       publisher: "Company of Animals",
-      accessedOn: "2026-11-16",
+      accessedOn: "2026-11-18",
     },
   },
 ];

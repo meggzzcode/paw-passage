@@ -20,7 +20,7 @@ If you email us, we use your message and address only to reply and, for property
 
 ## Links to other sites
 
-Booking partners and other sites we link to have their own privacy policies. Some links are affiliate links; see our [affiliate disclosure](/affiliate-disclosure).
+Booking partners and other sites we link to have their own privacy policies. Some links may be affiliate links; see our [affiliate disclosure](/affiliate-disclosure).
 
 ## Affiliate links, cookies and tracking
 

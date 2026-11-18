@@ -17,6 +17,8 @@ export const guide: Guide = {
   heroImage: "gear-first-aid",
   body: `## The short answer
 
+Your dog cuts a paw on a rock two miles from the cabin, and the nearest clinic is 40 minutes away. What is in your car decides the next hour.
+
 - A kit buys time between something going wrong and a vet taking over. The AVMA says first aid is not a substitute for veterinary care, but it may save a pet's life until you can get them veterinary care. [[1]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf)
 - Build or buy around the AVMA checklist below, then add what ready-made kits usually lack: a digital thermometer, contact numbers and your dog's records.
 - Save poison control numbers before you leave: ASPCA Poison Control 888-426-4435 and Pet Poison Helpline 855-764-7661. A consultation fee may apply. Do not induce vomiting unless a veterinarian or poison control tells you to.
@@ -92,11 +94,11 @@ We picked kits whose listings name the item types the AVMA checklist describes, 
 
 **Kurgo: RSG Dog First Aid Kit.** A smaller, MOLLE-compatible version designed to attach to the maker's RSG harnesses and utility belt, with contents very close to the larger Kurgo kit. [[11]](https://www.kurgo.com/harnesses/rsg-dog-first-aid-kit) It suits a trail better than a cabin.
 
-**Add-on: a basket muzzle.** The AVMA tells owners to apply a muzzle if a pet threatens to bite, because pain and fear can make even the gentlest pet unpredictable. [[1]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf) Gauze or a triangular bandage can serve as an improvised muzzle; a purpose-made one fitted in advance is another option. The Baskerville Ultra is a basket-style thermoplastic rubber muzzle; its maker says it lets a dog pant, drink and take treats and can be heat-shaped for fit, is not recommended for extended periods unless necessary, needs supervision, and is sized by nose length and circumference. [[12]](https://companyofanimals.com/uk/brand-product/baskerville-ultra-muzzle/) Do not muzzle a vomiting pet. Practice at home with treats long before you need it.
+**Add-on: a basket muzzle.** The AVMA tells owners to apply a muzzle if a pet threatens to bite, because pain and fear can make even the gentlest pet unpredictable. [[1]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf) Gauze or a triangular bandage can serve as an improvised muzzle; a purpose-made one fitted in advance is another option. The Baskerville Ultra is a basket-style thermoplastic rubber muzzle; its maker says it lets a dog pant, drink and take treats and can be heat-shaped for fit, is not recommended for extended periods unless necessary, needs supervision, and is sized by nose length and circumference. [[12]](https://companyofanimals.com/us/brand-product/baskerville-ultra-muzzle/) Do not muzzle a vomiting pet. Practice at home with treats long before you need it.
 
 ## How this site earns money
 
-Some links on this site are affiliate links. When an article contains one, a notice appears at the top and the link is marked as sponsored. If you buy through one, Paws & Passage may earn a commission at no extra cost to you. A commission never changes which products we list or what we say about them. Read the full [affiliate disclosure](/affiliate-disclosure).
+When a link is an affiliate link it is marked sponsored and the page says so; read our [affiliate disclosure](/affiliate-disclosure). A commission never changes which products we list or what we say about them.
 
 ## Pick by situation
 
@@ -129,10 +131,10 @@ See also our [fenced-yard rental guide](/guides/vacation-rental-secure-fenced-ya
 
 The AVMA brochure also covers choking and rescue breathing; read it before the trip. [[1]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf) A few points:
 
-- Bleeding wound: apply firm pressure with a clean cloth or towel for at least three minutes before checking; if blood soaks through, add layers rather than removing the first.
-- Seizure: do not restrain the pet or put your hands near the mouth; time it and, if possible, record video for your vet.
-- Object in a wound: do not try to remove it.
-- Transport: keep an injured dog confined to a small area; use a board or blanket as a stretcher for a large dog.
+- Bleeding wound: apply firm pressure with a clean cloth or towel for at least three minutes before checking; if blood soaks through, add layers rather than removing the first. [[1]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf)
+- Seizure: do not restrain the pet or put your hands near the mouth; time it and, if possible, record video for your vet. [[1]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf)
+- Object in a wound: do not try to remove it. [[1]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf)
+- Transport: keep an injured dog confined to a small area; use a board or blanket as a stretcher for a large dog. [[1]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf)
 
 A first-aid class taught by a veterinary professional teaches the practical parts better than any article.
 
@@ -230,7 +232,7 @@ Add these to your [trip checklist](/tools/checklist) so the kit gets packed with
         "The maker says it is not for extended use unless necessary and that the dog should be supervised.",
         "Do not muzzle a vomiting dog, per the AVMA.",
         "Sizing is by nose length and circumference; the maker's sizing guide is the reference.",
-        "The maker page cited here is its UK site, so check availability and sizing where you live.",
+        "The maker's page says to use the nose-length measurement if nose length and circumference fall into different size categories.",
       ],
     },
   ],
@@ -310,9 +312,9 @@ Add these to your [trip checklist](/tools/checklist) so the kit gets packed with
     },
     {
       title: "Baskerville Ultra Muzzle",
-      url: "https://companyofanimals.com/uk/brand-product/baskerville-ultra-muzzle/",
+      url: "https://companyofanimals.com/us/brand-product/baskerville-ultra-muzzle/",
       publisher: "Company of Animals",
-      accessedOn: "2026-11-16",
+      accessedOn: "2026-11-18",
     },
   ],
   research: {

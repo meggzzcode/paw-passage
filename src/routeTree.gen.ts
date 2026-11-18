@@ -18,6 +18,7 @@ import { Route as ListYourPropertyRouteImport } from './routes/list-your-propert
 import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as TermsRouteImport } from './routes/terms'
+import { Route as DataPetPoliciesRouteImport } from './routes/data.pet-policies'
 import { Route as DestinationsIndexRouteImport } from './routes/destinations.index'
 import { Route as DogRulesIndexRouteImport } from './routes/dog-rules.index'
 import { Route as DogRulesSlugRouteImport } from './routes/dog-rules.$slug'
@@ -80,6 +81,11 @@ const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
 const TermsRoute = TermsRouteImport.update({
   id: '/terms',
   path: '/terms',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DataPetPoliciesRoute = DataPetPoliciesRouteImport.update({
+  id: '/data/pet-policies',
+  path: '/data/pet-policies',
   getParentRoute: () => rootRouteImport,
 } as any)
 const DestinationsIndexRoute = DestinationsIndexRouteImport.update({
@@ -184,6 +190,7 @@ export interface FileRoutesByFullPath {
   '/privacy': typeof PrivacyRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
+  '/data/pet-policies': typeof DataPetPoliciesRoute
   '/dog-rules/$slug': typeof DogRulesSlugRoute
   '/dogs/$slug': typeof DogsSlugRoute
   '/guides/$slug': typeof GuidesSlugRoute
@@ -213,6 +220,7 @@ export interface FileRoutesByTo {
   '/privacy': typeof PrivacyRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
+  '/data/pet-policies': typeof DataPetPoliciesRoute
   '/dog-rules/$slug': typeof DogRulesSlugRoute
   '/dogs/$slug': typeof DogsSlugRoute
   '/guides/$slug': typeof GuidesSlugRoute
@@ -243,6 +251,7 @@ export interface FileRoutesById {
   '/privacy': typeof PrivacyRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
+  '/data/pet-policies': typeof DataPetPoliciesRoute
   '/dog-rules/$slug': typeof DogRulesSlugRoute
   '/dogs/$slug': typeof DogsSlugRoute
   '/guides/$slug': typeof GuidesSlugRoute
@@ -274,6 +283,7 @@ export interface FileRouteTypes {
     | '/privacy'
     | '/sitemap.xml'
     | '/terms'
+    | '/data/pet-policies'
     | '/dog-rules/$slug'
     | '/dogs/$slug'
     | '/guides/$slug'
@@ -303,6 +313,7 @@ export interface FileRouteTypes {
     | '/privacy'
     | '/sitemap.xml'
     | '/terms'
+    | '/data/pet-policies'
     | '/dog-rules/$slug'
     | '/dogs/$slug'
     | '/guides/$slug'
@@ -332,6 +343,7 @@ export interface FileRouteTypes {
     | '/privacy'
     | '/sitemap.xml'
     | '/terms'
+    | '/data/pet-policies'
     | '/dog-rules/$slug'
     | '/dogs/$slug'
     | '/guides/$slug'
@@ -362,6 +374,7 @@ export interface RootRouteChildren {
   PrivacyRoute: typeof PrivacyRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   TermsRoute: typeof TermsRoute
+  DataPetPoliciesRoute: typeof DataPetPoliciesRoute
   DogRulesSlugRoute: typeof DogRulesSlugRoute
   DogsSlugRoute: typeof DogsSlugRoute
   GuidesSlugRoute: typeof GuidesSlugRoute
@@ -445,6 +458,13 @@ declare module '@tanstack/react-router' {
       path: '/terms'
       fullPath: '/terms'
       preLoaderRoute: typeof TermsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/data/pet-policies': {
+      id: '/data/pet-policies'
+      path: '/data/pet-policies'
+      fullPath: '/data/pet-policies'
+      preLoaderRoute: typeof DataPetPoliciesRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/destinations/': {
@@ -586,6 +606,7 @@ const rootRouteChildren: RootRouteChildren = {
   PrivacyRoute: PrivacyRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   TermsRoute: TermsRoute,
+  DataPetPoliciesRoute: DataPetPoliciesRoute,
   DogRulesSlugRoute: DogRulesSlugRoute,
   DogsSlugRoute: DogsSlugRoute,
   GuidesSlugRoute: GuidesSlugRoute,

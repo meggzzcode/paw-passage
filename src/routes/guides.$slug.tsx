@@ -16,6 +16,8 @@ import { PetCostWorkflow } from "@/components/site/PetCostWorkflow";
 const toolLabels = {
   checklist: { to: "/tools/checklist", label: "Before-you-book checklist" },
   "pet-cost-check": { to: "/tools/pet-cost-check", label: "Pet cost and host confirmation" },
+  "will-my-dog-be-accepted": { to: "/tools/will-my-dog-be-accepted", label: "Will my dog be accepted?" },
+  "packing-list": { to: "/tools/packing-list", label: "Pack your dog's bag" },
 } as const;
 
 export const Route = createFileRoute("/guides/$slug")({
@@ -28,7 +30,7 @@ export const Route = createFileRoute("/guides/$slug")({
     if (!loaderData) return { meta: [{ title: "Guide unavailable" }, { name: "robots", content: "noindex" }] };
     const g = loaderData.guide;
     const path = `/guides/${params.slug}`;
-    const h = pageHead({ title: g.seoTitle, description: g.seoDescription, path, type: "article", noindex: !isPublic(g), image: guideHero(g).src });
+    const h = pageHead({ title: g.seoTitle, description: g.seoDescription, path, type: "article", noindex: !isPublic(g), image: `/share/${g.slug}.jpg` });
     const scripts = [
       { type: "application/ld+json", children: jsonLd({ "@context": "https://schema.org", "@type": "Article", headline: g.title, description: g.seoDescription, datePublished: g.publishedOn, dateModified: g.lastReviewed, author: { "@type": "Organization", name: g.author }, publisher: { "@type": "Organization", name: site.name }, mainEntityOfPage: path }) },
       breadcrumbLd([{ name: "Guides", path: "/guides" }, { name: g.title, path }]),
@@ -62,7 +64,7 @@ function GuidePage() {
           <p className="mt-4 text-lg text-muted-foreground">{g.dek}</p>
           <p className="mt-4 text-sm text-muted-foreground sm:mt-5">By {g.author} · {g.readingMinutes} min read</p>
           <TrustStrip guide={g} />
-          <ArticleActions />
+          <ArticleActions slug={g.slug} title={g.title} />
         </header>
       </div>
       <img src={img.src} srcSet={g.heroUpload ? undefined : srcSetForKey(g.heroImage)} sizes="(max-width: 800px) 100vw, 1152px" alt={img.alt} width={1600} height={1008} decoding="async" fetchPriority="high" className="mx-auto mt-6 aspect-[16/9] sm:mt-10 sm:aspect-[21/9] w-full max-w-6xl object-cover md:rounded-xl" />

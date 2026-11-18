@@ -1,6 +1,7 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { evaluate, summarize, type BreedChoice, type Status } from "@/lib/dog-accepted";
 import { dataDate } from "@/content/manager-policies";
+import { regionsOf } from "@/lib/policy-stats";
 import { trackTool, trackToolOnce } from "@/lib/analytics";
 
 const TOOL = "dog-accepted";
@@ -21,13 +22,45 @@ export function DogAcceptedChecker() {
   const [breed, setBreed] = useState<BreedChoice>("none");
   const [submitted, setSubmitted] = useState(false);
   const [filter, setFilter] = useState<Status | "all">("all");
+  const [region, setRegion] = useState("all");
+  const [copied, setCopied] = useState(false);
+
+  // Restore a shared link: ?dogs=2&w=60,45&breed=pit
+  useEffect(() => {
+    try {
+      const q = new URLSearchParams(window.location.search);
+      const d = Number(q.get("dogs"));
+      if (d >= 1 && d <= 4) {
+        setDogs(d);
+        const ws = (q.get("w") ?? "").split(",").slice(0, 4);
+        setWeights([0, 1, 2, 3].map((i) => (/^\d{1,3}$/.test(ws[i] ?? "") ? ws[i]! : "")));
+        const b = q.get("breed") as BreedChoice | null;
+        if (b && breeds.some((x) => x.v === b)) setBreed(b);
+        setSubmitted(true);
+      }
+    } catch { /* ignore a bad link */ }
+  }, []);
 
   const results = useMemo(() => evaluate({ dogs, weights: weights.slice(0, dogs).map((w) => (w.trim() === "" ? null : Number(w))), breed }), [dogs, weights, breed]);
   const sum = summarize(results);
-  const shown = results.filter((r) => filter === "all" || r.status === filter).sort((a, b) => ["fits", "ask", "conflict"].indexOf(a.status) - ["fits", "ask", "conflict"].indexOf(b.status));
+  const shown = results.filter((r) => (filter === "all" || r.status === filter) && (region === "all" || r.policy.region === region)).sort((a, b) => ["fits", "ask", "conflict"].indexOf(a.status) - ["fits", "ask", "conflict"].indexOf(b.status));
 
   function touch() { trackToolOnce("tool_start", { tool: TOOL }); setSubmitted(false); }
-  function check() { setSubmitted(true); trackTool("tool_complete", { tool: TOOL, label: `dogs=${dogs}`, count: sum.fits }); }
+  function check() {
+    setSubmitted(true);
+    trackTool("tool_complete", { tool: TOOL, label: `dogs=${dogs}`, count: sum.fits });
+    try {
+      const q = new URLSearchParams({ dogs: String(dogs), w: weights.slice(0, dogs).map((w) => (/^\d{1,3}$/.test(w) ? w : "")).join(","), breed });
+      window.history.replaceState(null, "", `${window.location.pathname}?${q.toString()}`);
+    } catch { /* history blocked */ }
+  }
+  async function copyResults() {
+    const lines = shown.map((r) => `${labels[r.status]}: ${r.policy.name} (${r.policy.place}). ${r.reasons[0] ?? ""} Fee: ${r.policy.fee}. ${r.policy.url}`);
+    const text = `Will my dog be accepted? ${dogs} dog${dogs === 1 ? "" : "s"}, checked ${dataDate} against ${sum.total} managers' own pet pages (a sample; confirm with the host)\n\n${lines.join("\n")}`;
+    try { await navigator.clipboard.writeText(text); setCopied(true); setTimeout(() => setCopied(false), 2000); } catch { /* clipboard blocked */ }
+    trackTool("tool_copy", { tool: TOOL, count: shown.length });
+  }
+  function printResults() { trackTool("tool_print", { tool: TOOL, count: shown.length }); window.print(); }
 
   return (
     <div>
@@ -68,6 +101,16 @@ export function DogAcceptedChecker() {
             {(["all", "fits", "ask", "conflict"] as const).map((f) => (
               <button key={f} type="button" aria-pressed={filter === f} onClick={() => setFilter(f)} className={`rounded-full border px-4 py-1.5 text-sm ${filter === f ? "border-primary bg-primary text-primary-foreground" : "border-input hover:bg-muted"}`}>{f === "all" ? "All" : labels[f]}</button>
             ))}
+          </div>
+          <div className="no-print mt-4 flex flex-wrap items-center gap-3">
+            <label className="text-sm">Region
+              <select value={region} onChange={(e) => setRegion(e.target.value)} className="ml-2 h-10 rounded-md border border-input bg-background px-3 text-sm">
+                <option value="all">All regions</option>
+                {regionsOf().map((r) => <option key={r} value={r}>{r}</option>)}
+              </select>
+            </label>
+            <button type="button" onClick={copyResults} className="h-10 rounded-lg border border-input bg-background px-4 text-sm hover:bg-muted">{copied ? "Copied" : "Copy results"}</button>
+            <button type="button" onClick={printResults} className="h-10 rounded-lg border border-input bg-background px-4 text-sm hover:bg-muted">Print</button>
           </div>
           <ul className="mt-6 grid gap-4 md:grid-cols-2">
             {shown.map((r) => (

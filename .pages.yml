@@ -162,7 +162,7 @@ content:
         type: select
         list: true
         options:
-          values: [checklist, pet-cost-check]
+          values: [checklist, pet-cost-check, will-my-dog-be-accepted, packing-list]
       - name: embeddedTool
         label: Tool shown inside the article
         type: select

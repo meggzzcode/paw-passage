@@ -68,7 +68,7 @@ export interface Guide {
   /** Gear guides only: the products recommended, rendered as picks with optional affiliate buttons. */
   gear?: GearPick[];
   relatedGuides: string[]; // slugs
-  relatedTools: ("checklist" | "pet-cost-check")[];
+  relatedTools: ("checklist" | "pet-cost-check" | "will-my-dog-be-accepted" | "packing-list")[];
   /** An interactive tool shown inside the article, after the body and before the questions. */
   embeddedTool?: "pet-cost-workflow";
   sources: Source[];

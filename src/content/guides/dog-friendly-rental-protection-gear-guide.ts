@@ -17,6 +17,8 @@ export const guide: Guide = {
   heroImage: "gear-rental-protection",
   body: `## The short answer
 
+The listing says "dogs welcome," and then you find the sofa is cream linen. The right cover is the one the host has agreed to, so the order is ask first, pack second.
+
 - Ask the host before you pack anything. Airbnb says that even when pets are allowed, you should contact the host to confirm, and gives the example that pets may not be allowed on beds or sofas. [[1]](https://www.airbnb.com/help/article/86)
 - A cover helps you follow a permission the host has given. It is not a way around a rule, and it does not stop claws or chewing.
 - For most trips, a washable throw, a roll-up travel bed and dog-only towels cover the common mess.
@@ -24,9 +26,9 @@ export const guide: Guide = {
 
 ## How we picked these
 
-The picks come from criteria and from specifications on each maker's own product page. Paws & Passage has not tested, used or reviewed these products, and nothing here is a performance claim of ours. Words like waterproof or machine washable are the maker's wording. We looked for a currently listed product with a clear statement of size and materials, a washing instruction or washable claim, and a design that fits a real rental or road-trip situation, and dropped products whose pages we could not read. We list no prices because they change. Availability also changes, so confirm your size is in stock on the seller's page.
+The picks come from criteria and from specifications on each maker's own product page. Paws & Passage has not tested these products. Words like waterproof or machine washable are the maker's wording. We looked for a listed product with a clear statement of size and materials, a washing instruction, and a design that fits a real rental or road-trip situation. We list no prices because they change, and stock does too, so confirm your size on the seller's page.
 
-Some links are affiliate links, marked as sponsored, with a notice at the top of the article. If you buy through one, Paws & Passage may earn a commission at no extra cost to you; that never changes which products we list or what we say. Read the full [affiliate disclosure](/affiliate-disclosure).
+When a link is an affiliate link it is marked sponsored and the page says so; read our [affiliate disclosure](/affiliate-disclosure). A commission never changes which products we list or what we say.
 
 ## What to ask the host before you pack anything
 
@@ -72,7 +74,7 @@ A good towel does more for a rental floor than most gear. Dry the dog at the doo
 - Rinse muddy paws outside if possible. Do not wash a dog in a sink or tub without checking.
 - Before checkout, vacuum or brush the areas the dog used if the listing asks, and follow any checkout cleaning instructions.
 
-We recommend no specific towel, as we could not confirm current availability on a maker page. Choose one that is absorbent, quick to dry and machine washable.
+We pick no specific towel. Choose one that is absorbent, quick to dry and machine washable.
 
 ## Back-seat covers and hammocks for the car
 
@@ -95,7 +97,7 @@ Renting a car? Check the rental company's pet policy first; this guide does not 
 
 ## The picks, by situation
 
-We checked each seller's page on 2026-11-16 and each showed an Add to Cart button, but a page can show a button for a size or color that is sold out.
+Seller pages read 2026-11-16; a page can show a button for a size or color that is sold out.
 
 - **Host allows your dog on the sofa: Orvis Embossed Sherpa Throw.** A 40-by-40-inch two-layer sherpa fleece throw, listed as machine wash. Easy to pack, but it will not stay put on its own.
 - **A place that is the dog's own: Kurgo Loft Wander Dog Bed.** A roll-up bed in medium and large with a nonslip, waterproof bottom and a handle.
@@ -159,7 +161,7 @@ Add the packing items to the [trip checklist](/tools/checklist), and send your q
     },
     {
       q: "Do these gear picks cost extra through this site?",
-      a: "This guide lists no prices. Some links on this site are affiliate links. If you buy through one, Paws & Passage may earn a commission at no extra cost to you. A commission never changes which products we list or what we say about them. See the affiliate disclosure.",
+      a: "This guide lists no prices. When a link is an affiliate link it is marked sponsored and the page says so; see the affiliate disclosure. A commission never changes which products we list.",
     },
   ],
   gear: [

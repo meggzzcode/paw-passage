@@ -12,7 +12,7 @@ import { featureFilters, type FeatureKey } from "@/lib/stay-search";
 import { stayTypeLabels } from "@/lib/filters";
 import { pageHead } from "@/lib/seo";
 import { site } from "@/config/site";
-import { hasStays } from "@/lib/launch";
+import { hasVerifiedStays as hasStays } from "@/lib/launch";
 
 export const Route = createFileRoute("/")({
   head: () => pageHead({

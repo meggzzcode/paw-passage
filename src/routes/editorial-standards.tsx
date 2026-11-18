@@ -21,7 +21,7 @@ export const Route = createFileRoute("/editorial-standards")({
 
 ## How we verify stays
 
-A stay appears on Paws & Passage only after we confirm its pet policy (dog count, size and breed rules), pet fees, and fencing with the host or an authoritative listing, and have permission to use its photos. Every stay shows when it was last verified. Details we couldn't confirm are shown as "not confirmed," and our filters never treat "not confirmed" as a yes.
+A stay is marked **Verified** only after we confirm its pet policy (dog count, size and breed rules), pet fees, and fencing with the host or an authoritative listing, and have permission to use its photos. Every stay shows when it was last verified. Details we couldn't confirm are shown as "not confirmed," and our filters never treat "not confirmed" as a yes.
 
 ## Images
 

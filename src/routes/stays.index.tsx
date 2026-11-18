@@ -9,7 +9,7 @@ import { destinations } from "@/content/destinations";
 import { StayCard } from "@/components/site/StayCard";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { pageHead } from "@/lib/seo";
-import { hasStays } from "@/lib/launch";
+import { hasVerifiedStays } from "@/lib/launch";
 
 export const Route = createFileRoute("/stays/")({
   validateSearch: zodValidator(staySearchSchema),
@@ -19,10 +19,10 @@ export const Route = createFileRoute("/stays/")({
   head: ({ match }) => {
     const filtered = activeFilterCount(match.search) > 0 || match.search.sort !== "recommended";
     return pageHead({
-      title: "Dog-friendly stays with verified pet policies",
-      description: "Search dog-friendly cabins, cottages and beach houses by fenced yard, large dogs, number of dogs, pet fees and breed rules. Only verified stays are listed.",
+      title: "Dog-friendly stays and their pet policies",
+      description: "Search dog-friendly cabins, cottages and beach houses by fenced yard, large dogs, number of dogs, pet fees and breed rules. Each stay says whether its details are verified.",
       path: "/stays",
-      noindex: filtered || !hasStays(),
+      noindex: filtered || !hasVerifiedStays(),
     });
   },
   component: StaysPage,
@@ -94,7 +94,7 @@ function StaysPage() {
       <Breadcrumbs items={[{ label: "Home", to: "/" }, { label: "Stays" }]} />
       <header className="mt-6 max-w-3xl">
         <h1 className="text-4xl md:text-5xl">Dog-friendly stays</h1>
-        <p className="mt-3 text-muted-foreground">Every stay here has had its pet policy, fees and fencing checked. Filters only match details that are confirmed, so "not confirmed" never sneaks through as a yes.</p>
+        <p className="mt-3 text-muted-foreground">Stays marked Verified have had their pet policy, fees and fencing confirmed with the host. Stays marked Not yet verified show what the listing says, so confirm the details with the host before you book. Filters only match details that are confirmed, so "not confirmed" never sneaks through as a yes.</p>
       </header>
 
       <div className="mt-10 grid gap-10 md:grid-cols-[260px_1fr]">

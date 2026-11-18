@@ -80,7 +80,12 @@ const filtered = await get("/stays?fenced=true");
 ok(filtered.status === 200, "Filtered stays URL (/stays?fenced=true) is 200", `status ${filtered.status}`);
 ok(/name="robots"[^>]+noindex/.test(filtered.body) || /noindex/.test(filtered.body), "Filtered stays pages are noindex (kept out of search engines)");
 const staysIndexed = !/name="robots"[^>]+noindex/.test(pages["/stays"].body);
-if (stayLinks.length > 0) ok(staysIndexed, "The main /stays page itself is indexable (it lists verified stays)");
+if (stayLinks.length > 0) {
+  // Unverified stays are listed with a "Not yet verified" label. While every listed stay is unverified the directory stays out of search.
+  const unverifiedBadges = (pages["/stays"].body.match(/Not yet verified/g) || []).length;
+  if (unverifiedBadges >= stayLinks.length) ok(!staysIndexed, "The /stays page is noindex while every listed stay is still unverified");
+  else ok(staysIndexed, "The main /stays page itself is indexable (it lists verified stays)");
+}
 else ok(!staysIndexed, "The /stays page is noindex while it lists no verified stays (empty pages stay out of search)");
 
 // ---------- 3b. Dog rules lookup (/dog-rules) ----------

@@ -59,7 +59,7 @@ If an editor saves a half-finished draft, the build skips it and carries on. If 
 
 **Write an article.** Pages CMS > Articles > New. Keep Status on *Draft* while writing. Fill in the title, summary, text, sources and the "Research notes". When it is ready and checked, ask the person who approves to type their name and today's date in *Approved by / Approved on*, tick fact-checking finished, and set Status to *Published*. It goes live after the next rebuild.
 
-**Add a place to stay.** Pages CMS > Stays > New. Only fill in what the host has confirmed. Leave unknown boxes as **not-confirmed** (the site then says "Not confirmed"; it never guesses). Set Status to *Verified* and fill in the date the host confirmed the details. Use a photo only if you have the owner's permission.
+**Add a place to stay.** Pages CMS > Stays > New. Only fill in what the host has confirmed. Leave unknown boxes as **not-confirmed** (the site then says "Not confirmed"; it never guesses). Set Status to *Verified* only after the host confirmed the details, and fill in the date. A stay left as *Unverified* is still listed, with a "Not yet verified" label, so visitors know to confirm the details with the host. Use a photo only if you have the owner's permission.
 
 **Programs with their own rules (for example Expedia Group, which covers Vrbo).** Use their links exactly as the program gives them, never alter or redirect them, and keep commission figures out of public pages. The previous owner's account does not transfer; you apply for your own. See `docs/AFFILIATE-AND-SELLING.md` ("Expedia Group program rules") for the full list and how to remove links.
 

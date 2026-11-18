@@ -44,6 +44,11 @@ function StayPage() {
   return (
     <article className="container-page pt-10">
       <Breadcrumbs items={[{ label: "Home", to: "/" }, { label: "Stays", to: "/stays" }, { label: s.name }]} />
+      {s.status === "unverified" && (
+        <div role="note" className="mt-6 rounded-lg border border-terracotta/50 bg-accent/40 p-4 text-sm">
+          <span className="font-semibold">Not yet verified.</span> These details come from the listing and have not been confirmed with the host. Ask the host about the pet fee, dog limit, weight and breed rules, and fencing before you book. Anything marked "Not confirmed" is unknown, not a yes.
+        </div>
+      )}
       {s.status === "sample" && (
         <div className="mt-6 rounded-lg border border-dashed border-terracotta/60 bg-accent/40 p-4 text-sm">
           <PreviewBadge>Sample, preview only</PreviewBadge> <span className="ml-2">This is a fictional record used to preview the layout. It never appears on the live site.</span>
@@ -55,7 +60,7 @@ function StayPage() {
           <h1 className="mt-2 text-4xl md:text-5xl">{s.name}</h1>
           <p className="mt-3 text-lg text-muted-foreground">{s.summary}</p>
         </div>
-        <div className="md:text-right"><BookingButton stay={s} /></div>
+        <div><BookingButton stay={s} /></div>
       </header>
       <img src={img.src} alt={s.photoPermission ? img.alt : "Stock photo, not a photo of this property"} width={1600} height={1008} className="mt-8 aspect-[16/8] w-full rounded-xl object-cover" />
       {!s.photoPermission && <p className="mt-2 text-xs text-muted-foreground">Stock photo for illustration. Not a photo of this property.</p>}

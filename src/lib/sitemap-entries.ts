@@ -12,7 +12,8 @@ export const staticPaths = [
 
 /** Only public, indexable pages: published guides, verified stays. Never drafts or samples. */
 export function sitemapEntries(): { path: string; lastmod?: string }[] {
-  const liveStays = visibleStays({ includeSamples: false });
+  // Only verified stays are indexed; unverified listings are shown on the site but kept out of search.
+  const liveStays = visibleStays({ includeSamples: false }).filter((s) => s.status === "verified");
   // Until a verified stay exists, the stays directory and the town pages are noindexed, so they are left out of the sitemap too.
   const out: { path: string; lastmod?: string }[] = staticPaths
     .filter((path) => liveStays.length > 0 || path !== "/stays")
@@ -30,7 +31,7 @@ export function sitemapEntries(): { path: string; lastmod?: string }[] {
   out.push({ path: "/dogs" });
   for (const d of dogTypes.filter(dogTypeIsLive)) out.push({ path: `/dogs/${d.slug}` });
   for (const g of allGuides.filter(isPublic)) out.push({ path: `/guides/${g.slug}`, lastmod: g.lastReviewed });
-  for (const s of visibleStays({ includeSamples: false })) out.push({ path: `/stays/${s.slug}`, ...(s.lastVerified ? { lastmod: s.lastVerified } : {}) });
+  for (const s of liveStays) out.push({ path: `/stays/${s.slug}`, ...(s.lastVerified ? { lastmod: s.lastVerified } : {}) });
   return out;
 }
 

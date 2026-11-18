@@ -18,9 +18,10 @@ export function StayCard({ stay }: { stay: Stay }) {
   return (
     <Link to="/stays/$slug" params={{ slug: stay.slug }} className="group block overflow-hidden rounded-lg border border-border bg-card shadow-card transition hover:-translate-y-0.5">
       <div className="relative">
-        <img src={img.card ?? img.src} alt={stay.status === "sample" ? "Stock photo, not the property" : img.alt} loading="lazy" decoding="async" width={1600} height={1008} className="aspect-[4/3] w-full object-cover" />
+        <img src={img.card ?? img.src} alt={stay.status === "sample" || !stay.photoPermission ? "Stock photo, not the property" : img.alt} loading="lazy" decoding="async" width={1600} height={1008} className="aspect-[4/3] w-full object-cover" />
         <div className="absolute left-3 top-3 flex gap-2">
           {stay.status === "sample" && <PreviewBadge>Sample, preview only</PreviewBadge>}
+          {stay.status === "unverified" && <span className="rounded-full bg-background/90 px-2.5 py-0.5 text-xs font-semibold text-terracotta">Not yet verified</span>}
           {stay.sponsored?.active && <span className="rounded-full bg-background/90 px-2.5 py-0.5 text-xs font-semibold">Sponsored</span>}
         </div>
       </div>

@@ -218,11 +218,11 @@ content:
         label: Status
         type: select
         required: true
-        description: "Only 'Verified' stays appear on the website. A stay is verified only after the host confirmed the details."
+        description: "Verified and Unverified stays both appear on the website. Unverified ones carry a 'Not yet verified' label. Mark a stay Verified only after the host confirmed the details."
         options:
           values:
-            - { value: unverified, label: "Unverified (not on the website)" }
-            - { value: verified, label: "Verified (on the website)" }
+            - { value: unverified, label: "Unverified (shown, labelled Not yet verified)" }
+            - { value: verified, label: "Verified (shown; the host confirmed the details)" }
             - { value: sample, label: "Sample (preview only, never live)" }
       - { name: name, label: Name of the stay, type: string, required: true }
       - name: type

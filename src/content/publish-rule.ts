@@ -20,9 +20,9 @@ export function guideIsPublic(g: GuideGate): boolean {
   );
 }
 
-/** Only verified stays go live. Samples and unverified records never do. */
+/** Verified and unverified stays are listed; unverified ones carry a "Not yet verified" label. Samples never go live. */
 export function stayIsPublic(s: { status: string }): boolean {
-  return s.status === "verified";
+  return s.status === "verified" || s.status === "unverified";
 }
 
 export interface PlaceGate {

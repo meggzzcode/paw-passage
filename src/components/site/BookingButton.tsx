@@ -7,8 +7,9 @@ import type { Stay } from "@/content/stays/types";
 export function BookingButton({ stay }: { stay: Stay }) {
   const loc = useLocation();
   const link = getApprovedLink(stay.affiliateId);
-  if (!link || stay.status !== "verified") return null;
+  if (!link || stay.status === "sample") return null;
   return (
+    <div className="md:text-right">
     <a
       href={link.url}
       target="_blank"
@@ -18,5 +19,7 @@ export function BookingButton({ stay }: { stay: Stay }) {
     >
       Check dates with {link.network}
     </a>
+    <p className="mt-2 text-xs text-muted-foreground">Sponsored link: we may earn a commission if you book, at no extra cost to you.</p>
+    </div>
   );
 }

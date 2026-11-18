@@ -6,7 +6,7 @@ import type { Stay } from "./types";
 
 export type { Stay } from "./types";
 
-/** Stays visible in this build: verified only in production; plus samples in dev/preview. */
+/** Stays visible in this build: verified first, then unverified (labelled on the page); plus samples in dev/preview. */
 export function visibleStays(opts: { includeSamples?: boolean } = {}): Stay[] {
   const includeSamples = opts.includeSamples ?? site.showSampleStays;
   const all = [...verifiedStays, ...(contentStays as Stay[])];
@@ -16,9 +16,13 @@ export function visibleStays(opts: { includeSamples?: boolean } = {}): Stay[] {
     seen.add(s.slug);
   }
   const verified = all.filter((s) => s.status === "verified");
-  // Samples and unverified records are only ever shown in development or private preview builds.
-  return includeSamples ? [...verified, ...sampleStays, ...all.filter((s) => s.status !== "verified")] : verified;
+  const unverified = all.filter((s) => s.status === "unverified");
+  // Samples are only ever shown in development or private preview builds.
+  return includeSamples ? [...verified, ...unverified, ...sampleStays] : [...verified, ...unverified];
 }
+
+/** Verified stays only: used for the homepage, indexing and the sitemap. */
+export const verifiedOnly = (list: Stay[]) => list.filter((s) => s.status === "verified");
 
 export function getStay(slug: string, opts: { includeSamples?: boolean } = {}): Stay | undefined {
   return visibleStays(opts).find((s) => s.slug === slug);

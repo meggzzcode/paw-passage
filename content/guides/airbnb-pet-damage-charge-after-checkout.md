@@ -9,7 +9,7 @@ status: published
 author: Paws & Passage Editors
 publishedOn: 2026-11-18
 lastReviewed: 2026-11-18
-readingMinutes: 13
+readingMinutes: 14
 heroImage: guide-pet-fees
 faqs:
   - q: How long does a host have to charge me for pet damage after checkout?
@@ -284,7 +284,7 @@ Some managers charge a flat penalty for an undeclared dog, on top of damage. Sam
 | My Vacation Haven (Miramar Beach, FL) | Evidence of pets can mean carpet, odor and flea charges; amounts not listed | [[13]](https://www.myvacationhaven.com/pet-policy) |
 | Twiddy (Outer Banks) | Pets only in pet-friendly homes; a violation can end the tenancy | [[14]](https://www.twiddy.com/outer-banks/guests/pets/) |
 
-Surf or Sound adds that a breach can mean eviction and forfeiture. [[12]](https://www.surforsound.com/vacation-planning/rental-policies/) Whether an Airbnb host can charge an undeclared-pet fee not in the listing is unknown.
+Surf or Sound adds that a breach can mean eviction and forfeiture. Across 38 manager pet pages we read (listed in our [how-many-dogs guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental#the-38-manager-pages-we-checked)), 11 describe a specific penalty for an undisclosed pet: fines or charges from $200 to $1,000, doubled fees, or both, and 9 of the 11 mention being made to leave. The other 27 say nothing about it on the page we read, so ask. [[12]](https://www.surforsound.com/vacation-planning/rental-policies/) Whether an Airbnb host can charge an undeclared-pet fee not in the listing is unknown.
 
 **What most people say.** In 5 of the 22 items (two seen only as search snippets), disclosure and house-rule wording decided how a dispute went, so keep the listing's pet wording and tell the host about your dog before you book. Whether an approved pet changes what Airbnb pays a host is unconfirmed (see the table at the end).
 

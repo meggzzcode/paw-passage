@@ -234,7 +234,7 @@ The sample below is not a survey, and policies change.
 | Twiddy (Outer Banks, NC) | 2 pets unless advertised otherwise; no additional fee on the page; no pets in pools or hot tubs | No fireworks text on the page | [[10]](https://www.twiddy.com/outer-banks/guests/pets/) |
 | Vacasa (many places) | "a small fee per dog, per night", amount not listed; varies by home | No fireworks text on the page | [[11]](https://www.vacasa.com/pet-friendly-vacation-rentals) |
 
-Table as of 2026-11-18. Fees vary by home; we found no holiday pet-fee surcharge text on these pages, and a rise at peak dates is in the table at the end. For the full total, use the [pet cost check](/tools/pet-cost-check) and our [pet fees guide](/guides/how-vacation-rental-pet-fees-work).
+Table as of 2026-11-18. Fees vary by home; we found no holiday pet-fee surcharge text on these pages, and none of the 38 manager pet pages we read for our [how-many-dogs guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental#the-38-manager-pages-we-checked) mentioned one (that is not proof none exists), and a rise at peak dates is in the table at the end. For the full total, use the [pet cost check](/tools/pet-cost-check) and our [pet fees guide](/guides/how-vacation-rental-pet-fees-work).
 
 Airbnb announced on December 18, 2023 that for New Year's Eve it would block certain one- to three-night entire-home bookings flagged as higher risk for a party, in listed countries including the US, and that guests who can book must attest they understand its party ban. [[12]](https://news.airbnb.com/airbnb-using-ai-to-help-clampdown-on-new-years-eve-parties-globally/) That was the announcement for New Year's Eve 2023, and we found no newer one; for a short stay, check checkout early.
 

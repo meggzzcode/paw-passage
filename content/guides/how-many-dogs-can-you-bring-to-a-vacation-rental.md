@@ -9,7 +9,7 @@ status: published
 author: Paws & Passage Editors
 publishedOn: 2026-11-18
 lastReviewed: 2026-11-18
-readingMinutes: 10
+readingMinutes: 13
 heroImage: guide-two-dogs
 faqs:
   - q: How many dogs can you bring to an Airbnb?
@@ -224,6 +224,14 @@ Three things stand out.
 - Fee shapes differ too much to compare without arithmetic.
 - Brindley says its 60 lb is "each," while we found no standard for per-dog versus combined weight.
 
+### What 38 more manager pages say
+
+We also read the pet pages of 38 vacation rental managers on 2026-11-18, in the Smokies, North Carolina, Georgia, California, Colorado and the Florida Gulf Coast, and checked every figure below against the live page. It is a convenience sample, not a survey: 11 more managers' sites refused automated reading, so we skipped them. The full list is [at the end of this guide](#the-38-manager-pages-we-checked).
+
+- **Two is the usual cap.** 22 of the 38 state a limit of two, though for some it is two pets rather than two dogs, or "most homes" or "per property". Two set the limit at three pets. The other 14 give no number on the page we read.
+- **Fees are all over the map.** Single stated amounts run from $20 a night to a $300 one-time fee. One manager says up to $1,000 depending on the property, and three charge nothing on the homes we saw.
+- **Few mention breeds.** Only 5 of the 38 pet pages mention breed limits, and only 2 name breeds. 31 say nothing, so ask before you book.
+
 ## Is there a weight limit for dogs in a vacation rental?
 
 **Bottom line:** hosts and managers set weight limits, not platforms, so ask whether yours is per dog or combined.
@@ -322,3 +330,50 @@ Before you book:
 - [ ] You declared the true number of pets when you booked.
 - [ ] Any service animal or puppy has been mentioned to the host.
 - [ ] You ran the rest through our [pet-friendly rental checklist](/guides/pet-friendly-vacation-rental-checklist) and the [checklist tool](/tools/checklist).
+
+## The 38 manager pages we checked
+
+**Bottom line:** the page is the source, so check the live policy before you rely on a row.
+
+Read on 2026-11-18. Policies and fees change, many vary by home, and a blank means the page we read did not say.
+
+| Manager (page we read) | Place | Dog or pet limit | Pet fee as stated |
+| --- | --- | --- | --- |
+| [Big Bear Vacations](https://www.bigbearvacations.com/about-us/pet-information/) | Big Bear Lake | Not stated | $40 per night |
+| [Tahoe Getaways](https://tahoegetaways.com/policies) | South Lake Tahoe | 2 | $35 per night |
+| [Tahoe Vacation Rentals](https://www.tahoevacationrentals.com/reservation-information/) | Lake Tahoe | 3 pets per household | $75 plus tax per pet |
+| [Tahoe Signature Properties](https://tahoesignatureproperties.com/know-before-you-go/) | Lake Tahoe | 2 pets per stay | $100 |
+| [Vacasa](https://www.vacasa.com/usa/California/Mammoth-Lakes/explore/Dog-friendly/) | Many locations | varies by home | Not stated |
+| [AvantStay](https://www.avantstay.com/pet-friendly-vacation-rentals/california/pismo-beach) | Pismo Beach | most homes: 2 | Not stated |
+| [SkyRun Vacation Rentals](https://skyrun.com/breckenridge/breckenridge-pet-friendly-vacation-rentals/) | Breckenridge | Not stated | Not stated |
+| [Rocky Mountain Resorts](https://www.rockymtnresorts.com/?p=8672) | Estes Park | 2 per unit | $25 per night |
+| [Newman-Dailey Resort Properties](https://www.destinvacation.com/pet-friendly) | Destin | 2 | Not stated |
+| [My Vacation Haven](https://www.myvacationhaven.com/pet-policy) | Miramar Beach (30A/Destin area) | 2 pets per pet-friendly property | $250 first pet, $100 second pet |
+| [Rosemary Beach Cottage Rental Company](https://rosemarybeach.com/faq/) | Rosemary Beach (30A) | Not stated | $300 per pet |
+| [AMI Locals](https://www.amilocals.com/faqs) | Anna Maria Island | 2 | $250 per stay |
+| [Cabin Rentals of Georgia](https://cabin-rentals-of-georgia.com/policies) | Blue Ridge | Not stated | $50 plus $75 cleaning fee per night |
+| [A Blue Ridge Cabin Rental](https://ablueridgecabinrental.com/cabin-policies/) | Blue Ridge | 2 | $150 per pet |
+| [A Blue Ridge Vacation](https://www.ablueridgevacation.com/rental-and-cancellation-policies/) | Blue Ridge | Not stated | $20 plus small cleaning fee per night |
+| [Cuddle Up Cabin Rentals](http://cuddleupcabinrentals.com/Cabin-Rentals-Pet-Friendly.php) | Blue Ridge | Not stated | Not stated |
+| [Sliding Rock Cabins](https://slidingrockcabins.com/) | Ellijay / Blue Ridge | Not stated | $0 |
+| [Enchanted Mountain Retreats (georgiaemr.com)](https://www.georgiaemr.com/vacation-rentals/blue-ridge/dog-friendly) | Blue Ridge | 2 | Not stated |
+| [Emmons Realty](https://www.emmonsrealty.com/pages/rental-policies) | St. Simons Island | 2 | $147 |
+| [Georgia Coast Realty](https://www.gacoastrealty.com/rentals/rental-faqs.html) | St. Simons Island | Not stated | Not stated |
+| [St. Simons Island Beach Rentals](https://www.stsimonsislandbeachrentals.com/terms-conditions/) | St. Simons Island | 2 | $250 first dog, $150 second dog; $400 fo per stay |
+| [Brindley Beach Vacations](https://www.brindleybeach.com/node/3691) | Outer Banks | 2 | Not stated |
+| [Sun Realty](https://www.sunrealtync.com/node/1163) | Outer Banks | 2 | $161-$231 plus sales tax, varies by prop per pet |
+| [Beach Realty & Construction](https://www.beachrealtync.com/node/707) | Outer Banks | 2 | Not stated |
+| [Resort Realty](https://resortrealty.com/outer-banks-pet-friendly) | Outer Banks | 2 | up to $1,000, varies by property |
+| [Twiddy & Company](https://blog.twiddy.com/bring-your-pets-on-vacation/) | Outer Banks | varies by home | $0 on homes listed |
+| [Carolina Designs Realty](https://www.carolinadesigns.com/obx-guide/faq/pet-friendly-outer-banks-rentals/) | Outer Banks | Not stated | Not stated |
+| [Midgett Realty](https://www.midgettrealty.com/hatteras-vacation-rental-policies) | Hatteras Island | Not stated | Not stated |
+| [Surf or Sound Realty](https://www.surforsound.com/vacation-planning/rental-policies/) | Hatteras Island | 2 | $200 plus tax per week |
+| [Greybeard Rentals](https://www.greybeardrentals.com/asheville-vacation-rentals/pet-friendly) | Asheville | 2 | Not stated |
+| [Asheville Cabins of Willow Winds](https://www.ashevillecabins.com/accommodations/pet-friendly-cabins/) | Asheville | 2 | $100 |
+| [Hearthside Cabin Rentals](https://hearthsidecabinrentals.com/frequently-asked-questions) | Pigeon Forge/Gatlinburg | 2 | $55; $75 one-time |
+| [Aunt Bugs Cabin Rentals](https://www.auntbugs.com/rental-policies/) | Gatlinburg/Pigeon Forge | 2 | $75 per night |
+| [Bear Camp Cabins](https://www.bearcampcabins.com/blog/gatlinburg-cabins-pigeon-forge-pet-friendly-cabins) | Gatlinburg/Pigeon Forge | Not stated | $75 plus tax per pet |
+| [Elk Springs Resort](https://elkspringsresort.com/?p=1899) | Gatlinburg | Not stated | $50 per stay |
+| [Hapey Cabin Rentals](https://hapeycabinrentals.com/pet-friendly-smoky-mountain-cabin-rentals/) | Smokies TN (town not verified) | Not stated | $0 |
+| [Cabins USA](https://www.cabinsusa.com/vacation-cabin-rentals/amenity/pet-friendly-cabin-rentals.php) | Pigeon Forge/Sevierville | Not stated | $50 |
+| [Hemlock Hills Cabin Rentals](https://hemlockhillscabinrentals.com/blog/pet-friendly-cabin-pigeon-forge-tennessee/) | Pigeon Forge | Not stated | Not stated |

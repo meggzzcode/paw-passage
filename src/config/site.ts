@@ -3,9 +3,9 @@ import { settings, showDrafts } from "virtual:content";
 // Central brand + integration settings. The business details (domain, email, analytics ID) live in content/settings.yml so an owner can change them in Pages CMS without touching code.
 export const site = {
   name: "Paws & Passage",
-  tagline: "Better adventures, together.",
+  tagline: "Dog-Friendly Stays, Travel Guides & Gear",
   description:
-    "Dog-friendly travel guides, practical planning tools and carefully verified stays for people who travel with their dogs.",
+    "Dog-friendly stays, travel guides, planning tools and researched gear for people who travel with their dogs. Stay details come from public listings and unknown details are marked Not confirmed.",
   /** Public site origin, e.g. "https://pawsandpassage.com". Required for sitemap.xml (returns 503 until set). */
   siteUrl: settings.siteUrl,
   /** Business email for contact + property submissions. Leave "" until you have one: pages then say so honestly instead of showing a dead link. */

@@ -4,11 +4,11 @@ import { pageHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/terms")({
   head: () => pageHead({ title: "Terms of use", description: "The terms for using Paws & Passage's travel guides, tools and stay listings.", path: "/terms" }),
-  component: () => <InfoPage title="Terms of use" updated="2026-11-16" body={`By using Paws & Passage you agree to these terms.
+  component: () => <InfoPage title="Terms of use" updated="2026-11-18" body={`By using Paws & Passage you agree to these terms.
 
 ## Information, not a guarantee
 
-Our guides, tools and listings are for general information. Pet policies, fees, beach and trail rules, and property conditions change, sometimes without notice. **Always confirm details directly with the host, booking platform or managing agency before you book or travel.** Nothing on this site is veterinary, legal or financial advice. Ask your veterinarian about your own dog's health and fitness to travel.
+Our guides, tools and stay listings are for general information. Stay details are taken from public listings and may be out of date; anything we could not find is marked "Not confirmed", and a listing on this site is not an endorsement, inspection or guarantee. Some content is prepared with AI tools; see our [editorial standards](/editorial-standards). Pet policies, fees, beach and trail rules, and property conditions change, sometimes without notice. **Always confirm details directly with the host, booking platform or managing agency before you book or travel.** Nothing on this site is veterinary, legal or financial advice. Ask your veterinarian about your own dog's health and fitness to travel.
 
 ## Bookings
 
@@ -16,7 +16,11 @@ We are not a booking agent and are not party to any booking you make with a host
 
 ## Tools
 
-Our calculators and generators provide estimates and suggestions. Check totals against the provider's checkout before paying.
+Our calculators and generators, including the stay cost calculator, run in your browser and provide estimates and suggestions. Check totals against the provider's checkout before paying.
+
+## Affiliate links and third-party sites
+
+Some links are affiliate links, as explained in our [affiliate disclosure](/affiliate-disclosure). We do not control third-party sites, products or services, and their terms and prices apply.
 
 ## Your responsibility
 

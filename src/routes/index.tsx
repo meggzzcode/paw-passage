@@ -18,9 +18,9 @@ import { liveCategories } from "@/content/gear-hub";
 
 export const Route = createFileRoute("/")({
   head: () => pageHead({
-    title: hasStays() ? `${site.name}: dog-friendly cabins, stays and guides` : `${site.name}: dog-friendly travel guides and tools`,
+    title: `${site.name}: ${site.tagline}`,
     description: hasStays()
-      ? "Find dog-friendly cabins and beach stays by what matters: fenced yards, large dogs, extra dogs and real pet fees. Researched guides and free tools."
+      ? "Dog-friendly stays, researched travel guides and gear picks: fenced yards, large dogs, extra dogs, real pet fees and what to pack for the trip."
       : "Researched guides and free tools for renting and traveling with your dog: pet fees, fenced yards, car safety and local rules, with every source listed.",
     path: "/",
   }),

@@ -8,7 +8,7 @@ export const Route = createFileRoute("/privacy")({
 
 ## Information you type into our tools
 
-The checklist and the pet cost and host confirmation tool run entirely in your browser. What you enter is **not sent to us**. The checklist saves your ticks in your browser's local storage on your device only; you can clear it with the Reset button or your browser settings.
+Our tools, including the checklist, the packing list, the stay cost calculator and the pet cost and host confirmation tool, run entirely in your browser. What you enter is **not sent to us**. The checklist and packing list save your ticks and choices in your browser's local storage on your device only; you can clear it with the Reset button or your browser settings.
 
 ## Analytics
 
@@ -17,6 +17,14 @@ We may use Google Analytics 4 to understand which pages are useful and how many 
 ## Emails you send us
 
 If you email us, we use your message and address only to reply and, for property submissions, to review your listing.
+
+## Pinterest
+
+Some pages have a "Save to Pinterest" link, and the site footer may link to our Pinterest profile. These are ordinary links: they open Pinterest only if you click them. Once you are on Pinterest, its own privacy policy applies.
+
+## No newsletter
+
+We do not run a newsletter or collect email addresses for marketing.
 
 ## Links to other sites
 

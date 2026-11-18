@@ -4,13 +4,13 @@ import { pageHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/about")({
   head: () => pageHead({ title: "About Paws & Passage", description: "Why we started a dog-friendly travel guide built around the details that decide whether a stay works for your dog.", path: "/about" }),
-  component: () => <InfoPage title="About Paws & Passage" intro="Better adventures, together." updated="2026-11-18" body={`Most travel sites treat "pet-friendly" as a single checkbox. Anyone who has turned up at a "fenced" cabin to find three sides of fence and a gravel road on the fourth knows that isn't enough.
+  component: () => <InfoPage title="About Paws & Passage" intro="Dog-Friendly Stays, Travel Guides & Gear" updated="2026-11-18" body={`Most travel sites treat "pet-friendly" as a single checkbox. Anyone who has turned up at a "fenced" cabin to find three sides of fence and a gravel road on the fourth knows that isn't enough.
 
 Paws & Passage is a travel guide for people who plan around their dogs. We focus on the specifics that decide whether a stay actually works: whether the fence goes all the way around, how the pet fee is charged, weight and breed limits, how many dogs are welcome, and what the local beach and trail rules really say.
 
 ## Who publishes this
 
-Paws & Passage is an independent publication launched in November 2026, so it is new. Guides carry the byline "Paws & Passage Editors." That is an editorial process with written standards, not a named individual: the site owner has chosen not to publish a personal bio, and we do not invent people, credentials or experience. Editors research, check facts against listed sources and own corrections. We hold no veterinary, legal or trainer credentials, so use a vet for health decisions. How we work is set out in our [methodology](/methodology), [editorial standards](/editorial-standards) and [corrections log](/corrections).
+Paws & Passage is an independent publication launched in November 2026, so it is new. Guides carry the byline "Paws & Passage Editors." That is an editorial process with written standards, not a named individual: the site owner has chosen not to publish a personal bio, and we do not invent people, credentials or experience. Editors research, check facts against listed sources, with AI tools assisting the research and drafting (see our [editorial standards](/editorial-standards)) and own corrections. We hold no veterinary, legal or trainer credentials, so use a vet for health decisions. How we work is set out in our [methodology](/methodology), [editorial standards](/editorial-standards) and [corrections log](/corrections).
 
 ## What we do
 

@@ -3,7 +3,7 @@ import { InfoPage } from "@/components/site/InfoPage";
 import { pageHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/editorial-standards")({
-  head: () => pageHead({ title: "Editorial standards", description: "How Paws & Passage researches guides, verifies dog-friendly stays and handles corrections. No fake reviews, no invented experiences.", path: "/editorial-standards" }),
+  head: () => pageHead({ title: "Editorial standards", description: "How Paws & Passage researches guides, lists dog-friendly stays and handles corrections. No fake reviews, no invented experiences.", path: "/editorial-standards" }),
   component: () => <InfoPage title="Editorial standards" updated="2026-11-18" body={`## How we research guides
 
 1. **Start with the reader's real question.** We look at what people actually search for and ask.
@@ -11,6 +11,12 @@ export const Route = createFileRoute("/editorial-standards")({
 3. **Fill the gaps from authoritative sources.** Park agencies, city and county beach rules, veterinary organizations, and booking platforms' own help pages. Every source is listed at the end of the guide, with the date we checked it.
 4. **Add something genuinely useful.** Each guide aims to include at least three practical insights you're unlikely to find elsewhere.
 5. **Review it again.** Each guide shows a "last reviewed" date. Rules change, so check the linked official source before you travel.
+
+## Use of Artificial Intelligence
+
+Paws & Passage uses artificial intelligence (AI) tools to assist with research, data analysis, content development, organization and website operations. Our guides and product recommendations are informed by publicly available information, manufacturer specifications, published policies and other relevant sources. We aim to provide accurate, useful and transparent information. We do not claim firsthand experiences, personal product testing, property visits or independent verification unless explicitly stated. Information may change over time, and readers are encouraged to confirm important details directly with the relevant provider.
+
+Our source checks are also done with AI tools: a separate AI review re-reads the cited pages before a guide is published. We do not describe these checks as review by a human fact-checker.
 
 ## What we never do
 

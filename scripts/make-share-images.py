@@ -1,24 +1,40 @@
 #!/usr/bin/env python3
-"""Makes a share image (1200x630, for Facebook/iMessage/Slack) and a Pinterest pin (1000x1500) for every guide.
-Run from the repo root after adding or retitling a guide:  python3 scripts/make-share-images.py
-Output: public/share/<slug>.jpg and public/pins/<slug>.jpg. Photos are the guide's own hero photo (src/assets)."""
-import glob, os, re, textwrap
+"""Makes a share image (1200x630, for Facebook/iMessage/Slack) and a Pinterest pin (1000x1500) for every PUBLIC guide.
+Run from the repo root after adding, retitling or unpublishing a guide:  python3 scripts/make-share-images.py
+Output: public/share/<slug>.jpg and public/pins/<slug>.jpg, using the guide's own hero photo (src/assets).
+Idempotent: unchanged guides produce identical files. Images for guides that are retired, unpublished or
+missing are DELETED (public/share/default.jpg is kept). Use --check to only report problems (exit 1) without writing.
+Public rule mirrors src/content/publish-rule.ts: status published, researchComplete, no unverified items, approvedBy and approvedOn
+(code-file guides in src/content/guides/*.ts get the same defaults as src/content/guides/index.ts)."""
+import glob, os, re, sys, textwrap
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 
 FONT = "/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf"
 SANS = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
 GREEN = (38, 70, 59)
+KEEP = {"default.jpg"}  # share images that are not tied to a guide
 
-def guides():
+def all_guides():
+    """Yield dicts for EVERY guide file: slug, title, seoTitle, seoDescription, category, heroImage, public."""
+    import yaml
     for f in sorted(glob.glob("content/guides/*.md")):
-        t = open(f).read().split("---", 2)[1]
-        g = lambda k: (re.search(rf"^{k}:\s*(.+)$", t, re.M) or [None, ""])[1].strip().strip('"\'')
-        yield g("slug") or os.path.basename(f)[:-3], g("title"), g("heroImage"), g("status")
+        d = yaml.safe_load(open(f).read().split("---", 2)[1]) or {}
+        r = d.get("research") or {}
+        pub = (d.get("status") == "published" and r.get("researchComplete") is True and not r.get("unverified")
+               and bool(str(d.get("approvedBy") or "").strip()) and bool(str(d.get("approvedOn") or "").strip()))
+        yield dict(slug=d.get("slug") or os.path.basename(f)[:-3], title=d.get("title", ""), seoTitle=d.get("seoTitle", ""),
+                   seoDescription=d.get("seoDescription", ""), category=d.get("category", ""), hero=d.get("heroImage", ""), public=pub)
     for f in sorted(glob.glob("src/content/guides/*.ts")):
         if f.endswith("index.ts"): continue
         s = open(f).read()
-        g = lambda k: (re.search(rf'"?{k}"?:\s*"((?:[^"\\]|\\.)*)"', s) or [None, ""])[1]
-        yield g("slug"), g("title").replace('\\"', '"'), g("heroImage"), g("status")
+        g = lambda k: (re.search(rf'"?{k}"?:\s*"((?:[^"\\]|\\.)*)"', s) or [None, ""])[1].replace('\\"', '"')
+        pub = (g("status") == "published" and re.search(r'"?researchComplete"?:\s*true', s) is not None
+               and re.search(r'"?unverified"?:\s*\[\s*\]', s) is not None)
+        yield dict(slug=g("slug"), title=g("title"), seoTitle=g("seoTitle"), seoDescription=g("seoDescription"),
+                   category=g("category"), hero=g("heroImage"), public=pub)
+
+def public_guides():
+    return [g for g in all_guides() if g["public"] and g["slug"] and g["title"] and g["hero"]]
 
 def cover(img, w, h):
     """Scale to cover w x h, then slide the crop window to where the picture has the most detail (the dog), not the centre."""
@@ -52,14 +68,35 @@ def draw_text(img, title, w, h, big):
     brand = ImageFont.truetype(SANS, 26 if big else 24)
     d.text((int(w * 0.07), h - 56), "PAWS & PASSAGE  |  pawsandpassage.com", font=brand, fill=(214, 196, 160))
 
-os.makedirs("public/share", exist_ok=True); os.makedirs("public/pins", exist_ok=True)
-n = 0
-for slug, title, hero, status in guides():
-    if not slug or not title or not hero: continue
-    src = f"src/assets/{hero}.jpg"
-    if not os.path.exists(src): print("missing hero", hero, "for", slug); continue
-    base = Image.open(src).convert("RGB")
-    a = cover(base, 1200, 630); draw_text(a, title, 1200, 630, False); a.save(f"public/share/{slug}.jpg", quality=82, optimize=True)
-    b = Image.new("RGB", (1000, 1500), GREEN); b.paste(cover(base, 1000, 900), (0, 0)); draw_text(b, title, 1000, 1500, True); b.save(f"public/pins/{slug}.jpg", quality=82, optimize=True)
-    n += 1
-print("made", n, "share images and pins")
+def main():
+    check = "--check" in sys.argv
+    problems = []
+    live = set()
+    pubs = public_guides()
+    for g in pubs:
+        slug, title, hero = g["slug"], g["title"], g["hero"]
+        src = f"src/assets/{hero}.jpg"
+        if not os.path.exists(src):
+            problems.append(f"missing hero {hero} for {slug}"); continue
+        live.add(slug)
+        if check: continue
+        os.makedirs("public/share", exist_ok=True); os.makedirs("public/pins", exist_ok=True)
+        base = Image.open(src).convert("RGB")
+        a = cover(base, 1200, 630); draw_text(a, title, 1200, 630, False); a.save(f"public/share/{slug}.jpg", quality=82, optimize=True)
+        b = Image.new("RGB", (1000, 1500), GREEN); b.paste(cover(base, 1000, 900), (0, 0)); draw_text(b, title, 1000, 1500, True); b.save(f"public/pins/{slug}.jpg", quality=82, optimize=True)
+    # Stale images: anything not belonging to a public guide.
+    stale = []
+    for d in ("public/share", "public/pins"):
+        for f in sorted(glob.glob(f"{d}/*.jpg")):
+            name = os.path.basename(f)
+            if name in KEEP and d == "public/share": continue
+            if name[:-4] not in live: stale.append(f)
+    for f in stale:
+        if check: problems.append(f"stale image for a non-public guide: {f}")
+        else: os.remove(f); print("removed stale", f)
+    for p in problems: print("PROBLEM:", p)
+    print(("checked " if check else "made ") + f"{len(live)} share images and pins")
+    if check and problems: sys.exit(1)
+
+if __name__ == "__main__":
+    main()

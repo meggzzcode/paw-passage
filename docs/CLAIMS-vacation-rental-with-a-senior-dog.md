@@ -53,3 +53,26 @@ Article: content/guides/vacation-rental-with-a-senior-dog.md (status: draft). Ch
 | 47 | Vet-first decision table rows | Can you take | cites 7 | inference | 3 | n/a |
 
 Notes for the fact-checker: rows 38 to 41 and 46 are counts or absences within the dossier's sample, not facts about the world. The copy-and-paste host message contains no factual claims. Competitor notes (front matter) were checked 2026-11-18: Nylabone no mention of rentals/stairs/flooring; GoPetFriendly no rentals; Loyal short-term rentals and stairs mentioned briefly; Dogtrekker no stairs/flooring.
+
+## Added 2026-11-18 (forum dossier pass)
+
+All forum items below were re-fetched on 2026-11-18 and confirmed before use. Sample: 17 threads, small, non-random, many host or landlord forums. Source numbers refer to the front matter list (19 to 32).
+
+| # | Claim | Heading | Source | Status | Level | Note |
+|---|---|---|---|---|---|---|
+| 48 | 4 of 17 threads point to traction on stairs or floors (mats, strips, traction, carpet); 3 are Tripawds | Slippery floors | 19, 20, 21, 22 | SEEN | 2 | Not fully independent; matches vet sources |
+| 49 | One host: hard floors "1000x better than carpets and rugs" | Slippery floors | 23 | SEEN | 3 (single) | Inference about slippery floors is ours |
+| 50 | One thread: carrying out for ~50 lb dog; one: dog growled when carried; one: ramp for a couple of front steps, dog hated ramps | Slippery floors | 19, 21, 22 | SEEN | 3 (single reports) | |
+| 51 | Pulling dog up by leash may "turn him off" stairs; open-back stairs disliked (both Tripawds) | Balks at stairs | 21 | SEEN | 3 | |
+| 52 | 11-year-old 80 lb dog fell back down on narrow, steep, open-backed stairs | Balks at stairs | 20 | SEEN | 3 | Dossier's "carry only under 40 lbs" was NOT confirmed (a commenter described their own dog); dropped |
+| 53 | 3 of 17 mention incontinence or leaking in older dogs (host pads, owner thread, leaking thread) | Accidents | 25, 26, 27 | SEEN | 2 | Two Mumsnet |
+| 54 | Poster: vet not surprised dog was leaking; another suggested urine sample; vet bed locks urine in | Accidents | 27 | SEEN | 3 | Forum, not vet |
+| 55 | 3 of 17 hosts expect accidents reported and cleaned (cleaner and towels; report rule; 99% grab bag or mop) | Accidents | 23, 24, 25 | SEEN | 2 | All Airhosts; dossier "guests clean up" rule not in host's rules, so reworded |
+| 56 | 3 of 17 mention own blanket or host throws | Accidents | 24, 28, 30 | SEEN | 2 | |
+| 57 | 4 of 17 say urine odor or stains can persist | Accidents | 31, 32, 23, 28 | SEEN | 2 | Two landlords; one general dog smell |
+| 58 | One poster: ammonia cleaners encourage re-marking; no cleaner recommended | Accidents | 27 | SEEN | 3 | |
+| 59 | No source on whether hosts want advance notice of incontinence | Accidents; table | n/a | NOT CONFIRMED | 3 | |
+| 60 | One owner: 13-year-old dog needed emergency vet on a trip; carer wanted owner to decide | Vet distance | 29 | SEEN | 3 | Dossier dated posts 2022; the trip was Sept 2020 |
+| 61 | One poster: rules such as no dogs on beds or upstairs cannot be enforced | Manager rules | 28 | SEEN | 3 | Said by a commenter, not the OP |
+| 62 | Host tells guests stair count (not used in text; single report) | n/a | 30 | SEEN | 3 | Not used |
+| 63 | Competitors added: pawgen (no rental guidance, unsourced hourly stops), Vagabond Journey (brief host questions) | front matter | pages read 2026-11-18 | SEEN | 1 | Rover page returned 403, not used |

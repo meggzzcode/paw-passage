@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Calculator, ListChecks, Dog } from "lucide-react";
+import { Calculator, ListChecks, Dog, Backpack } from "lucide-react";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { pageHead } from "@/lib/seo";
 
@@ -10,6 +10,7 @@ export const Route = createFileRoute("/tools/")({
 
 const tools = [
   { to: "/tools/will-my-dog-be-accepted", icon: Dog, t: "Will my dog be accepted?", d: "Enter your dogs and see how 38 rental managers' own pet policies compare, with the ones that need a question first marked." },
+  { to: "/tools/packing-list", icon: Backpack, t: "Pack your dog's bag", d: "Tell us about the trip and fill the bag item by item. Tap an item to see what it is, why you might need it and where to get it." },
   { to: "/tools/pet-cost-check", icon: Calculator, t: "Pet cost and host confirmation", d: "Work out the real total for up to three stays, then get a message asking the host to confirm the pet fee in writing." },
   { to: "/tools/checklist", icon: ListChecks, t: "Before-you-book checklist", d: "Everything to confirm before paying. Saves on your device and prints neatly." },
 ] as const;

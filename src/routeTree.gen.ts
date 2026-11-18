@@ -31,6 +31,7 @@ import { Route as ToolsIndexRouteImport } from './routes/tools.index'
 import { Route as ToolsChecklistRouteImport } from './routes/tools.checklist'
 import { Route as ToolsCostCalculatorRouteImport } from './routes/tools.cost-calculator'
 import { Route as ToolsHostQuestionsRouteImport } from './routes/tools.host-questions'
+import { Route as ToolsPackingListRouteImport } from './routes/tools.packing-list'
 import { Route as ToolsPetCostCheckRouteImport } from './routes/tools.pet-cost-check'
 import { Route as ToolsWillMyDogBeAcceptedRouteImport } from './routes/tools.will-my-dog-be-accepted'
 import { Route as DestinationsStateIndexRouteImport } from './routes/destinations.$state.index'
@@ -146,6 +147,11 @@ const ToolsHostQuestionsRoute = ToolsHostQuestionsRouteImport.update({
   path: '/tools/host-questions',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ToolsPackingListRoute = ToolsPackingListRouteImport.update({
+  id: '/tools/packing-list',
+  path: '/tools/packing-list',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ToolsPetCostCheckRoute = ToolsPetCostCheckRouteImport.update({
   id: '/tools/pet-cost-check',
   path: '/tools/pet-cost-check',
@@ -185,6 +191,7 @@ export interface FileRoutesByFullPath {
   '/tools/checklist': typeof ToolsChecklistRoute
   '/tools/cost-calculator': typeof ToolsCostCalculatorRoute
   '/tools/host-questions': typeof ToolsHostQuestionsRoute
+  '/tools/packing-list': typeof ToolsPackingListRoute
   '/tools/pet-cost-check': typeof ToolsPetCostCheckRoute
   '/tools/will-my-dog-be-accepted': typeof ToolsWillMyDogBeAcceptedRoute
   '/destinations/': typeof DestinationsIndexRoute
@@ -213,6 +220,7 @@ export interface FileRoutesByTo {
   '/tools/checklist': typeof ToolsChecklistRoute
   '/tools/cost-calculator': typeof ToolsCostCalculatorRoute
   '/tools/host-questions': typeof ToolsHostQuestionsRoute
+  '/tools/packing-list': typeof ToolsPackingListRoute
   '/tools/pet-cost-check': typeof ToolsPetCostCheckRoute
   '/tools/will-my-dog-be-accepted': typeof ToolsWillMyDogBeAcceptedRoute
   '/destinations': typeof DestinationsIndexRoute
@@ -242,6 +250,7 @@ export interface FileRoutesById {
   '/tools/checklist': typeof ToolsChecklistRoute
   '/tools/cost-calculator': typeof ToolsCostCalculatorRoute
   '/tools/host-questions': typeof ToolsHostQuestionsRoute
+  '/tools/packing-list': typeof ToolsPackingListRoute
   '/tools/pet-cost-check': typeof ToolsPetCostCheckRoute
   '/tools/will-my-dog-be-accepted': typeof ToolsWillMyDogBeAcceptedRoute
   '/destinations/': typeof DestinationsIndexRoute
@@ -272,6 +281,7 @@ export interface FileRouteTypes {
     | '/tools/checklist'
     | '/tools/cost-calculator'
     | '/tools/host-questions'
+    | '/tools/packing-list'
     | '/tools/pet-cost-check'
     | '/tools/will-my-dog-be-accepted'
     | '/destinations/'
@@ -300,6 +310,7 @@ export interface FileRouteTypes {
     | '/tools/checklist'
     | '/tools/cost-calculator'
     | '/tools/host-questions'
+    | '/tools/packing-list'
     | '/tools/pet-cost-check'
     | '/tools/will-my-dog-be-accepted'
     | '/destinations'
@@ -328,6 +339,7 @@ export interface FileRouteTypes {
     | '/tools/checklist'
     | '/tools/cost-calculator'
     | '/tools/host-questions'
+    | '/tools/packing-list'
     | '/tools/pet-cost-check'
     | '/tools/will-my-dog-be-accepted'
     | '/destinations/'
@@ -357,6 +369,7 @@ export interface RootRouteChildren {
   ToolsChecklistRoute: typeof ToolsChecklistRoute
   ToolsCostCalculatorRoute: typeof ToolsCostCalculatorRoute
   ToolsHostQuestionsRoute: typeof ToolsHostQuestionsRoute
+  ToolsPackingListRoute: typeof ToolsPackingListRoute
   ToolsPetCostCheckRoute: typeof ToolsPetCostCheckRoute
   ToolsWillMyDogBeAcceptedRoute: typeof ToolsWillMyDogBeAcceptedRoute
   DestinationsIndexRoute: typeof DestinationsIndexRoute
@@ -525,6 +538,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ToolsHostQuestionsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/tools/packing-list': {
+      id: '/tools/packing-list'
+      path: '/tools/packing-list'
+      fullPath: '/tools/packing-list'
+      preLoaderRoute: typeof ToolsPackingListRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/tools/pet-cost-check': {
       id: '/tools/pet-cost-check'
       path: '/tools/pet-cost-check'
@@ -573,6 +593,7 @@ const rootRouteChildren: RootRouteChildren = {
   ToolsChecklistRoute: ToolsChecklistRoute,
   ToolsCostCalculatorRoute: ToolsCostCalculatorRoute,
   ToolsHostQuestionsRoute: ToolsHostQuestionsRoute,
+  ToolsPackingListRoute: ToolsPackingListRoute,
   ToolsPetCostCheckRoute: ToolsPetCostCheckRoute,
   ToolsWillMyDogBeAcceptedRoute: ToolsWillMyDogBeAcceptedRoute,
   DestinationsIndexRoute: DestinationsIndexRoute,

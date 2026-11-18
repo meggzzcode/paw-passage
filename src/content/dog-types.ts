@@ -36,7 +36,7 @@ export const dogTypes: DogType[] = [
     facts: [
       { text: "Weight limits we found on manager pages: Hearthside Cabin Rentals allows dogs up to 35 lb ($55 fee), with a $75 fee for larger dogs at some cabins; Brindley Beach says 60 lb each; AMI Locals sets a combined 50 lb for two dogs.", to: "/guides/how-many-dogs-can-you-bring-to-a-vacation-rental" },
     ],
-    guideSlugs: ["vacation-rentals-that-welcome-large-dogs", "how-vacation-rental-pet-fees-work", "how-many-dogs-can-you-bring-to-a-vacation-rental", "dog-car-safety-harness-and-crate-guide", "pet-friendly-vacation-rental-checklist"],
+    guideSlugs: ["vacation-rentals-that-welcome-large-dogs", "breed-restrictions-at-vacation-rentals", "how-vacation-rental-pet-fees-work", "how-many-dogs-can-you-bring-to-a-vacation-rental", "dog-car-safety-harness-and-crate-guide", "pet-friendly-vacation-rental-checklist"],
   },
   {
     slug: "multi-dog-families",

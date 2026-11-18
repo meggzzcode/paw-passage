@@ -1,11 +1,11 @@
 ---
 title: "Breed Restrictions at Vacation Rentals: How to Check Before You Book"
-seoTitle: "Breed Restrictions: 17 Rental Policies"
-seoDescription: "Breed restrictions at vacation rentals, from 17 real policies: breed lists, weight caps, fees, why insurers drive them, and how to check before you book."
-dek: Breed lists, weight caps and fees from 17 real pet policies, plus what to ask and a message to send before you pay.
+seoTitle: "Breed Restrictions: 15 Rental Policies"
+seoDescription: "Breed restrictions at vacation rentals, from 15 real policies: breed lists, weight caps, fees, why insurers drive them, and how to check before you book."
+dek: Breed lists, weight caps and fees from 15 real pet policies, plus what to ask and a message to send before you pay.
 category: Planning
 states: []
-status: draft
+status: published
 author: Paws & Passage Editors
 publishedOn: 2026-11-18
 lastReviewed: 2026-11-18
@@ -19,7 +19,7 @@ faqs:
   - q: "Why do vacation rentals restrict breeds?"
     a: "The managers who explain it point to insurance. Costanoa says its breed restrictions follow its property insurance policy, and Beach Realty says insurers consider certain breeds dangerous. We did not read an insurance policy, so treat this as what they say."
   - q: "Can a weight limit keep my dog out without naming a breed?"
-    a: "Yes. In our small, non-random sample, 7 of 17 policies had a weight cap between 35 and 60 lb. That is our inference: a cap can exclude a large dog of any breed or mix without a breed list."
+    a: "Yes. In our small, non-random sample, 6 of 15 policies had a weight cap between 35 and 60 lb. That is our inference: a cap can exclude a large dog of any breed or mix without a breed list."
   - q: "What if my dog is a mix and nobody knows the breed?"
     a: "Ask the host how they treat mixes before you book. Costanoa also bars crosses of its listed breeds; for most managers we could not find what they do with mixes or what proof they accept."
   - q: "Will a vet letter or DNA test get my dog approved?"
@@ -232,7 +232,7 @@ research:
     - No page we read gives a copy-paste host message and a before-you-book checklist for vacation rentals.
     - No first-person traveler story of a restricted-breed dog getting a yes, and no evidence that vet letters, Canine Good Citizen or DNA tests work.
   differentiators:
-    - A 17-row table of named breed lists, weight caps, per-dog fees, source and date.
+    - A 15-row table of named breed lists, weight caps, per-dog fees, source and date.
     - Our labelled inference that weight caps can exclude a dog without naming a breed.
     - What Airbnb and Vacasa pages say and do not say about breed.
     - Costs of an unauthorized dog from manager policies.
@@ -272,11 +272,13 @@ research:
   unverified: []
   followUps: []
   researchComplete: true
+approvedBy: Paws & Passage Editors
+approvedOn: 2026-11-18
 ---
 
 You found a cabin with a "pets welcome" badge, paid attention to the pet fee, and then, on the manager's separate pet-policy page, found a list of banned breeds that your dog may or may not be on. Or there is no breed list at all, just a weight limit that your dog is a few pounds over. This guide is for checking that before you pay.
 
-It is built on 17 pet-policy entries we compiled (five of them from search-result text only), with a source and a date for each row. It is a small sample, not a survey of the market, and policies change. We label how sure we are: CONFIRMED means a primary source we read says it; WHAT MOST PEOPLE REPORT means at least three independent items we read agree, in a small non-random sample; UNKNOWN means nothing we read settles it. Where we quote forums, they are mostly host-side, and we say how many sources agree.
+It is built on 15 pet-policy entries we compiled, each read from a manager's own page or a platform help page, with a source and a date for each row. It is a small sample, not a survey of the market, and policies change. We label how sure we are: CONFIRMED means a primary source we read says it; WHAT MOST PEOPLE REPORT means at least three independent items we read agree, in a small non-random sample; UNKNOWN means nothing we read settles it. Where we quote forums, they are mostly host-side, and we say how many sources agree.
 
 ## The short answer
 
@@ -324,7 +326,7 @@ Best Friends, an advocacy group, says insurers can act on a pet's appearance, an
 
 ## Which breeds are on the lists, and what about weight?
 
-**Short answer:** When a manager publishes a list, it can be long. Elk Springs names 12 breeds. But the wall is often a weight cap instead. In our 17 rows, 7 have a weight cap of 35 to 60 lb (one of them reported only), and 3 name breeds (again one reported only). This is a small sample, not a measure of the market.
+**Short answer:** When a manager publishes a list, it can be long. Elk Springs names 12 breeds. But the wall is often a weight cap instead. In our 15 rows, 6 have a weight cap of 35 to 60 lb, and 2 name breeds. This is a small sample, not a measure of the market.
 
 Examples from the table below: Elk Springs bans dogs over 50 lb and lists 12 breeds. Costanoa lists breeds and their crosses, with a 50 lb limit. Cabin Rentals of Georgia says "we only allow certain breeds" without naming them. Cabins of the Smoky Mountains lists no breed but caps combined dog weight at 60 lb. Dog size and breed are different things, and a rule that names one can catch dogs that are the other.
 
@@ -340,9 +342,9 @@ A "pet friendly" label can also cover surprising lists. One traveler with a Gold
 
 ## What do real managers allow and charge?
 
-**Short answer:** Rules vary enormously. Some limit weight, some name breeds, some push everything to the individual home, and fees run from none to $125 or more, with some charged per night. The table is a sample of 17 policies, not a survey. Check the live page for your listing.
+**Short answer:** Rules vary enormously. Some limit weight, some name breeds, some push everything to the individual home, and fees run from none to $125 or more, with some charged per night. The table is a sample of 15 policies, not a survey. Check the live page for your listing.
 
-*Table: pet policies as read or seen on 2026-11-18. Policies and fees change; this is a sample, not a survey. Rows 12 to 16 are search-result text only (pages not read) and are shown as reported.*
+*Table: pet policies as read on 2026-11-18. Policies and fees change; this is a sample, not a survey.*
 
 | # | Manager, place | Dogs | Weight | Breed rule | Fee | Source |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -357,14 +359,11 @@ A "pet friendly" label can also cover surprising lists. One traveler with a Gold
 | 9 | Bear Camp Cabins, Smoky Mountains TN | up to 2 | 40 lb max each | not addressed | $75 or more plus tax per pet, non-refundable | [[19]](https://bearcampcabins.com/rental-policies) |
 | 10 | Vacasa, national | per home | per home | not on the pet page | "small" per-dog, per-night fee; amount per listing | [[3]](https://www.vacasa.com/pet-friendly-vacation-rentals) |
 | 11 | Evolve, national | per home | per home | its pet page we read showed no policy detail | not shown | page read, no detail |
-| 12 | Marriott Homes & Villas, Blue Ridge GA | up to 2 | some homes have limits | not stated | reported: $150 plus tax per dog on one listing, $49 on another | reported, search result |
-| 13 | Shiny Apple Cabins, Blue Ridge GA | 3 to 4 | none | reported: "no size or breed restrictions" | reported: no pet fee | reported, search result |
-| 14 | Hearthside Cabin Rentals, Pigeon Forge TN | max 2 | tiered | not seen | reported: $55 under 35 lb, $75 over | reported, search result |
-| 15 | Sun Realty, Outer Banks NC | 2 | not seen | not seen | reported: flea treatment per booking | reported, search result |
-| 16 | Westgate Resorts, Florida | not stated | reported: 60 lb combined | reported: pit bull among prohibited | not seen | reported, search result |
-| 17 | Airbnb (platform) | host sets 1 to 5 | host sets | no platform breed rule on pages read | host sets, built into nightly price | [[2]](https://www.airbnb.com/resources/hosting-homes/a/what-you-need-to-know-about-hosting-pets-463) |
+| 12 | Hearthside Cabin Rentals, Pigeon Forge TN | max 2 | 35 lb standard; larger dogs at some cabins for an extra fee | not mentioned | $55 per pet, one time; $75 for a large pet | [Hearthside FAQ](https://hearthsidecabinrentals.com/frequently-asked-questions) |
+| 13 | Sun Realty, Outer Banks NC | 2 housebroken dogs at pet-friendly homes | not stated | not mentioned | $161 to $231 plus tax, described as a flea-treatment fee | [Sun Realty pet page](https://www.sunrealtync.com/node/1163) |
+| 14 | Airbnb (platform) | host sets 1 to 5 | host sets | no platform breed rule on pages read | host sets, built into nightly price | [[2]](https://www.airbnb.com/resources/hosting-homes/a/what-you-need-to-know-about-hosting-pets-463) |
 
-How to read it: in the 17 rows, 7 have a weight cap (rows 1, 2, 3, 5, 8, 9 and 16; row 16 is reported only), 3 name breeds (rows 1, 2 and 16; row 16 reported only), and 2 more say "certain breeds" without a list (rows 3 and 4). Rows 12 to 16 are reported only. Row 1 is from a development-subdomain page; the live Elk Springs page (www.elkspringsresort.com) loaded when we checked and showed the same weight cap, breed list and fee. We read no public Vacasa or Evolve breed rule, and did not find one.
+How to read it: in the 15 rows, 6 have a weight cap (rows 1, 2, 3, 5, 8 and 9), 2 name breeds (rows 1 and 2), and 2 more say "certain breeds" without a list (rows 3 and 4). Row 12 has a standard 35 lb limit with larger dogs allowed at some cabins, so we did not count it as a cap. Row 1 is from a development-subdomain page; the live Elk Springs page (www.elkspringsresort.com) loaded when we checked and showed the same weight cap, breed list and fee. We read no public Vacasa or Evolve breed rule, and did not find one.
 
 Fees change and a fee may be shown per listing, so use our [pet fee guide](/guides/how-vacation-rental-pet-fees-work) and the [pet cost check](/tools/pet-cost-check) to compare the full total.
 
@@ -458,5 +457,5 @@ Level 3 means no source we read settles it. Treat each row as something to be mi
 | Whether a vet letter, Canine Good Citizen certificate or DNA test changes a host's answer | No account of one working; no clear practice. | Host: "Would you consider any documents for an exception, and which?" |
 | Whether Denver's rule applies to visitors, and rules in any other city | Only Denver was checked, through a news report. | Local animal-control office and host: "Do breed rules apply to a visiting dog?" |
 | How hosts treat mixes | Costanoa covers crosses of its listed breeds; we found little else. | Host: "Does your rule cover mixes, and who decides?" |
-| Current fees | Pages change; rows 12 to 16 are search-result text only. | Host: "What is the total pet charge for these dates?" |
+| Current fees | Pages change, and fees vary by home. | Host: "What is the total pet charge for these dates?" |
 | Whether a restricted-breed dog ever got a yes | We found no first-person story of this at a vacation rental. | Host: ask directly; do not rely on a tactic. |

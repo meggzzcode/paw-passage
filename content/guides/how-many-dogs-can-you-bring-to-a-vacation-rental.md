@@ -230,7 +230,7 @@ We also read the pet pages of 38 vacation rental managers on 2026-11-18, in the 
 
 - **Two is the usual cap.** 22 of the 38 state a limit of two, though for some it is two pets rather than two dogs, or "most homes" or "per property". Two set the limit at three pets. The other 14 give no number on the page we read.
 - **Fees are all over the map.** Single stated amounts run from $20 a night to a $300 one-time fee. One manager says up to $1,000 depending on the property, and three charge nothing on the homes we saw.
-- **Few mention breeds.** Only 5 of the 38 pet pages mention breed limits, and only 2 name breeds. 31 say nothing, so ask before you book.
+- **Few mention breeds.** Only 5 of the 38 pet pages mention breed limits, and only 2 name breeds. Two say outright that they have no breed limits, and 31 say nothing, so ask before you book.
 
 ## Is there a weight limit for dogs in a vacation rental?
 

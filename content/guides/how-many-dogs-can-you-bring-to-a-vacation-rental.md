@@ -29,7 +29,6 @@ relatedGuides:
   - vacation-rentals-that-welcome-large-dogs
   - pet-friendly-vacation-rental-checklist
   - bringing-a-dog-to-a-no-pets-rental
-  - airbnb-vs-vrbo-with-a-dog
 relatedTools:
   - pet-cost-check
   - checklist
@@ -229,7 +228,7 @@ Two layout and meal points are worth checking before you pay:
 - **Two usable zones.** Bedroom count says little. Look for two resting spots away from the entrance, two feeding areas that can be physically separated, and a bedroom door that latches. A studio may have no secure separation; a small one-bedroom with a door can work well.
 - **Meals.** The ASPCA says resource guarding can involve food, toys and chews, lists separate rooms, crates and barriers as management options, and points owners of dogs likely to bite to a certified behaviorist or veterinary behaviorist [[16]](https://www.aspca.org/pet-care/dog-care/common-dog-behavior-issues/food-guarding). A rental is a poor place to find out whether your dogs can share food.
 
-Also check the cost of the second dog, covered next. For the rest of the trip, see the [pet-friendly rental checklist](/guides/pet-friendly-vacation-rental-checklist) and [Airbnb vs Vrbo with a dog](/guides/airbnb-vs-vrbo-with-a-dog).
+Also check the cost of the second dog, covered next. For the rest of the trip, see the [pet-friendly rental checklist](/guides/pet-friendly-vacation-rental-checklist) and [Airbnb vs Vrbo with a dog](/guides/how-vacation-rental-pet-fees-work).
 
 ## What do extra dogs cost?
 

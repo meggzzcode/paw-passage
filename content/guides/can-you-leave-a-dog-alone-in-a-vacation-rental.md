@@ -30,7 +30,6 @@ relatedGuides:
   - how-vacation-rental-pet-fees-work
   - dog-friendly-cabin-packing-list
   - how-many-dogs-can-you-bring-to-a-vacation-rental
-  - airbnb-vs-vrbo-with-a-dog
 relatedTools:
   - checklist
   - pet-cost-check
@@ -178,7 +177,7 @@ In our dataset of 38 managers, four state a crate rule or a no-unattended rule, 
 
 Only if the listing's house rules, or the host in writing, say so. Airbnb says a listing's pet policy is in its House rules section, and Vrbo says guests must agree to the house rules before they book. If the rules are silent, you have an unanswered question, not permission. [[1]](https://www.airbnb.com/help/article/86) [[4]](https://help.vrbo.com/articles/What-are-House-Rules)
 
-Vrbo describes house rules as what is and is not allowed at the property, shown before a guest inquires or books, with pets, number, type and size limits among them, plus up to three custom rules. [[4]](https://help.vrbo.com/articles/What-are-House-Rules) Neither platform sets a rule on leaving pets alone; both leave it to each host. Our [Airbnb vs Vrbo guide](/guides/airbnb-vs-vrbo-with-a-dog) covers other differences.
+Vrbo describes house rules as what is and is not allowed at the property, shown before a guest inquires or books, with pets, number, type and size limits among them, plus up to three custom rules. [[4]](https://help.vrbo.com/articles/What-are-House-Rules) Neither platform sets a rule on leaving pets alone; both leave it to each host. Our [Airbnb vs Vrbo guide](/guides/how-vacation-rental-pet-fees-work) covers other differences.
 
 ## What do hosts actually write?
 

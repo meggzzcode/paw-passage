@@ -33,7 +33,7 @@ const styles = [
   { label: "Cabins", search: { type: "cabin" }, img: "guide-ga-cabins" },
   { label: "Beach houses", search: { beach: true }, img: "guide-ca-beach" },
   { label: "Mountain escapes", search: { mountain: true }, img: "hero-porch" },
-  { label: "Weekend getaways", guide: "dog-friendly-weekend-getaways-from-atlanta", img: "guide-atlanta-getaways" },
+  { label: "Weekend getaways", guide: "dog-friendly-cabin-packing-list", img: "guide-atlanta-getaways" },
   { label: "Unique stays", search: { type: "unique" }, img: "guide-la-getaways" },
 ] as const;
 

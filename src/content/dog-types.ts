@@ -59,7 +59,7 @@ export const dogTypes: DogType[] = [
     seoDescription: "What to ask a host and pack when traveling with an older dog: stairs, floors, emergency care, comfort gear and time alone in a rental.",
     intro: "Older dogs need a different kind of rental: fewer stairs, easy floors and a plan for accidents and emergencies. Start with the full senior-dog guide, then use the others for packing, the drive and time alone.",
     ask: ["How many steps are there to the door, the bed and the yard?", "What are the floors like, and is there a rug that could slip?", "How far is the nearest emergency vet?", "Is there a spot outside close to the door?"],
-    guideSlugs: ["vacation-rental-with-a-senior-dog", "dog-travel-first-aid-kit-guide", "dog-friendly-cabin-packing-list", "can-you-leave-a-dog-alone-in-a-vacation-rental", "dog-car-safety-harness-and-crate-guide", "dog-travel-water-and-feeding-gear-guide"],
+    guideSlugs: ["vacation-rental-with-a-senior-dog", "dog-travel-first-aid-kit-guide", "dog-friendly-cabin-packing-list", "can-you-leave-a-dog-alone-in-a-vacation-rental", "dog-car-safety-harness-and-crate-guide"],
   },
 ];
 

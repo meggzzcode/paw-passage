@@ -27,7 +27,6 @@ faqs:
 relatedGuides:
   - how-vacation-rental-pet-fees-work
   - bringing-a-dog-to-a-no-pets-rental
-  - airbnb-vs-vrbo-with-a-dog
   - pet-friendly-vacation-rental-checklist
   - can-you-leave-a-dog-alone-in-a-vacation-rental
 relatedTools:
@@ -196,7 +195,7 @@ A pet fee is meant for expected costs. Airbnb says pet fees should cover expecte
 
 ## How Vrbo differs
 
-Vrbo's pages say there is no pre-authorization hold, your card is charged only if the host submits a claim, and the host has 14 days after your stay. To dispute, select Contact Us; Vrbo asks both sides for documentation. [[8]](https://help.vrbo.com/articles/What-happens-if-my-card-on-file-is-charged-for-property-damage) Its host page recommends the host contact you before filing, to share evidence, and gives no dispute timeline. [[9]](https://help.vrbo.com/articles/How-do-I-file-a-damage-deposit-claim) More in [Airbnb vs Vrbo with a dog](/guides/airbnb-vs-vrbo-with-a-dog).
+Vrbo's pages say there is no pre-authorization hold, your card is charged only if the host submits a claim, and the host has 14 days after your stay. To dispute, select Contact Us; Vrbo asks both sides for documentation. [[8]](https://help.vrbo.com/articles/What-happens-if-my-card-on-file-is-charged-for-property-damage) Its host page recommends the host contact you before filing, to share evidence, and gives no dispute timeline. [[9]](https://help.vrbo.com/articles/How-do-I-file-a-damage-deposit-claim) More in [Airbnb vs Vrbo with a dog](/guides/how-vacation-rental-pet-fees-work).
 
 ## Evidence that helps
 

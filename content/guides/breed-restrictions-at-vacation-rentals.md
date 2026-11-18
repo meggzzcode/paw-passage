@@ -31,7 +31,6 @@ relatedGuides:
   - how-vacation-rental-pet-fees-work
   - pet-friendly-vacation-rental-checklist
   - bringing-a-dog-to-a-no-pets-rental
-  - airbnb-vs-vrbo-with-a-dog
 relatedTools:
   - checklist
   - pet-cost-check
@@ -279,7 +278,7 @@ No reply? Ask once more through the booking platform and hold off on paying. If 
 
 - Use the platform's pet filter, then read the house rules and the manager's pet page for breed and weight lines. Twiddy, for example, has no manager-wide breed rule but lets individual homes set limits on "number, size, or type." [[16]](https://www.twiddy.com/outer-banks/guests/pets/)
 - The National Dog Inclusive Rental Database lists properties with no breed or weight limits and calls its entries "leads" to confirm; it does not say whether vacation rentals are included. [[20]](https://www.mypitbullisfamily.org/housing/)
-- Our [large-dog rental guide](/guides/vacation-rentals-that-welcome-large-dogs) and [Airbnb versus Vrbo guide](/guides/airbnb-vs-vrbo-with-a-dog) cover size and platform questions.
+- Our [large-dog rental guide](/guides/vacation-rentals-that-welcome-large-dogs) and [Airbnb versus Vrbo guide](/guides/how-vacation-rental-pet-fees-work) cover size and platform questions.
 
 ## Before you book
 

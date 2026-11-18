@@ -26,3 +26,52 @@
   to = "/guides/how-many-dogs-can-you-bring-to-a-vacation-rental"
   status = 301
   force = true
+
+# Retired guide.
+[[redirects]]
+  from = "/guides/dog-friendly-cabins-fenced-yards-georgia"
+  to = "/guides/vacation-rental-secure-fenced-yard"
+  status = 301
+  force = true
+
+# Retired guide.
+[[redirects]]
+  from = "/guides/pet-friendly-beachfront-rentals-california"
+  to = "/destinations/california"
+  status = 301
+  force = true
+
+# Retired guide.
+[[redirects]]
+  from = "/guides/dog-friendly-weekend-getaways-from-atlanta"
+  to = "/destinations/georgia"
+  status = 301
+  force = true
+
+# Retired guide.
+[[redirects]]
+  from = "/guides/dog-friendly-weekend-getaways-from-los-angeles"
+  to = "/destinations/california"
+  status = 301
+  force = true
+
+# Retired guide.
+[[redirects]]
+  from = "/guides/dog-travel-water-and-feeding-gear-guide"
+  to = "/guides/dog-friendly-cabin-packing-list"
+  status = 301
+  force = true
+
+# Retired guide.
+[[redirects]]
+  from = "/guides/dog-friendly-rental-protection-gear-guide"
+  to = "/guides/dog-friendly-cabin-packing-list"
+  status = 301
+  force = true
+
+# Retired guide.
+[[redirects]]
+  from = "/guides/airbnb-vs-vrbo-with-a-dog"
+  to = "/guides/how-vacation-rental-pet-fees-work"
+  status = 301
+  force = true

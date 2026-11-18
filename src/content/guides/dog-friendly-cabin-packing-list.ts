@@ -97,7 +97,7 @@ Pack:
 - A washable entrance mat if the host permits it, a brush, a cloth for paws, a lint roller, and waste bags.
 - A crate, only if your dog already uses one. A cabin is a poor place to try crating for the first time.
 
-Dry the dog at the door and wipe paws before they cross the floor, and pick a sleeping spot away from the entrance. With two dogs, bring separate beds and bowls; see our [two-dog accommodation guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental). If an accident happens, blot promptly, follow the property's cleaning instructions and tell the host; stain removers can damage some materials, so check first. Before checkout, collect yard waste and remove loose hair. Our [rental protection gear guide](/guides/dog-friendly-rental-protection-gear-guide) compares washable covers, travel beds and car-seat covers.
+Dry the dog at the door and wipe paws before they cross the floor, and pick a sleeping spot away from the entrance. With two dogs, bring separate beds and bowls; see our [two-dog accommodation guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental). If an accident happens, blot promptly, follow the property's cleaning instructions and tell the host; stain removers can damage some materials, so check first. Before checkout, collect yard waste and remove loose hair. Our [rental protection gear guide](/guides/dog-friendly-cabin-packing-list) compares washable covers, travel beds and car-seat covers.
 
 ## A practical canine first-aid kit
 
@@ -134,7 +134,7 @@ CDC notes that signs of tickborne disease may not appear for 7 to 21 days or lon
 
 ## Before you leave
 
-Trial anything new, such as boots, barriers, crates and restraints, at home first. Keep the leash, bags, water, medication, towels and records within reach in the car, on the way there and back. If you are still choosing a property, our [Georgia cabin-vetting guide](/guides/dog-friendly-cabins-fenced-yards-georgia) shows how to check a fenced yard before you book.
+Trial anything new, such as boots, barriers, crates and restraints, at home first. Keep the leash, bags, water, medication, towels and records within reach in the car, on the way there and back. If you are still choosing a property, our [Georgia cabin-vetting guide](/guides/vacation-rental-secure-fenced-yard) shows how to check a fenced yard before you book.
 
 > **How sure we are**
 >
@@ -152,9 +152,7 @@ Turn this into your own checklist with the [packing list tool](/tools/packing-li
     { q: "Do I need furniture covers if the cabin charges a pet fee?", a: "A pet fee does not establish furniture permission, so confirm the rules first. Where furniture is allowed, a washable cover helps with hair and damp paws but does not remove responsibility for damage." },
     { q: "What should I do if my dog may have swallowed antifreeze?", a: "Contact a veterinarian, emergency veterinary hospital, ASPCA Animal Poison Control at 888-426-4435, or Pet Poison Helpline at 855-764-7661 immediately. ASPCA's antifreeze guidance says to get the dog to a veterinary hospital right away, as signs can be missed early. [[9]](https://www.aspca.org/news/digging-deeper-getting-facts-dangers-antifreeze-and-your-pets) Do not induce vomiting unless a veterinary professional directs you. Keep the product label available if possible; a consultation fee may apply." },
   ],
-  relatedGuides: ["dog-friendly-cabins-fenced-yards-georgia", "dog-friendly-rental-protection-gear-guide", "pet-friendly-vacation-rental-checklist", "vacation-rental-secure-fenced-yard", "how-many-dogs-can-you-bring-to-a-vacation-rental",
-    "new-years-eve-with-a-dog-in-a-vacation-rental",
-  ],
+  relatedGuides: ["vacation-rental-secure-fenced-yard", "pet-friendly-vacation-rental-checklist", "how-many-dogs-can-you-bring-to-a-vacation-rental", "new-years-eve-with-a-dog-in-a-vacation-rental"],
   relatedTools: ["checklist", "pet-cost-check"],
   sources: [
     { title: "Bear Safety: Storing Food", url: "https://www.nps.gov/articles/bearsafetyfood.htm", publisher: "National Park Service", accessedOn: "2026-11-16" },

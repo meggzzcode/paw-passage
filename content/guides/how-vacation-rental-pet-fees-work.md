@@ -31,7 +31,7 @@ relatedGuides:
   - vacation-rental-secure-fenced-yard
   - airbnb-pet-damage-charge-after-checkout
   - bringing-a-dog-to-a-no-pets-rental
-  - airbnb-vs-vrbo-with-a-dog
+  - how-vacation-rental-pet-fees-work
 embeddedTool: pet-cost-workflow
 relatedTools:
   - checklist
@@ -200,7 +200,7 @@ If you are comparing platforms, this is what the official help pages say, and on
 | Pets and the host | Tell the host about your pets even at a property that allows them; a pet-friendly label does not settle size, breed or count. [[2]](https://www.airbnb.com/help/article/86) | Hosts can send a payment request to add a charge to an existing reservation. [[4]](https://help.vrbo.com/articles/How-do-I-manage-my-fees) |
 | Service animals | Airbnb says service animals stay free. [[1]](https://www.airbnb.com/help/article/3623) | Hosts in countries with service-animal laws must accommodate guests who need them regardless of the pet policy. [[5]](https://help.vrbo.com/articles/What-is-HomeAway-s-service-animal-policy) |
 
-Practical consequence: because Airbnb can fold a pet fee into the nightly rate, a displayed nightly number is not necessarily the billing unit. A hypothetical $100 per-stay fee shows as $50 a night over two nights and $20 over five. And because Vrbo's pages cover fee categories and display policy rather than every host's configuration, a pet charge is worth confirming in the full quote on either platform. Our [Airbnb versus Vrbo guide](/guides/airbnb-vs-vrbo-with-a-dog) goes deeper on the rest of the comparison.
+Practical consequence: because Airbnb can fold a pet fee into the nightly rate, a displayed nightly number is not necessarily the billing unit. A hypothetical $100 per-stay fee shows as $50 a night over two nights and $20 over five. And because Vrbo's pages cover fee categories and display policy rather than every host's configuration, a pet charge is worth confirming in the full quote on either platform. Our [Airbnb versus Vrbo guide](/guides/how-vacation-rental-pet-fees-work) goes deeper on the rest of the comparison.
 
 ## Compare the full stay, not the pet fee
 

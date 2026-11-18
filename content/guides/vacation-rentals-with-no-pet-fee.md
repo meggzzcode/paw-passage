@@ -27,7 +27,6 @@ faqs:
 relatedGuides:
   - how-vacation-rental-pet-fees-work
   - how-many-dogs-can-you-bring-to-a-vacation-rental
-  - airbnb-vs-vrbo-with-a-dog
   - bringing-a-dog-to-a-no-pets-rental
   - breed-restrictions-at-vacation-rentals
 embeddedTool: pet-cost-workflow
@@ -234,7 +233,7 @@ I read the official help pages for both. They tell you what hosts can set, not w
 
 **Airbnb.** Add your destination and your pets under Who, or open Filters and choose Allows pets under Booking options. [[16]](https://www.airbnb.com/help/article/86) Guests state how many pets (0 to 5) are coming, hosts can add a pet fee, and the fee shows in the nightly rate and in the checkout total. [[17]](https://www.airbnb.com/help/article/3623) What hosts can charge: the fee can be per booking, per night, per pet or per pet per night, it cannot be more than the nightly base rate, and it is meant to cover expected cleaning, not unexpected damage. [[17]](https://www.airbnb.com/help/article/3623) Service animals stay free of pet fees, and for emotional support animals the default is that hosts may charge normal pet fees unless the local policy requires them to accept the animal. [[17]](https://www.airbnb.com/help/article/3623) [[18]](https://www.airbnb.com/help/article/1869) The pages we read describe no fee-free filter, so open the price breakdown.
 
-**Vrbo.** Pets are one of the standard fee types a host can set, with cleaning and extra guests, and mandatory fees must be shown upfront. [[19]](https://help.vrbo.com/articles/How-do-I-manage-my-fees) Changes to fees apply only to future bookings, and a host can add a charge to an existing reservation by sending a payment request before the stay is complete. [[19]](https://help.vrbo.com/articles/How-do-I-manage-my-fees) The displayed price includes mandatory and service fees, with taxes added at checkout, but that page does not mention pets. [[20]](https://help.vrbo.com/articles/About-Price-Display) A "Pets allowed" house rule is a predefined option and a host can add a note of 50 characters. [[21]](https://help.vrbo.com/articles/Add-or-edit-house-rules) Our [Airbnb versus Vrbo guide](/guides/airbnb-vs-vrbo-with-a-dog) covers the rest of the comparison.
+**Vrbo.** Pets are one of the standard fee types a host can set, with cleaning and extra guests, and mandatory fees must be shown upfront. [[19]](https://help.vrbo.com/articles/How-do-I-manage-my-fees) Changes to fees apply only to future bookings, and a host can add a charge to an existing reservation by sending a payment request before the stay is complete. [[19]](https://help.vrbo.com/articles/How-do-I-manage-my-fees) The displayed price includes mandatory and service fees, with taxes added at checkout, but that page does not mention pets. [[20]](https://help.vrbo.com/articles/About-Price-Display) A "Pets allowed" house rule is a predefined option and a host can add a note of 50 characters. [[21]](https://help.vrbo.com/articles/Add-or-edit-house-rules) Our [Airbnb versus Vrbo guide](/guides/how-vacation-rental-pet-fees-work) covers the rest of the comparison.
 
 ## Read the total, not the pet line
 

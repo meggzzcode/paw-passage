@@ -55,7 +55,7 @@ Airbnb says to contact the host even when a listing allows pets, and its host gu
 
 A gated deck is not a fenced yard. One Ellijay cabin operator says only select cabins have fenced yards, and that some have a gated porch or deck connected to the yard. [[7]](https://slidingrockcabins.com/pet-friendly-cabins/) A deck gate may enclose only the platform and no ground at all, so ask whether it leads into fenced ground or onto open land. Advertised acreage is not enclosed acreage either: another Ellijay operator notes that its creek and trails sit outside the fence and that the fence may not hold every dog. [[8]](https://www.sacredwatersellijay.com/pet-friendly-cabin-rental-ellijay-ga)
 
-Fenced ground still has to be usable. For hillside listings, request ground-level photos in both directions, including from the lowest point toward the house, since wide-angle shots hide slope. Count the steps between the door and the ground, and check surface, drainage, lighting and exposed drops inside the fence. For an older dog, step-free access should be a confirmed requirement rather than a hopeful reading of "main-level bedroom." Our [Georgia cabin-vetting guide](/guides/dog-friendly-cabins-fenced-yards-georgia) applies these checks to North Georgia cabins.
+Fenced ground still has to be usable. For hillside listings, request ground-level photos in both directions, including from the lowest point toward the house, since wide-angle shots hide slope. Count the steps between the door and the ground, and check surface, drainage, lighting and exposed drops inside the fence. For an older dog, step-free access should be a confirmed requirement rather than a hopeful reading of "main-level bedroom." Our [Georgia cabin-vetting guide](/guides/vacation-rental-secure-fenced-yard) applies these checks to North Georgia cabins.
 
 ## Check that the boundary forms a continuous loop
 
@@ -166,7 +166,7 @@ Save your arrival checks in the [travel checklist](/tools/checklist), price the 
   "relatedGuides": [
     "pet-friendly-vacation-rental-checklist",
     "how-many-dogs-can-you-bring-to-a-vacation-rental",
-    "dog-friendly-cabins-fenced-yards-georgia",
+    "vacation-rental-secure-fenced-yard",
     "can-you-leave-a-dog-alone-in-a-vacation-rental",
     "new-years-eve-with-a-dog-in-a-vacation-rental",
   ],

@@ -106,7 +106,7 @@ A clear approval names the dogs and the stay; "we're pet-friendly" is not one. M
 - **What most people report:** no survey here; the manager figures come from 38 managers, a convenience sample read 2026-11-18.
 - **Unknown, so ask:** your exact unit's rules, fees and insurer conditions, in writing.
 
-Booked somewhere that says no pets? Read [what happens if you bring a dog to a no-pets rental](/guides/bringing-a-dog-to-a-no-pets-rental). Choosing a platform? See [Airbnb vs Vrbo with a dog](/guides/airbnb-vs-vrbo-with-a-dog). Next step: run the [pet cost check](/tools/pet-cost-check), then save your answers in the [checklist tool](/tools/checklist).
+Booked somewhere that says no pets? Read [what happens if you bring a dog to a no-pets rental](/guides/bringing-a-dog-to-a-no-pets-rental). Choosing a platform? See [Airbnb vs Vrbo with a dog](/guides/how-vacation-rental-pet-fees-work). Next step: run the [pet cost check](/tools/pet-cost-check), then save your answers in the [checklist tool](/tools/checklist).
 `,
   "faqs": [
     {

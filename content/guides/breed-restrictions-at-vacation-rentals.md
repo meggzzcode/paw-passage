@@ -21,7 +21,7 @@ faqs:
   - q: "Can a weight limit keep my dog out without naming a breed?"
     a: "Yes. In our small, non-random sample, 7 of 17 policies had a weight cap between 35 and 60 lb. That is our inference: a cap can exclude a large dog of any breed or mix without a breed list."
   - q: "What if my dog is a mix and nobody knows the breed?"
-    a: "Ask the host how they treat mixes before you book. Costanoa lists \"crosses\"; for most managers we could not find what they do with mixes or what proof they accept."
+    a: "Ask the host how they treat mixes before you book. Costanoa also bars crosses of its listed breeds; for most managers we could not find what they do with mixes or what proof they accept."
   - q: "Will a vet letter or DNA test get my dog approved?"
     a: "We found no evidence either way for vacation rentals. Advice pages suggest such documents, but we found no host or traveler account of one working, so do not count on it."
 relatedGuides:
@@ -139,6 +139,10 @@ sources:
     url: https://www.mypitbullisfamily.org/housing/
     publisher: My Pit Bull is Family
     accessedOn: 2026-11-18
+  - title: Pet policy (live site)
+    url: https://www.elkspringsresort.com/policies/pet-policy/
+    publisher: Elk Springs Resort Cabin Rentals
+    accessedOn: 2026-11-18
 research:
   primaryKeyword: breed restrictions vacation rental
   relatedKeywords:
@@ -180,7 +184,7 @@ research:
     - url: https://www.mypitbullisfamily.org/housing/
       title: National Dog Inclusive Rental Database
       checkedOn: 2026-11-18
-      coversWell: Lists properties with no breed or weight limits and advises calling each one.
+      coversWell: Lists properties with no breed or weight limits and calls its listings leads to confirm with the property.
       gaps: Does not say whether vacation rentals or hotels are included; no explanation of why rules exist or how to ask.
     - url: https://www.adoptapet.com/blog/lifestyle/restricted-dog-breeds
       title: Restricted dog breeds
@@ -216,7 +220,7 @@ It is built on 17 real pet policies we compiled, with a source and a date for ea
 - Hosts and managers set their own pet rules. The Airbnb pages we read say hosts decide which pets to accept and do not mention breed. [[2]](https://www.airbnb.com/resources/hosting-homes/a/what-you-need-to-know-about-hosting-pets-463)
 - The managers who explain their breed lists point to insurance, for example Costanoa: "Due to our property insurance policy breed restrictions must apply." [[12]](https://www.costanoa.com/stay/pet-policies)
 - In our sample, weight caps were more common than named breed lists. By our inference, a cap can exclude your dog without any breed being named.
-- "Pet friendly" does not tell you your dog passes. The breed or weight rule is often on a separate policy page or in the house rules.
+- "Pet friendly" does not tell you your dog passes. In several policies we read, the breed or weight rule sat on a separate policy page or in the house rules.
 - Ask first and get the answer in writing. Unauthorized dogs can cost real money (see the table below).
 
 ## Can a vacation rental really refuse my dog because of its breed?
@@ -240,21 +244,21 @@ What managers say:
 
 What insurance and host-software pages say (vendor pages, so read them as such):
 
-- Betterpet, an insurance vendor, says some host policies "may not cover any damages caused by excluded breeds." [[4]](https://www.betterpet.com/learn/how-to-design-a-pet-policy-for-your-vacation-rental)
+- Betterpet, a pet-focused content site (it does not say it sells insurance), says some host policies "may not cover any damages caused by excluded breeds." [[4]](https://www.betterpet.com/learn/how-to-design-a-pet-policy-for-your-vacation-rental)
 - Proper, a specialist insurer, says its policy "does not have exclusions for types of animals or dog breeds." This is marketing copy and we did not check policy wording. [[5]](https://www.proper.insure/blog/pros-and-cons-of-allowing-pets-at-your-rental/) If it is accurate, a host with a different insurer is not necessarily forced into a breed ban, which is a fair thing to ask about politely.
 - Hostaway's host guide says hosts must enforce insurance or HOA limits "regardless of your personal feelings." [[6]](https://www.hostaway.com/vacation-rental-guide/pet-friendly-hosting/policies/)
 
-Anecdotes from host forums (not rules): on one Airhosts thread a host named breed insurance as the concrete risk, such as rate rises, exclusions or a voided policy, while several hosts said a pit bull is fine when disclosed with a photo, and one said they would not stay with any large dog. [[20]](https://airhostsforum.com/t/disclosing-breed-specific-pit-bull-etc-dogs-in-listing/49489) Landlords on BiggerPockets, writing about long-term rentals, also name insurers as the source of breed rules. [[21]](https://www.biggerpockets.com/forums/52/topics/944633-restricted-breed-pets-and-insurance) [[23]](https://www.biggerpockets.com/forums/52/topics/327336-dogs-and-landlords) One landlord there says a breed list scares dog owners away and he accepts that. [[22]](https://www.biggerpockets.com/forums/52/topics/1010645-do-you-guys-restrict-dog-breeds-at-your-rentals) Individual hosts vary more than managers do.
+Anecdotes from host forums (not rules): on one Airhosts thread a host named breed insurance as the concrete risk, such as rate rises or an exclusion, while several hosts advised disclosing a pit bull with a photo, and one said they would not stay at a listing with a pit bull. [[20]](https://airhostsforum.com/t/disclosing-breed-specific-pit-bull-etc-dogs-in-listing/49489) Landlords on BiggerPockets, writing about rentals leased to tenants (apparently long-term, not vacation stays), also name insurers as a source of breed rules. [[21]](https://www.biggerpockets.com/forums/52/topics/944633-restricted-breed-pets-and-insurance) [[23]](https://www.biggerpockets.com/forums/52/topics/327336-dogs-and-landlords) One landlord there says a breed list scares dog owners away and he accepts that. [[22]](https://www.biggerpockets.com/forums/52/topics/1010645-do-you-guys-restrict-dog-breeds-at-your-rentals)
 
 **What most people report (small, non-random sample):** insurance is the reason named most often. It appears in 3 of the 6 forum threads we read in full (the Airhosts thread and two BiggerPockets threads), and in 2 manager pages (Costanoa and Beach Realty). Opinion splits on whether breed rules make sense: some hosts and landlords back them, and the Best Friends article quotes an expert calling them a false sense of security. This is a pattern in what we read, not a rule.
 
-Best Friends, an advocacy group, says insurers can act on a pet's appearance, and that a model act passed by NCOIL in November 2022 bars action "based solely on the specific breed." [[7]](https://bestfriends.org/node/679665) We could not confirm whether that act reaches short-term-rental host policies, or which states adopted it.
+Best Friends, an advocacy group, says insurers can act on a pet's appearance, and that a model act NCOIL passed in 2022 bars action "based solely on the specific breed." [[7]](https://bestfriends.org/node/679665) We could not confirm whether that act reaches short-term-rental host policies, or which states adopted it.
 
 ## Which breeds are on the lists, and what about weight?
 
-**Short answer:** When a manager publishes a list, it can be long. Elk Springs names 11 entries. But the wall is often a weight cap instead. In our 17 rows, 7 have a weight cap of 35 to 60 lb, and 3 name breeds. This is a small sample, not a measure of the market.
+**Short answer:** When a manager publishes a list, it can be long. Elk Springs names 12 breeds. But the wall is often a weight cap instead. In our 17 rows, 7 have a weight cap of 35 to 60 lb (one of them reported only), and 3 name breeds (again one reported only). This is a small sample, not a measure of the market.
 
-Examples from the table below: Elk Springs bans dogs over 50 lb and lists 11 entries. Costanoa lists breeds "and crosses" with a 50 lb limit. Cabin Rentals of Georgia says "we only allow certain breeds" without naming them. Cabins of the Smoky Mountains lists no breed but caps combined dog weight at 60 lb. Dog size and breed are different things, and a rule that names one can catch dogs that are the other.
+Examples from the table below: Elk Springs bans dogs over 50 lb and lists 12 breeds. Costanoa lists breeds and their crosses, with a 50 lb limit. Cabin Rentals of Georgia says "we only allow certain breeds" without naming them. Cabins of the Smoky Mountains lists no breed but caps combined dog weight at 60 lb. Dog size and breed are different things, and a rule that names one can catch dogs that are the other.
 
 **Our inference, from a small non-random sample:** a cap in the 35 to 60 lb range can exclude many large dogs, shepherds, retrievers, hounds and mixes alike, without any breed being named. So when you read "no breed restrictions," also read the weight line.
 
@@ -262,22 +266,22 @@ A "pet friendly" label can also cover surprising lists. One traveler with a Gold
 
 ## What do real managers allow and charge?
 
-**Short answer:** Rules vary enormously. Some limit weight, some name breeds, some push everything to the individual home, and fees run from none to $150 or more. The table is a sample of 17 policies, not a survey. Check the live page for your listing.
+**Short answer:** Rules vary enormously. Some limit weight, some name breeds, some push everything to the individual home, and fees run from none to $125 or more, with some charged per night. The table is a sample of 17 policies, not a survey. Check the live page for your listing.
 
 *Table: pet policies as read or seen on 2026-11-18. Policies and fees change; this is a sample, not a survey. Rows 12 to 16 are search-result text only (pages not read) and are shown as reported.*
 
 | # | Manager, place | Dogs | Weight | Breed rule | Fee | Source |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | Elk Springs, Gatlinburg TN | not stated | "Dogs over 50 pounds are not permitted." | 11 named, incl. pit bulls and Staffordshire terriers, Dobermans, Rottweilers, German Shepherds, Chows, Great Danes, Presa Canarios, Akitas, Malamutes, Siberian Huskies, wolf-hybrids | $50 per pet | dev-site page [[11]](https://dev.elkspringsresort.com/policies/pet-policy/) |
-| 2 | Costanoa, Pescadero CA | 2 | 50 lb or less | Doberman, pit bull or Staffordshire terrier, Chow, wolf, Rottweiler, American Bulldog, American Bully, and crosses | $75 flat per stay | [[12]](https://www.costanoa.com/stay/pet-policies) |
+| 1 | Elk Springs, Gatlinburg TN | not stated | "Dogs over 50 pounds are not permitted." | 12 named, incl. pit bulls and Staffordshire terriers, Dobermans, Rottweilers, German Shepherds, Chows, Great Danes, Presa Canarios, Akitas, Malamutes, Siberian Huskies, wolf-hybrids | $50 per pet | dev-site page [[11]](https://dev.elkspringsresort.com/policies/pet-policy/); live page matched [[27]](https://www.elkspringsresort.com/policies/pet-policy/) |
+| 2 | Costanoa, Pescadero CA | 2 pets | 50 lb or less | Doberman, pit bull or Staffordshire terrier, Chow, wolf, Rottweiler, American Bulldog, American Bully, and crosses | $75 flat per stay | [[12]](https://www.costanoa.com/stay/pet-policies) |
 | 3 | Cabin Rentals of Georgia, Blue Ridge GA | not stated | under 35 lb, non-shedding, crate trained | "certain breeds" (no list); every dog needs approval | $50 per pet per night, $75 cleaning, $250 refundable deposit | [[13]](https://cabin-rentals-of-georgia.com/policies) |
 | 4 | Beach Realty, Outer Banks NC | 2 adult, house-trained | not stated | "certain breeds" insurers consider dangerous; no puppies | a pet fee (amount not shown); extra for 3+ | [[14]](https://www.beachrealtync.com/node/707) |
-| 5 | Brindley Beach, Outer Banks NC | 2 | 60 lb or less each, "NO EXCEPTIONS" | not mentioned | non-refundable, listed per home | [[15]](https://www.brindleybeach.com/node/3691) |
+| 5 | Brindley Beach, Outer Banks NC | 2 | 60 lb or less each, "NO EXCEPTIONS" | not mentioned | non-refundable, per reservation (amount in the listing) | [[15]](https://www.brindleybeach.com/node/3691) |
 | 6 | Carolina Designs, Outer Banks NC | up to 2 | not stated | not mentioned | "for a fee" (amount not shown) | [[16]](https://www.carolinadesigns.com/obx-guide/pets) |
 | 7 | Twiddy, Outer Banks NC | up to 2 unless the home says otherwise | per home | per home ("number, size, or type") | "no additional fee" | [[17]](https://www.twiddy.com/outer-banks/guests/pets/) |
 | 8 | Cabins of the Smoky Mountains, TN | up to 2 | 60 lb total | not listed | $125 first, $50 each additional, one-time | [[18]](https://cabinsofthesmokymountains.com/pet-friendly.html) |
 | 9 | Bear Camp Cabins, Smoky Mountains TN | up to 2 | 40 lb max each | not addressed | $75 plus tax per pet, non-refundable | [[19]](https://bearcampcabins.com/rental-policies) |
-| 10 | Vacasa, national | per home | per home | not on the pet page | "small" per-dog fee, amount per listing | [[3]](https://www.vacasa.com/pet-friendly-vacation-rentals) |
+| 10 | Vacasa, national | per home | per home | not on the pet page | "small" per-dog, per-night fee; amount per listing | [[3]](https://www.vacasa.com/pet-friendly-vacation-rentals) |
 | 11 | Evolve, national | per home | per home | its pet page we read showed no policy detail | not shown | page read, no detail |
 | 12 | Marriott Homes & Villas, Blue Ridge GA | up to 2 | some homes have limits | not stated | reported: $150 plus tax per dog on one listing, $49 on another | reported, search result |
 | 13 | Shiny Apple Cabins, Blue Ridge GA | 3 to 4 | none | reported: "no size or breed restrictions" | reported: no pet fee | reported, search result |
@@ -286,7 +290,7 @@ A "pet friendly" label can also cover surprising lists. One traveler with a Gold
 | 16 | Westgate Resorts, Florida | not stated | reported: 60 lb combined | reported: pit bull among prohibited | not seen | reported, search result |
 | 17 | Airbnb (platform) | host sets 1 to 5 | host sets | no platform breed rule on pages read | host sets, built into nightly price | [[2]](https://www.airbnb.com/resources/hosting-homes/a/what-you-need-to-know-about-hosting-pets-463) |
 
-How to read it: in the 17 rows, 7 have a weight cap (rows 1, 2, 3, 5, 8, 9 and 16), 3 name breeds (rows 1, 2 and 16), and 2 more say "certain breeds" without a list (rows 3 and 4). Rows 12 to 16 are reported only, and row 1 comes from a development-site page; we did not read the live page. We read no public Vacasa or Evolve breed rule, and did not find one.
+How to read it: in the 17 rows, 7 have a weight cap (rows 1, 2, 3, 5, 8, 9 and 16; row 16 is reported only), 3 name breeds (rows 1, 2 and 16; row 16 reported only), and 2 more say "certain breeds" without a list (rows 3 and 4). Rows 12 to 16 are reported only. Row 1 is from a development-subdomain page; the live Elk Springs page (www.elkspringsresort.com) loaded when we checked and showed the same weight cap, breed list and fee. We read no public Vacasa or Evolve breed rule, and did not find one.
 
 Fees change and a fee may be shown per listing, so use our [pet fee guide](/guides/how-vacation-rental-pet-fees-work) and the [pet cost check](/tools/pet-cost-check) to compare the full total.
 
@@ -296,7 +300,7 @@ Fees change and a fee may be shown per listing, so use our [pet fee guide](/guid
 
 | Manager | What its page says about an unauthorized dog | Source |
 | --- | --- | --- |
-| Bear Camp Cabins | A pet in a non-pet cabin can mean up to $1,000 in cleaning and removal charges | [[19]](https://bearcampcabins.com/rental-policies) |
+| Bear Camp Cabins | A pet in a non-pet cabin can mean a charge of up to $1,000, having to leave, and forfeiting money paid | [[19]](https://bearcampcabins.com/rental-policies) |
 | Cabin Rentals of Georgia | Unauthorized dogs double the fees; every dog needs approval | [[13]](https://cabin-rentals-of-georgia.com/policies) |
 | Brindley Beach | As we read it, eviction without refund is possible | [[15]](https://www.brindleybeach.com/node/3691) |
 | Airbnb ground rules | Guests must not bring pets beyond those approved | [[1]](https://www.airbnb.com/help/article/2894) |
@@ -305,7 +309,7 @@ Our [guide to bringing a dog to a no-pets rental](/guides/bringing-a-dog-to-a-no
 
 ## What if my dog is a mix and nobody can tell the breed?
 
-**Short answer:** Ask how the host treats mixes. Costanoa's list includes "crosses." For others we could not find what is done with mixes, or what proof a host accepts. Do not guess a breed for your own dog on a form.
+**Short answer:** Ask how the host treats mixes. Costanoa's list covers crosses of the breeds it names. For others we could not find what is done with mixes, or what proof a host accepts. Do not guess a breed for your own dog on a form.
 
 Search summaries we saw said shelter staff are often wrong about the breed makeup of mixed dogs and that DNA tests can disagree between brands. We could not open those studies, so we do not give figures. No host or manager page we read says what proof it accepts for a mix. Whether a DNA result convinces a host is something we could not confirm.
 
@@ -325,7 +329,7 @@ Service animals are not pets. Airbnb's ground rules say service animals "are not
 
 Documents and gestures sometimes suggested on advice pages for long-term renters (REPORTED by those pages, and we did not read them in full): vaccination records, proof of spay or neuter, a city license, training certificates, a Canine Good Citizen certificate, a letter from a vet or previous landlord, photos, a meeting, and a DNA test.
 
-**We found no first-person story of a restricted-breed dog getting a yes at a vacation rental, and no evidence that vet letters, Canine Good Citizen or DNA tests work for one.** Some insurer-driven managers say they cannot make exceptions. The evidence is thin; these are the things an owner can offer, not things that are known to change the answer. Our own advice is to be accurate about breed and weight, because the booking depends on the dog you describe.
+**We found no first-person story of a restricted-breed dog getting a yes at a vacation rental, and no evidence that vet letters, Canine Good Citizen or DNA tests work for one.** Advice pages we saw (REPORTED, not read in full) say some insurer-driven managers cannot make exceptions. The evidence is thin; these are the things an owner can offer, not things that are known to change the answer. Our own advice is to be accurate about breed and weight, because the booking depends on the dog you describe.
 
 Copy and paste, then fill in the brackets:
 
@@ -336,7 +340,7 @@ If there is no reply, ask once more through the booking platform, and do not boo
 ## How do I find places that say yes?
 
 - Use the platform's pet filter, then read the house rules and the manager's pet page for breed and weight lines. For example, Twiddy's page lists no manager-wide breed rule but says individual homes can set limits on "number, size, or type." [[17]](https://www.twiddy.com/outer-banks/guests/pets/)
-- The National Dog Inclusive Rental Database lists properties with no breed or weight limits and tells you to call each one. Its page does not say whether vacation rentals are included, so treat it as a lead. [[26]](https://www.mypitbullisfamily.org/housing/)
+- The National Dog Inclusive Rental Database lists properties with no breed or weight limits, among others, and calls its listings "leads" to confirm with the property. Its page does not say whether vacation rentals are included, so treat it as a lead. [[26]](https://www.mypitbullisfamily.org/housing/)
 - Our [large-dog rental guide](/guides/vacation-rentals-that-welcome-large-dogs) and [Airbnb versus Vrbo guide](/guides/airbnb-vs-vrbo-with-a-dog) cover size and platform questions.
 
 ## Before you book
@@ -359,6 +363,6 @@ Level 3 means no source we read settles it. Treat each row as something to be mi
 | Vrbo's own breed or service-animal statements | Its help pages did not load for us. | Host, then Vrbo support: "Where in the house rules is the pet policy, and does it cover breed or weight?" |
 | Whether a vet letter, Canine Good Citizen certificate or DNA test changes a host's answer | No account of one working; no clear practice. | Host: "Would you consider any documents for an exception, and which?" |
 | Whether Denver's rule applies to visitors, and rules in any other city | Only Denver was checked, through a news report. | Local animal-control office and host: "Do breed rules apply to a visiting dog?" |
-| How hosts treat mixes | Costanoa lists "crosses"; we found little else. | Host: "Does your rule cover mixes, and who decides?" |
+| How hosts treat mixes | Costanoa covers crosses of its listed breeds; we found little else. | Host: "Does your rule cover mixes, and who decides?" |
 | Current fees | Pages change; rows 12 to 16 are search-result text only. | Host: "What is the total pet charge for these dates?" |
 | Whether a restricted-breed dog ever got a yes | We found no first-person story of this at a vacation rental. | Host: ask directly; do not rely on a tactic. |

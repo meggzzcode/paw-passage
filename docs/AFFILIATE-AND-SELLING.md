@@ -50,3 +50,11 @@ Section numbers come from a summarizing fetch tool, not a verbatim read: read th
 - **Selling the site:** the agreement cannot be assigned or transferred without Stay22's written consent (section 13(i)), and the licence is non-transferable. A buyer must sign up themselves or get Stay22's consent. Add this to the handover steps; our accounts are already excluded from sale.
 - **Other programs:** the FAQ says Stay22 is designed to work alongside other affiliate programs.
 - **Exit:** remove the Stay22 account ID in Site settings (the map disappears); on termination we must stop using the solution immediately (section 12(c)).
+
+## Transferability by program (read 2026-11-18; details in `docs/AFFILIATE-APPLICATION-PACK.md`)
+
+- **Amazon Associates:** Operating Agreement s12 bars assignment without Amazon's prior written approval (read 2026-11-18). Buyer applies fresh and has its own 3-sales-in-180-days clock.
+- **Impact:** help article confirms two paths. Site-only sale: buyer adds the site to their own account, verifies it and reapplies to each brand (brand contracts "cannot be sold as is"). Account sale: invite the buyer as admin, remove legacy users, buyer enters their own payment and tax details; clear bank details first and collect pending payments first.
+- **Awin:** FAQ says several sites can sit under one account and transfers go through Publisher Success; no official page on selling a site, so ask and assume the buyer reapplies.
+- **Ascend, AvantLink, BringFido:** transfer terms not read (pages blocked or not opened): UNCONFIRMED; assume the buyer applies. BringFido's agreement is reported to allow revocation at any time (search summary).
+- Reminder for any application text: do not name Expedia Group or commission figures to third parties; the program terms make commission information confidential.

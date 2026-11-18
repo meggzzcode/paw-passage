@@ -8,7 +8,7 @@
 import { readdirSync, readFileSync, existsSync, statSync } from "node:fs";
 import { join, basename, resolve } from "node:path";
 import { parse as parseYaml } from "yaml";
-import type { Plugin, ViteDevServer } from "vite";
+import { transformWithOxc, type Plugin, type ViteDevServer } from "vite";
 import { guideSchema, stayYamlSchema, toStay, placeYamlSchema, toPlace, affiliatesSchema, settingsSchema } from "../src/content/schema";
 import { guideIsPublic, stayIsPublic, placeIsPublic } from "../src/content/publish-rule";
 import { destinations } from "../src/content/destinations";
@@ -16,6 +16,13 @@ import { productsSchema } from "../src/content/products-schema";
 
 const VIRTUAL = "virtual:content";
 const RESOLVED = "\0" + VIRTUAL;
+// Guides are split so list pages do not download every article:
+//  * virtual:guides-meta     a small list of every guide WITHOUT its text (cards, lists, links, sitemap)
+//  * virtual:guide-loaders   one lazy loader per Markdown guide
+//  * virtual:guide/<slug>    the full guide (loaded only by that guide's page)
+const META = "virtual:guides-meta";
+const LOADERS = "virtual:guide-loaders";
+const ONE = "virtual:guide/";
 
 class ContentError extends Error {}
 
@@ -299,6 +306,35 @@ export function loadContent(root: string, includeUnpublished: boolean, opts: { s
   return { guides: publicGuides, stays, places, affiliates: links, products: pparsed.data.products, settings: sparsed.data, showDrafts: includeUnpublished };
 }
 
+/** A guide without its text, sources and private research notes. Keeps what lists, cards and the "is it public" rule need. */
+export function guideSummary<G extends { research: { researchComplete: boolean; unverified: string[] } }>(g: G) {
+  const { body: _b, faqs: _f, sources: _s, research, ...rest } = g as G & { body: string; faqs: unknown[]; sources: unknown[] };
+  return {
+    ...rest,
+    body: "",
+    faqs: [],
+    sources: [],
+    research: {
+      primaryKeyword: "", relatedKeywords: [], readerQuestions: [], intendedReader: "", angle: "", gapsFound: [], differentiators: [], competitors: [],
+      unverified: research.unverified, researchComplete: research.researchComplete,
+    },
+  };
+}
+
+/** Guides written as code files (src/content/guides/*.ts). Read here (types removed) so their summary can be built without shipping their text. */
+async function loadLegacyGuides(root: string): Promise<{ file: string; guide: Record<string, unknown> & { slug: string; research: { researchComplete: boolean; unverified: string[] } } }[]> {
+  const d = join(root, "src", "content", "guides");
+  if (!existsSync(d)) return [];
+  const out = [];
+  for (const n of readdirSync(d).filter((x) => x.endsWith(".ts") && !x.endsWith(".d.ts") && x !== "index.ts").sort()) {
+    const file = join(d, n);
+    const js = await transformWithOxc(readFileSync(file, "utf8"), file, { lang: "ts" });
+    const mod = await import("data:text/javascript;base64," + Buffer.from(js.code).toString("base64"));
+    out.push({ file, guide: mod.guide });
+  }
+  return out;
+}
+
 export function contentPlugin(): Plugin {
   let root = process.cwd();
   let isBuild = false;
@@ -315,9 +351,33 @@ export function contentPlugin(): Plugin {
       isBuild = config.command === "build";
     },
     resolveId(id) {
-      return id === VIRTUAL ? RESOLVED : undefined;
+      if (id === VIRTUAL) return RESOLVED;
+      if (id === META || id === LOADERS || id.startsWith(ONE)) return "\0" + id;
+      return undefined;
     },
-    load(id) {
+    async load(id) {
+      if (id === "\0" + META || id === "\0" + LOADERS || id.startsWith("\0" + ONE)) {
+        try {
+          const data = loadContent(root, includeUnpublished(), { skipBrokenDrafts: isBuild });
+          const content = data.guides as { slug: string; research: { researchComplete: boolean; unverified: string[] } }[];
+          if (id === "\0" + LOADERS) {
+            return `export const guideLoaders = {\n${content.map((g) => `  ${JSON.stringify(g.slug)}: () => import(${JSON.stringify(ONE + g.slug)}).then((m) => m.guide),`).join("\n")}\n};`;
+          }
+          if (id.startsWith("\0" + ONE)) {
+            const g = content.find((x) => x.slug === id.slice(("\0" + ONE).length));
+            return g ? `export const guide = ${JSON.stringify(g)};` : this.error(`Unknown guide ${id}`);
+          }
+          const legacy = await loadLegacyGuides(root);
+          for (const l of legacy) this.addWatchFile(l.file);
+          for (const f of readdirSync(join(root, "content", "guides"))) this.addWatchFile(join(root, "content", "guides", f));
+          // Development and tests keep the full text in the list (nothing to save there); a production build ships summaries only.
+          const all = [...legacy.map((l) => l.guide), ...content];
+          return `export const guidesMeta = ${JSON.stringify(isBuild ? all.map(guideSummary) : all)};`;
+        } catch (e) {
+          if (e instanceof ContentError) this.error(e.message);
+          throw e;
+        }
+      }
       if (id !== RESOLVED) return undefined;
       const dir = resolve(root, "content");
       // Rebuild when any content file changes.
@@ -333,6 +393,7 @@ export function contentPlugin(): Plugin {
       try {
         const data = loadContent(root, includeUnpublished(), { skipBrokenDrafts: isBuild });
         return Object.entries(data)
+          .filter(([k]) => k !== "guides")
           .map(([k, v]) => `export const ${k} = ${JSON.stringify(v)};`)
           .join("\n");
       } catch (e) {
@@ -343,8 +404,10 @@ export function contentPlugin(): Plugin {
     configureServer(server: ViteDevServer) {
       const refresh = (file: string) => {
         if (!file.includes(`${join(root, "content")}`)) return;
-        const mod = server.moduleGraph.getModuleById(RESOLVED);
-        if (mod) server.moduleGraph.invalidateModule(mod);
+        for (const rid of [RESOLVED, "\0" + META, "\0" + LOADERS]) {
+          const mod = server.moduleGraph.getModuleById(rid);
+          if (mod) server.moduleGraph.invalidateModule(mod);
+        }
         server.ws.send({ type: "full-reload" });
       };
       server.watcher.add(join(root, "content"));

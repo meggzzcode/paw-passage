@@ -57,32 +57,37 @@ Recommended improvements (C): see section 6 and the checklist in section 5.
 11. Open a support ticket (draft 4.3) and ask: decline reason, whether reapplication is permitted, and any waiting period.
 12. If you have a Partner Development Manager, ask them to appeal (A7); if not, skip.
 
-## 4. Drafts (truthful; edit as needed; send only if still accurate when you use them)
+## 4. Drafts (truthful; refreshed 2026-11-18 after the hub and trust pages were built; edit as needed; send only if still accurate when you use them)
+
+State of the site these drafts assume (re-verify first): hub (/gear, 6 category pages, 25 products), Methodology, Corrections, Editorial Standards and Affiliate Disclosure pages exist on branch claude/affiliate-setup but are NOT deployed until the bulk merge. Traffic: none yet. Sales: none. No Chewy products are listed and no Chewy links exist. Do not use these drafts, and do not reapply, before the deploy. Companion pack: docs/AFFILIATE-APPLICATION-PACK.md.
 
 ### 4.1 Business description (profile)
-> Paws & Passage (pawsandpassage.com) is a new independent publication about traveling with dogs, focused on vacation-rental pet policies. The site was launched in November 2026 (domain registered 17 November 2026), so it is new and has no traffic history yet. It currently publishes [N, recount before use] guides and three or more planning tools. These cover pet fees, breed and weight limits, how many dogs are allowed, and damage-charge rules, plus travel gear guides (car safety, fenced yards, first aid, water and feeding). It also has a dataset of pet policies from 38 property managers, and an editorial standards page, an affiliate disclosure, an About page and a contact page. It currently earns commission only through one travel affiliate program. No product gear links are active yet.
+> Paws & Passage (pawsandpassage.com) is a new, independent publication about traveling with dogs. The site launched in November 2026 (domain registered 17 November 2026) and has no traffic or sales history yet. It publishes researched guides on vacation-rental pet policies (pet fees, breed and weight limits, how many dogs are allowed, damage charges) and on travel gear for car trips, rentals and fenced yards. It also offers a dataset of the pet policies of 38 property managers, free planning tools, a researched Travel Essentials hub that compares products using manufacturers' published information, and listings of dog-friendly stays. Content is written and edited by the Paws & Passage Editors; research and first drafts are assisted by AI tools, as disclosed on our Editorial Standards page. We have not personally tested the products we describe and say so on the site. Product links go to the maker's page today; we would add program links only after approval.
 
-(Recount published guides and tools before use; do not state numbers you have not verified.)
+(Recount guides and tools before use; do not state numbers you have not verified.)
 
 ### 4.2 Promotional methods and audience
-> Promotion method: editorial content on our own website. Guides and tools help people who travel with dogs plan trips; where relevant, we would link to products with a clear disclosure. We do not use coupon, cashback, incentive, paid-ads or social-media promotion. Audience: this is a new site with no traffic history and no measured audience yet. We expect readers to be US dog owners researching pet-friendly vacation rentals and what to bring. Growth will come from organic search and direct visits; we do not buy traffic and do not use email lists. We will give Chewy relevant, accurate content (for example gear for car trips, rentals and fenced yards) and will follow the program terms and FTC disclosure rules.
+> Promotion method: editorial content on our own website. Guides, tools and the gear hub help people who travel with dogs plan trips; where a product is relevant we link to it with a clear disclosure, with rel="sponsored nofollow noopener", and show no prices or coupons. We plan to attract readers through organic search and Pinterest (Pinterest is new). We do not run paid advertising, do not send a newsletter, do not use coupon, cashback, incentive or sub-affiliate promotion, and will not bid on brand terms. Audience: this is a new site with no measured audience yet. We write for US dog owners planning trips and researching pet-friendly vacation rentals and what to bring. We will report real numbers only after we have them and will follow the program terms and FTC disclosure rules.
 
-(Rule check: no newsletter per owner rules; the "email lists" line is consistent. Do not claim social channels, audience size or sales.)
+(Rule check: no newsletter and no social-follower claims, consistent with owner rules.)
 
-### 4.3 Message to Impact support / Chewy (polite)
+### 4.3 Request for clarification and reconsideration (polite; send to Impact support first)
 > Subject: Question about my declined Chewy application (partner account [ACCOUNT ID, entered by you])
 >
 > Hello,
 >
-> I applied to the Chewy program on Impact for my site, pawsandpassage.com, and the application was declined. I would like to understand the reason so I can fix it. The site is new (domain registered 17 November 2026) and has no traffic history. It publishes dog-travel guides and planning tools. My media property is [verified / being verified] and my profile is complete.
+> I applied to the Chewy program on Impact for my site, pawsandpassage.com, and the application was declined. I would like to understand the reason so I can fix it. The site is new (domain registered 17 November 2026) and has no traffic history. It publishes researched dog-travel guides, a pet-policy dataset and free planning tools, and since the application I have added a researched Travel Essentials hub, Methodology, Corrections and Editorial Standards pages. My media property is [verified / being verified] and my profile is complete.
 >
-> Could you tell me: (1) whether the decline came from Impact's marketplace review or from Chewy; (2) the reason, if it can be shared, such as profile, property, content fit, or reach; (3) whether I may reapply, and if there is a recommended waiting period or content threshold; and (4) whether additional information would help a reconsideration.
+> Could you please tell me: (1) whether the decline came from Impact's marketplace review or from Chewy; (2) the reason, if it can be shared, such as profile, property, content fit or reach; (3) the official conditions for reapplying, including any waiting period, limit on attempts or content or traffic expectations; and (4) whether additional information could support a reconsideration, or whether the decision is final.
 >
-> I understand the decision may stand. Thank you for your time.
+> I understand the decision may stand, and I will not resubmit until I hear from you. Thank you for your time.
 >
-> [Your name, a non-hello@ email]
+> [Your name, a non-hello@ affiliate email]
 
-Send first to Impact support (A7). Only contact affiliates@chewy.com if Impact says the decision is Chewy's; keep the same text, one message, no repeat. Respect any block.
+Send to Impact support (A7). Contact affiliates@chewy.com only if Impact says the decision is Chewy's; same text, one message, no repeat. Respect any block. Do not say that approvals elsewhere (Awin, Expedia) qualify us: no official source says that.
+
+### 4.4 Optional application note for a future reapplication (short, honest)
+> New dog-travel publication, launched November 2026. Researched guides, a pet-policy dataset and a Travel Essentials hub with disclosed, non-tested product research. Organic search and Pinterest only. [Add only real numbers, e.g. Search Console impressions, once they exist.]
 
 ## 5. Likely contributing factors (our own profile and site), ranked
 
@@ -115,18 +120,21 @@ All SUSPECTED. Impact's actual reason is UNKNOWABLE without its text (A6 lists o
 
 Official: none found. Impact says to "grow your audience, then reapply" (A6) and describes appeal by support or PDM (A7). Chewy: nothing found. UNKNOWN: any waiting period, any limit on attempts, any brand-level block. Recommended: ask in 4.3 and wait for the reply before resubmitting.
 
-## 8. Reapplication readiness checklist (all must be true)
+## 8. Reapplication readiness checklist (refreshed 2026-11-18; all must be true)
 
+Current state: NOT READY. Hub and trust pages are built on the branch but not deployed; traffic is none yet.
+
+- [ ] Branch merged and deployed; /gear, /methodology, /corrections, /editorial-standards, /affiliate-disclosure return 200 on the live site.
 - [ ] Decline reason read and recorded (or support confirmed it cannot be shared).
-- [ ] Support has answered whether reapplication is allowed and when; no block exists.
-- [ ] Impact media property shows Verified and meta tag still live on the production home page.
-- [ ] Profile complete: business description, logo, non-hello@ email, correct auto-filled fields.
-- [ ] Promotional method and description match what the site really does (no inflated audience).
+- [ ] Support has answered whether reapplication is allowed, any waiting period or conditions; no block exists.
+- [ ] Impact media property shows Verified and the verification meta tag is still live on the production home page.
+- [ ] Profile complete: business description (4.1), logo, non-hello@ email, correct auto-filled fields.
+- [ ] Promotional method and audience text (4.2) match what the site really does; no inflated audience.
 - [ ] Tax and payment details completed by the owner in Impact only.
-- [ ] Site has measurable evidence (Search Console impressions, analytics sessions) to cite truthfully, even if small.
-- [ ] Several Chewy-relevant guides published with real product detail and accurate disclosure.
-- [ ] Disclosure wording consistent with whatever links exist.
-- [ ] Application note (optional) is short, honest and says what the site is and its age.
+- [ ] Measurable evidence exists to cite truthfully (Search Console impressions, analytics sessions), even if small.
+- [ ] Chewy-relevant content with real product depth is live (travel crate/harness, water and feeding, first aid, containment), with accurate disclosure.
+- [ ] Disclosure wording matches the links that exist (no wording implying live affiliate links when none render).
+- [ ] Optional note (4.4) is short, honest and states the site's age.
 - [ ] One application only; no resubmission loop.
 
 ## Could not verify

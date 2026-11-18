@@ -1,5 +1,5 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
-import { getGuide, isPublic } from "@/content/guides";
+import { getGuide, isPublic, loadGuide } from "@/content/guides";
 import { guideHero, srcSetForKey } from "@/lib/images";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { Markdown, articleHeadings } from "@/components/site/Markdown";
@@ -21,8 +21,8 @@ const toolLabels = {
 } as const;
 
 export const Route = createFileRoute("/guides/$slug")({
-  loader: ({ params }) => {
-    const guide = getGuide(params.slug);
+  loader: async ({ params }) => {
+    const guide = await loadGuide(params.slug);
     if (!guide) throw notFound();
     return { guide };
   },
@@ -35,7 +35,7 @@ export const Route = createFileRoute("/guides/$slug")({
       { type: "application/ld+json", children: jsonLd({ "@context": "https://schema.org", "@type": "Article", headline: g.title, description: g.seoDescription, image: absoluteUrl(`/share/${g.slug}.jpg`), datePublished: isoDate(g.publishedOn), dateModified: isoDate(g.lastReviewed), author: { "@type": "Organization", name: g.author }, publisher: { "@type": "Organization", name: site.name }, mainEntityOfPage: absoluteUrl(path) }) },
       breadcrumbLd([{ name: "Guides", path: "/guides" }, { name: g.title, path }]),
     ];
-    if (g.faqs.length) scripts.push({ type: "application/ld+json", children: jsonLd({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: g.faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }) });
+    // No FAQPage JSON-LD: Google stopped showing FAQ rich results on May 7, 2026 (docs/recovery/FAQPAGE-DECISION.md). The visible questions below stay.
     return { ...h, meta: [...h.meta, { property: "article:modified_time", content: isoDate(g.lastReviewed) }], scripts };
   },
   component: GuidePage,

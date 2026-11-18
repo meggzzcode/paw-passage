@@ -8,7 +8,7 @@ export const Route = createFileRoute("/terms")({
 
 ## Information, not a guarantee
 
-Our guides, tools and stay listings are for general information. Stay details are taken from public listings and may be out of date; anything we could not find is marked "Not confirmed", and a listing on this site is not an endorsement, inspection or guarantee. Some content is prepared with AI tools; see our [editorial standards](/editorial-standards). Pet policies, fees, beach and trail rules, and property conditions change, sometimes without notice. **Always confirm details directly with the host, booking platform or managing agency before you book or travel.** Nothing on this site is veterinary, legal or financial advice. Ask your veterinarian about your own dog's health and fitness to travel.
+Our guides, tools and stay listings are for general information. Stay details are taken from public listings and may be out of date; anything we could not find is marked "Not confirmed", and a listing on this site is not an endorsement, inspection or guarantee. Pet policies, fees, beach and trail rules, and property conditions change, sometimes without notice. **Always confirm details directly with the host, booking platform or managing agency before you book or travel.** Nothing on this site is veterinary, legal or financial advice. Ask your veterinarian about your own dog's health and fitness to travel.
 
 ## Bookings
 

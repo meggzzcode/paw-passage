@@ -10,7 +10,7 @@ Paws & Passage is a travel guide for people who plan around their dogs. We focus
 
 ## Who publishes this
 
-Paws & Passage is an independent publication launched in November 2026, so it is new. Guides carry the byline "Paws & Passage Editors." That is an editorial process with written standards, not a named individual: the site owner has chosen not to publish a personal bio, and we do not invent people, credentials or experience. Editors research, check facts against listed sources, with AI tools assisting the research and drafting (see our [editorial standards](/editorial-standards)) and own corrections. We hold no veterinary, legal or trainer credentials, so use a vet for health decisions. How we work is set out in our [methodology](/methodology), [editorial standards](/editorial-standards) and [corrections log](/corrections).
+Paws & Passage is an independent publication launched in November 2026, so it is new. Guides carry the byline "Paws & Passage Editors." That is an editorial process with written standards, not a named individual: the site owner has chosen not to publish a personal bio, and we do not invent people, credentials or experience. Editors research, check facts against listed sources and own corrections (see our [editorial standards](/editorial-standards)). We hold no veterinary, legal or trainer credentials, so use a vet for health decisions. How we work is set out in our [methodology](/methodology), [editorial standards](/editorial-standards) and [corrections log](/corrections).
 
 ## What we do
 

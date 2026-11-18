@@ -2,6 +2,7 @@ import { dogTypes, dogTypeIsLive } from "@/content/dog-types";
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useState } from "react";
 import { ArrowRight, Fence, Ruler, Dog, BadgeDollarSign, Calculator, ListChecks, Backpack } from "lucide-react";
+import { preload } from "react-dom";
 import { images, srcSetFor, HERO_MOBILE } from "@/lib/images";
 import { destinations } from "@/content/destinations";
 import { visibleGuides } from "@/content/guides";
@@ -17,25 +18,13 @@ import { policyStats } from "@/lib/policy-stats";
 import { liveCategories } from "@/content/gear-hub";
 
 export const Route = createFileRoute("/")({
-  head: () => {
-    const h = pageHead({
-      title: `${site.name}: ${site.tagline}`,
-      description: hasStays()
-        ? "Dog-friendly stays, researched travel guides and gear picks: fenced yards, large dogs, extra dogs, real pet fees and what to pack for the trip."
-        : "Researched guides and free tools for renting and traveling with your dog: pet fees, fenced yards, car safety and local rules, with every source listed.",
-      path: "/",
-    });
-    // The hero is the LCP element. React does not preload an <img> inside <picture>, so preload both candidates explicitly, each limited to the
-    // viewport it serves (the phone crop below 768 px, the 800w/1600w pair above), so a browser never fetches the wrong one.
-    return {
-      ...h,
-      links: [
-        ...h.links,
-        { rel: "preload", as: "image", href: HERO_MOBILE.src, media: HERO_MOBILE.media, fetchPriority: "high" },
-        { rel: "preload", as: "image", imageSrcSet: srcSetFor("hero-porch"), imageSizes: "100vw", media: "(min-width: 768px)", fetchPriority: "high" },
-      ],
-    };
-  },
+  head: () => pageHead({
+    title: `${site.name}: ${site.tagline}`,
+    description: hasStays()
+      ? "Dog-friendly stays, researched travel guides and gear picks: fenced yards, large dogs, extra dogs, real pet fees and what to pack for the trip."
+      : "Researched guides and free tools for renting and traveling with your dog: pet fees, fenced yards, car safety and local rules, with every source listed.",
+    path: "/",
+  }),
   component: Home,
 });
 
@@ -78,6 +67,10 @@ function Home() {
     });
   }
 
+  // The hero is the LCP element. React does not preload an <img> inside <picture>, so preload both candidates explicitly. react-dom's preload() puts them first in <head> (the imageSrcSet form is what gets the early, high-priority slot when a media query is present)
+  // (ahead of the stylesheet and scripts), each limited to the viewport it serves, so a browser never fetches the wrong one.
+  preload(HERO_MOBILE.src, { as: "image", imageSrcSet: HERO_MOBILE.src, media: HERO_MOBILE.media, fetchPriority: "high" });
+  preload(images["hero-porch"].src, { as: "image", imageSrcSet: srcSetFor("hero-porch"), imageSizes: "100vw", media: "(min-width: 768px)", fetchPriority: "high" });
   return (
     <>
       <section className="relative isolate min-h-[88vh] overflow-hidden">

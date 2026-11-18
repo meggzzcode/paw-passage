@@ -1,12 +1,13 @@
 // LCP diagnosis for the home page: LCP entry details + request waterfall under a throttling profile.
 // Usage: NODE_PATH=$(npm root -g) node scripts/perf/lcp.cjs <baseUrl> <profile: slow4g|fast4g|none> [runs=3] [--waterfall] [--path=/]
-// Profiles: slow4g = 1.6 Mbps/150 ms RTT + 4x CPU (as measure.cjs); fast4g = 9 Mbps/1.5 Mbps/150 ms RTT + 4x CPU; none = no throttling.
+// Add --desktop for a 1440x900 desktop viewport (default: Pixel 5 emulation). Profiles: slow4g = 1.6 Mbps/150 ms RTT + 4x CPU (as measure.cjs); fast4g = 9 Mbps/1.5 Mbps/150 ms RTT + 4x CPU; none = no throttling.
 const { chromium, devices } = require("playwright");
 const args = process.argv.slice(2);
 const base = args[0],
   profile = args[1] || "slow4g",
   runs = Number(args[2] || 3);
 const wf = args.includes("--waterfall");
+const desktop = args.includes("--desktop");
 const path = (args.find((a) => a.startsWith("--path=")) || "--path=/").slice(7);
 const PROFILES = {
   slow4g: {

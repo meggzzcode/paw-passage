@@ -5,8 +5,10 @@
 //  * Unpublished content (drafts, samples, unapproved guides) is LEFT OUT of the production code
 //    completely, so it cannot be read from the downloadable JavaScript. It is included while
 //    developing locally, or when SHOW_DRAFTS=true (used for private preview builds).
-import { readdirSync, readFileSync, existsSync, statSync } from "node:fs";
+import { readdirSync, readFileSync, existsSync, statSync, mkdtempSync, writeFileSync, rmSync } from "node:fs";
 import { join, basename, resolve } from "node:path";
+import { tmpdir } from "node:os";
+import { pathToFileURL } from "node:url";
 import { parse as parseYaml } from "yaml";
 import { transformWithOxc, type Plugin, type ViteDevServer } from "vite";
 import { guideSchema, stayYamlSchema, toStay, placeYamlSchema, toPlace, affiliatesSchema, settingsSchema, relatedProductProblems } from "../src/content/schema";
@@ -332,8 +334,17 @@ async function loadLegacyGuides(root: string): Promise<{ file: string; guide: Re
   for (const n of readdirSync(d).filter((x) => x.endsWith(".ts") && !x.endsWith(".d.ts") && x !== "index.ts").sort()) {
     const file = join(d, n);
     const js = await transformWithOxc(readFileSync(file, "utf8"), file, { lang: "ts" });
-    const mod = await import("data:text/javascript;base64," + Buffer.from(js.code).toString("base64"));
-    out.push({ file, guide: mod.guide });
+    // The preview plugin runner cannot import data: URLs. A short-lived file works in both
+    // development and production builds, and is removed as soon as the article is read.
+    const tempDir = mkdtempSync(join(tmpdir(), "paws-guide-"));
+    try {
+      const tempFile = join(tempDir, "guide.mjs");
+      writeFileSync(tempFile, js.code);
+      const mod = await import(pathToFileURL(tempFile).href);
+      out.push({ file, guide: mod.guide });
+    } finally {
+      rmSync(tempDir, { recursive: true, force: true });
+    }
   }
   return out;
 }

@@ -7,7 +7,7 @@ Article: content/guides/vacation-rental-with-a-senior-dog.md (status: draft). Ch
 | 1 | Airbnb host photo guide: no steps, stairs or curbs over 2 in. (5 cm) on entrance route | A borrowed photo standard | https://www.airbnb.com/resources/hosting-homes/a/a-guide-to-photographing-accessibility-features-30 | SEEN (re-fetched) | 1 | "no steps, stairs, or curbs higher than 2 inches" |
 | 2 | Photos every 10 feet along the route | A borrowed photo standard | same as 1 | SEEN | 1 | "every 10 feet (3 meters)" |
 | 3 | Thresholds shown close up | A borrowed photo standard | same as 1 | SEEN | 1 | "threshold" |
-| 4 | Airbnb lists "Step-free access" and "Step-free bedroom access" filters | A borrowed photo standard | https://www.airbnb.com/help/article/3138 | SEEN | 1 | "Step-free access" |
+| 4 | Airbnb lists "Step-free access" and "Step-free bedroom access" filters | A borrowed photo standard | https://www.airbnb.com/help/article/3138 | PARTIAL (page lists both under home accessibility features and says guests pick features in the Filters menu; it does not state the two are filters) | 1 | "Step-free access"; article reworded |
 | 5 | Standard has no flooring or bed-height photos | A borrowed photo standard | same as 1 | SEEN (absence) | 1 | n/a |
 | 6 | Applying the standard to dogs is our inference | A borrowed photo standard | n/a | n/a | 3 | n/a |
 | 7 | Joint signs: stiffness, trouble rising, hesitation on stairs, trouble getting on/off furniture | Decision table; When to ask vet | https://www.banfield.com/Senior-hub/common-health-issues-in-senior-pets/osteoarthritis-in-dogs-cats ; https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/osteoarthritis | SEEN | 1 | Cornell: "Difficulty navigating stairs or jumping on couches" |
@@ -67,12 +67,14 @@ All forum items below were re-fetched on 2026-11-18 and confirmed before use. Sa
 | 52 | 11-year-old 80 lb dog fell back down on narrow, steep, open-backed stairs | Balks at stairs | 20 | SEEN | 3 | Dossier's "carry only under 40 lbs" was NOT confirmed (a commenter described their own dog); dropped |
 | 53 | 3 of 17 mention incontinence or leaking in older dogs (host pads, owner thread, leaking thread) | Accidents | 25, 26, 27 | SEEN | 2 | Two Mumsnet |
 | 54 | Poster: vet not surprised dog was leaking; another suggested urine sample; vet bed locks urine in | Accidents | 27 | SEEN | 3 | Forum, not vet |
-| 55 | 3 of 17 hosts expect accidents reported and cleaned (cleaner and towels; report rule; 99% grab bag or mop) | Accidents | 23, 24, 25 | SEEN | 2 | All Airhosts; dossier "guests clean up" rule not in host's rules, so reworded |
+| 55 | 3 of 17 hosts plan for accidents (cleaner and towels kept; rule to report; 99% grab bag or mop) | Accidents | 23, 24, 25 | SEEN (re-read; only 24 says report; reworded from "expect reported and cleaned") | 2 | All Airhosts; dossier "guests clean up" rule not in host's rules, so reworded |
 | 56 | 3 of 17 mention own blanket or host throws | Accidents | 24, 28, 30 | SEEN | 2 | |
-| 57 | 4 of 17 say urine odor or stains can persist | Accidents | 31, 32, 23, 28 | SEEN | 2 | Two landlords; one general dog smell |
+| 57 | Two threads (31, 32; property owners) say urine smell or stains persist; 23 is about re-marking and 28 about general dog smell, neither urine odor | Accidents | 31, 32, 23, 28 | PARTIAL (re-checked: only 2 fit) | 3 (below 3-item bar; was 2 with count "4 of 17") | Article rewritten as single reports; 31 poster is labelled "Investor", not landlord |
 | 58 | One poster: ammonia cleaners encourage re-marking; no cleaner recommended | Accidents | 27 | SEEN | 3 | |
 | 59 | No source on whether hosts want advance notice of incontinence | Accidents; table | n/a | NOT CONFIRMED | 3 | |
 | 60 | One owner: 13-year-old dog needed emergency vet on a trip; carer wanted owner to decide | Vet distance | 29 | SEEN | 3 | Dossier dated posts 2022; the trip was Sept 2020 |
-| 61 | One poster: rules such as no dogs on beds or upstairs cannot be enforced | Manager rules | 28 | SEEN | 3 | Said by a commenter, not the OP |
+| 61 | One poster: rules such as no dogs on beds or upstairs cannot be enforced (several commenters in the thread say similar) | Manager rules | 28 | SEEN | 3 | Said by commenters, not the OP; "owner" changed to "poster" |
 | 62 | Host tells guests stair count (not used in text; single report) | n/a | 30 | SEEN | 3 | Not used |
 | 63 | Competitors added: pawgen (no rental guidance, unsourced hourly stops), Vagabond Journey (brief host questions) | front matter | pages read 2026-11-18 | SEEN | 1 | Rover page returned 403, not used |
+| 64 | ASPCA Animal Poison Control 888-426-4435; a consultation fee may apply | Vet distance | 33 https://www.aspca.org/pet-care/animal-poison-control | SEEN | 1 | "A consultation fee may apply." |
+| 65 | Pet Poison Helpline 855-764-7661; fee mentioned without amount | Vet distance | 34 https://www.petpoisonhelpline.com/ | SEEN | 1 | page states an incident fee; dollar amount not used |

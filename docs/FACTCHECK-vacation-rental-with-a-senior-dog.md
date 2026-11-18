@@ -46,3 +46,45 @@ VERIFIED 34 / PARTIAL 3 (rows 39, 44, 45: level or quoted wording off, fixed) / 
 ## Verdict
 
 PUBLISH-AFTER-NOTED-FIXES. The fixes above are applied; no claim needed removal beyond item 7. Keep status draft until the editor accepts the changes.
+
+---
+
+# Second pass (forum claims, ledger rows 48 to 65), 2026-11-18
+
+Independent re-read of all 14 cited forum threads, the six manager pages, both Airbnb pages and all vet pages. Status stays draft. tsc clean; vitest 16 files, 299 tests pass.
+
+## Corrections
+
+| # | Before | After | Why |
+|---|---|---|---|
+| 1 | Level 2: "Four of the 17 threads say dog urine odor or stains can be hard to remove" (BiggerPockets x2, Airhosts, Mumsnet) | Two single reports (the two BiggerPockets threads); the Airhosts host (marked spot gets marked again) and Mumsnet guests (cottage smelled of dog) listed as not about urine smell or stains; below the 3-item bar | Airhosts post does not mention smell; Mumsnet is general dog smell. Only 2 items fit, so the "at least 3" rule fails. Ledger row 57 now level 3. |
+| 2 | "Two are long-term landlords" | "long-term property owners" | One BiggerPockets poster is labelled "Investor", not shown as landlord. |
+| 3 | Three Airhosts threads "describe hosts who expect accidents to be reported and cleaned" | "describe hosts who plan for accidents" with the three specifics; "what hosts do or want" | Only the rules thread asks for reports; the other two keep supplies or note guests clean up. Count of 3 stands (level 2, single forum, stated). |
+| 4 | Airbnb "lists Step-free access and Step-free bedroom access as search filters" | "among its home accessibility features, and says guests can choose accessibility features in the Filters menu"; table row says "features" | Page does not state these two are filters. PARTIAL. |
+| 5 | Sun Realty cell "Fee is per property" | "Fee varies by property" | Page: amount varies by property and applies to every pet-friendly reservation. |
+| 6 | "One owner on a UK forum wrote... cannot be enforced... one poster's view" | "One poster... Other posters in that thread said similar things, but they are forum opinions" | Speaker is a commenter, and several commenters said it. |
+| 7 | Dog "said their own dog hated ramps" | "mentioned a dog that hated ramps" | Source says "that dog also hated ramps"; owner unclear. |
+| 8 | Mumsnet OP "said it was hard to find someone" | "listed the difficulty... among their frustrations" | Wording closer to the post. |
+| 9 | No poison numbers | Added ASPCA 888-426-4435 [33] and Pet Poison Helpline 855-764-7661 [34], "a consultation fee may apply", no dollar amount; two sources added | Brief risk item. Both numbers and the fee read on the pages. |
+| 10 | readingMinutes 16 | 20 | About 4,600 words of body text; ceil(4600/238) = 20. |
+
+## Counts re-confirmed
+- Traction 4 threads (19 bath mats, 20 strips, 21 bare-tread traction, 22 carpet): confirmed; 3 Tripawds, stated. Level 2 kept with caveat.
+- Incontinence 3 (25, 26, 27): confirmed; two Mumsnet, stated. Level 2 kept.
+- Accidents reported 3 (23, 24, 25): confirmed with item 3 rewording; all Airhosts, stated.
+- Own blanket 3 (24 rule, 28 commenter's own blanket, 30 host throws): confirmed.
+- Odor 4: reduced to 2, downgraded (above).
+- Single reports confirmed: hard floors "1000x"; carrying out for ~50 lb dog; growl when carried; leash pull "could definitely turn him off"; open-back stairs; 80 lb dog fell from about the fourth step; vet not surprised; vet bed; ammonia cleaners; 13-year-old dog emergency (Sept 2020 trip); Lab thread facts (no outcome stated; two drug names on page, not used).
+
+## Counts (65 ledger rows)
+VERIFIED 45 / PARTIAL 3 (rows 4, 55, 61) / WRONG 1 (row 57, "4 of 17") / COULD NOT LOAD 0. Ten rows are inference or absence statements (6, 17, 30, 32, 34, 37, 46, 47, 59, 62). Six rows not re-read this pass and carried from the first pass: 36, 38, 39, 40, 41, 63 (sample counts in the older dossier; competitor notes).
+
+## Remaining risks
+- Brindley's page says both "unless otherwise advertised" and "NO EXCEPTIONS" for the 60 lb limit; the table quotes the first. Consider a note.
+- Level 2 patterns are small, same-forum samples; labelled as such. Tripawds, Airhosts and Mumsnet dominate.
+- Fetch tool returns model extracts, not raw pages; quotes under 15 words were each matched to extract text, not to live HTML.
+- Internal links exist (all 12 guide slugs found in content/ or src/content/guides; tools not re-checked).
+- Manager policies show no effective date; article says so.
+
+## Verdict
+PUBLISH-AFTER-NOTED-FIXES. Fixes applied; keep status draft until an editor accepts them.

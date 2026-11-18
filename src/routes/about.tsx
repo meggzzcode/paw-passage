@@ -12,7 +12,7 @@ Paws & Passage is a travel guide for people who plan around their dogs. We focus
 
 - **Guides** that answer the questions other articles skip. We research what already ranks, find the gaps, and check facts against official sources: park agencies, city beach rules, veterinary organizations. Every source is listed at the end of each guide.
 - **Tools** that make the awkward part of booking easier, like writing a host a precise list of questions, or working out what a stay really costs once per-dog fees are added.
-- **Stays**, listed only after we confirm the pet policy, fees and fencing with the host. We would rather list ten stays we trust than a thousand we don't.
+- **Stays**, with the pet policy, fees and fencing details we could find on each public listing. Anything we could not find is marked Not confirmed, and we suggest you ask the host any additional questions before you book.
 
 ## What we don't do
 

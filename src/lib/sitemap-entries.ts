@@ -14,9 +14,9 @@ export const staticPaths = [
 export function sitemapEntries(): { path: string; lastmod?: string }[] {
   // Only verified stays are indexed; unverified listings are shown on the site but kept out of search.
   const liveStays = visibleStays({ includeSamples: false }).filter((s) => s.status === "verified");
-  // Until a verified stay exists, the stays directory and the town pages are noindexed, so they are left out of the sitemap too.
+  // The stays directory is indexable once any stay is listed; town pages and stay pages wait for a verified stay.
   const out: { path: string; lastmod?: string }[] = staticPaths
-    .filter((path) => liveStays.length > 0 || path !== "/stays")
+    .filter((path) => visibleStays({ includeSamples: false }).length > 0 || path !== "/stays")
     .map((path) => ({ path }));
   for (const d of destinations) {
     out.push({ path: `/destinations/${d.slug}` });

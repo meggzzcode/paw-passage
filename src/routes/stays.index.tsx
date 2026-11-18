@@ -9,7 +9,7 @@ import { destinations } from "@/content/destinations";
 import { StayCard } from "@/components/site/StayCard";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { pageHead } from "@/lib/seo";
-import { hasVerifiedStays } from "@/lib/launch";
+import { hasStays } from "@/lib/launch";
 import { Stay22Map } from "@/components/site/Stay22Map";
 
 export const Route = createFileRoute("/stays/")({
@@ -21,9 +21,9 @@ export const Route = createFileRoute("/stays/")({
     const filtered = activeFilterCount(match.search) > 0 || match.search.sort !== "recommended";
     return pageHead({
       title: "Dog-friendly stays and their pet policies",
-      description: "Search dog-friendly cabins, cottages and beach houses by fenced yard, large dogs, number of dogs, pet fees and breed rules. Each stay says whether its details are verified.",
+      description: "Search dog-friendly cabins, cottages and beach houses by fenced yard, large dogs, number of dogs, pet fees and breed rules. Details come from each listing, and anything we could not confirm is marked Not confirmed.",
       path: "/stays",
-      noindex: filtered || !hasVerifiedStays(),
+      noindex: filtered || !hasStays(),
     });
   },
   component: StaysPage,
@@ -110,7 +110,7 @@ function StaysPage() {
               <label className="text-sm">
                 <span className="sr-only">Sort</span>
                 <select value={search.sort} onChange={(e) => set({ sort: e.target.value })} className="h-10 rounded-full border border-input bg-background px-3">
-                  <option value="recommended">Recently verified</option>
+                  <option value="recommended">Recommended</option>
                   <option value="name">Name A–Z</option>
                   <option value="dogs">Most dogs allowed</option>
                 </select>
@@ -151,8 +151,8 @@ function StaysPage() {
 function EmptyInventory() {
   return (
     <div className="rounded-xl border border-border bg-card p-8 md:p-10">
-      <h2 className="text-2xl">Verified stays are on their way</h2>
-      <p className="mt-2 max-w-2xl text-muted-foreground">We only publish a stay once its pet policy, fees and fencing are confirmed with the host, and we never list a property we haven't checked. While we verify our first ones, these will help you vet any rental yourself:</p>
+      <h2 className="text-2xl">Stays are on their way</h2>
+      <p className="mt-2 max-w-2xl text-muted-foreground">We compile each stay's pet details from its public listing and mark anything we could not find as Not confirmed. While we add our first ones, these will help you vet any rental yourself:</p>
       <div className="mt-6 flex flex-wrap gap-3">
         <Link to="/tools/host-questions" className="rounded-full bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground">Host question generator</Link>
         <Link to="/guides/$slug" params={{ slug: "vacation-rental-secure-fenced-yard" }} className="rounded-full border border-input px-5 py-2.5 text-sm font-medium">Checking a fenced yard</Link>

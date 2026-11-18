@@ -29,7 +29,7 @@ relatedGuides:
   - vacation-rental-secure-fenced-yard
   - how-vacation-rental-pet-fees-work
   - dog-friendly-cabin-packing-list
-  - traveling-with-two-dogs-accommodation-guide
+  - how-many-dogs-can-you-bring-to-a-vacation-rental
   - airbnb-vs-vrbo-with-a-dog
 relatedTools:
   - checklist
@@ -217,7 +217,7 @@ Cabins and duplexes can have close neighbors or a host next door. Ask whether an
 
 Follow the listing, and only crate a dog that already accepts it. The ASPCA says a crate helps some dogs and adds stress for others, and suggests a baby gate in one room if a dog is distressed in a crate. [[5]](https://www.aspca.org/pet-care/dog-care/common-dog-behavior-issues/separation-anxiety)
 
-Airbnb's hosting guide does not mention crates. [[2]](https://www.airbnb.com/resources/hosting-homes/a/what-you-need-to-know-about-hosting-pets-463) Ask whether the host requires a crate, forbids one, or has space for yours. Our [two-dog guide](/guides/traveling-with-two-dogs-accommodation-guide) covers extra gear for two dogs, and the [cabin packing list](/guides/dog-friendly-cabin-packing-list) covers beds and throws.
+Airbnb's hosting guide does not mention crates. [[2]](https://www.airbnb.com/resources/hosting-homes/a/what-you-need-to-know-about-hosting-pets-463) Ask whether the host requires a crate, forbids one, or has space for yours. Our [two-dog guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental) covers extra gear for two dogs, and the [cabin packing list](/guides/dog-friendly-cabin-packing-list) covers beds and throws.
 
 ## Can I leave a pet camera on?
 

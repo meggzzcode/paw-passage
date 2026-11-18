@@ -19,7 +19,7 @@ export const guide: Guide = {
 ## The short answer
 
 - Skip "does it have a fence?" and ask what exactly closes the space, who opens each gate, and whether that works for your dog.
-- Check the weakest point: lowest fence height from the dog's side, the ground line, gate gaps and latches, and where two materials meet.
+- Check the weakest point: lowest fence height, the ground line, gate gaps and latches, and where two materials meet.
 - Ask for evidence before paying: a sketch, tape-measure photos and a short gate video. Check again on arrival.
 - "Partially fenced" means leash-only unless a separate, fully enclosed area is shown. An invisible or electric fence is not a physical enclosure. [[4]](https://vcahospitals.com/know-your-pet/invisible-fences)
 - A fenced pool yard is not automatically a safe dog yard.
@@ -38,13 +38,13 @@ Write a short containment profile: your dog's size, escape habits, reactions to 
 | Rushes gates | Latch operation, visitor access, and a separate enclosed dog area | A single driveway gate used throughout the day |
 | Reacts to outside movement | Sightlines, neighboring dogs, footpaths, and livestock | A shared or see-through boundary beside constant traffic |
 
-These are screening questions, not engineering specifications, and no single height or gap is safe for every dog. For two dogs, assess the better escape artist and the smaller opening-seeker separately; see our [two-dog accommodation guide](/guides/traveling-with-two-dogs-accommodation-guide).
+These are screening questions, not engineering specifications. For two dogs, assess the better escape artist and the smaller opening-seeker separately; see our [two-dog accommodation guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental).
 
 ## Decode the listing before you contact the host
 
 Read the description, captions and recent dog-owner reviews for "fence," "gate," "shared," "driveway," "pool" and "unattended," and treat contradictions as questions.
 
-- **"Partially fenced"** means some portion is not enclosed. Unless a separate, fully enclosed area is shown clearly, plan for leash-only use.
+- **"Partially fenced"** means leash-only unless a separate, fully enclosed area is shown.
 - **"Fenced property"** may describe outer acreage, not a dog-accessible yard. **"Enclosed patio"** may be a small paved space, **"gated community"** describes a neighborhood entrance, and **"private yard"** says nothing about fencing.
 - **"Natural boundary"** may be a hedge or terrain change; ask whether a physical barrier continues behind it. **"Dog run"**: request dimensions, surface, shade and access route. **"Secure"** is an opinion until construction and management details are supplied.
 - Screens are not dog-containment fencing, and decks can have openings or drops, so a screened porch needs its own evaluation.
@@ -113,7 +113,7 @@ Send one organized request and save the response with the listing, travel dates 
 - [ ] A layout showing separation from pools, roads, and parking.
 - [ ] Written disclosure of damage, repairs, or changes since the photos.
 
-Use our [host-question builder](/tools/pet-cost-check). Suggested wording: "We are considering these dates with one dog who digs and squeezes under gates. Could you confirm the enclosed area, minimum fence height, largest ground-level openings, gate latches and anyone else's access, with recent perimeter photos and a gate-closing video?" Ask for observable facts, not guarantees.
+Use our [host-question builder](/tools/pet-cost-check). Ask for observable facts, not guarantees.
 
 ## Make a decision without false precision
 
@@ -165,7 +165,7 @@ Save your arrival checks in the [travel checklist](/tools/checklist), price the 
   ],
   "relatedGuides": [
     "pet-friendly-vacation-rental-checklist",
-    "traveling-with-two-dogs-accommodation-guide",
+    "how-many-dogs-can-you-bring-to-a-vacation-rental",
     "dog-friendly-cabins-fenced-yards-georgia",
     "can-you-leave-a-dog-alone-in-a-vacation-rental",
     "new-years-eve-with-a-dog-in-a-vacation-rental",

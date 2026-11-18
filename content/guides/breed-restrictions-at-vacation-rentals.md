@@ -32,7 +32,6 @@ relatedGuides:
   - pet-friendly-vacation-rental-checklist
   - bringing-a-dog-to-a-no-pets-rental
   - airbnb-vs-vrbo-with-a-dog
-  - traveling-with-two-dogs-accommodation-guide
 relatedTools:
   - checklist
   - pet-cost-check

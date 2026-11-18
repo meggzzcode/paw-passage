@@ -86,7 +86,7 @@ These five have a maker page and, for the configurations noted, CPS listings. Sp
 - **Medium dog, sedan:** a harness on the rear seat belt, sized to the rib cage. The Clickit Range is our top pick; the Saker Bomber is the other tested option here (75 lb test dog). [[10]](https://sleepypod.com/pages/sizing) [[19]](https://centerforpetsafety.org/saker-bomber-harness/)
 - **Toy or very small dog:** a carrier tested for your dog's weight, such as the Atom's 12 lb rating. [[11]](https://sleepypod.com/products/atom)
 - **Dog that panics when confined:** a rear-seat harness may be easier to introduce gradually; ask your vet. A den-lover may prefer a correctly sized, anchored crate.
-- **Two dogs:** separate restraints, never a shared one. See our [two-dog planning guide](/guides/traveling-with-two-dogs-accommodation-guide).
+- **Two dogs:** separate restraints, never a shared one. See our [two-dog planning guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental).
 - **Very large breed:** check the maker's top weight, and see our [large-dog rental guide](/guides/vacation-rentals-that-welcome-large-dogs).
 
 ## Install it correctly
@@ -228,7 +228,7 @@ When a link is an affiliate link it is marked sponsored and the page says so; re
     "pet-friendly-vacation-rental-checklist",
     "dog-friendly-cabin-packing-list",
     "vacation-rentals-that-welcome-large-dogs",
-    "traveling-with-two-dogs-accommodation-guide",
+    "how-many-dogs-can-you-bring-to-a-vacation-rental",
   ],
   relatedTools: ["checklist", "pet-cost-check"],
   sources: [

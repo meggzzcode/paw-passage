@@ -73,7 +73,7 @@ export const destinations: StateDest[] = [
         slug: "dahlonega", name: "Dahlonega", region: "Lumpkin County",
         blurb: "A historic gold-rush town with a courthouse square, wineries and forested hills on every side.",
         image: "guide-two-dogs",
-        guides: ["dog-friendly-weekend-getaways-from-atlanta", "traveling-with-two-dogs-accommodation-guide"],
+        guides: ["dog-friendly-weekend-getaways-from-atlanta", "how-many-dogs-can-you-bring-to-a-vacation-rental"],
         planningNotes: [
           "Wineries and tasting rooms vary a lot on dogs. Confirm before you go rather than at the door.",
           "Cabins outside town can be well off paved roads. Ask about the access road if your car sits low.",

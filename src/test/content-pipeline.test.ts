@@ -7,7 +7,9 @@ import { loadContent } from "../../plugins/content";
 // These tests protect the promise a buyer relies on: saving something in the CMS never makes it public
 // by accident, and a mistake in a content file stops the build with a clear message instead of publishing.
 const realGuide = join(process.cwd(), "content/guides/how-vacation-rental-pet-fees-work.md");
-const realStay = join(process.cwd(), "content/stays/sample-ridge-cabin.yml");
+// A real stay record used as a fixture (its booking link is removed so it stands alone in a temporary site).
+const realStayPath = join(process.cwd(), "content/stays/mountain-view-cabin-hilltop-hideaway.yml");
+const stayFixture = () => readFileSync(realStayPath, "utf8").replace(/^affiliateId:.*\n?/m, "");
 let root = "";
 
 // The real guide, with its links to other articles removed (the temporary test project has no other articles).
@@ -38,14 +40,15 @@ describe("content build step", () => {
     expect(loadContent(root, false).guides.length).toBe(1);
   });
 
-  it("leaves drafts, unapproved guides and sample stays OUT of production builds entirely", () => {
+  it("leaves drafts and unapproved guides OUT of production builds, but lists unverified stays", () => {
     reset();
     writeFileSync(join(root, "content/guides/draft.md"), guideWith((t) => t.replace("status: published", "status: draft")));
     writeFileSync(join(root, "content/guides/unapproved.md"), guideWith((t) => t.replace(/^approvedBy:.*\n/m, "").replace(/^approvedOn:.*\n/m, "")));
-    cpSync(realStay, join(root, "content/stays/sample.yml"));
+    writeFileSync(join(root, "content/stays/unverified.yml"), stayFixture());
     const prod = loadContent(root, false);
     expect(prod.guides).toEqual([]);
-    expect(prod.stays).toEqual([]);
+    expect(prod.stays).toHaveLength(1);
+    expect((prod.stays[0] as { status: string }).status).toBe("unverified");
     const preview = loadContent(root, true);
     expect(preview.guides.length).toBe(2);
     expect(preview.stays.length).toBe(1);
@@ -166,7 +169,7 @@ describe("content build step", () => {
     bad("content/guides/trav.md", guideWith((t) => t.replace(/^heroImage:.*$/m, "heroUpload: /uploads/../../package.json")), /uploads/);
     bad("content/guides/Bad Name.md", guideWith((t) => t), /lowercase letters/);
     bad("content/stays/Bad Name.yml", "name: X\nstatus: verified\nlastVerified: 2026-11-16\ntype: cabin\nstate: georgia\ntown: a\nsummary: s\ndescription: d\nimage: guide-ga-cabins\n", /lowercase letters/);
-    bad("content/stays/zero.yml", "name: X\nstatus: sample\ntype: cabin\nstate: georgia\ntown: a\nsummary: s\ndescription: d\nimage: guide-ga-cabins\npetFee: charged\npetFeeAmount: 0\npetFeeBasis: stay\n", /above zero/);
+    bad("content/stays/zero.yml", "name: X\nstatus: unverified\ntype: cabin\nstate: georgia\ntown: a\nsummary: s\ndescription: d\nimage: guide-ga-cabins\npetFee: charged\npetFeeAmount: 0\npetFeeBasis: stay\n", /above zero/);
   });
 
   it("affiliate links in article text must exist in Affiliate links (a typo fails the build; an unfinished draft is skipped)", () => {
@@ -200,8 +203,8 @@ describe("content build step", () => {
     reset();
     mkdirSync(join(root, "src/lib"), { recursive: true });
     writeFileSync(join(root, "src/lib/images.ts"), 'export const images = {\n  "real-photo": { src: a, alt: "x" },\n} as const;\n');
-    const draft = readFileSync(realStay, "utf8").replace("status: sample", "status: unverified").replace(/^image:.*\n/m, "");
-    const verified = draft.replace("status: unverified", "status: verified").replace("lastVerified:", "lastVerified: 2026-11-16");
+    const draft = stayFixture().replace(/^image:.*\n/m, "");
+    const verified = draft.replace("status: unverified", "status: verified\nlastVerified: 2026-11-16");
     writeFileSync(join(root, "content/stays/draft.yml"), draft);
     expect(loadContent(root, false).stays).toEqual([]);
     writeFileSync(join(root, "content/stays/draft.yml"), draft.replace(/^name:/m, "image: not-a-photo\nname:"));

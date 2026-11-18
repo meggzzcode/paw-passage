@@ -28,7 +28,7 @@ relatedGuides:
   - how-vacation-rental-pet-fees-work
   - pet-friendly-vacation-rental-checklist
   - vacation-rentals-that-welcome-large-dogs
-  - traveling-with-two-dogs-accommodation-guide
+  - how-many-dogs-can-you-bring-to-a-vacation-rental
   - bringing-a-dog-to-a-no-pets-rental
 embeddedTool: pet-cost-workflow
 relatedTools:
@@ -171,7 +171,7 @@ For more on the four fee units and deposits, see our [pet fees guide](/guides/ho
 
 Direct answer: both platforms let hosts set pet terms, so the allowed number is a listing question. Airbnb asks you to enter a pet count. [[1]](https://www.airbnb.com/help/article/3623) Vrbo tells hosts to state how many pets are allowed. [[7]](https://help.vrbo.com/articles/What-are-House-Rules)
 
-If you decide to add a dog after booking, we did not find a help page we could read that explains how either platform changes the price. Ask the host to confirm the change and the new total in the message thread before you rely on it. Vrbo's fee help does say a host can send a payment request to add a charge to an existing reservation, which describes a mechanism rather than proof that the charge is valid. [[4]](https://help.vrbo.com/articles/How-do-I-manage-my-fees) Two or more dogs raise their own questions; see our [two-dog guide](/guides/traveling-with-two-dogs-accommodation-guide) and [large-dog guide](/guides/vacation-rentals-that-welcome-large-dogs).
+If you decide to add a dog after booking, we did not find a help page we could read that explains how either platform changes the price. Ask the host to confirm the change and the new total in the message thread before you rely on it. Vrbo's fee help does say a host can send a payment request to add a charge to an existing reservation, which describes a mechanism rather than proof that the charge is valid. [[4]](https://help.vrbo.com/articles/How-do-I-manage-my-fees) Two or more dogs raise their own questions; see our [two-dog guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental) and [large-dog guide](/guides/vacation-rentals-that-welcome-large-dogs).
 
 ## What about service animals?
 

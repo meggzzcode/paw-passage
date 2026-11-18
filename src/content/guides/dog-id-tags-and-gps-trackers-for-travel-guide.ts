@@ -96,7 +96,7 @@ When a link is an affiliate link it is marked sponsored and the page says so; re
 | A short road trip with a dog that stays on leash | A current tag and a checked microchip record. A tracker is optional. |
 | A rental with a yard, or a dog that escapes | A clip-on or collar GPS tracker, plus the checks in our [secure fenced yard guide](/guides/vacation-rental-secure-fenced-yard). |
 | A small or large dog | Check each tracker's weight range first; some list a minimum. See our [large-dog rental guide](/guides/vacation-rentals-that-welcome-large-dogs). |
-| Two or more dogs | A tag, a record and (if tracking) a tracker and plan per dog. See our [two-dog planning guide](/guides/traveling-with-two-dogs-accommodation-guide). |
+| Two or more dogs | A tag, a record and (if tracking) a tracker and plan per dog. See our [two-dog planning guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental). |
 | Camping or remote areas | Coverage first. A cellular tracker needs cellular coverage, so check the maker's coverage tool for the route. |
 | A trip abroad | Check your destination's rules and the maker's coverage list. AKC Reunite says that for travel outside the US or to Hawaii, the pet must be microchipped before the health certification process begins. Your destination sets the other requirements, so check them with an accredited vet. [[4]](https://www.akcreunite.org/travel/) |
 
@@ -220,7 +220,7 @@ Heading to a cabin? See our [cabin packing list](/guides/dog-friendly-cabin-pack
     "pet-friendly-vacation-rental-checklist",
     "vacation-rental-secure-fenced-yard",
     "dog-friendly-cabin-packing-list",
-    "traveling-with-two-dogs-accommodation-guide",
+    "how-many-dogs-can-you-bring-to-a-vacation-rental",
     "vacation-rentals-that-welcome-large-dogs",
   ],
   relatedTools: ["checklist", "pet-cost-check"],

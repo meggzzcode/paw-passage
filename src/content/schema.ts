@@ -69,7 +69,7 @@ const optNum = z.preprocess((v) => (v === "" || v === null || v === undefined ? 
 export const stayYamlSchema = z.object({
   name: nonEmpty,
   // If the Status box is ever left empty, the safe answer is "unverified" (never shown on the live site).
-  status: z.enum(["verified", "unverified", "sample"]).default("unverified"),
+  status: z.enum(["verified", "unverified"]).default("unverified"),
   type: z.enum(["cabin", "vacation-home", "cottage", "beach-house", "unique"]),
   state: z.enum(["georgia", "california"]),
   town: nonEmpty,

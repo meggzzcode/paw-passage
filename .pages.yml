@@ -223,7 +223,6 @@ content:
           values:
             - { value: unverified, label: "Unverified (shown, labelled Not yet verified)" }
             - { value: verified, label: "Verified (shown; the host confirmed the details)" }
-            - { value: sample, label: "Sample (preview only, never live)" }
       - { name: name, label: Name of the stay, type: string, required: true }
       - name: type
         label: Type

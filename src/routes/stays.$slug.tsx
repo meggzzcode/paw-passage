@@ -36,8 +36,9 @@ function StayPage() {
     ["Breed restrictions", s.breedRestrictions === null ? "Not confirmed" : s.breedRestrictions ? "Yes, ask host" : "None stated"],
     ["Pet fee", describeFee(s.petFee)],
     ["Fenced yard", s.fencedYard === null ? "Not confirmed" : { full: "Fully fenced", partial: "Partly fenced", none: "No fence" }[s.fencedYard]],
-    ["Private outdoor space", yesNo(s.privateOutdoor)],
-    ["Hot tub", yesNo(s.hotTub)],
+    // Amenities that are not pet rules appear only once they are known, so an unknown never looks like a gap in the pet policy.
+    ...(s.privateOutdoor === null ? [] : ([["Private outdoor space", yesNo(s.privateOutdoor)]] as [string, string][])),
+    ...(s.hotTub === null ? [] : ([["Hot tub", yesNo(s.hotTub)]] as [string, string][])),
     ["Sleeps", s.sleeps ? String(s.sleeps) : "Not confirmed"],
   ];
   const related = (getState(s.state)?.guides ?? []).map((g) => getGuide(g)).filter((g) => !!g).slice(0, 2);

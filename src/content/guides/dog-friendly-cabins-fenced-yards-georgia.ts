@@ -37,7 +37,7 @@ Write down your non-negotiables first, in three groups:
 - **Usability:** footing, slope, shade, lighting, stairs and enough space for your use.
 - **Management:** privacy, service visits, pet rules, supervision, and a fallback if the enclosure disappoints.
 
-There is no universal minimum fence height. Tell the host your dog's size and behavior, then ask for measurements; a dog that digs, climbs, jumps or rushes gates needs a different assessment from one that stays beside you. For a fuller audit, use our [secure fenced-yard guide](/guides/vacation-rental-secure-fenced-yard), and for more than one dog the [two-dog accommodation guide](/guides/traveling-with-two-dogs-accommodation-guide).
+There is no universal minimum fence height. Tell the host your dog's size and behavior, then ask for measurements; a dog that digs, climbs, jumps or rushes gates needs a different assessment from one that stays beside you. For a fuller audit, use our [secure fenced-yard guide](/guides/vacation-rental-secure-fenced-yard), and for more than one dog the [two-dog accommodation guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental).
 
 ## What does "fenced" mean in this listing?
 
@@ -179,7 +179,7 @@ Send the message above, then price the whole stay in the [pet cost and host conf
     "dog-friendly-weekend-getaways-from-atlanta",
     "vacation-rental-secure-fenced-yard",
     "pet-friendly-vacation-rental-checklist",
-    "traveling-with-two-dogs-accommodation-guide",
+    "how-many-dogs-can-you-bring-to-a-vacation-rental",
     "vacation-rentals-that-welcome-large-dogs",
     "dog-friendly-cabin-packing-list",
     "how-vacation-rental-pet-fees-work",

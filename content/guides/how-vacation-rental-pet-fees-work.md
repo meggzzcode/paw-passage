@@ -25,12 +25,11 @@ faqs:
   - q: Does paying a pet fee cover damage?
     a: Do not assume so. Routine pet cleaning, damage liability, deposits, and damage waivers are distinct. Read the agreement and any protection product's terms.
 relatedGuides:
-  - traveling-with-two-dogs-accommodation-guide
+  - how-many-dogs-can-you-bring-to-a-vacation-rental
   - vacation-rentals-that-welcome-large-dogs
   - pet-friendly-vacation-rental-checklist
   - vacation-rental-secure-fenced-yard
   - airbnb-pet-damage-charge-after-checkout
-  - how-many-dogs-can-you-bring-to-a-vacation-rental
   - bringing-a-dog-to-a-no-pets-rental
   - airbnb-vs-vrbo-with-a-dog
 embeddedTool: pet-cost-workflow
@@ -165,7 +164,7 @@ The same dog count and dates produce very different totals. Hypothetical round n
 | $50 per dog per stay | $50 x 2 | $100 |
 | $20 per dog per night | $20 x 2 x 4 | $160 |
 
-The smallest headline number gives the largest bill. Caps and tiers matter too: if a hypothetical policy says "$15 per dog per night, $150 maximum", two dogs for seven nights is $210 uncapped and $150 capped, unless the cap is per dog. Ask what the cap covers. Our [two-dog planning guide](/guides/traveling-with-two-dogs-accommodation-guide) covers count and weight questions.
+The smallest headline number gives the largest bill. Caps and tiers matter too: if a hypothetical policy says "$15 per dog per night, $150 maximum", two dogs for seven nights is $210 uncapped and $150 capped, unless the cap is per dog. Ask what the cap covers. Our [two-dog planning guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental) covers count and weight questions.
 
 For a break-even example, compare a hypothetical $90 per-stay fee with a $20 nightly fee for one dog: four nights costs $80 nightly, five costs $100, so the lines cross at 4.5 nights.
 

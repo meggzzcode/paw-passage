@@ -125,7 +125,7 @@ Airbnb advises guests to contact hosts even when a listing allows pets, disclose
 
 A designated Georgia state-park cottage is limited by the state's rules to two dogs, and dogs may not be left unattended. A private host's policy is a separate matter. [[14]](https://gastateparks.org/ParkRules)
 
-See our [two-dog guide](/guides/traveling-with-two-dogs-accommodation-guide), [large-dog guide](/guides/vacation-rentals-that-welcome-large-dogs) and [pet-fee explanation](/guides/how-vacation-rental-pet-fees-work).
+See our [two-dog guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental), [large-dog guide](/guides/vacation-rentals-that-welcome-large-dogs) and [pet-fee explanation](/guides/how-vacation-rental-pet-fees-work).
 
 ## Keep the safety plan simple
 
@@ -181,7 +181,7 @@ Compare the whole weekend in the [pet cost and host confirmation tool](/tools/pe
     "dog-friendly-cabins-fenced-yards-georgia",
     "vacation-rental-secure-fenced-yard",
     "pet-friendly-vacation-rental-checklist",
-    "traveling-with-two-dogs-accommodation-guide",
+    "how-many-dogs-can-you-bring-to-a-vacation-rental",
     "vacation-rentals-that-welcome-large-dogs",
     "dog-friendly-cabin-packing-list",
     "how-vacation-rental-pet-fees-work",

@@ -106,7 +106,7 @@ These five are criteria- and spec-based picks, not tested picks. Each maker's ow
 | Beach, lake or pool | Fresh water so your dog is not tempted to drink from the shoreline | Either Springland bottle or the Kurgo bowl |
 | Large dog on a hot day | Capacity and refills | A larger bowl than the small ones above; check capacity on the maker's page |
 
-With two dogs, double the water first; see our [two-dog travel guide](/guides/traveling-with-two-dogs-accommodation-guide) and [large-dog rental guide](/guides/vacation-rentals-that-welcome-large-dogs).
+With two dogs, double the water first; see our [two-dog travel guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental) and [large-dog rental guide](/guides/vacation-rentals-that-welcome-large-dogs).
 
 The CDC's travel kit list also includes a leash, grooming supplies, first-aid items and travel papers such as proof of rabies vaccination. [[1]](https://www.cdc.gov/healthy-pets/travel/index.html) Add these to our [trip checklist](/tools/checklist), and see our [rental checklist](/guides/pet-friendly-vacation-rental-checklist) for what to confirm with the host.
 
@@ -214,7 +214,7 @@ Next step: run your plan through the [trip checklist](/tools/checklist) so the b
   relatedGuides: [
     "dog-friendly-cabin-packing-list",
     "pet-friendly-vacation-rental-checklist",
-    "traveling-with-two-dogs-accommodation-guide",
+    "how-many-dogs-can-you-bring-to-a-vacation-rental",
     "vacation-rentals-that-welcome-large-dogs",
   ],
   relatedTools: ["checklist", "pet-cost-check"],

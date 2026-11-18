@@ -40,7 +40,7 @@ Check the exact unit, not the manager's portfolio. Vrbo's house-rules guidance l
 - [ ] Count, weight (per dog or combined), breed and age limits written down.
 - [ ] Approval received in the booking channel, naming each dog and the dates.
 
-Weight limits are real and they differ a lot. Across the 38 managers in our convenience sample (public pages read 2026-11-18), six state one, from 35 to 65 pounds. Our [large-dog guide](/guides/vacation-rentals-that-welcome-large-dogs) names them, and the [two-dog guide](/guides/traveling-with-two-dogs-accommodation-guide) covers counts and combined weight. For a quick yes or no on your own dog, try the [acceptance tool](/tools/will-my-dog-be-accepted). Breed rules have their own [guide](/guides/breed-restrictions-at-vacation-rentals).
+Weight limits are real and they differ a lot. Across the 38 managers in our convenience sample (public pages read 2026-11-18), six state one, from 35 to 65 pounds. Our [large-dog guide](/guides/vacation-rentals-that-welcome-large-dogs) names them, and the [two-dog guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental) covers counts and combined weight. For a quick yes or no on your own dog, try the [acceptance tool](/tools/will-my-dog-be-accepted). Breed rules have their own [guide](/guides/breed-restrictions-at-vacation-rentals).
 
 ## Price
 
@@ -137,7 +137,7 @@ Booked somewhere that says no pets? Read [what happens if you bring a dog to a n
   "relatedGuides": [
     "vacation-rental-secure-fenced-yard",
     "how-vacation-rental-pet-fees-work",
-    "traveling-with-two-dogs-accommodation-guide",
+    "how-many-dogs-can-you-bring-to-a-vacation-rental",
     "vacation-rentals-that-welcome-large-dogs",
     "airbnb-pet-damage-charge-after-checkout",
     "can-you-leave-a-dog-alone-in-a-vacation-rental",

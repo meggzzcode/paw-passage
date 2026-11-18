@@ -49,7 +49,7 @@ export const dogTypes: DogType[] = [
     facts: [
       { text: "Of 38 manager pet pages we read, 22 state a limit of two, and 2 set it at three pets.", to: "/guides/how-many-dogs-can-you-bring-to-a-vacation-rental" },
     ],
-    guideSlugs: ["how-many-dogs-can-you-bring-to-a-vacation-rental", "traveling-with-two-dogs-accommodation-guide", "how-vacation-rental-pet-fees-work", "portable-dog-fence-and-playpen-guide-for-rentals", "pet-friendly-vacation-rental-checklist"],
+    guideSlugs: ["how-many-dogs-can-you-bring-to-a-vacation-rental", "how-vacation-rental-pet-fees-work", "portable-dog-fence-and-playpen-guide-for-rentals", "pet-friendly-vacation-rental-checklist"],
   },
   {
     slug: "senior-dogs",

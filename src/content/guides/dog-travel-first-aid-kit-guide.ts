@@ -109,7 +109,7 @@ When a link is an affiliate link it is marked sponsored and the page says so; re
 | Road trip with stops, no hiking | A single zippered kit for the car | Kurgo Dog First Aid Kit |
 | Nervous or reactive dog | A fitted muzzle introduced well before the trip | Baskerville Ultra, if its sizing and use notes suit your dog |
 | Dog on regular medication | Original-labeled medication, records copy, your vet's advice | Any kit, plus your vet's guidance |
-| Two or more dogs | Duplicate key items | See our [two-dog guide](/guides/traveling-with-two-dogs-accommodation-guide) |
+| Two or more dogs | Duplicate key items | See our [two-dog guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental) |
 
 See also our [fenced-yard rental guide](/guides/vacation-rental-secure-fenced-yard).
 
@@ -240,7 +240,7 @@ Add these to your [trip checklist](/tools/checklist) so the kit gets packed with
     "dog-friendly-cabin-packing-list",
     "pet-friendly-vacation-rental-checklist",
     "vacation-rental-secure-fenced-yard",
-    "traveling-with-two-dogs-accommodation-guide",
+    "how-many-dogs-can-you-bring-to-a-vacation-rental",
   ],
   relatedTools: ["checklist", "pet-cost-check"],
   sources: [

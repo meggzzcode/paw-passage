@@ -116,7 +116,7 @@ Use the [pet cost and host confirmation tool](/tools/pet-cost-check) to get writ
 - Which nearby public outing does the host suggest, and who manages it?
 - What is the cancellation policy if weather changes our plans?
 
-For two dogs, also use our [two-dog accommodation guide](/guides/traveling-with-two-dogs-accommodation-guide): approval for one dog does not answer the question for both.
+For two dogs, also use our [two-dog accommodation guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental): approval for one dog does not answer the question for both.
 
 ## A two-night structure
 
@@ -163,7 +163,7 @@ Price the whole weekend in the [pet cost and host confirmation tool](/tools/pet-
     "pet-friendly-beachfront-rentals-california",
     "pet-friendly-vacation-rental-checklist",
     "vacation-rental-secure-fenced-yard",
-    "traveling-with-two-dogs-accommodation-guide",
+    "how-many-dogs-can-you-bring-to-a-vacation-rental",
     "dog-friendly-cabin-packing-list",
   ],
   relatedTools: ["checklist", "pet-cost-check"],

@@ -91,7 +91,7 @@ A pet health policy is a different product from liability cover for injuries or 
 - **What most people report:** this page uses no survey; the 38 managers are a small convenience sample, not a picture of the whole market.
 - **Unknown, so ask:** the rule for your specific home, since limits change and many vary by property.
 
-Next step: put your dog's weight into the [will my dog be accepted tool](/tools/will-my-dog-be-accepted), then use the [trip checklist](/tools/checklist) to save the answers. Bringing two dogs? Start with the [two-dog guide](/guides/traveling-with-two-dogs-accommodation-guide).`,
+Next step: put your dog's weight into the [will my dog be accepted tool](/tools/will-my-dog-be-accepted), then use the [trip checklist](/tools/checklist) to save the answers. Bringing two dogs? Start with the [two-dog guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental).`,
   faqs: [
     {
       q: "Can I filter vacation rentals by my dog's weight?",
@@ -115,12 +115,11 @@ Next step: put your dog's weight into the [will my dog be accepted tool](/tools/
     },
   ],
   relatedGuides: [
-    "traveling-with-two-dogs-accommodation-guide",
+    "how-many-dogs-can-you-bring-to-a-vacation-rental",
     "vacation-rental-secure-fenced-yard",
     "pet-friendly-vacation-rental-checklist",
     "how-vacation-rental-pet-fees-work",
     "dog-friendly-cabin-packing-list",
-    "how-many-dogs-can-you-bring-to-a-vacation-rental",
   ],
   relatedTools: ["checklist", "pet-cost-check"],
   sources: [

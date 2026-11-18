@@ -29,7 +29,7 @@ relatedGuides:
   - pet-friendly-vacation-rental-checklist
   - vacation-rentals-that-welcome-large-dogs
   - vacation-rental-secure-fenced-yard
-  - traveling-with-two-dogs-accommodation-guide
+  - how-many-dogs-can-you-bring-to-a-vacation-rental
 relatedTools:
   - checklist
   - pet-cost-check

@@ -7,6 +7,7 @@ import { visibleStays } from "@/content/stays";
 import { sampleStays } from "@/content/stays/samples";
 import { allGuides, isPublic } from "@/content/guides";
 import { sitemapEntries } from "@/lib/sitemap-entries";
+import { stayIsIndexable } from "@/lib/seo";
 import type { Stay } from "@/content/stays/types";
 
 const base = sampleStays[0]!;
@@ -34,12 +35,12 @@ describe("live site visibility", () => {
   it("sample stays never appear when samples are off (production)", () => {
     expect(visibleStays({ includeSamples: false }).some((s) => s.status === "sample")).toBe(false);
   });
-  it("unverified stays are listed after verified ones, and never in the sitemap", () => {
+  it("unverified stays are listed after verified ones, and reach the sitemap only when they pass the indexing quality rule", () => {
     const list = visibleStays({ includeSamples: false });
     const firstUnverified = list.findIndex((s) => s.status === "unverified");
     if (firstUnverified >= 0) expect(list.slice(firstUnverified).every((s) => s.status === "unverified")).toBe(true);
     const paths = sitemapEntries().map((e) => e.path);
-    for (const s of list.filter((x) => x.status === "unverified")) expect(paths).not.toContain(`/stays/${s.slug}`);
+    for (const s of list.filter((x) => x.status === "unverified")) expect(paths.includes(`/stays/${s.slug}`)).toBe(stayIsIndexable(s, list));
   });
   it("sitemap excludes samples and drafts", () => {
     const paths = sitemapEntries().map((e) => e.path);

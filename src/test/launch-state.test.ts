@@ -14,12 +14,13 @@ describe("site before the first verified stay", () => {
     // Tests run in development mode, where sample stays are visible; the sitemap never includes them.
     expect(typeof hasStays()).toBe("boolean");
   });
-  it("lists the stays directory once any stay is listed, and leaves town pages out until one is verified", () => {
+  it("lists the stays directory once any stay is listed, and lists town pages only when they pass the indexing quality rule", () => {
     const paths = sitemapEntries().map((e) => e.path);
     expect(paths).toContain("/stays");
     expect(paths).not.toContain("/tools/compare");
     expect(paths).toContain("/tools/pet-cost-check");
-    expect(paths.filter((p) => /^\/destinations\/[a-z-]+\/[a-z-]+$/.test(p))).toEqual([]);
+    // Town pages are in the sitemap exactly when townIsIndexable says so (see stay-indexing.test.ts); thin towns are not.
+    expect(paths).not.toContain("/destinations/georgia/ellijay");
     expect(paths).toContain("/guides");
     expect(paths.some((p) => p.startsWith("/guides/"))).toBe(true);
   });

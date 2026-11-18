@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { readFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
-import yaml from "js-yaml";
+import { parse } from "yaml";
 
 // @ts-expect-error plain .mjs script without types
 import * as health from "../../scripts/site-health.mjs";
@@ -12,15 +12,15 @@ const root = process.cwd();
 
 describe("workflows and dependabot parse as YAML", () => {
   for (const f of readdirSync(join(root, ".github/workflows"))) {
-    it(f, () => { expect(yaml.load(readFileSync(join(root, ".github/workflows", f), "utf8"))).toBeTruthy(); });
+    it(f, () => { expect(parse(readFileSync(join(root, ".github/workflows", f), "utf8"))).toBeTruthy(); });
   }
   it("dependabot.yml is grouped and limited", () => {
-    const d = yaml.load(readFileSync(join(root, ".github/dependabot.yml"), "utf8")) as { updates: { "package-ecosystem": string; "open-pull-requests-limit": number; groups: object }[] };
+    const d = parse(readFileSync(join(root, ".github/dependabot.yml"), "utf8")) as { updates: { "package-ecosystem": string; "open-pull-requests-limit": number; groups: object }[] };
     expect(d.updates.map((u) => u["package-ecosystem"]).sort()).toEqual(["github-actions", "npm"]);
     for (const u of d.updates) { expect(u["open-pull-requests-limit"]).toBeLessThanOrEqual(5); expect(Object.keys(u.groups).length).toBeGreaterThan(0); }
   });
   it("the IndexNow workflow only runs by hand", () => {
-    const w = yaml.load(readFileSync(join(root, ".github/workflows/indexnow.yml"), "utf8")) as { on: Record<string, unknown> };
+    const w = parse(readFileSync(join(root, ".github/workflows/indexnow.yml"), "utf8")) as { on: Record<string, unknown> };
     expect(Object.keys(w.on)).toEqual(["workflow_dispatch"]);
   });
 });

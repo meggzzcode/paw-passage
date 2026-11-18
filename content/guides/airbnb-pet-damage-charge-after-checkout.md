@@ -1,7 +1,7 @@
 ---
 title: "Charged for Pet Damage After Checkout? What to Do on Airbnb and Vrbo"
 seoTitle: "Airbnb Pet Damage Charge: 24h, 14d, 60d"
-seoDescription: "Airbnb pet damage charge after checkout: the 24-hour, 14-day and 60-day clocks from Airbnb's own pages, Vrbo's rules, reply scripts and an evidence list."
+seoDescription: "Airbnb pet damage charge after checkout: the 24-hour, 14-day and 60-day clocks from Airbnb's own pages, other platforms' rules, reply scripts and evidence."
 dek: Three clocks, the pet fee versus damage question, and message scripts you can paste when a host asks for money after your dog's stay.
 category: Planning
 states: []

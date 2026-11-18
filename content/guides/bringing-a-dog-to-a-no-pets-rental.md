@@ -1,7 +1,7 @@
 ---
 title: What Happens If You Bring a Dog to a No-Pets Rental?
 seoTitle: Bring a Dog to a No-Pets Rental? The Risks
-seoDescription: Booked an Airbnb or Vrbo that says no pets? See what the platforms say, what hosts describe happening, and a message to ask for an exception.
+seoDescription: "Booked a rental that says no pets? See what the platforms say, what hosts describe happening, and a message to ask for an exception."
 dek: What the platforms say, what hosts say really happens, and how to ask the host before you pack the dog's bed.
 category: Planning
 states: []

@@ -4,7 +4,7 @@ import { pageHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/privacy")({
   head: () => pageHead({ title: "Privacy policy", description: "What information Paws & Passage collects, how analytics works, and your choices.", path: "/privacy" }),
-  component: () => <InfoPage title="Privacy policy" updated="2026-11-16" body={`This policy explains what happens to information when you use Paws & Passage.
+  component: () => <InfoPage title="Privacy policy" updated="2026-11-18" body={`This policy explains what happens to information when you use Paws & Passage.
 
 ## Information you type into our tools
 
@@ -21,6 +21,10 @@ If you email us, we use your message and address only to reply and, for property
 ## Links to other sites
 
 Booking partners and other sites we link to have their own privacy policies. Some links are affiliate links; see our [affiliate disclosure](/affiliate-disclosure).
+
+## Affiliate links, cookies and tracking
+
+If you click an affiliate link, the partner's site (or its affiliate network) may set cookies or use similar tracking technologies, such as pixels, to record that you came from our site, so a purchase or booking can be credited to us. Those cookies and what they collect are controlled by the partner and the network, not by us, and are covered by their privacy policies. We also use Google Analytics 4 to count clicks on affiliate and product links on our own pages; it records the click, not what you type into our tools. You can block or delete cookies in your browser settings, and blocking them does not change the price you pay.
 
 ## Children
 

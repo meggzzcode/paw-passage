@@ -61,6 +61,8 @@ If an editor saves a half-finished draft, the build skips it and carries on. If 
 
 **Add a place to stay.** Pages CMS > Stays > New. Only fill in what the host has confirmed. Leave unknown boxes as **not-confirmed** (the site then says "Not confirmed"; it never guesses). Set Status to *Verified* and fill in the date the host confirmed the details. Use a photo only if you have the owner's permission.
 
+**Programs with their own rules (for example Expedia Group, which covers Vrbo).** Use their links exactly as the program gives them, never alter or redirect them, and keep commission figures out of public pages. The previous owner's account does not transfer; you apply for your own. See `docs/AFFILIATE-AND-SELLING.md` ("Expedia Group program rules") for the full list and how to remove links.
+
 **Add an affiliate link.** Pages CMS > Affiliate links. Add the link, then tick **Approved** only after the company has approved your account. A Book or Buy button appears on the site only for approved links.
 
 **Change your business details.** Pages CMS > Business settings: email address, website address, Google Analytics ID (looks like `G-XXXXXXXXXX`). Anything left empty shows an honest "coming soon" message instead of a broken link.

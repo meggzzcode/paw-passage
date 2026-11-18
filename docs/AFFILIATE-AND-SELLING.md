@@ -19,3 +19,22 @@ Researched 2026-11-17 from search results (broker pages, network help pages, sel
 
 ## One account for several sites (owner's plan, 2026-11-17)
 Most programs let one account promote several websites (Awin and Impact: add each site as a separate promotional space or property; Amazon: list each site; exact limits NOT CONFIRMED per program). Benefits for a sale: remove only the sold site from the seller's account instead of closing the account. To keep each site's earnings provable: use a separate tracking ID or property per site, download each site's report monthly and file it per site, and never reuse links across sites. Each site is reviewed separately, and a rule breach on one site can put the whole account at risk.
+
+## Expedia Group (Vrbo, Expedia, Hotels.com) program rules that affect this site
+
+Read from the program terms on 2026-11-18 (creator.expediagroup.com affiliate terms; section numbers are from that page and may change, so re-read before relying on them).
+
+- **Privacy policy (9.1.2):** must disclose how you and third parties use cookies and pixels. Covered in the privacy page ("Affiliate links, cookies and tracking").
+- **Links (11.1.1, 16.2, 16.3):** use the program link or deeplink exactly as the Hub gives it. Never edit it, add parameters, or send it through a redirect or intermediate page. The site renders the stored URL as it is; keep it that way.
+- **Prices (11.3, 16.15.4):** do not show Vrbo or Expedia prices beside prices that are not on the same tax and fee basis. The site shows no Vrbo or Expedia prices. Keep it that way.
+- **Coupons (11.4):** show only codes Expedia gives you. The site shows none.
+- **Trademarks (12.3, 12.4, 12.6, 12.7, 11.9):** no Expedia Marks in domain names or meta tags, and no bidding on their brand names in paid search. The domain has none. Meta descriptions on the live pages avoid brand names, except the Airbnb vs Vrbo guide's title: see the open question in the Log.
+- **Publicity and commission information (17.1, 20.4, 20.5):** no public announcement about the program without written approval, and commission information is confidential. Do not put Expedia commission figures in a public listing, a pitch, or a page. Share them with a buyer only after checking the wording with Expedia.
+- **Termination (19.1, 19.2.4, 12.5, 16.19):** either side can end it on 30 days' written notice, and links, marks and Travel Content must then be removed promptly. This is why the account does not transfer in a sale.
+
+### Removing Expedia links (selling the site, or termination)
+
+1. Open the Affiliate links list in Pages CMS (`content/affiliates.yml`) and delete the Vrbo or Expedia entries, or switch them off. With no approved entry, the booking button disappears and product buttons fall back to the maker's page. No code change is needed.
+2. Search the articles for `aff:vrbo` and similar inline links and remove them. Inline affiliate links only render when the entry is approved, so step 1 already stops them showing.
+3. Remove any Expedia or Vrbo marks the program provided (banners, widgets) if any were added.
+4. The buyer applies for their own account and adds their own links.

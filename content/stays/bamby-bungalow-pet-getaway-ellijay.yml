@@ -16,7 +16,7 @@ beds:
 maxDogs: 2
 weightLimitLbs: null
 largeDogsOk: not-confirmed
-fencedYard: partial
+fencedYard: not-confirmed
 fenceNotes: The title says "Fenced in yard" and a photo caption mentions a gated deck for pets; the page gives no fence size or height and does not say the whole yard is enclosed.
 privateOutdoor: not-confirmed
 petFee: not-confirmed

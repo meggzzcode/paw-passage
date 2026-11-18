@@ -15,10 +15,10 @@ beds:
 maxDogs: 4
 weightLimitLbs: 999
 largeDogsOk: 'yes'
-fencedYard: full
+fencedYard: partial
 fenceNotes: The listing title says "Fenced Yard" and a photo caption says dog friendly with a fenced yard; fence size, height and material are not stated.
 privateOutdoor: 'yes'
-petFee: none
+petFee: not-confirmed
 breedRestrictions: not-confirmed
 houseRules:
 - 'Pets: "limit 4 total" dogs, maximum weight "999 lbs per pet" (Vrbo listing).'

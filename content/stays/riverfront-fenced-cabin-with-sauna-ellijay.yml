@@ -14,7 +14,7 @@ beds:
 maxDogs: 4
 weightLimitLbs: null
 largeDogsOk: not-confirmed
-fencedYard: partial
+fencedYard: not-confirmed
 fenceNotes: The listing title says "Fenced"; the page gives no fence size, height or material, so we do not say the yard is fully enclosed.
 privateOutdoor: not-confirmed
 petFee: not-confirmed

@@ -21,3 +21,5 @@ Not stated by the pages: pet fee, fence status (reviews only, noted as guest opi
 
 ## Checks
 Temporary indexability test (deleted): all three indexable, no missing items. tsc and full vitest results below.
+
+tsc: only errors are in other workers' temporary src/test/zz-tmp-*.test.ts files (none from this town's files). Full vitest: 4 failures and several timeouts, caused by other workers' concurrent files (for example the Mendocino farmhouse stay failing the meta-brands check, Ellijay in the sitemap); none name this town's three stays.

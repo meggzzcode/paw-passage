@@ -9,7 +9,7 @@ status: published
 author: Paws & Passage Editors
 publishedOn: 2026-11-18
 lastReviewed: 2026-11-18
-readingMinutes: 12
+readingMinutes: 11
 heroImage: guide-pet-fees
 faqs:
   - q: How long does a host have to charge me for pet damage after checkout?
@@ -186,25 +186,21 @@ approvedBy: Paws & Passage Editors
 approvedOn: 2026-11-18
 ---
 
-You pulled out of the driveway on Sunday, the dog asleep in the back seat, and two weeks later an email says the host wants money for "pet damage." Or a Resolution Center request lands with a clock on it, or Vrbo has charged your card. Before you pay or reply, find out which clock you are on and what the platform's own pages say.
+You pulled out of the driveway, the dog asleep in the back seat, and two weeks later the host wants money for "pet damage." Maybe a Resolution Center request landed with a clock on it, or Vrbo charged your card. Before you pay or reply, find out which clock you are on.
 
-This is general information from the help pages we read; rules vary by place, platform and host, and it is not legal advice. If an **Airbnb pet damage charge after checkout** is on your screen right now, start with the table below.
+This is general information from the help pages we read, not legal advice. If an **Airbnb pet damage charge after checkout** is on your screen now, start with the table below.
 
-We label how sure we are. **Confirmed** means a platform or manager page we read says it, with a citation. **What most people report** means a pattern across at least three of the 22 forum, news and advocacy items we found (a few seen only as search snippets), which is a small, non-random sample and never a rule. **Unknown** means nothing we read settles it, and we say what to ask.
+We label how sure we are. **Confirmed** means a platform or manager page says it, with a citation. **What most people report** means a pattern across at least three of the 22 forum, news and advocacy items we found (a few seen only as search snippets): a small sample, never a rule. **Unknown** means nothing we read settles it, and we say what to ask.
 
 ## The short answer
 
-- Airbnb's pages give three different clocks: guests have 24 hours to respond to a damage request [[1]](https://www.airbnb.com/help/article/1415), hosts must file damage claims within 14 days of checkout [[6]](https://www.airbnb.com/d/guarantee), and guests have 60 days to appeal after being charged [[1]](https://www.airbnb.com/help/article/1415).
-- On Vrbo, the host has 14 days after your stay to submit a claim, and your card is charged only if they do. [[9]](https://help.vrbo.com/articles/What-happens-if-my-card-on-file-is-charged-for-property-damage)
-- You are not forced to accept the number. On Airbnb you can pay in full, pay a different amount or decline. [[2]](https://www.airbnb.com/help/article/3591)
-- A pet fee is meant for expected costs, not unexpected damage. [[6]](https://www.airbnb.com/d/guarantee) Where hair, odor and stains fall between those is not defined in anything we read.
-- A pet you did not declare is a different problem from damage, and managers price it separately. [[12]](https://www.surforsound.com/vacation-planning/rental-policies/)
+- Airbnb has three clocks: 24 hours for you to respond [[1]](https://www.airbnb.com/help/article/1415), 14 days from checkout for hosts to file damage claims [[6]](https://www.airbnb.com/d/guarantee), and 60 days to appeal after being charged [[1]](https://www.airbnb.com/help/article/1415).
+- On Vrbo, the host has 14 days after your stay, and your card is charged only if they file. [[9]](https://help.vrbo.com/articles/What-happens-if-my-card-on-file-is-charged-for-property-damage)
+- You need not accept the number: on Airbnb, pay in full, pay a different amount or decline. [[2]](https://www.airbnb.com/help/article/3591) A pet fee is for expected costs, not unexpected damage [[6]](https://www.airbnb.com/d/guarantee), and an undeclared pet is priced separately. [[12]](https://www.surforsound.com/vacation-planning/rental-policies/)
 
 ## How long does a host have to charge you for pet damage after checkout?
 
-On Airbnb, the help pages we read say damage-related claims must be filed within 14 days of checkout, while other Resolution Center requests have a 60-day window. On Vrbo, the host has 14 days after your stay. We could not confirm how strictly either platform enforces these limits.
-
-Airbnb never puts its numbers in one place, so here they are together.
+Both platforms' pages say 14 days, while other Airbnb Resolution Center requests have a 60-day window. We could not confirm how strictly either is enforced.
 
 ### The three clocks, as of 2026-11-18
 
@@ -214,29 +210,29 @@ Airbnb never puts its numbers in one place, so here they are together.
 | Host claim window | 14 days from checkout for damage [[6]](https://www.airbnb.com/d/guarantee), [[2]](https://www.airbnb.com/help/article/3591) | 14 days after the stay [[9]](https://help.vrbo.com/articles/What-happens-if-my-card-on-file-is-charged-for-property-damage), [[10]](https://help.vrbo.com/articles/How-do-I-file-a-damage-deposit-claim) | Involve Airbnb Support "within 30 days" of the damage (Hometime) [[19]](https://www.hometime.io/blog/how-to-file-a-damage-claim-with-airbnb) |
 | Appeal window | 60 days after you are charged [[1]](https://www.airbnb.com/help/article/1415) | Contact Us dispute; no deadline on the page we read [[9]](https://help.vrbo.com/articles/What-happens-if-my-card-on-file-is-charged-for-property-damage) | Often not mentioned |
 
-Policies change, so check the live pages. The 60 days is easy to mix up: Airbnb's Resolution Center page also says new requests can be submitted up to 60 days after a completed reservation, with damage claims being the exception at 14 days. [[2]](https://www.airbnb.com/help/article/3591) A 2018 guest account also gives time limits that differ from Airbnb's current pages. [[20]](https://www.thebudgetsavvytravelers.com/how-to-win-dispute-airbnb-resolution-center/)
+The 60 days is easy to mix up: Airbnb's Resolution Center page says new requests can be submitted up to 60 days after a completed reservation, damage claims excepted at 14 days. [[2]](https://www.airbnb.com/help/article/3591) A 2018 guest account gives time limits that differ from Airbnb's current pages. [[20]](https://www.thebudgetsavvytravelers.com/how-to-win-dispute-airbnb-resolution-center/)
 
-If a host's request is unanswered, Airbnb says it can be cancelled and resent within 60 days of checkout. [[3]](https://www.airbnb.com/help/article/4291) That is one reason a late request is worth questioning.
+Airbnb says an unanswered host request can be cancelled and resent within 60 days of checkout, so a late request is worth questioning. [[3]](https://www.airbnb.com/help/article/4291)
 
 ## What happens in the 24 hours after a host sends a request?
 
-Airbnb's pages say you have 24 hours to respond before Airbnb steps in. You can pay the full amount, pay a different amount, or decline. If you pay part, decline or do not respond, the host may involve Airbnb or its insurer as a next step. [[1]](https://www.airbnb.com/help/article/1415)
+You have 24 hours to respond before Airbnb steps in: pay in full, pay a different amount, or decline. If you pay part, decline or stay silent, the host may involve Airbnb or its insurer. [[1]](https://www.airbnb.com/help/article/1415)
 
-Airbnb also says guests are expected to pay reasonable reimbursement requests for damage, missing items or extra cleaning. [[4]](https://www.airbnb.com/help/article/2894) The page we read does not define "reasonable."
+Airbnb also says guests are expected to pay reasonable requests for damage, missing items or extra cleaning. [[4]](https://www.airbnb.com/help/article/2894) It does not define "reasonable."
 
-A reply inside the window, even a short one asking for details, is better than silence. Silence leaves the host free to escalate, and the payment method can be charged if no timely payment or appeal is made. [[1]](https://www.airbnb.com/help/article/1415)
+Reply inside the window, even just to ask for details: the payment method can be charged if no timely payment or appeal is made. [[1]](https://www.airbnb.com/help/article/1415)
 
 ## Can you appeal after you are charged?
 
-Airbnb says you have 60 days to appeal after you have been charged. [[1]](https://www.airbnb.com/help/article/1415) We could not confirm how often appeals recover money, and we found no page that says what an appeal should include. Keep your photos, the itemized claim and your messages together so you can attach them.
+Airbnb says you have 60 days to appeal after being charged. [[1]](https://www.airbnb.com/help/article/1415) We could not confirm how often appeals recover money or what one should include, so keep your photos, claim and messages together.
 
 ## I paid a pet fee. Can they still charge for dog hair?
 
-Airbnb says cleaning and pet fees are meant to cover expected costs, and that its host protection covers unexpected damage. [[6]](https://www.airbnb.com/d/guarantee), [[7]](https://www.airbnb.com/resources/hosting-homes/a/what-you-need-to-know-about-hosting-pets-463) Its host page also lists extra cleaning to remove stains from pet accidents among reimbursable costs. [[6]](https://www.airbnb.com/d/guarantee)
+Airbnb says cleaning and pet fees cover expected costs, and its host protection covers unexpected damage. [[6]](https://www.airbnb.com/d/guarantee), [[7]](https://www.airbnb.com/resources/hosting-homes/a/what-you-need-to-know-about-hosting-pets-463) Its host page lists pet-accident stain cleaning as reimbursable. [[6]](https://www.airbnb.com/d/guarantee)
 
-So the argument is about "expected": a normal amount of hair is arguably what the fee is for, while a chewed couch is not. The gap is real. Nothing we read defines hair, odor or stains, and hosts disagree. In one forum thread, guests had paid dog fees and the host waived under-$100 extra cleaning after the guests did not offer to pay, and a commenter said a fee likely blocks a cleaning claim but not drywall damage; that is one thread, not a rule. [[17]](https://www.biggerpockets.com/forums/530/topics/1253487-anyone-successfully-use-vrbo-damage-protection-for-extra-cleaning-sub-200) Our [pet fees guide](/guides/how-vacation-rental-pet-fees-work) covers how fees are structured.
+So the argument is about "expected": normal hair is arguably what the fee is for, a chewed couch is not. Nothing we read defines hair, odor or stains. In one forum thread, guests had paid dog fees and the host waived under-$100 extra cleaning after they did not offer to pay; a commenter said a fee likely blocks a cleaning claim but not drywall damage. One thread, not a rule. [[17]](https://www.biggerpockets.com/forums/530/topics/1253487-anyone-successfully-use-vrbo-damage-protection-for-extra-cleaning-sub-200) See our [pet fees guide](/guides/how-vacation-rental-pet-fees-work) for how fees are structured.
 
-**Unknown (hosts disagree).** In the two threads we read on this, hosts disagreed: some treat the fee as payment for extra cleaning, while one said paying it does not give a pet free rein, and a host in a third thread said Airbnb treated pet urine as cleaning, not damage. We found no majority, so treat this as unknown and ask the host in writing what the fee covers before you book.
+**Unknown (hosts disagree).** In the two threads we read, some hosts treat the fee as payment for extra cleaning, one said it does not give a pet free rein, and a host in a third thread said Airbnb treated pet urine as cleaning, not damage. We found no majority.
 
 **Check for yourself:** message the host or property manager before booking (script below) and save their written answer with your booking.
 
@@ -251,7 +247,7 @@ So the argument is about "expected": a normal amount of hair is arguably what th
 
 ## Did you really hide your dog? The undisclosed-pet trap
 
-Some managers charge a flat penalty for an undeclared dog, on top of any damage. These are samples from four managers' own pages, as of 2026-11-18. Policies change, and this is a sample, not a survey.
+Some managers charge a flat penalty for an undeclared dog, on top of damage. Samples from four managers' own pages, as of 2026-11-18, not a survey.
 
 | Manager | Undeclared or unauthorized pet | Source |
 | --- | --- | --- |
@@ -260,41 +256,41 @@ Some managers charge a flat penalty for an undeclared dog, on top of any damage.
 | My Vacation Haven (Miramar Beach, FL) | Evidence of pets can mean carpet, odor and flea charges; amounts not listed | [[13]](https://www.myvacationhaven.com/pet-policy) |
 | Twiddy (Outer Banks) | Pets only in pet-friendly homes; a violation can end the tenancy | [[14]](https://www.twiddy.com/outer-banks/guests/pets/) |
 
-Surf or Sound also says a breach can mean eviction and forfeiture. [[12]](https://www.surforsound.com/vacation-planning/rental-policies/) Whether an Airbnb host can charge an undeclared-pet fee that was not in the listing is unknown from Airbnb's pages.
+Surf or Sound adds that a breach can mean eviction and forfeiture. [[12]](https://www.surforsound.com/vacation-planning/rental-policies/) Whether an Airbnb host can charge an undeclared-pet fee not in the listing is unknown.
 
-**What most people say.** In 5 of the 22 items (two of them seen only as search snippets), disclosure and house-rule wording decided how a dispute went, so keep the listing's pet wording and tell the host about your dog before you book. Whether a disclosed and approved pet changes what Airbnb pays a host is also unconfirmed.
+**What most people say.** In 5 of the 22 items (two seen only as search snippets), disclosure and house-rule wording decided how a dispute went, so keep the listing's pet wording and tell the host about your dog before you book. Whether an approved pet changes what Airbnb pays a host is unconfirmed.
 
 **Check for yourself:** ask the host or manager, "Is there a separate fee if a pet is not declared, and where is it written?" Save the answer.
 
 ## How does Vrbo differ?
 
-Vrbo's pages say you are charged only if the host submits a claim, there is no pre-authorization hold, and the host has 14 days after your stay. To dispute, select Contact Us; Vrbo asks both sides for documentation. [[9]](https://help.vrbo.com/articles/What-happens-if-my-card-on-file-is-charged-for-property-damage)
+Vrbo's pages say there is no pre-authorization hold, you are charged only if the host submits a claim, and the host has 14 days after your stay. To dispute, select Contact Us; Vrbo asks both sides for documentation. [[9]](https://help.vrbo.com/articles/What-happens-if-my-card-on-file-is-charged-for-property-damage)
 
-Vrbo's host page recommends the host contact you before filing, to share photos or evidence. [[10]](https://help.vrbo.com/articles/How-do-I-file-a-damage-deposit-claim) The pages we read give no timeline for resolving a dispute. For a wider comparison, see [Airbnb vs Vrbo with a dog](/guides/airbnb-vs-vrbo-with-a-dog).
+Vrbo's host page recommends the host contact you before filing, to share evidence. [[10]](https://help.vrbo.com/articles/How-do-I-file-a-damage-deposit-claim) The pages give no dispute timeline. For more, see [Airbnb vs Vrbo with a dog](/guides/airbnb-vs-vrbo-with-a-dog).
 
 ## What evidence helps? A check-in and checkout list
 
-Vrbo says it asks both sides for documentation. [[9]](https://help.vrbo.com/articles/What-happens-if-my-card-on-file-is-charged-for-property-damage) In one 2026 news report, a guest with two large dogs and a $300 pet fee was asked for $90.47 about two weeks after checkout and argued that the host's photos showed items before washing; no outcome was reported. [[16]](https://www.thecooldown.com/?p=815147) That is an anecdote, but it shows why per-item, dated photos matter. Evidence cannot be created after the request arrives, so build it during the stay.
+Vrbo asks both sides for documentation [[9]](https://help.vrbo.com/articles/What-happens-if-my-card-on-file-is-charged-for-property-damage), and evidence cannot be created after the request arrives. In one 2026 news report, a guest with two large dogs and a $300 pet fee was asked for $90.47 about two weeks after checkout and argued the host's photos showed items before washing; no outcome was reported. [[16]](https://www.thecooldown.com/?p=815147) An anecdote, but it shows why per-item, dated photos matter.
 
-**What most people say.** In 5 of the 22 items, the argument turned on evidence: photos taken before washing, no host photos, a price link, or contractor bids. Hosts and guests in those threads advised dated photos and itemized costs. That is advice from a small sample, not proof that it wins a dispute.
+**What most people say.** In 5 of the 22 items, the argument turned on evidence: photos taken before washing, no host photos, a price link, or contractor bids. Those threads advised dated photos and itemized costs; a small sample, not proof it wins.
 
 **Check for yourself:** ask the host at booking whether they keep move-in photos and will share them if a claim arises, and save the reply.
 
-- [ ] On arrival, date-stamped photos or video of floors, furniture, bedding, screens and fences, close-ups of any flaws.
-- [ ] Save the listing page, house rules and pet terms as they read when you booked.
+- [ ] On arrival, dated photos or video of floors, furniture, bedding, screens and fences, plus close-ups of flaws.
+- [ ] Save the listing, house rules and pet terms as they read when you booked.
 - [ ] Keep every message with the host on the platform.
-- [ ] At checkout, photos or video of each room, showing the dog's areas and the yard.
-- [ ] Note what you did to leave it clean (towels, vacuuming, bedding handled as the rules say).
+- [ ] At checkout, photos or video of each room, the dog's areas and the yard.
+- [ ] Note how you left it clean (towels, vacuuming, bedding as the rules say).
 - [ ] Save your receipt for the pet fee.
-- [ ] If you get a claim, ask for the itemized amount, dated photos per item, and a receipt or quote.
+- [ ] If you get a claim, ask for the itemized amount, dated photos per item and a receipt or quote.
 
 ## What should you write back?
 
-Keep replies short, polite and specific. Send them through the platform's messaging or Resolution Center, not by phone or text. Replace the brackets.
+Keep replies short and polite, send them through the platform, and replace the brackets.
 
 **Ask for detail first:**
 
-> Thanks for the request. Please send an itemized breakdown, dated photos of each item, and a receipt or quote. I paid a pet fee of $[amount], which Airbnb's guidance says is meant to cover expected costs.
+> Thanks for the request. Please send an itemized breakdown, dated photos of each item, and a receipt or quote. I paid a pet fee of $[amount], which Airbnb says covers expected costs.
 
 **Pay part:**
 
@@ -304,35 +300,35 @@ Keep replies short, polite and specific. Send them through the platform's messag
 
 > I am declining this request. The listing allowed pets, I paid the pet fee, and I left the home as I found it. My checkout photos from [date and time] are attached.
 
-Only send the decline if it is true. If your dog did cause damage, the partial script is more honest and probably more credible. We found no evidence that any script wins disputes; they are drafts to keep you organized.
+Send the decline only if it is true; if your dog did cause damage, the partial script is more honest. No evidence says any script wins disputes; they are drafts.
 
 ## How big are these claims, and do people just pay?
 
-In 6 of the 22 items, the amount was roughly $100 or less (examples: $64, $90.47, a $100 rug). Hosts and guests in these threads often described small amounts, but these are the amounts people chose to post about, not statistics. In one forum case a host waived under-$100 extra cleaning after the guests did not offer to pay. [[17]](https://www.biggerpockets.com/forums/530/topics/1253487-anyone-successfully-use-vrbo-damage-protection-for-extra-cleaning-sub-200) The platforms' pages say nothing about whether to pay small amounts.
+In 6 of the 22 items, the amount was roughly $100 or less (examples: $64, $90.47, a $100 rug), amounts people chose to post, not statistics. In one forum case a host waived under-$100 extra cleaning after the guests did not offer to pay. [[17]](https://www.biggerpockets.com/forums/530/topics/1253487-anyone-successfully-use-vrbo-damage-protection-for-extra-cleaning-sub-200) The platforms' pages are silent on small amounts.
 
 **Check for yourself:** ask the platform's support, in writing, "If I pay a different amount, does that close the request?" and save the reply.
 
 ## Should you file a chargeback?
 
-Treat it as a last resort. A card-privacy company's guide says that once you file, Airbnb can no longer resolve the issue directly, that the bank investigation may take up to 90 days, and that it does not guarantee a positive outcome. [[11]](https://privacy.com/blog/airbnb-chargeback)
+Treat it as a last resort. A card-privacy company's guide says once you file, Airbnb can no longer resolve the issue directly, the bank investigation may take up to 90 days, and a positive outcome is not guaranteed. [[11]](https://privacy.com/blog/airbnb-chargeback)
 
-In one 2024 Vrbo case, a bank repeatedly denied a chargeback before crediting after an advocate stepped in. [[21]](https://elliott.org/advocacy/such-a-bizarre-rental-experience-on-vrbo-but-do-they-even-care/) In a 2018 Airbnb case, a chargeback failed, and the page says the guest had not followed Airbnb's dispute steps first. [[22]](https://elliott.org/case-dismissed-2/this-airbnb-complaint-has-a-big-problem/) These are anecdotes. We did not read your card issuer's rules or any official consumer-finance page, so ask your issuer what it requires.
+In one 2024 Vrbo case, a bank repeatedly denied a chargeback before crediting after an advocate stepped in. [[21]](https://elliott.org/advocacy/such-a-bizarre-rental-experience-on-vrbo-but-do-they-even-care/) In a 2018 Airbnb case, a chargeback failed; the page says the guest had not followed Airbnb's dispute steps first. [[22]](https://elliott.org/case-dismissed-2/this-airbnb-complaint-has-a-big-problem/) These are anecdotes; we did not read your card issuer's rules, so ask it what it requires.
 
 **Check for yourself:** call your card issuer and ask, "What do I need to do before filing a dispute for a rental charge, and what is the deadline?" Write down the date, name and answer.
 
 ## What if the dog is a service animal?
 
-Airbnb's ground rules say service animals, and in some locations emotional support animals, are not treated as pets. [[4]](https://www.airbnb.com/help/article/2894) Airbnb's pet-fee page says service animals stay free. [[8]](https://www.airbnb.com/help/article/3623) The same page says that if a service animal damages property, the host can still request payment under AirCover. [[8]](https://www.airbnb.com/help/article/3623) We did not confirm how Support treats emotional support animals, so ask the platform.
+Airbnb's ground rules say service animals, and in some locations emotional support animals, are not pets. [[4]](https://www.airbnb.com/help/article/2894) Airbnb's pet-fee page says service animals stay free, but if one damages property, the host can still request payment under AirCover. [[8]](https://www.airbnb.com/help/article/3623) We did not confirm how Support treats emotional support animals.
 
 **Check for yourself:** message Airbnb or Vrbo support, "My animal is a service animal. How are pet fees and damage claims handled?" and save the reply.
 
 ## What we could not confirm, and what to ask
 
-Each row is something to be mindful of, not a dead end. Save every written answer with your booking.
+Save every written answer.
 
 | Open point | What most people do (small sample) | Check for yourself |
 | --- | --- | --- |
-| Whether Airbnb enforces the 14-day damage window strictly | No clear pattern in what we read | Ask Airbnb support: "A host asked for damage money [number] days after checkout. Is that still allowed?" |
+| Whether Airbnb enforces the 14-day damage window strictly | No clear pattern | Ask Airbnb support: "A host asked for damage money [number] days after checkout. Is that still allowed?" |
 | Whether guest appeals recover money | No clear pattern | Ask Airbnb support what an appeal should include |
 | Where expected pet cleaning ends and extra cleaning begins | Hosts split | Ask the host: "Does the pet fee cover normal dog hair?" |
 | Whether a disclosed, approved pet changes a host's claim | No clear pattern; one host said Airbnb denied a claim because the pet was authorized | Ask the host and Airbnb support |
@@ -347,12 +343,12 @@ Each row is something to be mindful of, not a dead end. Save every written answe
 
 ## Before you respond, checklist
 
-- [ ] Find the date of checkout and the date of the request. Compare to 14 days.
-- [ ] Note the clock: 24 hours to respond on Airbnb, 60 days to appeal.
+- [ ] Compare the checkout date and the request date to 14 days.
+- [ ] Note the clocks: 24 hours to respond on Airbnb, 60 days to appeal.
 - [ ] Reply inside the window, even to ask for details.
-- [ ] Gather your arrival and checkout photos.
-- [ ] Check your pet fee and what the listing said about pets.
-- [ ] Decide: pay, pay part or decline, and use the matching script.
+- [ ] Gather arrival and checkout photos.
+- [ ] Check your pet fee and the listing's pet wording.
+- [ ] Decide: pay, pay part or decline, using the matching script.
 - [ ] Keep everything on the platform.
 
-Before your next trip, run the [pet cost check](/tools/pet-cost-check) and add photo steps to the [trip checklist](/tools/checklist) or our [rental checklist](/guides/pet-friendly-vacation-rental-checklist). If you leave the dog in the rental, see [leaving a dog alone](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental).
+Next trip, run the [pet cost check](/tools/pet-cost-check) and add photo steps to the [trip checklist](/tools/checklist) or our [rental checklist](/guides/pet-friendly-vacation-rental-checklist). If you leave the dog in the rental, see [leaving a dog alone](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental).

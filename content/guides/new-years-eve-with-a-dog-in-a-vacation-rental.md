@@ -9,7 +9,7 @@ status: published
 author: Paws & Passage Editors
 publishedOn: 2026-11-18
 lastReviewed: 2026-11-18
-readingMinutes: 12
+readingMinutes: 10
 heroImage: guide-cabin-packing
 faqs:
   - q: Is a "firework-free" rental really free of fireworks?
@@ -182,44 +182,36 @@ approvedBy: Paws & Passage Editors
 approvedOn: 2026-11-18
 ---
 
-You booked a cabin for the last week of December, and then you remembered that someone, somewhere nearby, is going to set off fireworks at midnight. Your dog does not know the doors, the yard or the roads here, and neither of you can call the neighbors. This guide is checked for the 2026 holiday season (as of 2026-11-18), and it is built around what you can actually do before you book and on the night.
+You booked a cabin for the last week of December, then remembered that someone nearby will set off fireworks at midnight. Your dog does not know the doors, the yard or the roads. This guide is checked for the 2026 holiday season (as of 2026-11-18) and covers what to do before you book and on the night.
 
 ## The short answer
 
-- A "firework-free" label may only cover the property's own grounds. One owner's account describes fireworks on arrival, the night before New Year's Eve and at midnight at a park advertised that way. [[1]](https://www.petbook-magazine.com/dogs/dog-owner-how-we-were-misled-by-a-firework-free-vacation-park) Ask how far the nearest homes are.
-- For a noise-afraid dog, a 2023 evidence review calls food or play during noise one of the most effective training methods. It describes a safe space and masking sound as short-term measures and "important (but not sufficient)". [[2]](https://pmc.ncbi.nlm.nih.gov/articles/PMC10705068/)
-- Ask your vet early if your dog is severely afraid. Cornell advises trying any prescribed medication first on a day without noise. [[4]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/fear-fireworks-and-thunderstorms) We give no drug names or doses.
-- Make ID current before you leave: Cornell says ID collar and microchip information should be current. [[4]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/fear-fireworks-and-thunderstorms) In the recoveries we read, a phone number or a chip reached the owner. [[15]](https://www.kpcw.org/park-city/2024-01-02/park-city-community-helps-reunite-lost-golden-retriever-with-owners) [[17]](https://www.upworthy.com/christmas-miracle-family-reunited-with-their-dog-found-60-miles-away)
-- Keep the dog on a leash outside, even in a fenced yard. [[4]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/fear-fireworks-and-thunderstorms)
-
-This is general information; rules vary by place and host.
+- A "firework-free" label may only cover the property's own grounds. [[1]](https://www.petbook-magazine.com/dogs/dog-owner-how-we-were-misled-by-a-firework-free-vacation-park) Ask how far the nearest homes are.
+- A 2023 evidence review calls food or play during noise one of the most effective training methods. [[2]](https://pmc.ncbi.nlm.nih.gov/articles/PMC10705068/)
+- Ask your vet early if your dog is severely afraid; we give no drug names or doses.
 
 ## Is a "firework-free" rental really firework-free?
 
-Not necessarily. A host can usually only set rules for guests and the grounds they control. In one first-person account, a Dutch park advertised as firework-free had fireworks on arrival, the night before New Year's Eve and at midnight; reception said it had no control over what happens outside the park. [[1]](https://www.petbook-magazine.com/dogs/dog-owner-how-we-were-misled-by-a-firework-free-vacation-park) That is one case, not a statistic.
-
-Hosts say much the same. In a host forum thread, hosts discussing a neighbor's noise complaint after guests set off fireworks suggested banning fireworks in house rules and giving neighbors a contact number. [[13]](https://airhostsforum.com/t/neighbor-complaining-about-noise-level-do-we-have-any-right-on-this-subject/28894?page=2) Treat that as an anecdote about how some hosts think, not a rule.
-
-The account's own advice was to ask how far the nearest homes are, zoom out on the map, and ask in online groups. [[1]](https://www.petbook-magazine.com/dogs/dog-owner-how-we-were-misled-by-a-firework-free-vacation-park) Fireworks can also start before the date. In that account they began on arrival and the night before. We could not read any national figure for how common they are near a remote cabin, and local law varies.
+Not necessarily. A host can usually only set rules for guests and their own grounds. In one first-person account, a Dutch park advertised as firework-free had fireworks on arrival, the night before New Year's Eve and at midnight; reception could not control what happens outside. [[1]](https://www.petbook-magazine.com/dogs/dog-owner-how-we-were-misled-by-a-firework-free-vacation-park) That is one case, not a statistic. In a host forum thread on a neighbor's complaint about guests' fireworks, hosts suggested a house-rule ban and a neighbor contact number. [[13]](https://airhostsforum.com/t/neighbor-complaining-about-noise-level-do-we-have-any-right-on-this-subject/28894?page=2) That is an anecdote, not a rule. The first account also advised zooming out on the map and asking in online groups. [[1]](https://www.petbook-magazine.com/dogs/dog-owner-how-we-were-misled-by-a-firework-free-vacation-park) We could not find a national figure for how common fireworks are near a remote cabin.
 
 ### Questions to ask the host or manager
 
-- [ ] How far are the nearest homes in each direction, and is the property in a town, a subdivision or on its own land?
-- [ ] Does "firework-free" apply to the grounds only, or to the surrounding area? Who enforces it?
-- [ ] Have previous guests reported fireworks around New Year's Eve at this address?
-- [ ] What is the fireworks rule for guests, and what happens if it is broken?
-- [ ] Is the yard fully enclosed, and are there gates or doors that open directly outside?
-- [ ] Are there holiday minimum stays, and what are the cancellation terms for the dates?
+- [ ] How far are the nearest homes, and is the property in a town, a subdivision or on its own land?
+- [ ] Does "firework-free" cover the grounds only, or the area around? Who enforces it?
+- [ ] Have guests reported fireworks around New Year's Eve here?
+- [ ] What is the guest fireworks rule, and what happens if it is broken?
+- [ ] Is the yard fully enclosed, and which gates or doors open directly outside?
+- [ ] Are there holiday minimum stays, and what are the cancellation terms?
 
-Copy and paste, then fill in the brackets:
+Copy, paste and fill in the brackets:
 
-"We are booking [dates] with [number] dog(s), about [weight] lb. Our dog gets anxious around fireworks. Could you tell us how far the nearest homes are, whether you have had fireworks reported around New Year's Eve at this address, and what your fireworks rule says? Please also confirm the full pet total for these dates, which doors and gates open directly outside, the local fireworks rule on December 31, and any minimum stay or cancellation terms. Please reply in writing so we can keep it with our booking. Thank you."
+"We are booking [dates] with [number] dog(s), about [weight] lb. Our dog gets anxious around fireworks. How far are the nearest homes, have fireworks been reported around New Year's Eve here, and what does your fireworks rule say? Please also confirm the full pet total for these dates, which doors and gates open directly outside, the local fireworks rule on December 31, and any minimum stay or cancellation terms. Please reply in writing. Thank you."
 
 ## What do hosts and local rules say about fireworks?
 
-A host's fireworks rule applies to guests; it does not stop neighbors. Local law varies by county and city, and we have not read the rules for any specific cabin town. One search result said fireworks may not be discharged in Gatlinburg city limits, but we could not open the code section, so we do not state it as fact.
+A host's rule applies to guests, not neighbors. Local law varies by county and city, and we have not read any cabin town's rules. One search result said fireworks may not be discharged in Gatlinburg city limits, but we could not open the code, so we do not state it as fact.
 
-The sample below shows how a few managers word things. It is a sample, not a survey, and policies change.
+The sample below is not a survey, and policies change.
 
 | Manager | Dogs and fees (as found) | Fireworks and holiday wording | Source |
 | --- | --- | --- | --- |
@@ -228,91 +220,85 @@ The sample below shows how a few managers word things. It is a sample, not a sur
 | Twiddy (Outer Banks, NC) | 2 pets unless advertised otherwise; no additional fee on the page; no pets in pools or hot tubs | No fireworks text on the page | [[10]](https://www.twiddy.com/outer-banks/guests/pets/) |
 | Vacasa (many places) | "a small fee per dog, per night", amount not listed; varies by home | No fireworks text on the page | [[11]](https://www.vacasa.com/pet-friendly-vacation-rentals) |
 
-Table as of 2026-11-18. Fees vary by home, and we did not find any holiday pet-fee surcharge text on these pages; a rise at peak dates is not confirmed either way. Use the [pet cost check](/tools/pet-cost-check) and our [pet fees guide](/guides/how-vacation-rental-pet-fees-work) to get the full total for your dates.
+Table as of 2026-11-18. Fees vary by home; we found no holiday pet-fee surcharge text on these pages, and a rise at peak dates is unconfirmed. For the full total, use the [pet cost check](/tools/pet-cost-check) and our [pet fees guide](/guides/how-vacation-rental-pet-fees-work).
 
-One more booking note: Airbnb announced on December 18, 2023 that for New Year's Eve it would block certain one- to three-night entire-home bookings flagged as higher risk for a party, in listed countries including the US, and that guests who can book must attest they understand its party ban. [[12]](https://news.airbnb.com/airbnb-using-ai-to-help-clampdown-on-new-years-eve-parties-globally/) That was the announcement for New Year's Eve 2023, and we did not find a newer one. We could not confirm how it affects a particular cabin search this year, so if you want a short stay, check the checkout screen early.
+Airbnb announced on December 18, 2023 that for New Year's Eve it would block certain one- to three-night entire-home bookings flagged as higher risk for a party, in listed countries including the US, and that guests who can book must attest they understand its party ban. [[12]](https://news.airbnb.com/airbnb-using-ai-to-help-clampdown-on-new-years-eve-parties-globally/) That was the announcement for New Year's Eve 2023, and we found no newer one; for a short stay, check checkout early.
 
 ## How do I keep my dog from bolting in a place it does not know?
 
-Treat doors, gates and the yard as the weak points, and keep the dog on a leash outside. Cornell advises a leash even in a fenced yard, and a familiar room far from the noise with few or no windows. [[4]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/fear-fireworks-and-thunderstorms) Use a crate only if the dog is already comfortable in one.
+Cornell advises a leash even in a fenced yard, and a familiar room far from the noise with few windows. [[4]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/fear-fireworks-and-thunderstorms) Use a crate only if the dog is used to one.
 
-In the cases we read, escapes started at a door, a fence, or a moment when the dog was outside or with someone who could not give chase:
+Escapes we read about:
 
-- A lab left a ski house in Killington, Vermont on New Year's Eve after fireworks. [[14]](https://www.mountaintimes.info/killington-community-helps-visitor-search-for-lost-dog/)
-- A young Golden Retriever bolted from a relative who could not run after neighbors' fireworks and was found after two days. [[15]](https://www.kpcw.org/park-city/2024-01-02/park-city-community-helps-reunite-lost-golden-retriever-with-owners)
+- A lab left a Killington, Vermont ski house on New Year's Eve after fireworks. [[14]](https://www.mountaintimes.info/killington-community-helps-visitor-search-for-lost-dog/)
+- A young Golden Retriever bolted from a relative who could not run, after neighbors' fireworks, and was found after two days. [[15]](https://www.kpcw.org/park-city/2024-01-02/park-city-community-helps-reunite-lost-golden-retriever-with-owners)
 - A dog climbed an 8-foot fence around July 4, believed spooked by fireworks, and was found months later about 60 miles away. [[17]](https://www.upworthy.com/christmas-miracle-family-reunited-with-their-dog-found-60-miles-away)
 
-**What most people report (level 2, small sample).** We read 8 news, first-person and advice items about dogs and fireworks. In 3 of them (Park City, the 8-foot fence case, and Patch's warning about doors), the escape or the warning involved a fence, a door, or a dog outside with someone who could not give chase. That is a small, non-random sample, not a rule, but it is why this section puts doors and leashes first.
+**What most people report (level 2, small sample).** We read 8 news, first-person and advice items about dogs and fireworks. In 3 (Park City, the 8-foot fence case, and Patch's warning about doors), the escape or warning involved a fence, a door, or a dog outside with someone who could not give chase. It is why doors and leashes come first.
 
-These are news stories, not rentals and not a measure of how often it happens. Patch says a calm dog can bolt from a rental house or hotel hallway. [[18]](https://patch.com/massachusetts/across-ma/july-4-fireworks-cause-spike-lost-dog-reports-what-ma-pet-owners-should-know) For fence and gate checks see our [secure fenced yard guide](/guides/vacation-rental-secure-fenced-yard), and for ID options see the [ID tags and GPS trackers guide](/guides/dog-id-tags-and-gps-trackers-for-travel-guide).
+Patch says even a calm dog can bolt from a rental house or hotel hallway. [[18]](https://patch.com/massachusetts/across-ma/july-4-fireworks-cause-spike-lost-dog-reports-what-ma-pet-owners-should-know) See our [secure fenced yard guide](/guides/vacation-rental-secure-fenced-yard) and [ID tags and GPS trackers guide](/guides/dog-id-tags-and-gps-trackers-for-travel-guide).
 
 ### ID plan for an unfamiliar place
 
-- A tag with a mobile number you will answer. Patch recommends a tag with a current cell number, a microchip, and a tracker if possible. [[18]](https://patch.com/massachusetts/across-ma/july-4-fireworks-cause-spike-lost-dog-reports-what-ma-pet-owners-should-know)
-- Current microchip registration. A microchip identified the dog in the 60-mile case. [[17]](https://www.upworthy.com/christmas-miracle-family-reunited-with-their-dog-found-60-miles-away)
+- A tag with a mobile number you will answer. Patch recommends a current cell number, a microchip, and a tracker if possible. [[18]](https://patch.com/massachusetts/across-ma/july-4-fireworks-cause-spike-lost-dog-reports-what-ma-pet-owners-should-know)
+- Current microchip registration; a chip identified the dog in the 60-mile case. [[17]](https://www.upworthy.com/christmas-miracle-family-reunited-with-their-dog-found-60-miles-away)
 - A recent photo on your phone, ready to post.
 
-We did not find evidence that a tag with the rental address works better; the sources we read point to the mobile number and the chip.
+We found no evidence that a rental-address tag works better than the mobile number and chip.
 
 ## What actually helps a noise-afraid dog, and what has weak evidence?
 
-Food or play during noise, started early, has the strongest support in what we read. Riemer's 2023 review calls it one of the most effective training methods and calls gradual desensitization with recorded sounds the "gold standard", while noting some dogs do not respond. [[2]](https://pmc.ncbi.nlm.nih.gov/articles/PMC10705068/) It says medication should be combined with behavior work, not used alone.
+Food or play during noise has the strongest support. Riemer's 2023 review calls gradual desensitization with recorded sounds the "gold standard", though some dogs do not respond. [[2]](https://pmc.ncbi.nlm.nih.gov/articles/PMC10705068/) Medication belongs with behavior work, not alone.
 
 | What | What the sources say |
 | --- | --- |
 | Food or play during noise | Linked to improvement in severely affected dogs in an owner survey summary [[3]](https://avsab.org/survey-shows-which-treatments-are-effective-for-fireworks-fears-in-dogs/); called one of the most effective methods [[2]](https://pmc.ncbi.nlm.nih.gov/articles/PMC10705068/) |
-| Safe space, masking sound | Described as short-term and "important (but not sufficient)" [[2]](https://pmc.ncbi.nlm.nih.gov/articles/PMC10705068/). Cornell recommends a quiet room far from the noise. [[4]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/fear-fireworks-and-thunderstorms) |
+| Safe space, masking sound | Described as short-term and "important (but not sufficient)" [[2]](https://pmc.ncbi.nlm.nih.gov/articles/PMC10705068/). Cornell recommends a quiet room. [[4]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/fear-fireworks-and-thunderstorms) |
 | Hiding places, music, doing nothing | Associated with worse fear in the survey, but the author says this is correlational. [[3]](https://avsab.org/survey-shows-which-treatments-are-effective-for-fireworks-fears-in-dogs/) |
 | Comforting | No effect in that survey; the post notes other studies suggest it can help. [[3]](https://avsab.org/survey-shows-which-treatments-are-effective-for-fireworks-fears-in-dogs/) |
 | Pheromones, supplements, herbals, essential oils | The review calls most "not powerful enough" for serious fears, and pheromone results inconsistent. [[2]](https://pmc.ncbi.nlm.nih.gov/articles/PMC10705068/) |
 | Pressure vests | "a small beneficial effect is possible" [[2]](https://pmc.ncbi.nlm.nih.gov/articles/PMC10705068/) |
 
-Two cautions from the review: owners of dogs given a placebo often report improvement, so owner reports of products need care, and it found no evidence of calming properties for cannabidiol in one study. [[2]](https://pmc.ncbi.nlm.nih.gov/articles/PMC10705068/) We found no evidence either way on dog earmuffs.
+The review also cautions that owners of dogs given a placebo often report improvement, and one study found no evidence of calming properties for cannabidiol. [[2]](https://pmc.ncbi.nlm.nih.gov/articles/PMC10705068/)
 
-Talk to your vet well ahead, because Cornell advises trying any prescribed medication on a quiet day first. [[4]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/fear-fireworks-and-thunderstorms) Never punish a scared dog; Cornell says punishment must never be used. [[4]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/fear-fireworks-and-thunderstorms)
+Cornell advises trying any prescribed medication on a quiet day first, so talk to your vet well ahead. [[4]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/fear-fireworks-and-thunderstorms) Never punish a scared dog. [[4]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/fear-fireworks-and-thunderstorms)
 
 ## What should the evening look like?
 
-This schedule is our suggestion, assembled from the guidance above; the times are examples, not studied cut-offs.
+Our suggested schedule, from the guidance above:
 
-- **Daytime:** exercise early, as Cornell suggests. [[4]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/fear-fireworks-and-thunderstorms) Walk the yard in daylight and look for gaps and debris; ASPCA warns that ingesting fireworks is very dangerous. [[5]](https://www.aspca.org/news/ring-pet-safe-new-year-these-expert-safety-tips)
-- **Late afternoon:** set up the quiet room with warm blankets and no windows if possible. [[5]](https://www.aspca.org/news/ring-pet-safe-new-year-these-expert-safety-tips) Put alcohol and guests' medications out of reach.
-- **Before dark:** last potty break on a leash, with a person at each door. Check the tag.
-- **Evening:** keep the dog in the room with you, with food or play ready; give treats when bangs start.
-- **After midnight:** leash for the first outing and check the yard again.
+- **Daytime:** exercise early. [[4]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/fear-fireworks-and-thunderstorms) Check the yard for gaps and debris; ASPCA warns that ingesting fireworks is very dangerous. [[5]](https://www.aspca.org/news/ring-pet-safe-new-year-these-expert-safety-tips)
+- **Late afternoon:** set up the quiet room with warm blankets. [[5]](https://www.aspca.org/news/ring-pet-safe-new-year-these-expert-safety-tips) Put alcohol and guests' medications out of reach.
+- **Before dark:** last potty break on a leash, a person at each door. Check the tag.
+- **Evening:** keep the dog with you, food or play ready; give treats when bangs start.
+- **After midnight:** leash for the first outing; check the yard again.
 
-Also decide who is responsible for each door, and tell guests not to let the dog out. Our [guide on leaving a dog alone in a rental](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental) covers rules on being away: Cabin Rentals of Georgia says dogs are not to be alone in the cabin [[9]](https://www.cabin-rentals-of-georgia.com/policies), Vacasa says not unsupervised inside the home [[11]](https://www.vacasa.com/pet-friendly-vacation-rentals), and Aunt Bug's asks for a crate when you are away. [[8]](https://www.auntbugs.com/rental-policies/)
+Decide who watches each door, and tell guests not to let the dog out. On being away, see our [guide on leaving a dog alone in a rental](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental): Cabin Rentals of Georgia says no dogs alone in the cabin [[9]](https://www.cabin-rentals-of-georgia.com/policies), Vacasa says not unsupervised [[11]](https://www.vacasa.com/pet-friendly-vacation-rentals), and Aunt Bug's asks for a crate. [[8]](https://www.auntbugs.com/rental-policies/)
 
 ## What do I do in the first hour if my dog runs?
 
-Call out for help and ask people to phone you rather than chase. In Killington, the public was asked to call the owner and not chase the dog. [[14]](https://www.mountaintimes.info/killington-community-helps-visitor-search-for-lost-dog/) In Park City, a finder saw a phone number on a notice, sat down so as not to frighten the dog, and the owner talked by speakerphone. [[15]](https://www.kpcw.org/park-city/2024-01-02/park-city-community-helps-reunite-lost-golden-retriever-with-owners)
+Ask people to phone you rather than chase. In Killington, the public was asked to do exactly that. [[14]](https://www.mountaintimes.info/killington-community-helps-visitor-search-for-lost-dog/) In Park City, a finder saw a phone number on a notice, sat down so as not to frighten the dog, and the owner talked to the dog by speakerphone. [[15]](https://www.kpcw.org/park-city/2024-01-02/park-city-community-helps-reunite-lost-golden-retriever-with-owners)
 
 - Post flyers with your mobile number. In Homer, Alaska, a small dog missing since New Year's Eve was found about two weeks later by a woman who had seen his poster; he was dehydrated and thin. [[16]](https://www.kbbi.org/local-news/2022-01-13/pup-found-after-days-in-the-zero-degree-cold)
-- Alert local shelters and community lost-pet pages near the rental, not only near home.
-- Cold added danger in two of the stories we read (Homer and the Michigan case). That is too few to call a pattern, but plan for the weather when you search.
+- Alert shelters and lost-pet pages near the rental.
+- Cold added danger in two stories we read (Homer and the Michigan case); too few for a pattern, but plan for the weather.
 
-**What most people report (level 2, small sample).** Of the 8 items we read, 4 involved a stranger or the public being asked to call, or a phone number, poster or chip reaching the owner. That is a small count from a non-random set, so read it as a common theme, not odds.
-
-We could not confirm how out-of-area shelters handle a dog with an out-of-state owner, though a microchip and a mobile number travel with you.
+**What most people report (level 2, small sample).** Of the 8 items we read, 4 involved a stranger or the public being asked to call, or a number, poster or chip reaching the owner. Read it as a theme, not odds.
 
 ## Which holiday foods and guest items are dangerous, and who do I call?
 
-Keep trash, bones and guests' belongings out of reach. ASPCA lists turkey bones, onions and garlic, xylitol, chocolate, raw dough, guests' medications and trash. [[21]](https://www.aspca.org/pet-care/general-pet-care/thanksgiving-safety-tips) For New Year's it adds alcohol. [[5]](https://www.aspca.org/news/ring-pet-safe-new-year-these-expert-safety-tips) Keep a first-aid kit handy; our [first-aid kit guide](/guides/dog-travel-first-aid-kit-guide) lists items.
+ASPCA lists turkey bones, onions and garlic, xylitol, chocolate, raw dough, guests' medications and trash. [[21]](https://www.aspca.org/pet-care/general-pet-care/thanksgiving-safety-tips) For New Year's it adds alcohol. [[5]](https://www.aspca.org/news/ring-pet-safe-new-year-these-expert-safety-tips) Our [first-aid kit guide](/guides/dog-travel-first-aid-kit-guide) lists items to keep handy.
 
 - ASPCA Animal Poison Control: (888) 426-4435, available 24 hours a day, 365 days a year; a consultation fee may apply. [[6]](https://www.aspca.org/pet-care/animal-poison-control)
 - Pet Poison Helpline: (855) 764-7661, available 24/7. [[7]](https://www.petpoisonhelpline.com/)
 
-Save both numbers and find the nearest emergency vet before you arrive.
-
 ## How common are lost dogs on New Year's Eve?
 
-We could not find a credible national New Year's Eve figure. Petco Love's 2023 release says more pets go missing on July 4 than any other day, with no New Year's number. [[20]](https://prnewswire.com/news-releases/lost-pets-fill-animal-shelters-after-july-4th-festivities-petco-love-urging-pet-parents-to-search-for-them-on-petco-love-lost-301870824.html) A Dutch survey of more than 3,600 pet owners found about 5% of dogs had ever been lost after hearing fireworks; the sample is Dutch and may be self-selected. [[19]](https://www.uu.nl/en/news/survey-result-fireworks-outside-new-years-eve-disastrous-for-animal-welfare)
+We found no credible national New Year's Eve figure. Petco Love's 2023 release says more pets go missing on July 4 than any other day, and gives no New Year's number. [[20]](https://prnewswire.com/news-releases/lost-pets-fill-animal-shelters-after-july-4th-festivities-petco-love-urging-pet-parents-to-search-for-them-on-petco-love-lost-301870824.html) A Dutch survey of more than 3,600 pet owners found about 5% of dogs had ever been lost after hearing fireworks; the sample may be self-selected. [[19]](https://www.uu.nl/en/news/survey-result-fireworks-outside-new-years-eve-disastrous-for-animal-welfare)
 
 ## What we could not confirm
 
-Our levels: CONFIRMED means a primary source we cite says it; "most people" means at least 3 of the items we read agree (a small, non-random sample); UNKNOWN means neither.
-
-Be mindful of each point below. For each, the last column says who to contact and what to ask. Save every written answer (a screenshot or email is enough) in one folder with your booking details.
+Our levels: CONFIRMED means a primary source we cite says it; "most people" means at least 3 of the items we read agree (a small, non-random sample); UNKNOWN means neither. The last column says who to ask. Save every written answer with your booking details.
 
 | Point to be mindful of | Level | Check for yourself: who and what to ask |
 | --- | --- | --- |
@@ -327,10 +313,10 @@ Be mindful of each point below. For each, the last column says who to contact an
 
 ## Before you book and before you leave
 
-- [ ] Ask the host the vetting questions above, and keep the answers in writing.
-- [ ] Get the full pet total for your dates with the [pet cost check](/tools/pet-cost-check).
+- [ ] Ask the host the vetting questions above; keep answers in writing.
+- [ ] Get the full pet total with the [pet cost check](/tools/pet-cost-check).
 - [ ] Book a vet visit now to discuss noise fear.
 - [ ] Update tag number and microchip registry.
-- [ ] Pack treats, a leash, a crate if used, and the first-aid items from our [packing list](/guides/dog-friendly-cabin-packing-list).
+- [ ] Pack treats, a leash, a crate if used, and first-aid items from our [packing list](/guides/dog-friendly-cabin-packing-list).
 - [ ] Save both poison numbers and the nearest emergency vet.
 - [ ] Run through the [rental checklist](/guides/pet-friendly-vacation-rental-checklist) and the [trip checklist](/tools/checklist).

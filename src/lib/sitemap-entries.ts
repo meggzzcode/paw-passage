@@ -2,6 +2,7 @@ import { destinations } from "@/content/destinations";
 import { allGuides, isPublic } from "@/content/guides";
 import { visibleStays } from "@/content/stays";
 import { visiblePlaces } from "@/content/places";
+import { dogTypes, dogTypeIsLive } from "@/content/dog-types";
 
 export const staticPaths = [
   "/", "/stays", "/destinations", "/guides", "/tools",
@@ -26,6 +27,8 @@ export function sitemapEntries(): { path: string; lastmod?: string }[] {
     out.push({ path: "/dog-rules" });
     for (const p of livePlaces) out.push({ path: `/dog-rules/${p.slug}`, ...(p.lastChecked ? { lastmod: p.lastChecked } : {}) });
   }
+  out.push({ path: "/dogs" });
+  for (const d of dogTypes.filter(dogTypeIsLive)) out.push({ path: `/dogs/${d.slug}` });
   for (const g of allGuides.filter(isPublic)) out.push({ path: `/guides/${g.slug}`, lastmod: g.lastReviewed });
   for (const s of visibleStays({ includeSamples: false })) out.push({ path: `/stays/${s.slug}`, ...(s.lastVerified ? { lastmod: s.lastVerified } : {}) });
   return out;

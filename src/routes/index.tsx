@@ -1,3 +1,4 @@
+import { dogTypes, dogTypeIsLive } from "@/content/dog-types";
 import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
 import { useState } from "react";
 import { ArrowRight, Fence, Ruler, Dog, BadgeDollarSign, Calculator, ListChecks } from "lucide-react";
@@ -132,6 +133,19 @@ function Home() {
         </div>
       </section>
       )}
+
+      <section className="container-page mt-20">
+        <h2 className="text-3xl md:text-4xl">Find the right trip for your dog</h2>
+        <p className="mt-3 max-w-2xl text-muted-foreground">A rental that suits one dog can fail another. Start with the one that sounds like yours.</p>
+        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {dogTypes.filter(dogTypeIsLive).map((d) => (
+            <Link key={d.slug} to="/dogs/$slug" params={{ slug: d.slug }} className="rounded-lg border p-5 hover:bg-muted">
+              <h3 className="text-xl">{d.name}</h3>
+              <p className="mt-2 text-sm text-muted-foreground">{d.tagline}</p>
+            </Link>
+          ))}
+        </div>
+      </section>
 
       <section className="container-page mt-24">
         <div className="flex items-end justify-between gap-4">

@@ -3,3 +3,5 @@
 contactEmail: "hello@pawsandpassage.com"
 siteUrl: "https://www.pawsandpassage.com"
 ga4MeasurementId: "G-1J97C8CPC1"
+# Stay22 account ID (from hub.stay22.com). Leave empty until you have one: the Stay22 map then stays hidden.
+stay22AccountId: ""

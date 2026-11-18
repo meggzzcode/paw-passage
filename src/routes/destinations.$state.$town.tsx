@@ -8,6 +8,7 @@ import { GuideCard } from "@/components/site/GuideCard";
 import { StayCard } from "@/components/site/StayCard";
 import { pageHead, breadcrumbLd, jsonLd } from "@/lib/seo";
 import { hasStays } from "@/lib/launch";
+import { Stay22Map } from "@/components/site/Stay22Map";
 
 export const Route = createFileRoute("/destinations/$state/$town")({
   loader: ({ params }) => {
@@ -56,6 +57,7 @@ function TownPage() {
           </ul>
         </div>
       </section>
+      <Stay22Map address={`${t.name}, ${d.name}`} campaign={`town-${t.slug}`} />
       {guides.length > 0 && (<section className="mt-16"><h2 className="text-3xl">Read next</h2><div className="mt-6 grid gap-8 md:grid-cols-2">{guides.map((g) => <GuideCard key={g!.slug} guide={g!} />)}</div></section>)}
       <section className="mt-16">
         <h2 className="text-3xl">Stays in {t.name}</h2>

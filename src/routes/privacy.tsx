@@ -24,7 +24,7 @@ Booking partners and other sites we link to have their own privacy policies. Som
 
 ## Affiliate links, cookies and tracking
 
-If you click an affiliate link, the partner's site (or its affiliate network) may set cookies or use similar tracking technologies, such as pixels, to record that you came from our site, so a purchase or booking can be credited to us. Those cookies and what they collect are controlled by the partner and the network, not by us, and are covered by their privacy policies. We also use Google Analytics 4 to count clicks on affiliate and product links on our own pages; it records the click, not what you type into our tools. You can block or delete cookies in your browser settings, and blocking them does not change the price you pay.
+If you click an affiliate link, the partner's site (or its affiliate network) may set cookies or use similar tracking technologies, such as pixels, to record that you came from our site, so a purchase or booking can be credited to us. Those cookies and what they collect are controlled by the partner and the network, not by us, and are covered by their privacy policies. We also use Google Analytics 4 to count clicks on affiliate and product links on our own pages; it records the click, not what you type into our tools. If we show a map of places to stay from our booking partner Stay22, that map is loaded from Stay22's servers and Stay22 may set cookies or use similar tracking technologies to credit a booking to us; see Stay22's own privacy policy. You can block or delete cookies in your browser settings, and blocking them does not change the price you pay.
 
 ## Children
 

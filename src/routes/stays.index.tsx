@@ -10,6 +10,7 @@ import { StayCard } from "@/components/site/StayCard";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { pageHead } from "@/lib/seo";
 import { hasVerifiedStays } from "@/lib/launch";
+import { Stay22Map } from "@/components/site/Stay22Map";
 
 export const Route = createFileRoute("/stays/")({
   validateSearch: zodValidator(staySearchSchema),
@@ -131,6 +132,8 @@ function StaysPage() {
         </section>
       </div>
 
+      <Stay22Search />
+
       {drawer && (
         <div className="fixed inset-0 z-50 md:hidden" role="dialog" aria-modal="true" aria-label="Filters">
           <div className="absolute inset-0 bg-foreground/40" onClick={() => setDrawer(false)} />
@@ -156,5 +159,23 @@ function EmptyInventory() {
         <Link to="/guides/$slug" params={{ slug: "pet-friendly-vacation-rental-checklist" }} className="rounded-full border border-input px-5 py-2.5 text-sm font-medium">Before-you-book guide</Link>
       </div>
     </div>
+  );
+}
+
+function Stay22Search() {
+  const places = destinations.flatMap((d) => d.towns.map((t) => ({ key: `${d.slug}:${t.slug}`, label: `${t.name}, ${d.name}` })));
+  const [place, setPlace] = useState(places[0]?.label ?? "");
+  if (!places.length) return null;
+  return (
+    <>
+      <div className="container-page mt-10 max-w-3xl">
+        <label className="text-sm font-medium">Where do you want to look?
+          <select value={place} onChange={(e) => setPlace(e.target.value)} className="mt-1 block h-11 w-full rounded-md border border-input bg-background px-3 text-sm">
+            {places.map((p) => <option key={p.key} value={p.label}>{p.label}</option>)}
+          </select>
+        </label>
+      </div>
+      <Stay22Map address={place} campaign="stays-directory" heading="Search more stays" />
+    </>
   );
 }

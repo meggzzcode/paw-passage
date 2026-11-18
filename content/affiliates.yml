@@ -2,5 +2,6 @@ links:
   - id: vrbo
     network: Vrbo
     url: https://vrbo.com/affiliate/hdPLmiF
-    approved: true
+    approved: false
     kind: stay
+    notes: "Paused 2026-11-18: using Stay22 for now instead of Expedia Group directly. Switch back to approved only if we rejoin the Expedia program."

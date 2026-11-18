@@ -12,6 +12,8 @@ export const site = {
   contactEmail: settings.contactEmail,
   /** Google Analytics 4 measurement ID, e.g. "G-XXXXXXX". Leave "" to send nothing. */
   ga4MeasurementId: settings.ga4MeasurementId,
+  /** Stay22 account ID. Leave "" and the Stay22 map is not shown. */
+  stay22AccountId: settings.stay22AccountId,
   /** Sample stays render only in development / private preview, never in production builds. */
   showSampleStays: import.meta.env.DEV,
   /** Draft guides render (noindexed, labeled) only in development / private preview builds (SHOW_DRAFTS=true). */

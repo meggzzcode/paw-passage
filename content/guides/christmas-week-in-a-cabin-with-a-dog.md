@@ -9,7 +9,7 @@ status: draft
 author: Paws & Passage Editors
 publishedOn: 2026-11-18
 lastReviewed: 2026-11-18
-readingMinutes: 8
+readingMinutes: 9
 heroImage: guide-pet-fees
 faqs:
   - q: Do cabin rentals charge extra for dogs at Christmas?
@@ -17,9 +17,9 @@ faqs:
   - q: Is poinsettia poisonous to dogs?
     a: The ASPCA says poinsettias can cause mild to moderate stomach irritation, and Pet Poison Helpline calls them only mildly dangerous. Holly and mistletoe are listed as more of a concern, so keep all three out of reach.
   - q: Is a real or an artificial tree safer with a dog?
-    a: PetMD says neither is automatically safe. Pine needles and artificial needles can both cause problems if chewed, and it suggests a gate or pen around the tree and a non-flocked tree.
+    a: PetMD warns that both real and artificial needles can cause problems if chewed, and it suggests a gate or pen around the tree and a non-flocked tree.
   - q: Who do I call if my dog eats something it should not?
-    a: Your veterinarian or an emergency hospital first. ASPCA Animal Poison Control is 888-426-4435 and Pet Poison Helpline is 855-764-7661; both say they are available around the clock, and a consultation fee may apply.
+    a: Your veterinarian or an emergency hospital first. ASPCA Animal Poison Control is 888-426-4435 and Pet Poison Helpline is 855-764-7661; both say they are available around the clock. The ASPCA says a consultation fee may apply, and Pet Poison Helpline lists a per-incident fee; check the current terms on their pages.
   - q: Can I leave a lit candle or tree lights on when we go out?
     a: NFPA says to turn off tree lights before leaving home or going to bed, and to blow out candles when you leave the room. It also says to keep pets away from lit candles.
 relatedGuides:
@@ -160,13 +160,13 @@ To see whether a given home will take your dog at all, start with the [will my d
 
 ## What to ask before you book a holiday week
 
-Holiday terms are usually set per home or per manager, and often live on a policy page rather than the pet page. Four questions cover most of it.
+In the pages we read, holiday terms sat with the manager's rental or reservation policies rather than the pet page, and they may differ by home. Four questions cover most of it.
 
 **1. Is there a minimum stay for my dates?** Two managers we read spell this out differently. A Blue Ridge Vacation requires 5 nights for major holidays including Christmas and 3 nights for minor holidays, and says peak seasons and holidays carry higher nightly rates. [[1]](https://www.ablueridgevacation.com/rental-and-cancellation-policies/) Aunt Bugs gives no numbers. [[2]](https://www.auntbugs.com/rental-policies/) So "Christmas week" might be a hard 5 nights at one manager and unspecified at another. Ask for the exact rule for your dates in writing.
 
 **2. What is the complete pet total?** In our reading of 38 managers' public pet pages, none stated a holiday pet surcharge. We re-opened 19 of those pages on 2026-11-18, mostly cabin and mountain managers, and still found none. The pet fees themselves were flat or per-night figures. What did differ is the room rate: A Blue Ridge Vacation says holidays carry higher nightly rates, which a dog fee does not capture. [[1]](https://www.ablueridgevacation.com/rental-and-cancellation-policies/) Ask "what is the full total for these dates with one dog?" and compare with our [pet cost check](/tools/pet-cost-check) and [pet fees guide](/guides/how-vacation-rental-pet-fees-work).
 
-**3. What does cancellation look like?** Holiday weeks fill early, and winter travel is weather-dependent. Examples from pages we read on 2026-11-18:
+**3. What does cancellation look like?** Holiday weeks can fill early, and winter travel can be disrupted by weather. Examples from pages we read on 2026-11-18:
 
 | Manager | Cancellation wording on the page |
 | --- | --- |
@@ -186,14 +186,14 @@ Most holiday emergencies come from things within reach of a nose. The ASPCA, Pet
 - **Tinsel and strings.** The ASPCA says ingested tinsel can cause "severe vomiting, obstructed digestive tract, dehydration" and may need surgery. [[3]](https://www.aspca.org/pet-care/general-pet-care/holiday-safety-tips) PetMD says to leave tinsel, strings and candy canes off the tree. [[7]](https://www.petmd.com/dog/general-health/tips-for-keeping-dog-safe-around-christmas-tree)
 - **Ornaments and decorations.** The ASPCA warns that shards of breakable ornaments can damage the mouth and digestive tract. [[3]](https://www.aspca.org/pet-care/general-pet-care/holiday-safety-tips) Pet Poison Helpline says snow globes and bubble lights may contain poisonous chemicals. [[4]](https://www.petpoisonhelpline.com/pet-safety-tips/winter-holiday-pet-poison-tips/)
 - **Cords.** A chewed wire can deliver a potentially lethal shock, says the ASPCA. [[3]](https://www.aspca.org/pet-care/general-pet-care/holiday-safety-tips)
-- **Poinsettia, holly and mistletoe.** The ASPCA says poinsettias cause mild to moderate stomach irritation, while mistletoe and holly can cause stomach upset and heart and circulation problems. [[3]](https://www.aspca.org/pet-care/general-pet-care/holiday-safety-tips) Pet Poison Helpline says poinsettias are only mildly dangerous and that American mistletoe usually causes mild stomach upset, but holly leaves can damage the stomach and intestines. [[8]](https://www.petpoisonhelpline.com/uncategorized/holiday-pet-poison-myths-debunked/) Two organizations, slightly different emphasis: keep all three out of reach.
+- **Poinsettia, holly and mistletoe.** The ASPCA says poinsettias cause mild to moderate stomach irritation, while mistletoe and holly can cause stomach upset and heart and circulation problems. [[3]](https://www.aspca.org/pet-care/general-pet-care/holiday-safety-tips) Pet Poison Helpline says poinsettias are only mildly dangerous and that American mistletoe may cause mild stomach upset (and serious poisoning is not likely), but holly leaves can damage the stomach and intestines. [[8]](https://www.petpoisonhelpline.com/uncategorized/holiday-pet-poison-myths-debunked/) Two organizations, slightly different emphasis: keep all three out of reach.
 - **Chocolate and xylitol.** Pet Poison Helpline says chocolate contains theobromine, which is highly toxic to dogs, and xylitol, found in some sugar-free gum and candy, is toxic to dogs. [[4]](https://www.petpoisonhelpline.com/pet-safety-tips/winter-holiday-pet-poison-tips/)
 - **Rich food.** Leftover fatty meat scraps can cause severe inflammation of the pancreas, says Pet Poison Helpline. [[4]](https://www.petpoisonhelpline.com/pet-safety-tips/winter-holiday-pet-poison-tips/) The ASPCA lists fatty, sweet and spicy foods and turkey or chicken bones as dangerous. [[3]](https://www.aspca.org/pet-care/general-pet-care/holiday-safety-tips)
 - **Wrapped gifts.** The ASPCA notes that you cannot see inside a wrapped present, but a dog might smell it, so keep wrapped food and candy off the floor. [[3]](https://www.aspca.org/pet-care/general-pet-care/holiday-safety-tips)
 
 ## A tree and gift plan for a house you do not own
 
-The sources above are written for a home you control. In a rental you also cannot drill into the walls, and the owner may not want a live tree at all, so settle it before you arrive.
+The sources above are written for a home you control. In a rental you may not be allowed to attach anything to the walls, and the owner may not want a live tree at all, so settle it before you arrive.
 
 1. **Ask the host first.** Does the home allow a live tree, and is there a spot away from the fireplace? We could not confirm any manager's tree policy.
 2. **Pick the smaller, plainer tree.** PetMD suggests a gate or pen around the tree and a non-flocked tree, and notes artificial needles can also cause problems if chewed. [[7]](https://www.petmd.com/dog/general-health/tips-for-keeping-dog-safe-around-christmas-tree)
@@ -218,7 +218,7 @@ We cannot tell you what any clinic's hours are on December 24, 25 or 26. Before 
 - Search for 24-hour emergency hospitals near the cabin and note the drive time, especially in mountain areas.
 - Call or check each clinic's website for its holiday hours and save the phone number and address in your phone, where it works without signal.
 - Ask the host or manager which local vet they recommend.
-- Save the poison hotlines: ASPCA Animal Poison Control 888-426-4435 [[13]](https://www.aspca.org/pet-care/animal-poison-control) and Pet Poison Helpline 855-764-7661. [[14]](https://www.petpoisonhelpline.com/) Both say they are available around the clock, and a consultation fee may apply, so check the current terms on their pages.
+- Save the poison hotlines: ASPCA Animal Poison Control 888-426-4435 [[13]](https://www.aspca.org/pet-care/animal-poison-control) and Pet Poison Helpline 855-764-7661. [[14]](https://www.petpoisonhelpline.com/) Both say they are available around the clock. The ASPCA says a consultation fee may apply and Pet Poison Helpline lists a per-incident fee, so check the current terms on their pages.
 
 ## Packing and arrival checklist
 
@@ -236,7 +236,7 @@ Use the [packing list tool](/tools/packing-list) to build the full list, and the
 ## How sure we are
 
 - **Confirmed by a source we cite:** the hazards and tips above come from the ASPCA, Pet Poison Helpline, NFPA and PetMD pages we read on 2026-11-18, and the quoted booking terms from the named manager pages.
-- **What most people report:** the holiday surcharge finding comes from 38 managers' public pet pages, a convenience sample read 2026-11-18, with 19 re-opened the same day. We found no stated holiday pet surcharge; that does not prove none exist.
+- **What our sample shows (3 or more independent pages, not a survey):** none of 38 managers' public pet pages, a small non-random convenience sample read 2026-11-18, stated a holiday pet surcharge; 19 were re-opened the same day. That does not prove none exist.
 - **Unknown:** your host's tree rule, your dates' minimum stay and your area's holiday vet hours. Ask the host or call the clinic.
 
 ## What we could not confirm

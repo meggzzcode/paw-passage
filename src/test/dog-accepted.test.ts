@@ -30,4 +30,11 @@ describe("dog accepted checker", () => {
     const s = summarize(evaluate(base));
     expect(s.fits + s.ask + s.conflict).toBe(s.total);
   });
+  it("silence on breed is a question, not a pass, for a restricted-type dog", () => {
+    const rs = evaluate({ dogs: 1, weights: [40], breed: "pit" });
+    const silent = rs.find((r) => r.policy.breed === "not-stated" && r.policy.maxDogs !== null && r.policy.maxDogs >= 1 && !r.policy.weight)!;
+    expect(silent.status).toBe("ask");
+    const none = evaluate({ dogs: 1, weights: [40], breed: "none" }).find((r) => r.policy.name === silent.policy.name)!;
+    expect(none.status).toBe("fits");
+  });
 });

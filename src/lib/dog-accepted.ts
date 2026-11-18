@@ -41,6 +41,9 @@ export function evaluate(input: DogCheckInput, list: ManagerPolicy[] = managerPo
     } else if (p.breed === "unnamed") {
       if (input.breed === "none") notes.push("Has breed limits without naming them.");
       else asks.push("Restricts some breeds without naming them. Ask whether yours is affected.");
+    } else if (p.breed === "not-stated" && input.breed !== "none") {
+      // Silence on breed is not a yes: the rule may sit on another page or in the home's own listing.
+      asks.push("The page we read does not say whether breed limits apply. Ask about your dog's breed.");
     }
 
     const status: Status = conflicts.length ? "conflict" : asks.length ? "ask" : "fits";

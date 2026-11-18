@@ -4,53 +4,55 @@ type: cottage
 state: georgia
 town: blue-ridge
 summary: Creekside cottage near Blue Ridge with a hot tub and porch; pets allowed, no limits stated.
-description: A waterfront cottage near Blue Ridge, Georgia, that sleeps 4 with a king bed and a queen bed in the common areas. It has a hot tub, a porch, a patio, a private garden and a barbecue grill. The listing says pets are allowed but gives no dog limit, weight limit, fee, breed rule or fence details. On 2026-11-18 the Vrbo listing page was read to its footer and only says pets are allowed; it states no dog limit, weight limit, fee, deposit, breed rule, fence or alone-time rule. A search for other sites carrying this exact title found no clear match, and nothing has been confirmed with the host.
+description: A waterfront cottage near Blue Ridge, Georgia, that sleeps 4 with a king bed and a queen bed in the common areas. It has a hot tub, a porch, a patio, a private garden and a barbecue grill. The Vrbo Policies section allows 2 small dogs only, 30 lb each at most, and shows no pet fee. We read this from the public Vrbo listing on 2026-11-18 and have not confirmed it with the host.
 sleeps: 4
 houseRules:
-  - "Pets are allowed, no details given (Vrbo FAQ: \"Yes, pets are allowed at this property.\")"
-largeDogsOk: not-confirmed
+- '"2 Small dogs only"; "Max 30lbs each" (Vrbo Policies)'
+largeDogsOk: 'no'
 fencedYard: not-confirmed
-privateOutdoor: yes
+privateOutdoor: 'yes'
 petFee: not-confirmed
 breedRestrictions: not-confirmed
 beach: false
 mountain: false
-hotTub: yes
+hotTub: 'yes'
 photoPermission: false
 sourceUrl: https://www.vrbo.com/5283109
 affiliateId: vrbo-5283109
 bathrooms: 1.5
 beds:
-  - "Common areas: 1 king bed and 1 queen bed"
+- 'Common areas: 1 king bed and 1 queen bed'
 amenityGroups:
-  - title: Kitchen and dining
-    items:
-      - Refrigerator
-  - title: Comfort
-    items:
-      - Air conditioning
-      - Hot tub
-  - title: Outdoors
-    items:
-      - Balcony, terrace or patio, and porch
-      - Private garden
-      - Barbecue grill
-  - title: Parking and access
-    items:
-      - Onsite parking
+- title: Kitchen and dining
+  items:
+  - Refrigerator
+- title: Comfort
+  items:
+  - Air conditioning
+  - Hot tub
+- title: Outdoors
+  items:
+  - Balcony, terrace or patio, and porch
+  - Private garden
+  - Barbecue grill
+- title: Parking and access
+  items:
+  - Onsite parking
 locationNote: Waterfront setting near Blue Ridge, Georgia, with the Chattahoochee National Forest about a one-minute walk away. Restaurants and cafes are listed at 5 to 7 minutes by car.
 distances:
-  - "Chattahoochee National Forest: about a 1-minute walk"
-  - "Blue Ridge Lake: about 4 minutes by car"
-  - "Blue Ridge Scenic Railway: about 8 minutes by car"
-  - "Mineral Springs Walking Trail: about 3.1 miles"
-  - "Chattanooga Metropolitan Airport: about 107 minutes by car"
-checkIn: "3:00 PM"
-checkOut: "10:00 AM"
+- 'Chattahoochee National Forest: about a 1-minute walk'
+- 'Blue Ridge Lake: about 4 minutes by car'
+- 'Blue Ridge Scenic Railway: about 8 minutes by car'
+- 'Mineral Springs Walking Trail: about 3.1 miles'
+- 'Chattanooga Metropolitan Airport: about 107 minutes by car'
+checkIn: 3:00 PM
+checkOut: 10:00 AM
 accessNotes:
-  - "One guest said the property is not wheelchair accessible, with only a few steps from the driveway to the entrance."
+- One guest said the property is not wheelchair accessible, with only a few steps from the driveway to the entrance.
 guestNotes:
-  - "Guests describe the cottage as peaceful, clean and comfortable, and enjoy the creek sounds from the porch."
-  - "The hot tub is a favorite, including on cool evenings."
-  - "Guests say it suits couples or small families and is a short drive from downtown and the lake."
-  - "One guest wished for a full-length mirror and recycling."
+- Guests describe the cottage as peaceful, clean and comfortable, and enjoy the creek sounds from the porch.
+- The hot tub is a favorite, including on cool evenings.
+- Guests say it suits couples or small families and is a short drive from downtown and the lake.
+- One guest wished for a full-length mirror and recycling.
+maxDogs: 2
+weightLimitLbs: 30

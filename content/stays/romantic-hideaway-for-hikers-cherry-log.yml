@@ -4,13 +4,13 @@ type: vacation-home
 state: georgia
 town: cherry-log
 summary: One-bedroom hideaway with a hot tub in Cherry Log; dogs allowed, 2 total, 50 lb limit listed.
-description: A one-bedroom home for 2 in Cherry Log, Georgia, with a king bed, a hot tub, a patio or deck and a barbecue grill. The listing also mentions an arcade or game room and says the national forest is a one-minute walk away. It allows 2 dogs total with a 50 lb maximum per pet, and gives no fee, breed rule or fence details. On 2026-11-18 the Vrbo listing page was read to its footer; it states the 2-dog and 50 lb limits but no fee, deposit, breed rule, fence or alone-time rule. A Travelocity page that may be the same property could not be read (HTTP 429), so nothing else is confirmed with the host.
+description: A one-bedroom home for 2 in Cherry Log, Georgia, with a king bed, a hot tub, a patio or deck and a barbecue grill. The listing also mentions an arcade or game room and says the national forest is a one-minute walk away. The Vrbo Policies section allows 2 dogs under 50 lb, is adults only, and shows no pet fee. We read this from the public Vrbo listing on 2026-11-18 and have not confirmed it with the host.
 sleeps: 2
 bedrooms: 1
 maxDogs: 2
 weightLimitLbs: 50
 houseRules:
-  - "Dogs only, limit 2 total, maximum 50 lbs per pet (Vrbo FAQ)"
+- Limit 2 pets total, dogs less than 50 lbs per pet (Vrbo Policies)
 largeDogsOk: not-confirmed
 fencedYard: not-confirmed
 privateOutdoor: not-confirmed
@@ -18,38 +18,40 @@ petFee: not-confirmed
 breedRestrictions: not-confirmed
 beach: false
 mountain: false
-hotTub: yes
+hotTub: 'yes'
 photoPermission: false
 sourceUrl: https://www.vrbo.com/2839563
 affiliateId: vrbo-2839563
 bathrooms: 1
 beds:
-  - "Bedroom 1: 1 king bed"
+- 'Bedroom 1: 1 king bed'
 amenityGroups:
-  - title: Kitchen and dining
-    items:
-      - Kitchen and kitchenette
-  - title: Outdoors
-    items:
-      - Hot tub
-      - Patio or deck
-      - Barbecue grill
-  - title: Entertainment
-    items:
-      - Arcade or game room and video games
-  - title: Parking and access
-    items:
-      - Onsite parking
+- title: Kitchen and dining
+  items:
+  - Kitchen and kitchenette
+- title: Outdoors
+  items:
+  - Hot tub
+  - Patio or deck
+  - Barbecue grill
+- title: Entertainment
+  items:
+  - Arcade or game room and video games
+- title: Parking and access
+  items:
+  - Onsite parking
 locationNote: In the heart of Cherry Log, Georgia, steps from the Chattahoochee National Forest.
 distances:
-  - "Chattahoochee National Forest: about a 1-minute walk"
-  - "Blue Ridge Scenic Railway: about 18 minutes by car"
-  - "Blue Ridge Lake: about 24 minutes by car"
-  - "Amicalola Falls State Park: about 50 minutes by car"
-checkIn: "4:00 PM"
-checkOut: "10:00 AM"
+- 'Chattahoochee National Forest: about a 1-minute walk'
+- 'Blue Ridge Scenic Railway: about 18 minutes by car'
+- 'Blue Ridge Lake: about 24 minutes by car'
+- 'Amicalola Falls State Park: about 50 minutes by car'
+checkIn: 4:00 PM
+checkOut: 10:00 AM
 guestNotes:
-  - "Guests describe it as secluded, quiet and private, with wildlife sightings."
-  - "The hot tub gets frequent praise, including for stargazing after hiking; the fire pit and porch swing are also liked."
-  - "Guests call it clean, cozy and well stocked, and handy for Blue Ridge and Ellijay."
-  - "One guest found the bed less comfortable than hoped, and another found it hard to reach, dated and far from amenities."
+- Guests describe it as secluded, quiet and private, with wildlife sightings.
+- The hot tub gets frequent praise, including for stargazing after hiking; the fire pit and porch swing are also liked.
+- Guests call it clean, cozy and well stocked, and handy for Blue Ridge and Ellijay.
+- One guest found the bed less comfortable than hoped, and another found it hard to reach, dated and far from amenities.
+generalRules:
+- Adults only (Vrbo Policies)

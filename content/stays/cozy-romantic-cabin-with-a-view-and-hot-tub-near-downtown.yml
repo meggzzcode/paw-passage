@@ -4,62 +4,66 @@ type: cabin
 state: georgia
 town: blue-ridge
 summary: Two-bedroom cabin with a hot tub near downtown Blue Ridge; dogs up to 20 lbs, 2 max.
-description: This two-bedroom cabin in central Blue Ridge has a hot tub, a deck or porch and a barbecue grill, and sleeps 4 with a king bed in each bedroom. The listing allows dogs, up to 2 pets at a maximum of 20 lbs each. It does not state a pet fee, breed rule or fence. On 2026-11-18 the Vrbo listing page and a Stayz page for the same property (same Vrbo ID 989362, same title base, two king bedrooms) were read; both state the 2-dog and weight limit (Stayz says 9 kg, about 20 lbs) and neither states a pet fee, breed rule or fence. The Vrbo Policies section was not readable. Not confirmed with the host.
+description: This two-bedroom cabin in central Blue Ridge has a hot tub, a deck or porch and a barbecue grill, and sleeps 4 with a king bed in each bedroom. The Vrbo Policies section allows 2 dogs, lists a $95 per dog pet fee (basis not stated), and says no puppies, crates when alone and no furniture. Its weight limit appears as 20 lb in one place and 30 lb in another. We read this from the public Vrbo listing on 2026-11-18 and have not confirmed it with the host.
 sleeps: 4
 bedrooms: 2
 bathrooms: 2
 beds:
-  - "Bedroom 1: 1 king bed"
-  - "Bedroom 2: 1 king bed"
+- 'Bedroom 1: 1 king bed'
+- 'Bedroom 2: 1 king bed'
 amenityGroups:
-  - title: Kitchen and dining
-    items:
-      - Kitchen
-      - Dining area
-  - title: Comfort
-    items:
-      - Air conditioning
-      - Free WiFi
-  - title: Bathroom
-    items:
-      - Two bathrooms, each with a bathtub or shower
-  - title: Outdoors
-    items:
-      - Hot tub on site
-      - Balcony, deck and porch
-      - Barbecue grill
-  - title: Parking and access
-    items:
-      - Onsite parking
+- title: Kitchen and dining
+  items:
+  - Kitchen
+  - Dining area
+- title: Comfort
+  items:
+  - Air conditioning
+  - Free WiFi
+- title: Bathroom
+  items:
+  - Two bathrooms, each with a bathtub or shower
+- title: Outdoors
+  items:
+  - Hot tub on site
+  - Balcony, deck and porch
+  - Barbecue grill
+- title: Parking and access
+  items:
+  - Onsite parking
 locationNote: In central Blue Ridge, Georgia, about a one-minute walk from Chattahoochee National Forest.
 distances:
-  - "Chattahoochee National Forest: about 1 minute on foot"
-  - "Blue Ridge Scenic Railway: about 12 minutes by car"
-  - "Blue Ridge Lake: about 19 minutes by car"
-  - "Amicalola Falls State Park: about 44 minutes by car"
-  - "Chattanooga Metropolitan Airport: about 99 minutes by car"
-checkIn: "4:00 PM"
-checkOut: "11:00 AM"
+- 'Chattahoochee National Forest: about 1 minute on foot'
+- 'Blue Ridge Scenic Railway: about 12 minutes by car'
+- 'Blue Ridge Lake: about 19 minutes by car'
+- 'Amicalola Falls State Park: about 44 minutes by car'
+- 'Chattanooga Metropolitan Airport: about 99 minutes by car'
+checkIn: 4:00 PM
+checkOut: 11:00 AM
 accessNotes:
-  - Reviews mention a gravel or unpaved access road and narrow mountain roads, and suggest a vehicle with some ground clearance.
+- Reviews mention a gravel or unpaved access road and narrow mountain roads, and suggest a vehicle with some ground clearance.
 guestNotes:
-  - Guests praise the mountain and valley views from the deck and hot tub.
-  - Reviews describe it as clean and cozy, with deer sometimes visiting the back deck.
-  - The setting is called quiet and secluded yet close to town.
-  - Several guests warn about the gravel road and narrow mountain roads.
+- Guests praise the mountain and valley views from the deck and hot tub.
+- Reviews describe it as clean and cozy, with deer sometimes visiting the back deck.
+- The setting is called quiet and secluded yet close to town.
+- Several guests warn about the gravel road and narrow mountain roads.
 maxDogs: 2
 weightLimitLbs: 20
 largeDogsOk: not-confirmed
 fencedYard: not-confirmed
-privateOutdoor: yes
-petFee: not-confirmed
+privateOutdoor: 'yes'
+petFee: charged
 breedRestrictions: not-confirmed
 houseRules:
-  - "Dogs allowed, limit 2 total, maximum 20 lbs per pet (Vrbo FAQ)"
-  - "Dogs allowed, limit 2 total, maximum 9 kg per pet (Stayz listing, same Vrbo ID 989362)"
+- Limit 2 pets total; the Vrbo summary says dogs less than 20 lbs per pet, while the host text says "30 lb max/dog" (the listing conflicts with itself; we show the lower figure)
+- Pet fee shown as "$95 /dog"; whether that is per stay or per night is not stated
+- '"No puppies."'
+- Dogs must be crated when left alone and are not allowed on furniture or beds (Vrbo Policies)
 beach: false
 mountain: false
-hotTub: yes
+hotTub: 'yes'
 photoPermission: false
 sourceUrl: https://www.vrbo.com/989362
 affiliateId: vrbo-989362
+petFeeAmount: 95
+petFeeBasis: dog

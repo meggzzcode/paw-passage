@@ -4,60 +4,65 @@ type: cabin
 state: georgia
 town: cherry-log
 summary: One-bedroom cabin with a secluded hot tub near Blue Ridge; pets allowed, no limits stated.
-description: A one-bedroom cabin for 2 with a king bed, a hot tub, a deck and a private garden in a rural mountain area near Blue Ridge, Georgia. The listing also mentions a stone fireplace, board games and records. It says pets are allowed but gives no dog limit, weight limit, fee, breed rule or fence details. On 2026-11-18 the Vrbo listing page was read to its footer and only says pets are allowed; it states no dog limit, weight limit, fee, deposit, breed rule, fence or alone-time rule. Expedia pages that may be the same cabin under a different title could not be read (HTTP 429), so no pet terms from them are used, and nothing has been confirmed with the host.
+description: A one-bedroom cabin for 2 with a king bed, a hot tub, a deck and a private garden in a rural mountain area near Blue Ridge, Georgia. The listing also mentions a stone fireplace, board games and records. The Vrbo Policies section allows one dog and lists a $50 pet fee per stay for non-service animals. We read this from the public Vrbo listing on 2026-11-18 and have not confirmed it with the host.
 sleeps: 2
 bedrooms: 1
 houseRules:
-  - "Pets are allowed, no details given (Vrbo FAQ: \"Yes, pets are allowed at this property.\")"
+- One (1) dog total, including service animals (Vrbo Policies)
+- A $50 pet fee per stay applies to non-service animals (Vrbo Policies)
+- Notify the host before arrival
 largeDogsOk: not-confirmed
 fencedYard: not-confirmed
-privateOutdoor: yes
-petFee: not-confirmed
+privateOutdoor: 'yes'
+petFee: charged
 breedRestrictions: not-confirmed
 beach: false
 mountain: false
-hotTub: yes
+hotTub: 'yes'
 photoPermission: false
 sourceUrl: https://www.vrbo.com/4396826
 affiliateId: vrbo-4396826
 bathrooms: 1
 beds:
-  - "Bedroom 1: 1 king bed"
+- 'Bedroom 1: 1 king bed'
 amenityGroups:
-  - title: Kitchen and dining
-    items:
-      - Kitchen and kitchenette
-      - Separate dining area
-  - title: Comfort
-    items:
-      - Air conditioning
-      - Living room
-      - Stone fireplace (named in a photo caption)
-  - title: Outdoors
-    items:
-      - Hot tub, described as secluded
-      - Deck or patio, porch and balcony
-      - Garden
-      - Barbecue grill
-  - title: Bathroom
-    items:
-      - Bathtub or shower; towels, soap, shampoo and hair dryer
-  - title: Entertainment
-    items:
-      - Board games and records
-  - title: Parking and access
-    items:
-      - Onsite parking
+- title: Kitchen and dining
+  items:
+  - Kitchen and kitchenette
+  - Separate dining area
+- title: Comfort
+  items:
+  - Air conditioning
+  - Living room
+  - Stone fireplace (named in a photo caption)
+- title: Outdoors
+  items:
+  - Hot tub, described as secluded
+  - Deck or patio, porch and balcony
+  - Garden
+  - Barbecue grill
+- title: Bathroom
+  items:
+  - Bathtub or shower; towels, soap, shampoo and hair dryer
+- title: Entertainment
+  items:
+  - Board games and records
+- title: Parking and access
+  items:
+  - Onsite parking
 locationNote: In the Cherry Lake neighborhood near Blue Ridge, Georgia, in a rural mountain area with the Chattahoochee National Forest about a one-minute walk away.
 distances:
-  - "Chattahoochee National Forest: about a 1-minute walk"
-  - "Blue Ridge Scenic Railway: about 11 minutes by car"
-  - "Blue Ridge Lake: about 18 minutes by car"
-  - "Amicalola Falls State Park: about 40 minutes by car"
-checkIn: "4:00 PM"
-checkOut: "10:00 AM"
+- 'Chattahoochee National Forest: about a 1-minute walk'
+- 'Blue Ridge Scenic Railway: about 11 minutes by car'
+- 'Blue Ridge Lake: about 18 minutes by car'
+- 'Amicalola Falls State Park: about 40 minutes by car'
+checkIn: 4:00 PM
+checkOut: 10:00 AM
 guestNotes:
-  - "Guests call it clean and well stocked, including kitchen staples."
-  - "The hot tub and deck are frequent highlights, along with mountain views and a quiet, private feel."
-  - "Reviewers say it suits couples, and some mention a dog bed and dog treats."
-  - "Guests report host communication as responsive."
+- Guests call it clean and well stocked, including kitchen staples.
+- The hot tub and deck are frequent highlights, along with mountain views and a quiet, private feel.
+- Reviewers say it suits couples, and some mention a dog bed and dog treats.
+- Guests report host communication as responsive.
+maxDogs: 1
+petFeeAmount: 50
+petFeeBasis: stay

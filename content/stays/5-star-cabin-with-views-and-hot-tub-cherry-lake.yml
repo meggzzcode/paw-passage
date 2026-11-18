@@ -4,7 +4,7 @@ type: cabin
 state: georgia
 town: blue-ridge
 summary: Two-bedroom cabin with a hot tub near Cherry Lake; dogs up to 50 lbs, 2 dogs max.
-description: This two-bedroom cabin in the Cherry Lake area of Blue Ridge has a hot tub, a deck or patio and a barbecue grill, and sleeps 5. The listing allows dogs, up to 2 pets at a maximum of 50 lbs each, and says some restrictions may apply. It does not state a pet fee or any fence. Details come from the booking page, read on 2026-11-18, and have not been confirmed with the host.
+description: This two-bedroom cabin in the Cherry Lake area of Blue Ridge has a hot tub, a deck or patio and a barbecue grill, and sleeps 5. The listing allows dogs, up to 2 pets at a maximum of 50 lbs each, and says some restrictions may apply. It does not state a pet fee or any fence. On 2026-11-18 the Vrbo listing page was read through its FAQ, reviews and footer; it states the dog count and weight limit and that some restrictions may apply, but its Policies section was not readable and no pet fee, breed rule, fence or crate rule appeared. A web search found no other page for this exact property. Not confirmed with the host.
 sleeps: 5
 bedrooms: 2
 bathrooms: 2
@@ -54,6 +54,9 @@ fencedYard: not-confirmed
 privateOutdoor: yes
 petFee: not-confirmed
 breedRestrictions: not-confirmed
+houseRules:
+  - "Dogs allowed, limit 2 total, maximum 50 lbs per pet (Vrbo FAQ)"
+  - "Some restrictions may apply; contact the property for details (Vrbo FAQ)"
 beach: false
 mountain: false
 hotTub: yes

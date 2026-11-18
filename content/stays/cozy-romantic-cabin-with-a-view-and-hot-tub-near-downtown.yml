@@ -4,7 +4,7 @@ type: cabin
 state: georgia
 town: blue-ridge
 summary: Two-bedroom cabin with a hot tub near downtown Blue Ridge; dogs up to 20 lbs, 2 max.
-description: This two-bedroom cabin in central Blue Ridge has a hot tub, a deck or porch and a barbecue grill, and sleeps 4 with a king bed in each bedroom. The listing allows dogs, up to 2 pets at a maximum of 20 lbs each. It does not state a pet fee, breed rule or fence. Details come from the booking page, read on 2026-11-18, and have not been confirmed with the host.
+description: This two-bedroom cabin in central Blue Ridge has a hot tub, a deck or porch and a barbecue grill, and sleeps 4 with a king bed in each bedroom. The listing allows dogs, up to 2 pets at a maximum of 20 lbs each. It does not state a pet fee, breed rule or fence. On 2026-11-18 the Vrbo listing page and a Stayz page for the same property (same Vrbo ID 989362, same title base, two king bedrooms) were read; both state the 2-dog and weight limit (Stayz says 9 kg, about 20 lbs) and neither states a pet fee, breed rule or fence. The Vrbo Policies section was not readable. Not confirmed with the host.
 sleeps: 4
 bedrooms: 2
 bathrooms: 2
@@ -54,6 +54,9 @@ fencedYard: not-confirmed
 privateOutdoor: yes
 petFee: not-confirmed
 breedRestrictions: not-confirmed
+houseRules:
+  - "Dogs allowed, limit 2 total, maximum 20 lbs per pet (Vrbo FAQ)"
+  - "Dogs allowed, limit 2 total, maximum 9 kg per pet (Stayz listing, same Vrbo ID 989362)"
 beach: false
 mountain: false
 hotTub: yes

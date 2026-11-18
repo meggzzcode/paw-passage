@@ -4,7 +4,7 @@ type: vacation-home
 state: georgia
 town: blue-ridge
 summary: Two-bedroom stay in downtown Blue Ridge with a king bed; the listing says pets are allowed.
-description: This two-bedroom place sits in the center of Blue Ridge, within a short walk of the Arts Center and the Scenic Railway, and sleeps 4. It has a kitchen, a dining area, a balcony and a covered porch with rocking chairs. The listing says pets are allowed but does not state a dog count, weight limit, pet fee, breed rule or fence. Details come from the booking page, read on 2026-11-18, and have not been confirmed with the host.
+description: This two-bedroom place sits in the center of Blue Ridge, within a short walk of the Arts Center and the Scenic Railway, and sleeps 4. It has a kitchen, a dining area, a balcony and a covered porch with rocking chairs. The listing says pets are allowed but does not state a dog count, weight limit, pet fee, breed rule or fence. On 2026-11-18 the Vrbo listing page was read through its FAQ, reviews and footer, and a web search was run; the Vrbo FAQ states only that pets are allowed, and its Policies section was not readable. A Travelocity page for the same title could not be read (HTTP 429), so no other source was checked. Not confirmed with the host.
 sleeps: 4
 bedrooms: 2
 bathrooms: 1
@@ -48,6 +48,8 @@ fencedYard: not-confirmed
 privateOutdoor: not-confirmed
 petFee: not-confirmed
 breedRestrictions: not-confirmed
+houseRules:
+  - "Pets are allowed, no details given (Vrbo FAQ)"
 beach: false
 mountain: false
 hotTub: not-confirmed

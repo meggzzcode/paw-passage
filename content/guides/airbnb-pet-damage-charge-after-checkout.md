@@ -9,7 +9,7 @@ status: published
 author: Paws & Passage Editors
 publishedOn: 2026-11-18
 lastReviewed: 2026-11-18
-readingMinutes: 14
+readingMinutes: 13
 heroImage: guide-pet-fees
 faqs:
   - q: How long does a host have to charge me for pet damage after checkout?

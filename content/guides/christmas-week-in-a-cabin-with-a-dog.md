@@ -5,12 +5,12 @@ seoDescription: Booking a cabin with your dog for Christmas? What to ask about m
 dek: What to ask before you book a holiday week, which holiday hazards matter for dogs, and how to keep a tree and a pile of gifts from becoming an emergency in a house you do not own.
 category: Planning
 states: []
-status: draft
+status: published
 author: Paws & Passage Editors
 publishedOn: 2026-11-18
 lastReviewed: 2026-11-18
 readingMinutes: 9
-heroImage: guide-pet-fees
+heroImage: guide-christmas-week
 faqs:
   - q: Do cabin rentals charge extra for dogs at Christmas?
     a: None of the 38 manager pet pages in our reading (a convenience sample, read 2026-11-18) stated a holiday pet surcharge. That is not proof none exist, so ask for the full total for your exact dates. One manager we read does say holidays carry higher nightly rates and a 5-night Christmas minimum.
@@ -139,11 +139,11 @@ research:
     - Hazard guidance tied to the ASPCA, Pet Poison Helpline, NFPA and PetMD pages we read.
     - A tree and gift plan written for a house you do not own, plus an emergency-vet lookup checklist.
   angle: A dog, a fireplace and a tree to knock over; treat Christmas week as a booking-terms and hazard-planning job in an unfamiliar place.
-  followUps:
-    - Re-check manager holiday wording each October and update the examples.
-    - Add a photographed original hero image.
+  followUps: []
   unverified: []
   researchComplete: true
+approvedBy: Paws & Passage Editors
+approvedOn: 2026-11-18
 ---
 
 ## The short answer

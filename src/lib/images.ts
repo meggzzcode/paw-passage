@@ -49,6 +49,8 @@ import guideDamageCharge from "@/assets/guide-damage-charge.jpg";
 import guideDamageChargeCard from "@/assets/guide-damage-charge-card.jpg";
 import guideNoPetFee from "@/assets/guide-no-pet-fee.jpg";
 import guideNoPetFeeCard from "@/assets/guide-no-pet-fee-card.jpg";
+import guideChristmasWeek from "@/assets/guide-christmas-week.jpg";
+import guideChristmasWeekCard from "@/assets/guide-christmas-week-card.jpg";
 
 // Editorial stock photographs (Unsplash License), shown for illustration only and never as pictures of a specific rental.
 // Photographer credits live in src/content/image-credits.ts.
@@ -81,6 +83,7 @@ const stockImages = {
   "guide-senior": { src: guideSenior, card: guideSeniorCard, alt: "An older black Labrador with a graying muzzle resting its head on the arm of a couch, looking calm and sleepy" },
   "guide-damage-charge": { src: guideDamageCharge, card: guideDamageChargeCard, alt: "A fluffy golden-tan dog sitting in the open back of a packed car, with suitcases, bags and a cooler loaded behind it, ready to head home" },
   "guide-no-pet-fee": { src: guideNoPetFee, card: guideNoPetFeeCard, alt: "A Shiba Inu puppy peeking out of a mesh travel carrier, ready to go on a trip" },
+  "guide-christmas-week": { src: guideChristmasWeek, card: guideChristmasWeekCard, alt: "A chocolate Labrador with a coral collar standing chest-deep in fresh snow, looking up with its mouth open in front of a snowy wood" },
 } as const satisfies Record<string, StockImage>;
 
 export const images: { [K in keyof typeof stockImages]: StockImage } = stockImages;

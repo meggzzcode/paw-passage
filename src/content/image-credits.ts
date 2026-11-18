@@ -29,4 +29,5 @@ export const imageCredits: ImageCredit[] = [
   { key: "guide-senior", photographer: "Jack Plant", unsplashUrl: "https://unsplash.com/photos/a-large-black-dog-laying-on-top-of-a-couch-AGKt39kI1Ig" },
   { key: "guide-damage-charge", photographer: "Jimmy Conover", unsplashUrl: "https://unsplash.com/photos/brown-long-coated-dog-on-car-seat-ajPr3kQBWFw" },
   { key: "guide-no-pet-fee", photographer: "Dex Ezekiel", unsplashUrl: "https://unsplash.com/photos/-nOCYgeOtX8" },
+  { key: "guide-christmas-week", photographer: "YBag Media", unsplashUrl: "https://unsplash.com/photos/black-labrador-retriever-on-snow-covered-ground-during-daytime-se3pSeT0mdM" },
 ];

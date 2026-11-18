@@ -16,7 +16,7 @@ export function BookingButton({ stay, compact = false, book = false }: { stay: S
   if (link) {
     return (
       <div>
-        <a href={link.url} target="_blank" rel="sponsored nofollow noopener" onClick={() => trackOutbound({ stay: stay.slug, partner: link.network, url: link.url, page: loc.pathname })} className={`${btn} bg-terracotta text-terracotta-foreground`}>{compact || book ? `View on ${link.network}` : `See photos and check dates on ${link.network}`}</a>
+        <a href={link.url} target="_blank" rel="sponsored nofollow noopener" onClick={() => trackOutbound({ stay: stay.slug, partner: link.network, url: link.url, page: loc.pathname })} className={`${btn} bg-terracotta-button text-terracotta-foreground`}>{compact || book ? `View on ${link.network}` : `See photos and check dates on ${link.network}`}</a>
         <p className="mt-2 text-xs text-muted-foreground">Sponsored link: we may earn a commission if you book, at no extra cost to you.</p>
       </div>
     );

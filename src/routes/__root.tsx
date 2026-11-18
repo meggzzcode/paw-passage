@@ -77,12 +77,19 @@ function ErrorComponent({ error, reset }: ErrorComponentProps) {
   );
 }
 
+/** True when the matched routes include one that resolved to "not found" (an unknown URL, or a stay/guide slug that does not exist). */
+export function isNotFoundLane(matches: ReadonlyArray<{ status?: string; globalNotFound?: boolean }> | undefined): boolean {
+  return !!matches?.some((m) => m.status === "notFound" || m.globalNotFound === true);
+}
+
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
-  head: () => ({
+  head: (ctx) => ({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: `${site.name}: dog-friendly travel guides and stays` },
+      // A page that does not exist keeps its 404 status, gets its own title and stays out of search results.
+      { title: isNotFoundLane(ctx?.matches) ? `Page not found | ${site.name}` : `${site.name}: dog-friendly travel guides and stays` },
+      ...(isNotFoundLane(ctx?.matches) ? [{ name: "robots", content: "noindex, nofollow" }] : []),
       { name: "description", content: site.description },
       { property: "og:site_name", content: site.name },
       { property: "og:type", content: "website" },

@@ -1,0 +1,66 @@
+status: unverified
+name: Palisades Beach House on the Mesa (Santa Barbara)
+type: vacation-home
+state: california
+town: santa-barbara
+summary: Single-story three-bedroom Mesa house in Santa Barbara; 1 dog up to 50 lbs, beach about a 12-minute walk.
+description: A single-story house in the Mesa neighborhood of Santa Barbara that sleeps 6 across three bedrooms, each with a king bed, and three bathrooms. The listing shows a patio, a barbecue grill, air conditioning, an office and an outdoor play area, and it marks the home as dog-friendly with toys. The Vrbo FAQ allows one dog up to 50 lbs without naming a pet fee, and the page gives no fence detail. Mesa Lane Steps Beach is about a 12-minute walk. We read this from the public Vrbo listing on 2026-11-18 and have not confirmed it with the host.
+sleeps: 6
+bedrooms: 3
+bathrooms: 3
+beds:
+- 'Primary bedroom: 1 king bed'
+- 'Bedroom 2: 1 king bed'
+- 'Bedroom 3: 1 king bed'
+maxDogs: 1
+weightLimitLbs: 50
+largeDogsOk: not-confirmed
+fencedYard: not-confirmed
+fenceNotes: The listing details give no fence information; a guest review mentions an enclosed yard, which is opinion, not a host statement.
+privateOutdoor: not-confirmed
+petFee: not-confirmed
+breedRestrictions: not-confirmed
+houseRules:
+- 'Pets: "limit 1" dog with a maximum weight of "up to 50 lbs" (Vrbo listing).'
+- The page does not show a pet fee, deposit, fence status or breed rule, and no house-rules section was readable.
+beach: true
+mountain: false
+hotTub: not-confirmed
+photoPermission: false
+sourceUrl: https://www.vrbo.com/1250124
+amenityGroups:
+- title: Kitchen and dining
+  items:
+  - Kitchen
+  - Refrigerator
+  - Dining area
+  - Barbecue grill
+- title: Comfort
+  items:
+  - Air conditioning
+  - Office space
+- title: Dogs
+  items:
+  - Listed as dog-friendly, with toys
+- title: Outdoors
+  items:
+  - Patio
+  - Deck or patio
+  - Outdoor play area
+- title: Parking and access
+  items:
+  - Onsite parking
+locationNote: In the Mesa neighborhood of Santa Barbara, California, near beaches and a small shopping center; the exact address is not given on the listing.
+distances:
+- 'Mesa Lane Steps Beach: about 12 minutes on foot'
+- 'Elings Park: about 13 minutes on foot'
+- 'Arroyo Burro Beach: about 4 minutes by car'
+- '1000 Steps Beach: about 5 minutes by car'
+- 'Santa Barbara Station: about 9 minutes by car'
+- 'Santa Barbara Municipal Airport: about 18 to 20 minutes by car'
+checkIn: 3:00 PM
+checkOut: 10:00 AM
+guestNotes:
+- Reviews like the neighborhood and the walk to the beach; this is guest opinion.
+- Host replies in reviews mention bathrooms being added, so confirm the current bathroom count with the host.
+- Hot tub and pool are not listed.

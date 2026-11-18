@@ -1,0 +1,60 @@
+status: unverified
+name: River Tubing, Hot Tub, Golf Course, Pool, Pet Friendly (Helen, Innsbruck)
+type: cabin
+state: georgia
+town: helen
+summary: Three-bedroom Helen cabin with hot tub and pool access; 2 pets, 50 lb limit listed.
+description: A three-bedroom, three-bathroom cabin in the Innsbruck area of Helen that sleeps 10, with a king in the main bedroom, a queen in another and two double bunks in the third. The amenity list shows a hot tub, a swimming pool, a deck, a grill, a fire pit, an electric vehicle charger and parking, and the main bath has a jetted tub. The Vrbo FAQ allows dogs and cats, 2 pets in total, up to 50 lb each, which suits a mid-size dog; no pet fee or fence is shown. We read this from the public Vrbo listing on 2026-11-18 and have not confirmed it with the host.
+sleeps: 10
+bedrooms: 3
+bathrooms: 3
+beds:
+- 'Master bedroom: 1 king bed'
+- 'Bedroom 2: 1 queen bed'
+- 'Bedroom 3: 2 double bunk beds'
+amenityGroups:
+- title: Kitchen and dining
+  items:
+  - Kitchen
+  - Separate dining area
+  - Barbecue grill
+- title: Comfort
+  items:
+  - Hot tub
+  - Jetted tub in one bathroom
+  - Hair dryer and bidet in each bathroom
+- title: Outdoors
+  items:
+  - Swimming pool
+  - Patio or deck
+  - Fire pit
+- title: Parking and access
+  items:
+  - Onsite parking
+  - Electric vehicle charging point
+locationNote: In the Innsbruck area of Helen, White County, Georgia, near a water park; the exact address is not given on the listing.
+distances:
+- 'Innsbruck Resort and Golf Club: about 17 minutes on foot'
+- 'Helen Tubing and Helen Water Park: about 4 minutes by car'
+- 'Helen Festhalle: about 5 minutes by car'
+- 'Unicoi State Park: about 5 minutes by car'
+- 'Chattahoochee River: within about 2 miles (listing FAQ)'
+checkIn: 4:00 PM
+checkOut: 11:00 AM
+accessNotes:
+- The listing does not say whether the pool is private or shared; confirm before booking.
+maxDogs: 2
+weightLimitLbs: 50
+largeDogsOk: not-confirmed
+fencedYard: not-confirmed
+privateOutdoor: not-confirmed
+petFee: not-confirmed
+breedRestrictions: not-confirmed
+houseRules:
+- 'Pets: dogs and cats allowed, "limit 2 total" with a maximum weight of "up to 50 lbs per pet" (Vrbo listing).'
+- No pet fee, fence or breed rule is shown on the page; the Policies section was not readable.
+beach: false
+mountain: true
+hotTub: 'yes'
+photoPermission: false
+sourceUrl: https://www.vrbo.com/3495924

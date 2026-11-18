@@ -1,0 +1,64 @@
+status: unverified
+name: Casa Azzurra, Dog Friendly in West Beach (Santa Barbara)
+type: vacation-home
+state: california
+town: santa-barbara
+summary: Three-bedroom 1904 house in West Beach, Santa Barbara; 1 dog up to 50 lbs, a short walk to the sand.
+description: A three-bedroom house from 1904 in the West Beach part of Santa Barbara that sleeps 6, with a king bed and two queen beds, two full baths and a half bath. The amenity list includes a deck or patio, a barbecue grill, air conditioning, dog toys and garage parking. The Vrbo FAQ allows one dog up to 50 lbs, and the page does not state a pet fee or any fence detail. West Beach, the harbor and the train station are all within a few minutes on foot. We read this from the public Vrbo listing on 2026-11-18 and have not confirmed it with the host.
+sleeps: 6
+bedrooms: 3
+bathrooms: 2.5
+beds:
+- 'Primary bedroom: 1 king bed'
+- 'Bedroom 2: 1 queen bed'
+- 'Bedroom 3: 1 queen bed'
+maxDogs: 1
+weightLimitLbs: 50
+largeDogsOk: not-confirmed
+fencedYard: not-confirmed
+fenceNotes: The listing page does not describe a fence or yard enclosure.
+privateOutdoor: not-confirmed
+petFee: not-confirmed
+breedRestrictions: not-confirmed
+houseRules:
+- 'Pets: "limit 1 total" with a maximum weight of "up to 50 lbs per pet" (Vrbo listing).'
+- The page does not show a pet fee, deposit, fence detail or breed rule, and no house-rules section was readable.
+beach: true
+mountain: false
+hotTub: not-confirmed
+photoPermission: false
+sourceUrl: https://www.vrbo.com/1445930
+amenityGroups:
+- title: Kitchen and dining
+  items:
+  - Kitchen
+  - Refrigerator
+  - Separate dining area
+  - Barbecue grill
+- title: Comfort
+  items:
+  - Air conditioning
+- title: Dogs
+  items:
+  - Listed as dog-friendly, with toys
+- title: Outdoors
+  items:
+  - Balcony or patio
+  - Deck or patio
+- title: Parking and access
+  items:
+  - Garage parking on site
+locationNote: In the West Beach area of Santa Barbara, California, a short walk from the waterfront; the exact address is not given on the listing.
+distances:
+- 'West Beach: about 2 minutes on foot'
+- 'MOXI museum: about 2 minutes on foot'
+- 'Santa Barbara Harbor: about 5 minutes on foot'
+- 'Santa Barbara Station: about 6 minutes on foot'
+- 'Stearns Wharf: about 8 minutes on foot'
+- 'Santa Barbara Municipal Airport: about 14 to 16 minutes by car'
+checkIn: 3:00 PM
+checkOut: 10:00 AM
+guestNotes:
+- Reviews are very positive about the location; this is guest opinion, not a host statement.
+- The page mentions a fire pit only in guest reviews, not in the amenity list.
+- Private beach access and a hot tub are not stated.

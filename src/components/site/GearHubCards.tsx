@@ -48,7 +48,7 @@ export function GearProductCard({ product }: { product: Product }) {
         </>
       )}
       <p className="mt-3 text-xs text-muted-foreground">
-        Specs from <a className="underline" href={product.specSource.url} target="_blank" rel="noopener noreferrer">{product.specSource.title}</a> ({product.specSource.publisher}, accessed {product.specSource.accessedOn}). Last verified {product.lastVerified ?? product.specSource.accessedOn}. Sizes, models and availability change: confirm on the seller's page.
+        Specs from <a className="underline" href={product.specSource.url} target="_blank" rel="nofollow noopener">{product.specSource.title}</a> ({product.specSource.publisher}, accessed {product.specSource.accessedOn}). Last verified {product.lastVerified ?? product.specSource.accessedOn}. Sizes, models and availability change: confirm on the seller's page.
       </p>
       {related.length > 0 && (
         <p className="mt-3 text-sm">Read with it: {related.map((g, i) => <span key={g.slug}>{i > 0 && ", "}<Link to="/guides/$slug" params={{ slug: g.slug }} className="text-primary underline">{g.title}</Link></span>)}</p>

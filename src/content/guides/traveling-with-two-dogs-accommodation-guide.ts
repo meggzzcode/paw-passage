@@ -23,6 +23,8 @@ export const guide: Guide = {
 - Do not use a rental to test whether the dogs can share food or chews. [[3]](https://www.aspca.org/pet-care/dog-care/common-dog-behavior-issues/food-guarding)
 - Check the car, the arrival routine and unattended-time rules before you book. This guide is for pet dogs; service animals have different legal and platform protections.
 
+Related questions: pet-fee wording differs by platform, so see [Airbnb vs Vrbo with a dog](/guides/airbnb-vs-vrbo-with-a-dog). Leaving two dogs for a dinner? See [can you leave a dog alone in a vacation rental](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental).
+
 ## Write a brief for each dog
 
 One dog's confidence does not establish the other's comfort, and two dogs who relax together at home may need more distance around meals, doors or unfamiliar noises.

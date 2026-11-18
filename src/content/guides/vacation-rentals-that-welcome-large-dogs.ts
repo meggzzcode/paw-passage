@@ -25,6 +25,8 @@ export const guide: Guide = {
 
 This guide concerns pet dogs; service animals have separate protections under applicable law and platform policy.
 
+Related questions: turned down for a large dog? See [what happens if you bring a dog to a no-pets rental](/guides/bringing-a-dog-to-a-no-pets-rental). Comparing platforms? See [Airbnb vs Vrbo with a dog](/guides/airbnb-vs-vrbo-with-a-dog).
+
 ## Write your dog's requirements first
 
 Make a short factual profile: current weight, breed or known mix (described honestly), age and mobility, ability to manage steps and unfamiliar surfaces, sleeping arrangement, crate size, alone-time needs, and any management needs around other dogs.

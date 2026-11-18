@@ -131,6 +131,8 @@ approvedOn: 2026-11-16
 
 All dollar amounts in worked examples are hypothetical, not quoted rates or market averages.
 
+Related questions: choosing a platform? See [Airbnb vs Vrbo with a dog](/guides/airbnb-vs-vrbo-with-a-dog). Planning a dinner without the dog? See [can you leave a dog alone in a vacation rental](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental). Booked a place that says no pets? See [what happens if you bring a dog to a no-pets rental](/guides/bringing-a-dog-to-a-no-pets-rental).
+
 ## The four fee structures
 
 | Structure | What it usually describes | What to confirm |

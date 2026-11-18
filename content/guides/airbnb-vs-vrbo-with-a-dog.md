@@ -102,6 +102,11 @@ research:
       checkedOn: 2026-11-18
       coversWell: Fee mechanics and damage-protection basics from a host perspective.
       gaps: Mentions pets only in passing and says nothing about pet rules for guests.
+    - url: https://www.hostaway.com/blog/airbnb-vs-vrbo-or-which-is-better-for-guests/
+      title: "Airbnb vs Vrbo | Which is Better for Guests?"
+      checkedOn: 2026-11-18
+      coversWell: Guest-side comparison of search filters and the main fee types (service, cleaning, extra guest, taxes).
+      gaps: Never discusses dogs or pet fees, lists no Vrbo pet filter, and says nothing about pet rules or how to verify them.
   gapsFound:
     - Top pages mix host and guest advice and rarely link to the official help pages behind their fee claims.
     - Several pages state fee ranges and host percentages with no source.
@@ -164,7 +169,7 @@ For more on the four fee units and deposits, see our [pet fees guide](/guides/ho
 
 ## How many dogs can you bring, and what if you add one later?
 
-Direct answer: both platforms let hosts set pet terms, so the allowed number is a listing question. Airbnb asks you to enter a pet count and says hosts can review it. [[1]](https://www.airbnb.com/help/article/3623) Vrbo tells hosts to state how many pets are allowed. [[7]](https://help.vrbo.com/articles/What-are-House-Rules)
+Direct answer: both platforms let hosts set pet terms, so the allowed number is a listing question. Airbnb asks you to enter a pet count. [[1]](https://www.airbnb.com/help/article/3623) Vrbo tells hosts to state how many pets are allowed. [[7]](https://help.vrbo.com/articles/What-are-House-Rules)
 
 If you decide to add a dog after booking, we did not find a help page we could read that explains how either platform changes the price. Ask the host to confirm the change and the new total in the message thread before you rely on it. Vrbo's fee help does say a host can send a payment request to add a charge to an existing reservation, which describes a mechanism rather than proof that the charge is valid. [[4]](https://help.vrbo.com/articles/How-do-I-manage-my-fees) Two or more dogs raise their own questions; see our [two-dog guide](/guides/traveling-with-two-dogs-accommodation-guide) and [large-dog guide](/guides/vacation-rentals-that-welcome-large-dogs).
 

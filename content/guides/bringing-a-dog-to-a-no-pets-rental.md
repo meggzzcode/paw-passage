@@ -136,7 +136,7 @@ research:
     - Separates platform wording from labelled host anecdotes.
     - A table of what could happen, who decides, and what to do instead.
     - A copy-and-paste message that offers a fee, vaccination proof, a crate and a short stay.
-    - Steps for three situations: not booked yet, booked but not arrived, and already there.
+    - "Steps for three situations: not booked yet, booked but not arrived, and already there."
   angle: Not a how-to for hiding a dog; an honest look at the consequences and the better routes.
   unverified: []
   followUps: []
@@ -234,7 +234,7 @@ Waiting until check-in leaves you with less time and fewer options.
 
 Message the host now, honestly, rather than waiting for them to find out. Say the dog is with you, that you should have asked first, and offer a fee and the steps above. If they say no, ask what they would accept and whether the platform can help with the booking, and have a plan for the dog such as a boarding facility or a nearby dog-friendly stay. Save the messages.
 
-We cannot say how a given host or the platform will respond. Telling them yourself leaves you in a better position than being found out.
+We cannot say how a given host or the platform will respond. Telling them yourself at least gives you the chance to explain, which you do not get if they find out first.
 
 ## A final checklist
 

@@ -23,6 +23,8 @@ export const guide: Guide = {
 - A fenced pool yard is not automatically a safe dog yard.
 - Even a good yard needs supervision; no listing makes a dog escape-proof.
 
+A good yard still does not mean the dog can be left alone. See [can you leave a dog alone in a vacation rental](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental) for the house-rule and safety checks.
+
 ## Start with your dog, not a universal fence height
 
 Write a short containment profile: your dog's size, known escape behavior, reactions to wildlife or passing dogs, and anything that changes in unfamiliar places.

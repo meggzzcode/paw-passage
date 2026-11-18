@@ -123,6 +123,11 @@ research:
       checkedOn: 2026-11-18
       coversWell: Shows real host wording for unattended-dog rules.
       gaps: Host-side forum thread from 2018 with replies to 2022; opinions, not platform policy; nothing for guests on what to do.
+    - url: https://www.travelnuity.com/pet-friendly-airbnbs-tips/
+      title: 10 Tips for Finding & Staying in a Pet-Friendly Airbnb
+      checkedOn: 2026-11-18
+      coversWell: Lists "no pets to be left unattended" as an example host rule, says to leave a dog alone only with permission, and has practical barking tips.
+      gaps: Personal-experience advice with no cited sources; no time guidance, no separation-anxiety steps, no sitter or daycare options, and no host message.
   gapsFound:
     - Top pages are host-side or touch the question in one paragraph.
     - Few explain that a pet-friendly label does not answer the unattended question.
@@ -207,7 +212,7 @@ For a guest, the practical step is to ask the host before bringing a camera or a
 
 - **Heat.** The ASPCA says never to leave animals alone in a parked vehicle, and to give plenty of fresh water and a shady place. [[6]](https://www.aspca.org/pet-care/general-pet-care/hot-weather-safety-tips) Do not solve "dogs not allowed on the trail" by leaving the dog in the car. Check how the rental heats and cools before you go.
 - **Cold.** The ASPCA says a car can hold the cold and cause animals to freeze, and that pets need a warm place to sleep, off the floor and away from drafts. [[7]](https://www.aspca.org/pet-care/general-pet-care/cold-weather-safety-tips)
-- **Escape and stress.** Separation anxiety signs include persistent barking, chewing and digging near doors and windows, escape attempts, and house soiling only when alone. [[5]](https://www.aspca.org/pet-care/dog-care/common-dog-behavior-issues/separation-anxiety) A doorway that gets used by a cleaner or a visitor is a new escape point. See our [secure yard guide](/guides/vacation-rental-secure-fenced-yard).
+- **Escape and stress.** Separation anxiety signs include persistent barking, chewing and digging near doors and windows, escape attempts, and house soiling that does not happen when you are home. [[5]](https://www.aspca.org/pet-care/dog-care/common-dog-behavior-issues/separation-anxiety) A doorway that gets used by a cleaner or a visitor is a new escape point. See our [secure yard guide](/guides/vacation-rental-secure-fenced-yard).
 
 ## How long is too long?
 

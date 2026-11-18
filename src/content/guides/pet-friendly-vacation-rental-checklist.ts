@@ -24,6 +24,8 @@ export const guide: Guide = {
 
 Our [interactive checklist](/tools/checklist) can hold the practical tasks; keep contractual answers in your booking messages too.
 
+Related questions: before you plan a dinner or hike without the dog, read [can you leave a dog alone in a vacation rental](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental). Choosing between platforms? See [Airbnb vs Vrbo with a dog](/guides/airbnb-vs-vrbo-with-a-dog). Booked a place that says no pets? See [what happens if you bring a dog to a no-pets rental](/guides/bringing-a-dog-to-a-no-pets-rental).
+
 ## The quick booking gate
 
 Do not commit nonrefundable money until you can answer these for the exact listing:

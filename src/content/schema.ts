@@ -289,6 +289,14 @@ export const settingsSchema = z.object({
       "must look like G-XXXXXXXXXX or be left empty",
     )
     .default(""),
+  amazonTrackingId: z
+    .string()
+    .trim()
+    .refine(
+      (v) => v === "" || /^[A-Za-z0-9]+(-[A-Za-z0-9]+)*-\d{2}$/.test(v),
+      "must look like yourname-20 (your Amazon Associates tracking ID) or be left empty",
+    )
+    .default(""),
   pinterestUrl: z
     .string()
     .trim()

@@ -35,7 +35,7 @@ const median = (a) => [...a].sort((x, y) => x - y)[Math.floor(a.length / 2)];
 
 async function once(browser) {
   const ctx = await browser.newContext({
-    ...devices["Pixel 5"],
+    ...(desktop ? { viewport: { width: 1440, height: 900 } } : devices["Pixel 5"]),
     serviceWorkers: "block",
     ignoreHTTPSErrors: true,
   });

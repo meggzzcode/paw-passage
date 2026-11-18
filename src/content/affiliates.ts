@@ -1,4 +1,5 @@
 import { affiliates } from "virtual:content";
+import { site } from "@/config/site";
 
 // Affiliate / booking links, managed in one place. A booking button is shown ONLY when the
 // link exists AND approved is true. Never add a partner you are not approved with.
@@ -19,7 +20,19 @@ export function isAmazon(link: AffiliateLink) {
 }
 
 // The list lives in content/affiliates.yml so it can be edited in Pages CMS (no code).
-export const affiliateLinks: AffiliateLink[] = affiliates;
+/** The placeholder an Amazon link address uses for the tracking ID, e.g. https://www.amazon.com/dp/B000000000?tag={amazonTrackingId}. */
+export const AMAZON_TAG_PLACEHOLDER = "{amazonTrackingId}";
+
+/** Fills in the tracking ID. A link that needs the ID while none is set resolves to "" (so it is never shown untagged). */
+export function resolveAffiliateUrl(url: string, tag: string = site.amazonTrackingId): string {
+  if (!url.includes(AMAZON_TAG_PLACEHOLDER)) return url;
+  return tag ? url.split(AMAZON_TAG_PLACEHOLDER).join(tag) : "";
+}
+
+export const affiliateLinks: AffiliateLink[] = affiliates.map((l) => ({
+  ...l,
+  url: resolveAffiliateUrl(l.url),
+}));
 
 export function getApprovedLink(
   id?: string,

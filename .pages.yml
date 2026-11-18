@@ -491,5 +491,6 @@ content:
       - { name: contactEmail, label: Business email address (shown on the Contact page), type: string }
       - { name: siteUrl, label: "Website address, e.g. https://pawsandpassage.com (no slash at the end)", type: string }
       - { name: ga4MeasurementId, label: "Google Analytics ID (looks like G-XXXXXXXXXX)", type: string }
+      - { name: amazonTrackingId, label: "Amazon Associates tracking ID (looks like yourname-20; Amazon links use it; leave empty to hide Amazon links)", type: string }
       - { name: pinterestUrl, label: "Pinterest profile address (https://www.pinterest.com/yourname/; leave empty until the account is ready)", type: string }
       - { name: stay22AccountId, label: "Stay22 account ID (from hub.stay22.com; leave empty until you have one)", type: string }

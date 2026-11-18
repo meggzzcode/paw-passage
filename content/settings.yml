@@ -4,6 +4,8 @@ contactEmail: "hello@pawsandpassage.com"
 siteUrl: "https://www.pawsandpassage.com"
 ga4MeasurementId: "G-1J97C8CPC1"
 # Pinterest profile address, e.g. https://www.pinterest.com/yourname/ . Leave empty until ready: the footer icon stays hidden.
+# Amazon Associates tracking ID (store ID). Amazon links use {amazonTrackingId} in their address; a buyer changes this one value to retag every Amazon link. Empty = Amazon links are hidden.
+amazonTrackingId: "pawspassage-20"
 pinterestUrl: "https://www.pinterest.com/paws_and_passage/"
 # Stay22 account ID (from hub.stay22.com). Leave empty until you have one: the Stay22 map then stays hidden.
 stay22AccountId: ""

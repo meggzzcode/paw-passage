@@ -12,6 +12,8 @@ export const site = {
   contactEmail: settings.contactEmail,
   /** Google Analytics 4 measurement ID, e.g. "G-XXXXXXX". Leave "" to send nothing. */
   ga4MeasurementId: settings.ga4MeasurementId,
+  /** Amazon Associates tracking ID (store ID), e.g. "yourname-20". Amazon links written with {amazonTrackingId} in their address use it. Leave "" and those links stay hidden. */
+  amazonTrackingId: settings.amazonTrackingId,
   /** Pinterest profile address. Leave "" and no Pinterest icon is shown. */
   pinterestUrl: settings.pinterestUrl,
   /** Stay22 account ID. Leave "" and the Stay22 map is not shown. */

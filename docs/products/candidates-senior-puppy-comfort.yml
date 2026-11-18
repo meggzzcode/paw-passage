@@ -1,0 +1,183 @@
+# Candidates for cluster senior-puppy-comfort. All inactive until reviewed. No prices, ratings or affiliate links.
+# Pages read 2026-11-18. Reviewer pages are cited only where read this session.
+candidates:
+  - id: pet-parents-pawtect-pads
+    name: Pawtect Pads (washable pee pads, 2 pack)
+    brand: Pet Parents
+    categories: [cabin-vacations, cleaning-and-rental-protection, senior-dogs]
+    summary: Machine-washable reusable pads with a floor-gripping backing, sold in packs of two in four sizes.
+    keySpecs:
+      - "Maker lists sizes Extra Small 18 x 24 in, Small 24 x 36 in, Medium 34 x 36 in, Large 41 x 41 in; 2 pads per pack"
+      - "Maker describes triple-layer tech: WickQuick absorbency layer, waterproof backing, StickyPaw floor-gripping backing"
+      - "Machine washable; maker says the pads last hundreds of washes or uses (no exact number)"
+      - "Fabric type not stated on the page; warranty terms not shown on the page (a repair or replace program is linked)"
+    specSource:
+      title: Pawtect Pads (2pack)
+      url: https://petparentsbrand.com/products/washable-puppy-pads
+      publisher: Pet Parents
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://petparentsbrand.com/products/washable-puppy-pads
+    lastVerified: 2026-11-18
+    active: false
+    manufacturerClaimsVsIndependentTesting: none cited. Waterproof and wash-life statements are the maker's own.
+    relatedGuides: [puppy-at-a-vacation-rental, vacation-rental-with-a-senior-dog]
+    valueRole: best-overall
+    whyItFitsTravel: Washable layers under a bed or crate mean no stack of disposables to pack, and the guides already tell owners to bring pads or washable layers for accidents.
+    valueEvidence: "Petful names it the washable pick: 'Best washable' (Pet Parents Pawtect Pads, 34x36 in, 2 count) at https://www.petful.com/pet-products/best-puppy-pads/ . Maker page states reuse and machine washing."
+    articlePlacement: "puppy-at-a-vacation-rental, section 'Accidents and the damage-and-cleaning risk' (after the ASPCA paragraph); vacation-rental-with-a-senior-dog, section 'What if your dog leaks or has accidents?' under 'What to do: Layers'."
+    amazonCheck: "Confirm the listing is Pet Parents Pawtect (sold by Pet Parents or Amazon), the size (Medium 34x36 in is the one Petful names), pack of 2, and that colour/size match the maker's list. Do not copy any claim from the listing that the maker page does not make."
+  - id: midwest-lifestages-dog-crate
+    name: LifeStages Dog Crate (single or double door, with divider panel)
+    brand: MidWest Homes for Pets
+    categories: [cabin-vacations, car-safety]
+    summary: A folding wire crate in six sizes with an included divider panel and removable plastic pan.
+    keySpecs:
+      - "Maker lists six sizes: 22, 24, 30, 36, 42 and 48 inch; single door and double door styles"
+      - "Divider panel included, which the maker says helps adjust living space for house training"
+      - "Removable leak-proof plastic pan; rubber feet protect floors; slide-bolt latch with Paw Block"
+      - "Maker says it sets up in seconds and folds flat for storage"
+      - "Product page gives no dimensions, dog weight guidance or warranty text (we could not confirm them)"
+    specSource:
+      title: LifeStages Dog Crate
+      url: https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/lifestages-dog-crate/
+      publisher: MidWest Homes for Pets
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/lifestages-dog-crate/
+    lastVerified: 2026-11-18
+    active: false
+    manufacturerClaimsVsIndependentTesting: none cited. Not described as crash-tested; it is not a car restraint.
+    relatedGuides: [puppy-at-a-vacation-rental, can-you-leave-a-dog-alone-in-a-vacation-rental]
+    valueRole: best-value
+    whyItFitsTravel: It folds flat for the car and the included divider lets one adult-size crate fit a growing puppy.
+    valueEvidence: "Maker spec: divider panel included. ASPCA (already cited in our puppy guide) says buy a size for the adult dog and use a divider while small: https://www.aspca.org/pet-care/general-pet-care/introducing-your-dog-crate . Value argument is spec-based, no reviewer 'budget' label read."
+    articlePlacement: "puppy-at-a-vacation-rental, section 'Crates and alone time' (last paragraph about crate size and divider); can-you-leave-a-dog-alone-in-a-vacation-rental, section 'Can I use a crate, and what about the furniture?'."
+    amazonCheck: "Confirm exact size (check against the dog's adult length), single vs double door, that divider panel and pan are in the box, and sold by MidWest or Amazon. Retailer pages show differing dimensions for the same nominal size, so measure for the car and the rental room."
+  - id: kong-classic
+    name: KONG Classic
+    brand: KONG
+    categories: [cabin-vacations, travel-comfort]
+    summary: A stuffable natural rubber toy in six size bands by dog weight, with a softer Puppy KONG for under 9 months.
+    keySpecs:
+      - "Maker sizes: XS up to 5 lb, S up to 20 lb, M 15-35 lb, L 30-65 lb, XL 60-90 lb, XXL 85+ lb; size up if between sizes"
+      - "100% natural rubber; maker says red rubber is for average chewers and power chewers should size up or try KONG Extreme"
+      - "Maker says Puppy KONG (pink or blue) is softer, for puppies under 9 months, and suggests it for crate training"
+      - "Maker says made in the USA with globally sourced materials; supervised use only; discard if damaged; no toy is indestructible"
+      - "Dishwasher-safe claim not found on the page"
+    specSource:
+      title: KONG Classic
+      url: https://www.kongcompany.com/kong-classic/
+      publisher: KONG Company
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://www.kongcompany.com/kong-classic/
+    lastVerified: 2026-11-18
+    active: false
+    manufacturerClaimsVsIndependentTesting: none cited. Durability wording is the maker's.
+    relatedGuides: [can-you-leave-a-dog-alone-in-a-vacation-rental, puppy-at-a-vacation-rental, christmas-week-in-a-cabin-with-a-dog]
+    valueRole: best-value
+    whyItFitsTravel: Small, light and already named in our alone-time routine as a stuffed food toy that takes 20 to 30 minutes to finish.
+    valueEvidence: "Maker size chart and chew guidance read at https://www.kongcompany.com/choosing-the-right-kong/ ; one toy covers adult and (as Puppy KONG) puppy use. No reviewer budget label read; value is a maker-spec argument."
+    articlePlacement: "can-you-leave-a-dog-alone-in-a-vacation-rental, section 'A settling-in routine' step 2 (stuffed food toy); puppy-at-a-vacation-rental, section 'Chewing'; christmas-week checklist line 'favorite chew'."
+    amazonCheck: "Confirm Classic (red) vs Puppy (pink/blue) vs Extreme (black), the size band for the dog's weight, and that the seller is KONG or Amazon, not a third party. Avoid bundles with other items."
+  - id: hest-dog-bed
+    name: HEST Dog Bed
+    brand: HEST
+    categories: [travel-comfort, senior-dogs, cabin-vacations]
+    summary: A two-layer memory foam bed with a washable cover that rolls up with a compression strap and carry handle.
+    keySpecs:
+      - "Maker sizes: Small 26 x 18 in (0-30 lb), Medium 36 x 24 in (30-60 lb), Large 44 x 30 in (60+ lb)"
+      - "Two layers of memory foam in a zip liner; maker describes the bottom layer as support and the top as plush"
+      - "Cover is tear-resistant stretch nylon twill, removable and machine washable per the maker; waterproof polyurethane-coated lower fabric"
+      - "Rolls up with integrated compression strap and carry handle"
+      - "Warranty terms not stated in text on the page; a 100-day money-back guarantee is listed (not a warranty)"
+    specSource:
+      title: HEST Dog Bed
+      url: https://hest.com/collections/tent/products/dog-bed
+      publisher: HEST
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://hest.com/collections/tent/products/dog-bed
+    lastVerified: 2026-11-18
+    active: false
+    manufacturerClaimsVsIndependentTesting: none cited by the maker. GearJunkie (named reviewer Mary Murphy) reports her own use; that is a review, not lab testing.
+    relatedGuides: [vacation-rental-with-a-senior-dog, christmas-week-in-a-cabin-with-a-dog]
+    valueRole: best-overall
+    whyItFitsTravel: It rolls into a strapped bundle, so a familiar bed can ride in the car and sit on a rental floor.
+    valueEvidence: "Sleep Foundation labels it 'Best for Travel' ('crafted with a roll-up design similar to that of a sleeping bag'): https://www.sleepfoundation.org/pet-sleep/best-dog-beds . GearJunkie: 'It packs down to a great size.' https://gearjunkie.com/outdoor/hest-dog-bed-mattress-review"
+    articlePlacement: "vacation-rental-with-a-senior-dog, section 'How do you make slippery floors safer...' bullet 'Your own bed' and section 'What should you pack...' checklist item 'Your dog's own bed'."
+    amazonCheck: "HEST may not sell on Amazon; confirm a listing exists, is sold by HEST or Amazon, and the size matches the dog's weight band. If not on Amazon, treat as maker-link only."
+  - id: furhaven-quilted-orthopedic-sofa-bed
+    name: Quilted Sofa Dog Bed (orthopedic foam)
+    brand: Furhaven
+    categories: [travel-comfort, senior-dogs, cabin-vacations]
+    summary: A sofa-style bed with convolute orthopedic foam, in small to giant sizes.
+    keySpecs:
+      - "Maker's page lists the foam as convolute orthopedic foam (no CertiPUR claim on the page)"
+      - "Size options listed as small, medium and giant; no dimensions on the page"
+      - "60-day warranty banner on the page; terms on a separate warranty page not read"
+      - "Cover washing instructions not found on the page"
+    specSource:
+      title: Sofa Dog Bed - Quilted
+      url: https://furhaven.com/products/furhaven-quilted-sofa-dog-bed-pet-bed
+      publisher: Furhaven
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://furhaven.com/products/furhaven-quilted-sofa-dog-bed-pet-bed
+    lastVerified: 2026-11-18
+    active: false
+    manufacturerClaimsVsIndependentTesting: none cited.
+    relatedGuides: [vacation-rental-with-a-senior-dog]
+    valueRole: best-value
+    whyItFitsTravel: Its bolster-and-foam shape suits a car boot bed or rental floor, but it is bulky, not a roll-up, so it fits a car trip better than a flight.
+    valueEvidence: "PetsRadar labels the Furhaven Orthopedic Sofa Style 'Best budget': 'proves that comfort doesn't need to cost a fortune'. https://petsradar.com/buying-guides/best-orthopaedic-dog-bed . Note: PetsRadar names the Orthopedic Sofa Style line; confirm the Amazon model is that line."
+    articlePlacement: "vacation-rental-with-a-senior-dog, bullet 'Your own bed' as the lower-cost alternative to HEST."
+    amazonCheck: "Confirm which Furhaven line (Quilted vs Perfect Comfort vs Sofa Style) PetsRadar means before linking; check size, that the cover is removable, and seller is Furhaven or Amazon. Do not describe it as treating any condition."
+  - id: help-em-up-harness
+    name: Help 'Em Up Harness
+    brand: Help 'Em Up
+    categories: [senior-dogs, travel-safety]
+    summary: A full-body lift harness with a handle, for helping a dog up, along stairs and in and out of a car, per the maker.
+    keySpecs:
+      - "Maker describes a full-body lift harness with a handle, lifting from under the sternum and pelvis"
+      - "Maker says it is fully adjustable with 10 adjustment points and fits dogs of all lengths"
+      - "Optional add-ons: Walking Handle, Shoulder Strap and Walking Loop Handles (loops in two sizes: XS/Small/Med and Large/X-Large)"
+      - "Maker says it can be left on for extended periods"
+      - "Harness size chart, harness materials and warranty terms not on the page read (linked pages not read)"
+    specSource:
+      title: Help 'Em Up Harness
+      url: https://www.helpemup.com/
+      publisher: Help 'Em Up
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://www.helpemup.com/
+    lastVerified: 2026-11-18
+    active: false
+    manufacturerClaimsVsIndependentTesting: none cited. All use claims are the maker's; the page also carries testimonials and vet quotes, which we did not use. Do not repeat the maker's health wording.
+    relatedGuides: [vacation-rental-with-a-senior-dog, dog-ramp-or-steps-for-the-car-and-cabin]
+    valueRole: best-overall
+    whyItFitsTravel: A handle helps an owner assist a dog at rental steps or a car door, which our guides flag as the pinch points.
+    valueEvidence: "Maker spec only (adjustment points, handle, add-ons). No reviewer read, so no value claim beyond that. Our guides already say carrying a large dog on stairs is not a safe fallback; owners should ask their vet whether a lift harness suits their dog."
+    articlePlacement: "dog-ramp-or-steps-for-the-car-and-cabin, section 'Stairs at the cabin or rental' (as a maker-described option); vacation-rental-with-a-senior-dog, section 'What if your dog balks at the stairs when you arrive?' with a vet-first note."
+    amazonCheck: "Confirm the listing is Help 'Em Up (sold by the maker or Amazon), the exact size by the dog's measurements on the maker's chart, and whether a front/rear or full-body model is shown. Skip any listing wording about pain or recovery."
+  - id: kurgo-loft-dog-jacket
+    name: Loft Dog Jacket
+    brand: Kurgo
+    categories: [winter-travel, outdoor-adventures]
+    summary: A reversible insulated, water-resistant dog jacket with reflective accents, sized XS to XL by neck and chest.
+    keySpecs:
+      - "Maker states Microtomic Ripstop material with polytech fill; water-resistant; reflective accents"
+      - "Reversible, two-way zipper for harness or collar access, two side adjustments with hook-and-loop"
+      - "Sizes by neck/chest: XS 14 in/15-20 in; S 16/19-27; M 19/26-35; L 23/30-39; XL 26/35-45 in; no weight ranges"
+      - "Machine wash gentle or hand wash, air dry; maker states a Lifetime Guarantee (repair or replace for manufacturing defects)"
+      - "No temperature rating on the page"
+    specSource:
+      title: Loft Dog Jacket
+      url: https://www.kurgo.com/p/loft-dog-jacket/POG30-17424
+      publisher: Kurgo
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://www.kurgo.com/p/loft-dog-jacket/POG30-17424
+    lastVerified: 2026-11-18
+    active: false
+    manufacturerClaimsVsIndependentTesting: none cited. Water-resistance and insulation are the maker's words.
+    relatedGuides: [christmas-week-in-a-cabin-with-a-dog, vacation-rental-with-a-senior-dog]
+    valueRole: best-value
+    whyItFitsTravel: A light layer that machine-washes and has a harness opening, for walks from a cabin in cold weather.
+    valueEvidence: "Maker warranty: Kurgo Lifetime Guarantee (repair or replace for manufacturing defects), read on the product page. Kurgo already has 3 products on our site. No reviewer budget label read."
+    articlePlacement: "christmas-week-in-a-cabin-with-a-dog, section 'Fire and cold: only what the sources say' (after the ASPCA cold-weather sentence) and the packing checklist."
+    amazonCheck: "Confirm size by measured neck and chest (not weight), colour, that it is the Loft jacket not the Core Sweater, and seller is Kurgo or Amazon. Do not claim a temperature rating."

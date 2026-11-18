@@ -1,0 +1,24 @@
+# Weekly dependency updates, grouped so the owner sees at most a few pull requests, never dozens.
+# Dependabot only opens pull requests; nothing merges by itself. Review and merge in GitHub when the CI check is green.
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    open-pull-requests-limit: 3
+    groups:
+      minor-and-patch:
+        update-types: [minor, patch]
+    labels: [dependencies]
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: monday
+    open-pull-requests-limit: 2
+    groups:
+      actions:
+        patterns: ["*"]
+    labels: [dependencies]

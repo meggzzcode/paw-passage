@@ -3,13 +3,14 @@
 // Usage: node scripts/perf/variant-proxy.mjs <listenPort> <targetPort> <variant>
 // Set H2_KEY and H2_CERT (PEM paths) to serve HTTP/2 over TLS (closer to Netlify than the HTTP/1.1 node server: with HTTP/1.1, requests queue behind the
 // browser's 6-connection limit, which exaggerates the cost of late-discovered images). Use https://localhost:<port> and ignoreHTTPSErrors.
-// Variants (combine with +, e.g. hero800+no-ga): baseline | no-preload | naive (no preload, no fetchpriority) | lazy | hero800 (800 px file + preload) | hero800-nopreload | inline-css | no-ga | no-js | no-tiles (drops the lazy below-the-fold card images to show their bandwidth contention)
+// Variants (combine with +, e.g. hero800+no-ga). "new" = current build untouched. Every other variant first reverts the home hero to the markup before the 2026-11-18 LCP fix
+// ("legacy": plain <img srcset> with React's auto preload, tile re-using the 1600 px file) and then applies its change: legacy | no-preload | naive (no preload, no fetchpriority) | lazy | hero800 (800 px file + preload) | hero800-nopreload | inline-css | no-ga | no-js | no-tiles (drops the lazy below-the-fold card images to show their bandwidth contention)
 import http from "node:http";
 import http2 from "node:http2";
 import fs from "node:fs";
 import zlib from "node:zlib";
 
-const [listen = "4182", target = "4180", variant = "baseline"] = process.argv.slice(2);
+const [listen = "4182", target = "4180", variant = "new"] = process.argv.slice(2);
 const V = new Set(variant.split("+"));
 const has = (...n) => n.some((x) => V.has(x));
 const TEXT = /^(text\/|application\/(javascript|json|xml|ld\+json)|image\/svg)/;
@@ -17,6 +18,12 @@ const TEXT = /^(text\/|application\/(javascript|json|xml|ld\+json)|image\/svg)/;
 const get = (path) => new Promise((res, rej) => http.get({ host: "127.0.0.1", port: Number(target), path }, (r) => { const c = []; r.on("data", (d) => c.push(d)); r.on("end", () => res(Buffer.concat(c).toString())); }).on("error", rej));
 
 async function rewrite(html) {
+  const big = html.match(/\/assets\/hero-porch-(?!800|mobile)[\w-]+\.jpg/)?.[0];
+  const small0 = html.match(/\/assets\/hero-porch-800-[\w-]+\.jpg/)?.[0];
+  html = html.replace(/<picture><source[^>]*\/>(<img[^>]*\/>)<\/picture>/, "$1");
+  html = html.replace(/<link rel="preload" as="image"[^>]*\/>/g, "");
+  html = html.replace("<link rel=\"stylesheet\"", `<link rel="preload" as="image" imageSrcSet="${small0} 800w, ${big} 1600w" imageSizes="100vw" fetchPriority="high"/><link rel="stylesheet"`);
+  html = html.replace(`<img src="${small0}" alt="" loading="lazy"`, `<img src="${big}" alt="" loading="lazy"`);
   const heroSmall = html.match(/\/assets\/hero-porch-800-[\w-]+\.jpg/)?.[0];
   if (has("no-preload", "naive", "hero800-nopreload")) html = html.replace(/<link rel="preload" as="image"[^>]*\/>/, "");
   if (has("naive")) html = html.replace(/(<img src="\/assets\/hero-porch-[^>]*?) fetchPriority="high"/, "$1");
@@ -43,7 +50,7 @@ server((req, res) => {
     const br = TEXT.test(type) && String(req.headers["accept-encoding"] ?? "").includes("br");
     const isHome = req.url === "/" || req.url.startsWith("/?");
     let body = r;
-    if (isHome && type.includes("html") && !has("baseline")) {
+    if (isHome && type.includes("html") && !has("new")) {
       const c = []; for await (const d of r) c.push(d);
       const out = Buffer.from(await rewrite(Buffer.concat(c).toString()));
       delete headers["content-length"]; body = (await import("node:stream")).Readable.from([out]);

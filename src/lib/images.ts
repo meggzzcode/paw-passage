@@ -63,8 +63,12 @@ import guideNoWeightLimit from "@/assets/guide-no-weight-limit.jpg";
 import guideNoWeightLimitCard from "@/assets/guide-no-weight-limit-card.jpg";
 import guidePuppy from "@/assets/guide-puppy.jpg";
 import guidePuppyCard from "@/assets/guide-puppy-card.jpg";
+import guideRampSteps from "@/assets/guide-ramp-steps.jpg";
+import guideRampStepsCard from "@/assets/guide-ramp-steps-card.jpg";
 import guideLooseDog from "@/assets/guide-loose-dog.jpg";
 import guideLooseDogCard from "@/assets/guide-loose-dog-card.jpg";
+import guideGaStateParkCabins from "@/assets/guide-ga-state-park-cabins.jpg";
+import guideGaStateParkCabinsCard from "@/assets/guide-ga-state-park-cabins-card.jpg";
 import guideDogLifeJacket from "@/assets/guide-dog-life-jacket.jpg";
 import guideDogLifeJacketCard from "@/assets/guide-dog-life-jacket-card.jpg";
 import guideTrueCost from "@/assets/guide-true-cost.jpg";
@@ -111,7 +115,9 @@ const stockImages = {
   "guide-red-flags": { src: guideRedFlags, card: guideRedFlagsCard, alt: "A black and white dog standing on a wooden deck outside the glass doors of a wood-paneled cabin interior, looking in toward the camera" },
   "guide-no-weight-limit": { src: guideNoWeightLimit, card: guideNoWeightLimitCard, alt: "A medium-to-large white dog with brown patches standing on a stone patio beside a log-clad cabin with a sliding glass door, with autumn-colored forest hills behind" },
   "guide-puppy": { src: guidePuppy, card: guidePuppyCard, alt: "A tiny black and tan puppy lying on a colorful striped woven rug indoors, looking at the camera" },
+  "guide-ramp-steps": { src: guideRampSteps, card: guideRampStepsCard, alt: "A black, white and gray merle dog standing on its hind legs with front paws on the wooden steps of a blue metal platform, on a gravel play area" },
   "guide-loose-dog": { src: guideLooseDog, card: guideLooseDogCard, alt: "A brown German wirehaired pointer with its tongue out, wearing an orange collar with a green tag and attached to a leash, outdoors in front of dry brush" },
+  "guide-ga-state-park-cabins": { src: guideGaStateParkCabins, card: guideGaStateParkCabinsCard, alt: "A golden retriever with an open mouth, wearing an orange collar and attached to a dark red leash, standing among evergreen trees next to a moss-covered rock" },
   "guide-dog-life-jacket": { src: guideDogLifeJacket, card: guideDogLifeJacketCard, alt: "A small tan and white fluffy dog with its mouth open, wearing a teal life jacket and standing on the carpeted deck of a pontoon boat, with a lake and tree-lined shore behind it under a blue sky" },
   "guide-true-cost": { src: guideTrueCost, card: guideTrueCostCard, alt: "A tan and white Shiba Inu lying on a shop doorstep beside a white rolling suitcase on a city street" },
   "guide-travel-bowls": { src: guideTravelBowls, card: guideTravelBowlsCard, alt: "A tan and white corgi in a teal harness licking its lips and splashing water beside an orange collapsible silicone bowl on a granite rock outdoors, with grass, boulders and a blue sky with clouds behind" },

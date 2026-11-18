@@ -1,0 +1,217 @@
+# Candidates for cluster safety-health-id. All inactive until reviewed. No prices, ratings or review counts.
+# Every spec below was read on the maker page named in specSource this session (2026-11-18) unless a line says otherwise.
+candidates:
+  - id: my-medic-pet-medic-dog-first-aid-kit
+    name: Pet Medic Dog First Aid Kit
+    brand: My Medic
+    categories: [travel-safety]
+    summary: A water-resistant ripstop-bag dog kit whose page itemizes every component with a quantity, including a muzzle and a syringe.
+    keySpecs:
+      - 'Maker headline claim: "29 first aid supplies"; the itemized list on the same page adds to about 23 units (about 28 if the six parts of the gauze module are counted), so the headline is the maker claim, not a count we could reproduce'
+      - "Itemized: 2 diphenhydramine pills, triangular bandage, 2 inch elastic bandage, tweezer, space blanket, mini gauze module, 1 pair gloves, hydrogen peroxide spray, 30 mL syringe, dog muzzle, 5 triple antibiotic packets, 5 antiseptic wipes, printed pet first aid guide, digital guide download card"
+      - "Includes medication items (diphenhydramine, hydrogen peroxide, triple antibiotic); the page gives no dosing guidance beyond the included guide, so the article should tell readers to ask their own vet about these"
+      - "Weight listed as 10.25 oz; dimensions 7.5 in high x 5.25 in wide x 3.5 in deep"
+    specSource: {title: Pet Medic - Dog First Aid Kit, url: "https://mymedic.com/products/pet-medic-dog-first-aid-kit", publisher: My Medic, accessedOn: 2026-11-18}
+    manufacturerUrl: https://mymedic.com/products/pet-medic-dog-first-aid-kit
+    lastVerified: 2026-11-18
+    active: false
+    manufacturerClaimsVsIndependentTesting: "No independent test cited. Piece count is a maker claim that does not match its own itemized list."
+    relatedGuides: [dog-travel-first-aid-kit-guide]
+    valueRole: best-overall
+    whyItFitsTravel: A pouch-sized kit that lists quantities and weight, so a reader can compare it line by line against the AVMA checklist already in the guide.
+    valueEvidence: "Maker page gives per-item quantities, weight and dimensions (rare among kits). Contrast with the headline count that does not match the list, which the guide can show as a worked example of checking contents."
+    articlePlacement: "dog-travel-first-aid-kit-guide, in the product comparison next to the two Kurgo kits and AMK kits; use the 29-vs-itemized gap as the 'count the list, not the headline' example."
+    amazonCheck: "Confirm the listing is the Pet Medic dog kit (not the Med Pack or the Everyday Rescue bundle), is sold by My Medic or Amazon, and that the contents photo matches the maker list above (muzzle and syringe present). Not confirmed: whether current stock matches the page."
+  - id: amk-adventure-dog-vet-in-a-box
+    name: Adventure Dog Medical Kit - Vet in a Box
+    brand: Adventure Medical Kits
+    categories: [travel-safety]
+    summary: A dog kit built around a field-medicine book, with a fully itemized contents list and no inflated piece count.
+    keySpecs:
+      - "Itemized with quantities: 2 sterile gauze dressings 3x3 in, 2 non-adherent gauze 2x3 in, roller gauze 2 in x 4.1 yd, 2 in cohesive bandage, triangular bandage, 10 cc wound irrigation tool, splinter/tick forceps, 3 single-use triple antibiotic, 6 antiseptic wipes, 2 alcohol swabs, 1 oz eyewash"
+      - "Also lists 2 diphenhydramine 25 mg, 3% hydrogen peroxide 1 oz, and a book titled Canine Field Medicine"
+      - "Page states no piece count; listed quantities add to 25 units (our arithmetic)"
+      - "Page does not give weight or dimensions; describes it only as lightweight and packable"
+    specSource: {title: Vet in a Box Dog First Aid Kit, url: "https://adventuremedicalkits.com/products/adventure-dog-medical-kit-vet-in-a-box", publisher: Adventure Medical Kits, accessedOn: 2026-11-18}
+    manufacturerUrl: https://adventuremedicalkits.com/products/adventure-dog-medical-kit-vet-in-a-box
+    lastVerified: 2026-11-18
+    active: false
+    manufacturerClaimsVsIndependentTesting: "None cited for this kit. (A named reviewer, Tree Line Review, found its Trail Dog kit's stated count did not match its list; that is a different kit.)"
+    relatedGuides: [dog-travel-first-aid-kit-guide]
+    valueRole: best-value
+    whyItFitsTravel: Same maker as the Trail Dog kit already on the site but with eyewash, more wipes and a reference book, in one itemized list.
+    valueEvidence: "Weak. Maker spec only: itemized list with no inflated count. No reviewer read this session names it a budget pick, so do not label it 'best value' in copy until one is found."
+    articlePlacement: "dog-travel-first-aid-kit-guide, comparison table beside amk-trail-dog; note the book and eyewash differences."
+    amazonCheck: "Confirm exact kit name, that the seller is the maker or Amazon, and that the contents match the list above. Not confirmed: weight and dimensions."
+  - id: ruffwear-the-beacon-dog-safety-light
+    name: The Beacon Dog Safety Light
+    brand: Ruffwear
+    categories: [travel-safety, outdoor-adventures]
+    summary: A clip-on rechargeable light with three modes and three colors that attaches to Ruffwear collars and harness light loops.
+    keySpecs:
+      - "Three modes: Slow Flash, Fast Flash, Always On; three colors"
+      - "Operating time up to 20 hrs; charge time about 1.5 hrs by micro USB; 280mAh LiPo battery"
+      - "Maker says waterproof to a depth of 1m for 30 minutes"
+      - "Quick Clip compatible with all Ruffwear collars and apparel light loops"
+      - "Page lists no weight and gives no warranty terms (links to a guarantee page we did not read)"
+    specSource: {title: Waterproof & Rechargeable Dog Safety Light, url: "https://ruffwear.com/products/the-beacon-safety-dog-light", publisher: Ruffwear, accessedOn: 2026-11-18}
+    manufacturerUrl: https://ruffwear.com/products/the-beacon-safety-dog-light
+    lastVerified: 2026-11-18
+    active: false
+    manufacturerClaimsVsIndependentTesting: "Run time and waterproof depth are maker figures. Tree Line Review lists the same 1 m / 30 min rating under its pick but does not state it re-tested it."
+    relatedGuides: [new-years-eve-with-a-dog-in-a-vacation-rental, if-your-dog-gets-loose-on-a-trip]
+    valueRole: best-overall
+    whyItFitsTravel: A light you can move between collars and harnesses is useful in an unfamiliar yard or on a late arrival.
+    valueEvidence: 'Tree Line Review (https://www.treelinereview.com/gearreviews/best-light-up-dog-collars) labels it "Best waterproof"; maker lists 20 h run time and 1 m / 30 min rating.'
+    articlePlacement: "if-your-dog-gets-loose-on-a-trip, new section on being seen after dark; new-years-eve guide, 'Before dark' step."
+    amazonCheck: "Confirm it is the Beacon (not the Audible Beacon for guide dogs), colour option, sold by Ruffwear or Amazon, charging port type on the listing. Page showed the clear colour as out of stock; check current availability."
+  - id: petcube-gps-tracker
+    name: Petcube GPS Tracker
+    brand: Petcube
+    categories: [travel-safety]
+    summary: A small cellular GPS tracker whose maker says a paid subscription is required for it to operate.
+    keySpecs:
+      - 'Subscription: maker FAQ says "a subscription is required"; hardware FAQ says it "requires an active paid subscription to operate"; plans named Basic and Premium (no prices recorded here)'
+      - "Weight 29 g; size 60 x 25 x 20 mm; page states no dog size or weight range, only 'universal fit'"
+      - "Battery up to 30 days in power save mode; about 1 hour fast charge (maker)"
+      - "IP67 water resistance (maker); LTE-M cellular plus satellite positioning"
+      - "Maker lists a lifetime warranty with both plans (terms page not read)"
+    specSource: {title: "Petcube GPS Tracker for Dogs", url: "https://petcube.com/tracker/", publisher: Petcube, accessedOn: 2026-11-18}
+    manufacturerUrl: https://petcube.com/tracker/
+    lastVerified: 2026-11-18
+    active: false
+    manufacturerClaimsVsIndependentTesting: "Battery and coverage are maker claims. Tree Line Review compares it but names it an also-ran, not an award pick."
+    relatedGuides: [if-your-dog-gets-loose-on-a-trip, new-years-eve-with-a-dog-in-a-vacation-rental]
+    valueRole: best-value
+    whyItFitsTravel: Small and light for a dog that bolts in an unfamiliar place, with the subscription requirement stated plainly by the maker.
+    valueEvidence: 'Tree Line Review (https://www.treelinereview.com/gearreviews/best-gps-dog-collars) notes "Lowest price of subscription-based trackers"; it has no formal budget award.'
+    articlePlacement: "if-your-dog-gets-loose-on-a-trip, tracker section and FAQ on subscriptions, as a cheaper-to-buy alternative to Tractive and Fi; new-years-eve guide, bolting prep."
+    amazonCheck: "Confirm the tracker generation sold, that the listing says a plan is needed, seller is Petcube or Amazon, and that the carrier coverage in your areas matches the maker's map. Not confirmed: suitable dog size."
+  - id: ezydog-crosscheck-harness
+    name: Crosscheck Dog Harness
+    brand: EzyDog
+    categories: [travel-safety, outdoor-adventures]
+    summary: A figure-8 harness with two leash attachment points that the maker markets for dogs that slip out of other harnesses.
+    keySpecs:
+      - 'Maker wording: "Escape proof figure-8 design" and "The Perfect Training Harness For Escape Artist Dogs" (maker claim)'
+      - "Two leash attachment points: side D-ring and rear; dual stainless steel D rings; silicone neck liner"
+      - "Girth sizes XS 12-16 in, S 15-20, M 19-25, L 22-29, XL 26-38"
+      - "One-year warranty on all products and a 30-day return window for a full refund (maker)"
+      - "Page does not mention reflective material and does not name the webbing"
+    specSource: {title: Crosscheck Dog Harness, url: "https://store.ezydog.com/products/crosscheck-dog-harness", publisher: EzyDog, accessedOn: 2026-11-18}
+    manufacturerUrl: https://store.ezydog.com/products/crosscheck-dog-harness
+    lastVerified: 2026-11-18
+    active: false
+    manufacturerClaimsVsIndependentTesting: "Escape-proof is the maker's claim; no independent test read."
+    relatedGuides: [if-your-dog-gets-loose-on-a-trip, new-years-eve-with-a-dog-in-a-vacation-rental, vacation-rental-with-a-reactive-dog]
+    valueRole: best-value
+    whyItFitsTravel: A second harness option for a dog that backs out of a collar or slides out of a standard harness at doors.
+    valueEvidence: "Maker spec: stated sizing by girth, two attachment points, one-year warranty and 30-day return window. No reviewer quote read for value."
+    articlePlacement: "if-your-dog-gets-loose-on-a-trip, prevention section on harness and leash fit; new-years-eve guide, 'a person at each door' list; reactive-dog guide only as a note about a secure fit, not behavior advice. Attribute 'escape proof' to the maker."
+    amazonCheck: "Confirm size by girth, colour, sold by EzyDog or Amazon. Page says not to leave a dog tied up (warranty voided); do not describe it as a restraint for cars."
+  - id: boomerang-tags-collartag-engraved
+    name: CollarTags Diamond Engraved Pet ID Tag
+    brand: Boomerang Tags
+    categories: [travel-safety]
+    summary: A diamond-engraved stainless slide-on or collar-attached ID tag with a legibility guarantee stated by the maker.
+    keySpecs:
+      - 'Maker guarantee: "UNCONDITIONALLY GUARANTEED to Last the Life of Your Pet!" and text "to remain legible for the life of the pet"'
+      - '"No Quibble Satisfaction Guarantee": refund and keep the tags if unhappy (maker)'
+      - "Diamond engraved (page title); slide-on versions for collar widths 5/8, 3/4 or 1 in; collar-with-tag options for neck sizes 12 to 26 in"
+      - "Page does not state lines of text per tag or attachment mechanism for every version"
+    specSource: {title: "CollarTags Pet ID Collar Tags for Cats & Dogs Diamond Engraved", url: "https://www.boomerangtags.com/collartags-engraved-pet-identification-tags/", publisher: Boomerang Tags, accessedOn: 2026-11-18}
+    manufacturerUrl: https://www.boomerangtags.com/collartags-engraved-pet-identification-tags/
+    lastVerified: 2026-11-18
+    active: false
+    manufacturerClaimsVsIndependentTesting: "Guarantee and durability are maker claims; no independent test read."
+    relatedGuides: [if-your-dog-gets-loose-on-a-trip, new-years-eve-with-a-dog-in-a-vacation-rental]
+    valueRole: best-value
+    whyItFitsTravel: A slide-on tag sits flat on the collar and carries a phone number a finder can read without a scanner; engraved text needs no battery.
+    valueEvidence: "Maker guarantee that the text stays legible for the pet's life, versus the 18-month warranty AKC Reunite lists for its tag (both maker statements)."
+    articlePlacement: "if-your-dog-gets-loose-on-a-trip, 'The tag' section next to akc-reunite-stainless-collar-tag; new-years-eve guide, 'Check the tag' step."
+    amazonCheck: "Confirm which version (slide-on vs rivet-on vs collar) is linked, that it is sold by Boomerang Tags or Amazon, and the engraving options offered on that listing. Not confirmed: whether the Amazon listing carries the same guarantee wording."
+  - id: ruffwear-crag-hands-free-leash
+    name: Crag Hands-Free Leash
+    brand: Ruffwear
+    categories: [outdoor-adventures, travel-safety]
+    summary: A 6 ft leash with reflective webbing, a swivel aluminum clip and a handle that can be worn around the waist.
+    keySpecs:
+      - "6 ft (1.8 m) long, 1 in (25 mm) wide; polyester webbing"
+      - 'Maker: "Integrated reflectivity helps boost visibility for dogs and humans" (some owner reviews on the page say it is on one side only)'
+      - "Anodized 6061-T6 aluminum swivel Talon Clip; side-release buckle on the handle; can be worn at the waist or hitched to a post"
+      - "Page states no strength rating or warranty terms; all colours showed out of stock at capture"
+    specSource: {title: "Crag Hands-Free Leash", url: "https://ruffwear.com/products/crag-leash", publisher: Ruffwear, accessedOn: 2026-11-18}
+    manufacturerUrl: https://ruffwear.com/products/crag-leash
+    lastVerified: 2026-11-18
+    active: false
+    manufacturerClaimsVsIndependentTesting: "None cited."
+    relatedGuides: [new-years-eve-with-a-dog-in-a-vacation-rental, if-your-dog-gets-loose-on-a-trip]
+    valueRole: premium
+    whyItFitsTravel: Reflective webbing and a waist option keep both hands free for doors and gates on late arrivals.
+    valueEvidence: "Maker spec only (reflective webbing, aluminum clip). No reviewer quote read."
+    articlePlacement: "new-years-eve guide, evening-routine section (leash even in a fenced yard); if-your-dog-gets-loose, prevention. Not for the reactive-dog guide: the maker says nothing about pullers."
+    amazonCheck: "Confirm colour and that stock exists (maker page showed all out of stock). Confirm Ruffwear or Amazon as seller."
+  - id: nite-ize-nitedog-collar-cover
+    name: NiteDog Rechargeable LED Collar Cover (Disc-O Select)
+    brand: Nite Ize
+    categories: [travel-safety, outdoor-adventures]
+    summary: A rechargeable LED strip that wraps onto an existing collar, leash or harness up to 1 in wide.
+    keySpecs:
+      - "Fits collars, leashes and harnesses up to 1 in wide; 6.42 in long; two micro hook-and-loop tabs"
+      - "Run time 7 hours; recharge about 1.25 hours by micro USB (cable not included)"
+      - "Three selectable colours (green, blue, red), a red flash mode and a colour-changing mode"
+      - "Housing described as weather-resistant; no waterproof rating given"
+      - "Covered by the maker's Worry Free Guarantee (repair, replacement or exchange); no length stated"
+    specSource: {title: "NiteDog Rechargeable LED Collar Cover - Disc-O Select", url: "https://niteize.com/nitedog-led-rechargeable-collar-cover", publisher: Nite Ize, accessedOn: 2026-11-18}
+    manufacturerUrl: https://niteize.com/nitedog-led-rechargeable-collar-cover
+    lastVerified: 2026-11-18
+    active: false
+    manufacturerClaimsVsIndependentTesting: "Run time is a maker figure. Tree Line Review lists it as weather-resistant and advises against swimming with light-up collars."
+    relatedGuides: [new-years-eve-with-a-dog-in-a-vacation-rental, if-your-dog-gets-loose-on-a-trip]
+    valueRole: best-value
+    whyItFitsTravel: Moves between the dog's own collar and a spare, so a rental-arrival light does not mean a new collar.
+    valueEvidence: 'Tree Line Review (https://www.treelinereview.com/gearreviews/best-light-up-dog-collars) labels it "Best attachment"; maker backs it with a repair/replace guarantee. Tree Line named a different product its budget pick, which we could not confirm on a maker page.'
+    articlePlacement: "if-your-dog-gets-loose-on-a-trip, after-dark visibility; new-years-eve guide 'Before dark' step as a lighter alternative to the Beacon."
+    amazonCheck: "Confirm it is the Disc-O Select collar cover (not the older LED collar or the SpotLit), colour, seller is Nite Ize or Amazon, and width of the dog's collar is 1 in or less."
+  - id: garmin-alpha-t-20-dog-collar
+    name: Alpha T 20 Dog Collar
+    brand: Garmin
+    categories: [travel-safety]
+    summary: A radio-based tracking collar that pairs with a compatible Garmin handheld rather than a phone plan.
+    keySpecs:
+      - "Maker manual: VHF range up to 14.48 km (9 mi); ANT range up to 10 m; battery up to 68 hr (136 hr with an optional extended battery box); water rating 1 ATM"
+      - "Pairs with a Garmin handheld (listed compatible models include Alpha 10, 100, 200, 200i, 300, 300i, Astro 430, PRO 550 Plus per Garmin search summary); the handheld is sold separately"
+      - "Garmin's manual page we read does not mention a subscription; the no-monthly-fee statement comes from Tree Line Review"
+      - "Garmin US product page returned navigation only when fetched; specs above are from the maker's owner's manual"
+    specSource: {title: "Alpha T 20 Owner's Manual - Dog Collar Device Specifications", url: "https://www8.garmin.com/manuals/webhelp/GUID-74035D64-33C8-4CC0-8053-23CB54692716/EN-US/GUID-436F95DA-B7C8-4AAD-AE07-BDC58BB735C2.html", publisher: Garmin, accessedOn: 2026-11-18}
+    manufacturerUrl: https://www.garmin.com/en-US/p/714362/
+    lastVerified: 2026-11-18
+    active: false
+    manufacturerClaimsVsIndependentTesting: "Range and battery are maker figures. Tree Line Review calls it best rural and says it 'doesn't require a separate monthly subscription fee'."
+    relatedGuides: [if-your-dog-gets-loose-on-a-trip]
+    valueRole: premium
+    whyItFitsTravel: For remote cabins with weak cell coverage, a radio link works without a mobile plan; it is built for sporting dogs, so it is bulky for a casual traveller.
+    valueEvidence: 'Tree Line Review (https://www.treelinereview.com/gearreviews/best-gps-dog-collars) names it "Best rural"; no-subscription wording quoted above.'
+    articlePlacement: "if-your-dog-gets-loose-on-a-trip, tracker section as the no-subscription, no-cell-coverage contrast to Tractive and Fi; clearly note it needs a handheld bought separately."
+    amazonCheck: "Confirm T 20 (not TT 25 or the Alpha LTE, which Tree Line says is subscription-based), whether a handheld is bundled, and that VHF frequency matches the US. Do not link before the Garmin US page specs are re-read in a browser."
+  - id: 2-hounds-design-double-connection-leash
+    name: 5/8" Reflective Black Double Connection Leash
+    brand: 2 Hounds Design
+    categories: [travel-safety, outdoor-adventures]
+    summary: A leash that clips to a harness front and back, or to a harness and a collar at once, sold in training and Euro lengths.
+    keySpecs:
+      - "Standard training leash 3 ft long on two points, 5 ft on one point; Euro leash 5 ft on two points, 8 ft on one point"
+      - "Maker says it can connect to front and back of the harness, either alone, or to the harness and a collar at the same time"
+      - "Designed for the maker's Freedom No-Pull Harness"
+      - "Page names reflective in the title only; no materials, warranty or size guidance on the page"
+    specSource: {title: 5/8" Reflective Black Double Connection Leash - 2 Hounds Design, url: "https://2houndsdesign.com/products/5-8-reflective-black-double-connection-leash", publisher: 2 Hounds Design, accessedOn: 2026-11-18}
+    manufacturerUrl: https://2houndsdesign.com/products/5-8-reflective-black-double-connection-leash
+    lastVerified: 2026-11-18
+    active: false
+    manufacturerClaimsVsIndependentTesting: "None cited."
+    relatedGuides: [if-your-dog-gets-loose-on-a-trip, new-years-eve-with-a-dog-in-a-vacation-rental]
+    valueRole: premium
+    whyItFitsTravel: A backup second connection point on the dog if one clip or one attachment fails at a door.
+    valueEvidence: "Weak: maker spec only. Materials and warranty not on the page."
+    articlePlacement: "if-your-dog-gets-loose-on-a-trip, prevention; new-years-eve guide leash step. Present as a way to use two points, not as an escape guarantee."
+    amazonCheck: "Confirm length type (training vs Euro), that the buyer also owns a compatible harness, and the seller. Not confirmed: materials, warranty, reflective details. Maker harness page returned 404 so harness sizes are unconfirmed."

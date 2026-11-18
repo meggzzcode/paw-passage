@@ -19,7 +19,7 @@ Level 1 = confirmed by a source we read; 2 = what most people report (3+ indepen
 | Whether a given Vrbo pet charge is mandatory | none | 3 |
 | AvantStay Pismo Beach page: specialized deep-cleaning fee applies to all stays, no amount stated | https://www.avantstay.com/pet-friendly-vacation-rentals/california/pismo-beach | 1 |
 | Sliding Rock: "no pet fees, breed restrictions, or weight limits"; select cabins have fenced yards, some a gated porch or deck connecting to the yard; check each listing's photos | https://slidingrockcabins.com/pet-friendly-cabins/ | 1 |
-| Elk Springs Pet Friendly Cabins page: up to two dogs, combined 60 lb; $125 first dog, $50 additional; breed exclusions incl. Pit Bulls and German Shepherds; Restrictions section lists $50 per animal | https://elkspringsresort.com/?p=1815 | 1 |
+| Elk Springs Pet Friendly Cabins page: up to two dogs, combined 60 lb; $125 first dog, $50 additional; breed exclusions incl. Pit Bulls and German Shepherds; Restrictions section lists $50 per animal and dogs over 50 lb not permitted | https://elkspringsresort.com/?p=1815 | 1 |
 | Elk Springs Pet Policy page: dogs over 50 lb not permitted; $50 per animal; breeds not permitted anywhere on property | https://elkspringsresort.com/?p=1899 | 1 |
 | Why Elk Springs pages differ (different cabins or out of date) | none | 3 |
 | Twiddy: per-home limits, mostly "2 Dog Maximum", one "4 Dog Maximum" | https://blog.twiddy.com/bring-your-pets-on-vacation/ | 1 |

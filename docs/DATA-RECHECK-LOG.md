@@ -19,3 +19,28 @@ Fees guide, how-many-dogs guide, large-dogs guide, checklist guide, breed guide,
 | Date | Who | Managers read | Changed | Notes |
 |---|---|---|---|---|
 | 2026-11-18 | Paws & Passage Editors | 38 of 49 attempted (11 blocked) | first snapshot | Every figure re-checked against live pages; fields for pool/hot tub, minimum age and unattended dogs added same day |
+
+
+## Upkeep for the 2026-11-18 batch (moved from the guides' research blocks)
+
+### what-a-dog-really-costs-on-a-vacation-rental
+- A dated boarding-versus-bringing comparison if an official or primary source for boarding prices is found.
+
+### can-dogs-go-in-a-rental-pool-or-hot-tub
+- Re-read the seven pages at the next data re-check and add any new manager that states a pool or hot tub rule.
+- Look for a veterinary page that addresses hot tub use specifically.
+
+### pet-friendly-listing-red-flags
+- Re-check Vrbo's house-rules field and whether long text is cut off, once an official page says.
+
+### vacation-rentals-with-no-dog-weight-limit
+- Re-read the eight manager pages on a schedule and log changes.
+- Add per-listing weight fields if a manager publishes them.
+
+### puppy-at-a-vacation-rental
+- Re-read the five manager pages when we refresh the dataset.
+- Add a minimum-age column to the tools if more managers state one.
+
+### if-your-dog-gets-loose-on-a-trip
+- Replaces src/content/guides/dog-id-tags-and-gps-trackers-for-travel-guide.ts and the lost-dog section of the New Year's Eve guide; the owner retires the old pieces.
+- The AAHA, AVMA and CDC pages were not used; the AAHA lookup statement is cited as reproduced on AKC Reunite's FAQ.

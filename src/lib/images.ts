@@ -51,6 +51,20 @@ import guideNoPetFee from "@/assets/guide-no-pet-fee.jpg";
 import guideNoPetFeeCard from "@/assets/guide-no-pet-fee-card.jpg";
 import guideChristmasWeek from "@/assets/guide-christmas-week.jpg";
 import guideChristmasWeekCard from "@/assets/guide-christmas-week-card.jpg";
+import guideReactiveDog from "@/assets/guide-reactive-dog.jpg";
+import guideReactiveDogCard from "@/assets/guide-reactive-dog-card.jpg";
+import guidePoolHotTub from "@/assets/guide-pool-hot-tub.jpg";
+import guidePoolHotTubCard from "@/assets/guide-pool-hot-tub-card.jpg";
+import guideRedFlags from "@/assets/guide-red-flags.jpg";
+import guideRedFlagsCard from "@/assets/guide-red-flags-card.jpg";
+import guideNoWeightLimit from "@/assets/guide-no-weight-limit.jpg";
+import guideNoWeightLimitCard from "@/assets/guide-no-weight-limit-card.jpg";
+import guidePuppy from "@/assets/guide-puppy.jpg";
+import guidePuppyCard from "@/assets/guide-puppy-card.jpg";
+import guideLooseDog from "@/assets/guide-loose-dog.jpg";
+import guideLooseDogCard from "@/assets/guide-loose-dog-card.jpg";
+import guideTrueCost from "@/assets/guide-true-cost.jpg";
+import guideTrueCostCard from "@/assets/guide-true-cost-card.jpg";
 
 // Editorial stock photographs (Unsplash License), shown for illustration only and never as pictures of a specific rental.
 // Photographer credits live in src/content/image-credits.ts.
@@ -84,6 +98,13 @@ const stockImages = {
   "guide-damage-charge": { src: guideDamageCharge, card: guideDamageChargeCard, alt: "A fluffy golden-tan dog sitting in the open back of a packed car, with suitcases, bags and a cooler loaded behind it, ready to head home" },
   "guide-no-pet-fee": { src: guideNoPetFee, card: guideNoPetFeeCard, alt: "A Shiba Inu puppy peeking out of a mesh travel carrier, ready to go on a trip" },
   "guide-christmas-week": { src: guideChristmasWeek, card: guideChristmasWeekCard, alt: "A chocolate Labrador with a coral collar standing chest-deep in fresh snow, looking up with its mouth open in front of a snowy wood" },
+  "guide-reactive-dog": { src: guideReactiveDog, card: guideReactiveDogCard, alt: "A black, white and tan dog on a red leash sitting calmly on a wooden porch step in front of a shingled house, with a person in dark clothing standing behind it holding the leash" },
+  "guide-pool-hot-tub": { src: guidePoolHotTub, card: guidePoolHotTubCard, alt: "A dark brown and white spaniel-type dog swimming in clear turquoise pool water with a red ball in its mouth" },
+  "guide-red-flags": { src: guideRedFlags, card: guideRedFlagsCard, alt: "A black and white dog standing on a wooden deck outside the glass doors of a wood-paneled cabin interior, looking in toward the camera" },
+  "guide-no-weight-limit": { src: guideNoWeightLimit, card: guideNoWeightLimitCard, alt: "A medium-to-large white dog with brown patches standing on a stone patio beside a log-clad cabin with a sliding glass door, with autumn-colored forest hills behind" },
+  "guide-puppy": { src: guidePuppy, card: guidePuppyCard, alt: "A tiny black and tan puppy lying on a colorful striped woven rug indoors, looking at the camera" },
+  "guide-loose-dog": { src: guideLooseDog, card: guideLooseDogCard, alt: "A brown German wirehaired pointer with its tongue out, wearing an orange collar with a green tag and attached to a leash, outdoors in front of dry brush" },
+  "guide-true-cost": { src: guideTrueCost, card: guideTrueCostCard, alt: "A tan and white Shiba Inu lying on a shop doorstep beside a white rolling suitcase on a city street" },
 } as const satisfies Record<string, StockImage>;
 
 export const images: { [K in keyof typeof stockImages]: StockImage } = stockImages;

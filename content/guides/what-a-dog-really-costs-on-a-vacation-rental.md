@@ -5,15 +5,17 @@ seoDescription: "The pet fee is one line of the bill. See how cleaning, deposits
 dek: The pet fee is one line. Here is the whole bill, what is refundable, and how to compare two quotes before you book.
 category: Planning
 states: []
-status: draft
+status: published
+approvedBy: Paws & Passage Editors
+approvedOn: 2026-11-18
 author: Paws & Passage Editors
 publishedOn: 2026-11-18
 lastReviewed: 2026-11-18
 readingMinutes: 9
-heroImage: guide-pet-fees
+heroImage: guide-true-cost
 faqs:
   - q: How much does it cost to take a dog to a vacation rental?
-    a: There is no single number. The pet fee is only one line, and cleaning, taxes, service fees and any deposit sit beside it. Among the 38 managers in our convenience sample, nightly pet fees run from $20 to $50 and flat or per-pet fees from $50 to $300, with one manager saying "up to $1,000". Get the full quote for your dates and dog count.
+    a: There is no single number. The pet fee is only one line, and cleaning, taxes, service fees and any deposit sit beside it. Among the 38 managers in our convenience sample, nightly pet fees run from $20 to $50 and flat or per-pet fees from $50 to $400, with one manager saying "up to $1,000". Get the full quote for your dates and dog count.
   - q: Is the pet fee the only extra cost of bringing a dog?
     a: No. Airbnb says a pet fee may be separate from the cleaning fee, and the checkout total can also include Airbnb's service fee and taxes. A refundable deposit or a damage waiver may apply as well, depending on the manager.
   - q: Can a no-pet-fee rental still cost more overall?
@@ -141,8 +143,7 @@ research:
     - Official Airbnb and Vrbo wording on cleaning, service fees, taxes and deposits.
   angle: The decision is the trip total, so compare quotes on one line (what you will actually pay) and keep refundable and contingent money apart.
   unverified: []
-  followUps:
-    - A dated boarding-versus-bringing comparison if an official or primary source for boarding prices is found.
+  followUps: []
   researchComplete: true
 ---
 
@@ -171,7 +172,7 @@ Managers write it the same way. Tahoe Vacation Rentals says its pet fee "does no
 
 We read the public pet pages of 38 vacation rental managers (a convenience sample, not a survey, read 2026-11-18). Twenty-five state a fee. Three of those say $0 (Sliding Rock Cabins, Twiddy & Company and Hapey Cabin Rentals), and 13 give no amount. The tables are on the [pet policy dataset page](/data/pet-policies).
 
-Among the 22 that charge, nightly amounts run from $20 to $50 and flat or per-pet amounts from $50 to $300, with one manager saying "up to $1,000". A few named examples, each re-read on its live page on 2026-11-18:
+Among the 22 that charge, nightly amounts run from $20 to $50 and flat or per-pet amounts from $50 to $400 (the $400 is one manager's rate for stays of 14 or more days), with one manager saying "up to $1,000". A few named examples, each re-read on its live page on 2026-11-18:
 
 | Manager | What the page says | Source |
 | --- | --- | --- |
@@ -180,7 +181,7 @@ Among the 22 that charge, nightly amounts run from $20 to $50 and flat or per-pe
 | Rosemary Beach Cottage Rental Company | Non-refundable $300 per pet, maximum 3 | [[10]](https://rosemarybeach.com/faq/) |
 | AMI Locals | $250 per stay; max 2 dogs, combined weight 50 lb or less | [[11]](https://www.amilocals.com/faqs) |
 | Resort Realty | Non-refundable fee up to $1,000, varying by property, due with the balance payment | [[12]](https://resortrealty.com/outer-banks-pet-friendly) |
-| Twiddy & Company | Nine of ten listed homes say no additional fee or deposit | [[13]](https://blog.twiddy.com/bring-your-pets-on-vacation/) |
+| Twiddy & Company | All ten listed homes waive the pet fee and deposit; nine say "no additional fee or deposit" | [[13]](https://blog.twiddy.com/bring-your-pets-on-vacation/) |
 
 Nobody can quote you "the" pet cost from a range this wide. The fee only becomes a number once you enter your dates and your dog count.
 
@@ -190,13 +191,13 @@ Nobody can quote you "the" pet cost from a range this wide. The fee only becomes
 
 Airbnb says some hosts charge a cleaning fee to cover cleaning after your stay. [[2]](https://www.airbnb.com/help/article/125) Its host page says the cleaning fee is shown to guests separately unless a total-price display is turned on. [[3]](https://www.airbnb.com/help/article/2385) Vrbo's fee help lists pets and cleaning as separate standard fee types. [[5]](https://help.vrbo.com/articles/How-do-I-manage-my-fees)
 
-A manager can charge both. Cabin Rentals of Georgia lists "$50/pet/night" plus a "$75 pet cleaning fee" charged once. [[7]](https://cabin-rentals-of-georgia.com/policies) A rental with a low pet line and a high cleaning fee can cost the same as one with the reverse, so compare the sum.
+A manager can charge both. Cabin Rentals of Georgia lists "$50/pet/night" plus a "$75 pet cleaning fee", which the page does not label per night, so we read it as charged once. [[7]](https://cabin-rentals-of-georgia.com/policies) A rental with a low pet line and a high cleaning fee can cost the same as one with the reverse, so compare the sum.
 
 ### Deposits
 
 A refundable deposit is money you hand over and may get back. Vrbo's payment page describes a "damage deposit amount set by" the host that is not part of the host's payout and is returned to the guest unless the host claims damage. [[6]](https://help.vrbo.com/articles/How-do-I-read-my-payment-details) Cabin Rentals of Georgia lists "a refundable $250 pet deposit," returned at departure if there is no pet damage or excessive pet hair. [[7]](https://cabin-rentals-of-georgia.com/policies)
 
-Count a deposit as a cash need, and ask who holds it and when it is released. Some managers use a nonrefundable waiver instead: Tahoe Vacation Rentals says its waiver covers up to $1,000 of accidental damage "in place of a security deposit." [[9]](https://www.tahoevacationrentals.com/reservation-information/) That one is a cost, not a deposit, even though it replaces one.
+Count a deposit as a cash need, and ask who holds it and when it is released. Some managers use a nonrefundable waiver instead: Tahoe Vacation Rentals says its waiver covers up to $1,000 of accidental damage "in lieu of a security deposit." [[9]](https://www.tahoevacationrentals.com/reservation-information/) That one is a cost, not a deposit, even though it replaces one.
 
 ### Service fees
 
@@ -227,11 +228,11 @@ These numbers are invented, round, and illustrative. They are not prices from an
 
 Rental B, the "no pet fee" one, is cheapest. Rental A and C tie on cost, but C asks for $250 more up front, which matters if the deposit is a card hold or a collected payment. Now add a second dog, assuming A charges per pet and C's flat fee covers both dogs: A rises to $1,500 and C stays at $1,300, while B stays at $1,250. The ranking can flip when the dog count changes, which is why you enter your real count.
 
-The same method works for the real fees above. For example, at the Cabin Rentals of Georgia terms, one dog for five nights would be $50 x 5 = $250 plus the $75 cleaning fee, so $325 of definite pet cost and a further $250 refundable deposit, if the unit is per pet per night as the page states. [[7]](https://cabin-rentals-of-georgia.com/policies) That is before the nightly rate and taxes, and before checking the page's other conditions (a weight limit, a crate requirement and manager approval of each dog).
+The same method works for the real fees above. For example, at the Cabin Rentals of Georgia terms, one dog for five nights would be $50 x 5 = $250 plus the $75 cleaning fee, so $325 of definite pet cost and a further $250 refundable deposit, if the $50 is per pet per night as the page states and the $75 is charged once. [[7]](https://cabin-rentals-of-georgia.com/policies) That is before the nightly rate and taxes, and before checking the page's other conditions (a weight limit, a crate requirement and manager approval of each dog).
 
 ## When the pet fee is not the story
 
-A $0 pet fee is not a promise of a cheaper trip. Twiddy lists nine homes with no additional fee or deposit [[13]](https://blog.twiddy.com/bring-your-pets-on-vacation/), but the nightly rate and cleaning fee still apply, and only your dates will show the total. Compare on the total, then on the rules: a rental that is $50 cheaper and caps dogs below yours is not an option. Our [no pet fee rentals guide](/guides/vacation-rentals-with-no-pet-fee) goes through what the $0 managers say, and the [dog count guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental) covers limits.
+A $0 pet fee is not a promise of a cheaper trip. Twiddy lists ten homes with no pet fee or deposit, nine of them in the words "no additional fee or deposit" [[13]](https://blog.twiddy.com/bring-your-pets-on-vacation/), but the nightly rate and cleaning fee still apply, and only your dates will show the total. Compare on the total, then on the rules: a rental that is $50 cheaper and caps dogs below yours is not an option. Our [no pet fee rentals guide](/guides/vacation-rentals-with-no-pet-fee) goes through what the $0 managers say, and the [dog count guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental) covers limits.
 
 ## Charges you avoid by asking first
 

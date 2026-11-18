@@ -16,7 +16,7 @@ URLs: TG = https://tahoegetaways.com/policies; BR = https://ablueridgecabinrenta
 | 8 | Beach Realty: no puppies; two adult house-trained dogs | BE | 1 | "Puppies and certain breeds ... are not permitted" |
 | 9 | Resort Realty: no puppies; two housebroken adult dogs; fee up to $1,000 non-refundable, varies, damage coverage not stated | RR | 1 | "no puppies are permitted." |
 | 10 | 5 of 38 managers state age or puppy rule (convenience sample) | src/content/manager-policies.ts + pages above | 2 (count of 5 named pages, not a market count) | n/a |
-| 11 | The other 33 stated no age rule on pages read | manager-policies.ts (minAge field) | 1 for dataset; not re-read live | n/a |
+| 11 | The other 33 stated no age rule on pages read | manager-policies.ts (minAge field) | 1 for dataset; not re-read live by fact-check (count 38/5 confirmed in file) | n/a |
 | 12 | None of the five quoted a puppy-specific rate or limit | pages above | 1 | n/a |
 | 13 | CDC: vaccinations up to date; health certificate within 10 days of departure | CDCP | 1 | "dated within 10 days of your departure" |
 | 14 | CDC Yellow Book: contact vet; very young animals named as at risk of complications | CDCYB | 1 | "contact their veterinarian to discuss travel safety" |
@@ -27,3 +27,5 @@ URLs: TG = https://tahoegetaways.com/policies; BR = https://ablueridgecabinrenta
 | 19 | Chewing normal; teething typically ends by six months; toys, supervision, confinement | ACH | 1 | "normal for puppies and dogs to chew" |
 | 20 | Vaccine schedule for a puppy | none | 3 | not given; ask vet |
 | 21 | Other 33 managers' puppy acceptance | none | 3 | ask manager |
+
+Fact-check 2026-11-18: rows 1-9, 13-19 re-read live and matched; quotes over 14 words shortened in article (rows 1, 8, 15, 16, 17); readingMinutes set to 8; "What most people report" label renamed "What our sample shows". See docs/FACTCHECK-puppy-at-a-vacation-rental.md.

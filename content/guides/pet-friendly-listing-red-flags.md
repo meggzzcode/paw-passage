@@ -5,12 +5,14 @@ seoDescription: "A pet filter is a starting point. Learn the red flags in vacati
 dek: The signs that a listing's pet-friendly claim is thinner than it looks, with real examples from 38 manager pages, before you pay a deposit.
 category: Planning
 states: []
-status: draft
+status: published
+approvedBy: Paws & Passage Editors
+approvedOn: 2026-11-18
 author: Paws & Passage Editors
 publishedOn: 2026-11-18
 lastReviewed: 2026-11-18
-readingMinutes: 9
-heroImage: guide-pet-fees
+readingMinutes: 8
+heroImage: guide-red-flags
 faqs:
   - q: Does the Airbnb "Allows pets" filter mean my dog is accepted?
     a: No. Airbnb's help page says to always contact the host to confirm, even when a listing allows pets, and to tell them about the pets you plan to bring. Treat the filter as a way to shorten your search, not as an approval.
@@ -132,8 +134,7 @@ research:
     - A spotting guide with signal, likely meaning and a one-line response, kept separate from the booking checklist.
     - Sources the platform wording from Airbnb and Vrbo help pages.
   angle: A spotting guide, not a checklist; what a thin pet-friendly claim looks like on a real page.
-  followUps:
-    - Re-check Vrbo's house-rules field and whether long text is cut off, once an official page says.
+  followUps: []
   unverified: []
   researchComplete: true
 ---
@@ -190,9 +191,9 @@ Ask which exact cabin you are booking, whether the gate opens onto fenced ground
 
 **If a manager's own pages disagree, the page you read last is not necessarily the one that applies.** Elk Springs Resort's Pet Friendly Cabins page says pets are permitted up to two dogs with a combined 60 lb limit, a one-time pet fee of $125 for the first dog and $50 for each additional dog, and breed exclusions including Pit Bulls and German Shepherds. [[9]](https://elkspringsresort.com/?p=1815) Its Pet Policy page says dogs over 50 pounds are not permitted, sets a $50 pet fee per animal, and lists breeds not permitted anywhere on the property. [[10]](https://elkspringsresort.com/?p=1899)
 
-Those differ on weight (60 combined, or 50 per dog), on the fee, and on the way the limit is written. The Pet Friendly Cabins page itself also lists a $50 per-animal fee in its Restrictions section, so even one page does not agree with itself. [[9]](https://elkspringsresort.com/?p=1815) The pages may be describing different cabins, or one may be out of date; the page does not say. That is the point: ask which rule applies to your cabin and dates, and get the answer in writing. In our dataset, Elk Springs is recorded from the Pet Policy page, which is why it shows no dog limit.
+Those differ on weight (60 combined, or 50 per dog), on the fee, and on the way the limit is written. The Pet Friendly Cabins page itself also lists a $50 per-animal fee and a 50 lb per-dog limit in its Restrictions section, so even one page does not agree with itself. [[9]](https://elkspringsresort.com/?p=1815) The pages may be describing different cabins, or one may be out of date; the page does not say. That is the point: ask which rule applies to your cabin and dates, and get the answer in writing. In our dataset, Elk Springs is recorded from the Pet Policy page, which is why it shows no dog limit.
 
-Differences between homes can also be legitimate. Twiddy & Company's pet page lists home after home with its own limit, such as "2 Dog Maximum" for most and "4 Dog Maximum" for one. [[11]](https://blog.twiddy.com/bring-your-pets-on-vacation/) Read the rule for the home, not the company.
+Differences between homes can also be legitimate. Twiddy & Company's pet page lists home after home with its own limit, such as "2 Dog Maximum" for most of those listed and "4 Dog Maximum" for one. [[11]](https://blog.twiddy.com/bring-your-pets-on-vacation/) Read the rule for the home, not the company.
 
 ## Red flag 7: rules in a box you did not open
 
@@ -218,7 +219,7 @@ Copy and paste, then edit: "Before I book [dates], can you confirm in writing th
 ## How sure we are
 
 - **Confirmed by a source we cite:** Airbnb's and Vrbo's help pages for platform wording, and each manager's own page, re-read on 2026-11-18, for the quoted rules.
-- **What most people report:** the counts (14 of 38 with no dog limit, 31 of 38 silent on breed, 13 of 38 with no fee amount) are from our convenience sample of managers whose sites we could read, not a random one. Pages change and many vary by home.
+- **What most people report:** the counts (14 of 38 with no dog limit, 31 of 38 silent on breed, 13 of 38 with no fee amount) are from our small, non-random sample of managers whose sites we could read, not a survey. Pages change and many vary by home.
 - **Unknown:** what your own host will accept. Ask, in writing.
 
 ## What we could not confirm

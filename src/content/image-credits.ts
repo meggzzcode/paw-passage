@@ -30,4 +30,11 @@ export const imageCredits: ImageCredit[] = [
   { key: "guide-damage-charge", photographer: "Jimmy Conover", unsplashUrl: "https://unsplash.com/photos/brown-long-coated-dog-on-car-seat-ajPr3kQBWFw" },
   { key: "guide-no-pet-fee", photographer: "Dex Ezekiel", unsplashUrl: "https://unsplash.com/photos/-nOCYgeOtX8" },
   { key: "guide-christmas-week", photographer: "YBag Media", unsplashUrl: "https://unsplash.com/photos/black-labrador-retriever-on-snow-covered-ground-during-daytime-se3pSeT0mdM" },
+  { key: "guide-reactive-dog", photographer: "Megan Campagnolo", unsplashUrl: "https://unsplash.com/photos/black-and-merle-sitting-next-to-person-holding-leash-jfyoH4O1Pu4" },
+  { key: "guide-pool-hot-tub", photographer: "Judy Beth Morris", unsplashUrl: "https://unsplash.com/photos/a-dog-swims-in-a-pool-with-a-ball-rCGngXzeqzk" },
+  { key: "guide-red-flags", photographer: "Adrien Olichon", unsplashUrl: "https://unsplash.com/photos/a-dog-stands-at-an-open-doorway-looking-inside-k6r_p7r3HhM" },
+  { key: "guide-no-weight-limit", photographer: "Bahara", unsplashUrl: "https://unsplash.com/photos/a-dog-standing-on-a-porch-next-to-a-log-cabin-wzCnt2e6yFg" },
+  { key: "guide-puppy", photographer: "hannah grace", unsplashUrl: "https://unsplash.com/photos/black-and-tan-puppy-lying-on-multicolored-mat-8FySZ54Ls-E" },
+  { key: "guide-loose-dog", photographer: "Mike Cox", unsplashUrl: "https://unsplash.com/photos/a-brown-dog-with-a-green-tag-on-its-collar-MrZ-a_1DXL0" },
+  { key: "guide-true-cost", photographer: "Eminent Luggage", unsplashUrl: "https://unsplash.com/photos/a-brown-and-white-dog-laying-next-to-a-white-suitcase-039EFeyJs2I" },
 ];

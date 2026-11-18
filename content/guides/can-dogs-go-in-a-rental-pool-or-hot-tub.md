@@ -5,21 +5,23 @@ seoDescription: "Seven of 38 manager pages mention dogs and pools or hot tubs, a
 dek: What seven property managers actually wrote, why a "no" is common, and what to ask when the listing is silent.
 category: Planning
 states: []
-status: draft
+status: published
+approvedBy: Paws & Passage Editors
+approvedOn: 2026-11-18
 author: Paws & Passage Editors
 publishedOn: 2026-11-18
 lastReviewed: 2026-11-18
 readingMinutes: 8
-heroImage: guide-pet-fees
+heroImage: guide-pool-hot-tub
 faqs:
   - q: Can dogs go in a vacation rental's pool?
     a: Where a manager's page addresses it, the answer in our sample is no. Seven of the 38 manager pages we read say something, and every one of those restricts dogs. Most pages say nothing, so message the host before you assume either way.
   - q: Can dogs go in a rental hot tub?
-    a: The managers who mention hot tubs or spas in our sample bar dogs from them. Separately, the CDC says hot tubs keep water in a temperature range of 77 to 113 degrees Fahrenheit, and Cornell's veterinary college says heatstroke is an emergency, so a hot tub is a poor place for a dog even where nobody has written a rule.
+    a: The managers who mention hot tubs or spas in our sample bar dogs from them. Separately, the CDC says hot tubs hold water in a 77 to 113 degree Fahrenheit range that favors Legionella growth, and Cornell's veterinary college calls heatstroke a medical emergency, so a hot tub looks like a poor place for a dog even where nobody has written a rule (that is our reading, not a source's rule).
   - q: If the listing does not mention the pool and dogs, is it allowed?
     a: Silence is not permission. A house rule can sit in the booking terms, a welcome packet or the manager's general policy page rather than the listing description, so ask for the answer in writing.
   - q: What happens if my dog swims in a pool that bans dogs?
-    a: One manager, Brindley Beach Vacations, says additional cleaning may be needed and a charge may apply. Airbnb says a guest can be asked to pay for damage or unexpected cleaning caused by a pet, with 24 hours to respond.
+    a: One manager, Brindley Beach Vacations, says additional cleaning may be needed and a charge may apply. Airbnb says a guest can be responsible for damage caused by a pet, and a host can send a reimbursement request for damage, missing items or unexpected cleaning costs, with 24 hours to respond.
   - q: Why do rentals ban dogs from pools?
     a: Most manager pages give the rule without a reason. The CDC lists animals among the most common pool contaminants, and Brindley Beach names extra cleaning, which fits the pattern, but no manager we read explains its own rule beyond that.
   - q: Is a pet fee a pass for the pool?
@@ -150,9 +152,7 @@ research:
     - A message to send the host and a section that links the damage-charge process to the pool rule.
     - Honest unknowns table, including that no source we read gives a safe hot tub time or temperature for a dog.
   angle: A traveler's guide to a house rule that is usually written in one line, covering what it says, why it exists, and how to stay clear of a charge.
-  followUps:
-    - Re-read the seven pages at the next data re-check and add any new manager that states a pool or hot tub rule.
-    - Look for a veterinary page that addresses hot tub use specifically.
+  followUps: []
   unverified: []
   researchComplete: true
 ---
@@ -190,7 +190,7 @@ Most of the pages above state the rule and stop. Brindley Beach gives the closes
 
 The public-health guidance points the same direction. The CDC says animals and body fluids, such as poop, vomit and blood, are the most common pool contaminants, that animals may carry germs that can contaminate pool water, and that poop and vomit should be cleaned up from pool water and surfaces immediately. [[9]](https://www.cdc.gov/healthy-swimming/response/) For a manager, a pool that has to be treated or closed between guests costs money and calendar days. That is our reading of why the rule is common, not something these managers wrote.
 
-A hot tub raises a separate issue. The CDC says hot tubs maintain water temperatures within the most favorable range for Legionella growth, 77 to 113 degrees Fahrenheit, and its operator guidance for display hot tubs gives a free chlorine range of 3 to 10 ppm and says cyanuric acid or stabilized chlorine products should not be used because they slow disinfection. [[10]](https://www.cdc.gov/control-legionella/php/toolkit/hot-tub-module.html) Those numbers are for people who run the tub, not for guests, which is another reason a stray dog is a headache for the owner. The page does not mention vacation rentals or dogs, so this explains the water chemistry, not any manager's motive.
+A hot tub raises a separate issue. The CDC says hot tubs maintain water temperatures within the most favorable range for Legionella growth, 77 to 113 degrees Fahrenheit (it also recommends keeping water at or below 104 degrees to prevent scalding), and its operator guidance for display hot tubs gives a free chlorine range of 3 to 10 ppm and says cyanuric acid or stabilized chlorine products should not be used because they slow disinfection. [[10]](https://www.cdc.gov/control-legionella/php/toolkit/hot-tub-module.html) Those numbers are for people who run the tub, not for guests, which is another reason a stray dog is a headache for the owner. The page does not mention vacation rentals or dogs, so this explains the water chemistry, not any manager's motive.
 
 ## Is a pool safe for your dog anyway?
 
@@ -200,9 +200,9 @@ That advice is for a pool the dog knows. A rental pool is unfamiliar: you do not
 
 ## What about a hot tub and a dog?
 
-If the listing has a hot tub, the safest reading of the pages above is that the dog stays out of it. Where managers address it, the wording is a ban. The CDC puts the water in a 77 to 113 degree range [[10]](https://www.cdc.gov/control-legionella/php/toolkit/hot-tub-module.html), and Cornell's veterinary college says heatstroke occurs from exposure to hot or humid environments and that signs include heavy panting, drooling, vomiting, diarrhea, weakness and collapse. [[12]](https://www.vet.cornell.edu/index.php/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/heatstroke-medical-emergency)
+If the listing has a hot tub, the safest reading of the pages above is that the dog stays out of it. Where managers address it, the wording is a ban. The CDC says hot tubs hold water in a 77 to 113 degree range that favors Legionella growth, and recommends keeping it at or below 104 degrees Fahrenheit to prevent scalding [[10]](https://www.cdc.gov/control-legionella/php/toolkit/hot-tub-module.html). Cornell's veterinary college says heatstroke can follow exposure to hot or humid environments and that signs include heavy panting, drooling, vomiting, bloody diarrhea, weakness and collapse. [[12]](https://www.vet.cornell.edu/index.php/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/heatstroke-medical-emergency)
 
-If a dog does get overheated, Cornell's guidance is to safely and immediately cool the pet and seek intensive care at a veterinary hospital, and it calls heatstroke a medical emergency. [[12]](https://www.vet.cornell.edu/index.php/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/heatstroke-medical-emergency)
+If a dog does get overheated, Cornell's guidance is to cool the dog right away and get it to a veterinary hospital for intensive care, and it calls heatstroke a medical emergency. [[12]](https://www.vet.cornell.edu/index.php/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/heatstroke-medical-emergency)
 
 Practical steps that follow from the sources and the house rules:
 

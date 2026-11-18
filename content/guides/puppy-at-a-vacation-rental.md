@@ -5,12 +5,14 @@ seoDescription: "Some rentals ban puppies: 5 of 38 managers state a minimum age 
 dek: Some managers say adult dogs only, and a few set a minimum age. Here is how to ask, what accidents can cost, and how to plan the first night.
 category: Planning
 states: []
-status: draft
+status: published
+approvedBy: Paws & Passage Editors
+approvedOn: 2026-11-18
 author: Paws & Passage Editors
 publishedOn: 2026-11-18
 lastReviewed: 2026-11-18
-readingMinutes: 9
-heroImage: guide-pet-fees
+readingMinutes: 8
+heroImage: guide-puppy
 faqs:
   - q: Do vacation rentals allow puppies?
     a: Many do not say. In our 38-manager sample, 5 state a minimum age or a no-puppies rule, so a booking that says "pet friendly" may still exclude a young dog. Ask in writing before you pay.
@@ -126,9 +128,7 @@ research:
     - Accident, chewing and crate planning tied to ASPCA guidance and to the manager's damage terms.
     - A host message, a first-night plan and a checklist.
   angle: Treat the puppy as a hidden rule to find before booking, then plan the stay around accidents and alone time.
-  followUps:
-    - Re-read the five manager pages when we refresh the dataset.
-    - Add a minimum-age column to the tools if more managers state one.
+  followUps: []
   unverified: []
   researchComplete: true
 ---
@@ -139,10 +139,10 @@ The listing says "pet friendly," and your puppy is 14 weeks old. Whether that is
 
 In our reading of 38 vacation rental managers' public pet pages (a convenience sample, read 2026-11-18), 5 state a minimum age or a no-puppies rule. We re-read each of the five pages for this guide:
 
-- Tahoe Getaways: "We do not allow dogs under the age of 18 months, cats, or any other pets at any time." [[1]](https://tahoegetaways.com/policies)
+- Tahoe Getaways: "We do not allow dogs under the age of 18 months." [[1]](https://tahoegetaways.com/policies)
 - A Blue Ridge Cabin Rental: "Each pet must be at least 18 months old and be fully house-trained." [[2]](https://ablueridgecabinrental.com/cabin-policies/)
 - Emmons Realty: "Dogs must be at least 1 year old." [[3]](https://www.emmonsrealty.com/pages/rental-policies)
-- Beach Realty & Construction (Outer Banks): "Puppies and certain breeds considered dangerous by insurance companies are not permitted in Beach Realty properties." [[4]](https://www.beachrealtync.com/node/707)
+- Beach Realty & Construction (Outer Banks): "Puppies and certain breeds ... are not permitted in Beach Realty properties." [[4]](https://www.beachrealtync.com/node/707)
 - Resort Realty (Outer Banks): "no puppies are permitted." [[5]](https://resortrealty.com/outer-banks-pet-friendly)
 
 So the practical move is to ask before you pay: how old must the dog be, is the puppy a "pet" and a "dog" under the limit and the fee, and who pays if there is an accident. The [will my dog be accepted tool](/tools/will-my-dog-be-accepted) helps you line up those questions, and a message you can paste is below.
@@ -174,7 +174,7 @@ That is the whole of what we can source. Which shots your puppy has had, whether
 
 ## Accidents and the damage-and-cleaning risk
 
-A puppy that has not finished house training will have accidents in a new place. The ASPCA puts it plainly: "House training is not an exact science—there's no sure-fire formula or timetable that will work for every dog." [[8]](https://www.aspca.org/news/house-training-your-dog-or-puppy)
+A puppy that has not finished house training will have accidents in a new place. The ASPCA puts it plainly: "House training is not an exact science," and there is "no sure-fire formula or timetable" that works for every dog. [[8]](https://www.aspca.org/news/house-training-your-dog-or-puppy)
 
 What decides whether an accident costs money is the manager's wording, not the dog:
 
@@ -184,11 +184,11 @@ What decides whether an accident costs money is the manager's wording, not the d
 
 So a pet fee is not damage cover. For how charges after checkout are raised and disputed, read [Airbnb pet damage charge after checkout](/guides/airbnb-pet-damage-charge-after-checkout).
 
-To lower the odds, use the ASPCA's approach: limit the puppy's run of the house "to the one or two rooms where you are able to see her at all times," take her out often, and if there is a mess, "just clean it up and soldier on," because "a dog will not learn anything by being scolded for a past accident." [[8]](https://www.aspca.org/news/house-training-your-dog-or-puppy) Pick the rooms on arrival. A bathroom or tiled kitchen is easier to wipe than a rug, and you can close a door or use a baby gate.
+To lower the odds, use the ASPCA's approach: limit the puppy's run of the house to "one or two rooms where you are able to see her," take her out often, and if there is a mess, "just clean it up and soldier on," because "a dog will not learn anything by being scolded for a past accident." [[8]](https://www.aspca.org/news/house-training-your-dog-or-puppy) Pick the rooms on arrival. A bathroom or tiled kitchen is easier to wipe than a rug, and you can close a door or use a baby gate.
 
 ## Crates and alone time
 
-A rental is not the place to start crate training. The ASPCA says the crate should be big enough for the dog "to stand up, turn around and lie down," and that "young puppies should not be crated for more than an hour or two at a time, except at night." [[9]](https://www.aspca.org/pet-care/general-pet-care/introducing-your-dog-crate)
+A rental is not the place to start crate training. The ASPCA says the crate should be big enough for the dog "to stand up, turn around and lie down," and that young puppies "should not be crated for more than an hour or two" at a time, except at night. [[9]](https://www.aspca.org/pet-care/general-pet-care/introducing-your-dog-crate)
 
 That limit is the real constraint on your day. A restaurant dinner, a boat tour or a long hike may not fit around a puppy that needs a break every hour or two. If you need time away, plan for a sitter or a dog-friendly activity, and see [can you leave a dog alone in a vacation rental](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental) for the managers whose rules say crated or never alone.
 
@@ -219,7 +219,7 @@ If the answer is no, you have lost an email, not a booking. If it is yes, you no
 ## How sure we are
 
 - **Confirmed by a source we cite:** the five managers' wording, as read on 2026-11-18, and the CDC and ASPCA statements above.
-- **What most people report:** 5 of 38 managers state an age or puppy rule. That is a small convenience sample of managers whose pages we could read, not a count of the market.
+- **What our sample shows:** 5 of 38 managers state an age or puppy rule. That is a small convenience sample of managers whose pages we could read, not a count of the market.
 - **Unknown:** your own manager's rule if the page is silent, and any vaccine timing for your puppy. Ask the manager and your vet.
 
 ## What we could not confirm

@@ -5,12 +5,12 @@
 | 1 | 38 managers read; 6 state a weight limit; 2 say none; 30 silent on weight | src/content/manager-policies.ts plus live pages below | 1 |
 | 2 | Hearthside: no larger than 35 pounds; SOME cabins allow larger; $75 one-time for a large pet; up to $500 fee for pet in non-pet-friendly cabin | https://hearthsidecabinrentals.com/frequently-asked-questions | 1 |
 | 3 | Cabin Rentals of Georgia: only dogs under 35 lbs., non-shedding, crate trained; certain breeds only | https://cabin-rentals-of-georgia.com/policies | 1 |
-| 4 | Brindley Beach: up to two dogs, each 60 pounds or less; FAQ says many OBX rentals have weight/breed limits, review listing | https://www.brindleybeach.com/node/3691 | 1 |
+| 4 | Brindley Beach: up to two dogs, each 60 pounds or less; FAQ says many OBX rentals have weight/breed limits, review listing; policy page also says "NO EXCEPTIONS", "unless otherwise advertised" | https://www.brindleybeach.com/node/3691 | 1 |
 | 5 | Elk Springs: dogs over 50 pounds not permitted; breed list | https://elkspringsresort.com/?p=1899 | 1 |
 | 6 | AMI Locals: max 2 dogs, combined weight <= 50 lbs | https://www.amilocals.com/faqs | 1 |
-| 7 | Emmons: max 2 dogs, max 65 lbs per dog; cannot allow pit bulls | https://www.emmonsrealty.com/pages/rental-policies | 1 |
+| 7 | Emmons: max 2 dogs, max 65 lbs per dog; cannot allow pit bulls; "No exceptions will be made for any part of this policy" | https://www.emmonsrealty.com/pages/rental-policies | 1 |
 | 8 | Sliding Rock: no pet fees, breed restrictions, or weight limits; page states no size limits | https://slidingrockcabins.com/ | 1 |
-| 9 | Hapey: no weight limits; dogs of every size; more than two dogs mention at booking; behaved, vaccinated, housebroken, 6-ft leash | https://hapeycabinrentals.com/pet-friendly-smoky-mountain-cabin-rentals/ | 1 |
+| 9 | Hapey: no weight limits; dogs of every size; more than two dogs mention at booking; behaved, vaccinated, housebroken; 6-ft leash applies to two national park trails only | https://hapeycabinrentals.com/pet-friendly-smoky-mountain-cabin-rentals/ | 1 |
 | 10 | Vrbo: Pets allowed rule lets hosts add pet type and size | https://help.vrbo.com/articles/Add-or-edit-house-rules | 1 |
 | 11 | Vrbo: hosts state how many, type, size restriction; guests agree to house rules before booking | https://help.vrbo.com/articles/What-are-House-Rules | 1 |
 | 12 | Airbnb: pet policy in House rules; contact host even if allowed; service animals accepted; no size/weight mention on page | https://www.airbnb.com/help/article/86 | 1 |

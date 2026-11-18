@@ -5,12 +5,14 @@ seoDescription: "6 of 38 managers state a dog weight limit and two say none. See
 dek: Which managers state a weight limit, which say they have none, the wording traps in between, and the host message that gets a large dog approved in writing.
 category: Planning
 states: []
-status: draft
+status: published
+approvedBy: Paws & Passage Editors
+approvedOn: 2026-11-18
 author: Paws & Passage Editors
 publishedOn: 2026-11-18
 lastReviewed: 2026-11-18
 readingMinutes: 9
-heroImage: guide-pet-fees
+heroImage: guide-no-weight-limit
 faqs:
   - q: Are there vacation rentals with no dog weight limit?
     a: Yes. Two of the 38 managers we read, Sliding Rock Cabins and Hapey Cabin Rentals, say on their pages that they have no weight limits. Most other pages say nothing either way, which is not proof that no limit exists.
@@ -19,9 +21,9 @@ faqs:
   - q: Does Vrbo or Airbnb let hosts set a dog weight limit?
     a: Vrbo's help pages say hosts can add the pet type and size permitted in their house rules. Airbnb's pages we read describe a pet count and pet fees but do not mention size or weight, so read the listing's House rules.
   - q: Can I ask a host to make an exception for my large dog?
-    a: You can ask. Hearthside Cabin Rentals says some cabins allow larger pets, but no page we read promises exceptions, so get any yes in writing before you pay.
+    a: You can ask. Hearthside Cabin Rentals says some cabins allow larger pets, but Brindley Beach and Emmons Realty both say no exceptions, and no page we read promises one, so get any yes in writing before you pay.
   - q: Do weight limits apply to service animals?
-    a: Airbnb says a host is required to accept service animals even if they do not allow pets, and Hostaway's host guide says service animals cannot be subject to size restrictions. Confirm with the platform for your situation.
+    a: Airbnb says a host is required to accept service animals even if they do not allow pets (with limited health and safety exceptions), and Hostaway's host guide says service animals cannot be subject to size restrictions. Confirm with the platform for your situation.
 relatedGuides:
   - vacation-rentals-that-welcome-large-dogs
   - how-many-dogs-can-you-bring-to-a-vacation-rental
@@ -142,9 +144,7 @@ research:
     - The wording traps (per dog, combined, some cabins allow larger) explained with real examples.
     - A copy-ready approval message and a short list of what to save.
   angle: The named-manager data and the approval message, without repeating the large-dog guide's general checks.
-  followUps:
-    - Re-read the eight manager pages on a schedule and log changes.
-    - Add per-listing weight fields if a manager publishes them.
+  followUps: []
   unverified: []
   researchComplete: true
 ---
@@ -174,13 +174,13 @@ Quotes are from each manager's public page, read 2026-11-18. Policies change and
 | AMI Locals | "Max of 2 dogs, combined weight ≤ 50 lbs" [[5]](https://www.amilocals.com/faqs) | 50 lb combined |
 | Emmons Realty | "a maximum weight of 65lbs per dog" [[6]](https://www.emmonsrealty.com/pages/rental-policies) | 65 lb each |
 
-A 72-pound dog is over all six. A 60-pound dog clears Brindley Beach and Emmons Realty but not Hearthside, Cabin Rentals of Georgia, Elk Springs or AMI Locals. The cutoff for "large" is wherever each manager puts it.
+Two of the six are firm about it: Brindley Beach says "NO EXCEPTIONS" and Emmons Realty says "No exceptions will be made for any part of this policy." A 72-pound dog is over all six. A 60-pound dog clears Brindley Beach and Emmons Realty but not Hearthside, Cabin Rentals of Georgia, Elk Springs or AMI Locals. The cutoff for "large" is wherever each manager puts it.
 
 ## The two that say no limit
 
 Sliding Rock Cabins says: "Every cabin welcomes them with no pet fees, breed restrictions, or weight limits." [[7]](https://slidingrockcabins.com/) The page states no size limits that we found.
 
-Hapey Cabin Rentals says: "No weight limits. Great Danes and Chihuahuas are equally welcome." and, on the same page, that its pet-friendly cabins "welcome dogs of every size and breed." [[8]](https://hapeycabinrentals.com/pet-friendly-smoky-mountain-cabin-rentals/) It also asks that dogs be "well behaved, up-to-date on vaccinations, and housebroken" and on a 6-foot leash.
+Hapey Cabin Rentals says: "No weight limits. Great Danes and Chihuahuas are equally welcome." and, on the same page, that its pet-friendly cabins "welcome dogs of every size and breed." [[8]](https://hapeycabinrentals.com/pet-friendly-smoky-mountain-cabin-rentals/) It also asks that dogs be "well behaved, up-to-date on vaccinations, and housebroken." (Its 6-foot leash rule is stated for two national park trails, not as a general rule.)
 
 Two caveats worth holding onto. "No weight limit" does not mean "no rules": Hapey says more than two dogs should be mentioned at booking so they can confirm, so a count rule can still sit beside a weight policy. And a manager's marketing page is not your reservation; the booking terms are.
 
@@ -234,7 +234,7 @@ Why it works: it gives a number, a date, and one clear question, and it leaves t
 - The total pet charge in writing, including any "large pet" fee. Hearthside, for example, lists $75 for a large pet. [[1]](https://hearthsidecabinrentals.com/frequently-asked-questions)
 - Any conditions attached: crate rules, unattended-pet rules, counts.
 
-Hearthside's page also warns that a pet found in a cabin not designated as pet-friendly can bring "a fee of up to $500," so do not assume an approved dog can stay anywhere in a manager's inventory. Service animals are a separate matter: Airbnb says hosts must accept them even if they do not allow pets, and Hostaway's host guide says they cannot be subject to size restrictions. [[11]](https://www.airbnb.com/help/article/86) [[14]](https://www.hostaway.com/vacation-rental-guide/pet-friendly-hosting/policies/)
+Hearthside's page also warns that a pet found in a cabin not designated as pet-friendly can bring "a fee of up to $500 for additional cleaning and/or misrepresentation," so do not assume an approved dog can stay anywhere in a manager's inventory. Service animals are a separate matter: Airbnb says hosts must accept them even if they do not allow pets (with limited health and safety exceptions), and Hostaway's host guide says they cannot be subject to size restrictions. [[11]](https://www.airbnb.com/help/article/86) [[14]](https://www.hostaway.com/vacation-rental-guide/pet-friendly-hosting/policies/)
 
 If you are told no, the answer to a booked-anyway plan is usually the same as for any pet rule; our [guide to bringing a dog to a no-pets rental](/guides/bringing-a-dog-to-a-no-pets-rental) covers what can follow.
 

@@ -22,5 +22,6 @@ beach: false
 mountain: true
 hotTub: not-confirmed
 photoPermission: false
+image: guide-ga-cabins
 sourceUrl: https://www.vrbo.com/3016263
 affiliateId: vrbo

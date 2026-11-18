@@ -342,8 +342,7 @@ Add these to your [trip checklist](/tools/checklist) so the kit gets packed with
         checkedOn: "2026-11-16",
         coversWell:
           "A ten-item list with a contact card including Pet Poison Helpline, bandage supplies, thermometer, styptic powder and a six-month check reminder, with vet-before-use cautions.",
-        gaps:
-          "Little on travel or cabin stays beyond a travel bowl and transport aids; recommends one named kit as a base without comparing ready-made options.",
+        gaps: "Little on travel or cabin stays beyond a travel bowl and transport aids; recommends one named kit as a base without comparing ready-made options.",
       },
       {
         url: "https://www.smalldoorvet.com/learning-center/medical/pet-first-aid-kit/",
@@ -351,8 +350,7 @@ Add these to your [trip checklist](/tools/checklist) so the kit gets packed with
         checkedOn: "2026-11-16",
         coversWell:
           "A thorough core list plus a larger evacuation-style kit, the ASPCA poison number, and advice to find the nearest emergency clinic when traveling.",
-        gaps:
-          "Describes building a kit only, no ready-made options; discusses diphenhydramine and hydrogen peroxide without weight-based dosing and does not address cabin stays.",
+        gaps: "Describes building a kit only, no ready-made options; discusses diphenhydramine and hydrogen peroxide without weight-based dosing and does not address cabin stays.",
       },
       {
         url: "https://www.preventivevet.com/how-to-make-a-pet-first-aid-kit",
@@ -360,8 +358,7 @@ Add these to your [trip checklist](/tools/checklist) so the kit gets packed with
         checkedOn: "2026-11-16",
         coversWell:
           "Very detailed list with a marked smaller travel kit, many named products, and specific medication cautions; advises supplementing pre-made kits.",
-        gaps:
-          "Long and product-heavy; gives dilution and medication specifics a reader could misapply without vet input, refers to animal poison control only generically, with no phone number, and does not mention cabin stays.",
+        gaps: "Long and product-heavy; gives dilution and medication specifics a reader could misapply without vet input, refers to animal poison control only generically, with no phone number, and does not mention cabin stays.",
       },
       {
         url: "https://momgoescamping.com/dog-first-aid-kit/",
@@ -369,8 +366,7 @@ Add these to your [trip checklist](/tools/checklist) so the kit gets packed with
         checkedOn: "2026-11-16",
         coversWell:
           "A camping-oriented 18-item list, practical bandaging tips for fur and chewing, a named pre-made trail kit, and a warning against human painkillers without vet direction.",
-        gaps:
-          "Suggests hydrogen peroxide to induce vomiting and lists prescription pain medications without dosing or when-not-to guidance; omits poison control numbers and heatstroke steps.",
+        gaps: "Suggests hydrogen peroxide to induce vomiting and lists prescription pain medications without dosing or when-not-to guidance; omits poison control numbers and heatstroke steps.",
       },
       {
         url: "https://puretravel.com/blog/2022/05/19/what-should-you-include-in-your-dogs-travel-first-aid-kit",
@@ -378,8 +374,7 @@ Add these to your [trip checklist](/tools/checklist) so the kit gets packed with
         checkedOn: "2026-11-16",
         coversWell:
           "Travel framing, muzzle and bandana ideas, a caution against peroxide on wounds, and the point that a custom kit may suit a dog better than a pre-made one.",
-        gaps:
-          "Short, partly commercial, and omits thermometer, saline, records, vet contacts, poison control and expiry checks.",
+        gaps: "Short, partly commercial, and omits thermometer, saline, records, vet contacts, poison control and expiry checks.",
       },
       {
         url: "https://www.petplace.com/article/dogs/keeping-your-dog-healthy/traveling-or-boarding-your-dog/travel-first-aid-kit-for-your-dog",
@@ -387,8 +382,7 @@ Add these to your [trip checklist](/tools/checklist) so the kit gets packed with
         checkedOn: "2026-11-16",
         coversWell:
           "A travel-specific item list, case labeling with contact details, and a photo and health summary of the pet.",
-        gaps:
-          "Dated 2015; lists medications without advising a vet check, no dosing or emergency-care guidance and no current product information.",
+        gaps: "Dated 2015; lists medications without advising a vet check, no dosing or emergency-care guidance and no current product information.",
       },
     ],
     gapsFound: [

@@ -8,15 +8,29 @@ const date = z
   .regex(/^\d{4}-\d{2}-\d{2}$/, "must be a date written YYYY-MM-DD")
   .refine((v) => {
     const d = new Date(`${v}T00:00:00Z`);
-    return !Number.isNaN(d.getTime()) && d.toISOString().slice(0, 10) === v && d.getUTCFullYear() >= 2000 && d.getUTCFullYear() <= 2100;
+    return (
+      !Number.isNaN(d.getTime()) &&
+      d.toISOString().slice(0, 10) === v &&
+      d.getUTCFullYear() >= 2000 &&
+      d.getUTCFullYear() <= 2100
+    );
   }, "is not a real date");
-const httpsUrl = z.string().url("must be a full web address").refine((v) => v.startsWith("https://"), "must start with https://");
+const httpsUrl = z
+  .string()
+  .url("must be a full web address")
+  .refine((v) => v.startsWith("https://"), "must start with https://");
 const uploadPath = z
   .string()
-  .regex(/^\/uploads\/[A-Za-z0-9._-]+\.(jpe?g|png|webp|gif|avif)$/i, "must be a photo in the uploads folder, like /uploads/my-photo.jpg")
+  .regex(
+    /^\/uploads\/[A-Za-z0-9._-]+\.(jpe?g|png|webp|gif|avif)$/i,
+    "must be a photo in the uploads folder, like /uploads/my-photo.jpg",
+  )
   .refine((v) => !v.includes(".."), "must not contain ..");
 const nonEmpty = z.string().trim().min(1, "must not be empty");
-const optText = z.string().optional().transform((v) => (v && v.trim() ? v : undefined));
+const optText = z
+  .string()
+  .optional()
+  .transform((v) => (v && v.trim() ? v : undefined));
 
 export const guideSchema = z.object({
   title: nonEmpty,
@@ -28,31 +42,65 @@ export const guideSchema = z.object({
   // If the Status box is ever left empty, the safe answer is "draft".
   status: z.enum(["draft", "published"]).default("draft"),
   approvedBy: optText,
-  approvedOn: z.string().optional().transform((v) => (v && v.trim() ? v : undefined)).pipe(date.optional()),
+  approvedOn: z
+    .string()
+    .optional()
+    .transform((v) => (v && v.trim() ? v : undefined))
+    .pipe(date.optional()),
   author: nonEmpty,
   publishedOn: date,
   lastReviewed: date,
   readingMinutes: z.coerce.number().int().min(1),
   heroImage: optText,
-  heroUpload: z.string().optional().transform((v) => (v && v.trim() ? v.trim() : undefined)).pipe(uploadPath.optional()),
+  heroUpload: z
+    .string()
+    .optional()
+    .transform((v) => (v && v.trim() ? v.trim() : undefined))
+    .pipe(uploadPath.optional()),
   heroAlt: optText,
   faqs: z.array(z.object({ q: nonEmpty, a: nonEmpty })).default([]),
   relatedGuides: z.array(z.string()).default([]),
   // Product ids from content/products.yml shown as "Gear for this trip" after the article. Unknown ids stop the build.
   relatedProducts: z.array(nonEmpty).max(4, "can list at most 4 products").default([]),
-  relatedTools: z.array(z.enum(["checklist", "pet-cost-check", "will-my-dog-be-accepted", "packing-list"])).default([]),
+  relatedTools: z
+    .array(z.enum(["checklist", "pet-cost-check", "will-my-dog-be-accepted", "packing-list"]))
+    .default([]),
   // An interactive tool shown inside the article, after the text. Unknown names stop the build.
-  embeddedTool: z.enum(["pet-cost-workflow"], { message: 'must be "pet-cost-workflow" (the only tool that can be shown inside an article), or left empty' }).optional(),
-  gear: z
-    .array(z.object({ productId: nonEmpty, bestFor: nonEmpty, whyItMadeTheList: nonEmpty, watchOuts: z.array(z.string()).default([]) }))
+  embeddedTool: z
+    .enum(["pet-cost-workflow"], {
+      message:
+        'must be "pet-cost-workflow" (the only tool that can be shown inside an article), or left empty',
+    })
     .optional(),
-  sources: z.array(z.object({ title: nonEmpty, url: httpsUrl, publisher: nonEmpty, accessedOn: date })).default([]),
+  gear: z
+    .array(
+      z.object({
+        productId: nonEmpty,
+        bestFor: nonEmpty,
+        whyItMadeTheList: nonEmpty,
+        watchOuts: z.array(z.string()).default([]),
+      }),
+    )
+    .optional(),
+  sources: z
+    .array(z.object({ title: nonEmpty, url: httpsUrl, publisher: nonEmpty, accessedOn: date }))
+    .default([]),
   research: z.object({
     primaryKeyword: nonEmpty,
     relatedKeywords: z.array(z.string()).default([]),
     readerQuestions: z.array(z.string()).default([]),
     intendedReader: nonEmpty,
-    competitors: z.array(z.object({ url: httpsUrl, title: nonEmpty, checkedOn: date, coversWell: nonEmpty, gaps: nonEmpty })).default([]),
+    competitors: z
+      .array(
+        z.object({
+          url: httpsUrl,
+          title: nonEmpty,
+          checkedOn: date,
+          coversWell: nonEmpty,
+          gaps: nonEmpty,
+        }),
+      )
+      .default([]),
     gapsFound: z.array(z.string()).default([]),
     differentiators: z.array(z.string()).default([]),
     angle: nonEmpty,
@@ -64,21 +112,33 @@ export const guideSchema = z.object({
 export type GuideFrontmatter = z.infer<typeof guideSchema>;
 
 /** Problems with guides' relatedProducts: more than 4, or ids that are not in content/products.yml. Used at build time. */
-export function relatedProductProblems(guides: { slug: string; relatedProducts?: string[] }[], productIds: Iterable<string>): string[] {
+export function relatedProductProblems(
+  guides: { slug: string; relatedProducts?: string[] }[],
+  productIds: Iterable<string>,
+): string[] {
   const known = new Set(productIds);
   const out: string[] = [];
   for (const g of guides) {
     const ids = g.relatedProducts ?? [];
-    if (ids.length > 4) out.push(`${g.slug}: relatedProducts lists ${ids.length} products; the most allowed is 4`);
-    for (const id of ids) if (!known.has(id)) out.push(`${g.slug}: relatedProducts names "${id}", which is not a product id in content/products.yml`);
+    if (ids.length > 4)
+      out.push(`${g.slug}: relatedProducts lists ${ids.length} products; the most allowed is 4`);
+    for (const id of ids)
+      if (!known.has(id))
+        out.push(
+          `${g.slug}: relatedProducts names "${id}", which is not a product id in content/products.yml`,
+        );
   }
   return out;
 }
 
 // ---- Stays. "yes / no / not-confirmed" choices keep "we don't know" distinct from "no". ----
 const tri = z.enum(["yes", "no", "not-confirmed"]).default("not-confirmed");
-const triToBool = (v: "yes" | "no" | "not-confirmed") => (v === "yes" ? true : v === "no" ? false : null);
-const optNum = z.preprocess((v) => (v === "" || v === null || v === undefined ? undefined : v), z.coerce.number().optional());
+const triToBool = (v: "yes" | "no" | "not-confirmed") =>
+  v === "yes" ? true : v === "no" ? false : null;
+const optNum = z.preprocess(
+  (v) => (v === "" || v === null || v === undefined ? undefined : v),
+  z.coerce.number().optional(),
+);
 
 export const stayYamlSchema = z.object({
   name: nonEmpty,
@@ -93,7 +153,9 @@ export const stayYamlSchema = z.object({
   bedrooms: optNum,
   bathrooms: optNum,
   beds: z.array(z.string()).default([]),
-  amenityGroups: z.array(z.object({ title: nonEmpty, items: z.array(z.string()).default([]) })).default([]),
+  amenityGroups: z
+    .array(z.object({ title: nonEmpty, items: z.array(z.string()).default([]) }))
+    .default([]),
   locationNote: optText,
   distances: z.array(z.string()).default([]),
   checkIn: optText,
@@ -119,15 +181,28 @@ export const stayYamlSchema = z.object({
   nearby: z.array(z.string()).default([]),
   houseRules: z.array(z.string()).default([]),
   image: optText,
-  imageUpload: z.string().optional().transform((v) => (v && v.trim() ? v.trim() : undefined)).pipe(uploadPath.optional()),
+  imageUpload: z
+    .string()
+    .optional()
+    .transform((v) => (v && v.trim() ? v.trim() : undefined))
+    .pipe(uploadPath.optional()),
   sourceUrl: z.string().default(""),
-  lastVerified: z.string().optional().transform((v) => (v && v.trim() ? v : null)).pipe(date.nullable()),
+  lastVerified: z
+    .string()
+    .optional()
+    .transform((v) => (v && v.trim() ? v : null))
+    .pipe(date.nullable()),
   photoPermission: z.boolean().default(false),
   affiliateId: optText,
 });
 
 export function toStay(slug: string, raw: z.infer<typeof stayYamlSchema>) {
-  const petFee = raw.petFee === "none" ? { amount: 0, basis: "stay" as const } : raw.petFee === "charged" ? { amount: raw.petFeeAmount ?? 0, basis: raw.petFeeBasis ?? "stay" } : null;
+  const petFee =
+    raw.petFee === "none"
+      ? { amount: 0, basis: "stay" as const }
+      : raw.petFee === "charged"
+        ? { amount: raw.petFeeAmount ?? 0, basis: raw.petFeeBasis ?? "stay" }
+        : null;
   return {
     slug,
     name: raw.name,
@@ -190,25 +265,72 @@ export const affiliatesSchema = z.object({
 });
 
 export const settingsSchema = z.object({
-  contactEmail: z.string().trim().refine((v) => v === "" || /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v), "must be an email address or left empty").default(""),
-  siteUrl: z.string().trim().refine((v) => v === "" || /^https:\/\/[A-Za-z0-9.-]+(:\d+)?$/.test(v), "must look like https://yourdomain.com (no slash, no extra text at the end) or be left empty").default(""),
-  ga4MeasurementId: z.string().trim().refine((v) => v === "" || /^G-[A-Z0-9]{6,}$/.test(v), "must look like G-XXXXXXXXXX or be left empty").default(""),
-  pinterestUrl: z.string().trim().refine((v) => v === "" || /^https:\/\/(www\.)?pinterest\.com\/[A-Za-z0-9_.\/-]+$/.test(v), "must look like https://www.pinterest.com/yourname/ or be left empty").default(""),
-  stay22AccountId: z.string().trim().refine((v) => v === "" || /^[A-Za-z0-9_-]+$/.test(v), "must be your Stay22 account ID (letters, numbers, hyphens) or be left empty").default(""),
+  contactEmail: z
+    .string()
+    .trim()
+    .refine(
+      (v) => v === "" || /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v),
+      "must be an email address or left empty",
+    )
+    .default(""),
+  siteUrl: z
+    .string()
+    .trim()
+    .refine(
+      (v) => v === "" || /^https:\/\/[A-Za-z0-9.-]+(:\d+)?$/.test(v),
+      "must look like https://yourdomain.com (no slash, no extra text at the end) or be left empty",
+    )
+    .default(""),
+  ga4MeasurementId: z
+    .string()
+    .trim()
+    .refine(
+      (v) => v === "" || /^G-[A-Z0-9]{6,}$/.test(v),
+      "must look like G-XXXXXXXXXX or be left empty",
+    )
+    .default(""),
+  pinterestUrl: z
+    .string()
+    .trim()
+    .refine(
+      (v) => v === "" || /^https:\/\/(www\.)?pinterest\.com\/[A-Za-z0-9_./-]+$/.test(v),
+      "must look like https://www.pinterest.com/yourname/ or be left empty",
+    )
+    .default(""),
+  stay22AccountId: z
+    .string()
+    .trim()
+    .refine(
+      (v) => v === "" || /^[A-Za-z0-9_-]+$/.test(v),
+      "must be your Stay22 account ID (letters, numbers, hyphens) or be left empty",
+    )
+    .default(""),
 });
 export type SiteSettings = z.infer<typeof settingsSchema>;
 
 // ---- Dog rules for places (parks, trails, beaches). A place goes live only when it is verified AND
 // has the official source address, the exact quoted sentence and the date someone read the page
 // (see placeIsPublic in publish-rule.ts). ----
-export const placeKinds = ["state-park", "national-park", "national-forest", "county-park", "city-park", "beach", "trail"] as const;
+export const placeKinds = [
+  "state-park",
+  "national-park",
+  "national-forest",
+  "county-park",
+  "city-park",
+  "beach",
+  "trail",
+] as const;
 export const placeRules = ["yes", "leash", "no", "some"] as const;
 const optHttpsUrl = z
   .string()
   .optional()
   .transform((v) => (v && v.trim() ? v.trim() : undefined))
   .pipe(httpsUrl.optional());
-const optDate = z.string().optional().transform((v) => (v && v.trim() ? v.trim() : undefined)).pipe(date.optional());
+const optDate = z
+  .string()
+  .optional()
+  .transform((v) => (v && v.trim() ? v.trim() : undefined))
+  .pipe(date.optional());
 
 export const placeYamlSchema = z.object({
   // If the Status box is ever left empty, the safe answer is "unverified" (never shown on the live site).

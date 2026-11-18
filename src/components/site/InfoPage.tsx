@@ -1,7 +1,19 @@
 import { Breadcrumbs } from "./Breadcrumbs";
 import { Markdown } from "./Markdown";
 
-export function InfoPage({ title, intro, body, updated, children }: { title: string; intro?: string; body?: string; updated?: string; children?: React.ReactNode }) {
+export function InfoPage({
+  title,
+  intro,
+  body,
+  updated,
+  children,
+}: {
+  title: string;
+  intro?: string;
+  body?: string;
+  updated?: string;
+  children?: React.ReactNode;
+}) {
   return (
     <div className="container-page pt-10">
       <Breadcrumbs items={[{ label: "Home", to: "/" }, { label: title }]} />

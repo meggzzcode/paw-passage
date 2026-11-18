@@ -136,7 +136,8 @@ When a link is an affiliate link it is marked sponsored and the page says so; re
   gear: [
     {
       productId: "midwest-exercise-pen-with-door",
-      bestFor: "A flexible pen with a choice of heights and corner stabilizers that can double as floor protectors",
+      bestFor:
+        "A flexible pen with a choice of heights and corner stabilizers that can double as floor protectors",
       whyItMadeTheList:
         "The maker's instructions describe eight connected panels, a two-latch door with a safety clip, ground anchors for outdoor use, and corner stabilizers that can sit on the bottom of the pen as floor protectors, at some cost to stability versus placing them on top. A range of heights lets you match the pen to your dog.",
       watchOuts: [
@@ -148,7 +149,8 @@ When a link is an affiliate link it is marked sponsored and the page says so; re
     },
     {
       productId: "carlson-convertible-pet-yard",
-      bestFor: "A metal pen with a walk-through door for a small to medium dog on a deck or indoors",
+      bestFor:
+        "A metal pen with a walk-through door for a small to medium dog on a deck or indoors",
       whyItMadeTheList:
         "The maker lists six 24-inch all-metal panels, a 28-inch height and a 16.3-inch walk-through door with a sliding safety lock, and says the panels hinge into several shapes.",
       watchOuts: [
@@ -187,7 +189,8 @@ When a link is an affiliate link it is marked sponsored and the page says so; re
       accessedOn: "2026-11-16",
     },
     {
-      title: "Assembly Instructions for Model Number 550-24DR, 552-30DR, 554-36DR, 556-42DR, 558-48DR",
+      title:
+        "Assembly Instructions for Model Number 550-24DR, 552-30DR, 554-36DR, 556-42DR, 558-48DR",
       url: "https://www.midwesthomes4pets.com/wp-content/uploads/ExPen_550DR_Eng.pdf",
       publisher: "MidWest Homes for Pets",
       accessedOn: "2026-11-16",
@@ -236,8 +239,7 @@ When a link is an affiliate link it is marked sponsored and the page says so; re
         checkedOn: "2026-11-16",
         coversWell:
           "Selection criteria (size, durability, weather for outdoor pens), enrichment, and a note that a top is optional for high-jumping dogs.",
-        gaps:
-          "No rental or travel guidance, no host-permission or floor-protection advice, no supervision warning, and no height measurements for the named pens.",
+        gaps: "No rental or travel guidance, no host-permission or floor-protection advice, no supervision warning, and no height measurements for the named pens.",
       },
       {
         url: "https://www.rvtravel.com/dog-fence-rving-1140/",
@@ -245,8 +247,7 @@ When a link is an affiliate link it is marked sponsored and the page says so; re
         checkedOn: "2026-11-16",
         coversWell:
           "Clear criteria (weight, height, latching, ventilation), a reminder that a fence is no substitute for supervision, and campground rule checks.",
-        gaps:
-          "Written for RV sites, not vacation rentals; no measurements for the products and little on larger dogs.",
+        gaps: "Written for RV sites, not vacation rentals; no measurements for the products and little on larger dogs.",
       },
       {
         url: "https://everywherewithclaire.com/best-portable-dog-fence-for-camping-rving/",
@@ -254,8 +255,7 @@ When a link is an affiliate link it is marked sponsored and the page says so; re
         checkedOn: "2026-11-16",
         coversWell:
           "Five products with height ranges and panel counts, buying criteria, and floor protectors for indoor use.",
-        gaps:
-          "No guidance on host permission or stakes in rental yards, no explicit unattended warning, and approximate price content that goes stale.",
+        gaps: "No guidance on host permission or stakes in rental yards, no explicit unattended warning, and approximate price content that goes stale.",
       },
       {
         url: "https://www.oodlelife.com/portable-camping-dog-fence/",
@@ -263,8 +263,7 @@ When a link is an affiliate link it is marked sponsored and the page says so; re
         checkedOn: "2026-11-16",
         coversWell:
           "Product basics across wire, mesh and plastic pens, anchoring details and rust-resistant coatings.",
-        gaps:
-          "Never says a dog should be supervised in a pen, ignores escape and jumping risks, and has no rental or host guidance.",
+        gaps: "Never says a dog should be supervised in a pen, ignores escape and jumping risks, and has no rental or host guidance.",
       },
       {
         url: "https://wideopenspaces.com/?p=304458",
@@ -272,8 +271,7 @@ When a link is an affiliate link it is marked sponsored and the page says so; re
         checkedOn: "2026-11-16",
         coversWell:
           "A spread of pen types for travel, camping and home, with a note that lighter metal pens suit indoor or hotel use.",
-        gaps:
-          "Little safety or supervision guidance, nothing on renting, host rules, lawn stakes or floor damage, and an older publication date.",
+        gaps: "Little safety or supervision guidance, nothing on renting, host rules, lawn stakes or floor damage, and an older publication date.",
       },
       {
         url: "https://www.critterfence.com/2025/06/24/fencing-on-the-go-solutions-for-traveling-pet-owners/",
@@ -281,8 +279,7 @@ When a link is an affiliate link it is marked sponsored and the page says so; re
         checkedOn: "2026-11-16",
         coversWell:
           "Breadth across pens, gates, and wireless options, setup by environment including vacation rentals, and repeated supervision reminders.",
-        gaps:
-          "Promotional for the publisher's own fence, thin rental coverage, no host-permission advice, and several unsourced expert attributions.",
+        gaps: "Promotional for the publisher's own fence, thin rental coverage, no host-permission advice, and several unsourced expert attributions.",
       },
     ],
     gapsFound: [

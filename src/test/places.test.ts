@@ -5,7 +5,13 @@ import { join } from "node:path";
 import { parse } from "yaml";
 import { loadContent } from "../../plugins/content";
 import { placeIsPublic, placeNeedsRecheck } from "@/content/publish-rule";
-import { getPlace, visiblePlaces, filterPlaces, dogsOnTrailsOrBeaches, defaultPlaceFilters } from "@/content/places";
+import {
+  getPlace,
+  visiblePlaces,
+  filterPlaces,
+  dogsOnTrailsOrBeaches,
+  defaultPlaceFilters,
+} from "@/content/places";
 import { sitemapEntries } from "@/lib/sitemap-entries";
 import { hasPlaces } from "@/lib/launch";
 import { Route as IndexRoute } from "@/routes/dog-rules.index";
@@ -27,7 +33,11 @@ const placeYaml = (extra: Record<string, string> = {}, drop: string[] = []) => {
     ...extra,
   };
   for (const d of drop) delete base[d];
-  return Object.entries(base).map(([k, v]) => `${k}: ${v}`).join("\n") + "\ndogsAllowed:\n  - area: Trails\n    rule: leash\n";
+  return (
+    Object.entries(base)
+      .map(([k, v]) => `${k}: ${v}`)
+      .join("\n") + "\ndogsAllowed:\n  - area: Trails\n    rule: leash\n"
+  );
 };
 const put = (name: string, text: string) => writeFileSync(join(root, "content/places", name), text);
 const reset = () => {
@@ -41,7 +51,12 @@ beforeAll(() => {
 afterAll(() => rmSync(root, { recursive: true, force: true }));
 
 describe("publish gate", () => {
-  const full = { status: "verified", sourceUrl: "https://x.gov/a", sourceQuote: "Dogs on leash.", lastChecked: "2026-11-01" };
+  const full = {
+    status: "verified",
+    sourceUrl: "https://x.gov/a",
+    sourceQuote: "Dogs on leash.",
+    lastChecked: "2026-11-01",
+  };
   it("is public only with status verified AND source address AND exact quote AND date checked", () => {
     expect(placeIsPublic(full)).toBe(true);
     expect(placeIsPublic({ ...full, status: "unverified" })).toBe(false);
@@ -77,7 +92,10 @@ describe("content build step for places", () => {
 
   it("leaves unverified places OUT of production but includes them with includeUnpublished", () => {
     reset();
-    put("seed.yml", placeYaml({ status: "unverified" }, ["sourceQuote", "lastChecked", "verifiedBy"]));
+    put(
+      "seed.yml",
+      placeYaml({ status: "unverified" }, ["sourceQuote", "lastChecked", "verifiedBy"]),
+    );
     expect(loadContent(root, false).places).toEqual([]);
     expect(loadContent(root, true).places.length).toBe(1);
   });
@@ -93,7 +111,14 @@ describe("content build step for places", () => {
 
   it("never puts unverified text into the production content bundle", () => {
     reset();
-    put("seed.yml", placeYaml({ status: "unverified", name: '"ZZ-SECRET-SEED-NAME"', sourceQuote: '"ZZ-SECRET-QUOTE"' }));
+    put(
+      "seed.yml",
+      placeYaml({
+        status: "unverified",
+        name: '"ZZ-SECRET-SEED-NAME"',
+        sourceQuote: '"ZZ-SECRET-QUOTE"',
+      }),
+    );
     put("ok.yml", placeYaml());
     const prod = JSON.stringify(loadContent(root, false));
     expect(prod).not.toContain("ZZ-SECRET");
@@ -104,7 +129,9 @@ describe("content build step for places", () => {
   it("a source address that is not https stops the build with a clear message", () => {
     reset();
     put("bad.yml", placeYaml({ sourceUrl: '"http://example.gov/page"' }));
-    expect(() => loadContent(root, false)).toThrow(/content[\\/]places[\\/]bad\.yml[\s\S]*sourceUrl[\s\S]*https:\/\//);
+    expect(() => loadContent(root, false)).toThrow(
+      /content[\\/]places[\\/]bad\.yml[\s\S]*sourceUrl[\s\S]*https:\/\//,
+    );
   });
 
   it("an unfinished unverified place is skipped (not a build failure), a broken verified one fails", () => {
@@ -150,7 +177,12 @@ describe("the seeded places in /content/places", () => {
         expect(y["sourceQuote"], f).toBeTruthy();
         expect(y["lastChecked"], f).toBeTruthy();
       } else {
-        expect(text.startsWith("# UNVERIFIED seed from our articles. Not public until verified against the official page."), f).toBe(true);
+        expect(
+          text.startsWith(
+            "# UNVERIFIED seed from our articles. Not public until verified against the official page.",
+          ),
+          f,
+        ).toBe(true);
         expect(y["lastChecked"] ?? null, f).toBeNull();
       }
     }
@@ -174,14 +206,20 @@ describe("site before the first verified place", () => {
   });
 
   it("the index page is noindex while no verified place exists", () => {
-    const head = IndexRoute.options.head!({ match: { search: defaultPlaceFilters } } as never) as { meta: Record<string, string>[] };
-    const noindex = head.meta.some((m) => m["name"] === "robots" && /noindex/.test(m["content"] ?? ""));
+    const head = IndexRoute.options.head!({ match: { search: defaultPlaceFilters } } as never) as {
+      meta: Record<string, string>[];
+    };
+    const noindex = head.meta.some(
+      (m) => m["name"] === "robots" && /noindex/.test(m["content"] ?? ""),
+    );
     expect(noindex).toBe(!hasPlaces());
   });
 
   it("an unverified place does not exist in production (the detail page returns 404) but shows in preview", () => {
     expect(getPlace("tallulah-gorge-state-park", { includeUnverified: false })).toBeUndefined();
-    expect(getPlace("tallulah-gorge-state-park", { includeUnverified: true })?.status).toBe("unverified");
+    expect(getPlace("tallulah-gorge-state-park", { includeUnverified: true })?.status).toBe(
+      "unverified",
+    );
     expect(getPlace("no-such-place", { includeUnverified: true })).toBeUndefined();
   });
 });
@@ -189,15 +227,45 @@ describe("site before the first verified place", () => {
 describe("search and filters", () => {
   const all = visiblePlaces({ includeUnverified: true });
   it("filters by state, kind and name", () => {
-    expect(filterPlaces(all, { ...defaultPlaceFilters, state: "georgia" }).every((p) => p.state === "georgia")).toBe(true);
-    expect(filterPlaces(all, { ...defaultPlaceFilters, kind: "beach" }).every((p) => p.kind === "beach")).toBe(true);
-    expect(filterPlaces(all, { ...defaultPlaceFilters, q: "tallulah" }).map((p) => p.slug)).toEqual(["tallulah-gorge-state-park"]);
+    expect(
+      filterPlaces(all, { ...defaultPlaceFilters, state: "georgia" }).every(
+        (p) => p.state === "georgia",
+      ),
+    ).toBe(true);
+    expect(
+      filterPlaces(all, { ...defaultPlaceFilters, kind: "beach" }).every((p) => p.kind === "beach"),
+    ).toBe(true);
+    expect(filterPlaces(all, { ...defaultPlaceFilters, q: "tallulah" }).map((p) => p.slug)).toEqual(
+      ["tallulah-gorge-state-park"],
+    );
   });
   it("'dogs on trails or beaches' reads the rule rows", () => {
-    expect(dogsOnTrailsOrBeaches({ kind: "state-park", dogsAllowed: [{ area: "Rim trails", rule: "leash", note: null }] })).toBe("yes");
-    expect(dogsOnTrailsOrBeaches({ kind: "national-park", dogsAllowed: [{ area: "Hiking trails", rule: "no", note: null }, { area: "Campgrounds", rule: "leash", note: null }] })).toBe("no");
-    expect(dogsOnTrailsOrBeaches({ kind: "national-park", dogsAllowed: [{ area: "Campgrounds", rule: "leash", note: null }] })).toBe("unclear");
-    expect(filterPlaces(all, { ...defaultPlaceFilters, trails: "yes" }).map((p) => p.slug)).toContain("tallulah-gorge-state-park");
-    expect(filterPlaces(all, { ...defaultPlaceFilters, trails: "no" }).map((p) => p.slug)).not.toContain("tallulah-gorge-state-park");
+    expect(
+      dogsOnTrailsOrBeaches({
+        kind: "state-park",
+        dogsAllowed: [{ area: "Rim trails", rule: "leash", note: null }],
+      }),
+    ).toBe("yes");
+    expect(
+      dogsOnTrailsOrBeaches({
+        kind: "national-park",
+        dogsAllowed: [
+          { area: "Hiking trails", rule: "no", note: null },
+          { area: "Campgrounds", rule: "leash", note: null },
+        ],
+      }),
+    ).toBe("no");
+    expect(
+      dogsOnTrailsOrBeaches({
+        kind: "national-park",
+        dogsAllowed: [{ area: "Campgrounds", rule: "leash", note: null }],
+      }),
+    ).toBe("unclear");
+    expect(
+      filterPlaces(all, { ...defaultPlaceFilters, trails: "yes" }).map((p) => p.slug),
+    ).toContain("tallulah-gorge-state-park");
+    expect(
+      filterPlaces(all, { ...defaultPlaceFilters, trails: "no" }).map((p) => p.slug),
+    ).not.toContain("tallulah-gorge-state-park");
   });
 });

@@ -7,7 +7,8 @@ export const products: Product[] = [
     id: "kurgo-collaps-a-bowl",
     name: "Collaps A Bowl",
     brand: "Kurgo",
-    summary: "A single collapsible silicone travel bowl for water or food that flattens for a bag or door pocket.",
+    summary:
+      "A single collapsible silicone travel bowl for water or food that flattens for a bag or door pocket.",
     keySpecs: [
       "Holds 24 ounces",
       "Collapses to less than 1 inch high",
@@ -26,7 +27,8 @@ export const products: Product[] = [
     id: "springland-22oz-original-travel-bottle",
     name: "22oz Original Travel Dog Water Bottle",
     brand: "Springland (formerly Springer)",
-    summary: "A squeeze-to-fill water bottle with an attached bowl, designed to be operated with one hand.",
+    summary:
+      "A squeeze-to-fill water bottle with an attached bowl, designed to be operated with one hand.",
     keySpecs: [
       "Named 22oz; the page gives no separate capacity figure",
       "Squeeze to fill the attached bowl, release to drain the excess back into the bottle",
@@ -45,7 +47,8 @@ export const products: Product[] = [
     id: "springland-20oz-flip-travel-bottle",
     name: "20oz Flip Travel Dog Water Bottle",
     brand: "Springland (formerly Springer)",
-    summary: "A squeeze-to-drink water bottle topped with a silicone bowl that flips up for drinking and folds down for storage.",
+    summary:
+      "A squeeze-to-drink water bottle topped with a silicone bowl that flips up for drinking and folds down for storage.",
     keySpecs: [
       "Named 20oz; the page gives no separate capacity figure",
       "Silicone top bowl flips up to drink and folds down for compact storage",
@@ -64,7 +67,8 @@ export const products: Product[] = [
     id: "vittles-vault-travel-tainer",
     name: "Vittles Vault Travel-Tainer Portable Food Storage Container",
     brand: "Vittles Vault (Gamma2 / Petmate)",
-    summary: "A rigid food container with a sealing lid that comes with two bowls and a carry handle.",
+    summary:
+      "A rigid food container with a sealing lid that comes with two bowls and a carry handle.",
     keySpecs: [
       "6-cup food container (the maker notes actual capacity depends on kibble shape and density)",
       "Comes with two 3-cup bowls, one for food and one for water, and a carry handle",
@@ -82,7 +86,8 @@ export const products: Product[] = [
     id: "kurgo-kibble-carrier",
     name: "Kibble Carrier",
     brand: "Kurgo",
-    summary: "A soft roll-top bag for carrying a few days of dry food, built for packing rather than long-term storage.",
+    summary:
+      "A soft roll-top bag for carrying a few days of dry food, built for packing rather than long-term storage.",
     keySpecs: [
       "Holds up to 5 lbs of dry food, roughly 20 cups of average-sized kibble, per the maker",
       "Ripstop material with a food-safe PEVA liner and heat-sealed seams",

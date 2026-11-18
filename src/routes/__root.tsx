@@ -78,8 +78,13 @@ function ErrorComponent({ error, reset }: ErrorComponentProps) {
 }
 
 /** True when the matched routes include one that resolved to "not found" (an unknown URL, or a stay/guide slug that does not exist). */
-export function isNotFoundLane(matches: ReadonlyArray<{ status?: string; globalNotFound?: boolean; _notFound?: unknown }> | undefined): boolean {
-  return !!matches?.some((m) => m.status === "notFound" || m.globalNotFound === true || !!m._notFound);
+export function isNotFoundLane(
+  matches:
+    ReadonlyArray<{ status?: string; globalNotFound?: boolean; _notFound?: unknown }> | undefined,
+): boolean {
+  return !!matches?.some(
+    (m) => m.status === "notFound" || m.globalNotFound === true || !!m._notFound,
+  );
 }
 
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
@@ -88,7 +93,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       // A page that does not exist keeps its 404 status, gets its own title and stays out of search results.
-      { title: isNotFoundLane(ctx?.matches) ? `Page not found | ${site.name}` : `${site.name}: dog-friendly travel guides and stays` },
+      {
+        title: isNotFoundLane(ctx?.matches)
+          ? `Page not found | ${site.name}`
+          : `${site.name}: dog-friendly travel guides and stays`,
+      },
       ...(isNotFoundLane(ctx?.matches) ? [{ name: "robots", content: "noindex, nofollow" }] : []),
       { name: "description", content: site.description },
       { property: "og:site_name", content: site.name },
@@ -98,23 +107,53 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       // Impact (impact.com) site-ownership check. Impact issues this tag with a "value" attribute, not "content". Remove when the site is sold; the buyer verifies with their own Impact account.
       { name: "impact-site-verification", value: "6535a715-c434-467a-a407-2aeecbf0bf44" },
       // A private preview build (SHOW_DRAFTS=true) can show unpublished drafts, so keep ALL of it out of search engines.
-      ...(site.showDraftGuides && !import.meta.env.DEV ? [{ name: "robots", content: "noindex, nofollow" }] : []),
+      ...(site.showDraftGuides && !import.meta.env.DEV
+        ? [{ name: "robots", content: "noindex, nofollow" }]
+        : []),
     ],
     links: [
       // Self-hosted fonts (see src/styles.css). Both are used above the fold, so both are preloaded.
-      { rel: "preload", href: "/fonts/dm-sans-latin-variable.woff2", as: "font", type: "font/woff2", crossOrigin: "anonymous" },
-      { rel: "preload", href: "/fonts/fraunces-latin-variable.woff2", as: "font", type: "font/woff2", crossOrigin: "anonymous" },
+      {
+        rel: "preload",
+        href: "/fonts/dm-sans-latin-variable.woff2",
+        as: "font",
+        type: "font/woff2",
+        crossOrigin: "anonymous",
+      },
+      {
+        rel: "preload",
+        href: "/fonts/fraunces-latin-variable.woff2",
+        as: "font",
+        type: "font/woff2",
+        crossOrigin: "anonymous",
+      },
       { rel: "stylesheet", href: appCss },
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
       { rel: "apple-touch-icon", href: "/apple-touch-icon.png" },
     ],
     scripts: [
       // Organization: url and name always; sameAs lists only the Pinterest profile, and only once site.pinterestUrl is set. No logo property: the site's logo is a text wordmark, and there is no brand logo image file to point to.
-      { type: "application/ld+json", children: jsonLd({ "@context": "https://schema.org", "@type": "Organization", name: site.name, ...(site.siteUrl ? { url: site.siteUrl } : {}), slogan: site.tagline, description: site.description, ...(site.pinterestUrl ? { sameAs: [site.pinterestUrl] } : {}) }) },
+      {
+        type: "application/ld+json",
+        children: jsonLd({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          name: site.name,
+          ...(site.siteUrl ? { url: site.siteUrl } : {}),
+          slogan: site.tagline,
+          description: site.description,
+          ...(site.pinterestUrl ? { sameAs: [site.pinterestUrl] } : {}),
+        }),
+      },
       ...(site.ga4MeasurementId
         ? [
-            { src: `https://www.googletagmanager.com/gtag/js?id=${site.ga4MeasurementId}`, async: true },
-            { children: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)};window.gtag=gtag;gtag('js',new Date());gtag('config','${site.ga4MeasurementId}');` },
+            {
+              src: `https://www.googletagmanager.com/gtag/js?id=${site.ga4MeasurementId}`,
+              async: true,
+            },
+            {
+              children: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)};window.gtag=gtag;gtag('js',new Date());gtag('config','${site.ga4MeasurementId}');`,
+            },
           ]
         : []),
     ],
@@ -133,7 +172,12 @@ function RootShell({ children }: { children: ReactNode }) {
         {/* Some hosts (Netlify's free plan) add an HTML comment and a blank line to the top of every page's <head>. React treats an
             unexpected node there as a mismatch ("hydration error #418") and rebuilds the page in the browser.
             This tiny script runs while the page loads and removes any comments and blank text from <head> before React starts. */}
-        <script dangerouslySetInnerHTML={{ __html: "(function(){var h=document.head;if(!h)return;var n=h.firstChild;while(n){var x=n.nextSibling;if(n.nodeType===8||(n.nodeType===3&&!/\\S/.test(n.nodeValue||'')))h.removeChild(n);n=x}})();" }} />
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "(function(){var h=document.head;if(!h)return;var n=h.firstChild;while(n){var x=n.nextSibling;if(n.nodeType===8||(n.nodeType===3&&!/\\S/.test(n.nodeValue||'')))h.removeChild(n);n=x}})();",
+          }}
+        />
       </head>
       <body>
         {children}

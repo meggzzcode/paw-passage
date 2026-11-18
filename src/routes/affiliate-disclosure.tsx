@@ -3,8 +3,18 @@ import { InfoPage } from "@/components/site/InfoPage";
 import { pageHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/affiliate-disclosure")({
-  head: () => pageHead({ title: "Affiliate disclosure", description: "How Paws & Passage earns money through affiliate links and sponsored listings, and how we keep that separate from our recommendations.", path: "/affiliate-disclosure" }),
-  component: () => <InfoPage title="Affiliate disclosure" updated="2026-11-18" body={`Paws & Passage is free to read. To keep it that way, some links on this site may be **affiliate links**. If you click one and then book a stay or buy a product, we may earn a commission from the company, at no extra cost to you.
+  head: () =>
+    pageHead({
+      title: "Affiliate disclosure",
+      description:
+        "How Paws & Passage earns money through affiliate links and sponsored listings, and how we keep that separate from our recommendations.",
+      path: "/affiliate-disclosure",
+    }),
+  component: () => (
+    <InfoPage
+      title="Affiliate disclosure"
+      updated="2026-11-18"
+      body={`Paws & Passage is free to read. To keep it that way, some links on this site may be **affiliate links**. If you click one and then book a stay or buy a product, we may earn a commission from the company, at no extra cost to you.
 
 ## How this works in practice
 
@@ -26,5 +36,7 @@ Occasionally a host may pay for extra visibility. Sponsored stays are always lab
 
 See our [editorial standards](/editorial-standards) or [contact us](/contact).
 
-This disclosure is provided in line with the U.S. Federal Trade Commission's guidance on endorsements.`} />,
+This disclosure is provided in line with the U.S. Federal Trade Commission's guidance on endorsements.`}
+    />
+  ),
 });

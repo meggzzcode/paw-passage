@@ -35,16 +35,23 @@ export function visiblePlaces(opts: { includeUnverified?: boolean } = {}): Place
     if (seen.has(p.slug)) throw new Error(`Two places share the web address "${p.slug}".`);
     seen.add(p.slug);
   }
-  return all.filter((p) => placeIsPublic(p) || includeUnverified).sort((a, b) => a.name.localeCompare(b.name));
+  return all
+    .filter((p) => placeIsPublic(p) || includeUnverified)
+    .sort((a, b) => a.name.localeCompare(b.name));
 }
 
-export function getPlace(slug: string, opts: { includeUnverified?: boolean } = {}): Place | undefined {
+export function getPlace(
+  slug: string,
+  opts: { includeUnverified?: boolean } = {},
+): Place | undefined {
   return visiblePlaces(opts).find((p) => p.slug === slug);
 }
 
 const TRAIL_OR_BEACH = /trail|beach|shore|rim|path|sand/i;
 /** Whether dogs may use the place's trails or beaches, read from its dog-rule rows. "unclear" means the rows do not say. */
-export function dogsOnTrailsOrBeaches(p: Pick<Place, "kind" | "dogsAllowed">): "yes" | "no" | "unclear" {
+export function dogsOnTrailsOrBeaches(
+  p: Pick<Place, "kind" | "dogsAllowed">,
+): "yes" | "no" | "unclear" {
   let rows = p.dogsAllowed.filter((d) => TRAIL_OR_BEACH.test(d.area));
   if (rows.length === 0 && (p.kind === "trail" || p.kind === "beach")) rows = p.dogsAllowed;
   if (rows.length === 0) return "unclear";
@@ -52,7 +59,12 @@ export function dogsOnTrailsOrBeaches(p: Pick<Place, "kind" | "dogsAllowed">): "
   return "no";
 }
 
-export interface PlaceFilters { q: string; state: string; kind: string; trails: string }
+export interface PlaceFilters {
+  q: string;
+  state: string;
+  kind: string;
+  trails: string;
+}
 export const defaultPlaceFilters: PlaceFilters = { q: "", state: "", kind: "", trails: "" };
 
 export function filterPlaces(all: Place[], f: PlaceFilters): Place[] {
@@ -62,7 +74,8 @@ export function filterPlaces(all: Place[], f: PlaceFilters): Place[] {
     if (f.kind && p.kind !== f.kind) return false;
     if (f.trails === "yes" && dogsOnTrailsOrBeaches(p) !== "yes") return false;
     if (f.trails === "no" && dogsOnTrailsOrBeaches(p) !== "no") return false;
-    if (q && !`${p.name} ${p.managedBy} ${placeKindLabels[p.kind]}`.toLowerCase().includes(q)) return false;
+    if (q && !`${p.name} ${p.managedBy} ${placeKindLabels[p.kind]}`.toLowerCase().includes(q))
+      return false;
     return true;
   });
 }

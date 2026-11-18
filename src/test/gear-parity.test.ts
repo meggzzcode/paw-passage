@@ -8,7 +8,8 @@ import { resolveProductLink } from "@/content/gear-links";
 
 const modules = import.meta.glob<{ products: Product[] }>("../content/gear/*.ts", { eager: true });
 const legacy: Product[] = Object.values(modules).flatMap((m) => m.products ?? []);
-const legacyOutbound = (p: Product) => p.productUrl ?? (/\.pdf(\?|#|$)/i.test(p.specSource.url) ? undefined : p.specSource.url);
+const legacyOutbound = (p: Product) =>
+  p.productUrl ?? (/\.pdf(\?|#|$)/i.test(p.specSource.url) ? undefined : p.specSource.url);
 
 describe("products.yml parity with the legacy gear files", () => {
   it("still has all 25 legacy products (new products have been added since)", () => {
@@ -19,8 +20,21 @@ describe("products.yml parity with the legacy gear files", () => {
   it("keeps every product's facts verbatim", () => {
     for (const old of legacy) {
       const now = products.find((p) => p.id === old.id)!;
-      expect({ name: now.name, brand: now.brand, summary: now.summary, keySpecs: now.keySpecs, specSource: now.specSource }, old.id).toEqual({
-        name: old.name, brand: old.brand, summary: old.summary, keySpecs: old.keySpecs, specSource: old.specSource,
+      expect(
+        {
+          name: now.name,
+          brand: now.brand,
+          summary: now.summary,
+          keySpecs: now.keySpecs,
+          specSource: now.specSource,
+        },
+        old.id,
+      ).toEqual({
+        name: old.name,
+        brand: old.brand,
+        summary: old.summary,
+        keySpecs: old.keySpecs,
+        specSource: old.specSource,
       });
     }
   });
@@ -39,6 +53,7 @@ describe("products.yml parity with the legacy gear files", () => {
     }
   });
   it("records the dates the repo already has as the last verification date", () => {
-    for (const old of legacy) expect(products.find((p) => p.id === old.id)!.lastVerified).toBe(old.specSource.accessedOn);
+    for (const old of legacy)
+      expect(products.find((p) => p.id === old.id)!.lastVerified).toBe(old.specSource.accessedOn);
   });
 });

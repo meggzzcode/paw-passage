@@ -3,8 +3,19 @@ import { InfoPage } from "@/components/site/InfoPage";
 import { pageHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/methodology")({
-  head: () => pageHead({ title: "Product review methodology", description: "How Paws & Passage researches and chooses dog travel gear: what we read, what researched means, and why nothing is described as tested unless we say so.", path: "/methodology" }),
-  component: () => <InfoPage title="Product review methodology" updated="2026-11-18" intro="We research gear. We do not test it." body={`This page explains how we choose the dog travel gear that appears in our guides. It is short on purpose, and it describes only what we actually do.
+  head: () =>
+    pageHead({
+      title: "Product review methodology",
+      description:
+        "How Paws & Passage researches and chooses dog travel gear: what we read, what researched means, and why nothing is described as tested unless we say so.",
+      path: "/methodology",
+    }),
+  component: () => (
+    <InfoPage
+      title="Product review methodology"
+      updated="2026-11-18"
+      intro="We research gear. We do not test it."
+      body={`This page explains how we choose the dog travel gear that appears in our guides. It is short on purpose, and it describes only what we actually do.
 
 ## Researched, not tested
 
@@ -39,5 +50,7 @@ Each guide shows when it was last reviewed. Specifications and certifications ch
 
 ## Related
 
-Our wider rules are in the [editorial standards](/editorial-standards).`} />,
+Our wider rules are in the [editorial standards](/editorial-standards).`}
+    />
+  ),
 });

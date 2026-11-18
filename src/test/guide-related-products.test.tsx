@@ -11,11 +11,16 @@ const ids = products.map((p) => p.id);
 
 describe("guide relatedProducts validation", () => {
   it("unknown ids and more than 4 ids are reported with a clear message", () => {
-    const p = relatedProductProblems([{ slug: "g", relatedProducts: ["kurgo-backseat-barrier", "no-such-product"] }], ids);
+    const p = relatedProductProblems(
+      [{ slug: "g", relatedProducts: ["kurgo-backseat-barrier", "no-such-product"] }],
+      ids,
+    );
     expect(p).toHaveLength(1);
     expect(p[0]).toContain('"no-such-product"');
     expect(p[0]).toContain("content/products.yml");
-    expect(relatedProductProblems([{ slug: "g", relatedProducts: ids.slice(0, 5) }], ids)[0]).toMatch(/most allowed is 4/);
+    expect(
+      relatedProductProblems([{ slug: "g", relatedProducts: ids.slice(0, 5) }], ids)[0],
+    ).toMatch(/most allowed is 4/);
   });
   it("the schema caps the field at 4 and defaults to empty", () => {
     const shape = guideSchema.shape.relatedProducts;
@@ -29,7 +34,11 @@ describe("guide relatedProducts validation", () => {
 
 describe("guide page section", () => {
   async function render(slug: string) {
-    const router = createRouter({ routeTree, history: createMemoryHistory({ initialEntries: [`/guides/${slug}`] }), context: { queryClient: new QueryClient() } });
+    const router = createRouter({
+      routeTree,
+      history: createMemoryHistory({ initialEntries: [`/guides/${slug}`] }),
+      context: { queryClient: new QueryClient() },
+    });
     await router.load();
     return renderToString(<RouterProvider router={router} />);
   }

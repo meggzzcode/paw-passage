@@ -22,7 +22,10 @@ export interface AffiliateUsage {
 }
 
 /** The approved affiliate links an article will show (inline links and product picks). Unapproved links show nothing. */
-export function affiliateUsage(guide: { body: string; gear?: { productId: string }[] | undefined }): AffiliateUsage {
+export function affiliateUsage(guide: {
+  body: string;
+  gear?: { productId: string }[] | undefined;
+}): AffiliateUsage {
   const ids = new Set<string>(inlineAffiliateIds(guide.body));
   for (const pick of guide.gear ?? []) {
     const product = getProduct(pick.productId);
@@ -42,7 +45,16 @@ export type ProductButton =
  */
 export function productButton(p: Product): ProductButton | undefined {
   const aff = getApprovedLink(productLinkId(p));
-  if (aff) return { kind: "affiliate", url: aff.url, network: aff.network, label: `See it at ${aff.network.replace(/ Associates$/i, "")}` };
-  const direct = p.productUrl ?? (/\.pdf(\?|#|$)/i.test(p.specSource.url) ? undefined : p.specSource.url);
-  return direct ? { kind: "direct", url: direct, label: `See it on ${p.brand}'s website` } : undefined;
+  if (aff)
+    return {
+      kind: "affiliate",
+      url: aff.url,
+      network: aff.network,
+      label: `See it at ${aff.network.replace(/ Associates$/i, "")}`,
+    };
+  const direct =
+    p.productUrl ?? (/\.pdf(\?|#|$)/i.test(p.specSource.url) ? undefined : p.specSource.url);
+  return direct
+    ? { kind: "direct", url: direct, label: `See it on ${p.brand}'s website` }
+    : undefined;
 }

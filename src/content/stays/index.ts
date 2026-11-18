@@ -18,7 +18,9 @@ export function visibleStays(opts: { includeSamples?: boolean } = {}): Stay[] {
   const verified = all.filter((s) => s.status === "verified");
   const unverified = all.filter((s) => s.status === "unverified");
   // Samples are only ever shown in development or private preview builds.
-  return includeSamples ? [...verified, ...unverified, ...sampleStays] : [...verified, ...unverified];
+  return includeSamples
+    ? [...verified, ...unverified, ...sampleStays]
+    : [...verified, ...unverified];
 }
 
 /** Verified stays only: used for the homepage, indexing and the sitemap. */

@@ -6,10 +6,16 @@ export const feeBasisHelp: Record<FeeBasis, string> = {
   stay: "Per stay: one flat amount for the whole booking, however many dogs or nights.",
   night: "Per night: the amount is charged for every night of the stay, however many dogs.",
   dog: "Per dog: the amount is charged once for each dog, however many nights.",
-  "dog-night": "Per dog per night: the amount is multiplied by the number of dogs and the number of nights.",
+  "dog-night":
+    "Per dog per night: the amount is multiplied by the number of dogs and the number of nights.",
 };
 
-export const feeBasisPhrase: Record<FeeBasis, string> = { stay: "per stay", night: "per night", dog: "per dog", "dog-night": "per dog per night" };
+export const feeBasisPhrase: Record<FeeBasis, string> = {
+  stay: "per stay",
+  night: "per night",
+  dog: "per dog",
+  "dog-night": "per dog per night",
+};
 
 const plural = (n: number, one: string, many: string) => `${n} ${n === 1 ? one : many}`;
 
@@ -18,7 +24,10 @@ export function feeConfirmationText(stay: StayForm): string {
   const c = parseStay(stay);
   const r = computeCost(c);
   const trip = `${plural(c.nights, "night", "nights")} and ${plural(c.dogs, "dog", "dogs")}`;
-  const deposit = c.deposit > 0 ? ` I also noted a refundable deposit of ${formatMoney(c.deposit)}; please confirm when and how it is returned.` : "";
+  const deposit =
+    c.deposit > 0
+      ? ` I also noted a refundable deposit of ${formatMoney(c.deposit)}; please confirm when and how it is returned.`
+      : "";
   if (c.petFee <= 0) {
     return `You listed no pet fee for ${trip}; please confirm in writing that there are no pet-related charges, deposits or after-stay charges.${deposit}`;
   }

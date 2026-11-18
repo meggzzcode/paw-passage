@@ -11,4 +11,3 @@ export function parseChecklist(raw: string | null): Record<string, boolean> {
     return {};
   }
 }
-

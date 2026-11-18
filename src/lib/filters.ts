@@ -24,9 +24,25 @@ export interface StayFilters {
 }
 
 export const defaultFilters: StayFilters = {
-  q: "", state: "", town: "", type: "", dogs: 0,
-  fenced: false, outdoor: false, large: false, multi: false, noFee: false, noBreed: false,
-  beach: false, mountain: false, hotTub: false, airCon: false, grill: false, parking: false, weightMin: 0, sort: "recommended",
+  q: "",
+  state: "",
+  town: "",
+  type: "",
+  dogs: 0,
+  fenced: false,
+  outdoor: false,
+  large: false,
+  multi: false,
+  noFee: false,
+  noBreed: false,
+  beach: false,
+  mountain: false,
+  hotTub: false,
+  airCon: false,
+  grill: false,
+  parking: false,
+  weightMin: 0,
+  sort: "recommended",
 };
 
 export const stayTypeLabels: Record<StayType, string> = {
@@ -46,7 +62,14 @@ function listsAmenity(s: Stay, re: RegExp): boolean {
 export function filterStays(stays: Stay[], f: StayFilters): Stay[] {
   const q = f.q.trim().toLowerCase();
   const out = stays.filter((s) => {
-    if (q && !`${s.name} ${s.town} ${s.state} ${s.summary}`.toLowerCase().replace(/-/g, " ").includes(q.replace(/-/g, " "))) return false;
+    if (
+      q &&
+      !`${s.name} ${s.town} ${s.state} ${s.summary}`
+        .toLowerCase()
+        .replace(/-/g, " ")
+        .includes(q.replace(/-/g, " "))
+    )
+      return false;
     if (f.state && s.state !== f.state) return false;
     if (f.town && s.town !== f.town) return false;
     if (f.type && s.type !== f.type) return false;
@@ -64,17 +87,45 @@ export function filterStays(stays: Stay[], f: StayFilters): Stay[] {
     if (f.grill && !listsAmenity(s, /barbecue|\bbbq\b|grill/i)) return false;
     if (f.parking && !listsAmenity(s, /parking/i)) return false;
     // A stated weight limit of at least N lb. No limit stated is "not confirmed", so it never matches.
-    if (f.weightMin > 0 && !(s.weightLimitLbs !== null && s.weightLimitLbs >= f.weightMin)) return false;
+    if (f.weightMin > 0 && !(s.weightLimitLbs !== null && s.weightLimitLbs >= f.weightMin))
+      return false;
     return true;
   });
-  const sponsoredFirst = (s: Stay) => (s.sponsored?.active && s.sponsored.placement === "top" ? 0 : 1);
+  const sponsoredFirst = (s: Stay) =>
+    s.sponsored?.active && s.sponsored.placement === "top" ? 0 : 1;
   if (f.sort === "name") out.sort((a, b) => a.name.localeCompare(b.name));
   else if (f.sort === "dogs") out.sort((a, b) => (b.maxDogs ?? 0) - (a.maxDogs ?? 0));
-  else out.sort((a, b) => sponsoredFirst(a) - sponsoredFirst(b) || (b.lastVerified ?? "").localeCompare(a.lastVerified ?? ""));
+  else
+    out.sort(
+      (a, b) =>
+        sponsoredFirst(a) - sponsoredFirst(b) ||
+        (b.lastVerified ?? "").localeCompare(a.lastVerified ?? ""),
+    );
   return out;
 }
 
 export function activeFilterCount(f: StayFilters): number {
-  const keys: (keyof StayFilters)[] = ["fenced", "outdoor", "large", "multi", "noFee", "noBreed", "beach", "mountain", "hotTub", "airCon", "grill", "parking"];
-  return keys.filter((k) => f[k]).length + (f.state ? 1 : 0) + (f.town ? 1 : 0) + (f.type ? 1 : 0) + (f.dogs ? 1 : 0) + (f.weightMin ? 1 : 0) + (f.q ? 1 : 0);
+  const keys: (keyof StayFilters)[] = [
+    "fenced",
+    "outdoor",
+    "large",
+    "multi",
+    "noFee",
+    "noBreed",
+    "beach",
+    "mountain",
+    "hotTub",
+    "airCon",
+    "grill",
+    "parking",
+  ];
+  return (
+    keys.filter((k) => f[k]).length +
+    (f.state ? 1 : 0) +
+    (f.town ? 1 : 0) +
+    (f.type ? 1 : 0) +
+    (f.dogs ? 1 : 0) +
+    (f.weightMin ? 1 : 0) +
+    (f.q ? 1 : 0)
+  );
 }

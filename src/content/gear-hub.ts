@@ -27,7 +27,10 @@ export function hasGear(list: Product[] = products): boolean {
 export { getGearCategory };
 
 /** The guide pick (bestFor, why, watch-outs) for a product, from the first public guide that features it. */
-export function guidePickFor(productId: string, guides: Guide[] = allGuides): { pick: GearPick; guide: Guide } | undefined {
+export function guidePickFor(
+  productId: string,
+  guides: Guide[] = allGuides,
+): { pick: GearPick; guide: Guide } | undefined {
   for (const g of guides.filter(isPublic)) {
     const pick = g.gear?.find((x) => x.productId === productId);
     if (pick) return { pick, guide: g };
@@ -43,6 +46,7 @@ export function guidesFeaturing(list: Product[], guides: Guide[] = allGuides): G
 
 /** The first live /gear category a product belongs to (its primary one when live), for "see more like this" links. */
 export function liveCategoryFor(p: Product, list: Product[] = products): GearCategory | undefined {
-  for (const slug of p.categories ?? []) if (categoryIsLive(slug, list)) return getGearCategory(slug);
+  for (const slug of p.categories ?? [])
+    if (categoryIsLive(slug, list)) return getGearCategory(slug);
   return undefined;
 }

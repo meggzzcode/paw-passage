@@ -26,13 +26,35 @@ export function relFor(kind: ResolvedLinkKind): string {
   return kind === "affiliate" ? "sponsored nofollow noopener" : "nofollow noopener";
 }
 
-export function resolveProductLink(p: Product, links: AffiliateLink[] = affiliateLinks): ResolvedProductLink | undefined {
+export function resolveProductLink(
+  p: Product,
+  links: AffiliateLink[] = affiliateLinks,
+): ResolvedProductLink | undefined {
   const aff = getApprovedLink(productLinkId(p), links);
   if (aff && aff.kind !== "stay") {
-    return { kind: "affiliate", url: aff.url, network: aff.network, label: `See it at ${aff.network.replace(/ Associates$/i, "")}`, rel: relFor("affiliate") };
+    return {
+      kind: "affiliate",
+      url: aff.url,
+      network: aff.network,
+      label: `See it at ${aff.network.replace(/ Associates$/i, "")}`,
+      rel: relFor("affiliate"),
+    };
   }
-  const manufacturer = p.productUrl ?? (/\.pdf(\?|#|$)/i.test(p.specSource.url) ? undefined : p.specSource.url);
-  if (manufacturer) return { kind: "manufacturer", url: manufacturer, label: `See it on ${p.brand}'s website`, rel: relFor("manufacturer") };
-  if (p.retailerUrl) return { kind: "retailer", url: p.retailerUrl, label: `See it at ${p.retailerName ?? "the retailer"}`, rel: relFor("retailer") };
+  const manufacturer =
+    p.productUrl ?? (/\.pdf(\?|#|$)/i.test(p.specSource.url) ? undefined : p.specSource.url);
+  if (manufacturer)
+    return {
+      kind: "manufacturer",
+      url: manufacturer,
+      label: `See it on ${p.brand}'s website`,
+      rel: relFor("manufacturer"),
+    };
+  if (p.retailerUrl)
+    return {
+      kind: "retailer",
+      url: p.retailerUrl,
+      label: `See it at ${p.retailerName ?? "the retailer"}`,
+      rel: relFor("retailer"),
+    };
   return undefined;
 }

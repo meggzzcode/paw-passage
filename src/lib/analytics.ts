@@ -1,20 +1,44 @@
 import { site } from "@/config/site";
 
 declare global {
-  interface Window { gtag?: (...args: unknown[]) => void }
+  interface Window {
+    gtag?: (...args: unknown[]) => void;
+  }
 }
 
 /** Sends a GA4 event only when a measurement ID is configured and gtag has loaded. */
-export function trackOutbound(params: { stay: string; partner: string; url: string; page: string }) {
+export function trackOutbound(params: {
+  stay: string;
+  partner: string;
+  url: string;
+  page: string;
+}) {
   if (!site.ga4MeasurementId || typeof window === "undefined" || !window.gtag) return false;
-  window.gtag("event", "booking_click", { stay_slug: params.stay, partner: params.partner, link_url: params.url, page_path: params.page, transport_type: "beacon" });
+  window.gtag("event", "booking_click", {
+    stay_slug: params.stay,
+    partner: params.partner,
+    link_url: params.url,
+    page_path: params.page,
+    transport_type: "beacon",
+  });
   return true;
 }
 
 /** Outbound click on a gear-guide product link. Sends nothing without a GA4 ID. */
-export function trackProductClick(params: { product: string; partner: string; url: string; page: string }) {
+export function trackProductClick(params: {
+  product: string;
+  partner: string;
+  url: string;
+  page: string;
+}) {
   if (!site.ga4MeasurementId || typeof window === "undefined" || !window.gtag) return false;
-  window.gtag("event", "product_click", { product_id: params.product, partner: params.partner, link_url: params.url, page_path: params.page, transport_type: "beacon" });
+  window.gtag("event", "product_click", {
+    product_id: params.product,
+    partner: params.partner,
+    link_url: params.url,
+    page_path: params.page,
+    transport_type: "beacon",
+  });
   return true;
 }
 
@@ -32,15 +56,27 @@ export type ToolEvent =
   | "rules_view" // opened a place's rules page
   | "rules_source_click"; // clicked through to the official source
 
-export function trackTool(event: ToolEvent, params: { tool: string; label?: string; count?: number }) {
+export function trackTool(
+  event: ToolEvent,
+  params: { tool: string; label?: string; count?: number },
+) {
   if (!site.ga4MeasurementId || typeof window === "undefined" || !window.gtag) return false;
-  window.gtag("event", event, { tool_name: params.tool, tool_label: params.label ?? "", item_count: params.count ?? 0, page_path: window.location.pathname, transport_type: "beacon" });
+  window.gtag("event", event, {
+    tool_name: params.tool,
+    tool_label: params.label ?? "",
+    item_count: params.count ?? 0,
+    page_path: window.location.pathname,
+    transport_type: "beacon",
+  });
   return true;
 }
 
 /** Fires an event only the first time per page view, e.g. "tool_start" when a visitor first touches a tool. */
 const fired = new Set<string>();
-export function trackToolOnce(event: ToolEvent, params: { tool: string; label?: string; count?: number }) {
+export function trackToolOnce(
+  event: ToolEvent,
+  params: { tool: string; label?: string; count?: number },
+) {
   const key = `${event}:${params.tool}:${params.label ?? ""}`;
   if (fired.has(key)) return false;
   const sent = trackTool(event, params);
@@ -71,21 +107,42 @@ export function stripUrl(raw: string): string {
 /** Click on a card that leads from a hub page (gear hub, destinations) to a lower page. */
 export function trackHubCardClick(params: { hub: string; card: string; page: string }) {
   if (!site.ga4MeasurementId || typeof window === "undefined" || !window.gtag) return false;
-  window.gtag("event", "hub_card_click", { hub: params.hub, card: params.card, page_path: params.page, transport_type: "beacon" });
+  window.gtag("event", "hub_card_click", {
+    hub: params.hub,
+    card: params.card,
+    page_path: params.page,
+    transport_type: "beacon",
+  });
   return true;
 }
 
 /** Click on a plain outbound link (not an affiliate booking or product button). Only host and path are sent. */
 export function trackOutboundClick(params: { url: string; page: string; label?: string }) {
   if (!site.ga4MeasurementId || typeof window === "undefined" || !window.gtag) return false;
-  window.gtag("event", "outbound_click", { link_url: stripUrl(params.url), link_label: params.label ?? "", page_path: params.page, transport_type: "beacon" });
+  window.gtag("event", "outbound_click", {
+    link_url: stripUrl(params.url),
+    link_label: params.label ?? "",
+    page_path: params.page,
+    transport_type: "beacon",
+  });
   return true;
 }
 
 /** Click on an accommodation referral link (for example a Stay22 link) that is not the stay booking button. */
-export function trackAccommodationReferral(params: { partner: string; stay?: string; url: string; page: string }) {
+export function trackAccommodationReferral(params: {
+  partner: string;
+  stay?: string;
+  url: string;
+  page: string;
+}) {
   if (!site.ga4MeasurementId || typeof window === "undefined" || !window.gtag) return false;
-  window.gtag("event", "accommodation_referral_click", { partner: params.partner, stay_slug: params.stay ?? "", link_url: stripUrl(params.url), page_path: params.page, transport_type: "beacon" });
+  window.gtag("event", "accommodation_referral_click", {
+    partner: params.partner,
+    stay_slug: params.stay ?? "",
+    link_url: stripUrl(params.url),
+    page_path: params.page,
+    transport_type: "beacon",
+  });
   return true;
 }
 

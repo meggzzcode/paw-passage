@@ -161,7 +161,8 @@ When a link is an affiliate link it is marked sponsored and the page says so; re
   gear: [
     {
       productId: "sleepypod-clickit-range",
-      bestFor: "Our pick from the cited test data: a medium to large dog riding on the rear seat of a car or SUV",
+      bestFor:
+        "Our pick from the cited test data: a medium to large dog riding on the rear seat of a car or SUV",
       whyItMadeTheList:
         "It matches the criteria for independent testing and a documented test weight: the maker states a CPS rating up to 110 lbs, and the CPS listing (Small, Medium, Large and X-Large) shows a 110 lb test dog in November 2024. It attaches to the vehicle seat belt and is sized by rib cage with Regular and Long fits listed by the maker.",
       watchOuts: [
@@ -200,7 +201,8 @@ When a link is an affiliate link it is marked sponsored and the page says so; re
     },
     {
       productId: "gunner-g1-kennel",
-      bestFor: "A small to medium-large dog in a secured crate, with the Medium or Intermediate size",
+      bestFor:
+        "A small to medium-large dog in a secured crate, with the Medium or Intermediate size",
       whyItMadeTheList:
         "CPS lists the Medium (45 lb test dog) and Intermediate (75 lb test dog) with strength-rated anchor straps, which fits the criteria for a documented test and a trusted connection. The maker sells tie-down straps separately.",
       watchOuts: [
@@ -230,7 +232,12 @@ When a link is an affiliate link it is marked sponsored and the page says so; re
     "vacation-rentals-that-welcome-large-dogs",
     "how-many-dogs-can-you-bring-to-a-vacation-rental",
   ],
-  relatedProducts: ["ruffwear-load-up-car-harness", "kurgo-enhanced-strength-tru-fit", "kurgo-backseat-barrier", "petsafe-happy-ride-dog-barrier"],
+  relatedProducts: [
+    "ruffwear-load-up-car-harness",
+    "kurgo-enhanced-strength-tru-fit",
+    "kurgo-backseat-barrier",
+    "petsafe-happy-ride-dog-barrier",
+  ],
   relatedTools: ["checklist", "pet-cost-check"],
   sources: [
     {
@@ -379,8 +386,7 @@ When a link is an affiliate link it is marked sponsored and the page says so; re
         checkedOn: "2026-11-16",
         coversWell:
           "Why restraint matters, a history of CPS harness testing, the limits of manufacturer crash-test claims, and a ranked list with weight ranges.",
-        gaps:
-          "Rankings rest on the author's own use and judgment with no test data or methodology; force figures are uncited; crates and carriers are not covered; no guidance on checking a listing or on anchoring.",
+        gaps: "Rankings rest on the author's own use and judgment with no test data or methodology; force figures are uncited; crates and carriers are not covered; no guidance on checking a listing or on anchoring.",
       },
       {
         url: "https://www.gopetfriendly.com/blog/crash-tested-crates-and-carriers/",
@@ -388,8 +394,7 @@ When a link is an affiliate link it is marked sponsored and the page says so; re
         checkedOn: "2026-11-16",
         coversWell:
           "Carriers versus crates, a list of CPS-certified crates with weight limits, and the point that certifications can be revoked and models discontinued.",
-        gaps:
-          "Dated February 2023 with no update note; limited test detail; no criteria for choosing between a harness and a crate; some links point to the wrong page; affiliate ties.",
+        gaps: "Dated February 2023 with no update note; limited test detail; no criteria for choosing between a harness and a crate; some links point to the wrong page; affiliate ties.",
       },
       {
         url: "https://pawventures.pages.dev/blog/best-crash-tested-dog-car-harnesses-2026/",
@@ -397,8 +402,7 @@ When a link is an affiliate link it is marked sponsored and the page says so; re
         checkedOn: "2026-11-16",
         coversWell:
           "Explains CPS, FMVSS 213 and other test standards, warns about marketing phrases that imply testing, and gives fitting tips and a comparison table.",
-        gaps:
-          "No test reports or dates for any pick; an unsourced claim that the top product is the only harness with both CPS certification and a five-star rating; most picks name no testing facility (Kurgo's is described only as an independent facility); crates are not covered; credited only to an unnamed editorial team.",
+        gaps: "No test reports or dates for any pick; an unsourced claim that the top product is the only harness with both CPS certification and a five-star rating; most picks name no testing facility (Kurgo's is described only as an independent facility); crates are not covered; credited only to an unnamed editorial team.",
       },
       {
         url: "https://gunner.com/blogs/pack/dog-crate-carrier-harness-or-travel-seat",
@@ -406,8 +410,7 @@ When a link is an affiliate link it is marked sponsored and the page says so; re
         checkedOn: "2026-11-16",
         coversWell:
           "Summarizes the 2013 and 2015 CPS studies and explains that travel seats and carriers may offer little crash protection.",
-        gaps:
-          "Written by the founder of a crate maker and promotes its own products; a 2015 article on a page that carries a 2026 promotion, so currency is unclear; limited methodology.",
+        gaps: "Written by the founder of a crate maker and promotes its own products; a 2015 article on a page that carries a 2026 promotion, so currency is unclear; limited methodology.",
       },
       {
         url: "https://iheartdogs.com/how-safe-is-your-crate-in-a-car-accident-center-for-pet-safety-releases-crash-test-results/",
@@ -415,8 +418,7 @@ When a link is an affiliate link it is marked sponsored and the page says so; re
         checkedOn: "2026-11-16",
         coversWell:
           "Reports the 2015 CPS crate and carrier study, including a failed crate that advertised crash testing, and advises strength-rated straps rather than bungee cords.",
-        gaps:
-          "From 2015, so products and standards have changed; no detailed pass criteria; no current product picks; describes the study as a Subaru and CPS collaboration without independent commentary.",
+        gaps: "From 2015, so products and standards have changed; no detailed pass criteria; no current product picks; describes the study as a Subaru and CPS collaboration without independent commentary.",
       },
       {
         url: "https://www.thule.com/en-au/articles/guides/how-to-choose-a-dog-crate",
@@ -424,8 +426,7 @@ When a link is an affiliate link it is marked sponsored and the page says so; re
         checkedOn: "2026-11-16",
         coversWell:
           "A buying checklist for a vehicle crate: ventilation, secure installation, locks, and measuring the dog and the car.",
-        gaps:
-          "Seller-written and centred on its own range; never names a standard or certifying body for its crash-test claim; no size chart or weight limits.",
+        gaps: "Seller-written and centred on its own range; never names a standard or certifying body for its crash-test claim; no size chart or weight limits.",
       },
     ],
     gapsFound: [

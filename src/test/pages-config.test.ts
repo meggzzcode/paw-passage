@@ -1,13 +1,28 @@
 import { describe, expect, it } from "vitest";
 import { readFileSync } from "node:fs";
 import { parse } from "yaml";
-import { guideSchema, stayYamlSchema, placeYamlSchema, affiliatesSchema, settingsSchema } from "../content/schema";
+import {
+  guideSchema,
+  stayYamlSchema,
+  placeYamlSchema,
+  affiliatesSchema,
+  settingsSchema,
+} from "../content/schema";
 
 // The Pages CMS form (.pages.yml) must offer every field the website's content rules know about,
 // and every drop-down must offer exactly the allowed choices. Otherwise an edit in the CMS could
 // silently drop data or fail the build.
-type Field = { name: string; type?: string; list?: boolean; fields?: Field[]; options?: { values?: (string | { value: string })[] } };
-const cfg = parse(readFileSync(".pages.yml", "utf8")) as { content: { name: string; fields: Field[] }[]; settings: { content: { merge: boolean } } };
+type Field = {
+  name: string;
+  type?: string;
+  list?: boolean;
+  fields?: Field[];
+  options?: { values?: (string | { value: string })[] };
+};
+const cfg = parse(readFileSync(".pages.yml", "utf8")) as {
+  content: { name: string; fields: Field[] }[];
+  settings: { content: { merge: boolean } };
+};
 const entry = (n: string) => cfg.content.find((c) => c.name === n)!;
 const names = (fs: Field[]) => fs.map((f) => f.name).sort();
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -24,10 +39,16 @@ const unwrap = (s: any): any => {
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const shapeKeys = (o: any) => Object.keys(unwrap(o).shape).sort();
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-const elementOf = (s: any) => unwrap(unwrap(s).element ?? unwrap(s)._def?.element ?? unwrap(s).def?.element);
-const values = (f: Field) => (f.options?.values ?? []).map((v) => (typeof v === "string" ? v : v.value)).filter((v) => v !== "").sort();
+const elementOf = (s: any) =>
+  unwrap(unwrap(s).element ?? unwrap(s)._def?.element ?? unwrap(s).def?.element);
+const values = (f: Field) =>
+  (f.options?.values ?? [])
+    .map((v) => (typeof v === "string" ? v : v.value))
+    .filter((v) => v !== "")
+    .sort();
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-const enumValues = (s: any): string[] => [...(unwrap(s).options ?? Object.values(unwrap(s).enum ?? {}))].sort();
+const enumValues = (s: any): string[] =>
+  [...(unwrap(s).options ?? Object.values(unwrap(s).enum ?? {}))].sort();
 
 describe("Pages CMS form matches the content rules", () => {
   it("keeps settings that are not on the form instead of deleting them", () => {
@@ -38,11 +59,15 @@ describe("Pages CMS form matches the content rules", () => {
     expect(names(entry("guides").fields)).toEqual([...shapeKeys(guideSchema), "body"].sort());
     const f = (n: string) => entry("guides").fields.find((x) => x.name === n)!;
     expect(names(f("faqs").fields!)).toEqual(shapeKeys(elementOf(unwrap(guideSchema).shape.faqs)));
-    expect(names(f("sources").fields!)).toEqual(shapeKeys(elementOf(unwrap(guideSchema).shape.sources)));
+    expect(names(f("sources").fields!)).toEqual(
+      shapeKeys(elementOf(unwrap(guideSchema).shape.sources)),
+    );
     expect(names(f("research").fields!)).toEqual(shapeKeys(unwrap(guideSchema).shape.research));
     expect(names(f("gear").fields!)).toEqual(shapeKeys(elementOf(unwrap(guideSchema).shape.gear)));
     const comp = f("research").fields!.find((x) => x.name === "competitors")!;
-    expect(names(comp.fields!)).toEqual(shapeKeys(elementOf(unwrap(unwrap(guideSchema).shape.research).shape.competitors)));
+    expect(names(comp.fields!)).toEqual(
+      shapeKeys(elementOf(unwrap(unwrap(guideSchema).shape.research).shape.competitors)),
+    );
   });
 
   it("article text uses the plain Markdown editor, not the rich-text editor (the visual editor turned tick boxes into plain bullets in the live test)", () => {
@@ -64,7 +89,18 @@ describe("Pages CMS form matches the content rules", () => {
     const sh = unwrap(stayYamlSchema).shape;
     expect(names(entry("stays").fields)).toEqual(shapeKeys(stayYamlSchema));
     const f = (n: string) => entry("stays").fields.find((x) => x.name === n)!;
-    for (const k of ["status", "type", "state", "fencedYard", "petFee", "petFeeBasis", "largeDogsOk", "privateOutdoor", "breedRestrictions", "hotTub"]) {
+    for (const k of [
+      "status",
+      "type",
+      "state",
+      "fencedYard",
+      "petFee",
+      "petFeeBasis",
+      "largeDogsOk",
+      "privateOutdoor",
+      "breedRestrictions",
+      "hotTub",
+    ]) {
       expect(values(f(k)), `stay field ${k}`).toEqual(enumValues(sh[k]));
     }
   });
@@ -73,7 +109,8 @@ describe("Pages CMS form matches the content rules", () => {
     const sh = unwrap(placeYamlSchema).shape;
     expect(names(entry("places").fields)).toEqual(shapeKeys(placeYamlSchema));
     const f = (n: string) => entry("places").fields.find((x) => x.name === n)!;
-    for (const k of ["status", "state", "kind"]) expect(values(f(k)), `place field ${k}`).toEqual(enumValues(sh[k]));
+    for (const k of ["status", "state", "kind"])
+      expect(values(f(k)), `place field ${k}`).toEqual(enumValues(sh[k]));
     expect(names(f("dogsAllowed").fields!)).toEqual(shapeKeys(elementOf(sh.dogsAllowed)));
     const rule = f("dogsAllowed").fields!.find((x) => x.name === "rule")!;
     expect(values(rule)).toEqual(enumValues(unwrap(elementOf(sh.dogsAllowed)).shape.rule));
@@ -81,7 +118,9 @@ describe("Pages CMS form matches the content rules", () => {
 
   it("affiliate links and business settings forms match the rules", () => {
     const links = entry("affiliates").fields.find((x) => x.name === "links")!;
-    expect(names(links.fields!)).toEqual(shapeKeys(elementOf(unwrap(affiliatesSchema).shape.links)));
+    expect(names(links.fields!)).toEqual(
+      shapeKeys(elementOf(unwrap(affiliatesSchema).shape.links)),
+    );
     expect(names(entry("settings").fields)).toEqual(shapeKeys(settingsSchema));
   });
 

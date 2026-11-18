@@ -8,7 +8,13 @@ import { pageHead } from "@/lib/seo";
 import { trackTool, trackToolOnce } from "@/lib/analytics";
 
 export const Route = createFileRoute("/tools/checklist")({
-  head: () => pageHead({ title: "Dog-friendly rental checklist (printable)", description: "An interactive before-you-book checklist for dog-friendly vacation rentals: pet policy, fence, house layout, local rules and packing.", path: "/tools/checklist" }),
+  head: () =>
+    pageHead({
+      title: "Dog-friendly rental checklist (printable)",
+      description:
+        "An interactive before-you-book checklist for dog-friendly vacation rentals: pet policy, fence, house layout, local rules and packing.",
+      path: "/tools/checklist",
+    }),
   component: ChecklistPage,
 });
 
@@ -18,19 +24,63 @@ function ChecklistPage() {
   const [done, setDone] = useState<Record<string, boolean>>({});
   const [loaded, setLoaded] = useState(false);
   useEffect(() => {
-    try { setDone(parseChecklist(localStorage.getItem(KEY))); } catch { /* storage blocked */ }
+    try {
+      setDone(parseChecklist(localStorage.getItem(KEY)));
+    } catch {
+      /* storage blocked */
+    }
     setLoaded(true);
   }, []);
-  useEffect(() => { if (loaded) { try { localStorage.setItem(KEY, JSON.stringify(done)); } catch { /* storage blocked */ } } }, [done, loaded]);
+  useEffect(() => {
+    if (loaded) {
+      try {
+        localStorage.setItem(KEY, JSON.stringify(done));
+      } catch {
+        /* storage blocked */
+      }
+    }
+  }, [done, loaded]);
   const total = checklist.reduce((n, g) => n + g.items.length, 0);
   const count = Object.values(done).filter(Boolean).length;
   return (
-    <ToolShell title="Before-you-book checklist" intro="Work through this before paying for a dog-friendly stay. Your ticks are saved on this device only." guides={[{ slug: "pet-friendly-vacation-rental-checklist", label: "What to check before booking a pet-friendly rental" }, { slug: "dog-friendly-cabin-packing-list", label: "What to pack for a dog-friendly cabin" }]}>
+    <ToolShell
+      title="Before-you-book checklist"
+      intro="Work through this before paying for a dog-friendly stay. Your ticks are saved on this device only."
+      guides={[
+        {
+          slug: "pet-friendly-vacation-rental-checklist",
+          label: "What to check before booking a pet-friendly rental",
+        },
+        { slug: "dog-friendly-cabin-packing-list", label: "What to pack for a dog-friendly cabin" },
+      ]}
+    >
       <div className="no-print mb-6 flex flex-wrap items-center gap-3">
-        <div className="h-2 w-48 overflow-hidden rounded-full bg-muted"><div className="h-full bg-primary transition-all" style={{ width: `${(count / total) * 100}%` }} /></div>
-        <span className="text-sm text-muted-foreground" aria-live="polite">{count} of {total} done</span>
-        <button type="button" onClick={() => { trackTool("tool_print", { tool: "checklist" }); window.print(); }} className="ml-auto inline-flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-sm font-medium text-primary-foreground"><Printer className="size-4" /> Print</button>
-        <button type="button" onClick={() => setDone({})} className="inline-flex items-center gap-2 rounded-full border border-input px-4 py-2 text-sm"><RotateCcw className="size-4" /> Reset</button>
+        <div className="h-2 w-48 overflow-hidden rounded-full bg-muted">
+          <div
+            className="h-full bg-primary transition-all"
+            style={{ width: `${(count / total) * 100}%` }}
+          />
+        </div>
+        <span className="text-sm text-muted-foreground" aria-live="polite">
+          {count} of {total} done
+        </span>
+        <button
+          type="button"
+          onClick={() => {
+            trackTool("tool_print", { tool: "checklist" });
+            window.print();
+          }}
+          className="ml-auto inline-flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-sm font-medium text-primary-foreground"
+        >
+          <Printer className="size-4" /> Print
+        </button>
+        <button
+          type="button"
+          onClick={() => setDone({})}
+          className="inline-flex items-center gap-2 rounded-full border border-input px-4 py-2 text-sm"
+        >
+          <RotateCcw className="size-4" /> Reset
+        </button>
       </div>
       <div className="grid gap-8 md:grid-cols-2">
         {checklist.map((g) => (
@@ -42,8 +92,18 @@ function ChecklistPage() {
                 return (
                   <li key={id}>
                     <label className="flex cursor-pointer gap-3 text-sm">
-                      <input type="checkbox" checked={!!done[id]} onChange={(e) => { trackToolOnce("tool_start", { tool: "checklist" }); setDone((d) => ({ ...d, [id]: e.target.checked })); }} className="mt-0.5 size-4 shrink-0 accent-[var(--primary)]" />
-                      <span className={done[id] ? "text-muted-foreground line-through" : ""}>{it}</span>
+                      <input
+                        type="checkbox"
+                        checked={!!done[id]}
+                        onChange={(e) => {
+                          trackToolOnce("tool_start", { tool: "checklist" });
+                          setDone((d) => ({ ...d, [id]: e.target.checked }));
+                        }}
+                        className="mt-0.5 size-4 shrink-0 accent-[var(--primary)]"
+                      />
+                      <span className={done[id] ? "text-muted-foreground line-through" : ""}>
+                        {it}
+                      </span>
                     </label>
                   </li>
                 );

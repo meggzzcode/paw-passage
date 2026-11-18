@@ -8,7 +8,10 @@ import type { Stay } from "@/content/stays/types";
 const fireEvent = {
   change(el: HTMLElement, init: { target: { value: string } }) {
     act(() => {
-      Object.getOwnPropertyDescriptor(HTMLInputElement.prototype, "value")!.set!.call(el, init.target.value);
+      Object.getOwnPropertyDescriptor(HTMLInputElement.prototype, "value")!.set!.call(
+        el,
+        init.target.value,
+      );
       el.dispatchEvent(new Event("input", { bubbles: true }));
     });
   },
@@ -16,20 +19,33 @@ const fireEvent = {
 
 let host: HTMLElement | null = null;
 let root: Root | null = null;
-afterEach(() => { act(() => root?.unmount()); host?.remove(); host = null; root = null; });
+afterEach(() => {
+  act(() => root?.unmount());
+  host?.remove();
+  host = null;
+  root = null;
+});
 
 function mount(stay: Stay) {
   host = document.createElement("div");
   document.body.appendChild(host);
   root = createRoot(host);
   act(() => root!.render(<StayFeeCalculator stay={stay} />));
-  const input = (label: string) => [...host!.querySelectorAll("label")].find((l) => l.textContent?.startsWith(label))!.querySelector("input") as HTMLInputElement;
+  const input = (label: string) =>
+    [...host!.querySelectorAll("label")]
+      .find((l) => l.textContent?.startsWith(label))!
+      .querySelector("input") as HTMLInputElement;
   const status = () => host!.querySelector("[aria-live]")!.textContent ?? "";
   return { input, status };
 }
 
 const base = visibleStays({ includeSamples: true })[0]!;
-const fixed = (o: Partial<Stay>): Stay => ({ ...base, petFee: { amount: 50, basis: "stay" }, maxDogs: 2, ...o });
+const fixed = (o: Partial<Stay>): Stay => ({
+  ...base,
+  petFee: { amount: 50, basis: "stay" },
+  maxDogs: 2,
+  ...o,
+});
 
 describe("StayFeeCalculator input limits", () => {
   it("feeInputsValid enforces nights 1-60 and dogs 1-max", () => {
@@ -47,7 +63,11 @@ describe("StayFeeCalculator input limits", () => {
   it("shows no total for 0 nights, 400 nights or 0 dogs", () => {
     const { input, status } = mount(fixed({}));
     expect(status()).toContain("$50");
-    for (const [n, d] of [["0", "1"], ["400", "1"], ["2", "0"]] as const) {
+    for (const [n, d] of [
+      ["0", "1"],
+      ["400", "1"],
+      ["2", "0"],
+    ] as const) {
       fireEvent.change(input("Nights"), { target: { value: n } });
       fireEvent.change(input("Dogs"), { target: { value: d } });
       expect(status(), `${n}/${d}`).toBe("Enter nights from 1 to 60 and dogs from 1 to 2.");

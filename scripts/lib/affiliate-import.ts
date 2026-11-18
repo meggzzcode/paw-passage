@@ -17,18 +17,26 @@ export function parseCsv(text: string): string[][] {
   let row: string[] = [];
   let cell = "";
   let q = false;
+  // The regex below intentionally contains a byte order mark (U+FEFF) so it can be stripped from CSV exports.
+  // eslint-disable-next-line no-irregular-whitespace
   const t = text.replace(/^﻿/, "");
   for (let i = 0; i < t.length; i++) {
     const c = t[i]!;
     if (q) {
       if (c === '"') {
-        if (t[i + 1] === '"') { cell += '"'; i++; } else q = false;
+        if (t[i + 1] === '"') {
+          cell += '"';
+          i++;
+        } else q = false;
       } else cell += c;
     } else if (c === '"') q = true;
-    else if (c === ",") { row.push(cell); cell = ""; }
-    else if (c === "\n" || c === "\r") {
+    else if (c === ",") {
+      row.push(cell);
+      cell = "";
+    } else if (c === "\n" || c === "\r") {
       if (c === "\r" && t[i + 1] === "\n") i++;
-      row.push(cell); cell = "";
+      row.push(cell);
+      cell = "";
       if (row.some((x) => x.trim() !== "")) rows.push(row);
       row = [];
     } else cell += c;
@@ -60,17 +68,32 @@ export function rowsToLinks(rows: string[][]): { links: AffLink[]; errors: strin
     const url = get("affiliate_url");
     if (!url) return;
     const id = get("link_id");
-    if (!/^[a-z0-9-]+$/.test(id)) errors.push(`Row ${line}: the link id "${id}" must use only lowercase letters, numbers and hyphens.`);
+    if (!/^[a-z0-9-]+$/.test(id))
+      errors.push(
+        `Row ${line}: the link id "${id}" must use only lowercase letters, numbers and hyphens.`,
+      );
     if (seen.has(id)) errors.push(`Row ${line}: the link id "${id}" appears twice.`);
     seen.add(id);
-    if (!/^https:\/\/\S+$/.test(url)) errors.push(`Row ${line}: the affiliate address must start with https:// and have no spaces.`);
-    if (!get("network")) errors.push(`Row ${line}: say which company the link is for (the "network" column).`);
+    if (!/^https:\/\/\S+$/.test(url))
+      errors.push(
+        `Row ${line}: the affiliate address must start with https:// and have no spaces.`,
+      );
+    if (!get("network"))
+      errors.push(`Row ${line}: say which company the link is for (the "network" column).`);
     const approvedText = get("approved").toLowerCase();
-    if (approvedText && !/^(true|yes|y|1|false|no|n|0)$/.test(approvedText)) errors.push(`Row ${line}: "approved" must be yes or no.`);
+    if (approvedText && !/^(true|yes|y|1|false|no|n|0)$/.test(approvedText))
+      errors.push(`Row ${line}: "approved" must be yes or no.`);
     const kindCol = col("kind");
     const kind = kindCol >= 0 && get("kind") === "stay" ? "stay" : "product";
     const notes = col("notes") >= 0 ? get("notes") : "";
-    links.push({ id, network: get("network"), url, approved: /^(true|yes|y|1)$/.test(approvedText), kind, ...(notes ? { notes } : {}) });
+    links.push({
+      id,
+      network: get("network"),
+      url,
+      approved: /^(true|yes|y|1)$/.test(approvedText),
+      kind,
+      ...(notes ? { notes } : {}),
+    });
   });
   return { links, errors };
 }

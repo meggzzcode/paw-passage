@@ -14,8 +14,9 @@ let root = "";
 
 // The real guide, with its links to other articles removed (the temporary test project has no other articles).
 const cleanGuide = () => {
-  const fs = require("node:fs") as typeof import("node:fs");
-  return fs.readFileSync(realGuide, "utf8").replace(/relatedGuides:\n(  - .*\n)+/, "relatedGuides: []\n").replace(/\]\(aff:[a-z0-9-]+\)/g, "](https://example.com)");
+  return readFileSync(realGuide, "utf8")
+    .replace(/relatedGuides:\n( {2}- .*\n)+/, "relatedGuides: []\n")
+    .replace(/\]\(aff:[a-z0-9-]+\)/g, "](https://example.com)");
 };
 const guideWith = (edit: (t: string) => string) => edit(cleanGuide());
 
@@ -42,8 +43,14 @@ describe("content build step", () => {
 
   it("leaves drafts and unapproved guides OUT of production builds, but lists unverified stays", () => {
     reset();
-    writeFileSync(join(root, "content/guides/draft.md"), guideWith((t) => t.replace("status: published", "status: draft")));
-    writeFileSync(join(root, "content/guides/unapproved.md"), guideWith((t) => t.replace(/^approvedBy:.*\n/m, "").replace(/^approvedOn:.*\n/m, "")));
+    writeFileSync(
+      join(root, "content/guides/draft.md"),
+      guideWith((t) => t.replace("status: published", "status: draft")),
+    );
+    writeFileSync(
+      join(root, "content/guides/unapproved.md"),
+      guideWith((t) => t.replace(/^approvedBy:.*\n/m, "").replace(/^approvedOn:.*\n/m, "")),
+    );
     writeFileSync(join(root, "content/stays/unverified.yml"), stayFixture());
     const prod = loadContent(root, false);
     expect(prod.guides).toEqual([]);
@@ -56,25 +63,37 @@ describe("content build step", () => {
 
   it("a guide whose research is not complete is not public even when approved", () => {
     reset();
-    writeFileSync(join(root, "content/guides/x.md"), guideWith((t) => t.replace("researchComplete: true", "researchComplete: false")));
+    writeFileSync(
+      join(root, "content/guides/x.md"),
+      guideWith((t) => t.replace("researchComplete: true", "researchComplete: false")),
+    );
     expect(loadContent(root, false).guides).toEqual([]);
   });
 
   it("stops with a plain message naming the file and field when content is wrong", () => {
     reset();
-    writeFileSync(join(root, "content/guides/bad.md"), guideWith((t) => t.replace(/^seoTitle:.*$/m, "seoTitle: " + "x".repeat(80))));
+    writeFileSync(
+      join(root, "content/guides/bad.md"),
+      guideWith((t) => t.replace(/^seoTitle:.*$/m, "seoTitle: " + "x".repeat(80))),
+    );
     expect(() => loadContent(root, false)).toThrow(/content\/guides\/bad\.md[\s\S]*seoTitle/);
   });
 
   it("rejects an uploaded hero image that is not in the uploads folder", () => {
     reset();
-    writeFileSync(join(root, "content/guides/up.md"), guideWith((t) => t.replace(/^heroImage:.*$/m, "heroUpload: /uploads/missing.jpg")));
+    writeFileSync(
+      join(root, "content/guides/up.md"),
+      guideWith((t) => t.replace(/^heroImage:.*$/m, "heroUpload: /uploads/missing.jpg")),
+    );
     expect(() => loadContent(root, false)).toThrow(/missing\.jpg/);
   });
 
   it("rejects a malformed affiliate link and bad site settings", () => {
     reset();
-    writeFileSync(join(root, "content/affiliates.yml"), "links:\n  - id: a\n    network: Amazon Associates\n    url: not-a-url\n");
+    writeFileSync(
+      join(root, "content/affiliates.yml"),
+      "links:\n  - id: a\n    network: Amazon Associates\n    url: not-a-url\n",
+    );
     expect(() => loadContent(root, false)).toThrow(/affiliates\.yml[\s\S]*web address/);
     reset();
     writeFileSync(join(root, "content/settings.yml"), 'ga4MeasurementId: "12345"\n');
@@ -107,26 +126,44 @@ describe("content build step", () => {
   it("refuses a built-in photo name that does not exist (this used to crash the home page)", () => {
     reset();
     mkdirSync(join(root, "src/lib"), { recursive: true });
-    writeFileSync(join(root, "src/lib/images.ts"), 'export const images = {\n  "real-photo": { src: a, alt: "x" },\n} as const;\n');
-    writeFileSync(join(root, "content/guides/img.md"), guideWith((t) => t.replace(/^heroImage:.*$/m, "heroImage: not-a-photo")));
+    writeFileSync(
+      join(root, "src/lib/images.ts"),
+      'export const images = {\n  "real-photo": { src: a, alt: "x" },\n} as const;\n',
+    );
+    writeFileSync(
+      join(root, "content/guides/img.md"),
+      guideWith((t) => t.replace(/^heroImage:.*$/m, "heroImage: not-a-photo")),
+    );
     expect(() => loadContent(root, false)).toThrow(/not-a-photo[\s\S]*does not exist/);
-    writeFileSync(join(root, "content/guides/img.md"), guideWith((t) => t.replace(/^heroImage:.*$/m, "heroImage: real-photo")));
+    writeFileSync(
+      join(root, "content/guides/img.md"),
+      guideWith((t) => t.replace(/^heroImage:.*$/m, "heroImage: real-photo")),
+    );
     expect(loadContent(root, false).guides.length).toBe(1);
     rmSync(join(root, "src"), { recursive: true, force: true });
   });
 
   it("refuses a related article that does not exist", () => {
     reset();
-    writeFileSync(join(root, "content/guides/rel.md"), guideWith((t) => t.replace("relatedGuides: []", "relatedGuides:\n  - no-such-guide")));
+    writeFileSync(
+      join(root, "content/guides/rel.md"),
+      guideWith((t) => t.replace("relatedGuides: []", "relatedGuides:\n  - no-such-guide")),
+    );
     expect(() => loadContent(root, false)).toThrow(/related article "no-such-guide"/);
   });
 
   it("a half-written DRAFT never blocks the build, but a broken PUBLISHED article does", () => {
     reset();
-    writeFileSync(join(root, "content/guides/draft.md"), "---\ntitle: Just started\nstatus: draft\n---\nSome words\n");
+    writeFileSync(
+      join(root, "content/guides/draft.md"),
+      "---\ntitle: Just started\nstatus: draft\n---\nSome words\n",
+    );
     writeFileSync(join(root, "content/guides/ok.md"), cleanGuide());
     expect(loadContent(root, false).guides.length).toBe(1);
-    writeFileSync(join(root, "content/guides/broken.md"), guideWith((t) => t.replace(/^seoTitle:.*$/m, "seoTitle: " + "x".repeat(80))));
+    writeFileSync(
+      join(root, "content/guides/broken.md"),
+      guideWith((t) => t.replace(/^seoTitle:.*$/m, "seoTitle: " + "x".repeat(80))),
+    );
     expect(() => loadContent(root, false)).toThrow(/broken\.md/);
   });
 
@@ -142,16 +179,22 @@ describe("content build step", () => {
     expect(pub).not.toContain("ANOTHER-NOTE");
     expect(pub).not.toContain("example.com/a");
     expect(pub).toContain("example.com/b");
-    expect(pub).not.toContain("primaryKeyword\":\"how");
+    expect(pub).not.toContain('primaryKeyword":"how');
     expect(JSON.stringify(loadContent(root, true))).toContain("SECRET-NOTE");
   });
 
   it("an unfinished draft with an invalid file name is skipped (not a build failure), and the message suggests a valid name", () => {
     reset();
-    writeFileSync(join(root, "content/guides/My Draft Title.md"), guideWith((t) => t.replace("status: published", "status: draft")));
+    writeFileSync(
+      join(root, "content/guides/My Draft Title.md"),
+      guideWith((t) => t.replace("status: published", "status: draft")),
+    );
     const out = loadContent(root, false);
     expect(out.guides).toEqual([]);
-    writeFileSync(join(root, "content/guides/My Published Title.md"), guideWith((t) => t));
+    writeFileSync(
+      join(root, "content/guides/My Published Title.md"),
+      guideWith((t) => t),
+    );
     expect(() => loadContent(root, false)).toThrow(/my-published-title\.md/);
   });
 
@@ -162,37 +205,100 @@ describe("content build step", () => {
       expect(() => loadContent(root, false), file).toThrow(re);
       rmSync(join(root, file));
     };
-    bad("content/affiliates.yml", "links:\n  - id: a\n    network: X\n    url: http://example.com\n", /https/);
-    bad("content/affiliates.yml", "links:\n  - id: a\n    network: X\n    url: javascript:alert(1)\n", /web address|https/);
+    bad(
+      "content/affiliates.yml",
+      "links:\n  - id: a\n    network: X\n    url: http://example.com\n",
+      /https/,
+    );
+    bad(
+      "content/affiliates.yml",
+      "links:\n  - id: a\n    network: X\n    url: javascript:alert(1)\n",
+      /web address|https/,
+    );
     bad("content/settings.yml", 'siteUrl: "https://a.com?x=<b>"\n', /siteUrl/);
-    bad("content/guides/dates.md", guideWith((t) => t.replace(/^publishedOn:.*$/m, "publishedOn: 2026-13-45")), /real date/);
-    bad("content/guides/trav.md", guideWith((t) => t.replace(/^heroImage:.*$/m, "heroUpload: /uploads/../../package.json")), /uploads/);
-    bad("content/guides/Bad Name.md", guideWith((t) => t), /lowercase letters/);
-    bad("content/stays/Bad Name.yml", "name: X\nstatus: verified\nlastVerified: 2026-11-16\ntype: cabin\nstate: georgia\ntown: a\nsummary: s\ndescription: d\nimage: guide-ga-cabins\n", /lowercase letters/);
-    bad("content/stays/zero.yml", "name: X\nstatus: unverified\ntype: cabin\nstate: georgia\ntown: a\nsummary: s\ndescription: d\nimage: guide-ga-cabins\npetFee: charged\npetFeeAmount: 0\npetFeeBasis: stay\n", /above zero/);
+    bad(
+      "content/guides/dates.md",
+      guideWith((t) => t.replace(/^publishedOn:.*$/m, "publishedOn: 2026-13-45")),
+      /real date/,
+    );
+    bad(
+      "content/guides/trav.md",
+      guideWith((t) => t.replace(/^heroImage:.*$/m, "heroUpload: /uploads/../../package.json")),
+      /uploads/,
+    );
+    bad(
+      "content/guides/Bad Name.md",
+      guideWith((t) => t),
+      /lowercase letters/,
+    );
+    bad(
+      "content/stays/Bad Name.yml",
+      "name: X\nstatus: verified\nlastVerified: 2026-11-16\ntype: cabin\nstate: georgia\ntown: a\nsummary: s\ndescription: d\nimage: guide-ga-cabins\n",
+      /lowercase letters/,
+    );
+    bad(
+      "content/stays/zero.yml",
+      "name: X\nstatus: unverified\ntype: cabin\nstate: georgia\ntown: a\nsummary: s\ndescription: d\nimage: guide-ga-cabins\npetFee: charged\npetFeeAmount: 0\npetFeeBasis: stay\n",
+      /above zero/,
+    );
   });
 
   it("affiliate links in article text must exist in Affiliate links (a typo fails the build; an unfinished draft is skipped)", () => {
     reset();
-    writeFileSync(join(root, "content/guides/aff.md"), guideWith((t) => t.replace("## The short answer", "Try the [thing](aff:not-there).\n\n## The short answer")));
+    writeFileSync(
+      join(root, "content/guides/aff.md"),
+      guideWith((t) =>
+        t.replace("## The short answer", "Try the [thing](aff:not-there).\n\n## The short answer"),
+      ),
+    );
     expect(() => loadContent(root, false)).toThrow(/affiliate link "not-there"/);
-    writeFileSync(join(root, "content/affiliates.yml"), "links:\n  - id: not-there\n    network: Test\n    url: https://example.com/x\n    approved: false\n");
+    writeFileSync(
+      join(root, "content/affiliates.yml"),
+      "links:\n  - id: not-there\n    network: Test\n    url: https://example.com/x\n    approved: false\n",
+    );
     expect(loadContent(root, false).guides.length).toBe(1);
     rmSync(join(root, "content/affiliates.yml"));
-    writeFileSync(join(root, "content/guides/aff.md"), guideWith((t) => t.replace("status: published", "status: draft").replace("## The short answer", "Try the [thing](aff:not-there).\n\n## The short answer")));
+    writeFileSync(
+      join(root, "content/guides/aff.md"),
+      guideWith((t) =>
+        t
+          .replace("status: published", "status: draft")
+          .replace("## The short answer", "Try the [thing](aff:not-there).\n\n## The short answer"),
+      ),
+    );
     expect(loadContent(root, false).guides).toEqual([]);
   });
 
   it("an unfinished article's photo never blocks the build, but a published article still needs a valid one", () => {
     reset();
     mkdirSync(join(root, "src/lib"), { recursive: true });
-    writeFileSync(join(root, "src/lib/images.ts"), 'export const images = {\n  "real-photo": { src: a, alt: "x" },\n} as const;\n');
+    writeFileSync(
+      join(root, "src/lib/images.ts"),
+      'export const images = {\n  "real-photo": { src: a, alt: "x" },\n} as const;\n',
+    );
     const noPhoto = guideWith((t) => t.replace(/^heroImage:.*\n/m, ""));
-    writeFileSync(join(root, "content/guides/draft.md"), noPhoto.replace("status: published", "status: draft"));
+    writeFileSync(
+      join(root, "content/guides/draft.md"),
+      noPhoto.replace("status: published", "status: draft"),
+    );
     expect(loadContent(root, false).guides).toEqual([]);
-    writeFileSync(join(root, "content/guides/draft.md"), guideWith((t) => t.replace("status: published", "status: draft").replace(/^heroImage:.*$/m, "heroImage: not-a-photo")));
+    writeFileSync(
+      join(root, "content/guides/draft.md"),
+      guideWith((t) =>
+        t
+          .replace("status: published", "status: draft")
+          .replace(/^heroImage:.*$/m, "heroImage: not-a-photo"),
+      ),
+    );
     expect(loadContent(root, false).guides).toEqual([]);
-    writeFileSync(join(root, "content/guides/draft.md"), guideWith((t) => t.replace("status: published", "status: draft").replace(/^heroImage:.*$/m, "heroUpload: /uploads/missing.jpg")));
+    writeFileSync(
+      join(root, "content/guides/draft.md"),
+      guideWith((t) =>
+        t
+          .replace("status: published", "status: draft")
+          .replace(/^heroImage:.*$/m, "heroUpload: /uploads/missing.jpg"),
+      ),
+    );
     expect(loadContent(root, false).guides).toEqual([]);
     writeFileSync(join(root, "content/guides/published.md"), noPhoto);
     expect(() => loadContent(root, false)).toThrow(/pick a built-in hero image/);
@@ -202,21 +308,39 @@ describe("content build step", () => {
   it("a stay needs no photo; a photo that is named but missing never blocks an unfinished stay, but still stops a verified one", () => {
     reset();
     mkdirSync(join(root, "src/lib"), { recursive: true });
-    writeFileSync(join(root, "src/lib/images.ts"), 'export const images = {\n  "real-photo": { src: a, alt: "x" },\n} as const;\n');
+    writeFileSync(
+      join(root, "src/lib/images.ts"),
+      'export const images = {\n  "real-photo": { src: a, alt: "x" },\n} as const;\n',
+    );
     const draft = stayFixture().replace(/^image:.*\n/m, "");
-    const verified = draft.replace("status: unverified", "status: verified\nlastVerified: 2026-11-16");
+    const verified = draft.replace(
+      "status: unverified",
+      "status: verified\nlastVerified: 2026-11-16",
+    );
     writeFileSync(join(root, "content/stays/draft.yml"), draft);
     expect(loadContent(root, false).stays).toHaveLength(1);
-    writeFileSync(join(root, "content/stays/draft.yml"), draft.replace(/^name:/m, "image: not-a-photo\nname:"));
+    writeFileSync(
+      join(root, "content/stays/draft.yml"),
+      draft.replace(/^name:/m, "image: not-a-photo\nname:"),
+    );
     expect(loadContent(root, false).stays).toEqual([]);
-    writeFileSync(join(root, "content/stays/draft.yml"), draft.replace(/^name:/m, "imageUpload: /uploads/missing.jpg\nname:"));
+    writeFileSync(
+      join(root, "content/stays/draft.yml"),
+      draft.replace(/^name:/m, "imageUpload: /uploads/missing.jpg\nname:"),
+    );
     expect(loadContent(root, false).stays).toEqual([]);
     reset();
     writeFileSync(join(root, "content/stays/verified.yml"), verified);
     expect(loadContent(root, false).stays).toHaveLength(1);
-    writeFileSync(join(root, "content/stays/verified.yml"), verified.replace(/^name:/m, "image: not-a-photo\nname:"));
+    writeFileSync(
+      join(root, "content/stays/verified.yml"),
+      verified.replace(/^name:/m, "image: not-a-photo\nname:"),
+    );
     expect(() => loadContent(root, false)).toThrow(/not-a-photo[\s\S]*does not exist/);
-    writeFileSync(join(root, "content/stays/verified.yml"), verified.replace(/^name:/m, "imageUpload: /uploads/missing.jpg\nname:"));
+    writeFileSync(
+      join(root, "content/stays/verified.yml"),
+      verified.replace(/^name:/m, "imageUpload: /uploads/missing.jpg\nname:"),
+    );
     expect(() => loadContent(root, false)).toThrow(/missing\.jpg/);
     rmSync(join(root, "src"), { recursive: true, force: true });
   });
@@ -230,4 +354,3 @@ describe("content build step", () => {
     expect(() => loadContent(root, false)).toThrow(/booking link "nope"/);
   });
 });
-

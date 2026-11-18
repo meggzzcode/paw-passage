@@ -34,29 +34,59 @@ type Head = { meta?: Record<string, string>[]; links?: unknown[] };
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const headOf = (route: any, ctx: Record<string, unknown> = {}): Head => route.options.head(ctx);
 const text = (h: Head) => JSON.stringify(h.meta ?? []);
-const prop = (h: Head, key: string) => h.meta?.find((m) => m["property"] === key || m["name"] === key)?.["content"] ?? "";
+const prop = (h: Head, key: string) =>
+  h.meta?.find((m) => m["property"] === key || m["name"] === key)?.["content"] ?? "";
 
 describe("meta tags", () => {
   it("no guide's seoTitle or seoDescription names an Expedia Group brand", () => {
     for (const g of allGuides) {
-      expect(`${g.seoTitle} ${g.seoDescription}`, g.slug).not.toMatch(/vrbo|expedia|hotels\.com|homeaway/i);
+      expect(`${g.seoTitle} ${g.seoDescription}`, g.slug).not.toMatch(
+        /vrbo|expedia|hotels\.com|homeaway/i,
+      );
     }
   });
 
   it("no brand name in any page's title, description, og or twitter tags, and titles/descriptions stay short", () => {
     const heads: [string, Head][] = [
-      ["/", headOf(home)], ["/about", headOf(about)], ["/contact", headOf(contact)], ["/privacy", headOf(privacy)], ["/terms", headOf(terms)],
-      ["/affiliate-disclosure", headOf(affiliateDisclosure)], ["/editorial-standards", headOf(editorial)], ["/list-your-property", headOf(listProperty)],
-      ["/guides", headOf(guidesIndex)], ["/dogs", headOf(dogsIndex)], ["/destinations", headOf(destIndex)], ["/tools", headOf(toolsIndex)],
-      ["/tools/checklist", headOf(checklist)], ["/tools/pet-cost-check", headOf(petCost)], ["/tools/will-my-dog-be-accepted", headOf(accepted)],
-      ["/tools/packing-list", headOf(packing)], ["/data/pet-policies", headOf(policies)],
+      ["/", headOf(home)],
+      ["/about", headOf(about)],
+      ["/contact", headOf(contact)],
+      ["/privacy", headOf(privacy)],
+      ["/terms", headOf(terms)],
+      ["/affiliate-disclosure", headOf(affiliateDisclosure)],
+      ["/editorial-standards", headOf(editorial)],
+      ["/list-your-property", headOf(listProperty)],
+      ["/guides", headOf(guidesIndex)],
+      ["/dogs", headOf(dogsIndex)],
+      ["/destinations", headOf(destIndex)],
+      ["/tools", headOf(toolsIndex)],
+      ["/tools/checklist", headOf(checklist)],
+      ["/tools/pet-cost-check", headOf(petCost)],
+      ["/tools/will-my-dog-be-accepted", headOf(accepted)],
+      ["/tools/packing-list", headOf(packing)],
+      ["/data/pet-policies", headOf(policies)],
     ];
-    for (const d of dogTypes) heads.push([`/dogs/${d.slug}`, headOf(dogType, { loaderData: { d }, params: { slug: d.slug } })]);
+    for (const d of dogTypes)
+      heads.push([
+        `/dogs/${d.slug}`,
+        headOf(dogType, { loaderData: { d }, params: { slug: d.slug } }),
+      ]);
     for (const d of destinations) {
-      heads.push([`/destinations/${d.slug}`, headOf(statePage, { loaderData: { d }, params: { state: d.slug } })]);
-      for (const t of d.towns) heads.push([`/destinations/${d.slug}/${t.slug}`, headOf(townPage, { loaderData: { d, t }, params: { state: d.slug, town: t.slug } })]);
+      heads.push([
+        `/destinations/${d.slug}`,
+        headOf(statePage, { loaderData: { d }, params: { state: d.slug } }),
+      ]);
+      for (const t of d.towns)
+        heads.push([
+          `/destinations/${d.slug}/${t.slug}`,
+          headOf(townPage, { loaderData: { d, t }, params: { state: d.slug, town: t.slug } }),
+        ]);
     }
-    for (const g of allGuides) heads.push([`/guides/${g.slug}`, headOf(guidePage, { loaderData: { guide: g }, params: { slug: g.slug } })]);
+    for (const g of allGuides)
+      heads.push([
+        `/guides/${g.slug}`,
+        headOf(guidePage, { loaderData: { guide: g }, params: { slug: g.slug } }),
+      ]);
     expect(heads.length).toBeGreaterThan(40);
     for (const [path, h] of heads) {
       expect(text(h), path).not.toMatch(path.startsWith("/guides/") ? EXPEDIA : BRANDS);
@@ -87,11 +117,16 @@ describe("stay page meta", () => {
       const description = prop(h, "description");
       expect(title.length, `${s.slug} title "${title}"`).toBeLessThanOrEqual(60);
       expect(title, s.slug).toMatch(/\| Paws & Passage$/);
-      expect(description.length, `${s.slug} description "${description}"`).toBeGreaterThanOrEqual(120);
+      expect(description.length, `${s.slug} description "${description}"`).toBeGreaterThanOrEqual(
+        120,
+      );
       expect(description.length, `${s.slug} description "${description}"`).toBeLessThanOrEqual(155);
       expect(text(h), s.slug).not.toMatch(/vrbo|expedia|hotels\.com|homeaway/i);
       expect(prop(h, "og:title"), s.slug).toBe(prop(h, "twitter:title"));
-      expect(h.meta?.some((m) => m["name"] === "robots" && /noindex/.test(m["content"] ?? "")), s.slug).toBe(!stayIsIndexable(s));
+      expect(
+        h.meta?.some((m) => m["name"] === "robots" && /noindex/.test(m["content"] ?? "")),
+        s.slug,
+      ).toBe(!stayIsIndexable(s));
     }
   });
 });

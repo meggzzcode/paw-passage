@@ -23,7 +23,10 @@ export function stayTitle(s: Stay): string {
 
 /** Stay meta description of 120 to 155 characters: the summary plus the dog limit. */
 export function stayDescription(s: Stay): string {
-  const limit = s.maxDogs === null ? "Dog limit not confirmed." : `Dog limit: ${s.maxDogs} dog${s.maxDogs === 1 ? "" : "s"}.`;
+  const limit =
+    s.maxDogs === null
+      ? "Dog limit not confirmed."
+      : `Dog limit: ${s.maxDogs} dog${s.maxDogs === 1 ? "" : "s"}.`;
   const base = s.summary.trim();
   const fillers = [
     "",
@@ -40,7 +43,10 @@ export function stayDescription(s: Stay): string {
   }
   if (out.length > 155) {
     const room = 155 - limit.length - 2;
-    const cut = base.slice(0, room).replace(/[\s,;:-]+\S*$/, "").replace(/[\s,;:.-]+$/, "");
+    const cut = base
+      .slice(0, room)
+      .replace(/[\s,;:-]+\S*$/, "")
+      .replace(/[\s,;:.-]+$/, "");
     out = `${cut}… ${limit}`;
   }
   return out;

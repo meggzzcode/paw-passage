@@ -1,10 +1,38 @@
 import { describe, it, expect } from "vitest";
 import { buildHostQuestions, type DogProfile } from "@/lib/host-questions";
-import { computeCost, petFeeTotal, parseStay, blankStay, lowestIndex, differenceText, summaryText, exampleStays, type StayForm } from "@/lib/cost";
+import {
+  computeCost,
+  petFeeTotal,
+  parseStay,
+  blankStay,
+  lowestIndex,
+  differenceText,
+  summaryText,
+  exampleStays,
+  type StayForm,
+} from "@/lib/cost";
 import { parseChecklist } from "@/lib/checklist-storage";
 
-const needs = { fencedYard: false, jumper: false, digger: false, pool: false, crate: true, leftAlone: true, furniture: false, stairsHard: false, reactive: false, beach: false };
-const prof = (o: Partial<DogProfile>): DogProfile => ({ dogName: "Biscuit", dogs: 1, size: "large", breed: "Border Collie mix", needs, ...o });
+const needs = {
+  fencedYard: false,
+  jumper: false,
+  digger: false,
+  pool: false,
+  crate: true,
+  leftAlone: true,
+  furniture: false,
+  stairsHard: false,
+  reactive: false,
+  beach: false,
+};
+const prof = (o: Partial<DogProfile>): DogProfile => ({
+  dogName: "Biscuit",
+  dogs: 1,
+  size: "large",
+  breed: "Border Collie mix",
+  needs,
+  ...o,
+});
 
 describe("host questions grammar", () => {
   it("singular uses the dog's name", () => {
@@ -29,7 +57,17 @@ describe("host questions grammar", () => {
   });
 });
 
-const base = { nightly: 200, nights: 4, cleaning: 100, otherFees: 25, petFee: 50, dogs: 2, taxPct: 10, deposit: 300, label: "A" };
+const base = {
+  nightly: 200,
+  nights: 4,
+  cleaning: 100,
+  otherFees: 25,
+  petFee: 50,
+  dogs: 2,
+  taxPct: 10,
+  deposit: 300,
+  label: "A",
+};
 describe("cost helper", () => {
   it("per stay / night / dog / dog-night", () => {
     expect(computeCost({ ...base, petFeeBasis: "stay" }).total).toBe(1067.5);
@@ -58,14 +96,17 @@ describe("cost helper", () => {
   });
   it("example stays give a difference sentence and summary", () => {
     const ex = exampleStays();
-    expect(differenceText(ex)).toMatch(/^Example Stay [AB] costs \$[\d,.]+ more than Example Stay [AB] \(4 nights, 2 dogs\)\.$/);
+    expect(differenceText(ex)).toMatch(
+      /^Example Stay [AB] costs \$[\d,.]+ more than Example Stay [AB] \(4 nights, 2 dogs\)\.$/,
+    );
     expect(summaryText(ex)).toContain("Total:");
   });
 });
 
 describe("checklist storage parsing", () => {
   it("ignores null and non-object JSON", () => {
-    for (const raw of ["null", "5", "[1]", '"x"', "{bad", "", null]) expect(parseChecklist(raw)).toEqual({});
+    for (const raw of ["null", "5", "[1]", '"x"', "{bad", "", null])
+      expect(parseChecklist(raw)).toEqual({});
   });
   it("keeps ticked booleans", () => {
     expect(parseChecklist('{"a":true,"b":false,"c":3}')).toEqual({ a: true });

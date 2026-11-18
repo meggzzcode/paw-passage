@@ -31,14 +31,14 @@ export const destinations: StateDest[] = [
       "The Blue Ridge foothills north of Atlanta are cabin country: wooded lots, long porches, creeks and national forest trails within an easy drive of the city. They are also hilly, which matters more than most listings admit when you need a yard your dog can't slip out of.",
     image: "guide-ga-cabins",
     focus: "Cabins with fenced yards",
-    guides: [
-      "vacation-rental-secure-fenced-yard",
-      "dog-friendly-cabin-packing-list",
-    ],
+    guides: ["vacation-rental-secure-fenced-yard", "dog-friendly-cabin-packing-list"],
     towns: [
       {
-        slug: "blue-ridge", name: "Blue Ridge", region: "Fannin County",
-        blurb: "A mountain town with a walkable downtown, surrounded by cabin rentals and the Chattahoochee-Oconee National Forest.",
+        slug: "blue-ridge",
+        name: "Blue Ridge",
+        region: "Fannin County",
+        blurb:
+          "A mountain town with a walkable downtown, surrounded by cabin rentals and the Chattahoochee-Oconee National Forest.",
         image: "guide-ga-cabins",
         guides: ["vacation-rental-secure-fenced-yard"],
         planningNotes: [
@@ -48,8 +48,11 @@ export const destinations: StateDest[] = [
         ],
       },
       {
-        slug: "ellijay", name: "Ellijay", region: "Gilmer County",
-        blurb: "Apple-orchard country with river valleys and quieter cabin rentals, a short drive from Blue Ridge.",
+        slug: "ellijay",
+        name: "Ellijay",
+        region: "Gilmer County",
+        blurb:
+          "Apple-orchard country with river valleys and quieter cabin rentals, a short drive from Blue Ridge.",
         image: "guide-fenced-yard",
         guides: ["vacation-rental-secure-fenced-yard"],
         planningNotes: [
@@ -58,8 +61,11 @@ export const destinations: StateDest[] = [
         ],
       },
       {
-        slug: "helen", name: "Helen", region: "White County",
-        blurb: "An Alpine-style village on the Chattahoochee River, busy on festival weekends and close to state parks.",
+        slug: "helen",
+        name: "Helen",
+        region: "White County",
+        blurb:
+          "An Alpine-style village on the Chattahoochee River, busy on festival weekends and close to state parks.",
         image: "guide-atlanta-getaways",
         guides: ["pet-friendly-vacation-rental-checklist"],
         planningNotes: [
@@ -68,8 +74,11 @@ export const destinations: StateDest[] = [
         ],
       },
       {
-        slug: "dahlonega", name: "Dahlonega", region: "Lumpkin County",
-        blurb: "A historic gold-rush town with a courthouse square, wineries and forested hills on every side.",
+        slug: "dahlonega",
+        name: "Dahlonega",
+        region: "Lumpkin County",
+        blurb:
+          "A historic gold-rush town with a courthouse square, wineries and forested hills on every side.",
         image: "guide-two-dogs",
         guides: ["how-many-dogs-can-you-bring-to-a-vacation-rental"],
         planningNotes: [
@@ -87,14 +96,14 @@ export const destinations: StateDest[] = [
       "California's coast has some of the most dog-welcoming towns in the country. It also has some of the most specific beach rules: leash hours, seasonal closures for nesting birds, and beaches where dogs aren't allowed at all, sometimes right next to beaches where they are. We focus on the details that decide whether a beach stay actually works.",
     image: "guide-ca-beach",
     focus: "Pet-friendly beachfront stays",
-    guides: [
-      "how-vacation-rental-pet-fees-work",
-      "vacation-rentals-that-welcome-large-dogs",
-    ],
+    guides: ["how-vacation-rental-pet-fees-work", "vacation-rentals-that-welcome-large-dogs"],
     towns: [
       {
-        slug: "san-diego", name: "San Diego", region: "Southern California",
-        blurb: "A big coastal city with designated dog beaches and plenty of rentals. The rules change from one beach to the next.",
+        slug: "san-diego",
+        name: "San Diego",
+        region: "Southern California",
+        blurb:
+          "A big coastal city with designated dog beaches and plenty of rentals. The rules change from one beach to the next.",
         image: "guide-ca-beach",
         guides: ["pet-friendly-vacation-rental-checklist"],
         planningNotes: [
@@ -103,17 +112,22 @@ export const destinations: StateDest[] = [
         ],
       },
       {
-        slug: "santa-barbara", name: "Santa Barbara", region: "Central Coast",
-        blurb: "A Spanish-revival town between mountains and sea, with a few beaches where dogs are welcome.",
+        slug: "santa-barbara",
+        name: "Santa Barbara",
+        region: "Central Coast",
+        blurb:
+          "A Spanish-revival town between mountains and sea, with a few beaches where dogs are welcome.",
         image: "guide-ca-beach",
         guides: ["pet-friendly-vacation-rental-checklist"],
         planningNotes: [
-          "A rental listed as \"walk to the beach\" may be near a beach where dogs aren't allowed. Check which beach.",
+          'A rental listed as "walk to the beach" may be near a beach where dogs aren\'t allowed. Check which beach.',
           "Bluff-top homes can have long stairways down to the sand. Ask, if your dog is older or very large.",
         ],
       },
       {
-        slug: "monterey", name: "Monterey", region: "Monterey Bay",
+        slug: "monterey",
+        name: "Monterey",
+        region: "Monterey Bay",
         blurb: "Cool, foggy coastline around Monterey Bay, close to Carmel and Pacific Grove.",
         image: "guide-ca-beach",
         guides: ["pet-friendly-vacation-rental-checklist"],
@@ -123,8 +137,11 @@ export const destinations: StateDest[] = [
         ],
       },
       {
-        slug: "mendocino", name: "Mendocino", region: "North Coast",
-        blurb: "A village on headlands above the Pacific, with bluff trails, coves and quiet rural rentals.",
+        slug: "mendocino",
+        name: "Mendocino",
+        region: "North Coast",
+        blurb:
+          "A village on headlands above the Pacific, with bluff trails, coves and quiet rural rentals.",
         image: "guide-ca-beach",
         guides: ["vacation-rental-secure-fenced-yard"],
         planningNotes: [
@@ -145,10 +162,26 @@ export function getTown(stateSlug: string, townSlug: string) {
 export function townName(slug: string) {
   for (const d of destinations) for (const t of d.towns) if (t.slug === slug) return t.name;
   // Towns without a destination page still show a readable name (cherry-log -> Cherry Log), never the raw slug.
-  return slug.split("-").map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
+  return slug
+    .split("-")
+    .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+    .join(" ");
 }
 
-const stateAbbrs: Record<string, string> = { georgia: "GA", california: "CA", "north-carolina": "NC", tennessee: "TN", florida: "FL", colorado: "CO" };
+const stateAbbrs: Record<string, string> = {
+  georgia: "GA",
+  california: "CA",
+  "north-carolina": "NC",
+  tennessee: "TN",
+  florida: "FL",
+  colorado: "CO",
+};
 export function stateAbbr(slug: string) {
-  return stateAbbrs[slug] ?? slug.split("-").map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
+  return (
+    stateAbbrs[slug] ??
+    slug
+      .split("-")
+      .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+      .join(" ")
+  );
 }

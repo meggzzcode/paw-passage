@@ -21,25 +21,42 @@ describe("site before the first verified stay", () => {
     expect(paths).not.toContain("/tools/compare");
     expect(paths).toContain("/tools/pet-cost-check");
     // Town pages are in the sitemap exactly when townIsIndexable says so (see stay-indexing.test.ts); thin towns are not.
-    for (const d of destinations) for (const t of d.towns) {
-      expect(paths.includes(`/destinations/${d.slug}/${t.slug}`), `${d.slug}/${t.slug}`).toBe(townIsIndexable(d.slug, t.slug));
-    }
+    for (const d of destinations)
+      for (const t of d.towns) {
+        expect(paths.includes(`/destinations/${d.slug}/${t.slug}`), `${d.slug}/${t.slug}`).toBe(
+          townIsIndexable(d.slug, t.slug),
+        );
+      }
     expect(paths).toContain("/guides");
     expect(paths.some((p) => p.startsWith("/guides/"))).toBe(true);
   });
   it("noindex can be set on a page", () => {
-    expect(JSON.stringify(pageHead({ title: "x", description: "y", path: "/z", noindex: true }).meta)).toContain("noindex");
+    expect(
+      JSON.stringify(pageHead({ title: "x", description: "y", path: "/z", noindex: true }).meta),
+    ).toContain("noindex");
   });
   it("indexes a town page only when a verified stay exists there", () => {
-    const stay = (town: string, status: "verified" | "unverified") => ({ town, status }) as unknown as Stay;
+    const stay = (town: string, status: "verified" | "unverified") =>
+      ({ town, status }) as unknown as Stay;
     expect(townHasVerifiedStay("blue-ridge", [])).toBe(false);
     expect(townHasVerifiedStay("blue-ridge", [stay("blue-ridge", "unverified")])).toBe(false);
-    expect(townHasVerifiedStay("blue-ridge", [stay("other", "verified"), stay("blue-ridge", "unverified")])).toBe(false);
-    expect(townHasVerifiedStay("blue-ridge", [stay("blue-ridge", "unverified"), stay("blue-ridge", "verified")])).toBe(true);
+    expect(
+      townHasVerifiedStay("blue-ridge", [
+        stay("other", "verified"),
+        stay("blue-ridge", "unverified"),
+      ]),
+    ).toBe(false);
+    expect(
+      townHasVerifiedStay("blue-ridge", [
+        stay("blue-ridge", "unverified"),
+        stay("blue-ridge", "verified"),
+      ]),
+    ).toBe(true);
   });
   it("falls back to the stable default share image", () => {
     const h = pageHead({ title: "x", description: "y", path: "/z" });
     expect(DEFAULT_SHARE_IMAGE).toBe("/share/default.jpg");
-    if (h.meta.some((m) => m["property"] === "og:image")) expect(JSON.stringify(h.meta)).toContain("/share/default.jpg");
+    if (h.meta.some((m) => m["property"] === "og:image"))
+      expect(JSON.stringify(h.meta)).toContain("/share/default.jpg");
   });
 });

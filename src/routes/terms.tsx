@@ -3,8 +3,17 @@ import { InfoPage } from "@/components/site/InfoPage";
 import { pageHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/terms")({
-  head: () => pageHead({ title: "Terms of use", description: "The terms for using Paws & Passage's travel guides, tools and stay listings.", path: "/terms" }),
-  component: () => <InfoPage title="Terms of use" updated="2026-11-18" body={`By using Paws & Passage you agree to these terms.
+  head: () =>
+    pageHead({
+      title: "Terms of use",
+      description: "The terms for using Paws & Passage's travel guides, tools and stay listings.",
+      path: "/terms",
+    }),
+  component: () => (
+    <InfoPage
+      title="Terms of use"
+      updated="2026-11-18"
+      body={`By using Paws & Passage you agree to these terms.
 
 ## Information, not a guarantee
 
@@ -36,5 +45,7 @@ To the extent permitted by law, Paws & Passage is not liable for losses arising 
 
 ## Changes
 
-We may update these terms; the date above shows the latest version. Questions? [Contact us](/contact).`} />,
+We may update these terms; the date above shows the latest version. Questions? [Contact us](/contact).`}
+    />
+  ),
 });

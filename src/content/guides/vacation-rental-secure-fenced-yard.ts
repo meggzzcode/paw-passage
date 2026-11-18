@@ -1,20 +1,21 @@
 import type { Guide } from "../types";
 
 export const guide: Guide = {
-  "slug": "vacation-rental-secure-fenced-yard",
-  "title": "How to Find a Vacation Rental With a Truly Secure Fenced Yard",
-  "seoTitle": "Is a Rental's Fenced Yard Really Dog-Safe?",
-  "seoDescription": "A lawn photo proves nothing. Find the weakest fence section, inspect gates and latches, and ask the host for a sketch, measured photos and a gate video.",
-  "dek": "Look past the lawn photo: check the weakest boundary, the gate routine, and the evidence that matters for your dog.",
-  "category": "Planning",
-  "states": [],
-  "status": "published",
-  "author": "Paws & Passage Editors",
-  "publishedOn": "2026-11-16",
-  "lastReviewed": "2026-11-16",
-  "readingMinutes": 9,
-  "heroImage": "guide-fenced-yard",
-  "body": `The listing says "fenced yard," and the photo shows a nice lawn. Nothing in that photo tells you where the fence ends, what the gate gap is, or who else can walk through.
+  slug: "vacation-rental-secure-fenced-yard",
+  title: "How to Find a Vacation Rental With a Truly Secure Fenced Yard",
+  seoTitle: "Is a Rental's Fenced Yard Really Dog-Safe?",
+  seoDescription:
+    "A lawn photo proves nothing. Find the weakest fence section, inspect gates and latches, and ask the host for a sketch, measured photos and a gate video.",
+  dek: "Look past the lawn photo: check the weakest boundary, the gate routine, and the evidence that matters for your dog.",
+  category: "Planning",
+  states: [],
+  status: "published",
+  author: "Paws & Passage Editors",
+  publishedOn: "2026-11-16",
+  lastReviewed: "2026-11-16",
+  readingMinutes: 9,
+  heroImage: "guide-fenced-yard",
+  body: `The listing says "fenced yard," and the photo shows a nice lawn. Nothing in that photo tells you where the fence ends, what the gate gap is, or who else can walk through.
 
 ## The short answer
 
@@ -141,153 +142,158 @@ If the yard does not match the description, photograph the issue, tell the host 
 ## Next step
 
 Save your arrival checks in the [travel checklist](/tools/checklist), price the stay in the [pet cost and host confirmation tool](/tools/pet-cost-check), and check your dog against the host's rules with [will my dog be accepted](/tools/will-my-dog-be-accepted). Then browse [dog-friendly stays](/stays) and filter for a confirmed fenced yard. The aim is a yard whose limits you understand, with gates managed consistently and a dog you keep supervising.`,
-  "faqs": [
+  faqs: [
     {
-      "q": "What fence height is safe for a vacation rental with a dog?",
-      "a": "There is no universal safe height. Check the lowest point from the dog’s side, construction, footholds, nearby objects, and your dog’s jumping or climbing history. A tall fence alone is not enough."
+      q: "What fence height is safe for a vacation rental with a dog?",
+      a: "There is no universal safe height. Check the lowest point from the dog’s side, construction, footholds, nearby objects, and your dog’s jumping or climbing history. A tall fence alone is not enough.",
     },
     {
-      "q": "Does partially fenced mean my dog can go off leash?",
-      "a": "No. Treat the space as unenclosed unless the host documents a separate continuous physical enclosure suitable for your dog. Plan leashed access if any boundary remains open."
+      q: "Does partially fenced mean my dog can go off leash?",
+      a: "No. Treat the space as unenclosed unless the host documents a separate continuous physical enclosure suitable for your dog. Plan leashed access if any boundary remains open.",
     },
     {
-      "q": "Which yard photos should I request?",
-      "a": "Ask for every boundary section, ground-level gaps, building joins, gate bottoms and latches, minimum-height measurements, and a layout showing pools and shared access. Request recent images and a short gate-closing video."
+      q: "Which yard photos should I request?",
+      a: "Ask for every boundary section, ground-level gaps, building joins, gate bottoms and latches, minimum-height measurements, and a layout showing pools and shared access. Request recent images and a short gate-closing video.",
     },
     {
-      "q": "Is an invisible fence enough for a short rental stay?",
-      "a": "It is not a physical enclosure. Such systems rely on a learned boundary and working equipment, and they do not stop other animals from entering. If your trip requires physical fencing, choose that explicitly."
+      q: "Is an invisible fence enough for a short rental stay?",
+      a: "It is not a physical enclosure. Such systems rely on a learned boundary and working equipment, and they do not stop other animals from entering. If your trip requires physical fencing, choose that explicitly.",
     },
     {
-      "q": "What if the fence is damaged when I arrive?",
-      "a": "Keep the dog away from the defect, document it, and contact the host through the booking channel. Use a leashed backup plan while seeking a resolution; repairs and refunds are not automatic."
-    }
+      q: "What if the fence is damaged when I arrive?",
+      a: "Keep the dog away from the defect, document it, and contact the host through the booking channel. Use a leashed backup plan while seeking a resolution; repairs and refunds are not automatic.",
+    },
   ],
-  "relatedGuides": [
+  relatedGuides: [
     "pet-friendly-vacation-rental-checklist",
     "how-many-dogs-can-you-bring-to-a-vacation-rental",
     "can-you-leave-a-dog-alone-in-a-vacation-rental",
     "new-years-eve-with-a-dog-in-a-vacation-rental",
     "vacation-rental-with-a-reactive-dog",
   ],
-  "relatedTools": ["checklist", "pet-cost-check"],
-  "sources": [
+  relatedTools: ["checklist", "pet-cost-check"],
+  sources: [
     {
-      "title": "What Type of Dog Fence Should I Have?",
-      "url": "https://www.akc.org/expert-advice/home-living/types-dog-fences/",
-      "publisher": "American Kennel Club",
-      "accessedOn": "2026-11-16"
+      title: "What Type of Dog Fence Should I Have?",
+      url: "https://www.akc.org/expert-advice/home-living/types-dog-fences/",
+      publisher: "American Kennel Club",
+      accessedOn: "2026-11-16",
     },
     {
-      "title": "How to Help Prevent Your Dog From Escaping the Yard",
-      "url": "https://www.akc.org/expert-advice/home-living/how-to-keep-a-dog-from-escaping-the-yard/",
-      "publisher": "American Kennel Club",
-      "accessedOn": "2026-11-16"
+      title: "How to Help Prevent Your Dog From Escaping the Yard",
+      url: "https://www.akc.org/expert-advice/home-living/how-to-keep-a-dog-from-escaping-the-yard/",
+      publisher: "American Kennel Club",
+      accessedOn: "2026-11-16",
     },
     {
-      "title": "In-Home Drowning: Layers of Protection",
-      "url": "https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/In-Home-Drowning-Safety-Information-Center",
-      "publisher": "U.S. Consumer Product Safety Commission",
-      "accessedOn": "2026-11-16"
+      title: "In-Home Drowning: Layers of Protection",
+      url: "https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/In-Home-Drowning-Safety-Information-Center",
+      publisher: "U.S. Consumer Product Safety Commission",
+      accessedOn: "2026-11-16",
     },
     {
-      "title": "The Pros and Cons of Invisible Fences for Dogs",
-      "url": "https://vcahospitals.com/know-your-pet/invisible-fences",
-      "publisher": "VCA Animal Hospitals",
-      "accessedOn": "2026-11-16"
+      title: "The Pros and Cons of Invisible Fences for Dogs",
+      url: "https://vcahospitals.com/know-your-pet/invisible-fences",
+      publisher: "VCA Animal Hospitals",
+      accessedOn: "2026-11-16",
     },
     {
-      "title": "Finding places that allow pets",
-      "url": "https://www.airbnb.com/help/article/86",
-      "publisher": "Airbnb",
-      "accessedOn": "2026-11-16"
+      title: "Finding places that allow pets",
+      url: "https://www.airbnb.com/help/article/86",
+      publisher: "Airbnb",
+      accessedOn: "2026-11-16",
     },
     {
-      "title": "What you need to know about hosting pets",
-      "url": "https://www.airbnb.com/resources/hosting-homes/a/what-you-need-to-know-about-hosting-pets-463",
-      "publisher": "Airbnb",
-      "accessedOn": "2026-11-16"
+      title: "What you need to know about hosting pets",
+      url: "https://www.airbnb.com/resources/hosting-homes/a/what-you-need-to-know-about-hosting-pets-463",
+      publisher: "Airbnb",
+      accessedOn: "2026-11-16",
     },
     {
-      "title": "Pet-Friendly Cabins in Ellijay & Blue Ridge, GA",
-      "url": "https://slidingrockcabins.com/pet-friendly-cabins/",
-      "publisher": "Sliding Rock Cabins",
-      "accessedOn": "2026-11-16"
+      title: "Pet-Friendly Cabins in Ellijay & Blue Ridge, GA",
+      url: "https://slidingrockcabins.com/pet-friendly-cabins/",
+      publisher: "Sliding Rock Cabins",
+      accessedOn: "2026-11-16",
     },
     {
-      "title": "Pet Friendly Cabin Rental in Ellijay, GA",
-      "url": "https://www.sacredwatersellijay.com/pet-friendly-cabin-rental-ellijay-ga",
-      "publisher": "Sacred Waters North Georgia Cabin Rental",
-      "accessedOn": "2026-11-16"
+      title: "Pet Friendly Cabin Rental in Ellijay, GA",
+      url: "https://www.sacredwatersellijay.com/pet-friendly-cabin-rental-ellijay-ga",
+      publisher: "Sacred Waters North Georgia Cabin Rental",
+      accessedOn: "2026-11-16",
     },
-
   ],
-  "research": {
-    "primaryKeyword": "vacation rental secure fenced yard",
-    "relatedKeywords": [
+  research: {
+    primaryKeyword: "vacation rental secure fenced yard",
+    relatedKeywords: [
       "dog friendly rental fenced yard",
       "fully fenced vacation rental",
-      "secure yard for dogs"
+      "secure yard for dogs",
     ],
-    "readerQuestions": [
+    readerQuestions: [
       "How high should a rental fence be?",
       "Which gate gaps matter?",
       "Does partially fenced count?",
       "Is a shared yard suitable?",
-      "What if there is a pool?"
+      "What if there is a pool?",
     ],
-    "intendedReader": "US travelers who need dog-specific containment rather than an unqualified fenced-yard label.",
-    "competitors": [
+    intendedReader:
+      "US travelers who need dog-specific containment rather than an unqualified fenced-yard label.",
+    competitors: [
       {
-        "title": "Secure Enclosed Garden Holiday Cottages: What to Look For",
-        "url": "https://www.bolberrycourt.com/blog/secure-enclosed-garden-holiday-cottages",
-        "checkedOn": "2026-11-16",
-        "coversWell": "Full page read. Covers checking gates for working latches, gaps under fencing, broken boards, and hedging density, and asks hosts for multi-angle photos, a video walkthrough, fence height, and reviews from dog owners; asks how often fencing and gates are inspected and maintained, whether there are known weak points or repairs needed, and requests photos of any recent maintenance work.",
-        "gaps": "Published by a single cottage and promotes it. No pool or water-feature guidance beyond a mention of ponds, no service or contractor access, and the 1.2 to 1.8 metre height range in its FAQ has no source."
+        title: "Secure Enclosed Garden Holiday Cottages: What to Look For",
+        url: "https://www.bolberrycourt.com/blog/secure-enclosed-garden-holiday-cottages",
+        checkedOn: "2026-11-16",
+        coversWell:
+          "Full page read. Covers checking gates for working latches, gaps under fencing, broken boards, and hedging density, and asks hosts for multi-angle photos, a video walkthrough, fence height, and reviews from dog owners; asks how often fencing and gates are inspected and maintained, whether there are known weak points or repairs needed, and requests photos of any recent maintenance work.",
+        gaps: "Published by a single cottage and promotes it. No pool or water-feature guidance beyond a mention of ponds, no service or contractor access, and the 1.2 to 1.8 metre height range in its FAQ has no source.",
       },
       {
-        "title": "Dog friendly cottage secure garden: a UK self-catering guide",
-        "url": "https://dogtripbritain.com/guides/self-catering-dog-secure-garden/",
-        "checkedOn": "2026-11-16",
-        "coversWell": "Full page read. Defines a secure garden as sole-use and enclosed on every side, matches boundaries to jumpers, diggers, and squeezers, flags launch points and gate gaps, lists seven pre-booking questions, and describes a daylight arrival walk with the first outing on a lead.",
-        "gaps": "UK-focused, with metric height bands that are not sourced. Mentions hot tubs and ponds as hazards but has no pool-separation workflow, no service-visit or gate-handoff planning, and no evidence-pack or dated-record approach."
+        title: "Dog friendly cottage secure garden: a UK self-catering guide",
+        url: "https://dogtripbritain.com/guides/self-catering-dog-secure-garden/",
+        checkedOn: "2026-11-16",
+        coversWell:
+          "Full page read. Defines a secure garden as sole-use and enclosed on every side, matches boundaries to jumpers, diggers, and squeezers, flags launch points and gate gaps, lists seven pre-booking questions, and describes a daylight arrival walk with the first outing on a lead.",
+        gaps: "UK-focused, with metric height bands that are not sourced. Mentions hot tubs and ponds as hazards but has no pool-separation workflow, no service-visit or gate-handoff planning, and no evidence-pack or dated-record approach.",
       },
       {
-        "title": "The Garden Clarity Assessment Kit",
-        "url": "https://wagabode.com/resources/garden-clarity-assessment",
-        "checkedOn": "2026-11-16",
-        "coversWell": "Full page read. Describes a five-check framework (lowest boundary, exit points, shared or overlooked space, what lies beyond, supporting evidence), separates confirmed findings from unknowns, and states that it is a guide, not a safety certificate.",
-        "gaps": "The page describes the downloadable workbook but does not reproduce its prompts, so the workbook itself was not reviewed. Asks how high the lowest boundary is but gives no measurement method, and no pool or service-access guidance on the page."
+        title: "The Garden Clarity Assessment Kit",
+        url: "https://wagabode.com/resources/garden-clarity-assessment",
+        checkedOn: "2026-11-16",
+        coversWell:
+          "Full page read. Describes a five-check framework (lowest boundary, exit points, shared or overlooked space, what lies beyond, supporting evidence), separates confirmed findings from unknowns, and states that it is a guide, not a safety certificate.",
+        gaps: "The page describes the downloadable workbook but does not reproduce its prompts, so the workbook itself was not reviewed. Asks how high the lowest boundary is but gives no measurement method, and no pool or service-access guidance on the page.",
       },
       {
-        "title": "What “secure garden” really means on a Dog-Friendly holiday",
-        "url": "https://woodfarmbarns.com/blog/what-secure-garden-really-means-on-a-dog-friendly-holiday/",
-        "checkedOn": "2026-11-16",
-        "coversWell": "Full page read. Frames security as suitability for the individual dog, stresses the gap beneath gates, dips, thinning hedges and weak boundary sections, solid versus see-through boundaries for reactive dogs, and the risk of arrival and unloading moments.",
-        "gaps": "Short and partly promotional. No heights, gap sizes, inspection method, or evidence requests, and no coverage of pools, water, or service access."
+        title: "What “secure garden” really means on a Dog-Friendly holiday",
+        url: "https://woodfarmbarns.com/blog/what-secure-garden-really-means-on-a-dog-friendly-holiday/",
+        checkedOn: "2026-11-16",
+        coversWell:
+          "Full page read. Frames security as suitability for the individual dog, stresses the gap beneath gates, dips, thinning hedges and weak boundary sections, solid versus see-through boundaries for reactive dogs, and the risk of arrival and unloading moments.",
+        gaps: "Short and partly promotional. No heights, gap sizes, inspection method, or evidence requests, and no coverage of pools, water, or service access.",
       },
       {
-        "title": "Cornwall Cottages With Enclosed Gardens: What to Check",
-        "url": "https://wagabode.com/guides/cornwall-cottages-with-enclosed-gardens-what-enclosed-really-means",
-        "checkedOn": "2026-11-16",
-        "coversWell": "Full page read. Distinguishes enclosed from escape-proof, covers mixed boundaries, gaps where materials meet, partial enclosure, lowest-section height, private versus shared use, and sightlines to roads and livestock.",
-        "gaps": "Does not mention pools, hot tubs, or other water features. No numeric standards, no liability guidance, and no gate-routine or service-access workflow."
-      }
+        title: "Cornwall Cottages With Enclosed Gardens: What to Check",
+        url: "https://wagabode.com/guides/cornwall-cottages-with-enclosed-gardens-what-enclosed-really-means",
+        checkedOn: "2026-11-16",
+        coversWell:
+          "Full page read. Distinguishes enclosed from escape-proof, covers mixed boundaries, gaps where materials meet, partial enclosure, lowest-section height, private versus shared use, and sightlines to roads and livestock.",
+        gaps: "Does not mention pools, hot tubs, or other water features. No numeric standards, no liability guidance, and no gate-routine or service-access workflow.",
+      },
     ],
-    "gapsFound": [
+    gapsFound: [
       "Retrieved competitors vary in evidence specificity; several already cover gates and dog-specific suitability, so those are baseline requirements rather than novel claims.",
       "Operational access by cleaners and pool staff deserves a separate booking decision.",
-      "Separate pool barriers from outer-property containment and from child-safety compliance."
+      "Separate pool barriers from outer-property containment and from child-safety compliance.",
     ],
-    "differentiators": [
+    differentiators: [
       "Dog-behavior-to-boundary screening matrix without a universal safe-height claim.",
       "Evidence pack with measurements, dates, and a gate-closing video.",
       "Cleaner and driveway access workflow plus a no-false-precision decision table.",
-      "Explicit distinction between CPSC child-safety guidance and dog suitability."
+      "Explicit distinction between CPSC child-safety guidance and dog suitability.",
     ],
-    "angle": "Evaluate the weakest boundary and its everyday operation, not just fence presence.",
-    "followUps": [],
-    "unverified": [],
-    "researchComplete": true
-  }
+    angle: "Evaluate the weakest boundary and its everyday operation, not just fence presence.",
+    followUps: [],
+    unverified: [],
+    researchComplete: true,
+  },
 };

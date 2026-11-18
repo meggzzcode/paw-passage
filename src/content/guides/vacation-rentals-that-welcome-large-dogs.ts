@@ -123,7 +123,11 @@ Next step: put your dog's weight into the [will my dog be accepted tool](/tools/
     "vacation-rentals-with-no-dog-weight-limit",
     "pet-friendly-listing-red-flags",
   ],
-  relatedProducts: ["petsafe-happy-ride-extra-long-ramp", "kong-bench-seat-cover-hammock-xl", "petsafe-happy-ride-hitch-step"],
+  relatedProducts: [
+    "petsafe-happy-ride-extra-long-ramp",
+    "kong-bench-seat-cover-hammock-xl",
+    "petsafe-happy-ride-hitch-step",
+  ],
   relatedTools: ["checklist", "pet-cost-check"],
   sources: [
     {
@@ -216,8 +220,7 @@ Next step: put your dog's weight into the [will my dog be accepted tool](/tools/
         checkedOn: "2026-11-16",
         coversWell:
           "Provides a size-specific discovery category and discloses breed exclusions and per-pet fees.",
-        gaps:
-          "Inventory-led rather than a general framework for verifying access, flooring, and written exceptions.",
+        gaps: "Inventory-led rather than a general framework for verifying access, flooring, and written exceptions.",
       },
       {
         url: "https://www.vacasa.com/explore/pet-friendly-vacation-rentals",
@@ -225,8 +228,7 @@ Next step: put your dog's weight into the [will my dog be accepted tool](/tools/
         checkedOn: "2026-11-16",
         coversWell:
           "States that weight limits and dog counts vary by home and are listed in each listing; notes per-dog fees and an unattended-dog rule.",
-        gaps:
-          "Gives no thresholds and does not mention stairs, flooring, written approval, or insurance.",
+        gaps: "Gives no thresholds and does not mention stairs, flooring, written approval, or insurance.",
       },
       {
         url: "https://searanchsonoma.com/pet-friendly",
@@ -234,8 +236,7 @@ Next step: put your dog's weight into the [will my dog be accepted tool](/tools/
         checkedOn: "2026-11-16",
         coversWell:
           "States an explicit 50-pound weight ceiling and explains property-specific dog counts and fee display.",
-        gaps:
-          "Regional inventory with a weight ceiling, not a broader search strategy for dogs above that ceiling.",
+        gaps: "Regional inventory with a weight ceiling, not a broader search strategy for dogs above that ceiling.",
       },
       {
         url: "https://pawventures.pages.dev/blog/dog-friendly-vacation-rental-booking-guide-2026/",
@@ -243,8 +244,7 @@ Next step: put your dog's weight into the [will my dog be accepted tool](/tools/
         checkedOn: "2026-11-16",
         coversWell:
           "Explains that the pets-allowed filter does not filter by weight, lists common weight cutoffs, and advises written approval and asking whether breed rules are insurance-driven.",
-        gaps:
-          "Does not define a large dog, and omits stairs, crate sizing, and traction; affiliate-style blog with unverified figures.",
+        gaps: "Does not define a large dog, and omits stairs, crate sizing, and traction; affiliate-style blog with unverified figures.",
       },
       {
         url: "https://www.avantstay.com/blog/pet-friendly-vacation-rentals-with-fenced-yard/",
@@ -252,8 +252,7 @@ Next step: put your dog's weight into the [will my dog be accepted tool](/tools/
         checkedOn: "2026-11-16",
         coversWell:
           "Fenced-yard listicle with a note that properties may limit pet counts, breeds, or weight, plus a durable-flooring tip.",
-        gaps:
-          "Does not address large dogs, fence height, stairs, written approval, or insurance.",
+        gaps: "Does not address large dogs, fence height, stairs, written approval, or insurance.",
       },
     ],
     gapsFound: [

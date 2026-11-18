@@ -4,18 +4,33 @@ import { join } from "node:path";
 
 vi.mock("@/config/site", () => ({ site: { ga4MeasurementId: "G-TEST1234" } }));
 
-import { EVENT_VOCABULARY, stripUrl, trackAccommodationReferral, trackHubCardClick, trackOutboundClick, trackOutbound, trackProductClick, trackTool } from "@/lib/analytics";
+import {
+  EVENT_VOCABULARY,
+  stripUrl,
+  trackAccommodationReferral,
+  trackHubCardClick,
+  trackOutboundClick,
+  trackOutbound,
+  trackProductClick,
+  trackTool,
+} from "@/lib/analytics";
 
 const calls: unknown[][] = [];
 beforeEach(() => {
   calls.length = 0;
-  window.gtag = (...a: unknown[]) => { calls.push(a); };
+  window.gtag = (...a: unknown[]) => {
+    calls.push(a);
+  };
 });
-afterEach(() => { delete window.gtag; });
+afterEach(() => {
+  delete window.gtag;
+});
 
 describe("analytics events", () => {
   it("strips query strings and fragments from outbound addresses", () => {
-    expect(stripUrl("https://example.com/a/b?email=me@x.com&q=secret#frag")).toBe("example.com/a/b");
+    expect(stripUrl("https://example.com/a/b?email=me@x.com&q=secret#frag")).toBe(
+      "example.com/a/b",
+    );
     expect(stripUrl("not a url")).toBe("");
   });
   it("outbound click sends host and path only", () => {
@@ -35,7 +50,8 @@ describe("analytics events", () => {
       const name = c[1] as keyof typeof EVENT_VOCABULARY;
       const params = Object.keys(c[2] as object).filter((k) => k !== "transport_type");
       expect(EVENT_VOCABULARY[name], String(name)).toBeDefined();
-      for (const p of params) expect(EVENT_VOCABULARY[name] as readonly string[], `${name}.${p}`).toContain(p);
+      for (const p of params)
+        expect(EVENT_VOCABULARY[name] as readonly string[], `${name}.${p}`).toContain(p);
     }
   });
   it("sends nothing when gtag is missing", () => {

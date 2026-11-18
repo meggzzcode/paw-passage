@@ -3,8 +3,18 @@ import { InfoPage } from "@/components/site/InfoPage";
 import { pageHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/privacy")({
-  head: () => pageHead({ title: "Privacy policy", description: "What information Paws & Passage collects, how analytics works, and your choices.", path: "/privacy" }),
-  component: () => <InfoPage title="Privacy policy" updated="2026-11-18" body={`This policy explains what happens to information when you use Paws & Passage.
+  head: () =>
+    pageHead({
+      title: "Privacy policy",
+      description:
+        "What information Paws & Passage collects, how analytics works, and your choices.",
+      path: "/privacy",
+    }),
+  component: () => (
+    <InfoPage
+      title="Privacy policy"
+      updated="2026-11-18"
+      body={`This policy explains what happens to information when you use Paws & Passage.
 
 ## Information you type into our tools
 
@@ -40,5 +50,7 @@ This site is not directed at children under 13.
 
 ## Changes and contact
 
-We'll update this page if our practices change. Questions? [Contact us](/contact).`} />,
+We'll update this page if our practices change. Questions? [Contact us](/contact).`}
+    />
+  ),
 });

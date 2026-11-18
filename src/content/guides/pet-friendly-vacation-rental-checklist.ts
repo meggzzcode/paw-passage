@@ -1,20 +1,21 @@
 import type { Guide } from "../types";
 
 export const guide: Guide = {
-  "slug": "pet-friendly-vacation-rental-checklist",
-  "title": "What to Check Before Booking a Pet-Friendly Vacation Rental",
-  "seoTitle": "Dog-Friendly Rental Checklist: 8 Questions",
-  "seoDescription": "Eight questions before you pay for a dog-friendly rental: written approval, total price, unattended-dog rules, cancellation terms and an emergency vet.",
-  "dek": "A practical booking audit for the dogs you have, the trip you want, and the rules you can actually follow.",
-  "category": "Checklist",
-  "states": [],
-  "status": "published",
-  "author": "Paws & Passage Editors",
-  "publishedOn": "2026-11-16",
-  "lastReviewed": "2026-11-16",
-  "readingMinutes": 6,
-  "heroImage": "guide-rental-checklist",
-  "body": `You found a cabin with a hot tub and a "pets welcome" badge, and then checkout adds a pet fee, a cleaning charge and a rule about leaving the dog alone that none of the photos mentioned. Every line below is a question that would have caught it before you paid. Work top to bottom, and stop at the first line you cannot answer. Pool and hot tub access is its own question; see [whether dogs can use a rental's pool or hot tub](/guides/can-dogs-go-in-a-rental-pool-or-hot-tub).
+  slug: "pet-friendly-vacation-rental-checklist",
+  title: "What to Check Before Booking a Pet-Friendly Vacation Rental",
+  seoTitle: "Dog-Friendly Rental Checklist: 8 Questions",
+  seoDescription:
+    "Eight questions before you pay for a dog-friendly rental: written approval, total price, unattended-dog rules, cancellation terms and an emergency vet.",
+  dek: "A practical booking audit for the dogs you have, the trip you want, and the rules you can actually follow.",
+  category: "Checklist",
+  states: [],
+  status: "published",
+  author: "Paws & Passage Editors",
+  publishedOn: "2026-11-16",
+  lastReviewed: "2026-11-16",
+  readingMinutes: 6,
+  heroImage: "guide-rental-checklist",
+  body: `You found a cabin with a hot tub and a "pets welcome" badge, and then checkout adds a pet fee, a cleaning charge and a rule about leaving the dog alone that none of the photos mentioned. Every line below is a question that would have caught it before you paid. Work top to bottom, and stop at the first line you cannot answer. Pool and hot tub access is its own question; see [whether dogs can use a rental's pool or hot tub](/guides/can-dogs-go-in-a-rental-pool-or-hot-tub).
 
 Tick it off on your phone in the [interactive checklist](/tools/checklist), and get the real total for your dog count and dates in the [pet cost check](/tools/pet-cost-check). If a listing already feels off, our guide to [pet-friendly listing red flags](/guides/pet-friendly-listing-red-flags) shows which wording to question.
 
@@ -108,33 +109,33 @@ A clear approval names the dogs and the stay; "we're pet-friendly" is not one. M
 
 Booked somewhere that says no pets? Read [what happens if you bring a dog to a no-pets rental](/guides/bringing-a-dog-to-a-no-pets-rental). Choosing a platform? See [Airbnb vs Vrbo with a dog](/guides/how-vacation-rental-pet-fees-work). Next step: run the [pet cost check](/tools/pet-cost-check), then save your answers in the [checklist tool](/tools/checklist).
 `,
-  "faqs": [
+  faqs: [
     {
-      "q": "Does pet-friendly mean every dog is allowed?",
-      "a": "No. Check the exact unit and dates, dog count, weight, breed or mix, age, and any approval or paperwork requirements. Get explicit written confirmation before making a nonrefundable booking."
+      q: "Does pet-friendly mean every dog is allowed?",
+      a: "No. Check the exact unit and dates, dog count, weight, breed or mix, age, and any approval or paperwork requirements. Get explicit written confirmation before making a nonrefundable booking.",
     },
     {
-      "q": "Can I leave my dog alone in a vacation rental?",
-      "a": "Only if the applicable rules permit it and your dog can comfortably manage the arrangement. Clarify time limits, crate conditions, and barking rules. Permission does not guarantee your dog will settle in an unfamiliar home."
+      q: "Can I leave my dog alone in a vacation rental?",
+      a: "Only if the applicable rules permit it and your dog can comfortably manage the arrangement. Clarify time limits, crate conditions, and barking rules. Permission does not guarantee your dog will settle in an unfamiliar home.",
     },
     {
-      "q": "Is a pet fee the same as a damage deposit?",
-      "a": "No. A pet fee is a charge under the booking terms; a refundable deposit is money that may be returned subject to its conditions. Neither automatically removes liability for damage."
+      q: "Is a pet fee the same as a damage deposit?",
+      a: "No. A pet fee is a charge under the booking terms; a refundable deposit is money that may be returned subject to its conditions. Neither automatically removes liability for damage.",
     },
     {
-      "q": "Do service animals have to follow ordinary pet restrictions?",
-      "a": "Service animals are not pets. Applicable law and platform accessibility policies determine access and fee rules, with exceptions and requirements that vary. Do not assume every private rental has identical ADA coverage."
+      q: "Do service animals have to follow ordinary pet restrictions?",
+      a: "Service animals are not pets. Applicable law and platform accessibility policies determine access and fee rules, with exceptions and requirements that vary. Do not assume every private rental has identical ADA coverage.",
     },
     {
-      "q": "What if my dog becomes ill and I need to cancel?",
-      "a": "Read the cancellation policy and any insurance wording. Pet illness does not automatically establish a refund right. Contact the booking provider and insurer promptly and retain required documentation."
+      q: "What if my dog becomes ill and I need to cancel?",
+      a: "Read the cancellation policy and any insurance wording. Pet illness does not automatically establish a refund right. Contact the booking provider and insurer promptly and retain required documentation.",
     },
     {
-      "q": "What emergency information should I save?",
-      "a": "Save your veterinarian’s contact, a local clinic, an after-hours hospital, medication details, relevant records, and offline directions. Confirm availability and call ahead when seeking emergency care."
-    }
+      q: "What emergency information should I save?",
+      a: "Save your veterinarian’s contact, a local clinic, an after-hours hospital, medication details, relevant records, and offline directions. Confirm availability and call ahead when seeking emergency care.",
+    },
   ],
-  "relatedGuides": [
+  relatedGuides: [
     "vacation-rental-secure-fenced-yard",
     "how-vacation-rental-pet-fees-work",
     "how-many-dogs-can-you-bring-to-a-vacation-rental",
@@ -145,117 +146,123 @@ Booked somewhere that says no pets? Read [what happens if you bring a dog to a n
     "vacation-rentals-with-no-dog-weight-limit",
     "puppy-at-a-vacation-rental",
   ],
-  "relatedTools": ["checklist", "pet-cost-check"],
-  "sources": [
+  relatedTools: ["checklist", "pet-cost-check"],
+  sources: [
     {
-      "title": "About house rules",
-      "url": "https://help.vrbo.com/articles/what-are-house-rules",
-      "publisher": "Vrbo",
-      "accessedOn": "2026-11-16"
+      title: "About house rules",
+      url: "https://help.vrbo.com/articles/what-are-house-rules",
+      publisher: "Vrbo",
+      accessedOn: "2026-11-16",
     },
     {
-      "title": "Pet fees",
-      "url": "https://www.airbnb.com/help/article/3623",
-      "publisher": "Airbnb",
-      "accessedOn": "2026-11-16"
+      title: "Pet fees",
+      url: "https://www.airbnb.com/help/article/3623",
+      publisher: "Airbnb",
+      accessedOn: "2026-11-16",
     },
     {
-      "title": "Off-platform and fee transparency policy",
-      "url": "https://www.airbnb.com/help/article/2799",
-      "publisher": "Airbnb",
-      "accessedOn": "2026-11-16"
+      title: "Off-platform and fee transparency policy",
+      url: "https://www.airbnb.com/help/article/2799",
+      publisher: "Airbnb",
+      accessedOn: "2026-11-16",
     },
     {
-      "title": "About guest refunds",
-      "url": "https://help.vrbo.com/articles/Does-HomeAway-Payments-automatically-issue-refunds-to-travelers",
-      "publisher": "Vrbo",
-      "accessedOn": "2026-11-16"
+      title: "About guest refunds",
+      url: "https://help.vrbo.com/articles/Does-HomeAway-Payments-automatically-issue-refunds-to-travelers",
+      publisher: "Vrbo",
+      accessedOn: "2026-11-16",
     },
     {
-      "title": "First aid tips for pet owners",
-      "url": "https://www.avma.org/resources-tools/pet-owners/emergencycare/first-aid-tips-pet-owners",
-      "publisher": "American Veterinary Medical Association",
-      "accessedOn": "2026-11-16"
+      title: "First aid tips for pet owners",
+      url: "https://www.avma.org/resources-tools/pet-owners/emergencycare/first-aid-tips-pet-owners",
+      publisher: "American Veterinary Medical Association",
+      accessedOn: "2026-11-16",
     },
     {
-      "title": "Frequently Asked Questions about Service Animals and the ADA",
-      "url": "https://www.ada.gov/resources/service-animals-faqs/",
-      "publisher": "U.S. Department of Justice",
-      "accessedOn": "2026-11-16"
+      title: "Frequently Asked Questions about Service Animals and the ADA",
+      url: "https://www.ada.gov/resources/service-animals-faqs/",
+      publisher: "U.S. Department of Justice",
+      accessedOn: "2026-11-16",
     },
     {
-      "title": "About cancellation policy options",
-      "url": "https://help.vrbo.com/articles/What-are-the-cancellation-policy-options",
-      "publisher": "Vrbo",
-      "accessedOn": "2026-11-16"
-    }
+      title: "About cancellation policy options",
+      url: "https://help.vrbo.com/articles/What-are-the-cancellation-policy-options",
+      publisher: "Vrbo",
+      accessedOn: "2026-11-16",
+    },
   ],
-  "research": {
-    "primaryKeyword": "pet friendly vacation rental checklist",
-    "relatedKeywords": [
+  research: {
+    primaryKeyword: "pet friendly vacation rental checklist",
+    relatedKeywords: [
       "pet friendly rental booking checklist",
       "vacation rental dog rules",
-      "vacation rental pet fees"
+      "vacation rental pet fees",
     ],
-    "readerQuestions": [
+    readerQuestions: [
       "Which dog restrictions should I confirm?",
       "Can I leave my dog alone?",
       "Are deposits refundable?",
       "How do service animal rules differ?",
-      "What cancellation policy applies?"
+      "What cancellation policy applies?",
     ],
-    "intendedReader": "US dog owners comparing vacation rentals before committing nonrefundable money.",
-    "competitors": [
+    intendedReader:
+      "US dog owners comparing vacation rentals before committing nonrefundable money.",
+    competitors: [
       {
-        "title": "Pet-Friendly Vacation Rental Checklist: What to Confirm Before You Book",
-        "url": "https://www.swackvacations.com/pet-friendly-vacation-rental-checklist-what-to-confirm-before-you-book/",
-        "checkedOn": "2026-11-16",
-        "coversWell": "Read in full. Covers dog-only policies, two-dog limits, size and breed rules tied to insurance or owners, approval before paying a deposit, per-stay versus per-pet fees, restricted areas such as pool areas, and leash rules at destinations.",
-        "gaps": "Gives no fee or deposit amounts, nothing on cancellation or refunds, no unattended-dog guidance beyond \"ask,\" no veterinary information, and only a brief service-animal note (ask the team; one registration requirement for specific condos). Written around the company's own homes."
+        title: "Pet-Friendly Vacation Rental Checklist: What to Confirm Before You Book",
+        url: "https://www.swackvacations.com/pet-friendly-vacation-rental-checklist-what-to-confirm-before-you-book/",
+        checkedOn: "2026-11-16",
+        coversWell:
+          "Read in full. Covers dog-only policies, two-dog limits, size and breed rules tied to insurance or owners, approval before paying a deposit, per-stay versus per-pet fees, restricted areas such as pool areas, and leash rules at destinations.",
+        gaps: 'Gives no fee or deposit amounts, nothing on cancellation or refunds, no unattended-dog guidance beyond "ask," no veterinary information, and only a brief service-animal note (ask the team; one registration requirement for specific condos). Written around the company\'s own homes.',
       },
       {
-        "title": "The Complete Checklist for Booking a Pet-Friendly Vacation Rental",
-        "url": "https://holidaycottage.us/pet-friendly-vacation-rental-booking-checklist",
-        "checkedOn": "2026-11-16",
-        "coversWell": "Read in full. A three-stage checklist (before shortlisting, before booking, before departure) covering pet type and limits, where pets may go, layout hazards, secure outdoor space, walking routes, unattended-pet, crate and noise rules, local beach and trail restrictions, emergency planning and nearby veterinary services.",
-        "gaps": "Names fees and refundable deposits without amounts or explanation of how they differ, does not cover cancellation terms or service animals, and gives no guidance on unattended time beyond asking. No platform policy sources."
+        title: "The Complete Checklist for Booking a Pet-Friendly Vacation Rental",
+        url: "https://holidaycottage.us/pet-friendly-vacation-rental-booking-checklist",
+        checkedOn: "2026-11-16",
+        coversWell:
+          "Read in full. A three-stage checklist (before shortlisting, before booking, before departure) covering pet type and limits, where pets may go, layout hazards, secure outdoor space, walking routes, unattended-pet, crate and noise rules, local beach and trail restrictions, emergency planning and nearby veterinary services.",
+        gaps: "Names fees and refundable deposits without amounts or explanation of how they differ, does not cover cancellation terms or service animals, and gives no guidance on unattended time beyond asking. No platform policy sources.",
       },
       {
-        "title": "8 Pet-friendly Vacation Tips for Rental Guests",
-        "url": "https://blog.itrip.net/vacation-rentals-let-you-bring-your-pets-along/",
-        "checkedOn": "2026-11-16",
-        "coversWell": "Read in full. Eight short tips: review the pet policy (fees, insurance, liability, terms) before booking, ask the manager about the yard and area, check photos for fenced yards and walkways, prepare the pet for travel, pack familiar food, use ID tags, bring vaccination paperwork, and exercise the pet before departure.",
-        "gaps": "Gives no amounts, and does not cover deposits, cancellation, service animals, unattended-pet rules, or breed, size and number limits. Veterinary content is limited to asking a vet about travel and medications. Published by a rental management company with its own promotional links."
+        title: "8 Pet-friendly Vacation Tips for Rental Guests",
+        url: "https://blog.itrip.net/vacation-rentals-let-you-bring-your-pets-along/",
+        checkedOn: "2026-11-16",
+        coversWell:
+          "Read in full. Eight short tips: review the pet policy (fees, insurance, liability, terms) before booking, ask the manager about the yard and area, check photos for fenced yards and walkways, prepare the pet for travel, pack familiar food, use ID tags, bring vaccination paperwork, and exercise the pet before departure.",
+        gaps: "Gives no amounts, and does not cover deposits, cancellation, service animals, unattended-pet rules, or breed, size and number limits. Veterinary content is limited to asking a vet about travel and medications. Published by a rental management company with its own promotional links.",
       },
       {
-        "title": "How to Find a Truly Pet-Friendly Vacation Rental",
-        "url": "https://www.vacationrentalsguide.com/vacation-rental-guides/pet-friendly-vacation-rentals",
-        "checkedOn": "2026-11-16",
-        "coversWell": "Read in full. Short guide urging readers to read full house rules; asks about per-pet versus per-stay fees, weight, breed and number limits, alone-time and crating, yard fence security, and furniture; notes beach and trail leash rules vary by town and season.",
-        "gaps": "Lists topics to ask about but does not cover deposits, cancellation, service animals or veterinary content. Brief overall."
+        title: "How to Find a Truly Pet-Friendly Vacation Rental",
+        url: "https://www.vacationrentalsguide.com/vacation-rental-guides/pet-friendly-vacation-rentals",
+        checkedOn: "2026-11-16",
+        coversWell:
+          "Read in full. Short guide urging readers to read full house rules; asks about per-pet versus per-stay fees, weight, breed and number limits, alone-time and crating, yard fence security, and furniture; notes beach and trail leash rules vary by town and season.",
+        gaps: "Lists topics to ask about but does not cover deposits, cancellation, service animals or veterinary content. Brief overall.",
       },
       {
-        "title": "Tips for finding and booking pet-friendly holiday rentals",
-        "url": "https://www.booking.com/articles/pet-friendly-holiday-rentals-tips.html",
-        "checkedOn": "2026-11-16",
-        "coversWell": "Read in full (replacing a BringFido page that returned 403). Covers per-pet, per-stay or per-night fees, refundable damage deposits, extra cleaning charges, varying unattended-pet rules, a note that service and support animals may follow different rules, and checking for a nearby vet and packing records.",
-        "gaps": "No fee amounts, no cancellation or refund terms, no detail on local regulations or on how service-animal rules differ legally, and little on size or breed limits."
-      }
+        title: "Tips for finding and booking pet-friendly holiday rentals",
+        url: "https://www.booking.com/articles/pet-friendly-holiday-rentals-tips.html",
+        checkedOn: "2026-11-16",
+        coversWell:
+          "Read in full (replacing a BringFido page that returned 403). Covers per-pet, per-stay or per-night fees, refundable damage deposits, extra cleaning charges, varying unattended-pet rules, a note that service and support animals may follow different rules, and checking for a nearby vet and packing records.",
+        gaps: "No fee amounts, no cancellation or refund terms, no detail on local regulations or on how service-animal rules differ legally, and little on size or breed limits.",
+      },
     ],
-    "gapsFound": [
+    gapsFound: [
       "Existing checklists already cover baseline fees and rules; those are essential coverage rather than unique findings.",
       "US service-animal law and platform policy need distinct explanations.",
-      "Approval, financial exposure, and itinerary feasibility benefit from separate decision gates."
+      "Approval, financial exposure, and itinerary feasibility benefit from separate decision gates.",
     ],
-    "differentiators": [
+    differentiators: [
       "Permission/practicality/price framework with a booking decision table.",
       "Primary-source distinction between pet fees, refundable deposits, and host damage protection.",
       "ADA scope caveat alongside separately linked Airbnb and Vrbo accessibility policies.",
-      "Day-in-the-trip audit that tests furniture, crates, and unattended rules against the itinerary."
+      "Day-in-the-trip audit that tests furniture, crates, and unattended rules against the itinerary.",
     ],
-    "angle": "A pre-payment audit that separates permission from a stay that actually works.",
-    "followUps": [],
-    "unverified": [],
-    "researchComplete": true
-  }
+    angle: "A pre-payment audit that separates permission from a stay that actually works.",
+    followUps: [],
+    unverified: [],
+    researchComplete: true,
+  },
 };

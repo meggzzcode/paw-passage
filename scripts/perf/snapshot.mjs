@@ -22,7 +22,13 @@ for (const p of paths) {
   const res = await fetch(base + p);
   let html = await res.text();
   // Hashed asset names change between builds; they are not part of the rendered content.
-  html = html.replace(/\/assets\/[A-Za-z0-9_.-]+-[A-Za-z0-9_-]{8}\.(js|css|jpg|png|webp|woff2)/g, "/assets/HASHED.$1");
-  writeFileSync(join(out, (p === "/" ? "home" : p.slice(1).replace(/\//g, "__")) + ".html"), `<!-- status ${res.status} -->\n` + html);
+  html = html.replace(
+    /\/assets\/[A-Za-z0-9_.-]+-[A-Za-z0-9_-]{8}\.(js|css|jpg|png|webp|woff2)/g,
+    "/assets/HASHED.$1",
+  );
+  writeFileSync(
+    join(out, (p === "/" ? "home" : p.slice(1).replace(/\//g, "__")) + ".html"),
+    `<!-- status ${res.status} -->\n` + html,
+  );
   console.log(res.status, p, html.length);
 }

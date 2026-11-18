@@ -4,7 +4,13 @@
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { join } from "node:path";
 import { parse } from "yaml";
-import { mergeLinks, parseCsv, renderAffiliatesYaml, rowsToLinks, type AffLink } from "./lib/affiliate-import";
+import {
+  mergeLinks,
+  parseCsv,
+  renderAffiliatesYaml,
+  rowsToLinks,
+  type AffLink,
+} from "./lib/affiliate-import";
 
 const root = join(import.meta.dir, "..");
 const file = process.argv[2];
@@ -18,7 +24,11 @@ if (errors.length) {
   process.exit(1);
 }
 const target = join(root, "content", "affiliates.yml");
-const existing = ((existsSync(target) ? parse(readFileSync(target, "utf8")) : {}) as { links?: AffLink[] })?.links ?? [];
+const existing =
+  ((existsSync(target) ? parse(readFileSync(target, "utf8")) : {}) as { links?: AffLink[] })
+    ?.links ?? [];
 const merged = mergeLinks(existing, links);
 writeFileSync(target, renderAffiliatesYaml(merged));
-console.log(`Imported ${links.length} link(s). content/affiliates.yml now has ${merged.length}. ${links.filter((l) => l.approved).length} of the imported links are marked approved.`);
+console.log(
+  `Imported ${links.length} link(s). content/affiliates.yml now has ${merged.length}. ${links.filter((l) => l.approved).length} of the imported links are marked approved.`,
+);

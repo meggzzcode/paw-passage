@@ -3,8 +3,18 @@ import { InfoPage } from "@/components/site/InfoPage";
 import { pageHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/editorial-standards")({
-  head: () => pageHead({ title: "Editorial standards", description: "How Paws & Passage researches guides, lists dog-friendly stays and handles corrections. No fake reviews, no invented experiences.", path: "/editorial-standards" }),
-  component: () => <InfoPage title="Editorial standards" updated="2026-11-18" body={`## How we research guides
+  head: () =>
+    pageHead({
+      title: "Editorial standards",
+      description:
+        "How Paws & Passage researches guides, lists dog-friendly stays and handles corrections. No fake reviews, no invented experiences.",
+      path: "/editorial-standards",
+    }),
+  component: () => (
+    <InfoPage
+      title="Editorial standards"
+      updated="2026-11-18"
+      body={`## How we research guides
 
 1. **Start with the reader's real question.** We look at what people actually search for and ask.
 2. **Read what already exists.** For every guide we review at least five of the pages that currently rank for the topic, and note what they cover well and what they leave out.
@@ -43,5 +53,7 @@ We research products from maker specifications and independent standards bodies.
 
 ## Corrections
 
-Found something wrong or out of date? [Tell us](/contact). We fix verified errors and update the review date, and we record notable changes in our [corrections log](/corrections).`} />,
+Found something wrong or out of date? [Tell us](/contact). We fix verified errors and update the review date, and we record notable changes in our [corrections log](/corrections).`}
+    />
+  ),
 });

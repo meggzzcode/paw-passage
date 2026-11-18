@@ -7,9 +7,14 @@ export const Route = createFileRoute("/sitemap.xml")({
     handlers: {
       GET: async () => {
         if (!site.siteUrl) {
-          return new Response("Sitemap domain not configured. Set siteUrl in src/config/site.ts.", { status: 503, headers: { "Cache-Control": "no-store" } });
+          return new Response("Sitemap domain not configured. Set siteUrl in src/config/site.ts.", {
+            status: 503,
+            headers: { "Cache-Control": "no-store" },
+          });
         }
-        return new Response(sitemapXml(site.siteUrl, sitemapEntries()), { headers: { "Content-Type": "application/xml", "Cache-Control": "public, max-age=3600" } });
+        return new Response(sitemapXml(site.siteUrl, sitemapEntries()), {
+          headers: { "Content-Type": "application/xml", "Cache-Control": "public, max-age=3600" },
+        });
       },
     },
   },

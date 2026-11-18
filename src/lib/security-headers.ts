@@ -14,7 +14,8 @@ export const HTML_SECURITY_HEADERS: Record<string, string> = {
 
 /** Adds the headers to an HTML response; other content types are left alone. Returns the response to send. */
 export function withHtmlSecurityHeaders(response: Response): Response {
-  if (!(response.headers.get("content-type") ?? "").toLowerCase().includes("text/html")) return response;
+  if (!(response.headers.get("content-type") ?? "").toLowerCase().includes("text/html"))
+    return response;
   try {
     for (const [k, v] of Object.entries(HTML_SECURITY_HEADERS)) response.headers.set(k, v);
     return response;
@@ -22,7 +23,11 @@ export function withHtmlSecurityHeaders(response: Response): Response {
     // Immutable headers: copy the response with the extra headers.
     const headers = new Headers(response.headers);
     for (const [k, v] of Object.entries(HTML_SECURITY_HEADERS)) headers.set(k, v);
-    return new Response(response.body, { status: response.status, statusText: response.statusText, headers });
+    return new Response(response.body, {
+      status: response.status,
+      statusText: response.statusText,
+      headers,
+    });
   }
 }
 

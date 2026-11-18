@@ -2,11 +2,13 @@ import { describe, expect, it } from "vitest";
 import { packItems, recommended, defaultProfile, packingText } from "@/lib/packing";
 import { getProduct } from "@/content/gear";
 
-const reasonOf = (p: Parameters<typeof recommended>[0], id: string) => recommended(p).find((r) => r.item.id === id)?.reason ?? null;
+const reasonOf = (p: Parameters<typeof recommended>[0], id: string) =>
+  recommended(p).find((r) => r.item.id === id)?.reason ?? null;
 
 describe("packing builder", () => {
   it("every product id points to a real gear product", () => {
-    for (const item of packItems) for (const id of item.productIds) expect(getProduct(id), `${item.id}: ${id}`).toBeTruthy();
+    for (const item of packItems)
+      for (const id of item.productIds) expect(getProduct(id), `${item.id}: ${id}`).toBeTruthy();
   });
   it("recommends a car restraint only when driving", () => {
     expect(reasonOf(defaultProfile, "car-restraint")).toBeTruthy();

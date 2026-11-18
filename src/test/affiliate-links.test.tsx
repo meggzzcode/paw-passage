@@ -5,10 +5,18 @@ import { renderToStaticMarkup } from "react-dom/server";
 vi.mock("@/content/affiliates", async (orig) => {
   const real = (await orig()) as Record<string, unknown>;
   const links = [
-    { id: "kurgo-heather-hammock", network: "Amazon Associates", url: "https://www.amazon.com/dp/EXAMPLE?tag=test-20", approved: true },
+    {
+      id: "kurgo-heather-hammock",
+      network: "Amazon Associates",
+      url: "https://www.amazon.com/dp/EXAMPLE?tag=test-20",
+      approved: true,
+    },
     { id: "ruffwear-pad", network: "Impact", url: "https://example.com/ruffwear", approved: false },
   ];
-  return { ...real, getApprovedLink: (id?: string) => links.find((l) => l.id === id && l.approved) };
+  return {
+    ...real,
+    getApprovedLink: (id?: string) => links.find((l) => l.id === id && l.approved),
+  };
 });
 
 import { Markdown } from "@/components/site/Markdown";
@@ -46,14 +54,18 @@ describe("inline affiliate links in article text", () => {
 
 describe("which affiliate links an article shows", () => {
   it("finds inline link names once each", () => {
-    expect(inlineAffiliateIds("a [x](aff:one) b [y](aff:two) c [z](aff:one) [n](https://x.com)")).toEqual(["one", "two"]);
+    expect(
+      inlineAffiliateIds("a [x](aff:one) b [y](aff:two) c [z](aff:one) [n](https://x.com)"),
+    ).toEqual(["one", "two"]);
   });
   it("a product uses the link with its own id unless it names another", () => {
     expect(productLinkId({ id: "kurgo-heather-hammock" })).toBe("kurgo-heather-hammock");
     expect(productLinkId({ id: "a", affiliateId: "b" })).toBe("b");
   });
   it("counts only approved links, and notices Amazon", () => {
-    const u = affiliateUsage({ body: "[a](aff:kurgo-heather-hammock) [b](aff:ruffwear-pad) [c](aff:none)" });
+    const u = affiliateUsage({
+      body: "[a](aff:kurgo-heather-hammock) [b](aff:ruffwear-pad) [c](aff:none)",
+    });
     expect(u.count).toBe(1);
     expect(u.anyAmazon).toBe(true);
     expect(affiliateUsage({ body: "no links here" }).count).toBe(0);
@@ -67,11 +79,22 @@ describe("Amazon's required disclosure", () => {
   });
 });
 
-
 import { productButton } from "@/content/affiliate-usage";
 import type { Product } from "@/content/gear";
 
-const base: Product = { id: "some-product", name: "Thing", brand: "Maker", summary: "s", keySpecs: [], specSource: { title: "t", url: "https://maker.example/thing", publisher: "Maker", accessedOn: "2026-11-16" } };
+const base: Product = {
+  id: "some-product",
+  name: "Thing",
+  brand: "Maker",
+  summary: "s",
+  keySpecs: [],
+  specSource: {
+    title: "t",
+    url: "https://maker.example/thing",
+    publisher: "Maker",
+    accessedOn: "2026-11-16",
+  },
+};
 
 describe("the button under a product pick", () => {
   it("goes to the maker's own page when there is no approved affiliate link", () => {
@@ -81,8 +104,19 @@ describe("the button under a product pick", () => {
     expect(b.label).toBe("See it on Maker's website");
   });
   it("uses the product page instead of a PDF manual", () => {
-    expect(productButton({ ...base, specSource: { ...base.specSource, url: "https://maker.example/manual.pdf" }, productUrl: "https://maker.example/product" })!.url).toBe("https://maker.example/product");
-    expect(productButton({ ...base, specSource: { ...base.specSource, url: "https://maker.example/manual.pdf" } })).toBeUndefined();
+    expect(
+      productButton({
+        ...base,
+        specSource: { ...base.specSource, url: "https://maker.example/manual.pdf" },
+        productUrl: "https://maker.example/product",
+      })!.url,
+    ).toBe("https://maker.example/product");
+    expect(
+      productButton({
+        ...base,
+        specSource: { ...base.specSource, url: "https://maker.example/manual.pdf" },
+      }),
+    ).toBeUndefined();
   });
   it("is replaced by the affiliate link once that link is approved", () => {
     const b = productButton({ ...base, id: "kurgo-heather-hammock" })!;

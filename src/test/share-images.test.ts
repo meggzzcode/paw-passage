@@ -15,15 +15,23 @@ describe("share images and pins", () => {
   });
 
   it("no stale pin or share image exists for a guide that is not public", () => {
-    const stalePins = readdirSync("public/pins").filter((f) => f.endsWith(".jpg") && !publicSlugs.has(f.slice(0, -4)));
-    const staleShares = readdirSync("public/share").filter((f) => f.endsWith(".jpg") && f !== "default.jpg" && !publicSlugs.has(f.slice(0, -4)));
+    const stalePins = readdirSync("public/pins").filter(
+      (f) => f.endsWith(".jpg") && !publicSlugs.has(f.slice(0, -4)),
+    );
+    const staleShares = readdirSync("public/share").filter(
+      (f) => f.endsWith(".jpg") && f !== "default.jpg" && !publicSlugs.has(f.slice(0, -4)),
+    );
     expect(stalePins, "run scripts/make-share-images.py to prune").toEqual([]);
     expect(staleShares, "run scripts/make-share-images.py to prune").toEqual([]);
   });
 
   it("docs/pinterest-pins.csv has one UTM-tagged row per public guide and none for others", () => {
     const lines = readFileSync("docs/pinterest-pins.csv", "utf8").trim().split("\n").slice(1);
-    const dests = lines.map((l) => l.match(/https:\/\/www\.pawsandpassage\.com\/guides\/([a-z0-9-]+)\?(utm_source=pinterest&utm_medium=social&utm_campaign=[a-z0-9-]+&utm_content=([a-z0-9-]+))/));
+    const dests = lines.map((l) =>
+      l.match(
+        /https:\/\/www\.pawsandpassage\.com\/guides\/([a-z0-9-]+)\?(utm_source=pinterest&utm_medium=social&utm_campaign=[a-z0-9-]+&utm_content=([a-z0-9-]+))/,
+      ),
+    );
     expect(dests.every(Boolean)).toBe(true);
     const slugs = dests.map((m) => m![1]);
     expect(new Set(slugs)).toEqual(publicSlugs);

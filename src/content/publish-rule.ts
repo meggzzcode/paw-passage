@@ -37,15 +37,25 @@ export interface PlaceGate {
  * address, the exact quoted sentence and the date the page was read. Anything less stays unpublished.
  */
 export function placeIsPublic(p: PlaceGate): boolean {
-  return p.status === "verified" && !!p.sourceUrl?.trim() && !!p.sourceQuote?.trim() && !!p.lastChecked?.trim();
+  return (
+    p.status === "verified" &&
+    !!p.sourceUrl?.trim() &&
+    !!p.sourceQuote?.trim() &&
+    !!p.lastChecked?.trim()
+  );
 }
 
 /** A verified place is flagged "needs recheck" once its last check is more than 12 months old (computed when the page is shown). */
-export function placeNeedsRecheck(p: { lastChecked?: string | null | undefined }, now: Date = new Date()): boolean {
+export function placeNeedsRecheck(
+  p: { lastChecked?: string | null | undefined },
+  now: Date = new Date(),
+): boolean {
   if (!p.lastChecked) return true;
   const checked = new Date(`${p.lastChecked}T00:00:00Z`);
   if (Number.isNaN(checked.getTime())) return true;
-  const limit = new Date(Date.UTC(checked.getUTCFullYear() + 1, checked.getUTCMonth(), checked.getUTCDate()));
+  const limit = new Date(
+    Date.UTC(checked.getUTCFullYear() + 1, checked.getUTCMonth(), checked.getUTCDate()),
+  );
   const today = Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate());
   return today > limit.getTime();
 }
@@ -108,7 +118,11 @@ export interface Indexability {
 }
 
 const shingles = (t: string) => {
-  const w = t.toLowerCase().replace(/[^a-z0-9\s]/g, " ").split(/\s+/).filter(Boolean);
+  const w = t
+    .toLowerCase()
+    .replace(/[^a-z0-9\s]/g, " ")
+    .split(/\s+/)
+    .filter(Boolean);
   const out = new Set<string>();
   for (let i = 0; i + 4 <= w.length; i++) out.add(w.slice(i, i + 4).join(" "));
   return out;
@@ -132,7 +146,11 @@ export function stayFilledSections(s: StayQuality): number {
     s.amenityGroups.some((g) => g.items.length > 0), // what is included
     has(s.locationNote) || s.distances.length > 0, // location
     s.accessNotes.length > 0 || s.guestNotes.length > 0, // good to know
-    has(s.checkIn) || has(s.checkOut) || has(s.minimumStay) || has(s.cancellation) || s.generalRules.length > 0, // stay details
+    has(s.checkIn) ||
+      has(s.checkOut) ||
+      has(s.minimumStay) ||
+      has(s.cancellation) ||
+      s.generalRules.length > 0, // stay details
     s.houseRules.length > 0 || has(s.fenceNotes), // dog rules in the listing's words
   ].filter(Boolean).length;
 }
@@ -147,20 +165,32 @@ export function stayFilledSections(s: StayQuality): number {
 export function stayIndexability(s: StayQuality, others: StayQuality[] = []): Indexability {
   const missing: string[] = [];
   const sections = stayFilledSections(s);
-  if (!(s.status === "verified" || s.status === "unverified")) missing.push("not a public stay record (samples are never indexed)");
+  if (!(s.status === "verified" || s.status === "unverified"))
+    missing.push("not a public stay record (samples are never indexed)");
   if (s.maxDogs === null) missing.push("dog limit not stated");
-  if (s.weightLimitLbs === null && s.petFee === null && s.fencedYard === null && s.largeDogsOk === null) missing.push("no weight limit, pet fee or fence information");
+  if (
+    s.weightLimitLbs === null &&
+    s.petFee === null &&
+    s.fencedYard === null &&
+    s.largeDogsOk === null
+  )
+    missing.push("no weight limit, pet fee or fence information");
   const size: string[] = [];
   if (!s.sleeps) size.push("sleeps");
   if (!s.bedrooms) size.push("bedrooms");
   if (!s.bathrooms) size.push("bathrooms");
   if (size.length) missing.push(`missing ${size.join(", ")}`);
   if (!s.locationNote?.trim()) missing.push("no location note");
-  if (sections < MIN_STAY_SECTIONS) missing.push(`only ${sections} of 6 sections filled (need ${MIN_STAY_SECTIONS})`);
+  if (sections < MIN_STAY_SECTIONS)
+    missing.push(`only ${sections} of 6 sections filled (need ${MIN_STAY_SECTIONS})`);
   const d = s.description.trim();
-  if (d.length < MIN_STAY_DESCRIPTION_CHARS) missing.push(`description too short (${d.length} of ${MIN_STAY_DESCRIPTION_CHARS} characters)`);
-  else if (textSimilarity(d, s.summary) >= DUPLICATE_SIMILARITY && d.length < 2 * s.summary.length) missing.push("description repeats the summary");
-  const twin = others.find((o) => o !== s && o.slug !== s.slug && textSimilarity(d, o.description) >= DUPLICATE_SIMILARITY);
+  if (d.length < MIN_STAY_DESCRIPTION_CHARS)
+    missing.push(`description too short (${d.length} of ${MIN_STAY_DESCRIPTION_CHARS} characters)`);
+  else if (textSimilarity(d, s.summary) >= DUPLICATE_SIMILARITY && d.length < 2 * s.summary.length)
+    missing.push("description repeats the summary");
+  const twin = others.find(
+    (o) => o !== s && o.slug !== s.slug && textSimilarity(d, o.description) >= DUPLICATE_SIMILARITY,
+  );
   if (twin) missing.push(`description duplicates another stay (${twin.slug ?? "unknown"})`);
   return { indexable: missing.length === 0, missing, sections };
 }
@@ -176,7 +206,9 @@ export function townIndexability(t: TownQuality, indexableStayCount: number): In
   const chars = t.blurb.length + t.planningNotes.reduce((n, x) => n + x.length, 0);
   const ownText = t.planningNotes.length >= MIN_TOWN_NOTES && chars >= MIN_TOWN_TEXT_CHARS;
   if (indexableStayCount < MIN_TOWN_INDEXABLE_STAYS && !ownText) {
-    missing.push(`no indexable stay and own text too thin (${t.planningNotes.length} planning notes, ${chars} characters; need ${MIN_TOWN_NOTES} notes and ${MIN_TOWN_TEXT_CHARS} characters)`);
+    missing.push(
+      `no indexable stay and own text too thin (${t.planningNotes.length} planning notes, ${chars} characters; need ${MIN_TOWN_NOTES} notes and ${MIN_TOWN_TEXT_CHARS} characters)`,
+    );
   }
   return { indexable: missing.length === 0, missing, sections: indexableStayCount };
 }
@@ -185,6 +217,7 @@ export function townIndexability(t: TownQuality, indexableStayCount: number): In
 export function stateIndexability(s: { intro: string }, indexableTownCount: number): Indexability {
   const missing: string[] = [];
   if (s.intro.trim().length < MIN_STATE_INTRO_CHARS) missing.push("intro too short");
-  if (indexableTownCount < MIN_STATE_INDEXABLE_TOWNS) missing.push("no indexable town page beneath it");
+  if (indexableTownCount < MIN_STATE_INDEXABLE_TOWNS)
+    missing.push("no indexable town page beneath it");
   return { indexable: missing.length === 0, missing, sections: indexableTownCount };
 }

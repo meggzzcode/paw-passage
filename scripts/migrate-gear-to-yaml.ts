@@ -38,21 +38,36 @@ const categories: Record<string, string[]> = {
 
 const dir = join(import.meta.dir, "..", "src", "content", "gear");
 // content/products.yml is now the source of truth (it has many more products and fields than this one-off writes).
-if (existsSync(join(import.meta.dir, "..", "content", "products.yml")) && !process.argv.includes("--force")) {
-  console.error("content/products.yml already exists and is edited by hand now. Re-run with --force only to start over from src/content/gear/*.ts.");
+if (
+  existsSync(join(import.meta.dir, "..", "content", "products.yml")) &&
+  !process.argv.includes("--force")
+) {
+  console.error(
+    "content/products.yml already exists and is edited by hand now. Re-run with --force only to start over from src/content/gear/*.ts.",
+  );
   process.exit(1);
 }
 const out: Record<string, unknown>[] = [];
-for (const f of readdirSync(dir).filter((n) => n.endsWith(".ts")).sort()) {
+for (const f of readdirSync(dir)
+  .filter((n) => n.endsWith(".ts"))
+  .sort()) {
   const mod = (await import(join(dir, f))) as { products: Product[] };
   for (const p of mod.products) {
-    const manufacturerUrl = p.productUrl ?? (/\.pdf(\?|#|$)/i.test(p.specSource.url) ? undefined : p.specSource.url);
+    const manufacturerUrl =
+      p.productUrl ?? (/\.pdf(\?|#|$)/i.test(p.specSource.url) ? undefined : p.specSource.url);
     const cats = categories[p.id];
     if (!cats) throw new Error(`no category for ${p.id}`);
     out.push({
-      id: p.id, name: p.name, brand: p.brand, categories: cats, summary: p.summary, keySpecs: p.keySpecs, specSource: p.specSource,
+      id: p.id,
+      name: p.name,
+      brand: p.brand,
+      categories: cats,
+      summary: p.summary,
+      keySpecs: p.keySpecs,
+      specSource: p.specSource,
       manufacturerUrl: manufacturerUrl ?? "",
-      retailerUrl: "", retailerName: "",
+      retailerUrl: "",
+      retailerName: "",
       // The date the repo already records for the maker page this record was read from.
       lastVerified: p.specSource.accessedOn,
       active: true,
@@ -66,5 +81,8 @@ const header = `# Products shown in gear guides, the packing tool and /gear (Pag
 # affiliateId stays EMPTY unless content/affiliates.yml has an approved entry for this product: the product never
 # stores an affiliate URL. Generated once by scripts/migrate-gear-to-yaml.ts; edit freely from here.
 `;
-writeFileSync(join(import.meta.dir, "..", "content", "products.yml"), header + stringify({ products: out }, { lineWidth: 0 }));
+writeFileSync(
+  join(import.meta.dir, "..", "content", "products.yml"),
+  header + stringify({ products: out }, { lineWidth: 0 }),
+);
 console.log(`wrote ${out.length} products`);

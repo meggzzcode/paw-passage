@@ -13,7 +13,9 @@ describe("stay22 embed", () => {
     expect(stay22Src({ aid: "myid" })).toBeNull();
   });
   it("builds the documented embed url with an encoded address", () => {
-    const u = new URL(stay22Src({ aid: "myid", address: "Blue Ridge, Georgia", campaign: "stays directory" })!);
+    const u = new URL(
+      stay22Src({ aid: "myid", address: "Blue Ridge, Georgia", campaign: "stays directory" })!,
+    );
     expect(u.origin + u.pathname).toBe("https://www.stay22.com/embed/gm");
     expect(u.searchParams.get("aid")).toBe("myid");
     expect(u.searchParams.get("address")).toBe("Blue Ridge, Georgia");

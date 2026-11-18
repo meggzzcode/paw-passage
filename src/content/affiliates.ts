@@ -21,7 +21,10 @@ export function isAmazon(link: AffiliateLink) {
 // The list lives in content/affiliates.yml so it can be edited in Pages CMS (no code).
 export const affiliateLinks: AffiliateLink[] = affiliates;
 
-export function getApprovedLink(id?: string, links: AffiliateLink[] = affiliateLinks): AffiliateLink | undefined {
+export function getApprovedLink(
+  id?: string,
+  links: AffiliateLink[] = affiliateLinks,
+): AffiliateLink | undefined {
   if (!id) return undefined;
   const link = links.find((l) => l.id === id);
   return link && link.approved && link.url ? link : undefined;

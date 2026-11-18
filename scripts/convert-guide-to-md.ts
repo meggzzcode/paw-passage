@@ -19,7 +19,9 @@ mkdirSync(join(root, "content", "guides"), { recursive: true });
 for (const slug of slugs) {
   const tsFile = join(root, "src", "content", "guides", `${slug}.ts`);
   if (!existsSync(tsFile)) throw new Error(`No code file for guide "${slug}"`);
-  const { guide } = (await import(tsFile)) as { guide: Record<string, unknown> & { body: string; slug: string; lastReviewed: string } };
+  const { guide } = (await import(tsFile)) as {
+    guide: Record<string, unknown> & { body: string; slug: string; lastReviewed: string };
+  };
   const { body, slug: _slug, ...rest } = guide;
   const front: Record<string, unknown> = {
     ...rest,
@@ -27,8 +29,15 @@ for (const slug of slugs) {
     approvedOn: (rest as { approvedOn?: string }).approvedOn ?? guide.lastReviewed,
   };
   for (const k of Object.keys(front)) if (front[k] === undefined) delete front[k];
-  const yaml = stringify(front, { lineWidth: 0, defaultStringType: "PLAIN", defaultKeyType: "PLAIN" });
-  writeFileSync(join(root, "content", "guides", `${slug}.md`), `---\n${yaml}---\n\n${body.replace(/^\n+/, "").replace(/\s+$/, "")}\n`);
+  const yaml = stringify(front, {
+    lineWidth: 0,
+    defaultStringType: "PLAIN",
+    defaultKeyType: "PLAIN",
+  });
+  writeFileSync(
+    join(root, "content", "guides", `${slug}.md`),
+    `---\n${yaml}---\n\n${body.replace(/^\n+/, "").replace(/\s+$/, "")}\n`,
+  );
   unlinkSync(tsFile);
   console.log(`converted ${slug}`);
 }

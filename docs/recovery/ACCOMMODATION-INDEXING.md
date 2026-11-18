@@ -113,3 +113,7 @@ No listing photos appear: all nine stays have `photoPermission: false` and no `i
 - Stay page footer line: "Last verified <date>" now shows only when status is verified and a date exists; otherwise "Details read from the listing, not confirmed with the host".
 - Town and state pages said "No verified stays published here yet"; changed to "No stays are listed here yet" (stays of both kinds are listed).
 - The "Not yet verified" label, the listing-based descriptions and the pet policy panel already used listing-based wording; a test checks no unverified stay text claims verification.
+
+
+## Update 2026-11-18: listing rule
+Stays are now listed only when they have an approved affiliate link. The indexing rule above applies to the stays that are listed. Written-up stays without a link are kept in `content/stays/` and listed in `docs/stay-deeplink-worksheet.csv` until a deeplink is added.

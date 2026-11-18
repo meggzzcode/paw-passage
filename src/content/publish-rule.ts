@@ -20,6 +20,13 @@ export function guideIsPublic(g: GuideGate): boolean {
   );
 }
 
+/**
+ * Owner decision (2026-11-18): a stay is listed only when it earns, meaning it has an approved affiliate link. Stays
+ * without one stay in the repository, hidden from the site, the sitemap and the filters, and go live automatically
+ * once the link is added to content/affiliates.yml. Set to false to list every stay again.
+ */
+export const STAYS_REQUIRE_AFFILIATE_LINK = true;
+
 /** Verified and unverified stays are listed; unverified ones carry a "Not yet verified" label. Samples never go live. */
 export function stayIsPublic(s: { status: string }): boolean {
   return s.status === "verified" || s.status === "unverified";

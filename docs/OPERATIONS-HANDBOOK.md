@@ -156,3 +156,14 @@ Follow `docs/DNS-AND-TRANSFER.md` (order and day-of-sale checklist) and `BUYER_H
 - [ ] Check the Netlify "Powered by Netlify" badge setting and the credit meter (`docs/NETLIFY-BADGE.md`).
 - [ ] Turn on GitHub Issue notifications so the weekly Site health issues reach you.
 - [ ] Do the first six-month data re-check by about 2027-05-18.
+
+
+## Adding a stay and making it earn
+
+A stay is listed on the site only when it has an approved Vrbo affiliate link (owner decision 2026-11-18; the switch is `STAYS_REQUIRE_AFFILIATE_LINK` in `src/content/publish-rule.ts`).
+1. Create the stay file in `content/stays/` (Pages CMS "Stays", or copy an existing file). Use the public listing page for facts, paraphrase, no listing photos, unknown details "Not confirmed".
+2. Run `bun scripts/stay-deeplink-worksheet.ts`. It writes `docs/stay-deeplink-worksheet.csv` with one row for every stay still waiting.
+3. In the Expedia Group creator hub, generate the deeplink for each listing and paste it, unchanged, into the `affiliate_url` column with `approved` = yes. (A Cowork prompt that does the copying is in `docs/cowork/06-vrbo-deeplinks.md`.)
+4. Run `bun scripts/import-affiliate-links.ts docs/stay-deeplink-worksheet.csv`. Entries named `vrbo-<listing id>` appear in `content/affiliates.yml`; each stay goes live on the next build with no edit to its own file.
+5. Stays from sources with no affiliate programme (property managers, park systems) stay in the repository but are never listed under this rule.
+A buyer replaces affiliate accounts by changing the entries in `content/affiliates.yml` only.

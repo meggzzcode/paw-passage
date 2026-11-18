@@ -108,10 +108,10 @@ describe("meta tags", () => {
 
 describe("stay page meta", () => {
   it("every stay has a title of at most 60 characters and a 120-155 character description, with no retailer brand and noindex logic intact", async () => {
-    const { visibleStays } = await import("@/content/stays");
+    const { allStayRecords } = await import("@/content/stays");
     const { Route: stayPage } = await import("@/routes/stays.$slug");
     const { stayIsIndexable } = await import("@/lib/seo");
-    for (const s of visibleStays({ includeSamples: true })) {
+    for (const s of allStayRecords()) {
       const h = headOf(stayPage, { loaderData: { stay: s }, params: { slug: s.slug } });
       const title = prop(h, "og:title");
       const description = prop(h, "description");

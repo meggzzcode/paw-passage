@@ -6,6 +6,7 @@ import { townName } from "@/content/destinations";
 import { stayTypeLabels } from "@/lib/filters";
 import { describeFee } from "@/lib/stay-format";
 import { PreviewBadge } from "./StatusBadge";
+import { BookingButton } from "./BookingButton";
 
 export function StayCard({ stay }: { stay: Stay }) {
   // A photo shows only when we hold the owner's permission. Otherwise: a plain panel, never a stock picture of a real property.
@@ -19,7 +20,8 @@ export function StayCard({ stay }: { stay: Stay }) {
   if (stay.beach) chips.push("Beach");
   if (stay.hotTub) chips.push("Hot tub");
   return (
-    <Link to="/stays/$slug" params={{ slug: stay.slug }} className="group block overflow-hidden rounded-lg border border-border bg-card shadow-card transition hover:-translate-y-0.5">
+    <div className="overflow-hidden rounded-lg border border-border bg-card shadow-card transition hover:-translate-y-0.5">
+    <Link to="/stays/$slug" params={{ slug: stay.slug }} className="group block">
       <div className="relative">
         {img ? <img src={img.card ?? img.src} alt={img.alt} loading="lazy" decoding="async" width={1600} height={1008} className="aspect-[4/3] w-full object-cover" /> : (
           <div className="flex aspect-[4/3] w-full flex-col items-center justify-center gap-2 bg-gradient-to-br from-secondary to-accent/40 text-primary">
@@ -45,5 +47,7 @@ export function StayCard({ stay }: { stay: Stay }) {
         <p className="mt-4 border-t border-border pt-3 text-xs text-muted-foreground">Pet fee: {describeFee(stay.petFee)}</p>
       </div>
     </Link>
+      <div className="border-t border-border px-5 py-3"><BookingButton stay={stay} compact /></div>
+    </div>
   );
 }

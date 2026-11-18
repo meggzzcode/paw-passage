@@ -143,6 +143,7 @@ function StayPage() {
           </div>
         </aside>
       </div>
+      <section className="mt-16 rounded-xl border border-border bg-secondary/40 p-6"><h2 className="text-xl">See this stay on Vrbo</h2><p className="mt-1 text-sm text-muted-foreground">Photos, the floor plan, live availability and the full house rules are on the booking page. Confirm the pet fee there before you book.</p><div className="mt-4"><BookingButton stay={s} /></div></section>
       {related.length > 0 && (
         <section className="mt-16"><h2 className="text-2xl">Related guides</h2><div className="mt-6 grid gap-8 md:grid-cols-2">{related.map((g) => <GuideCard key={g!.slug} guide={g!} />)}</div></section>
       )}

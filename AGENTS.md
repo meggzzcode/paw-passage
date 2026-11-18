@@ -31,7 +31,7 @@ use the editor.
 
 ## Project rules
 - No backend in v1: all content lives in typed files under `src/content/` and `src/config/site.ts` so the site stays portable and backend-free; shapes mirror future DB tables.
-- Verified AND unverified stays render in production (owner decision, 2026-11-18); unverified ones carry a "Not yet verified" label, are noindexed and left out of the sitemap, and the Stays directory is noindexed until a verified stay exists. Samples render only when `import.meta.env.DEV`, so no fictional inventory ever goes live.
+- All legitimate stays render in production, verified or not (owner decision, 2026-11-18). Details come from public listings and unknown details say "Not confirmed"; never claim a stay is verified, visited or confirmed with a host unless that happened. Whether a stay, town or state page is indexed depends on the quality rule in `src/content/publish-rule.ts` (`stayIndexability`, `townIndexability`, `stateIndexability`), not on host verification; the sitemap follows the same rule. No listing photos or stock photos on stays. Samples render only in development.
 - A guide is public only when `status === "published"`, `research.researchComplete` is true and `research.unverified` is empty; otherwise noindexed, preview-only, and left out of the sitemap, to keep unverified claims off the live site.
 - Filters match only confirmed values (`null` = not confirmed never passes), so listings never overstate dog-friendliness.
 - Booking buttons render only for approved links in `src/content/affiliates.ts`, using `rel="sponsored"`, to avoid fake or unauthorized affiliate links.

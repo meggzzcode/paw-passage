@@ -35,7 +35,7 @@ Towns and states: a town page is indexable with at least 1 indexable stay in it,
 | The French Secret (Romantic Getaway) | NOINDEX | Dog limit (3 pets, dogs and cats) known; no weight limit, fee or fence information. |
 | Creekside Cottage (Relax, Soak, Swim) | NOINDEX | Dog limit, 30 lb and "small dogs only" known, but bedrooms are missing (the listing record never stated a count). |
 
-What would change a NOINDEX decision: for the three missing policy detail, any one of weight limit, pet fee amount or fence status read from the listing or confirmed by the host; for Creekside, the bedroom count. I did not add these because they are facts that must come from the listing or the host, and I will not invent them. No YAML was changed.
+What would change a NOINDEX decision: for the three missing a policy detail, any one of weight limit, pet fee amount or fence status read from the listing or confirmed by the host; for Creekside, the bedroom count. I did not add these because they are facts that must come from the listing or the host, and I will not invent them. No YAML was changed.
 
 ### Town and state pages today
 

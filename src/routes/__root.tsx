@@ -94,15 +94,16 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       ...(site.showDraftGuides && !import.meta.env.DEV ? [{ name: "robots", content: "noindex, nofollow" }] : []),
     ],
     links: [
-      { rel: "preconnect", href: "https://fonts.googleapis.com" },
-      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
-      { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&display=swap" },
+      // Self-hosted fonts (see src/styles.css). Both are used above the fold, so both are preloaded.
+      { rel: "preload", href: "/fonts/dm-sans-latin-variable.woff2", as: "font", type: "font/woff2", crossOrigin: "anonymous" },
+      { rel: "preload", href: "/fonts/fraunces-latin-variable.woff2", as: "font", type: "font/woff2", crossOrigin: "anonymous" },
       { rel: "stylesheet", href: appCss },
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
       { rel: "apple-touch-icon", href: "/apple-touch-icon.png" },
     ],
     scripts: [
-      { type: "application/ld+json", children: jsonLd({ "@context": "https://schema.org", "@type": "Organization", name: site.name, ...(site.siteUrl ? { url: site.siteUrl } : {}), slogan: site.tagline, description: site.description }) },
+      // Organization: url and name always; sameAs lists only the Pinterest profile, and only once site.pinterestUrl is set. No logo property: the site's logo is a text wordmark, and there is no brand logo image file to point to.
+      { type: "application/ld+json", children: jsonLd({ "@context": "https://schema.org", "@type": "Organization", name: site.name, ...(site.siteUrl ? { url: site.siteUrl } : {}), slogan: site.tagline, description: site.description, ...(site.pinterestUrl ? { sameAs: [site.pinterestUrl] } : {}) }) },
       ...(site.ga4MeasurementId
         ? [
             { src: `https://www.googletagmanager.com/gtag/js?id=${site.ga4MeasurementId}`, async: true },

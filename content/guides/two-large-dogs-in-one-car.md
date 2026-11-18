@@ -5,12 +5,14 @@ seoDescription: "Riding with two large dogs? One restraint per dog, crate or har
 dek: One restraint per dog, how to lay out a sedan, wagon or SUV, what a barrier does and does not do, and the multi-dog questions no independent test answers yet.
 category: Planning
 states: []
-status: draft
+status: published
+approvedBy: Paws & Passage Editors
+approvedOn: 2026-11-18
 author: Paws & Passage Editors
 publishedOn: 2026-11-18
 lastReviewed: 2026-11-18
 readingMinutes: 7
-heroImage: guide-pet-fees
+heroImage: guide-two-large-dogs-car
 faqs:
   - q: Can two large dogs share one crate in the car?
     a: Vetstreet advises separate carriers because animals in one carrier can be injured if thrown against each other. That is Vetstreet's own advice; the Center for Pet Safety pages we could read do not address sharing a crate, so one crate per dog is the cautious reading.

@@ -37,6 +37,11 @@ BOARDS = {  # guide slug -> ONE primary board (see docs/PINTEREST-SETUP.md for t
     "how-vacation-rental-pet-fees-work": "Travel Cost Planning",
     "vacation-rentals-with-no-pet-fee": "Travel Cost Planning",
     "what-a-dog-really-costs-on-a-vacation-rental": "Travel Cost Planning",
+    "dog-ramp-or-steps-for-the-car-and-cabin": "Senior Dog Travel",
+    "dogs-in-georgia-state-park-cabins": "Cabin Vacations",
+    "two-large-dogs-in-one-car": "Large Dog Travel",
+    "dog-life-jacket-for-lakes-and-beaches": "Dog Travel Gear",
+    "dog-travel-bowls-and-food-storage": "Dog Travel Gear",
 }
 FIELDS = ["pin_image_url", "title", "description", "destination_url", "board"]
 

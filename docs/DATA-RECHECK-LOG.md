@@ -44,3 +44,6 @@ Fees guide, how-many-dogs guide, large-dogs guide, checklist guide, breed guide,
 ### if-your-dog-gets-loose-on-a-trip
 - Replaces src/content/guides/dog-id-tags-and-gps-trackers-for-travel-guide.ts and the lost-dog section of the New Year's Eve guide; the owner retires the old pieces.
 - The AAHA, AVMA and CDC pages were not used; the AAHA lookup statement is cited as reproduced on AKC Reunite's FAQ.
+
+
+## Upkeep for the second batch (2026-11-18, moved from the guides' research blocks)

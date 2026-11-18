@@ -6,12 +6,14 @@ dek: Two dogs at most, $50 per dog, never alone and requested before you arrive.
 category: Destination
 states:
   - georgia
-status: draft
+status: published
+approvedBy: Paws & Passage Editors
+approvedOn: 2026-11-18
 author: Paws & Passage Editors
 publishedOn: 2026-11-18
 lastReviewed: 2026-11-18
 readingMinutes: 7
-heroImage: guide-pet-fees
+heroImage: guide-ga-state-park-cabins
 faqs:
   - q: Do Georgia state park cabins allow dogs?
     a: Some do. Georgia State Parks says some dog-friendly cabins are available and that dogs may not be taken into cottages that are not designated dog-friendly, so the answer depends on the specific cabin.

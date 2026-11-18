@@ -5,12 +5,14 @@ seoDescription: "Nine travel bowls, bottles and food carriers compared on what e
 dek: Capacity, materials and cleaning for nine travel bowls, bottles and food carriers, read from the makers' own pages, plus what the CDC, FDA and park agencies say about water and food on the road.
 category: Planning
 states: []
-status: draft
+status: published
+approvedBy: Paws & Passage Editors
+approvedOn: 2026-11-18
 author: Paws & Passage Editors
 publishedOn: 2026-11-18
 lastReviewed: 2026-11-18
 readingMinutes: 9
-heroImage: guide-pet-fees
+heroImage: guide-travel-bowls
 faqs:
   - q: What should I pack to feed and water my dog on a trip?
     a: The ASPCA's travel kit lists food, a bowl, a leash, waste bags, grooming supplies, medication, a first-aid kit and travel documents, and it says to bring bottled water or water from home on a road trip because unfamiliar water could upset a pet's stomach.

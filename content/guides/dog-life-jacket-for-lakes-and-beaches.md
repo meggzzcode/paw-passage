@@ -5,12 +5,14 @@ seoDescription: "A fit test and feature checklist for a dog life jacket at lakes
 dek: Two maker pages disagree on what to do between sizes, and no federal standard exists. Here is how to check fit, read the claims and plan for the water you will be at.
 category: Planning
 states: []
-status: draft
+status: published
+approvedBy: Paws & Passage Editors
+approvedOn: 2026-11-18
 author: Paws & Passage Editors
 publishedOn: 2026-11-18
 lastReviewed: 2026-11-18
 readingMinutes: 7
-heroImage: guide-pet-fees
+heroImage: guide-dog-life-jacket
 faqs:
   - q: Is there a standard or certification for dog life jackets?
     a: The U.S. Coast Guard says in a 2013 video that there is no federal requirement or standard for dog life jackets. The Ruffwear and Outward Hound pages we read name no flotation certification, so any buoyancy wording is the maker's own.

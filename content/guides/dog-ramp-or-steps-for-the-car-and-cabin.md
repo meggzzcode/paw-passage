@@ -5,12 +5,14 @@ seoDescription: "Dog ramp vs stairs for the car: maker weight ratings and step h
 dek: Your big or older dog can no longer hop into the back seat. Here is how ramps and steps compare on maker specs, how to measure your vehicle, and what to do about cabin stairs.
 category: Planning
 states: []
-status: draft
+status: published
+approvedBy: Paws & Passage Editors
+approvedOn: 2026-11-18
 author: Paws & Passage Editors
 publishedOn: 2026-11-18
 lastReviewed: 2026-11-18
 readingMinutes: 8
-heroImage: guide-pet-fees
+heroImage: guide-ramp-steps
 faqs:
   - q: Is a ramp or steps better for getting a dog into a car?
     a: The vet and kennel-club pages we read lean toward a ramp for vehicles. AKC points to ramps for car use because they are often lighter and easier to fold, and a veterinarian-written PetMD page recommends a ramp over stairs for dogs with arthritis or joint and back conditions. Your vet knows your dog, so ask before you buy.

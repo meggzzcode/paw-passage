@@ -5,12 +5,12 @@ seoDescription: "Only 3 of 38 managers we read charge a $0 pet fee. See what eac
 dek: Three managers charged nothing for dogs on the pages we read. Here is their exact wording, the charges that can still show up, and how to check before you book.
 category: Planning
 states: []
-status: draft
+status: published
 author: Paws & Passage Editors
 publishedOn: 2026-11-18
 lastReviewed: 2026-11-18
 readingMinutes: 8
-heroImage: guide-pet-fees
+heroImage: guide-no-pet-fee
 faqs:
   - q: Are there vacation rentals with no pet fee?
     a: Yes. Of 38 managers whose public pet pages we read on 2026-11-18, three stated $0 for dogs. That is a small convenience sample, and each home can still carry cleaning, deposit and other charges.
@@ -173,11 +173,11 @@ research:
     - Contrast with named managers that publish a fee, from our 38-manager dataset.
     - Official platform help pages on what hosts can charge, and a total-price workflow.
   angle: No fee is not no cost. Read what each fee-free manager says, see what is left unstated, and compare totals.
-  followUps:
-    - Re-read the three fee-free pages at least twice a year.
-    - Re-check the Twiddy per-home wording, since it comes from a blog sample.
+  followUps: []
   unverified: []
   researchComplete: true
+approvedBy: Paws & Passage Editors
+approvedOn: 2026-11-18
 ---
 
 You have found a cabin that says dogs stay free, and now you wonder what the catch is. The short answer: in our reading of 38 managers' public pet pages (a convenience sample, not a survey, read 2026-11-18), three stated a $0 pet fee: Sliding Rock Cabins, Hapey Cabin Rentals, and Twiddy & Company on the homes it lists. Twenty-two stated a real charge, and 13 gave no amount.

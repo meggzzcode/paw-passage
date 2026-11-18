@@ -11,6 +11,10 @@ The 38-manager dataset (src/content/manager-policies.ts, public/pet-policies-38-
 ## Where dated counts appear in guides
 Fees guide, how-many-dogs guide, large-dogs guide, checklist guide, breed guide, no-pets guide (penalties), can-you-leave-alone guide, New Year's Eve guide (holiday surcharge: none of the 38 pages mention one), the `/dogs` collection pages (src/content/dog-types.ts), and the packing/tool copy.
 
+## Article-specific upkeep
+- **vacation-rentals-with-no-pet-fee:** re-read the three fee-free pages (Sliding Rock Cabins, Hapey Cabin Rentals, Twiddy & Company) at least twice a year; re-check Twiddy's per-home wording, since it comes from a blog sample of 10 homes; update "3 of 38" if any page changes.
+- **christmas-week-in-a-cabin-with-a-dog:** refresh each November: holiday minimum stays and cancellation examples (A Blue Ridge Vacation, Aunt Bugs, Hearthside, Tahoe Vacation Rentals), poison hotline numbers and fee wording, and the "no holiday pet surcharge stated" finding.
+
 ## Log
 | Date | Who | Managers read | Changed | Notes |
 |---|---|---|---|---|

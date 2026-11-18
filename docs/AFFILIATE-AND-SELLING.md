@@ -38,3 +38,15 @@ Read from the program terms on 2026-11-18 (creator.expediagroup.com affiliate te
 2. Search the articles for `aff:vrbo` and similar inline links and remove them. Inline affiliate links only render when the entry is approved, so step 1 already stops them showing.
 3. Remove any Expedia or Vrbo marks the program provided (banners, widgets) if any were added.
 4. The buyer applies for their own account and adds their own links.
+
+## Stay22 (read 2026-11-18: stay22.com/terms "Affiliate Partner Terms", last updated 2025-11-11, plus the FAQ and dev docs)
+
+Section numbers come from a summarizing fetch tool, not a verbatim read: read the terms page yourself before signing. Not legal advice.
+
+- **Photos and listing content:** the terms grant only a "revocable, limited, non-exclusive, non-sublicenseable", non-transferable licence to use the Stay22 solution (the map widget and links) during the term (section 2(a)). They do not say we may copy, download, store or host listing photos or data outside the widget, and third-party content is governed by the providers' own terms (sections 1(26), 4(a)); all rights not granted are reserved (section 7(a)). So: do not download or host Stay22 or listing photos. A photo on our own pages needs the host's written permission. The widget itself shows its photos inside Stay22's frame, which is within the licence.
+- **Pet filter:** none in the docs or FAQ; the widget cannot filter for dogs. Our map panel says so.
+- **Commission:** FAQ says the split "starts at 30%"; the actual rate is in the Order Form (section 5(a)), visible only after signup. Cookie windows are not in the terms ("mapped during setup"). Payouts monthly after the stay is complete; fees are calculated from Stay22's records; fees are forfeited if Stay22 terminates for breach.
+- **Disclosure:** the terms say we are responsible for all required notices and consents (section 8(c)) and give no wording. Our map panel and the affiliate disclosure and privacy pages cover it.
+- **Selling the site:** the agreement cannot be assigned or transferred without Stay22's written consent (section 13(i)), and the licence is non-transferable. A buyer must sign up themselves or get Stay22's consent. Add this to the handover steps; our accounts are already excluded from sale.
+- **Other programs:** the FAQ says Stay22 is designed to work alongside other affiliate programs.
+- **Exit:** remove the Stay22 account ID in Site settings (the map disappears); on termination we must stop using the solution immediately (section 12(c)).

@@ -4,3 +4,48 @@ links:
     url: https://vrbo.com/affiliate/hdPLmiF
     approved: true
     kind: stay
+  - id: vrbo-3016263
+    network: Vrbo
+    url: https://vrbo.com/affiliate/OvDjmi2
+    approved: true
+    kind: stay
+  - id: vrbo-3067945
+    network: Vrbo
+    url: https://vrbo.com/affiliate/85WJUQc
+    approved: true
+    kind: stay
+  - id: vrbo-989362
+    network: Vrbo
+    url: https://vrbo.com/affiliate/hj38sa6
+    approved: true
+    kind: stay
+  - id: vrbo-1056490
+    network: Vrbo
+    url: https://vrbo.com/affiliate/dpJNgL9
+    approved: true
+    kind: stay
+  - id: vrbo-5283109
+    network: Vrbo
+    url: https://vrbo.com/affiliate/8PAjLc3
+    approved: true
+    kind: stay
+  - id: vrbo-2839563
+    network: Vrbo
+    url: https://vrbo.com/affiliate/ZZFfMMq
+    approved: true
+    kind: stay
+  - id: vrbo-3441964
+    network: Vrbo
+    url: https://vrbo.com/affiliate/vjqhYf3
+    approved: true
+    kind: stay
+  - id: vrbo-4929336
+    network: Vrbo
+    url: https://vrbo.com/affiliate/kckCpcg
+    approved: true
+    kind: stay
+  - id: vrbo-4396826
+    network: Vrbo
+    url: https://vrbo.com/affiliate/U0R4kX5
+    approved: true
+    kind: stay

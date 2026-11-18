@@ -27,7 +27,7 @@ faqs:
 relatedGuides:
   - pet-friendly-vacation-rental-checklist
   - vacation-rental-secure-fenced-yard
-  - dog-id-tags-and-gps-trackers-for-travel-guide
+  - if-your-dog-gets-loose-on-a-trip
   - how-vacation-rental-pet-fees-work
   - can-you-leave-a-dog-alone-in-a-vacation-rental
   - dog-friendly-cabin-packing-list
@@ -211,7 +211,7 @@ Cornell advises a leash even in a fenced yard, and a familiar room far from the 
 - A young Golden Retriever bolted from a relative who could not run, after neighbors' fireworks, and was found after two days. [[12]](https://www.kpcw.org/park-city/2024-01-02/park-city-community-helps-reunite-lost-golden-retriever-with-owners)
 - A dog climbed an 8-foot fence around July 4, believed spooked by fireworks, and was found months later about 60 miles away. [[14]](https://www.upworthy.com/christmas-miracle-family-reunited-with-their-dog-found-60-miles-away)
 
-In several of these, a fence, a door, or a person who could not give chase was involved, which is why doors and leashes come first. Patch says even a calm dog can bolt from a rental house or hotel hallway. [[15]](https://patch.com/massachusetts/across-ma/july-4-fireworks-cause-spike-lost-dog-reports-what-ma-pet-owners-should-know) See our [secure fenced yard guide](/guides/vacation-rental-secure-fenced-yard) and [ID tags and GPS trackers guide](/guides/dog-id-tags-and-gps-trackers-for-travel-guide).
+In several of these, a fence, a door, or a person who could not give chase was involved, which is why doors and leashes come first. Patch says even a calm dog can bolt from a rental house or hotel hallway. [[15]](https://patch.com/massachusetts/across-ma/july-4-fireworks-cause-spike-lost-dog-reports-what-ma-pet-owners-should-know) See our [secure fenced yard guide](/guides/vacation-rental-secure-fenced-yard) and [ID tags and GPS trackers guide](/guides/if-your-dog-gets-loose-on-a-trip).
 
 **ID plan for an unfamiliar place**
 

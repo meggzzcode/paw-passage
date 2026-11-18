@@ -23,7 +23,7 @@ export const dogTypes: DogType[] = [
     seoDescription: "Guides for dogs that slip out or dig under: how to judge a fenced yard, what to ask the host, portable fences, ID tags and GPS trackers.",
     intro: "If your dog bolts through a door or finds the one gap in a fence, \"has a fenced yard\" is not enough. These guides cover what to ask the host, what a portable fence can and cannot do, and how to prepare if the worst happens.",
     ask: ["Is the fence around the whole yard, and how tall is it?", "Does the gate latch by itself, and can I see a photo of it?", "Are there gaps at the bottom, or soft ground a dog could dig under?", "Is there a second door or a porch between the dog and the street?"],
-    guideSlugs: ["vacation-rental-secure-fenced-yard", "portable-dog-fence-and-playpen-guide-for-rentals", "dog-id-tags-and-gps-trackers-for-travel-guide", "can-you-leave-a-dog-alone-in-a-vacation-rental", "new-years-eve-with-a-dog-in-a-vacation-rental"],
+    guideSlugs: ["vacation-rental-secure-fenced-yard", "portable-dog-fence-and-playpen-guide-for-rentals", "if-your-dog-gets-loose-on-a-trip", "can-you-leave-a-dog-alone-in-a-vacation-rental", "new-years-eve-with-a-dog-in-a-vacation-rental"],
   },
   {
     slug: "big-dogs",

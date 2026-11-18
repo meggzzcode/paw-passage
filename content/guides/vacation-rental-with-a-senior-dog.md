@@ -339,7 +339,7 @@ If a host later asks for money, our [damage-charge guide](/guides/airbnb-pet-dam
 ASPCA says to carry medical records if your dog's history is complicated, to put visible ID on the collar, consider a microchip, and check for an interstate health certificate. [[25]](https://www.aspca.org/news/traveling-your-pets-dos-and-donts) Ask your vet and the destination state about certificate timing.
 
 - [ ] Records and a vet-written medication list, plus extra medication in case the return is delayed
-- [ ] Collar with ID tag and microchip details (see our [ID tag guide](/guides/dog-id-tags-and-gps-trackers-for-travel-guide))
+- [ ] Collar with ID tag and microchip details (see our [lost-dog guide](/guides/if-your-dog-gets-loose-on-a-trip))
 - [ ] Your dog's own bed, non-slip rugs or mats, and any ramp
 - [ ] Accident kit: towels, waste bags, waterproof pads or washable layers, a sheet or blanket for furniture
 - [ ] The nearest emergency vet and its number, saved offline

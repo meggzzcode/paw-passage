@@ -309,7 +309,7 @@ export const managerPolicies: ManagerPolicy[] = [
   "breed": "not-stated",
   "fee": "$0 on homes listed",
   "region": "North Carolina",
-  "pool": "pool: one home (Sunnybuns) bars dogs in pool; hot tub not stated"
+  "pool": "pets not permitted in pools or hot tubs (Twiddy pet pages, read 2026-11-18)"
  },
  {
   "name": "Carolina Designs Realty",

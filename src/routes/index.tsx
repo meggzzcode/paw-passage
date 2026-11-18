@@ -74,7 +74,7 @@ function Home() {
         <div className="container-page flex min-h-[88vh] flex-col justify-end pb-14 pt-32">
           <p className="eyebrow animate-rise !text-sage">Dog-friendly travel, done properly</p>
           <h1 className="animate-rise mt-4 max-w-3xl text-5xl leading-[1.05] text-primary-foreground md:text-7xl">Their favorite getaway starts here.</h1>
-          <p className="animate-rise mt-5 max-w-xl text-lg text-primary-foreground/90">{anyStays ? "Discover cabins, beach escapes, and beautiful stays that welcome your dog, with the details that matter." : "Researched guides and free tools for renting, driving and vacationing with your dog. Every fact is sourced, and anything we could not confirm says so."}</p>
+          <p className="animate-rise mt-5 max-w-xl text-lg text-primary-foreground/90">{anyStays ? "Discover cabins, beach escapes, and beautiful stays that welcome your dog, with the details that matter." : "Researched guides and free tools for renting, driving and vacationing with your dog. Facts link to their sources, and anything we could not confirm says so."}</p>
           {anyStays ? (
             <form onSubmit={onSearch} className="animate-rise mt-9 grid gap-2 rounded-2xl bg-background p-2 shadow-card md:grid-cols-[1.3fr_1fr_1fr_auto]" aria-label="Find dog-friendly stays">
               <label className="flex flex-col rounded-xl px-4 py-2 hover:bg-muted">
@@ -210,7 +210,7 @@ function Home() {
 
       {stays.length > 0 && (
       <section className="container-page mt-24">
-        <div className="flex items-end justify-between"><div><p className="eyebrow">Stays</p><h2 className="mt-2 text-3xl md:text-4xl">Featured stays</h2></div></div>
+        <div className="flex items-end justify-between"><div><p className="eyebrow">Stays</p><h2 className="mt-2 text-3xl md:text-4xl">Stays</h2></div></div>
           <div className="mt-8 grid gap-6 md:grid-cols-3">{stays.map((s) => <StayCard key={s.slug} stay={s} />)}</div>
       </section>
       )}

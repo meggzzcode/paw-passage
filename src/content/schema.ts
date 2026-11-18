@@ -179,6 +179,7 @@ export const settingsSchema = z.object({
   contactEmail: z.string().trim().refine((v) => v === "" || /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v), "must be an email address or left empty").default(""),
   siteUrl: z.string().trim().refine((v) => v === "" || /^https:\/\/[A-Za-z0-9.-]+(:\d+)?$/.test(v), "must look like https://yourdomain.com (no slash, no extra text at the end) or be left empty").default(""),
   ga4MeasurementId: z.string().trim().refine((v) => v === "" || /^G-[A-Z0-9]{6,}$/.test(v), "must look like G-XXXXXXXXXX or be left empty").default(""),
+  pinterestUrl: z.string().trim().refine((v) => v === "" || /^https:\/\/(www\.)?pinterest\.com\/[A-Za-z0-9_.\/-]+$/.test(v), "must look like https://www.pinterest.com/yourname/ or be left empty").default(""),
   stay22AccountId: z.string().trim().refine((v) => v === "" || /^[A-Za-z0-9_-]+$/.test(v), "must be your Stay22 account ID (letters, numbers, hyphens) or be left empty").default(""),
 });
 export type SiteSettings = z.infer<typeof settingsSchema>;

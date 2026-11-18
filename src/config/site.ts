@@ -12,6 +12,8 @@ export const site = {
   contactEmail: settings.contactEmail,
   /** Google Analytics 4 measurement ID, e.g. "G-XXXXXXX". Leave "" to send nothing. */
   ga4MeasurementId: settings.ga4MeasurementId,
+  /** Pinterest profile address. Leave "" and no Pinterest icon is shown. */
+  pinterestUrl: settings.pinterestUrl,
   /** Stay22 account ID. Leave "" and the Stay22 map is not shown. */
   stay22AccountId: settings.stay22AccountId,
   /** Sample stays render only in development / private preview, never in production builds. */

@@ -20,7 +20,7 @@ Written 2026-11-18. For a buyer or owner who wants to change which affiliate pro
 4. Keep `approved: true` only if that account has approved you for the program. Set `approved: false` to switch every product back to its manufacturer page instantly (no other edit needed).
 5. Check: run `bun run test` (the "affiliate swap procedure" tests must pass), then open /gear and any category page and hover a button: it should show your new URL.
 
-Example. Products `kurgo-splash-free-wander-bowl` and `kurgo-mud-dog-travel-shower` both name `affiliateTrackingId: kurgo-network`:
+Example (hypothetical: this entry does not exist in the repo). Products `kurgo-splash-free-wander-bowl` and `kurgo-mud-dog-travel-shower` both name `affiliateTrackingId: kurgo-network`:
 
 ```yaml
 # content/affiliates.yml  (before)

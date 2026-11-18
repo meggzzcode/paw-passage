@@ -1,0 +1,26 @@
+status: unverified
+name: 5-Star Cabin with Views and Hot Tub (Cherry Lake)
+type: cabin
+state: georgia
+town: blue-ridge
+summary: Two-bedroom cabin with a hot tub near Cherry Lake; dogs under 50 lbs
+  allowed, up to 2.
+description: Listed on Vrbo with mountain views and a hot tub. The listing says
+  dogs under 50 lbs each are allowed, 2 pets total. The description mentions a
+  gated deck with a fenced-in dog run, which is not the same as a fenced yard.
+  Pet fee not stated. Not yet confirmed with the host.
+sleeps: 5
+bedrooms: 2
+maxDogs: 2
+weightLimitLbs: 50
+largeDogsOk: not-confirmed
+fencedYard: not-confirmed
+privateOutdoor: not-confirmed
+petFee: not-confirmed
+breedRestrictions: not-confirmed
+beach: false
+mountain: false
+hotTub: not-confirmed
+photoPermission: false
+sourceUrl: https://www.vrbo.com/1056490
+affiliateId: vrbo-1056490

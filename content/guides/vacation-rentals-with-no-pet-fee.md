@@ -19,7 +19,7 @@ faqs:
   - q: Can I filter Airbnb for rentals with no pet fee?
     a: Airbnb's help page describes an Allows pets filter under Booking options, and a separate place to add pets when you search. The pages we read do not describe a no-pet-fee filter, so open the listing and look at the price breakdown.
   - q: Is there a limit to what an Airbnb host can charge for pets?
-    a: Airbnb says a pet fee cannot be more than the nightly base rate, and that service animals always stay free of pet fees. Hosts can still charge a normal cleaning fee that applies to every guest.
+    a: Airbnb says a pet fee cannot be more than the nightly base rate, and that service animals always stay free of pet fees. Check the price breakdown for any cleaning fee, since the page we read is about pet fees.
   - q: Can a Vrbo host add a pet charge after I book?
     a: Vrbo says a host can add a charge to an existing reservation by sending a payment request before the stay is complete. Ask the host to confirm in writing that no pet charge applies.
   - q: What should I ask a host who says pets stay free?
@@ -120,6 +120,10 @@ sources:
     url: https://help.vrbo.com/articles/Add-or-edit-house-rules
     publisher: Vrbo
     accessedOn: 2026-11-18
+  - title: Rental and cancellation policies
+    url: https://www.ablueridgevacation.com/rental-and-cancellation-policies/
+    publisher: A Blue Ridge Vacation
+    accessedOn: 2026-11-18
 research:
   primaryKeyword: vacation rentals with no pet fee
   relatedKeywords:
@@ -188,9 +192,9 @@ Everything below is from each manager's own public page, re-read on 2026-11-18. 
 
 ### Sliding Rock Cabins (Ellijay and Blue Ridge, Georgia)
 
-The home page says every cabin welcomes dogs with "no pet fees, breed restrictions, or weight limits." [[1]](https://slidingrockcabins.com/) It does not give a limit on the number of dogs. It says select cabins have fenced yards, and that a dog bed, bowls, treats, toys and cleanup bags come with the stay. [[1]](https://slidingrockcabins.com/)
+The home page says every cabin welcomes dogs with "no pet fees, breed restrictions, or weight limits." [[1]](https://slidingrockcabins.com/) The home page gives no limit on the number of dogs, though the booking site lists "2 dog max" for Creekside Manner and "4 dogs max" for Forever Friday. It says select cabins have fenced yards, and that a dog bed, bowls, treats, toys and cleanup bags come with the stay. [[1]](https://slidingrockcabins.com/)
 
-What else is charged: the booking site's pet-friendly page says "Each cabin has nominal cleaning fees," and gives no amount. [[2]](https://bookings-slidingrockcabins.escapia.com/?cat=10) The pages we read do not state pet deposits, processing fees or damage terms. Pet-free is the one line that is clear.
+What else is charged: the booking site's pet-friendly page says "Each cabin has nominal cleaning fees," and gives no amount. [[2]](https://bookings-slidingrockcabins.escapia.com/?cat=10) The pages we read do not state pet deposits, processing fees or damage terms. No pet fee is the one line that is clear.
 
 ### Hapey Cabin Rentals (Smoky Mountains, Tennessee)
 
@@ -208,21 +212,21 @@ What else is charged: neither page mentions cleaning fees, damage policy or depo
 
 ## Who charges, for contrast
 
-The other side of the dataset is long. Of the 38 managers, 22 state a charge, and the numbers run from $35 a night to "up to $1,000." Here are named examples, each re-read on 2026-11-18:
+The other side of the dataset is long. Of the 38 managers, 22 state a charge, and the numbers run from $20 a night [[22]](https://www.ablueridgevacation.com/rental-and-cancellation-policies/) to "up to $1,000." Here are named examples, each re-read on 2026-11-18:
 
 | Manager | What the page says | Also on the page |
 | --- | --- | --- |
 | Big Bear Vacations | "an extra $40 per pet/per night" [[8]](https://www.bigbearvacations.com/about-us/pet-information/) | Fee "covers the additional cleaning"; no separate cleaning charge listed |
 | Tahoe Getaways | $35 a night per dog [[9]](https://tahoegetaways.com/policies) | Up to two adult dogs; none under 18 months |
 | Rosemary Beach Cottage Rental Company | Non-refundable $300 per pet, maximum of 3 [[10]](https://rosemarybeach.com/faq/) | Pet-friendly homes only |
-| Cabin Rentals of Georgia | $50 per pet per night plus a $75 pet cleaning fee [[11]](https://cabin-rentals-of-georgia.com/policies) | Pet friendly cabins accept dogs under 35 lb, non-shedding and crate trained |
-| Hearthside Cabin Rentals | One-time, non-refundable $55 per pet; $75 for a large pet [[12]](https://hearthsidecabinrentals.com/frequently-asked-questions) | Two-dog limit; standard pets 35 lb or under |
+| Cabin Rentals of Georgia | $50 per pet per night plus a $75 pet cleaning fee [[11]](https://cabin-rentals-of-georgia.com/policies) | Pet friendly cabins accept dogs under 35 lb, non-shedding and crate trained; a refundable $250 pet deposit is also listed |
+| Hearthside Cabin Rentals | Some owners: one-time, non-refundable $55 per pet; $75 for a large pet [[12]](https://hearthsidecabinrentals.com/frequently-asked-questions) | Two-dog limit; standard pets 35 lb or under |
 | My Vacation Haven | $250 first pet, $100 second, plus taxes and an admin fee [[13]](https://www.myvacationhaven.com/pet-policy) | Maximum 2 pets |
 | Resort Realty | "non-refundable pet fee up to $1,000," varies by property [[14]](https://resortrealty.com/outer-banks-pet-friendly) | Two adult dogs, no puppies |
 
 Vacasa's Mammoth Lakes page says a pet fee is charged at all of its pet-friendly rentals, with no amount listed. [[15]](https://www.vacasa.com/usa/California/Mammoth-Lakes/explore/Dog-friendly/) For how the units differ, see [how pet fees work](/guides/how-vacation-rental-pet-fees-work).
 
-One thing the contrast shows: a fee is sometimes where cleaning is paid for. Big Bear says its pet fee covers cleaning, and Cabin Rentals of Georgia stacks a nightly fee and a cleaning fee. A $0 fee with a cleaning fee can land close to a $40 fee with none, which is why totals beat headlines.
+One thing the contrast shows: a fee is sometimes where cleaning is paid for. Big Bear says its pet fee covers cleaning, and Cabin Rentals of Georgia stacks a nightly fee and a cleaning fee. A $0 pet fee plus a cleaning fee can end up close to a home with a pet fee and no cleaning fee, which is why totals beat headlines. That is our reading, not a figure from any page.
 
 ## How to look for fee-free homes on the platforms
 

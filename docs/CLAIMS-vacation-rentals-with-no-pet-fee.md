@@ -6,7 +6,7 @@ Levels: 1 confirmed by a source we read; 2 what most people report (3+ independe
 | --- | --- | --- |
 | Dataset: 38 managers, 3 state $0, 22 state a charge, 13 give no amount (convenience sample) | src/content/manager-policies.ts | 1 |
 | Sliding Rock: every cabin welcomes dogs with "no pet fees, breed restrictions, or weight limits" | https://slidingrockcabins.com/ | 1 |
-| Sliding Rock: no dog-count limit stated; select cabins have fenced yards; dog bed, bowls, treats, toys, cleanup bags provided | https://slidingrockcabins.com/ | 1 |
+| Sliding Rock: no dog-count limit on home page (booking site: Creekside Manner 2 dog max, Forever Friday 4 dogs max); select cabins have fenced yards; dog bed, bowls, treats, toys, cleanup bags provided | https://slidingrockcabins.com/ | 1 |
 | Sliding Rock: "Each cabin has nominal cleaning fees"; no amount | https://bookings-slidingrockcabins.escapia.com/?cat=10 | 1 |
 | Sliding Rock: pet deposits, processing fees, damage terms not stated on pages read | https://slidingrockcabins.com/ ; escapia page | 3 |
 | Hapey: "No pet fees. Ever. What you see when you book is what you pay"; no pet deposit, no nightly surcharge | https://hapeycabinrentals.com/pet-friendly-smoky-mountain-cabin-rentals/ | 1 |
@@ -20,8 +20,8 @@ Levels: 1 confirmed by a source we read; 2 what most people report (3+ independe
 | Big Bear Vacations: $40 per pet per night; fee covers additional cleaning | https://www.bigbearvacations.com/about-us/pet-information/ | 1 |
 | Tahoe Getaways: $35/night per dog; up to two adult dogs; none under 18 months | https://tahoegetaways.com/policies | 1 |
 | Rosemary Beach: non-refundable $300 per pet, max 3 | https://rosemarybeach.com/faq/ | 1 |
-| Cabin Rentals of Georgia: $50/pet/night, $75 pet cleaning fee, dogs under 35 lb, non-shedding, crate trained | https://cabin-rentals-of-georgia.com/policies | 1 |
-| Hearthside: one-time non-refundable $55 per pet, $75 large; 2-dog limit; 35 lb standard | https://hearthsidecabinrentals.com/frequently-asked-questions | 1 |
+| Cabin Rentals of Georgia: $50/pet/night, $75 pet cleaning fee, dogs under 35 lb, non-shedding, crate trained; refundable $250 pet deposit | https://cabin-rentals-of-georgia.com/policies | 1 |
+| Hearthside: some owners: one-time non-refundable $55 per pet, $75 large; 2-dog limit; 35 lb standard | https://hearthsidecabinrentals.com/frequently-asked-questions | 1 |
 | My Vacation Haven: $250 first, $100 second, plus taxes and admin fee; max 2 pets | https://www.myvacationhaven.com/pet-policy | 1 |
 | Resort Realty: non-refundable pet fee up to $1,000, varies by property; two adult dogs, no puppies | https://resortrealty.com/outer-banks-pet-friendly | 1 |
 | Vacasa Mammoth Lakes: pet fee at all pet-friendly rentals, no amount | https://www.vacasa.com/usa/California/Mammoth-Lakes/explore/Dog-friendly/ | 1 |
@@ -32,4 +32,5 @@ Levels: 1 confirmed by a source we read; 2 what most people report (3+ independe
 | Vrbo: displayed price includes mandatory and service fees, taxes at checkout; pets not mentioned | https://help.vrbo.com/articles/About-Price-Display | 1 |
 | Vrbo: "Pets allowed" house rule, 50-character note | https://help.vrbo.com/articles/Add-or-edit-house-rules | 1 |
 | Neither platform page describes a no-pet-fee filter | pages read | 3 |
+| A Blue Ridge Vacation: pet fee $20/night plus small cleaning fee (low end of fee range) | https://www.ablueridgevacation.com/rental-and-cancellation-policies/ | 1 |
 | Worked table ($800/$120/$0 vs $720/$100/$60) | hypothetical, labelled | n/a |

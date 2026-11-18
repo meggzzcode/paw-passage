@@ -40,7 +40,8 @@ distances:
   - "Chattanooga Metropolitan Airport: about 99 minutes by car"
 checkIn: "4:00 PM"
 checkOut: "11:00 AM"
-accessNotes: Reviews mention a gravel or unpaved access road and narrow mountain roads, and suggest a vehicle with some ground clearance.
+accessNotes:
+  - Reviews mention a gravel or unpaved access road and narrow mountain roads, and suggest a vehicle with some ground clearance.
 guestNotes:
   - Guests praise the mountain and valley views from the deck and hot tub.
   - Reviews describe it as clean and cozy, with deer sometimes visiting the back deck.

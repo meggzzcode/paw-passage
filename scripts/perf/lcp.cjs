@@ -15,7 +15,7 @@ const P = PROFILES[profile];
 const median = (a) => [...a].sort((x, y) => x - y)[Math.floor(a.length / 2)];
 
 async function once(browser) {
-  const ctx = await browser.newContext({ ...devices["Pixel 5"], serviceWorkers: "block" });
+  const ctx = await browser.newContext({ ...devices["Pixel 5"], serviceWorkers: "block", ignoreHTTPSErrors: true });
   const page = await ctx.newPage();
   const cdp = await ctx.newCDPSession(page);
   await cdp.send("Network.enable");

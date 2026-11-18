@@ -1,8 +1,12 @@
 // Experiment proxy for LCP investigations: rewrites the home page HTML per VARIANT, brotli-compresses text (like a CDN),
 // and passes everything else through. Real network, so CDP throttling applies to every byte.
 // Usage: node scripts/perf/variant-proxy.mjs <listenPort> <targetPort> <variant>
+// Set H2_KEY and H2_CERT (PEM paths) to serve HTTP/2 over TLS (closer to Netlify than the HTTP/1.1 node server: with HTTP/1.1, requests queue behind the
+// browser's 6-connection limit, which exaggerates the cost of late-discovered images). Use https://localhost:<port> and ignoreHTTPSErrors.
 // Variants (combine with +, e.g. hero800+no-ga): baseline | no-preload | naive (no preload, no fetchpriority) | lazy | hero800 (800 px file + preload) | hero800-nopreload | inline-css | no-ga | no-js | no-tiles (drops the lazy below-the-fold card images to show their bandwidth contention)
 import http from "node:http";
+import http2 from "node:http2";
+import fs from "node:fs";
 import zlib from "node:zlib";
 
 const [listen = "4182", target = "4180", variant = "baseline"] = process.argv.slice(2);
@@ -31,10 +35,11 @@ async function rewrite(html) {
   return html;
 }
 
-http.createServer((req, res) => {
-  const up = http.request({ host: "127.0.0.1", port: Number(target), path: req.url, method: req.method, headers: { ...req.headers, "accept-encoding": "identity" } }, async (r) => {
+const server = (process.env.H2_KEY ? (h) => http2.createSecureServer({ key: fs.readFileSync(process.env.H2_KEY), cert: fs.readFileSync(process.env.H2_CERT), allowHTTP1: true }, h) : (h) => http.createServer(h));
+server((req, res) => {
+  const up = http.request({ host: "127.0.0.1", port: Number(target), path: req.url, method: req.method, headers: Object.fromEntries(Object.entries({ ...req.headers, "accept-encoding": "identity" }).filter(([k]) => !k.startsWith(":") && k !== "connection")) }, async (r) => {
     const type = String(r.headers["content-type"] ?? "");
-    const headers = { ...r.headers };
+    const headers = { ...r.headers }; delete headers.connection; delete headers["keep-alive"]; delete headers["transfer-encoding"];
     const br = TEXT.test(type) && String(req.headers["accept-encoding"] ?? "").includes("br");
     const isHome = req.url === "/" || req.url.startsWith("/?");
     let body = r;

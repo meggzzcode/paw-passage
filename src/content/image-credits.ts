@@ -36,5 +36,6 @@ export const imageCredits: ImageCredit[] = [
   { key: "guide-no-weight-limit", photographer: "Bahara", unsplashUrl: "https://unsplash.com/photos/a-dog-standing-on-a-porch-next-to-a-log-cabin-wzCnt2e6yFg" },
   { key: "guide-puppy", photographer: "hannah grace", unsplashUrl: "https://unsplash.com/photos/black-and-tan-puppy-lying-on-multicolored-mat-8FySZ54Ls-E" },
   { key: "guide-loose-dog", photographer: "Mike Cox", unsplashUrl: "https://unsplash.com/photos/a-brown-dog-with-a-green-tag-on-its-collar-MrZ-a_1DXL0" },
+  { key: "guide-dog-life-jacket", photographer: "Karsten Winegeart", unsplashUrl: "https://unsplash.com/photos/ixW37Eir3W4" },
   { key: "guide-true-cost", photographer: "Eminent Luggage", unsplashUrl: "https://unsplash.com/photos/a-brown-and-white-dog-laying-next-to-a-white-suitcase-039EFeyJs2I" },
 ];

@@ -463,7 +463,7 @@ products:
       - Collapses to less than 1 inch high
       - Food-grade silicone, described by the maker as PVC and BPA free
       - Dishwasher safe on the top rack, per the maker
-      - Backed by the maker's Lifetime Guarantee covering manufacturing defects
+      - Backed by the maker's Lifetime Guarantee (the page does not say what it covers)
     specSource:
       title: Collaps A Bowl
       url: https://www.kurgo.com/pet-travel-bowls/collaps-a-bowl
@@ -492,7 +492,7 @@ products:
       - feeding-and-hydration
     summary: A squeeze-to-fill water bottle with an attached bowl, designed to be operated with one hand.
     keySpecs:
-      - 22 oz capacity
+      - Named 22oz; the page gives no separate capacity figure
       - Squeeze to fill the attached bowl, release to drain the excess back into the bottle
       - Food-safe, BPA-free polypropylene plastic; aluminum carabiner included
       - Described by the maker as having a leak-proof lock design
@@ -525,7 +525,7 @@ products:
       - feeding-and-hydration
     summary: A squeeze-to-drink water bottle topped with a silicone bowl that flips up for drinking and folds down for storage.
     keySpecs:
-      - 20 oz capacity
+      - Named 20oz; the page gives no separate capacity figure
       - Silicone top bowl flips up to drink and folds down for compact storage
       - Food-safe, BPA-free polypropylene plastic; aluminum carabiner included
       - Described by the maker as having a leak-proof lock design
@@ -1126,7 +1126,7 @@ products:
     relatedGuides:
       - vacation-rental-with-a-senior-dog
       - vacation-rentals-that-welcome-large-dogs
-    manufacturerClaimsVsIndependentTesting: none cited. The 150 lb rating is the maker's statement; no testing body is named.
+    manufacturerClaimsVsIndependentTesting: The maker's page says "Independently tested and rated to support pets up to 150 lb" but names no tester or standard, so it is recorded as the maker's statement.
   - id: petsafe-happy-ride-extra-long-ramp
     name: Happy Ride Extra Long Telescoping Dog Ramp
     brand: PetSafe
@@ -1603,6 +1603,7 @@ products:
       - Maker lists a 4,000 mm waterproof rating on the lining, labelled Food Contact Safe
       - Shell is described as water-resistant, not waterproof
       - Hand wash, air dry
+      - On 2026-11-18 every color showed out of stock with the button reading Coming Soon
     specSource:
       title: Quencher Packable Dog Bowl
       url: https://ruffwear.com/products/quencher-dog-bowl
@@ -1661,11 +1662,11 @@ products:
     categories:
       - feeding-and-hydration
       - road-trips
-    summary: Two collapsible silicone bowls in a zippered pouch.
+    summary: Two collapsible bowls (named silicone) in a zippered pouch.
     keySpecs:
       - Capacity 3 cups; listed size Large
-      - Each bowl collapses to less than 2 inches and can be used at half or full height
-      - Silicone bowls with a vinyl-lined canvas pouch
+      - Collapsible bowls; the page does not state a collapsed height
+      - Described as made of durable, non-porous materials; the word silicone appears in the product name only
       - Dishwasher-safe; the page lists dimensions without units
     specSource:
       title: Petmate Silicone Travel Bowl Duo
@@ -1693,11 +1694,12 @@ products:
     categories:
       - feeding-and-hydration
       - road-trips
-    summary: A nylon bowl with a spill-resistant travel lid and non-slip rubber feet.
+    summary: A nylon bowl with a spill-proof, leak-resistant travel lid and non-slip rubber feet.
     keySpecs:
       - Includes one bowl body and one travel lid; the page gives no capacity or dimensions
       - Maker says it is made from ultra-strong nylon, BPA free and food-grade compliant
-      - Maker describes the lid as strong enough to hold water even upside down
+      - Maker describes the lid as spill-proof and leak-resistant, strong enough to hold water even upside down
+      - The page copy says nylon while an image caption says silicone; the copy is quoted here
       - Top-rack dishwasher safe; bowls nest for carrying
       - The maker offers a manufacturer's warranty against defects but gives no details on the page
     specSource:

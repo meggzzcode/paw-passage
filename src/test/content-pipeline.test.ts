@@ -1,5 +1,5 @@
 import { describe, expect, it, beforeAll, afterAll } from "vitest";
-import { mkdtempSync, mkdirSync, writeFileSync, rmSync, cpSync } from "node:fs";
+import { mkdtempSync, mkdirSync, writeFileSync, readFileSync, rmSync, cpSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { loadContent } from "../../plugins/content";
@@ -178,6 +178,44 @@ describe("content build step", () => {
     rmSync(join(root, "content/affiliates.yml"));
     writeFileSync(join(root, "content/guides/aff.md"), guideWith((t) => t.replace("status: published", "status: draft").replace("## The short answer", "Try the [thing](aff:not-there).\n\n## The short answer")));
     expect(loadContent(root, false).guides).toEqual([]);
+  });
+
+  it("an unfinished article's photo never blocks the build, but a published article still needs a valid one", () => {
+    reset();
+    mkdirSync(join(root, "src/lib"), { recursive: true });
+    writeFileSync(join(root, "src/lib/images.ts"), 'export const images = {\n  "real-photo": { src: a, alt: "x" },\n} as const;\n');
+    const noPhoto = guideWith((t) => t.replace(/^heroImage:.*\n/m, ""));
+    writeFileSync(join(root, "content/guides/draft.md"), noPhoto.replace("status: published", "status: draft"));
+    expect(loadContent(root, false).guides).toEqual([]);
+    writeFileSync(join(root, "content/guides/draft.md"), guideWith((t) => t.replace("status: published", "status: draft").replace(/^heroImage:.*$/m, "heroImage: not-a-photo")));
+    expect(loadContent(root, false).guides).toEqual([]);
+    writeFileSync(join(root, "content/guides/draft.md"), guideWith((t) => t.replace("status: published", "status: draft").replace(/^heroImage:.*$/m, "heroUpload: /uploads/missing.jpg")));
+    expect(loadContent(root, false).guides).toEqual([]);
+    writeFileSync(join(root, "content/guides/published.md"), noPhoto);
+    expect(() => loadContent(root, false)).toThrow(/pick a built-in hero image/);
+    rmSync(join(root, "src"), { recursive: true, force: true });
+  });
+
+  it("an unfinished stay's photo never blocks the build, but a verified stay still needs a valid one", () => {
+    reset();
+    mkdirSync(join(root, "src/lib"), { recursive: true });
+    writeFileSync(join(root, "src/lib/images.ts"), 'export const images = {\n  "real-photo": { src: a, alt: "x" },\n} as const;\n');
+    const draft = readFileSync(realStay, "utf8").replace("status: sample", "status: unverified").replace(/^image:.*\n/m, "");
+    const verified = draft.replace("status: unverified", "status: verified").replace("lastVerified:", "lastVerified: 2026-11-16");
+    writeFileSync(join(root, "content/stays/draft.yml"), draft);
+    expect(loadContent(root, false).stays).toEqual([]);
+    writeFileSync(join(root, "content/stays/draft.yml"), draft.replace(/^name:/m, "image: not-a-photo\nname:"));
+    expect(loadContent(root, false).stays).toEqual([]);
+    writeFileSync(join(root, "content/stays/draft.yml"), draft.replace(/^name:/m, "imageUpload: /uploads/missing.jpg\nname:"));
+    expect(loadContent(root, false).stays).toEqual([]);
+    reset();
+    writeFileSync(join(root, "content/stays/verified.yml"), verified);
+    expect(() => loadContent(root, false)).toThrow(/pick a built-in photo/);
+    writeFileSync(join(root, "content/stays/verified.yml"), verified.replace(/^name:/m, "image: not-a-photo\nname:"));
+    expect(() => loadContent(root, false)).toThrow(/not-a-photo[\s\S]*does not exist/);
+    writeFileSync(join(root, "content/stays/verified.yml"), verified.replace(/^name:/m, "imageUpload: /uploads/missing.jpg\nname:"));
+    expect(() => loadContent(root, false)).toThrow(/missing\.jpg/);
+    rmSync(join(root, "src"), { recursive: true, force: true });
   });
 
   it("a stay's booking link must exist in Affiliate links", () => {

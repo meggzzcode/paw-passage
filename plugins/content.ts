@@ -31,6 +31,13 @@ function formatIssues(file: string, error: { issues: { path: (string | number)[]
   return `\n\nContent problem in ${file}:\n` + error.issues.map((i) => `  - ${i.path.join(" > ") || "(file)"}: ${i.message}`).join("\n") + "\n";
 }
 
+/** During a build, leave an unfinished item out rather than letting its photo hold up everything else. */
+function skipDraftPhotoProblem(file: string, message: string, isDraft: boolean, skipBrokenDrafts: boolean) {
+  if (!isDraft || !skipBrokenDrafts) return false;
+  console.warn(`[content] ${file} is not finished yet, so it is left out for now.${message}`);
+  return true;
+}
+
 function readYamlFile(file: string): unknown {
   try {
     return dropNulls(parseYaml(readFileSync(file, "utf8")) ?? {});
@@ -126,9 +133,21 @@ export function loadContent(root: string, includeUnpublished: boolean, opts: { s
         }
         throw new ContentError(msg);
       }
-      if (!g.heroImage && !g.heroUpload) throw new ContentError(`\n\nContent problem in ${file}:\n  - pick a built-in hero image or upload one\n`);
-      if (!g.heroUpload && g.heroImage && imageKeys.size > 0 && !imageKeys.has(g.heroImage)) throw new ContentError(`\n\nContent problem in ${file}:\n  - the built-in photo "${g.heroImage}" does not exist. Pick one from the list or upload your own.\n`);
-      if (g.heroUpload && !existsSync(join(root, "public", g.heroUpload))) throw new ContentError(`\n\nContent problem in ${file}:\n  - heroUpload "${g.heroUpload}" is not in the uploads folder\n`);
+      if (!g.heroImage && !g.heroUpload) {
+        const msg = `\n\nContent problem in ${file}:\n  - pick a built-in hero image or upload one\n`;
+        if (skipDraftPhotoProblem(file, msg, isDraft, skipBrokenDrafts)) continue;
+        throw new ContentError(msg);
+      }
+      if (!g.heroUpload && g.heroImage && imageKeys.size > 0 && !imageKeys.has(g.heroImage)) {
+        const msg = `\n\nContent problem in ${file}:\n  - the built-in photo "${g.heroImage}" does not exist. Pick one from the list or upload your own.\n`;
+        if (skipDraftPhotoProblem(file, msg, isDraft, skipBrokenDrafts)) continue;
+        throw new ContentError(msg);
+      }
+      if (g.heroUpload && !existsSync(join(root, "public", g.heroUpload))) {
+        const msg = `\n\nContent problem in ${file}:\n  - heroUpload "${g.heroUpload}" is not in the uploads folder\n`;
+        if (skipDraftPhotoProblem(file, msg, isDraft, skipBrokenDrafts)) continue;
+        throw new ContentError(msg);
+      }
       if (g.status === "published" && (!g.approvedBy || !g.approvedOn)) {
         // Not an error: it simply stays a draft until someone approves it. Say so in the build log.
         console.warn(`[content] ${file} is set to Published but has no "approved by / approved on", so it stays a draft.`);
@@ -172,7 +191,11 @@ export function loadContent(root: string, includeUnpublished: boolean, opts: { s
       if (slugs.has(`stay:${slug}`)) throw new ContentError(`\n\nTwo stays share the web address "${slug}".\n`);
       slugs.add(`stay:${slug}`);
       const s = parsed.data;
-      if (!s.image && !s.imageUpload) throw new ContentError(`\n\nContent problem in ${file}:\n  - pick a built-in photo or upload one\n`);
+      if (!s.image && !s.imageUpload) {
+        const msg = `\n\nContent problem in ${file}:\n  - pick a built-in photo or upload one\n`;
+        if (skipDraftPhotoProblem(file, msg, notLive, skipBrokenDrafts)) continue;
+        throw new ContentError(msg);
+      }
       if (s.affiliateId && !affiliateIds.has(s.affiliateId)) {
         const msg = `\n\nContent problem in ${file}:\n  - the booking link "${s.affiliateId}" does not exist in Affiliate links\n`;
         if (notLive && skipBrokenDrafts) {
@@ -181,8 +204,16 @@ export function loadContent(root: string, includeUnpublished: boolean, opts: { s
         }
         throw new ContentError(msg);
       }
-      if (!s.imageUpload && s.image && imageKeys.size > 0 && !imageKeys.has(s.image)) throw new ContentError(`\n\nContent problem in ${file}:\n  - the built-in photo "${s.image}" does not exist\n`);
-      if (s.imageUpload && !existsSync(join(root, "public", s.imageUpload))) throw new ContentError(`\n\nContent problem in ${file}:\n  - imageUpload "${s.imageUpload}" is not in the uploads folder\n`);
+      if (!s.imageUpload && s.image && imageKeys.size > 0 && !imageKeys.has(s.image)) {
+        const msg = `\n\nContent problem in ${file}:\n  - the built-in photo "${s.image}" does not exist\n`;
+        if (skipDraftPhotoProblem(file, msg, notLive, skipBrokenDrafts)) continue;
+        throw new ContentError(msg);
+      }
+      if (s.imageUpload && !existsSync(join(root, "public", s.imageUpload))) {
+        const msg = `\n\nContent problem in ${file}:\n  - imageUpload "${s.imageUpload}" is not in the uploads folder\n`;
+        if (skipDraftPhotoProblem(file, msg, notLive, skipBrokenDrafts)) continue;
+        throw new ContentError(msg);
+      }
       if (s.petFee === "charged" && (!s.petFeeAmount || !s.petFeeBasis)) throw new ContentError(`\n\nContent problem in ${file}:\n  - pet fee is "charged", so enter an amount above zero and what it is charged per\n`);
       if (s.status === "verified" && !s.lastVerified) throw new ContentError(`\n\nContent problem in ${file}:\n  - a verified stay needs a "last verified" date\n`);
       const stay = toStay(slug, s);

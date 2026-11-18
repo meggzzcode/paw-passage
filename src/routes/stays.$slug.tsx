@@ -124,7 +124,7 @@ function StayPage() {
           {s.nearby.length > 0 && (<><h3 className="mt-8 text-xl">Nearby</h3><ul className="mt-2 list-disc pl-5">{s.nearby.map((r) => <li key={r}>{r}</li>)}</ul></>)}
           <div className="mt-10 rounded-lg bg-secondary/70 p-6">
             <p className="font-display text-lg">Before you book</p>
-            <p className="mt-1 text-sm text-muted-foreground">Policies change. Confirm the fee, dog limits and fence with the host in writing. Our <Link to="/tools/pet-cost-check" className="text-primary underline">pet cost and host confirmation tool</Link> writes the message for you.</p>
+            <p className="mt-1 text-sm text-muted-foreground">These details come from the listing, and policies change. Confirm the fee, dog limits and fence with the host in writing, and ask any other questions before you book. Anything marked "Not confirmed" is unknown, not a yes. Our <Link to="/tools/pet-cost-check" className="text-primary underline">pet cost and host confirmation tool</Link> writes the message for you.</p>
           </div>
         </div>
         <aside>
@@ -140,11 +140,6 @@ function StayPage() {
           <StayFeeCalculator stay={s} />
         </aside>
       </div>
-      {s.status === "unverified" && (
-        <div role="note" className="mt-10 rounded-lg border border-terracotta/50 bg-accent/40 p-4 text-sm">
-          These details come from the listing. Ask the host any additional questions before booking. Anything marked "Not confirmed" is unknown, not a yes.
-        </div>
-      )}
       <section className="mt-16 rounded-xl border border-border bg-secondary/40 p-6"><h2 className="text-xl">See this stay on Vrbo</h2><p className="mt-1 text-sm text-muted-foreground">Photos, the floor plan, live availability and the full house rules are on the booking page. Confirm the pet fee there before you book.</p><div className="mt-4"><BookingButton stay={s} /></div></section>
       {related.length > 0 && (
         <section className="mt-16"><h2 className="text-2xl">Related guides</h2><div className="mt-6 grid gap-8 md:grid-cols-2">{related.map((g) => <GuideCard key={g!.slug} guide={g!} />)}</div></section>

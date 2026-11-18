@@ -67,7 +67,7 @@ Not ranked, not tested. The MidWest comes in heights to 48 inches and sits frees
 | Two dogs | Larger pen, or one dog in a closed room | Each dog's behavior in a pen matters, not just the count |
 | Large dog | Check the maker's stated dog size first | Neither maker states a size limit in the pages we read |
 
-For multi-dog households, see our [two-dog accommodation guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental). For large dogs, see the [large-dog rental guide](/guides/vacation-rentals-that-welcome-large-dogs).
+For multi-dog households, see our [two-dog accommodation guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental). For large dogs, see the [large-dog rental guide](/guides/vacation-rentals-that-welcome-large-dogs). For a dog that reacts to other dogs or people, see the [reactive-dog rental guide](/guides/vacation-rental-with-a-reactive-dog) before relying on a pen.
 
 ## Rental etiquette: ask before you install
 
@@ -176,6 +176,7 @@ When a link is an affiliate link it is marked sponsored and the page says so; re
     "pet-friendly-vacation-rental-checklist",
     "how-many-dogs-can-you-bring-to-a-vacation-rental",
     "vacation-rentals-that-welcome-large-dogs",
+    "vacation-rental-with-a-reactive-dog",
   ],
   relatedTools: ["checklist", "pet-cost-check"],
   sources: [

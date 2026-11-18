@@ -6,7 +6,7 @@ import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { pageHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/guides/")({
-  head: () => pageHead({ title: "Dog travel guides: cabins, beaches, fees and fenced yards", description: "Researched, practical guides to booking dog-friendly cabins and beach rentals: secure yards, pet fees, large dogs, two dogs and what to pack.", path: "/guides" }),
+  head: () => pageHead({ title: "Dog travel guides: fees, yards, big dogs", description: "Researched, practical guides to booking dog-friendly cabins and beach rentals: secure yards, pet fees, large dogs, two dogs and what to pack.", path: "/guides" }),
   component: GuidesPage,
 });
 

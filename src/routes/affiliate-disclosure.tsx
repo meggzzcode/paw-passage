@@ -11,7 +11,7 @@ export const Route = createFileRoute("/affiliate-disclosure")({
 - A link appears only when we have an approved arrangement with that company. Booking buttons appear on a stay page only where we hold an approved link for that listing.
 - Any article that contains an affiliate link shows a notice at the top, and every affiliate link is marked with the \`sponsored\` attribute for search engines.
 - Where a link goes to Amazon, the page also shows Amazon's required statement.
-- We do not show prices or star ratings for products, because they change and we have not tested the products. We choose products using the maker's published specifications and independent standards, and each article says so. See our [methodology](/methodology). Where we have no approved affiliate arrangement, we link to the manufacturer, or to a plain retailer link marked `nofollow`.
+- We do not show prices or star ratings for products, because they change and we have not tested the products. We choose products using the maker's published specifications and independent standards, and each article says so. See our [methodology](/methodology). Where we have no approved affiliate arrangement, we link to the manufacturer, or to a plain retailer link marked \`nofollow\`.
 - Commissions never decide whether a stay or product is listed, what we say about it, or which details we report. A stay or product with no affiliate link is covered in the same way as one with a link.
 
 ## Maps of places to stay

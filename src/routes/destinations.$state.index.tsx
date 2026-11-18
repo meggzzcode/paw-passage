@@ -17,7 +17,7 @@ export const Route = createFileRoute("/destinations/$state/")({
   head: ({ loaderData, params }) => {
     if (!loaderData) return { meta: [{ title: "Destination not found" }, { name: "robots", content: "noindex" }] };
     const { d } = loaderData;
-    return { ...pageHead({ title: `Dog-friendly ${d.name}: ${d.focus.toLowerCase()}`, description: d.intro.slice(0, 155), path: `/destinations/${params.state}` }), scripts: [breadcrumbLd([{ name: "Destinations", path: "/destinations" }, { name: d.name, path: `/destinations/${d.slug}` }])] };
+    return { ...pageHead({ title: `Dog-friendly ${d.name} trip planning`, description: d.intro.slice(0, 155), path: `/destinations/${params.state}` }), scripts: [breadcrumbLd([{ name: "Destinations", path: "/destinations" }, { name: d.name, path: `/destinations/${d.slug}` }])] };
   },
   component: StatePage,
 });
@@ -52,7 +52,7 @@ function StatePage() {
         </div>
         {guides.length > 0 && (<><h2 className="mt-20 text-3xl">Guides for {d.name}</h2><div className="mt-6 grid gap-8 md:grid-cols-2">{guides.map((g) => <GuideCard key={g!.slug} guide={g!} />)}</div></>)}
         <h2 className="mt-20 text-3xl">Stays in {d.name}</h2>
-        {stays.length ? <div className="mt-6 grid gap-6 md:grid-cols-3">{stays.map((s) => <StayCard key={s.slug} stay={s} />)}</div> : <p className="mt-3 text-muted-foreground">We haven't published verified stays here yet. <Link to="/tools/host-questions" className="text-primary underline">Use the host question generator</Link> to check any rental you're considering.</p>}
+        {stays.length ? <div className="mt-6 grid gap-6 md:grid-cols-3">{stays.map((s) => <StayCard key={s.slug} stay={s} />)}</div> : <p className="mt-3 text-muted-foreground">We haven't published verified stays here yet. <Link to="/tools/pet-cost-check" className="text-primary underline">Use the pet cost and host confirmation tool</Link> to check any rental you're considering.</p>}
       </div>
     </div>
   );

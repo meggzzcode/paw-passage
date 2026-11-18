@@ -1,6 +1,6 @@
 ---
 title: How Pet Fees Actually Work at Vacation Rentals
-seoTitle: "Vacation Rental Pet Fees: What 38 Show"
+seoTitle: "Rental Pet Fees: 25 of 38 State a Fee"
 seoDescription: "We read 38 managers' pet pages: 25 state a fee, 3 charge $0, and units vary from per night to one time. See real figures and how to price your trip."
 dek: What 38 managers actually charge, how to read the wording, and how to get one total for your dogs and your dates.
 category: Planning
@@ -31,7 +31,8 @@ relatedGuides:
   - vacation-rental-secure-fenced-yard
   - airbnb-pet-damage-charge-after-checkout
   - bringing-a-dog-to-a-no-pets-rental
-  - how-vacation-rental-pet-fees-work
+  - pet-friendly-listing-red-flags
+  - what-a-dog-really-costs-on-a-vacation-rental
 embeddedTool: pet-cost-workflow
 relatedTools:
   - checklist
@@ -135,7 +136,7 @@ In our reading of 38 vacation rental managers' public pet pages (a convenience s
 - Refundable deposits and card holds belong in a separate column from definite expenses.
 - Where the ADA applies, pet fees and deposits must be waived for service animals. [[7]](https://www.ada.gov/resources/service-animals-2010-requirements/)
 
-To see whether a specific home will take your dog at all, start with the [will my dog be accepted tool](/tools/will-my-dog-be-accepted); to total the charges, use the [pet cost check](/tools/pet-cost-check) below.
+To see whether a specific home will take your dog at all, start with the [will my dog be accepted tool](/tools/will-my-dog-be-accepted); to total the charges, use the [pet cost check](/tools/pet-cost-check) below. If a listing's pet wording looks vague, our guide to [pet-friendly listing red flags](/guides/pet-friendly-listing-red-flags) shows what to question.
 
 ## What 38 managers actually charge
 
@@ -204,7 +205,7 @@ Practical consequence: because Airbnb can fold a pet fee into the nightly rate, 
 
 ## Compare the full stay, not the pet fee
 
-A no-pet-fee home can cost more overall. A hypothetical three-night comparison:
+A no-pet-fee home can cost more overall. A hypothetical three-night comparison: For the wider cost of a trip with a dog, see [what a dog really costs on a rental trip](/guides/what-a-dog-really-costs-on-a-vacation-rental).
 
 | Charge | Rental A | Rental B |
 | --- | --- | --- |

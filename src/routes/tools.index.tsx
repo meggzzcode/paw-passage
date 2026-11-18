@@ -4,7 +4,7 @@ import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { pageHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/tools/")({
-  head: () => pageHead({ title: "Free dog travel planning tools", description: "A pet cost and host confirmation tool (trip cost, side-by-side quotes and a message asking the host to confirm the pet fee) and a printable before-you-book checklist for renting with a dog.", path: "/tools" }),
+  head: () => pageHead({ title: "Free dog travel planning tools", description: "A pet cost and host confirmation tool (trip cost, side-by-side quotes, a message to the host) and a printable before-you-book checklist for renting with a dog.", path: "/tools" }),
   component: ToolsPage,
 });
 

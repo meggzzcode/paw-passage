@@ -15,7 +15,7 @@ export function Stay22Map({ address, campaign, heading }: { address: string; cam
       <p role="note" className="mt-3 max-w-3xl rounded-lg bg-muted p-4 text-sm text-muted-foreground">
         These listings come from our booking partner Stay22. <strong>We have not checked them, and the map cannot filter for dogs.</strong> Confirm the dog policy, fees, limits and fencing with the host before you book. Sponsored map: we may earn a commission if you book, at no extra cost to you. Try our{" "}
         <Link to="/tools/will-my-dog-be-accepted" className="text-primary underline">dog policy checker</Link> and the{" "}
-        <Link to="/tools/host-questions" className="text-primary underline">host question generator</Link> first.
+        <Link to="/tools/pet-cost-check" className="text-primary underline">pet cost and host confirmation tool</Link> first.
       </p>
       <iframe title={`Map of stays near ${address}, powered by Stay22`} src={src} loading="lazy" className="mt-4 h-[480px] w-full rounded-xl border border-border" />
     </section>

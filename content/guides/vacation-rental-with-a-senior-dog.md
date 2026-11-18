@@ -36,6 +36,7 @@ relatedGuides:
   - can-you-leave-a-dog-alone-in-a-vacation-rental
   - airbnb-pet-damage-charge-after-checkout
   - how-many-dogs-can-you-bring-to-a-vacation-rental
+  - puppy-at-a-vacation-rental
 relatedTools:
   - checklist
   - pet-cost-check
@@ -276,7 +277,7 @@ A message you can copy:
 
 > Hi [Host], we are considering [dates] with our [age]-year-old [breed]. She is steady but slow on stairs and slippery floors. Could you tell me: (1) Is there a step-free route from parking to the door, and could you send a photo? (2) What flooring is in the living area and bedroom, and are the stairs carpeted or bare? (3) Are there stairs between the bedroom, bathroom and entrance? (4) Are there steps to the yard? (5) May we put down a rubber-backed rug or a small ramp, and bring our own bed and washable bedding? (6) How are accidents by an older dog handled, and is any deposit involved? We will clean up and tell you right away. Thank you.
 
-If your dog may leak, say so in the message. Send it through the booking platform so the answers are on record. Our [pet-friendly rental checklist](/guides/pet-friendly-vacation-rental-checklist) covers the general questions, and the [pet cost check](/tools/pet-cost-check) confirms the total.
+If your dog may leak, say so in the message. Send it through the booking platform so the answers are on record. Our [pet-friendly rental checklist](/guides/pet-friendly-vacation-rental-checklist) covers the general questions, and the [pet cost check](/tools/pet-cost-check) confirms the total. For a young dog instead, see our [puppy rental guide](/guides/puppy-at-a-vacation-rental).
 
 ## What do manager rules mean for an older dog?
 

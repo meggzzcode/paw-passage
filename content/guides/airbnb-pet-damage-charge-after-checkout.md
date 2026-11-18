@@ -1,6 +1,6 @@
 ---
 title: "Charged for Pet Damage After Checkout? What to Do on Airbnb and Vrbo"
-seoTitle: "Airbnb Pet Damage Charge: 24h, 14d, 60d"
+seoTitle: "Charged for Pet Damage After Checkout?"
 seoDescription: "Airbnb pet damage charge after checkout: the 24-hour, 14-day and 60-day clocks from Airbnb's own pages, other platforms' rules, reply scripts and evidence."
 dek: Three clocks, the pet fee versus damage question, and message scripts you can paste when a host asks for money after your dog's stay.
 category: Planning
@@ -29,6 +29,8 @@ relatedGuides:
   - bringing-a-dog-to-a-no-pets-rental
   - pet-friendly-vacation-rental-checklist
   - can-you-leave-a-dog-alone-in-a-vacation-rental
+  - what-a-dog-really-costs-on-a-vacation-rental
+  - puppy-at-a-vacation-rental
 relatedTools:
   - checklist
   - pet-cost-check
@@ -184,7 +186,7 @@ Pay in full, pay a different amount, or decline. If you pay part, decline or sta
 
 ## I paid a pet fee. Can they still charge for dog hair?
 
-A pet fee is meant for expected costs. Airbnb says pet fees should cover expected cleaning and that host protection covers unexpected damage, such as a chewed sofa. [[5]](https://www.airbnb.com/d/guarantee), [[6]](https://www.airbnb.com/resources/hosting-homes/a/what-you-need-to-know-about-hosting-pets-463), [[7]](https://www.airbnb.com/help/article/3623) Its host page also lists extra cleaning for pet-accident stains as reimbursable. [[5]](https://www.airbnb.com/d/guarantee) No platform text defines hair, odor or stains, so the argument is about "expected": normal hair is arguably what the fee is for, a chewed couch is not. Hosts disagree. In one forum thread the host waived under-$100 extra cleaning after guests who had paid dog fees did not offer to pay, and a commenter said a fee likely blocks a cleaning claim but not drywall damage. One thread, not a rule. [[12]](https://www.biggerpockets.com/forums/530/topics/1253487-anyone-successfully-use-vrbo-damage-protection-for-extra-cleaning-sub-200) See our [pet fees guide](/guides/how-vacation-rental-pet-fees-work) for how fees are structured.
+A pet fee is meant for expected costs. Airbnb says pet fees should cover expected cleaning and that host protection covers unexpected damage, such as a chewed sofa. [[5]](https://www.airbnb.com/d/guarantee), [[6]](https://www.airbnb.com/resources/hosting-homes/a/what-you-need-to-know-about-hosting-pets-463), [[7]](https://www.airbnb.com/help/article/3623) Its host page also lists extra cleaning for pet-accident stains as reimbursable. [[5]](https://www.airbnb.com/d/guarantee) No platform text defines hair, odor or stains, so the argument is about "expected": normal hair is arguably what the fee is for, a chewed couch is not. Hosts disagree. In one forum thread the host waived under-$100 extra cleaning after guests who had paid dog fees did not offer to pay, and a commenter said a fee likely blocks a cleaning claim but not drywall damage. One thread, not a rule. [[12]](https://www.biggerpockets.com/forums/530/topics/1253487-anyone-successfully-use-vrbo-damage-protection-for-extra-cleaning-sub-200) See our [pet fees guide](/guides/how-vacation-rental-pet-fees-work) for how fees are structured. If you are bringing a puppy, our [puppy rental guide](/guides/puppy-at-a-vacation-rental) covers the extra rules and questions.
 
 | Situation | What the sources say | Your focus |
 | --- | --- | --- |
@@ -266,4 +268,4 @@ Airbnb's ground rules say service animals, and in some locations emotional suppo
 - [ ] Decide: pay, pay part or decline, using the matching script.
 - [ ] Keep everything on the platform.
 
-Next trip, run the [pet cost check](/tools/pet-cost-check) and add photo steps to the [trip checklist](/tools/checklist) or our [rental checklist](/guides/pet-friendly-vacation-rental-checklist). If you leave the dog in the rental, see [leaving a dog alone](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental).
+Next trip, run the [pet cost check](/tools/pet-cost-check) and add photo steps to the [trip checklist](/tools/checklist) or our [rental checklist](/guides/pet-friendly-vacation-rental-checklist). If you leave the dog in the rental, see [leaving a dog alone](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental). For the full picture of trip costs, see [what a dog really costs on a rental trip](/guides/what-a-dog-really-costs-on-a-vacation-rental).

@@ -30,6 +30,8 @@ relatedGuides:
   - how-vacation-rental-pet-fees-work
   - dog-friendly-cabin-packing-list
   - how-many-dogs-can-you-bring-to-a-vacation-rental
+  - vacation-rental-with-a-reactive-dog
+  - puppy-at-a-vacation-rental
 relatedTools:
   - checklist
   - pet-cost-check
@@ -206,7 +208,7 @@ Airbnb's guest help says to tell the host about any pets you plan to bring and c
 
 ## What about noise and neighbors?
 
-Barking is the usual way an absence becomes a problem. A dog left in an unfamiliar place may howl, and one guide notes that barking can alert a nearby host. Hosts and neighbors judge by what they hear, not by how long you were gone. [[11]](https://www.afar.com/magazine/how-to-find-a-pet-friendly-airbnb-or-vacation-rental)
+Barking is the usual way an absence becomes a problem. A dog left in an unfamiliar place may howl, and one guide notes that barking can alert a nearby host. Hosts and neighbors judge by what they hear, not by how long you were gone. [[11]](https://www.afar.com/magazine/how-to-find-a-pet-friendly-airbnb-or-vacation-rental) If your dog reacts to noises or passers-by, see our guide to [a rental for a reactive dog](/guides/vacation-rental-with-a-reactive-dog).
 
 Booking.com's guide advises against leaving pets alone if they do not handle unfamiliar settings well or bark constantly when left alone. [[10]](https://www.booking.com/articles/pet-friendly-holiday-rentals-tips.html) If your dog does either at home, treat that as a no for the rental too.
 
@@ -256,7 +258,7 @@ Skip the solo plan, or arrange a sitter you trust, in these cases:
 
 ## A settling-in routine
 
-Everything here is from the ASPCA's separation-anxiety guidance, applied to a rental. [[5]](https://www.aspca.org/pet-care/dog-care/common-dog-behavior-issues/separation-anxiety)
+Everything here is from the ASPCA's separation-anxiety guidance, applied to a rental. [[5]](https://www.aspca.org/pet-care/dog-care/common-dog-behavior-issues/separation-anxiety) Bringing a puppy? See our [puppy rental guide](/guides/puppy-at-a-vacation-rental).
 
 1. Give at least 30 minutes of aerobic activity, ideally right before you go out.
 2. Leave a stuffed food toy that takes 20 to 30 minutes to finish.

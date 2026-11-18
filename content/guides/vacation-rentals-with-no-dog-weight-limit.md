@@ -1,6 +1,6 @@
 ---
 title: "Vacation Rentals With No Dog Weight Limit (and How to Get Your 70-Pounder Approved)"
-seoTitle: "Dog Weight Limits at 38 Rental Managers"
+seoTitle: "Rentals With No Dog Weight Limit: 2 of 38"
 seoDescription: "6 of 38 managers state a dog weight limit and two say none. See the exact wording, how limits are phrased, and a message to get a big dog approved."
 dek: Which managers state a weight limit, which say they have none, the wording traps in between, and the host message that gets a large dog approved in writing.
 category: Planning

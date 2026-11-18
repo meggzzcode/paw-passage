@@ -1,3 +1,6 @@
+import { products as records } from "virtual:content";
+import type { GearCategorySlug } from "./products-schema";
+
 // Products that gear guides can recommend. No prices, ratings or "tested" claims live here:
 // prices change and we have not tested these products. Facts must come from the maker's own
 // page or an independent standard, and the source is recorded so an editor can re-check it.
@@ -17,6 +20,15 @@ export interface Product {
   productUrl?: string;
   /** Id of an entry in affiliates.ts. Leave unset until you are approved: no button is shown. */
   affiliateId?: string;
+  /** Hub categories (first = primary). Set in content/products.yml. */
+  categories?: GearCategorySlug[];
+  /** Plain (non-affiliate) retailer page, used only when there is no approved affiliate link and no maker page. */
+  retailerUrl?: string;
+  retailerName?: string;
+  /** Date (YYYY-MM-DD) the record was last read against its source page. */
+  lastVerified?: string;
+  /** false hides the product from guides, the packing tool and /gear while keeping the record. Default true. */
+  active?: boolean;
 }
 
 /** A product as it appears inside one gear guide. */
@@ -30,11 +42,26 @@ export interface GearPick {
   watchOuts: string[];
 }
 
-// Each gear guide keeps its products in src/content/gear/<guide-slug>.ts (export const products).
-// They are collected here; a guide's `gear` array refers to them by id.
-const modules = import.meta.glob<{ products: Product[] }>("./gear/*.ts", { eager: true });
-export const products: Product[] = Object.values(modules).flatMap((m) => m.products ?? []);
+// Products live in content/products.yml (editable in Pages CMS) and are checked by src/content/products-schema.ts.
+// A guide's `gear` array refers to them by id. (src/content/gear/*.ts are the pre-migration baseline kept only for
+// src/test/gear-parity.test.ts; they are no longer read by the site.)
+export const products: Product[] = records.map((r) => ({
+  id: r.id,
+  name: r.name,
+  brand: r.brand,
+  summary: r.summary,
+  keySpecs: r.keySpecs,
+  specSource: r.specSource,
+  categories: r.categories,
+  lastVerified: r.lastVerified,
+  active: r.active,
+  ...(r.manufacturerUrl ? { productUrl: r.manufacturerUrl } : {}),
+  ...(r.retailerUrl ? { retailerUrl: r.retailerUrl } : {}),
+  ...(r.retailerName ? { retailerName: r.retailerName } : {}),
+  ...(r.affiliateId ? { affiliateId: r.affiliateId } : {}),
+}));
 
+/** An inactive product is not found, so it drops out of guides, the packing tool and the hub. */
 export function getProduct(id: string, list: Product[] = products): Product | undefined {
-  return list.find((p) => p.id === id);
+  return list.find((p) => p.id === id && p.active !== false);
 }

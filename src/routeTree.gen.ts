@@ -13,8 +13,10 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as AffiliateDisclosureRouteImport } from './routes/affiliate-disclosure'
 import { Route as ContactRouteImport } from './routes/contact'
+import { Route as CorrectionsRouteImport } from './routes/corrections'
 import { Route as EditorialStandardsRouteImport } from './routes/editorial-standards'
 import { Route as ListYourPropertyRouteImport } from './routes/list-your-property'
+import { Route as MethodologyRouteImport } from './routes/methodology'
 import { Route as PrivacyRouteImport } from './routes/privacy'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as TermsRouteImport } from './routes/terms'
@@ -58,6 +60,11 @@ const ContactRoute = ContactRouteImport.update({
   path: '/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CorrectionsRoute = CorrectionsRouteImport.update({
+  id: '/corrections',
+  path: '/corrections',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const EditorialStandardsRoute = EditorialStandardsRouteImport.update({
   id: '/editorial-standards',
   path: '/editorial-standards',
@@ -66,6 +73,11 @@ const EditorialStandardsRoute = EditorialStandardsRouteImport.update({
 const ListYourPropertyRoute = ListYourPropertyRouteImport.update({
   id: '/list-your-property',
   path: '/list-your-property',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MethodologyRoute = MethodologyRouteImport.update({
+  id: '/methodology',
+  path: '/methodology',
   getParentRoute: () => rootRouteImport,
 } as any)
 const PrivacyRoute = PrivacyRouteImport.update({
@@ -185,8 +197,10 @@ export interface FileRoutesByFullPath {
   '/about': typeof AboutRoute
   '/affiliate-disclosure': typeof AffiliateDisclosureRoute
   '/contact': typeof ContactRoute
+  '/corrections': typeof CorrectionsRoute
   '/editorial-standards': typeof EditorialStandardsRoute
   '/list-your-property': typeof ListYourPropertyRoute
+  '/methodology': typeof MethodologyRoute
   '/privacy': typeof PrivacyRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
@@ -215,8 +229,10 @@ export interface FileRoutesByTo {
   '/about': typeof AboutRoute
   '/affiliate-disclosure': typeof AffiliateDisclosureRoute
   '/contact': typeof ContactRoute
+  '/corrections': typeof CorrectionsRoute
   '/editorial-standards': typeof EditorialStandardsRoute
   '/list-your-property': typeof ListYourPropertyRoute
+  '/methodology': typeof MethodologyRoute
   '/privacy': typeof PrivacyRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
@@ -246,8 +262,10 @@ export interface FileRoutesById {
   '/about': typeof AboutRoute
   '/affiliate-disclosure': typeof AffiliateDisclosureRoute
   '/contact': typeof ContactRoute
+  '/corrections': typeof CorrectionsRoute
   '/editorial-standards': typeof EditorialStandardsRoute
   '/list-your-property': typeof ListYourPropertyRoute
+  '/methodology': typeof MethodologyRoute
   '/privacy': typeof PrivacyRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
@@ -278,8 +296,10 @@ export interface FileRouteTypes {
     | '/about'
     | '/affiliate-disclosure'
     | '/contact'
+    | '/corrections'
     | '/editorial-standards'
     | '/list-your-property'
+    | '/methodology'
     | '/privacy'
     | '/sitemap.xml'
     | '/terms'
@@ -308,8 +328,10 @@ export interface FileRouteTypes {
     | '/about'
     | '/affiliate-disclosure'
     | '/contact'
+    | '/corrections'
     | '/editorial-standards'
     | '/list-your-property'
+    | '/methodology'
     | '/privacy'
     | '/sitemap.xml'
     | '/terms'
@@ -338,8 +360,10 @@ export interface FileRouteTypes {
     | '/about'
     | '/affiliate-disclosure'
     | '/contact'
+    | '/corrections'
     | '/editorial-standards'
     | '/list-your-property'
+    | '/methodology'
     | '/privacy'
     | '/sitemap.xml'
     | '/terms'
@@ -369,8 +393,10 @@ export interface RootRouteChildren {
   AboutRoute: typeof AboutRoute
   AffiliateDisclosureRoute: typeof AffiliateDisclosureRoute
   ContactRoute: typeof ContactRoute
+  CorrectionsRoute: typeof CorrectionsRoute
   EditorialStandardsRoute: typeof EditorialStandardsRoute
   ListYourPropertyRoute: typeof ListYourPropertyRoute
+  MethodologyRoute: typeof MethodologyRoute
   PrivacyRoute: typeof PrivacyRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   TermsRoute: typeof TermsRoute
@@ -425,6 +451,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ContactRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/corrections': {
+      id: '/corrections'
+      path: '/corrections'
+      fullPath: '/corrections'
+      preLoaderRoute: typeof CorrectionsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/editorial-standards': {
       id: '/editorial-standards'
       path: '/editorial-standards'
@@ -437,6 +470,13 @@ declare module '@tanstack/react-router' {
       path: '/list-your-property'
       fullPath: '/list-your-property'
       preLoaderRoute: typeof ListYourPropertyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/methodology': {
+      id: '/methodology'
+      path: '/methodology'
+      fullPath: '/methodology'
+      preLoaderRoute: typeof MethodologyRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/privacy': {
@@ -601,8 +641,10 @@ const rootRouteChildren: RootRouteChildren = {
   AboutRoute: AboutRoute,
   AffiliateDisclosureRoute: AffiliateDisclosureRoute,
   ContactRoute: ContactRoute,
+  CorrectionsRoute: CorrectionsRoute,
   EditorialStandardsRoute: EditorialStandardsRoute,
   ListYourPropertyRoute: ListYourPropertyRoute,
+  MethodologyRoute: MethodologyRoute,
   PrivacyRoute: PrivacyRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   TermsRoute: TermsRoute,
@@ -629,13 +671,3 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}

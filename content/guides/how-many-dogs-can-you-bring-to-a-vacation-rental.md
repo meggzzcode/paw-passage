@@ -29,6 +29,7 @@ relatedGuides:
   - vacation-rentals-that-welcome-large-dogs
   - pet-friendly-vacation-rental-checklist
   - bringing-a-dog-to-a-no-pets-rental
+  - vacation-rentals-with-no-dog-weight-limit
 relatedTools:
   - pet-cost-check
   - checklist
@@ -195,7 +196,7 @@ Published limits as of 2026-11-18, ten sources, a sample and not a survey. Most 
 | AvantStay, Big Bear [[10]](https://avantstay.com/vacation-rentals/pet-friendly/california/big-bear) | "Up to two" at most homes | None | Deep-cleaning fee; amount not shown | Not stated |
 | One Vrbo listing, Blue Ridge [[11]](https://www.vrbo.com/en-sg/p2719492vb) | Limit 2 total | 23 kg per pet | Not on page | Not stated |
 
-A manager default often reads "unless advertised", so the listing text beats the manager's general page. Brindley says its 60 lb is "each"; no standard exists for per-dog versus combined weight, which is why the weight question below matters.
+A manager default often reads "unless advertised", so the listing text beats the manager's general page. Brindley says its 60 lb is "each"; no standard exists for per-dog versus combined weight, which is why the weight question below matters. For the managers that state no weight limit, see [rentals with no dog weight limit](/guides/vacation-rentals-with-no-dog-weight-limit).
 
 ### What 38 manager pages add
 

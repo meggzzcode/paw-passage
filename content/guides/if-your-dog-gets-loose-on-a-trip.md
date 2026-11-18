@@ -33,6 +33,9 @@ relatedGuides:
   - new-years-eve-with-a-dog-in-a-vacation-rental
   - dog-friendly-cabin-packing-list
   - can-you-leave-a-dog-alone-in-a-vacation-rental
+  - can-dogs-go-in-a-rental-pool-or-hot-tub
+  - vacation-rental-with-a-reactive-dog
+  - christmas-week-in-a-cabin-with-a-dog
 relatedTools:
   - checklist
   - packing-list
@@ -287,7 +290,7 @@ The picks use each maker's own product page: a stated size range, battery figure
 
 ## Preventing it in a place you do not know
 
-In our view the main levers are the door and the fence. Patch warns that a dog that stays put at home can bolt from a rest stop, rental house, campground or hotel hallway if fireworks go off, and compares it to a toddler near a pool: one open door can be enough. [[15]](https://patch.com/massachusetts/across-ma/july-4-fireworks-cause-spike-lost-dog-reports-what-ma-pet-owners-should-know) One dog scaled an 8-foot daycare fence (the daycare believed fireworks may have spooked her) and was found about 60 miles away; a microchip let a rescue group reach the family. [[16]](https://www.upworthy.com/christmas-miracle-family-reunited-with-their-dog-found-60-miles-away)
+In our view the main levers are the door and the fence. Patch warns that a dog that stays put at home can bolt from a rest stop, rental house, campground or hotel hallway if fireworks go off, and compares it to a toddler near a pool: one open door can be enough. [[15]](https://patch.com/massachusetts/across-ma/july-4-fireworks-cause-spike-lost-dog-reports-what-ma-pet-owners-should-know) One dog scaled an 8-foot daycare fence (the daycare believed fireworks may have spooked her) and was found about 60 miles away; a microchip let a rescue group reach the family. [[16]](https://www.upworthy.com/christmas-miracle-family-reunited-with-their-dog-found-60-miles-away) If the rental has a pool or hot tub, our guide to [dogs in a rental pool or hot tub](/guides/can-dogs-go-in-a-rental-pool-or-hot-tub) lists the rules to ask about.
 
 **Doors.** Treat arrival as the riskiest moment: one person holds the dog while another handles the bags. Tell everyone in the group the dog does not go out without a leash. (Our suggestions.)
 
@@ -297,7 +300,7 @@ In our view the main levers are the door and the fence. Patch warns that a dog t
 
 ## Fireworks and holidays
 
-Fireworks were reported behind two of the stories above and suspected in a third. Cornell says to keep ID collar and microchip information current and a fearful dog in a room farthest from the noise. [[17]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/fear-fireworks-and-thunderstorms) A Dutch survey of more than 3,600 pet owners found 5% of dogs had ever been lost after hearing fireworks; the researchers say distressed owners may have been likelier to take part. [[18]](https://www.uu.nl/en/news/survey-result-fireworks-outside-new-years-eve-disastrous-for-animal-welfare) Petco Love's release says more pets go missing on July 4 than any other day, and it does not mention New Year's. [[19]](https://prnewswire.com/news-releases/lost-pets-fill-animal-shelters-after-july-4th-festivities-petco-love-urging-pet-parents-to-search-for-them-on-petco-love-lost-301870824.html) Even a "firework-free" stay can fail: one account describes a park advertised that way with fireworks on arrival, the night before New Year's Eve and at midnight, and staff saying they had no control over what happens outside the park. [[20]](https://www.petbook-magazine.com/dogs/dog-owner-how-we-were-misled-by-a-firework-free-vacation-park) Our [New Year's Eve in a rental guide](/guides/new-years-eve-with-a-dog-in-a-vacation-rental) has the questions to ask a host and a night-of plan.
+Fireworks were reported behind two of the stories above and suspected in a third. Cornell says to keep ID collar and microchip information current and a fearful dog in a room farthest from the noise. [[17]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/fear-fireworks-and-thunderstorms) A Dutch survey of more than 3,600 pet owners found 5% of dogs had ever been lost after hearing fireworks; the researchers say distressed owners may have been likelier to take part. [[18]](https://www.uu.nl/en/news/survey-result-fireworks-outside-new-years-eve-disastrous-for-animal-welfare) Petco Love's release says more pets go missing on July 4 than any other day, and it does not mention New Year's. [[19]](https://prnewswire.com/news-releases/lost-pets-fill-animal-shelters-after-july-4th-festivities-petco-love-urging-pet-parents-to-search-for-them-on-petco-love-lost-301870824.html) Even a "firework-free" stay can fail: one account describes a park advertised that way with fireworks on arrival, the night before New Year's Eve and at midnight, and staff saying they had no control over what happens outside the park. [[20]](https://www.petbook-magazine.com/dogs/dog-owner-how-we-were-misled-by-a-firework-free-vacation-park) Our [New Year's Eve in a rental guide](/guides/new-years-eve-with-a-dog-in-a-vacation-rental) has the questions to ask a host and a night-of plan. For a dog that reacts to noise or strangers, see our guide to [renting with a reactive dog](/guides/vacation-rental-with-a-reactive-dog); for a holiday week, see [Christmas week in a cabin with a dog](/guides/christmas-week-in-a-cabin-with-a-dog).
 
 ## Checklist: before you leave and on arrival
 

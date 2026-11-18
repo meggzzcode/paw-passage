@@ -99,9 +99,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&display=swap" },
       { rel: "stylesheet", href: appCss },
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "apple-touch-icon", href: "/apple-touch-icon.png" },
     ],
     scripts: [
-      { type: "application/ld+json", children: jsonLd({ "@context": "https://schema.org", "@type": "Organization", name: site.name, slogan: site.tagline, description: site.description }) },
+      { type: "application/ld+json", children: jsonLd({ "@context": "https://schema.org", "@type": "Organization", name: site.name, ...(site.siteUrl ? { url: site.siteUrl } : {}), slogan: site.tagline, description: site.description }) },
       ...(site.ga4MeasurementId
         ? [
             { src: `https://www.googletagmanager.com/gtag/js?id=${site.ga4MeasurementId}`, async: true },

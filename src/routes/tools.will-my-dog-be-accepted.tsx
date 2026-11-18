@@ -4,7 +4,7 @@ import { DogAcceptedChecker } from "@/components/site/DogAcceptedChecker";
 import { pageHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/tools/will-my-dog-be-accepted")({
-  head: () => pageHead({ title: "Will my dog be accepted? Rental pet policy checker", description: "Enter your dogs' number, weight and breed and see how 38 vacation rental managers' own pet policies compare, with a link to each manager's page.", path: "/tools/will-my-dog-be-accepted" }),
+  head: () => pageHead({ title: "Will my dog be accepted? Pet policy checker", description: "Enter your dogs' number, weight and breed and see how 38 vacation rental managers' own pet policies compare, with a link to each manager's page.", path: "/tools/will-my-dog-be-accepted" }),
   component: Page,
 });
 

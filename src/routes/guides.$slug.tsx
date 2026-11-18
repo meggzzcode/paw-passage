@@ -7,7 +7,7 @@ import { GearPicks } from "@/components/site/GearPicks";
 import { AffiliateNotice } from "@/components/site/AffiliateNotice";
 import { GuideCard } from "@/components/site/GuideCard";
 import { PreviewBadge } from "@/components/site/StatusBadge";
-import { pageHead, breadcrumbLd, jsonLd } from "@/lib/seo";
+import { pageHead, breadcrumbLd, jsonLd, absoluteUrl, isoDate } from "@/lib/seo";
 import { site } from "@/config/site";
 import { TableOfContents } from "@/components/site/TableOfContents";
 import { ArticleActions, TrustStrip } from "@/components/site/ArticleActions";
@@ -32,11 +32,11 @@ export const Route = createFileRoute("/guides/$slug")({
     const path = `/guides/${params.slug}`;
     const h = pageHead({ title: g.seoTitle, description: g.seoDescription, path, type: "article", noindex: !isPublic(g), image: `/share/${g.slug}.jpg` });
     const scripts = [
-      { type: "application/ld+json", children: jsonLd({ "@context": "https://schema.org", "@type": "Article", headline: g.title, description: g.seoDescription, datePublished: g.publishedOn, dateModified: g.lastReviewed, author: { "@type": "Organization", name: g.author }, publisher: { "@type": "Organization", name: site.name }, mainEntityOfPage: path }) },
+      { type: "application/ld+json", children: jsonLd({ "@context": "https://schema.org", "@type": "Article", headline: g.title, description: g.seoDescription, image: absoluteUrl(`/share/${g.slug}.jpg`), datePublished: isoDate(g.publishedOn), dateModified: isoDate(g.lastReviewed), author: { "@type": "Organization", name: g.author }, publisher: { "@type": "Organization", name: site.name }, mainEntityOfPage: absoluteUrl(path) }) },
       breadcrumbLd([{ name: "Guides", path: "/guides" }, { name: g.title, path }]),
     ];
     if (g.faqs.length) scripts.push({ type: "application/ld+json", children: jsonLd({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: g.faqs.map((f) => ({ "@type": "Question", name: f.q, acceptedAnswer: { "@type": "Answer", text: f.a } })) }) });
-    return { ...h, meta: [...h.meta, { property: "article:modified_time", content: g.lastReviewed }], scripts };
+    return { ...h, meta: [...h.meta, { property: "article:modified_time", content: isoDate(g.lastReviewed) }], scripts };
   },
   component: GuidePage,
 });

@@ -9,7 +9,7 @@ const s = policyStats();
 
 export const Route = createFileRoute("/data/pet-policies")({
   head: () => {
-    const h = pageHead({ title: `What ${s.total} vacation rental managers say about dogs`, description: `Pet policy data from ${s.total} vacation rental managers' own pages: dog limits, weight limits, breed rules and pet fees, with a source link for each and a CSV download.`, path: "/data/pet-policies" });
+    const h = pageHead({ title: `What ${s.total} rental managers say about dogs`, description: `Pet policy data from ${s.total} rental managers' own pages: dog limits, weight limits, breed rules and pet fees, with a source link for each and a CSV.`, path: "/data/pet-policies" });
     return { ...h, scripts: [{ type: "application/ld+json", children: jsonLd({ "@context": "https://schema.org", "@type": "Dataset", name: `Pet policies of ${s.total} vacation rental managers (read ${dataDate})`, description: "Dog limits, weight limits, breed rules and pet fees as stated on each manager's own public pet policy page, with the source page for each row. A convenience sample, not a survey.", dateModified: dataDate, license: "https://creativecommons.org/licenses/by/4.0/", creator: { "@type": "Organization", name: "Paws & Passage" }, distribution: [{ "@type": "DataDownload", encodingFormat: "text/csv", contentUrl: "/pet-policies-38-managers.csv" }] }) }] };
   },
   component: DataPage,

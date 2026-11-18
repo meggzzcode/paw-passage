@@ -4,7 +4,7 @@ import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { pageHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/dogs/")({
-  head: () => pageHead({ title: "Dog travel by dog type: escape artists, big dogs, multi-dog and senior", description: "Find the right rental for your dog. Guides, real manager policies and questions to ask, organized by the kind of dog you have.", path: "/dogs" }),
+  head: () => pageHead({ title: "Dog-friendly travel by dog type", description: "Find the right rental for your dog. Guides, real manager policies and questions to ask, organized by the kind of dog you have.", path: "/dogs" }),
   component: DogsPage,
 });
 

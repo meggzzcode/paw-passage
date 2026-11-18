@@ -2,6 +2,8 @@
 
 *Written 2026-11-16. Read the "What has and has not been verified" section first. Nothing in this guide has been tried on live Netlify, Namecheap, GitHub or Pages CMS accounts yet.*
 
+*More documents: `docs/OPERATIONS-HANDBOOK.md` (running the site, costs, procedures, transfer checklist), `docs/SALE-READINESS.md` (scores and planning multiples) and the audit reports in `docs/recovery/`.*
+
 ## 1. What you are buying
 
 Paws & Passage is a dog-friendly travel website: researched articles, planning tools (a checklist and a pet cost and host confirmation tool) and a directory of verified places to stay. It earns money from affiliate links (a commission when a visitor books or buys through your link). It has **no database, no logins and no server you have to look after**. Everything on the site is plain files stored in GitHub.

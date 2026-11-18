@@ -31,6 +31,7 @@ relatedGuides:
   - how-vacation-rental-pet-fees-work
   - can-you-leave-a-dog-alone-in-a-vacation-rental
   - dog-friendly-cabin-packing-list
+  - christmas-week-in-a-cabin-with-a-dog
 relatedTools:
   - checklist
   - pet-cost-check
@@ -193,7 +194,7 @@ Copy, paste and fill in the brackets:
 
 ## What hosts and local rules say
 
-A host's rule applies to guests, not neighbors, and local law varies by county and city. Wording differs by manager (sample, not a survey, as of 2026-11-18):
+A host's rule applies to guests, not neighbors, and local law varies by county and city. Wording differs by manager (sample, not a survey, as of 2026-11-18): Booking the week before? See [Christmas week in a cabin with a dog](/guides/christmas-week-in-a-cabin-with-a-dog).
 
 | Manager | Dogs and fees | Fireworks and holiday wording | Source |
 | --- | --- | --- | --- |

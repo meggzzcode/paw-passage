@@ -17,7 +17,7 @@ export const guide: Guide = {
   heroImage: "gear-car-safety",
   body: `## The short answer
 
-- **Top pick for most dogs on a car seat: the Sleepypod Clickit Range.** It has the heaviest documented test dog of the harnesses here (110 lbs, tested November 2024, per its CPS listing). [[14]](https://centerforpetsafety.org/sleepypod-clickit-range/)
+- **Our pick for most dogs on a car seat, based on the cited test data and not our own testing: the Sleepypod Clickit Range.** It has the heaviest documented test dog of the harnesses here (110 lbs, tested November 2024, per its CPS listing). [[14]](https://centerforpetsafety.org/sleepypod-clickit-range/)
 - Use either a crash-tested harness on a rear-seat belt or a correctly sized, strength-strapped crate. CDC and ASPCA both advise the back seat for dogs that ride on a seat. [[7]](https://www.cdc.gov/healthy-pets/travel/index.html) [[8]](https://www.aspca.org/pet-care/general-pet-care/travel-safety-tips)
 - "Crash tested" is not regulated. Look the exact model and size up in the Center for Pet Safety (CPS) Certified directory and match the test dog weight to your dog. [[1]](https://centerforpetsafety.org/cps-certified/)
 - Do not use extension tethers or zipline-style products: CPS says they increase the risk of injury. [[6]](https://centerforpetsafety.org/extension-tether-advisory/)
@@ -83,7 +83,7 @@ These five have a maker page and, for the configurations noted, CPS listings. Sp
 ## Pick by situation
 
 - **One large dog, SUV with cargo area:** a Large crate with strength-rated straps, after checking anchor points with the vehicle maker. [[5]](https://centerforpetsafety.org/cargo-area-connection-advisory/)
-- **Medium dog, sedan:** a harness on the rear seat belt, sized to the rib cage. The Clickit Range is our top pick; the Saker Bomber is the other tested option here (75 lb test dog). [[10]](https://sleepypod.com/pages/sizing) [[19]](https://centerforpetsafety.org/saker-bomber-harness/)
+- **Medium dog, sedan:** a harness on the rear seat belt, sized to the rib cage. The Clickit Range is our pick based on the cited test data, not our own testing; the Saker Bomber is the other tested option here (75 lb test dog). [[10]](https://sleepypod.com/pages/sizing) [[19]](https://centerforpetsafety.org/saker-bomber-harness/)
 - **Toy or very small dog:** a carrier tested for your dog's weight, such as the Atom's 12 lb rating. [[11]](https://sleepypod.com/products/atom)
 - **Dog that panics when confined:** a rear-seat harness may be easier to introduce gradually; ask your vet. A den-lover may prefer a correctly sized, anchored crate.
 - **Two dogs:** separate restraints, never a shared one. See our [two-dog planning guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental).
@@ -161,7 +161,7 @@ When a link is an affiliate link it is marked sponsored and the page says so; re
   gear: [
     {
       productId: "sleepypod-clickit-range",
-      bestFor: "Top pick: a medium to large dog riding on the rear seat of a car or SUV",
+      bestFor: "Our pick from the cited test data: a medium to large dog riding on the rear seat of a car or SUV",
       whyItMadeTheList:
         "It matches the criteria for independent testing and a documented test weight: the maker states a CPS rating up to 110 lbs, and the CPS listing (Small, Medium, Large and X-Large) shows a 110 lb test dog in November 2024. It attaches to the vehicle seat belt and is sized by rib cage with Regular and Long fits listed by the maker.",
       watchOuts: [

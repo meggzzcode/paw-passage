@@ -5,7 +5,7 @@ import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { pageHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/destinations/")({
-  head: () => pageHead({ title: "Dog-friendly destinations in Georgia and California", description: "Plan dog-friendly trips to the North Georgia mountains and the California coast, with town-by-town notes on yards, beaches and local rules.", path: "/destinations" }),
+  head: () => pageHead({ title: "Dog-friendly Georgia and California trips", description: "Plan dog-friendly trips to the North Georgia mountains and the California coast, with town-by-town notes on yards, beaches and local rules.", path: "/destinations" }),
   component: DestinationsPage,
 });
 

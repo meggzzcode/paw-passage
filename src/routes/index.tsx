@@ -17,10 +17,10 @@ import { policyStats } from "@/lib/policy-stats";
 
 export const Route = createFileRoute("/")({
   head: () => pageHead({
-    title: hasStays() ? `${site.name}: dog-friendly cabins, beach stays and travel guides` : `${site.name}: dog-friendly travel guides and planning tools`,
+    title: hasStays() ? `${site.name}: dog-friendly cabins, stays and guides` : `${site.name}: dog-friendly travel guides and tools`,
     description: hasStays()
-      ? "Find dog-friendly cabins and beach stays by the details that matter: fenced yards, large dogs, multiple dogs and real pet fees. Researched guides and free planning tools."
-      : "Researched guides and free planning tools for renting, driving and vacationing with your dog: pet fees, fenced yards, car safety, first aid and local rules, with every source listed.",
+      ? "Find dog-friendly cabins and beach stays by what matters: fenced yards, large dogs, extra dogs and real pet fees. Researched guides and free tools."
+      : "Researched guides and free tools for renting and traveling with your dog: pet fees, fenced yards, car safety and local rules, with every source listed.",
     path: "/",
   }),
   component: Home,

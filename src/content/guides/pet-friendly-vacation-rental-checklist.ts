@@ -14,9 +14,9 @@ export const guide: Guide = {
   "lastReviewed": "2026-11-16",
   "readingMinutes": 6,
   "heroImage": "guide-rental-checklist",
-  "body": `You found a cabin with a hot tub and a "pets welcome" badge, and then checkout adds a pet fee, a cleaning charge and a rule about leaving the dog alone that none of the photos mentioned. Every line below is a question that would have caught it before you paid. Work top to bottom, and stop at the first line you cannot answer.
+  "body": `You found a cabin with a hot tub and a "pets welcome" badge, and then checkout adds a pet fee, a cleaning charge and a rule about leaving the dog alone that none of the photos mentioned. Every line below is a question that would have caught it before you paid. Work top to bottom, and stop at the first line you cannot answer. Pool and hot tub access is its own question; see [whether dogs can use a rental's pool or hot tub](/guides/can-dogs-go-in-a-rental-pool-or-hot-tub).
 
-Tick it off on your phone in the [interactive checklist](/tools/checklist), and get the real total for your dog count and dates in the [pet cost check](/tools/pet-cost-check).
+Tick it off on your phone in the [interactive checklist](/tools/checklist), and get the real total for your dog count and dates in the [pet cost check](/tools/pet-cost-check). If a listing already feels off, our guide to [pet-friendly listing red flags](/guides/pet-friendly-listing-red-flags) shows which wording to question.
 
 ## The 8-item booking gate
 
@@ -40,7 +40,7 @@ Check the exact unit, not the manager's portfolio. Vrbo's house-rules guidance l
 - [ ] Count, weight (per dog or combined), breed and age limits written down.
 - [ ] Approval received in the booking channel, naming each dog and the dates.
 
-Weight limits are real and they differ a lot. Across the 38 managers in our convenience sample (public pages read 2026-11-18), six state one, from 35 to 65 pounds. Our [large-dog guide](/guides/vacation-rentals-that-welcome-large-dogs) names them, and the [two-dog guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental) covers counts and combined weight. For a quick yes or no on your own dog, try the [acceptance tool](/tools/will-my-dog-be-accepted). Breed rules have their own [guide](/guides/breed-restrictions-at-vacation-rentals).
+Weight limits are real and they differ a lot. Across the 38 managers in our convenience sample (public pages read 2026-11-18), six state one, from 35 to 65 pounds. Our [large-dog guide](/guides/vacation-rentals-that-welcome-large-dogs) names them, and the [two-dog guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental) covers counts and combined weight. For a quick yes or no on your own dog, try the [acceptance tool](/tools/will-my-dog-be-accepted). Breed rules have their own [guide](/guides/breed-restrictions-at-vacation-rentals). The two managers that state no weight limit are covered in [rentals with no dog weight limit](/guides/vacation-rentals-with-no-dog-weight-limit), and puppies face their own age questions in our [puppy rental guide](/guides/puppy-at-a-vacation-rental).
 
 ## Price
 
@@ -53,7 +53,7 @@ Enter your real dates, guest count and pet count before comparing, and save the 
 - [ ] Taxes and platform charges: the final payable amount.
 - [ ] Any request to pay a pet charge off-platform goes to platform support first. [[3]](https://www.airbnb.com/help/article/2799)
 
-The same-looking number can bill very differently. As of 2026-11-18, Big Bear Vacations lists $40 per night per pet, while AMI Locals lists $250 per stay. For a 7-night stay with two dogs that is $560 versus $250, using the managers' own stated bases. Vrbo notes that property settings and pending claims can affect a refundable deposit's return. [[4]](https://help.vrbo.com/articles/Does-HomeAway-Payments-automatically-issue-refunds-to-travelers) The [pet-fee explainer](/guides/how-vacation-rental-pet-fees-work) walks through the terms; the [damage-charge guide](/guides/airbnb-pet-damage-charge-after-checkout) covers checkout.
+The same-looking number can bill very differently. As of 2026-11-18, Big Bear Vacations lists $40 per night per pet, while AMI Locals lists $250 per stay. For a 7-night stay with two dogs that is $560 versus $250, using the managers' own stated bases. Vrbo notes that property settings and pending claims can affect a refundable deposit's return. [[4]](https://help.vrbo.com/articles/Does-HomeAway-Payments-automatically-issue-refunds-to-travelers) The [pet-fee explainer](/guides/how-vacation-rental-pet-fees-work) walks through the terms; the [damage-charge guide](/guides/airbnb-pet-damage-charge-after-checkout) covers checkout. For the wider picture of what a dog adds to a trip, see [what a dog really costs on a rental trip](/guides/what-a-dog-really-costs-on-a-vacation-rental).
 
 ## House rules, on a real day
 
@@ -141,6 +141,9 @@ Booked somewhere that says no pets? Read [what happens if you bring a dog to a n
     "vacation-rentals-that-welcome-large-dogs",
     "airbnb-pet-damage-charge-after-checkout",
     "can-you-leave-a-dog-alone-in-a-vacation-rental",
+    "pet-friendly-listing-red-flags",
+    "vacation-rentals-with-no-dog-weight-limit",
+    "puppy-at-a-vacation-rental",
   ],
   "relatedTools": ["checklist", "pet-cost-check"],
   "sources": [

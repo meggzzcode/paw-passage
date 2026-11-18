@@ -29,6 +29,8 @@ relatedGuides:
   - how-many-dogs-can-you-bring-to-a-vacation-rental
   - bringing-a-dog-to-a-no-pets-rental
   - breed-restrictions-at-vacation-rentals
+  - what-a-dog-really-costs-on-a-vacation-rental
+  - pet-friendly-listing-red-flags
 embeddedTool: pet-cost-workflow
 relatedTools:
   - pet-cost-check
@@ -225,7 +227,7 @@ The other side of the dataset is long. Of the 38 managers, 22 state a charge, an
 
 Vacasa's Mammoth Lakes page says a pet fee is charged at all of its pet-friendly rentals, with no amount listed. [[15]](https://www.vacasa.com/usa/California/Mammoth-Lakes/explore/Dog-friendly/) For how the units differ, see [how pet fees work](/guides/how-vacation-rental-pet-fees-work).
 
-One thing the contrast shows: a fee is sometimes where cleaning is paid for. Big Bear says its pet fee covers cleaning, and Cabin Rentals of Georgia stacks a nightly fee and a cleaning fee. A $0 pet fee plus a cleaning fee can end up close to a home with a pet fee and no cleaning fee, which is why totals beat headlines. That is our reading, not a figure from any page.
+One thing the contrast shows: a fee is sometimes where cleaning is paid for. Big Bear says its pet fee covers cleaning, and Cabin Rentals of Georgia stacks a nightly fee and a cleaning fee. A $0 pet fee plus a cleaning fee can end up close to a home with a pet fee and no cleaning fee, which is why totals beat headlines. That is our reading, not a figure from any page. For the wider picture, see [what a dog really costs on a rental trip](/guides/what-a-dog-really-costs-on-a-vacation-rental); vague pet wording is one of the [red flags in pet-friendly listings](/guides/pet-friendly-listing-red-flags).
 
 ## How to look for fee-free homes on the platforms
 

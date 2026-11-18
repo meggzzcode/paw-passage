@@ -97,7 +97,7 @@ Pack:
 - A washable entrance mat if the host permits it, a brush, a cloth for paws, a lint roller, and waste bags.
 - A crate, only if your dog already uses one. A cabin is a poor place to try crating for the first time.
 
-Dry the dog at the door and wipe paws before they cross the floor, and pick a sleeping spot away from the entrance. With two dogs, bring separate beds and bowls; see our [two-dog accommodation guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental). If an accident happens, blot promptly, follow the property's cleaning instructions and tell the host; stain removers can damage some materials, so check first. Before checkout, collect yard waste and remove loose hair. Our [rental protection gear guide](/guides/dog-friendly-cabin-packing-list) compares washable covers, travel beds and car-seat covers.
+Dry the dog at the door and wipe paws before they cross the floor, and pick a sleeping spot away from the entrance. With two dogs, bring separate beds and bowls; see our [two-dog accommodation guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental). If an accident happens, blot promptly, follow the property's cleaning instructions and tell the host; stain removers can damage some materials, so check first. Before checkout, collect yard waste and remove loose hair. To tick these items off before you go, use the [packing list tool](/tools/packing-list).
 
 ## A practical canine first-aid kit
 
@@ -124,7 +124,7 @@ CDC notes that signs of tickborne disease may not appear for 7 to 21 days or lon
 
 ## Cold weather, wood stoves, and seasonal chemicals
 
-**Heat sources.** Check whether the cabin has a wood stove, fireplace or portable heater, and whether a guard is supplied. Cornell's Riney Canine Health Center advises keeping dogs about three feet from heat sources and never leaving them unsupervised nearby; gates, exercise pens or a fireplace screen can help. [[5]](https://riney.vet.cornell.edu/member-benefits-health-tips/winter-safety-january-2026) Keep beds and blankets clear, and if you cannot create a safe separation, leave the appliance unused. Cornell's veterinary college warns that fireplace and wood-stove ashes can burn pets if they contain live embers. [[6]](https://www.vet.cornell.edu/about-us/news/20161215/cvm-cold-weather-tips-pet-owners)
+**Heat sources.** Check whether the cabin has a wood stove, fireplace or portable heater, and whether a guard is supplied. Cornell's Riney Canine Health Center advises keeping dogs about three feet from heat sources and never leaving them unsupervised nearby; gates, exercise pens or a fireplace screen can help. [[5]](https://riney.vet.cornell.edu/member-benefits-health-tips/winter-safety-january-2026) Keep beds and blankets clear, and if you cannot create a safe separation, leave the appliance unused. Cornell's veterinary college warns that fireplace and wood-stove ashes can burn pets if they contain live embers. [[6]](https://www.vet.cornell.edu/about-us/news/20161215/cvm-cold-weather-tips-pet-owners) Holiday weeks add their own hazards; see [Christmas week in a cabin with a dog](/guides/christmas-week-in-a-cabin-with-a-dog).
 
 **Ice melt.** ASPCA warns that ice-melting chemicals can be dangerous if swallowed and recommends washing and drying paws and belly after winter walks. [[7]](https://www.aspca.org/pet-care/general-pet-care/cold-weather-safety-tips) Cornell's Riney center says good boots fit securely and provide traction. [[5]](https://riney.vet.cornell.edu/member-benefits-health-tips/winter-safety-january-2026)
 
@@ -152,7 +152,7 @@ Turn this into your own checklist with the [packing list tool](/tools/packing-li
     { q: "Do I need furniture covers if the cabin charges a pet fee?", a: "A pet fee does not establish furniture permission, so confirm the rules first. Where furniture is allowed, a washable cover helps with hair and damp paws but does not remove responsibility for damage." },
     { q: "What should I do if my dog may have swallowed antifreeze?", a: "Contact a veterinarian, emergency veterinary hospital, ASPCA Animal Poison Control at 888-426-4435, or Pet Poison Helpline at 855-764-7661 immediately. ASPCA's antifreeze guidance says to get the dog to a veterinary hospital right away, as signs can be missed early. [[9]](https://www.aspca.org/news/digging-deeper-getting-facts-dangers-antifreeze-and-your-pets) Do not induce vomiting unless a veterinary professional directs you. Keep the product label available if possible; a consultation fee may apply." },
   ],
-  relatedGuides: ["vacation-rental-secure-fenced-yard", "pet-friendly-vacation-rental-checklist", "how-many-dogs-can-you-bring-to-a-vacation-rental", "new-years-eve-with-a-dog-in-a-vacation-rental"],
+  relatedGuides: ["vacation-rental-secure-fenced-yard", "pet-friendly-vacation-rental-checklist", "how-many-dogs-can-you-bring-to-a-vacation-rental", "new-years-eve-with-a-dog-in-a-vacation-rental", "christmas-week-in-a-cabin-with-a-dog"],
   relatedTools: ["checklist", "pet-cost-check"],
   sources: [
     { title: "Bear Safety: Storing Food", url: "https://www.nps.gov/articles/bearsafetyfood.htm", publisher: "National Park Service", accessedOn: "2026-11-16" },

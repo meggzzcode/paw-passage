@@ -8,6 +8,8 @@ declare module "virtual:content" {
   export const guides: Guide[];
   export const stays: Stay[];
   export const places: Place[];
+  import type { ProductRecord } from "@/content/products-schema";
+  export const products: ProductRecord[];
   export const affiliates: AffiliateLink[];
   export const settings: SiteSettings;
   export const showDrafts: boolean;

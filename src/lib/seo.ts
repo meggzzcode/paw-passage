@@ -1,5 +1,5 @@
 import { site } from "@/config/site";
-import { images } from "@/lib/images";
+import { visibleStays, type Stay } from "@/content/stays";
 
 interface PageMetaInput {
   title: string;
@@ -15,6 +15,19 @@ export function absoluteUrl(path: string) {
   const base: string = site.siteUrl;
   if (!base || /^https?:\/\//.test(path)) return path;
   return base.replace(/\/+$/, "") + (path.startsWith("/") ? path : `/${path}`);
+}
+
+/** Stable 1200x630 share image for pages without their own (not the hashed hero import, so cached shares survive rebuilds). */
+export const DEFAULT_SHARE_IMAGE = "/share/default.jpg";
+
+/** A town page is indexable only when a verified stay exists there; matches the sitemap rule. */
+export function townHasVerifiedStay(townSlug: string, list: Stay[] = visibleStays({ includeSamples: false })) {
+  return list.some((s) => s.town === townSlug && s.status === "verified");
+}
+
+/** Date-only content dates (YYYY-MM-DD) as ISO 8601 with a timezone offset, as Google recommends for Article dates. */
+export function isoDate(d: string) {
+  return /^\d{4}-\d{2}-\d{2}$/.test(d) ? `${d}T00:00:00-05:00` : d;
 }
 
 export function pageHead({ title, description, path, type = "website", noindex, image }: PageMetaInput) {
@@ -33,7 +46,7 @@ export function pageHead({ title, description, path, type = "website", noindex, 
   ];
   if (noindex) meta.push({ name: "robots", content: "noindex, nofollow" });
   // Share previews (Facebook, Pinterest, iMessage...) need an absolute image address, so they appear once siteUrl is set.
-  const preview = image ?? images["hero-porch"].src;
+  const preview = image ?? DEFAULT_SHARE_IMAGE;
   const previewUrl = /^https?:\/\//.test(preview) ? preview : site.siteUrl ? absoluteUrl(preview) : "";
   if (previewUrl) meta.push({ property: "og:image", content: previewUrl }, { name: "twitter:image", content: previewUrl });
   return { meta, links: [{ rel: "canonical", href: absoluteUrl(path) }] };
@@ -50,7 +63,7 @@ export function breadcrumbLd(items: { name: string; path: string }[]) {
     children: jsonLd({
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
-      itemListElement: items.map((it, i) => ({ "@type": "ListItem", position: i + 1, name: it.name, item: it.path })),
+      itemListElement: items.map((it, i) => ({ "@type": "ListItem", position: i + 1, name: it.name, item: absoluteUrl(it.path) })),
     }),
   };
 }

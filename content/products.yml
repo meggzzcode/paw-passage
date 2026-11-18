@@ -1,0 +1,612 @@
+# Products shown in gear guides, the packing tool and /gear (Pages CMS: "Products").
+# No prices, ratings, commissions or "tested" claims belong here. Facts come from the maker's own page or an
+# independent standard; specSource records where. manufacturerUrl and retailerUrl are plain (non-affiliate) links.
+# affiliateId stays EMPTY unless content/affiliates.yml has an approved entry for this product: the product never
+# stores an affiliate URL. Generated once by scripts/migrate-gear-to-yaml.ts; edit freely from here.
+products:
+  - id: sleepypod-clickit-range
+    name: Clickit Range Crash-Tested Harness
+    brand: Sleepypod
+    categories:
+      - road-trips
+      - travel-safety
+      - large-dogs
+    summary: A vest-style car harness that threads onto a rear-seat seat belt, listed by the maker for dogs from 18 to 110 lbs with Regular and Long fits.
+    keySpecs:
+      - Maker lists sizes Small to 2X-Large with Regular and Long fits; the CPS listing covers Small, Medium, Large and X-Large only (tested at 110 lbs, November 2024)
+      - Maker states it is rated up to 110 lbs by the Center for Pet Safety
+      - Three-point design for the rear passenger seat that connects to a vehicle seat belt
+      - Includes an S-Clip and a Buckle Shield
+      - Maker warns it should not be used with non-Sleepypod accessories
+    specSource:
+      title: Clickit Range Crash-Tested Harness
+      url: https://sleepypod.com/products/clickit-range
+      publisher: Sleepypod
+      accessedOn: 2026-11-16
+    manufacturerUrl: https://sleepypod.com/products/clickit-range
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-16
+    active: true
+    affiliateId: ""
+  - id: saker-bomber-harness
+    name: Bomber Harness
+    brand: Saker Canine
+    categories:
+      - road-trips
+      - travel-safety
+    summary: A car-and-trail harness whose maker says the car seat belt passes directly through its top handle.
+    keySpecs:
+      - Sizes XS, S, M and L, listed by girth (XS 13 to 24.8 in; L 14.6 to 45.3 in) and neck range, with no weight limits on the maker's page
+      - The Center for Pet Safety lists it as passed testing, tested November 2022 with a 75 lb test dog, protocol CPS-001-014.01
+      - Maker says the car seat belt needs to be passed directly through the top handle
+      - Maker's page gives two different force figures (3,000+ lbs and over 3,300 lbs) and does not mention CPS
+    specSource:
+      title: Bomber harness
+      url: https://sakercanine.com/products/bomber-harness-black
+      publisher: Saker Canine
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://sakercanine.com/products/bomber-harness-black
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-18
+    active: true
+    affiliateId: ""
+  - id: sleepypod-atom
+    name: Atom Crash-Tested Carrier
+    brand: Sleepypod
+    categories:
+      - road-trips
+      - travel-safety
+    summary: A soft, fold-flat carrier that for very small dogs that the maker says can be used as a car seat, with a safety tether inside.
+    keySpecs:
+      - Maker states it is rated to 12 lbs (5.5 kg) by the Center for Pet Safety
+      - Mesh panels on three sides and plush bedding
+      - Folds flat for storage
+      - Includes a built-in tether inside the carrier to prevent escapes (not a vehicle tether)
+      - Maker warns it should not be used with non-Sleepypod accessories
+      - Product page does not describe how to secure it in a vehicle; get the maker's instructions and never leave it loose on a seat
+    specSource:
+      title: Sleepypod Atom Crash-Tested Carrier
+      url: https://sleepypod.com/products/atom
+      publisher: Sleepypod
+      accessedOn: 2026-11-16
+    manufacturerUrl: https://sleepypod.com/products/atom
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-16
+    active: true
+    affiliateId: ""
+  - id: gunner-g1-kennel
+    name: G1 Kennel
+    brand: GUNNER
+    categories:
+      - road-trips
+      - travel-safety
+      - large-dogs
+    summary: A double-walled hard kennel with built-in tie-down pins, designed to be anchored in a vehicle with separately sold straps.
+    keySpecs:
+      - Small (up to 30 lbs), Medium (up to 45 lbs), Intermediate (up to 70 lbs) and Large (71+ lbs)
+      - Medium interior 25 x 18 x 19.75 in; Intermediate interior 30 x 18 x 25 in
+      - Kennel weight 38 lbs (Medium) and 48 lbs (Intermediate)
+      - Maker states the Small, Medium and Intermediate sizes are crash tested per the Center for Pet Safety; the Large is not listed as certified
+      - Tie-down straps are a separate add-on that the maker recommends for its crash-test rating
+      - Built-in stainless-steel tie-down pins
+    specSource:
+      title: G1 Kennel
+      url: https://www.gunner.com/products/g1-kennel
+      publisher: GUNNER Kennels
+      accessedOn: 2026-11-16
+    manufacturerUrl: https://www.gunner.com/products/g1-kennel
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-16
+    active: true
+    affiliateId: ""
+  - id: lucky-duck-lucky-kennel
+    name: Lucky Kennel
+    brand: Lucky Duck
+    categories:
+      - road-trips
+      - travel-safety
+      - large-dogs
+    summary: A hard-sided travel kennel with integrated tie-downs, sold in Medium, Intermediate and Large, with a ratchet strap kit sold separately.
+    keySpecs:
+      - Medium recommended for dogs under 50 lbs; Intermediate under 70 lbs; Large 70 to 110 lbs
+      - "Interior dimensions: Medium 24 x 18 x 17 in; Intermediate 30.25 x 20.5 x 22 in; Large 35.75 x 22 x 26.5 in"
+      - Kennel weight 27 lbs (Medium), 38 lbs (Intermediate), 45 lbs (Large)
+      - Maker states it is crash-test rated by the Center for Pet Safety
+      - Integrated powder-coated tie-downs
+      - Maker suggests pairing it with the Lucky Ratchet Strap Kit (set of 4), sold separately
+      - Listed dimensions are for travel use; the maker suggests sizing up for in-home use
+    specSource:
+      title: Lucky Kennel
+      url: https://www.luckyduck.com/products/lucky-kennel
+      publisher: Lucky Duck
+      accessedOn: 2026-11-16
+    manufacturerUrl: https://www.luckyduck.com/products/lucky-kennel
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-16
+    active: true
+    affiliateId: ""
+  - id: orvis-embossed-sherpa-throw
+    name: Embossed Sherpa Throw
+    brand: Orvis
+    categories:
+      - cabin-vacations
+      - travel-comfort
+    summary: A two-layer sherpa fleece throw, sold as a general throw rather than a fitted cover, that can be laid over a sofa or chair where the host allows dogs on it.
+    keySpecs:
+      - Size listed as 40 in x 40 in
+      - Two-layer sherpa fleece construction with polyester and leather trim; the reverse side is solid fleece
+      - Care listed as machine wash; no other washing details are given
+      - No waterproof or water-resistant claim is listed on the page
+    specSource:
+      title: Embossed Sherpa Throw
+      url: https://www.orvis.com/product/embossed-sherpa-throw/28F4.html
+      publisher: Orvis
+      accessedOn: 2026-11-16
+    manufacturerUrl: https://www.orvis.com/product/embossed-sherpa-throw/28F4.html
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-16
+    active: true
+    affiliateId: ""
+  - id: kurgo-loft-wander-dog-bed
+    name: Loft Wander Dog Bed
+    brand: Kurgo
+    categories:
+      - cabin-vacations
+      - travel-comfort
+    summary: A roll-up travel bed with a water-resistant ripstop top and a waterproof, non-slip bottom, meant to give a dog its own spot away from home.
+    keySpecs:
+      - "Medium open: 27 in x 36 in x 2 in, rolled up 12.5 in x 8 in; Large open: 36 in x 48 in x 3 in, rolled up 17 in x 9.5 in"
+      - Upper made with Microtomic ripstop fabric; waterproof bottom made with Rufftex material; filled with 140g Polytech fiber fill
+      - Nonslip bottom
+      - Rolls into a compact bundle; has a handle for toting
+      - "Care: wash by hand or machine on a gentle cycle, cold water, mild detergent, no bleach, hang dry"
+      - No weight is listed on the page
+    specSource:
+      title: Loft Wander Dog Bed
+      url: https://www.kurgo.com/p/loft-wander-dog-bed/K01560
+      publisher: Kurgo
+      accessedOn: 2026-11-16
+    manufacturerUrl: https://www.kurgo.com/p/loft-wander-dog-bed/K01560
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-16
+    active: true
+    affiliateId: ""
+  - id: kurgo-heather-hammock
+    name: Heather Hammock
+    brand: Kurgo
+    categories:
+      - road-trips
+      - travel-comfort
+    summary: A bench-seat hammock cover with a center zipper that folds back to free half the seat for a human passenger.
+    keySpecs:
+      - "Size: 55 in wide x 56 in long; may not fit large trucks or SUVs"
+      - Described as waterproof and stain resistant; no material composition is listed on the page
+      - Attaches at eight points, with Bench Beans anchors and under-seat paracord
+      - Hook-and-loop openings to access seatbelts and latch systems
+      - Center zipper folds back half so a person can sit in the back
+      - Designed for vehicles with bench seats; do not use with bucket seats or over an open space without a bench seat
+      - "Care, from the linked instructions PDF: washing by hand and hang air-drying is the best way to care for Kurgo products"
+    specSource:
+      title: Heather Hammock
+      url: https://www.kurgo.com/p/heather-hammock/K01598
+      publisher: Kurgo
+      accessedOn: 2026-11-16
+    manufacturerUrl: https://www.kurgo.com/p/heather-hammock/K01598
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-16
+    active: true
+    affiliateId: ""
+  - id: amk-me-and-my-dog
+    name: "Adventure Dog Medical Kit: Me & My Dog"
+    brand: Adventure Medical Kits
+    categories:
+      - travel-safety
+    summary: A larger kit for people and dogs, packed in two waterproof bags, with a general wilderness and travel medicine guide in its contents list; the feature text also mentions a pet first aid manual.
+    keySpecs:
+      - Listed contents include adhesive bandages, sterile gauze dressings, non-adherent dressings, a 2 inch conforming gauze bandage, cloth tape, a self-adhering bandage, a triangular bandage and a cold pack
+      - Also lists a 10 cc wound irrigation tool, splinter/tick remover forceps, 4 inch EMT shears, latex-free gloves, safety pins, a 60 inch nylon leash and an emergency blanket
+      - Lists 100 ml saline solution, antiseptic and alcohol wipes, single-use triple antibiotic, 3% hydrogen peroxide (1 oz), diphenhydramine 25 mg and aspirin 325 mg
+      - Maker says it is housed in two waterproof DryFlex bags and that the triangular bandage can double as a muzzle
+      - Maker lists a 60-day satisfaction guarantee
+    specSource:
+      title: Adventure Dog Medical Kit - Me & My Dog
+      url: https://www.adventuremedicalkits.com/products/adventure-dog-medical-kit-me-my-dog
+      publisher: Adventure Medical Kits
+      accessedOn: 2026-11-16
+    manufacturerUrl: https://www.adventuremedicalkits.com/products/adventure-dog-medical-kit-me-my-dog
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-16
+    active: true
+    affiliateId: ""
+  - id: amk-trail-dog
+    name: "Adventure Dog Medical Kit: Trail Dog"
+    brand: Adventure Medical Kits
+    categories:
+      - travel-safety
+    summary: A compact dog-focused kit in a waterproof bag with a pet first aid handbook, aimed by the maker at hiking, camping and travel.
+    keySpecs:
+      - Maker lists weight as 12 oz and size as 7.5 x 5.3 x 1.5 inches
+      - Listed contents include 2 sterile gauze dressings, 2 non-adherent gauze pads, a 2 inch roller gauze, a 2 inch self-adhering elastic bandage and a triangular bandage
+      - Also lists a 10 cc wound irrigation tool, splinter/tick remover forceps, 100 ml saline solution, 3 single-use triple antibiotic packets, 3% hydrogen peroxide (1 oz) and 2 diphenhydramine 25 mg tablets
+      - Includes a Pet First Aid Handbook; maker says the triangular bandage can serve as a muzzle during treatment
+      - Packed in a waterproof Dryflex bag
+    specSource:
+      title: Adventure Dog Medical Kit - Trail Dog
+      url: https://www.adventuremedicalkits.com/products/adventure-dog-medical-kit-trail-dog
+      publisher: Adventure Medical Kits
+      accessedOn: 2026-11-16
+    manufacturerUrl: https://www.adventuremedicalkits.com/products/adventure-dog-medical-kit-trail-dog
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-16
+    active: true
+    affiliateId: ""
+  - id: kurgo-dog-first-aid-kit
+    name: Dog First Aid Kit
+    brand: Kurgo
+    categories:
+      - travel-safety
+    summary: A zippered-case kit that the maker describes as a 50-piece kit with a first aid guide, with a hanging hook and interior mesh compartments.
+    keySpecs:
+      - "Listed contents: parachute cord, first aid guide, sting relief pads, tweezers, tape roll, 2 inch crepe bandage, cotton swabs, tongue depressors, antiseptic towelettes, instant cold pack, disposable rubber gloves"
+      - Also lists 4 x 4 inch and 2 x 2 inch gauze pads, a 2 inch gauze roll, a 5 x 9 inch trauma pad, alcohol prep pads, a thermal foil emergency blanket, scissors and iodine prep pads
+      - Case is Oxford 600D fabric with an exterior zippered pocket and three interior mesh compartments
+      - Maker offers a lifetime guarantee against manufacturing defects and a 45-day return window
+      - The page lists item types without quantities and does not state weight or dimensions
+    specSource:
+      title: Dog First Aid Kit
+      url: https://kurgo.com/dog-first-aid-kit
+      publisher: Kurgo (PetSafe Brands)
+      accessedOn: 2026-11-16
+    manufacturerUrl: https://kurgo.com/dog-first-aid-kit
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-16
+    active: true
+    affiliateId: ""
+  - id: kurgo-rsg-dog-first-aid-kit
+    name: RSG Dog First Aid Kit
+    brand: Kurgo
+    categories:
+      - travel-safety
+    summary: A smaller MOLLE-compatible kit the maker designed to attach to its RSG harnesses and utility belt, with a similar contents list to Kurgo's larger kit.
+    keySpecs:
+      - Maker describes it as 49 pieces; the page lists about 20 line items
+      - Listed contents include parachute cord, first aid guide, sting relief pads, tweezers, a 2 inch crepe bandage, gauze pads and roll, a 5 x 9 inch trauma pad, an instant cold pack, an emergency blanket, scissors and iodine prep pads
+      - MOLLE-compatible with MOLLE clips or patches; designed to work with RSG harnesses and the Active Utility Belt
+      - Maker offers a lifetime guarantee against manufacturing defects and a 45-day return window
+      - The page does not state weight or dimensions
+    specSource:
+      title: RSG Dog First Aid Kit
+      url: https://www.kurgo.com/harnesses/rsg-dog-first-aid-kit
+      publisher: Kurgo (PetSafe Brands)
+      accessedOn: 2026-11-16
+    manufacturerUrl: https://www.kurgo.com/harnesses/rsg-dog-first-aid-kit
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-16
+    active: true
+    affiliateId: ""
+  - id: baskerville-ultra-muzzle
+    name: Baskerville Ultra Muzzle
+    brand: Company of Animals
+    categories:
+      - travel-safety
+    summary: A basket-style dog muzzle made of thermoplastic rubber that the maker says can be heat-shaped to the dog's face.
+    keySpecs:
+      - "Maker says it is made of durable thermoplastic rubber (TPR) and is heat-shapable: soak in hot tap water for about 2 minutes, shape while warm, then cool in cold water to set"
+      - Maker says the basket design lets the dog pant, drink and take treats while wearing it
+      - Maker lists vet and groomer visits among its intended uses
+      - Maker says it is not recommended for extended periods unless necessary, that the dog should be supervised, and that the shape may relax over time
+      - Sizing is by nose length and circumference using the maker's sizing guide
+    specSource:
+      title: Baskerville Ultra Muzzle
+      url: https://companyofanimals.com/us/brand-product/baskerville-ultra-muzzle/
+      publisher: Company of Animals
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://companyofanimals.com/us/brand-product/baskerville-ultra-muzzle/
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-18
+    active: true
+    affiliateId: ""
+  - id: kurgo-collaps-a-bowl
+    name: Collaps A Bowl
+    brand: Kurgo
+    categories:
+      - road-trips
+      - feeding-and-hydration
+    summary: A single collapsible silicone travel bowl for water or food that flattens for a bag or door pocket.
+    keySpecs:
+      - Holds 24 ounces
+      - Collapses to less than 1 inch high
+      - Food-grade silicone, described by the maker as PVC and BPA free
+      - Dishwasher safe on the top rack, per the maker
+      - Backed by the maker's Lifetime Guarantee covering manufacturing defects
+    specSource:
+      title: Collaps A Bowl
+      url: https://www.kurgo.com/pet-travel-bowls/collaps-a-bowl
+      publisher: Kurgo
+      accessedOn: 2026-11-16
+    manufacturerUrl: https://www.kurgo.com/pet-travel-bowls/collaps-a-bowl
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-16
+    active: true
+    affiliateId: ""
+  - id: springland-22oz-original-travel-bottle
+    name: 22oz Original Travel Dog Water Bottle
+    brand: Springland (formerly Springer)
+    categories:
+      - feeding-and-hydration
+    summary: A squeeze-to-fill water bottle with an attached bowl, designed to be operated with one hand.
+    keySpecs:
+      - 22 oz capacity
+      - Squeeze to fill the attached bowl, release to drain the excess back into the bottle
+      - Food-safe, BPA-free polypropylene plastic; aluminum carabiner included
+      - Described by the maker as having a leak-proof lock design
+      - Dishwasher safe on the top rack only; hand washing with dish soap also listed
+    specSource:
+      title: 22oz Original Travel Dog Water Bottle
+      url: https://springlandpets.com/products/22oz-classic-dog-travel-water-bottle
+      publisher: Springland
+      accessedOn: 2026-11-16
+    manufacturerUrl: https://springlandpets.com/products/22oz-classic-dog-travel-water-bottle
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-16
+    active: true
+    affiliateId: ""
+  - id: springland-20oz-flip-travel-bottle
+    name: 20oz Flip Travel Dog Water Bottle
+    brand: Springland (formerly Springer)
+    categories:
+      - feeding-and-hydration
+    summary: A squeeze-to-drink water bottle topped with a silicone bowl that flips up for drinking and folds down for storage.
+    keySpecs:
+      - 20 oz capacity
+      - Silicone top bowl flips up to drink and folds down for compact storage
+      - Food-safe, BPA-free polypropylene plastic; aluminum carabiner included
+      - Described by the maker as having a leak-proof lock design
+      - Dishwasher safe on the top rack only; hand washing with dish soap also listed
+    specSource:
+      title: 20oz Flip Travel Dog Water Bottle
+      url: https://springlandpets.com/products/20oz-flip-dog-travel-water-bottle
+      publisher: Springland
+      accessedOn: 2026-11-16
+    manufacturerUrl: https://springlandpets.com/products/20oz-flip-dog-travel-water-bottle
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-16
+    active: true
+    affiliateId: ""
+  - id: vittles-vault-travel-tainer
+    name: Vittles Vault Travel-Tainer Portable Food Storage Container
+    brand: Vittles Vault (Gamma2 / Petmate)
+    categories:
+      - feeding-and-hydration
+    summary: A rigid food container with a sealing lid that comes with two bowls and a carry handle.
+    keySpecs:
+      - 6-cup food container (the maker notes actual capacity depends on kibble shape and density)
+      - Comes with two 3-cup bowls, one for food and one for water, and a carry handle
+      - Described by the maker as made from BPA-free, food-grade plastic with an airtight seal
+      - Maker says the bowls are dishwasher safe but the clear food container is not
+    specSource:
+      title: Vittles Vault Travel-Tainer Portable Food Storage Container
+      url: https://www.petmate.com/vittles-vault-travel-trainer-portable-food-storage-container/product/4504
+      publisher: Petmate
+      accessedOn: 2026-11-16
+    manufacturerUrl: https://www.petmate.com/vittles-vault-travel-trainer-portable-food-storage-container/product/4504
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-16
+    active: true
+    affiliateId: ""
+  - id: kurgo-kibble-carrier
+    name: Kibble Carrier
+    brand: Kurgo
+    categories:
+      - road-trips
+      - feeding-and-hydration
+    summary: A soft roll-top bag for carrying a few days of dry food, built for packing rather than long-term storage.
+    keySpecs:
+      - Holds up to 5 lbs of dry food, roughly 20 cups of average-sized kibble, per the maker
+      - Ripstop material with a food-safe PEVA liner and heat-sealed seams
+      - Roll-top closure that rolls and clips, with a simple buckle closure
+      - Hand wash, then air dry
+    specSource:
+      title: Kibble Carrier
+      url: https://www.kurgo.com/dog-travel/kibble-carrier
+      publisher: Kurgo
+      accessedOn: 2026-11-16
+    manufacturerUrl: https://www.kurgo.com/dog-travel/kibble-carrier
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-16
+    active: true
+    affiliateId: ""
+  - id: akc-reunite-stainless-collar-tag
+    name: AKC Reunite ID Tag or ID Collar
+    brand: AKC Reunite
+    categories:
+      - travel-safety
+    summary: A visible ID that carries the pet's name, an AKC Reunite ID number and the service's helpline number, so a finder can act without a scan. It comes as a stainless steel collar tag or as a collar with a built-in nameplate; both carry the same kind of ID.
+    keySpecs:
+      - Maker says the personalized tag includes the pet's name, ID number and AKC Reunite's 800 number
+      - Sold in a large size (1.25 inch diameter) and a small size (7/8 inch diameter), or engraved in a round 1-inch diameter style
+      - Includes a 0.8 inch stainless steel collar or key ring attachment
+      - Maker says it will not break or rust and lists an 18-month warranty
+      - "Optional add-ons listed: a Quick Scan QR code (not available with the engraved or aluminum tags) and a glow-in-the-dark tag silencer"
+      - The collar version has a built-in nameplate in sizes extra small to large (the large is listed at 18 to 28 inches long and 1 inch wide), reflective stitching, plastic buckles, seven colors and a 6-month guarantee; the maker says it is not recommended for cats
+      - The ID number on the tag points to an AKC Reunite record, so the tag only helps if that record's contact details are current
+    specSource:
+      title: Pet ID Tags | AKC Reunite
+      url: https://www.akcreunite.org/idtags/
+      publisher: AKC Reunite
+      accessedOn: 2026-11-16
+    manufacturerUrl: https://www.akcreunite.org/idtags/
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-16
+    active: true
+    affiliateId: ""
+  - id: tractive-dog-6
+    name: Tractive DOG 6
+    brand: Tractive
+    categories:
+      - travel-safety
+    summary: A clip-on GPS tracker for dogs that uses a built-in SIM and cellular networks, sold for dogs above 8.8 lbs.
+    keySpecs:
+      - Maker says it is for dogs above 8.8 lbs; 2.8 x 1.1 x 0.7 in and 1.4 oz; fits collar widths up to 1.1 in
+      - Battery listed as up to 2 weeks with Power Saving Zones and up to 6 days without them
+      - Maker lists 100% waterproof (IP68), an LED light and enhanced sound
+      - Maker lists LTE/4G, Bluetooth 5.0 and WiFi connectivity, with GPS, GLONASS and Galileo for location
+      - "Subscription required: maker says the tracker has a built-in SIM and that the fees needed to use mobile networks are covered by a subscription, which can be cancelled at any time"
+      - "Coverage as the maker states it: works in over 175 countries where there is 2G and/or LTE (CatM1) cellular coverage from one of its 500+ partners; the page links a coverage check"
+      - Maker lists compatibility with Android 10.0+ and iOS 17.0+
+    specSource:
+      title: Dog GPS Tracker | GPS Tracker for Dogs
+      url: https://tractive.com/en/pd/gps-tracker-dog
+      publisher: Tractive
+      accessedOn: 2026-11-16
+    manufacturerUrl: https://tractive.com/en/pd/gps-tracker-dog
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-16
+    active: true
+    affiliateId: ""
+  - id: tractive-dog-6-xl
+    name: Tractive DOG 6 XL
+    brand: Tractive
+    categories:
+      - travel-safety
+      - large-dogs
+    summary: The larger Tractive model for bigger dogs, with the same cellular-and-subscription design and a longer listed battery life.
+    keySpecs:
+      - Maker says it is for dogs above 44.1 lbs; 3.3 x 1.9 x 0.8 in and 2.5 oz; fits collar widths up to 1.6 in
+      - Battery listed as up to 6 weeks with Power Saving Zones and up to 20 days without them
+      - Maker lists 100% waterproof (IP68), an LED light and enhanced sound
+      - Maker lists LTE/4G, Bluetooth 5.0 and WiFi connectivity, with GPS, GLONASS and Galileo for location
+      - "Subscription required: maker says fees for the built-in SIM's mobile network use are covered by a subscription"
+      - "Coverage as the maker states it: works in over 175 countries where there is 2G and/or LTE (CatM1) cellular coverage from one of its 500+ partners"
+      - Maker lists compatibility with Android 10.0+ and iOS 17.0+
+    specSource:
+      title: Dog GPS Tracker | GPS Tracker for Dogs
+      url: https://tractive.com/en/pd/gps-tracker-dog
+      publisher: Tractive
+      accessedOn: 2026-11-16
+    manufacturerUrl: https://tractive.com/en/pd/gps-tracker-dog
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-16
+    active: true
+    affiliateId: ""
+  - id: fi-series-3-plus
+    name: Fi Series 3+
+    brand: Fi
+    categories:
+      - travel-safety
+    summary: An all-in-one smart collar with GPS tracking and an app, built around a long listed battery life.
+    keySpecs:
+      - Maker says it offers up to 3 months of battery life and wireless charging
+      - Described as an all-in-one smart collar with GPS tracking, a colored LED night light and a stainless steel frame
+      - Maker lists IP68 and IP66K certification, resistant in fresh and salt water up to 50 meters deep
+      - Maker describes a modular design for XS to XL dogs and says to check the fit chart before ordering
+      - Maker describes a Fi Puppy Warranty that swaps the collar for free when a puppy is full grown
+      - This product page does not state the cellular carrier, coverage area or subscription terms
+    specSource:
+      title: GPS Dog Collar with Health & Activity Tracking
+      url: https://fitracking.com/collar
+      publisher: Fi
+      accessedOn: 2026-11-16
+    manufacturerUrl: https://fitracking.com/collar
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-16
+    active: true
+    affiliateId: ""
+  - id: midwest-exercise-pen-with-door
+    name: MidWest Exercise Pen with Door
+    brand: MidWest Homes for Pets
+    categories:
+      - cabin-vacations
+    summary: A folding wire exercise pen with a latched door that sets up as a freestanding enclosure indoors or outdoors.
+    keySpecs:
+      - Instructions cover model numbers 550-24DR, 552-30DR, 554-36DR, 556-42DR and 558-48DR (24 to 48 size designations)
+      - 8 connected panels
+      - Includes 8 ground anchors, 8 corner stabilizers and 4 snaps
+      - Corner stabilizers can be placed on the bottom of the pen as floor protectors; manual says all 8 on top gives maximum stability, every other one on the bottom mixes stability and floor protection, and all 8 on the bottom is floor protection only
+      - Door closes with two slide-bolt latches plus a safety clip for added security
+      - Maker says a pet not trained to be restricted may attempt to escape, which could cause serious injury to the pet or the product
+      - Maker says to remove collars, tags and leads before placing a pet inside, and not to leave young animals unsupervised for extended periods
+    specSource:
+      title: Assembly Instructions for Model Number 550-24DR, 552-30DR, 554-36DR, 556-42DR, 558-48DR
+      url: https://www.midwesthomes4pets.com/wp-content/uploads/ExPen_550DR_Eng.pdf
+      publisher: MidWest Homes for Pets
+      accessedOn: 2026-11-16
+    manufacturerUrl: https://www.midwesthomes4pets.com/product/dogs/pens-gates-barriers/exercise-pen-with-door/
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-16
+    active: true
+    affiliateId: ""
+  - id: north-states-petyard-passage-8-panel
+    name: MyPet Petyard Passage 8-Panel
+    brand: North States
+    categories:
+      - cabin-vacations
+    summary: A lightweight plastic play yard of eight pre-connected panels, meant to be used as a freestanding enclosure.
+    keySpecs:
+      - Each panel is 26 inches high and 32 inches wide
+      - Eight interlocking panels, pre-connected
+      - Encloses up to 34.4 square feet, almost 7 feet across corner to corner
+      - "Material: plastic"
+      - Page describes a 9.5 x 8 inch swinging door panel that locks; which door panel ships is not stated (a 23-inch door panel also exists)
+      - Maker says not to use more than 8 panels at once and to use only square or octagon shapes
+      - Maker says model 8799 should not be used as a barrier and is only intended as a freestanding enclosure
+      - Maker says folding the panels the wrong way risks cracking the plastic
+      - Maker describes it as perfect for households with puppies or multiple pets; no weight or dog-size limit is stated
+    specSource:
+      title: North States MyPet Petyard Passage 8-Panel
+      url: https://northstatesind.com/north-states-mypet-petyard-passage-8-panel/
+      publisher: North States
+      accessedOn: 2026-11-16
+    manufacturerUrl: https://northstatesind.com/north-states-mypet-petyard-passage-8-panel/
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-16
+    active: true
+    affiliateId: ""
+  - id: carlson-convertible-pet-yard
+    name: "Convertible Pet Yard (Model #2200)"
+    brand: Carlson Pet Products
+    categories:
+      - cabin-vacations
+    summary: A six-panel all-metal pen with a walk-through door that the maker says can also be used as a gate.
+    keySpecs:
+      - 28 inches high; six removable 24-inch all-metal panels; hinged for multiple configurations
+      - Gate width up to 146.5 inches when all six panels are used
+      - 16.3-inch walk-through door with a sliding safety lock, swinging in both directions
+      - Gap between bars listed as 2 to 2.5 inches
+      - Maker says it can attach to walls; the page does not state whether it stands on its own
+      - Maker lists a limited 6-month warranty; no weight or dog-size limit is stated
+    specSource:
+      title: Carlson Convertible Pet Yard
+      url: https://carlsonpetproducts.com/products/convertible-pet-yard
+      publisher: Carlson Pet Products
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://carlsonpetproducts.com/products/convertible-pet-yard
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-18
+    active: true
+    affiliateId: ""

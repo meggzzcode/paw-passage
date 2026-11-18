@@ -20,6 +20,15 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
+# Basic security headers on every page. There is deliberately no Content-Security-Policy yet: Google Analytics,
+# Pinterest and the affiliate links would all need testing first (see docs/recovery/08-security-infrastructure.md).
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
+
 # Retired guide: its content moved into the how-many-dogs guide.
 [[redirects]]
   from = "/guides/traveling-with-two-dogs-accommodation-guide"

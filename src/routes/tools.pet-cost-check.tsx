@@ -4,7 +4,7 @@ import { PetCostWorkflow } from "@/components/site/PetCostWorkflow";
 import { pageHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/tools/pet-cost-check")({
-  head: () => pageHead({ title: "Pet cost and host confirmation tool", description: "Work out what your dog really costs at a vacation rental, compare up to three quotes, then get a ready-to-send message asking the host to confirm the pet fee in writing.", path: "/tools/pet-cost-check" }),
+  head: () => pageHead({ title: "Pet cost and host confirmation tool", description: "Work out what your dog really costs at a vacation rental, compare up to three quotes, then get a message asking the host to confirm the pet fee in writing.", path: "/tools/pet-cost-check" }),
   component: PetCostCheckPage,
 });
 

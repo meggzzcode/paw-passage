@@ -17,7 +17,7 @@ export const guide: Guide = {
   heroImage: "guide-large-dogs",
   body: `## The short answer
 
-You found the cabin, the listing says "dogs welcome," and your Lab is 80 pounds. Then the rules page says 50. In the 38-manager sample we read, six state a weight limit, and the limits run from 35 to 65 pounds, so "welcome" tells you very little until you know whose number applies to your dog.
+You found the cabin, the listing says "dogs welcome," and your Lab is 80 pounds. Then the rules page says 50. In the 38-manager sample we read, six state a weight limit, and the limits run from 35 to 65 pounds, so "welcome" tells you very little until you know whose number applies to your dog. If a listing's wording feels vague, see [pet-friendly listing red flags](/guides/pet-friendly-listing-red-flags).
 
 - A pets-allowed filter is only the first screen. Test every rental twice: does the rule explicitly allow this dog (permission), and can this dog move, rest and toilet comfortably there (practical fit)?
 - "Large dogs considered" means ask, not yes. Get approval in writing, naming your dog's current weight and breed.
@@ -38,7 +38,7 @@ Here are the six managers that state one, from public pages read on 2026-11-18. 
 | Brindley Beach Vacations (Outer Banks, NC) | 60 lb or less [[5]](https://www.brindleybeach.com/node/3691) | Each |
 | Emmons Realty (St. Simons Island, GA) | 65 lb maximum [[6]](https://www.emmonsrealty.com/pages/rental-policies) | Each |
 
-Two things jump out. The same word, "limit," can mean per dog or for both dogs together: AMI Locals' 50 pounds is shared, so an 80-pound Lab fails alone and two 30-pound dogs fail together. And the cutoff for a "large" dog is wherever the manager puts it, so a 60-pound dog clears Brindley Beach and is over at Elk Springs. Dog counts at the same managers are covered in [how many dogs you can bring](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental).
+Two things jump out. The same word, "limit," can mean per dog or for both dogs together: AMI Locals' 50 pounds is shared, so an 80-pound Lab fails alone and two 30-pound dogs fail together. And the cutoff for a "large" dog is wherever the manager puts it, so a 60-pound dog clears Brindley Beach and is over at Elk Springs. Dog counts at the same managers are covered in [how many dogs you can bring](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental). The managers that say they have no weight limit are covered in [rentals with no dog weight limit](/guides/vacation-rentals-with-no-dog-weight-limit).
 
 Not sure where your dog falls? Enter its weight and count in the [will my dog be accepted tool](/tools/will-my-dog-be-accepted).
 
@@ -120,6 +120,8 @@ Next step: put your dog's weight into the [will my dog be accepted tool](/tools/
     "pet-friendly-vacation-rental-checklist",
     "how-vacation-rental-pet-fees-work",
     "dog-friendly-cabin-packing-list",
+    "vacation-rentals-with-no-dog-weight-limit",
+    "pet-friendly-listing-red-flags",
   ],
   relatedTools: ["checklist", "pet-cost-check"],
   sources: [

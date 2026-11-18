@@ -89,7 +89,7 @@ On your own arrival, keep the dog secured while luggage moves: one person on the
 
 "Shared" can mean a common lawn, a courtyard serving several units, or a garden the owner crosses to reach storage. Ask who has access and whether other dogs use it at the same time.
 
-If separation from unfamiliar dogs matters, get sole use and access in writing; an informal promise that other guests "usually don't come outside" is not a schedule. Also ask what lies outside, such as a path, kennel, road or livestock field. A fence can contain a dog while leaving it exposed to triggers all day.
+If separation from unfamiliar dogs matters, get sole use and access in writing; an informal promise that other guests "usually don't come outside" is not a schedule. Also ask what lies outside, such as a path, kennel, road or livestock field. A fence can contain a dog while leaving it exposed to triggers all day. If your dog reacts to what it sees or hears, our guide to [renting with a reactive dog](/guides/vacation-rental-with-a-reactive-dog) covers how to vet a rental.
 
 ## Invisible and electric fences are not a physical enclosure
 
@@ -97,7 +97,7 @@ If the host says "invisible," "wireless," "GPS" or "electric," ask exactly what 
 
 ## A fenced pool yard is not necessarily a safe dog yard
 
-A fence around the property can keep a dog in the same space as an accessible pool. Ask for a layout showing whether a separate barrier stands between the dog area and the water, including hot tubs and ponds. CPSC recommends layers of pool protection, including barriers and self-closing, self-latching gates, to prevent unsupervised access by young children; that is child drowning guidance, not a dog-containment certification. [[3]](https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/In-Home-Drowning-Safety-Information-Center)
+A fence around the property can keep a dog in the same space as an accessible pool. Ask for a layout showing whether a separate barrier stands between the dog area and the water, including hot tubs and ponds. CPSC recommends layers of pool protection, including barriers and self-closing, self-latching gates, to prevent unsupervised access by young children; that is child drowning guidance, not a dog-containment certification. [[3]](https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/In-Home-Drowning-Safety-Information-Center) Our guide to [dogs in a rental pool or hot tub](/guides/can-dogs-go-in-a-rental-pool-or-hot-tub) covers the rules for the water itself.
 
 The narrower question is whether the dog can reach the water from the area you plan to use. If separation is unclear, choose a different yard or plan leashed access away from the water.
 
@@ -166,9 +166,9 @@ Save your arrival checks in the [travel checklist](/tools/checklist), price the 
   "relatedGuides": [
     "pet-friendly-vacation-rental-checklist",
     "how-many-dogs-can-you-bring-to-a-vacation-rental",
-    "vacation-rental-secure-fenced-yard",
     "can-you-leave-a-dog-alone-in-a-vacation-rental",
     "new-years-eve-with-a-dog-in-a-vacation-rental",
+    "vacation-rental-with-a-reactive-dog",
   ],
   "relatedTools": ["checklist", "pet-cost-check"],
   "sources": [

@@ -8,6 +8,7 @@ import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { StayFeeCalculator } from "@/components/site/StayFeeCalculator";
 import { BookingButton } from "@/components/site/BookingButton";
 import { PreviewBadge } from "@/components/site/StatusBadge";
+import { stayTitle, stayDescription } from "@/lib/stay-meta";
 import { pageHead, breadcrumbLd, jsonLd, stayIsIndexable } from "@/lib/seo";
 import { getGuide } from "@/content/guides";
 import { GuideCard } from "@/components/site/GuideCard";
@@ -21,7 +22,7 @@ export const Route = createFileRoute("/stays/$slug")({
   head: ({ loaderData, params }) => {
     if (!loaderData) return { meta: [{ title: "Stay not found" }, { name: "robots", content: "noindex" }] };
     const s = loaderData.stay;
-    const h = pageHead({ title: `${s.name}, dog-friendly ${stayTypeLabels[s.type].toLowerCase()} in ${townName(s.town)}`, description: s.summary, path: `/stays/${params.slug}`, noindex: !stayIsIndexable(s) });
+    const h = pageHead({ title: stayTitle(s), description: stayDescription(s), path: `/stays/${params.slug}`, noindex: !stayIsIndexable(s) });
     const indexable = stayIsIndexable(s);
     // The lodging record is only for host-verified stays; a listing-based page gets breadcrumbs only.
     return { ...h, scripts: indexable ? [...(s.status === "verified" ? [{ type: "application/ld+json", children: jsonLd({ "@context": "https://schema.org", "@type": "LodgingBusiness", name: s.name, description: s.summary, petsAllowed: true, address: { "@type": "PostalAddress", addressLocality: townName(s.town), addressRegion: getState(s.state)?.name } }) }] : []), breadcrumbLd([{ name: "Stays", path: "/stays" }, { name: s.name, path: `/stays/${s.slug}` }])] : [] };

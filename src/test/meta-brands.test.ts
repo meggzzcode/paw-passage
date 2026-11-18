@@ -75,3 +75,23 @@ describe("meta tags", () => {
     expect(text(h)).not.toMatch(BRANDS);
   });
 });
+
+describe("stay page meta", () => {
+  it("every stay has a title of at most 60 characters and a 120-155 character description, with no retailer brand and noindex logic intact", async () => {
+    const { visibleStays } = await import("@/content/stays");
+    const { Route: stayPage } = await import("@/routes/stays.$slug");
+    const { stayIsIndexable } = await import("@/lib/seo");
+    for (const s of visibleStays({ includeSamples: true })) {
+      const h = headOf(stayPage, { loaderData: { stay: s }, params: { slug: s.slug } });
+      const title = prop(h, "og:title");
+      const description = prop(h, "description");
+      expect(title.length, `${s.slug} title "${title}"`).toBeLessThanOrEqual(60);
+      expect(title, s.slug).toMatch(/\| Paws & Passage$/);
+      expect(description.length, `${s.slug} description "${description}"`).toBeGreaterThanOrEqual(120);
+      expect(description.length, `${s.slug} description "${description}"`).toBeLessThanOrEqual(155);
+      expect(text(h), s.slug).not.toMatch(/vrbo|expedia|hotels\.com|homeaway/i);
+      expect(prop(h, "og:title"), s.slug).toBe(prop(h, "twitter:title"));
+      expect(h.meta?.some((m) => m["name"] === "robots" && /noindex/.test(m["content"] ?? "")), s.slug).toBe(!stayIsIndexable(s));
+    }
+  });
+});

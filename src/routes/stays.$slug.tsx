@@ -5,6 +5,7 @@ import { getState, getTown, townName, stateAbbr } from "@/content/destinations";
 import { stayTypeLabels } from "@/lib/filters";
 import { describeFee, yesNo } from "@/lib/stay-format";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
+import { StayFeeCalculator } from "@/components/site/StayFeeCalculator";
 import { BookingButton } from "@/components/site/BookingButton";
 import { PreviewBadge } from "@/components/site/StatusBadge";
 import { pageHead, breadcrumbLd, jsonLd } from "@/lib/seo";
@@ -141,6 +142,7 @@ function StayPage() {
             </dl>
             <p className="mt-4 text-xs text-muted-foreground">{s.lastVerified ? `Last verified ${s.lastVerified}` : "Not yet verified"}</p>
           </div>
+          <StayFeeCalculator stay={s} />
         </aside>
       </div>
       <section className="mt-16 rounded-xl border border-border bg-secondary/40 p-6"><h2 className="text-xl">See this stay on Vrbo</h2><p className="mt-1 text-sm text-muted-foreground">Photos, the floor plan, live availability and the full house rules are on the booking page. Confirm the pet fee there before you book.</p><div className="mt-4"><BookingButton stay={s} /></div></section>

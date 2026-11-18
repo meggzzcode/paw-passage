@@ -1,7 +1,7 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { getStay } from "@/content/stays";
 import { stayPhoto } from "@/lib/images";
-import { getState, townName } from "@/content/destinations";
+import { getState, getTown, townName, stateAbbr } from "@/content/destinations";
 import { stayTypeLabels } from "@/lib/filters";
 import { describeFee, yesNo } from "@/lib/stay-format";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
@@ -57,7 +57,7 @@ function StayPage() {
       )}
       <header className="mt-6 grid gap-8 md:grid-cols-[1.4fr_1fr] md:items-end">
         <div>
-          <p className="eyebrow">{stayTypeLabels[s.type]} · <Link to="/destinations/$state/$town" params={{ state: s.state, town: s.town }} className="hover:underline">{townName(s.town)}</Link></p>
+          <p className="eyebrow">{stayTypeLabels[s.type]} · {getTown(s.state, s.town) ? <Link to="/destinations/$state/$town" params={{ state: s.state, town: s.town }} className="hover:underline">{townName(s.town)}, {stateAbbr(s.state)}</Link> : <>{townName(s.town)}, {stateAbbr(s.state)}</>}</p>
           <h1 className="mt-2 text-4xl md:text-5xl">{s.name}</h1>
           <p className="mt-3 text-lg text-muted-foreground">{s.summary}</p>
         </div>

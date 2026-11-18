@@ -144,5 +144,11 @@ export function getTown(stateSlug: string, townSlug: string) {
 }
 export function townName(slug: string) {
   for (const d of destinations) for (const t of d.towns) if (t.slug === slug) return t.name;
-  return slug;
+  // Towns without a destination page still show a readable name (cherry-log -> Cherry Log), never the raw slug.
+  return slug.split("-").map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
+}
+
+const stateAbbrs: Record<string, string> = { georgia: "GA", california: "CA", "north-carolina": "NC", tennessee: "TN", florida: "FL", colorado: "CO" };
+export function stateAbbr(slug: string) {
+  return stateAbbrs[slug] ?? slug.split("-").map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
 }

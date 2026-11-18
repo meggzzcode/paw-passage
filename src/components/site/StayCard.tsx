@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { TreePine, Home, Waves, Sparkles, MapPin, type LucideIcon } from "lucide-react";
 import type { Stay } from "@/content/stays/types";
 import { stayPhoto } from "@/lib/images";
-import { townName } from "@/content/destinations";
+import { townName, stateAbbr } from "@/content/destinations";
 import { stayTypeLabels } from "@/lib/filters";
 import { describeFee } from "@/lib/stay-format";
 import { PreviewBadge } from "./StatusBadge";
@@ -26,7 +26,7 @@ export function StayCard({ stay }: { stay: Stay }) {
         {img ? <img src={img.card ?? img.src} alt={img.alt} loading="lazy" decoding="async" width={1600} height={1008} className="aspect-[4/3] w-full object-cover" /> : (
           <div className="flex aspect-[4/3] w-full flex-col items-center justify-center gap-2 bg-gradient-to-br from-secondary to-accent/40 text-primary">
             <Icon className="size-10" aria-hidden />
-            <p className="text-sm font-medium">{townName(stay.town)}</p>
+            <p className="text-sm font-medium">{townName(stay.town)}, {stateAbbr(stay.state)}</p>
             <p className="text-xs text-muted-foreground">Photos are on the booking page</p>
           </div>
         )}

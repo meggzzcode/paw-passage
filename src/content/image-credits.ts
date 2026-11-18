@@ -27,4 +27,5 @@ export const imageCredits: ImageCredit[] = [
   { key: "guide-alone", photographer: "Alexis Antoine", unsplashUrl: "https://unsplash.com/photos/a-dog-laying-on-top-of-a-couch-next-to-a-window-tj3KKeRGJ50" },
   { key: "guide-breed", photographer: "Joel Moysuh", unsplashUrl: "https://unsplash.com/photos/adult-tan-and-black-rottweilfer-face-_lJHFKpWDAU" },
   { key: "guide-senior", photographer: "Jack Plant", unsplashUrl: "https://unsplash.com/photos/a-large-black-dog-laying-on-top-of-a-couch-AGKt39kI1Ig" },
+  { key: "guide-damage-charge", photographer: "Jimmy Conover", unsplashUrl: "https://unsplash.com/photos/brown-long-coated-dog-on-car-seat-ajPr3kQBWFw" },
 ];

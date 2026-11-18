@@ -10,7 +10,7 @@ author: Paws & Passage Editors
 publishedOn: 2026-11-18
 lastReviewed: 2026-11-18
 readingMinutes: 13
-heroImage: guide-pet-fees
+heroImage: guide-damage-charge
 faqs:
   - q: How long does a host have to charge me for pet damage after checkout?
     a: Airbnb's help pages say damage claims must be filed within 14 days of checkout, and Vrbo's pages say the host has 14 days after your stay. We could not confirm how strictly either platform enforces that in practice.

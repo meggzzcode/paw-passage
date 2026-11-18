@@ -31,6 +31,8 @@ relatedGuides:
   - how-vacation-rental-pet-fees-work
   - bringing-a-dog-to-a-no-pets-rental
   - can-you-leave-a-dog-alone-in-a-vacation-rental
+relatedProducts:
+  - kurgo-mud-dog-travel-shower
 relatedTools:
   - will-my-dog-be-accepted
   - pet-cost-check

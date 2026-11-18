@@ -31,6 +31,11 @@ relatedGuides:
   - can-you-leave-a-dog-alone-in-a-vacation-rental
   - what-a-dog-really-costs-on-a-vacation-rental
   - puppy-at-a-vacation-rental
+relatedProducts:
+  - orvis-embossed-sherpa-throw
+  - kurgo-mud-dog-travel-shower
+  - adventure-medical-kits-dog-wipes
+  - petsafe-happy-ride-bench-seat-cover
 relatedTools:
   - checklist
   - pet-cost-check

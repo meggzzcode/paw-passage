@@ -38,6 +38,8 @@ export const guideSchema = z.object({
   heroAlt: optText,
   faqs: z.array(z.object({ q: nonEmpty, a: nonEmpty })).default([]),
   relatedGuides: z.array(z.string()).default([]),
+  // Product ids from content/products.yml shown as "Gear for this trip" after the article. Unknown ids stop the build.
+  relatedProducts: z.array(nonEmpty).max(4, "can list at most 4 products").default([]),
   relatedTools: z.array(z.enum(["checklist", "pet-cost-check", "will-my-dog-be-accepted", "packing-list"])).default([]),
   // An interactive tool shown inside the article, after the text. Unknown names stop the build.
   embeddedTool: z.enum(["pet-cost-workflow"], { message: 'must be "pet-cost-workflow" (the only tool that can be shown inside an article), or left empty' }).optional(),
@@ -60,6 +62,18 @@ export const guideSchema = z.object({
   }),
 });
 export type GuideFrontmatter = z.infer<typeof guideSchema>;
+
+/** Problems with guides' relatedProducts: more than 4, or ids that are not in content/products.yml. Used at build time. */
+export function relatedProductProblems(guides: { slug: string; relatedProducts?: string[] }[], productIds: Iterable<string>): string[] {
+  const known = new Set(productIds);
+  const out: string[] = [];
+  for (const g of guides) {
+    const ids = g.relatedProducts ?? [];
+    if (ids.length > 4) out.push(`${g.slug}: relatedProducts lists ${ids.length} products; the most allowed is 4`);
+    for (const id of ids) if (!known.has(id)) out.push(`${g.slug}: relatedProducts names "${id}", which is not a product id in content/products.yml`);
+  }
+  return out;
+}
 
 // ---- Stays. "yes / no / not-confirmed" choices keep "we don't know" distinct from "no". ----
 const tri = z.enum(["yes", "no", "not-confirmed"]).default("not-confirmed");

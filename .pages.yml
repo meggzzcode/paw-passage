@@ -157,6 +157,10 @@ content:
         label: Related articles (the web-address names of other articles)
         type: string
         list: true
+      - name: relatedProducts
+        label: "Gear for this trip (product ids from the Products file, at most 4; shown after the article)"
+        type: string
+        list: true
       - name: relatedTools
         label: Related tools
         type: select

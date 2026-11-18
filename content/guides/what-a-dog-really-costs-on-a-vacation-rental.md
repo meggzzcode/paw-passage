@@ -33,6 +33,10 @@ relatedGuides:
   - vacation-rentals-with-no-pet-fee
   - how-many-dogs-can-you-bring-to-a-vacation-rental
 embeddedTool: pet-cost-workflow
+relatedProducts:
+  - ruffwear-quencher-bowl
+  - kurgo-splash-free-wander-bowl
+  - petmate-silicone-travel-bowl-duo
 relatedTools:
   - pet-cost-check
   - checklist

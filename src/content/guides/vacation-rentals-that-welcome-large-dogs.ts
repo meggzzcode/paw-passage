@@ -123,6 +123,7 @@ Next step: put your dog's weight into the [will my dog be accepted tool](/tools/
     "vacation-rentals-with-no-dog-weight-limit",
     "pet-friendly-listing-red-flags",
   ],
+  relatedProducts: ["petsafe-happy-ride-extra-long-ramp", "kong-bench-seat-cover-hammock-xl", "petsafe-happy-ride-hitch-step"],
   relatedTools: ["checklist", "pet-cost-check"],
   sources: [
     {

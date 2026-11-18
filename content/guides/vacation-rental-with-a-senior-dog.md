@@ -37,6 +37,11 @@ relatedGuides:
   - airbnb-pet-damage-charge-after-checkout
   - how-many-dogs-can-you-bring-to-a-vacation-rental
   - puppy-at-a-vacation-rental
+relatedProducts:
+  - petsafe-happy-ride-folding-ramp
+  - petsafe-happy-ride-side-door-steps
+  - petsafe-happy-ride-hitch-step
+  - kurgo-loft-wander-dog-bed
 relatedTools:
   - checklist
   - pet-cost-check

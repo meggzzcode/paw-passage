@@ -3,6 +3,7 @@ import { getGuide, isPublic, loadGuide } from "@/content/guides";
 import { guideHero, srcSetForKey } from "@/lib/images";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { Markdown, articleHeadings } from "@/components/site/Markdown";
+import { RelatedProducts } from "@/components/site/RelatedProducts";
 import { GearPicks } from "@/components/site/GearPicks";
 import { AffiliateNotice } from "@/components/site/AffiliateNotice";
 import { GuideCard } from "@/components/site/GuideCard";
@@ -121,6 +122,7 @@ function GuidePage() {
               {g.sources.map((s) => <li key={s.url}><a href={s.url} target="_blank" rel="noopener noreferrer" className="text-primary underline">{s.title}</a> <span className="text-muted-foreground">({s.publisher}, accessed {s.accessedOn})</span></li>)}
             </ol>
           </section>
+          {g.relatedProducts && g.relatedProducts.length > 0 && <RelatedProducts productIds={g.relatedProducts} />}
         </div>
         <aside className="no-print hidden space-y-6 lg:block lg:sticky lg:top-24 lg:self-start">
           <TableOfContents headings={headings} variant="sidebar" />

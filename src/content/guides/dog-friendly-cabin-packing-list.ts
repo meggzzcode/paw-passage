@@ -153,6 +153,7 @@ Turn this into your own checklist with the [packing list tool](/tools/packing-li
     { q: "What should I do if my dog may have swallowed antifreeze?", a: "Contact a veterinarian, emergency veterinary hospital, ASPCA Animal Poison Control at 888-426-4435, or Pet Poison Helpline at 855-764-7661 immediately. ASPCA's antifreeze guidance says to get the dog to a veterinary hospital right away, as signs can be missed early. [[9]](https://www.aspca.org/news/digging-deeper-getting-facts-dangers-antifreeze-and-your-pets) Do not induce vomiting unless a veterinary professional directs you. Keep the product label available if possible; a consultation fee may apply." },
   ],
   relatedGuides: ["vacation-rental-secure-fenced-yard", "pet-friendly-vacation-rental-checklist", "how-many-dogs-can-you-bring-to-a-vacation-rental", "new-years-eve-with-a-dog-in-a-vacation-rental", "christmas-week-in-a-cabin-with-a-dog"],
+  relatedProducts: ["gunner-long-haul-bed", "kurgo-collaps-a-bowl", "kurgo-loft-wander-dog-bed"],
   relatedTools: ["checklist", "pet-cost-check"],
   sources: [
     { title: "Bear Safety: Storing Food", url: "https://www.nps.gov/articles/bearsafetyfood.htm", publisher: "National Park Service", accessedOn: "2026-11-16" },

@@ -230,6 +230,7 @@ When a link is an affiliate link it is marked sponsored and the page says so; re
     "vacation-rentals-that-welcome-large-dogs",
     "how-many-dogs-can-you-bring-to-a-vacation-rental",
   ],
+  relatedProducts: ["ruffwear-load-up-car-harness", "kurgo-enhanced-strength-tru-fit", "kurgo-backseat-barrier", "petsafe-happy-ride-dog-barrier"],
   relatedTools: ["checklist", "pet-cost-check"],
   sources: [
     {

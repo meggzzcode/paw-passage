@@ -9,7 +9,7 @@ import { readdirSync, readFileSync, existsSync, statSync } from "node:fs";
 import { join, basename, resolve } from "node:path";
 import { parse as parseYaml } from "yaml";
 import { transformWithOxc, type Plugin, type ViteDevServer } from "vite";
-import { guideSchema, stayYamlSchema, toStay, placeYamlSchema, toPlace, affiliatesSchema, settingsSchema } from "../src/content/schema";
+import { guideSchema, stayYamlSchema, toStay, placeYamlSchema, toPlace, affiliatesSchema, settingsSchema, relatedProductProblems } from "../src/content/schema";
 import { guideIsPublic, stayIsPublic, placeIsPublic } from "../src/content/publish-rule";
 import { destinations } from "../src/content/destinations";
 import { productsSchema, productReferenceProblems } from "../src/content/products-schema";
@@ -287,6 +287,9 @@ export function loadContent(root: string, includeUnpublished: boolean, opts: { s
   const refProblems = productReferenceProblems(pparsed.data.products, aparsed.data.links);
   if (refProblems.length) throw new ContentError(`\n\nContent problem in content/products.yml:\n${refProblems.map((x) => `  - ${x}`).join("\n")}\n`);
 
+  const rpProblems = relatedProductProblems(guides as { slug: string; relatedProducts?: string[] }[], productIds);
+  if (rpProblems.length) throw new ContentError(`\n\nContent problem in content/guides (relatedProducts):\n${rpProblems.map((x) => `  - ${x}`).join("\n")}\n`);
+
   const sfile = join(dir, "settings.yml");
   const sparsed = settingsSchema.safeParse(existsSync(sfile) ? readYamlFile(sfile) : {});
   if (!sparsed.success) throw new ContentError(formatIssues("content/settings.yml", sparsed.error));
@@ -369,6 +372,8 @@ export function contentPlugin(): Plugin {
           }
           const legacy = await loadLegacyGuides(root);
           for (const l of legacy) this.addWatchFile(l.file);
+          const lp = relatedProductProblems(legacy.map((l) => l.guide as { slug: string; relatedProducts?: string[] }), data.products.map((p) => p.id));
+          if (lp.length) throw new ContentError(`\n\nContent problem in src/content/guides (relatedProducts):\n${lp.map((x) => `  - ${x}`).join("\n")}\n`);
           for (const f of readdirSync(join(root, "content", "guides"))) this.addWatchFile(join(root, "content", "guides", f));
           // Development and tests keep the full text in the list (nothing to save there); a production build ships summaries only.
           const all = [...legacy.map((l) => l.guide), ...content];

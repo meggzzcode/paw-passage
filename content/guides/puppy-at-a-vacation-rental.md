@@ -32,6 +32,9 @@ relatedGuides:
   - how-vacation-rental-pet-fees-work
   - how-many-dogs-can-you-bring-to-a-vacation-rental
   - bringing-a-dog-to-a-no-pets-rental
+relatedProducts:
+  - kurgo-heather-booster-seat
+  - petmate-precision-pet-soft-side-play-yard
 relatedTools:
   - will-my-dog-be-accepted
   - packing-list

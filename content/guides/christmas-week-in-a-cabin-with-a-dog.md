@@ -27,6 +27,10 @@ relatedGuides:
   - how-vacation-rental-pet-fees-work
   - can-you-leave-a-dog-alone-in-a-vacation-rental
   - how-many-dogs-can-you-bring-to-a-vacation-rental
+relatedProducts:
+  - ruffwear-climate-changer-fleece
+  - ruffwear-polar-trex-boots
+  - ruffwear-timberline-fuse-vest
 relatedTools:
   - packing-list
   - checklist

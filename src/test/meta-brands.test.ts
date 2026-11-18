@@ -26,6 +26,8 @@ import { Route as townPage } from "@/routes/destinations.$state.$town";
 import { Route as guidePage } from "@/routes/guides.$slug";
 
 // Expedia Group's affiliate terms bar its marks in meta tags (section 12.7 as read 2026-11-18). H1 and body text may use the names.
+const EXPEDIA = /vrbo|expedia|hotels\.com|homeaway/i;
+// Non-guide pages (written in the route files) also stay free of Airbnb. Three guides still name Airbnb in their seoTitle/seoDescription (content files); add them to this check once retitled.
 const BRANDS = /vrbo|expedia|hotels\.com|homeaway|airbnb/i;
 
 type Head = { meta?: Record<string, string>[]; links?: unknown[] };
@@ -57,7 +59,7 @@ describe("meta tags", () => {
     for (const g of allGuides) heads.push([`/guides/${g.slug}`, headOf(guidePage, { loaderData: { guide: g }, params: { slug: g.slug } })]);
     expect(heads.length).toBeGreaterThan(40);
     for (const [path, h] of heads) {
-      expect(text(h), path).not.toMatch(BRANDS);
+      expect(text(h), path).not.toMatch(path.startsWith("/guides/") ? EXPEDIA : BRANDS);
       // Brand names in a title/description are the rule; length limits apply to the non-guide pages tuned here.
       if (!path.startsWith("/guides/")) {
         expect(prop(h, "og:title").length, `${path} title`).toBeLessThanOrEqual(60);

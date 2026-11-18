@@ -18,7 +18,7 @@ export const Route = createFileRoute("/gear/$category")({
     const c = loaderData ? getGearCategory(loaderData.slug) : undefined;
     if (!c) return { meta: [{ title: "Page not found" }, { name: "robots", content: "noindex" }] };
     const h = pageHead({
-      title: `${c.name}: Dog Gear We Researched`,
+      title: `${c.name} Gear for Dogs`,
       description: `Researched dog travel gear for ${c.name.toLowerCase()}, with the maker's own specs, sources and what we could not confirm. Not tested by us.`,
       path: `/gear/${params.category}`,
       noindex: !categoryIsLive(c.slug),

@@ -10,6 +10,13 @@ import { pageHead, breadcrumbLd, jsonLd, townHasVerifiedStay } from "@/lib/seo";
 import { hasStays } from "@/lib/launch";
 import { Stay22Map } from "@/components/site/Stay22Map";
 
+/** Meta descriptions stay within 155 characters: use the full text if it fits, else the blurb, else the blurb cut at a word. */
+function fitDescription(full: string, short: string) {
+  if (full.length <= 155) return full;
+  if (short.length <= 155) return short;
+  return `${short.slice(0, 152).replace(/\s+\S*$/, "")}...`;
+}
+
 export const Route = createFileRoute("/destinations/$state/$town")({
   loader: ({ params }) => {
     const d = getState(params.state);
@@ -21,7 +28,7 @@ export const Route = createFileRoute("/destinations/$state/$town")({
     if (!loaderData) return { meta: [{ title: "Destination not found" }, { name: "robots", content: "noindex" }] };
     const { d, t } = loaderData;
     const path = `/destinations/${params.state}/${params.town}`;
-    return { ...pageHead({ title: `Dog-friendly ${t.name}: planning notes`, description: `${t.blurb} What to check before booking a dog-friendly stay in ${t.name}.`, path, noindex: !townHasVerifiedStay(t.slug) }), scripts: [breadcrumbLd([{ name: "Destinations", path: "/destinations" }, { name: d.name, path: `/destinations/${d.slug}` }, { name: t.name, path }]), { type: "application/ld+json", children: jsonLd({ "@context": "https://schema.org", "@type": "TouristDestination", name: `${t.name}, ${d.name}`, description: t.blurb }) }] };
+    return { ...pageHead({ title: `Dog-friendly ${t.name}: planning notes`, description: fitDescription(`${t.blurb} What to check before booking a dog-friendly stay in ${t.name}.`, t.blurb), path, noindex: !townHasVerifiedStay(t.slug) }), scripts: [breadcrumbLd([{ name: "Destinations", path: "/destinations" }, { name: d.name, path: `/destinations/${d.slug}` }, { name: t.name, path }]), { type: "application/ld+json", children: jsonLd({ "@context": "https://schema.org", "@type": "TouristDestination", name: `${t.name}, ${d.name}`, description: t.blurb }) }] };
   },
   component: TownPage,
 });

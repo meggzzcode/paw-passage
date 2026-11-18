@@ -402,6 +402,57 @@ content:
                 - { value: product, label: "A product" }
           - { name: notes, label: Notes to yourself, type: text }
 
+  # ------------------------------------------------------------ Products (gear)
+  - name: products
+    label: Products (travel essentials)
+    type: file
+    path: content/products.yml
+    format: yaml
+    operations:
+      create: false
+      delete: false
+    fields:
+      - name: products
+        label: "Products. No prices, ratings or 'tested' claims. A category page appears once it has 3 active products."
+        type: object
+        list: true
+        fields:
+          - { name: id, label: "Short name (lowercase letters, numbers and hyphens). Never change it once a guide or an affiliate link uses it", type: string, required: true }
+          - { name: name, label: Product name, type: string, required: true }
+          - { name: brand, label: Brand, type: string, required: true }
+          - name: categories
+            label: "Categories (the first one is the main one)"
+            type: select
+            list: true
+            required: true
+            options:
+              values:
+                - { value: road-trips, label: "Road trips" }
+                - { value: cabin-vacations, label: "Cabin vacations" }
+                - { value: beach-vacations, label: "Beach vacations" }
+                - { value: senior-dogs, label: "Senior dogs" }
+                - { value: large-dogs, label: "Large dogs" }
+                - { value: multiple-dogs, label: "Multiple dogs" }
+                - { value: travel-safety, label: "Travel safety" }
+                - { value: feeding-and-hydration, label: "Feeding and hydration" }
+                - { value: travel-comfort, label: "Travel comfort" }
+          - { name: summary, label: "What it is, in plain words", type: text, required: true }
+          - { name: keySpecs, label: "What the maker states (one fact per line, taken from the source below)", type: string, list: true }
+          - name: specSource
+            label: Where the facts came from
+            type: object
+            fields:
+              - { name: title, label: Page title, type: string, required: true }
+              - { name: url, label: "Page address (starts with https://)", type: string, required: true }
+              - { name: publisher, label: Publisher, type: string, required: true }
+              - { name: accessedOn, label: "Date you read it (YYYY-MM-DD)", type: string, required: true }
+          - { name: manufacturerUrl, label: "Maker's page for this product (plain link, starts with https://)", type: string }
+          - { name: retailerUrl, label: "A plain retailer page (not an affiliate link). Used only if there is no maker page", type: string }
+          - { name: retailerName, label: "Retailer name (for the button)", type: string }
+          - { name: lastVerified, label: "Date you last re-read the source page (YYYY-MM-DD)", type: string, required: true }
+          - { name: active, label: "Show this product? (untick to hide it everywhere but keep the record)", type: boolean }
+          - { name: affiliateId, label: "Affiliate link name. Leave EMPTY unless Affiliate links has an approved entry with this name", type: string }
+
   # ------------------------------------------------------------ Business settings
   - name: settings
     label: Business settings

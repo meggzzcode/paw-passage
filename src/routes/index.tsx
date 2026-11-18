@@ -14,6 +14,7 @@ import { pageHead } from "@/lib/seo";
 import { site } from "@/config/site";
 import { hasStays } from "@/lib/launch";
 import { policyStats } from "@/lib/policy-stats";
+import { liveCategories } from "@/content/gear-hub";
 
 export const Route = createFileRoute("/")({
   head: () => pageHead({
@@ -54,6 +55,7 @@ function Home() {
   const featuredGuides = [...preferred, ...guides.filter((g) => !preferred.includes(g))].slice(0, 4);
   const stays = visibleStays().slice(0, 3);
   const anyStays = hasStays();
+  const gearTiles = liveCategories().filter((c) => ["road-trips", "travel-safety", "feeding-and-hydration"].includes(c.slug));
 
   function onSearch(e: React.FormEvent) {
     e.preventDefault();
@@ -147,6 +149,23 @@ function Home() {
           ))}
         </div>
       </section>
+
+      {gearTiles.length > 0 && (
+      <section className="container-page mt-20">
+        <div className="flex items-end justify-between gap-4">
+          <div><h2 className="text-3xl md:text-4xl">Travel essentials</h2><p className="mt-3 max-w-2xl text-muted-foreground">Researched gear for the drive and the rental. Not tested by us, no prices, sources on every card.</p></div>
+          <Link to="/gear" className="text-sm font-medium text-primary hover:underline">See all →</Link>
+        </div>
+        <div className="mt-8 grid gap-4 sm:grid-cols-3">
+          {gearTiles.map((c) => (
+            <Link key={c.slug} to="/gear/$category" params={{ category: c.slug }} className="rounded-lg border p-5 hover:bg-muted">
+              <h3 className="text-xl">{c.name}</h3>
+              <p className="mt-2 text-sm text-muted-foreground">{c.tagline}</p>
+            </Link>
+          ))}
+        </div>
+      </section>
+      )}
 
       <section className="container-page mt-24">
         <div className="flex items-end justify-between gap-4">

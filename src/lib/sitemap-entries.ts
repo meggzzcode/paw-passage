@@ -3,11 +3,12 @@ import { allGuides, isPublic } from "@/content/guides";
 import { visibleStays } from "@/content/stays";
 import { visiblePlaces } from "@/content/places";
 import { dogTypes, dogTypeIsLive } from "@/content/dog-types";
+import { hasGear, liveCategories } from "@/content/gear-hub";
 
 export const staticPaths = [
   "/", "/stays", "/destinations", "/guides", "/tools",
   "/tools/checklist", "/tools/pet-cost-check", "/tools/will-my-dog-be-accepted", "/tools/packing-list", "/data/pet-policies",
-  "/about", "/contact", "/list-your-property", "/affiliate-disclosure", "/privacy", "/terms", "/editorial-standards",
+  "/about", "/contact", "/list-your-property", "/affiliate-disclosure", "/privacy", "/terms", "/editorial-standards", "/methodology", "/corrections",
 ];
 
 /** Only public, indexable pages: published guides, verified stays. Never drafts or samples. */
@@ -30,6 +31,11 @@ export function sitemapEntries(): { path: string; lastmod?: string }[] {
   }
   out.push({ path: "/dogs" });
   for (const d of dogTypes.filter(dogTypeIsLive)) out.push({ path: `/dogs/${d.slug}` });
+  // The gear hub and its category pages are indexable only once a category has enough products (see src/content/gear-hub.ts).
+  if (hasGear()) {
+    out.push({ path: "/gear" });
+    for (const c of liveCategories()) out.push({ path: `/gear/${c.slug}` });
+  }
   for (const g of allGuides.filter(isPublic)) out.push({ path: `/guides/${g.slug}`, lastmod: g.lastReviewed });
   for (const s of liveStays) out.push({ path: `/stays/${s.slug}`, ...(s.lastVerified ? { lastmod: s.lastVerified } : {}) });
   return out;

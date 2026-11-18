@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { nav, site } from "@/config/site";
 import { hasStays, hasPlaces } from "@/lib/launch";
+import { hasGear } from "@/content/gear-hub";
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
@@ -17,7 +18,10 @@ export function SiteHeader() {
   }, [open]);
   const stays = hasStays();
   const places = hasPlaces();
-  const items = nav.filter((n) => (stays || n.to !== "/stays") && (places || n.to !== "/dog-rules"));
+  const base: { to: string; label: string }[] = nav.filter((n) => (stays || n.to !== "/stays") && (places || n.to !== "/dog-rules"));
+  // "Gear" sits between Guides and Tools once the travel essentials hub has a live category.
+  const toolsAt = base.findIndex((n) => n.to === "/tools");
+  const items = hasGear() ? [...base.slice(0, toolsAt < 0 ? base.length : toolsAt), { to: "/gear", label: "Gear" }, ...base.slice(toolsAt < 0 ? base.length : toolsAt)] : base;
   return (
     <header className="no-print sticky top-0 z-40 border-b border-border/70 bg-background/90 backdrop-blur">
       <div className="container-page flex h-16 items-center justify-between gap-6">

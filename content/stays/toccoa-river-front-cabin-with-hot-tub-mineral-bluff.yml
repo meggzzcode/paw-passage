@@ -3,24 +3,66 @@ name: Toccoa River Front Cabin with Hot Tub (Mineral Bluff)
 type: cabin
 state: georgia
 town: mineral-bluff
-summary: Riverfront two-bedroom cabin with a hot tub and a fenced pet area; one
-  small dog allowed.
-description: Listed on Vrbo on the Toccoa River, with a covered hot tub and fire
-  pit. The pet policy says one well-behaved pet under 20 lbs is allowed. A
-  second pet needs prior approval and an extra fee, and pets over 20 lbs are
-  considered with prior approval. The listing mentions a closed fenced area for
-  pets. Not yet confirmed with the host.
+summary: Two-bedroom riverside cabin with a hot tub; up to 2 dogs, 20 lb limit per pet.
+description: Two-bedroom cabin for up to 4 guests in Mineral Bluff, steps from the river, with a hot tub, a fire pit, a deck and porch, and a garden. The listing says dogs are allowed, with a limit of 2 and a maximum of 20 lbs per pet. It does not state a pet fee or breed rules, and it does not clearly describe a fenced yard; one guest mentioned using a portable gate on the deck. Details come from the booking page, read on 2026-11-18, and have not been confirmed with the host.
 sleeps: 4
 bedrooms: 2
-largeDogsOk: not-confirmed
+maxDogs: 2
+weightLimitLbs: 20
+largeDogsOk: "no"
 fencedYard: not-confirmed
-fenceNotes: "Listing says: closed fenced area for pets. Height and gate not stated."
-privateOutdoor: not-confirmed
+privateOutdoor: yes
 petFee: not-confirmed
 breedRestrictions: not-confirmed
 beach: false
 mountain: false
-hotTub: not-confirmed
+hotTub: "yes"
 photoPermission: false
 sourceUrl: https://www.vrbo.com/4929336
+bathrooms: 3
+beds:
+  - "Bedroom 1: 1 king bed"
+  - "Bedroom 2: 1 queen bed"
+amenityGroups:
+  - title: Kitchen and dining
+    items:
+      - Kitchen with refrigerator
+      - Separate dining area
+      - Barbecue grill
+  - title: Comfort
+    items:
+      - Air conditioning
+      - Hot tub
+      - Fire pit
+  - title: Outdoors
+    items:
+      - Deck or patio
+      - Porch or lanai
+      - Balcony
+      - Garden
+      - Outdoor play area
+  - title: Bathroom
+    items:
+      - "Bathroom 1: bathtub or shower, jetted bathtub, toilet"
+      - "Bathrooms 2 and 3: shower and toilet"
+      - "Soap, towels, shampoo and hair dryer provided"
+  - title: Parking and access
+    items:
+      - On-site parking
+locationNote: On the river in Mineral Bluff, Fannin County, Georgia, steps from the water, with Blue Ridge about a 12-minute drive away per guest reviews.
+distances:
+  - "Toccoa/Ocoee River: about a 1-minute walk"
+  - "Chattahoochee National Forest: about 10 minutes by car"
+  - "Blue Ridge Lake: about 12 minutes by car"
+  - "Blue Ridge Scenic Railway: about 17 minutes by car"
+  - "Nearby restaurants: about 7 to 13 minutes by car"
+checkIn: "4:30 PM"
+checkOut: "10:00 AM"
+accessNotes:
+  - "Stairs are not described. One guest review calls the driveway fairly steep and suggests four-wheel drive may help."
+guestNotes:
+  - "Guests praise the clean, well-stocked home and a responsive host."
+  - "The peaceful river setting, deck fishing and tubing are popular; wildlife such as deer and a beaver were seen."
+  - "Guests with dogs reported their pets were comfortable, and one noted the leather furniture is pet-friendly."
+  - "One guest said fishing was slow because of river levels, and another called the driveway steep."
 affiliateId: vrbo-4929336

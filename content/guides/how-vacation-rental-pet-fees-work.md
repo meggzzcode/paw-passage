@@ -189,6 +189,8 @@ An ordinary cleaning charge and a pet charge can both appear. Airbnb says pet fe
 
 ## How Airbnb and Vrbo display pet fees
 
+To compare a few real listings side by side, you can [start a pet-friendly search on Vrbo](aff:vrbo) and use its pet filter.
+
 If you are comparing platforms, this is what the official help pages say, and only that. Both are help pages written for hosts and travelers, not records of what any given listing will show.
 
 | | Airbnb | Vrbo |

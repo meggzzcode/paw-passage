@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { site } from "@/config/site";
 import { hasStays, hasPlaces, hasApprovedAffiliates } from "@/lib/launch";
+import { affiliateLinks } from "@/content/affiliates";
 
 const cols = [
   { title: "Explore", links: [["/stays", "Stays"], ["/destinations", "Destinations"], ["/guides", "Guides"], ["/dog-rules", "Dog rules"], ["/tools", "Tools"]] },
@@ -34,6 +35,7 @@ export function SiteFooter() {
       <div className="border-t border-primary-foreground/15">
         <div className="container-page flex flex-col gap-2 py-6 text-xs text-primary-foreground/65 md:flex-row md:justify-between">
           <p>© {new Date().getFullYear()} {site.name}.{hasApprovedAffiliates() && <> Some links may be affiliate links. See our <Link to="/affiliate-disclosure" className="underline">disclosure</Link>.</>}</p>
+          {affiliateLinks.some((l) => l.approved && /vrbo/i.test(l.network)) && <p className="mt-1 text-xs text-muted-foreground">VRBO is a trademark or registered trademark of Expedia, Inc.</p>}
           <p>Always confirm pet policies with the host before booking.</p>
         </div>
       </div>

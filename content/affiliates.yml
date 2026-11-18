@@ -2,6 +2,6 @@ links:
   - id: vrbo
     network: Vrbo
     url: https://vrbo.com/affiliate/hdPLmiF
-    approved: false
+    approved: true
     kind: stay
-    notes: "Paused 2026-11-18: using Stay22 for now instead of Expedia Group directly. Switch back to approved only if we rejoin the Expedia program."
+    notes: "Generic Vrbo program link (Expedia Group Travel Creator). Use it in article text as aff:vrbo. For a specific stay, generate a deeplink to that listing in the Vrbo hub, paste it UNCHANGED as a new link (for example vrbo-3016263) and set the stay's booking link to it."

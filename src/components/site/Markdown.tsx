@@ -21,7 +21,7 @@ marked.use({
       if (aff) {
         const link = getApprovedLink(aff[1]);
         if (!link) return text;
-        return `<a data-aff="${escapeHtml(aff[1]!)}" data-partner="${escapeHtml(link.network)}" href="${escapeHtml(link.url)}" target="_blank" rel="sponsored nofollow noopener noreferrer">${text}</a>`;
+        return `<a data-aff="${escapeHtml(aff[1]!)}" data-partner="${escapeHtml(link.network)}" href="${escapeHtml(link.url)}" target="_blank" rel="sponsored nofollow noopener">${text}</a>`;
       }
       const url = safeUrl(href);
       if (!url) return text;

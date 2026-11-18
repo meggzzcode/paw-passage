@@ -21,7 +21,7 @@ describe("inline affiliate links in article text", () => {
   it("an APPROVED link shows as a sponsored link that opens in a new tab", () => {
     const out = html("Try the [Heather Hammock](aff:kurgo-heather-hammock) for the back seat.");
     expect(out).toContain('href="https://www.amazon.com/dp/EXAMPLE?tag=test-20"');
-    expect(out).toContain('rel="sponsored nofollow noopener noreferrer"');
+    expect(out).toContain('rel="sponsored nofollow noopener"');
     expect(out).toContain('target="_blank"');
     expect(out).toContain('data-aff="kurgo-heather-hammock"');
     expect(out).toContain(">Heather Hammock</a>");

@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import { TreePine, Home, Waves, Sparkles, MapPin, type LucideIcon } from "lucide-react";
 import type { Stay } from "@/content/stays/types";
 import { stayPhoto } from "@/lib/images";
 import { townName } from "@/content/destinations";
@@ -7,7 +8,9 @@ import { describeFee } from "@/lib/stay-format";
 import { PreviewBadge } from "./StatusBadge";
 
 export function StayCard({ stay }: { stay: Stay }) {
-  const img = stayPhoto(stay);
+  // A photo shows only when we hold the owner's permission. Otherwise: a plain panel, never a stock picture of a real property.
+  const img = stay.photoPermission && (stay.image || stay.imageUpload) ? stayPhoto(stay) : null;
+  const Icon: LucideIcon = ({ cabin: TreePine, "vacation-home": Home, cottage: Home, "beach-house": Waves, unique: Sparkles } as const)[stay.type] ?? MapPin;
   const chips: string[] = [];
   if (stay.fencedYard === "full") chips.push("Fully fenced yard");
   else if (stay.fencedYard === "partial") chips.push("Partly fenced");
@@ -18,7 +21,13 @@ export function StayCard({ stay }: { stay: Stay }) {
   return (
     <Link to="/stays/$slug" params={{ slug: stay.slug }} className="group block overflow-hidden rounded-lg border border-border bg-card shadow-card transition hover:-translate-y-0.5">
       <div className="relative">
-        <img src={img.card ?? img.src} alt={stay.status === "sample" || !stay.photoPermission ? "Stock photo, not the property" : img.alt} loading="lazy" decoding="async" width={1600} height={1008} className="aspect-[4/3] w-full object-cover" />
+        {img ? <img src={img.card ?? img.src} alt={img.alt} loading="lazy" decoding="async" width={1600} height={1008} className="aspect-[4/3] w-full object-cover" /> : (
+          <div className="flex aspect-[4/3] w-full flex-col items-center justify-center gap-2 bg-gradient-to-br from-secondary to-accent/40 text-primary">
+            <Icon className="size-10" aria-hidden />
+            <p className="text-sm font-medium">{townName(stay.town)}</p>
+            <p className="text-xs text-muted-foreground">Photos are on the booking page</p>
+          </div>
+        )}
         <div className="absolute left-3 top-3 flex gap-2">
           {stay.status === "sample" && <PreviewBadge>Sample, preview only</PreviewBadge>}
           {stay.status === "unverified" && <span className="rounded-full bg-background/90 px-2.5 py-0.5 text-xs font-semibold text-terracotta">Not yet verified</span>}

@@ -28,7 +28,7 @@ export const Route = createFileRoute("/stays/$slug")({
 
 function StayPage() {
   const { stay: s } = Route.useLoaderData();
-  const img = stayPhoto(s);
+  const img = s.photoPermission && (s.image || s.imageUpload) ? stayPhoto(s) : null;
   const facts: [string, string][] = [
     ["Dogs allowed", s.maxDogs === null ? "Not confirmed" : `Up to ${s.maxDogs}`],
     ["Large dogs", yesNo(s.largeDogsOk)],
@@ -61,10 +61,17 @@ function StayPage() {
           <h1 className="mt-2 text-4xl md:text-5xl">{s.name}</h1>
           <p className="mt-3 text-lg text-muted-foreground">{s.summary}</p>
         </div>
-        <div><BookingButton stay={s} /></div>
+        <div>{img ? <BookingButton stay={s} /> : null}</div>
       </header>
-      <img src={img.src} alt={s.photoPermission ? img.alt : "Stock photo, not a photo of this property"} width={1600} height={1008} className="mt-8 aspect-[16/8] w-full rounded-xl object-cover" />
-      {!s.photoPermission && <p className="mt-2 text-xs text-muted-foreground">Stock photo for illustration. Not a photo of this property.</p>}
+      {img ? (
+        <img src={img.src} alt={img.alt} width={1600} height={1008} className="mt-8 aspect-[16/8] w-full rounded-xl object-cover" />
+      ) : (
+        <div className="mt-8 rounded-xl border border-border bg-gradient-to-br from-secondary to-accent/40 p-6 md:p-8">
+          <p className="font-display text-xl">Photos of this stay</p>
+          <p className="mt-1 max-w-2xl text-sm text-muted-foreground">The photos belong to the host, so we do not copy them here. You can see every photo, the floor plan and live availability on the booking page.</p>
+          <div className="mt-4"><BookingButton stay={s} /></div>
+        </div>
+      )}
       <div className="mt-12 grid gap-12 md:grid-cols-[1.4fr_1fr]">
         <div>
           <h2 className="text-2xl">About this stay</h2>

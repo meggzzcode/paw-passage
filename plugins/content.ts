@@ -191,11 +191,7 @@ export function loadContent(root: string, includeUnpublished: boolean, opts: { s
       if (slugs.has(`stay:${slug}`)) throw new ContentError(`\n\nTwo stays share the web address "${slug}".\n`);
       slugs.add(`stay:${slug}`);
       const s = parsed.data;
-      if (!s.image && !s.imageUpload) {
-        const msg = `\n\nContent problem in ${file}:\n  - pick a built-in photo or upload one\n`;
-        if (skipDraftPhotoProblem(file, msg, notLive, skipBrokenDrafts)) continue;
-        throw new ContentError(msg);
-      }
+      // A stay needs no photo: without one the pages show a clear "photos are on the booking page" panel instead of a stock picture.
       if (s.affiliateId && !affiliateIds.has(s.affiliateId)) {
         const msg = `\n\nContent problem in ${file}:\n  - the booking link "${s.affiliateId}" does not exist in Affiliate links\n`;
         if (notLive && skipBrokenDrafts) {

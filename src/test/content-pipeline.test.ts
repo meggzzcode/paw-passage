@@ -15,7 +15,7 @@ let root = "";
 // The real guide, with its links to other articles removed (the temporary test project has no other articles).
 const cleanGuide = () => {
   const fs = require("node:fs") as typeof import("node:fs");
-  return fs.readFileSync(realGuide, "utf8").replace(/relatedGuides:\n(  - .*\n)+/, "relatedGuides: []\n");
+  return fs.readFileSync(realGuide, "utf8").replace(/relatedGuides:\n(  - .*\n)+/, "relatedGuides: []\n").replace(/\]\(aff:[a-z0-9-]+\)/g, "](https://example.com)");
 };
 const guideWith = (edit: (t: string) => string) => edit(cleanGuide());
 
@@ -199,21 +199,21 @@ describe("content build step", () => {
     rmSync(join(root, "src"), { recursive: true, force: true });
   });
 
-  it("an unfinished stay's photo never blocks the build, but a verified stay still needs a valid one", () => {
+  it("a stay needs no photo; a photo that is named but missing never blocks an unfinished stay, but still stops a verified one", () => {
     reset();
     mkdirSync(join(root, "src/lib"), { recursive: true });
     writeFileSync(join(root, "src/lib/images.ts"), 'export const images = {\n  "real-photo": { src: a, alt: "x" },\n} as const;\n');
     const draft = stayFixture().replace(/^image:.*\n/m, "");
     const verified = draft.replace("status: unverified", "status: verified\nlastVerified: 2026-11-16");
     writeFileSync(join(root, "content/stays/draft.yml"), draft);
-    expect(loadContent(root, false).stays).toEqual([]);
+    expect(loadContent(root, false).stays).toHaveLength(1);
     writeFileSync(join(root, "content/stays/draft.yml"), draft.replace(/^name:/m, "image: not-a-photo\nname:"));
     expect(loadContent(root, false).stays).toEqual([]);
     writeFileSync(join(root, "content/stays/draft.yml"), draft.replace(/^name:/m, "imageUpload: /uploads/missing.jpg\nname:"));
     expect(loadContent(root, false).stays).toEqual([]);
     reset();
     writeFileSync(join(root, "content/stays/verified.yml"), verified);
-    expect(() => loadContent(root, false)).toThrow(/pick a built-in photo/);
+    expect(loadContent(root, false).stays).toHaveLength(1);
     writeFileSync(join(root, "content/stays/verified.yml"), verified.replace(/^name:/m, "image: not-a-photo\nname:"));
     expect(() => loadContent(root, false)).toThrow(/not-a-photo[\s\S]*does not exist/);
     writeFileSync(join(root, "content/stays/verified.yml"), verified.replace(/^name:/m, "imageUpload: /uploads/missing.jpg\nname:"));

@@ -139,7 +139,7 @@ describe("Compare tool is gone", () => {
 });
 
 describe("embeddedTool front matter", () => {
-  const real = readFileSync(join(process.cwd(), "content/guides/how-vacation-rental-pet-fees-work.md"), "utf8").replace(/relatedGuides:\n(  - .*\n)+/, "relatedGuides: []\n");
+  const real = readFileSync(join(process.cwd(), "content/guides/how-vacation-rental-pet-fees-work.md"), "utf8").replace(/relatedGuides:\n(  - .*\n)+/, "relatedGuides: []\n").replace(/\]\(aff:[a-z0-9-]+\)/g, "](https://example.com)");
   const run = (text: string) => {
     const root = mkdtempSync(join(tmpdir(), "paws-embed-"));
     try {

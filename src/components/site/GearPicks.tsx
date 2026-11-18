@@ -46,7 +46,7 @@ export function GearPicks({ picks }: { picks: GearPick[] }) {
                   <a
                     href={btn.url}
                     target="_blank"
-                    rel={affiliate ? "sponsored nofollow noopener noreferrer" : "noopener noreferrer"}
+                    rel={affiliate ? "sponsored nofollow noopener" : "noopener noreferrer"}
                     onClick={() => trackProductClick({ product: product!.id, partner: affiliate ? btn.network : "maker website", url: btn.url, page: loc.pathname })}
                     className={
                       affiliate

@@ -298,14 +298,13 @@ content:
       - { name: nearby, label: Nearby dog-friendly places, type: string, list: true }
       - { name: houseRules, label: House rules about dogs, type: string, list: true }
       - name: image
-        label: Photo (choose a built-in photo)
+        label: "Stock photo (leave empty: we do not show stock pictures of real properties)"
         type: select
-        default: guide-ga-cabins
-        description: "Use this OR upload the property's photo in the next box. A photo is required: if none is chosen the site cannot build."
+        required: false
         options:
           values: [guide-ga-cabins, guide-ca-beach, guide-fenced-yard, guide-two-dogs, guide-large-dogs]
-      - { name: imageUpload, label: "Photo (upload - only with the owner's permission)", type: image }
-      - { name: photoPermission, label: "Do we have the owner's permission to use this photo?", type: boolean }
+      - { name: imageUpload, label: "Photo (upload ONLY with the owner's written permission; leave empty otherwise)", type: image }
+      - { name: photoPermission, label: "Do we have the owner's written permission to show this photo?", type: boolean }
       - { name: sourceUrl, label: "Where the facts came from (listing link)", type: string }
       - { name: lastVerified, label: "Date the host confirmed the details", type: date }
       - { name: affiliateId, label: "Booking link (the 'id' of a link in Affiliate links)", type: string }

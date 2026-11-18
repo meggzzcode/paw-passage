@@ -1,7 +1,7 @@
 ---
 title: "Airbnb vs Vrbo With a Dog: Pet Fees and Rules Compared"
-seoTitle: "Airbnb vs Vrbo With a Dog: Fees Compared"
-seoDescription: "Airbnb vs Vrbo with a dog: how each handles pet filters, fees, pet counts and service animals, plus how to compare the real total for two listings."
+seoTitle: "Two Booking Sites Compared for Dog Owners"
+seoDescription: "Airbnb and the other big vacation rental site compared for dog owners: pet filters, fees, pet counts and service animals, and how to compare the real total."
 dek: See what each platform's own help pages say about pets, what we could not confirm, and how to price two listings fairly before you pay.
 category: Planning
 states: []
@@ -155,6 +155,8 @@ One example from our team, labelled as one listing: in November 2026, on one Blu
 For more on the four fee units and deposits, see our [pet fees guide](/guides/how-vacation-rental-pet-fees-work).
 
 ## Airbnb or Vrbo pet policy: side by side
+
+When you are ready to compare real listings, you can [search pet-friendly stays on Vrbo](aff:vrbo) and read each listing's house rules before you book.
 
 | Question | Airbnb | Vrbo |
 | --- | --- | --- |

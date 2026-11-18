@@ -1,0 +1,212 @@
+# Candidates for the cabin-rental cluster. Inactive until reviewed. No affiliate links, prices, ratings or "tested" claims.
+# keySpecs are facts read on the page named in specSource (accessed 2026-11-18). Extra keys: valueRole, whyItFitsTravel,
+# valueEvidence, articlePlacement, amazonCheck.
+candidates:
+  - id: north-states-mypet-universal-petgate
+    name: MyPet Universal Petgate
+    brand: North States
+    categories: [cabin-vacations]
+    summary: A plastic gate for doorways and hallways that mounts by pressure or, optionally, to a solid surface with hardware.
+    keySpecs:
+      - Models 8619/8625; 26 inches high
+      - Adjusts to fit openings 26 to 42 inches wide
+      - Pressure mount (no tools or measuring) or hardware mount to a solid surface such as a wooden stud; page says not to use anchors in drywall
+      - Plastic, light gray; rounded edges; wall cups add security and the maker says to use them
+      - Page says it should never be the top of a stairway when held only by tension
+    specSource: {title: North States MyPet Universal Petgate, url: "https://northstatesind.com/north-states-mypet-universal-petgate/", publisher: North States, accessedOn: 2026-11-18}
+    manufacturerUrl: "https://northstatesind.com/north-states-mypet-universal-petgate/"
+    lastVerified: 2026-11-18
+    active: false
+    manufacturerClaimsVsIndependentTesting: none cited. Containment strength is not claimed beyond "designed to contain pets".
+    relatedGuides: [can-you-leave-a-dog-alone-in-a-vacation-rental, vacation-rental-secure-fenced-yard, vacation-rental-with-a-reactive-dog]
+    valueRole: best-overall
+    whyItFitsTravel: Pressure mounting lets a renter close off a doorway without drilling, and the width range covers most interior openings.
+    valueEvidence: Maker spec only (no reviewer cited). Wide 26-42 in range plus a no-tools pressure option; no warranty stated on the page.
+    articlePlacement: "vacation-rental-with-a-reactive-dog, 'Doors, entry and exit routes' (a gate to separate dog from the front door); can-you-leave-a-dog-alone-in-a-vacation-rental, 'Can I use a crate, and what about the furniture?' (a gate as a host-approved alternative to a crate); portable-dog-fence guide, gate section."
+    amazonCheck: "Confirm exact model (8619 vs 8625), that the listing is sold by North States or Amazon, width range 26-42 in, and the pressure-mount stairs warning is not contradicted. 26 in is short for a jumper: say so in copy."
+
+  - id: north-states-mypet-paws-portable-petgate
+    name: MyPet Paws Portable Petgate
+    brand: North States
+    categories: [cabin-vacations]
+    summary: A compact plastic pressure-mount gate that needs no hardware or tools, for hallways and doorways.
+    keySpecs:
+      - Models 8870/8871/8871SC; 23 inches high
+      - Adjusts to fit openings 26 to 40 inches wide
+      - Plastic; pressure mount with no hardware; EZ track moves the panels to fit the opening
+      - No-mar rubber bumpers; bumpers clear molding up to 4 inches high; made in the USA per the page
+      - Page says model 8871 should not be used at the top of a stairway
+      - No warranty and no weight or dog-size limit listed
+    specSource: {title: North States MyPet Paws Portable Petgate, url: "https://northstatesind.com/north-states-mypet-paws-portable-petgate/", publisher: North States, accessedOn: 2026-11-18}
+    manufacturerUrl: "https://northstatesind.com/north-states-mypet-paws-portable-petgate/"
+    lastVerified: 2026-11-18
+    active: false
+    manufacturerClaimsVsIndependentTesting: none cited. The page does not say which pets it suits.
+    relatedGuides: [vacation-rental-with-a-reactive-dog, can-you-leave-a-dog-alone-in-a-vacation-rental, portable-dog-fence-and-playpen-guide-for-rentals]
+    valueRole: best-value
+    whyItFitsTravel: Nothing to install and no drilling, so it packs and sets up in a rental in seconds.
+    valueEvidence: Maker spec only. It is the simplest option here (no hardware, no tools, no-mar bumpers). Value is a judgement from specs, not from a reviewer; at 23 in it suits small or calm dogs only.
+    articlePlacement: "portable-dog-fence-and-playpen-guide-for-rentals, gate section as the low-effort option; vacation-rental-with-a-reactive-dog, 'Doors, entry and exit routes' for small dogs."
+    amazonCheck: Confirm model 8870/8871 and colour, seller, and 23 in height; confirm the listing does not claim stair or large-dog use the maker page does not make.
+
+  - id: richell-convertible-elite-pet-gate-6-panel
+    name: Convertible Elite Pet Gate/Crate, 6 Panel (H6)
+    brand: Richell
+    categories: [cabin-vacations]
+    summary: A six-panel hardwood gate that the maker says converts to a pen, a freestanding gate or a room divider.
+    keySpecs:
+      - Item 94901 (H6); six panels, each 35.8 in high; pen footprint 68.9 x 31.9 in
+      - Maker recommends the H6 for small to large dogs, 8.8 to 88 lbs
+      - Hardwood construction (species not named); 1 1/2 in between slats
+      - Lockable door with a 25.6 in opening; panels lock at 90 and 180 degrees
+      - Item weight 64.4 lbs; rubber feet on each panel (Richell FAQ)
+      - Page does not say whether a wire top or floor tray is included, and gives no warranty terms
+    specSource: {title: Convertible Elite 6 Panel Dog Gates, url: "https://www.richellusa.com/pet-dog-gates/convertible-pet-gate-elite-6-panel/", publisher: Richell USA, accessedOn: 2026-11-18}
+    manufacturerUrl: "https://www.richellusa.com/pet-dog-gates/convertible-pet-gate-elite-6-panel/"
+    lastVerified: 2026-11-18
+    active: false
+    manufacturerClaimsVsIndependentTesting: none cited. Weight rating is the maker's.
+    relatedGuides: [portable-dog-fence-and-playpen-guide-for-rentals, vacation-rental-with-a-reactive-dog]
+    valueRole: premium
+    whyItFitsTravel: One piece of gear can be a pen in the living room or a divider across an open-plan cabin, and the 88 lb rating covers larger dogs.
+    valueEvidence: Maker spec - published 88 lb rating and 35.8 in height, taller than the 26-28 in gates and pens we already carry. Heavy (64.4 lbs), so it suits a car trip only.
+    articlePlacement: "portable-dog-fence-and-playpen-guide-for-rentals, 'premium / taller' note beside the MidWest and Carlson pens; vacation-rental-secure-fenced-yard, 'no fence' fallback."
+    amazonCheck: Confirm 6-panel H6 (35.8 in) not the 31.5 in version (lower weight rating), colour, seller, and whether a top or tray is sold separately. Check the host allows a wooden pen on floors.
+
+  - id: midwest-icrate-dog-crate
+    name: iCrate Dog Crate
+    brand: MidWest Homes for Pets
+    categories: [cabin-vacations]
+    summary: A folding wire crate with divider panel and removable pan, in single- or double-door versions.
+    keySpecs:
+      - SKU 1500; sizes 18, 22, 24, 30, 36, 42 and 48 in; single or double door
+      - Wire frame; slide-bolt latch with a Locking Tip and a Paw Block
+      - Includes divider panel and a removable leak-proof plastic pan
+      - Rubber feet to protect floors; sets up in seconds and folds flat (maker)
+      - Page gives no wire gauge, weights, folded dimensions or warranty
+    specSource: {title: iCrate Dog Crate, url: "https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/", publisher: MidWest Homes for Pets, accessedOn: 2026-11-18}
+    manufacturerUrl: "https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/"
+    lastVerified: 2026-11-18
+    active: false
+    manufacturerClaimsVsIndependentTesting: none cited. Reviewers on the page report latch and edge complaints; those are customer opinions, not specs.
+    relatedGuides: [can-you-leave-a-dog-alone-in-a-vacation-rental, bringing-a-dog-to-a-no-pets-rental, dog-friendly-cabin-packing-list]
+    valueRole: best-value
+    whyItFitsTravel: It folds flat for the car and its pan and rubber feet protect rental floors, for a dog that already accepts a crate.
+    valueEvidence: Maker spec - seven sizes with divider, pan and rubber feet included, fold-flat. Maker lists no warranty on this page, so value rests on included features only.
+    articlePlacement: "can-you-leave-a-dog-alone-in-a-vacation-rental, 'Can I use a crate, and what about the furniture?' (only for a crate-trained dog, per the ASPCA point already in that section); dog-friendly-cabin-packing-list, crate row."
+    amazonCheck: Confirm size and single vs double door for the dog, seller, that the pan and divider are included, and re-read the maker page for latch wording. Do not call it escape-proof.
+
+  - id: midwest-ultima-pro-dog-crate
+    name: Ultima Pro Dog Crate
+    brand: MidWest Homes for Pets
+    categories: [cabin-vacations]
+    summary: A heavier folding steel crate with slide-bolt latches and a removable pan, in five sizes.
+    keySpecs:
+      - SKU 724UPX; sizes 24, 30, 36, 42 and 48 in
+      - Maker text says "professional-gauge, heavy duty steel construction"; no numeric gauge listed
+      - Slide-bolt latches; the page text is inconsistent on the number of doors
+      - Removable leak-proof pan; easy to fold, no tools, detachable handles
+      - No weight, folded size or warranty on the page
+    specSource: {title: Ultima Pro Dog Crate, url: "https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/ultima-pro/", publisher: MidWest Homes for Pets, accessedOn: 2026-11-18}
+    manufacturerUrl: "https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/ultima-pro/"
+    lastVerified: 2026-11-18
+    active: false
+    manufacturerClaimsVsIndependentTesting: none cited. "Heavy duty" is the maker's wording.
+    relatedGuides: [can-you-leave-a-dog-alone-in-a-vacation-rental, dog-friendly-cabin-packing-list]
+    valueRole: premium
+    whyItFitsTravel: A sturdier option for a dog that pushes on a lighter wire crate, with handles for carrying.
+    valueEvidence: Maker spec only ("heavy duty steel", detachable handles). No test cited; weight not stated so do not claim it is heavier.
+    articlePlacement: "can-you-leave-a-dog-alone-in-a-vacation-rental, crate section, one line as a sturdier alternative to the iCrate."
+    amazonCheck: Confirm which size and door count the listing sells, seller, and that nothing implies chew-proof or escape-proof.
+
+  - id: furhaven-quilted-twill-waterproof-bed-furniture-protector
+    name: Quilted Twill Waterproof Bed/Furniture Protector
+    brand: Furhaven
+    categories: [cabin-vacations, cleaning-and-rental-protection, travel-comfort]
+    summary: A quilted, reversible protector with a waterproof core and non-skid back for beds, couches and cars.
+    keySpecs:
+      - Sizes Small/Twin, Medium/Full, Large/Queen, Jumbo/King; dimensions only in an image we could not read
+      - Maker states an impermeable waterproof core; coated quilted surface "resists spills and stains"; brushed polyester sleep surface
+      - Non-skid back panel
+      - Care: machine wash cold separately, no bleach, air or low-heat dry
+      - Maker advertises a 60-day warranty; terms not on the page
+      - Page showed "Sold out" when read; colours Brownstone, Gray, Nile Blue
+    specSource: {title: Quilted Twill Waterproof Bed/Furniture Protector, url: "https://furhaven.com/products/home-travel-quilted-twill-waterproof-bed-furniture-protector", publisher: Furhaven, accessedOn: 2026-11-18}
+    manufacturerUrl: "https://furhaven.com/products/home-travel-quilted-twill-waterproof-bed-furniture-protector"
+    lastVerified: 2026-11-18
+    active: false
+    manufacturerClaimsVsIndependentTesting: none cited. Waterproof wording is the maker's. Our guides must still tell readers to check that the host allows dogs on furniture.
+    relatedGuides: [airbnb-pet-damage-charge-after-checkout, dog-friendly-cabin-packing-list]
+    valueRole: best-overall
+    whyItFitsTravel: A washable layer that goes between a dog and a rental sofa or bed, if the host allows it, and fits in a car.
+    valueEvidence: Maker spec - waterproof core, non-skid back, machine washable, advertised 60-day warranty. Complements the existing Orvis throw, which makes no water claim.
+    articlePlacement: "airbnb-pet-damage-charge-after-checkout, relatedProducts list and the 'Evidence that helps' section (prevention); dog-friendly-cabin-packing-list, furniture row."
+    amazonCheck: "Maker page showed sold out: confirm the Amazon listing is in stock, the exact product (not the Reversible or Water-Resistant Paw Print versions), the size for the intended sofa, and that the seller is Furhaven or Amazon."
+
+  - id: soggy-doggy-super-shammy-towel
+    name: Super Shammy Towel
+    brand: Soggy Doggy
+    categories: [cleaning-and-rental-protection, travel-comfort]
+    summary: A microfiber chenille drying towel with hand pockets, one size, for wet or muddy dogs.
+    keySpecs:
+      - 31 x 14 in, one size
+      - Microfiber chenille, 80% polyester and 20% polyamide
+      - Page lists "Quick drying & odor free" and hand pockets
+      - Care: machine wash alone, no chlorine bleach or fabric softener, tumble dry low
+      - Page gives no absorbency figure and no warranty (links a returns policy)
+    specSource: {title: Soggy Doggy Super Shammy, url: "https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey", publisher: Soggy Doggy Productions, accessedOn: 2026-11-18}
+    manufacturerUrl: "https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey"
+    lastVerified: 2026-11-18
+    active: false
+    manufacturerClaimsVsIndependentTesting: none cited.
+    relatedGuides: [airbnb-pet-damage-charge-after-checkout, dog-friendly-cabin-packing-list]
+    valueRole: best-overall
+    whyItFitsTravel: A small washable towel that dries paws and coats at the cabin door so less mud reaches the rental's floors and furniture.
+    valueEvidence: Maker spec only (one size, machine washable, hand pockets). Pairs with the existing wipes and travel shower, which cover different jobs.
+    articlePlacement: "airbnb-pet-damage-charge-after-checkout, 'Do this first' or prevention note next to wipes and shower; dog-friendly-cabin-packing-list, arrival-at-the-door row."
+    amazonCheck: Confirm colour and 31 x 14 in size, seller (Soggy Doggy or Amazon), and that it is not a lookalike generic shammy.
+
+  - id: soggy-doggy-microfiber-doormat
+    name: Microfiber Doormat (no bone)
+    brand: Soggy Doggy
+    categories: [cabin-vacations, cleaning-and-rental-protection]
+    summary: A microfiber chenille doormat for muddy paws, in Large and Extra Large, with a non-slip backing.
+    keySpecs:
+      - Large 26 x 36 in; Extra Large 36 x 60 in; 1 in pile height
+      - Microfiber chenille, 80% polyester and 20% polyamide
+      - Maker describes it as "super absorbent and dirt trapping!"; non-slip backing
+      - Machine washable and dryer safe; fold in half with backing together before washing
+      - No warranty on the page
+    specSource: {title: Plain Chocolate Absorbent Doormat, url: "https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate", publisher: Soggy Doggy Productions, accessedOn: 2026-11-18}
+    manufacturerUrl: "https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate"
+    lastVerified: 2026-11-18
+    active: false
+    manufacturerClaimsVsIndependentTesting: none cited. Absorbency wording is the maker's.
+    relatedGuides: [airbnb-pet-damage-charge-after-checkout, dog-friendly-cabin-packing-list]
+    valueRole: best-overall
+    whyItFitsTravel: Goes inside the cabin door to catch paw mud before it reaches floors; folds for the car and washes in a machine.
+    valueEvidence: Maker spec - machine washable and dryer safe with a stated backing-care rule. Backing durability is the weak point customers raise on retailer pages, so keep claims modest.
+    articlePlacement: "airbnb-pet-damage-charge-after-checkout, 'Evidence that helps' prevention line; dog-friendly-cabin-packing-list, entry row."
+    amazonCheck: Confirm Large vs XL and colour, seller, and that the listing shows the non-slip backing. Check whether the host wants a mat on a hard-floor entry.
+
+  - id: bearvault-bv450-jaunt
+    name: BV450 Jaunt Bear Canister
+    brand: BearVault
+    categories: [cabin-vacations, outdoor-adventures, feeding-and-hydration]
+    summary: A hard-sided, screw-lid food canister that the maker lists as passing IGBC grizzly testing, made for backcountry use.
+    keySpecs:
+      - Maker's testing page lists the BV450 as IGBC certified (No. 5339) and WMI certified (No. BB0022)
+      - Maker page says "Every model must withstand over 60 minutes of active bear contact without access"
+      - IGBC itself says certification does not make a product bear-proof and it must be used correctly, such as locked
+      - Weight, volume and material not read on the product page this session (page text had no specs)
+    specSource: {title: Bear Canister Testing, url: "https://bearvault.com/pages/bear-testing", publisher: BearVault, accessedOn: 2026-11-18}
+    manufacturerUrl: "https://bearvault.com/products/bv450"
+    lastVerified: 2026-11-18
+    active: false
+    manufacturerClaimsVsIndependentTesting: IGBC and WMI certification is stated on the maker's page; IGBC's own page was read and does not list this product, so confirm the number on the official IGBC list before quoting it. The product page quotes IGBC #5340 per a search snippet, so the number is inconsistent across sources.
+    relatedGuides: [dog-friendly-cabin-packing-list]
+    valueRole: best-overall
+    whyItFitsTravel: Dog food smells attract bears and rodents; some cabin areas ask guests to store food in certified containers.
+    valueEvidence: Named testing bodies (IGBC, WMI) cited by the maker; IGBC program page read. No reviewer cited for value.
+    articlePlacement: "dog-friendly-cabin-packing-list, new 'Cabins in bear country' note beside the existing food-storage picks; only if the host or land manager's rules mention bears."
+    amazonCheck: Confirm exact model BV450, that the listing is sold by BearVault or Amazon, and the certification number on the IGBC list. Confirm capacity fits a dog's food for the stay; it is sized for a person's food.

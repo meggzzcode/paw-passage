@@ -140,6 +140,16 @@ research:
       checkedOn: 2026-11-18
       coversWell: A vehicle-by-dog-count table, never letting multiple dogs ride loose, named harnesses and crates, and stopping about every two hours.
       gaps: Affiliate links and unsourced vehicle table; no test methodology behind its "top performer" language, no crate sizing for pairs, and nothing on heat.
+    - url: https://www.k9ofmine.com/?p=4139466
+      title: "How to Travel with a Large Dog in the Car: 9 Tips & Tricks!"
+      checkedOn: 2026-11-18
+      coversWell: Where a large dog rides, restraint options (harness, crate, seat belt, barrier, tether), a third-party crash-tested harness tip, ramps, seat protectors, heat and temperature checks, and potty breaks.
+      gaps: Written for one large dog; no layout for two dogs, no crash-test caveats beyond a one-line "buy crash-tested" tip, no anchor or combined-weight discussion, no legal notes, and only one statistic is sourced.
+    - url: https://tractive.com/blog/en/safety/driving-with-a-dog
+      title: "How To Travel With A Dog: Tips For A Fun Road Journey"
+      checkedOn: 2026-11-18
+      coversWell: Seat-belt harnesses, tethers, crates sized to stand and turn in, metal barriers for large dogs, avoiding the front seat, stops about every two hours, and never leaving a dog in a parked car.
+      gaps: Single-dog view that also promotes the maker's GPS trackers; no multi-dog layout, no large-breed sizing or weight guidance, no crash-test standards, no sources, no anchor limits, and only a general mention that some places require restraints, with no statutes.
   gapsFound:
     - Multi-dog pages are thin on evidence; the single-dog restraint guides never address two dogs.
     - No page we read explains the weight an anchor set carries when two crates sit side by side.

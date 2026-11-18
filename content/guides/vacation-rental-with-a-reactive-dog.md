@@ -1,6 +1,6 @@
 ---
 title: "Vacation Rental With a Reactive Dog: How to Choose a Place That Won't Set Your Dog Off"
-seoTitle: Rental for a Reactive Dog: How to Vet One
+seoTitle: "Rental for a Reactive Dog: How to Vet One"
 seoDescription: "Booking a rental for a dog that barks or lunges? How to vet neighbors, walls, sightlines, gates and routes, what to tell the host, and a first-day plan."
 dek: Neighbors, shared walls, sightlines, doors and walking routes, what to tell the host, and a calm first day.
 category: Planning

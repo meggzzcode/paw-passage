@@ -6,7 +6,7 @@ import { dogTypes, dogTypeIsLive } from "@/content/dog-types";
 
 export const staticPaths = [
   "/", "/stays", "/destinations", "/guides", "/tools",
-  "/tools/checklist", "/tools/pet-cost-check",
+  "/tools/checklist", "/tools/pet-cost-check", "/tools/will-my-dog-be-accepted",
   "/about", "/contact", "/list-your-property", "/affiliate-disclosure", "/privacy", "/terms", "/editorial-standards",
 ];
 

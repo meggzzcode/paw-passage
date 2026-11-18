@@ -159,7 +159,7 @@ function Popover({ item, reason, isPacked, onToggle, onClose, pathname, alignRig
               <div key={p.id}>
                 <p className="font-medium leading-tight">{p.brand} {p.name}</p>
                 <p className="text-muted-foreground">{p.summary}</p>
-                {btn && <a href={btn.url} target="_blank" rel={aff ? "sponsored nofollow noopener" : "noopener noreferrer"} onClick={() => trackProductClick({ product: p.id, partner: aff ? btn.network : "maker website", url: btn.url, page: pathname })} className={aff ? "mt-1 inline-flex h-9 items-center rounded-full bg-terracotta px-4 font-medium text-terracotta-foreground hover:brightness-95" : "mt-1 inline-flex h-9 items-center rounded-full border border-border px-4 hover:bg-muted"}>{btn.label}</a>}
+                {btn && <a href={btn.url} target="_blank" rel={aff ? "sponsored nofollow noopener" : "nofollow noopener"} onClick={() => trackProductClick({ product: p.id, partner: aff ? btn.network : "maker website", url: btn.url, page: pathname })} className={aff ? "mt-1 inline-flex h-9 items-center rounded-full bg-terracotta-button px-4 font-medium text-terracotta-foreground hover:brightness-95" : "mt-1 inline-flex h-9 items-center rounded-full border border-border px-4 hover:bg-muted"}>{btn.label}</a>}
               </div>
             );
           })}

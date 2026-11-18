@@ -37,7 +37,7 @@ export function RelatedProducts({ productIds, heading = "Gear for this trip" }: 
                       target="_blank"
                       rel={link.rel}
                       onClick={() => trackProductClick({ product: p.id, partner: link.kind === "affiliate" ? (link.network ?? "affiliate") : link.kind === "retailer" ? "retailer website" : "maker website", url: link.url, page: loc.pathname })}
-                      className={link.kind === "affiliate" ? "inline-flex h-10 items-center rounded-full bg-terracotta px-5 font-medium text-terracotta-foreground transition hover:brightness-95" : "inline-flex h-10 items-center rounded-full border border-border bg-background px-5 font-medium text-foreground transition hover:bg-muted"}
+                      className={link.kind === "affiliate" ? "inline-flex h-10 items-center rounded-full bg-terracotta-button px-5 font-medium text-terracotta-foreground transition hover:brightness-95" : "inline-flex h-10 items-center rounded-full border border-border bg-background px-5 font-medium text-foreground transition hover:bg-muted"}
                     >
                       {link.label}
                     </a>

@@ -138,3 +138,17 @@ Re-check on **2026-12-18**, or earlier if `@tanstack/zod-adapter` publishes a re
 - Netlify's actual maximum request URL length.
 - Adapter runtime behaviour on zod 4 (not needed after step 4, since the adapter is no longer called).
 - Whether the lint errors predate the change.
+
+## Outcome (2026-11-18): upgrade APPLIED on branch claude/affiliate-setup (not merged)
+
+COMPLETED and VERIFIED in the repo itself (not a temp copy):
+
+- Changes: zod `^3.25.76` to `^4.6.7`; `@tanstack/zod-adapter` removed (package.json, package-lock.json via npm, bun.lock via `bun install`; `.npmrc` legacy-peer-deps kept). `plugins/content.ts` `formatIssues` typing only. `src/lib/stay-search.ts` and `src/lib/place-search.ts`: `fallback(z.T(), x).default(x)` replaced by `z.T().default(x).catch(x)`. `src/routes/stays.index.tsx` and `dog-rules.index.tsx`: `validateSearch` now takes the schema directly. `src/content/schema.ts` needed no change. No URLs changed.
+- New test `src/test/search-params.test.ts` (12 tests): written and passing on zod 3 BEFORE the upgrade, then passing unchanged on zod 4. It proves missing, invalid, array-like, object, null, oversized-array (50k items) and 1 MB string values give the same defaults and fallbacks for stays and dog-rules.
+- `tsc --noEmit`: clean. `vite build` (NITRO_PRESET=node-server): OK. Served build on port 4190: `/stays?dogs=2` 200, `/dog-rules` 200; `/stays?dogs=abc&weight=zzz` returns 307 to `/stays?weight=zzz` then 200 (the existing stripSearchParams middleware drops invalid values that equal their defaults), likewise for dog-rules. Lovable-style `vite dev` on 5197: `/` 200, `/stays` 200, `/dog-rules` 200, `/stays?dogs=abc` 307 (same redirect), no errors in the log.
+- Full vitest: 447 tests. Under parallel load 4 files timed out at 5 s (gear-hub, places, stay-indexing); they pass when rerun with a longer timeout. Two failures are NOT from this change and come from stay content edited by other workers: `launch-state.test.ts` (town page /destinations/georgia/ellijay is listed in the sitemap) and `meta-brands.test.ts` (stay "lovely-1920s-farmhouse-family-and-pet-friendly-mendocino" has a retailer brand in its meta). Those need the owner of the stay data to fix.
+- Not compared: a byte-for-byte HTTP comparison with a zod 3 build was not run; equivalence rests on the schema tests above.
+
+Audit before (npm audit --omit=dev and full): 1 high, zod <4.6.6, GHSA-mrhx-c7xc-m3w5, "fix available via npm audit fix --force" (not used).
+Audit after (both): `found 0 vulnerabilities`.
+Note: build-time content error wording from zod 4 may differ slightly in editor-facing messages; the real content validated without errors.

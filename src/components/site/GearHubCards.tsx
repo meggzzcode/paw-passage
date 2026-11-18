@@ -62,7 +62,7 @@ export function GearProductCard({ product }: { product: Product }) {
             onClick={() => trackProductClick({ product: product.id, partner: link.kind === "affiliate" ? (link.network ?? "affiliate") : link.kind === "retailer" ? "retailer website" : "maker website", url: link.url, page: loc.pathname })}
             className={
               link.kind === "affiliate"
-                ? "inline-flex h-11 items-center justify-center rounded-full bg-terracotta px-6 font-medium text-terracotta-foreground transition hover:brightness-95"
+                ? "inline-flex h-11 items-center justify-center rounded-full bg-terracotta-button px-6 font-medium text-terracotta-foreground transition hover:brightness-95"
                 : "inline-flex h-11 items-center justify-center rounded-full border border-border bg-background px-6 font-medium text-foreground transition hover:bg-muted"
             }
           >

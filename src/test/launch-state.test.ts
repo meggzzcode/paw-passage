@@ -2,7 +2,8 @@ import { affiliateLinks } from "@/content/affiliates";
 import { describe, it, expect } from "vitest";
 import { sitemapEntries } from "@/lib/sitemap-entries";
 import { hasStays, hasApprovedAffiliates } from "@/lib/launch";
-import { pageHead, townHasVerifiedStay, DEFAULT_SHARE_IMAGE } from "@/lib/seo";
+import { pageHead, townHasVerifiedStay, townIsIndexable, DEFAULT_SHARE_IMAGE } from "@/lib/seo";
+import { destinations } from "@/content/destinations";
 import type { Stay } from "@/content/stays";
 
 // While no verified stay is published, the empty stays pages must stay out of search and out of the sitemap.
@@ -20,7 +21,9 @@ describe("site before the first verified stay", () => {
     expect(paths).not.toContain("/tools/compare");
     expect(paths).toContain("/tools/pet-cost-check");
     // Town pages are in the sitemap exactly when townIsIndexable says so (see stay-indexing.test.ts); thin towns are not.
-    expect(paths).not.toContain("/destinations/georgia/ellijay");
+    for (const d of destinations) for (const t of d.towns) {
+      expect(paths.includes(`/destinations/${d.slug}/${t.slug}`), `${d.slug}/${t.slug}`).toBe(townIsIndexable(d.slug, t.slug));
+    }
     expect(paths).toContain("/guides");
     expect(paths.some((p) => p.startsWith("/guides/"))).toBe(true);
   });

@@ -25,12 +25,11 @@ export const guide: Guide = {
 - Carry offline records, microchip details, and emergency vet and poison control numbers (ASPCA 888-426-4435; Pet Poison Helpline 855-764-7661; a consultation fee may apply).
 - Check for ticks every evening and keep winter heaters, ash, and de-winterizing chemicals away from your dog. [[4]](https://www.cdc.gov/ticks/prevention/preventing-ticks-on-pets.html)
 
-## Before packing: six questions for the host
+## Before packing: five questions for the host
 
-Put these through the booking platform so the answers are saved. Our [host question generator](/tools/pet-cost-check) helps, and the [pet-friendly vacation rental checklist](/guides/pet-friendly-vacation-rental-checklist) covers wider booking checks.
+Put these through the booking platform so the answers are saved. Our [host question generator](/tools/pet-cost-check) and [vacation rental checklist](/guides/pet-friendly-vacation-rental-checklist) help.
 
-- **Where can the dog go?** Furniture, bedroom, deck, and hot-tub-area restrictions.
-- **Can the dog stay alone?** Is crating required, and is there a time limit?
+- **Where can the dog go, and can it stay alone?** Furniture, bedroom, deck and hot-tub restrictions; any crating requirement or time limit.
 - **What separates living and sleeping areas?** Ask for stair photos, doorway widths, and details of open lofts or deck railings.
 - **What does "fenced" mean?** Height, gaps, shared sections, gate latches, direct access from the cabin.
 - **How are wildlife attractants stored?** Indoor food storage, outdoor trash system, current local bear instructions.
@@ -42,7 +41,7 @@ If essential access depends on stairs your dog cannot manage, change the sleepin
 
 Bring:
 
-- Your dog's usual food, measured for every travel and cabin day, plus a reserve sized to how remote the property is.
+- Your dog's usual food, measured for every travel and cabin day, plus a reserve for a remote property.
 - The usual scoop, familiar treats, food and water bowls, a portable bowl, and drinking water for the journey and arrival.
 - Prescribed medication in labeled packaging, written dosing instructions, and any measuring device.
 - A cooler or other storage if the medicine requires it.
@@ -65,7 +64,7 @@ Wi-Fi is not an emergency plan: save key information offline and carry a paper b
 - The cabin's full address and the host's arrival directions.
 - Contacts and routes for nearby veterinary practices and an emergency hospital.
 
-Check the microchip registration before leaving, since a chip number in your phone cannot correct an outdated registry entry. AVMA's travel brochure advises up-to-date ID tags, checking that your microchip registry contact details are current (your veterinarian can help), and packing a recent photograph, vaccination proof, and copies of relevant medical records. [[2]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-travel-with-pet-2023.pdf)
+Check the microchip registration before leaving. AVMA's travel brochure advises up-to-date ID tags, checking that your microchip registry contact details are current (your veterinarian can help), and packing a recent photograph, vaccination proof, and copies of relevant medical records. [[2]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-travel-with-pet-2023.pdf)
 
 Call the emergency practice to confirm hours and overnight staffing, and download the route, including the host's final-approach instructions, while you have service.
 
@@ -82,13 +81,13 @@ Check the rules for each park and trail. Georgia State Parks generally require p
 
 **Barriers.** A portable gate or exercise pen can separate a dog from an entrance, food preparation or an unsuitable room, once you have confirmed opening dimensions and host permission.
 
-For stairs, do not use a pressure-mounted gate at the top of stairs. Use a stair gate only if its maker approves it for that position, which usually means hardware mounting, and get the host's permission before anything is screwed into a wall. If safe installation is impossible, keep the dog downstairs behind another secure boundary or choose different accommodation.
+Never use a pressure-mounted gate at the top of stairs. A stair gate there must be approved by its maker for that position, which usually means hardware mounting, and the host must agree before anything is screwed into a wall. If safe installation is impossible, keep the dog downstairs behind another secure boundary or choose different accommodation.
 
 Bring washable nonslip runners if the host approves. A railed deck is not an enclosure; keep your dog leashed until you have inspected gaps, steps and exits, as our [secure fenced-yard guide](/guides/vacation-rental-secure-fenced-yard) explains.
 
 ## Protecting the rental: bed, throw and towels
 
-Airbnb says that even when pets are allowed you should contact the host to confirm, and gives the example that pets may not be allowed on beds or sofas. [[16]](https://www.airbnb.com/help/article/86) A cover helps you follow a permission the host has given; it does not override a no-dogs-on-furniture rule, and it does not stop claws or chewing. Airbnb's pet-fee page says a pet fee should cover the expected cleaning that comes with hosting pets and separates that from unexpected damage, so hair on a sofa is a different matter from a torn cushion. [[17]](https://www.airbnb.com/help/article/3623)
+Airbnb says that even when pets are allowed you should contact the host to confirm, and gives the example that pets may not be allowed on beds or sofas. [[16]](https://www.airbnb.com/help/article/86) A cover helps you follow a permission the host has given; it does not override a no-dogs-on-furniture rule or stop claws and chewing. Airbnb's pet-fee page says a pet fee should cover the expected cleaning that comes with hosting pets and separates that from unexpected damage, so hair on a sofa is a different matter from a torn cushion. [[17]](https://www.airbnb.com/help/article/3623)
 
 Pack:
 
@@ -98,24 +97,24 @@ Pack:
 - A washable entrance mat if the host permits it, a brush, a cloth for paws, a lint roller, and waste bags.
 - A crate, only if your dog already uses one. A cabin is a poor place to try crating for the first time.
 
-Dry the dog at the door and wipe paws before they cross the floor, and choose a sleeping spot away from the entrance and busy kitchen routes. With two dogs, bring separate beds, bowls and any barriers needed for peaceful meals; see our [two-dog accommodation guide](/guides/traveling-with-two-dogs-accommodation-guide). If an accident happens, blot promptly, follow the property's cleaning instructions and tell the host; stain removers can damage some materials, so check first. Before checkout, collect yard waste and remove loose hair. Our [rental protection gear guide](/guides/dog-friendly-rental-protection-gear-guide) compares washable covers, travel beds and car-seat covers.
+Dry the dog at the door and wipe paws before they cross the floor, and pick a sleeping spot away from the entrance. With two dogs, bring separate beds and bowls; see our [two-dog accommodation guide](/guides/traveling-with-two-dogs-accommodation-guide). If an accident happens, blot promptly, follow the property's cleaning instructions and tell the host; stain removers can damage some materials, so check first. Before checkout, collect yard waste and remove loose hair. Our [rental protection gear guide](/guides/dog-friendly-rental-protection-gear-guide) compares washable covers, travel beds and car-seat covers.
 
 ## A practical canine first-aid kit
 
-First aid helps you respond while arranging veterinary care. AVMA's travel brochure lists a first aid kit and the phone numbers of your veterinarian, a national poison control hotline, and a 24-hour emergency veterinary hospital at your destination. [[2]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-travel-with-pet-2023.pdf) Discuss the contents with your veterinarian, especially if your dog has a condition. A starting list:
+First aid helps you respond while arranging veterinary care. AVMA's travel brochure lists a first aid kit and the phone numbers of your veterinarian, a national poison control hotline, and a 24-hour emergency veterinary hospital at your destination. [[2]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-travel-with-pet-2023.pdf) Discuss the contents with your veterinarian. A starting list:
 
 - Sterile gauze pads, a nonstick dressing, and bandage material your veterinarian has shown you how to use.
 - Saline for wounds or eye flushing (AVMA notes contact-lens saline works for most purposes) [[3]](https://www.avma.org/resources-tools/pet-owners/emergencycare/first-aid-tips-pet-owners).
-- Blunt-ended scissors, tweezers or a tick-removal tool, and disposable gloves.
+- Blunt-ended scissors, tweezers or a tick-removal tool, and gloves.
 - Clean towels, a small flashlight and a copy of your dog's medical record.
 
-AVMA's first-aid brochure advises always contacting your veterinarian or poison control center before inducing vomiting. [[10]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf) Do not try to induce vomiting or give any medication unless a veterinarian or poison control tells you to. Keep any product container available, and check with the veterinarian before using items such as hydrogen peroxide or activated charcoal.
+AVMA's first-aid brochure advises always contacting your veterinarian or poison control center before inducing vomiting. [[10]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf) Do not induce vomiting or give any medication unless a veterinarian or poison control tells you to, and keep any product container handy.
 
 Save the ASPCA Animal Poison Control number, **888-426-4435**; a consultation fee may apply. [[11]](https://www.aspca.org/pet-care/aspca-poison-control) AVMA also lists the Pet Poison Helpline at 855-764-7661, which may also charge. [[10]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf) Keep the packaging or photograph the label and call promptly, before symptoms appear. Replace expired supplies before each trip.
 
 ## Tick prevention and the evening inspection
 
-Pack your veterinarian-recommended preventive, a tick-removal tool, and a bright light.
+Pack your veterinarian-recommended preventive, a tick-removal tool and a bright light.
 
 CDC recommends daily tick checks for pets that go outdoors and prompt removal of attached ticks, highlighting the ears, eyelids, collar area, legs, toes, and tail. It also notes that tick vaccines do not keep dogs from bringing ticks into your home, so keep checking even if your dog is vaccinated or on a preventive. [[4]](https://www.cdc.gov/ticks/prevention/preventing-ticks-on-pets.html)
 
@@ -125,17 +124,17 @@ CDC notes that signs of tickborne disease may not appear for 7 to 21 days or lon
 
 ## Cold weather, wood stoves, and seasonal chemicals
 
-**Heat sources.** Check whether the cabin has a wood stove, fireplace or portable heater, and whether a guard is supplied. Cornell's Riney Canine Health Center advises keeping dogs about three feet from heat sources, not leaving them unsupervised near them, and notes that gates, exercise pens, or a fireplace screen can help. [[5]](https://riney.vet.cornell.edu/member-benefits-health-tips/winter-safety-january-2026) Keep beds and blankets clear, and if you cannot create a safe separation, leave the appliance unused. Keep dogs away from ash containers: Cornell's veterinary college warns that fireplace and wood-stove ashes can burn pets if they contain live embers. [[6]](https://www.vet.cornell.edu/about-us/news/20161215/cvm-cold-weather-tips-pet-owners)
+**Heat sources.** Check whether the cabin has a wood stove, fireplace or portable heater, and whether a guard is supplied. Cornell's Riney Canine Health Center advises keeping dogs about three feet from heat sources and never leaving them unsupervised nearby; gates, exercise pens or a fireplace screen can help. [[5]](https://riney.vet.cornell.edu/member-benefits-health-tips/winter-safety-january-2026) Keep beds and blankets clear, and if you cannot create a safe separation, leave the appliance unused. Cornell's veterinary college warns that fireplace and wood-stove ashes can burn pets if they contain live embers. [[6]](https://www.vet.cornell.edu/about-us/news/20161215/cvm-cold-weather-tips-pet-owners)
 
-**Ice melt.** ASPCA warns that ice-melting chemicals can be dangerous if swallowed and recommends washing and drying paws and belly after winter walks. [[7]](https://www.aspca.org/pet-care/general-pet-care/cold-weather-safety-tips) Cornell's Riney center says good boots fit securely and provide traction, and suggests paw wax for dogs that resist them. [[5]](https://riney.vet.cornell.edu/member-benefits-health-tips/winter-safety-january-2026) 
+**Ice melt.** ASPCA warns that ice-melting chemicals can be dangerous if swallowed and recommends washing and drying paws and belly after winter walks. [[7]](https://www.aspca.org/pet-care/general-pet-care/cold-weather-safety-tips) Cornell's Riney center says good boots fit securely and provide traction. [[5]](https://riney.vet.cornell.edu/member-benefits-health-tips/winter-safety-january-2026)
 
-**Reopened cabins.** Ask whether the cabin has been fully de-winterized and whether chemicals, mothballs, or rodent bait are present. ASPCA's cabin-closing guidance says mothballs can cause stomach upset and, in some types, organ damage, and that pets must not have access to rodenticides; keep packaging so a veterinarian knows the active ingredient. [[8]](https://www.aspca.org/news/pet-safety-tips-closing-down-rv-and-cabin-season)
+**Reopened cabins.** Check whether the cabin has been fully de-winterized and whether chemicals, mothballs or rodent bait are present. ASPCA's cabin-closing guidance says mothballs can cause stomach upset and, in some types, organ damage, and that pets must not have access to rodenticides. [[8]](https://www.aspca.org/news/pet-safety-tips-closing-down-rv-and-cabin-season)
 
 **Antifreeze.** Keep toilet lids closed and block utility spaces until checked. Pet Poison Helpline reports that some cabin owners put antifreeze in toilets to prevent freezing. [[12]](https://www.petpoisonhelpline.com/uncategorized/antifreeze-poisoning-in-dogs-cats-ethylene-glycol-poisoning/) ASPCA says ethylene glycol antifreeze can taste sweet to pets and advises contacting a veterinarian or poison control immediately if ingestion is suspected. [[9]](https://www.aspca.org/news/digging-deeper-getting-facts-dangers-antifreeze-and-your-pets)
 
 ## Before you leave
 
-Trial anything new, such as boots, barriers, crates and restraints, at home first. Load the car so the leash, bags, water, medication, towels and records are within reach, and keep food, medication, bags and a towel handy for the journey back. If you are still choosing a property, our [Georgia cabin-vetting guide](/guides/dog-friendly-cabins-fenced-yards-georgia) shows how to check a fenced yard before you book.
+Trial anything new, such as boots, barriers, crates and restraints, at home first. Keep the leash, bags, water, medication, towels and records within reach in the car, on the way there and back. If you are still choosing a property, our [Georgia cabin-vetting guide](/guides/dog-friendly-cabins-fenced-yards-georgia) shows how to check a fenced yard before you book.
 
 > **How sure we are**
 >

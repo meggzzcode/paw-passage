@@ -14,22 +14,20 @@ export const guide: Guide = {
   "lastReviewed": "2026-11-16",
   "readingMinutes": 9,
   "heroImage": "guide-fenced-yard",
-  "body": `## The short answer
+  "body": `The listing says "fenced yard," and the photo shows a nice lawn. Nothing in that photo tells you where the fence ends, what the gate gap is, or who else can walk through.
 
-- Do not ask "does it have a fence?" Ask what exactly closes the space, who opens each gate, and whether that works for your dog. A lawn photo cannot tell you.
+## The short answer
+
+- Skip "does it have a fence?" and ask what exactly closes the space, who opens each gate, and whether that works for your dog.
 - Check the weakest point: lowest fence height from the dog's side, the ground line, gate gaps and latches, and where two materials meet.
 - Ask for evidence before paying: a sketch, tape-measure photos and a short gate video. Check again on arrival.
 - "Partially fenced" means leash-only unless a separate, fully enclosed area is shown. An invisible or electric fence is not a physical enclosure. [[4]](https://vcahospitals.com/know-your-pet/invisible-fences)
 - A fenced pool yard is not automatically a safe dog yard.
-- Even a good yard needs supervision; no listing makes a dog escape-proof.
-
-A good yard still does not mean the dog can be left alone. See [can you leave a dog alone in a vacation rental](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental) for the house-rule and safety checks.
+- Even a good yard needs supervision, and it does not mean the dog can be left alone; see [can you leave a dog alone in a vacation rental](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental).
 
 ## Start with your dog, not a universal fence height
 
-Write a short containment profile: your dog's size, known escape behavior, reactions to wildlife or passing dogs, and anything that changes in unfamiliar places.
-
-The American Kennel Club's fence guidance says a dog's habits and activity level help determine the right fence, and that dogs who chase wildlife need height and strength. Its escape-prevention advice treats jumping, climbing and digging as different problems. [[1]](https://www.akc.org/expert-advice/home-living/types-dog-fences/) [[2]](https://www.akc.org/expert-advice/home-living/how-to-keep-a-dog-from-escaping-the-yard/) For booking, that becomes specific questions:
+Write a short containment profile: your dog's size, escape habits, reactions to wildlife or passing dogs, and anything that changes in unfamiliar places. The American Kennel Club says a dog's habits and activity level help determine the right fence, and its escape-prevention advice treats jumping, climbing and digging as different problems. [[1]](https://www.akc.org/expert-advice/home-living/types-dog-fences/) [[2]](https://www.akc.org/expert-advice/home-living/how-to-keep-a-dog-from-escaping-the-yard/) For booking, that becomes specific questions:
 
 | Your dog's pattern | What to investigate | What should pause the booking |
 | --- | --- | --- |
@@ -40,84 +38,82 @@ The American Kennel Club's fence guidance says a dog's habits and activity level
 | Rushes gates | Latch operation, visitor access, and a separate enclosed dog area | A single driveway gate used throughout the day |
 | Reacts to outside movement | Sightlines, neighboring dogs, footpaths, and livestock | A shared or see-through boundary beside constant traffic |
 
-These are screening questions, not engineering specifications. No single fence height or gap measurement is safe for every dog, so reject a setup that relies on hoping your dog won't try. For two dogs, assess the better escape artist and the smaller opening-seeker separately; see our [two-dog accommodation guide](/guides/traveling-with-two-dogs-accommodation-guide).
+These are screening questions, not engineering specifications, and no single height or gap is safe for every dog. For two dogs, assess the better escape artist and the smaller opening-seeker separately; see our [two-dog accommodation guide](/guides/traveling-with-two-dogs-accommodation-guide).
 
 ## Decode the listing before you contact the host
 
-Read the description, captions and recent dog-owner reviews. Search for "fence," "gate," "shared," "driveway," "pool" and "unattended," and treat contradictions as questions to resolve.
+Read the description, captions and recent dog-owner reviews for "fence," "gate," "shared," "driveway," "pool" and "unattended," and treat contradictions as questions.
 
 - **"Partially fenced"** means some portion is not enclosed. Unless a separate, fully enclosed area is shown clearly, plan for leash-only use.
-- **"Fenced property"** may describe outer acreage, not a dog-accessible yard. **"Enclosed patio"** may be a small paved space. **"Gated community"** describes a neighborhood entrance, not containment. **"Private yard"** says nothing about fencing.
+- **"Fenced property"** may describe outer acreage, not a dog-accessible yard. **"Enclosed patio"** may be a small paved space, **"gated community"** describes a neighborhood entrance, and **"private yard"** says nothing about fencing.
 - **"Natural boundary"** may be a hedge or terrain change; ask whether a physical barrier continues behind it. **"Dog run"**: request dimensions, surface, shade and access route. **"Secure"** is an opinion until construction and management details are supplied.
-- A screened porch or deck gate needs its own evaluation. Screens are not dog-containment fencing, and decks can have openings or drops. Do not silently substitute one amenity for another.
+- Screens are not dog-containment fencing, and decks can have openings or drops, so a screened porch needs its own evaluation.
+
+## Gated decks, acreage and the filter are not a fenced yard
+
+Airbnb says to contact the host even when a listing allows pets, and its host guidance lists a fenced-in yard or private patio among the pet features guests may want to know about. A pet-friendly filter is not an answer about the enclosure. [[5]](https://www.airbnb.com/help/article/86) [[6]](https://www.airbnb.com/resources/hosting-homes/a/what-you-need-to-know-about-hosting-pets-463)
+
+A gated deck is not a fenced yard. One Ellijay cabin operator says only select cabins have fenced yards, and that some have a gated porch or deck connected to the yard. [[7]](https://slidingrockcabins.com/pet-friendly-cabins/) A deck gate may enclose only the platform and no ground at all, so ask whether it leads into fenced ground or onto open land. Advertised acreage is not enclosed acreage either: another Ellijay operator notes that its creek and trails sit outside the fence and that the fence may not hold every dog. [[8]](https://www.sacredwatersellijay.com/pet-friendly-cabin-rental-ellijay-ga)
+
+Fenced ground still has to be usable. For hillside listings, request ground-level photos in both directions, including from the lowest point toward the house, since wide-angle shots hide slope. Count the steps between the door and the ground, and check surface, drainage, lighting and exposed drops inside the fence. For an older dog, step-free access should be a confirmed requirement rather than a hopeful reading of "main-level bedroom." Our [Georgia cabin-vetting guide](/guides/dog-friendly-cabins-fenced-yards-georgia) applies these checks to North Georgia cabins.
 
 ## Check that the boundary forms a continuous loop
 
-Ask the host to describe a complete circuit from the door your dog will use, around the yard and back, naming each section as fence, wall, building or gate. Where two materials meet matters as much as the tidy stretch in the hero photo.
+Have the host describe a complete circuit from the door your dog will use, around the yard and back, naming each section as fence, wall, building or gate. Where two materials meet matters as much as the tidy stretch in the hero photo. Check corners, hedge ends, gaps beside sheds, spaces under steps and fence-to-house joins, and confirm the fence surrounds the actual rental yard, not a larger area that includes parking, another unit or a public route.
 
-Check corners, hedge ends, gaps beside sheds, spaces under steps, fence-to-house joins and openings behind planting. Confirm the fence surrounds the actual rental yard, not a larger area that includes parking, another unit or a public route.
-
-A house can form part of the boundary, but doors become access points: ask which open into the dog area and who uses them. If reaching the yard means crossing an unfenced driveway or common path, that is a leashed transfer, not direct enclosed access.
+A house can form part of the boundary, but its doors become access points. If reaching the yard means crossing an unfenced driveway or common path, that is a leashed transfer, not direct enclosed access.
 
 ## Measure the weakest section, not the average
 
 - **Height.** Request the minimum fence height measured from the dog's side, especially where the ground rises. Ask for a tape-measure photo at the low point rather than an estimate against a chair.
-- **Climbers.** Ask about both faces of the fence; a smooth exterior may have rails inside. Look for stacked firewood, benches, bins, grills, retaining walls and planters that make a launch point. Discuss moving heavy furniture before booking.
-- **Diggers.** Look along the bottom edge. Ask about soil washout, old tunnels, loose wire and gaps under landscaping, and request the condition of any existing dig protection. A photo cannot show that concealed reinforcement is continuous.
+- **Climbers.** Ask about both faces of the fence; a smooth exterior may have rails inside. Look for stacked firewood, benches, bins, grills, retaining walls and planters that make a launch point.
+- **Diggers.** Look along the bottom edge for soil washout, old tunnels, loose wire and gaps under landscaping. A photo cannot show that concealed reinforcement is continuous.
 
-Do not install stakes, attach mesh, move stones or alter a rented fence without permission. A portable pen is not an automatic substitute for a suitable boundary either; that depends on the dog, construction, surface, weather and supervision.
+Never install stakes, attach mesh, move stones or alter a rented fence without permission.
 
 ## Give gates their own inspection
 
-A fence can be excellent while its gate is the escape route. Ask for the maximum gap beneath the gate, including the hinge and latch ends, and the opening between its edges and posts. Sloping ground can make the gaps differ across one gate.
+A fence can be excellent while its gate is the escape route. Ask for the maximum gap beneath the gate, at the hinge and latch ends and beside the posts; sloping ground can make the gaps differ across one gate.
 
-**The latch.** A gravity latch drops into place, a bolt slides across, and a self-latching mechanism catches when the gate closes. That tells you how a gate is meant to work, not whether it does. Ask whether it closes cleanly, drags, or can be pushed open after appearing shut, and request a short video of it being opened, closed and checked from inside the yard. If there is a secondary lock, ask whether guests may use it. Never add a lock that obstructs emergency access or locks out an authorized user.
+**The latch.** A gravity latch drops into place, a bolt slides across, and a self-latching mechanism catches when the gate closes. That tells you how a gate is meant to work, not whether it does, so request a short video of it being opened, closed and checked from inside the yard. Never add a lock that obstructs emergency access or locks out an authorized user.
 
-**The cleaner-and-driveway problem.** A gate closed for arrival photos may stay open while supplies are unloaded. Ask:
+**The cleaner-and-driveway problem.** A gate closed for arrival photos may stay open while supplies are unloaded. Settle:
 
-- Is the driveway inside the fenced dog area?
-- Will any service visits (cleaners, landscapers, pool staff, deliveries) happen during our stay, and how will we be told before someone opens a gate?
-- Can the dog be kept indoors during those visits?
-- Is there a separate pedestrian gate and enclosed dog space?
-- Who checks that all gates are latched after turnover?
+- Whether the driveway is inside the fenced dog area.
+- Whether cleaners, landscapers, pool staff or deliveries visit during your stay, and how you will be told before someone opens a gate.
+- Whether there is a separate pedestrian gate and enclosed dog space, and who checks that all gates are latched after turnover.
 
 On your own arrival, keep the dog secured while luggage moves: one person on the dog, another on the doors.
 
 ## Shared yards need a different plan
 
-"Shared" can mean a common lawn, a courtyard serving several units, or a garden the owner crosses to reach storage. Ask who has access and whether other dogs use it at the same time; exclusive use of the home does not answer that.
+"Shared" can mean a common lawn, a courtyard serving several units, or a garden the owner crosses to reach storage. Ask who has access and whether other dogs use it at the same time.
 
-If separation from unfamiliar dogs matters, get sole use and access in writing. An informal promise that other guests "usually don't come outside" is not a schedule. Also ask what lies outside: a path, neighboring kennel, road, beach entrance or livestock field. A fence can contain a dog while leaving it exposed to triggers all day, so privacy may matter as much as height.
+If separation from unfamiliar dogs matters, get sole use and access in writing; an informal promise that other guests "usually don't come outside" is not a schedule. Also ask what lies outside, such as a path, kennel, road or livestock field. A fence can contain a dog while leaving it exposed to triggers all day.
 
 ## Invisible and electric fences are not a physical enclosure
 
-If the host says "invisible," "wireless," "GPS" or "electric," ask exactly what they mean. A buried-wire or GPS boundary typically relies on a compatible collar and a learned boundary; electrified livestock fencing is different again. None is a continuous physical dog fence.
-
-If your plan requires a physical enclosure, a virtual boundary does not satisfy it. VCA Animal Hospitals notes that such a fence relies on the dog learning where the boundary is, can fail if something like a collar battery dies, and does not stop stray dogs or wild animals entering the yard. [[4]](https://vcahospitals.com/know-your-pet/invisible-fences) You may still choose such a home for supervised, leashed outdoor time.
+If the host says "invisible," "wireless," "GPS" or "electric," ask exactly what they mean. A buried-wire or GPS boundary relies on a compatible collar and a learned boundary, and none of these is a continuous physical dog fence. VCA Animal Hospitals notes that such a fence relies on the dog learning where the boundary is, can fail if something like a collar battery dies, and does not stop stray dogs or wild animals entering the yard. [[4]](https://vcahospitals.com/know-your-pet/invisible-fences)
 
 ## A fenced pool yard is not necessarily a safe dog yard
 
-A fence around the property can keep a dog in the same space as an accessible pool. Ask for a layout showing whether a separate barrier stands between the dog area and the water, including hot tubs, ponds and other water features.
+A fence around the property can keep a dog in the same space as an accessible pool. Ask for a layout showing whether a separate barrier stands between the dog area and the water, including hot tubs and ponds. CPSC recommends layers of pool protection, including barriers and self-closing, self-latching gates, to prevent unsupervised access by young children; that is child drowning guidance, not a dog-containment certification. [[3]](https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/In-Home-Drowning-Safety-Information-Center)
 
-CPSC recommends layers of pool protection, including barriers and self-closing, self-latching gates, to prevent unsupervised access by young children. That guidance concerns child drowning prevention; it is not a dog-containment certification or proof of legal compliance at a particular rental. [[3]](https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/In-Home-Drowning-Safety-Information-Center)
-
-Our narrower question: can the dog reach the water from the area you plan to use? Do not count a pool cover as an exercise surface or assume a dog can exit an unfamiliar pool. If separation is unclear, choose a different yard or plan leashed access away from the water.
+The narrower question is whether the dog can reach the water from the area you plan to use. If separation is unclear, choose a different yard or plan leashed access away from the water.
 
 ## Request a small evidence pack before paying
 
-Send one organized request and save the response with the exact listing, travel dates and the date the evidence was supplied.
+Send one organized request and save the response with the listing, travel dates and the date the evidence arrived.
 
 - [ ] A simple sketch marking the entire enclosed area and every gate.
-- [ ] Recent wide photographs of all boundary sections.
-- [ ] Close-ups of fence-to-building joins and the ground line.
+- [ ] Recent photographs of all boundary sections, with close-ups of fence-to-building joins and the ground line.
 - [ ] Tape-measure photos of minimum height and maximum openings.
-- [ ] Both sides of gates, including latch and hinge areas.
-- [ ] A short continuous perimeter video, plus the gate closing.
+- [ ] Both sides of gates, plus a short continuous perimeter video and the gate closing.
 - [ ] Confirmation of sole or shared use and scheduled service access.
 - [ ] A layout showing separation from pools, roads, and parking.
 - [ ] Written disclosure of damage, repairs, or changes since the photos.
 
-Use our [host-question builder](/tools/pet-cost-check). Suggested wording: "We are considering these dates with one dog who digs and squeezes under gates. Could you confirm the complete enclosed area, minimum fence height, largest ground-level openings, gate latch arrangements, and anyone else's access? Recent perimeter photos and a gate-closing video would help us decide." Ask for observable facts, not guarantees.
+Use our [host-question builder](/tools/pet-cost-check). Suggested wording: "We are considering these dates with one dog who digs and squeezes under gates. Could you confirm the enclosed area, minimum fence height, largest ground-level openings, gate latches and anyone else's access, with recent perimeter photos and a gate-closing video?" Ask for observable facts, not guarantees.
 
 ## Make a decision without false precision
 
@@ -128,16 +124,23 @@ Use our [host-question builder](/tools/pet-cost-check). Suggested wording: "We a
 | Gate gaps, shared access, or pool separation remain unclear | Pause and request specifics | Unknown is not the same as acceptable |
 | Boundary conflicts with your dog's known abilities | Reject for off-leash use | More enthusiastic wording won't fix the mismatch |
 
-Put comparable facts side by side in your own notes, not a numerical "safety score," and use the [pet cost and host confirmation tool](/tools/pet-cost-check) to compare the real trip budget. The [complete pre-booking checklist](/guides/pet-friendly-vacation-rental-checklist) covers the rules and costs that fencing cannot answer.
+Compare facts side by side in your own notes, not a numerical "safety score." The [complete pre-booking checklist](/guides/pet-friendly-vacation-rental-checklist) covers the rules and costs that fencing cannot answer.
 
 ## Walk the perimeter before unclipping the leash
 
-On arrival, keep the dog leashed or safely indoors with one adult while another checks the yard. Walk every boundary, close and check each gate, and compare it with the evidence you were given. Look for storm damage, new holes, loose boards, sharp edges, discarded food and unfamiliar yard treatments, and ask about anything you cannot identify. Recheck after maintenance visits, severe weather or any change in the gate routine.
+On arrival, keep the dog leashed or indoors with one adult while another walks every boundary, tests each gate and compares it with the evidence you were given. Look for storm damage, new holes, loose boards, sharp edges and discarded food.
 
-If the yard does not match the description, photograph the issue, tell the host through the booking channel promptly and keep the dog away from the problem. Do not assume an immediate repair or refund. Your backup needs to work that evening: leashed toilet breaks, another suitable exercise location, or alternative accommodation.
+If the yard does not match the description, photograph the issue, tell the host through the booking channel and keep the dog away from the problem. A repair or refund is not automatic, so your backup needs to work that evening: leashed toilet breaks, another exercise location, or other accommodation.
 
-Save your arrival checks in the [travel checklist](/tools/checklist). The aim is a yard whose limits you understand, with gates managed consistently and a dog you keep supervising.
-`,
+> **How sure we are**
+>
+> - **Confirmed by a source we cite:** the AKC fence and escape advice, VCA's notes on invisible fences, CPSC's pool-barrier guidance and Airbnb's advice to contact hosts.
+> - **What most people report:** five fence-checking guides from rental and travel sites, mostly UK, read 2026-11-16 (a small, non-random sample): all five skipped service-visit access to the yard.
+> - **Unknown, and who to ask:** whether a particular yard matches its photos. The host can supply measurements and a video, and your own arrival walk is the final check.
+
+## Next step
+
+Save your arrival checks in the [travel checklist](/tools/checklist), price the stay in the [pet cost and host confirmation tool](/tools/pet-cost-check), and check your dog against the host's rules with [will my dog be accepted](/tools/will-my-dog-be-accepted). Then browse [dog-friendly stays](/stays) and filter for a confirmed fenced yard. The aim is a yard whose limits you understand, with gates managed consistently and a dog you keep supervising.`,
   "faqs": [
     {
       "q": "What fence height is safe for a vacation rental with a dog?",
@@ -153,7 +156,7 @@ Save your arrival checks in the [travel checklist](/tools/checklist). The aim is
     },
     {
       "q": "Is an invisible fence enough for a short rental stay?",
-      "a": "Do not count it as a physical enclosure. Such systems rely on a learned boundary and working equipment, and they do not stop other animals from entering. If your trip requires physical fencing, choose that explicitly."
+      "a": "It is not a physical enclosure. Such systems rely on a learned boundary and working equipment, and they do not stop other animals from entering. If your trip requires physical fencing, choose that explicitly."
     },
     {
       "q": "What if the fence is damaged when I arrive?",
@@ -192,7 +195,32 @@ Save your arrival checks in the [travel checklist](/tools/checklist). The aim is
       "url": "https://vcahospitals.com/know-your-pet/invisible-fences",
       "publisher": "VCA Animal Hospitals",
       "accessedOn": "2026-11-16"
-    }
+    },
+    {
+      "title": "Finding places that allow pets",
+      "url": "https://www.airbnb.com/help/article/86",
+      "publisher": "Airbnb",
+      "accessedOn": "2026-11-16"
+    },
+    {
+      "title": "What you need to know about hosting pets",
+      "url": "https://www.airbnb.com/resources/hosting-homes/a/what-you-need-to-know-about-hosting-pets-463",
+      "publisher": "Airbnb",
+      "accessedOn": "2026-11-16"
+    },
+    {
+      "title": "Pet-Friendly Cabins in Ellijay & Blue Ridge, GA",
+      "url": "https://slidingrockcabins.com/pet-friendly-cabins/",
+      "publisher": "Sliding Rock Cabins",
+      "accessedOn": "2026-11-16"
+    },
+    {
+      "title": "Pet Friendly Cabin Rental in Ellijay, GA",
+      "url": "https://www.sacredwatersellijay.com/pet-friendly-cabin-rental-ellijay-ga",
+      "publisher": "Sacred Waters North Georgia Cabin Rental",
+      "accessedOn": "2026-11-16"
+    },
+
   ],
   "research": {
     "primaryKeyword": "vacation rental secure fenced yard",

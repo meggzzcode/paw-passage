@@ -241,6 +241,24 @@ content:
       - { name: description, label: Description, type: text, required: true }
       - { name: sleeps, label: Sleeps (people), type: number }
       - { name: bedrooms, label: Bedrooms, type: number }
+      - { name: bathrooms, label: Bathrooms, type: number }
+      - { name: beds, label: "Beds (one line each, e.g. Bedroom 1: 1 king bed)", type: string, list: true }
+      - name: amenityGroups
+        label: "What is included (only what the listing states)"
+        type: object
+        list: true
+        fields:
+          - { name: title, label: "Group (e.g. Kitchen, Comfort, Outdoors, Laundry)", type: string, required: true }
+          - { name: items, label: Items, type: string, list: true }
+      - { name: locationNote, label: "The setting in a sentence or two", type: text }
+      - { name: distances, label: "Distances (e.g. Downtown Blue Ridge: about 10 minutes)", type: string, list: true }
+      - { name: checkIn, label: "Check-in time", type: string }
+      - { name: checkOut, label: "Check-out time", type: string }
+      - { name: minimumStay, label: "Minimum stay", type: string }
+      - { name: cancellation, label: "Cancellation policy (short)", type: string }
+      - { name: accessNotes, label: "Stairs, parking, steep drive, accessibility", type: string, list: true }
+      - { name: generalRules, label: "Other house rules (smoking, quiet hours...)", type: string, list: true }
+      - { name: guestNotes, label: "Heads-ups from guest reviews (paraphrase, one per line)", type: string, list: true }
       - { name: maxDogs, label: "Most dogs allowed (leave empty if not confirmed)", type: number }
       - { name: weightLimitLbs, label: "Weight limit per dog in lbs (leave empty if none stated)", type: number }
       - name: largeDogsOk

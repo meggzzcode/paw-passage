@@ -21,3 +21,46 @@ photoPermission: false
 image: guide-ga-cabins
 sourceUrl: https://www.vrbo.com/3016263
 affiliateId: vrbo
+bathrooms: 1
+beds:
+  - "Bedroom 1: 1 king bed"
+  - "Bedroom 2: 1 queen bed"
+amenityGroups:
+  - title: Comfort
+    items:
+      - Stone fireplace in the living area
+      - High-speed internet
+  - title: Kitchen and dining
+    items:
+      - Kitchen with refrigerator
+      - Dining table and chairs
+  - title: Laundry
+    items:
+      - Washer
+  - title: Outdoors
+    items:
+      - Large screened-in porch with a porch swing
+      - Wooden deck with a table
+  - title: Bathroom
+    items:
+      - One bathroom with bathtub and shower; soap, towels and shampoo provided
+locationNote: In the mountains near Blue Ridge, Fannin County, Georgia, about 10 minutes from downtown, in a quiet, private setting with the Chattahoochee National Forest about a one-minute walk away.
+distances:
+  - "Downtown Blue Ridge: about 10 minutes"
+  - "Chattahoochee National Forest: about a 1-minute walk"
+  - "Blue Ridge Scenic Railway: about 9 minutes by car"
+  - "Blue Ridge Lake: about 16 minutes by car"
+  - "Amicalola Falls State Park: about 41 minutes by car"
+  - "Chattanooga Metropolitan Airport: about 102 minutes by car"
+checkIn: "4:00 PM"
+checkOut: "11:00 AM"
+accessNotes:
+  - "The listing photos show a stone staircase up to the door. Stairs, parking and accessibility are not stated, so ask the host if they matter for you or your dog."
+generalRules:
+  - "Non-smoking"
+guestNotes:
+  - "Guests describe the cabin as cozy and private, quiet yet minutes from town."
+  - "Several praise the screened porch and the mountain views; one said foliage blocked the view."
+  - "A couple of guests found the interior dark because of overgrown foliage."
+  - "One guest said the drive up can be a little intimidating."
+

@@ -19,6 +19,24 @@ export interface Stay {
   description: string;
   sleeps: number | null;
   bedrooms: number | null;
+  bathrooms: number | null;
+  /** Bed lines, e.g. "Bedroom 1: 1 king bed". */
+  beds: string[];
+  /** Amenities from the listing, grouped (kitchen, comfort, outdoors...). Only what the listing states. */
+  amenityGroups: { title: string; items: string[] }[];
+  /** The setting in a sentence or two, and distances to town and sights. */
+  locationNote?: string;
+  distances: string[];
+  checkIn?: string;
+  checkOut?: string;
+  minimumStay?: string;
+  cancellation?: string;
+  /** Stairs, parking, steep drive, accessibility. */
+  accessNotes: string[];
+  /** Non-pet house rules (smoking, quiet hours...). */
+  generalRules: string[];
+  /** Paraphrased heads-ups from the listing's guest reviews. */
+  guestNotes: string[];
   maxDogs: number | null; // null = not confirmed
   largeDogsOk: boolean | null;
   weightLimitLbs: number | null;

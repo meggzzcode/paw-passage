@@ -29,6 +29,7 @@ export function StayCard({ stay }: { stay: Stay }) {
         <p className="eyebrow">{stayTypeLabels[stay.type]} · {townName(stay.town)}</p>
         <h3 className="mt-1.5 font-display text-xl leading-snug group-hover:text-primary">{stay.name}</h3>
         <p className="mt-2 line-clamp-2 text-sm text-muted-foreground">{stay.summary}</p>
+        {(stay.bedrooms || stay.bathrooms || stay.sleeps) && <p className="mt-2 text-xs text-muted-foreground">{[stay.bedrooms ? `${stay.bedrooms} bedroom${stay.bedrooms === 1 ? "" : "s"}` : "", stay.bathrooms ? `${stay.bathrooms} bath${stay.bathrooms === 1 ? "" : "s"}` : "", stay.sleeps ? `sleeps ${stay.sleeps}` : ""].filter(Boolean).join(" · ")}</p>}
         <ul className="mt-4 flex flex-wrap gap-1.5">
           {chips.slice(0, 4).map((c) => <li key={c} className="rounded-full bg-secondary px-2.5 py-1 text-xs text-secondary-foreground">{c}</li>)}
         </ul>

@@ -71,6 +71,53 @@ function StayPage() {
           <p className="mt-3 leading-relaxed">{s.description}</p>
           {s.fenceNotes && (<><h3 className="mt-8 text-xl">Fence and gates</h3><p className="mt-2">{s.fenceNotes}</p></>)}
           {s.houseRules.length > 0 && (<><h3 className="mt-8 text-xl">Dog house rules</h3><ul className="mt-2 list-disc pl-5">{s.houseRules.map((r) => <li key={r}>{r}</li>)}</ul></>)}
+          {(s.sleeps || s.bedrooms || s.bathrooms || s.beds.length > 0) && (
+            <>
+              <h2 className="mt-12 text-2xl">The space</h2>
+              <ul className="mt-3 flex flex-wrap gap-2 text-sm">
+                {s.sleeps ? <li className="rounded-full bg-secondary px-3 py-1">Sleeps {s.sleeps}</li> : null}
+                {s.bedrooms ? <li className="rounded-full bg-secondary px-3 py-1">{s.bedrooms} bedroom{s.bedrooms === 1 ? "" : "s"}</li> : null}
+                {s.bathrooms ? <li className="rounded-full bg-secondary px-3 py-1">{s.bathrooms} bathroom{s.bathrooms === 1 ? "" : "s"}</li> : null}
+              </ul>
+              {s.beds.length > 0 && <ul className="mt-3 list-disc pl-5 text-sm">{s.beds.map((b) => <li key={b}>{b}</li>)}</ul>}
+            </>
+          )}
+          {s.amenityGroups.length > 0 && (
+            <>
+              <h2 className="mt-12 text-2xl">What is included</h2>
+              <p className="mt-1 text-xs text-muted-foreground">As listed on the booking page. If a feature matters to you, confirm it with the host.</p>
+              <div className="mt-4 grid gap-6 sm:grid-cols-2">
+                {s.amenityGroups.map((g) => (
+                  <div key={g.title}><h3 className="text-lg">{g.title}</h3><ul className="mt-2 list-disc pl-5 text-sm">{g.items.map((i) => <li key={i}>{i}</li>)}</ul></div>
+                ))}
+              </div>
+            </>
+          )}
+          {(s.locationNote || s.distances.length > 0) && (
+            <>
+              <h2 className="mt-12 text-2xl">Location and getting around</h2>
+              {s.locationNote && <p className="mt-3 leading-relaxed">{s.locationNote}</p>}
+              {s.distances.length > 0 && <ul className="mt-3 list-disc pl-5 text-sm">{s.distances.map((d) => <li key={d}>{d}</li>)}</ul>}
+            </>
+          )}
+          {(s.accessNotes.length > 0 || s.guestNotes.length > 0) && (
+            <>
+              <h2 className="mt-12 text-2xl">Good to know</h2>
+              {s.accessNotes.length > 0 && <ul className="mt-3 list-disc pl-5 text-sm">{s.accessNotes.map((a) => <li key={a}>{a}</li>)}</ul>}
+              {s.guestNotes.length > 0 && (<><h3 className="mt-5 text-lg">What guests mention</h3><p className="text-xs text-muted-foreground">Paraphrased from the booking page's guest reviews. Not confirmed by us.</p><ul className="mt-2 list-disc pl-5 text-sm">{s.guestNotes.map((a) => <li key={a}>{a}</li>)}</ul></>)}
+            </>
+          )}
+          {(s.checkIn || s.checkOut || s.minimumStay || s.cancellation || s.generalRules.length > 0) && (
+            <>
+              <h2 className="mt-12 text-2xl">Stay details and house rules</h2>
+              <dl className="mt-3 divide-y divide-border text-sm">
+                {([["Check-in", s.checkIn], ["Check-out", s.checkOut], ["Minimum stay", s.minimumStay], ["Cancellation", s.cancellation]] as [string, string | undefined][]).filter(([, v]) => !!v).map(([k, v]) => (
+                  <div key={k} className="flex justify-between gap-4 py-2"><dt className="text-muted-foreground">{k}</dt><dd className="text-right font-medium">{v}</dd></div>
+                ))}
+              </dl>
+              {s.generalRules.length > 0 && <ul className="mt-3 list-disc pl-5 text-sm">{s.generalRules.map((r) => <li key={r}>{r}</li>)}</ul>}
+            </>
+          )}
           {s.nearby.length > 0 && (<><h3 className="mt-8 text-xl">Nearby</h3><ul className="mt-2 list-disc pl-5">{s.nearby.map((r) => <li key={r}>{r}</li>)}</ul></>)}
           <div className="mt-10 rounded-lg bg-secondary/70 p-6">
             <p className="font-display text-lg">Before you book</p>

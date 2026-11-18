@@ -32,7 +32,6 @@ export function StayCard({ stay }: { stay: Stay }) {
         )}
         <div className="absolute left-3 top-3 flex gap-2">
           {stay.status === "sample" && <PreviewBadge>Sample, preview only</PreviewBadge>}
-          {stay.status === "unverified" && <span className="rounded-full bg-background/90 px-2.5 py-0.5 text-xs font-semibold text-terracotta">Not yet verified</span>}
           {stay.sponsored?.active && <span className="rounded-full bg-background/90 px-2.5 py-0.5 text-xs font-semibold">Sponsored</span>}
         </div>
       </div>

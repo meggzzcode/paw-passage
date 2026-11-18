@@ -46,11 +46,6 @@ function StayPage() {
   return (
     <article className="container-page pt-10">
       <Breadcrumbs items={[{ label: "Home", to: "/" }, { label: "Stays", to: "/stays" }, { label: s.name }]} />
-      {s.status === "unverified" && (
-        <div role="note" className="mt-6 rounded-lg border border-terracotta/50 bg-accent/40 p-4 text-sm">
-          <span className="font-semibold">Not yet verified.</span> These details come from the listing and have not been confirmed with the host. Ask the host about the pet fee, dog limit, weight and breed rules, and fencing before you book. Anything marked "Not confirmed" is unknown, not a yes.
-        </div>
-      )}
       {s.status === "sample" && (
         <div className="mt-6 rounded-lg border border-dashed border-terracotta/60 bg-accent/40 p-4 text-sm">
           <PreviewBadge>Sample, preview only</PreviewBadge> <span className="ml-2">This is a fictional record used to preview the layout. It never appears on the live site.</span>
@@ -140,11 +135,16 @@ function StayPage() {
                 <div key={k} className="flex justify-between gap-4 py-2.5"><dt className="text-muted-foreground">{k}</dt><dd className={`text-right font-medium ${v === "Not confirmed" ? "text-muted-foreground italic" : ""}`}>{v}</dd></div>
               ))}
             </dl>
-            <p className="mt-4 text-xs text-muted-foreground">{s.lastVerified ? `Last verified ${s.lastVerified}` : "Not yet verified"}</p>
+            <p className="mt-4 text-xs text-muted-foreground">{s.lastVerified ? `Last verified ${s.lastVerified}` : "Details read from the listing"}</p>
           </div>
           <StayFeeCalculator stay={s} />
         </aside>
       </div>
+      {s.status === "unverified" && (
+        <div role="note" className="mt-10 rounded-lg border border-terracotta/50 bg-accent/40 p-4 text-sm">
+          These details come from the listing. Ask the host any additional questions before booking. Anything marked "Not confirmed" is unknown, not a yes.
+        </div>
+      )}
       <section className="mt-16 rounded-xl border border-border bg-secondary/40 p-6"><h2 className="text-xl">See this stay on Vrbo</h2><p className="mt-1 text-sm text-muted-foreground">Photos, the floor plan, live availability and the full house rules are on the booking page. Confirm the pet fee there before you book.</p><div className="mt-4"><BookingButton stay={s} /></div></section>
       {related.length > 0 && (
         <section className="mt-16"><h2 className="text-2xl">Related guides</h2><div className="mt-6 grid gap-8 md:grid-cols-2">{related.map((g) => <GuideCard key={g!.slug} guide={g!} />)}</div></section>

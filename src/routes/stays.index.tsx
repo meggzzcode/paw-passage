@@ -95,7 +95,7 @@ function StaysPage() {
       <Breadcrumbs items={[{ label: "Home", to: "/" }, { label: "Stays" }]} />
       <header className="mt-6 max-w-3xl">
         <h1 className="text-4xl md:text-5xl">Dog-friendly stays</h1>
-        <p className="mt-3 text-muted-foreground">Stays marked Verified have had their pet policy, fees and fencing confirmed with the host. Stays marked Not yet verified show what the listing says, so confirm the details with the host before you book. Filters only match details that are confirmed, so "not confirmed" never sneaks through as a yes.</p>
+        <p className="mt-3 text-muted-foreground">The details here come from each listing. Ask the host any additional questions before booking. Anything marked "Not confirmed" is unknown, not a yes, and filters only match details that are confirmed.</p>
       </header>
 
       <div className="mt-10 grid gap-10 md:grid-cols-[260px_1fr]">

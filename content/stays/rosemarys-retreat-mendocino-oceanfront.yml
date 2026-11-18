@@ -1,0 +1,52 @@
+status: unverified
+name: Large Mendocino Oceanfront Home, Walk to Trails
+type: vacation-home
+state: california
+town: mendocino
+summary: Four-bedroom oceanfront home in Mendocino with a gated yard; up to 2 dogs, 50 lb or under.
+description: An oceanfront house in Mendocino, California, with four bedrooms and three baths for up to 8 guests, run by Vacasa and also called Rosemary's Retreat. It has a deck, a patio, a gas grill, a fireplace and step-free access, and the page describes the yard as enclosed and gated, a safe spot for dogs. Dogs must be well-behaved and 50 lb or under, at most 2, and a nightly pet fee applies with no amount shown. Beach distance is not given beyond calling the home oceanfront. We read this from the public Vacasa listing on 2026-11-18 and have not confirmed it with the host.
+sleeps: 8
+bedrooms: 4
+bathrooms: 3
+maxDogs: 2
+weightLimitLbs: 50
+largeDogsOk: 'no'
+fencedYard: not-confirmed
+fenceNotes: 'The listing calls the yard "enclosed and gated"; it does not use the word fenced or describe the enclosure.'
+privateOutdoor: 'yes'
+petFee: not-confirmed
+breedRestrictions: not-confirmed
+houseRules:
+- 'Pets: "up to 2 well-behaved dogs (50 lbs or under)" (Vacasa listing).'
+- '"A nightly pet fee applies"; the amount is not shown.'
+- Pets must be disclosed at booking, may not be left unattended unless crated, and must stay off furniture (Vacasa listing).
+beach: true
+mountain: false
+hotTub: not-confirmed
+photoPermission: false
+sourceUrl: https://www.vacasa.com/unit/1004493
+amenityGroups:
+- title: Kitchen and dining
+  items:
+  - Full kitchen with dishwasher and microwave
+  - Gas grill
+- title: Comfort
+  items:
+  - Fireplace and heating (air conditioning not listed)
+  - Private washer and dryer
+  - Bluetooth speaker system and board games
+- title: Outdoors
+  items:
+  - Patio and deck
+  - Ocean view, oceanfront
+locationNote: Oceanfront in Mendocino, California; the exact address is shared after booking. Glass Beach in Fort Bragg is about eight miles north.
+distances:
+- 'Glass Beach, Fort Bragg: about 8 miles north'
+accessNotes:
+- The listing shows step-free access.
+generalRules:
+- Quiet hours 10:00 PM to 8:00 AM.
+- No smoking anywhere on the premises.
+- Guests must be 21 or older.
+guestNotes:
+- The listing shows a 4.9 rating from 39 reviews.

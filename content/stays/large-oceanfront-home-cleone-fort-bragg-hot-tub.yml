@@ -1,0 +1,45 @@
+status: unverified
+name: Large Oceanfront Home, Hot Tub and Deck (Cleone, Fort Bragg)
+type: vacation-home
+state: california
+town: fort-bragg
+summary: Four-bedroom oceanfront home for 12 in Cleone with a hot tub; up to 2 dogs, nightly fee.
+description: A roughly 3,200 square foot oceanfront house in the village of Cleone, about 4.5 miles north of downtown Fort Bragg, California, with four bedrooms and three baths for up to 12 guests. It sits beside MacKerricher State Park, a short walk from Lake Cleone, and has a hot tub, two decks, a gas grill and a telescope. The Vacasa page welcomes up to 2 dogs and charges a nightly pet fee without stating the amount or a weight limit. The listing text calls the yard sprawling but not fenced; only a review summary mentions fencing. We read this from the public Vacasa listing on 2026-11-18 and have not confirmed it with the host.
+sleeps: 12
+bedrooms: 4
+bathrooms: 3
+maxDogs: 2
+largeDogsOk: not-confirmed
+fencedYard: not-confirmed
+fenceNotes: The listing text calls the yard "sprawling" without saying it is fenced; only a guest review summary on the page mentions a fully fenced yard.
+privateOutdoor: not-confirmed
+petFee: not-confirmed
+breedRestrictions: not-confirmed
+houseRules:
+- 'Pets: "up to 2 well-behaved dogs" (Vacasa listing); no weight limit is stated.'
+- A nightly pet fee applies; the amount is not shown. Pets must be declared at booking, may not be left unattended unless crated, and must stay off furniture (Vacasa listing).
+beach: true
+mountain: false
+hotTub: 'yes'
+photoPermission: false
+sourceUrl: https://www.vacasa.com/unit/1004430
+amenityGroups:
+- title: Comfort
+  items:
+  - Hot tub
+  - Air conditioning and heating
+  - Solar power with a backup generator
+- title: Outdoors
+  items:
+  - Patio and two decks
+  - Gas grill
+  - Telescope
+locationNote: In Cleone, about 4.5 miles north of downtown Fort Bragg, California, beside MacKerricher State Park; the exact address is shared after booking.
+distances:
+- 'Lake Cleone: a short walk'
+- 'Downtown Fort Bragg: about 4.5 miles'
+generalRules:
+- Guests must be 21 or older.
+cancellation: Full refund if cancelled within 24 hours of booking, with some exceptions (Vacasa listing).
+guestNotes:
+- The listing shows a 4.57 rating from 214 reviews.

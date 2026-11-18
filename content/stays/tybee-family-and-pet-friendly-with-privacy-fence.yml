@@ -1,0 +1,60 @@
+status: unverified
+name: Family and Pet Friendly with Privacy Fence (Tybee Island)
+type: vacation-home
+state: georgia
+town: tybee-island
+summary: Three-bedroom Tybee Island home near the beach; up to 3 dogs, no practical weight limit listed.
+description: A three-bedroom house in the South Beach area of Tybee Island, Georgia, that sleeps 9 with a king, a queen, bunk beds and a sofa bed. It has a deck or patio, a garden, an outdoor play area, a barbecue grill and air conditioning, and the listing title promises a privacy fence. The Vrbo page allows up to 3 dogs in total and sets the per-pet weight cap at 999 lb, which in practice means no weight limit. It shows no pet fee, so the cost of bringing dogs is not confirmed. We read this from the public Vrbo listing on 2026-11-18 and have not confirmed it with the host.
+sleeps: 9
+bedrooms: 3
+bathrooms: 2
+beds:
+- 'Bedroom 1: 1 king bed'
+- 'Bedroom 2: 1 queen bed'
+- 'Bedroom 3: 2 twin bunk beds'
+- 'Living room: 1 double sofa bed'
+maxDogs: 3
+largeDogsOk: 'yes'
+fencedYard: not-confirmed
+fenceNotes: The listing title says "Privacy Fence"; the page does not describe the fence or say whether it encloses the whole yard.
+privateOutdoor: 'yes'
+petFee: not-confirmed
+breedRestrictions: not-confirmed
+houseRules:
+- 'Pets: "allows dogs (limit 3 total)" with a maximum weight of "999 lbs per pet" (Vrbo listing FAQ). We read 999 lb as no practical weight limit.'
+- No pet fee amount is shown on the listing page.
+- 'Our note, not the listing''s: Tybee Island does not allow dogs on its beaches according to another local listing, so check the city rules before planning beach time.'
+beach: true
+mountain: false
+hotTub: not-confirmed
+photoPermission: false
+sourceUrl: https://www.vrbo.com/689968
+amenityGroups:
+- title: Kitchen and dining
+  items:
+  - Kitchen
+  - Dining area
+  - Refrigerator
+  - Barbecue grill
+- title: Comfort
+  items:
+  - Air conditioning
+  - Toys listed among the amenities
+- title: Outdoors
+  items:
+  - Deck or patio
+  - Garden
+  - Outdoor play area
+- title: Parking and access
+  items:
+  - On-site parking
+locationNote: South Beach area of Tybee Island, Chatham County, Georgia, a walk of about 6 minutes to Tybee Island Beach per the listing.
+distances:
+- 'Tybee Island Beach: about a 6-minute walk'
+- 'North Beach and Mid Beach: about 9 minutes on foot'
+- 'Tybee Island Memorial Park: within 1 mile'
+checkIn: 4:00 PM
+checkOut: 10:00 AM
+guestNotes:
+- The listing shows a 9.0 rating from 198 reviews.
+- Guest reviews mention that the fenced yard worked well for travelling with dogs; this is guest opinion, not a host statement.

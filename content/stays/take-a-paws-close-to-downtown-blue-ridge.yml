@@ -1,0 +1,60 @@
+status: unverified
+name: Take a Paws, Close to Downtown (Blue Ridge)
+type: cabin
+state: georgia
+town: blue-ridge
+summary: Three-bedroom Blue Ridge cabin with a hot tub and fenced yard; 2 pets, 50 lb limit listed.
+description: A three-bedroom cabin near downtown Blue Ridge that sleeps 8, with two king beds, a queen and two twins in the living room, plus three full baths and a half bath. The listing title advertises a fenced yard, and the amenity list shows a hot tub, a balcony, a barbecue grill and air conditioning. The Vrbo page caps pets at 2 in total and 50 lb each, and does not mention a fee. Photo captions point to a wood-burning fireplace, though the listing text does not describe it. We read this from the public Vrbo listing on 2026-11-18 and have not confirmed it with the host.
+sleeps: 8
+bedrooms: 3
+bathrooms: 3.5
+beds:
+- 'Bedroom 1: 1 king bed'
+- 'Bedroom 2: 1 king bed'
+- 'Bedroom 3: 1 queen bed'
+- 'Living room: 2 twin beds'
+maxDogs: 2
+weightLimitLbs: 50
+largeDogsOk: not-confirmed
+fencedYard: not-confirmed
+fenceNotes: The listing title says "fenced yard"; the page gives no fence size, height or material and does not say the yard is fully enclosed.
+privateOutdoor: not-confirmed
+petFee: not-confirmed
+breedRestrictions: not-confirmed
+houseRules:
+- 'Pets: "limit 2 total" with a maximum weight of "up to 50 lbs per pet" (Vrbo listing); the limit covers all pets, not only dogs.'
+- No pet fee, deposit or breed rule is shown on the page.
+beach: false
+mountain: true
+hotTub: 'yes'
+photoPermission: false
+sourceUrl: https://www.vrbo.com/2827825
+amenityGroups:
+- title: Kitchen and dining
+  items:
+  - Kitchen
+  - Refrigerator
+  - Barbecue grill
+- title: Comfort
+  items:
+  - Hot tub on site
+  - Air conditioning
+- title: Outdoors
+  items:
+  - Balcony
+  - Garden
+- title: Parking and access
+  items:
+  - On-site parking
+locationNote: In Blue Ridge, Fannin County, Georgia, close to downtown; the exact address is not given on the listing.
+distances:
+- 'Old Toccoa Farm: about 3 minutes by car'
+- 'Ocoee River: about 3 minutes by car'
+- 'Chattahoochee National Forest: about 10 minutes by car'
+- 'Mercier Orchards: about 11 minutes by car'
+- 'Blue Ridge Scenic Railway: about 14 minutes by car'
+checkIn: 4:00 PM
+checkOut: 10:00 AM
+guestNotes:
+- The listing shows a 9.8 rating from 20 reviews.
+- Reviews describe the fenced backyard; this is guest opinion, not a host statement.

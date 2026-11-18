@@ -1,4 +1,4 @@
-# Travel essentials hub: what was built (2026-11-18)
+# Travel essentials hub: what was built (2026-11-18, extended by WP4)
 
 Implements the safe subset of docs/recovery/10-travel-essentials-hub-spec.md and Task B of docs/recovery/07-analytics-affiliate-system-automation.md.
 

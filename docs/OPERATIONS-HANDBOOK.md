@@ -77,9 +77,11 @@ Prices read from official pages on 2026-11-18; full sources and the owner's acti
 
 ## 7. Risks to know about
 
-- No branch protection on `main`; a Lovable prompt or a CMS save publishes straight away. Turning protection on needs a ruleset that lets Pages CMS through (`docs/recovery/08`).
-- Netlify free plan gives no build-failure emails.
-- The build depends on Lovable's npm config package (`@lovable.dev/vite-tanstack-config`); see `BUYER_HANDOVER.md` section 8.
+- No branch protection on `main`; a Lovable prompt or a CMS save publishes straight away. A personal-account repo cannot exempt Pages CMS or Lovable from a "require pull request" rule (bypass lists are organization-only), so do not add one; the safe rule is to block force-push and deletion only (`docs/SECURITY-AND-RECOVERY.md` section 3). Which branch Pages CMS writes to is UNCONFIRMED until the first real test.
+- Netlify free plan gives no build-failure emails (email needs Pro). Free alternative: GitHub commit status (`docs/SECURITY-AND-RECOVERY.md` section 4).
+- **Netlify free credits:** 300 a month, 15 per production deploy, so about 20 deploys use the whole allowance; at zero, visitors see "Site not available". Batch edits and check Team > Billing.
+- A "Powered by Netlify" badge may appear bottom-right; it comes from a Netlify project setting, not the repo (`docs/NETLIFY-BADGE.md`).
+- The build uses Lovable's npm config package (`@lovable.dev/vite-tanstack-config`, MIT, public npm, needs no Lovable account or subscription, verified 2026-11-18); see `BUYER_HANDOVER.md` section 8 and `docs/COSTS-AND-ACCOUNTS.md` section 3.
 - One affiliate relationship is live; accounts are not transferable.
 - A GitHub history scan for leaked keys has not been done; turn on GitHub secret scanning.
 
@@ -109,7 +111,8 @@ The dataset must be re-read at least every six months; next due about 2027-05-18
 1. Netlify > Deploys. A failed deploy shows a plain message naming the file and the field.
 2. Fix the field in Pages CMS (or revert the last commit in GitHub). The live site keeps the previous version meanwhile.
 3. If the message mentions `npm ci` or lockfiles, a developer must regenerate `package-lock.json`.
-4. Optional: in Netlify enable the free GitHub commit status so failures show on GitHub (`BUYER_HANDOVER.md` section 6 step 4).
+4. Optional: in Netlify, Project configuration > Notifications > Deploy notifications, add the free GitHub commit status so failures show on GitHub. Email alerts need the Pro plan (`docs/SECURITY-AND-RECOVERY.md` section 4).
+5. If hosting itself is lost, rebuild from the repository: `docs/SECURITY-AND-RECOVERY.md` section 6. Take a monthly offline backup (same section).
 
 ## 9. Automation
 
@@ -149,6 +152,7 @@ Follow `docs/DNS-AND-TRANSFER.md` (order and day-of-sale checklist) and `BUYER_H
 - [ ] **Transfer or replace the Google Analytics 4 property:** get Administrator access to the old property (or create a new one) and change `ga4MeasurementId` in Site settings. Re-register the custom dimensions and key events. Do the same for Search Console.
 - [ ] Update the privacy, terms and affiliate disclosure pages with your own business details (the owner skipped legal review; get your own).
 - [ ] Update `contactEmail` and any other seller details; check the site for the previous owner's names and links.
-- [ ] Decide whether to disconnect Lovable's GitHub sync and cancel any Lovable plan.
+- [ ] Decide whether to disconnect Lovable's GitHub sync and cancel any Lovable plan (the site needs neither; `docs/COSTS-AND-ACCOUNTS.md` section 3).
+- [ ] Check the Netlify "Powered by Netlify" badge setting and the credit meter (`docs/NETLIFY-BADGE.md`).
 - [ ] Turn on GitHub Issue notifications so the weekly Site health issues reach you.
 - [ ] Do the first six-month data re-check by about 2027-05-18.

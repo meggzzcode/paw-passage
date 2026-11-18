@@ -9,7 +9,7 @@ Scored 2026-11-18 from the evidence in `docs/recovery/09-traffic-monetization-va
 | Traffic quality | 2 | New domain bought 2026-11-17; no traffic data yet. |
 | Revenue and monetization | 2 | Vrbo approved but links are generic; Chewy declined; Stay22 account ID empty; no earnings. Revenue is $0. |
 | Content quality and authority | 6 | Original 38-manager dataset, sourced claims, fact-check documents. Held back by over-hedged prose, no named author (owner's choice) and 15 code-only guides. |
-| Risk and operational stability | 5 | Positives: no backend, tests, buyer handover, accounts excluded from sale. Negatives: Netlify free plan with silent build failures, Lovable config dependency, Pages CMS not yet verified, one affiliate relationship, young domain, dependence on the owner's identity. |
+| Risk and operational stability | 5 | Positives: no backend, tests, buyer handover, accounts excluded from sale. Negatives: Netlify free plan (300-credit hard limit, silent build failures, removable at Netlify's discretion), Lovable config dependency (public npm, no account needed), Pages CMS not yet verified, one affiliate relationship, young domain, dependence on the owner's identity. |
 | **Average** | **3.75** | (2 + 2 + 6 + 5) / 4 |
 
 ## What moves each score
@@ -17,7 +17,7 @@ Scored 2026-11-18 from the evidence in `docs/recovery/09-traffic-monetization-va
 - **Traffic (aim for 9+):** about 12 months of Search Console and GA4 history, steady growth, and three or more meaningful sources with none above roughly 50% (that threshold is a planning rule, not an industry standard). Documentation alone cannot raise this.
 - **Revenue (aim for 9+):** 12 months of statements from two or more affiliate programs, none above roughly 50%, with screenshots or recordings ready. Documentation alone cannot raise this.
 - **Content (aim for 9+):** re-score the guides to 8.5 or better per `docs/audit/PATH-TO-9.md`, refresh the dataset every six months (the weekly Site health workflow flags it), and add an original asset per guide.
-- **Risk (aim for 9+):** failure alerts for builds (done in part by the weekly Site health issues), finish the Pages CMS migration and test it, rehearse the transfer, document every account (`docs/OPERATIONS-HANDBOOK.md`), add a second and third affiliate program and a second traffic source.
+- **Risk (aim for 9+):** cost and account facts are now verified (`docs/COSTS-AND-ACCOUNTS.md`: about $34.86 a year to run, Netlify commercial use not prohibited but removable at will, Lovable not needed), and a rebuild-from-repo runbook exists (`docs/SECURITY-AND-RECOVERY.md`); still open: failure alerts for builds (done in part by the weekly Site health issues), finish the Pages CMS migration and test it, rehearse the transfer, document every account (`docs/OPERATIONS-HANDBOOK.md`), add a second and third affiliate program and a second traffic source.
 
 ## Planning multiples (owner's, not market evidence)
 
@@ -31,6 +31,7 @@ Formula: value = monthly net profit x multiple. Starter 6 to 12x; Growing 12 to 
 | $1,000 | $6,000 to $12,000 | $12,000 to $24,000 | $24,000 to $30,000 |
 | $2,500 | $15,000 to $30,000 | $30,000 to $60,000 | $60,000 to $75,000 |
 | $5,000 | $30,000 to $60,000 | $60,000 to $120,000 | $120,000 to $150,000 |
+| $10,000 | 10,000 x 6 = $60,000 to 10,000 x 12 = $120,000 | 10,000 x 12 = $120,000 to 10,000 x 24 = $240,000 | 10,000 x 24 = $240,000 to 10,000 x 30 = $300,000 |
 
 Worked example: $500 a month of net profit in the Growing band is 500 x 12 = $6,000 up to 500 x 24 = $12,000.
 

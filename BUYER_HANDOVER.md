@@ -2,7 +2,7 @@
 
 *Written 2026-11-16. Read the "What has and has not been verified" section first. Nothing in this guide has been tried on live Netlify, Namecheap, GitHub or Pages CMS accounts yet.*
 
-*More documents: `docs/OPERATIONS-HANDBOOK.md` (running the site, costs, procedures, transfer checklist), `docs/SALE-READINESS.md` (scores and planning multiples) and the audit reports in `docs/recovery/`.*
+*More documents: `docs/COSTS-AND-ACCOUNTS.md` (verified prices and the owner's action list), `docs/EMAIL-AND-TRANSFER.md`, `docs/SECURITY-AND-RECOVERY.md` (security steps and rebuild-from-repo runbook), `docs/NETLIFY-BADGE.md`, `docs/OPERATIONS-HANDBOOK.md` (running the site, costs, procedures, transfer checklist), `docs/SALE-READINESS.md` (scores and planning multiples) and the audit reports in `docs/recovery/`.*
 
 ## 1. What you are buying
 
@@ -26,11 +26,11 @@ The plan is that you can run it day to day without a developer:
 
 | Service | What it does | Cost | You need |
 |---|---|---|---|
-| **Namecheap** | Owns the website address (domain `pawsandpassage.com`, bought 2026-11-17 with free domain privacy) and runs the business email (Private Email, the "Launch" plan with 1 mailbox) | Yearly domain fee plus an email subscription | A Namecheap account |
-| **Netlify** | Hosts the website and rebuilds it automatically when content changes | Has a free plan (usage limits apply; see section 8) | A Netlify account |
+| **Namecheap** | Owns the website address (domain `pawsandpassage.com`, bought 2026-11-17 with free domain privacy) and runs the business email (Private Email, the "Launch" plan with 1 mailbox) | Renewal read from Namecheap on 2026-11-18: `.com` $19.98 a year; Private Email Launch listed at $14.88 a year (whether that is the renewal price is unconfirmed). The first-term order was $24.16. | A Namecheap account |
+| **Netlify** | Hosts the website and rebuilds it automatically when content changes | Free plan: $0, 300 credits a month (hard limit), 15 credits per production deploy; see section 8 | A Netlify account |
 | **GitHub** | Stores the website's files and every change ever made | Free | A GitHub account |
-| **Pages CMS** | The friendly web form for editing content | Free, per its own site | Your GitHub login |
-| **Lovable** | Optional tool for a developer to change the design. **Not needed to publish.** | Not needed | Nothing |
+| **Pages CMS** | The friendly web form for editing content | No price shown on any official Pages CMS page; treated as free with no guarantee | Your GitHub login |
+| **Lovable** | Optional tool for a developer to change the design. **Not needed to build, host or edit** (the build uses one of its free public npm packages, no account). | Not needed (the seller's Pro plan is about $25 a month and does not transfer) | Nothing |
 
 There is no custom database or backend, and Hostinger is not used.
 
@@ -135,17 +135,17 @@ The detailed, step-by-step instructions are in **`docs/DNS-AND-TRANSFER.md`**. I
 
 1. **Part of the content is not editable in Pages CMS yet.** 15 of the 24 guides, the towns, the gear product lists and the legal pages are code. Until `docs/MIGRATION-PLAN.md` is carried out, editing them needs a developer.
 2. **Only the Netlify part has been tested on a real account** (2026-11-17). Pages CMS, Namecheap and the ownership transfers have not. The most important unknown is the real Pages CMS editing forms.
-3. **Private Email cannot be pushed with the domain.** Plan this early; fees and downtime are unconfirmed.
-4. **A hidden build dependency on Lovable's published configuration package** (`@lovable.dev/vite-tanstack-config`, version-pinned, from the public npm registry). It installs fine today. If Lovable ever withdrew it, a fresh install would fail. A developer can replace it with a standard configuration. The code also has a harmless error-reporting hook for Lovable's editor that does nothing without it.
+3. **Private Email cannot be pushed with the domain.** Plan this early. Namecheap's published route is a support-assisted transfer (pesupport@namecheap.com, no fee mentioned on its page, "no emails or other data will be lost"); fees, downtime and password hand-over remain unconfirmed. Verified options and a do-not-do list: `docs/EMAIL-AND-TRANSFER.md`.
+4. **A hidden build dependency on Lovable's published configuration package** (`@lovable.dev/vite-tanstack-config`, version-pinned, MIT licence, from the public npm registry; confirmed again on 2026-11-18, installs with no Lovable account and injects no scripts or badges). It installs fine today. If Lovable ever withdrew it, a fresh install would fail. A developer can replace it with a standard configuration. The code also has a harmless error-reporting hook for Lovable's editor that does nothing without it.
 5. **Two package lists in the repository** (`package-lock.json` for Netlify, `bun.lock` for Lovable). They can drift apart; the automatic GitHub check now fails if they do.
 6. **Pages CMS is a free service run by a small open-source project** with no stated guarantee. Your content stays in GitHub, so you could switch tools, but the forms would need rebuilding. It can also be self-hosted (needs its own database).
 7. **Draft preview links are public.** Private preview deploys (set up in `netlify.toml`) show drafts to anyone who has the link, and are not password protected on a free plan. They tell search engines to stay away.
-8. **Netlify free plan limits and terms.** Usage limits apply, and whether commercial use is allowed on the free plan is not confirmed: read Netlify's current terms.
+8. **Netlify free plan limits and terms (read 2026-11-18).** The Self-Serve Subscription Agreement (updated 2026-11-04) and the acceptable-use policy do not prohibit commercial use of the free tier, but Netlify may change, pause or remove a free site at any time without notice. The free plan has 300 credits a month as a hard limit and each production deploy costs 15, so about 20 deploys use the allowance; at zero visitors see "Site not available". Plan accordingly and see `docs/COSTS-AND-ACCOUNTS.md`.
 9. **Affiliate programs must be re-applied for** by the buyer, and Amazon requires its exact disclosure sentence wherever its links appear (the site adds it automatically).
 10. **The legal pages (privacy, terms, affiliate disclosure) were written by the original owner's assistant and have not been reviewed by a lawyer.** The owner decided on 2026-11-17 not to obtain a legal review. A new owner may make their own choice; the pages are plain Markdown-style files that are easy to change.
 11. **The site loads fonts from Google Fonts**, and Google Analytics only once an ID is entered. The privacy page should say so.
 12. **Photos:** stock photos are free-to-use under the Unsplash licence; the home page picture is AI-generated. Any photo of a real rental needs the owner's written permission.
-13. **No failure emails on Netlify's free plan, and new projects may default to Private.** A failed build is silent unless someone looks at the Deploys page. A project set to Private makes the website ask visitors to sign in to Netlify: a live site must be set to public. Check this on day one.
+13. **No failure emails on Netlify's free plan (email needs Pro; the free GitHub commit status works), a possible "Powered by Netlify" badge, and new projects may default to Private.** The badge is a Netlify project setting, not part of the code: `docs/NETLIFY-BADGE.md`. A failed build is silent unless someone looks at the Deploys page. A project set to Private makes the website ask visitors to sign in to Netlify: a live site must be set to public. Check this on day one.
 14. **Domain basics:** keep auto-renew on, keep the Namecheap sign-in and recovery email under the buyer's control, and check whether changing the owner's contact details triggers a transfer lock (the sources conflict).
 
 ## 9. Where things live (for a developer)

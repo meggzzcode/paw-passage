@@ -283,7 +283,8 @@ content:
       - name: image
         label: Photo (choose a built-in photo)
         type: select
-        description: "Use this OR upload the property's photo in the next box."
+        default: guide-ga-cabins
+        description: "Use this OR upload the property's photo in the next box. A photo is required: if none is chosen the site cannot build."
         options:
           values: [guide-ga-cabins, guide-ca-beach, guide-fenced-yard, guide-two-dogs, guide-large-dogs]
       - { name: imageUpload, label: "Photo (upload - only with the owner's permission)", type: image }

@@ -1,3 +1,4 @@
+import { affiliateLinks } from "@/content/affiliates";
 import { describe, it, expect } from "vitest";
 import { sitemapEntries } from "@/lib/sitemap-entries";
 import { hasStays, hasApprovedAffiliates } from "@/lib/launch";
@@ -5,8 +6,8 @@ import { pageHead } from "@/lib/seo";
 
 // While no verified stay is published, the empty stays pages must stay out of search and out of the sitemap.
 describe("site before the first verified stay", () => {
-  it("has no approved affiliate links in the committed content (so the footer affiliate line stays hidden)", () => {
-    expect(hasApprovedAffiliates()).toBe(false);
+  it("shows the footer affiliate line exactly when an approved affiliate link exists in the content", () => {
+    expect(hasApprovedAffiliates()).toBe(affiliateLinks.some((l) => l.approved && !!l.url));
   });
   it("counts samples as stays only in development, never in the production sitemap", () => {
     // Tests run in development mode, where sample stays are visible; the sitemap never includes them.

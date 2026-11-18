@@ -6,6 +6,7 @@ import { getProduct } from "@/content/gear";
 import { allGuides } from "@/content/guides";
 import { getApprovedLink, isAmazon, AMAZON_DISCLOSURE } from "@/content/affiliates";
 import { productButton, productLinkId } from "@/content/affiliate-usage";
+import { packPhoto, packPhotoCredits } from "@/lib/pack-images";
 import { trackProductClick, trackTool, trackToolOnce } from "@/lib/analytics";
 
 const TOOL = "packing-builder";
@@ -114,6 +115,7 @@ export function PackingBuilder() {
             </section>
           );
         })}
+        {packPhotoCredits().length > 0 && <p className="mt-8 text-xs text-muted-foreground">Photos are for illustration and do not show specific products. Credits: {packPhotoCredits().map((c, i) => <span key={c.id}>{i > 0 && ", "}<a href={c.unsplashUrl} target="_blank" rel="noopener noreferrer" className="underline">{c.photographer}</a></span>)} on Unsplash.</p>}
       </div>
     </div>
   );
@@ -121,13 +123,17 @@ export function PackingBuilder() {
 
 function Tile({ item, reason, isPacked, expanded, onToggle, onOpen, onFocus }: { item: PackItem; reason: string | null; isPacked: boolean; expanded: boolean; onToggle: () => void; onOpen: () => void; onFocus: () => void }) {
   const Icon = icons[item.id] ?? Package;
+  const photo = packPhoto(item.id);
   return (
-    <div className={`flex h-full flex-col rounded-xl border p-3 transition ${isPacked ? "border-primary bg-primary/5" : "border-border bg-card hover:border-primary"}`}>
-      <button type="button" aria-expanded={expanded} aria-haspopup="dialog" onClick={onOpen} onFocus={onFocus} className="flex flex-1 items-start gap-3 text-left">
-        <span className={`flex size-11 shrink-0 items-center justify-center rounded-full ${isPacked ? "bg-primary text-primary-foreground" : "bg-secondary text-primary"}`}>{isPacked ? <Check className="size-5" /> : <Icon className="size-5" />}</span>
-        <span><span className="block font-medium leading-tight">{item.name}</span>{reason ? <span className="mt-1 block text-xs font-medium text-terracotta">Recommended for this trip</span> : <span className="mt-1 block text-xs text-muted-foreground">Optional</span>}</span>
+    <div className={`flex h-full flex-col overflow-hidden rounded-xl border transition ${isPacked ? "border-primary bg-primary/5" : "border-border bg-card hover:border-primary"}`}>
+      <button type="button" aria-expanded={expanded} aria-haspopup="dialog" onClick={onOpen} onFocus={onFocus} className="flex flex-1 flex-col text-left">
+        <span className="relative block aspect-[3/2] w-full bg-secondary">
+          {photo ? <img src={photo.src} alt={photo.alt} loading="lazy" decoding="async" width={480} height={320} className="absolute inset-0 h-full w-full object-cover" /> : <span className="absolute inset-0 flex items-center justify-center"><Icon className="size-10 text-primary/60" /></span>}
+          <span className={`absolute left-2 top-2 flex size-9 items-center justify-center rounded-full shadow-card ${isPacked ? "bg-primary text-primary-foreground" : "bg-background text-primary"}`}>{isPacked ? <Check className="size-5" /> : <Icon className="size-5" />}</span>
+        </span>
+        <span className="block p-3"><span className="block font-medium leading-tight">{item.name}</span>{reason ? <span className="mt-1 block text-xs font-medium text-terracotta">Recommended for this trip</span> : <span className="mt-1 block text-xs text-muted-foreground">Optional</span>}</span>
       </button>
-      <button type="button" onClick={onToggle} aria-pressed={isPacked} className="no-print mt-3 h-9 rounded-lg border border-input text-sm hover:bg-muted">{isPacked ? "Packed" : "Add to bag"}</button>
+      <div className="px-3 pb-3"><button type="button" onClick={onToggle} aria-pressed={isPacked} className="no-print h-9 w-full rounded-lg border border-input text-sm hover:bg-muted">{isPacked ? "Packed" : "Add to bag"}</button></div>
     </div>
   );
 }

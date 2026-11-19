@@ -98,3 +98,27 @@ Where a page named an independent tester it is cited on the card: only Ruffwear'
 
 ### Tests
 src/test/gear-products.test.ts (new): manufacturer URL on https for every product, no price/rating/commission keys at any depth and no price/rating text, every relatedGuides slug exists, every category has at least 3 active products, photo-less default, new schema fields and reference checks, and the affiliate swap procedure. src/test/gear-hub.test.tsx and gear-parity.test.ts updated (parity test now checks the 25 legacy products are still present and unchanged; the legacy src/content/gear/*.ts files are kept because that test still imports them).
+
+
+## Pitch-first extension (2026-11-18): 14 more active products, no affiliate links yet
+
+Copied from the candidate records in docs/products/candidates-*.yml (facts and wording unchanged; no prices, ratings or affiliate fields; lastVerified 2026-11-18; imageRights none). The lead adds the Amazon entries separately. Active products in content/products.yml: 72 (25 legacy + 33 WP4 + 14 pitch-first = 72 listed, 72 active).
+
+| id | brand | categories | source page | date read |
+|---|---|---|---|---|
+| ezydog-dfd-life-jacket | EzyDog | beach-vacations, outdoor-adventures | https://store.ezydog.com/dfd-life-jacket/ | 2026-11-18 |
+| petsafe-happy-ride-compact-telescoping-ramp | PetSafe | road-trips, senior-dogs, large-dogs | https://petsafe.com/product/happy-ride-compact-telescoping-dog-ramp | 2026-11-18 |
+| kurgo-rover-hammock-extended-width | Kurgo | road-trips, large-dogs, cleaning-and-rental-protection, travel-comfort | https://kurgo.com/car-seat-covers/dog-hammocks/wander-hammock-extended-width | 2026-11-18 |
+| north-states-mypet-universal-petgate | North States | cabin-vacations | https://northstatesind.com/north-states-mypet-universal-petgate/ | 2026-11-18 |
+| midwest-icrate-dog-crate | MidWest Homes for Pets | cabin-vacations | https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/ | 2026-11-18 |
+| green-pet-shop-cool-pet-pad | The Green Pet Shop | travel-comfort, cabin-vacations, beach-vacations | https://www.thegreenpetshop.com/products/cool-pet-pad | 2026-11-18 |
+| iris-usa-airtight-dog-food-container-10-lb | IRIS USA | feeding-and-hydration, cabin-vacations, road-trips | https://www.irisusainc.com/collections/airtight-pet-food-containers/products/airtight-dog-food-storage-container-up-to-10-lbs-3 | 2026-11-18 |
+| soggy-doggy-super-shammy-towel | Soggy Doggy | cleaning-and-rental-protection, travel-comfort | https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey | 2026-11-18 |
+| soggy-doggy-microfiber-doormat | Soggy Doggy | cabin-vacations, cleaning-and-rental-protection | https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate | 2026-11-18 |
+| pet-parents-pawtect-pads | Pet Parents | cabin-vacations, cleaning-and-rental-protection, senior-dogs | https://petparentsbrand.com/products/washable-puppy-pads | 2026-11-18 |
+| midwest-lifestages-dog-crate | MidWest Homes for Pets | cabin-vacations | https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/lifestages-dog-crate/ | 2026-11-18 |
+| kong-classic | KONG | cabin-vacations, travel-comfort | https://www.kongcompany.com/kong-classic/ | 2026-11-18 |
+| ruffwear-the-beacon-dog-safety-light | Ruffwear | travel-safety, outdoor-adventures | https://ruffwear.com/products/the-beacon-safety-dog-light | 2026-11-18 |
+| petcube-gps-tracker | Petcube | travel-safety | https://petcube.com/tracker/ | 2026-11-18 |
+
+Notes: Petcube says only that the maker says a paid plan is required (no cost). The PetSafe compact ramp keeps "independently tested" as the maker's wording, no tester named. Two candidate spec lines that had an unquoted colon ("Care: ...") were written as plain text. The Sleepypod Atom page re-read 2026-11-19 still says 12 lbs (an 18 lb figure belongs to the Air); the record stays at 12 lbs with a "maker pages have disagreed" spec line. src/test/gear-parity.test.ts now tolerates that one added line and accepts an approved Amazon link as the outbound URL.

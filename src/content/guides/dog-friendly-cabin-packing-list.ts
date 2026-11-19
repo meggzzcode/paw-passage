@@ -12,18 +12,28 @@ export const guide: Guide = {
   status: "published",
   author: "Paws & Passage Editors",
   publishedOn: "2026-11-16",
-  lastReviewed: "2026-11-16",
+  lastReviewed: "2026-11-19",
   readingMinutes: 9,
   heroImage: "guide-cabin-packing",
   body: `A cabin is not a hotel room. The nearest vet may be far away, the stairs and the wood stove are a surprise, and a bear may take an interest in the dog's food. Pack for the property you booked, not just for the dog.
 
 ## The short answer
 
+- **What to buy:** a lid-tight food container, a washable drying towel and entry mat for the door, and in hot weather a cooling pad. Everything else on the list is what you already own.
 - Pack your dog's familiar routine first, then add what the cabin requires: traction, barriers, cleanup gear, and wildlife-safe food storage.
 - Get host answers on stairs, fencing, crating, and food storage before you pack. A gate will not fix a stairs-and-bedroom mismatch.
 - An ordinary food bin or cooler is not bear-resistant. Keep pet food, treats, bowls, and rubbish indoors or as the property and park direct. [[1]](https://www.nps.gov/articles/bearsafetyfood.htm) [[13]](https://bearwise.org/six-bearwise-basics/never-leave-pet-food-outdoors/)
 - Carry offline records, microchip details, and emergency vet and poison control numbers (ASPCA 888-426-4435; Pet Poison Helpline 855-764-7661; a consultation fee may apply).
 - Check for ticks every evening and keep winter heaters, ash, and de-winterizing chemicals away from your dog. [[4]](https://www.cdc.gov/ticks/prevention/preventing-ticks-on-pets.html)
+
+## Buying checklist
+
+1. A food container with a snug lid that fits the whole bag, understood as tidy storage and not bear-resistant.
+2. A machine-washable drying towel and a washable entry mat with a non-slip backing, both stated by the maker.
+3. A cooling pad sized by your dog's weight, only for hot weather and never left in sun or a hot car.
+4. A bed or mat the dog already knows, plus a washable throw, if the host allows furniture.
+5. A reserve of food and medication, in labeled packaging.
+6. Check the current price and size on each listing before you order.
 
 ## Before packing: five questions for the host
 
@@ -50,7 +60,9 @@ Keep medication reachable during the drive, and ask your veterinarian how to han
 
 **Storage.** A regular food bin is **not** a bear-resistant container, and neither is an ordinary cooler. The National Park Service says bears treat anything with a scent as food, lists trash, toiletries and ice chests among items that must be stored properly, and notes that rules differ from park to park. It does not name pet food, so treat it as scented. Some places allow food in a closed car out of sight while others require lockers, so check before you rely on the car. [[1]](https://www.nps.gov/articles/bearsafetyfood.htm)
 
-BearWise says pet food is rich in fat and protein, which makes it extremely attractive to bears. Its rules: feed pets indoors when possible; if you must feed outside, give single portions and remove the food and bowls afterward; bring bowls inside at night; and store pet food where bears cannot see or smell it. [[13]](https://bearwise.org/six-bearwise-basics/never-leave-pet-food-outdoors/) Wash bowls and put supplies away after each meal.
+BearWise says pet food is rich in fat and protein, which makes it extremely attractive to bears. Its rules: feed pets indoors when possible; if you must feed outside, give single portions and remove the food and bowls afterward; bring bowls inside at night; and store pet food where bears cannot see or smell it. [[13]](https://bearwise.org/six-bearwise-basics/never-leave-pet-food-outdoors/) Wash bowls and put supplies away after each meal. For a kibble bin, a snug lid that fits the whole bag keeps food tidy in a car or a kitchen, but it is not bear-resistant; the maker of the one below makes no such claim.
+
+{{pick:iris-usa-airtight-dog-food-container-10-lb|Our pick|PetsRadar calls it its favorite all-rounder food container; the maker lists 12.75 quarts for about 10 lb of dry food, airtight seals and buckles, and makes no bear-resistance claim.|https://petsradar.com/buying-guides/best-pet-food-containers}}
 
 ## Identification, records, and an offline emergency folder
 
@@ -99,6 +111,16 @@ Pack:
 
 Dry the dog at the door and wipe paws before they cross the floor, and pick a sleeping spot away from the entrance. With two dogs, bring separate beds and bowls; see our [two-dog accommodation guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental). If an accident happens, blot promptly, follow the property's cleaning instructions and tell the host; stain removers can damage some materials, so check first. Before checkout, collect yard waste and remove loose hair. To tick these items off before you go, use the [packing list tool](/tools/packing-list).
 
+A washable drying towel and an entry mat are the two items that most reduce mud on the floor. Check each maker's stated size and care rule, and the current price on the listing.
+
+{{pick:soggy-doggy-super-shammy-towel|Our pick|The maker lists a 31 x 14 in microfiber chenille towel with hand pockets that is machine washable.|https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey}}
+
+{{pick:soggy-doggy-microfiber-doormat|Our pick|The maker lists Large and Extra Large sizes with a non-slip backing, and says it is machine washable and dryer safe.|https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate}}
+
+**Hot weather.** A cooling pad gives a dog a cooler place to lie in a warm cabin. It is a resting spot, not heatstroke prevention, and a maker's warnings about direct sunlight and hot cars apply.
+
+{{pick:green-pet-shop-cool-pet-pad|Best cooling mat|NBC Select names it its best cooling mat; the maker lists five sizes by dog weight and a 12-month warranty, and warns against direct sunlight and hot cars.|https://www.nbcnews.com/select/amp/rcna168150}}
+
 ## A practical canine first-aid kit
 
 First aid helps you respond while arranging veterinary care. AVMA's travel brochure lists a first aid kit and the phone numbers of your veterinarian, a national poison control hotline, and a 24-hour emergency veterinary hospital at your destination. [[2]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-travel-with-pet-2023.pdf) Discuss the contents with your veterinarian. A starting list:
@@ -142,9 +164,9 @@ Trial anything new, such as boots, barriers, crates and restraints, at home firs
 > - **What most people report:** six cabin packing lists from cabin companies and blogs, read 2026-11-16 (a small, non-random sample): none covered winterizing chemicals or heat-source barriers, and none clearly separated an ordinary food container from bear-resistant storage.
 > - **Unknown, and who to ask:** the cabin's own stairs, stove, supplied items and food-storage set-up. The host can tell you; get the answers before you pack.
 
-## Next step
+## What to buy first
 
-Turn this into your own checklist with the [packing list tool](/tools/packing-list), then run the [before-you-book checklist](/tools/checklist) and the [pet cost and host confirmation tool](/tools/pet-cost-check) for the booking side. When you are ready to choose a cabin, browse [dog-friendly stays](/stays).`,
+A lid-tight food container, a drying towel and an entry mat come first; a cooling pad only if the trip is in warm weather. Turn this into your own checklist with the [packing list tool](/tools/packing-list), then run the [before-you-book checklist](/tools/checklist) and the [pet cost and host confirmation tool](/tools/pet-cost-check) for the booking side. When you are ready to choose a cabin, browse [dog-friendly stays](/stays).`,
   faqs: [
     {
       q: "How much dog food should I pack for a cabin vacation?",
@@ -174,7 +196,12 @@ Turn this into your own checklist with the [packing list tool](/tools/packing-li
     "new-years-eve-with-a-dog-in-a-vacation-rental",
     "christmas-week-in-a-cabin-with-a-dog",
   ],
-  relatedProducts: ["gunner-long-haul-bed", "kurgo-collaps-a-bowl", "kurgo-loft-wander-dog-bed"],
+  relatedProducts: [
+    "iris-usa-airtight-dog-food-container-10-lb",
+    "soggy-doggy-super-shammy-towel",
+    "soggy-doggy-microfiber-doormat",
+    "green-pet-shop-cool-pet-pad",
+  ],
   relatedTools: ["checklist", "pet-cost-check"],
   sources: [
     {

@@ -25,3 +25,13 @@ Levels: 1 confirmed by a source we read; 2 what most people report (3+ independe
 | Safe hot tub time or temperature for a dog | none read | 3 |
 | Liability if a dog is hurt at a rental pool | none read | 3 |
 | Whether a given home bans pool use when the page is silent | ask host | 3 |
+
+Added 2026-11-19 (pick cards; sources per docs/products/candidates-*.yml, pages not re-read this session):
+
+| Claim | Source URL | Level |
+| --- | --- | --- |
+| Soggy Doggy Super Shammy: 31 x 14 in, microfiber chenille, hand pockets, machine washable | https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey | 1 (maker) |
+| Soggy Doggy Microfiber Doormat: Large 26 x 36 in, Extra Large 36 x 60 in, non-slip backing, machine washable and dryer safe | https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate | 1 (maker) |
+| Cool Pet Pad: NBC Select "Best cooling mat"; maker lists five sizes by weight, 12-month warranty, warns against direct sunlight and hot cars | https://www.nbcnews.com/select/amp/rcna168150 | 1 (reviewer label and maker) |
+| A cooling pad is a resting spot, not heatstroke prevention or treatment | none | 3 (our judgment; Cornell calls heatstroke an emergency) |
+| Dry the dog on the porch with a dog-only towel | none | 3 (our advice) |

@@ -41,3 +41,10 @@ Added 2026-11-19 (pick cards; sources per docs/products/candidates-water-beach-h
 | Kurgo Collaps A Bowl: 24 oz, collapses under 1 in, top-rack dishwasher safe | https://www.kurgo.com/pet-travel-bowls/collaps-a-bowl | 1 |
 | Kurgo Splash Free Wander: tapered lip "prevent splashing", wedge lays flat on a seat, 24 oz; page gives no car-use claim beyond that, so label is "Flat on a car seat" | https://www.kurgo.com/p/splash-free-wander-dog-water-bowl/K01812 | 1 |
 | Keeping the bag's lot number and best-by date with a container (photograph the bag) | none | 3 (our suggestion) |
+
+## Independent fact-check 2026-11-19
+
+| Claim | Source | Level |
+| --- | --- | --- |
+| Collaps A Bowl, Splash Free Wander, Springland 22oz and 20oz, Gunner (nylon vs "silicone" caption, no capacity), Quencher (4.2 cups, 5.5 in, 4,000 mm lining, hand wash), IRIS (12.75 qt, about 10 lb, no bear claim, "pests and insects"), Kibble Carrier (5 lb, about 20 cups, PEVA liner, hand wash, no bear claim) all re-read; match | maker pages | 1 |
+| Vittles Vault table cell corrected: page says "heavy-duty BPA food-grade plastic" and a "proprietary sealing system"; the earlier "BPA-free ... airtight seal" was our paraphrase, not the page. Container not dishwasher safe, two dishes are; 6 cups, two 3-cup bowls, handle, capacity note confirmed. The maker URL 301-redirects to petmate.com/products/vittles-vault-travel-trainer-portable-food-storage-container | Petmate page | 1 |

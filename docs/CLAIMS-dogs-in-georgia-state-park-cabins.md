@@ -41,3 +41,4 @@ Discrepancies with our place files (content/places, all status unverified): (a) 
 | 31 | Leash pick: maker lists 5 ft, inside the 6-foot rule (RULES); bags/cleanup from the rules table | RULES, product record | 1 |
 
 - Rewrite fact-check 2026-11-19: Ruffwear Knot-a-Leash "5 ft (1.5 m) (Small and Large)" re-read on the maker page; ParkRules re-read: "6-foot leash at all times when not inside cottages", "no longer than six feet" at parks (level 1).
+- Independent fact-check 2026-11-19: Springland 22oz Classic ("lets you provide fresh water with one hand", polypropylene, aluminum carabiner, leak-proof lock design, top rack or hand wash) and Ruffwear Quencher (4.2 cups, 5.5 in, shell water-resistant, lining 4,000 mm waterproof, Food Contact Safe, hand wash) re-read; match. No change.

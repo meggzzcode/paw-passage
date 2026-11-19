@@ -32,3 +32,14 @@ Levels: 1 confirmed by a source we read; 2 what most people report (3+ independe
 | A seat cover protects upholstery and is not a restraint (follows the product record; not a CPS statement) | product record | 3 |
 | Buying checklist items 1 to 6 restate claims already in rows above (one restraint per dog, crate size and straps, measured space, barrier is a divider) | rows above | 1 / 3 |
 | Intro: no independent two-dog test found (reworded from "almost nothing has been tested" in the rewrite fact-check) | pages read | 3 |
+
+## Integration fact-check 2026-11-19 (independent)
+
+| Claim | Source | Level |
+| --- | --- | --- |
+| Sport Plus weight range: product page 18 to 110 lbs and "Rated to 25 lbs", sizing page 18 to 90 lbs; text now says so and cites [6] and [19] (sizing). CPS lists the older Clickit Sport, test dogs to 90 lbs, cited [20] | https://sleepypod.com/products/clickit-sport-plus ; https://sleepypod.com/pages/sizing ; https://centerforpetsafety.org/sleepypod-clickit-sport/ | 1 |
+| Lucky Kennel arithmetic (2 x 70 + 2 x 38 = 216 lb; 2 x 20.5 = 41 in; 2 x 110 + 2 x 45 = 310 lb; 2 x 22 = 44 in interior) checked against maker sizes and CPS Large listing (110 lb test dog, one crate, one dog) | luckyduck.com; CPS Large page | 1 / 3 (arithmetic) |
+| Ruffwear Load Up: girth sizes XXS to L/XL (32-42 in), no weight limit stated; testing page: MGA Research, 25/45/75 lb mannequins, not tested to the CPS protocol and "would not meet CPS's current certification" because of excursion limits. The last clause was added (it was omitted) | ruffwear.com pages | 1 |
+| Kurgo Tru-Fit: "crash tested for dogs up to 75lbs", size chart to 80-110 lb, selector lists Small, Medium, Large, 10 in tether with steel carabiner, five adjustment points, no CPS mention | kurgo.com | 1 |
+| Backseat Barrier and Happy Ride barrier wording matches pages (no weight capacity or crash test on the PetSafe page; "will not work with 2-door cars or mini vans") | kurgo.com, petsafe.com | 1 |
+| Rover Hammock Extended Width 63 x 56 in now cited [21] | kurgo.com | 1 |

@@ -656,7 +656,7 @@ products:
     brand: Tractive
     categories:
       - travel-safety
-    summary: A clip-on GPS tracker for dogs that uses a built-in SIM and cellular networks, sold for dogs above 8.8 lbs.
+    summary: A clip-on GPS tracker for dogs that uses a built-in SIM and cellular networks, sold for dogs above 8.8 lbs (one place on the page also says above 9 lbs).
     keySpecs:
       - Maker says it is for dogs above 8.8 lbs; 2.8 x 1.1 x 0.7 in and 1.4 oz; fits collar widths up to 1.1 in
       - Battery listed as up to 2 weeks with Power Saving Zones and up to 6 days without them
@@ -730,7 +730,7 @@ products:
       - Maker says it offers up to 3 months of battery life and wireless charging
       - Described as an all-in-one smart collar with GPS tracking, a colored LED night light and a stainless steel frame
       - Maker lists IP68 and IP66K certification, resistant in fresh and salt water up to 50 meters deep
-      - Maker describes a modular design for XS to XL dogs and says to check the fit chart before ordering
+      - Maker describes a modular design for XS to XL dogs
       - Maker describes a Fi Puppy Warranty that swaps the collar for free when a puppy is full grown
       - This product page does not state the cellular carrier, coverage area or subscription terms
     specSource:
@@ -2403,6 +2403,7 @@ products:
       - travel-safety
     summary: A small cellular GPS tracker whose maker says a paid subscription is required for it to operate.
     keySpecs:
+      - Tree Line Review calls it "the most inaccurate location-wise" of the trackers it compared (independent opinion, not a measurement we made)
       - The maker says a paid plan is required for the tracker to operate (plans named Basic and Premium; no cost recorded here)
       - Weight 29 g; size 60 x 25 x 20 mm; page states no dog size or weight range, only 'universal fit'
       - Battery up to 30 days in power save mode; about 1 hour fast charge (maker)
@@ -2437,9 +2438,9 @@ products:
       - travel-safety
       - large-dogs
       - car-safety
-    summary: A vest-style car harness that connects to a rear-seat seat belt and has double D-rings for walking, listed by the maker for dogs from 18 to 110 lbs.
+    summary: A vest-style car harness that connects to a rear-seat seat belt and listed by the maker for dogs from 18 to 110 lbs.
     keySpecs:
-      - Maker lists sizes S, M, L and XL and a dog weight range of 18 to 110 lbs; girth ranges are in a size chart image on the page
+      - Maker lists sizes S, M, L and XL and a dog weight range of 18 to 110 lbs; girth ranges are in a size chart image on the page; the maker's sizing page gives 18 to 90 lbs for the same harness
       - Polyester, made without PFAS (maker)
       - Includes an S-Clip and a Buckle Shield
       - Maker warns Sleepypod harnesses should not be used with non-Sleepypod accessories

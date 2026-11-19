@@ -83,3 +83,5 @@ All forum items below were re-fetched on 2026-11-18 and confirmed before use. Sa
 | 68 | Pawtect Pads: Petful label "Best washable"; maker says machine washable with waterproof and floor-gripping backings | Gear picks | https://www.petful.com/pet-products/best-puppy-pads/ ; https://petparentsbrand.com/products/washable-puppy-pads | CONFIRMED (candidate record 2026-11-18) | 1 | Card text only |
 
 Rewrite fact-check 2026-11-19: PetSafe ramp (150 lb, rails, traction, rubber feet, folds and locks) and steps (200 lb, three heights, rails, textured steps, rubberized feet, handle) and Petful Best washable label re-read and matched; makers make no senior or mobility claim (steps page says 'all ages'); guide says so and points to the vet. readingMinutes 14.
+
+Independent fact-check 2026-11-19: PetSafe Quilted Bench Seat Cover re-read ("45 in L X 56 in W", heavy cotton twill, waterproof, high-grip bottom, seat belt access, machine washable, fits most cars, trucks and SUVs); match. No change.

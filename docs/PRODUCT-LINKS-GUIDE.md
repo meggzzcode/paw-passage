@@ -18,7 +18,9 @@ What happened to each (2026-11-19):
 | Sleepypod Clickit Range | Retired. Replaced by Sleepypod Clickit Sport Plus (new record). |
 | Gunner G1 | Retired. Replaced in the guides by the Lucky Duck Lucky Kennel, also Center for Pet Safety certified. |
 | Kurgo Collaps-A-Bowl | Kept, link moved to the Barn Red listing. |
-| AMK Me & My Dog, Kurgo first aid kit, Baskerville muzzle, North States Petyard Passage, LifeStages crate, KONG hammock | Retired. No in-stock listing of the same product was found. |
+| AMK Me & My Dog, Kurgo first aid kit, Baskerville muzzle, North States Petyard Passage, LifeStages crate, KONG hammock | Retired. No listing of the same product with a seller was found. |
+
+Also retired the same day because no Amazon listing could be matched or the match was doubtful: Saker Bomber harness, Orvis Sherpa throw, AKC Reunite tag, Gunner Long Haul bed, Petmate silicone bowl duo, Tractive DOG 6 XL, KONG cargo liner, Kurgo RSG first aid kit, Kurgo Mud Dog shower, Ruffwear Highlands sleeping bag, Kurgo Heather hammock. Add any of them back by following section 3.
 
 Stock is not tracked on the site (owner decision: it is one more thing to maintain). If a link later turns out to be dead, the Amazon sentence on the page is unaffected; see section 4 to fix it.
 
@@ -37,3 +39,9 @@ Stock is not tracked on the site (owner decision: it is one more thing to mainta
 
 ## 5. Monthly upkeep (15 minutes)
 Open each Amazon link from the live site once a month. Anything that is dead or the wrong item: section 4. Amazon earnings only count for qualifying sales after clicks from your tagged links; keep the Operating Agreement text (Amazon Associate statement) on pages that carry cards.
+
+## 6. State after the 2026-11-19 pass
+- 53 active products, all earning; every one appears in at least one published guide (`relatedProducts`).
+- 30 published guides, each with at least one earning product. Four new guides: dog hiking gear, cold-weather gear, keeping a dog cool, protecting the car interior.
+- Three guides were moved to draft because no catalog product fit them honestly: breed-restrictions-at-vacation-rentals, pet-friendly-listing-red-flags, bringing-a-dog-to-a-no-pets-rental. Set `status: published` again to restore them.
+- The Amazon ASINs for replacements came from search results (Amazon pages blocked our fetches), so stock and buy-box checks are still the owner's: see docs/cowork/07-amazon-links.md.

@@ -421,7 +421,7 @@ CDC and ASPCA recommend building up to a long trip with short drives first. Fitt
     ],
     gapsFound: [
       "AVMA vehicle-safety pages could not be loaded during research and are not cited; add them if they become readable.",
-      "Sleepypod pages showed some sizes as sold out on the access date; availability was not treated as a spec.",
+      "Sleepypod's own pages give three weight figures for the Clickit Sport Plus (18 to 110 lbs, 18 to 90 lbs, and a 'Rated to 25 lbs' line); the conflict is stated in the guide and left for the maker to resolve.",
       "Most ranked lists rely on a reviewer's opinion rather than checkable test records.",
       "Few pages explain what a crash test dummy represents or that certification is model- and size-specific.",
       "Harness and crate advice is usually split, with little help choosing between them for a particular dog and vehicle.",

@@ -84,6 +84,7 @@ products:
     summary: A soft, fold-flat carrier that for very small dogs that the maker says can be used as a car seat, with a safety tether inside.
     keySpecs:
       - Maker states it is rated to 12 lbs (5.5 kg) by the Center for Pet Safety
+      - Maker pages have disagreed on the weight rating (an earlier Sleepypod collection listing showed 18 lbs); the Atom's own page, re-read 2026-11-19, says 12 lbs, which is what we record. Check the maker's current page before you rely on either figure
       - Mesh panels on three sides and plush bedding
       - Folds flat for storage
       - Includes a built-in tether inside the carrier to prevent escapes (not a vehicle tether)
@@ -1947,3 +1948,486 @@ products:
       url: ""
     relatedGuides: []
     manufacturerClaimsVsIndependentTesting: Warmth and harness-strength wording are the maker's; no test is named.
+  - id: ezydog-dfd-life-jacket
+    name: DFD Life Jacket
+    brand: EzyDog
+    categories:
+      - beach-vacations
+      - outdoor-adventures
+    summary: A foam life jacket with a padded back grab handle, neoprene chest and belly straps and a leash D-ring, sold in sizes XS to XL.
+    keySpecs:
+      - Sizes XS (15-25 lbs, girth 19-32 in) to XL (90+ lbs, girth 30-48 in); weight ranges overlap, so use girth and length
+      - Maker claims up to 50% more flotation, with no baseline or flotation rating given
+      - Sturdy padded grab handle on the back, heavy-duty D-ring, side-release buckles
+      - Neoprene chest and belly straps; nylon shell described as built for repeated water exposure
+      - 1-year warranty on all products and 30-day returns, per the maker store
+    specSource:
+      title: DFD Life Jacket
+      url: https://store.ezydog.com/dfd-life-jacket/
+      publisher: EzyDog
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://store.ezydog.com/dfd-life-jacket/
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-18
+    active: true
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - dog-life-jacket-for-lakes-and-beaches
+    manufacturerClaimsVsIndependentTesting: Flotation and upright-swim claims are the maker's. Whole Dog Journal (July 2021, Stephanie Colman, two test dogs, observational, buoyancy not measured) gave the DFD its top paws; GearJunkie (April 2024, Meg Carney) names it best for big dogs. Neither is a lab test.
+  - id: petsafe-happy-ride-compact-telescoping-ramp
+    name: Happy Ride Compact Telescoping Dog Ramp
+    brand: PetSafe
+    categories:
+      - road-trips
+      - senior-dogs
+      - large-dogs
+    summary: A telescoping ramp that extends from 28 to 70 inches and collapses to 28 inches, rated by the maker to 300 lb.
+    keySpecs:
+      - Extends 28 to 70 in; collapses to 28 in
+      - Weight 14 lbs
+      - 'Maker: "Independently tested and rated to support the largest pets up to 300 lb" (no tester named)'
+      - High-traction surface, rubber feet, side rails
+      - 45-day satisfaction return window on the page; warranty period not stated
+    specSource:
+      title: Happy Ride Compact Telescoping Dog Ramp
+      url: https://petsafe.com/product/happy-ride-compact-telescoping-dog-ramp
+      publisher: PetSafe
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://petsafe.com/product/happy-ride-compact-telescoping-dog-ramp
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-18
+    active: true
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - dog-ramp-or-steps-for-the-car-and-cabin
+      - two-large-dogs-in-one-car
+      - dog-friendly-cabin-packing-list
+    manufacturerClaimsVsIndependentTesting: Maker says independently tested; no tester is named, so this is a maker claim.
+  - id: kurgo-rover-hammock-extended-width
+    name: Rover Hammock, Extended Width
+    brand: Kurgo
+    categories:
+      - road-trips
+      - large-dogs
+      - cleaning-and-rental-protection
+      - travel-comfort
+    summary: A 63 by 56 inch bench-seat hammock for full-size trucks and large SUVs, backed by the maker's lifetime guarantee.
+    keySpecs:
+      - Size 63 in W x 56 in L; maker says it fits most full size trucks and large SUVs
+      - 'Maker: "Waterproof and stain resistant"; materials not listed'
+      - Eight attachment points, Bench Beans anchors, under-seat paracord, hook-and-loop openings for seat belts and latches
+      - Front headrest straps can be removed to use it as a simple seat cover; carrying bag included
+      - 'Maker: "we will repair or replace your product free of charge" under its Lifetime Guarantee'
+    specSource:
+      title: Rover Hammock - Extended Width
+      url: https://kurgo.com/car-seat-covers/dog-hammocks/wander-hammock-extended-width
+      publisher: Kurgo
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://kurgo.com/car-seat-covers/dog-hammocks/wander-hammock-extended-width
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-18
+    active: true
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - two-large-dogs-in-one-car
+      - dog-car-safety-harness-and-crate-guide
+      - dog-friendly-cabin-packing-list
+    manufacturerClaimsVsIndependentTesting: none cited. A hammock protects the seat; it is not a restraint.
+  - id: north-states-mypet-universal-petgate
+    name: MyPet Universal Petgate
+    brand: North States
+    categories:
+      - cabin-vacations
+    summary: A plastic gate for doorways and hallways that mounts by pressure or, optionally, to a solid surface with hardware.
+    keySpecs:
+      - Models 8619/8625; 26 inches high
+      - Adjusts to fit openings 26 to 42 inches wide
+      - Pressure mount (no tools or measuring) or hardware mount to a solid surface such as a wooden stud; page says not to use anchors in drywall
+      - Plastic, light gray; rounded edges; wall cups add security and the maker says to use them
+      - Page says it should never be the top of a stairway when held only by tension
+    specSource:
+      title: North States MyPet Universal Petgate
+      url: https://northstatesind.com/north-states-mypet-universal-petgate/
+      publisher: North States
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://northstatesind.com/north-states-mypet-universal-petgate/
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-18
+    active: true
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - can-you-leave-a-dog-alone-in-a-vacation-rental
+      - vacation-rental-secure-fenced-yard
+      - vacation-rental-with-a-reactive-dog
+    manufacturerClaimsVsIndependentTesting: none cited. Containment strength is not claimed beyond "designed to contain pets".
+  - id: midwest-icrate-dog-crate
+    name: iCrate Dog Crate
+    brand: MidWest Homes for Pets
+    categories:
+      - cabin-vacations
+    summary: A folding wire crate with divider panel and removable pan, in single- or double-door versions.
+    keySpecs:
+      - SKU 1500; sizes 18, 22, 24, 30, 36, 42 and 48 in; single or double door
+      - Wire frame; slide-bolt latch with a Locking Tip and a Paw Block
+      - Includes divider panel and a removable leak-proof plastic pan
+      - Rubber feet to protect floors; sets up in seconds and folds flat (maker)
+      - Page gives no wire gauge, weights, folded dimensions or warranty
+    specSource:
+      title: iCrate Dog Crate
+      url: https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/
+      publisher: MidWest Homes for Pets
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-18
+    active: true
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - can-you-leave-a-dog-alone-in-a-vacation-rental
+      - bringing-a-dog-to-a-no-pets-rental
+      - dog-friendly-cabin-packing-list
+    manufacturerClaimsVsIndependentTesting: none cited. Reviewers on the page report latch and edge complaints; those are customer opinions, not specs.
+  - id: green-pet-shop-cool-pet-pad
+    name: Cool Pet Pad
+    brand: The Green Pet Shop
+    categories:
+      - travel-comfort
+      - cabin-vacations
+      - beach-vacations
+    summary: A pressure-activated gel cooling pad for dogs and cats, sold in five sizes by pet weight, that needs no water, refrigeration or electricity per the maker.
+    keySpecs:
+      - "Five sizes: Extra Small 11.8 x 15.7 in (0-8 lbs) up to Extra Large 27.5 x 43.3 in (above 80 lbs)"
+      - Maker states it cools up to 3 hours and recharges itself after 15-20 minutes of non-use
+      - Maker describes the gel as non-toxic and firm; page does not name the cover fabric
+      - Maker warns not to leave it in direct sunlight, heat, hot air or a hot car
+      - Maker says do not leave it unattended with a dog that chews or scratches excessively
+      - "Care: wipe clean with mild soap and water, dry fully before storing"
+      - 12-month limited warranty on verified defects in materials and workmanship, per the maker
+    specSource:
+      title: Cool Pet Pad
+      url: https://www.thegreenpetshop.com/products/cool-pet-pad
+      publisher: The Green Pet Shop
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://www.thegreenpetshop.com/products/cool-pet-pad
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-18
+    active: true
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - dog-friendly-cabin-packing-list
+      - can-dogs-go-in-a-rental-pool-or-hot-tub
+    manufacturerClaimsVsIndependentTesting: Cooling duration and recharge are maker claims. No named independent tester cited. Reviewers (NBC Select, PetsRadar) name it best cooling mat; PetsRadar names no hands-on tester; Reviewed (2021) was one author's home use over a few weeks.
+  - id: iris-usa-airtight-dog-food-container-10-lb
+    name: Airtight Dog Food Storage Container Up to 10 lbs
+    brand: IRIS USA
+    categories:
+      - feeding-and-hydration
+      - cabin-vacations
+      - road-trips
+    summary: A 12.75-quart latching airtight bin that holds about 10 lbs of dry food, with a wide top for scooping.
+    keySpecs:
+      - "Maker: 12.75 Qt, holds approximately 10 lbs of dry food, depending on food type"
+      - Dimensions 11.63 L x 9 W x 12.5 H in
+      - Airtight seals and buckles keep out air and humidity, per the maker
+      - Made in USA and BPA free, per the maker
+      - Page does not state a scoop, warranty or care instructions
+    specSource:
+      title: Airtight Dog Food Storage Container Up to 10 lbs
+      url: https://www.irisusainc.com/collections/airtight-pet-food-containers/products/airtight-dog-food-storage-container-up-to-10-lbs-3
+      publisher: IRIS USA
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://www.irisusainc.com/collections/airtight-pet-food-containers/products/airtight-dog-food-storage-container-up-to-10-lbs-3
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-18
+    active: true
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - dog-travel-bowls-and-food-storage
+      - dog-friendly-cabin-packing-list
+    manufacturerClaimsVsIndependentTesting: "Airtight claim is the maker's. PetsRadar names no product tester. Not bear-resistant: the maker makes no such claim."
+  - id: soggy-doggy-super-shammy-towel
+    name: Super Shammy Towel
+    brand: Soggy Doggy
+    categories:
+      - cleaning-and-rental-protection
+      - travel-comfort
+    summary: A microfiber chenille drying towel with hand pockets, one size, for wet or muddy dogs.
+    keySpecs:
+      - 31 x 14 in, one size
+      - Microfiber chenille, 80% polyester and 20% polyamide
+      - Page lists "Quick drying & odor free" and hand pockets
+      - "Care: machine wash alone, no chlorine bleach or fabric softener, tumble dry low"
+      - Page gives no absorbency figure and no warranty (links a returns policy)
+    specSource:
+      title: Soggy Doggy Super Shammy
+      url: https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey
+      publisher: Soggy Doggy Productions
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-18
+    active: true
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - airbnb-pet-damage-charge-after-checkout
+      - dog-friendly-cabin-packing-list
+    manufacturerClaimsVsIndependentTesting: none cited.
+  - id: soggy-doggy-microfiber-doormat
+    name: Microfiber Doormat (no bone)
+    brand: Soggy Doggy
+    categories:
+      - cabin-vacations
+      - cleaning-and-rental-protection
+    summary: A microfiber chenille doormat for muddy paws, in Large and Extra Large, with a non-slip backing.
+    keySpecs:
+      - Large 26 x 36 in; Extra Large 36 x 60 in; 1 in pile height
+      - Microfiber chenille, 80% polyester and 20% polyamide
+      - Maker describes it as "super absorbent and dirt trapping!"; non-slip backing
+      - Machine washable and dryer safe; fold in half with backing together before washing
+      - No warranty on the page
+    specSource:
+      title: Plain Chocolate Absorbent Doormat
+      url: https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate
+      publisher: Soggy Doggy Productions
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-18
+    active: true
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - airbnb-pet-damage-charge-after-checkout
+      - dog-friendly-cabin-packing-list
+    manufacturerClaimsVsIndependentTesting: none cited. Absorbency wording is the maker's.
+  - id: pet-parents-pawtect-pads
+    name: Pawtect Pads (washable pee pads, 2 pack)
+    brand: Pet Parents
+    categories:
+      - cabin-vacations
+      - cleaning-and-rental-protection
+      - senior-dogs
+    summary: Machine-washable reusable pads with a floor-gripping backing, sold in packs of two in four sizes.
+    keySpecs:
+      - Maker lists sizes Extra Small 18 x 24 in, Small 24 x 36 in, Medium 34 x 36 in, Large 41 x 41 in; 2 pads per pack
+      - "Maker describes triple-layer tech: WickQuick absorbency layer, waterproof backing, StickyPaw floor-gripping backing"
+      - Machine washable; maker says the pads last hundreds of washes or uses (no exact number)
+      - Fabric type not stated on the page; warranty terms not shown on the page (a repair or replace program is linked)
+    specSource:
+      title: Pawtect Pads (2pack)
+      url: https://petparentsbrand.com/products/washable-puppy-pads
+      publisher: Pet Parents
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://petparentsbrand.com/products/washable-puppy-pads
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-18
+    active: true
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - puppy-at-a-vacation-rental
+      - vacation-rental-with-a-senior-dog
+    manufacturerClaimsVsIndependentTesting: none cited. Waterproof and wash-life statements are the maker's own.
+  - id: midwest-lifestages-dog-crate
+    name: LifeStages Dog Crate (single or double door, with divider panel)
+    brand: MidWest Homes for Pets
+    categories:
+      - cabin-vacations
+    summary: A folding wire crate in six sizes with an included divider panel and removable plastic pan.
+    keySpecs:
+      - "Maker lists six sizes: 22, 24, 30, 36, 42 and 48 inch; single door and double door styles"
+      - Divider panel included, which the maker says helps adjust living space for house training
+      - Removable leak-proof plastic pan; rubber feet protect floors; slide-bolt latch with Paw Block
+      - Maker says it sets up in seconds and folds flat for storage
+      - Product page gives no dimensions, dog weight guidance or warranty text (we could not confirm them)
+    specSource:
+      title: LifeStages Dog Crate
+      url: https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/lifestages-dog-crate/
+      publisher: MidWest Homes for Pets
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/lifestages-dog-crate/
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-18
+    active: true
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - puppy-at-a-vacation-rental
+      - can-you-leave-a-dog-alone-in-a-vacation-rental
+    manufacturerClaimsVsIndependentTesting: none cited. Not described as crash-tested; it is not a car restraint.
+  - id: kong-classic
+    name: KONG Classic
+    brand: KONG
+    categories:
+      - cabin-vacations
+      - travel-comfort
+    summary: A stuffable natural rubber toy in six size bands by dog weight, with a softer Puppy KONG for under 9 months.
+    keySpecs:
+      - "Maker sizes: XS up to 5 lb, S up to 20 lb, M 15-35 lb, L 30-65 lb, XL 60-90 lb, XXL 85+ lb; size up if between sizes"
+      - 100% natural rubber; maker says red rubber is for average chewers and power chewers should size up or try KONG Extreme
+      - Maker says Puppy KONG (pink or blue) is softer, for puppies under 9 months, and suggests it for crate training
+      - Maker says made in the USA with globally sourced materials; supervised use only; discard if damaged; no toy is indestructible
+      - Dishwasher-safe claim not found on the page
+    specSource:
+      title: KONG Classic
+      url: https://www.kongcompany.com/kong-classic/
+      publisher: KONG Company
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://www.kongcompany.com/kong-classic/
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-18
+    active: true
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - can-you-leave-a-dog-alone-in-a-vacation-rental
+      - puppy-at-a-vacation-rental
+      - christmas-week-in-a-cabin-with-a-dog
+    manufacturerClaimsVsIndependentTesting: none cited. Durability wording is the maker's.
+  - id: ruffwear-the-beacon-dog-safety-light
+    name: The Beacon Dog Safety Light
+    brand: Ruffwear
+    categories:
+      - travel-safety
+      - outdoor-adventures
+    summary: A clip-on rechargeable light with three modes and three colors that attaches to Ruffwear collars and harness light loops.
+    keySpecs:
+      - "Three modes: Slow Flash, Fast Flash, Always On; three colors"
+      - Operating time up to 20 hrs; charge time about 1.5 hrs by micro USB; 280mAh LiPo battery
+      - Maker says waterproof to a depth of 1m for 30 minutes
+      - Quick Clip compatible with all Ruffwear collars and apparel light loops
+      - Page lists no weight and gives no warranty terms (links to a guarantee page we did not read)
+    specSource:
+      title: Waterproof & Rechargeable Dog Safety Light
+      url: https://ruffwear.com/products/the-beacon-safety-dog-light
+      publisher: Ruffwear
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://ruffwear.com/products/the-beacon-safety-dog-light
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-18
+    active: true
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - new-years-eve-with-a-dog-in-a-vacation-rental
+      - if-your-dog-gets-loose-on-a-trip
+    manufacturerClaimsVsIndependentTesting: Run time and waterproof depth are maker figures. Tree Line Review lists the same 1 m / 30 min rating under its pick but does not state it re-tested it.
+  - id: petcube-gps-tracker
+    name: Petcube GPS Tracker
+    brand: Petcube
+    categories:
+      - travel-safety
+    summary: A small cellular GPS tracker whose maker says a paid subscription is required for it to operate.
+    keySpecs:
+      - The maker says a paid plan is required for the tracker to operate (plans named Basic and Premium; no cost recorded here)
+      - Weight 29 g; size 60 x 25 x 20 mm; page states no dog size or weight range, only 'universal fit'
+      - Battery up to 30 days in power save mode; about 1 hour fast charge (maker)
+      - IP67 water resistance (maker); LTE-M cellular plus satellite positioning
+      - Maker lists a lifetime warranty with both plans (terms page not read)
+    specSource:
+      title: Petcube GPS Tracker for Dogs
+      url: https://petcube.com/tracker/
+      publisher: Petcube
+      accessedOn: 2026-11-18
+    manufacturerUrl: https://petcube.com/tracker/
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-18
+    active: true
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - if-your-dog-gets-loose-on-a-trip
+      - new-years-eve-with-a-dog-in-a-vacation-rental
+    manufacturerClaimsVsIndependentTesting: Battery and coverage are maker claims. Tree Line Review compares it but names it an also-ran, not an award pick.

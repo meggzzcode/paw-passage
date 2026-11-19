@@ -3,7 +3,8 @@ import { liveCategoryFor } from "@/content/gear-hub";
 import { AMAZON_DISCLOSURE, getApprovedLink, isAmazon } from "@/content/affiliates";
 import { getProduct, type GearPick } from "@/content/gear";
 import { trackProductClick } from "@/lib/analytics";
-import { productLinkId, productButton } from "@/content/affiliate-usage";
+import { productLinkId, productButton, isMonetized } from "@/content/affiliate-usage";
+import { PRODUCT_CALLOUTS_REQUIRE_AFFILIATE_LINK } from "@/content/publish-rule";
 
 /** Disclosure shown above the picks whenever at least one approved link will render. */
 export function hasAffiliateLinks(picks: GearPick[]) {
@@ -16,7 +17,8 @@ export function GearPicks({ picks }: { picks: GearPick[] }) {
   const loc = useLocation();
   const rows = picks
     .map((pick) => ({ pick, product: getProduct(pick.productId) }))
-    .filter((r) => !!r.product);
+    .filter((r) => !!r.product)
+    .filter((r) => !PRODUCT_CALLOUTS_REQUIRE_AFFILIATE_LINK || isMonetized(r.product!));
   if (rows.length === 0) return null;
   const links = rows.map((r) => getApprovedLink(productLinkId(r.product!)));
   const anyAffiliate = links.some(Boolean);

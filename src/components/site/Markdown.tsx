@@ -2,6 +2,10 @@ import { marked, type Tokens, type Token, type TokensList, type Renderer } from 
 import { cn } from "@/lib/utils";
 import { getApprovedLink } from "@/content/affiliates";
 import { trackProductClick } from "@/lib/analytics";
+import { getProduct } from "@/content/gear";
+import { resolveProductLink } from "@/content/gear-links";
+import { isMonetized } from "@/content/affiliate-usage";
+import { PRODUCT_CALLOUTS_REQUIRE_AFFILIATE_LINK } from "@/content/publish-rule";
 
 const escapeHtml = (s: string) =>
   s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -45,6 +49,67 @@ marked.use({
         : escapeHtml(text);
     },
   },
+});
+
+/**
+ * {{pick:product-id}} or {{pick:product-id|Best value}} on a line of its own is a product card inside an article.
+ * It shows only when the product has an approved affiliate link (so every callout can earn); otherwise nothing is
+ * rendered, which is why the sentences around it must read well without the card.
+ */
+interface PickToken extends Tokens.Generic {
+  type: "pick";
+  id: string;
+  label: string;
+  note: string;
+  sourceUrl: string;
+}
+marked.use({
+  extensions: [
+    {
+      name: "pick",
+      level: "block",
+      start: (src: string) => src.indexOf("{{pick:"),
+      tokenizer(src: string): PickToken | undefined {
+        // {{pick:id}}  {{pick:id|Label}}  {{pick:id|Label|Why we picked it}}  {{pick:id|Label|Why|https://source}}
+        const m = /^\{\{pick:([a-z0-9-]+)((?:\|[^}\n]*)?)\}\}[ \t]*(?:\n|$)/.exec(src);
+        if (!m) return undefined;
+        const parts = (m[2] ?? "")
+          .split("|")
+          .slice(1)
+          .map((x) => x.trim());
+        const src4 = parts[2] && /^https:\/\//.test(parts[2]) ? parts[2] : "";
+        return {
+          type: "pick",
+          raw: m[0],
+          id: m[1]!,
+          label: parts[0] ?? "",
+          note: parts[1] ?? "",
+          sourceUrl: src4,
+        };
+      },
+      renderer(token: Tokens.Generic) {
+        const t = token as PickToken;
+        const product = getProduct(t.id);
+        if (!product) return "";
+        if (PRODUCT_CALLOUTS_REQUIRE_AFFILIATE_LINK && !isMonetized(product)) return "";
+        const link = resolveProductLink(product);
+        if (!link) return "";
+        const cat = product.categories?.[0];
+        const attrs =
+          link.kind === "affiliate"
+            ? ` data-aff="${escapeHtml(product.affiliateId ?? product.id)}" data-partner="${escapeHtml(link.network ?? "")}"`
+            : "";
+        return `<aside class="no-print not-prose my-8 rounded-xl border border-border bg-secondary/50 p-5" data-pick="${escapeHtml(product.id)}">
+<p class="text-xs font-semibold uppercase tracking-[0.14em] text-terracotta">${escapeHtml(t.label || "Our pick")}</p>
+<p class="mt-1 font-display text-xl">${escapeHtml(`${product.brand} ${product.name}`)}</p>
+<p class="mt-2 text-sm text-muted-foreground">${escapeHtml(product.summary)}</p>${t.note ? `\n<p class="mt-2 text-sm"><span class="font-medium">Why we picked it:</span> ${escapeHtml(t.note)}${t.sourceUrl ? ` <a href="${escapeHtml(t.sourceUrl)}" target="_blank" rel="noopener noreferrer" class="underline">Source</a>` : ""}</p>` : ""}
+<p class="mt-4 flex flex-wrap items-center gap-4"><a${attrs} href="${escapeHtml(link.url)}" target="_blank" rel="${escapeHtml(link.rel)}" class="inline-flex h-10 items-center rounded-full bg-terracotta-button px-5 text-sm font-medium text-terracotta-foreground hover:brightness-95">${escapeHtml(link.label)}</a>${cat ? `<a href="/gear/${escapeHtml(cat)}#${escapeHtml(product.id)}" class="text-sm underline">Details and specs</a>` : ""}</p>
+<p class="mt-3 text-xs text-muted-foreground">Researched from the maker's own page, not tested by us. Check the current price on the listing before you buy.</p>
+</aside>
+`;
+      },
+    },
+  ],
 });
 
 const plain = (t: Token): string =>

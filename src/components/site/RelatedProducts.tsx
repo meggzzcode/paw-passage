@@ -3,6 +3,8 @@ import { getProducts } from "@/content/gear";
 import { resolveProductLink } from "@/content/gear-links";
 import { GearDisclosure } from "@/components/site/GearHubCards";
 import { trackProductClick } from "@/lib/analytics";
+import { isMonetized } from "@/content/affiliate-usage";
+import { PRODUCT_CALLOUTS_REQUIRE_AFFILIATE_LINK } from "@/content/publish-rule";
 
 /**
  * A small "related gear" block a guide page can reuse. Pass the product ids from the guide's frontmatter
@@ -18,7 +20,9 @@ export function RelatedProducts({
   heading?: string;
 }) {
   const loc = useLocation();
-  const items = getProducts(productIds ?? []).slice(0, 4);
+  const items = getProducts(productIds ?? [])
+    .filter((p) => !PRODUCT_CALLOUTS_REQUIRE_AFFILIATE_LINK || isMonetized(p))
+    .slice(0, 4);
   if (items.length === 0) return null;
   return (
     <section className="no-print mt-16" aria-labelledby="related-products">

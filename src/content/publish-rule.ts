@@ -27,6 +27,13 @@ export function guideIsPublic(g: GuideGate): boolean {
  */
 export const STAYS_REQUIRE_AFFILIATE_LINK = true;
 
+/**
+ * Owner decision (2026-11-18): articles call out a product only when it has an approved affiliate link of its own, so
+ * every recommendation in the text can earn. The /gear hub still lists every researched product with its maker link.
+ * Set to false to show all products in articles again.
+ */
+export const PRODUCT_CALLOUTS_REQUIRE_AFFILIATE_LINK = true;
+
 /** Verified and unverified stays are listed; unverified ones carry a "Not yet verified" label. Samples never go live. */
 export function stayIsPublic(s: { status: string }): boolean {
   return s.status === "verified" || s.status === "unverified";

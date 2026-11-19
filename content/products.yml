@@ -2466,3 +2466,38 @@ products:
       - dog-car-safety-harness-and-crate-guide
     manufacturerClaimsVsIndependentTesting: Maker states a top rating from the Center for Pet Safety and testing at 30 MPH. The maker page also says "Rated to 25 lbs" by CPS, which does not match its 18 to 110 lb range. The CPS listing read 2026-11-19 is for "Sleepypod Clickit Sport" (tested July 2014), not named "Sport Plus"; whether the two are the same design was not confirmed.
 
+  - id: sleepypod-clickit-sport
+    name: Clickit Sport Pet Harness
+    brand: Sleepypod
+    categories:
+      - road-trips
+      - travel-safety
+      - large-dogs
+      - car-safety
+    summary: The Sleepypod car harness the Center for Pet Safety lists as passed (tested July 2014), with test dogs rated up to 90 lbs in the largest sizes.
+    keySpecs:
+      - CPS lists it as passed, tested July 2014 under protocol CPS-001-014.01 (test numbers V14-698R for Small, V14-699R for Medium and Large, V15-393F for X-Large)
+      - CPS sizes are Small, Medium, Large and X-Large; test dogs were rated Small to 25 lbs, Medium 45 to 90 lbs, Large 75 to 90 lbs and X-Large to 90 lbs
+      - CPS says it inspected the Medium, Large and X-Large to confirm identical materials, stitching and hardware, so a dog up to 90 lbs who needs a Medium or Large is offered the same protection as the X-Large
+      - Maker specs (size chart, weight range, how it connects, materials) are not recorded, because the maker page sleepypod.com/products/clickit-sport returned 404 on 2026-11-19; Sleepypod's site currently shows a Clickit Sport Plus, which we did not match to this listing
+    specSource:
+      title: Sleepypod Clickit Sport Pet Harness (CPS listing)
+      url: https://centerforpetsafety.org/sleepypod-clickit-sport/
+      publisher: Center for Pet Safety
+      accessedOn: 2026-11-19
+    manufacturerUrl: https://sleepypod.com/
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-19
+    active: true
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - dog-car-safety-harness-and-crate-guide
+      - two-large-dogs-in-one-car
+    manufacturerClaimsVsIndependentTesting: The independent source is the CPS listing (passed, July 2014, test dogs to 90 lbs). No maker page for the Clickit Sport could be read, so no maker claim is recorded; the test is from 2014 and CPS lists no tested weight above 90 lbs.

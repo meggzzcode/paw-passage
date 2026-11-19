@@ -33,7 +33,7 @@ relatedProducts:
   - petsafe-happy-ride-bench-seat-cover
   - kurgo-rover-hammock-extended-width
   - kurgo-rover-cargo-cape
-  - kurgo-rover-backseat-bridge
+  - kurgo-heather-booster-seat
 relatedTools:
   - packing-list
 sources:
@@ -51,10 +51,6 @@ sources:
     accessedOn: 2026-11-19
   - title: Rover Cargo Cape
     url: https://www.kurgo.com/p/cargo-cape/POG30-17676
-    publisher: Kurgo
-    accessedOn: 2026-11-19
-  - title: Rover Backseat Bridge
-    url: https://www.kurgo.com/p/rover-backseat-bridge-backseat-extender/POG30-17768
     publisher: Kurgo
     accessedOn: 2026-11-19
   - title: Happy Ride Collapsible Travel Crate
@@ -173,14 +169,13 @@ Muddy paws on a pale bench seat, claws on a door panel, hair in every seam: a lo
 
 ## Cover, hammock or cargo liner: pick by vehicle and dog
 
-Retail guides sort these by dog and passenger type. Chewy's says hammocks keep a dog out of the footwell, bench covers install easily and have openings for seat belts, and cargo liners suit large dogs and crated dogs. [[9]](https://www.chewy.com/education/dog/pet-parenting/your-guide-to-the-best-dog-car-seat-covers-to-protect-your-ride) A seller page we read says a basic cover protects only the seat while a hammock also covers the footwell, and suggests covers for small, calm dogs and hammocks for large or active ones. [[12]](https://www.seatcoversolutions.com/blogs/news/are-dog-car-seat-covers-and-hammocks-same) Those are retailers' views, not tests. Here is how the maker dimensions line up with vehicle and dog.
+Retail guides sort these by dog and passenger type. Chewy's says hammocks keep a dog out of the footwell, bench covers install easily and have openings for seat belts, and cargo liners suit large dogs and crated dogs. [[8]](https://www.chewy.com/education/dog/pet-parenting/your-guide-to-the-best-dog-car-seat-covers-to-protect-your-ride) A seller page we read says a basic cover protects only the seat while a hammock also covers the footwell, and suggests covers for small, calm dogs and hammocks for large or active ones. [[11]](https://www.seatcoversolutions.com/blogs/news/are-dog-car-seat-covers-and-hammocks-same) Those are retailers' views, not tests. Here is how the maker dimensions line up with vehicle and dog.
 
 | Setup | Maker size | Where it goes | Who it suits (our reading of the maker facts) |
 | --- | --- | --- | --- |
 | Bench seat cover | 45 in long x 56 in wide, "fits the back seat of most cars, trucks and SUVs" [[2]](https://www.petsafe.com/p/happy-ride-quilted-bench-seat-cover/PTV00-17462/) | Rear bench | A car or SUV where you still want people in the back row, and a dog who rides on the seat |
 | Hammock, extended width | 63 in W x 56 in L, for "most full size trucks and large SUVs" [[3]](https://kurgo.com/car-seat-covers/dog-hammocks/wander-hammock-extended-width) | Rear bench, hanging between front and rear headrests | A big vehicle and a big dog, or two dogs on the bench |
 | Cargo cape | 52 in W x 62 in L, "most cargo areas" [[4]](https://www.kurgo.com/p/cargo-cape/POG30-17676) | Cargo area, with a fold-out bumper guard | A wagon or SUV where the dog rides behind the rear seat, ideally in a crate |
-| Backseat bridge | 16 in D x 52 in W; base holds up to 100 lb; not for gaps over 13 in [[5]](https://www.kurgo.com/p/rover-backseat-bridge-backseat-extender/POG30-17768) | Across the rear seat and footwell gap | A dog under the 100 lb figure who falls into the footwell |
 
 Two cautions. The extended hammock's page says it fits most full-size trucks and large SUVs and points compact vehicles to the smaller Rover Hammock, listed at 55 by 56 inches. [[3]](https://kurgo.com/car-seat-covers/dog-hammocks/wander-hammock-extended-width) And none of these pages lists a vehicle compatibility chart, so the tape measure is the real check.
 
@@ -194,15 +189,11 @@ A hammock hangs from the front headrests, so it also blocks the dog's route to t
 
 {{pick:kurgo-rover-hammock-extended-width|For a big dog in a truck or large SUV|The maker lists 63 by 56 in for most full size trucks and large SUVs, eight attachment points, hook-and-loop seat belt and latch openings, and a lifetime guarantee against manufacturing defects; it is not described as a restraint.|https://kurgo.com/car-seat-covers/dog-hammocks/wander-hammock-extended-width}}
 
-Vetstreet's hammock roundup says hammocks "aren't an alternative to more secure methods" such as crates or seat belts, and that a hammock "is not as secure as a crate." [[8]](https://www.vetstreet.com/gear/dog-gear/best-dog-car-hammocks) Its testing is anecdotal, so take it as a caution, not a measurement.
+Vetstreet's hammock roundup says hammocks "aren't an alternative to more secure methods" such as crates or seat belts, and that a hammock "is not as secure as a crate." [[7]](https://www.vetstreet.com/gear/dog-gear/best-dog-car-hammocks) Its testing is anecdotal, so take it as a caution, not a measurement.
 
-## The gap between the seats: a backseat extender
+## The gap between the seats
 
-Some dogs do not slip off the seat so much as drop into the footwell. Kurgo's Rover Backseat Bridge is a seat extender with a fold-down center barrier, listed at 16 by 52 by 1 inches, with a base the maker says holds up to 100 pounds and a note that it is not recommended for gaps over 13 inches from the seat back to the seat edge. The sides fold up for a human passenger, and it has a cup holder and storage pocket. The page calls it waterproof, names no materials, says nothing about how it attaches or whether seat belts can be reached, and gives "designed to prevent distracted driving" as its only safety wording. [[5]](https://www.kurgo.com/p/rover-backseat-bridge-backseat-extender/POG30-17768)
-
-That makes it a flat platform and a divider, not a restraint. Our arithmetic from the maker's figure: two 60-pound dogs add up to 120 pounds, above the 100 pound base rating, so a pair of large dogs should not count on it. If you have one big dog and a tall rear footwell, it is a tidy fix; for two, read our [two-large-dogs guide](/guides/two-large-dogs-in-one-car).
-
-{{pick:kurgo-rover-backseat-bridge|Fills the gap for one dog|The maker lists 16 by 52 in with a fold-down center barrier, a base that holds up to 100 lb and a 13 in gap limit; its only safety wording is that it is designed to prevent distracted driving, and the page does not say how seat belts are reached.|https://www.kurgo.com/p/rover-backseat-bridge-backseat-extender/POG30-17768}}
+Some dogs do not slip off the seat so much as drop into the footwell. A seat extender, sometimes called a bridge, is a flat platform that spans the rear footwell. This guide does not recommend a specific one, because we have no maker page for one that we can cite, so we cannot give a size or weight limit. If you go this route, measure the gap from the seat back to the seat edge, check the platform's weight rating against your dog, and confirm how it attaches. It is a platform and a divider, not a restraint, and a pair of large dogs adds up weight fast; for two, read our [two-large-dogs guide](/guides/two-large-dogs-in-one-car).
 
 ## The cargo area: a cape for an SUV or wagon
 
@@ -210,7 +201,7 @@ If the dog rides behind the rear seat, the damage is to the cargo floor, the fol
 
 {{pick:kurgo-rover-cargo-cape|For the cargo area|The maker lists 52 by 62 in with a fold-out bumper guard, a center zipper for 50/50 split seats, attachment points and hook-and-loop back pieces, and spot clean or hand wash care; it covers the cargo area and does not restrain a dog.|https://www.kurgo.com/p/cargo-cape/POG30-17676}}
 
-A cape is not a barrier or a crate. For a dog in the cargo area, see the cargo-anchor and barrier sections of our [harness and crate guide](/guides/dog-car-safety-harness-and-crate-guide) and [two large dogs](/guides/two-large-dogs-in-one-car). PetSafe's Happy Ride Collapsible Travel Crate is a soft-sided crate for the back seat, listed for pets up to 60 pounds at 27 by 19 by 28 inches, held by a headrest strap and the seat belt, with a removable waterproof fleece cover; the maker describes the dog as contained, not restrained, and the page makes no crash-test claim. [[6]](https://www.petsafe.com/p/happy-ride-collapsible-travel-crate/ZTV00-17289/) It may also not fit compact cars, per the maker. A seat cover under a crate is a reasonable pairing, but the crate's strap, not the cover, holds it down.
+A cape is not a barrier or a crate. For a dog in the cargo area, see the cargo-anchor and barrier sections of our [harness and crate guide](/guides/dog-car-safety-harness-and-crate-guide) and [two large dogs](/guides/two-large-dogs-in-one-car). PetSafe's Happy Ride Collapsible Travel Crate is a soft-sided crate for the back seat, listed for pets up to 60 pounds at 27 by 19 by 28 inches, held by a headrest strap and the seat belt, with a removable waterproof fleece cover; the maker describes the dog as contained, not restrained, and the page makes no crash-test claim. [[5]](https://www.petsafe.com/p/happy-ride-collapsible-travel-crate/ZTV00-17289/) It may also not fit compact cars, per the maker. A seat cover under a crate is a reasonable pairing, but the crate's strap, not the cover, holds it down.
 
 ## Seat belts, anchors and headrests
 
@@ -221,22 +212,24 @@ Covers change how the belts and headrests work, so check four things before the 
 3. **Headrest straps.** Hammock straps go over the front headrests. Make sure a front passenger can still adjust their headrest, and that nothing hangs across a vent or sensor.
 4. **Slip check.** Push the loaded cover. The makers list a high-grip bottom (PetSafe), Bench Beans anchors and under-seat paracord (Kurgo). [[2]](https://www.petsafe.com/p/happy-ride-quilted-bench-seat-cover/PTV00-17462/) [[3]](https://kurgo.com/car-seat-covers/dog-hammocks/wander-hammock-extended-width) If it slides on slippery seats, re-tighten the lower straps before you go.
 
-For a small dog, a booster raises the dog to see out and hold a tether. Kurgo's Heather booster is listed for dogs up to 30 pounds at 12 by 16 by 8 inches, installs on a bucket seat and has an integrated tether, with a removable liner and pad that machine wash on gentle. The maker does not claim the seat is crash tested and recommends a separate crash-tested harness. [[7]](https://www.kurgo.com/p/heather-dog-booster-seat/K01724) It is a different job from a cover: comfort and a tether point, not upholstery protection.
+For a small dog, a booster raises the dog to see out and hold a tether. Kurgo's Heather booster is listed for dogs up to 30 pounds at 12 by 16 by 8 inches, installs on a bucket seat and has an integrated tether, with a removable liner and pad that machine wash on gentle. The maker does not claim the seat is crash tested and recommends a separate crash-tested harness. [[6]](https://www.kurgo.com/p/heather-dog-booster-seat/K01724) It is a different job from a cover: comfort and a tether point, not upholstery protection.
+
+{{pick:kurgo-heather-booster-seat|For a small dog on a bucket seat|The maker lists dogs up to 30 lb at 12 by 16 by 8 in, with an integrated tether and a removable liner and pad that machine wash on gentle; it does not claim crash testing and recommends a separate crash-tested harness.|https://www.kurgo.com/p/heather-dog-booster-seat/K01724}}
 
 ## Claws, hair and wet dogs
 
 None of the guides we read tested these problems, so here is what they advise and where we are adding our own judgment.
 
-- **Claws.** Nationwide suggests a seat cover or plastic wrap over door surfaces for leather or vinyl. [[10]](https://blog.nationwide.com/dog-proofing-car/) NAPA says covers protect seats from claws. [[11]](https://knowhow.napaonline.com/pet-proof-your-car-tips-for-taking-rex-on-the-road/) Play Pet Brands says to pick a cover strong enough to protect against scratches. [[13]](https://www.playpetbrands.com/blogs/tips/from-scratches-to-shedding-protecting-your-car-from-incidental-pet-damage) No maker page we read gives a scratch-resistance rating.
-- **Hair.** Nationwide says it is "impossible to keep the seats and floor completely free of dog hair" and suggests a lint roller in the console. [[10]](https://blog.nationwide.com/dog-proofing-car/) NAPA suggests vacuuming before loading the pet and a small kit with paper towels and pet cleaner. [[11]](https://knowhow.napaonline.com/pet-proof-your-car-tips-for-taking-rex-on-the-road/)
-- **Wet and muddy dogs.** Chewy says water-resistant or machine-washable covers are worth prioritizing for a dog that swims. [[9]](https://www.chewy.com/education/dog/pet-parenting/your-guide-to-the-best-dog-car-seat-covers-to-protect-your-ride) The PetSafe cover is listed as waterproof and machine washable, and the Cargo Cape as waterproof with spot clean or hand wash care. [[2]](https://www.petsafe.com/p/happy-ride-quilted-bench-seat-cover/PTV00-17462/) [[4]](https://www.kurgo.com/p/cargo-cape/POG30-17676) We found no source on drying a wet dog before loading. Our suggestion: towel the dog off, and rinse off mud, before the dog climbs onto the cover. If the lake was involved, our [life jacket guide](/guides/dog-life-jacket-for-lakes-and-beaches) covers the water side.
+- **Claws.** Nationwide suggests a seat cover or plastic wrap over door surfaces for leather or vinyl. [[9]](https://blog.nationwide.com/dog-proofing-car/) NAPA says covers protect seats from claws. [[10]](https://knowhow.napaonline.com/pet-proof-your-car-tips-for-taking-rex-on-the-road/) Play Pet Brands says to pick a cover strong enough to protect against scratches. [[12]](https://www.playpetbrands.com/blogs/tips/from-scratches-to-shedding-protecting-your-car-from-incidental-pet-damage) No maker page we read gives a scratch-resistance rating.
+- **Hair.** Nationwide says it is "impossible to keep the seats and floor completely free of dog hair" and suggests a lint roller in the console. [[9]](https://blog.nationwide.com/dog-proofing-car/) NAPA suggests vacuuming before loading the pet and a small kit with paper towels and pet cleaner. [[10]](https://knowhow.napaonline.com/pet-proof-your-car-tips-for-taking-rex-on-the-road/)
+- **Wet and muddy dogs.** Chewy says water-resistant or machine-washable covers are worth prioritizing for a dog that swims. [[8]](https://www.chewy.com/education/dog/pet-parenting/your-guide-to-the-best-dog-car-seat-covers-to-protect-your-ride) The PetSafe cover is listed as waterproof and machine washable, and the Cargo Cape as waterproof with spot clean or hand wash care. [[2]](https://www.petsafe.com/p/happy-ride-quilted-bench-seat-cover/PTV00-17462/) [[4]](https://www.kurgo.com/p/cargo-cape/POG30-17676) We found no source on drying a wet dog before loading. Our suggestion: towel the dog off, and rinse off mud, before the dog climbs onto the cover. If the lake was involved, our [life jacket guide](/guides/dog-life-jacket-for-lakes-and-beaches) covers the water side.
 - **Cleaning the cover.** Follow the maker: machine wash (PetSafe, temperature not given), spot clean or hand wash and air dry (Kurgo cape). The hammock page links a care sheet we did not read, so check it. [[2]](https://www.petsafe.com/p/happy-ride-quilted-bench-seat-cover/PTV00-17462/) [[4]](https://www.kurgo.com/p/cargo-cape/POG30-17676) [[3]](https://kurgo.com/car-seat-covers/dog-hammocks/wander-hammock-extended-width)
 
 ## Rental and borrowed cars
 
-Rental companies set their own pet terms. Enterprise's U.S. page says pets are allowed, that they must stay in a carrier, and that you must return the car free of "pet hair and dander" to avoid cleaning or detailing fees; service animals can ride without a carrier. [[14]](https://www.enterprise.com/en/car-rental-faqs/us-general/car-rental-pet-friendly-policy.html) We did not read the U.S. pet terms of other companies, and franchise locations can differ, so read the agreement from the company you book with.
+Rental companies set their own pet terms. Enterprise's U.S. page says pets are allowed, that they must stay in a carrier, and that you must return the car free of "pet hair and dander" to avoid cleaning or detailing fees; service animals can ride without a carrier. [[13]](https://www.enterprise.com/en/car-rental-faqs/us-general/car-rental-pet-friendly-policy.html) We did not read the U.S. pet terms of other companies, and franchise locations can differ, so read the agreement from the company you book with.
 
-Our suggestions for a rental or a friend's car: ask before the dog gets in, use a cover that comes off cleanly without leaving marks on the seat, vacuum before you hand the car back, and use a carrier or crate where the company asks for one. A collapsible crate such as PetSafe's folds down to travel with you, though the maker warns it may not fit compact vehicles. [[6]](https://www.petsafe.com/p/happy-ride-collapsible-travel-crate/ZTV00-17289/) We have no source on how rental companies treat cover straps or anchors.
+Our suggestions for a rental or a friend's car: ask before the dog gets in, use a cover that comes off cleanly without leaving marks on the seat, vacuum before you hand the car back, and use a carrier or crate where the company asks for one. A collapsible crate such as PetSafe's folds down to travel with you, though the maker warns it may not fit compact vehicles. [[5]](https://www.petsafe.com/p/happy-ride-collapsible-travel-crate/ZTV00-17289/) We have no source on how rental companies treat cover straps or anchors.
 
 ## Heat and stops
 
@@ -246,7 +239,7 @@ A cover does nothing for heat. The ASPCA says never to leave an animal alone in 
 
 | Question | Why it is open | Check for yourself |
 | --- | --- | --- |
-| Whether any cover, hammock or extender is crash tested | No maker page we read names a test. The Backseat Bridge page's only safety wording is distracted driving, and the hammock page says its front-seat barrier keeps everyone safer | Treat all of them as non-restraints; see the crash-test guide |
+| Whether any cover, hammock or extender is crash tested | No maker page we read names a test. The hammock page says its front-seat barrier keeps everyone safer | Treat all of them as non-restraints; see the crash-test guide |
 | Weight limits for the bench cover and hammock | The pages we read list none | Ask the maker, especially for a large dog |
 | Which vehicles each product fits | No compatibility chart on the pages | Measure the seat or cargo floor and compare with the listed size |
 | How well a cover resists claws | Maker pages give no rating; the claw advice comes from non-maker guides | Look at the fabric and returns terms |

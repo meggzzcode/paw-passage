@@ -12,9 +12,6 @@ Levels: 1 = confirmed by a source we cite; 2 = what most people report (3+ indep
 | Hammock: eight attachment points, Bench Beans anchors, under-seat paracord, hook-and-loop openings for seat belts and latch systems, front headrest straps removable to use as a seat cover, waterproof and stain resistant (materials not listed), lifetime guarantee repair/replace for manufacturing defect, care PDF linked (not read) | same page | 1 |
 | Hammock page describes a barrier to the front seat, no restraint or crash-test claim | same page | 1 |
 | Kurgo Cargo Cape: 52 W x 62 L; most cargo areas; attachment points; hook-and-loop back pieces; fold-out bumper guard with reflective trim; center zipper for 50/50 splits; mesh pockets; waterproof and stain-resistant (fabric not named); spot clean or hand wash, air dry | https://www.kurgo.com/p/cargo-cape/POG30-17676 | 1 |
-| Kurgo Backseat Bridge: 16D x 52W x 1H; base holds up to 100 lb; not recommended for gaps over 13 in; designed to prevent distracted driving; waterproof; attachment and seat-belt access not stated | https://www.kurgo.com/p/rover-backseat-bridge-backseat-extender/POG30-17768 | 1 |
-| Bridge sides fold up for a human passenger; cup holder and storage pocket | content/products.yml record (specSource same page, 2026-11-18) | 1 |
-| Two 60-lb dogs = 120 lb, above the 100-lb base rating | arithmetic on the Kurgo figure; labelled "our arithmetic" | 3 |
 | PetSafe collapsible crate: pets up to 60 lb; 27 x 19 x 28 in; held by headrest strap and seat belt; removable waterproof fleece cover; "contained, not restrained"; no crash-test claim; may not fit compact vehicles | https://www.petsafe.com/p/happy-ride-collapsible-travel-crate/ZTV00-17289/ (catalog record, read 2026-11-18) | 1 |
 | Kurgo Heather booster: up to 30 lb; 12 x 16 x 8 in; bucket seat; integrated tether; liner and pad machine wash gentle; not claimed crash tested; recommends separate crash-tested harness | https://www.kurgo.com/p/heather-dog-booster-seat/K01724 (catalog record, read 2026-11-18) | 1 |
 | Vetstreet roundup: hammocks "aren't an alternative to more secure methods"; "not as secure as a crate"; testing anecdotal; affiliate disclosure | https://www.vetstreet.com/gear/dog-gear/best-dog-car-hammocks | 1 (as Vetstreet's statement) |
@@ -29,5 +26,10 @@ Levels: 1 = confirmed by a source we cite; 2 = what most people report (3+ indep
 | Which product suits which vehicle/dog (table last column) | maker dimensions | 3 (labelled our reading) |
 | Claw resistance, weight limits of bench cover and hammock, vehicle compatibility | no maker figure | 3 (unknown, in the table) |
 | Hepper "How to dog-proof your car" | returned HTTP 403; not read, not cited | n/a |
-| Hammock page: front-seat barrier described as 'keeping everyone safer'; no crash/restraint claim (table row in guide corrected; Bridge page alone says only 'distracted driving') | https://kurgo.com/car-seat-covers/dog-hammocks/wander-hammock-extended-width | 1 |
+| Hammock page: front-seat barrier described as 'keeping everyone safer'; no crash/restraint claim (table row in guide corrected) | https://kurgo.com/car-seat-covers/dog-hammocks/wander-hammock-extended-width | 1 |
 | Dek and intro no longer say 'none keeps a dog safe in a crash' (no source tests this); now 'no page we read claims it' | none | 3 |
+
+## Update 2026-11-19 (sport swap)
+
+- Kurgo Rover Backseat Bridge removed (retired: no buy box). The gap-between-seats paragraph is now generic, makes no product claim and cites nothing; it is labelled as not recommending a specific extender. Source numbers after the old [5] shifted down by one.
+- Added pick kurgo-heather-booster-seat on the existing booster paragraph; its facts (up to 30 lb, 12 x 16 x 8 in, integrated tether, not claimed crash tested) are the existing claims row for the Heather booster, source [6] https://www.kurgo.com/p/heather-dog-booster-seat/K01724.

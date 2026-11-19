@@ -19,8 +19,6 @@ Levels: 1 confirmed by a source we read; 2 what most people report (3+ independe
 | Ruffwear Load Up: girth sizes, no weight limit stated | https://ruffwear.com/products/load-up-dog-car-harness | 1 (maker page) |
 | Ruffwear testing page: Ruffwear prototype sled tests at MGA Research (calls it an independent facility; 'commissioned' not stated), 25/45/75 lb mannequins; not tested to CPS protocol | https://ruffwear.ca/pages/load-up-car-harness-testing-design | 1 (maker page) |
 | Kurgo Tru-Fit: crash tested up to 75 lbs; size chart to 80-110 lbs | https://www.kurgo.com/p/enhanced-strength-dog-car-harness/K01255 | 1 (maker page) |
-| Kurgo Rover Bridge: base holds up to 100 lb; not for gaps over 13 in; "Designed to prevent distracted driving" | https://www.kurgo.com/p/rover-backseat-bridge-backseat-extender/POG30-17768 | 1 (maker page) |
-| Two 70 lb dogs = 140 lb, above the Bridge's 100 lb figure (our arithmetic) | Kurgo page | 3 |
 | Pawventures (Feb 2026): "Never allow multiple dogs to ride loose together in a vehicle"; vehicle table unsourced | https://pawventures.pages.dev/blog/traveling-with-multiple-dogs-tips/ | 1 (competitor claim, attributed) |
 | AAA Northeast (Jan 2024): laws differ by state; Maine no pets on driver's lap; Massachusetts bars interference with driving; New York no specific restraint law | https://magazine.northeast.aaa.com/?p=95415 | 1 |
 | Adaptil blog: separate space per dog, crates or dog guards, crash-tested harnesses; no standards or weights given | https://blog.adaptil.com/ca_en/travelling-with-two-or-more-dogs | 1 |
@@ -37,9 +35,15 @@ Levels: 1 confirmed by a source we read; 2 what most people report (3+ independe
 
 | Claim | Source | Level |
 | --- | --- | --- |
-| Sport Plus weight range: product page 18 to 110 lbs and "Rated to 25 lbs", sizing page 18 to 90 lbs; text now says so and cites [6] and [19] (sizing). CPS lists the older Clickit Sport, test dogs to 90 lbs, cited [20] | https://sleepypod.com/products/clickit-sport-plus ; https://sleepypod.com/pages/sizing ; https://centerforpetsafety.org/sleepypod-clickit-sport/ | 1 |
 | Lucky Kennel arithmetic (2 x 70 + 2 x 38 = 216 lb; 2 x 20.5 = 41 in; 2 x 110 + 2 x 45 = 310 lb; 2 x 22 = 44 in interior) checked against maker sizes and CPS Large listing (110 lb test dog, one crate, one dog) | luckyduck.com; CPS Large page | 1 / 3 (arithmetic) |
 | Ruffwear Load Up: girth sizes XXS to L/XL (32-42 in), no weight limit stated; testing page: MGA Research, 25/45/75 lb mannequins, not tested to the CPS protocol and "would not meet CPS's current certification" because of excursion limits. The last clause was added (it was omitted) | ruffwear.com pages | 1 |
 | Kurgo Tru-Fit: "crash tested for dogs up to 75lbs", size chart to 80-110 lb, selector lists Small, Medium, Large, 10 in tether with steel carabiner, five adjustment points, no CPS mention | kurgo.com | 1 |
 | Backseat Barrier and Happy Ride barrier wording matches pages (no weight capacity or crash test on the PetSafe page; "will not work with 2-door cars or mini vans") | kurgo.com, petsafe.com | 1 |
 | Rover Hammock Extended Width 63 x 56 in now cited [21] | kurgo.com | 1 |
+
+## Update 2026-11-19 (sport swap)
+
+- Kurgo Rover Backseat Bridge removed (retired). Sources [14] (bridge), [19] (Sleepypod sizing) and the old [20] (CPS listing) were dropped or merged; [6] is now the CPS Clickit Sport listing https://centerforpetsafety.org/sleepypod-clickit-sport/, and later numbers shifted.
+- CPS Clickit Sport listing (read 2026-11-19): passed, 5 Star, tested July 2014, protocol CPS-001-014.01; test dogs Small to 25 lb, Medium 45 to 90, Large 75 to 90, X-Large to 90; CPS note that M, L and XL were inspected for identical materials, stitching and hardware. Level 1.
+- Sleepypod product page for the Clickit Sport could not be read (sleepypod.com/products/clickit-sport returned 404), so no maker claim is made about it; the guide says so. Level 3 (unknown, stated).
+- Above 90 lb the listing gives no tested weight: our reading of the listing, level 3.

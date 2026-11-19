@@ -55,7 +55,7 @@ CPS describes crash forces as mass multiplied by acceleration. For a harness the
 4. **A connection you can trust.** Harnesses normally connect to the seat belt. CPS says extension tethers and zipline-style products increase the risk of injury, and it restricts brands that sell extension tethers from its certification program. [[5]](https://centerforpetsafety.org/cargo-area-connection-advisory/) [[6]](https://centerforpetsafety.org/extension-tether-advisory/) Crates should always be secured with strength-rated anchor straps; CPS says its 2015 crate study found proper anchor straps significantly reduced crate excursion into the seatback or passenger compartment. [[5]](https://centerforpetsafety.org/cargo-area-connection-advisory/)
 5. **A safe place in the vehicle.** CDC and ASPCA advise the back seat. [[7]](https://www.cdc.gov/healthy-pets/travel/index.html) [[8]](https://www.aspca.org/pet-care/general-pet-care/travel-safety-tips) For a cargo area, CPS cautions that anchors are not always weight-rated for crash forces and the platform may not be as solid as it looks. Ask your vehicle manufacturer about anchor strength, platform load capacity, and anchor upgrades. [[5]](https://centerforpetsafety.org/cargo-area-connection-advisory/)
 6. **Crate size and fit.** CDC and ASPCA say a crate should let the dog stand, sit, lie down and turn around, be well ventilated, and be secured so it cannot slide or shift when the car stops. [[7]](https://www.cdc.gov/healthy-pets/travel/index.html) [[8]](https://www.aspca.org/pet-care/general-pet-care/travel-safety-tips) One maker lists its dimensions for travel use and suggests going up a size for in-home use. [[12]](https://www.luckyduck.com/products/lucky-kennel) Also measure your cargo space and anchor points.
-7. **Tested components.** CPS listings often name the accessories used in the test, including the anchor straps for crates. [[14]](https://centerforpetsafety.org/lucky-duck-lucky-kennel-large/) Sleepypod warns against using its carriers and harnesses with non-Sleepypod accessories. [[9]](https://sleepypod.com/products/clickit-sport-plus) Swapping parts means you are no longer using the tested configuration.
+7. **Tested components.** CPS listings often name the accessories used in the test, including the anchor straps for crates. [[14]](https://centerforpetsafety.org/lucky-duck-lucky-kennel-large/) Sleepypod's page for its current harness warns against using its harnesses with non-Sleepypod accessories. [[9]](https://sleepypod.com/products/clickit-sport-plus) Swapping parts means you are no longer using the tested configuration.
 
 ## Harness or crate?
 
@@ -75,19 +75,19 @@ These are examples of how to read a listing, not a ranking. The test records bel
 
 | Product type and model | Sizes on the CPS listing | Test dog | Tested |
 | --- | --- | --- | --- |
-| Harness, Sleepypod Clickit Sport (the model CPS lists; the maker now sells the Sport Plus) [[16]](https://centerforpetsafety.org/sleepypod-clickit-sport/) | Small, Medium, Large, X-Large | Small 25 lb; Medium 45 to 90 lb; Large 75 to 90 lb; X-Large up to 90 lb | July 2014, protocol CPS-001-014.01 |
+| Harness, Sleepypod Clickit Sport [[16]](https://centerforpetsafety.org/sleepypod-clickit-sport/) | Small, Medium, Large, X-Large | Small 25 lb; Medium 45 to 90 lb; Large 75 to 90 lb; X-Large up to 90 lb | July 2014, protocol CPS-001-014.01 |
 | Carrier, Sleepypod Atom [[13]](https://centerforpetsafety.org/sleepypod-atom/) | One size | 12 lb, five stars | August 2024 |
 | Crate, Lucky Duck Lucky Kennel Large [[14]](https://centerforpetsafety.org/lucky-duck-lucky-kennel-large/) | Large (the directory list also shows the Intermediate and Medium [[1]](https://centerforpetsafety.org/cps-certified/)) | 110 lb, with the Lucky Ratchet Strap Kit | July 2022 |
 
-- **Clickit Sport Plus.** The maker's product page lists sizes S to XL for dogs of 18 to 110 lbs, says it connects to any vehicle seat belt and says it earned a 5 star rating from CPS. [[9]](https://sleepypod.com/products/clickit-sport-plus) Read that with care. CPS lists the earlier "Clickit Sport", not "Sport Plus" [[16]](https://centerforpetsafety.org/sleepypod-clickit-sport/), and the same product page also carries a line saying "Rated to 25 lbs." by CPS. Sleepypod's sizing page gives the Sport Plus 18 to 90 lbs (and 18 to 110 lbs to its Clickit Range), so the maker's own pages disagree about the weight range, and none of them explains the difference. Use the maker's rib cage chart, not weight alone. [[10]](https://sleepypod.com/pages/sizing)
+- **Clickit Sport.** CPS lists it as passed with a 5 star rating, tested July 2014, and says it inspected the Medium, Large and X-Large to confirm identical materials, stitching and hardware, so a dog up to 90 lbs who needs a Medium or Large is offered the same protection as the X-Large. [[16]](https://centerforpetsafety.org/sleepypod-clickit-sport/) The listing is what we can confirm: we could not find a Sleepypod product page for the Clickit Sport to read, so the maker's own statements about sizes, weight range and how it connects are not confirmed here. Sleepypod's sizing page explains how it measures for its harnesses; use the maker's rib cage chart, not weight alone. [[10]](https://sleepypod.com/pages/sizing)
 - **Atom.** The maker describes a crash-tested carrier rated to 12 lbs by CPS, with a built-in tether inside the carrier (described as preventing escapes; it is not a vehicle tether) and a fold-flat design. [[11]](https://sleepypod.com/products/atom) Its CPS listing page shows the 12 lb test dog and a five-star rating. [[13]](https://centerforpetsafety.org/sleepypod-atom/) The product page does not describe how to secure the carrier in a vehicle, so get the maker's instructions before you drive.
 - **Lucky Kennel.** The maker lists Medium (under 50 lbs), Intermediate (under 70 lbs) and Large (70 to 110 lbs) with integrated tie-downs and a separate ratchet strap kit. [[12]](https://www.luckyduck.com/products/lucky-kennel)
 
 ### Harness pick
 
-For a dog riding on the rear seat, we start with Sleepypod's Clickit Sport Plus: a vest-style harness that connects to a vehicle seat belt, comes with an S-Clip and a Buckle Shield. CPS lists an earlier model, the Clickit Sport, and neither the CPS page nor the maker's pages say the Sport Plus is the same design. This is based on the cited listings, not our own testing, and the weight question above is real: before you order, ask Sleepypod in writing which CPS rating covers your dog's size, because CPS's test dogs for the older Sport top out at 90 lbs and the maker's pages give three different weight figures. If your dog is heavier than 90 lbs, wait for that reply.
+For a dog riding on the rear seat, we start with Sleepypod's Clickit Sport, the harness CPS lists: passed, 5 star, tested July 2014, with test dogs rated to 25 lbs (Small), 45 to 90 lbs (Medium), 75 to 90 lbs (Large) and to 90 lbs (X-Large). [[16]](https://centerforpetsafety.org/sleepypod-clickit-sport/) That is a listing of a test, not our own testing, and it covers dogs up to 90 lbs; if yours is heavier, the listing gives no tested weight. Before you order, check the size against the listing and ask Sleepypod for its fitting guidance, because we could not read a maker page for this model.
 
-{{pick:sleepypod-clickit-sport-plus|Our pick|The maker's product page lists sizes S to XL for dogs of 18 to 110 lbs (its sizing page says 18 to 90 lbs) and says it connects to any vehicle seat belt; CPS lists the earlier Clickit Sport (2014), not the Sport Plus, so confirm the rating for your size with the maker.|https://sleepypod.com/products/clickit-sport-plus}}
+{{pick:sleepypod-clickit-sport|Our pick|CPS lists it as passed with a 5 star rating, tested July 2014, with test dogs rated up to 90 lbs; we could not read a maker page for this model, so confirm size and fit with Sleepypod.|https://centerforpetsafety.org/sleepypod-clickit-sport/}}
 
 ### Crate pick
 
@@ -157,7 +157,7 @@ CDC and ASPCA recommend building up to a long trip with short drives first. Fitt
 
 ## What to buy first
 
-1. **The restraint.** One that matches your dog's weight and measurements and has a CPS listing you have read: the Clickit Sport Plus on the rear seat belt, or a Lucky Kennel plus its strap kit, with the size confirmed against the maker's weight guide.
+1. **The restraint.** One that matches your dog's weight and measurements and has a CPS listing you have read: the Clickit Sport on the rear seat belt, or a Lucky Kennel plus its strap kit, with the size confirmed against the maker's weight guide.
 2. **Seat protection, only if the dog rides on a bench.** A hammock or cover sized to your vehicle's rear seat. Our [large-dog rental guide](/guides/vacation-rentals-that-welcome-large-dogs) covers a hammock for big vehicles.
 3. **The rest of the kit.** Water, bowls and a leash from the [cabin packing list](/guides/dog-friendly-cabin-packing-list) or the [packing list tool](/tools/packing-list), then run the [trip checklist](/tools/checklist) before you leave.`,
   faqs: [
@@ -183,22 +183,20 @@ CDC and ASPCA recommend building up to a long trip with short drives first. Fitt
     },
     {
       q: "Which harness should I look at first?",
-      a: "Start with a harness whose CPS listing shows a test dog at or above your dog's weight, in your dog's size. The Sleepypod harness we looked at first has a mixed record to read: CPS lists the earlier Clickit Sport (2014) with test dogs up to 90 lbs, the maker's product page lists the Clickit Sport Plus for 18 to 110 lbs and also says 'Rated to 25 lbs', while its sizing page says 18 to 90 lbs. Paws & Passage has not tested any harness; confirm your dog's size and the exact model with the maker and CPS before buying.",
+      a: "Start with a harness whose CPS listing shows a test dog at or above your dog's weight, in your dog's size. The Sleepypod Clickit Sport is the harness CPS lists: passed with 5 stars in July 2014, with test dogs rated to 25 lbs (Small), 45 to 90 lbs (Medium and Large) and to 90 lbs (X-Large). Paws & Passage has not tested any harness; check the listing for your dog's size, and confirm fit with the maker before buying.",
     },
   ],
   gear: [
     {
-      productId: "sleepypod-clickit-sport-plus",
+      productId: "sleepypod-clickit-sport",
       bestFor:
-        "A medium to large dog riding on the rear seat of a car or SUV, whose owner will confirm the weight rating with the maker",
+        "A dog up to 90 lbs riding on the rear seat of a car or SUV, whose owner will check the size against the CPS listing",
       whyItMadeTheList:
-        "It matches the criteria for independent testing and a seat-belt connection: the maker's product page lists S to XL for dogs of 18 to 110 lbs (its sizing page says 18 to 90 lbs) and says it connects to any vehicle seat belt, and CPS lists the earlier Clickit Sport as passed in July 2014. It includes an S-Clip and a Buckle Shield.",
+        "It is the harness the Center for Pet Safety lists: passed with a 5 star rating in July 2014, with test dogs rated to 25 lbs (Small), 45 to 90 lbs (Medium), 75 to 90 lbs (Large) and to 90 lbs (X-Large), and CPS inspected the Medium, Large and X-Large for identical materials, stitching and hardware.",
       watchOuts: [
-        "CPS lists the Clickit Sport (2014), not the Sport Plus, so the Sport Plus is not itself in the directory",
-        "The maker's product page says 'Rated to 25 lbs' by CPS and also 18 to 110 lbs, while its sizing page says 18 to 90 lbs; confirm the rating for your dog's size with Sleepypod before buying",
-        "CPS test dogs for the Sport listing top out at 90 lbs",
+        "The CPS test is from 2014 and its largest test dog is 90 lbs; the listing gives no tested weight above that",
+        "We could not find a Sleepypod product page for the Clickit Sport, so the maker's own size chart, weight range and connection details are not confirmed here; ask Sleepypod before buying",
         "Measure your dog's rib cage and compare with the maker's size chart instead of relying on weight alone",
-        "Do not use non-Sleepypod accessories with it, per the maker's warning",
       ],
     },
     {
@@ -247,7 +245,7 @@ CDC and ASPCA recommend building up to a long trip with short drives first. Fitt
     "two-large-dogs-in-one-car",
   ],
   relatedProducts: [
-    "sleepypod-clickit-sport-plus",
+    "sleepypod-clickit-sport",
     "lucky-duck-lucky-kennel",
     "sleepypod-atom",
     "kurgo-heather-booster-seat",
@@ -421,7 +419,7 @@ CDC and ASPCA recommend building up to a long trip with short drives first. Fitt
     ],
     gapsFound: [
       "AVMA vehicle-safety pages could not be loaded during research and are not cited; add them if they become readable.",
-      "Sleepypod's own pages give three weight figures for the Clickit Sport Plus (18 to 110 lbs, 18 to 90 lbs, and a 'Rated to 25 lbs' line); the conflict is stated in the guide and left for the maker to resolve.",
+      "The maker's product page for the Clickit Sport could not be found (sleepypod.com/products/clickit-sport returned 404); the guide relies on the CPS listing and says so.",
       "Most ranked lists rely on a reviewer's opinion rather than checkable test records.",
       "Few pages explain what a crash test dummy represents or that certification is model- and size-specific.",
       "Harness and crate advice is usually split, with little help choosing between them for a particular dog and vehicle.",

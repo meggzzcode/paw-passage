@@ -460,6 +460,12 @@ links:
     approved: false
     kind: product
     notes: "OFF: Cowork 2026-11-19: no buy box, brand not on page, no weight range or CPS wording. Added 2026-11-19 as replacement for sleepypod-clickit-range. Amazon ASIN B0FS4DL1QF (MEDIUM; title seen in search results: Certified Dog Safety Car Harness Clickit Sport Plus); ASIN from search results, not yet verified on the Amazon page; stock NOT confirmed; size not stated. Size-specific listings seen: Medium Jet Black B08JQQF9YX, Large Jet Black B08JRR6V58, Small Charcoal B08JQSDXX4 (Large Charcoal B08JQT939P shown unavailable)."
+  - id: sleepypod-clickit-sport
+    network: Amazon Associates
+    url: https://www.amazon.com/dp/B08JQQF9YX?tag={amazonTrackingId}
+    approved: true
+    kind: product
+    notes: 'ASIN B08JQQF9YX appeared in an owner Amazon search on 2026-11-19 (title Clickit Sport) but was not opened; verify buy box and weight range (docs/cowork/09)'
   - id: kurgo-loft-wander-dog-bed
     network: Amazon Associates
     url: https://www.amazon.com/dp/B01JFEAL1O?tag={amazonTrackingId}

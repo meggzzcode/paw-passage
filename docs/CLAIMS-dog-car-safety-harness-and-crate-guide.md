@@ -29,3 +29,9 @@ Article: src/content/guides/dog-car-safety-harness-and-crate-guide.ts. Existing 
 | Atom: maker "Rated to 12 lbs", CPS 12 lb test dog, 5 Star, Aug 2024; "safety tether to prevent escapes"; folds flat; no vehicle-securing steps. The "18 lbs" figure is in the site navigation and a carriers banner (not a collection page); wording corrected | maker Atom page, CPS Atom page | 1 |
 | Kurgo Heather: up to 30 lbs, any bucket seat, integrated tether, seat itself not described as crash tested, replace after a crash, liner machine washable, 12 x 16 x 8 in (re-read) | https://www.kurgo.com/p/heather-dog-booster-seat/K01724 | 1 |
 | Research note about "sold out" Sleepypod sizes replaced with a note on the weight conflict (no stock content) | n/a | n/a |
+
+## Update 2026-11-19 (sport swap)
+
+- Sleepypod Clickit Sport Plus is replaced by the Clickit Sport everywhere (pick, gear entry, relatedProducts, FAQ, table, prose). The earlier 'Sport Plus is not the CPS model' caveats and the three-weight-figure conflict were removed because they no longer apply.
+- All Clickit Sport facts come from the CPS listing https://centerforpetsafety.org/sleepypod-clickit-sport/ (read 2026-11-19): passed, 5 Star, July 2014, CPS-001-014.01, test dogs Small 25 lb, Medium 45 to 90, Large 75 to 90, X-Large to 90; CPS note on identical M, L, XL construction. Level 1.
+- The maker page for the Clickit Sport returned 404, so no maker size, weight range or connection claim is made; stated in the guide. The Sport Plus maker page [9] is still cited only for the non-Sleepypod accessories warning; the sizing page [10] only for how Sleepypod measures.

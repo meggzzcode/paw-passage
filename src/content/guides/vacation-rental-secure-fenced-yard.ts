@@ -189,7 +189,11 @@ Save your arrival checks in the [travel checklist](/tools/checklist), price the 
     "new-years-eve-with-a-dog-in-a-vacation-rental",
     "vacation-rental-with-a-reactive-dog",
   ],
-  relatedProducts: ["midwest-exercise-pen-with-door", "carlson-convertible-pet-yard", "ruffwear-knot-a-leash"],
+  relatedProducts: [
+    "midwest-exercise-pen-with-door",
+    "carlson-convertible-pet-yard",
+    "ruffwear-knot-a-leash",
+  ],
   relatedTools: ["checklist", "pet-cost-check"],
   sources: [
     {
@@ -241,7 +245,8 @@ Save your arrival checks in the [travel checklist](/tools/checklist), price the 
       accessedOn: "2026-11-16",
     },
     {
-      title: "Assembly Instructions for Model Number 550-24DR, 552-30DR, 554-36DR, 556-42DR, 558-48DR",
+      title:
+        "Assembly Instructions for Model Number 550-24DR, 552-30DR, 554-36DR, 556-42DR, 558-48DR",
       url: "https://www.midwesthomes4pets.com/wp-content/uploads/ExPen_550DR_Eng.pdf",
       publisher: "MidWest Homes for Pets",
       accessedOn: "2026-11-16",

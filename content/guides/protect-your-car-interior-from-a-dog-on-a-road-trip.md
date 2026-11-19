@@ -3,7 +3,7 @@ title: "Protect Your Car Interior From a Dog on a Road Trip: Cover, Hammock or C
 seoTitle: "Protect Your Car Interior From a Dog on a Road Trip"
 seoDescription: "Seat cover, hammock, cargo liner or backseat extender? Compare them by vehicle and dog size, with anchors, seat belt access, cleaning and rental-car rules."
 dek: A cover keeps hair, mud and claws off the upholstery, and none of them keeps a dog safe in a crash. Here is how to match a cover, hammock, cargo liner or backseat extender to your vehicle and dog.
-category: Gear
+category: Planning
 states: []
 status: published
 approvedBy: Paws & Passage Editors

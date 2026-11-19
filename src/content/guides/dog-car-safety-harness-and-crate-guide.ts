@@ -227,7 +227,8 @@ CDC and ASPCA recommend building up to a long trip with short drives first. Fitt
     },
     {
       productId: "kurgo-heather-booster-seat",
-      bestFor: "A small dog, up to 30 lbs, that rides on a bucket seat and wears a crash-tested harness",
+      bestFor:
+        "A small dog, up to 30 lbs, that rides on a bucket seat and wears a crash-tested harness",
       whyItMadeTheList:
         "The maker says it suits dogs up to 30 lbs, installs on any bucket seat and has an integrated tether that attaches to the dog's harness. It collapses for storage and has a removable liner and pad.",
       watchOuts: [

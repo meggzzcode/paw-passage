@@ -229,7 +229,8 @@ Booked somewhere that says no pets? Read [what happens if you bring a dog to a n
       accessedOn: "2026-11-16",
     },
     {
-      title: "Assembly Instructions for Model Number 550-24DR, 552-30DR, 554-36DR, 556-42DR, 558-48DR",
+      title:
+        "Assembly Instructions for Model Number 550-24DR, 552-30DR, 554-36DR, 556-42DR, 558-48DR",
       url: "https://www.midwesthomes4pets.com/wp-content/uploads/ExPen_550DR_Eng.pdf",
       publisher: "MidWest Homes for Pets",
       accessedOn: "2026-11-16",

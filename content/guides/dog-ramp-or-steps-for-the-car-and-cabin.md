@@ -203,9 +203,9 @@ Read it the other way: if your cargo floor sits 24 in off the ground, the 62 in 
 
 Introduce the ramp at home first: VCA says most dogs can quickly learn to use ramps. [[4]](https://vcahospitals.com/know-your-pet/helping-your-dog-with-osteoarthritis) A dog who wobbles on it is a sign to call your vet, not to push on.
 
-If a ramp is what your measurements point to, a telescoping one that collapses short is the easiest to lift and store. Check the current price on the listing.
+If a ramp is what your measurements point to, a telescoping one that collapses short is easier to store; the folding ramp is lighter at 10 lb but lists no folded size. Check the current price on the listing.
 
-{{pick:petsafe-happy-ride-compact-telescoping-ramp|Best value|Same 300 lb maker rating as the 47 to 87 in ramp in the table above, but it collapses to 28 in and weighs 14 lb; it extends to 70 in at most, so check your vehicle height first.|https://petsafe.com/product/happy-ride-compact-telescoping-dog-ramp}}
+{{pick:petsafe-happy-ride-compact-telescoping-ramp|Our pick|Same 300 lb maker rating as the 47 to 87 in ramp in the table above, but it collapses to 28 in and weighs 14 lb; it extends to 70 in at most, so check your vehicle height first.|https://petsafe.com/product/happy-ride-compact-telescoping-dog-ramp}}
 
 ## Stairs at the cabin or rental
 

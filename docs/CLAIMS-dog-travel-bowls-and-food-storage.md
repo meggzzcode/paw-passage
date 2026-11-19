@@ -37,7 +37,7 @@ Added 2026-11-19 (pick cards; sources per docs/products/candidates-water-beach-h
 
 | Claim | Source URL | Level |
 | --- | --- | --- |
-| PetsRadar labels the IRIS airtight container "our favorite all-rounder choice"; maker lists 12.75 Qt, about 10 lb dry food, airtight seals and buckles; no bear-resistance claim by the maker (page not re-read this session) | https://petsradar.com/buying-guides/best-pet-food-containers | 1 (reviewer label) |
+| IRIS 10 lb container: 12.75 Qt, about 10 lb dry food depending on food type, airtight seals and buckles; page makes no bear-resistance claim (re-read 2026-11-19). The earlier PetsRadar label was for a different IRIS product (30 lb + 11 lb combo) and was removed | https://www.irisusainc.com/collections/airtight-pet-food-containers/products/airtight-dog-food-storage-container-up-to-10-lbs-3 | 1 |
 | Kurgo Collaps A Bowl: 24 oz, collapses under 1 in, top-rack dishwasher safe | https://www.kurgo.com/pet-travel-bowls/collaps-a-bowl | 1 |
-| Kurgo Splash Free Wander: tapered edge, wedge shape sits flat on a car seat, 24 oz | https://www.kurgo.com/p/splash-free-wander-dog-water-bowl/K01812 | 1 |
+| Kurgo Splash Free Wander: tapered lip "prevent splashing", wedge lays flat on a seat, 24 oz; page gives no car-use claim beyond that, so label is "Flat on a car seat" | https://www.kurgo.com/p/splash-free-wander-dog-water-bowl/K01812 | 1 |
 | Keeping the bag's lot number and best-by date with a container (photograph the bag) | none | 3 (our suggestion) |

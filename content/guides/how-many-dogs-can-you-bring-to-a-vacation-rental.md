@@ -9,7 +9,7 @@ status: published
 author: Paws & Passage Editors
 publishedOn: 2026-11-18
 lastReviewed: 2026-11-19
-readingMinutes: 9
+readingMinutes: 10
 heroImage: guide-how-many-dogs
 faqs:
   - q: How many dogs can you bring to an Airbnb?
@@ -33,6 +33,8 @@ relatedGuides:
 relatedProducts:
   - north-states-mypet-universal-petgate
   - midwest-icrate-dog-crate
+  - petsafe-happy-ride-collapsible-crate
+  - kurgo-kibble-carrier
 relatedTools:
   - pet-cost-check
   - checklist
@@ -109,6 +111,14 @@ sources:
     url: https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/
     publisher: MidWest Homes for Pets
     accessedOn: 2026-11-18
+  - title: Happy Ride Collapsible Travel Crate
+    url: https://www.petsafe.com/p/happy-ride-collapsible-travel-crate/ZTV00-17289/
+    publisher: PetSafe
+    accessedOn: 2026-11-18
+  - title: Kibble Carrier
+    url: https://www.kurgo.com/dog-travel/kibble-carrier
+    publisher: Kurgo
+    accessedOn: 2026-11-16
 research:
   primaryKeyword: how many dogs can you bring to an airbnb
   relatedKeywords:
@@ -247,6 +257,14 @@ Two layout and meal points are worth checking before you pay:
 For meals or rest time, a crate is the other way to separate two dogs, if both already accept one. The MidWest iCrate is a folding wire crate that the maker lists in sizes from 18 to 48 inches, with a divider panel, a removable leak-proof pan, rubber feet to protect floors and a flat fold. [[18]](https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/) Two dogs means two crates in the car, so check the folded size against your luggage space, which the page does not state. Do not use a crate to separate dogs that have never been crated.
 
 {{pick:midwest-icrate-dog-crate|Our pick|The maker lists sizes from 18 to 48 inches with a divider panel, a removable pan and rubber floor feet, and says it folds flat; it gives no weights or folded size.|https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/}}
+
+If your second dog is small to medium, a collapsible crate that rides in the car and then sets up in the rental covers both jobs. The PetSafe Happy Ride Collapsible Travel Crate is a soft-sided crate for the back seat. The maker says it is for pets up to 60 lb and measures 27 x 19 x 28 inches fully expanded, and it notes that it may not fit compact vehicles. It has two doors that fully unzip, a removable waterproof fleece cover, and the maker says a headrest strap and the seat belt keep it from moving. [[19]](https://www.petsafe.com/p/happy-ride-collapsible-travel-crate/ZTV00-17289/) Once you arrive, it gives the second dog a closed space for meals or rest time without a second wire crate. The maker describes the dog as contained, not restrained, and the page makes no crash-test claim, so it suits small to medium dogs and is not a crash-tested restraint. For crash-tested options, read our [car-safety harness and crate guide](/guides/dog-car-safety-harness-and-crate-guide). Check your dog's weight and the 27 x 19 x 28 inch size against your back seat first.
+
+{{pick:petsafe-happy-ride-collapsible-crate|Our pick|The maker lists a 60 lb limit and 27 x 19 x 28 inches expanded, with two unzipping doors; it describes the dog as contained, not restrained, and makes no crash-test claim.|https://www.petsafe.com/p/happy-ride-collapsible-travel-crate/ZTV00-17289/}}
+
+Feeding two or three dogs separately also means carrying more food than one bag in a suitcase suggests. The Kurgo Kibble Carrier is a soft roll-top bag that the maker says holds up to 5 lbs of dry food, roughly 20 cups of average-sized kibble. It has a ripstop shell, a food-safe PEVA liner, heat-sealed seams and a roll-and-clip closure. [[20]](https://www.kurgo.com/dog-travel/kibble-carrier) That is a few days of food for one dog, so with three dogs you may need one carrier per dog or a carrier per meal plan. One bag per dog also keeps each dog's food apart, which helps when meals are served in separate spaces. The maker builds it for packing rather than long-term storage, so empty it and hand wash it after the trip. Work out how many cups your dogs eat across your dates before deciding how many to bring.
+
+{{pick:kurgo-kibble-carrier|Our pick|The maker says it holds up to 5 lbs of dry food, about 20 cups of average-sized kibble, with a food-safe liner and a roll-and-clip top; it is built for packing, not long-term storage.|https://www.kurgo.com/dog-travel/kibble-carrier}}
 
 Also check the cost of the second dog, covered next. For the rest of the trip, see the [pet-friendly rental checklist](/guides/pet-friendly-vacation-rental-checklist) and [Airbnb vs Vrbo with a dog](/guides/how-vacation-rental-pet-fees-work).
 

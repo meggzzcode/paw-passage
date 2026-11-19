@@ -7,7 +7,7 @@ export const guide: Guide = {
   seoDescription:
     "A travel kit built on the AVMA checklist, plus what ready-made kits usually lack: a digital thermometer, contact numbers and your dog's records.",
   dek: "Build or buy a kit around what veterinary sources say it should hold, then check the contents against your dog and your destination.",
-  category: "Gear",
+  category: "Planning",
   states: [],
   status: "published",
   author: "Paws & Passage Editors",

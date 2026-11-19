@@ -59,7 +59,7 @@ export const packItems: PackItem[] = [
     group: "Car and safety",
     what: "A washable cover that protects the back seat.",
     use: "Catches hair, mud and drool. It is not a restraint, so use it alongside a harness or crate.",
-    productIds: ["kurgo-heather-hammock", "petsafe-happy-ride-bench-seat-cover"],
+    productIds: ["petsafe-happy-ride-bench-seat-cover"],
     reason: (p) => (p.car ? "Protects the back seat on the drive." : null),
   },
   {
@@ -140,12 +140,7 @@ export const packItems: PackItem[] = [
     group: "Health",
     what: "A kit made for dogs.",
     use: "For minor cuts and problems until you reach a vet. It does not replace one.",
-    productIds: [
-      "amk-me-and-my-dog",
-      "amk-trail-dog",
-      "kurgo-dog-first-aid-kit",
-      "kurgo-rsg-dog-first-aid-kit",
-    ],
+    productIds: ["amk-trail-dog"],
     reason: () => "Pack one on every trip.",
   },
   {
@@ -154,7 +149,7 @@ export const packItems: PackItem[] = [
     group: "Health",
     what: "A basket muzzle your dog is used to wearing.",
     use: "Some injured dogs snap. Ask your vet whether your dog should have one ready.",
-    productIds: ["baskerville-ultra-muzzle"],
+    productIds: [],
     reason: () => null,
   },
   {

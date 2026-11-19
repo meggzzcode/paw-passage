@@ -77,7 +77,7 @@ sources:
     url: https://www.kurgo.com/dog-travel/kibble-carrier
     publisher: Kurgo
     accessedOn: 2026-11-18
-  - title: Quencher Packable Dog Bowl
+  - title: Quencher Collapsible Dog Bowl
     url: https://ruffwear.com/products/quencher-dog-bowl
     publisher: Ruffwear
     accessedOn: 2026-11-18
@@ -194,7 +194,7 @@ Everything below is the maker's own wording or figures, read on 2026-11-18. We h
 
 Three things the table shows. Gunner gives no capacity, the two Springland bottles carry their size in the product name only, and Petmate's "3 CUP" does not say per bowl or per set. The bowl figures also vary, from Kurgo's 24 ounces to Ruffwear's 4.2 cups (1 L). Our reading is that a bowl sized to your dog's single drink, not a whole day's, is the easier one to pack.
 
-Two more items from the pages. Ruffwear's page lists the lining as waterproof and the shell as water-resistant, and on 2026-11-18 its add-to-cart button read "Out of Stock Coming Soon" with all colors out of stock. [[11]](https://ruffwear.com/products/quencher-dog-bowl) Gunner's page calls the lid spill-proof and leak-resistant but gives no test data behind it. [[14]](https://gunner.com/products/gunner-dog-bowl-black) For where each sits in a trip bag, see our [feeding and hydration gear page](/gear/feeding-and-hydration). These specs are researched from the makers' pages and cited sources, not tested by us.
+Two more items from the pages. Ruffwear's page lists the lining as waterproof and the shell as water-resistant. [[11]](https://ruffwear.com/products/quencher-dog-bowl) Gunner's page calls the lid spill-proof and leak-resistant but gives no test data behind it. [[14]](https://gunner.com/products/gunner-dog-bowl-black) For where each sits in a trip bag, see our [feeding and hydration gear page](/gear/feeding-and-hydration). These specs are researched from the makers' pages and cited sources, not tested by us.
 
 ### Bowls to start with
 
@@ -239,7 +239,7 @@ Message to send the host:
 | Gunner bowl capacity and size | Page gives neither | Look at the product label or contact the maker |
 | Whether Petmate's "3 CUP" is per bowl or per set | Page does not say | Ask the maker before buying |
 | Leak and spill claims (Springland, Gunner) | Pages give no test data or standard | Run a water test at home before the trip |
-| Ruffwear shell waterproofing and availability | Shell is "water-resistant"; page showed "Out of Stock Coming Soon" on 2026-11-18 | Check the maker's page when you shop |
+| Ruffwear shell waterproofing | Shell is "water-resistant" | Check the maker's page when you shop |
 | Gunner bowl material | Product text says nylon; one image caption says silicone | Check the product label |
 | Dishwasher status of the Kibble Carrier and Ruffwear | Pages give hand-wash instructions only | Follow the care label |
 | Independent testing of any product here | None cited on the pages we read | Treat all claims as the maker's own |

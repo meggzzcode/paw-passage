@@ -175,9 +175,9 @@ links:
   - id: amk-me-and-my-dog
     network: Amazon Associates
     url: https://www.amazon.com/dp/B00T72ST0A?tag={amazonTrackingId}
-    approved: true
+    approved: false
     kind: product
-    notes: "Amazon ASIN B00T72ST0A (HIGH); variant: Other listings of same kit exist: B01M123H7Y and B0HJQVFFKB (shown unavailable). Maker page has no Amazon link."
+    notes: "OFF 2026-11-18: unavailable on Amazon (no buy box). Set approved true when back in stock. Amazon ASIN B00T72ST0A (HIGH); variant: Other listings of same kit exist: B01M123H7Y and B0HJQVFFKB (shown unavailable). Maker page has no Amazon link."
   - id: amk-trail-dog
     network: Amazon Associates
     url: https://www.amazon.com/dp/B00T72ST1Y?tag={amazonTrackingId}
@@ -187,9 +187,9 @@ links:
   - id: baskerville-ultra-muzzle
     network: Amazon Associates
     url: https://www.amazon.com/dp/B01IFJ0FMU?tag={amazonTrackingId}
-    approved: true
+    approved: false
     kind: product
-    notes: "Amazon ASIN B01IFJ0FMU (MEDIUM); variant: Sold in sizes 1-6 and many colours with separate ASINs (e.g. B0051H45GC, B005184AG6, B00596TFVA, B00TUDFIQ4 size 6 black). Owner to pick size."
+    notes: "OFF 2026-11-18: unavailable on Amazon (no buy box). Set approved true when back in stock. Amazon ASIN B01IFJ0FMU (MEDIUM); variant: Sold in sizes 1-6 and many colours with separate ASINs (e.g. B0051H45GC, B005184AG6, B00596TFVA, B00TUDFIQ4 size 6 black). Owner to pick size."
   - id: carlson-convertible-pet-yard
     network: Amazon Associates
     url: https://www.amazon.com/dp/B0026MSQAG?tag={amazonTrackingId}
@@ -198,22 +198,22 @@ links:
     notes: "Amazon ASIN B0026MSQAG (HIGH); variant: URL slug names model 2200; listing may show 2200 DS. Extension panel is separate (B00M1Y9AIQ)."
   - id: fi-series-3-plus
     network: Amazon Associates
-    url: https://www.amazon.com/dp/B0FH8HQS3V?tag={amazonTrackingId}
+    url: https://www.amazon.com/dp/B0HJ3XJFQ7?tag={amazonTrackingId}
     approved: true
     kind: product
-    notes: "Amazon ASIN B0FH8HQS3V (MEDIUM); variant: Many size/colour/membership ASINs, e.g. B0FH82MF55 (Blue L), B0FH81NHS1 (Blue XL), B0FH8F6LXZ (Small), B0CVN7RMMJ and B0HJ3XJFQ7 (XS). Owner to pick."
+    notes: "Verified 2026-11-18: Amazon redirects B0FH8HQS3V here; default is XS. Amazon ASIN B0FH8HQS3V (MEDIUM); variant: Many size/colour/membership ASINs, e.g. B0FH82MF55 (Blue L), B0FH81NHS1 (Blue XL), B0FH8F6LXZ (Small), B0CVN7RMMJ and B0HJ3XJFQ7 (XS). Owner to pick."
   - id: gunner-g1-kennel
     network: Amazon Associates
     url: https://www.amazon.com/dp/B016LHHXKK?tag={amazonTrackingId}
-    approved: true
+    approved: false
     kind: product
-    notes: "Amazon ASIN B016LHHXKK (MEDIUM); variant: Size-specific: Intermediate shown. Small tan B0GVGLBLRS; Large B01MU0DSH9 (from Q&A page, unverified as listing). Medium not found."
+    notes: "OFF 2026-11-18: unavailable on Amazon (no buy box). Set approved true when back in stock. Amazon ASIN B016LHHXKK (MEDIUM); variant: Size-specific: Intermediate shown. Small tan B0GVGLBLRS; Large B01MU0DSH9 (from Q&A page, unverified as listing). Medium not found."
   - id: kong-bench-seat-cover-hammock-xl
     network: Amazon Associates
     url: https://www.amazon.com/dp/B07Z45B7L3?tag={amazonTrackingId}
-    approved: true
+    approved: false
     kind: product
-    notes: "Amazon ASIN B07Z45B7L3 (MEDIUM); variant: XL size not confirmed in title. Different KONG 2-in-1 car/SUV hammock is B08G993HSM (not ours)."
+    notes: "OFF 2026-11-18: unavailable on Amazon (no buy box). Set approved true when back in stock. Amazon ASIN B07Z45B7L3 (MEDIUM); variant: XL size not confirmed in title. Different KONG 2-in-1 car/SUV hammock is B08G993HSM (not ours)."
   - id: kurgo-backseat-barrier
     network: Amazon Associates
     url: https://www.amazon.com/dp/B000F71DF4?tag={amazonTrackingId}
@@ -223,15 +223,15 @@ links:
   - id: kurgo-collaps-a-bowl
     network: Amazon Associates
     url: https://www.amazon.com/dp/B002FYQ4DG?tag={amazonTrackingId}
-    approved: true
+    approved: false
     kind: product
-    notes: "Amazon ASIN B002FYQ4DG (MEDIUM); variant: Colour variants have separate ASINs: B003EIDR5U (Blue), B005QZ4YZQ (Barn Red), B01MSLJWMU (Orange)."
+    notes: "OFF 2026-11-18: unavailable on Amazon (no buy box). Set approved true when back in stock. Amazon ASIN B002FYQ4DG (MEDIUM); variant: Colour variants have separate ASINs: B003EIDR5U (Blue), B005QZ4YZQ (Barn Red), B01MSLJWMU (Orange)."
   - id: kurgo-dog-first-aid-kit
     network: Amazon Associates
     url: https://www.amazon.com/dp/B00IKRVU90?tag={amazonTrackingId}
-    approved: true
+    approved: false
     kind: product
-    notes: "Amazon ASIN B00IKRVU90 (HIGH); variant: Not the RSG kit (B07NZ1WMS3)."
+    notes: "OFF 2026-11-18: unavailable on Amazon (no buy box). Set approved true when back in stock. Amazon ASIN B00IKRVU90 (HIGH); variant: Not the RSG kit (B07NZ1WMS3)."
   - id: kurgo-enhanced-strength-tru-fit
     network: Amazon Associates
     url: https://www.amazon.com/dp/B009CE8106?tag={amazonTrackingId}
@@ -247,9 +247,9 @@ links:
   - id: north-states-petyard-passage-8-panel
     network: Amazon Associates
     url: https://www.amazon.com/dp/B00E3AMCSQ?tag={amazonTrackingId}
-    approved: true
+    approved: false
     kind: product
-    notes: "Amazon ASIN B00E3AMCSQ (HIGH); variant: Maker's own product page links this Amazon listing (amazon.com/dp/B00E3AMCSQ) under buy-at-retailers; other colours may exist"
+    notes: "OFF 2026-11-18: unavailable on Amazon (no buy box). Set approved true when back in stock. Amazon ASIN B00E3AMCSQ (HIGH); variant: Maker's own product page links this Amazon listing (amazon.com/dp/B00E3AMCSQ) under buy-at-retailers; other colours may exist"
   - id: petsafe-happy-ride-folding-ramp
     network: Amazon Associates
     url: https://www.amazon.com/dp/B0016HNU12?tag={amazonTrackingId}
@@ -270,10 +270,10 @@ links:
     notes: "Amazon ASIN B0CCZGJQTB (HIGH); variant: Single listing. Do not confuse with Happy Ride Dog Ramp Adaptor B00JZHRYG2."
   - id: ruffwear-climate-changer-fleece
     network: Amazon Associates
-    url: https://www.amazon.com/dp/B0C7D1FY2G?tag={amazonTrackingId}
+    url: https://www.amazon.com/dp/B0F5TMJTH1?tag={amazonTrackingId}
     approved: true
     kind: product
-    notes: "Amazon ASIN B0C7D1FY2G (MEDIUM); variant: Per size/colour ASINs. Others seen: B0C7CZVH84 (Strata Large) B0C7D2H6Y5 (Strata XL) B0C7D4HDY9 (Galaxy Small). Separate Climate Changer Fleece Vest listings (B"
+    notes: "Verified 2026-11-18: Amazon redirects B0C7D1FY2G here; default is XXS. Amazon ASIN B0C7D1FY2G (MEDIUM); variant: Per size/colour ASINs. Others seen: B0C7CZVH84 (Strata Large) B0C7D2H6Y5 (Strata XL) B0C7D4HDY9 (Galaxy Small). Separate Climate Changer Fleece Vest listings (B"
   - id: ruffwear-float-coat
     network: Amazon Associates
     url: https://www.amazon.com/dp/B0DNM2J19V?tag={amazonTrackingId}
@@ -307,9 +307,9 @@ links:
   - id: sleepypod-clickit-range
     network: Amazon Associates
     url: https://www.amazon.com/dp/B0HNBGWPMW?tag={amazonTrackingId}
-    approved: true
+    approved: false
     kind: product
-    notes: "Amazon ASIN B0HNBGWPMW (MEDIUM); variant: Size/fit not shown in title. Other Clickit Range listings: B0GMS5DTJZ B0GMTFZGCP B0GMTKTKV9. Owner to confirm size and Regular/Long fit. Clickit Sport/Utility a"
+    notes: "OFF 2026-11-18: unavailable on Amazon (no buy box). Set approved true when back in stock. Amazon ASIN B0HNBGWPMW (MEDIUM); variant: Size/fit not shown in title. Other Clickit Range listings: B0GMS5DTJZ B0GMTFZGCP B0GMTKTKV9. Owner to confirm size and Regular/Long fit. Clickit Sport/Utility a"
   - id: vittles-vault-travel-tainer
     network: Amazon Associates
     url: https://www.amazon.com/dp/B000HHMCT8?tag={amazonTrackingId}
@@ -361,9 +361,9 @@ links:
   - id: midwest-lifestages-dog-crate
     network: Amazon Associates
     url: https://www.amazon.com/dp/B0002AT3M4?tag={amazonTrackingId}
-    approved: true
+    approved: false
     kind: product
-    notes: "Amazon ASIN B0002AT3M4 (MEDIUM); variant: 36in double door chosen. Others: 42in B0002AT3ME, 48in B0002AT3MO, 30in B0002TKBUS, 24in B000HCLDFC. Owner to confirm size."
+    notes: "OFF 2026-11-18: unavailable on Amazon (no buy box). Set approved true when back in stock. Amazon ASIN B0002AT3M4 (MEDIUM); variant: 36in double door chosen. Others: 42in B0002AT3ME, 48in B0002AT3MO, 30in B0002TKBUS, 24in B000HCLDFC. Owner to confirm size."
   - id: green-pet-shop-cool-pet-pad
     network: Amazon Associates
     url: https://www.amazon.com/dp/B0C5N3713P?tag={amazonTrackingId}
@@ -388,3 +388,63 @@ links:
     approved: true
     kind: product
     notes: "Amazon ASIN B08WHSVYV6 (HIGH); variant: Clear/Gray. Clear/Black is B007RBB662; 2-pack B0CZLXQN4W."
+  - id: kong-classic
+    network: Amazon Associates
+    url: https://www.amazon.com/dp/B0002AR0I8?tag={amazonTrackingId}
+    approved: true
+    kind: product
+    notes: "Amazon ASIN B0002AR0I8; Verified 2026-11-18: Large, third-party seller (Pattern Products). Other sizes have their own ASINs."
+  - id: kurgo-kibble-carrier
+    network: Amazon Associates
+    url: https://www.amazon.com/dp/B07MWB9XW1?tag={amazonTrackingId}
+    approved: true
+    kind: product
+    notes: "Amazon ASIN B07MWB9XW1; Verified 2026-11-18: Coastal Blue, sold by Amazon. Navy variant B09NWGB6CG."
+  - id: kurgo-splash-free-wander-bowl
+    network: Amazon Associates
+    url: https://www.amazon.com/dp/B06XWJGT88?tag={amazonTrackingId}
+    approved: true
+    kind: product
+    notes: "Amazon ASIN B06XWJGT88; Verified 2026-11-18: Blue, sold by Amazon."
+  - id: midwest-exercise-pen-with-door
+    network: Amazon Associates
+    url: https://www.amazon.com/dp/B005OCWML4?tag={amazonTrackingId}
+    approved: true
+    kind: product
+    notes: "Amazon ASIN B005OCWML4; Verified 2026-11-18: 42-inch, sold by Amazon. 36-inch is B002904LZE."
+  - id: outward-hound-dawson-swim-life-jacket
+    network: Amazon Associates
+    url: https://www.amazon.com/dp/B01NGUMOS7?tag={amazonTrackingId}
+    approved: true
+    kind: product
+    notes: "Amazon ASIN B01NGUMOS7; Verified 2026-11-18: Red, Medium, sold by Amazon. Other sizes have their own ASINs."
+  - id: petcube-gps-tracker
+    network: Amazon Associates
+    url: https://www.amazon.com/dp/B0C89SV8VP?tag={amazonTrackingId}
+    approved: true
+    kind: product
+    notes: "Amazon ASIN B0C89SV8VP; Verified 2026-11-18: sold by Petcube. A subscription may apply."
+  - id: petmate-precision-pet-soft-side-play-yard
+    network: Amazon Associates
+    url: https://www.amazon.com/dp/B001GS71KW?tag={amazonTrackingId}
+    approved: true
+    kind: product
+    notes: "Amazon ASIN B001GS71KW; Verified 2026-11-18: sold by Amazon. Another listing B001GS71KM not opened."
+  - id: petsafe-happy-ride-bench-seat-cover
+    network: Amazon Associates
+    url: https://www.amazon.com/dp/B09MXG2K8L?tag={amazonTrackingId}
+    approved: true
+    kind: product
+    notes: "Amazon ASIN B09MXG2K8L; Verified 2026-11-18: Black, sold by Amazon."
+  - id: petsafe-happy-ride-dog-barrier
+    network: Amazon Associates
+    url: https://www.amazon.com/dp/B00JZHRYFI?tag={amazonTrackingId}
+    approved: true
+    kind: product
+    notes: "Amazon ASIN B00JZHRYFI; Verified 2026-11-18: metal barrier, sold by Amazon."
+  - id: ruffwear-polar-trex-boots
+    network: Amazon Associates
+    url: https://www.amazon.com/dp/B0H13D93JM?tag={amazonTrackingId}
+    approved: true
+    kind: product
+    notes: "Amazon ASIN B0H13D93JM; Verified 2026-11-18: 2.50 in, sold by Ruffwear. Other sizes have their own ASINs."

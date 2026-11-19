@@ -236,7 +236,6 @@ CDC and ASPCA recommend building up to a long trip with short drives first. Fitt
         "Use the straps the maker specifies, not bungee cords or substitutes",
         "A heavy kennel, so check your lifting and your cargo space",
         "Confirm your vehicle's anchor points are strength-rated before relying on a cargo area",
-        "Sizes can be out of stock; check availability with the maker",
       ],
     },
     {

@@ -211,7 +211,7 @@ Start with a jacket that has the features above in your dog's girth range, and a
 
 {{pick:ezydog-dfd-life-jacket|Best value|Whole Dog Journal, in a 2021 review of two test dogs, says it earned top honors for buoyancy, comfort-minded features and affordability; the maker lists sizes XS to XL, a padded grab handle and a leash D-ring.|https://www.whole-dog-journal.com/lifestyle/dog-life-jacket-review/}}
 
-{{pick:ruffwear-float-coat|Our pick|The maker sizes it by girth from XXS to XL and lists a lifting handle, a telescoping neck closure and reflective accents, with no flotation rating stated. Its page showed every size out of stock when we last read it.|https://ruffwear.com/products/float-coat-dog-life-jacket}}
+{{pick:ruffwear-float-coat|Our pick|The maker sizes it by girth from XXS to XL and lists a lifting handle, a telescoping neck closure and reflective accents, with no flotation rating stated.|https://ruffwear.com/products/float-coat-dog-life-jacket}}
 
 ## Water hazards a jacket does not solve
 

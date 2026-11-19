@@ -11,7 +11,7 @@ approvedBy: Paws & Passage Editors
 approvedOn: 2026-11-18
 author: Paws & Passage Editors
 publishedOn: 2026-11-18
-lastReviewed: 2026-11-18
+lastReviewed: 2026-11-19
 readingMinutes: 7
 heroImage: guide-ga-state-park-cabins
 faqs:
@@ -34,8 +34,7 @@ relatedGuides:
   - how-many-dogs-can-you-bring-to-a-vacation-rental
   - can-you-leave-a-dog-alone-in-a-vacation-rental
 relatedProducts:
-  - kurgo-dog-first-aid-kit
-  - kurgo-collaps-a-bowl
+  - ruffwear-knot-a-leash
 relatedTools:
   - pet-cost-check
   - will-my-dog-be-accepted
@@ -226,6 +225,14 @@ The big difference is how much the park decides for you. A state park cottage se
 For a hypothetical three-night stay with one dog, round numbers show the gap: a state cottage fee is $50, while Cabin Rentals of Georgia's published rates come to $150 for the nights plus $75 cleaning, with the deposit refundable. Our [pet fees guide](/guides/how-vacation-rental-pet-fees-work) explains how those units differ, the [no-pet-fee guide](/guides/vacation-rentals-with-no-pet-fee) lists managers that charge nothing, and the [large-dog guide](/guides/vacation-rentals-that-welcome-large-dogs) covers weight caps, which a state cottage does not set. In our convenience sample of 38 managers (read 2026-11-18), 22 give a limit of two (14 for dogs, 4 for pets of any kind, 4 as the usual limit), 2 give three and 14 give none. See the [pet policy dataset](/data/pet-policies) and our [how many dogs guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental).
 
 A private cabin may offer a fenced yard (select Sliding Rock cabins) or no pet fee at all. A state cottage gives a flat per-stay fee and a trail system outside the door.
+
+## Pack for a state park cabin
+
+The park rules set a 6-foot leash at all times outside the cottage, no tying to trees or fences, and no kennels at the parks, so the dog is on a leash or with you. Bring a leash of 6 feet or shorter, plus bags to clean up after the dog, which the rules require. The rest of the list is in our [dog-friendly cabin packing list](/guides/dog-friendly-cabin-packing-list) and the [packing list tool](/tools/packing-list).
+
+{{pick:ruffwear-knot-a-leash|Our pick|Maker lists it at 5 ft, inside the 6-foot leash limit on the park rules page.|https://ruffwear.com/products/knot-a-leash-dog-leash}}
+
+Researched from the maker's page, not tested by us.
 
 ## Where other pages differ
 

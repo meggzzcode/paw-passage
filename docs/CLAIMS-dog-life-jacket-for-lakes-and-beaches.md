@@ -32,3 +32,6 @@ Levels: 1 = confirmed by a source we cite; 2 = what most people report (3+ indep
 | Whether any jacket's flotation is independently tested | none found | 3 (unknown) |
 | Whether states or lakes require dog jackets | no official state page read | 3 (unknown) |
 | Cornell (30 min) and AKC (15 min) break intervals differ | pages above | 1 |
+| Whole Dog Journal says the EzyDog DFD earned "top honors for buoyancy, comfort-minded features, and affordability" (July 2021 review, two test dogs, observational) | https://www.whole-dog-journal.com/lifestyle/dog-life-jacket-review/ (from docs/products/candidates-water-beach-hydration.yml; page not re-read this session) | 1 (reviewer label; not a lab test) |
+| EzyDog DFD: sizes XS to XL, padded grab handle, leash D-ring | https://store.ezydog.com/dfd-life-jacket/ (candidate record) | 1 |
+| Float Coat: girth sizes XXS to XL, lifting handle, telescoping neck closure, reflective accents, no flotation rating on page | https://ruffwear.com/products/float-coat-dog-life-jacket | 1 |

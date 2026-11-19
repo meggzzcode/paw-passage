@@ -8,7 +8,7 @@ states: []
 status: published
 author: Paws & Passage Editors
 publishedOn: 2026-11-18
-lastReviewed: 2026-11-18
+lastReviewed: 2026-11-19
 readingMinutes: 20
 heroImage: guide-senior
 faqs:
@@ -40,8 +40,7 @@ relatedGuides:
 relatedProducts:
   - petsafe-happy-ride-folding-ramp
   - petsafe-happy-ride-side-door-steps
-  - petsafe-happy-ride-hitch-step
-  - kurgo-loft-wander-dog-bed
+  - pet-parents-pawtect-pads
 relatedTools:
   - checklist
   - pet-cost-check
@@ -246,6 +245,8 @@ Talk to your vet, get photos and written answers from the host, and only then pa
 2. **Send the host the message below** and request photos of the route, steps and floors.
 3. **Pack for slipping and accidents:** non-slip rugs, your dog's own bed, washable layers and your vet's medication list.
 
+What to buy, in category terms: a ramp or steps rated well above your dog's weight with side rails and a non-slip surface, plus washable pads or layers for the bed and the car. The buying checklist is below.
+
 Four portable fixes come up across vet sources: non-slip rugs or mats, short nails, grip aids, and ramps with traction. [[1]](https://dogagingproject.org/mobility-tips-and-tricks-for-senior-dogs) [[2]](https://www.banfield.com/Senior-hub/care-for-older-pets/senior-proof-your-home) [[3]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/osteoarthritis)
 
 | Situation | What it suggests |
@@ -267,6 +268,18 @@ Stairs and floors decide most trips, and a listing rarely shows enough of either
 - [ ] **Steps down to the yard,** and whether it is fenced (see our [fenced-yard guide](/guides/vacation-rental-secure-fenced-yard)).
 
 **A borrowed photo standard.** Airbnb publishes how hosts should photograph step-free features: no steps, stairs or curbs over 2 inches along the entrance route, photos every 10 feet, thresholds shown close up. [[5]](https://www.airbnb.com/resources/hosting-homes/a/a-guide-to-photographing-accessibility-features-30) It also lists "Step-free access" and "Step-free bedroom access" as accessibility features guests can filter for. [[6]](https://www.airbnb.com/help/article/3138) These are built for human guests, so applying them to a dog is our inference, and the standard has no flooring or bed-height photos.
+
+## Buying checklist
+
+Copy this before you buy anything for the trip:
+
+- [ ] **Ramp or steps:** a weight rating well above your dog's weight, side rails, a non-slip surface and rubber feet.
+- [ ] **Height:** matched to the sofa, bed or vehicle floor it will serve (AKC's advice, below), and a length that gives a gentle slope.
+- [ ] **Portability:** folds or collapses, with a weight you can lift into the car by yourself.
+- [ ] **Washable layers:** pads or sheets that machine wash, with a waterproof layer and a grip backing for slippery floors.
+- [ ] **Size:** measured against your dog and the space, not guessed from the product name.
+- [ ] **Check the current price** and return terms on the listing. We researched from the makers' pages and have not tested any of this.
+- [ ] **Ask your vet** whether ramps or steps suit your dog, and ask the host before you lay anything down.
 
 ## What should you ask the host?
 
@@ -309,6 +322,12 @@ Bring grip with you, put the question to the host before laying anything down, a
 - **Ramps and stairs for furniture or a car.** AKC says to match the height to the sofa, bed or trunk, check the weight limit and look for a non-slip surface. [[13]](https://www.akc.org/expert-advice/health/general-health/dog-stairs-and-ramps/) None of these pages says a ramp works for a full indoor flight.
 - **Your own bed.** Banfield lists an orthopedic bed with a low profile, washable cover and non-slip bottom. [[2]](https://www.banfield.com/Senior-hub/care-for-older-pets/senior-proof-your-home) A familiar bed also keeps the host's furniture clean.
 
+For the car and the cabin door, that means a folding or telescoping ramp, or a set of steps with adjustable height. The makers' pages for these two do not describe them as senior or mobility products, so treat them as ordinary vehicle-access gear and ask your vet whether ramps or steps suit your dog. Ask the host before you set anything up inside.
+
+{{pick:petsafe-happy-ride-folding-ramp|Our pick|The maker lists a 150 lb rating, side rails, a high-traction surface and rubber feet, and says it folds in half and locks.|https://www.petsafe.com/p/happy-ride-folding-dog-ramp/62462/}}
+
+{{pick:petsafe-happy-ride-side-door-steps|Our pick|The maker lists three height settings, side rails, textured steps, rubberized feet and a 200 lb rating, and says it folds with a built-in handle.|https://www.petsafe.com/p/happy-ride-side-door-pet-steps/ZTV00-17464/}}
+
 **What owners report (4 of the 17 rental-related forum threads we read).** Rubber bath mats cut to fit the steps, traction strips, traction on bare treads and carpet laid for footing. [[14]](https://tripawds.com/forums/hopping-around/looking-for-advice-on-wooden-steps/) [[15]](https://tripawds.com/forums/size-and-age-matters/senior-stair-struggles) [[16]](https://tripawds.com/forums/hopping-around/stairs-was-fine-and-then-it-changed) [[17]](https://forums.mst3k.com/t/older-dogs-and-stairs/20432) Three of the four are from Tripawds, a forum about three-legged dogs, so they are not fully independent; the advice matches the vet sources above rather than adding to them.
 
 Carrying a large dog is not a safe fallback: on Tripawds, one thread concluded it was out for a roughly 50 lb dog on a long staircase, and another owner's dog growled when she tried. [[14]](https://tripawds.com/forums/hopping-around/looking-for-advice-on-wooden-steps/) [[16]](https://tripawds.com/forums/hopping-around/stairs-was-fine-and-then-it-changed)
@@ -329,7 +348,10 @@ Tell your vet first, since leaking in an older dog can have causes a vet should 
 
 What to do:
 
-- **Layers.** Pack washable or waterproof bedding, pads and a sheet for furniture.
+- **Layers.** Pack washable or waterproof bedding, pads and a sheet for furniture. Look for machine-washable pads with a waterproof layer and a grip backing, in a size that covers the bed.
+
+{{pick:pet-parents-pawtect-pads|Best washable|Petful names it "Best washable" among washable pads, and the maker describes machine-washable pads with a waterproof layer and a floor-gripping backing.|https://www.petful.com/pet-products/best-puppy-pads/}}
+
 - **Report and clean right away.** Tell the host or manager what happened and what you did.
 
 If a host later asks for money, our [damage-charge guide](/guides/airbnb-pet-damage-charge-after-checkout) covers the clocks and what to reply. Whether a deposit or charge applies to an accident you reported and cleaned is a question for the host in writing; the [pet cost check](/tools/pet-cost-check) shows your total.
@@ -352,6 +374,10 @@ ASPCA says to carry medical records if your dog's history is complicated, to put
 - [ ] A [first-aid kit](/guides/dog-travel-first-aid-kit-guide); more in our [cabin packing list](/guides/dog-friendly-cabin-packing-list) and the [packing-list tool](/tools/packing-list)
 
 On the drive, no vet source we read gives a stop interval. In nine mostly UK forum threads and owner posts, three mention frequent stops or a slower pace and three mention shade or heat, with no agreed numbers, so ask your vet what suits your dog and watch for discomfort. ASPCA says never to leave a pet in a parked car [[25]](https://www.aspca.org/news/traveling-your-pets-dos-and-donts), so plan stops where someone can stay with your dog. See our [car safety guide](/guides/dog-car-safety-harness-and-crate-guide).
+
+## What to buy first
+
+Before you book, buy nothing; get the photos and the vet's answer. After that, in order: washable pads or layers, because accidents and slippery floors come up in most of the sections above; then a ramp or steps if the vehicle or a sofa is the hurdle, sized to your dog's weight and the height it must reach. Add the first-aid kit and the bed from the [cabin packing list](/guides/dog-friendly-cabin-packing-list), and build the full list in the [packing list tool](/tools/packing-list). For large dogs, read the [large-dog guide](/guides/vacation-rentals-that-welcome-large-dogs) too.
 
 ## When should you call your vet?
 

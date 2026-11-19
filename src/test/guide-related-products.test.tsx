@@ -59,8 +59,9 @@ describe("guide page section", () => {
     expect(keep).toBeGreaterThan(gear);
     const section = html.slice(html.indexOf('aria-labelledby="related-products"'), keep);
     expect(section).not.toMatch(/\$\s?\d|\bstars?\b/i);
-    // No approved affiliate link exists, so no affiliate notice or label inside the section.
-    expect(section).not.toMatch(/Affiliate/i);
+    // A card renders only for a product that can earn, so the section always carries its affiliate label and the Amazon sentence.
+    expect(section).toMatch(/Affiliate/i);
+    expect(section).toContain("As an Amazon Associate I earn from qualifying purchases.");
   });
   it("a guide without products has no section", async () => {
     const other = allGuides.find((x) => !x.relatedProducts?.length && x.status === "published");

@@ -8,7 +8,7 @@ states: []
 status: published
 author: Paws & Passage Editors
 publishedOn: 2026-11-18
-lastReviewed: 2026-11-18
+lastReviewed: 2026-11-19
 readingMinutes: 9
 heroImage: guide-christmas-week
 faqs:
@@ -30,7 +30,8 @@ relatedGuides:
 relatedProducts:
   - ruffwear-climate-changer-fleece
   - ruffwear-polar-trex-boots
-  - ruffwear-timberline-fuse-vest
+  - kurgo-loft-wander-dog-bed
+  - kong-classic
 relatedTools:
   - packing-list
   - checklist
@@ -160,6 +161,8 @@ You found a cabin that takes dogs for Christmas week, and then the questions sta
 - **Chocolate and xylitol are the foods to take seriously.** Pet Poison Helpline calls chocolate highly toxic to dogs and xylitol toxic to dogs. [[4]](https://www.petpoisonhelpline.com/pet-safety-tips/winter-holiday-pet-poison-tips/)
 - **Find the emergency vet before you unpack.** Holiday hours vary, so call; we do not give hours because we cannot check any specific clinic for you.
 
+For the gear, the answer is short: a washable cold-weather layer and winter boots sized by chest girth and paw width, a bed that rolls up and grips the floor, and a stuffable chew toy for the hours when the tree is off limits. The buying checklist is after the cold-weather section.
+
 To see whether a given home will take your dog at all, start with the [will my dog be accepted tool](/tools/will-my-dog-be-accepted). New Year's plans too? Read our [New Year's Eve guide](/guides/new-years-eve-with-a-dog-in-a-vacation-rental) next.
 
 ## What to ask before you book a holiday week
@@ -213,6 +216,23 @@ For fire, NFPA's tree sheet says to keep the tree at least three feet from any h
 
 For cold, the ASPCA says "if it's too cold for you, it's probably too cold for your pet," recommends washing and drying paws after walks, keeping de-icing chemicals out of reach, cleaning up antifreeze spills right away because it is deadly to dogs, and never leaving a dog alone in a car in cold weather. [[11]](https://www.aspca.org/pet-care/general-pet-care/cold-weather-safety-tips)
 
+None of the sources we read gives a temperature at which a dog needs a coat or boots, so size gear to the dog and the walk, not to a number.
+
+{{pick:ruffwear-climate-changer-fleece|Our pick|The maker describes a 260 g polyester fleece with sleeves and a full-length zipper, sized XXS to XL by chest girth and machine-washable on a cold gentle cycle; it states no temperature rating.|https://ruffwear.com/products/climate-changer-fleece-dog-jacket}}
+
+For snow and ice, size boots by paw width, not dog weight, and check the count: some are sold as a set of two.
+
+{{pick:ruffwear-polar-trex-boots|Our pick|The maker describes a waterproof, windproof softshell upper with winter traction lugs, sold as a set of two and sized by paw width from 1.50 to 3.25 in; it states no temperature rating.|https://ruffwear.com/products/polar-trex-winter-dog-boots}}
+
+## Buying checklist
+
+- [ ] **Coat or fleece:** sized by chest girth per the maker's chart, a zipper or opening you can reach with a harness on, and machine-washable.
+- [ ] **Boots:** sized by paw width, with a traction sole and a closure that stays on; sold as a set of two, so check how many you get.
+- [ ] **Bed:** rolls up for the car, has a non-slip bottom and a washable or wipeable cover, in a size that fits the room you will use.
+- [ ] **Chew toy:** a stuffable rubber toy in the maker's size band for your dog's weight, used under supervision.
+- [ ] **No promises you cannot check:** the maker pages we read state no temperature rating, so do not buy on one.
+- [ ] **Check the current price** and the return terms on each listing. We researched these from the makers' pages and have not tested them.
+
 ## Find the emergency vet before you unpack
 
 A holiday is when you want to know where to go before you need it. PetMD says "Don't wait until a problem occurs to start Googling," and suggests asking your own vet or locals for recommendations, going straight to the nearest 24-hour hospital in an emergency and calling first where you can. [[12]](https://petmd.com/dog/care/what-do-if-your-pet-gets-sick-or-injured-vacation) It also says to bring your pet's medical records. [[12]](https://petmd.com/dog/care/what-do-if-your-pet-gets-sick-or-injured-vacation)
@@ -229,7 +249,7 @@ We cannot tell you what any clinic's hours are on December 24, 25 or 26. Before 
 - [ ] Vaccination records and your vet's phone number, plus notes on any ongoing conditions.
 - [ ] Your dog's usual food, a few extra days' worth, and treats so you are not tempted by table scraps.
 - [ ] Any current medication your vet has prescribed, in original packaging. Ask your vet about dosing questions; we give none.
-- [ ] Bed, blanket, favorite chew and a gate or pen.
+- [ ] Bed, blanket, favorite chew and a gate or pen (see the buying checklist above).
 - [ ] ID tag with a number you will answer, and a current microchip record.
 - [ ] Paw wipes and a towel for wet or salty feet. [[11]](https://www.aspca.org/pet-care/general-pet-care/cold-weather-safety-tips)
 - [ ] On arrival: walk the house for loose cords, fireplace access, plants and small objects within reach.
@@ -252,6 +272,16 @@ Use the [packing list tool](/tools/packing-list) to build the full list, and the
 | Holiday hours of the nearest emergency vet | Hours change on holidays and we did not check any clinic | Call the clinic and save the number |
 | Whether the fireplace has a screen or is gas or wood | We found no dog-specific fireplace source | Ask the host and photograph it on arrival |
 | Poison hotline fee amounts | Fees can change | See the ASPCA and Pet Poison Helpline pages |
+
+## What to buy first
+
+Settle the booking questions first, because a minimum stay or a no-tree rule changes what you pack. Then, in order: the chew toy and a familiar bed, because they cost little and help with the tree and the evenings; a washable fleece layer if your dog will be out on cold walks; boots only if the walks will be on snow, ice or salted paths. Check the current price on each listing, and build the rest in the [packing list tool](/tools/packing-list) and the [trip checklist](/tools/checklist).
+
+For a comfortable bed, look for one that rolls up and has a non-slip, wipeable bottom:
+
+{{pick:kurgo-loft-wander-dog-bed|Our pick|The maker describes a roll-up bed with a water-resistant ripstop top and a waterproof, nonslip bottom, in two sizes, with care by machine or hand wash.|https://www.kurgo.com/p/loft-wander-dog-bed/K01560}}
+
+{{pick:kong-classic|Our pick|The maker publishes a size chart by dog weight, says to use it under supervision, and says no toy is indestructible.|https://www.kongcompany.com/kong-classic/}}
 
 ## Next step
 

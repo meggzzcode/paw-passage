@@ -27,5 +27,8 @@ URLs: TG = https://tahoegetaways.com/policies; BR = https://ablueridgecabinrenta
 | 19 | Chewing normal; teething typically ends by six months; toys, supervision, confinement | ACH | 1 | "normal for puppies and dogs to chew" |
 | 20 | Vaccine schedule for a puppy | none | 3 | not given; ask vet |
 | 21 | Other 33 managers' puppy acceptance | none | 3 | ask manager |
+| 22 | Pawtect Pads: Petful label "Best washable"; maker says machine washable, triple layer with waterproof and floor-gripping backings | https://www.petful.com/pet-products/best-puppy-pads/ ; https://petparentsbrand.com/products/washable-puppy-pads | 1 (candidate record, read 2026-11-18) | "Best washable" |
+| 23 | LifeStages crate: divider included, six sizes, removable pan, folds flat; page gives no dimensions or warranty | https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/lifestages-dog-crate/ | 1 (maker claim) | n/a |
+| 24 | KONG Classic: size chart by dog weight; softer Puppy KONG under 9 months; supervised use; no toy indestructible | https://www.kongcompany.com/kong-classic/ | 1 (maker claim) | n/a |
 
 Fact-check 2026-11-18: rows 1-9, 13-19 re-read live and matched; quotes over 14 words shortened in article (rows 1, 8, 15, 16, 17); readingMinutes set to 8; "What most people report" label renamed "What our sample shows". See docs/FACTCHECK-puppy-at-a-vacation-rental.md.

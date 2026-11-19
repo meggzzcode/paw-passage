@@ -32,3 +32,12 @@ Levels: 1 = confirmed by a source we cite; 2 = what most people report (3+ indep
 | Competitor page facts (iheartdogs 2023-08-29 no sources/affiliate; adventurealan hiking-only; reviewed.com May 2024 body) | URLs in front matter research.competitors | 1 (summaries via page fetch) |
 
 Not used: BearWise pet-food page (bearwise.org returned empty content, not cited); Lake Lure and other pages that returned 403/404; Rover, Hepper, PawTracks competitors (403/404). The cabin packing list cites the BearWise page; the lead may want to re-check that source.
+
+Added 2026-11-19 (pick cards; sources per docs/products/candidates-water-beach-hydration.yml and content/products.yml):
+
+| Claim | Source URL | Level |
+| --- | --- | --- |
+| PetsRadar labels the IRIS airtight container "our favorite all-rounder choice"; maker lists 12.75 Qt, about 10 lb dry food, airtight seals and buckles; no bear-resistance claim by the maker (page not re-read this session) | https://petsradar.com/buying-guides/best-pet-food-containers | 1 (reviewer label) |
+| Kurgo Collaps A Bowl: 24 oz, collapses under 1 in, top-rack dishwasher safe | https://www.kurgo.com/pet-travel-bowls/collaps-a-bowl | 1 |
+| Kurgo Splash Free Wander: tapered edge, wedge shape sits flat on a car seat, 24 oz | https://www.kurgo.com/p/splash-free-wander-dog-water-bowl/K01812 | 1 |
+| Keeping the bag's lot number and best-by date with a container (photograph the bag) | none | 3 (our suggestion) |

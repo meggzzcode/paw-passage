@@ -72,3 +72,4 @@ URLs: A1415 = https://www.airbnb.com/help/article/1415; A3591 = https://www.airb
 - Row 46: only the 2021 thread is cited; "2019 and 2021" changed to 2021.
 - Rows 32, 36, 38: tallies of 22 include items seen only as snippets (dossier items 16 to 21); article wording no longer says all 22 were read.
 - Surf or Sound location changed from "Outer Banks" to Hatteras Island, NC (its own site).
+| Prevention picks (entry mat, drying towel): maker specs from product records; washable throw advice is our judgment and says to ask the host first | catalog records | 3 |

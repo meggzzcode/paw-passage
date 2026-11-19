@@ -10,7 +10,7 @@ approvedBy: Paws & Passage Editors
 approvedOn: 2026-11-18
 author: Paws & Passage Editors
 publishedOn: 2026-11-18
-lastReviewed: 2026-11-18
+lastReviewed: 2026-11-19
 readingMinutes: 10
 heroImage: guide-loose-dog
 faqs:
@@ -23,7 +23,7 @@ faqs:
   - q: How do I find out where my dog's microchip is registered?
     a: A vet can scan the chip, and AAHA's lookup tool shows which participating registries hold it. AAHA keeps no database of its own, so contact the registry itself to check or change your details.
   - q: Do GPS dog trackers need a subscription and cell coverage?
-    a: Cellular trackers generally do. Tractive says its trackers have a built-in SIM, with network fees covered by a subscription, and need 2G and/or LTE coverage from its partners. Check current terms and the coverage tool for your route.
+    a: Cellular trackers generally do. One maker, Tractive, says its trackers have a built-in SIM, with network fees covered by a subscription, and need 2G and/or LTE coverage from its partners. Check current terms and the coverage tool for your route.
   - q: Can a Bluetooth tag replace a GPS tracker?
     a: It depends on nearby devices relaying its position, and Apple's AirTag page describes keys and bags, not pets. Do not make it your only layer.
 relatedGuides:
@@ -39,6 +39,9 @@ relatedGuides:
 relatedTools:
   - checklist
   - packing-list
+relatedProducts:
+  - ruffwear-the-beacon-dog-safety-light
+  - petcube-gps-tracker
 gear:
   - productId: akc-reunite-stainless-collar-tag
     bestFor: Putting readable contact details on any dog, as a tag or as a collar with a built-in nameplate
@@ -226,6 +229,8 @@ The door was open for four seconds, and now your dog is gone, in a town whose st
 
 If you are separated in an emergency such as a flood or fire, AKC Reunite says to get your family to a safe place before you search. [[1]](https://www.akcreunite.org/lostpettips/)
 
+**What to buy before the next trip, in one line:** a legible tag with a number you will answer, a chip whose registry record is current, a cellular tracker that states its plan requirement, coverage and dog weight range, and a clip-on light for dark walks. The sections below say what each does and does not do.
+
 ## The first hour, minute by minute
 
 **Minutes 0 to 15: search and call.** Walk and drive the 2 mile circle slowly, splitting up if you have helpers (our suggestion).
@@ -277,16 +282,33 @@ AKC Reunite sells enrollment and ID tags, so read its pages with that in mind; i
 
 ### Trackers: GPS and Bluetooth
 
-A cellular tracker sends its location over a mobile network. Tractive says its trackers have a built-in SIM, that the subscription covers the mobile network fees and is priced separately from the tracker, and that a device needs 2G and/or LTE (CatM1) coverage from one of its 500+ partners, in 175+ countries. [[10]](https://tractive.com/en/pd/gps-tracker-dog) Fi's app page describes GPS and LTE tracking with live updates. [[11]](https://fitracking.com/theapp)
+A cellular tracker sends its location over a mobile network. One maker, Tractive, says its trackers have a built-in SIM, that the subscription covers the mobile network fees and is priced separately from the tracker, and that a device needs 2G and/or LTE (CatM1) coverage from one of its 500+ partners, in 175+ countries. [[10]](https://tractive.com/en/pd/gps-tracker-dog) Another maker, Fi, describes GPS and LTE tracking with live updates on its app page. [[11]](https://fitracking.com/theapp)
 
-- **Battery:** Tractive lists the DOG 6 at up to 2 weeks with Power Saving Zones and up to 6 days without; the DOG 6 XL at up to 6 weeks and up to 20 days. [[10]](https://tractive.com/en/pd/gps-tracker-dog) Fi lists up to 3 months on one charge. [[12]](https://fitracking.com/collar) A dead tracker finds nothing.
-- **Fit:** the DOG 6 is listed for dogs above 8.8 lbs (collar width up to 1.1 in), the DOG 6 XL above 44.1 lbs (up to 1.6 in). [[10]](https://tractive.com/en/pd/gps-tracker-dog)
+- **Battery:** Tractive lists its smaller model at up to 2 weeks with Power Saving Zones and up to 6 days without, and its larger model at up to 6 weeks and up to 20 days. [[10]](https://tractive.com/en/pd/gps-tracker-dog) Fi lists up to 3 months on one charge for its collar. [[12]](https://fitracking.com/collar) A dead tracker finds nothing.
+- **Fit:** Tractive lists the smaller model for dogs above 8.8 lbs (collar width up to 1.1 in) and the larger above 44.1 lbs (up to 1.6 in). [[10]](https://tractive.com/en/pd/gps-tracker-dog)
 
 Apple describes AirTag as sending a Bluetooth signal that nearby Find My devices relay to iCloud, so you can see it on a map. The page describes keys, bags and similar items and does not mention pets. [[13]](https://www.apple.com/airtag/) It depends on other people's devices being nearby, so our view is that it is weaker than cellular GPS on a trail or at night.
 
-### Gear picks
+### Buying checklist: a tracker
 
-The picks use each maker's own product page: a stated size range, battery figures and subscription or coverage terms. Paws & Passage has not tested any of them, and no prices are given because prices change. Fi's collar page states no carrier, coverage or subscription terms, and its membership page says every membership includes the app and the collar, so confirm both before buying. [[12]](https://fitracking.com/collar) [[14]](https://fitracking.com/membership) No affiliate links are attached.
+Copy this before you shop. The maker's own page should answer each line; if it does not, treat that as unknown.
+
+- A plan or subscription requirement stated plainly, and what it covers. Check the current terms on the day you buy.
+- The coverage it needs (carrier, cellular standard) and a coverage tool you can check for your route.
+- A stated dog weight range and collar width, so it fits your dog and your collar. Not every listing gives a size range.
+- Battery life with and without power-saving settings, and how long it takes to charge. Charge it before each leg.
+- A water-resistance rating if your trip involves lakes, rain or snow.
+- Warranty wording, and whether the tracker also needs a membership. One collar-style maker's collar page states no carrier, coverage or subscription terms, and its membership page says every membership includes the app and the collar, so confirm both before buying. [[12]](https://fitracking.com/collar) [[14]](https://fitracking.com/membership)
+
+A tracker can help you search; it cannot stop a dog getting lost. We researched products from the maker's page and have not tested any. Check the current price on the listing.
+
+{{pick:petcube-gps-tracker|Our pick|The maker says a paid plan is required for the tracker to operate; its page lists a 29 g weight and IP67 water resistance.|https://petcube.com/tracker/}}
+
+### Being seen after dark
+
+A clip-on light does not find a dog, but it makes one far easier to see on a late arrival or a night walk in a yard you do not know. Look for a rechargeable light with a steady mode and flashing modes, a stated run time, a stated waterproof rating and a clip that fits your dog's collar or harness. Treat run time and waterproof figures as the maker's claims.
+
+{{pick:ruffwear-the-beacon-dog-safety-light|Best waterproof|Tree Line Review labels it "Best waterproof"; the maker lists up to 20 hours of run time and waterproofing to 1 m for 30 minutes.|https://www.treelinereview.com/gearreviews/best-light-up-dog-collars}}
 
 ## Preventing it in a place you do not know
 
@@ -324,9 +346,17 @@ Fireworks were reported behind two of the stories above and suspected in a third
 | How many dogs lost while traveling are found, and how fast | We found no figure we could cite. Your vet or local shelter may share local numbers. |
 | Whether a tracker works at your destination | The maker's coverage tool, for the exact address and route. |
 | Current subscription cost and terms for a tracker | The maker's current plan page on the day you buy. |
-| Whether Fi's collar needs a membership and what it covers | Fi's current pages, before buying. |
+| Whether a collar-style tracker needs a membership and what it covers | The maker's current pages, before buying. |
 | Which registry holds your dog's chip | Your vet, or AAHA's lookup tool, then the registry itself. |
 | Which agency handles lost dogs at the rental's address | Your host and the town or county website. |
 | Whether the rental's fence and gates are dog-safe | The host, using the questions in our fenced yard guide. |
+
+## What to buy first
+
+1. **A tag with a number you will answer.** It is the one layer a finder can use without a scanner. Check the ring and the lettering before every trip.
+2. **No purchase, one phone call:** confirm the chip registry record is current with your phone, email and an alternate contact.
+3. **A tracker, if you want a search tool.** Pick by plan requirement, coverage, weight range and battery, using the checklist above, and set it up on every adult's phone before you leave.
+4. **A clip-on light** if your trips involve dusk arrivals or night toilet walks.
+5. **Something to contain the dog at the rental.** A pen is a supervised tool, not a fence; see our [portable pen and playpen guide](/guides/portable-dog-fence-and-playpen-guide-for-rentals) and the [secure fenced yard guide](/guides/vacation-rental-secure-fenced-yard).
 
 Next step: run through the [trip checklist](/tools/checklist) and add the lost-dog items above, or add a tag, a flyer and a charger from the [packing list](/tools/packing-list).

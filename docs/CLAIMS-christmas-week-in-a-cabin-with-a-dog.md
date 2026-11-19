@@ -26,3 +26,7 @@ Article: content/guides/christmas-week-in-a-cabin-with-a-dog.md (status: draft).
 | 20 | Whether a given rental allows a live tree or has a fireplace screen | none; ask host | 3 |
 | 21 | Dogs and fireplaces specifically: no source read | none | 3 |
 | 22 | AVMA holiday guidance: pages would not load in our tools; not used or cited | n/a | 3 |
+| 23 | Ruffwear Climate Changer Fleece: 260 g polyester fleece, sleeves, full-length zipper, sizes XXS-XL by chest girth, cold gentle wash; no temperature rating stated | https://ruffwear.com/products/climate-changer-fleece-dog-jacket | 1 (maker claim) |
+| 24 | Ruffwear Polar Trex boots: waterproof, windproof softshell upper, winter lugs, set of two, sized by paw width 1.50-3.25 in; no temperature rating; page showed out of stock when read | https://ruffwear.com/products/polar-trex-winter-dog-boots | 1 (maker claim) |
+| 25 | Kurgo Loft Wander Bed: roll-up, water-resistant ripstop top, waterproof nonslip bottom, Medium and Large | https://www.kurgo.com/p/loft-wander-dog-bed/K01560 | 1 (maker claim) |
+| 26 | KONG Classic: size chart by dog weight; supervised use; no toy indestructible | https://www.kongcompany.com/kong-classic/ | 1 (maker claim) |

@@ -146,17 +146,33 @@ describe("link fallback", () => {
       expect(relFor(k)).not.toContain("noreferrer");
     expect(relFor("manufacturer")).toBe("nofollow noopener");
   });
-  it("every real product today resolves to a plain, non-sponsored link", () => {
+  it("a product with an approved Amazon link resolves to a sponsored link with our tag; every other product to a plain link", () => {
+    let sponsored = 0;
     for (const p of products) {
       const r = resolveProductLink(p);
-      if (r) expect(r.rel, p.id).not.toContain("sponsored");
+      if (!r) continue;
+      if (r.kind === "affiliate") {
+        sponsored++;
+        expect(r.rel, p.id).toBe("sponsored nofollow noopener");
+        expect(r.url, p.id).toMatch(
+          /^https:\/\/www\.amazon\.com\/dp\/[A-Z0-9]{10}\?tag=pawspassage-20$/,
+        );
+      } else {
+        expect(r.rel, p.id).not.toContain("sponsored");
+      }
     }
+    expect(sponsored).toBeGreaterThan(0);
   });
 });
 
 describe("disclosure", () => {
-  it("renders nothing when no approved affiliate link renders", () => {
-    expect(renderToStaticMarkup(<GearDisclosure products={products} />)).toBe("");
+  it("renders nothing when no approved affiliate link renders, and the Amazon sentence when one does", () => {
+    const plain = products.filter((p) => resolveProductLink(p)?.kind !== "affiliate");
+    expect(renderToStaticMarkup(<GearDisclosure products={plain} />)).toBe("");
+    const earning = products.filter((p) => resolveProductLink(p)?.kind === "affiliate");
+    expect(renderToStaticMarkup(<GearDisclosure products={earning} />)).toContain(
+      "As an Amazon Associate I earn from qualifying purchases.",
+    );
   });
 });
 

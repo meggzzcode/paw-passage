@@ -30,10 +30,22 @@ if (existsSync(out)) {
   for (const r of rows.slice(1)) prior.set(r[h.indexOf("link_id")] ?? "", r);
 }
 
-const header = ["link_id", "network", "affiliate_url", "approved", "kind", "stay", "town", "listing_url", "notes"];
+const header = [
+  "link_id",
+  "network",
+  "affiliate_url",
+  "approved",
+  "kind",
+  "stay",
+  "town",
+  "listing_url",
+  "notes",
+];
 const rows: string[][] = [header];
 const dir = join(root, "content", "stays");
-for (const f of readdirSync(dir).filter((n) => n.endsWith(".yml")).sort()) {
+for (const f of readdirSync(dir)
+  .filter((n) => n.endsWith(".yml"))
+  .sort()) {
   const s = parse(readFileSync(join(dir, f), "utf8")) as {
     name: string;
     town: string;

@@ -126,7 +126,9 @@ export function relatedProductProblems(
   for (const g of guides) {
     for (const id of pickIds(g.body))
       if (!known.has(id))
-        out.push(`${g.slug}: the text has {{pick:${id}}}, which is not a product id in content/products.yml`);
+        out.push(
+          `${g.slug}: the text has {{pick:${id}}}, which is not a product id in content/products.yml`,
+        );
     const ids = g.relatedProducts ?? [];
     if (ids.length > 4)
       out.push(`${g.slug}: relatedProducts lists ${ids.length} products; the most allowed is 4`);

@@ -577,7 +577,9 @@ export function contentPlugin(): Plugin {
           const legacy = await loadLegacyGuides(root);
           for (const l of legacy) this.addWatchFile(l.file);
           const lp = relatedProductProblems(
-            legacy.map((l) => l.guide as { slug: string; relatedProducts?: string[]; body?: string }),
+            legacy.map(
+              (l) => l.guide as { slug: string; relatedProducts?: string[]; body?: string },
+            ),
             data.products.map((p) => p.id),
           );
           if (lp.length)

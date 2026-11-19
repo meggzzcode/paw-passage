@@ -157,7 +157,7 @@ CDC and ASPCA recommend building up to a long trip through short drives: restrai
 
 1. **The restraint.** One that matches your dog's weight and measurements and has a CPS listing you have read: a rear-seat harness, or a crate plus its strength-rated straps.
 2. **Seat protection, only if the dog rides on a bench.** A hammock sized to your vehicle's rear seat.
-3. **The rest of the kit.** Water, bowls and a leash from the [cabin packing list](/guides/dog-friendly-cabin-packing-list) or the [packing list tool](/tools/packing-list), then run the [trip checklist](/tools/checklist) before you leave.``,
+3. **The rest of the kit.** Water, bowls and a leash from the [cabin packing list](/guides/dog-friendly-cabin-packing-list) or the [packing list tool](/tools/packing-list), then run the [trip checklist](/tools/checklist) before you leave.`,
   faqs: [
     {
       q: "Is a crash-tested harness enough, or do I need a crate?",

@@ -28,3 +28,6 @@ Levels: 1 confirmed by a source we read; 2 what most people report (3+ independe
 | Clip both leashes before opening door; stop where each dog can drink and walk | our suggestion | 3 |
 | Two crates in a hatch change airflow; check vents reach cargo | our suggestion; unknown | 3 |
 | No independent two-dog test, barrier test, or CPS sharing statement found in pages read | n/a | 3 |
+| Kurgo Rover Hammock, Extended Width: 63 in W x 56 in L, fits most full size trucks and large SUVs per maker; lifetime guarantee; "protects the seat; it is not a restraint" (rewrite 2026-11-19: from content/products.yml and docs/products/candidates-car-road-trip.yml, maker page read 2026-11-18 by the catalog worker, not re-read this session) | https://kurgo.com/car-seat-covers/dog-hammocks/wander-hammock-extended-width | 1 (maker page, via product record) |
+| A seat cover protects upholstery and is not a restraint (follows the product record; not a CPS statement) | product record | 3 |
+| Buying checklist items 1 to 6 restate claims already in rows above (one restraint per dog, crate size and straps, measured space, barrier is a divider) | rows above | 1 / 3 |

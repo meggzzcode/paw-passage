@@ -12,7 +12,7 @@ export const guide: Guide = {
   status: "published",
   author: "Paws & Passage Editors",
   publishedOn: "2026-11-16",
-  lastReviewed: "2026-11-16",
+  lastReviewed: "2026-11-19",
   readingMinutes: 9,
   heroImage: "gear-first-aid",
   body: `## The short answer
@@ -25,9 +25,11 @@ Your dog cuts a paw on a rock two miles from the cabin, and the nearest clinic i
 - Treat any medication in a kit, including human-use items in some ready-made kits, as a question for your vet before the trip.
 - Nothing here is veterinary advice. Your vet knows your dog's weight, age, conditions and medications.
 
+**What to buy:** a waterproof or zippered kit whose contents match the AVMA checklist below, sized to the trip (full at the cabin, smaller in the car or on the trail), plus a digital thermometer, a fitted muzzle and a card with your contacts. Skip human medications unless your vet says otherwise.
+
 ## How we built this list
 
-The core list follows the AVMA's pet first-aid brochure and kit checklist [[1]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf), cross-checked against the ASPCA's poison control page [[2]](https://www.aspca.org/pet-care/aspca-poison-control) and several kit guides. [[3]](https://www.petmd.com/general-health/must-have-items-for-pet-first-aid-kit) [[4]](https://www.smalldoorvet.com/learning-center/medical/pet-first-aid-kit/) [[5]](https://www.preventivevet.com/how-to-make-a-pet-first-aid-kit) Where they disagree, we lean cautious and say so. Product details come only from each maker's page, read on 2026-11-16 and subject to change. Paws & Passage has not tested any product and gives no prices or ratings.
+The core list follows the AVMA's pet first-aid brochure and kit checklist [[1]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf), cross-checked against the ASPCA's poison control page [[2]](https://www.aspca.org/pet-care/aspca-poison-control) and several kit guides. [[3]](https://www.petmd.com/general-health/must-have-items-for-pet-first-aid-kit) [[4]](https://www.smalldoorvet.com/learning-center/medical/pet-first-aid-kit/) [[5]](https://www.preventivevet.com/how-to-make-a-pet-first-aid-kit) Where they disagree, we lean cautious and say so. Product details come only from each maker's page, read on 2026-11-16 and subject to change. Paws & Passage has not tested any product.
 
 ## The AVMA kit checklist
 
@@ -82,32 +84,50 @@ Cabins add easy-to-miss risks: cleaners under sinks, rodent bait in outbuildings
 
 A hybrid is often best: a ready-made kit gives you organized, often waterproof basics. One veterinary-written guide recommends buying a pre-made travel kit and supplementing it because many lack necessary items [[5]](https://www.preventivevet.com/how-to-make-a-pet-first-aid-kit), and a travel-blog guide notes a custom kit may suit a dog better. [[7]](https://puretravel.com/blog/2022/05/19/what-should-you-include-in-your-dogs-travel-first-aid-kit)
 
-## How the ready-made kits compare
+## Buying checklist
 
-We picked kits whose listings name the item types the AVMA checklist describes, are specific about contents, and fit a particular kind of trip. These are spec-based picks, not tested ones.
+Hold any ready-made kit up against this list. Product details below come from each maker's page, read on 2026-11-16, and we have not tested any kit. Check the current price on the listing.
 
-**Adventure Medical Kits: Me & My Dog.** The larger of two options. The maker lists wound-care dressings, bandages, a cold pack, a 10 cc irrigation tool, forceps for splinters and ticks, EMT shears, gloves, a nylon leash, an emergency blanket and a copy of Wilderness & Travel Medicine: A Comprehensive Guide, in two waterproof bags. The feature text also mentions a pet first aid manual that the contents list does not show, so confirm what arrives. [[8]](https://www.adventuremedicalkits.com/products/adventure-dog-medical-kit-me-my-dog) It also lists human-use medications, including aspirin, diphenhydramine and 3% hydrogen peroxide, plus single-use triple antibiotic ointment. Ask your vet whether any belong in your kit; do not use them on your own judgment.
+- [ ] **Contents match the AVMA checklist:** bandage materials, gauze, tape, scissors, tweezers, gloves, a cold pack, saline.
+- [ ] **Count line items, not the piece count.** One kit's page says 49 pieces but lists about 20 line items. [[11]](https://www.kurgo.com/harnesses/rsg-dog-first-aid-kit)
+- [ ] **A waterproof bag or a zippered case** you can find in the dark, with weight and size stated. Several pages state neither.
+- [ ] **A first aid guide or handbook** you can name; confirm what arrives, because one kit's feature text mentions a manual its contents list does not show. [[8]](https://www.adventuremedicalkits.com/products/adventure-dog-medical-kit-me-my-dog)
+- [ ] **Which medications are included**, if any, since some kits list human-use items. Ask your vet before relying on any.
+- [ ] **What is missing,** usually a thermometer, a muzzle, a flashlight and your contact card.
+- [ ] **The maker's guarantee or return window,** stated on the page.
 
-**Adventure Medical Kits: Trail Dog.** A smaller, dog-focused kit at 12 oz, with gauze, a self-adhering bandage, a triangular bandage, an irrigation tool, tick forceps, saline and a pet first aid handbook in a waterproof bag. [[9]](https://www.adventuremedicalkits.com/products/adventure-dog-medical-kit-trail-dog) Fewer items suits a day pack. It also lists diphenhydramine, hydrogen peroxide and triple antibiotic ointment, with the same caution.
+## A full kit for the cabin
 
-**Kurgo: Dog First Aid Kit.** Parachute cord, a first aid guide, tweezers, tape, a crepe bandage, gauze pads and rolls, a trauma pad, scissors, an instant cold pack, gloves, an emergency blanket and antiseptic wipes in a zippered case with mesh compartments. [[10]](https://kurgo.com/dog-first-aid-kit) The listing gives no quantities, weight or dimensions.
+For a week at a cabin, a larger two-bag kit keeps everything in one place where every adult can find it. One such maker lists wound-care dressings, bandages, a cold pack, a 10 cc irrigation tool, forceps for splinters and ticks, EMT shears, gloves, a nylon leash, an emergency blanket and a copy of Wilderness & Travel Medicine: A Comprehensive Guide, in two waterproof bags. [[8]](https://www.adventuremedicalkits.com/products/adventure-dog-medical-kit-me-my-dog) It also lists human-use medications, including aspirin, diphenhydramine and 3% hydrogen peroxide, plus single-use triple antibiotic ointment. Ask your vet whether any belong in your kit; do not use them on your own judgment.
 
-**Kurgo: RSG Dog First Aid Kit.** A smaller, MOLLE-compatible version designed to attach to the maker's RSG harnesses and utility belt, with contents very close to the larger Kurgo kit. [[11]](https://www.kurgo.com/harnesses/rsg-dog-first-aid-kit) It suits a trail better than a cabin.
+{{pick:amk-me-and-my-dog|Our pick|The maker lists wound-care dressings, a 10 cc irrigation tool, tick forceps and EMT shears in two waterproof bags, with a 60-day satisfaction guarantee.|https://www.adventuremedicalkits.com/products/adventure-dog-medical-kit-me-my-dog}}
 
-**Add-on: a basket muzzle.** The AVMA tells owners to apply a muzzle if a pet threatens to bite, because pain and fear can make even the gentlest pet unpredictable. [[1]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf) Gauze or a triangular bandage can serve as an improvised muzzle; a purpose-made one fitted in advance is another option. The Baskerville Ultra is a basket-style thermoplastic rubber muzzle; its maker says it lets a dog pant, drink and take treats and can be heat-shaped for fit, is not recommended for extended periods unless necessary, needs supervision, and is sized by nose length and circumference. [[12]](https://companyofanimals.com/us/brand-product/baskerville-ultra-muzzle/) Do not muzzle a vomiting pet. Practice at home with treats long before you need it.
+## A smaller kit for day hikes
 
-## How this site earns money
+A dog-focused kit at 12 oz suits a day pack: gauze, a self-adhering bandage, a triangular bandage, an irrigation tool, tick forceps, saline and a pet first aid handbook in a waterproof bag. [[9]](https://www.adventuremedicalkits.com/products/adventure-dog-medical-kit-trail-dog) Fewer items is the trade-off. It also lists diphenhydramine, hydrogen peroxide and triple antibiotic ointment, with the same caution.
 
-When a link is an affiliate link it is marked sponsored and the page says so; read our [affiliate disclosure](/affiliate-disclosure). A commission never changes which products we list or what we say about them.
+{{pick:amk-trail-dog|Our pick|The maker lists a weight of 12 oz and a pet first aid handbook, packed in a waterproof bag.|https://www.adventuremedicalkits.com/products/adventure-dog-medical-kit-trail-dog}}
+
+## A zippered kit for the car
+
+For a road trip with stops and no hiking, a single zippered kit is enough: parachute cord, a first aid guide, tweezers, tape, a crepe bandage, gauze pads and rolls, a trauma pad, scissors, an instant cold pack, gloves, an emergency blanket and antiseptic wipes, in a case with mesh compartments. [[10]](https://kurgo.com/dog-first-aid-kit) The listing gives no quantities, weight or dimensions. A smaller MOLLE-compatible version from the same maker attaches to its own harnesses and utility belt, with contents very close to the larger kit, and suits a trail better than a cabin. [[11]](https://www.kurgo.com/harnesses/rsg-dog-first-aid-kit)
+
+{{pick:kurgo-dog-first-aid-kit|Our pick|The maker lists gauze, a trauma pad, scissors, tweezers, a cold pack and an emergency blanket in a zippered case, with a lifetime guarantee against manufacturing defects.|https://kurgo.com/dog-first-aid-kit}}
+
+## Add-on: a basket muzzle
+
+The AVMA tells owners to apply a muzzle if a pet threatens to bite, because pain and fear can make even the gentlest pet unpredictable. [[1]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf) Gauze or a triangular bandage can serve as an improvised muzzle; a purpose-made one fitted in advance is another option. Look for a basket style that lets the dog pant and drink, a stated sizing method and the maker's own use limits. One basket-style thermoplastic rubber muzzle's maker says it lets a dog pant, drink and take treats and can be heat-shaped for fit, is not recommended for extended periods unless necessary, needs supervision, and is sized by nose length and circumference. [[12]](https://companyofanimals.com/us/brand-product/baskerville-ultra-muzzle/) Do not muzzle a vomiting pet. Practice at home with treats long before you need it.
+
+{{pick:baskerville-ultra-muzzle|Our pick|The maker says the basket design lets a dog pant, drink and take treats and that it can be heat-shaped, and sizes it by nose length and circumference.|https://companyofanimals.com/us/brand-product/baskerville-ultra-muzzle/}}
 
 ## Pick by situation
 
-| Your situation | What to prioritize | Option from this guide |
+| Your situation | What to prioritize | Kit type |
 | --- | --- | --- |
-| A week at a rural cabin, long drive | Full kit at the cabin, vet and poison numbers on the fridge | Me & My Dog, plus your own thermometer, records and contacts |
-| Day hikes from the cabin | Light kit on you or the dog's pack | Trail Dog, or Kurgo RSG with a compatible harness |
-| Road trip with stops, no hiking | A single zippered kit for the car | Kurgo Dog First Aid Kit |
-| Nervous or reactive dog | A fitted muzzle introduced well before the trip | Baskerville Ultra, if its sizing and use notes suit your dog |
+| A week at a rural cabin, long drive | Full kit at the cabin, vet and poison numbers on the fridge | A larger kit, plus your own thermometer, records and contacts |
+| Day hikes from the cabin | Light kit on you or the dog's pack | A compact kit, or a MOLLE kit with a compatible harness |
+| Road trip with stops, no hiking | A single zippered kit for the car | A zippered kit |
+| Nervous or reactive dog | A fitted muzzle introduced well before the trip | A basket muzzle, if its sizing and use notes suit your dog |
 | Dog on regular medication | Original-labeled medication, records copy, your vet's advice | Any kit, plus your vet's guidance |
 | Two or more dogs | Duplicate key items | See our [two-dog guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental) |
 
@@ -150,7 +170,19 @@ Check the kit before every trip and replace anything used, damaged or past its e
 - [ ] Anything medicinal has been reviewed with your vet and is within date.
 - [ ] Everyone traveling knows where the kit is.
 
-Add these to your [trip checklist](/tools/checklist) so the kit gets packed with everything else.`,
+## How sure we are
+
+- **Confirmed by a source we cite:** the AVMA checklist and the poison control numbers, and each kit's contents as the maker lists them.
+- **What most people report:** this page uses no survey; kit guides disagree on medications and amounts.
+- **Unknown, so ask your vet:** which medications, if any, suit your dog, and what the right doses are.
+
+## What to buy first
+
+1. **Free first:** save the vet, emergency clinic and both poison control numbers, and copy your dog's records.
+2. **A kit sized to the trip:** full at the cabin, smaller for the car, compact for the trail. Check it against the buying checklist above.
+3. **Then the gaps:** a digital thermometer, a flashlight, a contact card and, if your dog may need one, a fitted muzzle.
+
+Add these to your [trip checklist](/tools/checklist) and the [packing list](/tools/packing-list) so the kit gets packed with everything else, and see the [cabin packing list](/guides/dog-friendly-cabin-packing-list) for the rest of the bag.`,
   faqs: [
     {
       q: "What should be in a dog first-aid kit for travel?",
@@ -241,6 +273,12 @@ Add these to your [trip checklist](/tools/checklist) so the kit gets packed with
     "pet-friendly-vacation-rental-checklist",
     "vacation-rental-secure-fenced-yard",
     "how-many-dogs-can-you-bring-to-a-vacation-rental",
+  ],
+  relatedProducts: [
+    "amk-me-and-my-dog",
+    "amk-trail-dog",
+    "kurgo-dog-first-aid-kit",
+    "baskerville-ultra-muzzle",
   ],
   relatedTools: ["checklist", "pet-cost-check"],
   sources: [

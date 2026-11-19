@@ -12,7 +12,7 @@ export const guide: Guide = {
   status: "published",
   author: "Paws & Passage Editors",
   publishedOn: "2026-11-16",
-  lastReviewed: "2026-11-16",
+  lastReviewed: "2026-11-19",
   readingMinutes: 7,
   heroImage: "guide-large-dogs",
   body: `## The short answer
@@ -22,6 +22,7 @@ You found the cabin, the listing says "dogs welcome," and your Lab is 80 pounds.
 - A pets-allowed filter is only the first screen. Test every rental twice: does the rule explicitly allow this dog (permission), and can this dog move, rest and toilet comfortably there (practical fit)?
 - "Large dogs considered" means ask, not yes. Get approval in writing, naming your dog's current weight and breed.
 - Price the whole stay with your real dog count before choosing views over fit.
+- Gear comes second, after the booking. For a big dog that means a seat cover or hammock sized for the dog and the vehicle, and a ramp rated above the dog's weight with side rails and a non-slip surface (see the buying checklist below).
 
 This guide is about pet dogs. Service animals have separate protections under applicable law and platform policy.
 
@@ -79,6 +80,31 @@ Once a rental passes permission, run these five. They replace the long checklist
 
 Do not plan around carrying a heavy dog up steps: a wet walk or a minor injury changes what is safe. For a dog with pain or mobility problems, your veterinarian can say what access suits it.
 
+## Buying checklist: gear for a big dog
+
+Once the rental is settled, these are the things that make a heavy dog's trip easier. We researched products from the maker's page and have not tested any. Check the current price on the listing.
+
+- [ ] **A stated weight rating above your dog's weight,** for any ramp or step. It is the maker's figure, so leave a margin.
+- [ ] **Side rails and a non-slip surface** on a ramp, and a length that gives a gentle angle for your vehicle's height.
+- [ ] **Folds, slides closed or locks** so it fits in the car, and a weight you can lift yourself.
+- [ ] **A seat cover or hammock sized for your dog and your vehicle,** with anchor points for seat belts or LATCH. A hammock protects the seat; it is not a restraint.
+- [ ] **A maker guarantee** stated on the page.
+- [ ] **Your own measurements:** the dog's weight and length, the vehicle's seat width and the height of the entrance steps.
+
+### Room in the car
+
+A big dog on a wide bench seat needs a cover cut for the space. Match the maker's stated dimensions to your seat width, and check the size against your dog's weight.
+
+{{pick:kurgo-rover-hammock-extended-width|Best for large vehicles|The maker lists a 63 by 56 inch size that fits most full size trucks and large SUVs, eight attachment points and a lifetime guarantee.|https://kurgo.com/car-seat-covers/dog-hammocks/wander-hammock-extended-width}}
+
+### Getting a heavy dog up and in
+
+Do not plan around lifting. A ramp spreads the climb over a gentler slope, and a hitch step suits a tall truck or SUV with a 2 in hitch. Check the weight rating, the length it extends to and what it weighs, because you will carry it.
+
+{{pick:petsafe-happy-ride-extra-long-ramp|Our pick|The maker lists a 300 lb rating, a length of 47 to 87 inches with side rails and a high-traction surface, and says it slides closed and locks.|https://www.petsafe.com/p/happy-ride-extra-long-telescoping-dog-ramp/62320/}}
+
+{{pick:petsafe-happy-ride-hitch-step|Our pick|The maker lists a 200 lb rating, says it installs on any 2 in vehicle hitch and adjusts to the height of a truck or SUV, and lists traction on each tread.|https://www.petsafe.com/p/happy-ride-dog-hitch-step/62430/}}
+
 ## When a breed rule applies
 
 Restrictions can come from an owner, insurer, association or building. The Insurance Information Institute reports that insurers vary: some restrict certain breeds, some assess individual dogs, and some do not ask about breed. [[10]](https://www.iii.org/article/spotlight-on-dog-bite-liability) So "insurance won't allow it" is a real limit for some properties and not a universal one. Ask whether it is a firm property or insurer rule, or whether the host can approve your dog in writing. If the answer is no, move on, since a vague verbal exception that conflicts with the written agreement is no help. For named-breed lists, see the [breed restrictions guide](/guides/breed-restrictions-at-vacation-rentals).
@@ -91,7 +117,14 @@ A pet health policy is a different product from liability cover for injuries or 
 - **What most people report:** this page uses no survey; the 38 managers are a small convenience sample, not a picture of the whole market.
 - **Unknown, so ask:** the rule for your specific home, since limits change and many vary by property.
 
-Next step: put your dog's weight into the [will my dog be accepted tool](/tools/will-my-dog-be-accepted), then use the [trip checklist](/tools/checklist) to save the answers. Bringing two dogs? Start with the [two-dog guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental).`,
+## What to buy first
+
+1. **Nothing, until the rental says yes to your dog in writing.** The booking is the expensive decision.
+2. **A tape measure's worth of numbers:** the dog's weight, the entrance steps and the car's seat width.
+3. **A ramp or step rated above the dog's weight,** only if steps or the car are a real problem.
+4. **A seat cover or hammock sized for the dog and the vehicle.**
+
+Put your dog's weight into the [will my dog be accepted tool](/tools/will-my-dog-be-accepted), then add the gear to the [packing list](/tools/packing-list) and save the answers in the [trip checklist](/tools/checklist). Bringing two dogs? Start with the [two-dog guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental).`,
   faqs: [
     {
       q: "Can I filter vacation rentals by my dog's weight?",
@@ -124,8 +157,8 @@ Next step: put your dog's weight into the [will my dog be accepted tool](/tools/
     "pet-friendly-listing-red-flags",
   ],
   relatedProducts: [
+    "kurgo-rover-hammock-extended-width",
     "petsafe-happy-ride-extra-long-ramp",
-    "kong-bench-seat-cover-hammock-xl",
     "petsafe-happy-ride-hitch-step",
   ],
   relatedTools: ["checklist", "pet-cost-check"],

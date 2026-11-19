@@ -85,6 +85,8 @@ import guideColdWeatherGear from "@/assets/guide-cold-weather-gear.jpg";
 import guideColdWeatherGearCard from "@/assets/guide-cold-weather-gear-card.jpg";
 import guideDogHikingGear from "@/assets/guide-dog-hiking-gear.jpg";
 import guideDogHikingGearCard from "@/assets/guide-dog-hiking-gear-card.jpg";
+import guideKeepDogCool from "@/assets/guide-keep-dog-cool.jpg";
+import guideKeepDogCoolCard from "@/assets/guide-keep-dog-cool-card.jpg";
 
 // Editorial stock photographs (Unsplash License), shown for illustration only and never as pictures of a specific rental.
 // Photographer credits live in src/content/image-credits.ts.
@@ -299,6 +301,11 @@ const stockImages = {
     src: guideDogHikingGear,
     card: guideDogHikingGearCard,
     alt: "A white, black and tan border collie type dog in an orange harness and collar sitting upright on a rocky mountain path, with a barren slope behind it",
+  },
+  "guide-keep-dog-cool": {
+    src: guideKeepDogCool,
+    card: guideKeepDogCoolCard,
+    alt: "A tan dog with floppy ears licking water from a shallow teal basin in the shade beside a tree trunk, with green leaves and stones around it",
   },
 } as const satisfies Record<string, StockImage>;
 

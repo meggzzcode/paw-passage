@@ -27,6 +27,7 @@ relatedGuides:
   - how-many-dogs-can-you-bring-to-a-vacation-rental
   - vacation-rentals-that-welcome-large-dogs
   - dog-friendly-cabin-packing-list
+  - keep-a-dog-cool-on-a-summer-trip
 relatedProducts:
   - ruffwear-load-up-car-harness
   - kurgo-enhanced-strength-tru-fit

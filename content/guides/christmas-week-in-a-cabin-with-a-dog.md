@@ -27,6 +27,7 @@ relatedGuides:
   - how-vacation-rental-pet-fees-work
   - can-you-leave-a-dog-alone-in-a-vacation-rental
   - how-many-dogs-can-you-bring-to-a-vacation-rental
+  - cold-weather-dog-gear-for-winter-cabin-trips
 relatedProducts:
   - ruffwear-climate-changer-fleece
   - kurgo-loft-wander-dog-bed

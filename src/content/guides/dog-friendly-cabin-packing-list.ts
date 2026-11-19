@@ -19,7 +19,7 @@ export const guide: Guide = {
 
 ## The short answer
 
-- **What to buy:** a lid-tight food container, a washable drying towel and entry mat for the door, and in hot weather a cooling pad. Everything else on the list is what you already own.
+- **What to buy:** a lid-tight food container, a washable drying towel, a roll-up bed that is clearly the dog's, and a clip-on light for dark toilet trips. Everything else on the list is what you already own.
 - Pack your dog's familiar routine first, then add what the cabin requires: traction, barriers, cleanup gear, and wildlife-safe food storage.
 - Get host answers on stairs, fencing, crating, and food storage before you pack. A gate will not fix a stairs-and-bedroom mismatch.
 - Do not count on an ordinary food bin or cooler as bear-proof; the maker of the bin we link makes no bear-resistance claim. Keep pet food, treats, bowls, and rubbish indoors or as the property and park direct. [[1]](https://www.nps.gov/articles/bearsafetyfood.htm) [[13]](https://bearwise.org/six-bearwise-basics/never-leave-pet-food-outdoors/)
@@ -29,9 +29,9 @@ export const guide: Guide = {
 ## Buying checklist
 
 1. A food container with a snug lid that fits the whole bag, understood as tidy storage; the maker makes no bear-resistance claim.
-2. A machine-washable drying towel and a washable entry mat with a non-slip backing, both stated by the maker.
-3. A cooling pad sized by your dog's weight, only for hot weather and never left in sun or a hot car.
-4. A bed or mat the dog already knows, plus a washable throw, if the host allows furniture.
+2. A machine-washable drying towel, with a size and care rule the maker states.
+3. A roll-up bed with a waterproof bottom, sized to the space you will give it.
+4. A clip-on light that fits the collar or harness you already own, for dark toilet trips.
 5. A reserve of food and medication, in labeled packaging.
 6. Check the current price and size on each listing before you order.
 
@@ -86,7 +86,7 @@ Pack:
 
 - A well-fitting harness or collar your dog already wears comfortably.
 - A familiar fixed-length leash, a spare leash, and spare waste bags.
-- A headlamp or flashlight, and a collar light for dark toilet trips.
+- A headlamp or flashlight, and a collar light for dark toilet trips (see the light below).
 - Your usual vehicle restraint or secured travel crate.
 
 Check the rules for each park and trail. Georgia State Parks generally require pets on a leash no longer than six feet, and California State Parks' general rule, where dogs are allowed at all, is the same six-foot limit. [[14]](https://gastateparks.org/ParkRules) [[15]](https://www.parks.ca.gov/Dogs) National forests, counties, and cities set their own rules, and a dog-accepting rental does not make nearby trails dog-friendly. Keep a leash by the exit.
@@ -103,7 +103,7 @@ Airbnb says that even when pets are allowed you should contact the host to confi
 
 Pack:
 
-- A familiar bed or mat and a washable blanket. A roll-up travel bed gives the dog a spot that is clearly theirs and takes the hair, mud and damp.
+- A familiar bed or mat and a washable blanket. A roll-up travel bed gives the dog a spot that is clearly theirs and takes the hair, mud and damp. The Kurgo Loft Wander comes in Medium (27 x 36 in) and Large (36 x 48 in), rolls up to 12.5 x 8 in or 17 x 9.5 in, and has a water-resistant ripstop top, a waterproof nonslip bottom and a handle. The maker says to wash it by hand or machine on a gentle cycle, cold, and to hang it dry. [[19]](https://www.kurgo.com/p/loft-wander-dog-bed/K01560) The page lists no dog weight guidance, so choose the size by how your dog lies down.
 - A washable throw where furniture access is permitted. Your own clean cotton throw or an old bedsheet the dog already knows works fine.
 - Two or three dog-only towels in a color you will recognize, one for arrival and one while the first dries. Leave the rental's bath towels alone unless the host says otherwise.
 - A washable entrance mat if the host permits it, a brush, a cloth for paws, a lint roller, and waste bags.
@@ -111,15 +111,17 @@ Pack:
 
 Dry the dog at the door and wipe paws before they cross the floor, and pick a sleeping spot away from the entrance. With two dogs, bring separate beds and bowls; see our [two-dog accommodation guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental). If an accident happens, blot promptly, follow the property's cleaning instructions and tell the host; stain removers can damage some materials, so check first. Before checkout, collect yard waste and remove loose hair. To tick these items off before you go, use the [packing list tool](/tools/packing-list).
 
-In our view a washable drying towel and an entry mat are the two items most worth buying for muddy floors. Check each maker's stated size and care rule, and the current price on the listing.
+In our view a washable drying towel is the item most worth buying for muddy floors, with a washable entry mat as a second choice if the host permits one. The Soggy Doggy Super Shammy is 31 x 14 in, one size, in microfiber chenille with hand pockets; the maker says to machine wash it alone with no chlorine bleach or fabric softener and tumble dry low. [[20]](https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey) The page gives no absorbency figure, so with a large or double-coated dog you may want a second towel. Check the current price on the listing.
 
 {{pick:soggy-doggy-super-shammy-towel|Our pick|The maker lists a 31 x 14 in microfiber chenille towel with hand pockets that is machine washable.|https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey}}
 
-{{pick:soggy-doggy-microfiber-doormat|Our pick|The maker lists Large and Extra Large sizes with a non-slip backing, and says it is machine washable and dryer safe.|https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate}}
+{{pick:kurgo-loft-wander-dog-bed|Our pick|The maker lists Medium and Large sizes, a waterproof nonslip bottom, a carry handle and machine or hand-wash care.|https://www.kurgo.com/p/loft-wander-dog-bed/K01560}}
 
-**Hot weather.** A cooling pad gives a dog a cooler place to lie in a warm cabin. In our view it is a resting spot, not heatstroke prevention: Cornell's prevention advice is shade, frequent water and avoiding exercise in hot weather, and it calls heatstroke a medical emergency. [[18]](https://www.vet.cornell.edu/index.php/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/heatstroke-medical-emergency) A maker's warnings about direct sunlight and hot cars apply.
+**Hot weather.** A cooling pad is one way to give a dog a cooler place to lie in a warm cabin. In our view it is a resting spot, not heatstroke prevention: Cornell's prevention advice is shade, frequent water and avoiding exercise in hot weather, and it calls heatstroke a medical emergency. [[18]](https://www.vet.cornell.edu/index.php/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/heatstroke-medical-emergency) If you bring a pad, follow the maker's warnings about direct sunlight and hot cars.
 
-{{pick:green-pet-shop-cool-pet-pad|Best cooling mat|NBC Select names it its best cooling mat; the maker lists five sizes by dog weight and a 12-month warranty, and warns against direct sunlight and hot cars.|https://www.nbcnews.com/select/amp/rcna168150}}
+**Dark toilet trips.** A cabin yard has no streetlights, and a dog on a long line in the dark is hard to see. The Ruffwear Beacon is a clip-on light with Slow Flash, Fast Flash and Always On modes and three colors, with a stated run time of up to 20 hours and a charge time of about 1.5 hours by micro USB; the maker says it is waterproof to 1 m for 30 minutes. [[21]](https://ruffwear.com/products/the-beacon-safety-dog-light) Those figures are the maker's. It clips to Ruffwear collars and apparel light loops, so check that your dog's gear has one, or use a headlamp instead.
+
+{{pick:ruffwear-the-beacon-dog-safety-light|Our pick|The maker lists three modes, up to 20 hours of run time and a Quick Clip for Ruffwear collars and light loops.|https://ruffwear.com/products/the-beacon-safety-dog-light}}
 
 ## A practical canine first-aid kit
 
@@ -199,8 +201,8 @@ A lid-tight food container, a drying towel and an entry mat come first; a coolin
   relatedProducts: [
     "iris-usa-airtight-dog-food-container-10-lb",
     "soggy-doggy-super-shammy-towel",
-    "soggy-doggy-microfiber-doormat",
-    "green-pet-shop-cool-pet-pad",
+    "kurgo-loft-wander-dog-bed",
+    "ruffwear-the-beacon-dog-safety-light",
   ],
   relatedTools: ["checklist", "pet-cost-check"],
   sources: [
@@ -311,6 +313,24 @@ A lid-tight food container, a drying towel and an entry mat come first; a coolin
       url: "https://www.vet.cornell.edu/index.php/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/heatstroke-medical-emergency",
       publisher: "Cornell University College of Veterinary Medicine",
       accessedOn: "2026-11-19",
+    },
+    {
+      title: "Loft Wander Dog Bed",
+      url: "https://www.kurgo.com/p/loft-wander-dog-bed/K01560",
+      publisher: "Kurgo",
+      accessedOn: "2026-11-16",
+    },
+    {
+      title: "Super Shammy Towel",
+      url: "https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey",
+      publisher: "Soggy Doggy",
+      accessedOn: "2026-11-16",
+    },
+    {
+      title: "The Beacon Dog Safety Light",
+      url: "https://ruffwear.com/products/the-beacon-safety-dog-light",
+      publisher: "Ruffwear",
+      accessedOn: "2026-11-18",
     },
   ],
   research: {

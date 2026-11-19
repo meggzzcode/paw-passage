@@ -36,6 +36,7 @@ relatedGuides:
   - can-dogs-go-in-a-rental-pool-or-hot-tub
   - vacation-rental-with-a-reactive-dog
   - christmas-week-in-a-cabin-with-a-dog
+  - dog-hiking-gear-for-a-cabin-vacation
 relatedTools:
   - checklist
   - packing-list

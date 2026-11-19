@@ -44,9 +44,8 @@ export const packItems: PackItem[] = [
     what: "A harness that clips into the seat belt system, or a crate you can secure in the car.",
     use: "Keeps your dog restrained and you focused on the road.",
     productIds: [
-      "sleepypod-clickit-range",
+      "sleepypod-clickit-sport-plus",
       "sleepypod-atom",
-      "gunner-g1-kennel",
       "lucky-duck-lucky-kennel",
     ],
     reason: (p) =>

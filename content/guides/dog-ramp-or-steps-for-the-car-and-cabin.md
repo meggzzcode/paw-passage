@@ -28,8 +28,12 @@ relatedGuides:
   - vacation-rental-with-a-senior-dog
   - vacation-rentals-that-welcome-large-dogs
   - dog-car-safety-harness-and-crate-guide
+  - cold-weather-dog-gear-for-winter-cabin-trips
 relatedProducts:
   - petsafe-happy-ride-compact-telescoping-ramp
+  - petsafe-happy-ride-extra-long-ramp
+  - petsafe-happy-ride-side-door-steps
+  - petsafe-happy-ride-hitch-step
 relatedTools:
   - checklist
   - packing-list
@@ -74,6 +78,10 @@ sources:
   - title: The 4 Best Dog Ramps for Cars and SUVs
     url: https://www.petful.com/pet-products/dog-ramp-for-car
     publisher: Petful
+    accessedOn: 2026-11-18
+  - title: Happy Ride Compact Telescoping Dog Ramp
+    url: https://petsafe.com/product/happy-ride-compact-telescoping-dog-ramp
+    publisher: PetSafe
     accessedOn: 2026-11-18
 research:
   primaryKeyword: dog ramp vs stairs for car
@@ -203,9 +211,27 @@ Read it the other way: if your cargo floor sits 24 in off the ground, the 62 in 
 
 Introduce the ramp at home first: VCA says most dogs can quickly learn to use ramps. [[4]](https://vcahospitals.com/know-your-pet/helping-your-dog-with-osteoarthritis) A dog who wobbles on it is a sign to call your vet, not to push on.
 
-If a ramp is what your measurements point to, a telescoping one that collapses short is easier to store; the folding ramp is lighter at 10 lb but lists no folded size. Check the current price on the listing.
+## Which one to buy
 
-{{pick:petsafe-happy-ride-compact-telescoping-ramp|Our pick|Same 300 lb maker rating as the 47 to 87 in ramp in the table above, but it collapses to 28 in and weighs 14 lb; it extends to 70 in at most, so check your vehicle height first.|https://petsafe.com/product/happy-ride-compact-telescoping-dog-ramp}}
+Decide on the two numbers you measured, then match the product to the problem. These are the maker's figures, not our tests.
+
+**A ramp that collapses short, for a tight trunk.** The Compact Telescoping Ramp extends from 28 to 70 inches and collapses to 28 inches, weighs 14 lb and carries the maker's 300 lb rating. [[11]](https://petsafe.com/product/happy-ride-compact-telescoping-dog-ramp) At 70 inches it reaches about 22 inches at 18 degrees by our arithmetic above, so it suits a cargo floor in the low-to-mid 20s, not a tall truck.
+
+{{pick:petsafe-happy-ride-compact-telescoping-ramp|For a small trunk or a lighter carry|The maker lists 28 to 70 in extended, 28 in collapsed, 14 lb and a 300 lb rating it calls independently tested (no tester named); check your vehicle height against the 70 in maximum.|https://petsafe.com/product/happy-ride-compact-telescoping-dog-ramp}}
+
+**A ramp for a tall vehicle.** The Extra Long Telescoping Ramp runs 47 to 87 inches, is made of aluminum, and the maker says it supports 300 lb. At full length it reaches about 27 inches at 18 degrees, which is where a tall SUV or truck floor sits. It weighs 18 lb, so you are choosing a gentler slope over an easier carry.
+
+{{pick:petsafe-happy-ride-extra-long-ramp|For a tall SUV or truck|The maker lists 47 to 87 in long, aluminum, 18 lb, a 300 lb rating it calls independently tested, and a latch that locks it closed; it does not describe it as a senior product.|https://www.petsafe.com/p/happy-ride-extra-long-telescoping-dog-ramp/62320/}}
+
+**Steps for a fixed sill.** If the dog always uses the same door, the Side Door Pet Steps set at 21.25, 24.75 or 28 inches, with side rails, textured steps and a 200 lb maker rating. Compare your sill height with those three settings first; the page does not say how the steps attach to a vehicle.
+
+{{pick:petsafe-happy-ride-side-door-steps|For a fixed-height door sill|The maker lists three heights (21.25, 24.75, 28 in), side rails, textured steps, a built-in handle and a 200 lb rating; the page does not say how it attaches.|https://www.petsafe.com/p/happy-ride-side-door-pet-steps/ZTV00-17464/}}
+
+**Steps that stay on the truck.** The Hitch Step installs on a 2 inch hitch, adjusts to the height of a truck or SUV and the maker says it supports 200 lb. It only works if you have that hitch, and the page gives no height numbers.
+
+{{pick:petsafe-happy-ride-hitch-step|For a truck or SUV with a 2 in hitch|The maker says it installs on any 2 in hitch, adjusts to the vehicle height, has traction on each tread and supports 200 lb; no height range is given.|https://www.petsafe.com/p/happy-ride-dog-hitch-step/62430/}}
+
+If your dog is on the smaller side and you want the lightest carry, the Folding Dog Ramp is 62 inches long, 10 lb and rated by the maker to 150 lb, but its folded size is not listed. We feature it in our [senior dog rental guide](/guides/vacation-rental-with-a-senior-dog).
 
 ## Stairs at the cabin or rental
 

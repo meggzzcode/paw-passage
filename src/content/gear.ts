@@ -54,8 +54,7 @@ export interface GearPick {
 }
 
 // Products live in content/products.yml (editable in Pages CMS) and are checked by src/content/products-schema.ts.
-// A guide's `gear` array refers to them by id. (src/content/gear/*.ts are the pre-migration baseline kept only for
-// src/test/gear-parity.test.ts; they are no longer read by the site.)
+// A guide's `gear` array refers to them by id.
 export const products: Product[] = records.map((r) => ({
   id: r.id,
   name: r.name,

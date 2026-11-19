@@ -42,6 +42,7 @@ BOARDS = {  # guide slug -> ONE primary board (see docs/PINTEREST-SETUP.md for t
     "two-large-dogs-in-one-car": "Large Dog Travel",
     "dog-life-jacket-for-lakes-and-beaches": "Dog Travel Gear",
     "dog-travel-bowls-and-food-storage": "Dog Travel Gear",
+    "keep-a-dog-cool-on-a-summer-trip": "Dog Travel Gear",
 }
 FIELDS = ["pin_image_url", "title", "description", "destination_url", "board"]
 

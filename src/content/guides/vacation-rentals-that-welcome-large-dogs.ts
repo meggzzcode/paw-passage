@@ -97,6 +97,10 @@ A big dog on a wide bench seat needs a cover cut for the space. Match the maker'
 
 {{pick:kurgo-rover-hammock-extended-width|Best for large vehicles|The maker lists a 63 by 56 inch size that fits most full size trucks and large SUVs, eight attachment points and a lifetime guarantee.|https://kurgo.com/car-seat-covers/dog-hammocks/wander-hammock-extended-width}}
 
+If your big dog rides in the cargo area of an SUV or wagon instead, the cover has a different job: a wet, muddy dog on the load floor, and a bumper the dog scrapes on the way in and out. Kurgo's Rover Cargo Cape is 52 inches wide by 62 inches long, with waterproof, stain-resistant fabric, a fold-out bumper guard with reflective trim and a center zipper for 50/50 split seats. The maker says it fits most vehicles' cargo areas and lists no models, so measure your own load floor. [[12]](https://www.kurgo.com/p/cargo-cape/POG30-17676) It is spot clean or hand wash, then air dry, and like the hammock it is a cover, not a restraint.
+
+{{pick:kurgo-rover-cargo-cape|For the cargo area|The maker lists 52 by 62 in, waterproof and stain-resistant fabric, a fold-out bumper guard and a center zipper for 50/50 splits; it says it fits most cargo areas without naming models.|https://www.kurgo.com/p/cargo-cape/POG30-17676}}
+
 ### Getting a heavy dog up and in
 
 Do not plan around lifting. A ramp spreads the climb over a gentler slope, and a hitch step suits a tall truck or SUV with a 2 in hitch. Check the weight rating, the length it extends to and what it weighs, because you will carry it.
@@ -122,7 +126,7 @@ A pet health policy is a different product from liability cover for injuries or 
 1. **Nothing, until the rental says yes to your dog in writing.** The booking is the expensive decision.
 2. **A tape measure's worth of numbers:** the dog's weight, the entrance steps and the car's seat width.
 3. **A ramp or step rated above the dog's weight,** only if steps or the car are a real problem.
-4. **A seat cover or hammock sized for the dog and the vehicle.**
+4. **A seat cover, hammock or cargo cover sized for the dog and the vehicle.**
 
 Put your dog's weight into the [will my dog be accepted tool](/tools/will-my-dog-be-accepted), then add the gear to the [packing list](/tools/packing-list) and save the answers in the [trip checklist](/tools/checklist). Bringing two dogs? Start with the [two-dog guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental).`,
   faqs: [
@@ -160,6 +164,7 @@ Put your dog's weight into the [will my dog be accepted tool](/tools/will-my-dog
     "kurgo-rover-hammock-extended-width",
     "petsafe-happy-ride-extra-long-ramp",
     "petsafe-happy-ride-hitch-step",
+    "kurgo-rover-cargo-cape",
   ],
   relatedTools: ["checklist", "pet-cost-check"],
   sources: [
@@ -228,6 +233,12 @@ Put your dog's weight into the [will my dog be accepted tool](/tools/will-my-dog
       url: "https://www.iii.org/article/facts-about-pet-insurance",
       publisher: "Insurance Information Institute",
       accessedOn: "2026-11-16",
+    },
+    {
+      title: "Rover Cargo Cape",
+      url: "https://www.kurgo.com/p/cargo-cape/POG30-17676",
+      publisher: "Kurgo",
+      accessedOn: "2026-11-18",
     },
   ],
   research: {

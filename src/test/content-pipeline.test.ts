@@ -16,6 +16,8 @@ let root = "";
 const cleanGuide = () => {
   return readFileSync(realGuide, "utf8")
     .replace(/relatedGuides:\n( {2}- .*\n)+/, "relatedGuides: []\n")
+    .replace(/relatedProducts:\n( {2}- .*\n)+/, "relatedProducts: []\n")
+    .replace(/^\{\{pick:.*\}\}\n?/gm, "")
     .replace(/\]\(aff:[a-z0-9-]+\)/g, "](https://example.com)");
 };
 const guideWith = (edit: (t: string) => string) => edit(cleanGuide());

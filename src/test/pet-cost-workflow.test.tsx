@@ -214,6 +214,8 @@ describe("embeddedTool front matter", () => {
     "utf8",
   )
     .replace(/relatedGuides:\n( {2}- .*\n)+/, "relatedGuides: []\n")
+    .replace(/relatedProducts:\n( {2}- .*\n)+/, "relatedProducts: []\n")
+    .replace(/^\{\{pick:.*\}\}\n?/gm, "")
     .replace(/\]\(aff:[a-z0-9-]+\)/g, "](https://example.com)");
   const run = (text: string) => {
     const root = mkdtempSync(join(tmpdir(), "paws-embed-"));

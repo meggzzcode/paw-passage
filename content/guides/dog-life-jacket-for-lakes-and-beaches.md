@@ -28,6 +28,8 @@ relatedGuides:
   - can-dogs-go-in-a-rental-pool-or-hot-tub
   - dog-friendly-cabin-packing-list
   - can-you-leave-a-dog-alone-in-a-vacation-rental
+  - dog-hiking-gear-for-a-cabin-vacation
+  - keep-a-dog-cool-on-a-summer-trip
 relatedProducts:
   - ezydog-dfd-life-jacket
   - ruffwear-float-coat

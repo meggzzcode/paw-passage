@@ -29,6 +29,7 @@ relatedGuides:
   - can-you-leave-a-dog-alone-in-a-vacation-rental
   - airbnb-pet-damage-charge-after-checkout
   - what-a-dog-really-costs-on-a-vacation-rental
+  - dog-hiking-gear-for-a-cabin-vacation
 relatedProducts:
   - kurgo-collaps-a-bowl
   - gunner-dog-bowl

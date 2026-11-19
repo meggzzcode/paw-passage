@@ -228,4 +228,10 @@ export const imageCredits: ImageCredit[] = [
     photographer: "Praneeth Peiris",
     unsplashUrl: "https://unsplash.com/photos/a-dog-sits-on-a-rocky-mountain-path--H5NazLT6I8",
   },
+  {
+    key: "guide-keep-dog-cool",
+    photographer: "swati arora",
+    unsplashUrl:
+      "https://unsplash.com/photos/brown-short-coated-dog-on-blue-round-plastic-basin-1GPEquhzkTU",
+  },
 ];

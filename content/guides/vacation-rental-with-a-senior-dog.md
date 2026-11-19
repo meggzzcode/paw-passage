@@ -37,10 +37,13 @@ relatedGuides:
   - airbnb-pet-damage-charge-after-checkout
   - how-many-dogs-can-you-bring-to-a-vacation-rental
   - puppy-at-a-vacation-rental
+  - cold-weather-dog-gear-for-winter-cabin-trips
+  - keep-a-dog-cool-on-a-summer-trip
 relatedProducts:
   - petsafe-happy-ride-folding-ramp
   - petsafe-happy-ride-side-door-steps
   - pet-parents-pawtect-pads
+  - petsafe-happy-ride-bench-seat-cover
 relatedTools:
   - checklist
   - pet-cost-check
@@ -164,6 +167,10 @@ sources:
   - title: Understanding Behavioral Changes in Senior Dogs
     url: https://dogagingproject.org/understanding-behavioral-changes-in-senior-dogs/
     publisher: Dog Aging Project
+    accessedOn: 2026-11-18
+  - title: Happy Ride Quilted Bench Seat Cover
+    url: https://www.petsafe.com/p/happy-ride-quilted-bench-seat-cover/PTV00-17462/
+    publisher: PetSafe
     accessedOn: 2026-11-18
 research:
   primaryKeyword: vacation rental with a senior dog
@@ -375,9 +382,13 @@ ASPCA says to carry medical records if your dog's history is complicated, to put
 
 On the drive, no vet source we read gives a stop interval. In nine mostly UK forum threads and owner posts, three mention frequent stops or a slower pace and three mention shade or heat, with no agreed numbers, so ask your vet what suits your dog and watch for discomfort. ASPCA says never to leave a pet in a parked car [[25]](https://www.aspca.org/news/traveling-your-pets-dos-and-donts), so plan stops where someone can stay with your dog. See our [car safety guide](/guides/dog-car-safety-harness-and-crate-guide).
 
+Accidents and leaks can happen in the car as well as the cabin, and a rental car or your own back seat is also hard to clean. A waterproof layer under the dog helps, and it is not a restraint: the dog still needs a harness or crate from the guide above. PetSafe's Happy Ride Quilted Bench Seat Cover is 45 inches long by 56 inches wide, made of padded heavy cotton twill with waterproof protection and a high-grip bottom coating, and the maker says it fits the back seat of most cars, trucks and SUVs, lets you reach the seat belts without removing it, and is machine washable. [[31]](https://www.petsafe.com/p/happy-ride-quilted-bench-seat-cover/PTV00-17462/) Check your seat width against those dimensions, and that your seat belts stay usable, before you buy.
+
+{{pick:petsafe-happy-ride-bench-seat-cover|For a leaky or shedding senior in the back seat|The maker lists a 45 by 56 in quilted cover with waterproof protection, a high-grip bottom coating, seat belt access and machine washing; it is a seat cover, not a restraint.|https://www.petsafe.com/p/happy-ride-quilted-bench-seat-cover/PTV00-17462/}}
+
 ## What to buy first
 
-Before you book, buy nothing; get the photos and the vet's answer. After that, in order: washable pads or layers, because accidents and slippery floors come up in most of the sections above; then a ramp or steps if the vehicle or a sofa is the hurdle, sized to your dog's weight and the height it must reach. Add the first-aid kit and the bed from the [cabin packing list](/guides/dog-friendly-cabin-packing-list), and build the full list in the [packing list tool](/tools/packing-list). For large dogs, read the [large-dog guide](/guides/vacation-rentals-that-welcome-large-dogs) too.
+Before you book, buy nothing; get the photos and the vet's answer. After that, in order: washable pads or layers (including a waterproof layer for the back seat), because accidents and slippery floors come up in most of the sections above; then a ramp or steps if the vehicle or a sofa is the hurdle, sized to your dog's weight and the height it must reach. Add the first-aid kit and the bed from the [cabin packing list](/guides/dog-friendly-cabin-packing-list), and build the full list in the [packing list tool](/tools/packing-list). For large dogs, read the [large-dog guide](/guides/vacation-rentals-that-welcome-large-dogs) too.
 
 ## When should you call your vet?
 

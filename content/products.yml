@@ -982,7 +982,7 @@ products:
     retailerUrl: ""
     retailerName: ""
     lastVerified: 2026-11-18
-    active: true
+    active: false
     imageSource: ""
     imageRights: none
     affiliateProgram: ""
@@ -2454,7 +2454,7 @@ products:
     retailerUrl: ""
     retailerName: ""
     lastVerified: 2026-11-19
-    active: true
+    active: false
     imageSource: ""
     imageRights: none
     affiliateProgram: ""

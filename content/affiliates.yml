@@ -457,9 +457,9 @@ links:
   - id: sleepypod-clickit-sport-plus
     network: Amazon Associates
     url: https://www.amazon.com/dp/B0FS4DL1QF?tag={amazonTrackingId}
-    approved: true
+    approved: false
     kind: product
-    notes: "Added 2026-11-19 as replacement for sleepypod-clickit-range. Amazon ASIN B0FS4DL1QF (MEDIUM; title seen in search results: Certified Dog Safety Car Harness Clickit Sport Plus); ASIN from search results, not yet verified on the Amazon page; stock NOT confirmed; size not stated. Size-specific listings seen: Medium Jet Black B08JQQF9YX, Large Jet Black B08JRR6V58, Small Charcoal B08JQSDXX4 (Large Charcoal B08JQT939P shown unavailable)."
+    notes: "OFF: Cowork 2026-11-19: no buy box, brand not on page, no weight range or CPS wording. Added 2026-11-19 as replacement for sleepypod-clickit-range. Amazon ASIN B0FS4DL1QF (MEDIUM; title seen in search results: Certified Dog Safety Car Harness Clickit Sport Plus); ASIN from search results, not yet verified on the Amazon page; stock NOT confirmed; size not stated. Size-specific listings seen: Medium Jet Black B08JQQF9YX, Large Jet Black B08JRR6V58, Small Charcoal B08JQSDXX4 (Large Charcoal B08JQT939P shown unavailable)."
   - id: kurgo-loft-wander-dog-bed
     network: Amazon Associates
     url: https://www.amazon.com/dp/B01JFEAL1O?tag={amazonTrackingId}
@@ -483,13 +483,13 @@ links:
     url: https://www.amazon.com/dp/B0D6Z4L6BW?tag={amazonTrackingId}
     approved: true
     kind: product
-    notes: "Amazon ASIN B0D6Z4L6BW (MEDIUM); title 'Tractive Smart Dog GPS Tracker' (does not say DOG 6). Identity inferred: listings give model TG6, dogs over 8 lb, 14-day battery, IP68, built-in SIM, matching the catalog DOG 6. Variant: other colour listing B0D6Z74WJY. Not for: B0D6Z7KPBP (shows Mint, 10 to 14 day battery, unclear), B0DZF21KRY and B0DZF4ZYW3 (6-month-subscription bundles), B0GKGK4PGV (DOG 6 Mini, a different product). Owner to confirm model on the product page."
+    notes: "Cowork 2026-11-19: Amazon seller, buy box present; page title does not say DOG 6 and model number was not captured. Amazon ASIN B0D6Z4L6BW (MEDIUM); title 'Tractive Smart Dog GPS Tracker' (does not say DOG 6). Identity inferred: listings give model TG6, dogs over 8 lb, 14-day battery, IP68, built-in SIM, matching the catalog DOG 6. Variant: other colour listing B0D6Z74WJY. Not for: B0D6Z7KPBP (shows Mint, 10 to 14 day battery, unclear), B0DZF21KRY and B0DZF4ZYW3 (6-month-subscription bundles), B0GKGK4PGV (DOG 6 Mini, a different product). Owner to confirm model on the product page."
   - id: kurgo-rover-backseat-bridge
     network: Amazon Associates
     url: https://www.amazon.com/dp/B0888TJNRS?tag={amazonTrackingId}
-    approved: true
+    approved: false
     kind: product
-    notes: "Amazon ASIN B0888TJNRS (MEDIUM); title 'Kurgo Dog Backseat Bridge Car Extender ... Up to 100 lbs' (title omits Rover). Matches catalog specs (100 lb, 16 x 52 x 1 in, not for gaps over 13 in, cup holder and pocket). Do not use B004OSUG8A or B0CGX7T3XF: older Rover Backseat Bridge rated 75 lb. Alt listing B0888S5Q6Y."
+    notes: "OFF: Cowork 2026-11-19: currently unavailable, no buy box. Amazon ASIN B0888TJNRS (MEDIUM); title 'Kurgo Dog Backseat Bridge Car Extender ... Up to 100 lbs' (title omits Rover). Matches catalog specs (100 lb, 16 x 52 x 1 in, not for gaps over 13 in, cup holder and pocket). Do not use B004OSUG8A or B0CGX7T3XF: older Rover Backseat Bridge rated 75 lb. Alt listing B0888S5Q6Y."
   - id: petsafe-happy-ride-collapsible-crate
     network: Amazon Associates
     url: https://www.amazon.com/dp/B09T1P2B7J?tag={amazonTrackingId}
@@ -528,10 +528,10 @@ links:
     notes: "Amazon ASIN B0991GNL5B (HIGH); title 'Ruffwear Knot-a-Leash, Reflective 5 ft Rope Lead, Obsidian Black, Large'. Variant: Small Obsidian Black B098ZVLRNH, plus many colour ASINs, some unavailable. Owner to pick size."
   - id: ruffwear-grip-trex-boots
     network: Amazon Associates
-    url: https://www.amazon.com/dp/B0HMT6Q334?tag={amazonTrackingId}
+    url: https://www.amazon.com/dp/B01MY7S3H8?tag={amazonTrackingId}
     approved: true
     kind: product
-    notes: "Amazon ASIN B0HMT6Q334 (MEDIUM); title 'Ruffwear Grip Trex Dog Boots' (generic listing, size not in title). Variant: per-size listings such as B01MY7S3H8 (Black 2.00 in), B01MZ9DL3J (1.50 in), B01MT8OV48 (2.50 in), B0HMV115YC. Sold as a set of two. Owner to confirm the generic ASIN has a buy box and pick a default size."
+    notes: "Cowork 2026-11-19: generic ASIN B0HMT6Q334 had no buy box; switched to the 2.00 in listing B01MY7S3H8 (Ruffwear, buy box). Other sizes: B01MR5M5YQ 2.25, B01MT8OV48 2.50, B01N21Z6W6 2.75. Amazon ASIN B01MY7S3H8 (MEDIUM); title 'Ruffwear Grip Trex Dog Boots' (generic listing, size not in title). Variant: per-size listings such as B01MY7S3H8 (Black 2.00 in), B01MZ9DL3J (1.50 in), B01MT8OV48 (2.50 in), B0HMV115YC. Sold as a set of two. Owner to confirm the generic ASIN has a buy box and pick a default size."
   - id: ruffwear-web-master-harness
     network: Amazon Associates
     url: https://www.amazon.com/dp/B0DNV6MBKK?tag={amazonTrackingId}

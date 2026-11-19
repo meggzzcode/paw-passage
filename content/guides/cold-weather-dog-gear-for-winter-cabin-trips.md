@@ -3,7 +3,7 @@ title: "Cold-Weather Dog Gear for Winter Cabin Trips: What Helps and Fit"
 seoTitle: "Cold-Weather Dog Gear for Winter Cabin Trips"
 seoDescription: "When a dog coat or boots help on a winter cabin trip, how cold is too cold by dog type, salt and de-icer paw safety, maker size charts and drying at a rental."
 dek: Vets and kennel clubs give different cold thresholds, and the maker pages give no temperature ratings. Here is how to decide whether your dog needs a coat or boots, size them, and keep a rental clean.
-category: Gear
+category: Planning
 states: []
 status: published
 approvedBy: Paws & Passage Editors

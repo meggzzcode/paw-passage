@@ -234,4 +234,10 @@ export const imageCredits: ImageCredit[] = [
     unsplashUrl:
       "https://unsplash.com/photos/brown-short-coated-dog-on-blue-round-plastic-basin-1GPEquhzkTU",
   },
+  {
+    key: "guide-protect-car-interior",
+    photographer: "yaed",
+    unsplashUrl:
+      "https://unsplash.com/photos/two-pug-dogs-sitting-in-the-back-seat-of-a-car-EHI8SdWiQ-w",
+  },
 ];

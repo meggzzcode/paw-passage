@@ -43,11 +43,7 @@ export const packItems: PackItem[] = [
     group: "Car and safety",
     what: "A harness that clips into the seat belt system, or a crate you can secure in the car.",
     use: "Keeps your dog restrained and you focused on the road.",
-    productIds: [
-      "sleepypod-clickit-sport-plus",
-      "sleepypod-atom",
-      "lucky-duck-lucky-kennel",
-    ],
+    productIds: ["sleepypod-clickit-sport-plus", "sleepypod-atom", "lucky-duck-lucky-kennel"],
     reason: (p) =>
       p.car
         ? "You are driving: a properly fitted harness or a secured crate is the safer way to travel."
@@ -82,7 +78,7 @@ export const packItems: PackItem[] = [
     group: "Sleep and comfort",
     what: "A washable blanket for furniture or the car.",
     use: "Only for furniture the host allows dogs on. Ask before you bring it.",
-    productIds: ["orvis-embossed-sherpa-throw"],
+    productIds: [],
     reason: (p) => (p.rental ? "Only if the host allows dogs on furniture. Ask first." : null),
   },
   {
@@ -109,7 +105,7 @@ export const packItems: PackItem[] = [
     group: "Keep them findable",
     what: "A collar tag with your phone number.",
     use: "The fastest way for a stranger to reach you if your dog slips out.",
-    productIds: ["akc-reunite-stainless-collar-tag"],
+    productIds: [],
     reason: () => "Make sure the number on it is one that will be answered on this trip.",
   },
   {
@@ -118,7 +114,7 @@ export const packItems: PackItem[] = [
     group: "Keep them findable",
     what: "A tracker that clips to the collar.",
     use: "Shows where your dog is if they get out. Check its plan and coverage first.",
-    productIds: ["tractive-dog-6", "tractive-dog-6-xl", "fi-series-3-plus"],
+    productIds: ["tractive-dog-6", "fi-series-3-plus"],
     reason: (p) =>
       p.bolter ? "Your dog bolts: a tracker adds a second chance if a tag is not enough." : null,
   },
@@ -128,7 +124,7 @@ export const packItems: PackItem[] = [
     group: "Keep them contained",
     what: "A freestanding play pen you can set up indoors or outside.",
     use: "A safe space when the rental has no fence. Ask the host before you set one up.",
-    productIds: ["midwest-exercise-pen-with-door", "north-states-petyard-passage-8-panel"],
+    productIds: ["midwest-exercise-pen-with-door"],
     reason: (p) =>
       p.bolter || p.noFence
         ? "No fence, or a dog that slips out: a pen gives you a safe space."

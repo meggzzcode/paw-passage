@@ -87,6 +87,8 @@ import guideDogHikingGear from "@/assets/guide-dog-hiking-gear.jpg";
 import guideDogHikingGearCard from "@/assets/guide-dog-hiking-gear-card.jpg";
 import guideKeepDogCool from "@/assets/guide-keep-dog-cool.jpg";
 import guideKeepDogCoolCard from "@/assets/guide-keep-dog-cool-card.jpg";
+import guideProtectCarInterior from "@/assets/guide-protect-car-interior.jpg";
+import guideProtectCarInteriorCard from "@/assets/guide-protect-car-interior-card.jpg";
 
 // Editorial stock photographs (Unsplash License), shown for illustration only and never as pictures of a specific rental.
 // Photographer credits live in src/content/image-credits.ts.
@@ -306,6 +308,11 @@ const stockImages = {
     src: guideKeepDogCool,
     card: guideKeepDogCoolCard,
     alt: "A tan dog with floppy ears licking water from a shallow teal basin in the shade beside a tree trunk, with green leaves and stones around it",
+  },
+  "guide-protect-car-interior": {
+    src: guideProtectCarInterior,
+    card: guideProtectCarInteriorCard,
+    alt: "A black pug with its front paws over the rear seat back and a fawn pug in a harness sitting beside it, both looking toward the camera from the back seat of a car with beige upholstery",
   },
 } as const satisfies Record<string, StockImage>;
 

@@ -29,6 +29,7 @@ relatedGuides:
   - vacation-rentals-that-welcome-large-dogs
   - dog-car-safety-harness-and-crate-guide
   - cold-weather-dog-gear-for-winter-cabin-trips
+  - protect-your-car-interior-from-a-dog-on-a-road-trip
 relatedProducts:
   - petsafe-happy-ride-compact-telescoping-ramp
   - petsafe-happy-ride-extra-long-ramp

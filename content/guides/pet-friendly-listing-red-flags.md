@@ -5,7 +5,7 @@ seoDescription: "A pet filter is a starting point. Learn the red flags in vacati
 dek: The signs that a listing's pet-friendly claim is thinner than it looks, with real examples from 38 manager pages, before you pay a deposit.
 category: Planning
 states: []
-status: published
+status: draft
 approvedBy: Paws & Passage Editors
 approvedOn: 2026-11-18
 author: Paws & Passage Editors

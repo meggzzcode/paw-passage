@@ -3,7 +3,7 @@ title: "Dog Hiking Gear for a Cabin Vacation: Boots, Harness, Leash and Light"
 seoTitle: "Dog Hiking Gear for a Cabin Vacation: What to Pack"
 seoDescription: "When a dog needs boots, harness or collar on steep trails, leash length, dusk visibility, heat and park trail rules, with maker size charts."
 dek: Most trail trips need less gear than the lists say, and the rules decide where your dog can go before the gear does. Here is what to check, how to size it and what the park and forest pages actually require.
-category: Gear
+category: Planning
 states: []
 status: published
 approvedBy: Paws & Passage Editors

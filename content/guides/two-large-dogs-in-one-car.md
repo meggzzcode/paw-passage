@@ -28,6 +28,7 @@ relatedGuides:
   - vacation-rentals-that-welcome-large-dogs
   - dog-friendly-cabin-packing-list
   - keep-a-dog-cool-on-a-summer-trip
+  - protect-your-car-interior-from-a-dog-on-a-road-trip
 relatedProducts:
   - ruffwear-load-up-car-harness
   - kurgo-enhanced-strength-tru-fit

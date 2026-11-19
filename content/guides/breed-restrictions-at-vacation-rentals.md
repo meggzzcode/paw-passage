@@ -5,7 +5,7 @@ seoDescription: "Breed restrictions at vacation rentals, from 14 real policies: 
 dek: Breed lists, weight caps and fees from 14 real pet policies, plus what to ask and a message to send before you pay.
 category: Planning
 states: []
-status: published
+status: draft
 author: Paws & Passage Editors
 publishedOn: 2026-11-18
 lastReviewed: 2026-11-18

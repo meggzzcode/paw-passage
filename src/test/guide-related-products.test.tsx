@@ -67,9 +67,10 @@ describe("guide page section", () => {
     expect(section).toMatch(/Affiliate/i);
     expect(section).toContain("As an Amazon Associate I earn from qualifying purchases.");
   });
-  it("a guide without products has no section", async () => {
-    const other = allGuides.find((x) => !x.relatedProducts?.length && x.status === "published");
-    expect(other).toBeTruthy();
-    expect(await render(other!.slug)).not.toContain("Gear for this trip");
+  it("every published guide carries at least one product that can earn", () => {
+    for (const g of allGuides.filter((x) => x.status === "published")) {
+      const earning = getProducts(g.relatedProducts ?? []).filter(isMonetized);
+      expect(earning.length, g.slug).toBeGreaterThan(0);
+    }
   });
 });

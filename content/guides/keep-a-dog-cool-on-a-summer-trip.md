@@ -29,6 +29,7 @@ relatedGuides:
   - dog-life-jacket-for-lakes-and-beaches
   - can-you-leave-a-dog-alone-in-a-vacation-rental
   - dog-travel-first-aid-kit-guide
+  - protect-your-car-interior-from-a-dog-on-a-road-trip
 relatedProducts:
   - ruffwear-swamp-cooler
   - green-pet-shop-cool-pet-pad

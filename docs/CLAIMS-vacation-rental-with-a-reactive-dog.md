@@ -27,3 +27,6 @@ Levels: 1 confirmed by a source we read; 2 what most people report (3+ independe
 | Look at doors/yard yourself before bringing the dog in; first-day steps ordering | n/a, editorial suggestion | 3 |
 | Wall thickness, neighbors, host acceptance, noise-complaint outcomes for a given listing | n/a | 3 |
 | Table of what to look for / ask the host; doors as surprise points; view matters as much as fence | n/a, our own advice, labelled in text | 3 |
+
+
+Integration fact-check 2026-11-19 (independent): iCrate (catalog only; page blocked), North States gate, KONG re-read live and matched; Web Master harness re-read: page DOES mention pulling (chest webbing loop 'for redirecting dogs that pull on leash'), so 'page says nothing about pulling' was wrong and was fixed. Best Friends claim (move dog to another room, long-lasting treat) matches ledger row. See docs/FACTCHECK-INTEGRATION-POLICY-2026-11-19.md.

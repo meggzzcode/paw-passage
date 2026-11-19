@@ -269,13 +269,13 @@ A few items do real work in a reactive-dog stay. None changes the behavior, and 
 
 {{pick:north-states-mypet-universal-petgate|Our pick|The maker lists a 26 in high gate for 26 to 42 in openings that mounts by pressure or with hardware.|https://northstatesind.com/north-states-mypet-universal-petgate/}}
 
-**A harness with a handle for tight spots.** In a narrow hall, a stairwell or a shared path, being able to hold the dog close matters. The Ruffwear Web Master has a reinforced handle that the maker describes as giving balanced lift and assist support on technical terrain, three leash attachment points and a neck buckle for dogs that dislike going over the head. It is sized by girth from XXS (13 to 17 in) to L/XL (32 to 42 in). [[17]](https://ruffwear.com/products/web-master-dog-harness) The handle wording is the maker's, and the page says nothing about reactive dogs or pulling, so treat it as a way to keep the dog close in a doorway, not a training tool. Measure the chest first.
+**A harness with a handle for tight spots.** In a narrow hall, a stairwell or a shared path, being able to hold the dog close matters. The Ruffwear Web Master has a reinforced handle that the maker describes as giving balanced lift and assist support on technical terrain, three leash attachment points and a neck buckle for dogs that dislike going over the head. It is sized by girth from XXS (13 to 17 in) to L/XL (32 to 42 in). [[17]](https://ruffwear.com/products/web-master-dog-harness) The handle wording is the maker's. The page says nothing about reactive dogs, and its only mention of pulling is a chest loop for redirecting dogs that pull on leash, so treat the harness as a way to keep the dog close in a doorway, not a training tool. Measure the chest first.
 
 {{pick:ruffwear-web-master-harness|Our pick|The maker lists a reinforced handle, three leash attachment points and a neck buckle, sized by girth from XXS to L/XL.|https://ruffwear.com/products/web-master-dog-harness}}
 
-**Something to do behind the cover.** Best Friends suggests a long-lasting treat when you move the dog to another room. The KONG Classic is a stuffable rubber toy sized by dog weight; the maker says to use it under supervision and says no toy is indestructible. [[18]](https://www.kongcompany.com/kong-classic/) Stuff it before a delivery or a neighbor's arrival, so the dog is busy before the trigger appears.
+**Something to do behind the cover.** Best Friends suggests a long-lasting treat when you move the dog to another room. The KONG Classic is a stuffable rubber toy sized by dog weight; the maker says supervised use only and says no toy is indestructible. [[18]](https://www.kongcompany.com/kong-classic/) Stuff it before a delivery or a neighbor's arrival, so the dog is busy before the trigger appears.
 
-{{pick:kong-classic|Our pick|The maker publishes a size chart by dog weight and says to supervise use and discard a damaged toy.|https://www.kongcompany.com/kong-classic/}}
+{{pick:kong-classic|Our pick|The maker publishes a size chart by dog weight and says supervised use only and to stop using a damaged toy.|https://www.kongcompany.com/kong-classic/}}
 
 Our [packing list](/tools/packing-list) covers the rest.
 

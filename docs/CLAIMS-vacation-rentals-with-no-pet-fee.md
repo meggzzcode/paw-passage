@@ -34,3 +34,6 @@ Levels: 1 confirmed by a source we read; 2 what most people report (3+ independe
 | Neither platform page describes a no-pet-fee filter | pages read | 3 |
 | A Blue Ridge Vacation: pet fee $20/night plus small cleaning fee (low end of fee range) | https://www.ablueridgevacation.com/rental-and-cancellation-policies/ | 1 |
 | Worked table ($800/$120/$0 vs $720/$100/$60) | hypothetical, labelled | n/a |
+
+
+Integration fact-check 2026-11-19 (independent): iCrate (catalog only), Kurgo, Soggy Doggy doormat, Pawtect re-read. Fixed: Hapey travel-crate sentence cited [[4]] (Pet Paradise Promise page, which does not say it); the crate line is on the pet-friendly-smoky-mountain page, now [[3]]. Hapey promise page confirmed silent on damage. Sliding Rock 'nominal cleaning fees' matches ledger. Text says we cannot say whether gear changes host charges. See docs/FACTCHECK-INTEGRATION-POLICY-2026-11-19.md.

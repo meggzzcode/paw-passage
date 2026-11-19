@@ -240,7 +240,7 @@ Ordinary cleaning fees charged to everyone are not an animal surcharge, and serv
 
 ## Cut the odds of a damage deduction
 
-The fee does not cover damage, so the deposit or a later claim is where a muddy floor or an accident can cost you. Nothing you pack guarantees a clean return, and the host decides what counts as damage. But a few cheap items deal with the usual causes before they reach the carpet or the sofa, and photos of the place when you leave are still your best record.
+A pet fee may not cover damage, so the deposit or a later claim is where a muddy floor or an accident can cost you. Nothing you pack guarantees a clean return, and the host decides what counts as damage. But a few items address the usual causes before they reach the carpet or the sofa, and photos of the place when you leave are still your best record.
 
 **Accidents on the floor.** A new place can upset a puppy or an older dog's routine. The Pet Parents Pawtect Pads are machine-washable reusable pads. The maker lists four sizes from 18 x 24 in to 41 x 41 in, two per pack, with a waterproof backing layer and a floor-gripping backing, and says they last hundreds of washes. [[8]](https://petparentsbrand.com/products/washable-puppy-pads) The page does not name the fabric or show warranty terms. Pick the size that fits where the dog will sleep, and wash them before you leave.
 

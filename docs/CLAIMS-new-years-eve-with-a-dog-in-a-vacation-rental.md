@@ -63,3 +63,6 @@ Article: content/guides/new-years-eve-with-a-dog-in-a-vacation-rental.md. Dossie
 | 57 | No evidence found on dog earmuffs or rental-address tags beating a mobile number | What actually helps; table | n/a | NOT CONFIRMED | 3 | n/a |
 | 58 | Out-of-area shelter handling of out-of-state owner not confirmed | first hour | n/a | NOT CONFIRMED | 3 | n/a |
 | 59 | Our suggestion (not sourced): evening schedule, microchip registry and flyer tips, alert local shelters | Evening; first hour | n/a | editorial advice | n/a | n/a |
+
+
+Integration fact-check 2026-11-19 (independent): KONG, Kurgo Loft Wander, Petcube, Ruffwear Beacon re-read live and matched. Fixed: 'battery and coverage figures' (no coverage figure is stated), 'tracker tells you which way to walk' and 'beacon helps you see a dog' (unsourced effect claims) reworded to the maker's wording. Cornell familiar-room (row 19), Patch tracker (row 48) and Homer AK (row 45) support the surrounding sentences. See docs/FACTCHECK-INTEGRATION-POLICY-2026-11-19.md.

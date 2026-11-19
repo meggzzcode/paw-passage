@@ -2,7 +2,7 @@
 title: "Protect Your Car Interior From a Dog on a Road Trip: Cover, Hammock or Cargo Liner"
 seoTitle: "Protect Your Car Interior From a Dog on a Road Trip"
 seoDescription: "Seat cover, hammock, cargo liner or backseat extender? Compare them by vehicle and dog size, with anchors, seat belt access, cleaning and rental-car rules."
-dek: A cover keeps hair, mud and claws off the upholstery, and none of them keeps a dog safe in a crash. Here is how to match a cover, hammock, cargo liner or backseat extender to your vehicle and dog.
+dek: A cover keeps hair, mud and claws off the upholstery, and no page we read sells one as a crash restraint. Here is how to match a cover, hammock, cargo liner or backseat extender to your vehicle and dog.
 category: Planning
 states: []
 status: published
@@ -15,9 +15,9 @@ readingMinutes: 9
 heroImage: guide-protect-car-interior
 faqs:
   - q: Does a dog seat cover or hammock work as a restraint?
-    a: No. The Kurgo and PetSafe pages we read describe protection for the seat, or a barrier to the front seat, and name no crash test. Vetstreet says hammocks are not an alternative to more secure methods such as crates or seat belts. The ASPCA advises a harness attached to a secured seat belt in the back seat.
+    a: No. The Kurgo and PetSafe pages we read describe protection for the seat, or a barrier to the front seat, and name no crash test. Vetstreet says hammocks are not an alternative to more secure methods such as crates or seat belts. The ASPCA advises a secured crate or, without one, the back seat in a harness attached to a seat belt.
   - q: What is the difference between a bench seat cover and a hammock?
-    a: A seller page we read says a basic cover protects the seat and a hammock also covers the footwell by hanging between the front and rear headrests. Chewy's guide says bench covers are easiest to install and have openings for seat belts, while hammocks keep a dog out of the footwell.
+    a: A seller page we read says a basic cover protects the seat and a hammock also covers the footwell by hanging between the front and rear headrests. Chewy's guide says bench covers install easily and have openings for seat belts, while hammocks keep a dog out of the footwell.
   - q: Can I still use the seat belts with a cover on the seat?
     a: The PetSafe bench cover page says the seat belts can be reached without removing it, and the Kurgo extended-width hammock lists hook-and-loop openings for seat belts and latches. Check that the buckle clicks in and that a harness tether reaches it before you drive.
   - q: What should I do about a dog in a rental car?
@@ -155,9 +155,9 @@ research:
   researchComplete: true
 ---
 
-Muddy paws on a pale bench seat, claws on a door panel, hair in every seam: a long drive with a dog is hard on a back seat. **What to buy:** a waterproof cover sized to where the dog rides (a bench cover or hammock for the back seat, a cargo cape for the cargo area), then a separate restraint for the dog. A cover protects the car and does not protect the dog. If you read nothing else here, read that part first.
+Muddy paws on a pale bench seat, claws on a door panel, hair in every seam: a long drive with a dog is hard on a back seat. **What to buy:** a waterproof cover sized to where the dog rides (a bench cover or hammock for the back seat, a cargo cape for the cargo area), then a separate restraint for the dog. A cover protects the car, and no page we read claims it protects the dog in a crash. If you read nothing else here, read that part first.
 
-- **Covers are not restraints.** The ASPCA advises keeping pets in the back seat in a harness attached to a secured seat belt. [[1]](https://www.aspca.org/pet-care/general-pet-care/travel-safety-tips) The PetSafe and Kurgo pages we read describe seat protection or a barrier and name no crash test. For crash-tested options, use our [harness and crate guide](/guides/dog-car-safety-harness-and-crate-guide).
+- **Covers are not restraints.** The ASPCA advises a secured, well-ventilated crate or, without one, the back seat in a harness attached to a seat belt. [[1]](https://www.aspca.org/pet-care/general-pet-care/travel-safety-tips) The PetSafe and Kurgo pages we read describe seat protection or a barrier and name no crash test. For crash-tested options, use our [harness and crate guide](/guides/dog-car-safety-harness-and-crate-guide).
 - **Pick by where the dog rides.** Back seat: a bench cover or a hammock. Cargo area: a cargo cape.
 - **Measure first.** Makers list sizes from 45 by 56 inches (bench cover) to 63 by 56 inches (extended hammock). [[2]](https://www.petsafe.com/p/happy-ride-quilted-bench-seat-cover/PTV00-17462/) [[3]](https://kurgo.com/car-seat-covers/dog-hammocks/wander-hammock-extended-width)
 - **Keep the belts usable.** Choose a design with seat belt access, and test it before you leave.
@@ -173,7 +173,7 @@ Muddy paws on a pale bench seat, claws on a door panel, hair in every seam: a lo
 
 ## Cover, hammock or cargo liner: pick by vehicle and dog
 
-Retail guides sort these by dog and passenger type. Chewy's says hammocks keep a dog out of the footwell, bench covers are easiest to install and have openings for seat belts, and cargo liners suit large dogs and crated dogs. [[9]](https://www.chewy.com/education/dog/pet-parenting/your-guide-to-the-best-dog-car-seat-covers-to-protect-your-ride) A seller page we read says a basic cover protects only the seat while a hammock also covers the footwell, and suggests covers for small, calm dogs and hammocks for large or active ones. [[12]](https://www.seatcoversolutions.com/blogs/news/are-dog-car-seat-covers-and-hammocks-same) Those are retailers' views, not tests. Here is how the maker dimensions line up with vehicle and dog.
+Retail guides sort these by dog and passenger type. Chewy's says hammocks keep a dog out of the footwell, bench covers install easily and have openings for seat belts, and cargo liners suit large dogs and crated dogs. [[9]](https://www.chewy.com/education/dog/pet-parenting/your-guide-to-the-best-dog-car-seat-covers-to-protect-your-ride) A seller page we read says a basic cover protects only the seat while a hammock also covers the footwell, and suggests covers for small, calm dogs and hammocks for large or active ones. [[12]](https://www.seatcoversolutions.com/blogs/news/are-dog-car-seat-covers-and-hammocks-same) Those are retailers' views, not tests. Here is how the maker dimensions line up with vehicle and dog.
 
 | Setup | Maker size | Where it goes | Who it suits (our reading of the maker facts) |
 | --- | --- | --- | --- |
@@ -229,7 +229,7 @@ None of the guides we read tested these problems, so here is what they advise an
 
 - **Claws.** Nationwide suggests a seat cover or plastic wrap over door surfaces for leather or vinyl. [[10]](https://blog.nationwide.com/dog-proofing-car/) NAPA says covers protect seats from claws. [[11]](https://knowhow.napaonline.com/pet-proof-your-car-tips-for-taking-rex-on-the-road/) Play Pet Brands says to pick a cover strong enough to protect against scratches. [[13]](https://www.playpetbrands.com/blogs/tips/from-scratches-to-shedding-protecting-your-car-from-incidental-pet-damage) No maker page we read gives a scratch-resistance rating.
 - **Hair.** Nationwide says it is "impossible to keep the seats and floor completely free of dog hair" and suggests a lint roller in the console. [[10]](https://blog.nationwide.com/dog-proofing-car/) NAPA suggests vacuuming before loading the pet and a small kit with paper towels and pet cleaner. [[11]](https://knowhow.napaonline.com/pet-proof-your-car-tips-for-taking-rex-on-the-road/)
-- **Wet and muddy dogs.** Chewy says that for swimmers a water-resistant or machine-washable cover is a must. [[9]](https://www.chewy.com/education/dog/pet-parenting/your-guide-to-the-best-dog-car-seat-covers-to-protect-your-ride) The PetSafe cover is listed as waterproof and machine washable, and the Cargo Cape as waterproof with spot clean or hand wash care. [[2]](https://www.petsafe.com/p/happy-ride-quilted-bench-seat-cover/PTV00-17462/) [[4]](https://www.kurgo.com/p/cargo-cape/POG30-17676) We found no source on drying a wet dog before loading. Our suggestion: towel the dog off, and rinse off mud, before the dog climbs onto the cover. If the lake was involved, our [life jacket guide](/guides/dog-life-jacket-for-lakes-and-beaches) covers the water side.
+- **Wet and muddy dogs.** Chewy says water-resistant or machine-washable covers are worth prioritizing for a dog that swims. [[9]](https://www.chewy.com/education/dog/pet-parenting/your-guide-to-the-best-dog-car-seat-covers-to-protect-your-ride) The PetSafe cover is listed as waterproof and machine washable, and the Cargo Cape as waterproof with spot clean or hand wash care. [[2]](https://www.petsafe.com/p/happy-ride-quilted-bench-seat-cover/PTV00-17462/) [[4]](https://www.kurgo.com/p/cargo-cape/POG30-17676) We found no source on drying a wet dog before loading. Our suggestion: towel the dog off, and rinse off mud, before the dog climbs onto the cover. If the lake was involved, our [life jacket guide](/guides/dog-life-jacket-for-lakes-and-beaches) covers the water side.
 - **Cleaning the cover.** Follow the maker: machine wash (PetSafe, temperature not given), spot clean or hand wash and air dry (Kurgo cape). The hammock page links a care sheet we did not read, so check it. [[2]](https://www.petsafe.com/p/happy-ride-quilted-bench-seat-cover/PTV00-17462/) [[4]](https://www.kurgo.com/p/cargo-cape/POG30-17676) [[3]](https://kurgo.com/car-seat-covers/dog-hammocks/wander-hammock-extended-width)
 
 ## Rental and borrowed cars
@@ -240,13 +240,13 @@ Our suggestions for a rental or a friend's car: ask before the dog gets in, use 
 
 ## Heat and stops
 
-A cover does nothing for heat. The ASPCA says never to leave an animal alone in a parked vehicle and warns heatstroke can develop quickly on hot days even with the windows open. [[1]](https://www.aspca.org/pet-care/general-pet-care/travel-safety-tips) Our [summer cooling guide](/guides/keep-a-dog-cool-on-a-summer-trip) covers the rest, and our [ramp guide](/guides/dog-ramp-or-steps-for-the-car-and-cabin) covers getting a heavy dog up onto a cargo floor without scraping the bumper.
+A cover does nothing for heat. The ASPCA says never to leave an animal alone in a parked vehicle and warns heat can cause heatstroke quickly, even with the windows cracked. [[1]](https://www.aspca.org/pet-care/general-pet-care/travel-safety-tips) Our [summer cooling guide](/guides/keep-a-dog-cool-on-a-summer-trip) covers the rest, and our [ramp guide](/guides/dog-ramp-or-steps-for-the-car-and-cabin) covers getting a heavy dog up onto a cargo floor without scraping the bumper.
 
 ## What we could not confirm
 
 | Question | Why it is open | Check for yourself |
 | --- | --- | --- |
-| Whether any cover, hammock or extender is crash tested | No maker page we read names a test, and Kurgo's only safety wording is distracted driving | Treat all of them as non-restraints; see the crash-test guide |
+| Whether any cover, hammock or extender is crash tested | No maker page we read names a test. The Backseat Bridge page's only safety wording is distracted driving, and the hammock page says its front-seat barrier keeps everyone safer | Treat all of them as non-restraints; see the crash-test guide |
 | Weight limits for the bench cover and hammock | The pages we read list none | Ask the maker, especially for a large dog |
 | Which vehicles each product fits | No compatibility chart on the pages | Measure the seat or cargo floor and compare with the listed size |
 | How well a cover resists claws | Maker pages give no rating; the claw advice comes from non-maker guides | Look at the fabric and returns terms |

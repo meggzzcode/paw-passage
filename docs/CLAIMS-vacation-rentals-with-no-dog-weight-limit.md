@@ -21,3 +21,6 @@
 | 17 | Competitor notes (Uplisting, Hospitable pages read; see research block) | https://www.uplisting.io/blog/vrbo-can-i-charge-pet-fees-policy-listing-setup-guide ; https://hospitable.com/vrbo-house-rules | 1 |
 | 18 | Whether the 30 silent managers have limits in listings/agreements | none | 3 |
 | 19 | Whether any exception will be granted, or proof of weight required | none | 3 |
+
+
+Integration fact-check 2026-11-19 (independent): iCrate (catalog only), Kurgo, PetSafe Happy Ride folding ramp re-read (62 x 16 x 4 in, 10 lb, rated 150 lb, 'independently tested' unnamed, latch, rails, no vehicle height guidance). Fixed: 'three items follow from what the managers ask' (bed and ramp are our view), 'unattended-dog conditions' beside weight (only crate is in the policy list), unsourced 'many managers write furniture rules'. Cabin Rentals of Georgia 'crate trained' matches row 3. See docs/FACTCHECK-INTEGRATION-POLICY-2026-11-19.md.

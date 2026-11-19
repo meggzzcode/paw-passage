@@ -35,3 +35,6 @@ Added 2026-11-19 (pick cards; sources per docs/products/candidates-*.yml, pages 
 | Cool Pet Pad: NBC Select "Best cooling mat"; maker lists five sizes by weight, 12-month warranty, warns against direct sunlight and hot cars | https://www.nbcnews.com/select/amp/rcna168150 | 1 (reviewer label and maker) |
 | A cooling pad is a resting spot, not heatstroke prevention or treatment | none | 3 (our judgment; Cornell calls heatstroke an emergency) |
 | Dry the dog on the porch with a dog-only towel | none | 3 (our advice) |
+
+
+Integration fact-check 2026-11-19 (independent): Super Shammy, doormat, Adventure Dog Wipes (8 x 8 in, 8 per pack, aloe/rosemary/witch hazel, rinse-free, 60-day guarantee), Green Pet Shop Cool Pet Pad (five sizes 0-8 lb to above 80 lb, up to 3 hours, no water or electricity, 12-month limited warranty, sun/hot-car and unattended-chewer warnings) re-read; NBC Select 'Best cooling mat' label confirmed. No errors found. See docs/FACTCHECK-INTEGRATION-POLICY-2026-11-19.md.

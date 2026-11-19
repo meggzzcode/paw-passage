@@ -10,3 +10,6 @@ Rewrite-pass claims only.
 | Green Pet Shop pad: five sizes by weight, 12-month warranty, sun/hot-car warning | maker page | VERIFIED |
 | NBC Select label "Best cooling mat" | https://www.nbcnews.com/select/amp/rcna168150 | VERIFIED |
 | Cornell prevention advice (shade, water, avoid hot-weather exercise); heatstroke a medical emergency | Cornell heatstroke page (source 18) | VERIFIED; page does not mention cooling pads |
+
+
+Integration fact-check 2026-11-19 (independent): Kurgo Loft Wander (incl. rolled sizes 12.5 x 8 and 17 x 9.5 in, hand or machine gentle cold, hang dry), Super Shammy (31 x 14 in, wash separately, no chlorine bleach or softener, dry low) and Ruffwear Beacon (3 modes, up to 20 hrs, 1.5 hr micro USB charge, 1 m / 30 min) re-read and matched. Beacon page says Quick Clip fits 'apparel, harnesses, collars and other gear'; guide's narrower 'collars and apparel light loops' wording is conservative. See docs/FACTCHECK-INTEGRATION-POLICY-2026-11-19.md.

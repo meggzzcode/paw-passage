@@ -24,3 +24,6 @@ Levels: 1 confirmed by a source we read; 2 what most people report (3+ independe
 | Platform service fee or tax applied to pet charge on a given listing | not confirmed by an official page | 3 |
 | Deposit or hold release timing; fuel, gear, boarding costs; cancellation treatment | not stated / no official source | 3 |
 | Gear picks (towel, food bin): specs from the maker pages (Soggy Doggy Super Shammy; IRIS 10 lb container); PetsRadar label removed 2026-11-19 because it names a different IRIS set; no prevention or savings claim, no prices | maker pages | 1 |
+
+
+Integration fact-check 2026-11-19 (independent): Super Shammy, doormat, Kurgo, IRIS container re-read live and matched (IRIS: 12.75 qt, about 10 lb, 11.63 x 9 x 12.5 in, airtight seals and buckles, no bear claim). Fixed: 'cheap protection', 'ordinary source of extra cleaning', 'furniture rules are where a dog gets billed' (unsourced) reworded; pet fee 'does not cover' softened to 'may not cover'. See docs/FACTCHECK-INTEGRATION-POLICY-2026-11-19.md.

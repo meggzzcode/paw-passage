@@ -236,7 +236,7 @@ Dated, per-item photos from arrival and checkout are your strongest protection, 
 
 Mud, wet fur and stains are the kind of mess a dog brings in, so one idea of ours is to catch it at the door. Look for a machine-washable microfiber entry mat with a non-slip backing, sized to the doorway, and a washable drying towel for paws and coats. If the host allows dogs on the furniture, a washable throw over the sofa keeps hair and drool off the upholstery; if the listing says nothing, ask first. None of this replaces your arrival and checkout photos, none of it guarantees a host will not file a claim, and it does not change how Airbnb or Vrbo handle one. Check the current price on the listing.
 
-The mat first. The Soggy Doggy Microfiber Doormat comes in Large (26 x 36 in) and Extra Large (36 x 60 in), has a non-slip backing, and the maker says it is machine washable and dryer safe. [[16]](https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate) It catches the mud the towel will not, and the page gives no warranty.
+The mat first. The Soggy Doggy Microfiber Doormat comes in Large (26 x 36 in) and Extra Large (36 x 60 in), has a non-slip backing, and the maker says it is machine washable and dryer safe. [[16]](https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate) It gives wet paws somewhere to land at the door, and the page gives no warranty.
 
 {{pick:soggy-doggy-microfiber-doormat|Our pick|Maker lists Large 26 x 36 in and Extra Large 36 x 60 in sizes, machine washable, with a non-slip backing.|https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate}}
 
@@ -244,7 +244,7 @@ The towel next. The Soggy Doggy Super Shammy is a 31 x 14 in microfiber chenille
 
 {{pick:soggy-doggy-super-shammy-towel|Our pick|Maker lists a 31 x 14 in microfiber towel with hand pockets that is machine washable.|https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey}}
 
-Stains and odor are the claims the table above says are reimbursable, so two more items target them. A dog bed of your own keeps the dog off the host's furniture and bedding. The Kurgo Loft Wander is a roll-up bed in Medium (27 x 36 in) and Large (36 x 48 in) with a water-resistant top and a waterproof, nonslip bottom, and the maker says it can be machine washed on a gentle cycle. [[18]](https://www.kurgo.com/p/loft-wander-dog-bed/K01560)
+Pet accidents and stains are the items the table above lists as reimbursable, so two more items are aimed at them. A dog bed of your own keeps the dog off the host's furniture and bedding. The Kurgo Loft Wander is a roll-up bed in Medium (27 x 36 in) and Large (36 x 48 in) with a water-resistant top and a waterproof, nonslip bottom, and the maker says it can be machine washed on a gentle cycle. [[18]](https://www.kurgo.com/p/loft-wander-dog-bed/K01560)
 
 {{pick:kurgo-loft-wander-dog-bed|Our pick|The maker lists two sizes, a waterproof nonslip bottom and machine-wash care.|https://www.kurgo.com/p/loft-wander-dog-bed/K01560}}
 

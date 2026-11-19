@@ -32,3 +32,6 @@ Article: content/guides/christmas-week-in-a-cabin-with-a-dog.md (status: draft).
 | 26 | KONG Classic: size chart by dog weight; supervised use; no toy indestructible | https://www.kongcompany.com/kong-classic/ | 1 (maker claim) |
 
 Rewrite fact-check 2026-11-19: rows 23, 25, 26 re-read and matched. Row 24 (Polar Trex boots): page still out of stock; pick card and relatedProducts entry removed; boots advice kept as generic prose. Added line that gear does not make a cold walk safe. readingMinutes 11.
+
+
+Integration fact-check 2026-11-19 (independent): North States gate re-read live (26 in, 26-42 in openings, pressure or hardware mount, never top of stairway on tension alone; page does NOT say 'designed to contain pets', it says designed to securely block doorways, stairways and other spaces; text fixed). Kurgo Loft Wander and KONG re-read, matched (KONG 'discard' changed to 'discontinue use if damaged'). PetMD gate/pen row 12 supports the gate sentence. See docs/FACTCHECK-INTEGRATION-POLICY-2026-11-19.md.

@@ -15,13 +15,13 @@ readingMinutes: 9
 heroImage: guide-keep-dog-cool
 faqs:
   - q: What are the first signs a dog is overheating?
-    a: AKC lists heavy panting, rapid breathing, and bright red gums and tongue as early signs, and pale or bluish gums and collapse as severe ones. Cornell's list adds drooling, vomiting, weakness, confusion and seizures. Heatstroke is an emergency, so call a vet rather than waiting to see.
+    a: AKC lists heavy panting, rapid breathing, and bright red gums and tongue as early signs, and pale or bluish gums and collapse as severe ones. Cornell's list includes drooling, vomiting, weakness, confusion and seizures. Heatstroke is an emergency, so call a vet rather than waiting to see.
   - q: Is it ever safe to leave a dog in a parked car for a few minutes?
     a: AKC says never leave a dog in a parked car, even for a short time, and Cornell says never leave a dog in a car unattended. Humane World says car temperatures can reach the 100s on a pleasant 70 degree day and that a running air conditioner is no guarantee. We found no source that gives a safe length of time.
   - q: Is it illegal to leave a dog in a hot car?
     a: In some states. The Animal Legal Defense Fund says that as of 2025, 32 states plus D.C. and Guam have some form of hot car law, and that the rules differ by state. Texas, for example, has no statute specific to dogs in parked vehicles, but a man was convicted under its general anti-cruelty law. Check the state you are in.
   - q: Do cooling vests and pads work?
-    a: Two small studies we read, both on working dogs, found a cooling vest helped some dogs cool faster or reach a lower core temperature than no vest. We found no independent test of the Ruffwear vest or the Green Pet Shop pad, so their cooling wording is the makers' own.
+    a: A small University of Florida study of seven working dogs found cooling vests helped some dogs cool faster, and a 2022 study in Animals also looked at vests on working dogs. We found no independent test of the Ruffwear vest or the Green Pet Shop pad, so their cooling wording is the makers' own.
   - q: How do I tell if the ground is too hot for my dog's paws?
     a: AKC says to hold your hand on the surface for ten seconds, and the Royal Kennel Club says seven seconds. Both say that if it is too hot for your hand it is too hot for your dog. The Royal Kennel Club adds that sun, wind and humidity change surface heat, so air temperature alone is a poor guide.
 relatedGuides:
@@ -171,7 +171,7 @@ You are packing the car for a week at a rental, the forecast is hot, and the dog
 
 ## Signs of heat illness, and what the sources say to do
 
-AKC's early signs are heavy panting, rapid breathing, and bright red gums and tongue; severe signs are pale or bluish gums and collapse or coma. [[1]](https://www.akc.org/expert-advice/health/heat-stroke-in-dogs/) Cornell's list adds drooling, vomiting, bloody diarrhea, weakness, confusion, seizures and collapse. [[2]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/heatstroke-medical-emergency)
+AKC's early signs are heavy panting, rapid breathing, and bright red gums and tongue; severe signs are pale or bluish gums and collapse or coma. [[1]](https://www.akc.org/expert-advice/health/heat-stroke-in-dogs/) Cornell's list includes heavy panting, drooling, vomiting, bloody diarrhea, weakness, confusion, seizures and collapse. [[2]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/heatstroke-medical-emergency)
 
 The pages give different temperatures. AKC's heatstroke page says heatstroke occurs above 105.8 F [[1]](https://www.akc.org/expert-advice/health/heat-stroke-in-dogs/), its pavement page says over 104 signals heat stress, over 105 heat exhaustion and more than 106 heatstroke [[3]](https://www.akc.org/expert-advice/health/dog-paws-hot-pavement/), and Cornell says 105 F or higher [[2]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/heatstroke-medical-emergency). Do not use one of those numbers to decide whether to call a vet. If a dog shows the signs above after heat, treat it as urgent.
 
@@ -194,7 +194,7 @@ These are risk lists, not clearances. If your dog is on either list, ask your ve
 
 The advice is consistent. AKC says never leave your dog in a parked car, even for a short time, and that temperatures inside vehicles can rise rapidly. [[1]](https://www.akc.org/expert-advice/health/heat-stroke-in-dogs/) Humane World says temperatures inside a car can spike into the 100s on a pleasant 70 degree day, and that a running air conditioner is no guarantee. [[7]](https://www.humaneworld.org/en/blog/heat-wave-wraps-around-us-take-steps) We found no source that gives a safe number of minutes.
 
-**What state laws say.** The Animal Legal Defense Fund says that as of 2025, 32 states plus D.C. and Guam have some form of hot car law, in three kinds: rules on leaving an animal confined in a way that endangers it, rescue powers for officials, and "Good Samaritan" laws that let private people act in limited cases, in 14 states. It warns that rescuers could still face property damage or trespass charges and that it is best to contact law enforcement first. [[8]](https://aldf.org/hotcars) The Michigan State University Animal Legal & Historical Center keeps a state-by-state table. Its examples include:
+**What state laws say.** The Animal Legal Defense Fund says that as of 2025, 32 states plus D.C. and Guam have some form of hot car law, in three kinds: rules on leaving an animal confined in a way that endangers it, rescue powers for officials, and "Good Samaritan" laws that let private people act in limited cases (its heading says 14 states, though the list under it names 16, so check the statute). It warns that rescuers could still face property damage or trespass charges and that it is best to contact law enforcement first. [[8]](https://aldf.org/hotcars) The Michigan State University Animal Legal & Historical Center keeps a state-by-state table. Its examples include:
 
 | State | What the table says | Source |
 | --- | --- | --- |
@@ -219,7 +219,7 @@ Cornell's prevention list adds shade when outside, frequent water, limiting hard
 
 Plain cool water is the baseline in the sources: AKC and Cornell both name wetting the dog with cool water for first aid. [[1]](https://www.akc.org/expert-advice/health/heat-stroke-in-dogs/) [[2]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/heatstroke-medical-emergency) Gear adds convenience, and the claims need reading carefully.
 
-What independent evidence we found is thin. A 2022 study in the journal Animals compared two cooling vests and no vest on military working dogs doing nose work in moderately hot conditions in Spain. It measured core temperature and pulse rate, found that both differed significantly by condition and time, and the authors suggest an evaporative vest may be useful for these dogs. [[5]](https://www.mdpi.com/2076-2615/12/18/2347) A 2012 University of Florida study of seven working dogs found that cooling vests with rechargeable packs helped some dogs cool faster, and called the work preliminary. [[6]](https://www.vetmed.ufl.edu/2012/04/26/uf-study-looks-at-role-of-vests-in-heat-related-illness-of-working-dogs) Neither tested a pet dog on a beach holiday, and neither tested the products below.
+What independent evidence we found is thin. A 2022 study in the journal Animals looked at military working dogs training in moderately hot conditions, with and without cooling vests (we could not open the full text to check its findings, so we do not report them). [[5]](https://www.mdpi.com/2076-2615/12/18/2347) A 2012 University of Florida study of seven working dogs found that cooling vests with rechargeable packs helped some dogs cool faster, and called the work preliminary. [[6]](https://www.vetmed.ufl.edu/2012/04/26/uf-study-looks-at-role-of-vests-in-heat-related-illness-of-working-dogs) Neither tested a pet dog on a beach holiday, and neither tested the products below.
 
 | Option | What the source or maker says | What we could not find |
 | --- | --- | --- |
@@ -266,7 +266,7 @@ AKC says to bring enough water for your dog's size and activity level and to pla
 
 Use it at a stop with the engine and air conditioning on and someone with the dog, not as a reason to leave water for a dog alone. A bowl on a seat will still spill on a sudden stop, so check where you put it (our suggestion).
 
-**On a walk or at the beach.** A bottle with a bowl attached lets you offer water with one hand. Springland's 22oz Original (listed on its page as the 22oz Classic) is squeeze to fill the attached bowl and release to drain the excess back, in food-safe, BPA-free polypropylene with an aluminum clip and a leak-proof lock design. [[15]](https://springlandpets.com/products/22oz-classic-dog-travel-water-bottle)
+**On a walk or at the beach.** A bottle with a bowl attached lets you offer water with one hand. Springland's 22oz Original (listed on its page as the 22oz Classic) is squeeze to fill the attached bowl and release to drain the excess back, in food-safe, BPA-free polypropylene with an aluminum carabiner and a leak-proof lock design. [[15]](https://springlandpets.com/products/22oz-classic-dog-travel-water-bottle)
 
 {{pick:springland-22oz-original-travel-bottle|A one-hand bottle for walks|The maker describes a squeeze-to-fill attached bowl that drains the excess back into the bottle and a leak-proof lock design; the page gives no capacity beyond the name and no insulation claim.|https://springlandpets.com/products/22oz-classic-dog-travel-water-bottle}}
 

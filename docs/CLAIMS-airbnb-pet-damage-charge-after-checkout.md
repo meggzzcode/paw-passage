@@ -75,3 +75,6 @@ URLs: A1415 = https://www.airbnb.com/help/article/1415; A3591 = https://www.airb
 | Prevention picks (entry mat, drying towel): maker specs from product records; washable throw advice is our judgment and says to ask the host first | catalog records | 3 |
 
 - Rewrite fact-check 2026-11-19: doormat (26 x 36 / 36 x 60 in, machine washable, non-slip) and towel (31 x 14 in, hand pockets, machine wash) re-read on Soggy Doggy maker pages (level 1). "Reduce the odds" paragraph is our own advice, labelled as such; it says gear does not guarantee no claim and does not change how Airbnb or Vrbo handle claims.
+
+
+Integration fact-check 2026-11-19 (independent): Doormat, Super Shammy, Kurgo, Pawtect re-read and matched. Fixed: 'catches the mud the towel will not' (effect claim) and 'stains and odor are reimbursable' (Airbnb source lists pet accidents and stains; odor is only in our table row heading). See docs/FACTCHECK-INTEGRATION-POLICY-2026-11-19.md.

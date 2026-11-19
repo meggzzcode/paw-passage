@@ -227,7 +227,7 @@ The sources above are written for a home you control. In a rental you may not be
 6. **Handle gifts as food.** Keep wrapped food gifts out of reach until the morning, and clean up wrapping and ribbon the same day.
 7. **Plan for when you go out.** Our [leaving a dog alone guide](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental) covers rental rules. A dog that cannot be trusted around the tree can be kept in a different room or gated area while you are out.
 
-PetMD's gate suggestion is the one you can pack. The North States MyPet Universal Petgate is 26 in high, adjusts to openings 26 to 42 in wide, and mounts by pressure or, with hardware, to a solid surface. The maker says to use the wall cups and never to use it at the top of a stairway when held only by tension. [[18]](https://northstatesind.com/north-states-mypet-universal-petgate/) In a rental that means gating the doorway of the tree room, since a gate this size does not circle a tree. It will not stop a dog that jumps 26 inches, and the maker claims no containment strength beyond designed to contain pets. Ask the host before using the hardware mount.
+PetMD's gate suggestion is the one you can pack. The North States MyPet Universal Petgate is 26 in high, adjusts to openings 26 to 42 in wide, and mounts by pressure or, with hardware, to a solid surface. The maker says to use the wall cups and never to use it at the top of a stairway when held only by tension. [[18]](https://northstatesind.com/north-states-mypet-universal-petgate/) In a rental that means gating the doorway of the tree room, since a gate this size does not circle a tree. It will not stop a dog that jumps 26 inches, and the maker claims no containment strength; the page says only that the gate is designed to securely block doorways, stairways and other spaces. Ask the host before using the hardware mount.
 
 {{pick:north-states-mypet-universal-petgate|Our pick|The maker lists a 26 in gate for 26 to 42 in openings that mounts by pressure or with hardware.|https://northstatesind.com/north-states-mypet-universal-petgate/}}
 
@@ -302,7 +302,7 @@ The Kurgo Loft Wander is a roll-up bed in Medium (27 x 36 in) and Large (36 x 48
 
 {{pick:kurgo-loft-wander-dog-bed|Our pick|The maker describes a roll-up bed with a water-resistant ripstop top and a waterproof, nonslip bottom, in two sizes, with care by machine or hand wash.|https://www.kurgo.com/p/loft-wander-dog-bed/K01560}}
 
-The KONG Classic is a stuffable natural rubber toy in six size bands by dog weight, such as L for 30 to 65 lb and XL for 60 to 90 lb. The maker says to use it under supervision, to discard it if damaged, and that no toy is indestructible. [[17]](https://www.kongcompany.com/kong-classic/) It is something to do while the tree is off limits, not a substitute for exercise.
+The KONG Classic is a stuffable natural rubber toy in six size bands by dog weight, such as L for 30 to 65 lb and XL for 60 to 90 lb. The maker says supervised use only, to discontinue use if damaged, and that no toy is indestructible. [[17]](https://www.kongcompany.com/kong-classic/) It is something to do while the tree is off limits, not a substitute for exercise.
 
 {{pick:kong-classic|Our pick|The maker publishes a size chart by dog weight, says to use it under supervision, and says no toy is indestructible.|https://www.kongcompany.com/kong-classic/}}
 

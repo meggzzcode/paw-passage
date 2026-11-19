@@ -9,7 +9,7 @@ status: published
 author: Paws & Passage Editors
 publishedOn: 2026-11-18
 lastReviewed: 2026-11-19
-readingMinutes: 20
+readingMinutes: 14
 heroImage: guide-senior
 faqs:
   - q: Can I take my senior dog to a vacation rental?
@@ -273,7 +273,7 @@ Stairs and floors decide most trips, and a listing rarely shows enough of either
 
 Copy this before you buy anything for the trip:
 
-- [ ] **Ramp or steps:** a weight rating well above your dog's weight, side rails, a non-slip surface and rubber feet.
+- [ ] **Ramp or steps:** a weight rating well above your dog's weight (our rule of thumb; AKC says to check the rating), side rails, a non-slip surface and rubber feet.
 - [ ] **Height:** matched to the sofa, bed or vehicle floor it will serve (AKC's advice, below), and a length that gives a gentle slope.
 - [ ] **Portability:** folds or collapses, with a weight you can lift into the car by yourself.
 - [ ] **Washable layers:** pads or sheets that machine wash, with a waterproof layer and a grip backing for slippery floors.
@@ -350,7 +350,7 @@ What to do:
 
 - **Layers.** Pack washable or waterproof bedding, pads and a sheet for furniture. Look for machine-washable pads with a waterproof layer and a grip backing, in a size that covers the bed.
 
-{{pick:pet-parents-pawtect-pads|Best washable|Petful names it "Best washable" among washable pads, and the maker describes machine-washable pads with a waterproof layer and a floor-gripping backing.|https://www.petful.com/pet-products/best-puppy-pads/}}
+{{pick:pet-parents-pawtect-pads|Best washable|Petful names it "Best washable" among puppy pads, and the maker describes machine-washable pads with a waterproof layer and a floor-gripping backing.|https://www.petful.com/pet-products/best-puppy-pads/}}
 
 - **Report and clean right away.** Tell the host or manager what happened and what you did.
 

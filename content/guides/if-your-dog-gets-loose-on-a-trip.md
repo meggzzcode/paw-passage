@@ -11,7 +11,7 @@ approvedOn: 2026-11-18
 author: Paws & Passage Editors
 publishedOn: 2026-11-18
 lastReviewed: 2026-11-19
-readingMinutes: 10
+readingMinutes: 12
 heroImage: guide-loose-dog
 faqs:
   - q: What should I do first if my dog runs off in a place I do not know?

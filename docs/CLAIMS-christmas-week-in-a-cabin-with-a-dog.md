@@ -30,3 +30,5 @@ Article: content/guides/christmas-week-in-a-cabin-with-a-dog.md (status: draft).
 | 24 | Ruffwear Polar Trex boots: waterproof, windproof softshell upper, winter lugs, set of two, sized by paw width 1.50-3.25 in; no temperature rating; page showed out of stock when read | https://ruffwear.com/products/polar-trex-winter-dog-boots | 1 (maker claim) |
 | 25 | Kurgo Loft Wander Bed: roll-up, water-resistant ripstop top, waterproof nonslip bottom, Medium and Large | https://www.kurgo.com/p/loft-wander-dog-bed/K01560 | 1 (maker claim) |
 | 26 | KONG Classic: size chart by dog weight; supervised use; no toy indestructible | https://www.kongcompany.com/kong-classic/ | 1 (maker claim) |
+
+Rewrite fact-check 2026-11-19: rows 23, 25, 26 re-read and matched. Row 24 (Polar Trex boots): page still out of stock; pick card and relatedProducts entry removed; boots advice kept as generic prose. Added line that gear does not make a cold walk safe. readingMinutes 11.

@@ -202,7 +202,7 @@ If you want a short list, start with a bowl that states its capacity, collapses 
 
 {{pick:kurgo-collaps-a-bowl|Our pick|The maker says it holds 24 ounces, collapses to less than 1 inch high and is dishwasher safe on the top rack.|https://www.kurgo.com/pet-travel-bowls/collaps-a-bowl}}
 
-{{pick:kurgo-splash-free-wander-bowl|Best for the car|The maker describes a tapered edge to reduce splashing and a wedge shape that sits flat on a car seat; it holds 24 oz.|https://www.kurgo.com/p/splash-free-wander-dog-water-bowl/K01812}}
+{{pick:kurgo-splash-free-wander-bowl|Flat on a car seat|The maker describes a tapered lip that prevents splashing and a wedge shape that lays flat on a seat; it holds 24 oz.|https://www.kurgo.com/p/splash-free-wander-dog-water-bowl/K01812}}
 
 ## Keeping dry food fresh in the car and the rental
 
@@ -210,7 +210,7 @@ The FDA's advice has four parts. Store pet food and treats in the original conta
 
 That makes a rigid container a holder for the bag, and a maker's stated capacity a guide only: one maker's page says capacity depends on kibble shape. [[9]](https://www.petmate.com/vittles-vault-travel-trainer-portable-food-storage-container/product/4504) A roll-top carrier whose maker says it holds about 20 cups can carry a few days of food without the whole bag. [[10]](https://www.kurgo.com/dog-travel/kibble-carrier) So match the container to the bag you own, and keep the bag's lot number and "best by" date with it (photographing the bag is our suggestion). Our reading: the FDA's 80 F figure is the number to check a hot car trunk against. No source we read says how fast kibble spoils in a car.
 
-{{pick:iris-usa-airtight-dog-food-container-10-lb|Our pick|PetsRadar calls it its favorite all-rounder food container; the maker lists 12.75 quarts for about 10 lb of dry food, airtight seals and buckles, and makes no bear-resistance claim.|https://petsradar.com/buying-guides/best-pet-food-containers}}
+{{pick:iris-usa-airtight-dog-food-container-10-lb|Our pick|The maker lists 12.75 quarts for about 10 lb of dry food, depending on the food, with airtight seals and buckles; its page makes no bear-resistance claim.|https://www.irisusainc.com/collections/airtight-pet-food-containers/products/airtight-dog-food-storage-container-up-to-10-lbs-3}}
 
 ## Cabins and bear country: food is the rule, not the bowl
 
@@ -254,4 +254,4 @@ Message to send the host:
 
 ## What to buy first
 
-A flat-packing bowl with a stated capacity, then a lid-tight container sized to your food bag. Add both, a water jug and a feeding mat to the [packing list tool](/tools/packing-list), read the [cabin packing guide](/guides/dog-friendly-cabin-packing-list) for the rest of the bag, then message the host about food storage and add that answer to your [trip checklist](/tools/checklist). See the [feeding and hydration gear page](/gear/feeding-and-hydration) for the nine products as the makers describe them.
+A flat-packing bowl with a stated capacity, then a lid-tight container sized to your food bag. Add both, a water jug and a feeding mat to the [packing list tool](/tools/packing-list), read the [cabin packing guide](/guides/dog-friendly-cabin-packing-list) for the rest of the bag, then message the host about food storage and add that answer to your [trip checklist](/tools/checklist). See the [feeding and hydration gear page](/gear/feeding-and-hydration) for these products as the makers describe them.

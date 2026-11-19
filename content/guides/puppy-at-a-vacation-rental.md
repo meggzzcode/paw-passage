@@ -11,7 +11,7 @@ approvedOn: 2026-11-18
 author: Paws & Passage Editors
 publishedOn: 2026-11-18
 lastReviewed: 2026-11-19
-readingMinutes: 8
+readingMinutes: 10
 heroImage: guide-puppy
 faqs:
   - q: Do vacation rentals allow puppies?
@@ -216,7 +216,7 @@ If you bring a crate, check that it fits the car and the room. The ASPCA suggest
 
 So the criteria are a divider panel in the box, a size band that fits the adult dog, a removable pan and a flat fold for the car. The maker's page for the crate below lists a divider, six sizes and a flat fold, but gives no dimensions or warranty text, so confirm the size against your dog's adult length and the rental room.
 
-{{pick:midwest-lifestages-dog-crate|Our pick|The maker lists an included divider panel, six sizes, a removable pan and a flat fold, which matches the ASPCA's advice to size for the adult dog and use a divider.|https://www.aspca.org/pet-care/general-pet-care/introducing-your-dog-crate}}
+{{pick:midwest-lifestages-dog-crate|Our pick|The maker lists an included divider panel, six sizes, a removable pan and a flat fold, which matches the ASPCA's advice to size for the adult dog and use a divider.|https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/lifestages-dog-crate/}}
 
 ## Chewing
 
@@ -224,7 +224,7 @@ Chewing is a normal puppy activity: the ASPCA says "it's normal for puppies and 
 
 The ASPCA's tips fit a short stay: give "plenty of his own toys and inedible chew bones," supervise during waking hours and redirect to an approved chew, and when you cannot watch, use a confinement area with the things he should not chew removed. [[10]](https://www.aspca.org/pet-care/dog-care/common-dog-behavior-issues/destructive-chewing) Before you let the puppy loose, scan at knee height for cords, shoes, throw pillows and plants. Pack the chews and the blanket your dog knows; the [packing list tool](/tools/packing-list) has a place for them.
 
-A stuffable rubber toy is the usual way to give a puppy an approved thing to chew. Buy by the maker's weight band (size up if between sizes), pick the softer puppy version if one exists for your puppy's age, and supervise, since makers say no toy is indestructible.
+A stuffable rubber toy is the usual way to give a puppy an approved thing to chew. Buy by the maker's weight band (size up if between sizes), pick the softer puppy version if one exists for your puppy's age, and supervise, since the maker says no dog toy is indestructible.
 
 {{pick:kong-classic|Our pick|The maker publishes a size chart by dog weight and a softer Puppy KONG for under 9 months, and says to use it under supervision.|https://www.kongcompany.com/kong-classic/}}
 

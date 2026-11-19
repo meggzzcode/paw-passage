@@ -23,4 +23,4 @@ Levels: 1 confirmed by a source we read; 2 what most people report (3+ independe
 | Worked examples (A, B, C; two-dog variant; CRoG five-night arithmetic) | hypothetical round numbers / arithmetic on cited fees | n/a |
 | Platform service fee or tax applied to pet charge on a given listing | not confirmed by an official page | 3 |
 | Deposit or hold release timing; fuel, gear, boarding costs; cancellation treatment | not stated / no official source | 3 |
-| Gear picks (towel, food bin): specs from the product records and the cited PetsRadar label; no prevention outcome claimed | catalog records | n/a |
+| Gear picks (towel, food bin): specs from the maker pages (Soggy Doggy Super Shammy; IRIS 10 lb container); PetsRadar label removed 2026-11-19 because it names a different IRIS set; no prevention or savings claim, no prices | maker pages | 1 |

@@ -11,7 +11,7 @@ approvedOn: 2026-11-18
 author: Paws & Passage Editors
 publishedOn: 2026-11-18
 lastReviewed: 2026-11-19
-readingMinutes: 8
+readingMinutes: 10
 heroImage: guide-pool-hot-tub
 faqs:
   - q: Can dogs go in a vacation rental's pool?
@@ -165,7 +165,7 @@ You found a rental with a private pool, your dog is already doing the happy danc
 
 In our reading of 38 vacation rental managers' public pet pages, 7 say something about dogs and pools or hot tubs, and every one of those 7 restricts them. That is a convenience sample of managers whose sites we could read on 2026-11-18, not a survey, and the other 31 pages say nothing we could record. Silence is not permission, as the section on asking the host below explains. The full tables are on the [pet policy dataset page](/data/pet-policies).
 
-- **What to buy:** nothing for the pool itself, since the rule is usually no. Buy for what follows water time and hot days: a washable drying towel, an entry mat and, in hot weather, a cooling pad.
+- **What to buy:** nothing for the pool itself, since where a manager states a rule it is no. Buy for what follows water time and hot days: a washable drying towel, an entry mat and, in hot weather, a cooling pad.
 - **Six managers bar dogs from the pool, and several name the hot tub or spa too.** Twiddy's own pet page says pets are not permitted in pools or hot tubs, though the Twiddy page our dataset used names only one home.
 - **A pet fee does not change that.** The rule is stated separately from the fee.
 - **A pool ban can come with a cleaning charge.** One manager says so in the same sentence as the rule.
@@ -226,13 +226,13 @@ Practical steps that follow from the sources and the house rules:
 
 ## Drying off and cooling down without the pool
 
-If the pool is off limits, dog water time moves to a lake, a creek, a hose or the rain, and the mud and wet come back to the door. Dry the dog on the porch, wipe paws before they cross the floor, and keep a dog-only towel so the host's bath towels stay out of it. That is our practical advice, not a source's rule. A drying towel and an entry mat are the two things that help most; check each maker's stated size and care rule, and the current price on the listing.
+If the pool is off limits, dog water time moves to a lake, a creek, a hose or the rain, and the mud and wet come back to the door. Dry the dog on the porch, wipe paws before they cross the floor, and keep a dog-only towel so the host's bath towels stay out of it. That is our practical advice, not a source's rule. In our view a drying towel and an entry mat are the two things most worth buying; check each maker's stated size and care rule, and the current price on the listing.
 
 {{pick:soggy-doggy-super-shammy-towel|Our pick|The maker lists a 31 x 14 in microfiber chenille towel with hand pockets that is machine washable.|https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey}}
 
 {{pick:soggy-doggy-microfiber-doormat|Our pick|The maker lists Large and Extra Large sizes with a non-slip backing, and says it is machine washable and dryer safe.|https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate}}
 
-On a hot day with no pool, a cooling pad gives a dog a cooler place to lie. It is a resting spot, not heatstroke prevention or treatment; for an overheated dog, follow Cornell's advice above. [[12]](https://www.vet.cornell.edu/index.php/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/heatstroke-medical-emergency) Read the maker's warnings about direct sunlight and hot cars before you put one in the car.
+On a hot day with no pool, a cooling pad gives a dog a cooler place to lie. In our view it is a resting spot, not heatstroke prevention or treatment: Cornell's prevention advice is shade, frequent water and avoiding exercise in hot weather, and for an overheated dog it says to start cooling immediately and get to a veterinary hospital. [[12]](https://www.vet.cornell.edu/index.php/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/heatstroke-medical-emergency) Read the maker's warnings about direct sunlight and hot cars before you put one in the car.
 
 {{pick:green-pet-shop-cool-pet-pad|Best cooling mat|NBC Select names it its best cooling mat; the maker lists five sizes by dog weight and a 12-month warranty, and warns against direct sunlight and hot cars.|https://www.nbcnews.com/select/amp/rcna168150}}
 

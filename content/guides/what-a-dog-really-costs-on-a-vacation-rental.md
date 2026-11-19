@@ -244,13 +244,13 @@ Two bills are not part of the plan, and both are avoidable.
 - **Damage and extra cleaning after checkout.** A pet fee does not stand in for a damage claim. If a charge appears afterwards, [what to do about an Airbnb pet damage charge after checkout](/guides/airbnb-pet-damage-charge-after-checkout) walks through asking for an itemized explanation.
 - **A dog the booking did not approve.** Cabin Rentals of Georgia says all pet fees are doubled if an unapproved dog is found. [[7]](https://cabin-rentals-of-georgia.com/policies) Tahoe Vacation Rentals lists a $300 nonrefundable per-pet charge and immediate departure for a pet in a non-pet-friendly home. [[9]](https://www.tahoevacationrentals.com/reservation-information/) The full picture is in [what happens if you bring a dog to a no-pets rental](/guides/bringing-a-dog-to-a-no-pets-rental).
 
-## The small items that prevent the big charges
+## Small gear to pack
 
-Gear is not part of the rental bill, so it stays out of the totals above. But a few small items cost little against a cleaning or damage claim: a machine-washable drying towel for wet or muddy paws at the door, and a sealed bin for kibble so loose food stays off the host's floors and shelves. They only lower the odds of a charge; they do not replace photos at arrival and checkout. Check current prices on the listings and add whatever you buy to your own gear line.
+Gear is not part of the rental bill, so it stays out of the totals above. Two items are worth a look: a machine-washable drying towel for wet or muddy paws at the door, and a sealed bin for kibble so loose food stays off the host's floors and shelves. That is our own suggestion; neither changes what a host or platform may charge, and neither replaces photos at arrival and checkout. Check current prices on the listings and add whatever you buy to your own gear line.
 
 {{pick:soggy-doggy-super-shammy-towel|Our pick|Maker lists a 31 x 14 in microfiber towel with hand pockets that is machine washable.|https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey}}
 
-{{pick:iris-usa-airtight-dog-food-container-10-lb|Our pick|PetsRadar calls it its favorite all-rounder pet food container, and the maker lists 12.75 qt, about 10 lb of dry food.|https://petsradar.com/buying-guides/best-pet-food-containers}}
+{{pick:iris-usa-airtight-dog-food-container-10-lb|Our pick|Maker lists 12.75 qt, about 10 lb of dry food, with airtight seals and buckles.|https://www.irisusainc.com/collections/airtight-pet-food-containers/products/airtight-dog-food-storage-container-up-to-10-lbs-3}}
 
 Both are researched from the maker's page, not tested by us.
 

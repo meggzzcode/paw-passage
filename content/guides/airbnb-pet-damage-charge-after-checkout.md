@@ -216,7 +216,7 @@ Dated, per-item photos from arrival and checkout are your strongest protection, 
 
 ## Reduce the odds of a charge
 
-Most small claims are about mud, wet fur and stains, so the cheapest prevention is to catch the mess at the door. Look for a machine-washable microfiber entry mat with a non-slip backing, sized to the doorway, and a washable drying towel for paws and coats. If the host allows dogs on the furniture, a washable throw over the sofa keeps hair and drool off the upholstery; if the listing says nothing, ask first. None of this replaces your arrival and checkout photos, and none of it guarantees a host will not file a claim. Check the current price on the listing.
+Mud, wet fur and stains are the kind of mess a dog brings in, so one idea of ours is to catch it at the door. Look for a machine-washable microfiber entry mat with a non-slip backing, sized to the doorway, and a washable drying towel for paws and coats. If the host allows dogs on the furniture, a washable throw over the sofa keeps hair and drool off the upholstery; if the listing says nothing, ask first. None of this replaces your arrival and checkout photos, none of it guarantees a host will not file a claim, and it does not change how Airbnb or Vrbo handle one. Check the current price on the listing.
 
 {{pick:soggy-doggy-microfiber-doormat|Our pick|Maker lists Large 26 x 36 in and Extra Large 36 x 60 in sizes, machine washable, with a non-slip backing.|https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate}}
 

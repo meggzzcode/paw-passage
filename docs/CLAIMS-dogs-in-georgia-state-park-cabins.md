@@ -39,3 +39,5 @@ URLs: RULES = https://gastateparks.org/ParkRules; COTT = https://gastateparks.or
 
 Discrepancies with our place files (content/places, all status unverified): (a) general-pet-rules file lists exclusions "buildings and lodges, swimming areas, beaches, some trails"; the official page also bars yurts, group camps and historic site buildings, and names Panola Mountain and Tallulah Gorge for trails. (b) That file says only that cottage dogs may not be left unattended; official says cottage, vehicle or park. (c) File has no fee; official says $50 per dog (limit 2) at check-in, and a request before arrival. (d) Red Top Mountain file applies the general rule; the park page itself says nothing about dogs. (e) Tallulah file matches the park page, which lists no cottages.
 | 31 | Leash pick: maker lists 5 ft, inside the 6-foot rule (RULES); bags/cleanup from the rules table | RULES, product record | 1 |
+
+- Rewrite fact-check 2026-11-19: Ruffwear Knot-a-Leash "5 ft (1.5 m) (Small and Large)" re-read on the maker page; ParkRules re-read: "6-foot leash at all times when not inside cottages", "no longer than six feet" at parks (level 1).

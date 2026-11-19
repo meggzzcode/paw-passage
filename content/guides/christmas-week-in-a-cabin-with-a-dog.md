@@ -9,7 +9,7 @@ status: published
 author: Paws & Passage Editors
 publishedOn: 2026-11-18
 lastReviewed: 2026-11-19
-readingMinutes: 9
+readingMinutes: 11
 heroImage: guide-christmas-week
 faqs:
   - q: Do cabin rentals charge extra for dogs at Christmas?
@@ -29,7 +29,6 @@ relatedGuides:
   - how-many-dogs-can-you-bring-to-a-vacation-rental
 relatedProducts:
   - ruffwear-climate-changer-fleece
-  - ruffwear-polar-trex-boots
   - kurgo-loft-wander-dog-bed
   - kong-classic
 relatedTools:
@@ -216,13 +215,11 @@ For fire, NFPA's tree sheet says to keep the tree at least three feet from any h
 
 For cold, the ASPCA says "if it's too cold for you, it's probably too cold for your pet," recommends washing and drying paws after walks, keeping de-icing chemicals out of reach, cleaning up antifreeze spills right away because it is deadly to dogs, and never leaving a dog alone in a car in cold weather. [[11]](https://www.aspca.org/pet-care/general-pet-care/cold-weather-safety-tips)
 
-None of the sources we read gives a temperature at which a dog needs a coat or boots, so size gear to the dog and the walk, not to a number.
+None of the sources we read gives a temperature at which a dog needs a coat or boots, so size gear to the dog and the walk, not to a number. Gear does not make a cold walk safe; the ASPCA rule above still applies.
 
 {{pick:ruffwear-climate-changer-fleece|Our pick|The maker describes a 260 g polyester fleece with sleeves and a full-length zipper, sized XXS to XL by chest girth and machine-washable on a cold gentle cycle; it states no temperature rating.|https://ruffwear.com/products/climate-changer-fleece-dog-jacket}}
 
 For snow and ice, size boots by paw width, not dog weight, and check the count: some are sold as a set of two.
-
-{{pick:ruffwear-polar-trex-boots|Our pick|The maker describes a waterproof, windproof softshell upper with winter traction lugs, sold as a set of two and sized by paw width from 1.50 to 3.25 in; it states no temperature rating.|https://ruffwear.com/products/polar-trex-winter-dog-boots}}
 
 ## Buying checklist
 

@@ -13,7 +13,7 @@ export const guide: Guide = {
   author: "Paws & Passage Editors",
   publishedOn: "2026-11-16",
   lastReviewed: "2026-11-19",
-  readingMinutes: 9,
+  readingMinutes: 11,
   heroImage: "gear-first-aid",
   body: `## The short answer
 
@@ -88,7 +88,7 @@ A hybrid is often best: a ready-made kit gives you organized, often waterproof b
 
 Hold any ready-made kit up against this list. Product details below come from each maker's page, read on 2026-11-16, and we have not tested any kit. Check the current price on the listing.
 
-- [ ] **Contents match the AVMA checklist:** bandage materials, gauze, tape, scissors, tweezers, gloves, a cold pack, saline.
+- [ ] **Contents match the AVMA checklist:** bandage materials, gauze, tape, scissors, tweezers, gloves, saline.
 - [ ] **Count line items, not the piece count.** One kit's page says 49 pieces but lists about 20 line items. [[11]](https://www.kurgo.com/harnesses/rsg-dog-first-aid-kit)
 - [ ] **A waterproof bag or a zippered case** you can find in the dark, with weight and size stated. Several pages state neither.
 - [ ] **A first aid guide or handbook** you can name; confirm what arrives, because one kit's feature text mentions a manual its contents list does not show. [[8]](https://www.adventuremedicalkits.com/products/adventure-dog-medical-kit-me-my-dog)
@@ -127,7 +127,7 @@ The AVMA tells owners to apply a muzzle if a pet threatens to bite, because pain
 | A week at a rural cabin, long drive | Full kit at the cabin, vet and poison numbers on the fridge | A larger kit, plus your own thermometer, records and contacts |
 | Day hikes from the cabin | Light kit on you or the dog's pack | A compact kit, or a MOLLE kit with a compatible harness |
 | Road trip with stops, no hiking | A single zippered kit for the car | A zippered kit |
-| Nervous or reactive dog | A fitted muzzle introduced well before the trip | A basket muzzle, if its sizing and use notes suit your dog |
+| A dog that may bite when hurt or frightened | A fitted muzzle introduced well before the trip | A basket muzzle, if its sizing and use notes suit your dog |
 | Dog on regular medication | Original-labeled medication, records copy, your vet's advice | Any kit, plus your vet's guidance |
 | Two or more dogs | Duplicate key items | See our [two-dog guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental) |
 

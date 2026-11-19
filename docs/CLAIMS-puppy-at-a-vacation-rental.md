@@ -32,3 +32,5 @@ URLs: TG = https://tahoegetaways.com/policies; BR = https://ablueridgecabinrenta
 | 24 | KONG Classic: size chart by dog weight; softer Puppy KONG under 9 months; supervised use; no toy indestructible | https://www.kongcompany.com/kong-classic/ | 1 (maker claim) | n/a |
 
 Fact-check 2026-11-18: rows 1-9, 13-19 re-read live and matched; quotes over 14 words shortened in article (rows 1, 8, 15, 16, 17); readingMinutes set to 8; "What most people report" label renamed "What our sample shows". See docs/FACTCHECK-puppy-at-a-vacation-rental.md.
+
+Rewrite fact-check 2026-11-19: row 22 re-read (Petful heading "Best washable: Pet Parents Pawtect Pads..."); row 23 pick source changed to the maker page; rows 22-24 re-read and matched. readingMinutes 10. See docs/FACTCHECK-REWRITE-puppy-at-a-vacation-rental.md.

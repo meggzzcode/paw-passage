@@ -11,7 +11,7 @@ approvedOn: 2026-11-18
 author: Paws & Passage Editors
 publishedOn: 2026-11-18
 lastReviewed: 2026-11-19
-readingMinutes: 7
+readingMinutes: 8
 heroImage: guide-dog-life-jacket
 faqs:
   - q: Is there a standard or certification for dog life jackets?
@@ -201,7 +201,7 @@ Whole Dog Journal, in a 2016 piece whose prices are likely out of date, says mor
 
 One maker calls its product "a flotation aid intended for use on a conscious dog in calm waters." [[3]](https://outwardhound.com/dawson-swim-dog-life-jacket/) Another maker's page says the shell, lining and buckles are bluesign approved, but that wording covers materials, not flotation performance, and the page gives no buoyancy rating. [[2]](https://ruffwear.com/products/float-coat-dog-life-jacket) That maker's blog says buoyancy is tested "following the guidelines of human PFDs" without naming a standard or saying the product meets one. [[6]](https://ruffwear.com/blogs/explored/do-dogs-need-life-jackets)
 
-So every flotation statement here is the maker's. No independent tester is named on any page we read. The Coast Guard video above is the only official statement we read, and it is from 2013. [[1]](https://www.dvidshub.net/video/291603/boating-responsibly-with-mans-best-friend)
+So every flotation statement here is the maker's. No lab test or certification body is named on any maker page we read. The Coast Guard video above is the only official statement we read, and it is from 2013. [[1]](https://www.dvidshub.net/video/291603/boating-responsibly-with-mans-best-friend)
 
 Specs here are researched from the makers' pages and cited sources, not tested by us.
 
@@ -209,9 +209,9 @@ Specs here are researched from the makers' pages and cited sources, not tested b
 
 Start with a jacket that has the features above in your dog's girth range, and a maker page that states its sizes and return terms. Two to begin with, with sizes and the current price to check on each listing before you order. More are on our [beach vacations gear page](/gear/beach-vacations).
 
-{{pick:ezydog-dfd-life-jacket|Best value|Whole Dog Journal says it earned top honors for buoyancy, comfort-minded features and affordability; the maker lists sizes XS to XL, a padded grab handle and a leash D-ring.|https://www.whole-dog-journal.com/lifestyle/dog-life-jacket-review/}}
+{{pick:ezydog-dfd-life-jacket|Best value|Whole Dog Journal, in a 2021 review of two test dogs, says it earned top honors for buoyancy, comfort-minded features and affordability; the maker lists sizes XS to XL, a padded grab handle and a leash D-ring.|https://www.whole-dog-journal.com/lifestyle/dog-life-jacket-review/}}
 
-{{pick:ruffwear-float-coat|Our pick|The maker sizes it by girth from XXS to XL and lists a lifting handle, a telescoping neck closure and reflective accents, with no flotation rating stated.|https://ruffwear.com/products/float-coat-dog-life-jacket}}
+{{pick:ruffwear-float-coat|Our pick|The maker sizes it by girth from XXS to XL and lists a lifting handle, a telescoping neck closure and reflective accents, with no flotation rating stated. Its page showed every size out of stock when we last read it.|https://ruffwear.com/products/float-coat-dog-life-jacket}}
 
 ## Water hazards a jacket does not solve
 

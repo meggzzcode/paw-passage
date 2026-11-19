@@ -113,7 +113,7 @@ A pet health policy is a different product from liability cover for injuries or 
 
 ## How sure we are
 
-- **Confirmed by a source we cite:** the six limits above, each from the manager's own page on 2026-11-18, and the platform and insurance statements, each from its cited page.
+- **Confirmed by a source we cite:** the six limits above, each from the manager's own page on 2026-11-18, the platform and insurance statements, each from its cited page, and the gear specs, each from the maker's page (read 2026-11-18).
 - **What most people report:** this page uses no survey; the 38 managers are a small convenience sample, not a picture of the whole market.
 - **Unknown, so ask:** the rule for your specific home, since limits change and many vary by property.
 

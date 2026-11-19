@@ -73,3 +73,5 @@ URLs: A1415 = https://www.airbnb.com/help/article/1415; A3591 = https://www.airb
 - Rows 32, 36, 38: tallies of 22 include items seen only as snippets (dossier items 16 to 21); article wording no longer says all 22 were read.
 - Surf or Sound location changed from "Outer Banks" to Hatteras Island, NC (its own site).
 | Prevention picks (entry mat, drying towel): maker specs from product records; washable throw advice is our judgment and says to ask the host first | catalog records | 3 |
+
+- Rewrite fact-check 2026-11-19: doormat (26 x 36 / 36 x 60 in, machine washable, non-slip) and towel (31 x 14 in, hand pockets, machine wash) re-read on Soggy Doggy maker pages (level 1). "Reduce the odds" paragraph is our own advice, labelled as such; it says gear does not guarantee no claim and does not change how Airbnb or Vrbo handle claims.

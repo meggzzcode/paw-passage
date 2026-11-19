@@ -13,7 +13,7 @@ export const guide: Guide = {
   author: "Paws & Passage Editors",
   publishedOn: "2026-11-16",
   lastReviewed: "2026-11-19",
-  readingMinutes: 9,
+  readingMinutes: 11,
   heroImage: "guide-cabin-packing",
   body: `A cabin is not a hotel room. The nearest vet may be far away, the stairs and the wood stove are a surprise, and a bear may take an interest in the dog's food. Pack for the property you booked, not just for the dog.
 
@@ -22,13 +22,13 @@ export const guide: Guide = {
 - **What to buy:** a lid-tight food container, a washable drying towel and entry mat for the door, and in hot weather a cooling pad. Everything else on the list is what you already own.
 - Pack your dog's familiar routine first, then add what the cabin requires: traction, barriers, cleanup gear, and wildlife-safe food storage.
 - Get host answers on stairs, fencing, crating, and food storage before you pack. A gate will not fix a stairs-and-bedroom mismatch.
-- An ordinary food bin or cooler is not bear-resistant. Keep pet food, treats, bowls, and rubbish indoors or as the property and park direct. [[1]](https://www.nps.gov/articles/bearsafetyfood.htm) [[13]](https://bearwise.org/six-bearwise-basics/never-leave-pet-food-outdoors/)
+- Do not count on an ordinary food bin or cooler as bear-proof; the maker of the bin we link makes no bear-resistance claim. Keep pet food, treats, bowls, and rubbish indoors or as the property and park direct. [[1]](https://www.nps.gov/articles/bearsafetyfood.htm) [[13]](https://bearwise.org/six-bearwise-basics/never-leave-pet-food-outdoors/)
 - Carry offline records, microchip details, and emergency vet and poison control numbers (ASPCA 888-426-4435; Pet Poison Helpline 855-764-7661; a consultation fee may apply).
 - Check for ticks every evening and keep winter heaters, ash, and de-winterizing chemicals away from your dog. [[4]](https://www.cdc.gov/ticks/prevention/preventing-ticks-on-pets.html)
 
 ## Buying checklist
 
-1. A food container with a snug lid that fits the whole bag, understood as tidy storage and not bear-resistant.
+1. A food container with a snug lid that fits the whole bag, understood as tidy storage; the maker makes no bear-resistance claim.
 2. A machine-washable drying towel and a washable entry mat with a non-slip backing, both stated by the maker.
 3. A cooling pad sized by your dog's weight, only for hot weather and never left in sun or a hot car.
 4. A bed or mat the dog already knows, plus a washable throw, if the host allows furniture.
@@ -58,11 +58,11 @@ Bring:
 
 Keep medication reachable during the drive, and ask your veterinarian how to handle temperature-sensitive medication and missed doses. Avoid introducing a new food or supplement on holiday.
 
-**Storage.** A regular food bin is **not** a bear-resistant container, and neither is an ordinary cooler. The National Park Service says bears treat anything with a scent as food, lists trash, toiletries and ice chests among items that must be stored properly, and notes that rules differ from park to park. It does not name pet food, so treat it as scented. Some places allow food in a closed car out of sight while others require lockers, so check before you rely on the car. [[1]](https://www.nps.gov/articles/bearsafetyfood.htm)
+**Storage.** Do not count on a regular food bin or an ordinary cooler as bear-proof. The National Park Service says bears treat anything with a scent as food, lists trash, toiletries and ice chests among items to store properly, and notes that rules differ from park to park. It does not name pet food, so treat it as scented. Some places allow food in a closed car out of sight while others require lockers, so check before you rely on the car. [[1]](https://www.nps.gov/articles/bearsafetyfood.htm)
 
-BearWise says pet food is rich in fat and protein, which makes it extremely attractive to bears. Its rules: feed pets indoors when possible; if you must feed outside, give single portions and remove the food and bowls afterward; bring bowls inside at night; and store pet food where bears cannot see or smell it. [[13]](https://bearwise.org/six-bearwise-basics/never-leave-pet-food-outdoors/) Wash bowls and put supplies away after each meal. For a kibble bin, a snug lid that fits the whole bag keeps food tidy in a car or a kitchen, but it is not bear-resistant; the maker of the one below makes no such claim.
+BearWise says pet food is rich in fat and protein, which makes it extremely attractive to bears. Its rules: feed pets indoors when possible; if you must feed outside, give single portions and remove the food and bowls afterward; bring bowls inside at night; and store pet food where bears cannot see or smell it. [[13]](https://bearwise.org/six-bearwise-basics/never-leave-pet-food-outdoors/) Wash bowls and put supplies away after each meal. For a kibble bin, a snug lid that fits the whole bag keeps food tidy in a car or a kitchen, but the maker of the one below makes no bear-resistance claim, so do not treat it as bear-proof.
 
-{{pick:iris-usa-airtight-dog-food-container-10-lb|Our pick|PetsRadar calls it its favorite all-rounder food container; the maker lists 12.75 quarts for about 10 lb of dry food, airtight seals and buckles, and makes no bear-resistance claim.|https://petsradar.com/buying-guides/best-pet-food-containers}}
+{{pick:iris-usa-airtight-dog-food-container-10-lb|Our pick|The maker lists 12.75 quarts for about 10 lb of dry food and airtight seals and buckles, and makes no bear-resistance claim.|https://www.irisusainc.com/collections/airtight-pet-food-containers/products/airtight-dog-food-storage-container-up-to-10-lbs-3}}
 
 ## Identification, records, and an offline emergency folder
 
@@ -111,13 +111,13 @@ Pack:
 
 Dry the dog at the door and wipe paws before they cross the floor, and pick a sleeping spot away from the entrance. With two dogs, bring separate beds and bowls; see our [two-dog accommodation guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental). If an accident happens, blot promptly, follow the property's cleaning instructions and tell the host; stain removers can damage some materials, so check first. Before checkout, collect yard waste and remove loose hair. To tick these items off before you go, use the [packing list tool](/tools/packing-list).
 
-A washable drying towel and an entry mat are the two items that most reduce mud on the floor. Check each maker's stated size and care rule, and the current price on the listing.
+In our view a washable drying towel and an entry mat are the two items most worth buying for muddy floors. Check each maker's stated size and care rule, and the current price on the listing.
 
 {{pick:soggy-doggy-super-shammy-towel|Our pick|The maker lists a 31 x 14 in microfiber chenille towel with hand pockets that is machine washable.|https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey}}
 
 {{pick:soggy-doggy-microfiber-doormat|Our pick|The maker lists Large and Extra Large sizes with a non-slip backing, and says it is machine washable and dryer safe.|https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate}}
 
-**Hot weather.** A cooling pad gives a dog a cooler place to lie in a warm cabin. It is a resting spot, not heatstroke prevention, and a maker's warnings about direct sunlight and hot cars apply.
+**Hot weather.** A cooling pad gives a dog a cooler place to lie in a warm cabin. In our view it is a resting spot, not heatstroke prevention: Cornell's prevention advice is shade, frequent water and avoiding exercise in hot weather, and it calls heatstroke a medical emergency. [[18]](https://www.vet.cornell.edu/index.php/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/heatstroke-medical-emergency) A maker's warnings about direct sunlight and hot cars apply.
 
 {{pick:green-pet-shop-cool-pet-pad|Best cooling mat|NBC Select names it its best cooling mat; the maker lists five sizes by dog weight and a 12-month warranty, and warns against direct sunlight and hot cars.|https://www.nbcnews.com/select/amp/rcna168150}}
 
@@ -160,7 +160,7 @@ Trial anything new, such as boots, barriers, crates and restraints, at home firs
 
 > **How sure we are**
 >
-> - **Confirmed by a source we cite:** the NPS and BearWise food-storage rules, CDC tick advice, the AVMA travel and first-aid brochures, ASPCA poison and cold-weather advice, Cornell's heat-source advice and the state-park leash rules.
+> - **Confirmed by a source we cite:** the NPS and BearWise food-storage rules, product specs from each maker's page (read 2026-11-18) and the cooling-mat label from NBC Select, CDC tick advice, the AVMA travel and first-aid brochures, ASPCA poison and cold-weather advice, Cornell's heat-source advice and the state-park leash rules.
 > - **What most people report:** six cabin packing lists from cabin companies and blogs, read 2026-11-16 (a small, non-random sample): none covered winterizing chemicals or heat-source barriers, and none clearly separated an ordinary food container from bear-resistant storage.
 > - **Unknown, and who to ask:** the cabin's own stairs, stove, supplied items and food-storage set-up. The host can tell you; get the answers before you pack.
 
@@ -178,7 +178,7 @@ A lid-tight food container, a drying towel and an entry mat come first; a coolin
     },
     {
       q: "Can I leave dog food on the cabin deck in a sealed bin?",
-      a: "A sealed household bin is not bear-resistant. NPS says bear-resistant containers only work when closed and locked, and lists ice chests among items bears treat as food, so a cooler is not bear-proof. [[1]](https://www.nps.gov/articles/bearsafetyfood.htm) Follow the property's instructions and local wildlife rules.",
+      a: "Do not count on a sealed household bin as bear-resistant; its maker makes no such claim. NPS says bear-resistant containers only work when closed and locked, and lists ice chests among items to store properly, so do not treat a cooler as bear-proof. [[1]](https://www.nps.gov/articles/bearsafetyfood.htm) Follow the property's instructions and local wildlife rules.",
     },
     {
       q: "Do I need furniture covers if the cabin charges a pet fee?",
@@ -305,6 +305,12 @@ A lid-tight food container, a drying towel and an entry mat come first; a coolin
       url: "https://www.airbnb.com/help/article/3623",
       publisher: "Airbnb Help Center",
       accessedOn: "2026-11-16",
+    },
+    {
+      title: "Heatstroke, a medical emergency",
+      url: "https://www.vet.cornell.edu/index.php/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/heatstroke-medical-emergency",
+      publisher: "Cornell University College of Veterinary Medicine",
+      accessedOn: "2026-11-19",
     },
   ],
   research: {

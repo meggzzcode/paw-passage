@@ -111,6 +111,18 @@ sources:
     url: https://www.vet.cornell.edu/index.php/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/heatstroke-medical-emergency
     publisher: Cornell University College of Veterinary Medicine
     accessedOn: 2026-11-18
+  - title: Sleepypod sizing and fit
+    url: https://sleepypod.com/pages/sizing
+    publisher: Sleepypod
+    accessedOn: 2026-11-19
+  - title: Sleepypod Clickit Sport (CPS listing)
+    url: https://centerforpetsafety.org/sleepypod-clickit-sport/
+    publisher: Center for Pet Safety
+    accessedOn: 2026-11-19
+  - title: Rover Hammock - Extended Width
+    url: https://kurgo.com/car-seat-covers/dog-hammocks/wander-hammock-extended-width
+    publisher: Kurgo
+    accessedOn: 2026-11-19
 research:
   primaryKeyword: traveling with 2 large dogs in car
   relatedKeywords:
@@ -201,7 +213,7 @@ Pick by your vehicle, then check the unknowns column. The ASPCA calls a crate th
 | Harnesses in the rear seat, barrier behind the front seats | Sedan, wagon, SUV | Kurgo says its barrier fits fixed or removable headrests but not 2-door cars or mini vans. [[7]](https://www.kurgo.com/p/backseat-barrier/K00006) | Whether the barrier does anything in a crash |
 | Dogs behind a cargo barrier, no restraint | SUV, wagon | PetSafe's barrier is tension-fit and the page makes no crash-test claim. [[8]](https://www.petsafe.com/p/happy-ride-metal-dog-barrier/62409/) | Everything about the dogs in a sudden stop |
 
-If two dogs share the rear bench, a wide seat cover keeps the hair and mud off it. A seat cover is not a restraint, and each dog still needs its own. Kurgo's Rover Hammock in the Extended Width is listed by the maker at 63 by 56 inches for full-size trucks and large SUVs, and our [large-dog guide](/guides/vacation-rentals-that-welcome-large-dogs) covers it with the other gear for big dogs.
+If two dogs share the rear bench, a wide seat cover keeps the hair and mud off it. A seat cover is not a restraint, and each dog still needs its own. Kurgo's Rover Hammock in the Extended Width is listed by the maker at 63 by 56 inches for full-size trucks and large SUVs [[21]](https://kurgo.com/car-seat-covers/dog-hammocks/wander-hammock-extended-width), and our [large-dog guide](/guides/vacation-rentals-that-welcome-large-dogs) covers it with the other gear for big dogs.
 
 ## Spacing and weight, by the maker's numbers
 
@@ -209,9 +221,9 @@ Here is the arithmetic, from maker figures and CPS's formula, not a test or a re
 
 Measure your cargo floor width before you shop. The crate must also be big enough to stand, sit, lie down and turn around in, and it must not slide or shift. [[4]](https://www.aspca.org/pet-care/general-pet-care/travel-safety-tips)
 
-For harnesses the arithmetic is the dog's weight, so check the tested weight against yours. Sleepypod lists its Clickit Sport Plus for dogs of 18 to 110 pounds, but CPS lists the older Clickit Sport, not the Sport Plus, with test dogs up to 90 pounds, and the maker's page also carries a "Rated to 25 lbs." line, so confirm the rating for each dog's size with the maker. [[6]](https://sleepypod.com/products/clickit-sport-plus) That harness is covered in our car safety guide; two harnesses from other makers are worth a close look here.
+For harnesses the arithmetic is the dog's weight, so check the tested weight against yours. Sleepypod's product page lists its Clickit Sport Plus for dogs of 18 to 110 pounds, but its sizing page says 18 to 90 pounds, and the product page also carries a "Rated to 25 lbs." line. [[6]](https://sleepypod.com/products/clickit-sport-plus) [[19]](https://sleepypod.com/pages/sizing) CPS lists the older Clickit Sport, not the Sport Plus, with test dogs up to 90 pounds. [[20]](https://centerforpetsafety.org/sleepypod-clickit-sport/) Confirm the rating for each dog's size with the maker. That harness is covered in our car safety guide; two harnesses from other makers are worth a close look here.
 
-Ruffwear's Load Up gives girth sizes from XXS to L/XL (L/XL is 32 to 42 inches) and states no weight limit. [[11]](https://ruffwear.com/products/load-up-dog-car-harness) Its separate testing page says Ruffwear tested prototypes in sled tests with 25, 45 and 75 pound mannequins at MGA Research, which Ruffwear calls an independent facility, and that the harness has not been tested to the CPS protocol. [[12]](https://ruffwear.ca/pages/load-up-car-harness-testing-design) So it suits a dog within the range of those tests, and for a dog heavier than 75 pounds the tested ceiling is yours to ask Ruffwear about.
+Ruffwear's Load Up gives girth sizes from XXS to L/XL (L/XL is 32 to 42 inches) and states no weight limit. [[11]](https://ruffwear.com/products/load-up-dog-car-harness) Its separate testing page says Ruffwear tested prototypes in sled tests with 25, 45 and 75 pound mannequins at MGA Research, which Ruffwear calls an independent facility, and that the harness was not tested to the CPS protocol and, on Ruffwear's own results, would not meet CPS's current certification because of CPS's excursion limits. [[12]](https://ruffwear.ca/pages/load-up-car-harness-testing-design) So it suits a dog within the range of those tests, and for a dog heavier than 75 pounds the tested ceiling is yours to ask Ruffwear about.
 
 {{pick:ruffwear-load-up-car-harness|For dogs within the tested range|The maker lists girth sizes XXS to L/XL, a seat belt loop that attaches to existing seat belts and metal slide buckles; Ruffwear's testing page cites sled tests up to 75 lb mannequins and says the harness has not been tested to the CPS protocol.|https://ruffwear.com/products/load-up-dog-car-harness}}
 

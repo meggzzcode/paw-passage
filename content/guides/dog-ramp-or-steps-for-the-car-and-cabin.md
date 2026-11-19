@@ -228,7 +228,7 @@ Decide on the two numbers you measured, then match the product to the problem. T
 
 {{pick:petsafe-happy-ride-side-door-steps|For a fixed-height door sill|The maker lists three heights (21.25, 24.75, 28 in), side rails, textured steps, a built-in handle and a 200 lb rating; the page does not say how it attaches.|https://www.petsafe.com/p/happy-ride-side-door-pet-steps/ZTV00-17464/}}
 
-**Steps that stay on the truck.** The Hitch Step installs on a 2 inch hitch, adjusts to the height of a truck or SUV and the maker says it supports 200 lb. It only works if you have that hitch, and the page gives no height numbers.
+**Steps that stay on the truck.** The Hitch Step installs on a 2 inch hitch, adjusts to the height of a truck or SUV and the maker says it supports 200 lb. It only works if you have that hitch, and the page gives no adjustment range.
 
 {{pick:petsafe-happy-ride-hitch-step|For a truck or SUV with a 2 in hitch|The maker says it installs on any 2 in hitch, adjusts to the vehicle height, has traction on each tread and supports 200 lb; no height range is given.|https://www.petsafe.com/p/happy-ride-dog-hitch-step/62430/}}
 

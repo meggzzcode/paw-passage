@@ -61,7 +61,7 @@ gear:
     watchOuts:
       - The collar page does not state carrier, coverage or subscription terms, and the membership page says every membership includes the app and the collar. Confirm both before you buy.
       - Battery life depends on use and settings, so treat the headline figure as a ceiling.
-      - Check the maker's fit chart, since the tracker is part of the collar.
+      - Check the maker's sizing before you order, since the tracker is part of the collar.
       - It can help you search; it cannot stop a dog getting lost.
   - productId: petcube-gps-tracker
     bestFor: Owners who accept a paid plan and want a light cellular tracker with a long power-save battery listing
@@ -166,6 +166,10 @@ sources:
     url: https://ruffwear.com/products/the-beacon-safety-dog-light
     publisher: "Ruffwear"
     accessedOn: 2026-11-18
+  - title: "Best GPS Dog Collars"
+    url: https://www.treelinereview.com/gearreviews/best-gps-dog-collars
+    publisher: "Tree Line Review"
+    accessedOn: 2026-11-19
 research:
   primaryKeyword: dog escaped what to do
   relatedKeywords:
@@ -319,11 +323,11 @@ A tracker can help you search; it cannot stop a dog getting lost. We researched 
 
 {{pick:tractive-dog-6|Clip-on GPS|The maker lists dogs above 8.8 lbs, collar widths up to 1.1 in, battery of up to 2 weeks with Power Saving Zones, and says a subscription is required for its built-in SIM.|https://tractive.com/en/pd/gps-tracker-dog}}
 
-**Built into the collar, for a long battery.** Fi's Series 3+ is the collar itself, so there is no separate unit to clip on or forget. The maker lists up to 3 months of battery life, IP68 and IP66K ratings, a colored LED night light and sizes from XS to XL, and tells buyers to check its fit chart first. [[12]](https://fitracking.com/collar) Its product page does not state the carrier, coverage or subscription terms, and its membership page says every membership includes the app and the collar, so confirm the plan before you order. [[14]](https://fitracking.com/membership) It suits a dog who would wear a new collar all trip, not a dog attached to a collar you want to keep.
+**Built into the collar, for a long battery.** Fi's Series 3+ is the collar itself, so there is no separate unit to clip on or forget. The maker lists up to 3 months of battery life, IP68 and IP66K ratings, a colored LED night light, and describes a modular design for XS to XL dogs. [[12]](https://fitracking.com/collar) Check the maker's sizing before you order, since the collar is the tracker. Its product page does not state the carrier, coverage or subscription terms, and its membership page says every membership includes the app and the collar, so confirm the plan before you order. [[14]](https://fitracking.com/membership) It suits a dog who would wear a new collar all trip, not a dog attached to a collar you want to keep.
 
 {{pick:fi-series-3-plus|Collar with GPS built in|The maker lists up to 3 months of battery life, a colored LED night light and IP68 and IP66K ratings; its product page does not state carrier or subscription terms.|https://fitracking.com/collar}}
 
-**Small, if you accept a paid plan.** Petcube's tracker is small, at 29 g and 60 x 25 x 20 mm, with IP67 water resistance and up to 30 days of battery in power save mode. [[21]](https://petcube.com/tracker/) The maker says a paid plan (Basic or Premium) is required for it to operate, and its page states no dog size range, only a universal fit, so check how it attaches to your dog's collar. Tree Line Review compares it but does not name it an award pick, so treat the battery and coverage as the maker's claims.
+**Small, if you accept a paid plan.** Petcube's tracker is small, at 29 g and 60 x 25 x 20 mm, with IP67 water resistance and up to 30 days of battery in power save mode. [[21]](https://petcube.com/tracker/) The maker says a paid plan (Basic or Premium) is required for it to operate, and its page states no dog size range, only a universal fit, so check how it attaches to your dog's collar. Tree Line Review tested it in a round-up of GPS collars, gave it no award label and called it "the most inaccurate location-wise" of the group, a single reviewer's verdict. [[23]](https://www.treelinereview.com/gearreviews/best-gps-dog-collars) Treat the battery and coverage as the maker's claims.
 
 {{pick:petcube-gps-tracker|Small and light|The maker says a paid plan is required for the tracker to operate; its page lists a 29 g weight, IP67 water resistance and up to 30 days of battery in power save mode.|https://petcube.com/tracker/}}
 

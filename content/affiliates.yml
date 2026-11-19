@@ -1,3 +1,5 @@
+# Affiliate and booking links. Edit in Pages CMS ("Affiliate links").
+# A "Buy" or "Book" button appears on the site ONLY when a link here is switched to Approved.
 links:
   - id: vrbo
     network: Vrbo
@@ -47,5 +49,120 @@ links:
   - id: vrbo-4396826
     network: Vrbo
     url: https://vrbo.com/affiliate/U0R4kX5
+    approved: true
+    kind: stay
+  - id: vrbo-4242052
+    network: Vrbo
+    url: https://vrbo.com/affiliate/B6H2O0L
+    approved: true
+    kind: stay
+  - id: vrbo-3348768
+    network: Vrbo
+    url: https://vrbo.com/affiliate/yZhbNj1
+    approved: true
+    kind: stay
+  - id: vrbo-2295009
+    network: Vrbo
+    url: https://vrbo.com/affiliate/9ohw6rO
+    approved: true
+    kind: stay
+  - id: vrbo-3042489
+    network: Vrbo
+    url: https://vrbo.com/affiliate/yN6RamV
+    approved: true
+    kind: stay
+  - id: vrbo-1445930
+    network: Vrbo
+    url: https://vrbo.com/affiliate/pJUfCJ5
+    approved: true
+    kind: stay
+  - id: vrbo-3320896
+    network: Vrbo
+    url: https://vrbo.com/affiliate/vdhFynJ
+    approved: true
+    kind: stay
+  - id: vrbo-4717796
+    network: Vrbo
+    url: https://vrbo.com/affiliate/Rv6H1jf
+    approved: true
+    kind: stay
+  - id: vrbo-2363171
+    network: Vrbo
+    url: https://vrbo.com/affiliate/AI5XyNV
+    approved: true
+    kind: stay
+  - id: vrbo-3106796
+    network: Vrbo
+    url: https://vrbo.com/affiliate/xW5r4An
+    approved: true
+    kind: stay
+  - id: vrbo-3622396
+    network: Vrbo
+    url: https://vrbo.com/affiliate/xVAYhL6
+    approved: true
+    kind: stay
+  - id: vrbo-2908219
+    network: Vrbo
+    url: https://vrbo.com/affiliate/bPX2HqV
+    approved: true
+    kind: stay
+  - id: vrbo-3500343
+    network: Vrbo
+    url: https://vrbo.com/affiliate/GyVTsy5
+    approved: true
+    kind: stay
+  - id: vrbo-889523
+    network: Vrbo
+    url: https://vrbo.com/affiliate/be0iQi0
+    approved: true
+    kind: stay
+  - id: vrbo-2357464
+    network: Vrbo
+    url: https://vrbo.com/affiliate/NhkNGy5
+    approved: true
+    kind: stay
+  - id: vrbo-2193383
+    network: Vrbo
+    url: https://vrbo.com/affiliate/ptcCUQV
+    approved: true
+    kind: stay
+  - id: vrbo-1250124
+    network: Vrbo
+    url: https://vrbo.com/affiliate/8KcXsga
+    approved: true
+    kind: stay
+  - id: vrbo-317612
+    network: Vrbo
+    url: https://vrbo.com/affiliate/8DBnN9J
+    approved: true
+    kind: stay
+  - id: vrbo-3495924
+    network: Vrbo
+    url: https://vrbo.com/affiliate/w58qAta
+    approved: true
+    kind: stay
+  - id: vrbo-4188412
+    network: Vrbo
+    url: https://vrbo.com/affiliate/lmNdL3f
+    approved: true
+    kind: stay
+  - id: vrbo-2827825
+    network: Vrbo
+    url: https://vrbo.com/affiliate/brntBHo
+    approved: true
+    kind: stay
+  - id: vrbo-4195368
+    network: Vrbo
+    url: https://vrbo.com/affiliate/xoVpM0l
+    approved: true
+    kind: stay
+  - id: vrbo-689968
+    network: Vrbo
+    url: https://vrbo.com/affiliate/hmFk7X7
+    approved: true
+    kind: stay
+  - id: vrbo-3869736
+    network: Vrbo
+    url: https://vrbo.com/affiliate/umaC9R4
     approved: true
     kind: stay

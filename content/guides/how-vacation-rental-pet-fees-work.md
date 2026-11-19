@@ -8,8 +8,8 @@ states: []
 status: published
 author: Paws & Passage Editors
 publishedOn: 2026-11-16
-lastReviewed: 2026-11-18
-readingMinutes: 8
+lastReviewed: 2026-11-19
+readingMinutes: 9
 heroImage: guide-pet-fees
 faqs:
   - q: Are vacation-rental pet fees charged per night or per stay?
@@ -34,6 +34,10 @@ relatedGuides:
   - pet-friendly-listing-red-flags
   - what-a-dog-really-costs-on-a-vacation-rental
 embeddedTool: pet-cost-workflow
+relatedProducts:
+  - pet-parents-pawtect-pads
+  - soggy-doggy-microfiber-doormat
+  - soggy-doggy-super-shammy-towel
 relatedTools:
   - checklist
   - pet-cost-check
@@ -66,6 +70,18 @@ sources:
     url: https://www.ada.gov/resources/service-animals-2010-requirements/
     publisher: U.S. Department of Justice
     accessedOn: 2026-11-16
+  - title: Pawtect Pads (2pack)
+    url: https://petparentsbrand.com/products/washable-puppy-pads
+    publisher: Pet Parents
+    accessedOn: 2026-11-18
+  - title: Plain Chocolate Absorbent Doormat
+    url: https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate
+    publisher: Soggy Doggy Productions
+    accessedOn: 2026-11-18
+  - title: Soggy Doggy Super Shammy
+    url: https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey
+    publisher: Soggy Doggy Productions
+    accessedOn: 2026-11-18
 research:
   primaryKeyword: how vacation rental pet fees work
   relatedKeywords:
@@ -221,6 +237,20 @@ Rental B has a pet fee and is still $10 cheaper at this stage. Compare with iden
 The Department of Justice's ADA requirements say a business that requires a deposit or fee from patrons with pets must waive it for service animals. [[7]](https://www.ada.gov/resources/service-animals-2010-requirements/) Its FAQ adds that hotels may not charge for cleaning hair or dander shed by a service animal, though they may charge for damage as they would for any guest. [[6]](https://www.ada.gov/resources/service-animals-faqs/) The ADA does not automatically apply identically to every privately rented home, and other laws and platform rules may apply.
 
 Ordinary cleaning fees charged to everyone are not an animal surcharge, and service-animal status is no blanket shield from legitimate damage charges. Emotional support animals are not automatically ADA service animals. Do not misrepresent a pet to avoid a fee.
+
+## Cut the odds of a damage deduction
+
+The fee does not cover damage, so the deposit or a later claim is where a muddy floor or an accident can cost you. Nothing you pack guarantees a clean return, and the host decides what counts as damage. But a few cheap items deal with the usual causes before they reach the carpet or the sofa, and photos of the place when you leave are still your best record.
+
+**Accidents on the floor.** A new place can upset a puppy or an older dog's routine. The Pet Parents Pawtect Pads are machine-washable reusable pads. The maker lists four sizes from 18 x 24 in to 41 x 41 in, two per pack, with a waterproof backing layer and a floor-gripping backing, and says they last hundreds of washes. [[8]](https://petparentsbrand.com/products/washable-puppy-pads) The page does not name the fabric or show warranty terms. Pick the size that fits where the dog will sleep, and wash them before you leave.
+
+{{pick:pet-parents-pawtect-pads|Our pick|The maker lists machine-washable pads in four sizes with a waterproof layer and a floor-gripping backing, two per pack; it does not state the fabric.|https://petparentsbrand.com/products/washable-puppy-pads}}
+
+**Mud and wet paws at the door.** The Soggy Doggy Microfiber Doormat is a chenille mat the maker describes as super absorbent and dirt trapping, in Large (26 x 36 in) and Extra Large (36 x 60 in), with a non-slip backing. The maker says it is machine washable and dryer safe. [[9]](https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate) For a wet dog, the Super Shammy towel is a 31 x 14 in microfiber chenille towel with hand pockets, machine washable. [[10]](https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey) The pages give no absorbency figures, so neither is a promise about how much water they hold. Ask the host where wet dogs may be dried, and whether a mat by the door is welcome.
+
+{{pick:soggy-doggy-microfiber-doormat|Our pick|The maker lists Large and Extra Large sizes with a non-slip backing, and says it is machine washable and dryer safe.|https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate}}
+
+{{pick:soggy-doggy-super-shammy-towel|Our pick|The maker lists a 31 x 14 in microfiber chenille towel with hand pockets that is machine washable.|https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey}}
 
 ## If a charge surprises you
 

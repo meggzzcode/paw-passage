@@ -11,7 +11,7 @@ approvedOn: 2026-11-18
 author: Paws & Passage Editors
 publishedOn: 2026-11-18
 lastReviewed: 2026-11-19
-readingMinutes: 12
+readingMinutes: 13
 heroImage: guide-loose-dog
 faqs:
   - q: What should I do first if my dog runs off in a place I do not know?
@@ -40,16 +40,11 @@ relatedTools:
   - checklist
   - packing-list
 relatedProducts:
-  - ruffwear-the-beacon-dog-safety-light
+  - tractive-dog-6
+  - fi-series-3-plus
   - petcube-gps-tracker
+  - ruffwear-the-beacon-dog-safety-light
 gear:
-  - productId: akc-reunite-stainless-collar-tag
-    bestFor: Putting readable contact details on any dog, as a tag or as a collar with a built-in nameplate
-    whyItMadeTheList: It is the visible first layer, so a finder can read an ID number and a helpline without a scanner. The maker lists a stainless steel tag with an 18-month warranty, and a collar with a built-in nameplate, reflective stitching and a 6-month guarantee.
-    watchOuts:
-      - The ID number points to an AKC Reunite record, so it only helps if you are enrolled and keep the record current.
-      - A tag only helps if it stays attached and legible; the collar version removes the separate tag but has plastic buckles, per the maker.
-      - Check the collar's length and width against your dog's neck on the maker's page.
   - productId: tractive-dog-6
     bestFor: Dogs above 8.8 lbs when you want a cellular GPS tracker on the existing collar
     whyItMadeTheList: The maker's page states weight, collar width, battery figures with and without Power Saving Zones, connectivity and the subscription requirement plainly.
@@ -59,13 +54,6 @@ gear:
       - Battery is listed at up to 2 weeks with Power Saving Zones and up to 6 days without, so charge it before each leg.
       - Fits collar widths up to 1.1 in, which rules out some wide collars.
       - It can help you search; it cannot stop a dog getting lost.
-  - productId: tractive-dog-6-xl
-    bestFor: Dogs above 44.1 lbs, or long trips where fewer charging stops matter
-    whyItMadeTheList: The same cellular-and-subscription design as the DOG 6, for bigger dogs and wider collars (up to 1.6 in), with a longer listed battery life.
-    watchOuts:
-      - A subscription and cellular coverage are required.
-      - Listed battery is up to 6 weeks with Power Saving Zones and up to 20 days without.
-      - It is the larger body, so it is not for small dogs.
   - productId: fi-series-3-plus
     bestFor: Owners who want one collar with the tracker built in and a long listed battery life
     whyItMadeTheList: The maker lists up to 3 months of battery life on one charge and IP68/66K ratings, and its app page describes GPS and LTE tracking with live updates.
@@ -74,6 +62,20 @@ gear:
       - Battery life depends on use and settings, so treat the headline figure as a ceiling.
       - Check the maker's fit chart, since the tracker is part of the collar.
       - It can help you search; it cannot stop a dog getting lost.
+  - productId: petcube-gps-tracker
+    bestFor: Owners who accept a paid plan and want a light cellular tracker with a long power-save battery listing
+    whyItMadeTheList: The maker lists a 29 g weight, IP67 water resistance, up to 30 days of battery in power save mode and a paid plan that is required for the tracker to operate.
+    watchOuts:
+      - The page states no dog size or weight range, only a universal fit, so check how it will attach to your dog's collar.
+      - A paid plan is required, so check the current plans and what they cover.
+      - Battery and coverage are maker claims.
+  - productId: ruffwear-the-beacon-dog-safety-light
+    bestFor: Dusk arrivals and night toilet walks in a yard you do not know
+    whyItMadeTheList: The maker lists three modes, three colors, up to 20 hours of run time and waterproofing to 1 m for 30 minutes, on a clip for Ruffwear collars and light loops.
+    watchOuts:
+      - It makes a dog easier to see; it does not find or hold a lost dog.
+      - Its Quick Clip is listed as compatible with Ruffwear collars and apparel light loops, so check it fits your collar or harness.
+      - Run time and waterproof figures are the maker's own.
 sources:
   - title: "Lost Pet Tips"
     url: https://www.akcreunite.org/lostpettips/
@@ -154,6 +156,14 @@ sources:
   - title: "Dog owner - how we were misled by a firework-free vacation park"
     url: https://www.petbook-magazine.com/dogs/dog-owner-how-we-were-misled-by-a-firework-free-vacation-park
     publisher: "Petbook"
+    accessedOn: 2026-11-18
+  - title: "Petcube GPS Tracker for Dogs"
+    url: https://petcube.com/tracker/
+    publisher: "Petcube"
+    accessedOn: 2026-11-18
+  - title: "Waterproof & Rechargeable Dog Safety Light"
+    url: https://ruffwear.com/products/the-beacon-safety-dog-light
+    publisher: "Ruffwear"
     accessedOn: 2026-11-18
 research:
   primaryKeyword: dog escaped what to do
@@ -284,8 +294,8 @@ AKC Reunite sells enrollment and ID tags, so read its pages with that in mind; i
 
 A cellular tracker sends its location over a mobile network. One maker, Tractive, says its trackers have a built-in SIM, that the subscription covers the mobile network fees and is priced separately from the tracker, and that a device needs 2G and/or LTE (CatM1) coverage from one of its 500+ partners, in 175+ countries. [[10]](https://tractive.com/en/pd/gps-tracker-dog) Another maker, Fi, describes GPS and LTE tracking with live updates on its app page. [[11]](https://fitracking.com/theapp)
 
-- **Battery:** Tractive lists its smaller model at up to 2 weeks with Power Saving Zones and up to 6 days without, and its larger model at up to 6 weeks and up to 20 days. [[10]](https://tractive.com/en/pd/gps-tracker-dog) Fi lists up to 3 months on one charge for its collar. [[12]](https://fitracking.com/collar) A dead tracker finds nothing.
-- **Fit:** Tractive lists the smaller model for dogs above 8.8 lbs (collar width up to 1.1 in) and the larger above 44.1 lbs (up to 1.6 in). [[10]](https://tractive.com/en/pd/gps-tracker-dog)
+- **Battery:** Tractive lists its DOG 6 at up to 2 weeks with Power Saving Zones and up to 6 days without. [[10]](https://tractive.com/en/pd/gps-tracker-dog) Fi lists up to 3 months on one charge for its collar. [[12]](https://fitracking.com/collar) A dead tracker finds nothing.
+- **Fit:** Tractive lists the DOG 6 for dogs above 8.8 lbs and collar widths up to 1.1 in. [[10]](https://tractive.com/en/pd/gps-tracker-dog)
 
 Apple describes AirTag as sending a Bluetooth signal that nearby Find My devices relay to iCloud, so you can see it on a map. The page describes keys, bags and similar items and does not mention pets. [[13]](https://www.apple.com/airtag/) It depends on other people's devices being nearby, so our view is that it is weaker than cellular GPS on a trail or at night.
 
@@ -302,11 +312,23 @@ Copy this before you shop. The maker's own page should answer each line; if it d
 
 A tracker can help you search; it cannot stop a dog getting lost. We researched products from the maker's page and have not tested any. Check the current price on the listing.
 
-{{pick:petcube-gps-tracker|Our pick|The maker says a paid plan is required for the tracker to operate; its page lists a 29 g weight and IP67 water resistance.|https://petcube.com/tracker/}}
+### Three trackers, and who each suits
+
+**Clip-on, for a dog who already has a collar you like.** Tractive's DOG 6 is a clip-on unit, so it rides on the collar your dog already wears. The maker lists it for dogs above 8.8 lbs, at 1.4 oz, fitting collar widths up to 1.1 in, with LTE/4G and GPS, GLONASS and Galileo for location, and IP68 waterproofing. [[10]](https://tractive.com/en/pd/gps-tracker-dog) The maker's page states the terms: a subscription is required to cover the built-in SIM's mobile network fees, and it can be cancelled at any time. Check the plan and its coverage tool for your route before you book, and charge it before each leg.
+
+{{pick:tractive-dog-6|Clip-on GPS|The maker lists dogs above 8.8 lbs, collar widths up to 1.1 in, battery of up to 2 weeks with Power Saving Zones, and says a subscription is required for its built-in SIM.|https://tractive.com/en/pd/gps-tracker-dog}}
+
+**Built into the collar, for a long battery.** Fi's Series 3+ is the collar itself, so there is no separate unit to clip on or forget. The maker lists up to 3 months of battery life, IP68 and IP66K ratings, a colored LED night light and sizes from XS to XL, and tells buyers to check its fit chart first. [[12]](https://fitracking.com/collar) Its product page does not state the carrier, coverage or subscription terms, and its membership page says every membership includes the app and the collar, so confirm the plan before you order. [[14]](https://fitracking.com/membership) It suits a dog who would wear a new collar all trip, not a dog attached to a collar you want to keep.
+
+{{pick:fi-series-3-plus|Collar with GPS built in|The maker lists up to 3 months of battery life, a colored LED night light and IP68 and IP66K ratings; its product page does not state carrier or subscription terms.|https://fitracking.com/collar}}
+
+**Small, if you accept a paid plan.** Petcube's tracker is small, at 29 g and 60 x 25 x 20 mm, with IP67 water resistance and up to 30 days of battery in power save mode. [[21]](https://petcube.com/tracker/) The maker says a paid plan (Basic or Premium) is required for it to operate, and its page states no dog size range, only a universal fit, so check how it attaches to your dog's collar. Tree Line Review compares it but does not name it an award pick, so treat the battery and coverage as the maker's claims.
+
+{{pick:petcube-gps-tracker|Small and light|The maker says a paid plan is required for the tracker to operate; its page lists a 29 g weight, IP67 water resistance and up to 30 days of battery in power save mode.|https://petcube.com/tracker/}}
 
 ### Being seen after dark
 
-A clip-on light does not find a dog, but it makes one far easier to see on a late arrival or a night walk in a yard you do not know. Look for a rechargeable light with a steady mode and flashing modes, a stated run time, a stated waterproof rating and a clip that fits your dog's collar or harness. Treat run time and waterproof figures as the maker's claims.
+A clip-on light does not find a dog, but it makes one far easier to see on a late arrival or a night walk in a yard you do not know. Look for a rechargeable light with a steady mode and flashing modes, a stated run time, a stated waterproof rating and a clip that fits your dog's collar or harness. Ruffwear's Beacon fits that description: its page lists three modes (Slow Flash, Fast Flash, Always On), three colors, up to 20 hours of run time and waterproofing to 1 m for 30 minutes, and it clips to Ruffwear collars and apparel light loops, so check that your dog's collar or harness has one. [[22]](https://ruffwear.com/products/the-beacon-safety-dog-light) Treat run time and waterproof figures as the maker's claims.
 
 {{pick:ruffwear-the-beacon-dog-safety-light|Best waterproof|Tree Line Review labels it "Best waterproof"; the maker lists up to 20 hours of run time and waterproofing to 1 m for 30 minutes.|https://www.treelinereview.com/gearreviews/best-light-up-dog-collars}}
 

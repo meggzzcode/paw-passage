@@ -10,8 +10,8 @@ approvedBy: Paws & Passage Editors
 approvedOn: 2026-11-18
 author: Paws & Passage Editors
 publishedOn: 2026-11-18
-lastReviewed: 2026-11-18
-readingMinutes: 9
+lastReviewed: 2026-11-19
+readingMinutes: 10
 heroImage: guide-no-weight-limit
 faqs:
   - q: Are there vacation rentals with no dog weight limit?
@@ -30,6 +30,10 @@ relatedGuides:
   - breed-restrictions-at-vacation-rentals
   - pet-friendly-vacation-rental-checklist
   - how-vacation-rental-pet-fees-work
+relatedProducts:
+  - midwest-icrate-dog-crate
+  - kurgo-loft-wander-dog-bed
+  - petsafe-happy-ride-folding-ramp
 relatedTools:
   - will-my-dog-be-accepted
   - checklist
@@ -94,6 +98,18 @@ sources:
   - title: Tips for booking a pet-friendly vacation rental
     url: https://www.gopetfriendly.com/blog/tips-for-booking-a-pet-friendly-vacation-rental/
     publisher: GoPetFriendly
+    accessedOn: 2026-11-18
+  - title: iCrate Dog Crate
+    url: https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/
+    publisher: MidWest Homes for Pets
+    accessedOn: 2026-11-18
+  - title: Loft Wander Dog Bed
+    url: https://www.kurgo.com/p/loft-wander-dog-bed/K01560
+    publisher: Kurgo
+    accessedOn: 2026-11-16
+  - title: Happy Ride Folding Dog Ramp
+    url: https://www.petsafe.com/p/happy-ride-folding-dog-ramp/62462/
+    publisher: PetSafe
     accessedOn: 2026-11-18
 research:
   primaryKeyword: vacation rentals no dog weight limit
@@ -237,6 +253,22 @@ Why it works: it gives a number, a date, and one clear question, and it leaves t
 Hearthside's page also warns that a pet found in a cabin not designated as pet-friendly can bring "a fee of up to $500 for additional cleaning and/or misrepresentation," so do not assume an approved dog can stay anywhere in a manager's inventory. Service animals are a separate matter: Airbnb says hosts must accept them even if they do not allow pets (with limited health and safety exceptions), and Hostaway's host guide says they cannot be subject to size restrictions. [[11]](https://www.airbnb.com/help/article/86) [[14]](https://www.hostaway.com/vacation-rental-guide/pet-friendly-hosting/policies/)
 
 If you are told no, the answer to a booked-anyway plan is usually the same as for any pet rule; our [guide to bringing a dog to a no-pets rental](/guides/bringing-a-dog-to-a-no-pets-rental) covers what can follow.
+
+## Gear for a big dog once you are approved
+
+Approval is the hard part. The conditions that come with it are the next problem, and for a dog of 70 pounds or more the usual gear has to be sized up. Three items follow from what the managers above actually ask.
+
+**A crate that fits.** Cabin Rentals of Georgia's rule is "crate trained," and the policy list above shows crate and unattended-dog conditions riding alongside weight. [[2]](https://cabin-rentals-of-georgia.com/policies) If you will crate your dog when you go out, a 72-pound dog needs one of the larger sizes. The MidWest iCrate comes in sizes 18 to 48 in, with an included divider panel and a removable leak-proof pan. The maker lists a slide-bolt latch and says it folds flat. [[16]](https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/) The page does not state weights, wire gauge or folded dimensions, so check those against your vehicle before you order, and use the maker's sizing chart for your dog's length.
+
+{{pick:midwest-icrate-dog-crate|Our pick|The maker lists sizes up to 48 in, an included divider panel, a removable pan and a flat fold.|https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/}}
+
+**Your own bed, so the host's furniture stays off limits.** Many managers write furniture rules, and a big dog takes up a sofa quickly. The Kurgo Loft Wander comes in Medium (27 x 36 in) and Large (36 x 48 in), with a water-resistant top, a waterproof nonslip bottom and a handle; the maker says it can be machine washed on a gentle cycle. [[17]](https://www.kurgo.com/p/loft-wander-dog-bed/K01560) The page lists no weight limit or dog weight guide, so pick the size by how your dog lies down.
+
+{{pick:kurgo-loft-wander-dog-bed|Our pick|The maker lists Medium and Large sizes, a waterproof nonslip bottom and a roll-up carry design.|https://www.kurgo.com/p/loft-wander-dog-bed/K01560}}
+
+**A way into the car that does not involve lifting.** A 72-pound dog is awkward to lift into an SUV after a long hike. The PetSafe Happy Ride Folding Ramp is 62 in long and weighs 10 lb, and the maker says it is rated to support pets up to 150 lb. The maker says "independently tested" but names no tester, so treat the rating as the maker's. [[18]](https://www.petsafe.com/p/happy-ride-folding-dog-ramp/62462/) It folds in half and locks with a latch, and the folded size is not stated. The page gives no vehicle height guidance, so measure your cargo floor against 62 in of ramp.
+
+{{pick:petsafe-happy-ride-folding-ramp|Our pick|The maker lists a 62 in ramp rated to 150 lb, with side rails, rubber feet and a safety latch.|https://www.petsafe.com/p/happy-ride-folding-dog-ramp/62462/}}
 
 ## How sure we are
 

@@ -11,7 +11,7 @@ approvedOn: 2026-11-18
 author: Paws & Passage Editors
 publishedOn: 2026-11-18
 lastReviewed: 2026-11-19
-readingMinutes: 9
+readingMinutes: 10
 heroImage: guide-true-cost
 faqs:
   - q: How much does it cost to take a dog to a vacation rental?
@@ -36,6 +36,8 @@ embeddedTool: pet-cost-workflow
 relatedProducts:
   - soggy-doggy-super-shammy-towel
   - iris-usa-airtight-dog-food-container-10-lb
+  - soggy-doggy-microfiber-doormat
+  - kurgo-loft-wander-dog-bed
 relatedTools:
   - pet-cost-check
   - checklist
@@ -93,6 +95,22 @@ sources:
     url: https://blog.twiddy.com/bring-your-pets-on-vacation/
     publisher: Twiddy & Company
     accessedOn: 2026-11-18
+  - title: Super Shammy Towel
+    url: https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey
+    publisher: Soggy Doggy
+    accessedOn: 2026-11-16
+  - title: Microfiber Doormat (no bone)
+    url: https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate
+    publisher: Soggy Doggy
+    accessedOn: 2026-11-16
+  - title: Loft Wander Dog Bed
+    url: https://www.kurgo.com/p/loft-wander-dog-bed/K01560
+    publisher: Kurgo
+    accessedOn: 2026-11-16
+  - title: Airtight Dog Food Storage Container Up to 10 lbs
+    url: https://www.irisusainc.com/collections/airtight-pet-food-containers/products/airtight-dog-food-storage-container-up-to-10-lbs-3
+    publisher: IRIS USA
+    accessedOn: 2026-11-16
 research:
   primaryKeyword: how much does it cost to take a dog on vacation
   relatedKeywords:
@@ -246,13 +264,25 @@ Two bills are not part of the plan, and both are avoidable.
 
 ## Small gear to pack
 
-Gear is not part of the rental bill, so it stays out of the totals above. Two items are worth a look: a machine-washable drying towel for wet or muddy paws at the door, and a sealed bin for kibble so loose food stays off the host's floors and shelves. That is our own suggestion; neither changes what a host or platform may charge, and neither replaces photos at arrival and checkout. Check current prices on the listings and add whatever you buy to your own gear line.
+Gear is not part of the rental bill, so it stays out of the totals above. It does touch the contingent pile, though: extra cleaning and damage claims are the bills a pet fee does not cover, so a few items that keep mud, hair and wet floors off the host's property are cheap protection. None of it changes what a host or platform may charge, and none replaces photos at arrival and checkout. Check current prices on the listings; we hold no price data.
+
+**A towel for the door.** Wet or muddy paws are the ordinary source of extra cleaning. The Soggy Doggy Super Shammy is a 31 x 14 in microfiber chenille towel with hand pockets, one size, and the maker says to machine wash it alone with no bleach or fabric softener. [[14]](https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey) The page gives no absorbency figure, so we cannot say how many dogs one towel handles.
 
 {{pick:soggy-doggy-super-shammy-towel|Our pick|Maker lists a 31 x 14 in microfiber towel with hand pockets that is machine washable.|https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey}}
 
+**A mat for the entry.** If the home has a tile or wood entry, a mat catches what the towel misses. The Soggy Doggy Microfiber Doormat comes in Large (26 x 36 in) and Extra Large (36 x 60 in) with a non-slip backing, and the maker says it is machine washable and dryer safe. [[15]](https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate) The "super absorbent and dirt trapping" wording is the maker's, and the page gives no warranty.
+
+{{pick:soggy-doggy-microfiber-doormat|Our pick|The maker lists Large and Extra Large sizes, a non-slip backing, and says it is machine washable and dryer safe.|https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate}}
+
+**A bed so hair stays off the sofa.** Furniture rules are where a dog gets billed for hair and stains. The Kurgo Loft Wander is a roll-up bed in Medium (27 x 36 in) and Large (36 x 48 in) with a water-resistant top and a waterproof, nonslip bottom, and the maker says it can be machine washed. [[16]](https://www.kurgo.com/p/loft-wander-dog-bed/K01560) It gives the dog a clearly marked place and keeps the bedding you wash at home.
+
+{{pick:kurgo-loft-wander-dog-bed|Our pick|The maker lists a water-resistant top, a waterproof nonslip bottom and machine-wash care in two sizes.|https://www.kurgo.com/p/loft-wander-dog-bed/K01560}}
+
+**A sealed bin for kibble.** Loose food on a rental's shelves and floors is another small cleaning bill. The IRIS airtight container holds about 10 lb of dry food in 12.75 qt, measures 11.63 x 9 x 12.5 in, and has airtight seals and buckles, per the maker. [[17]](https://www.irisusainc.com/collections/airtight-pet-food-containers/products/airtight-dog-food-storage-container-up-to-10-lbs-3) The airtight claim is the maker's, and the page states no bear-resistance.
+
 {{pick:iris-usa-airtight-dog-food-container-10-lb|Our pick|Maker lists 12.75 qt, about 10 lb of dry food, with airtight seals and buckles.|https://www.irisusainc.com/collections/airtight-pet-food-containers/products/airtight-dog-food-storage-container-up-to-10-lbs-3}}
 
-Both are researched from the maker's page, not tested by us.
+All are researched from the maker's page, not tested by us.
 
 ## How to compare two quotes
 

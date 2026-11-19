@@ -81,6 +81,10 @@ import guideTravelBowls from "@/assets/guide-travel-bowls.jpg";
 import guideTravelBowlsCard from "@/assets/guide-travel-bowls-card.jpg";
 import guideTwoLargeDogsCar from "@/assets/guide-two-large-dogs-car.jpg";
 import guideTwoLargeDogsCarCard from "@/assets/guide-two-large-dogs-car-card.jpg";
+import guideColdWeatherGear from "@/assets/guide-cold-weather-gear.jpg";
+import guideColdWeatherGearCard from "@/assets/guide-cold-weather-gear-card.jpg";
+import guideDogHikingGear from "@/assets/guide-dog-hiking-gear.jpg";
+import guideDogHikingGearCard from "@/assets/guide-dog-hiking-gear-card.jpg";
 
 // Editorial stock photographs (Unsplash License), shown for illustration only and never as pictures of a specific rental.
 // Photographer credits live in src/content/image-credits.ts.
@@ -285,6 +289,16 @@ const stockImages = {
     src: guideTwoLargeDogsCar,
     card: guideTwoLargeDogsCarCard,
     alt: "Two large long-haired rough collies, one sitting upright with its mouth open and one lying down, in the open rear cargo area of a parked gray SUV with the tailgate raised, on a black cargo liner",
+  },
+  "guide-cold-weather-gear": {
+    src: guideColdWeatherGear,
+    card: guideColdWeatherGearCard,
+    alt: "A reddish-brown dog in a pink quilted jacket with black stripes running through bright snow with a ball in its mouth and snow on its muzzle",
+  },
+  "guide-dog-hiking-gear": {
+    src: guideDogHikingGear,
+    card: guideDogHikingGearCard,
+    alt: "A white, black and tan border collie type dog in an orange harness and collar sitting upright on a rocky mountain path, with a barren slope behind it",
   },
 } as const satisfies Record<string, StockImage>;
 

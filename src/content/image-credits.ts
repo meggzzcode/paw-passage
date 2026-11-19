@@ -217,4 +217,15 @@ export const imageCredits: ImageCredit[] = [
     unsplashUrl:
       "https://unsplash.com/photos/two-collies-sitting-in-the-back-of-an-open-car-eoCegrRdU1E",
   },
+  {
+    key: "guide-cold-weather-gear",
+    photographer: "Enrique Leyva",
+    unsplashUrl:
+      "https://unsplash.com/photos/brown-dog-in-pink-jacket-runs-through-snow-ZuYaMEs8q3w",
+  },
+  {
+    key: "guide-dog-hiking-gear",
+    photographer: "Praneeth Peiris",
+    unsplashUrl: "https://unsplash.com/photos/a-dog-sits-on-a-rocky-mountain-path--H5NazLT6I8",
+  },
 ];

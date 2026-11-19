@@ -8,8 +8,8 @@ states: []
 status: published
 author: Paws & Passage Editors
 publishedOn: 2026-11-18
-lastReviewed: 2026-11-18
-readingMinutes: 8
+lastReviewed: 2026-11-19
+readingMinutes: 9
 heroImage: guide-nye
 faqs:
   - q: Is a "firework-free" rental really free of fireworks?
@@ -32,6 +32,11 @@ relatedGuides:
   - can-you-leave-a-dog-alone-in-a-vacation-rental
   - dog-friendly-cabin-packing-list
   - christmas-week-in-a-cabin-with-a-dog
+relatedProducts:
+  - kong-classic
+  - kurgo-loft-wander-dog-bed
+  - petcube-gps-tracker
+  - ruffwear-the-beacon-dog-safety-light
 relatedTools:
   - checklist
   - pet-cost-check
@@ -103,6 +108,22 @@ sources:
   - title: Lost pets fill animal shelters after July 4th festivities
     url: https://prnewswire.com/news-releases/lost-pets-fill-animal-shelters-after-july-4th-festivities-petco-love-urging-pet-parents-to-search-for-them-on-petco-love-lost-301870824.html
     publisher: Petco Love via PR Newswire
+    accessedOn: 2026-11-18
+  - title: KONG Classic
+    url: https://www.kongcompany.com/kong-classic/
+    publisher: KONG Company
+    accessedOn: 2026-11-18
+  - title: Loft Wander Dog Bed
+    url: https://www.kurgo.com/p/loft-wander-dog-bed/K01560
+    publisher: Kurgo
+    accessedOn: 2026-11-16
+  - title: Petcube GPS Tracker for Dogs
+    url: https://petcube.com/tracker/
+    publisher: Petcube
+    accessedOn: 2026-11-18
+  - title: The Beacon Dog Safety Light
+    url: https://ruffwear.com/products/the-beacon-safety-dog-light
+    publisher: Ruffwear
     accessedOn: 2026-11-18
 research:
   primaryKeyword: dog fireworks new year's eve cabin
@@ -233,6 +254,26 @@ Food or play during noise has the strongest support. Riemer's 2023 review calls 
 | Pressure vests | "a small beneficial effect is possible" [[2]](https://pmc.ncbi.nlm.nih.gov/articles/PMC10705068/) |
 
 Owners of dogs given a placebo often report improvement, and one study found no evidence of calming properties for cannabidiol. [[2]](https://pmc.ncbi.nlm.nih.gov/articles/PMC10705068/) Cornell advises trying any prescribed medication on a quiet day first, so talk to your vet well ahead, and never to punish a scared dog. [[4]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/fear-fireworks-and-thunderstorms)
+
+## Gear that fits this plan
+
+Pack a few things for the night itself. Each one answers a problem raised above.
+
+**Something to do while the bangs start.** Food or play during noise is the best-supported method in the table, so have a chew ready before dark. The KONG Classic is a stuffable natural rubber toy; the maker sizes it by dog weight (for example L for 30 to 65 lb, XL for 60 to 90 lb), says to use it under supervision and says no toy is indestructible. [[18]](https://www.kongcompany.com/kong-classic/) Stuff it ahead of time and keep it for the moment the first bangs start. It is a way to deliver food during noise, not a treatment, and the maker makes no calming claim.
+
+{{pick:kong-classic|Our pick|The maker publishes a size chart by dog weight and says to supervise use and discard a damaged toy.|https://www.kongcompany.com/kong-classic/}}
+
+**A familiar spot in the quiet room.** Cornell's advice is a familiar room far from the noise, so bring a bed that smells like home. The Kurgo Loft Wander rolls up for travel (Medium 27 x 36 in, Large 36 x 48 in), has a water-resistant top and a nonslip, waterproof bottom, and the maker says it can be machine washed on a gentle cycle. [[19]](https://www.kurgo.com/p/loft-wander-dog-bed/K01560) Its job is to make the quiet room recognizably yours. It is not a pressure vest, and the page makes no anxiety claim.
+
+{{pick:kurgo-loft-wander-dog-bed|Our pick|The maker lists two sizes, a waterproof nonslip bottom, a carry handle and machine-wash care.|https://www.kurgo.com/p/loft-wander-dog-bed/K01560}}
+
+**A second layer for a dog that bolts.** A tag and a chip only help once someone has your dog. A GPS tracker tells you which way to walk. The Petcube GPS Tracker weighs 29 g, and the maker says a paid plan is required for it to operate and lists battery of up to 30 days in power save mode. [[20]](https://petcube.com/tracker/) Those battery and coverage figures are the maker's, the page states no dog size range, and you should check the plan cost and cellular coverage near the cabin before you buy. Patch recommends a tracker if possible alongside a current cell number and a microchip. [[15]](https://patch.com/massachusetts/across-ma/july-4-fireworks-cause-spike-lost-dog-reports-what-ma-pet-owners-should-know)
+
+{{pick:petcube-gps-tracker|Our pick|A 29 g cellular tracker; the maker says a paid plan is required and rates battery up to 30 days in power save mode.|https://petcube.com/tracker/}}
+
+**Seeing the dog after dark.** Midnight potty breaks in December happen in the dark, and the Homer, Alaska story shows how cold adds to the danger. The Ruffwear Beacon is a clip-on light with Slow Flash, Fast Flash and Always On modes and a stated run time of up to 20 hours, waterproof to 1 m for 30 minutes (maker figures). [[21]](https://ruffwear.com/products/the-beacon-safety-dog-light) It clips to Ruffwear collars and apparel light loops, so check what your dog's collar or harness has before you order. It helps you see a dog on a leash or a dog that slips out. It does not replace the leash.
+
+{{pick:ruffwear-the-beacon-dog-safety-light|Our pick|The maker lists three modes, up to 20 hours of run time and a Quick Clip for Ruffwear collars and light loops.|https://ruffwear.com/products/the-beacon-safety-dog-light}}
 
 ## The evening
 

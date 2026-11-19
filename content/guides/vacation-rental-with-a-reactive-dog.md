@@ -10,8 +10,8 @@ approvedBy: Paws & Passage Editors
 approvedOn: 2026-11-18
 author: Paws & Passage Editors
 publishedOn: 2026-11-18
-lastReviewed: 2026-11-18
-readingMinutes: 9
+lastReviewed: 2026-11-19
+readingMinutes: 10
 heroImage: guide-reactive-dog
 faqs:
   - q: Do I have to tell the host my dog is reactive?
@@ -36,6 +36,11 @@ relatedTools:
   - will-my-dog-be-accepted
   - checklist
   - packing-list
+relatedProducts:
+  - midwest-icrate-dog-crate
+  - north-states-mypet-universal-petgate
+  - ruffwear-web-master-harness
+  - kong-classic
 sources:
   - title: Understanding Reactivity in Dogs
     url: https://humanecolorado.org/resources/understanding-reactivity-in-dogs/
@@ -92,6 +97,22 @@ sources:
   - title: How to Choose a Trainer
     url: https://avsab.org/wp-content/uploads/2026/08/How-to-Choose-a-Trainer-final-final.pdf
     publisher: American Veterinary Society of Animal Behavior (AVSAB)
+    accessedOn: 2026-11-18
+  - title: iCrate Dog Crate
+    url: https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/
+    publisher: MidWest Homes for Pets
+    accessedOn: 2026-11-18
+  - title: North States MyPet Universal Petgate
+    url: https://northstatesind.com/north-states-mypet-universal-petgate/
+    publisher: North States
+    accessedOn: 2026-11-18
+  - title: Web Master Dog Harness with Handle
+    url: https://ruffwear.com/products/web-master-dog-harness
+    publisher: Ruffwear
+    accessedOn: 2026-11-18
+  - title: KONG Classic
+    url: https://www.kongcompany.com/kong-classic/
+    publisher: KONG Company
     accessedOn: 2026-11-18
 research:
   primaryKeyword: vacation rental with a reactive dog
@@ -235,13 +256,34 @@ You will not change your dog's reactions in a day, but you can avoid practicing 
 4. **Keep the first walks short** (our suggestion) and at off-peak hours, as the ASPCA describes, on the route you checked. [[2]](https://www.aspcapro.org/sites/default/files/aspca-reactive-dogs-on-leash.pdf)
 5. **Do not force greetings.** Fear Free says forcing social interactions with a leash-reactive dog will create more anxiety. [[9]](https://www.fearfreehappyhomes.com/?p=12015)
 6. **Watch for stress.** Fear Free lists a crouched position, tucked tail, raised hackles, pinned ears or a wide-eyed look, and says anxious or overheated dogs may pant. [[10]](https://fearfreehappyhomes.com/hitting-the-road-summer-travel-tips/)
-Our [packing list](/tools/packing-list) covers crate, gate and bed.
+
+## Gear that makes the first day easier
+
+A few items do real work in a reactive-dog stay. None changes the behavior, and each is only worth packing if it matches a trigger on your list.
+
+**A crate for the quiet room.** Our host message above already says you manage with a crate, and the first-day plan starts with a quiet room. A folding crate gives the dog a place to settle in that room without relying on the host's furniture. The MidWest iCrate is a wire crate in sizes from 18 to 48 in, with a divider panel and a removable leak-proof plastic pan. The maker lists a slide-bolt latch with a Paw Block, and says it folds flat. [[15]](https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/) A wire crate is open on the sides, so it does not block the view; for a dog that reacts to what it sees, drape a cover or place it facing a wall if the dog is already crate-trained. The page gives no wire gauge or folded dimensions, so check both before it goes in a small trunk. Use a crate only if the dog is used to one.
+
+{{pick:midwest-icrate-dog-crate|Our pick|The maker lists seven sizes from 18 to 48 in, an included divider panel, a removable pan and a flat fold.|https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/}}
+
+**A gate to control the doorway.** The Fear Free advice above is easier to follow when you control the doorway. A pressure-mounted gate in a hallway keeps the dog back from the front door while you open it for a delivery. The North States MyPet Universal Petgate is 26 in high, adjusts to openings of 26 to 42 in wide and mounts by pressure or with hardware; the maker says to use the wall cups and never to use it at the top of a stairway when held only by tension. [[16]](https://northstatesind.com/north-states-mypet-universal-petgate/) It is a barrier, not a wall: at 26 in it will not stop a dog that can jump it, and it does not block the view. Ask the host before using hardware mounting in a rental.
+
+{{pick:north-states-mypet-universal-petgate|Our pick|The maker lists a 26 in high gate for 26 to 42 in openings that mounts by pressure or with hardware.|https://northstatesind.com/north-states-mypet-universal-petgate/}}
+
+**A harness with a handle for tight spots.** In a narrow hall, a stairwell or a shared path, being able to hold the dog close matters. The Ruffwear Web Master has a reinforced handle that the maker describes as giving balanced lift and assist support on technical terrain, three leash attachment points and a neck buckle for dogs that dislike going over the head. It is sized by girth from XXS (13 to 17 in) to L/XL (32 to 42 in). [[17]](https://ruffwear.com/products/web-master-dog-harness) The handle wording is the maker's, and the page says nothing about reactive dogs or pulling, so treat it as a way to keep the dog close in a doorway, not a training tool. Measure the chest first.
+
+{{pick:ruffwear-web-master-harness|Our pick|The maker lists a reinforced handle, three leash attachment points and a neck buckle, sized by girth from XXS to L/XL.|https://ruffwear.com/products/web-master-dog-harness}}
+
+**Something to do behind the cover.** Best Friends suggests a long-lasting treat when you move the dog to another room. The KONG Classic is a stuffable rubber toy sized by dog weight; the maker says to use it under supervision and says no toy is indestructible. [[18]](https://www.kongcompany.com/kong-classic/) Stuff it before a delivery or a neighbor's arrival, so the dog is busy before the trigger appears.
+
+{{pick:kong-classic|Our pick|The maker publishes a size chart by dog weight and says to supervise use and discard a damaged toy.|https://www.kongcompany.com/kong-classic/}}
+
+Our [packing list](/tools/packing-list) covers the rest.
 
 ## When to talk to a vet or a veterinary behaviorist
 
 We suggest talking to your vet if the behavior is new, has gotten worse, or involves fear or aggression. The MSD Veterinary Manual says the veterinarian will first need to rule out health problems, and lists the AVSAB Find a Consultant tool and the American College of Veterinary Behaviorists among sources of help; the page does not itself say when to call. [[5]](https://www.msdvetmanual.com/veterinary/dog-owners/behavior-of-dogs/diagnosing-behavior-problems-in-dogs) AVSAB says that when fear, anxiety or aggression are occurring, contact a veterinarian with advanced behavior knowledge, a veterinary behaviorist (DACVB), or a credentialed behavior consultant. [[14]](https://avsab.org/wp-content/uploads/2026/08/How-to-Choose-a-Trainer-final-final.pdf) Fear Free says that if there is a safety concern for you, your dog, other animals or other people, avoid walking your dog and contact a qualified behavior specialist. [[9]](https://www.fearfreehappyhomes.com/?p=12015)
 
-The same AVSAB sheet lists leash jerks, prong or shock collars and "alpha" language as red flags in a trainer. [[14]](https://avsab.org/wp-content/uploads/2026/08/How-to-Choose-a-Trainer-final-final.pdf) We do not recommend any medication or product here; that is a conversation for your vet.
+The same AVSAB sheet lists leash jerks, prong or shock collars and "alpha" language as red flags in a trainer. [[14]](https://avsab.org/wp-content/uploads/2026/08/How-to-Choose-a-Trainer-final-final.pdf) We do not recommend any medication here; that is a conversation for your vet.
 
 ## How sure we are
 

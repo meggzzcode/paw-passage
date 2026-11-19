@@ -9,7 +9,7 @@ status: published
 author: Paws & Passage Editors
 publishedOn: 2026-11-18
 lastReviewed: 2026-11-19
-readingMinutes: 11
+readingMinutes: 12
 heroImage: guide-christmas-week
 faqs:
   - q: Do cabin rentals charge extra for dogs at Christmas?
@@ -31,6 +31,7 @@ relatedProducts:
   - ruffwear-climate-changer-fleece
   - kurgo-loft-wander-dog-bed
   - kong-classic
+  - north-states-mypet-universal-petgate
 relatedTools:
   - packing-list
   - checklist
@@ -92,6 +93,22 @@ sources:
   - title: Pet Poison Helpline
     url: https://www.petpoisonhelpline.com/
     publisher: Pet Poison Helpline
+    accessedOn: 2026-11-18
+  - title: Climate Changer Dog Fleece
+    url: https://ruffwear.com/products/climate-changer-fleece-dog-jacket
+    publisher: Ruffwear
+    accessedOn: 2026-11-18
+  - title: Loft Wander Dog Bed
+    url: https://www.kurgo.com/p/loft-wander-dog-bed/K01560
+    publisher: Kurgo
+    accessedOn: 2026-11-16
+  - title: KONG Classic
+    url: https://www.kongcompany.com/kong-classic/
+    publisher: KONG Company
+    accessedOn: 2026-11-18
+  - title: North States MyPet Universal Petgate
+    url: https://northstatesind.com/north-states-mypet-universal-petgate/
+    publisher: North States
     accessedOn: 2026-11-18
 research:
   primaryKeyword: Christmas cabin with dog
@@ -209,6 +226,10 @@ The sources above are written for a home you control. In a rental you may not be
 6. **Handle gifts as food.** Keep wrapped food gifts out of reach until the morning, and clean up wrapping and ribbon the same day.
 7. **Plan for when you go out.** Our [leaving a dog alone guide](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental) covers rental rules. A dog that cannot be trusted around the tree can be kept in a different room or gated area while you are out.
 
+PetMD's gate suggestion is the one you can pack. The North States MyPet Universal Petgate is 26 in high, adjusts to openings 26 to 42 in wide, and mounts by pressure or, with hardware, to a solid surface. The maker says to use the wall cups and never to use it at the top of a stairway when held only by tension. [[18]](https://northstatesind.com/north-states-mypet-universal-petgate/) In a rental that means gating the doorway of the tree room, since a gate this size does not circle a tree. It will not stop a dog that jumps 26 inches, and the maker claims no containment strength beyond designed to contain pets. Ask the host before using the hardware mount.
+
+{{pick:north-states-mypet-universal-petgate|Our pick|The maker lists a 26 in gate for 26 to 42 in openings that mounts by pressure or with hardware.|https://northstatesind.com/north-states-mypet-universal-petgate/}}
+
 ## Fire and cold: only what the sources say
 
 For fire, NFPA's tree sheet says to keep the tree at least three feet from any heat source such as fireplaces, radiators, candles, heat vents or lights; not to block an exit; to add water daily; never to use lit candles to decorate the tree; and to turn off tree lights before leaving home or going to bed. [[9]](https://content.nfpa.org/-/media/project/storefront/catalog/files/safety-tip-sheets/christmastreesafetytips.pdf) Its winter-holiday sheet says to keep children and pets away from lit candles and to blow out candles when you leave the room or go to bed, and that more than one-third of home decoration fires are started by candles. [[10]](https://content.nfpa.org/-/media/project/storefront/catalog/files/safety-tip-sheets/winterholidaysafetytips.pdf) The ASPCA adds not to leave candles unattended. [[3]](https://www.aspca.org/pet-care/general-pet-care/holiday-safety-tips) Neither source covers dogs and fireplaces specifically, so ask the host how the fireplace works and whether it has a screen.
@@ -216,6 +237,8 @@ For fire, NFPA's tree sheet says to keep the tree at least three feet from any h
 For cold, the ASPCA says "if it's too cold for you, it's probably too cold for your pet," recommends washing and drying paws after walks, keeping de-icing chemicals out of reach, cleaning up antifreeze spills right away because it is deadly to dogs, and never leaving a dog alone in a car in cold weather. [[11]](https://www.aspca.org/pet-care/general-pet-care/cold-weather-safety-tips)
 
 None of the sources we read gives a temperature at which a dog needs a coat or boots, so size gear to the dog and the walk, not to a number. Gear does not make a cold walk safe; the ASPCA rule above still applies.
+
+For a dog that will be out on cold walks, the Ruffwear Climate Changer Fleece is a 260 g polyester fleece with sleeves and a full-length zipper, sized XXS to XL by chest girth (M is 27 to 32 in, L 32 to 36 in). The maker says it can be worn alone or layered under other Ruffwear coats and washed on a cold gentle cycle. [[15]](https://ruffwear.com/products/climate-changer-fleece-dog-jacket) The warmth wording is the maker's; the page states no temperature range. Measure the chest, not the weight.
 
 {{pick:ruffwear-climate-changer-fleece|Our pick|The maker describes a 260 g polyester fleece with sleeves and a full-length zipper, sized XXS to XL by chest girth and machine-washable on a cold gentle cycle; it states no temperature rating.|https://ruffwear.com/products/climate-changer-fleece-dog-jacket}}
 
@@ -274,9 +297,11 @@ Use the [packing list tool](/tools/packing-list) to build the full list, and the
 
 Settle the booking questions first, because a minimum stay or a no-tree rule changes what you pack. Then, in order: the chew toy and a familiar bed, because they cost little and help with the tree and the evenings; a washable fleece layer if your dog will be out on cold walks; boots only if the walks will be on snow, ice or salted paths. Check the current price on each listing, and build the rest in the [packing list tool](/tools/packing-list) and the [trip checklist](/tools/checklist).
 
-For a comfortable bed, look for one that rolls up and has a non-slip, wipeable bottom:
+The Kurgo Loft Wander is a roll-up bed in Medium (27 x 36 in) and Large (36 x 48 in) with a water-resistant ripstop top and a waterproof, nonslip bottom, and the maker says it can be machine washed on a gentle cycle. [[16]](https://www.kurgo.com/p/loft-wander-dog-bed/K01560) It gives the dog a clear place to be in a living room where the tree is off limits. The page lists no dog weight guide, so choose the size by how your dog lies down.
 
 {{pick:kurgo-loft-wander-dog-bed|Our pick|The maker describes a roll-up bed with a water-resistant ripstop top and a waterproof, nonslip bottom, in two sizes, with care by machine or hand wash.|https://www.kurgo.com/p/loft-wander-dog-bed/K01560}}
+
+The KONG Classic is a stuffable natural rubber toy in six size bands by dog weight, such as L for 30 to 65 lb and XL for 60 to 90 lb. The maker says to use it under supervision, to discard it if damaged, and that no toy is indestructible. [[17]](https://www.kongcompany.com/kong-classic/) It is something to do while the tree is off limits, not a substitute for exercise.
 
 {{pick:kong-classic|Our pick|The maker publishes a size chart by dog weight, says to use it under supervision, and says no toy is indestructible.|https://www.kongcompany.com/kong-classic/}}
 

@@ -89,43 +89,35 @@ A hybrid is often best: a ready-made kit gives you organized, often waterproof b
 Hold any ready-made kit up against this list. Product details below come from each maker's page, read on 2026-11-16, and we have not tested any kit. Check the current price on the listing.
 
 - [ ] **Contents match the AVMA checklist:** bandage materials, gauze, tape, scissors, tweezers, gloves, saline.
-- [ ] **Count line items, not the piece count.** One kit's page says 49 pieces but lists about 20 line items. [[11]](https://www.kurgo.com/harnesses/rsg-dog-first-aid-kit)
-- [ ] **A waterproof bag or a zippered case** you can find in the dark, with weight and size stated. Several pages state neither.
-- [ ] **A first aid guide or handbook** you can name; confirm what arrives, because one kit's feature text mentions a manual its contents list does not show. [[8]](https://www.adventuremedicalkits.com/products/adventure-dog-medical-kit-me-my-dog)
+- [ ] **Count line items, not the piece count.** A big number on the box can hide a short contents list, so read the list.
+- [ ] **A waterproof bag or a zippered case** you can find in the dark, with weight and size stated on the page.
+- [ ] **A first aid guide or handbook** you can name; confirm the page names the handbook in its contents list before you count on it.
 - [ ] **Which medications are included**, if any, since some kits list human-use items. Ask your vet before relying on any.
 - [ ] **What is missing,** usually a thermometer, a muzzle, a flashlight and your contact card.
 - [ ] **The maker's guarantee or return window,** stated on the page.
 
-## A full kit for the cabin
+## A kit for the cabin, the car and the trail
 
-For a week at a cabin, a larger two-bag kit keeps everything in one place where every adult can find it. One such maker lists wound-care dressings, bandages, a cold pack, a 10 cc irrigation tool, forceps for splinters and ticks, EMT shears, gloves, a nylon leash, an emergency blanket and a copy of Wilderness & Travel Medicine: A Comprehensive Guide, in two waterproof bags. [[8]](https://www.adventuremedicalkits.com/products/adventure-dog-medical-kit-me-my-dog) It also lists human-use medications, including aspirin, diphenhydramine and 3% hydrogen peroxide, plus single-use triple antibiotic ointment. Ask your vet whether any belong in your kit; do not use them on your own judgment.
+The same kit rarely suits all three layers, so match the size to where it will sit. For a week at a cabin, the full kit should hold everything on the AVMA list in one place where every adult can find it. A ready-made kit is a good base for that, topped up with the gaps named above: a thermometer, a flashlight, contacts and your dog's records. For the car, a smaller zippered or waterproof kit that holds bandage basics, tape, scissors, gloves and a cold pack is enough for a road trip with stops. Whatever you buy, hold its contents list up against the buying checklist, not against the piece count.
 
-{{pick:amk-me-and-my-dog|Our pick|The maker lists wound-care dressings, a 10 cc irrigation tool, tick forceps and EMT shears in two waterproof bags, with a 60-day satisfaction guarantee.|https://www.adventuremedicalkits.com/products/adventure-dog-medical-kit-me-my-dog}}
+For a trail layer, Adventure Medical Kits' Trail Dog kit is built for exactly that job. The maker lists a weight of 12 oz and a size of 7.5 x 5.3 x 1.5 inches, so it fits a day pack. Its contents include two sterile gauze dressings, two non-adherent pads, a 2 inch roller gauze, a 2 inch self-adhering elastic bandage and a triangular bandage, plus a 10 cc wound irrigation tool, splinter and tick forceps, 100 ml of saline and a Pet First Aid Handbook, all in a waterproof Dryflex bag. [[9]](https://www.adventuremedicalkits.com/products/adventure-dog-medical-kit-trail-dog) The maker also says the triangular bandage can serve as a muzzle during treatment, which matches the AVMA's note on gauze. That is a lot of the AVMA's wound-care side in 12 oz. The trade-off is fewer items than a cabin kit, so for a multi-dog trip or a week away, add to it or carry a second one. It also lists diphenhydramine, hydrogen peroxide and triple antibiotic ointment, so take that list to your vet before the trip and do not use any on your own judgment.
 
-## A smaller kit for day hikes
+{{pick:amk-trail-dog|For the trail layer|The maker lists a 12 oz weight, a 10 cc irrigation tool, tick forceps, saline, gauze and bandages and a Pet First Aid Handbook in a waterproof Dryflex bag.|https://www.adventuremedicalkits.com/products/adventure-dog-medical-kit-trail-dog}}
 
-A dog-focused kit at 12 oz suits a day pack: gauze, a self-adhering bandage, a triangular bandage, an irrigation tool, tick forceps, saline and a pet first aid handbook in a waterproof bag. [[9]](https://www.adventuremedicalkits.com/products/adventure-dog-medical-kit-trail-dog) Fewer items is the trade-off. It also lists diphenhydramine, hydrogen peroxide and triple antibiotic ointment, with the same caution.
+Mud, pond water and trail dirt are the other thing a trail or cabin day brings back. Adventure Dog Wipes are rinse-free wipes, eight to a pack and 8 x 8 inches each, which the maker describes as for wiping dirt and odour off a dog on the trail, at the park or at home, with aloe, rosemary and witch hazel in the listing. [[13]](https://adventuremedicalkits.com/products/adventure-dog-wipes-pkg-8) They are a cleanup item, not wound care, and nothing on the page says they treat a cut, so keep the saline and gauze for wounds. Where they earn a spot is the car and the cabin porch, where a wipe-down before the dog comes inside saves a towel and the host's floor.
 
-{{pick:amk-trail-dog|Our pick|The maker lists a weight of 12 oz and a pet first aid handbook, packed in a waterproof bag.|https://www.adventuremedicalkits.com/products/adventure-dog-medical-kit-trail-dog}}
+{{pick:adventure-medical-kits-dog-wipes|Wipe-down after the trail|The maker lists eight 8 x 8 inch rinse-free wipes with aloe, rosemary and witch hazel for wiping dirt and odour off a dog, with a 60-day satisfaction guarantee.|https://adventuremedicalkits.com/products/adventure-dog-wipes-pkg-8}}
 
-## A zippered kit for the car
+## Add-on: a muzzle
 
-For a road trip with stops and no hiking, a single zippered kit is enough: parachute cord, a first aid guide, tweezers, tape, a crepe bandage, gauze pads and rolls, a trauma pad, scissors, an instant cold pack, gloves, an emergency blanket and antiseptic wipes, in a case with mesh compartments. [[10]](https://kurgo.com/dog-first-aid-kit) The listing gives no quantities, weight or dimensions. A smaller MOLLE-compatible version from the same maker attaches to its own harnesses and utility belt, with contents very close to the larger kit, and suits a trail better than a cabin. [[11]](https://www.kurgo.com/harnesses/rsg-dog-first-aid-kit)
-
-{{pick:kurgo-dog-first-aid-kit|Our pick|The maker lists gauze, a trauma pad, scissors, tweezers, a cold pack and an emergency blanket in a zippered case, with a lifetime guarantee against manufacturing defects.|https://kurgo.com/dog-first-aid-kit}}
-
-## Add-on: a basket muzzle
-
-The AVMA tells owners to apply a muzzle if a pet threatens to bite, because pain and fear can make even the gentlest pet unpredictable. [[1]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf) Gauze or a triangular bandage can serve as an improvised muzzle; a purpose-made one fitted in advance is another option. Look for a basket style that lets the dog pant and drink, a stated sizing method and the maker's own use limits. One basket-style thermoplastic rubber muzzle's maker says it lets a dog pant, drink and take treats and can be heat-shaped for fit, is not recommended for extended periods unless necessary, needs supervision, and is sized by nose length and circumference. [[12]](https://companyofanimals.com/us/brand-product/baskerville-ultra-muzzle/) Do not muzzle a vomiting pet. Practice at home with treats long before you need it.
-
-{{pick:baskerville-ultra-muzzle|Our pick|The maker says the basket design lets a dog pant, drink and take treats and that it can be heat-shaped, and sizes it by nose length and circumference.|https://companyofanimals.com/us/brand-product/baskerville-ultra-muzzle/}}
+The AVMA tells owners to apply a muzzle if a pet threatens to bite, because pain and fear can make even the gentlest pet unpredictable. [[1]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf) Gauze or a triangular bandage can serve as an improvised muzzle; a purpose-made one fitted in advance is another option. Look for a basket style that lets the dog pant and drink, a stated sizing method and the maker's own use limits, and read those limits before you buy: a muzzle meant only for short, supervised use is not one to leave on. Do not muzzle a vomiting pet. Practice at home with treats long before you need it.
 
 ## Pick by situation
 
 | Your situation | What to prioritize | Kit type |
 | --- | --- | --- |
-| A week at a rural cabin, long drive | Full kit at the cabin, vet and poison numbers on the fridge | A larger kit, plus your own thermometer, records and contacts |
-| Day hikes from the cabin | Light kit on you or the dog's pack | A compact kit, or a MOLLE kit with a compatible harness |
+| A week at a rural cabin, long drive | Full kit at the cabin, vet and poison numbers on the fridge | A larger ready-made or built kit, plus your own thermometer, records and contacts |
+| Day hikes from the cabin | Light kit on you or the dog's pack | A compact kit such as the 12 oz Trail Dog |
 | Road trip with stops, no hiking | A single zippered kit for the car | A zippered kit |
 | A dog that may bite when hurt or frightened | A fitted muzzle introduced well before the trip | A basket muzzle, if its sizing and use notes suit your dog |
 | Dog on regular medication | Original-labeled medication, records copy, your vet's advice | Any kit, plus your vet's guidance |
@@ -211,18 +203,6 @@ Add these to your [trip checklist](/tools/checklist) and the [packing list](/too
   ],
   gear: [
     {
-      productId: "amk-me-and-my-dog",
-      bestFor: "Cabin stays and longer trips where one kit covers the whole group",
-      whyItMadeTheList:
-        "The maker lists a wide range of bandaging supplies, an irrigation tool, saline, tick forceps, shears, a leash and a Wilderness & Travel Medicine guide, in waterproof bags. The feature text also mentions a pet first aid manual, but the contents list does not. That covers many items on the AVMA checklist's wound-care side.",
-      watchOuts: [
-        "Lists human-use medications (aspirin, diphenhydramine, 3% hydrogen peroxide, triple antibiotic ointment). Ask your vet before relying on any of them, and do not use them on your own judgment.",
-        "No thermometer, muzzle or contact card is listed; add your own.",
-        "Written for people and dogs, so check which items are relevant to your dog.",
-        "Weight and dimensions are not stated on the page.",
-      ],
-    },
-    {
       productId: "amk-trail-dog",
       bestFor: "Day hikes and car-side use with one dog",
       whyItMadeTheList:
@@ -234,37 +214,14 @@ Add these to your [trip checklist](/tools/checklist) and the [packing list](/too
       ],
     },
     {
-      productId: "kurgo-dog-first-aid-kit",
-      bestFor: "A general kit for the car or a rental stay",
+      productId: "adventure-medical-kits-dog-wipes",
+      bestFor: "Wiping trail dirt off a dog before coming into a cabin or the car",
       whyItMadeTheList:
-        "The listing names bandage materials, gauze, a trauma pad, scissors, tweezers, gloves, a cold pack, an emergency blanket and a first aid guide in a zippered case with interior compartments. It does not list oral medications, which keeps the choice of medication with you and your vet.",
+        "The maker lists eight rinse-free 8 x 8 inch wipes with aloe, rosemary and witch hazel, for wiping dirt and odour off a dog, with a 60-day satisfaction guarantee.",
       watchOuts: [
-        "Item types are listed without quantities, and the maker's 50-piece count cannot be matched to the list.",
-        "Weight and dimensions are not stated.",
-        "No thermometer, muzzle, saline or irrigation syringe is listed; add these yourself.",
-      ],
-    },
-    {
-      productId: "kurgo-rsg-dog-first-aid-kit",
-      bestFor: "Trail use with a compatible harness or belt",
-      whyItMadeTheList:
-        "It is a MOLLE-compatible kit the maker designed to attach to its RSG harnesses and utility belt, with a contents list similar to the larger Kurgo kit.",
-      watchOuts: [
-        "Designed for the maker's harness and belt system; check that your gear is compatible.",
-        "Lists about 20 line items against a stated 49 pieces, and no weight or dimensions.",
-        "No saline, irrigation syringe or thermometer is listed.",
-      ],
-    },
-    {
-      productId: "baskerville-ultra-muzzle",
-      bestFor: "Dogs that may need a fitted muzzle for vet and groomer visits",
-      whyItMadeTheList:
-        "The AVMA checklist includes a muzzle, and this basket design is described by its maker as letting a dog pant, drink and take treats. A muzzle that is already fitted and practiced is easier to use under stress.",
-      watchOuts: [
-        "The maker says it is not for extended use unless necessary and that the dog should be supervised.",
-        "Do not muzzle a vomiting dog, per the AVMA.",
-        "Sizing is by nose length and circumference; the maker's sizing guide is the reference.",
-        "The maker's page says to use the nose-length measurement if nose length and circumference fall into different size categories.",
+        "A cleanup item, not wound care; the page does not say they treat a cut",
+        "Gentleness and durability wording are the maker's own",
+        "Only eight wipes per pack, so a large or muddy dog may need several",
       ],
     },
   ],
@@ -274,12 +231,7 @@ Add these to your [trip checklist](/tools/checklist) and the [packing list](/too
     "vacation-rental-secure-fenced-yard",
     "how-many-dogs-can-you-bring-to-a-vacation-rental",
   ],
-  relatedProducts: [
-    "amk-me-and-my-dog",
-    "amk-trail-dog",
-    "kurgo-dog-first-aid-kit",
-    "baskerville-ultra-muzzle",
-  ],
+  relatedProducts: ["amk-trail-dog", "adventure-medical-kits-dog-wipes"],
   relatedTools: ["checklist", "pet-cost-check"],
   sources: [
     {
@@ -325,33 +277,15 @@ Add these to your [trip checklist](/tools/checklist) and the [packing list](/too
       accessedOn: "2026-11-16",
     },
     {
-      title: "Adventure Dog Medical Kit - Me & My Dog",
-      url: "https://www.adventuremedicalkits.com/products/adventure-dog-medical-kit-me-my-dog",
-      publisher: "Adventure Medical Kits",
-      accessedOn: "2026-11-16",
-    },
-    {
       title: "Adventure Dog Medical Kit - Trail Dog",
       url: "https://www.adventuremedicalkits.com/products/adventure-dog-medical-kit-trail-dog",
       publisher: "Adventure Medical Kits",
       accessedOn: "2026-11-16",
     },
     {
-      title: "Dog First Aid Kit",
-      url: "https://kurgo.com/dog-first-aid-kit",
-      publisher: "Kurgo (PetSafe Brands)",
-      accessedOn: "2026-11-16",
-    },
-    {
-      title: "RSG Dog First Aid Kit",
-      url: "https://www.kurgo.com/harnesses/rsg-dog-first-aid-kit",
-      publisher: "Kurgo (PetSafe Brands)",
-      accessedOn: "2026-11-16",
-    },
-    {
-      title: "Baskerville Ultra Muzzle",
-      url: "https://companyofanimals.com/us/brand-product/baskerville-ultra-muzzle/",
-      publisher: "Company of Animals",
+      title: "Adventure Dog Wipes, Pkg./8",
+      url: "https://adventuremedicalkits.com/products/adventure-dog-wipes-pkg-8",
+      publisher: "Adventure Medical Kits",
       accessedOn: "2026-11-18",
     },
   ],
@@ -431,7 +365,7 @@ Add these to your [trip checklist](/tools/checklist) and the [packing list](/too
     ],
     differentiators: [
       "Kit contents anchored to the AVMA checklist, with the poison control numbers and fee note verified on the AVMA brochure and ASPCA page.",
-      "Ready-made kits compared only on contents each maker lists, with medication items flagged for a vet conversation.",
+      "The kit and wipes described only from contents each maker lists, with medication items flagged for a vet conversation.",
       "Layered kit approach for cabin, car and trail, and a pick-by-situation table.",
       "No doses, prices, ratings or testing claims.",
     ],

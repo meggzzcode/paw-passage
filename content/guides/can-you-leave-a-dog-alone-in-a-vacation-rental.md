@@ -8,8 +8,8 @@ states: []
 status: published
 author: Paws & Passage Editors
 publishedOn: 2026-11-18
-lastReviewed: 2026-11-18
-readingMinutes: 8
+lastReviewed: 2026-11-19
+readingMinutes: 9
 heroImage: guide-alone
 faqs:
   - q: Can you leave a dog alone in an Airbnb?
@@ -32,6 +32,10 @@ relatedGuides:
   - how-many-dogs-can-you-bring-to-a-vacation-rental
   - vacation-rental-with-a-reactive-dog
   - puppy-at-a-vacation-rental
+relatedProducts:
+  - midwest-icrate-dog-crate
+  - north-states-mypet-universal-petgate
+  - kong-classic
 relatedTools:
   - checklist
   - pet-cost-check
@@ -99,6 +103,18 @@ sources:
   - title: Pet-friendly cabins in Gatlinburg and Pigeon Forge
     url: https://www.bearcampcabins.com/blog/gatlinburg-cabins-pigeon-forge-pet-friendly-cabins
     publisher: Bear Camp Cabins
+    accessedOn: 2026-11-18
+  - title: iCrate Dog Crate
+    url: https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/
+    publisher: MidWest Homes for Pets
+    accessedOn: 2026-11-18
+  - title: North States MyPet Universal Petgate
+    url: https://northstatesind.com/north-states-mypet-universal-petgate/
+    publisher: North States
+    accessedOn: 2026-11-18
+  - title: KONG Classic
+    url: https://www.kongcompany.com/kong-classic/
+    publisher: KONG Company
     accessedOn: 2026-11-18
 research:
   primaryKeyword: can you leave a dog alone in a vacation rental
@@ -220,6 +236,14 @@ Follow the listing, and only crate a dog that already accepts it. The ASPCA says
 
 Airbnb's hosting guide does not mention crates. [[2]](https://www.airbnb.com/resources/hosting-homes/a/what-you-need-to-know-about-hosting-pets-463) Ask whether the host requires a crate, forbids one, or has space for yours. Our [two-dog guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental) covers extra gear for two dogs, and the [cabin packing list](/guides/dog-friendly-cabin-packing-list) covers beds and throws.
 
+**If the rule is "crated when alone."** Then the crate is part of the trip, and a dog that has never been shut in one is not ready to start at a rental. A folding wire crate is the usual answer because it travels flat. The maker's page for the MidWest iCrate lists sizes from 18 to 48 inches, single or double door, a divider panel, a removable leak-proof pan and rubber feet to protect floors, and says it folds flat. [[17]](https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/) It suits a dog that already rests in a crate at home. The page gives no wire gauge, weight or folded dimensions, so check those against your car space before you buy. Ask the host first whether a crate is allowed and where it can go.
+
+{{pick:midwest-icrate-dog-crate|Our pick|The maker lists sizes from 18 to 48 inches with a divider panel, a removable pan and rubber floor feet, and says it folds flat; it gives no weights or folded size.|https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/}}
+
+**If the crate stresses your dog.** The ASPCA's alternative is a baby gate in one room. A pressure-mounted gate lets you shut the dog into a hallway or kitchen without a crate, and it takes nothing from the host's walls. The maker lists the North States MyPet Universal Petgate at 26 inches high, adjusting to openings of 26 to 42 inches, with a no-tools pressure mount or an optional hardware mount. The page says a tension-held gate should never be used at the top of a stairway. [[18]](https://northstatesind.com/north-states-mypet-universal-petgate/) It is modest in height, so it will not hold a dog that jumps gates. Measure the doorway first, and ask the host before using the hardware mount.
+
+{{pick:north-states-mypet-universal-petgate|Our pick|The maker lists a 26-inch height and openings from 26 to 42 inches, with a pressure mount that needs no tools; it says never to use it at the top of stairs when held only by tension.|https://northstatesind.com/north-states-mypet-universal-petgate/}}
+
 ## Can I leave a pet camera on?
 
 Not without asking. Airbnb's policy says hosts may not have cameras or recording devices that monitor indoor spaces, and it defines these as any device that records or transmits video, images or audio. The page does not address guests' own devices. [[3]](https://www.airbnb.com/help/article/3061)
@@ -264,6 +288,10 @@ Everything here is from the ASPCA's separation-anxiety guidance, applied to a re
 2. Leave a stuffed food toy that takes 20 to 30 minutes to finish.
 3. Keep goodbyes quiet; the ASPCA suggests a pat, a goodbye, and leaving.
 4. Start with a short trial while you are nearby, then build up. Panting, trembling or yawning means shorten it.
+
+For step 2, a stuffable rubber toy is the common choice. The KONG Classic comes in six size bands by dog weight, from XS (up to 5 lb) to XXL (85 lb and up), and the maker says to size up if your dog is between sizes. The maker also says to use it under supervision, that power chewers should size up or try a different KONG, and that no toy is indestructible. [[19]](https://www.kongcompany.com/kong-classic/) So fill it and hand it over just before you leave, and take it away if it gets chewed apart. Let your dog try one at home before the trip, so the first stuffed toy is not also the first night in a strange house.
+
+{{pick:kong-classic|Our pick|The maker publishes a size chart by dog weight, says to use it under supervision, and says no toy is indestructible.|https://www.kongcompany.com/kong-classic/}}
 
 If you have time, repeat that at home before the trip. For two dogs or a dog that bolts, see our [portable pen guide](/guides/portable-dog-fence-and-playpen-guide-for-rentals).
 

@@ -222,10 +222,10 @@ links:
     notes: "Amazon ASIN B000F71DF4 (HIGH); variant: Not the Backseat Bridge."
   - id: kurgo-collaps-a-bowl
     network: Amazon Associates
-    url: https://www.amazon.com/dp/B002FYQ4DG?tag={amazonTrackingId}
-    approved: false
+    url: https://www.amazon.com/dp/B005QZ4YZQ?tag={amazonTrackingId}
+    approved: true
     kind: product
-    notes: "OFF 2026-11-18: unavailable on Amazon (no buy box). Set approved true when back in stock. Amazon ASIN B002FYQ4DG (MEDIUM); variant: Colour variants have separate ASINs: B003EIDR5U (Blue), B005QZ4YZQ (Barn Red), B01MSLJWMU (Orange)."
+    notes: "Replaced 2026-11-19 with Barn Red listing B005QZ4YZQ (original B002FYQ4DG had no buy box). Amazon ASIN B002FYQ4DG (MEDIUM); variant: Colour variants have separate ASINs: B003EIDR5U (Blue), B005QZ4YZQ (Barn Red), B01MSLJWMU (Orange)."
   - id: kurgo-dog-first-aid-kit
     network: Amazon Associates
     url: https://www.amazon.com/dp/B00IKRVU90?tag={amazonTrackingId}
@@ -448,3 +448,93 @@ links:
     approved: true
     kind: product
     notes: "Amazon ASIN B0H13D93JM; Verified 2026-11-18: 2.50 in, sold by Ruffwear. Other sizes have their own ASINs."
+  - id: lucky-duck-lucky-kennel
+    network: Amazon Associates
+    url: https://www.amazon.com/dp/B0BMQY39R5?tag={amazonTrackingId}
+    approved: true
+    kind: product
+    notes: "Added 2026-11-19 as replacement for gunner-g1-kennel. Amazon ASIN B0BMQY39R5 (MEDIUM; title seen in search results: Lucky Dog Kennel, Durable Crash Tested Portable Dog Crates, Intermediate; URL slug Lucky-Duck-Kennel-Intermediate); ASIN from search results, not yet verified on the Amazon page; stock NOT confirmed. Intermediate size only. Other sizes: Medium B0CTP2VR2T, Large B0DW9JGDJM. CPS lists Lucky Duck Lucky Kennel Medium, Intermediate and Large as certified."
+  - id: sleepypod-clickit-sport-plus
+    network: Amazon Associates
+    url: https://www.amazon.com/dp/B0FS4DL1QF?tag={amazonTrackingId}
+    approved: true
+    kind: product
+    notes: "Added 2026-11-19 as replacement for sleepypod-clickit-range. Amazon ASIN B0FS4DL1QF (MEDIUM; title seen in search results: Certified Dog Safety Car Harness Clickit Sport Plus); ASIN from search results, not yet verified on the Amazon page; stock NOT confirmed; size not stated. Size-specific listings seen: Medium Jet Black B08JQQF9YX, Large Jet Black B08JRR6V58, Small Charcoal B08JQSDXX4 (Large Charcoal B08JQT939P shown unavailable)."
+  - id: kurgo-loft-wander-dog-bed
+    network: Amazon Associates
+    url: https://www.amazon.com/dp/B01JFEAL1O?tag={amazonTrackingId}
+    approved: true
+    kind: product
+    notes: "Amazon ASIN B01JFEAL1O (MEDIUM); title 'Kurgo Loft Wander Dog Bed, Chili Red, Large'. Variant: Large (36 x 48 in, matches catalog). Medium B00T50S24W showed unavailable and an odd shipper; do not use. Colour variants may exist. Owner to confirm buy box."
+  - id: springland-22oz-original-travel-bottle
+    network: Amazon Associates
+    url: https://www.amazon.com/dp/B09CHBNGDT?tag={amazonTrackingId}
+    approved: true
+    kind: product
+    notes: "Amazon ASIN B09CHBNGDT (MEDIUM); title 'Springland 22oz Classic Portable Dog Water Bottle with Built-in Bowl, Lilac'. Rename catalog record to match Amazon ('22oz Classic'); Amazon sells the 22oz under the name Classic, not Original. Variant: colours B09CH926J4 (Indigo), B09CHB8CM8 (Gray); B09CH9W2XS is a Sky Blue listing titled only 'Classic' with no size. The 'Original Springer 22oz' listing B0HP966BFQ is unavailable. Owner to confirm Classic equals the maker's 'Original'."
+  - id: springland-20oz-flip-travel-bottle
+    network: Amazon Associates
+    url: https://www.amazon.com/dp/B0C15FWR7J?tag={amazonTrackingId}
+    approved: true
+    kind: product
+    notes: "Amazon ASIN B0C15FWR7J (HIGH); title 'Springland 20oz Flip Portable Dog Water Bottle with Collapsible Bowl, Black'. Variant: Green B0C15GPCKZ, Blue B0FNNJ32NW. Amazon lists material as Plastic with a foldable silicone bowl, consistent with catalog."
+  - id: tractive-dog-6
+    network: Amazon Associates
+    url: https://www.amazon.com/dp/B0D6Z4L6BW?tag={amazonTrackingId}
+    approved: true
+    kind: product
+    notes: "Amazon ASIN B0D6Z4L6BW (MEDIUM); title 'Tractive Smart Dog GPS Tracker' (does not say DOG 6). Identity inferred: listings give model TG6, dogs over 8 lb, 14-day battery, IP68, built-in SIM, matching the catalog DOG 6. Variant: other colour listing B0D6Z74WJY. Not for: B0D6Z7KPBP (shows Mint, 10 to 14 day battery, unclear), B0DZF21KRY and B0DZF4ZYW3 (6-month-subscription bundles), B0GKGK4PGV (DOG 6 Mini, a different product). Owner to confirm model on the product page."
+  - id: kurgo-rover-backseat-bridge
+    network: Amazon Associates
+    url: https://www.amazon.com/dp/B0888TJNRS?tag={amazonTrackingId}
+    approved: true
+    kind: product
+    notes: "Amazon ASIN B0888TJNRS (MEDIUM); title 'Kurgo Dog Backseat Bridge Car Extender ... Up to 100 lbs' (title omits Rover). Matches catalog specs (100 lb, 16 x 52 x 1 in, not for gaps over 13 in, cup holder and pocket). Do not use B004OSUG8A or B0CGX7T3XF: older Rover Backseat Bridge rated 75 lb. Alt listing B0888S5Q6Y."
+  - id: petsafe-happy-ride-collapsible-crate
+    network: Amazon Associates
+    url: https://www.amazon.com/dp/B09T1P2B7J?tag={amazonTrackingId}
+    approved: true
+    kind: product
+    notes: "Amazon ASIN B09T1P2B7J (HIGH); title 'PetSafe Happy Ride Collapsible Travel Dog Crate'. Matches catalog (60 lb, 27 x 19 x 28 in, two zip doors, headrest strap and seat belt slits). Single listing."
+  - id: petsafe-happy-ride-extra-long-ramp
+    network: Amazon Associates
+    url: https://www.amazon.com/dp/B0016HPTFW?tag={amazonTrackingId}
+    approved: true
+    kind: product
+    notes: "Amazon ASIN B0016HPTFW (HIGH); title 'PetSafe Happy Ride Extra Long Telescoping Dog Ramp'. Matches catalog (47 to 87 in, 18 lb, 300 lb capacity, model 62320). This listing exists and an earlier worker wrongly rejected it. Do not use B0B541WCCV (bundle with ramp adaptor), B000RUJEUU (Deluxe ramp) or B083M9J8K9 (metric/UK-style listing)."
+  - id: kurgo-rover-cargo-cape
+    network: Amazon Associates
+    url: https://www.amazon.com/dp/B01LY6DXU4?tag={amazonTrackingId}
+    approved: true
+    kind: product
+    notes: "Amazon ASIN B01LY6DXU4 (HIGH); title 'Kurgo Rover Cargo Cape ... Charcoal'. Matches catalog (52 x 62 in, centre zipper for 50/50 split, fold-out bumper flap)."
+  - id: ruffwear-swamp-cooler
+    network: Amazon Associates
+    url: https://www.amazon.com/dp/B0DN4JBXSD?tag={amazonTrackingId}
+    approved: true
+    kind: product
+    notes: "Amazon ASIN B0DN4JBXSD (MEDIUM); title 'Ruffwear Swamp Cooler Dog Vest ... Compatible with Most Harnesses, Biolumin Blue, Medium'. Variant: many size/colour ASINs (XXS B09MSLJPD7, XS B0DN47YCQ6, L B09MSLPM6T). Owner to pick size. Do not use the Swamp Cooler Zip vest (B09MSMR1CD and others): different product."
+  - id: gunner-dog-bowl
+    network: Amazon Associates
+    url: https://www.amazon.com/dp/B0CZ5F9L2H?tag={amazonTrackingId}
+    approved: true
+    kind: product
+    notes: "Amazon ASIN B0CZ5F9L2H (HIGH); title 'GUNNER Dog Bowl with Spill-Proof Travel Lid, Black, 7-Cup'. Variant: Green B0CZ5697BB, Gunmetal B0CZ5D2QBH, Tan B0CZ5CZVHF. Amazon listings disagree on nylon vs plastic and on dishwasher safety, same as the maker page."
+  - id: ruffwear-knot-a-leash
+    network: Amazon Associates
+    url: https://www.amazon.com/dp/B0991GNL5B?tag={amazonTrackingId}
+    approved: true
+    kind: product
+    notes: "Amazon ASIN B0991GNL5B (HIGH); title 'Ruffwear Knot-a-Leash, Reflective 5 ft Rope Lead, Obsidian Black, Large'. Variant: Small Obsidian Black B098ZVLRNH, plus many colour ASINs, some unavailable. Owner to pick size."
+  - id: ruffwear-grip-trex-boots
+    network: Amazon Associates
+    url: https://www.amazon.com/dp/B0HMT6Q334?tag={amazonTrackingId}
+    approved: true
+    kind: product
+    notes: "Amazon ASIN B0HMT6Q334 (MEDIUM); title 'Ruffwear Grip Trex Dog Boots' (generic listing, size not in title). Variant: per-size listings such as B01MY7S3H8 (Black 2.00 in), B01MZ9DL3J (1.50 in), B01MT8OV48 (2.50 in), B0HMV115YC. Sold as a set of two. Owner to confirm the generic ASIN has a buy box and pick a default size."
+  - id: ruffwear-web-master-harness
+    network: Amazon Associates
+    url: https://www.amazon.com/dp/B0DNV6MBKK?tag={amazonTrackingId}
+    approved: true
+    kind: product
+    notes: "Amazon ASIN B0DNV6MBKK (MEDIUM); title 'Ruffwear Web Master Dog Body Harness, Basalt Gray, Large/X-Large'. Variant: other sizes/colours B0DNV56GG9 (Blaze Orange M), B0DNV8F2FS (Blaze Orange S), B0DNV52S3Y (Red Canyon S), B0B355SGQP (XXS). Generic 'with Handle' listing B0HMT31ZT5 is unavailable. Older B01MS7225D is the earlier model (fewer attachment points). Owner to pick size."

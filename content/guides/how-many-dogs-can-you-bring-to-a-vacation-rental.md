@@ -8,7 +8,7 @@ states: []
 status: published
 author: Paws & Passage Editors
 publishedOn: 2026-11-18
-lastReviewed: 2026-11-18
+lastReviewed: 2026-11-19
 readingMinutes: 9
 heroImage: guide-how-many-dogs
 faqs:
@@ -30,6 +30,9 @@ relatedGuides:
   - pet-friendly-vacation-rental-checklist
   - bringing-a-dog-to-a-no-pets-rental
   - vacation-rentals-with-no-dog-weight-limit
+relatedProducts:
+  - north-states-mypet-universal-petgate
+  - midwest-icrate-dog-crate
 relatedTools:
   - pet-cost-check
   - checklist
@@ -98,6 +101,14 @@ sources:
     url: https://www.aspca.org/pet-care/dog-care/common-dog-behavior-issues/food-guarding
     publisher: ASPCA
     accessedOn: 2026-11-16
+  - title: North States MyPet Universal Petgate
+    url: https://northstatesind.com/north-states-mypet-universal-petgate/
+    publisher: North States
+    accessedOn: 2026-11-18
+  - title: iCrate Dog Crate
+    url: https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/
+    publisher: MidWest Homes for Pets
+    accessedOn: 2026-11-18
 research:
   primaryKeyword: how many dogs can you bring to an airbnb
   relatedKeywords:
@@ -228,6 +239,14 @@ Two layout and meal points are worth checking before you pay:
 
 - **Two usable zones.** Bedroom count says little. Look for two resting spots away from the entrance, two feeding areas that can be physically separated, and a bedroom door that latches. A studio may have no secure separation; a small one-bedroom with a door can work well.
 - **Meals.** The ASPCA says resource guarding can involve food, toys and chews, lists separate rooms, crates and barriers as management options, and points owners of dogs likely to bite to a certified behaviorist or veterinary behaviorist [[16]](https://www.aspca.org/pet-care/dog-care/common-dog-behavior-issues/food-guarding). A rental is a poor place to find out whether your dogs can share food.
+
+**If the rental does not give you two zones, bring them.** Two dogs in an open-plan cabin is the case where a studio's missing doors hurt. A pressure-mounted gate can split a kitchen or hallway so each dog eats on its own side, and it needs no hardware. The maker lists the North States MyPet Universal Petgate at 26 inches high, fitting openings of 26 to 42 inches, with an optional hardware mount for a solid surface. It is a plastic gate with rounded edges, and the maker says never to use it at the top of a stairway when held only by tension. [[17]](https://northstatesind.com/north-states-mypet-universal-petgate/) At 26 inches it will not stop a dog that jumps gates, and a wide open-plan opening may exceed 42 inches, so measure before you buy. Ask the host before using the hardware mount.
+
+{{pick:north-states-mypet-universal-petgate|Our pick|The maker lists a 26-inch height and openings from 26 to 42 inches, with a no-tools pressure mount; it says never to use it at the top of stairs when held only by tension.|https://northstatesind.com/north-states-mypet-universal-petgate/}}
+
+For meals or rest time, a crate is the other way to separate two dogs, if both already accept one. The MidWest iCrate is a folding wire crate that the maker lists in sizes from 18 to 48 inches, with a divider panel, a removable leak-proof pan, rubber feet to protect floors and a flat fold. [[18]](https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/) Two dogs means two crates in the car, so check the folded size against your luggage space, which the page does not state. Do not use a crate to separate dogs that have never been crated.
+
+{{pick:midwest-icrate-dog-crate|Our pick|The maker lists sizes from 18 to 48 inches with a divider panel, a removable pan and rubber floor feet, and says it folds flat; it gives no weights or folded size.|https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/}}
 
 Also check the cost of the second dog, covered next. For the rest of the trip, see the [pet-friendly rental checklist](/guides/pet-friendly-vacation-rental-checklist) and [Airbnb vs Vrbo with a dog](/guides/how-vacation-rental-pet-fees-work).
 

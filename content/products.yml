@@ -30,7 +30,7 @@ products:
     retailerUrl: ""
     retailerName: ""
     lastVerified: 2026-11-16
-    active: true
+    active: false
     imageSource: ""
     imageRights: none
     affiliateProgram: ""
@@ -63,7 +63,7 @@ products:
     retailerUrl: ""
     retailerName: ""
     lastVerified: 2026-11-18
-    active: true
+    active: false
     imageSource: ""
     imageRights: none
     affiliateProgram: ""
@@ -135,7 +135,7 @@ products:
     retailerUrl: ""
     retailerName: ""
     lastVerified: 2026-11-16
-    active: true
+    active: false
     imageSource: ""
     imageRights: none
     affiliateProgram: ""
@@ -207,7 +207,7 @@ products:
     retailerUrl: ""
     retailerName: ""
     lastVerified: 2026-11-16
-    active: true
+    active: false
     imageSource: ""
     imageRights: none
     affiliateProgram: ""
@@ -280,7 +280,7 @@ products:
     retailerUrl: ""
     retailerName: ""
     lastVerified: 2026-11-16
-    active: true
+    active: false
     imageSource: ""
     imageRights: none
     affiliateProgram: ""
@@ -313,7 +313,7 @@ products:
     retailerUrl: ""
     retailerName: ""
     lastVerified: 2026-11-16
-    active: true
+    active: false
     imageSource: ""
     imageRights: none
     affiliateProgram: ""
@@ -377,7 +377,7 @@ products:
     retailerUrl: ""
     retailerName: ""
     lastVerified: 2026-11-16
-    active: true
+    active: false
     imageSource: ""
     imageRights: none
     affiliateProgram: ""
@@ -409,7 +409,7 @@ products:
     retailerUrl: ""
     retailerName: ""
     lastVerified: 2026-11-16
-    active: true
+    active: false
     imageSource: ""
     imageRights: none
     affiliateProgram: ""
@@ -441,7 +441,7 @@ products:
     retailerUrl: ""
     retailerName: ""
     lastVerified: 2026-11-18
-    active: true
+    active: false
     imageSource: ""
     imageRights: none
     affiliateProgram: ""
@@ -640,7 +640,7 @@ products:
     retailerUrl: ""
     retailerName: ""
     lastVerified: 2026-11-16
-    active: true
+    active: false
     imageSource: ""
     imageRights: none
     affiliateProgram: ""
@@ -709,7 +709,7 @@ products:
     retailerUrl: ""
     retailerName: ""
     lastVerified: 2026-11-16
-    active: true
+    active: false
     imageSource: ""
     imageRights: none
     affiliateProgram: ""
@@ -812,7 +812,7 @@ products:
     retailerUrl: ""
     retailerName: ""
     lastVerified: 2026-11-16
-    active: true
+    active: false
     imageSource: ""
     imageRights: none
     affiliateProgram: ""
@@ -1319,7 +1319,7 @@ products:
     retailerUrl: ""
     retailerName: ""
     lastVerified: 2026-11-18
-    active: true
+    active: false
     imageSource: ""
     imageRights: none
     affiliateProgram: ""
@@ -1352,7 +1352,7 @@ products:
     retailerUrl: ""
     retailerName: ""
     lastVerified: 2026-11-18
-    active: true
+    active: false
     imageSource: ""
     imageRights: none
     affiliateProgram: ""
@@ -1485,7 +1485,7 @@ products:
     retailerUrl: ""
     retailerName: ""
     lastVerified: 2026-11-18
-    active: true
+    active: false
     imageSource: ""
     imageRights: none
     affiliateProgram: ""
@@ -1549,7 +1549,7 @@ products:
     retailerUrl: ""
     retailerName: ""
     lastVerified: 2026-11-18
-    active: true
+    active: false
     imageSource: ""
     imageRights: none
     affiliateProgram: ""
@@ -1581,7 +1581,7 @@ products:
     retailerUrl: ""
     retailerName: ""
     lastVerified: 2026-11-18
-    active: true
+    active: false
     imageSource: ""
     imageRights: none
     affiliateProgram: ""
@@ -1677,7 +1677,7 @@ products:
     retailerUrl: ""
     retailerName: ""
     lastVerified: 2026-11-18
-    active: true
+    active: false
     imageSource: ""
     imageRights: none
     affiliateProgram: ""
@@ -2315,7 +2315,7 @@ products:
     retailerUrl: ""
     retailerName: ""
     lastVerified: 2026-11-18
-    active: true
+    active: false
     imageSource: ""
     imageRights: none
     affiliateProgram: ""
@@ -2429,3 +2429,39 @@ products:
       - if-your-dog-gets-loose-on-a-trip
       - new-years-eve-with-a-dog-in-a-vacation-rental
     manufacturerClaimsVsIndependentTesting: Battery and coverage are maker claims. Tree Line Review compares it but names it an also-ran, not an award pick.
+  - id: sleepypod-clickit-sport-plus
+    name: Clickit Sport Plus Crash-Tested Harness
+    brand: Sleepypod
+    categories:
+      - road-trips
+      - travel-safety
+      - large-dogs
+      - car-safety
+    summary: A vest-style car harness that connects to a rear-seat seat belt and has double D-rings for walking, listed by the maker for dogs from 18 to 110 lbs.
+    keySpecs:
+      - Maker lists sizes S, M, L and XL and a dog weight range of 18 to 110 lbs; girth ranges are in a size chart image on the page
+      - Polyester, made without PFAS (maker)
+      - Includes an S-Clip and a Buckle Shield
+      - Maker warns Sleepypod harnesses should not be used with non-Sleepypod accessories
+      - The Center for Pet Safety lists the earlier "Sleepypod Clickit Sport" (not "Sport Plus") as passed (top rating), tested July 2014 under protocol CPS-001-014.01; test dogs were rated Small to 25 lbs, Medium 45 to 90 lbs, Large 75 to 90 lbs, X-Large to 90 lbs
+    specSource:
+      title: Clickit Sport Plus Crash-Tested Harness
+      url: https://sleepypod.com/products/clickit-sport-plus
+      publisher: Sleepypod
+      accessedOn: 2026-11-19
+    manufacturerUrl: https://sleepypod.com/products/clickit-sport-plus
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-19
+    active: true
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides:
+      - dog-car-safety-harness-and-crate-guide
+    manufacturerClaimsVsIndependentTesting: Maker states a top rating from the Center for Pet Safety and testing at 30 MPH. The maker page also says "Rated to 25 lbs" by CPS, which does not match its 18 to 110 lb range. The CPS listing read 2026-11-19 is for "Sleepypod Clickit Sport" (tested July 2014), not named "Sport Plus"; whether the two are the same design was not confirmed.
+

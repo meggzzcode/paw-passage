@@ -12,8 +12,8 @@ export const guide: Guide = {
   status: "published",
   author: "Paws & Passage Editors",
   publishedOn: "2026-11-16",
-  lastReviewed: "2026-11-16",
-  readingMinutes: 6,
+  lastReviewed: "2026-11-19",
+  readingMinutes: 7,
   heroImage: "guide-rental-checklist",
   body: `You found a cabin with a hot tub and a "pets welcome" badge, and then checkout adds a pet fee, a cleaning charge and a rule about leaving the dog alone that none of the photos mentioned. Every line below is a question that would have caught it before you paid. Work top to bottom, and stop at the first line you cannot answer. Pool and hot tub access is its own question; see [whether dogs can use a rental's pool or hot tub](/guides/can-dogs-go-in-a-rental-pool-or-hot-tub).
 
@@ -101,6 +101,26 @@ A clear approval names the dogs and the stay; "we're pet-friendly" is not one. M
 - [ ] Familiar bedding, leads, waste bags, food and any crate packed ([cabin packing guide](/guides/dog-friendly-cabin-packing-list)).
 - [ ] On arrival, inspect exits and gates with the dog secured, and photograph anything off.
 
+## Gear that matches the checklist
+
+Some lines above turn into a packing decision. Bring only what answers a line you actually flagged.
+
+**Crate line.** If the rules say crate when alone, "crate provided" does not mean your dog fits, so a crate you know the dog is used to removes the guess. The MidWest iCrate is a wire crate in sizes 18 to 48 in, with a divider panel, a removable leak-proof pan and a slide-bolt latch, and the maker says it folds flat. [[8]](https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/) The page gives no folded dimensions or weight, so check them against your trunk.
+
+{{pick:midwest-icrate-dog-crate|Our pick|The maker lists sizes 18 to 48 in, an included divider panel, a removable pan and a flat fold.|https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/}}
+
+**Sofas and beds line.** If furniture is off limits, your dog needs somewhere obvious to lie. The Kurgo Loft Wander is a roll-up bed in Medium (27 x 36 in) and Large (36 x 48 in) with a water-resistant top and a waterproof, nonslip bottom, and the maker says it can be machine washed. [[9]](https://www.kurgo.com/p/loft-wander-dog-bed/K01560)
+
+{{pick:kurgo-loft-wander-dog-bed|Our pick|The maker lists a water-resistant top, a waterproof nonslip bottom, a carry handle and machine-wash care.|https://www.kurgo.com/p/loft-wander-dog-bed/K01560}}
+
+**Fence line.** If the yard is not continuous, a portable pen is one answer, but only with the host's permission and with a dog that will stay in one. The MidWest Exercise Pen with Door has 8 connected panels and ground anchors, and the door closes with two slide-bolt latches plus a safety clip. The maker warns that a pet not trained to be restricted may try to escape, and says to remove collars, tags and leads before placing a pet inside. [[10]](https://www.midwesthomes4pets.com/wp-content/uploads/ExPen_550DR_Eng.pdf) Read our [pen and playpen guide](/guides/portable-dog-fence-and-playpen-guide-for-rentals) before you buy.
+
+{{pick:midwest-exercise-pen-with-door|Our pick|The maker lists 8 connected panels, ground anchors and a door with two slide-bolt latches plus a safety clip.|https://www.midwesthomes4pets.com/wp-content/uploads/ExPen_550DR_Eng.pdf}}
+
+**Unattended and sleeping-arrangement lines.** A pressure-mounted gate can keep the dog out of a bedroom or off a stair landing. The North States MyPet Universal Petgate is 26 in high, adjusts to openings 26 to 42 in wide, and the maker says never to use it at the top of a stairway when held only by tension. [[11]](https://northstatesind.com/north-states-mypet-universal-petgate/) At 26 in it will not stop a dog that can jump it.
+
+{{pick:north-states-mypet-universal-petgate|Our pick|The maker lists a 26 in gate for 26 to 42 in openings that mounts by pressure or with hardware.|https://northstatesind.com/north-states-mypet-universal-petgate/}}
+
 ## How sure we are
 
 - **Confirmed by a source we cite:** the platform, DOJ, AVMA and manager statements above, each from its cited page.
@@ -146,6 +166,12 @@ Booked somewhere that says no pets? Read [what happens if you bring a dog to a n
     "vacation-rentals-with-no-dog-weight-limit",
     "puppy-at-a-vacation-rental",
   ],
+  relatedProducts: [
+    "midwest-icrate-dog-crate",
+    "kurgo-loft-wander-dog-bed",
+    "midwest-exercise-pen-with-door",
+    "north-states-mypet-universal-petgate",
+  ],
   relatedTools: ["checklist", "pet-cost-check"],
   sources: [
     {
@@ -189,6 +215,30 @@ Booked somewhere that says no pets? Read [what happens if you bring a dog to a n
       url: "https://help.vrbo.com/articles/What-are-the-cancellation-policy-options",
       publisher: "Vrbo",
       accessedOn: "2026-11-16",
+    },
+    {
+      title: "iCrate Dog Crate",
+      url: "https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/",
+      publisher: "MidWest Homes for Pets",
+      accessedOn: "2026-11-18",
+    },
+    {
+      title: "Loft Wander Dog Bed",
+      url: "https://www.kurgo.com/p/loft-wander-dog-bed/K01560",
+      publisher: "Kurgo",
+      accessedOn: "2026-11-16",
+    },
+    {
+      title: "Assembly Instructions for Model Number 550-24DR, 552-30DR, 554-36DR, 556-42DR, 558-48DR",
+      url: "https://www.midwesthomes4pets.com/wp-content/uploads/ExPen_550DR_Eng.pdf",
+      publisher: "MidWest Homes for Pets",
+      accessedOn: "2026-11-16",
+    },
+    {
+      title: "North States MyPet Universal Petgate",
+      url: "https://northstatesind.com/north-states-mypet-universal-petgate/",
+      publisher: "North States",
+      accessedOn: "2026-11-18",
     },
   ],
   research: {

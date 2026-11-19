@@ -11,7 +11,7 @@ approvedOn: 2026-11-18
 author: Paws & Passage Editors
 publishedOn: 2026-11-18
 lastReviewed: 2026-11-19
-readingMinutes: 10
+readingMinutes: 11
 heroImage: guide-puppy
 faqs:
   - q: Do vacation rentals allow puppies?
@@ -34,8 +34,9 @@ relatedGuides:
   - bringing-a-dog-to-a-no-pets-rental
 relatedProducts:
   - pet-parents-pawtect-pads
-  - midwest-lifestages-dog-crate
+  - midwest-icrate-dog-crate
   - kong-classic
+  - petmate-precision-pet-soft-side-play-yard
 relatedTools:
   - will-my-dog-be-accepted
   - packing-list
@@ -81,6 +82,18 @@ sources:
   - title: Destructive Chewing
     url: https://www.aspca.org/pet-care/dog-care/common-dog-behavior-issues/destructive-chewing
     publisher: ASPCA
+    accessedOn: 2026-11-18
+  - title: iCrate Dog Crate
+    url: https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/
+    publisher: MidWest Homes for Pets
+    accessedOn: 2026-11-18
+  - title: KONG Classic
+    url: https://www.kongcompany.com/kong-classic/
+    publisher: KONG Company
+    accessedOn: 2026-11-18
+  - title: Precision Pet Soft Side Play Yard
+    url: https://www.petmate.com/products/precision-pet-soft-side-play-yard
+    publisher: Petmate
     accessedOn: 2026-11-18
 research:
   primaryKeyword: traveling with a puppy vacation rental
@@ -204,7 +217,9 @@ For the accidents themselves, look for reusable pads: machine washable, with a w
 
 {{pick:pet-parents-pawtect-pads|Best washable|Petful names it "Best washable" among puppy pads, and the maker describes machine-washable triple-layer pads with a waterproof layer and a floor-gripping backing.|https://www.petful.com/pet-products/best-puppy-pads/}}
 
-To lower the odds, use the ASPCA's approach: limit the puppy's run of the house to "one or two rooms where you are able to see her," take her out often, and if there is a mess, "just clean it up and soldier on," because "a dog will not learn anything by being scolded for a past accident." [[8]](https://www.aspca.org/news/house-training-your-dog-or-puppy) Pick the rooms on arrival. A bathroom or tiled kitchen is easier to wipe than a rug, and you can close a door or use a baby gate.
+To lower the odds, use the ASPCA's approach: limit the puppy's run of the house to "one or two rooms where you are able to see her," take her out often, and if there is a mess, "just clean it up and soldier on," because "a dog will not learn anything by being scolded for a past accident." [[8]](https://www.aspca.org/news/house-training-your-dog-or-puppy) Pick the rooms on arrival. A bathroom or tiled kitchen is easier to wipe than a rug, and you can close a door or use a baby gate. If the yard is not fenced and the host allows it, a soft play yard gives the puppy a toilet-and-play space outside. The Petmate Precision Pet Soft Side Play Yard is foldable with ground stakes, has water-resistant fabric, eight ventilated mesh panels, a removable top and washable floor panels, and the maker lists use in backyards without fences. [[13]](https://www.petmate.com/products/precision-pet-soft-side-play-yard) The page gives dimensions with no units and no folded size, and it makes no claim about containment strength or chewing, so a determined puppy may get through mesh. Treat it as a way to keep a supervised puppy in one spot, not a fence.
+
+{{pick:petmate-precision-pet-soft-side-play-yard|Our pick|The maker lists eight mesh panels, ground stakes, a removable top and washable floor panels, for indoor or outdoor use.|https://www.petmate.com/products/precision-pet-soft-side-play-yard}}
 
 ## Crates and alone time
 
@@ -214,9 +229,9 @@ That limit is the real constraint on your day. A restaurant dinner, a boat tour 
 
 If you bring a crate, check that it fits the car and the room. The ASPCA suggests buying a size that fits the adult dog and using a divider while the puppy is small, because a crate that is too large lets a dog use one end as a toilet. [[9]](https://www.aspca.org/pet-care/general-pet-care/introducing-your-dog-crate)
 
-So the criteria are a divider panel in the box, a size band that fits the adult dog, a removable pan and a flat fold for the car. The maker's page for the crate below lists a divider, six sizes and a flat fold, but gives no dimensions or warranty text, so confirm the size against your dog's adult length and the rental room.
+So the criteria are a divider panel in the box, a size band that fits the adult dog, a removable pan and a flat fold for the car. The MidWest iCrate meets those on the maker's page: it comes in sizes 18, 22, 24, 30, 36, 42 and 48 in, includes a divider panel and a removable leak-proof plastic pan, has a slide-bolt latch with a Paw Block, and folds flat. [[11]](https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/) The page gives no wire gauge, weights or folded dimensions, and some reviewers on it report latch and edge complaints, which are customer opinions, not specs. Confirm the size against your dog's adult length and the rental room, and test the latch before the trip.
 
-{{pick:midwest-lifestages-dog-crate|Our pick|The maker lists an included divider panel, six sizes, a removable pan and a flat fold, which matches the ASPCA's advice to size for the adult dog and use a divider.|https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/lifestages-dog-crate/}}
+{{pick:midwest-icrate-dog-crate|Our pick|The maker lists sizes 18 to 48 in, an included divider panel, a removable pan and a flat fold, which matches the ASPCA's advice to size for the adult dog and use a divider.|https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/}}
 
 ## Chewing
 
@@ -224,7 +239,7 @@ Chewing is a normal puppy activity: the ASPCA says "it's normal for puppies and 
 
 The ASPCA's tips fit a short stay: give "plenty of his own toys and inedible chew bones," supervise during waking hours and redirect to an approved chew, and when you cannot watch, use a confinement area with the things he should not chew removed. [[10]](https://www.aspca.org/pet-care/dog-care/common-dog-behavior-issues/destructive-chewing) Before you let the puppy loose, scan at knee height for cords, shoes, throw pillows and plants. Pack the chews and the blanket your dog knows; the [packing list tool](/tools/packing-list) has a place for them.
 
-A stuffable rubber toy is the usual way to give a puppy an approved thing to chew. Buy by the maker's weight band (size up if between sizes), pick the softer puppy version if one exists for your puppy's age, and supervise, since the maker says no dog toy is indestructible.
+A stuffable rubber toy is the usual way to give a puppy an approved thing to chew. The KONG Classic is made in six size bands by dog weight, from XS (up to 5 lb) to XXL (85+ lb); the maker says to size up if between sizes, and that the softer Puppy KONG is for puppies under 9 months and suggested for crate training. It also says to supervise, discard a damaged toy and that no toy is indestructible. [[12]](https://www.kongcompany.com/kong-classic/) Stuff it before you leave the puppy in the crate for a short rest, so the crate gets a good association.
 
 {{pick:kong-classic|Our pick|The maker publishes a size chart by dog weight and a softer Puppy KONG for under 9 months, and says to use it under supervision.|https://www.kongcompany.com/kong-classic/}}
 

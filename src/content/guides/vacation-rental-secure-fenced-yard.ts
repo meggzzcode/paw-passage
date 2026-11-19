@@ -12,8 +12,8 @@ export const guide: Guide = {
   status: "published",
   author: "Paws & Passage Editors",
   publishedOn: "2026-11-16",
-  lastReviewed: "2026-11-16",
-  readingMinutes: 9,
+  lastReviewed: "2026-11-19",
+  readingMinutes: 10,
   heroImage: "guide-fenced-yard",
   body: `The listing says "fenced yard," and the photo shows a nice lawn. Nothing in that photo tells you where the fence ends, what the gate gap is, or who else can walk through.
 
@@ -127,6 +127,24 @@ Use our [host-question builder](/tools/pet-cost-check). Ask for observable facts
 
 Compare facts side by side in your own notes, not a numerical "safety score." The [complete pre-booking checklist](/guides/pet-friendly-vacation-rental-checklist) covers the rules and costs that fencing cannot answer.
 
+## If the yard falls short, bring your own boundary
+
+Many of the outcomes above end in "leash-only" or "partly fenced," and that is where a portable pen earns its place. It does not make the yard secure. It gives your dog a small, enclosed spot for a supervised hour outside, and it only works if the host agrees to it on the lawn or deck.
+
+For a dog that will stay put, the MidWest Exercise Pen with Door is a freestanding folding pen. The maker's instructions describe eight connected panels, a door with two slide-bolt latches plus a safety clip, and eight ground anchors for outdoor use. [[9]](https://www.midwesthomes4pets.com/wp-content/uploads/ExPen_550DR_Eng.pdf) The anchors go into the ground, so ask the host first. The maker also warns that a pet not trained to be restricted may try to escape and be hurt, so introduce the pen at home before the trip. The instructions cover five size designations from 24 to 48, so pick the height against your dog's jumping, and the maker states no dog weight limit in the pages we read.
+
+{{pick:midwest-exercise-pen-with-door|Our pick|The maker lists eight panels, a two-latch door with a safety clip and ground anchors for outdoor use; it warns an untrained pet may try to escape and says not to leave young animals unsupervised for long.|https://www.midwesthomes4pets.com/product/dogs/pens-gates-barriers/exercise-pen-with-door/}}
+
+For a small or medium dog on a deck, patio or indoors, the Carlson Convertible Pet Yard is a metal alternative. The maker lists six 24-inch all-metal panels, a 28-inch height and a 16.3-inch walk-through door with a sliding safety lock, and says the panels hinge into several shapes. Bar gaps of 2 to 2.5 inches are wide for a puppy or toy breed, and 28 inches is low for a jumper. The page does not say whether it stands without being attached to a wall, and you should not attach anything to a rented wall without asking. The maker lists a limited 6-month warranty. [[10]](https://carlsonpetproducts.com/products/convertible-pet-yard)
+
+{{pick:carlson-convertible-pet-yard|Our pick|The maker lists six 24-inch metal panels, a 28-inch height and a walk-through door with a sliding safety lock; bar gaps are 2 to 2.5 inches, and the page does not say whether it stands unattached.|https://carlsonpetproducts.com/products/convertible-pet-yard}}
+
+If the plan is leashed toilet breaks only, the leash matters more than the pen. The Ruffwear Knot-a-Leash is a 5 ft rope leash. The maker lists reflective rope, a polyester webbing handle and an auto-locking aluminum carabiner, in Small (7 mm rope) and Large (11 mm rope). [[11]](https://ruffwear.com/products/knot-a-leash-dog-leash) The page gives no strength rating or guidance by dog weight, so a strong puller or an escape artist may need a different tool. Clip it before the door opens, not after.
+
+{{pick:ruffwear-knot-a-leash|Our pick|The maker lists a 5 ft reflective rope leash with an auto-locking carabiner in two rope thicknesses; it gives no strength rating or dog-weight guidance.|https://ruffwear.com/products/knot-a-leash-dog-leash}}
+
+Our [portable pen and playpen guide](/guides/portable-dog-fence-and-playpen-guide-for-rentals) compares more options, including the soft-sided kind.
+
 ## Walk the perimeter before unclipping the leash
 
 On arrival, keep the dog leashed or indoors with one adult while another walks every boundary, tests each gate and compares it with the evidence you were given. Look for storm damage, new holes, loose boards, sharp edges and discarded food.
@@ -171,6 +189,7 @@ Save your arrival checks in the [travel checklist](/tools/checklist), price the 
     "new-years-eve-with-a-dog-in-a-vacation-rental",
     "vacation-rental-with-a-reactive-dog",
   ],
+  relatedProducts: ["midwest-exercise-pen-with-door", "carlson-convertible-pet-yard", "ruffwear-knot-a-leash"],
   relatedTools: ["checklist", "pet-cost-check"],
   sources: [
     {
@@ -220,6 +239,24 @@ Save your arrival checks in the [travel checklist](/tools/checklist), price the 
       url: "https://www.sacredwatersellijay.com/pet-friendly-cabin-rental-ellijay-ga",
       publisher: "Sacred Waters North Georgia Cabin Rental",
       accessedOn: "2026-11-16",
+    },
+    {
+      title: "Assembly Instructions for Model Number 550-24DR, 552-30DR, 554-36DR, 556-42DR, 558-48DR",
+      url: "https://www.midwesthomes4pets.com/wp-content/uploads/ExPen_550DR_Eng.pdf",
+      publisher: "MidWest Homes for Pets",
+      accessedOn: "2026-11-16",
+    },
+    {
+      title: "Carlson Convertible Pet Yard",
+      url: "https://carlsonpetproducts.com/products/convertible-pet-yard",
+      publisher: "Carlson Pet Products",
+      accessedOn: "2026-11-18",
+    },
+    {
+      title: "Knot-a-Leash Rope Dog Leash",
+      url: "https://ruffwear.com/products/knot-a-leash-dog-leash",
+      publisher: "Ruffwear",
+      accessedOn: "2026-11-18",
     },
   ],
   research: {

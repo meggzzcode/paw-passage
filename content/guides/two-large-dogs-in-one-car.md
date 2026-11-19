@@ -28,9 +28,10 @@ relatedGuides:
   - vacation-rentals-that-welcome-large-dogs
   - dog-friendly-cabin-packing-list
 relatedProducts:
-  - sleepypod-clickit-range
-  - lucky-duck-lucky-kennel
-  - kurgo-rover-hammock-extended-width
+  - ruffwear-load-up-car-harness
+  - kurgo-enhanced-strength-tru-fit
+  - kurgo-backseat-barrier
+  - petsafe-happy-ride-dog-barrier
 relatedTools:
   - will-my-dog-be-accepted
   - packing-list
@@ -56,10 +57,10 @@ sources:
     url: https://www.cdc.gov/healthy-pets/travel/index.html
     publisher: U.S. Centers for Disease Control and Prevention
     accessedOn: 2026-11-18
-  - title: Clickit Range Crash-Tested Harness
-    url: https://sleepypod.com/products/clickit-range
+  - title: Clickit Sport Plus Crash-Tested Harness
+    url: https://sleepypod.com/products/clickit-sport-plus
     publisher: Sleepypod
-    accessedOn: 2026-11-18
+    accessedOn: 2026-11-19
   - title: Backseat Barrier
     url: https://www.kurgo.com/p/backseat-barrier/K00006
     publisher: Kurgo
@@ -68,10 +69,10 @@ sources:
     url: https://www.petsafe.com/p/happy-ride-metal-dog-barrier/62409/
     publisher: PetSafe
     accessedOn: 2026-11-18
-  - title: G1 Kennel
-    url: https://www.gunner.com/products/g1-kennel
-    publisher: GUNNER Kennels
-    accessedOn: 2026-11-18
+  - title: Lucky Duck Lucky Kennel, Large (CPS listing)
+    url: https://centerforpetsafety.org/lucky-duck-lucky-kennel-large/
+    publisher: Center for Pet Safety
+    accessedOn: 2026-11-19
   - title: Lucky Kennel
     url: https://www.luckyduck.com/products/lucky-kennel
     publisher: Lucky Duck
@@ -194,35 +195,41 @@ Pick by your vehicle, then check the unknowns column. The ASPCA calls a crate th
 | Layout | Fits | What the sources say | What is unknown |
 | --- | --- | --- | --- |
 | Two crates, side by side, in the cargo area | SUV, wagon | CPS warns cargo anchors are not always weight-rated and the platform may not be as solid as it looks; ask the vehicle maker. [[2]](https://centerforpetsafety.org/cargo-area-connection-advisory/) | Whether your anchors carry two crates and two dogs at once |
-| One harness per dog on the rear seat | Sedan, wagon, SUV | Sleepypod's Clickit Range is for the rear passenger seat and connects to any seat belt. [[6]](https://sleepypod.com/products/clickit-range) | Whether your seat has two good belt positions for two large dogs |
+| One harness per dog on the rear seat | Sedan, wagon, SUV | Sleepypod's Clickit Sport Plus connects to any vehicle seat belt, per the maker. [[6]](https://sleepypod.com/products/clickit-sport-plus) | Whether your seat has two good belt positions for two large dogs |
 | Harnesses in the rear seat, barrier behind the front seats | Sedan, wagon, SUV | Kurgo says its barrier fits fixed or removable headrests but not 2-door cars or mini vans. [[7]](https://www.kurgo.com/p/backseat-barrier/K00006) | Whether the barrier does anything in a crash |
 | Dogs behind a cargo barrier, no restraint | SUV, wagon | PetSafe's barrier is tension-fit and the page makes no crash-test claim. [[8]](https://www.petsafe.com/p/happy-ride-metal-dog-barrier/62409/) | Everything about the dogs in a sudden stop |
 
-If two dogs share the rear bench, a wide seat cover keeps the hair and mud off it. A seat cover is not a restraint, and each dog still needs its own.
-
-{{pick:kurgo-rover-hammock-extended-width|Best for large vehicles|The maker lists 63 in wide by 56 in long for full-size trucks and large SUVs, with a lifetime guarantee.|https://kurgo.com/car-seat-covers/dog-hammocks/wander-hammock-extended-width}}
+If two dogs share the rear bench, a wide seat cover keeps the hair and mud off it. A seat cover is not a restraint, and each dog still needs its own. Kurgo's Rover Hammock in the Extended Width is listed by the maker at 63 by 56 inches for full-size trucks and large SUVs, and our [large-dog guide](/guides/vacation-rentals-that-welcome-large-dogs) covers it with the other gear for big dogs.
 
 ## Spacing and weight, by the maker's numbers
 
-Here is the arithmetic, from maker figures and CPS's formula, not a test or a recommendation. GUNNER lists its Intermediate kennel for dogs up to 70 pounds, with a 48-pound kennel and a 34 by 23 inch outside footprint. [[9]](https://www.gunner.com/products/g1-kennel) Our arithmetic: two of them hold up to 140 pounds of dogs plus 96 pounds of kennel, at most 236 pounds in total, in a space at least 46 inches wide (2 x 70, 2 x 48, 2 x 23). The Large lists 71 pounds and up, a 72-pound kennel and a 28 inch outside width, so two are 144 pounds of kennel (2 x 72) and 56 inches wide (2 x 28) before the dogs. [[9]](https://www.gunner.com/products/g1-kennel) Lucky Duck sizes its Large for dogs of 70 to 110 pounds, with an interior of 35.75 by 22 by 26.5 inches. [[10]](https://www.luckyduck.com/products/lucky-kennel)
+Here is the arithmetic, from maker figures and CPS's formula, not a test or a recommendation. Lucky Duck lists its Intermediate Lucky Kennel for dogs under 70 pounds, with a 38-pound kennel and a 20.5 inch interior width. [[10]](https://www.luckyduck.com/products/lucky-kennel) Our arithmetic: two of them hold under 140 pounds of dogs plus 76 pounds of kennel, under 216 pounds in total, in a space more than 41 inches wide inside the walls (2 x 70, 2 x 38, 2 x 20.5). The Large is listed for dogs of 70 to 110 pounds, with a 45-pound kennel and an interior of 35.75 by 22 by 26.5 inches, so two are up to 220 pounds of dogs plus 90 pounds of kennel, 310 pounds in total, and at least 44 inches of interior width before the walls. [[10]](https://www.luckyduck.com/products/lucky-kennel) CPS lists the Large tested with a 110 pound dog and the Lucky Ratchet Strap Kit, one crate and one dog. [[9]](https://centerforpetsafety.org/lucky-duck-lucky-kennel-large/) We have details on the Lucky Kennel and how to read its listing in our [car safety guide](/guides/dog-car-safety-harness-and-crate-guide).
 
 Measure your cargo floor width before you shop. The crate must also be big enough to stand, sit, lie down and turn around in, and it must not slide or shift. [[4]](https://www.aspca.org/pet-care/general-pet-care/travel-safety-tips)
 
-For harnesses the arithmetic is the dog's weight, so check the tested weight against yours. Sleepypod says the Clickit Range is rated up to 110 pounds by CPS and that its car harnesses should not be used with non-Sleepypod accessories. [[6]](https://sleepypod.com/products/clickit-range) Ruffwear's page gives girth sizes and states no weight limit. [[11]](https://ruffwear.com/products/load-up-dog-car-harness) Its separate testing page says Ruffwear tested prototypes in sled tests with 25, 45 and 75 pound mannequins at MGA Research, which Ruffwear calls an independent facility, and that the harness has not been tested to the CPS protocol. [[12]](https://ruffwear.ca/pages/load-up-car-harness-testing-design) Kurgo says its Tru-Fit is crash tested for dogs up to 75 pounds, although its size chart runs to 80 to 110 pounds. [[13]](https://www.kurgo.com/p/enhanced-strength-dog-car-harness/K01255) Those are maker claims. For two dogs above 75 pounds, the tested ceiling matters.
+For harnesses the arithmetic is the dog's weight, so check the tested weight against yours. Sleepypod lists its Clickit Sport Plus for dogs of 18 to 110 pounds, but CPS lists the older Clickit Sport, not the Sport Plus, with test dogs up to 90 pounds, and the maker's page also carries a "Rated to 25 lbs." line, so confirm the rating for each dog's size with the maker. [[6]](https://sleepypod.com/products/clickit-sport-plus) That harness is covered in our car safety guide; two harnesses from other makers are worth a close look here.
+
+Ruffwear's Load Up gives girth sizes from XXS to L/XL (L/XL is 32 to 42 inches) and states no weight limit. [[11]](https://ruffwear.com/products/load-up-dog-car-harness) Its separate testing page says Ruffwear tested prototypes in sled tests with 25, 45 and 75 pound mannequins at MGA Research, which Ruffwear calls an independent facility, and that the harness has not been tested to the CPS protocol. [[12]](https://ruffwear.ca/pages/load-up-car-harness-testing-design) So it suits a dog within the range of those tests, and for a dog heavier than 75 pounds the tested ceiling is yours to ask Ruffwear about.
+
+{{pick:ruffwear-load-up-car-harness|For dogs within the tested range|The maker lists girth sizes XXS to L/XL, a seat belt loop that attaches to existing seat belts and metal slide buckles; Ruffwear's testing page cites sled tests up to 75 lb mannequins and says the harness has not been tested to the CPS protocol.|https://ruffwear.com/products/load-up-dog-car-harness}}
+
+Kurgo says its Tru-Fit is crash tested for dogs up to 75 pounds, although its size chart runs to 80 to 110 pounds, and its page does not mention CPS. [[13]](https://www.kurgo.com/p/enhanced-strength-dog-car-harness/K01255) It has a 10 inch seat belt tether with a steel carabiner and five points of adjustment. Those are maker claims. If you have one dog under 75 pounds and one over, this is the harness to size the smaller dog with, not the larger.
+
+{{pick:kurgo-enhanced-strength-tru-fit|For the dog under 75 lb|The maker says it is crash tested for dogs up to 75 lbs and lists a 10 in seat belt tether with a steel carabiner; its size chart goes higher and the size selector lists only Small, Medium and Large, so confirm the size you need.|https://www.kurgo.com/p/enhanced-strength-dog-car-harness/K01255}}
 
 For a harness, start with a published tested weight at or above your dog's, then check size by girth.
-
-{{pick:sleepypod-clickit-range|Our pick|The maker says it is rated up to 110 lbs by CPS and connects to any seat belt in the rear passenger seat; check the exact size against your dog.|https://sleepypod.com/products/clickit-range}}
-
-For crates, the maker's size guide matters more than the label: a Large for dogs of 70 to 110 pounds, in a space two of them fit.
-
-{{pick:lucky-duck-lucky-kennel|Our pick|The maker lists a Large for dogs of 70 to 110 pounds, with an interior of 35.75 by 22 by 26.5 inches and a separate ratchet strap kit.|https://www.luckyduck.com/products/lucky-kennel}}
 
 ## Where a barrier helps and where it does not
 
 Kurgo's Backseat Barrier attaches to the backs of the front seats; its page names no crash test and says it is designed to prevent distracted driving. [[7]](https://www.kurgo.com/p/backseat-barrier/K00006) Kurgo's Rover Backseat Bridge is a seat extender with a fold-down center barrier; the maker says the base holds up to 100 pounds and it is not recommended for gaps over 13 inches. [[14]](https://www.kurgo.com/p/rover-backseat-bridge-backseat-extender/POG30-17768) Our arithmetic: two 70-pound dogs add up to 140, above that figure, so by the maker's number the bridge is not rated for two large dogs lying on it. PetSafe's Happy Ride barrier adjusts from 32 to 49 inches wide and 33 to 57 inches high and the page states no weight capacity. [[8]](https://www.petsafe.com/p/happy-ride-metal-dog-barrier/62409/)
 
-A barrier keeps two dogs from reaching you. It does not hold either one in place in a stop.
+A barrier keeps two dogs from reaching you. It does not hold either one in place in a stop. If you want one anyway, pick by where it goes. In a sedan or wagon with the dogs on the rear seat, the Backseat Barrier fits the backs of the front seats and keeps a mesh view open for the dogs, but the maker says it will not work in 2-door cars or mini vans.
+
+{{pick:kurgo-backseat-barrier|For dogs on the rear seat|The maker says it fits fixed or removable headrests, has mesh panelling and a cup holder, and will not work with 2-door cars or mini vans; its only safety wording is that it is designed to prevent distracted driving.|https://www.kurgo.com/p/backseat-barrier/K00006}}
+
+In an SUV or wagon where the dogs ride in the cargo area, the PetSafe Happy Ride Dog Barrier is a tension-fit metal frame that adjusts from 32 to 49 inches wide and 33 to 57 inches high, with no tools to install. Measure the opening behind your rear seats first, because the page states no weight capacity and no crash test.
+
+{{pick:petsafe-happy-ride-dog-barrier|For the cargo area|The maker lists a metal frame held by tension with no tools, adjustable from 32 to 49 in wide and 33 to 57 in high; the page names no crash test or weight capacity.|https://www.petsafe.com/p/happy-ride-metal-dog-barrier/62409/}}
 
 ## What not to do
 

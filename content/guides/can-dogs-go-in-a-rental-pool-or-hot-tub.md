@@ -11,7 +11,7 @@ approvedOn: 2026-11-18
 author: Paws & Passage Editors
 publishedOn: 2026-11-18
 lastReviewed: 2026-11-19
-readingMinutes: 10
+readingMinutes: 11
 heroImage: guide-pool-hot-tub
 faqs:
   - q: Can dogs go in a vacation rental's pool?
@@ -35,6 +35,7 @@ relatedProducts:
   - soggy-doggy-super-shammy-towel
   - soggy-doggy-microfiber-doormat
   - green-pet-shop-cool-pet-pad
+  - adventure-medical-kits-dog-wipes
 relatedTools:
   - will-my-dog-be-accepted
   - pet-cost-check
@@ -104,6 +105,22 @@ sources:
     url: https://help.vrbo.com/articles/What-happens-if-my-card-on-file-is-charged-for-property-damage
     publisher: Vrbo
     accessedOn: 2026-11-18
+  - title: Super Shammy Towel
+    url: https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey
+    publisher: Soggy Doggy
+    accessedOn: 2026-11-16
+  - title: Microfiber Doormat (no bone)
+    url: https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate
+    publisher: Soggy Doggy
+    accessedOn: 2026-11-16
+  - title: Cool Pet Pad
+    url: https://www.thegreenpetshop.com/products/cool-pet-pad
+    publisher: The Green Pet Shop
+    accessedOn: 2026-11-16
+  - title: Adventure Dog Wipes (pack of 8)
+    url: https://adventuremedicalkits.com/products/adventure-dog-wipes-pkg-8
+    publisher: Adventure Medical Kits
+    accessedOn: 2026-11-16
 research:
   primaryKeyword: can dogs go in vacation rental pool
   relatedKeywords:
@@ -228,13 +245,23 @@ Practical steps that follow from the sources and the house rules:
 
 If the pool is off limits, dog water time moves to a lake, a creek, a hose or the rain, and the mud and wet come back to the door. Dry the dog on the porch, wipe paws before they cross the floor, and keep a dog-only towel so the host's bath towels stay out of it. That is our practical advice, not a source's rule. In our view a drying towel and an entry mat are the two things most worth buying; check each maker's stated size and care rule, and the current price on the listing.
 
+The Soggy Doggy Super Shammy is a 31 x 14 in microfiber chenille towel with hand pockets, and the maker says to machine wash it alone, with no bleach or fabric softener. [[17]](https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey) The page gives no absorbency figure, so judge it against your dog's coat.
+
 {{pick:soggy-doggy-super-shammy-towel|Our pick|The maker lists a 31 x 14 in microfiber chenille towel with hand pockets that is machine washable.|https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey}}
+
+The Soggy Doggy Microfiber Doormat comes in Large (26 x 36 in) and Extra Large (36 x 60 in) with a non-slip backing, and the maker says it is machine washable and dryer safe. [[18]](https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate) "Super absorbent and dirt trapping" is the maker's wording.
 
 {{pick:soggy-doggy-microfiber-doormat|Our pick|The maker lists Large and Extra Large sizes with a non-slip backing, and says it is machine washable and dryer safe.|https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate}}
 
 On a hot day with no pool, a cooling pad gives a dog a cooler place to lie. In our view it is a resting spot, not heatstroke prevention or treatment: Cornell's prevention advice is shade, frequent water and avoiding exercise in hot weather, and for an overheated dog it says to start cooling immediately and get to a veterinary hospital. [[12]](https://www.vet.cornell.edu/index.php/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/heatstroke-medical-emergency) Read the maker's warnings about direct sunlight and hot cars before you put one in the car.
 
+The Green Pet Shop Cool Pet Pad is a pressure-activated gel pad in five sizes by dog weight, from Extra Small (0 to 8 lb) to Extra Large (above 80 lb). The maker says it needs no water or electricity and cools for up to 3 hours, which are maker claims, and warns not to leave it in direct sun or a hot car, or unattended with a dog that chews or scratches excessively. [[19]](https://www.thegreenpetshop.com/products/cool-pet-pad)
+
 {{pick:green-pet-shop-cool-pet-pad|Best cooling mat|NBC Select names it its best cooling mat; the maker lists five sizes by dog weight and a 12-month warranty, and warns against direct sunlight and hot cars.|https://www.nbcnews.com/select/amp/rcna168150}}
+
+VCA says to rinse a dog off after a swim and notes chlorine and salt can irritate skin, but a rental may not let you hose a dog at the door. For a quick wipe between the porch and the floor, Adventure Medical Kits' Adventure Dog Wipes come 8 to a pack, each 8 x 8 in, and the maker describes them as rinse-free and made with aloe, rosemary and witch hazel. [[20]](https://adventuremedicalkits.com/products/adventure-dog-wipes-pkg-8) The wipes are not a rinse after chlorinated or salt water, and the page's gentleness wording is the maker's.
+
+{{pick:adventure-medical-kits-dog-wipes|Our pick|The maker lists 8 wipes per pack, each 8 x 8 in, described as rinse-free, and a 60-day satisfaction guarantee.|https://adventuremedicalkits.com/products/adventure-dog-wipes-pkg-8}}
 
 ## What to ask the host
 

@@ -50,12 +50,12 @@ CPS describes crash forces as mass multiplied by acceleration. For a harness the
 ## Buying checklist: seven criteria
 
 1. **Independent testing you can look up.** Use the CPS Certified Products directory (harnesses, travel crates, carriers). Each listing shows model and size tested, test date, protocol, and test dog weight. If a claim has no named lab, protocol, or report, treat it as unverified. [[1]](https://centerforpetsafety.org/cps-certified/)
-2. **A test dog weight that matches yours.** CPS lists one harness tested with a 110 lb test dog and one small carrier tested with a 12 lb test dog. [[14]](https://centerforpetsafety.org/sleepypod-clickit-range/) [[15]](https://centerforpetsafety.org/sleepypod-atom/) A restraint tested for 12 lb says nothing about a 60 lb dog.
+2. **A test dog weight that matches yours.** CPS lists one Sleepypod harness with test dogs of up to 90 lb and one small carrier tested with a 12 lb test dog. [[1]](https://centerforpetsafety.org/cps-certified/) [[13]](https://centerforpetsafety.org/sleepypod-atom/) A restraint tested for 12 lb says nothing about a 60 lb dog.
 3. **Correct fit.** Some makers size car harnesses by rib cage circumference, with a size chart for each model; Sleepypod's page is one example and also offers a Long option for some builds. [[10]](https://sleepypod.com/pages/sizing) Follow the maker's measuring guide (as general advice, not from that page, use a soft tape and re-check). If your dog sits between sizes, contact the maker.
 4. **A connection you can trust.** Harnesses normally connect to the seat belt. CPS says extension tethers and zipline-style products increase the risk of injury, and it restricts brands that sell extension tethers from its certification program. [[5]](https://centerforpetsafety.org/cargo-area-connection-advisory/) [[6]](https://centerforpetsafety.org/extension-tether-advisory/) Crates should always be secured with strength-rated anchor straps; CPS says its 2015 crate study found proper anchor straps significantly reduced crate excursion into the seatback or passenger compartment. [[5]](https://centerforpetsafety.org/cargo-area-connection-advisory/)
 5. **A safe place in the vehicle.** CDC and ASPCA advise the back seat. [[7]](https://www.cdc.gov/healthy-pets/travel/index.html) [[8]](https://www.aspca.org/pet-care/general-pet-care/travel-safety-tips) For a cargo area, CPS cautions that anchors are not always weight-rated for crash forces and the platform may not be as solid as it looks. Ask your vehicle manufacturer about anchor strength, platform load capacity, and anchor upgrades. [[5]](https://centerforpetsafety.org/cargo-area-connection-advisory/)
-6. **Crate size and fit.** CDC and ASPCA say a crate should let the dog stand, sit, lie down and turn around, be well ventilated, and be secured so it cannot slide or shift when the car stops. [[7]](https://www.cdc.gov/healthy-pets/travel/index.html) [[8]](https://www.aspca.org/pet-care/general-pet-care/travel-safety-tips) One maker lists its dimensions for travel use and suggests going up a size for in-home use. [[13]](https://www.luckyduck.com/products/lucky-kennel) Also measure your cargo space and anchor points.
-7. **Tested components.** CPS listings often name the accessories used in the test, including the anchor straps for crates. [[16]](https://centerforpetsafety.org/gunner-g1-kennel-medium/) [[18]](https://centerforpetsafety.org/lucky-duck-lucky-kennel-large/) Sleepypod warns against using its carriers and harnesses with non-Sleepypod accessories. [[9]](https://sleepypod.com/products/clickit-range) Swapping parts means you are no longer using the tested configuration.
+6. **Crate size and fit.** CDC and ASPCA say a crate should let the dog stand, sit, lie down and turn around, be well ventilated, and be secured so it cannot slide or shift when the car stops. [[7]](https://www.cdc.gov/healthy-pets/travel/index.html) [[8]](https://www.aspca.org/pet-care/general-pet-care/travel-safety-tips) One maker lists its dimensions for travel use and suggests going up a size for in-home use. [[12]](https://www.luckyduck.com/products/lucky-kennel) Also measure your cargo space and anchor points.
+7. **Tested components.** CPS listings often name the accessories used in the test, including the anchor straps for crates. [[14]](https://centerforpetsafety.org/lucky-duck-lucky-kennel-large/) Sleepypod warns against using its carriers and harnesses with non-Sleepypod accessories. [[9]](https://sleepypod.com/products/clickit-sport-plus) Swapping parts means you are no longer using the tested configuration.
 
 ## Harness or crate?
 
@@ -75,43 +75,45 @@ These are examples of how to read a listing, not a ranking. The test records bel
 
 | Product type and model | Sizes on the CPS listing | Test dog | Tested |
 | --- | --- | --- | --- |
-| Harness, Sleepypod Clickit Range [[14]](https://centerforpetsafety.org/sleepypod-clickit-range/) | Small to X-Large | 110 lb | November 2024, protocol CPS-001-014.01 |
-| Harness, Saker Bomber [[19]](https://centerforpetsafety.org/saker-bomber-harness/) | X-Small to Large | 75 lb, passed | November 2022, protocol CPS-001-014.01 |
-| Carrier, Sleepypod Atom [[15]](https://centerforpetsafety.org/sleepypod-atom/) | One size | 12 lb, five stars | August 2024 |
-| Crate, GUNNER G1 Medium and Intermediate [[16]](https://centerforpetsafety.org/gunner-g1-kennel-medium/) [[17]](https://centerforpetsafety.org/gunner-g1-kennel-intermediate/) | Medium, Intermediate (the directory list also shows the Small [[1]](https://centerforpetsafety.org/cps-certified/)) | 45 lb and 75 lb, with strength-rated anchor straps | March 2017 and June 2015 |
-| Crate, Lucky Duck Lucky Kennel Large [[18]](https://centerforpetsafety.org/lucky-duck-lucky-kennel-large/) | Large (the directory list also shows the Intermediate and Medium [[1]](https://centerforpetsafety.org/cps-certified/)) | 110 lb, with the Lucky Ratchet Strap Kit | July 2022 |
+| Harness, Sleepypod Clickit Sport (the model CPS lists; the maker now sells the Sport Plus) [[1]](https://centerforpetsafety.org/cps-certified/) | Small, Medium, Large, X-Large | Small 25 lb; Medium 45 to 90 lb; Large 75 to 90 lb; X-Large up to 90 lb | July 2014, protocol CPS-001-014.01 |
+| Carrier, Sleepypod Atom [[13]](https://centerforpetsafety.org/sleepypod-atom/) | One size | 12 lb, five stars | August 2024 |
+| Crate, Lucky Duck Lucky Kennel Large [[14]](https://centerforpetsafety.org/lucky-duck-lucky-kennel-large/) | Large (the directory list also shows the Intermediate and Medium [[1]](https://centerforpetsafety.org/cps-certified/)) | 110 lb, with the Lucky Ratchet Strap Kit | July 2022 |
 
-- **Clickit Range.** The maker describes a three-point rear-seat harness in sizes Small through 2X-Large with Regular and Long fits and says it is rated up to 110 lbs by CPS. [[9]](https://sleepypod.com/products/clickit-range) The 2X-Large size and the Regular/Long split are maker-listed only, so confirm certification for those. Use the maker's rib cage chart, not weight alone. [[10]](https://sleepypod.com/pages/sizing)
-- **Saker Bomber.** The maker's page says the seat belt passes directly through the harness's top handle and gives girth and neck ranges by size instead of weight limits. [[20]](https://sakercanine.com/products/bomber-harness-black) Its force figures are inconsistent on that page (3,000+ lbs in one place, over 3,300 lbs in another) and the page does not mention CPS, so lean on the CPS listing, not the maker's numbers.
-- **Atom.** The maker describes a crash-tested carrier rated to 12 lbs by CPS, with a built-in tether inside the carrier (described as preventing escapes; it is not a vehicle tether) and a fold-flat design. [[11]](https://sleepypod.com/products/atom) Its CPS listing page shows the 12 lb test dog and a five-star rating. [[15]](https://centerforpetsafety.org/sleepypod-atom/) The product page does not describe how to secure the carrier in a vehicle, so get the maker's instructions before you drive.
-- **GUNNER G1.** The maker lists Small (up to 30 lbs), Medium (up to 45 lbs), Intermediate (up to 70 lbs) and Large (71+ lbs), with built-in tie-down pins and straps sold separately. It states the Small, Medium and Intermediate are crash tested per CPS and does not list the Large as certified. [[12]](https://www.gunner.com/products/g1-kennel)
-- **Lucky Kennel.** The maker lists Medium (under 50 lbs), Intermediate (under 70 lbs) and Large (70 to 110 lbs) with integrated tie-downs and a separate ratchet strap kit. [[13]](https://www.luckyduck.com/products/lucky-kennel)
+- **Clickit Sport Plus.** The maker lists sizes S to XL for dogs of 18 to 110 lbs, says it connects to any vehicle seat belt and says it earned a 5 star rating from CPS. [[9]](https://sleepypod.com/products/clickit-sport-plus) Read that with care. The CPS directory lists the earlier "Clickit Sport", not "Sport Plus", and the maker's product page also carries a line saying "Rated to 25 lbs." by CPS, which does not match the 18 to 110 lb range elsewhere on the same site. The page does not explain the difference. Use the maker's rib cage chart, not weight alone. [[10]](https://sleepypod.com/pages/sizing)
+- **Atom.** The maker describes a crash-tested carrier rated to 12 lbs by CPS, with a built-in tether inside the carrier (described as preventing escapes; it is not a vehicle tether) and a fold-flat design. [[11]](https://sleepypod.com/products/atom) Its CPS listing page shows the 12 lb test dog and a five-star rating. [[13]](https://centerforpetsafety.org/sleepypod-atom/) The product page does not describe how to secure the carrier in a vehicle, so get the maker's instructions before you drive.
+- **Lucky Kennel.** The maker lists Medium (under 50 lbs), Intermediate (under 70 lbs) and Large (70 to 110 lbs) with integrated tie-downs and a separate ratchet strap kit. [[12]](https://www.luckyduck.com/products/lucky-kennel)
 
-### Harness picks
+### Harness pick
 
-For a dog riding on the rear seat, we start with the harness whose CPS listing shows the heaviest test dog of the harnesses above, then check size and fit against the maker's chart. This is based on the cited listings, not our own testing.
+For a dog riding on the rear seat, we start with Sleepypod's Clickit Sport Plus: a vest-style harness that connects to a rear-seat belt, comes with an S-Clip and a Buckle Shield, and sits in the line of a model CPS has tested. This is based on the cited listings, not our own testing, and the weight question above is real: before you order, ask Sleepypod in writing which CPS rating covers your dog's size, because CPS's test dogs for the older Sport top out at 90 lbs. If your dog is heavier than that, the honest answer is to wait for that reply.
 
-{{pick:sleepypod-clickit-range|Our pick|The CPS listing shows a 110 lb test dog for sizes Small to X-Large, tested in November 2024, the heaviest harness test dog we read.|https://centerforpetsafety.org/sleepypod-clickit-range/}}
+{{pick:sleepypod-clickit-sport-plus|Our pick|The maker lists sizes S to XL for dogs of 18 to 110 lbs and says it connects to any vehicle seat belt; CPS lists the earlier Clickit Sport (2014), not the Sport Plus, so confirm the rating for your size with the maker.|https://sleepypod.com/products/clickit-sport-plus}}
 
-### Crate picks
+### Crate pick
 
-For a crate, match the size and the listed test dog weight to your dog, and buy the strength-rated straps the listing names. Measure the cargo space and anchor points first.
+For a crate, match the size and the listed test dog weight to your dog, and buy the strap kit the maker names. Lucky Duck's Lucky Kennel is the crate here with a CPS listing we read in full: the Large, tested with a 110 lb dog and the Lucky Ratchet Strap Kit in July 2022. [[14]](https://centerforpetsafety.org/lucky-duck-lucky-kennel-large/) The CPS directory also lists the Medium and Intermediate, and the maker sizes the three at under 50, under 70 and 70 to 110 lbs. [[12]](https://www.luckyduck.com/products/lucky-kennel) The purchase link on the card below goes to the Intermediate, so if your dog is 70 lbs or more, pick the Large on the retailer page. The Large weighs 45 lbs empty, so make sure you can lift it and that it fits your cargo area.
 
-{{pick:gunner-g1-kennel|Our pick|CPS lists the Medium with a 45 lb test dog and the Intermediate with a 75 lb test dog, both with strength-rated anchor straps; the maker sells tie-down straps separately.|https://centerforpetsafety.org/gunner-g1-kennel-medium/}}
+{{pick:lucky-duck-lucky-kennel|Our pick|CPS lists the Large with a 110 lb test dog and the Lucky Ratchet Strap Kit, sold separately; the maker lists integrated tie-downs, and the purchase link goes to the Intermediate (under 70 lbs).|https://centerforpetsafety.org/lucky-duck-lucky-kennel-large/}}
 
-{{pick:lucky-duck-lucky-kennel|Best for large dogs|CPS lists the Large with a 110 lb test dog and the Lucky Ratchet Strap Kit, which the maker sells separately.|https://centerforpetsafety.org/lucky-duck-lucky-kennel-large/}}
+### Small-dog picks
+
+Under about 25 lbs you have two routes. The first is a carrier tested at your dog's weight: the Sleepypod Atom, a soft fold-flat carrier that the maker rates to 12 lbs and CPS lists with a 12 lb test dog. An earlier maker collection page showed 18 lbs, so go by the Atom's own page and the CPS listing. [[11]](https://sleepypod.com/products/atom) [[13]](https://centerforpetsafety.org/sleepypod-atom/)
+
+{{pick:sleepypod-atom|For toy dogs|The maker rates it to 12 lbs by CPS, CPS lists a 12 lb test dog and five stars, and it folds flat; the maker's page does not say how to secure it in a vehicle, so get those instructions first.|https://centerforpetsafety.org/sleepypod-atom/}}
+
+The second is a raised seat for a small dog that is too big for the Atom. Kurgo's Heather booster seat is for dogs up to 30 lbs, installs on a bucket seat and has an integrated tether that clips to the dog's harness. The maker does not claim the seat itself is crash tested and recommends a separate crash-tested harness, so treat it as a seat that helps a small dog see out and settle, and still put the dog in a harness. [[15]](https://www.kurgo.com/p/heather-dog-booster-seat/K01724) Replace it after an accident, as the maker says.
+
+{{pick:kurgo-heather-booster-seat|For dogs up to 30 lbs|The maker says it suits dogs up to 30 lbs, installs on any bucket seat and has an integrated tether for a harness; it does not claim the seat is crash tested.|https://www.kurgo.com/p/heather-dog-booster-seat/K01724}}
 
 ## Pick by situation
 
 - **One large dog, SUV with cargo area:** a Large crate with strength-rated straps, after checking anchor points with the vehicle maker. [[5]](https://centerforpetsafety.org/cargo-area-connection-advisory/)
-- **Medium dog, sedan:** a harness on the rear seat belt, sized to the rib cage, with the test dog weight at or above your dog's. The 75 lb test dog on one listing is a lower ceiling than the 110 lb on another. [[10]](https://sleepypod.com/pages/sizing) [[19]](https://centerforpetsafety.org/saker-bomber-harness/)
-- **Toy or very small dog:** a carrier tested for your dog's weight, such as the 12 lb rating on the Atom listing. [[11]](https://sleepypod.com/products/atom)
+- **Medium dog, sedan:** a harness on the rear seat belt, sized to the rib cage, with the test dog weight at or above your dog's. The CPS Sport listing shows 45 to 90 lb test dogs for the Medium. [[10]](https://sleepypod.com/pages/sizing)
+- **Toy or very small dog:** a carrier tested for your dog's weight, such as the 12 lb rating on the Atom listing, or a booster seat plus a crash-tested harness for a dog up to 30 lbs. [[11]](https://sleepypod.com/products/atom)
 - **Dog that panics when confined:** our suggestion, not a source's: a rear-seat harness may be easier to introduce gradually, so ask your vet. A den-lover may prefer a correctly sized, anchored crate.
 - **Two dogs:** separate restraints, never a shared one. See our [two large dogs in one car guide](/guides/two-large-dogs-in-one-car) and our [two-dog planning guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental).
 - **Very large breed:** check the maker's top weight, and see our [large-dog rental guide](/guides/vacation-rentals-that-welcome-large-dogs).
-- **Keeping the seat clean:** a bench-seat hammock keeps hair and mud off the upholstery for a big dog riding on the rear bench. It is not a restraint, so the dog still needs one of the above.
-
-{{pick:kurgo-rover-hammock-extended-width|Best for large vehicles|The maker lists 63 in wide by 56 in long for full-size trucks and large SUVs, with a lifetime guarantee.|https://kurgo.com/car-seat-covers/dog-hammocks/wander-hammock-extended-width}}
+- **Keeping the seat clean:** a bench-seat hammock keeps hair and mud off the upholstery for a big dog riding on the rear bench. It is not a restraint, so the dog still needs one of the above. Our [large-dog rental guide](/guides/vacation-rentals-that-welcome-large-dogs) covers a hammock sized for full-size trucks and large SUVs.
 
 ## Install it correctly
 
@@ -155,8 +157,8 @@ CDC and ASPCA recommend building up to a long trip with short drives first. Fitt
 
 ## What to buy first
 
-1. **The restraint.** One that matches your dog's weight and measurements and has a CPS listing you have read: a rear-seat harness, or a crate plus its strength-rated straps.
-2. **Seat protection, only if the dog rides on a bench.** A hammock sized to your vehicle's rear seat.
+1. **The restraint.** One that matches your dog's weight and measurements and has a CPS listing you have read: the Clickit Sport Plus on the rear seat belt, or a Lucky Kennel plus its strap kit, with the size confirmed against the maker's weight guide.
+2. **Seat protection, only if the dog rides on a bench.** A hammock or cover sized to your vehicle's rear seat. Our [large-dog rental guide](/guides/vacation-rentals-that-welcome-large-dogs) covers a hammock for big vehicles.
 3. **The rest of the kit.** Water, bowls and a leash from the [cabin packing list](/guides/dog-friendly-cabin-packing-list) or the [packing list tool](/tools/packing-list), then run the [trip checklist](/tools/checklist) before you leave.`,
   faqs: [
     {
@@ -181,35 +183,34 @@ CDC and ASPCA recommend building up to a long trip with short drives first. Fitt
     },
     {
       q: "Which harness should I look at first?",
-      a: "Start with a harness whose CPS listing shows a test dog at or above your dog's weight, in your dog's size. The heaviest harness test dog we read was 110 lbs (November 2024). Paws & Passage has not tested any harness; confirm your dog's size and the exact model with the maker and CPS before buying.",
+      a: "Start with a harness whose CPS listing shows a test dog at or above your dog's weight, in your dog's size. The Sleepypod harness we looked at first has a mixed record to read: CPS lists the earlier Clickit Sport (2014) with test dogs up to 90 lbs, the maker sells the Clickit Sport Plus for 18 to 110 lbs, and its product page also says 'Rated to 25 lbs'. Paws & Passage has not tested any harness; confirm your dog's size and the exact model with the maker and CPS before buying.",
     },
   ],
   gear: [
     {
-      productId: "sleepypod-clickit-range",
+      productId: "sleepypod-clickit-sport-plus",
       bestFor:
-        "Our pick from the cited test data: a medium to large dog riding on the rear seat of a car or SUV",
+        "A medium to large dog riding on the rear seat of a car or SUV, whose owner will confirm the weight rating with the maker",
       whyItMadeTheList:
-        "It matches the criteria for independent testing and a documented test weight: the maker states a CPS rating up to 110 lbs, and the CPS listing (Small, Medium, Large and X-Large) shows a 110 lb test dog in November 2024. It attaches to the vehicle seat belt and is sized by rib cage with Regular and Long fits listed by the maker.",
+        "It matches the criteria for independent testing and a seat-belt connection: the maker lists S to XL for dogs of 18 to 110 lbs and says it connects to any vehicle seat belt, and CPS lists the earlier Clickit Sport as passed in July 2014. It includes an S-Clip and a Buckle Shield.",
       watchOuts: [
+        "CPS lists the Clickit Sport (2014), not the Sport Plus, so the Sport Plus is not itself in the directory",
+        "The maker's product page says 'Rated to 25 lbs' by CPS while other maker pages say 18 to 110 lbs; confirm the rating for your dog's size with Sleepypod before buying",
+        "CPS test dogs for the Sport listing top out at 90 lbs",
         "Measure your dog's rib cage and compare with the maker's size chart instead of relying on weight alone",
-        "Check whether the Regular or Long fit suits your dog's body",
-        "The CPS listing covers Small to X-Large; the 2X-Large size and the Regular/Long split are maker-listed and not on that listing",
         "Do not use non-Sleepypod accessories with it, per the maker's warning",
-        "Needs a rear seat and a seat belt that works with the design",
-        "Not a fit for a dog above its tested weight",
       ],
     },
     {
-      productId: "saker-bomber-harness",
-      bestFor: "A dog on the rear seat whose owner wants a second tested harness brand to compare",
+      productId: "lucky-duck-lucky-kennel",
+      bestFor: "A medium to large dog, up to 110 lbs, in a secured crate",
       whyItMadeTheList:
-        "The CPS listing shows a pass with a 75 lb test dog in November 2022, in sizes X-Small to Large. The maker's page says the seat belt passes through the harness's top handle.",
+        "CPS lists the Large with a 110 lb test dog and the Lucky Ratchet Strap Kit, and the CPS directory also lists the Medium and Intermediate. The maker offers integrated tie-downs and a published weight guide per size.",
       watchOuts: [
-        "The 75 lb test dog is lower than the Clickit Range's 110 lb, so check your dog's weight against it",
-        "Sizes are listed by girth and neck range, not weight; measure your dog",
-        "The maker's page gives two different force figures and does not mention CPS; rely on the CPS listing",
-        "Tested in 2022, so confirm the current model matches the listing",
+        "The purchase link goes to the Intermediate, which the maker sizes for dogs under 70 lbs; a dog of 70 to 110 lbs needs the Large",
+        "Strap kit is sold separately and is part of the tested setup",
+        "Kennel weighs 27, 38 and 45 lbs (Medium, Intermediate, Large); check your lifting, your cargo space and your anchor ratings",
+        "The maker says its listed dimensions are for travel use and suggests sizing up for in-home use",
       ],
     },
     {
@@ -219,35 +220,21 @@ CDC and ASPCA recommend building up to a long trip with short drives first. Fitt
         "It is a CPS-listed carrier tested with a 12 lb test dog, which matches the criterion of a test weight that fits the dog. The maker describes a safety tether and a fold-flat design.",
       watchOuts: [
         "Only for dogs up to 12 lbs, the weight it was tested at",
-        "The maker's page says pets differ in size and shape and points to its sizing guide; check it for your dog",
+        "An earlier maker collection page showed 18 lbs; the Atom's own page says 12 lbs",
         "Secure the carrier as the maker instructs and never leave it loose on a seat; the product page does not describe the method",
         "Use only the maker's own accessories",
-        "A carrier is not a substitute for a larger restraint if your dog may outgrow it",
       ],
     },
     {
-      productId: "gunner-g1-kennel",
-      bestFor:
-        "A small to medium-large dog in a secured crate, with the Medium or Intermediate size",
+      productId: "kurgo-heather-booster-seat",
+      bestFor: "A small dog, up to 30 lbs, that rides on a bucket seat and wears a crash-tested harness",
       whyItMadeTheList:
-        "CPS lists the Medium (45 lb test dog) and Intermediate (75 lb test dog) with strength-rated anchor straps, which fits the criteria for a documented test and a trusted connection. The maker sells tie-down straps separately.",
+        "The maker says it suits dogs up to 30 lbs, installs on any bucket seat and has an integrated tether that attaches to the dog's harness. It collapses for storage and has a removable liner and pad.",
       watchOuts: [
-        "The maker does not list the Large as CPS certified; check which sizes are certified",
-        "Use the straps the maker specifies, not bungee cords or substitutes",
-        "A heavy kennel, so check your lifting and your cargo space",
-        "Confirm your vehicle's anchor points are strength-rated before relying on a cargo area",
-      ],
-    },
-    {
-      productId: "lucky-duck-lucky-kennel",
-      bestFor: "A large dog up to 110 lbs in a secured crate",
-      whyItMadeTheList:
-        "CPS lists the Large with a 110 lb test dog and the Lucky Ratchet Strap Kit; confirm any other size with CPS. It offers integrated tie-downs and a published weight guide per size.",
-      watchOuts: [
-        "Strap kit is sold separately and is part of the tested setup",
-        "The maker says its listed dimensions are for travel use and suggests sizing up for in-home use; confirm the best fit for your dog",
-        "Check the weight of the kennel plus your dog against your vehicle's anchor ratings",
-        "Measure your vehicle's cargo space before ordering",
+        "The page does not claim the seat itself is crash tested and recommends a separate crash-tested harness",
+        "The maker says to replace it after an accident",
+        "The outer seat is spot clean only; the liner and pad are machine washable",
+        "Dimensions are 12 D x 16 W x 8 H, so measure your dog first",
       ],
     },
   ],
@@ -259,10 +246,10 @@ CDC and ASPCA recommend building up to a long trip with short drives first. Fitt
     "two-large-dogs-in-one-car",
   ],
   relatedProducts: [
-    "sleepypod-clickit-range",
-    "gunner-g1-kennel",
+    "sleepypod-clickit-sport-plus",
     "lucky-duck-lucky-kennel",
-    "kurgo-rover-hammock-extended-width",
+    "sleepypod-atom",
+    "kurgo-heather-booster-seat",
   ],
   relatedTools: ["checklist", "pet-cost-check"],
   sources: [
@@ -315,8 +302,8 @@ CDC and ASPCA recommend building up to a long trip with short drives first. Fitt
       accessedOn: "2026-11-19",
     },
     {
-      title: "Clickit Range Crash-Tested Harness",
-      url: "https://sleepypod.com/products/clickit-range",
+      title: "Clickit Sport Plus Crash-Tested Harness",
+      url: "https://sleepypod.com/products/clickit-sport-plus",
       publisher: "Sleepypod",
       accessedOn: "2026-11-19",
     },
@@ -333,38 +320,14 @@ CDC and ASPCA recommend building up to a long trip with short drives first. Fitt
       accessedOn: "2026-11-19",
     },
     {
-      title: "G1 Kennel",
-      url: "https://www.gunner.com/products/g1-kennel",
-      publisher: "GUNNER Kennels",
-      accessedOn: "2026-11-19",
-    },
-    {
       title: "Lucky Kennel",
       url: "https://www.luckyduck.com/products/lucky-kennel",
       publisher: "Lucky Duck",
       accessedOn: "2026-11-19",
     },
     {
-      title: "Sleepypod Clickit Range (CPS listing)",
-      url: "https://centerforpetsafety.org/sleepypod-clickit-range/",
-      publisher: "Center for Pet Safety",
-      accessedOn: "2026-11-19",
-    },
-    {
       title: "Sleepypod Atom (CPS listing)",
       url: "https://centerforpetsafety.org/sleepypod-atom/",
-      publisher: "Center for Pet Safety",
-      accessedOn: "2026-11-19",
-    },
-    {
-      title: "Gunner G1 Kennel, Medium (CPS listing)",
-      url: "https://centerforpetsafety.org/gunner-g1-kennel-medium/",
-      publisher: "Center for Pet Safety",
-      accessedOn: "2026-11-19",
-    },
-    {
-      title: "Gunner G1 Kennel, Intermediate (CPS listing)",
-      url: "https://centerforpetsafety.org/gunner-g1-kennel-intermediate/",
       publisher: "Center for Pet Safety",
       accessedOn: "2026-11-19",
     },
@@ -375,16 +338,10 @@ CDC and ASPCA recommend building up to a long trip with short drives first. Fitt
       accessedOn: "2026-11-19",
     },
     {
-      title: "Saker Bomber Harness (CPS listing)",
-      url: "https://centerforpetsafety.org/saker-bomber-harness/",
-      publisher: "Center for Pet Safety",
-      accessedOn: "2026-11-19",
-    },
-    {
-      title: "Bomber harness",
-      url: "https://sakercanine.com/products/bomber-harness-black",
-      publisher: "Saker Canine",
-      accessedOn: "2026-11-19",
+      title: "Heather Dog Booster Seat",
+      url: "https://www.kurgo.com/p/heather-dog-booster-seat/K01724",
+      publisher: "Kurgo",
+      accessedOn: "2026-11-18",
     },
   ],
   research: {
@@ -457,7 +414,7 @@ CDC and ASPCA recommend building up to a long trip with short drives first. Fitt
     ],
     gapsFound: [
       "AVMA vehicle-safety pages could not be loaded during research and are not cited; add them if they become readable.",
-      "Sleepypod and GUNNER pages showed some sizes as sold out on the access date; availability was not treated as a spec.",
+      "Sleepypod pages showed some sizes as sold out on the access date; availability was not treated as a spec.",
       "Most ranked lists rely on a reviewer's opinion rather than checkable test records.",
       "Few pages explain what a crash test dummy represents or that certification is model- and size-specific.",
       "Harness and crate advice is usually split, with little help choosing between them for a particular dog and vehicle.",

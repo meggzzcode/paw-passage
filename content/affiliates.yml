@@ -465,7 +465,7 @@ links:
     url: https://www.amazon.com/dp/B08JQQF9YX?tag={amazonTrackingId}
     approved: true
     kind: product
-    notes: 'ASIN B08JQQF9YX appeared in an owner Amazon search on 2026-11-19 (title Clickit Sport) but was not opened; verify buy box and weight range (docs/cowork/09)'
+    notes: "Cowork-verified 2026-11-18: page titled Sleepypod Clickit Sport, Crash-Tested Dog Car Harness, Jet Black, M; sold by Veterinary Preferred (third party), buy box present. Sized by chest measurement, not weight; Large is B08JRR6V58. Page quotes a five star rating from the Center for Pet Safety."
   - id: kurgo-loft-wander-dog-bed
     network: Amazon Associates
     url: https://www.amazon.com/dp/B01JFEAL1O?tag={amazonTrackingId}

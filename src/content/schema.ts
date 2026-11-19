@@ -112,13 +112,21 @@ export const guideSchema = z.object({
 export type GuideFrontmatter = z.infer<typeof guideSchema>;
 
 /** Problems with guides' relatedProducts: more than 4, or ids that are not in content/products.yml. Used at build time. */
+/** Product ids written in an article as {{pick:product-id}} or {{pick:product-id|Label}} on a line of their own. */
+export const PICK_DIRECTIVE = /\{\{pick:([a-z0-9-]+)(?:\|[^}\n]*)?\}\}/g;
+export const pickIds = (body: string | undefined): string[] =>
+  [...(body ?? "").matchAll(PICK_DIRECTIVE)].map((m) => m[1]!);
+
 export function relatedProductProblems(
-  guides: { slug: string; relatedProducts?: string[] }[],
+  guides: { slug: string; relatedProducts?: string[]; body?: string }[],
   productIds: Iterable<string>,
 ): string[] {
   const known = new Set(productIds);
   const out: string[] = [];
   for (const g of guides) {
+    for (const id of pickIds(g.body))
+      if (!known.has(id))
+        out.push(`${g.slug}: the text has {{pick:${id}}}, which is not a product id in content/products.yml`);
     const ids = g.relatedProducts ?? [];
     if (ids.length > 4)
       out.push(`${g.slug}: relatedProducts lists ${ids.length} products; the most allowed is 4`);

@@ -2,6 +2,7 @@
 // The same answers drive the disclosure at the top of an article, the link tracking, and the build-time checks.
 import { getApprovedLink, isAmazon, type AffiliateLink } from "./affiliates";
 import { getProduct, type Product } from "./gear";
+import { pickIds } from "./schema";
 
 /** Inline affiliate links are written in an article as [words](aff:link-id). */
 const INLINE = /\]\(aff:([a-z0-9-]+)\)/g;
@@ -25,8 +26,13 @@ export interface AffiliateUsage {
 export function affiliateUsage(guide: {
   body: string;
   gear?: { productId: string }[] | undefined;
+  relatedProducts?: string[] | undefined;
 }): AffiliateUsage {
   const ids = new Set<string>(inlineAffiliateIds(guide.body));
+  for (const id of [...pickIds(guide.body), ...(guide.relatedProducts ?? [])]) {
+    const product = getProduct(id);
+    if (product) ids.add(productLinkId(product));
+  }
   for (const pick of guide.gear ?? []) {
     const product = getProduct(pick.productId);
     if (product) ids.add(productLinkId(product));
@@ -57,4 +63,13 @@ export function productButton(p: Product): ProductButton | undefined {
   return direct
     ? { kind: "direct", url: direct, label: `See it on ${p.brand}'s website` }
     : undefined;
+}
+
+/**
+ * True when the product has an approved affiliate link of its own (so a reader who buys through it earns commission).
+ * Owner decision 2026-11-18: articles call out only products that can earn; the /gear hub still lists every researched product.
+ */
+export function isMonetized(p: { id: string; affiliateId?: string | undefined }): boolean {
+  const l = getApprovedLink(productLinkId(p));
+  return !!l && l.kind !== "stay";
 }

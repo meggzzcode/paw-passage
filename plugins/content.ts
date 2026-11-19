@@ -416,7 +416,7 @@ export function loadContent(
     );
 
   const rpProblems = relatedProductProblems(
-    guides as { slug: string; relatedProducts?: string[] }[],
+    guides as { slug: string; relatedProducts?: string[]; body?: string }[],
     productIds,
   );
   if (rpProblems.length)
@@ -577,7 +577,7 @@ export function contentPlugin(): Plugin {
           const legacy = await loadLegacyGuides(root);
           for (const l of legacy) this.addWatchFile(l.file);
           const lp = relatedProductProblems(
-            legacy.map((l) => l.guide as { slug: string; relatedProducts?: string[] }),
+            legacy.map((l) => l.guide as { slug: string; relatedProducts?: string[]; body?: string }),
             data.products.map((p) => p.id),
           );
           if (lp.length)

@@ -5,7 +5,8 @@ import { describe, expect, it } from "vitest";
 import { routeTree } from "@/routeTree.gen";
 import { guideSchema, relatedProductProblems } from "@/content/schema";
 import { allGuides, loadGuide } from "@/content/guides";
-import { products } from "@/content/gear";
+import { products, getProducts } from "@/content/gear";
+import { isMonetized } from "@/content/affiliate-usage";
 
 const ids = products.map((p) => p.id);
 
@@ -50,7 +51,10 @@ describe("guide page section", () => {
     expect(html).toContain("Gear for this trip");
     expect(html).toContain("Researched, not tested by us");
     expect(html).toContain('href="/gear"');
-    expect(html).toContain("Ruffwear");
+    // The section lists only products that can earn; its first card names that product's brand.
+    const shown = getProducts(g!.relatedProducts ?? []).filter(isMonetized);
+    expect(shown.length).toBeGreaterThan(0);
+    expect(html).toContain(shown[0]!.brand);
     const sources = html.indexOf("Sources and how we researched this");
     const gear = html.indexOf("Gear for this trip");
     const keep = html.lastIndexOf("Keep reading");

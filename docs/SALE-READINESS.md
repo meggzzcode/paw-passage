@@ -1,15 +1,15 @@
 # Sale readiness (planning notes)
 
-Scored 2026-11-18 from the evidence in `docs/recovery/09-traffic-monetization-valuation.md` (section C). These are the owner's planning notes. They are **not a valuation, not market evidence and not a guarantee** of any price.
+Scored 2026-11-18, reasons updated 2026-11-23 to the verified facts in `docs/BUYER_ASSET_INVENTORY.md`; scoring rules unchanged. Scored from the evidence in `docs/recovery/09-traffic-monetization-valuation.md` (section C). These are the owner's planning notes. They are **not a valuation, not market evidence and not a guarantee** of any price.
 
 ## Score (1 to 10; for risk, 10 means lowest risk)
 
 | Category | Score | Why |
 |---|---|---|
 | Traffic quality | 2 | New domain bought 2026-11-17; no traffic data yet. |
-| Revenue and monetization | 2 | Vrbo approved but links are generic; Chewy declined; Stay22 account ID empty; no earnings. Revenue is $0. |
-| Content quality and authority | 6 | Original 38-manager dataset, sourced claims, fact-check documents. Held back by over-hedged prose, no named author (owner's choice) and 15 code-only guides. |
-| Risk and operational stability | 5 | Positives: no backend, tests, buyer handover, accounts excluded from sale. Negatives: Netlify free plan (300-credit hard limit, silent build failures, removable at Netlify's discretion), Lovable config dependency (public npm, no account needed), Pages CMS not yet verified, one affiliate relationship, young domain, dependence on the owner's identity. |
+| Revenue and monetization | 2 | Vrbo approved with 32 per-listing deeplinks (33 approved entries); Amazon tag and 53 approved product links wired to all 53 active products; Chewy declined; Stay22 account ID empty; no earnings. Revenue is $0 (not verifiable from the repo, and the affiliate accounts are the seller's and not part of the sale). |
+| Content quality and authority | 6 | Original 38-manager dataset, 30 published guides with sourced claims and fact-check documents, 32 listed stays (none verified), 53 active products. Held back by over-hedged prose, no named author (owner's choice), 7 code-only guides and 0 verified stays. |
+| Risk and operational stability | 5 | Positives: no backend, tests, buyer handover, accounts excluded from sale. Negatives: Netlify free plan (300-credit hard limit, silent build failures, removable at Netlify's discretion), Lovable config dependency (public npm, no account needed), Pages CMS not yet verified (6 collections defined, never opened in the live app), 486 passing tests, one main affiliate relationship, young domain, dependence on the owner's identity. |
 | **Average** | **3.75** | (2 + 2 + 6 + 5) / 4 |
 
 ## What moves each score
@@ -17,7 +17,7 @@ Scored 2026-11-18 from the evidence in `docs/recovery/09-traffic-monetization-va
 - **Traffic (aim for 9+):** about 12 months of Search Console and GA4 history, steady growth, and three or more meaningful sources with none above roughly 50% (that threshold is a planning rule, not an industry standard). Documentation alone cannot raise this.
 - **Revenue (aim for 9+):** 12 months of statements from two or more affiliate programs, none above roughly 50%, with screenshots or recordings ready. Documentation alone cannot raise this.
 - **Content (aim for 9+):** re-score the guides to 8.5 or better per `docs/audit/PATH-TO-9.md`, refresh the dataset every six months (the weekly Site health workflow flags it), and add an original asset per guide.
-- **Risk (aim for 9+):** cost and account facts are now verified (`docs/COSTS-AND-ACCOUNTS.md`: about $34.86 a year to run, Netlify commercial use not prohibited but removable at will, Lovable not needed), and a rebuild-from-repo runbook exists (`docs/SECURITY-AND-RECOVERY.md`); still open: failure alerts for builds (done in part by the weekly Site health issues), finish the Pages CMS migration and test it, rehearse the transfer, document every account (`docs/OPERATIONS-HANDBOOK.md`), add a second and third affiliate program and a second traffic source.
+- **Risk (aim for 9+):** cost and account facts are now verified (`docs/COSTS-AND-ACCOUNTS.md`: about $34.86 a year to run (from the 2026-11-18 cost record, not re-verified), Netlify commercial use not prohibited but removable at will, Lovable not needed), and a rebuild-from-repo runbook exists (`docs/SECURITY-AND-RECOVERY.md`); still open: failure alerts for builds (done in part by the weekly Site health issues), finish the Pages CMS migration and test it, rehearse the transfer, document every account (`docs/OPERATIONS-HANDBOOK.md`), add a second and third affiliate program and a second traffic source.
 
 ## Planning multiples (owner's, not market evidence)
 
@@ -35,9 +35,13 @@ Formula: value = monthly net profit x multiple. Starter 6 to 12x; Growing 12 to 
 
 Worked example: $500 a month of net profit in the Growing band is 500 x 12 = $6,000 up to 500 x 24 = $12,000.
 
-Where the site stands: monthly net profit is $0 today, so none of these rows applies. Pre-revenue, the site is worth roughly what its assets would cost to rebuild (domain, original dataset, 24 guides, working tools, a portable stack, documentation), not a multiple.
+Where the site stands: monthly net profit is $0 today, so none of these rows applies. Pre-revenue, the site is worth roughly what its assets would cost to rebuild (domain, original dataset, 30 published guides, 4 working tools, 32 listed stays, 53 products, a portable stack, documentation), not a multiple. These planning multiples do not apply to a pre-revenue sale.
 
-Marketplace reference read 2026-11-18: Empire Flippers' public page stated a minimum of $24,000 a year net profit ($2,000 a month) and published multiples of about 2.2x to 2.4x of net profit, so a site below that would not qualify there. No verified comparable for a starter content site was found (other marketplaces blocked reading or showed no multiples).
+Marketplace reference read 2026-11-18 (unverified here): Empire Flippers' public page was noted as having a minimum net profit well above this site's, so it is not a fit. The newer `docs/research/MARKETPLACES-AND-COMPS-2026-11.md` (read 2026-11-23) does not repeat the multiples. No verified comparable for a starter content site was found.
+
+## Owner's immediate-flip objective (2026-11-23)
+
+The owner now intends to sell the site quickly, pre-revenue and turnkey, at an ask of about $1,500. This is a different basis from the scores and multiples above: it prices the built assets (see `docs/BUYER_ASSET_INVENTORY.md`), makes no traffic, ranking or earnings claim, and excludes all accounts, affiliate IDs and links, which the buyer replaces (`docs/TRANSFER_CHECKLIST.md`). The multiples table does not apply to it.
 
 ## What a buyer will want to see
 

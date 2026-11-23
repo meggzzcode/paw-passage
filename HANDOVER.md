@@ -1,58 +1,61 @@
 # Paws & Passage: owner's handbook
 
+*Corrected 2026-11-23 against `docs/BUYER_ASSET_INVENTORY.md`; the Hostinger section is an older test.*
+
 Everything on this site lives in plain files. There is no database, no admin login, and no paid service required. Edit a file, commit it, and publish.
 
 ## Where things live
 
 | What | File |
 | --- | --- |
-| Brand name, tagline, email, site URL, GA4 ID | `src/config/site.ts` |
-| Stays (real, verified) | `src/content/stays/verified.ts` |
+| Email, site URL, GA4 ID, Amazon tag, Pinterest URL, Stay22 ID | `content/settings.yml` (`src/config/site.ts` only reads it) |
+| Stays (37 files; 32 listed, 5 hidden; none verified) | `content/stays/*.yml` (`src/content/stays/verified.ts` holds no records) |
 | Sample stays (preview only, never live) | `src/content/stays/samples.ts` |
-| Affiliate / booking links | `src/content/affiliates.ts` |
+| Gear products (74 records, 53 active) | `content/products.yml` |
+| Affiliate / booking links (96 entries) | `content/affiliates.yml` (`src/content/affiliates.ts` only reads it) |
 | Destinations (states and towns) | `src/content/destinations.ts` |
-| Guides (one file each, with research brief and sources) | `src/content/guides/<slug>.ts` |
+| Guides (33 files: 26 Markdown, 7 legacy code; 30 published) | `content/guides/<slug>.md`; legacy `src/content/guides/<slug>.ts` |
 | Checklist tool items | `src/content/checklist.ts` |
 | Images | `src/assets/` + `src/lib/images.ts` |
 | Policy pages | `src/routes/privacy.tsx`, `terms.tsx`, `affiliate-disclosure.tsx`, `editorial-standards.tsx` |
 
 ## 1. Add a new stay
 1. Confirm with the host: dog count, weight and breed limits, pet fee and its basis, fencing, unattended rules, and **permission to use photos**.
-2. Either add a record to `src/content/stays/verified.ts` (copy the shape from `samples.ts`), or fill in `data/stays-template.csv`, save it as `data/stays.csv`, and run `bun scripts/import-stays.ts data/stays.csv`.
-3. Set `status: "verified"` and `lastVerified: "YYYY-MM-DD"`. Anything not confirmed stays `null` and shows as "Not confirmed". Filters never treat that as a yes.
-4. Only `verified` stays appear on the live site. `sample` stays show only in the private preview.
+2. Either add a file in `content/stays/` (Pages CMS "stays" collection; copy an existing `.yml`), or fill in `data/stays-template.csv`, save it as `data/stays.csv`, and run `bun scripts/import-stays.ts data/stays.csv`.
+3. Set `status: verified` and `lastVerified: YYYY-MM-DD` only after the host confirmed the details (all 37 current stays are `unverified`). Anything not confirmed stays `null` and shows as "Not confirmed". Filters never treat that as a yes.
+4. A stay is listed on the live site only if it has an approved affiliate link (`STAYS_REQUIRE_AFFILIATE_LINK`), verified or not; unverified stays show a "Not yet verified" label. 32 are listed now and 5 are hidden until a link is added. `sample` stays show only in the private preview.
 
 ## 2. Update a stay's pet policy
-Edit the fields in `verified.ts` (`maxDogs`, `petFee`, `fencedYard`, `breedRestrictions`, and so on) and update `lastVerified`.
+Edit the fields in the stay's `.yml` file in `content/stays/` (`maxDogs`, `petFee`, `fencedYard`, `breedRestrictions`, and so on) and update `lastVerified`.
 
 ## 3. Add a destination
 Add a town object to the right state in `src/content/destinations.ts`. Its page at `/destinations/<state>/<town>` and its sitemap entry are created automatically. For a new state, add a state object and extend the `state` type in `src/content/stays/types.ts`.
 
 ## 4. Publish a guide
-1. Copy an existing file in `src/content/guides/` and rename it to `<slug>.ts`. It is picked up automatically.
-2. Write the body in Markdown inside `body`. Fill in `sources`, the `research` brief and `faqs`.
-3. A guide is public only if `status: "published"`, `research.researchComplete` is `true` **and** `research.unverified` is empty (a test also requires `followUps` to be empty and at least five competitor pages read in full). Otherwise it stays a draft: visible in preview only, noindexed, and left out of the sitemap.
+1. Add `content/guides/<slug>.md` (Pages CMS "guides" collection, or copy an existing `.md`); it is picked up automatically. Only 7 legacy guides are still `.ts` files.
+2. Write the body in Markdown. Fill in `sources`, the `research` brief and `faqs`.
+3. A guide is public only if `status: "published"`, `research.researchComplete` is `true`, `research.unverified` is empty **and** `approvedBy` and `approvedOn` are filled (`guideIsPublic`; a test also requires `followUps` to be empty and at least five competitor pages read in full). Otherwise it stays a draft: visible in preview only, noindexed, and left out of the sitemap.
 4. Update `lastReviewed` whenever you re-check facts.
 
 ## 5. Update affiliate links
-Add `{ id, network, url, approved: true }` to `src/content/affiliates.ts` and set `affiliateId` on the stay. Booking buttons appear only for verified stays with an approved link, and they carry `rel="sponsored"`.
+Add an entry (id, network, url, `approved: true`) to `content/affiliates.yml` (or use the Pages CMS "affiliates" collection) and set `affiliateId` on the stay. Amazon links use the tag from `amazonTrackingId` in `content/settings.yml`. Booking buttons appear only for stays with an approved link, and they carry `rel="sponsored"`.
 
 ## 6. Change images
 Put the file in `src/assets/`, register it in `src/lib/images.ts` with alt text, and reference its key. Never show a generic photo as if it were a specific rental.
 
 ## 7. Connect analytics
-Set `ga4MeasurementId` in `src/config/site.ts`. Outbound booking clicks are sent as a `booking_click` event. Nothing is sent while it's empty.
+Set `ga4MeasurementId` in `content/settings.yml`. Outbound booking clicks are sent as a `booking_click` event. Nothing is sent while it's empty.
 
 ## 8. Connect an email service
 There is no newsletter signup on the site (removed by the owner's decision). Research for adding one later is in `docs/LEAD-CAPTURE.md`.
 
 ## 9. Sitemap and domain
-Set `siteUrl` (e.g. `https://pawsandpassage.com`) in `src/config/site.ts`. `/sitemap.xml` then lists every published page; until then it returns 503. Then add `Sitemap: https://yourdomain/sitemap.xml` to `public/robots.txt`.
+`siteUrl` is set in `content/settings.yml` (change it if the domain changes). `/sitemap.xml` lists every published page (98 URLs on 2026-11-23), and `public/robots.txt` already has the Sitemap line (update it for a new domain).
 
 ## 10. Export and deploy elsewhere
 - Connect GitHub in Lovable (Project settings → Git). The repository is a standard TanStack Start + Vite app.
 - Locally: `bun install`, `bun run dev`, `bun run build`, `bunx vitest run`.
-- It builds for Cloudflare Workers by default. Any host that runs TanStack Start works.
+- Production is Netlify (`netlify.toml`); `bun run build` is the default build and `build:node` makes the Node build. Any host that runs TanStack Start works.
 
 ## Deploying on Hostinger (Node.js web app)
 
@@ -65,15 +68,14 @@ Tested 2026-11-16: the app builds as a plain Node server and renders pages on th
 - **Output directory:** `.output`  **Entry file:** `server/index.mjs` (relative to the output directory).
 - **Port:** the server reads `PORT`, which Hostinger sets.
 - **Limits to know:** each request is cut off after 120 seconds, no inbound WebSockets, no always-on background workers, and all Node apps on a plan share one process and memory pool (Business: 5 apps). This site needs none of those; it used about 95 MB of memory in testing.
-- After switching on a domain, set `siteUrl` in `src/config/site.ts` and redeploy so canonical tags and the sitemap use it.
+- After switching on a domain, set `siteUrl` in `content/settings.yml` and redeploy so canonical tags and the sitemap use it.
 - Lovable's built-in publish and Hostinger are separate deployments. Pick one as the live site so the two don't drift.
 
 ## Transferring the business
 Hand over: the GitHub repo, the domain registrar, the GA4 property (add the buyer as admin), the email-service account (export subscribers), and each affiliate account (most networks need the new owner to re-apply).
 
 ## Still needed before launch
-- Business email (`contactEmail`), domain (`siteUrl`), GA4 ID.
-- Approved affiliate partnerships.
-- Real verified stays.
+- Already configured (seller's accounts): business email, domain, GA4 ID, Vrbo and Amazon approvals. The buyer must replace these with their own.
+- Real verified stays (none of the 37 is verified).
 - Legal pages: the owner decided (2026-11-17) not to get a legal review. They are unreviewed drafts.
 - Each guide's `research.followUps` lists optional editor follow-ups, such as competitor pages that could only be read as search excerpts.

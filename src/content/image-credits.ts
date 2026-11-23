@@ -5,6 +5,12 @@ export type ImageCredit = { key: ImageKey; photographer: string; unsplashUrl: st
 // All photos are used under the Unsplash License (https://unsplash.com/license).
 export const imageCredits: ImageCredit[] = [
   {
+    key: "hero-porch",
+    photographer: "Cody Scott Milewski",
+    unsplashUrl:
+      "https://unsplash.com/photos/siberian-husky-lying-on-brown-wooden-floor-ubDougWF758",
+  },
+  {
     key: "guide-ga-cabins",
     photographer: "Kristīne Kozaka",
     unsplashUrl: "https://unsplash.com/photos/sf9K6IdfQFM",

@@ -98,7 +98,7 @@ const stockImages = {
   "hero-porch": {
     src: heroPorch,
     card: heroPorch800,
-    alt: "A golden retriever resting on a cabin porch above misty mountains at sunset",
+    alt: "A husky with blue eyes lying on a wooden porch in dappled sunlight, with leafy woods behind",
   },
   "guide-ga-cabins": {
     src: gaCabins,
@@ -372,7 +372,7 @@ export function srcSetFor(key: ImageKey): string | undefined {
 }
 
 /**
- * Portrait phone crop of the home hero: the centre 720 x 907 px of hero-porch.jpg (same source pixels, so as sharp as the 1600 px file on a phone,
+ * Portrait phone crop of the home hero: a 720 x 907 px crop of hero-porch.jpg around the dog (same source pixels, so as sharp as the 1600 px file on a phone,
  * where the hero is cropped by object-fit: cover anyway) at about 40% of the bytes. Used by the home hero through <picture media=...>.
  */
 export const HERO_MOBILE = {

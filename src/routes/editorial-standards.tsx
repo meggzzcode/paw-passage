@@ -41,7 +41,7 @@ Stays are listed with the pet policy, fees and fencing details we could find on 
 
 ## Images
 
-Photos on our guides and destination pages are licensed stock photographs (Unsplash License). All images are shown for illustration only and are not pictures of a specific rental. Property photos appear only with the owner's permission.
+Photos on our guides, destination pages and the home page are licensed from Unsplash under the Unsplash License, which gives us the right to use them. We do not own them and claim no exclusive rights in them. All images are shown for illustration only and are not pictures of a specific rental. Property photos appear only with the owner's permission.
 
 ## Money
 

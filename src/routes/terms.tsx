@@ -39,7 +39,7 @@ You are responsible for your dog's safety and behavior, and for following local 
 
 The text, design and tools on this site belong to Paws & Passage. You're welcome to share links and short quotes with attribution. Please don't republish whole guides.
 
-Images are for illustration only. Most are licensed stock photographs (Unsplash License); some, such as the large image at the top of the home page, are AI-generated illustrations rather than photographs. None is a picture of a specific rental.
+Images are for illustration only. Photos, including the large photo at the top of the home page, are licensed from Unsplash under the Unsplash License, which gives us the right to use them. We do not own them and claim no exclusive rights in them. None is a picture of a specific rental.
 
 ## Liability
 

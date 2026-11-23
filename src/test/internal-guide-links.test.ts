@@ -9,7 +9,7 @@ const publicSlugs = new Set(allGuides.filter(isPublic).map((g) => g.slug));
 const published = allGuides.filter(isPublic);
 
 function guideLinks(text: string): string[] {
-  return [...text.matchAll(/\]\(\/guides\/([a-z0-9-]+)\)/g)].map((m) => m[1]);
+  return [...text.matchAll(/\]\(\/guides\/([a-z0-9-]+)\)/g)].map((m) => m[1] ?? "");
 }
 
 describe("internal guide links point at public guides", () => {
@@ -66,7 +66,7 @@ describe("internal guide links point at public guides", () => {
   it("products.yml relatedGuides are public", () => {
     const yml = readFileSync(resolve(root, "content/products.yml"), "utf8");
     for (const m of yml.matchAll(/relatedGuides:\n((?: {6}- .*\n)+)/g)) {
-      for (const line of m[1].trim().split("\n")) {
+      for (const line of (m[1] ?? "").trim().split("\n")) {
         const slug = line.replace(/^\s*-\s*/, "").trim();
         expect(publicSlugs.has(slug), `products.yml relatedGuides: ${slug}`).toBe(true);
       }

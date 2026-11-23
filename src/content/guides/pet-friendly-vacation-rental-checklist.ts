@@ -17,7 +17,7 @@ export const guide: Guide = {
   heroImage: "guide-rental-checklist",
   body: `You found a cabin with a hot tub and a "pets welcome" badge, and then checkout adds a pet fee, a cleaning charge and a rule about leaving the dog alone that none of the photos mentioned. Every line below is a question that would have caught it before you paid. Work top to bottom, and stop at the first line you cannot answer. Pool and hot tub access is its own question; see [whether dogs can use a rental's pool or hot tub](/guides/can-dogs-go-in-a-rental-pool-or-hot-tub).
 
-Tick it off on your phone in the [interactive checklist](/tools/checklist), and get the real total for your dog count and dates in the [pet cost check](/tools/pet-cost-check). If a listing already feels off, our guide to [pet-friendly listing red flags](/guides/pet-friendly-listing-red-flags) shows which wording to question.
+Tick it off on your phone in the [interactive checklist](/tools/checklist), and get the real total for your dog count and dates in the [pet cost check](/tools/pet-cost-check). If a listing already feels off, question the vague wording before you book.
 
 ## The 8-item booking gate
 
@@ -41,7 +41,7 @@ Check the exact unit, not the manager's portfolio. Vrbo's house-rules guidance l
 - [ ] Count, weight (per dog or combined), breed and age limits written down.
 - [ ] Approval received in the booking channel, naming each dog and the dates.
 
-Weight limits are real and they differ a lot. Across the 38 managers in our convenience sample (public pages read 2026-11-18), six state one, from 35 to 65 pounds. Our [large-dog guide](/guides/vacation-rentals-that-welcome-large-dogs) names them, and the [two-dog guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental) covers counts and combined weight. For a quick yes or no on your own dog, try the [acceptance tool](/tools/will-my-dog-be-accepted). Breed rules have their own [guide](/guides/breed-restrictions-at-vacation-rentals). The two managers that state no weight limit are covered in [rentals with no dog weight limit](/guides/vacation-rentals-with-no-dog-weight-limit), and puppies face their own age questions in our [puppy rental guide](/guides/puppy-at-a-vacation-rental).
+Weight limits are real and they differ a lot. Across the 38 managers in our convenience sample (public pages read 2026-11-18), six state one, from 35 to 65 pounds. Our [large-dog guide](/guides/vacation-rentals-that-welcome-large-dogs) names them, and the [two-dog guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental) covers counts and combined weight. For a quick yes or no on your own dog, try the [acceptance tool](/tools/will-my-dog-be-accepted). Ask about breed rules in writing too. The two managers that state no weight limit are covered in [rentals with no dog weight limit](/guides/vacation-rentals-with-no-dog-weight-limit), and puppies face their own age questions in our [puppy rental guide](/guides/puppy-at-a-vacation-rental).
 
 ## Price
 
@@ -127,7 +127,7 @@ Some lines above turn into a packing decision. Bring only what answers a line yo
 - **What most people report:** no survey here; the manager figures come from 38 managers, a convenience sample read 2026-11-18.
 - **Unknown, so ask:** your exact unit's rules, fees and insurer conditions, in writing.
 
-Booked somewhere that says no pets? Read [what happens if you bring a dog to a no-pets rental](/guides/bringing-a-dog-to-a-no-pets-rental). Choosing a platform? See [Airbnb vs Vrbo with a dog](/guides/how-vacation-rental-pet-fees-work). Next step: run the [pet cost check](/tools/pet-cost-check), then save your answers in the [checklist tool](/tools/checklist).
+Booked somewhere that says no pets? Ask the manager before you travel rather than bringing the dog unapproved. Choosing a platform? See [Airbnb vs Vrbo with a dog](/guides/how-vacation-rental-pet-fees-work). Next step: run the [pet cost check](/tools/pet-cost-check), then save your answers in the [checklist tool](/tools/checklist).
 `,
   faqs: [
     {
@@ -162,7 +162,6 @@ Booked somewhere that says no pets? Read [what happens if you bring a dog to a n
     "vacation-rentals-that-welcome-large-dogs",
     "airbnb-pet-damage-charge-after-checkout",
     "can-you-leave-a-dog-alone-in-a-vacation-rental",
-    "pet-friendly-listing-red-flags",
     "vacation-rentals-with-no-dog-weight-limit",
     "puppy-at-a-vacation-rental",
   ],

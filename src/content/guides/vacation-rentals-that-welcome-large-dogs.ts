@@ -17,7 +17,7 @@ export const guide: Guide = {
   heroImage: "guide-large-dogs",
   body: `## The short answer
 
-You found the cabin, the listing says "dogs welcome," and your Lab is 80 pounds. Then the rules page says 50. In the 38-manager sample we read, six state a weight limit, and the limits run from 35 to 65 pounds, so "welcome" tells you very little until you know whose number applies to your dog. If a listing's wording feels vague, see [pet-friendly listing red flags](/guides/pet-friendly-listing-red-flags).
+You found the cabin, the listing says "dogs welcome," and your Lab is 80 pounds. Then the rules page says 50. In the 38-manager sample we read, six state a weight limit, and the limits run from 35 to 65 pounds, so "welcome" tells you very little until you know whose number applies to your dog. If a listing's wording feels vague, ask the host to spell it out.
 
 - A pets-allowed filter is only the first screen. Test every rental twice: does the rule explicitly allow this dog (permission), and can this dog move, rest and toilet comfortably there (practical fit)?
 - "Large dogs considered" means ask, not yes. Get approval in writing, naming your dog's current weight and breed.
@@ -111,7 +111,7 @@ Do not plan around lifting. A ramp spreads the climb over a gentler slope, and a
 
 ## When a breed rule applies
 
-Restrictions can come from an owner, insurer, association or building. The Insurance Information Institute reports that insurers vary: some restrict certain breeds, some assess individual dogs, and some do not ask about breed. [[10]](https://www.iii.org/article/spotlight-on-dog-bite-liability) So "insurance won't allow it" is a real limit for some properties and not a universal one. Ask whether it is a firm property or insurer rule, or whether the host can approve your dog in writing. If the answer is no, move on, since a vague verbal exception that conflicts with the written agreement is no help. For named-breed lists, see the [breed restrictions guide](/guides/breed-restrictions-at-vacation-rentals).
+Restrictions can come from an owner, insurer, association or building. The Insurance Information Institute reports that insurers vary: some restrict certain breeds, some assess individual dogs, and some do not ask about breed. [[10]](https://www.iii.org/article/spotlight-on-dog-bite-liability) So "insurance won't allow it" is a real limit for some properties and not a universal one. Ask whether it is a firm property or insurer rule, or whether the host can approve your dog in writing. If the answer is no, move on, since a vague verbal exception that conflicts with the written agreement is no help. For named-breed lists, ask the manager for the written policy.
 
 A pet health policy is a different product from liability cover for injuries or damage your dog causes. [[11]](https://www.iii.org/article/facts-about-pet-insurance) Check with your own insurer whether liability extends to a temporary rental.
 
@@ -158,7 +158,6 @@ Put your dog's weight into the [will my dog be accepted tool](/tools/will-my-dog
     "how-vacation-rental-pet-fees-work",
     "dog-friendly-cabin-packing-list",
     "vacation-rentals-with-no-dog-weight-limit",
-    "pet-friendly-listing-red-flags",
   ],
   relatedProducts: [
     "kurgo-rover-hammock-extended-width",

@@ -26,7 +26,6 @@ faqs:
     a: A card-privacy company's guide says that once you file one, Airbnb can no longer resolve the issue directly, and the two cases we read had mixed outcomes. Use the platform process first, and check your card issuer's own rules.
 relatedGuides:
   - how-vacation-rental-pet-fees-work
-  - bringing-a-dog-to-a-no-pets-rental
   - pet-friendly-vacation-rental-checklist
   - can-you-leave-a-dog-alone-in-a-vacation-rental
   - what-a-dog-really-costs-on-a-vacation-rental
@@ -214,7 +213,7 @@ A pet fee is meant for expected costs. Airbnb says pet fees should cover expecte
 | Ordinary hair after a paid pet fee | Fee covers expected costs [[5]](https://www.airbnb.com/d/guarantee) | Ask what extra work was needed |
 | Stain, odor or scratches | Pet accidents and stains listed as reimbursable [[5]](https://www.airbnb.com/d/guarantee) | Dated photos, itemized claim |
 | Dog not declared | Vrbo claims can cover undeclared pets [[8]](https://help.vrbo.com/articles/What-happens-if-my-card-on-file-is-charged-for-property-damage) | Read the listing and booking terms |
-| Listing said no pets | Airbnb says not to bring pets to such listings [[4]](https://www.airbnb.com/help/article/2894) | See our [no-pets guide](/guides/bringing-a-dog-to-a-no-pets-rental), which covers manager penalties for unapproved dogs |
+| Listing said no pets | Airbnb says not to bring pets to such listings [[4]](https://www.airbnb.com/help/article/2894) | Manager penalties for unapproved dogs can apply too |
 
 ## How Vrbo differs
 

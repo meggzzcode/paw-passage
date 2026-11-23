@@ -61,7 +61,6 @@ export const dogTypes: DogType[] = [
     ],
     guideSlugs: [
       "vacation-rentals-that-welcome-large-dogs",
-      "breed-restrictions-at-vacation-rentals",
       "how-vacation-rental-pet-fees-work",
       "how-many-dogs-can-you-bring-to-a-vacation-rental",
       "dog-car-safety-harness-and-crate-guide",

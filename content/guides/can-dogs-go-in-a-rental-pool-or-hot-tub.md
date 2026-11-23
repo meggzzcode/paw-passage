@@ -29,7 +29,6 @@ faqs:
 relatedGuides:
   - airbnb-pet-damage-charge-after-checkout
   - how-vacation-rental-pet-fees-work
-  - bringing-a-dog-to-a-no-pets-rental
   - can-you-leave-a-dog-alone-in-a-vacation-rental
 relatedProducts:
   - soggy-doggy-super-shammy-towel

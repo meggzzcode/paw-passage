@@ -30,8 +30,6 @@ relatedGuides:
   - pet-friendly-vacation-rental-checklist
   - vacation-rental-secure-fenced-yard
   - airbnb-pet-damage-charge-after-checkout
-  - bringing-a-dog-to-a-no-pets-rental
-  - pet-friendly-listing-red-flags
   - what-a-dog-really-costs-on-a-vacation-rental
 embeddedTool: pet-cost-workflow
 relatedProducts:
@@ -152,7 +150,7 @@ In our reading of 38 vacation rental managers' public pet pages (a convenience s
 - Refundable deposits and card holds belong in a separate column from definite expenses.
 - Where the ADA applies, pet fees and deposits must be waived for service animals. [[7]](https://www.ada.gov/resources/service-animals-2010-requirements/)
 
-To see whether a specific home will take your dog at all, start with the [will my dog be accepted tool](/tools/will-my-dog-be-accepted); to total the charges, use the [pet cost check](/tools/pet-cost-check) below. If a listing's pet wording looks vague, our guide to [pet-friendly listing red flags](/guides/pet-friendly-listing-red-flags) shows what to question.
+To see whether a specific home will take your dog at all, start with the [will my dog be accepted tool](/tools/will-my-dog-be-accepted); to total the charges, use the [pet cost check](/tools/pet-cost-check) below. If a listing's pet wording looks vague, ask the host to confirm it in writing.
 
 ## What 38 managers actually charge
 
@@ -254,7 +252,7 @@ A pet fee may not cover damage, so the deposit or a later claim is where a muddy
 
 ## If a charge surprises you
 
-Save the listing terms, booking price and messages. Ask the host to identify the charge and show the calculation, and check where it was disclosed before you booked. If the explanation conflicts with the booking, contact platform support, and do not pay an unexplained duplicate just to end the conversation. After checkout, ask for an itemized explanation separating ordinary cleaning from alleged damage; our [Airbnb post-checkout damage guide](/guides/airbnb-pet-damage-charge-after-checkout) walks through that. If your dog stayed at a home that said no pets, the penalties are a different story, covered in [what happens if you bring a dog to a no-pets rental](/guides/bringing-a-dog-to-a-no-pets-rental).
+Save the listing terms, booking price and messages. Ask the host to identify the charge and show the calculation, and check where it was disclosed before you booked. If the explanation conflicts with the booking, contact platform support, and do not pay an unexplained duplicate just to end the conversation. After checkout, ask for an itemized explanation separating ordinary cleaning from alleged damage; our [Airbnb post-checkout damage guide](/guides/airbnb-pet-damage-charge-after-checkout) walks through that. If your dog stayed at a home that said no pets, the penalties are a different story, and the manager's own pet policy sets them.
 
 ## Questions to send before you book
 

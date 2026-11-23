@@ -28,7 +28,6 @@ relatedGuides:
   - how-vacation-rental-pet-fees-work
   - vacation-rentals-that-welcome-large-dogs
   - pet-friendly-vacation-rental-checklist
-  - bringing-a-dog-to-a-no-pets-rental
   - vacation-rentals-with-no-dog-weight-limit
 relatedProducts:
   - north-states-mypet-universal-petgate
@@ -294,7 +293,7 @@ Compare totals with the [pet cost check tool](/tools/pet-cost-check) and our [pe
 
 ## What if you bring more dogs than the listing allows?
 
-Managers treat it as a serious violation: Twiddy calls it cause for termination of tenancy [[5]](https://www.twiddy.com/outer-banks/guests/pets/), Brindley Beach says eviction without refund [[6]](https://www.brindleybeach.com/node/3691), and Cabin Rentals of Georgia says "all pet fees will be doubled" [[7]](https://cabin-rentals-of-georgia.com/policies). What the platforms do is unknown. For the full picture of penalties and what to do instead, read [bringing a dog to a no-pets rental](/guides/bringing-a-dog-to-a-no-pets-rental). The safe move is the message below, sent before you book.
+Managers treat it as a serious violation: Twiddy calls it cause for termination of tenancy [[5]](https://www.twiddy.com/outer-banks/guests/pets/), Brindley Beach says eviction without refund [[6]](https://www.brindleybeach.com/node/3691), and Cabin Rentals of Georgia says "all pet fees will be doubled" [[7]](https://cabin-rentals-of-georgia.com/policies). What the platforms do is unknown. The safe move is the message below, sent before you book.
 
 ## Do puppies and service animals count?
 
@@ -309,7 +308,7 @@ Hosts cite insurance, noise, hair, local caps and neighbours [[14]](https://blog
 
 > Hi [Host], we are interested in [dates]. We would bring [number] dogs: [breed, weight and age of each]. All are house-trained and current on vaccines. Your listing allows pets but [does not give a number / says two]. Would you consider [number] dogs? Is there a weight limit per dog or combined? What is the total pet charge for our dates, and will it appear in the checkout total? We are happy to use covers on furniture and keep the dogs off beds, and we will feed them in separate spaces. If yes, please confirm here in writing.
 
-Keep the reply in the booking thread and screenshot it. If the answer is no, see [bringing a dog to a no-pets rental](/guides/bringing-a-dog-to-a-no-pets-rental).
+Keep the reply in the booking thread and screenshot it. If the answer is no, do not bring the dog on the hope it goes unnoticed; the penalties above are the risk.
 
 Before you book:
 

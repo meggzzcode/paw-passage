@@ -28,7 +28,6 @@ faqs:
     a: That is a separate bill. Our guides on a pet damage charge after checkout and on bringing a dog to a no-pets rental cover both.
 relatedGuides:
   - how-vacation-rental-pet-fees-work
-  - bringing-a-dog-to-a-no-pets-rental
   - airbnb-pet-damage-charge-after-checkout
   - vacation-rentals-with-no-pet-fee
   - how-many-dogs-can-you-bring-to-a-vacation-rental
@@ -260,7 +259,7 @@ A $0 pet fee is not a promise of a cheaper trip. Twiddy lists ten homes with no 
 Two bills are not part of the plan, and both are avoidable.
 
 - **Damage and extra cleaning after checkout.** A pet fee does not stand in for a damage claim. If a charge appears afterwards, [what to do about an Airbnb pet damage charge after checkout](/guides/airbnb-pet-damage-charge-after-checkout) walks through asking for an itemized explanation.
-- **A dog the booking did not approve.** Cabin Rentals of Georgia says all pet fees are doubled if an unapproved dog is found. [[7]](https://cabin-rentals-of-georgia.com/policies) Tahoe Vacation Rentals lists a $300 nonrefundable per-pet charge and immediate departure for a pet in a non-pet-friendly home. [[9]](https://www.tahoevacationrentals.com/reservation-information/) The full picture is in [what happens if you bring a dog to a no-pets rental](/guides/bringing-a-dog-to-a-no-pets-rental).
+- **A dog the booking did not approve.** Cabin Rentals of Georgia says all pet fees are doubled if an unapproved dog is found. [[7]](https://cabin-rentals-of-georgia.com/policies) Tahoe Vacation Rentals lists a $300 nonrefundable per-pet charge and immediate departure for a pet in a non-pet-friendly home. [[9]](https://www.tahoevacationrentals.com/reservation-information/)
 
 ## Small gear to pack
 

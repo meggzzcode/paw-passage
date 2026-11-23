@@ -27,7 +27,6 @@ faqs:
 relatedGuides:
   - vacation-rentals-that-welcome-large-dogs
   - how-many-dogs-can-you-bring-to-a-vacation-rental
-  - breed-restrictions-at-vacation-rentals
   - pet-friendly-vacation-rental-checklist
   - how-vacation-rental-pet-fees-work
 relatedProducts:
@@ -221,7 +220,7 @@ The same two syllables, "limit," hide very different rules. Use the manager exam
 
 Hostaway's host guide advises stating size limits numerically and says some hosts set none. [[14]](https://www.hostaway.com/vacation-rental-guide/pet-friendly-hosting/policies/) That is the advice to hosts; many pages still use soft words, so ask for the number in writing.
 
-Breed rules ride separately. Elk Springs, Emmons Realty and Cabin Rentals of Georgia all pair weight with breed or other rules, so a dog under the number can still be turned away. See our [breed restrictions guide](/guides/breed-restrictions-at-vacation-rentals).
+Breed rules ride separately. Elk Springs, Emmons Realty and Cabin Rentals of Georgia all pair weight with breed or other rules, so a dog under the number can still be turned away. Ask about breed in writing before you book.
 
 ## Where Airbnb and Vrbo put size
 
@@ -252,7 +251,7 @@ Why it works: it gives a number, a date, and one clear question, and it leaves t
 
 Hearthside's page also warns that a pet found in a cabin not designated as pet-friendly can bring "a fee of up to $500 for additional cleaning and/or misrepresentation," so do not assume an approved dog can stay anywhere in a manager's inventory. Service animals are a separate matter: Airbnb says hosts must accept them even if they do not allow pets (with limited health and safety exceptions), and Hostaway's host guide says they cannot be subject to size restrictions. [[11]](https://www.airbnb.com/help/article/86) [[14]](https://www.hostaway.com/vacation-rental-guide/pet-friendly-hosting/policies/)
 
-If you are told no, the answer to a booked-anyway plan is usually the same as for any pet rule; our [guide to bringing a dog to a no-pets rental](/guides/bringing-a-dog-to-a-no-pets-rental) covers what can follow.
+If you are told no, the answer to a booked-anyway plan is usually the same as for any pet rule: do not bring the dog anyway, because unapproved-pet penalties can follow.
 
 ## Gear for a big dog once you are approved
 

@@ -1,0 +1,9 @@
+# T3: GA4 and Search Console, for an honest traffic statement (login: Megan, Google)
+
+Confirm the Google account is Megan's (`megan.bhag@gmail.com`) and the properties are Paws & Passage (GA4 property with measurement ID G-1J97C8CPC1; Search Console domain property pawsandpassage.com). Read-only. Do NOT add users, link accounts, change settings, validate fixes or request indexing in this task.
+
+GA4, date range 2026-11-17 to today: record total sessions, users and engaged sessions. Then break down and record (top 10 rows each, numbers only): (a) Traffic acquisition by Session default channel group (we already saw Direct 450, Paid Search 11, Referral 2: confirm and report Paid Search's source/medium); (b) Reports > Tech or Demographics: sessions by country and by city (top 10), and by device category; (c) sessions by Hostname if available; (d) whether the property has any Data filters (Admin > Data collection > Data filters) or internal traffic definitions: record only whether they exist and their status. Note whether the numbers include our own visits (the owner's and automated checks) as far as you can tell (for example many sessions from one city or a data-center ISP); do not guess, write UNVERIFIED if unsure.
+
+Search Console: Sitemaps (status, last read, discovered pages); Pages (Indexing) report: indexed and not indexed counts and every reason listed with counts; Performance: total clicks, impressions, average position, and the top 10 pages and top 10 queries with impressions and position (numbers only) for the full available date range; Links: whether any external links are listed (count only).
+
+Result file: `results/T3-traffic-and-indexing-results.md`. End with a 3-line plain statement the owner could put in a listing, using only the numbers you saw, and say which parts probably include our own traffic.

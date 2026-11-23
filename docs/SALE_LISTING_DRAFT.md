@@ -26,7 +26,7 @@ This is a **new, pre-revenue starter site**. It has **no traffic history and no 
 - No affiliate accounts: the seller's Amazon Associates ID, Vrbo/Expedia deeplinks, Impact and Awin accounts, Google Analytics property and Search Console access do not transfer. You apply for your own. The site's links are wired through two config files (`content/settings.yml`, `content/affiliates.yml`).
 - No Pinterest account, no social accounts, no email list (by design) and no business mailbox (you set up your own).
 - No warranty of any future income, indexing or ranking. Sold as is.
-- A small number of items need your decision at closing: the copyright and image notes, and the repo history (full history or a fresh squashed copy).
+- A small number of items need your decision at closing: the copyright and image notes (the home hero is a credited Unsplash photo: unsplash gives usage rights, not ownership or exclusivity), and the repo history (full history or a fresh squashed copy).
 
 ## Honest risks the buyer should weigh
 - Brand-new domain: expect little organic traffic for months even when the pages are indexed.

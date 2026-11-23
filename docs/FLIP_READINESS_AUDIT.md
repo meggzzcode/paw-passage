@@ -8,7 +8,7 @@ Objective (owner, 2026-11-23): sell the site as a turnkey, pre-revenue starter a
 | Traffic | 2 | No GA4 or Search Console data has been read by us. Domain registered 2026-11-17, sitemap of 98 URLs is live and crawlable (VERIFIED). Whether Google has indexed anything is UNVERIFIED. |
 | Revenue | 1 | $0. No affiliate earnings exist; Vrbo and Amazon links are wired through accounts that do not transfer (VERIFIED). |
 | Content | 6 | 30 published guides, about 76,900 words, 491 citations, an original 38-manager dataset (VERIFIED). Held back by: researched not hands-on, no named author by design, dataset is a one-time convenience sample. |
-| Risk | 5 | Positive: no backend, permissive licenses only, no secrets found, tests and build pass, handover docs exist. Negative: no LICENSE or assignment text, seller IDs in the site, an undocumented hero image, no legal review, domain transfer lock rule unverified, young domain. |
+| Risk | 5 | Positive: no backend, permissive licenses only, no secrets found, tests and build pass, handover docs exist. Negative: no LICENSE or assignment text, seller IDs in the site, an AI hero image (now replaced, see blocker 4), no legal review, domain transfer lock rule unverified, young domain. |
 | **Average** | **3.5** | (2 + 1 + 6 + 5) / 4. Do not quote this to buyers; it is an internal planning score. |
 
 ## 2. Is $1,500 defensible?
@@ -22,7 +22,7 @@ Trade-off the owner should know: waiting 3 to 6 months for real traffic data wou
 | 1 | Branch fixes not merged to `main`. Production still has the retired Sleepypod Clickit Sport Plus and Backseat Bridge cards (no buy box on Amazon) and 54 active products instead of 53 | inventory "Branch vs live"; Amazon check 2026-11-18 | Listing | Owner says "merge", Claude merges |
 | 2 | Eight live guides link to the three draft guides, which return 404 (D1) | live-QA audit | Listing | Claude (worker running; regression test added) |
 | 3 | 22 of 24 Vrbo deeplinks unverified because Vrbo returns 429 to bots (D2) | live-QA audit | Listing (the listing says stays earn through Vrbo) | Cowork/owner click test |
-| 4 | Hero image `hero-porch*.jpg` has no recorded source or rights (an AI image per Editorial Standards line 44) | audit-legal-transfer | Listing (honesty) | OWNER decides the wording or replaces it |
+| 4 | RESOLVED: hero image `hero-porch*.jpg` had no recorded source or rights (an AI image). Owner decision: replaced with a credited Unsplash photo (Cody Scott Milewski, Unsplash License). Unsplash gives usage rights, not ownership or exclusivity. | audit-legal-transfer | Listing (honesty) | Done |
 | 5 | No traffic/GA/GSC evidence collected | none read | Listing (honest statement needs numbers) | Cowork B4 B5 |
 | 6 | No LICENSE and no copyright assignment or bill of sale text | audit-legal-transfer | Closing | OWNER |
 | 7 | Namecheap transfer-lock rule for a new domain is unverified | docs conflict | Closing | Cowork B2 |
@@ -40,7 +40,7 @@ Categories: A Claude/code, B Cowork/browser, C Owner-only, D Not needed. Priorit
 | T3 | B | P0 | Vrbo deeplink click test: open each of the 24 booking links in the owner's browser, confirm each lands on the right listing (slow, never hammer) | Stay pages are the monetization story | Cowork or owner | T1 | 45 min | Table of 24 links: lands OK / wrong / dead; evidence | Yes |
 | T4 | B | P0 | GA4 and Search Console evidence (brief B4, B5) | The honest traffic statement | Cowork | none | 20 min | Screenshots with dates, exact numbers | Yes |
 | T5 | B | P0 | Domain proof and Namecheap transfer/lock rules (B1, B2) | Proves ownership; avoids a closing surprise | Cowork | none | 20 min | Screenshots; quoted official wording | Yes |
-| T6 | C | P0 | Decide the hero image (keep with AI disclosure in the listing, or replace) | Rights and honesty | Owner | none | 15 min | Written decision | Yes |
+| T6 | C | P0 | Decide the hero image (keep with AI disclosure in the listing, or replace). DONE: replaced with a credited Unsplash photo | Rights and honesty | Owner | none | 15 min | Written decision | Yes |
 | T7 | A | P0 | Re-run tests and build on final `main`; refresh inventory numbers | Verified-works evidence | Claude | T1 | 15 min | Updated inventory | Yes |
 | T8 | C | P0 | Approve the listing text and decide price floor and offers policy | Final selling decisions | Owner | T3,T4 | 30 min | Approved `SALE_LISTING_DRAFT.md` | Yes |
 | T9 | B | P1 | Marketplace requirements verified in browser (B9) and comps (B10) | Correct fees and a realistic price | Cowork | none | 45 min | Research file section | No (informs T8) |

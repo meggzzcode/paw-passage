@@ -24,7 +24,7 @@ This file does not repeat the detailed procedures. Follow them in: `docs/DNS-AND
 | Pages CMS | BUYER MUST REPLACE (re-link) | Account-less tool; buyer signs in with GitHub and installs the Pages CMS GitHub App on the repo owner (`.pages.yml`). Not yet opened live per its own header comment. |
 | Code and original content | TRANSFERS (by assignment) | Needs a written assignment; no LICENSE file exists. |
 | Unsplash photos | TRANSFERS as licensed use (not ownership) | Unsplash License is non-exclusive; credits must stay. |
-| AI-generated home hero | OWNER DECISION | Generator and terms not recorded (UNVERIFIED). |
+| Home hero image | RESOLVED | Replaced with a credited Unsplash photo. Unsplash gives usage rights, not ownership or exclusivity. |
 | Dataset CSV | OWNER DECISION / risk | Facts compiled from manager pages; terms-of-use not reviewed. |
 | GA4 property (G-1J97C8CPC1) | NOT TRANSFERABLE as the seller's login; BUYER MUST REPLACE (or have access granted) | Property admin can be added to the buyer's Google account, but the owner must do that. Default: buyer creates own property. |
 | Search Console property | BUYER MUST REPLACE | Verification file and ownership are per account. |
@@ -80,10 +80,10 @@ This file does not repeat the detailed procedures. Follow them in: `docs/DNS-AND
 ## 6. Content and images
 
 - **Who acts:** Seller assigns rights in writing; buyer swaps seller-specific text.
-- **Steps:** (a) Signed assignment of copyright in the original text, code and docs (no LICENSE file exists). (b) Keep `src/content/image-credits.ts` and `src/content/pack-photos.ts` intact: all guide/gear/destination photos are credited Unsplash photographers; the home hero (`hero-porch*.jpg`) is described as AI-generated (`src/routes/editorial-standards.tsx`). (c) Buyer edits the About page byline paragraph (`src/routes/about.tsx`) and legal pages (see section 14 and the audit).
+- **Steps:** (a) Signed assignment of copyright in the original text, code and docs (no LICENSE file exists). (b) Keep `src/content/image-credits.ts` and `src/content/pack-photos.ts` intact: all guide/gear/destination photos are credited Unsplash photographers; the home hero (`hero-porch*.jpg`) is now a credited Unsplash photo too (unsplash gives usage rights, not ownership or exclusivity). (c) Buyer edits the About page byline paragraph (`src/routes/about.tsx`) and legal pages (see section 14 and the audit).
 - **Do not claim** "unique photos" or product photography; the brief states maker photos are not licensed (`docs/PRODUCT-PHOTOS.md`).
-- **Evidence:** signed assignment; export of image credits; hero image generation record (seller to supply, UNVERIFIED).
-- **Risk:** Medium (hero provenance; derived `public/pins` and `public/share` images were made from the site's photos, rights chain UNVERIFIED).
+- **Evidence:** signed assignment; export of image credits; hero photo credit in `src/content/image-credits.ts`.
+- **Risk:** Medium (derived `public/pins` and `public/share` images were made from the site's photos, rights chain UNVERIFIED).
 
 ## 7. Dataset
 

@@ -13,7 +13,7 @@ Evidence rules: screenshots and exports go to a **private** folder the owner nam
 
 ## 2. Current verified website state (2026-11-23)
 From `docs/BUYER_ASSET_INVENTORY.md`: 30 published guides (about 76,900 words, 166 FAQs, 491 citations), 3 draft guides (404 on the live site on purpose); an original 38-manager pet-policy dataset (`public/pet-policies-38-managers.csv`, page `/data/pet-policies`); 37 stay files, 32 listed and earning via approved Vrbo deeplinks, 5 hidden; 4 live tools; a gear hub with 53 active products, all with approved Amazon links (tag `pawspassage-20`); 98-URL sitemap; 30 Pinterest pins and 31 share images; 486 tests pass; production build succeeds. Hosting: Netlify free plan, project `paws-passage-test`, deploys from GitHub `main`. Domain: pawsandpassage.com at Namecheap (registered 2026-11-17). Pages CMS edits content. GA4 property G-1J97C8CPC1. Search Console: domain property (verified per the owner's tracker on 2026-11-17). Pinterest: https://www.pinterest.com/paws_and_passage/ (website claim status unconfirmed). **Traffic and revenue: none verified.** The unmerged branch fixes must be merged by the owner before listing (the owner must say "merge" to Claude).
-Known limitations: no LICENSE and no assignment text; the seller's analytics, Amazon, Vrbo and Impact IDs are in the site and must be swapped by the buyer; an undocumented hero image (`hero-porch*.jpg`) needs a provenance decision; no legal review of Privacy and Terms; `docs/TRANSFER_CHECKLIST.md` lists the rest.
+Known limitations: no LICENSE and no assignment text; the seller's analytics, Amazon, Vrbo and Impact IDs are in the site and must be swapped by the buyer; the home hero (`hero-porch*.jpg`) is now a credited Unsplash photo (unsplash gives usage rights, not ownership or exclusivity); no legal review of Privacy and Terms; `docs/TRANSFER_CHECKLIST.md` lists the rest.
 
 ## 3. Dependency-aware execution order
 1. **Stage 0 (no dependencies, start now):** tasks B1 to B6 (read-only evidence).
@@ -50,7 +50,7 @@ For every task: record what you saw, save the evidence, then mark PASS, FAIL, BL
 ## 5. Buyer-readiness checklist (must be true before listing)
 - [ ] Branch merged to `main` by the owner; Netlify deploy green; `docs/BUYER_ASSET_INVENTORY.md` numbers match the live site.
 - [ ] B1 to B5 evidence collected; traffic and revenue statement written with exact numbers (or "none yet").
-- [ ] Hero image provenance and image credits resolved (`docs/flip/audit-legal-transfer.md`).
+- [x] Hero image provenance and image credits resolved (`docs/flip/audit-legal-transfer.md`).
 - [ ] Copyright assignment and bill-of-sale terms chosen by the owner (owner-only).
 - [ ] Listing text approved by the owner, with no claim beyond the evidence; seller identity verification done by the owner on the marketplace.
 - [ ] Repo history decision made (full history vs fresh squashed repo).

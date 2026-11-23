@@ -172,6 +172,7 @@ Docs the buyer receives: 135 Markdown files in `docs/` (plus `docs/audit`, `docs
 | Email | `hello@pawsandpassage.com` is a Namecheap Private Email mailbox; the subscription is not moved with the domain and its transfer is unconfirmed (`docs/EMAIL-AND-TRANSFER.md`) |
 | Domain and hosting | Transfers are written procedures (`docs/DNS-AND-TRANSFER.md`); none has been rehearsed |
 | Photos of real rentals | No photo permission recorded on any stay file; stock photos are Unsplash; `src/assets` holds 148 JPG files |
+| Home hero image | Now a credited Unsplash photo (`hero-porch*.jpg`, photographer Cody Scott Milewski, credited in `src/content/image-credits.ts`), replacing the earlier AI illustration. Unsplash gives usage rights, not ownership or exclusivity: the buyer gets the right to keep using it under the Unsplash License, not the photo's copyright, and anyone else may use it too |
 | Verified places or verified stays | 0 verified stays and 0 verified dog-rules places |
 | Subscribers or newsletter | There is no list or newsletter |
 

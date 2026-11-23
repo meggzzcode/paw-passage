@@ -5,7 +5,7 @@ Objective (owner, 2026-11-23): sell the site as a turnkey, pre-revenue starter a
 ## 1. Readiness score (each 1 to 10; average of four)
 | Category | Score | Evidence and gaps |
 |---|---|---|
-| Traffic | 2 | No GA4 or Search Console data has been read by us. Domain registered 2026-11-17, sitemap of 98 URLs is live and crawlable (VERIFIED). Whether Google has indexed anything is UNVERIFIED. |
+| Traffic | 2 | No GA4 or Search Console data has been read by us. Domain registered November 2026 (registrar shows 2026-11-16 start, valid to 2027-11-17, auto-renew OFF), sitemap of 98 URLs is live and crawlable (VERIFIED). Whether Google has indexed anything is UNVERIFIED. |
 | Revenue | 1 | $0. No affiliate earnings exist; Vrbo and Amazon links are wired through accounts that do not transfer (VERIFIED). |
 | Content | 6 | 30 published guides, about 76,900 words, 491 citations, an original 38-manager dataset (VERIFIED). Held back by: researched not hands-on, no named author by design, dataset is a one-time convenience sample. |
 | Risk | 5 | Positive: no backend, permissive licenses only, no secrets found, tests and build pass, handover docs exist. Negative: no LICENSE or assignment text, seller IDs in the site, an AI hero image (now replaced, see blocker 4), no legal review, domain transfer lock rule unverified, young domain. |

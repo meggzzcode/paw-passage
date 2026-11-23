@@ -6,7 +6,7 @@ Rules: sensitive evidence (account screens, bills, identity documents, anything 
 
 | # | Evidence | Why a buyer cares | How to collect | Executor | Where stored | Blocks listing? |
 |---|---|---|---|---|---|---|
-| 1 | Domain ownership: registrar account page showing pawsandpassage.com, registration date 2026-11-17, expiry, auto-renew, privacy on | Proves the seller owns what is sold | Screenshot of Namecheap Domain List and the domain's Overview (redact account email) | Owner or Cowork (read-only) | Private | Yes |
+| 1 | Domain ownership: registrar account page showing pawsandpassage.com, registration date as the registrar shows it (2026-11-16 start, valid to 2027-11-17), expiry, auto-renew, privacy on | Proves the seller owns what is sold | Screenshot of Namecheap Domain List and the domain's Overview (redact account email) | Owner or Cowork (read-only) | Private | Yes |
 | 2 | WHOIS/RDAP lookup of the domain | Independent proof of age and registrar | Public lookup, save as PDF | Cowork | Private + index | No |
 | 3 | Live site loads over HTTPS, www and apex redirect correctly | Buyer's first click | Already verified in `docs/flip/audit-live-qa.md` | Claude/Cowork | Repo (sanitized) | Yes |
 | 4 | Repository ownership and history: GitHub repo page, commit count, first/last commit dates, default branch | Proves code ownership; first commit 2026-11-16 | Screenshot or `git log` summary | Claude | Repo index | Yes |

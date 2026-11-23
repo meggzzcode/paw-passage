@@ -12,7 +12,7 @@ export const Route = createFileRoute("/terms")({
   component: () => (
     <InfoPage
       title="Terms of use"
-      updated="2026-11-18"
+      updated="2026-11-23"
       body={`By using Paws & Passage you agree to these terms.
 
 ## Information, not a guarantee
@@ -38,6 +38,8 @@ You are responsible for your dog's safety and behavior, and for following local 
 ## Content
 
 The text, design and tools on this site belong to Paws & Passage. You're welcome to share links and short quotes with attribution. Please don't republish whole guides.
+
+Images are for illustration only. Most are licensed stock photographs (Unsplash License); some, such as the large image at the top of the home page, are AI-generated illustrations rather than photographs. None is a picture of a specific rental.
 
 ## Liability
 

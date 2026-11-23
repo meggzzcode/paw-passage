@@ -13,7 +13,7 @@ export const Route = createFileRoute("/editorial-standards")({
   component: () => (
     <InfoPage
       title="Editorial standards"
-      updated="2026-11-18"
+      updated="2026-11-23"
       body={`## How we research guides
 
 1. **Start with the reader's real question.** We look at what people actually search for and ask.
@@ -41,7 +41,7 @@ Stays are listed with the pet policy, fees and fencing details we could find on 
 
 ## Images
 
-Photos on our guides and destination pages are licensed stock photographs (Unsplash License). The large image at the top of the home page is an AI-generated illustration of a travel scene, not a photograph. All images are shown for illustration only and are not pictures of a specific rental. Property photos appear only with the owner's permission.
+Photos on our guides and destination pages are licensed stock photographs (Unsplash License). All images are shown for illustration only and are not pictures of a specific rental. Property photos appear only with the owner's permission.
 
 ## Money
 

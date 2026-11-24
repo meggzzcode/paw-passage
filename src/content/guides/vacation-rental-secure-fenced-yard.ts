@@ -19,8 +19,7 @@ export const guide: Guide = {
 
 ## The short answer
 
-- "Partially fenced" means leash-only unless a separate, fully enclosed area is shown, and an invisible or electric fence is not a physical enclosure.
-- Even a good yard needs supervision and does not mean the dog can be left alone; see [can you leave a dog alone in a vacation rental](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental).
+"Partially fenced" means leash-only unless a separate, fully enclosed area is shown, and an invisible or electric fence is not a physical enclosure.
 
 ## Start with your dog, not a universal fence height
 
@@ -88,7 +87,7 @@ Send one organized request and save the response with the listing, travel dates 
 - [ ] A layout showing separation from pools, roads, and parking.
 - [ ] Written disclosure of damage, repairs, or changes since the photos.
 
-Use our [before-you-book checklist](/tools/checklist), and ask for observable facts, not guarantees. Compare listings side by side in your own notes, not with a numerical "safety score." Then decide:
+Ask for observable facts, not guarantees. Compare listings side by side in your own notes, not with a numerical "safety score." Then decide:
 
 | What the evidence shows | Decision |
 | --- | --- |
@@ -135,7 +134,7 @@ Whether a particular yard matches its photos is the one thing no source can tell
 
 ## Next step
 
-Save your arrival checks in the [travel checklist](/tools/checklist), read our [pet fees guide](/guides/how-vacation-rental-pet-fees-work) for the total, and check your dog against the host's rules with [will my dog be accepted](/tools/will-my-dog-be-accepted). Then browse [dog-friendly stays](/stays) and filter for a confirmed fenced yard.`,
+Even a good yard needs supervision and does not mean the dog can be left alone; see [can you leave a dog alone in a vacation rental](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental). Save your arrival checks in the [travel checklist](/tools/checklist), read our [pet fees guide](/guides/how-vacation-rental-pet-fees-work) for the total, and check your dog against the host's rules with [will my dog be accepted](/tools/will-my-dog-be-accepted). Then browse [dog-friendly stays](/stays) and filter for a confirmed fenced yard.`,
   faqs: [
     {
       q: "How do I know a rental's fenced yard is really secure?",

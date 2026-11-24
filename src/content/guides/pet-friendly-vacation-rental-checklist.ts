@@ -17,7 +17,7 @@ export const guide: Guide = {
   heroImage: "guide-rental-checklist",
   body: `Most booking surprises are a pet fee, a cleaning charge or a no-dogs-alone rule the photos never mentioned. Clear the eight checks below for the exact listing before you pay anything nonrefundable, work top to bottom, and stop at the first line you cannot answer.
 
-Tick it off on your phone in the [interactive checklist](/tools/checklist); the [pet fees guide](/guides/how-vacation-rental-pet-fees-work) shows how the total is built.
+The [pet fees guide](/guides/how-vacation-rental-pet-fees-work) shows how the total is built.
 
 ## The 8-item booking checklist
 
@@ -41,7 +41,7 @@ Check the exact unit, not the manager's portfolio. [Vrbo's house-rules guidance]
 - [ ] Count, weight (per dog or combined), breed and age limits written down.
 - [ ] Approval received in the booking channel, naming each dog and the dates.
 
-Weight limits are real and they differ a lot. Across the 38 managers in our convenience sample (public pages read 2026-11-18), six state one, from 35 to 65 pounds. Our [large-dog guide](/guides/vacation-rentals-that-welcome-large-dogs) names them, and [rentals with no dog weight limit](/guides/vacation-rentals-with-no-dog-weight-limit) lists two managers that state none, and the [two-dog guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental) covers counts and combined weight. For a quick yes or no on your own dog, try the [acceptance tool](/tools/will-my-dog-be-accepted); breed rules are worth confirming in writing too. Puppies face their own age questions in our [puppy rental guide](/guides/puppy-at-a-vacation-rental).
+Weight limits are real and they differ a lot. Across the 38 managers in our convenience sample (public pages read 2026-11-18), six state one, from 35 to 65 pounds. Our [large-dog guide](/guides/vacation-rentals-that-welcome-large-dogs) names them, and [rentals with no dog weight limit](/guides/vacation-rentals-with-no-dog-weight-limit) lists two managers that state none. The [two-dog guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental) covers counts and combined weight, and the [puppy rental guide](/guides/puppy-at-a-vacation-rental) covers age. For a quick yes or no on your own dog, try the [acceptance tool](/tools/will-my-dog-be-accepted).
 
 ## Price (check 2)
 
@@ -128,7 +128,7 @@ If two listings tie, choose the one whose approval names your dogs in writing an
 - [ ] Familiar bedding, leads, waste bags, food and any crate packed ([cabin packing guide](/guides/dog-friendly-cabin-packing-list)).
 - [ ] On arrival, inspect exits and gates with the dog secured, and photograph anything off.
 
-Weight and fee figures come from public manager pages (a 38-manager convenience sample, not a survey); your unit's rules are confirmed only when the host says so in writing.
+Weight and fee figures come from public pages of 38 managers (a convenience sample, not a survey); your unit's rules count only once the host confirms them in writing.
 
 Booked somewhere that says no pets? Ask the manager before you travel rather than bringing the dog unapproved. Next step: save your answers in the [checklist tool](/tools/checklist).
 `,

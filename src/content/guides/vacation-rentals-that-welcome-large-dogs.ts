@@ -6,7 +6,7 @@ export const guide: Guide = {
   seoTitle: "Large Dog Friendly Vacation Rentals and No Weight Limit",
   seoDescription:
     "We read 38 managers' pet pages: 6 state a dog weight limit and 2 say none. See the exact wording, then copy the message that gets a big dog approved.",
-  dek: "Six of the 38 managers we read cap dogs at 35 to 65 pounds and two say no limit, so get a written yes for your dog.",
+  dek: "Six of the 38 managers we read cap dogs at 35 to 65 pounds and two say no limit. Here is their exact wording and a message that gets a big dog approved.",
   category: "Planning",
   states: [],
   status: "published",
@@ -15,7 +15,7 @@ export const guide: Guide = {
   lastReviewed: "2026-11-24",
   readingMinutes: 11,
   heroImage: "guide-large-dogs-rental",
-  body: `Yes, large dog friendly vacation rentals exist, and a few managers say outright that they have no dog weight limit. A listing that says "dogs welcome" can still cap weight at 50 pounds, so the approval that counts names your dog.
+  body: `Yes, large dog friendly vacation rentals exist, and a few managers say outright that they have no dog weight limit. But a listing that says "dogs welcome" can still cap weight at 50 pounds.
 
 - Read the limit for this dog, per dog or combined, before you read the views.
 - "Large dogs considered" means ask, not yes. Silence on weight is a reason to ask, not a green light.
@@ -25,7 +25,7 @@ This guide is about pet dogs. Service animals have separate protections under ap
 
 ## What real weight limits look like
 
-Here are the six managers that state a limit, quoted from their public pages (read 2026-11-18). The 38 managers we read are a convenience sample, not a survey, and many policies vary by home.
+Here are the six managers that state a limit, quoted from their public pages (read 2026-11-18). The 38 managers we read are a convenience sample, not a survey, and the six-of-38 figure is our own count; policies vary by home and can change.
 
 | Manager | What the page says | Counted |
 | --- | --- | --- |
@@ -76,11 +76,7 @@ So a "Pets allowed" badge tells you the host accepts animals, not your 72-pound 
 
 "Hello, we are interested in [property or cabin name] for [dates]. We would like to bring one dog: [name], a [breed or 'mixed breed, breed unknown'], currently [weight] pounds as of [date], [age], house-trained and [crate trained / not crate trained]. Your pet policy lists a weight limit of [number]. Could you tell us whether [name] can be approved for this home, whether any extra fee, deposit or condition applies, and what the entrance steps, sleeping-level access and unattended-pet rule are? Please confirm the approval in writing in this thread. If this home cannot take a dog this size, could you suggest one that can? Thank you."
 
-A filled-in version for a big dog:
-
-"Hello, we are interested in the Pine Ridge cabin for June 6 to 13. We would like to bring one dog: Moose, a Labrador-mastiff mix, currently 82 pounds as of May 2, 5 years old, house-trained and crate trained. Your pet policy lists a weight limit of 60 pounds. Could you tell us whether Moose can be approved for this home, whether any extra fee, deposit or condition applies, and what the entrance steps, sleeping-level access and unattended-pet rule are? Please confirm the approval in writing in this thread. If this home cannot take a dog this size, could you suggest one that can? Thank you."
-
-The message gives a number, a date and one clear question, and it leaves the host a way to say yes to a different home. With two dogs and a combined limit, give both weights. Keep the reply on the booking platform, since "we love dogs" does not answer a weight question.
+The message gives a number, a date and one clear question (for example, "Moose, a Labrador-mastiff mix, currently 82 pounds as of May 2"), and it leaves the host a way to say yes to a different home. With two dogs and a combined limit, give both weights. Keep the reply on the booking platform, since "we love dogs" does not answer a weight question.
 
 What to save:
 
@@ -116,13 +112,9 @@ Once a rental passes permission, run these. The [full booking checklist](/guides
 
 Restrictions can come from an owner, insurer, association or building. The [Insurance Information Institute](https://www.iii.org/article/spotlight-on-dog-bite-liability) reports that insurers vary: some restrict certain breeds, some assess individual dogs, and some do not ask about breed. So "insurance won't allow it" is a real limit for some properties and not a universal one. Ask whether it is a firm property or insurer rule, or whether the host can approve your dog in writing. A pet health policy is a different product from liability cover for injuries or damage your dog causes ([Insurance Information Institute](https://www.iii.org/article/facts-about-pet-insurance)). Check with your own insurer whether liability extends to a temporary rental.
 
-## What we could not confirm
+## If the host keeps dogs off the furniture
 
-The six-of-38 figure is our own count, and what any individual home allows can change, so confirm before you pay.
-
-## A bed for the stay, after the host says yes
-
-A big dog needs somewhere of its own to lie down, particularly if the host limits furniture, but only buy after the host has said yes. The Kurgo Loft Wander is a roll-up travel bed with a water-resistant ripstop top and a waterproof, non-slip bottom. It opens to 27 x 36 in (Medium) or 36 x 48 in (Large) and rolls up to about 17 x 9.5 in with a handle, and the maker lists no weight limit, so size it by how your dog lies down ([Kurgo](https://www.kurgo.com/p/loft-wander-dog-bed/K01560)). Skip it if the home provides a bed or your dog already has one that travels.
+Some managers do: [Brindley Beach](https://www.brindleybeach.com/node/3691) asks guests to keep dogs off furniture unless it is covered with your own sheet. A big dog then needs somewhere of its own to lie down, and a bed that comes with you is the one purchase this page suggests, once the host has said yes. The Kurgo Loft Wander is a roll-up travel bed with a water-resistant ripstop top and a waterproof, non-slip bottom. It opens to 27 x 36 in (Medium) or 36 x 48 in (Large) and rolls up to about 17 x 9.5 in with a handle, and the maker lists no weight limit, so size it by how your dog lies down ([Kurgo](https://www.kurgo.com/p/loft-wander-dog-bed/K01560)). Skip it if the home provides a bed or your dog already has one that travels.
 
 {{pick:kurgo-loft-wander-dog-bed|For a big dog's own spot|For a big dog's own non-slip spot on a hard rental floor: pick Medium or Large by how the dog lies down.|https://www.kurgo.com/p/loft-wander-dog-bed/K01560}}
 

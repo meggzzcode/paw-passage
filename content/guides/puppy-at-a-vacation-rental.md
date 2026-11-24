@@ -15,7 +15,7 @@ readingMinutes: 12
 heroImage: guide-puppy
 faqs:
   - q: Do vacation rentals allow puppies?
-    a: Some do and some do not; 5 of the 38 managers we read state a minimum age or no-puppies rule. Many pages do not say. In our 38-manager sample, 5 state a minimum age or a no-puppies rule, so a booking that says "pet friendly" may still exclude a young dog. Ask in writing before you pay.
+    a: Some do and some do not. In our 38-manager sample, 5 state a minimum age or a no-puppies rule and the rest are silent, so a booking that says "pet friendly" may still exclude a young dog. Ask in writing before you pay.
   - q: How old does a dog have to be at a pet-friendly rental?
     a: Where a manager sets a number, our sample shows 1 year (Emmons Realty) and 18 months (Tahoe Getaways, A Blue Ridge Cabin Rental). Two Outer Banks managers say no puppies without giving an age.
   - q: Does a puppy count toward the dog limit and the pet fee?
@@ -158,7 +158,7 @@ research:
 
 ## The short answer
 
-Some rentals allow puppies and some do not, and the rule is usually one sentence on the manager's pet page. Two managers ask for 18 months, so a "pet friendly" listing can still exclude a 14-week-old dog. A fee will not change an age rule, so settle it before anything else.
+The rule is usually one sentence on the manager's pet page, so a "pet friendly" listing can still exclude a 14-week-old dog. A fee will not change an age rule, so settle it before anything else.
 
 Five of the 38 managers' public pet pages we read (a convenience sample, read 2026-11-18, not a count of the market) state a rule:
 
@@ -168,11 +168,11 @@ Five of the 38 managers' public pet pages we read (a convenience sample, read 20
 - [Beach Realty & Construction](https://www.beachrealtync.com/node/707) (Outer Banks): "Puppies and certain breeds ... are not permitted in Beach Realty properties."
 - [Resort Realty](https://resortrealty.com/outer-banks-pet-friendly) (Outer Banks): "no puppies are permitted."
 
-Ask three things first: how old must the dog be, does a puppy count as a pet and a dog under the limit and the fee, and who pays if there is an accident. The [will my dog be accepted tool](/tools/will-my-dog-be-accepted) helps you line up those questions, and a message you can paste is [further down](#what-to-send-the-host).
+Ask three things first: the minimum age, whether a puppy counts toward the pet limit and fee, and who pays for an accident. A message you can paste is [further down](#what-to-send-the-host), and the [will my dog be accepted tool](/tools/will-my-dog-be-accepted) helps you line up your answers.
 
 ## Age rules, in the managers' own words
 
-The wording differs, and so does what it covers. Two managers use 18 months, Emmons Realty uses 1 year, and the two Outer Banks managers say puppies are not allowed without giving an age. [Tahoe Getaways](https://tahoegetaways.com/policies) pairs its age line with "well-traveled, adult dogs," and Beach Realty describes its general rule as "two adult, house-trained dogs ([Beach Realty](https://www.beachrealtync.com/node/707))."
+The numbers differ: 18 months at two managers, 1 year at Emmons Realty, and no age at all at the two Outer Banks managers, who simply exclude puppies. The wording also reaches past age. Tahoe Getaways pairs its line with "well-traveled, adult dogs," and [Beach Realty](https://www.beachrealtync.com/node/707) describes its general rule as "two adult, house-trained dogs."
 
 "House-trained" also appears as its own requirement at A Blue Ridge Cabin Rental, Beach Realty and Resort Realty ("housebroken"), which a young puppy may not meet even where no age is given. The other 33 managers did not state a minimum age on the pages we read. That is not a promise that they accept puppies; the page was silent, so you still need the answer in writing.
 

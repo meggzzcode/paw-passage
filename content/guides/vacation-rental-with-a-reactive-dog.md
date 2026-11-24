@@ -167,13 +167,12 @@ research:
   researchComplete: true
 ---
 
-The listing photo shows a cozy cabin, not the driveway shared by four other cabins that decides whether the first morning is a walk or a scene. Check that before you book.
+The listing photo shows a cozy cabin, not the driveway shared by four other cabins that decides whether the first morning is a walk or a scene.
 
 ## The short answer
 
 - Check four things before you book: (1) what is next door and any shared wall; (2) the entrance and path; (3) what your dog can see from the door, windows and yard; (4) where you will walk. The [trigger-by-trigger checklist](#what-to-check-trigger-by-trigger) shows what to look for and what to ask.
 - Send the host [the message further down](#what-to-tell-the-host), on the booking platform, and wait for a written answer before you pay. [Airbnb](https://www.airbnb.com/help/article/86) says to contact the host even when a listing allows pets.
-- Management is a valid way to cope: the [ASPCA](https://www.aspcapro.org/sites/default/files/aspca-reactive-dogs-on-leash.pdf) says avoiding upsetting situations is "a perfectly reasonable way to cope," and [Cornell](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/health-info/managing-reactive-behavior) adds that avoidance "isn't a permanent solution."
 - If the behavior is new or getting worse, talk to your vet before you book ([MSD Veterinary Manual](https://www.msdvetmanual.com/veterinary/dog-owners/behavior-of-dogs/diagnosing-behavior-problems-in-dogs)).
 
 General information, not behavior or medical advice.
@@ -182,11 +181,11 @@ General information, not behavior or medical advice.
 
 Write three lines before you open a search page: what sets your dog off, how far away your dog is still comfortable, and where it happens (a walk, a window, a gate, the car). Reactivity is a response to a trigger, not aggression as such, according to [Humane Colorado](https://humanecolorado.org/resources/understanding-reactivity-in-dogs/). Triggers differ. The [ASPCA](https://www.aspcapro.org/sites/default/files/aspca-reactive-dogs-on-leash.pdf) describes some dogs as fearing other dogs and others as so keen to greet that restraint frustrates them. [Best Friends](https://bestfriends.org/resources/managing-barrier-reactivity) describes barrier reactivity as a response to a person, dog, vehicle or sound across a fence, door or window.
 
-So a rental with a lovely fenced yard can still be a problem if the fence is see-through and a dog lives next door. Judge the place against your list, not against a general idea of "quiet."
+So a rental with a lovely fenced yard can still be a problem if the fence is see-through and a dog lives next door. Judge the place against your list, not against a general idea of "quiet." Choosing a rental to avoid triggers is a valid way to cope: the [ASPCA](https://www.aspcapro.org/sites/default/files/aspca-reactive-dogs-on-leash.pdf) says avoiding upsetting situations is "a perfectly reasonable way to cope," though [Cornell](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/health-info/managing-reactive-behavior) adds that avoidance "isn't a permanent solution."
 
 ## What to check, trigger by trigger
 
-Our own checklist: find your dog's trigger, then use the "look for" and "ask" lines to read the listing and write your questions.
+Find your dog's trigger, then use the "look for" and "ask" lines to read the listing and write your questions.
 
 **Other dogs on leash**
 
@@ -205,7 +204,7 @@ Our own checklist: find your dog's trigger, then use the "look for" and "ask" li
 
 **Vehicles, deliveries or bikes**
 
-- Look for: A set-back door, a driveway the dog does not see from the door.
+- Look for: A driveway the dog cannot see from the door.
 - Ask: do deliveries or cleaners arrive at the front door, and is there a side entrance?
 
 **Loose dogs or wildlife in the yard**
@@ -282,11 +281,8 @@ Each item below matches one trigger on your list. None changes the behavior and 
 
 Buy nothing until the host has answered in writing, and do not try new gear for the first time on arrival day. Our [packing list](/tools/packing-list) covers the rest, and [travel gear](/gear) lists every product with its specs.
 
-## How sure we are
-
-- **Confirmed by a source we cite:** the advice on avoiding triggers, blocking views, off-peak walks and professional help comes from the ASPCA, Cornell, Humane Colorado, Best Friends, Fear Free, MSD Veterinary Manual and AVSAB; platform wording and gear specs from help and maker pages read 2026-11-18. Sentences without a numbered citation are our own judgment.
-- **Unknown:** what any particular host will accept, how thin a given wall is, what is next door, and whether a platform would act on a noise complaint about your stay.
+Sentences without a source link are our own judgment, and we cannot know what a given host will accept, how thin a wall is, what is next door, or whether a platform would act on a noise complaint about your stay.
 
 ## A clear next step
 
-Run your dog and your dates through the [will my dog be accepted tool](/tools/will-my-dog-be-accepted), save the host's answers in the [trip checklist](/tools/checklist), and keep the [pet-friendly rental checklist](/guides/pet-friendly-vacation-rental-checklist) open while you read listings.
+Run your dog through the [will my dog be accepted tool](/tools/will-my-dog-be-accepted), and keep the [pet-friendly rental checklist](/guides/pet-friendly-vacation-rental-checklist) open while you read listings.

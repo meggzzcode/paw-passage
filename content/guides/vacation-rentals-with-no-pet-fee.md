@@ -2,7 +2,7 @@
 title: "Vacation Rentals With No Pet Fee: The 3 Managers We Found"
 seoTitle: "Vacation Rentals With No Pet Fee: 3 of 38 Managers"
 seoDescription: "Only 3 of 38 managers we read say dogs stay free. See each one's exact wording, what else they charge, and how to compare the total before you book."
-dek: "Three of 38 managers charged nothing for dogs on the pages we read. See their exact wording and the other charges to price before you book."
+dek: "Sliding Rock, Hapey and Twiddy say dogs stay free. See their exact wording, what else they charge, and how to compare the totals."
 category: Planning
 states: []
 status: published
@@ -175,11 +175,11 @@ So what is the catch? In the three managers we found, "no pet fee" describes one
 ## The short answer
 
 - **Fee-free is rare.** Of 38 managers' public pet pages (a convenience sample, read 2026-11-18), three stated $0: Sliding Rock Cabins, Hapey Cabin Rentals, and Twiddy & Company on the homes it lists. Twenty-two stated a charge and 13 gave no amount.
-- **The fix is cheap:** put your dates and dog count into one total and compare it with a home that charges a fee. Our [pet fees guide](/guides/how-vacation-rental-pet-fees-work) shows how the charges add up.
+- **Compare totals:** put your dates and dog count into one total and compare it with a home that charges a fee. Our [pet fees guide](/guides/how-vacation-rental-pet-fees-work) shows how the charges add up.
 
 ## What the three fee-free managers say
 
-Everything below is from each manager's own public page, re-read on 2026-11-18. Policies can change and can differ by home.
+Everything below is from each manager's own public page, re-read on 2026-11-18. Policies can change and can differ by home, and what any home charges for your dates is not published.
 
 ### Sliding Rock Cabins (Ellijay and Blue Ridge, Georgia)
 
@@ -205,13 +205,13 @@ Neither page mentions cleaning fees or damage policy, and this is a ten-home sam
 
 ## Who charges, for contrast
 
-Of the 38 managers, 22 state a charge, from $20 a night ([A Blue Ridge Vacation](https://www.ablueridgevacation.com/rental-and-cancellation-policies/)) to "up to $1,000." Examples, each re-read on 2026-11-18: [Big Bear Vacations](https://www.bigbearvacations.com/about-us/pet-information/) charges "an extra $40 per pet/per night" that it says covers the additional cleaning, and Rosemary Beach a non-refundable $300 per pet, maximum of 3 ([Rosemary Beach Cottage Rental](https://rosemarybeach.com/faq/)). [Cabin Rentals of Georgia](https://cabin-rentals-of-georgia.com/policies) lists $50 per pet per night plus a $75 pet cleaning fee, and a refundable $250 pet deposit. [Resort Realty](https://resortrealty.com/outer-banks-pet-friendly) lists a "non-refundable pet fee up to $1,000," varying by property. Our [cost guide](/guides/what-a-dog-really-costs-on-a-vacation-rental) compares how these units differ.
+Of the 38 managers, 22 state a charge, from $20 a night ([A Blue Ridge Vacation](https://www.ablueridgevacation.com/rental-and-cancellation-policies/)) to "up to $1,000." Examples, each re-read on 2026-11-18: [Big Bear Vacations](https://www.bigbearvacations.com/about-us/pet-information/) charges "an extra $40 per pet/per night" that it says covers the additional cleaning, and Rosemary Beach a non-refundable $300 per pet, maximum of 3 ([Rosemary Beach Cottage Rental](https://rosemarybeach.com/faq/)). [Cabin Rentals of Georgia](https://cabin-rentals-of-georgia.com/policies) lists $50 per pet per night plus a $75 pet cleaning fee, and a refundable $250 pet deposit. [Resort Realty](https://resortrealty.com/outer-banks-pet-friendly) lists a "non-refundable pet fee up to $1,000," varying by property.
 
 A fee is sometimes where cleaning is paid for: Big Bear says its pet fee covers cleaning, and Cabin Rentals of Georgia stacks a nightly fee and a cleaning fee. So a $0 pet fee plus a cleaning fee can land close to a home with a pet fee and no cleaning fee, which is why totals beat headlines (our reading, not a figure from any page). For how the units differ, see [how pet fees work](/guides/how-vacation-rental-pet-fees-work), and for the wider picture, [what a dog really costs on a rental trip](/guides/what-a-dog-really-costs-on-a-vacation-rental).
 
 ## Read the total, not the pet line
 
-Price the same dates and the same number of dogs for each place, and put every line side by side: nightly rate, cleaning, pet fee, deposit, service fee, taxes. A hypothetical example with round numbers, four nights and one dog: a fee-free home at $800 plus $120 cleaning is $920, while a home at $720 plus $100 cleaning plus a $60 pet fee is $880. The fee-free home is not automatically cheaper; here the home with the pet fee costs $40 less overall. The numbers are made up to show the method, not what any home charges; our [cost guide](/guides/what-a-dog-really-costs-on-a-vacation-rental) has a longer side-by-side comparison.
+Price the same dates and the same number of dogs for each place, and put every line side by side: nightly rate, cleaning, pet fee, deposit, service fee, taxes. A hypothetical example with round numbers, four nights and one dog: a fee-free home at $800 plus $120 cleaning is $920, while a home at $720 plus $100 cleaning plus a $60 pet fee is $880. The fee-free home is not automatically cheaper; here the home with the pet fee costs $40 less overall. The numbers are made up to show the method, not what any home charges.
 
 ## How to look for fee-free homes on the platforms
 
@@ -224,7 +224,7 @@ To see real homes with their full totals, [start a pet-friendly search on Vrbo](
 
 ## Keeping a fee-free stay fee-free
 
-A $0 pet fee does not cover what happens if the dog leaves mud, hair or an accident behind, and the pages above say little about damage terms. Hand the home back as you found it. Mud is the part you control, since Sliding Rock says every cabin has cleaning fees: a washable mat like the [Soggy Doggy](https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate) Microfiber Doormat, which the maker lists with a non-slip backing and says is machine washable, catches wet paws at the door. Skip it if the entry is tiny or already carpeted. For other cleanup items see our [rental cleanup gear page](/gear/rental-cleanup); for puppies and seniors, our [puppy guide](/guides/puppy-at-a-vacation-rental) and [senior dog guide](/guides/vacation-rental-with-a-senior-dog) cover washable pads.
+A $0 pet fee does not settle what happens if the dog leaves mud, hair or an accident behind, and the pages above say little about damage terms. The cleaning fee is already on the bill at Sliding Rock, so the cheapest way to avoid more charges is to hand the home back as you found it. Mud at the door is the part you control: a washable mat like the [Soggy Doggy](https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate) Microfiber Doormat, which the maker lists with a non-slip backing and says is machine washable, catches wet paws at the door. Skip it if the entry is tiny or already carpeted. For other cleanup items see our [rental cleanup gear page](/gear/rental-cleanup); for puppies and seniors, our [puppy guide](/guides/puppy-at-a-vacation-rental) and [senior dog guide](/guides/vacation-rental-with-a-senior-dog) cover washable pads.
 
 {{pick:soggy-doggy-microfiber-doormat|For muddy entries: a washable mat|The maker lists a non-slip backing and says it is machine washable; it does not say how much mud it holds.|https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate}}
 
@@ -238,10 +238,6 @@ A $0 pet fee does not cover what happens if the dog leaves mud, hair or an accid
 - "Can you confirm in writing that no pet charge applies?"
 
 Our [dog-count guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental) covers limits, the [acceptance tool](/tools/will-my-dog-be-accepted) shows what a home's rules mean for your dog, and our [damage-charge guide](/guides/airbnb-pet-damage-charge-after-checkout) covers what happens if the damage question is left open.
-
-## What we could not confirm
-
-Three of 38 is a small convenience sample of managers whose sites we could read, not a market-wide share. What each page says is quoted above; what any home charges for your dates is not published.
 
 ## Next step
 

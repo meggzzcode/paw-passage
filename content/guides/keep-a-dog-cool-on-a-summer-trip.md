@@ -1,8 +1,8 @@
 ---
 title: "Keep a Dog Cool in the Car, at the Beach and in a Rental"
-seoTitle: "Keep a Dog Cool in the Car, Beach and Rental"
+seoTitle: "Keep a Dog Cool on a Summer Trip: Car, Beach, Rental"
 seoDescription: "How to keep a dog cool in the car on a summer trip: heat signs and first aid, hot car laws, hot ground, and which cooling gear to buy first."
-dek: Heat illness is an emergency and a parked car is never safe. Shade, water and rest do most of the work; cooling gear is optional.
+dek: What to do if your dog overheats, what hot-car laws actually say, and which cooling gear is worth packing, if any.
 category: Planning
 states: []
 status: published
@@ -165,7 +165,7 @@ research:
   researchComplete: true
 ---
 
-Keep the dog out of parked cars, walk in the early morning and evening, and carry water everywhere. Those three habits matter more than any gadget, and the one time to stop and call a vet is when you see the signs below. Where a line has no source marker, it is our suggestion.
+Keep the dog out of parked cars, walk in the early morning and evening, and carry water everywhere. Those habits matter more than any gadget, and the signs below are the time to stop and call a vet. A line with no source link is our own suggestion.
 
 ## If your dog is overheating now
 
@@ -199,9 +199,9 @@ Plan the day so the dog is never alone in the car: take turns at stops, pick foo
 
 ## Shade and surface heat
 
-Use the hand test before every walk: hold your hand on the ground for ten seconds (AKC) or seven (the Royal Kennel Club). If it is too hot for your hand, it is too hot for paws. [AKC](https://www.akc.org/expert-advice/health/dog-paws-hot-pavement/) says the ground may be too hot once the air is 85 F or over without a chance to cool, and cites JAMA data that asphalt reaches 135 F when the air is 86 F, and advises early-morning or evening walks on grass or in shade. The Royal Kennel Club adds that sun, wind and humidity change surface heat, so air temperature alone is a poor guide ([The Royal Kennel Club (UK)](https://www.royalkennelclub.com/hotpavements)). Cornell's prevention list adds frequent water and limiting hard exercise in hot, humid weather ([Cornell Vet](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/heatstroke-medical-emergency)).
+Use the hand test before every walk: hold your hand on the ground for ten seconds ([AKC](https://www.akc.org/expert-advice/health/dog-paws-hot-pavement/)) or seven (the Royal Kennel Club). If it is too hot for your hand, it is too hot for paws. [AKC](https://www.akc.org/expert-advice/health/dog-paws-hot-pavement/) says the ground may be too hot once the air is 85 F or over without a chance to cool, and cites JAMA data that asphalt reaches 135 F when the air is 86 F, and advises early-morning or evening walks on grass or in shade. The Royal Kennel Club adds that sun, wind and humidity change surface heat, so air temperature alone is a poor guide ([The Royal Kennel Club (UK)](https://www.royalkennelclub.com/hotpavements)). Cornell's prevention list adds frequent water and limiting hard exercise in hot, humid weather ([Cornell Vet](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/heatstroke-medical-emergency)).
 
-Both pages describe pavement, so run the same test on sand, parking lots and rental deck boards.
+Both pages describe pavement, so run the same test on sand and deck boards too.
 
 ## Water, the beach and the rental
 
@@ -225,7 +225,9 @@ Water, shade and rest come first; [AKC](https://www.akc.org/expert-advice/health
 
 {{pick:ruffwear-swamp-cooler|Soak-and-wear vest for walks|The maker sizes it by chest girth from XXS (13-17 in) to XL (36-42 in), says to soak it, put it on and re-soak it when dry, and calls the cooling evaporative; its page makes no claim that it prevents heat illness.|https://ruffwear.com/products/swamp-cooler-dog-cooling-vest}}
 
-**Gel pad, for a cooled room or car.** Pick a size for your dog stretched out; the Green Pet Shop lists five, from 11.8 x 15.7 in (0-8 lbs) to 27.5 x 43.3 in (above 80 lbs), and a 12-month limited warranty for verified defects, so check its terms. Its Cool Pet Pad is pressure-activated, needs no water or electricity and cools up to 3 hours, per the maker, with a 15 to 20 minute recharge. It warns against direct sun, heat, hot air and hot cars (put a towel or blanket on a car seat first), and against leaving it with a dog that chews or scratches ([The Green Pet Shop](https://www.thegreenpetshop.com/products/cool-pet-pad)). [Chewy](https://www.chewy.com/education/dog/health-and-wellness/the-best-products-to-keep-dogs-cool-in-the-summer) lists four hours, so go by the maker's three. The page also claims the pad prevents dangerous overheating; no test is cited, and no pad makes a parked car safe. Choose it if the dog spends hot evenings on a cooled floor; skip it for a dog that chews bedding.
+**Gel pad, for a cooled room or car.** Pick a size for your dog stretched out. The Green Pet Shop lists five, from 11.8 x 15.7 in (0-8 lbs) to 27.5 x 43.3 in (above 80 lbs), plus a 12-month limited warranty for verified defects. The Cool Pet Pad is pressure-activated, needs no water or electricity and cools up to 3 hours, per the maker, with a 15 to 20 minute recharge. [Chewy](https://www.chewy.com/education/dog/health-and-wellness/the-best-products-to-keep-dogs-cool-in-the-summer) lists four hours, so go by the maker's three.
+
+The maker warns against direct sun, heat, hot air and hot cars (put a towel or blanket on a car seat first), and against leaving it with a dog that chews or scratches ([The Green Pet Shop](https://www.thegreenpetshop.com/products/cool-pet-pad)). Its page also claims the pad prevents dangerous overheating; no test is cited, and no pad makes a parked car safe. Choose it if the dog spends hot evenings on a cooled floor; skip it for a dog that chews bedding.
 
 {{pick:green-pet-shop-cool-pet-pad|A gel pad for a cooled room or car|The maker lists five sizes by weight, from 11.8 x 15.7 in (0-8 lbs) to 27.5 x 43.3 in (above 80 lbs), needs no water or electricity, and warns against direct sunlight and hot cars.|https://www.thegreenpetshop.com/products/cool-pet-pad}}
 

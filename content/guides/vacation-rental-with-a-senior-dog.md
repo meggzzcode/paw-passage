@@ -108,36 +108,12 @@ sources:
     url: https://tripawds.com/forums/hopping-around/stairs-was-fine-and-then-it-changed
     publisher: Tripawds forum
     accessedOn: 2026-11-18
-  - title: Older dogs and stairs
-    url: https://forums.mst3k.com/t/older-dogs-and-stairs/20432
-    publisher: MST3K forum
-    accessedOn: 2026-11-18
   - title: Instant book and pets
     url: https://airhostsforum.com/t/instant-book-and-pets/45138
     publisher: Airhosts Forum
     accessedOn: 2026-11-18
-  - title: Old dog support thread
-    url: https://www.mumsnet.com/talk/the_doghouse/5090152-old-dog-support-thread?page=1
-    publisher: Mumsnet forum
-    accessedOn: 2026-11-18
-  - title: Geriatric dog peeing in house
-    url: https://www.mumsnet.com/talk/the_doghouse/1128953-geriatric-dog-peeing-in-house
-    publisher: Mumsnet forum
-    accessedOn: 2026-11-18
   - title: "Pet friendly hosts: tips for setting up your place"
     url: https://airhostsforum.com/t/pet-friendly-hosts-tips-for-setting-up-your-place/18610
-    publisher: Airhosts Forum
-    accessedOn: 2026-11-18
-  - title: "Are these reasonable rules for dogs?"
-    url: https://airhostsforum.com/t/are-these-reasonable-rules-for-dogs/24289
-    publisher: Airhosts Forum
-    accessedOn: 2026-11-18
-  - title: Question about a holiday cottage
-    url: https://www.mumsnet.com/talk/uk/3413892-Question-about-a-holiday-cottage
-    publisher: Mumsnet forum
-    accessedOn: 2026-11-18
-  - title: "Renting to dog owners: your thoughts"
-    url: https://airhostsforum.com/t/renting-to-dog-owners-your-thoughts/3126?page=2
     publisher: Airhosts Forum
     accessedOn: 2026-11-18
   - title: "Traveling With Your Pets: Dos and Don'ts"
@@ -301,7 +277,7 @@ Bring grip with you, put the question to the host before laying anything down, a
 - **Ramps and steps for furniture or a car.** [AKC](https://www.akc.org/expert-advice/health/general-health/dog-stairs-and-ramps/) says to match the height to the sofa, bed or trunk, check the weight limit and look for a non-slip surface. None of these pages says a ramp works for a full indoor flight, so for rental stairs rely on the photo check.
 - **Your own bed.** Banfield lists an orthopedic bed with a low profile, washable cover and non-slip bottom ([Banfield Pet Hospital](https://www.banfield.com/Senior-hub/care-for-older-pets/senior-proof-your-home)). A familiar bed also keeps the host's furniture clean.
 
-Owners on forums (mostly Tripawds, a three-legged-dog forum, so not independent) mention rubber bath mats cut to fit steps, traction strips and carpet on bare treads, which matches the vet sources. Forum threads, for example [wooden steps](https://tripawds.com/forums/hopping-around/looking-for-advice-on-wooden-steps/) and [senior stair struggles](https://tripawds.com/forums/size-and-age-matters/senior-stair-struggles). A third thread, [older dogs and stairs](https://forums.mst3k.com/t/older-dogs-and-stairs/20432), says the same.
+Owners in forum threads (a small sample, mostly from a three-legged-dog forum, so not independent) mention rubber bath mats cut to fit steps, traction strips and carpet on bare treads, which matches the vet sources; for example, [wooden steps](https://tripawds.com/forums/hopping-around/looking-for-advice-on-wooden-steps/) and [senior stair struggles](https://tripawds.com/forums/size-and-age-matters/senior-stair-struggles).
 
 ## What if your dog balks at the stairs when you arrive?
 
@@ -309,7 +285,7 @@ Do not force it. Stop, work out a plan with the host, and call your vet if the r
 
 ## What if your dog leaks or has accidents?
 
-Tell your vet first, since leaking in an older dog can have causes a vet should check. For the rental, pack washable or waterproof bedding, pads and a sheet for furniture, and report and clean any accident right away. Hosts in forum threads mention keeping a cleaner and old towels on hand, or asking guests to report accidents, and owners bring their own bedding. Forum threads, for example [instant book and pets](https://airhostsforum.com/t/instant-book-and-pets/45138) and [setting up your place](https://airhostsforum.com/t/pet-friendly-hosts-tips-for-setting-up-your-place/18610). Separately, [reasonable dog rules](https://airhostsforum.com/t/are-these-reasonable-rules-for-dogs/24289) and [a holiday cottage question](https://www.mumsnet.com/talk/uk/3413892-Question-about-a-holiday-cottage) cover reporting accidents. On bedding, [renting to dog owners](https://airhostsforum.com/t/renting-to-dog-owners-your-thoughts/3126?page=2), [an old-dog thread](https://www.mumsnet.com/talk/the_doghouse/5090152-old-dog-support-thread?page=1) and [a geriatric dog thread](https://www.mumsnet.com/talk/the_doghouse/1128953-geriatric-dog-peeing-in-house) are examples. Remember: these are views, not platform rules.
+Tell your vet first, since leaking in an older dog can have causes a vet should check. For the rental, pack washable or waterproof bedding, pads and a sheet for furniture, and report and clean any accident right away. Hosts in forum threads mention keeping a cleaner and old towels on hand or asking guests to report accidents, and owners bring their own bedding; for example, [instant book and pets](https://airhostsforum.com/t/instant-book-and-pets/45138) and [setting up your place](https://airhostsforum.com/t/pet-friendly-hosts-tips-for-setting-up-your-place/18610). These are views, not platform rules.
 
 Whether a deposit or charge applies to an accident you reported and cleaned is a question for the host in writing. If a host later asks for money, our [damage-charge guide](/guides/airbnb-pet-damage-charge-after-checkout) covers the clocks and what to reply.
 
@@ -345,5 +321,4 @@ We did not pick a rug: measure the route first, since the host may not allow one
 
 ## How sure we are
 
-- **Confirmed:** a vet, platform, manager or maker page we cite says it. The sources block also lists forum threads, used only as labelled samples from a small non-random set that leans toward host forums and UK and three-legged-dog communities.
-- **Unknown, so ask:** whether you may lay a rug or ramp, how an accident is charged, whether Airbnb's step-free features suit a dog (ask for a photo of the route), and your stop interval (ask your vet). Quotes and rules are as read on 2026-11-18.
+Sentences without a source link are our own judgment, and forum threads are a small, non-random sample. We could not confirm whether you may lay a rug or ramp, how an accident is charged, or whether Airbnb's step-free features suit a dog, so ask the host for a photo of the route. Your stop interval is a question for your vet. Quotes and rules are as read on 2026-11-18.

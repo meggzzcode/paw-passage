@@ -153,11 +153,11 @@ research:
   researchComplete: true
 ---
 
-The pet fee is only one line of the bill. A rental with no pet fee can still cost more than one that charges $40 a night, because the nightly rate, cleaning fee, deposit and taxes all move too. Compare two rentals on one number: the cost you won't get back.
+A rental with no pet fee can still cost more than one that charges $40 a night, because the nightly rate, cleaning fee, deposit and taxes all move too. Compare rentals on one number: the cost you won't get back.
 
 ## Two rentals, one real number
 
-These figures are invented, round and illustrative, not prices from any listing. One dog, five nights, same dates, taxes left out of both.
+Example numbers, not market data: invented, round and not prices from any listing. One dog, five nights, taxes left out. "Real cost" is money you will not get back; "cash needed up front" adds any refundable deposit.
 
 | Line | Rental A | Rental B |
 | --- | --- | --- |
@@ -168,11 +168,11 @@ These figures are invented, round and illustrative, not prices from any listing.
 | Refundable deposit | none | $250 |
 | **Cash needed up front** | **$1,300** | **$1,500** |
 
-Rental B has no pet fee and is $50 cheaper, but it asks for $250 more cash on booking day. If A charges per dog, a second dog adds another $200 and A rises to $1,500, while B stays at $1,250. Add each rental's taxes the same way before you decide.
+Rental B has no pet fee and its real cost is $50 lower ($1,250 against $1,300), but it needs $200 more cash on booking day ($1,500 against $1,300) because $250 of that is a refundable deposit. If A charges per dog, a second dog adds another $200 and A rises to $1,500, while B stays at $1,250.
 
 ## Charges a dog can add
 
-Most of the bill is the same with or without a dog. These lines are where a dog changes it:
+These lines are where a dog changes the bill:
 
 - **Pet fee.** It can be per night, per stay or per pet. On [Airbnb](https://www.airbnb.com/help/article/3623) it is meant for expected cleaning after a pet stay and cannot exceed the nightly base rate.
 - **Cleaning fee.** [Airbnb](https://www.airbnb.com/help/article/125) says a pet charge "may be separate from cleaning fees". Cabin Rentals of Georgia lists "$50/pet/night" plus a "$75 pet cleaning fee", which the page doesn't label per night, so we read it as charged once.
@@ -183,19 +183,19 @@ Whether a service fee or tax applies to the pet charge itself varies by listing,
 
 ## Refundable deposit or nonrefundable fee
 
-A fee is spent the moment you book. A deposit comes back unless there is a claim. Both leave your card, but only the fee is cost.
+A fee is spent when you book; a deposit comes back unless there is a claim. Both leave your card, but only the fee is cost.
 
-Cabin Rentals of Georgia lists "a refundable $250 pet deposit" returned at departure if there is no pet damage or excessive pet hair. One dog for five nights there is $250 plus the $75 cleaning fee: $325 of definite pet cost, and a deposit on top.
+Cabin Rentals of Georgia lists "a refundable $250 pet deposit" returned at departure if there is no pet damage or excessive pet hair. For one dog for five nights, the fee is $50 x 5 = $250, and with the $75 cleaning fee the definite, non-refundable pet cost is $325. The $250 deposit is separate cash held back, so $575 leaves your card at booking and $325 of it is gone for good.
 
-Vrbo describes a host-set damage deposit returned unless the host claims damage ([Vrbo: Manage your fees](https://help.vrbo.com/articles/How-do-I-manage-my-fees), [Vrbo: Understand payment details](https://help.vrbo.com/articles/How-do-I-read-my-payment-details)). Ask who holds the money and the release date, because a card hold and a collected payment feel different.
+Vrbo describes a host-set damage deposit returned unless the host claims damage ([Manage your fees](https://help.vrbo.com/articles/How-do-I-manage-my-fees), [payment details](https://help.vrbo.com/articles/How-do-I-read-my-payment-details)). Ask who holds the money and when it is released.
 
 Some managers swap the deposit for a fee. Tahoe Vacation Rentals sells a nonrefundable waiver covering up to $1,000 of accidental damage "in lieu of a security deposit". That's a cost even though it replaces a deposit.
 
 ## Damage and extra cleaning charges
 
-A pet fee is a charge for being allowed in, not insurance. [Tahoe Vacation Rentals](https://www.tahoevacationrentals.com/reservation-information/) says its pet fee "does not include damage or additional cleaning caused by the pet", and Airbnb points to its AirCover protection for unexpected damage. You can't budget a damage claim, but you can lower the odds. If a charge does appear afterwards, see [what to do about an Airbnb pet damage charge](/guides/airbnb-pet-damage-charge-after-checkout).
+A pet fee is a charge for being allowed in, not insurance. [Tahoe Vacation Rentals](https://www.tahoevacationrentals.com/reservation-information/) says its pet fee "does not include damage or additional cleaning caused by the pet", and Airbnb points to its AirCover protection for unexpected damage. If a charge does appear afterwards, see [what to do about an Airbnb pet damage charge](/guides/airbnb-pet-damage-charge-after-checkout).
 
-Photos at arrival and checkout matter more than any gear. Mud is the part you can control at the door, and a washable mat such as the [Soggy Doggy](https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate) microfiber doormat gives wet paws somewhere to land. Skip it if the entry is carpeted or tiny; our [rental cleanup gear page](/gear/rental-cleanup) has other options.
+Mud is the part you can control at the door, and a washable mat such as the [Soggy Doggy](https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate) microfiber doormat gives wet paws somewhere to land. Skip it if the entry is carpeted or tiny; see the [rental cleanup gear page](/gear/rental-cleanup) for other options.
 
 {{pick:soggy-doggy-microfiber-doormat|For muddy entries: a washable mat|The maker lists a non-slip backing and says it is machine washable; it does not say how much mud it holds.|https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate}}
 
@@ -222,7 +222,7 @@ Sources: [Big Bear Vacations](https://www.bigbearvacations.com/about-us/pet-info
 2. Open the full price breakdown before you confirm, and write down nightly rate, cleaning, pet charge, service fee and taxes.
 3. Add those into one number. Keep any refundable deposit or hold on its own line.
 4. Compare cash needed up front separately from real cost.
-5. Check the rules last: dog count, weight and breed. The [will-my-dog-be-accepted tool](/tools/will-my-dog-be-accepted) helps, and a rental $50 cheaper that caps dogs below yours isn't an option. See [rentals that welcome large dogs](/guides/vacation-rentals-that-welcome-large-dogs) and the [dog count guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental).
+5. Check the rules last: dog count, weight and breed. The [will-my-dog-be-accepted tool](/tools/will-my-dog-be-accepted) helps, and a cheaper rental that caps dogs below yours isn't an option. See [rentals that welcome large dogs](/guides/vacation-rentals-that-welcome-large-dogs) and the [dog count guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental).
 
 ## Booking checklist
 

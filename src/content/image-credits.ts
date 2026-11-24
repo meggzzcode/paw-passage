@@ -62,15 +62,12 @@ export const imageCredits: ImageCredit[] = [
   {
     key: "guide-cabin-packing",
     photographer: "Christian Crocker",
-    unsplashUrl:
-      
-      "https://unsplash.com/photos/dog-relaxes-in-the-car-trunk-with-a-bag-REFa-Kh22KU",
+    unsplashUrl: "https://unsplash.com/photos/dog-relaxes-in-the-car-trunk-with-a-bag-REFa-Kh22KU",
   },
   {
     key: "gear-car-safety",
     photographer: "Far Chinberdiev",
-    unsplashUrl: 
-      "https://unsplash.com/photos/beagle-mix-in-pink-harness-jhSKzWZWVYY",
+    unsplashUrl: "https://unsplash.com/photos/beagle-mix-in-pink-harness-jhSKzWZWVYY",
   },
   {
     key: "gear-first-aid",
@@ -165,7 +162,7 @@ export const imageCredits: ImageCredit[] = [
   {
     key: "guide-pool-hot-tub",
     photographer: "Helena Lopes",
-    unsplashUrl: 
+    unsplashUrl:
       "https://unsplash.com/photos/black-short-coated-large-dog-standing-beside-swimming-pool-during-daytime-8MCrRTq-W4U",
   },
   {

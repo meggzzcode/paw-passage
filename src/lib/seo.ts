@@ -83,7 +83,9 @@ export function pageHead({
   noindex,
   image,
 }: PageMetaInput) {
-  const fullTitle = title.includes(site.name) ? title : `${title} | ${site.name}`;
+  // Keep the rendered title within 60 characters: the brand suffix is added only when it fits.
+  const withBrand = `${title} | ${site.name}`;
+  const fullTitle = title.includes(site.name) || withBrand.length > 60 ? title : withBrand;
   const meta: Record<string, string>[] = [
     { title: fullTitle },
     { name: "description", content: description },

@@ -91,7 +91,7 @@
   --terracotta: oklch(0.68 0.11 45);
   --terracotta-foreground: oklch(0.99 0.005 90);
   /* Terracotta darkened to L 0.565 so white button text reaches 4.62:1 (the plain terracotta gives 2.91:1). Buttons only. */
-  --terracotta-button: oklch(0.565 0.11 45);
+  --terracotta-button: oklch(0.53 0.11 45);
   --sage: oklch(0.83 0.045 150);
   --sky: oklch(0.91 0.03 230);
   --destructive: oklch(0.577 0.2 27);

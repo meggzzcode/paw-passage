@@ -10,6 +10,9 @@ export function productTitle(p: { brand: string; name: string }): string {
   const n = name.toLowerCase();
   if (n === b || n.startsWith(`${b} `) || n.startsWith(`${b}-`) || n.startsWith(`${b}'`))
     return name;
+  // A longer corporate brand ("MidWest Homes for Pets") whose first word already starts the name ("MidWest Exercise Pen").
+  const first = b.split(/\s+/)[0] ?? "";
+  if (first.length >= 4 && n.startsWith(`${first} `)) return name;
   return `${brand} ${name}`;
 }
 

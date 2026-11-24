@@ -10,7 +10,7 @@ import {
   PawPrint,
   ShieldCheck,
   Snowflake,
-  SprayCan,
+  Sparkles,
   TriangleRight,
   type LucideIcon,
 } from "lucide-react";
@@ -38,7 +38,7 @@ export const SPEC_CARD_STYLE: Record<string, { icon: LucideIcon; tone: Tone }> =
   "trail-and-hiking": { icon: MountainSnow, tone: "sand" },
   "cold-weather": { icon: Snowflake, tone: "sage" },
   "safety-id-first-aid": { icon: BriefcaseMedical, tone: "terracotta" },
-  "rental-cleanup": { icon: SprayCan, tone: "sand" },
+  "rental-cleanup": { icon: Sparkles, tone: "sand" },
 };
 
 function styleFor(p: CardProduct) {

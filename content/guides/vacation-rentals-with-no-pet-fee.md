@@ -205,31 +205,13 @@ Neither page mentions cleaning fees or damage policy, and this is a ten-home sam
 
 ## Who charges, for contrast
 
-Of the 38 managers, 22 state a charge, from $20 a night [[18]](https://www.ablueridgevacation.com/rental-and-cancellation-policies/) to "up to $1,000." A few named examples, each re-read on 2026-11-18:
-
-| Manager | What the page says | Also on the page |
-| --- | --- | --- |
-| Big Bear Vacations | "an extra $40 per pet/per night" | Fee "covers the additional cleaning"; no separate cleaning charge listed |
-| Rosemary Beach Cottage Rental Company | Non-refundable $300 per pet, maximum of 3 | Pet-friendly homes only |
-| Cabin Rentals of Georgia | $50 per pet per night plus a $75 pet cleaning fee | Dogs under 35 lb; a refundable $250 pet deposit is also listed |
-| Resort Realty | "non-refundable pet fee up to $1,000," varies by property | Two adult dogs, no puppies |
-
-Big Bear's figure is from its pet information page [[8]](https://www.bigbearvacations.com/about-us/pet-information/) and Rosemary Beach's from its FAQ [[9]](https://rosemarybeach.com/faq/). Cabin Rentals of Georgia's comes from its policies page [[10]](https://cabin-rentals-of-georgia.com/policies), and Resort Realty's from its Outer Banks pet page [[11]](https://resortrealty.com/outer-banks-pet-friendly).
+Of the 38 managers, 22 state a charge, from $20 a night [[18]](https://www.ablueridgevacation.com/rental-and-cancellation-policies/) to "up to $1,000." Examples, each re-read on 2026-11-18: Big Bear Vacations charges "an extra $40 per pet/per night" that it says covers the additional cleaning [[8]](https://www.bigbearvacations.com/about-us/pet-information/), and Rosemary Beach a non-refundable $300 per pet, maximum of 3 [[9]](https://rosemarybeach.com/faq/). Cabin Rentals of Georgia lists $50 per pet per night plus a $75 pet cleaning fee, and a refundable $250 pet deposit [[10]](https://cabin-rentals-of-georgia.com/policies). Resort Realty lists a "non-refundable pet fee up to $1,000," varying by property [[11]](https://resortrealty.com/outer-banks-pet-friendly). Our [cost guide](/guides/what-a-dog-really-costs-on-a-vacation-rental) compares how these units differ.
 
 A fee is sometimes where cleaning is paid for: Big Bear says its pet fee covers cleaning, and Cabin Rentals of Georgia stacks a nightly fee and a cleaning fee. So a $0 pet fee plus a cleaning fee can land close to a home with a pet fee and no cleaning fee, which is why totals beat headlines (our reading, not a figure from any page). For how the units differ, see [how pet fees work](/guides/how-vacation-rental-pet-fees-work), and for the wider picture, [what a dog really costs on a rental trip](/guides/what-a-dog-really-costs-on-a-vacation-rental).
 
 ## Read the total, not the pet line
 
-Price the same dates and the same number of dogs for each place, and put every line side by side: nightly rate, cleaning, pet fee, deposit, service fee, taxes. A hypothetical example with round numbers, four nights and one dog:
-
-| Line | Fee-free home | Home with a fee |
-| --- | --- | --- |
-| Rental (4 nights) | $800 | $720 |
-| Cleaning fee | $120 | $100 |
-| Pet fee | $0 | $60 |
-| Total | $920 | $880 |
-
-The fee-free home is not automatically cheaper: here the home with a $60 pet fee costs $40 less overall. The numbers are made up to show the method, not what any home charges.
+Price the same dates and the same number of dogs for each place, and put every line side by side: nightly rate, cleaning, pet fee, deposit, service fee, taxes. A hypothetical example with round numbers, four nights and one dog: a fee-free home at $800 plus $120 cleaning is $920, while a home at $720 plus $100 cleaning plus a $60 pet fee is $880. The fee-free home is not automatically cheaper; here the home with the pet fee costs $40 less overall. The numbers are made up to show the method, not what any home charges; our [cost guide](/guides/what-a-dog-really-costs-on-a-vacation-rental) has a longer side-by-side comparison.
 
 ## How to look for fee-free homes on the platforms
 
@@ -260,13 +242,6 @@ Our [dog-count guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental) 
 ## What we could not confirm
 
 Three of 38 is a small convenience sample of managers whose sites we could read, not a market-wide share. What each page says is quoted above; what any home charges for your dates is not published.
-
-| Question | Check for yourself |
-| --- | --- |
-| Sliding Rock's cleaning fee amount, deposits and processing fees (pages say "nominal cleaning fees") | Ask for a full quote for your cabin |
-| Hapey's general cleaning fee, damage terms and deposits | Ask what the Vrbo total includes |
-| Whether Twiddy's $0 applies beyond the listed homes | Check the home's own listing |
-| Whether a displayed Vrbo total includes the pet charge | Ask the host to confirm |
 
 ## Next step
 

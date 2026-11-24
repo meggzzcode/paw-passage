@@ -26,14 +26,13 @@ export const guide: Guide = {
 
 Write a short containment profile: your dog's size, escape habits, reactions to wildlife or passing dogs, and anything that changes in unfamiliar places. The [American Kennel Club](https://www.akc.org/expert-advice/home-living/types-dog-fences/) says a dog's habits and activity level help determine the right fence, and its [escape-prevention advice](https://www.akc.org/expert-advice/home-living/how-to-keep-a-dog-from-escaping-the-yard/) treats jumping, climbing and digging as different problems. For booking, that becomes specific questions:
 
-| Your dog's pattern | What to investigate, and when to pause |
+| Your dog's pattern | Pause the booking if |
 | --- | --- |
-| Jumps or launches from objects | Lowest usable fence height; furniture, logs, slopes and retaining walls nearby. Pause on a tall fence photographed only from its downhill side. |
-| Climbs | Mesh, horizontal rails, trellis and corner footholds. Pause on "six feet" with no construction detail. |
-| Digs | Ground contact, soft soil, old holes and buried protection. Pause on a gap concealed by mulch or loose stones. |
-| Squeezes through openings | Gate bottoms, picket spacing, mesh openings and building junctions. Pause when no one measured the widest opening. |
-| Rushes gates | Latch operation, visitor access and a separate enclosed dog area. Pause on a single driveway gate used all day. |
-| Reacts to outside movement | Sightlines, neighboring dogs, footpaths and livestock. Pause on a shared or see-through boundary beside constant traffic. |
+| Jumps or launches (check the lowest usable fence height and nearby furniture, logs, slopes, walls) | A tall fence is photographed only from its downhill side |
+| Climbs (check mesh, horizontal rails, trellis, corner footholds) | The listing says "six feet" with no construction detail |
+| Digs (check ground contact, soft soil, old holes) | A gap is concealed by mulch or loose stones |
+| Squeezes through openings (check gate bottoms, picket spacing, building junctions) | No one measured the widest opening |
+| Rushes gates (check latch operation, visitor access, a separate enclosed area) | A single driveway gate is used all day |
 
 These are screening questions, not engineering specifications. For two dogs, assess the better escape artist and the smaller opening-seeker separately; see [how many dogs a rental allows](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental).
 

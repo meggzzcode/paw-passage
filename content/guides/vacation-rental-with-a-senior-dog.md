@@ -284,16 +284,11 @@ If your dog may leak, say so in the message, and send it through the booking pla
 
 We read six manager pages on 2026-11-18, mostly Outer Banks. The rules below are the ones that can clash with a senior's needs.
 
-| Manager | Rules we read | What it could mean for a senior |
-| --- | --- | --- |
-| Twiddy | Up to two pets; only in homes listed pet-friendly; no pools or hot tubs | Check that your exact home is on the list |
-| Brindley Beach | 60 lb or less unless advertised; fee does not cover "unreported accidents"; off furniture unless covered with your own sheet; not alone unless crated | Tell them about an accident rather than hide one; check before bringing a ramp or bed |
-| Sun Realty | Up to two; fee set by property; no pools or hot tubs | Get the amount |
-| Resort Realty | Up to two adult dogs; fee varies by property | A senior is an adult, so not a barrier |
-| Carolina Designs | Up to two adult dogs; off furniture; not left unattended | An anxious dog should check the unattended rule |
-| Vacasa | Varies by home; notify the host first; no dogs unsupervised inside | Read the listing's rules |
-
-Sources for this table: [[7]](https://www.twiddy.com/outer-banks/guests/pets/), [[8]](https://www.brindleybeach.com/node/3691), [[9]](https://www.sunrealtync.com/node/1163), [[10]](https://resortrealty.com/outer-banks-pet-friendly), [[11]](https://www.carolinadesigns.com/outer-banks-vacation/pet-friendly), [[12]](https://vacasa.com/furryfriends)
+- **Brindley Beach:** 60 lb or less unless advertised; the fee does not cover "unreported accidents"; dogs stay off furniture unless covered with your own sheet, and are not left alone unless crated. Tell them about an accident rather than hide one, and check before bringing a ramp or bed. [[8]](https://www.brindleybeach.com/node/3691)
+- **Carolina Designs:** up to two adult dogs, off furniture, not left unattended. An anxious dog should check the unattended rule. [[11]](https://www.carolinadesigns.com/outer-banks-vacation/pet-friendly)
+- **Vacasa:** varies by home; notify the host first; no dogs unsupervised inside. [[12]](https://vacasa.com/furryfriends)
+- **Twiddy:** up to two pets, only in homes listed pet-friendly, no pools or hot tubs, so check that your exact home is on the list. [[7]](https://www.twiddy.com/outer-banks/guests/pets/)
+- **Sun Realty** [[9]](https://www.sunrealtync.com/node/1163) and **Resort Realty** [[10]](https://resortrealty.com/outer-banks-pet-friendly): up to two dogs, fee set by property; Resort Realty says adult dogs, so a senior is not a barrier.
 
 Most cap dogs at two, which matters for two older dogs (see [traveling with two dogs](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental)). A big senior should read our [large-dog guide](/guides/vacation-rentals-that-welcome-large-dogs); fees are in [how pet fees work](/guides/how-vacation-rental-pet-fees-work).
 

@@ -29,12 +29,12 @@ Here are the six managers that state a limit, quoted from their public pages (re
 
 | Manager | What the page says | Counted |
 | --- | --- | --- |
-| Hearthside Cabin Rentals (Smokies, TN) | "no larger than 35 pounds"; "SOME cabins will allow larger pets"; "a one-time fee of $75 for a large pet" | Each, soft limit |
-| Cabin Rentals of Georgia (Blue Ridge, GA) | "only accept dogs under 35 lbs., non-shedding, and crate trained" | Each |
-| Elk Springs Resort (Gatlinburg, TN) | "Dogs over 50 pounds are not permitted." | Each |
-| AMI Locals (Anna Maria Island, FL) | "Max of 2 dogs, combined weight ≤ 50 lbs" | Combined |
-| Brindley Beach Vacations (Outer Banks, NC) | "up to two dogs, each weighing 60 pounds or less" | Each |
-| Emmons Realty (St. Simons Island, GA) | "a maximum weight of 65lbs per dog" | Each |
+| Hearthside Cabin Rentals (TN) | "no larger than 35 pounds"; "SOME cabins will allow larger pets" | Each, soft limit |
+| Cabin Rentals of Georgia (GA) | "only accept dogs under 35 lbs., non-shedding, and crate trained" | Each |
+| Elk Springs Resort (TN) | "Dogs over 50 pounds are not permitted." | Each |
+| AMI Locals (FL) | "Max of 2 dogs, combined weight ≤ 50 lbs" | Combined |
+| Brindley Beach Vacations (NC) | "up to two dogs, each weighing 60 pounds or less" | Each |
+| Emmons Realty (GA) | "a maximum weight of 65lbs per dog" | Each |
 
 Sources for this table: [[1]](https://hearthsidecabinrentals.com/frequently-asked-questions), [[2]](https://cabin-rentals-of-georgia.com/policies), [[3]](https://elkspringsresort.com/?p=1899), [[4]](https://www.amilocals.com/faqs), [[5]](https://www.brindleybeach.com/node/3691), [[6]](https://www.emmonsrealty.com/pages/rental-policies)
 
@@ -54,16 +54,10 @@ The other 30 managers say nothing about weight on the pages we read. That could 
 
 There is no universal booking definition of "large." Read the listing literally:
 
-| Wording | Example or reading | What to ask |
-| --- | --- | --- |
-| Per dog | Brindley Beach: "each weighing 60 pounds or less" | Is my dog's weight measured or self-reported? |
-| Combined | AMI Locals: "combined weight ≤ 50 lbs" | Is a one-dog booking the only route? |
-| "Under" versus "or less" | Cabin Rentals of Georgia says "under 35 lbs."; Brindley says "60 pounds or less" | Is a dog at exactly the number accepted? |
-| Not permitted over a number | Elk Springs: "Dogs over 50 pounds are not permitted." | Any exception, or none? |
-| "Large dogs considered" or "Pets by arrangement" | Acceptance is conditional | Has this dog been approved, and at what charge? |
-| Soft limit | Hearthside: "SOME cabins will allow larger pets" | Which cabins, and what is the extra fee? |
-| Bundled conditions | Cabin Rentals of Georgia adds "non-shedding, and crate trained" | Does my dog meet every condition, not only weight? |
-| "Any size" | No weight ceiling stated | Are there count or breed rules? |
+- **"Under" versus "or less":** Cabin Rentals of Georgia says "under 35 lbs." and Brindley says "60 pounds or less". Ask whether a dog at exactly the number is accepted.
+- **"Large dogs considered" or "Pets by arrangement":** acceptance is conditional. Ask whether this dog has been approved, and at what charge.
+- **Soft limit:** Hearthside says "SOME cabins will allow larger pets". Ask which cabins, and what the extra fee is.
+- **Bundled conditions:** Cabin Rentals of Georgia adds "non-shedding, and crate trained". Ask whether your dog meets every condition, not only weight, and whether weight is measured or self-reported.
 
 [Hostaway's](https://www.hostaway.com/vacation-rental-guide/pet-friendly-hosting/policies/) host guide advises stating size limits numerically and says some hosts set none. [[15]](https://www.hostaway.com/vacation-rental-guide/pet-friendly-hosting/policies/) Many pages still use soft words, so ask for the number. Breed rules ride separately: Elk Springs, Emmons Realty and Cabin Rentals of Georgia pair weight with other conditions, so a dog under the number can still be turned away.
 
@@ -123,13 +117,6 @@ Once a rental passes permission, run these. The [full booking checklist](/guides
 Restrictions can come from an owner, insurer, association or building. The [Insurance Information Institute](https://www.iii.org/article/spotlight-on-dog-bite-liability) reports that insurers vary: some restrict certain breeds, some assess individual dogs, and some do not ask about breed. [[17]](https://www.iii.org/article/spotlight-on-dog-bite-liability) So "insurance won't allow it" is a real limit for some properties and not a universal one. Ask whether it is a firm property or insurer rule, or whether the host can approve your dog in writing. A pet health policy is a different product from liability cover for injuries or damage your dog causes. [[18]](https://www.iii.org/article/facts-about-pet-insurance) Check with your own insurer whether liability extends to a temporary rental.
 
 ## What we could not confirm
-
-| Question | Status | Check |
-| --- | --- | --- |
-| Do the 30 silent managers have limits in the listing or agreement? | Unknown | Read the listing's pet section and the agreement. |
-| Will Hearthside or others grant an exception? | Hearthside says "SOME cabins"; the rest unknown | Ask which cabins and the fee. |
-| Does Airbnb have a weight field? | The pages we read do not mention one | Check House rules and message the host. |
-| Is the weight measured or self-reported? | Not stated | Ask whether a vet record is needed. |
 
 The six-of-38 figure is our own count, and what any individual home allows can change, so confirm before you pay.
 

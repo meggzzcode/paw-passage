@@ -178,12 +178,10 @@ How each fee type works is in our [pet fees guide](/guides/how-vacation-rental-p
 | --- | --- |
 | Big Bear Vacations | "$40 per pet/per night", described as covering the extra cleaning |
 | Tahoe Vacation Rentals | Nonrefundable $75 plus tax per pet, up to 3 pets |
-| Rosemary Beach Cottage Rental Company | Non-refundable $300 per pet, maximum 3 |
 | AMI Locals | $250 per stay; max 2 dogs, combined weight 50 lb or less |
 | Resort Realty | Non-refundable fee up to $1,000, varying by property, due with the balance payment |
-| Twiddy & Company | All ten listed homes waive the pet fee and deposit; nine say "no additional fee or deposit" |
 
-Big Bear states its fee on its pet information page [[8]](https://www.bigbearvacations.com/about-us/pet-information/), and Tahoe on its reservation page [[9]](https://www.tahoevacationrentals.com/reservation-information/). Rosemary Beach [[10]](https://rosemarybeach.com/faq/) and AMI Locals [[11]](https://www.amilocals.com/faqs) post theirs in FAQs. Resort Realty's fee is on its Outer Banks page [[12]](https://resortrealty.com/outer-banks-pet-friendly), and Twiddy's ten homes are in a blog post [[13]](https://blog.twiddy.com/bring-your-pets-on-vacation/).
+Big Bear states its fee on its pet information page [[8]](https://www.bigbearvacations.com/about-us/pet-information/), and Tahoe on its reservation page [[9]](https://www.tahoevacationrentals.com/reservation-information/). AMI Locals posts its fee in an FAQ [[11]](https://www.amilocals.com/faqs). Rosemary Beach, which charges a non-refundable $300 per pet, maximum 3, does the same [[10]](https://rosemarybeach.com/faq/). Resort Realty's fee is on its Outer Banks page [[12]](https://resortrealty.com/outer-banks-pet-friendly), and Twiddy's blog post lists ten homes that all waive the pet fee and deposit, nine saying "no additional fee or deposit" [[13]](https://blog.twiddy.com/bring-your-pets-on-vacation/).
 
 Nobody can quote you "the" pet cost from a range this wide. The fee only becomes a number once you know your dates and dog count. Our [no pet fee rentals guide](/guides/vacation-rentals-with-no-pet-fee) goes through what the $0 managers say.
 
@@ -191,13 +189,12 @@ Nobody can quote you "the" pet cost from a range this wide. The fee only becomes
 
 | Line | Airbnb | Vrbo |
 | --- | --- | --- |
-| Cleaning fee | Some hosts charge one to cover cleaning after your stay; it is shown separately unless total-price display is on | Pets and cleaning are separate standard fee types |
-| Deposit | Not covered in the pages we read | A host-set damage deposit, not part of the host's payout, returned unless the host claims damage |
-| Service fee | May be added depending on the listing; none under the host-only fee structure | Displayed price includes mandatory and service fees |
-| Taxes | Depend on location and may not show until checkout | Not in the displayed price; added at checkout |
-| Optional extras | Check the listing | Not in the displayed price; may be described in the property description |
+| Service fee | Depends on the listing | In the displayed price |
+| Taxes | May not show until checkout | Added at checkout |
 
-The Airbnb column follows its additional-fees page [[3]](https://www.airbnb.com/help/article/2385). The Vrbo column follows its price display [[4]](https://help.vrbo.com/articles/About-Price-Display), fee [[5]](https://help.vrbo.com/articles/How-do-I-manage-my-fees) and payment-detail help pages [[6]](https://help.vrbo.com/articles/How-do-I-read-my-payment-details).
+Vrbo's displayed price leaves out optional extras, and its damage deposit is host-set and returned unless the host claims damage. Airbnb shows a cleaning fee separately unless total-price display is on.
+
+The Airbnb cells and cleaning note follow its additional-fees page [[3]](https://www.airbnb.com/help/article/2385). The Vrbo cells follow its price display [[4]](https://help.vrbo.com/articles/About-Price-Display), fee [[5]](https://help.vrbo.com/articles/How-do-I-manage-my-fees) and payment-detail help pages [[6]](https://help.vrbo.com/articles/How-do-I-read-my-payment-details).
 
 Managers add their own twists:
 
@@ -209,13 +206,13 @@ Count any deposit as a cash need and ask who holds it and when it is released.
 
 ## Three quotes, side by side (hypothetical)
 
-These numbers are invented, round, and illustrative, not prices from any listing. One dog, five nights, same dates, taxes left out of all three.
+These numbers are invented, round, and illustrative, not prices from any listing. One dog, five nights, same dates, taxes left out of all three. Rental A charges the pet fee per night ($40 x 5); C charges it per stay.
 
 | Line | Rental A | Rental B | Rental C |
 | --- | --- | --- | --- |
-| Nightly rate x 5 | $200 x 5 = $1,000 | $225 x 5 = $1,125 | $210 x 5 = $1,050 |
+| Nightly rate x 5 | $1,000 | $1,125 | $1,050 |
 | Cleaning fee | $100 | $125 | $100 |
-| Pet charge | $40 per night = $200 | $0 | $150 per stay |
+| Pet charge | $200 | $0 | $150 |
 | **Definite cost** | **$1,300** | **$1,250** | **$1,300** |
 | Refundable deposit | none | none | $250 |
 | **Cash needed up front** | **$1,300** | **$1,250** | **$1,550** |
@@ -242,13 +239,8 @@ Rental B, the "no pet fee" one, is cheapest. A and C tie on cost, but C asks for
 
 Platform wording comes from the Airbnb and Vrbo help pages, and each manager figure from that manager's own page, re-read on 2026-11-18. The dataset ranges come from 38 managers, a small convenience sample, and policies change.
 
-| Open question | Check for yourself |
-| --- | --- |
-| Whether a service fee or tax is applied to the pet charge on a given listing | Read the price breakdown at checkout |
-| How and when a deposit or card hold is released | Ask the host for the release date |
-| Whether a displayed nightly rate already includes the pet fee | Compare the breakdown with the dog count entered and removed |
-| What a manager does with fees if you cancel | Read the cancellation terms on your booking |
-| What your own fuel, gear or boarding would cost | Get your own quotes |
+- Whether a service fee or tax is applied to the pet charge on a given listing: read the price breakdown at checkout.
+- How and when a deposit or card hold is released: ask the host for the release date.
 
 ## Next step
 

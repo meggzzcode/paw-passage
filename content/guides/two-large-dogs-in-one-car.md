@@ -187,12 +187,9 @@ It also shows how much the details matter: one maker's straps ruptured and relea
 
 The ASPCA calls a secured crate the safest option and describes a harness on a secured seat belt as the alternative; for dogs on a seat it says the back seat. [[4]](https://www.aspca.org/pet-care/general-pet-care/travel-safety-tips) The CDC also advises the back seat with a harness attached to the seat buckle. [[5]](https://www.cdc.gov/healthy-pets/travel/index.html)
 
-| Layout and vehicle | What the sources say |
-| --- | --- |
-| Two crates, side by side, in the cargo area (SUV, wagon) | CPS warns cargo anchors are not always weight-rated and the platform may not be as solid as it looks; ask the vehicle maker. Whether your anchors carry two crates and two dogs is unknown. |
-| One harness per dog on the rear seat (sedan, wagon, SUV) | CPS lists the Sleepypod Clickit Sport as passed (5 star, July 2014), test dogs up to 90 lb. You need two good belt positions. |
-| Harnesses plus a barrier behind the front seats | Kurgo says its barrier fits fixed or removable headrests but not 2-door cars or mini vans. No crash role is claimed. |
-| Dogs behind a cargo barrier, no restraint (SUV, wagon) | PetSafe's barrier is tension-fit and its page makes no crash-test claim, so nothing is known about the dogs in a sudden stop. |
+- **Two crates in the cargo area (SUV, wagon):** CPS warns cargo anchors are not always weight-rated, so ask the vehicle maker. [[2]](https://centerforpetsafety.org/cargo-area-connection-advisory/)
+- **One harness per dog on the rear seat:** you need two good belt positions; CPS lists the Sleepypod Clickit Sport as passed, with test dogs up to 90 lb. [[6]](https://centerforpetsafety.org/sleepypod-clickit-sport/)
+- **Harnesses plus a barrier behind the front seats:** Kurgo says its barrier fits fixed or removable headrests but not 2-door cars or mini vans. [[7]](https://www.kurgo.com/p/backseat-barrier/K00006)
 
 If both dogs share the rear bench, a wide seat cover keeps hair and mud off it, but it is not a restraint. Kurgo lists its Rover Hammock Extended Width at 63 by 56 inches for full-size trucks and large SUVs. [[9]](https://kurgo.com/car-seat-covers/dog-hammocks/wander-hammock-extended-width) Our [car interior guide](/guides/protect-your-car-interior-from-a-dog-on-a-road-trip) covers seat covers and liners, and our [large-dog rental guide](/guides/vacation-rentals-that-welcome-large-dogs) covers the stay.
 
@@ -230,7 +227,7 @@ Kurgo says its Tru-Fit is crash tested for dogs up to 75 pounds, though its size
 
 A barrier keeps two dogs from reaching you. It does not hold either one in place in a stop. Pick by where it goes.
 
-For dogs on the rear seat, the Backseat Barrier sits behind the front seats with a mesh view and a cup holder; the layout table lists its vehicle limits. [[7]](https://www.kurgo.com/p/backseat-barrier/K00006) Its only safety wording is that it is designed to prevent distracted driving. For an SUV cargo area, the PetSafe Happy Ride is a tension-fit metal frame, 32 to 49 inches wide and 33 to 57 inches high, with no tools and a storage pouch. [[8]](https://www.petsafe.com/p/happy-ride-metal-dog-barrier/62409/) Skip it if your opening is outside those ranges. Neither page names a crash test or a weight capacity, so either one divides the car and restrains nothing.
+For dogs on the rear seat, the Backseat Barrier sits behind the front seats with a mesh view and a cup holder; it does not fit 2-door cars or mini vans. [[7]](https://www.kurgo.com/p/backseat-barrier/K00006) Its only safety wording is that it is designed to prevent distracted driving. For an SUV cargo area, the PetSafe Happy Ride is a tension-fit metal frame, 32 to 49 inches wide and 33 to 57 inches high, with no tools and a storage pouch. [[8]](https://www.petsafe.com/p/happy-ride-metal-dog-barrier/62409/) Skip it if your opening is outside those ranges. Neither page names a crash test or a weight capacity, so either one divides the car and restrains nothing.
 
 {{pick:petsafe-happy-ride-dog-barrier|For an SUV cargo area: tension-fit, no tools|Tension-fit metal frame with rubberized caps and a storage pouch.|https://www.petsafe.com/p/happy-ride-metal-dog-barrier/62409/}}
 

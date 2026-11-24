@@ -12,3 +12,9 @@
 - PIN ROW (docs/pinterest-pins.csv line 26): please change the title/description to echo "dog cabin packing list" (for example "Dog cabin packing list: what to pack and buy").
 - No first-aid or tick-tool product exists in the catalog, so none is promoted (honest limit).
 - Expected score: about 9.0 to 9.2 if the hero is replaced; Layout may stay 4 until then.
+
+## Round 3
+- Removed the unsourced NBC Select cooling-mat claim from "How sure we are" (no record of that label exists in the repo).
+- Linked the first-aid and bowls guides in text and relatedGuides; Iris container now named by its catalog name so it links to the sponsored target.
+- Checklist item 6 replaced; "buy first" repetition removed from container, towel, bed and light paragraphs; Kurgo specs moved into the bed paragraph (no duplicate); seoDescription gets a call-to-action verb.
+- For the lead: hero and pin still not replaced (not mine to edit).

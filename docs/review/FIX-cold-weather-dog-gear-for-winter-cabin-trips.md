@@ -13,3 +13,8 @@
 - products.yml: ruffwear-timberline-fuse-vest has `relatedGuides: []`; add `cold-weather-dog-gear-for-winter-cabin-trips`.
 - docs/pinterest-pins.csv row 6: title to "Dog Coat or Boots for Winter? Cold Limits and Fit", description to the new seoDescription.
 - Layout: sticky table header overlapped rows in the reviewer's 390 px capture; check the component. Hero (dog in coat in snow) is on topic.
+
+## Round 3
+- Short answer and the Quick chooser now open the article, before the research bullets.
+- Dog-type table collapsed to two columns (our reading in italics); size-band lists removed from fleece and vest paragraphs; wet/very cold fallback added to What to buy first; "buy first" nudges removed from card paragraphs; seoTitle shortened to 41 characters.
+- For the lead: no verified insulated shell exists in the catalog (optional owner decision).

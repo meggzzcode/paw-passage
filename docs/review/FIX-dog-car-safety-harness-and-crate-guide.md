@@ -18,3 +18,9 @@
 - Hero (gear-car-safety) and public/pins/dog-car-safety-harness-and-crate-guide.jpg show two small dogs in a raised bed on a back seat, undercutting a restraint article. Replace with a dog in a harness on a seat belt or a secured crate; if none exists, add a caption: "Not a restraint: a bed or booster seat does not replace a tested harness or secured crate".
 - docs/pinterest-pins.csv row 25: title to the new H1, description to the new seoDescription, keep the utm URL.
 - Auto "Picks by criteria" and gear blocks repeat the same four products; collapse so each shows at most twice.
+
+## Round 3
+- Crate pick restructured: the card is honestly the Intermediate (under 70 lb); the Large (70 to 110 lb) is described as a separate listing to look up, with no link invented. Quick picks, situation bullet, What to buy first and the gear entry updated to match.
+- First paragraph now answers first; harness "Start here" made conditional on the listing naming the Clickit Sport; source 9 relabelled as a different, current model.
+- For the lead: the Lucky Kennel card chip ("Intermediate: under 70 lbs") and the Atom card blurb grammar live in content/products.yml (not mine); the Large ASIN (candidate B0DW9JGDJM) still needs owner verification. The Intermediate CPS listing was not read; the text says so.
+- Sponsored mentions of the harness are auto-linked from the name; I did not restructure all mentions.

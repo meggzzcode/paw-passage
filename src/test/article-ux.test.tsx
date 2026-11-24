@@ -53,15 +53,76 @@ describe("article UX", () => {
 });
 
 describe("source numbers in article text", () => {
-  it("are small superscript links, not full-size bracketed links", async () => {
+  it("are small superscript links that jump to the Sources list, not off-site", async () => {
     const { renderToStaticMarkup } = await import("react-dom/server");
     const { Markdown } = await import("@/components/site/Markdown");
     const html = renderToStaticMarkup(
-      <Markdown source={"A claim. [[5]](https://example.com/a) [[10]](https://example.com/b)"} />,
+      <Markdown
+        source={
+          "A claim. [[5]](https://example.com/a) More. [[10]](https://example.com/b) Again [[5]](https://example.com/a)"
+        }
+      />,
     );
     expect(html).toContain('<sup class="cite">');
-    expect(html).toContain('aria-label="Source 5"');
+    expect(html).toContain('href="#src-5"');
+    expect(html).toContain('href="#src-10"');
+    expect(html).toContain('id="cite-5-1"');
+    expect(html).toContain('id="cite-5-2"');
+    expect(html).toContain('aria-label="Source 5: jump to the sources list"');
     expect(html).not.toContain("[5]");
-    expect(html).toContain("https://example.com/b");
+    // The marker stays on the page: no new tab, no off-site address.
+    expect(html).not.toContain("example.com");
+    expect(html).not.toMatch(/<sup class="cite"><a[^>]*target=/);
+  });
+  it("gives the first inline link to a source's exact URL a back-link id", async () => {
+    const { renderToStaticMarkup } = await import("react-dom/server");
+    const { Markdown } = await import("@/components/site/Markdown");
+    const html = renderToStaticMarkup(
+      <Markdown
+        source={"[PetMD](https://example.com/a) says so. Also [other](https://example.com/z)."}
+        sourceUrls={["https://example.com/a"]}
+      />,
+    );
+    expect(html).toMatch(/<a href="https:\/\/example.com\/a"[^>]* id="cite-1-1"/);
+    expect(html).toContain('rel="noopener noreferrer"');
+    expect(html).not.toContain('id="cite-1-2"');
+  });
+});
+
+describe("Sources list", () => {
+  it("is a details element with an id per entry, publisher, read date and back-links", async () => {
+    const { renderToStaticMarkup } = await import("react-dom/server");
+    const { SourcesList } = await import("@/components/site/SourcesList");
+    const { RouterProvider, createMemoryHistory, createRouter, createRootRoute } =
+      await import("@tanstack/react-router");
+    const sources = [
+      {
+        title: "Pet fees",
+        url: "https://example.com/a",
+        publisher: "Airbnb",
+        accessedOn: "2026-11-18",
+      },
+      { title: "Rules", url: "https://example.com/b", publisher: "Vrbo", accessedOn: "2026-11-19" },
+    ];
+    const root = createRootRoute({
+      component: () => <SourcesList sources={sources} backLinks={new Set([1])} />,
+    });
+    const router = createRouter({
+      routeTree: root,
+      history: createMemoryHistory({ initialEntries: ["/"] }),
+    });
+    await router.load();
+    const html = renderToStaticMarkup(<RouterProvider router={router} />);
+    expect(html).toContain("<details");
+    expect(html).toContain('id="src-1"');
+    expect(html).toContain('id="src-2"');
+    expect(html).toContain("Airbnb.");
+    expect(html).toContain("(read 2026-11-18)");
+    expect(html).toContain('href="#cite-1-1"');
+    expect(html).not.toContain('href="#cite-2-1"');
+    expect(html).toContain("back to text");
+    expect(html).toContain('href="/methodology"');
+    expect(html).toContain('href="/editorial-standards#use-of-artificial-intelligence"');
+    expect(html).toContain('href="https://example.com/a"');
   });
 });

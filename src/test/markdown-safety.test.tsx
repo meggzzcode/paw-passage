@@ -26,7 +26,7 @@ describe("article text is treated as untrusted", () => {
     const out = html("[a](https://example.com) [b](/guides/x) [[1]](https://example.com/src)");
     expect(out).toContain('href="https://example.com"');
     expect(out).toContain('href="/guides/x"');
-    expect(out).toContain('href="https://example.com/src"');
+    expect(out).toContain('href="#src-1"');
     expect(out).toContain('target="_blank"');
   });
   it("still renders tables and lists", () => {

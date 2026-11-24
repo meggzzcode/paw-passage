@@ -170,15 +170,15 @@ If your dog stops at the bumper and looks at you, a ramp is usually the fix, and
 
 ## Dog ramp specs side by side
 
-Every figure is what the maker's page said on 2026-11-18. The three ramp pages say the rating was independently tested and name no tester; the two steps pages say nothing about testing. [[6]](https://petsafe.com/product/happy-ride-compact-telescoping-dog-ramp) [[7]](https://www.petsafe.com/p/happy-ride-folding-dog-ramp/62462/) [[8]](https://www.petsafe.com/p/happy-ride-extra-long-telescoping-dog-ramp/62320/) [[9]](https://www.petsafe.com/p/happy-ride-side-door-pet-steps/ZTV00-17464/) [[10]](https://www.petsafe.com/p/happy-ride-dog-hitch-step/62430/)
+Every figure is what the maker's page said on 2026-11-18. The three ramp pages say the rating was independently tested and name no tester; the two steps pages say nothing about testing. [[6]](https://petsafe.com/product/happy-ride-compact-telescoping-dog-ramp) [[7]](https://www.petsafe.com/p/happy-ride-folding-dog-ramp/62462/)
 
 | Product | Maker's weight rating | Size as listed | Weight | Height or incline stated | Other maker details |
 | --- | --- | --- | --- | --- | --- |
-| Happy Ride Compact Telescoping Dog Ramp [[6]](https://petsafe.com/product/happy-ride-compact-telescoping-dog-ramp) | 300 lb | 28 to 70 in long; width and height not stated on the page | 14 lb | No incline stated; collapses to 28 in | High-traction surface, rubber feet, side rails |
-| Happy Ride Folding Dog Ramp [[7]](https://www.petsafe.com/p/happy-ride-folding-dog-ramp/62462/) | 150 lb | 62 x 16 x 4 in | 10 lb | No incline stated; no vehicle height given | Folds in half, safety latch, side rails; folded size not listed |
-| Happy Ride Extra Long Telescoping Dog Ramp [[8]](https://www.petsafe.com/p/happy-ride-extra-long-telescoping-dog-ramp/62320/) | 300 lb | 47 to 87 x 20 x 4 in | 18 lb | No incline stated; "to reach your tallest vehicles" | Aluminum, slides closed and locks, side rails |
-| Happy Ride Side Door Pet Steps [[9]](https://www.petsafe.com/p/happy-ride-side-door-pet-steps/ZTV00-17464/) | 200 lb | 44.9 x 18.2 x 8 in | 13 lb | Three heights: 21.25, 24.75 and 28 in | Textured steps, side rails, folds, handle; attachment not described |
-| Happy Ride Dog Hitch Step [[10]](https://www.petsafe.com/p/happy-ride-dog-hitch-step/62430/) | 200 lb | 20 x 18 x 12 in | Not stated | No numbers; "adjusts to fit the height of your truck or SUV" | Fits any 2 in hitch, folds; calls itself an alternative to ramps |
+| Happy Ride Compact Telescoping Dog Ramp | 300 lb | 28 to 70 in long; width and height not stated on the page | 14 lb | No incline stated; collapses to 28 in | High-traction surface, rubber feet, side rails |
+| Happy Ride Folding Dog Ramp | 150 lb | 62 x 16 x 4 in | 10 lb | No incline stated; no vehicle height given | Folds in half, safety latch, side rails; folded size not listed |
+| Happy Ride Extra Long Telescoping Dog Ramp | 300 lb | 47 to 87 x 20 x 4 in | 18 lb | No incline stated; "to reach your tallest vehicles" | Aluminum, slides closed and locks, side rails |
+| Happy Ride Side Door Pet Steps | 200 lb | 44.9 x 18.2 x 8 in | 13 lb | Three heights: 21.25, 24.75 and 28 in | Textured steps, side rails, folds, handle; attachment not described |
+| Happy Ride Dog Hitch Step | 200 lb | 20 x 18 x 12 in | Not stated | No numbers; "adjusts to fit the height of your truck or SUV" | Fits any 2 in hitch, folds; calls itself an alternative to ramps |
 
 ## How steep should a dog ramp be? The arithmetic
 

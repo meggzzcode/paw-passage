@@ -190,9 +190,11 @@ To compare a few real listings side by side, [start a pet-friendly search on Vrb
 
 | | Airbnb | Vrbo |
 | --- | --- | --- |
-| Fee structures | Hosts can charge per booking, per night, per pet, or per pet per night. [[1]](https://www.airbnb.com/help/article/3623) | Pets, cleaning and extra guests are listed as standard fee categories; hosts enter charges in fee settings. [[4]](https://help.vrbo.com/articles/How-do-I-manage-my-fees) |
-| Where it shows | In the nightly rate and in the checkout total, after the guest says how many pets are coming. [[1]](https://www.airbnb.com/help/article/3623) | Displayed prices include mandatory fees and service fees; taxes usually appear by checkout. [[3]](https://help.vrbo.com/articles/About-Price-Display) |
-| Service animals | Service animals stay free. [[1]](https://www.airbnb.com/help/article/3623) | Hosts in countries with service-animal laws must accommodate guests who need them regardless of the pet policy. [[5]](https://help.vrbo.com/articles/What-is-HomeAway-s-service-animal-policy) |
+| Fee structures | Hosts can charge per booking, per night, per pet, or per pet per night. | Pets, cleaning and extra guests are listed as standard fee categories; hosts enter charges in fee settings. |
+| Where it shows | In the nightly rate and in the checkout total, after the guest says how many pets are coming. | Displayed prices include mandatory fees and service fees; taxes usually appear by checkout. |
+| Service animals | Service animals stay free. | Hosts in countries with service-animal laws must accommodate guests who need them regardless of the pet policy. |
+
+Sources for this table: [[3]](https://help.vrbo.com/articles/About-Price-Display), [[5]](https://help.vrbo.com/articles/What-is-HomeAway-s-service-animal-policy)
 
 Because Airbnb can fold a pet fee into the nightly rate, a displayed nightly number is not necessarily the billing unit: a hypothetical $100 per-stay fee shows as $50 a night over two nights and $20 over five. On Airbnb, tell the host about your pets even at a property that allows them; a pet-friendly label does not settle size, breed or count [[2]](https://www.airbnb.com/help/article/86). On Vrbo, hosts can send a payment request to add a charge to an existing reservation [[4]](https://help.vrbo.com/articles/How-do-I-manage-my-fees). Our [pet-friendly rental checklist](/guides/pet-friendly-vacation-rental-checklist) covers the rest of the booking questions.
 

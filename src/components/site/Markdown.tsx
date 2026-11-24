@@ -17,6 +17,18 @@ const escapeHtml = (s: string) =>
 const safeUrl = (href: string | null | undefined) =>
   href && /^(https?:\/\/|mailto:|\/(?!\/)|#)/i.test(href.trim()) ? href.trim() : null;
 
+/**
+ * Per-render citation state. A [[n]](url) marker jumps to the entry id="src-n" in the page's Sources list; every
+ * marker (and the first inline link to a source's exact URL) gets an id so the Sources entry can link back to it.
+ * Markdown() resets this before each render and rendering is synchronous, so module state is safe here.
+ */
+const cite = { count: new Map<number, number>(), urls: new Map<string, number>() };
+const nextCiteId = (n: number): string => {
+  const k = (cite.count.get(n) ?? 0) + 1;
+  cite.count.set(n, k);
+  return ` id="cite-${n}-${k}"`;
+};
+
 // Articles are edited in a CMS, so treat the text as untrusted: raw HTML typed into an article is shown as
 // plain text instead of being run, and unsafe link addresses are removed.
 marked.use({
@@ -36,10 +48,15 @@ marked.use({
       const url = safeUrl(href);
       if (!url) return text;
       // A source number written as [[5]](url) is shown as a small, quiet superscript instead of a full-size "[5]" link.
-      const cite = /^\[(\d{1,3})\]$/.exec(text.trim());
-      if (cite)
-        return `<sup class="cite"><a href="${escapeHtml(url)}" aria-label="Source ${cite[1]}">${cite[1]}</a></sup>`;
-      return `<a href="${escapeHtml(url)}"${title ? ` title="${escapeHtml(title)}"` : ""}>${text}</a>`;
+      const marker = /^\[(\d{1,3})\]$/.exec(text.trim());
+      if (marker) {
+        const n = Number(marker[1]);
+        return `<sup class="cite"><a${nextCiteId(n)} href="#src-${n}" aria-label="Source ${n}: jump to the sources list">${n}</a></sup>`;
+      }
+      // An inline link to a source's exact URL (a publisher name linked in the sentence) also counts as citing it.
+      const srcN = cite.urls.get(url);
+      const idAttr = srcN ? nextCiteId(srcN) : "";
+      return `<a href="${escapeHtml(url)}"${idAttr}${title ? ` title="${escapeHtml(title)}"` : ""}>${text}</a>`;
     },
     heading(this: Renderer, token: Tokens.Heading & { id?: string }) {
       const inner = this.parser.parseInline(token.tokens);
@@ -176,7 +193,18 @@ function lexWithIds(source: string): { tokens: TokensList; headings: ArticleHead
 export const articleHeadings = (source: string): ArticleHeading[] => lexWithIds(source).headings;
 
 /** Renders Markdown for articles. Raw HTML in the text is escaped, never run. */
-export function Markdown({ source, className }: { source: string; className?: string }) {
+export function Markdown({
+  source,
+  className,
+  sourceUrls,
+}: {
+  source: string;
+  className?: string;
+  /** The guide's source URLs in order (sources[0].url first): lets inline links to them get back-link ids. */
+  sourceUrls?: string[];
+}) {
+  cite.count = new Map();
+  cite.urls = new Map((sourceUrls ?? []).map((u, i) => [u, i + 1] as const));
   const { tokens } = lexWithIds(source);
   linkProductMentions(tokens);
   const html = marked

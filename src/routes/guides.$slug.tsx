@@ -3,6 +3,8 @@ import { getGuide, isPublic, loadGuide } from "@/content/guides";
 import { guideHero, srcSetForKey } from "@/lib/images";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { Markdown, articleHeadings } from "@/components/site/Markdown";
+import { SourcesList } from "@/components/site/SourcesList";
+import { citedSourceNumbers } from "@/content/citations";
 import { RelatedProducts } from "@/components/site/RelatedProducts";
 import { GearPicks } from "@/components/site/GearPicks";
 import { AffiliateNotice } from "@/components/site/AffiliateNotice";
@@ -139,7 +141,7 @@ function GuidePage() {
         <div className="mx-auto w-full min-w-0 max-w-[42rem]">
           <AffiliateNotice guide={g} />
           <TableOfContents headings={headings} variant="mobile" />
-          <Markdown source={g.body} />
+          <Markdown source={g.body} sourceUrls={g.sources.map((x) => x.url)} />
           {g.gear && g.gear.length > 0 && <GearPicks picks={g.gear} excludeIds={inBody} />}
           {g.faqs.length > 0 && (
             <section className="mt-16">
@@ -207,33 +209,7 @@ function GuidePage() {
           )}
           <section className="mt-16 rounded-xl bg-muted p-6 text-sm">
             <h2 className="font-display text-xl">Sources and how we researched this</h2>
-            <p className="mt-2 text-muted-foreground">
-              Before writing, we reviewed {g.research.competitors.length} of the pages that
-              currently rank for this topic, noted what they leave out, and checked facts against
-              the official sources below. We research from published sources; we have not tested or
-              inspected what we cover here. Read our{" "}
-              <Link to="/editorial-standards" className="text-primary underline">
-                editorial standards
-              </Link>
-              .
-            </p>
-            <ol className="mt-4 list-decimal space-y-1.5 pl-5">
-              {g.sources.map((s) => (
-                <li key={s.url}>
-                  <a
-                    href={s.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-primary underline"
-                  >
-                    {s.title}
-                  </a>{" "}
-                  <span className="text-muted-foreground">
-                    ({s.publisher}, accessed {s.accessedOn})
-                  </span>
-                </li>
-              ))}
-            </ol>
+            <SourcesList sources={g.sources} backLinks={citedSourceNumbers(g.body, g.sources)} />
           </section>
           {g.relatedProducts && g.relatedProducts.length > 0 && (
             <RelatedProducts productIds={g.relatedProducts} excludeIds={shownAsPicks} />

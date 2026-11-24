@@ -1,7 +1,11 @@
 import { describe, expect, it } from "vitest";
 import { allGuides, isPublic } from "@/content/guides";
+import { citedSourceNumbers } from "@/content/citations";
 
 const tools = ["checklist", "will-my-dog-be-accepted", "packing-list"];
+// Guides already moved to the new citation style (Phase A pilot). Phase B widens this to every public guide.
+const migrated = (g: (typeof allGuides)[number]) =>
+  ["how-vacation-rental-pet-fees-work", "dog-ramp-or-steps-for-the-car-and-cabin"].includes(g.slug);
 const text = (g: (typeof allGuides)[number]) => g.body + "\n" + g.faqs.map((f) => f.a).join("\n");
 
 describe.each(allGuides.map((g) => [g.slug, g] as const))("guide content: %s", (_slug, g) => {
@@ -11,7 +15,8 @@ describe.each(allGuides.map((g) => [g.slug, g] as const))("guide content: %s", (
     expect(bad, `${g.slug}: markers out of range (sources: ${g.sources.length})`).toEqual([]);
   });
   it("every source is cited at least once", () => {
-    const cited = new Set([...text(g).matchAll(/\[\[(\d+)\]\]/g)].map((m) => Number(m[1])));
+    // Cited by a [[n]] marker or by an inline link to the source's exact URL.
+    const cited = citedSourceNumbers(text(g), g.sources);
     const uncited = g.sources
       .map((s, i) => [i + 1, s.title] as const)
       .filter(([n]) => !cited.has(n));
@@ -25,6 +30,17 @@ describe.each(allGuides.map((g) => [g.slug, g] as const))("guide content: %s", (
           `[[${m[1]}]] links ${m[2]} but sources[${m[1]}] is ${g.sources[Number(m[1]) - 1]!.url}`,
       );
     expect(mismatches).toEqual([]);
+  });
+  it("no more than 2 source markers stand side by side (known exceptions: senior-dog sole citations)", () => {
+    if (!migrated(g)) return;
+    const runs = [...g.body.matchAll(/(?:\[\[\d+\]\]\([^)\s]+\)[ \t]*){3,}/g)];
+    const allowed = g.slug === "vacation-rental-with-a-senior-dog" ? 3 : 0;
+    expect(runs.length, `${g.slug}: stacks of 3+ markers`).toBeLessThanOrEqual(allowed);
+  });
+  it("table rows carry no source markers", () => {
+    if (!migrated(g)) return;
+    const bad = g.body.split("\n").filter((l) => /^\s*\|/.test(l) && /\[\[\d+\]\]/.test(l));
+    expect(bad, `${g.slug}: markers inside table rows`).toEqual([]);
   });
   it("internal links resolve", () => {
     // Retired guides keep a 301 to their replacement (netlify.toml), so a leftover link to one still resolves.

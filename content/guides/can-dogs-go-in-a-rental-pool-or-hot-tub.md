@@ -11,7 +11,7 @@ approvedOn: 2026-11-18
 author: Paws & Passage Editors
 publishedOn: 2026-11-18
 lastReviewed: 2026-11-24
-readingMinutes: 12
+readingMinutes: 11
 heroImage: guide-pool-hot-tub
 faqs:
   - q: Can dogs go in a vacation rental's pool?
@@ -35,7 +35,6 @@ relatedGuides:
 relatedProducts:
   - soggy-doggy-super-shammy-towel
   - soggy-doggy-microfiber-doormat
-  - green-pet-shop-cool-pet-pad
   - adventure-medical-kits-dog-wipes
 relatedTools:
   - will-my-dog-be-accepted
@@ -113,18 +112,11 @@ sources:
     url: https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate
     publisher: Soggy Doggy
     accessedOn: 2026-11-16
-  - title: Cool Pet Pad
-    url: https://www.thegreenpetshop.com/products/cool-pet-pad
-    publisher: The Green Pet Shop
-    accessedOn: 2026-11-16
   - title: Adventure Dog Wipes (pack of 8)
     url: https://adventuremedicalkits.com/products/adventure-dog-wipes-pkg-8
     publisher: Adventure Medical Kits
     accessedOn: 2026-11-16
-  - title: 13 best cooling dog beds, according to experts and pet owners
-    url: https://www.nbcnews.com/select/amp/rcna168150
-    publisher: NBC Select
-    accessedOn: 2026-11-24
+
 research:
   primaryKeyword: dogs in vacation rental pool
   relatedKeywords:
@@ -189,7 +181,7 @@ Can dogs go in a vacation rental pool or hot tub? Where a property manager has w
 That is a convenience sample of managers whose sites we could read on 2026-11-18, not a survey. The full tables are on the [pet policy dataset page](/data/pet-policies).
 
 - **All seven restrict dogs, and five of the seven quotes also name the hot tub or spa.** Twiddy's separate pet page names hot tubs as well.
-- **A pet fee does not change that.** The rule is stated separately from the fee.
+- **A pet fee does not change that.** In the seven quotes, the pool rule is a separate sentence from any fee.
 - **A pool ban can come with a cleaning charge.** One manager says so in the same sentence as the rule.
 - **If the listing is silent, ask.** Use the [message below](#what-to-ask-the-host) and keep the reply.
 - **What to buy:** nothing for the pool itself. If water time moves to a lake or a hose, see [what to buy first](#what-to-buy-first).
@@ -218,7 +210,7 @@ Most of the pages above state the rule and stop. Brindley Beach gives the closes
 
 The public-health guidance points the same direction. The CDC says animals and body fluids, such as poop, vomit and blood, are the most common pool contaminants, that animals may carry germs that can contaminate pool water, and that poop and vomit should be cleaned up from pool water and surfaces immediately. [[9]](https://www.cdc.gov/healthy-swimming/response/) For a manager, a pool that has to be treated or closed between guests costs money and calendar days. That is our reading of why the rule is common, not something these managers wrote.
 
-A hot tub raises a separate issue. The CDC says hot tubs maintain water temperatures within the most favorable range for Legionella growth, 77 to 113 degrees Fahrenheit (it also recommends keeping water at or below 104 degrees to prevent scalding), and its operator guidance for display hot tubs gives a free chlorine range of 3 to 10 ppm and says cyanuric acid or stabilized chlorine products should not be used because they slow disinfection. [[10]](https://www.cdc.gov/control-legionella/php/toolkit/hot-tub-module.html) Those numbers are for people who run the tub, not for guests, which is another reason a stray dog is a headache for the owner. The page does not mention vacation rentals or dogs, so this explains the water chemistry, not any manager's motive.
+A hot tub is a smaller, warmer body of water; see the hot tub section below, which is our reading, not a manager's stated reason.
 
 ## Is a pool safe for your dog anyway?
 
@@ -259,6 +251,28 @@ What a rule means in practice is who pays if it is broken. Airbnb says a guest c
 
 So a swim in a banned pool is a plausible trigger for an extra cleaning request. Keep the booking terms and your messages, and see how to answer a request in our [damage-charge guide](/guides/airbnb-pet-damage-charge-after-checkout). Our [pet fees guide](/guides/how-vacation-rental-pet-fees-work) explains why a pet fee is not damage cover. The sources above say nothing about who is responsible if a dog is hurt at a rental pool; read the rental agreement and, for legal advice, ask a professional.
 
+## If the pool is off limits: dry off and cool down
+
+Nothing here is a pool product. When the pool is a no, dog water time moves to a lake, a creek, a hose or the rain, and the wet and the mud come back to the door. These are the items for that. That is our practical advice, not a source's rule, and each maker's size and care wording is the thing to check before you order.
+
+**The drying towel.** Dry the dog on the porch, before the coat reaches the host's floor, and keep a dog-only towel so the host's bath towels stay out of it. The Soggy Doggy Super Shammy is a 31 x 14 in microfiber chenille towel with hand pockets, and the maker says to machine wash it alone, with no bleach or fabric softener. [[17]](https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey) The page gives no absorbency figure, so judge the size against your dog's coat. It is for any dog that will swim somewhere this trip; skip it if you already own a towel you are happy to give to the dog.
+
+{{pick:soggy-doggy-super-shammy-towel|For drying a wet dog|The maker lists a 31 x 14 in microfiber chenille towel with hand pockets that is machine washable.|https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey}}
+
+**Add the entry mat if the door is the only barrier.** A mat catches wet paws before they cross the floor. The Soggy Doggy Microfiber Doormat comes in Large (26 x 36 in) and Extra Large (36 x 60 in) with a non-slip backing, and the maker says it is machine washable and dryer safe. [[18]](https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate) "Super absorbent and dirt trapping" is the maker's wording. Skip it if the rental has a mudroom or its own entry mat; ask the host.
+
+{{pick:soggy-doggy-microfiber-doormat|For wet paws at the door|The maker lists Large and Extra Large sizes with a non-slip backing, and says it is machine washable and dryer safe.|https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate}}
+
+**Optional: wipes for the porch.** VCA says to rinse a dog off after a swim and notes chlorine and salt can irritate skin, but a rental may not let you hose a dog at the door. The Adventure Dog Wipes from Adventure Medical Kits come 8 to a pack, each 8 x 8 in, and the maker describes them as rinse-free and made with aloe, rosemary and witch hazel. [[19]](https://adventuremedicalkits.com/products/adventure-dog-wipes-pkg-8) They are for the porch wipe-down only, not a rinse after chlorinated or salt water, and the page's gentleness wording is the maker's. Skip them if you can hose the dog off outside.
+
+{{pick:adventure-medical-kits-dog-wipes|Optional: a porch wipe-down|The maker lists 8 wipes per pack, each 8 x 8 in, described as rinse-free, and a 60-day satisfaction guarantee.|https://adventuremedicalkits.com/products/adventure-dog-wipes-pkg-8}}
+
+## What to buy first
+
+Before you buy anything, get the pool and hot tub answer in writing, and check the current size on each listing. Nothing here is for the pool itself. If you buy one thing, make it the drying towel; add the entry mat if the door is the only barrier between a wet dog and the host's floor. The wipes are optional, for a porch wipe-down only.
+
+Add them to the [packing list tool](/tools/packing-list), or see the [rental cleanup gear page](/gear/rental-cleanup). Before you pay for a rental with water in the yard, run your dog through the [will my dog be accepted tool](/tools/will-my-dog-be-accepted), check the total with our [pet fees guide](/guides/how-vacation-rental-pet-fees-work), and add "pool and hot tub rule, confirmed in writing" to your [trip checklist](/tools/checklist). Our guide to [leaving a dog alone in a rental](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental) helps with the hours you spend away from the water.
+
 ## Unknowns
 
 | What we cannot tell you | Why | Check for yourself |
@@ -274,29 +288,3 @@ So a swim in a banned pool is a plausible trigger for an extra cleaning request.
 - **Confirmed by a source we cite:** the seven quotes above (each manager's live page, 2026-11-18), the CDC pool and hot tub statements, the VCA and Cornell statements, and the Airbnb and Vrbo help-page wording.
 - **What most people report:** nothing here rests on reports. The 7 of 38 figure is our count in a convenience sample of managers whose sites we could read, not a random or national one.
 - **Unknown:** what any particular host will allow, and the items in the table above. Ask the host.
-
-## If the pool is off limits: dry off and cool down
-
-Nothing here is a pool product. When the pool is a no, dog water time moves to a lake, a creek, a hose or the rain, and the wet and the mud come back to the door. These are the items for that, in the order most dogs need them. That is our practical advice, not a source's rule, and each maker's size and care wording is the thing to check before you order.
-
-**If you buy one thing: the drying towel.** Dry the dog on the porch, before the coat reaches the host's floor, and keep a dog-only towel so the host's bath towels stay out of it. The Soggy Doggy Super Shammy is a 31 x 14 in microfiber chenille towel with hand pockets, and the maker says to machine wash it alone, with no bleach or fabric softener. [[17]](https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey) The page gives no absorbency figure, so judge the size against your dog's coat. It is for any dog that will swim somewhere this trip; skip it if you already own a towel you are happy to give to the dog. This is the one to buy first if water is part of the plan.
-
-{{pick:soggy-doggy-super-shammy-towel|For drying a wet dog|The maker lists a 31 x 14 in microfiber chenille towel with hand pockets that is machine washable.|https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey}}
-
-**Add the entry mat if the door is the only barrier.** A mat catches wet paws before they cross the floor. The Soggy Doggy Microfiber Doormat comes in Large (26 x 36 in) and Extra Large (36 x 60 in) with a non-slip backing, and the maker says it is machine washable and dryer safe. [[18]](https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate) "Super absorbent and dirt trapping" is the maker's wording. Skip it if the rental has a mudroom or its own entry mat; ask the host. Buy it next if your dog comes in muddy as well as wet.
-
-{{pick:soggy-doggy-microfiber-doormat|For wet paws at the door|The maker lists Large and Extra Large sizes with a non-slip backing, and says it is machine washable and dryer safe.|https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate}}
-
-**Only for a hot-weather trip: the cooling pad.** Skip the cooling pad if your trip is in cool weather; it is the one item here with nothing to do with the pool rule. On a hot day with no pool, it gives a dog a cooler place to lie. In our view it is a resting spot, not heatstroke prevention or treatment: Cornell's prevention advice is shade, frequent water and avoiding exercise in hot weather, and for an overheated dog it says to start cooling immediately and get to a veterinary hospital. [[12]](https://www.vet.cornell.edu/index.php/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/heatstroke-medical-emergency) The Green Pet Shop Cool Pet Pad is a pressure-activated gel pad in five sizes by dog weight, from Extra Small (0 to 8 lb) to Extra Large (above 80 lb). The maker says it needs no water or electricity and cools for up to 3 hours, which are maker claims, and warns not to leave it in direct sun or a hot car, or unattended with a dog that chews or scratches excessively. [[19]](https://www.thegreenpetshop.com/products/cool-pet-pad) NBC Select's roundup of cooling dog beds names The Green Pet Shop's cooling mat its best cooling mat [[21]](https://www.nbcnews.com/select/amp/rcna168150), which is a reviewer's view, not our test. For more on hot trips, see our guide to [keeping a dog cool on a summer trip](/guides/keep-a-dog-cool-on-a-summer-trip). This is the one to add if hot days are likely and you will not have water for the dog to cool off in.
-
-{{pick:green-pet-shop-cool-pet-pad|For a hot-weather trip only|The maker lists five sizes by dog weight and a 12-month warranty, and warns against direct sunlight and hot cars.|https://www.thegreenpetshop.com/products/cool-pet-pad}}
-
-**Optional: wipes for the porch.** VCA says to rinse a dog off after a swim and notes chlorine and salt can irritate skin, but a rental may not let you hose a dog at the door. Adventure Medical Kits' Adventure Dog Wipes come 8 to a pack, each 8 x 8 in, and the maker describes them as rinse-free and made with aloe, rosemary and witch hazel. [[20]](https://adventuremedicalkits.com/products/adventure-dog-wipes-pkg-8) They are for the porch wipe-down only, not a rinse after chlorinated or salt water, and the page's gentleness wording is the maker's. Skip them if you can hose the dog off outside.
-
-{{pick:adventure-medical-kits-dog-wipes|Optional: a porch wipe-down|The maker lists 8 wipes per pack, each 8 x 8 in, described as rinse-free, and a 60-day satisfaction guarantee.|https://adventuremedicalkits.com/products/adventure-dog-wipes-pkg-8}}
-
-## What to buy first
-
-Before you buy anything, get the pool and hot tub answer in writing, and check the current size on each listing. Nothing here is for the pool itself. If you buy one thing, make it the drying towel; add the entry mat if the door is the only barrier between a wet dog and the host's floor, and the cooling pad only for a hot-weather trip. The wipes are optional.
-
-Add them to the [packing list tool](/tools/packing-list), or see the [rental cleanup gear page](/gear/rental-cleanup). Before you pay for a rental with water in the yard, run your dog through the [will my dog be accepted tool](/tools/will-my-dog-be-accepted), check the total with our [pet fees guide](/guides/how-vacation-rental-pet-fees-work), and add "pool and hot tub rule, confirmed in writing" to your [trip checklist](/tools/checklist). Our guide to [leaving a dog alone in a rental](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental) helps with the hours you spend away from the water.

@@ -17,3 +17,9 @@
 - Card renders "KONG KONG Classic": products.yml kong-classic has name "KONG Classic" and brand "KONG"; set name to "Classic" or skip the brand in the renderer.
 - "See it at Amazon" button contrast (dark text on terracotta) flagged by the reviewer.
 - products.yml: ruffwear-climate-changer-fleece and kong-classic already list this guide in relatedGuides; add north-states-mypet-universal-petgate and kurgo-loft-wander-dog-bed relatedGuides for this slug if desired.
+
+## Round 3
+- Opener now leads with the four manager questions and the 38-manager finding (moved to first bullet); jump link to the gear section added.
+- Gear section moved up to directly after the booking questions (before hazards); gate card moved into it. Fleece card and its source removed (the cold-weather guide carries it, linked); boots card kept once, linked to the cold-weather guide. Buying checklist block deleted; packing-list gear bullet replaced by a pointer. Per-card "buy first" lines removed; one in "What to buy first".
+- seoTitle now "Christmas Cabin With a Dog: Booking Rules and Safety" (53). readingMinutes 10. Citations renumbered after dropping the fleece source.
+- For the lead: the fleece still appears in cold-weather-dog-gear-for-winter-cabin-trips; ruffwear-climate-changer-fleece relatedProducts id removed here. products.yml relatedGuides for the fleece still lists this slug (not edited).

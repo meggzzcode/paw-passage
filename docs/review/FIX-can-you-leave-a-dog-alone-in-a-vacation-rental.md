@@ -9,3 +9,9 @@ The review's question about dropping the KONG: kept as a clearly labeled supervi
 - Pin row in docs/pinterest-pins.csv: description should use "Some" not "Many": "Some rentals ban or limit leaving a dog alone. See what hosts and Airbnb say about crates, noise and cameras, plus a message to send before booking."
 - Edit 8 (site template): hide bullets next to checkboxes; "19 official sources" to "19 sources".
 - New fact I found but did not use: Airbnb's community policy page (help/article/4239) says service animals and emotional support animals cannot be left alone at a listing without the host's prior approval. It is about those animals, not pets, so it is not in the article.
+
+## Round 3
+- Applied r2 edits 1-5 and 8: three "buy first" mentions cut (one remains in the close); orphan sentence removed; unsourced "usual one" and "straightforward" claims reworded; "four of 38" repetition removed.
+- KONG card kicker now "Supervised use only: practice at home" and the card line and paragraph state the supervised-use-only limit.
+- "What to buy first" now uses full product names so the renderer links them.
+- For the lead: edit 7 (icons for kong-classic and midwest-icrate-dog-crate in products.yml) is a data change I did not make. The KONG was kept.

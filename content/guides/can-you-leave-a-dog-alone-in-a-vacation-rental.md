@@ -235,11 +235,11 @@ Follow the listing, and only crate a dog that already accepts it. The ASPCA says
 
 Airbnb's hosting guide does not mention crates. [[2]](https://www.airbnb.com/resources/hosting-homes/a/what-you-need-to-know-about-hosting-pets-463) Ask whether the host requires a crate, forbids one, or has space for yours. Beds and throws are worth packing if the rules say no furniture.
 
-**If the rule is "crated when alone": a folding crate that travels flat.** Then the crate is part of the trip, and a dog that has never been shut in one is not ready to start at a rental. Ask the host first whether a crate is allowed and where it can go. The maker's page for the MidWest iCrate lists sizes from 18 to 48 inches, single or double door, a divider panel, a removable leak-proof pan and rubber feet to protect floors, and says it folds flat. [[17]](https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/) It is the straightforward way to meet a "crated when alone" rule with a dog that already rests in a crate at home. Skip it if the host provides a crate or your dog has never used one. The page lists sizes but no wire gauge, weights or folded dimensions, so confirm the size with the maker and check the folded size against your car space before you buy. This is the one to buy first if the rule says "crated" and your dog already rests in a crate at home.
+**If the rule is "crated when alone": a folding crate that travels flat.** Then the crate is part of the trip, and a dog that has never been shut in one is not ready to start at a rental. Ask the host first whether a crate is allowed and where it can go. The maker's page for the MidWest iCrate lists sizes from 18 to 48 inches, single or double door, a divider panel, a removable leak-proof pan and rubber feet to protect floors, and says it folds flat. [[17]](https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/) It suits a "crated when alone" rule if your dog already rests in a crate at home. Skip it if the host provides a crate or your dog has never used one. The page lists sizes but no wire gauge, weights or folded dimensions, so confirm the size with the maker and check the folded size against your car space before you buy.
 
 {{pick:midwest-icrate-dog-crate|For a "crated when alone" rule|The maker lists sizes from 18 to 48 inches with a divider panel, a removable pan and rubber floor feet, and says it folds flat; it gives no weights or folded size.|https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/}}
 
-**If the crate stresses your dog: a pressure-mounted gate.** The ASPCA's alternative is a baby gate in one room, and a gate lets you shut the dog into a hallway or kitchen without a crate and without drilling. The maker lists the North States MyPet Universal Petgate at 26 inches high, adjusting to openings of 26 to 42 inches, with a no-tools pressure mount or an optional hardware mount. The page says a tension-held gate should never be used at the top of a stairway. [[18]](https://northstatesind.com/north-states-mypet-universal-petgate/) It is modest in height, so it will not hold a dog that jumps gates, and it is no answer to a "no unattended pets" rule. Measure the doorway first, and ask the host before using the hardware mount. Buy this one first if the host allows a gate, the dog dislikes a crate and the doorway fits that 26 to 42 inch range.
+**If the crate stresses your dog: a pressure-mounted gate.** The ASPCA's alternative is a baby gate in one room, and a gate lets you shut the dog into a hallway or kitchen without a crate and without drilling. The maker lists the North States MyPet Universal Petgate at 26 inches high, adjusting to openings of 26 to 42 inches, with a no-tools pressure mount or an optional hardware mount. The page says a tension-held gate should never be used at the top of a stairway. [[18]](https://northstatesind.com/north-states-mypet-universal-petgate/) It is modest in height, so it will not hold a dog that jumps gates, and it is no answer to a "no unattended pets" rule. Measure the doorway first, and ask the host before using the hardware mount.
 
 {{pick:north-states-mypet-universal-petgate|If your dog dislikes a crate|The maker lists a 26-inch height and openings from 26 to 42 inches, with a pressure mount that needs no tools; it says never to use it at the top of stairs when held only by tension.|https://northstatesind.com/north-states-mypet-universal-petgate/}}
 
@@ -288,11 +288,9 @@ Everything here is from the ASPCA's separation-anxiety guidance, applied to a re
 3. Keep goodbyes quiet; the ASPCA suggests a pat, a goodbye, and leaving.
 4. Start with a short trial while you are nearby, then build up. Panting, trembling or yawning means shorten it.
 
-For step 2, a stuffable rubber toy is the common choice, and the KONG Classic is the usual one. It comes in six size bands by dog weight, from XS (up to 5 lb) to XXL (85 lb and up), and the maker says to size up if your dog is between sizes. The maker also says to use it under supervision, that power chewers should size up or try a different KONG, and that no toy is indestructible. [[19]](https://www.kongcompany.com/kong-classic/) The ASPCA suggests a stuffed toy when you leave, but the maker's page says supervised use only, so do not treat the KONG as an unattended-time answer. Try it at home while you are in the room, so the first stuffed toy is not also the first night in a strange house, and ask your vet whether to leave one with your dog alone. Stop using one that is damaged. It is for the dog that settles with something to work on, not a fix for a host rule.
+For step 2, a stuffable rubber toy is one option, and the KONG Classic is one the maker sells for it. It comes in six size bands by dog weight, from XS (up to 5 lb) to XXL (85 lb and up), and the maker says to size up if your dog is between sizes. The maker also says to use it under supervision, that power chewers should size up or try a different KONG, and that no toy is indestructible. [[19]](https://www.kongcompany.com/kong-classic/) The ASPCA suggests a stuffed toy when you leave, but the maker's page says supervised use only, so do not treat the KONG as an unattended-time answer. Try it at home while you are in the room, so the first stuffed toy is not also the first night in a strange house, and ask your vet whether to leave one with your dog alone. Stop using one that is damaged. It is for the dog that settles with something to work on, not a fix for a host rule, and not for unattended time: the maker's limit is supervised use only.
 
-{{pick:kong-classic|For supervised use|The maker publishes a size chart by dog weight, says supervised use only, and says no toy is indestructible, so try it at home while you are in the room.|https://www.kongcompany.com/kong-classic/}}
-
-If you have time, repeat that at home before the trip.
+{{pick:kong-classic|Supervised use only: practice at home|The maker publishes a size chart by dog weight, says supervised use only, and says no toy is indestructible, so it is not an unattended-time answer.|https://www.kongcompany.com/kong-classic/}}
 
 ## What should I ask the host before booking?
 
@@ -306,9 +304,9 @@ Then confirm the totals in our [pet fees guide](/guides/how-vacation-rental-pet-
 
 Ask the host before you buy anything. Then match the purchase to the rule:
 
-- **"Crated when alone", and your dog already rests in a crate:** the iCrate. Check the size list and your car space first.
-- **A gate is allowed and your dog dislikes a crate:** the MyPet gate, for an opening of 26 to 42 inches. It will not hold a dog that jumps gates.
-- **Any rule:** the KONG is for practice at home with you in the room, not for unattended time unless your vet agrees.
+- **"Crated when alone", and your dog already rests in a crate:** the MidWest iCrate. Check the size list and your car space first.
+- **A gate is allowed and your dog dislikes a crate:** the North States MyPet Universal Petgate, for an opening of 26 to 42 inches. It will not hold a dog that jumps gates.
+- **Any rule:** the KONG Classic is for practice at home with you in the room, not for unattended time unless your vet agrees.
 - **"No unattended pets":** buy nothing for this. Plan a sitter or daycare and keep dog-friendly plans for the dinner.
 
 More crates and gates are on our [pens and gates page](/gear/pens-and-gates).
@@ -316,7 +314,7 @@ More crates and gates are on our [pens and gates page](/gear/pens-and-gates).
 ## How sure we are
 
 - **Confirmed by a source we cite:** what Airbnb's hosting and camera pages say, the ASPCA and Cornell guidance, and the four manager rules above.
-- **What most people report:** four of 38 managers state an alone-time rule; that is a small convenience sample, and a few forum posts show how hosts word theirs.
+- **What most people report:** a small convenience sample plus a few forum posts that show how hosts word their rules.
 - **Unknown:** your host's rule, any guest-camera rule, and how long your dog copes in a new place. Ask the host, and test your dog.
 
 ## Before you book

@@ -10,3 +10,9 @@ Expected score: 9.0 to 9.3 (the hero image and gear-fit remain the soft spots, s
 - Pin row in docs/pinterest-pins.csv: title "Can Dogs Go in a Vacation Rental Pool or Hot Tub?"; description "Seven of 38 manager pages address dogs in the pool or hot tub, and all seven say no. Read the exact wording, then ask the host before you book."
 - Edit 12 (site template): "20 official sources" to "20 sources".
 - Product fit: the pad and wipes are weak fits for a rule article; they are labeled optional with skip lines. If you want a tighter page, drop them from the page and let them live on the gear hub (the pad's catalog record says NBC Select names it best cooling mat; the wipes are the lowest fit).
+
+## Round 3
+- Cooling pad pick, paragraph, relatedProducts id and its two sources (Cool Pet Pad, NBC Select) removed; the pad remains in keep-a-dog-cool-on-a-summer-trip.
+- Gear block, "What to buy first" moved before Unknowns and How sure we are. Towel and mat kept; "buy first" repeats cut.
+- Hot tub chlorine/cyanuric detail and the duplicate CDC sentence removed; second intro bullet made true to the table.
+- For the lead: I did NOT remove the wipes (adventure-medical-kits-dog-wipes). This is its only published-guide appearance, so removing it would orphan the product. It is kept as a short "optional" card; decide whether to drop it or place it in another guide.

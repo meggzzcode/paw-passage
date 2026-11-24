@@ -70,3 +70,8 @@ I created no accounts, submitted no listing and contacted no one.
 ## Screens Megan should screenshot herself
 
 The Flippa seller pricing screen after she logs in (listing packages with prices and the success fee table), and the Escrow.com fee calculator page, for her records. Also her own Money Nomad listing form, if she ever opens one.
+
+
+## Correction, 2026-11-23
+
+An earlier line in this file says the Money Nomad listing fee is not refunded if nothing sells. I did not find a source for that. Treat the claim as unsupported and ignore it. Money Nomad refund terms are UNVERIFIED; check them on the marketplace's own terms page before paying anything.

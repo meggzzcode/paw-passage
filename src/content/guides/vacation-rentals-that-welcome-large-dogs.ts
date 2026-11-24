@@ -2,33 +2,33 @@ import type { Guide } from "../types";
 
 export const guide: Guide = {
   slug: "vacation-rentals-that-welcome-large-dogs",
-  title: "How to Find Vacation Rentals That Welcome Large Dogs",
-  seoTitle: "Large Dog Rental: 5 Checks Before You Book",
+  title: "Large Dog Friendly Vacation Rentals: How to Find One That Takes Your Dog",
+  seoTitle: "Large Dog Friendly Vacation Rentals: Limits and Checks",
   seoDescription:
-    "Six managers we read cap dogs at 35 to 65 pounds. See their limits, then five checks: written approval, stairs, floors, yard and total price.",
-  dek: "Look beyond the pets-allowed filter to the rules, dimensions, and daily routines that make a stay workable.",
+    "Six managers we read cap dogs at 35 to 65 lb. See the limits for large dog friendly vacation rentals, then run five checks before you pay.",
+  dek: "Read the weight limit for your dog, not the pets-allowed badge: six real manager limits, the wording to decode, and five checks before you pay.",
   category: "Planning",
   states: [],
   status: "published",
   author: "Paws & Passage Editors",
   publishedOn: "2026-11-16",
-  lastReviewed: "2026-11-19",
-  readingMinutes: 7,
+  lastReviewed: "2026-11-24",
+  readingMinutes: 10,
   heroImage: "guide-large-dogs",
   body: `## The short answer
 
-You found the cabin, the listing says "dogs welcome," and your Lab is 80 pounds. Then the rules page says 50. In the 38-manager sample we read, six state a weight limit, and the limits run from 35 to 65 pounds, so "welcome" tells you very little until you know whose number applies to your dog. If a listing's wording feels vague, ask the host to spell it out.
+Large dog friendly vacation rentals do exist, but "pets allowed" does not mean your dog is accepted: check the weight limit for this dog, get the yes in writing, then check the stairs, floors, yard and total price. You found the cabin, the listing says "dogs welcome," and your Lab is 80 pounds. Then the rules page says 50. In the 38-manager sample we read, six state a weight limit, and the limits run from 35 to 65 pounds, so "welcome" tells you very little until you know whose number applies to your dog. If a listing's wording feels vague, ask the host to spell it out.
 
 - A pets-allowed filter is only the first screen. Test every rental twice: does the rule explicitly allow this dog (permission), and can this dog move, rest and toilet comfortably there (practical fit)?
-- "Large dogs considered" means ask, not yes. Get approval in writing, naming your dog's current weight and breed.
+- "Large dogs considered" means ask, not yes. Get written approval naming your dog's current weight and breed.
 - Price the whole stay with your real dog count before choosing views over fit.
-- Gear comes second, after the booking. For a big dog that means a seat cover or hammock sized for the dog and the vehicle, and a ramp rated above the dog's weight with side rails and a non-slip surface (see the buying checklist below).
+- Gear comes second, after the booking. For a big dog that means a seat cover or hammock sized for the dog and the vehicle, and a ramp or hitch step rated above the dog's weight (see [gear for a big dog](#gear-for-a-big-dog-after-the-rental-says-yes)).
 
 This guide is about pet dogs. Service animals have separate protections under applicable law and platform policy.
 
 ## What real weight limits look like
 
-Here are the six managers that state one, from public pages read on 2026-11-18. The 38 managers are a convenience sample of sites we could read, not a survey, and many policies vary by home. Larger dogs are not banned everywhere: Sliding Rock Cabins, for example, says every cabin has no weight limits.
+Here are the six managers that state one, from public pages read on 2026-11-18. The 38 managers are a convenience sample of sites we could read, not a survey, and many policies vary by home.
 
 | Manager | Stated limit | Per dog or combined |
 | --- | --- | --- |
@@ -39,7 +39,7 @@ Here are the six managers that state one, from public pages read on 2026-11-18. 
 | Brindley Beach Vacations (Outer Banks, NC) | 60 lb or less [[5]](https://www.brindleybeach.com/node/3691) | Each |
 | Emmons Realty (St. Simons Island, GA) | 65 lb maximum [[6]](https://www.emmonsrealty.com/pages/rental-policies) | Each |
 
-Two things jump out. The same word, "limit," can mean per dog or for both dogs together: AMI Locals' 50 pounds is shared, so an 80-pound Lab fails alone and two 30-pound dogs fail together. And the cutoff for a "large" dog is wherever the manager puts it, so a 60-pound dog clears Brindley Beach and is over at Elk Springs. Dog counts at the same managers are covered in [how many dogs you can bring](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental). The managers that say they have no weight limit are covered in [rentals with no dog weight limit](/guides/vacation-rentals-with-no-dog-weight-limit).
+Two things jump out. The same word, "limit," can mean per dog or for both dogs together: AMI Locals' 50 pounds is shared, so an 80-pound Lab fails alone and two 30-pound dogs fail together. And the cutoff for a "large" dog is wherever the manager puts it, so a 60-pound dog clears Brindley Beach and is over at Elk Springs. Dog counts at the same managers are covered in [how many dogs you can bring](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental). Larger dogs are not banned everywhere: Sliding Rock Cabins says its cabins have no weight limits. [[7]](https://slidingrockcabins.com/) The managers that say so are covered in [rentals with no dog weight limit](/guides/vacation-rentals-with-no-dog-weight-limit).
 
 Not sure where your dog falls? Enter its weight and count in the [will my dog be accepted tool](/tools/will-my-dog-be-accepted).
 
@@ -59,61 +59,33 @@ Do not round your dog's weight down. If the dog is near a limit, give the curren
 
 "We would like to book these dates with one adult dog, currently 82 pounds, a Labrador-mastiff mix. Please confirm in writing that this dog is accepted under the property's weight, breed and building rules, and tell us the entrance steps, sleeping-level access, unattended-pet rule and total pet charge."
 
-If the breed is unknown, say so. Keep the reply on the booking platform; "we love dogs" does not answer a weight question.
+If the breed is unknown, say so. Keep the reply on the booking platform; "we love dogs" does not answer a weight question. Get any exception in writing.
 
 ## Find candidates
 
-- **Airbnb:** add pets with the guest details, or use "Allows pets" under booking options. Airbnb advises contacting the host even when pets are allowed, and the pet policy sits in House rules. [[7]](https://www.airbnb.com/help/article/86) Search the listing text for "weight," "pounds," "breed," "stairs," "crate" and "unattended."
-- **Managers:** Vacasa's page says weight limits and dog counts vary by home and are stated in each listing. [[8]](https://www.vacasa.com/explore/pet-friendly-vacation-rentals) Use summaries to build a shortlist, then read the full policy.
-- **Local managers:** some use their own size categories. One has a "Dogs Over 30lb" filter, which shows why a generic "large dogs" search can miss inventory. [[9]](https://www.sunpalacevacationhomes.com/pet-friendly/) Try searching the destination plus "dogs any size vacation rental" or "ground floor dog friendly rental."
+- **Airbnb:** add pets with the guest details, or use "Allows pets" under booking options. Airbnb advises contacting the host even when pets are allowed, and the pet policy sits in House rules. [[8]](https://www.airbnb.com/help/article/86) Search the listing text for "weight," "pounds," "breed," "stairs," "crate" and "unattended."
+- **Managers:** Vacasa's page says weight limits and dog counts vary by home and are stated in each listing. [[9]](https://www.vacasa.com/explore/pet-friendly-vacation-rentals) Use summaries to build a shortlist, then read the full policy.
+- **Local managers:** some use their own size categories. One has a "Dogs Over 30lb" filter, which shows why a generic "large dogs" search can miss inventory. [[10]](https://www.sunpalacevacationhomes.com/pet-friendly/) Try searching the destination plus "dogs any size vacation rental" or "ground floor dog friendly rental."
 - **Vrbo and others:** use the pets-allowed controls with accurate animal details, then read house rules and fees.
+- **On this site:** [browse stays](/stays) and use the weight-limit filter ("limit of 50 lb or more stated", for example); it matches only stays that state a limit. Where a stay says "Not confirmed," ask the question in the message above.
 
 ## Five checks before you pay
 
 Once a rental passes permission, run these five. They replace the long checklist; the [full booking checklist](/guides/pet-friendly-vacation-rental-checklist) has the rest.
 
-1. **The limit, in writing, for this dog.** Count, individual weight, combined weight and breed rules, with any exception recorded in the booking messages.
+1. **The limit for this dog.** Count, individual weight, combined weight and breed rules, with any exception recorded in the booking messages.
 2. **The route.** Parking to entrance, entrance to bed, bed to the nearest night-time toilet spot. Ask how many entrance steps there are and whether the only bedroom is upstairs or a loft; "single level" is not the same as step-free.
-3. **The floor and the space.** Polished wood, tile and stone are slick for a heavy dog, so ask which surfaces are on the main route and whether rugs stay put. Measure your crate or bed and the narrowest doorway, so the crate door still opens.
+3. **The floor and the space.** Polished wood, tile and stone are slick for a heavy dog, so ask which surfaces are on the main route and whether rugs stay put. Measure your crate or bed and the narrowest doorway, so the crate door still opens. None of the gear below is a floor product, so for a slick route ask the host about rugs before you lay anything down.
 4. **The yard and the alone-time rule.** "Fenced" is not a security inspection: ask about the lowest fence section, gate latches and gaps, and request photos if the yard matters. For long dog-free stretches, read [can you leave a dog alone in a vacation rental](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental) and the [fenced-yard guide](/guides/vacation-rental-secure-fenced-yard).
 5. **The full price.** Pet fees vary a lot between managers, so total your real count, dates, cleaning charges and taxes yourself, and keep refundable deposits separate. The [pet-fee guide](/guides/how-vacation-rental-pet-fees-work) explains the terms.
 
 Do not plan around carrying a heavy dog up steps: a wet walk or a minor injury changes what is safe. For a dog with pain or mobility problems, your veterinarian can say what access suits it.
 
-## Buying checklist: gear for a big dog
-
-Once the rental is settled, these are the things that make a heavy dog's trip easier. Check the current price on the listing.
-
-- [ ] **A stated weight rating above your dog's weight,** for any ramp or step. It is the maker's figure, so leave a margin.
-- [ ] **Side rails and a non-slip surface** on a ramp, and a length that gives a gentle angle for your vehicle's height.
-- [ ] **Folds, slides closed or locks** so it fits in the car, and a weight you can lift yourself.
-- [ ] **A seat cover or hammock sized for your dog and your vehicle,** with anchor points for seat belts or LATCH. A hammock protects the seat; it is not a restraint.
-- [ ] **A maker guarantee** stated on the page.
-- [ ] **Your own measurements:** the dog's weight and length, the vehicle's seat width and the height of the entrance steps.
-
-### Room in the car
-
-A big dog on a wide bench seat needs a cover cut for the space. Match the maker's stated dimensions to your seat width, and check the size against your dog's weight.
-
-{{pick:kurgo-rover-hammock-extended-width|Best for large vehicles|The maker lists a 63 by 56 inch size that fits most full size trucks and large SUVs, eight attachment points and a lifetime guarantee.|https://kurgo.com/car-seat-covers/dog-hammocks/wander-hammock-extended-width}}
-
-If your big dog rides in the cargo area of an SUV or wagon instead, the cover has a different job: a wet, muddy dog on the load floor, and a bumper the dog scrapes on the way in and out. Kurgo's Rover Cargo Cape is 52 inches wide by 62 inches long, with waterproof, stain-resistant fabric, a fold-out bumper guard with reflective trim and a center zipper for 50/50 split seats. The maker says it fits most vehicles' cargo areas and lists no models, so measure your own load floor. [[12]](https://www.kurgo.com/p/cargo-cape/POG30-17676) It is spot clean or hand wash, then air dry, and like the hammock it is a cover, not a restraint.
-
-{{pick:kurgo-rover-cargo-cape|For the cargo area|The maker lists 52 by 62 in, waterproof and stain-resistant fabric, a fold-out bumper guard and a center zipper for 50/50 splits; it says it fits most cargo areas without naming models.|https://www.kurgo.com/p/cargo-cape/POG30-17676}}
-
-### Getting a heavy dog up and in
-
-Do not plan around lifting. A ramp spreads the climb over a gentler slope, and a hitch step suits a tall truck or SUV with a 2 in hitch. Check the weight rating, the length it extends to and what it weighs, because you will carry it.
-
-{{pick:petsafe-happy-ride-extra-long-ramp|Our pick|The maker lists a 300 lb rating, a length of 47 to 87 inches with side rails and a high-traction surface, and says it slides closed and locks.|https://www.petsafe.com/p/happy-ride-extra-long-telescoping-dog-ramp/62320/}}
-
-{{pick:petsafe-happy-ride-hitch-step|Our pick|The maker lists a 200 lb rating, says it installs on any 2 in vehicle hitch and adjusts to the height of a truck or SUV, and lists traction on each tread.|https://www.petsafe.com/p/happy-ride-dog-hitch-step/62430/}}
-
 ## When a breed rule applies
 
-Restrictions can come from an owner, insurer, association or building. The Insurance Information Institute reports that insurers vary: some restrict certain breeds, some assess individual dogs, and some do not ask about breed. [[10]](https://www.iii.org/article/spotlight-on-dog-bite-liability) So "insurance won't allow it" is a real limit for some properties and not a universal one. Ask whether it is a firm property or insurer rule, or whether the host can approve your dog in writing. If the answer is no, move on, since a vague verbal exception that conflicts with the written agreement is no help. For named-breed lists, ask the manager for the written policy.
+Restrictions can come from an owner, insurer, association or building. The Insurance Information Institute reports that insurers vary: some restrict certain breeds, some assess individual dogs, and some do not ask about breed. [[11]](https://www.iii.org/article/spotlight-on-dog-bite-liability) So "insurance won't allow it" is a real limit for some properties and not a universal one. Ask whether it is a firm property or insurer rule, or whether the host can approve your dog in writing. If the answer is no, move on, since a vague verbal exception that conflicts with the written agreement is no help. For named-breed lists, ask the manager for the written policy.
 
-A pet health policy is a different product from liability cover for injuries or damage your dog causes. [[11]](https://www.iii.org/article/facts-about-pet-insurance) Check with your own insurer whether liability extends to a temporary rental.
+A pet health policy is a different product from liability cover for injuries or damage your dog causes. [[12]](https://www.iii.org/article/facts-about-pet-insurance) Check with your own insurer whether liability extends to a temporary rental.
 
 ## How sure we are
 
@@ -121,22 +93,56 @@ A pet health policy is a different product from liability cover for injuries or 
 - **What most people report:** this page uses no survey; the 38 managers are a small convenience sample, not a picture of the whole market.
 - **Unknown, so ask:** the rule for your specific home, since limits change and many vary by property.
 
+## Gear for a big dog, after the rental says yes
+
+Pick by the problem. A hammock covers the back seat and a cargo cover protects the load floor; a ramp helps a dog walk up into a low vehicle, and a hitch step suits a tall truck or SUV with a 2 in hitch. Most people need one from the seat pair and one from the entry pair, not all four. Before you buy, write down the dog's weight and length, the vehicle's seat width and the height the dog must reach, and leave a margin on any rating, because it is the maker's figure. A hammock or cover protects the car; it is not a restraint.
+
+### Room in the car
+
+**For a big dog on a wide bench seat.** A big dog on a wide back seat needs a cover cut for the space, and a wet or muddy dog is a lot to clean off upholstery. The Kurgo Rover Hammock, Extended Width is 63 in wide by 56 in long, with eight attachment points and a lifetime guarantee; the maker says it fits most full-size trucks and large SUVs, and that its front headrest straps can be removed to use it as a simple seat cover. [[13]](https://kurgo.com/car-seat-covers/dog-hammocks/wander-hammock-extended-width) That width suits a full-size truck or large SUV; in a compact car, measure your seat before you order. This is the one to buy first if your dog rides on the back seat of a large vehicle.
+
+{{pick:kurgo-rover-hammock-extended-width|For full-size trucks and large SUVs|The maker lists a 63 by 56 in size that fits most full-size trucks and large SUVs, eight attachment points and a lifetime guarantee.|https://kurgo.com/car-seat-covers/dog-hammocks/wander-hammock-extended-width}}
+
+**For the cargo area.** If your big dog rides in the cargo area of an SUV or wagon instead, the job is different: a wet, muddy dog on the load floor, and a bumper the dog scrapes on the way in and out. Kurgo's Rover Cargo Cape is 52 inches wide by 62 inches long, with waterproof, stain-resistant fabric, a fold-out bumper guard with reflective trim and a center zipper for 50/50 split seats. The maker says it fits most vehicles' cargo areas and lists no models, so measure your own load floor. [[14]](https://www.kurgo.com/p/cargo-cape/POG30-17676) It is spot clean or hand wash, then air dry. Choose it over the hammock when the back seat is not where your dog rides.
+
+{{pick:kurgo-rover-cargo-cape|For the cargo area|The maker lists 52 by 62 in, waterproof and stain-resistant fabric, a fold-out bumper guard and a center zipper for 50/50 splits; it says it fits most cargo areas without naming models.|https://www.kurgo.com/p/cargo-cape/POG30-17676}}
+
+### Getting a heavy dog up and in
+
+Do not plan around lifting. A ramp or step spreads the climb, and which one depends on the vehicle.
+
+**For a heavy dog and a high vehicle floor.** The PetSafe Happy Ride Extra Long Telescoping Ramp extends from 47 to 87 in, is 20 in wide, and weighs 18 lb; it is aluminum with side rails and a high-traction surface, and it slides closed and locks. The maker states it supports pets up to 300 lb, a figure it describes as independently tested without naming a tester. [[15]](https://www.petsafe.com/p/happy-ride-extra-long-telescoping-dog-ramp/62320/) Because you will carry the 18 lb, check you can lift it into the vehicle yourself. Skip it if your dog still jumps in with ease. Buy it first if your dog is big, walks up reliably, and the vehicle floor is high.
+
+{{pick:petsafe-happy-ride-extra-long-ramp|Maker-rated to 300 lb|The maker lists a 300 lb rating, a length of 47 to 87 inches with side rails and a high-traction surface, and says it slides closed and locks.|https://www.petsafe.com/p/happy-ride-extra-long-telescoping-dog-ramp/62320/}}
+
+**For a tall truck or SUV with a 2 in hitch.** The PetSafe Happy Ride Dog Hitch Step installs on any 2 in vehicle hitch, adjusts to the height of a truck or SUV, and has traction on each tread; both steps swivel to fold up and lock. It is 20 in long, 18 in wide and 12 in high, and the maker says it supports pets up to 200 lb. [[16]](https://www.petsafe.com/p/happy-ride-dog-hitch-step/62430/) The page does not say what it is made of. Skip it if your vehicle has no 2 in hitch; a dog that will not climb steps is better served by the ramp.
+
+{{pick:petsafe-happy-ride-hitch-step|For a 2 in hitch|The maker lists a 200 lb rating, says it installs on any 2 in vehicle hitch and adjusts to the height of a truck or SUV, and lists traction on each tread.|https://www.petsafe.com/p/happy-ride-dog-hitch-step/62430/}}
+
 ## What to buy first
 
 1. **Nothing, until the rental says yes to your dog in writing.** The booking is the expensive decision.
 2. **A tape measure's worth of numbers:** the dog's weight, the entrance steps and the car's seat width.
-3. **A ramp or step rated above the dog's weight,** only if steps or the car are a real problem.
-4. **A seat cover, hammock or cargo cover sized for the dog and the vehicle.**
+3. **A ramp or hitch step rated above the dog's weight,** only if the vehicle's height is a real problem.
+4. **A hammock or cargo cover sized for the dog and the vehicle,** matched to where your dog rides.
 
-Put your dog's weight into the [will my dog be accepted tool](/tools/will-my-dog-be-accepted), then add the gear to the [packing list](/tools/packing-list) and save the answers in the [trip checklist](/tools/checklist). Bringing two dogs? Start with the [two-dog guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental).`,
+Put your dog's weight into the [will my dog be accepted tool](/tools/will-my-dog-be-accepted), then add the gear to the [packing list](/tools/packing-list) and save the answers in the [trip checklist](/tools/checklist). All the products with their specs are in [travel gear](/gear). Bringing two dogs? Start with the [two-dog guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental). Large and getting older? See [the senior-dog rental guide](/guides/vacation-rental-with-a-senior-dog).`,
   faqs: [
     {
-      q: "Can I filter vacation rentals by my dog's weight?",
-      a: "Some specialist directories and local managers offer size labels or weight-based categories. A general pets-allowed filter does not establish that your dog's weight is accepted. Check the individual policy and ask the host.",
+      q: "Does 'pets allowed' mean large dogs are accepted?",
+      a: "Not always. A pets-allowed badge usually does not state a weight limit. The six managers we read that state one run from 35 to 65 pounds, and some count it per dog and some for all dogs combined. Ask for the rule for your dog.",
+    },
+    {
+      q: "What counts as a large dog for a vacation rental?",
+      a: "There is no standard. In the six limits we read, a 60-pound dog is accepted at Brindley Beach and over the limit at Elk Springs, so the cutoff is wherever that manager puts it.",
     },
     {
       q: "What does 'large dogs considered' mean?",
-      a: "It means acceptance is conditional rather than guaranteed. Send your dog's accurate weight and description and obtain explicit written approval before booking.",
+      a: "It means acceptance is conditional rather than guaranteed. Send your dog's accurate weight and description and get explicit approval before booking.",
+    },
+    {
+      q: "Can I filter vacation rentals by my dog's weight?",
+      a: "Some specialist directories and local managers offer size labels, and the stays filter on this site matches only stays that state a weight limit. A general pets-allowed filter does not establish that your dog's weight is accepted, so check the individual policy.",
     },
     {
       q: "Why do rentals have breed restrictions?",
@@ -146,10 +152,6 @@ Put your dog's weight into the [will my dog be accepted tool](/tools/will-my-dog
       q: "Is a ground-floor rental always step-free?",
       a: "No. There may be external steps, a steep approach, thresholds, or an upper-level entrance. Ask about the complete route from parking to the entrance and from the sleeping area to outdoor access.",
     },
-    {
-      q: "Does pet health insurance cover damage to a rental?",
-      a: "Do not assume so. Pet health insurance and liability protection are different forms of coverage. Ask your insurer about the exact policy, rental setting, exclusions, and limits.",
-    },
   ],
   relatedGuides: [
     "how-many-dogs-can-you-bring-to-a-vacation-rental",
@@ -158,6 +160,7 @@ Put your dog's weight into the [will my dog be accepted tool](/tools/will-my-dog
     "how-vacation-rental-pet-fees-work",
     "dog-friendly-cabin-packing-list",
     "vacation-rentals-with-no-dog-weight-limit",
+    "vacation-rental-with-a-senior-dog",
   ],
   relatedProducts: [
     "kurgo-rover-hammock-extended-width",
@@ -204,6 +207,12 @@ Put your dog's weight into the [will my dog be accepted tool](/tools/will-my-dog
       accessedOn: "2026-11-18",
     },
     {
+      title: "Sliding Rock Cabins home page",
+      url: "https://slidingrockcabins.com/",
+      publisher: "Sliding Rock Cabins",
+      accessedOn: "2026-11-18",
+    },
+    {
       title: "Finding places that allow pets",
       url: "https://www.airbnb.com/help/article/86",
       publisher: "Airbnb",
@@ -234,16 +243,34 @@ Put your dog's weight into the [will my dog be accepted tool](/tools/will-my-dog
       accessedOn: "2026-11-16",
     },
     {
+      title: "Rover Hammock - Extended Width",
+      url: "https://kurgo.com/car-seat-covers/dog-hammocks/wander-hammock-extended-width",
+      publisher: "Kurgo",
+      accessedOn: "2026-11-18",
+    },
+    {
       title: "Rover Cargo Cape",
       url: "https://www.kurgo.com/p/cargo-cape/POG30-17676",
       publisher: "Kurgo",
       accessedOn: "2026-11-18",
     },
+    {
+      title: "Happy Ride Extra Long Telescoping Dog Ramp",
+      url: "https://www.petsafe.com/p/happy-ride-extra-long-telescoping-dog-ramp/62320/",
+      publisher: "PetSafe",
+      accessedOn: "2026-11-18",
+    },
+    {
+      title: "Happy Ride Dog Hitch Step",
+      url: "https://www.petsafe.com/p/happy-ride-dog-hitch-step/62430/",
+      publisher: "PetSafe",
+      accessedOn: "2026-11-18",
+    },
   ],
   research: {
-    primaryKeyword: "vacation rentals that welcome large dogs",
+    primaryKeyword: "large dog friendly vacation rentals",
     relatedKeywords: [
-      "large dog friendly vacation rentals",
+      "vacation rentals that welcome large dogs",
       "vacation rentals no dog weight limit",
       "pet friendly rental breed restrictions",
       "large dog rental stairs flooring",

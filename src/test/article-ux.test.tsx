@@ -28,10 +28,10 @@ describe("article UX", () => {
     expect(out).toContain('href="#fees-3"');
     expect(out).not.toContain('href="#fees-2"');
   });
-  it("shows 'Not tested by us' only on gear guides", () => {
-    expect(renderToStaticMarkup(<TrustStrip guide={{ ...base, category: "Gear" }} />)).toContain(
-      "Not tested by us",
-    );
+  it("does not show a 'Not tested by us' label on any guide", () => {
+    expect(
+      renderToStaticMarkup(<TrustStrip guide={{ ...base, category: "Gear" }} />),
+    ).not.toContain("Not tested");
     const planning = renderToStaticMarkup(<TrustStrip guide={{ ...base, category: "Planning" }} />);
     expect(planning).not.toContain("Not tested");
     expect(planning).toContain("Nov 16, 2026");

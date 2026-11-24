@@ -497,7 +497,7 @@ function Popover({
           )}
           {cat && (
             <p className="text-xs text-muted-foreground">
-              {how ? "More options: " : "Researched, not tested: "}
+              {how ? "More options: " : "Gear: "}
               <Link
                 to="/gear/$category"
                 params={{ category: cat.slug }}

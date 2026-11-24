@@ -99,7 +99,6 @@ export function TrustStrip({
         {n} official {n === 1 ? "source" : "sources"}
       </>
     ) : null,
-    guide.category === "Gear" ? <>Not tested by us</> : null,
     affiliateUsage(guide).count > 0 ? <>Affiliate links disclosed</> : null,
   ].filter(Boolean);
   return (

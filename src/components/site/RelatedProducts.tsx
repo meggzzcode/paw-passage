@@ -30,7 +30,6 @@ export function RelatedProducts({
         {heading}
       </h2>
       <p className="mt-2 text-sm text-muted-foreground">
-        Researched from the makers' own pages, not tested by us. No prices or ratings.{" "}
         <Link to="/gear" className="text-primary underline">
           See all travel gear
         </Link>
@@ -46,9 +45,6 @@ export function RelatedProducts({
               <h3 className="text-xl">
                 {p.brand} {p.name}
               </h3>
-              <p className="mt-1 inline-block rounded-full bg-muted px-3 py-1 text-xs font-medium text-muted-foreground">
-                Researched, not tested by us
-              </p>
               <p className="mt-3 text-sm text-muted-foreground">{p.summary}</p>
               <div className="mt-3 flex flex-wrap items-center gap-3 text-sm">
                 {cat && (

@@ -49,7 +49,7 @@ describe("guide page section", () => {
     expect(g?.relatedProducts?.length).toBeGreaterThan(0);
     const html = await render(slug);
     expect(html).toContain("Gear for this trip");
-    expect(html).toContain("Researched, not tested by us");
+    expect(html).not.toContain("not tested by us");
     expect(html).toContain('href="/gear"');
     // The section lists only products that can earn; its first card names that product's brand.
     const shown = getProducts(g!.relatedProducts ?? []).filter(isMonetized);

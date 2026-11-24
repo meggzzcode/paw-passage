@@ -321,8 +321,7 @@ function Home() {
             <div>
               <h2 className="text-3xl md:text-4xl">Travel essentials</h2>
               <p className="mt-3 max-w-2xl text-muted-foreground">
-                Researched gear for the drive and the rental. Not tested by us, no prices, sources
-                on every card.
+                Researched gear for the drive and the rental, with sources on every card.
               </p>
             </div>
             <Link to="/gear" className="text-sm font-medium text-primary hover:underline">

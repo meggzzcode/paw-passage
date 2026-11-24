@@ -43,9 +43,6 @@ export function GearProductCard({ product }: { product: Product }) {
       <h3 className="mt-2 text-2xl">
         {product.brand} {product.name}
       </h3>
-      <p className="mt-1 inline-block rounded-full bg-muted px-3 py-1 text-xs font-medium text-muted-foreground">
-        Researched, not tested by us
-      </p>
       <p className="mt-3 text-muted-foreground">{product.summary}</p>
       {pick && <p className="mt-3">{pick.whyItMadeTheList}</p>}
       <p className="mt-3 text-sm font-medium">What the maker states</p>

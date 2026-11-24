@@ -175,10 +175,11 @@ research:
 ## Do this first
 
 1. **Start searching where the dog was last seen.** [AKC Reunite](https://www.akcreunite.org/lostpettips/) says to start immediately, within a 2 mile radius.
-2. **Call your microchip registry.** [AKC Reunite](https://www.akcreunite.org/lostpettips/) runs a 24/7 helpline and asks owners to confirm their contact details are current.
-3. **Call local animal control, vets and shelters, and tell your host.** The [ASPCA](https://www.aspca.org/pet-care/general-pet-care/finding-lost-pet) lists them as the places a lost dog may end up.
+2. **Call local shelters and animal control.** The [ASPCA](https://www.aspca.org/pet-care/general-pet-care/finding-lost-pet) lists them as places a lost dog may end up.
+3. **Call your microchip registry.** The [AKC Reunite](https://www.akcreunite.org/lostpettips/) 24/7 helpline is [800-252-7894](tel:+18002527894); it will confirm your contact details are current.
+4. **Post locally and tell your host.** Use neighborhood and "Lost Pet" pages.
 
-Send someone else to make the calls while you keep searching, if there is anyone with you. If you are separated in an emergency such as a flood or fire, [AKC Reunite](https://www.akcreunite.org/lostpettips/) says to get your family to safety before you search.
+If anyone is with you, send them to make the calls while you keep searching. If you are separated in an emergency such as a flood or fire, [AKC Reunite](https://www.akcreunite.org/lostpettips/) says to get your family to safety before you search.
 
 ## Search without losing time
 
@@ -221,10 +222,6 @@ Most of this takes ten minutes and no purchase.
 
 **Put a tag on the collar.** The [ASPCA](https://www.aspca.org/pet-care/general-pet-care/finding-lost-pet) says to include your name and current phone number, even for indoor pets. For travel, add a number you will answer and a second one for a friend or relative. Engrave or stamp it rather than use a sticker, and check the ring for wear; tags can fall off or become hard to read ([AKC Reunite](https://www.akcreunite.org/idtags/)). 
 
-If you want a tag that is silent on the collar, the WhoseID is a slide-on silicone tag with a QR code and NFC. The listing states a one-time purchase with no subscription and no app required; we could not read the brand's own page, so that is the listing's word. A tag like this only helps if the QR profile is filled in and the phone number is current, and a finder needs a phone that can scan it. Keep an engraved tag on the collar too. More ID items are in [safety, ID and first aid gear](/gear/safety-id-first-aid).
-
-{{pick:whoseid-qr-nfc-dog-tag-silicone-small|A silent slide-on tag with a QR code|The listing states a one-time purchase with no subscription; fill in the QR profile and keep the phone number current.}}
-
 **Check the microchip record.** A chip has no power source and is not a GPS; a scanner activates it for a few seconds, and the number is like a blank tag until it is registered with your details ([AKC Reunite](https://www.akcreunite.org/importance/)). [AKC Reunite](https://www.akcreunite.org/travel/) says to verify your enrollment is up to date before you travel.
 
 1. Find the chip number and the registry that holds it. A vet can scan the chip if you are unsure.
@@ -236,6 +233,12 @@ More than one registry operates in the US. AAHA's free lookup tool shows which p
 **Make arrival the careful part.** [Patch](https://patch.com/massachusetts/across-ma/july-4-fireworks-cause-spike-lost-dog-reports-what-ma-pet-owners-should-know) warns that a dog that stays put at home can bolt from a rest stop, rental house, campground or hotel hallway if fireworks go off. One person holds the dog while another handles the bags, and the dog goes out only on a leash. Cornell advises a leash even in a fenced yard when fireworks or storms are the worry ([Cornell Riney Center](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/fear-fireworks-and-thunderstorms)).
 
 **Ask what closes the yard.** "Fenced" is not a yard you can trust. Our [secure fenced yard guide](/guides/vacation-rental-secure-fenced-yard) lists the questions and photos to request, and a freestanding pen can give a supervised space; see the [portable pen guide](/guides/portable-dog-fence-and-playpen-guide-for-rentals). Holiday nights carry extra risk, and our [New Year's Eve guide](/guides/new-years-eve-with-a-dog-in-a-vacation-rental#keeping-your-dog-from-bolting) covers the real escape cases.
+
+For the next trip:
+
+If you want a tag that is silent on the collar, the WhoseID is a slide-on silicone tag with a QR code and NFC. The listing states a one-time purchase with no subscription and no app required; we could not read the brand's own page, so that is the listing's word. A tag like this only helps if the QR profile is filled in and the phone number is current, and a finder needs a phone that can scan it. Keep an engraved tag on the collar too.
+
+{{pick:whoseid-qr-nfc-dog-tag-silicone-small|A silent slide-on tag with a QR code|The listing states a one-time purchase with no subscription; fill in the QR profile and keep the phone number current.}}
 
 ### A tracker, if you want a search tool
 

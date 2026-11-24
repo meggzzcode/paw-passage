@@ -37,7 +37,7 @@ The core list follows the [AVMA's pet first-aid brochure](https://ebusiness.avma
 
 **Wound and bandage supplies**
 
-- Gauze roll for wrapping wounds or muzzling an injured animal.
+- Gauze roll for wrapping wounds.
 - Nonstick bandages or clean cloth strips, self-adhering nonstick tape, and adhesive tape.
 - Blunt-ended scissors and clean towels.
 - Saline for cleansing wounds or flushing eyes (the AVMA notes contact-lens saline works for most purposes).
@@ -48,7 +48,7 @@ The core list follows the [AVMA's pet first-aid brochure](https://ebusiness.avma
 - Digital thermometer, tweezers and a small flashlight.
 - Eye dropper or large needleless syringe for oral treatments or flushing wounds.
 - Disposable gloves, and a spare leash and collar.
-- A muzzle (see the add-ons below). Do not muzzle a pet who is vomiting.
+- A muzzle (see the add-ons below). Never muzzle a dog that is vomiting, overheating, struggling to breathe or in respiratory distress (the AVMA covers vomiting; the rest is our note).
 
 **Items with conditions attached.** The AVMA lists activated charcoal and 3% hydrogen peroxide with firm limits. Charcoal is only for use if instructed by your vet or a poison control center. Peroxide is for inducing vomiting only after contacting your vet or poison control, no more than one dose unless instructed, and not for wounds. Settle both with your vet before the trip rather than reaching for them on your own.
 
@@ -72,7 +72,7 @@ Cabins add easy-to-miss risks: cleaners under sinks, rodent bait in outbuildings
 
 **Medications and records.** Bring regular medications in their original labeled containers, with a little extra if your vet agrees. Kit guides list human antihistamines, pain relievers and ointments and disagree on products and amounts; one says not to give human over-the-counter painkillers such as ibuprofen, acetaminophen or aspirin unless your vet says otherwise ([Mom Goes Camping](https://momgoescamping.com/dog-first-aid-kit/)). We list no doses because the right answer depends on your dog.
 
-**Heat.** The [AVMA](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf) lists heatstroke signs: rapid breathing or heavy panting, excessive drooling, weakness or drowsiness, confusion, vomiting or diarrhea, and abnormally colored, dry or sticky gums. Start cooling right away and get to the closest vet hospital: move the dog out of direct sun, place towels wetted with room-temperature water around the neck, armpits and groin, and use a fan if available. Do not put the dog in a tub of cool or cold water, which can make the condition worse.
+**Heat.** The [AVMA](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf) lists heatstroke signs: rapid breathing or heavy panting, excessive drooling, weakness or drowsiness, confusion, vomiting or diarrhea, and abnormally colored, dry or sticky gums. For heatstroke, call a vet and follow the cooling steps in our [heat guide](/guides/keep-a-dog-cool-on-a-summer-trip).
 
 ## Ready-made kit or build your own?
 
@@ -82,7 +82,7 @@ A hybrid is often best: a ready-made kit gives you organized, often waterproof b
 
 {{pick:arca-pet-cat-dog-first-aid-kit-100|100 pieces, with a thermometer and a first-aid manual|Cabin-size starting point; the listing states a dog thermometer, medicine feeder, tick remover kit and manual.|https://www.amazon.com/dp/B09FKVQQVH}}
 
-**For a day hike, the Adventure Medical Kits Trail Dog.** It is the smaller option because it is built for a pack. The maker lists 12 oz, 7.5 x 5.3 x 1.5 inches, in a waterproof Dryflex bag with a Pet First Aid Handbook, and says the triangular bandage can serve as a muzzle during treatment ([Adventure Medical Kits](https://www.adventuremedicalkits.com/products/adventure-dog-medical-kit-trail-dog)). The listed contents are gauze dressings and pads, a roller gauze, an elastic bandage, a triangular bandage, a 10 cc irrigation tool, tick forceps and saline. It also lists triple antibiotic packets, 3% hydrogen peroxide and two diphenhydramine tablets, so take that list to your vet and set those aside if you want no medications. It suits one dog and a trail day; skip it as your only kit for a week at the cabin or a multi-dog trip.
+**For a day hike, the Adventure Medical Kits Trail Dog.** It is the smaller option because it is built for a pack. The maker lists 12 oz, 7.5 x 5.3 x 1.5 inches, in a waterproof Dryflex bag with a Pet First Aid Handbook ([Adventure Medical Kits](https://www.adventuremedicalkits.com/products/adventure-dog-medical-kit-trail-dog)). The listed contents are gauze dressings and pads, a roller gauze, an elastic bandage, a triangular bandage, a 10 cc irrigation tool, tick forceps and saline. It also lists triple antibiotic packets, 3% hydrogen peroxide and two diphenhydramine tablets, so take that list to your vet and set those aside if you want no medications. It suits one dog and a trail day; skip it as your only kit for a week at the cabin or a multi-dog trip.
 
 {{pick:amk-trail-dog|Pack-sized trail kit: 12 oz, waterproof bag|Compact kit for one dog on a trail day; no thermometer, muzzle or flashlight listed.|https://www.adventuremedicalkits.com/products/adventure-dog-medical-kit-trail-dog}}
 
@@ -90,7 +90,7 @@ A multi-dog trip needs duplicates of key items (see our [two-dog guide](/guides/
 
 ## Add-ons worth carrying, and what to leave out
 
-**A muzzle, if your dog may bite when hurt.** The [AVMA](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf) says to apply one if a pet threatens to bite, because pain and fear can make even the gentlest pet unpredictable; gauze or a triangular bandage works as an improvised one. A basket style lets the dog pant and drink. The [Baskerville Ultra Muzzle](https://companyofanimals.com/us/brand-product/baskerville-ultra-muzzle/) is sized by snout length with the maker's fitting guide, is heat-shapeable and lists a lockable strap, but the maker says it is not for extended periods and the dog should be supervised. Fit it in advance and practice at home with treats.
+**A muzzle, if your dog may bite when hurt.** The [AVMA](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf) says to apply one if a pet threatens to bite, because pain and fear can make even the gentlest pet unpredictable; gauze or a triangular bandage works as an improvised one. A basket style lets the dog pant and drink. The [Baskerville Ultra Muzzle](https://companyofanimals.com/us/brand-product/baskerville-ultra-muzzle/) is sized by snout length with the maker's fitting guide, is heat-shapeable and lists a lockable strap, but the maker says it is not for extended periods and the dog should be supervised. Never muzzle a dog that is vomiting, overheating, struggling to breathe or in respiratory distress. Fit it in advance and practice at home with treats.
 
 {{pick:baskerville-ultra-muzzle|Basket muzzle that allows panting and drinking|Sizes 2 to 6, chosen by snout length with the maker's fitting guide.|https://companyofanimals.com/us/brand-product/baskerville-ultra-muzzle/}}
 
@@ -106,7 +106,6 @@ Also worth carrying:
 
 **Leave out unless your vet says otherwise**
 
-- Hydrogen peroxide for cleaning wounds, which the AVMA says not to use on wounds; a travel guide says vets advise against it ([Pure Travel](https://puretravel.com/blog/2022/05/19/what-should-you-include-in-your-dogs-travel-first-aid-kit)).
 - Human painkillers ([Mom Goes Camping](https://momgoescamping.com/dog-first-aid-kit/)).
 - Antibiotic ointment you have not cleared with your vet. One guide warns triple antibiotic ointment should not be ingested by cats because its polymyxin B can cause anaphylaxis in cats ([Preventive Vet](https://www.preventivevet.com/how-to-make-a-pet-first-aid-kit)).
 - Anything you do not know how to use. A poorly applied bandage or splint can do more harm than good, and the AVMA says to leave the step to the vet if you are uncertain.
@@ -161,7 +160,7 @@ Add these to your [trip checklist](/tools/checklist) and the [packing list](/too
     },
     {
       q: "Should I muzzle an injured dog?",
-      a: "The AVMA says to apply a muzzle if your pet threatens to bite, since pain and fear can make even a gentle pet unpredictable. It also says not to muzzle a pet who is vomiting. Practice with a properly fitted muzzle at home.",
+      a: "The AVMA says to apply a muzzle if your pet threatens to bite, since pain and fear can make even a gentle pet unpredictable. It also says not to muzzle a pet who is vomiting; our note adds never to muzzle a dog that is overheating, struggling to breathe or in respiratory distress. Practice with a properly fitted muzzle at home.",
     },
   ],
   gear: [
@@ -182,7 +181,7 @@ Add these to your [trip checklist](/tools/checklist) and the [packing list](/too
         "The maker says the basket design lets the dog pant, drink and take treats, and that it can be heat-shaped; sizing is by snout length with the maker's fitting guide.",
       watchOuts: [
         "The maker says it is not recommended for extended periods and the dog should be supervised.",
-        "Do not muzzle a pet who is vomiting.",
+        "Never muzzle a dog that is vomiting, overheating, struggling to breathe or in respiratory distress.",
       ],
     },
     {

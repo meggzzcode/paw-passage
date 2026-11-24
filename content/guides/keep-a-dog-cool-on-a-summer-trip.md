@@ -13,6 +13,7 @@ publishedOn: 2026-11-19
 lastReviewed: 2026-11-24
 readingMinutes: 8
 heroImage: guide-keep-dog-cool
+layout: emergency
 faqs:
   - q: What are the first signs a dog is overheating?
     a: Heavy panting, rapid breathing and bright red gums and tongue are early signs; pale or bluish gums and collapse are severe. Heatstroke is an emergency, so call a vet rather than waiting to see.
@@ -165,16 +166,19 @@ research:
   researchComplete: true
 ---
 
-Keep the dog out of parked cars, walk in the early morning and evening, and carry water everywhere. Those habits matter more than any gadget.
-
 ## If your dog is overheating right now
 
-1. **Get the dog out of the heat.** Move to shade or somewhere cool and ventilated, such as an air-conditioned space ([AKC](https://www.akc.org/expert-advice/health/heat-stroke-in-dogs/)).
-2. **Offer small amounts of cool water, not ice-cold.** Let the dog sip rather than gulp.
-3. **Cool the dog.** Spray or sponge with tepid or cool water, never cold, and use a fan ([AKC](https://www.akc.org/expert-advice/health/heat-stroke-in-dogs/) says extremely cold water can cause shock).
-4. **Call your vet or an emergency vet now, on the way if possible.** Keep cooling in the car: wet the dog and aim the air conditioning at it ([Cornell Vet](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/heatstroke-medical-emergency)). [AKC](https://www.akc.org/expert-advice/health/heat-stroke-in-dogs/) says to go right away at 104 F, and Cornell treats 105 F or higher as heatstroke, so do not wait to see if a temperature comes down.
+1. **Get the dog out of the heat** to shade or air conditioning ([AKC](https://www.akc.org/expert-advice/health/heat-stroke-in-dogs/)).
+2. **Call a vet or an emergency vet now**, on the way if possible, and tell them the dog's temperature if you can take it.
+3. **Cool the dog with cool (not cold) water.** Wet the dog's body, fan it, and offer small sips of water ([AKC](https://www.akc.org/expert-advice/health/heat-stroke-in-dogs/), [Cornell Vet](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/heatstroke-medical-emergency)).
+4. **Do not use ice-cold water or ice baths.** [AKC](https://www.akc.org/expert-advice/health/heat-stroke-in-dogs/) says extremely cold water can cause shock.
+5. **Even if the dog seems better, a vet check is needed** ([AKC](https://www.akc.org/expert-advice/health/heat-stroke-in-dogs/)).
+
+AKC describes a temperature above 104 F as an emergency; Cornell uses 105 F. If you are unsure, treat it as an emergency. AKC recommends a rectal thermometer for a dog first-aid kit; ask your vet how to take a temperature.
 
 Heavy panting, rapid breathing and bright red gums and tongue are early signs ([AKC](https://www.akc.org/expert-advice/health/heat-stroke-in-dogs/)). Pale or bluish gums and collapse are severe, and Cornell adds drooling, vomiting, weakness, confusion and seizures ([Cornell Vet](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/heatstroke-medical-emergency)). Find an emergency vet near the rental before you arrive; our [first-aid kit guide](/guides/dog-travel-first-aid-kit-guide) covers what to carry, including a thermometer.
+
+Keep the dog out of parked cars, walk in the early morning and evening, and carry water everywhere. Those habits matter more than any gadget.
 
 ## Which dogs are at higher risk
 
@@ -186,7 +190,7 @@ Heavy panting, rapid breathing and bright red gums and tongue are early signs ([
 
 The law varies. The [Animal Legal Defense Fund](https://aldf.org/hotcars) says that as of 2025, 32 states plus D.C. and Guam have some form of hot car law, and warns that a rescuer can still face property-damage or trespass charges, so call law enforcement first and check the statute for each state on your route. Penalties and rescuer protections differ widely: Florida gives civil immunity to a person who forcibly enters a locked vehicle if conditions such as calling 911 are met, California sets a fine of up to $100 per animal on a first conviction, and Texas has no statute specific to dogs in parked vehicles ([Michigan State Animal Legal Center](https://www.animallaw.info/topic/table-state-laws-protect-animals-left-parked-vehicles)).
 
-Plan the day so the dog is never alone in the car: take turns at stops, pick food stops with outdoor seating and do errands before you collect the dog. While driving, use the air conditioning, shade the car at stops and offer water often. Our [two large dogs in one car guide](/guides/two-large-dogs-in-one-car) covers heat stops on the road.
+Plan the day so the dog is never alone in the car: take turns at stops, pick food stops with outdoor seating and do errands before you collect the dog. While driving, use the air conditioning, shade the car at stops and offer water often. Our [two large dogs guide](/guides/two-large-dogs-in-one-car) covers heat stops.
 
 ## Shade and surface heat
 
@@ -198,7 +202,7 @@ Both pages describe pavement, so run the same test on sand and deck boards too.
 
 **Hydration.** [AKC](https://www.akc.org/expert-advice/health/heat-stroke-in-dogs/) says to bring enough water for your dog's size and activity and plan breaks. At the beach, Cornell advises half-hour breaks from the water, because a dog in and out of water all day can swallow a lot, and a good drink of fresh water before you go ([Cornell Vet](https://www.vet.cornell.edu/departments/riney-canine-health-center/canine-health-information/summer-safety-tips)). Our [life jacket guide](/guides/dog-life-jacket-for-lakes-and-beaches) covers saltwater, algae and beach rules. Bring shade (a pop-up umbrella works) and skip the middle of the day.
 
-**At the rental.** Ask the host in writing whether the air conditioning covers the room where the dog will sleep and whether there is shaded outdoor space. Do not assume a closed-up house is cool. See our guides on [leaving a dog alone in a rental](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental) and [pools and hot tubs](/guides/can-dogs-go-in-a-rental-pool-or-hot-tub).
+**At the rental.** Ask the host in writing whether the air conditioning covers the room where the dog will sleep and whether there is shaded outdoor space. See our guides on [leaving a dog alone in a rental](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental) and [pools and hot tubs](/guides/can-dogs-go-in-a-rental-pool-or-hot-tub).
 
 **A bowl for the car.** [Kurgo](https://www.kurgo.com/p/splash-free-wander-dog-water-bowl/K01812) says the Splash Free Wander has a wedge shape that lays flat on a seat, a tapered lip to limit splashing, 24 oz capacity and food-grade silicone. Use it at a stop with someone with the dog, never as a reason to leave water for a dog alone. Skip it if your dog drinks mainly on walks.
 

@@ -1,7 +1,7 @@
 ---
 title: "How Vacation Rental Pet Fees Work: Per Night, Per Dog or Per Stay"
 seoTitle: "Vacation Rental Pet Fees: Per Night or Per Stay?"
-seoDescription: "How vacation rental pet fees work: we read 38 managers, 25 state a fee, 3 charge $0 and 13 name no amount. See the units and price your trip."
+seoDescription: "How vacation rental pet fees work: we read 38 managers: 22 state a charge, 3 charge $0 and 13 name no amount. See the units and price your trip."
 dek: "A pet fee is a formula: per stay, per night, per dog or per dog per night. See what 38 managers charge and how to total it."
 category: Planning
 states: []
@@ -128,7 +128,7 @@ approvedBy: Paws & Passage Editors
 approvedOn: 2026-11-16
 ---
 
-Of the 38 managers' pet pages we read on 2026-11-18, 25 state a fee: 22 charge amounts from $20 a night to $300 per pet, and 3 charge nothing. The other 13 name no amount, so you only learn the price by asking or reaching checkout.
+Of the 38 managers' pet pages we read on 2026-11-18, 22 state a charge, 3 charge $0 and 13 name no amount, so ask or reach checkout to learn the price. Where the unit is stated, nightly fees run $20 to $50 and one-time fees $55 to $300 per pet, stay, reservation or week.
 
 ## Which costs less: a cabin with a pet fee or one without?
 
@@ -141,7 +141,7 @@ Compare the whole stay, not the pet line. Example numbers, not market data, for 
 | Pet fee | $0 | $75 |
 | Total | $850 | $805 |
 
-Cabin B costs $45 less even with the fee, because its $30 nightly gap saves $120 over four nights. At two nights the saving shrinks to $60, below the fee, and Cabin A wins by $15. Price the exact dates for each listing, then add the pet line.
+Cabin B costs $45 less even with the fee, because its $30 nightly gap saves $120 over four nights. At two nights the saving shrinks to $60, below the fee, and Cabin A wins by $15.
 
 ## The short answer
 
@@ -167,7 +167,7 @@ No average is worth quoting, and the unit often sits in fine print: Elk Springs 
 
 ## The four fee structures, priced
 
-The same dog count and dates produce very different totals. Round example numbers for two dogs over four nights:
+The same dog count and dates produce very different totals. Example numbers for two dogs over four nights:
 
 | Pet policy | Calculation | Total pet charge |
 | --- | --- | --- |
@@ -176,7 +176,7 @@ The same dog count and dates produce very different totals. Round example number
 | $50 per dog per stay | $50 x 2 | $100 |
 | $20 per dog per night | $20 x 2 x 4 | $160 |
 
-The smallest headline number gives the largest bill. Caps and tiers matter too: if a policy says "$15 per dog per night, $150 maximum", two dogs for seven nights is $210 uncapped and $150 capped, unless the cap is per dog. Ask what the cap covers. Break-even works the same way: a $90 per-stay fee against a $20 nightly fee for one dog costs $80 nightly at four nights and $100 at five, so the lines cross at 4.5 nights and the cheaper-looking policy flips with trip length. Our guide to [how many dogs you can bring](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental) covers count and weight questions.
+The smallest headline number gives the largest bill. Caps and tiers matter too: if a policy says "$15 per dog per night, $150 maximum", two dogs for seven nights is $210 uncapped and $150 capped, unless the cap is per dog. Ask what the cap covers. Break-even works the same way: a $90 per-stay fee against a $20 nightly fee for one dog costs $80 in total at four nights ($20 a night) and $100 at five, so the lines cross at 4.5 nights and the cheaper-looking policy flips with trip length. Our guide to [how many dogs you can bring](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental) covers count and weight questions.
 
 ## Fees, deposits, holds and waivers
 

@@ -1,16 +1,16 @@
 # Sale listing draft: Paws & Passage (pre-revenue starter site)
 
-DRAFT for the owner. Not submitted anywhere. Every number comes from `docs/BUYER_ASSET_INVENTORY.md` and `docs/buyer/ROUTE_AND_ASSET_COUNTS.md` (verified 2026-11-24 on repo `HEAD` `56552fc`; re-run the counts after the last commit and before posting). Nothing here claims traffic, earnings, rankings, affiliate approvals, replacement value or buyer interest, because none are evidenced. Do not put an invented number in any bracket.
+DRAFT for the owner. Not submitted anywhere. Every number comes from `docs/BUYER_ASSET_INVENTORY.md` and `docs/buyer/ROUTE_AND_ASSET_COUNTS.md` (re-verified 2026-11-24 on repo `HEAD` `13a7ce1`; re-run the counts after any later commit and before posting). **The final build is not deployed** (Netlify builds are stopped): the live site shows an older deploy, so do not post a claim about what the live site shows until Cowork has re-verified it after the first deploy. Nothing here claims traffic, earnings, rankings, affiliate approvals, replacement value or buyer interest, because none are evidenced. Do not put an invented number in any bracket.
 
 ## Headline
 
-Pre-revenue dog-travel starter site: 29 sourced guides, an original 38-manager pet-policy dataset, 3 working planning tools, a 32-stay directory and an 11-category gear hub. $1,500.
+Pre-revenue dog-travel starter site: 29 sourced guides, an original 38-manager pet-policy dataset, 3 working planning tools, a 78-stay directory and a photo-free editorial gear shop with 11 categories. $1,500.
 
 ## Short version for marketplace fields
 
-Title: Pre-revenue dog-friendly vacation-rental site: 29 sourced guides, original 38-manager policy dataset, 3 tools, 11-category gear hub (starter site, .com domain included).
+Title: Pre-revenue dog-friendly vacation-rental site: 29 sourced guides, original 38-manager policy dataset, 3 tools, 11-category gear shop (starter site, .com domain included).
 
-Summary (about 650 characters): New .com publication about renting vacation homes with a dog. 29 guides (about 57,000 words, 452 listed sources) with FAQs and a per-guide fact-check record; an original dataset of 38 rental managers' pet policies (13 fields each, dated and sourced); 3 browser tools; a 32-stay directory; 11 gear categories with 53 products and spec cards; 95-URL sitemap, structured data, redirects, Pinterest pins, documentation. Registered November 2026. No revenue, no traffic history, no approved affiliate accounts included. Sold as a starter asset, as is.
+Summary (about 600 characters): New .com publication about renting vacation homes with a dog. 29 guides (about 45,000 words, 420 listed sources, each linked in the text) with FAQs and a per-guide fact-check record; an original dataset of 38 rental managers' pet policies (13 fields each, dated and sourced); 3 browser tools; a 78-stay directory; a photo-free gear shop with 11 categories, 65 products and curated trip collections; 95-URL sitemap, structured data, redirects, Pinterest pins, documentation. Registered November 2026. No revenue, no traffic history, no approved affiliate accounts included. Sold as a starter asset, as is.
 
 ## Honest positioning (near the top of the listing)
 
@@ -19,17 +19,17 @@ This is a **new, pre-revenue starter site**. The domain was registered in Novemb
 ## What you get
 
 - **Domain** pawsandpassage.com (Namecheap; valid to 2027-11-17; pushed to your Namecheap account at closing). Auto-renew is currently off pending the seller's decision; either the seller turns it on before the push or you renew (about $19.98 a year).
-- **29 published guides, about 57,000 words**, each with FAQs and a visible source list (452 sources, linked inline by publisher name with no numbered markers, per-guide fact-check records). Topics: pet fees, dog limits, breed rules, damage charges, fenced yards, large dogs (the former no-weight-limit guide is merged into the large-dog guide and redirects to it), puppies, seniors, reactive dogs, car safety, holidays, packing, first aid, cooling, cold weather. Plus 3 unpublished drafts. Citations are inline publisher links in the text (no numbered markers) with a compact Sources list at the end of each guide (owner decision 2026-11-24).
+- **29 published guides, about 45,000 words** (a final editorial pass made them answer-first and about 45% shorter than before; independent readers called them "ready with minor fixes", mean 7.1 of 10 on their scale, and the corrections made afterwards were not re-scored; `docs/FINAL_EDITORIAL_RELEASE.md`), each with FAQs and a visible source list (420 sources, every one linked inside the article text by publisher name with no numbered markers, per-guide fact-check records). Topics: pet fees, dog limits, breed rules, damage charges, fenced yards, large dogs (the former no-weight-limit guide is merged into the large-dog guide and redirects to it), puppies, seniors, reactive dogs, car safety, holidays, packing, first aid, cooling, cold weather. Plus 3 unpublished drafts. Citations are inline publisher links in the text (no numbered markers) with a compact Sources list at the end of each guide (owner decision 2026-11-24).
 - **An original pet-policy dataset**: 38 vacation-rental managers across several regions, 13 fields each (dog limit, weight limit, breed rule, fee, pool and hot-tub wording, minimum age, leaving a dog alone), one source link per row, all read 2026-11-18. Published as a data page and a CSV download. Each cell is a public fact; the original part is the selection, structure and dated sourcing.
-- **Stay directory**: 37 stay files (Georgia, California), 32 shown with detail pages, 23 in the sitemap, with state, town and dog-type pages. Stays are labelled "Not yet verified"; none has been confirmed with a host. 5 more are written up and hidden until a booking link is added.
+- **Stay directory**: 83 stay files (Georgia 49, California 34), 78 shown with detail pages (each with an approved Vrbo booking link), 23 of them in the sitemap and 55 `noindex` as thin, with state, town and dog-type pages. Stays are labelled "Not yet verified"; none has been confirmed with a host. 5 more are written up and hidden until a booking link is added.
 - **3 planning tools**, each loaded and used in a browser on 2026-11-24: "will my dog be accepted" (checks the 38 managers), a 15-item packing list, a 25-item before-you-book checklist.
-- **Gear hub**: 11 category pages, 74 product records (53 active) with maker-sourced specs, and 79 pick cards with spec lines in the guides. No third-party (Amazon) product images.
-- **Affiliate labels on every button**: each affiliate button carries its own "Affiliate link · We may earn a commission..." label, plus a notice on pages with affiliate links and the Amazon Associates sentence where Amazon links appear. Affiliate links are wired through two config files so you replace IDs without code.
+- **Gear shop**: a photo-free editorial shop with 11 category pages, 5 curated trip collections, 92 product records (65 active, each with an Amazon link and a source), and 90 pick cards in the guides. No third-party (Amazon) product images. Its own design spec scores it 7.7 of 10 against a target of 9 (`docs/GEAR_SHOPPER_EXPERIENCE_SPEC.md`); keyboard and screen-reader checks on real devices were not done.
+- **Affiliate disclosure**: one notice at the top of each guide and Gear page that carries an affiliate link, with the Amazon Associates sentence where Amazon links appear; the per-button labels were removed from guides and Gear (the Vrbo booking buttons on stay pages still carry a short label). Affiliate links are wired through two config files so you replace IDs without code (steps in `docs/GEAR_REDESIGN_IMPLEMENTATION.md`).
 - **SEO foundations**: 95-URL generated sitemap, canonicals, noindex rules, structured data, 301 redirects for retired guides, IndexNow key and script, weekly health-check workflow.
 - **Pinterest assets**: 29 pins (1000x1500) with a posting sheet and 30 share images. No Pinterest account is included.
 - **Images**: Unsplash photos with credits (the license gives usage rights, not ownership or exclusivity), the site's own graphic spec cards, self-hosted open-license fonts.
 - **Trust pages**: about, methodology, editorial standards (AI-assisted content is disclosed there), corrections, affiliate disclosure, privacy, terms, contact.
-- **Codebase and tools**: React/TanStack Start site, no database and no logins, 498 automated tests passing, a content editor setup for Pages CMS, 4 GitHub Actions workflows.
+- **Codebase and tools**: React/TanStack Start site, no database and no logins, 605 automated tests passing, a content editor setup for Pages CMS, 4 GitHub Actions workflows.
 - **Documentation**: handover guide, transfer checklist and package index, DNS and email transfer notes, operations handbook, security and recovery runbook, monetization-readiness guide, hosting options.
 
 ## What you do not get
@@ -43,11 +43,12 @@ This is a **new, pre-revenue starter site**. The domain was registered in Novemb
 ## Risks
 
 - Brand-new domain with 236 impressions and 0 clicks in the last 28 days: expect slow organic growth, and no evidence yet of search traffic.
-- Guides are researched from public sources with the method disclosed, not first-hand tested; AI tools assisted research, drafting and source checks (disclosed on the site).
+- Guides are researched from public sources with the method disclosed, not first-hand tested; AI tools assisted research, drafting and source checks (disclosed on the site). The reader reviews preceded the last corrections; the corrected text was not re-scored.
+- The 78 listed stays are written from public listing pages and labelled "Not yet verified"; none was confirmed with a host.
 - The 38-manager dataset is a convenience sample read on one date; policies change.
 - Affiliate earnings need accounts you must open and get approved, including Amazon's own review of your site and its qualifying-sales window.
 - Pages CMS setup was never opened in the live app (UNVERIFIED); some content (7 guides, towns, gear copy, trust pages) needs a developer.
-- Hosting: the seller's Netlify builds are stopped to preserve a nearly used-up monthly credit allowance (about 65 credits left; 15 per deploy), so the live site shows the last deploy and your first act is to deploy from your own account.
+- Hosting: the seller's Netlify builds are stopped to preserve a nearly used-up monthly credit allowance (about 65 credits left; 15 per deploy), so the live site shows the last deploy, **not the final build described above**, and your first act is to deploy from your own account. Nothing in this listing should be read as a statement about the current live pages until that deploy has been checked.
 - Domain auto-renew is off; the domain expires 2027-11-17 if nobody renews it.
 - One devDependency comes from a vendor namespace (below).
 

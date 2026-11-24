@@ -18,7 +18,7 @@ Before handover the seller disconnects Lovable's GitHub link so nothing from Lov
 ## Option B: move elsewhere, including Lovable
 
 - Any host that can run a Node 22 build and server rendering works (`bun install` then `NITRO_PRESET=node-server vite build` gives a plain Node server; other presets exist). Tested: Node build only.
-- You would have to recreate what `netlify.toml` does: 11 permanent redirects for retired guide addresses (this protects old links and search rankings), long-lived caching on `/assets/*`, two security headers on static files, and the rule that skips builds for docs-only changes.
+- You would have to recreate what `netlify.toml` does: 10 permanent redirects for retired guide addresses (this protects old links and search rankings), long-lived caching on `/assets/*`, two security headers on static files, and the rule that skips builds for docs-only changes.
 - Lovable hosting: its docs say it serves this kind of app with server rendering, but it needs a paid plan ($25/month Pro, $250/year) to use your own domain, does not read `netlify.toml`, and its docs do not describe redirects or custom headers. We did not test the site on Lovable hosting, so check a trial publish first. A Lovable project can only be moved to someone who is a member of the same workspace, so a buyer would normally receive the code from GitHub instead.
 
 ## Costs (US dollars, list prices)

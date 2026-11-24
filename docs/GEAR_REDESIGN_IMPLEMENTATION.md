@@ -59,9 +59,42 @@ Files: `src/routes/gear.index.tsx`, `src/content/gear-hub.ts` (curation block at
 4. Run `bunx vitest run src/test/gear-curation.test.tsx`; it fails on missing, inactive or link-less ids, empty collections and non-deterministic order.
 
 ### Journeys (Playwright against a built copy, JS disabled for trips)
-- A cabin: hero, Cabin stay card, `/gear?trip=cabin-stay` shows 9 products in Containment, Comfort and Cleanup, each with a button; passed.
-- B road trip: `?trip=road-trip` shows 10 products (restraints, ramps, car cleanup, water); passed.
+- A cabin: hero, Cabin stay card, `/gear?trip=cabin-stay` shows 9 products in Containment, Comfort and Cleanup, each with a button; passed. Re-counted 2026-11-24 on the HEAD build: 9 cards on the page.
+- B road trip: `?trip=road-trip` showed 10 products (restraints, ramps, car cleanup, water) when this was written; passed. Re-counted 2026-11-24 on the HEAD build: 13 cards on the page (the collection plus the featured products that are not already in it), no Amazon URL repeated.
 - C senior dog ramp: Every dog travels differently, Senior dogs, Ramps and steps category link and dog guides; passed (no medical claims in the copy).
 - E skeptical visitor: affiliate notice and Amazon sentence sit right under the hero, one concise research paragraph with the methodology link at the end, no prices, ratings or stock text on the page; passed.
 - Overflow: no horizontal scroll at 320, 375, 390, 430, 768, 1024, 1440. First mobile viewport (390x844) shows hero, both CTAs, the notice and the first trip card. Screenshots: `docs/editorial/img/gear-home-{320,390,768,1440}.png` (`-fold`, `-cabin` variants).
 - Not verified: real-device Safari, screen reader pass, keyboard walk-through of the details panels (give to the Cowork browser task).
+
+## Update, 2026-11-24 (final pass, HEAD `13a7ce1`, not deployed)
+
+Accuracy check of this file against the HEAD build: the card contract, the category page order, the curation rules (`MIN_COLLECTION` 3, featured at most 6, ids dropped when unknown, inactive or link-less) and the `GearHashTarget` behaviour all match the code and the pages. Four things changed or were corrected since it was written:
+
+- **Trip views no longer repeat a product.** The Featured section drops every product already in the trip collection and is hidden when fewer than 3 remain (`src/test/gear-trip-dedupe.test.tsx`). Measured on the HEAD build: cards per trip view are road trip 13, cabin stay 9, beach and lake 11, winter 9, hiking 11, with 0 repeated Amazon URLs on any of them.
+- **Category pages have their own titles and descriptions** (`metaTitle` and `metaDescription` in `src/content/gear-categories.ts`). All 11 category pages and the hub are now 60 characters or fewer in the title and 120 to 160 in the description.
+- **Product counts.** 92 product records, 65 active. The hub and category counts are: car-safety 10, car-interior 4, ramps-and-steps 5, feeding-and-hydration 9, pens-and-gates 8, comfort-and-cooling 7, water-and-beach 5, trail-and-hiking 7, cold-weather 3, safety-id-first-aid 9, rental-cleanup 9 (cross-listed products counted on both pages; 65 distinct products).
+- **Sleepypod Clickit Sport was retired** (inactive record, link not approved, removed from the trip collection and featured list, packing tool and three guides): 0 links and 0 slug in the HTML. See `docs/editorial/PASSG-SLEEPYPOD-RETIREMENT.md`.
+
+Still open from `docs/review/FINAL-GEAR-REVIEW.md`: the trip-view H1 stays generic ("Good gear. Better getaways.") for every `?trip=` view; both "Details and specs" and "Details, fit & sources" appear on each hub card; hero chips and inline card links were 36 to 39 px (not re-measured). Design spec and self-scoring: `docs/GEAR_SHOPPER_EXPERIENCE_SPEC.md`.
+
+## How to add a product
+
+1. **Find the facts first.** A record needs a source for its specs: the maker's page where one exists, otherwise the Amazon listing as read, with the read date. No price, rating, commission or "tested" claim goes anywhere in the record (the schema rejects unknown keys).
+2. **Add a record to `content/products.yml`.** Required: `id` (lowercase letters, numbers, hyphens; also the key everything else uses), `name`, `brand`, `categories` (first entry is the primary category, at most one more as a cross-listing, from the 11 slugs in `src/content/products-schema.ts`), `summary` (the problem it solves, one or two sentences), `specSource` (`title`, `url` https, `publisher`, `accessedOn` as YYYY-MM-DD), `lastVerified`, `active`. Useful: `cardSpecs` (up to three chips, 28 characters each, each taken from the record), `keySpecs`, `aliases` (exact spellings the guides use, so inline mentions link), `manufacturerUrl`, `relatedGuides` (guide slugs), `manufacturerClaimsVsIndependentTesting` (leave as the default "none cited" unless a named independent tester is cited). Leave `imageRights: none` and `imageSource` empty (there are no product photos).
+3. **Add its buy link to `content/affiliates.yml`** (section below) with `id` equal to the product `id` (or set `affiliateProgram` and `affiliateTrackingId` on the product to name a different entry; never put a URL there). Without an approved entry the card falls back to the maker page, then a retailer link, then an "Information only" state.
+4. **Keep it inactive until it is placed.** Set `active: false`. A product becomes visible only when `active: true`. `src/test/gear-products.test.ts` checks that every active product has a destination (a maker page on https or an approved Amazon link) and that every category keeps at least 3 active products. Every published guide must carry at least one earning product (`src/test/guide-related-products.test.tsx`), so a guide placement is added with a `{{pick:product-id|label|reason|source-url}}` directive next to the paragraph that explains the product, and the id goes in that guide's `relatedProducts`.
+5. **Optionally feature it:** add its id to a group in `tripCollections` or to `featuredProductIds` in `src/content/gear-hub.ts` (see "Add a product or collection" above).
+6. **Verify:** `bunx vitest run src/test/gear-products.test.ts src/test/gear-curation.test.tsx src/test/gear-category-page.test.tsx`, then build and look at the category page and any guide that uses it. Do not set `active: true` for a product whose Amazon listing has no buy box.
+
+## How to replace affiliate IDs
+
+Where the IDs live: `content/settings.yml` (`amazonTrackingId`, `ga4MeasurementId`, `stay22AccountId`) and `content/affiliates.yml` (one entry per product or stay link: `id`, `network`, `url`, `approved`, `kind`, `notes`). Product records store no affiliate URL; they name an entry.
+
+**Amazon (all products at once).** Every Amazon entry's URL ends in `?tag={amazonTrackingId}`. Change the one value `amazonTrackingId` in `content/settings.yml` to your own Associates store ID (format `yourname-20`; the schema rejects a URL or a value with spaces). Every Amazon link on the site is retagged at the next build. An empty value hides every Amazon link and the Amazon disclosure sentence, which is the safe state until your account is approved (tested in `src/test/amazon-tracking-id.test.ts`). The ASINs in the URLs stay valid for any Associates account; check each product still has a buy box in your own account before you rely on it. The current ID is `pawspassage-20`, the seller's, and does not transfer.
+
+**Amazon, one product.** Edit its entry in `content/affiliates.yml`: set `approved: false` to hide the button (the card then falls back to the maker link), or change the ASIN in `url` and keep `?tag={amazonTrackingId}`. Do not hard-code a tag.
+
+**Vrbo and stays.** Each stay links to a per-listing Expedia Group deeplink (`kind: stay`, 79 entries: one generic and the rest per listing). These belong to the seller's account. Open your own Expedia Group creator account, regenerate every deeplink, and replace the `url` values (worksheet and import scripts: `scripts/stay-deeplink-worksheet.ts`, `scripts/import-stays.ts`, `docs/affiliate-link-worksheet.csv` with `scripts/import-affiliate-links.ts`). A stay appears only while it has an approved link (rule `STAYS_REQUIRE_AFFILIATE_LINK`), so a stay with an empty or unapproved link disappears from the directory, and a link left unchanged still credits the seller.
+
+**After any change:** run `bunx vitest run`, build, and look at one guide with a product card, one category page and one stay page. Replace the GA4 ID in `content/settings.yml` at the same time. Nothing here was run against a live deploy.
+

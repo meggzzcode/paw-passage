@@ -1,8 +1,8 @@
 ---
 title: How Much a Dog Really Costs on a Vacation Rental
-seoTitle: "Dog Costs on a Vacation Rental: The Full Bill"
+seoTitle: "How Much a Dog Costs on a Vacation Rental"
 seoDescription: "How much does a dog add to a rental bill? Nightly pet fees ran $20 to $50 in our 38-manager sample, plus cleaning, deposits, taxes. Compare two quotes."
-dek: The pet fee is one line. Here is the whole bill with real manager figures, what is refundable, and how to compare two quotes before you book.
+dek: "Nightly pet fees ran $20 to $50 in our 38-manager sample, but the pet fee is one line. See the whole bill, what is refundable, and how to compare two quotes."
 category: Planning
 states: []
 status: published
@@ -248,35 +248,6 @@ Rental B, the "no pet fee" one, is cheapest. Rental A and C tie on cost, but C a
 
 The same method works for the real fees above. For example, at the Cabin Rentals of Georgia terms, one dog for five nights would be $50 x 5 = $250 plus the $75 cleaning fee, so $325 of definite pet cost and a further $250 refundable deposit, if the $50 is per pet per night as the page states and the $75 is charged once. [[7]](https://cabin-rentals-of-georgia.com/policies) That is before the nightly rate and taxes, and before checking the page's other conditions (a weight limit, a crate requirement and manager approval of each dog).
 
-## When the pet fee is not the story
-
-A $0 pet fee is not a promise of a cheaper trip. Twiddy lists ten homes with no pet fee or deposit, nine of them in the words "no additional fee or deposit" [[13]](https://blog.twiddy.com/bring-your-pets-on-vacation/), but the nightly rate and cleaning fee still apply, and only your dates will show the total. Compare on the total, then on the rules: a rental that is $50 cheaper and caps dogs below yours is not an option (see [which managers state a weight limit](/guides/vacation-rentals-with-no-dog-weight-limit)). Our [no pet fee rentals guide](/guides/vacation-rentals-with-no-pet-fee) goes through what the $0 managers say, and the [dog count guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental) covers limits.
-
-## Charges you avoid by asking first
-
-Two bills are not part of the plan, and both are avoidable.
-
-- **Damage and extra cleaning after checkout.** A pet fee does not stand in for a damage claim. If a charge appears afterwards, [what to do about an Airbnb pet damage charge after checkout](/guides/airbnb-pet-damage-charge-after-checkout) walks through asking for an itemized explanation.
-- **A dog the booking did not approve.** Cabin Rentals of Georgia says all pet fees are doubled if an unapproved dog is found. [[7]](https://cabin-rentals-of-georgia.com/policies) Tahoe Vacation Rentals lists a $300 nonrefundable per-pet charge and immediate departure for a pet in a non-pet-friendly home. [[9]](https://www.tahoevacationrentals.com/reservation-information/)
-
-## What to pack to avoid a cleaning or damage charge
-
-Gear is not part of the rental bill, so it stays out of the totals above. It does touch the contingent pile, though: extra cleaning and damage claims are bills a pet fee may not cover, so a few items aimed at mud, hair and wet floors are worth considering. None of it changes what a host or platform may charge, and none replaces photos at arrival and checkout. We hold no price data, so check current prices on each listing. If you pack only one thing, match it to your dog: the mat if your entry is tile or wood and walks are muddy, the towel if your dog comes in wet, the bed if the host limits furniture. The mat and the towel overlap, so most dogs need one of the two, not both.
-
-**For muddy walks and a tile or wood entry: the Soggy Doggy Microfiber Doormat.** Mud tracked in is the cleaning bill you can control, and a mat gives wet paws somewhere to land before they reach the floor. It comes in Large (26 x 36 in) and Extra Large (36 x 60 in) with a non-slip backing, and the maker says it is machine washable and dryer safe. [[15]](https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate) The "super absorbent and dirt trapping" wording is the maker's, and the page gives no warranty. Skip it if the entry is carpeted or tiny. This is the one to buy first if you expect muddy trails.
-
-{{pick:soggy-doggy-microfiber-doormat|Doormat for a muddy entry|The maker lists Large 26 x 36 in and Extra Large 36 x 60 in, a non-slip backing, and says it is machine washable and dryer safe.|https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate}}
-
-**For a dog that comes in wet: the Soggy Doggy Super Shammy.** A towel dries the dog before it reaches the rental's floors and furniture. It is a 31 x 14 in microfiber chenille towel with hand pockets, one size, and the maker says to machine wash it alone with no bleach or fabric softener. [[14]](https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey) The page gives no absorbency figure, so we cannot say how many dogs one towel handles. Skip it if you already pack a towel you are happy to get muddy, or if you buy the mat and your dog is usually only muddy, not soaked.
-
-{{pick:soggy-doggy-super-shammy-towel|Hand-pocket drying towel|The maker lists a 31 x 14 in microfiber chenille towel with hand pockets that is machine washable.|https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey}}
-
-**To keep hair off the host's sofa: the Kurgo Loft Wander bed.** If the host limits dogs on furniture, a bed of your own gives the dog somewhere else to lie, and it keeps the washing at home rather than in the rental's laundry. The Loft Wander is a roll-up bed in Medium (27 x 36 in) and Large (36 x 48 in) with a water-resistant top and a waterproof, nonslip bottom, and the maker says it can be washed by hand or on a gentle machine cycle. [[16]](https://www.kurgo.com/p/loft-wander-dog-bed/K01560) Skip it if the home supplies a dog bed or allows dogs on furniture (confirm in writing). Add it if your dog sheds or likes the couch.
-
-{{pick:kurgo-loft-wander-dog-bed|Roll-up bed in Medium or Large|The maker lists a water-resistant top, a waterproof nonslip bottom and washing by hand or gentle machine cycle, in two sizes.|https://www.kurgo.com/p/loft-wander-dog-bed/K01560}}
-
-**What to buy first.** Mat for mud, or towel for a wet dog, then the bed if the host restricts furniture. For a bigger list of options, see our [rental cleanup gear page](/gear/rental-cleanup).
-
 ## How to compare two quotes
 
 1. Fix the inputs: same dates, same number of guests, same number of dogs.
@@ -287,6 +258,17 @@ Gear is not part of the rental bill, so it stays out of the totals above. It doe
 6. Only then look at the rules: dog count, weight, breed, and whether your dog is accepted at all. The [will-my-dog-be-accepted tool](/tools/will-my-dog-be-accepted) helps with that.
 
 If a listing allows several dogs, the [dog count guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental) covers how limits and per-pet fees interact.
+
+## When the pet fee is not the story
+
+A $0 pet fee is not a promise of a cheaper trip. Twiddy lists ten homes with no pet fee or deposit, nine of them in the words "no additional fee or deposit" [[13]](https://blog.twiddy.com/bring-your-pets-on-vacation/), but the nightly rate and cleaning fee still apply, and only your dates will show the total. Compare on the total, then on the rules: a rental that is $50 cheaper and caps dogs below yours is not an option (see [which managers state a weight limit](/guides/vacation-rentals-with-no-dog-weight-limit)). Our [no pet fee rentals guide](/guides/vacation-rentals-with-no-pet-fee) goes through what the $0 managers say, and the [dog count guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental) covers limits.
+
+## Charges you avoid by asking first
+
+Two bills are not part of the plan, and both are avoidable.
+
+- **Damage and extra cleaning after checkout.** A pet fee does not stand in for a damage claim. If a charge appears afterwards, [what to do about an Airbnb pet damage charge after checkout](/guides/airbnb-pet-damage-charge-after-checkout) walks through asking for an itemized explanation.
+- **A dog the booking did not approve.** Cabin Rentals of Georgia says all pet fees are doubled if an unapproved dog is found. [[7]](https://cabin-rentals-of-georgia.com/policies) Tahoe Vacation Rentals lists a $300 nonrefundable per-pet charge and immediate departure for a pet in a non-pet-friendly home. [[9]](https://www.tahoevacationrentals.com/reservation-information/)
 
 ## How sure we are
 
@@ -301,6 +283,24 @@ If a listing allows several dogs, the [dog count guide](/guides/how-many-dogs-ca
 | What your own fuel, gear or boarding would cost | We have no official source for these; get your own quotes |
 | Whether a displayed nightly rate already includes the pet fee | Compare the breakdown with the dog count entered and removed |
 | What a given manager does with fees if you cancel | Read the cancellation terms on your booking |
+
+## What to pack to avoid a cleaning or damage charge
+
+Gear is not part of the rental bill, so it stays out of the totals above. It does touch the contingent pile, though: extra cleaning and damage claims are bills a pet fee may not cover, so a few items aimed at mud, hair and wet floors are worth considering. None of it changes what a host or platform may charge, and none replaces photos at arrival and checkout. We hold no price data, so check current prices on each listing. Match each item to your dog, and skip what it does not need. The mat and the towel overlap, so most dogs need one of the two, not both.
+
+**For muddy walks and a tile or wood entry: the Soggy Doggy Microfiber Doormat.** Mud tracked in is the cleaning bill you can control, and a mat gives wet paws somewhere to land before they reach the floor. It comes in Large (26 x 36 in) and Extra Large (36 x 60 in) with a non-slip backing, and the maker says it is machine washable and dryer safe. [[15]](https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate) The "super absorbent and dirt trapping" wording is the maker's, and the page gives no warranty. Skip it if the entry is carpeted or tiny.
+
+{{pick:soggy-doggy-microfiber-doormat|Doormat for a muddy entry|The maker lists Large 26 x 36 in and Extra Large 36 x 60 in, a non-slip backing, and says it is machine washable and dryer safe.|https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate}}
+
+**For a dog that comes in wet: the Soggy Doggy Super Shammy.** A towel dries the dog before it reaches the rental's floors and furniture. It is a 31 x 14 in microfiber chenille towel with hand pockets, one size, and the maker says to machine wash it alone with no bleach or fabric softener. [[14]](https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey) The page gives no absorbency figure, so we cannot say how many dogs one towel handles. Skip it if you already pack a towel you are happy to get muddy, or if you buy the mat and your dog is usually only muddy, not soaked.
+
+{{pick:soggy-doggy-super-shammy-towel|Hand-pocket drying towel|The maker lists a 31 x 14 in microfiber chenille towel with hand pockets that is machine washable.|https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey}}
+
+**To keep hair off the host's sofa: the Kurgo Loft Wander bed.** If the host limits dogs on furniture, a bed of your own gives the dog somewhere else to lie, and it keeps the washing at home rather than in the rental's laundry. The Loft Wander is a roll-up bed in Medium (27 x 36 in) and Large (36 x 48 in) with a water-resistant top and a waterproof, nonslip bottom, and the maker says it can be washed by hand or on a gentle machine cycle. [[16]](https://www.kurgo.com/p/loft-wander-dog-bed/K01560) Skip it if the home supplies a dog bed or allows dogs on furniture (confirm in writing). Our button opens the Large (36 x 48 in); pick Medium on the maker page for a smaller dog.
+
+{{pick:kurgo-loft-wander-dog-bed|Roll-up bed in Medium or Large|The maker lists a water-resistant top, a waterproof nonslip bottom and washing by hand or gentle machine cycle, in two sizes.|https://www.kurgo.com/p/loft-wander-dog-bed/K01560}}
+
+**What to buy first.** The mat for mud, or the towel for a wet dog, then the bed only if the host restricts furniture. For a bigger list of options, see our [rental cleanup gear page](/gear/rental-cleanup).
 
 ## Next step
 

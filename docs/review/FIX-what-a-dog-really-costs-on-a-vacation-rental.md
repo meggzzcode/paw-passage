@@ -5,3 +5,8 @@ For the lead:
 - The hero (suitcase and a Shiba on a doorstep) shows travel rather than cost; acceptable, but a bill or cost visual would fit the pin better.
 - Confirm aff:vrbo is approved here.
 - Retired check: iris-usa-airtight-dog-food-container-10-lb is active and still used in other guides; no change to products.yml needed.
+
+## Round 3
+- Dek now carries the $20 to $50 nightly range; seoTitle "How Much a Dog Costs on a Vacation Rental" (41).
+- "How to compare two quotes" moved directly after the hypothetical table; the gear section moved after "How sure we are", before Next step. Repeated "buy first" lines cut (only the final list keeps it); Loft Wander button opens the Large 36 x 48, said so. Mat/towel overlap kept (towel is used in four other guides, so not removed).
+- Hero still a travel image (owner art decision; not changed). Spec-card icons are template work.

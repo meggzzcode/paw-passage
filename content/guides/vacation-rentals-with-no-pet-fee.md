@@ -2,7 +2,7 @@
 title: "Vacation Rentals With No Pet Fee: What Managers Say"
 seoTitle: "Vacation Rentals With No Pet Fee: 3 of 38 Managers"
 seoDescription: "Only 3 of 38 managers we read say dogs stay free. See each one's exact wording, what else they charge, and how to compare the total before you book."
-dek: Three managers charged nothing for dogs on the pages we read. Here is their exact wording, the charges that can still show up, and how to check before you book.
+dek: Three of 38 managers charged nothing for dogs on the pages we read. Here is their exact wording, the charges that can still show up, and how to check before you book.
 category: Planning
 states: []
 status: published
@@ -36,7 +36,6 @@ relatedProducts:
   - midwest-icrate-dog-crate
   - kurgo-loft-wander-dog-bed
   - soggy-doggy-microfiber-doormat
-  - pet-parents-pawtect-pads
 relatedTools:
   - will-my-dog-be-accepted
   - checklist
@@ -141,10 +140,6 @@ sources:
     url: https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate
     publisher: Soggy Doggy
     accessedOn: 2026-11-16
-  - title: Pawtect Pads (washable pee pads, 2 pack)
-    url: https://petparentsbrand.com/products/washable-puppy-pads
-    publisher: Pet Parents
-    accessedOn: 2026-11-16
 research:
   primaryKeyword: vacation rentals with no pet fee
   relatedKeywords:
@@ -223,9 +218,11 @@ What else is charged: the booking site's pet-friendly page says "Each cabin has 
 
 Hapey is the most explicit. Its page says "No pet fees. Ever. What you see when you book is what you pay," and the FAQ says "No pet deposit, no nightly pet surcharge, no pet fee of any kind." [[3]](https://hapeycabinrentals.com/pet-friendly-smoky-mountain-cabin-rentals/)
 
-Dog limits: no breed or weight limits (see [which managers state a weight limit](/guides/vacation-rentals-with-no-dog-weight-limit)), and "More than two dogs? Just mention it at booking and we'll confirm." [[3]](https://hapeycabinrentals.com/pet-friendly-smoky-mountain-cabin-rentals/) A second page says it does not restrict how many dogs can be guests, and asks you to reach out first if you have more than two. [[4]](https://hapeycabinrentals.com/the-pet-paradise-promise/) It recommends a travel crate if you leave a dog alone for a few hours, and asks that dogs be vaccinated and housebroken. [[3]](https://hapeycabinrentals.com/pet-friendly-smoky-mountain-cabin-rentals/) Fenced space varies: the page lists five named cabins with enclosed outdoor space and says to check the individual cabin page. [[3]](https://hapeycabinrentals.com/pet-friendly-smoky-mountain-cabin-rentals/)
+**Dog limits.** No breed or weight limits (see [which managers state a weight limit](/guides/vacation-rentals-with-no-dog-weight-limit)), and "More than two dogs? Just mention it at booking and we'll confirm." [[3]](https://hapeycabinrentals.com/pet-friendly-smoky-mountain-cabin-rentals/) A second page says it does not restrict how many dogs can be guests, and asks you to reach out first if you have more than two. [[4]](https://hapeycabinrentals.com/the-pet-paradise-promise/) It recommends a travel crate if you leave a dog alone for a few hours, and asks that dogs be vaccinated and housebroken. [[3]](https://hapeycabinrentals.com/pet-friendly-smoky-mountain-cabin-rentals/) Fenced space varies: the page lists five named cabins with enclosed outdoor space and says to check the individual cabin page. [[3]](https://hapeycabinrentals.com/pet-friendly-smoky-mountain-cabin-rentals/)
 
-What else is charged: the Pet Paradise Promise page says there is no cleaning surcharge for dogs and no flat pet deposit, but it does not address damage. [[4]](https://hapeycabinrentals.com/the-pet-paradise-promise/) It also says booking through Vrbo or Airbnb may bring service fees, and that booking direct skips them. [[4]](https://hapeycabinrentals.com/the-pet-paradise-promise/) Another Hapey page says the company uses Vrbo exclusively for bookings and mentions a 6% to 14% guest service fee that falls as the total rises. [[5]](https://hapeycabinrentals.com/why-dont-you-offer-direct-booking/) Those two pages read differently on direct booking, so ask which route applies to your dates. That page also says some platforms advertise "No Service Fees, No Cleaning Fees," but those costs are often rolled into higher nightly rates. [[5]](https://hapeycabinrentals.com/why-dont-you-offer-direct-booking/) That is Hapey's claim about other companies, and the same logic is worth applying to any "no fee" claim, theirs included.
+**What else is charged.** The Pet Paradise Promise page says there is no cleaning surcharge for dogs and no flat pet deposit, but it does not address damage. [[4]](https://hapeycabinrentals.com/the-pet-paradise-promise/) Another Hapey page mentions a 6% to 14% guest service fee that falls as the total rises, and says some platforms advertise "No Service Fees, No Cleaning Fees" while rolling those costs into higher nightly rates. [[5]](https://hapeycabinrentals.com/why-dont-you-offer-direct-booking/) That is Hapey's claim about other companies, and the same logic is worth applying to any "no fee" claim, theirs included.
+
+**Booking route.** Two Hapey pages disagree. One says booking through Vrbo or Airbnb may bring service fees and that booking direct skips them. [[4]](https://hapeycabinrentals.com/the-pet-paradise-promise/) The other says the company uses Vrbo exclusively for bookings. [[5]](https://hapeycabinrentals.com/why-dont-you-offer-direct-booking/) Ask which route applies to your dates before you rely on the "what you see is what you pay" line.
 
 ### Twiddy & Company (Outer Banks, North Carolina), on the homes it lists
 
@@ -282,31 +279,27 @@ Price the same dates and the same number of dogs for each place, and put every l
 | Pet fee | $0 | $60 |
 | Total | $920 | $880 |
 
-The home with a pet fee is cheaper here. The numbers are made up. Hapey's own page makes a similar point about other companies' no-fee advertising, but that is a company's claim, not something we measured. [[5]](https://hapeycabinrentals.com/why-dont-you-offer-direct-booking/)
+The fee-free home is not automatically cheaper: here the home with a $60 pet fee costs $40 less overall. The numbers are made up to show the method, not to say what any home charges. Add up every line for your dates.
 
 Do the same with your own figures: list the dates, dog count and every line you can find, add them up, and ask the host to confirm the total in writing.
 
 ## What to pack so a fee-free stay stays fee-free
 
-A $0 pet fee does not cover what happens if the dog leaves mud, hair or an accident behind. The pages above say little about damage terms, and Hapey's own page does not address damage, so the sensible move is to hand back the home as you found it. We cannot say whether any item changes what a host charges, because no page we read says so; these are plain ways to keep the mess off the host's floors and furniture. If you pack only one thing, match it to the mess you expect: the crate if you will leave the dog alone, the doormat for mud at the door, the bed to keep hair off the host's sofa. Skip any item that solves a problem your dog does not have.
+A $0 pet fee does not cover what happens if the dog leaves mud, hair or an accident behind. The pages above say little about damage terms, and Hapey's own page does not address damage, so the sensible move is to hand back the home as you found it. We cannot say whether any item changes what a host charges, because no page we read says so; these are plain ways to keep the mess off the host's floors and furniture. Match each item to the mess you expect, and skip any that solves a problem your dog does not have.
 
-**If you will leave the dog alone: the MidWest iCrate.** Hapey recommends a travel crate if you leave a dog alone for a few hours, which makes a crate the one item the fee-free managers themselves mention. [[3]](https://hapeycabinrentals.com/pet-friendly-smoky-mountain-cabin-rentals/) The iCrate is a wire crate sold in seven sizes from 18 to 48 in, with a divider panel and a removable leak-proof pan included, a slide-bolt latch and a flat fold, per the maker. [[23]](https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/) Skip it if your dog is not crate trained or never stays alone. The page gives no folded dimensions or weight, so check them against your trunk. This is the one to buy first if the dog will be home without you.
+**If you will leave the dog alone: the MidWest iCrate.** Hapey recommends a travel crate if you leave a dog alone for a few hours, which makes a crate the one item a fee-free manager itself mentions. [[3]](https://hapeycabinrentals.com/pet-friendly-smoky-mountain-cabin-rentals/) The iCrate is a wire crate sold in seven sizes from 18 to 48 in, with a divider panel and a removable leak-proof pan included, a slide-bolt latch and a flat fold, per the maker. [[23]](https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/) Skip it if your dog is not crate trained or never stays alone. The page gives no folded dimensions or weight, so check them against your trunk.
 
 {{pick:midwest-icrate-dog-crate|Crate with divider and leak-proof pan|The maker lists sizes 18 to 48 in, a divider panel, a removable leak-proof pan and a flat fold.|https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/}}
 
-**For mud at the door: the Soggy Doggy Microfiber Doormat.** Cleaning is where fee-free and fee homes overlap: Sliding Rock says every cabin has nominal cleaning fees, so what comes in on paws is the part you control. The mat comes in Large (26 x 36 in) and Extra Large (36 x 60 in), and the maker lists a non-slip backing and says it is machine washable and dryer safe. [[25]](https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate) It suits a trip with muddy trails and a tile or wood entry; skip it if the entry is tiny or already carpeted. "Super absorbent and dirt trapping" is the maker's wording and the page gives no warranty, so check the cabin's entry for a flat spot before you pack it. Buy it first if wet or muddy walks are the plan.
+**For mud at the door: the Soggy Doggy Microfiber Doormat.** Cleaning is where fee-free and fee homes overlap: Sliding Rock says every cabin has nominal cleaning fees, so what comes in on paws is the part you control. The mat comes in Large (26 x 36 in) and Extra Large (36 x 60 in), and the maker lists a non-slip backing and says it is machine washable and dryer safe. [[25]](https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate) It suits a trip with muddy trails and a tile or wood entry; skip it if the entry is tiny or already carpeted. "Super absorbent and dirt trapping" is the maker's wording and the page gives no warranty, so check the cabin's entry for a flat spot before you pack it.
 
 {{pick:soggy-doggy-microfiber-doormat|Doormat in Large or Extra Large|The maker lists Large 26 x 36 in and Extra Large 36 x 60 in, a non-slip backing, and says it is machine washable and dryer safe.|https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate}}
 
-**To keep hair off the host's sofa: the Kurgo Loft Wander bed.** Give the dog a place that is clearly its own and wash it when you get home. The Loft Wander is a roll-up bed in Medium (27 x 36 in) and Large (36 x 48 in) with a water-resistant top and a waterproof, nonslip bottom, and the maker says it can be washed by hand or on a gentle machine cycle. [[24]](https://www.kurgo.com/p/loft-wander-dog-bed/K01560) Skip it if the home allows dogs on furniture or supplies a bed (confirm in writing). It is the one to add if your dog sheds or likes the couch.
+**To keep hair off the host's sofa: the Kurgo Loft Wander bed.** Give the dog a place that is clearly its own and wash it when you get home. The Loft Wander is a roll-up bed in Medium (27 x 36 in) and Large (36 x 48 in) with a water-resistant top and a waterproof, nonslip bottom, and the maker says it can be washed by hand or on a gentle machine cycle. [[24]](https://www.kurgo.com/p/loft-wander-dog-bed/K01560) Our button opens the Large (36 x 48 in); pick Medium on the maker page for a small dog. Skip it if the home allows dogs on furniture or supplies a bed (confirm in writing).
 
 {{pick:kurgo-loft-wander-dog-bed|Roll-up bed, washable|The maker lists a water-resistant top, a waterproof nonslip bottom and washing by hand or gentle machine cycle, in two sizes.|https://www.kurgo.com/p/loft-wander-dog-bed/K01560}}
 
-**For a dog that might have an accident: Pet Parents Pawtect Pads.** A new place, a puppy or a senior dog can mean a wet spot on a rental floor. If your dog is reliably house-trained and you crate when out, skip these. Otherwise the pads come two to a pack in sizes from 18 x 24 in to 41 x 41 in, and the maker describes a waterproof backing and a floor-gripping backing, machine washable. [[26]](https://petparentsbrand.com/products/washable-puppy-pads) The waterproof and wash-life statements are the maker's, and the page does not state the fabric. If an accident happens anyway, tell the host. They are the one to buy first only for a puppy or senior dog.
-
-{{pick:pet-parents-pawtect-pads|Washable pads for puppies and seniors|The maker lists two pads per pack in four sizes, with a waterproof backing and a floor-gripping backing.|https://petparentsbrand.com/products/washable-puppy-pads}}
-
-**What to buy first.** Buy for the dog you have: the crate if the dog stays alone, then the doormat for mud, then the bed for hair, and the pads only for a puppy or a senior dog. Ask the host the questions below before you pay for anything else.
+**What to buy first.** Buy for the dog you have: the crate if the dog stays alone, then the doormat for mud, then the bed for hair. If your dog is a puppy or a senior that may have an accident, our [puppy guide](/guides/puppy-at-a-vacation-rental) and [senior dog guide](/guides/vacation-rental-with-a-senior-dog) cover washable pads. Ask the host the questions below before you pay for anything else.
 
 ## What to ask the host
 

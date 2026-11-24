@@ -61,20 +61,21 @@ export const imageCredits: ImageCredit[] = [
   },
   {
     key: "guide-cabin-packing",
-    photographer: "Jamie Pilgrim",
+    photographer: "Christian Crocker",
     unsplashUrl:
-      "https://unsplash.com/photos/white-short-coated-dog-with-black-and-gray-harness-on-gray-rock-near-body-of-water-ERsd-sl6VOQ",
+      
+      "https://unsplash.com/photos/dog-relaxes-in-the-car-trunk-with-a-bag-REFa-Kh22KU",
   },
   {
     key: "gear-car-safety",
-    photographer: "Gary Samaha",
-    unsplashUrl: "https://unsplash.com/photos/two-dogs-on-pet-bed-in-car-bsAfOX0WDsU",
+    photographer: "Far Chinberdiev",
+    unsplashUrl: 
+      "https://unsplash.com/photos/beagle-mix-in-pink-harness-jhSKzWZWVYY",
   },
   {
     key: "gear-first-aid",
-    photographer: "Declan Sun",
-    unsplashUrl:
-      "https://unsplash.com/photos/a-white-dog-wearing-a-purple-hoodie-and-yellow-boots-8Kms34hH06w",
+    photographer: "Mat Napo",
+    unsplashUrl: "https://unsplash.com/photos/MaKsx8JNbiI",
   },
   {
     key: "gear-feeding",
@@ -145,14 +146,15 @@ export const imageCredits: ImageCredit[] = [
   },
   {
     key: "guide-no-pet-fee",
-    photographer: "Dex Ezekiel",
-    unsplashUrl: "https://unsplash.com/photos/-nOCYgeOtX8",
+    photographer: "Anastasiya Badun",
+    unsplashUrl:
+      "https://unsplash.com/photos/a-brown-dog-standing-on-top-of-a-wooden-deck-DHDLUcqc9Dc",
   },
   {
     key: "guide-christmas-week",
-    photographer: "YBag Media",
+    photographer: "Samantha Fortney",
     unsplashUrl:
-      "https://unsplash.com/photos/black-labrador-retriever-on-snow-covered-ground-during-daytime-se3pSeT0mdM",
+      "https://unsplash.com/photos/a-dog-laying-on-the-floor-in-front-of-a-christmas-tree-c6MJC9JUa6s",
   },
   {
     key: "guide-reactive-dog",
@@ -162,8 +164,9 @@ export const imageCredits: ImageCredit[] = [
   },
   {
     key: "guide-pool-hot-tub",
-    photographer: "Judy Beth Morris",
-    unsplashUrl: "https://unsplash.com/photos/a-dog-swims-in-a-pool-with-a-ball-rCGngXzeqzk",
+    photographer: "Helena Lopes",
+    unsplashUrl: 
+      "https://unsplash.com/photos/black-short-coated-large-dog-standing-beside-swimming-pool-during-daytime-8MCrRTq-W4U",
   },
   {
     key: "guide-red-flags",

@@ -152,17 +152,17 @@ const stockImages = {
   "guide-cabin-packing": {
     src: cabinPacking,
     card: cabinPackingCard,
-    alt: "A white dog on a leash wearing a grey and charcoal saddlebag-style pack, standing on a boulder beside a mountain lake",
+    alt: "A black, white and tan dog lying calmly in the open back of an SUV beside a packed canvas duffel bag",
   },
   "gear-car-safety": {
     src: gearCarSafety,
     card: gearCarSafetyCard,
-    alt: "A small tan dog and a small curly black dog, the black one in a harness, sitting together in a padded booster seat on the back seat of a car",
+    alt: "A beagle mix wearing a pink car harness over a sweater, sitting in a car and looking out of the window",
   },
   "gear-first-aid": {
     src: gearFirstAid,
     card: gearFirstAidCard,
-    alt: "A small fluffy white dog in a purple hoodie and yellow protective boots standing on rocks and fallen leaves on a forest trail",
+    alt: "An open orange first aid bag laid out on concrete, with bandages, gauze, tape, sprays and bottles in clear and mesh pockets",
   },
   "gear-feeding": {
     src: gearFeeding,
@@ -227,12 +227,12 @@ const stockImages = {
   "guide-no-pet-fee": {
     src: guideNoPetFee,
     card: guideNoPetFeeCard,
-    alt: "A Shiba Inu puppy peeking out of a mesh travel carrier, ready to go on a trip",
+    alt: "A curly apricot dog in a green harness standing on a wooden deck with a reed privacy screen, looking up and out",
   },
   "guide-christmas-week": {
     src: guideChristmasWeek,
     card: guideChristmasWeekCard,
-    alt: "A chocolate Labrador with a coral collar standing chest-deep in fresh snow, looking up with its mouth open in front of a snowy wood",
+    alt: "A golden retriever lying with its chin on a wooden floor, looking up softly, in front of a Christmas tree glowing with warm string lights and ornaments",
   },
   "guide-reactive-dog": {
     src: guideReactiveDog,
@@ -242,7 +242,7 @@ const stockImages = {
   "guide-pool-hot-tub": {
     src: guidePoolHotTub,
     card: guidePoolHotTubCard,
-    alt: "A dark brown and white spaniel-type dog swimming in clear turquoise pool water with a red ball in its mouth",
+    alt: "A wet dark brown Labrador standing calmly on the paved edge of a swimming pool, beside the water and not in it",
   },
   "guide-red-flags": {
     src: guideRedFlags,

@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { productTitle } from "@/lib/product-display";
+import { productNameOnly, productTitle } from "@/lib/product-display";
 import { pageHead } from "@/lib/seo";
 
 describe("shared product card and title fixes", () => {
@@ -18,5 +18,14 @@ describe("shared product card and title fixes", () => {
     const long = meta("A fairly long page title that would overflow the limit")[0]?.title ?? "";
     expect(long.length).toBeLessThanOrEqual(60);
     expect(long).not.toContain("Paws & Passage");
+  });
+  it("shows the name without the brand when the card has a brand line", () => {
+    expect(productNameOnly({ brand: "Pet Parents", name: "Pet Parents Pawtect Pads" })).toBe(
+      "Pawtect Pads",
+    );
+    expect(
+      productNameOnly({ brand: "MidWest Homes for Pets", name: "MidWest Exercise Pen with Door" }),
+    ).toBe("Exercise Pen with Door");
+    expect(productNameOnly({ brand: "Kurgo", name: "Rover Hammock" })).toBe("Rover Hammock");
   });
 });

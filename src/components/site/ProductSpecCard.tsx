@@ -18,7 +18,7 @@ import {
   type LucideIcon,
 } from "lucide-react";
 import { renderToStaticMarkup } from "react-dom/server";
-import { productTitle } from "@/lib/product-display";
+import { productNameOnly } from "@/lib/product-display";
 
 type CardProduct = {
   brand: string;
@@ -83,7 +83,7 @@ export function ProductSpecCard({
 }) {
   const { icon: Icon, tone } = styleFor(product);
   const brand = product.brand.trim();
-  const title = productTitle(product);
+  const title = productNameOnly(product);
   const chips = (product.cardSpecs ?? []).slice(0, 3);
   return (
     <div className={`speccard speccard-${tone} ${className}`.trim()} data-speccard="">

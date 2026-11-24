@@ -16,6 +16,24 @@ export function productTitle(p: { brand: string; name: string }): string {
   return `${brand} ${name}`;
 }
 
+/** The product name without its brand, for cards that already show the brand on its own line. */
+export function productNameOnly(p: { brand: string; name: string }): string {
+  const brand = p.brand.trim();
+  const name = p.name.trim();
+  if (!brand) return name;
+  const b = brand.toLowerCase();
+  const n = name.toLowerCase();
+  const strip = (prefix: string) =>
+    name
+      .slice(prefix.length)
+      .replace(/^[\s\-']+/, "")
+      .trim();
+  if (n.startsWith(`${b} `) || n.startsWith(`${b}-`)) return strip(b) || name;
+  const first = b.split(/\s+/)[0] ?? "";
+  if (first.length >= 4 && n.startsWith(`${first} `)) return strip(first) || name;
+  return name;
+}
+
 /** Short job label for a pick card when the directive gives none. */
 export const DEFAULT_PICK_LABELS: Record<GearCategorySlug, string> = {
   "car-safety": "Car safety pick",

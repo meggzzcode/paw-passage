@@ -14,3 +14,11 @@
 - The "31 official sources" chip counts forum threads; a component change (src/components) is needed to separate them. I added a note to "How sure we are".
 - docs/pinterest-pins.csv row 21 needs the new title "Vacation Rental With a Senior Dog: What to Check Before You Book" and the new description; the pin image text may need regenerating.
 - Card button contrast is a component issue.
+
+# Round 3
+- Car gear cut to one pick (seat cover, tied to leaking); ramp and side-door steps cards removed and replaced by one sentence linking the ramp-or-steps guide (both products still appear in dog-ramp-or-steps-for-the-car-and-cabin). relatedProducts now pads, bed, seat cover; sources and citations renumbered (pads 31, bed 32, cover 33). "What to buy first" now has three items.
+- "Situation" table turned into four bullets; "seriously ill" and "pack and drive" merged into one short section; both forum paragraphs cut to one sentence each; the "Before you book" checklist removed (the trip checklist is linked instead). First paragraph says "vacation rental". "Buy first" phrasing removed from the paragraphs.
+- Sources note in "How sure we are" now says 11 of the listed sources are forum threads. readingMinutes 11.
+## For the lead
+- Pawtect Pads link is still the 18x24 pack; text says so and points to larger sizes on the maker page. Header "sources cited" chip still counts forum threads (component).
+- Pin CSV row is unchanged.

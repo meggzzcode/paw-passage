@@ -13,3 +13,12 @@
 - docs/pinterest-pins.csv row 31 needs the new title "Large Dog Friendly Vacation Rentals: How to Find One That Takes Your Dog" and the new description; check the pin image text.
 - Dark-on-rust button contrast is a component issue.
 - The hero (Great Dane on a sofa) was not re-checked.
+
+# Round 3
+- H1 shortened to "Large Dog Friendly Vacation Rentals: How to Find One" (52 chars); dek now carries the one-sentence answer; gear bullet and repeated "filter is only the first screen" line cut from the short answer.
+- "Find candidates" rewritten with named starting points from cited pages and the 38-manager data: Sliding Rock Cabins and Hapey Cabin Rentals (no weight limit), Emmons Realty and Brindley Beach (highest stated limits), Hearthside (some cabins take larger dogs), Sun Palace (size filter), Vacasa, Airbnb/Vrbo, the /stays filter, plus the no-weight-limit guide. Hapey added as source 8 and citations renumbered.
+- Gear cut from four car picks to three: Kurgo Loft Wander (Large, for the rental floor) added, hammock and extra-long ramp kept; cargo cape and hitch step removed (both still appear in protect-your-car-interior and dog-ramp-or-steps). "Most people need" claim replaced; "buy first" now only in the closing list; card text no longer repeats specs.
+- readingMinutes 9. Loft Wander link is the Large (36x48); the text says so.
+## For the lead
+- Pin CSV row for this guide needs the new H1.
+- No Lucky Kennel card added (not needed here).

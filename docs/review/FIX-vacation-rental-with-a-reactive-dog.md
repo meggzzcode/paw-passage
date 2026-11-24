@@ -10,3 +10,10 @@
 - "See it at Amazon" button contrast (dark green on rust) is a component issue (src/components).
 - Ruffwear Web Master is now not in any pick here; check whether another guide carries it (the catalog rule says every active product appears somewhere).
 - The H1 is long (62 chars); the pin title may need to be shortened.
+
+# Round 3
+- Short-answer bullet 2 now numbered (1) to (4), with a link to the trigger table; the host message is linked from the short answer and moved to directly after the trigger table. Citations 7 to 13 renumbered and sources reordered to match.
+- "How sure we are" unknown table removed (the Unknown bullet stays and points to the host message). Card "why" lines rewritten as the job; "buy first" lines removed from the paragraphs (only the closing list keeps it). Window-cover advice added to the first-day plan as a host question; no product added.
+- H1 shortened to "Traveling With a Reactive Dog: Choose the Right Rental"; readingMinutes 11.
+## For the lead
+- Pin CSV row 20 should match the new H1. Ruffwear Web Master still needs a home in some other guide.

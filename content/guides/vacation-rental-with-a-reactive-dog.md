@@ -1,5 +1,5 @@
 ---
-title: "Traveling With a Reactive Dog: How to Choose a Vacation Rental"
+title: "Traveling With a Reactive Dog: Choose the Right Rental"
 seoTitle: "Traveling With a Reactive Dog: Pick the Right Rental"
 seoDescription: "Traveling with a reactive dog? Check neighbors, shared walls, sightlines and doors, send the host this message, and plan a calm first day."
 dek: Neighbors, shared walls, sightlines, doors and walking routes, what to tell the host, and a calm first day.
@@ -11,7 +11,7 @@ approvedOn: 2026-11-18
 author: Paws & Passage Editors
 publishedOn: 2026-11-18
 lastReviewed: 2026-11-24
-readingMinutes: 12
+readingMinutes: 11
 heroImage: guide-reactive-dog
 faqs:
   - q: Do I have to tell the host my dog is reactive?
@@ -66,6 +66,18 @@ sources:
     url: https://bestfriends.org/resources/managing-barrier-reactivity
     publisher: Best Friends Animal Society
     accessedOn: 2026-11-18
+  - title: About house rules
+    url: https://help.vrbo.com/articles/What-are-House-Rules
+    publisher: Vrbo
+    accessedOn: 2026-11-18
+  - title: Ground rules for home guests
+    url: https://www.airbnb.com/help/article/2894
+    publisher: Airbnb
+    accessedOn: 2026-11-18
+  - title: How do I contact a vacation rental owner or manager?
+    url: https://help.vrbo.com/articles/How-do-I-contact-a-vacation-rental-owner-or-manager
+    publisher: Vrbo
+    accessedOn: 2026-11-18
   - title: Types of places to stay
     url: https://www.airbnb.com/help/article/5
     publisher: Airbnb
@@ -81,18 +93,6 @@ sources:
   - title: "Hitting the Road: Summer Travel Tips"
     url: https://fearfreehappyhomes.com/hitting-the-road-summer-travel-tips/
     publisher: Fear Free Happy Homes
-    accessedOn: 2026-11-18
-  - title: About house rules
-    url: https://help.vrbo.com/articles/What-are-House-Rules
-    publisher: Vrbo
-    accessedOn: 2026-11-18
-  - title: Ground rules for home guests
-    url: https://www.airbnb.com/help/article/2894
-    publisher: Airbnb
-    accessedOn: 2026-11-18
-  - title: How do I contact a vacation rental owner or manager?
-    url: https://help.vrbo.com/articles/How-do-I-contact-a-vacation-rental-owner-or-manager
-    publisher: Vrbo
     accessedOn: 2026-11-18
   - title: How to Choose a Trainer
     url: https://avsab.org/wp-content/uploads/2026/08/How-to-Choose-a-Trainer-final-final.pdf
@@ -167,7 +167,7 @@ research:
   researchComplete: true
 ---
 
-Traveling with a reactive dog comes down to the rental: pick the place that gives your dog the fewest chances to meet a trigger. That means few neighbors, no shared walls, no sightlines to passersby, and a door that opens away from foot traffic. Check four things before you book, send the host the message below, and keep the behavior itself with your vet.
+Traveling with a reactive dog comes down to the rental: pick the place that gives your dog the fewest chances to meet a trigger. That means few neighbors, no shared walls, no sightlines to passersby, and a door that opens away from foot traffic. Check four things before you book, send the host the message in this guide, and keep the behavior itself with your vet.
 
 You have a dog who barks, lunges or shuts down around other dogs, people or noise, and the listing photo shows a cozy cabin with a driveway shared by four other cabins. Nothing in that picture tells you whether the first morning will be a walk or a scene.
 
@@ -176,8 +176,8 @@ A rental cannot change how your dog reacts, only how often your dog meets a trig
 ## The short answer
 
 - Pick for exposure, not looks: fewer neighbors, fewer shared walls, fewer sightlines to passersby, and a door that opens away from foot traffic.
-- Check four things before you book: what is next door, any shared wall, entrance or path, what your dog can see from the door, windows and yard, and where you will walk.
-- Send the host the message below, on the booking platform, and wait for a written answer before you pay. Airbnb says to contact the host even when a listing allows pets. [[4]](https://www.airbnb.com/help/article/86)
+- Check four things before you book: (1) what is next door, (2) any shared wall, entrance or path, (3) what your dog can see from the door, windows and yard, and (4) where you will walk. The [trigger-by-trigger table](#what-to-check-trigger-by-trigger) shows what to look for and what to ask.
+- Send the host [the message further down](#what-to-tell-the-host), on the booking platform, and wait for a written answer before you pay. Airbnb says to contact the host even when a listing allows pets. [[4]](https://www.airbnb.com/help/article/86)
 - Management is a valid way to cope: the ASPCA says avoiding upsetting situations is "a perfectly reasonable way to cope," and Cornell adds that avoidance "isn't a permanent solution." [[2]](https://www.aspcapro.org/sites/default/files/aspca-reactive-dogs-on-leash.pdf) [[3]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/health-info/managing-reactive-behavior)
 - If the behavior is new or getting worse, talk to your vet before you book (details near the end). [[5]](https://www.msdvetmanual.com/veterinary/dog-owners/behavior-of-dogs/diagnosing-behavior-problems-in-dogs)
 
@@ -189,7 +189,7 @@ So a rental with a lovely fenced yard can still be a problem if the fence is see
 
 ## What to check, trigger by trigger
 
-The table is our own checklist.
+The table is our own checklist: find your dog's trigger in the first column, then use the other two to read the listing and write your questions. The [message to the host](#what-to-tell-the-host) follows.
 
 | If your dog reacts to | Look for | Ask the host |
 | --- | --- | --- |
@@ -197,9 +197,21 @@ The table is our own checklist.
 | People at the window or gate | Opaque fencing, a screened or set-back door, curtains or blinds on the main windows | Can the front windows be covered? Do delivery people, cleaners or maintenance come to the door? |
 | Barking or noise next door | An entire place, no shared walls, ground-floor or end unit if it is an attached building | What is next door, and is it occupied at night? |
 
+## What to tell the host
+
+Describe what your dog does and what you do about it, rather than relying on the word "reactive."
+
+Airbnb's help page tells guests to tell the host about any pets they plan to bring and to ask about restrictions; the pet policy appears in the listing's house rules. [[4]](https://www.airbnb.com/help/article/86) Vrbo says hosts can set whether pets are allowed, how many, what type and any size restriction, and travelers must agree to the house rules before they book. [[7]](https://help.vrbo.com/articles/What-are-House-Rules) Airbnb's guest rules say guests should not exceed the approved number of pets or fail to tell the host about pets. [[8]](https://www.airbnb.com/help/article/2894) None of the pages mentions behavior, so what you share about it is your choice, and the point is to find a place that fits.
+
+On Vrbo you contact the host from the listing with "Contact host," and Vrbo says keeping messages and bookings on its site helps protect you from phishing and other fraud. [[9]](https://help.vrbo.com/articles/How-do-I-contact-a-vacation-rental-owner-or-manager) Here is a message you can adapt:
+
+> Hi [name], we are looking at your place for [dates]. We would be traveling with one dog, [size and age]. Our dog barks and pulls toward other dogs and strangers when they are close, and does best with space and a quiet setting. We manage this with a leash, a crate and off-peak walks, and we would like to be sure your place is a good fit before we book.
+>
+> Could you tell us: (1) what is next door, and whether those homes are rented to guests with dogs? (2) Do we share any wall, entrance, driveway or path? (3) Can the front windows be covered, and is the yard fully fenced and opaque? (4) Where do guests usually walk dogs, and when is it busiest? (5) Are there any house rules or quiet hours we should know about? Thank you.
+
 ## Neighbors, walls and the place type
 
-Start with the listing type. Airbnb says an entire place gives you the whole space to yourself and usually a separate, dedicated entrance, while a private room means sharing some spaces with others. [[7]](https://www.airbnb.com/help/article/5) For a dog that reacts to strangers, a shared room or private room is a much bigger gamble.
+Start with the listing type. Airbnb says an entire place gives you the whole space to yourself and usually a separate, dedicated entrance, while a private room means sharing some spaces with others. [[10]](https://www.airbnb.com/help/article/5) For a dog that reacts to strangers, a shared room or private room is a much bigger gamble.
 
 An entire place can still be one unit in a building, so a separate entrance is not the same as no neighbors. Look at photos and the map for shared walls, side-by-side balconies and a parking lot everyone crosses. Then ask the host plainly.
 
@@ -207,7 +219,7 @@ Search reviews for "neighbor," "thin walls," "barking" and "dog next door." One 
 
 ## Sightlines, fences and gates
 
-In our view, for many reactive dogs the view matters as much as the fence. The ASPCA says that to manage barking at passersby you need to block your dog's ability to see people and animals, and recommends secure, opaque fencing around outside areas the dog can reach. [[8]](https://www.aspca.org/pet-care/virtual-pet-behaviorist/dog-behavior/barking) Best Friends suggests covering the view with visual barriers along a fence line or closing curtains. [[6]](https://bestfriends.org/resources/managing-barrier-reactivity)
+In our view, for many reactive dogs the view matters as much as the fence. The ASPCA says that to manage barking at passersby you need to block your dog's ability to see people and animals, and recommends secure, opaque fencing around outside areas the dog can reach. [[11]](https://www.aspca.org/pet-care/virtual-pet-behaviorist/dog-behavior/barking) Best Friends suggests covering the view with visual barriers along a fence line or closing curtains. [[6]](https://bestfriends.org/resources/managing-barrier-reactivity)
 
 In the listing, look for where the dog will actually stand: the window beside the front door, the deck rail, the gate at the drive. Ask whether blinds or curtains close fully, and whether the yard is fenced on every side or only along the back. For fence height, gate gaps, latches and the driveway problem, use our [guide to checking a fenced yard](/guides/vacation-rental-secure-fenced-yard). If the yard is not fully enclosed, a [portable playpen or fence](/guides/portable-dog-fence-and-playpen-guide-for-rentals) may help, but only with the host's permission.
 
@@ -218,7 +230,7 @@ A door is where a trigger can appear with no warning, so map the routes before y
 - Which door will you use to go out, and what is in front of it: a shared path, a parking lot, the neighbors' porch?
 - Can you reach the yard or the street without passing another guest's door?
 
-Fear Free says a tight leash can make a dog feel trapped, so practice keeping slack in the leash, and to never allow another dog to approach yours. [[9]](https://www.fearfreehappyhomes.com/?p=12015) That is a lot easier when you control the doorway. Also make sure your dog's ID is current before you go: Fear Free recommends a microchip with current registration and an ID tag with your phone number and an email address. [[10]](https://fearfreehappyhomes.com/hitting-the-road-summer-travel-tips/)
+Fear Free says a tight leash can make a dog feel trapped, so practice keeping slack in the leash, and to never allow another dog to approach yours. [[12]](https://www.fearfreehappyhomes.com/?p=12015) That is a lot easier when you control the doorway. Also make sure your dog's ID is current before you go: Fear Free recommends a microchip with current registration and an ID tag with your phone number and an email address. [[13]](https://fearfreehappyhomes.com/hitting-the-road-summer-travel-tips/)
 
 ## Walking: where and when
 
@@ -226,21 +238,9 @@ Many reactive-dog owners walk when others do not. The ASPCA calls this the "midn
 
 So in a rental, ask where guests walk dogs, whether there is a quiet loop or a private trail, and when the busiest hours are.
 
-## What to tell the host
-
-Describe what your dog does and what you do about it, rather than relying on the word "reactive."
-
-Airbnb's help page tells guests to tell the host about any pets they plan to bring and to ask about restrictions; the pet policy appears in the listing's house rules. [[4]](https://www.airbnb.com/help/article/86) Vrbo says hosts can set whether pets are allowed, how many, what type and any size restriction, and travelers must agree to the house rules before they book. [[11]](https://help.vrbo.com/articles/What-are-House-Rules) Airbnb's guest rules say guests should not exceed the approved number of pets or fail to tell the host about pets. [[12]](https://www.airbnb.com/help/article/2894) None of the pages mentions behavior, so what you share about it is your choice, and the point is to find a place that fits.
-
-On Vrbo you contact the host from the listing with "Contact host," and Vrbo says keeping messages and bookings on its site helps protect you from phishing and other fraud. [[13]](https://help.vrbo.com/articles/How-do-I-contact-a-vacation-rental-owner-or-manager) Here is a message you can adapt:
-
-> Hi [name], we are looking at your place for [dates]. We would be traveling with one dog, [size and age]. Our dog barks and pulls toward other dogs and strangers when they are close, and does best with space and a quiet setting. We manage this with a leash, a crate and off-peak walks, and we would like to be sure your place is a good fit before we book.
->
-> Could you tell us: (1) what is next door, and whether those homes are rented to guests with dogs? (2) Do we share any wall, entrance, driveway or path? (3) Can the front windows be covered, and is the yard fully fenced and opaque? (4) Where do guests usually walk dogs, and when is it busiest? (5) Are there any house rules or quiet hours we should know about? Thank you.
-
 ## Noise, house rules and quiet hours
 
-Barking is something a neighbor can complain about. Airbnb's guest rules ask guests to "respect designated quiet hours and should not disturb the surrounding community," say Airbnb accepts reports from neighbors, and say repeated or severe violations can lead to suspension or removal. [[12]](https://www.airbnb.com/help/article/2894) Vrbo's house-rules page says hosts can set up to 3 custom rules, and it does not mention noise or quiet hours. [[11]](https://help.vrbo.com/articles/What-are-House-Rules)
+Barking is something a neighbor can complain about. Airbnb's guest rules ask guests to "respect designated quiet hours and should not disturb the surrounding community," say Airbnb accepts reports from neighbors, and say repeated or severe violations can lead to suspension or removal. [[8]](https://www.airbnb.com/help/article/2894) Vrbo's house-rules page says hosts can set up to 3 custom rules, and it does not mention noise or quiet hours. [[7]](https://help.vrbo.com/articles/What-are-House-Rules)
 
 Read the house rules before you book: pet limits, furniture rules, quiet hours, and anything about leaving a dog alone (see our guide to [leaving a dog alone in a rental](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental)).
 
@@ -250,14 +250,14 @@ You will not change your dog's reactions in a day, but you can avoid practicing 
 
 1. **Arrive at a quiet time** and, if you can, look at the doors and the yard yourself before you bring the dog in.
 2. **Choose the quiet room** before you unload. Best Friends suggests moving a dog to another room before guests arrive and offering a long-lasting treat or calming music. [[6]](https://bestfriends.org/resources/managing-barrier-reactivity)
-3. **Cover the windows** that face the drive or a neighbor. [[6]](https://bestfriends.org/resources/managing-barrier-reactivity)
+3. **Cover the windows** that face the drive or a neighbor. [[6]](https://bestfriends.org/resources/managing-barrier-reactivity) Ask the host first whether you may close the blinds or hang a sheet; your own cover is a host question, not a purchase.
 4. **Keep the first walks short** and at off-peak hours, as the ASPCA describes, on the route you checked. [[2]](https://www.aspcapro.org/sites/default/files/aspca-reactive-dogs-on-leash.pdf)
-5. **Do not force greetings.** Fear Free says forcing social interactions with a leash-reactive dog will create more anxiety. [[9]](https://www.fearfreehappyhomes.com/?p=12015)
-6. **Watch for stress.** Fear Free lists a crouched position, tucked tail, raised hackles, pinned ears or a wide-eyed look, and says anxious or overheated dogs may pant. [[10]](https://fearfreehappyhomes.com/hitting-the-road-summer-travel-tips/)
+5. **Do not force greetings.** Fear Free says forcing social interactions with a leash-reactive dog will create more anxiety. [[12]](https://www.fearfreehappyhomes.com/?p=12015)
+6. **Watch for stress.** Fear Free lists a crouched position, tucked tail, raised hackles, pinned ears or a wide-eyed look, and says anxious or overheated dogs may pant. [[13]](https://fearfreehappyhomes.com/hitting-the-road-summer-travel-tips/)
 
 ## When to talk to a vet or a veterinary behaviorist
 
-We suggest talking to your vet if the behavior is new, has gotten worse, or involves fear or aggression. The MSD Veterinary Manual says the veterinarian will first need to rule out health problems, and lists the AVSAB Find a Consultant tool and the American College of Veterinary Behaviorists among sources of help; the page does not itself say when to call. [[5]](https://www.msdvetmanual.com/veterinary/dog-owners/behavior-of-dogs/diagnosing-behavior-problems-in-dogs) AVSAB says that when fear, anxiety or aggression are occurring, contact a veterinarian with advanced behavior knowledge, a veterinary behaviorist (DACVB), or a credentialed behavior consultant. [[14]](https://avsab.org/wp-content/uploads/2026/08/How-to-Choose-a-Trainer-final-final.pdf) Fear Free says that if there is a safety concern for you, your dog, other animals or other people, avoid walking your dog and contact a qualified behavior specialist. [[9]](https://www.fearfreehappyhomes.com/?p=12015)
+We suggest talking to your vet if the behavior is new, has gotten worse, or involves fear or aggression. The MSD Veterinary Manual says the veterinarian will first need to rule out health problems, and lists the AVSAB Find a Consultant tool and the American College of Veterinary Behaviorists among sources of help; the page does not itself say when to call. [[5]](https://www.msdvetmanual.com/veterinary/dog-owners/behavior-of-dogs/diagnosing-behavior-problems-in-dogs) AVSAB says that when fear, anxiety or aggression are occurring, contact a veterinarian with advanced behavior knowledge, a veterinary behaviorist (DACVB), or a credentialed behavior consultant. [[14]](https://avsab.org/wp-content/uploads/2026/08/How-to-Choose-a-Trainer-final-final.pdf) Fear Free says that if there is a safety concern for you, your dog, other animals or other people, avoid walking your dog and contact a qualified behavior specialist. [[12]](https://www.fearfreehappyhomes.com/?p=12015)
 
 The same AVSAB sheet lists leash jerks, prong or shock collars and "alpha" language as red flags in a trainer. [[14]](https://avsab.org/wp-content/uploads/2026/08/How-to-Choose-a-Trainer-final-final.pdf) We do not recommend any medication here; that is a conversation for your vet.
 
@@ -265,17 +265,17 @@ The same AVSAB sheet lists leash jerks, prong or shock collars and "alpha" langu
 
 A few items do real work on the first day, and each one matches a trigger on your list. None changes the behavior, and none is needed to book: buy after the host has said yes. If a trigger is not on your list, skip the item.
 
-**For a crate-trained dog: the quiet room starts here.** If your dog already settles in a crate at home, bring it. It turns any corner of the rental into the quiet room before you unload, so the first hour is not spent hunting for a spot away from the windows. The MidWest iCrate comes in seven sizes from 18 to 48 in, and the divider panel and removable leak-proof pan are included; the maker says it folds flat. [[15]](https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/) A wire crate is open on the sides, so it does not block the view: drape a cover over it or face it to a wall. The page gives no wire gauge or folded dimensions, so check both before it goes in a small trunk. Skip it if your dog has never used a crate, and do not try one for the first time on arrival day. This is the one to buy first if your dog already sleeps in a crate at home.
+**For a crate-trained dog: the quiet room starts here.** If your dog already settles in a crate at home, bring it. It turns any corner of the rental into the quiet room before you unload, so the first hour is not spent hunting for a spot away from the windows. The MidWest iCrate comes in seven sizes from 18 to 48 in, and the divider panel and removable leak-proof pan are included; the maker says it folds flat. [[15]](https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/) A wire crate is open on the sides, so it does not block the view: drape a cover over it or face it to a wall. The page gives no wire gauge or folded dimensions, so check both before it goes in a small trunk. Skip it if your dog has never used a crate, and do not try one for the first time on arrival day.
 
-{{pick:midwest-icrate-dog-crate|For a crate-trained dog|The maker lists seven sizes from 18 to 48 in, an included divider panel, a removable pan and a flat fold.|https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/}}
+{{pick:midwest-icrate-dog-crate|For a crate-trained dog|A crate you already use turns any corner into the quiet room; the maker lists seven sizes from 18 to 48 in, a divider panel and a flat fold.|https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/}}
 
-**For the front-door hallway: a barrier before the door opens.** If your list says the door is where trouble starts, a gate across the hallway keeps the dog back while you take a delivery or let in a cleaner. The North States MyPet Universal Petgate is 26 in high and adjusts to openings 26 to 42 in wide, and it mounts by pressure with no tools; the maker says hardware mounting is optional, to use the wall cups, and never to use it at the top of a stairway when held only by tension. [[16]](https://northstatesind.com/north-states-mypet-universal-petgate/) It is a barrier, not a wall: at 26 in it will not stop a dog that can jump it, and it does not block the view. Skip it if the rental has no hallway to gate or your dog clears 26 in; ask the host before using hardware mounting. Buy it first if the front door is the problem on your list and your dog stays behind a barrier at home.
+**For the front-door hallway: a barrier before the door opens.** If your list says the door is where trouble starts, a gate across the hallway keeps the dog back while you take a delivery or let in a cleaner. The North States MyPet Universal Petgate is 26 in high and adjusts to openings 26 to 42 in wide, and it mounts by pressure with no tools; the maker says hardware mounting is optional, to use the wall cups, and never to use it at the top of a stairway when held only by tension. [[16]](https://northstatesind.com/north-states-mypet-universal-petgate/) It is a barrier, not a wall: at 26 in it will not stop a dog that can jump it, and it does not block the view. Skip it if the rental has no hallway to gate or your dog clears 26 in; ask the host before using hardware mounting. It suits a dog that already stays behind a barrier at home.
 
-{{pick:north-states-mypet-universal-petgate|For the front-door hallway|The maker lists a 26 in high gate for 26 to 42 in openings that mounts by pressure or with hardware.|https://northstatesind.com/north-states-mypet-universal-petgate/}}
+{{pick:north-states-mypet-universal-petgate|For the front-door hallway|A 26 in barrier so the dog stays back while the door is open; it does not block the view. The maker lists openings of 26 to 42 in.|https://northstatesind.com/north-states-mypet-universal-petgate/}}
 
 **To keep busy behind the cover: something to work on.** Best Friends suggests a long-lasting treat when you move a dog to another room. The KONG Classic is a stuffable natural rubber toy in six size bands from XS (up to 5 lb) to XXL (85 lb and up), so you can match it to your dog's weight; the maker says supervised use only and that no toy is indestructible. [[17]](https://www.kongcompany.com/kong-classic/) Stuff it before a delivery or a neighbor's arrival, so the dog is busy before the trigger appears. Skip it if your dog ignores food toys. If your dog already works a stuffed KONG at home, pack it: it is the easiest item here to rehearse before the trip.
 
-{{pick:kong-classic|To keep busy behind the cover|The maker publishes six sizes by dog weight, from XS up to 5 lb to XXL 85+ lb, and says supervised use only.|https://www.kongcompany.com/kong-classic/}}
+{{pick:kong-classic|To keep busy behind the cover|Something to work on while a trigger passes; sized by dog weight from XS (up to 5 lb) to XXL (85 lb and up), supervised use only.|https://www.kongcompany.com/kong-classic/}}
 
 ### What to buy first
 
@@ -290,14 +290,7 @@ Skip any of them if the dog has never used it, and do not try new gear for the f
 
 - **Confirmed by a source we cite:** the advice on avoiding triggers, blocking views, off-peak walks and professional help comes from the ASPCA, Cornell, Humane Colorado, Best Friends, Fear Free, MSD Veterinary Manual and AVSAB. The platform wording comes from Airbnb and Vrbo help pages read 2026-11-18. The gear specs come from the makers' pages, read 2026-11-18.
 - **What most people report:** we do not use community reports on this page.
-- **Unknown:** what any particular host will accept, how thin a given wall is, what is next door, and whether a platform would act on a noise complaint about your stay. Ask the host, and check the table below.
-
-| Unknown | Check for yourself |
-| --- | --- |
-| Whether the walls or floors are shared with another unit | Ask the host and read reviews for "thin walls" or "neighbors" |
-| What is next door and whether it is rented to guests with dogs | Ask the host before booking |
-| Whether the host will accept your dog once told about its behavior | Send the message above and wait for a written answer |
-| Whether your dog's behavior calls for a professional | Ask your vet |
+- **Unknown:** what any particular host will accept, how thin a given wall is, what is next door, and whether a platform would act on a noise complaint about your stay. Ask the host, in writing, using the message above.
 
 ## A clear next step
 

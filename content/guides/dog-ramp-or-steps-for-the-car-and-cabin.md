@@ -2,7 +2,7 @@
 title: "Dog Ramp for Car or SUV: Ramp or Steps for a Big Dog?"
 seoTitle: "Dog Ramp for Car or SUV: Ramp vs Steps, Compared"
 seoDescription: "Dog ramp for car or SUV? Compare five PetSafe ramps and steps by maker weight rating and reach, measure your vehicle, and see what vets say."
-dek: Your big or older dog can no longer hop into the car. Compare ramps and steps on maker specs, measure your vehicle, and plan for cabin stairs.
+dek: "Most cars and SUVs suit a telescoping ramp, and steps only suit a fixed door sill or hitch. Measure ground to floor and match ramp length to it."
 category: Planning
 states: []
 status: published
@@ -11,7 +11,7 @@ approvedOn: 2026-11-18
 author: Paws & Passage Editors
 publishedOn: 2026-11-18
 lastReviewed: 2026-11-24
-readingMinutes: 8
+readingMinutes: 6
 heroImage: guide-ramp-steps
 faqs:
   - q: Is a ramp or steps better for getting a dog into a car?
@@ -152,43 +152,39 @@ research:
   researchComplete: true
 ---
 
-If your dog used to leap into the back of the car and now stops at the bumper and looks at you, a dog ramp for the car is the usual fix. This guide compares five PetSafe ramps and steps on the numbers their makers publish, shows how to measure your vehicle, and says what the vet and kennel-club pages we read say about jumping.
+If your dog stops at the bumper and looks at you, a ramp is usually the fix, and the vet and kennel-club pages we read lean the same way. Pick one rated above your dog's weight, with side rails, a non-slip surface and a gentle slope for your vehicle's height. Ask your vet before buying if your dog is stiff or sore.
 
-**What to buy:** for a vehicle, the veterinary and kennel-club pages we read lean toward a ramp. Get one rated above your dog's weight, with side rails and a non-slip surface, long enough that the slope is gentle for your vehicle's height, and light enough for you to lift in and out. In short: a telescoping ramp such as the Compact (28 to 70 in) or Extra Long (47 to 87 in) PetSafe ramp suits most cars and SUVs by the maker's figures; steps only suit a fixed door sill or a 2 in hitch. Measure first, since the same ramp can be a gentle slope on a low car and too steep for a tall truck. Ask your vet before buying if your dog has stiffness or pain.
+> **At a glance: our picks**
+>
+> - **Tight trunk, floor about 20 to 22 in:** PetSafe Happy Ride Compact Telescoping Ramp, 28 to 70 in, 300 lb maker rating.
+> - **Tall SUV or truck, or a heavy dog:** Extra Long Telescoping Ramp, 47 to 87 in, 300 lb.
+> - **Small dog, low floor, lightest carry:** Folding Ramp, 62 in, 10 lb, 150 lb rating.
+> - **Same fixed door sill every time:** Side Door Pet Steps, set at 21.25, 24.75 or 28 in, 200 lb.
+> - **Truck or SUV with a 2 in hitch:** Dog Hitch Step, 200 lb.
 
-- **Ramps are the usual pick for cars.** AKC says ramps suit car use because they are easier to fold and often lighter than quality dog stairs. [[1]](https://www.akc.org/expert-advice/health/general-health/dog-stairs-and-ramps/)
-- **Steps suit a fixed-height door.** The PetSafe Side Door Steps list three set heights.
-- **Weight ratings differ a lot.** The five products here run from 150 lb to 300 lb, as the makers state.
+**Before you buy**
 
-## Buying checklist
-
-1. **A weight rating above your dog's weight.** AKC says to check the weight limit before buying. [[1]](https://www.akc.org/expert-advice/health/general-health/dog-stairs-and-ramps/)
-2. **Side rails and a non-slip surface.** AKC suggests a barrier on at least one side. [[1]](https://www.akc.org/expert-advice/health/general-health/dog-stairs-and-ramps/)
-3. **Length for your height.** Measure ground to floor, then use the arithmetic below; a longer ramp gives a gentler slope.
-4. **A weight you can carry** and a collapsed or folded size that fits your trunk.
-5. **A rating that names its tester,** or a note that it does not; the pages we read name none.
-6. **A flat, stable place to lay it** behind or beside the vehicle.
-7. **For a stiff or sore dog,** AKC says a ramp lets you begin at a low angle and raise it gradually; ask your vet first. [[1]](https://www.akc.org/expert-advice/health/general-health/dog-stairs-and-ramps/)
+- AKC says ramps suit car use because they are easier to fold and often lighter than quality dog stairs, and to check the weight limit before buying. [[1]](https://www.akc.org/expert-advice/health/general-health/dog-stairs-and-ramps/)
+- The five products here run from 150 lb to 300 lb, as the makers state. Their ratings are not independently confirmed: the pages say tested and name no tester.
+- The same ramp can be a gentle slope on a low car and too steep for a tall truck, so measure first.
 
 ## Dog ramp specs side by side
 
-Every figure below is what the maker's page said on 2026-11-18, read that day. The ratings are the makers' statements. The three ramp pages say the rating was independently tested and name no tester, and the two steps pages say nothing about testing. [[7]](https://www.petsafe.com/p/happy-ride-folding-dog-ramp/62462/) [[8]](https://www.petsafe.com/p/happy-ride-extra-long-telescoping-dog-ramp/62320/) [[9]](https://www.petsafe.com/p/happy-ride-side-door-pet-steps/ZTV00-17464/) [[10]](https://www.petsafe.com/p/happy-ride-dog-hitch-step/62430/) [[6]](https://petsafe.com/product/happy-ride-compact-telescoping-dog-ramp)
+Every figure is what the maker's page said on 2026-11-18. The three ramp pages say the rating was independently tested and name no tester; the two steps pages say nothing about testing. [[6]](https://petsafe.com/product/happy-ride-compact-telescoping-dog-ramp) [[7]](https://www.petsafe.com/p/happy-ride-folding-dog-ramp/62462/) [[8]](https://www.petsafe.com/p/happy-ride-extra-long-telescoping-dog-ramp/62320/) [[9]](https://www.petsafe.com/p/happy-ride-side-door-pet-steps/ZTV00-17464/) [[10]](https://www.petsafe.com/p/happy-ride-dog-hitch-step/62430/)
 
 | Product | Maker's weight rating | Size as listed | Weight | Height or incline stated | Other maker details |
 | --- | --- | --- | --- | --- | --- |
-| Happy Ride Folding Dog Ramp [[7]](https://www.petsafe.com/p/happy-ride-folding-dog-ramp/62462/) | 150 lb | 62 x 16 x 4 in | 10 lb | No incline stated; no vehicle height given | Folds in half, safety latch, side rails; folded size not listed |
 | Happy Ride Compact Telescoping Dog Ramp [[6]](https://petsafe.com/product/happy-ride-compact-telescoping-dog-ramp) | 300 lb | 28 to 70 in long; width and height not stated on the page | 14 lb | No incline stated; collapses to 28 in | High-traction surface, rubber feet, side rails |
+| Happy Ride Folding Dog Ramp [[7]](https://www.petsafe.com/p/happy-ride-folding-dog-ramp/62462/) | 150 lb | 62 x 16 x 4 in | 10 lb | No incline stated; no vehicle height given | Folds in half, safety latch, side rails; folded size not listed |
 | Happy Ride Extra Long Telescoping Dog Ramp [[8]](https://www.petsafe.com/p/happy-ride-extra-long-telescoping-dog-ramp/62320/) | 300 lb | 47 to 87 x 20 x 4 in | 18 lb | No incline stated; "to reach your tallest vehicles" | Aluminum, slides closed and locks, side rails |
 | Happy Ride Side Door Pet Steps [[9]](https://www.petsafe.com/p/happy-ride-side-door-pet-steps/ZTV00-17464/) | 200 lb | 44.9 x 18.2 x 8 in | 13 lb | Three heights: 21.25, 24.75 and 28 in | Textured steps, side rails, folds, handle; attachment not described |
 | Happy Ride Dog Hitch Step [[10]](https://www.petsafe.com/p/happy-ride-dog-hitch-step/62430/) | 200 lb | 20 x 18 x 12 in | Not stated | No numbers; "adjusts to fit the height of your truck or SUV" | Fits any 2 in hitch, folds; calls itself an alternative to ramps |
 
-Every ramp here is PetSafe because that is the maker whose pages we researched for the figures above; other makers exist, and the same checklist and arithmetic apply. Three things stand out. The Extra Long telescoping ramp has the longest reach and is the heaviest at 18 lb. The folding ramp is the lightest at 10 lb with the lowest rating, so it suits a smaller dog. And the steps and hitch step only work if your vehicle matches: the steps need a door sill near one of three heights, and the hitch step needs a 2 in hitch. Prices are left out because they change; check the maker's page.
-
 ## How steep should a dog ramp be? The arithmetic
 
-None of the five pages states an incline. Petful, citing a dog behaviorist, gives a target of about 18 to 20 degrees, which is one person's figure rather than a veterinary standard. [[11]](https://www.petful.com/pet-products/dog-ramp-for-car) CARE says only that a car ramp must not be too steep. [[3]](https://caninearthritis.org/?p=2503)
+None of the five pages states an incline. Petful, citing a dog behaviorist, gives about 18 to 20 degrees, which is one person's figure, not a veterinary standard. [[11]](https://www.petful.com/pet-products/dog-ramp-for-car) CARE says only that a car ramp must not be too steep. [[3]](https://caninearthritis.org/?p=2503)
 
-If you want a number to test against, simple geometry gives the height a ramp reaches at a chosen angle: ramp length times the sine of the angle. This table is our own arithmetic on the listed lengths, rounded to whole inches, and is not a maker claim.
+Simple geometry gives the height a ramp reaches at a chosen angle: length times the sine of the angle. This table is our arithmetic on the listed lengths, rounded to whole inches, not a maker claim.
 
 | Ramp length (maker's listing) | Height reached at 18 degrees | Height reached at 20 degrees |
 | --- | --- | --- |
@@ -196,8 +192,6 @@ If you want a number to test against, simple geometry gives the height a ramp re
 | 62 in (Folding) | about 19 in | about 21 in |
 | 70 in (Compact, fully extended) | about 22 in | about 24 in |
 | 87 in (Extra Long, fully extended) | about 27 in | about 30 in |
-
-Read it the other way: if your cargo floor sits 24 in off the ground, the 62 in ramp reaches that only at a steeper angle than 20 degrees, while the Extra Long ramp extended gets there at a gentler one. Length matters more than the weight rating once your dog is under the limit.
 
 ### A quick decision shortcut (our arithmetic from maker lengths)
 
@@ -211,59 +205,53 @@ Read it the other way: if your cargo floor sits 24 in off the ground, the 62 in 
 
 ## Measure the vehicle before you buy
 
-1. **Ground to the surface your dog must reach.** Measure to the cargo floor, seat edge or door sill, at the spot where you will actually park, with the vehicle loaded as usual. A curb or a slope changes the number.
-2. **Space for the slope.** Ramp length is measured along the slope, so you also need clear ground behind or beside the vehicle. Check you can lay it flat on a stable surface; AKC says to place a ramp or stairs on a stable surface so they do not wobble. [[1]](https://www.akc.org/expert-advice/health/general-health/dog-stairs-and-ramps/)
-3. **Your dog's weight, from a scale or your vet.** Compare it with the rating. AKC says to check the weight limit before buying, because a flimsy ramp could break under a large dog. [[1]](https://www.akc.org/expert-advice/health/general-health/dog-stairs-and-ramps/)
-4. **Width and sides.** AKC says stairs that are too narrow can make a dog lose confidence or fall off the side, and suggests placing a ramp or stairs where there is a barrier on at least one side. [[1]](https://www.akc.org/expert-advice/health/general-health/dog-stairs-and-ramps/)
-5. **Hitch and door, if you are considering steps.** For the hitch step, confirm a 2 in hitch. For the side door steps, compare your sill height with 21.25, 24.75 and 28 in. Matching the top step near the sill is our reasoning, not the maker's instruction.
-6. **Carry and store.** The folding ramp is listed at 10 lb, the Compact at 14 lb and the Extra Long at 18 lb. Can you lift it in and out one-handed at a gas stop?
+1. **Ground to the surface your dog must reach.** Measure to the cargo floor, seat edge or door sill, where you will actually park, with the vehicle loaded as usual.
+2. **Space for the slope.** Ramp length runs along the slope, so you need clear ground behind or beside the vehicle. AKC says to place a ramp on a stable surface so it does not wobble. [[1]](https://www.akc.org/expert-advice/health/general-health/dog-stairs-and-ramps/)
+3. **Your dog's weight, from a scale or your vet,** compared with the rating. Lift test: can you carry it in and out one-handed at a gas stop?
+4. **Hitch and door, if you are considering steps.** Confirm a 2 in hitch, or compare your sill height with 21.25, 24.75 and 28 in. Matching the top step to the sill is our reasoning, not the maker's instruction.
 
 Introduce the ramp at home first: VCA says most dogs can quickly learn to use ramps. [[4]](https://vcahospitals.com/know-your-pet/helping-your-dog-with-osteoarthritis) A dog who wobbles on it is a sign to call your vet, not to push on.
 
 ## Which dog ramp or steps to buy
 
-You now have two numbers, your cargo-floor height and your dog's weight. Match them to the product below. These are the maker's figures, not our tests, and each paragraph says who can skip it.
+**For a tight trunk, the Compact.** The Happy Ride Compact Telescoping Dog Ramp collapses to 28 inches, extends to 70, weighs 14 lb and carries the maker's 300 lb rating. [[6]](https://petsafe.com/product/happy-ride-compact-telescoping-dog-ramp) At full length it reaches about 22 inches at 18 degrees by our arithmetic. Start here if your cargo floor is about 20 to 22 inches. Skip it if your floor is taller than about 22 inches, because the slope gets steep.
 
-**For a tight trunk or a lighter carry, the Compact.** The Happy Ride Compact Telescoping Dog Ramp collapses to 28 inches, extends to 70, weighs 14 lb and carries the maker's 300 lb rating, so it takes little trunk room when closed. [[6]](https://petsafe.com/product/happy-ride-compact-telescoping-dog-ramp) At full length it reaches about 22 inches at 18 degrees by our arithmetic above. This is the one to start with if your cargo floor is about 20 to 22 inches and trunk space is short. Skip it if your floor is taller than about 22 inches, because the slope gets steep.
+{{pick:petsafe-happy-ride-compact-telescoping-ramp|Collapses to 28 in, 300 lb maker rating|28 to 70 in extended, 28 in collapsed, 14 lb, 300 lb rating the maker calls independently tested (no tester named).|https://petsafe.com/product/happy-ride-compact-telescoping-dog-ramp}}
 
-{{pick:petsafe-happy-ride-compact-telescoping-ramp|Collapses to 28 in, 300 lb maker rating|The maker lists 28 to 70 in extended, 28 in collapsed, 14 lb and a 300 lb rating it calls independently tested (no tester named); check your vehicle height against the 70 in maximum.|https://petsafe.com/product/happy-ride-compact-telescoping-dog-ramp}}
+**For a tall SUV or truck, the Extra Long.** It runs 47 to 87 inches, is made of aluminum, and the maker says it supports 300 lb. At full length it reaches about 27 inches at 18 degrees, the gentlest slope of the ramps here for a tall floor. [[8]](https://www.petsafe.com/p/happy-ride-extra-long-telescoping-dog-ramp/62320/) At 18 lb you are trading an easier carry for a gentler slope. Start here if your floor is 23 inches or higher or your dog is heavy. Skip it if you cannot lift 18 lb or have no room behind the vehicle for up to 87 inches.
 
-**For a tall SUV or truck, the Extra Long.** The Extra Long Telescoping Dog Ramp runs 47 to 87 inches, is made of aluminum, and the maker says it supports 300 lb. At full length it reaches about 27 inches at 18 degrees, which gives a tall floor the gentlest slope of the ramps here. [[8]](https://www.petsafe.com/p/happy-ride-extra-long-telescoping-dog-ramp/62320/) It weighs 18 lb, so you are choosing a gentler slope over an easier carry. Start here if your floor is 23 inches or higher or your dog is heavy. Skip it if you cannot lift 18 lb or have no room behind the vehicle for up to 87 inches.
+{{pick:petsafe-happy-ride-extra-long-ramp|Longest reach: 47 to 87 in, 300 lb rating|47 to 87 in, aluminum, 18 lb, 300 lb rating, a latch that locks it closed.|https://www.petsafe.com/p/happy-ride-extra-long-telescoping-dog-ramp/62320/}}
 
-{{pick:petsafe-happy-ride-extra-long-ramp|Longest reach: 47 to 87 in, 300 lb rating|The maker lists 47 to 87 in long, aluminum, 18 lb, a 300 lb rating it calls independently tested, and a latch that locks it closed; it does not describe it as a senior product.|https://www.petsafe.com/p/happy-ride-extra-long-telescoping-dog-ramp/62320/}}
+**For a smaller dog and the lightest carry, the Folding Ramp.** It is 62 inches long, weighs 10 lb and folds in half with a safety latch; the maker rates it to 150 lb. [[7]](https://www.petsafe.com/p/happy-ride-folding-dog-ramp/62462/) It reaches about 19 inches at 18 degrees by our arithmetic. Choose it if your dog is well under 150 lb and your floor is low. Skip it for a heavy dog or a tall vehicle, and check the page before counting on the folded size, which is not listed.
 
-**For a smaller dog and the lightest carry, the Folding Ramp.** The Happy Ride Folding Dog Ramp is 62 inches long, weighs 10 lb and folds in half with a safety latch, and the maker rates it to 150 lb. [[7]](https://www.petsafe.com/p/happy-ride-folding-dog-ramp/62462/) It has side rails and a high-traction surface, and it reaches about 19 inches at 18 degrees by our arithmetic. Choose it if your dog is well under 150 lb and your floor is low. Skip it for a heavy dog or a tall vehicle; the folded size is not listed, so check the page before you count on it fitting.
+{{pick:petsafe-happy-ride-folding-ramp|Lightest ramp here: 10 lb, 150 lb rating|62 x 16 x 4 in, 10 lb, side rails and a safety latch; folded size not listed.|https://www.petsafe.com/p/happy-ride-folding-dog-ramp/62462/}}
 
-{{pick:petsafe-happy-ride-folding-ramp|Lightest ramp here: 10 lb, 150 lb rating|The maker lists 62 x 16 x 4 in, 10 lb, a 150 lb rating it calls independently tested (no tester named), side rails and a safety latch; the folded size is not listed.|https://www.petsafe.com/p/happy-ride-folding-dog-ramp/62462/}}
+**For a door the dog always uses, the Side Door Steps.** They set at 21.25, 24.75 or 28 inches, with side rails, textured steps and a 200 lb maker rating. [[9]](https://www.petsafe.com/p/happy-ride-side-door-pet-steps/ZTV00-17464/) They suit a dog that will climb steps, not one that needs a gentle slope; ask your vet which fits. Skip them if your sill is far from those three heights; the page does not say how the steps attach to a vehicle.
 
-**For a door the dog always uses, the Side Door Steps.** If the dog always climbs in the same door, the Happy Ride Side Door Pet Steps set at 21.25, 24.75 or 28 inches, with side rails, textured steps and a 200 lb maker rating. [[9]](https://www.petsafe.com/p/happy-ride-side-door-pet-steps/ZTV00-17464/) It suits a dog that will climb steps, not one that needs a gentle slope; ask your vet which fits. Start here if your sill is within those three heights. Skip it if your sill is far from them; the page does not say how the steps attach to a vehicle.
+{{pick:petsafe-happy-ride-side-door-steps|Steps at 21.25, 24.75 or 28 in, 200 lb rating|Three heights, side rails, textured steps, a built-in handle; attachment not described.|https://www.petsafe.com/p/happy-ride-side-door-pet-steps/ZTV00-17464/}}
 
-{{pick:petsafe-happy-ride-side-door-steps|Steps at 21.25, 24.75 or 28 in, 200 lb rating|The maker lists three heights (21.25, 24.75, 28 in), side rails, textured steps, a built-in handle and a 200 lb rating; the page does not say how it attaches.|https://www.petsafe.com/p/happy-ride-side-door-pet-steps/ZTV00-17464/}}
+**For a truck or SUV that already has a hitch, the Hitch Step.** It installs on a 2 inch hitch, adjusts to the height of a truck or SUV, and the maker says it supports 200 lb. [[10]](https://www.petsafe.com/p/happy-ride-dog-hitch-step/62430/) It stays on the vehicle, so there is nothing to lift out at a gas stop, and the steps swivel to fold up and lock. It measures 20 by 18 by 12 inches with traction on each tread. Skip it if you have no 2 inch hitch or your dog needs a gentle slope. The page gives no adjustment range, so ask the maker with your hitch height before you buy.
 
-**For a truck or SUV that already has a hitch, the Hitch Step.** The PetSafe Happy Ride Dog Hitch Step installs on a 2 inch hitch, adjusts to the height of a truck or SUV, and the maker says it supports 200 lb. [[10]](https://www.petsafe.com/p/happy-ride-dog-hitch-step/62430/) It stays on the vehicle, so there is nothing to lift out at a gas stop, and both steps swivel to fold up and lock. It measures 20 by 18 by 12 inches and has traction on each tread. It suits a dog that will climb steps and a driver who wants no ramp to carry. Skip it if you have no 2 inch hitch, if your dog needs a gentle slope, or if you need a number for how high it reaches, because the page gives no adjustment range; ask the maker with your hitch height before you buy.
-
-{{pick:petsafe-happy-ride-hitch-step|For a truck or SUV with a 2 in hitch: steps that stay on the vehicle|The maker lists 20 x 18 x 12 in, a 200 lb rating, a 2 in hitch fit, traction on each tread and steps that swivel to fold and lock; it gives no height range and does not call it a senior product.|https://www.petsafe.com/p/happy-ride-dog-hitch-step/62430/}}
+{{pick:petsafe-happy-ride-hitch-step|For a truck or SUV with a 2 in hitch|20 x 18 x 12 in, 200 lb rating, 2 in hitch fit, traction on each tread; no height range given.|https://www.petsafe.com/p/happy-ride-dog-hitch-step/62430/}}
 
 ## Stairs at the cabin or rental
 
-A vehicle ramp solves the car. A cabin has its own problem: porch steps, an upstairs bedroom, a deck with no rail. This is where the rental host comes in.
+A vehicle ramp solves the car. A cabin has its own problem: porch steps, an upstairs bedroom, a deck with no rail.
 
-- **Count and measure before you book.** Ask for photos of the route from the parking spot to the door, the number of steps and whether there is a rail. Our [senior dog rental guide](/guides/vacation-rental-with-a-senior-dog) has a longer checklist and a message to send.
-- **Do not assume your ramp fits.** None of the five maker pages mentions house steps. Nothing the makers say tells you a car ramp is meant for porch stairs, and a host may have rules about what goes on a deck.
-- **Block stairs when you cannot watch.** VCA suggests preventing access to stairs when no one is available to supervise, with a baby gate. [[4]](https://vcahospitals.com/know-your-pet/helping-your-dog-with-osteoarthritis) VCA says better traction helps a dog move more confidently, and Cornell suggests non-slip rugs. [[4]](https://vcahospitals.com/know-your-pet/helping-your-dog-with-osteoarthritis) [[5]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/osteoarthritis)
+- **Count and measure before you book.** Ask for photos of the route from the parking spot to the door, the number of steps and whether there is a rail. Our [senior dog rental guide](/guides/vacation-rental-with-a-senior-dog) has a longer checklist.
+- **Do not assume your ramp fits.** None of the five maker pages mentions house steps, and a host may have rules about what goes on a deck.
+- **Block stairs when you cannot watch.** VCA suggests preventing access to stairs with a baby gate when no one can supervise, and says better traction helps a dog move more confidently; Cornell suggests non-slip rugs. [[4]](https://vcahospitals.com/know-your-pet/helping-your-dog-with-osteoarthritis) [[5]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/osteoarthritis)
 - **A ground-floor sleeping spot is the simplest fix.** That is our suggestion, not a source's.
-
-Hypothetical, with round numbers: three porch steps of 7 in each make a 21 in rise. At the 20 degree figure, that needs a slope about 61 in long (21 divided by the sine of 20 degrees). Whether a ramp can safely lie against real steps is for the host and the maker to answer; none of the five maker pages covers it.
 
 Message to a host: "Hi [name], we are booking [dates] with one [size] dog who finds steps hard. Could you tell us how many steps lead to the door and bedroom, whether there is a rail, and send a photo? May we lay a portable ramp or non-slip mat on the porch steps? Thank you."
 
-## What vet and kennel-club sources say about jumping and stairs
+## What vet and kennel-club sources say
 
-We are not vets, and this is not a diagnosis or advice for your dog. These are the statements we read.
+We are not vets, and this is not advice for your dog. These are the statements we read.
 
-AKC lists arthritic dogs, back-prone breeds and large dogs that struggle with car access among the dogs that benefit from stairs or a ramp, and notes that, unlike stairs, a ramp lets you begin with a low angle and raise it gradually. [[1]](https://www.akc.org/expert-advice/health/general-health/dog-stairs-and-ramps/) PetMD, in a piece written by a veterinarian, says a ramp is recommended over stairs for dogs with arthritis or other joint or back conditions, and that medium and large dogs may prefer ramps. [[2]](https://www.petmd.com/dog/general-health/does-my-dog-need-dog-stairs-dog-ramp)
+AKC lists arthritic dogs, back-prone breeds and large dogs that struggle with car access among the dogs that benefit from stairs or a ramp, and notes that a ramp lets you begin at a low angle and raise it gradually. [[1]](https://www.akc.org/expert-advice/health/general-health/dog-stairs-and-ramps/) PetMD, in a piece by a veterinarian, recommends a ramp over stairs for dogs with arthritis or other joint or back conditions. [[2]](https://www.petmd.com/dog/general-health/does-my-dog-need-dog-stairs-dog-ramp)
 
-The Canine Arthritis Resources and Education page says jumping down from a bed or SUV is "not recommended for any dog", and suggests stairs or ramps, especially for getting down. It adds that its authors have not found car ramps or steps that work particularly well for all dogs, and that they must not be too steep. [[3]](https://caninearthritis.org/?p=2503) VCA says a ramp for entering and exiting vehicles can help reduce stress on the back and leg joints, and that most dogs can quickly learn to use one. [[4]](https://vcahospitals.com/know-your-pet/helping-your-dog-with-osteoarthritis) Cornell's veterinary college lists "Difficulty navigating stairs or jumping on couches" as a sign of osteoarthritis, suggests non-slip rugs and ramps to reach beds, couches or cars, and says the condition is diagnosed after a physical exam. [[5]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/osteoarthritis) If your dog is reluctant to jump or climb, the exam is your vet's job, not a product's.
+The Canine Arthritis Resources and Education page says jumping down from an SUV is "not recommended for any dog" and that car ramps or steps must not be too steep. [[3]](https://caninearthritis.org/?p=2503) VCA says a vehicle ramp can help reduce stress on the back and leg joints. [[4]](https://vcahospitals.com/know-your-pet/helping-your-dog-with-osteoarthritis) Cornell's veterinary college lists difficulty navigating stairs or jumping as a sign of osteoarthritis and says it is diagnosed after a physical exam. [[5]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/osteoarthritis) If your dog is reluctant to jump or climb, that exam is your vet's job, not a product's.
 
 ## What we could not confirm
 
@@ -271,20 +259,12 @@ The Canine Arthritis Resources and Education page says jumping down from a bed o
 | --- | --- | --- |
 | Whether any of the five suits a senior or arthritic dog | No maker page makes a senior or mobility claim; the steps page says "all ages" | Ask your vet |
 | How steep each ramp is on your vehicle | No maker states an incline | Measure your height and do the arithmetic above |
-| Who tested the ramp ratings | The three ramp pages say independently tested, and name no tester | Ask the maker |
-| The hitch step's height range | The page gives no numbers | Ask the maker with your hitch height |
-| The folded size of the folding ramp, and the Compact's width and height | The pages list no figure | Check the maker page before packing |
+| The folded size of the folding ramp, the Compact's width and height, the hitch step's height range | The pages list no figure | Ask the maker before packing |
 | Whether a ramp can go on rental steps | None of the pages covers it | Ask the host and the maker |
-| Whether a ramp or steps suit your dog's spine, hips or pain | No source here assesses individual dogs | Ask your vet |
-
-## How sure we are
-
-- **Confirmed by a source we cite:** the maker figures in the table (each PetSafe page, read 2026-11-18) and the AKC, PetMD, CARE, VCA, Cornell and Petful statements, each as that page words it. That is a handful of pages, not a study.
-- **Our judgment or unknown:** the arithmetic and the decision shortcut are ours, and your dog's needs, your vehicle's real height and any host's rules are unknown. Ask your vet, measure and ask the host.
 
 ## What to buy first
 
-1. **A ramp, once you have two numbers.** Ground-to-floor height and your dog's weight, compared with the tables above: the Compact for a tight trunk, the Extra Long for a tall floor or a heavy dog, the Folding Ramp for a small dog and the lightest carry. If your dog only ever needs a fixed-height door, the Side Door Steps are the other option, and if you already have a 2 in hitch and a dog that climbs steps, the Hitch Step stays on the vehicle.
-2. **Nothing for the cabin stairs yet.** Get the host's answer on steps first; our [senior dog rental guide](/guides/vacation-rental-with-a-senior-dog) has the message to send, and our guide to [rentals that welcome large dogs](/guides/vacation-rentals-that-welcome-large-dogs) covers the booking side for a big dog.
+1. **A ramp, once you have two numbers:** ground-to-floor height and your dog's weight. The Compact for a tight trunk, the Extra Long for a tall floor or a heavy dog, the Folding Ramp for a small dog. The Side Door Steps suit a fixed door; the Hitch Step stays on a truck or SUV with a 2 in hitch.
+2. **Nothing for the cabin stairs yet.** Get the host's answer first; our guide to [rentals that welcome large dogs](/guides/vacation-rentals-that-welcome-large-dogs) covers the booking side for a big dog.
 3. **The restraint for the drive.** A ramp gets the dog in; a harness or crate keeps the dog safe on the road, covered in our [car safety guide](/guides/dog-car-safety-harness-and-crate-guide). For two big dogs, see [two large dogs in one car](/guides/two-large-dogs-in-one-car).
-4. **The trip lists.** Add "ramp or steps and host's stair answer" to your [trip checklist](/tools/checklist) and your [packing list](/tools/packing-list). Other options are on our [ramps and steps gear page](/gear/ramps-and-steps), where each card quotes the maker.
+4. **The trip lists.** Add the ramp and the host's stair answer to your [trip checklist](/tools/checklist) and [packing list](/tools/packing-list). More options are on our [ramps and steps gear page](/gear/ramps-and-steps).

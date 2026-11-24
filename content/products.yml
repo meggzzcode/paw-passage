@@ -150,9 +150,9 @@ products:
     aliases:
       - "Lucky Duck Lucky Kennel"
     cardSpecs:
-      - "Button opens Intermediate"
+      - "Opens the Intermediate size"
       - "Integrated tie-downs"
-      - "CPS lists Large (one dog)"
+      - "Maker: under 70 lb"
     categories:
       - car-safety
     summary: A hard-sided travel kennel with integrated tie-downs, sold in Medium, Intermediate and Large, with a ratchet strap kit sold separately.

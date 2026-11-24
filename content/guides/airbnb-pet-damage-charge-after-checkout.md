@@ -1,32 +1,32 @@
 ---
-title: "Charged for Pet Damage After Checkout? What to Do on Airbnb and Vrbo"
-seoTitle: "Charged for Pet Damage After Checkout?"
-seoDescription: "Airbnb pet damage charge after checkout: the 24-hour, 14-day and 60-day clocks from Airbnb's own pages, other platforms' rules, reply scripts and evidence."
-dek: Three clocks, the pet fee versus damage question, and message scripts you can paste when a host asks for money after your dog's stay.
+title: "Airbnb Pet Damage Charge After Checkout: What to Do"
+seoTitle: "Airbnb Pet Damage Charge After Checkout"
+seoDescription: "Host asked for pet damage money after checkout? Airbnb's 24-hour, 14-day and 60-day clocks, reply scripts and an evidence checklist to use."
+dek: "Airbnb's three clocks, how Vrbo differs, the pet fee versus damage question, and reply scripts you can paste when a host asks for money after your dog's stay."
 category: Planning
 states: []
 status: published
 author: Paws & Passage Editors
 publishedOn: 2026-11-18
-lastReviewed: 2026-11-19
-readingMinutes: 10
+lastReviewed: 2026-11-24
+readingMinutes: 11
 heroImage: guide-damage-charge
 faqs:
   - q: How long does a host have to charge me for pet damage after checkout?
     a: Airbnb's help pages say damage claims must be filed within 14 days of checkout, and Vrbo's pages say the host has 14 days after your stay. How strictly either is enforced is not published.
+  - q: A host asked for money more than 14 days after checkout. What now?
+    a: Airbnb's pages say damage claims must be filed within 14 days of checkout, and Vrbo gives the host 14 days after your stay. Reply inside the 24-hour window anyway to ask for details, and ask Airbnb support whether a late request is still allowed; how strictly the window is enforced is not published.
   - q: How long do I have to respond to an Airbnb damage request?
     a: Airbnb's pages say guests have 24 hours to respond before Airbnb steps in. You can pay the full amount, pay a different amount, or decline, and Airbnb says you have 60 days to appeal after you have been charged.
   - q: I paid a pet fee. Can the host still charge me for dog hair?
     a: Airbnb says pet fees are meant to cover expected costs, and its host protection page lists pet accidents and stains as separate. No platform text says where ordinary hair ends and extra cleaning begins, so keep your photos and ask for an itemized claim.
   - q: Does Vrbo put a hold on my card for damage?
     a: Vrbo's help page says there is no pre-authorization hold, and that your card is charged only if the host submits a claim. If you disagree, the page says to select Contact Us, and Vrbo then asks both sides for documentation.
-  - q: Can a host charge me if I did not tell them about my dog?
-    a: Vrbo's page says claims can cover damage from undeclared pets, and some property managers add their own undeclared-pet penalties. Airbnb's ground rules say not to bring pets to a listing marked no pets. Our no-pets guide covers the penalties.
   - q: Should I file a credit card chargeback instead of replying?
     a: A card-privacy company's guide says that once you file one, Airbnb can no longer resolve the issue directly, and the two cases we read had mixed outcomes. Use the platform process first, and check your card issuer's own rules.
 relatedGuides:
   - how-vacation-rental-pet-fees-work
-  - pet-friendly-vacation-rental-checklist
+  - can-dogs-go-in-a-rental-pool-or-hot-tub
   - can-you-leave-a-dog-alone-in-a-vacation-rental
   - what-a-dog-really-costs-on-a-vacation-rental
   - puppy-at-a-vacation-rental
@@ -115,8 +115,10 @@ sources:
     publisher: Pet Parents
     accessedOn: 2026-11-16
 research:
-  primaryKeyword: airbnb pet damage charge after checkout
+  primaryKeyword: airbnb pet damage charge
   relatedKeywords:
+    - airbnb pet damage charge after checkout
+    - airbnb damage claim after checkout
     - airbnb host charged me for pet damage
     - can airbnb host charge pet fee after stay
     - dispute airbnb damage claim dog
@@ -177,29 +179,29 @@ approvedBy: Paws & Passage Editors
 approvedOn: 2026-11-18
 ---
 
-You pulled out of the driveway, the dog asleep in the back seat, and two weeks later the host wants money for "pet damage." A Resolution Center request landed with a clock on it, or Vrbo charged your card. Before you pay or reply, find out which clock you are on.
+If an Airbnb host asks for pet damage money after checkout, three clocks apply, all from Airbnb's help pages: you have 24 hours to respond, the host has 14 days after checkout to file a damage claim, and you have 60 days to appeal a charge. You do not have to accept the number; you can pay in full, pay part or decline. Vrbo also gives the host 14 days. Find out which clock you are on before you pay or reply.
 
-General information from the platforms' help pages, not legal advice. All figures below are as of 2026-11-18, when we re-read each cited page.
+General information from the platforms' help pages, not legal advice. All figures below are as of 2026-11-18, when we re-read each cited page. Already have a request? Jump to [what to write back](#what-to-write-back).
 
 ## Do this first
 
-1. **Check the checkout date against 14 days.** Airbnb says hosts must file damage claims within 14 days of checkout [[5]](https://www.airbnb.com/d/guarantee), and Vrbo gives the host 14 days after your stay [[8]](https://help.vrbo.com/articles/What-happens-if-my-card-on-file-is-charged-for-property-damage).
+1. **Check the checkout date against 14 days.** Airbnb says hosts must file damage claims within 14 days of checkout [[5]](https://www.airbnb.com/d/guarantee), and Vrbo gives the host 14 days after your stay [[8]](https://help.vrbo.com/articles/What-happens-if-my-card-on-file-is-charged-for-property-damage). If the request came later than that, say so in your reply and ask Airbnb support whether it is still allowed.
 2. **Reply inside 24 hours, through the platform.** On Airbnb you have 24 hours to respond before Airbnb steps in, and the payment method can be charged if no timely payment or appeal is made. [[1]](https://www.airbnb.com/help/article/1415)
 3. **Gather your evidence.** Arrival and checkout photos, the listing's pet wording and your messages. Vrbo asks both sides for documentation. [[8]](https://help.vrbo.com/articles/What-happens-if-my-card-on-file-is-charged-for-property-damage)
 
 You do not have to accept the number as sent. On Airbnb you can pay in full, pay a different amount or decline. [[2]](https://www.airbnb.com/help/article/3591)
 
-## The three clocks
+## How long does a host have to charge for damage? The three clocks
 
-| Clock | Airbnb | Vrbo | What host blogs say |
-| --- | --- | --- | --- |
-| Guest response | 24 hours before Airbnb steps in, for damage requests [[3]](https://www.airbnb.com/help/article/4291), [[1]](https://www.airbnb.com/help/article/1415) | Not stated on the pages we read | 72 hours to pay (Hometime) [[13]](https://www.hometime.io/blog/how-to-file-a-damage-claim-with-airbnb) |
-| Host claim window | 14 days from checkout for damage [[5]](https://www.airbnb.com/d/guarantee), [[2]](https://www.airbnb.com/help/article/3591) | 14 days after the stay [[8]](https://help.vrbo.com/articles/What-happens-if-my-card-on-file-is-charged-for-property-damage), [[9]](https://help.vrbo.com/articles/How-do-I-file-a-damage-deposit-claim) | Involve Airbnb Support "within 30 days" (Hometime) [[13]](https://www.hometime.io/blog/how-to-file-a-damage-claim-with-airbnb) |
-| Appeal | 60 days after you are charged [[1]](https://www.airbnb.com/help/article/1415) | Contact Us dispute; no deadline on the page [[8]](https://help.vrbo.com/articles/What-happens-if-my-card-on-file-is-charged-for-property-damage) | Often not mentioned |
+| Clock | Airbnb | Vrbo |
+| --- | --- | --- |
+| Guest response | 24 hours before Airbnb steps in, for damage requests [[3]](https://www.airbnb.com/help/article/4291), [[1]](https://www.airbnb.com/help/article/1415) | Not stated on the pages we read |
+| Host claim window | 14 days from checkout for damage [[5]](https://www.airbnb.com/d/guarantee), [[2]](https://www.airbnb.com/help/article/3591) | 14 days after the stay [[8]](https://help.vrbo.com/articles/What-happens-if-my-card-on-file-is-charged-for-property-damage), [[9]](https://help.vrbo.com/articles/How-do-I-file-a-damage-deposit-claim) |
+| Appeal | 60 days after you are charged [[1]](https://www.airbnb.com/help/article/1415) | Contact Us dispute; no deadline on the page [[8]](https://help.vrbo.com/articles/What-happens-if-my-card-on-file-is-charged-for-property-damage) |
 
-Two things trip people up. The 60 days to appeal is separate from the 60-day limit for new Resolution Center requests, which excludes damage claims (14 days). [[2]](https://www.airbnb.com/help/article/3591) And an unanswered Airbnb request can be cancelled and resent within 60 days of checkout, so a late request is worth questioning. [[3]](https://www.airbnb.com/help/article/4291) Hometime's 72-hour and 30-day figures do not match Airbnb's current pages, so go by Airbnb.
+Two things trip people up. The 60 days to appeal is separate from the 60-day limit for new Resolution Center requests, which excludes damage claims (14 days). [[2]](https://www.airbnb.com/help/article/3591) And an unanswered Airbnb request can be cancelled and resent within 60 days of checkout, so a late request is worth questioning. [[3]](https://www.airbnb.com/help/article/4291) A host blog, Hometime, says 72 hours to pay and 30 days to involve Airbnb Support; none of that matches Airbnb's current pages [[13]](https://www.hometime.io/blog/how-to-file-a-damage-claim-with-airbnb), so go by Airbnb.
 
-## The 24 hours after a request
+## What happens in the 24 hours after a request?
 
 Pay in full, pay a different amount, or decline. If you pay part, decline or stay silent, the host may involve Airbnb or its insurer. [[1]](https://www.airbnb.com/help/article/1415) Airbnb also says guests are expected to pay reasonable requests for damage, missing items or extra cleaning, and does not define "reasonable." [[4]](https://www.airbnb.com/help/article/2894) Reply inside the window even if only to ask for details. If you are charged anyway, you have 60 days to appeal, so keep your photos, the claim and your messages together.
 
@@ -216,39 +218,7 @@ A pet fee is meant for expected costs. Airbnb says pet fees should cover expecte
 
 ## How Vrbo differs
 
-Vrbo's pages say there is no pre-authorization hold, your card is charged only if the host submits a claim, and the host has 14 days after your stay. To dispute, select Contact Us; Vrbo asks both sides for documentation. [[8]](https://help.vrbo.com/articles/What-happens-if-my-card-on-file-is-charged-for-property-damage) Its host page recommends the host contact you before filing, to share evidence, and gives no dispute timeline. [[9]](https://help.vrbo.com/articles/How-do-I-file-a-damage-deposit-claim) More in [Airbnb vs Vrbo with a dog](/guides/how-vacation-rental-pet-fees-work).
-
-## Evidence that helps
-
-Dated, per-item photos from arrival and checkout are your strongest protection, and evidence cannot be created after the request arrives. In one 2026 news report, a guest with two large dogs and a $300 pet fee was asked for $90.47 about two weeks after checkout and argued the host's photos showed items before washing; no outcome was reported. [[11]](https://www.thecooldown.com/?p=815147) An anecdote, but it shows why per-item photos matter. Small claims are common: the examples we read ($64, $90.47, a $100 rug) were mostly around $100 or less, though people post what they choose to post.
-
-- [ ] On arrival, dated photos or video of floors, furniture, bedding, screens and fences, plus close-ups of flaws.
-- [ ] Save the listing, house rules and pet terms as they read when you booked.
-- [ ] Keep every message with the host on the platform.
-- [ ] At checkout, photos or video of each room, the dog's areas and the yard.
-- [ ] Note how you left it clean (towels, vacuuming, bedding as the rules say).
-- [ ] Save your receipt for the pet fee.
-- [ ] If you get a claim, ask for the itemized amount, dated photos per item and a receipt or quote.
-
-## Reduce the odds of a charge
-
-Mud, wet fur and stains are the kind of mess a dog brings in, so one idea of ours is to catch it at the door. Look for a machine-washable microfiber entry mat with a non-slip backing, sized to the doorway, and a washable drying towel for paws and coats. If the host allows dogs on the furniture, a washable throw over the sofa keeps hair and drool off the upholstery; if the listing says nothing, ask first. None of this replaces your arrival and checkout photos, none of it guarantees a host will not file a claim, and it does not change how Airbnb or Vrbo handle one. Check the current price on the listing.
-
-The mat first. The Soggy Doggy Microfiber Doormat comes in Large (26 x 36 in) and Extra Large (36 x 60 in), has a non-slip backing, and the maker says it is machine washable and dryer safe. [[16]](https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate) It gives wet paws somewhere to land at the door, and the page gives no warranty.
-
-{{pick:soggy-doggy-microfiber-doormat|Our pick|Maker lists Large 26 x 36 in and Extra Large 36 x 60 in sizes, machine washable, with a non-slip backing.|https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate}}
-
-The towel next. The Soggy Doggy Super Shammy is a 31 x 14 in microfiber chenille towel with hand pockets, and the maker says to machine wash it alone, with no bleach or fabric softener. [[17]](https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey) The page gives no absorbency figure.
-
-{{pick:soggy-doggy-super-shammy-towel|Our pick|Maker lists a 31 x 14 in microfiber towel with hand pockets that is machine washable.|https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey}}
-
-Pet accidents and stains are the items the table above lists as reimbursable, so two more items are aimed at them. A dog bed of your own keeps the dog off the host's furniture and bedding. The Kurgo Loft Wander is a roll-up bed in Medium (27 x 36 in) and Large (36 x 48 in) with a water-resistant top and a waterproof, nonslip bottom, and the maker says it can be machine washed on a gentle cycle. [[18]](https://www.kurgo.com/p/loft-wander-dog-bed/K01560)
-
-{{pick:kurgo-loft-wander-dog-bed|Our pick|The maker lists two sizes, a waterproof nonslip bottom and machine-wash care.|https://www.kurgo.com/p/loft-wander-dog-bed/K01560}}
-
-For a puppy, a senior or a dog in a new place, a washable pad on a hard floor makes an accident easy to deal with. The Pet Parents Pawtect Pads come as two pads in sizes from 18 x 24 in to 41 x 41 in, which the maker describes as machine washable, with a waterproof backing and a floor-gripping backing. [[19]](https://petparentsbrand.com/products/washable-puppy-pads) The waterproof and wash-life statements are the maker's. If an accident does reach a rug or a mattress, a pad is no substitute for telling the host promptly.
-
-{{pick:pet-parents-pawtect-pads|Our pick|The maker lists two pads per pack in four sizes, with a waterproof backing and a floor-gripping backing.|https://petparentsbrand.com/products/washable-puppy-pads}}
+Vrbo's pages say there is no pre-authorization hold, your card is charged only if the host submits a claim, and the host has 14 days after your stay. To dispute, select Contact Us; Vrbo asks both sides for documentation. [[8]](https://help.vrbo.com/articles/What-happens-if-my-card-on-file-is-charged-for-property-damage) Its host page recommends the host contact you before filing, to share evidence, and gives no dispute timeline. [[9]](https://help.vrbo.com/articles/How-do-I-file-a-damage-deposit-claim) For how both platforms display pet fees, see [how pet fees work](/guides/how-vacation-rental-pet-fees-work).
 
 ## What to write back
 
@@ -271,6 +241,18 @@ Send the decline only if it is true; if your dog did cause damage, the partial s
 ## Should you file a chargeback?
 
 Treat it as a last resort, after the platform process. A card-privacy company's guide says once you file, Airbnb can no longer resolve the issue directly, the bank investigation may take up to 90 days, and a positive outcome is not guaranteed. [[10]](https://privacy.com/blog/airbnb-chargeback) In one 2024 Vrbo case a bank repeatedly denied a chargeback before crediting after an advocate stepped in. [[14]](https://elliott.org/advocacy/such-a-bizarre-rental-experience-on-vrbo-but-do-they-even-care/) In a 2018 Airbnb case a chargeback failed; the page says the guest had not followed Airbnb's dispute steps first. [[15]](https://elliott.org/case-dismissed-2/this-airbnb-complaint-has-a-big-problem/) Anecdotes only; ask your card issuer what it requires and by when.
+
+## What evidence helps against a pet damage claim?
+
+Dated, per-item photos from arrival and checkout are your strongest protection, and evidence cannot be created after the request arrives. In one 2026 news report, a guest with two large dogs and a $300 pet fee was asked for $90.47 about two weeks after checkout and argued the host's photos showed items before washing; no outcome was reported. [[11]](https://www.thecooldown.com/?p=815147) An anecdote, but it shows why per-item photos matter. Small claims are common: the examples we read ($64, $90.47, a $100 rug) were mostly around $100 or less, though people post what they choose to post.
+
+- [ ] On arrival, dated photos or video of floors, furniture, bedding, screens and fences, plus close-ups of flaws.
+- [ ] Save the listing, house rules and pet terms as they read when you booked.
+- [ ] Keep every message with the host on the platform.
+- [ ] At checkout, photos or video of each room, the dog's areas and the yard.
+- [ ] Note how you left it clean (towels, vacuuming, bedding as the rules say).
+- [ ] Save your receipt for the pet fee.
+- [ ] If you get a claim, ask for the itemized amount, dated photos per item and a receipt or quote.
 
 ## What if the dog is a service animal?
 
@@ -307,4 +289,28 @@ Airbnb's ground rules say service animals, and in some locations emotional suppo
 - [ ] Decide: pay, pay part or decline, using the matching script.
 - [ ] Keep everything on the platform.
 
-Next trip, add photo steps to the [trip checklist](/tools/checklist) or our [rental checklist](/guides/pet-friendly-vacation-rental-checklist). If you leave the dog in the rental, see [leaving a dog alone](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental). For the full picture of trip costs, see [what a dog really costs on a rental trip](/guides/what-a-dog-really-costs-on-a-vacation-rental).
+## Next trip: gear that keeps mud, hair and accidents off the host's floors
+
+This part is for your next booking, not for a claim already open. Nothing here changes how Airbnb or Vrbo decide a claim, and none of it replaces your arrival and checkout photos or a written answer from the host about what the pet fee covers. What gear can do is cut the mess itself: the mud and wet that arrive at the door, the sofa a dog claims, and the accident on a hard floor. Each pick below is matched to one of those jobs, so buy only the one that fits your dog.
+
+**For a dog who comes in wet or muddy: the entry mat.** Wet paws are easiest to deal with before they cross the threshold. The Soggy Doggy Microfiber Doormat comes in Large (26 x 36 in) and Extra Large (36 x 60 in), has a non-slip backing, and the maker says it is machine washable and dryer safe. [[16]](https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate) It suits dogs that swim, hike or just hate rain; skip it if the rental already has a washable mat at the entry, which is worth asking the host. The page gives no warranty. This is the one to buy first if your trips involve lakes, trails or weather.
+
+{{pick:soggy-doggy-microfiber-doormat|For muddy paws at the door|Maker lists Large 26 x 36 in and Extra Large 36 x 60 in sizes, machine washable, with a non-slip backing.|https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate}}
+
+**For a dog who is already soaked: the drying towel.** A towel at the door dries the coat before the dog shakes onto the host's rug or sofa. The Soggy Doggy Super Shammy is a 31 x 14 in microfiber chenille towel with hand pockets, and the maker says to machine wash it alone, with no bleach or fabric softener. [[17]](https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey) The page gives no absorbency figure, so judge the size against your dog's coat. It is the right add-on for a swimmer or a long-coated dog; skip it if you already own a towel you are happy to give to the dog. Pair it with the mat if both mud and water are likely.
+
+{{pick:soggy-doggy-super-shammy-towel|For drying a wet or muddy coat|Maker lists a 31 x 14 in microfiber towel with hand pockets that is machine washable.|https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey}}
+
+**For a dog who claims the sofa: your own bed.** A dog bed of your own gives the dog a place that is clearly theirs and keeps hair and drool off the host's furniture and bedding; ask the host what is allowed first, since Airbnb's own pages leave furniture rules to each host. The Kurgo Loft Wander is a roll-up bed in Medium (27 x 36 in) and Large (36 x 48 in) with a water-resistant top and a waterproof, nonslip bottom, and the maker says it can be machine washed on a gentle cycle. [[18]](https://www.kurgo.com/p/loft-wander-dog-bed/K01560) The page gives no weight limit, so check the open size against your dog's length lying down. Skip it if the rental provides a dog bed. This is the one to buy first if your dog sleeps wherever it lands.
+
+{{pick:kurgo-loft-wander-dog-bed|For a dog who claims the sofa|The maker lists two sizes, a waterproof nonslip bottom and machine-wash care.|https://www.kurgo.com/p/loft-wander-dog-bed/K01560}}
+
+**For a puppy, a senior or a dog in a new place: washable pads.** An accident on a hard floor is quick to deal with when a pad is already down. The Pet Parents Pawtect Pads come as two pads in sizes from 18 x 24 in to 41 x 41 in, which the maker describes as machine washable, with a waterproof backing and a floor-gripping backing. [[19]](https://petparentsbrand.com/products/washable-puppy-pads) The waterproof and wash-life statements are the maker's. A housetrained adult dog with no accident history can skip them. If an accident does reach a rug or a mattress, a pad is no substitute for telling the host promptly. Start here if you are travelling with a puppy; our [puppy rental guide](/guides/puppy-at-a-vacation-rental) covers the rest.
+
+{{pick:pet-parents-pawtect-pads|For puppies, seniors and new places|The maker lists two pads per pack in four sizes, with a waterproof backing and a floor-gripping backing.|https://petparentsbrand.com/products/washable-puppy-pads}}
+
+## What to buy first
+
+Do the free things first: take dated photos on arrival, and get the host's answer in writing on what the pet fee covers. Then buy for the mess your dog actually makes. A wet or muddy dog: the mat first, then the towel. A puppy, a senior or a dog in a new place: the washable pads first. A dog who claims the sofa: your own bed, plus asking the host what is allowed. Skip all of it if your photos and the host's written rules already cover you. More options are on our [rental cleanup gear page](/gear/rental-cleanup).
+
+Next trip, add photo steps to the [trip checklist](/tools/checklist). If a swim in a pool or hot tub was the trigger, see [dogs in a rental pool or hot tub](/guides/can-dogs-go-in-a-rental-pool-or-hot-tub). If you leave the dog in the rental, see [leaving a dog alone](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental). For the full picture of trip costs, see [what a dog really costs on a rental trip](/guides/what-a-dog-really-costs-on-a-vacation-rental).

@@ -280,7 +280,7 @@ content:
         options:
           values: [full, partial, none, not-confirmed]
       - { name: fenceNotes, label: "Fence details (height, gate, gaps)", type: text }
-      - { name: privateOutdoor, label: Private outdoor space?, type: select, default: not-confirmed, options: { values: [yes, no, not-confirmed] } }
+      - { name: privateOutdoor, label: "Private outdoor space?", type: select, default: not-confirmed, options: { values: [yes, no, not-confirmed] } }
       - name: petFee
         label: Pet fee
         type: select
@@ -297,10 +297,10 @@ content:
             - { value: night, label: "per night" }
             - { value: dog, label: "per dog" }
             - { value: dog-night, label: "per dog, per night" }
-      - { name: breedRestrictions, label: Breed restrictions stated?, type: select, default: not-confirmed, options: { values: [yes, no, not-confirmed] } }
+      - { name: breedRestrictions, label: "Breed restrictions stated?", type: select, default: not-confirmed, options: { values: [yes, no, not-confirmed] } }
       - { name: beach, label: Beach access, type: boolean }
       - { name: mountain, label: Mountain location, type: boolean }
-      - { name: hotTub, label: Hot tub?, type: select, default: not-confirmed, options: { values: [yes, no, not-confirmed] } }
+      - { name: hotTub, label: "Hot tub?", type: select, default: not-confirmed, options: { values: [yes, no, not-confirmed] } }
       - { name: nearby, label: Nearby dog-friendly places, type: string, list: true }
       - { name: houseRules, label: House rules about dogs, type: string, list: true }
       - name: image
@@ -515,6 +515,16 @@ content:
                 - { value: waves, label: Waves }
                 - { value: tent, label: Tent }
                 - { value: compass, label: Compass }
+          - name: gearTrip
+            label: "Gear collection the 'Explore more travel gear' link opens (leave empty for the main Gear page)"
+            type: select
+            options:
+              values:
+                - { value: cabin-stay, label: Cabin stay }
+                - { value: road-trip, label: Road trip }
+                - { value: beach-and-lake, label: Beach and lake }
+                - { value: winter-trip, label: Winter trip }
+                - { value: hiking, label: Hiking }
           - name: implies
             label: "Conditions this trip type always includes (for example a road trip includes 'driving')"
             type: select
@@ -568,7 +578,7 @@ content:
                 - { value: rental, label: "Cabin and rental essentials" }
           - { name: order, label: "Order inside its category (smaller comes first)", type: number }
           - { name: what, label: "What is this for? (one short sentence shown under the name)", type: text, required: true }
-          - { name: why, label: "Why this is included (shown when the visitor opens 'Why this is included')", type: text, required: true }
+          - { name: why, label: "Why bring this? (shown when the visitor opens 'Why bring this?')", type: text, required: true }
           - { name: tip, label: "Extra tip (optional)", type: text }
           - name: appears
             label: "When should this appear?"
@@ -637,6 +647,22 @@ content:
               - { name: text, label: "Sentence (only for the 'sentence' choice)", type: string }
               - { name: note, label: "Short note after the number (for example plus a spare)", type: string }
           - { name: shopFor, label: "What to call the product in 'Need a ...?' (for example travel bowl). Required when products are listed", type: string }
+          - name: gearCategory
+            label: "Gear category to point to when no product is listed (needs 'What to call the product')"
+            type: select
+            options:
+              values:
+                - { value: car-safety, label: Car safety }
+                - { value: car-interior, label: Car interior }
+                - { value: ramps-and-steps, label: Ramps and steps }
+                - { value: feeding-and-hydration, label: Feeding and hydration }
+                - { value: pens-and-gates, label: Pens and gates }
+                - { value: comfort-and-cooling, label: Comfort and cooling }
+                - { value: water-and-beach, label: Water and beach }
+                - { value: trail-and-hiking, label: Trail and hiking }
+                - { value: cold-weather, label: Cold weather }
+                - { value: safety-id-first-aid, label: Safety, ID and first aid }
+                - { value: rental-cleanup, label: Rental cleanup }
           - name: products
             label: "Related Gear products (at most 4; the first is the main suggestion, a second needs 'How it differs')"
             type: object

@@ -1,4 +1,4 @@
-import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { createFileRoute, Link, notFound, redirect } from "@tanstack/react-router";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { GuideCard } from "@/components/site/GuideCard";
 import { GearDisclosure, GearProductCard, HowWePick } from "@/components/site/GearHubCards";
@@ -7,12 +7,19 @@ import {
   categoryIsLive,
   getGearCategory,
   guidesFeaturing,
+  legacyRedirectFor,
 } from "@/content/gear-hub";
-import { getGuide } from "@/content/guides";
+import { getGuide, isPublic } from "@/content/guides";
+import { gearCategories } from "@/content/gear-categories";
 import { dogTypeIsLive, getDogType } from "@/content/dog-types";
 import { pageHead, breadcrumbLd } from "@/lib/seo";
 
 export const Route = createFileRoute("/gear/$category")({
+  beforeLoad: ({ params }) => {
+    // Old job-less category slugs: permanent redirect so existing links never 404.
+    const next = legacyRedirectFor(params.category);
+    if (next) throw redirect({ href: `/gear/${next}`, statusCode: 301 });
+  },
   loader: ({ params }) => {
     const c = getGearCategory(params.category);
     // Unknown categories and categories with no products at all are not pages.
@@ -23,8 +30,8 @@ export const Route = createFileRoute("/gear/$category")({
     const c = loaderData ? getGearCategory(loaderData.slug) : undefined;
     if (!c) return { meta: [{ title: "Page not found" }, { name: "robots", content: "noindex" }] };
     const h = pageHead({
-      title: `${c.name} Gear for Dogs`,
-      description: `Researched dog travel gear for ${c.name.toLowerCase()}, with the maker's own specs, sources and what we could not confirm. Not tested by us.`,
+      title: `${c.name} for Dogs`,
+      description: `Researched picks for ${c.name.toLowerCase()}: the maker's own specs, sources and what we could not confirm. Not tested by us.`,
       path: `/gear/${params.category}`,
       noindex: !categoryIsLive(c.slug),
     });
@@ -44,11 +51,16 @@ export const Route = createFileRoute("/gear/$category")({
 function GearCategoryPage() {
   const { slug } = Route.useLoaderData();
   const c = getGearCategory(slug)!;
-  const items = categoryProducts(slug);
+  const all = categoryProducts(slug);
+  const items = all.filter((p) => p.categories?.[0] === slug);
+  const alsoFits = all.filter((p) => p.categories?.[0] !== slug);
+  const siblings = gearCategories
+    .filter((x) => x.slug !== slug && categoryIsLive(x.slug))
+    .slice(0, 2);
   const guides = [
     ...new Map(
-      [...(c.guideSlugs ?? []).map((s) => getGuide(s)), ...guidesFeaturing(items)]
-        .filter((g): g is NonNullable<typeof g> => !!g)
+      [...(c.guideSlugs ?? []).map((s) => getGuide(s)), ...guidesFeaturing(all)]
+        .filter((g): g is NonNullable<typeof g> => !!g && isPublic(g))
         .map((g) => [g.slug, g]),
     ).values(),
   ].slice(0, 3);
@@ -78,12 +90,45 @@ function GearCategoryPage() {
           .
         </p>
       )}
-      <GearDisclosure products={items} />
+      <section
+        className="mt-8 max-w-3xl rounded-xl border border-border bg-card p-6"
+        aria-labelledby="how-to-choose"
+      >
+        <h2 id="how-to-choose" className="text-2xl">
+          How to choose
+        </h2>
+        <ul className="mt-4 list-disc space-y-2 pl-5 text-sm">
+          {c.howToChoose.map((b) => (
+            <li key={b}>{b}</li>
+          ))}
+        </ul>
+      </section>
+      <GearDisclosure products={all} />
       <ul className="mt-8 max-w-3xl space-y-6">
         {items.map((p) => (
           <GearProductCard key={p.id} product={p} />
         ))}
       </ul>
+      {alsoFits.length > 0 && (
+        <section className="mt-12" aria-labelledby="also-fits">
+          <h2 id="also-fits" className="text-2xl">
+            Also fits here
+          </h2>
+          <div className="mt-6 max-w-3xl space-y-6">
+            {alsoFits.map((p) => (
+              <div key={p.id}>
+                <p className="mb-2 text-xs text-muted-foreground">
+                  Also fits here. Mainly listed under{" "}
+                  {getGearCategory(p.categories?.[0] ?? "")?.name ?? "another category"}.
+                </p>
+                <ul>
+                  <GearProductCard product={p} />
+                </ul>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
       <HowWePick />
       {guides.length > 0 && (
         <section className="mt-12">
@@ -95,6 +140,23 @@ function GearCategoryPage() {
           </div>
         </section>
       )}
+      <nav className="mt-12 text-sm" aria-label="More gear">
+        <Link to="/gear" className="text-primary underline">
+          All travel essentials
+        </Link>
+        {siblings.map((x) => (
+          <span key={x.slug}>
+            {" · "}
+            <Link
+              to="/gear/$category"
+              params={{ category: x.slug }}
+              className="text-primary underline"
+            >
+              {x.name}
+            </Link>
+          </span>
+        ))}
+      </nav>
     </div>
   );
 }

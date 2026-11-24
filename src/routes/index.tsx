@@ -102,7 +102,7 @@ function Home() {
   const mustHaveTiles = mustHaves.filter((m) => hasResults({ [m.key]: true }));
   const anyStays = hasStays();
   const gearTiles = liveCategories().filter((c) =>
-    ["road-trips", "travel-safety", "feeding-and-hydration"].includes(c.slug),
+    ["car-safety", "ramps-and-steps", "feeding-and-hydration"].includes(c.slug),
   );
 
   function onSearch(e: React.FormEvent) {

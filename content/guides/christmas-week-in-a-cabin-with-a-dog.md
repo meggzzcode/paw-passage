@@ -2,7 +2,7 @@
 title: "Christmas Week in a Cabin With Your Dog: Minimum Stays, Cancellation and Tree Safety"
 seoTitle: "Christmas Cabin With a Dog: Booking Rules and Safety"
 seoDescription: "Booking a Christmas cabin with your dog? Ask about minimum stays and cancellation, then dog-proof the tree, plants and fire, and pack the right gear."
-dek: What to ask before you book a holiday week, which holiday hazards matter for dogs, and how to keep a tree and a pile of gifts from becoming an emergency in a house you do not own.
+dek: Ask four questions before paying a holiday deposit, then keep the tree, tinsel, gifts and chocolate out of your dog's reach in a house you do not own.
 category: Planning
 states: []
 status: published
@@ -13,7 +13,7 @@ readingMinutes: 10
 heroImage: guide-christmas-week
 faqs:
   - q: Do cabin rentals charge extra for dogs at Christmas?
-    a: None of the 38 manager pet pages in our reading (a convenience sample, read 2026-11-18) stated a holiday pet surcharge. That is not proof none exist, so ask for the full total for your exact dates. One manager we read does say holidays carry higher nightly rates and a 5-night Christmas minimum.
+    a: None of the 38 manager pet pages in our reading (a convenience sample, read 2026-11-18) stated a holiday pet surcharge. Ask for the full total for your exact dates, because one manager we read says holidays carry higher nightly rates and a 5-night Christmas minimum.
   - q: Is poinsettia poisonous to dogs?
     a: The ASPCA says poinsettias can cause mild to moderate stomach irritation, and Pet Poison Helpline calls them only mildly dangerous. Holly and mistletoe are listed as more of a concern, so keep all three out of reach.
   - q: Is a real or an artificial tree safer with a dog?
@@ -173,30 +173,23 @@ research:
 approvedBy: Paws & Passage Editors
 approvedOn: 2026-11-18
 ---
+A Christmas cabin with a dog comes down to four questions for the manager (minimum stay, the full total with one dog, cancellation, and whether this home takes dogs) and one plan for the tree. Holiday terms sit in the rental policy, not the pet page: A Blue Ridge Vacation, for one, says "There is a 5-night minimum requirement for major holidays" and lists Christmas. [[1]](https://www.ablueridgevacation.com/rental-and-cancellation-policies/)
 
-## The short answer
+**The short answer:**
 
-Booking a Christmas cabin with a dog comes down to four questions you ask the manager (minimum stay, the full total with one dog, cancellation, and whether this home takes dogs) and one hazard plan for the tree.
-
-- **We found no stated holiday pet surcharge** on the 38 manager pet pages in our dataset (a convenience sample, read 2026-11-18). That is not proof none exist, so ask for the total for your dates.
-- **Minimum stays and cancellation are where holiday terms show up.** A Blue Ridge Vacation says "There is a 5-night minimum requirement for major holidays" and lists Christmas. [[1]](https://www.ablueridgevacation.com/rental-and-cancellation-policies/) Aunt Bugs says some minimum stays apply "during holidays, peak periods, etc." and has a no-cancellation policy unless you buy its optional guarantee. [[2]](https://www.auntbugs.com/rental-policies/)
 - **The tree and what is under it cause most of the trouble.** The ASPCA says to secure the tree so it cannot tip, cover the tree water, and skip tinsel. [[3]](https://www.aspca.org/pet-care/general-pet-care/holiday-safety-tips)
 - **Chocolate and xylitol are the foods to take seriously.** Pet Poison Helpline calls chocolate highly toxic to dogs and xylitol toxic to dogs. [[4]](https://www.petpoisonhelpline.com/pet-safety-tips/winter-holiday-pet-poison-tips/)
-- **Find the emergency vet before you unpack.** Holiday hours vary, so call; we do not give hours because we cannot check any specific clinic for you.
+- **Find the emergency vet before you unpack.** Holiday hours vary, so call.
 
-For the gear: a gate for the tree-room doorway, a bed that rolls up and grips the floor, a stuffable chew toy for the hours when the tree is off limits, and boots only if the walks are on snow or salt. [Jump to the gear picks](#gear-for-the-evenings-and-the-cold-walks); the cold-weather coat question lives in our [cold-weather gear guide](/guides/cold-weather-dog-gear-for-winter-cabin-trips).
-
-To see whether a given home will take your dog at all, start with the [will my dog be accepted tool](/tools/will-my-dog-be-accepted). New Year's plans too? Read our [New Year's Eve guide](/guides/new-years-eve-with-a-dog-in-a-vacation-rental) next.
+Not sure the home takes your dog at all? Start with the [will my dog be accepted tool](/tools/will-my-dog-be-accepted).
 
 ## What to ask before you book a holiday week
 
-In the pages we read, holiday terms sat with the manager's rental or reservation policies rather than the pet page, and they may differ by home. Four questions cover most of it.
+**1. Is there a minimum stay for my dates?** A Blue Ridge Vacation requires 5 nights for major holidays including Christmas and 3 nights for minor holidays, and says peak seasons and holidays carry higher nightly rates. [[1]](https://www.ablueridgevacation.com/rental-and-cancellation-policies/) Aunt Bugs says some minimum stays apply "during holidays, peak periods, etc." but gives no numbers. [[2]](https://www.auntbugs.com/rental-policies/) Get the exact rule for your dates in writing.
 
-**1. Is there a minimum stay for my dates?** Two managers we read spell this out differently. A Blue Ridge Vacation requires 5 nights for major holidays including Christmas and 3 nights for minor holidays, and says peak seasons and holidays carry higher nightly rates. [[1]](https://www.ablueridgevacation.com/rental-and-cancellation-policies/) Aunt Bugs gives no numbers. [[2]](https://www.auntbugs.com/rental-policies/) So "Christmas week" might be a hard 5 nights at one manager and unspecified at another. Ask for the exact rule for your dates in writing.
+**2. What is the complete pet total?** None of the 38 managers' public pet pages we read (a small convenience sample, read 2026-11-18) stated a holiday pet surcharge, and the pet fees were flat or per-night figures. What differs is the room rate. Ask "what is the full total for these dates with one dog?" and compare with our [pet fees guide](/guides/how-vacation-rental-pet-fees-work).
 
-**2. What is the complete pet total?** In our reading of 38 managers' public pet pages, none stated a holiday pet surcharge. We re-opened 19 of those pages on 2026-11-18, mostly cabin and mountain managers, and still found none. The pet fees themselves were flat or per-night figures. What did differ is the room rate: A Blue Ridge Vacation says holidays carry higher nightly rates, which a dog fee does not capture. [[1]](https://www.ablueridgevacation.com/rental-and-cancellation-policies/) Ask "what is the full total for these dates with one dog?" and compare with our [pet fees guide](/guides/how-vacation-rental-pet-fees-work).
-
-**3. What does cancellation look like?** Holiday weeks can fill early, and winter travel can be disrupted by weather. Examples from pages we read on 2026-11-18:
+**3. What does cancellation look like?** Holiday weeks fill early and winter weather disrupts travel. Three examples from pages we read:
 
 | Manager | Cancellation wording on the page |
 | --- | --- |
@@ -204,122 +197,82 @@ In the pages we read, holiday terms sat with the manager's rental or reservation
 | Hearthside Cabin Rentals | Deposits non-refundable unless you buy the Reservation Guarantee (8%); refund at least 15 days before arrival for 1-5 bedroom cabins [[5]](https://hearthsidecabinrentals.com/frequently-asked-questions) |
 | Tahoe Vacation Rentals | Full refund 30 or more days before check-in; 50% from 7 to 30 days; none inside 7 days [[6]](https://www.tahoevacationrentals.com/reservation-information/) |
 
-These are three managers, not a pattern. Whatever the terms, ask whether a sick dog or a road closure changes anything, and whether the pet fee is refundable.
+These are three managers, not a pattern. Ask whether a sick dog or a road closure changes anything, and whether the pet fee is refundable.
 
-**4. Does the pet policy still apply?** Confirm the dog limit, any weight limit and whether the specific home accepts dogs. Our [how many dogs guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental) covers limits.
-
-## Gear for the evenings and the cold walks
-
-Four things do most of the work once the tree is booked in: a gate for the tree room, somewhere for the dog to settle, something to do, and boots only if the paths are icy or salted. The picks below are the ones that match this trip; more gates and pens are on our [pens and gates gear page](/gear/pens-and-gates); for a fleece or coat see the [cold-weather gear guide](/guides/cold-weather-dog-gear-for-winter-cabin-trips).
-
-**A gate for the tree room.** PetMD suggests a gate or pen around the tree, and a doorway gate is the least intrusive way to act on that in a house that is not yours. The North States MyPet Universal Petgate is 26 in high and adjusts to openings 26 to 42 in wide. It mounts by pressure with no tools, or with hardware to a solid surface, and the maker says to use the wall cups and never to use it at the top of a stairway when held only by tension. [[10]](https://northstatesind.com/north-states-mypet-universal-petgate/) It is for you if the tree stands in a room with a doorway: it keeps the dog off the tree, the water and the gifts while you cook or sleep. Skip it if the room has no doorway to gate, or if your dog jumps 26 inches; a closed door or crate time works better then. A gate this size does not circle a tree, and the maker claims no containment strength; the page says only that it is designed to securely block doorways, stairways and other spaces.  Ask the host before using the hardware mount. The hazards it protects against are listed further down, under [Holiday hazards for dogs](#holiday-hazards-for-dogs).
-
-{{pick:north-states-mypet-universal-petgate|For a tree room with a doorway|The maker lists a 26 in high gate for 26 to 42 in openings that mounts by pressure or, with hardware, to a solid surface.|https://northstatesind.com/north-states-mypet-universal-petgate/}}
-
-**A place to settle.** The Kurgo Loft Wander is a roll-up bed that gives the dog an obvious spot in a living room where the tree is off limits, and it grips the rental's floor: the maker lists a waterproof, nonslip bottom and a water-resistant ripstop top. It comes in Medium (27 x 36 in) and Large (36 x 48 in, rolling to 17 x 9.5 in), and the maker says it can be machine washed on a gentle cycle. [[13]](https://www.kurgo.com/p/loft-wander-dog-bed/K01560) The page lists no dog weight guide, so choose the size by how your dog lies down. It is for the dog that follows you from room to room; skip it if your dog already has a travel bed it likes.
-
-{{pick:kurgo-loft-wander-dog-bed|A place to settle|The maker lists a roll-up bed with a water-resistant ripstop top and a waterproof, nonslip bottom, in Medium and Large, washable by machine or by hand.|https://www.kurgo.com/p/loft-wander-dog-bed/K01560}}
-
-**Something to do while the tree is off limits.** The KONG Classic is a stuffable natural rubber toy in six size bands by dog weight, such as L for 30 to 65 lb and XL for 60 to 90 lb, so a few minutes of stuffing gives a dog something to do away from the tree. The maker says supervised use only, to discontinue use if damaged, and that no toy is indestructible. [[14]](https://www.kongcompany.com/kong-classic/) It is for dogs that settle with a chew while you are in the room; skip it for a dog that tears toys apart, and it is no substitute for exercise.
-
-{{pick:kong-classic|For when the tree is off limits|The maker publishes a size chart by dog weight, says to use it under supervision, and says no toy is indestructible.|https://www.kongcompany.com/kong-classic/}}
-
-**Boots, only for snow, ice or salted paths.** The Ruffwear Polar Trex is the pair to look at for a dog that will walk salted or icy paths from the car to the trail: the maker lists a waterproof, windproof softshell upper and traction lugs for ice and snow. [[18]](https://ruffwear.com/products/polar-trex-winter-dog-boots) It is sold as a set of two, not four, and sized by paw width from 1.50 to 3.25 in, so measure each paw and check the count. The page gives no temperature rating or insulation figure, and the waterproof and traction wording is the maker's with no test named. Skip them if your walks are clear and dry or your dog will not wear boots; try them indoors first. Our [cold-weather gear guide](/guides/cold-weather-dog-gear-for-winter-cabin-trips) covers fit and de-icer in full.
-
-{{pick:ruffwear-polar-trex-boots|For snow, ice and salted paths: a set of two|The maker lists a waterproof, windproof softshell upper, traction lugs, a set of two, and sizing by paw width from 1.50 to 3.25 in; it gives no insulation rating or temperature range.|https://ruffwear.com/products/polar-trex-winter-dog-boots}}
-
-Whatever you pick, check the size chart and the return terms on each listing, and do not buy on a temperature rating: the maker pages we read state none.
+**4. Does the pet policy still apply?** Confirm the dog limit, any weight limit and whether this specific home accepts dogs. Our [how many dogs guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental) covers limits.
 
 ## Holiday hazards for dogs
 
-Most holiday emergencies come from things within reach of a nose. The ASPCA, Pet Poison Helpline and PetMD pages we read agree on the main ones.
+Most holiday emergencies come from things within reach of a nose.
 
-- **Tree water.** The ASPCA says to make sure tree water is "covered and/or inaccessible to curious pets." [[3]](https://www.aspca.org/pet-care/general-pet-care/holiday-safety-tips) PetMD adds that chemical preservatives can make the water toxic and suggests a gate or pen as the safest fix. [[7]](https://www.petmd.com/dog/general-health/tips-for-keeping-dog-safe-around-christmas-tree)
-- **Tinsel and strings.** The ASPCA says ingested tinsel can cause "severe vomiting, obstructed digestive tract, dehydration" and may need surgery. [[3]](https://www.aspca.org/pet-care/general-pet-care/holiday-safety-tips) PetMD says to leave tinsel, strings and candy canes off the tree. [[7]](https://www.petmd.com/dog/general-health/tips-for-keeping-dog-safe-around-christmas-tree)
-- **Ornaments and decorations.** The ASPCA warns that shards of breakable ornaments can damage the mouth and digestive tract. [[3]](https://www.aspca.org/pet-care/general-pet-care/holiday-safety-tips) Pet Poison Helpline says snow globes and bubble lights may contain poisonous chemicals. [[4]](https://www.petpoisonhelpline.com/pet-safety-tips/winter-holiday-pet-poison-tips/)
-- **Cords.** A chewed wire can deliver a potentially lethal shock, says the ASPCA. [[3]](https://www.aspca.org/pet-care/general-pet-care/holiday-safety-tips)
-- **Poinsettia, holly and mistletoe.** The ASPCA says poinsettias cause mild to moderate stomach irritation, while mistletoe and holly can cause stomach upset and heart and circulation problems. [[3]](https://www.aspca.org/pet-care/general-pet-care/holiday-safety-tips) Pet Poison Helpline says poinsettias are only mildly dangerous and that American mistletoe may cause mild stomach upset (and serious poisoning is not likely), but holly leaves can damage the stomach and intestines. [[8]](https://www.petpoisonhelpline.com/uncategorized/holiday-pet-poison-myths-debunked/) Two organizations, slightly different emphasis: keep all three out of reach.
-- **Chocolate and xylitol.** Pet Poison Helpline says chocolate contains theobromine, which is highly toxic to dogs, and xylitol, found in some sugar-free gum and candy, is toxic to dogs. [[4]](https://www.petpoisonhelpline.com/pet-safety-tips/winter-holiday-pet-poison-tips/)
-- **Rich food.** Leftover fatty meat scraps can cause severe inflammation of the pancreas, says Pet Poison Helpline. [[4]](https://www.petpoisonhelpline.com/pet-safety-tips/winter-holiday-pet-poison-tips/) The ASPCA lists fatty, sweet and spicy foods and turkey or chicken bones as dangerous. [[3]](https://www.aspca.org/pet-care/general-pet-care/holiday-safety-tips)
-- **Wrapped gifts.** The ASPCA notes that you cannot see inside a wrapped present, but a dog might smell it, so keep wrapped food and candy off the floor. [[3]](https://www.aspca.org/pet-care/general-pet-care/holiday-safety-tips)
+- **Tree water.** The ASPCA says to make sure tree water is "covered and/or inaccessible to curious pets." [[3]](https://www.aspca.org/pet-care/general-pet-care/holiday-safety-tips) PetMD adds that chemical preservatives can make the water toxic. [[7]](https://www.petmd.com/dog/general-health/tips-for-keeping-dog-safe-around-christmas-tree)
+- **Tinsel and strings.** The ASPCA says ingested tinsel can cause "severe vomiting, obstructed digestive tract, dehydration" and may need surgery.
+- **Ornaments and cords.** Shards of breakable ornaments can damage the mouth and digestive tract, and a chewed wire can deliver a potentially lethal shock, says the ASPCA. Pet Poison Helpline says snow globes and bubble lights may contain poisonous chemicals. [[4]](https://www.petpoisonhelpline.com/pet-safety-tips/winter-holiday-pet-poison-tips/)
+- **Poinsettia, holly and mistletoe.** The ASPCA says poinsettias cause mild to moderate stomach irritation, while mistletoe and holly can cause stomach upset and heart and circulation problems. Pet Poison Helpline calls poinsettias only mildly dangerous and says holly leaves can damage the stomach and intestines. [[8]](https://www.petpoisonhelpline.com/uncategorized/holiday-pet-poison-myths-debunked/) Keep all three out of reach.
+- **Chocolate and xylitol.** Chocolate contains theobromine, which is highly toxic to dogs, and xylitol, found in some sugar-free gum and candy, is toxic to dogs. [[4]](https://www.petpoisonhelpline.com/pet-safety-tips/winter-holiday-pet-poison-tips/)
+- **Rich food and wrapped gifts.** Leftover fatty meat scraps can cause severe inflammation of the pancreas. [[4]](https://www.petpoisonhelpline.com/pet-safety-tips/winter-holiday-pet-poison-tips/) The ASPCA lists fatty, sweet and spicy foods and turkey or chicken bones as dangerous, and notes that a dog might smell food inside a wrapped present. [[3]](https://www.aspca.org/pet-care/general-pet-care/holiday-safety-tips)
 
 ## A tree and gift plan for a house you do not own
 
-The sources above are written for a home you control. In a rental you may not be allowed to attach anything to the walls, and the owner may not want a live tree at all, so settle it before you arrive.
+In a rental you may not be allowed to attach anything to the walls, and the owner may not want a live tree at all.
 
-1. **Ask the host first.** Does the home allow a live tree, and is there a spot away from the fireplace? We could not confirm any manager's tree policy.
+1. **Ask the host first.** Does the home allow a live tree, and is there a spot away from the fireplace?
 2. **Pick the smaller, plainer tree.** PetMD suggests a gate or pen around the tree and a non-flocked tree, and notes artificial needles can also cause problems if chewed. [[7]](https://www.petmd.com/dog/general-health/tips-for-keeping-dog-safe-around-christmas-tree)
-3. **Make it hard to tip.** The ASPCA says the tree should be tightly secured so it cannot tip over onto a pet. [[3]](https://www.aspca.org/pet-care/general-pet-care/holiday-safety-tips) Choose a heavy, wide stand, and ask the host before you attach anything to walls or beams.
-4. **Cover or remove the water.** Use a covered stand, or skip water by choosing an artificial tree. If you use a live tree, NFPA says to add water daily, so the covered-water setup has to be one you can refill. [[9]](https://content.nfpa.org/-/media/project/storefront/catalog/files/safety-tip-sheets/christmastreesafetytips.pdf)
-5. **Decorate high and plain.** Skip tinsel and strings, put breakables up high and keep cords away from the bottom of the tree. PetMD suggests positioning lights away from the bottom and checking cords. [[7]](https://www.petmd.com/dog/general-health/tips-for-keeping-dog-safe-around-christmas-tree)
-6. **Handle gifts as food.** Keep wrapped food gifts out of reach until the morning, and clean up wrapping and ribbon the same day.
-7. **Plan for when you go out.** Our [leaving a dog alone guide](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental) covers rental rules. A dog that cannot be trusted around the tree can be kept in a different room or gated area while you are out.
+3. **Make it hard to tip.** The ASPCA says the tree should be tightly secured so it cannot tip over onto a pet. [[3]](https://www.aspca.org/pet-care/general-pet-care/holiday-safety-tips) Choose a heavy, wide stand, and ask before you attach anything to walls or beams.
+4. **Cover or remove the water.** Use a covered stand, or choose an artificial tree. For a live tree, NFPA says to add water daily, so the covered setup has to be refillable. [[9]](https://content.nfpa.org/-/media/project/storefront/catalog/files/safety-tip-sheets/christmastreesafetytips.pdf)
+5. **Decorate high and plain.** Skip tinsel and strings, put breakables up high and keep cords away from the bottom of the tree.
+6. **Keep wrapped food gifts out of reach** until the morning, and clear wrapping and ribbon the same day.
+7. **Plan for when you go out.** A dog that cannot be trusted around the tree can wait in another room or gated area; our [leaving a dog alone guide](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental) covers rental rules.
 
-PetMD's gate suggestion is the one you can pack: a doorway gate is the least intrusive way to act on it in a house that is not yours. The North States MyPet gate is in the [gear section](#gear-for-the-evenings-and-the-cold-walks) above, with its size range and mount limits. Ask the host before using any hardware mount.
+The practical version of PetMD's gate suggestion is a doorway gate on the tree room, below.
 
-## Fire and cold: only what the sources say
+## Gear for the evenings and the cold walks
 
-Fire first. NFPA and the ASPCA give three rules that travel well:
+Four things do most of the work: a gate for the tree room, somewhere to settle, something to chew, and boots only if the paths are icy or salted. More gates and pens are on our [pens and gates gear page](/gear/pens-and-gates); for a coat or fleece see the [cold-weather gear guide](/guides/cold-weather-dog-gear-for-winter-cabin-trips).
 
-- **Tree:** keep it at least three feet from any heat source such as fireplaces, radiators, candles, heat vents or lights; do not block an exit; add water daily; never decorate with lit candles; and turn off tree lights before leaving home or going to bed. [[9]](https://content.nfpa.org/-/media/project/storefront/catalog/files/safety-tip-sheets/christmastreesafetytips.pdf)
-- **Candles:** keep children and pets away from lit candles and blow them out when you leave the room or go to bed; NFPA says more than one-third of home decoration fires are started by candles. [[11]](https://content.nfpa.org/-/media/project/storefront/catalog/files/safety-tip-sheets/winterholidaysafetytips.pdf) The ASPCA adds not to leave candles unattended. [[3]](https://www.aspca.org/pet-care/general-pet-care/holiday-safety-tips)
-- **Fireplace:** neither source covers dogs and fireplaces specifically, so ask the host how the fireplace works and whether it has a screen.
+**A gate for the tree room.** The North States MyPet Universal Petgate is 26 in high and adjusts to openings 26 to 42 in wide. It mounts by pressure with no tools, or with hardware to a solid surface, and the maker says never to use it at the top of a stairway when held only by tension. [[10]](https://northstatesind.com/north-states-mypet-universal-petgate/) Ask the host before using the hardware mount. Skip it if the room has no doorway to gate, or if your dog jumps 26 inches; a closed door or crate time works better then. It will not circle a tree, and the maker claims no containment strength.
 
-For cold, the ASPCA says "if it's too cold for you, it's probably too cold for your pet," recommends washing and drying paws after walks, keeping de-icing chemicals out of reach, cleaning up antifreeze spills right away because it is deadly to dogs, and never leaving a dog alone in a car in cold weather. [[12]](https://www.aspca.org/pet-care/general-pet-care/cold-weather-safety-tips)
+{{pick:north-states-mypet-universal-petgate|For a tree room with a doorway|The maker lists a 26 in high gate for 26 to 42 in openings that mounts by pressure or, with hardware, to a solid surface.|https://northstatesind.com/north-states-mypet-universal-petgate/}}
 
-None of the sources we read gives a temperature at which a dog needs a coat or boots, so size gear to the dog and the walk, not to a number. Gear does not make a cold walk safe; the ASPCA rule above still applies. For coats and fleeces, see the [cold-weather gear guide](/guides/cold-weather-dog-gear-for-winter-cabin-trips).
+**A place to settle.** The Kurgo Loft Wander is a roll-up bed with a waterproof, nonslip bottom and a water-resistant ripstop top, in Medium (27 x 36 in) and Large (36 x 48 in). The maker says it can be machine washed on a gentle cycle. [[13]](https://www.kurgo.com/p/loft-wander-dog-bed/K01560) The page lists no dog weight guide, so choose the size by how your dog lies down.
+
+{{pick:kurgo-loft-wander-dog-bed|A place to settle|The maker lists a roll-up bed with a water-resistant ripstop top and a waterproof, nonslip bottom, in Medium and Large, washable by machine or by hand.|https://www.kurgo.com/p/loft-wander-dog-bed/K01560}}
+
+**Something to chew.** The KONG Classic is a stuffable rubber toy in size bands by dog weight; the maker says supervised use only and that no toy is indestructible. [[14]](https://www.kongcompany.com/kong-classic/) Skip it for a dog that tears toys apart.
+
+**Boots, only for snow, ice or salted paths.** The Ruffwear Polar Trex has a waterproof, windproof softshell upper and traction lugs for ice and snow, per the maker. [[18]](https://ruffwear.com/products/polar-trex-winter-dog-boots) It is sold as a set of two, not four, and sized by paw width from 1.50 to 3.25 in. The page gives no temperature rating or insulation figure. Skip them if your walks are clear and dry; try them indoors first.
+
+{{pick:ruffwear-polar-trex-boots|For snow, ice and salted paths: a set of two|The maker lists a waterproof, windproof softshell upper, traction lugs, a set of two, and sizing by paw width from 1.50 to 3.25 in; it gives no insulation rating or temperature range.|https://ruffwear.com/products/polar-trex-winter-dog-boots}}
+
+Check the size chart and return terms on each listing, and do not buy on a temperature rating: the maker pages we read state none.
+
+## Fire and cold
+
+NFPA and the ASPCA give rules that travel well:
+
+- **Tree:** keep it at least three feet from any heat source such as fireplaces, radiators, candles, heat vents or lights; do not block an exit; and turn off tree lights before leaving home or going to bed. [[9]](https://content.nfpa.org/-/media/project/storefront/catalog/files/safety-tip-sheets/christmastreesafetytips.pdf)
+- **Candles:** keep pets away from lit candles and blow them out when you leave the room or go to bed; NFPA says more than one-third of home decoration fires are started by candles. [[11]](https://content.nfpa.org/-/media/project/storefront/catalog/files/safety-tip-sheets/winterholidaysafetytips.pdf) The ASPCA adds not to leave candles unattended. [[3]](https://www.aspca.org/pet-care/general-pet-care/holiday-safety-tips)
+- **Fireplace:** neither source covers dogs and fireplaces, so ask the host how it works and whether it has a screen.
+
+For cold, the ASPCA says "if it's too cold for you, it's probably too cold for your pet," and recommends washing and drying paws after walks, keeping de-icing chemicals out of reach, cleaning up antifreeze spills right away because it is deadly to dogs, and never leaving a dog alone in a car in cold weather. [[12]](https://www.aspca.org/pet-care/general-pet-care/cold-weather-safety-tips) No source we read gives a temperature at which a dog needs a coat or boots, so size gear to the dog and the walk.
 
 ## Find the emergency vet before you unpack
 
-A holiday is when you want to know where to go before you need it. PetMD says "Don't wait until a problem occurs to start Googling," and suggests asking your own vet or locals for recommendations, going straight to the nearest 24-hour hospital in an emergency and calling first where you can. [[15]](https://petmd.com/dog/care/what-do-if-your-pet-gets-sick-or-injured-vacation) It also says to bring your pet's medical records. [[15]](https://petmd.com/dog/care/what-do-if-your-pet-gets-sick-or-injured-vacation)
+PetMD says "Don't wait until a problem occurs to start Googling," and suggests asking your own vet or locals for recommendations and bringing your pet's medical records. [[15]](https://petmd.com/dog/care/what-do-if-your-pet-gets-sick-or-injured-vacation) We cannot check any clinic's hours on December 24, 25 or 26, so before you arrive:
 
-We cannot tell you what any clinic's hours are on December 24, 25 or 26. Before you arrive:
+- Find the 24-hour emergency hospital near the cabin and note the drive time, especially in mountain areas.
+- Call for its holiday hours, and save the number and address where they work without signal.
+- Ask the host which local vet they recommend.
+- Save ASPCA Animal Poison Control, 888-426-4435, [[16]](https://www.aspca.org/pet-care/animal-poison-control) and Pet Poison Helpline, 855-764-7661. [[17]](https://www.petpoisonhelpline.com/) Both say they are available around the clock; the ASPCA says a consultation fee may apply and Pet Poison Helpline lists a per-incident fee.
 
-- Search for 24-hour emergency hospitals near the cabin and note the drive time, especially in mountain areas.
-- Call or check each clinic's website for its holiday hours and save the phone number and address in your phone, where it works without signal.
-- Ask the host or manager which local vet they recommend.
-- Save the poison hotlines: ASPCA Animal Poison Control 888-426-4435 [[16]](https://www.aspca.org/pet-care/animal-poison-control) and Pet Poison Helpline 855-764-7661. [[17]](https://www.petpoisonhelpline.com/) Both say they are available around the clock. The ASPCA says a consultation fee may apply and Pet Poison Helpline lists a per-incident fee, so check the current terms on their pages.
+## Before you go
 
-## Packing and arrival checklist
-
-- [ ] Vaccination records and your vet's phone number, plus notes on any ongoing conditions.
-- [ ] Your dog's usual food, a few extra days' worth, and treats so you are not tempted by table scraps.
-- [ ] Any current medication your vet has prescribed, in original packaging. Ask your vet about dosing questions; we give none.
-- [ ] Gate, bed and chew toy: see the gear section above. Our [cabin packing list](/guides/dog-friendly-cabin-packing-list) covers the rest.
-- [ ] ID tag with a number you will answer, and a current microchip record.
-- [ ] Paw wipes and a towel for wet or salty feet. [[12]](https://www.aspca.org/pet-care/general-pet-care/cold-weather-safety-tips)
-- [ ] On arrival: walk the house for loose cords, fireplace access, plants and small objects within reach.
-- [ ] Save the emergency vet and poison numbers before your first night.
-
-Use the [packing list tool](/tools/packing-list) to build the full list, and the [trip checklist](/tools/checklist) for the booking steps.
+Pack records, usual food, medication in original packaging, an ID tag with a number you will answer, and paw wipes and a towel for salty feet. [[12]](https://www.aspca.org/pet-care/general-pet-care/cold-weather-safety-tips) On arrival, walk the house for loose cords, fireplace access, plants and small objects within reach. Our [cabin packing list](/guides/dog-friendly-cabin-packing-list) covers the rest, and the [packing list tool](/tools/packing-list) and [trip checklist](/tools/checklist) build your own.
 
 ## How sure we are
 
-- **Confirmed by a source we cite:** the hazards and tips above come from the ASPCA, Pet Poison Helpline, NFPA and PetMD pages we read on 2026-11-18, and the quoted booking terms from the named manager pages.
-- **What our sample shows (3 or more independent pages, not a survey):** none of 38 managers' public pet pages, a small non-random convenience sample read 2026-11-18, stated a holiday pet surcharge; 19 were re-opened the same day. That does not prove none exist.
-- **Unknown:** your host's tree rule, your dates' minimum stay and your area's holiday vet hours. Ask the host or call the clinic.
-
-## What we could not confirm
-
-| Question | Why it matters | Check for yourself |
-| --- | --- | --- |
-| Whether a specific home allows a live tree | Some owners may say no | Ask the host before booking |
-| Holiday minimum stay and rates for your dates | Rules vary and many pages give no numbers | Ask for them in writing |
-| Holiday hours of the nearest emergency vet | Hours change on holidays and we did not check any clinic | Call the clinic and save the number |
-| Whether the fireplace has a screen or is gas or wood | We found no dog-specific fireplace source | Ask the host and photograph it on arrival |
-| Poison hotline fee amounts | Fees can change | See the ASPCA and Pet Poison Helpline pages |
-
-## What to buy first
-
-Settle the booking questions first, because a minimum stay or a no-tree rule changes what you pack. Then, in this order:
-
-1. **The booking answers,** in writing, before the deposit.
-2. **A gate for the tree-room doorway,** if the room has one and the host allows it.
-3. **The bed and the chew toy,** because they carry the evenings in a room where the tree is off limits.
-4. **Boots,** such as the Polar Trex, only if the walks will be on snow, ice or salted paths; for a coat, read the [cold-weather gear guide](/guides/cold-weather-dog-gear-for-winter-cabin-trips).
-
-Check the size chart and return terms on each listing, and build the rest in the [packing list tool](/tools/packing-list) and the [trip checklist](/tools/checklist).
+The hazards come from the ASPCA, Pet Poison Helpline, NFPA and PetMD pages we read on 2026-11-18, and the booking terms from the named manager pages. We could not confirm your host's tree rule, your dates' minimum stay or your area's holiday vet hours; ask the host or call the clinic.
 
 ## Next step
 
-Before you pay a deposit, ask the four booking questions above and write down the answers. Then build your trip list in the [packing list tool](/tools/packing-list). Planning for the night of December 31 as well? Our [New Year's Eve guide](/guides/new-years-eve-with-a-dog-in-a-vacation-rental) picks up where this one ends.
+Before you pay a deposit, ask the four booking questions and write down the answers. Planning for the night of December 31 as well? Our [New Year's Eve guide](/guides/new-years-eve-with-a-dog-in-a-vacation-rental) picks up where this one ends.

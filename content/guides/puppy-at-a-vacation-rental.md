@@ -168,19 +168,19 @@ Five of the 38 managers' public pet pages we read (a convenience sample, read 20
 - [Beach Realty & Construction](https://www.beachrealtync.com/node/707) (Outer Banks): "Puppies and certain breeds ... are not permitted in Beach Realty properties."
 - [Resort Realty](https://resortrealty.com/outer-banks-pet-friendly) (Outer Banks): "no puppies are permitted."
 
-Ask three things first: the minimum age, whether a puppy counts toward the pet limit and fee, and who pays for an accident. A message you can paste is [further down](#what-to-send-the-host), and the [will my dog be accepted tool](/tools/will-my-dog-be-accepted) helps you line up your answers.
+Ask three things first: the minimum age, whether a puppy counts toward the pet limit and fee, and who pays for an accident. A [message you can paste](#what-to-send-the-host) is below, and the [will my dog be accepted tool](/tools/will-my-dog-be-accepted) helps you line up your answers.
 
 ## Age rules, in the managers' own words
 
 The numbers differ: 18 months at two managers, 1 year at Emmons Realty, and no age at all at the two Outer Banks managers, who simply exclude puppies. The wording also reaches past age. Tahoe Getaways pairs its line with "well-traveled, adult dogs," and [Beach Realty](https://www.beachrealtync.com/node/707) describes its general rule as "two adult, house-trained dogs."
 
-"House-trained" also appears as its own requirement at A Blue Ridge Cabin Rental, Beach Realty and Resort Realty ("housebroken"), which a young puppy may not meet even where no age is given. The other 33 managers did not state a minimum age on the pages we read. That is not a promise that they accept puppies; the page was silent, so you still need the answer in writing.
+"House-trained" also appears as its own requirement at A Blue Ridge Cabin Rental, Beach Realty and Resort Realty ("housebroken"), which a young puppy may not meet even where no age is given. The other 33 managers did not state a minimum age on the pages we read. Silence is not a promise that they accept puppies.
 
 ## Does a puppy count as a pet and as a dog?
 
-Limits and fees are usually written per pet or per dog, and the five pages count animals, not ages. Tahoe Getaways says guests "may bring up to two well-traveled, adult dogs" with "$35/night pet fee per dog." A Blue Ridge Cabin Rental allows "a maximum of two (2) pets" and charges "a non-refundable pet fee of $150 per pet" ([Tahoe Getaways](https://tahoegetaways.com/policies), [A Blue Ridge Cabin Rental](https://ablueridgecabinrental.com/cabin-policies/)). None of the five quoted a lower rate or a separate limit for puppies.
+Limits and fees are usually written per pet or per dog, and the five pages count animals, not ages. Tahoe Getaways says guests "may bring up to two well-traveled, adult dogs" with "$35/night pet fee per dog" ([Tahoe Getaways](https://tahoegetaways.com/policies)). A Blue Ridge Cabin Rental allows "a maximum of two (2) pets" and charges "a non-refundable pet fee of $150 per pet" ([A Blue Ridge Cabin Rental](https://ablueridgecabinrental.com/cabin-policies/)). None of the five quoted a lower rate or a separate limit for puppies.
 
-Treat a puppy as a full dog for counting until the manager says otherwise. Ask whether the puppy uses one of the pet slots, whether the fee is charged at the full rate, and whether a second dog changes either answer. The mechanics are in [how pet fees work](/guides/how-vacation-rental-pet-fees-work) and [how many dogs you can bring](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental). On Airbnb or another platform, message the host and ask the age question before you book; the [pet-friendly rental checklist](/guides/pet-friendly-vacation-rental-checklist) lists what else to confirm.
+Treat a puppy as a full dog for counting until the manager says otherwise. The mechanics are in [how pet fees work](/guides/how-vacation-rental-pet-fees-work) and [how many dogs you can bring](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental). On Airbnb or another platform, the same message goes to the host; the [pet-friendly rental checklist](/guides/pet-friendly-vacation-rental-checklist) lists what else to confirm.
 
 ## Age and vaccination
 
@@ -188,13 +188,13 @@ This guide gives no vaccine schedule. The [CDC](https://www.cdc.gov/healthy-pets
 
 ## What to send the host
 
-Send this before you book, and keep the reply:
+Send this before you book and keep the reply, which you can quote at checkout:
 
 "Hello, we are considering [property] for [dates]. We would bring one puppy, about [age] months old. Is a dog of that age allowed, and does the puppy count as a dog for your pet limit and pet fee? Please confirm the total pet charge for our dates, whether it covers any damage or cleaning, whether a deposit or card hold applies, and whether the puppy may be left alone or must be crated. Thank you."
 
-If the answer is no, you have lost an email, not a booking. If it is yes, you have a written answer to quote at checkout.
+If the answer is no, you have lost an email, not a booking.
 
-## Accidents and the damage-and-cleaning risk
+## Accidents and who pays for them
 
 A puppy that has not finished house training will have accidents in a new place. The [ASPCA](https://www.aspca.org/news/house-training-your-dog-or-puppy) puts it plainly: "House training is not an exact science," and there is "no sure-fire formula or timetable" that works for every dog.
 
@@ -208,9 +208,9 @@ So a pet fee is not damage cover. None of the five pages described a separate pu
 
 To lower the odds, use the [ASPCA](https://www.aspca.org/news/house-training-your-dog-or-puppy)'s approach: limit the puppy to "one or two rooms where you are able to see her," take her out often, and if there is a mess, "just clean it up and soldier on," because "a dog will not learn anything by being scolded for a past accident." A bathroom or tiled kitchen is easier to wipe than a rug, and you can close a door or use a baby gate.
 
-For the floor and the sleeping spot, the Pet Parents Pawtect Pads suit a puppy that is not yet reliably house-trained. The maker lists four sizes, from Extra Small (18 x 24 in) to Large (41 x 41 in), two pads to a pack, with an absorbency layer, a waterproof backing and a floor-gripping backing, all machine washable ([Pet Parents](https://petparentsbrand.com/products/washable-puppy-pads)). That is one set you wash and reuse instead of a stack of disposables, and you can measure the sleeping spot and pick the size to match. The card button opens the smallest (18 x 24 in) pack, so pick your size on the listing. Skip them if the rental has no washer access or your puppy shreds fabric. The waterproof and wash-life statements are the maker's own.
+For the floor and the sleeping spot, the Pet Parents Pawtect Pads suit a puppy that is not yet reliably house-trained. The maker lists four sizes, from Extra Small (18 x 24 in) to Large (41 x 41 in), two pads to a pack, with an absorbency layer, a waterproof backing and a floor-gripping backing, all machine washable ([Pet Parents](https://petparentsbrand.com/products/washable-puppy-pads)). That is one set you wash and reuse instead of a stack of disposables, sized to the sleeping spot you measure. The card button opens the smallest (18 x 24 in) pack, so pick your size on the listing. Skip them if the rental has no washer access or your puppy shreds fabric.
 
-{{pick:pet-parents-pawtect-pads|Washable pads for the sleeping spot|The maker lists four sizes (18 x 24 in to 41 x 41 in), two per pack, with a waterproof backing and a floor-gripping backing, machine washable.|https://petparentsbrand.com/products/washable-puppy-pads}}
+{{pick:pet-parents-pawtect-pads|Washable pads for the sleeping spot|Reusable instead of disposable; confirm the size on the listing before you order.|https://petparentsbrand.com/products/washable-puppy-pads}}
 
 ## Crates and alone time
 
@@ -218,15 +218,15 @@ A rental is not the place to start crate training. The [ASPCA](https://www.aspca
 
 That limit is the real constraint on your day. A restaurant dinner, a boat tour or a long hike may not fit around a puppy that needs a break every hour or two. If you need time away, plan for a sitter or a dog-friendly activity; [can you leave a dog alone in a vacation rental](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental) covers the managers whose rules say crated or never alone.
 
-If your puppy already sleeps in a crate at home, bring one. The [ASPCA](https://www.aspca.org/pet-care/general-pet-care/introducing-your-dog-crate) suggests buying a size that fits the adult dog and using a divider while the puppy is small, because a crate that is too large lets a dog use one end as a toilet. The MidWest iCrate comes in sizes 18, 22, 24, 30, 36, 42 and 48 in, includes a divider panel and a removable leak-proof plastic pan, has a slide-bolt latch, and folds flat for the car ([MidWest Homes for Pets](https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/)). Match the size to your dog's expected adult length (your vet or breeder can give the range for your breed) and keep the divider in until the puppy grows into the space. The page gives no wire gauge, weights or folded dimensions, and some reviewers report latch and edge complaints, which are customer opinions, not specs, so test the latch before the trip. Skip it if you are not crate-training; use a gated room instead.
+If your puppy already sleeps in a crate at home, bring one. The [ASPCA](https://www.aspca.org/pet-care/general-pet-care/introducing-your-dog-crate) suggests buying a size that fits the adult dog and using a divider while the puppy is small, because a crate that is too large lets a dog use one end as a toilet. The MidWest iCrate comes in sizes 18, 22, 24, 30, 36, 42 and 48 in, includes a divider panel and a removable leak-proof plastic pan, has a slide-bolt latch, and folds flat for the car ([MidWest Homes for Pets](https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/)). Match the size to your dog's expected adult length (your vet or breeder can give the range for your breed) and keep the divider in until the puppy grows into the space. The page gives no wire gauge, weights or folded dimensions, so test the latch before the trip. Skip it if you are not crate-training; use a gated room instead.
 
-{{pick:midwest-icrate-dog-crate|For a divider and a flat fold|The maker lists sizes 18 to 48 in, an included divider panel, a removable pan and a flat fold, which matches the ASPCA's advice to size for the adult dog and use a divider.|https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/}}
+{{pick:midwest-icrate-dog-crate|For a divider and a flat fold|The divider lets you buy for the adult dog now and still keep a puppy-sized space.|https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/}}
 
 ### If the yard is not fenced
 
-If the yard is not fenced and the host allows a pen outdoors, a soft play yard gives the puppy a toilet-and-play space. The [Petmate](https://www.petmate.com/products/precision-pet-soft-side-play-yard) Precision Pet Soft Side Play Yard is foldable with ground stakes, has water-resistant fabric, eight ventilated mesh panels, a removable top and washable floor panels, and the maker lists use in backyards without fences. The page makes no claim about containment strength or chewing, so a determined puppy may get through mesh: treat it as a way to keep a watched puppy in one spot, not a fence. Skip it if the yard is already fenced or the host says no stakes in the ground.
+If the yard is not fenced and the host allows a pen outdoors, a soft play yard gives the puppy a toilet-and-play space. The [Petmate](https://www.petmate.com/products/precision-pet-soft-side-play-yard) Precision Pet Soft Side Play Yard is foldable with ground stakes, has water-resistant fabric, eight ventilated mesh panels, a removable top and washable floor panels, and the maker lists use in backyards without fences. The page makes no claim about containment strength or chewing, so a determined puppy may get through the mesh: treat it as a way to keep a watched puppy in one spot, not a fence. Skip it if the yard is already fenced or the host says no stakes in the ground.
 
-{{pick:petmate-precision-pet-soft-side-play-yard|For an unfenced yard|The maker lists eight mesh panels, ground stakes, a removable top and washable floor panels for indoor or outdoor use; its page makes no claim about containment strength or chewing.|https://www.petmate.com/products/precision-pet-soft-side-play-yard}}
+{{pick:petmate-precision-pet-soft-side-play-yard|For an unfenced yard the host allows|A watched puppy gets a defined toilet-and-play spot without a fenced yard.|https://www.petmate.com/products/precision-pet-soft-side-play-yard}}
 
 ## Chewing
 
@@ -234,7 +234,7 @@ Chewing is normal: the [ASPCA](https://www.aspca.org/pet-care/dog-care/common-do
 
 The [ASPCA](https://www.aspca.org/pet-care/dog-care/common-dog-behavior-issues/destructive-chewing)'s tips fit a short stay: give "plenty of his own toys and inedible chew bones," supervise and redirect to an approved chew, and when you cannot watch, use a confinement area with the things he should not chew removed. Before you let the puppy loose, scan at knee height for cords, shoes, throw pillows and plants. The [packing list tool](/tools/packing-list) has a place for the chews and blanket your dog knows.
 
-A stuffable rubber toy is the usual approved chew. The [KONG](https://www.kongcompany.com/kong-classic/) Classic comes in six size bands by dog weight, from XS (up to 5 lb) to XXL (85+ lb); the maker says to size up if between sizes, that the softer Puppy KONG is for puppies under 9 months, and that no toy is indestructible, with supervised use only. Stuff it while you are in the room, so the crate gets a good association (that use is our idea, not the maker's). Skip it for a dog that tears rubber apart.
+A stuffable rubber toy is the usual approved chew. The [KONG](https://www.kongcompany.com/kong-classic/) Classic comes in six size bands by dog weight, from XS (up to 5 lb) to XXL (85+ lb); the maker says to size up if between sizes, that the softer Puppy KONG is for puppies under 9 months, and that no toy is indestructible, with supervised use only. Stuff it while you are in the room. Skip it for a dog that tears rubber apart.
 
 {{pick:kong-classic|For supervised chewing|The maker publishes a size chart by dog weight and a softer Puppy KONG for under 9 months, and says to use it under supervision.|https://www.kongcompany.com/kong-classic/}}
 
@@ -246,13 +246,4 @@ A stuffable rubber toy is the usual approved chew. The [KONG](https://www.kongco
 4. Take the puppy out right before bed and again at the first sign of waking, and keep the routine from home.
 5. Keep towels, manager-approved cleaner and waste bags within reach. Report an accident to the host promptly if the manager's policy asks for it.
 
-## What to buy first
-
-First confirm the rental accepts your puppy, because that decides whether you need any of this. Then, in order:
-
-1. **The [MidWest iCrate](https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/) with its divider,** if your puppy already sleeps in a crate. If not, start with the pads.
-2. **The [Pawtect Pads](https://petparentsbrand.com/products/washable-puppy-pads)** for the floor and the sleeping spot, sized to that spot.
-3. **One [KONG Classic](https://www.kongcompany.com/kong-classic/)** in your puppy's weight band, for supervised chewing.
-4. **Optional: the [Petmate play yard](https://www.petmate.com/products/precision-pet-soft-side-play-yard),** only for an unfenced yard the host allows.
-
-Also settle an alone-time plan or a sitter before you go. Build the rest of the list in the [packing list tool](/tools/packing-list) and the [trip checklist](/tools/checklist).
+Settle an alone-time plan or a sitter before you go, and build the rest of the list in the [packing list tool](/tools/packing-list) and the [trip checklist](/tools/checklist).

@@ -39,7 +39,7 @@ describe("GearProductCard", () => {
       expect(html).toContain(`<h${level} class="gearcard-name"`);
     }
     const html = render(<GearProductCard product={base} />);
-    expect(html).toMatch(/<details[^>]*><summary>Details, fit &amp; sources/);
+    expect(html).toMatch(/<details[^>]*><summary>Specs, fit &amp; sources/);
     expect(html).not.toMatch(/<details[^>]* open/);
     expect(html).toContain('aria-label="Maker Thing Ramp"');
     // every svg is decorative
@@ -61,7 +61,7 @@ describe("GearProductCard", () => {
     const html = render(<GearProductCard product={live} />);
     const btn = html.indexOf("gearcard-cta");
     const quiet = html.indexOf("Details and specs");
-    const panel = html.indexOf("Details, fit &amp; sources");
+    const panel = html.indexOf("Specs, fit &amp; sources");
     if (quiet > -1) expect(btn).toBeLessThan(quiet);
     expect(btn).toBeGreaterThan(-1);
     expect(panel).toBeGreaterThan(btn);

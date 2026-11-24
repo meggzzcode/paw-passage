@@ -94,7 +94,7 @@ export function GearPicks({
               })()}
               <details className="gearcard-details mt-4 rounded-lg border border-border">
                 <summary>
-                  Details, fit &amp; sources
+                  Specs, fit &amp; sources
                   <ChevronDown aria-hidden="true" focusable="false" />
                 </summary>
                 <div className="gearcard-more">

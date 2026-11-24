@@ -138,7 +138,7 @@ export function GearProductCard({
   const details = (
     <details className="gearcard-details" data-gearcard-details="">
       <summary>
-        Details, fit &amp; sources
+        Specs, fit &amp; sources
         <ChevronDown aria-hidden="true" focusable="false" />
       </summary>
       <div className="gearcard-more">

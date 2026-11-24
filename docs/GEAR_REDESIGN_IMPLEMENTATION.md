@@ -15,7 +15,7 @@ Owner: worker G1. Code against `GearProductCard` from `src/components/site/GearP
 ```
 
 - Renders an `<article>` (put it inside your own `<li>`). Standard and featured cards carry `id={product.id}` for hash links; compact does not (avoids duplicate ids when a product is shown twice).
-- Order: purpose label in the graphic panel, brand, name, reason (`product.summary`), up to 3 `cardSpecs` chips, one "Check:" line (first guide watch-out, else a sentence from the record about restraint or testing), ONE primary CTA (link from `resolveProductLink`, `trackProductClick`, rel preserved; "Information only" text when no link), quiet "Details and specs" link to `/gear/<category>#id`, then native `<details>` "Details, fit & sources".
+- Order: purpose label in the graphic panel, brand, name, reason (`product.summary`), up to 3 `cardSpecs` chips, one "Check:" line (first guide watch-out, else a sentence from the record about restraint or testing), ONE primary CTA (link from `resolveProductLink`, `trackProductClick`, rel preserved; "Information only" text when no link), quiet "Details and specs" link to `/gear/<category>#id`, then native `<details>` "Specs, fit & sources".
 - No price, stock, rating, per-card affiliate label. Page-level disclosure stays with `GearDisclosure` (below).
 - Also exported: `useCaseFor`, `cautionFor`, `USE_CASE_LABEL`. `ProductSpecCard.tsx` exports `ProductSpecCard`, `productSpecCardHtml` (in-article pick cards), `SPEC_CARD_STYLE`, `styleFor`, `SpecGlyph`, `SpecMotif`. Styles live in `src/components/site/gear-card.css` (imported by ProductSpecCard).
 - Kept in `GearHubCards.tsx` (unchanged names): `GearDisclosure({ products })`, `HowWePick()`, and `GearProductCard({ product, variant?, hideDetailsLink? })`, a thin `<li>` wrapper over the shared card (defaults `hideDetailsLink` to true). New code should import the shared card directly.
@@ -75,7 +75,7 @@ Accuracy check of this file against the HEAD build: the card contract, the categ
 - **Product counts.** 92 product records, 65 active. The hub and category counts are: car-safety 10, car-interior 4, ramps-and-steps 5, feeding-and-hydration 9, pens-and-gates 8, comfort-and-cooling 7, water-and-beach 5, trail-and-hiking 7, cold-weather 3, safety-id-first-aid 9, rental-cleanup 9 (cross-listed products counted on both pages; 65 distinct products).
 - **Sleepypod Clickit Sport was retired** (inactive record, link not approved, removed from the trip collection and featured list, packing tool and three guides): 0 links and 0 slug in the HTML. See `docs/editorial/PASSG-SLEEPYPOD-RETIREMENT.md`.
 
-Still open from `docs/review/FINAL-GEAR-REVIEW.md`: the trip-view H1 stays generic ("Good gear. Better getaways.") for every `?trip=` view; both "Details and specs" and "Details, fit & sources" appear on each hub card; hero chips and inline card links were 36 to 39 px (not re-measured). Design spec and self-scoring: `docs/GEAR_SHOPPER_EXPERIENCE_SPEC.md`.
+Still open from `docs/review/FINAL-GEAR-REVIEW.md`: the trip-view H1 stays generic ("Good gear. Better getaways.") for every `?trip=` view; both "Details and specs" and "Specs, fit & sources" appear on each hub card; hero chips and inline card links were 36 to 39 px (not re-measured). Design spec and self-scoring: `docs/GEAR_SHOPPER_EXPERIENCE_SPEC.md`.
 
 ## How to add a product
 

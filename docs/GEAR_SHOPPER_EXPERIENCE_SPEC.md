@@ -71,7 +71,7 @@ One shared component, `GearProductCard` (`src/components/site/GearProductCard.ts
 5. One "Check:" line where the record supports one (for example restraints: the maker's securing instructions).
 6. One primary button, 44 px tall (183 x 44 at 320 px, REVIEW): "See it at Amazon" (wording follows the destination: "See it on <Maker>'s website" or "See it at <Retailer>"); an "Information only" line when there is no valid link.
 7. A quiet "Details and specs" link to `/gear/<category>#<product-id>` (hidden on the category page itself).
-8. A native details element "Details, fit & sources": full specs, what the maker says versus what an independent tester says, extra watch-outs, source links with the read date, related guides.
+8. A native details element "Specs, fit & sources": full specs, what the maker says versus what an independent tester says, extra watch-outs, source links with the read date, related guides.
 
 Never on a card: price, rating, review count, stock, a per-card affiliate label, a "Check the current price" line, or a repeated "sizes change" note (once per page). Safety qualifications that could mislead if hidden stay outside the collapsed panel.
 
@@ -112,7 +112,7 @@ The owner's target was 9 overall with no criterion under 8. The independent Gear
 | 2 | Photo-free visual design | 7 | 7 | VERIFIED 0 images. REVIEW: repeated identical banners per page start to look templated; unchanged |
 | 3 | Finding relevant products | 7 | 8 | Trip tiles, 11 category tiles, dog tiles, 5 curated trip views; the duplicate-product defect is fixed and verified (0 repeated URLs on every trip view). The trip heading does not change per trip, and there is no side-by-side or filter (rejected as a feature) |
 | 4 | Card readability | 8 | 8 | Purpose before specs, at most 3 chips, warning visible; two similar "details" labels remain (review defect 4, unchanged) |
-| 5 | CTA clarity | 8 | 8 | One primary "See it at Amazon" matching an Amazon destination, buy button first (VERIFIED); the secondary "Details and specs" link is still easy to confuse with "Details, fit & sources" |
+| 5 | CTA clarity | 8 | 8 | One primary "See it at Amazon" matching an Amazon destination, buy button first (VERIFIED); the secondary "Details and specs" link is still easy to confuse with "Specs, fit & sources" |
 | 6 | Mobile (320 / 390) | 8 | 8 | No overflow (VERIFIED at 390 and 1280; REVIEW at 320); 44 px buttons; 36 to 39 px chips and inline links not re-measured; no real-device check |
 | 7 | Trust and presentation | 8 | 8 | One notice, the Amazon sentence once, no prices or ratings, maker-versus-independent claims stated on the cards (VERIFIED); stay pages still show per-button labels and the disclosure page says all buttons do (section 8) |
 | 8 | Accessibility basics | 7 | 7 | VERIFIED one H1 per page, ordered headings, native details. UNVERIFIED: contrast ratios, keyboard walk-through and screen reader on real devices. Not scored higher without that evidence |

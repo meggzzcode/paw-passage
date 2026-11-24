@@ -43,7 +43,7 @@ function HeroComposition() {
   );
 }
 
-export function GearHero() {
+export function GearHero({ tripHeading }: { tripHeading?: string | undefined } = {}) {
   return (
     <section
       aria-labelledby="gear-hero-title"
@@ -52,7 +52,7 @@ export function GearHero() {
       <div className="max-w-xl">
         <p className="eyebrow">Dog travel essentials</p>
         <h1 id="gear-hero-title" className="mt-3 text-4xl leading-tight md:text-5xl">
-          Good gear. Better getaways.
+          {tripHeading ?? "Good gear. Better getaways."}
         </h1>
         <p className="mt-3 text-base text-muted-foreground md:text-lg">
           Thoughtful essentials for easier road trips, cozy cabin stays, and adventures with your

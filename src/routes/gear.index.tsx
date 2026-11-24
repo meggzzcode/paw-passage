@@ -64,7 +64,7 @@ function GearHub() {
   return (
     <div className="container-page pt-6 pb-16">
       <Breadcrumbs items={[{ label: "Home", to: "/" }, { label: "Travel essentials" }]} />
-      <GearHero />
+      <GearHero tripHeading={selected?.collection.heading} />
       <div className="[&>p]:mt-4 [&>p]:p-3 [&>p]:text-xs sm:[&>p]:text-sm">
         <GearDisclosure products={shown} />
       </div>

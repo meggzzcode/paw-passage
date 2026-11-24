@@ -1,8 +1,8 @@
 ---
-title: "Christmas Week in a Cabin With Your Dog: Minimum Stays, Cancellation and Tree Safety"
-seoTitle: "Christmas Cabin With a Dog: Booking Rules and Safety"
+title: "Christmas in a Cabin With Your Dog: Book It, Dog-Proof It"
+seoTitle: "Christmas Cabin With a Dog: Book It, Dog-Proof It"
 seoDescription: "Booking a Christmas cabin with your dog? Ask about minimum stays and cancellation, then dog-proof the tree, plants and fire, and pack the right gear."
-dek: Ask four questions before paying a holiday deposit, then keep the tree, tinsel, gifts and chocolate out of your dog's reach in a house you do not own.
+dek: Get the holiday terms in writing before you pay, then keep the tree, tinsel, gifts and chocolate out of your dog's reach in a house you do not own.
 category: Planning
 states: []
 status: published
@@ -173,7 +173,7 @@ research:
 approvedBy: Paws & Passage Editors
 approvedOn: 2026-11-18
 ---
-A Christmas cabin with a dog comes down to four questions for the manager (minimum stay, the full total with one dog, cancellation, and whether this home takes dogs) and one plan for the tree. Holiday terms sit in the rental policy, not the pet page: A Blue Ridge Vacation, for one, says "There is a 5-night minimum requirement for major holidays" and lists Christmas. [[1]](https://www.ablueridgevacation.com/rental-and-cancellation-policies/)
+Holiday terms sit in the rental policy, not the pet page: A Blue Ridge Vacation, for one, says "There is a 5-night minimum requirement for major holidays" and lists Christmas. Ask the manager for the minimum stay, the full total with one dog, the cancellation terms and whether this home takes dogs, in writing. [[1]](https://www.ablueridgevacation.com/rental-and-cancellation-policies/)
 
 **The short answer:**
 
@@ -197,7 +197,7 @@ Not sure the home takes your dog at all? Start with the [will my dog be accepted
 | Hearthside Cabin Rentals | Deposits non-refundable unless you buy the Reservation Guarantee (8%); refund at least 15 days before arrival for 1-5 bedroom cabins |
 | Tahoe Vacation Rentals | Full refund 30 or more days before check-in; 50% from 7 to 30 days; none inside 7 days |
 
-Sources for this table: [[5]](https://hearthsidecabinrentals.com/frequently-asked-questions), [[6]](https://www.tahoevacationrentals.com/reservation-information/)
+Sources for this table: [[2]](https://www.auntbugs.com/rental-policies/), [[5]](https://hearthsidecabinrentals.com/frequently-asked-questions), [[6]](https://www.tahoevacationrentals.com/reservation-information/)
 
 These are three managers, not a pattern. Ask whether a sick dog or a road closure changes anything, and whether the pet fee is refundable.
 
@@ -240,7 +240,7 @@ Four things do most of the work: a gate for the tree room, somewhere to settle, 
 
 {{pick:kurgo-loft-wander-dog-bed|A place to settle|The maker lists a roll-up bed with a water-resistant ripstop top and a waterproof, nonslip bottom, in Medium and Large, washable by machine or by hand.|https://www.kurgo.com/p/loft-wander-dog-bed/K01560}}
 
-**Something to chew.** The KONG Classic is a stuffable rubber toy in size bands by dog weight; the maker says supervised use only and that no toy is indestructible. [[14]](https://www.kongcompany.com/kong-classic/) Skip it for a dog that tears toys apart.
+**Something to chew.** For a dog that settles with a stuffed toy while you cook, the KONG Classic is a stuffable rubber toy in size bands by dog weight; the maker says supervised use only and that no toy is indestructible. [[14]](https://www.kongcompany.com/kong-classic/) Skip it for a dog that tears toys apart.
 
 **Boots, only for snow, ice or salted paths.** The Ruffwear Polar Trex has a waterproof, windproof softshell upper and traction lugs for ice and snow, per the maker. [[18]](https://ruffwear.com/products/polar-trex-winter-dog-boots) It is sold as a set of two, not four, and sized by paw width from 1.50 to 3.25 in. The page gives no temperature rating or insulation figure. Skip them if your walks are clear and dry; try them indoors first.
 

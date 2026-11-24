@@ -1,8 +1,8 @@
 ---
-title: "Cold-Weather Dog Gear for Winter Cabin Trips: Coat, Boots and Fit"
+title: "Cold-Weather Dog Gear for Winter Cabin Trips: Coat or Boots"
 seoTitle: "Dog Coat or Boots for Winter? Cold Limits"
 seoDescription: "Does your dog need a coat or boots at a winter cabin? See how cold is too cold by dog type, salt and de-icer paw care, size charts and what to buy first."
-dek: Boots matter on salted or icy paths; a fleece matters for small, thin-coated, old or sick dogs on dry walks. Here is how to size both.
+dek: Vets and brands give four different cold limits and no rating for your dog. Here is how to read them, size a layer and keep salt off the paws.
 category: Planning
 states: []
 status: published
@@ -153,15 +153,15 @@ Salt and ice decide whether your dog needs boots; size, age and coat decide whet
 
 ## At a glance: our picks
 
-- **Salted or icy paths:** Ruffwear Polar Trex boots, sized by paw width, or a wipe-down routine if your dog will not wear them. [[11]](https://ruffwear.com/products/polar-trex-winter-dog-boots)
-- **Small, thin-coated, old or sick dog on dry, cold walks:** [Ruffwear](https://ruffwear.com/products/climate-changer-fleece-dog-jacket) Climate Changer Fleece, sized by chest girth.
-- **Dog already on a harness:** [Ruffwear](https://ruffwear.com/products/timberline-fuse-fleece-vest) Timberline Fuse Fleece Vest, which saves a layer.
+- **Boots:** Ruffwear Polar Trex, sized by paw width, or a wipe-down routine if your dog will not wear them. [[11]](https://ruffwear.com/products/polar-trex-winter-dog-boots)
+- **Fleece:** [Ruffwear](https://ruffwear.com/products/climate-changer-fleece-dog-jacket) Climate Changer Fleece, sized by chest girth, for the dog that shivers.
+- **Harness plus warmth:** [Ruffwear](https://ruffwear.com/products/timberline-fuse-fleece-vest) Timberline Fuse Fleece Vest, which saves a layer.
 - **Every dog:** a towel for the door, such as the Soggy Doggy Super Shammy. [[12]](https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey)
-- **Skip boots** on clear, dry paths. **Skip the fleece** for a thick double coat. For wet snow or well below freezing, neither fleece is an insulated, windproof shell, and we feature no such coat.
+- **Skip boots** on clear, dry paths. **Skip the fleece** for a thick double coat. For wet snow or well below freezing, neither fleece is a shell, and we feature no such coat: shop for an insulated, windproof, water-resistant coat and size it by chest girth, as above.
 
 ## How cold is too cold, by dog type
 
-The sources agree on the pattern and differ on the numbers. PetMD, written by a veterinarian, says cold should not become a problem for most dogs until below 45 F, that small, thin-coated, very young, old or sick dogs could be in danger below 32 F, and that below 20 F "all pet parents need to be aware." [[1]](https://www.petmd.com/dog/care/how-cold-too-cold-dog) A Cornell veterinarian quoted by NBC Select says at 32 F and below, limit all dogs' time outside, and below 20 F only very short bathroom breaks. [[5]](https://www.nbcnews.com/select/shopping/how-to-keep-dogs-warm-winter-rcna239641) PetSmart says under 40 F can become risky and suggests 10 to 15 minutes, supervised, below freezing. [[6]](https://www.petsmart.com/learning-center/dog-care/how-cold-is-too-cold-for-dogs) ASPCA gives no number: if it is too cold for you, it is probably too cold for your pet. [[4]](https://www.aspca.org/pet-care/general-pet-care/cold-weather-safety-tips) Wind and wet fur make every band feel colder.
+The sources agree on the pattern and differ on the numbers. PetMD, written by a veterinarian, says cold should not become a problem for most dogs until below 45 F, that small, thin-coated, very young, old or sick dogs could be in danger below 32 F, and that below 20 F "all pet parents need to be aware." [[1]](https://www.petmd.com/dog/care/how-cold-too-cold-dog) A Cornell veterinarian quoted by NBC Select says at 32 F and below, limit all dogs' time outside, and below 20 F only very short bathroom breaks. [[5]](https://www.nbcnews.com/select/shopping/how-to-keep-dogs-warm-winter-rcna239641) PetSmart says under 40 F can become risky and suggests 10 to 15 minutes, supervised, below freezing. [[6]](https://www.petsmart.com/learning-center/dog-care/how-cold-is-too-cold-for-dogs) ASPCA gives no number: if it is too cold for you, it is probably too cold for your pet. [[4]](https://www.aspca.org/pet-care/general-pet-care/cold-weather-safety-tips) A brisk breeze and wet fur reduce insulation, so every band feels colder.
 
 | Dog | What the sources say, and what it suggests (our reading in italics) |
 | --- | --- |
@@ -170,7 +170,7 @@ The sources agree on the pattern and differ on the numbers. PetMD, written by a 
 | Small or toy breed | Smaller dogs lose heat faster, and deep snow can reach the chest. *Cover belly and chest.* |
 | Puppy, senior or ill dog | Regulate body temperature less well. *Use the cautious end of every number; ask your vet.* |
 
-Sources for this table: [[7]](https://outwardhound.com/furtropolis/dogs/how-cold-is-too-cold-for-dogs)
+Sources: [PetMD](https://www.petmd.com/dog/care/how-cold-too-cold-dog), [Cornell](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/winter-safety-tips), [ASPCA](https://www.aspca.org/pet-care/general-pet-care/cold-weather-safety-tips), [Outward Hound](https://outwardhound.com/furtropolis/dogs/how-cold-is-too-cold-for-dogs)
 
 Cornell says full-body coverage can limit snowball buildup on a small dog's belly and chest, and PetMD says active dogs may make enough body heat to stay comfortable. [[2]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/winter-safety-tips) [[1]](https://www.petmd.com/dog/care/how-cold-too-cold-dog) At a cabin, a dog standing on a deck while you unload is not moving.
 
@@ -225,6 +225,6 @@ Cornell says ethylene glycol antifreeze can be deadly to pets and to clean up sp
 
 ## What we could not confirm
 
-The right temperature for your dog (sources give 45, 40, 32 and 20 F, and none is a per-dog rule; ask your vet), how warm any Ruffwear item is (no maker gives a rating), whether a boot or coat is waterproof in practice (the claims are the makers', with no test named), and what your host puts on paths or lets you wash (ask in writing). Everything on a maker's page is the maker's own claim; sources were read 2026-11-19.
+The right temperature for your dog (sources give 45, 40, 32 and 20 F, and none is a per-dog rule; ask your vet), how warm any Ruffwear item is (no maker gives a rating), whether a boot or coat is waterproof in practice (the claims are the makers', with no test named), and what your host puts on paths or lets you wash (ask in writing). Sources were read 2026-11-19.
 
 Before you go, measure paws and chest, add the towel to the [packing list tool](/tools/packing-list), look over the [winter travel gear page](/gear/winter-travel), and run the [pre-booking checklist](/tools/checklist) with the question about what the host puts on paths.

@@ -34,7 +34,6 @@ relatedGuides:
 relatedProducts:
   - midwest-icrate-dog-crate
   - north-states-mypet-universal-petgate
-  - kong-classic
 relatedTools:
   - checklist
 sources:
@@ -110,10 +109,6 @@ sources:
     url: https://northstatesind.com/north-states-mypet-universal-petgate/
     publisher: North States
     accessedOn: 2026-11-18
-  - title: KONG Classic
-    url: https://www.kongcompany.com/kong-classic/
-    publisher: KONG Company
-    accessedOn: 2026-11-18
 research:
   primaryKeyword: leave dog alone in vacation rental
   relatedKeywords:
@@ -184,14 +179,16 @@ Airbnb and Vrbo leave this to each host, and "pet-friendly" says nothing about i
 ## The short answer
 
 - **Silence is not a yes.** [Airbnb](https://www.airbnb.com/resources/hosting-homes/a/what-you-need-to-know-about-hosting-pets-463)'s hosting guidance says hosts should state in their house rules whether it is okay to leave a pet unattended.
-- There is no standard number of safe hours; it depends on your dog, and the [ASPCA](https://www.aspca.org/pet-care/dog-care/common-dog-behavior-issues/separation-anxiety)'s test is whether you are back before your dog gets upset.
-- A new place changes things. A dog that is fine alone at home may howl or be destructive in unfamiliar surroundings ([Afar](https://www.afar.com/magazine/how-to-find-a-pet-friendly-airbnb-or-vacation-rental)).
 
 A message you can copy is [below](#what-should-i-ask-the-host-before-booking).
 
+## How long is too long to leave a dog alone?
+
+There is no agreed number, so judge your dog: the [ASPCA](https://www.aspca.org/pet-care/dog-care/common-dog-behavior-issues/separation-anxiety) plans absences shorter than the time it takes the dog to become upset, and in a new place that may be shorter than at home. A 2018 [Psychology Today](https://www.psychologytoday.com/gb/blog/all-dogs-go-heaven/201802/how-long-is-too-long-leave-dog-home-alone) column says trainers and vets loosely agree on about four hours for an adult dog, with puppies less; that is one writer's summary, not a study. A new place also changes things: a dog that is fine alone at home may howl or be destructive in unfamiliar surroundings ([Afar](https://www.afar.com/magazine/how-to-find-a-pet-friendly-airbnb-or-vacation-rental)).
+
 ## Is it allowed?
 
-Check the House rules section: Airbnb says a listing's pet policy lives there, and Vrbo says guests must agree to the house rules before they book. If they are silent, you have an unanswered question, not permission ([Airbnb](https://www.airbnb.com/help/article/86), [Vrbo](https://help.vrbo.com/articles/What-are-House-Rules)). Neither platform sets a rule on leaving pets alone. Our [pet fees guide](/guides/how-vacation-rental-pet-fees-work) covers other differences between them.
+Check the House rules section: Airbnb says a listing's pet policy lives there, and Vrbo says guests must agree to the house rules before they book. If they are silent, ask ([Airbnb](https://www.airbnb.com/help/article/86), [Vrbo](https://help.vrbo.com/articles/What-are-House-Rules)). Neither platform sets a rule on leaving pets alone. Our [pet fees guide](/guides/how-vacation-rental-pet-fees-work) covers other differences between them.
 
 ## What do hosts actually write?
 
@@ -236,15 +233,7 @@ Follow the listing, and only crate a dog that already accepts it. The [ASPCA](ht
 
 ## Can I leave a pet camera on?
 
-Not without asking. Airbnb's policy says hosts may not have cameras or recording devices that monitor indoor spaces, and it defines these as any device that records or transmits video, images or audio. The page does not address guests' own devices ([Airbnb](https://www.airbnb.com/help/article/3061)).
-
-What the page does say, about hosts:
-
-- Indoor cameras are not allowed, even when turned off.
-- Exterior cameras are allowed and must be disclosed in the listing, including where they are.
-- Noise decibel monitors must be disclosed, though their locations need not be.
-
-For a guest, the practical step is to ask the host before bringing a camera or any device that records or transmits. You may also see disclosed exterior cameras or noise monitors.
+Ask first. Airbnb's camera policy is written for hosts: indoor cameras are not allowed, even when off, and exterior cameras and noise monitors must be disclosed. It does not address guests' own devices ([Airbnb](https://www.airbnb.com/help/article/3061)). So ask the host before bringing anything that records or transmits video or audio.
 
 ## When should you not leave your dog?
 
@@ -253,20 +242,12 @@ These sources are general pet guidance, not rental rules. Skip the solo plan, or
 - **The first night or first hours.** The place is unfamiliar and you cannot know how your dog will react yet.
 - **Storms or fireworks.** Cornell's veterinary college says to stay home to comfort a fearful dog, that absence may make them more stressed, and to use a sitter the dog already trusts if you cannot be there. It also says frightened dogs may bolt, so ID collar and microchip details should be current ([Cornell Vet](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/fear-fireworks-and-thunderstorms)).
 - **Known separation anxiety or barking.** Signs include persistent barking, chewing and digging near doors and windows, escape attempts, and house soiling that does not happen when you are home; the [ASPCA](https://www.aspca.org/pet-care/dog-care/common-dog-behavior-issues/separation-anxiety) says anxious dogs should not be left alone outside planned practice sessions and suggests a sitter or daycare. A doorway used by a cleaner or visitor is a new escape point; see our [secure yard guide](/guides/vacation-rental-secure-fenced-yard).
-- **Hot or very cold weather, or unreliable heating or cooling.**
-  - Heat: the [ASPCA](https://www.aspca.org/pet-care/general-pet-care/hot-weather-safety-tips) says never to leave animals alone in a parked vehicle, and to give plenty of fresh water and a shady place. Do not solve "dogs not allowed on the trail" by leaving the dog in the car.
-  - Cold: the [ASPCA](https://www.aspca.org/pet-care/general-pet-care/cold-weather-safety-tips) says a car can hold the cold, and pets need a warm place to sleep, off the floor and away from drafts.
+- **Hot or very cold weather.** Never leave a dog in a parked car ([ASPCA heat](https://www.aspca.org/pet-care/general-pet-care/hot-weather-safety-tips) and [cold](https://www.aspca.org/pet-care/general-pet-care/cold-weather-safety-tips) guidance); see our [hot-weather guide](/guides/keep-a-dog-cool-on-a-summer-trip).
 - **A "no unattended pets" rule.** Do not rely on being quick or quiet.
 
-## How long is too long, and a settling-in routine
+## A settling-in routine
 
-There is no agreed number, so judge your dog: the [ASPCA](https://www.aspca.org/pet-care/dog-care/common-dog-behavior-issues/separation-anxiety) plans absences shorter than the time it takes the dog to become upset, and in a new place that may be shorter than at home. A 2018 [Psychology Today](https://www.psychologytoday.com/gb/blog/all-dogs-go-heaven/201802/how-long-is-too-long-leave-dog-home-alone) column says trainers and vets loosely agree on about four hours for an adult dog, with puppies less; that is one writer's summary, not a study.
-
-From the [ASPCA](https://www.aspca.org/pet-care/dog-care/common-dog-behavior-issues/separation-anxiety)'s guidance: give 30 minutes of aerobic activity before you go, leave a stuffed food toy that takes 20 to 30 minutes to finish, keep goodbyes quiet, and start with a short trial while you are nearby. Panting, trembling or yawning means shorten it.
-
-For the food toy, practise with a KONG Classic at home while you are in the room, so the first stuffed toy is not also the first night in a strange house. Do not leave one with your dog alone unless your vet agrees ([KONG](https://www.kongcompany.com/kong-classic/)).
-
-{{pick:kong-classic|Supervised use only: practice at home|Six size bands by dog weight, from XS (up to 5 lb) to XXL (85 lb and up); the maker says no toy is indestructible, so it is not an unattended-time answer.|https://www.kongcompany.com/kong-classic/}}
+From the [ASPCA](https://www.aspca.org/pet-care/dog-care/common-dog-behavior-issues/separation-anxiety)'s guidance: give 30 minutes of aerobic activity before you go, leave a stuffed food toy that takes 20 to 30 minutes to finish (supervise it at first; no toy is indestructible), keep goodbyes quiet, and start with a short trial while you are nearby. Panting, trembling or yawning means shorten it.
 
 ## What should I ask the host before booking?
 

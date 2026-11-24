@@ -162,7 +162,7 @@ approvedOn: 2026-11-18
 
 Airbnb's help pages set three clocks: you have 24 hours to respond to a damage request, the host has 14 days after checkout to file it, and you have 60 days to appeal a charge. Vrbo also gives the host 14 days. Find out which clock you are on before you pay or reply.
 
-This is general information from the platforms' help pages as of 2026-11-18, not legal advice. Already have a request? Jump to [what to write back](#what-to-write-back).
+Already have a request? Jump to [what to write back](#what-to-write-back).
 
 ## Do this first
 
@@ -179,13 +179,13 @@ You do not have to accept the number as sent. On [Airbnb](https://www.airbnb.com
 | Host claim window | 14 days from checkout | 14 days after the stay |
 | Appeal | 60 days after you are charged | Contact Us dispute; no deadline on the page |
 
-Two things trip people up. The 60 days to appeal is separate from the 60-day limit for new Resolution Center requests, which excludes damage claims ([Airbnb](https://www.airbnb.com/help/article/3591)). And an unanswered [Airbnb](https://www.airbnb.com/help/article/4291) request can be cancelled and resent within 60 days of checkout, so a late request is worth questioning. A host blog, [Hometime](https://www.hometime.io/blog/how-to-file-a-damage-claim-with-airbnb), says 72 hours to pay and 30 days to involve Airbnb Support; that does not match Airbnb's current pages, so go by Airbnb.
+One thing trips people up: the 60-day appeal is separate from the 60-day limit for new Resolution Center requests, which excludes damage claims ([Airbnb](https://www.airbnb.com/help/article/3591)). An unanswered [Airbnb](https://www.airbnb.com/help/article/4291) request can also be cancelled and resent within 60 days of checkout, so a late request is worth questioning.
 
 Vrbo's pages say there is no pre-authorization hold and your card is charged only if the host submits a claim. To dispute, select Contact Us. Its host page recommends the host contact you before filing and gives no dispute timeline ([Vrbo](https://help.vrbo.com/articles/How-do-I-file-a-damage-deposit-claim)). For how both platforms display pet fees, see [how pet fees work](/guides/how-vacation-rental-pet-fees-work).
 
-## What happens in the 24 hours after a request?
+## What happens if you pay part, decline or say nothing?
 
-If you pay part, decline or stay silent, the host may involve [Airbnb](https://www.airbnb.com/help/article/1415) or its insurer. [Airbnb](https://www.airbnb.com/help/article/2894) also says guests are expected to pay reasonable requests for damage, missing items or extra cleaning, and does not define "reasonable". Reply inside the window even if only to ask for details. If you are charged anyway, keep your photos, the claim and your messages together for the appeal.
+The host may involve [Airbnb](https://www.airbnb.com/help/article/1415) or its insurer. [Airbnb](https://www.airbnb.com/help/article/2894) also says guests are expected to pay reasonable requests for damage, missing items or extra cleaning, and does not define "reasonable". Even a reply that only asks for details helps. If you are charged anyway, keep your photos, the claim and your messages together for the appeal.
 
 ## I paid a pet fee. Can they still charge for dog hair?
 
@@ -245,9 +245,9 @@ Next trip, add the photo steps to the [trip checklist](/tools/checklist).
 
 ## What we could not confirm
 
-Confirmed by pages we cite: the 24-hour response, 14-day host window and 60-day appeal on Airbnb, and the 14-day window and no pre-authorization hold on Vrbo. Help pages change, so check the live page for your date. The forum and news items are a small, non-random sample that mostly show small claims and arguments turning on photos and listing wording. Not published anywhere we looked:
+Help pages change, so check the live page for your date. The forum and news items are a small, non-random sample. Not published anywhere we looked:
 
-| Open point | Who to ask |
-| --- | --- |
-| Whether Airbnb enforces the 14-day damage window strictly | Airbnb support: "A host asked for damage money [number] days after checkout. Is that still allowed?" |
-| What an appeal should include, and whether appeals recover money | Airbnb support |
+- Whether Airbnb enforces the 14-day damage window strictly. Ask Airbnb support: "A host asked for damage money [number] days after checkout. Is that still allowed?"
+- What an appeal should include, and whether appeals recover money.
+
+One correction for host-blog readers: [Hometime](https://www.hometime.io/blog/how-to-file-a-damage-claim-with-airbnb) says 72 hours and 30 days, which does not match Airbnb's current pages.

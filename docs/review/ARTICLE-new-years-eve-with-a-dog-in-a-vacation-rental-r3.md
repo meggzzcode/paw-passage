@@ -46,7 +46,8 @@ Evidence: source, r2 review, FIX (incl. Round 3), SEO note, rendered page at 128
 4. TEXT. Change the third escape bullet to "A dog climbed an 8-foot fence around July 4 (a different holiday, same fireworks fear), believed spooked by fireworks, and was found months later about 60 miles away."
 5. TEXT. Rename the H2 to "What to buy for the night" and keep "What to buy first, in order:" as the one "first".
 6. TEXT. Replace "Midnight potty breaks in December happen in the dark, and in the Homer, Alaska case under "If your dog runs", cold added to the danger." with "A midnight potty break is in the dark, and in the Homer, Alaska case under "If your dog runs", cold added to the danger."
-7. SEO (optional). Title tail "Fireworks Plan" is vague; if length allows, "New Year's Eve With a Dog in a Cabin: Fireworks Plan" is acceptable as is; the pin row already echoes the keyword.
+7. TEXT. In "What to buy first, in order" only the KONG Classic is linked; "The Kurgo bed", "The Beacon" and (if kept) "The Petcube" are plain text. Write them as "The Kurgo Loft Wander bed", "The Ruffwear Beacon" and "The Petcube GPS Tracker" so the auto-linker links them.
+8. SEO (optional). Title tail "Fireworks Plan" is vague; if length allows, "New Year's Eve With a Dog in a Cabin: Fireworks Plan" is acceptable as is; the pin row already echoes the keyword.
 
 ## Questions for the owner
 - Keep any Petcube card at all, given the guide's own caveat (edit 1)?

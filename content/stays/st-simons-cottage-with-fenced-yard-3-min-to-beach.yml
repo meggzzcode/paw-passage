@@ -1,0 +1,32 @@
+status: unverified
+name: St. Simons cottage with fenced yard, 3 min to beach
+type: cottage
+state: georgia
+town: st-simons-island
+summary: Two-bedroom cottage in St. Simons Island; up to 2 dogs, 65 lb limit, fenced yard.
+description: 'A cottage in St. Simons Island, Georgia, that sleeps 6 with 2 bedrooms and 1 bathroom. Setting, as the listing describes it: east Beach area, St. Simons Island. On the Vrbo page, it notes: fully fenced yard with seating and grill. Dog rules we read: Dogs only (no cats), max 2 dogs up to 65 lb each; Pet fee applies. We read this from the public Vrbo listing on 2026-11-24 and have not confirmed it with the host.'
+sleeps: 6
+bedrooms: 2
+bathrooms: 1
+amenityGroups:
+- title: Outdoors
+  items:
+  - Outdoor shower
+locationNote: East Beach area, St. Simons Island. St. Simons Island, Georgia.
+maxDogs: 2
+weightLimitLbs: 65
+largeDogsOk: 'yes'
+fencedYard: full
+fenceNotes: Fully fenced yard with seating and grill
+privateOutdoor: 'yes'
+petFee: not-confirmed
+breedRestrictions: not-confirmed
+beach: true
+mountain: false
+hotTub: not-confirmed
+houseRules:
+- 'Pets: Dogs only (no cats), max 2 dogs up to 65 lb each (Vrbo listing, read 2026-11-24)'
+- Pet fee applies
+- The pet fee amount is not recorded here; check the Vrbo listing before booking.
+photoPermission: false
+sourceUrl: https://www.vrbo.com/907140

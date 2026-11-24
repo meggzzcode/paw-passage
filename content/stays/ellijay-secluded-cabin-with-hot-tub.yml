@@ -1,0 +1,32 @@
+status: unverified
+name: Ellijay secluded cabin with hot tub
+type: cabin
+state: georgia
+town: ellijay
+summary: Two-bedroom cabin in Ellijay; up to 2 dogs, 25 lb limit, hot tub.
+description: 'A cabin in Ellijay, Georgia, that sleeps 5 with 2 bedrooms and 1 bathroom. Setting, as the listing describes it: ellijay mountains, about 25 min to Amicalola Falls State Park. On the Vrbo page, the amenity list includes a hot tub. Dog rules we read: Max 2 pets, about 25 lb (larger with approval); Fee per pet for the whole stay; no cats; Off furniture; crate when alone. We read this from the public Vrbo listing on 2026-11-24 and have not confirmed it with the host.'
+sleeps: 5
+bedrooms: 2
+bathrooms: 1
+amenityGroups:
+- title: Outdoors
+  items:
+  - Hot tub
+locationNote: Ellijay mountains, about 25 min to Amicalola Falls State Park. Ellijay, Georgia.
+maxDogs: 2
+weightLimitLbs: 25
+largeDogsOk: 'no'
+fencedYard: not-confirmed
+privateOutdoor: not-confirmed
+petFee: not-confirmed
+breedRestrictions: not-confirmed
+beach: false
+mountain: true
+hotTub: 'yes'
+houseRules:
+- 'Pets: Max 2 pets, about 25 lb (larger with approval) (Vrbo listing, read 2026-11-24)'
+- Fee per pet for the whole stay; no cats
+- Off furniture; crate when alone
+- The pet fee amount is not recorded here; check the Vrbo listing before booking.
+photoPermission: false
+sourceUrl: https://www.vrbo.com/1715307

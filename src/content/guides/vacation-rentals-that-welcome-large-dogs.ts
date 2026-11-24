@@ -5,8 +5,8 @@ export const guide: Guide = {
   title: "Large Dog Friendly Vacation Rentals: How to Find One",
   seoTitle: "Large Dog Friendly Vacation Rentals: Limits and Checks",
   seoDescription:
-    "Six managers we read cap dogs at 35 to 65 lb. See the limits for large dog friendly vacation rentals, then run five checks before you pay.",
-  dek: "Read the weight limit for your dog, not the pets-allowed badge: six real manager limits run from 35 to 65 pounds, so get a written yes for your dog first.",
+    "Six managers we read cap dogs from under 35 to 65 lb. See the limits for large dog friendly vacation rentals, then run five checks before you pay.",
+  dek: "Read the weight limit for your dog, not the pets-allowed badge: six real manager limits run from under 35 to 65 pounds, so get a written yes for your dog first.",
   category: "Planning",
   states: [],
   status: "published",
@@ -17,7 +17,7 @@ export const guide: Guide = {
   heroImage: "guide-large-dogs",
   body: `## The short answer
 
-Large dog friendly vacation rentals do exist, but "pets allowed" does not mean your dog is accepted: check the weight limit for this dog, get the yes in writing, then check the stairs, floors, yard and total price. You found the cabin, the listing says "dogs welcome," and your Lab is 80 pounds. Then the rules page says 50. In the 38-manager sample we read, six state a weight limit, and the limits run from 35 to 65 pounds, so "welcome" tells you very little until you know whose number applies to your dog. If a listing's wording feels vague, ask the host to spell it out.
+Large dog friendly vacation rentals do exist, but "pets allowed" does not mean your dog is accepted: check the weight limit for this dog, get the yes in writing, then check the stairs, floors, yard and total price. You found the cabin, the listing says "dogs welcome," and your Lab is 80 pounds. Then the rules page says 50. In the 38-manager sample we read, six state a weight limit, and the limits run from under 35 to 65 pounds, so "welcome" tells you very little until you know whose number applies to your dog.
 
 - Test every rental twice: does the rule explicitly allow this dog (permission), and can this dog move, rest and toilet comfortably there (practical fit)?
 - "Large dogs considered" means ask, not yes. Get written approval naming your dog's current weight and breed.
@@ -96,23 +96,23 @@ A pet health policy is a different product from liability cover for injuries or 
 
 ## Gear for a big dog, after the rental says yes
 
-Pick by the problem: a bed gives the dog its own spot on the rental floor, a hammock covers the back seat, and a ramp helps a dog walk up into a high vehicle. You rarely need all three; choose the one that matches a problem you have. Before you buy, write down the dog's weight and length, the vehicle's seat width and the height the dog must reach, and leave a margin on any rating, because it is the maker's figure.
+Pick by the problem: a bed gives the dog its own spot on the rental floor, a hammock covers the back seat, and a ramp helps a dog walk up into a high vehicle. None of these makes a rental accept your dog; they only help once the host has said yes. You rarely need all three; choose the one that matches a problem you have. Before you buy, write down the dog's weight and length, the vehicle's seat width and the height the dog must reach, and leave a margin on any rating, because it is the maker's figure.
 
 ### In the rental
 
 **For a big dog on a hard floor.** A big dog needs somewhere of its own to lie down, and a rental bed or sofa is not it. The Kurgo Loft Wander is a roll-up travel bed with a water-resistant ripstop top and a waterproof, non-slip bottom. It opens to 27 x 36 in (Medium) or 36 x 48 in (Large), rolls up with a handle for toting, and the maker lists no weight limit, so measure your dog lying down. [[14]](https://www.kurgo.com/p/loft-wander-dog-bed/K01560) The listing we link is the Large. It is a fiber-filled travel bed, so skip it if your dog already has a bed that travels or your vet has asked for an orthopedic one.
 
-{{pick:kurgo-loft-wander-dog-bed|For a big dog's own spot|The maker lists a roll-up bed with a water-resistant top, waterproof bottom and non-slip underside, in Medium (27 x 36 in) and Large (36 x 48 in) with no weight limit stated.|https://www.kurgo.com/p/loft-wander-dog-bed/K01560}}
+{{pick:kurgo-loft-wander-dog-bed|For a big dog's own spot|For a big dog's own non-slip spot on a hard rental floor: pick Medium or Large by how the dog lies down.|https://www.kurgo.com/p/loft-wander-dog-bed/K01560}}
 
 ### In the car
 
 **For a big dog on a wide bench seat.** A wet or muddy big dog is a lot to clean off upholstery. The Kurgo Rover Hammock, Extended Width is 63 in wide by 56 in long, with eight attachment points and a lifetime guarantee; the maker says it fits most full-size trucks and large SUVs, and that its front headrest straps can be removed to use it as a simple seat cover. [[15]](https://kurgo.com/car-seat-covers/dog-hammocks/wander-hammock-extended-width) That width suits a full-size truck or large SUV; in a compact car, measure your seat before you order. It protects the car and is not a restraint.
 
-{{pick:kurgo-rover-hammock-extended-width|For full-size trucks and large SUVs|The maker says it fits most full-size trucks and large SUVs and can be used as a simple seat cover with the headrest straps removed.|https://kurgo.com/car-seat-covers/dog-hammocks/wander-hammock-extended-width}}
+{{pick:kurgo-rover-hammock-extended-width|For full-size trucks and large SUVs|For a wide bench seat in a full-size truck or large SUV: measure your seat first.|https://kurgo.com/car-seat-covers/dog-hammocks/wander-hammock-extended-width}}
 
 **For a heavy dog and a high vehicle floor.** Do not plan around lifting a heavy dog. The PetSafe Happy Ride Extra Long Telescoping Ramp extends from 47 to 87 in, is 20 in wide and weighs 18 lb; it is aluminum with side rails and a high-traction surface, and it slides closed and locks. The maker states it supports pets up to 300 lb, a figure it describes as independently tested without naming a tester. [[16]](https://www.petsafe.com/p/happy-ride-extra-long-telescoping-dog-ramp/62320/) Because you will carry the 18 lb, check you can lift it into the vehicle yourself. Skip it if your dog still jumps in with ease. For a tall truck or SUV with a hitch, or a side-door sill, our [ramp or steps guide](/guides/dog-ramp-or-steps-for-the-car-and-cabin) compares the other options.
 
-{{pick:petsafe-happy-ride-extra-long-ramp|Maker-rated to 300 lb|The maker lists a 300 lb rating, a length of 47 to 87 inches with side rails and a high-traction surface, and says it slides closed and locks.|https://www.petsafe.com/p/happy-ride-extra-long-telescoping-dog-ramp/62320/}}
+{{pick:petsafe-happy-ride-extra-long-ramp|Maker-rated to 300 lb|For a heavy dog and a high vehicle floor, if you can lift 18 lb into the vehicle.|https://www.petsafe.com/p/happy-ride-extra-long-telescoping-dog-ramp/62320/}}
 
 ## What to buy first
 
@@ -125,7 +125,7 @@ Put your dog's weight into the [will my dog be accepted tool](/tools/will-my-dog
   faqs: [
     {
       q: "Does 'pets allowed' mean large dogs are accepted?",
-      a: "Not always. A pets-allowed badge usually does not state a weight limit. The six managers we read that state one run from 35 to 65 pounds, and some count it per dog and some for all dogs combined. Ask for the rule for your dog.",
+      a: "Not always. A pets-allowed badge usually does not state a weight limit. The six managers we read that state one run from under 35 to 65 pounds, and some count it per dog and some for all dogs combined. Ask for the rule for your dog.",
     },
     {
       q: "What counts as a large dog for a vacation rental?",

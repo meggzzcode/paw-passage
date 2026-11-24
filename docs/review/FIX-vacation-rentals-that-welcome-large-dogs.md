@@ -22,3 +22,10 @@
 ## For the lead
 - Pin CSV row for this guide needs the new H1.
 - No Lucky Kennel card added (not needed here).
+
+## Round 4
+- Edit 1: "under 35 to 65" in dek, seoDescription, short answer and FAQ.
+- Edit 2: pick-card "why" lines rewritten to the job, no spec repeat.
+- Edit 3: added "None of these makes a rental accept your dog..." to the gear intro.
+- Edit 5: removed the filler sentence from the short answer.
+- For the lead: docs/pinterest-pins.csv row 31 still says "35 to 65 lb"; change to "from under 35 to 65 lb". Pick-card button contrast (edit 6) is a component change, not done.

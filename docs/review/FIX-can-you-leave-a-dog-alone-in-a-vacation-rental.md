@@ -15,3 +15,10 @@ The review's question about dropping the KONG: kept as a clearly labeled supervi
 - KONG card kicker now "Supervised use only: practice at home" and the card line and paragraph state the supervised-use-only limit.
 - "What to buy first" now uses full product names so the renderer links them.
 - For the lead: edit 7 (icons for kong-classic and midwest-icrate-dog-crate in products.yml) is a data change I did not make. The KONG was kept.
+
+## Round 4
+- Edit 1: KONG paragraph replaced with one coherent limit statement (practice at home, no unattended use unless the vet agrees).
+- Edit 3: "Barking is the risk the sources flag most."
+- Edit 4: KONG bullet in "What to buy first" now "Practice at home".
+- Edit 2 (icon) not done: needs products.yml.
+- For the lead: set the icon of midwest-icrate-dog-crate in content/products.yml to the crate/kennel icon (currently a picket fence).

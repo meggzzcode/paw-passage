@@ -20,3 +20,8 @@
 - Petcube kept as a pick but no longer sends the reader elsewhere first: the Tree Line caveat is stated in the card text, and "read the tracker guide before choosing" was removed (the guide link stays once in prose).
 - Cut "buy first" repetition: now only in the final list.
 - For the lead: icons on KONG/Petcube/Beacon cards remain a template/product-data item (not touched). Kurgo link opens the Large 36x48 listing per product records; unchanged.
+
+## Round 4
+- Edit 1: Petcube card removed (it keeps its card in if-your-dog-gets-loose-on-a-trip, where it is ranked last with the same caveat); prose facts kept with the guide link; buy-list item 5 now points to the tracker guide.
+- Edit 2: "Our reading of the stories". Edit 3: opening paragraph trimmed. Edit 4: July 4 bullet labelled. Edit 5: H2 now "What to buy for the night". Edit 6: Homer sentence tightened. Edit 7: list items named so they auto-link.
+- Edit 8 skipped (optional).

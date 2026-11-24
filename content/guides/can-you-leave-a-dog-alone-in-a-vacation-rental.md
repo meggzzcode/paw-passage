@@ -223,7 +223,7 @@ Airbnb's guest help says to tell the host about any pets you plan to bring and c
 
 ## What about noise and neighbors?
 
-Barking is the usual way an absence becomes a problem. A dog left in an unfamiliar place may howl, and one guide notes that barking can alert a nearby host. Hosts and neighbors judge by what they hear, not by how long you were gone. [[11]](https://www.afar.com/magazine/how-to-find-a-pet-friendly-airbnb-or-vacation-rental) If your dog reacts to noises or passers-by, see our guide to [a rental for a reactive dog](/guides/vacation-rental-with-a-reactive-dog).
+Barking is the risk the sources flag most. A dog left in an unfamiliar place may howl, and one guide notes that barking can alert a nearby host. Hosts and neighbors judge by what they hear, not by how long you were gone. [[11]](https://www.afar.com/magazine/how-to-find-a-pet-friendly-airbnb-or-vacation-rental) If your dog reacts to noises or passers-by, see our guide to [a rental for a reactive dog](/guides/vacation-rental-with-a-reactive-dog).
 
 Booking.com's guide advises against leaving pets alone if they do not handle unfamiliar settings well or bark constantly when left alone. [[10]](https://www.booking.com/articles/pet-friendly-holiday-rentals-tips.html) If your dog does either at home, treat that as a no for the rental too.
 
@@ -288,7 +288,7 @@ Everything here is from the ASPCA's separation-anxiety guidance, applied to a re
 3. Keep goodbyes quiet; the ASPCA suggests a pat, a goodbye, and leaving.
 4. Start with a short trial while you are nearby, then build up. Panting, trembling or yawning means shorten it.
 
-For step 2, a stuffable rubber toy is one option, and the KONG Classic is one the maker sells for it. It comes in six size bands by dog weight, from XS (up to 5 lb) to XXL (85 lb and up), and the maker says to size up if your dog is between sizes. The maker also says to use it under supervision, that power chewers should size up or try a different KONG, and that no toy is indestructible. [[19]](https://www.kongcompany.com/kong-classic/) The ASPCA suggests a stuffed toy when you leave, but the maker's page says supervised use only, so do not treat the KONG as an unattended-time answer. Try it at home while you are in the room, so the first stuffed toy is not also the first night in a strange house, and ask your vet whether to leave one with your dog alone. Stop using one that is damaged. It is for the dog that settles with something to work on, not a fix for a host rule, and not for unattended time: the maker's limit is supervised use only.
+For step 2, a stuffable rubber toy is one option, and the KONG Classic is one the maker sells for it. It comes in six size bands by dog weight, from XS (up to 5 lb) to XXL (85 lb and up); size up if your dog is between sizes or chews hard, and note the maker says no toy is indestructible. [[19]](https://www.kongcompany.com/kong-classic/) The maker's page says to use it under supervision, so treat it as practice only: try it at home while you are in the room, so the first stuffed toy is not also the first night in a strange house. Do not leave one with your dog alone unless your vet agrees, and stop using one that is damaged.
 
 {{pick:kong-classic|Supervised use only: practice at home|The maker publishes a size chart by dog weight, says supervised use only, and says no toy is indestructible, so it is not an unattended-time answer.|https://www.kongcompany.com/kong-classic/}}
 
@@ -306,7 +306,7 @@ Ask the host before you buy anything. Then match the purchase to the rule:
 
 - **"Crated when alone", and your dog already rests in a crate:** the MidWest iCrate. Check the size list and your car space first.
 - **A gate is allowed and your dog dislikes a crate:** the North States MyPet Universal Petgate, for an opening of 26 to 42 inches. It will not hold a dog that jumps gates.
-- **Any rule:** the KONG Classic is for practice at home with you in the room, not for unattended time unless your vet agrees.
+- **Practice at home:** the KONG Classic, with you in the room; the maker says supervised use only.
 - **"No unattended pets":** buy nothing for this. Plan a sitter or daycare and keep dog-friendly plans for the dinner.
 
 More crates and gates are on our [pens and gates page](/gear/pens-and-gates).

@@ -178,8 +178,7 @@ Holiday terms sit in the rental policy, not the pet page: [A Blue Ridge Vacation
 **The short answer:**
 
 - **Before you pay, get four answers in writing:** the minimum stay, the full total with one dog, the cancellation terms and whether this home takes dogs.
-- **The tree and what is under it cause most of the trouble.** The [ASPCA](https://www.aspca.org/pet-care/general-pet-care/holiday-safety-tips) says to secure the tree so it cannot tip, cover the tree water, and skip tinsel.
-- **Chocolate and xylitol are the foods to take seriously.** [Pet Poison Helpline](https://www.petpoisonhelpline.com/pet-safety-tips/winter-holiday-pet-poison-tips/) calls chocolate highly toxic to dogs and xylitol toxic to dogs.
+- **The tree and what is under it cause most of the trouble.** The hazards list below covers water, tinsel and food; the tree plan covers how to set it up in a house you do not own.
 - **Find the emergency vet before you unpack.** Holiday hours vary, so call.
 
 Not sure the home takes your dog at all? Start with the [will my dog be accepted tool](/tools/will-my-dog-be-accepted).
@@ -214,34 +213,32 @@ In a rental you may not be allowed to attach anything to the walls, and the owne
 1. **Ask the host first.** Does the home allow a live tree, and is there a spot away from the fireplace?
 2. **Pick the smaller, plainer tree.** [PetMD](https://www.petmd.com/dog/general-health/tips-for-keeping-dog-safe-around-christmas-tree) suggests a gate or pen around the tree and a non-flocked tree, and notes artificial needles can also cause problems if chewed.
 3. **Make it hard to tip.** The [ASPCA](https://www.aspca.org/pet-care/general-pet-care/holiday-safety-tips) says the tree should be tightly secured so it cannot tip over onto a pet. Choose a heavy, wide stand, and ask before you attach anything to walls or beams.
-4. **Cover or remove the water.** Use a covered stand, or choose an artificial tree. For a live tree, [NFPA](https://content.nfpa.org/-/media/project/storefront/catalog/files/safety-tip-sheets/christmastreesafetytips.pdf) says to add water daily, so the covered setup has to be refillable.
-5. **Decorate high and plain.** Skip tinsel and strings, put breakables up high and keep cords away from the bottom of the tree.
-6. **Keep wrapped food gifts out of reach** until the morning, and clear wrapping and ribbon the same day.
+4. **Handle the water.** Use a covered stand, or choose an artificial tree. For a live tree, [NFPA](https://content.nfpa.org/-/media/project/storefront/catalog/files/safety-tip-sheets/christmastreesafetytips.pdf) says to add water daily, so the covered setup has to be refillable.
+5. **Decorate high and plain.** Put breakables up high, keep cords away from the bottom of the tree and leave out the tinsel from the hazards list.
+6. **Keep wrapped food gifts, chocolate included, out of reach** until the morning, and clear wrapping and ribbon the same day.
 7. **Plan for when you go out.** A dog that cannot be trusted around the tree can wait in another room or gated area; our [leaving a dog alone guide](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental) covers rental rules.
 
-The practical version of PetMD's gate suggestion is a doorway gate on the tree room, below.
+The practical version of PetMD's gate suggestion is a doorway gate on the tree room (see the gear below).
 
 ## Gear for the evenings and the cold walks
 
 Four things do most of the work: a gate, a bed, a chew and, only if paths are icy, boots. More gates and pens are on our [pens and gates gear page](/gear/pens-and-gates); for a coat or fleece see the [cold-weather gear guide](/guides/cold-weather-dog-gear-for-winter-cabin-trips).
 
-**A gate for the tree room.** The North States MyPet Universal Petgate is 26 in high and adjusts to openings 26 to 42 in wide. It mounts by pressure with no tools, or with hardware to a solid surface, and the maker says never to use it at the top of a stairway when held only by tension ([North States](https://northstatesind.com/north-states-mypet-universal-petgate/)). Ask the host before using the hardware mount. Skip it if the room has no doorway to gate, or if your dog jumps 26 inches; a closed door or crate time works better then. It will not circle a tree, and the maker claims no containment strength.
+**A gate for the tree room.** This is the practical version of the tree-room gate: it goes in the doorway, not around the tree. The maker says never to use it at the top of a stairway when held only by tension ([North States](https://northstatesind.com/north-states-mypet-universal-petgate/)). Ask the host before using the hardware mount. Skip it if the room has no doorway to gate, or if your dog jumps 26 inches; a closed door or crate time works better then. It will not circle a tree, and the maker claims no containment strength.
 
-{{pick:north-states-mypet-universal-petgate|For a tree room with a doorway|The maker lists a 26 in high gate for 26 to 42 in openings that mounts by pressure or, with hardware, to a solid surface.|https://northstatesind.com/north-states-mypet-universal-petgate/}}
+{{pick:north-states-mypet-universal-petgate|For a tree room with a doorway|For gating one doorway; pressure mount means no drilling.|https://northstatesind.com/north-states-mypet-universal-petgate/}}
 
-**A place to settle.** The Kurgo Loft Wander is a roll-up bed with a waterproof, nonslip bottom and a water-resistant ripstop top, in Medium (27 x 36 in) and Large (36 x 48 in). The maker says it can be machine washed on a gentle cycle ([Kurgo](https://www.kurgo.com/p/loft-wander-dog-bed/K01560)). The page lists no dog weight guide, so choose the size by how your dog lies down.
+**A place to settle.** A roll-up bed gives the dog its own spot on an unfamiliar floor and washes when the cabin visit is over ([Kurgo](https://www.kurgo.com/p/loft-wander-dog-bed/K01560)). The page lists no dog weight guide, so choose the size by how your dog lies down.
 
-{{pick:kurgo-loft-wander-dog-bed|A place to settle|The maker lists a roll-up bed with a water-resistant ripstop top and a waterproof, nonslip bottom, in Medium and Large, washable by machine or by hand.|https://www.kurgo.com/p/loft-wander-dog-bed/K01560}}
+{{pick:kurgo-loft-wander-dog-bed|A place to settle|A washable bed that rolls up for the car.|https://www.kurgo.com/p/loft-wander-dog-bed/K01560}}
 
-**Something to chew.** For a dog that settles with a stuffed toy while you cook, the [KONG](https://www.kongcompany.com/kong-classic/) Classic is a stuffable rubber toy in size bands by dog weight; the maker says supervised use only and that no toy is indestructible. Skip it for a dog that tears toys apart.
+**Something to chew.** For a dog that settles with a stuffed toy while you cook, the [KONG](https://www.kongcompany.com/kong-classic/) Classic is a stuffable rubber toy; the maker says supervised use only and that no toy is indestructible. Skip it for a dog that tears toys apart.
 
-{{pick:kong-classic|Supervised use only: a stuffed toy while you cook|Six size bands by dog weight, from XS (up to 5 lb) to XXL (85 lb and up); the maker says supervised use only and that no toy is indestructible.|https://www.kongcompany.com/kong-classic/}}
+{{pick:kong-classic|Supervised use only: a stuffed toy while you cook|Stuffable, sized by dog weight.|https://www.kongcompany.com/kong-classic/}}
 
-**Boots, only for snow, ice or salted paths.** The [Ruffwear](https://ruffwear.com/products/polar-trex-winter-dog-boots) Polar Trex has a waterproof, windproof softshell upper and traction lugs for ice and snow, per the maker. It is sold as a set of two, not four, and sized by paw width from 1.50 to 3.25 in. The page gives no temperature rating or insulation figure. Skip them if your walks are clear and dry; try them indoors first.
+**Boots, only for snow, ice or salted paths.** The [Ruffwear](https://ruffwear.com/products/polar-trex-winter-dog-boots) Polar Trex has traction lugs for ice and snow, per the maker, which helps on icy cabin steps and salted paths. It is sold as a set of two, not four, and the page gives no temperature rating or insulation figure. Skip them if your walks are clear and dry; try them indoors first.
 
-{{pick:ruffwear-polar-trex-boots|For snow, ice and salted paths: a set of two|The maker lists a waterproof, windproof softshell upper, traction lugs, a set of two, and sizing by paw width from 1.50 to 3.25 in; it gives no insulation rating or temperature range.|https://ruffwear.com/products/polar-trex-winter-dog-boots}}
-
-Check the size chart and return terms on each listing.
+{{pick:ruffwear-polar-trex-boots|For snow, ice and salted paths: a set of two|Traction for snow and ice; sold as a set of two.|https://ruffwear.com/products/polar-trex-winter-dog-boots}}
 
 ## Fire and cold
 
@@ -266,9 +263,9 @@ For cold, the [ASPCA](https://www.aspca.org/pet-care/general-pet-care/cold-weath
 
 Pack records, usual food, medication in original packaging, an ID tag with a number you will answer, and paw wipes and a towel for salty feet ([ASPCA](https://www.aspca.org/pet-care/general-pet-care/cold-weather-safety-tips)). On arrival, walk the house for loose cords, fireplace access, plants and small objects within reach. Our [cabin packing list](/guides/dog-friendly-cabin-packing-list) covers the rest, and the [packing list tool](/tools/packing-list) and [trip checklist](/tools/checklist) build your own.
 
-## How sure we are
+## What we could not confirm
 
-The hazards come from the ASPCA, Pet Poison Helpline, NFPA and PetMD pages we read on 2026-11-18, and the booking terms from the named manager pages. We could not confirm your host's tree rule, your dates' minimum stay or your area's holiday vet hours; ask the host or call the clinic.
+Your host's tree rule, your dates' minimum stay and your area's holiday vet hours; ask the host or call the clinic.
 
 ## Next step
 

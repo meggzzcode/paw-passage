@@ -149,15 +149,15 @@ research:
   researchComplete: true
 ---
 
-Your dog's coat, size and age decide whether it needs a layer, and the paths decide whether it needs boots. Neither the sources nor the maker pages we read give a safe temperature for your dog or a rating for any gear, so you judge by the dog.
+Your dog's coat, size and age decide whether it needs a layer, and the paths decide whether it needs boots. You judge by the dog, because the sources disagree on temperatures.
 
 ## At a glance: our picks
 
 - **Boots:** [Ruffwear](https://ruffwear.com/products/polar-trex-winter-dog-boots) Polar Trex, sized by paw width, or a wipe-down routine if your dog will not wear them.
 - **Fleece:** [Ruffwear](https://ruffwear.com/products/climate-changer-fleece-dog-jacket) Climate Changer Fleece, sized by chest girth, for the dog that shivers.
 - **Harness plus warmth:** [Ruffwear](https://ruffwear.com/products/timberline-fuse-fleece-vest) Timberline Fuse Fleece Vest, which saves a layer.
-- **Every dog:** a towel for the door, such as the [Soggy Doggy](https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey) Super Shammy.
-- **Skip boots** on clear, dry paths. **Skip the fleece** for a thick double coat. For wet snow or well below freezing, neither fleece is a shell, and we feature no such coat: shop for an insulated, windproof, water-resistant coat and size it by chest girth, as above.
+- **Wet fur after snow:** a towel for the door, such as the [Soggy Doggy](https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey) Super Shammy.
+- **Skip boots** on clear, dry paths. **Skip the fleece** for a thick double coat. We feature no insulated, windproof coat for wet snow; see the coat section.
 
 ## How cold is too cold, by dog type
 
@@ -165,12 +165,8 @@ The sources agree on the pattern and differ on the numbers. [PetMD](https://www.
 
 PetMD names Siberian Huskies, Newfoundlands and Samoyeds, and Cornell names Huskies and Malamutes, as dogs that handle cold best; for them, paw care comes first and the coat should not be clipped short.
 
-| Dog | Do this |
-| --- | --- |
-| Short or thin coat, lean build (ASPCA suggests a coat or sweater with a high collar; thin dogs get cold faster because body fat insulates) | Pack a layer for any walk near or below 32 F |
-| Small or toy breed (smaller dogs lose heat faster, and deep snow can reach the chest) | Cover belly and chest |
-
-Sources: [PetMD](https://www.petmd.com/dog/care/how-cold-too-cold-dog), [Cornell](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/winter-safety-tips), [ASPCA](https://www.aspca.org/pet-care/general-pet-care/cold-weather-safety-tips), [Outward Hound](https://outwardhound.com/furtropolis/dogs/how-cold-is-too-cold-for-dogs)
+- **Short or thin coat, lean build:** pack a layer for any walk near or below 32 F. ASPCA suggests a coat or sweater with a high collar, and thin dogs get cold faster because body fat insulates ([ASPCA](https://www.aspca.org/pet-care/general-pet-care/cold-weather-safety-tips), [Outward Hound](https://outwardhound.com/furtropolis/dogs/how-cold-is-too-cold-for-dogs)).
+- **Small or toy breed:** cover belly and chest, since smaller dogs lose heat faster and deep snow can reach the chest ([Outward Hound](https://outwardhound.com/furtropolis/dogs/how-cold-is-too-cold-for-dogs)).
 
 Cornell says full-body coverage can limit snowball buildup on a small dog's belly and chest, and PetMD says active dogs may make enough body heat to stay comfortable ([Cornell Vet](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/winter-safety-tips), [PetMD](https://www.petmd.com/dog/care/how-cold-too-cold-dog)). At a cabin, a dog standing on a deck while you unload is not moving.
 
@@ -178,9 +174,9 @@ Cornell says full-body coverage can limit snowball buildup on a small dog's bell
 
 ## A coat or fleece: when it helps
 
-Cornell says a jacket or sweater helps smaller, older or thin-coated dogs ([Cornell Vet](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/winter-safety-tips)). [PetMD](https://www.petmd.com/dog/care/how-cold-too-cold-dog) draws the line that matters: sweaters and fleeces help on mildly chilly days but "won't provide enough protection" when conditions get more extreme, where it recommends an insulated, windproof, water-resistant coat. A fleece suits a short walk in cold, clear air; for a night-time bathroom run in wet snow it is a layer, not a shell.
+Cornell says a jacket or sweater helps smaller, older or thin-coated dogs ([Cornell Vet](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/winter-safety-tips)). [PetMD](https://www.petmd.com/dog/care/how-cold-too-cold-dog) draws the line that matters: sweaters and fleeces help on mildly chilly days but "won't provide enough protection" when conditions get more extreme, where it recommends an insulated, windproof, water-resistant coat. Both fleeces below are dry-weather layers, and we feature no such coat.
 
-**For a thin-coated dog on dry, cold walks.** If your dog shivers on the first cold lap around the cabin, a light layer is the simplest fix. [Ruffwear](https://ruffwear.com/products/climate-changer-fleece-dog-jacket)'s Climate Changer Fleece is 260 g polyester fleece (75% recycled) with sleeves and a zipper, which the maker describes as for "cold, clear conditions," worn alone or layered. It is sized XXS to XL by chest girth at the widest part of the rib cage, with a back length for each, and is a cold gentle wash and hang dry, handy with a rental's washer. Treat it as a dry-weather layer, and skip it for wet snow and for a thick double coat.
+**For a thin-coated dog on dry, cold walks.** If your dog shivers on the first cold lap around the cabin, a light layer is the simplest fix. [Ruffwear](https://ruffwear.com/products/climate-changer-fleece-dog-jacket)'s Climate Changer Fleece is 260 g polyester fleece (75% recycled) with sleeves and a zipper, which the maker describes as for "cold, clear conditions," worn alone or layered. It is sized XXS to XL by chest girth at the widest part of the rib cage, with a back length for each, and is a cold gentle wash and hang dry, handy with a rental's washer. Skip it for a thick double coat.
 
 On sizing, the page contradicts itself: the size chart says size up for a relaxed fit or down for a snug one, while the fit guide says choose the smaller size ([Ruffwear](https://ruffwear.com/products/climate-changer-fleece-dog-jacket)). Decide by your dog's shape and check the back length. [PetSmart](https://www.petsmart.com/learning-center/dog-care/how-cold-is-too-cold-for-dogs)'s coat advice is snug but still free to move.
 
@@ -213,18 +209,18 @@ Snow turns into water, grit and salt on the way in. Towel-dry the dog as soon as
 
 Our routine, not from a source: pick one spot by the door, ideally a mat or tiled entry, and keep every wipe, towel and wet boot there. Dry the dog before it reaches a bed or couch, hang a wet fleece where it will not drip on a rug, and ask the host where wet gear may dry and whether you may run the washer. Our [cabin packing list](/guides/dog-friendly-cabin-packing-list) covers the rest of the kit and our [Christmas week guide](/guides/christmas-week-in-a-cabin-with-a-dog) covers booking terms and holiday hazards.
 
-**For wet paws at the door.** Soggy Doggy's Super Shammy is a microfiber chenille towel, 31 by 14 inches in one size, 80% polyester and 20% polyamide, with hand pockets. The page says "Quick drying & odor free," the maker's wording, with no absorbency figure ([Soggy Doggy](https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey)). Machine wash alone with no bleach or fabric softener, tumble dry low, so check the rental's machine first. One small towel covers paws and legs; a big, wet-bellied dog will want a second. Skip it if you already pack a quick-dry towel.
+**For wet fur after snow.** A towel at the door catches melt and salt before they reach the rug, which is the one job this pick does. Soggy Doggy's Super Shammy is a microfiber chenille towel, 31 by 14 inches in one size, 80% polyester and 20% polyamide, with hand pockets. The page says "Quick drying & odor free," the maker's wording, with no absorbency figure ([Soggy Doggy](https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey)). Machine wash alone with no bleach or fabric softener, tumble dry low, so check the rental's machine first. One small towel covers paws and legs; a big, wet-bellied dog will want a second. Skip it if you already pack a quick-dry towel.
 
-{{pick:soggy-doggy-super-shammy-towel|For paws at the door, any dog|The maker lists a 31 x 14 in microfiber chenille towel with hand pockets, described as quick drying and odor free; the page gives no absorbency figure.|https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey}}
+{{pick:soggy-doggy-super-shammy-towel|A towel for wet fur and paws after snow|The maker lists a 31 x 14 in microfiber chenille towel with hand pockets, described as quick drying and odor free; the page gives no absorbency figure.|https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey}}
 
 ## The car and the cabin
 
-[ASPCA](https://www.aspca.org/pet-care/general-pet-care/cold-weather-safety-tips) and Cornell both say never to leave a dog alone in a car in cold weather, because the inside can get very cold, and a Chewy veterinarian quoted by NBC Select says not to leave a dog in a car with the heat off ([Cornell Vet](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/winter-safety-tips)). Unload the dog first, even if the luggage takes a few trips.
+[ASPCA](https://www.aspca.org/pet-care/general-pet-care/cold-weather-safety-tips) says never to leave a dog alone in a car in cold weather, and Cornell says the inside can get as cold as a refrigerator ([Cornell Vet](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/winter-safety-tips)). A veterinarian quoted by [NBC News Select](https://www.nbcnews.com/select/shopping/how-to-keep-dogs-warm-winter-rcna239641) says not to leave a dog in the car with the heat off. Unload the dog first, even if the luggage takes a few trips.
 
 Cornell says ethylene glycol antifreeze can be deadly to pets and to clean up spills around vehicles right away ([Cornell Vet](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/winter-safety-tips), [ASPCA](https://www.aspca.org/pet-care/general-pet-care/cold-weather-safety-tips)). Check the cabin's parking area before the dog does. Our own suggestions: try the coat and boots on a short walk the day you arrive, not at dusk, and take the vest off before a nap so nothing catches. For an older dog, see our [senior dog guide](/guides/vacation-rental-with-a-senior-dog).
 
 ## What we could not confirm
 
-The right temperature for your dog (sources give 45, 40, 32 and 20 F, and none is a per-dog rule; ask your vet), how warm any Ruffwear item is, whether a boot or coat is waterproof in practice (the claims are the makers', with no test named), and what your host puts on paths or lets you wash (ask in writing). Sources were read 2026-11-19.
+How warm any Ruffwear item is, whether a boot is waterproof in practice (the claims are the makers', with no test named), and what your host puts on paths or lets you wash (ask in writing). Sources were read 2026-11-19.
 
-Before you go, measure paws and chest, add the towel to the [packing list tool](/tools/packing-list), look over the [winter travel gear page](/gear/winter-travel), and run the [pre-booking checklist](/tools/checklist) with the question about what the host puts on paths.
+Before you go, measure paws and chest and add the towel to the [packing list tool](/tools/packing-list). The [winter travel gear page](/gear/winter-travel) has more, and the [pre-booking checklist](/tools/checklist) covers the question about what the host puts on paths.

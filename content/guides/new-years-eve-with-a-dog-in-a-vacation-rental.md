@@ -37,7 +37,6 @@ relatedGuides:
 relatedProducts:
   - kong-classic
   - kurgo-loft-wander-dog-bed
-  - petcube-gps-tracker
   - ruffwear-the-beacon-dog-safety-light
 relatedTools:
   - checklist
@@ -194,7 +193,7 @@ approvedBy: Paws & Passage Editors
 approvedOn: 2026-11-18
 ---
 
-Before you book, ask the host how far the nearest homes are: a "firework-free" label may cover only the grounds. On the night, keep the dog on a leash with a tag that has a mobile number you will answer, in a quiet familiar room, with a person at every door. New Year's Eve with a dog in a cabin comes down to three jobs: check what "firework-free" really covers, keep the dog from bolting, and plan the night. We read the sources and manager pages below on 2026-11-18 and did not test any product; fees and rules change, so confirm with your host.
+Before you book, ask the host how far the nearest homes are: a "firework-free" label may cover only the grounds. On the night, keep the dog on a leash with a tag that has a mobile number you will answer, in a quiet familiar room, with a person at every door. We read the sources and manager pages below on 2026-11-18 and did not test any product; fees and rules change, so confirm with your host.
 
 ## Do this first
 
@@ -204,7 +203,7 @@ Before you book, ask the host how far the nearest homes are: a "firework-free" l
 
 ## Is a "firework-free" rental really firework-free?
 
-Not necessarily. A host can usually only set rules for guests and their own grounds. In one first-person account, a Dutch park advertised as firework-free (a different fireworks culture from most US cabins, so the lesson is the question to ask, not the odds; our note) had fireworks on arrival, the night before New Year's Eve and at midnight; reception could not control what happens outside. [[1]](https://www.petbook-magazine.com/dogs/dog-owner-how-we-were-misled-by-a-firework-free-vacation-park) One case, not a statistic. The same account advised zooming out on the map and asking in online groups.
+Not necessarily. A host can usually only set rules for guests and their own grounds. In one first-person account, a Dutch park advertised as firework-free had fireworks on arrival, the night before New Year's Eve and at midnight; reception could not control what happens outside. [[1]](https://www.petbook-magazine.com/dogs/dog-owner-how-we-were-misled-by-a-firework-free-vacation-park) Our note: that is a different fireworks culture from most US cabins, so take the question to ask, not the odds. One case, not a statistic. The same account advised zooming out on the map and asking in online groups.
 
 **Questions to ask the host or manager**
 
@@ -263,7 +262,7 @@ Food or play during noise has the strongest support. Riemer's 2023 review calls 
 
 Owners of dogs given a placebo often report improvement, and one study found no evidence of calming properties for cannabidiol. [[2]](https://pmc.ncbi.nlm.nih.gov/articles/PMC10705068/) Cornell advises trying any prescribed medication on a quiet day first, so talk to your vet well ahead, and never to punish a scared dog. [[4]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/fear-fireworks-and-thunderstorms)
 
-Gear for the night is in [What to buy for the night](#what-to-buy-for-the-night-and-what-to-buy-first).
+A chew, a bed from home and a light cover the gaps in the table: see [What to buy for the night](#what-to-buy-for-the-night).
 
 ## What to buy for the night
 

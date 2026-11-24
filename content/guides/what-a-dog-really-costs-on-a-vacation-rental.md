@@ -153,7 +153,7 @@ research:
   researchComplete: true
 ---
 
-In the 38 managers whose pet pages we read (a convenience sample, not a survey), nightly pet fees run from $20 to $50 and flat or per-pet fees from $50 to $400, with one manager saying "up to $1,000". Cleaning, deposits, service fees and taxes come on top, so a $0 pet fee is not automatically cheaper than $40 a night. Compare what you will pay for the same dates and the same dog.
+Among the 38 managers whose pet pages we read (a convenience sample), nightly dog fees ran $20 to $50 and flat or per-pet fees $50 to $400. Cleaning, deposits, service fees and taxes come on top, so a $0 pet fee is not automatically cheaper than $40 a night.
 
 ## What does a dog add to a vacation rental bill?
 
@@ -172,7 +172,7 @@ On Airbnb, the pet fee is meant for expected cleaning after a pet stay, and it c
 
 ## The pet fee line, in our dataset
 
-How each fee type works is in our [pet fees guide](/guides/how-vacation-rental-pet-fees-work); this page is about the total. Of the 38 managers, 25 state a fee: 22 charge an amount and three say $0 (Sliding Rock Cabins, Twiddy & Company and Hapey Cabin Rentals). The other 13 give no amount. The tables are on the [pet policy dataset page](/data/pet-policies); the $400 is one manager's rate for stays of 14 or more days. A few examples, each re-read on 2026-11-18:
+How each fee type works is in our [pet fees guide](/guides/how-vacation-rental-pet-fees-work); this page is about the total. Of the 38 managers, 25 state a fee: 22 charge an amount and three say $0 (Sliding Rock Cabins, Twiddy & Company and Hapey Cabin Rentals). The other 13 give no amount. The tables are on the [pet policy dataset page](/data/pet-policies); the $400 is one manager's rate for stays of 14 or more days. Examples from [Big Bear Vacations](https://www.bigbearvacations.com/about-us/pet-information/)'s pet page, [AMI Locals](https://www.amilocals.com/faqs)'s FAQ, [Resort Realty](https://resortrealty.com/outer-banks-pet-friendly)'s Outer Banks page and Tahoe's reservation page, each re-read on 2026-11-18:
 
 | Manager | What the page says |
 | --- | --- |
@@ -181,43 +181,32 @@ How each fee type works is in our [pet fees guide](/guides/how-vacation-rental-p
 | AMI Locals | $250 per stay; max 2 dogs, combined weight 50 lb or less |
 | Resort Realty | Non-refundable fee up to $1,000, varying by property, due with the balance payment |
 
-Big Bear states its fee on its pet information page ([Big Bear Vacations](https://www.bigbearvacations.com/about-us/pet-information/)), and Tahoe on its reservation page ([Tahoe Vacation Rentals](https://www.tahoevacationrentals.com/reservation-information/)). [AMI Locals](https://www.amilocals.com/faqs) posts its fee in an FAQ. Rosemary Beach, which charges a non-refundable $300 per pet, maximum 3, does the same ([Rosemary Beach Cottage Rental](https://rosemarybeach.com/faq/)). [Resort Realty](https://resortrealty.com/outer-banks-pet-friendly)'s fee is on its Outer Banks page, and [Twiddy](https://blog.twiddy.com/bring-your-pets-on-vacation/)'s blog post lists ten homes that all waive the pet fee and deposit, nine saying "no additional fee or deposit".
+[Rosemary Beach](https://rosemarybeach.com/faq/) charges a non-refundable $300 per pet, maximum 3, while [Twiddy](https://blog.twiddy.com/bring-your-pets-on-vacation/)'s blog lists ten homes that all waive the pet fee and deposit.
 
-Nobody can quote you "the" pet cost from a range this wide. The fee only becomes a number once you know your dates and dog count. Our [no pet fee rentals guide](/guides/vacation-rentals-with-no-pet-fee) goes through what the $0 managers say.
+A range this wide only becomes a number once you know your dates and dog count. Our [no pet fee rentals guide](/guides/vacation-rentals-with-no-pet-fee) goes through what the $0 managers say.
 
 ## The rest of the bill
 
-| Line | Airbnb | Vrbo |
-| --- | --- | --- |
-| Service fee | Depends on the listing | In the displayed price |
-| Taxes | May not show until checkout | Added at checkout |
-
-Vrbo's displayed price leaves out optional extras, and its damage deposit is host-set and returned unless the host claims damage. Airbnb shows a cleaning fee separately unless total-price display is on.
-
-The [Airbnb](https://www.airbnb.com/help/article/2385) cells and cleaning note follow its additional-fees page. The [Vrbo](https://help.vrbo.com/articles/About-Price-Display) cells follow its price display, fee ([Vrbo](https://help.vrbo.com/articles/How-do-I-manage-my-fees)) and payment-detail help pages ([Vrbo](https://help.vrbo.com/articles/How-do-I-read-my-payment-details)).
+Airbnb's service fee depends on the listing, taxes may not show until checkout, and a cleaning fee shows separately unless total-price display is on ([Airbnb](https://www.airbnb.com/help/article/2385)). Vrbo's displayed price includes the service fee, leaves out optional extras and adds taxes at checkout ([Vrbo](https://help.vrbo.com/articles/About-Price-Display)). Its damage deposit is host-set and returned unless the host claims damage ([Vrbo](https://help.vrbo.com/articles/How-do-I-manage-my-fees), [Vrbo](https://help.vrbo.com/articles/How-do-I-read-my-payment-details)).
 
 Managers add their own twists:
 
 - Cabin Rentals of Georgia lists "$50/pet/night" plus a "$75 pet cleaning fee", which the page does not label per night, so we read it as charged once. It also lists "a refundable $250 pet deposit" returned at departure if there is no pet damage or excessive pet hair ([Cabin Rentals of Georgia](https://cabin-rentals-of-georgia.com/policies)). One dog for five nights is $250 plus $75, so $325 of definite pet cost, before the nightly rate and taxes.
 - Tahoe Vacation Rentals sells a nonrefundable waiver covering up to $1,000 of accidental damage "in lieu of a security deposit", which is a cost even though it replaces a deposit.
-- Tahoe's "$75 plus tax per pet" means its pet line is more than $75.
 
 Count any deposit as a cash need and ask who holds it and when it is released.
 
 ## Three quotes, side by side (hypothetical)
 
-These numbers are invented, round, and illustrative, not prices from any listing. One dog, five nights, same dates, taxes left out of all three. Rental A charges the pet fee per night ($40 x 5); C charges it per stay.
+These numbers are invented, round, and illustrative, not prices from any listing. One dog, five nights, same dates, taxes left out of all three. Rental A: $1,000 nightly rate, $100 cleaning, $200 pet fee ($40 x 5). Rental B: $1,125, $125, no pet fee. Rental C: $1,050, $100, $150 per stay, plus a $250 refundable deposit.
 
-| Line | Rental A | Rental B | Rental C |
-| --- | --- | --- | --- |
-| Nightly rate x 5 | $1,000 | $1,125 | $1,050 |
-| Cleaning fee | $100 | $125 | $100 |
-| Pet charge | $200 | $0 | $150 |
-| **Definite cost** | **$1,300** | **$1,250** | **$1,300** |
-| Refundable deposit | none | none | $250 |
-| **Cash needed up front** | **$1,300** | **$1,250** | **$1,550** |
+| Rental | Definite cost | Cash needed up front |
+| --- | --- | --- |
+| A | $1,300 | $1,300 |
+| B | $1,250 | $1,250 |
+| C | $1,300 | $1,550 |
 
-Rental B, the "no pet fee" one, is cheapest. A and C tie on cost, but C asks for $250 more up front, which matters if the deposit is a card hold or a collected payment. Add a second dog, assuming A charges per pet and C's flat fee covers both, and A rises to $1,500 while C stays at $1,300 and B at $1,250. The ranking can flip when the dog count changes, so enter your real count.
+Rental B, the "no pet fee" one, is cheapest. A and C tie on cost, but C asks for $250 more up front, which matters if the deposit is a card hold or a collected payment. With a second dog, assuming A charges per pet and C's flat fee covers both, A and C stop tying: A rises to $1,500 while C stays at $1,300.
 
 ## How to compare quotes
 
@@ -231,9 +220,10 @@ Rental B, the "no pet fee" one, is cheapest. A and C tie on cost, but C asks for
 
 - **Damage and extra cleaning after checkout.** A pet fee does not stand in for a damage claim. If a charge appears afterwards, see [what to do about an Airbnb pet damage charge](/guides/airbnb-pet-damage-charge-after-checkout). Mud is the part you can control: a washable doormat like the [Soggy Doggy](https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate) Microfiber Doormat, which the maker lists with a non-slip backing and says is machine washable, gives wet paws somewhere to land. Skip it if the entry is carpeted or tiny. Photos at arrival and checkout matter more than any gear, and our [rental cleanup gear page](/gear/rental-cleanup) lists cleanup options.
 
-{{pick:soggy-doggy-microfiber-doormat|For muddy entries: a washable mat|The maker lists a non-slip backing and says it is machine washable; it does not say how much mud it holds.|https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate}}
 
 - **A dog the booking did not approve.** [Cabin Rentals of Georgia](https://cabin-rentals-of-georgia.com/policies) says all pet fees are doubled if an unapproved dog is found. [Tahoe Vacation Rentals](https://www.tahoevacationrentals.com/reservation-information/) lists a $300 nonrefundable per-pet charge and immediate departure for a pet in a non-pet-friendly home.
+{{pick:soggy-doggy-microfiber-doormat|For muddy entries: a washable mat|The maker lists a non-slip backing and says it is machine washable; it does not say how much mud it holds.|https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate}}
+
 
 ## What we could not confirm
 
@@ -244,4 +234,4 @@ Platform wording comes from the Airbnb and Vrbo help pages, and each manager fig
 
 ## Next step
 
-Put your quotes side by side using the real dog count, keep refundable money on its own line, and add the money tasks to the [trip checklist](/tools/checklist). To price real homes the same way, [start a pet-friendly search on Vrbo](aff:vrbo) and use the full breakdown before you confirm.
+Run your quotes through the steps above with your real dog count, and add the money tasks to the [trip checklist](/tools/checklist). To price real homes the same way, [start a pet-friendly search on Vrbo](aff:vrbo) and use the full breakdown before you confirm.

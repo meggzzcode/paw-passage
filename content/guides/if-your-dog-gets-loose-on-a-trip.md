@@ -56,18 +56,6 @@ sources:
     url: https://www.aspca.org/pet-care/general-pet-care/finding-lost-pet
     publisher: "ASPCA"
     accessedOn: 2026-11-18
-  - title: "Park City community helps reunite lost golden retriever with owners"
-    url: https://www.kpcw.org/park-city/2024-01-02/park-city-community-helps-reunite-lost-golden-retriever-with-owners
-    publisher: "KPCW"
-    accessedOn: 2026-11-18
-  - title: "Pup found after days in the zero-degree cold"
-    url: https://www.kbbi.org/local-news/2022-01-13/pup-found-after-days-in-the-zero-degree-cold
-    publisher: "KBBI"
-    accessedOn: 2026-11-18
-  - title: "Killington community helps visitor search for lost dog"
-    url: https://www.mountaintimes.info/killington-community-helps-visitor-search-for-lost-dog/
-    publisher: "Mountain Times"
-    accessedOn: 2026-11-18
   - title: "Pet ID Tags and Dog Collars"
     url: https://www.akcreunite.org/idtags/
     publisher: "AKC Reunite"
@@ -107,10 +95,6 @@ sources:
   - title: "July 4 fireworks cause spike in lost dog reports"
     url: https://patch.com/massachusetts/across-ma/july-4-fireworks-cause-spike-lost-dog-reports-what-ma-pet-owners-should-know
     publisher: "Patch"
-    accessedOn: 2026-11-18
-  - title: "Christmas miracle - family reunited with their dog found 60 miles away"
-    url: https://www.upworthy.com/christmas-miracle-family-reunited-with-their-dog-found-60-miles-away
-    publisher: "Upworthy"
     accessedOn: 2026-11-18
   - title: "Fear of fireworks and thunderstorms"
     url: https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/fear-fireworks-and-thunderstorms
@@ -205,7 +189,7 @@ If you are separated in an emergency such as a flood or fire, [AKC Reunite](http
 
 ## The first hour and the days after
 
-**Widen the net.** Walk and drive the search area slowly, splitting up if you have helpers (our suggestion). The ASPCA's list of places to call is animal control, veterinary hospitals, municipal and private shelters and local rescue groups, and the police if no shelter is nearby. Give an accurate description including coat length and color, markings and size ([ASPCA](https://www.aspca.org/pet-care/general-pet-care/finding-lost-pet), [AKC Reunite](https://www.akcreunite.org/lostpettips/)).
+**Widen the net.** Walk and drive the search area slowly, splitting up if you have helpers (our suggestion). When you call the agencies from step 6, give an accurate description including coat length and color, markings and size ([ASPCA](https://www.aspca.org/pet-care/general-pet-care/finding-lost-pet), [AKC Reunite](https://www.akcreunite.org/lostpettips/)), and ask whether they hold a dog matching it.
 
 **Same day and after.** Visit shelters in person with a photo; the [ASPCA](https://www.aspca.org/pet-care/general-pet-care/finding-lost-pet) recommends checking daily, and AKC Reunite notes that staff can change from day to day ([AKC Reunite](https://www.akcreunite.org/lostpettips/)). Put up flyers with a bold headline, a recent clear photo, breed, sex, coloring, age, weight, distinguishing features, when and where last seen, and your name with two phone numbers, one a friend or relative.
 
@@ -215,7 +199,7 @@ A legible tag with a number you will answer, a chip whose registry record is cur
 
 ### The tag
 
-The [ASPCA](https://www.aspca.org/pet-care/general-pet-care/finding-lost-pet) says a collar with an ID tag should carry your name, current phone number and other contact information, even for indoor-only pets. For travel, put a mobile number you will answer and a second number for a friend or relative. Engrave or stamp the number rather than using a sticker, and check the ring for wear (our suggestion); AKC Reunite notes tags can fall off or become hard to read. [AKC Reunite on ID tags](https://www.akcreunite.org/idtags/) Any engraved tag from a pet store will do; more ID items are in [safety, ID and first aid gear](/gear/safety-id-first-aid).
+The [ASPCA](https://www.aspca.org/pet-care/general-pet-care/finding-lost-pet) says a collar with an ID tag should carry your name, current phone number and other contact information, even for indoor-only pets. For travel, put a mobile number you will answer and a second number for a friend or relative. Engrave or stamp the number rather than using a sticker, and check the ring for wear (our suggestion); tags can fall off or become hard to read ([AKC Reunite](https://www.akcreunite.org/idtags/)). Any engraved tag from a pet store will do; more ID items are in [safety, ID and first aid gear](/gear/safety-id-first-aid).
 
 ### The microchip, and the record behind it
 
@@ -263,27 +247,21 @@ All figures below are the makers' own, read on 2026-11-18.
 
 **Doors.** Treat arrival as the riskiest moment: one person holds the dog while another handles the bags, and the dog does not go out without a leash. (Our suggestions.)
 
-**Gates and fences.** "Fenced" is not a yard you can trust. Ask what exactly closes the space, how low the fence is at its weakest point and who opens the gates; our [secure fenced yard guide](/guides/vacation-rental-secure-fenced-yard) lists the questions and photos to request. Cornell advises a leash even in a fenced yard when fireworks or storms are the worry ([Cornell Riney Center](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/fear-fireworks-and-thunderstorms)). One dog scaled an 8-foot daycare fence after fireworks and was found about 60 miles away; its chip let a rescue group reach the family ([Upworthy](https://www.upworthy.com/christmas-miracle-family-reunited-with-their-dog-found-60-miles-away)).
+**Gates and fences.** "Fenced" is not a yard you can trust. Ask what exactly closes the space, how low the fence is at its weakest point and who opens the gates; our [secure fenced yard guide](/guides/vacation-rental-secure-fenced-yard) lists the questions and photos to request. Cornell advises a leash even in a fenced yard when fireworks or storms are the worry ([Cornell Riney Center](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/fear-fireworks-and-thunderstorms)).
 
 **No fence at all.** A freestanding pen gives a bounded space for supervised use; see our [portable pen and playpen guide](/guides/portable-dog-fence-and-playpen-guide-for-rentals) and ask the host first.
 
 ## Fireworks and holidays
 
-Cornell says to keep ID collar and microchip information current and a fearful dog in a room farthest from the noise ([Cornell Riney Center](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/fear-fireworks-and-thunderstorms)). Our [New Year's Eve in a rental guide](/guides/new-years-eve-with-a-dog-in-a-vacation-rental) has the host questions and a night-of plan. Three New Year's Eve cases, each one story and not a rate. A Golden Retriever in Park City, Utah, was found after two days when a stranger who had seen a notice called the owner ([KPCW](https://www.kpcw.org/park-city/2024-01-02/park-city-community-helps-reunite-lost-golden-retriever-with-owners)). A small dog in Homer, Alaska, was found after a stranger saw his poster ([KBBI](https://www.kbbi.org/local-news/2022-01-13/pup-found-after-days-in-the-zero-degree-cold)). A Lab ran from a Killington, Vermont ski house, with no reported outcome ([Mountain Times](https://www.mountaintimes.info/killington-community-helps-visitor-search-for-lost-dog/)).
+Cornell says to keep ID collar and microchip information current and a fearful dog in a room farthest from the noise ([Cornell Riney Center](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/fear-fireworks-and-thunderstorms)). Our New Year's Eve guide tells the real escape stories (a Killington Lab, a Park City Golden Retriever, a dog found 60 miles away) in [Keeping your dog from bolting](/guides/new-years-eve-with-a-dog-in-a-vacation-rental#keeping-your-dog-from-bolting), with host questions and a night-of plan.
 
-## Checklist and what to buy first
-
-- [ ] Tag legible, with a mobile number you will answer; chip registry record checked, with an alternate contact outside your area.
-- [ ] Tracker charged, subscription active, coverage checked, app on every adult's phone (if you use one).
-- [ ] On arrival, look for doors, gates and fence gaps before the dog goes out (the [rental checklist](/guides/pet-friendly-vacation-rental-checklist) helps); leash for every outing.
-
-**What to buy first:**
+## What to buy and do first
 
 1. **A tag with a number you will answer.** It is the one layer a finder can use without a scanner; a cheap local purchase.
-2. **No purchase, one phone call:** confirm the chip registry record is current.
-3. **A tracker, if you want a search tool.** Tractive DOG 6 is the simplest fit for a dog above 8.8 lbs in a collar you like; the Fi Series 3+ if you will swap the collar and want the longest listed battery; the Petcube only for its size. Check plan and coverage, and set it up on every adult's phone before you leave.
+2. **No purchase, one phone call:** confirm the chip registry record is current, with an alternate contact outside your area.
+3. **A tracker, if you want a search tool.** Tractive DOG 6 is the simplest fit for a dog above 8.8 lbs in a collar you like; the Fi Series 3+ if you will swap the collar and want the longest listed battery; the Petcube only for its size. Check plan and coverage, charge it, and set it up on every adult's phone before you leave.
 4. **A clip-on light** for dusk arrivals and night toilet walks, if the collar has a light loop.
-5. **Something to contain the dog at the rental.** A pen is a supervised tool, not a fence.
+5. **Something to contain the dog at the rental.** A pen is a supervised tool, not a fence. On arrival, look for doors, gates and fence gaps before the dog goes out (the [rental checklist](/guides/pet-friendly-vacation-rental-checklist) helps), and leash every outing.
 
 Next step: run through the [trip checklist](/tools/checklist) or add a tag, a flyer and a charger from the [packing list](/tools/packing-list).
 

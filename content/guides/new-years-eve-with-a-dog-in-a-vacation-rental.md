@@ -223,7 +223,7 @@ None of the 38 manager pet pages we read for our [how-many-dogs guide](/guides/h
 
 ## Keeping your dog from bolting
 
-Cornell advises a leash even in a fenced yard, and a familiar room far from the noise with few windows ([Cornell Riney Center](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/fear-fireworks-and-thunderstorms)). Use a crate only if the dog is used to one. Escapes we read about:
+Cornell advises a familiar room far from the noise with few windows ([Cornell Riney Center](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/fear-fireworks-and-thunderstorms)). Use a crate only if the dog is used to one. Escapes we read about:
 
 - A lab left a Killington, Vermont ski house on New Year's Eve after fireworks ([Mountain Times](https://www.mountaintimes.info/killington-community-helps-visitor-search-for-lost-dog/)).
 - A young Golden Retriever bolted from a relative who could not run, after neighbors' fireworks, and was found after two days ([KPCW](https://www.kpcw.org/park-city/2024-01-02/park-city-community-helps-reunite-lost-golden-retriever-with-owners)).
@@ -234,20 +234,12 @@ In several of these, a fence, a door, or a person who could not give chase was i
 **ID plan for an unfamiliar place**
 
 - A tag with a mobile number you will answer. [Patch](https://patch.com/massachusetts/across-ma/july-4-fireworks-cause-spike-lost-dog-reports-what-ma-pet-owners-should-know) recommends a current cell number, a microchip, and a tracker if possible.
-- Current microchip registration; a chip identified the dog in the 60-mile case ([Upworthy](https://www.upworthy.com/christmas-miracle-family-reunited-with-their-dog-found-60-miles-away)).
+- Current microchip registration; a chip is how the finder reached the family in the 60-mile case above.
 - A recent photo on your phone, ready to post.
 
 ## What helps a dog scared of New Year's Eve fireworks
 
-Food or play during noise has the strongest support. Riemer's 2023 review calls gradual desensitization with recorded sounds the "gold standard", though some dogs do not respond, and says medication belongs with behavior work, not alone ([Animals (Basel)](https://pmc.ncbi.nlm.nih.gov/articles/PMC10705068/)). Desensitization takes weeks of training, so it cannot be done in the week before 31 December; ask your vet about it for next year and use the steps below this time.
-
-| What | What the sources say |
-| --- | --- |
-| Food or play during noise | Linked to improvement in severely affected dogs in an owner survey summary; called one of the most effective methods |
-| Safe space, masking sound | Short-term and "important (but not sufficient)"; Cornell recommends a quiet room |
-| Pressure vests | "a small beneficial effect is possible" |
-
-Sources for this table: [AVSAB](https://avsab.org/survey-shows-which-treatments-are-effective-for-fireworks-fears-in-dogs/)
+Food or play during noise has the strongest support: an owner survey summary linked it to improvement in severely affected dogs ([AVSAB](https://avsab.org/survey-shows-which-treatments-are-effective-for-fireworks-fears-in-dogs/)). A safe space with masking sound is short-term and "important (but not sufficient)", and for pressure vests "a small beneficial effect is possible". Riemer's 2023 review calls gradual desensitization with recorded sounds the "gold standard", though some dogs do not respond, and says medication belongs with behavior work, not alone ([Animals (Basel)](https://pmc.ncbi.nlm.nih.gov/articles/PMC10705068/)). Desensitization takes weeks of training, so it cannot be done in the week before 31 December; ask your vet about it for next year and use the steps below this time.
 
 Owners of dogs given a placebo often report improvement, and one study found no evidence of calming properties for cannabidiol ([Animals (Basel)](https://pmc.ncbi.nlm.nih.gov/articles/PMC10705068/)). Cornell advises trying any prescribed medication on a quiet day first, so talk to your vet well ahead, and never to punish a scared dog ([Cornell Riney Center](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/fear-fireworks-and-thunderstorms)).
 
@@ -267,7 +259,7 @@ Nothing here replaces a tag with a number you will answer and a current chip rec
 
 {{pick:ruffwear-the-beacon-dog-safety-light|Seeing the dog after dark|The maker lists three modes, up to 20 hours of run time and a Quick Clip for Ruffwear collars and light loops.|https://ruffwear.com/products/the-beacon-safety-dog-light}}
 
-**If your dog has bolted before, add a tracker as a second layer.** A GPS tracker is meant to show where the dog went. The [Petcube](https://petcube.com/tracker/) GPS Tracker weighs 29 g, and its maker says a paid plan is required and lists battery of up to 30 days in power save mode. Check the plan cost and cellular coverage near the cabin first. In a round-up of GPS collars, [Tree Line Review](https://www.treelinereview.com/gearreviews/best-gps-dog-collars) called the Petcube GPS Tracker "the most inaccurate location-wise" of the group, a single reviewer's verdict; our [tracker guide](/guides/if-your-dog-gets-loose-on-a-trip) has the full buying checklist. Skip it for a dog that has never bolted and will be on a leash all night, and if location accuracy matters most, read the buying checklist in the tracker guide before choosing.
+**If your dog has bolted before, add a tracker as a second layer.** The [Petcube](https://petcube.com/tracker/) GPS Tracker weighs 29 g, and its maker says a paid plan is required and lists battery of up to 30 days in power save mode. Check the plan cost and cellular coverage near the cabin first. In a round-up of GPS collars, [Tree Line Review](https://www.treelinereview.com/gearreviews/best-gps-dog-collars) called it "the most inaccurate location-wise" of the group, a single reviewer's verdict, so if accuracy matters most, use the buying checklist in our [tracker guide](/guides/if-your-dog-gets-loose-on-a-trip#trackers-gps-and-bluetooth). Skip it for a dog that has never bolted and will be on a leash all night.
 
 **Buy in this order:**
 
@@ -295,7 +287,7 @@ Tell guests not to let the dog out. If you plan to go out, see our [guide on lea
 
 ## If your dog runs
 
-Ask people to phone you rather than chase. In Killington, the public was asked to do exactly that ([Mountain Times](https://www.mountaintimes.info/killington-community-helps-visitor-search-for-lost-dog/)). In Park City, a finder saw a phone number on a notice, sat down so as not to frighten the dog, and the owner talked to the dog by speakerphone ([KPCW](https://www.kpcw.org/park-city/2024-01-02/park-city-community-helps-reunite-lost-golden-retriever-with-owners)).
+Ask people to phone you rather than chase; a phone number on a notice is what let a Park City finder call the owner.
 
 - Post flyers with your mobile number. In Homer, Alaska, a small dog missing since New Year's Eve was found about two weeks later by a woman who had seen his poster; he was dehydrated and thin ([KBBI](https://www.kbbi.org/local-news/2022-01-13/pup-found-after-days-in-the-zero-degree-cold)).
 - Alert shelters and lost-pet pages near the rental.

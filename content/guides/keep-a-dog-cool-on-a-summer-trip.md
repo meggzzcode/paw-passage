@@ -11,7 +11,7 @@ approvedOn: 2026-11-19
 author: Paws & Passage Editors
 publishedOn: 2026-11-19
 lastReviewed: 2026-11-24
-readingMinutes: 12
+readingMinutes: 8
 heroImage: guide-keep-dog-cool
 faqs:
   - q: What are the first signs a dog is overheating?
@@ -165,7 +165,7 @@ research:
   researchComplete: true
 ---
 
-Keep the dog out of parked cars, walk in the early morning and evening, and carry water everywhere. Those three habits matter more than any gadget, and the one time to stop and call a vet is when you see the signs below.
+Keep the dog out of parked cars, walk in the early morning and evening, and carry water everywhere. Those three habits matter more than any gadget, and the one time to stop and call a vet is when you see the signs below. Where a line has no source marker, it is our suggestion.
 
 ## If your dog is overheating now
 
@@ -186,19 +186,26 @@ AKC names puppies, seniors, overweight dogs, dogs with health problems and short
 
 AKC says never, even for a short time, because temperatures inside rise rapidly. [[1]](https://www.akc.org/expert-advice/health/heat-stroke-in-dogs/) Humane World says a car can spike into the 100s on a pleasant 70 degree day and a running air conditioner is no guarantee. [[7]](https://www.humaneworld.org/en/blog/heat-wave-wraps-around-us-take-steps) No source we read gives a safe number of minutes.
 
-The law varies. The Animal Legal Defense Fund says that as of 2025, 32 states plus D.C. and Guam have some form of hot car law, and warns that a rescuer can still face property-damage or trespass charges, so call law enforcement first. [[8]](https://aldf.org/hotcars) Michigan State's Animal Legal & Historical Center keeps a [state-by-state table](https://www.animallaw.info/topic/table-state-laws-protect-animals-left-parked-vehicles); Texas, for example, has no dog-specific statute but one man was convicted under its general anti-cruelty law. Check each state on your route. The law is not the reason to stay with the dog; the heat is.
+The law varies. The Animal Legal Defense Fund says that as of 2025, 32 states plus D.C. and Guam have some form of hot car law, and warns that a rescuer can still face property-damage or trespass charges, so call law enforcement first and check the statute for each state on your route. [[8]](https://aldf.org/hotcars) Examples from Michigan State's Animal Legal & Historical Center [state-by-state table](https://www.animallaw.info/topic/table-state-laws-protect-animals-left-parked-vehicles):
+
+- **Florida:** section 768.139 gives civil immunity to a person who forcibly enters a locked vehicle to remove a domestic animal, if conditions such as calling 911 are met. [[9]](https://www.animallaw.info/topic/table-state-laws-protect-animals-left-parked-vehicles)
+- **California:** Penal Code section 597.7 bars leaving an animal in an unattended vehicle under conditions that endanger it; a first conviction carries a fine of up to $100 per animal.
+- **North Carolina:** G.S. 14-363.3 covers animals confined in vehicles under conditions likely to cause suffering, injury or death.
+- **Texas:** no statute specific to dogs in parked vehicles, but one man was convicted under the general anti-cruelty law.
+
+The law is not the reason to stay with the dog; the heat is.
 
 Plan the day so the dog is never alone in the car: take turns at stops, pick food stops with outdoor seating and do errands before you collect the dog. While driving, use the air conditioning, shade the car at stops and offer water often. Our [two large dogs in one car guide](/guides/two-large-dogs-in-one-car) covers heat stops on the road.
 
 ## Shade and surface heat
 
-Use the hand test before every walk: hold your hand on the ground for ten seconds (AKC) or seven (the Royal Kennel Club). If it is too hot for your hand, it is too hot for paws. AKC cites JAMA data that asphalt reaches 135 F when the air is 86 F, and advises early-morning or evening walks on grass or in shade. [[3]](https://www.akc.org/expert-advice/health/dog-paws-hot-pavement/) The Royal Kennel Club adds that sun, wind and humidity change surface heat, so air temperature alone is a poor guide. [[4]](https://www.royalkennelclub.com/hotpavements) Cornell's prevention list adds frequent water and limiting hard exercise in hot, humid weather. [[2]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/heatstroke-medical-emergency)
+Use the hand test before every walk: hold your hand on the ground for ten seconds (AKC) or seven (the Royal Kennel Club). If it is too hot for your hand, it is too hot for paws. AKC says the ground may be too hot once the air is 85 F or over without a chance to cool, and cites JAMA data that asphalt reaches 135 F when the air is 86 F, and advises early-morning or evening walks on grass or in shade. [[3]](https://www.akc.org/expert-advice/health/dog-paws-hot-pavement/) The Royal Kennel Club adds that sun, wind and humidity change surface heat, so air temperature alone is a poor guide. [[4]](https://www.royalkennelclub.com/hotpavements) Cornell's prevention list adds frequent water and limiting hard exercise in hot, humid weather. [[2]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/heatstroke-medical-emergency)
 
-Both pages describe pavement. Our suggestion: run the same test on sand, parking lots and rental deck boards.
+Both pages describe pavement, so run the same test on sand, parking lots and rental deck boards.
 
 ## Water, the beach and the rental
 
-**Hydration.** AKC says to bring enough water for your dog's size and activity and plan breaks. [[1]](https://www.akc.org/expert-advice/health/heat-stroke-in-dogs/) No source we read gives an amount in ounces, so go by your dog and the day. At the beach, Cornell advises half-hour breaks from the water, because a dog in and out of water all day can swallow a lot, and a good drink of fresh water before you go. [[13]](https://www.vet.cornell.edu/departments/riney-canine-health-center/canine-health-information/summer-safety-tips) Our [life jacket guide](/guides/dog-life-jacket-for-lakes-and-beaches) covers saltwater, algae and beach rules. Bring shade (a pop-up umbrella is our suggestion) and skip the middle of the day.
+**Hydration.** AKC says to bring enough water for your dog's size and activity and plan breaks. [[1]](https://www.akc.org/expert-advice/health/heat-stroke-in-dogs/) No source we read gives an amount in ounces, so go by your dog and the day. At the beach, Cornell advises half-hour breaks from the water, because a dog in and out of water all day can swallow a lot, and a good drink of fresh water before you go. [[13]](https://www.vet.cornell.edu/departments/riney-canine-health-center/canine-health-information/summer-safety-tips) Our [life jacket guide](/guides/dog-life-jacket-for-lakes-and-beaches) covers saltwater, algae and beach rules. Bring shade (a pop-up umbrella works) and skip the middle of the day.
 
 **At the rental.** Ask the host in writing whether the air conditioning covers the room where the dog will sleep and whether there is shaded outdoor space. We found no source on safe indoor temperatures, so do not assume a closed-up house is cool. See our guides on [leaving a dog alone in a rental](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental) and [pools and hot tubs](/guides/can-dogs-go-in-a-rental-pool-or-hot-tub).
 
@@ -212,13 +219,24 @@ Both pages describe pavement. Our suggestion: run the same test on sand, parking
 
 ## Cooling vests and pads: what to look for
 
-Water, shade and rest come first; AKC and Cornell both name cool water on the coat as first aid. [[1]](https://www.akc.org/expert-advice/health/heat-stroke-in-dogs/) [[2]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/heatstroke-medical-emergency) Vests and pads are optional extras, and the evidence for them is thin. The studies we found were small and on working dogs: a 2012 University of Florida study of seven dogs found vests helped some cool faster and called itself preliminary [[6]](https://www.vetmed.ufl.edu/2012/04/26/uf-study-looks-at-role-of-vests-in-heat-related-illness-of-working-dogs), and a 2022 military-dog study in *[Animals](https://www.mdpi.com/2076-2615/12/18/2347)* looked at vests in moderate heat. We found no independent test of any vest or pad sold for pet dogs, so treat cooling claims as the maker's.
+Water, shade and rest come first; AKC and Cornell both name cool water on the coat as first aid. [[1]](https://www.akc.org/expert-advice/health/heat-stroke-in-dogs/) [[2]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/heatstroke-medical-emergency) Vests and pads are optional extras, and the evidence for them is thin. The studies we found were small and on working dogs: a 2012 University of Florida study of seven dogs found vests helped some cool faster and called itself preliminary [[6]](https://www.vetmed.ufl.edu/2012/04/26/uf-study-looks-at-role-of-vests-in-heat-related-illness-of-working-dogs), and a 2022 military-dog study in *Animals* looked at vests in moderate heat. [[5]](https://www.mdpi.com/2076-2615/12/18/2347) We found no independent test of any vest or pad sold for pet dogs, so treat cooling claims as the maker's.
 
-- **Evaporative vest, for dogs on the move.** Look for chest-girth sizing and a size chart (measure the widest part of the rib cage). Ruffwear's Swamp Cooler is soaked, worn and re-soaked when dry, sized XXS (13-17 in) to XL (36-42 in), and the maker calls the cooling evaporative. [[10]](https://ruffwear.com/products/swamp-cooler-dog-cooling-vest) Its page gives two different between-sizes instructions, so read the chart for the size in front of you. Expect it to need a water source and to do less in humid air (our reasoning, not a sourced claim). Skip it if your dog mostly rests.
-- **Gel pad, for a cooled room or car.** Look for a size matched to your dog stretched out, and read the warnings. The Green Pet Shop's Cool Pet Pad is pressure-activated, needs no water or electricity and cools up to 3 hours, per the maker, with a 15 to 20 minute recharge; it warns against direct sun, heat and hot cars, and against leaving it with a dog that chews or scratches. [[11]](https://www.thegreenpetshop.com/products/cool-pet-pad) [Chewy](https://www.chewy.com/education/dog/health-and-wellness/the-best-products-to-keep-dogs-cool-in-the-summer) lists four hours, so go by the maker's three. The page also claims the pad prevents dangerous overheating; no test is cited, and no pad makes a parked car safe.
+**Evaporative vest, for dogs on the move.** Look for chest-girth sizing and a size chart (measure the widest part of the rib cage). Ruffwear's Swamp Cooler is soaked, worn and re-soaked when dry, sized XXS (13-17 in) to XL (36-42 in), and the maker calls the cooling evaporative. [[10]](https://ruffwear.com/products/swamp-cooler-dog-cooling-vest) Its page gives two different between-sizes instructions, so read the chart for the size in front of you. Expect it to need a water source and to do less in humid air (our reasoning). Choose it if most of the dog's heat exposure is on foot; skip it if your dog mostly rests.
+
+{{pick:ruffwear-swamp-cooler|Soak-and-wear vest for walks|The maker sizes it by chest girth from XXS (13-17 in) to XL (36-42 in), says to soak it, put it on and re-soak it when dry, and calls the cooling evaporative; its page makes no claim that it prevents heat illness.|https://ruffwear.com/products/swamp-cooler-dog-cooling-vest}}
+
+**Gel pad, for a cooled room or car.** Pick a size for your dog stretched out; the Green Pet Shop lists five, from 11.8 x 15.7 in (0-8 lbs) to 27.5 x 43.3 in (above 80 lbs), and a 12-month limited warranty for verified defects, so check its terms. Its Cool Pet Pad is pressure-activated, needs no water or electricity and cools up to 3 hours, per the maker, with a 15 to 20 minute recharge. It warns against direct sun, heat, hot air and hot cars (put a towel or blanket on a car seat first), and against leaving it with a dog that chews or scratches. [[11]](https://www.thegreenpetshop.com/products/cool-pet-pad) Chewy lists four hours [[12]](https://www.chewy.com/education/dog/health-and-wellness/the-best-products-to-keep-dogs-cool-in-the-summer), so go by the maker's three. The page also claims the pad prevents dangerous overheating; no test is cited, and no pad makes a parked car safe. Choose it if the dog spends hot evenings on a cooled floor; skip it for a dog that chews bedding.
+
+{{pick:green-pet-shop-cool-pet-pad|A gel pad for a cooled room or car|The maker lists five sizes by weight, from 11.8 x 15.7 in (0-8 lbs) to 27.5 x 43.3 in (above 80 lbs), needs no water or electricity, and warns against direct sunlight and hot cars.|https://www.thegreenpetshop.com/products/cool-pet-pad}}
 
 Neither replaces working air conditioning, shade or a vet's advice for a higher-risk dog.
 
 ## Before you go
 
-Check the forecast for each day, plan walks for early and late, and find an emergency vet near the rental. Add a bowl and bottle to the [packing list tool](/tools/packing-list), and add air conditioning and shade to your [pre-booking checklist](/tools/checklist). More options are in the [comfort and cooling gear](/gear/comfort-and-cooling) and [feeding and hydration gear](/gear/feeding-and-hydration) sections.
+Check the forecast for each day, plan walks for early and late, and find an emergency vet near the rental. Buy in this order:
+
+1. **A bowl or bottle** that suits how your dog drinks: the flat car-seat bowl or the one-hand walking bottle. Water comes before any cooling gear.
+2. **A vest** only if your trip is mostly on foot.
+3. **A pad** only if your dog mostly rests, with its warnings read first.
+
+Add a bowl and bottle to the [packing list tool](/tools/packing-list), and add air conditioning and shade to your [pre-booking checklist](/tools/checklist). More options are in the [comfort and cooling gear](/gear/comfort-and-cooling) and [feeding and hydration gear](/gear/feeding-and-hydration) sections.

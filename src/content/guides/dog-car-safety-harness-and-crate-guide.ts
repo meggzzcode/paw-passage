@@ -5,7 +5,7 @@ export const guide: Guide = {
   title: "Crash-Tested Dog Harness or Crate: How to Check One Before You Buy",
   seoTitle: "Crash-Tested Dog Harness or Crate: How to Check One",
   seoDescription:
-    "“Crash tested” is not regulated. Look up a dog harness or crate in the CPS directory, match your dog's weight, skip extension tethers, and see our picks.",
+    "Dog car harness or crate: “crash tested” is not regulated. Check the CPS directory, match your dog's weight, skip extension tethers, see our picks.",
   dek: "What “crash-tested” does and does not prove, how to look up a crash-tested dog harness or crate, size and install it, and which products to start with.",
   category: "Gear",
   states: [],
@@ -111,6 +111,8 @@ The button below opens a listing for one size (Medium) when we checked it on 202
 
 Under about 25 lbs you have two routes. The first is a carrier tested at your dog's weight. For a dog up to 12 lbs, that is the Sleepypod Atom, a soft fold-flat carrier with mesh on three sides that the maker rates to 12 lbs and CPS lists with a 12 lb test dog and five stars. Skip it for a heavier dog, since it says nothing about a 15 lb dog. The maker's site navigation and a carriers banner say up to 18 lbs, so go by the Atom's own rating and the CPS listing. [[11]](https://sleepypod.com/products/atom) [[13]](https://centerforpetsafety.org/sleepypod-atom/) Buy it if your dog is a toy breed and will ride in a carrier; the product page does not say how to secure it in a vehicle, so get the maker's instructions first.
 
+For a dog between 12 and about 45 lbs, this guide has no pick we can tie to a test dog at that weight: the Atom stops at 12 lbs, the Heather is not a restraint, and the Medium Clickit Sport's test dogs start at 45 lbs. CPS lists a 25 lb test dog for the Sport's Small, but we did not verify a Small listing, so check it yourself. Otherwise use the seven criteria and the CPS directory to find a product tested at your dog's weight, and do not stretch the Atom or the Medium to cover it.
+
 {{pick:sleepypod-atom|For dogs up to 12 lb|The maker rates it to 12 lbs by CPS, CPS lists a 12 lb test dog and five stars, and it folds flat; the maker's page does not say how to secure it in a vehicle, so get those instructions first.|https://centerforpetsafety.org/sleepypod-atom/}}
 
 The second is a raised seat for a small dog that is too big for the Atom: the Kurgo Heather helps a dog up to 30 lbs see out and settle, but it is a seat, not a restraint. Kurgo's Heather booster seat is for dogs up to 30 lbs, installs on a bucket seat and has an integrated tether that clips to the dog's harness. The maker does not claim the seat itself is crash tested and recommends a separate crash-tested harness, so treat it as a seat that helps a small dog see out and settle, and still put the dog in a harness. [[15]](https://www.kurgo.com/p/heather-dog-booster-seat/K01724) Replace it after an accident, as the maker says. It is for a small dog that gets restless without a view; skip it if your dog is over 30 lbs, and use a harness with it.
@@ -119,12 +121,12 @@ The second is a raised seat for a small dog that is too big for the Atom: the Ku
 
 ## Pick by situation
 
-- **One large dog, SUV with cargo area:** a crate with strength-rated straps (the Lucky Kennel's Intermediate under 70 lbs, the separate Large listing for 70 to 110 lbs), after checking anchor points with the vehicle maker. [[5]](https://centerforpetsafety.org/cargo-area-connection-advisory/)
-- **Medium dog, sedan:** a rear-seat-belt harness sized to the rib cage, with a test dog weight at or above your dog's (the harness pick above). The CPS Sport listing shows 45 to 90 lb test dogs for the Medium. [[16]](https://centerforpetsafety.org/sleepypod-clickit-sport/)
-- **Toy or very small dog:** a carrier tested for your dog's weight (the Atom's rating is 12 lb), or a booster seat plus a crash-tested harness for a dog up to 30 lbs. [[11]](https://sleepypod.com/products/atom)
+- **One large dog, SUV with cargo area:** a strapped-down crate, after checking anchor points with the vehicle maker. [[5]](https://centerforpetsafety.org/cargo-area-connection-advisory/)
+- **Medium dog, sedan:** a rear-seat-belt harness with a test dog weight at or above your dog's. [[16]](https://centerforpetsafety.org/sleepypod-clickit-sport/)
+- **Toy or very small dog:** a carrier or booster seat, as in the small-dog picks above. [[11]](https://sleepypod.com/products/atom)
 - **Dog that panics when confined:** our suggestion, not a source's: a rear-seat harness may be easier to introduce gradually, so ask your vet. A den-lover may prefer a correctly sized, anchored crate.
 - **Two dogs:** separate restraints, never a shared one. See our [two large dogs in one car guide](/guides/two-large-dogs-in-one-car) and our [two-dog planning guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental).
-- **Very large breed:** check the maker's top weight and the CPS test dog weight. The harness in this guide has no tested weight above 90 lbs, so a heavier dog needs a crate or product whose CPS listing shows a test dog at or above its weight. See our [large-dog rental guide](/guides/vacation-rentals-that-welcome-large-dogs).
+- **Very large breed:** the harness here is tested to 90 lbs, so a heavier dog needs a product whose CPS listing shows a test dog at or above its weight. See our [large-dog rental guide](/guides/vacation-rentals-that-welcome-large-dogs).
 
 ## Install it correctly
 
@@ -168,7 +170,7 @@ CDC and ASPCA recommend building up to a long trip with short drives first. Fitt
 
 ## What to buy first
 
-1. **The restraint, matched to your dog.** One that matches your dog's weight and measurements and has a CPS listing you have read. For a dog up to 90 lbs on the rear seat, that is the harness pick on the seat belt; for a large dog in an SUV, a Lucky Kennel plus its strap kit, in the size the maker's weight guide gives for your dog (the Large is a separate listing from the card's Intermediate). Skip anything whose listing shows a test dog lighter than yours.
+1. **The restraint, matched to your dog.** Take the one from Quick picks that fits your dog's weight, with a CPS listing you have read. Skip anything whose listing shows a test dog lighter than yours.
 2. **A carrier or booster, only for a small dog.** The Atom for a dog up to 12 lbs, or the Heather booster seat (plus a harness) for one up to 30 lbs.
 3. **Seat protection, only if the dog rides on a bench.** A hammock or cover sized to your vehicle's rear seat; it is not a restraint. Our [large-dog rental guide](/guides/vacation-rentals-that-welcome-large-dogs) covers a hammock for big vehicles.
 4. **The rest of the kit.** Water, bowls and a leash from the [cabin packing list](/guides/dog-friendly-cabin-packing-list) or the [packing list tool](/tools/packing-list), then run the [trip checklist](/tools/checklist) before you leave.`,

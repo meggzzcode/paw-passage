@@ -2,13 +2,25 @@
 # needed to add, reword, hide or reorder an item. Pages CMS: "Packing planner". Checked at build time by
 # src/lib/packing/schema.ts, so a typo fails the build with the item and field named instead of breaking the page.
 #
-# appears:  essential   always on the list (cannot have a "when" rule)
-#           conditional on the list only when its "when" rule matches the trip
-#           optional    with a "when" rule: on the list as "Consider" when it matches; without one: only offered
-#                       under "Other ideas" and never added by itself
+# appears (the three levels):
+#   essential    LEVEL 1, Essentials: always on the list (cannot have a "when" rule)
+#   conditional  LEVEL 2, Trip-specific recommendations: on the list only when its "when" rule matches the trip
+#   optional     LEVEL 3, Optional discovery: never put on the list by the rules. Offered under "A few extras worth
+#                considering" for trips its "when" rule matches (about four first, the rest under "See more packing
+#                ideas"); an optional item with no "when" rule is only a general idea, shown last under "See more".
+#                The visitor adds it with "Add to my list". Adding it does not mark "Need to buy".
+#                The items are grouped by level below ("LEVEL 1" ... "LEVEL 3" comments); the order in the file does not
+#                change what appears.
 # when:     tripTypes (one of), anyConditions (at least one), allConditions (all), unlessConditions (none),
 #           minDays / maxDays. Every part that is present must match.
 # quantity: none | fixed | perDog | perDay | perDogPerDay | dogDays | meals | text (see docs/PACKING_PLANNER_PRODUCT_GUIDE.md)
+# gearCategory (optional): a /gear category slug (see src/content/gear-categories.ts) for an item with no researched
+#           product. When the visitor ticks "Need to buy" and no product applies, they get "Looking for a ...?" and a link
+#           "Explore ... gear" to that category. Needs shopFor. The build fails for an unknown category or one with
+#           fewer than three active products. Leave it out and the visitor sees "Added to your shopping list" only.
+#           Items that list products also fall back to the category of those products.
+# gearTrip (trip types): the /gear trip collection the "Explore more travel gear" link opens (/gear?trip=<slug>). A test
+#           checks the slug exists in src/content/gear-hub.ts tripCollections. Leave out to link to /gear.
 # products: ids from content/products.yml, best first. A product shows only when it is active and has a working
 #           link. NEVER put a link here: affiliate links live in content/affiliates.yml. The first listed product is
 #           the main suggestion; a second one needs "because" (how it genuinely differs). "caution" is required.
@@ -22,6 +34,7 @@ tripTypes:
     hint: A stay with a kitchen, a host and house rules
     icon: house
     implies: []
+    gearTrip: cabin-stay
   - id: road-trip
     label: Road trip
     short: road trip
@@ -29,6 +42,7 @@ tripTypes:
     hint: Hours in the car, a few stops along the way
     icon: car
     implies: [driving]
+    gearTrip: road-trip
   - id: beach-lake
     label: Beach or lake getaway
     short: beach or lake
@@ -36,6 +50,7 @@ tripTypes:
     hint: Sand, water and wet towels
     icon: waves
     implies: [water]
+    gearTrip: beach-and-lake
   - id: camping-hiking
     label: Camping or hiking trip
     short: camping or hiking
@@ -43,6 +58,7 @@ tripTypes:
     hint: Trails, tents and long days outside
     icon: tent
     implies: [outdoors]
+    gearTrip: hiking
   - id: other
     label: Other getaway
     short: getaway
@@ -71,6 +87,7 @@ categories:
   - { id: health, label: "Health and medication", order: 60 }
   - { id: rental, label: "Cabin and rental essentials", order: 70 }
 
+# Level of each item = its "appears" value (essential = level 1, conditional = level 2, optional = level 3).
 items:
   # ------------------------------------------------------------------ Food and water
   - id: food
@@ -130,6 +147,8 @@ items:
     what: A plan for where your dog drinks on the drive, on walks and at your stay.
     why: You can't always count on a clean source on the way. If you are unsure about local water or a natural source, bring water from home.
     quantity: { strategy: text, text: Plan access to safe drinking water }
+    shopFor: travel water bowl or bottle
+    gearCategory: feeding-and-hydration
   - id: bottle
     name: Travel water bottle
     category: food-water
@@ -153,13 +172,17 @@ items:
     what: A sturdy fixed-length leash you trust.
     why: Every walk and every rest stop needs one, and a spare is easy to forget.
     quantity: { strategy: perDog, count: 1, unit: leash, note: plus a spare }
+    shopFor: leash
+    products:
+      - id: ruffwear-knot-a-leash
+        caution: Five feet long in both sizes (Small 7 mm rope, Large 11 mm rope), and the page states no strength rating or guidance by dog weight.
   - id: id-tag
     name: Collar with an ID tag
     category: leash-id-safety
     order: 20
     appears: essential
     what: A collar and tag with a phone number that will be answered on this trip.
-    why: The fastest way for a stranger to reach you if your dog slips out in an unfamiliar place.
+    why: Gives a stranger a way to reach you if your dog slips out in an unfamiliar place.
     tip: Check that the number on the tag is the phone you will have with you.
     quantity: { strategy: perDog, count: 1, unit: tag }
     shopFor: ID tag
@@ -172,7 +195,7 @@ items:
     order: 30
     appears: conditional
     when: { anyConditions: [outdoors, escape-risk] }
-    what: A harness your dog can't back out of, adjusted before the trip.
+    what: A harness that fits snugly, adjusted and fit-checked before the trip.
     why: Trails and a dog who may slip away both call for a more secure fit than a loose collar.
     quantity: { strategy: perDog, count: 1, unit: harness }
     shopFor: harness
@@ -185,7 +208,7 @@ items:
     order: 40
     appears: conditional
     when: { anyConditions: [escape-risk] }
-    what: A tracker that clips to the collar and shows where your dog is.
+    what: A tracker that clips to the collar and reports your dog's location where it has coverage.
     why: A second chance if a tag isn't enough for a dog who may slip away. Check its plan and coverage first.
     quantity: { strategy: perDog, count: 1, unit: tracker }
     shopFor: GPS tracker
@@ -226,6 +249,7 @@ items:
     category: leash-id-safety
     order: 80
     appears: optional
+    when: { anyConditions: [outdoors, cold] }
     what: A small light that clips to the collar or harness for dusk and night walks.
     why: Helps you see your dog on a dark path. Optional for most trips.
     quantity: { strategy: perDog, count: 1, unit: light }
@@ -257,6 +281,8 @@ items:
     what: A washable blanket for the sofa or bed.
     why: Use one only where the host allows dogs on furniture, and ask first. A pet fee does not mean furniture permission.
     quantity: { strategy: fixed, count: 1, unit: throw }
+    shopFor: washable throw
+    gearCategory: rental-cleanup
   - id: pen
     name: Portable pen
     category: sleep-comfort
@@ -274,6 +300,20 @@ items:
       - id: petmate-precision-pet-soft-side-play-yard
         because: A soft-sided play yard with a removable floor, instead of a wire pen.
         caution: The page does not state its height or folded size, so check both before you buy.
+  - id: collapsible-crate
+    name: Collapsible travel crate
+    category: sleep-comfort
+    order: 35
+    appears: optional
+    when: { tripTypes: [cabin, road-trip] }
+    what: A soft-sided crate that folds flat and gives your dog a familiar place to settle.
+    why: Some dogs settle better in a crate they already know. The maker describes this one as containing a dog rather than restraining it, so it does not replace a harness or crate rated for the car.
+    tip: Only worth packing if your dog is already crate trained.
+    quantity: { strategy: fixed, count: 1, unit: crate }
+    shopFor: collapsible crate
+    products:
+      - id: petsafe-happy-ride-collapsible-crate
+        caution: The maker lists it for pets up to 60 lb, at 27 x 19 x 28 in fully expanded, and the page makes no crash-test claim. It may not fit compact vehicles.
   - id: warm-layer
     name: Warm layer or coat
     category: sleep-comfort
@@ -324,6 +364,19 @@ items:
       - id: lucky-duck-lucky-kennel
         because: A hard-sided travel kennel with tie-downs, for dogs that travel crated.
         caution: Choose by interior size (Medium under 50 lbs, Intermediate under 70 lbs, Large 70 to 110 lbs per the maker). The ratchet strap kit is sold separately.
+  - id: car-bowl
+    name: Spill-resistant car water bowl
+    category: car-travel
+    order: 15
+    appears: optional
+    when: { anyConditions: [driving] }
+    what: A water bowl with a tapered edge that sits flat on a car seat at rest stops.
+    why: A second water bowl kept in the car saves digging through a bag at every stop.
+    quantity: { strategy: fixed, count: 1, unit: bowl }
+    shopFor: car water bowl
+    products:
+      - id: kurgo-splash-free-wander-bowl
+        caution: Holds 24 oz per the maker, who lists no dimensions, and it is dishwasher safe on the top rack only.
   - id: seat-cover
     name: Back-seat cover or hammock
     category: car-travel
@@ -381,6 +434,19 @@ items:
     products:
       - id: adventure-medical-kits-dog-wipes
         caution: Check the pack count on the listing. The maker lists 8 wipes per pack, each 8 x 8 in.
+  - id: trail-bowl
+    name: Packable trail water bowl
+    category: outdoor
+    order: 25
+    appears: optional
+    when: { anyConditions: [outdoors] }
+    what: A lightweight fabric bowl that packs down small for water breaks on the trail.
+    why: A bowl that packs flat is easy to carry on a long walk, but it only helps if you also carry the water.
+    quantity: { strategy: perDog, count: 1, unit: bowl }
+    shopFor: trail water bowl
+    products:
+      - id: ruffwear-quencher-bowl
+        caution: One size, 4.2 cups (1 L) per the maker. The shell is water-resistant rather than waterproof, and it is hand wash only.
   - id: tick-kit
     name: Tick preventive and a tick remover
     category: outdoor
@@ -413,6 +479,7 @@ items:
     category: outdoor
     order: 50
     appears: optional
+    when: { anyConditions: [cold, outdoors] }
     what: Boots for snow, ice or rough ground, only if your dog already wears them.
     why: Boots and coats are not needed for mild weather and short paved walks, and a dog who has never worn boots needs practice first.
     tip: Try them at home well before the trip.
@@ -484,6 +551,19 @@ items:
     what: The host's answers in writing, the address and the directions, saved offline.
     why: A "pet-friendly" listing doesn't make every rule clear, and cabin signal comes and goes.
     quantity: { strategy: none }
+  - id: pet-gate
+    name: Pet gate for a doorway
+    category: rental
+    order: 15
+    appears: optional
+    when: { tripTypes: [cabin] }
+    what: A pressure-mount gate to keep your dog out of a room or hallway.
+    why: Useful where the cabin has an off-limits room and no fenced yard. Ask the host before you set up anything that touches the walls or doorframes.
+    quantity: { strategy: fixed, count: 1, unit: gate }
+    shopFor: pet gate
+    products:
+      - id: north-states-mypet-universal-petgate
+        caution: Fits openings 26 to 42 in wide and stands 26 in high per the maker, and the page says never to use it at the top of a stairway when held only by tension.
   - id: door-mat
     name: Paw-drying mat for the door
     category: rental

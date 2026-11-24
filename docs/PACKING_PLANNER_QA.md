@@ -56,3 +56,38 @@ Met and tested: route/title/canonical/description; server-rendered intro and set
 | Mobile | 8 | No overflow 320 to 1440, compact rows, 44 px targets; no real device |
 | Buyer content management | 8 | One YAML file, validated with named errors, tested journey F; CMS flow unverified |
 | Maintainability | 9 | Pure typed engine, content-driven, 7 focused test files |
+
+## Second pass: Need to buy, extras, Gear discoverability (2026-11-24, not deployed)
+Each concern was checked against the code before changing anything.
+
+| Concern | Verdict | What was wrong and what changed |
+|---|---|---|
+| (a) Need to buy sometimes gives no response | Confirmed | `ShoppingPanel` returned nothing when an item listed no product (or none applied to the trip), so ticking the box did nothing visible. Now four states, always non-empty: researched products, a "Looking for ...?" pointer to a live Gear category, a quiet "Added to your shopping list" note, and the same note for the visitor's own items (never matched to a product). Tested for all four, plus a test that ticks every item and asserts no panel is empty. |
+| (b) Discovery limited to manually associated product ids | Confirmed | Only `item.products` was consulted. Added optional `gearCategory` (validated at build against real category slugs and the live-category rule) and a fallback to the categories of the item's own listed products. Coverage is now measured: every active product is reachable (see below). The planner still never infers a product from an item's name or free text. |
+| (c) "Not bringing this" looks like "Why this is included" | Confirmed | Both were identical underlined link buttons. Now "Why bring this?" is a quiet ghost button with an info icon (`aria-expanded`, `aria-controls`, labelled region) and "Remove from list" is an outlined, quietly destructive button with an X icon and the accessible name "Remove from list: [item]". Removal shows a polite live message and an Undo button (focus moves to it; it goes away after about ten seconds or the next action); the restore section is "Removed from your list (n)". Removal never touches Packed. |
+| (d) Optional suggestions hidden | Confirmed | Optional items without a rule sat inside a collapsed "Other ideas" disclosure; optional items with a rule were silently added to the list as "Consider" (so an older dog on a driving trip got a ramp). Now optional items are never added by the rules and appear in a visible section "A few extras worth considering" after the checklist (about four, "See more packing ideas" for the rest, "Explore more travel gear" to the trip's Gear collection). |
+
+New behaviour covered by `src/test/packing-v2.test.tsx`, `src/test/packing-gear.test.ts`, and updates to the existing planner, state, engine and analytics tests. Browser QA: `scripts/qa/packing-v2-qa.cjs`, screenshots `docs/editorial/img/packing-v2-*.png` (390 and 1280: item controls, Undo, Need to buy states 1 to 3, extras, pick-up list, Gear collection landing). I reviewed them: the controls wrap to two rows on a phone (kept; the three buttons read as distinct), the Undo bar sits above the content at the bottom of the screen, and the Gear link lands on the trip collection heading with "#trip-collection".
+- No horizontal overflow at 320, 375, 390, 430, 768, 1024, 1440 with a road-trip list with an older dog, several items marked to buy, an explanation open, a removal and all extras shown.
+- Journey 1 (3 days, 2 dogs, cabin): packed a bowl, added the optional pet gate (not marked Need to buy), marked the bed Need to buy, read the product link (`rel="sponsored nofollow noopener"`, `target="_blank"`, "View at Amazon"; the external site was not opened), reloaded as after Back: progress, packed, buy and the added gate all kept. From the planner the Gear link goes to `/gear?trip=cabin-stay#trip-collection`; Back returned to the list with Need to buy still checked.
+
+### Gear coverage
+`bun scripts/gear-coverage-report.ts` writes `docs/PACKING_GEAR_COVERAGE.md`. Of 65 active products: 37 are recommended directly by a packing item, 28 are reachable through a live Gear category the planner links to, 0 only through the Gear hub, and **0 unreachable** (class 4 fails the test). Every active product has a valid outbound link; none is information-only. No product was added to a packing item just to reach it.
+
+### Content verification (Phase 6 checklist)
+- Essentials are sensible for every trip type; conditionals appear only when their rule matches; optional items are never on the list by the rules (tested for every trip type and condition).
+- Quantities: per dog, per day and meal-based strategies checked (2 dogs, 3 days gives 12 meal portions with meals per day, 2 bowl sets, 18 waste bags); all editable, none a dose, weight or water volume.
+- Every product association points to an active product (build and test enforce it); every figure in a `caution` (sizes, weights, capacities, counts) appears in the product record (checked by script, no mismatches). No product is listed under two items. No price, rating, "best", "tested" or effectiveness claim (grep clean after the fixes below).
+- Fixed: the harness item said "a harness your dog can't back out of" (an unsupported effectiveness claim), now "fits snugly, adjusted and fit-checked"; the ID tag said "the fastest way for a stranger to reach you", now "a way"; the GPS item said it "shows where your dog is", now "reports your dog's location where it has coverage".
+- Fixed: Dog boots, the safety light and the life jacket had no relevance rule or an auto-add rule, so boots would have been offered on a beach trip; they now have rules (boots: cold or outdoors; light: outdoors or cold; life jacket: water).
+- Fixed: the leash essential had no product although a leash is in the catalog; it now lists the Ruffwear Knot-a-Leash with a caution from its record.
+- Added level 3 items, each backed by an active product: collapsible travel crate, doorway pet gate, spill-resistant car water bowl, packable trail water bowl. The water plan and the washable throw got a `gearCategory`.
+- Safety notes: product cautions are always visible on the cards; the item-level safety wording (for example "a seat cover is not a restraint", the cooling and life-jacket cautions) is one tap away under "Why bring this?". It is not shown open by default.
+- Trip changes keep user choices (existing tests), and a list saved before this change keeps an optional item that was ticked, bought or counted.
+- A bad `gearCategory`, an unknown product id or an inactive product fails the build naming the item and field (tested through `loadContent`).
+
+### CMS follow-up (needs an owner of `.pages.yml`)
+`content/packing.yml` now accepts `gearCategory` on items and `gearTrip` on trip types. The Pages CMS form in `.pages.yml` has not been updated (that file was being edited for another task, so it was left alone). Add to the "Packing planner" form: under each trip type a `gearTrip` select (cabin-stay, road-trip, beach-and-lake, winter-trip, hiking), and under each item, after `shopFor`, a `gearCategory` select with the eleven slugs in `src/content/gear-categories.ts`; relabel the `why` field "Why bring this?". `src/test/pages-config.test.ts` exempts `gearCategory` only while the form lacks it; once the form has it, field order is checked. The old Cowork step 3 above ("Not bringing this") now reads "Remove from list".
+
+### Still unverified
+Real devices and VoiceOver for the new Undo bar and the controls; the live CMS flow; the Gear trip collection under JavaScript-disabled browsing (not part of the planner).

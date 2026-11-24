@@ -32,7 +32,11 @@ import {
 import { guideIsPublic, stayIsPublic, placeIsPublic } from "../src/content/publish-rule";
 import { destinations } from "../src/content/destinations";
 import { readingMinutes } from "../src/lib/reading-time";
-import { productsSchema, productReferenceProblems } from "../src/content/products-schema";
+import {
+  productsSchema,
+  productReferenceProblems,
+  gearCategorySlugs,
+} from "../src/content/products-schema";
 import { packingSchema, packingProblems, emptyPackingConfig } from "../src/lib/packing/schema";
 
 const VIRTUAL = "virtual:content";
@@ -445,6 +449,13 @@ export function loadContent(
   const kProblems = packingProblems(
     kparsed.data,
     pparsed.data.products.map((p) => ({ id: p.id, active: p.active })),
+    {
+      gearCategories: gearCategorySlugs,
+      liveGearCategories: gearCategorySlugs.filter(
+        (c) =>
+          pparsed.data.products.filter((p) => p.active && p.categories.includes(c)).length >= 3,
+      ),
+    },
   );
   if (kProblems.length)
     throw new ContentError(

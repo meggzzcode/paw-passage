@@ -3,14 +3,15 @@
 //
 // Rules this file keeps (see docs/PACKING_PLANNER_PRODUCT_GUIDE.md, "State model"):
 //  * "Packed" and "Need to buy" are independent. Neither ever sets the other.
-//  * "Not bringing this" hides a suggestion and takes it out of the progress count. It never deletes the
+//  * "Remove from list" hides a suggestion and takes it out of the progress count. It never deletes the
 //    record, and the item can be put back.
 //  * Changing the trip keeps the visitor's own items, keeps packed / buy / quantity choices for items that stay
 //    relevant, adds newly relevant items once (no duplicates) and flags them as new.
 import type { PackingCategory, PackingConfig, PackingItem } from "./schema";
 import {
   defaultTrip,
-  ideasFor,
+  extrasFor,
+  type Extra,
   inclusionFor,
   normalizeTrip,
   quantityFor,
@@ -27,7 +28,7 @@ export const MAX_QTY = 40;
 export interface ItemState {
   packed?: boolean;
   buy?: boolean;
-  /** "Not bringing this". */
+  /** "Remove from list". */
   excluded?: boolean;
   /** An optional idea the visitor added to their list. */
   added?: boolean;
@@ -176,6 +177,13 @@ export function editCustom(
 export function removeCustom(state: PlannerState, id: string): PlannerState {
   return { ...state, custom: state.custom.filter((c) => c.id !== id) };
 }
+/** Put back a removed item of the visitor's own at its old position (for "Undo"). Does nothing if the id is back already. */
+export function reinsertCustom(state: PlannerState, item: CustomItem, index: number): PlannerState {
+  if (state.custom.some((c) => c.id === item.id)) return state;
+  const custom = [...state.custom];
+  custom.splice(Math.min(Math.max(index, 0), custom.length), 0, item);
+  return { ...state, custom };
+}
 
 // ----------------------------------------------------------------------------------------- reading the list
 
@@ -214,7 +222,7 @@ function entryFor(state: PlannerState, item: PackingItem, inclusion: Inclusion |
   };
 }
 
-/** Every suggestion currently on the list, plus ideas the visitor added, minus the ones marked "Not bringing this". */
+/** Every suggestion currently on the list, plus ideas the visitor added, minus the ones the visitor removed ("Remove from list"). */
 export function activeEntries(state: PlannerState, cfg: PackingConfig): Entry[] {
   const out: Entry[] = [];
   const have = new Set<string>();
@@ -225,7 +233,7 @@ export function activeEntries(state: PlannerState, cfg: PackingConfig): Entry[] 
   }
   for (const item of ideasPool(cfg)) {
     const st = state.items[item.id];
-    if (st?.added && !st.excluded && !have.has(item.id) && item.active !== false) {
+    if (onListByVisitor(st) && !st?.excluded && !have.has(item.id) && item.active !== false) {
       out.push(entryFor(state, item, "added"));
       have.add(item.id);
     }
@@ -234,6 +242,13 @@ export function activeEntries(state: PlannerState, cfg: PackingConfig): Entry[] 
 }
 
 const ideasPool = (cfg: PackingConfig) => cfg.items.filter((i) => i.appears === "optional");
+
+/**
+ * An optional item is on the list because the visitor put it there: they added it, or (for a list saved before extras
+ * were never added by the rules) they already ticked, bought or counted it.
+ */
+const onListByVisitor = (st: ItemState | undefined) =>
+  !!st && (!!st.added || !!st.packed || !!st.buy || !!st.qty);
 
 function sortEntries(entries: Entry[], cfg: PackingConfig): Entry[] {
   const cats = new Map(cfg.categories.map((c, i) => [c.id, c.order * 1000 + i]));
@@ -266,18 +281,23 @@ export function removedEntries(state: PlannerState, cfg: PackingConfig): Packing
         (i) =>
           i.active !== false &&
           state.items[i.id]?.excluded &&
-          (onTrip.has(i.id) || state.items[i.id]?.added),
+          (onTrip.has(i.id) || (i.appears === "optional" && onListByVisitor(state.items[i.id]))),
       )
       .map((item) => entryFor(state, item, inclusionFor(item, state.trip, cfg) ?? "added")),
     cfg,
   ).map((e) => e.item);
 }
 
-/** Optional ideas that are not on the list yet (and not removed), for the "Other ideas" disclosure. */
-export function availableIdeas(state: PlannerState, cfg: PackingConfig): PackingItem[] {
-  return ideasFor(state.trip, cfg).filter(
-    (i) => !state.items[i.id]?.added && !state.items[i.id]?.excluded,
+/** Extras (level 3) offered for this trip that are not on the list yet and not removed, most relevant first. */
+export function availableExtras(state: PlannerState, cfg: PackingConfig): Extra[] {
+  return extrasFor(state.trip, cfg).filter(
+    (e) => !onListByVisitor(state.items[e.item.id]) && !state.items[e.item.id]?.excluded,
   );
+}
+
+/** The same extras as plain items. */
+export function availableIdeas(state: PlannerState, cfg: PackingConfig): PackingItem[] {
+  return availableExtras(state, cfg).map((e) => e.item);
 }
 
 export interface Progress {

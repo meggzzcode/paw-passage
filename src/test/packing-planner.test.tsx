@@ -132,7 +132,7 @@ describe("packing planner: building and using the list", () => {
       "Outdoor adventures",
       "Health and medication",
       "Cabin and rental essentials",
-      "Extras you've added",
+      "Items you've added",
     ]);
   });
 
@@ -144,7 +144,7 @@ describe("packing planner: building and using the list", () => {
     expect(packedBox("bowl").checked).toBe(false);
     expect(buyBox("bowl").checked).toBe(true);
     // expanding the explanation does not change either
-    const why = within(row).getByRole("button", { name: /Why this is included/ });
+    const why = within(row).getByRole("button", { name: /Why bring this\?/ });
     expect(why.getAttribute("aria-expanded")).toBe("false");
     fireEvent.click(why);
     expect(why.getAttribute("aria-expanded")).toBe("true");
@@ -165,12 +165,12 @@ describe("packing planner: building and using the list", () => {
     expect(packedBox("bowl").checked).toBe(true);
   });
 
-  it("removes with 'Not bringing this', updates the denominator, and restores", () => {
+  it("removes with 'Remove from list', updates the denominator, and restores", () => {
     mount();
     build();
     const total = Number(/of (\d+)/.exec(progress()!)![1]);
     fireEvent.click(
-      screen.getByRole("button", { name: "Not bringing this: Washable throw for furniture" }),
+      screen.getByRole("button", { name: "Remove from list: Washable throw for furniture" }),
     );
     expect(item("throw")).toBeNull();
     expect(progress()).toBe(`0 of ${total - 1} items packed`);
@@ -179,7 +179,9 @@ describe("packing planner: building and using the list", () => {
     );
     const removed = document.querySelector("[data-removed]") as HTMLElement;
     fireEvent.click(
-      within(removed).getByRole("button", { name: "Add back: Washable throw for furniture" }),
+      within(removed).getByRole("button", {
+        name: "Add back to my list: Washable throw for furniture",
+      }),
     );
     expect(item("throw")).not.toBeNull();
     expect(progress()).toBe(`0 of ${total} items packed`);
@@ -201,7 +203,9 @@ describe("packing planner: building and using the list", () => {
     fireEvent.click(within(row).getByRole("checkbox", { name: "Packed: Reusable dog towel" }));
     expect(progress()).toBe(`1 of ${total} items packed`);
     fireEvent.click(within(row).getByRole("checkbox", { name: "Need to buy: Reusable dog towel" }));
-    expect(document.querySelector("[data-shopping]")).toBeNull();
+    // a custom item gets a quiet note, never a product guessed from its name
+    expect(row.querySelector("[data-shopping-state='none']")).toBeTruthy();
+    expect(row.querySelector(".gearcard, a[href^='http']")).toBeNull();
     expect(screen.getByText("Things to pick up before you go")).toBeTruthy();
     fireEvent.click(within(row).getByRole("button", { name: "Edit Reusable dog towel" }));
     fireEvent.change(screen.getByLabelText("Item name"), { target: { value: "Blue towel" } });
@@ -246,10 +250,13 @@ describe("packing planner: building and using the list", () => {
     mount();
     build();
     expect(item("boots")).toBeNull();
+    expect(item("pet-gate")).toBeNull();
     const ideas = document.querySelector("[data-ideas]") as HTMLElement;
-    fireEvent.click(within(ideas).getByRole("button", { name: "Add to my list: Dog boots" }));
-    expect(item("boots")).not.toBeNull();
-    expect(within(item("boots")).getByText("Added by you")).toBeTruthy();
+    fireEvent.click(
+      within(ideas).getByRole("button", { name: "Add to my list: Pet gate for a doorway" }),
+    );
+    expect(item("pet-gate")).not.toBeNull();
+    expect(within(item("pet-gate")).getByText("Added by you")).toBeTruthy();
   });
 
   it("has no nested interactive controls inside a row's label", () => {
@@ -343,12 +350,22 @@ describe("packing planner: shopping", () => {
     mount();
     build();
     fireEvent.click(buyBox("food"));
-    expect(document.querySelector("[data-shopping='food']")).toBeNull();
+    // not an empty panel, and not a product card: a discreet note
+    const note = document.querySelector("[data-shopping='food']") as HTMLElement;
+    expect(note.getAttribute("data-shopping-state")).toBe("none");
+    expect(note.textContent).toContain("Added to your shopping list.");
+    expect(note.textContent).toContain(
+      "We don't have a matching product recommendation for this item yet.",
+    );
+    expect(item("food").querySelector(".gearcard")).toBeNull();
     const pick = screen
       .getByRole("heading", { name: "Things to pick up before you go" })
       .closest("section")!;
     expect(within(pick).getByText("Your dog's usual food")).toBeTruthy();
-    expect(pick.querySelector("[data-pick-row='food'] .pk-pick-rec")).toBeNull();
+    expect(pick.querySelector("[data-pick-row='food']")!.textContent).toContain(
+      "No recommendation yet.",
+    );
+    expect(pick.querySelector("[data-pick-row='food'] a[href^='http']")).toBeNull();
     expect(pick.textContent).not.toContain(AMAZON_DISCLOSURE);
   });
 
@@ -403,7 +420,7 @@ describe("packing planner: saving, reloading and starting over", () => {
     fireEvent.click(packedBox("leash"));
     fireEvent.click(buyBox("bowl"));
     fireEvent.click(
-      screen.getByRole("button", { name: "Not bringing this: Washable throw for furniture" }),
+      screen.getByRole("button", { name: "Remove from list: Washable throw for furniture" }),
     );
     fireEvent.change(screen.getByRole("textbox", { name: "Add your own item" }), {
       target: { value: "Frisbee" },

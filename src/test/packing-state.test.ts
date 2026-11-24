@@ -91,11 +91,14 @@ describe("checklist state", () => {
 
   it("lets a visitor add an optional idea, and offers each idea once", () => {
     let s = build();
-    expect(availableIdeas(s, cfg).map((i) => i.id)).toContain("boots");
-    s = addIdea(s, "boots");
-    expect(names(s)).toContain("boots");
-    expect(availableIdeas(s, cfg).map((i) => i.id)).not.toContain("boots");
-    expect(names(s).filter((i) => i === "boots")).toHaveLength(1);
+    expect(availableIdeas(s, cfg).map((i) => i.id)).toContain("pet-gate");
+    expect(names(s)).not.toContain("pet-gate");
+    s = addIdea(s, "pet-gate");
+    expect(names(s)).toContain("pet-gate");
+    expect(availableIdeas(s, cfg).map((i) => i.id)).not.toContain("pet-gate");
+    expect(names(s).filter((i) => i === "pet-gate")).toHaveLength(1);
+    // adding an extra never marks it as something to buy
+    expect(activeEntries(s, cfg).find((e) => e.item.id === "pet-gate")?.buy).toBe(false);
   });
 
   it("supports custom items: add, edit, pack, buy, remove; never recommends products for them", () => {
@@ -321,7 +324,7 @@ describe("copy my list", () => {
     expect(text).toContain("[ ] Your dog's usual food (12 meal portions)");
     expect(text).toContain("[x] Food and water bowls (2 bowl sets)");
     expect(text).toContain("[ ] A familiar bed or blanket (2 beds) - need to buy");
-    expect(text).toContain("EXTRAS YOU'VE ADDED");
+    expect(text).toContain("ITEMS YOU'VE ADDED");
     expect(text).toContain("[ ] Reusable dog towel (2)");
     expect(text).toContain("THINGS TO PICK UP BEFORE YOU GO");
     expect(text).not.toContain("Washable throw");

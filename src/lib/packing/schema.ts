@@ -40,6 +40,11 @@ const tripTypeSchema = z
     icon: z.enum(tripIcons),
     /** Conditions this trip type always includes (a road trip is a driving trip). */
     implies: z.array(slug).default([]),
+    /**
+     * The /gear trip collection ("Explore more travel gear" opens /gear?trip=<slug>#trip-collection). Must be a slug
+     * from tripCollections in src/content/gear-hub.ts (checked by a test). Leave out to link to /gear itself.
+     */
+    gearTrip: optText,
   })
   .strict();
 
@@ -104,8 +109,14 @@ const itemSchema = z
     appears: z.enum(appearsValues),
     when: whenSchema.default({}),
     quantity: quantitySchema.default({ strategy: "none" as const }),
-    /** "travel bowl" gives "Need a travel bowl? Here are a couple of researched options to consider." */
+    /** "travel bowl" gives "Need a travel bowl? ..." and "Looking for a travel bowl?". Required when products or a gearCategory are set. */
     shopFor: optText,
+    /**
+     * A /gear category slug (src/content/gear-categories.ts) to point to when "Need to buy" is ticked but no researched
+     * product applies. Optional: without it the category is taken from the item's own listed products, and without
+     * either the visitor sees a plain "no matching recommendation" note. The category must be live (3+ active products).
+     */
+    gearCategory: optText,
     products: z.array(productEntrySchema).max(4).default([]),
   })
   .strict();
@@ -157,7 +168,18 @@ export const CUSTOM_ID_PREFIX = "custom-";
  * Cross-checks the schema alone cannot do. Every message names the record and the field, so the owner knows
  * exactly what to fix. An empty list means the file is safe to publish.
  */
-export function packingProblems(cfg: PackingConfig, products: ProductFacts[]): string[] {
+export interface PackingKnowns {
+  /** Every /gear category slug that exists (src/content/products-schema.ts gearCategorySlugs). */
+  gearCategories?: readonly string[];
+  /** Category slugs that currently have enough active products to have a page. When given, gearCategory must be one of them. */
+  liveGearCategories?: readonly string[];
+}
+
+export function packingProblems(
+  cfg: PackingConfig,
+  products: ProductFacts[],
+  known: PackingKnowns = {},
+): string[] {
   const out: string[] = [];
   const dup = (kind: string, ids: string[]) => {
     const seen = new Set<string>();
@@ -315,10 +337,20 @@ export function packingProblems(cfg: PackingConfig, products: ProductFacts[]): s
             `${pw}: contradictory rule: condition "${c}" is in both "onlyConditions" and "unlessConditions"`,
           );
     });
-    if (i.products.length > 0 && !i.shopFor)
+    if ((i.products.length > 0 || i.gearCategory) && !i.shopFor)
       out.push(
-        `${where}: field "shopFor" is required when products are listed (for example "travel bowl")`,
+        `${where}: field "shopFor" is required when products or a gearCategory are set (for example "travel bowl")`,
       );
+    if (i.gearCategory) {
+      if (known.gearCategories && !known.gearCategories.includes(i.gearCategory))
+        out.push(
+          `${where}: field "gearCategory" names an unknown Gear category "${i.gearCategory}" (known: ${known.gearCategories.join(", ")})`,
+        );
+      else if (known.liveGearCategories && !known.liveGearCategories.includes(i.gearCategory))
+        out.push(
+          `${where}: field "gearCategory" names "${i.gearCategory}", which has too few active products to have a page yet`,
+        );
+    }
   }
   return out;
 }

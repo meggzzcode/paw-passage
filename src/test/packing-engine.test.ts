@@ -43,12 +43,21 @@ describe("packing engine: personalization", () => {
   });
 
   it("makes a beach trip different from a winter cabin", () => {
-    const beach = ids(trip({ tripType: "beach-lake", days: 2 }));
-    const winter = ids(trip({ tripType: "cabin", conditions: ["cold"] }));
-    expect(beach).toContain("life-jacket");
+    const beachTrip = trip({ tripType: "beach-lake", days: 2 });
+    const winterTrip = trip({ tripType: "cabin", conditions: ["cold"] });
+    const beach = ids(beachTrip);
+    const winter = ids(winterTrip);
+    const beachExtras = ideasFor(beachTrip, cfg).map((i) => i.id);
+    const winterExtras = ideasFor(winterTrip, cfg).map((i) => i.id);
+    // a life jacket is an extra to consider on a beach trip, never on the list by itself
+    expect(beach).not.toContain("life-jacket");
+    expect(beachExtras).toContain("life-jacket");
     expect(beach).not.toContain("warm-layer");
     expect(winter).toContain("warm-layer");
-    expect(winter).not.toContain("life-jacket");
+    expect(winterExtras).not.toContain("life-jacket");
+    // no snow gear on a beach trip, even as a suggestion
+    expect(beachExtras).not.toContain("boots");
+    expect(winterExtras).toContain("boots");
     expect(winter).toContain("rental-rules");
     expect(beach).not.toContain("rental-rules");
   });
@@ -56,8 +65,11 @@ describe("packing engine: personalization", () => {
   it("treats a ramp as something to consider for an older dog, never a given", () => {
     const base = suggestFor(trip({ tripType: "road-trip" }), cfg);
     expect(base.find((s) => s.item.id === "ramp")).toBeUndefined();
-    const senior = suggestFor(trip({ tripType: "road-trip", conditions: ["senior"] }), cfg);
-    expect(senior.find((s) => s.item.id === "ramp")?.inclusion).toBe("consider");
+    const seniorTrip = trip({ tripType: "road-trip", conditions: ["senior"] });
+    // an older dog never puts a ramp on the list; it is only offered as an extra to consider
+    expect(suggestFor(seniorTrip, cfg).find((s) => s.item.id === "ramp")).toBeUndefined();
+    expect(ideasFor(seniorTrip, cfg).map((i) => i.id)).toContain("ramp");
+    expect(ideasFor(trip({ tripType: "road-trip" }), cfg).map((i) => i.id)).not.toContain("ramp");
     // no ramp when not driving, even for an older dog
     expect(ids(trip({ tripType: "cabin", conditions: ["senior"] }))).not.toContain("ramp");
     expect(ids(trip({ tripType: "cabin", conditions: ["senior"] }))).toContain("senior-care");
@@ -65,7 +77,10 @@ describe("packing engine: personalization", () => {
 
   it("does not assume boots; they are only offered as an idea", () => {
     expect(ids(trip({ conditions: ["cold", "outdoors"] }))).not.toContain("boots");
-    expect(ideasFor(trip(), cfg).map((i) => i.id)).toContain("boots");
+    expect(ideasFor(trip({ conditions: ["cold", "outdoors"] }), cfg).map((i) => i.id)).toContain(
+      "boots",
+    );
+    expect(ideasFor(trip(), cfg).map((i) => i.id)).not.toContain("boots");
   });
 
   it("adds a portable pen only when there is no fence or the dog may slip away", () => {

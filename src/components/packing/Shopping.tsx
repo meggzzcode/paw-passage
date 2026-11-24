@@ -1,12 +1,18 @@
 import { Link } from "@tanstack/react-router";
-import { ArrowUpRight, Check, TriangleAlert } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Check, TriangleAlert } from "lucide-react";
 import { AMAZON_DISCLOSURE } from "@/content/affiliates";
 import { liveCategoryFor } from "@/content/gear-hub";
 import { SpecGlyph, SpecMotif, styleFor } from "@/components/site/ProductSpecCard";
 import { AFFILIATE_SURFACE_NOTICE } from "@/lib/disclosure";
 import { trackProductClick } from "@/lib/analytics";
 import { productNameOnly } from "@/lib/product-display";
-import { hasAffiliate, needsAmazonSentence, type Recommendation } from "@/lib/packing/shopping";
+import {
+  categoryPhrase,
+  hasAffiliate,
+  needsAmazonSentence,
+  type BuyResponse,
+  type Recommendation,
+} from "@/lib/packing/shopping";
 import type { Entry } from "@/lib/packing/state";
 import type { CustomItem } from "@/lib/packing/state";
 
@@ -110,40 +116,86 @@ function RecCard({ rec, label, page }: { rec: Recommendation; label: string; pag
   );
 }
 
-/** The small panel under an item the visitor marked "Need to buy". At most two options. */
-export function ShoppingPanel({ entry, recs }: { entry: Entry; recs: Recommendation[] }) {
-  if (recs.length === 0) return null;
-  const shopFor = entry.item.shopFor ?? entry.item.name.toLowerCase();
-  const cat = liveCategoryFor(recs[0]!.product);
+const shopForOf = (entry: Entry) => entry.item.shopFor ?? entry.item.name.toLowerCase();
+
+/**
+ * What "Need to buy" shows under an item, in four states (never empty):
+ *  1. researched product(s): a primary pick and at most one different alternative, as Gear cards;
+ *  2. no specific product, but a related live Gear category: a short pointer with one link;
+ *  3. neither: a discreet note that the item is on the shopping list;
+ *  4. the visitor's own item (see CustomBuyNote): the same discreet note, never a guess from the text.
+ */
+export function ShoppingPanel({ entry, response }: { entry: Entry; response: BuyResponse }) {
+  const shopFor = shopForOf(entry);
   const page = () => (typeof window === "undefined" ? "" : window.location.pathname);
-  return (
-    <section
-      className="pk-shop no-print"
-      aria-label={`Options for ${shopFor}`}
-      data-shopping={entry.item.id}
-    >
-      <p className="pk-shop-title">
-        Need a {shopFor}? Here are a couple of researched options to consider.
-      </p>
-      <ShoppingNotice recs={recs} />
-      <div className="pk-recs">
-        {recs.map((r) => (
-          <RecCard
-            key={r.product.id}
-            rec={r}
-            label={r.role === "primary" ? cap(shopFor) : "A different approach"}
-            page={page}
-          />
-        ))}
-      </div>
-      {cat && (
-        <p className="pk-shop-more">
-          <Link to="/gear/$category" params={{ category: cat.slug }}>
-            See more {cat.name.toLowerCase()} gear
-          </Link>
+  if (response.kind === "products") {
+    const recs = response.recs;
+    const cat = liveCategoryFor(recs[0]!.product);
+    return (
+      <section
+        className="pk-shop no-print"
+        aria-label={`Options for ${shopFor}`}
+        data-shopping={entry.item.id}
+        data-shopping-state="products"
+      >
+        <p className="pk-shop-title">
+          Need a {shopFor}? Here are a couple of researched options to consider.
         </p>
-      )}
-    </section>
+        <ShoppingNotice recs={recs} />
+        <div className="pk-recs">
+          {recs.map((r) => (
+            <RecCard
+              key={r.product.id}
+              rec={r}
+              label={r.role === "primary" ? cap(shopFor) : "A different approach"}
+              page={page}
+            />
+          ))}
+        </div>
+        {cat && (
+          <p className="pk-shop-more">
+            <Link to="/gear/$category" params={{ category: cat.slug }}>
+              See more {cat.name.toLowerCase()} gear
+            </Link>
+          </p>
+        )}
+      </section>
+    );
+  }
+  if (response.kind === "category") {
+    const cat = response.category;
+    return (
+      <section
+        className="pk-shop pk-shop-lite no-print"
+        aria-label={`Related gear for ${shopFor}`}
+        data-shopping={entry.item.id}
+        data-shopping-state="category"
+      >
+        <p className="pk-shop-title">Looking for a {shopFor}?</p>
+        <p className="pk-shop-text">
+          We don't have a specific pick for this yet, but you can explore related travel gear.
+        </p>
+        <Link
+          to="/gear/$category"
+          params={{ category: cat.slug }}
+          className="pk-btn pk-btn-sm pk-shop-cta"
+        >
+          Explore {categoryPhrase(cat)} gear
+          <ArrowRight aria-hidden="true" focusable="false" />
+        </Link>
+      </section>
+    );
+  }
+  return <ShoppingNote itemId={entry.item.id} />;
+}
+
+/** States 3 and 4: the item is on the shopping list and we have nothing honest to add. Quiet text, not a card. */
+export function ShoppingNote({ itemId }: { itemId: string }) {
+  return (
+    <div className="pk-shop-note no-print" data-shopping={itemId} data-shopping-state="none">
+      <p>Added to your shopping list.</p>
+      <p>We don't have a matching product recommendation for this item yet.</p>
+    </div>
   );
 }
 
@@ -152,6 +204,8 @@ export interface PickRow {
   name: string;
   qty: string;
   packed: boolean;
+  /** What "Need to buy" answers with for this row: the first product, a Gear category, or nothing. */
+  response: BuyResponse;
   rec: Recommendation | undefined;
   custom: boolean;
 }
@@ -159,19 +213,23 @@ export interface PickRow {
 export function pickRows(
   entries: Entry[],
   custom: CustomItem[],
-  recsFor: (e: Entry) => Recommendation[],
+  responseFor: (e: Entry) => BuyResponse,
 ): PickRow[] {
   return [
     ...entries
       .filter((e) => e.buy)
-      .map((e) => ({
-        id: e.item.id,
-        name: e.item.name,
-        qty: e.qtyText,
-        packed: e.packed,
-        rec: recsFor(e)[0],
-        custom: false,
-      })),
+      .map((e) => {
+        const response = responseFor(e);
+        return {
+          id: e.item.id,
+          name: e.item.name,
+          qty: e.qtyText,
+          packed: e.packed,
+          response,
+          rec: response.kind === "products" ? response.recs[0] : undefined,
+          custom: false,
+        };
+      }),
     ...custom
       .filter((c) => c.buy)
       .map((c) => ({
@@ -179,6 +237,7 @@ export function pickRows(
         name: c.name,
         qty: c.qty,
         packed: c.packed,
+        response: { kind: "custom" as const },
         rec: undefined,
         custom: true,
       })),
@@ -198,6 +257,7 @@ export function PickUpList({ rows }: { rows: PickRow[] }) {
       <ul className="pk-pick-list">
         {rows.map((r) => {
           const cat = r.rec ? liveCategoryFor(r.rec.product) : undefined;
+          const area = r.response.kind === "category" ? r.response.category : undefined;
           return (
             <li key={r.id} className="pk-pick-row" data-pick-row={r.id}>
               <div className="pk-pick-name">
@@ -243,6 +303,19 @@ export function PickUpList({ rows }: { rows: PickRow[] }) {
                       More {cat.name.toLowerCase()} gear
                     </Link>
                   )}
+                </div>
+              )}
+              {area && (
+                <div className="pk-pick-rec">
+                  <span className="pk-pick-none">No specific pick yet.</span>
+                  <Link to="/gear/$category" params={{ category: area.slug }}>
+                    Explore {categoryPhrase(area)} gear
+                  </Link>
+                </div>
+              )}
+              {!r.rec && !area && (
+                <div className="pk-pick-rec">
+                  <span className="pk-pick-none">No recommendation yet.</span>
                 </div>
               )}
             </li>

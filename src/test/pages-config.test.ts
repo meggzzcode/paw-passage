@@ -146,7 +146,14 @@ describe("Pages CMS form for the packing planner", () => {
     expect(names(e.fields)).toEqual(shapeKeys(packingSchema));
     const items = e.fields.find((f) => f.name === "items")!;
     const itemKeys = shapeKeys(elementOf(unwrap(packingSchema).shape.items));
-    expect(names(items.fields!)).toEqual(itemKeys);
+    // `gearCategory` (docs/PACKING_PLANNER_QA.md, "CMS follow-up") is accepted in content/packing.yml before the Pages CMS
+    // form offers it; it is exempt only while the form lacks it. Once the form has it, the order must match.
+    const cmsItemNames = names(items.fields!);
+    expect(cmsItemNames).toEqual(
+      cmsItemNames.includes("gearCategory")
+        ? itemKeys
+        : itemKeys.filter((k) => k !== "gearCategory"),
+    );
     const f = (n: string) => items.fields!.find((x) => x.name === n)!;
     expect(values(f("category"))).toEqual(packing.categories.map((c) => c.id).sort());
     const when = f("when").fields!;

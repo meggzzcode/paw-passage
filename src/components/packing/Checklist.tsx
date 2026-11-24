@@ -1,11 +1,11 @@
 import { useId, useMemo, useState } from "react";
-import { ChevronDown, Plus, ShoppingBag } from "lucide-react";
+import { ChevronDown, Info, Plus, ShoppingBag, X } from "lucide-react";
 import type { PackingConfig, PackingItem } from "@/lib/packing/schema";
 import type { Trip } from "@/lib/packing/engine";
-import { recommendationsFor } from "@/lib/packing/shopping";
+import { buyResponseFor } from "@/lib/packing/shopping";
 import { MAX_NAME, MAX_QTY, type CustomItem, type Entry, type Group } from "@/lib/packing/state";
 import { CATEGORY_ICONS, EXTRAS_ICON, FALLBACK_ICON } from "./icons";
-import { ShoppingPanel } from "./Shopping";
+import { ShoppingNote, ShoppingPanel } from "./Shopping";
 
 export interface ItemActions {
   packed: (id: string, value: boolean, custom: boolean) => void;
@@ -13,6 +13,7 @@ export interface ItemActions {
   exclude: (id: string) => void;
   restore: (id: string) => void;
   addIdea: (id: string) => void;
+  undo: () => void;
   quantity: (id: string, value: string | undefined, custom: boolean) => void;
   addCustom: (name: string, qty: string) => void;
   editCustom: (id: string, name: string, qty: string) => void;
@@ -35,8 +36,8 @@ function ItemRow({
   const [editQty, setEditQty] = useState(false);
   const [qtyText, setQtyText] = useState("");
   const { item } = entry;
-  const recs = useMemo(
-    () => (entry.buy ? recommendationsFor(item, trip, cfg) : []),
+  const response = useMemo(
+    () => (entry.buy ? buyResponseFor(item, trip, cfg) : undefined),
     [entry.buy, item, trip, cfg],
   );
   const whyId = `${uid}-why`;
@@ -59,9 +60,6 @@ function ItemRow({
             <span className="pk-sr">Packed: </span>
             <span className="pk-name">{item.name}</span>
             {entry.isNew && <span className="pk-tag pk-tag-new">New</span>}
-            {entry.inclusion === "consider" && (
-              <span className="pk-tag pk-tag-consider">Consider</span>
-            )}
             {entry.inclusion === "added" && (
               <span className="pk-tag pk-tag-consider">Added by you</span>
             )}
@@ -146,21 +144,22 @@ function ItemRow({
         </label>
         <button
           type="button"
-          className="pk-link-btn pk-why-btn"
+          className="pk-why-btn"
           aria-expanded={why}
           aria-controls={whyId}
           onClick={() => setWhy((v) => !v)}
         >
-          Why this is included
-          <ChevronDown aria-hidden="true" focusable="false" />
+          <Info aria-hidden="true" focusable="false" />
+          Why bring this?
         </button>
         <button
           type="button"
-          className="pk-link-btn"
-          aria-label={`Not bringing this: ${item.name}`}
+          className="pk-remove-btn"
+          aria-label={`Remove from list: ${item.name}`}
           onClick={() => actions.exclude(item.id)}
         >
-          Not bringing this
+          <X aria-hidden="true" focusable="false" />
+          Remove from list
         </button>
       </div>
       {entry.packed && entry.buy && (
@@ -182,12 +181,18 @@ function ItemRow({
           </button>
         </p>
       )}
-      <div id={whyId} className="pk-why no-print" hidden={!why}>
+      <div
+        id={whyId}
+        className="pk-why no-print"
+        role="region"
+        aria-label={`Why bring ${item.name}`}
+        hidden={!why}
+      >
         <p>{item.why}</p>
         {item.tip && <p>{item.tip}</p>}
         {entry.suggested.detail && !entry.customQty && <p>{entry.suggested.detail}</p>}
       </div>
-      {entry.buy && <ShoppingPanel entry={entry} recs={recs} />}
+      {entry.buy && response && <ShoppingPanel entry={entry} response={response} />}
     </li>
   );
 }
@@ -303,6 +308,7 @@ function CustomRow({ item, actions }: { item: CustomItem; actions: ItemActions }
               Remove
             </button>
           </div>
+          {item.buy && <ShoppingNote itemId={item.id} />}
         </>
       )}
     </li>
@@ -406,7 +412,6 @@ export function Checklist({
   trip,
   cfg,
   actions,
-  ideas,
   removed,
 }: {
   groups: Group[];
@@ -414,7 +419,6 @@ export function Checklist({
   trip: Trip;
   cfg: PackingConfig;
   actions: ItemActions;
-  ideas: PackingItem[];
   removed: PackingItem[];
 }) {
   const [closed, setClosed] = useState<Record<string, boolean>>({});
@@ -441,7 +445,7 @@ export function Checklist({
       ))}
       <Category
         id="extras"
-        title="Extras you've added"
+        title="Items you've added"
         icon={EXTRAS_ICON}
         total={custom.length}
         packed={custom.filter((c) => c.packed).length}
@@ -457,38 +461,10 @@ export function Checklist({
         )}
         <AddCustomForm actions={actions} />
       </Category>
-      {ideas.length > 0 && (
-        <details className="pk-more no-print" data-ideas>
-          <summary>
-            Other ideas for your trip
-            <ChevronDown aria-hidden="true" focusable="false" />
-          </summary>
-          <ul>
-            {ideas.map((i) => (
-              <li key={i.id}>
-                <span>
-                  <strong>{i.name}</strong>
-                  <span className="pk-what" style={{ display: "block" }}>
-                    {i.what}
-                  </span>
-                </span>
-                <button
-                  type="button"
-                  className="pk-btn pk-btn-sm"
-                  aria-label={`Add to my list: ${i.name}`}
-                  onClick={() => actions.addIdea(i.id)}
-                >
-                  Add to my list
-                </button>
-              </li>
-            ))}
-          </ul>
-        </details>
-      )}
       {removed.length > 0 && (
         <details className="pk-more no-print" data-removed>
           <summary>
-            Not bringing ({removed.length})
+            Removed from your list ({removed.length})
             <ChevronDown aria-hidden="true" focusable="false" />
           </summary>
           <ul>
@@ -498,7 +474,7 @@ export function Checklist({
                 <button
                   type="button"
                   className="pk-btn pk-btn-sm"
-                  aria-label={`Add back: ${i.name}`}
+                  aria-label={`Add back to my list: ${i.name}`}
                   onClick={() => actions.restore(i.id)}
                 >
                   Add back

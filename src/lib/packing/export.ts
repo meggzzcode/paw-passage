@@ -1,11 +1,11 @@
 // Plain-text version of the visitor's list, for "Copy my list". It lists only what is on the active list (items marked
-// "Not bringing this" are left out), the packed state, quantities, items to buy and the visitor's own items.
+// removed items are left out), the packed state, quantities, items to buy and the visitor's own items.
 // No product names, links or marketing: it is a packing list, not an advertisement.
 import { tripSummaryLine, tripTitle } from "./engine";
 import { groupEntries, progressOf, type Entry, type PlannerState } from "./state";
 import type { PackingConfig } from "./schema";
 
-export const EXTRAS_LABEL = "Extras you've added";
+export const EXTRAS_LABEL = "Items you've added";
 
 export function packingText(
   state: PlannerState,

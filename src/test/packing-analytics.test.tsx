@@ -108,7 +108,7 @@ describe("packing planner analytics", () => {
     expect(events().filter((e) => e === "packing_recommendation_opened")).toHaveLength(1);
     expect(events().filter((e) => e === "packing_item_need_to_buy")).toHaveLength(2);
     const before = calls.length;
-    fireEvent.click(within(item("leash")).getByRole("button", { name: /Why this is included/ }));
+    fireEvent.click(within(item("leash")).getByRole("button", { name: /Why bring this\?/ }));
     fireEvent.click(screen.getByRole("button", { name: /^Food and water/ }));
     expect(calls.length).toBe(before);
   });

@@ -1,11 +1,12 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Link } from "@tanstack/react-router";
-import { Copy, Pencil, Printer, RotateCcw, Save } from "lucide-react";
+import { Copy, Pencil, Printer, RotateCcw, Save, Undo2 } from "lucide-react";
 import { packingConfig as cfg } from "@/content/packing";
 import { trackTool, trackToolOnce } from "@/lib/analytics";
 import {
   defaultTrip,
   effectiveConditions,
+  gearTripFor,
   normalizeTrip,
   tripSummaryLine,
   tripTitle,
@@ -13,13 +14,13 @@ import {
 } from "@/lib/packing/engine";
 import { hasPreset, type Preset } from "@/lib/packing/preset";
 import { packingText } from "@/lib/packing/export";
-import { recommendationsFor } from "@/lib/packing/shopping";
+import { buyResponseFor } from "@/lib/packing/shopping";
 import { clearState, getStorage, loadState, saveState } from "@/lib/packing/storage";
 import {
   activeEntries,
   addCustom,
   addIdea,
-  availableIdeas,
+  availableExtras,
   buildList,
   conflictsWithPreset,
   dismissFresh,
@@ -28,20 +29,29 @@ import {
   excludeItem,
   groupEntries,
   progressOf,
+  reinsertCustom,
   removeCustom,
   removedEntries,
   restoreItem,
   setBuy,
   setPacked,
   setQuantity,
+  type CustomItem,
   type PlannerState,
 } from "@/lib/packing/state";
 import { Checklist, type ItemActions } from "./Checklist";
+import { ExtrasSection } from "./Extras";
 import { PickUpList, pickRows } from "./Shopping";
 import { TripSetup } from "./TripSetup";
 import "./packing.css";
 
 const TOOL = "packing-builder";
+/** How long the Undo bar stays after a removal (it also goes away on the next action). */
+const UNDO_MS = 10000;
+
+type Undo =
+  | { kind: "item"; id: string; name: string }
+  | { kind: "custom"; item: CustomItem; index: number; name: string };
 
 function draftFromPreset(preset: Preset): Trip {
   return normalizeTrip(
@@ -81,6 +91,8 @@ export function PackingPlanner({
   const [message, setMessage] = useState("");
   const [confirmReset, setConfirmReset] = useState(false);
   const [saveBlocked, setSaveBlocked] = useState(false);
+  const [undo, setUndo] = useState<Undo | null>(null);
+  const focusAfterUndo = useRef<string | null>(null);
   const summaryRef = useRef<HTMLHeadingElement>(null);
   const focusSummary = useRef(false);
   const presetLoaded = useRef(preset);
@@ -118,6 +130,20 @@ export function PackingPlanner({
   }, [message]);
 
   useEffect(() => {
+    if (!undo) return;
+    const t = setTimeout(() => setUndo(null), UNDO_MS);
+    return () => clearTimeout(t);
+  }, [undo]);
+
+  useEffect(() => {
+    if (focusAfterUndo.current) {
+      const id = focusAfterUndo.current;
+      focusAfterUndo.current = null;
+      document.querySelector<HTMLElement>(`#item-${id} input[type="checkbox"]`)?.focus();
+    }
+  });
+
+  useEffect(() => {
     if (focusSummary.current && state.built && !editing) {
       focusSummary.current = false;
       summaryRef.current?.focus();
@@ -129,20 +155,23 @@ export function PackingPlanner({
   const entries = useMemo(() => activeEntries(state, cfg), [state]);
   const groups = useMemo(() => groupEntries(entries, cfg), [entries]);
   const progress = useMemo(() => progressOf(state, entries), [state, entries]);
-  const ideas = useMemo(() => availableIdeas(state, cfg), [state]);
+  const extras = useMemo(() => availableExtras(state, cfg), [state]);
   const removed = useMemo(() => removedEntries(state, cfg), [state]);
-  const recsFor = useCallback(
-    (e: { item: Parameters<typeof recommendationsFor>[0] }) =>
-      recommendationsFor(e.item, state.trip, cfg),
+  const responseFor = useCallback(
+    (e: { item: Parameters<typeof buyResponseFor>[0] }) => buyResponseFor(e.item, state.trip, cfg),
     [state.trip],
   );
   const rows = useMemo(
-    () => pickRows(entries, state.custom, (e) => recsFor(e)),
-    [entries, state.custom, recsFor],
+    () => pickRows(entries, state.custom, (e) => responseFor(e)),
+    [entries, state.custom, responseFor],
   );
 
   const touch = () => void trackToolOnce("tool_start", { tool: TOOL });
-  const update = (fn: (s: PlannerState) => PlannerState) => setState(fn);
+  // Any change other than a removal closes the Undo bar: it only ever undoes the latest removal.
+  const update = (fn: (s: PlannerState) => PlannerState) => {
+    setUndo(null);
+    setState(fn);
+  };
 
   const submit = () => {
     const prev = startFresh ? null : state;
@@ -179,19 +208,39 @@ export function PackingPlanner({
       if (value) {
         trackTool("packing_item_need_to_buy", { tool: TOOL, label: custom ? "custom" : id });
         const entry = entries.find((e) => e.item.id === id);
-        if (!custom && entry && recsFor(entry).length > 0)
+        if (!custom && entry && responseFor(entry).kind === "products")
           trackToolOnce("packing_recommendation_opened", { tool: TOOL, label: id });
+        const name = custom
+          ? state.custom.find((c) => c.id === id)?.name
+          : entries.find((e) => e.item.id === id)?.item.name;
+        setMessage(`${name ?? "Item"} added to your shopping list.`);
       }
     },
     exclude: (id) => {
       touch();
       const name = cfg.items.find((i) => i.id === id)?.name ?? "Item";
       update((s) => excludeItem(s, id));
-      setMessage(`${name} removed from your list. You can add it back under "Not bringing".`);
+      setUndo({ kind: "item", id, name });
+      setMessage(
+        `${name} removed from your list. Undo is available, or add it back under "Removed from your list".`,
+      );
     },
     restore: (id) => {
       update((s) => restoreItem(s, id));
       setMessage(`${cfg.items.find((i) => i.id === id)?.name ?? "Item"} added back to your list.`);
+    },
+    undo: () => {
+      if (!undo) return;
+      if (undo.kind === "item") {
+        setState((s) => restoreItem(s, undo.id));
+        focusAfterUndo.current = undo.id;
+        setMessage(`${undo.name} is back on your list.`);
+      } else {
+        setState((s) => reinsertCustom(s, undo.item, undo.index));
+        focusAfterUndo.current = undo.item.id;
+        setMessage(`${undo.name} is back on your list.`);
+      }
+      setUndo(null);
     },
     addIdea: (id) => {
       touch();
@@ -207,8 +256,11 @@ export function PackingPlanner({
     },
     editCustom: (id, name, qty) => update((s) => editCustom(s, id, name, qty)),
     removeCustom: (id) => {
+      const index = state.custom.findIndex((c) => c.id === id);
+      const item = state.custom[index];
       update((s) => removeCustom(s, id));
-      setMessage("Your item was removed.");
+      if (item) setUndo({ kind: "custom", item, index, name: item.name });
+      setMessage(`${item?.name ?? "Your item"} was removed. Undo is available.`);
     },
   };
 
@@ -247,6 +299,22 @@ export function PackingPlanner({
       <div role="status" aria-live="polite" className="pk-sr" data-testid="pk-live">
         {message}
       </div>
+
+      {undo && showList && (
+        <div className="pk-undo no-print" role="group" aria-label="Undo removal">
+          <p>{undo.name} removed from your list.</p>
+          <button
+            type="button"
+            className="pk-btn pk-btn-sm"
+            data-testid="pk-undo"
+            autoFocus
+            onClick={actions.undo}
+          >
+            <Undo2 aria-hidden="true" focusable="false" />
+            Undo
+          </button>
+        </div>
+      )}
 
       {pending && showList && (
         <section className="pk-banner" role="region" aria-label="You have a saved list">
@@ -321,8 +389,12 @@ export function PackingPlanner({
               trip={state.trip}
               cfg={cfg}
               actions={actions}
-              ideas={ideas}
               removed={removed}
+            />
+            <ExtrasSection
+              extras={extras}
+              gearTrip={gearTripFor(state.trip, cfg)}
+              onAdd={actions.addIdea}
             />
             <PickUpList rows={rows} />
           </div>

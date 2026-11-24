@@ -96,16 +96,30 @@ function hasRule(w: PackingWhen): boolean {
   );
 }
 
-export type Inclusion = "essential" | "conditional" | "consider";
+/**
+ * Why an item is on the list: it is always there ("essential") or the trip calls for it ("conditional").
+ * Optional items are never put on the list by the rules; the visitor adds them from "A few extras worth considering".
+ */
+export type Inclusion = "essential" | "conditional";
+
+/** The three levels of content/packing.yml: 1 essentials, 2 trip-specific recommendations, 3 optional discovery. */
+export type Level = 1 | 2 | 3;
+export const LEVEL_NAMES: Record<Level, string> = {
+  1: "Essentials",
+  2: "Trip-specific recommendations",
+  3: "Optional discovery",
+};
+export function levelOf(item: PackingItem): Level {
+  return item.appears === "essential" ? 1 : item.appears === "conditional" ? 2 : 3;
+}
 
 /** How an item relates to this trip: on the list (and why), or not on the list. */
 export function inclusionFor(item: PackingItem, trip: Trip, cfg: PackingConfig): Inclusion | null {
   if (item.active === false) return null;
   if (item.appears === "essential") return "essential";
+  if (item.appears === "optional") return null;
   const conds = new Set(effectiveConditions(trip, cfg));
-  const matches = hasRule(item.when) && whenMatches(item.when, trip, conds);
-  if (item.appears === "conditional") return matches ? "conditional" : null;
-  return matches ? "consider" : null;
+  return hasRule(item.when) && whenMatches(item.when, trip, conds) ? "conditional" : null;
 }
 
 function categoryOrder(cfg: PackingConfig): Map<string, number> {
@@ -142,12 +156,37 @@ export function suggestFor(trip: Trip, cfg: PackingConfig): Suggested[] {
   return out;
 }
 
-/** Optional items that are not on the list for this trip: offered, never added by themselves. */
+export interface Extra {
+  item: PackingItem;
+  /** "relevant": the item's own rule matches this trip. "general": it has no rule, so it is only shown under "See more". */
+  relevance: "relevant" | "general";
+}
+
+/**
+ * Optional (level 3) items worth offering for this trip, most relevant first, then in display order.
+ * An optional item with a rule is offered only when the rule matches (so beach trips never see snow boots);
+ * one without a rule is offered last, as a general idea. Nothing here is added to the list by itself.
+ */
+export function extrasFor(trip: Trip, cfg: PackingConfig): Extra[] {
+  const conds = new Set(effectiveConditions(trip, cfg));
+  const out: Extra[] = [];
+  for (const item of sortedItems(cfg)) {
+    if (item.active === false || item.appears !== "optional") continue;
+    if (hasRule(item.when)) {
+      if (whenMatches(item.when, trip, conds)) out.push({ item, relevance: "relevant" });
+    } else if (!(item.when.unlessConditions ?? []).some((c) => conds.has(c))) {
+      out.push({ item, relevance: "general" });
+    }
+  }
+  return [
+    ...out.filter((e) => e.relevance === "relevant"),
+    ...out.filter((e) => e.relevance === "general"),
+  ];
+}
+
+/** Optional items that apply to this trip (the same as extrasFor, as plain items). */
 export function ideasFor(trip: Trip, cfg: PackingConfig): PackingItem[] {
-  const onList = new Set(suggestFor(trip, cfg).map((s) => s.item.id));
-  return sortedItems(cfg).filter(
-    (i) => i.active !== false && i.appears === "optional" && !onList.has(i.id),
-  );
+  return extrasFor(trip, cfg).map((e) => e.item);
 }
 
 export interface QuantityResult {
@@ -258,4 +297,9 @@ export function shortConditionLabel(label: string): string {
 
 export function tripTitle(trip: Trip, cfg: PackingConfig): string {
   return cfg.tripTypes.find((x) => x.id === trip.tripType)?.listTitle ?? "Your packing list";
+}
+
+/** The /gear trip collection slug for this trip type (from content/packing.yml), or undefined to link to /gear itself. */
+export function gearTripFor(trip: Trip, cfg: PackingConfig): string | undefined {
+  return cfg.tripTypes.find((t) => t.id === trip.tripType)?.gearTrip;
 }

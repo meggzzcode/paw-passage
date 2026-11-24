@@ -2778,10 +2778,11 @@ products:
       - "Listing states interior dimensions 35.75 L x 22 W x 26.5 H in"
       - "Listing says to use a size up for home use"
     specSource:
-      title: Amazon listing as read 2026-11-24
-      url: https://www.amazon.com/dp/B0DW9JGDJM
-      publisher: Amazon
+      title: Lucky Kennel (Large), maker page read 2026-11-24
+      url: https://www.luckyduck.com/lucky-kennel-large
+      publisher: Lucky Duck
       accessedOn: 2026-11-24
+    manufacturerUrl: https://www.luckyduck.com/lucky-kennel-large
     retailerUrl: ""
     retailerName: ""
     lastVerified: 2026-11-24
@@ -2794,7 +2795,7 @@ products:
       name: ""
       url: ""
     relatedGuides: []
-    manufacturerClaimsVsIndependentTesting: none cited. Specs are as the Amazon listing states them.
+    manufacturerClaimsVsIndependentTesting: none cited. Specs match the maker page (Large for dogs roughly 70 to 110 lb, interior 35.75 x 22 x 26.5 in, 45 lb); the maker lists Gray, Prairie Tan and Upland Orange.
   - id: arca-pet-cat-dog-first-aid-kit-100
     name: "ARCA PET Cat and Dog First Aid Kit, 100 pieces"
     brand: "ARCA PET"
@@ -3196,10 +3197,11 @@ products:
       - "Listing states size 55 x 56 in, color black"
       - "Listing states sold by Amazon.com"
     specSource:
-      title: Amazon listing as read 2026-11-24
-      url: https://www.amazon.com/dp/B00164SZPQ
-      publisher: Amazon
+      title: Rover Hammock, maker page read 2026-11-24
+      url: https://kurgo.com/car-seat-covers/rover-hammock
+      publisher: Kurgo
       accessedOn: 2026-11-24
+    manufacturerUrl: https://kurgo.com/car-seat-covers/rover-hammock
     retailerUrl: ""
     retailerName: ""
     lastVerified: 2026-11-24
@@ -3212,4 +3214,4 @@ products:
       name: ""
       url: ""
     relatedGuides: []
-    manufacturerClaimsVsIndependentTesting: none cited. Specs are as the Amazon listing states them.
+    manufacturerClaimsVsIndependentTesting: none cited. Size 55 x 56 in matches the maker page; the maker page does not name colors (two swatches by product code).

@@ -39,6 +39,8 @@ relatedProducts:
   - kurgo-kibble-carrier
   - vittles-vault-travel-tainer
   - iris-usa-airtight-dog-food-container-10-lb
+  - ruffwear-quencher-bowl
+  - gunner-dog-bowl
 relatedTools:
   - packing-list
   - checklist
@@ -210,7 +212,17 @@ Pick the bowl by where it will ride. Check size on each listing.
 
 {{pick:kurgo-collaps-a-bowl|Collapses under 1 in, holds 24 oz|The maker says it holds 24 ounces, collapses to less than 1 inch high and is dishwasher safe on the top rack.|https://www.kurgo.com/pet-travel-bowls/collaps-a-bowl}}
 
-Three other bowls suit different jobs. Kurgo's Splash Free Wander also holds 24 oz and the maker describes a tapered lip and a wedge shape that lays flat on a seat, which makes it the one to look at if the bowl will live in the car. [[12]](https://www.kurgo.com/p/splash-free-wander-dog-water-bowl/K01812) Ruffwear's Quencher holds 4.2 cups (1 L) in a fabric shell with a waterproof lining and is hand wash only, so it fits a dog who needs a bigger drink on a long walk. [[11]](https://ruffwear.com/products/quencher-dog-bowl) Gunner's Dog Bowl comes with a travel lid that the maker calls spill-proof and leak-resistant, strong enough to hold water even upside down, and the bowls nest for carrying, which suits water you filled at the cabin tap and want to carry to a trailhead without it ending up in the bag. [[13]](https://gunner.com/products/gunner-dog-bowl-black) Skip the Gunner if you need to know the capacity before you order; the page gives no capacity or dimensions, one caption says silicone where the copy says nylon, and the spill-proof wording is the maker's own, so run a water test at home before you count on the lid. For a bottle with the bowl attached, the Springland 22oz Classic and 20oz Flip are both listed by the maker as top-rack dishwasher safe, with a leak-proof lock design. [[7]](https://springlandpets.com/products/22oz-classic-dog-travel-water-bottle) [[8]](https://springlandpets.com/products/20oz-flip-dog-travel-water-bottle)
+Two more bowls cover different jobs, and a third is worth a look for the car.
+
+**For a long walk or a thirsty big dog, the Ruffwear Quencher.** It holds 4.2 cups (1 L) with a 5.5 inch opening, in a fabric shell with a waterproof lining the maker labels Food Contact Safe, and it packs down small. [[11]](https://ruffwear.com/products/quencher-dog-bowl) It is for the hiker whose dog needs a bigger drink than 24 ounces before the trail loop is done. Skip it if you want a bowl you can run through the dishwasher: it is hand wash and air dry, and the shell is water-resistant, not waterproof.
+
+{{pick:ruffwear-quencher-bowl|Holds 4.2 cups (1 L) for a longer walk|The maker lists one size, Medium, with a 5.5 in opening and 4.2 cups (1 L), a waterproof lining labelled Food Contact Safe (the maker's wording, no tester named) and hand wash only.|https://ruffwear.com/products/quencher-dog-bowl}}
+
+**For water you carry from the cabin tap, the Gunner Dog Bowl with Travel Lid.** The maker describes the lid as spill-proof and leak-resistant, strong enough to hold water even upside down, and the bowl has non-slip rubber feet, is top-rack dishwasher safe and nests for carrying. [[13]](https://gunner.com/products/gunner-dog-bowl-black) That is the reason to look at it: it is the one bowl here made to be filled at the cabin and carried to a trailhead without leaking in the bag. Be clear about what we do not know. The page gives no capacity or dimensions, one caption says silicone where the copy says nylon, and the spill-proof wording is the maker's own, so check the size on the listing and run a water test at home. Skip it if you need a known capacity before you order.
+
+{{pick:gunner-dog-bowl|For carrying filled water: a lid the maker calls spill-proof|The maker describes a spill-proof, leak-resistant lid, non-slip rubber feet and a top-rack dishwasher-safe bowl; the page gives no capacity or dimensions, so check the size and test the lid yourself.|https://gunner.com/products/gunner-dog-bowl-black}}
+
+Kurgo's Splash Free Wander also holds 24 oz, and the maker describes a tapered lip and a wedge shape that lays flat on a seat, which makes it the one to look at if the bowl will live in the car. [[12]](https://www.kurgo.com/p/splash-free-wander-dog-water-bowl/K01812) For a bottle with the bowl attached, the Springland 22oz Classic and 20oz Flip are both listed by the maker as top-rack dishwasher safe, with a leak-proof lock design. [[7]](https://springlandpets.com/products/22oz-classic-dog-travel-water-bottle) [[8]](https://springlandpets.com/products/20oz-flip-dog-travel-water-bottle)
 
 ## Keeping dry food fresh in the car and the rental
 
@@ -269,7 +281,7 @@ Message to send the host:
 
 ## What to buy first
 
-1. **A flat-packing bowl with a stated capacity:** the Kurgo Collaps A Bowl if one bowl has to do water and food.
+1. **A flat-packing bowl with a stated capacity:** the Kurgo Collaps A Bowl if one bowl has to do water and food. For a bigger drink on a hike, add the Ruffwear Quencher; for water carried from the cabin tap, the Gunner bowl with its travel lid (check its size first, the page gives none).
 2. **A food container sized to the trip:** the Kurgo Kibble Carrier for a few days, the Vittles Vault Travel-Tainer for food plus two bowls, the IRIS bin for a long stay with a big dog. Match it to your bag, not the product name.
 3. **Water from home and a spare bowl,** then message the host about food storage and add the answer to your [trip checklist](/tools/checklist).
 

@@ -42,6 +42,7 @@ relatedProducts:
   - pet-parents-pawtect-pads
   - kurgo-loft-wander-dog-bed
   - petsafe-happy-ride-folding-ramp
+  - petsafe-happy-ride-side-door-steps
   - petsafe-happy-ride-bench-seat-cover
 relatedTools:
   - checklist
@@ -180,6 +181,10 @@ sources:
     accessedOn: 2026-11-16
   - title: Happy Ride Folding Dog Ramp
     url: https://www.petsafe.com/p/happy-ride-folding-dog-ramp/62462/
+    publisher: PetSafe
+    accessedOn: 2026-11-18
+  - title: Happy Ride Side Door Pet Steps
+    url: https://www.petsafe.com/p/happy-ride-side-door-pet-steps/ZTV00-17464/
     publisher: PetSafe
     accessedOn: 2026-11-18
 research:
@@ -386,6 +391,10 @@ Nothing here is needed to book. It is for after your vet and the host have said 
 
 {{pick:petsafe-happy-ride-folding-ramp|For the car or a low sofa|The maker lists a 62 in ramp rated to 150 lb with side rails, a high-traction surface and rubber feet, folding in half and locking.|https://www.petsafe.com/p/happy-ride-folding-dog-ramp/62462/}}
 
+**For a tall vehicle with a high sill: folding side-door steps.** If your dog enters through a side door of an SUV or truck and the step up is the hurdle, steps with side rails give a fixed, even climb instead of a lift. The PetSafe Happy Ride Side Door Pet Steps set at 21.25, 24.75 or 28 in, with textured steps, rubberized feet, a built-in handle and a 200 lb maker rating; they weigh 13 lb and fold for storage. [[35]](https://www.petsafe.com/p/happy-ride-side-door-pet-steps/ZTV00-17464/) They are for a dog that is still willing to climb steps and a door sill within those three heights. Skip them if your dog already struggles with steps (a ramp is gentler, and your vet can say which suits), if your sill is far from those heights, or if the car is not your dog's hurdle. The page does not call them a senior product and does not say how they attach, so treat them as a car aid, not a way to deal with the cabin stairs.
+
+{{pick:petsafe-happy-ride-side-door-steps|For a high sill: steps at 21.25, 24.75 or 28 in|The maker lists three heights, side rails, textured steps, a built-in handle, 13 lb and a 200 lb rating; the page does not call it a senior product or say how it attaches.|https://www.petsafe.com/p/happy-ride-side-door-pet-steps/ZTV00-17464/}}
+
 **For a leaky or shedding senior in the back seat: a waterproof seat cover.** Accidents can happen in the car as well as the cabin, and a back seat is hard to clean. PetSafe's Happy Ride Quilted Bench Seat Cover is 45 in long by 56 in wide, made of padded heavy cotton twill with waterproof protection and a high-grip bottom coating; the maker says it fits the back seat of most cars, trucks and SUVs, lets you reach the seat belts without removing it, and is machine washable. [[31]](https://www.petsafe.com/p/happy-ride-quilted-bench-seat-cover/PTV00-17462/) It is not a restraint: your dog still needs a harness or crate. Check your seat width against those dimensions first. Skip it if you drive a short trip in a car you do not mind cleaning; add it if the drive is long.
 
 {{pick:petsafe-happy-ride-bench-seat-cover|For the back seat|The maker lists a 45 by 56 in quilted cover with waterproof protection, a high-grip bottom coating, seat belt access and machine washing; it is a seat cover, not a restraint.|https://www.petsafe.com/p/happy-ride-quilted-bench-seat-cover/PTV00-17462/}}
@@ -395,7 +404,7 @@ Nothing here is needed to book. It is for after your vet and the host have said 
 1. **Nothing, until the vet and the host have answered.**
 2. **Washable pads**, if your dog may leak.
 3. **A portable bed**, if your dog has none that travels.
-4. **A ramp**, only if the car is the hurdle.
+4. **A ramp**, only if the car is the hurdle; the side-door steps instead if your dog still climbs and the sill is within their three heights.
 5. **A seat cover**, last, for a long drive.
 
 For a big senior, read the [large-dog rental guide](/guides/vacation-rentals-that-welcome-large-dogs) too. All products with their specs are in [travel gear](/gear).

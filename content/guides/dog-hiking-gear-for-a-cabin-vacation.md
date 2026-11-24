@@ -36,6 +36,7 @@ relatedProducts:
   - ruffwear-grip-trex-boots
   - ruffwear-knot-a-leash
   - ruffwear-the-beacon-dog-safety-light
+  - ruffwear-quencher-bowl
 relatedTools:
   - packing-list
   - checklist
@@ -247,12 +248,16 @@ What that means on a trail:
 - **Boots and heat.** Orvis warns that dogs can overheat if booties are left on too long, so check the paws and take them off at rest stops (our suggestion). [[6]](https://www.orvis.com/how-to-hike-safely-with-your-dog.html)
 - **Never leave a dog in a parked car.** The Gila page says that in summer even a few minutes in the car can kill or seriously injure a pet. [[3]](https://www.fs.usda.gov/r03/gila/safety-ethics/canine-campers-bringing-dogs-national-forest)
 
-A packable bowl keeps the water stop easy. Ruffwear's Quencher Collapsible Dog Bowl is listed in one size, the Medium, with a 5.5 in opening and 4.2 cups (1 L). The maker lists a 4,000 mm waterproof rating on the lining and says to hand wash and air dry. [[14]](https://ruffwear.com/products/quencher-dog-bowl) The shell is described as water-resistant, not waterproof. Our [bowls and food storage guide](/guides/dog-travel-bowls-and-food-storage) compares more options. If the hike ends at a lake, see our [life jacket guide](/guides/dog-life-jacket-for-lakes-and-beaches).
+A packable bowl keeps the water stop easy, and on the trail it is the item that makes you actually offer a drink. Ruffwear's Quencher Collapsible Dog Bowl is listed in one size, the Medium, with a 5.5 in opening and 4.2 cups (1 L), enough for a real drink at a trailhead or summit stop rather than a sip. The maker lists a 4,000 mm waterproof rating on the lining and says to hand wash and air dry. [[14]](https://ruffwear.com/products/quencher-dog-bowl) It is for the hiker whose dog drinks a lot on a longer loop and who wants a bowl that packs flat. Skip it if you want something dishwasher safe, because it is hand wash only, and note the shell is described as water-resistant, not waterproof. It is the bowl to buy first if you do one bowl for the trail.
+
+{{pick:ruffwear-quencher-bowl|A packable trail bowl: 4.2 cups (1 L)|The maker lists one size, Medium, with a 5.5 in opening and 4.2 cups (1 L), a lining with a 4,000 mm waterproof rating labelled Food Contact Safe (the maker's wording, no tester named), and hand wash only.|https://ruffwear.com/products/quencher-dog-bowl}}
+
+Our [bowls and food storage guide](/guides/dog-travel-bowls-and-food-storage) compares more options. If the hike ends at a lake, see our [life jacket guide](/guides/dog-life-jacket-for-lakes-and-beaches).
 
 ## A short kit for most cabin hikes
 
 1. A fitted harness and a fixed leash of six feet or less.
-2. Water and a collapsible bowl, plus a plan for how often you stop.
+2. Water and a collapsible bowl, such as the Quencher, plus a plan for how often you stop.
 3. Waste bags, packed out.
 4. A light, if you may be out near dusk.
 5. Boots only if the terrain or surface calls for them, practiced at the cabin first.

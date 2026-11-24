@@ -37,6 +37,7 @@ relatedProducts:
   - petsafe-happy-ride-extra-long-ramp
   - petsafe-happy-ride-folding-ramp
   - petsafe-happy-ride-side-door-steps
+  - petsafe-happy-ride-hitch-step
 relatedTools:
   - checklist
   - packing-list
@@ -236,7 +237,9 @@ You now have two numbers, your cargo-floor height and your dog's weight. Match t
 
 {{pick:petsafe-happy-ride-side-door-steps|Steps at 21.25, 24.75 or 28 in, 200 lb rating|The maker lists three heights (21.25, 24.75, 28 in), side rails, textured steps, a built-in handle and a 200 lb rating; the page does not say how it attaches.|https://www.petsafe.com/p/happy-ride-side-door-pet-steps/ZTV00-17464/}}
 
-**Steps that stay on the truck.** The PetSafe Happy Ride Dog Hitch Step installs on a 2 inch hitch, adjusts to the height of a truck or SUV and the maker says it supports 200 lb. [[9]](https://www.petsafe.com/p/happy-ride-dog-hitch-step/62430/) It only works if you have that hitch, and the page gives no adjustment range, so it is a comparison option here rather than a pick.
+**For a truck or SUV that already has a hitch, the Hitch Step.** The PetSafe Happy Ride Dog Hitch Step installs on a 2 inch hitch, adjusts to the height of a truck or SUV, and the maker says it supports 200 lb. [[9]](https://www.petsafe.com/p/happy-ride-dog-hitch-step/62430/) The benefit for the right reader is that it stays on the vehicle: there is nothing to lift out at a gas stop, and both steps swivel to fold up and lock. It measures 20 by 18 by 12 inches and has traction on each tread. It suits a dog that will climb steps and a driver who wants no ramp to carry. Skip it if you have no 2 inch hitch, if your dog needs a gentle slope, or if you need a number for how high it reaches, because the page gives no adjustment range; ask the maker with your hitch height before you buy.
+
+{{pick:petsafe-happy-ride-hitch-step|For a truck or SUV with a 2 in hitch: steps that stay on the vehicle|The maker lists 20 x 18 x 12 in, a 200 lb rating, a 2 in hitch fit, traction on each tread and steps that swivel to fold and lock; it gives no height range and does not call it a senior product.|https://www.petsafe.com/p/happy-ride-dog-hitch-step/62430/}}
 
 ## Stairs at the cabin or rental
 
@@ -278,7 +281,7 @@ The Canine Arthritis Resources and Education page says jumping down from a bed o
 
 ## What to buy first
 
-1. **A ramp, once you have two numbers.** Ground-to-floor height and your dog's weight, compared with the tables above: the Compact for a tight trunk, the Extra Long for a tall floor or a heavy dog, the Folding Ramp for a small dog and the lightest carry. If your dog only ever needs a fixed-height door, the Side Door Steps are the other option.
+1. **A ramp, once you have two numbers.** Ground-to-floor height and your dog's weight, compared with the tables above: the Compact for a tight trunk, the Extra Long for a tall floor or a heavy dog, the Folding Ramp for a small dog and the lightest carry. If your dog only ever needs a fixed-height door, the Side Door Steps are the other option, and if you already have a 2 in hitch and a dog that climbs steps, the Hitch Step stays on the vehicle.
 2. **Nothing for the cabin stairs yet.** Get the host's answer on steps first; our [senior dog rental guide](/guides/vacation-rental-with-a-senior-dog) has the message to send, and our guide to [rentals that welcome large dogs](/guides/vacation-rentals-that-welcome-large-dogs) covers the booking side for a big dog.
 3. **The restraint for the drive.** A ramp gets the dog in; a harness or crate keeps the dog safe on the road, covered in our [car safety guide](/guides/dog-car-safety-harness-and-crate-guide). For two big dogs, see [two large dogs in one car](/guides/two-large-dogs-in-one-car).
 4. **The trip lists.** Add "ramp or steps and host's stair answer" to your [trip checklist](/tools/checklist) and your [packing list](/tools/packing-list). Other options are on our [ramps and steps gear page](/gear/ramps-and-steps), where each card quotes the maker.

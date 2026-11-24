@@ -36,6 +36,7 @@ relatedProducts:
   - kurgo-rover-hammock-extended-width
   - kurgo-rover-cargo-cape
   - petsafe-happy-ride-collapsible-crate
+  - kurgo-heather-booster-seat
 relatedTools:
   - packing-list
 sources:
@@ -220,6 +221,10 @@ Covers change how the belts and headrests work, so check four things before the 
 
 A booster is a different job from a cover: comfort and a tether point, not upholstery protection. Kurgo's Heather Dog Booster Seat is listed for dogs up to 30 pounds at 12 by 16 by 8 inches, installs on a bucket seat and has an integrated tether, with a removable liner and pad that machine wash on gentle. The maker does not claim the seat is crash tested and recommends a separate crash-tested harness. [[6]](https://www.kurgo.com/p/heather-dog-booster-seat/K01724) Our [harness and crate guide](/guides/dog-car-safety-harness-and-crate-guide) covers the harness side.
 
+It is for a small dog, up to 30 pounds, that rides in a bucket seat and rides calmer when raised to the window, with a seat that also keeps hair and drool off the upholstery: the outer seat is waterproof and stain resistant, spot clean only, and the liner and pad come out for the wash. Skip it for a dog over 30 pounds, for a bench seat (the page says bucket seat), or if you expect it to be a restraint. It is a booster seat, not a restraint: pair it with a separate crash-tested harness, and the maker says to replace the seat after an accident. This is the one to buy first if a small dog rides in a bucket seat and you want a raised, tethered place for it.
+
+{{pick:kurgo-heather-booster-seat|For a dog up to 30 lb in a bucket seat: a booster, not a restraint|The maker lists dogs up to 30 lb, 12 x 16 x 8 in, a waterproof, stain-resistant outer seat (spot clean) with a removable machine-washable liner and pad, and an integrated tether; it makes no crash-test claim and recommends a separate crash-tested harness.|https://www.kurgo.com/p/heather-dog-booster-seat/K01724}}
+
 ## Claws, hair and wet dogs
 
 These are common suggestions from the sources below; where a line is our own suggestion, it says so.
@@ -264,5 +269,5 @@ A cover does nothing for heat. The ASPCA says never to leave an animal alone in 
 
 1. **A restraint for the dog.** Start with our [harness and crate guide](/guides/dog-car-safety-harness-and-crate-guide).
 2. **A cover sized to where the dog rides.** Measure, then pick the bench cover for a car, the extended hammock for a big dog in a truck or large SUV, or the cargo cape for the cargo area. More options sit in our [car interior gear picks](/gear/car-interior).
-3. **A carrier, if you are renting a car.** Read the agreement first; the collapsible crate above is the one to buy if it asks for one.
+3. **A carrier, if you are renting a car.** Read the agreement first; the collapsible crate above is the one to buy if it asks for one. For a small dog in a bucket seat, the Heather booster raises and tethers it, but add a separate crash-tested harness.
 4. **A cleanup kit.** A lint roller, towels and paper towels, added to the [packing list tool](/tools/packing-list). If you are also renting a stay, our [true cost guide](/guides/what-a-dog-really-costs-on-a-vacation-rental) covers the fees.

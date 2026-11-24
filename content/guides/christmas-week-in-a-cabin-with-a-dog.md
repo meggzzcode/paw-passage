@@ -38,6 +38,7 @@ relatedProducts:
   - kurgo-loft-wander-dog-bed
   - kong-classic
   - north-states-mypet-universal-petgate
+  - ruffwear-polar-trex-boots
 relatedTools:
   - packing-list
   - checklist
@@ -114,6 +115,10 @@ sources:
   - title: Pet Poison Helpline
     url: https://www.petpoisonhelpline.com/
     publisher: Pet Poison Helpline
+    accessedOn: 2026-11-18
+  - title: Polar Trex Winter Dog Boots
+    url: https://ruffwear.com/products/polar-trex-winter-dog-boots
+    publisher: Ruffwear
     accessedOn: 2026-11-18
 
 research:
@@ -265,7 +270,9 @@ Three things do most of the work once the tree is gated: somewhere for the dog t
 
 {{pick:ruffwear-climate-changer-fleece|For cold, dry walks|The maker describes a 260 g polyester fleece with sleeves and a full-length zipper, sized XXS to XL by chest girth and machine-washable on a cold gentle cycle; it states no temperature rating.|https://ruffwear.com/products/climate-changer-fleece-dog-jacket}}
 
-**Boots.** For snow, ice or salted paths, boots are the item most worth reading about before you buy. Our [cold-weather gear guide](/guides/cold-weather-dog-gear-for-winter-cabin-trips) covers when boots help, de-icer and sizing by paw width, and it carries the Ruffwear Polar Trex pick. Size by paw width, not weight, and check the count: that boot is sold as a set of two.
+**Boots.** For snow, ice or salted paths, boots are the item most worth reading about before you buy, and the decision is about fit. Our [cold-weather gear guide](/guides/cold-weather-dog-gear-for-winter-cabin-trips) covers when boots help, de-icer and sizing by paw width in full, so read it before you order. The Ruffwear Polar Trex is the pair to look at for a dog that will walk salted or icy paths from the car to the trail: the maker lists a waterproof, windproof softshell upper and traction lugs for ice and snow. [[19]](https://ruffwear.com/products/polar-trex-winter-dog-boots) It is sold as a set of two, not four, and sized by paw width from 1.50 to 3.25 in, so measure each paw and check the count. The page gives no temperature rating or insulation figure, and the waterproof and traction wording is the maker's with no test named. Skip them if your walks are clear and dry or your dog will not wear boots; try them indoors first.
+
+{{pick:ruffwear-polar-trex-boots|For snow, ice and salted paths: a set of two|The maker lists a waterproof, windproof softshell upper, traction lugs, a set of two, and sizing by paw width from 1.50 to 3.25 in; it gives no insulation rating or temperature range.|https://ruffwear.com/products/polar-trex-winter-dog-boots}}
 
 ## Buying checklist
 
@@ -324,7 +331,7 @@ Settle the booking questions first, because a minimum stay or a no-tree rule cha
 2. **A gate for the tree-room doorway,** if the room has one and the host allows it.
 3. **The bed and the chew toy,** because they cost little and carry the evenings.
 4. **A washable fleece layer,** if your dog will be out on cold, dry walks.
-5. **Boots,** only if the walks will be on snow, ice or salted paths; read the [cold-weather gear guide](/guides/cold-weather-dog-gear-for-winter-cabin-trips) first.
+5. **Boots,** such as the Polar Trex, only if the walks will be on snow, ice or salted paths; read the [cold-weather gear guide](/guides/cold-weather-dog-gear-for-winter-cabin-trips) first.
 
 Check the size chart and return terms on each listing, and build the rest in the [packing list tool](/tools/packing-list) and the [trip checklist](/tools/checklist).
 

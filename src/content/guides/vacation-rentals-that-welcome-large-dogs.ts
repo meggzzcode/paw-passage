@@ -15,7 +15,7 @@ export const guide: Guide = {
   lastReviewed: "2026-11-24",
   readingMinutes: 11,
   heroImage: "guide-large-dogs-rental",
-  body: `Yes, large dog friendly vacation rentals exist, and a few managers say outright that they have no dog weight limit. But "pets allowed" never settles it for your dog. You find the cabin, the listing says "dogs welcome," your Lab is 80 pounds, and the rules page says 50. The only approval that counts is a written yes that names your dog.
+  body: `Yes, large dog friendly vacation rentals exist, and a few managers say outright that they have no dog weight limit. A listing that says "dogs welcome" can still cap weight at 50 pounds, so the approval that counts names your dog.
 
 - Read the limit for this dog, per dog or combined, before you read the views.
 - "Large dogs considered" means ask, not yes. Silence on weight is a reason to ask, not a green light.
@@ -36,9 +36,9 @@ Here are the six managers that state a limit, quoted from their public pages (re
 | Brindley Beach Vacations (Outer Banks, NC) | "up to two dogs, each weighing 60 pounds or less" | Each |
 | Emmons Realty (St. Simons Island, GA) | "a maximum weight of 65lbs per dog" | Each |
 
-Sources for this table: [[2]](https://cabin-rentals-of-georgia.com/policies), [[3]](https://elkspringsresort.com/?p=1899), [[4]](https://www.amilocals.com/faqs), [[6]](https://www.emmonsrealty.com/pages/rental-policies)
+Sources for this table: [[1]](https://hearthsidecabinrentals.com/frequently-asked-questions), [[2]](https://cabin-rentals-of-georgia.com/policies), [[3]](https://elkspringsresort.com/?p=1899), [[4]](https://www.amilocals.com/faqs), [[5]](https://www.brindleybeach.com/node/3691), [[6]](https://www.emmonsrealty.com/pages/rental-policies)
 
-Brindley Beach says "NO EXCEPTIONS" and Emmons Realty says "No exceptions will be made for any part of this policy." A 72-pound dog is over all six. A 60-pound dog clears Brindley Beach and Emmons Realty but not the other four, so the cutoff for "large" is wherever each manager puts it. And "limit" can mean different things: AMI Locals' 50 pounds is shared, so an 80-pound Lab fails alone and two 30-pound dogs fail together. Dog counts at the same managers are in [how many dogs you can bring](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental).
+[Brindley Beach](https://www.brindleybeach.com/node/3691) says "NO EXCEPTIONS" and [Emmons Realty](https://www.emmonsrealty.com/pages/rental-policies) says "No exceptions will be made for any part of this policy." A 72-pound dog is over all six. A 60-pound dog clears Brindley Beach and Emmons Realty but not the other four, so the cutoff for "large" is wherever each manager puts it. And "limit" can mean different things: AMI Locals' 50 pounds is shared, so an 80-pound Lab fails alone and two 30-pound dogs fail together. Dog counts at the same managers are in [how many dogs you can bring](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental).
 
 Not sure where your dog falls? Enter its weight and count in the [will my dog be accepted tool](/tools/will-my-dog-be-accepted).
 
@@ -65,14 +65,14 @@ There is no universal booking definition of "large." Read the listing literally:
 | Bundled conditions | Cabin Rentals of Georgia adds "non-shedding, and crate trained" | Does my dog meet every condition, not only weight? |
 | "Any size" | No weight ceiling stated | Are there count or breed rules? |
 
-Hostaway's host guide advises stating size limits numerically and says some hosts set none. [[15]](https://www.hostaway.com/vacation-rental-guide/pet-friendly-hosting/policies/) Many pages still use soft words, so ask for the number. Breed rules ride separately: Elk Springs, Emmons Realty and Cabin Rentals of Georgia pair weight with other conditions, so a dog under the number can still be turned away.
+[Hostaway's](https://www.hostaway.com/vacation-rental-guide/pet-friendly-hosting/policies/) host guide advises stating size limits numerically and says some hosts set none. [[15]](https://www.hostaway.com/vacation-rental-guide/pet-friendly-hosting/policies/) Many pages still use soft words, so ask for the number. Breed rules ride separately: Elk Springs, Emmons Realty and Cabin Rentals of Georgia pair weight with other conditions, so a dog under the number can still be turned away.
 
 ## Do Airbnb and Vrbo set a weight limit?
 
 Neither page we read sets a platform-wide number. Both put the pet policy in the host's house rules.
 
-- **Vrbo:** the "Pets allowed" house rule lets hosts "add information like the pet type and size permitted at your property." [[12]](https://help.vrbo.com/articles/Add-or-edit-house-rules) Vrbo also tells hosts to state "any size restriction," and guests "must agree to your house rules before they book." [[13]](https://help.vrbo.com/articles/What-are-House-Rules)
-- **Airbnb:** the pet policy is in the listing's House rules, and Airbnb says: "Even if a listing says pets are allowed, always contact the host to confirm." [[11]](https://www.airbnb.com/help/article/86) Its host page lets guests state how many pets (0 to 5) they plan to bring and describes fee structures, but does not mention size or weight. [[14]](https://www.airbnb.com/help/article/3623)
+- **[Vrbo](https://help.vrbo.com/articles/What-are-House-Rules):** the "Pets allowed" house rule lets hosts "add information like the pet type and size permitted at your property." [[12]](https://help.vrbo.com/articles/Add-or-edit-house-rules) Vrbo also tells hosts to state "any size restriction," and guests "must agree to your house rules before they book." [[13]](https://help.vrbo.com/articles/What-are-House-Rules)
+- **[Airbnb](https://www.airbnb.com/help/article/86):** the pet policy is in the listing's House rules, and Airbnb says: "Even if a listing says pets are allowed, always contact the host to confirm." [[11]](https://www.airbnb.com/help/article/86) Its host page lets guests state how many pets (0 to 5) they plan to bring and describes fee structures, but does not mention size or weight. [[14]](https://www.airbnb.com/help/article/3623)
 
 So a "Pets allowed" badge tells you the host accepts animals, not your 72-pound dog. Open the house rules and search for "weight," "pounds," "breed," "stairs," "crate" and "unattended."
 
@@ -82,7 +82,11 @@ GoPetFriendly's tip is to email the owner and get the rules in writing before yo
 
 "Hello, we are interested in [property or cabin name] for [dates]. We would like to bring one dog: [name], a [breed or 'mixed breed, breed unknown'], currently [weight] pounds as of [date], [age], house-trained and [crate trained / not crate trained]. Your pet policy lists a weight limit of [number]. Could you tell us whether [name] can be approved for this home, whether any extra fee, deposit or condition applies, and what the entrance steps, sleeping-level access and unattended-pet rule are? Please confirm the approval in writing in this thread. If this home cannot take a dog this size, could you suggest one that can? Thank you."
 
-It gives a number, a date and one clear question, and it leaves the host a way to say yes to a different home. With two dogs and a combined limit, give both weights. Keep the reply on the booking platform, since "we love dogs" does not answer a weight question.
+A filled-in version for a big dog:
+
+"Hello, we are interested in the Pine Ridge cabin for June 6 to 13. We would like to bring one dog: Moose, a Labrador-mastiff mix, currently 82 pounds as of May 2, 5 years old, house-trained and crate trained. Your pet policy lists a weight limit of 60 pounds. Could you tell us whether Moose can be approved for this home, whether any extra fee, deposit or condition applies, and what the entrance steps, sleeping-level access and unattended-pet rule are? Please confirm the approval in writing in this thread. If this home cannot take a dog this size, could you suggest one that can? Thank you."
+
+The message gives a number, a date and one clear question, and it leaves the host a way to say yes to a different home. With two dogs and a combined limit, give both weights. Keep the reply on the booking platform, since "we love dogs" does not answer a weight question.
 
 What to save:
 
@@ -92,14 +96,15 @@ What to save:
 - The total pet charge, including any large-pet fee (Hearthside lists $75). [[1]](https://hearthsidecabinrentals.com/frequently-asked-questions)
 - Any conditions: crate rules, unattended-pet rules, counts.
 
-Hearthside warns that a pet found in a cabin not designated as pet-friendly can bring "a fee of up to $500 for additional cleaning and/or misrepresentation." If the answer is no, do not bring the dog anyway.
+[Hearthside](https://hearthsidecabinrentals.com/frequently-asked-questions) warns that a pet found in a cabin not designated as pet-friendly can bring "a fee of up to $500 for additional cleaning and/or misrepresentation." If the answer is no, do not bring the dog anyway.
 
 ## Where to look
 
 Start with the weight rule, not the destination. Pick two or three managers in your area, read each pet page for a stated number and whether it is per dog or combined, and keep only those that fit your dog before you compare views.
 
-- **Higher stated limits:** of the six in the table, Emmons Realty (65 lb) and Brindley Beach (60 lb) state the highest. Hearthside says some cabins take larger dogs for a higher fee, so ask which. [[1]](https://hearthsidecabinrentals.com/frequently-asked-questions)
-- **Size categories:** Sun Palace Vacation Homes has a "Dogs Over 30lb" filter, which shows why a generic search can miss inventory. [[9]](https://www.sunpalacevacationhomes.com/pet-friendly/)
+- **Search stays:** [start a pet-friendly search on Vrbo](aff:vrbo), enter your dog's details, then read each home's house rules for a weight number.
+- **Higher stated limits:** of the six in the table, Emmons Realty (65 lb) and Brindley Beach (60 lb) state the highest. [Hearthside](https://hearthsidecabinrentals.com/frequently-asked-questions) says some cabins take larger dogs for a higher fee, so ask which. [[1]](https://hearthsidecabinrentals.com/frequently-asked-questions)
+- **Size categories:** [Sun Palace Vacation Homes](https://www.sunpalacevacationhomes.com/pet-friendly/) has a "Dogs Over 30lb" filter, which shows why a generic search can miss inventory. [[9]](https://www.sunpalacevacationhomes.com/pet-friendly/)
 - **Airbnb and Vrbo:** add pets with accurate details, then read house rules and fees. Try the destination plus "dogs any size vacation rental" or "ground floor dog friendly rental" as a starting list, never as the answer for your dog.
 - **On this site:** [browse stays](/stays) and use the weight-limit filter; it matches only stays that state a limit, so where a stay says "Not confirmed," send the message above.
 
@@ -115,7 +120,7 @@ Once a rental passes permission, run these. The [full booking checklist](/guides
 
 ## When a breed rule applies
 
-Restrictions can come from an owner, insurer, association or building. The Insurance Information Institute reports that insurers vary: some restrict certain breeds, some assess individual dogs, and some do not ask about breed. [[17]](https://www.iii.org/article/spotlight-on-dog-bite-liability) So "insurance won't allow it" is a real limit for some properties and not a universal one. Ask whether it is a firm property or insurer rule, or whether the host can approve your dog in writing. A pet health policy is a different product from liability cover for injuries or damage your dog causes. [[18]](https://www.iii.org/article/facts-about-pet-insurance) Check with your own insurer whether liability extends to a temporary rental.
+Restrictions can come from an owner, insurer, association or building. The [Insurance Information Institute](https://www.iii.org/article/spotlight-on-dog-bite-liability) reports that insurers vary: some restrict certain breeds, some assess individual dogs, and some do not ask about breed. [[17]](https://www.iii.org/article/spotlight-on-dog-bite-liability) So "insurance won't allow it" is a real limit for some properties and not a universal one. Ask whether it is a firm property or insurer rule, or whether the host can approve your dog in writing. A pet health policy is a different product from liability cover for injuries or damage your dog causes. [[18]](https://www.iii.org/article/facts-about-pet-insurance) Check with your own insurer whether liability extends to a temporary rental.
 
 ## What we could not confirm
 
@@ -130,7 +135,7 @@ The six-of-38 figure is our own count, and what any individual home allows can c
 
 ## A bed for the stay, after the host says yes
 
-None of this makes a rental accept your dog; it only helps once the host has said yes. A big dog needs somewhere of its own to lie down, and a rental bed or sofa is not it, particularly if the host limits furniture. The Kurgo Loft Wander is a roll-up travel bed with a water-resistant ripstop top and a waterproof, non-slip bottom. It opens to 27 x 36 in (Medium) or 36 x 48 in (Large) and rolls up to about 17 x 9.5 in with a handle, and the maker lists no weight limit, so size it by how your dog lies down. [[19]](https://www.kurgo.com/p/loft-wander-dog-bed/K01560) The bottom grips only the spot where it lies, so for a slick route ask the host about rugs. Skip it if the home provides a dog bed or your dog already has one that travels.
+A big dog needs somewhere of its own to lie down, particularly if the host limits furniture, but only buy after the host has said yes. The Kurgo Loft Wander is a roll-up travel bed with a water-resistant ripstop top and a waterproof, non-slip bottom. It opens to 27 x 36 in (Medium) or 36 x 48 in (Large) and rolls up to about 17 x 9.5 in with a handle, and the maker lists no weight limit, so size it by how your dog lies down. [[19]](https://www.kurgo.com/p/loft-wander-dog-bed/K01560) Skip it if the home provides a bed or your dog already has one that travels.
 
 {{pick:kurgo-loft-wander-dog-bed|For a big dog's own spot|For a big dog's own non-slip spot on a hard rental floor: pick Medium or Large by how the dog lies down.|https://www.kurgo.com/p/loft-wander-dog-bed/K01560}}
 
@@ -138,7 +143,7 @@ Lifting a heavy dog into a high vehicle is a different problem; the [ramp and st
 
 ## Your next step
 
-Put your dog's weight and count into the [will my dog be accepted tool](/tools/will-my-dog-be-accepted), then send the message above for any home it flags as possible. Save the replies in the [trip checklist](/tools/checklist) and compare the full price for each home that says yes: see [what a dog really costs on a rental](/guides/what-a-dog-really-costs-on-a-vacation-rental) and [rentals with no pet fee](/guides/vacation-rentals-with-no-pet-fee), which names Sliding Rock and Hapey again. To look at real listings, you can [start a pet-friendly search on Vrbo](aff:vrbo) and read each home's house rules for a weight number. Bringing two dogs? See the [two-dog guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental). Large and getting older? See [the senior-dog rental guide](/guides/vacation-rental-with-a-senior-dog).`,
+Put your dog's weight and count into the [will my dog be accepted tool](/tools/will-my-dog-be-accepted), then send the message above for any home it flags as possible. Save the replies in the [trip checklist](/tools/checklist) and compare the full price for each home that says yes: see [what a dog really costs on a rental](/guides/what-a-dog-really-costs-on-a-vacation-rental) and [rentals with no pet fee](/guides/vacation-rentals-with-no-pet-fee), which names Sliding Rock and Hapey again. Bringing two dogs? See the [two-dog guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental). Large and getting older? See [the senior-dog rental guide](/guides/vacation-rental-with-a-senior-dog).`,
   faqs: [
     {
       q: "Are there vacation rentals with no dog weight limit?",

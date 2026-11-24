@@ -190,7 +190,6 @@ export const tripCollections: TripCollection[] = [
       {
         title: "Keep them secure in the car",
         productIds: [
-          "sleepypod-clickit-sport",
           "kurgo-enhanced-strength-tru-fit",
           "lucky-duck-lucky-kennel",
           "kurgo-backseat-barrier",
@@ -349,7 +348,6 @@ export function liveTrips(list: Product[] = products): GearShortcut[] {
 
 /** Hand-picked products for "A few good places to start": one per job, spread across trips. Order is display order. */
 export const featuredProductIds: string[] = [
-  "sleepypod-clickit-sport", // road trip, car safety (guide pick, CPS listing)
   "midwest-exercise-pen-with-door", // cabin containment (guide pick)
   "kurgo-loft-wander-dog-bed", // comfort
   "soggy-doggy-microfiber-doormat", // cabin cleanup

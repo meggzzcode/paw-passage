@@ -120,7 +120,7 @@ describe("real guides", () => {
   it("dog-car-safety-harness-and-crate-guide links its table products", async () => {
     const html = await sample("dog-car-safety-harness-and-crate-guide");
     // The CPS listings table was removed as noise; the products must still link wherever they are named.
-    expect(html).toMatch(/data-product-link="sleepypod-clickit-sport"/);
+    expect(html).not.toMatch(/data-product-link="sleepypod-clickit-sport"/);
     expect(html).toMatch(/data-product-link="sleepypod-atom"/);
     expect(html).toMatch(/data-product-link="lucky-duck-lucky-kennel"/);
     expect(html).not.toMatch(/<h[1-6][^>]*>(?:(?!<\/h[1-6]>)[^])*data-product-link/);

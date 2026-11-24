@@ -1,0 +1,4 @@
+# Pass G: two-large-dogs-in-one-car
+Words (file): 2922 -> 2920.
+Fixed: Sleepypod harness section, card, source and relatedProducts removed; "harness is a real option under 90 lb" replaced by 75 lb threshold matching the Ruffwear/Kurgo tested range; "Nobody has tested" -> "We found no independent test"; "What to measure" moved to the start of the buying part with wheel-well width, hatch height, rear-seat width, exterior-size line (maker gives interior only); crate cards now Lucky Kennel Large (70-110 lb) and Intermediate (under 70 lb) with which-dog-fits text; rabbitgoo SUV barrier added (35.8-59.8 in, steel wire, listing does not mention two dogs, measure first); duplicate checklist items and ramp link removed; unsourced sedan/cab claims softened; barrier-is-a-divider repeat trimmed; relatedProducts kept to 6.
+Rejected as taste: shortening the heat/state-law section, harness-per-dog wording elsewhere, "X before Y" opening.

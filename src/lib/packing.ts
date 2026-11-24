@@ -43,7 +43,7 @@ export const packItems: PackItem[] = [
     group: "Car and safety",
     what: "A harness that clips into the seat belt system, or a crate you can secure in the car.",
     use: "Keeps your dog restrained and you focused on the road.",
-    productIds: ["sleepypod-clickit-sport", "sleepypod-atom", "lucky-duck-lucky-kennel"],
+    productIds: ["sleepypod-atom", "lucky-duck-lucky-kennel"],
     reason: (p) =>
       p.car
         ? "You are driving: a properly fitted harness or a secured crate is the safer way to travel."

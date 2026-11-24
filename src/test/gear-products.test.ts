@@ -75,8 +75,8 @@ describe("product catalog rules", () => {
   });
   it("the taxonomy has the 11 job-based categories, each with the spec's active product count as its primary", () => {
     const spec: Record<string, number> = {
-      "car-safety": 9,
-      "car-interior": 3,
+      "car-safety": 10,
+      "car-interior": 4,
       "ramps-and-steps": 5,
       "feeding-and-hydration": 9,
       "pens-and-gates": 5,

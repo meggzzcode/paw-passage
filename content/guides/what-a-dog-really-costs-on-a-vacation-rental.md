@@ -203,7 +203,7 @@ Mud is the part you can control at the door, and a washable mat such as the [Sog
 
 We read the pet pages of 38 managers, a small convenience sample, and re-read each figure below on 2026-11-18. Policies change, so treat these as examples and not a market average.
 
-Of the 38, 25 state a fee: 22 charge an amount and three say $0 (Sliding Rock Cabins, Twiddy & Company and Hapey Cabin Rentals). The other 13 give no amount. Nightly fees ran $20 to $50 and flat or per-pet fees $50 to $400, with one manager saying "up to $1,000". The $400 is one manager's rate for stays of 14 or more days. Full tables are on the [pet policy dataset page](/data/pet-policies).
+Of the 38, 22 state a charge, three say $0 (Sliding Rock Cabins, Twiddy & Company and Hapey Cabin Rentals) and 13 give no amount. Nightly fees ran $20 to $50 and flat or per-pet fees $50 to $400, with one manager saying "up to $1,000". The $400 is one manager's rate for stays of 14 or more days. Full tables are on the [pet policy dataset page](/data/pet-policies).
 
 | Manager | What the page says |
 | --- | --- |

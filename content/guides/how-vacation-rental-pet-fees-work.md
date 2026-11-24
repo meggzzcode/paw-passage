@@ -128,7 +128,7 @@ approvedBy: Paws & Passage Editors
 approvedOn: 2026-11-16
 ---
 
-Of the 38 managers' pet pages we read on 2026-11-18, 22 state a charge, 3 charge $0 and 13 name no amount, so ask or reach checkout to learn the price. Where the unit is stated, nightly fees run $20 to $50 and one-time fees $55 to $300 per pet, stay, reservation or week.
+Of the 38 managers' pet pages we read on 2026-11-18, 22 state a charge, 3 charge $0 and 13 name no amount, so ask or reach checkout to learn the price. Where the unit is stated, nightly fees run $20 to $50 and one-time fees $50 to $300 per pet, stay, reservation or week.
 
 ## Which costs less: a cabin with a pet fee or one without?
 

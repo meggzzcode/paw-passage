@@ -67,8 +67,8 @@ Screenshots: `wt05-planner-setup.png`, `wt05-planner-list.png`, `wt05-planner-ne
 
 ## 7. Segment 6: Stays (0:45), https://www.pawsandpassage.com/stays
 
-Clicks: open `/stays`; use one filter ("Fully fenced yard" or "Large dogs allowed"); open the first stay; scroll to the pet-policy panel and the "Not yet verified" label; point at the booking button label.
-Say: "The directory has 78 stays in Georgia and California, written from public listing pages. None has been confirmed with a host, and every one is labelled 'Not yet verified'. 23 of the pages are in the sitemap; the rest are shown but kept out of search because they are thin."
+Clicks: open `/stays`; use one filter ("Fully fenced yard" or "Large dogs allowed"); open the first stay; scroll to the pet-policy panel and the "not confirmed with the host" note; point at the booking button label.
+Say: "The directory has 78 stays in Georgia and California, written from public listing pages. None has been confirmed with a host, and every page says its details were read from the listing and not confirmed with the host. 23 of the pages are in the sitemap; the rest are shown but kept out of search because they are thin."
 Say, explicitly: "A stay is listed only while it has an approved affiliate link. Those links are the seller's and do not transfer. If they are switched off, this directory empties, unless the buyer turns on an optional mode that lists the same stays with plain links and no commission. That choice is covered in the transition guide."
 Screenshots: `wt06-stays-index.png`, `wt06-stay-detail.png` (include the label and the Vrbo button; it says "Affiliate link").
 

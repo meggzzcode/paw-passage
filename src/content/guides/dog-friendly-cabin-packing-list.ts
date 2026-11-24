@@ -21,7 +21,7 @@ export const guide: Guide = {
 
 ## Essential packing checklist
 
-Everything here goes in the car for any two- or three-night stay. Want it matched to your dog and dates? [Build your own list in two minutes](/tools/packing-list).
+Everything here goes in the car for any two- or three-night stay. Want it matched to your dog and dates? [Build your own list in two minutes](/tools/packing-list?trip=cabin).
 
 **Food and water**
 - [ ] Your dog's usual food, measured for every day plus one or two spare days

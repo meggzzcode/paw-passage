@@ -21,7 +21,7 @@ Live site versus repo: the owner has stopped Netlify builds to preserve credits 
 | Words in published guide bodies | 45,093 (1,014 to 2,027 per guide) |
 | Sources / inline citations | 420 listed sources, each linked inside the article text by publisher name (no numbered markers); 152 FAQs |
 | Original dataset | 38 vacation-rental managers x 13 fields, read 2026-11-18, one source URL per row |
-| Stay pages | 83 stay files, **0 host-confirmed** (all "Not yet verified"); 78 shown (listed) with their own detail page; 23 indexable (in the sitemap); 55 shown but `noindex`; 5 hidden |
+| Stay pages | 83 stay files, **0 host-confirmed** (none confirmed with a host); 78 shown (listed) with their own detail page; 23 indexable (in the sitemap); 55 shown but `noindex`; 5 hidden |
 | Destination / dog-type pages | 2 states + 8 towns defined (6 indexable) + 8 "things to do with a dog" articles (not guides); 4 dog-type pages |
 | Planning tools | 3 (will my dog be accepted, dog packing list planner, before-you-book checklist); no calculators |
 | Gear | 11 category pages + hub; 92 product records, 65 active; 5 curated trip collections |
@@ -59,7 +59,7 @@ The guides are researched from public sources with the method disclosed. They ar
 
 | Item | Detail |
 |---|---|
-| Stay files | 83 (Georgia 49, California 34, across 27 towns), all `status: unverified` (**host-confirmed: 0**): written from public listing information with pet-policy fields, not confirmed with hosts, each labelled "Not yet verified" (each page states the date its listing was read). No photo permission recorded; pages carry no photos of the rentals |
+| Stay files | 83 (Georgia 49, California 34, across 27 towns), all `status: unverified` (**host-confirmed: 0**): written from public listing information with pet-policy fields, not confirmed with hosts, each page saying its details are read from the listing and not confirmed with the host (each page states the date its listing was read). No photo permission recorded; pages carry no photos of the rentals |
 | Shown in the directory | 78 (Georgia 47, California 31), each with its own detail page and search filters (state, town, type, dogs, weight limit, fenced yard and others). A stay is shown only when it has an approved affiliate deeplink (rule `STAYS_REQUIRE_AFFILIATE_LINK`, `stayDirectoryMode: affiliate-only`). **Caveat:** these deeplinks are the seller's and do not transfer. If they are switched off, the directory empties (0 listed, 0 indexable, stay pages 404) unless the owner enables `public-sources` mode, which lists the same stays with plain Vrbo or Airbnb source links, no commission and no affiliate label (`docs/BUYER_AFFILIATE_TRANSITION.md` sections 5 and 6; shipped off; open owner decision) |
 | Indexable | 23 stay pages are in the sitemap; 55 shown stays are `noindex` because they are too thin by the quality rule. "Listed" does not mean "in the sitemap" and does not mean "indexed by Google" |
 | Hidden | 5 stay files (83 minus 78) without an approved link (`coastal-bliss-fort-bragg-hot-tub-ocean-views`, `large-oceanfront-home-cleone-fort-bragg-hot-tub`, `rosemarys-retreat-mendocino-oceanfront`, `that-cabin-on-that-lane-blue-ridge`, `woof-in-the-woods-cabin-blue-ridge`) |

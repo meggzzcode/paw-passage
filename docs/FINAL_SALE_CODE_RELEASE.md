@@ -74,7 +74,7 @@ If another worker's code fixes land after this report, re-run the same commands 
 - The Vrbo stay buttons keep an "Affiliate link" label while `/affiliate-disclosure` says every buy or booking button has one (Amazon buttons do not): **still open** (checked in `src/routes/affiliate-disclosure.tsx` line 22 against the built stay pages, 46 label occurrences on indexable stay pages).
 - Real-device and assistive-technology checks pending.
 - Reader review mean 7.1 of 10 was taken before the final fixes and was not re-scored (`docs/FINAL_EDITORIAL_RELEASE.md`); report it as a record, not a quality claim.
-- All 83 stays are "Not yet verified"; none is host-confirmed. The dataset is a one-date sample. Guides are AI-assisted and not first-hand.
+- All 83 stays are not confirmed with a host; none is host-confirmed. The dataset is a one-date sample. Guides are AI-assisted and not first-hand.
 - Domain is about 8 days old; auto-renew is off and the domain expires 2027-11-17; the historical Search Console figures (236 impressions, 0 clicks, 21 of 23 inspected indexed) describe the older build.
 - No LICENSE file; the assignment wording is a seller and legal item. Legal pages are generic and not lawyer-reviewed. Whether Lovable's GitHub sync is disconnected is unverified.
 - No video exists, and the 19 walkthrough screenshots are not captured (`docs/BUYER_WALKTHROUGH_SCRIPT.md`).

@@ -62,7 +62,7 @@ Not in the sitemap on purpose: `/dog-rules` (noindex, no verified place), the fi
 | Term | Count | Meaning |
 |---|---:|---|
 | Stay files written up | **83** (Georgia 49, California 34, 27 towns) | files in `content/stays/` |
-| Host-confirmed | **0** | every file is `status: unverified`: written from public listing pages, never confirmed with a host. Each is labelled "Not yet verified" |
+| Host-confirmed | **0** | every file is `status: unverified`: written from public listing pages, never confirmed with a host. Each page says its details are not confirmed with the host |
 | Shown in the directory (listed) | **78** (Georgia 47, California 31) | listed only while a stay has an approved affiliate link (`STAYS_REQUIRE_AFFILIATE_LINK`; `stayDirectoryMode: affiliate-only`) |
 | Indexable (in the sitemap) | **23** | pass the quality rule in `src/content/publish-rule.ts` |
 | Shown but `noindex` | 55 | 78 minus 23 |

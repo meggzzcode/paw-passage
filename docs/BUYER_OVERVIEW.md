@@ -10,7 +10,7 @@ A new, pre-revenue starter site about renting vacation homes with a dog (domain 
 - **29 sourced guides** (about 45,000 words, 420 sources linked in the text, FAQs), answer-first, with a documented fact-check trail. An independent reader panel averaged 7.1 of 10 before the final fixes; the corrected text was not re-scored.
 - **A personalized packing planner** (37 declared items; trip type, days, dogs and conditions build the list; "Need to buy" points to researched Gear products). Lists save in the visitor's browser only: no accounts, no sync.
 - **A photo-free Gear shop:** 11 categories, 5 trip collections, 65 active products with sources.
-- **A stay directory** of 78 shown stays, all labelled "Not yet verified" (none host-confirmed; 23 are indexable), plus 8 town "things to do" articles.
+- **A stay directory** of 78 shown stays, each shown as "not confirmed with the host" (none host-confirmed; 23 are indexable), plus 8 town "things to do" articles.
 - **SEO groundwork** (103-URL sitemap, canonicals, structured data, redirects, internal links). No ranking result is claimed.
 
 ## Exactly what you receive

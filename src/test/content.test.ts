@@ -59,7 +59,7 @@ describe.each(allGuides.map((g) => [g.slug, g] as const))("guide content: %s", (
       ...allGuides.map((x) => x.slug),
       "vacation-rentals-with-no-dog-weight-limit",
     ]);
-    const links = [...text(g).matchAll(/\]\((\/[^)\s#]*)\)/g)].map((m) => m[1]!);
+    const links = [...text(g).matchAll(/\]\((\/[^)\s#?]*)\)/g)].map((m) => m[1]!);
     const broken = links.filter((l) =>
       l.startsWith("/guides/")
         ? !slugs.has(l.slice(8))

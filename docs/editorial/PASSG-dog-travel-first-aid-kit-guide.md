@@ -1,0 +1,5 @@
+# Pass G: dog-travel-first-aid-kit-guide
+Words: 3,445 -> 3,551 (+3%, includes three new product sections).
+Fixed: ready-made section rewritten so text and cards agree (ARCA PET 100-piece kit: "the listing states", no maker page found; Trail Dog contents now stated in text from its record, card no longer said to list contents); 7-item kit checklist replaced by one sentence of judging criteria; FDK thermometer (unfamiliar brand stated, vet to confirm how to take a temperature) and Baskerville muzzle (sizing by snout length per maker guide, no breed mapping, one muzzle passage) added with cards and gear entries; poison numbers and do-not-induce-vomiting removed from At a glance and the duplicate poison FAQ merged (kept in poison section, checklist line and FAQ); "three sizes" bullet dropped (table covers it); disclaimer paragraph shortened; duplicate medication watch-out merged; vet-referral phrasing trimmed.
+Rejected as taste: Learn-the-basics block length, blog-sourced cautions.
+Sources: all still linked.

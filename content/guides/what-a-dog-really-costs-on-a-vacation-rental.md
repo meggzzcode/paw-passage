@@ -35,7 +35,6 @@ relatedGuides:
   - how-many-dogs-can-you-bring-to-a-vacation-rental
   - vacation-rentals-with-no-dog-weight-limit
 relatedProducts:
-  - soggy-doggy-super-shammy-towel
   - soggy-doggy-microfiber-doormat
   - kurgo-loft-wander-dog-bed
 relatedTools:

@@ -2,7 +2,7 @@
 title: "Airbnb Pet Damage Charge After Checkout: What to Do"
 seoTitle: "Airbnb Pet Damage Charge After Checkout"
 seoDescription: "Host asked for pet damage money after checkout? Airbnb's 24-hour, 14-day and 60-day clocks, reply scripts and an evidence checklist to use."
-dek: "Host asking for dog damage money after checkout? Three dates decide your options: 24 hours to reply, 14 days for the host, 60 days to appeal."
+dek: "Host asking for dog damage money after checkout? Do not pay or decline yet: check the date, reply on the platform and pull your photos."
 category: Planning
 states: []
 status: published
@@ -15,9 +15,9 @@ faqs:
   - q: How long does a host have to charge me for pet damage after checkout?
     a: Airbnb's help pages say damage claims must be filed within 14 days of checkout, and Vrbo's pages say the host has 14 days after your stay. How strictly either is enforced is not published.
   - q: A host asked for money more than 14 days after checkout. What now?
-    a: Airbnb's pages say damage claims must be filed within 14 days of checkout, and Vrbo gives the host 14 days after your stay. Reply inside the 24-hour window anyway to ask for details, and ask Airbnb support whether a late request is still allowed; how strictly the window is enforced is not published.
+    a: Reply inside the 24-hour window anyway to ask for details, and ask Airbnb support whether a late request is still allowed.
   - q: How long do I have to respond to an Airbnb damage request?
-    a: Airbnb's pages say guests have 24 hours to respond before Airbnb steps in. You can pay the full amount, pay a different amount, or decline, and Airbnb says you have 60 days to appeal after you have been charged.
+    a: Airbnb's pages say 24 hours. You can pay in full, pay a different amount or decline, and you have 60 days to appeal once charged.
   - q: I paid a pet fee. Can the host still charge me for dog hair?
     a: Airbnb says pet fees are meant to cover expected costs, and its host protection page lists pet accidents and stains as separate. No platform text says where ordinary hair ends and extra cleaning begins, so keep your photos and ask for an itemized claim.
   - q: Does Vrbo put a hold on my card for damage?
@@ -162,7 +162,7 @@ approvedOn: 2026-11-18
 
 Airbnb's help pages set three clocks: you have 24 hours to respond to a damage request, the host has 14 days after checkout to file it, and you have 60 days to appeal a charge. Vrbo also gives the host 14 days. Find out which clock you are on before you pay or reply.
 
-This is general information from the platforms' help pages, not legal advice, as of 2026-11-18 when we re-read each cited page. Already have a request? Jump to [what to write back](#what-to-write-back).
+This is general information from the platforms' help pages as of 2026-11-18, not legal advice. Already have a request? Jump to [what to write back](#what-to-write-back).
 
 ## Do this first
 
@@ -194,6 +194,10 @@ If you pay part, decline or stay silent, the host may involve [Airbnb](https://w
 - Ordinary hair after a paid pet fee: ask what extra work was needed.
 - Stain, odor or scratches: send dated photos and ask for an itemized claim.
 - Dog not declared: read the listing and booking terms.
+
+One purchase fits here, and only for mess: a washable mat at the door keeps mud off the host's floors, so there is less to photograph at checkout. It does not change how a claim is decided, and it will not help with chewing or stains. Skip it if the rental has a mudroom, and ask before laying anything down. More options are on our [rental cleanup gear page](/gear/rental-cleanup).
+
+{{pick:soggy-doggy-microfiber-doormat|For muddy entries: a washable mat|The maker lists a non-slip backing and says it is machine washable; it does not say how much mud it holds.|https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate}}
 
 ## What to write back
 
@@ -237,11 +241,7 @@ Dated, per-item photos from arrival and checkout are your strongest protection, 
 
 > Hi, we are bringing [number] dog(s) for [dates]. Please confirm in writing: (1) what the pet fee covers, including normal dog hair; (2) whether there is a separate fee for an undeclared pet and where it is written; (3) whether you keep move-in photos and will share them if a claim arises; (4) your process if there is a damage claim. Thank you.
 
-Next trip, add the photo steps to the [trip checklist](/tools/checklist). Your photos do the real work in a claim; gear does not change how one is decided.
-
-A mat is the one purchase that ties to this page, because it keeps mud off the host's floors, so there is less to photograph at checkout. Good for a muddy or wet dog; skip it if the rental has a mudroom or the host supplies one, and ask before laying it down. More options are on our [rental cleanup gear page](/gear/rental-cleanup).
-
-{{pick:soggy-doggy-microfiber-doormat|For muddy entries: a washable mat|The maker lists a non-slip backing and says it is machine washable; it does not say how much mud it holds.|https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate}}
+Next trip, add the photo steps to the [trip checklist](/tools/checklist).
 
 ## What we could not confirm
 

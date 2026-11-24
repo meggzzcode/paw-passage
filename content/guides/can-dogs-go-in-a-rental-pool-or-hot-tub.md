@@ -17,15 +17,15 @@ faqs:
   - q: Can dogs go in a vacation rental's pool?
     a: Where a manager's page addresses it, the answer in our sample is no. Seven of the 38 manager pages we read say something, and every one of those restricts dogs. Most pages say nothing, so message the host before you assume either way.
   - q: Can dogs go in a rental hot tub?
-    a: The managers who mention hot tubs or spas in our sample bar dogs from them. Separately, the CDC says hot tubs hold water in a 77 to 113 degree Fahrenheit range that favors Legionella growth, and Cornell's veterinary college calls heatstroke a medical emergency, so a hot tub looks like a poor place for a dog even where nobody has written a rule (that is our reading, not a source's rule).
+    a: The managers who mention hot tubs or spas in our sample bar dogs from them. Separately, the CDC advises keeping hot tub water at or below 104 degrees Fahrenheit to prevent scalding, and Cornell's veterinary college calls heatstroke a medical emergency, so a hot tub looks like a poor place for a dog even where nobody has written a rule (that is our reading, not a source's rule).
   - q: If the listing does not mention the pool and dogs, is it allowed?
-    a: Silence is not permission. A house rule can sit in the booking terms, a welcome packet or the manager's general policy page rather than the listing description, so ask for the answer in writing.
+    a: No. A house rule can sit in the booking terms, a welcome packet or the manager's general policy page rather than the listing description, so check all three before you assume.
   - q: What happens if my dog swims in a pool that bans dogs?
     a: One manager, Brindley Beach Vacations, says additional cleaning may be needed and a charge may apply. Airbnb says a guest can be responsible for damage caused by a pet, and a host can send a reimbursement request for damage, missing items or unexpected cleaning costs, with 24 hours to respond.
   - q: Why do rentals ban dogs from pools?
     a: Most manager pages give the rule without a reason. The CDC lists animals among the most common pool contaminants, and Brindley Beach names extra cleaning, which fits the pattern, but no manager we read explains its own rule beyond that.
   - q: Does a pet-friendly rental allow dogs in the pool?
-    a: Not automatically. A pet fee and a pet-friendly label do not change a pool rule; Surf or Sound Realty says even approved dogs are prohibited in the pool and spa. Ask the host in writing, and ask about the hot tub and the pool deck separately.
+    a: Not automatically. A pet fee and a pet-friendly label do not change a pool rule; Surf or Sound Realty says even approved dogs are prohibited in the pool and spa.
 relatedGuides:
   - airbnb-pet-damage-charge-after-checkout
   - how-vacation-rental-pet-fees-work
@@ -166,7 +166,7 @@ research:
   researchComplete: true
 ---
 
-Where a property manager has written a rule, the answer is no. We read 38 managers' public pet pages on 2026-11-18; the other 31 say nothing we could record about pools, and silence is not permission, so ask the host in writing before you pack the towels.
+Where a property manager has written a rule, the answer is no. We read 38 managers' public pet pages on 2026-11-18, and seven mention pools. The other 31 say nothing we could record, and silence is not permission: ask the host in writing before you pack the towels.
 
 That is a convenience sample of managers whose sites we could read, not a survey. The full tables are on the [pet policy dataset page](/data/pet-policies).
 
@@ -174,7 +174,7 @@ That is a convenience sample of managers whose sites we could read, not a survey
 
 - **Five of the seven quotes also name the hot tub or spa.** Twiddy's separate pet page names hot tubs as well.
 - **A pet fee does not change that.** In the seven quotes, the pool rule is a separate sentence from any fee, and Brindley Beach attaches a possible cleaning charge to it.
-- **If the listing is silent, ask.** Use the [message below](#what-to-ask-the-host) and keep the reply.
+- **A swim anyway can cost you.** Tell the host the same day; the [charge process](#what-if-your-dog-swims-anyway) is below.
 
 ## What the seven pages say
 
@@ -210,7 +210,7 @@ Our practical suggestions, not a source's rules: keep the dog on a lead near the
 
 ## What to ask the host
 
-A rule can sit in the booking terms, the welcome packet or the manager's general page instead of the listing text. [Airbnb](https://www.airbnb.com/help/article/2894)'s ground rules tell guests to follow the host's house rules, and [Vrbo](https://help.vrbo.com/articles/What-are-House-Rules) says travelers must agree to the house rules before they book and describes the pets rule as covering whether pets are allowed, how many, what type and any size restriction. Neither page names pools or hot tubs, so the pool line is up to the host. Ask before you pay, especially if the pool is why you are booking.
+A rule can sit in the booking terms, the welcome packet or the manager's general page instead of the listing text. [Airbnb](https://www.airbnb.com/help/article/2894)'s ground rules tell guests to follow the host's house rules, and [Vrbo](https://help.vrbo.com/articles/What-are-House-Rules) says travelers must agree to the house rules before they book and describes the pets rule as covering whether pets are allowed, how many, what type and any size restriction. Neither page names pools or hot tubs, so the pool line is up to the host.
 
 Copy, paste and edit:
 
@@ -228,7 +228,7 @@ When the pool is a no, dog water time moves to a lake, a hose or the rain, and t
 
 {{pick:soggy-doggy-super-shammy-towel|For a wet dog at the door|The maker lists a 31 x 14 in microfiber chenille towel with hand pockets, described as quick drying and odor free; the page gives no absorbency figure.|https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey}}
 
-Before you pay for a rental with water in the yard, run your dog through the [will my dog be accepted tool](/tools/will-my-dog-be-accepted), check the total with our [pet fees guide](/guides/how-vacation-rental-pet-fees-work), and add "pool and hot tub rule, confirmed in writing" to your [trip checklist](/tools/checklist). Our guide to [leaving a dog alone in a rental](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental) helps with the hours you spend away from the water.
+Before you pay for a rental with water in the yard, run your dog through the [will my dog be accepted tool](/tools/will-my-dog-be-accepted), check the total with our [pet fees guide](/guides/how-vacation-rental-pet-fees-work), and add the pool rule to your [trip checklist](/tools/checklist). Our guide to [leaving a dog alone in a rental](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental) helps with the hours you spend away from the water.
 
 ## What we could not confirm
 

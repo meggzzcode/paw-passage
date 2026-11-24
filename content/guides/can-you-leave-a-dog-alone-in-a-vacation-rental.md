@@ -13,7 +13,7 @@ readingMinutes: 11
 heroImage: guide-alone
 faqs:
   - q: Can you leave a dog alone in an Airbnb?
-    a: It depends on the listing. Airbnb's hosting guidance tells hosts to say in their house rules whether a pet may be left unattended, so read the rules and ask the host in writing.
+    a: It depends on the listing. Airbnb's hosting guidance tells hosts to say in their house rules whether a pet may be left unattended, so read the rules and ask.
   - q: What if my dog barks while I am out?
     a: Hosts and neighbors judge by what they hear, not by how long you were gone, and one guide notes barking can alert a nearby host. Booking.com's guide advises against leaving a dog that barks constantly when left alone, so if yours does that at home, do not plan to leave it in the rental. Ask before booking whether anyone lives nearby.
   - q: How long can a dog be left alone in a rental?
@@ -179,11 +179,11 @@ approvedOn: 2026-11-18
 ---
 
 
-The listing's house rules decide, not the platform: Airbnb and Vrbo both leave it to each host, and "pet-friendly" says nothing about it. Four of the 38 managers in our dataset wrote an alone-time rule, and no two match. Settle it before you pay, not on the afternoon of the dinner reservation.
+Airbnb and Vrbo leave this to each host, and "pet-friendly" says nothing about it. Four of the 38 managers in our dataset wrote an alone-time rule, and no two match: never, crated only, or crate recommended. Settle it before you pay, not on the afternoon of the dinner reservation.
 
 ## The short answer
 
-- **Only if the house rules or the host, in writing, say so.** [Airbnb](https://www.airbnb.com/resources/hosting-homes/a/what-you-need-to-know-about-hosting-pets-463)'s hosting guidance says hosts should state in their house rules whether it is okay to leave a pet unattended.
+- **Silence is not a yes.** [Airbnb](https://www.airbnb.com/resources/hosting-homes/a/what-you-need-to-know-about-hosting-pets-463)'s hosting guidance says hosts should state in their house rules whether it is okay to leave a pet unattended.
 - There is no standard number of safe hours; it depends on your dog, and the [ASPCA](https://www.aspca.org/pet-care/dog-care/common-dog-behavior-issues/separation-anxiety)'s test is whether you are back before your dog gets upset.
 - A new place changes things. A dog that is fine alone at home may howl or be destructive in unfamiliar surroundings ([Afar](https://www.afar.com/magazine/how-to-find-a-pet-friendly-airbnb-or-vacation-rental)).
 
@@ -191,7 +191,7 @@ A message you can copy is [below](#what-should-i-ask-the-host-before-booking).
 
 ## Is it allowed?
 
-Only if the listing's house rules, or the host in writing, say so. Airbnb says a listing's pet policy is in its House rules section, and Vrbo says guests must agree to the house rules before they book. If the rules are silent, you have an unanswered question, not permission ([Airbnb](https://www.airbnb.com/help/article/86), [Vrbo](https://help.vrbo.com/articles/What-are-House-Rules)). Neither platform sets a rule on leaving pets alone. Our [pet fees guide](/guides/how-vacation-rental-pet-fees-work) covers other differences between them.
+Check the House rules section: Airbnb says a listing's pet policy lives there, and Vrbo says guests must agree to the house rules before they book. If they are silent, you have an unanswered question, not permission ([Airbnb](https://www.airbnb.com/help/article/86), [Vrbo](https://help.vrbo.com/articles/What-are-House-Rules)). Neither platform sets a rule on leaving pets alone. Our [pet fees guide](/guides/how-vacation-rental-pet-fees-work) covers other differences between them.
 
 ## What do hosts actually write?
 
@@ -210,7 +210,7 @@ Wording varies, so read it literally: one host-forum thread ranges from "dogs mu
 - [Hearthside Cabin Rentals](https://hearthsidecabinrentals.com/frequently-asked-questions): pets must be crated when left alone.
 - [Bear Camp Cabins](https://www.bearcampcabins.com/blog/gatlinburg-cabins-pigeon-forge-pet-friendly-cabins): its pet policy says pets must be crated if left alone on the property, while another line on its page only recommends crating.
 
-So expect "never", "only crated", or "crate recommended". None of these pages mentions cameras. Our [rental checklist](/guides/pet-friendly-vacation-rental-checklist) lists the other questions to settle first.
+None of these pages mentions cameras. Our [rental checklist](/guides/pet-friendly-vacation-rental-checklist) lists the other questions to settle first.
 
 ## What about noise and neighbors?
 

@@ -29,9 +29,7 @@ Models, sizes and certifications change, so confirm the exact model and size wit
 
 ## Why restraint matters
 
-A loose dog is a risk to itself and everyone in the car. The [CDC](https://www.cdc.gov/healthy-pets/travel/index.html) says letting pets roam around the car or ride with their heads outside the window can be dangerous, and the ASPCA likewise advises against head-out-the-window riding ([ASPCA](https://www.aspca.org/pet-care/general-pet-care/travel-safety-tips)).
-
-CPS describes crash forces as mass multiplied by acceleration. For a harness the mass is your dog's weight; for a crate it is your dog's weight plus the crate's ([Center for Pet Safety](https://centerforpetsafety.org/cargo-area-connection-advisory/)). So the connection to the vehicle matters as much as the harness or crate. Settle the restraint before you pack for a cabin trip; our [pet-friendly rental checklist](/guides/pet-friendly-vacation-rental-checklist) and the [trip checklist tool](/tools/checklist) cover the stay.
+A loose dog is a risk to itself and everyone in the car: the [CDC](https://www.cdc.gov/healthy-pets/travel/index.html) and the ASPCA both warn against letting a dog roam the car or ride with its head out the window ([ASPCA](https://www.aspca.org/pet-care/general-pet-care/travel-safety-tips)). CPS describes crash forces as mass multiplied by acceleration, with the crate's weight added to the dog's, so the connection to the vehicle matters as much as the harness or crate ([Center for Pet Safety](https://centerforpetsafety.org/cargo-area-connection-advisory/)).
 
 ## What "crash-tested" does and does not mean
 
@@ -77,7 +75,7 @@ The button opens a listing for one size (Medium) when we checked on 2026-11-18. 
 
 **The button below opens the Intermediate size (under 70 lb), whose own CPS listing we did not read; we have not verified a link for the Large.** For a dog of 70 to 110 lb, search for "Lucky Duck Lucky Kennel Large" and confirm the title says Large before you buy. The Large weighs 45 lb empty (the Intermediate 38 lb), so check you can lift it and that it fits. It suits a dog that settles in a den; skip it if your dog panics when confined or your cargo anchors are not rated. Order the strap kit with either size, because it is part of the tested setup.
 
-{{pick:lucky-duck-lucky-kennel|Lucky Kennel Intermediate, for dogs under 70 lb|Opens the Intermediate (under 70 lb). Integrated tie-downs; CPS lists the Large with a 110 lb test dog, but we verified no Large link. Strap kit sold separately.|https://centerforpetsafety.org/lucky-duck-lucky-kennel-large/}}
+{{pick:lucky-duck-lucky-kennel|Crate for dogs under 70 lb: Lucky Kennel Intermediate|Opens the Intermediate (under 70 lb). Integrated tie-downs; CPS lists the Large with a 110 lb test dog, but we verified no Large link. Strap kit sold separately.|https://centerforpetsafety.org/lucky-duck-lucky-kennel-large/}}
 
 ### Small-dog picks
 

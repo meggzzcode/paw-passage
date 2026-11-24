@@ -247,9 +247,13 @@ The rules need a leash of 6 feet or shorter outside the cottage, cleanup bags, a
 
 {{pick:ruffwear-knot-a-leash|Fits the 6-foot leash rule|Maker lists 5 ft in Small (7 mm rope) and Large (11 mm rope), with an accessory loop for bags; no strength rating or weight guidance is stated, so check the size yourself.|https://ruffwear.com/products/knot-a-leash-dog-leash}}
 
-**Water for the outing.** The dog cannot wait behind, so water travels with you. For short walks, [Springland](https://springlandpets.com/products/22oz-classic-dog-travel-water-bottle)'s 22oz Classic is a squeeze-to-fill bottle with an attached bowl that works one-handed; the maker lists food-safe, BPA-free polypropylene with an aluminum carabiner and a leak-proof lock design, and the leak claim is the maker's. For a full hiking day with a thirsty or larger dog, [Ruffwear](https://ruffwear.com/products/quencher-dog-bowl)'s Quencher collapsible bowl holds 4.2 cups (1 L); the shell is water-resistant, not waterproof, and it is hand wash only. Pick one: the bottle for short outings, the Quencher for long ones, and neither if you already clip a bowl and bottle to your pack.
+**Water for the outing.** For short walks, [Springland](https://springlandpets.com/products/22oz-classic-dog-travel-water-bottle)'s 22oz Classic is a squeeze-to-fill bottle with an attached bowl that works one-handed; the maker lists food-safe, BPA-free polypropylene with an aluminum carabiner and a leak-proof lock design, and the leak claim is the maker's.
 
 {{pick:springland-22oz-original-travel-bottle|One-hand water for short outings|The maker describes a squeeze-to-fill bottle with an attached bowl, a leak-proof lock design and an aluminum carabiner; the 22oz size appears in the name only.|https://springlandpets.com/products/22oz-classic-dog-travel-water-bottle}}
+
+**For a full day on the trail.** With a thirsty or larger dog, [Ruffwear](https://ruffwear.com/products/quencher-dog-bowl)'s Quencher collapsible bowl holds 4.2 cups (1 L); the shell is water-resistant, not waterproof, and it is hand wash only. Pick one, the bottle for short outings and the Quencher for long ones, and neither if you already clip a bowl and bottle to your pack.
+
+{{pick:ruffwear-quencher-bowl|A packable trail bowl, 4.2 cups (1 L)|One size, Medium, with a 5.5 in opening. Hand wash only.|https://ruffwear.com/products/quencher-dog-bowl}}
 
 **Cleanup bags.** The rules require guests to clean up after their dogs, so carry bags on every outing; any roll will do and none needs a product pick.
 

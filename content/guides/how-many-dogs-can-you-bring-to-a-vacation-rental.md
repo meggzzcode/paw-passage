@@ -163,7 +163,7 @@ approvedBy: Paws & Passage Editors
 approvedOn: 2026-11-18
 ---
 
-Airbnb lets guests declare up to five pets and lets hosts cap them anywhere from one to five, so the listing's own pet rule is the only number that counts. Of the 38 managers we read on 2026-11-18 (a convenience sample), 22 cap pets at two, 2 allow three and 14 give no number. Bringing three? Message the host before you book.
+The listing's own pet rule is the only number that counts. Of the 38 managers we read on 2026-11-18 (a convenience sample), 22 cap pets at two, 2 allow three and 14 give no number. Bringing three? Message the host before you book.
 
 ## The short answer
 
@@ -214,11 +214,19 @@ Hosts and managers set weight limits, not platforms: 60 pounds per dog at Brindl
 Also check the layout before you pay:
 
 - **Two usable zones.** Bedroom count says little. Look for two resting spots away from the entrance, two feeding areas you can physically separate, and a bedroom door that latches. A studio may have no secure separation; a small one-bedroom with a door can work well.
-- **A way to split meals.** Ask the host about a closed bedroom door first; with one, you may need no hardware. In an open-plan cabin, a pressure-mounted gate splits a kitchen or hallway without tools: the MyPet Universal Petgate stands 26 inches high and fits openings of 26 to 42 inches, so measure first and skip it if your dogs clear 26 inches or you would use it at a stair top (the maker says never, on tension alone). Ask the host before using any hardware mount. If both dogs already rest in a crate at home, the iCrate folds flat for meals and rest time; skip it if either dog has never been crated, because a rental is the wrong place to start. If one dog is under 60 lb and rides in the back seat, the Happy Ride Collapsible Travel Crate does the car trip and the rental in one purchase, but skip it for a dog over 60 lb or a back seat that cannot take 27 x 19 x 28 inches. It contains a dog rather than restraining it and makes no crash-test claim. More options are on our [pens and gates page](/gear/pens-and-gates); the [pet-friendly rental checklist](/guides/pet-friendly-vacation-rental-checklist) covers the rest of the packing.
+- **A way to split meals.** Ask the host about a closed bedroom door first; with one, you may need no hardware. In an open-plan cabin, a gate or crate does the job:
+  - **A pressure-mounted gate** splits a kitchen or hallway without tools. The MyPet Universal Petgate stands 26 inches high and fits openings of 26 to 42 inches, so measure first. Skip it if your dogs clear 26 inches or you would use it at a stair top (the maker says never, on tension alone), and ask the host before using any hardware mount.
+  - **A folding crate** works if both dogs already rest in one at home: the iCrate folds flat for meals and rest time. Skip it if either dog has never been crated, because a rental is the wrong place to start.
+
+{{pick:north-states-mypet-universal-petgate|For splitting meals in an open plan|26 inches high, fits openings of 26 to 42 inches, with a no-tools pressure mount or an optional hardware mount; the maker says never to use a tension-held gate at the top of stairs.|https://northstatesind.com/north-states-mypet-universal-petgate/}}
+
+{{pick:midwest-icrate-dog-crate|For a dog already crate trained|Sizes from 18 to 48 inches, single or double door, a divider panel, a removable leak-proof pan and rubber floor feet; the maker says it folds flat.|https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/}}
+
+More options are on our [pens and gates page](/gear/pens-and-gates); the [pet-friendly rental checklist](/guides/pet-friendly-vacation-rental-checklist) covers the rest of the packing.
 
 ## What do extra dogs cost?
 
-The fee shape matters more than the headline number. [Airbnb](https://www.airbnb.com/help/article/3623) names four models: per booking, per night, per pet, per pet per night. The same pet can cost $60 or $200 depending on whether the fee is per booking, per night, per pet or tiered, so ask for the total for your dog count and dates (see the pet fees guide below). Also confirm whether the pet charge sits on top of the cleaning fee, whether tax is included, and whether a refundable deposit ties up your card. Our [pet fees guide](/guides/how-vacation-rental-pet-fees-work) prices all four units in more detail.
+The fee shape matters more than the headline number. [Airbnb](https://www.airbnb.com/help/article/3623) names four models: per booking, per night, per pet, per pet per night. The same pet can cost $60 or $200 depending on whether the fee is per booking, per night, per pet or tiered, so ask for the total for your dog count and dates. Also confirm whether the pet charge sits on top of the cleaning fee, whether tax is included, and whether a refundable deposit ties up your card. Our [pet fees guide](/guides/how-vacation-rental-pet-fees-work) prices all four units in more detail.
 
 Published figures as of 2026-11-18:
 
@@ -256,7 +264,7 @@ Before you book:
 
 ## What we could not confirm
 
-Confirmed by a source we cite: the two Airbnb numbers and the limits, weights, fees and penalty wording above. Two as the usual cap rests on 22 of 38 managers, a small convenience sample. Open questions:
+Confirmed by a source we cite: the two Airbnb numbers and the limits, weights, fees and penalty wording above. Two as the usual cap rests on a small convenience sample. Open questions:
 
 - **Airbnb host limit versus guest declaration.** Ask the host, then Airbnb: "Your listing limit is [number]. May we bring [number] dogs?"
 - **Arriving with more dogs than booked.** Ask the host and Airbnb what happens.

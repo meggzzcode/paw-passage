@@ -173,10 +173,11 @@ research:
 approvedBy: Paws & Passage Editors
 approvedOn: 2026-11-18
 ---
-Holiday terms sit in the rental policy, not the pet page: A Blue Ridge Vacation, for one, says "There is a 5-night minimum requirement for major holidays" and lists Christmas. Ask the manager for the minimum stay, the full total with one dog, the cancellation terms and whether this home takes dogs, in writing ([A Blue Ridge Vacation](https://www.ablueridgevacation.com/rental-and-cancellation-policies/)).
+Holiday terms sit in the rental policy, not the pet page: A Blue Ridge Vacation, for one, says "There is a 5-night minimum requirement for major holidays" and lists Christmas. ([A Blue Ridge Vacation](https://www.ablueridgevacation.com/rental-and-cancellation-policies/)).
 
 **The short answer:**
 
+- **Before you pay, get four answers in writing:** the minimum stay, the full total with one dog, the cancellation terms and whether this home takes dogs.
 - **The tree and what is under it cause most of the trouble.** The [ASPCA](https://www.aspca.org/pet-care/general-pet-care/holiday-safety-tips) says to secure the tree so it cannot tip, cover the tree water, and skip tinsel.
 - **Chocolate and xylitol are the foods to take seriously.** [Pet Poison Helpline](https://www.petpoisonhelpline.com/pet-safety-tips/winter-holiday-pet-poison-tips/) calls chocolate highly toxic to dogs and xylitol toxic to dogs.
 - **Find the emergency vet before you unpack.** Holiday hours vary, so call.
@@ -222,7 +223,7 @@ The practical version of PetMD's gate suggestion is a doorway gate on the tree r
 
 ## Gear for the evenings and the cold walks
 
-Four things do most of the work: a gate for the tree room, somewhere to settle, something to chew, and boots only if the paths are icy or salted. More gates and pens are on our [pens and gates gear page](/gear/pens-and-gates); for a coat or fleece see the [cold-weather gear guide](/guides/cold-weather-dog-gear-for-winter-cabin-trips).
+Four things do most of the work: a gate, a bed, a chew and, only if paths are icy, boots. More gates and pens are on our [pens and gates gear page](/gear/pens-and-gates); for a coat or fleece see the [cold-weather gear guide](/guides/cold-weather-dog-gear-for-winter-cabin-trips).
 
 **A gate for the tree room.** The North States MyPet Universal Petgate is 26 in high and adjusts to openings 26 to 42 in wide. It mounts by pressure with no tools, or with hardware to a solid surface, and the maker says never to use it at the top of a stairway when held only by tension ([North States](https://northstatesind.com/north-states-mypet-universal-petgate/)). Ask the host before using the hardware mount. Skip it if the room has no doorway to gate, or if your dog jumps 26 inches; a closed door or crate time works better then. It will not circle a tree, and the maker claims no containment strength.
 
@@ -234,11 +235,13 @@ Four things do most of the work: a gate for the tree room, somewhere to settle, 
 
 **Something to chew.** For a dog that settles with a stuffed toy while you cook, the [KONG](https://www.kongcompany.com/kong-classic/) Classic is a stuffable rubber toy in size bands by dog weight; the maker says supervised use only and that no toy is indestructible. Skip it for a dog that tears toys apart.
 
+{{pick:kong-classic|Supervised use only: a stuffed toy while you cook|Six size bands by dog weight, from XS (up to 5 lb) to XXL (85 lb and up); the maker says supervised use only and that no toy is indestructible.|https://www.kongcompany.com/kong-classic/}}
+
 **Boots, only for snow, ice or salted paths.** The [Ruffwear](https://ruffwear.com/products/polar-trex-winter-dog-boots) Polar Trex has a waterproof, windproof softshell upper and traction lugs for ice and snow, per the maker. It is sold as a set of two, not four, and sized by paw width from 1.50 to 3.25 in. The page gives no temperature rating or insulation figure. Skip them if your walks are clear and dry; try them indoors first.
 
 {{pick:ruffwear-polar-trex-boots|For snow, ice and salted paths: a set of two|The maker lists a waterproof, windproof softshell upper, traction lugs, a set of two, and sizing by paw width from 1.50 to 3.25 in; it gives no insulation rating or temperature range.|https://ruffwear.com/products/polar-trex-winter-dog-boots}}
 
-Check the size chart and return terms on each listing, and do not buy on a temperature rating: the maker pages we read state none.
+Check the size chart and return terms on each listing.
 
 ## Fire and cold
 

@@ -185,20 +185,13 @@ A cleaning fee charged to every guest is not a pet surcharge, and a cleaning cha
 
 ## How Airbnb and Vrbo display pet fees
 
-Airbnb and Vrbo describe fees on help pages written for hosts and travelers, not as records of what any listing will show.
+[Airbnb](https://www.airbnb.com/help/article/3623) shows a pet fee in the nightly rate and checkout total once you say how many pets are coming. [Vrbo](https://help.vrbo.com/articles/About-Price-Display) lists pets, cleaning and extra guests as standard fee categories, with mandatory and service fees in displayed prices and taxes by checkout.
 
-| | Airbnb | Vrbo |
-| --- | --- | --- |
-| Fee structures | Per booking, per night, per pet, or per pet per night | Pets, cleaning and extra guests are standard fee categories |
-| Where it shows | In the nightly rate and checkout total, after you say how many pets | In displayed prices with mandatory and service fees; taxes by checkout |
-
-Sources for this table: [Airbnb](https://www.airbnb.com/help/article/3623) column; [Vrbo](https://help.vrbo.com/articles/About-Price-Display) column, [Vrbo](https://help.vrbo.com/articles/How-do-I-manage-my-fees)
-
-Because Airbnb can fold a pet fee into the nightly rate, a displayed nightly number is not necessarily the billing unit: a hypothetical $100 per-stay fee shows as $50 a night over two nights and $20 over five. On [Airbnb](https://www.airbnb.com/help/article/86), tell the host about your pets even at a property that allows them; a pet-friendly label does not settle size, breed or count. On [Vrbo](https://help.vrbo.com/articles/How-do-I-manage-my-fees), hosts can send a payment request to add a charge to an existing reservation. Our [pet-friendly rental checklist](/guides/pet-friendly-vacation-rental-checklist) covers the rest of the booking questions.
+Because Airbnb can fold a pet fee into the nightly rate, a displayed nightly number is not necessarily the billing unit: a hypothetical $100 per-stay fee shows as $50 a night over two nights and $20 over five. On [Airbnb](https://www.airbnb.com/help/article/86), tell the host about your pets even at a property that allows them; a pet-friendly label does not settle size, breed or count. On [Vrbo](https://help.vrbo.com/articles/How-do-I-manage-my-fees), hosts can send a payment request to add a charge to an existing reservation.
 
 ## Compare the full stay, not the pet fee
 
-A no-pet-fee home can cost more overall: a rental with a $60 pet fee can still be cheaper than one with none if its rate or cleaning fee is lower. Compare with identical dates, people and pets, and check suitability, because a saving is no use if the dog is over the weight limit. To compare real listings side by side, [start a pet-friendly search on Vrbo](aff:vrbo) (affiliate link; we may earn a commission if you book, at no extra cost to you) and use its pet filter. See the [large-dog rental guide](/guides/vacation-rentals-that-welcome-large-dogs) and [what a dog really costs on a rental trip](/guides/what-a-dog-really-costs-on-a-vacation-rental).
+A no-pet-fee home can cost more overall: a rental with a $60 pet fee can still be cheaper than one with none if its rate or cleaning fee is lower. Compare with identical dates, people and pets, and check suitability, because a saving is no use if the dog is over the weight limit. To compare real listings side by side, [start a pet-friendly search on Vrbo](aff:vrbo) (affiliate link) and use its pet filter. See the [large-dog rental guide](/guides/vacation-rentals-that-welcome-large-dogs) and [what a dog really costs on a rental trip](/guides/what-a-dog-really-costs-on-a-vacation-rental).
 
 ## Service animals are not pets
 
@@ -226,8 +219,16 @@ Add the money tasks to the [trip checklist](/tools/checklist), then enter your e
 
 ## Protect your deposit
 
-A pet fee may not cover damage, so the deposit or a later claim is where a muddy floor or an accident can cost you. Nothing you pack guarantees a clean return, and the host decides what counts as damage, but each of these targets one usual cause, and photos when you leave are your best record. Browse our [rental cleanup gear page](/gear/rental-cleanup) for the rest.
+A pet fee may not cover damage, so the deposit or a later claim is where a muddy floor or an accident can cost you. Nothing you pack guarantees a clean return, and the host decides what counts as damage, but each of these targets one usual cause, and photos when you leave are your best record. More are on our [rental cleanup gear page](/gear/rental-cleanup).
 
-- **Puppy or senior dog:** the Pawtect Pads are machine-washable pads in four sizes from 18 x 24 in to 41 x 41 in, with a waterproof layer; pick the size for where the dog sleeps. Skip them for a house-trained dog that rarely has accidents.
-- **Muddy or snowy trip:** the Soggy Doggy Microfiber Doormat (Large 26 x 36 in or Extra Large 36 x 60 in, non-slip backing) catches wet paws at the door. Ask the host first whether a mat is welcome, and skip it for a dry beach stay.
-- **Wet dog before the sofa:** the Super Shammy Towel is one size, 31 x 14 in, so it suits a small to medium dog or a first pass on a big one. Skip it if you already pack a dog towel.
+**A muddy or snowy trip.** The Soggy Doggy Microfiber Doormat (Large 26 x 36 in or Extra Large 36 x 60 in, non-slip backing) catches wet paws at the door. Ask the host first whether a mat is welcome, and skip it for a dry beach stay.
+
+{{pick:soggy-doggy-microfiber-doormat|For muddy entries: a washable mat|The maker lists a non-slip backing and says it is machine washable; it does not say how much mud it holds.|https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate}}
+
+**A wet dog before the sofa.** The Super Shammy Towel is one size, 31 x 14 in, so it suits a small to medium dog or a first pass on a big one. Skip it if you already pack one.
+
+{{pick:soggy-doggy-super-shammy-towel|For a wet dog at the door|The maker lists a 31 x 14 in microfiber chenille towel with hand pockets, described as quick drying and odor free; the page gives no absorbency figure.|https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey}}
+
+**A puppy or senior dog.** The Pawtect Pads are machine-washable pads in four sizes from 18 x 24 in to 41 x 41 in, with a waterproof layer; pick the size for where the dog sleeps. Skip them for a house-trained dog that rarely has accidents.
+
+{{pick:pet-parents-pawtect-pads|For a dog that may leak|The maker lists machine-washable pads with a waterproof layer and a floor-gripping backing, two to a pack, in four sizes from 18 x 24 in to 41 x 41 in.|https://petparentsbrand.com/products/washable-puppy-pads}}

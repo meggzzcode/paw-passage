@@ -23,7 +23,7 @@ export const guide: Guide = {
 - **Three sizes:** the full kit at the cabin, a smaller grab kit in the car and a compact one on the trail.
 - **Ready-made option:** the only kit we researched is the Adventure Medical Kits Trail Dog (12 oz, per the maker), a trail pick; for the cabin, build up from the checklist, because we have not read a contents list for a cabin-size kit.
 - **Numbers to save before you leave:** ASPCA Poison Control 888-426-4435 and Pet Poison Helpline 855-764-7661 (a consultation fee may apply), plus an emergency clinic near the rental.
-- **Medication:** do not induce vomiting or give any medication unless a vet or poison control tells you to. Ask your vet before packing any, including human-use items in some ready-made kits.
+- **Medication:** do not induce vomiting or give any medication unless a vet or poison control tells you to. That includes human-use items in some ready-made kits.
 
 This page is general guidance from veterinary sources, not veterinary advice; your vet knows your dog's weight, age, conditions and medications. See also the [safety, ID and first aid category](/gear/safety-id-first-aid).
 
@@ -98,10 +98,10 @@ For a day hike from the cabin, the Adventure Medical Kits Trail Dog is the one r
 ## Add-ons worth carrying, and what to leave out
 
 - **A muzzle.** The [AVMA](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf) says to apply one if a pet threatens to bite, because pain and fear can make even the gentlest pet unpredictable. Gauze or a triangular bandage works as an improvised one; a purpose-made basket style that lets the dog pant and drink, fitted in advance, is another option. Read the maker's use limits, since a muzzle meant for short, supervised use is not one to leave on, and practice at home with treats.
-- **A digital thermometer.** Ask your vet which type suits your dog, how to use it and what readings should prompt a call.
+- **A digital thermometer.** Learn how to use it and what readings should prompt a call.
 - **An instant cold pack and a foil emergency blanket**, both in veterinary-written lists ([Small Door](https://www.smalldoorvet.com/learning-center/medical/pet-first-aid-kit/)).
-- **Styptic product for nail bleeding.** Several guides list it; one notes the product it names contains benzocaine and is for mild bleeding ([PetMD](https://www.petmd.com/general-health/must-have-items-for-pet-first-aid-kit)). Ask your vet which suits your dog.
-- **A tick remover.** Ask your vet about ticks at your destination.
+- **Styptic product for nail bleeding.** Several guides list it; one notes the product it names contains benzocaine and is for mild bleeding ([PetMD](https://www.petmd.com/general-health/must-have-items-for-pet-first-aid-kit)).
+- **A tick remover.** Check tick risk at your destination.
 
 **Leave out unless your vet says otherwise**
 
@@ -157,7 +157,7 @@ Add these to your [trip checklist](/tools/checklist) and the [packing list](/too
     },
     {
       q: "What should I put in a dog first-aid kit for hiking?",
-      a: "A compact kit on you or your dog's pack: bandage basics, saline, tweezers, tape, gloves and your contacts. The maker lists the 12 oz Trail Dog kit as built for hiking, camping and travel. Ask your vet about medications before you pack any.",
+      a: "A compact kit on you or your dog's pack: bandage basics, saline, tweezers, tape, gloves and your contacts. The maker lists the 12 oz Trail Dog kit as built for hiking, camping and travel.",
     },
     {
       q: "What do I do if my dog eats something poisonous on a trip?",

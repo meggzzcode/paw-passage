@@ -34,7 +34,7 @@ export const Route = createFileRoute("/gear/")({
       ...pageHead({
         title: resolved ? resolved.collection.heading : "Dog Travel Gear for Road Trips and Cabins",
         description:
-          "Dog travel gear for road trips, cabin stays, beach days and the trail. Browse by trip, category or dog, with the maker's details and sources.",
+          "Dog travel essentials for road trips, cabin stays and trail days: car safety, feeding, cooling and cleanup gear, picked by trip, category or dog.",
         // The canonical stays /gear, and a trip view is a convenience filter, not a page to index.
         path: "/gear",
         noindex: !hasGear() || !!resolved,

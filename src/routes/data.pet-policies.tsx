@@ -3,20 +3,22 @@ import { useState } from "react";
 import { managerPolicies, dataDate } from "@/content/manager-policies";
 import { policyStats, regionsOf } from "@/lib/policy-stats";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
-import { pageHead, jsonLd } from "@/lib/seo";
+import { pageHead, jsonLd, breadcrumbLd, absoluteUrl } from "@/lib/seo";
+import { site } from "@/config/site";
 
 const s = policyStats();
 
 export const Route = createFileRoute("/data/pet-policies")({
   head: () => {
     const h = pageHead({
-      title: `What ${s.total} rental managers say about dogs`,
-      description: `Pet policy data from ${s.total} rental managers' own pages: dog limits, weight limits, breed rules and pet fees, with a source link for each and a CSV.`,
+      title: `Dog Policies at ${s.total} Rental Managers: Fees and Limits`,
+      description: `We read ${s.total} vacation rental managers' own pet pages: ${s.zeroFee} charge no pet fee, ${s.weightStated} state a weight limit. Every row has a source link, plus a CSV.`,
       path: "/data/pet-policies",
     });
     return {
       ...h,
       scripts: [
+        breadcrumbLd([{ name: "Pet policy data", path: "/data/pet-policies" }]),
         {
           type: "application/ld+json",
           children: jsonLd({
@@ -25,14 +27,16 @@ export const Route = createFileRoute("/data/pet-policies")({
             name: `Pet policies of ${s.total} vacation rental managers (read ${dataDate})`,
             description:
               "Dog limits, weight limits, breed rules and pet fees as stated on each manager's own public pet policy page, with the source page for each row. A convenience sample, not a survey.",
+            url: absoluteUrl("/data/pet-policies"),
+            isAccessibleForFree: true,
             dateModified: dataDate,
             license: "https://creativecommons.org/licenses/by/4.0/",
-            creator: { "@type": "Organization", name: "Paws & Passage" },
+            creator: { "@type": "Organization", name: site.name },
             distribution: [
               {
                 "@type": "DataDownload",
                 encodingFormat: "text/csv",
-                contentUrl: "/pet-policies-38-managers.csv",
+                contentUrl: absoluteUrl("/pet-policies-38-managers.csv"),
               },
             ],
           }),
@@ -42,6 +46,14 @@ export const Route = createFileRoute("/data/pet-policies")({
   },
   component: DataPage,
 });
+
+const usedByGuides = [
+  ["how-vacation-rental-pet-fees-work", "How vacation rental pet fees work"],
+  ["vacation-rentals-with-no-pet-fee", "Vacation rentals with no pet fee"],
+  ["vacation-rentals-that-welcome-large-dogs", "Vacation rentals that welcome large dogs"],
+  ["how-many-dogs-can-you-bring-to-a-vacation-rental", "How many dogs can you bring to a rental?"],
+  ["pet-friendly-vacation-rental-checklist", "Pet-friendly vacation rental checklist"],
+] as const;
 
 const breedLabel = {
   named: "Names breeds",
@@ -214,6 +226,16 @@ function DataPage() {
           </Link>
           .
         </p>
+        <h2 className="mt-10 text-2xl">Guides that use this data</h2>
+        <ul className="mt-3 list-disc space-y-1.5 pl-6 text-sm">
+          {usedByGuides.map(([slug, label]) => (
+            <li key={slug}>
+              <Link to="/guides/$slug" params={{ slug }} className="text-primary underline">
+                {label}
+              </Link>
+            </li>
+          ))}
+        </ul>
         <p className="mt-6 text-sm">
           Put your own dog through it:{" "}
           <Link to="/tools/will-my-dog-be-accepted" className="text-primary underline">

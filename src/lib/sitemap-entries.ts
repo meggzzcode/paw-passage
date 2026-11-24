@@ -61,8 +61,12 @@ export function sitemapEntries(): { path: string; lastmod?: string }[] {
   }
   for (const g of allGuides.filter(isPublic))
     out.push({ path: `/guides/${g.slug}`, lastmod: g.lastReviewed });
+  // A stay gets a lastmod only when the page itself shows a real "Last verified" date (verified status + date); never invented.
   for (const s of liveStays)
-    out.push({ path: `/stays/${s.slug}`, ...(s.lastVerified ? { lastmod: s.lastVerified } : {}) });
+    out.push({
+      path: `/stays/${s.slug}`,
+      ...(s.status === "verified" && s.lastVerified ? { lastmod: s.lastVerified } : {}),
+    });
   return out;
 }
 

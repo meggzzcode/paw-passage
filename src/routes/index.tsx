@@ -31,7 +31,7 @@ export const Route = createFileRoute("/")({
     pageHead({
       title: `${site.name}: ${site.tagline}`,
       description: hasStays()
-        ? "Dog-friendly stays, researched travel guides and gear picks: fenced yards, large dogs, extra dogs, real pet fees and what to pack for the trip."
+        ? `Plan a trip with your dog: dog-friendly stays, what ${policyStats().total} rental managers' pet pages really say about fees and limits, and travel gear.`
         : "Researched guides and free tools for renting and traveling with your dog: pet fees, fenced yards, car safety and local rules, with every source listed.",
       path: "/",
     }),

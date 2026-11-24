@@ -2,30 +2,30 @@ import type { Guide } from "../types";
 
 export const guide: Guide = {
   slug: "dog-travel-first-aid-kit-guide",
-  title: "Dog First-Aid Kit for Trips and Cabin Stays: What to Carry",
-  seoTitle: "Dog Travel First-Aid Kit: AVMA Checklist",
+  title: "Dog First Aid Kit for Travel: What to Carry to a Cabin",
+  seoTitle: "Dog First Aid Kit for Travel: AVMA-Based Checklist",
   seoDescription:
-    "A travel kit built on the AVMA checklist, plus what ready-made kits usually lack: a digital thermometer, contact numbers and your dog's records.",
+    "Dog first aid kit for travel, built on the AVMA checklist, plus items worth adding to a ready-made kit: a thermometer, contacts and your dog's records.",
   dek: "Build or buy a kit around what veterinary sources say it should hold, then check the contents against your dog and your destination.",
   category: "Planning",
   states: [],
   status: "published",
   author: "Paws & Passage Editors",
   publishedOn: "2026-11-16",
-  lastReviewed: "2026-11-19",
+  lastReviewed: "2026-11-24",
   readingMinutes: 11,
   heroImage: "gear-first-aid",
   body: `## The short answer
 
-Your dog cuts a paw on a rock two miles from the cabin, and the nearest clinic is 40 minutes away. What is in your car decides the next hour.
+Your dog cuts a paw on a rock two miles from the cabin, and the nearest clinic is 40 minutes away. A dog first aid kit for travel decides the next hour, and this guide shows what to put in it, which size to carry where, and which ready-made kit to start from.
 
 - A kit buys time between something going wrong and a vet taking over. The AVMA says first aid is not a substitute for veterinary care, but it may save a pet's life until you can get them veterinary care. [[1]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf)
-- Build or buy around the AVMA checklist below, then add what ready-made kits usually lack: a digital thermometer, contact numbers and your dog's records.
+- Build or buy around the AVMA checklist below, then add the items a ready-made kit may not hold: a digital thermometer, contact numbers and your dog's records. One veterinary-written guide says many pre-made kits lack necessary items.
 - Save poison control numbers before you leave: ASPCA Poison Control 888-426-4435 and Pet Poison Helpline 855-764-7661. A consultation fee may apply. Do not induce vomiting unless a veterinarian or poison control tells you to.
 - Treat any medication in a kit, including human-use items in some ready-made kits, as a question for your vet before the trip.
 - Nothing here is veterinary advice. Your vet knows your dog's weight, age, conditions and medications.
 
-**What to buy:** a waterproof or zippered kit whose contents match the AVMA checklist below, sized to the trip (full at the cabin, smaller in the car or on the trail), plus a digital thermometer, a fitted muzzle and a card with your contacts. Skip human medications unless your vet says otherwise.
+**What to buy:** a waterproof or zippered kit whose contents match the AVMA checklist below, sized to the trip (full at the cabin, smaller in the car or on the trail), plus a digital thermometer, a fitted muzzle and a card with your contacts. For the trail, the Adventure Medical Kits Trail Dog (12 oz, per the maker) is the ready-made kit we feature; for the cabin, build up from the checklist. Skip human medications unless your vet says otherwise.
 
 ## How we built this list
 
@@ -78,11 +78,24 @@ Cabins add easy-to-miss risks: cleaners under sinks, rodent bait in outbuildings
 
 **Medications and records.** Bring regular medications in their original labeled containers, with a little extra if your vet agrees. Do not give human medication on your own initiative. Kit guides list human antihistamines, pain relievers and ointments and disagree on products and amounts. One says not to give human over-the-counter painkillers such as ibuprofen, acetaminophen or aspirin unless your vet says otherwise, and to check with a vet first, including about dosage, even for dog-specific prescription pain medication. [[6]](https://momgoescamping.com/dog-first-aid-kit/) We list no doses because the right answer depends on your dog.
 
-**Heat, cold and the outdoors.** The AVMA lists signs of heatstroke: rapid breathing or heavy panting, excessive drooling, weakness or drowsiness, confusion, vomiting or diarrhea, and abnormally colored, dry or sticky gums. Get to the closest vet hospital as soon as possible and start cooling right away. Move the dog out of direct sun, place towels wetted with room-temperature water around the neck, armpits and groin, and use a fan if available. Do not put the dog in a tub of cool or cold water, which can make the condition worse. [[1]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf)
+**Heat and the outdoors.** The AVMA lists signs of heatstroke: rapid breathing or heavy panting, excessive drooling, weakness or drowsiness, confusion, vomiting or diarrhea, and abnormally colored, dry or sticky gums. Get to the closest vet hospital as soon as possible and start cooling right away. Move the dog out of direct sun, place towels wetted with room-temperature water around the neck, armpits and groin, and use a fan if available. Do not put the dog in a tub of cool or cold water, which can make the condition worse. [[1]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf)
 
 ## Ready-made kit or build your own?
 
-A hybrid is often best: a ready-made kit gives you organized, often waterproof basics. One veterinary-written guide recommends buying a pre-made travel kit and supplementing it because many lack necessary items [[5]](https://www.preventivevet.com/how-to-make-a-pet-first-aid-kit), and a travel-blog guide notes a custom kit may suit a dog better. [[7]](https://puretravel.com/blog/2022/05/19/what-should-you-include-in-your-dogs-travel-first-aid-kit)
+A hybrid is often best: a ready-made kit gives you organized, often waterproof basics. One veterinary-written guide recommends buying a pre-made travel kit and supplementing it because many lack necessary items [[5]](https://www.preventivevet.com/how-to-make-a-pet-first-aid-kit), and a travel-blog guide notes a custom kit may suit a dog better. [[7]](https://puretravel.com/blog/2022/05/19/what-should-you-include-in-your-dogs-travel-first-aid-kit) The practical test: hold the contents list up against the AVMA checklist; if several lines are missing, supplement it or build your own.
+
+## Pick by situation
+
+| Your situation | What to prioritize | Kit type |
+| --- | --- | --- |
+| A week at a rural cabin, long drive | Full kit at the cabin, vet and poison numbers on the fridge | A larger ready-made kit or one you build from the AVMA checklist; we have not featured one because no maker contents list was read for it |
+| Day hikes from the cabin | Light kit on you or the dog's pack | A compact kit such as the 12 oz Trail Dog |
+| Road trip with stops, no hiking | A single zippered kit for the car | A zippered kit |
+| A dog that may bite when hurt or frightened | A fitted muzzle introduced well before the trip | A basket muzzle, if its sizing and use notes suit your dog |
+| Dog on regular medication | Original-labeled medication, records copy, your vet's advice | Any kit, plus your vet's guidance |
+| Two or more dogs | Duplicate key items | See our [two-dog guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental) |
+
+See also our [fenced-yard rental guide](/guides/vacation-rental-secure-fenced-yard).
 
 ## Buying checklist
 
@@ -100,34 +113,17 @@ Hold any ready-made kit up against this list. Product details below come from ea
 
 The same kit rarely suits all three layers, so match the size to where it will sit. For a week at a cabin, the full kit should hold everything on the AVMA list in one place where every adult can find it. A ready-made kit is a good base for that, topped up with the gaps named above: a thermometer, a flashlight, contacts and your dog's records. For the car, a smaller zippered or waterproof kit that holds bandage basics, tape, scissors, gloves and a cold pack is enough for a road trip with stops. Whatever you buy, hold its contents list up against the buying checklist, not against the piece count.
 
-For a trail layer, Adventure Medical Kits' Trail Dog kit is built for exactly that job. The maker lists a weight of 12 oz and a size of 7.5 x 5.3 x 1.5 inches, so it fits a day pack. Its contents include two sterile gauze dressings, two non-adherent pads, a 2 inch roller gauze, a 2 inch self-adhering elastic bandage and a triangular bandage, plus a 10 cc wound irrigation tool, splinter and tick forceps, 100 ml of saline and a Pet First Aid Handbook, all in a waterproof Dryflex bag. [[8]](https://www.adventuremedicalkits.com/products/adventure-dog-medical-kit-trail-dog) The maker also says the triangular bandage can serve as a muzzle during treatment, which matches the AVMA's note on gauze. That is a lot of the AVMA's wound-care side in 12 oz. The trade-off is fewer items than a cabin kit, so for a multi-dog trip or a week away, add to it or carry a second one. It also lists diphenhydramine, hydrogen peroxide and triple antibiotic ointment, so take that list to your vet before the trip and do not use any on your own judgment.
+For a day hike from the cabin, the Adventure Medical Kits Trail Dog kit is the ready-made one we feature, because it is built for a pack. The maker lists a weight of 12 oz and a size of 7.5 x 5.3 x 1.5 inches, packed in a waterproof Dryflex bag with a Pet First Aid Handbook. [[8]](https://www.adventuremedicalkits.com/products/adventure-dog-medical-kit-trail-dog) The maker also says the triangular bandage can serve as a muzzle during treatment, which matches the AVMA's note on gauze. It covers part of the AVMA's wound-care list in 12 oz; the card below lists its contents, so compare them with the checklist above. It is for the owner with one dog and a trail day ahead. Skip it as your only kit for a week at the cabin or a multi-dog trip, where you will want more supplies. It also lists diphenhydramine, hydrogen peroxide and triple antibiotic packets, so take that list to your vet before the trip and do not use any on your own judgment; if you want a kit with no medications, set them aside with your vet's advice. This is the one to buy first if your trips involve trails and you want a compact base to build on.
 
-{{pick:amk-trail-dog|For the trail layer|The maker lists a 12 oz weight, a 10 cc irrigation tool, tick forceps, saline, gauze and bandages and a Pet First Aid Handbook in a waterproof Dryflex bag.|https://www.adventuremedicalkits.com/products/adventure-dog-medical-kit-trail-dog}}
-
-Mud, pond water and trail dirt are the other thing a trail or cabin day brings back. Adventure Dog Wipes are rinse-free wipes, eight to a pack and 8 x 8 inches each, which the maker describes as for wiping dirt and odour off a dog on the trail, at the park or at home, with aloe, rosemary and witch hazel in the listing. [[9]](https://adventuremedicalkits.com/products/adventure-dog-wipes-pkg-8) They are a cleanup item, not wound care, and nothing on the page says they treat a cut, so keep the saline and gauze for wounds. Where they earn a spot is the car and the cabin porch, where a wipe-down before the dog comes inside saves a towel and the host's floor.
-
-{{pick:adventure-medical-kits-dog-wipes|Wipe-down after the trail|The maker lists eight 8 x 8 inch rinse-free wipes with aloe, rosemary and witch hazel for wiping dirt and odour off a dog, with a 60-day satisfaction guarantee.|https://adventuremedicalkits.com/products/adventure-dog-wipes-pkg-8}}
+{{pick:amk-trail-dog|Pack-sized trail kit: 12 oz, waterproof bag|The maker lists a 12 oz weight, a 10 cc irrigation tool, tick forceps, saline, gauze and bandages and a Pet First Aid Handbook in a waterproof Dryflex bag.|https://www.adventuremedicalkits.com/products/adventure-dog-medical-kit-trail-dog}}
 
 ## Add-on: a muzzle
 
 The AVMA tells owners to apply a muzzle if a pet threatens to bite, because pain and fear can make even the gentlest pet unpredictable. [[1]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf) Gauze or a triangular bandage can serve as an improvised muzzle; a purpose-made one fitted in advance is another option. Look for a basket style that lets the dog pant and drink, a stated sizing method and the maker's own use limits, and read those limits before you buy: a muzzle meant only for short, supervised use is not one to leave on. Do not muzzle a vomiting pet. Practice at home with treats long before you need it.
 
-## Pick by situation
-
-| Your situation | What to prioritize | Kit type |
-| --- | --- | --- |
-| A week at a rural cabin, long drive | Full kit at the cabin, vet and poison numbers on the fridge | A larger ready-made or built kit, plus your own thermometer, records and contacts |
-| Day hikes from the cabin | Light kit on you or the dog's pack | A compact kit such as the 12 oz Trail Dog |
-| Road trip with stops, no hiking | A single zippered kit for the car | A zippered kit |
-| A dog that may bite when hurt or frightened | A fitted muzzle introduced well before the trip | A basket muzzle, if its sizing and use notes suit your dog |
-| Dog on regular medication | Original-labeled medication, records copy, your vet's advice | Any kit, plus your vet's guidance |
-| Two or more dogs | Duplicate key items | See our [two-dog guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental) |
-
-See also our [fenced-yard rental guide](/guides/vacation-rental-secure-fenced-yard).
-
 ## Add-ons worth carrying, and what to leave out
 
-- **A thermometer you know how to use** (ask your vet how and what readings should prompt a call).
+- **A digital thermometer.** The AVMA checklist lists one; ask your vet which type suits your dog, how to use it and what readings should prompt a call.
 - **An instant cold pack and a foil emergency blanket**, both in veterinary-written lists. [[4]](https://www.smalldoorvet.com/learning-center/medical/pet-first-aid-kit/)
 - **Styptic product for nail bleeding.** Several guides list it; one notes the product it names contains benzocaine and is for mild bleeding. [[3]](https://www.petmd.com/general-health/must-have-items-for-pet-first-aid-kit) Ask your vet which product suits your dog.
 - **A tick remover.** Ask your vet about tick removal and tick-borne illness at your destination.
@@ -139,6 +135,12 @@ See also our [fenced-yard rental guide](/guides/vacation-rental-secure-fenced-ya
 - Antibiotic ointment you have not cleared with your vet. One guide warns triple antibiotic ointment should not be ingested by cats, because its polymyxin B can cause anaphylaxis in cats, and says not to let a cat lick the site; ask your vet what applies to your dog. [[5]](https://www.preventivevet.com/how-to-make-a-pet-first-aid-kit)
 - Anything you do not know how to use. A poorly applied bandage or splint can do more harm than good, and the AVMA says to leave the step to the vet if you are uncertain. [[1]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf)
 
+## After the trail (not first aid)
+
+This is a cleanup item, not part of the kit. Mud, pond water and trail dirt are what a trail or cabin day brings back. Adventure Dog Wipes are rinse-free wipes, eight to a pack and 8 x 8 inches each, which the maker describes as for wiping dirt and odour off a dog on the trail, at the park or at home, with aloe, rosemary and witch hazel in the listing. [[9]](https://adventuremedicalkits.com/products/adventure-dog-wipes-pkg-8) Nothing on the page says they treat a cut, so keep the saline and gauze for wounds. Skip them if a towel at the door does the job for your dog. Where they earn a spot is the car and the cabin porch, where a wipe-down before the dog comes inside saves a towel and the host's floor. This is the one to add after the kit, not instead of it.
+
+{{pick:adventure-medical-kits-dog-wipes|Eight 8 x 8 in rinse-free wipes|The maker lists eight 8 x 8 inch rinse-free wipes with aloe, rosemary and witch hazel for wiping dirt and odour off a dog, with a 60-day satisfaction guarantee.|https://adventuremedicalkits.com/products/adventure-dog-wipes-pkg-8}}
+
 ## Learn the basics before you need them
 
 The AVMA brochure also covers choking and rescue breathing; read it before the trip. [[1]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf) A few points:
@@ -148,7 +150,7 @@ The AVMA brochure also covers choking and rescue breathing; read it before the t
 - Object in a wound: do not try to remove it. [[1]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf)
 - Transport: keep an injured dog confined to a small area; use a board or blanket as a stretcher for a large dog. [[1]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf)
 
-A first-aid class taught by a veterinary professional teaches the practical parts better than any article.
+A first-aid class taught by a veterinary professional teaches the practical parts better than any article. For heat on a summer trip, see our guide to [keeping a dog cool](/guides/keep-a-dog-cool-on-a-summer-trip), and for a trail day, our [dog hiking gear guide](/guides/dog-hiking-gear-for-a-cabin-vacation).
 
 ## Keep the kit current
 
@@ -173,6 +175,7 @@ Check the kit before every trip and replace anything used, damaged or past its e
 1. **Free first:** save the vet, emergency clinic and both poison control numbers, and copy your dog's records.
 2. **A kit sized to the trip:** full at the cabin, smaller for the car, compact for the trail. Check it against the buying checklist above.
 3. **Then the gaps:** a digital thermometer, a flashlight, a contact card and, if your dog may need one, a fitted muzzle.
+4. **After the trail:** dog wipes if the porch needs them; they are cleanup, not first aid.
 
 Add these to your [trip checklist](/tools/checklist) and the [packing list](/tools/packing-list) so the kit gets packed with everything else, and see the [cabin packing list](/guides/dog-friendly-cabin-packing-list) for the rest of the bag.`,
   faqs: [
@@ -194,7 +197,15 @@ Add these to your [trip checklist](/tools/checklist) and the [packing list](/too
     },
     {
       q: "Is a ready-made dog first-aid kit enough?",
-      a: "A useful start, not a complete kit. One veterinary-written guide recommends supplementing pre-made kits because many lack necessary items. Compare the contents to the AVMA checklist and add contacts, records and a thermometer.",
+      a: "A useful start, not a complete kit. One veterinary-written guide recommends supplementing pre-made kits because many lack necessary items. Compare the contents to the AVMA checklist and add contacts, records and a thermometer. Check the contents list, not the piece count.",
+    },
+    {
+      q: "What should I put in a dog first-aid kit for hiking?",
+      a: "A compact kit on you or your dog's pack: bandage basics, saline, tweezers, tape, gloves and your contacts. The maker lists the 12 oz Trail Dog kit as built for hiking, camping and travel. Ask your vet about medications before you pack any.",
+    },
+    {
+      q: "What do I do if my dog eats something poisonous on a trip?",
+      a: "Call your vet, a local emergency hospital or a poison hotline right away: ASPCA Poison Control 888-426-4435 or Pet Poison Helpline 855-764-7661; a fee may apply. Do not induce vomiting unless a veterinarian or poison control tells you to.",
     },
     {
       q: "Should I muzzle an injured dog?",
@@ -209,6 +220,7 @@ Add these to your [trip checklist](/tools/checklist) and the [packing list](/too
         "The maker lists a stated weight of 12 oz, a waterproof bag, bandaging supplies, an irrigation tool, saline, tick forceps and a pet first aid handbook, which suits a small pack.",
       watchOuts: [
         "Lists diphenhydramine and hydrogen peroxide. The AVMA says not to give medication or induce vomiting unless directed by a vet or poison control.",
+        "Skip it if you want a kit with no medications; it lists diphenhydramine, hydrogen peroxide and triple antibiotic packets, which the AVMA says not to use without a vet or poison control direction.",
         "Fewer items than larger kits, with no thermometer, muzzle or flashlight listed.",
         "Quantities are small, so it may run out quickly with more than one dog.",
       ],
@@ -230,6 +242,8 @@ Add these to your [trip checklist](/tools/checklist) and the [packing list](/too
     "pet-friendly-vacation-rental-checklist",
     "vacation-rental-secure-fenced-yard",
     "how-many-dogs-can-you-bring-to-a-vacation-rental",
+    "keep-a-dog-cool-on-a-summer-trip",
+    "dog-hiking-gear-for-a-cabin-vacation",
   ],
   relatedProducts: ["amk-trail-dog", "adventure-medical-kits-dog-wipes"],
   relatedTools: ["checklist"],

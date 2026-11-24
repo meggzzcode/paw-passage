@@ -406,7 +406,7 @@ function Home() {
               to="/editorial-standards"
               className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline"
             >
-              How we verify stays <ArrowRight className="size-4" />
+              How we research stays <ArrowRight className="size-4" />
             </Link>
           </div>
           <dl className="grid gap-4 sm:grid-cols-2">
@@ -417,7 +417,6 @@ function Home() {
               ],
               ["Fees, decoded", "Per stay, per night or per dog: we record which."],
               ["Size and breed", "Weight limits and breed rules stated plainly."],
-              ["Unknown means unknown", 'Anything unconfirmed is marked "not confirmed".'],
             ].map(([t, d]) => (
               <div key={t} className="rounded-lg bg-background p-5 shadow-card">
                 <dt className="font-display text-lg">{t}</dt>
@@ -579,7 +578,8 @@ function Home() {
             <p className="eyebrow">For hosts</p>
             <h2 className="mt-2 text-3xl">Run a genuinely dog-friendly stay?</h2>
             <p className="mt-2 text-muted-foreground">
-              We list properties whose pet policies we can verify. There's no cost to be considered.
+              We list properties whose pet policies we have read from public pages. There's no cost
+              to be considered.
             </p>
           </div>
           <div className="md:text-right">

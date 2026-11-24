@@ -3,6 +3,7 @@ import { marked, type Tokens, type Token, type TokensList, type Renderer } from 
 import { cn } from "@/lib/utils";
 import { getApprovedLink } from "@/content/affiliates";
 import { trackProductClick } from "@/lib/analytics";
+import { AFFILIATE_BUY_LABEL, AFFILIATE_BOOK_LABEL } from "@/lib/disclosure";
 import { getProduct } from "@/content/gear";
 import { resolveProductLink } from "@/content/gear-links";
 import { isMonetized } from "@/content/affiliate-usage";
@@ -107,7 +108,7 @@ marked.use({
 <div class="mt-3">${productSpecCardHtml(product)}</div>
 <p class="mt-2 text-sm text-muted-foreground">${escapeHtml(product.summary)}</p>${t.note ? `\n<p class="mt-2 text-sm"><span class="font-medium">Why we picked it:</span> ${escapeHtml(t.note)}${t.sourceUrl ? ` <a href="${escapeHtml(t.sourceUrl)}" target="_blank" rel="noopener noreferrer" class="underline">Source</a>` : ""}</p>` : ""}
 <p class="mt-4 flex flex-wrap items-center gap-4"><a${attrs} href="${escapeHtml(link.url)}" target="_blank" rel="${escapeHtml(link.rel)}" class="inline-flex h-11 items-center rounded-full bg-terracotta-button px-6 text-base font-semibold text-terracotta-foreground hover:brightness-95" style="text-decoration:none;color:#fff">${escapeHtml(link.label)}</a>${cat ? `<a href="/gear/${escapeHtml(cat)}#${escapeHtml(product.id)}" class="text-sm underline">Details and specs</a>` : ""}</p>
-<p class="mt-3 text-xs text-muted-foreground">Check the current price on the listing before you buy.</p>
+${link.kind === "affiliate" ? `<p class="mt-3 text-xs text-foreground/75" data-affiliate-label>${escapeHtml(/vrbo/i.test(link.network ?? "") ? AFFILIATE_BOOK_LABEL : AFFILIATE_BUY_LABEL)}</p>\n` : ""}
 </aside>
 `;
       },

@@ -14,7 +14,7 @@ export const Route = createFileRoute("/list-your-property")({
   component: () => (
     <InfoPage
       title="List your property"
-      intro="We feature stays whose pet policies we can verify. Here's what helps us review yours quickly."
+      intro="We feature stays whose pet policies we have read from public pages. Here's what helps us review yours quickly."
       body={`## What we look for
 
 Stays in or near our launch regions (the North Georgia mountains and coastal California) that are honestly set up for dogs. A fenced yard is great but not required; clarity is.

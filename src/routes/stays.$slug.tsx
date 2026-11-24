@@ -207,10 +207,6 @@ function StayPage() {
           {s.amenityGroups.length > 0 && (
             <>
               <h2 className="mt-12 text-2xl">What is included</h2>
-              <p className="mt-1 text-xs text-muted-foreground">
-                As listed on the booking page. If a feature matters to you, confirm it with the
-                host.
-              </p>
               <div className="mt-4 grid gap-6 sm:grid-cols-2">
                 {s.amenityGroups.map((g) => (
                   <div key={g.title}>

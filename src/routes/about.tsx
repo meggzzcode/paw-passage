@@ -26,7 +26,7 @@ Paws & Passage is an independent publication launched in November 2026, so it is
 ## What we do
 
 - **Guides** that answer the questions other articles skip. We research what already ranks, find the gaps, and check facts against official sources: park agencies, city beach rules, veterinary organizations. Sources are listed at the end of each guide, with the date we checked them.
-- **Tools** that make the awkward part of booking easier, like writing a host a precise list of questions, or working out what a stay really costs once per-dog fees are added.
+- **Tools** that make the awkward part of booking easier, like a packing list and a checklist of what to ask before you book.
 - **Stays**, with the pet policy, fees and fencing details we could find on each public listing. Anything we could not find is marked Not confirmed, and we suggest you ask the host any additional questions before you book.
 
 ## What we don't do

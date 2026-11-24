@@ -25,7 +25,7 @@ We are not a booking agent and are not party to any booking you make with a host
 
 ## Tools
 
-Our calculators and generators, including the stay cost calculator, run in your browser and provide estimates and suggestions. Check totals against the provider's checkout before paying.
+Our tools, such as the packing list and checklist, run in your browser and provide suggestions only. Check details with the provider before you book or pay.
 
 ## Affiliate links and third-party sites
 

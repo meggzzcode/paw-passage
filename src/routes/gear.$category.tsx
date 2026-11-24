@@ -77,7 +77,10 @@ function GearCategoryPage() {
       <header className="mt-6 max-w-3xl">
         <h1 className="text-4xl md:text-5xl">{c.name}</h1>
         <p className="mt-3 text-muted-foreground">{c.intro}</p>
-        <p className="mt-3 text-sm text-muted-foreground">No prices, no ratings.</p>
+        <p className="mt-3 text-sm text-muted-foreground">
+          Specs are as each maker's page read on the date shown. Sizes, models and availability
+          change; confirm on the seller's page.
+        </p>
       </header>
       {dogType && dogTypeIsLive(dogType) && (
         <p className="mt-4 text-sm">

@@ -65,8 +65,7 @@ export function SiteFooter() {
             Paws <span className="text-terracotta">&amp;</span> Passage
           </p>
           <p className="mt-3 max-w-xs text-sm text-primary-foreground/75">
-            {site.tagline}. Practical, researched advice for traveling with dogs, without fake
-            reviews or invented listings.
+            {site.tagline}. Practical, researched advice for traveling with dogs.
           </p>
           {site.pinterestUrl && (
             <a
@@ -107,20 +106,19 @@ export function SiteFooter() {
             {hasApprovedAffiliates() && (
               <>
                 {" "}
-                Some links may be affiliate links. See our{" "}
+                Some links on this site are affiliate links, and we may earn a commission.{" "}
                 <Link to="/affiliate-disclosure" className="underline">
-                  disclosure
+                  How we earn money
                 </Link>
                 .
               </>
             )}
           </p>
           {affiliateLinks.some((l) => l.approved && /vrbo/i.test(l.network)) && (
-            <p className="mt-1 text-xs text-muted-foreground">
+            <p className="text-primary-foreground/75">
               VRBO is a trademark or registered trademark of Expedia, Inc.
             </p>
           )}
-          <p>Always confirm pet policies with the host before booking.</p>
         </div>
       </div>
     </footer>

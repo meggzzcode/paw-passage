@@ -34,6 +34,7 @@ import { getProduct } from "@/content/gear";
 import { liveCategoryFor } from "@/content/gear-hub";
 import { allGuides } from "@/content/guides";
 import { getApprovedLink, isAmazon, AMAZON_DISCLOSURE } from "@/content/affiliates";
+import { AFFILIATE_BUY_LABEL, AFFILIATE_LABEL_CLASS } from "@/lib/disclosure";
 import { productButton, productLinkId } from "@/content/affiliate-usage";
 import { packPhoto, packPhotoCredits } from "@/lib/pack-images";
 import { trackProductClick, trackTool, trackToolOnce } from "@/lib/analytics";
@@ -240,9 +241,8 @@ export function PackingBuilder() {
       <div>
         {approved.length > 0 && (
           <p className="mb-6 rounded-lg bg-muted p-4 text-sm text-muted-foreground">
-            Some links below are affiliate links. If you buy through them we may earn a commission
-            at no extra cost to you. It never changes which products we list.{" "}
-            {approved.some(isAmazon) && AMAZON_DISCLOSURE}{" "}
+            This page has affiliate links. If you buy through them we may earn a commission, at no
+            extra cost to you. {approved.some(isAmazon) && AMAZON_DISCLOSURE}{" "}
             <Link to="/affiliate-disclosure" className="text-primary underline">
               How we earn money
             </Link>
@@ -460,26 +460,31 @@ function Popover({
                 <p className="font-medium leading-tight">{productTitle(p)}</p>
                 <p className="text-muted-foreground">{p.summary}</p>
                 {btn && (
-                  <a
-                    href={btn.url}
-                    target="_blank"
-                    rel={aff ? "sponsored nofollow noopener" : "nofollow noopener"}
-                    onClick={() =>
-                      trackProductClick({
-                        product: p.id,
-                        partner: aff ? btn.network : "maker website",
-                        url: btn.url,
-                        page: pathname,
-                      })
-                    }
-                    className={
-                      aff
-                        ? "mt-1 inline-flex h-9 items-center rounded-full bg-terracotta-button px-4 font-medium text-terracotta-foreground hover:brightness-95"
-                        : "mt-1 inline-flex h-9 items-center rounded-full border border-border px-4 hover:bg-muted"
-                    }
-                  >
-                    {btn.label}
-                  </a>
+                  <>
+                    <a
+                      href={btn.url}
+                      target="_blank"
+                      rel={aff ? "sponsored nofollow noopener" : "nofollow noopener"}
+                      onClick={() =>
+                        trackProductClick({
+                          product: p.id,
+                          partner: aff ? btn.network : "maker website",
+                          url: btn.url,
+                          page: pathname,
+                        })
+                      }
+                      className={
+                        aff
+                          ? "mt-1 inline-flex h-9 items-center rounded-full bg-terracotta-button px-4 font-medium text-terracotta-foreground hover:brightness-95"
+                          : "mt-1 inline-flex h-9 items-center rounded-full border border-border px-4 hover:bg-muted"
+                      }
+                    >
+                      {btn.label}
+                    </a>
+                    {aff && (
+                      <p className={`mt-1 ${AFFILIATE_LABEL_CLASS}`}>{AFFILIATE_BUY_LABEL}</p>
+                    )}
+                  </>
                 )}
               </div>
             );

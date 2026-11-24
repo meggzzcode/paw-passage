@@ -19,8 +19,8 @@ export const Route = createFileRoute("/affiliate-disclosure")({
 ## How this works in practice
 
 - A link appears only when we have an approved arrangement with that company. Booking buttons appear on a stay page only where we hold an approved link for that listing.
-- Any article that contains an affiliate link shows a notice at the top, and every affiliate link is marked with the \`sponsored\` attribute for search engines.
-- Where a link goes to Amazon, the page also shows Amazon's required statement.
+- Any guide, gear or packing page that contains an affiliate link shows a notice at the top. Every affiliate buy or booking button also carries its own label ("Affiliate link · We may earn a commission if you buy", or "if you book" for stays), and every affiliate link is marked with the \`sponsored\` attribute for search engines.
+- Where a link goes to Amazon, the page also shows Amazon's required statement. As an Amazon Associate I earn from qualifying purchases.
 - We do not show prices or star ratings for products, because they change and we have not tested the products. We choose products using the maker's published specifications and independent standards, and each article says so. See our [methodology](/methodology). Where we have no approved affiliate arrangement, we link to the manufacturer, or to a plain retailer link marked \`nofollow\`.
 - Commissions never decide whether a stay or product is listed, what we say about it, or which details we report. A stay or product with no affiliate link is covered in the same way as one with a link.
 
@@ -30,7 +30,7 @@ Some pages may show a map of places to stay from our booking partner Stay22. We 
 
 ## Sponsored listings
 
-Occasionally a host may pay for extra visibility. Sponsored stays are always labeled **"Sponsored"**, are held to the same standards, and their pet-policy details are reported exactly as for any other stay.
+Occasionally a host may pay for extra visibility. "Sponsored" always means a host paid for placement; a commission link is called an "affiliate link". Sponsored stays are always labeled **"Sponsored"**, are held to the same standards, and their pet-policy details are reported exactly as for any other stay.
 
 ## Questions
 

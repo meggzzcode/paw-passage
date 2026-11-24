@@ -6,6 +6,7 @@ import { guidePickFor } from "@/content/gear-hub";
 import { getGuide } from "@/content/guides";
 import { isPublic } from "@/content/guides";
 import { ProductSpecCard } from "@/components/site/ProductSpecCard";
+import { AFFILIATE_BUY_LABEL, AFFILIATE_LABEL_CLASS } from "@/lib/disclosure";
 import { trackProductClick } from "@/lib/analytics";
 
 /**
@@ -18,9 +19,8 @@ export function GearDisclosure({ products }: { products: Product[] }) {
   const anyAmazon = aff.some((l) => /amazon/i.test(l?.network ?? ""));
   return (
     <p className="mt-6 rounded-lg bg-muted p-4 text-sm text-muted-foreground">
-      Some links below are affiliate links. If you buy through them we may earn a commission at no
-      extra cost to you. It never changes which products we list or what we say about them.{" "}
-      {anyAmazon && AMAZON_DISCLOSURE}{" "}
+      This page has affiliate links. If you buy through them we may earn a commission, at no extra
+      cost to you. {anyAmazon && AMAZON_DISCLOSURE}{" "}
       <a className="underline" href="/affiliate-disclosure">
         Affiliate disclosure
       </a>
@@ -74,9 +74,8 @@ export function GearProductCard({ product }: { product: Product }) {
         >
           {product.specSource.title}
         </a>{" "}
-        ({product.specSource.publisher}, accessed {product.specSource.accessedOn}). Last verified{" "}
-        {product.lastVerified ?? product.specSource.accessedOn}. Sizes, models and availability
-        change: confirm on the seller's page.
+        ({product.specSource.publisher}), read{" "}
+        {product.lastVerified ?? product.specSource.accessedOn}.
       </p>
       {related.length > 0 && (
         <p className="mt-3 text-sm">
@@ -119,7 +118,7 @@ export function GearProductCard({ product }: { product: Product }) {
             {link.label}
           </a>
           {link.kind === "affiliate" && (
-            <span className="text-xs text-muted-foreground">Affiliate link</span>
+            <span className={AFFILIATE_LABEL_CLASS}>{AFFILIATE_BUY_LABEL}</span>
           )}
           {product.alternativeRetailer && (
             <span className="text-sm text-muted-foreground">
@@ -159,7 +158,6 @@ export function HowWePick() {
           No prices and no star ratings, because prices change. Where a maker does not state
           something, we say so.
         </li>
-        <li>A link, if there is one, never changes which products we list or what we write.</li>
       </ul>
       <p className="mt-4 text-sm">
         Read the full{" "}

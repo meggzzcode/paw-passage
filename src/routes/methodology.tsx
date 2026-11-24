@@ -36,7 +36,7 @@ We write the criteria first, for example the safety standard, the size and weigh
 ## What we do not do
 
 - No star ratings or scores.
-- No prices, because they change.
+- No prices, because they change. Check the price on the retailer's page.
 - No customer reviews, quotes or testimonials, and no invented ones.
 - No claims of having used a product, visited a place or trained a dog with it.
 
@@ -46,7 +46,7 @@ Some links may earn us a commission. Commissions do not decide whether a product
 
 ## Updating and corrections
 
-Each guide shows when it was last reviewed. Specifications and certifications change, and recalls happen, so check the maker's page before you buy. If you spot a changed spec or an error, [contact us](/contact). We fix confirmed errors and record notable changes in our [corrections log](/corrections).
+Each guide shows when it was last reviewed. Specifications and certifications change, and recalls happen. Sizes, models and availability change too, so confirm on the maker's or seller's page before you buy. If you spot a changed spec or an error, [contact us](/contact). We fix confirmed errors and record notable changes in our [corrections log](/corrections).
 
 ## Related
 

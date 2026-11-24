@@ -204,8 +204,8 @@ function GuidePage() {
             <p className="mt-2 text-muted-foreground">
               Before writing, we reviewed {g.research.competitors.length} of the pages that
               currently rank for this topic, noted what they leave out, and checked facts against
-              the official sources below. We haven't stayed at or inspected any property for this
-              guide. Read our{" "}
+              the official sources below. We research from published sources; we have not tested or
+              inspected what we cover here. Read our{" "}
               <Link to="/editorial-standards" className="text-primary underline">
                 editorial standards
               </Link>

@@ -18,7 +18,7 @@ function Page() {
   return (
     <ToolShell
       title="Will my dog be accepted?"
-      intro="Tell us about your dogs and see how 38 rental managers' own pet pages compare, with the ones that need a question first marked. It runs in your browser and nothing you enter is sent anywhere."
+      intro="Tell us about your dogs and see how 38 rental managers' own pet pages compare, with the ones that need a question first marked."
       guides={[
         {
           slug: "how-many-dogs-can-you-bring-to-a-vacation-rental",

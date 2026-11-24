@@ -1,12 +1,13 @@
 import { useLocation } from "@tanstack/react-router";
 import { getApprovedLink } from "@/content/affiliates";
 import { trackOutbound } from "@/lib/analytics";
+import { AFFILIATE_BOOK_LABEL, AFFILIATE_LABEL_CLASS } from "@/lib/disclosure";
 import type { Stay } from "@/content/stays/types";
 
 /**
  * The button for a stay. An approved affiliate link for THIS stay (a deeplink to the listing, generated in the
- * partner's hub and pasted unchanged) shows as a sponsored button. Until one exists, a plain link to the listing
- * we read the details from is shown, and it earns nothing, so it carries no sponsored note.
+ * partner's hub and pasted unchanged) shows as an affiliate button (labelled "Affiliate link", never "Sponsored", which is reserved for host-paid placement). Until one exists, a plain link to the listing
+ * we read the details from is shown, and it earns nothing, so it carries no affiliate label.
  */
 export function BookingButton({
   stay,
@@ -44,9 +45,7 @@ export function BookingButton({
             ? `View on ${link.network}`
             : `See photos and check dates on ${link.network}`}
         </a>
-        <p className="mt-2 text-xs text-muted-foreground">
-          Sponsored link: we may earn a commission if you book, at no extra cost to you.
-        </p>
+        <p className={`mt-2 ${AFFILIATE_LABEL_CLASS}`}>{AFFILIATE_BOOK_LABEL}</p>
       </div>
     );
   }

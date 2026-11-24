@@ -28,7 +28,7 @@ export function Stay22Map({
       >
         These listings come from our booking partner Stay22.{" "}
         <strong>We have not checked them, and the map cannot filter for dogs.</strong> Confirm the
-        dog policy, fees, limits and fencing with the host before you book. Sponsored map: we may
+        dog policy, fees, limits and fencing with the host before you book. Affiliate map: we may
         earn a commission if you book, at no extra cost to you. Try our{" "}
         <Link to="/tools/will-my-dog-be-accepted" className="text-primary underline">
           dog policy checker

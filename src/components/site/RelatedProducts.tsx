@@ -2,7 +2,7 @@ import { Link, useLocation } from "@tanstack/react-router";
 import { getProducts } from "@/content/gear";
 import { resolveProductLink } from "@/content/gear-links";
 import { ProductSpecCard } from "@/components/site/ProductSpecCard";
-import { GearDisclosure } from "@/components/site/GearHubCards";
+import { AFFILIATE_BUY_LABEL, AFFILIATE_LABEL_CLASS } from "@/lib/disclosure";
 import { trackProductClick } from "@/lib/analytics";
 import { isMonetized } from "@/content/affiliate-usage";
 import { PRODUCT_CALLOUTS_REQUIRE_AFFILIATE_LINK } from "@/content/publish-rule";
@@ -40,7 +40,6 @@ export function RelatedProducts({
         </Link>
         .
       </p>
-      <GearDisclosure products={items} />
       <ul className="mt-6 space-y-4">
         {items.map((p) => {
           const link = resolveProductLink(p);
@@ -88,7 +87,7 @@ export function RelatedProducts({
                       {link.label}
                     </a>
                     {link.kind === "affiliate" && (
-                      <span className="text-xs text-muted-foreground">Affiliate link</span>
+                      <span className={AFFILIATE_LABEL_CLASS}>{AFFILIATE_BUY_LABEL}</span>
                     )}
                   </>
                 )}

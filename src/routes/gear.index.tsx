@@ -138,10 +138,6 @@ function GearHub() {
         <Link to="/tools/packing-list" className="text-primary underline">
           Pack your dog's bag
         </Link>
-        . How we earn money:{" "}
-        <Link to="/affiliate-disclosure" className="text-primary underline">
-          affiliate disclosure
-        </Link>
         .
       </p>
     </div>

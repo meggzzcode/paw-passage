@@ -431,6 +431,10 @@ products:
   - id: baskerville-ultra-muzzle
     name: Baskerville Ultra Muzzle
     brand: Company of Animals
+    cardSpecs:
+      - "Sizes 2 to 6, sized by snout"
+      - "Basket: panting, drinking"
+      - "Heat-shapeable"
     categories:
       - safety-id-first-aid
     summary: A basket-style dog muzzle made of thermoplastic rubber that the maker says can be heat-shaped to the dog's face.
@@ -440,6 +444,7 @@ products:
       - Maker lists vet and groomer visits among its intended uses
       - Maker says it is not recommended for extended periods unless necessary, that the dog should be supervised, and that the shape may relax over time
       - Sizing is by nose length and circumference using the maker's sizing guide
+      - Amazon listing states sizes 2 to 6, sized by snout per the maker's fitting guide; lockable strap and padded straps; the listing links size 4 (B00596TFVA), and other sizes exist (only sizes 4 and 5 had buy boxes verified)
     specSource:
       title: Baskerville Ultra Muzzle
       url: https://companyofanimals.com/us/brand-product/baskerville-ultra-muzzle/
@@ -448,7 +453,7 @@ products:
     manufacturerUrl: https://companyofanimals.com/us/brand-product/baskerville-ultra-muzzle/
     retailerUrl: ""
     retailerName: ""
-    lastVerified: 2026-11-18
+    lastVerified: 2026-11-24
     active: false
     imageSource: ""
     imageRights: none
@@ -2753,3 +2758,458 @@ products:
       - dog-car-safety-harness-and-crate-guide
       - two-large-dogs-in-one-car
     manufacturerClaimsVsIndependentTesting: The independent source is the CPS listing (passed, July 2014, test dogs to 90 lbs). No maker page for the Clickit Sport could be read, so no maker claim is recorded; the test is from 2014 and CPS lists no tested weight above 90 lbs.
+  - id: lucky-duck-lucky-kennel-large
+    name: "Lucky Dog Kennel Large"
+    brand: "Lucky Duck"
+    aliases:
+      - "Lucky Kennel Large"
+      - "Lucky Dog Kennel Large Tan"
+    cardSpecs:
+      - "Large, Tan"
+      - "Dogs up to 110 lb"
+      - "Interior 35.75x22x26.5 in"
+    categories:
+      - car-safety
+      - pens-and-gates
+    summary: "A Large, Tan Lucky Dog Kennel; the listing states it is for dogs up to 110 lb."
+    keySpecs:
+      - "Listing states size Large, color Tan"
+      - "Listing states it is for dogs up to 110 lb"
+      - "Listing states interior dimensions 35.75 L x 22 W x 26.5 H in"
+      - "Listing says to use a size up for home use"
+    specSource:
+      title: Amazon listing as read 2026-11-24
+      url: https://www.amazon.com/dp/B0DW9JGDJM
+      publisher: Amazon
+      accessedOn: 2026-11-24
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-24
+    active: false
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides: []
+    manufacturerClaimsVsIndependentTesting: none cited. Specs are as the Amazon listing states them.
+  - id: arca-pet-cat-dog-first-aid-kit-100
+    name: "ARCA PET Cat and Dog First Aid Kit, 100 pieces"
+    brand: "ARCA PET"
+    aliases:
+      - "ARCA PET 100-piece kit"
+      - "ARCA PET Cat & Dog First Aid Kit"
+    cardSpecs:
+      - "100 pieces"
+      - "Includes pet thermometer"
+      - "Reflective zipper pouch"
+    categories:
+      - safety-id-first-aid
+    summary: "A 100-piece pet first aid kit; the listing states it includes a dog thermometer, medicine feeder, tick remover kit, first-aid manual and a reflective zipper pouch."
+    keySpecs:
+      - "Listing states 100 pieces for cats and dogs"
+      - "Listing states it includes a dog thermometer, a medicine feeder, a tick remover kit and a first-aid manual"
+      - "Listing states a reflective zipper pouch"
+    specSource:
+      title: Amazon listing as read 2026-11-24
+      url: https://www.amazon.com/dp/B09FKVQQVH
+      publisher: Amazon
+      accessedOn: 2026-11-24
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-24
+    active: false
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides: []
+    manufacturerClaimsVsIndependentTesting: none cited. Specs are as the Amazon listing states them.
+  - id: arca-pet-dog-first-aid-kit-35
+    name: "ARCA PET Dog First Aid Kit, 35 pieces"
+    brand: "ARCA PET"
+    aliases:
+      - "ARCA PET 35-piece kit"
+      - "ARCA PET Dog First Aid Kit"
+    cardSpecs:
+      - "35 pieces"
+      - "Tweezers, scissors, guide"
+      - "Antiseptic included"
+    categories:
+      - safety-id-first-aid
+    summary: "A 35-piece dog first aid kit; the listing states antiseptic, tweezers, scissors and a guide."
+    keySpecs:
+      - "Listing states 35 pieces"
+      - "Listing states antiseptic, tweezers, scissors and a guide"
+      - "Listing does not state a thermometer"
+    specSource:
+      title: Amazon listing as read 2026-11-24
+      url: https://www.amazon.com/dp/B097PLDD92
+      publisher: Amazon
+      accessedOn: 2026-11-24
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-24
+    active: false
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides: []
+    manufacturerClaimsVsIndependentTesting: none cited. Specs are as the Amazon listing states them.
+  - id: arca-pet-car-first-aid-kit-muzzle
+    name: "ARCA PET First Aid Kit for Car with Muzzle"
+    brand: "ARCA PET"
+    aliases:
+      - "ARCA PET car first aid kit"
+      - "ARCA PET kit with muzzle"
+    cardSpecs:
+      - "Includes a muzzle"
+      - "Tick kit, flashlight"
+      - "Mini pouch, manual"
+    categories:
+      - safety-id-first-aid
+    summary: "A pet first aid kit for the car; the listing states a muzzle, tick kit, flashlight, mini pouch and manual."
+    keySpecs:
+      - "Listing states it includes a muzzle, a tick kit, a flashlight, a mini pouch and a manual"
+      - "Listing states the kit is non-returnable"
+    specSource:
+      title: Amazon listing as read 2026-11-24
+      url: https://www.amazon.com/dp/B07WRPCLYR
+      publisher: Amazon
+      accessedOn: 2026-11-24
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-24
+    active: false
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides: []
+    manufacturerClaimsVsIndependentTesting: none cited. Specs are as the Amazon listing states them.
+  - id: fdk-8-second-pet-thermometer
+    name: "FDK 8-Second Pet Thermometer"
+    brand: "FDK"
+    aliases:
+      - "FDK pet thermometer"
+      - "FDK 8-second thermometer"
+    cardSpecs:
+      - "8-second reading"
+      - "Soft tip, backlit screen"
+      - "C/F switch, auto-off"
+    categories:
+      - safety-id-first-aid
+    summary: "A pet thermometer; the listing states an 8-second reading, soft tip, backlit screen, C/F switch, auto-off and waterproof tip."
+    keySpecs:
+      - "Listing states an 8-second reading"
+      - "Listing states a soft tip and a waterproof tip"
+      - "Listing states a backlit screen, a C/F switch and auto-off"
+    specSource:
+      title: Amazon listing as read 2026-11-24
+      url: https://www.amazon.com/dp/B0FC2HZHPJ
+      publisher: Amazon
+      accessedOn: 2026-11-24
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-24
+    active: false
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides: []
+    manufacturerClaimsVsIndependentTesting: none cited. Specs are as the Amazon listing states them.
+  - id: reddoudou-20-second-pet-thermometer
+    name: "REDDOUDOU 20-Second Pet Thermometer"
+    brand: "REDDOUDOU"
+    aliases:
+      - "REDDOUDOU pet thermometer"
+      - "REDDOUDOU 20-second thermometer"
+    cardSpecs:
+      - "20-second reading"
+      - "Flexible waterproof tip"
+      - "+/-0.1 C, 95-107 F range"
+    categories:
+      - safety-id-first-aid
+    summary: "A pet thermometer; the listing states a 20-second reading, flexible waterproof tip and accuracy of +/-0.1 C in the 95-107 F range."
+    keySpecs:
+      - "Listing states a 20-second reading"
+      - "Listing states a flexible, waterproof tip"
+      - "Listing states accuracy of +/-0.1 C in a 95 to 107 F range"
+    specSource:
+      title: Amazon listing as read 2026-11-24
+      url: https://www.amazon.com/dp/B0BB9V6PDZ
+      publisher: Amazon
+      accessedOn: 2026-11-24
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-24
+    active: false
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides: []
+    manufacturerClaimsVsIndependentTesting: none cited. Specs are as the Amazon listing states them.
+  - id: rabbitgoo-frosted-window-privacy-film
+    name: "rabbitgoo Frosted Glass Window Privacy Film, 35.4 x 78.7 in"
+    brand: "rabbitgoo"
+    aliases:
+      - "rabbitgoo window privacy film"
+      - "rabbitgoo frosted window film"
+    cardSpecs:
+      - "35.4 x 78.7 in roll"
+      - "Static cling, no glue"
+      - "Water-applied, trimmable"
+    categories:
+      - comfort-and-cooling
+    summary: "A frosted static-cling window film; the listing states no glue, removal without residue, water application and that it can be trimmed."
+    keySpecs:
+      - "Listing states size 35.4 x 78.7 in"
+      - "Listing states static cling with no glue, removable without residue"
+      - "Listing states it is applied with water and can be trimmed"
+      - "A narrower 17.5 x 78.7 in roll exists (B0FPQ637BS); not wired"
+    specSource:
+      title: Amazon listing as read 2026-11-24
+      url: https://www.amazon.com/dp/B00RDVE71W
+      publisher: Amazon
+      accessedOn: 2026-11-24
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-24
+    active: false
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides: []
+    manufacturerClaimsVsIndependentTesting: none cited. Specs are as the Amazon listing states them.
+  - id: ameritex-waterproof-dog-bed-blanket-cover
+    name: "Ameritex Waterproof Dog Bed Blanket Cover"
+    brand: "Ameritex"
+    aliases:
+      - "Ameritex waterproof dog blanket"
+      - "Ameritex dog bed cover"
+    cardSpecs:
+      - "Waterproof, reversible"
+      - "Machine washable"
+      - "No weight range stated"
+    categories:
+      - rental-cleanup
+    summary: "A dog bed and blanket cover; the listing states it is waterproof, reversible and machine washable."
+    keySpecs:
+      - "Listing states waterproof"
+      - "Listing states reversible"
+      - "Listing states machine washable"
+      - "Listing states no dog weight range"
+    specSource:
+      title: Amazon listing as read 2026-11-24
+      url: https://www.amazon.com/dp/B08R74XVCS
+      publisher: Amazon
+      accessedOn: 2026-11-24
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-24
+    active: false
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides: []
+    manufacturerClaimsVsIndependentTesting: none cited. Specs are as the Amazon listing states them.
+  - id: hyha-waterproof-couch-cover-dogs
+    name: "hyha Waterproof Couch Cover for Dogs, 36 x 71 in"
+    brand: "hyha"
+    aliases:
+      - "hyha waterproof couch cover"
+      - "hyha dog couch cover"
+    cardSpecs:
+      - "36 x 71 in"
+      - "TPU waterproof layer"
+      - "Non-slip dot backing"
+    categories:
+      - rental-cleanup
+    summary: "A couch cover for dogs; the listing states a TPU waterproof layer, non-slip dot backing and washable."
+    keySpecs:
+      - "Listing states size 36 x 71 in"
+      - "Listing states a TPU waterproof layer and non-slip dot backing"
+      - "Listing states washable"
+      - "Listing states no dog weight range"
+    specSource:
+      title: Amazon listing as read 2026-11-24
+      url: https://www.amazon.com/dp/B0GXYG22Z4
+      publisher: Amazon
+      accessedOn: 2026-11-24
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-24
+    active: false
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides: []
+    manufacturerClaimsVsIndependentTesting: none cited. Specs are as the Amazon listing states them.
+  - id: whoseid-qr-nfc-dog-tag-silicone-small
+    name: "WhoseID QR Code Dog Tag, NFC, silent silicone, small"
+    brand: "WhoseID"
+    aliases:
+      - "WhoseID QR dog tag"
+      - "WhoseID NFC dog tag"
+    cardSpecs:
+      - "QR code and NFC"
+      - "Silent slide-on silicone"
+      - "Fits collars 3/8 to 1 in"
+    categories:
+      - safety-id-first-aid
+    summary: "A QR code and NFC dog tag in silent slide-on silicone; the listing states it fits collars 3/8 to 1 in wide."
+    keySpecs:
+      - "Listing states QR code and NFC"
+      - "Listing states a silent, slide-on silicone design, size small"
+      - "Listing states it fits collars 3/8 to 1 in wide"
+      - "Subscription terms unconfirmed"
+    specSource:
+      title: Amazon listing as read 2026-11-24
+      url: https://www.amazon.com/dp/B0C9MCCDH9
+      publisher: Amazon
+      accessedOn: 2026-11-24
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-24
+    active: false
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides: []
+    manufacturerClaimsVsIndependentTesting: none cited. Specs are as the Amazon listing states them.
+  - id: rabbitgoo-suv-dog-car-barrier
+    name: "rabbitgoo Dog Car Barrier for SUV, steel wire, foldable"
+    brand: "rabbitgoo"
+    aliases:
+      - "rabbitgoo dog car barrier"
+      - "rabbitgoo SUV dog barrier"
+    cardSpecs:
+      - "Adjusts about 35.8-59.8 in"
+      - "Steel wire"
+      - "Triple-fold"
+    categories:
+      - car-safety
+    summary: "A foldable steel wire barrier for SUVs; the listing states it adjusts from about 35.8 to 59.8 in."
+    keySpecs:
+      - "Listing states steel wire and a triple-fold design"
+      - "Listing states width adjusts about 35.8 to 59.8 in"
+      - "Listing does not mention two dogs"
+    specSource:
+      title: Amazon listing as read 2026-11-24
+      url: https://www.amazon.com/dp/B0CKQV4R3C
+      publisher: Amazon
+      accessedOn: 2026-11-24
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-24
+    active: false
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides: []
+    manufacturerClaimsVsIndependentTesting: none cited. Specs are as the Amazon listing states them.
+  - id: snagle-paw-50-inch-mesh-car-barrier
+    name: "Snagle Paw 50-Inch Mesh Dog Car Barrier"
+    brand: "Snagle Paw"
+    aliases:
+      - "Snagle Paw car barrier"
+      - "Snagle Paw mesh barrier"
+    cardSpecs:
+      - "50-inch mesh barrier"
+    categories:
+      - car-safety
+    summary: "A 50-inch mesh barrier for the car, per the listing."
+    keySpecs:
+      - "Listing states a 50-inch mesh barrier"
+    specSource:
+      title: Amazon listing as read 2026-11-24
+      url: https://www.amazon.com/dp/B0CBHDSMDB
+      publisher: Amazon
+      accessedOn: 2026-11-24
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-24
+    active: false
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides: []
+    manufacturerClaimsVsIndependentTesting: none cited. Specs are as the Amazon listing states them.
+  - id: kurgo-rover-hammock-standard
+    name: "Kurgo Rover Hammock, Standard 55 x 56 in"
+    brand: "Kurgo"
+    aliases:
+      - "Rover Hammock Standard"
+      - "Kurgo Rover Hammock 55 x 56"
+    cardSpecs:
+      - "55 x 56 in"
+      - "Black"
+    categories:
+      - car-interior
+      - rental-cleanup
+    summary: "The standard Kurgo Rover Hammock; the listing states 55 x 56 in, black, sold by Amazon.com."
+    keySpecs:
+      - "Listing states size 55 x 56 in, color black"
+      - "Listing states sold by Amazon.com"
+    specSource:
+      title: Amazon listing as read 2026-11-24
+      url: https://www.amazon.com/dp/B00164SZPQ
+      publisher: Amazon
+      accessedOn: 2026-11-24
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-24
+    active: false
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides: []
+    manufacturerClaimsVsIndependentTesting: none cited. Specs are as the Amazon listing states them.

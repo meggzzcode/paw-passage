@@ -341,10 +341,10 @@ links:
     notes: "Amazon ASIN B00T72ST1Y (HIGH); variant: Another listing B0HJQPW2LS shown unavailable. Maker page has no Amazon link."
   - id: baskerville-ultra-muzzle
     network: Amazon Associates
-    url: https://www.amazon.com/dp/B01IFJ0FMU?tag={amazonTrackingId}
-    approved: false
+    url: https://www.amazon.com/dp/B00596TFVA?tag={amazonTrackingId}
+    approved: true
     kind: product
-    notes: "OFF 2026-11-18: unavailable on Amazon (no buy box). Set approved true when back in stock. Amazon ASIN B01IFJ0FMU (MEDIUM); variant: Sold in sizes 1-6 and many colours with separate ASINs (e.g. B0051H45GC, B005184AG6, B00596TFVA, B00TUDFIQ4 size 6 black). Owner to pick size."
+    notes: "Amazon ASIN B00596TFVA (size 4). Cowork-verified 2026-11-24: sold by Amazon.com, buy box present, listing read; only sizes 4 (B00596TFVA) and 5 (B0051H45GC) had buy boxes verified. Other sizes exist: 2 B005D4O0OA, 3 B005MJ65Z8, 6 B005184AG6 (buy boxes not verified). Replaces the earlier size-unspecified link B01IFJ0FMU (no buy box 2026-11-18). Size by snout per the maker's fitting guide; do not claim sizes by breed."
   - id: carlson-convertible-pet-yard
     network: Amazon Associates
     url: https://www.amazon.com/dp/B0026MSQAG?tag={amazonTrackingId}
@@ -482,7 +482,7 @@ links:
     url: https://www.amazon.com/dp/B000QFWCK0?tag={amazonTrackingId}
     approved: true
     kind: product
-    notes: "Amazon ASIN B000QFWCK0 (MEDIUM); variant: Brand/model match but many sizes and single/double door each have own ASIN. 30in double door chosen as a common size. Others: 42in double B000QFT1RC, 48in singl"
+    notes: "Amazon ASIN B000QFWCK0 (MEDIUM); variant: Brand/model match but many sizes and single/double door each have own ASIN. 30in double door chosen as a common size. Others: 42in double B000QFT1RC. Cowork 2026-11-24 flag: the default offer on this 30-inch listing is Amazon Resale (used/open-box), so condition is NOT confirmed new; link left unchanged. The 36-inch B000QFT1R2 (Buy New by Amazon.com; for dogs 41-70 lb per the listing) was checked but not added as a record because the existing iCrate record covers all sizes in one record."
   - id: soggy-doggy-super-shammy-towel
     network: Amazon Associates
     url: https://www.amazon.com/dp/B007679312?tag={amazonTrackingId}
@@ -500,7 +500,7 @@ links:
     url: https://www.amazon.com/dp/B07CRTPX8D?tag={amazonTrackingId}
     approved: true
     kind: product
-    notes: "Amazon ASIN B07CRTPX8D (HIGH); variant: Black. Charcoal 63in is B07CRQJC19. Avoid the Extended Bench Seat Cover (B00K7J3UIS, B0FTNTK2QF), a different product."
+    notes: "Amazon ASIN B07CRTPX8D (HIGH); variant: Black. Charcoal 63in is B07CRQJC19. Avoid the Extended Bench Seat Cover (B00K7J3UIS, B0FTNTK2QF), a different product. Cowork 2026-11-24: this listing is the EXTENDED 63-in model sold by a third-party seller (not Amazon.com). Standard 55 x 56 in model sold by Amazon.com is B00164SZPQ (kurgo-rover-hammock-standard)."
   - id: ruffwear-the-beacon-dog-safety-light
     network: Amazon Associates
     url: https://www.amazon.com/dp/B073WPG2KR?tag={amazonTrackingId}
@@ -512,7 +512,7 @@ links:
     url: https://www.amazon.com/dp/B07DZSF2C2?tag={amazonTrackingId}
     approved: true
     kind: product
-    notes: "Amazon ASIN B07DZSF2C2 (MEDIUM); variant: 18x24 2-pack. Other sizes: 17in round B07ZVGXKT1, 34x36 B0C5N8MNWZ."
+    notes: "Amazon ASIN B07DZSF2C2 (MEDIUM); variant: 18x24 2-pack. Other sizes: 17in round B07ZVGXKT1, 34x36 B0C5N8MNWZ (wired as pet-parents-pawtect-pads-34x36). Unresolved: 24x36 buy box not checked."
   - id: midwest-lifestages-dog-crate
     network: Amazon Associates
     url: https://www.amazon.com/dp/B0002AT3M4?tag={amazonTrackingId}
@@ -608,7 +608,7 @@ links:
     url: https://www.amazon.com/dp/B0BMQY39R5?tag={amazonTrackingId}
     approved: true
     kind: product
-    notes: "Added 2026-11-19 as replacement for gunner-g1-kennel. Amazon ASIN B0BMQY39R5 (MEDIUM; title seen in search results: Lucky Dog Kennel, Durable Crash Tested Portable Dog Crates, Intermediate; URL slug Lucky-Duck-Kennel-Intermediate); ASIN from search results, not yet verified on the Amazon page; stock NOT confirmed. Intermediate size only. Other sizes: Medium B0CTP2VR2T, Large B0DW9JGDJM. CPS lists Lucky Duck Lucky Kennel Medium, Intermediate and Large as certified."
+    notes: "Added 2026-11-19 as replacement for gunner-g1-kennel. Amazon ASIN B0BMQY39R5 (MEDIUM; title seen in search results: Lucky Dog Kennel, Durable Crash Tested Portable Dog Crates, Intermediate; URL slug Lucky-Duck-Kennel-Intermediate); ASIN from search results, not yet verified on the Amazon page; stock NOT confirmed. Intermediate size only. Correction 2026-11-24 (Cowork): B0CTP2VR2T is a LARGE listing, not Medium. Real Medium (Tan, dogs under 50 lb, interior 23.5L x 17.4W x 17H in) is B0DW9GGDJ9. Large (Tan) B0DW9JGDJM is wired as lucky-duck-lucky-kennel-large. This Intermediate link stays. CPS lists Lucky Duck Lucky Kennel Medium, Intermediate and Large as certified."
   - id: sleepypod-clickit-sport-plus
     network: Amazon Associates
     url: https://www.amazon.com/dp/B0FS4DL1QF?tag={amazonTrackingId}
@@ -699,3 +699,81 @@ links:
     approved: true
     kind: product
     notes: "Amazon ASIN B0DNV6MBKK (MEDIUM); title 'Ruffwear Web Master Dog Body Harness, Basalt Gray, Large/X-Large'. Variant: other sizes/colours B0DNV56GG9 (Blaze Orange M), B0DNV8F2FS (Blaze Orange S), B0DNV52S3Y (Red Canyon S), B0B355SGQP (XXS). Generic 'with Handle' listing B0HMT31ZT5 is unavailable. Older B01MS7225D is the earlier model (fewer attachment points). Owner to pick size."
+  - id: lucky-duck-lucky-kennel-large
+    network: Amazon Associates
+    url: https://www.amazon.com/dp/B0DW9JGDJM?tag={amazonTrackingId}
+    approved: true
+    kind: product
+    notes: "Amazon ASIN B0DW9JGDJM. Cowork-verified 2026-11-24: buy box present, listing read; specs from the Amazon listing, not the maker page. Large (Tan) size of the Lucky Kennel; separate from the Intermediate link on lucky-duck-lucky-kennel."
+  - id: arca-pet-cat-dog-first-aid-kit-100
+    network: Amazon Associates
+    url: https://www.amazon.com/dp/B09FKVQQVH?tag={amazonTrackingId}
+    approved: true
+    kind: product
+    notes: "Amazon ASIN B09FKVQQVH. Cowork-verified 2026-11-24: buy box present, listing read; specs from the Amazon listing, not the maker page."
+  - id: arca-pet-dog-first-aid-kit-35
+    network: Amazon Associates
+    url: https://www.amazon.com/dp/B097PLDD92?tag={amazonTrackingId}
+    approved: true
+    kind: product
+    notes: "Amazon ASIN B097PLDD92. Cowork-verified 2026-11-24: buy box present, listing read; specs from the Amazon listing, not the maker page."
+  - id: arca-pet-car-first-aid-kit-muzzle
+    network: Amazon Associates
+    url: https://www.amazon.com/dp/B07WRPCLYR?tag={amazonTrackingId}
+    approved: true
+    kind: product
+    notes: "Amazon ASIN B07WRPCLYR. Cowork-verified 2026-11-24: buy box present, listing read; specs from the Amazon listing, not the maker page."
+  - id: fdk-8-second-pet-thermometer
+    network: Amazon Associates
+    url: https://www.amazon.com/dp/B0FC2HZHPJ?tag={amazonTrackingId}
+    approved: true
+    kind: product
+    notes: "Amazon ASIN B0FC2HZHPJ. Cowork-verified 2026-11-24: buy box present, listing read; specs from the Amazon listing, not the maker page. Primary thermometer option; FDK is not a widely known brand."
+  - id: reddoudou-20-second-pet-thermometer
+    network: Amazon Associates
+    url: https://www.amazon.com/dp/B0BB9V6PDZ?tag={amazonTrackingId}
+    approved: true
+    kind: product
+    notes: "Amazon ASIN B0BB9V6PDZ. Cowork-verified 2026-11-24: buy box present, listing read; specs from the Amazon listing, not the maker page. Alternative to the FDK thermometer; brand not widely known."
+  - id: rabbitgoo-frosted-window-privacy-film
+    network: Amazon Associates
+    url: https://www.amazon.com/dp/B00RDVE71W?tag={amazonTrackingId}
+    approved: true
+    kind: product
+    notes: "Amazon ASIN B00RDVE71W. Cowork-verified 2026-11-24: buy box present, listing read; specs from the Amazon listing, not the maker page. Narrower 17.5 x 78.7 in roll is B0FPQ637BS (not wired)."
+  - id: ameritex-waterproof-dog-bed-blanket-cover
+    network: Amazon Associates
+    url: https://www.amazon.com/dp/B08R74XVCS?tag={amazonTrackingId}
+    approved: true
+    kind: product
+    notes: "Amazon ASIN B08R74XVCS. Cowork-verified 2026-11-24: buy box present, listing read; specs from the Amazon listing, not the maker page."
+  - id: hyha-waterproof-couch-cover-dogs
+    network: Amazon Associates
+    url: https://www.amazon.com/dp/B0GXYG22Z4?tag={amazonTrackingId}
+    approved: true
+    kind: product
+    notes: "Amazon ASIN B0GXYG22Z4. Cowork-verified 2026-11-24: buy box present, listing read; specs from the Amazon listing, not the maker page. Inactive alternative to the Ameritex cover; brand not widely known."
+  - id: whoseid-qr-nfc-dog-tag-silicone-small
+    network: Amazon Associates
+    url: https://www.amazon.com/dp/B0C9MCCDH9?tag={amazonTrackingId}
+    approved: true
+    kind: product
+    notes: "Amazon ASIN B0C9MCCDH9. Cowork-verified 2026-11-24: buy box present, listing read; specs from the Amazon listing, not the maker page. Subscription terms unconfirmed (QR tags may need a subscription); keep inactive until the owner decides."
+  - id: rabbitgoo-suv-dog-car-barrier
+    network: Amazon Associates
+    url: https://www.amazon.com/dp/B0CKQV4R3C?tag={amazonTrackingId}
+    approved: true
+    kind: product
+    notes: "Amazon ASIN B0CKQV4R3C. Cowork-verified 2026-11-24: buy box present, listing read; specs from the Amazon listing, not the maker page. Primary barrier option."
+  - id: snagle-paw-50-inch-mesh-car-barrier
+    network: Amazon Associates
+    url: https://www.amazon.com/dp/B0CBHDSMDB?tag={amazonTrackingId}
+    approved: true
+    kind: product
+    notes: "Amazon ASIN B0CBHDSMDB. Cowork-verified 2026-11-24: buy box present, listing read; specs from the Amazon listing, not the maker page. Inactive alternative to the rabbitgoo barrier; only the title was captured."
+  - id: kurgo-rover-hammock-standard
+    network: Amazon Associates
+    url: https://www.amazon.com/dp/B00164SZPQ?tag={amazonTrackingId}
+    approved: true
+    kind: product
+    notes: "Amazon ASIN B00164SZPQ. Cowork-verified 2026-11-24: buy box present, listing read; specs from the Amazon listing, not the maker page. Standard model, not the Extended 63-in (that is B07CRTPX8D on kurgo-rover-hammock-extended-width)."

@@ -25,8 +25,8 @@ const links = parse(readFileSync("content/affiliates.yml", "utf8")).links as Aff
 const slugsOf = () => [...gearCategorySlugs] as string[];
 
 describe("product catalog rules", () => {
-  it("every product has a manufacturer link on an https host", () => {
-    for (const p of products) {
+  it("every active product has a manufacturer link on an https host (inactive Amazon-listing finds may lack one until a guide places them)", () => {
+    for (const p of products.filter((x) => x.active !== false)) {
       expect(p.productUrl, `${p.id}: manufacturerUrl`).toBeTruthy();
       const u = new URL(p.productUrl!);
       expect(u.protocol, p.id).toBe("https:");

@@ -2,14 +2,14 @@
 title: "How Vacation Rental Pet Fees Work: Per Night, Per Dog or Per Stay"
 seoTitle: "Vacation Rental Pet Fees: Per Night or Per Stay?"
 seoDescription: "How vacation rental pet fees work: we read 38 managers, 25 state a fee, 3 charge $0 and 13 name no amount. See the units and price your trip."
-dek: What 38 managers actually charge, how to read the wording, and how to get one total for your dogs and your dates.
+dek: "A pet fee is a formula: per stay, per night, per dog or per dog per night. See what 38 managers charge and how to total it."
 category: Planning
 states: []
 status: published
 author: Paws & Passage Editors
 publishedOn: 2026-11-16
 lastReviewed: 2026-11-24
-readingMinutes: 9
+readingMinutes: 7
 heroImage: guide-pet-fees
 faqs:
   - q: Are vacation-rental pet fees charged per night or per stay?
@@ -35,9 +35,9 @@ relatedGuides:
   - what-a-dog-really-costs-on-a-vacation-rental
   - vacation-rentals-with-no-pet-fee
 relatedProducts:
-  - pet-parents-pawtect-pads
   - soggy-doggy-microfiber-doormat
   - soggy-doggy-super-shammy-towel
+  - pet-parents-pawtect-pads
 relatedTools:
   - checklist
 sources:
@@ -69,18 +69,6 @@ sources:
     url: https://www.ada.gov/resources/service-animals-2010-requirements/
     publisher: U.S. Department of Justice
     accessedOn: 2026-11-16
-  - title: Pawtect Pads (2pack)
-    url: https://petparentsbrand.com/products/washable-puppy-pads
-    publisher: Pet Parents
-    accessedOn: 2026-11-18
-  - title: Plain Chocolate Absorbent Doormat
-    url: https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate
-    publisher: Soggy Doggy Productions
-    accessedOn: 2026-11-18
-  - title: Soggy Doggy Super Shammy
-    url: https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey
-    publisher: Soggy Doggy Productions
-    accessedOn: 2026-11-18
 research:
   primaryKeyword: vacation rental pet fees
   relatedKeywords:
@@ -141,22 +129,18 @@ approvedBy: Paws & Passage Editors
 approvedOn: 2026-11-16
 ---
 
+Of the 38 managers' pet pages we read on 2026-11-18, 25 state a fee: 22 charge amounts from $20 a night to $300 per pet, and 3 charge nothing. The other 13 name no amount, so you only learn the price by asking or reaching checkout. When a checkout page says "$75", ask: for the trip, each night, or each dog?
+
 ## The short answer
 
-A vacation rental pet fee is a formula, not a number: it can be per stay, per night, per dog, or per dog per night, and managers write it in very different ways. Get one total for your dogs and your dates before you book.
-
-In our reading of 38 vacation rental managers' public pet pages (a convenience sample, not a survey, read 2026-11-18), 25 stated a fee. Three of those, Sliding Rock Cabins, Twiddy & Company and Hapey Cabin Rentals, charge $0 on the pages we read, and our [no-pet-fee guide](/guides/vacation-rentals-with-no-pet-fee) lists them. The other 13 gave no amount on the page, so you only learn the price by asking or reaching checkout. The full tables are on the [pet policy dataset page](/data/pet-policies).
-
-- Among the 22 that charge, nightly amounts run from $20 to $50 and flat or per-pet amounts from $50 to $300. One manager, Resort Realty, says "up to $1,000, varies by property."
-- Airbnb says hosts can charge per booking, per night, per pet, or per pet per night. [[1]](https://www.airbnb.com/help/article/3623)
-- Refundable deposits and card holds belong in a separate column from definite expenses.
-- Where the ADA applies, pet fees and deposits must be waived for service animals. [[7]](https://www.ada.gov/resources/service-animals-2010-requirements/)
-
-The decision this page serves: which listing, and what total. To see whether a home will take your dog at all, start with the [will my dog be accepted tool](/tools/will-my-dog-be-accepted); to total the charges, work through the sections below. If a listing's pet wording looks vague, ask the host to confirm it in writing. For any "$75" on a checkout page, ask: for the trip, each night, or each dog?
+- Get one total for your dogs and your exact dates before you book. The wording decides it: Airbnb says hosts can charge per booking, per night, per pet, or per pet per night [[1]](https://www.airbnb.com/help/article/3623).
+- Keep refundable deposits and card holds in a separate column from definite expenses.
+- Where the ADA applies, pet fees and deposits must be waived for service animals [[7]](https://www.ada.gov/resources/service-animals-2010-requirements/).
+- Paying a fee does not override a weight limit, breed restriction or pet-count maximum. To see whether a home will take your dog at all, start with the [will my dog be accepted tool](/tools/will-my-dog-be-accepted).
 
 ## What 38 managers actually charge
 
-Fees as stated on each manager's public page, 2026-11-18. Many apply only to pet-friendly homes and some vary by property.
+Fees as stated on each manager's public page (a convenience sample, not a survey). Many apply only to pet-friendly homes and some vary by property. Resort Realty says "up to $1,000, varies by property." The full tables are on the [pet policy dataset page](/data/pet-policies).
 
 | How the fee is written | Amounts stated | Managers (examples) |
 | --- | --- | --- |
@@ -168,7 +152,7 @@ Fees as stated on each manager's public page, 2026-11-18. Many apply only to pet
 | One-time, by dog size | $55, or $75 for a larger dog | Hearthside Cabin Rentals |
 | $0 | None on the pages we read | Sliding Rock Cabins, Twiddy & Company, Hapey Cabin Rentals |
 
-Two things stand out. First, there is no single average worth quoting: a $25 nightly fee and a $300 per-pet fee are different animals, and a week-long stay can flip which one costs more. Second, the unit often sits in fine print, and the same manager can be read two ways. For example, Elk Springs Resort lists $50 per animal without saying per stay or per night, which is exactly why you ask.
+There is no single average worth quoting: a $25 nightly fee and a $300 per-pet fee are different animals, and a week-long stay can flip which costs more. The unit often sits in fine print. Elk Springs Resort lists $50 per animal without saying per stay or per night, which is exactly why you ask. Our [no-pet-fee guide](/guides/vacation-rentals-with-no-pet-fee) lists the three $0 managers.
 
 ## The four fee structures, priced
 
@@ -181,114 +165,69 @@ The same dog count and dates produce very different totals. Hypothetical round n
 | $50 per dog per stay | $50 x 2 | $100 |
 | $20 per dog per night | $20 x 2 x 4 | $160 |
 
-The smallest headline number gives the largest bill. Caps and tiers matter too: if a hypothetical policy says "$15 per dog per night, $150 maximum", two dogs for seven nights is $210 uncapped and $150 capped, unless the cap is per dog. Ask what the cap covers. Our guide to [how many dogs you can bring to a rental](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental) covers count and weight questions.
+The smallest headline number gives the largest bill. Caps and tiers matter too: if a hypothetical policy says "$15 per dog per night, $150 maximum", two dogs for seven nights is $210 uncapped and $150 capped, unless the cap is per dog. Ask what the cap covers. Our guide to [how many dogs you can bring](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental) covers count and weight questions.
 
-For a break-even example, compare a hypothetical $90 per-stay fee with a $20 nightly fee for one dog: four nights costs $80 nightly, five costs $100, so the lines cross at 4.5 nights.
-
-## Fees, deposits, holds, and waivers
+## Fees, deposits, holds and waivers
 
 The agreement matters more than the label.
 
-| Item | Typical function | Budget treatment |
+| Item | What it is | How to budget it |
 | --- | --- | --- |
 | Nonrefundable pet fee | Agreed charge for bringing approved pets | Definite expense, subject to cancellation terms |
-| Refundable pet deposit | Money that may be returned under stated conditions | Temporary cash requirement with deduction risk |
-| Card authorization hold | Credit temporarily reserved, not necessarily collected | Available-credit requirement |
-| Cleaning fee | Charge for the stated cleaning arrangement | Definite expense if applicable |
-| Damage waiver | Contractual protection with specific terms | Usually an expense; read exclusions |
-| Damage claim | Request for payment after an alleged loss | Contingent liability, not a standard pet rate |
+| Refundable pet deposit | Money returned under stated conditions | Cash you need up front, with deduction risk |
+| Card authorization hold | Credit reserved, not necessarily collected | Shrinks available credit |
+| Damage waiver | Protection with specific terms | Usually an expense; read exclusions |
 
-Several managers in our sample describe their fee as nonrefundable, including Tahoe Vacation Rentals, Rosemary Beach Cottage Rental Company and A Blue Ridge Cabin Rental. "Refundable" does not mean returned immediately, so ask who holds the money, what can be deducted and when it is released.
+Several managers in our sample call their fee nonrefundable, including Tahoe Vacation Rentals, Rosemary Beach Cottage Rental Company and A Blue Ridge Cabin Rental. "Refundable" does not mean returned immediately, so ask who holds the money, what can be deducted and when it is released.
 
-Hypothetical example: accommodation $800, ordinary cleaning $120, nonrefundable pet fee $90, and a refundable deposit of $250. The definite expense is $1,010 before taxes. If the deposit is collected, you need $1,260 up front and get $250 back; if it is only a card hold, it is not money paid but it can still shrink the credit available for the trip.
+Hypothetical example: accommodation $800, ordinary cleaning $120, nonrefundable pet fee $90, refundable deposit $250. The definite expense is $1,010 before taxes. If the deposit is collected you need $1,260 up front and get $250 back; if it is only a card hold, it is not money paid but it can still shrink the credit available for the trip.
 
-An ordinary cleaning charge and a pet charge can both appear. Airbnb says pet fees should cover the expected cleaning associated with hosting pets and distinguishes that from unexpected damage. [[1]](https://www.airbnb.com/help/article/3623) Several managers pair the two openly: Cabin Rentals of Georgia lists $50 plus a $75 cleaning fee, and A Blue Ridge Vacation lists $20 plus a small cleaning fee. A pet fee does not buy damage coverage; read the agreement and any protection product's terms. Ways to lower the deduction risk are in the packing section near the end of this page.
+A cleaning charge and a pet charge can both appear. Airbnb says pet fees should cover the expected cleaning associated with hosting pets and distinguishes that from unexpected damage [[1]](https://www.airbnb.com/help/article/3623). Cabin Rentals of Georgia lists $50 plus a $75 cleaning fee, and A Blue Ridge Vacation lists $20 plus a small cleaning fee. A pet fee does not buy damage coverage.
 
 ## How Airbnb and Vrbo display pet fees
 
-To compare a few real listings side by side, you can [start a pet-friendly search on Vrbo](aff:vrbo) and use its pet filter.
-
-If you are comparing platforms, this is what the official help pages say, and only that. Both are help pages written for hosts and travelers, not records of what any given listing will show.
+To compare a few real listings side by side, [start a pet-friendly search on Vrbo](aff:vrbo) and use its pet filter. These are help pages written for hosts and travelers, not records of what any listing will show.
 
 | | Airbnb | Vrbo |
 | --- | --- | --- |
 | Fee structures | Hosts can charge per booking, per night, per pet, or per pet per night. [[1]](https://www.airbnb.com/help/article/3623) | Pets, cleaning and extra guests are listed as standard fee categories; hosts enter charges in fee settings. [[4]](https://help.vrbo.com/articles/How-do-I-manage-my-fees) |
 | Where it shows | In the nightly rate and in the checkout total, after the guest says how many pets are coming. [[1]](https://www.airbnb.com/help/article/3623) | Displayed prices include mandatory fees and service fees; taxes usually appear by checkout. [[3]](https://help.vrbo.com/articles/About-Price-Display) |
-| Service animals | Airbnb says service animals stay free. [[1]](https://www.airbnb.com/help/article/3623) | Hosts in countries with service-animal laws must accommodate guests who need them regardless of the pet policy. [[5]](https://help.vrbo.com/articles/What-is-HomeAway-s-service-animal-policy) |
+| Service animals | Service animals stay free. [[1]](https://www.airbnb.com/help/article/3623) | Hosts in countries with service-animal laws must accommodate guests who need them regardless of the pet policy. [[5]](https://help.vrbo.com/articles/What-is-HomeAway-s-service-animal-policy) |
 
-Practical consequence: because Airbnb can fold a pet fee into the nightly rate, a displayed nightly number is not necessarily the billing unit. A hypothetical $100 per-stay fee shows as $50 a night over two nights and $20 over five. And because Vrbo's pages cover fee categories and display policy rather than every host's configuration, a pet charge is worth confirming in the full quote on either platform. On Airbnb, tell the host about your pets even at a property that allows them; a pet-friendly label does not settle size, breed or count. [[2]](https://www.airbnb.com/help/article/86) On Vrbo, hosts can send a payment request to add a charge to an existing reservation. [[4]](https://help.vrbo.com/articles/How-do-I-manage-my-fees) Our [pet-friendly rental checklist](/guides/pet-friendly-vacation-rental-checklist) covers the rest of the booking questions.
+Because Airbnb can fold a pet fee into the nightly rate, a displayed nightly number is not necessarily the billing unit: a hypothetical $100 per-stay fee shows as $50 a night over two nights and $20 over five. On Airbnb, tell the host about your pets even at a property that allows them; a pet-friendly label does not settle size, breed or count [[2]](https://www.airbnb.com/help/article/86). On Vrbo, hosts can send a payment request to add a charge to an existing reservation [[4]](https://help.vrbo.com/articles/How-do-I-manage-my-fees). Our [pet-friendly rental checklist](/guides/pet-friendly-vacation-rental-checklist) covers the rest of the booking questions.
 
 ## Compare the full stay, not the pet fee
 
-A no-pet-fee home can cost more overall. For the wider cost of a trip with a dog, see [what a dog really costs on a rental trip](/guides/what-a-dog-really-costs-on-a-vacation-rental). A hypothetical three-night comparison:
-
-| Charge | Rental A | Rental B |
-| --- | --- | --- |
-| Accommodation | $750 | $660 |
-| Ordinary cleaning | $100 | $120 |
-| Pet fee | $0 | $60 |
-| Subtotal before other charges | $850 | $840 |
-
-Rental B has a pet fee and is still $10 cheaper at this stage. Compare with identical dates, people and pets, and check suitability: a $10 saving is no use if the dog is over the weight limit. See our [large-dog rental guide](/guides/vacation-rentals-that-welcome-large-dogs) and the [rental checklist](/guides/pet-friendly-vacation-rental-checklist).
+A no-pet-fee home can cost more overall: a rental with a $60 pet fee can still be cheaper than one with none if its rate or cleaning fee is lower. Compare with identical dates, people and pets, and check suitability, because a saving is no use if the dog is over the weight limit. See the [large-dog rental guide](/guides/vacation-rentals-that-welcome-large-dogs) and [what a dog really costs on a rental trip](/guides/what-a-dog-really-costs-on-a-vacation-rental).
 
 ## Service animals are not pets
 
-The Department of Justice's ADA requirements say a business that requires a deposit or fee from patrons with pets must waive it for service animals. [[7]](https://www.ada.gov/resources/service-animals-2010-requirements/) Its FAQ adds that hotels may not charge for cleaning hair or dander shed by a service animal, though they may charge for damage as they would for any guest. [[6]](https://www.ada.gov/resources/service-animals-faqs/) The ADA does not automatically apply identically to every privately rented home, and other laws and platform rules may apply.
-
-Ordinary cleaning fees charged to everyone are not an animal surcharge, and service-animal status is no blanket shield from legitimate damage charges. Emotional support animals are not automatically ADA service animals. Do not misrepresent a pet to avoid a fee.
+The Department of Justice's ADA requirements say a business that requires a deposit or fee from patrons with pets must waive it for service animals [[7]](https://www.ada.gov/resources/service-animals-2010-requirements/). Its FAQ adds that hotels may not charge for cleaning hair or dander shed by a service animal, though they may charge for damage as they would for any guest [[6]](https://www.ada.gov/resources/service-animals-faqs/). The ADA does not automatically apply identically to every privately rented home, and other laws and platform rules may apply. Emotional support animals are not automatically ADA service animals, and you should not misrepresent a pet to avoid a fee.
 
 ## If a charge surprises you
 
-Save the listing terms, booking price and messages. Ask the host to identify the charge and show the calculation, and check where it was disclosed before you booked. If the explanation conflicts with the booking, contact platform support, and do not pay an unexplained duplicate just to end the conversation. After checkout, ask for an itemized explanation separating ordinary cleaning from alleged damage; our [Airbnb post-checkout damage guide](/guides/airbnb-pet-damage-charge-after-checkout) walks through that. If you are unsure whether a home accepts your dog, ask before booking; our [how many dogs guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental) quotes the penalties three managers publish.
+Save the listing terms, booking price and messages. Ask the host to show the calculation, and check where the charge was disclosed before you booked. If the explanation conflicts with the booking, contact platform support, and do not pay an unexplained duplicate just to end the conversation. After checkout, ask for an itemized explanation separating ordinary cleaning from alleged damage; our [Airbnb post-checkout damage guide](/guides/airbnb-pet-damage-charge-after-checkout) walks through that.
 
 ## Questions to send before you book
 
 Send something like this, with your own numbers filled in:
 
-"We are traveling with [number] dog(s) for [number] nights. Please confirm the complete pet-related charge for this reservation, whether it is per stay, per night, per dog, or per dog per night, and whether it is already in the displayed total. Please also identify any separate cleaning charge, refundable deposit, card hold, cap, or required damage product."
+> We are traveling with [number] dog(s) for [number] nights. Please confirm the complete pet-related charge for this reservation, whether it is per stay, per night, per dog, or per dog per night, and whether it is already in the displayed total. Please also identify any separate cleaning charge, refundable deposit, card hold, cap, or required damage product.
 
-Paying a fee does not override a weight limit, breed restriction, pet-count maximum or unattended-pet rule.
+Then run this price check:
 
-## How sure we are
-
-- **Confirmed by a source we cite:** the platform fee structures and display rules above come from Airbnb's and Vrbo's help pages, and the service-animal rules from the Department of Justice.
-- **What most people report:** the fee figures are what 25 of 38 managers state on their public pages as of 2026-11-18. It is a convenience sample of managers whose sites we could read, not a random or national one.
-- **Unknown:** what any single home charges for your dates, whether a displayed total includes the pet fee, and how deposits are returned. Ask the manager or host, and use the checklist below.
-
-## A final price-check checklist
-
-- [ ] Actual dates, guest count, and pet count are entered.
-- [ ] The pet-fee unit is clear and the complete pet charge is confirmed.
-- [ ] Any cap or second-dog rate is understood.
-- [ ] Ordinary and pet-specific cleaning charges are reconciled.
-- [ ] Deposits and holds are separated from definite expenses.
+- [ ] Actual dates, guest count and pet count are entered.
+- [ ] The pet-fee unit and complete pet charge are confirmed, with any cap or second-dog rate.
+- [ ] Cleaning charges are reconciled, and deposits and holds are separated from definite expenses.
 - [ ] Taxes, cancellation treatment and dog acceptance rules are checked.
 - [ ] Terms and messages are saved.
 
-Add the money tasks to the [trip checklist](/tools/checklist). Once you know the formula, the final expense and the temporary money required, a pet fee is a comparison, not a checkout surprise.
+Add the money tasks to the [trip checklist](/tools/checklist), then [start a pet-friendly search on Vrbo](aff:vrbo) and enter your exact dogs and dates.
 
-Ready to compare totals? [Start a pet-friendly search on Vrbo](aff:vrbo) and enter your exact dogs and dates.
+## How sure we are
 
-## Protect your deposit: what to pack
+Platform fee structures and display rules come from Airbnb's and Vrbo's help pages, and the service-animal rules from the Department of Justice. The fee figures are what 25 of 38 managers state publicly as of 2026-11-18, a sample of managers whose sites we could read. What any single home charges for your dates, and how its deposit is returned, only the host can confirm.
 
-A pet fee may not cover damage, so the deposit or a later claim is where a muddy floor or an accident can cost you. In the example above, $250 of refundable deposit sits with the host until they decide nothing needs deducting. Nothing you pack guarantees a clean return, and the host decides what counts as damage. But three items address the usual causes before they reach the carpet or the sofa, and photos of the place when you leave are still your best record.
+## Protect your deposit
 
-**Accidents on the floor: for a puppy or an older dog.** A new place can upset a puppy or a senior dog's routine. The Pet Parents Pawtect Pads are machine-washable reusable pads. The maker lists four sizes from 18 x 24 in to 41 x 41 in, two per pack, with a waterproof backing layer and a floor-gripping backing, and says they last hundreds of washes. [[8]](https://petparentsbrand.com/products/washable-puppy-pads) The page does not name the fabric or show warranty terms. The link on this page is the smallest pack (18 x 24 in), so pick the size that fits where the dog will sleep on the listing before you order, and wash them before you leave. Skip them if your dog is house-trained and rarely has accidents.
-
-{{pick:pet-parents-pawtect-pads|For puppy or senior-dog accidents|The maker lists machine-washable pads in four sizes (18 x 24 in to 41 x 41 in) with a waterproof layer and a floor-gripping backing, two per pack; it does not state the fabric.|https://petparentsbrand.com/products/washable-puppy-pads}}
-
-**Mud and wet paws at the door.** If the trip is wet, muddy or snowy, the damage risk starts at the entrance. The Soggy Doggy Microfiber Doormat is a chenille mat the maker describes as super absorbent and dirt trapping, in Large (26 x 36 in) and Extra Large (36 x 60 in), with a non-slip backing, machine washable and dryer safe. [[9]](https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate) The page gives no absorbency figure, so it is not a promise about how much water it holds. Ask the host first whether a mat by the door is welcome. Skip it for a dry beach-town stay.
-
-{{pick:soggy-doggy-microfiber-doormat|Muddy paws at the door|The maker lists Large (26 x 36 in) and Extra Large (36 x 60 in) with a non-slip backing, and says it is machine washable and dryer safe.|https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate}}
-
-**Drying a wet dog before it reaches the sofa.** The mat catches the paws; the towel handles the rest of the dog. The Super Shammy is a 31 x 14 in microfiber chenille towel with hand pockets, which the page lists as quick drying and machine washable. [[10]](https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey) It is one size and gives no absorbency figure, so it suits a small to medium dog best or serves as a first pass on a bigger one; skip it if you already pack a dog towel. Ask the host where wet dogs may be dried.
-
-{{pick:soggy-doggy-super-shammy-towel|Drying a wet dog|The maker lists a 31 x 14 in microfiber chenille towel with hand pockets that is machine washable; no absorbency figure is given.|https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey}}
-
-### What to buy first
-
-1. Pads, if a puppy or senior dog is coming; skip them otherwise.
-2. The doormat, if the forecast or the setting is muddy.
-3. The towel, if the dog will get wet and the host has no drying spot.
-
-Pack all three only if all three situations apply. For anything else you might need, see our [rental cleanup gear page](/gear/rental-cleanup).
+A pet fee may not cover damage, so the deposit or a later claim is where a muddy floor or an accident can cost you. Nothing you pack guarantees a clean return, and the host decides what counts as damage, but a doormat for wet paws, a towel for a wet dog and washable pads for a puppy or senior dog address the usual causes, and photos when you leave are your best record. Browse our [rental cleanup gear page](/gear/rental-cleanup), and skip any of it you do not need.

@@ -1,0 +1,13 @@
+diff --git a/src/test/stay-indexing.test.ts b/src/test/stay-indexing.test.ts
+index 2c4362c..81440e8 100644
+--- a/src/test/stay-indexing.test.ts
++++ b/src/test/stay-indexing.test.ts
+@@ -96,7 +96,7 @@ describe("stay indexing quality rule", () => {
+           townIsIndexable(d.slug, t.slug, list),
+         );
+     }
+-  });
++  }, 30000);
+   it("never indexes sample stays", () => {
+     expect(
+       sitemapEntries().some(

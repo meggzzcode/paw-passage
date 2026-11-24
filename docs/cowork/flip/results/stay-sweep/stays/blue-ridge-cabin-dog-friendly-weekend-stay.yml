@@ -1,0 +1,24 @@
+status: unverified
+name: Blue Ridge cabin, dog-friendly weekend stay
+type: cabin
+state: georgia
+town: blue-ridge
+summary: Two-bedroom cabin in Blue Ridge; dog fee stated, no dog limit listed.
+description: 'A cabin in Blue Ridge, Georgia, that sleeps 5 with 2 bedrooms and 1 bathroom. Setting, as the listing describes it: blue Ridge, Chattahoochee National Forest area. Dog rules we read: Dog-friendly with a pet fee. We read this from the public Vrbo listing on 2026-11-24 and have not confirmed it with the host.'
+sleeps: 5
+bedrooms: 2
+bathrooms: 1
+locationNote: Blue Ridge, Chattahoochee National Forest area. Blue Ridge, Georgia.
+largeDogsOk: not-confirmed
+fencedYard: not-confirmed
+privateOutdoor: not-confirmed
+petFee: not-confirmed
+breedRestrictions: not-confirmed
+beach: false
+mountain: true
+hotTub: not-confirmed
+houseRules:
+- 'Pets: Dog-friendly with a pet fee (Vrbo listing, read 2026-11-24)'
+- The pet fee amount is not recorded here; check the Vrbo listing before booking.
+photoPermission: false
+sourceUrl: https://www.vrbo.com/5551373

@@ -1,0 +1,27 @@
+status: unverified
+name: Cherry Log cabin near Blue Ridge
+type: cabin
+state: georgia
+town: cherry-log
+summary: Two-bedroom cabin in Cherry Log; up to 2 dogs, 30 lb limit.
+description: 'A cabin in Cherry Log, Georgia, that sleeps 4 with 2 bedrooms and 1 bathroom. Setting, as the listing describes it: cherry Log, Chattahoochee National Forest area. Dog rules we read: Max 2 dogs, 30 lb each; Pet fee applies. We read this from the public Vrbo listing on 2026-11-24 and have not confirmed it with the host.'
+sleeps: 4
+bedrooms: 2
+bathrooms: 1
+locationNote: Cherry Log, Chattahoochee National Forest area. Cherry Log, Georgia.
+maxDogs: 2
+weightLimitLbs: 30
+largeDogsOk: 'no'
+fencedYard: not-confirmed
+privateOutdoor: not-confirmed
+petFee: not-confirmed
+breedRestrictions: not-confirmed
+beach: false
+mountain: true
+hotTub: not-confirmed
+houseRules:
+- 'Pets: Max 2 dogs, 30 lb each (Vrbo listing, read 2026-11-24)'
+- Pet fee applies
+- The pet fee amount is not recorded here; check the Vrbo listing before booking.
+photoPermission: false
+sourceUrl: https://www.vrbo.com/4195401

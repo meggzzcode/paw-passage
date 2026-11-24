@@ -1,0 +1,24 @@
+status: unverified
+name: St. Simons oceanfront cottage, pup-friendly
+type: beach-house
+state: georgia
+town: st-simons-island
+summary: Two-bedroom beach house in St. Simons Island; dog fee stated, no dog limit listed.
+description: 'A beach house in St. Simons Island, Georgia, that sleeps 4 with 2 bedrooms and 2 bathrooms. Setting, as the listing describes it: oceanfront, East Beach area. Dog rules we read: Dogs allowed; non-refundable per-dog fee. We read this from the public Vrbo listing on 2026-11-24 and have not confirmed it with the host.'
+sleeps: 4
+bedrooms: 2
+bathrooms: 2
+locationNote: Oceanfront, East Beach area. St. Simons Island, Georgia.
+largeDogsOk: not-confirmed
+fencedYard: not-confirmed
+privateOutdoor: not-confirmed
+petFee: not-confirmed
+breedRestrictions: not-confirmed
+beach: true
+mountain: false
+hotTub: not-confirmed
+houseRules:
+- 'Pets: Dogs allowed; non-refundable per-dog fee (Vrbo listing, read 2026-11-24)'
+- The pet fee amount is not recorded here; check the Vrbo listing before booking.
+photoPermission: false
+sourceUrl: https://www.vrbo.com/1423615

@@ -1,0 +1,30 @@
+status: unverified
+name: Tybee 5-bedroom home with private pool and game room
+type: vacation-home
+state: georgia
+town: tybee-island
+summary: Five-bedroom vacation home in Tybee Island; up to 2 dogs.
+description: 'A vacation home in Tybee Island, Georgia, that sleeps 10 with 5 bedrooms and 3 bathrooms. Setting, as the listing describes it: 2 min walk to the beach, Tybee Island. Dog rules we read: Up to 2 adult dogs, with approval; Extra pet fees apply. We read this from the public Vrbo listing on 2026-11-24 and have not confirmed it with the host.'
+sleeps: 10
+bedrooms: 5
+bathrooms: 3
+amenityGroups:
+- title: Outdoors
+  items:
+  - Private pool
+locationNote: 2 min walk to the beach, Tybee Island. Tybee Island, Georgia.
+maxDogs: 2
+largeDogsOk: not-confirmed
+fencedYard: not-confirmed
+privateOutdoor: 'yes'
+petFee: not-confirmed
+breedRestrictions: not-confirmed
+beach: true
+mountain: false
+hotTub: not-confirmed
+houseRules:
+- 'Pets: Up to 2 adult dogs, with approval (Vrbo listing, read 2026-11-24)'
+- Extra pet fees apply
+- The pet fee amount is not recorded here; check the Vrbo listing before booking.
+photoPermission: false
+sourceUrl: https://www.vrbo.com/1178277

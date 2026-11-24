@@ -3,7 +3,7 @@ import { liveCategoryFor } from "@/content/gear-hub";
 import { AMAZON_DISCLOSURE, getApprovedLink, isAmazon } from "@/content/affiliates";
 import { getProduct, type GearPick } from "@/content/gear";
 import { trackProductClick } from "@/lib/analytics";
-import { productTitle } from "@/lib/product-display";
+import { ProductSpecCard } from "@/components/site/ProductSpecCard";
 import { productLinkId, productButton, isMonetized } from "@/content/affiliate-usage";
 import { PRODUCT_CALLOUTS_REQUIRE_AFFILIATE_LINK } from "@/content/publish-rule";
 
@@ -54,7 +54,7 @@ export function GearPicks({
           return (
             <li key={pick.productId} className="rounded-xl border border-border bg-card p-6">
               <p className="eyebrow">{pick.bestFor}</p>
-              <h3 className="mt-2 text-2xl">{productTitle(product!)}</h3>
+              <ProductSpecCard product={product!} as="h3" className="mt-2" />
               <p className="mt-2 text-muted-foreground">{product!.summary}</p>
               <p className="mt-3">{pick.whyItMadeTheList}</p>
               <ul className="mt-3 list-disc pl-5 text-sm">

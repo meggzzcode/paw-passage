@@ -1,3 +1,4 @@
+import { productSpecCardHtml } from "@/components/site/ProductSpecCard";
 import { marked, type Tokens, type Token, type TokensList, type Renderer } from "marked";
 import { cn } from "@/lib/utils";
 import { getApprovedLink } from "@/content/affiliates";
@@ -103,7 +104,7 @@ marked.use({
             : "";
         return `<aside class="no-print not-prose my-8 rounded-xl border border-border bg-secondary/50 p-5" data-pick="${escapeHtml(product.id)}">
 <p class="text-xs font-semibold uppercase tracking-[0.14em] text-terracotta">${escapeHtml(t.label && t.label.toLowerCase() !== "our pick" ? t.label : defaultPickLabel(product))}</p>
-<p class="mt-1 font-display text-xl">${escapeHtml(productTitle(product))}</p>
+<div class="mt-3">${productSpecCardHtml(product)}</div>
 <p class="mt-2 text-sm text-muted-foreground">${escapeHtml(product.summary)}</p>${t.note ? `\n<p class="mt-2 text-sm"><span class="font-medium">Why we picked it:</span> ${escapeHtml(t.note)}${t.sourceUrl ? ` <a href="${escapeHtml(t.sourceUrl)}" target="_blank" rel="noopener noreferrer" class="underline">Source</a>` : ""}</p>` : ""}
 <p class="mt-4 flex flex-wrap items-center gap-4"><a${attrs} href="${escapeHtml(link.url)}" target="_blank" rel="${escapeHtml(link.rel)}" class="inline-flex h-10 items-center rounded-full bg-terracotta-button px-5 text-sm font-medium text-terracotta-foreground hover:brightness-95">${escapeHtml(link.label)}</a>${cat ? `<a href="/gear/${escapeHtml(cat)}#${escapeHtml(product.id)}" class="text-sm underline">Details and specs</a>` : ""}</p>
 <p class="mt-3 text-xs text-muted-foreground">Check the current price on the listing before you buy.</p>

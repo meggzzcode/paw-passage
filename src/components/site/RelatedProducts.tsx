@@ -1,7 +1,7 @@
 import { Link, useLocation } from "@tanstack/react-router";
 import { getProducts } from "@/content/gear";
 import { resolveProductLink } from "@/content/gear-links";
-import { productTitle } from "@/lib/product-display";
+import { ProductSpecCard } from "@/components/site/ProductSpecCard";
 import { GearDisclosure } from "@/components/site/GearHubCards";
 import { trackProductClick } from "@/lib/analytics";
 import { isMonetized } from "@/content/affiliate-usage";
@@ -47,7 +47,7 @@ export function RelatedProducts({
           const cat = p.categories?.[0];
           return (
             <li key={p.id} className="rounded-xl border border-border bg-card p-5">
-              <h3 className="text-xl">{productTitle(p)}</h3>
+              <ProductSpecCard product={p} as="h3" />
               <p className="mt-3 text-sm text-muted-foreground">{p.summary}</p>
               <div className="mt-3 flex flex-wrap items-center gap-3 text-sm">
                 {cat && (

@@ -15,7 +15,7 @@ export const guide: Guide = {
   lastReviewed: "2026-11-24",
   readingMinutes: 8,
   heroImage: "gear-portable-fence",
-  body: `The MidWest Exercise Pen with Door, in the tallest size that fits your car, is the pick for a dog that jumps. The Carlson Convertible Pet Yard suits a small dog that also needs a doorway barrier. A pen is a short, supervised tool and not a replacement for a fenced yard, and the host's rules decide whether it works at all.
+  body: `Pens, gates and crates solve different problems, so match the product to your dog and to the doorway or deck you need to close.
 
 > **At a glance: our picks**
 >
@@ -26,7 +26,7 @@ export const guide: Guide = {
 
 **Before you buy**
 
-- A pen is only as strong as the dog is calm: MidWest says a pet not trained to be restricted may attempt to escape, which could cause serious injury. [[2]](https://www.midwesthomes4pets.com/wp-content/uploads/ExPen_550DR_Eng.pdf)
+- A pen is only as strong as the dog is calm: [MidWest](https://www.midwesthomes4pets.com/wp-content/uploads/ExPen_550DR_Eng.pdf) says a pet not trained to be restricted may attempt to escape, which could cause serious injury.
 - Ask the host before bringing anything that could mark a floor, deck or lawn, and get the answer in writing.
 
 If the trip depends on a yard, start with our guide to [finding a rental with a secure fenced yard](/guides/vacation-rental-secure-fenced-yard); it covers how to check a yard, which this page does not.
@@ -34,65 +34,44 @@ If the trip depends on a yard, start with our guide to [finding a rental with a 
 ## What to look for
 
 - **Height:** taller than your dog's jump, in inches, not a size word like "medium".
-- **A stated dog size or weight limit.** None of the pens we read states one, so choose conservatively.
+- **A stated dog size or weight limit.** Choose conservatively; see the end of this page.
 - **A door and latch** you can work one-handed, ideally with a second lock or clip.
 - **Floor protection:** feet or stabilizers that can sit on the bottom, plus a mat.
 - **Folds flat** and fits your car.
 
-We give no prices because they change; check the current price on the listing.
-
 ## Pens, gates and crates
 
-**Freestanding exercise pens** are connected panels that open into a rough circle, square or octagon. They give a dog a bounded space indoors, on a patio or on grass. They do not stop a determined jumper or climber, or survive a dog leaning hard on one panel. This table uses only what each maker's page states.
+**Freestanding exercise pens** are connected panels that open into a rough circle, square or octagon. They give a dog a bounded space indoors, on a patio or on grass. They do not stop a determined jumper or climber, or survive a dog leaning hard on one panel. Each spec below is what the maker's page states.
 
-| Product | Height | Door | Floor protection | Best for |
-| --- | --- | --- | --- | --- |
-| MidWest Exercise Pen with Door (wire) | 24 to 48 in size designations | Two slide-bolt latches plus a safety clip | Stabilizers can sit on the bottom | A dog who leans or jumps |
-| Petmate Soft Side Play Yard (mesh) | Dimensions listed without units | Not stated | Removable washable floor | A calm puppy or small dog |
-| Carlson Convertible Pet Yard (metal) | 28 in | 16.3 in walk-through, sliding safety lock | Not stated | A small or medium dog on a deck or at a doorway |
-| North States MyPet Petgate (plastic) | 26 in; fits 26 to 42 in openings | A gate, not a pen | Not applicable | A doorway where screws are not allowed |
-
-**A rigid pen for a dog who tests the walls.** The MidWest Exercise Pen with Door is a wire pen with eight connected panels in 24 to 48 inch size designations, a door with two slide-bolt latches plus a safety clip, and eight ground anchors and eight corner stabilizers in the box. [[2]](https://www.midwesthomes4pets.com/wp-content/uploads/ExPen_550DR_Eng.pdf) The manual says the stabilizers give maximum stability with all eight on top, a mix with every other one on the bottom, and floor protection only with all eight on the bottom. Choose the height from the size designations and your dog's jump. It suits a dog that will face a pen with you present; skip it for a dog that panics in enclosures.
+**A rigid pen for a dog who tests the walls.** The MidWest Exercise Pen with Door is a wire pen with eight connected panels in 24 to 48 inch size designations, a door with two slide-bolt latches plus a safety clip, and eight ground anchors and eight corner stabilizers in the box. [[1]](https://www.midwesthomes4pets.com/wp-content/uploads/ExPen_550DR_Eng.pdf) The manual says the stabilizers give maximum stability with all eight on top, a mix with every other one on the bottom, and floor protection only with all eight on the bottom. Choose the height from the size designations and your dog's jump. It suits a dog that will face a pen with you present; skip it for a dog that panics in enclosures.
 
 {{pick:midwest-exercise-pen-with-door|Tallest rigid option: 24 to 48 in sizes|Eight connected panels, two-latch door with a safety clip, ground anchors, and corner stabilizers that can serve as floor protectors.|https://www.midwesthomes4pets.com/product/dogs/pens-gates-barriers/exercise-pen-with-door/}}
 
-**A floored soft yard, with no usable height stated.** The Petmate Precision Pet Soft Side Play Yard has eight ventilated mesh panels, reinforced corners, a removable top and a removable washable floor. The maker says it sets up with no tools, includes ground stakes and works indoors or outdoors, including in backyards without fences. [[4]](https://www.petmate.com/products/precision-pet-soft-side-play-yard) The floor is the rental-friendly part: the dog is not on the host's lawn or carpet. The page lists dimensions of 30.5 x 19 x 2.25 with no units, gives no folded size and makes no strength claim. Use it for calm, supervised time with a puppy or small dog, and skip it for a jumper or a chewer.
+**A floored soft yard, with no usable height stated.** The Petmate Precision Pet Soft Side Play Yard has eight ventilated mesh panels, reinforced corners, a removable top and a removable washable floor. The maker says it sets up with no tools, includes ground stakes and works indoors or outdoors, including in backyards without fences. [[2]](https://www.petmate.com/products/precision-pet-soft-side-play-yard) The floor is the rental-friendly part: the dog is not on the host's lawn or carpet. The page lists dimensions of 30.5 x 19 x 2.25 with no units, gives no folded size and makes no strength claim. Use it for calm, supervised time with a puppy or small dog, and skip it for a jumper or a chewer.
 
 {{pick:petmate-precision-pet-soft-side-play-yard|For a calm puppy or small dog|Eight ventilated mesh panels, removable top and washable floor, no-tools setup, ground stakes.|https://www.petmate.com/products/precision-pet-soft-side-play-yard}}
 
-**A metal pen for a deck, indoors or across an opening.** The Carlson Convertible Pet Yard is six removable 24-inch all-metal panels, 28 inches high, hinged for several configurations, with a 16.3-inch walk-through door and sliding safety lock. The maker says it can work as a gate up to 146.5 inches wide with all six panels. [[5]](https://carlsonpetproducts.com/products/convertible-pet-yard) It suits a small or medium dog that needs a pen one day and a living-room barrier the next. Three cautions: 28 inches is modest for a jumper, bar gaps of 2 to 2.5 inches matter for puppies and toy breeds, and the page does not say whether it stands unattached to a wall. Skip it for a large dog or a jumper.
+**A metal pen for a deck, indoors or across an opening.** The Carlson Convertible Pet Yard is six removable 24-inch all-metal panels, 28 inches high, hinged for several configurations, with a 16.3-inch walk-through door and sliding safety lock. The maker says it can work as a gate up to 146.5 inches wide with all six panels. [[3]](https://carlsonpetproducts.com/products/convertible-pet-yard) It suits a small or medium dog that needs a pen one day and a living-room barrier the next. Two cautions: 28 inches is modest for a jumper, bar gaps of 2 to 2.5 inches matter for puppies and toy breeds, and the page does not say whether it stands unattached to a wall. Skip it for a large dog or a jumper.
 
-{{pick:carlson-convertible-pet-yard|Metal pen that doubles as a gate|Six 24-inch all-metal panels at 28 inches high, 16.3-inch walk-through door with a sliding safety lock; no dog-size limit stated.|https://carlsonpetproducts.com/products/convertible-pet-yard}}
+{{pick:carlson-convertible-pet-yard|Metal pen that doubles as a gate|Six 24-inch all-metal panels at 28 inches high, 16.3-inch walk-through door with a sliding safety lock|https://carlsonpetproducts.com/products/convertible-pet-yard}}
 
-**Gates** close a doorway; they are not playpens. Pressure-mounted gates may mark trim or paint, and wall-mounted ones are often refused by a rental host, so ask. The North States MyPet Universal Petgate is 26 inches high and adjusts to openings from 26 to 42 inches, with a pressure mount that needs no tools or drilling, or an optional hardware mount. The page says not to use it at the top of a stairway when held only by tension. [[6]](https://northstatesind.com/north-states-mypet-universal-petgate/) In our view 26 inches is short for a dog that jumps. It suits a dog that respects a barrier in a rental that does not allow screws.
+**Gates** close a doorway; they are not playpens. Pressure-mounted gates may mark trim or paint, and wall-mounted ones are often refused by a rental host, so ask. The North States MyPet Universal Petgate is 26 inches high and adjusts to openings from 26 to 42 inches, with a pressure mount that needs no tools or drilling, or an optional hardware mount. The page says not to use it at the top of a stairway when held only by tension. [[4]](https://northstatesind.com/north-states-mypet-universal-petgate/) In our view 26 inches is short for a dog that jumps. It suits a dog that respects a barrier in a rental that does not allow screws.
 
 {{pick:north-states-mypet-universal-petgate|Pressure-mount doorway gate|26-inch height, openings from 26 to 42 inches, pressure mount with no tools; never at the top of stairs on tension alone.|https://northstatesind.com/north-states-mypet-universal-petgate/}}
 
-**Crates** suit only a dog that already accepts one. A folding wire crate packs flat for the car; choose the size from the maker's chart and your dog's measurements. The MidWest iCrate, for example, lists seven sizes from 18 to 48 inches, a divider panel, a removable leak-proof pan, rubber feet and a slide-bolt latch. [[7]](https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/) Its page gives no wire gauge, weight or folded size, so check the listing.
+**Crates** suit only a dog that already accepts one. A folding wire crate packs flat for the car; choose the size from the maker's chart and your dog's measurements. The MidWest iCrate, for example, lists seven sizes from 18 to 48 inches, a divider panel, a removable leak-proof pan, rubber feet and a slide-bolt latch. [[5]](https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/) Its page gives no wire gauge, weight or folded size, so check the listing.
 
 ## Tie-outs: the option we steer away from
 
-Humane World for Animals, formerly the Humane Society of the United States, describes tethering as fastening a dog to a stationary object and leaving them unattended. It says long-term restraint can severely damage a dog's physical and psychological well-being, that tethering is a high-risk factor in serious dog bites and attacks, and that keeping an animal tethered for long periods or in extreme weather is never acceptable. [[1]](https://www.humaneworld.org/en/resources/it-okay-chain-or-tether-dogs) If you clip a leash to a chair or railing for a moment, stay within arm's reach. Tether laws vary by state and city and we did not research them.
+[Humane World for Animals](https://www.humaneworld.org/en/resources/it-okay-chain-or-tether-dogs), formerly the Humane Society of the United States, describes tethering as fastening a dog to a stationary object and leaving them unattended. It says long-term restraint can severely damage a dog's physical and psychological well-being, that tethering is a high-risk factor in serious dog bites and attacks, and that keeping an animal tethered for long periods or in extreme weather is never acceptable. If you clip a leash to a chair or railing for a moment, stay within arm's reach. Tether laws vary by state and city and we did not research them.
 
 ## Height, stability and latches
 
 Ask whether your dog jumps on counters or fences, climbs (horizontal rails can work like a ladder), digs at floors, or reacts to a squirrel or a delivery. If you do not know, treat the pen as untested and keep a hand on the leash during the first sessions. No maker we read promises a dog cannot get out.
 
-The soft yard has mesh panels and a floor instead of rigid rails, so a leaning or chewing dog tests it differently from a wire pen. The MidWest manual says its corner stabilizers help prevent the opposite end from collapsing if the animal jumps up on the side, which could injure the animal or tip the pen over. [[2]](https://www.midwesthomes4pets.com/wp-content/uploads/ExPen_550DR_Eng.pdf) [[3]](https://www.midwesthomes4pets.com/product/dogs/pens-gates-barriers/exercise-pen-with-door/)
+The soft yard has mesh panels and a floor instead of rigid rails, so a leaning or chewing dog tests it differently from a wire pen. The MidWest manual says its corner stabilizers help prevent the opposite end from collapsing if the animal jumps up on the side, which could injure the animal or tip the pen over. [[1]](https://www.midwesthomes4pets.com/wp-content/uploads/ExPen_550DR_Eng.pdf) [[7]](https://www.midwesthomes4pets.com/product/dogs/pens-gates-barriers/exercise-pen-with-door/)
 
 MidWest tells owners to remove collars, tags and leads before placing the pet inside, to prevent entanglement. Put the collar and tag back on as soon as the dog is out, and keep the microchip record current, because the dog has no visible ID inside. Our [loose-dog guide](/guides/if-your-dog-gets-loose-on-a-trip) covers what to do if the dog gets out.
-
-### Pick by situation
-
-| Your situation | Where to start | Key caution |
-| --- | --- | --- |
-| Small dog, hard floors, host says no screws | Carlson Convertible Pet Yard indoors on a mat | The metal yard is 28 inches high |
-| Jumper or large dog | MidWest Exercise Pen with Door, tallest size, stabilizers | No maker states a dog size or weight limit; practice at home, or use a crate or closed room |
-| Temporary outdoor enclosure on grass | A pen with ground anchors | Ask before staking into a lawn |
-| Closing a doorway | North States MyPet Universal Petgate | Never at the top of stairs on tension alone |
-| Two dogs | Larger pen, or one dog in a closed room | Each dog's behavior matters, not just the count |
-
-For two dogs, see our [multi-dog rental guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental); for large dogs, the [large-dog rental guide](/guides/vacation-rentals-that-welcome-large-dogs); for a dog that reacts to other dogs or people, the [reactive-dog rental guide](/guides/vacation-rental-with-a-reactive-dog) before relying on a pen.
 
 ## Rental etiquette: ask before you install
 
@@ -122,10 +101,7 @@ Pen specs here are the makers' claims, read on 2026-11-16 (the metal yard, soft 
 
 ## What to buy first
 
-1. **Measure your dog** and note whether it jumps, climbs or digs; that decides the pen height. Then ask the host the questions above before you buy anything with anchors.
-2. **A freestanding pen** tall enough for the dog, with a one-handed latch and floor protection: the MidWest Exercise Pen with Door for a large dog or jumper, the Carlson Convertible Pet Yard for a small dog that also needs a doorway barrier.
-3. **A gate or a folding crate** only if you need to close a doorway or your dog already accepts a crate.
-4. **A mat or rug** under the pen if the floor is delicate. Add the setup to your [trip checklist](/tools/checklist) or [packing list](/tools/packing-list) so it gets packed.`,
+Measure your dog and note whether it jumps, climbs or digs; that decides the pen height. Ask the host the questions above before you buy anything with anchors, then pick from the cards above and add a mat if the floor is delicate. For two dogs, see our [multi-dog rental guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental); for a large or reactive dog, read the [large-dog](/guides/vacation-rentals-that-welcome-large-dogs) and [reactive-dog](/guides/vacation-rental-with-a-reactive-dog) guides before relying on a pen. Add the setup to your [trip checklist](/tools/checklist) or [packing list](/tools/packing-list).`,
   faqs: [
     {
       q: "What is a good portable dog fence for a rental with no yard?",
@@ -133,7 +109,7 @@ Pen specs here are the makers' claims, read on 2026-11-16 (the metal yard, soft 
     },
     {
       q: "Can a portable dog fence replace a fenced yard at a rental?",
-      a: "No. A pen is a short, supervised tool. MidWest warns that a dog not trained to be restricted may try to escape and be injured. If your trip depends on unsupervised yard time, book a rental with a genuinely secure yard instead. [[2]](https://www.midwesthomes4pets.com/wp-content/uploads/ExPen_550DR_Eng.pdf)",
+      a: "No. A pen is a short, supervised tool. [MidWest](https://www.midwesthomes4pets.com/wp-content/uploads/ExPen_550DR_Eng.pdf) warns that a dog not trained to be restricted may try to escape and be injured. If your trip depends on unsupervised yard time, book a rental with a genuinely secure yard instead.",
     },
     {
       q: "Do I need the host's permission to bring a pen?",
@@ -141,15 +117,15 @@ Pen specs here are the makers' claims, read on 2026-11-16 (the metal yard, soft 
     },
     {
       q: "Is a tie-out a good alternative when there is no fence?",
-      a: "We do not recommend it for a dog left alone. Humane World for Animals describes tethering as fastening a dog to a stationary object and leaving them unattended, and calls it a high-risk factor in serious dog bites and attacks. [[1]](https://www.humaneworld.org/en/resources/it-okay-chain-or-tether-dogs)",
+      a: "We do not recommend it for a dog left alone. [Humane World for Animals](https://www.humaneworld.org/en/resources/it-okay-chain-or-tether-dogs) describes tethering as fastening a dog to a stationary object and leaving them unattended, and calls it a high-risk factor in serious dog bites and attacks.",
     },
     {
       q: "How tall should a pen be?",
-      a: "Follow the maker's stated height and dog-size information, then compare it with your dog's actual jumping and climbing. One metal pen line comes in 24 to 48 inches, one metal yard is 28 inches and one soft-sided yard lists dimensions without units, but no maker promises a dog cannot get out. [[3]](https://www.midwesthomes4pets.com/product/dogs/pens-gates-barriers/exercise-pen-with-door/)",
+      a: "Follow the maker's stated height and dog-size information, then compare it with your dog's actual jumping and climbing. One metal pen line comes in 24 to 48 inches, one metal yard is 28 inches and one soft-sided yard lists dimensions without units, but no maker promises a dog cannot get out.",
     },
     {
       q: "Can I leave my dog in a pen while I go out?",
-      a: "We do not recommend it. MidWest advises against leaving young animals unsupervised for extended periods, and rentals often have their own unattended-pet rules. Ask the host and plan to stay with your dog. [[2]](https://www.midwesthomes4pets.com/wp-content/uploads/ExPen_550DR_Eng.pdf)",
+      a: "We do not recommend it. MidWest advises against leaving young animals unsupervised for extended periods, and rentals often have their own unattended-pet rules. Ask the host and plan to stay with your dog.",
     },
   ],
   gear: [
@@ -219,21 +195,9 @@ Pen specs here are the makers' claims, read on 2026-11-16 (the metal yard, soft 
   relatedTools: ["checklist"],
   sources: [
     {
-      title: "Is it okay to chain or tether dogs?",
-      url: "https://www.humaneworld.org/en/resources/it-okay-chain-or-tether-dogs",
-      publisher: "Humane World for Animals (formerly the Humane Society of the United States)",
-      accessedOn: "2026-11-16",
-    },
-    {
       title:
         "Assembly Instructions for Model Number 550-24DR, 552-30DR, 554-36DR, 556-42DR, 558-48DR",
       url: "https://www.midwesthomes4pets.com/wp-content/uploads/ExPen_550DR_Eng.pdf",
-      publisher: "MidWest Homes for Pets",
-      accessedOn: "2026-11-16",
-    },
-    {
-      title: "Exercise Pen with Door",
-      url: "https://www.midwesthomes4pets.com/product/dogs/pens-gates-barriers/exercise-pen-with-door/",
       publisher: "MidWest Homes for Pets",
       accessedOn: "2026-11-16",
     },
@@ -260,6 +224,18 @@ Pen specs here are the makers' claims, read on 2026-11-16 (the metal yard, soft 
       url: "https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/",
       publisher: "MidWest Homes for Pets",
       accessedOn: "2026-11-18",
+    },
+    {
+      title: "Is it okay to chain or tether dogs?",
+      url: "https://www.humaneworld.org/en/resources/it-okay-chain-or-tether-dogs",
+      publisher: "Humane World for Animals (formerly the Humane Society of the United States)",
+      accessedOn: "2026-11-16",
+    },
+    {
+      title: "Exercise Pen with Door",
+      url: "https://www.midwesthomes4pets.com/product/dogs/pens-gates-barriers/exercise-pen-with-door/",
+      publisher: "MidWest Homes for Pets",
+      accessedOn: "2026-11-16",
     },
   ],
   research: {

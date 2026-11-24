@@ -36,25 +36,25 @@ An unanswered preference can wait. An unanswered deal-breaker cannot.
 
 ## Permission (check 1)
 
-Check the exact unit, not the manager's portfolio. Vrbo's house-rules guidance lets hosts state pet type, number and size limits, so read them instead of trusting the pet-friendly filter. [[1]](https://help.vrbo.com/articles/what-are-house-rules)
+Check the exact unit, not the manager's portfolio. [Vrbo's house-rules guidance](https://help.vrbo.com/articles/what-are-house-rules) lets hosts state pet type, number and size limits, so read them instead of trusting the pet-friendly filter.
 
 - [ ] Count, weight (per dog or combined), breed and age limits written down.
 - [ ] Approval received in the booking channel, naming each dog and the dates.
 
-Weight limits are real and they differ a lot. Across the 38 managers in our convenience sample (public pages read 2026-11-18), six state one, from 35 to 65 pounds. Our [large-dog guide](/guides/vacation-rentals-that-welcome-large-dogs) names them, and the [two-dog guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental) covers counts and combined weight. For a quick yes or no on your own dog, try the [acceptance tool](/tools/will-my-dog-be-accepted); breed rules are worth confirming in writing too. Puppies face their own age questions in our [puppy rental guide](/guides/puppy-at-a-vacation-rental).
+Weight limits are real and they differ a lot. Across the 38 managers in our convenience sample (public pages read 2026-11-18), six state one, from 35 to 65 pounds. Our [large-dog guide](/guides/vacation-rentals-that-welcome-large-dogs) names them, and [rentals with no dog weight limit](/guides/vacation-rentals-with-no-dog-weight-limit) lists two managers that state none, and the [two-dog guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental) covers counts and combined weight. For a quick yes or no on your own dog, try the [acceptance tool](/tools/will-my-dog-be-accepted); breed rules are worth confirming in writing too. Puppies face their own age questions in our [puppy rental guide](/guides/puppy-at-a-vacation-rental).
 
 ## Price (check 2)
 
-Enter your real dates, guest count and pet count before comparing, and save the final breakdown. Airbnb describes pet fees charged per booking, per night, per pet, or per pet per night, so check the unit, not just the amount. [[2]](https://www.airbnb.com/help/article/3623)
+Fees change, so check the manager's page again before you book. Enter your real dates, guest count and pet count before comparing, and save the final breakdown. [Airbnb describes pet fees](https://www.airbnb.com/help/article/3623) charged per booking, per night, per pet, or per pet per night, so check the unit, not just the amount.
 
 - [ ] Pet fee: per stay, per night, per dog, or per dog-night?
 - [ ] Cleaning fee: already in the total, or on top of the pet fee?
 - [ ] Refundable deposit: how much, held how, released when?
 - [ ] Damage waiver or protection: what it covers and what it leaves to you.
 - [ ] Taxes and platform charges: the final payable amount.
-- [ ] Any request to pay a pet charge off-platform goes to platform support first. [[3]](https://www.airbnb.com/help/article/2799)
+- [ ] Any request to pay a pet charge off-platform goes to platform support first ([Airbnb policy](https://www.airbnb.com/help/article/2799)).
 
-The same-looking number can bill very differently. As of 2026-11-18, Big Bear Vacations lists $40 per night per pet, while AMI Locals lists $250 per stay. For a 7-night stay with two dogs that is $560 versus $250, using the managers' own stated bases. Vrbo notes that property settings and pending claims can affect a refundable deposit's return. [[4]](https://help.vrbo.com/articles/Does-HomeAway-Payments-automatically-issue-refunds-to-travelers) The [damage-charge guide](/guides/airbnb-pet-damage-charge-after-checkout) covers checkout, and [what a dog really costs on a rental trip](/guides/what-a-dog-really-costs-on-a-vacation-rental) covers the wider picture.
+The same-looking number can bill very differently. As of 2026-11-18, Big Bear Vacations lists $40 per night per pet, while AMI Locals lists $250 per stay. For a 7-night stay with two dogs that is $560 versus $250, using the managers' own stated bases. [Vrbo notes](https://help.vrbo.com/articles/Does-HomeAway-Payments-automatically-issue-refunds-to-travelers) that property settings and pending claims can affect a refundable deposit's return. The [damage-charge guide](/guides/airbnb-pet-damage-charge-after-checkout) covers checkout, and [what a dog really costs on a rental trip](/guides/what-a-dog-really-costs-on-a-vacation-rental) covers the wider picture.
 
 ## House rules, on a real day (check 3)
 
@@ -79,7 +79,7 @@ The [fenced-yard guide](/guides/vacation-rental-secure-fenced-yard) has the phot
 
 ## Cancellation (check 6)
 
-- [ ] Save the policy for your booking: deadline, property time zone, refund percentages and what happens to fees. Vrbo's policy options vary by host and season, so read the schedule for your dates. [[7]](https://help.vrbo.com/articles/What-are-the-cancellation-policy-options)
+- [ ] Save the policy for your booking: deadline, property time zone, refund percentages and what happens to fees. [Vrbo's policy options](https://help.vrbo.com/articles/What-are-the-cancellation-policy-options) vary by host and season, so read the schedule for your dates.
 - [ ] Calendar the last free-cancellation date and settle pet approval before it.
 
 ## Local rules and an emergency plan (checks 7 and 8)
@@ -88,11 +88,11 @@ The [fenced-yard guide](/guides/vacation-rental-secure-fenced-yard) has the phot
 - [ ] A legal walking option near the rental, plus a backup.
 - [ ] Routine clinic and after-hours emergency hospital saved offline, with hours confirmed.
 
-AVMA advises calling your vet or a local emergency hospital on the way, so they can be ready when you arrive. [[5]](https://www.avma.org/resources-tools/pet-owners/emergencycare/first-aid-tips-pet-owners)
+[AVMA advises](https://www.avma.org/resources-tools/pet-owners/emergencycare/first-aid-tips-pet-owners) calling your vet or a local emergency hospital on the way, so they can be ready when you arrive.
 
 ## Service animals (not covered by checks 1 to 3)
 
-Skip the pet rules if your dog is a service animal; use the platform's accessibility team. Under the ADA, a service animal is generally a dog individually trained to do work or perform tasks for a person with a disability, and emotional support alone does not qualify. [[6]](https://www.ada.gov/resources/service-animals-faqs/) Coverage of a private rental depends on state law and platform policy, so ask the accessibility team, not the pet line.
+Skip the pet rules if your dog is a service animal; use the platform's accessibility team. Under the ADA, a service animal is generally a dog individually trained to do work or perform tasks for a person with a disability, and emotional support alone does not qualify ([DOJ ADA FAQ](https://www.ada.gov/resources/service-animals-faqs/)). Coverage of a private rental depends on state law and platform policy, so ask the accessibility team, not the pet line.
 
 ## What to ask the host: one message to send
 
@@ -104,15 +104,21 @@ A clear approval names the dogs and the stay; "we're pet-friendly" is not one. M
 
 Most stays need none of this. Buy only for a line you flagged, once the rules are in writing, and skip anything the host already provides. More options sit in our [pens, gates and crates picks](/gear/pens-and-gates).
 
-**A rule that says crate when alone.** "Crate provided" does not mean your dog fits, and a crate your dog already knows removes the guess. The MidWest iCrate comes in seven sizes from 18 to 48 in, with a divider panel, a removable leak-proof pan and rubber feet that protect rental floors, and the maker says it folds flat. [[8]](https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/) It is for a dog that is already crate-trained; the page gives no folded dimensions or weight, so check your trunk.
+**A rule that says crate when alone.** "Crate provided" does not mean your dog fits, and a crate your dog already knows removes the guess. The MidWest iCrate comes in seven sizes from 18 to 48 in, with a divider panel, a removable leak-proof pan and rubber feet that protect rental floors, and the maker says it folds flat. [[1]](https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/) It is for a dog that is already crate-trained; the page gives no folded dimensions or weight, so check your trunk. Skip it if the host provides a crate your dog fits.
 
 {{pick:midwest-icrate-dog-crate|For a crate-when-alone rule|The maker lists sizes 18 to 48 in, an included divider panel, a removable pan and a flat fold.|https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/}}
 
-**A rule that keeps dogs off the furniture.** Your dog needs somewhere obvious to lie, and a bed that comes with you beats guessing what the host leaves out. The Kurgo Loft Wander is a roll-up bed in Medium (27 x 36 in) and Large (36 x 48 in) with a water-resistant top, a waterproof nonslip bottom and a carry handle. [[9]](https://www.kurgo.com/p/loft-wander-dog-bed/K01560) The maker lists no weight, so pick the size from your dog's lying-down length; the button opens the Large.
+**A rule that keeps dogs off the furniture.** Your dog needs somewhere obvious to lie, and a bed that comes with you beats guessing what the host leaves out. The Kurgo Loft Wander is a roll-up bed in Medium (27 x 36 in) and Large (36 x 48 in) with a water-resistant top, a waterproof nonslip bottom and a carry handle. [[2]](https://www.kurgo.com/p/loft-wander-dog-bed/K01560) The maker lists no weight, so pick the size from your dog's lying-down length; the button opens the Large.
 
 {{pick:kurgo-loft-wander-dog-bed|For a no-dogs-on-furniture rule|The maker lists a water-resistant top, a waterproof nonslip bottom, a carry handle and washable care.|https://www.kurgo.com/p/loft-wander-dog-bed/K01560}}
 
-**A closed room or a deck with no fence.** A pressure-mounted gate such as the North States MyPet Universal Petgate (26 in high, 26 to 42 in openings) closes a bedroom or kitchen doorway without screws, but it will not stop a dog that can jump it and the maker says never to use it at the top of a stairway on tension alone. [[11]](https://northstatesind.com/north-states-mypet-universal-petgate/) For a deck or lawn with no fence, a portable pen such as the MidWest Exercise Pen with Door works only with the host's written permission and with you outside too; the maker warns that a pet not trained to be restricted may try to escape. [[10]](https://www.midwesthomes4pets.com/wp-content/uploads/ExPen_550DR_Eng.pdf) Our [pen and playpen guide](/guides/portable-dog-fence-and-playpen-guide-for-rentals) compares them with the alternatives.
+**A closed room.** A pressure-mounted gate closes a bedroom or kitchen doorway without screws. The North States MyPet Universal Petgate is 26 in high and fits 26 to 42 in openings, and the maker says never to use it at the top of a stairway on tension alone. [[3]](https://northstatesind.com/north-states-mypet-universal-petgate/) It will not stop a dog that can jump 26 in.
+
+{{pick:north-states-mypet-universal-petgate|For closing a doorway without screws|The maker lists a 26 in gate for 26 to 42 in openings with a no-tools pressure mount; skip it for a jumper or the top of stairs.|https://northstatesind.com/north-states-mypet-universal-petgate/}}
+
+**A deck or lawn with no fence.** The MidWest Exercise Pen with Door works only with the host's written permission and with you outside too; the maker warns that a pet not trained to be restricted may try to escape. [[4]](https://www.midwesthomes4pets.com/wp-content/uploads/ExPen_550DR_Eng.pdf) Our [pen and playpen guide](/guides/portable-dog-fence-and-playpen-guide-for-rentals) compares it with the alternatives.
+
+{{pick:midwest-exercise-pen-with-door|For a deck with no fence, if the host allows|Eight panels in 24 to 48 in sizes, a two-latch door and corner stabilizers; skip it for a dog that panics in enclosures or without written permission.|https://www.midwesthomes4pets.com/product/dogs/pens-gates-barriers/exercise-pen-with-door/}}
 
 If two listings tie, choose the one whose approval names your dogs in writing and whose cancellation deadline is later; do not trade those for a better photo.
 
@@ -122,9 +128,7 @@ If two listings tie, choose the one whose approval names your dogs in writing an
 - [ ] Familiar bedding, leads, waste bags, food and any crate packed ([cabin packing guide](/guides/dog-friendly-cabin-packing-list)).
 - [ ] On arrival, inspect exits and gates with the dog secured, and photograph anything off.
 
-## How sure we are
-
-The platform, DOJ, AVMA and manager statements above come from the pages cited. The manager figures are a convenience sample of 38 managers read 2026-11-18, not a survey. Your exact unit's rules, fees and insurer conditions are unknown until the host confirms them in writing.
+Weight and fee figures come from public manager pages (a 38-manager convenience sample, not a survey); your unit's rules are confirmed only when the host says so in writing.
 
 Booked somewhere that says no pets? Ask the manager before you travel rather than bringing the dog unapproved. Next step: save your answers in the [checklist tool](/tools/checklist).
 `,
@@ -155,7 +159,7 @@ Booked somewhere that says no pets? Ask the manager before you travel rather tha
     },
     {
       q: "What should a pet-friendly vacation rental checklist include?",
-      a: "Eight checks: written approval for your exact dogs, the complete price, house rules you can follow, a suitable layout, a fenced yard if you need one, cancellation terms, legal walks, and an emergency vet. Clear them for the exact listing before paying.",
+      a: "Eight checks, listed near the top of this page. Clear them for the exact listing before you pay.",
     },
   ],
   relatedGuides: [
@@ -167,9 +171,39 @@ Booked somewhere that says no pets? Ask the manager before you travel rather tha
     "can-you-leave-a-dog-alone-in-a-vacation-rental",
     "puppy-at-a-vacation-rental",
   ],
-  relatedProducts: ["midwest-icrate-dog-crate", "kurgo-loft-wander-dog-bed"],
+  relatedProducts: [
+    "midwest-icrate-dog-crate",
+    "kurgo-loft-wander-dog-bed",
+    "north-states-mypet-universal-petgate",
+    "midwest-exercise-pen-with-door",
+  ],
   relatedTools: ["checklist"],
   sources: [
+    {
+      title: "iCrate Dog Crate",
+      url: "https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/",
+      publisher: "MidWest Homes for Pets",
+      accessedOn: "2026-11-18",
+    },
+    {
+      title: "Loft Wander Dog Bed",
+      url: "https://www.kurgo.com/p/loft-wander-dog-bed/K01560",
+      publisher: "Kurgo",
+      accessedOn: "2026-11-16",
+    },
+    {
+      title: "North States MyPet Universal Petgate",
+      url: "https://northstatesind.com/north-states-mypet-universal-petgate/",
+      publisher: "North States",
+      accessedOn: "2026-11-18",
+    },
+    {
+      title:
+        "Assembly Instructions for Model Number 550-24DR, 552-30DR, 554-36DR, 556-42DR, 558-48DR",
+      url: "https://www.midwesthomes4pets.com/wp-content/uploads/ExPen_550DR_Eng.pdf",
+      publisher: "MidWest Homes for Pets",
+      accessedOn: "2026-11-16",
+    },
     {
       title: "About house rules",
       url: "https://help.vrbo.com/articles/what-are-house-rules",
@@ -211,31 +245,6 @@ Booked somewhere that says no pets? Ask the manager before you travel rather tha
       url: "https://help.vrbo.com/articles/What-are-the-cancellation-policy-options",
       publisher: "Vrbo",
       accessedOn: "2026-11-16",
-    },
-    {
-      title: "iCrate Dog Crate",
-      url: "https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/",
-      publisher: "MidWest Homes for Pets",
-      accessedOn: "2026-11-18",
-    },
-    {
-      title: "Loft Wander Dog Bed",
-      url: "https://www.kurgo.com/p/loft-wander-dog-bed/K01560",
-      publisher: "Kurgo",
-      accessedOn: "2026-11-16",
-    },
-    {
-      title:
-        "Assembly Instructions for Model Number 550-24DR, 552-30DR, 554-36DR, 556-42DR, 558-48DR",
-      url: "https://www.midwesthomes4pets.com/wp-content/uploads/ExPen_550DR_Eng.pdf",
-      publisher: "MidWest Homes for Pets",
-      accessedOn: "2026-11-16",
-    },
-    {
-      title: "North States MyPet Universal Petgate",
-      url: "https://northstatesind.com/north-states-mypet-universal-petgate/",
-      publisher: "North States",
-      accessedOn: "2026-11-18",
     },
   ],
   research: {

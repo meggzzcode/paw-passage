@@ -14,19 +14,19 @@ Events are sent only when a GA4 ID is set in `content/settings.yml`. Nothing a v
 | `hub_card_click` | Click on a card on a hub page | `hub`, `card`, `page_path` | function added; call site TO ADD in the gear hub files (owned by WP4) |
 | `outbound_click` | Click on a plain outbound link (maker site, official source) | `link_url` (host and path), `link_label`, `page_path` | function added; call site TO ADD where wanted |
 | `tool_start` | Visitor first touches a tool | `tool_name`, `tool_label`, `item_count`, `page_path` | exists |
-| `tool_complete` | Visitor gets a result | same | exists (add one in `StayFeeCalculator.tsx`, below) |
+| `tool_complete` | Visitor gets a result | same | exists |
 | `tool_copy` | Copied the result | same | exists |
 | `tool_print` | Printed the result | same | exists |
 | `rules_search` | Used dog-rules search or filters (label is the filter name, never typed text) | same | exists |
 | `rules_view` | Opened a place's rules page | same | exists |
 | `rules_source_click` | Clicked through to an official source | same | exists |
 
-`tool_name` values in use: `pet-cost-workflow`, `checklist`, `dog-rules`, `packing`, `stay-fee-calculator`, and the dog-accepted checker (see `DogAcceptedChecker.tsx`). The older `docs/TOOL-TRACKING.md` lists fewer; this table is the current one.
+`tool_name` values in use: `pet-cost-workflow`, `checklist`, `dog-rules`, `packing`, and the dog-accepted checker (see `DogAcceptedChecker.tsx`). The older `docs/TOOL-TRACKING.md` lists fewer; this table is the current one.
 
 Pinterest referrals need no code. Pin links carry `utm_source=pinterest&utm_medium=social&utm_campaign=...&utm_content=...` (see `docs/PINTEREST-SETUP.md`) and GA4 reads utm parameters on its own.
 
 ### Calls still to add (files owned by other workers)
-- `src/components/site/StayFeeCalculator.tsx`: when a total is shown, `trackToolOnce("tool_complete", { tool: "stay-fee-calculator", label: stay.slug })` (it already sends `tool_start`).
+- The stay fee calculator was removed on 2026-11-24 (it needed fee upkeep), so its `stay-fee-calculator` event no longer fires.
 - Gear hub card links: `trackHubCardClick({ hub: "gear", card: category.slug, page: loc.pathname })` in the onClick of each card link.
 - Plain outbound links in components that render them: `trackOutboundClick({ url, page, label })`.
 - The Stay22 map is an embedded frame; clicks inside it cannot be seen by the site. Use Stay22's own dashboard for those. `trackAccommodationReferral` is for any link of ours that goes to a referral partner.

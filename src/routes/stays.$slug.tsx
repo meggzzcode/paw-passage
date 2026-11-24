@@ -5,7 +5,6 @@ import { getState, getTown, townName, stateAbbr } from "@/content/destinations";
 import { stayTypeLabels } from "@/lib/filters";
 import { describeFee, yesNo } from "@/lib/stay-format";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
-import { StayFeeCalculator } from "@/components/site/StayFeeCalculator";
 import { BookingButton } from "@/components/site/BookingButton";
 import { PreviewBadge } from "@/components/site/StatusBadge";
 import { stayTitle, stayDescription } from "@/lib/stay-meta";
@@ -344,7 +343,6 @@ function StayPage() {
               <BookingButton stay={s} book />
             </div>
           </div>
-          <StayFeeCalculator stay={s} />
         </aside>
       </div>
       {related.length > 0 && (

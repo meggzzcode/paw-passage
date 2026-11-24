@@ -91,7 +91,6 @@ export function trackToolOnce(
  *  - hub card links (GearHubCards, category pages):      trackHubCardClick({ hub: "gear", card: category.slug, page })
  *  - a plain outbound link (maker site, official source): trackOutboundClick({ url, page, label })
  *  - an accommodation referral link that is not a stay booking button: trackAccommodationReferral({ partner, stay, url, page })
- *  - the stay fee calculator showing a result:           trackToolOnce("tool_complete", { tool: "stay-fee-calculator", label: stay.slug })
  */
 
 /** Shortens an address to host + path. Query strings and fragments are dropped, so no tracking IDs or typed text travel with it. */

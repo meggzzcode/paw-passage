@@ -67,7 +67,7 @@ Original vs public facts: each cell is a public fact stated on a manager's own p
 | Destination pages | 2 states (Georgia, California) and 8 town definitions in code (Blue Ridge, Ellijay, Helen, Dahlonega; San Diego, Santa Barbara, Monterey, Mendocino) | `src/content/destinations.ts` (code, not CMS) | live sitemap has 9 destination URLs: index, 2 states, 6 towns (Monterey and Mendocino are not indexed) | Hub pages |
 | Dog-rules places | 14 (California 10, Georgia 4; 6 state parks, 4 beaches, 2 national parks, 1 national forest, 1 trail) | `content/places/*.yml` | grep and probe; all `status: unverified`, no `lastChecked` | 0 public. The `/dog-rules` section is live but noindexed and empty of verified places. Verification backlog: `docs/COWORK-VERIFY-PLACES.md` |
 | Dog-type pages | 4 live (`escape-artists`, `big-dogs`, `multi-dog-families`, `senior-dogs`) + `/dogs` index | `src/content/dog-types.ts`, `src/routes/dogs.*.tsx` | live sitemap: 5 `/dogs` URLs | Collections linking existing guides |
-| Stay search and fee calculator | Filters and a per-stay pet-fee calculator | `src/lib/stay-search.ts`, `src/components/site/StayFeeCalculator.tsx` | code read; `stay-fee-calculator.test.tsx` passes | Tool value on stay pages |
+| Stay search | Filters (the per-stay pet-fee calculator was removed 2026-11-24 to avoid fee maintenance) | `src/lib/stay-search.ts` | code read; `stay-fee-calculator.test.tsx` passes | Tool value on stay pages |
 | Stay22 map | Wired but off (account ID empty in `content/settings.yml`) | `src/components/site/Stay22Map.tsx` | settings read | Needs the buyer's own account |
 
 ## 5. Gear catalog

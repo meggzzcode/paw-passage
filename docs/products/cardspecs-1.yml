@@ -1,0 +1,51 @@
+- id: sleepypod-clickit-sport
+  cardSpecs: ["Sizes Small to X-Large", "CPS lists: passed, July 2014", "Test dogs rated to 90 lbs"]
+  # source: keySpecs lines 1,2 (CPS sizes; CPS listing; test dog weights)
+- id: ruffwear-load-up-car-harness
+  cardSpecs: ["Girth sizes XXS to L/XL", "Maker: crash tested", "Not CPS certified"]
+  # source: keySpecs lines 1,4; summary; manufacturerClaimsVsIndependentTesting
+- id: kurgo-enhanced-strength-tru-fit
+  cardSpecs: ["Size chart: 5-110 lbs", "10 in seat belt tether", "Maker: crash tested, 75 lbs"]
+  # source: keySpecs lines 1,2,4
+- id: sleepypod-atom
+  cardSpecs: ["Maker: rated to 12 lbs (CPS)", "Folds flat; mesh on 3 sides", "No non-Sleepypod accessories"]
+  # source: keySpecs lines 1,3,4,6
+- id: lucky-duck-lucky-kennel
+  cardSpecs: ["Large 70 to 110 lbs", "Integrated tie-downs", "Maker: CPS crash-test rated"]
+  # source: keySpecs lines 1,4,5
+- id: petsafe-happy-ride-collapsible-crate
+  cardSpecs: ["Maker: pets up to 60 lb", "Two doors that fully unzip", "No crash-test claim on page"]
+  # source: keySpecs lines 1,3,6
+- id: kurgo-heather-booster-seat
+  cardSpecs: ["Maker: dogs up to 30 lbs", "Collapses for storage", "No seat crash-test claim"]
+  # source: keySpecs lines 1,4,7
+- id: kurgo-backseat-barrier
+  cardSpecs: ["Fixed or removable headrests", "Mesh panels; cup holder", "Not for 2-door or mini vans"]
+  # source: keySpecs lines 1,2,3
+- id: petsafe-happy-ride-dog-barrier
+  cardSpecs: ["Adjusts 32-49 in wide", "Metal frame; tension fit", "No crash testing mentioned"]
+  # source: keySpecs lines 1,2,4
+- id: kurgo-rover-hammock-extended-width
+  cardSpecs: ["63 in W x 56 in L", "Waterproof, stain resistant", "Maker: lifetime guarantee"]
+  # source: keySpecs lines 1,2,5
+- id: petsafe-happy-ride-bench-seat-cover
+  cardSpecs: ["45 in long x 56 in wide", "Waterproof; machine washable", "Not a restraint"]
+  # source: keySpecs lines 1,2,4,5
+- id: kurgo-rover-cargo-cape
+  cardSpecs: ["52 in wide x 62 in long", "Fold-out bumper guard", "Maker: fits most cargo areas"]
+  # source: keySpecs lines 1,2,3
+- id: petsafe-happy-ride-folding-ramp
+  cardSpecs: ["62 x 16 x 4 in; 10 lbs", "Maker: rated to 150 lb", "Folds in half; safety latch"]
+  # source: keySpecs lines 1,2,3
+- id: petsafe-happy-ride-compact-telescoping-ramp
+  cardSpecs: ["Extends 28 to 70 in; 14 lbs", "High-traction; side rails", "Maker: rated to 300 lb"]
+  # source: keySpecs lines 1,2,3,4
+- id: petsafe-happy-ride-extra-long-ramp
+  cardSpecs: ["Extends 47 to 87 in; 18 lbs", "Aluminum; slides closed", "Maker: rated to 300 lb"]
+  # source: keySpecs lines 1,2,3,4
+- id: petsafe-happy-ride-side-door-steps
+  cardSpecs: ["44.9 x 18.2 x 8.0 in; 13 lb", "3 heights: 21.25-28 in", "Maker: supports 200 lb"]
+  # source: keySpecs lines 1,2,3
+- id: petsafe-happy-ride-hitch-step
+  cardSpecs: ["Fits any 2 in vehicle hitch", "Both steps swivel to fold up", "Maker: supports 200 lb"]
+  # source: keySpecs lines 1,2,3,4

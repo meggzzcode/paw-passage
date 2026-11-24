@@ -46,7 +46,7 @@ export function useCaseFor(product: Product, override?: string): string {
     ?.pick.bestFor?.replace(/^best\s+for\s+/i, "")
     .replace(/^best\s+/i, "")
     .trim();
-  if (bestFor && bestFor.length <= 44) return bestFor.charAt(0).toUpperCase() + bestFor.slice(1);
+  if (bestFor && bestFor.length <= 34) return bestFor.charAt(0).toUpperCase() + bestFor.slice(1);
   const cat = product.categories?.[0];
   return (cat && USE_CASE_LABEL[cat]) || "Dog travel gear";
 }
@@ -210,10 +210,8 @@ export function GearProductCard({
       >
         <SpecGlyph icon={icon} />
         <div className="gearcard-compact-text">
-          <Name className="gearcard-name">
-            {brand && <span className="gearcard-brand">{brand} </span>}
-            {title}
-          </Name>
+          {brand && <p className="gearcard-brand">{brand}</p>}
+          <Name className="gearcard-name">{title}</Name>
           <p className="gearcard-reason">{label}</p>
         </div>
         {cta}

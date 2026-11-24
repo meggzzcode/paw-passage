@@ -37,7 +37,7 @@
 .gearcard-details > summary { display: flex; min-height: 2.75rem; cursor: pointer; list-style: none; align-items: center; justify-content: space-between; gap: 0.5rem; padding: 0 1.1rem; font-size: 0.875rem; font-weight: 500; }
 .gearcard-details > summary::-webkit-details-marker { display: none; }
 .gearcard-details > summary:hover { background: var(--muted); }
-.gearcard-details > summary svg { width: 1rem; height: 1rem; transition: transform 0.2s; }
+.gearcard-details > summary svg { flex: none; width: 1rem; height: 1rem; transition: transform 0.2s; }
 .gearcard-details[open] > summary svg { transform: rotate(180deg); }
 .gearcard-more { display: grid; gap: 0.9rem; padding: 0.25rem 1.1rem 1.1rem; font-size: 0.875rem; line-height: 1.5; }
 .gearcard-more h4, .gearcard-more h5 { margin: 0 0 0.25rem; font-family: var(--font-body, inherit); font-size: 0.78rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted-foreground); }
@@ -59,7 +59,7 @@
 .gearcard-compact .speccard-badge { width: 2.75rem; height: 2.75rem; border-radius: 0.85rem; background: var(--sc-bg); border: 1px solid var(--sc-line); color: var(--sc-ic); }
 .gearcard-compact .speccard-glyph { width: 1.4rem; height: 1.4rem; }
 .gearcard-compact-text { flex: 1 1 14rem; min-width: 0; }
-.gearcard-compact .gearcard-name { font-size: 1.05rem; margin: 0; }
+.gearcard-compact .gearcard-name { font-size: 1.05rem; margin: 0.05rem 0 0; }
 .gearcard-compact .gearcard-reason { font-size: 0.85rem; margin-top: 0.15rem; }
 .gearcard-compact .gearcard-cta { min-height: 2.5rem; padding: 0 1rem; font-size: 0.875rem; }
 .gearcard-compact > .gearcard-details { flex: 1 1 100%; margin: 0 -0.9rem -0.75rem; width: calc(100% + 1.8rem); }

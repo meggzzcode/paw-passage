@@ -164,9 +164,9 @@ Most cabin hikes need four things: a fixed leash, water, a bowl and waste bags. 
 - **A fixed leash, six feet or less.** [NPS](https://www.nps.gov/subjects/trails/hiking-with-pets.htm) says to always keep your dog on a 6 foot leash. [PetMD](https://www.petmd.com/dog/general-health/best-hiking-gear-for-dogs) says a 6-foot rope leash suits most hikes and keeps a dog away from hazards such as cliffs. [Orvis](https://www.orvis.com/how-to-hike-safely-with-your-dog.html) says preferably six feet, never over ten, and no retractables. A posted trail limit overrides all three.
 - **Water for the dog.** The Gila National Forest page says to bring enough water for your dog ([U.S. Forest Service](https://www.fs.usda.gov/r03/gila/safety-ethics/canine-campers-bringing-dogs-national-forest)).
 - **A bowl.** Any collapsible one works.
-- **Waste bags.** [NPS](https://www.nps.gov/subjects/trails/hiking-with-pets.htm) says to follow Leave No Trace and dispose of waste; another NPS page says it can carry harmful bacteria into fresh water and pass diseases to wildlife ([National Park Service](https://www.nps.gov/articles/000/idkt_pets.htm)).
+- **Waste bags.** [NPS](https://www.nps.gov/subjects/trails/hiking-with-pets.htm) says to follow Leave No Trace and dispose of waste; another NPS page says it can carry harmful bacteria into fresh water and pass diseases to wildlife.
 
-If you already own a plain six-foot leash, buy another only if yours is retractable or too long. If you do want a trail leash, Ruffwear's Knot-a-Leash is 5 ft in both sizes, with reflective rope and an auto-locking carabiner; Small has 7 mm rope and Large 11 mm ([Ruffwear](https://ruffwear.com/products/knot-a-leash-dog-leash)). No strength rating is listed, so judge the rope thickness against your dog's pulling.
+If you already own a plain six-foot leash, buy another only if yours is retractable or too long. If you do want a trail leash, [Ruffwear](https://ruffwear.com/products/knot-a-leash-dog-leash)'s Knot-a-Leash is 5 ft in both sizes, with reflective rope and an auto-locking carabiner; Small has 7 mm rope and Large 11 mm. No strength rating is listed, so judge the rope thickness against your dog's pulling.
 
 {{pick:ruffwear-knot-a-leash|A fixed 5 ft trail leash|Reflective rope with an auto-locking carabiner. Skip it if your own fixed leash is six feet or shorter.|https://ruffwear.com/products/knot-a-leash-dog-leash}}
 
@@ -226,7 +226,7 @@ Boots solve specific problems and are not for every dog.
 
 None gives a cutoff, so this is our judgment: a dog on soft forest paths for an hour probably does not need them; sharp scree, hot rock or a long descent might. Check pads after every hike either way.
 
-Ruffwear's Grip Trex has a Vibram outsole and a mesh upper; the traction wording is the maker's own ([Ruffwear](https://ruffwear.com/products/grip-trex-dog-boots)). Ruffwear says: "Measure across widest part of paw when bearing weight. Measure ALL paws. If between sizes, size down." Front and rear paws can differ, so you may need two sizes. AKC's home method is to trace the paw on paper and measure across the widest part. Practice with one boot, then the second, indoors on day one, not at the trailhead, and check the fit about 15 minutes into the hike.
+[Ruffwear](https://ruffwear.com/products/grip-trex-dog-boots)'s Grip Trex has a Vibram outsole and a mesh upper; the traction wording is the maker's own. Ruffwear says: "Measure across widest part of paw when bearing weight. Measure ALL paws. If between sizes, size down." Front and rear paws can differ, so you may need two sizes. AKC's home method is to trace the paw on paper and measure across the widest part. Practice with one boot, then the second, indoors on day one, not at the trailhead, and check the fit about 15 minutes into the hike.
 
 {{pick:ruffwear-grip-trex-boots|Boots for sharp rock or hot ground|Sold as a set of two, in paw widths from 1.50 to 3.25 in. Skip them for soft trails.|https://ruffwear.com/products/grip-trex-dog-boots}}
 

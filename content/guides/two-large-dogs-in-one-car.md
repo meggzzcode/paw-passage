@@ -192,7 +192,7 @@ Width is the other limit. This is arithmetic from maker figures, not a test. Luc
 
 **Harnesses plus a barrier.** A barrier keeps two dogs from reaching you. It does not hold either one in place in a stop. Neither the [Kurgo](https://www.kurgo.com/p/backseat-barrier/K00006) nor the [PetSafe](https://www.petsafe.com/p/happy-ride-metal-dog-barrier/62409/) page names a crash test or a weight capacity, and Kurgo words its safety claim as preventing distracted driving.
 
-**A wide seat cover.** If both dogs share the rear bench, a cover keeps hair and mud off it, but it is not a restraint. Kurgo makes an extended-width Rover Hammock for large vehicles ([Kurgo](https://kurgo.com/car-seat-covers/dog-hammocks/wander-hammock-extended-width)); we did not verify its fit for two dogs. Our [car interior guide](/guides/protect-your-car-interior-from-a-dog-on-a-road-trip) covers covers and liners.
+**A wide seat cover.** If both dogs share the rear bench, a cover keeps hair and mud off it, but it is not a restraint. [Kurgo](https://kurgo.com/car-seat-covers/dog-hammocks/wander-hammock-extended-width) makes an extended-width Rover Hammock for large vehicles; we did not verify its fit for two dogs. Our [car interior guide](/guides/protect-your-car-interior-from-a-dog-on-a-road-trip) covers covers and liners.
 
 ## How your vehicle changes the answer
 

@@ -173,7 +173,7 @@ The listing's own pet rule is the only number that counts. Of the 38 managers we
 
 ## How many dogs are allowed at an Airbnb or Vrbo?
 
-[Airbnb](https://www.airbnb.com/help/article/3623) shows two different numbers on two pages: guests declare 0 to 5 pets, hosts set one to five ([Airbnb](https://www.airbnb.com/resources/hosting-homes/a/what-you-need-to-know-about-hosting-pets-463)). Whether a host limit of two stops a guest from declaring three is not stated anywhere we read. A hosting-software explainer updated 2 November 2026 says hosts "can specify whether pets are allowed and, if so, how many" ([Guestable](https://www.guestable.com/blog/airbnb-new-house-rules-policy/)), though no Airbnb page repeats that wording.
+[Airbnb](https://www.airbnb.com/help/article/3623) shows two different numbers on two pages: guests declare 0 to 5 pets, hosts set one to five. Whether a host limit of two stops a guest from declaring three is not stated anywhere we read. A hosting-software explainer updated 2 November 2026 says hosts "can specify whether pets are allowed and, if so, how many" ([Guestable](https://www.guestable.com/blog/airbnb-new-house-rules-policy/)), though no Airbnb page repeats that wording.
 
 Vrbo handles pets through house rules in text. Hosts can note pet type and size, with a custom note limited to 50 characters ([Vrbo](https://help.vrbo.com/articles/Add-or-edit-house-rules)). Read the whole listing, FAQ included.
 

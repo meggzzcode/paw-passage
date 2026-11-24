@@ -44,7 +44,7 @@ Not sure where your dog falls? Enter its weight and count in the [will my dog be
 
 ## Are there rentals with no dog weight limit?
 
-A few. Two of the 38 managers say so. [Sliding Rock Cabins](https://slidingrockcabins.com/) says: "Every cabin welcomes them with no pet fees, breed restrictions, or weight limits." Hapey Cabin Rentals says: "No weight limits. Great Danes and Chihuahuas are equally welcome." It also asks that dogs be "well behaved, up-to-date on vaccinations, and housebroken ([Hapey Cabin Rentals](https://hapeycabinrentals.com/pet-friendly-smoky-mountain-cabin-rentals/))."
+A few. Two of the 38 managers say so. [Sliding Rock Cabins](https://slidingrockcabins.com/) says: "Every cabin welcomes them with no pet fees, breed restrictions, or weight limits." Hapey Cabin Rentals says: "No weight limits. Great Danes and Chihuahuas are equally welcome." It also asks that dogs be "well behaved, up-to-date on vaccinations, and housebroken" ([Hapey Cabin Rentals](https://hapeycabinrentals.com/pet-friendly-smoky-mountain-cabin-rentals/)).
 
 Two caveats. "No weight limit" is not "no rules": Hapey says more than two dogs should be mentioned at booking so they can confirm, so a count rule can sit beside a weight policy. And a marketing page is not your reservation; the booking terms are.
 
@@ -65,7 +65,7 @@ There is no universal booking definition of "large." Read the listing literally:
 
 Neither page we read sets a platform-wide number. Both put the pet policy in the host's house rules.
 
-- **[Vrbo](https://help.vrbo.com/articles/What-are-House-Rules):** the "Pets allowed" house rule lets hosts "add information like the pet type and size permitted at your property ([Vrbo](https://help.vrbo.com/articles/Add-or-edit-house-rules))." Vrbo also tells hosts to state "any size restriction," and guests "must agree to your house rules before they book."
+- **[Vrbo](https://help.vrbo.com/articles/What-are-House-Rules):** the "Pets allowed" house rule lets hosts "add information like the pet type and size permitted at your property" ([Vrbo](https://help.vrbo.com/articles/Add-or-edit-house-rules)). Vrbo also tells hosts to state "any size restriction," and guests "must agree to your house rules before they book."
 - **[Airbnb](https://www.airbnb.com/help/article/86):** the pet policy is in the listing's House rules, and Airbnb says: "Even if a listing says pets are allowed, always contact the host to confirm." Its host page lets guests state how many pets (0 to 5) they plan to bring and describes fee structures, but does not mention size or weight ([Airbnb](https://www.airbnb.com/help/article/3623)).
 
 So a "Pets allowed" badge tells you the host accepts animals, not your 72-pound dog. Open the house rules and search for "weight," "pounds," "breed," "stairs," "crate" and "unattended."

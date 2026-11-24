@@ -188,7 +188,7 @@ Covers change how belts and headrests work. These four checks are our suggestion
 
 ## Options by setup
 
-**Back seat, one dog.** PetSafe's quilted bench cover is the simple pick: padded cotton twill, waterproof protection, high-grip bottom and headrest straps ([PetSafe](https://www.petsafe.com/p/happy-ride-quilted-bench-seat-cover/PTV00-17462/)).
+**Back seat, one dog.** [PetSafe](https://www.petsafe.com/p/happy-ride-quilted-bench-seat-cover/PTV00-17462/)'s quilted bench cover is the simple pick: padded cotton twill, waterproof protection, high-grip bottom and headrest straps.
 
 {{pick:petsafe-happy-ride-bench-seat-cover|For one dog on a car or SUV back seat|45 by 56 in, waterproof quilted cover with headrest straps, seat anchors and a high-grip bottom; seat belt access without removing it; machine washable.|https://www.petsafe.com/p/happy-ride-quilted-bench-seat-cover/PTV00-17462/}}
 

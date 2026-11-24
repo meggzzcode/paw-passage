@@ -240,11 +240,11 @@ More than one registry operates in the US. AAHA's free lookup tool shows which p
 
 A tracker does not stop an escape or tell a finder who you are, so sort out the tag and chip first. If you want one, check the plan requirement, the coverage it needs, the stated dog weight range and collar width, battery life, and the water-resistance rating on the maker's page. A dead tracker finds nothing. Figures below are the makers' own, read on 2026-11-18.
 
-**A clip-on for a collar you keep.** Tractive's DOG 6 is listed for dogs above 8.8 lbs at 1.4 oz, with IP68 waterproofing and collar widths up to 1.1 in ([Tractive](https://tractive.com/en/pd/gps-tracker-dog)). A subscription is required; charge it before each leg. Skip it for a dog under 8.8 lbs or one in a wide collar.
+**A clip-on for a collar you keep.** [Tractive](https://tractive.com/en/pd/gps-tracker-dog)'s DOG 6 is listed for dogs above 8.8 lbs at 1.4 oz, with IP68 waterproofing and collar widths up to 1.1 in. A subscription is required; charge it before each leg. Skip it for a dog under 8.8 lbs or one in a wide collar.
 
 {{pick:tractive-dog-6|Clip-on GPS for a collar you keep|The maker lists dogs above 8.8 lbs, collar widths up to 1.1 in, up to 2 weeks of battery with Power Saving Zones, and says a subscription is required for its built-in SIM.|https://tractive.com/en/pd/gps-tracker-dog}}
 
-**A collar with the tracker built in.** [Fi](https://fitracking.com/theapp) describes GPS and LTE tracking with live updates. The Series 3+ lists IP68 and IP66K ratings and a colored LED night light for XS to XL dogs, but its collar page states no carrier, coverage or subscription terms, so confirm the plan before you order ([Fi](https://fitracking.com/collar), [Fi](https://fitracking.com/membership)). Choose it when your dog will wear a new collar all trip.
+**A collar with the tracker built in.** [Fi](https://fitracking.com/theapp) describes GPS and LTE tracking with live updates. The Series 3+ lists IP68 and IP66K ratings and a colored LED night light for XS to XL dogs, but its collar page states no carrier, coverage or subscription terms, so confirm the plan before you order ([Fi: GPS Dog Collar with Health & Activity Tracking](https://fitracking.com/collar), [Fi: Membership and Community](https://fitracking.com/membership)). Choose it when your dog will wear a new collar all trip.
 
 {{pick:fi-series-3-plus|Collar with GPS built in|The maker lists up to 3 months of battery life, a colored LED night light and IP68 and IP66K ratings; its product page does not state carrier or subscription terms.|https://fitracking.com/collar}}
 

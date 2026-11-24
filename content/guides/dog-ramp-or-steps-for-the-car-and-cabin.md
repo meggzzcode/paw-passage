@@ -169,7 +169,7 @@ If your dog stops at the bumper and looks at you, a ramp is usually the fix, and
 
 ## Dog ramp specs side by side
 
-Every figure is what the maker's page said on 2026-11-18, and the ratings are the makers' own. The three ramp pages say the rating was independently tested and name no tester; the two steps pages say nothing about testing ([PetSafe](https://petsafe.com/product/happy-ride-compact-telescoping-dog-ramp), [PetSafe](https://www.petsafe.com/p/happy-ride-folding-dog-ramp/62462/)).
+Every figure is what the maker's page said on 2026-11-18, and the ratings are the makers' own. The three ramp pages say the rating was independently tested and name no tester; the two steps pages say nothing about testing ([PetSafe](https://petsafe.com/product/happy-ride-compact-telescoping-dog-ramp)).
 
 | Product | Maker's weight rating | Length and weight |
 | --- | --- | --- |

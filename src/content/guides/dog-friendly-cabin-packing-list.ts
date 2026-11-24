@@ -37,7 +37,7 @@ Everything here goes in the car for any two- or three-night stay.
 - [ ] Offline folder or phone screenshots: vaccination records, microchip number and registry, a recent photo, your vet's details
 - [ ] Cabin address, the host's directions, and the nearest emergency vet with its overnight hours
 - [ ] First-aid kit ([what goes in it](/guides/dog-travel-first-aid-kit-guide))
-- [ ] ASPCA Poison Control number, 888-426-4435 (a consultation fee may apply) ([ASPCA](https://www.aspca.org/pet-care/aspca-poison-control))
+- [ ] [ASPCA](https://www.aspca.org/pet-care/aspca-poison-control) Poison Control number, 888-426-4435 (a consultation fee may apply)
 
 **Sleep and cleanup**
 - [ ] A familiar bed or blanket

@@ -174,10 +174,10 @@ Rental B has no pet fee and is $50 cheaper, but it asks for $250 more cash on bo
 
 Most of the bill is the same with or without a dog. These lines are where a dog changes it:
 
-- **Pet fee.** It can be per night, per stay or per pet. On Airbnb it is meant for expected cleaning after a pet stay and cannot exceed the nightly base rate ([Airbnb](https://www.airbnb.com/help/article/3623)).
-- **Cleaning fee.** Airbnb says a pet charge "may be separate from cleaning fees" ([Airbnb](https://www.airbnb.com/help/article/125)). Cabin Rentals of Georgia lists "$50/pet/night" plus a "$75 pet cleaning fee", which the page doesn't label per night, so we read it as charged once.
-- **Service fee and taxes.** Airbnb's service fee depends on the listing, taxes may not show until checkout, and a cleaning fee shows separately unless total-price display is on ([Airbnb](https://www.airbnb.com/help/article/2385)). Vrbo's displayed price includes the service fee and adds taxes at checkout ([Vrbo](https://help.vrbo.com/articles/About-Price-Display)).
-- **Extra pets or an unapproved dog.** Cabin Rentals of Georgia says all pet fees double if an unapproved dog turns up ([policies](https://cabin-rentals-of-georgia.com/policies)).
+- **Pet fee.** It can be per night, per stay or per pet. On [Airbnb](https://www.airbnb.com/help/article/3623) it is meant for expected cleaning after a pet stay and cannot exceed the nightly base rate.
+- **Cleaning fee.** [Airbnb](https://www.airbnb.com/help/article/125) says a pet charge "may be separate from cleaning fees". Cabin Rentals of Georgia lists "$50/pet/night" plus a "$75 pet cleaning fee", which the page doesn't label per night, so we read it as charged once.
+- **Service fee and taxes.** [Airbnb](https://www.airbnb.com/help/article/2385)'s service fee depends on the listing, taxes may not show until checkout, and a cleaning fee shows separately unless total-price display is on. [Vrbo](https://help.vrbo.com/articles/About-Price-Display)'s displayed price includes the service fee and adds taxes at checkout.
+- **Extra pets or an unapproved dog.** [Cabin Rentals of Georgia](https://cabin-rentals-of-georgia.com/policies) says all pet fees double if an unapproved dog turns up.
 
 Whether a service fee or tax applies to the pet charge itself varies by listing, so read the checkout breakdown.
 
@@ -187,7 +187,7 @@ A fee is spent the moment you book. A deposit comes back unless there is a claim
 
 Cabin Rentals of Georgia lists "a refundable $250 pet deposit" returned at departure if there is no pet damage or excessive pet hair. One dog for five nights there is $250 plus the $75 cleaning fee: $325 of definite pet cost, and a deposit on top.
 
-Vrbo describes a host-set damage deposit returned unless the host claims damage ([Vrbo](https://help.vrbo.com/articles/How-do-I-manage-my-fees), [Vrbo](https://help.vrbo.com/articles/How-do-I-read-my-payment-details)). Ask who holds the money and the release date, because a card hold and a collected payment feel different.
+Vrbo describes a host-set damage deposit returned unless the host claims damage ([Vrbo: Manage your fees](https://help.vrbo.com/articles/How-do-I-manage-my-fees), [Vrbo: Understand payment details](https://help.vrbo.com/articles/How-do-I-read-my-payment-details)). Ask who holds the money and the release date, because a card hold and a collected payment feel different.
 
 Some managers swap the deposit for a fee. Tahoe Vacation Rentals sells a nonrefundable waiver covering up to $1,000 of accidental damage "in lieu of a security deposit". That's a cost even though it replaces a deposit.
 

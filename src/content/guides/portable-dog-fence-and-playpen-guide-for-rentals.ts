@@ -44,7 +44,7 @@ No maker we read promises a dog cannot get out, and no panel survives a dog that
 
 ## Where it may not be appropriate
 
-- **A dog that escapes, climbs or panics in enclosures.** MidWest's manual says a pet not trained to be restricted may attempt to escape, which could cause serious injury ([MidWest](https://www.midwesthomes4pets.com/wp-content/uploads/ExPen_550DR_Eng.pdf)).
+- **A dog that escapes, climbs or panics in enclosures.** [MidWest](https://www.midwesthomes4pets.com/wp-content/uploads/ExPen_550DR_Eng.pdf)'s manual says a pet not trained to be restricted may attempt to escape, which could cause serious injury.
 - **A dog you plan to leave while you go out.** MidWest advises against leaving young animals unsupervised for extended periods, and rentals often have their own unattended-pet rules.
 - **Near hazards** such as a stove, a stairwell, a pool or an open balcony door.
 - **A large or reactive dog.** Read the [large-dog](/guides/vacation-rentals-that-welcome-large-dogs) and [reactive-dog](/guides/vacation-rental-with-a-reactive-dog) guides before relying on a pen. For two dogs, see the [multi-dog guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental).

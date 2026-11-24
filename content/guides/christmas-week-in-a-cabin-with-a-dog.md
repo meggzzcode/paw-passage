@@ -173,7 +173,7 @@ research:
 approvedBy: Paws & Passage Editors
 approvedOn: 2026-11-18
 ---
-Holiday terms sit in the rental policy, not the pet page: A Blue Ridge Vacation, for one, says "There is a 5-night minimum requirement for major holidays" and lists Christmas. ([A Blue Ridge Vacation](https://www.ablueridgevacation.com/rental-and-cancellation-policies/)).
+Holiday terms sit in the rental policy, not the pet page: [A Blue Ridge Vacation](https://www.ablueridgevacation.com/rental-and-cancellation-policies/), for one, says "There is a 5-night minimum requirement for major holidays" and lists Christmas.
 
 **The short answer:**
 

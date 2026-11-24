@@ -187,7 +187,7 @@ There is no single official list on the pages we read. The cottages page says "D
 - **Mistletoe:** one cabin is described as pet-friendly for a fee, with no amount shown ([Georgia State Parks](https://gastateparks.org/Cottages)).
 - **Smithgall Woods:** the Garden Cottage is "our singular pet-friendly (with fee) cabin" among six cottages ([Georgia State Parks](https://gastateparks.org/SmithgallWoods/Cottages)).
 
-Fort Yargo and Red Top Mountain list cottages with no pet wording, so call before booking (770-867-3489 for Fort Yargo) ([Georgia State Parks](https://gastateparks.org/FortYargo), [Georgia State Parks](https://gastateparks.org/RedTopMountain)).
+Fort Yargo and Red Top Mountain list cottages with no pet wording, so call before booking (770-867-3489 for Fort Yargo) ([Georgia State Parks: Fort Yargo State Park](https://gastateparks.org/FortYargo), [Georgia State Parks: Red Top Mountain State Park](https://gastateparks.org/RedTopMountain)).
 
 An [Explore Georgia](https://exploregeorgia.org/places-to-stay/list/stay-in-these-cozy-cabins-with-your-dog-at-georgia-state-parks) list (undated) adds dog-friendly cottages at Black Rock Mountain (#5, #8 and #10), Crooked River (four), F.D. Roosevelt (four) and Mistletoe (five). Treat it as a lead, since designations can change; [GoPetFriendly](https://gopetfriendly.com/blog/us-state-parks-that-allow-pets-your-guide-to-pet-friendly-cabins-campgrounds-beaches-and-more) (August 2024) also lists cottage numbers. The park confirms the unit you book.
 

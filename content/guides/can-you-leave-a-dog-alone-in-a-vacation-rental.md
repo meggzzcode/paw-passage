@@ -195,7 +195,7 @@ Check the House rules section: Airbnb says a listing's pet policy lives there, a
 
 ## What do hosts actually write?
 
-Wording varies, so read it literally: one host-forum thread ranges from "dogs must not be left on their own except by prior arrangement" to "Do NOT leave your dog at the cabin unattended ([Airhosts Forum](https://airhostsforum.com/t/are-these-reasonable-rules-for-dogs/24289))."
+Wording varies, so read it literally: one host-forum thread ranges from "dogs must not be left on their own except by prior arrangement" to "Do NOT leave your dog at the cabin unattended" ([Airhosts Forum](https://airhostsforum.com/t/are-these-reasonable-rules-for-dogs/24289)).
 
 | What the listing says | What to do |
 | --- | --- |

@@ -29,7 +29,7 @@ This page is general guidance from veterinary sources, not veterinary advice; yo
 
 ## The AVMA kit checklist
 
-The core list follows the [AVMA's pet first-aid brochure](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf), cross-checked against the [ASPCA](https://www.aspca.org/pet-care/aspca-poison-control) poison control page and kit guides from [PetMD](https://www.petmd.com/general-health/must-have-items-for-pet-first-aid-kit), [Small Door](https://www.smalldoorvet.com/learning-center/medical/pet-first-aid-kit/) Vet and Preventive Vet ([Preventive Vet](https://www.preventivevet.com/how-to-make-a-pet-first-aid-kit)). Many items in a family first-aid kit work for pets.
+The core list follows the [AVMA's pet first-aid brochure](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf), cross-checked against the [ASPCA](https://www.aspca.org/pet-care/aspca-poison-control) poison control page and kit guides from [PetMD](https://www.petmd.com/general-health/must-have-items-for-pet-first-aid-kit), [Small Door](https://www.smalldoorvet.com/learning-center/medical/pet-first-aid-kit/) Vet and [Preventive Vet](https://www.preventivevet.com/how-to-make-a-pet-first-aid-kit). Many items in a family first-aid kit work for pets.
 
 **Information and contacts**
 

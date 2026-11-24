@@ -205,7 +205,7 @@ AKC's fit advice applies to any boot: let the dog sniff them with treats, start 
 
 {{pick:ruffwear-polar-trex-boots|For salted or icy paths|The maker sells a set of two sized by paw width from 1.50 in to 3.25 in, states a waterproof, windproof softshell upper and winter-specific fiberglass lugs, and gives no insulation figure.|https://ruffwear.com/products/polar-trex-winter-dog-boots}}
 
-If your dog will not wear boots, [ASPCA](https://www.aspca.org/news/keeping-pets-safe-during-winter-dangers-ice-melts) says paw wax or booties give a barrier, and suggests petroleum jelly or another vet-approved paw protectant before going out ([ASPCA](https://www.aspca.org/pet-care/general-pet-care/cold-weather-safety-tips)). Wiping is the habit that covers every dog.
+If your dog will not wear boots, [ASPCA](https://www.aspca.org/news/keeping-pets-safe-during-winter-dangers-ice-melts) says paw wax or booties give a barrier, and suggests petroleum jelly or another vet-approved paw protectant before going out. Wiping is the habit that covers every dog.
 
 ## Keeping a rental clean and dry
 

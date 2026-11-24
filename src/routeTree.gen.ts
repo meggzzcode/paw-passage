@@ -30,6 +30,7 @@ import { Route as GearIndexRouteImport } from './routes/gear.index'
 import { Route as GearCategoryRouteImport } from './routes/gear.$category'
 import { Route as GuidesIndexRouteImport } from './routes/guides.index'
 import { Route as GuidesSlugRouteImport } from './routes/guides.$slug'
+import { Route as GuidesVacationRentalsWithNoDogWeightLimitRouteImport } from './routes/guides.vacation-rentals-with-no-dog-weight-limit'
 import { Route as StaysIndexRouteImport } from './routes/stays.index'
 import { Route as StaysSlugRouteImport } from './routes/stays.$slug'
 import { Route as ToolsIndexRouteImport } from './routes/tools.index'
@@ -147,6 +148,12 @@ const GuidesSlugRoute = GuidesSlugRouteImport.update({
   path: '/guides/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
+const GuidesVacationRentalsWithNoDogWeightLimitRoute =
+  GuidesVacationRentalsWithNoDogWeightLimitRouteImport.update({
+    id: '/guides/vacation-rentals-with-no-dog-weight-limit',
+    path: '/guides/vacation-rentals-with-no-dog-weight-limit',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const StaysIndexRoute = StaysIndexRouteImport.update({
   id: '/stays/',
   path: '/stays/',
@@ -221,6 +228,7 @@ export interface FileRoutesByFullPath {
   '/dogs/$slug': typeof DogsSlugRoute
   '/gear/$category': typeof GearCategoryRoute
   '/guides/$slug': typeof GuidesSlugRoute
+  '/guides/vacation-rentals-with-no-dog-weight-limit': typeof GuidesVacationRentalsWithNoDogWeightLimitRoute
   '/stays/$slug': typeof StaysSlugRoute
   '/tools/checklist': typeof ToolsChecklistRoute
   '/tools/cost-calculator': typeof ToolsCostCalculatorRoute
@@ -255,6 +263,7 @@ export interface FileRoutesByTo {
   '/dogs/$slug': typeof DogsSlugRoute
   '/gear/$category': typeof GearCategoryRoute
   '/guides/$slug': typeof GuidesSlugRoute
+  '/guides/vacation-rentals-with-no-dog-weight-limit': typeof GuidesVacationRentalsWithNoDogWeightLimitRoute
   '/stays/$slug': typeof StaysSlugRoute
   '/tools/checklist': typeof ToolsChecklistRoute
   '/tools/cost-calculator': typeof ToolsCostCalculatorRoute
@@ -290,6 +299,7 @@ export interface FileRoutesById {
   '/dogs/$slug': typeof DogsSlugRoute
   '/gear/$category': typeof GearCategoryRoute
   '/guides/$slug': typeof GuidesSlugRoute
+  '/guides/vacation-rentals-with-no-dog-weight-limit': typeof GuidesVacationRentalsWithNoDogWeightLimitRoute
   '/stays/$slug': typeof StaysSlugRoute
   '/tools/checklist': typeof ToolsChecklistRoute
   '/tools/cost-calculator': typeof ToolsCostCalculatorRoute
@@ -326,6 +336,7 @@ export interface FileRouteTypes {
     | '/dogs/$slug'
     | '/gear/$category'
     | '/guides/$slug'
+    | '/guides/vacation-rentals-with-no-dog-weight-limit'
     | '/stays/$slug'
     | '/tools/checklist'
     | '/tools/cost-calculator'
@@ -360,6 +371,7 @@ export interface FileRouteTypes {
     | '/dogs/$slug'
     | '/gear/$category'
     | '/guides/$slug'
+    | '/guides/vacation-rentals-with-no-dog-weight-limit'
     | '/stays/$slug'
     | '/tools/checklist'
     | '/tools/cost-calculator'
@@ -394,6 +406,7 @@ export interface FileRouteTypes {
     | '/dogs/$slug'
     | '/gear/$category'
     | '/guides/$slug'
+    | '/guides/vacation-rentals-with-no-dog-weight-limit'
     | '/stays/$slug'
     | '/tools/checklist'
     | '/tools/cost-calculator'
@@ -429,6 +442,7 @@ export interface RootRouteChildren {
   DogsSlugRoute: typeof DogsSlugRoute
   GearCategoryRoute: typeof GearCategoryRoute
   GuidesSlugRoute: typeof GuidesSlugRoute
+  GuidesVacationRentalsWithNoDogWeightLimitRoute: typeof GuidesVacationRentalsWithNoDogWeightLimitRoute
   StaysSlugRoute: typeof StaysSlugRoute
   ToolsChecklistRoute: typeof ToolsChecklistRoute
   ToolsCostCalculatorRoute: typeof ToolsCostCalculatorRoute
@@ -596,6 +610,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof GuidesSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/guides/vacation-rentals-with-no-dog-weight-limit': {
+      id: '/guides/vacation-rentals-with-no-dog-weight-limit'
+      path: '/guides/vacation-rentals-with-no-dog-weight-limit'
+      fullPath: '/guides/vacation-rentals-with-no-dog-weight-limit'
+      preLoaderRoute: typeof GuidesVacationRentalsWithNoDogWeightLimitRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/stays/': {
       id: '/stays/'
       path: '/stays'
@@ -693,6 +714,8 @@ const rootRouteChildren: RootRouteChildren = {
   DogsSlugRoute: DogsSlugRoute,
   GearCategoryRoute: GearCategoryRoute,
   GuidesSlugRoute: GuidesSlugRoute,
+  GuidesVacationRentalsWithNoDogWeightLimitRoute:
+    GuidesVacationRentalsWithNoDogWeightLimitRoute,
   StaysSlugRoute: StaysSlugRoute,
   ToolsChecklistRoute: ToolsChecklistRoute,
   ToolsCostCalculatorRoute: ToolsCostCalculatorRoute,

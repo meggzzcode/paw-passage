@@ -35,6 +35,9 @@ import { productsSchema, productReferenceProblems } from "../src/content/product
 
 const VIRTUAL = "virtual:content";
 const RESOLVED = "\0" + VIRTUAL;
+
+/** Guides that were merged into another and now 301 (see netlify.toml and src/routes/guides.<slug>.tsx). */
+const retiredGuideSlugs = new Set(["vacation-rentals-with-no-dog-weight-limit"]);
 // Guides are split so list pages do not download every article:
 //  * virtual:guides-meta     a small list of every guide WITHOUT its text (cards, lists, links, sitemap)
 //  * virtual:guide-loaders   one lazy loader per Markdown guide
@@ -243,6 +246,8 @@ export function loadContent(
 
   for (const g of guides as { slug: string; relatedGuides: string[] }[]) {
     for (const r of g.relatedGuides) {
+      // Retired guides keep a 301 to their replacement, so a leftover related-guide entry is harmless (the page skips it).
+      if (retiredGuideSlugs.has(r)) continue;
       if (!contentGuideSlugs.has(r) && !codeGuides.has(r))
         throw new ContentError(
           `\n\nContent problem in content/guides/${g.slug}.md:\n  - related article "${r}" does not exist\n`,

@@ -27,7 +27,11 @@ describe.each(allGuides.map((g) => [g.slug, g] as const))("guide content: %s", (
     expect(mismatches).toEqual([]);
   });
   it("internal links resolve", () => {
-    const slugs = new Set(allGuides.map((x) => x.slug));
+    // Retired guides keep a 301 to their replacement (netlify.toml), so a leftover link to one still resolves.
+    const slugs = new Set([
+      ...allGuides.map((x) => x.slug),
+      "vacation-rentals-with-no-dog-weight-limit",
+    ]);
     const links = [...text(g).matchAll(/\]\((\/[^)\s#]*)\)/g)].map((m) => m[1]!);
     const broken = links.filter((l) =>
       l.startsWith("/guides/")

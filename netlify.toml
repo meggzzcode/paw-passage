@@ -95,3 +95,10 @@
   to = "/guides/if-your-dog-gets-loose-on-a-trip"
   status = 301
   force = true
+
+# Retired guide: merged into the large-dog guide.
+[[redirects]]
+  from = "/guides/vacation-rentals-with-no-dog-weight-limit"
+  to = "/guides/vacation-rentals-that-welcome-large-dogs"
+  status = 301
+  force = true

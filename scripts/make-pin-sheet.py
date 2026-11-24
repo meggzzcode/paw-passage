@@ -32,7 +32,6 @@ BOARDS = {  # guide slug -> ONE primary board (see docs/PINTEREST-SETUP.md for t
     "portable-dog-fence-and-playpen-guide-for-rentals": "Dog Travel Gear",
     "vacation-rental-with-a-senior-dog": "Senior Dog Travel",
     "vacation-rentals-that-welcome-large-dogs": "Large Dog Travel",
-    "vacation-rentals-with-no-dog-weight-limit": "Large Dog Travel",
     "how-many-dogs-can-you-bring-to-a-vacation-rental": "Multiple Dog Travel",
     "how-vacation-rental-pet-fees-work": "Travel Cost Planning",
     "vacation-rentals-with-no-pet-fee": "Travel Cost Planning",

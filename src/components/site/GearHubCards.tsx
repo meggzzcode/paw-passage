@@ -1,12 +1,7 @@
-import { Link, useLocation } from "@tanstack/react-router";
 import { AMAZON_DISCLOSURE } from "@/content/affiliates";
 import type { Product } from "@/content/gear";
-import { relFor, resolveProductLink } from "@/content/gear-links";
-import { guidePickFor } from "@/content/gear-hub";
-import { getGuide } from "@/content/guides";
-import { isPublic } from "@/content/guides";
-import { ProductSpecCard } from "@/components/site/ProductSpecCard";
-import { trackProductClick } from "@/lib/analytics";
+import { resolveProductLink } from "@/content/gear-links";
+import { GearProductCard as SharedCard } from "@/components/site/GearProductCard";
 
 /**
  * Shown only when at least one approved affiliate link is actually rendered. Same sentence as GearPicks and
@@ -27,110 +22,22 @@ export function GearDisclosure({ products }: { products: Product[] }) {
   );
 }
 
-/** Photo-less product card. Facts come from the product record; trade-offs come from the guide that features it, if any. */
-export function GearProductCard({ product }: { product: Product }) {
-  const loc = useLocation();
-  const link = resolveProductLink(product);
-  const featured = guidePickFor(product.id);
-  const pick = featured?.pick;
-  const related = (product.relatedGuides ?? [])
-    .map((slug) => getGuide(slug))
-    .filter((g): g is NonNullable<typeof g> => !!g && isPublic(g))
-    .slice(0, 2);
+/**
+ * List-item wrapper kept for the category page: renders the shared card (src/components/site/GearProductCard.tsx).
+ * New code should use `GearProductCard` from that file directly.
+ */
+export function GearProductCard({
+  product,
+  variant = "standard",
+  hideDetailsLink = true,
+}: {
+  product: Product;
+  variant?: "featured" | "standard" | "compact";
+  hideDetailsLink?: boolean;
+}) {
   return (
-    <li id={product.id} className="scroll-mt-24 rounded-xl border border-border bg-card p-6">
-      {pick && <p className="eyebrow">{pick.bestFor}</p>}
-      <ProductSpecCard product={product} as="h3" className="mt-2" />
-      <p className="mt-3 text-muted-foreground">{product.summary}</p>
-      {pick && <p className="mt-3">{pick.whyItMadeTheList}</p>}
-      <p className="mt-3 text-sm font-medium">What the maker states</p>
-      <ul className="list-disc pl-5 text-sm">
-        {product.keySpecs.map((s) => (
-          <li key={s}>{s}</li>
-        ))}
-      </ul>
-      <p className="mt-3 text-sm font-medium">Maker's claims and independent testing</p>
-      <p className="text-sm text-muted-foreground">
-        {product.manufacturerClaimsVsIndependentTesting ?? "none cited"}
-      </p>
-      {pick && (
-        <>
-          <p className="mt-3 text-sm font-medium">Check before you buy</p>
-          <ul className="list-disc pl-5 text-sm text-muted-foreground">
-            {pick.watchOuts.map((w) => (
-              <li key={w}>{w}</li>
-            ))}
-          </ul>
-        </>
-      )}
-      <p className="mt-3 text-xs text-muted-foreground">
-        Specs from{" "}
-        <a
-          className="underline"
-          href={product.specSource.url}
-          target="_blank"
-          rel="nofollow noopener"
-        >
-          {product.specSource.title}
-        </a>{" "}
-        ({product.specSource.publisher}), read{" "}
-        {product.lastVerified ?? product.specSource.accessedOn}.
-      </p>
-      {related.length > 0 && (
-        <p className="mt-3 text-sm">
-          Read with it:{" "}
-          {related.map((g, i) => (
-            <span key={g.slug}>
-              {i > 0 && ", "}
-              <Link to="/guides/$slug" params={{ slug: g.slug }} className="text-primary underline">
-                {g.title}
-              </Link>
-            </span>
-          ))}
-        </p>
-      )}
-      {link && (
-        <div className="mt-4 flex flex-wrap items-center gap-3">
-          <a
-            href={link.url}
-            target="_blank"
-            rel={link.rel}
-            onClick={() =>
-              trackProductClick({
-                product: product.id,
-                partner:
-                  link.kind === "affiliate"
-                    ? (link.network ?? "affiliate")
-                    : link.kind === "retailer"
-                      ? "retailer website"
-                      : "maker website",
-                url: link.url,
-                page: loc.pathname,
-              })
-            }
-            className={
-              link.kind === "affiliate"
-                ? "inline-flex h-11 items-center justify-center rounded-full bg-terracotta-button px-6 font-medium text-terracotta-foreground transition hover:brightness-95"
-                : "inline-flex h-11 items-center justify-center rounded-full border border-border bg-background px-6 font-medium text-foreground transition hover:bg-muted"
-            }
-          >
-            {link.label}
-          </a>
-          {product.alternativeRetailer && (
-            <span className="text-sm text-muted-foreground">
-              Also at{" "}
-              <a
-                className="underline"
-                href={product.alternativeRetailer.url}
-                target="_blank"
-                rel={relFor("retailer")}
-              >
-                {product.alternativeRetailer.name}
-              </a>
-            </span>
-          )}
-        </div>
-      )}
+    <li className="list-none">
+      <SharedCard product={product} variant={variant} hideDetailsLink={hideDetailsLink} />
     </li>
   );
 }

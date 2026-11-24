@@ -20,15 +20,16 @@ import {
 } from "lucide-react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { productNameOnly } from "@/lib/product-display";
+import "./gear-card.css";
 
-type CardProduct = {
+export type CardProduct = {
   brand: string;
   name: string;
   categories?: readonly string[] | undefined;
   cardSpecs?: readonly string[] | undefined;
 };
 
-type Tone = "sand" | "sage" | "terracotta";
+export type Tone = "sand" | "sage" | "terracotta";
 
 /** Category to decorative line icon and tint. Our own graphic: no photos, no maker or retailer imagery. */
 export const SPEC_CARD_STYLE: Record<string, { icon: LucideIcon; tone: Tone }> = {
@@ -60,7 +61,7 @@ const NAME_ICONS: [RegExp, LucideIcon][] = [
   [/bowl|bottle/i, CupSoda],
 ];
 
-function styleFor(p: CardProduct) {
+export function styleFor(p: CardProduct): { icon: LucideIcon; tone: Tone } {
   const base = (p.categories?.[0] && SPEC_CARD_STYLE[p.categories[0]]) || {
     icon: PawPrint,
     tone: "sand" as Tone,
@@ -69,9 +70,52 @@ function styleFor(p: CardProduct) {
   return hit ? { ...base, icon: hit[1] } : base;
 }
 
+/** Restrained original vector motif behind the glyph: arcs (sage), dot grid (sand) or stripes (terracotta). Decorative. */
+export function SpecMotif({ tone }: { tone: Tone }) {
+  return (
+    <svg
+      className="speccard-motif"
+      viewBox="0 0 120 120"
+      aria-hidden="true"
+      focusable="false"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1"
+    >
+      {tone === "sage" && [18, 34, 50, 66].map((r) => <circle key={r} cx="104" cy="16" r={r} />)}
+      {tone === "sand" &&
+        [0, 1, 2, 3, 4].flatMap((y) =>
+          [0, 1, 2, 3, 4].map((x) => (
+            <circle
+              key={`${x}-${y}`}
+              cx={64 + x * 12}
+              cy={8 + y * 12}
+              r="1.6"
+              fill="currentColor"
+              stroke="none"
+            />
+          )),
+        )}
+      {tone === "terracotta" &&
+        [0, 1, 2, 3, 4, 5].map((i) => (
+          <line key={i} x1={50 + i * 14} y1="0" x2={i * 14} y2="120" />
+        ))}
+    </svg>
+  );
+}
+
+/** The line icon in a rounded tile: the glyph never floats on its own. Decorative. */
+export function SpecGlyph({ icon: Icon }: { icon: LucideIcon }) {
+  return (
+    <span className="speccard-badge" aria-hidden="true">
+      <Icon className="speccard-glyph" focusable="false" strokeWidth={1.5} />
+    </span>
+  );
+}
+
 /**
- * Compact spec card: tinted panel, category line icon (decorative), brand, product name and up to three fact chips.
- * Real text only. No price, rating or stock. `headingLevel` lets it sit under any heading structure.
+ * Compact spec card: tinted panel with a quiet geometric motif, the category line icon in a tile (decorative), brand,
+ * product name and up to three fact chips. Real text only. No price, rating or stock. `as` lets it sit under any heading.
  */
 export function ProductSpecCard({
   product,
@@ -80,16 +124,17 @@ export function ProductSpecCard({
 }: {
   product: CardProduct;
   /** Element for the product name. Use "h3" where the card is the item's heading. */
-  as?: "p" | "h3" | "h2";
+  as?: "p" | "h2" | "h3" | "h4";
   className?: string;
 }) {
-  const { icon: Icon, tone } = styleFor(product);
+  const { icon, tone } = styleFor(product);
   const brand = product.brand.trim();
   const title = productNameOnly(product);
   const chips = (product.cardSpecs ?? []).slice(0, 3);
   return (
     <div className={`speccard speccard-${tone} ${className}`.trim()} data-speccard="">
-      <Icon className="speccard-icon" aria-hidden="true" focusable="false" strokeWidth={1.25} />
+      <SpecMotif tone={tone} />
+      <SpecGlyph icon={icon} />
       <div className="speccard-body">
         {brand && <p className="speccard-brand">{brand}</p>}
         <Name className="speccard-name">{title}</Name>
@@ -108,6 +153,9 @@ export function ProductSpecCard({
 }
 
 /** The same card as an HTML string, for the markdown pick block (which renders strings). */
-export function productSpecCardHtml(product: CardProduct, as: "p" | "h3" | "h2" = "p"): string {
+export function productSpecCardHtml(
+  product: CardProduct,
+  as: "p" | "h2" | "h3" | "h4" = "p",
+): string {
   return renderToStaticMarkup(<ProductSpecCard product={product} as={as} />);
 }

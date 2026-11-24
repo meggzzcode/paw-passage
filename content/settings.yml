@@ -9,3 +9,9 @@ amazonTrackingId: "pawspassage-20"
 pinterestUrl: "https://www.pinterest.com/paws_and_passage/"
 # Stay22 account ID (from hub.stay22.com). Leave empty until you have one: the Stay22 map then stays hidden.
 stay22AccountId: ""
+# Impact (impact.com) site-ownership verification value. This is the SELLER'S account value: the buyer replaces it with their own, or clears it.
+impactSiteVerification: "6535a715-c434-467a-a407-2aeecbf0bf44"
+# Which stays the directory lists. "affiliate-only" (default) = a stay is listed only while it has an approved affiliate link in Affiliate links.
+# "public-sources" = also list stays that have a public Vrbo or Airbnb source address, with a plain link, no commission label and no booking claim.
+# Do not change this without reading docs/BUYER_AFFILIATE_TRANSITION.md (it changes how the site earns).
+stayDirectoryMode: "affiliate-only"

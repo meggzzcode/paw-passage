@@ -107,6 +107,9 @@ Prices read from official pages on 2026-11-18; full sources and the owner's acti
 ### Run the monthly data re-check (policy dataset)
 The dataset must be re-read at least every six months; next due about 2027-05-18. Steps are in `docs/DATA-RECHECK-LOG.md`: re-read each manager page, edit `src/content/manager-policies.ts`, run `bun scripts/make-policy-csv.mjs`, update `dataDate`, update dated counts in the guides, add a row to the log. The weekly Site health workflow opens an issue when this is overdue. The monthly routine for the whole site is: check the Site health issues, update the numbers sheet (section 6), and fix anything flagged.
 
+### Netlify build skipping (why a save might not publish)
+`netlify.toml` has an `ignore` command that skips a build (and saves Netlify credits) only when a push changes nothing but `docs/`, `.github/` or root-level Markdown files such as `README.md`. Every other change builds: Markdown guides in `content/guides/`, every `content/*.yml`, `content/stays/`, `src/`, `public/` (including Pages CMS photo uploads), `.pages.yml` and `netlify.toml` itself. Pages CMS writes straight to `main`, so its saves go through the same rule. If you ever edit the rule, run `node scripts/test-netlify-ignore.mjs`: it builds a throwaway git repository, makes one change per row (guide Markdown must build, docs-only may skip, an empty previous-deploy reference must build) and runs the real command from `netlify.toml`. CI runs it on every push.
+
 ### Handle a failed build
 1. Netlify > Deploys. A failed deploy shows a plain message naming the file and the field.
 2. Fix the field in Pages CMS (or revert the last commit in GitHub). The live site keeps the previous version meanwhile.

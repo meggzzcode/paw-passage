@@ -3,6 +3,7 @@ import { getApprovedLink } from "@/content/affiliates";
 import { trackOutbound } from "@/lib/analytics";
 import { AFFILIATE_BOOK_LABEL, AFFILIATE_LABEL_CLASS } from "@/lib/disclosure";
 import type { Stay } from "@/content/stays/types";
+import { PLAIN_SOURCE_LINK } from "@/content/stays";
 
 /**
  * The button for a stay. An approved affiliate link for THIS stay (a deeplink to the listing, generated in the
@@ -49,7 +50,7 @@ export function BookingButton({
       </div>
     );
   }
-  if (/^https:\/\/(www\.)?(vrbo|airbnb)\.com\//.test(stay.sourceUrl)) {
+  if (PLAIN_SOURCE_LINK.test(stay.sourceUrl)) {
     const name = /vrbo\.com/.test(stay.sourceUrl) ? "Vrbo" : "Airbnb";
     return (
       <a

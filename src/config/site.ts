@@ -14,10 +14,14 @@ export const site = {
   ga4MeasurementId: settings.ga4MeasurementId,
   /** Amazon Associates tracking ID (store ID), e.g. "yourname-20". Amazon links written with {amazonTrackingId} in their address use it. Leave "" and those links stay hidden. */
   amazonTrackingId: settings.amazonTrackingId,
+  /** Impact site-ownership verification value (seller's account today). Leave "" and no tag is sent. */
+  impactSiteVerification: settings.impactSiteVerification,
   /** Pinterest profile address. Leave "" and no Pinterest icon is shown. */
   pinterestUrl: settings.pinterestUrl,
   /** Stay22 account ID. Leave "" and the Stay22 map is not shown. */
   stay22AccountId: settings.stay22AccountId,
+  /** Stay directory mode: "affiliate-only" (default) lists a stay only while it has an approved affiliate link; "public-sources" lists stays with a plain public source link instead. See docs/BUYER_AFFILIATE_TRANSITION.md. */
+  stayDirectoryMode: settings.stayDirectoryMode,
   /** Sample stays render only in development / private preview, never in production builds. */
   showSampleStays: import.meta.env.DEV,
   /** Draft guides render (noindexed, labeled) only in development / private preview builds (SHOW_DRAFTS=true). */

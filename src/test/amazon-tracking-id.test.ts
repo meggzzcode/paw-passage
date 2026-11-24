@@ -4,12 +4,14 @@ import { settingsSchema } from "@/content/schema";
 import { site } from "@/config/site";
 
 describe("Amazon tracking ID", () => {
-  it("is set in site settings", () => {
-    expect(site.amazonTrackingId).toBe("pawspassage-20");
+  it("is set in site settings (any valid ID, or empty): a buyer's replacement must not break this test", () => {
+    expect(settingsSchema.safeParse({ amazonTrackingId: site.amazonTrackingId }).success).toBe(
+      true,
+    );
   });
 
   it("accepts a store ID or empty and rejects anything else", () => {
-    expect(settingsSchema.safeParse({ amazonTrackingId: "pawspassage-20" }).success).toBe(true);
+    expect(settingsSchema.safeParse({ amazonTrackingId: "sample-20" }).success).toBe(true);
     expect(settingsSchema.safeParse({ amazonTrackingId: "" }).success).toBe(true);
     expect(settingsSchema.safeParse({ amazonTrackingId: "not an id" }).success).toBe(false);
     expect(settingsSchema.safeParse({ amazonTrackingId: "https://amazon.com" }).success).toBe(
@@ -19,10 +21,10 @@ describe("Amazon tracking ID", () => {
 
   it("fills the tag into Amazon addresses and leaves other addresses alone", () => {
     const url = `https://www.amazon.com/dp/B000000000?tag=${AMAZON_TAG_PLACEHOLDER}`;
-    expect(resolveAffiliateUrl(url, "pawspassage-20")).toBe(
-      "https://www.amazon.com/dp/B000000000?tag=pawspassage-20",
+    expect(resolveAffiliateUrl(url, "sample-20")).toBe(
+      "https://www.amazon.com/dp/B000000000?tag=sample-20",
     );
-    expect(resolveAffiliateUrl("https://vrbo.com/affiliate/abc", "pawspassage-20")).toBe(
+    expect(resolveAffiliateUrl("https://vrbo.com/affiliate/abc", "sample-20")).toBe(
       "https://vrbo.com/affiliate/abc",
     );
   });

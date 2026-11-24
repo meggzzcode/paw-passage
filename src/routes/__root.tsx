@@ -104,8 +104,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "theme-color", content: "#234D44" },
-      // Impact (impact.com) site-ownership check. Impact issues this tag with a "value" attribute, not "content". Remove when the site is sold; the buyer verifies with their own Impact account.
-      { name: "impact-site-verification", value: "6535a715-c434-467a-a407-2aeecbf0bf44" },
+      // Impact (impact.com) site-ownership check. Impact issues this tag with a "value" attribute, not "content". The value is
+      // settings.impactSiteVerification (content/settings.yml, Pages CMS "Business settings"): the buyer replaces it with their own, or clears it.
+      ...(site.impactSiteVerification
+        ? [{ name: "impact-site-verification", value: site.impactSiteVerification }]
+        : []),
       // A private preview build (SHOW_DRAFTS=true) can show unpublished drafts, so keep ALL of it out of search engines.
       ...(site.showDraftGuides && !import.meta.env.DEV
         ? [{ name: "robots", content: "noindex, nofollow" }]

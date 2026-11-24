@@ -271,7 +271,7 @@ content:
         label: Large dogs allowed?
         type: select
         default: not-confirmed
-        options: &tri
+        options:
           values: [yes, no, not-confirmed]
       - name: fencedYard
         label: Fenced yard
@@ -280,7 +280,7 @@ content:
         options:
           values: [full, partial, none, not-confirmed]
       - { name: fenceNotes, label: "Fence details (height, gate, gaps)", type: text }
-      - { name: privateOutdoor, label: Private outdoor space?, type: select, default: not-confirmed, options: *tri }
+      - { name: privateOutdoor, label: Private outdoor space?, type: select, default: not-confirmed, options: { values: [yes, no, not-confirmed] } }
       - name: petFee
         label: Pet fee
         type: select
@@ -297,10 +297,10 @@ content:
             - { value: night, label: "per night" }
             - { value: dog, label: "per dog" }
             - { value: dog-night, label: "per dog, per night" }
-      - { name: breedRestrictions, label: Breed restrictions stated?, type: select, default: not-confirmed, options: *tri }
+      - { name: breedRestrictions, label: Breed restrictions stated?, type: select, default: not-confirmed, options: { values: [yes, no, not-confirmed] } }
       - { name: beach, label: Beach access, type: boolean }
       - { name: mountain, label: Mountain location, type: boolean }
-      - { name: hotTub, label: Hot tub?, type: select, default: not-confirmed, options: *tri }
+      - { name: hotTub, label: Hot tub?, type: select, default: not-confirmed, options: { values: [yes, no, not-confirmed] } }
       - { name: nearby, label: Nearby dog-friendly places, type: string, list: true }
       - { name: houseRules, label: House rules about dogs, type: string, list: true }
       - name: image
@@ -599,7 +599,7 @@ content:
                 type: select
                 list: true
                 options:
-                  values: &conditions
+                  values:
                     - { value: driving, label: "We're driving" }
                     - { value: outdoors, label: "Hiking or outdoors" }
                     - { value: water, label: "Beach, lake or swimming" }
@@ -609,8 +609,8 @@ content:
                     - { value: no-fence, label: "No securely fenced yard" }
                     - { value: escape-risk, label: "A dog who may slip away" }
                     - { value: medication, label: "Medication or special supplies" }
-              - { name: allConditions, label: "When all of these are ticked", type: select, list: true, options: { values: *conditions } }
-              - { name: unlessConditions, label: "Not when any of these is ticked", type: select, list: true, options: { values: *conditions } }
+              - { name: allConditions, label: "When all of these are ticked", type: select, list: true, options: { values: [{ value: driving, label: "We're driving" }, { value: outdoors, label: "Hiking or outdoors" }, { value: water, label: "Beach, lake or swimming" }, { value: cold, label: "Cold or snowy weather" }, { value: hot, label: "Hot weather" }, { value: senior, label: "Older dog or mobility considerations" }, { value: no-fence, label: "No securely fenced yard" }, { value: escape-risk, label: "A dog who may slip away" }, { value: medication, label: "Medication or special supplies" }] } }
+              - { name: unlessConditions, label: "Not when any of these is ticked", type: select, list: true, options: { values: [{ value: driving, label: "We're driving" }, { value: outdoors, label: "Hiking or outdoors" }, { value: water, label: "Beach, lake or swimming" }, { value: cold, label: "Cold or snowy weather" }, { value: hot, label: "Hot weather" }, { value: senior, label: "Older dog or mobility considerations" }, { value: no-fence, label: "No securely fenced yard" }, { value: escape-risk, label: "A dog who may slip away" }, { value: medication, label: "Medication or special supplies" }] } }
               - { name: minDays, label: "At least this many days", type: number }
               - { name: maxDays, label: "At most this many days", type: number }
           - name: quantity
@@ -646,8 +646,8 @@ content:
               - { name: because, label: "How it differs from the first (required for every product after the first)", type: string }
               - { name: caution, label: "The one thing to check before buying (size range, a limit, a maker warning). Never a claim about 'senior' or 'large' dogs unless the maker says it", type: text, required: true }
               - { name: benefit, label: "One sentence replacing the product's own summary (optional)", type: text }
-              - { name: onlyConditions, label: "Show only when one of these is ticked (optional)", type: select, list: true, options: { values: *conditions } }
-              - { name: unlessConditions, label: "Hide when one of these is ticked (optional)", type: select, list: true, options: { values: *conditions } }
+              - { name: onlyConditions, label: "Show only when one of these is ticked (optional)", type: select, list: true, options: { values: [{ value: driving, label: "We're driving" }, { value: outdoors, label: "Hiking or outdoors" }, { value: water, label: "Beach, lake or swimming" }, { value: cold, label: "Cold or snowy weather" }, { value: hot, label: "Hot weather" }, { value: senior, label: "Older dog or mobility considerations" }, { value: no-fence, label: "No securely fenced yard" }, { value: escape-risk, label: "A dog who may slip away" }, { value: medication, label: "Medication or special supplies" }] } }
+              - { name: unlessConditions, label: "Hide when one of these is ticked (optional)", type: select, list: true, options: { values: [{ value: driving, label: "We're driving" }, { value: outdoors, label: "Hiking or outdoors" }, { value: water, label: "Beach, lake or swimming" }, { value: cold, label: "Cold or snowy weather" }, { value: hot, label: "Hot weather" }, { value: senior, label: "Older dog or mobility considerations" }, { value: no-fence, label: "No securely fenced yard" }, { value: escape-risk, label: "A dog who may slip away" }, { value: medication, label: "Medication or special supplies" }] } }
           - { name: active, label: "Show this item? (untick to hide it everywhere but keep the record)", type: boolean }
 
   # ------------------------------------------------------------ Business settings
@@ -666,3 +666,12 @@ content:
       - { name: amazonTrackingId, label: "Amazon Associates tracking ID (looks like yourname-20; Amazon links use it; leave empty to hide Amazon links)", type: string }
       - { name: pinterestUrl, label: "Pinterest profile address (https://www.pinterest.com/yourname/; leave empty until the account is ready)", type: string }
       - { name: stay22AccountId, label: "Stay22 account ID (from hub.stay22.com; leave empty until you have one)", type: string }
+      - { name: impactSiteVerification, label: "Impact (impact.com) site-verification value (from your own Impact account; leave empty if you have none)", type: string }
+      - name: stayDirectoryMode
+        label: "Which stays are listed (leave on 'Only stays with an approved affiliate link' unless docs/BUYER_AFFILIATE_TRANSITION.md says otherwise)"
+        type: select
+        default: affiliate-only
+        options:
+          values:
+            - { value: affiliate-only, label: "Only stays with an approved affiliate link (current behaviour)" }
+            - { value: public-sources, label: "Also stays with a plain public Vrbo or Airbnb source link (no commission)" }

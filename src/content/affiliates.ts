@@ -34,6 +34,13 @@ export const affiliateLinks: AffiliateLink[] = affiliates.map((l) => ({
   url: resolveAffiliateUrl(l.url),
 }));
 
+/** A plain (non-affiliate) link whose address is an Amazon page must say Amazon, not "the maker's website". It carries no tag. */
+export const isAmazonUrl = (url: string): boolean =>
+  /^https?:\/\/([a-z0-9-]+\.)*amazon\.[a-z.]+\//i.test(url);
+export function plainLinkLabel(url: string, brand: string): string {
+  return isAmazonUrl(url) ? "See it on Amazon" : `See it on ${brand}'s website`;
+}
+
 export function getApprovedLink(
   id?: string,
   links: AffiliateLink[] = affiliateLinks,

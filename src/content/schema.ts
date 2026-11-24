@@ -318,6 +318,24 @@ export const settingsSchema = z.object({
       "must be your Stay22 account ID (letters, numbers, hyphens) or be left empty",
     )
     .default(""),
+  /** Impact (impact.com) site-ownership verification value, issued to the account holder. Empty = no tag is sent. */
+  impactSiteVerification: z
+    .string()
+    .trim()
+    .refine(
+      (v) => v === "" || /^[A-Za-z0-9-]{8,64}$/.test(v),
+      "must be the value Impact shows for site verification (letters, numbers, hyphens) or be left empty",
+    )
+    .default(""),
+  /**
+   * Which stays the directory lists. "affiliate-only" (the default, and what an empty value means): a stay is listed only
+   * while it has an approved affiliate link. "public-sources": every stay with a public Vrbo or Airbnb source address is
+   * listed with a plain, non-commission link and no affiliate label. See docs/BUYER_AFFILIATE_TRANSITION.md.
+   */
+  stayDirectoryMode: z.preprocess(
+    (v) => (typeof v === "string" && v.trim() === "" ? undefined : v),
+    z.enum(["affiliate-only", "public-sources"]).default("affiliate-only"),
+  ),
 });
 export type SiteSettings = z.infer<typeof settingsSchema>;
 

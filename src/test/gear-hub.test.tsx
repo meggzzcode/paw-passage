@@ -6,6 +6,7 @@ import { readFileSync } from "node:fs";
 import { parse } from "yaml";
 import { routeTree } from "@/routeTree.gen";
 import { products, type Product } from "@/content/gear";
+import { site } from "@/config/site";
 import { gearCategories } from "@/content/gear-categories";
 import {
   categoryProducts,
@@ -155,13 +156,17 @@ describe("link fallback", () => {
         sponsored++;
         expect(r.rel, p.id).toBe("sponsored nofollow noopener");
         expect(r.url, p.id).toMatch(
-          /^https:\/\/www\.amazon\.com\/dp\/[A-Z0-9]{10}\?tag=pawspassage-20$/,
+          new RegExp(
+            `^https://www\\.amazon\\.com/dp/[A-Z0-9]{10}\\?tag=${site.amazonTrackingId.replace(/[^A-Za-z0-9-]/g, "")}$`,
+          ),
         );
       } else {
         expect(r.rel, p.id).not.toContain("sponsored");
       }
     }
-    expect(sponsored).toBeGreaterThan(0);
+    // With an empty tracking ID no Amazon link is shown at all (docs/BUYER_AFFILIATE_TRANSITION.md), so none is sponsored.
+    if (site.amazonTrackingId) expect(sponsored).toBeGreaterThan(0);
+    else expect(sponsored).toBe(0);
   });
 });
 

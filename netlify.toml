@@ -1,9 +1,12 @@
 [build]
   command = "npm run build"
   publish = "dist"
-  # Skip the build (and its credits) when a push changes only docs, markdown or workflow files. The command exits 0 (skip)
-  # only when nothing else differs; if CACHED_COMMIT_REF is missing git errors with a non-zero code and the build runs.
-  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- . ':(exclude)docs' ':(exclude).github' ':(exclude)*.md'"
+  # Skip the build (and its credits) ONLY when a push changes nothing but docs/, .github/ or root-level Markdown files
+  # (README.md, HANDOVER.md ...). Published Markdown (content/guides/*.md, content/**/*.md, src/**/*.md) and every
+  # Pages CMS save MUST build, so never exclude "*.md" generally: ':(exclude,glob)*.md' matches the repo root only.
+  # Exit 0 = skip. An empty CACHED_COMMIT_REF fails the -n test (exit 1), so the build runs. Regression test:
+  # node scripts/test-netlify-ignore.mjs (documented in docs/OPERATIONS-HANDBOOK.md, "Netlify build skipping").
+  ignore = "[ -n \"$CACHED_COMMIT_REF\" ] && git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- . ':(exclude)docs' ':(exclude).github' ':(exclude,glob)*.md'"
 
 [build.environment]
   NODE_VERSION = "22"

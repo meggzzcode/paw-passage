@@ -1,6 +1,6 @@
 // Helpers that answer: "which affiliate links does this article actually show?"
 // The same answers drive the disclosure at the top of an article, the link tracking, and the build-time checks.
-import { getApprovedLink, isAmazon, type AffiliateLink } from "./affiliates";
+import { getApprovedLink, isAmazon, plainLinkLabel, type AffiliateLink } from "./affiliates";
 import { getProduct, type Product } from "./gear";
 import { pickIds } from "./schema";
 
@@ -61,7 +61,7 @@ export function productButton(p: Product): ProductButton | undefined {
   const direct =
     p.productUrl ?? (/\.pdf(\?|#|$)/i.test(p.specSource.url) ? undefined : p.specSource.url);
   return direct
-    ? { kind: "direct", url: direct, label: `See it on ${p.brand}'s website` }
+    ? { kind: "direct", url: direct, label: plainLinkLabel(direct, p.brand) }
     : undefined;
 }
 

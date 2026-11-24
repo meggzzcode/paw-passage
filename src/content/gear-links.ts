@@ -2,7 +2,7 @@
 // Order: approved affiliate link -> manufacturer page -> plain retailer page -> no button.
 // Nothing here invents a link: an affiliate link exists only for an APPROVED entry in content/affiliates.yml
 // (and never a "stay" entry); the product records themselves store no affiliate URL.
-import { getApprovedLink, affiliateLinks, type AffiliateLink } from "./affiliates";
+import { getApprovedLink, affiliateLinks, plainLinkLabel, type AffiliateLink } from "./affiliates";
 import { productLinkId } from "./affiliate-usage";
 import type { Product } from "./gear";
 
@@ -46,7 +46,7 @@ export function resolveProductLink(
     return {
       kind: "manufacturer",
       url: manufacturer,
-      label: `See it on ${p.brand}'s website`,
+      label: plainLinkLabel(manufacturer, p.brand),
       rel: relFor("manufacturer"),
     };
   if (p.retailerUrl)

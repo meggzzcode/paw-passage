@@ -24,6 +24,11 @@ export function stayAffiliateId(s: Pick<Stay, "affiliateId" | "sourceUrl">): str
   return id ? `vrbo-${id}` : undefined;
 }
 
+/** A plain public listing page the stay was read from (Vrbo or Airbnb). Linking to it earns nothing. */
+export const PLAIN_SOURCE_LINK = /^https:\/\/(www\.)?(vrbo|airbnb)\.com\//;
+export const hasPlainSourceLink = (s: Pick<Stay, "sourceUrl">): boolean =>
+  PLAIN_SOURCE_LINK.test(s.sourceUrl);
+
 /** True when the stay has an approved affiliate link, so a visitor who books through it earns commission. */
 export const stayEarns = (s: Pick<Stay, "affiliateId" | "sourceUrl">): boolean =>
   !!getApprovedLink(stayAffiliateId(s));
@@ -43,10 +48,19 @@ export const stayAwaitingAffiliateLink = () => allStayRecords().filter((s) => !s
  * Stays visible in this build: verified first, then unverified (labelled on the page); plus samples in dev/preview.
  * Owner decision 2026-11-18: a stay is listed only when it earns (an approved affiliate link exists for it).
  */
-export function visibleStays(opts: { includeSamples?: boolean } = {}): Stay[] {
+export function visibleStays(
+  opts: { includeSamples?: boolean; mode?: "affiliate-only" | "public-sources" } = {},
+): Stay[] {
   const includeSamples = opts.includeSamples ?? site.showSampleStays;
+  const mode = opts.mode ?? site.stayDirectoryMode;
   const records = allStayRecords();
-  const all = STAYS_REQUIRE_AFFILIATE_LINK ? records.filter(stayEarns) : records;
+  // Default ("affiliate-only"): list a stay only when it earns. Optional "public-sources" mode (owner-enabled, see
+  // docs/BUYER_AFFILIATE_TRANSITION.md): list stays that earn OR have a plain public source link (no commission, no affiliate label).
+  const all = !STAYS_REQUIRE_AFFILIATE_LINK
+    ? records
+    : mode === "public-sources"
+      ? records.filter((s) => stayEarns(s) || hasPlainSourceLink(s))
+      : records.filter(stayEarns);
   const seen = new Set<string>();
   for (const s of [...records, ...sampleStays]) {
     if (seen.has(s.slug)) throw new Error(`Two stays share the web address "${s.slug}".`);

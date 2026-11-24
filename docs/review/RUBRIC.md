@@ -45,3 +45,6 @@ Specific edits to make (numbered list; each edit is a ready-to-apply replacement
 Questions for the owner (only if a decision is truly needed).
 ```
 No scores without evidence: each score under 4 must be backed by an issue above. Never suggest adding prices, ratings, stock claims, invented tests or invented first-hand experience.
+
+## 6. Pass gate: every article must reach 9/10
+Score each of the eight criteria 1 to 5 (5 = nothing to improve). Overall score out of 10 = (sum of the eight scores) / 4, rounded to one decimal (40 points = 10.0). **An article PASSES only if overall >= 9.0 AND no single criterion is below 4.** Anything else is FIX FIRST or REWORK. The reviewer writes the overall score on a line `Overall: X.X / 10 (PASS|FAIL)` right under the verdict. Scores must be evidence-based: a criterion scored below 5 needs a named, fixable issue; the fix list must be specific enough that applying it would plausibly reach the next score. Reviewers must not inflate scores; fixers must not grade themselves: a different agent re-reviews after fixes. Repeat review-fix-review until PASS (maximum 3 rounds), then report any article that still fails with the blocking reason.

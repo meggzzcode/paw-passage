@@ -1,8 +1,8 @@
 ---
 title: "Dog Travel Bowls and Food Storage: What to Pack First"
 seoTitle: "Dog Travel Bowls and Food Storage: What to Pack"
-seoDescription: "Pick a collapsible dog bowl for travel and a food container sized to your trip. Nine products compared on maker specs, plus kibble and bear-country rules."
-dek: Pack one collapsible bowl, one food container sized to your trip, and water from home; in bear country, food storage is the host's rule, not the container's.
+seoDescription: "Pick a collapsible dog travel bowl and a food container sized to your trip. Nine products on maker specs, plus kibble and bear-country rules."
+dek: Pack one collapsible bowl and a food container sized to your trip; at a cabin, where the food goes is the host's call.
 category: Planning
 states: []
 status: published
@@ -160,7 +160,7 @@ research:
   unverified: []
   researchComplete: true
 ---
-Start with a flat-packing bowl, a food container that fits your dog's bag or a few days of kibble, and water from home. Sizes, materials and cleaning below come from each maker's own page, read on 2026-11-18.
+A bowl is a one-line decision; the food container and the rental kitchen are where trips go wrong. Sizes, materials and cleaning below come from each maker's own page, read on 2026-11-18, and the CDC and ASPCA pages cover the water side.
 
 **Short answer:**
 
@@ -169,23 +169,12 @@ Start with a flat-packing bowl, a food container that fits your dog's bag or a f
 - **In bear country, scent is the issue,** not the bowl; see the cabin section. [[3]](https://www.nps.gov/articles/bearsafetyfood.htm)
 - **Wash bowls by hand in a rental.** That is our advice.
 
-## Our picks at a glance
-
-| Job | Pick | Size as the maker states it |
-| --- | --- | --- |
-| One bowl for everything | Kurgo Collaps A Bowl | 24 oz, collapses under 1 inch |
-| Bigger drink on a hike | Ruffwear Quencher | 4.2 cups (1 L) |
-| Water carried from the tap | Gunner Dog Bowl with Travel Lid | Not stated |
-| A few days of kibble | Kurgo Kibble Carrier | Up to 5 lbs |
-| Food plus two bowls | Vittles Vault Travel-Tainer | 6 cups, two 3-cup bowls |
-| A week or more, big dog | IRIS USA airtight container | About 10 lb of food |
-
 ## Buying checklist
 
 1. A capacity the maker states, sized to one drink for your dog.
 2. A material and care instruction you can follow in a rental kitchen: hand wash, or top-rack dishwasher where stated.
 3. A shape that packs flat or hangs from a bag.
-4. For food, a snug lid and room for the whole bag. None of the makers below claims bear resistance, so do not assume it.
+4. For food, a snug lid and room for the whole bag.
 5. A spare bowl, so a bowl in the wash never means a bowl borrowed.
 
 ## Which dog travel bowl to pack
@@ -202,7 +191,7 @@ Start with a flat-packing bowl, a food container that fits your dog's bag or a f
 
 {{pick:gunner-dog-bowl|For carrying filled water: a lid the maker calls spill-proof|The maker describes a spill-proof, leak-resistant lid, non-slip rubber feet and a top-rack dishwasher-safe bowl; the page gives no capacity or dimensions, so check the size and test the lid yourself.|https://gunner.com/products/gunner-dog-bowl-black}}
 
-Two more are listed in the table below without cards. Kurgo's Splash Free Wander also holds 24 oz, and its wedge shape lays flat on a car seat. [[12]](https://www.kurgo.com/p/splash-free-wander-dog-water-bowl/K01812) The Springland 22oz Classic and 20oz Flip are bottles with a bowl attached, listed top-rack dishwasher safe. [[7]](https://springlandpets.com/products/22oz-classic-dog-travel-water-bottle) [[8]](https://springlandpets.com/products/20oz-flip-dog-travel-water-bottle) Springland gives the size in the product name only.
+Two more appear in the table below without cards. Kurgo's Splash Free Wander also holds 24 oz, and its wedge shape lays flat on a car seat. [[12]](https://www.kurgo.com/p/splash-free-wander-dog-water-bowl/K01812) The Springland 22oz Classic and 20oz Flip are bottles with a bowl attached, listed top-rack dishwasher safe. [[7]](https://springlandpets.com/products/22oz-classic-dog-travel-water-bottle) [[8]](https://springlandpets.com/products/20oz-flip-dog-travel-water-bottle) Springland gives the size in the product name only.
 
 ## What the maker pages say
 
@@ -220,7 +209,7 @@ Everything here is the maker's own wording, read on 2026-11-18. There are no rat
 | Kurgo Kibble Carrier | Up to 5 lbs, about 20 cups | Hand wash, air dry; ripstop with PEVA liner |
 | IRIS USA airtight container | 12.75 quarts, about 10 lb of food | Not stated; airtight seals and buckles |
 
-No page cites independent testing, so treat leak and spill claims as the maker's own. For where each sits in a trip bag, see our [feeding and hydration gear page](/gear/feeding-and-hydration); for the rest of the trail bag, our [dog hiking gear guide](/guides/dog-hiking-gear-for-a-cabin-vacation).
+No page cites independent testing, so treat leak and spill claims as the maker's own; Springland gives bottle volume only in the name, and Gunner gives no capacity. For where each sits in a trip bag, see our [feeding and hydration gear page](/gear/feeding-and-hydration); for the rest of the trail bag, our [dog hiking gear guide](/guides/dog-hiking-gear-for-a-cabin-vacation).
 
 ## Water first
 
@@ -266,10 +255,6 @@ Message to send the host:
 
 > Hi [name], we are bringing one [size] dog on [dates]. Where would you like us to store the dog's dry food, and is there a bear-resistant bin or a local rule about pet food we should follow? We bring our own bowls and will wash them by hand. Is there a spot you would rather we feed him, such as the kitchen floor or the porch? Thank you.
 
-## What we could not confirm
-
-Springland gives bottle volume only in the name, and Gunner gives no capacity. Leak and spill claims (Springland, Gunner) come with no test data, so run a water test at home. No maker page claims bear resistance for any container here.
-
 ## Next steps
 
-Pick one bowl and one food container, pack water and a spare bowl, then message the host about food storage and add the answer to your [trip checklist](/tools/checklist). Add a water jug and a feeding mat in the [packing list tool](/tools/packing-list), read the [cabin packing guide](/guides/dog-friendly-cabin-packing-list) for the rest of the bag, and pack the [dog first-aid kit](/guides/dog-travel-first-aid-kit-guide) too.
+Add the host's food-storage answer to your [trip checklist](/tools/checklist) and a water jug and feeding mat to the [packing list tool](/tools/packing-list), and pack the [dog first-aid kit](/guides/dog-travel-first-aid-kit-guide) too.

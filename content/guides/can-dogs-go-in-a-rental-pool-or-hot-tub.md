@@ -2,7 +2,7 @@
 title: "Can Dogs Go in a Vacation Rental Pool or Hot Tub?"
 seoTitle: "Dogs in a Vacation Rental Pool or Hot Tub"
 seoDescription: "Seven of 38 manager pages address dogs in the pool or hot tub, and all seven say no. Read the exact wording, then ask the host before you book."
-dek: "Wherever a manager has written a pool or hot tub rule, dogs are banned. See the exact wording and what to ask if the listing is silent."
+dek: "Seven of 38 manager pages mention dogs and pools or hot tubs. All seven say no, and the exact wording is below."
 category: Planning
 states: []
 status: published
@@ -34,8 +34,6 @@ relatedGuides:
   - dog-life-jacket-for-lakes-and-beaches
 relatedProducts:
   - soggy-doggy-super-shammy-towel
-  - soggy-doggy-microfiber-doormat
-  - adventure-medical-kits-dog-wipes
 relatedTools:
   - will-my-dog-be-accepted
   - checklist
@@ -168,13 +166,13 @@ research:
   researchComplete: true
 ---
 
-Where a property manager has written a rule, the answer is no. Of the 38 managers' public pet pages we read on 2026-11-18, 7 say something about dogs and pools or hot tubs, and every one restricts them. The other 31 say nothing we could record, and silence is not permission, so ask the host in writing before you pack the towels.
+Where a property manager has written a rule, the answer is no. We read 38 managers' public pet pages on 2026-11-18; the other 31 say nothing we could record about pools, and silence is not permission, so ask the host in writing before you pack the towels.
 
 That is a convenience sample of managers whose sites we could read, not a survey. The full tables are on the [pet policy dataset page](/data/pet-policies).
 
 ## The short answer
 
-- **All seven restrict dogs, and five of the seven quotes also name the hot tub or spa.** Twiddy's separate pet page names hot tubs as well.
+- **Five of the seven quotes also name the hot tub or spa.** Twiddy's separate pet page names hot tubs as well.
 - **A pet fee does not change that.** In the seven quotes, the pool rule is a separate sentence from any fee, and Brindley Beach attaches a possible cleaning charge to it.
 - **If the listing is silent, ask.** Use the [message below](#what-to-ask-the-host) and keep the reply.
 
@@ -192,7 +190,7 @@ Quotes are as written on each live page, re-read on 2026-11-18.
 | Surf or Sound Realty | "All dogs, including approved dogs, are strictly prohibited in the pool and spa." | Yes: spa |
 | Twiddy & Company (blog, one home) | At Sunnybuns: "You can enjoy the pool, but your dogs will have to save their water time for the ocean!" | No: pool only (Twiddy's pet page names hot tubs) |
 
-Sources for this table: [[1]](https://www.destinvacation.com/pet-friendly), [[2]](https://www.myvacationhaven.com/pet-policy), [[4]](https://www.sunrealtync.com/node/1163), [[5]](https://www.beachrealtync.com/node/707), [[6]](https://www.surforsound.com/vacation-planning/rental-policies/), [[7]](https://blog.twiddy.com/bring-your-pets-on-vacation/)
+Sources: [Newman-Dailey](https://www.destinvacation.com/pet-friendly), [My Vacation Haven](https://www.myvacationhaven.com/pet-policy), [Brindley Beach](https://www.brindleybeach.com/node/3691), [Sun Realty](https://www.sunrealtync.com/node/1163), [Beach Realty](https://www.beachrealtync.com/node/707), [Surf or Sound](https://www.surforsound.com/vacation-planning/rental-policies/), [Twiddy blog](https://blog.twiddy.com/bring-your-pets-on-vacation/).
 
 Two details matter. Surf or Sound's wording covers "approved dogs", so being on the accepted list is not the same as being welcome in the water. And Newman-Dailey's "pool area" reads wider than the water itself.
 
@@ -206,7 +204,7 @@ If a pool is allowed, VCA Animal Hospitals says not to assume your dog knows how
 
 ## What about a hot tub and a dog?
 
-The safest reading is that the dog stays out of it: where managers address hot tubs, the wording is a ban. The CDC says hot tubs hold water in a 77 to 113 degree range that favors Legionella growth, and recommends keeping it at or below 104 degrees Fahrenheit to prevent scalding [[10]](https://www.cdc.gov/control-legionella/php/toolkit/hot-tub-module.html). Cornell's veterinary college says heatstroke can follow exposure to hot or humid environments, with signs including heavy panting, drooling, vomiting, weakness and collapse, and that it is a medical emergency: cool the dog right away and get it to a veterinary hospital [[12]](https://www.vet.cornell.edu/index.php/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/heatstroke-medical-emergency).
+The safest reading is that the dog stays out of it: where managers address hot tubs, the wording is a ban. The CDC recommends keeping hot tub water at or below 104 degrees Fahrenheit to prevent scalding [[10]](https://www.cdc.gov/control-legionella/php/toolkit/hot-tub-module.html). Cornell's veterinary college says heatstroke can follow exposure to hot or humid environments, with signs including heavy panting, drooling, vomiting, weakness and collapse, and that it is a medical emergency: cool the dog right away and get it to a veterinary hospital [[12]](https://www.vet.cornell.edu/index.php/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/heatstroke-medical-emergency).
 
 Our practical suggestions, not a source's rules: keep the dog on a lead near the tub and the cover on when nobody is using it, and if the dog went in, tell the host the same day, because a short message beats a surprise cleaning charge. No source we read gives a safe hot tub temperature or time for a dog, so for health worries, call your vet.
 
@@ -226,7 +224,9 @@ A swim in a banned pool is a plausible trigger for an extra cleaning request. Ai
 
 ## If the pool is off limits
 
-When the pool is a no, dog water time moves to a lake, a hose or the rain, and the wet comes back to the door. A dog-only towel keeps the host's bath towels out of it, and a mat by the door catches wet paws; ask the host before putting one down. If you cannot hose the dog off outside, Adventure Dog Wipes work for a porch wipe-down, though not as a rinse after chlorinated or salt water [[17]](https://adventuremedicalkits.com/products/adventure-dog-wipes-pkg-8). Skip all of it if the rental has a mudroom or you already own the towel. More options are on our [rental cleanup gear page](/gear/rental-cleanup).
+When the pool is a no, dog water time moves to a lake, a hose or the rain, and the wet comes back to the door. A dog-only towel keeps the host's bath towels out of it. It suits a dog that swims elsewhere on the trip; skip it if you already own one. Adventure Dog Wipes suit a porch wipe-down, not a rinse after chlorinated or salt water [[17]](https://adventuremedicalkits.com/products/adventure-dog-wipes-pkg-8). More options, including mats, are on our [rental cleanup gear page](/gear/rental-cleanup).
+
+{{pick:soggy-doggy-super-shammy-towel|For a wet dog at the door|The maker lists a 31 x 14 in microfiber chenille towel with hand pockets, described as quick drying and odor free; the page gives no absorbency figure.|https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey}}
 
 Before you pay for a rental with water in the yard, run your dog through the [will my dog be accepted tool](/tools/will-my-dog-be-accepted), check the total with our [pet fees guide](/guides/how-vacation-rental-pet-fees-work), and add "pool and hot tub rule, confirmed in writing" to your [trip checklist](/tools/checklist). Our guide to [leaving a dog alone in a rental](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental) helps with the hours you spend away from the water.
 

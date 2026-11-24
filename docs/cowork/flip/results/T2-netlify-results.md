@@ -39,3 +39,8 @@ I did not check the billing page, so the credit reset date and plan price are UN
 ## Screens Megan should screenshot herself
 
 The Netlify team billing and usage page (credits used, plan, reset date) for the marketplace's private data room. Also the Domain management page showing the certificate warning, with her email hidden.
+
+
+## Addendum, 2026-11-23, about 7:00 PM Eastern time
+
+The checks above were written before this change. At Megan's instruction (no Netlify deploys until she directs it), the published deploy was locked and Build status was set to Stopped builds. Builds are now stopped and the live site stays on the main branch at commit dbfa200. Nothing was deployed. The certificate Renew button is still NOT clicked and is waiting for Megan's yes or no. To resume deploys, Megan must say so; then unlock the published deploy and set builds back to Active.

@@ -1,5 +1,6 @@
 import {
   Bone,
+  Box,
   BriefcaseMedical,
   Flashlight,
   Package,
@@ -53,7 +54,8 @@ const NAME_ICONS: [RegExp, LucideIcon][] = [
   [/wipes|towel|shammy|doormat|mat\b|pads?\b/i, Sparkles],
   [/kong/i, Bone],
   [/\bbed\b|loft wander/i, Bed],
-  [/crate|exercise pen|play yard|pet yard|petgate|\bgate\b|barrier/i, Fence],
+  [/crate|kennel/i, Box],
+  [/exercise pen|play yard|pet yard|petgate|\bgate\b|barrier/i, Fence],
   [/container|vault|carrier|tainer/i, Package],
   [/bowl|bottle/i, CupSoda],
 ];

@@ -882,7 +882,7 @@ products:
       - portable-dog-fence-and-playpen-guide-for-rentals
     manufacturerClaimsVsIndependentTesting: none cited
   - id: carlson-convertible-pet-yard
-    name: "Convertible Pet Yard (Model #2200)"
+    name: Convertible Pet Yard
     brand: Carlson Pet Products
     aliases:
       - "Carlson Convertible Pet Yard"
@@ -1239,7 +1239,7 @@ products:
       - "Maker: rated to 300 lb"
     categories:
       - ramps-and-steps
-    summary: An aluminium telescoping ramp that slides closed and locks for travel.
+    summary: An aluminum telescoping ramp that slides closed and locks for travel.
     keySpecs:
       - Extends from 47 to 87 in long, 20 in wide, 4 in high
       - Weighs 18 lbs; made of aluminum
@@ -1879,7 +1879,7 @@ products:
     cardSpecs:
       - "Water-resistant fabric"
       - "Eight ventilated mesh panels"
-      - "Maker: sets up with no tools"
+      - "Height not stated"
     categories:
       - pens-and-gates
     summary: A foldable soft-sided play yard with ground stakes, for indoor or outdoor use.

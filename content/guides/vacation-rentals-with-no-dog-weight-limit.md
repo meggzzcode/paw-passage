@@ -1,8 +1,8 @@
 ---
-title: "Vacation Rentals With No Dog Weight Limit (and How to Get Your 70-Pounder Approved)"
-seoTitle: "Rentals With No Dog Weight Limit: 2 of 38"
-seoDescription: "6 of 38 managers state a dog weight limit and two say none. See the exact wording, how limits are phrased, and a message to get a big dog approved."
-dek: Which managers state a weight limit, which say they have none, the wording traps in between, and the host message that gets a large dog approved in writing.
+title: "Vacation Rentals With No Dog Weight Limit"
+seoTitle: "No Dog Weight Limit Vacation Rentals: 2 of 38"
+seoDescription: "We read 38 managers' pet pages: 6 state a dog weight limit and 2 say none. See the exact wording and copy the message that gets a big dog approved."
+dek: Two managers say they have no weight limit, six state a number and 30 are silent. See the exact wording and the message that gets a large dog approved in writing.
 category: Planning
 states: []
 status: published
@@ -10,8 +10,8 @@ approvedBy: Paws & Passage Editors
 approvedOn: 2026-11-18
 author: Paws & Passage Editors
 publishedOn: 2026-11-18
-lastReviewed: 2026-11-19
-readingMinutes: 10
+lastReviewed: 2026-11-24
+readingMinutes: 11
 heroImage: guide-no-weight-limit
 faqs:
   - q: Are there vacation rentals with no dog weight limit?
@@ -22,6 +22,8 @@ faqs:
     a: Vrbo's help pages say hosts can add the pet type and size permitted in their house rules. Airbnb's pages we read describe a pet count and pet fees but do not mention size or weight, so read the listing's House rules.
   - q: Can I ask a host to make an exception for my large dog?
     a: You can ask. Hearthside Cabin Rentals says some cabins allow larger pets, but Brindley Beach and Emmons Realty both say no exceptions, and no page we read promises one, so get any yes in writing before you pay.
+  - q: What counts as a large dog at a vacation rental?
+    a: There is no single line. In the eight managers we quote, stated limits run from 35 to 65 pounds, and each manager sets its own number, so check the listing's pet rule rather than a general definition.
   - q: Do weight limits apply to service animals?
     a: Airbnb says a host is required to accept service animals even if they do not allow pets (with limited health and safety exceptions), and Hostaway's host guide says service animals cannot be subject to size restrictions. Confirm with the platform for your situation.
 relatedGuides:
@@ -29,6 +31,8 @@ relatedGuides:
   - how-many-dogs-can-you-bring-to-a-vacation-rental
   - pet-friendly-vacation-rental-checklist
   - how-vacation-rental-pet-fees-work
+  - vacation-rentals-with-no-pet-fee
+  - what-a-dog-really-costs-on-a-vacation-rental
 relatedProducts:
   - midwest-icrate-dog-crate
   - kurgo-loft-wander-dog-bed
@@ -110,8 +114,10 @@ sources:
     publisher: PetSafe
     accessedOn: 2026-11-18
 research:
-  primaryKeyword: vacation rentals no dog weight limit
+  primaryKeyword: no dog weight limit vacation rentals
   relatedKeywords:
+    - dog weight limit vacation rental
+    - large dog friendly vacation rentals
     - pet friendly rentals no size restrictions
     - dog weight limit vrbo
     - cabins that allow big dogs no weight limit
@@ -163,17 +169,15 @@ research:
   researchComplete: true
 ---
 
-## The short answer
+## Are there vacation rentals with no dog weight limit?
 
-She is 72 pounds of sweetheart and the listing says 50. Before you give up on that cabin, know that the number you see may not be the whole story, and that some managers truly have no ceiling.
-
-We read 38 vacation rental managers' public pet pages (a convenience sample, not a survey, read 2026-11-18). Only six state a weight limit. Two, Sliding Rock Cabins and Hapey Cabin Rentals, say outright they have none. The other 30 say nothing about weight on the page we read, and that silence is not a promise.
+Yes, a few. Of the 38 vacation rental managers whose public pet pages we read (a convenience sample, not a survey, read 2026-11-18), two, Sliding Rock Cabins and Hapey Cabin Rentals, say outright they have no weight limit, six state a number, and 30 say nothing about weight on the page we read. That silence is not a promise. A listing that says 50 pounds does not always end the search for a 70-pound dog, but only a written yes counts.
 
 - Stated limits run from 35 to 65 pounds, and the wording differs: per dog, combined, or "some cabins allow larger."
 - Vrbo's help pages say hosts can state pet type and size in house rules. [[9]](https://help.vrbo.com/articles/Add-or-edit-house-rules) The Airbnb pages we read do not mention size or weight. [[11]](https://www.airbnb.com/help/article/86)
 - A written yes for your dog, with its weight named, is the only approval that counts.
 
-Check any dog's weight and count against a limit with the [will my dog be accepted tool](/tools/will-my-dog-be-accepted). For the broader large-dog picture (stairs, floors, yards), see our [large-dog rental guide](/guides/vacation-rentals-that-welcome-large-dogs); this page is about named managers and the approval message.
+Check any dog's weight and count against a limit with the [will my dog be accepted tool](/tools/will-my-dog-be-accepted). For the broader large-dog picture (stairs, floors, yards), see our [large-dog rental guide](/guides/vacation-rentals-that-welcome-large-dogs); this page is about named managers and the approval message. If two dogs are the issue, see our [guide to how many dogs a rental allows](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental).
 
 ## The six managers that state a limit
 
@@ -198,13 +202,13 @@ Hapey Cabin Rentals says: "No weight limits. Great Danes and Chihuahuas are equa
 
 Two caveats worth holding onto. "No weight limit" does not mean "no rules": Hapey says more than two dogs should be mentioned at booking so they can confirm, so a count rule can still sit beside a weight policy. And a manager's marketing page is not your reservation; the booking terms are.
 
-## What the other 30 say
+## What the other 30 managers say
 
 Most pages never mention weight. That could mean no limit, a limit set per home, or a limit that lives only in the listing or the rental agreement. Our data cannot tell which. Brindley Beach's own FAQ shows why the question matters: "Many vacation rentals in the Outer Banks have pet restrictions that include weight limits or breed limitations," and it advises you to "review the individual property listing carefully." [[3]](https://www.brindleybeach.com/node/3691) Vacasa's Mammoth Lakes page similarly says weight limits and dog counts vary by home and should be stated in each listing, without naming a cutoff. [[13]](https://www.vacasa.com/usa/California/Mammoth-Lakes/explore/Dog-friendly/)
 
 So treat silence as a reason to ask, not a green light.
 
-## How weight limits are worded, and what to ask
+## What does a dog weight limit actually mean? How it is worded, and what to ask
 
 The same two syllables, "limit," hide very different rules. Use the manager examples above to decode the wording.
 
@@ -221,7 +225,7 @@ Hostaway's host guide advises stating size limits numerically and says some host
 
 Breed rules ride separately. Elk Springs, Emmons Realty and Cabin Rentals of Georgia all pair weight with breed or other rules, so a dog under the number can still be turned away. Ask about breed in writing before you book.
 
-## Where Airbnb and Vrbo put size
+## Does Airbnb or Vrbo set a dog weight limit?
 
 Both platforms put the pet policy in the host's house rules, and neither page we read sets a platform-wide weight number.
 
@@ -230,7 +234,7 @@ Both platforms put the pet policy in the host's house rules, and neither page we
 
 The practical point: a "Pets allowed" badge or filter tells you the host accepts animals, not your 72-pound dog. Open the house rules and search for "weight," "pounds" and "size."
 
-## How to ask for approval for a big dog
+## How to ask a host to approve a large dog
 
 GoPetFriendly's tip is to contact the owner by email and get the rules in writing before paying a deposit. [[15]](https://www.gopetfriendly.com/blog/tips-for-booking-a-pet-friendly-vacation-rental/) Do it on the platform or by email, before you book or pay, and be exact. Do not round the weight down.
 
@@ -245,33 +249,35 @@ Why it works: it gives a number, a date, and one clear question, and it leaves t
 - The listing page and house rules as they read the day you booked (screenshot or saved page, with the date).
 - The weight, date and source of your dog's weight, such as a vet visit or a home scale reading.
 - The host's written reply naming your dog and the limit that applies, kept in the booking thread.
-- The total pet charge in writing, including any "large pet" fee. Hearthside, for example, lists $75 for a large pet. [[1]](https://hearthsidecabinrentals.com/frequently-asked-questions)
+- The total pet charge in writing, including any large-pet fee (Hearthside lists $75). [[1]](https://hearthsidecabinrentals.com/frequently-asked-questions)
 - Any conditions attached: crate rules, unattended-pet rules, counts.
 
-Hearthside's page also warns that a pet found in a cabin not designated as pet-friendly can bring "a fee of up to $500 for additional cleaning and/or misrepresentation," so do not assume an approved dog can stay anywhere in a manager's inventory. Service animals are a separate matter: Airbnb says hosts must accept them even if they do not allow pets (with limited health and safety exceptions), and Hostaway's host guide says they cannot be subject to size restrictions. [[11]](https://www.airbnb.com/help/article/86) [[14]](https://www.hostaway.com/vacation-rental-guide/pet-friendly-hosting/policies/)
+Hearthside's page warns that a pet found in a cabin not designated as pet-friendly can bring "a fee of up to $500 for additional cleaning and/or misrepresentation," so do not assume an approved dog can stay anywhere in a manager's inventory. Service animals are a separate matter: Airbnb says hosts must accept them even if they do not allow pets (with limited health and safety exceptions), and Hostaway's host guide says they cannot be subject to size restrictions. [[11]](https://www.airbnb.com/help/article/86) [[14]](https://www.hostaway.com/vacation-rental-guide/pet-friendly-hosting/policies/)
 
-If you are told no, the answer to a booked-anyway plan is usually the same as for any pet rule: do not bring the dog anyway, because unapproved-pet penalties can follow.
+If the answer is no, do not bring the dog anyway: the Hearthside warning above is the kind of penalty an unapproved pet can bring.
 
-## Gear for a big dog once you are approved
+## What to buy for a big dog once you are approved
 
-Approval is the hard part. The conditions that come with it are the next problem, and for a dog of 70 pounds or more the usual gear has to be sized up. Three items follow, one from the conditions above and two from our own view of a big dog's trip.
+Approval is the hard part. The conditions that come with it, and the size of the dog, decide what is worth buying. Three items follow, each tied to a different condition. If you buy only one thing, match it to your approval: a crate if the manager asks for a crate-trained dog or you will leave the dog alone, the ramp if lifting a 70-pound dog into your vehicle is the hard part, the bed if the host limits furniture. Skip any item that solves a problem you do not have.
 
-**A crate that fits.** Cabin Rentals of Georgia's rule is "crate trained," and the policy list above shows a crate condition riding alongside weight. [[2]](https://cabin-rentals-of-georgia.com/policies) If you will crate your dog when you go out, a 72-pound dog needs one of the larger sizes. The MidWest iCrate comes in sizes 18 to 48 in, with an included divider panel and a removable leak-proof pan. The maker lists a slide-bolt latch and says it folds flat. [[16]](https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/) The page does not state weights, wire gauge or folded dimensions, so check those against your vehicle before you order, and use the maker's sizing chart for your dog's length.
+**If the approval comes with a crate condition: the MidWest iCrate.** Cabin Rentals of Georgia's rule is "crate trained," and our policy table shows a crate condition riding alongside weight. [[2]](https://cabin-rentals-of-georgia.com/policies) A 72-pound dog needs one of the larger sizes, and the iCrate is sold in seven sizes from 18 to 48 in, with a divider panel and a removable leak-proof pan included. The maker lists a slide-bolt latch and says it folds flat. [[16]](https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/) It suits a crate-trained dog that will be alone in a home that asks for a crate; skip it if your dog is not crate trained and the host does not ask for one. The page gives no dog-weight guidance, wire gauge or folded dimensions, so size by your dog's measured length and standing height, ask the maker if you are between sizes, and check the folded size against your vehicle. This is the one to buy first if your approval mentions a crate or you will leave the dog alone (our [guide to leaving a dog alone in a rental](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental) covers the host rules).
 
-{{pick:midwest-icrate-dog-crate|Our pick|The maker lists sizes up to 48 in, an included divider panel, a removable pan and a flat fold.|https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/}}
+{{pick:midwest-icrate-dog-crate|Crate sizes up to 48 in|The maker lists seven sizes from 18 to 48 in, an included divider panel, a removable pan and a flat fold.|https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/}}
 
-**Your own bed, so the host's furniture stays off limits.** If the host limits furniture, a big dog takes up a sofa quickly. The Kurgo Loft Wander comes in Medium (27 x 36 in) and Large (36 x 48 in), with a water-resistant top, a waterproof nonslip bottom and a handle; the maker says it can be machine washed on a gentle cycle. [[17]](https://www.kurgo.com/p/loft-wander-dog-bed/K01560) The page lists no weight limit or dog weight guide, so pick the size by how your dog lies down.
+**If lifting is the hard part: the PetSafe Happy Ride Folding Ramp.** A 72-pound dog is awkward to lift into an SUV after a long hike, and a ramp takes your back out of it. The ramp is 62 in long and weighs 10 lb, and the maker says it is rated to support pets up to 150 lb, which is a wide margin over a 70-pound dog. The maker says "independently tested" but names no tester, so treat the rating as the maker's. [[18]](https://www.petsafe.com/p/happy-ride-folding-dog-ramp/62462/) It folds in half and locks with a latch, and the folded size is not stated. Skip it if your dog already jumps into the vehicle safely, or if your cargo floor sits higher than a 62 in ramp can sensibly reach; the page gives no vehicle height guidance, so measure first. Buy it first if lifting is what stands between your big dog and the trip. For more options, see our [ramp and steps guide](/guides/dog-ramp-or-steps-for-the-car-and-cabin).
 
-{{pick:kurgo-loft-wander-dog-bed|Our pick|The maker lists Medium and Large sizes, a waterproof nonslip bottom and a roll-up carry design.|https://www.kurgo.com/p/loft-wander-dog-bed/K01560}}
+{{pick:petsafe-happy-ride-folding-ramp|Ramp rated to 150 lb (maker)|The maker lists a 62 in ramp rated to 150 lb, with side rails, rubber feet and a safety latch.|https://www.petsafe.com/p/happy-ride-folding-dog-ramp/62462/}}
 
-**A way into the car that does not involve lifting.** A 72-pound dog is awkward to lift into an SUV after a long hike. The PetSafe Happy Ride Folding Ramp is 62 in long and weighs 10 lb, and the maker says it is rated to support pets up to 150 lb. The maker says "independently tested" but names no tester, so treat the rating as the maker's. [[18]](https://www.petsafe.com/p/happy-ride-folding-dog-ramp/62462/) It folds in half and locks with a latch, and the folded size is not stated. The page gives no vehicle height guidance, so measure your cargo floor against 62 in of ramp.
+**If the host limits furniture: the Kurgo Loft Wander bed.** A big dog takes up a sofa quickly, and a bed of your own gives the dog a clear spot that is not the host's. The Large opens to 36 x 48 in and rolls up to 17 x 9.5 in, with a water-resistant top, a waterproof nonslip bottom and a handle; the maker says it can be washed by hand or on a gentle machine cycle. [[17]](https://www.kurgo.com/p/loft-wander-dog-bed/K01560) The page lists no weight limit or dog weight guide, so choose Medium (27 x 36 in) or Large by how your dog lies down. Skip it if the home already provides a dog bed or allows your dog on furniture (confirm in writing). It is the cheapest way to protect the host's furniture, and the one to add last.
 
-{{pick:petsafe-happy-ride-folding-ramp|Our pick|The maker lists a 62 in ramp rated to 150 lb, with side rails, rubber feet and a safety latch.|https://www.petsafe.com/p/happy-ride-folding-dog-ramp/62462/}}
+{{pick:kurgo-loft-wander-dog-bed|Roll-up bed in Medium or Large|The maker lists a 36 x 48 in Large that rolls to 17 x 9.5 in, a waterproof nonslip bottom and a carry handle.|https://www.kurgo.com/p/loft-wander-dog-bed/K01560}}
+
+**What to buy first.** Get the written approval, because no product replaces it. Then buy to match the conditions: the crate if the host requires one, the ramp if loading is the problem, and the bed last. More choices are on our [crates and pens gear page](/gear/pens-and-gates).
 
 ## How sure we are
 
 - **Confirmed by a source we cite:** the quotes from the eight managers and the platform wording come from pages read on 2026-11-18.
-- **What most people report:** nothing here rests on a count of reports. The six-of-38 figure is our own reading of a convenience sample of managers whose sites we could read.
+- **What most people report:** we collected no reports. The six-of-38 figure is our own count from a convenience sample of managers whose sites we could read.
 - **Unknown:** what any individual home allows, whether a limit sits in a rental agreement we could not see, and whether an exception will be granted. Ask the manager or host.
 
 ## What we could not confirm
@@ -287,3 +293,5 @@ Approval is the hard part. The conditions that come with it are the next problem
 ## Your next step
 
 Put your dog's weight and count into the [will my dog be accepted tool](/tools/will-my-dog-be-accepted), then send the message above for any home it flags as possible. Save the replies in the [trip checklist](/tools/checklist), and compare the full price in writing for each home. For fees in general, see [how pet fees work](/guides/how-vacation-rental-pet-fees-work).
+
+Then compare totals for the homes that say yes: see [what a dog really costs on a rental](/guides/what-a-dog-really-costs-on-a-vacation-rental) and [rentals with no pet fee](/guides/vacation-rentals-with-no-pet-fee), which names Sliding Rock and Hapey again. To look at real listings, you can [start a pet-friendly search on Vrbo](aff:vrbo) and read each home's house rules for a weight number.

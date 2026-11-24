@@ -1,0 +1,6 @@
+# FIX round 2: vacation-rentals-with-no-pet-fee
+Changed: all 11 review edits applied. Chooser paragraph (region fit) under the opening bullets; cross-link to the weight-limit guide; "I read" changed to "We read"; mislabeled link fixed; platform section converted to bullets with the price-breakdown action first; "shape is real" claim softened; gear section rewritten ("What to pack so a fee-free stay stays fee-free") with condition-led paragraphs, skip lines, nudges, specific pick labels and a "What to buy first" close (crate, doormat, bed, pads only for puppies or seniors); Vrbo affiliate search link added in the platforms section; FAQ for region searches; seoTitle/description/title updated (title now "Vacation Rentals With No Pet Fee: What Managers Say"). lastReviewed 2026-11-24, readingMinutes 12.
+For the lead:
+- Hero image: guide-no-pet-fee (puppy in a mesh carrier) fits "travel", not "no pet fee". Replace with a dog at a cabin door or porch if one exists, and regenerate public/pins/vacation-rentals-with-no-pet-fee.jpg.
+- docs/pinterest-pins.csv row 23: set title to the new H1 and description to "Only 3 of 38 managers we read say dogs stay free. See each one's exact wording, what else they charge, and how to compare the total before you book."
+- Confirm aff:vrbo is approved here (same pattern as the pet fees guide).

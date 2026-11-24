@@ -2,7 +2,7 @@
 title: "Taking a Puppy to a Vacation Rental: Age Rules, Accidents and Fees"
 seoTitle: "Vacation Rental With a Puppy: Age Rules"
 seoDescription: "Taking a puppy to a vacation rental? 5 of 38 managers set a minimum age or ban puppies. See their exact words, plan for accidents and copy a host message."
-dek: Five of 38 managers we read set a minimum age or ban puppies. Ask in writing before you pay, then plan for accidents and crate limits.
+dek: Some managers require a dog to be 18 months old, and some ban puppies outright. Ask in writing before you pay, then plan for accidents and crate limits.
 category: Planning
 states: []
 status: published
@@ -160,7 +160,7 @@ research:
 
 Some rentals allow puppies and some do not, and the rule is usually one sentence on the manager's pet page. Two managers ask for 18 months, so a "pet friendly" listing can still exclude a 14-week-old dog. A fee will not change an age rule, so settle it before anything else.
 
-Our sample is 38 managers' public pet pages, a convenience sample read 2026-11-18, not a count of the market. These five state a rule:
+Five of the 38 managers' public pet pages we read (a convenience sample, read 2026-11-18, not a count of the market) state a rule:
 
 - [Tahoe Getaways](https://tahoegetaways.com/policies): "We do not allow dogs under the age of 18 months."
 - A Blue Ridge Cabin Rental: "Each pet must be at least 18 months old and be fully house-trained." [[2]](https://ablueridgecabinrental.com/cabin-policies/)
@@ -182,14 +182,9 @@ Limits and fees are usually written per pet or per dog, and the five pages count
 
 Treat a puppy as a full dog for counting until the manager says otherwise. Ask whether the puppy uses one of the pet slots, whether the fee is charged at the full rate, and whether a second dog changes either answer. The mechanics are in [how pet fees work](/guides/how-vacation-rental-pet-fees-work) and [how many dogs you can bring](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental). On Airbnb or another platform, message the host and ask the age question before you book; the [pet-friendly rental checklist](/guides/pet-friendly-vacation-rental-checklist) lists what else to confirm.
 
-## Age and vaccination: what the official pages say
+## Age and vaccination
 
-This guide gives no vaccine schedule. What the public-health pages we read say is short:
-
-- The CDC's pet travel page says to make sure your pet's vaccinations are up to date and to "get a health certificate from your veterinarian dated within 10 days of your departure." [[7]](https://www.cdc.gov/healthy-pets/travel/index.html)
-- The CDC Yellow Book says travelers should "contact their veterinarian to discuss travel safety and plans for their animals" and notes that travel conditions "may contribute to medical complications" in certain animals, naming very young animals among them. [[6]](https://www.cdc.gov/yellow-book/hcp/family-travel/traveling-with-pets-and-service-animals.html)
-
-Which shots your puppy has had, and whether it is ready for a long car ride, is a question for your vet. Bring the vaccination record in case the manager asks for it.
+This guide gives no vaccine schedule. The CDC's pet travel page says to make sure vaccinations are up to date and to "get a health certificate from your veterinarian dated within 10 days of your departure." [[7]](https://www.cdc.gov/healthy-pets/travel/index.html) The CDC Yellow Book adds that travel conditions may cause medical complications in very young animals. [[6]](https://www.cdc.gov/yellow-book/hcp/family-travel/traveling-with-pets-and-service-animals.html) Ask your vet whether your puppy is ready for the trip, and bring the vaccination record in case the manager asks for it.
 
 ## What to send the host
 
@@ -213,7 +208,7 @@ So a pet fee is not damage cover. None of the five pages described a separate pu
 
 To lower the odds, use the ASPCA's approach: limit the puppy to "one or two rooms where you are able to see her," take her out often, and if there is a mess, "just clean it up and soldier on," because "a dog will not learn anything by being scolded for a past accident." [[8]](https://www.aspca.org/news/house-training-your-dog-or-puppy) A bathroom or tiled kitchen is easier to wipe than a rug, and you can close a door or use a baby gate.
 
-For the floor and the sleeping spot, the Pet Parents Pawtect Pads suit a puppy that is not yet reliably house-trained. The maker lists four sizes, from Extra Small (18 x 24 in) to Large (41 x 41 in), two pads to a pack, with an absorbency layer, a waterproof backing and a floor-gripping backing, all machine washable. [[14]](https://petparentsbrand.com/products/washable-puppy-pads) That is one set you wash and reuse instead of a stack of disposables, and you can measure the sleeping spot and pick the size to match; the card links to the smallest pack, so choose the size on the listing. Skip them if the rental has no washer access or your puppy shreds fabric. The waterproof and wash-life statements are the maker's own.
+For the floor and the sleeping spot, the Pet Parents Pawtect Pads suit a puppy that is not yet reliably house-trained. The maker lists four sizes, from Extra Small (18 x 24 in) to Large (41 x 41 in), two pads to a pack, with an absorbency layer, a waterproof backing and a floor-gripping backing, all machine washable. [[14]](https://petparentsbrand.com/products/washable-puppy-pads) That is one set you wash and reuse instead of a stack of disposables, and you can measure the sleeping spot and pick the size to match. The card button opens the smallest (18 x 24 in) pack, so pick your size on the listing. Skip them if the rental has no washer access or your puppy shreds fabric. The waterproof and wash-life statements are the maker's own.
 
 {{pick:pet-parents-pawtect-pads|Washable pads for the sleeping spot|The maker lists four sizes (18 x 24 in to 41 x 41 in), two per pack, with a waterproof backing and a floor-gripping backing, machine washable.|https://petparentsbrand.com/products/washable-puppy-pads}}
 
@@ -251,16 +246,6 @@ A stuffable rubber toy is the usual approved chew. The KONG Classic comes in six
 4. Take the puppy out right before bed and again at the first sign of waking, and keep the routine from home.
 5. Keep towels, manager-approved cleaner and waste bags within reach. Report an accident to the host promptly if the manager's policy asks for it.
 
-## What we could not confirm
-
-| Question | What we found | Check for yourself |
-| --- | --- | --- |
-| Does a pet fee cover accidents? | Only Tahoe Getaways says its damage waiver does not; the other four pages are silent or unclear | Ask in writing |
-| Is there a lower puppy rate or a separate puppy limit? | None of the five pages quoted one | Ask the manager |
-| Is a deposit or card hold taken for a puppy? | None of the five pages described one | Ask the manager |
-| What vaccines does my puppy need before a trip? | We could not source a schedule and give none | Ask your vet |
-| Will the other 33 managers accept a puppy? | Their pages did not state a rule | Ask before booking |
-
 ## What to buy first
 
 First confirm the rental accepts your puppy, because that decides whether you need any of this. Then, in order:
@@ -270,4 +255,4 @@ First confirm the rental accepts your puppy, because that decides whether you ne
 3. **One [KONG Classic](https://www.kongcompany.com/kong-classic/)** in your puppy's weight band, for supervised chewing.
 4. **Optional: the [Petmate play yard](https://www.petmate.com/products/precision-pet-soft-side-play-yard),** only for an unfenced yard the host allows.
 
-Build the rest of the list in the [packing list tool](/tools/packing-list) and the [trip checklist](/tools/checklist).
+Also settle an alone-time plan or a sitter before you go. Build the rest of the list in the [packing list tool](/tools/packing-list) and the [trip checklist](/tools/checklist).

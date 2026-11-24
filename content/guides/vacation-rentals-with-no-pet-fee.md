@@ -174,7 +174,7 @@ So what is the catch? In the three managers we found, "no pet fee" describes one
 
 ## The short answer
 
-- **Fee-free is rare.** Of 38 managers' public pet pages (a convenience sample, read 2026-11-18), three stated $0: Sliding Rock Cabins, Hapey Cabin Rentals, and Twiddy & Company on the homes it lists. 22 stated a charge; 13 gave no amount.
+- **Fee-free is rare.** Of [38 managers' public pet pages](/data/pet-policies) (a convenience sample, read 2026-11-18), three stated $0: Sliding Rock Cabins, Hapey Cabin Rentals, and Twiddy & Company on the homes it lists. 22 stated a charge; 13 gave no amount.
 - **Compare totals:** put your dates and dog count into one total and compare it with a home that charges a fee. Our [pet fees guide](/guides/how-vacation-rental-pet-fees-work) shows how the charges add up.
 
 ## What the three fee-free managers say

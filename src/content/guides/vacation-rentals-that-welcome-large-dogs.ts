@@ -5,7 +5,7 @@ export const guide: Guide = {
   title: "Large Dog Friendly Rentals and No Weight Limit Options",
   seoTitle: "Large Dog Friendly Vacation Rentals and No Weight Limit",
   seoDescription:
-    "We read 38 managers' pet pages: 6 state a dog weight limit and 2 say none. See the exact wording, then copy the message that gets a big dog approved.",
+    "We read 38 managers' pet pages: 6 state a dog weight limit and 2 say none. See the exact wording, then copy a message to ask about a big dog.",
   dek: "Not a rental list: how 38 managers write their dog limits (six cap 35 to 65 pounds, two set none), and how to get a big dog approved.",
   category: "Planning",
   states: [],
@@ -25,7 +25,7 @@ This guide is about pet dogs. Service animals have separate protections under ap
 
 ## What real weight limits look like
 
-Six managers state a limit, quoted here from their public pages (read 2026-11-18). The 38 managers we read are a convenience sample, not a survey, and policies vary by home and can change.
+Six managers state a limit, quoted here from their public pages (read 2026-11-18). The [38 managers we read](/data/pet-policies) are a convenience sample, not a survey, and policies vary by home and can change.
 
 | Manager | What the page says | Counted |
 | --- | --- | --- |

@@ -173,9 +173,11 @@ Only designated cottages take dogs, and the state publishes no official list of 
 | --- | --- |
 | Which cottages | "Dogs may not be taken into cottages that are not designated dog-friendly." |
 | How many dogs | "A maximum of two dogs per cottage is allowed, regardless of size." |
-| Fee | $50 per dog (limit 2), collected at check-in, covers the duration of your stay. So $50 for one dog, $100 for two. One site, [Animal of Things](https://animalofthings.com/dogs-in-state-parks-in-georgia/), says the fee is due at booking and cites no source, so the message below asks. |
+| Fee | $50 per dog (limit 2), collected at check-in, covers the duration of your stay. So $50 for one dog, $100 for two. One site says the fee is due at booking and cites no source, so the message below asks. |
 | Leash | A 6-foot leash at all times when not inside cottages. No tying to trees, fences or the ground. |
 | Extra charges | Extra fees are assessed when extra cleaning is required or the cottage or fixtures are damaged. |
+
+Sources: [Georgia State Parks](https://gastateparks.org/ParkRules); the booking-timing claim is from [Animal of Things](https://animalofthings.com/dogs-in-state-parks-in-georgia/).
 
 Kennels are not available at the parks, and pets are not allowed in lodges, yurts, group camps, swimming areas or beaches.
 

@@ -41,7 +41,7 @@ Check the exact unit, not the manager's portfolio. [Vrbo's house-rules guidance]
 - [ ] Count, weight (per dog or combined), breed and age limits written down.
 - [ ] Approval received in the booking channel, naming each dog and the dates.
 
-Weight limits are real and they differ a lot. Across the 38 managers in our convenience sample, not a survey (public pages read 2026-11-18), six state one, from 35 to 65 pounds. Our [large-dog guide](/guides/vacation-rentals-that-welcome-large-dogs) names them, and two managers there state none. The [two-dog guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental) covers counts and combined weight. For a quick yes or no on your own dog, try the [acceptance tool](/tools/will-my-dog-be-accepted).
+Weight limits are real and they differ a lot. Across the [38 managers in our convenience sample](/data/pet-policies), not a survey (public pages read 2026-11-18), six state one, from 35 to 65 pounds. Our [large-dog guide](/guides/vacation-rentals-that-welcome-large-dogs) names them, and two managers there state none. The [two-dog guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental) covers counts and combined weight. For a quick yes or no on your own dog, try the [acceptance tool](/tools/will-my-dog-be-accepted).
 
 ## Price (check 2)
 

@@ -176,7 +176,7 @@ Pick by how your dog drinks, not by features.
 
 {{pick:kurgo-collaps-a-bowl|Collapses under 1 in, holds 24 oz|Listed as top-rack dishwasher safe.|https://www.kurgo.com/pet-travel-bowls/collaps-a-bowl}}
 
-**A bigger bowl suits long walks or a thirsty large dog.** The [Ruffwear](https://ruffwear.com/products/quencher-dog-bowl) Quencher holds 4.2 cups (1 L) in a fabric shell with a lining the maker labels Food Contact Safe. It is hand wash and air dry, and the shell is water-resistant, not waterproof.
+**A bigger bowl suits long walks or a thirsty large dog.** The Ruffwear Quencher holds 4.2 cups (1 L) in a fabric shell with a lining the maker labels Food Contact Safe ([Ruffwear](https://ruffwear.com/products/quencher-dog-bowl)). It is hand wash and air dry, and the shell is water-resistant, not waterproof.
 
 {{pick:ruffwear-quencher-bowl|Holds 4.2 cups (1 L) for a longer walk|Maker lists one size, Medium, with a 5.5 in opening, a lining labelled Food Contact Safe (the maker's wording, no tester named) and hand wash only.|https://ruffwear.com/products/quencher-dog-bowl}}
 

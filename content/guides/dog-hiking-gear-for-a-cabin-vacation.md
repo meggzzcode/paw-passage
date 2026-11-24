@@ -193,7 +193,7 @@ A posted limit overrides all of these. Ask the rental host which nearby trails a
 
 All three cards below are Ruffwear, the catalog we researched; no source we read ranks brands, and any gear that fits the same way does the same job. Skip each one if your hike does not have its problem.
 
-**Water.** On a long loop with a thirsty dog, a packable bowl saves carrying a rigid one. The Quencher folds flat; the catch is hand wash and air dry only, so skip it if you already carry a bowl or want dishwasher-safe.
+**Water.** On a long loop with a thirsty dog, a packable bowl saves carrying a rigid one. The Quencher folds flat ([Ruffwear](https://ruffwear.com/products/quencher-dog-bowl)); the catch is hand wash and air dry, so skip it if you already carry a bowl or want dishwasher-safe.
 
 {{pick:ruffwear-quencher-bowl|A packable trail bowl, 4.2 cups (1 L)|One size, Medium, with a 5.5 in opening.|https://ruffwear.com/products/quencher-dog-bowl}}
 

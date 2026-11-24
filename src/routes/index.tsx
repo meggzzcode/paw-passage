@@ -49,7 +49,7 @@ const featuredGuideSlugs = [
 const styles = [
   { label: "Cabins", search: { type: "cabin" }, img: "guide-ga-cabins" },
   { label: "Beach houses", search: { beach: true }, img: "guide-ca-beach" },
-  { label: "Mountain escapes", search: { mountain: true }, img: "hero-porch" },
+  { label: "Mountain escapes", search: { mountain: true }, img: "home-mountain-escapes" },
   {
     label: "Weekend getaways",
     guide: "dog-friendly-cabin-packing-list",

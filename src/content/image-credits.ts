@@ -256,4 +256,59 @@ export const imageCredits: ImageCredit[] = [
     unsplashUrl:
       "https://unsplash.com/photos/a-dog-is-sitting-on-a-bench-with-a-pair-of-shoes-_j8fhPZoz14",
   },
+  {
+    key: "dest-california",
+    photographer: "Mick Haupt",
+    unsplashUrl: "https://unsplash.com/photos/BZPwtaOG5DU",
+  },
+  {
+    key: "dest-georgia",
+    photographer: "Patti Black",
+    unsplashUrl: "https://unsplash.com/photos/FHXWKE3xy3U",
+  },
+  {
+    key: "dest-san-diego",
+    photographer: "Nathan Norman",
+    unsplashUrl: "https://unsplash.com/photos/uOfGBsvlgYc",
+  },
+  {
+    key: "dest-santa-barbara",
+    photographer: "Steve Gribble",
+    unsplashUrl: "https://unsplash.com/photos/GnGkqtZ8Wzc",
+  },
+  {
+    key: "dest-monterey",
+    photographer: "Erick Morales Oyola",
+    unsplashUrl: "https://unsplash.com/photos/BjpiHAk6srE",
+  },
+  {
+    key: "dest-mendocino",
+    photographer: "David Klein",
+    unsplashUrl: "https://unsplash.com/photos/A65GqVtnpRU",
+  },
+  {
+    key: "dest-blue-ridge",
+    photographer: "Tolga Ahmetler",
+    unsplashUrl: "https://unsplash.com/photos/Aa088I4DzcU",
+  },
+  {
+    key: "dest-ellijay",
+    photographer: "Cat Guffin",
+    unsplashUrl: "https://unsplash.com/photos/MIe3Pj0phEE",
+  },
+  {
+    key: "dest-helen",
+    photographer: "Al Stephenson / Documerica",
+    unsplashUrl: "https://unsplash.com/photos/RHBQaAxnkyc",
+  },
+  {
+    key: "dest-dahlonega",
+    photographer: "Ben McCloskey",
+    unsplashUrl: "https://unsplash.com/photos/wN_UDPOTC1w",
+  },
+  {
+    key: "home-mountain-escapes",
+    photographer: "Abraham Kabdrashit",
+    unsplashUrl: "https://unsplash.com/photos/b5vriFRUUlo",
+  },
 ];

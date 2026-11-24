@@ -13,6 +13,28 @@ import laGetawaysTile from "@/assets/guide-la-getaways-tile.jpg";
 import caBeach from "@/assets/guide-ca-beach.jpg";
 import caBeachCard from "@/assets/guide-ca-beach-card.jpg";
 import caBeachTile from "@/assets/guide-ca-beach-tile.jpg";
+import californiaDest from "@/assets/dest-california.jpg";
+import californiaDestCard from "@/assets/dest-california-card.jpg";
+import georgiaDest from "@/assets/dest-georgia.jpg";
+import georgiaDestCard from "@/assets/dest-georgia-card.jpg";
+import sanDiegoDest from "@/assets/dest-san-diego.jpg";
+import sanDiegoDestCard from "@/assets/dest-san-diego-card.jpg";
+import santaBarbaraDest from "@/assets/dest-santa-barbara.jpg";
+import santaBarbaraDestCard from "@/assets/dest-santa-barbara-card.jpg";
+import montereyDest from "@/assets/dest-monterey.jpg";
+import montereyDestCard from "@/assets/dest-monterey-card.jpg";
+import mendocinoDest from "@/assets/dest-mendocino.jpg";
+import mendocinoDestCard from "@/assets/dest-mendocino-card.jpg";
+import blueRidgeDest from "@/assets/dest-blue-ridge.jpg";
+import blueRidgeDestCard from "@/assets/dest-blue-ridge-card.jpg";
+import ellijayDest from "@/assets/dest-ellijay.jpg";
+import ellijayDestCard from "@/assets/dest-ellijay-card.jpg";
+import helenDest from "@/assets/dest-helen.jpg";
+import helenDestCard from "@/assets/dest-helen-card.jpg";
+import dahlonegaDest from "@/assets/dest-dahlonega.jpg";
+import dahlonegaDestCard from "@/assets/dest-dahlonega-card.jpg";
+import homeMountain from "@/assets/home-mountain-escapes.jpg";
+import homeMountainCard from "@/assets/home-mountain-escapes-card.jpg";
 import petFees from "@/assets/guide-pet-fees.jpg";
 import petFeesCard from "@/assets/guide-pet-fees-card.jpg";
 import rentalChecklist from "@/assets/guide-rental-checklist.jpg";
@@ -127,6 +149,61 @@ const stockImages = {
     card: caBeachCard,
     tile: caBeachTile,
     alt: "A dog running along wet sand beside gentle waves, with a large coastal rock rising in the distance",
+  },
+  "dest-california": {
+    src: californiaDest,
+    card: californiaDestCard,
+    alt: "A hiker with a backpack standing on a rocky headland above deep blue ocean, with a forested point stretching out in the distance",
+  },
+  "dest-georgia": {
+    src: georgiaDest,
+    card: georgiaDestCard,
+    alt: "Layers of green forested mountain ridges under a soft cloudy sky, with wildflowers and tall grass in the foreground",
+  },
+  "dest-san-diego": {
+    src: sanDiegoDest,
+    card: sanDiegoDestCard,
+    alt: "A weathered white wooden pier railing in the foreground, with surfers in teal water and a sandy beach lined with palms and buildings beyond",
+  },
+  "dest-santa-barbara": {
+    src: santaBarbaraDest,
+    card: santaBarbaraDestCard,
+    alt: "A sandy bluff and beach with white Spanish-style buildings among palms, with big dry-grass hills and mountains rising behind",
+  },
+  "dest-monterey": {
+    src: montereyDest,
+    card: montereyDestCard,
+    alt: "A lone windswept cypress tree on a rocky headland above blue surf, with cypress branches in the left foreground and a distant coastline",
+  },
+  "dest-mendocino": {
+    src: mendocinoDest,
+    card: mendocinoDestCard,
+    alt: "A village of colorful wooden houses and water towers on a grassy bluff above dark sea cliffs, with a small beach and turquoise surf below",
+  },
+  "dest-blue-ridge": {
+    src: blueRidgeDest,
+    card: blueRidgeDestCard,
+    alt: "A long-haired brown dog looking out over a white porch railing beside a person in a rocking chair, with green trees beyond",
+  },
+  "dest-ellijay": {
+    src: ellijayDest,
+    card: ellijayDestCard,
+    alt: "Red and green apples ripening among leaves in the sun on an apple tree",
+  },
+  "dest-helen": {
+    src: helenDest,
+    card: helenDestCard,
+    alt: "A vintage 1975 color photo of people floating on inner tubes down a shallow tree-lined river",
+  },
+  "dest-dahlonega": {
+    src: dahlonegaDest,
+    card: dahlonegaDestCard,
+    alt: "Tall pine trunks rising through blue morning fog in a quiet forest",
+  },
+  "home-mountain-escapes": {
+    src: homeMountain,
+    card: homeMountainCard,
+    alt: "A grey and tan dog with upright ears and an open-mouthed smile sitting on a mountainside, with a blurred forested slope and patches of snow behind",
   },
   "guide-pet-fees": {
     src: petFees,

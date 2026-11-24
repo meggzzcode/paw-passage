@@ -2,7 +2,7 @@
 title: "Dog Life Jacket for Lakes and Beaches: Size and Fit"
 seoTitle: "Dog Life Jacket Size and Fit: What to Buy"
 seoDescription: "Choose a dog life jacket for a lake or beach rental: measure by girth, run a fit test, compare three jackets and see what no standard covers."
-dek: Measure by girth, fit-test in shallow water, then pick one of three jackets. Two maker pages disagree on what to do between sizes, and no federal standard exists.
+dek: Buy by chest girth, not weight, and fit-test in shallow water first. EzyDog suits big dogs, Ruffwear small and medium ones, Outward Hound calm water only.
 category: Planning
 states: []
 status: published
@@ -168,37 +168,31 @@ research:
   researchComplete: true
 ---
 
-Choose a dog life jacket by your dog's chest girth, not weight, then fit-test it in shallow water before it goes near deep water. This guide covers the checks that matter for a lake dock or a rental's beach path, three jackets to compare and the parts of the water-safety picture that no jacket fixes. It is researched from maker pages and public safety sources, not tested by us.
+Measure the widest part of your dog's rib cage, buy by that girth rather than weight, and test the jacket in a bathtub or shallow water before it goes near a dock. No federal standard covers dog life jackets, so every flotation claim is the maker's own, and a jacket never replaces watching your dog.
 
-- **What to buy:** a jacket sized by chest girth with a handle and a leash ring, fit-tested in shallow water. See "Three jackets to compare" below. AKC lists those features. [[4]](https://www.akc.org/expert-advice/lifestyle/why-your-dog-needs-a-dog-life-jacket)
-- **No federal standard exists for dog life jackets.** A U.S. Coast Guard video from 2013 says "there is no federal requirement or standard for dog life jackets." [[1]](https://www.dvidshub.net/video/291603/boating-responsibly-with-mans-best-friend)
-- **Neither maker page we read names a flotation certification.** Ruffwear's page lists none [[2]](https://ruffwear.com/products/float-coat-dog-life-jacket) and Outward Hound's page makes no certification claims [[3]](https://outwardhound.com/dawson-swim-dog-life-jacket/).
-- **Fit is the check you can do yourself.** Measure, adjust, then test in shallow water.
-- **A jacket is not supervision.** Outward Hound says not to leave a dog unattended in its jacket. [[3]](https://outwardhound.com/dawson-swim-dog-life-jacket/)
-- **Pool or hot tub?** Follow our [pool and hot tub guide](/guides/can-dogs-go-in-a-rental-pool-or-hot-tub); the manager pages we read restrict dogs there.
+## At a glance: our picks
 
-## Buying checklist
+- **Big dog, or a shore you lift from:** EzyDog DFD, sizes to XL (90+ lb, 30-48 in girth) with a padded grab handle. [[17]](https://store.ezydog.com/dfd-life-jacket/)
+- **Small or medium dog:** Ruffwear Float Coat, from XXS (13-17 in girth) to XL (36-42 in). [[2]](https://ruffwear.com/products/float-coat-dog-life-jacket)
+- **Calm cove, you stay within reach:** Outward Hound Dawson Swim, which its maker calls a flotation aid for a conscious dog in calm water, not a substitute for supervision. [[3]](https://outwardhound.com/dawson-swim-dog-life-jacket/)
+- **Features to want:** a handle, a leash ring, bright or reflective trim and adjustable straps, per AKC. [[4]](https://www.akc.org/expert-advice/lifestyle/why-your-dog-needs-a-dog-life-jacket)
+- **Safety note:** the U.S. Coast Guard said in a 2013 video that "there is no federal requirement or standard for dog life jackets." [[1]](https://www.dvidshub.net/video/291603/boating-responsibly-with-mans-best-friend) Pools and hot tubs are a separate question; see our [pool and hot tub guide](/guides/can-dogs-go-in-a-rental-pool-or-hot-tub).
 
-1. Measure your dog's girth at the widest part of the rib cage and buy by that number, not by weight.
-2. Read the size chart on the exact jacket's page, including what it says to do between sizes.
-3. Look for a handle, a leash ring, bright or reflective trim and adjustable straps.
-4. Treat any buoyancy wording as the maker's own claim: no standard backs it.
-5. Check the return terms on the listing, so a jacket that fails the shallow-water test can go back.
-6. Confirm your dog's girth falls inside a listed size before you order.
+## Does your dog need one?
+
+No source we read sets a rule. AKC's page covers which dogs struggle in water. If your dog tires quickly or you will be near deep or open water, a jacket is a reasonable precaution; a dog that only wades may not need one. None of the three jackets below has an independent flotation test, so the choice comes down to size range, handle and how close you will be. More are on our [beach vacations gear page](/gear/beach-vacations). This page is research from maker pages and public safety sources, not our own testing.
 
 ## Three jackets to compare
 
-Who needs one? The sources we read give no rule. AKC's page covers which dogs struggle in water, and Outward Hound calls its jacket an aid, not supervision. If your dog tires quickly or you will be near deep or open water, a jacket is a reasonable precaution; a dog that only wades may not need one. Each jacket below suits a different dog and shoreline, and none has an independent flotation test, so the choice comes down to size range, handle and how much you will be within reach. More are on our [beach vacations gear page](/gear/beach-vacations).
-
-**Big dog or rocky shoreline.** EzyDog's DFD Life Jacket comes in sizes XS (15-25 lbs, girth 19-32 in) to XL (90+ lbs, girth 30-48 in), the widest range of the three, with a padded back grab handle, a heavy-duty D-ring and neoprene chest and belly straps. [[17]](https://store.ezydog.com/dfd-life-jacket/) That handle is what you use to lift a heavy dog back onto a dock or over rocks. The maker's weight ranges overlap, so size by girth and length, as step 1 of the fit test says. It claims up to 50% more flotation but gives no baseline or rating, so read that as marketing, not a measurement. Whole Dog Journal, in a 2021 review with two test dogs (observational, buoyancy not measured), named it its all-around pick and gave it top paws [[16]](https://www.whole-dog-journal.com/lifestyle/dog-life-jacket-review/), and the maker lists a 1-year warranty and 30-day returns on its store. Skip it if your dog's girth is under 19 in, below its smallest size. This is the one to buy first if you have a big dog, you will be lifting the dog out of water by the handle and you want a return window.
+**Big dog or rocky shoreline.** EzyDog's DFD Life Jacket runs from XS (15-25 lbs, 19-32 in girth) to XL (90+ lbs, 30-48 in girth), the widest range of the three, with a padded back grab handle, a heavy-duty D-ring and neoprene chest and belly straps. [[17]](https://store.ezydog.com/dfd-life-jacket/) The handle is what lifts a heavy dog onto a dock or over rocks. Its weight ranges overlap, so size by girth. The maker claims up to 50% more flotation with no baseline or rating, so read that as marketing. Whole Dog Journal's 2021 review used two test dogs (observational, buoyancy not measured) and named it the all-around pick. [[16]](https://www.whole-dog-journal.com/lifestyle/dog-life-jacket-review/) Skip it under 19 in of girth, below its smallest size.
 
 {{pick:ezydog-dfd-life-jacket|For a big dog: sizes up to 90+ lb|The maker lists sizes XS to XL by girth and weight (XL is 90+ lbs, girth 30-48 in), a padded back grab handle and a leash D-ring. Whole Dog Journal's 2021 review, with two test dogs and no measured buoyancy, gave it top paws.|https://www.whole-dog-journal.com/lifestyle/dog-life-jacket-review/}}
 
-**Small dog, or a swimmer you lift off a dock.** Ruffwear's Float Coat is sized by girth from XXS (13-17 in) to XL (36-42 in), which takes in the smallest dogs of the three. The maker lists a strong, low-profile lifting handle, a telescoping neck closure and reflective accents, and says to choose the smaller size between sizes. [[2]](https://ruffwear.com/products/float-coat-dog-life-jacket) The page gives no buoyancy figure and names no certification, so the flotation wording is the maker's. It is hand wash and air dry. Skip it if your dog is bigger than the XL range (36-42 in girth). This is the one to buy first if your dog is small or medium, because it is the only one of the three with a size for a 13-17 in girth.
+**Small or medium dog.** Ruffwear's Float Coat is sized by girth from XXS (13-17 in) to XL (36-42 in), the only one of the three with a size for a 13-17 in girth. The maker lists a low-profile lifting handle, a telescoping neck closure and reflective accents, and says to choose the smaller size between sizes. [[2]](https://ruffwear.com/products/float-coat-dog-life-jacket) The page gives no buoyancy figure and names no certification. It is hand wash and air dry. Skip it if your dog is above 42 in of girth.
 
 {{pick:ruffwear-float-coat|For the smallest dogs: from 13-17 in girth|The maker sizes it by girth from XXS (13-17 in) to XL (36-42 in) and lists a lifting handle, a telescoping neck closure and reflective accents, with no flotation rating stated.|https://ruffwear.com/products/float-coat-dog-life-jacket}}
 
-**Calm water, and you stay within reach.** Outward Hound's Dawson Swim is sized X-Small to X-Large by girth around the widest part of the rib cage, with neoprene side panels, a front neck float and top grab handles (dual rescue handles on Medium to XL). [[3]](https://outwardhound.com/dawson-swim-dog-life-jacket/) The maker is blunt about the limits: it calls the jacket a flotation aid for a conscious dog in calm waters and says not to leave the dog unattended. That honesty is a reason to consider it for a rental's quiet cove, and skip it for surf, current or any swim where you cannot stay within reach. The page lists no chest or weight ranges, so measure and read the size chart before buying, and check the return terms on the listing, since the maker page we read gives none. Choose it if the water is a calm cove and you will be standing at the edge.
+**Calm water, within reach.** Outward Hound's Dawson Swim is sized X-Small to X-Large by girth, with neoprene side panels, a front neck float and top grab handles (dual rescue handles on Medium to XL). [[3]](https://outwardhound.com/dawson-swim-dog-life-jacket/) The maker is blunt about the limits: a flotation aid for a conscious dog in calm waters, never to be left unattended. That makes it a fit for a quiet cove and a poor choice for surf, current or any swim where you cannot stay within reach. The page lists no size ranges or return terms, so read the size chart and the listing before buying.
 
 {{pick:outward-hound-dawson-swim-life-jacket|For calm water, within reach|The maker sizes it XS to XL by girth and calls it a flotation aid for a conscious dog in calm waters; it lists a front neck float and says never to leave the dog unattended.|https://outwardhound.com/dawson-swim-dog-life-jacket/}}
 
@@ -210,85 +204,46 @@ Who needs one? The sources we read give no rule. AKC's page covers which dogs st
 | [DFD](https://store.ezydog.com/dfd-life-jacket/) | Girth and weight, ranges overlap | XS 19-32 in girth (15-25 lb) to XL 30-48 in girth (90+ lb) |
 | [Dawson Swim](https://outwardhound.com/dawson-swim-dog-life-jacket/) | Girth | XS to XL; the page lists no ranges |
 
-Between two sizes, follow the rule on the page for the jacket you are buying, then take it to the shallow-water test before open water.
+## The fit test, step by step
 
-## The fit test, step by step (when the jacket arrives)
+1. **Measure the girth** at the widest part of the rib cage. Both Ruffwear and Outward Hound size this way, not by weight. [[2]](https://ruffwear.com/products/float-coat-dog-life-jacket) [[3]](https://outwardhound.com/dawson-swim-dog-life-jacket/) Ruffwear's blog says the same. [[6]](https://ruffwear.com/blogs/explored/do-dogs-need-life-jackets)
+2. **Between sizes, follow the maker's rule for that jacket.** The pages disagree: Ruffwear says "In between sizes: Choose the smaller size," while Outward Hound recommends sizing up at the top of a range and says to think about large shoulders or a long torso. [[2]](https://ruffwear.com/products/float-coat-dog-life-jacket) [[3]](https://outwardhound.com/dawson-swim-dog-life-jacket/)
+3. **Check straps and body.** Two fingers should fit under the straps; too large can slip off, too tight can restrict swimming. [[4]](https://www.akc.org/expert-advice/lifestyle/why-your-dog-needs-a-dog-life-jacket) EzyDog's fit guide adds that the jacket should stay centred over the back, straps should lie flat, the front should not press on the throat and the front legs should move freely. [[5]](https://ezydog.com.au/blogs/news/how-dog-life-jacket-should-fit)
+4. **Watch for a bad fit:** sliding to one side, rubbing under the front legs, a dog that struggles to paddle or rolls in the water. [[5]](https://ezydog.com.au/blogs/news/how-dog-life-jacket-should-fit)
+5. **Test on land, then in shallow water.** AKC suggests a bathtub for small dogs and a leash or harness in shallow water for larger ones, checking range of motion, buoyancy and fit when wet. [[4]](https://www.akc.org/expert-advice/lifestyle/why-your-dog-needs-a-dog-life-jacket)
+6. **Lift check (our suggestion).** Hold the handle and lift gently. If the jacket rides past the ears or the dog slides out the front, tighten and recheck. Outward Hound says its rescue handle is for emergencies, so keep it light. [[3]](https://outwardhound.com/dawson-swim-dog-life-jacket/)
 
-**1. Measure the girth.** Both makers we read size by girth at the widest part of the rib cage. [[2]](https://ruffwear.com/products/float-coat-dog-life-jacket) [[3]](https://outwardhound.com/dawson-swim-dog-life-jacket/) One maker's girth ranges run from 13-17 inches (XXS) to 36-42 inches (XL), as of 2026-11-18. [[2]](https://ruffwear.com/products/float-coat-dog-life-jacket)
-
-**2. Settle the in-between case with the maker's own rule.** The two pages disagree. One says "In between sizes: Choose the smaller size." [[2]](https://ruffwear.com/products/float-coat-dog-life-jacket) The other recommends sizing up when the girth sits at the upper end of a range, and says to think about large shoulders or a long torso. [[3]](https://outwardhound.com/dawson-swim-dog-life-jacket/) That is a reason to read the page for the jacket you are buying rather than a general rule. Whichever you choose, take the jacket you pick to the shallow-water test before it goes near open water.
-
-**3. Check the straps and body.** AKC says two fingers should fit under the straps, and that a jacket that is too large can slip off while one that is too tight can restrict swimming. [[4]](https://www.akc.org/expert-advice/lifestyle/why-your-dog-needs-a-dog-life-jacket) A third maker's fit guide adds that the jacket should stay centred over the back, straps should lie flat without twisting, the front should not press on the throat and the front legs should move freely. [[5]](https://ezydog.com.au/blogs/news/how-dog-life-jacket-should-fit)
-
-**4. Watch for the signs of a bad fit.** That same guide lists sliding to one side, rubbing under the front legs, and a dog that struggles to paddle or rolls in the water. [[5]](https://ezydog.com.au/blogs/news/how-dog-life-jacket-should-fit)
-
-**5. Test on land, then in shallow water.** AKC suggests a bathtub for small dogs, and for larger dogs a leash or harness in shallow water, checking range of motion, buoyancy and fit when wet. [[4]](https://www.akc.org/expert-advice/lifestyle/why-your-dog-needs-a-dog-life-jacket) It also says to test on land first and adjust before going deeper. [[5]](https://ezydog.com.au/blogs/news/how-dog-life-jacket-should-fit)
-
-**6. A lift check (our suggestion, not from a source).** Hold the handle and lift gently. If the jacket rides up past the ears or the dog slides out the front, tighten the straps and recheck. One maker says its rescue handle is for emergencies only, so keep the check short and light. [[3]](https://outwardhound.com/dawson-swim-dog-life-jacket/)
-
-One maker's blog adds that sizing is by girth and not weight, unlike human jackets. [[6]](https://ruffwear.com/blogs/explored/do-dogs-need-life-jackets)
-
-## Features worth checking
-
-| Feature | What the sources say | Source |
-| --- | --- | --- |
-| Handle | One maker describes a strong, low-profile handle for lifting a dog out of water; another has one handle on XS and Small and dual rescue handles on Medium to XL. AKC lists a handle for grabbing and guiding. | [[2]](https://ruffwear.com/products/float-coat-dog-life-jacket) [[3]](https://outwardhound.com/dawson-swim-dog-life-jacket/) [[4]](https://www.akc.org/expert-advice/lifestyle/why-your-dog-needs-a-dog-life-jacket) |
-| Neck and head support | One maker describes a front neck float meant to help keep the head above water; another describes a telescoping neck closure that adjusts across sizes. | [[3]](https://outwardhound.com/dawson-swim-dog-life-jacket/) [[2]](https://ruffwear.com/products/float-coat-dog-life-jacket) |
-| Visibility | Both makers mention reflective accents or trim; AKC lists bright colors and reflective trim. | [[2]](https://ruffwear.com/products/float-coat-dog-life-jacket) [[3]](https://outwardhound.com/dawson-swim-dog-life-jacket/) [[4]](https://www.akc.org/expert-advice/lifestyle/why-your-dog-needs-a-dog-life-jacket) |
-| Leash point | AKC lists a D-ring for leash attachment. One maker's blog mentions a leash or tow loop. | [[4]](https://www.akc.org/expert-advice/lifestyle/why-your-dog-needs-a-dog-life-jacket) [[6]](https://ruffwear.com/blogs/explored/do-dogs-need-life-jackets) |
-| Adjustable straps | AKC says adjustable straps keep a snug fit as a young dog grows. | [[4]](https://www.akc.org/expert-advice/lifestyle/why-your-dog-needs-a-dog-life-jacket) |
-
-Whole Dog Journal, in a 2016 piece whose prices are likely out of date, says more buoyancy is not necessarily better and notes that manufacturers do not quantify buoyancy. [[7]](https://www.whole-dog-journal.com/?p=3315) That matches what we see on the two product pages today.
+Check the return terms on the listing before you order, so a jacket that fails the test can go back. EzyDog's store lists a 1-year warranty and 30-day returns. [[17]](https://store.ezydog.com/dfd-life-jacket/)
 
 ## What a "life jacket" label does and does not tell you
 
-One maker calls its product "a flotation aid intended for use on a conscious dog in calm waters." [[3]](https://outwardhound.com/dawson-swim-dog-life-jacket/) Another maker's page says the shell, lining and buckles are bluesign approved, but that wording covers materials, not flotation performance, and the page gives no buoyancy rating. [[2]](https://ruffwear.com/products/float-coat-dog-life-jacket) That maker's blog says buoyancy is tested "following the guidelines of human PFDs" without naming a standard or saying the product meets one. [[6]](https://ruffwear.com/blogs/explored/do-dogs-need-life-jackets)
-
-So every flotation statement here is the maker's. No lab test or certification body is named on any maker page we read. The Coast Guard video above is the only official statement we read, and it is from 2013. [[1]](https://www.dvidshub.net/video/291603/boating-responsibly-with-mans-best-friend)
+Outward Hound calls its product "a flotation aid intended for use on a conscious dog in calm waters." [[3]](https://outwardhound.com/dawson-swim-dog-life-jacket/) Ruffwear's page says the materials are bluesign approved, which covers materials, not flotation, and its blog says buoyancy is tested "following the guidelines of human PFDs" without naming a standard. [[2]](https://ruffwear.com/products/float-coat-dog-life-jacket) [[6]](https://ruffwear.com/blogs/explored/do-dogs-need-life-jackets) Whole Dog Journal, in a 2016 piece with out-of-date prices, notes that manufacturers do not quantify buoyancy and that more is not necessarily better. [[7]](https://www.whole-dog-journal.com/?p=3315) No lab or certification body is named on any maker page we read.
 
 ## Water hazards a jacket does not solve
 
-A jacket is meant to add flotation. It does nothing about what the dog swallows or touches, and a rental stay often means unfamiliar water.
+- **Fatigue and conditions.** VCA says swimming is hard work and advises avoiding big waves, riptides, strong currents and dangerously cold water. [[8]](https://vcahospitals.com/shop/home/articles/the-dos-and-don-ts-of-dog-water-safety)
+- **Too much water.** Cornell says a dog in and out of water all day can swallow a lot, and advises frequent half-hour breaks. [[9]](https://www.vet.cornell.edu/departments/riney-canine-health-center/canine-health-information/summer-safety-tips)
+- **Saltwater.** Cornell says seawater's magnesium is a strong laxative and excess salt can cause tremors, disorientation and seizures, so make sure the dog is well hydrated before the beach. [[9]](https://www.vet.cornell.edu/departments/riney-canine-health-center/canine-health-information/summer-safety-tips) AKC says a few mouthfuls may only cause diarrhea, large amounts can be fatal, and advises fresh water, shade and a break every 15 minutes. [[10]](https://www.akc.org/expert-advice/health/general-health/dogs-drinking-salt-water/) The two sources give different break intervals (30 minutes and 15), so there is no single number.
+- **Algae in lakes.** The CDC says animals can get very sick or die within hours of contact with harmful algae, that blooms can look like foam, scum, mats or paint, and to rinse with tap water right after contact. [[11]](https://www.cdc.gov/harmful-algal-blooms/about/index.html) National Geographic says appearance does not reliably show toxicity and that dogs can swallow toxins by grooming afterward. [[12]](https://www.nationalgeographic.com/animals/article/algae-toxic-blooms-cyanobacteria-dogs-swimming)
 
-- **Fatigue and conditions.** VCA says swimming is hard work and advises avoiding big waves, riptides, strong currents or dangerously cold water. It also says to offer plenty of fresh water and to rinse the dog afterward. [[8]](https://vcahospitals.com/shop/home/articles/the-dos-and-don-ts-of-dog-water-safety)
-- **Too much water.** Cornell says a dog in and out of water all day can ingest a lot of it, and advises frequent half-hour breaks. [[9]](https://www.vet.cornell.edu/departments/riney-canine-health-center/canine-health-information/summer-safety-tips)
-- **Saltwater.** Cornell says seawater's magnesium has a strong laxative effect and that excess salt can cause tremors, disorientation and seizures; it advises making sure the dog has had plenty of fresh water and is well hydrated before heading to the beach. [[9]](https://www.vet.cornell.edu/departments/riney-canine-health-center/canine-health-information/summer-safety-tips) AKC adds that a few mouthfuls may only cause diarrhea, that large amounts can be fatal, and that vomiting, diarrhea and dehydration can follow. It advises fresh water and shade at the beach and a break from the water every 15 minutes. [[10]](https://www.akc.org/expert-advice/health/general-health/dogs-drinking-salt-water/) The two sources give different break intervals (every 30 minutes and every 15), so there is no single number to quote.
-- **Algae in lakes.** The CDC says animals can get very sick or even die within hours of contact with harmful algae, that blooms can look like foam, scum, mats or paint, and that you should rinse yourself or your animal with tap water right after contact. [[11]](https://www.cdc.gov/harmful-algal-blooms/about/index.html) National Geographic says appearance does not reliably show how toxic a bloom is, and that dogs can swallow toxins by grooming after they leave the water. [[12]](https://www.nationalgeographic.com/animals/article/algae-toxic-blooms-cyanobacteria-dogs-swimming) None of these pages describes a jacket as protection from any of this.
+Call a vet right away if a dog seems ill after time in or near water (CDC). We cannot assess a dog from here.
 
-The CDC page says to contact a veterinarian right away if an animal seems ill after time in or near water. We cannot assess a dog from here.
-
-Fresh water is the one fix every source above points back to, and it is not a jacket. A bottle with the bowl built in keeps it to one item on the dock, and it suits anyone who does not want to carry a separate bowl. Skip it if you already pack a bowl and a bottle. Springland's 20oz Flip has a silicone bowl on top that flips up for drinking and folds down for storage, with a food-safe, BPA-free polypropylene body, an aluminum carabiner and a leak-proof lock design, per the maker. [[15]](https://springlandpets.com/products/20oz-flip-dog-travel-water-bottle) The page gives the size in the name only, so check the volume against the size of your dog's drink, and the leak claim is the maker's.
+Fresh water is the fix every source points back to. Springland's 20oz Flip bottle has a silicone bowl that flips up to drink and folds down, in food-safe, BPA-free polypropylene with an aluminum carabiner and leak-proof lock, per the maker. [[15]](https://springlandpets.com/products/20oz-flip-dog-travel-water-bottle) The size is in the name only, so check it suits your dog's drink. Skip it if you already pack a bowl and bottle.
 
 {{pick:springland-20oz-flip-travel-bottle|A water bottle with a built-in bowl|The maker describes a silicone top bowl that flips up to drink and folds down for storage, with a leak-proof lock design and an aluminum carabiner.|https://springlandpets.com/products/20oz-flip-dog-travel-water-bottle}}
 
 ## Beach and lake rules at a rental
 
-Open water rules sit with the manager and the town, not the jacket maker. Rules found on the pages below, as of 2026-11-18:
+Open water rules sit with the manager and the town, not the jacket maker. As of 2026-11-18:
 
-- Newman-Dailey Resort Properties says "Dogs are not permitted on the beach or in the pool area and must be on a leash when outside per county regulations." [[13]](https://www.destinvacation.com/pet-friendly)
-- Twiddy lists beach rules by Outer Banks town. Kill Devil Hills and Southern Shores bar dogs from the beach between 9:00 am and 6:00 pm from May 15 to September 15, while Duck lets dogs use the beaches year-round, with leash rules at the village and Duck Town Park. [[14]](https://www.twiddy.com/outer-banks/guests/pets/)
+- Newman-Dailey says "Dogs are not permitted on the beach or in the pool area and must be on a leash when outside per county regulations." [[13]](https://www.destinvacation.com/pet-friendly)
+- Twiddy lists Outer Banks rules by town: Kill Devil Hills and Southern Shores bar dogs from the beach 9:00 am to 6:00 pm from May 15 to September 15, while Duck allows them year-round with leash rules at the village and Duck Town Park. [[14]](https://www.twiddy.com/outer-banks/guests/pets/)
 
-A jacket will not make a beach legal. Ask the host for the beach, lake and dock rules in writing along with the pool rule, and bring the jacket's size chart so you can adjust it at the rental. Our [guide to leaving a dog alone in a rental](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental) covers the hours away from the water, and the [dog cabin packing list](/guides/dog-friendly-cabin-packing-list) covers the rest of the bag. If the water is at the end of a trail, see our [dog hiking gear guide](/guides/dog-hiking-gear-for-a-cabin-vacation); for heat on the way, see [keeping a dog cool on a summer trip](/guides/keep-a-dog-cool-on-a-summer-trip).
+A jacket will not make a beach legal. Ask the host for the beach, lake and dock rules in writing, along with the pool rule. Related reading: [leaving a dog alone in a rental](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental), the [dog cabin packing list](/guides/dog-friendly-cabin-packing-list), [dog hiking gear](/guides/dog-hiking-gear-for-a-cabin-vacation) if the water is at the end of a trail, and [keeping a dog cool](/guides/keep-a-dog-cool-on-a-summer-trip). Add the jacket, water and a towel to the [packing list tool](/tools/packing-list) and run the [pre-booking checklist](/tools/checklist) with beach and dock rules added.
 
 ## What we could not confirm
 
-| Question | Why it is open | Check for yourself |
-| --- | --- | --- |
-| Whether any independent test backs a jacket's buoyancy | Neither maker page names a tester, rating or standard | Ask the maker for the test report before relying on a claim |
-| Whether a given state or lake requires dogs to wear jackets | We read no state boating page | Check the state boating agency and the lake's posted rules |
-| Whether a particular jacket fits your dog's body shape | Makers give girth ranges, and the Ruffwear and Outward Hound pages differ on in-between sizes | Run the fit test above with the jacket in hand |
-| How long a dog can safely swim or how often to break | Cornell and AKC give different break intervals | Ask your vet |
-| Whether the rental allows dogs on its beach or dock | Manager rules vary, and the two managers we read give different beach rules | Get the rule from the host in writing |
-
-## How sure we are
-
-- **Confirmed by a source we cite:** the maker specifications and sizing wording (read 2026-11-18), the Coast Guard video statement (2013), the CDC, Cornell, VCA and AKC statements, and the two managers' beach wording.
-- **What most people report:** nothing here rests on reports from many people. The fit checks come from two sources, which is too few to call common: AKC gives the two-finger check, and AKC and Ezydog both advise a shallow-water test. Treat them as advice from 2 sources, not a rule.
-- **Unknown:** whether any jacket's flotation claim has been independently tested, and the items in the table above. Ask the maker, the host or your vet.
-
-## What to buy first
-
-1. **Measure tonight.** Girth around the widest part of the rib cage, then compare it with the size chart on the listing.
-2. **Buy the jacket that fits your dog and your water.** The DFD Life Jacket for a big dog you may need to lift, the Float Coat for a small to medium dog, the Dawson Swim only for calm water where you stay within reach.
-3. **Fit-test it** in shallow water, then add fresh water for the dock (the Springland bottle above is one way).
-4. **Plan the rest.** Add the jacket, water and a dog towel to the [packing list tool](/tools/packing-list), read the [cabin packing guide](/guides/dog-friendly-cabin-packing-list) for the rest of the bag, and run the [pre-booking checklist](/tools/checklist) with the beach and dock rules added.
+- Whether any independent test backs a jacket's buoyancy: no maker page names a tester, rating or standard, so ask the maker.
+- Whether a state or lake requires jackets: we read no state boating page, so check the boating agency and posted rules.
+- How long a dog can safely swim: Cornell and AKC give different break intervals, so ask your vet.
+- Whether your rental allows dogs on its beach or dock: get it from the host in writing.

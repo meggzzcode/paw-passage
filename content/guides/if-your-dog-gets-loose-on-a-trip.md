@@ -13,6 +13,7 @@ publishedOn: 2026-11-18
 lastReviewed: 2026-11-24
 readingMinutes: 8
 heroImage: guide-loose-dog
+layout: emergency
 faqs:
   - q: What should I do first if my dog runs off in a place I do not know?
     a: Start searching right away close to where the dog was last seen. AKC Reunite says to begin within a 2 mile radius, with neighbors, friends and a favorite treat or toy. Then call your microchip registry, local animal control, vets and shelters, and tell your host.

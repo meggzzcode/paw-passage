@@ -55,6 +55,7 @@ export interface Guide {
   lastReviewed: string; // YYYY-MM-DD
   readingMinutes: number;
   /** Name of a built-in photo (see src/lib/images.ts). Leave empty when heroUpload is used. */
+  layout?: "standard" | "emergency";
   heroImage?: string;
   /** Path of an uploaded photo, e.g. /uploads/my-photo.jpg. Takes priority over heroImage. */
   heroUpload?: string;

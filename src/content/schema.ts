@@ -52,6 +52,8 @@ export const guideSchema = z.object({
   lastReviewed: date,
   readingMinutes: z.coerce.number().int().min(1),
   heroImage: optText,
+  /** "emergency": an action-first page. The hero image and share row are skipped so the first actions sit on the first phone screen. */
+  layout: z.enum(["standard", "emergency"]).optional(),
   heroUpload: z
     .string()
     .optional()

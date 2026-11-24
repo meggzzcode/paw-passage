@@ -6,7 +6,7 @@ export const guide: Guide = {
   seoTitle: "Large Dog Friendly Vacation Rentals and No Weight Limit",
   seoDescription:
     "We read 38 managers' pet pages: 6 state a dog weight limit and 2 say none. See the exact wording, then copy the message that gets a big dog approved.",
-  dek: "Six of the 38 managers we read cap dogs at 35 to 65 pounds and two say no limit. Here is their exact wording and a message that gets a big dog approved.",
+  dek: "Six of 38 managers cap dogs at 35 to 65 pounds and two set no limit. Their wording, plus a message that gets a big dog approved.",
   category: "Planning",
   states: [],
   status: "published",

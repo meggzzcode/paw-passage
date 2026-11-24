@@ -123,20 +123,24 @@ function GuidePage() {
           />
         </header>
       </div>
-      <img
-        src={img.src}
-        srcSet={g.heroUpload ? undefined : srcSetForKey(g.heroImage)}
-        sizes="(max-width: 800px) 100vw, 1152px"
-        alt={img.alt}
-        width={1600}
-        height={1008}
-        decoding="async"
-        fetchPriority="high"
-        className="mx-auto mt-6 aspect-[16/9] sm:mt-10 sm:aspect-[21/9] w-full max-w-6xl object-cover md:rounded-xl"
-      />
-      <div className="container-page">
-        <ArticleActions slug={g.slug} title={g.title} />
-      </div>
+      {g.layout !== "emergency" && (
+        <img
+          src={img.src}
+          srcSet={g.heroUpload ? undefined : srcSetForKey(g.heroImage)}
+          sizes="(max-width: 800px) 100vw, 1152px"
+          alt={img.alt}
+          width={1600}
+          height={1008}
+          decoding="async"
+          fetchPriority="high"
+          className="mx-auto mt-6 aspect-[16/9] sm:mt-10 sm:aspect-[21/9] w-full max-w-6xl object-cover md:rounded-xl"
+        />
+      )}
+      {g.layout !== "emergency" && (
+        <div className="container-page">
+          <ArticleActions slug={g.slug} title={g.title} />
+        </div>
+      )}
       <div className="container-page mt-6 grid gap-12 sm:mt-12 lg:grid-cols-[minmax(0,1fr)_260px]">
         <div className="mx-auto w-full min-w-0 max-w-[42rem]">
           <AffiliateNotice guide={g} />

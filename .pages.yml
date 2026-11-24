@@ -97,6 +97,14 @@ content:
         required: true
         options:
           maxlength: 160
+      - name: layout
+        label: Page layout
+        type: select
+        description: "Use Emergency only for action-first pages (hides the top photo so the first steps show on the first screen)."
+        options:
+          values:
+            - standard
+            - emergency
       - name: heroImage
         label: Top photo (choose one of the built-in photos)
         type: select

@@ -454,7 +454,7 @@ products:
     retailerUrl: ""
     retailerName: ""
     lastVerified: 2026-11-24
-    active: false
+    active: true
     imageSource: ""
     imageRights: none
     affiliateProgram: ""
@@ -2786,7 +2786,7 @@ products:
     retailerUrl: ""
     retailerName: ""
     lastVerified: 2026-11-24
-    active: false
+    active: true
     imageSource: ""
     imageRights: none
     affiliateProgram: ""
@@ -2821,7 +2821,7 @@ products:
     retailerUrl: ""
     retailerName: ""
     lastVerified: 2026-11-24
-    active: false
+    active: true
     imageSource: ""
     imageRights: none
     affiliateProgram: ""
@@ -2925,7 +2925,7 @@ products:
     retailerUrl: ""
     retailerName: ""
     lastVerified: 2026-11-24
-    active: false
+    active: true
     imageSource: ""
     imageRights: none
     affiliateProgram: ""
@@ -2996,7 +2996,7 @@ products:
     retailerUrl: ""
     retailerName: ""
     lastVerified: 2026-11-24
-    active: false
+    active: true
     imageSource: ""
     imageRights: none
     affiliateProgram: ""
@@ -3032,7 +3032,7 @@ products:
     retailerUrl: ""
     retailerName: ""
     lastVerified: 2026-11-24
-    active: false
+    active: true
     imageSource: ""
     imageRights: none
     affiliateProgram: ""
@@ -3139,7 +3139,7 @@ products:
     retailerUrl: ""
     retailerName: ""
     lastVerified: 2026-11-24
-    active: false
+    active: true
     imageSource: ""
     imageRights: none
     affiliateProgram: ""
@@ -3205,7 +3205,7 @@ products:
     retailerUrl: ""
     retailerName: ""
     lastVerified: 2026-11-24
-    active: false
+    active: true
     imageSource: ""
     imageRights: none
     affiliateProgram: ""

@@ -191,13 +191,15 @@ There is no single official list on the pages we read. The cottages page says "D
 
 | Park | What the official page says about dogs |
 | --- | --- |
-| Skidaway Island | Cabins A and C do not allow pets; Cabin B, the ADA accessible one, does [[2]](https://gastateparks.org/Cottages) |
-| Mistletoe | One cabin described as pet-friendly (fee), no amount shown [[2]](https://gastateparks.org/Cottages) |
-| Smithgall Woods | Garden Cottage is "our singular pet-friendly (with fee) cabin" among six cottages [[3]](https://gastateparks.org/SmithgallWoods/Cottages) |
-| Fort Yargo | 17 cottages listed, nothing about pets; call the park line, 770-867-3489 [[4]](https://gastateparks.org/FortYargo) |
-| Red Top Mountain | 20 cottages listed, no mention of dogs or leashes [[5]](https://gastateparks.org/RedTopMountain) |
+| Skidaway Island | Cabins A and C do not allow pets; Cabin B, the ADA accessible one, does |
+| Mistletoe | One cabin described as pet-friendly (fee), no amount shown |
+| Smithgall Woods | Garden Cottage is "our singular pet-friendly (with fee) cabin" among six cottages |
+| Fort Yargo | 17 cottages listed, nothing about pets; call the park line, 770-867-3489 |
+| Red Top Mountain | 20 cottages listed, no mention of dogs or leashes |
 
-An Explore Georgia list (undated) adds dog-friendly cottages at Black Rock Mountain (#5, #8 and #10), Crooked River (four), F.D. Roosevelt (four) and Mistletoe (five). [[6]](https://exploregeorgia.org/places-to-stay/list/stay-in-these-cozy-cabins-with-your-dog-at-georgia-state-parks) Treat it as a lead, since designations can change; GoPetFriendly (August 2024) also lists cottage numbers. [[17]](https://gopetfriendly.com/blog/us-state-parks-that-allow-pets-your-guide-to-pet-friendly-cabins-campgrounds-beaches-and-more) The park confirms the unit you book.
+Sources for this table: [[3]](https://gastateparks.org/SmithgallWoods/Cottages), [[4]](https://gastateparks.org/FortYargo)
+
+An Explore Georgia list (undated) adds dog-friendly cottages at Black Rock Mountain (#5, #8 and #10), Crooked River (four), F.D. Roosevelt (four) and Mistletoe (five). [[6]](https://exploregeorgia.org/places-to-stay/list/stay-in-these-cozy-cabins-with-your-dog-at-georgia-state-parks) Treat it as a lead, since designations can change; [GoPetFriendly](https://gopetfriendly.com/blog/us-state-parks-that-allow-pets-your-guide-to-pet-friendly-cabins-campgrounds-beaches-and-more) (August 2024) also lists cottage numbers. The park confirms the unit you book.
 
 ## How do you request a dog friendly cabin?
 
@@ -208,7 +210,7 @@ The rules page does not say how to request. A practical route:
 3. Say how many dogs you are bringing and ask for the request to be noted on the booking.
 4. Ask for a written confirmation, then bring it.
 
-Booking timing: reservations open 13 months ahead, or 14 for Georgia residents. [[7]](https://gastateparks.org/Reservations) Cancelling a cottage costs $10 if you cancel 15 or more days out, and lose 50% of the use fee at 14 days or fewer. Check-in is 4 to 10 p.m., checkout 11 a.m., and the balance is due at check-in. [[8]](https://gastateparks.org/ReservationPolicies) The cottages page puts rates at around $85 to $250 per night with no separate cleaning fee, while the reservations page says $75 to $250, so confirm the price for your dates. [[2]](https://gastateparks.org/Cottages) [[7]](https://gastateparks.org/Reservations)
+Booking timing: reservations open 13 months ahead, or 14 for Georgia residents. [[7]](https://gastateparks.org/Reservations) Cancelling a cottage costs $10 if you cancel 15 or more days out, and lose 50% of the use fee at 14 days or fewer. Check-in is 4 to 10 p.m., checkout 11 a.m., and the balance is due at check-in. [[8]](https://gastateparks.org/ReservationPolicies) The cottages page puts rates at around $85 to $250 per night with no separate cleaning fee, while the reservations page says $75 to $250, so confirm the price for your dates. [[2]](https://gastateparks.org/Cottages)
 
 ## Can you leave a dog alone in a state park cabin?
 
@@ -235,10 +237,12 @@ A state park cottage sets one two-dog limit regardless of size, one fee and one 
 
 | Cabin | Dogs and limits | Fee as of 2026-11-18 |
 | --- | --- | --- |
-| Georgia state park cottage | 2, any size; never unattended | $50 per dog per stay [[1]](https://gastateparks.org/ParkRules) |
-| Cabin Rentals of Georgia | Under 35 lb, non-shedding, crate trained; every dog approved first | $50 per pet per night, $75 cleaning, $250 refundable deposit [[10]](https://cabin-rentals-of-georgia.com/policies) |
-| A Blue Ridge Cabin Rental | 2 pets per stay; deeper cleaning can cost more | $150 per pet, non-refundable [[11]](https://ablueridgecabinrental.com/cabin-policies/) |
-| Sliding Rock Cabins | Not stated; fenced yards only at select cabins | No pet fees, breed or weight limits [[12]](https://slidingrockcabins.com/) |
+| Georgia state park cottage | 2, any size; never unattended | $50 per dog per stay |
+| Cabin Rentals of Georgia | Under 35 lb, non-shedding, crate trained; every dog approved first | $50 per pet per night, $75 cleaning, $250 refundable deposit |
+| A Blue Ridge Cabin Rental | 2 pets per stay; deeper cleaning can cost more | $150 per pet, non-refundable |
+| Sliding Rock Cabins | Not stated; fenced yards only at select cabins | No pet fees, breed or weight limits |
+
+Sources for this table: [[10]](https://cabin-rentals-of-georgia.com/policies), [[11]](https://ablueridgecabinrental.com/cabin-policies/), [[12]](https://slidingrockcabins.com/)
 
 **Which to choose:** pick the state park cottage if you have one or two dogs, want a flat fee and can keep the dog with you every minute. Pick a private cabin if you have a third dog, need a fenced yard or want to leave the dog for an hour.
 
@@ -268,9 +272,11 @@ The fee, two-dog limit, request, unattended, leash and cancellation figures come
 | --- | --- | --- |
 | A full list of dog-friendly cabins | No official list on the pages we read | Ask the park to confirm your exact unit |
 | How to submit the request | Rules page says request, not how | Call 1-800-864-7275 or the park office |
-| Whether $50 is charged at booking or check-in | Official page says check-in; Animal of Things (August 2026) says booking and cites no source [[16]](https://animalofthings.com/dogs-in-state-parks-in-georgia/) | Ask when you book |
+| Whether $50 is charged at booking or check-in | Official page says check-in; Animal of Things (August 2026) says booking and cites no source | Ask when you book |
 | Exact nightly rate | Cottages page says $85 to $250, reservations page $75 to $250 | Quote for your dates |
 | How service animals are handled at a cottage | Rules page says working service animals are allowed in overnight accommodations; it does not explain booking steps | Ask the park |
+
+Sources for this table: [[16]](https://animalofthings.com/dogs-in-state-parks-in-georgia/)
 
 ## Your next step
 

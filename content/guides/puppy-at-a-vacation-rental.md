@@ -162,11 +162,11 @@ Some rentals allow puppies and some do not, and the rule is usually one sentence
 
 Our sample is 38 managers' public pet pages, a convenience sample read 2026-11-18, not a count of the market. These five state a rule:
 
-- Tahoe Getaways: "We do not allow dogs under the age of 18 months." [[1]](https://tahoegetaways.com/policies)
+- [Tahoe Getaways](https://tahoegetaways.com/policies): "We do not allow dogs under the age of 18 months."
 - A Blue Ridge Cabin Rental: "Each pet must be at least 18 months old and be fully house-trained." [[2]](https://ablueridgecabinrental.com/cabin-policies/)
-- Emmons Realty: "Dogs must be at least 1 year old." [[3]](https://www.emmonsrealty.com/pages/rental-policies)
+- [Emmons Realty](https://www.emmonsrealty.com/pages/rental-policies): "Dogs must be at least 1 year old."
 - Beach Realty & Construction (Outer Banks): "Puppies and certain breeds ... are not permitted in Beach Realty properties." [[4]](https://www.beachrealtync.com/node/707)
-- Resort Realty (Outer Banks): "no puppies are permitted." [[5]](https://resortrealty.com/outer-banks-pet-friendly)
+- [Resort Realty](https://resortrealty.com/outer-banks-pet-friendly) (Outer Banks): "no puppies are permitted."
 
 Ask three things first: how old must the dog be, does a puppy count as a pet and a dog under the limit and the fee, and who pays if there is an accident. The [will my dog be accepted tool](/tools/will-my-dog-be-accepted) helps you line up those questions, and a message you can paste is [further down](#what-to-send-the-host).
 

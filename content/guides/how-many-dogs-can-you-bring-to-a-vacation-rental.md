@@ -168,12 +168,12 @@ Airbnb lets guests declare up to five pets and lets hosts cap them anywhere from
 ## The short answer
 
 - Get your exact dog count in writing before you pay. A listing can say "pets welcome" in the title and "2 dogs maximum" in the house rules.
-- Limits hide in odd places: Twiddy sets two unless a home advertises more [[5]](https://www.twiddy.com/outer-banks/guests/pets/), and one Vrbo listing put "limit 2 total" in its FAQ [[11]](https://www.vrbo.com/en-sg/p2719492vb).
+- Limits hide in odd places: Twiddy sets two unless a home advertises more [[5]](https://www.twiddy.com/outer-banks/guests/pets/), and one [Vrbo](https://www.vrbo.com/en-sg/p2719492vb) listing put "limit 2 total" in its FAQ.
 - Weight limits run from 60 pounds per dog down to under 35 [[7]](https://cabin-rentals-of-georgia.com/policies). Ask whether yours is per dog or combined.
 
 ## How many dogs are allowed at an Airbnb or Vrbo?
 
-Airbnb shows two different numbers on two pages: guests declare 0 to 5 pets [[1]](https://www.airbnb.com/help/article/3623), hosts set one to five [[2]](https://www.airbnb.com/resources/hosting-homes/a/what-you-need-to-know-about-hosting-pets-463). Whether a host limit of two stops a guest from declaring three is not stated anywhere we read. A hosting-software explainer updated 2 November 2026 says hosts "can specify whether pets are allowed and, if so, how many" [[13]](https://www.guestable.com/blog/airbnb-new-house-rules-policy/), though no Airbnb page repeats that wording.
+[Airbnb](https://www.airbnb.com/help/article/3623) shows two different numbers on two pages: guests declare 0 to 5 pets, hosts set one to five [[2]](https://www.airbnb.com/resources/hosting-homes/a/what-you-need-to-know-about-hosting-pets-463). Whether a host limit of two stops a guest from declaring three is not stated anywhere we read. A hosting-software explainer updated 2 November 2026 says hosts "can specify whether pets are allowed and, if so, how many" [[13]](https://www.guestable.com/blog/airbnb-new-house-rules-policy/), though no Airbnb page repeats that wording.
 
 Vrbo handles pets through house rules in text. Hosts can note pet type and size, with a custom note limited to 50 characters [[3]](https://help.vrbo.com/articles/Add-or-edit-house-rules). Read the whole listing, FAQ included.
 
@@ -183,13 +183,15 @@ A sample of published limits as of 2026-11-18, not a survey. Most pages carry no
 
 | Source | Dogs and size | Extra or unapproved dog |
 | --- | --- | --- |
-| Twiddy, Outer Banks [[5]](https://www.twiddy.com/outer-banks/guests/pets/) | Two unless advertised; homes may restrict size | Above two only if advertised; violation is cause for termination of tenancy |
-| Brindley Beach, Outer Banks [[6]](https://www.brindleybeach.com/node/3691) | Two dogs, 60 lb each | Not permitted; eviction without refund |
-| Cabin Rentals of Georgia [[7]](https://cabin-rentals-of-georgia.com/policies) | No number; each dog approved; under 35 lb | Fees doubled |
-| My Vacation Haven, Miramar Beach [[8]](https://www.myvacationhaven.com/pet-policy) | Two per property | Not stated |
-| One Vrbo listing, Blue Ridge [[11]](https://www.vrbo.com/en-sg/p2719492vb) | Limit 2 total; 23 kg per pet | Not stated |
+| Twiddy, Outer Banks | Two unless advertised; homes may restrict size | Above two only if advertised; violation is cause for termination of tenancy |
+| Brindley Beach, Outer Banks | Two dogs, 60 lb each | Not permitted; eviction without refund |
+| Cabin Rentals of Georgia | No number; each dog approved; under 35 lb | Fees doubled |
+| My Vacation Haven, Miramar Beach | Two per property | Not stated |
+| One Vrbo listing, Blue Ridge | Limit 2 total; 23 kg per pet | Not stated |
 
-Other managers are looser: Vacasa says it varies by home and allows only dogs authorized in the reservation [[4]](https://www.vacasa.com/explore/pet-friendly-vacation-rentals), AvantStay says "up to two" at most Big Bear homes [[10]](https://avantstay.com/vacation-rentals/pet-friendly/california/big-bear), and Kinlin Grover on Cape Cod gives no number and tells guests to contact their rental agent [[9]](https://www.vacationcapecod.com/kinlin-grover-vacation-rentals-pet-policy/). A manager default often reads "unless advertised", so the listing text beats the manager's general page.
+Sources for this table: [[6]](https://www.brindleybeach.com/node/3691)
+
+Other managers are looser: [Vacasa](https://www.vacasa.com/explore/pet-friendly-vacation-rentals) says it varies by home and allows only dogs authorized in the reservation, [AvantStay](https://avantstay.com/vacation-rentals/pet-friendly/california/big-bear) says "up to two" at most Big Bear homes, and Kinlin Grover on Cape Cod gives no number and tells guests to contact their rental agent [[9]](https://www.vacationcapecod.com/kinlin-grover-vacation-rentals-pet-policy/). A manager default often reads "unless advertised", so the listing text beats the manager's general page.
 
 Across the 38 pet pages we read (Smokies, North Carolina, Georgia, California, Colorado, Florida Gulf Coast), single stated fees run from $20 a night to a $300 one-time charge, Resort Realty says up to $1,000 depending on the property, three managers charge nothing on the homes we saw, and only 5 mention breed limits. Another 11 sites refused automated reading and were skipped. Every manager, with its limit, fee and link, is on the [pet policies data page](/data/pet-policies). One state-run example, Georgia state park cottages, takes two dogs at $50 each; see [dogs in Georgia state park cabins](/guides/dogs-in-georgia-state-park-cabins).
 
@@ -216,7 +218,7 @@ Also check the layout before you pay:
 
 ## What do extra dogs cost?
 
-The fee shape matters more than the headline number. Airbnb names four models: per booking, per night, per pet, per pet per night [[1]](https://www.airbnb.com/help/article/3623). Here are round, made-up amounts for three dogs over four nights, not quoted rates:
+The fee shape matters more than the headline number. [Airbnb](https://www.airbnb.com/help/article/3623) names four models: per booking, per night, per pet, per pet per night. Here are round, made-up amounts for three dogs over four nights, not quoted rates:
 
 | Fee shape (hypothetical) | Calculation | Total |
 | --- | --- | --- |
@@ -230,9 +232,9 @@ The smallest-looking number produced one of the largest totals. Also confirm whe
 
 Published figures as of 2026-11-18:
 
-- Cabin Rentals of Georgia lists $50 per pet per night [[7]](https://cabin-rentals-of-georgia.com/policies), plus a $75 cleaning fee and a $250 refundable deposit.
+- [Cabin Rentals of Georgia](https://cabin-rentals-of-georgia.com/policies) lists $50 per pet per night, plus a $75 cleaning fee and a $250 refundable deposit.
 - At My Vacation Haven two pets cost $250 plus $100, or $350, non-refundable, before taxes and the admin fee [[8]](https://www.myvacationhaven.com/pet-policy).
-- Airbnb's fee "can't be more than your nightly base rate" [[1]](https://www.airbnb.com/help/article/3623). How that applies to a per pet per night fee is not spelled out, so read the checkout total.
+- [Airbnb](https://www.airbnb.com/help/article/3623)'s fee "can't be more than your nightly base rate". How that applies to a per pet per night fee is not spelled out, so read the checkout total.
 
 ## What if you bring more dogs than the listing allows?
 
@@ -241,7 +243,7 @@ Managers treat it as a serious violation: Twiddy calls it cause for termination 
 ## Do puppies and service animals count?
 
 - **Puppies:** none of the policies that give a number exempt them, so mention any puppy up front.
-- **Service animals:** Airbnb says they always stay for free [[1]](https://www.airbnb.com/help/article/3623), and hosts must allow one to accompany its owner [[2]](https://www.airbnb.com/resources/hosting-homes/a/what-you-need-to-know-about-hosting-pets-463). The ADA FAQ discusses hotel cleaning charges for service-animal hair or dander, not vacation rentals [[12]](https://www.ada.gov/resources/service-animals-faqs/). Whether a service animal counts toward a numeric cap is in the table at the end.
+- **Service animals:** [Airbnb](https://www.airbnb.com/help/article/3623) says they always stay for free, and hosts must allow one to accompany its owner [[2]](https://www.airbnb.com/resources/hosting-homes/a/what-you-need-to-know-about-hosting-pets-463). The ADA FAQ discusses hotel cleaning charges for service-animal hair or dander, not vacation rentals [[12]](https://www.ada.gov/resources/service-animals-faqs/). Whether a service animal counts toward a numeric cap is in the table at the end.
 
 ## How do you ask for a third dog?
 

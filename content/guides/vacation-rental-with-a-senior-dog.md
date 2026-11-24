@@ -308,7 +308,7 @@ Whether a deposit or charge applies to an accident you reported and cleaned is a
 ## What else should you plan for the trip?
 
 - **Emergency vet:** save one near the rental and check its hours. The ASPCA says to keep a local veterinary emergency hospital in your phone; no source sets a distance, so pick the minutes you would accept. [[25]](https://www.aspca.org/news/traveling-your-pets-dos-and-donts)
-- **Poison help:** ASPCA Animal Poison Control is 888-426-4435 [[26]](https://www.aspca.org/pet-care/animal-poison-control) and Pet Poison Helpline is 855-764-7661 [[27]](https://www.petpoisonhelpline.com/); a consultation fee may apply.
+- **Poison help:** [ASPCA](https://www.aspca.org/pet-care/animal-poison-control) Animal Poison Control is 888-426-4435 and [Pet Poison Helpline](https://www.petpoisonhelpline.com/) is 855-764-7661; a consultation fee may apply.
 - **Medication and the drive:** a vet-written medication list with extra in case the return is delayed. No vet source we read gives a stop interval, so ask your vet, and never leave a pet in a parked car. [[25]](https://www.aspca.org/news/traveling-your-pets-dos-and-donts)
 
 The [first-aid kit guide](/guides/dog-travel-first-aid-kit-guide), [car safety guide](/guides/dog-car-safety-harness-and-crate-guide) and [cabin packing list](/guides/dog-friendly-cabin-packing-list) cover the rest.

@@ -195,10 +195,10 @@ The ASPCA calls a secured crate the safest option and describes a harness on a s
 
 | Layout and vehicle | What the sources say | What is unknown |
 | --- | --- | --- |
-| Two crates, side by side, in the cargo area (SUV, wagon) | CPS warns cargo anchors are not always weight-rated; ask the vehicle maker. [[2]](https://centerforpetsafety.org/cargo-area-connection-advisory/) | Whether your anchors carry two crates and two dogs |
-| One harness per dog on the rear seat (sedan, wagon, SUV) | CPS lists the Sleepypod Clickit Sport as passed (5 star, July 2014), test dogs up to 90 lb. [[6]](https://centerforpetsafety.org/sleepypod-clickit-sport/) | Whether your seat has two good belt positions |
-| Harnesses plus a barrier behind the front seats | Kurgo says its barrier fits fixed or removable headrests but not 2-door cars or mini vans. [[7]](https://www.kurgo.com/p/backseat-barrier/K00006) | Whether the barrier does anything in a crash |
-| Dogs behind a cargo barrier, no restraint (SUV, wagon) | PetSafe's barrier is tension-fit and its page makes no crash-test claim. [[8]](https://www.petsafe.com/p/happy-ride-metal-dog-barrier/62409/) | Everything about the dogs in a sudden stop |
+| Two crates, side by side, in the cargo area (SUV, wagon) | CPS warns cargo anchors are not always weight-rated; ask the vehicle maker. | Whether your anchors carry two crates and two dogs |
+| One harness per dog on the rear seat (sedan, wagon, SUV) | CPS lists the Sleepypod Clickit Sport as passed (5 star, July 2014), test dogs up to 90 lb. | Whether your seat has two good belt positions |
+| Harnesses plus a barrier behind the front seats | Kurgo says its barrier fits fixed or removable headrests but not 2-door cars or mini vans. | Whether the barrier does anything in a crash |
+| Dogs behind a cargo barrier, no restraint (SUV, wagon) | PetSafe's barrier is tension-fit and its page makes no crash-test claim. | Everything about the dogs in a sudden stop |
 
 If both dogs share the rear bench, a wide seat cover keeps hair and mud off it, but it is not a restraint. Kurgo lists its Rover Hammock Extended Width at 63 by 56 inches for full-size trucks and large SUVs. [[9]](https://kurgo.com/car-seat-covers/dog-hammocks/wander-hammock-extended-width) Our [car interior guide](/guides/protect-your-car-interior-from-a-dog-on-a-road-trip) covers seat covers and liners, and our [large-dog rental guide](/guides/vacation-rentals-that-welcome-large-dogs) covers the stay.
 
@@ -257,11 +257,11 @@ With two dogs, our suggestion, not a source's rule: clip both leashes before the
 
 | Unknown | Why | Check for yourself |
 | --- | --- | --- |
-| Whether any independent tester has crash-tested two dogs side by side | The CPS crate study used one test dog per crate [[3]](https://centerforpetsafety.org/2015-crate-study-results/) | Ask the maker and CPS |
-| What CPS says on sharing a crate | The CPS pages we read do not address it; the separate-carrier advice is Vetstreet's [[1]](https://www.vetstreet.com/?p=1117) | Read CPS's current crate guidance |
-| Whether your cargo anchors carry two crates | CPS says anchors vary [[2]](https://centerforpetsafety.org/cargo-area-connection-advisory/) | Owner's manual and the dealer |
-| Whether a harness suits dogs above 75 pounds | Ruffwear states no weight limit; Kurgo's tested limit is 75 pounds [[12]](https://ruffwear.com/products/load-up-dog-car-harness) [[14]](https://www.kurgo.com/p/enhanced-strength-dog-car-harness/K01255) | Match the tested weight to your dog |
-| Your state's rules for pets in vehicles | Laws differ by state [[15]](https://magazine.northeast.aaa.com/?p=95415) | State statutes |
+| Whether any independent tester has crash-tested two dogs side by side | The CPS crate study used one test dog per crate | Ask the maker and CPS |
+| What CPS says on sharing a crate | The CPS pages we read do not address it; the separate-carrier advice is Vetstreet's | Read CPS's current crate guidance |
+| Whether your cargo anchors carry two crates | CPS says anchors vary | Owner's manual and the dealer |
+| Whether a harness suits dogs above 75 pounds | Ruffwear states no weight limit; Kurgo's tested limit is 75 pounds | Match the tested weight to your dog |
+| Your state's rules for pets in vehicles | Laws differ by state | State statutes |
 
 The weight and width figures above are our arithmetic from maker numbers, and the layouts are our reading of single-dog evidence. Restraint claims are the makers' unless a tester is named.
 

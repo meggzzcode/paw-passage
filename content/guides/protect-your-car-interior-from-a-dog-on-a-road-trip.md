@@ -178,7 +178,7 @@ Match the cover to the vehicle first. A bench cover suits a car, an extended ham
 | Extended hammock | 63 x 56 in | Rear bench, headrest to headrest | Large SUV or truck, big dog or two dogs |
 | Cargo cape | 52 x 62 in | Cargo area | Wagon or SUV, ideally with a crate |
 
-The makers say the PetSafe cover "fits the back seat of most cars, trucks and SUVs," [[2]](https://www.petsafe.com/p/happy-ride-quilted-bench-seat-cover/PTV00-17462/) the Kurgo hammock is for "most full size trucks and large SUVs," [[3]](https://kurgo.com/car-seat-covers/dog-hammocks/wander-hammock-extended-width) and the cape fits "most cargo areas." [[4]](https://www.kurgo.com/p/cargo-cape/POG30-17676) None of these pages lists a vehicle compatibility chart, so the tape measure is the real check. For a compact car, the hammock page points to a smaller standard-width hammock from Kurgo, listed at 55 by 56 inches.
+The makers say the [PetSafe](https://www.petsafe.com/p/happy-ride-quilted-bench-seat-cover/PTV00-17462/) cover "fits the back seat of most cars, trucks and SUVs," the [Kurgo](https://kurgo.com/car-seat-covers/dog-hammocks/wander-hammock-extended-width) hammock is for "most full size trucks and large SUVs," and the cape fits "most cargo areas." [[4]](https://www.kurgo.com/p/cargo-cape/POG30-17676) None of these pages lists a vehicle compatibility chart, so the tape measure is the real check. For a compact car, the hammock page points to a smaller standard-width hammock from Kurgo, listed at 55 by 56 inches.
 
 Retail guides sort covers by dog. Chewy says hammocks keep a dog out of the footwell and bench covers install easily with seat belt openings. [[8]](https://www.chewy.com/education/dog/pet-parenting/your-guide-to-the-best-dog-car-seat-covers-to-protect-your-ride) A seller page suggests covers for small, calm dogs and hammocks for large or active ones. [[11]](https://www.seatcoversolutions.com/blogs/news/are-dog-car-seat-covers-and-hammocks-same) Those are retailers' views, not tests.
 
@@ -211,7 +211,7 @@ Covers change how belts and headrests work. These four checks are our suggestion
 1. **Buckle access.** Click each belt in with the cover installed. [[2]](https://www.petsafe.com/p/happy-ride-quilted-bench-seat-cover/PTV00-17462/)
 2. **Tether reach.** Fit the harness and tether over the cover and confirm the dog can sit and lie down without the tether pulling tight.
 3. **Headrest straps.** A front passenger must still be able to adjust their headrest, and nothing should hang across a vent or sensor.
-4. **Slip check.** Push the loaded cover; PetSafe lists a high-grip bottom, Kurgo lists anchors and paracord. [[3]](https://kurgo.com/car-seat-covers/dog-hammocks/wander-hammock-extended-width) If it slides, re-tighten the lower straps.
+4. **Slip check.** Push the loaded cover; PetSafe lists a high-grip bottom, [Kurgo](https://kurgo.com/car-seat-covers/dog-hammocks/wander-hammock-extended-width) lists anchors and paracord. If it slides, re-tighten the lower straps.
 
 ## A small dog: booster seat
 
@@ -221,7 +221,7 @@ A booster is comfort and a tether point, not upholstery protection. Kurgo's Heat
 
 ## Claws, hair and wet dogs
 
-- **Claws.** Nationwide suggests a seat cover or plastic wrap over door surfaces for leather or vinyl. [[9]](https://blog.nationwide.com/dog-proofing-car/) NAPA says covers protect seats from claws, [[10]](https://knowhow.napaonline.com/pet-proof-your-car-tips-for-taking-rex-on-the-road/) and Play Pet Brands says to pick a cover strong enough for scratches. [[12]](https://www.playpetbrands.com/blogs/tips/from-scratches-to-shedding-protecting-your-car-from-incidental-pet-damage) No maker page gives a scratch-resistance rating.
+- **Claws.** Nationwide suggests a seat cover or plastic wrap over door surfaces for leather or vinyl. [[9]](https://blog.nationwide.com/dog-proofing-car/) NAPA says covers protect seats from claws, [[10]](https://knowhow.napaonline.com/pet-proof-your-car-tips-for-taking-rex-on-the-road/) and [Play Pet Brands](https://www.playpetbrands.com/blogs/tips/from-scratches-to-shedding-protecting-your-car-from-incidental-pet-damage) says to pick a cover strong enough for scratches. No maker page gives a scratch-resistance rating.
 - **Hair.** Nationwide says it is "impossible to keep the seats and floor completely free of dog hair" and suggests a lint roller in the console. NAPA suggests vacuuming before loading the dog and a small kit with paper towels and pet cleaner.
 - **Wet and muddy dogs.** Chewy says water-resistant or machine-washable covers are worth prioritizing for a dog that swims. [[8]](https://www.chewy.com/education/dog/pet-parenting/your-guide-to-the-best-dog-car-seat-covers-to-protect-your-ride) Our suggestion: towel the dog off and rinse off mud before it climbs onto the cover. For the water side, see our [life jacket guide](/guides/dog-life-jacket-for-lakes-and-beaches).
 - **Cleaning the cover.** Follow the maker. The hammock page links a care sheet we did not read, so check it.

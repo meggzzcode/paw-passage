@@ -210,15 +210,15 @@ Everything here is the maker's own wording, read on 2026-11-18. There are no rat
 
 | Product | Capacity as stated | Cleaning and materials as stated |
 | --- | --- | --- |
-| Kurgo Collaps A Bowl [[6]](https://www.kurgo.com/pet-travel-bowls/collaps-a-bowl) | 24 oz; under 1 inch collapsed | Top-rack dishwasher; food-grade silicone |
-| Kurgo Splash Free Wander [[12]](https://www.kurgo.com/p/splash-free-wander-dog-water-bowl/K01812) | 24 oz (710 ml) | Top-rack dishwasher; food-grade silicone |
-| Ruffwear Quencher, Medium [[11]](https://ruffwear.com/products/quencher-dog-bowl) | 4.2 cups (1 L); 5.5 in opening | Hand wash, air dry; polyester shell, waterproof nylon lining |
-| Gunner Dog Bowl with Travel Lid [[13]](https://gunner.com/products/gunner-dog-bowl-black) | Not stated | Bowl top-rack dishwasher; nylon, lid described as spill-proof |
-| Springland 22oz Classic [[7]](https://springlandpets.com/products/22oz-classic-dog-travel-water-bottle) | Named 22oz; no volume figure | Top-rack dishwasher or hand wash; polypropylene |
-| Springland 20oz Flip [[8]](https://springlandpets.com/products/20oz-flip-dog-travel-water-bottle) | Named 20oz; no volume figure | Top-rack dishwasher or hand wash; polypropylene, silicone flip-top bowl |
-| Vittles Vault Travel-Tainer [[9]](https://www.petmate.com/vittles-vault-travel-trainer-portable-food-storage-container/product/4504) | 6 cups plus two 3-cup bowls; depends on kibble | Bowls dishwasher safe; container hand wash only |
-| Kurgo Kibble Carrier [[10]](https://www.kurgo.com/dog-travel/kibble-carrier) | Up to 5 lbs, about 20 cups | Hand wash, air dry; ripstop with PEVA liner |
-| IRIS USA airtight container [[15]](https://www.irisusainc.com/collections/airtight-pet-food-containers/products/airtight-dog-food-storage-container-up-to-10-lbs-3) | 12.75 quarts, about 10 lb of food | Not stated; airtight seals and buckles |
+| Kurgo Collaps A Bowl | 24 oz; under 1 inch collapsed | Top-rack dishwasher; food-grade silicone |
+| Kurgo Splash Free Wander | 24 oz (710 ml) | Top-rack dishwasher; food-grade silicone |
+| Ruffwear Quencher, Medium | 4.2 cups (1 L); 5.5 in opening | Hand wash, air dry; polyester shell, waterproof nylon lining |
+| Gunner Dog Bowl with Travel Lid | Not stated | Bowl top-rack dishwasher; nylon, lid described as spill-proof |
+| Springland 22oz Classic | Named 22oz; no volume figure | Top-rack dishwasher or hand wash; polypropylene |
+| Springland 20oz Flip | Named 20oz; no volume figure | Top-rack dishwasher or hand wash; polypropylene, silicone flip-top bowl |
+| Vittles Vault Travel-Tainer | 6 cups plus two 3-cup bowls; depends on kibble | Bowls dishwasher safe; container hand wash only |
+| Kurgo Kibble Carrier | Up to 5 lbs, about 20 cups | Hand wash, air dry; ripstop with PEVA liner |
+| IRIS USA airtight container | 12.75 quarts, about 10 lb of food | Not stated; airtight seals and buckles |
 
 No page cites independent testing, so treat leak and spill claims as the maker's own. For where each sits in a trip bag, see our [feeding and hydration gear page](/gear/feeding-and-hydration); for the rest of the trail bag, our [dog hiking gear guide](/guides/dog-hiking-gear-for-a-cabin-vacation).
 

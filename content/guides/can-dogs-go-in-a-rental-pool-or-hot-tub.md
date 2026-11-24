@@ -184,13 +184,15 @@ Quotes are as written on each live page, re-read on 2026-11-18.
 
 | Manager | What the page says | Does it name a hot tub or spa? |
 | --- | --- | --- |
-| Newman-Dailey Resort Properties | "Dogs are not permitted on the beach or in the pool area and must be on a leash when outside per county regulations." [[1]](https://www.destinvacation.com/pet-friendly) | No: it says "pool area" only |
-| My Vacation Haven | "Pets are not allowed in the pool or hot tub." [[2]](https://www.myvacationhaven.com/pet-policy) | Yes: hot tub |
-| Brindley Beach Vacations | "Dogs are not allowed to swim in the pool or the hot tub – additional cleaning may be needed and a charge may apply." [[3]](https://www.brindleybeach.com/node/3691) | Yes: hot tub |
-| Sun Realty | "Pets are not permitted in pools or hot tubs." [[4]](https://www.sunrealtync.com/node/1163) | Yes: hot tubs |
-| Beach Realty & Construction | "No dogs are allowed in the pool or hot tub." [[5]](https://www.beachrealtync.com/node/707) | Yes: hot tub |
-| Surf or Sound Realty | "All dogs, including approved dogs, are strictly prohibited in the pool and spa." [[6]](https://www.surforsound.com/vacation-planning/rental-policies/) | Yes: spa |
-| Twiddy & Company (blog, one home) | At Sunnybuns: "You can enjoy the pool, but your dogs will have to save their water time for the ocean!" [[7]](https://blog.twiddy.com/bring-your-pets-on-vacation/) | No: pool only (Twiddy's pet page names hot tubs) |
+| Newman-Dailey Resort Properties | "Dogs are not permitted on the beach or in the pool area and must be on a leash when outside per county regulations." | No: it says "pool area" only |
+| My Vacation Haven | "Pets are not allowed in the pool or hot tub." | Yes: hot tub |
+| Brindley Beach Vacations | "Dogs are not allowed to swim in the pool or the hot tub – additional cleaning may be needed and a charge may apply." | Yes: hot tub |
+| Sun Realty | "Pets are not permitted in pools or hot tubs." | Yes: hot tubs |
+| Beach Realty & Construction | "No dogs are allowed in the pool or hot tub." | Yes: hot tub |
+| Surf or Sound Realty | "All dogs, including approved dogs, are strictly prohibited in the pool and spa." | Yes: spa |
+| Twiddy & Company (blog, one home) | At Sunnybuns: "You can enjoy the pool, but your dogs will have to save their water time for the ocean!" | No: pool only (Twiddy's pet page names hot tubs) |
+
+Sources for this table: [[1]](https://www.destinvacation.com/pet-friendly), [[2]](https://www.myvacationhaven.com/pet-policy), [[4]](https://www.sunrealtync.com/node/1163), [[5]](https://www.beachrealtync.com/node/707), [[6]](https://www.surforsound.com/vacation-planning/rental-policies/), [[7]](https://blog.twiddy.com/bring-your-pets-on-vacation/)
 
 Two details matter. Surf or Sound's wording covers "approved dogs", so being on the accepted list is not the same as being welcome in the water. And Newman-Dailey's "pool area" reads wider than the water itself.
 
@@ -210,7 +212,7 @@ Our practical suggestions, not a source's rules: keep the dog on a lead near the
 
 ## What to ask the host
 
-A rule can sit in the booking terms, the welcome packet or the manager's general page instead of the listing text. Airbnb's ground rules tell guests to follow the host's house rules [[13]](https://www.airbnb.com/help/article/2894), and Vrbo says travelers must agree to the house rules before they book and describes the pets rule as covering whether pets are allowed, how many, what type and any size restriction [[14]](https://help.vrbo.com/articles/What-are-House-Rules). Neither page names pools or hot tubs, so the pool line is up to the host. Ask before you pay, especially if the pool is why you are booking.
+A rule can sit in the booking terms, the welcome packet or the manager's general page instead of the listing text. [Airbnb](https://www.airbnb.com/help/article/2894)'s ground rules tell guests to follow the host's house rules, and Vrbo says travelers must agree to the house rules before they book and describes the pets rule as covering whether pets are allowed, how many, what type and any size restriction [[14]](https://help.vrbo.com/articles/What-are-House-Rules). Neither page names pools or hot tubs, so the pool line is up to the host. Ask before you pay, especially if the pool is why you are booking.
 
 Copy, paste and edit:
 

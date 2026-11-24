@@ -167,19 +167,19 @@ This is general information from the platforms' help pages, not legal advice, as
 
 ## Do this first
 
-1. **Check the checkout date against 14 days.** Airbnb says hosts must file damage claims within 14 days of checkout [[5]](https://www.airbnb.com/d/guarantee), and Vrbo gives the host 14 days after your stay [[8]](https://help.vrbo.com/articles/What-happens-if-my-card-on-file-is-charged-for-property-damage). If the request came later, say so in your reply and ask Airbnb support whether it is still allowed.
+1. **Check the checkout date against 14 days.** [Airbnb](https://www.airbnb.com/d/guarantee) says hosts must file damage claims within 14 days of checkout, and [Vrbo](https://help.vrbo.com/articles/What-happens-if-my-card-on-file-is-charged-for-property-damage) gives the host 14 days after your stay. If the request came later, say so in your reply and ask Airbnb support whether it is still allowed.
 2. **Reply through the platform inside 24 hours.** Airbnb steps in after that, and the payment method can be charged if no timely payment or appeal is made [[1]](https://www.airbnb.com/help/article/1415).
-3. **Gather your evidence.** Arrival and checkout photos, the listing's pet wording and your messages. Vrbo asks both sides for documentation [[8]](https://help.vrbo.com/articles/What-happens-if-my-card-on-file-is-charged-for-property-damage).
+3. **Gather your evidence.** Arrival and checkout photos, the listing's pet wording and your messages. [Vrbo](https://help.vrbo.com/articles/What-happens-if-my-card-on-file-is-charged-for-property-damage) asks both sides for documentation.
 
-You do not have to accept the number as sent. On Airbnb you can pay a different amount or decline [[2]](https://www.airbnb.com/help/article/3591).
+You do not have to accept the number as sent. On [Airbnb](https://www.airbnb.com/help/article/3591) you can pay a different amount or decline.
 
 ## How long does a host have to charge for damage? The three clocks
 
 | Clock | Airbnb | Vrbo |
 | --- | --- | --- |
-| Guest response | 24 hours before Airbnb steps in, for damage requests [[3]](https://www.airbnb.com/help/article/4291), [[1]](https://www.airbnb.com/help/article/1415) | Not stated on the pages we read |
-| Host claim window | 14 days from checkout for damage [[5]](https://www.airbnb.com/d/guarantee), [[2]](https://www.airbnb.com/help/article/3591) | 14 days after the stay [[8]](https://help.vrbo.com/articles/What-happens-if-my-card-on-file-is-charged-for-property-damage), [[9]](https://help.vrbo.com/articles/How-do-I-file-a-damage-deposit-claim) |
-| Appeal | 60 days after you are charged [[1]](https://www.airbnb.com/help/article/1415) | Contact Us dispute; no deadline on the page [[8]](https://help.vrbo.com/articles/What-happens-if-my-card-on-file-is-charged-for-property-damage) |
+| Guest response | 24 hours before Airbnb steps in, for damage requests, | Not stated on the pages we read |
+| Host claim window | 14 days from checkout for damage, | 14 days after the stay, |
+| Appeal | 60 days after you are charged | Contact Us dispute; no deadline on the page |
 
 Two things trip people up. The 60 days to appeal is separate from the 60-day limit for new Resolution Center requests, which excludes damage claims [[2]](https://www.airbnb.com/help/article/3591). And an unanswered Airbnb request can be cancelled and resent within 60 days of checkout, so a late request is worth questioning [[3]](https://www.airbnb.com/help/article/4291). A host blog, Hometime, says 72 hours to pay and 30 days to involve Airbnb Support; that does not match Airbnb's current pages [[13]](https://www.hometime.io/blog/how-to-file-a-damage-claim-with-airbnb), so go by Airbnb.
 
@@ -187,7 +187,7 @@ Vrbo's pages say there is no pre-authorization hold and your card is charged onl
 
 ## What happens in the 24 hours after a request?
 
-If you pay part, decline or stay silent, the host may involve Airbnb or its insurer [[1]](https://www.airbnb.com/help/article/1415). Airbnb also says guests are expected to pay reasonable requests for damage, missing items or extra cleaning, and does not define "reasonable" [[4]](https://www.airbnb.com/help/article/2894). Reply inside the window even if only to ask for details. If you are charged anyway, keep your photos, the claim and your messages together for the appeal.
+If you pay part, decline or stay silent, the host may involve [Airbnb](https://www.airbnb.com/help/article/1415) or its insurer. Airbnb also says guests are expected to pay reasonable requests for damage, missing items or extra cleaning, and does not define "reasonable" [[4]](https://www.airbnb.com/help/article/2894). Reply inside the window even if only to ask for details. If you are charged anyway, keep your photos, the claim and your messages together for the appeal.
 
 ## I paid a pet fee. Can they still charge for dog hair?
 

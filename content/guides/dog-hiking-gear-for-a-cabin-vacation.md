@@ -161,7 +161,7 @@ Settle two questions before you buy anything: is your dog allowed on that trail,
 
 This guide covers day hikes from a cabin. All five products are Ruffwear, the catalog we researched; a fixed six-foot leash from any maker meets the rule, and no source we read ranks brands.
 
-- **Every trail:** a fixed leash of six feet or less (NPS, PetMD and Orvis agree). Ruffwear Knot-a-Leash is 5 ft. [[12]](https://ruffwear.com/products/knot-a-leash-dog-leash)
+- **Every trail:** a fixed leash of six feet or less (NPS, PetMD and Orvis agree). [Ruffwear](https://ruffwear.com/products/knot-a-leash-dog-leash) Knot-a-Leash is 5 ft.
 - **Steep or scrambling ground:** Ruffwear Web Master harness, for its lift handle and back attachment.
 - **Sharp scree, hot rock, a long descent:** Ruffwear Grip Trex boots, only after a test hike shows your dog needs them.
 - **Dusk:** Ruffwear Beacon clip-on light. It does not replace the leash.
@@ -194,7 +194,7 @@ The Knot-a-Leash is 5 ft in both sizes, in reflective rope with an auto-locking 
 
 ## Harness or collar on steep trails
 
-PetMD says "harnesses provide a more secure hold than a collar" and can be more comfortable for a dog that pulls. [[5]](https://www.petmd.com/dog/general-health/best-hiking-gear-for-dogs) Orvis suggests one for a dog leashed the whole hike. [[6]](https://www.orvis.com/how-to-hike-safely-with-your-dog.html) Neither tested steep terrain. Our reasoning: on a ledge or wet step you may need to steady or lift the dog, and a collar clip puts that pull on the neck, which is why a handle and back attachment are worth a look.
+PetMD says "harnesses provide a more secure hold than a collar" and can be more comfortable for a dog that pulls. [[5]](https://www.petmd.com/dog/general-health/best-hiking-gear-for-dogs) [Orvis](https://www.orvis.com/how-to-hike-safely-with-your-dog.html) suggests one for a dog leashed the whole hike. Neither tested steep terrain. Our reasoning: on a ledge or wet step you may need to steady or lift the dog, and a collar clip puts that pull on the neck, which is why a handle and back attachment are worth a look.
 
 Ruffwear's Web Master has a reinforced handle for lift and assist on technical terrain, three leash attachment points (including a chest loop for pullers) and a neck buckle for dogs that dislike going over the head. [[11]](https://ruffwear.com/products/web-master-dog-harness) It suits a dog that scrambles with you; skip it if you never need to lift or steady your dog. The page makes no car-crash or mobility-support claim. Measure girth around the widest part of the rib cage: XXS 13-17 in, XS 17-22, S 22-27, M 27-32, L/XL 32-42. The page gives no between-sizes rule, so fit it at the cabin before the trail.
 
@@ -206,7 +206,7 @@ Boots solve specific problems and are not for every dog.
 
 - NPS: "For longer hikes, consider booties to keep his paws safe." [[1]](https://www.nps.gov/subjects/trails/hiking-with-pets.htm)
 - AKC says boots can help prevent heat blisters and frostbite and reduce the risk of severed nails on uneven terrain, slopes and slippery rocks, and advises traction soles for mountain hikes. [[7]](https://www.akc.org/expert-advice/lifestyle/dog-boots/)
-- Outward Hound says boots protect pads from hot asphalt, sharp rubble or ice. [[8]](https://www.outwardhound.com/furtropolis/product/dog-hiking-gear)
+- [Outward Hound](https://www.outwardhound.com/furtropolis/product/dog-hiking-gear) says boots protect pads from hot asphalt, sharp rubble or ice.
 - Orvis says sensitive paws may need help on rough trails and that dogs can overheat if booties stay on too long. [[6]](https://www.orvis.com/how-to-hike-safely-with-your-dog.html)
 
 None gives a distance, temperature or surface at which boots become necessary. Our judgment: a dog on soft forest paths for an hour probably does not need them; sharp scree, hot rock or a long descent might. Check pads after every hike either way.
@@ -219,7 +219,7 @@ Ruffwear's Grip Trex has a Vibram outsole and a mesh upper, and the traction and
 
 A late start or slow descent can leave you on the trail at dusk. PetMD notes reflective elements, including a leash whose reflective taping increases visibility in low light. [[5]](https://www.petmd.com/dog/general-health/best-hiking-gear-for-dogs) A reflector shows only when a beam hits it and a light shows on its own, which is our reasoning, not a sourced claim. We found little independent testing of dog lights, so the figures below are the maker's.
 
-Ruffwear's Beacon has three modes (Slow Flash, Fast Flash, Always On), three colors, up to 20 hours of run time, about 1.5 hours to charge by micro USB and a waterproof-to-1-m-for-30-minutes rating. It clips to Ruffwear collars and apparel with light loops. [[13]](https://ruffwear.com/products/the-beacon-safety-dog-light) Without a loop, a headlamp on you or another maker's clip-on light does the same job. Skip it if you will be off the trail by dusk. A light helps you see the dog; it does not find a lost one (see our [loose dog guide](/guides/if-your-dog-gets-loose-on-a-trip)).
+Ruffwear's Beacon has three modes (Slow Flash, Fast Flash, Always On), three colors, up to 20 hours of run time, about 1.5 hours to charge by micro USB and a waterproof-to-1-m-for-30-minutes rating. It clips to [Ruffwear](https://ruffwear.com/products/the-beacon-safety-dog-light) collars and apparel with light loops. Without a loop, a headlamp on you or another maker's clip-on light does the same job. Skip it if you will be off the trail by dusk. A light helps you see the dog; it does not find a lost one (see our [loose dog guide](/guides/if-your-dog-gets-loose-on-a-trip)).
 
 {{pick:ruffwear-the-beacon-dog-safety-light|For dusk: a light that shows without a beam|The maker lists three modes (Slow Flash, Fast Flash, Always On), three colors, up to 20 hours of operating time, about 1.5 hours to charge by micro USB and a rating of waterproof to 1 m for 30 minutes.|https://ruffwear.com/products/the-beacon-safety-dog-light}}
 

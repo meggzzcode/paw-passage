@@ -193,9 +193,11 @@ Not sure the home takes your dog at all? Start with the [will my dog be accepted
 
 | Manager | Cancellation wording on the page |
 | --- | --- |
-| Aunt Bugs Cabin Rentals | "no cancellation policy"; an optional Vacation Guarantee (7% plus tax) allows a refund up to 30 days before arrival for 1-4 bedroom cabins [[2]](https://www.auntbugs.com/rental-policies/) |
-| Hearthside Cabin Rentals | Deposits non-refundable unless you buy the Reservation Guarantee (8%); refund at least 15 days before arrival for 1-5 bedroom cabins [[5]](https://hearthsidecabinrentals.com/frequently-asked-questions) |
-| Tahoe Vacation Rentals | Full refund 30 or more days before check-in; 50% from 7 to 30 days; none inside 7 days [[6]](https://www.tahoevacationrentals.com/reservation-information/) |
+| Aunt Bugs Cabin Rentals | "no cancellation policy"; an optional Vacation Guarantee (7% plus tax) allows a refund up to 30 days before arrival for 1-4 bedroom cabins |
+| Hearthside Cabin Rentals | Deposits non-refundable unless you buy the Reservation Guarantee (8%); refund at least 15 days before arrival for 1-5 bedroom cabins |
+| Tahoe Vacation Rentals | Full refund 30 or more days before check-in; 50% from 7 to 30 days; none inside 7 days |
+
+Sources for this table: [[5]](https://hearthsidecabinrentals.com/frequently-asked-questions), [[6]](https://www.tahoevacationrentals.com/reservation-information/)
 
 These are three managers, not a pattern. Ask whether a sick dog or a road closure changes anything, and whether the pet fee is refundable.
 
@@ -205,7 +207,7 @@ These are three managers, not a pattern. Ask whether a sick dog or a road closur
 
 Most holiday emergencies come from things within reach of a nose.
 
-- **Tree water.** The ASPCA says to make sure tree water is "covered and/or inaccessible to curious pets." [[3]](https://www.aspca.org/pet-care/general-pet-care/holiday-safety-tips) PetMD adds that chemical preservatives can make the water toxic. [[7]](https://www.petmd.com/dog/general-health/tips-for-keeping-dog-safe-around-christmas-tree)
+- **Tree water.** The ASPCA says to make sure tree water is "covered and/or inaccessible to curious pets." [[3]](https://www.aspca.org/pet-care/general-pet-care/holiday-safety-tips) [PetMD](https://www.petmd.com/dog/general-health/tips-for-keeping-dog-safe-around-christmas-tree) adds that chemical preservatives can make the water toxic.
 - **Tinsel and strings.** The ASPCA says ingested tinsel can cause "severe vomiting, obstructed digestive tract, dehydration" and may need surgery.
 - **Ornaments and cords.** Shards of breakable ornaments can damage the mouth and digestive tract, and a chewed wire can deliver a potentially lethal shock, says the ASPCA. Pet Poison Helpline says snow globes and bubble lights may contain poisonous chemicals. [[4]](https://www.petpoisonhelpline.com/pet-safety-tips/winter-holiday-pet-poison-tips/)
 - **Poinsettia, holly and mistletoe.** The ASPCA says poinsettias cause mild to moderate stomach irritation, while mistletoe and holly can cause stomach upset and heart and circulation problems. Pet Poison Helpline calls poinsettias only mildly dangerous and says holly leaves can damage the stomach and intestines. [[8]](https://www.petpoisonhelpline.com/uncategorized/holiday-pet-poison-myths-debunked/) Keep all three out of reach.
@@ -218,7 +220,7 @@ In a rental you may not be allowed to attach anything to the walls, and the owne
 
 1. **Ask the host first.** Does the home allow a live tree, and is there a spot away from the fireplace?
 2. **Pick the smaller, plainer tree.** PetMD suggests a gate or pen around the tree and a non-flocked tree, and notes artificial needles can also cause problems if chewed. [[7]](https://www.petmd.com/dog/general-health/tips-for-keeping-dog-safe-around-christmas-tree)
-3. **Make it hard to tip.** The ASPCA says the tree should be tightly secured so it cannot tip over onto a pet. [[3]](https://www.aspca.org/pet-care/general-pet-care/holiday-safety-tips) Choose a heavy, wide stand, and ask before you attach anything to walls or beams.
+3. **Make it hard to tip.** The [ASPCA](https://www.aspca.org/pet-care/general-pet-care/holiday-safety-tips) says the tree should be tightly secured so it cannot tip over onto a pet. Choose a heavy, wide stand, and ask before you attach anything to walls or beams.
 4. **Cover or remove the water.** Use a covered stand, or choose an artificial tree. For a live tree, NFPA says to add water daily, so the covered setup has to be refillable. [[9]](https://content.nfpa.org/-/media/project/storefront/catalog/files/safety-tip-sheets/christmastreesafetytips.pdf)
 5. **Decorate high and plain.** Skip tinsel and strings, put breakables up high and keep cords away from the bottom of the tree.
 6. **Keep wrapped food gifts out of reach** until the morning, and clear wrapping and ribbon the same day.
@@ -251,7 +253,7 @@ Check the size chart and return terms on each listing, and do not buy on a tempe
 NFPA and the ASPCA give rules that travel well:
 
 - **Tree:** keep it at least three feet from any heat source such as fireplaces, radiators, candles, heat vents or lights; do not block an exit; and turn off tree lights before leaving home or going to bed. [[9]](https://content.nfpa.org/-/media/project/storefront/catalog/files/safety-tip-sheets/christmastreesafetytips.pdf)
-- **Candles:** keep pets away from lit candles and blow them out when you leave the room or go to bed; NFPA says more than one-third of home decoration fires are started by candles. [[11]](https://content.nfpa.org/-/media/project/storefront/catalog/files/safety-tip-sheets/winterholidaysafetytips.pdf) The ASPCA adds not to leave candles unattended. [[3]](https://www.aspca.org/pet-care/general-pet-care/holiday-safety-tips)
+- **Candles:** keep pets away from lit candles and blow them out when you leave the room or go to bed; NFPA says more than one-third of home decoration fires are started by candles. [[11]](https://content.nfpa.org/-/media/project/storefront/catalog/files/safety-tip-sheets/winterholidaysafetytips.pdf) The [ASPCA](https://www.aspca.org/pet-care/general-pet-care/holiday-safety-tips) adds not to leave candles unattended.
 - **Fireplace:** neither source covers dogs and fireplaces, so ask the host how it works and whether it has a screen.
 
 For cold, the ASPCA says "if it's too cold for you, it's probably too cold for your pet," and recommends washing and drying paws after walks, keeping de-icing chemicals out of reach, cleaning up antifreeze spills right away because it is deadly to dogs, and never leaving a dog alone in a car in cold weather. [[12]](https://www.aspca.org/pet-care/general-pet-care/cold-weather-safety-tips) No source we read gives a temperature at which a dog needs a coat or boots, so size gear to the dog and the walk.
@@ -263,7 +265,7 @@ PetMD says "Don't wait until a problem occurs to start Googling," and suggests a
 - Find the 24-hour emergency hospital near the cabin and note the drive time, especially in mountain areas.
 - Call for its holiday hours, and save the number and address where they work without signal.
 - Ask the host which local vet they recommend.
-- Save ASPCA Animal Poison Control, 888-426-4435, [[16]](https://www.aspca.org/pet-care/animal-poison-control) and Pet Poison Helpline, 855-764-7661. [[17]](https://www.petpoisonhelpline.com/) Both say they are available around the clock; the ASPCA says a consultation fee may apply and Pet Poison Helpline lists a per-incident fee.
+- Save [ASPCA](https://www.aspca.org/pet-care/animal-poison-control) Animal Poison Control, 888-426-4435, and [Pet Poison Helpline](https://www.petpoisonhelpline.com/), 855-764-7661. Both say they are available around the clock; the ASPCA says a consultation fee may apply and Pet Poison Helpline lists a per-incident fee.
 
 ## Before you go
 

@@ -201,13 +201,13 @@ Panic makes people search in circles and put off the phone calls. The list below
 5. **Call your microchip registry.** AKC Reunite asks owners to call its 24/7 helpline so it can confirm your contact information is current. [[1]](https://www.akcreunite.org/lostpettips/)
 6. **Ring the host or property manager,** then local animal control, vets and shelters. The host knows the roads, the neighbors and which agency covers the area (our suggestion, not from a source).
 
-If you are separated in an emergency such as a flood or fire, AKC Reunite says to get your family to a safe place before you search. [[1]](https://www.akcreunite.org/lostpettips/)
+If you are separated in an emergency such as a flood or fire, [AKC Reunite](https://www.akcreunite.org/lostpettips/) says to get your family to a safe place before you search.
 
 ## The first hour and the days after
 
 **Widen the net.** Walk and drive the search area slowly, splitting up if you have helpers (our suggestion). The ASPCA's list of places to call is animal control, veterinary hospitals, municipal and private shelters and local rescue groups, and the police if no shelter is nearby. Give an accurate description including coat length and color, markings and size. [[2]](https://www.aspca.org/pet-care/general-pet-care/finding-lost-pet) [[1]](https://www.akcreunite.org/lostpettips/)
 
-**Same day and after.** Visit shelters in person with a photo. The ASPCA recommends checking daily, and AKC Reunite notes that staff can change from day to day. [[2]](https://www.aspca.org/pet-care/general-pet-care/finding-lost-pet) [[1]](https://www.akcreunite.org/lostpettips/) Put up flyers with a bold headline, a recent clear photo, breed, sex, coloring, age, weight, distinguishing features, when and where last seen, and your name with two phone numbers, one a friend or relative. Post them at dog parks, pet stores, groomers, vet offices, busy businesses and lampposts near where the dog was lost. [[2]](https://www.aspca.org/pet-care/general-pet-care/finding-lost-pet)
+**Same day and after.** Visit shelters in person with a photo. The ASPCA recommends checking daily, and AKC Reunite notes that staff can change from day to day. [[2]](https://www.aspca.org/pet-care/general-pet-care/finding-lost-pet) [[1]](https://www.akcreunite.org/lostpettips/) Put up flyers with a bold headline, a recent clear photo, breed, sex, coloring, age, weight, distinguishing features, when and where last seen, and your name with two phone numbers, one a friend or relative. Post them at dog parks, pet stores, groomers, vet offices, busy businesses and lampposts near where the dog was lost.
 
 A tracker shows a location, not a rescue; if someone else has the dog, the tag and chip are how they reach you.
 
@@ -217,9 +217,11 @@ A legible tag with a number you will answer, a chip whose registry record is cur
 
 | Layer | What it does | What it does not do |
 | --- | --- | --- |
-| Tag on the collar | Lets any finder read your number on the spot, with no scanner and no wait for animal control. [[6]](https://www.akcreunite.org/idtags/) | Helps nothing if it falls off or wears smooth; AKC Reunite notes tags can fall off or become hard to read. [[7]](https://www.akcreunite.org/importance/) |
-| Microchip, registered | A permanent ID number a vet or shelter scanner can read. [[7]](https://www.akcreunite.org/importance/) | Does not locate the dog and needs a scan, plus a current record; only the ID number shows, then the registry is contacted for your details. [[8]](https://www.akcreunite.org/travel/) |
+| Tag on the collar | Lets any finder read your number on the spot, with no scanner and no wait for animal control. | Helps nothing if it falls off or wears smooth; AKC Reunite notes tags can fall off or become hard to read. |
+| Microchip, registered | A permanent ID number a vet or shelter scanner can read. | Does not locate the dog and needs a scan, plus a current record; only the ID number shows, then the registry is contacted for your details. |
 | Tracker (cellular GPS or Bluetooth) | Shows a location on your phone while it is on the dog, charged and connected. | Does not stop an escape, and does not tell a finder who you are. |
+
+Sources for this table: [[6]](https://www.akcreunite.org/idtags/)
 
 ### The tag
 
@@ -243,9 +245,9 @@ What to check before buying, from the maker's page (if it does not answer a line
 
 | Tracker | Form and battery (maker) | Plan and dog size (maker) |
 | --- | --- | --- |
-| Tractive DOG 6 [[10]](https://tractive.com/en/pd/gps-tracker-dog) | Clip-on; up to 2 weeks with Power Saving Zones, 6 days without | Subscription required; dogs above 8.8 lbs, collars up to 1.1 in |
-| Fi Series 3+ [[12]](https://fitracking.com/collar) | Collar with tracker built in; up to 3 months | Collar page states no plan terms; modular XS to XL |
-| Petcube GPS Tracker [[18]](https://petcube.com/tracker/) | Small clip-on unit; up to 30 days in power save mode | Paid plan required; no size range, universal fit |
+| Tractive DOG 6 | Clip-on; up to 2 weeks with Power Saving Zones, 6 days without | Subscription required; dogs above 8.8 lbs, collars up to 1.1 in |
+| Fi Series 3+ | Collar with tracker built in; up to 3 months | Collar page states no plan terms; modular XS to XL |
+| Petcube GPS Tracker | Small clip-on unit; up to 30 days in power save mode | Paid plan required; no size range, universal fit |
 
 **A clip-on for a collar you keep.** Tractive's DOG 6 rides on the collar your dog wears now. The maker lists it for dogs above 8.8 lbs at 1.4 oz, IP68 waterproofing and collar widths up to 1.1 in, so it will not fit a wider collar. [[10]](https://tractive.com/en/pd/gps-tracker-dog) A subscription is required and the maker says it can be cancelled at any time; check the coverage tool for your route and charge it before each leg. Skip it for a dog under 8.8 lbs or one in a wide collar.
 

@@ -28,7 +28,7 @@ This page is general guidance from veterinary sources, not veterinary advice; yo
 
 ## The AVMA kit checklist
 
-The core list follows the AVMA's pet first-aid brochure, cross-checked against the ASPCA poison control page [[2]](https://www.aspca.org/pet-care/aspca-poison-control) and kit guides from PetMD, Small Door Vet and Preventive Vet. [[3]](https://www.petmd.com/general-health/must-have-items-for-pet-first-aid-kit) [[4]](https://www.smalldoorvet.com/learning-center/medical/pet-first-aid-kit/) [[5]](https://www.preventivevet.com/how-to-make-a-pet-first-aid-kit) Many items in a family first-aid kit work for pets. [[1]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf)
+The core list follows the AVMA's pet first-aid brochure, cross-checked against the [ASPCA](https://www.aspca.org/pet-care/aspca-poison-control) poison control page and kit guides from [PetMD](https://www.petmd.com/general-health/must-have-items-for-pet-first-aid-kit), Small Door Vet and Preventive Vet. [[4]](https://www.smalldoorvet.com/learning-center/medical/pet-first-aid-kit/) [[5]](https://www.preventivevet.com/how-to-make-a-pet-first-aid-kit) Many items in a family first-aid kit work for pets. [[1]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf)
 
 **Information and contacts**
 
@@ -54,7 +54,7 @@ The core list follows the AVMA's pet first-aid brochure, cross-checked against t
 
 ## If your dog may have eaten something harmful
 
-Call your vet, a local hospital or a hotline right away: ASPCA Poison Control 888-426-4435 or Pet Poison Helpline 855-764-7661. A consultation fee may apply to either call. [[1]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf) [[2]](https://www.aspca.org/pet-care/aspca-poison-control) Keep the product or container for reference, and collect any vomited or chewed material in a sealed plastic bag. Do not induce vomiting unless a veterinarian or poison control tells you to. [[1]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf)
+Call your vet, a local hospital or a hotline right away: ASPCA Poison Control 888-426-4435 or Pet Poison Helpline 855-764-7661. A consultation fee may apply to either call. [[1]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf) [[2]](https://www.aspca.org/pet-care/aspca-poison-control) Keep the product or container for reference, and collect any vomited or chewed material in a sealed plastic bag. Do not induce vomiting unless a veterinarian or poison control tells you to.
 
 Cabins add easy-to-miss risks: cleaners under sinks, rodent bait in outbuildings, human medications on a nightstand. See our [cabin packing list](/guides/dog-friendly-cabin-packing-list) and [rental checklist](/guides/pet-friendly-vacation-rental-checklist).
 

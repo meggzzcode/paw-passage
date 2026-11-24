@@ -21,7 +21,7 @@ Target 1,400 to 2,200 words for a question guide, up to 2,800 for a comparison o
 ## 6. Lists, tables, callouts
 Lists for steps and checklists (3 to 7 items). Tables for true comparisons only, at most 3 columns on a phone-first page (stack extra columns as text under each row). One callout style: the tinted "Do this first" or "Heads-up" box, max 2 per page. Bold only for the single phrase a skimmer needs.
 
-## 7. Citations (proposed; see `docs/editorial/citation-investigation.md`; needs owner approval)
+## 7. Citations (owner approved 2026-11-24; see `docs/editorial/CITATION-MIGRATION.md`)
 Name the publisher as an inline link in the sentence ("[Georgia State Parks](url) allows two dogs per cottage"). Use a small superscript number only for a fee, policy, safety or medical figure where no publisher is named; it jumps to the Sources list at the end (collapsible, with the date read and a back-link). Never stack more than two markers. Never put markers inside table cells; cite once under the table.
 
 ## 8. Disclosures (proposed; see `docs/DISCLOSURE_AND_TRUST_AUDIT.md`)

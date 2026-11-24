@@ -53,11 +53,11 @@ CPS describes crash forces as mass multiplied by acceleration. For a harness the
 
 1. **Independent testing you can look up.** Use the CPS Certified Products directory (harnesses, travel crates, carriers). Each listing shows model and size tested, test date, protocol and test dog weight. A claim with no named lab, protocol or report is unverified. [[1]](https://centerforpetsafety.org/cps-certified/)
 2. **A test dog weight that matches yours.** CPS lists one harness with test dogs of up to 90 lb and one small carrier tested with a 12 lb test dog. [[16]](https://centerforpetsafety.org/sleepypod-clickit-sport/) [[13]](https://centerforpetsafety.org/sleepypod-atom/) A restraint tested for 12 lb says nothing about a 60 lb dog.
-3. **Correct fit.** Some makers size car harnesses by rib cage circumference; Sleepypod's page is one example and also offers a Long option for some builds. [[10]](https://sleepypod.com/pages/sizing) Follow the maker's measuring guide, and if your dog sits between sizes, contact the maker.
+3. **Correct fit.** Some makers size car harnesses by rib cage circumference; [Sleepypod](https://sleepypod.com/pages/sizing)'s page is one example and also offers a Long option for some builds. Follow the maker's measuring guide, and if your dog sits between sizes, contact the maker.
 4. **A connection you can trust.** Harnesses connect to the seat belt. CPS says extension tethers and zipline-style products increase the risk of injury, and it restricts brands that sell extension tethers from its certification program. [[5]](https://centerforpetsafety.org/cargo-area-connection-advisory/) [[6]](https://centerforpetsafety.org/extension-tether-advisory/) Crates should always use strength-rated anchor straps; CPS says its 2015 crate study found proper straps significantly reduced crate excursion into the seatback or passenger compartment.
 5. **A safe place in the vehicle.** For a cargo area, ask your vehicle manufacturer about anchor strength, platform load capacity and anchor upgrades; CPS cautions the platform may not be as solid as it looks. [[5]](https://centerforpetsafety.org/cargo-area-connection-advisory/)
 6. **Crate size and fit.** CDC and ASPCA say a crate should let the dog stand, sit, lie down and turn around, be well ventilated, and be secured so it cannot slide or shift when the car stops. [[7]](https://www.cdc.gov/healthy-pets/travel/index.html) [[8]](https://www.aspca.org/pet-care/general-pet-care/travel-safety-tips) One maker lists its dimensions for travel use and suggests going up a size for in-home use. [[12]](https://www.luckyduck.com/products/lucky-kennel) Measure your cargo space and anchor points too.
-7. **Tested components.** CPS listings often name the accessories used in the test, including the anchor straps for crates. [[14]](https://centerforpetsafety.org/lucky-duck-lucky-kennel-large/) Sleepypod's page for its current harness warns against using its harnesses with non-Sleepypod accessories. [[9]](https://sleepypod.com/products/clickit-sport-plus) Swapping parts means you are no longer using the tested configuration.
+7. **Tested components.** CPS listings often name the accessories used in the test, including the anchor straps for crates. [[14]](https://centerforpetsafety.org/lucky-duck-lucky-kennel-large/) Sleepypod's page for its current harness warns against using its harnesses with non-[Sleepypod](https://sleepypod.com/products/clickit-sport-plus) accessories. Swapping parts means you are no longer using the tested configuration.
 
 ## Harness or crate?
 
@@ -77,9 +77,9 @@ These are examples of how to read a listing, not a ranking. The records come fro
 
 | Product and model | Sizes on the CPS listing | Test dog and date |
 | --- | --- | --- |
-| Harness, Sleepypod Clickit Sport [[16]](https://centerforpetsafety.org/sleepypod-clickit-sport/) | Small, Medium, Large, X-Large | Small 25 lb; Medium 45 to 90 lb; Large 75 to 90 lb; X-Large up to 90 lb (July 2014, CPS-001-014.01) |
-| Carrier, Sleepypod Atom [[13]](https://centerforpetsafety.org/sleepypod-atom/) | One size | 12 lb, five stars (August 2024) |
-| Crate, Lucky Duck Lucky Kennel Large [[14]](https://centerforpetsafety.org/lucky-duck-lucky-kennel-large/) | Large (the directory also lists the Intermediate and Medium [[1]](https://centerforpetsafety.org/cps-certified/)) | 110 lb, with the Lucky Ratchet Strap Kit (July 2022) |
+| Harness, Sleepypod Clickit Sport | Small, Medium, Large, X-Large | Small 25 lb; Medium 45 to 90 lb; Large 75 to 90 lb; X-Large up to 90 lb (July 2014, CPS-001-014.01) |
+| Carrier, Sleepypod Atom | One size | 12 lb, five stars (August 2024) |
+| Crate, Lucky Duck Lucky Kennel Large | Large (the directory also lists the Intermediate and Medium) | 110 lb, with the Lucky Ratchet Strap Kit (July 2022) |
 
 ### Harness pick
 

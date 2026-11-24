@@ -29,12 +29,14 @@ Here are the six managers that state a limit, quoted from their public pages (re
 
 | Manager | What the page says | Counted |
 | --- | --- | --- |
-| Hearthside Cabin Rentals (Smokies, TN) | "no larger than 35 pounds"; "SOME cabins will allow larger pets"; "a one-time fee of $75 for a large pet" [[1]](https://hearthsidecabinrentals.com/frequently-asked-questions) | Each, soft limit |
-| Cabin Rentals of Georgia (Blue Ridge, GA) | "only accept dogs under 35 lbs., non-shedding, and crate trained" [[2]](https://cabin-rentals-of-georgia.com/policies) | Each |
-| Elk Springs Resort (Gatlinburg, TN) | "Dogs over 50 pounds are not permitted." [[3]](https://elkspringsresort.com/?p=1899) | Each |
-| AMI Locals (Anna Maria Island, FL) | "Max of 2 dogs, combined weight ≤ 50 lbs" [[4]](https://www.amilocals.com/faqs) | Combined |
-| Brindley Beach Vacations (Outer Banks, NC) | "up to two dogs, each weighing 60 pounds or less" [[5]](https://www.brindleybeach.com/node/3691) | Each |
-| Emmons Realty (St. Simons Island, GA) | "a maximum weight of 65lbs per dog" [[6]](https://www.emmonsrealty.com/pages/rental-policies) | Each |
+| Hearthside Cabin Rentals (Smokies, TN) | "no larger than 35 pounds"; "SOME cabins will allow larger pets"; "a one-time fee of $75 for a large pet" | Each, soft limit |
+| Cabin Rentals of Georgia (Blue Ridge, GA) | "only accept dogs under 35 lbs., non-shedding, and crate trained" | Each |
+| Elk Springs Resort (Gatlinburg, TN) | "Dogs over 50 pounds are not permitted." | Each |
+| AMI Locals (Anna Maria Island, FL) | "Max of 2 dogs, combined weight ≤ 50 lbs" | Combined |
+| Brindley Beach Vacations (Outer Banks, NC) | "up to two dogs, each weighing 60 pounds or less" | Each |
+| Emmons Realty (St. Simons Island, GA) | "a maximum weight of 65lbs per dog" | Each |
+
+Sources for this table: [[2]](https://cabin-rentals-of-georgia.com/policies), [[3]](https://elkspringsresort.com/?p=1899), [[4]](https://www.amilocals.com/faqs), [[6]](https://www.emmonsrealty.com/pages/rental-policies)
 
 Brindley Beach says "NO EXCEPTIONS" and Emmons Realty says "No exceptions will be made for any part of this policy." A 72-pound dog is over all six. A 60-pound dog clears Brindley Beach and Emmons Realty but not the other four, so the cutoff for "large" is wherever each manager puts it. And "limit" can mean different things: AMI Locals' 50 pounds is shared, so an 80-pound Lab fails alone and two 30-pound dogs fail together. Dog counts at the same managers are in [how many dogs you can bring](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental).
 

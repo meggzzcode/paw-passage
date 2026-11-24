@@ -3,9 +3,8 @@ import { allGuides, isPublic } from "@/content/guides";
 import { citedSourceNumbers } from "@/content/citations";
 
 const tools = ["checklist", "will-my-dog-be-accepted", "packing-list"];
-// Guides already moved to the new citation style (Phase A pilot). Phase B widens this to every public guide.
-const migrated = (g: (typeof allGuides)[number]) =>
-  ["how-vacation-rental-pet-fees-work", "dog-ramp-or-steps-for-the-car-and-cabin"].includes(g.slug);
+// Every public guide has been moved to the new citation style (scripts/migrate-citations.mjs).
+const migrated = (g: (typeof allGuides)[number]) => isPublic(g);
 const text = (g: (typeof allGuides)[number]) => g.body + "\n" + g.faqs.map((f) => f.a).join("\n");
 
 describe.each(allGuides.map((g) => [g.slug, g] as const))("guide content: %s", (_slug, g) => {
@@ -31,7 +30,7 @@ describe.each(allGuides.map((g) => [g.slug, g] as const))("guide content: %s", (
       );
     expect(mismatches).toEqual([]);
   });
-  it("no more than 2 source markers stand side by side (known exceptions: senior-dog sole citations)", () => {
+  it("no more than 2 source markers stand side by side (known exceptions: 3 senior-dog stacks of sole citations)", () => {
     if (!migrated(g)) return;
     const runs = [...g.body.matchAll(/(?:\[\[\d+\]\]\([^)\s]+\)[ \t]*){3,}/g)];
     const allowed = g.slug === "vacation-rental-with-a-senior-dog" ? 3 : 0;

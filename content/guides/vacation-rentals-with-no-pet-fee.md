@@ -210,10 +210,12 @@ Of the 38 managers, 22 state a charge, from $20 a night [[18]](https://www.ablue
 
 | Manager | What the page says | Also on the page |
 | --- | --- | --- |
-| Big Bear Vacations | "an extra $40 per pet/per night" [[8]](https://www.bigbearvacations.com/about-us/pet-information/) | Fee "covers the additional cleaning"; no separate cleaning charge listed |
-| Rosemary Beach Cottage Rental Company | Non-refundable $300 per pet, maximum of 3 [[9]](https://rosemarybeach.com/faq/) | Pet-friendly homes only |
-| Cabin Rentals of Georgia | $50 per pet per night plus a $75 pet cleaning fee [[10]](https://cabin-rentals-of-georgia.com/policies) | Dogs under 35 lb; a refundable $250 pet deposit is also listed |
-| Resort Realty | "non-refundable pet fee up to $1,000," varies by property [[11]](https://resortrealty.com/outer-banks-pet-friendly) | Two adult dogs, no puppies |
+| Big Bear Vacations | "an extra $40 per pet/per night" | Fee "covers the additional cleaning"; no separate cleaning charge listed |
+| Rosemary Beach Cottage Rental Company | Non-refundable $300 per pet, maximum of 3 | Pet-friendly homes only |
+| Cabin Rentals of Georgia | $50 per pet per night plus a $75 pet cleaning fee | Dogs under 35 lb; a refundable $250 pet deposit is also listed |
+| Resort Realty | "non-refundable pet fee up to $1,000," varies by property | Two adult dogs, no puppies |
+
+Sources for this table: [[8]](https://www.bigbearvacations.com/about-us/pet-information/), [[9]](https://rosemarybeach.com/faq/), [[10]](https://cabin-rentals-of-georgia.com/policies), [[11]](https://resortrealty.com/outer-banks-pet-friendly)
 
 A fee is sometimes where cleaning is paid for: Big Bear says its pet fee covers cleaning, and Cabin Rentals of Georgia stacks a nightly fee and a cleaning fee. So a $0 pet fee plus a cleaning fee can land close to a home with a pet fee and no cleaning fee, which is why totals beat headlines (our reading, not a figure from any page). For how the units differ, see [how pet fees work](/guides/how-vacation-rental-pet-fees-work), and for the wider picture, [what a dog really costs on a rental trip](/guides/what-a-dog-really-costs-on-a-vacation-rental).
 
@@ -234,7 +236,7 @@ The fee-free home is not automatically cheaper: here the home with a $60 pet fee
 
 The official help pages tell you what hosts can set, not which listings have no fee, so open the price breakdown on any listing.
 
-- **Airbnb:** add your pets under Who, or choose Allows pets under Booking options [[12]](https://www.airbnb.com/help/article/86). The fee can be per booking, per night, per pet or per pet per night, cannot exceed the nightly base rate, and shows in the nightly rate and the checkout total [[13]](https://www.airbnb.com/help/article/3623). Service animals stay free of pet fees; for emotional support animals, hosts may charge normal pet fees unless local policy requires them to accept the animal [[14]](https://www.airbnb.com/help/article/1869).
+- **[Airbnb](https://www.airbnb.com/help/article/86):** add your pets under Who, or choose Allows pets under Booking options. The fee can be per booking, per night, per pet or per pet per night, cannot exceed the nightly base rate, and shows in the nightly rate and the checkout total [[13]](https://www.airbnb.com/help/article/3623). Service animals stay free of pet fees; for emotional support animals, hosts may charge normal pet fees unless local policy requires them to accept the animal [[14]](https://www.airbnb.com/help/article/1869).
 - **Vrbo:** the displayed price includes mandatory and service fees, with taxes added at checkout, though that page does not mention pets [[16]](https://help.vrbo.com/articles/About-Price-Display). Pets are one of the standard fee types a host can set, and a host can add a charge to an existing reservation by payment request before the stay is complete [[15]](https://help.vrbo.com/articles/How-do-I-manage-my-fees). "Pets allowed" is a predefined house rule, with a host note of 50 characters [[17]](https://help.vrbo.com/articles/Add-or-edit-house-rules).
 
 To see real homes with their full totals, [start a pet-friendly search on Vrbo](aff:vrbo) and price the same dates and dog count for each.

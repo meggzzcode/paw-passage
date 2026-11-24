@@ -198,7 +198,7 @@ The real risk is a dog that bolts through a door, not only the noise. In the one
 
 1. Ask the host how far the nearest homes are and what the fireworks rule says, in writing. [[1]](https://www.petbook-magazine.com/dogs/dog-owner-how-we-were-misled-by-a-firework-free-vacation-park)
 2. Plan the evening: a familiar quiet room far from the noise, a leash even in a fenced yard, and a person at each door. [[4]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/fear-fireworks-and-thunderstorms)
-3. Do not leave the dog alone at midnight; Cabin Rentals of Georgia says no dogs alone in the cabin. [[9]](https://www.cabin-rentals-of-georgia.com/policies)
+3. Do not leave the dog alone at midnight; [Cabin Rentals of Georgia](https://www.cabin-rentals-of-georgia.com/policies) says no dogs alone in the cabin.
 
 ## Questions to ask the host
 
@@ -221,9 +221,9 @@ Local law varies by county and city. Wording differs by manager (sample, not a s
 
 | Manager | Dogs and fees | Fireworks and holiday wording |
 | --- | --- | --- |
-| Aunt Bug's Cabin Rentals (Gatlinburg area) [[8]](https://www.auntbugs.com/rental-policies/) | 2 small dogs, 40 lb or less; $75 per pet, non-refundable | Fireworks prohibited at all times; "some minimum stay requirements during holidays" |
-| Cabin Rentals of Georgia (Blue Ridge) [[9]](https://www.cabin-rentals-of-georgia.com/policies) | Under 35 lb; $50 per pet per night, $75 cleaning fee, $250 refundable deposit | Firecrackers prohibited on the property |
-| Vacasa (many places) [[10]](https://www.vacasa.com/pet-friendly-vacation-rentals) | "a small fee per dog, per night", amount not listed | No fireworks text on the page |
+| Aunt Bug's Cabin Rentals (Gatlinburg area) | 2 small dogs, 40 lb or less; $75 per pet, non-refundable | Fireworks prohibited at all times; "some minimum stay requirements during holidays" |
+| Cabin Rentals of Georgia (Blue Ridge) | Under 35 lb; $50 per pet per night, $75 cleaning fee, $250 refundable deposit | Firecrackers prohibited on the property |
+| Vacasa (many places) | "a small fee per dog, per night", amount not listed | No fireworks text on the page |
 
 None of the 38 manager pet pages we read for our [how-many-dogs guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental#how-many-dogs-do-rental-managers-actually-allow) mentioned a holiday pet-fee surcharge (a convenience sample, read 2026-11-18). For the full total, use our [pet fees guide](/guides/how-vacation-rental-pet-fees-work). Booking the week before? See [Christmas week in a cabin with a dog](/guides/christmas-week-in-a-cabin-with-a-dog).
 
@@ -235,11 +235,11 @@ Cornell advises a leash even in a fenced yard, and a familiar room far from the 
 - A young Golden Retriever bolted from a relative who could not run, after neighbors' fireworks, and was found after two days. [[12]](https://www.kpcw.org/park-city/2024-01-02/park-city-community-helps-reunite-lost-golden-retriever-with-owners)
 - A dog climbed an 8-foot fence around July 4 (a different holiday, same fear), believed spooked by fireworks, and was found months later about 60 miles away. [[14]](https://www.upworthy.com/christmas-miracle-family-reunited-with-their-dog-found-60-miles-away)
 
-In several of these, a fence, a door, or a person who could not give chase was involved, which is why doors and leashes come first. Patch says even a calm dog can bolt from a rental house or hotel hallway. [[15]](https://patch.com/massachusetts/across-ma/july-4-fireworks-cause-spike-lost-dog-reports-what-ma-pet-owners-should-know) See our [secure fenced yard guide](/guides/vacation-rental-secure-fenced-yard) and [ID tags and GPS trackers guide](/guides/if-your-dog-gets-loose-on-a-trip).
+In several of these, a fence, a door, or a person who could not give chase was involved, which is why doors and leashes come first. [Patch](https://patch.com/massachusetts/across-ma/july-4-fireworks-cause-spike-lost-dog-reports-what-ma-pet-owners-should-know) says even a calm dog can bolt from a rental house or hotel hallway. See our [secure fenced yard guide](/guides/vacation-rental-secure-fenced-yard) and [ID tags and GPS trackers guide](/guides/if-your-dog-gets-loose-on-a-trip).
 
 **ID plan for an unfamiliar place**
 
-- A tag with a mobile number you will answer. Patch recommends a current cell number, a microchip, and a tracker if possible. [[15]](https://patch.com/massachusetts/across-ma/july-4-fireworks-cause-spike-lost-dog-reports-what-ma-pet-owners-should-know)
+- A tag with a mobile number you will answer. [Patch](https://patch.com/massachusetts/across-ma/july-4-fireworks-cause-spike-lost-dog-reports-what-ma-pet-owners-should-know) recommends a current cell number, a microchip, and a tracker if possible.
 - Current microchip registration; a chip identified the dog in the 60-mile case. [[14]](https://www.upworthy.com/christmas-miracle-family-reunited-with-their-dog-found-60-miles-away)
 - A recent photo on your phone, ready to post.
 
@@ -249,11 +249,13 @@ Food or play during noise has the strongest support. Riemer's 2023 review calls 
 
 | What | What the sources say |
 | --- | --- |
-| Food or play during noise | Linked to improvement in severely affected dogs in an owner survey summary [[3]](https://avsab.org/survey-shows-which-treatments-are-effective-for-fireworks-fears-in-dogs/); called one of the most effective methods [[2]](https://pmc.ncbi.nlm.nih.gov/articles/PMC10705068/) |
-| Safe space, masking sound | Short-term and "important (but not sufficient)" [[2]](https://pmc.ncbi.nlm.nih.gov/articles/PMC10705068/); Cornell recommends a quiet room [[4]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/fear-fireworks-and-thunderstorms) |
-| Hiding places, music, doing nothing | Associated with worse fear in the survey, but correlational [[3]](https://avsab.org/survey-shows-which-treatments-are-effective-for-fireworks-fears-in-dogs/) |
-| Pheromones, supplements, herbals, essential oils | Most "not powerful enough" for serious fears; pheromone results inconsistent [[2]](https://pmc.ncbi.nlm.nih.gov/articles/PMC10705068/) |
-| Pressure vests | "a small beneficial effect is possible" [[2]](https://pmc.ncbi.nlm.nih.gov/articles/PMC10705068/) |
+| Food or play during noise | Linked to improvement in severely affected dogs in an owner survey summary; called one of the most effective methods |
+| Safe space, masking sound | Short-term and "important (but not sufficient)"; Cornell recommends a quiet room |
+| Hiding places, music, doing nothing | Associated with worse fear in the survey, but correlational |
+| Pheromones, supplements, herbals, essential oils | Most "not powerful enough" for serious fears; pheromone results inconsistent |
+| Pressure vests | "a small beneficial effect is possible" |
+
+Sources for this table: [[3]](https://avsab.org/survey-shows-which-treatments-are-effective-for-fireworks-fears-in-dogs/)
 
 Owners of dogs given a placebo often report improvement, and one study found no evidence of calming properties for cannabidiol. [[2]](https://pmc.ncbi.nlm.nih.gov/articles/PMC10705068/) Cornell advises trying any prescribed medication on a quiet day first, so talk to your vet well ahead, and never to punish a scared dog. [[4]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/fear-fireworks-and-thunderstorms)
 
@@ -281,13 +283,13 @@ More ID and safety items are in the [safety, ID and first aid gear](/gear/safety
 
 Our suggested schedule, from the guidance above:
 
-- **Daytime:** exercise early. [[4]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/fear-fireworks-and-thunderstorms) Check the yard for gaps and debris; ASPCA warns that ingesting fireworks is very dangerous. [[5]](https://www.aspca.org/news/ring-pet-safe-new-year-these-expert-safety-tips)
+- **Daytime:** exercise early. [[4]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/fear-fireworks-and-thunderstorms) Check the yard for gaps and debris; [ASPCA](https://www.aspca.org/news/ring-pet-safe-new-year-these-expert-safety-tips) warns that ingesting fireworks is very dangerous.
 - **Late afternoon:** set up the quiet room with warm blankets [[5]](https://www.aspca.org/news/ring-pet-safe-new-year-these-expert-safety-tips), and put alcohol and guests' medications out of reach.
 - **Before dark:** last potty break on a leash, a person at each door. Check the tag.
 - **Evening:** keep the dog with you, food or play ready; give treats when bangs start.
 - **After midnight:** leash for the first outing; check the yard again.
 
-Tell guests not to let the dog out. If you plan to go out, see our [guide on leaving a dog alone](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental): Vacasa says not unsupervised [[10]](https://www.vacasa.com/pet-friendly-vacation-rentals), and Aunt Bug's asks for a crate. [[8]](https://www.auntbugs.com/rental-policies/)
+Tell guests not to let the dog out. If you plan to go out, see our [guide on leaving a dog alone](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental): [Vacasa](https://www.vacasa.com/pet-friendly-vacation-rentals) says not unsupervised, and Aunt Bug's asks for a crate. [[8]](https://www.auntbugs.com/rental-policies/)
 
 ## If your dog runs
 
@@ -297,7 +299,7 @@ Ask people to phone you rather than chase. In Killington, the public was asked t
 - Alert shelters and lost-pet pages near the rental.
 - Plan for cold; it added danger in the Homer story.
 
-How common are lost dogs on New Year's Eve? Petco Love's 2023 release says more pets go missing on July 4 than any other day and gives no New Year's number. [[17]](https://prnewswire.com/news-releases/lost-pets-fill-animal-shelters-after-july-4th-festivities-petco-love-urging-pet-parents-to-search-for-them-on-petco-love-lost-301870824.html) A Dutch survey of more than 3,600 pet owners found about 5% of dogs had ever been lost after hearing fireworks; the sample may be self-selected. [[16]](https://www.uu.nl/en/news/survey-result-fireworks-outside-new-years-eve-disastrous-for-animal-welfare) Keep both poison numbers saved: ASPCA Animal Poison Control (888) 426-4435, 24 hours a day, a consultation fee may apply [[6]](https://www.aspca.org/pet-care/animal-poison-control); Pet Poison Helpline (855) 764-7661, 24/7. [[7]](https://www.petpoisonhelpline.com/) Our [first-aid kit guide](/guides/dog-travel-first-aid-kit-guide) lists items to keep handy.
+How common are lost dogs on New Year's Eve? Petco Love's 2023 release says more pets go missing on July 4 than any other day and gives no New Year's number. [[17]](https://prnewswire.com/news-releases/lost-pets-fill-animal-shelters-after-july-4th-festivities-petco-love-urging-pet-parents-to-search-for-them-on-petco-love-lost-301870824.html) A Dutch survey of more than 3,600 pet owners found about 5% of dogs had ever been lost after hearing fireworks; the sample may be self-selected. [[16]](https://www.uu.nl/en/news/survey-result-fireworks-outside-new-years-eve-disastrous-for-animal-welfare) Keep both poison numbers saved: ASPCA Animal Poison Control (888) 426-4435, 24 hours a day, a consultation fee may apply [[6]](https://www.aspca.org/pet-care/animal-poison-control); [Pet Poison Helpline](https://www.petpoisonhelpline.com/) (855) 764-7661, 24/7. Our [first-aid kit guide](/guides/dog-travel-first-aid-kit-guide) lists items to keep handy.
 
 ## What we could not confirm
 

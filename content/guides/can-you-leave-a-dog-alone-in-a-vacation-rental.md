@@ -184,7 +184,7 @@ The listing's house rules decide, not the platform: Airbnb and Vrbo both leave i
 ## The short answer
 
 - A Booking.com guide says some pet policies state pets must not be left unattended, while others allow short absences if the pet is crated and unlikely to cause disturbance or damage. [[10]](https://www.booking.com/articles/pet-friendly-holiday-rentals-tips.html)
-- There is no standard number of safe hours; it depends on your dog, and the ASPCA's test is whether you are back before your dog gets upset. [[5]](https://www.aspca.org/pet-care/dog-care/common-dog-behavior-issues/separation-anxiety)
+- There is no standard number of safe hours; it depends on your dog, and the [ASPCA](https://www.aspca.org/pet-care/dog-care/common-dog-behavior-issues/separation-anxiety)'s test is whether you are back before your dog gets upset.
 - A new place changes things. A dog that is fine alone at home may howl or be destructive in unfamiliar surroundings. [[11]](https://www.afar.com/magazine/how-to-find-a-pet-friendly-airbnb-or-vacation-rental)
 
 A message you can copy is [below](#what-should-i-ask-the-host-before-booking). Rules vary by place and host.
@@ -209,7 +209,7 @@ Wording varies, so read it literally. In one 2018 host-forum thread, rules range
 
 - Cabin Rentals of Georgia: no dog is to be left unattended in the cabin while the guest is away. [[13]](https://cabin-rentals-of-georgia.com/policies)
 - Brindley Beach Vacations: never leave dogs alone in the beach house unless they are in a crate, and never lock a dog in a bedroom. [[14]](https://www.brindleybeach.com/node/3691)
-- Hearthside Cabin Rentals: pets must be crated when left alone. [[15]](https://hearthsidecabinrentals.com/frequently-asked-questions)
+- [Hearthside Cabin Rentals](https://hearthsidecabinrentals.com/frequently-asked-questions): pets must be crated when left alone.
 - Bear Camp Cabins: its pet policy says pets must be crated if left alone on the property, while another line on its page only recommends crating. [[16]](https://www.bearcampcabins.com/blog/gatlinburg-cabins-pigeon-forge-pet-friendly-cabins)
 
 So expect "never", "only crated", or "crate recommended". None of these pages mentions cameras. Our [rental checklist](/guides/pet-friendly-vacation-rental-checklist) lists the other questions to settle first.
@@ -224,7 +224,7 @@ Booking.com's guide advises against leaving pets alone if they do not handle unf
 
 Follow the listing, and only crate a dog that already accepts it. The ASPCA says a crate helps some dogs and adds stress for others, and suggests a baby gate in one room if a dog is distressed in a crate. [[5]](https://www.aspca.org/pet-care/dog-care/common-dog-behavior-issues/separation-anxiety)
 
-Airbnb's hosting guide does not mention crates. [[2]](https://www.airbnb.com/resources/hosting-homes/a/what-you-need-to-know-about-hosting-pets-463) Ask whether the host requires a crate, forbids one, or has space for yours; if the rules say no furniture, pack a bed or throw.
+[Airbnb](https://www.airbnb.com/resources/hosting-homes/a/what-you-need-to-know-about-hosting-pets-463)'s hosting guide does not mention crates. Ask whether the host requires a crate, forbids one, or has space for yours; if the rules say no furniture, pack a bed or throw.
 
 **If the rule is "crated when alone": a folding crate that travels flat.** A dog that has never been shut in a crate is not ready to start at a rental. The maker's page for the MidWest iCrate lists sizes from 18 to 48 inches, single or double door, a divider panel, a removable leak-proof pan and rubber feet to protect floors, and says it folds flat. [[17]](https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/) Skip it if the host provides a crate or your dog has never used one. The page gives no weights or folded dimensions, so check the folded size against your car space before you buy.
 
@@ -272,7 +272,7 @@ Skip the solo plan, or arrange a sitter you trust, in these cases:
 
 ## A settling-in routine
 
-Everything here is from the ASPCA's separation-anxiety guidance, applied to a rental. [[5]](https://www.aspca.org/pet-care/dog-care/common-dog-behavior-issues/separation-anxiety)
+Everything here is from the [ASPCA](https://www.aspca.org/pet-care/dog-care/common-dog-behavior-issues/separation-anxiety)'s separation-anxiety guidance, applied to a rental.
 
 1. Give at least 30 minutes of aerobic activity, ideally right before you go out.
 2. Leave a stuffed food toy that takes 20 to 30 minutes to finish.

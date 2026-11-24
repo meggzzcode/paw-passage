@@ -172,8 +172,8 @@ Measure the widest part of your dog's rib cage, buy by that girth rather than we
 
 ## At a glance: our picks
 
-- **Big dog, or a shore you lift from:** EzyDog DFD, sizes to XL (90+ lb, 30-48 in girth) with a padded grab handle. [[17]](https://store.ezydog.com/dfd-life-jacket/)
-- **Small or medium dog:** Ruffwear Float Coat, from XXS (13-17 in girth) to XL (36-42 in). [[2]](https://ruffwear.com/products/float-coat-dog-life-jacket)
+- **Big dog, or a shore you lift from:** [EzyDog](https://store.ezydog.com/dfd-life-jacket/) DFD, sizes to XL (90+ lb, 30-48 in girth) with a padded grab handle.
+- **Small or medium dog:** [Ruffwear](https://ruffwear.com/products/float-coat-dog-life-jacket) Float Coat, from XXS (13-17 in girth) to XL (36-42 in).
 - **Calm cove, you stay within reach:** Outward Hound Dawson Swim, which its maker calls a flotation aid for a conscious dog in calm water, not a substitute for supervision. [[3]](https://outwardhound.com/dawson-swim-dog-life-jacket/)
 - **Features to want:** a handle, a leash ring, bright or reflective trim and adjustable straps, per AKC. [[4]](https://www.akc.org/expert-advice/lifestyle/why-your-dog-needs-a-dog-life-jacket)
 - **Safety note:** the U.S. Coast Guard said in a 2013 video that "there is no federal requirement or standard for dog life jackets." [[1]](https://www.dvidshub.net/video/291603/boating-responsibly-with-mans-best-friend) Pools and hot tubs are a separate question; see our [pool and hot tub guide](/guides/can-dogs-go-in-a-rental-pool-or-hot-tub).
@@ -206,14 +206,14 @@ No source we read sets a rule. AKC's page covers which dogs struggle in water. I
 
 ## The fit test, step by step
 
-1. **Measure the girth** at the widest part of the rib cage. Both Ruffwear and Outward Hound size this way, not by weight. [[2]](https://ruffwear.com/products/float-coat-dog-life-jacket) [[3]](https://outwardhound.com/dawson-swim-dog-life-jacket/) Ruffwear's blog says the same. [[6]](https://ruffwear.com/blogs/explored/do-dogs-need-life-jackets)
+1. **Measure the girth** at the widest part of the rib cage. Both [Ruffwear](https://ruffwear.com/products/float-coat-dog-life-jacket) and [Outward Hound](https://outwardhound.com/dawson-swim-dog-life-jacket/) size this way, not by weight. [Ruffwear](https://ruffwear.com/blogs/explored/do-dogs-need-life-jackets)'s blog says the same.
 2. **Between sizes, follow the maker's rule for that jacket.** The pages disagree: Ruffwear says "In between sizes: Choose the smaller size," while Outward Hound recommends sizing up at the top of a range and says to think about large shoulders or a long torso. [[2]](https://ruffwear.com/products/float-coat-dog-life-jacket) [[3]](https://outwardhound.com/dawson-swim-dog-life-jacket/)
 3. **Check straps and body.** Two fingers should fit under the straps; too large can slip off, too tight can restrict swimming. [[4]](https://www.akc.org/expert-advice/lifestyle/why-your-dog-needs-a-dog-life-jacket) EzyDog's fit guide adds that the jacket should stay centred over the back, straps should lie flat, the front should not press on the throat and the front legs should move freely. [[5]](https://ezydog.com.au/blogs/news/how-dog-life-jacket-should-fit)
 4. **Watch for a bad fit:** sliding to one side, rubbing under the front legs, a dog that struggles to paddle or rolls in the water. [[5]](https://ezydog.com.au/blogs/news/how-dog-life-jacket-should-fit)
 5. **Test on land, then in shallow water.** AKC suggests a bathtub for small dogs and a leash or harness in shallow water for larger ones, checking range of motion, buoyancy and fit when wet. [[4]](https://www.akc.org/expert-advice/lifestyle/why-your-dog-needs-a-dog-life-jacket)
-6. **Lift check (our suggestion).** Hold the handle and lift gently. If the jacket rides past the ears or the dog slides out the front, tighten and recheck. Outward Hound says its rescue handle is for emergencies, so keep it light. [[3]](https://outwardhound.com/dawson-swim-dog-life-jacket/)
+6. **Lift check (our suggestion).** Hold the handle and lift gently. If the jacket rides past the ears or the dog slides out the front, tighten and recheck. [Outward Hound](https://outwardhound.com/dawson-swim-dog-life-jacket/) says its rescue handle is for emergencies, so keep it light.
 
-Check the return terms on the listing before you order, so a jacket that fails the test can go back. EzyDog's store lists a 1-year warranty and 30-day returns. [[17]](https://store.ezydog.com/dfd-life-jacket/)
+Check the return terms on the listing before you order, so a jacket that fails the test can go back. [EzyDog](https://store.ezydog.com/dfd-life-jacket/)'s store lists a 1-year warranty and 30-day returns.
 
 ## What a "life jacket" label does and does not tell you
 

@@ -172,7 +172,7 @@ A rental cannot change how your dog reacts, only how often your dog meets a trig
 ## The short answer
 
 - Check four things before you book: what is next door, any shared wall, entrance or path, what your dog can see from the door, windows and yard, and where you will walk. The [trigger-by-trigger checklist](#what-to-check-trigger-by-trigger) shows what to look for and what to ask.
-- Send the host [the message further down](#what-to-tell-the-host), on the booking platform, and wait for a written answer before you pay. Airbnb says to contact the host even when a listing allows pets. [[4]](https://www.airbnb.com/help/article/86)
+- Send the host [the message further down](#what-to-tell-the-host), on the booking platform, and wait for a written answer before you pay. [Airbnb](https://www.airbnb.com/help/article/86) says to contact the host even when a listing allows pets.
 - Management is a valid way to cope: the ASPCA says avoiding upsetting situations is "a perfectly reasonable way to cope," and Cornell adds that avoidance "isn't a permanent solution." [[2]](https://www.aspcapro.org/sites/default/files/aspca-reactive-dogs-on-leash.pdf) [[3]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/health-info/managing-reactive-behavior)
 - If the behavior is new or getting worse, talk to your vet before you book. [[5]](https://www.msdvetmanual.com/veterinary/dog-owners/behavior-of-dogs/diagnosing-behavior-problems-in-dogs)
 
@@ -180,7 +180,7 @@ General information, not behavior or medical advice.
 
 ## Start with your dog's triggers
 
-Write three lines before you open a search page: what sets your dog off, how far away your dog is still comfortable, and where it happens (a walk, a window, a gate, the car). Reactivity is a response to a trigger, not aggression as such, according to Humane Colorado. [[1]](https://humanecolorado.org/resources/understanding-reactivity-in-dogs/) Triggers differ. The ASPCA describes some dogs as fearing other dogs and others as so keen to greet that restraint frustrates them. [[2]](https://www.aspcapro.org/sites/default/files/aspca-reactive-dogs-on-leash.pdf) Best Friends describes barrier reactivity as a response to a person, dog, vehicle or sound across a fence, door or window. [[6]](https://bestfriends.org/resources/managing-barrier-reactivity)
+Write three lines before you open a search page: what sets your dog off, how far away your dog is still comfortable, and where it happens (a walk, a window, a gate, the car). Reactivity is a response to a trigger, not aggression as such, according to [Humane Colorado](https://humanecolorado.org/resources/understanding-reactivity-in-dogs/). Triggers differ. The ASPCA describes some dogs as fearing other dogs and others as so keen to greet that restraint frustrates them. [[2]](https://www.aspcapro.org/sites/default/files/aspca-reactive-dogs-on-leash.pdf) Best Friends describes barrier reactivity as a response to a person, dog, vehicle or sound across a fence, door or window. [[6]](https://bestfriends.org/resources/managing-barrier-reactivity)
 
 So a rental with a lovely fenced yard can still be a problem if the fence is see-through and a dog lives next door. Judge the place against your list, not against a general idea of "quiet."
 

@@ -1,7 +1,7 @@
 ---
-title: "Two Large Dogs in One Car: Crates, Harnesses and Barriers"
-seoTitle: "Two Large Dogs in One Car: Safe Setups"
-seoDescription: "Riding with two large dogs? One restraint per dog, crate or harness layouts, where barriers fit, weight math and heat stops, plus what no one has tested."
+title: "Traveling With Two Large Dogs in a Car: Crates, Harnesses and Barriers"
+seoTitle: "Traveling With Two Large Dogs in a Car: Safe Setups"
+seoDescription: "Two large dogs in a car? Give each its own restraint, compare crate and harness layouts for an SUV or wagon, check tested weights and see what is untested."
 dek: One restraint per dog, how to lay out a sedan, wagon or SUV, what a barrier does and does not do, and the multi-dog questions no independent test answers yet.
 category: Planning
 states: []
@@ -10,8 +10,8 @@ approvedBy: Paws & Passage Editors
 approvedOn: 2026-11-18
 author: Paws & Passage Editors
 publishedOn: 2026-11-18
-lastReviewed: 2026-11-19
-readingMinutes: 7
+lastReviewed: 2026-11-24
+readingMinutes: 12
 heroImage: guide-two-large-dogs-car
 faqs:
   - q: Can two large dogs share one crate in the car?
@@ -22,6 +22,10 @@ faqs:
     a: The ASPCA and CDC advise the back seat for dogs that ride on a seat, with a harness on a secured seat belt, and the ASPCA calls a secured crate the safest option. Which of those fits two large dogs depends on your cargo floor, anchor points and seat belts, so measure first.
   - q: Is it illegal to drive with two dogs loose in the car?
     a: Laws differ by state. AAA's Northeast magazine says laws on restraining pets differ and gives examples from Maine, Massachusetts and New York. Read your state's statutes and those on your route; this page is not legal advice.
+  - q: What size crate fits two large dogs in an SUV?
+    a: Measure the cargo floor width first. For example, two Lucky Kennel Large units list an interior width of 22 in each, 44 in before the walls. That is arithmetic from maker figures, not a tested fit, and CPS tested one crate with one dog.
+  - q: What is the safest way to travel with two large dogs in a car?
+    a: The ASPCA calls a secured crate the safest option and describes a harness on a secured seat belt as the alternative. Use one restraint per dog, each rated for that dog's weight. We found no independent test of two dogs side by side.
 relatedGuides:
   - dog-car-safety-harness-and-crate-guide
   - how-many-dogs-can-you-bring-to-a-vacation-rental
@@ -32,8 +36,8 @@ relatedGuides:
 relatedProducts:
   - ruffwear-load-up-car-harness
   - kurgo-enhanced-strength-tru-fit
+  - lucky-duck-lucky-kennel
   - kurgo-backseat-barrier
-  - petsafe-happy-ride-dog-barrier
 relatedTools:
   - will-my-dog-be-accepted
   - packing-list
@@ -91,10 +95,6 @@ sources:
     url: https://www.kurgo.com/p/enhanced-strength-dog-car-harness/K01255
     publisher: Kurgo
     accessedOn: 2026-11-18
-  - title: Traveling with Multiple Dogs Tips
-    url: https://pawventures.pages.dev/blog/traveling-with-multiple-dogs-tips/
-    publisher: Pawventures
-    accessedOn: 2026-11-18
   - title: Dog car restraints
     url: https://magazine.northeast.aaa.com/?p=95415
     publisher: AAA Northeast
@@ -112,7 +112,7 @@ sources:
     publisher: Kurgo
     accessedOn: 2026-11-19
 research:
-  primaryKeyword: traveling with 2 large dogs in car
+  primaryKeyword: two large dogs in a car
   relatedKeywords:
     - two large dogs in an SUV
     - how to travel with two dogs in a car
@@ -168,21 +168,18 @@ research:
   researchComplete: true
 ---
 
-Two big dogs, one back seat, and a long drive: one leans on the other, the second reaches for the console, and you are doing 65. **What to buy:** one restraint per dog, each rated for that dog's weight (a harness on its own seat belt, or its own crate held down with strength-rated anchor straps), plus a seat cover wide enough for the whole bench if they ride there. We found no independent test of two dogs side by side, so this guide builds the layout from single-dog evidence and says where that evidence stops. To check a harness's testing claim, use our [crash-tested harness and crate guide](/guides/dog-car-safety-harness-and-crate-guide); this page does not repeat that.
+Two big dogs, one back seat, and a long drive: one leans on the other, the second reaches for the console, and you are doing 65.
+
+**The short answer:** when you travel with two large dogs in a car, give each dog its own restraint rated for that dog's weight (a harness on its own seat belt, or its own crate held down with strength-rated anchor straps), plus a seat cover wide enough for the whole bench if they ride there. We found no independent test of two dogs side by side, so this guide builds the layout from single-dog evidence and says where that evidence stops.
+
+## The short answer
 
 - **One restraint per dog.** Vetstreet says to place pets in separate carriers because animals housed together can be injured if thrown against each other. That is Vetstreet's advice, not a quoted CPS statement. [[1]](https://www.vetstreet.com/?p=1117)
 - **Weight adds up.** CPS says crash force is mass times acceleration, and for a crate the mass is the dog plus the crate. [[2]](https://centerforpetsafety.org/cargo-area-connection-advisory/)
-- **A barrier is a divider.** The barrier pages we read name no crash test.
+- **A barrier is a divider, not a restraint.** The barrier pages we read name no crash test.
 - **Layout comes first.** Pick one by vehicle below, then measure your own cargo floor and seat belts.
 
-## Buying checklist
-
-1. **One restraint per dog.** No shared crate, no shared harness. [[1]](https://www.vetstreet.com/?p=1117)
-2. **A tested weight at or above each dog's weight.** Check the maker's figure and any named tester; see the weight section below.
-3. **A crate you can strap down properly.** Choose one sized so the dog can stand, sit, lie down and turn around, and held with strength-rated straps, not rubber ones on a wire crate. [[3]](https://centerforpetsafety.org/2015-crate-study-results/) [[4]](https://www.aspca.org/pet-care/general-pet-care/travel-safety-tips)
-4. **Measured space.** Cargo floor width for two crates, and two good seat belt positions for two harnesses; add up dogs plus crates against the anchors. [[2]](https://centerforpetsafety.org/cargo-area-connection-advisory/)
-5. **A barrier only as a divider.** Do not count it as a restraint.
-6. **A seat cover sized to your bench,** if the dogs ride on it. It protects the upholstery, not the dogs.
+To check a harness's testing claim before you buy, use our [crash-tested harness and crate guide](/guides/dog-car-safety-harness-and-crate-guide); this page does not repeat that.
 
 ## Why two dogs is not just double one
 
@@ -190,63 +187,69 @@ CPS's 2015 crate study used 75 or 110 pound test dogs, and each test description
 
 The same study shows how much the details matter: one maker's straps ruptured and released a crate, rubber straps gave no meaningful protection on a wire crate, and CPS concluded that wire crates should be considered distraction-prevention tools. [[3]](https://centerforpetsafety.org/2015-crate-study-results/) So "crate" alone is not a plan; the crate, placement and straps are.
 
-## Layouts by vehicle
+## Where should two large dogs ride? Layouts by vehicle
 
-Pick by your vehicle, then check the unknowns column. The ASPCA calls a crate the safest option and describes a harness on a secured seat belt as the alternative; for dogs that ride on a seat it says the back seat. [[4]](https://www.aspca.org/pet-care/general-pet-care/travel-safety-tips) The CDC also advises the back seat with a harness attached to the seat buckle. [[5]](https://www.cdc.gov/healthy-pets/travel/index.html)
+Pick by your vehicle, then check what is unknown. The ASPCA calls a crate the safest option and describes a harness on a secured seat belt as the alternative; for dogs that ride on a seat it says the back seat. [[4]](https://www.aspca.org/pet-care/general-pet-care/travel-safety-tips) The CDC also advises the back seat with a harness attached to the seat buckle. [[5]](https://www.cdc.gov/healthy-pets/travel/index.html)
 
-| Layout | Fits | What the sources say | What is unknown |
-| --- | --- | --- | --- |
-| Two crates, side by side, in the cargo area | SUV, wagon | CPS warns cargo anchors are not always weight-rated and the platform may not be as solid as it looks; ask the vehicle maker. [[2]](https://centerforpetsafety.org/cargo-area-connection-advisory/) | Whether your anchors carry two crates and two dogs at once |
-| One harness per dog on the rear seat | Sedan, wagon, SUV | CPS lists the Sleepypod Clickit Sport as passed (5 star, tested July 2014), with test dogs rated up to 90 lb in the largest size. [[6]](https://centerforpetsafety.org/sleepypod-clickit-sport/) | Whether your seat has two good belt positions for two large dogs |
-| Harnesses in the rear seat, barrier behind the front seats | Sedan, wagon, SUV | Kurgo says its barrier fits fixed or removable headrests but not 2-door cars or mini vans. [[7]](https://www.kurgo.com/p/backseat-barrier/K00006) | Whether the barrier does anything in a crash |
-| Dogs behind a cargo barrier, no restraint | SUV, wagon | PetSafe's barrier is tension-fit and the page makes no crash-test claim. [[8]](https://www.petsafe.com/p/happy-ride-metal-dog-barrier/62409/) | Everything about the dogs in a sudden stop |
+| Layout and vehicle | What the sources say | What is unknown |
+| --- | --- | --- |
+| Two crates, side by side, in the cargo area (SUV, wagon) | CPS warns cargo anchors are not always weight-rated and the platform may not be as solid as it looks; ask the vehicle maker. [[2]](https://centerforpetsafety.org/cargo-area-connection-advisory/) | Whether your anchors carry two crates and two dogs at once |
+| One harness per dog on the rear seat (sedan, wagon, SUV) | CPS lists the Sleepypod Clickit Sport as passed (5 star, tested July 2014), with test dogs rated up to 90 lb in the largest size. [[6]](https://centerforpetsafety.org/sleepypod-clickit-sport/) | Whether your seat has two good belt positions for two large dogs |
+| Harnesses in the rear seat, barrier behind the front seats (sedan, wagon, SUV) | Kurgo says its barrier fits fixed or removable headrests but not 2-door cars or mini vans. [[7]](https://www.kurgo.com/p/backseat-barrier/K00006) | Whether the barrier does anything in a crash |
+| Dogs behind a cargo barrier, no restraint (SUV, wagon) | PetSafe's barrier is tension-fit and the page makes no crash-test claim. [[8]](https://www.petsafe.com/p/happy-ride-metal-dog-barrier/62409/) | Everything about the dogs in a sudden stop |
 
-If two dogs share the rear bench, a wide seat cover keeps the hair and mud off it. A seat cover is not a restraint, and each dog still needs its own. Kurgo's Rover Hammock in the Extended Width is listed by the maker at 63 by 56 inches for full-size trucks and large SUVs [[18]](https://kurgo.com/car-seat-covers/dog-hammocks/wander-hammock-extended-width), and our [large-dog guide](/guides/vacation-rentals-that-welcome-large-dogs) covers it with the other gear for big dogs.
+If two dogs share the rear bench, a wide seat cover keeps the hair and mud off it. A seat cover is not a restraint, and each dog still needs its own. Kurgo's Rover Hammock in the Extended Width is listed by the maker at 63 by 56 inches for full-size trucks and large SUVs [[17]](https://kurgo.com/car-seat-covers/dog-hammocks/wander-hammock-extended-width), and our [large-dog guide](/guides/vacation-rentals-that-welcome-large-dogs) and our guide to [protecting your car interior](/guides/protect-your-car-interior-from-a-dog-on-a-road-trip) cover seat covers and liners.
 
-## Spacing and weight, by the maker's numbers
+## Two crates in a wagon or SUV: the arithmetic
 
-Here is the arithmetic, from maker figures and CPS's formula, not a test or a recommendation. Lucky Duck lists its Intermediate Lucky Kennel for dogs under 70 pounds, with a 38-pound kennel and a 20.5 inch interior width. [[10]](https://www.luckyduck.com/products/lucky-kennel) Our arithmetic: two of them hold under 140 pounds of dogs plus 76 pounds of kennel, under 216 pounds in total, in a space more than 41 inches wide inside the walls (2 x 70, 2 x 38, 2 x 20.5). The Large is listed for dogs of 70 to 110 pounds, with a 45-pound kennel and an interior of 35.75 by 22 by 26.5 inches, so two are up to 220 pounds of dogs plus 90 pounds of kennel, 310 pounds in total, and at least 44 inches of interior width before the walls. [[10]](https://www.luckyduck.com/products/lucky-kennel) CPS lists the Large tested with a 110 pound dog and the Lucky Ratchet Strap Kit, one crate and one dog. [[9]](https://centerforpetsafety.org/lucky-duck-lucky-kennel-large/) We have details on the Lucky Kennel and how to read its listing in our [car safety guide](/guides/dog-car-safety-harness-and-crate-guide).
+Here is the arithmetic, from maker figures and CPS's formula, not a test or a recommendation. Lucky Duck lists its Intermediate Lucky Kennel for dogs under 70 pounds, with a 38-pound kennel and a 20.5 inch interior width. [[10]](https://www.luckyduck.com/products/lucky-kennel) Our arithmetic: two of them hold under 140 pounds of dogs plus 76 pounds of kennel, under 216 pounds in total, in a space more than 41 inches wide inside the walls (2 x 70, 2 x 38, 2 x 20.5). The Large is listed for dogs of 70 to 110 pounds, with a 45-pound kennel and an interior of 35.75 by 22 by 26.5 inches, so two are up to 220 pounds of dogs plus 90 pounds of kennel, 310 pounds in total, and at least 44 inches of interior width before the walls. [[10]](https://www.luckyduck.com/products/lucky-kennel) CPS lists the Large tested with a 110 pound dog and the Lucky Ratchet Strap Kit, one crate and one dog. [[9]](https://centerforpetsafety.org/lucky-duck-lucky-kennel-large/)
 
-Measure your cargo floor width before you shop. The crate must also be big enough to stand, sit, lie down and turn around in, and it must not slide or shift. [[4]](https://www.aspca.org/pet-care/general-pet-care/travel-safety-tips)
+Measure your cargo floor width before you shop. The crate must also be big enough to stand, sit, lie down and turn around in, and it must not slide or shift. [[4]](https://www.aspca.org/pet-care/general-pet-care/travel-safety-tips) For the crate route with big dogs, the Lucky Kennel is the one to look at first: it is the crate in this guide with a named independent listing behind it (CPS, one crate and one dog), and the maker sells it in three sizes with integrated tie-downs, so you size each dog's crate to that dog. It is for owners whose dogs ride in a wagon or SUV cargo area and who will buy the strap kit. Skip it if you drive a sedan, or if your cargo floor is narrower than the two crates side by side. Two of them side by side were not tested together, and the maker sells the ratchet strap kit separately. This is the one to buy first if both dogs ride in the cargo area and you have already measured the floor.
 
-For harnesses the arithmetic is the dog's weight, so check the tested weight against yours. CPS lists the Sleepypod Clickit Sport as passed, 5 star, tested July 2014, with test dogs rated to 25 lb (Small), 45 to 90 lb (Medium), 75 to 90 lb (Large) and to 90 lb (X-Large). [[6]](https://centerforpetsafety.org/sleepypod-clickit-sport/) CPS adds that it inspected the Medium, Large and X-Large to confirm identical materials, stitching and hardware, so a dog up to 90 lb who needs a Medium or Large is offered the same protection as the X-Large. [[6]](https://centerforpetsafety.org/sleepypod-clickit-sport/) Two dogs at or under 90 lb can each wear one; above 90 lb the listing gives no tested weight. We could not find a Sleepypod product page for the Clickit Sport to read, so the maker's own sizing and fit details are unconfirmed here; check them with Sleepypod before you buy. That harness is covered in our car safety guide; two harnesses from other makers are worth a close look here.
+{{pick:lucky-duck-lucky-kennel|For two crates in a wagon or SUV|The maker lists Intermediate (under 70 lb, 38 lb kennel, 20.5 in interior width) and Large (70 to 110 lb, 45 lb kennel, 22 in interior width) with integrated tie-downs; CPS lists the Large tested with a 110 lb dog and the strap kit, one crate and one dog.|https://www.luckyduck.com/products/lucky-kennel}}
 
-Ruffwear's Load Up gives girth sizes from XXS to L/XL (L/XL is 32 to 42 inches) and states no weight limit. [[11]](https://ruffwear.com/products/load-up-dog-car-harness) Its separate testing page says Ruffwear tested prototypes in sled tests with 25, 45 and 75 pound mannequins at MGA Research, which Ruffwear calls an independent facility, and that the harness was not tested to the CPS protocol and, on Ruffwear's own results, would not meet CPS's current certification because of CPS's excursion limits. [[12]](https://ruffwear.ca/pages/load-up-car-harness-testing-design) So it suits a dog within the range of those tests, and for a dog heavier than 75 pounds the tested ceiling is yours to ask Ruffwear about.
+## Which harness fits each dog's weight?
 
-{{pick:ruffwear-load-up-car-harness|For dogs within the tested range|The maker lists girth sizes XXS to L/XL, a seat belt loop that attaches to existing seat belts and metal slide buckles; Ruffwear's testing page cites sled tests up to 75 lb mannequins and says the harness has not been tested to the CPS protocol.|https://ruffwear.com/products/load-up-dog-car-harness}}
+A harness is rated by the dog's weight, so check the tested weight against each of yours:
 
-Kurgo says its Tru-Fit is crash tested for dogs up to 75 pounds, although its size chart runs to 80 to 110 pounds, and its page does not mention CPS. [[13]](https://www.kurgo.com/p/enhanced-strength-dog-car-harness/K01255) It has a 10 inch seat belt tether with a steel carabiner and five points of adjustment. Those are maker claims. If you have one dog under 75 pounds and one over, this is the harness to size the smaller dog with, not the larger.
+- **Dogs under 75 lb:** the two harnesses below.
+- **Dogs 75 to 90 lb:** the only independent result we found is CPS's Sleepypod Clickit Sport listing (tested July 2014, test dogs to 90 lb); confirm with Sleepypod that the current product matches it.
+- **Dogs over 90 lb:** we found no tested harness, so a strapped crate is the better-evidenced route.
 
-{{pick:kurgo-enhanced-strength-tru-fit|For the dog under 75 lb|The maker says it is crash tested for dogs up to 75 lbs and lists a 10 in seat belt tether with a steel carabiner; its size chart goes higher and the size selector lists only Small, Medium and Large, so confirm the size you need.|https://www.kurgo.com/p/enhanced-strength-dog-car-harness/K01255}}
+CPS lists the Sleepypod Clickit Sport as passed, 5 star, tested July 2014, with test dogs rated to 25 lb (Small), 45 to 90 lb (Medium), 75 to 90 lb (Large) and to 90 lb (X-Large). [[6]](https://centerforpetsafety.org/sleepypod-clickit-sport/) CPS adds that it inspected the Medium, Large and X-Large to confirm identical materials, stitching and hardware, so a dog up to 90 lb who needs a Medium or Large is offered the same protection as the X-Large. [[6]](https://centerforpetsafety.org/sleepypod-clickit-sport/) We could not find a Sleepypod product page for the Clickit Sport to read, so the maker's own sizing and fit details are unconfirmed here; check them with Sleepypod before you buy. Two harnesses from other makers are worth a close look for dogs under 75 pounds.
+
+Ruffwear's Load Up gives girth sizes from XXS to L/XL (L/XL is 32 to 42 inches), a seat belt loop that attaches to the existing belts, and states no weight limit. [[11]](https://ruffwear.com/products/load-up-dog-car-harness) Its separate testing page says Ruffwear tested prototypes in sled tests with 25, 45 and 75 pound mannequins at MGA Research, which Ruffwear calls an independent facility, and that the harness was not tested to the CPS protocol and, on Ruffwear's own results, would not meet CPS's current certification because of CPS's excursion limits. [[12]](https://ruffwear.ca/pages/load-up-car-harness-testing-design) So it suits dogs on the rear seat within the range of those tests. It is for owners who want a padded harness that uses the seat belt already in the car; skip it for a dog heavier than 75 pounds, or if you will only buy a CPS-certified harness. This is the one to buy first if both dogs are under 75 pounds and measure inside the L/XL girth range.
+
+{{pick:ruffwear-load-up-car-harness|For dogs up to the 75 lb tested range|The maker lists girth sizes XXS to L/XL, a seat belt loop that attaches to existing seat belts and metal slide buckles; Ruffwear's testing page cites sled tests up to 75 lb mannequins and says the harness has not been tested to the CPS protocol.|https://ruffwear.com/products/load-up-dog-car-harness}}
+
+Kurgo says its Tru-Fit is crash tested for dogs up to 75 pounds, although its size chart runs to 80 to 110 pounds, and its page does not mention CPS. [[13]](https://www.kurgo.com/p/enhanced-strength-dog-car-harness/K01255) It has a 10 inch seat belt tether with a steel carabiner and five points of adjustment, and its size chart starts at 5 pounds, so it can fit a lighter second dog next to a bigger one. Those are maker claims. It is for a dog under 75 pounds that wants a tether and steel hardware. If one of your dogs is over 75 pounds, use the weight check above for that dog; this harness does not cover it. Choose it over the Load Up when a tether and a steel carabiner matter more to you than a padded shell.
+
+{{pick:kurgo-enhanced-strength-tru-fit|For a dog under 75 lb, with a tether|The maker says it is crash tested for dogs up to 75 lbs and lists a 10 in seat belt tether with a steel carabiner; its size chart goes higher and the size selector lists only Small, Medium and Large, so confirm the size you need.|https://www.kurgo.com/p/enhanced-strength-dog-car-harness/K01255}}
 
 For a harness, start with a published tested weight at or above your dog's, then check size by girth.
 
 ## Where a barrier helps and where it does not
 
-Kurgo's Backseat Barrier attaches to the backs of the front seats; its page names no crash test and says it is designed to prevent distracted driving. [[7]](https://www.kurgo.com/p/backseat-barrier/K00006) PetSafe's Happy Ride barrier adjusts from 32 to 49 inches wide and 33 to 57 inches high and the page states no weight capacity. [[8]](https://www.petsafe.com/p/happy-ride-metal-dog-barrier/62409/)
+Kurgo's Backseat Barrier attaches to the backs of the front seats; its page names no crash test and says it is designed to prevent distracted driving. [[7]](https://www.kurgo.com/p/backseat-barrier/K00006) PetSafe's Happy Ride barrier is a tension-fit metal frame that adjusts from 32 to 49 inches wide and 33 to 57 inches high, with no tools to install; its page states no weight capacity and no crash test. [[8]](https://www.petsafe.com/p/happy-ride-metal-dog-barrier/62409/)
 
-A barrier keeps two dogs from reaching you. It does not hold either one in place in a stop. If you want one anyway, pick by where it goes. In a sedan or wagon with the dogs on the rear seat, the Backseat Barrier fits the backs of the front seats and keeps a mesh view open for the dogs, but the maker says it will not work in 2-door cars or mini vans.
+A barrier keeps two dogs from reaching you. It does not hold either one in place in a stop. If you want one anyway, pick by where it goes. For a sedan or wagon where the dogs ride on the rear seat, a barrier behind the front seats keeps them out of the front, and the Backseat Barrier does that with a mesh view for the dogs and a cup holder. The maker says it will not work in 2-door cars or mini vans, so skip it there. It is a divider for a driver who is tired of a nose on the gear shift, not a crash product. If the dogs ride in the cargo area of an SUV, measure the opening behind your rear seats and look at the PetSafe Happy Ride instead.
 
-{{pick:kurgo-backseat-barrier|For dogs on the rear seat|The maker says it fits fixed or removable headrests, has mesh panelling and a cup holder, and will not work with 2-door cars or mini vans; its only safety wording is that it is designed to prevent distracted driving.|https://www.kurgo.com/p/backseat-barrier/K00006}}
-
-In an SUV or wagon where the dogs ride in the cargo area, the PetSafe Happy Ride Dog Barrier is a tension-fit metal frame that adjusts from 32 to 49 inches wide and 33 to 57 inches high, with no tools to install. Measure the opening behind your rear seats first, because the page states no weight capacity and no crash test.
-
-{{pick:petsafe-happy-ride-dog-barrier|For the cargo area|The maker lists a metal frame held by tension with no tools, adjustable from 32 to 49 in wide and 33 to 57 in high; the page names no crash test or weight capacity.|https://www.petsafe.com/p/happy-ride-metal-dog-barrier/62409/}}
+{{pick:kurgo-backseat-barrier|For a sedan or wagon bench|The maker says it fits fixed or removable headrests, has mesh panelling and a cup holder, and will not work with 2-door cars or mini vans; its only safety wording is that it is designed to prevent distracted driving.|https://www.kurgo.com/p/backseat-barrier/K00006}}
 
 ## What not to do
 
 - **Do not put two dogs in one crate.** Vetstreet advises against it. [[1]](https://www.vetstreet.com/?p=1117)
-- **Do not let them ride loose together.** One multi-dog guide, with an unsourced vehicle table, says "Never allow multiple dogs to ride loose together in a vehicle." [[14]](https://pawventures.pages.dev/blog/traveling-with-multiple-dogs-tips/)
+- **Do not let them ride loose together.** The ASPCA and CDC advice above is a crate, or a harness on a secured seat belt, in the back seat. [[4]](https://www.aspca.org/pet-care/general-pet-care/travel-safety-tips) [[5]](https://www.cdc.gov/healthy-pets/travel/index.html)
 - **Do not rely on a wire crate or rubber straps for crash protection.** [[3]](https://centerforpetsafety.org/2015-crate-study-results/)
 - **Do not seat a dog up front or let it ride with its head out.** The ASPCA says to keep dogs in the back seat. [[4]](https://www.aspca.org/pet-care/general-pet-care/travel-safety-tips)
 - **Do not treat a barrier as a restraint.**
-- **Do not skip the law check.** AAA Northeast says laws on restraining pets differ by state; its examples include Maine, where pets shouldn't ride on the driver's lap, and New York, which has no specific restraint law. [[15]](https://magazine.northeast.aaa.com/?p=95415) That is not legal advice, so read the statutes for each state you will cross.
+- **Do not skip the law check.** AAA Northeast says laws on restraining pets differ by state; its examples include Maine, where pets shouldn't ride on the driver's lap, and New York, which has no specific restraint law. [[14]](https://magazine.northeast.aaa.com/?p=95415) That is not legal advice, so read the statutes for each state you will cross.
 
-What other pages offer is thin. One says each dog needs its own space with crates or dog guards and crash-tested harnesses, but names no standard, weight or barrier type. [[16]](https://blog.adaptil.com/ca_en/travelling-with-two-or-more-dogs)
+What other pages offer is thin. One says each dog needs its own space with crates or dog guards and crash-tested harnesses, but names no standard, weight or barrier type. [[15]](https://blog.adaptil.com/ca_en/travelling-with-two-or-more-dogs)
 
 ## Heat and stops
 
-The CDC says temperatures in a parked car can rise within minutes and cause death, never to leave a pet alone in a parked vehicle, and to make frequent stops so dogs can go to the bathroom. [[5]](https://www.cdc.gov/healthy-pets/travel/index.html) Cornell's veterinary college lists dogs left alone in a car among the heatstroke risks, and calls heatstroke a medical emergency needing a veterinary hospital. [[17]](https://www.vet.cornell.edu/index.php/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/heatstroke-medical-emergency)
+The CDC says temperatures in a parked car can rise within minutes and cause death, never to leave a pet alone in a parked vehicle, and to make frequent stops so dogs can go to the bathroom. [[5]](https://www.cdc.gov/healthy-pets/travel/index.html) Cornell's veterinary college lists dogs left alone in a car among the heatstroke risks, and calls heatstroke a medical emergency needing a veterinary hospital. [[16]](https://www.vet.cornell.edu/index.php/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/heatstroke-medical-emergency)
 
 With two dogs, our practical suggestion (not a source's rule): clip both leashes before the door opens, and make stops where you can give each dog water and a walk without leaving either one in the car. Two large crates in a hatch also change airflow and the sources do not say how much; check the vents reach the cargo area. Our [packing list tool](/tools/packing-list) covers water and bowls.
 
@@ -259,17 +262,25 @@ With two dogs, our practical suggestion (not a source's rule): clip both leashes
 | Whether a barrier holds up in a crash with two large dogs | No barrier page names a test [[7]](https://www.kurgo.com/p/backseat-barrier/K00006) [[8]](https://www.petsafe.com/p/happy-ride-metal-dog-barrier/62409/) | Ask the maker for test data |
 | Whether your cargo anchors carry two crates | CPS says anchors vary and to ask the vehicle maker [[2]](https://centerforpetsafety.org/cargo-area-connection-advisory/) | Owner's manual and the dealer |
 | Whether a harness suits dogs above 75 pounds | Ruffwear states no weight limit and Kurgo's tested limit is 75 pounds [[11]](https://ruffwear.com/products/load-up-dog-car-harness) [[13]](https://www.kurgo.com/p/enhanced-strength-dog-car-harness/K01255) | Match the tested weight to your dog |
-| Your state's rules for pets in vehicles | Laws differ by state [[15]](https://magazine.northeast.aaa.com/?p=95415) | State statutes, and a lawyer for advice |
+| Your state's rules for pets in vehicles | Laws differ by state [[14]](https://magazine.northeast.aaa.com/?p=95415) | State statutes, and a lawyer for advice |
 
 ## How sure we are
 
 - **Confirmed by a source we cite:** the CPS crate-study and anchor statements, the ASPCA, CDC and Cornell wording, and each maker's page as quoted. Restraints are manufacturer claims unless a tester is named; Ruffwear names MGA Research, an independent facility by its own description, but the tests were part of Ruffwear's product development.
-- **What most people report:** nothing here rests on reports.
+- **Our reasoning, not reports:** the weight and width figures are arithmetic from maker numbers, and the layout choices are our reading of single-dog evidence.
 - **Unknown:** what any independent test shows for two dogs, and the rows above.
+
+## Before you buy
+
+1. **A tested weight at or above each dog's weight.** Check the maker's figure and any named tester; see the weight section above.
+2. **A crate you can strap down properly.** Choose one sized so the dog can stand, sit, lie down and turn around, and held with strength-rated straps, not rubber ones on a wire crate. [[3]](https://centerforpetsafety.org/2015-crate-study-results/) [[4]](https://www.aspca.org/pet-care/general-pet-care/travel-safety-tips)
+3. **Measured space.** Cargo floor width for two crates, and two good seat belt positions for two harnesses; add up dogs plus crates against the anchors. [[2]](https://centerforpetsafety.org/cargo-area-connection-advisory/)
+4. **A seat cover sized to your bench,** if the dogs ride on it. It protects the upholstery, not the dogs.
 
 ## What to buy first
 
-1. **A restraint for each dog.** Measure the cargo floor width and rear-seat belt positions, add up both dogs and crates, and compare against the tested weights above. For the checks on any harness or crate, use our [car safety guide](/guides/dog-car-safety-harness-and-crate-guide).
-2. **A seat cover sized to your bench,** if they ride there. Browse researched options in our [car-safety gear category](/gear/car-safety).
-3. **The rest of the kit.** Water and bowls from the [packing list tool](/tools/packing-list), and a ramp for a dog that cannot hop up, covered in our [ramp guide](/guides/dog-ramp-or-steps-for-the-car-and-cabin).
-4. **The stay.** When you book, run the [will my dog be accepted tool](/tools/will-my-dog-be-accepted) and read our guide to [how many dogs rentals allow](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental).
+1. **A restraint for each dog, chosen by weight and layout.** Dogs ride in the cargo area: the [Lucky Kennel](https://www.luckyduck.com/products/lucky-kennel) in the size for each dog, after you measure the floor. Dogs ride on the rear seat and are under 75 lb: the [Ruffwear Load Up](https://ruffwear.com/products/load-up-dog-car-harness) or the [Kurgo Tru-Fit](https://www.kurgo.com/p/enhanced-strength-dog-car-harness/K01255), sized by girth and the maker's tested weight. A dog over 75 lb: see the weight check above.
+2. **A seat cover sized to your bench,** if they ride there, such as the [Kurgo Rover Hammock Extended Width](https://kurgo.com/car-seat-covers/dog-hammocks/wander-hammock-extended-width) (63 by 56 in; it protects the seat, not the dogs). More options are in our [car-safety gear category](/gear/car-safety).
+3. **A barrier last, and only if you want a divider:** the [Kurgo Backseat Barrier](https://www.kurgo.com/p/backseat-barrier/K00006) for the rear-seat layout.
+4. **The rest of the kit.** Water and bowls from the [packing list tool](/tools/packing-list), and a ramp for a dog that cannot hop up, covered in our [ramp guide](/guides/dog-ramp-or-steps-for-the-car-and-cabin).
+5. **The stay.** When you book, run the [will my dog be accepted tool](/tools/will-my-dog-be-accepted) and read our guide to [how many dogs rentals allow](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental).

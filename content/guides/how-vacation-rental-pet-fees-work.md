@@ -1,6 +1,6 @@
 ---
 title: "How Vacation Rental Pet Fees Work: Per Night, Per Dog or Per Stay"
-seoTitle: "Vacation Rental Pet Fees: Per Night, Pet or Stay?"
+seoTitle: "Vacation Rental Pet Fees: Per Night or Per Stay?"
 seoDescription: "How vacation rental pet fees work: we read 38 managers, 25 state a fee, 3 charge $0 and 13 name no amount. See the units and price your trip."
 dek: What 38 managers actually charge, how to read the wording, and how to get one total for your dogs and your dates.
 category: Planning
@@ -158,15 +158,15 @@ The decision this page serves: which listing, and what total. To see whether a h
 
 Fees as stated on each manager's public page, 2026-11-18. Many apply only to pet-friendly homes and some vary by property.
 
-| How the fee is written | Managers (examples) | Amounts stated |
+| How the fee is written | Amounts stated | Managers (examples) |
 | --- | --- | --- |
-| Per night | Big Bear Vacations, Tahoe Getaways, Rocky Mountain Resorts, A Blue Ridge Vacation, Cabin Rentals of Georgia | $20 to $50 a night; the last two add a cleaning fee on top |
-| Per pet | Tahoe Vacation Rentals, Bear Camp Cabins, A Blue Ridge Cabin Rental, Rosemary Beach Cottage Rental Company | $75 to $300 per pet |
-| Tiered by pet | My Vacation Haven; St. Simons Island Beach Rentals | $250 first pet, $100 second; $250 first dog, $150 second |
-| Per stay, per reservation or per week | AMI Locals, Sun Realty, Surf or Sound Realty | $250 per stay; $161 to $231 per reservation; $200 per week |
-| Amount given, unit not stated | Tahoe Signature Properties, Emmons Realty, Asheville Cabins of Willow Winds, Cabins USA | $50 to $147 |
-| One-time, by dog size | Hearthside Cabin Rentals | $55, or $75 for a larger dog |
-| $0 | Sliding Rock Cabins, Twiddy & Company, Hapey Cabin Rentals | None on the pages we read |
+| Per night | $20 to $50 a night; A Blue Ridge Vacation and Cabin Rentals of Georgia add a cleaning fee on top | Big Bear Vacations, Tahoe Getaways, Rocky Mountain Resorts, A Blue Ridge Vacation, Cabin Rentals of Georgia |
+| Per pet | $75 to $300 per pet | Tahoe Vacation Rentals, Bear Camp Cabins, A Blue Ridge Cabin Rental, Rosemary Beach Cottage Rental Company |
+| Tiered by pet | $250 first pet, $100 second; $250 first dog, $150 second | My Vacation Haven; St. Simons Island Beach Rentals |
+| Per stay, per reservation or per week | $250 per stay; $161 to $231 per reservation; $200 per week | AMI Locals, Sun Realty, Surf or Sound Realty |
+| Amount given, unit not stated | $50 to $147 | Tahoe Signature Properties, Emmons Realty, Asheville Cabins of Willow Winds, Cabins USA |
+| One-time, by dog size | $55, or $75 for a larger dog | Hearthside Cabin Rentals |
+| $0 | None on the pages we read | Sliding Rock Cabins, Twiddy & Company, Hapey Cabin Rentals |
 
 Two things stand out. First, there is no single average worth quoting: a $25 nightly fee and a $300 per-pet fee are different animals, and a week-long stay can flip which one costs more. Second, the unit often sits in fine print, and the same manager can be read two ways. For example, Elk Springs Resort lists $50 per animal without saying per stay or per night, which is exactly why you ask.
 
@@ -202,34 +202,11 @@ Several managers in our sample describe their fee as nonrefundable, including Ta
 
 Hypothetical example: accommodation $800, ordinary cleaning $120, nonrefundable pet fee $90, and a refundable deposit of $250. The definite expense is $1,010 before taxes. If the deposit is collected, you need $1,260 up front and get $250 back; if it is only a card hold, it is not money paid but it can still shrink the credit available for the trip.
 
-An ordinary cleaning charge and a pet charge can both appear. Airbnb says pet fees should cover the expected cleaning associated with hosting pets and distinguishes that from unexpected damage. [[1]](https://www.airbnb.com/help/article/3623) Several managers pair the two openly: Cabin Rentals of Georgia lists $50 plus a $75 cleaning fee, and A Blue Ridge Vacation lists $20 plus a small cleaning fee. A pet fee does not buy damage coverage; read the agreement and any protection product's terms.
-
-## Protect your deposit: what to pack
-
-A pet fee may not cover damage, so the deposit or a later claim is where a muddy floor or an accident can cost you. In the example above, $250 of refundable deposit sits with the host until they decide nothing needs deducting. Nothing you pack guarantees a clean return, and the host decides what counts as damage. But three items address the usual causes before they reach the carpet or the sofa, and photos of the place when you leave are still your best record.
-
-**Accidents on the floor: for a puppy or an older dog.** A new place can upset a puppy or a senior dog's routine. The Pet Parents Pawtect Pads are machine-washable reusable pads. The maker lists four sizes from 18 x 24 in to 41 x 41 in, two per pack, with a waterproof backing layer and a floor-gripping backing, and says they last hundreds of washes. [[8]](https://petparentsbrand.com/products/washable-puppy-pads) The page does not name the fabric or show warranty terms. Pick the size that fits where the dog will sleep, and wash them before you leave. Skip them if your dog is house-trained and rarely has accidents. This is the one to buy first if a puppy or senior dog is on the booking.
-
-{{pick:pet-parents-pawtect-pads|For puppy or senior-dog accidents|The maker lists machine-washable pads in four sizes (18 x 24 in to 41 x 41 in) with a waterproof layer and a floor-gripping backing, two per pack; it does not state the fabric.|https://petparentsbrand.com/products/washable-puppy-pads}}
-
-**Mud and wet paws at the door.** If the trip is wet, muddy or snowy, the damage risk starts at the entrance. The Soggy Doggy Microfiber Doormat is a chenille mat the maker describes as super absorbent and dirt trapping, in Large (26 x 36 in) and Extra Large (36 x 60 in), with a non-slip backing, machine washable and dryer safe. [[9]](https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate) The page gives no absorbency figure, so it is not a promise about how much water it holds. Ask the host first whether a mat by the door is welcome. Skip it for a dry beach-town stay; buy it first for a muddy cabin week.
-
-{{pick:soggy-doggy-microfiber-doormat|Muddy paws at the door|The maker lists Large (26 x 36 in) and Extra Large (36 x 60 in) with a non-slip backing, and says it is machine washable and dryer safe.|https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate}}
-
-**Drying a wet dog before it reaches the sofa.** The mat catches the paws; the towel handles the rest of the dog. The Super Shammy is a 31 x 14 in microfiber chenille towel with hand pockets, which the page lists as quick drying and machine washable. [[10]](https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey) It is one size and gives no absorbency figure, so it suits a small to medium dog best or serves as a first pass on a bigger one; skip it if you already pack a dog towel. Ask the host where wet dogs may be dried.
-
-{{pick:soggy-doggy-super-shammy-towel|Drying a wet dog|The maker lists a 31 x 14 in microfiber chenille towel with hand pockets that is machine washable; no absorbency figure is given.|https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey}}
-
-### What to buy first
-
-1. Pads, if a puppy or senior dog is coming; skip them otherwise.
-2. The doormat, if the forecast or the setting is muddy.
-3. The towel, if the dog will get wet and the host has no drying spot.
-Pack all three only if all three situations apply. For anything else you might need, see our [rental cleanup gear page](/gear/rental-cleanup).
+An ordinary cleaning charge and a pet charge can both appear. Airbnb says pet fees should cover the expected cleaning associated with hosting pets and distinguishes that from unexpected damage. [[1]](https://www.airbnb.com/help/article/3623) Several managers pair the two openly: Cabin Rentals of Georgia lists $50 plus a $75 cleaning fee, and A Blue Ridge Vacation lists $20 plus a small cleaning fee. A pet fee does not buy damage coverage; read the agreement and any protection product's terms. Ways to lower the deduction risk are in the packing section near the end of this page.
 
 ## How Airbnb and Vrbo display pet fees
 
-Back to the money. To compare a few real listings side by side, you can [start a pet-friendly search on Vrbo](aff:vrbo) and use its pet filter.
+To compare a few real listings side by side, you can [start a pet-friendly search on Vrbo](aff:vrbo) and use its pet filter.
 
 If you are comparing platforms, this is what the official help pages say, and only that. Both are help pages written for hosts and travelers, not records of what any given listing will show.
 
@@ -262,7 +239,7 @@ Ordinary cleaning fees charged to everyone are not an animal surcharge, and serv
 
 ## If a charge surprises you
 
-Save the listing terms, booking price and messages. Ask the host to identify the charge and show the calculation, and check where it was disclosed before you booked. If the explanation conflicts with the booking, contact platform support, and do not pay an unexplained duplicate just to end the conversation. After checkout, ask for an itemized explanation separating ordinary cleaning from alleged damage; our [Airbnb post-checkout damage guide](/guides/airbnb-pet-damage-charge-after-checkout) walks through that. If your dog stayed at a home that said no pets, the penalties are a different story, and the manager's own pet policy sets them.
+Save the listing terms, booking price and messages. Ask the host to identify the charge and show the calculation, and check where it was disclosed before you booked. If the explanation conflicts with the booking, contact platform support, and do not pay an unexplained duplicate just to end the conversation. After checkout, ask for an itemized explanation separating ordinary cleaning from alleged damage; our [Airbnb post-checkout damage guide](/guides/airbnb-pet-damage-charge-after-checkout) walks through that. If you are unsure whether a home accepts your dog, ask before booking; our [how many dogs guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental) quotes the penalties three managers publish.
 
 ## Questions to send before you book
 
@@ -289,3 +266,29 @@ Paying a fee does not override a weight limit, breed restriction, pet-count maxi
 - [ ] Terms and messages are saved.
 
 Add the money tasks to the [trip checklist](/tools/checklist). Once you know the formula, the final expense and the temporary money required, a pet fee is a comparison, not a checkout surprise.
+
+Ready to compare totals? [Start a pet-friendly search on Vrbo](aff:vrbo) and enter your exact dogs and dates.
+
+## Protect your deposit: what to pack
+
+A pet fee may not cover damage, so the deposit or a later claim is where a muddy floor or an accident can cost you. In the example above, $250 of refundable deposit sits with the host until they decide nothing needs deducting. Nothing you pack guarantees a clean return, and the host decides what counts as damage. But three items address the usual causes before they reach the carpet or the sofa, and photos of the place when you leave are still your best record.
+
+**Accidents on the floor: for a puppy or an older dog.** A new place can upset a puppy or a senior dog's routine. The Pet Parents Pawtect Pads are machine-washable reusable pads. The maker lists four sizes from 18 x 24 in to 41 x 41 in, two per pack, with a waterproof backing layer and a floor-gripping backing, and says they last hundreds of washes. [[8]](https://petparentsbrand.com/products/washable-puppy-pads) The page does not name the fabric or show warranty terms. The link on this page is the smallest pack (18 x 24 in), so pick the size that fits where the dog will sleep on the listing before you order, and wash them before you leave. Skip them if your dog is house-trained and rarely has accidents.
+
+{{pick:pet-parents-pawtect-pads|For puppy or senior-dog accidents|The maker lists machine-washable pads in four sizes (18 x 24 in to 41 x 41 in) with a waterproof layer and a floor-gripping backing, two per pack; it does not state the fabric.|https://petparentsbrand.com/products/washable-puppy-pads}}
+
+**Mud and wet paws at the door.** If the trip is wet, muddy or snowy, the damage risk starts at the entrance. The Soggy Doggy Microfiber Doormat is a chenille mat the maker describes as super absorbent and dirt trapping, in Large (26 x 36 in) and Extra Large (36 x 60 in), with a non-slip backing, machine washable and dryer safe. [[9]](https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate) The page gives no absorbency figure, so it is not a promise about how much water it holds. Ask the host first whether a mat by the door is welcome. Skip it for a dry beach-town stay.
+
+{{pick:soggy-doggy-microfiber-doormat|Muddy paws at the door|The maker lists Large (26 x 36 in) and Extra Large (36 x 60 in) with a non-slip backing, and says it is machine washable and dryer safe.|https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate}}
+
+**Drying a wet dog before it reaches the sofa.** The mat catches the paws; the towel handles the rest of the dog. The Super Shammy is a 31 x 14 in microfiber chenille towel with hand pockets, which the page lists as quick drying and machine washable. [[10]](https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey) It is one size and gives no absorbency figure, so it suits a small to medium dog best or serves as a first pass on a bigger one; skip it if you already pack a dog towel. Ask the host where wet dogs may be dried.
+
+{{pick:soggy-doggy-super-shammy-towel|Drying a wet dog|The maker lists a 31 x 14 in microfiber chenille towel with hand pockets that is machine washable; no absorbency figure is given.|https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey}}
+
+### What to buy first
+
+1. Pads, if a puppy or senior dog is coming; skip them otherwise.
+2. The doormat, if the forecast or the setting is muddy.
+3. The towel, if the dog will get wet and the host has no drying spot.
+
+Pack all three only if all three situations apply. For anything else you might need, see our [rental cleanup gear page](/gear/rental-cleanup).

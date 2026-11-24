@@ -13,3 +13,10 @@
 - Same-anchor issue in other guides ("Airbnb vs Vrbo guide" pointing here) noted in FIX-how-many-dogs file.
 - Pin row: suggest echoing "How vacation rental pet fees work".
 - Mobile: the 3-column manager table is still tall; I did not shorten example names.
+
+## Round 3
+- Cleanup-gear section moved to the end (after the closing paragraph), with a pointer in the deposits section; "Back to the money." removed.
+- seoTitle now "Vacation Rental Pet Fees: Per Night or Per Stay?" (47 chars). Amount column is first in the fee table; the cleaning-fee remark now names the two managers.
+- Added a second Vrbo search link (aff:vrbo) before the gear section; replaced the vague no-pets sentence with a link to the how-many-dogs guide.
+- Removed per-card "buy first" lines (kept once in the final list). Pawtect Pads text now says the link is the smallest 18x24 pack.
+- No product removed. For the lead: the fee table still has long example lists in column three (not trimmed, to keep the per-night cleaning-fee claim verifiable).

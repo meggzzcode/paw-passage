@@ -18,3 +18,11 @@
 ## For the lead
 - Hero `guide-loose-dog`: nothing off-topic was checked by me.
 - Pin row 14 (docs/pinterest-pins.csv): title should be "Dog Got Loose on Vacation: The First Hour, ID and Prevention" and the description should echo "dog got loose on vacation" (use the new seoDescription).
+
+## Round 3
+- Dek carries the urgent action; opening line adds "ran away on vacation / lost dog on a trip" phrasing.
+- Tag: no catalog tag product exists, so the page now says honestly it is a cheap local purchase with no link (in "The tag" and in "What to buy first"); trackers stay the product picks.
+- FAQ cut from 8 to 6 (removed the two microchip questions; the chip-is-not-a-tracker point moved into the ID table row).
+- Fireworks section cut to the Cornell advice plus the NYE guide link; removed the now-uncited Utrecht, Petco and Petbook sources and renumbered citations (20 sources, all cited).
+- Removed battery restatements from the three tracker paragraphs (table keeps them); "buy first/start with" wording trimmed so it appears only in the final list; "tested" changed to "included in a round-up" for Tree Line.
+- For the lead: spec-card icons remain a template item. readingMinutes left at 14.

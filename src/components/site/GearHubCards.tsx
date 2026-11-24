@@ -5,6 +5,7 @@ import { relFor, resolveProductLink } from "@/content/gear-links";
 import { guidePickFor } from "@/content/gear-hub";
 import { getGuide } from "@/content/guides";
 import { isPublic } from "@/content/guides";
+import { productTitle } from "@/lib/product-display";
 import { trackProductClick } from "@/lib/analytics";
 
 /**
@@ -40,9 +41,7 @@ export function GearProductCard({ product }: { product: Product }) {
   return (
     <li id={product.id} className="scroll-mt-24 rounded-xl border border-border bg-card p-6">
       {pick && <p className="eyebrow">{pick.bestFor}</p>}
-      <h3 className="mt-2 text-2xl">
-        {product.brand} {product.name}
-      </h3>
+      <h3 className="mt-2 text-2xl">{productTitle(product)}</h3>
       <p className="mt-3 text-muted-foreground">{product.summary}</p>
       {pick && <p className="mt-3">{pick.whyItMadeTheList}</p>}
       <p className="mt-3 text-sm font-medium">What the maker states</p>

@@ -1,6 +1,7 @@
 import { Link, useLocation } from "@tanstack/react-router";
 import { getProducts } from "@/content/gear";
 import { resolveProductLink } from "@/content/gear-links";
+import { productTitle } from "@/lib/product-display";
 import { GearDisclosure } from "@/components/site/GearHubCards";
 import { trackProductClick } from "@/lib/analytics";
 import { isMonetized } from "@/content/affiliate-usage";
@@ -15,14 +16,18 @@ import { PRODUCT_CALLOUTS_REQUIRE_AFFILIATE_LINK } from "@/content/publish-rule"
 export function RelatedProducts({
   productIds,
   heading = "Gear for this trip",
+  excludeIds = [],
 }: {
   productIds: string[];
   heading?: string;
+  /** Products already shown as pick cards in the article: skipped here, and the block hides if none are left. */
+  excludeIds?: string[];
 }) {
   const loc = useLocation();
   const items = getProducts(productIds ?? [])
     .filter((p) => !PRODUCT_CALLOUTS_REQUIRE_AFFILIATE_LINK || isMonetized(p))
-    .slice(0, 4);
+    .slice(0, 4)
+    .filter((p) => !excludeIds.includes(p.id));
   if (items.length === 0) return null;
   return (
     <section className="no-print mt-16" aria-labelledby="related-products">
@@ -42,9 +47,7 @@ export function RelatedProducts({
           const cat = p.categories?.[0];
           return (
             <li key={p.id} className="rounded-xl border border-border bg-card p-5">
-              <h3 className="text-xl">
-                {p.brand} {p.name}
-              </h3>
+              <h3 className="text-xl">{productTitle(p)}</h3>
               <p className="mt-3 text-sm text-muted-foreground">{p.summary}</p>
               <div className="mt-3 flex flex-wrap items-center gap-3 text-sm">
                 {cat && (

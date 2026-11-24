@@ -37,6 +37,7 @@ import { getApprovedLink, isAmazon, AMAZON_DISCLOSURE } from "@/content/affiliat
 import { productButton, productLinkId } from "@/content/affiliate-usage";
 import { packPhoto, packPhotoCredits } from "@/lib/pack-images";
 import { trackProductClick, trackTool, trackToolOnce } from "@/lib/analytics";
+import { productTitle } from "@/lib/product-display";
 
 const TOOL = "packing-builder";
 const KEY = "pp.packing.v1";
@@ -456,9 +457,7 @@ function Popover({
             const aff = btn?.kind === "affiliate";
             return (
               <div key={p.id}>
-                <p className="font-medium leading-tight">
-                  {p.brand} {p.name}
-                </p>
+                <p className="font-medium leading-tight">{productTitle(p)}</p>
                 <p className="text-muted-foreground">{p.summary}</p>
                 {btn && (
                   <a

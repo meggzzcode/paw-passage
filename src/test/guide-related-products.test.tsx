@@ -4,7 +4,8 @@ import { renderToString } from "react-dom/server";
 import { describe, expect, it } from "vitest";
 import { routeTree } from "@/routeTree.gen";
 import { guideSchema, relatedProductProblems } from "@/content/schema";
-import { allGuides, loadGuide } from "@/content/guides";
+import { allGuides, isPublic, loadGuide } from "@/content/guides";
+import { pickIdsInBody } from "@/lib/product-display";
 import { products, getProducts } from "@/content/gear";
 import { isMonetized } from "@/content/affiliate-usage";
 
@@ -44,7 +45,24 @@ describe("guide page section", () => {
     return renderToString(<RouterProvider router={router} />);
   }
   it("loadGuide carries the field and the page renders the section after the sources and before Keep reading", async () => {
-    const slug = "dog-car-safety-harness-and-crate-guide";
+    // Products that already have a pick card in the article body are not repeated in this block.
+    const cand = allGuides.find((x) => {
+      const body = pickIdsInBody(x.body);
+      return (
+        isPublic(x) &&
+        getProducts(x.relatedProducts ?? [])
+          .filter(isMonetized)
+          .slice(0, 4)
+          .some((p) => !body.includes(p.id) && !(x.gear ?? []).some((y) => y.productId === p.id))
+      );
+    });
+    if (!cand) {
+      // Every guide's gear is already shown as pick cards in its body, so no guide repeats it in a block.
+      const html = await render("dog-car-safety-harness-and-crate-guide");
+      expect(html).not.toContain("Gear for this trip");
+      return;
+    }
+    const slug = cand.slug;
     const g = await loadGuide(slug);
     expect(g?.relatedProducts?.length).toBeGreaterThan(0);
     const html = await render(slug);
@@ -52,7 +70,11 @@ describe("guide page section", () => {
     expect(html).not.toContain("not tested by us");
     expect(html).toContain('href="/gear"');
     // The section lists only products that can earn; its first card names that product's brand.
-    const shown = getProducts(g!.relatedProducts ?? []).filter(isMonetized);
+    const inBody = pickIdsInBody(g!.body);
+    const shown = getProducts(g!.relatedProducts ?? [])
+      .filter(isMonetized)
+      .slice(0, 4)
+      .filter((p) => !inBody.includes(p.id) && !(g!.gear ?? []).some((y) => y.productId === p.id));
     expect(shown.length).toBeGreaterThan(0);
     expect(html).toContain(shown[0]!.brand);
     const sources = html.indexOf("Sources and how we researched this");

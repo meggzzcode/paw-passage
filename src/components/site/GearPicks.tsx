@@ -3,6 +3,7 @@ import { liveCategoryFor } from "@/content/gear-hub";
 import { AMAZON_DISCLOSURE, getApprovedLink, isAmazon } from "@/content/affiliates";
 import { getProduct, type GearPick } from "@/content/gear";
 import { trackProductClick } from "@/lib/analytics";
+import { productTitle } from "@/lib/product-display";
 import { productLinkId, productButton, isMonetized } from "@/content/affiliate-usage";
 import { PRODUCT_CALLOUTS_REQUIRE_AFFILIATE_LINK } from "@/content/publish-rule";
 
@@ -13,11 +14,19 @@ export function hasAffiliateLinks(picks: GearPick[]) {
   );
 }
 
-export function GearPicks({ picks }: { picks: GearPick[] }) {
+export function GearPicks({
+  picks,
+  excludeIds = [],
+}: {
+  picks: GearPick[];
+  /** Products that already have a pick card in the article body: not repeated here. */
+  excludeIds?: string[];
+}) {
   const loc = useLocation();
   const rows = picks
     .map((pick) => ({ pick, product: getProduct(pick.productId) }))
     .filter((r) => !!r.product)
+    .filter((r) => !excludeIds.includes(r.pick.productId))
     .filter((r) => !PRODUCT_CALLOUTS_REQUIRE_AFFILIATE_LINK || isMonetized(r.product!));
   if (rows.length === 0) return null;
   const links = rows.map((r) => getApprovedLink(productLinkId(r.product!)));
@@ -45,9 +54,7 @@ export function GearPicks({ picks }: { picks: GearPick[] }) {
           return (
             <li key={pick.productId} className="rounded-xl border border-border bg-card p-6">
               <p className="eyebrow">{pick.bestFor}</p>
-              <h3 className="mt-2 text-2xl">
-                {product!.brand} {product!.name}
-              </h3>
+              <h3 className="mt-2 text-2xl">{productTitle(product!)}</h3>
               <p className="mt-2 text-muted-foreground">{product!.summary}</p>
               <p className="mt-3">{pick.whyItMadeTheList}</p>
               <ul className="mt-3 list-disc pl-5 text-sm">

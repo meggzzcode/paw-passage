@@ -96,7 +96,7 @@ export function TrustStrip({
     </>,
     n > 0 ? (
       <>
-        {n} official {n === 1 ? "source" : "sources"}
+        {n} {n === 1 ? "source" : "sources"} cited
       </>
     ) : null,
     affiliateUsage(guide).count > 0 ? <>Affiliate links disclosed</> : null,

@@ -6,6 +6,7 @@ import { getProduct } from "@/content/gear";
 import { resolveProductLink } from "@/content/gear-links";
 import { isMonetized } from "@/content/affiliate-usage";
 import { PRODUCT_CALLOUTS_REQUIRE_AFFILIATE_LINK } from "@/content/publish-rule";
+import { productTitle, defaultPickLabel } from "@/lib/product-display";
 import { linkProductMentions, type ProductLinkToken } from "@/lib/product-text-links";
 
 const escapeHtml = (s: string) =>
@@ -101,8 +102,8 @@ marked.use({
             ? ` data-aff="${escapeHtml(product.affiliateId ?? product.id)}" data-partner="${escapeHtml(link.network ?? "")}"`
             : "";
         return `<aside class="no-print not-prose my-8 rounded-xl border border-border bg-secondary/50 p-5" data-pick="${escapeHtml(product.id)}">
-<p class="text-xs font-semibold uppercase tracking-[0.14em] text-terracotta">${escapeHtml(t.label || "Our pick")}</p>
-<p class="mt-1 font-display text-xl">${escapeHtml(`${product.brand} ${product.name}`)}</p>
+<p class="text-xs font-semibold uppercase tracking-[0.14em] text-terracotta">${escapeHtml(t.label && t.label.toLowerCase() !== "our pick" ? t.label : defaultPickLabel(product))}</p>
+<p class="mt-1 font-display text-xl">${escapeHtml(productTitle(product))}</p>
 <p class="mt-2 text-sm text-muted-foreground">${escapeHtml(product.summary)}</p>${t.note ? `\n<p class="mt-2 text-sm"><span class="font-medium">Why we picked it:</span> ${escapeHtml(t.note)}${t.sourceUrl ? ` <a href="${escapeHtml(t.sourceUrl)}" target="_blank" rel="noopener noreferrer" class="underline">Source</a>` : ""}</p>` : ""}
 <p class="mt-4 flex flex-wrap items-center gap-4"><a${attrs} href="${escapeHtml(link.url)}" target="_blank" rel="${escapeHtml(link.rel)}" class="inline-flex h-10 items-center rounded-full bg-terracotta-button px-5 text-sm font-medium text-terracotta-foreground hover:brightness-95">${escapeHtml(link.label)}</a>${cat ? `<a href="/gear/${escapeHtml(cat)}#${escapeHtml(product.id)}" class="text-sm underline">Details and specs</a>` : ""}</p>
 <p class="mt-3 text-xs text-muted-foreground">Check the current price on the listing before you buy.</p>
@@ -179,7 +180,12 @@ export function Markdown({ source, className }: { source: string; className?: st
   const html = marked
     .parser(tokens)
     // Wide tables scroll sideways inside their own box instead of widening the page on phones.
-    .replace(/<table>/g, '<div class="table-scroll max-w-full overflow-x-auto"><table>')
+    .replace(
+      /<table>/g,
+      '<p class="table-swipe-hint no-print" aria-hidden="true">Swipe sideways to see all columns</p><div class="table-scroll max-w-full overflow-x-auto" tabindex="0" role="region" aria-label="Table, scrolls sideways"><table>',
+    )
+    // A task-list item shows its checkbox, not a bullet as well.
+    .replace(/<li><input (checked=""\s)?disabled=""/g, '<li class="task-item"><input $1disabled=""')
     .replace(/<\/table>/g, "</table></div>")
     .replace(
       /<a href="(https?:\/\/[^"]+)"/g,

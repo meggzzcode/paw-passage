@@ -11,6 +11,7 @@ import { PreviewBadge } from "@/components/site/StatusBadge";
 import { pageHead, breadcrumbLd, jsonLd, absoluteUrl, isoDate } from "@/lib/seo";
 import { site } from "@/config/site";
 import { TableOfContents } from "@/components/site/TableOfContents";
+import { pickIdsInBody } from "@/lib/product-display";
 import { ArticleActions, TrustStrip } from "@/components/site/ArticleActions";
 
 const toolLabels = {
@@ -77,6 +78,8 @@ function GuidePage() {
   const img = guideHero(g);
   const headings = articleHeadings(g.body);
   const tools = g.relatedTools;
+  const inBody = pickIdsInBody(g.body);
+  const shownAsPicks = [...inBody, ...(g.gear ?? []).map((x) => x.productId)];
   const related = g.relatedGuides
     .map((s) => getGuide(s))
     .filter((x) => !!x)
@@ -131,7 +134,7 @@ function GuidePage() {
           <AffiliateNotice guide={g} />
           <TableOfContents headings={headings} variant="mobile" />
           <Markdown source={g.body} />
-          {g.gear && g.gear.length > 0 && <GearPicks picks={g.gear} />}
+          {g.gear && g.gear.length > 0 && <GearPicks picks={g.gear} excludeIds={inBody} />}
           {g.faqs.length > 0 && (
             <section className="mt-16">
               <h2 className="text-3xl">Questions people ask</h2>
@@ -227,7 +230,7 @@ function GuidePage() {
             </ol>
           </section>
           {g.relatedProducts && g.relatedProducts.length > 0 && (
-            <RelatedProducts productIds={g.relatedProducts} />
+            <RelatedProducts productIds={g.relatedProducts} excludeIds={shownAsPicks} />
           )}
         </div>
         <aside className="no-print hidden space-y-6 lg:block lg:sticky lg:top-24 lg:self-start">

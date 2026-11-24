@@ -168,7 +168,18 @@
   & li::marker { color: var(--terracotta); }
   & strong { font-weight: 600; }
   & blockquote { border-left: 3px solid var(--terracotta); padding: 0.25em 0 0.25em 1.1em; font-family: var(--font-display); font-size: 1.2rem; color: var(--muted-foreground); }
-  & table { width: 100%; border-collapse: collapse; font-size: 0.95rem; display: block; overflow-x: auto; }
+  & table { width: 100%; min-width: 34rem; border-collapse: collapse; font-size: 0.95rem; }
+  & th, & td { min-width: 7.5rem; }
+  & .table-scroll { max-width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; margin-top: 0.5em;
+    /* Edge shadows appear only on the side that has more to scroll to. */
+    background:
+      linear-gradient(to right, var(--background) 30%, transparent) left center / 2.5rem 100% no-repeat local,
+      linear-gradient(to left, var(--background) 30%, transparent) right center / 2.5rem 100% no-repeat local,
+      radial-gradient(farthest-side at 0 50%, rgb(0 0 0 / 0.22), transparent) left center / 0.9rem 100% no-repeat scroll,
+      radial-gradient(farthest-side at 100% 50%, rgb(0 0 0 / 0.22), transparent) right center / 0.9rem 100% no-repeat scroll; }
+  & .table-swipe-hint { display: none; font-size: 0.75rem; color: var(--muted-foreground); margin-bottom: -0.6em; }
+  @media (max-width: 40rem) { & .table-swipe-hint { display: block; } }
+  & li.task-item { list-style: none; margin-left: -1.4em; }
   & th { text-align: left; font-weight: 600; background: var(--muted); }
   & th, & td { border: 1px solid var(--border); padding: 0.6em 0.8em; vertical-align: top; }
   & hr { border: 0; border-top: 1px solid var(--border); margin: 2.5em 0; }

@@ -11,7 +11,7 @@ const base = { lastReviewed: "2026-11-16", sources: [{}, {}], body: "plain", gea
 describe("article UX", () => {
   it("wraps tables in a scroll container", () => {
     const out = renderToStaticMarkup(<Markdown source={src} />);
-    expect(out).toMatch(/<div class="table-scroll[^"]*overflow-x-auto"><table>/);
+    expect(out).toMatch(/<div class="table-scroll[^"]*overflow-x-auto"[^>]*><table>/);
   });
   it("gives headings unique, stable ids", () => {
     const ids = articleHeadings(src).map((h) => h.id);
@@ -35,7 +35,7 @@ describe("article UX", () => {
     const planning = renderToStaticMarkup(<TrustStrip guide={{ ...base, category: "Planning" }} />);
     expect(planning).not.toContain("Not tested");
     expect(planning).toContain("Nov 16, 2026");
-    expect(planning).toContain("2 official sources");
+    expect(planning).toContain("2 sources cited");
     expect(planning).not.toContain("Affiliate");
   });
 });

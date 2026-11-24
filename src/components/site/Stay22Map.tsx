@@ -34,8 +34,8 @@ export function Stay22Map({
           dog policy checker
         </Link>{" "}
         and the{" "}
-        <Link to="/tools/pet-cost-check" className="text-primary underline">
-          pet cost and host confirmation tool
+        <Link to="/tools/checklist" className="text-primary underline">
+          before-you-book checklist
         </Link>{" "}
         first.
       </p>

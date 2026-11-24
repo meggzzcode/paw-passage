@@ -5,15 +5,17 @@ The site sends a few anonymous usage events to Google Analytics 4 (only when a m
 ## Events
 | Event | Meaning | tool_name values |
 |---|---|---|
-| `tool_start` | Visitor first touched a tool | `pet-cost-workflow`, `checklist` |
-| `tool_complete` | Visitor got a result. `tool_label` says which (`total` or `message`) | `pet-cost-workflow` |
-| `tool_copy` | Copied the summary or message | `pet-cost-workflow` |
-| `tool_print` | Printed | `pet-cost-workflow`, `checklist` |
+| `tool_start` | Visitor first touched a tool | `checklist` |
+| `tool_complete` | Visitor got a result | (none now) |
+| `tool_copy` | Copied the summary or message | (none now) |
+| `tool_print` | Printed | `checklist` |
 | `rules_search` | Used the dog-rules search or filters (`tool_label` is the filter name, never the typed text) | `dog-rules` |
 | `rules_view` | Opened a place's rules page | `dog-rules` |
 | `rules_source_click` | Clicked through to the official source | `dog-rules` |
 
 Each event also carries `page_path`, `tool_label` and `item_count`.
+
+The `pet-cost-workflow` tool was removed on 2026-11-24; its events no longer fire.
 
 ## Reading them in Google Analytics
 1. Admin > Data display > Custom definitions > create custom dimensions (scope: Event) for `tool_name` and `tool_label`. Events are recorded without this, but you cannot report on those fields until the dimensions exist.

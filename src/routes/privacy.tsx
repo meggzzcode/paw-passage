@@ -18,7 +18,7 @@ export const Route = createFileRoute("/privacy")({
 
 ## Information you type into our tools
 
-Our tools, including the checklist, the packing list, the stay cost calculator and the pet cost and host confirmation tool, run entirely in your browser. What you enter is **not sent to us**. The checklist and packing list save your ticks and choices in your browser's local storage on your device only; you can clear it with the Reset button or your browser settings.
+Our tools, including the checklist, the packing list and the dog policy checker, run entirely in your browser. What you enter is **not sent to us**. The checklist and packing list save your ticks and choices in your browser's local storage on your device only; you can clear it with the Reset button or your browser settings.
 
 ## Analytics
 

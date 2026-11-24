@@ -63,15 +63,8 @@ export const guideSchema = z.object({
   // Product ids from content/products.yml shown as "Gear for this trip" after the article. Unknown ids stop the build.
   relatedProducts: z.array(nonEmpty).max(4, "can list at most 4 products").default([]),
   relatedTools: z
-    .array(z.enum(["checklist", "pet-cost-check", "will-my-dog-be-accepted", "packing-list"]))
+    .array(z.enum(["checklist", "will-my-dog-be-accepted", "packing-list"]))
     .default([]),
-  // An interactive tool shown inside the article, after the text. Unknown names stop the build.
-  embeddedTool: z
-    .enum(["pet-cost-workflow"], {
-      message:
-        'must be "pet-cost-workflow" (the only tool that can be shown inside an article), or left empty',
-    })
-    .optional(),
   gear: z
     .array(
       z.object({

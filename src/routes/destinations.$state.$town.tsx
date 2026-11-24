@@ -108,8 +108,8 @@ function TownPage() {
           <p className="font-display text-xl">Plan it properly</p>
           <ul className="mt-4 space-y-2 text-sm">
             <li>
-              <Link to="/tools/pet-cost-check" className="text-primary underline">
-                Work out the true cost and get questions for your host
+              <Link to="/tools/checklist" className="text-primary underline">
+                Get a checklist of questions for your host
               </Link>
             </li>
             <li>

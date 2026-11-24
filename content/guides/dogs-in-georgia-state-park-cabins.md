@@ -38,7 +38,6 @@ relatedProducts:
   - springland-22oz-original-travel-bottle
   - ruffwear-quencher-bowl
 relatedTools:
-  - pet-cost-check
   - will-my-dog-be-accepted
   - checklist
 sources:
@@ -278,4 +277,4 @@ Animal of Things (August 13, 2026) says the fee applies at booking, where the pa
 
 ## Your next step
 
-Browse dog-friendly options in our [stays directory](/stays), then price the trip with the [pet cost check](/tools/pet-cost-check) and run the [will my dog be accepted tool](/tools/will-my-dog-be-accepted). Add the confirmation to your [trip checklist](/tools/checklist).
+Browse dog-friendly options in our [stays directory](/stays), then read our [pet fees guide](/guides/how-vacation-rental-pet-fees-work) to price the trip and run the [will my dog be accepted tool](/tools/will-my-dog-be-accepted). Add the confirmation to your [trip checklist](/tools/checklist).

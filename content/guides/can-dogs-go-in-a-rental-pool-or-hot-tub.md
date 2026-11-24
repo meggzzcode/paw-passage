@@ -37,7 +37,6 @@ relatedProducts:
   - adventure-medical-kits-dog-wipes
 relatedTools:
   - will-my-dog-be-accepted
-  - pet-cost-check
   - checklist
 sources:
   - title: Pet friendly
@@ -197,17 +196,17 @@ In our reading of 38 vacation rental managers' public pet pages, 7 say something
 
 ## What the seven pages say
 
-Quotes are as written on each live page, re-read on 2026-11-18. Where a page does not mention a hot tub or spa, the table says so.
+Quotes are as written on each live page, re-read on 2026-11-18. The last column says whether the quoted sentence names a hot tub or spa.
 
-| Manager | What the page says | Hot tub or spa |
+| Manager | What the page says | Does it name a hot tub or spa? |
 | --- | --- | --- |
-| Newman-Dailey Resort Properties | "Dogs are not permitted on the beach or in the pool area and must be on a leash when outside per county regulations." [[1]](https://www.destinvacation.com/pet-friendly) | Not stated in that sentence |
-| My Vacation Haven | "Pets are not allowed in the pool or hot tub." [[2]](https://www.myvacationhaven.com/pet-policy) | Named |
-| Brindley Beach Vacations | "Dogs are not allowed to swim in the pool or the hot tub – additional cleaning may be needed and a charge may apply." [[3]](https://www.brindleybeach.com/node/3691) | Named |
-| Sun Realty | "Pets are not permitted in pools or hot tubs." [[4]](https://www.sunrealtync.com/node/1163) | Named |
-| Beach Realty & Construction | "No dogs are allowed in the pool or hot tub." [[5]](https://www.beachrealtync.com/node/707) | Named |
-| Surf or Sound Realty | "All dogs, including approved dogs, are strictly prohibited in the pool and spa." [[6]](https://www.surforsound.com/vacation-planning/rental-policies/) | Named (spa) |
-| Twiddy & Company (blog, one home) | At Sunnybuns: "You can enjoy the pool, but your dogs will have to save their water time for the ocean!" [[7]](https://blog.twiddy.com/bring-your-pets-on-vacation/) | Not stated |
+| Newman-Dailey Resort Properties | "Dogs are not permitted on the beach or in the pool area and must be on a leash when outside per county regulations." [[1]](https://www.destinvacation.com/pet-friendly) | No: it says "pool area" only |
+| My Vacation Haven | "Pets are not allowed in the pool or hot tub." [[2]](https://www.myvacationhaven.com/pet-policy) | Yes: hot tub |
+| Brindley Beach Vacations | "Dogs are not allowed to swim in the pool or the hot tub – additional cleaning may be needed and a charge may apply." [[3]](https://www.brindleybeach.com/node/3691) | Yes: hot tub |
+| Sun Realty | "Pets are not permitted in pools or hot tubs." [[4]](https://www.sunrealtync.com/node/1163) | Yes: hot tubs |
+| Beach Realty & Construction | "No dogs are allowed in the pool or hot tub." [[5]](https://www.beachrealtync.com/node/707) | Yes: hot tub |
+| Surf or Sound Realty | "All dogs, including approved dogs, are strictly prohibited in the pool and spa." [[6]](https://www.surforsound.com/vacation-planning/rental-policies/) | Yes: spa |
+| Twiddy & Company (blog, one home) | At Sunnybuns: "You can enjoy the pool, but your dogs will have to save their water time for the ocean!" [[7]](https://blog.twiddy.com/bring-your-pets-on-vacation/) | No: this sentence is about the pool only (Twiddy's pet page, below, names hot tubs) |
 
 Two details matter. First, Surf or Sound's wording covers "approved dogs", so being on the accepted list is not the same as being welcome in the water. Second, Newman-Dailey's sentence says "pool area", which reads wider than the water itself; it does not mention hot tubs in that sentence.
 
@@ -296,4 +295,4 @@ So a swim in a banned pool is a plausible trigger for an extra cleaning request.
 
 ## What to buy first
 
-Nothing for the pool: a towel and an entry mat first, then a cooling pad if the trip is in hot weather. Add them to the [packing list tool](/tools/packing-list), see the [cabin packing guide](/guides/dog-friendly-cabin-packing-list) for the rest. Before you pay for a rental with water in the yard, run your dog through the [will my dog be accepted tool](/tools/will-my-dog-be-accepted), price the stay with the [pet cost check](/tools/pet-cost-check), and add "pool and hot tub rule, confirmed in writing" to your [trip checklist](/tools/checklist). If the answer is no, the dog still has a good option: ask where the nearest dog-friendly water is. Our guide to [leaving a dog alone in a rental](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental) helps with the hours you spend away from the pool.
+Nothing for the pool: a towel and an entry mat first, then a cooling pad if the trip is in hot weather. Add them to the [packing list tool](/tools/packing-list), see the [cabin packing guide](/guides/dog-friendly-cabin-packing-list) for the rest. Before you pay for a rental with water in the yard, run your dog through the [will my dog be accepted tool](/tools/will-my-dog-be-accepted), check the total with our [pet fees guide](/guides/how-vacation-rental-pet-fees-work), and add "pool and hot tub rule, confirmed in writing" to your [trip checklist](/tools/checklist). If the answer is no, the dog still has a good option: ask where the nearest dog-friendly water is. Our guide to [leaving a dog alone in a rental](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental) helps with the hours you spend away from the pool.

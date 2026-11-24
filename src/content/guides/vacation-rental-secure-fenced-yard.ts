@@ -114,7 +114,7 @@ Send one organized request and save the response with the listing, travel dates 
 - [ ] A layout showing separation from pools, roads, and parking.
 - [ ] Written disclosure of damage, repairs, or changes since the photos.
 
-Use our [host-question builder](/tools/pet-cost-check). Ask for observable facts, not guarantees.
+Use our [before-you-book checklist](/tools/checklist). Ask for observable facts, not guarantees.
 
 ## Make a decision without false precision
 
@@ -159,7 +159,7 @@ If the yard does not match the description, photograph the issue, tell the host 
 
 ## Next step
 
-Save your arrival checks in the [travel checklist](/tools/checklist), price the stay in the [pet cost and host confirmation tool](/tools/pet-cost-check), and check your dog against the host's rules with [will my dog be accepted](/tools/will-my-dog-be-accepted). Then browse [dog-friendly stays](/stays) and filter for a confirmed fenced yard. The aim is a yard whose limits you understand, with gates managed consistently and a dog you keep supervising.`,
+Save your arrival checks in the [travel checklist](/tools/checklist), read our [pet fees guide](/guides/how-vacation-rental-pet-fees-work) for the total, and check your dog against the host's rules with [will my dog be accepted](/tools/will-my-dog-be-accepted). Then browse [dog-friendly stays](/stays) and filter for a confirmed fenced yard. The aim is a yard whose limits you understand, with gates managed consistently and a dog you keep supervising.`,
   faqs: [
     {
       q: "What fence height is safe for a vacation rental with a dog?",
@@ -194,7 +194,7 @@ Save your arrival checks in the [travel checklist](/tools/checklist), price the 
     "carlson-convertible-pet-yard",
     "ruffwear-knot-a-leash",
   ],
-  relatedTools: ["checklist", "pet-cost-check"],
+  relatedTools: ["checklist"],
   sources: [
     {
       title: "What Type of Dog Fence Should I Have?",

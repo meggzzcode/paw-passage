@@ -36,7 +36,6 @@ relatedGuides:
 relatedTools:
   - will-my-dog-be-accepted
   - checklist
-  - pet-cost-check
 sources:
   - title: Searching for pet-friendly places
     url: https://www.airbnb.com/help/article/86
@@ -233,4 +232,4 @@ Copy and paste, then edit: "Before I book [dates], can you confirm in writing th
 
 ## Your next step
 
-Pick one listing and run your dog through the [Will my dog be accepted? tool](/tools/will-my-dog-be-accepted). Then use the [trip checklist](/tools/checklist) for the questions and the [pet cost check](/tools/pet-cost-check) for the total.
+Pick one listing and run your dog through the [Will my dog be accepted? tool](/tools/will-my-dog-be-accepted). Then use the [trip checklist](/tools/checklist) for the questions and our [pet fees guide](/guides/how-vacation-rental-pet-fees-work) for the total.

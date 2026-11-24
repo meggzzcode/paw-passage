@@ -29,7 +29,7 @@ Trade-off the owner should know: waiting 3 to 6 months for real traffic data wou
 | 8 | Seller IDs live in the site (GA4, Amazon tag, 33 Vrbo deeplinks, Impact tag, Search Console file) | audit-legal-transfer | Closing (buyer swaps) | Documented |
 Corrections to claims: the legal-audit worker's "zero stays live" is wrong; 32 stays are listed (live `/stays` has 33 stay links, sitemap has 24 `/stays` URLs). The Vrbo wiring is real but non-transferable.
 Not blockers (P2): GA4 sets cookies with no consent banner (privacy page discloses GA4); 5 guide titles over 65 characters; a long `/stays` meta description; 8 external sources behind redirect chains; Unsplash image URLs bot-blocked in link checks; no "Powered by Netlify" badge (good).
-Verified good: 98 of 98 sitemap URLs return 200 with canonical, one title, JSON-LD and no stray noindex; four tools work end to end; Amazon links are direct `dp` links with the tag and `rel="sponsored nofollow noopener"`; mobile and desktop pass with no console errors; lab LCP 1.95 s home and 1.19 s guide on Slow-4G plus 4x CPU (lab only); tests 486 of 486; build passes.
+Verified good: 98 of 98 sitemap URLs return 200 with canonical, one title, JSON-LD and no stray noindex; the tools worked end to end (the pet cost check was removed on 2026-11-24); Amazon links are direct `dp` links with the tag and `rel="sponsored nofollow noopener"`; mobile and desktop pass with no console errors; lab LCP 1.95 s home and 1.19 s guide on Slow-4G plus 4x CPU (lab only); tests 486 of 486; build passes.
 
 ## 4. Task classification
 Categories: A Claude/code, B Cowork/browser, C Owner-only, D Not needed. Priority P0 blocks listing, P1 should be done before listing, P2 can follow. Effort is hands-on.

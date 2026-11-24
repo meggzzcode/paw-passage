@@ -35,7 +35,6 @@ relatedProducts:
   - petsafe-happy-ride-collapsible-crate
   - kurgo-kibble-carrier
 relatedTools:
-  - pet-cost-check
   - checklist
 sources:
   - title: Charging pet fees
@@ -289,7 +288,7 @@ Published figures as of 2026-11-18:
 - At My Vacation Haven two pets cost $250 plus $100, or $350, non-refundable, before taxes and the admin fee [[8]](https://www.myvacationhaven.com/pet-policy).
 - Airbnb's fee "can't be more than your nightly base rate" [[1]](https://www.airbnb.com/help/article/3623). How that applies to a per pet per night fee is not spelled out, so read the checkout total.
 
-Compare totals with the [pet cost check tool](/tools/pet-cost-check) and our [pet fees guide](/guides/how-vacation-rental-pet-fees-work).
+Compare totals using our [pet fees guide](/guides/how-vacation-rental-pet-fees-work).
 
 ## What if you bring more dogs than the listing allows?
 
@@ -336,4 +335,4 @@ Before you book:
 
 For a vet question, such as whether your dogs suit a shared stay, ask your vet. For everything else, message the host and save the written answer.
 
-**Next step:** run your dog count and dates through the [pet cost check](/tools/pet-cost-check), then work down the [checklist](/tools/checklist).
+**Next step:** add up the pet charges for your dog count and dates with our [pet fees guide](/guides/how-vacation-rental-pet-fees-work), then work down the [checklist](/tools/checklist).

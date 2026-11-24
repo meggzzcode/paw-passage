@@ -31,14 +31,12 @@ relatedGuides:
   - vacation-rental-secure-fenced-yard
   - airbnb-pet-damage-charge-after-checkout
   - what-a-dog-really-costs-on-a-vacation-rental
-embeddedTool: pet-cost-workflow
 relatedProducts:
   - pet-parents-pawtect-pads
   - soggy-doggy-microfiber-doormat
   - soggy-doggy-super-shammy-towel
 relatedTools:
   - checklist
-  - pet-cost-check
 sources:
   - title: Charging pet fees
     url: https://www.airbnb.com/help/article/3623
@@ -150,7 +148,7 @@ In our reading of 38 vacation rental managers' public pet pages (a convenience s
 - Refundable deposits and card holds belong in a separate column from definite expenses.
 - Where the ADA applies, pet fees and deposits must be waived for service animals. [[7]](https://www.ada.gov/resources/service-animals-2010-requirements/)
 
-To see whether a specific home will take your dog at all, start with the [will my dog be accepted tool](/tools/will-my-dog-be-accepted); to total the charges, use the [pet cost check](/tools/pet-cost-check) below. If a listing's pet wording looks vague, ask the host to confirm it in writing.
+To see whether a specific home will take your dog at all, start with the [will my dog be accepted tool](/tools/will-my-dog-be-accepted); to total the charges, work through the sections below. If a listing's pet wording looks vague, ask the host to confirm it in writing.
 
 ## What 38 managers actually charge
 
@@ -256,7 +254,7 @@ Save the listing terms, booking price and messages. Ask the host to identify the
 
 ## Questions to send before you book
 
-Send something like this, or build it with your own numbers in the [pet cost and host confirmation tool](/tools/pet-cost-check) below:
+Send something like this, with your own numbers filled in:
 
 "We are traveling with [number] dog(s) for [number] nights. Please confirm the complete pet-related charge for this reservation, whether it is per stay, per night, per dog, or per dog per night, and whether it is already in the displayed total. Please also identify any separate cleaning charge, refundable deposit, card hold, cap, or required damage product."
 

@@ -15,7 +15,7 @@
 
 ## 1. What you are buying
 
-Paws & Passage is a dog-friendly travel website: researched articles, 4 planning tools (will my dog be accepted, a packing list, a pet cost and host confirmation tool, and a before-you-book checklist) and a directory of stays (32 listed, each labelled "Not yet verified"; none has been verified). It is set up to earn from affiliate links (a commission when a visitor books or buys through a link), but it is pre-revenue and the affiliate accounts are the seller's, not part of the sale. It has **no database, no logins and no server you have to look after**. Everything on the site is plain files stored in GitHub.
+Paws & Passage is a dog-friendly travel website: researched articles, 3 planning tools (will my dog be accepted, a packing list and a before-you-book checklist) and a directory of stays (32 listed, each labelled "Not yet verified"; none has been verified). It is set up to earn from affiliate links (a commission when a visitor books or buys through a link), but it is pre-revenue and the affiliate accounts are the seller's, not part of the sale. It has **no database, no logins and no server you have to look after**. Everything on the site is plain files stored in GitHub.
 
 The plan is that you can run it day to day without a developer:
 
@@ -87,7 +87,7 @@ If an editor saves a half-finished draft, the build skips it and carries on. If 
 - **On real Netlify (2026-11-17; older results, not re-run):** 198 automatic site checks and 61 real-browser checks passed on the live test site. The first browser run found a hydration error caused by Netlify's free plan adding content to every page; it was fixed and re-tested.
 - **A fresh start works.** A brand-new copy of the code from GitHub installs, passes its automatic tests (486 in 33 files on 2026-11-23) and builds, using only what is in the repository. It needs no Lovable account and none of the previous owner's personal accounts. (A first attempt failed because a lock file was out of date. That was found, fixed, and a check now guards against it.)
 - **Netlify's own command-line tool** (a local imitation of Netlify's servers) built and ran the site: 216 automatic checks passed. These cover readable page text for search engines, every article, real "404 not found" pages for unknown addresses, correct canonical addresses and sitemap for a configured domain, images, scripts and fonts loading, and no empty pages.
-- **61 real-browser checks passed** on a desktop and a phone-sized screen: no errors, every image loaded, no sideways scrolling, and the checklist (it remembers ticks), cost calculator and question writer all work.
+- **61 real-browser checks passed** on a desktop and a phone-sized screen: no errors, every image loaded, no sideways scrolling, and the checklist (it remembers ticks) works. (The cost calculator and question writer also checked then were removed later, on 2026-11-24.)
 - **Search and filters:** 9 checks passed (fenced yard, number of dogs, no pet fee, text search, and that "not confirmed" is never treated as "yes").
 - **Editing by file:** changing a pet fee, an article title, a status, an affiliate link, a photo or a business setting in the content files changed the site as expected. Mistakes produced plain-English messages.
 - **Drafts do not leak.** Drafts, unapproved articles and sample stays are absent from every file a visitor can download, and their addresses return "404". (An earlier version leaked draft text inside the site's downloadable JavaScript. That was found and fixed.)

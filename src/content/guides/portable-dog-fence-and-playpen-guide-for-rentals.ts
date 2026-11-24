@@ -92,7 +92,7 @@ For multi-dog households, see our [two-dog accommodation guide](/guides/how-many
 
 ## Rental etiquette: ask before you install
 
-A pen can leave marks, so tell the host what you plan to bring; our [host-questions tool](/tools/pet-cost-check) helps. Ask before arrival, and keep the answers in writing:
+A pen can leave marks, so tell the host what you plan to bring; our [before-you-book checklist](/tools/checklist) helps. Ask before arrival, and keep the answers in writing:
 
 - Is a freestanding pen allowed on the deck, patio or lawn?
 - Is there any trim, door frame or painted surface I should keep the pen away from?
@@ -224,7 +224,7 @@ Then read the manual, practice at home, photograph the space before and after, a
     "petmate-precision-pet-soft-side-play-yard",
     "north-states-mypet-universal-petgate",
   ],
-  relatedTools: ["checklist", "pet-cost-check"],
+  relatedTools: ["checklist"],
   sources: [
     {
       title: "Is it okay to chain or tether dogs?",

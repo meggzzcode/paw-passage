@@ -1,7 +1,5 @@
 import { describe, expect, it } from "vitest";
 import { filterStays, defaultFilters } from "@/lib/filters";
-import { computeCost, petFeeTotal } from "@/lib/cost";
-import { buildHostQuestions } from "@/lib/host-questions";
 import { getApprovedLink } from "@/content/affiliates";
 import { visibleStays } from "@/content/stays";
 import { sampleStays } from "@/content/stays/samples";
@@ -99,63 +97,6 @@ describe("live site visibility", () => {
   });
   it("all ten launch guides exist", () => {
     expect(allGuides.length).toBeGreaterThanOrEqual(10);
-  });
-});
-
-describe("cost calculator", () => {
-  it("per dog per night: $20 x 2 dogs x 3 nights = $120", () => {
-    expect(petFeeTotal(20, "dog-night", 3, 2)).toBe(120);
-  });
-  it("totals lodging, cleaning, pet fee and tax; deposit kept separate", () => {
-    const r = computeCost({
-      label: "x",
-      nightly: 200,
-      nights: 3,
-      cleaning: 100,
-      otherFees: 0,
-      petFee: 25,
-      petFeeBasis: "dog",
-      dogs: 2,
-      taxPct: 10,
-      deposit: 300,
-    });
-    expect(r.lodging).toBe(600);
-    expect(r.pet).toBe(50);
-    expect(r.tax).toBe(70);
-    expect(r.total).toBe(820);
-    expect(r.upfront).toBe(1120);
-  });
-});
-
-describe("host question generator", () => {
-  const p = {
-    dogName: "Juno",
-    dogs: 1,
-    size: "medium" as const,
-    breed: "",
-    needs: {
-      fencedYard: false,
-      jumper: false,
-      digger: false,
-      pool: false,
-      crate: false,
-      leftAlone: false,
-      furniture: false,
-      stairsHard: false,
-      reactive: false,
-      beach: false,
-    },
-  };
-  it("asks fence and gate questions only when a yard matters", () => {
-    expect(buildHostQuestions(p).questions.some((q) => q.includes("gate"))).toBe(false);
-    const r = buildHostQuestions({ ...p, needs: { ...p.needs, fencedYard: true } });
-    expect(r.questions.some((q) => q.includes("gate"))).toBe(true);
-    expect(r.photos.length).toBeGreaterThan(0);
-  });
-  it("asks about combined weight for multiple dogs", () => {
-    expect(
-      buildHostQuestions({ ...p, dogs: 2 }).questions.some((q) => q.includes("combined weight")),
-    ).toBe(true);
   });
 });
 

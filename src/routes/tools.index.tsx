@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Calculator, ListChecks, Dog, Backpack } from "lucide-react";
+import { ListChecks, Dog, Backpack } from "lucide-react";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { pageHead } from "@/lib/seo";
 
@@ -8,7 +8,7 @@ export const Route = createFileRoute("/tools/")({
     pageHead({
       title: "Free dog travel planning tools",
       description:
-        "A pet cost and host confirmation tool (trip cost, quotes, a message to the host) and a printable before-you-book checklist for renting with a dog.",
+        "A pet policy checker, a dog packing list and a printable before-you-book checklist for renting with a dog.",
       path: "/tools",
     }),
   component: ToolsPage,
@@ -26,12 +26,6 @@ const tools = [
     icon: Backpack,
     t: "Pack your dog's bag",
     d: "Tell us about the trip and fill the bag item by item. Tap an item to see what it is, why you might need it and where to get it.",
-  },
-  {
-    to: "/tools/pet-cost-check",
-    icon: Calculator,
-    t: "Pet cost and host confirmation",
-    d: "Work out the real total for up to three stays, then get a message asking the host to confirm the pet fee in writing.",
   },
   {
     to: "/tools/checklist",

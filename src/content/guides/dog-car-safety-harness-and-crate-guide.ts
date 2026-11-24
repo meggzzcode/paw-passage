@@ -153,7 +153,7 @@ CDC and ASPCA recommend building up to a long trip with short drives first. Fitt
 - No extension tethers or zipline-style add-ons.
 - Microchip and contact details are current, [[7]](https://www.cdc.gov/healthy-pets/travel/index.html) and, as the ASPCA suggests, your dog wears a temporary travel tag with your cell phone and destination phone number. [[8]](https://www.aspca.org/pet-care/general-pet-care/travel-safety-tips)
 - Water, bowl, leash, waste bags and medications are packed. Our [cabin packing list](/guides/dog-friendly-cabin-packing-list) covers more.
-- Your destination's rules and host's pet policy are confirmed; our [pet cost and host confirmation tool](/tools/pet-cost-check) is the next step.
+- Your destination's rules and host's pet policy are confirmed; our [before-you-book checklist](/tools/checklist) is the next step.
 
 ## What to buy first
 
@@ -250,7 +250,7 @@ CDC and ASPCA recommend building up to a long trip with short drives first. Fitt
     "sleepypod-atom",
     "kurgo-heather-booster-seat",
   ],
-  relatedTools: ["checklist", "pet-cost-check"],
+  relatedTools: ["checklist"],
   sources: [
     {
       title: "CPS Certified Products",

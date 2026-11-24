@@ -19,7 +19,8 @@ describe("site before the first verified stay", () => {
     const paths = sitemapEntries().map((e) => e.path);
     expect(paths).toContain("/stays");
     expect(paths).not.toContain("/tools/compare");
-    expect(paths).toContain("/tools/pet-cost-check");
+    expect(paths).not.toContain("/tools/pet-cost-check");
+    expect(paths).toContain("/tools/checklist");
     // Town pages are in the sitemap exactly when townIsIndexable says so (see stay-indexing.test.ts); thin towns are not.
     for (const d of destinations)
       for (const t of d.towns) {

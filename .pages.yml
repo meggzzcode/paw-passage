@@ -166,13 +166,7 @@ content:
         type: select
         list: true
         options:
-          values: [checklist, pet-cost-check, will-my-dog-be-accepted, packing-list]
-      - name: embeddedTool
-        label: Tool shown inside the article
-        type: select
-        required: false
-        options:
-          values: [pet-cost-workflow]
+          values: [checklist, will-my-dog-be-accepted, packing-list]
       - name: gear
         label: Product picks (gear articles only)
         type: object

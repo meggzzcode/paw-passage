@@ -20,7 +20,6 @@ const cols = [
     title: "Plan",
     links: [
       ["/tools/will-my-dog-be-accepted", "Will my dog be accepted?"],
-      ["/tools/pet-cost-check", "Pet cost and host confirmation"],
       ["/tools/packing-list", "Pack your dog's bag"],
       ["/tools/checklist", "Before-you-book checklist"],
       ["/data/pet-policies", "Pet policy data"],

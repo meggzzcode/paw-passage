@@ -70,9 +70,7 @@ export interface Guide {
   relatedGuides: string[]; // slugs
   /** Product ids from content/products.yml (at most 4), shown as "Gear for this trip" after the article. */
   relatedProducts?: string[];
-  relatedTools: ("checklist" | "pet-cost-check" | "will-my-dog-be-accepted" | "packing-list")[];
-  /** An interactive tool shown inside the article, after the body and before the questions. */
-  embeddedTool?: "pet-cost-workflow";
+  relatedTools: ("checklist" | "will-my-dog-be-accepted" | "packing-list")[];
   sources: Source[];
   research: ResearchBrief;
 }

@@ -76,7 +76,7 @@ Once a rental passes permission, run these five. They replace the long checklist
 2. **The route.** Parking to entrance, entrance to bed, bed to the nearest night-time toilet spot. Ask how many entrance steps there are and whether the only bedroom is upstairs or a loft; "single level" is not the same as step-free.
 3. **The floor and the space.** Polished wood, tile and stone are slick for a heavy dog, so ask which surfaces are on the main route and whether rugs stay put. Measure your crate or bed and the narrowest doorway, so the crate door still opens.
 4. **The yard and the alone-time rule.** "Fenced" is not a security inspection: ask about the lowest fence section, gate latches and gaps, and request photos if the yard matters. For long dog-free stretches, read [can you leave a dog alone in a vacation rental](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental) and the [fenced-yard guide](/guides/vacation-rental-secure-fenced-yard).
-5. **The full price.** Pet fees vary a lot between managers, so total your real count, dates, cleaning charges and taxes in the [pet cost tool](/tools/pet-cost-check), and keep refundable deposits separate. The [pet-fee guide](/guides/how-vacation-rental-pet-fees-work) explains the terms.
+5. **The full price.** Pet fees vary a lot between managers, so total your real count, dates, cleaning charges and taxes yourself, and keep refundable deposits separate. The [pet-fee guide](/guides/how-vacation-rental-pet-fees-work) explains the terms.
 
 Do not plan around carrying a heavy dog up steps: a wet walk or a minor injury changes what is safe. For a dog with pain or mobility problems, your veterinarian can say what access suits it.
 
@@ -165,7 +165,7 @@ Put your dog's weight into the [will my dog be accepted tool](/tools/will-my-dog
     "petsafe-happy-ride-hitch-step",
     "kurgo-rover-cargo-cape",
   ],
-  relatedTools: ["checklist", "pet-cost-check"],
+  relatedTools: ["checklist"],
   sources: [
     {
       title: "Frequently asked questions",

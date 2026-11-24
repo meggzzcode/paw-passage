@@ -34,7 +34,6 @@ relatedGuides:
   - vacation-rentals-with-no-dog-weight-limit
 relatedTools:
   - checklist
-  - pet-cost-check
 sources:
   - title: Ground rules for home guests
     url: https://www.airbnb.com/help/article/2894
@@ -251,7 +250,7 @@ Rules vary widely: some limit weight, some name breeds, some push everything to 
 | 13 | Sun Realty, Outer Banks NC | 2 housebroken dogs at pet-friendly homes | not stated | not mentioned | $161 to $231 plus tax, described as a flea-treatment fee | [Sun Realty pet page](https://www.sunrealtync.com/node/1163) |
 | 14 | Airbnb (platform) | host sets 1 to 5 | host sets | no platform breed rule on pages read | host sets, built into nightly price | [[2]](https://www.airbnb.com/resources/hosting-homes/a/what-you-need-to-know-about-hosting-pets-463) |
 
-How to read it: 6 rows have a weight cap (1, 2, 3, 5, 8 and 9), 2 name breeds (1 and 2), and 2 more say "certain breeds" without a list (3 and 4). Row 12's 35 lb limit has exceptions, so it is not counted as a cap. Row 1 comes from a development-subdomain page; the live Elk Springs page showed the same cap, list and fee. Fees change by listing, so run your own numbers in the [pet cost check](/tools/pet-cost-check); our [pet fee guide](/guides/how-vacation-rental-pet-fees-work) explains how they are built.
+How to read it: 6 rows have a weight cap (1, 2, 3, 5, 8 and 9), 2 name breeds (1 and 2), and 2 more say "certain breeds" without a list (3 and 4). Row 12's 35 lb limit has exceptions, so it is not counted as a cap. Row 1 comes from a development-subdomain page; the live Elk Springs page showed the same cap, list and fee. Fees change by listing, so confirm the numbers with the host; our [pet fee guide](/guides/how-vacation-rental-pet-fees-work) explains how they are built.
 
 ## What happens if I bring a dog nobody approved?
 
@@ -285,7 +284,7 @@ No reply? Ask once more through the booking platform and hold off on paying. If 
 
 - [ ] Read the listing's house rules and the manager's separate pet policy for breed names, weight and pet-count lines.
 - [ ] Find out whether insurance or house rules cause the restriction, and how mixes are treated.
-- [ ] Get the full pet charge and deposit, using the [pet cost check](/tools/pet-cost-check).
+- [ ] Get the full pet charge and deposit in writing from the host.
 - [ ] Send the message above and keep the reply in writing.
 - [ ] Look up the destination's local animal rules.
 - [ ] Save the listing, the reply and the confirmation, then add the rest to the [trip checklist](/tools/checklist) and our [rental checklist](/guides/pet-friendly-vacation-rental-checklist).

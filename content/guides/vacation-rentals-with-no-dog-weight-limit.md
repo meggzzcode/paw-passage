@@ -36,7 +36,6 @@ relatedProducts:
 relatedTools:
   - will-my-dog-be-accepted
   - checklist
-  - pet-cost-check
 sources:
   - title: Frequently Asked Questions
     url: https://hearthsidecabinrentals.com/frequently-asked-questions
@@ -287,4 +286,4 @@ Approval is the hard part. The conditions that come with it are the next problem
 
 ## Your next step
 
-Put your dog's weight and count into the [will my dog be accepted tool](/tools/will-my-dog-be-accepted), then send the message above for any home it flags as possible. Save the replies in the [trip checklist](/tools/checklist), and compare the full price with the [pet cost check](/tools/pet-cost-check). For fees in general, see [how pet fees work](/guides/how-vacation-rental-pet-fees-work).
+Put your dog's weight and count into the [will my dog be accepted tool](/tools/will-my-dog-be-accepted), then send the message above for any home it flags as possible. Save the replies in the [trip checklist](/tools/checklist), and compare the full price in writing for each home. For fees in general, see [how pet fees work](/guides/how-vacation-rental-pet-fees-work).

@@ -46,7 +46,6 @@ relatedProducts:
   - petsafe-happy-ride-bench-seat-cover
 relatedTools:
   - checklist
-  - pet-cost-check
 sources:
   - title: Mobility Tips and Tricks for Senior Dogs
     url: https://dogagingproject.org/mobility-tips-and-tricks-for-senior-dogs
@@ -302,7 +301,7 @@ A message you can copy:
 
 > Hi [Host], we are considering [dates] with our [age]-year-old [breed]. She is steady but slow on stairs and slippery floors. Could you tell me: (1) Is there a step-free route from parking to the door, and could you send a photo? (2) What flooring is in the living area and bedroom, and are the stairs carpeted or bare? (3) Are there stairs between the bedroom, bathroom and entrance? (4) Are there steps to the yard? (5) May we put down a rubber-backed rug or a small ramp, and bring our own bed and washable bedding? (6) How are accidents by an older dog handled, and is any deposit involved? We will clean up and tell you right away. Thank you.
 
-If your dog may leak, say so in the message. Send it through the booking platform so the answers are on record. Our [pet-friendly rental checklist](/guides/pet-friendly-vacation-rental-checklist) covers the general questions, and the [pet cost check](/tools/pet-cost-check) confirms the total. For a young dog instead, see our [puppy rental guide](/guides/puppy-at-a-vacation-rental).
+If your dog may leak, say so in the message. Send it through the booking platform so the answers are on record. Our [pet-friendly rental checklist](/guides/pet-friendly-vacation-rental-checklist) covers the general questions, and our [pet fees guide](/guides/how-vacation-rental-pet-fees-work) explains how the total is built. For a young dog instead, see our [puppy rental guide](/guides/puppy-at-a-vacation-rental).
 
 ## What do manager rules mean for an older dog?
 
@@ -361,7 +360,7 @@ What to do:
 
 - **Report and clean right away.** Tell the host or manager what happened and what you did.
 
-If a host later asks for money, our [damage-charge guide](/guides/airbnb-pet-damage-charge-after-checkout) covers the clocks and what to reply. Whether a deposit or charge applies to an accident you reported and cleaned is a question for the host in writing; the [pet cost check](/tools/pet-cost-check) shows your total.
+If a host later asks for money, our [damage-charge guide](/guides/airbnb-pet-damage-charge-after-checkout) covers the clocks and what to reply. Whether a deposit or charge applies to an accident you reported and cleaned is a question for the host in writing; our [pet fees guide](/guides/how-vacation-rental-pet-fees-work) explains how pet fees work.
 
 ## What if your senior dog gets seriously ill on the trip?
 
@@ -407,7 +406,7 @@ Call before booking for any sign below, and again if it appears on the trip. Thi
 - [ ] Stairs checked: count, open-backed or not, steepness, bare or carpeted
 - [ ] Waterproof or washable layers packed if your dog may leak
 - [ ] Written answer on accidents, unattended rules and weight or count limits
-- [ ] Total price confirmed with the [pet cost check](/tools/pet-cost-check)
+- [ ] Total price confirmed with the host in writing
 - [ ] Emergency vet saved, with its hours
 - [ ] Carer instructions written, and someone reachable
 - [ ] Cancellation terms saved; use the [trip checklist](/tools/checklist)

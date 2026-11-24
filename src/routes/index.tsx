@@ -548,12 +548,6 @@ function Home() {
                 d: `Check your dogs against ${policyStats().total} rental managers' own pet policies, with a source for each.`,
               },
               {
-                to: "/tools/pet-cost-check",
-                icon: Calculator,
-                t: "Pet cost and host confirmation",
-                d: "See what your dog really costs, then get a message that asks the host to confirm it in writing.",
-              },
-              {
                 to: "/tools/packing-list",
                 icon: Backpack,
                 t: "Pack your dog's bag",

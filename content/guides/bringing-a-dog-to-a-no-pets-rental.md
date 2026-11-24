@@ -32,7 +32,6 @@ relatedGuides:
   - how-many-dogs-can-you-bring-to-a-vacation-rental
 relatedTools:
   - checklist
-  - pet-cost-check
   - will-my-dog-be-accepted
 sources:
   - title: Ground rules for home guests
@@ -258,7 +257,7 @@ Keep it short, give the host a way to say no, and keep the answer in the booking
 
 **Use the platform's pet filter, then read the house rules and confirm.** On Airbnb, open Filters, go to Booking options and select Allows pets; you can also add pets in the Who field on desktop. [[3]](https://www.airbnb.com/help/article/86) Vrbo says pets is one of its most popular search filters and that hosts can set how many pets, what kind and any size limit, so check those lines. [[6]](https://help.vrbo.com/articles/What-are-House-Rules)
 
-Then confirm with the host. A pet-friendly label does not mean your dog's size or number is accepted. See our [pet-friendly rental checklist](/guides/pet-friendly-vacation-rental-checklist), the guide to [rentals that welcome large dogs](/guides/vacation-rentals-that-welcome-large-dogs) and the guide to a [secure fenced yard](/guides/vacation-rental-secure-fenced-yard), and use the [pet cost check](/tools/pet-cost-check) to compare totals.
+Then confirm with the host. A pet-friendly label does not mean your dog's size or number is accepted. See our [pet-friendly rental checklist](/guides/pet-friendly-vacation-rental-checklist), the guide to [rentals that welcome large dogs](/guides/vacation-rentals-that-welcome-large-dogs) and the guide to a [secure fenced yard](/guides/vacation-rental-secure-fenced-yard), and use our [pet fees guide](/guides/how-vacation-rental-pet-fees-work) to compare totals.
 
 ## What if I already booked a no-pets place?
 

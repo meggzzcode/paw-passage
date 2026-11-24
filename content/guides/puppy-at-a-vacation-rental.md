@@ -40,7 +40,6 @@ relatedTools:
   - will-my-dog-be-accepted
   - packing-list
   - checklist
-  - pet-cost-check
 sources:
   - title: Pet Policy and Policies
     url: https://tahoegetaways.com/policies

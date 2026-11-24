@@ -12,11 +12,9 @@ import { pageHead, breadcrumbLd, jsonLd, absoluteUrl, isoDate } from "@/lib/seo"
 import { site } from "@/config/site";
 import { TableOfContents } from "@/components/site/TableOfContents";
 import { ArticleActions, TrustStrip } from "@/components/site/ArticleActions";
-import { PetCostWorkflow } from "@/components/site/PetCostWorkflow";
 
 const toolLabels = {
   checklist: { to: "/tools/checklist", label: "Before-you-book checklist" },
-  "pet-cost-check": { to: "/tools/pet-cost-check", label: "Pet cost and host confirmation" },
   "will-my-dog-be-accepted": {
     to: "/tools/will-my-dog-be-accepted",
     label: "Will my dog be accepted?",
@@ -134,17 +132,6 @@ function GuidePage() {
           <TableOfContents headings={headings} variant="mobile" />
           <Markdown source={g.body} />
           {g.gear && g.gear.length > 0 && <GearPicks picks={g.gear} />}
-          {g.embeddedTool === "pet-cost-workflow" && (
-            <section
-              id="pet-cost-tool"
-              className="mt-16 rounded-xl border border-border bg-card p-5 sm:p-8"
-            >
-              <h2 className="text-3xl">What will my dog really cost, and how do I lock it in?</h2>
-              <div className="mt-6">
-                <PetCostWorkflow />
-              </div>
-            </section>
-          )}
           {g.faqs.length > 0 && (
             <section className="mt-16">
               <h2 className="text-3xl">Questions people ask</h2>

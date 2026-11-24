@@ -36,7 +36,6 @@ relatedProducts:
 relatedTools:
   - packing-list
   - checklist
-  - pet-cost-check
   - will-my-dog-be-accepted
 sources:
   - title: Rental and Cancellation Policies
@@ -188,7 +187,7 @@ In the pages we read, holiday terms sat with the manager's rental or reservation
 
 **1. Is there a minimum stay for my dates?** Two managers we read spell this out differently. A Blue Ridge Vacation requires 5 nights for major holidays including Christmas and 3 nights for minor holidays, and says peak seasons and holidays carry higher nightly rates. [[1]](https://www.ablueridgevacation.com/rental-and-cancellation-policies/) Aunt Bugs gives no numbers. [[2]](https://www.auntbugs.com/rental-policies/) So "Christmas week" might be a hard 5 nights at one manager and unspecified at another. Ask for the exact rule for your dates in writing.
 
-**2. What is the complete pet total?** In our reading of 38 managers' public pet pages, none stated a holiday pet surcharge. We re-opened 19 of those pages on 2026-11-18, mostly cabin and mountain managers, and still found none. The pet fees themselves were flat or per-night figures. What did differ is the room rate: A Blue Ridge Vacation says holidays carry higher nightly rates, which a dog fee does not capture. [[1]](https://www.ablueridgevacation.com/rental-and-cancellation-policies/) Ask "what is the full total for these dates with one dog?" and compare with our [pet cost check](/tools/pet-cost-check) and [pet fees guide](/guides/how-vacation-rental-pet-fees-work).
+**2. What is the complete pet total?** In our reading of 38 managers' public pet pages, none stated a holiday pet surcharge. We re-opened 19 of those pages on 2026-11-18, mostly cabin and mountain managers, and still found none. The pet fees themselves were flat or per-night figures. What did differ is the room rate: A Blue Ridge Vacation says holidays carry higher nightly rates, which a dog fee does not capture. [[1]](https://www.ablueridgevacation.com/rental-and-cancellation-policies/) Ask "what is the full total for these dates with one dog?" and compare with our [pet fees guide](/guides/how-vacation-rental-pet-fees-work).
 
 **3. What does cancellation look like?** Holiday weeks can fill early, and winter travel can be disrupted by weather. Examples from pages we read on 2026-11-18:
 

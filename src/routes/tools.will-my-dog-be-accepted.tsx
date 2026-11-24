@@ -26,7 +26,6 @@ function Page() {
         },
         { slug: "how-vacation-rental-pet-fees-work", label: "How pet fees actually work" },
       ]}
-      links={[{ to: "/tools/pet-cost-check", label: "Pet cost and host confirmation tool" }]}
     >
       <DogAcceptedChecker />
     </ToolShell>

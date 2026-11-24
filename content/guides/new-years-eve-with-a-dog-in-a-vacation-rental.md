@@ -39,7 +39,6 @@ relatedProducts:
   - ruffwear-the-beacon-dog-safety-light
 relatedTools:
   - checklist
-  - pet-cost-check
 sources:
   - title: Dog owner - how we were misled by a firework-free vacation park
     url: https://www.petbook-magazine.com/dogs/dog-owner-how-we-were-misled-by-a-firework-free-vacation-park
@@ -223,7 +222,7 @@ A host's rule applies to guests, not neighbors, and local law varies by county a
 | Cabin Rentals of Georgia (Blue Ridge) | Under 35 lb; $50 per pet per night, $75 cleaning fee, $250 refundable deposit | Firecrackers prohibited on the property | [[9]](https://www.cabin-rentals-of-georgia.com/policies) |
 | Vacasa (many places) | "a small fee per dog, per night", amount not listed | No fireworks text on the page | [[10]](https://www.vacasa.com/pet-friendly-vacation-rentals) |
 
-None of the 38 manager pet pages we read for our [how-many-dogs guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental#how-many-dogs-do-rental-managers-actually-allow) mentioned a holiday pet-fee surcharge (38 managers, convenience sample, read 2026-11-18). For the full total, use the [pet cost check](/tools/pet-cost-check) and our [pet fees guide](/guides/how-vacation-rental-pet-fees-work).
+None of the 38 manager pet pages we read for our [how-many-dogs guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental#how-many-dogs-do-rental-managers-actually-allow) mentioned a holiday pet-fee surcharge (38 managers, convenience sample, read 2026-11-18). For the full total, use our [pet fees guide](/guides/how-vacation-rental-pet-fees-work).
 
 ## Keeping your dog from bolting
 
@@ -315,7 +314,7 @@ How common are lost dogs on New Year's Eve? Petco Love's 2023 release says more 
 ## Before you book and before you leave
 
 - [ ] Ask the host the vetting questions above; keep answers in writing.
-- [ ] Get the full pet total with the [pet cost check](/tools/pet-cost-check).
+- [ ] Get the full pet total in writing from the host.
 - [ ] Book a vet visit now to discuss noise fear.
 - [ ] Update tag number and microchip registry.
 - [ ] Pack treats, a leash, a crate if used, and first-aid items from our [packing list](/guides/dog-friendly-cabin-packing-list).

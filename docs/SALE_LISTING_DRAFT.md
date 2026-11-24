@@ -13,9 +13,9 @@ This is a **new, pre-revenue starter site**. It has **no traffic history and no 
 - **30 published guides, about 76,900 words**, each with FAQs and cited sources (491 citations across the guides), and a per-guide claims and fact-check record in the repo. The topic is renting vacation homes with a dog: pet fees, dog limits, fences, gear, cost, car safety, trip planning.
 - **An original pet-policy dataset**: 38 vacation-rental managers across 6 regions, 13 fields each (dog limit, weight limit, breed rule, pet fee, pool and hot tub wording, minimum age, leaving a dog alone), one source link per row, all read 2026-11-18. Published as a downloadable CSV and a data page. It is compiled from public manager pages; each cell is a public fact, and what is original is the selection, structure and dated sourcing.
 - **A directory of 32 listed stay pages** (Georgia and California) with pet-policy fields, built for programmatic expansion, plus 2 state hubs, town pages and 4 dog-type pages (senior dogs, big dogs, multi-dog families, escape artists).
-- **4 planning tools**: a "will my dog be accepted" check, a packing list (15 items), a pet cost check and a 25-item rental checklist.
+- **3 planning tools**: a "will my dog be accepted" check, a packing list (15 items) and a 25-item rental checklist.
 - **A gear hub**: 12 category pages and 53 products, each with maker-sourced specs; product links carry the seller's Amazon tag, and you swap in your own Associates ID in one settings file.
-- **SEO foundations**: 98-URL sitemap, canonical tags, structured data (breadcrumbs, article, organization, dataset), robots, IndexNow key and a weekly health-check workflow.
+- **SEO foundations**: 97-URL sitemap, canonical tags, structured data (breadcrumbs, article, organization, dataset), robots, IndexNow key and a weekly health-check workflow.
 - **Pinterest assets**: 30 ready pins (1000x1500) and a posting sheet, plus 31 share images. No Pinterest account is included.
 - **Trust pages**: about, methodology, editorial standards, corrections log, affiliate disclosure, privacy, terms.
 - **Low-maintenance stack**: static-friendly TanStack Start site, no database, no logins, Netlify free-plan hosting, GitHub-hosted content with a Pages CMS editor for most content. 486 automated tests pass and the production build succeeds.
@@ -48,4 +48,4 @@ This is a **new, pre-revenue starter site**. It has **no traffic history and no 
 
 ## Short version (for a marketplace title and summary field)
 Title: Pre-revenue dog travel site: 30 sourced guides, original 38-manager dataset, tools and gear hub (turnkey, $0 hosting).
-Summary: New .com dog-friendly vacation-rental publication. 30 guides (~77k words), a 38-manager pet-policy dataset, 4 tools, a 32-page stay directory and a 53-product gear hub, all documented and transferable. No traffic or earnings yet: sold as a finished starter asset. Affiliate accounts not included.
+Summary: New .com dog-friendly vacation-rental publication. 30 guides (~77k words), a 38-manager pet-policy dataset, 3 tools, a 32-page stay directory and a 53-product gear hub, all documented and transferable. No traffic or earnings yet: sold as a finished starter asset. Affiliate accounts not included.

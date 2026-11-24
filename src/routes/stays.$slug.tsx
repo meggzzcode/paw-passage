@@ -312,10 +312,10 @@ function StayPage() {
               These details come from the listing, and policies change. Confirm the fee, dog limits
               and fence with the host in writing, and ask any other questions before you book.
               Anything marked "Not confirmed" is unknown, not a yes. Our{" "}
-              <Link to="/tools/pet-cost-check" className="text-primary underline">
-                pet cost and host confirmation tool
+              <Link to="/tools/checklist" className="text-primary underline">
+                before-you-book checklist
               </Link>{" "}
-              writes the message for you.
+              lists what to ask.
             </p>
           </div>
         </div>

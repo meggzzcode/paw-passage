@@ -13,7 +13,6 @@ export const staticPaths = [
   "/guides",
   "/tools",
   "/tools/checklist",
-  "/tools/pet-cost-check",
   "/tools/will-my-dog-be-accepted",
   "/tools/packing-list",
   "/data/pet-policies",

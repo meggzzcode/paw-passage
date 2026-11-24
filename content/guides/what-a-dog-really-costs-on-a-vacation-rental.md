@@ -31,14 +31,12 @@ relatedGuides:
   - airbnb-pet-damage-charge-after-checkout
   - vacation-rentals-with-no-pet-fee
   - how-many-dogs-can-you-bring-to-a-vacation-rental
-embeddedTool: pet-cost-workflow
 relatedProducts:
   - soggy-doggy-super-shammy-towel
   - iris-usa-airtight-dog-food-container-10-lb
   - soggy-doggy-microfiber-doormat
   - kurgo-loft-wander-dog-bed
 relatedTools:
-  - pet-cost-check
   - checklist
   - will-my-dog-be-accepted
 sources:
@@ -180,7 +178,7 @@ Add up four things, and keep them in separate piles:
 - **Contingent charges:** damage, extra cleaning, or a penalty for an unapproved dog. You do not budget these, but you do avoid them.
 - **Everything outside the rental bill:** fuel, gear, boarding. We do not put prices on these because we have no official source for them; list your own.
 
-Then compare quotes on the first pile only, and check the second pile against your card limit. The [pet cost check](/tools/pet-cost-check) below does the arithmetic.
+Then compare quotes on the first pile only, and check the second pile against your card limit. The method below shows the arithmetic.
 
 ## What the pet fee does and does not cover
 
@@ -203,7 +201,7 @@ Among the 22 that charge, nightly amounts run from $20 to $50 and flat or per-pe
 | Resort Realty | Non-refundable fee up to $1,000, varying by property, due with the balance payment | [[12]](https://resortrealty.com/outer-banks-pet-friendly) |
 | Twiddy & Company | All ten listed homes waive the pet fee and deposit; nine say "no additional fee or deposit" | [[13]](https://blog.twiddy.com/bring-your-pets-on-vacation/) |
 
-Nobody can quote you "the" pet cost from a range this wide. The fee only becomes a number once you enter your dates and your dog count.
+Nobody can quote you "the" pet cost from a range this wide. The fee only becomes a number once you know your dates and your dog count.
 
 ## The rest of the bill
 
@@ -289,7 +287,7 @@ All are researched from the maker's page, not tested by us.
 2. For each rental, open the price breakdown (Airbnb) or the full breakdown before confirming (Vrbo) and write down nightly rate, cleaning, pet charge, service fee and taxes.
 3. Add them into one definite-cost number.
 4. Write the refundable deposit or hold on a separate line, and check what your card limit can carry.
-5. Ask the host the one question the page leaves open, using the message in the [pet cost tool](/tools/pet-cost-check) below.
+5. Ask the host the one question the page leaves open, using the message in our [pet fees guide](/guides/how-vacation-rental-pet-fees-work).
 6. Only then look at the rules: dog count, weight, breed, and whether your dog is accepted at all. The [will-my-dog-be-accepted tool](/tools/will-my-dog-be-accepted) helps with that.
 
 If a listing allows several dogs, the [dog count guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental) covers how limits and per-pet fees interact.
@@ -310,4 +308,4 @@ If a listing allows several dogs, the [dog count guide](/guides/how-many-dogs-ca
 
 ## Next step
 
-Put your two quotes into the [pet cost and host confirmation tool](/tools/pet-cost-check), enter the real dog count, and keep refundable money on its own line. Then add the money tasks to the [trip checklist](/tools/checklist).
+Put your two quotes side by side using the real dog count, and keep refundable money on its own line. Then add the money tasks to the [trip checklist](/tools/checklist).

@@ -80,8 +80,8 @@ function DogTypePage() {
       </section>
       <p className="mt-12 text-sm text-muted-foreground">
         Also useful: the{" "}
-        <Link to="/tools/pet-cost-check" className="text-primary underline">
-          pet cost check
+        <Link to="/tools/will-my-dog-be-accepted" className="text-primary underline">
+          dog policy checker
         </Link>{" "}
         and the{" "}
         <Link to="/tools/checklist" className="text-primary underline">

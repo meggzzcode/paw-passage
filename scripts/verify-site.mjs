@@ -56,7 +56,6 @@ const core = [
   "/stays",
   "/tools",
   "/tools/checklist",
-  "/tools/pet-cost-check",
   "/about",
   "/contact",
   "/list-your-property",
@@ -213,6 +212,16 @@ for (const p of [
 ]) {
   const r = await get(p);
   ok(r.status === 404, `Unknown route ${p} returns a real 404`, `status ${r.status}`);
+}
+
+// Retired tool URLs must redirect to /tools, never 404.
+for (const p of ["/tools/pet-cost-check", "/tools/cost-calculator", "/tools/host-questions"]) {
+  const r = await get(p);
+  ok(
+    r.status === 301 && (r.headers.get("location") ?? "").replace(/\/$/, "").endsWith("/tools"),
+    `Retired tool ${p} redirects (301) to /tools`,
+    `status ${r.status}, location ${r.headers.get("location")}`,
+  );
 }
 
 // ---------- 5. Drafts ----------

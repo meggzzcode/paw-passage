@@ -21,11 +21,12 @@ Events are sent only when a GA4 ID is set in `content/settings.yml`. Nothing a v
 | `rules_view` | Opened a place's rules page | same | exists |
 | `rules_source_click` | Clicked through to an official source | same | exists |
 
-`tool_name` values in use: `pet-cost-workflow`, `checklist`, `dog-rules`, `packing`, and the dog-accepted checker (see `DogAcceptedChecker.tsx`). The older `docs/TOOL-TRACKING.md` lists fewer; this table is the current one.
+`tool_name` values in use: `checklist`, `dog-rules`, `packing`, and the dog-accepted checker (see `DogAcceptedChecker.tsx`). The older `docs/TOOL-TRACKING.md` lists fewer; this table is the current one.
 
 Pinterest referrals need no code. Pin links carry `utm_source=pinterest&utm_medium=social&utm_campaign=...&utm_content=...` (see `docs/PINTEREST-SETUP.md`) and GA4 reads utm parameters on its own.
 
 ### Calls still to add (files owned by other workers)
+- The pet cost check tool (`pet-cost-workflow` events) was removed on 2026-11-24 and no longer fires.
 - The stay fee calculator was removed on 2026-11-24 (it needed fee upkeep), so its `stay-fee-calculator` event no longer fires.
 - Gear hub card links: `trackHubCardClick({ hub: "gear", card: category.slug, page: loc.pathname })` in the onClick of each card link.
 - Plain outbound links in components that render them: `trackOutboundClick({ url, page, label })`.

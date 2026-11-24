@@ -1,6 +1,6 @@
 # Paws & Passage
 
-A dog-friendly travel site: 30 published researched guides (33 files), 4 planning tools and a directory of
+A dog-friendly travel site: 30 published researched guides (33 files), 3 planning tools and a directory of
 stays (32 listed, each labelled "Not yet verified"; none verified). Pre-revenue. Plain-file content, no database, no admin login.
 
 Built with TanStack Start + Vite + Tailwind, hosted on Netlify. It was edited in Lovable, which is not needed to build, host or edit.

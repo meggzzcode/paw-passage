@@ -17,7 +17,7 @@ export const guide: Guide = {
   heroImage: "guide-rental-checklist",
   body: `You found a cabin with a hot tub and a "pets welcome" badge, and then checkout adds a pet fee, a cleaning charge and a rule about leaving the dog alone that none of the photos mentioned. Every line below is a question that would have caught it before you paid. Work top to bottom, and stop at the first line you cannot answer. Pool and hot tub access is its own question; see [whether dogs can use a rental's pool or hot tub](/guides/can-dogs-go-in-a-rental-pool-or-hot-tub).
 
-Tick it off on your phone in the [interactive checklist](/tools/checklist), and get the real total for your dog count and dates in the [pet cost check](/tools/pet-cost-check). If a listing already feels off, question the vague wording before you book.
+Tick it off on your phone in the [interactive checklist](/tools/checklist), and see how the total is built in our [pet fees guide](/guides/how-vacation-rental-pet-fees-work). If a listing already feels off, question the vague wording before you book.
 
 ## The 8-item booking gate
 
@@ -127,7 +127,7 @@ Some lines above turn into a packing decision. Bring only what answers a line yo
 - **What most people report:** no survey here; the manager figures come from 38 managers, a convenience sample read 2026-11-18.
 - **Unknown, so ask:** your exact unit's rules, fees and insurer conditions, in writing.
 
-Booked somewhere that says no pets? Ask the manager before you travel rather than bringing the dog unapproved. Choosing a platform? See [Airbnb vs Vrbo with a dog](/guides/how-vacation-rental-pet-fees-work). Next step: run the [pet cost check](/tools/pet-cost-check), then save your answers in the [checklist tool](/tools/checklist).
+Booked somewhere that says no pets? Ask the manager before you travel rather than bringing the dog unapproved. Choosing a platform? See [Airbnb vs Vrbo with a dog](/guides/how-vacation-rental-pet-fees-work). Next step: read our [pet fees guide](/guides/how-vacation-rental-pet-fees-work), then save your answers in the [checklist tool](/tools/checklist).
 `,
   faqs: [
     {
@@ -171,7 +171,7 @@ Booked somewhere that says no pets? Ask the manager before you travel rather tha
     "midwest-exercise-pen-with-door",
     "north-states-mypet-universal-petgate",
   ],
-  relatedTools: ["checklist", "pet-cost-check"],
+  relatedTools: ["checklist"],
   sources: [
     {
       title: "About house rules",

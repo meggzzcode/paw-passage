@@ -28,14 +28,12 @@ relatedGuides:
   - how-vacation-rental-pet-fees-work
   - how-many-dogs-can-you-bring-to-a-vacation-rental
   - what-a-dog-really-costs-on-a-vacation-rental
-embeddedTool: pet-cost-workflow
 relatedProducts:
   - midwest-icrate-dog-crate
   - kurgo-loft-wander-dog-bed
   - soggy-doggy-microfiber-doormat
   - pet-parents-pawtect-pads
 relatedTools:
-  - pet-cost-check
   - will-my-dog-be-accepted
   - checklist
 sources:
@@ -203,7 +201,7 @@ You have found a cabin that says dogs stay free, and now you wonder what the cat
 
 - **Fee-free exists, but it is rare in our sample:** 3 of 38.
 - **"No pet fee" is a statement about one line of the bill.** None of the three pages we read gave a complete price picture.
-- **The fix is cheap:** put your dates and dog count into one total and compare it with a home that charges a fee. The [pet cost check](/tools/pet-cost-check) below does that.
+- **The fix is cheap:** put your dates and dog count into one total and compare it with a home that charges a fee. Our [pet fees guide](/guides/how-vacation-rental-pet-fees-work) shows how the charges add up.
 
 ## What the three fee-free managers say
 
@@ -268,7 +266,7 @@ Price the same dates and the same number of dogs for each place, and put every l
 
 The home with a pet fee is cheaper here. The numbers are made up, but the shape is real: Hapey's own page makes the same point about other companies' no-fee advertising. [[5]](https://hapeycabinrentals.com/why-dont-you-offer-direct-booking/)
 
-Use the tool below with your own figures. Enter the dates, dog count and every line you can find, and it totals the pet-related cost and builds a message to send the host.
+Do the same with your own figures: list the dates, dog count and every line you can find, add them up, and ask the host to confirm the total in writing.
 
 ## Keep a fee-free stay fee-free
 
@@ -319,4 +317,4 @@ Get the answer in the booking messages, not just a phone call. Our [two-dog plan
 
 ## Next step
 
-Pick two homes, one fee-free and one with a fee, and run both through the [pet cost check](/tools/pet-cost-check). Then send the host the questions above.
+Pick two homes, one fee-free and one with a fee, and work out the full total for each from the host's written quote. Then send the host the questions above.

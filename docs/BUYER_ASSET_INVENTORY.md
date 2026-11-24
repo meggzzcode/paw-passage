@@ -16,10 +16,10 @@ Branch vs live: the branch holds unmerged fixes (7 commits since `b81db6c`: Amaz
 | Original pet-policy dataset | 38 rows x 13 columns, read 2026-11-18, one source URL per row | `public/pet-policies-38-managers.csv`, `src/content/manager-policies.ts`, `docs/data/pet-policies-*.csv` (63 lines), route `/data/pet-policies` | Parsed CSV; live CSV is byte-identical to the repo file (HTTP 200, 8,660 bytes); live page returns Dataset JSON-LD | The one original data asset; drives a tool, a page and counts in guides |
 | Stay directory | 37 stay files; 32 listed and earning; 5 written up but hidden | `content/stays/*.yml` | Probe over `allStayRecords()` and `visibleStays()` | Programmatic local pages with pet-policy fields |
 | Dog-rules places | 14 files, all `unverified`; 0 public | `content/places/*.yml` | Probe over `visiblePlaces()`; live `/dog-rules` is `noindex, nofollow` and not in the sitemap | A research backlog, not a live asset |
-| Planning tools | 4 live (plus 2 redirects) | `src/routes/tools.*.tsx`, `src/components/site/*`, `src/lib/*` | Code read plus the test suite (section 6) | Interactive pages that link to guides |
+| Planning tools | 3 live (plus 3 redirects to `/tools`) | `src/routes/tools.*.tsx`, `src/components/site/*`, `src/lib/*` | Code read plus the test suite (section 6) | Interactive pages that link to guides |
 | Gear catalog | 74 product records; 53 active; 53 active with an approved Amazon link; 21 inactive | `content/products.yml`, `content/affiliates.yml` | Probe: `resolveProductLink()` returns an affiliate link for all 53 active products | Gear hub and in-article picks |
 | Affiliate links | 96 entries: 33 Vrbo (all approved), 63 Amazon (53 approved, 10 not approved) | `content/affiliates.yml` | YAML parsed and counted | Wiring is in place; accounts are not transferable |
-| Sitemap | 98 URLs live, equal to the locally generated 98 | `src/lib/sitemap-entries.ts`, `/sitemap.xml` | Live fetch 2026-11-23 vs probe of `sitemapEntries()`: no difference | Index-ready URL set |
+| Sitemap | 98 URLs live on 2026-11-24 before this removal, 97 locally after it | `src/lib/sitemap-entries.ts`, `/sitemap.xml` | Live fetch 2026-11-23 vs probe of `sitemapEntries()`: no difference | Index-ready URL set |
 | Pinterest pins | 30 pin images (1000x1500) + 30 CSV rows | `public/pins/*.jpg`, `docs/pinterest-pins.csv` | File count, `file` dimensions, CSV parse (8 boards) | Ready-to-post pins, no account |
 | Share (Open Graph) images | 31 (30 guide images + `default.jpg`), 1200x630 | `public/share/` | File count and `file` | Link previews |
 | Automated tests | 486 pass in 33 files | `src/test/*.test.ts(x)` | `bunx vitest run` | Regression safety |
@@ -89,10 +89,9 @@ Original vs public facts: each cell is a public fact stated on a manager's own p
 |---|---|---|---|
 | Will my dog be accepted? | `/tools/will-my-dog-be-accepted` | Takes number of dogs, weights and breed group; compares against the 38 managers and marks each fits / ask / conflict with reasons (`src/lib/dog-accepted.ts`) | Code read; `dog-accepted.test.ts` passes |
 | Pack your dog's bag | `/tools/packing-list` | 15 packing items in 7 groups, tailored by a 5-flag trip profile (car, rental, senior, bolter, no fence); item detail with gear links; ticks saved in the browser (`src/lib/packing.ts`, `PackingBuilder.tsx`) | Code read; `packing.test.ts` passes |
-| Pet cost and host confirmation | `/tools/pet-cost-check` (old `/tools/cost-calculator` and `/tools/host-questions` redirect with 301) | 3-step workflow: trip details, compare up to 3 quotes with the real pet-fee total (`petFeeTotal`: per stay / night / dog / dog-night), then generate a message asking the host to confirm the fee in writing | Code read; `pet-fee-calc.test.ts`, `pet-cost-workflow.test.tsx`, `tools-fixes.test.tsx` pass |
 | Before-you-book checklist | `/tools/checklist` | 5 groups, 25 items, saved in the browser, printable (`src/content/checklist.ts`) | Code read; item count by script |
 
-The same pet-cost workflow can be embedded inside an article (`embeddedTool: pet-cost-workflow`). Tools were verified by reading code and running their tests; they were not driven in a browser in this audit.
+The standalone pet cost check tool (and the `embeddedTool` article field) was removed on 2026-11-24 because it added little value and needed upkeep; its old address and the older `/tools/cost-calculator` and `/tools/host-questions` addresses now redirect with 301 to `/tools`. Tools were verified by reading code and running their tests; they were not driven in a browser in this audit.
 
 ## 7. Affiliate wiring (what is approved and what is not; no commission figures)
 
@@ -122,8 +121,8 @@ The same pet-cost workflow can be embedded inside an article (`embeddedTool: pet
 
 | Item | State | Verified how |
 |---|---|---|
-| Sitemap | `/sitemap.xml` generated from the same rules as the pages: 98 URLs (30 guides, 24 `/stays` URLs, 13 gear, 9 destinations, 5 dogs, 5 tools, `/`, `/data/pet-policies`, 9 trust/info pages); `lastmod` set on guides and stays | Live fetch vs probe: identical |
-| Sitemap by section | guides 31, stays 24, gear 13, destinations 9, tools 5, dogs 5, home 1, data 1, and one each for about, contact, list-your-property, affiliate-disclosure, privacy, terms, editorial-standards, methodology, corrections | counted from live XML |
+| Sitemap | `/sitemap.xml` generated from the same rules as the pages: 97 URLs (30 guides, 24 `/stays` URLs, 13 gear, 9 destinations, 5 dogs, 4 tools, `/`, `/data/pet-policies`, 9 trust/info pages); `lastmod` set on guides and stays | Live fetch vs probe: identical |
+| Sitemap by section | guides 31, stays 24, gear 13, destinations 9, tools 4, dogs 5, home 1, data 1, and one each for about, contact, list-your-property, affiliate-disclosure, privacy, terms, editorial-standards, methodology, corrections | counted from live XML |
 | Titles | `pageHead()` sets title and description per page, with a 60/160 character limit enforced in the guide schema; live guide title example: "Rental Pet Fees: 25 of 38 State a Fee \| Paws & Passage" | `src/lib/seo.ts`, `src/content/schema.ts`; live fetch |
 | Canonical | Absolute canonical on every page, on `www.pawsandpassage.com` | live fetch of 5 page types |
 | Robots | `public/robots.txt` allows Googlebot, Bingbot, Twitterbot, facebookexternalhit and `*`, and lists the sitemap; live robots.txt is identical. Thin or empty pages get `noindex, nofollow` (live `/dog-rules` does) | file and live fetch |
@@ -193,7 +192,7 @@ Corrected values are from the 2026-11-23 verification above.
 | "you see Articles, Stays, Affiliate links and Business settings" (section 6 step 5) | `.pages.yml` defines 6 collections: guides, stays, places, affiliates, products, settings |
 | "Articles: `content/guides/*.md` (one converted so far...)" (section 9) | 26 Markdown guide files; 7 remain in `src/content/guides/*.ts` |
 | "15 of the 24 guides, the towns, the gear product lists and the legal pages are code" (section 8 item 1) | 7 of 33 guides are code; gear product lists are CMS-editable |
-| "planning tools (a checklist and a pet cost and host confirmation tool)" (section 1) | 4 tools: will-my-dog-be-accepted, packing-list, pet-cost-check, checklist |
+| "planning tools" (section 1) | 3 tools: will-my-dog-be-accepted, packing-list, checklist (the pet cost check was removed 2026-11-24) |
 | "198 automatic site checks and 61 real-browser checks" / "216 checks" / "7 pages compared" (section 5) | Dated 2026-11-16/17 results; `docs/GO-LIVE-PLAN.md` records 321 of 321 live checks on 2026-11-19 (not re-run in this audit) |
 
 ### HANDOVER.md

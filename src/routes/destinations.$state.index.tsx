@@ -113,8 +113,8 @@ function StatePage() {
         ) : (
           <p className="mt-3 text-muted-foreground">
             We haven't listed any stays here yet.{" "}
-            <Link to="/tools/pet-cost-check" className="text-primary underline">
-              Use the pet cost and host confirmation tool
+            <Link to="/tools/will-my-dog-be-accepted" className="text-primary underline">
+              Use the dog policy checker
             </Link>{" "}
             to check any rental you're considering.
           </p>

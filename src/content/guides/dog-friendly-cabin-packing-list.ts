@@ -37,7 +37,7 @@ export const guide: Guide = {
 
 ## Before packing: five questions for the host
 
-Put these through the booking platform so the answers are saved. Our [host question generator](/tools/pet-cost-check) and [vacation rental checklist](/guides/pet-friendly-vacation-rental-checklist) help.
+Put these through the booking platform so the answers are saved. Our [vacation rental checklist](/guides/pet-friendly-vacation-rental-checklist) helps.
 
 - **Where can the dog go, and can it stay alone?** Furniture, bedroom, deck and hot-tub restrictions; any crating requirement or time limit.
 - **What separates living and sleeping areas?** Ask for stair photos, doorway widths, and details of open lofts or deck railings.
@@ -168,7 +168,7 @@ Trial anything new, such as boots, barriers, crates and restraints, at home firs
 
 ## What to buy first
 
-A lid-tight food container, a drying towel and an entry mat come first; a cooling pad only if the trip is in warm weather. Turn this into your own checklist with the [packing list tool](/tools/packing-list), then run the [before-you-book checklist](/tools/checklist) and the [pet cost and host confirmation tool](/tools/pet-cost-check) for the booking side. When you are ready to choose a cabin, browse [dog-friendly stays](/stays).`,
+A lid-tight food container, a drying towel and an entry mat come first; a cooling pad only if the trip is in warm weather. Turn this into your own checklist with the [packing list tool](/tools/packing-list), then run the [before-you-book checklist](/tools/checklist) for the booking side. When you are ready to choose a cabin, browse [dog-friendly stays](/stays).`,
   faqs: [
     {
       q: "How much dog food should I pack for a cabin vacation?",
@@ -204,7 +204,7 @@ A lid-tight food container, a drying towel and an entry mat come first; a coolin
     "kurgo-loft-wander-dog-bed",
     "ruffwear-the-beacon-dog-safety-light",
   ],
-  relatedTools: ["checklist", "pet-cost-check"],
+  relatedTools: ["checklist"],
   sources: [
     {
       title: "Bear Safety: Storing Food",

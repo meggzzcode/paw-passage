@@ -37,7 +37,6 @@ relatedProducts:
   - pet-parents-pawtect-pads
 relatedTools:
   - checklist
-  - pet-cost-check
 sources:
   - title: Getting charged for damage
     url: https://www.airbnb.com/help/article/1415
@@ -310,4 +309,4 @@ Airbnb's ground rules say service animals, and in some locations emotional suppo
 - [ ] Decide: pay, pay part or decline, using the matching script.
 - [ ] Keep everything on the platform.
 
-Next trip, run the [pet cost check](/tools/pet-cost-check) and add photo steps to the [trip checklist](/tools/checklist) or our [rental checklist](/guides/pet-friendly-vacation-rental-checklist). If you leave the dog in the rental, see [leaving a dog alone](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental). For the full picture of trip costs, see [what a dog really costs on a rental trip](/guides/what-a-dog-really-costs-on-a-vacation-rental).
+Next trip, add photo steps to the [trip checklist](/tools/checklist) or our [rental checklist](/guides/pet-friendly-vacation-rental-checklist). If you leave the dog in the rental, see [leaving a dog alone](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental). For the full picture of trip costs, see [what a dog really costs on a rental trip](/guides/what-a-dog-really-costs-on-a-vacation-rental).

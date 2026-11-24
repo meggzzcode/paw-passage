@@ -16,7 +16,6 @@ import { Route as dogsIndex } from "@/routes/dogs.index";
 import { Route as destIndex } from "@/routes/destinations.index";
 import { Route as toolsIndex } from "@/routes/tools.index";
 import { Route as checklist } from "@/routes/tools.checklist";
-import { Route as petCost } from "@/routes/tools.pet-cost-check";
 import { Route as accepted } from "@/routes/tools.will-my-dog-be-accepted";
 import { Route as packing } from "@/routes/tools.packing-list";
 import { Route as policies } from "@/routes/data.pet-policies";
@@ -61,7 +60,6 @@ describe("meta tags", () => {
       ["/destinations", headOf(destIndex)],
       ["/tools", headOf(toolsIndex)],
       ["/tools/checklist", headOf(checklist)],
-      ["/tools/pet-cost-check", headOf(petCost)],
       ["/tools/will-my-dog-be-accepted", headOf(accepted)],
       ["/tools/packing-list", headOf(packing)],
       ["/data/pet-policies", headOf(policies)],

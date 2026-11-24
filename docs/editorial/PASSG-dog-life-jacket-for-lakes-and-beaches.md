@@ -1,0 +1,5 @@
+# Pass G: dog-life-jacket-for-lakes-and-beaches
+Source: content/guides/dog-life-jacket-for-lakes-and-beaches.md. Body words 1,584 to 1,380.
+Fixed: deleted the Maker says/Independent/Our read explainer and labels; table size column now one clear line per jacket (Float Coat per-size girth list; DFD "XS 19-32 in, XL 30-48 in, ranges overlap"; Dawson none listed); page says "sizes are by chest girth; the maker also lists weight ranges"; card chips/text no longer repeat figures; Outward Hound "calm water / unattended" stated once in prose plus once as a general rule, FAQs removed; "between sizes" FAQ and sizing FAQ removed; Newman-Dailey/Twiddy paragraph and beach FAQ replaced by one sentence linking both sources; "we can't assess a dog from here" and the "no source we read" hedge on boating pages removed.
+Flag for lead: catalog cardSpecs for ezydog-dfd-life-jacket shows "XS 15-25 lbs to XL 90+ lbs" (weight) and ruffwear-float-coat chip "girth 13-42 in" still repeats the table; catalog not edited.
+Verification: all 16 frontmatter source URLs still linked.

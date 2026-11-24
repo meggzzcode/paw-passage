@@ -15,11 +15,11 @@ export const guide: Guide = {
   lastReviewed: "2026-11-24",
   readingMinutes: 5,
   heroImage: "guide-packing-list-boots",
-  body: `Cabin weekends fail on small things: a missing medication dose, muddy paws on a white rug, a food bag left on the porch. Start with the essentials below, then add only what your cabin and season call for. Before you load the car, confirm four things with the rental: where the dog may go, what the stairs and yard are like, how food and rubbish are stored, and what, if anything, the cabin supplies.
+  body: `Cabin weekends fail on small things: a missing medication dose, muddy paws on a white rug, a food bag left on the porch. Start with the essentials below, then add only what your cabin and season call for.
 
 ## Essential packing checklist
 
-Everything here goes in the car for any two- or three-night stay.
+Everything here goes in the car for any two- or three-night stay. Want it matched to your dog and dates? [Build your own list in two minutes](/tools/packing-list).
 
 **Food and water**
 - [ ] Your dog's usual food, measured for every day plus one or two spare days
@@ -52,18 +52,16 @@ Pick the lines that match your booking. These are situation-dependent: skip the 
 
 - **Stairs, a loft or a deck.** Ask for photos and doorway widths. A portable gate or pen can block a kitchen or an unsuitable room if the host agrees. Never use a pressure-mounted gate at the top of stairs; it must be approved by its maker for that position, which usually means hardware mounting. If the stairs are a problem, change the sleeping arrangement or the property. Options are in [pens and gates](/gear/pens-and-gates).
 - **A "fenced" yard.** Ask about height, gaps and gate latches. Keep the dog leashed until you have walked the fence line yourself. Our [fenced-yard guide](/guides/vacation-rental-secure-fenced-yard) lists what to look for.
-- **Bear country or wildlife.** Treat pet food as scented. [BearWise](https://bearwise.org/six-bearwise-basics/never-leave-pet-food-outdoors/) says pet food is rich in fat and protein, so feed indoors when possible, and if you must feed outside, give single portions and take the food and bowls in afterward. Bring bowls inside at night. The [National Park Service](https://www.nps.gov/articles/bearsafetyfood.htm) says rules differ from park to park, and an ordinary bin or cooler is not a bear-proof container. Ask the host what the cabin uses.
 - **Trails nearby.** A dog-accepting rental does not make every trail dog-friendly. Check each trail's leash rule, then see [hiking gear for a cabin trip](/guides/dog-hiking-gear-for-a-cabin-vacation).
 - **Water.** Lake or beach days need a fitted life jacket; see the [life jacket fit-test guide](/guides/dog-life-jacket-for-lakes-and-beaches).
 - **Two dogs.** Separate beds and bowls. See the [two-dog guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental).
 - **Furniture.** A pet fee does not mean furniture permission. Get the rule in writing, and use a washable cover only where the host allows dogs on furniture.
 
-## What to bring for the drive
+## What to keep within reach on the drive
 
-Keep these within reach, not buried in the boot:
+Pack the essentials above, but keep these where you can grab them:
 
-- [ ] Water, bowl, treats and waste bags
-- [ ] Medication and the offline folder
+- [ ] Water, bowl and waste bags
 - [ ] Your usual restraint: a fitted harness clipped to a seat-belt attachment, or a secured crate
 - [ ] A towel for the first muddy stop
 - [ ] Today's food, so you can feed on schedule if you arrive late
@@ -74,7 +72,7 @@ Plan a stop every few hours for water and a toilet break. For restraint choices,
 
 **Sleep.** Put the bed away from the entrance and use a washable blanket or old sheet over it. Bring a crate only if your dog already uses one; a cabin is a poor place to try crating for the first time. Keep the food your dog usually eats, because a new food on holiday invites an upset stomach.
 
-**Food.** Measure meals before you leave and store them as the property and park direct. Wash bowls and put supplies away after each meal. More options are in the [travel bowls and food storage guide](/guides/dog-travel-bowls-and-food-storage).
+**Food.** Measure meals before you leave and store them as the property and park direct. In bear country, treat pet food as scented: [BearWise](https://bearwise.org/six-bearwise-basics/never-leave-pet-food-outdoors/) says it is rich in fat and protein, so feed indoors when possible and take food and bowls in after each meal and at night. An ordinary bin or cooler is not a bear-proof container, and rules differ from park to park ([National Park Service](https://www.nps.gov/articles/bearsafetyfood.htm)). Ask the host what the cabin uses. More options are in the [travel bowls and food storage guide](/guides/dog-travel-bowls-and-food-storage).
 
 **Cleanup.** Dry the dog at the door and wipe paws before they cross the floor. Use dog-only towels in a color you will recognize, and leave the rental's bath towels alone unless the host says otherwise. An old towel does the job; a purpose-made one, such as the [Soggy Doggy](https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey) Super Shammy below, is a convenience, not a requirement.
 
@@ -91,46 +89,24 @@ If an accident happens, blot promptly, follow the property's cleaning instructio
 ## What can stay home
 
 - Anything the host confirms is supplied, such as a bed or bowls. A bowl in an old listing photo is not a promise.
-- A bear-proof container you do not need: many cabins have indoor storage.
 - Boots and coats for mild weather and short paved walks.
 - A big toy collection. Two familiar toys and a chew are enough.
 - Cooling gear for a cool season, and a tick kit for a snowy one.
 
-## Build your own list
-
-The [packing list tool](/tools/packing-list) turns your dog, dates and season into a checklist you can tick off on your phone. Run the [before-you-book checklist](/tools/checklist) first if you are still choosing a property.
-
 ## Final departure check
 
+Last-minute items only. Still choosing a property? Run the [before-you-book checklist](/tools/checklist) first.
+
 - [ ] Host answers saved in writing
-- [ ] Food, medication, leash, ID and offline folder in the car
-- [ ] Bed, towels and waste bags packed
 - [ ] Vet and emergency hospital routes downloaded
-- [ ] Anything new, such as boots or barriers, tried at home first`,
+- [ ] Tomorrow's weather and road conditions checked
+- [ ] Today's food and water bowl within reach
+- [ ] Anything new, such as boots or barriers, tried at home first
+- [ ] Dog walked and toileted just before you leave`,
   faqs: [
-    {
-      q: "What should I pack for a dog at a cabin?",
-      a: "Food and medication with a reserve, ID and offline records, a leash and spare bags, barriers and runners if the host permits, a towel and a familiar bed, a first-aid kit, and seasonal extras such as a tick tool or a winter-hazard check. Ask the host about stairs, fencing and food storage first.",
-    },
     {
       q: "How much dog food should I pack for a cabin vacation?",
       a: "Measure your dog's usual food for all travel and cabin days, then add a reserve appropriate to the property's remoteness and likely delays. Follow local wildlife-storage rules.",
-    },
-    {
-      q: "Should I bring a dog gate to a rental cabin?",
-      a: "Possibly, once you confirm doorway dimensions and host permission. Do not use a pressure-mounted gate at the top of stairs. Use a stair gate only if its maker approves it for that position, which usually means hardware mounting, and get the host's permission first; otherwise arrange a different secure sleeping area.",
-    },
-    {
-      q: "Can I leave dog food on the cabin deck in a sealed bin?",
-      a: "No. BearWise says to store pet food where bears cannot see or smell it, and NPS says bear-resistant containers only work when closed and locked. Follow the property's instructions and local wildlife rules.",
-    },
-    {
-      q: "Do I need furniture covers if the cabin charges a pet fee?",
-      a: "A pet fee does not establish furniture permission, so confirm the rules first. Where furniture is allowed, a washable cover helps with hair and damp paws but does not remove responsibility for damage.",
-    },
-    {
-      q: "Do I need a bear-proof container for dog food at a cabin?",
-      a: "An ordinary bin or cooler is not bear-proof. Keep pet food and bowls indoors or stored as the property and local wildlife rules direct, and ask the host what the cabin uses.",
     },
   ],
   relatedGuides: [

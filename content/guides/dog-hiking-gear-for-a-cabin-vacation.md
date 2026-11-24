@@ -18,14 +18,10 @@ faqs:
     a: Not for every trail. NPS suggests booties for longer hikes, and AKC lists weather-related conditions such as heat blisters and uneven terrain as reasons to consider them. No source we read gives a distance or temperature at which boots become necessary, so check your dog's paws and the surface.
   - q: Is a harness better than a collar on steep trails?
     a: PetMD says a harness gives a more secure hold than a collar, and Orvis suggests one for a dog that stays leashed for the whole hike. Neither source tests this on steep ground, so treat it as common advice, not a measured result.
-  - q: How long should a trail leash be?
-    a: NPS says to always keep your dog on a 6 foot leash. Orvis suggests about six feet and no more than ten, and advises against retractable leashes. A trail or park may set its own limit, so read the posted rule.
   - q: Can my dog hike in a national park?
     a: Often only in limited places. NPS says many parks do not allow pets on hiking trails or boardwalks, so check the specific park before you go. National forests are different, but leash rules still apply in developed sites and each forest sets its own.
   - q: How do I size boots and a harness from the maker's chart?
     a: Ruffwear sizes its boots by the widest part of each paw while the dog is standing and says to size down if you are between boot sizes. It sizes its harness by girth around the widest part of the rib cage; check the chart for the exact product you buy.
-  - q: What should I bring on a dog hike from a cabin?
-    a: A fixed leash of six feet or less, water and a bowl, waste bags, a light if you may be out near dusk, and boots only if the terrain calls for them. NPS and Orvis give the leash and water advice. Check the trail's own rules first, because many parks do not allow pets on trails.
 relatedGuides:
   - dog-friendly-cabin-packing-list
   - if-your-dog-gets-loose-on-a-trip
@@ -34,8 +30,6 @@ relatedGuides:
 relatedProducts:
   - ruffwear-web-master-harness
   - ruffwear-grip-trex-boots
-  - ruffwear-knot-a-leash
-  - ruffwear-the-beacon-dog-safety-light
   - ruffwear-quencher-bowl
 relatedTools:
   - packing-list
@@ -159,97 +153,15 @@ Most cabin hikes need four things: a fixed leash, water, a bowl and waste bags. 
 
 ## What to bring on most hikes
 
-**Basic essentials**
-
-- **A fixed leash, six feet or less.** [NPS](https://www.nps.gov/subjects/trails/hiking-with-pets.htm) says to always keep your dog on a 6 foot leash. [PetMD](https://www.petmd.com/dog/general-health/best-hiking-gear-for-dogs) says a 6-foot rope leash suits most hikes and keeps a dog away from hazards such as cliffs. [Orvis](https://www.orvis.com/how-to-hike-safely-with-your-dog.html) says preferably six feet, never over ten, and no retractables. A posted trail limit overrides all three.
-- **Water for the dog.** The Gila National Forest page says to bring enough water for your dog ([U.S. Forest Service](https://www.fs.usda.gov/r03/gila/safety-ethics/canine-campers-bringing-dogs-national-forest)).
+- **A fixed leash.** Not a retractable one; [Orvis](https://www.orvis.com/how-to-hike-safely-with-your-dog.html) advises against them. The length rule is in the trail rules below.
+- **Water for the dog.** Plan a water break every fifteen minutes to half hour, depending on difficulty and temperature ([Orvis](https://www.orvis.com/how-to-hike-safely-with-your-dog.html)). The [AKC](https://www.akc.org/expert-advice/lifestyle/dog-boots/) rule for the ground you stop on: if you would not walk barefoot on it, your dog should not.
 - **A bowl.** Any collapsible one works.
-- **Waste bags.** [NPS](https://www.nps.gov/subjects/trails/hiking-with-pets.htm) says to follow Leave No Trace and dispose of waste; another NPS page says it can carry harmful bacteria into fresh water and pass diseases to wildlife.
-
-If you already own a plain six-foot leash, buy another only if yours is retractable or too long. If you do want a trail leash, [Ruffwear](https://ruffwear.com/products/knot-a-leash-dog-leash)'s Knot-a-Leash is 5 ft in both sizes, with reflective rope and an auto-locking carabiner; Small has 7 mm rope and Large 11 mm. No strength rating is listed, so judge the rope thickness against your dog's pulling.
-
-{{pick:ruffwear-knot-a-leash|A fixed 5 ft trail leash|Reflective rope with an auto-locking carabiner. Skip it if your own fixed leash is six feet or shorter.|https://ruffwear.com/products/knot-a-leash-dog-leash}}
-
-### Water stops
-
-[Orvis](https://www.orvis.com/how-to-hike-safely-with-your-dog.html) says water breaks every fifteen minutes to half hour, depending on difficulty and temperature. [AKC](https://www.akc.org/expert-advice/lifestyle/dog-boots/)'s rule for the ground you stop on: if you would not walk barefoot on it, your dog should not.
-
-**Optional convenience:** [Ruffwear](https://ruffwear.com/products/quencher-dog-bowl)'s Quencher is one size (Medium) with a 4,000 mm waterproof-rated lining, hand wash and air dry only; the shell is water-resistant, not waterproof. It packs flat and suits a dog that drinks a lot on a long loop. Skip it if you want dishwasher-safe or already carry a bowl.
-
-{{pick:ruffwear-quencher-bowl|A packable trail bowl, 4.2 cups (1 L)|One size, Medium, with a 5.5 in opening. Hand wash only.|https://ruffwear.com/products/quencher-dog-bowl}}
-
-## What to bring only for specific conditions
-
-**Conditions-dependent gear.** Match the item to the problem. If your hike does not have the problem, skip it.
-
-- **Steep or scrambling ground:** a harness with a handle and back clip.
-- **Sharp scree, hot rock or a long descent:** boots, once a test hike shows your dog needs them.
-- **A hike that may run past dusk:** a light on the dog or a headlamp on you.
-- **Hot or humid weather:** extra water, shorter distance and earlier start. No product replaces that.
-
-Details and sizing are in the comparison section below.
-
-## How rules, terrain, weather and your dog change the plan
-
-**Trail rules.** They differ by land manager, so start with who runs the trail.
-
-- **National parks.** [NPS](https://www.nps.gov/articles/000/idkt_pets.htm) says "Many parks do not allow pets on hiking trails or boardwalks"; another NPS page says some parks welcome pets on trails and to check which areas are off-limits. A trail the dog cannot use makes every item above pointless, so settle this before you buy.
-- **National forests.** The Gila page says pets must be leashed in developed recreation sites, including campgrounds, picnic areas and trailheads. That is one forest; read the page for yours.
-- **State, county and local trails.** [Washington Trails Association](https://www.wta.org/hiking-info/basics/hiking-with-dogs) says dogs must be leashed on all King County trails. That is a Washington example, not a national rule.
-
-Ask the rental host which nearby trails allow dogs and get the trail name in writing. Our [pre-booking checklist](/tools/checklist) has the other questions.
-
-**Terrain.** Rough, steep or rocky ground raises the odds you need a harness or boots. Soft forest paths usually do not.
-
-**Weather.** [NPS](https://www.nps.gov/subjects/trails/hiking-with-pets.htm) says "dogs don't sweat like humans do, so they're at higher risk of overheating." Cornell lists short-muzzle, elderly and overweight dogs as higher risk and advises avoiding strenuous exercise in hot, humid weather. Its signs of heatstroke include heavy panting, drooling, vomiting, weakness, confusion, seizures and collapse, and treatment is immediate cooling and veterinary care ([Cornell Vet](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/heatstroke-medical-emergency)). The Gila page adds that even a few minutes in a summer car can kill or seriously injure a pet ([U.S. Forest Service](https://www.fs.usda.gov/r03/gila/safety-ethics/canine-campers-bringing-dogs-national-forest)).
-
-**Your dog and other trail users.** [NPS](https://www.nps.gov/articles/000/idkt_pets.htm) says pets can startle or provoke animals, causing injury. WTA says to yield to hikers and that a dog meeting a horse must yield the trail; Orvis says hikers without dogs have the right-of-way. The Gila page says not to let a pet bark, lunge or run up to people and dogs. [NPS](https://www.nps.gov/subjects/trails/hiking-with-pets.htm) says to consider leaving a dog that is reactive in new spaces at home; our [guide to a reactive dog at a rental](/guides/vacation-rental-with-a-reactive-dog) covers the stay.
-
-## Comparing the options
-
-### Harness or collar
-
-[PetMD](https://www.petmd.com/dog/general-health/best-hiking-gear-for-dogs) says "harnesses provide a more secure hold than a collar" and can be more comfortable for a dog that pulls. Orvis suggests one for a dog leashed the whole hike. Our reasoning for steep ground: on a ledge or wet step you may need to steady or lift the dog, and a collar clip puts that pull on the neck. On easy paths a collar is fine.
-
-[Ruffwear](https://ruffwear.com/products/web-master-dog-harness)'s Web Master has a reinforced handle for lift and assist, three leash attachment points (including a chest loop for pullers) and a neck buckle for dogs that dislike going over the head. Any harness with a handle and a back clip does that job. Measure girth around the widest part of the rib cage: XXS 13-17 in, XS 17-22, S 22-27, M 27-32, L/XL 32-42. Fit it at the cabin before the trail.
-
-{{pick:ruffwear-web-master-harness|A lift handle for steep, rocky trails|Three leash points for a dog you may need to steady. Skip it on easy paths.|https://ruffwear.com/products/web-master-dog-harness}}
-
-### Boots or bare paws
-
-Boots solve specific problems and are not for every dog.
-
-- [NPS](https://www.nps.gov/subjects/trails/hiking-with-pets.htm): "For longer hikes, consider booties to keep his paws safe."
-- [AKC](https://www.akc.org/expert-advice/lifestyle/dog-boots/) says boots can help prevent heat blisters and frostbite and reduce the risk of severed nails on uneven terrain, slopes and slippery rocks.
-- [Outward Hound](https://www.outwardhound.com/furtropolis/product/dog-hiking-gear) says boots protect pads from hot asphalt, sharp rubble or ice.
-- Orvis says sensitive paws may need help on rough trails and that dogs can overheat if booties stay on too long.
-
-None gives a cutoff, so this is our judgment: a dog on soft forest paths for an hour probably does not need them; sharp scree, hot rock or a long descent might. Check pads after every hike either way.
-
-[Ruffwear](https://ruffwear.com/products/grip-trex-dog-boots)'s Grip Trex has a Vibram outsole and a mesh upper; the traction wording is the maker's own. Ruffwear says: "Measure across widest part of paw when bearing weight. Measure ALL paws. If between sizes, size down." Front and rear paws can differ, so you may need two sizes. AKC's home method is to trace the paw on paper and measure across the widest part. Practice with one boot, then the second, indoors on day one, not at the trailhead, and check the fit about 15 minutes into the hike.
-
-{{pick:ruffwear-grip-trex-boots|Boots for sharp rock or hot ground|Sold as a set of two, in paw widths from 1.50 to 3.25 in. Skip them for soft trails.|https://ruffwear.com/products/grip-trex-dog-boots}}
-
-### Light or reflective trim
-
-**Optional convenience.** A late start or slow descent can leave you on the trail at dusk. PetMD notes that reflective taping on a leash increases visibility in low light. In our view a reflector shows only when a beam hits it, and a light shows on its own.
-
-Ruffwear's Beacon has three modes (Slow Flash, Fast Flash, Always On), up to 20 hours of run time, about 1.5 hours to charge by micro USB and a waterproof-to-1-m-for-30-minutes rating, all the maker's figures. It clips to [Ruffwear](https://ruffwear.com/products/the-beacon-safety-dog-light) collars and apparel with light loops. Without a loop, a headlamp on you or another maker's clip-on does the same job. Skip it if you will be off the trail by dusk. A light helps you see the dog; it does not find a lost one (see our [loose dog guide](/guides/if-your-dog-gets-loose-on-a-trip)).
-
-{{pick:ruffwear-the-beacon-dog-safety-light|A clip-on light that shows without a beam|Three modes and three colors. Skip it for daytime hikes.|https://ruffwear.com/products/the-beacon-safety-dog-light}}
-
-### A note on brands
-
-All five products here are Ruffwear, the catalog we researched, and no source we read ranks brands. Each answers a different need, and each has a generic equivalent that works if you fit it the same way.
-
-## Packing and trail-day preparation
-
-Measure two things tonight: the girth around your dog's rib cage and the width of each paw while standing. Test any new gear at the cabin first. On the day, check the trail rules and the forecast, start early in warm weather, and keep the dog out of a parked car. Our [cabin packing list](/guides/dog-friendly-cabin-packing-list), [bowls and food storage guide](/guides/dog-travel-bowls-and-food-storage) and [life jacket guide](/guides/dog-life-jacket-for-lakes-and-beaches) (if the hike ends at a lake) cover the rest, and the [trail and hiking gear page](/gear/trail-and-hiking) lists the products together.
+- **Waste bags.** Leave No Trace applies, and dog waste can carry harmful bacteria into fresh water and pass diseases to wildlife ([National Park Service](https://www.nps.gov/articles/000/idkt_pets.htm)).
 
 ## Trail-day checklist
 
 - [ ] Dogs are allowed on this trail, and you have the trail name.
-- [ ] Fixed leash, six feet or less.
+- [ ] Fixed leash.
 - [ ] Water and a bowl.
 - [ ] Waste bags.
 - [ ] Forecast checked; hot day means a shorter, earlier walk.
@@ -258,6 +170,46 @@ Measure two things tonight: the girth around your dog's rib cage and the width o
 - [ ] Possible dusk: light or headlamp.
 
 Add these to our [packing list tool](/tools/packing-list).
+
+## Check the trail rules first
+
+Rules differ by land manager, so start with who runs the trail. A trail the dog cannot use makes every item here pointless, so settle this before you buy.
+
+- **National parks.** NPS says to always keep your dog on a 6 foot leash, and that many parks do not allow pets on hiking trails or boardwalks ([National Park Service](https://www.nps.gov/subjects/trails/hiking-with-pets.htm)). Some parks welcome pets on trails, so check which areas are off-limits.
+- **National forests.** The Gila National Forest page says pets must be leashed in developed recreation sites, including campgrounds, picnic areas and trailheads, and not to let a pet bark, lunge or run up to people and dogs ([U.S. Forest Service](https://www.fs.usda.gov/r03/gila/safety-ethics/canine-campers-bringing-dogs-national-forest)). That is one forest; read the page for yours.
+- **State, county and local trails.** The [Washington Trails Association](https://www.wta.org/hiking-info/basics/hiking-with-dogs) says dogs must be leashed on all King County trails, and to yield to hikers and horses. That is a Washington example, not a national rule.
+
+A posted limit overrides all of these. Ask the rental host which nearby trails allow dogs and get the trail name in writing; our [pre-booking checklist](/tools/checklist) has the other questions. If your dog is reactive in new spaces, NPS suggests leaving it at home, and our [guide to a reactive dog at a rental](/guides/vacation-rental-with-a-reactive-dog) covers the stay.
+
+## Heat, terrain and daylight
+
+**Heat.** Dogs don't sweat like humans do and are at higher risk of overheating ([National Park Service](https://www.nps.gov/subjects/trails/hiking-with-pets.htm)). Short-muzzle, elderly and overweight dogs are higher risk, and Cornell advises avoiding strenuous exercise in hot, humid weather. Heavy panting, drooling, vomiting, weakness, confusion, seizures and collapse are signs of heatstroke; treatment is immediate cooling and veterinary care ([Cornell Vet](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/heatstroke-medical-emergency)). Extra water, a shorter distance and an earlier start do more than any product, and a parked car is never a rest stop.
+
+**Terrain.** Rough, steep or rocky ground raises the odds you need a harness or boots. Soft forest paths usually do not.
+
+**Daylight.** A late start or slow descent can leave you out at dusk.
+
+## Which gear for which problem
+
+All three cards below are Ruffwear, the catalog we researched; no source we read ranks brands, and any gear that fits the same way does the same job. Skip each one if your hike does not have its problem.
+
+**Water.** On a long loop with a thirsty dog, a packable bowl saves carrying a rigid one. The Quencher folds flat; the catch is hand wash and air dry only, so skip it if you already carry a bowl or want dishwasher-safe.
+
+{{pick:ruffwear-quencher-bowl|A packable trail bowl, 4.2 cups (1 L)|One size, Medium, with a 5.5 in opening.|https://ruffwear.com/products/quencher-dog-bowl}}
+
+**Harness, for steep ground.** [PetMD](https://www.petmd.com/dog/general-health/best-hiking-gear-for-dogs) says harnesses provide a more secure hold than a collar. Our reasoning: on a ledge or wet step you may need to steady or lift the dog, and a collar clip puts that pull on the neck. On easy paths a collar is fine. [Ruffwear](https://ruffwear.com/products/web-master-dog-harness)'s Web Master has a reinforced handle and a chest loop for pullers. Any harness with a handle and a back clip does that job. Size by girth around the widest part of the rib cage (XXS 13-17 in, XS 17-22, S 22-27, M 27-32, L/XL 32-42), and fit it at the cabin before the trail.
+
+{{pick:ruffwear-web-master-harness|A lift handle for steep, rocky trails|The handle is for lifting or steadying a dog on rock; a collar is fine on easy paths.|https://ruffwear.com/products/web-master-dog-harness}}
+
+**Boots, only if conditions call for them.** NPS suggests booties for longer hikes, and [AKC](https://www.akc.org/expert-advice/lifestyle/dog-boots/) says they can help prevent heat blisters and reduce the risk of severed nails on uneven terrain and slippery rocks. [Outward Hound](https://www.outwardhound.com/furtropolis/product/dog-hiking-gear) adds hot asphalt, sharp rubble and ice, and Orvis warns that dogs can overheat if booties stay on too long. None gives a cutoff, so this is our judgment: a dog on soft forest paths for an hour probably does not need them; sharp scree, hot rock or a long descent might. Check pads after every hike either way. [Ruffwear](https://ruffwear.com/products/grip-trex-dog-boots) says to measure across the widest part of each paw while the dog bears weight, to measure all paws, and to size down if between sizes; front and rear can differ, so you may need two sizes. Practice indoors on day one, not at the trailhead, and check the fit about 15 minutes in.
+
+{{pick:ruffwear-grip-trex-boots|Boots for sharp rock or hot ground|Sold as a set of two, in paw widths from 1.50 to 3.25 in.|https://ruffwear.com/products/grip-trex-dog-boots}}
+
+**A light, only for dusk.** A reflector shows only when a beam hits it, and a light shows on its own. Ruffwear's [Beacon](https://ruffwear.com/products/the-beacon-safety-dog-light) clips to collars and apparel with light loops; without a loop, a headlamp on you does the same job. A light helps you see the dog; it does not find a lost one (see our [loose dog guide](/guides/if-your-dog-gets-loose-on-a-trip)).
+
+**A new leash, only if yours does not work.** If your own fixed leash is retractable or longer than the trail allows, a rope leash such as [Ruffwear](https://ruffwear.com/products/knot-a-leash-dog-leash)'s Knot-a-Leash (5 ft, reflective) fits the rule. No strength rating is listed, so judge the rope thickness against your dog's pulling. Otherwise keep the one you have.
+
+Our [cabin packing list](/guides/dog-friendly-cabin-packing-list), [bowls and food storage guide](/guides/dog-travel-bowls-and-food-storage) and [life jacket guide](/guides/dog-life-jacket-for-lakes-and-beaches) (if the hike ends at a lake) cover the rest, and the [trail and hiking gear page](/gear/trail-and-hiking) lists the products together.
 
 ## What we could not confirm
 

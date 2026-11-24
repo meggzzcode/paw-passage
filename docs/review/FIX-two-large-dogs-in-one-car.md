@@ -28,3 +28,8 @@ Expected score: about 9.0 (answer 5, flow 4-5, buying 4-5, placement 4-5, layout
 
 ## For the lead
 - The Lucky Kennel card chip "Maker: CPS crash-test rated" comes from cardSpecs in content/products.yml (not mine to edit). Suggest `CPS lists the Large (one dog)` and `Medium, Intermediate, Large` so the chip beside the Intermediate button is not misread.
+
+## Round 4
+Applied r3 edits 2 to 5 (kennel paragraph split and trimmed; Backseat Barrier vehicle limit and no-crash-test sentence cut from prose; duplicate Sleepypod "no maker page" sentence removed; opening line replaced with the non-scenario version).
+### For the lead
+- Edit 1 needs content/products.yml: set lucky-duck-lucky-kennel cardSpecs to "Sizes: Medium, Intermediate, Large", "Integrated tie-downs", "CPS lists the Large (one dog)" so the chip no longer reads "Maker cites CPS testing" beside the Intermediate.

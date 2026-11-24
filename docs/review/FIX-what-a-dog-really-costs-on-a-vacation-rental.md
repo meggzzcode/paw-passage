@@ -10,3 +10,8 @@ For the lead:
 - Dek now carries the $20 to $50 nightly range; seoTitle "How Much a Dog Costs on a Vacation Rental" (41).
 - "How to compare two quotes" moved directly after the hypothetical table; the gear section moved after "How sure we are", before Next step. Repeated "buy first" lines cut (only the final list keeps it); Loft Wander button opens the Large 36 x 48, said so. Mat/towel overlap kept (towel is used in four other guides, so not removed).
 - Hero still a travel image (owner art decision; not changed). Spec-card icons are template work.
+
+## Round 4
+Applied r3 edits 2 to 5: gear section moved above "How sure we are" (order now Charges you avoid, What to pack, How sure we are, Next step); dek, H2 and FAQ say "compare quotes"; Super Shammy towel folded into the mat paragraph as a cited linked sentence and its card removed (still in relatedProducts); the "This guide is about the total" sentence and the second opener removed, with the $0 versus $40 contrast merged into the first paragraph and the pet fees guide link moved to the pet fee line section; "mat and towel overlap" sentence deleted.
+### For the lead
+- Edit 1 (cost-themed hero image `guide-true-cost`, new alt text, regenerated pin) needs image work: not done.

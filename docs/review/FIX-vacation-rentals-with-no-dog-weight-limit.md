@@ -10,3 +10,8 @@ Not changed / for the lead:
 - Ramp pick, its relatedProducts id and source removed (the ramp stays in the ramp/steps and senior-dog guides); the ramp guide is linked in "What to buy first". Gear section is now crate and bed, "buy first" only in the final list. Loft Wander button opens the Large 36 x 48; said so.
 - readingMinutes 11 kept (about 10-11 now). seoTitle unchanged (45).
 - For lead: no products removed from the last published guide.
+
+## Round 4
+Applied r3 edits 1 to 6 (trust bullet now "Our own count"; bed lead no longer hypothetical, with the intro and "What to buy first" aligned; unsourced 72-pound crate sentence removed; large-dog guide pointer added; duplicate "written yes" statements cut; Hapey leash aside deleted).
+### For the lead
+- Optional: Great Dane image as hero (image change, not done).

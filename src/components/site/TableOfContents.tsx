@@ -29,8 +29,10 @@ export function TableOfContents({
   );
   if (variant === "mobile") {
     return (
-      <details className="no-print mb-8 rounded-lg border border-border bg-card p-4 lg:hidden">
-        <summary className="cursor-pointer font-display text-lg">On this page</summary>
+      <details className="no-print mb-3 rounded-lg border border-border bg-card px-4 py-1.5 sm:mb-8 sm:py-3 lg:hidden">
+        <summary className="cursor-pointer font-display text-[0.95rem] sm:text-lg">
+          On this page
+        </summary>
         <nav aria-label="On this page" className="mt-3">
           {list}
         </nav>

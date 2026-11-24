@@ -30,7 +30,8 @@ describe("site before the first verified stay", () => {
       }
     expect(paths).toContain("/guides");
     expect(paths.some((p) => p.startsWith("/guides/"))).toBe(true);
-  });
+    // Building every sitemap entry loads all content; under a full parallel run it can pass the 5 s default.
+  }, 30_000);
   it("noindex can be set on a page", () => {
     expect(
       JSON.stringify(pageHead({ title: "x", description: "y", path: "/z", noindex: true }).meta),

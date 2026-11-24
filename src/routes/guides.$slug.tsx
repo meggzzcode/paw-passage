@@ -2,7 +2,7 @@ import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { getGuide, isPublic, loadGuide } from "@/content/guides";
 import { guideHero, srcSetForKey } from "@/lib/images";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
-import { Markdown, articleHeadings } from "@/components/site/Markdown";
+import { Markdown, articleHeadings, renderInlineMarkdown } from "@/components/site/Markdown";
 import { SourcesList } from "@/components/site/SourcesList";
 import { RelatedProducts } from "@/components/site/RelatedProducts";
 import { GearPicks } from "@/components/site/GearPicks";
@@ -12,7 +12,7 @@ import { PreviewBadge } from "@/components/site/StatusBadge";
 import { pageHead, breadcrumbLd, jsonLd, absoluteUrl, isoDate } from "@/lib/seo";
 import { site } from "@/config/site";
 import { TableOfContents } from "@/components/site/TableOfContents";
-import { readingMinutes } from "@/lib/reading-time";
+import { guideReadingMinutes } from "@/lib/reading-time";
 import { pickIdsInBody } from "@/lib/product-display";
 import { ArticleActions, TrustStrip } from "@/components/site/ArticleActions";
 
@@ -88,8 +88,9 @@ function GuidePage() {
     .slice(0, 3);
   return (
     <article>
-      <div className="container-page pt-6 sm:pt-10">
+      <div className="container-page pt-4 sm:pt-10">
         <Breadcrumbs
+          hideCurrentOnPhone
           items={[
             { label: "Home", to: "/" },
             { label: "Guides", to: "/guides" },
@@ -109,15 +110,19 @@ function GuidePage() {
             </ul>
           </div>
         )}
-        <header className="mx-auto mt-4 max-w-3xl text-center sm:mt-10">
+        <header className="mx-auto mt-3 max-w-3xl text-center sm:mt-10">
           <p className="eyebrow">{g.category} guide</p>
-          <h1 className="mt-2 text-3xl leading-tight sm:mt-3 sm:text-4xl md:text-6xl">{g.title}</h1>
-          <p className="mt-3 text-base text-muted-foreground sm:mt-4 sm:text-lg">{g.dek}</p>
+          <h1 className="mt-1.5 text-[1.7rem] leading-tight sm:mt-3 sm:text-4xl md:text-6xl">
+            {g.title}
+          </h1>
+          <p className="mt-2 text-[0.95rem] leading-snug text-muted-foreground sm:mt-4 sm:text-lg sm:leading-normal">
+            {g.dek}
+          </p>
           <TrustStrip
             guide={g}
             lead={
               <>
-                By {g.author} · {readingMinutes(g.body, g.readingMinutes)} min read
+                By {g.author} · {guideReadingMinutes(g)} min read
               </>
             }
           />
@@ -133,15 +138,15 @@ function GuidePage() {
           height={1008}
           decoding="async"
           fetchPriority="high"
-          className="mx-auto mt-6 aspect-[16/9] sm:mt-10 sm:aspect-[21/9] w-full max-w-6xl object-cover md:rounded-xl"
+          className="mx-auto mt-2 aspect-[2/1] max-h-[96px] w-full max-w-6xl object-cover sm:mt-10 sm:aspect-[21/9] sm:max-h-none md:rounded-xl"
         />
       )}
       {g.layout !== "emergency" && (
-        <div className="container-page">
+        <div className="container-page max-sm:hidden">
           <ArticleActions slug={g.slug} title={g.title} />
         </div>
       )}
-      <div className="container-page mt-6 grid gap-12 sm:mt-12 lg:grid-cols-[minmax(0,1fr)_260px]">
+      <div className="container-page mt-4 grid gap-12 sm:mt-12 lg:grid-cols-[minmax(0,1fr)_260px]">
         <div className="mx-auto w-full min-w-0 max-w-[42rem]">
           <AffiliateNotice guide={g} />
           <TableOfContents headings={headings} variant="mobile" />
@@ -159,7 +164,10 @@ function GuidePage() {
                         +
                       </span>
                     </summary>
-                    <p className="mt-3 text-muted-foreground">{f.a}</p>
+                    <p
+                      className="faq-answer mt-3 text-muted-foreground"
+                      dangerouslySetInnerHTML={{ __html: renderInlineMarkdown(f.a) }}
+                    />
                   </details>
                 ))}
               </div>
@@ -168,7 +176,10 @@ function GuidePage() {
                 {g.faqs.map((f) => (
                   <div key={f.q}>
                     <dt className="font-display text-lg">{f.q}</dt>
-                    <dd className="mt-1">{f.a}</dd>
+                    <dd
+                      className="faq-answer mt-1"
+                      dangerouslySetInnerHTML={{ __html: renderInlineMarkdown(f.a) }}
+                    />
                   </div>
                 ))}
               </dl>
@@ -210,6 +221,12 @@ function GuidePage() {
                 </>
               )}
             </section>
+          )}
+          {g.layout !== "emergency" && (
+            <div className="sm:hidden">
+              {/* On phones the share row sits here, so the first screen is title, dek and the start of the text. */}
+              <ArticleActions slug={g.slug} title={g.title} />
+            </div>
           )}
           <section className="mt-16 rounded-xl bg-muted p-6 text-sm">
             <h2 className="font-display text-xl">Sources and how we researched this</h2>

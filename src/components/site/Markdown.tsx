@@ -228,6 +228,17 @@ export function Markdown({
   return <ArticleHtml html={html} className={className} />;
 }
 
+/**
+ * One line of inline Markdown as HTML (links, emphasis; no block elements). Used for FAQ answers so they get exactly
+ * the same link rules as the article body: raw HTML is escaped, unsafe addresses are dropped, web links open in a new tab.
+ */
+export function renderInlineMarkdown(source: string): string {
+  return (marked.parseInline(source, { async: false }) as string).replace(
+    /<a href="(https?:\/\/[^"]+)"/g,
+    '<a href="$1" target="_blank" rel="noopener noreferrer"',
+  );
+}
+
 /** The rendered article. Hooks live here (not in Markdown()) so Markdown() stays a plain function that tests may call directly. */
 function ArticleHtml({ html, className }: { html: string; className: string | undefined }) {
   const ref = useRef<HTMLDivElement>(null);

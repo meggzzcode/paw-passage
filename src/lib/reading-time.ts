@@ -17,3 +17,12 @@ export function readingMinutes(body: string, fallback: number): number {
   const words = bodyWordCount(body);
   return words > 0 ? Math.max(1, Math.ceil(words / WORDS_PER_MINUTE)) : fallback;
 }
+
+/**
+ * The one reading time shown everywhere (guide header, guide cards, guide index). Production list pages only carry a
+ * summary without the text, so the build step (plugins/content.ts guideSummary) writes the number computed from the
+ * full body into `readingMinutes`; the guide page computes it from the same body, so both always agree.
+ */
+export function guideReadingMinutes(guide: { body: string; readingMinutes: number }): number {
+  return readingMinutes(guide.body, guide.readingMinutes);
+}

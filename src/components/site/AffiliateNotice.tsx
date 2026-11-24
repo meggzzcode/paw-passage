@@ -11,13 +11,15 @@ export function AffiliateNotice({
   const usage = affiliateUsage(guide);
   if (usage.count === 0) return null;
   return (
-    <aside role="note" className="mb-8 rounded-lg bg-muted p-4 text-sm text-muted-foreground">
-      This guide has affiliate links. If you buy or book through them we may earn a commission, at
-      no extra cost to you. {usage.anyAmazon && <>{AMAZON_DISCLOSURE} </>}
+    <aside
+      role="note"
+      className="mb-3 rounded-md bg-muted px-2.5 py-1.5 text-[11px] leading-4 text-muted-foreground sm:mb-6 sm:py-2 sm:text-sm sm:leading-snug"
+    >
+      Some links are affiliate links; we may earn a commission.{" "}
+      {usage.anyAmazon && <>{AMAZON_DISCLOSURE} </>}
       <Link to="/affiliate-disclosure" className="text-primary underline">
-        How we earn money
+        How we earn
       </Link>
-      .
     </aside>
   );
 }

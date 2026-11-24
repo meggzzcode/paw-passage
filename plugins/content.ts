@@ -31,6 +31,7 @@ import {
 } from "../src/content/schema";
 import { guideIsPublic, stayIsPublic, placeIsPublic } from "../src/content/publish-rule";
 import { destinations } from "../src/content/destinations";
+import { readingMinutes } from "../src/lib/reading-time";
 import { productsSchema, productReferenceProblems } from "../src/content/products-schema";
 
 const VIRTUAL = "virtual:content";
@@ -476,6 +477,12 @@ export function loadContent(
 export function guideSummary<
   G extends { research: { researchComplete: boolean; unverified: string[] } },
 >(g: G) {
+  // Cards show the reading time of the full text, so it is worked out here while the text is still present.
+  const fullBody = (g as G & { body?: string; readingMinutes?: number }).body ?? "";
+  const minutes = readingMinutes(
+    fullBody,
+    (g as G & { readingMinutes?: number }).readingMinutes ?? 1,
+  );
   const {
     body: _b,
     faqs: _f,
@@ -485,6 +492,7 @@ export function guideSummary<
   } = g as G & { body: string; faqs: unknown[]; sources: unknown[] };
   return {
     ...rest,
+    readingMinutes: minutes,
     body: "",
     faqs: [],
     sources: [],

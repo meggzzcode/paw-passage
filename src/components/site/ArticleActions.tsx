@@ -95,11 +95,12 @@ export function TrustStrip({
   };
   lead?: ReactNode;
 }) {
-  const chip = "rounded-full border border-border px-2.5 py-0.5";
+  // On phones the date is plain text on the byline row (no wrapped chip); from sm up it is a chip.
+  const chip = "sm:rounded-full sm:border sm:border-border sm:px-2.5 sm:py-0.5";
   return (
     <ul
       aria-label="About this guide"
-      className="mt-3 flex flex-wrap items-center justify-center gap-x-2.5 gap-y-1.5 text-xs text-muted-foreground sm:text-sm"
+      className="mt-2 flex flex-wrap items-center justify-center gap-x-2.5 gap-y-1 text-xs text-muted-foreground sm:mt-3 sm:gap-y-1.5 sm:text-sm"
     >
       {lead ? <li>{lead}</li> : null}
       <li className={chip}>

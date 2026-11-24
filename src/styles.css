@@ -234,3 +234,6 @@
 /* Sources list: the entry a marker jumped to is tinted, and the back-link / title links show a clear focus ring. */
 .sources-list a:focus-visible { outline: 2px solid var(--terracotta); outline-offset: 2px; border-radius: 2px; }
 #sources-list > summary:focus-visible { outline: 2px solid var(--terracotta); outline-offset: 2px; border-radius: 2px; }
+
+/* FAQ answers are plain text with inline links only. */
+.faq-answer a { color: var(--primary); text-decoration: underline; text-decoration-color: var(--terracotta); text-underline-offset: 3px; }

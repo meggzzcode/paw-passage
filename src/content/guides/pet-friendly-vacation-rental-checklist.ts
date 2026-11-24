@@ -175,10 +175,7 @@ Booked somewhere that says no pets? Ask the manager before you travel rather tha
     "vacation-rentals-with-no-dog-weight-limit",
     "puppy-at-a-vacation-rental",
   ],
-  relatedProducts: [
-    "midwest-icrate-dog-crate",
-    "kurgo-loft-wander-dog-bed",
-  ],
+  relatedProducts: ["midwest-icrate-dog-crate", "kurgo-loft-wander-dog-bed"],
   relatedTools: ["checklist"],
   sources: [
     {

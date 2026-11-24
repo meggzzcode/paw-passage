@@ -186,8 +186,7 @@ export const imageCredits: ImageCredit[] = [
   {
     key: "guide-ramp-steps",
     photographer: "Logan Weaver",
-    unsplashUrl:
-      "https://unsplash.com/photos/dog-sitting-in-the-open-trunk-of-a-car-2XU7g_OebKU",
+    unsplashUrl: "https://unsplash.com/photos/dog-sitting-in-the-open-trunk-of-a-car-2XU7g_OebKU",
   },
   {
     key: "guide-loose-dog",

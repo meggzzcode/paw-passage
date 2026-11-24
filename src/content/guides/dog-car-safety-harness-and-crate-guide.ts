@@ -220,7 +220,8 @@ CDC and ASPCA recommend building up to a long trip with short drives first. Fitt
     },
     {
       productId: "lucky-duck-lucky-kennel",
-      bestFor: "A dog under 70 lbs in a secured crate (the card opens the Intermediate; the Large for 70 to 110 lbs is a separate listing)",
+      bestFor:
+        "A dog under 70 lbs in a secured crate (the card opens the Intermediate; the Large for 70 to 110 lbs is a separate listing)",
       whyItMadeTheList:
         "The maker sizes the Intermediate for dogs under 70 lbs and offers integrated tie-downs and a weight guide per size. CPS lists the Large with a 110 lb test dog and the Lucky Ratchet Strap Kit, and its directory also lists the Medium and Intermediate.",
       watchOuts: [

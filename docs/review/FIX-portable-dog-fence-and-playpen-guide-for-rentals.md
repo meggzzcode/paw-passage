@@ -12,3 +12,9 @@ lastReviewed 2026-11-24; readingMinutes 11 (about 3,000 words).
 ## Round 3
 - Dek now answers the question; seoTitle "Portable Dog Fence for Rentals Without a Yard" (45); one-sentence differentiator under the short answer; "If you pick one" verdict above the comparison table; removed all four "buy first" closers; "What to buy first" item 3 no longer leads with Petmate (kept as a card, described as a floored option whose page gives no usable height); first two "When not to use" bullets removed.
 - Lead: Petmate remains a pick (owner question from r2 still open); no product removed.
+
+## Round 4
+- Petmate paragraph retitled "A floored soft yard, with no usable height stated" and trimmed to floor plus limits; removed from "What to buy first" (Carlson already covers small dogs).
+- Unit-less dimension caveat now only in the table and the Petmate paragraph; "What to check" says "states no usable height"; "size word" sentence deleted there (checklist keeps it).
+- Added a "Floor protection" column to the comparison table.
+- For the lead: Carlson card title ("Convertible Pet Yard (Model #2200)") comes from content/products.yml `name`; change it to "Convertible Pet Yard" and set Petmate's first cardSpecs chip to "Height not stated". Not edited (off-limits).

@@ -16,3 +16,9 @@
 ## Round 3 polish (2026-11-24)
 - Cut the Kurgo Kibble Carrier (paragraph, pick, source, relatedProducts, buy-first step 4); it still appears in dog-travel-bowls-and-food-storage. Kept gate, iCrate and Happy Ride (Happy Ride is in six other guides); added one lead sentence tying the two crates together.
 - Fixed the doubled pet-fees link, the doubled "38 managers/date" wording, dropped the Fee column from the ten-source table, moved the Next step to follow the third-dog checklist with a short pointer at the end. lastReviewed 2026-11-24.
+
+## Round 4
+- Opening sentence now "Two dogs is the most common cap..." with "(a convenience sample)"; roadmap sentence cut.
+- Orphan cups-per-day sentence deleted; end-of-page "Next step" deleted (mid-page one kept).
+- "Buy first if the cabin is open-plan" now "If the cabin is open-plan"; "What to buy first" is the only ranking.
+- Sources table narrowing (optional) not done; swipe hint remains.

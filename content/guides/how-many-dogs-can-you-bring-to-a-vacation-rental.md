@@ -181,7 +181,7 @@ approvedBy: Paws & Passage Editors
 approvedOn: 2026-11-18
 ---
 
-Most vacation rentals allow two dogs at most, and no platform sets one number: the listing's own pet rule decides. Of the 38 managers we read on 2026-11-18, 22 state a limit of two, 2 allow three pets and 14 give no number. So with three dogs and a listing that says "pets welcome" in the title and "2 dogs maximum" in the house rules, message the host before you book. Below: the published limits, what extra dogs cost, how two dogs change the booking, a message to send for a third, and the gear that makes two dogs work in a cabin with no doors.
+Two dogs is the most common cap, and no platform sets one number: the listing's own pet rule decides. Of the 38 managers we read on 2026-11-18 (a convenience sample), 22 state a limit of two, 2 allow three pets and 14 give no number. So with three dogs and a listing that says "pets welcome" in the title and "2 dogs maximum" in the house rules, message the host before you book.
 
 ## The short answer
 
@@ -306,7 +306,7 @@ Before you book:
 
 The third-dog message gets you the host's yes. It does not give two dogs two places to eat, and an open-plan cabin or studio has no doors to close. Whether you need hardware depends on the rental, so ask the host about a closed bedroom door first. If there is none, the gate is the first thing to consider, and two crates can do the job: the iCrate for a wire crate that stays in the rental, the Happy Ride if the same crate must ride in the back seat first.
 
-**Buy first if the cabin is open-plan: the gate.** A pressure-mounted gate can split a kitchen or hallway so each dog eats on its own side, and it needs no tools. The maker lists the North States MyPet Universal Petgate at 26 inches high, fitting openings of 26 to 42 inches, with an optional hardware mount for a solid surface. It is a plastic gate with rounded edges, and the maker says never to use it at the top of a stairway when held only by tension. [[17]](https://northstatesind.com/north-states-mypet-universal-petgate/) Skip it if your dogs jump 26-inch gates or the opening is wider than 42 inches, so measure before you buy. Ask the host before using the hardware mount.
+**If the cabin is open-plan: the gate.** A pressure-mounted gate can split a kitchen or hallway so each dog eats on its own side, and it needs no tools. The maker lists the North States MyPet Universal Petgate at 26 inches high, fitting openings of 26 to 42 inches, with an optional hardware mount for a solid surface. It is a plastic gate with rounded edges, and the maker says never to use it at the top of a stairway when held only by tension. [[17]](https://northstatesind.com/north-states-mypet-universal-petgate/) Skip it if your dogs jump 26-inch gates or the opening is wider than 42 inches, so measure before you buy. Ask the host before using the hardware mount.
 
 {{pick:north-states-mypet-universal-petgate|Splits an open-plan kitchen|The maker lists a 26-inch height and openings from 26 to 42 inches, with a no-tools pressure mount; it says never to use it at the top of stairs when held only by tension.|https://northstatesind.com/north-states-mypet-universal-petgate/}}
 
@@ -323,7 +323,7 @@ The third-dog message gets you the host's yes. It does not give two dogs two pla
 1. Ask the host about a closed bedroom door. If there is one, you may need none of the above.
 2. Open-plan with no door: the gate, after you measure the opening (26 to 42 inches).
 3. Both dogs already crate-trained: the iCrate for meals and rest, or the Happy Ride if one dog is under 60 lb and rides in the back seat.
-Two dogs fed apart also means two bowls and a cups-per-day sum for each. More on all of these on our [pens and gates gear page](/gear/pens-and-gates).
+More on all of these on our [pens and gates gear page](/gear/pens-and-gates).
 
 ## How sure we are
 
@@ -341,5 +341,3 @@ Two dogs fed apart also means two bowls and a cups-per-day sum for each. More on
 | Whether the November 2026 house-rules change shows a pet count (third-party source only) | Airbnb and the listing's house rules |
 
 For a vet question, such as whether your dogs suit a shared stay, ask your vet. For everything else, message the host and save the written answer.
-
-**Next step:** price the pet charges for your dog count with our [pet fees guide](/guides/how-vacation-rental-pet-fees-work).

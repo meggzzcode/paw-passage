@@ -15,3 +15,8 @@
 
 ## Round 3 polish (2026-11-24)
 - H1 shortened to "Rules, Fee and How to Request"; park table now two columns with citations inside the cell; "cost almost nothing" removed; added "ask for the unit number and designation in writing". Leash card unchanged (skip-if line already present). lastReviewed 2026-11-24.
+
+## Round 4
+- Deleted "one to buy first" (leash) and "Add it first" (bottle) sentences; "What to buy first" carries the order.
+- Second inbound link: added dogs-in-georgia-state-park-cabins to relatedGuides of christmas-week-in-a-cabin-with-a-dog (the other is how-many-dogs-can-you-bring-to-a-vacation-rental).
+- For the lead (not edited): products.yml icons for ruffwear-knot-a-leash and the bottle/bowl; cardSpecs chips (Springland "Attached bowl, one-hand use"; Knot-a-Leash "Accessory loop for bags"); optional CSS min-width for two-column tables.

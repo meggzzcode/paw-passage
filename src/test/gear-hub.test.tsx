@@ -67,7 +67,7 @@ describe("gear data", () => {
     expect(new Set(gearCategories.map((c) => c.slug)).size).toBe(gearCategories.length);
     for (const c of gearCategories)
       expect(categoryIsLive(c.slug)).toBe(categoryProducts(c.slug).length >= MIN_LIVE);
-    expect(liveCategories().map((c) => c.slug)).toContain("beach-vacations");
+    expect(liveCategories().map((c) => c.slug)).toContain("water-and-beach");
     expect(hasGear()).toBe(true);
   });
   it("inactive products are left out of categories", () => {
@@ -180,7 +180,7 @@ describe("routes, meta and sitemap", () => {
   const router = createRouter({ routeTree, context: { queryClient: new QueryClient() } });
   it("/gear and /gear/<category> match real pages; other paths are unchanged", () => {
     expect(router.matchRoutes("/gear").at(-1)?.routeId).toBe("/gear/");
-    expect(router.matchRoutes("/gear/road-trips").at(-1)?.routeId).toBe("/gear/$category");
+    expect(router.matchRoutes("/gear/car-safety").at(-1)?.routeId).toBe("/gear/$category");
     expect(router.matchRoutes("/guides").at(-1)?.routeId).toBe("/guides/");
     expect(router.matchRoutes("/methodology").at(-1)?.routeId).toBe("/methodology");
   });
@@ -189,7 +189,7 @@ describe("routes, meta and sitemap", () => {
     const load = (slug: string) => (category.options as any).loader({ params: { category: slug } });
     expect(() => load("nope")).toThrow();
     expect(() => load("multiple-dogs")).toThrow();
-    expect(load("road-trips")).toEqual({ slug: "road-trips" });
+    expect(load("car-safety")).toEqual({ slug: "car-safety" });
   });
   it("meta names no Expedia Group brand and no product brand, and stays short", () => {
     const heads = [

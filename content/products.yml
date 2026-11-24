@@ -10,9 +10,6 @@ products:
     name: Clickit Range Crash-Tested Harness
     brand: Sleepypod
     categories:
-      - road-trips
-      - travel-safety
-      - large-dogs
       - car-safety
     summary: A vest-style car harness that threads onto a rear-seat seat belt, listed by the maker for dogs from 18 to 110 lbs with Regular and Long fits.
     keySpecs:
@@ -45,8 +42,6 @@ products:
     name: Bomber Harness
     brand: Saker Canine
     categories:
-      - road-trips
-      - travel-safety
       - car-safety
     summary: A car-and-trail harness whose maker says the car seat belt passes directly through its top handle.
     keySpecs:
@@ -81,8 +76,6 @@ products:
       - "Sleepypod Atom"
       - "Sleepypod Atom Crash-Tested Carrier"
     categories:
-      - road-trips
-      - travel-safety
       - car-safety
     summary: A soft, fold-flat carrier that for very small dogs that the maker says can be used as a car seat, with a safety tether inside.
     keySpecs:
@@ -117,9 +110,6 @@ products:
     name: G1 Kennel
     brand: GUNNER
     categories:
-      - road-trips
-      - travel-safety
-      - large-dogs
       - car-safety
     summary: A double-walled hard kennel with built-in tie-down pins, designed to be anchored in a vehicle with separately sold straps.
     keySpecs:
@@ -156,9 +146,6 @@ products:
     aliases:
       - "Lucky Duck Lucky Kennel"
     categories:
-      - road-trips
-      - travel-safety
-      - large-dogs
       - car-safety
     summary: A hard-sided travel kennel with integrated tie-downs, sold in Medium, Intermediate and Large, with a ratchet strap kit sold separately.
     keySpecs:
@@ -194,9 +181,7 @@ products:
     name: Embossed Sherpa Throw
     brand: Orvis
     categories:
-      - cabin-vacations
-      - travel-comfort
-      - cleaning-and-rental-protection
+      - comfort-and-cooling
     summary: A two-layer sherpa fleece throw, sold as a general throw rather than a fitted cover, that can be laid over a sofa or chair where the host allows dogs on it.
     keySpecs:
       - Size listed as 40 in x 40 in
@@ -231,9 +216,7 @@ products:
       - "Kurgo Loft Wander"
       - "Loft Wander"
     categories:
-      - cabin-vacations
-      - travel-comfort
-      - cleaning-and-rental-protection
+      - comfort-and-cooling
     summary: A roll-up travel bed with a water-resistant ripstop top and a waterproof, non-slip bottom, meant to give a dog its own spot away from home.
     keySpecs:
       - "Medium open: 27 in x 36 in x 2 in, rolled up 12.5 in x 8 in; Large open: 36 in x 48 in x 3 in, rolled up 17 in x 9.5 in"
@@ -267,9 +250,7 @@ products:
     name: Heather Hammock
     brand: Kurgo
     categories:
-      - road-trips
-      - travel-comfort
-      - cleaning-and-rental-protection
+      - car-interior
     summary: A bench-seat hammock cover with a center zipper that folds back to free half the seat for a human passenger.
     keySpecs:
       - "Size: 55 in wide x 56 in long; may not fit large trucks or SUVs"
@@ -304,7 +285,7 @@ products:
     name: "Adventure Dog Medical Kit: Me & My Dog"
     brand: Adventure Medical Kits
     categories:
-      - travel-safety
+      - safety-id-first-aid
     summary: A larger kit for people and dogs, packed in two waterproof bags, with a general wilderness and travel medicine guide in its contents list; the feature text also mentions a pet first aid manual.
     keySpecs:
       - Listed contents include adhesive bandages, sterile gauze dressings, non-adherent dressings, a 2 inch conforming gauze bandage, cloth tape, a self-adhering bandage, a triangular bandage and a cold pack
@@ -339,7 +320,7 @@ products:
       - "Adventure Dog Medical Kit - Trail Dog"
       - "Trail Dog kit"
     categories:
-      - travel-safety
+      - safety-id-first-aid
     summary: A compact dog-focused kit in a waterproof bag with a pet first aid handbook, aimed by the maker at hiking, camping and travel.
     keySpecs:
       - Maker lists weight as 12 oz and size as 7.5 x 5.3 x 1.5 inches
@@ -371,7 +352,7 @@ products:
     name: Dog First Aid Kit
     brand: Kurgo
     categories:
-      - travel-safety
+      - safety-id-first-aid
     summary: A zippered-case kit that the maker describes as a 50-piece kit with a first aid guide, with a hanging hook and interior mesh compartments.
     keySpecs:
       - "Listed contents: parachute cord, first aid guide, sting relief pads, tweezers, tape roll, 2 inch crepe bandage, cotton swabs, tongue depressors, antiseptic towelettes, instant cold pack, disposable rubber gloves"
@@ -403,7 +384,7 @@ products:
     name: RSG Dog First Aid Kit
     brand: Kurgo
     categories:
-      - travel-safety
+      - safety-id-first-aid
     summary: A smaller MOLLE-compatible kit the maker designed to attach to its RSG harnesses and utility belt, with a similar contents list to Kurgo's larger kit.
     keySpecs:
       - Maker describes it as 49 pieces; the page lists about 20 line items
@@ -435,7 +416,7 @@ products:
     name: Baskerville Ultra Muzzle
     brand: Company of Animals
     categories:
-      - travel-safety
+      - safety-id-first-aid
     summary: A basket-style dog muzzle made of thermoplastic rubber that the maker says can be heat-shaped to the dog's face.
     keySpecs:
       - "Maker says it is made of durable thermoplastic rubber (TPR) and is heat-shapable: soak in hot tap water for about 2 minutes, shape while warm, then cool in cold water to set"
@@ -469,7 +450,6 @@ products:
     aliases:
       - "Kurgo Collaps A Bowl"
     categories:
-      - road-trips
       - feeding-and-hydration
     summary: A single collapsible silicone travel bowl for water or food that flattens for a bag or door pocket.
     keySpecs:
@@ -509,6 +489,7 @@ products:
       - "22oz Original"
     categories:
       - feeding-and-hydration
+      - trail-and-hiking
     summary: A squeeze-to-fill water bottle with an attached bowl, designed to be operated with one hand.
     keySpecs:
       - Named 22oz; the page gives no separate capacity figure
@@ -546,6 +527,7 @@ products:
       - "20oz Flip"
     categories:
       - feeding-and-hydration
+      - trail-and-hiking
     summary: A squeeze-to-drink water bottle topped with a silicone bowl that flips up for drinking and folds down for storage.
     keySpecs:
       - Named 20oz; the page gives no separate capacity figure
@@ -614,7 +596,6 @@ products:
     aliases:
       - "Kurgo Kibble Carrier"
     categories:
-      - road-trips
       - feeding-and-hydration
     summary: A soft roll-top bag for carrying a few days of dry food, built for packing rather than long-term storage.
     keySpecs:
@@ -647,7 +628,7 @@ products:
     name: AKC Reunite ID Tag or ID Collar
     brand: AKC Reunite
     categories:
-      - travel-safety
+      - safety-id-first-aid
     summary: A visible ID that carries the pet's name, an AKC Reunite ID number and the service's helpline number, so a finder can act without a scan. It comes as a stainless steel collar tag or as a collar with a built-in nameplate; both carry the same kind of ID.
     keySpecs:
       - Maker says the personalized tag includes the pet's name, ID number and AKC Reunite's 800 number
@@ -683,7 +664,7 @@ products:
     aliases:
       - "DOG 6"
     categories:
-      - travel-safety
+      - safety-id-first-aid
     summary: A clip-on GPS tracker for dogs that uses a built-in SIM and cellular networks, sold for dogs above 8.8 lbs (one place on the page also says above 9 lbs).
     keySpecs:
       - Maker says it is for dogs above 8.8 lbs; 2.8 x 1.1 x 0.7 in and 1.4 oz; fits collar widths up to 1.1 in
@@ -717,8 +698,7 @@ products:
     name: Tractive DOG 6 XL
     brand: Tractive
     categories:
-      - travel-safety
-      - large-dogs
+      - safety-id-first-aid
     summary: The larger Tractive model for bigger dogs, with the same cellular-and-subscription design and a longer listed battery life.
     keySpecs:
       - Maker says it is for dogs above 44.1 lbs; 3.3 x 1.9 x 0.8 in and 2.5 oz; fits collar widths up to 1.6 in
@@ -752,7 +732,7 @@ products:
     name: Fi Series 3+
     brand: Fi
     categories:
-      - travel-safety
+      - safety-id-first-aid
     summary: An all-in-one smart collar with GPS tracking and an app, built around a long listed battery life.
     keySpecs:
       - Maker says it offers up to 3 months of battery life and wireless charging
@@ -787,7 +767,7 @@ products:
     aliases:
       - "Exercise Pen with Door"
     categories:
-      - cabin-vacations
+      - pens-and-gates
     summary: A folding wire exercise pen with a latched door that sets up as a freestanding enclosure indoors or outdoors.
     keySpecs:
       - Instructions cover model numbers 550-24DR, 552-30DR, 554-36DR, 556-42DR and 558-48DR (24 to 48 size designations)
@@ -821,7 +801,7 @@ products:
     name: MyPet Petyard Passage 8-Panel
     brand: North States
     categories:
-      - cabin-vacations
+      - pens-and-gates
     summary: A lightweight plastic play yard of eight pre-connected panels, meant to be used as a freestanding enclosure.
     keySpecs:
       - Each panel is 26 inches high and 32 inches wide
@@ -860,7 +840,7 @@ products:
       - "Carlson Convertible Pet Yard"
       - "Convertible Pet Yard"
     categories:
-      - cabin-vacations
+      - pens-and-gates
     summary: A six-panel all-metal pen with a walk-through door that the maker says can also be used as a gate.
     keySpecs:
       - 28 inches high; six removable 24-inch all-metal panels; hinged for multiple configurations
@@ -894,7 +874,6 @@ products:
     brand: Ruffwear
     categories:
       - car-safety
-      - road-trips
     summary: A padded car harness with a seat belt loop that attaches to a vehicle's existing seat belts, described by the maker as crash tested.
     keySpecs:
       - "Sizes XXS to L/XL by girth: XXS 13-17 in, XS 17-22, S 22-27, M 27-32, L/XL 32-42 in; the page advises the smaller size between sizes"
@@ -930,7 +909,6 @@ products:
       - "Tru-Fit"
     categories:
       - car-safety
-      - road-trips
     summary: A padded dog harness with a 10 in seat belt tether and steel carabiner, sold by the maker as crash tested.
     keySpecs:
       - "Size chart on the page: X-Small 5-10 lbs, Small 10-25, Medium 25-50, Large 50-80, X-Large 80-110 lbs; the size selector on the page lists only Small, Medium and Large"
@@ -966,7 +944,6 @@ products:
       - "Heather booster"
     categories:
       - car-safety
-      - road-trips
     summary: A raised booster seat for a bucket seat, with an integrated tether that attaches to a dog's harness, for dogs up to 30 lbs.
     keySpecs:
       - Maker states it is suitable for dogs up to 30 lbs
@@ -1001,8 +978,7 @@ products:
     name: Rover Backseat Bridge
     brand: Kurgo
     categories:
-      - car-safety
-      - road-trips
+      - car-interior
     summary: A backseat extender with a fold-down centre barrier that keeps a dog on the back seat.
     keySpecs:
       - Dimensions 16 in deep x 52 in wide x 1 in high
@@ -1036,7 +1012,6 @@ products:
     brand: Kurgo
     categories:
       - car-safety
-      - road-trips
     summary: A cloth and mesh barrier that attaches to the backs of the front seats to keep a dog in the back.
     keySpecs:
       - Maker states it can be installed in cars with fixed or removable headrests
@@ -1074,7 +1049,6 @@ products:
       - "PetSafe Happy Ride Dog Barrier"
     categories:
       - car-safety
-      - road-trips
     summary: An adjustable tension-fit metal barrier for a car or SUV backseat or cargo area.
     keySpecs:
       - Product dimensions 2.4 x 57.0 x 49.0 in; adjusts from 32-49 in wide and 33-57 in high
@@ -1107,7 +1081,8 @@ products:
     aliases:
       - "PetSafe Happy Ride Collapsible Travel Crate"
     categories:
-      - road-trips
+      - car-safety
+      - pens-and-gates
     summary: A soft-sided collapsible crate for the back seat, held by the headrest strap and seat belt, for pets up to 60 lb.
     keySpecs:
       - Maker says for pets up to 60 lb
@@ -1143,9 +1118,7 @@ products:
       - "Happy Ride Folding Ramp"
       - "PetSafe Happy Ride Folding Dog Ramp"
     categories:
-      - senior-dogs
-      - large-dogs
-      - road-trips
+      - ramps-and-steps
     summary: A folding ramp for loading a dog into a van, SUV or car.
     keySpecs:
       - Measures 62 in long x 16 in wide x 4 in high
@@ -1181,9 +1154,7 @@ products:
     aliases:
       - "Happy Ride Extra Long Telescoping Ramp"
     categories:
-      - senior-dogs
-      - large-dogs
-      - road-trips
+      - ramps-and-steps
     summary: An aluminium telescoping ramp that slides closed and locks for travel.
     keySpecs:
       - Extends from 47 to 87 in long, 20 in wide, 4 in high
@@ -1216,9 +1187,7 @@ products:
     name: Happy Ride Side Door Pet Steps
     brand: PetSafe
     categories:
-      - senior-dogs
-      - large-dogs
-      - road-trips
+      - ramps-and-steps
     summary: Folding steps with side rails and three height settings for getting a dog into a vehicle through the side door.
     keySpecs:
       - Dimensions 44.9 x 18.2 x 8.0 in; weighs 13 lb
@@ -1250,9 +1219,7 @@ products:
     name: Happy Ride Dog Hitch Step
     brand: PetSafe
     categories:
-      - senior-dogs
-      - large-dogs
-      - road-trips
+      - ramps-and-steps
     summary: A folding step that installs on a 2 in vehicle hitch, described by the maker as an alternative to dog ramps.
     keySpecs:
       - Maker says it supports pets up to 200 lb
@@ -1285,8 +1252,8 @@ products:
     name: Happy Ride Quilted Bench Seat Cover
     brand: PetSafe
     categories:
-      - cleaning-and-rental-protection
-      - road-trips
+      - car-interior
+      - rental-cleanup
     summary: A quilted, waterproof back-seat cover with seat belt access that is machine washable.
     keySpecs:
       - Dimensions 45 in long x 56 in wide
@@ -1320,8 +1287,7 @@ products:
     aliases:
       - "Cargo Cape"
     categories:
-      - road-trips
-      - cleaning-and-rental-protection
+      - car-interior
     summary: A waterproof cargo-area cover with a fold-out bumper guard and a centre zipper for split seats.
     keySpecs:
       - Dimensions 52 in wide x 62 in long
@@ -1352,8 +1318,7 @@ products:
     name: Ultimate Cargo Liner with Tether
     brand: KONG
     categories:
-      - road-trips
-      - cleaning-and-rental-protection
+      - car-interior
     summary: A padded water-resistant liner for a station wagon or SUV load space that includes a swivel tether.
     keySpecs:
       - Dimensions 43.5 x 17.5 x 32.5 in; weighs 4.5 lbs; one size
@@ -1384,9 +1349,7 @@ products:
     name: 2-in-1 Bench Seat Cover and Dog Hammock for Trucks
     brand: KONG
     categories:
-      - large-dogs
-      - road-trips
-      - cleaning-and-rental-protection
+      - car-interior
     summary: An extra-large water-resistant bench seat cover that can be used with a front seat barrier as a non-suspended hammock.
     keySpecs:
       - Dimensions 62.5 x 67.01 x 0.5 in; weighs 5.1 lbs
@@ -1420,8 +1383,7 @@ products:
     aliases:
       - "Float Coat"
     categories:
-      - beach-vacations
-      - outdoor-adventures
+      - water-and-beach
     summary: A life jacket with a lifting handle and a telescoping neck closure, sold in six girth-based sizes.
     keySpecs:
       - "Sizes XXS to XL by girth: XXS 13-17 in, XS 17-22, S 22-27, M 27-32, L 32-36, XL 36-42 in"
@@ -1456,8 +1418,7 @@ products:
     aliases:
       - "Dawson Swim"
     categories:
-      - beach-vacations
-      - outdoor-adventures
+      - water-and-beach
     summary: A neoprene-sided life jacket with a front neck float, described by the maker as a flotation aid for a conscious dog in calm water.
     keySpecs:
       - Sizes X-Small to X-Large by girth around the widest part of the rib cage; the page lists no chest or weight ranges
@@ -1492,9 +1453,8 @@ products:
       - "Ruffwear Swamp Cooler"
       - "Swamp Cooler"
     categories:
-      - beach-vacations
-      - travel-comfort
-      - outdoor-adventures
+      - comfort-and-cooling
+      - water-and-beach
     summary: A vest that is soaked in water and worn, described by the maker as evaporative cooling.
     keySpecs:
       - "Sizes XXS to XL by chest girth: XXS 13-17 in, XS 17-22, S 22-27, M 27-32, L 32-36, XL 36-42 in"
@@ -1526,8 +1486,7 @@ products:
     name: Mud Dog Travel Shower
     brand: Kurgo
     categories:
-      - beach-vacations
-      - cleaning-and-rental-protection
+      - rental-cleanup
     summary: A food-grade silicone shower head that screws onto a standard plastic water bottle.
     keySpecs:
       - Fits standard PET water and soda bottles from 16 oz to 2 liters
@@ -1560,7 +1519,7 @@ products:
     aliases:
       - "Adventure Dog Wipes"
     categories:
-      - cleaning-and-rental-protection
+      - rental-cleanup
     summary: Rinse-free pet wipes made to wipe dirt and odour off a dog.
     keySpecs:
       - 8 wipes per pack, each 8 x 8 in
@@ -1591,8 +1550,7 @@ products:
     name: Long Haul Bed
     brand: Gunner
     categories:
-      - travel-comfort
-      - cleaning-and-rental-protection
+      - comfort-and-cooling
     summary: A bolstered kennel bed with a water-repellent cover and a non-skid base, in four sizes.
     keySpecs:
       - Sizes Small, Medium, Intermediate and Large; the page gives no dimensions
@@ -1624,8 +1582,7 @@ products:
     name: Highlands Dog Sleeping Bag
     brand: Ruffwear
     categories:
-      - travel-comfort
-      - outdoor-adventures
+      - comfort-and-cooling
     summary: A compressible synthetic-insulated sleeping bag for dogs, made for trail, camp and backcountry use.
     keySpecs:
       - Medium 25.2 x 33.5 in flat, 1.6 lbs; Large 28.3 x 43.3 in flat, 2.2 lbs; 2 in loft in both sizes
@@ -1658,7 +1615,7 @@ products:
       - "Ruffwear Quencher"
     categories:
       - feeding-and-hydration
-      - outdoor-adventures
+      - trail-and-hiking
     summary: A packable fabric food and water bowl listed in one size.
     keySpecs:
       - "Medium: 5.5 in opening, 4.2 cups (1 L)"
@@ -1694,7 +1651,6 @@ products:
       - "Splash Free Wander"
     categories:
       - feeding-and-hydration
-      - road-trips
     summary: A silicone water bowl with a tapered edge and a wedge shape that sits flat on a car seat.
     keySpecs:
       - Capacity 24 oz (710 ml); dimensions not stated
@@ -1726,7 +1682,6 @@ products:
     brand: Petmate
     categories:
       - feeding-and-hydration
-      - road-trips
     summary: Two collapsible bowls (named silicone) in a zippered pouch.
     keySpecs:
       - Capacity 3 cups; listed size Large
@@ -1761,7 +1716,6 @@ products:
       - "Gunner Dog Bowl with Travel Lid"
     categories:
       - feeding-and-hydration
-      - road-trips
     summary: A nylon bowl with a spill-proof, leak-resistant travel lid and non-slip rubber feet.
     keySpecs:
       - Includes one bowl body and one travel lid; the page gives no capacity or dimensions
@@ -1795,8 +1749,7 @@ products:
     aliases:
       - "Petmate Precision Pet Soft Side Play Yard"
     categories:
-      - cabin-vacations
-      - road-trips
+      - pens-and-gates
     summary: A foldable soft-sided play yard with ground stakes, for indoor or outdoor use.
     keySpecs:
       - The page lists size Large and dimensions of 30.5 x 19 x 2.25 with no units
@@ -1833,7 +1786,7 @@ products:
       - "Ruffwear Knot-a-Leash"
       - "Knot-a-Leash"
     categories:
-      - outdoor-adventures
+      - trail-and-hiking
     summary: A 5 ft reflective rope leash with an auto-locking carabiner and an accessory loop for bags.
     keySpecs:
       - "5 ft (1.5 m) in both sizes: Small with 7 mm rope, Large with 11 mm rope"
@@ -1865,7 +1818,7 @@ products:
     aliases:
       - "Grip Trex"
     categories:
-      - outdoor-adventures
+      - trail-and-hiking
     summary: A set of two dog boots with a Vibram outsole for hiking, biking, running and outdoor exploring.
     keySpecs:
       - Sold as a set of two; front and rear paws may need different sizes
@@ -1899,7 +1852,7 @@ products:
       - "Ruffwear Web Master"
       - "Web Master"
     categories:
-      - outdoor-adventures
+      - trail-and-hiking
     summary: A three-strap harness with a neck buckle and a reinforced handle, made for technical terrain.
     keySpecs:
       - "Sizes XXS to L/XL by girth: XXS 13-17 in, XS 17-22, S 22-27, M 27-32, L/XL 32-42 in"
@@ -1933,8 +1886,7 @@ products:
       - "Ruffwear Climate Changer Fleece"
       - "Climate Changer Fleece"
     categories:
-      - winter-travel
-      - outdoor-adventures
+      - cold-weather
     summary: A fleece jacket with sleeves and a full-length zipper, described by the maker as warmth for cold, clear conditions.
     keySpecs:
       - "Sizes XXS to XL by chest girth: XXS 13-17 in, XS 17-22, S 22-27, M 27-32, L 32-36, XL 36-42 in"
@@ -1968,8 +1920,7 @@ products:
     aliases:
       - "Polar Trex"
     categories:
-      - winter-travel
-      - outdoor-adventures
+      - cold-weather
     summary: A set of two winter dog boots with a waterproof, windproof softshell upper and traction lugs.
     keySpecs:
       - Sold as a set of two; sized by paw width from 1.50 in to 3.25 in in 0.25 in steps, size down if between sizes
@@ -2003,8 +1954,7 @@ products:
     aliases:
       - "Timberline Fuse"
     categories:
-      - winter-travel
-      - outdoor-adventures
+      - cold-weather
     summary: A fleece vest with a built-in harness, described by the maker as warmth in mild to cool weather.
     keySpecs:
       - "Sizes XXS to XL by girth: XXS 13-17 in, XS 17-22, S 22-27, M 27-32, L 32-36, XL 36-42 in"
@@ -2035,8 +1985,7 @@ products:
     name: DFD Life Jacket
     brand: EzyDog
     categories:
-      - beach-vacations
-      - outdoor-adventures
+      - water-and-beach
     summary: A foam life jacket with a padded back grab handle, neoprene chest and belly straps and a leash D-ring, sold in sizes XS to XL.
     keySpecs:
       - Sizes XS (15-25 lbs, girth 19-32 in) to XL (90+ lbs, girth 30-48 in); weight ranges overlap, so use girth and length
@@ -2068,9 +2017,7 @@ products:
     name: Happy Ride Compact Telescoping Dog Ramp
     brand: PetSafe
     categories:
-      - road-trips
-      - senior-dogs
-      - large-dogs
+      - ramps-and-steps
     summary: A telescoping ramp that extends from 28 to 70 inches and collapses to 28 inches, rated by the maker to 300 lb.
     keySpecs:
       - Extends 28 to 70 in; collapses to 28 in
@@ -2107,10 +2054,8 @@ products:
       - "Rover Hammock"
       - "Rover Hammock - Extended Width"
     categories:
-      - road-trips
-      - large-dogs
-      - cleaning-and-rental-protection
-      - travel-comfort
+      - car-interior
+      - rental-cleanup
     summary: A 63 by 56 inch bench-seat hammock for full-size trucks and large SUVs, backed by the maker's lifetime guarantee.
     keySpecs:
       - Size 63 in W x 56 in L; maker says it fits most full size trucks and large SUVs
@@ -2146,7 +2091,7 @@ products:
     aliases:
       - "North States MyPet Universal Petgate"
     categories:
-      - cabin-vacations
+      - pens-and-gates
     summary: A plastic gate for doorways and hallways that mounts by pressure or, optionally, to a solid surface with hardware.
     keySpecs:
       - Models 8619/8625; 26 inches high
@@ -2183,7 +2128,7 @@ products:
       - "MidWest iCrate"
       - "iCrate"
     categories:
-      - cabin-vacations
+      - pens-and-gates
     summary: A folding wire crate with divider panel and removable pan, in single- or double-door versions.
     keySpecs:
       - SKU 1500; sizes 18, 22, 24, 30, 36, 42 and 48 in; single or double door
@@ -2218,9 +2163,7 @@ products:
     aliases:
       - "Green Pet Shop Cool Pet Pad"
     categories:
-      - travel-comfort
-      - cabin-vacations
-      - beach-vacations
+      - comfort-and-cooling
     summary: A pressure-activated gel cooling pad for dogs and cats, sold in five sizes by pet weight, that needs no water, refrigeration or electricity per the maker.
     keySpecs:
       - "Five sizes: Extra Small 11.8 x 15.7 in (0-8 lbs) up to Extra Large 27.5 x 43.3 in (above 80 lbs)"
@@ -2256,8 +2199,6 @@ products:
     brand: IRIS USA
     categories:
       - feeding-and-hydration
-      - cabin-vacations
-      - road-trips
     summary: A 12.75-quart latching airtight bin that holds about 10 lbs of dry food, with a wide top for scooping.
     keySpecs:
       - "Maker: 12.75 Qt, holds approximately 10 lbs of dry food, depending on food type"
@@ -2293,8 +2234,8 @@ products:
       - "Soggy Doggy Super Shammy"
       - "Super Shammy"
     categories:
-      - cleaning-and-rental-protection
-      - travel-comfort
+      - rental-cleanup
+      - water-and-beach
     summary: A microfiber chenille drying towel with hand pockets, one size, for wet or muddy dogs.
     keySpecs:
       - 31 x 14 in, one size
@@ -2330,8 +2271,7 @@ products:
       - "Soggy Doggy Microfiber Doormat"
       - "Microfiber Doormat"
     categories:
-      - cabin-vacations
-      - cleaning-and-rental-protection
+      - rental-cleanup
     summary: A microfiber chenille doormat for muddy paws, in Large and Extra Large, with a non-slip backing.
     keySpecs:
       - Large 26 x 36 in; Extra Large 36 x 60 in; 1 in pile height
@@ -2367,9 +2307,7 @@ products:
       - "Pet Parents Pawtect Pads"
       - "Pawtect Pads"
     categories:
-      - cabin-vacations
-      - cleaning-and-rental-protection
-      - senior-dogs
+      - rental-cleanup
     summary: Machine-washable reusable pads with a floor-gripping backing, sold in packs of two in four sizes.
     keySpecs:
       - Maker lists sizes Extra Small 18 x 24 in, Small 24 x 36 in, Medium 34 x 36 in, Large 41 x 41 in; 2 pads per pack
@@ -2401,7 +2339,7 @@ products:
     name: LifeStages Dog Crate (single or double door, with divider panel)
     brand: MidWest Homes for Pets
     categories:
-      - cabin-vacations
+      - pens-and-gates
     summary: A folding wire crate in six sizes with an included divider panel and removable plastic pan.
     keySpecs:
       - "Maker lists six sizes: 22, 24, 30, 36, 42 and 48 inch; single door and double door styles"
@@ -2434,8 +2372,7 @@ products:
     name: KONG Classic
     brand: KONG
     categories:
-      - cabin-vacations
-      - travel-comfort
+      - comfort-and-cooling
     summary: A stuffable natural rubber toy in six size bands by dog weight, with a softer Puppy KONG for under 9 months.
     keySpecs:
       - "Maker sizes: XS up to 5 lb, S up to 20 lb, M 15-35 lb, L 30-65 lb, XL 60-90 lb, XXL 85+ lb; size up if between sizes"
@@ -2472,8 +2409,8 @@ products:
       - "Ruffwear Beacon"
       - "Beacon Dog Safety Light"
     categories:
-      - travel-safety
-      - outdoor-adventures
+      - safety-id-first-aid
+      - trail-and-hiking
     summary: A clip-on rechargeable light with three modes and three colors that attaches to Ruffwear collars and harness light loops.
     keySpecs:
       - "Three modes: Slow Flash, Fast Flash, Always On; three colors"
@@ -2506,7 +2443,7 @@ products:
     name: Petcube GPS Tracker
     brand: Petcube
     categories:
-      - travel-safety
+      - safety-id-first-aid
     summary: A small cellular GPS tracker whose maker says a paid subscription is required for it to operate.
     keySpecs:
       - Tree Line Review calls it "the most inaccurate location-wise" of the trackers it compared (independent opinion, not a measurement we made)
@@ -2540,9 +2477,6 @@ products:
     name: Clickit Sport Plus Crash-Tested Harness
     brand: Sleepypod
     categories:
-      - road-trips
-      - travel-safety
-      - large-dogs
       - car-safety
     summary: A vest-style car harness that connects to a rear-seat seat belt and listed by the maker for dogs from 18 to 110 lbs.
     keySpecs:
@@ -2579,9 +2513,6 @@ products:
       - "Sleepypod Clickit Sport"
       - "Clickit Sport"
     categories:
-      - road-trips
-      - travel-safety
-      - large-dogs
       - car-safety
     summary: The Sleepypod car harness the Center for Pet Safety lists as passed (tested July 2014), with test dogs rated up to 90 lbs in the largest sizes.
     keySpecs:

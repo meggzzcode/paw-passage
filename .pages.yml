@@ -420,24 +420,23 @@ content:
           - { name: brand, label: Brand, type: string, required: true }
           - { name: aliases, label: "Other exact spellings of the name used in guide text, one per line (for example iCrate). Each links to the affiliate link while the product earns. Never a brand alone or one common word", type: string, list: true }
           - name: categories
-            label: "Categories (the first one is the main one)"
+            label: "Categories (the first one is the main one; add at most one more as a cross-listing)"
             type: select
             list: true
             required: true
             options:
               values:
-                - { value: road-trips, label: "Road trips" }
-                - { value: cabin-vacations, label: "Cabin vacations" }
-                - { value: beach-vacations, label: "Beach vacations" }
-                - { value: senior-dogs, label: "Senior dogs" }
-                - { value: large-dogs, label: "Large dogs" }
-                - { value: travel-safety, label: "Travel safety" }
-                - { value: feeding-and-hydration, label: "Feeding and hydration" }
-                - { value: travel-comfort, label: "Travel comfort" }
-                - { value: car-safety, label: "Car safety" }
-                - { value: winter-travel, label: "Winter travel" }
-                - { value: outdoor-adventures, label: "Outdoor adventures" }
-                - { value: cleaning-and-rental-protection, label: "Cleaning and rental protection" }
+                - { value: car-safety, label: "Car safety and restraints" }
+                - { value: car-interior, label: "Seat covers and cargo liners" }
+                - { value: ramps-and-steps, label: "Ramps and steps" }
+                - { value: feeding-and-hydration, label: "Bowls, bottles and food storage" }
+                - { value: pens-and-gates, label: "Pens, fences and gates" }
+                - { value: comfort-and-cooling, label: "Beds, comfort and cooling" }
+                - { value: water-and-beach, label: "Life jackets and water safety" }
+                - { value: trail-and-hiking, label: "Trail and hiking gear" }
+                - { value: cold-weather, label: "Cold-weather gear" }
+                - { value: safety-id-first-aid, label: "ID, GPS and first aid" }
+                - { value: rental-cleanup, label: "Rental cleanup and protection" }
           - { name: summary, label: "What it is, in plain words", type: text, required: true }
           - { name: keySpecs, label: "What the maker states (one fact per line, taken from the source below)", type: string, list: true }
           - name: specSource

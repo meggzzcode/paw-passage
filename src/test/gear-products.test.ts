@@ -2,14 +2,17 @@ import { readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
 import { parse } from "yaml";
 import { products, getProducts, type Product } from "@/content/gear";
-import { gearCategories } from "@/content/gear-categories";
-import { categoryProducts, MIN_LIVE } from "@/content/gear-hub";
+import { gearCategories, legacyCategorySlugs } from "@/content/gear-categories";
+import { categoryProducts, MIN_LIVE, shopByDog, shopByTrip } from "@/content/gear-hub";
+import { dogTypes } from "@/content/dog-types";
+import { sitemapEntries } from "@/lib/sitemap-entries";
 import { resolveProductLink } from "@/content/gear-links";
-import { allGuides } from "@/content/guides";
+import { allGuides, isPublic } from "@/content/guides";
 import {
   productRecordSchema,
   productReferenceProblems,
   NO_TESTING_CITED,
+  gearCategorySlugs,
 } from "@/content/products-schema";
 import type { AffiliateLink } from "@/content/affiliates";
 
@@ -18,6 +21,8 @@ const raw = parse(readFileSync("content/products.yml", "utf8")).products as Reco
   unknown
 >[];
 const links = parse(readFileSync("content/affiliates.yml", "utf8")).links as AffiliateLink[];
+
+const slugsOf = () => [...gearCategorySlugs] as string[];
 
 describe("product catalog rules", () => {
   it("every product has a manufacturer link on an https host", () => {
@@ -62,6 +67,77 @@ describe("product catalog rules", () => {
       for (const c of p.categories ?? []) expect(slugs.has(c), `${p.id}: ${c}`).toBe(true);
       expect(p.manufacturerClaimsVsIndependentTesting, p.id).toBeTruthy();
     }
+  });
+  it("the taxonomy has the 11 job-based categories, each with the spec's active product count as its primary", () => {
+    const spec: Record<string, number> = {
+      "car-safety": 9,
+      "car-interior": 3,
+      "ramps-and-steps": 5,
+      "feeding-and-hydration": 9,
+      "pens-and-gates": 5,
+      "comfort-and-cooling": 4,
+      "water-and-beach": 3,
+      "trail-and-hiking": 3,
+      "cold-weather": 3,
+      "safety-id-first-aid": 5,
+      "rental-cleanup": 4,
+    };
+    expect([...gearCategorySlugs].sort()).toEqual(Object.keys(spec).sort());
+    expect(gearCategories.map((c) => c.slug).sort()).toEqual(Object.keys(spec).sort());
+    const active = products.filter((p) => p.active !== false);
+    for (const p of active)
+      expect(gearCategorySlugs, `${p.id}: primary`).toContain(p.categories?.[0]);
+    for (const [slug, n] of Object.entries(spec))
+      expect(active.filter((p) => p.categories?.[0] === slug).length, slug).toBe(n);
+    for (const p of products) expect(p.categories?.length, p.id).toBeLessThanOrEqual(2);
+  });
+  it("every category has an intro, three how-to-choose bullets and only public guides", () => {
+    for (const c of gearCategories) {
+      expect(c.intro.length, c.slug).toBeGreaterThan(40);
+      expect(c.howToChoose, c.slug).toHaveLength(3);
+      for (const g of c.guideSlugs ?? []) {
+        const guide = allGuides.find((x) => x.slug === g);
+        expect(guide, `${c.slug}: ${g}`).toBeTruthy();
+        expect(isPublic(guide!), `${c.slug}: ${g} is not public`).toBe(true);
+      }
+      if (c.dogTypeSlug)
+        expect(
+          dogTypes.some((d) => d.slug === c.dogTypeSlug),
+          `${c.slug}: ${c.dogTypeSlug}`,
+        ).toBe(true);
+      expect(JSON.stringify(c), c.slug).not.toMatch(
+        /\$\s?\d|stars?\b|\bwe (have )?(tested|tried)/i,
+      );
+    }
+  });
+  it("legacy category slugs map to real new categories and never to themselves", () => {
+    const slugs = new Set<string>(gearCategorySlugs);
+    for (const [old, now] of Object.entries(legacyCategorySlugs)) {
+      expect(slugs.has(now), `${old} -> ${now}`).toBe(true);
+      expect(slugs.has(old) && old === now, old).toBe(false);
+    }
+    expect(Object.keys(legacyCategorySlugs)).toHaveLength(10);
+  });
+  it("shop-by shortcuts link only to real categories and dog pages", () => {
+    const slugs = new Set<string>(gearCategorySlugs);
+    for (const s of [...shopByTrip, ...shopByDog]) {
+      expect(s.categorySlugs.length, s.slug).toBeGreaterThan(0);
+      for (const c of s.categorySlugs) expect(slugs.has(c), `${s.slug}: ${c}`).toBe(true);
+      if (s.dogTypeSlug)
+        expect(
+          dogTypes.some((d) => d.slug === s.dogTypeSlug),
+          `${s.slug}: ${s.dogTypeSlug}`,
+        ).toBe(true);
+    }
+  });
+  it("the sitemap lists the new category pages and none of the old slugs", () => {
+    const gear = sitemapEntries()
+      .map((e) => e.path)
+      .filter((p) => p.startsWith("/gear/"));
+    for (const p of gear) expect(slugsOf(), p).toContain(p.slice("/gear/".length));
+    for (const old of Object.keys(legacyCategorySlugs))
+      if (!(gearCategorySlugs as readonly string[]).includes(old))
+        expect(gear, old).not.toContain(`/gear/${old}`);
   });
   it("photo-less by default: imageRights none and no image source on any product today", () => {
     for (const p of products) {

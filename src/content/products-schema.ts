@@ -4,18 +4,17 @@ import { z } from "zod";
 
 /** Category web addresses used by /gear/<category>. A category page exists only once it has products. */
 export const gearCategorySlugs = [
-  "road-trips",
-  "cabin-vacations",
-  "beach-vacations",
-  "senior-dogs",
-  "large-dogs",
-  "travel-safety",
-  "feeding-and-hydration",
-  "travel-comfort",
   "car-safety",
-  "winter-travel",
-  "outdoor-adventures",
-  "cleaning-and-rental-protection",
+  "car-interior",
+  "ramps-and-steps",
+  "feeding-and-hydration",
+  "pens-and-gates",
+  "comfort-and-cooling",
+  "water-and-beach",
+  "trail-and-hiking",
+  "cold-weather",
+  "safety-id-first-aid",
+  "rental-cleanup",
 ] as const;
 export type GearCategorySlug = (typeof gearCategorySlugs)[number];
 
@@ -67,7 +66,11 @@ export const productRecordObject = z
      * links to the product's affiliate link while the product earns. Never a bare brand or a single common word.
      */
     aliases: z.array(nonEmpty).default([]),
-    categories: z.array(z.enum(gearCategorySlugs)).min(1, "pick at least one category"),
+    /** The first entry is the primary category; an optional second one is a cross-listing (at most two in all). */
+    categories: z
+      .array(z.enum(gearCategorySlugs))
+      .min(1, "pick at least one category")
+      .max(2, "pick a main category and at most one more"),
     summary: nonEmpty,
     keySpecs: z.array(nonEmpty).default([]),
     specSource: z

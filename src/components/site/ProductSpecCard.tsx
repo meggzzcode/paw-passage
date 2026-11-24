@@ -1,5 +1,8 @@
 import {
+  Bone,
   BriefcaseMedical,
+  Flashlight,
+  Package,
   Bed,
   CarFront,
   CupSoda,
@@ -41,13 +44,27 @@ export const SPEC_CARD_STYLE: Record<string, { icon: LucideIcon; tone: Tone }> =
   "rental-cleanup": { icon: Sparkles, tone: "sand" },
 };
 
+/** Product-type icons that fit better than the category icon (matched on the product name; first match wins). */
+const NAME_ICONS: [RegExp, LucideIcon][] = [
+  [/vest|cooler|cooling|cool pet/i, Snowflake],
+  [/gps|tracker|petcube|tractive|\bfi\b|series 3/i, MapPin],
+  [/beacon|safety light|\blight\b/i, Flashlight],
+  [/first aid|first-aid|medical kit|trail dog/i, BriefcaseMedical],
+  [/wipes|towel|shammy|doormat|mat\b|pads?\b/i, Sparkles],
+  [/kong/i, Bone],
+  [/\bbed\b|loft wander/i, Bed],
+  [/crate|exercise pen|play yard|pet yard|petgate|\bgate\b|barrier/i, Fence],
+  [/container|vault|carrier|tainer/i, Package],
+  [/bowl|bottle/i, CupSoda],
+];
+
 function styleFor(p: CardProduct) {
-  return (
-    (p.categories?.[0] && SPEC_CARD_STYLE[p.categories[0]]) || {
-      icon: PawPrint,
-      tone: "sand" as Tone,
-    }
-  );
+  const base = (p.categories?.[0] && SPEC_CARD_STYLE[p.categories[0]]) || {
+    icon: PawPrint,
+    tone: "sand" as Tone,
+  };
+  const hit = NAME_ICONS.find(([re]) => re.test(p.name));
+  return hit ? { ...base, icon: hit[1] } : base;
 }
 
 /**

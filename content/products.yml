@@ -81,7 +81,7 @@ products:
       - "No non-Sleepypod accessories"
     categories:
       - car-safety
-    summary: A soft, fold-flat carrier that for very small dogs that the maker says can be used as a car seat, with a safety tether inside.
+    summary: A soft, fold-flat carrier for very small dogs that the maker says can be used as a car seat, with a safety tether inside.
     keySpecs:
       - Maker states it is rated to 12 lbs (5.5 kg) by the Center for Pet Safety
       - Maker pages have disagreed on the weight rating (an earlier Sleepypod collection listing showed 18 lbs); the Atom's own page, re-read 2026-11-19, says 12 lbs, which is what we record. Check the maker's current page before you rely on either figure
@@ -586,7 +586,7 @@ products:
     manufacturerClaimsVsIndependentTesting: none cited
   - id: vittles-vault-travel-tainer
     name: Vittles Vault Travel-Tainer Portable Food Storage Container
-    brand: Vittles Vault (Gamma2 / Petmate)
+    brand: Vittles Vault
     aliases:
       - "Vittles Vault Travel-Tainer"
     cardSpecs:

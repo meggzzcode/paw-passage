@@ -91,6 +91,8 @@ import guideProtectCarInterior from "@/assets/guide-protect-car-interior.jpg";
 import guideProtectCarInteriorCard from "@/assets/guide-protect-car-interior-card.jpg";
 import guideLargeDogsRental from "@/assets/guide-large-dogs-rental.jpg";
 import guideLargeDogsRentalCard from "@/assets/guide-large-dogs-rental-card.jpg";
+import guidePackingListBoots from "@/assets/guide-packing-list-boots.jpg";
+import guidePackingListBootsCard from "@/assets/guide-packing-list-boots-card.jpg";
 
 // Editorial stock photographs (Unsplash License), shown for illustration only and never as pictures of a specific rental.
 // Photographer credits live in src/content/image-credits.ts.
@@ -320,6 +322,11 @@ const stockImages = {
     src: guideLargeDogsRental,
     card: guideLargeDogsRentalCard,
     alt: "A large golden retriever in a black harness sitting on the wooden deck of a dark A-frame cabin beside a person seen from behind, looking out over misty forested mountains",
+  },
+  "guide-packing-list-boots": {
+    src: guidePackingListBoots,
+    card: guidePackingListBootsCard,
+    alt: "A golden retriever in a black harness and red-and-black protective dog boots lying on a wooden bench in the sun, panting happily",
   },
 } as const satisfies Record<string, StockImage>;
 

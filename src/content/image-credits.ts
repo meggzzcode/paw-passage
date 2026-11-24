@@ -250,4 +250,10 @@ export const imageCredits: ImageCredit[] = [
     photographer: "Illia Bondar",
     unsplashUrl: "https://unsplash.com/photos/person-and-dog-on-mountain-deck-H5LOYby0rI8",
   },
+  {
+    key: "guide-packing-list-boots",
+    photographer: "Amo Journey",
+    unsplashUrl:
+      "https://unsplash.com/photos/a-dog-is-sitting-on-a-bench-with-a-pair-of-shoes-_j8fhPZoz14",
+  },
 ];

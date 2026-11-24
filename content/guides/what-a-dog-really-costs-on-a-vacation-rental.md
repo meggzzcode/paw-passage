@@ -279,8 +279,6 @@ Gear is not part of the rental bill, so it stays out of the totals above. It doe
 
 {{pick:iris-usa-airtight-dog-food-container-10-lb|Our pick|Maker lists 12.75 qt, about 10 lb of dry food, with airtight seals and buckles.|https://www.irisusainc.com/collections/airtight-pet-food-containers/products/airtight-dog-food-storage-container-up-to-10-lbs-3}}
 
-All are researched from the maker's page, not tested by us.
-
 ## How to compare two quotes
 
 1. Fix the inputs: same dates, same number of guests, same number of dogs.

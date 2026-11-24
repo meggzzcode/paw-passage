@@ -29,7 +29,7 @@ Your dog cuts a paw on a rock two miles from the cabin, and the nearest clinic i
 
 ## How we built this list
 
-The core list follows the AVMA's pet first-aid brochure and kit checklist [[1]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf), cross-checked against the ASPCA's poison control page [[2]](https://www.aspca.org/pet-care/aspca-poison-control) and several kit guides. [[3]](https://www.petmd.com/general-health/must-have-items-for-pet-first-aid-kit) [[4]](https://www.smalldoorvet.com/learning-center/medical/pet-first-aid-kit/) [[5]](https://www.preventivevet.com/how-to-make-a-pet-first-aid-kit) Where they disagree, we lean cautious and say so. Product details come only from each maker's page, read on 2026-11-16 and subject to change. Paws & Passage has not tested any product.
+The core list follows the AVMA's pet first-aid brochure and kit checklist [[1]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf), cross-checked against the ASPCA's poison control page [[2]](https://www.aspca.org/pet-care/aspca-poison-control) and several kit guides. [[3]](https://www.petmd.com/general-health/must-have-items-for-pet-first-aid-kit) [[4]](https://www.smalldoorvet.com/learning-center/medical/pet-first-aid-kit/) [[5]](https://www.preventivevet.com/how-to-make-a-pet-first-aid-kit) Where they disagree, we lean cautious and say so. Product details come only from each maker's page, read on 2026-11-16 and subject to change.
 
 ## The AVMA kit checklist
 
@@ -86,7 +86,7 @@ A hybrid is often best: a ready-made kit gives you organized, often waterproof b
 
 ## Buying checklist
 
-Hold any ready-made kit up against this list. Product details below come from each maker's page, read on 2026-11-16, and we have not tested any kit. Check the current price on the listing.
+Hold any ready-made kit up against this list. Product details below come from each maker's page, read on 2026-11-16. Check the current price on the listing.
 
 - [ ] **Contents match the AVMA checklist:** bandage materials, gauze, tape, scissors, tweezers, gloves, saline.
 - [ ] **Count line items, not the piece count.** A big number on the box can hide a short contents list, so read the list.

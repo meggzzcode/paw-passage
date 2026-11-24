@@ -82,7 +82,7 @@ Do not plan around carrying a heavy dog up steps: a wet walk or a minor injury c
 
 ## Buying checklist: gear for a big dog
 
-Once the rental is settled, these are the things that make a heavy dog's trip easier. We researched products from the maker's page and have not tested any. Check the current price on the listing.
+Once the rental is settled, these are the things that make a heavy dog's trip easier. Check the current price on the listing.
 
 - [ ] **A stated weight rating above your dog's weight,** for any ramp or step. It is the maker's figure, so leave a margin.
 - [ ] **Side rails and a non-slip surface** on a ramp, and a length that gives a gentle angle for your vehicle's height.

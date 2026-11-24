@@ -180,7 +180,7 @@ Water you meet along the way is a separate question. The CDC says dogs can get G
 
 ## Eight travel bowls, bottles and carriers: what the maker pages say
 
-Everything below is the maker's own wording or figures, read on 2026-11-18. We have not tested any of these products, and the table holds no ratings or prices. Where a page is silent, the cell says so. Dishwasher status is listed only where the page states it.
+Everything below is the maker's own wording or figures, read on 2026-11-18. The table holds no ratings or prices. Where a page is silent, the cell says so. Dishwasher status is listed only where the page states it.
 
 | Product | Capacity or size as stated | Materials as the maker describes them | Cleaning as stated |
 | --- | --- | --- | --- |
@@ -195,7 +195,7 @@ Everything below is the maker's own wording or figures, read on 2026-11-18. We h
 
 Two things the table shows. Gunner gives no capacity, and the two Springland bottles carry their size in the product name only. The bowl figures also vary, from Kurgo's 24 ounces to Ruffwear's 4.2 cups (1 L). Our reading is that a bowl sized to your dog's single drink, not a whole day's, is the easier one to pack.
 
-Two more items from the pages. Ruffwear's page lists the lining as waterproof and the shell as water-resistant. [[11]](https://ruffwear.com/products/quencher-dog-bowl) Gunner's page calls the lid spill-proof and leak-resistant but gives no test data behind it. [[13]](https://gunner.com/products/gunner-dog-bowl-black) For where each sits in a trip bag, see our [feeding and hydration gear page](/gear/feeding-and-hydration). These specs are researched from the makers' pages and cited sources, not tested by us.
+Two more items from the pages. Ruffwear's page lists the lining as waterproof and the shell as water-resistant. [[11]](https://ruffwear.com/products/quencher-dog-bowl) Gunner's page calls the lid spill-proof and leak-resistant but gives no test data behind it. [[13]](https://gunner.com/products/gunner-dog-bowl-black) For where each sits in a trip bag, see our [feeding and hydration gear page](/gear/feeding-and-hydration).
 
 ### Bowls to start with
 

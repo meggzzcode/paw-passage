@@ -250,7 +250,7 @@ A cover does nothing for heat. The ASPCA says never to leave an animal alone in 
 
 - **Confirmed by a source we cite:** the maker dimensions, attachment and cleaning wording as quoted from the PetSafe and Kurgo pages, the ASPCA wording and the Enterprise page.
 - **What most people report:** nothing here rests on reports from many people. The advice to use a cover for claws and hair appears on several guides we read, which are retailer or maker pages, so it is common advice and not tested.
-- **Unknown:** crash performance of any cover, and the table above. Specs are researched from the makers' pages, not tested by us.
+- **Unknown:** crash performance of any cover, and the table above.
 
 ## What to buy first
 

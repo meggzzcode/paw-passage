@@ -284,7 +284,7 @@ Copy this before you buy anything for the trip:
 - [ ] **Portability:** folds or collapses, with a weight you can lift into the car by yourself.
 - [ ] **Washable layers:** pads or sheets that machine wash, with a waterproof layer and a grip backing for slippery floors.
 - [ ] **Size:** measured against your dog and the space, not guessed from the product name.
-- [ ] **Check the current price** and return terms on the listing. We researched from the makers' pages and have not tested any of this.
+- [ ] **Check the current price** and return terms on the listing.
 - [ ] **Ask your vet** whether ramps or steps suit your dog, and ask the host before you lay anything down.
 
 ## What should you ask the host?

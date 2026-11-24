@@ -251,7 +251,7 @@ For snow and ice, size boots by paw width, not dog weight, and check the count: 
 - [ ] **Bed:** rolls up for the car, has a non-slip bottom and a washable or wipeable cover, in a size that fits the room you will use.
 - [ ] **Chew toy:** a stuffable rubber toy in the maker's size band for your dog's weight, used under supervision.
 - [ ] **No promises you cannot check:** the maker pages we read state no temperature rating, so do not buy on one.
-- [ ] **Check the current price** and the return terms on each listing. We researched these from the makers' pages and have not tested them.
+- [ ] **Check the current price** and the return terms on each listing.
 
 ## Find the emergency vet before you unpack
 

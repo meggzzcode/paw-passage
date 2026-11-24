@@ -241,8 +241,6 @@ The park rules set a 6-foot leash at all times outside the cottage, no tying to 
 
 {{pick:ruffwear-knot-a-leash|Our pick|Maker lists it at 5 ft, inside the 6-foot leash limit on the park rules page.|https://ruffwear.com/products/knot-a-leash-dog-leash}}
 
-Researched from the maker's page, not tested by us.
-
 Because the dog cannot wait in the cabin or the car, every hike, lakeside walk and meal out is a trip the two of you make together, and the dog needs water on each one. Our suggestion is to carry it yourself rather than rely on what is on the trail. Two ways to do that fit these rules.
 
 For short outings, Springland's 22oz Classic is a squeeze-to-fill bottle with an attached bowl that the maker says you can operate with one hand: squeeze to fill the bowl, release to drain the excess back. It is food-safe, BPA-free polypropylene with an aluminum carabiner and a leak-proof lock design, per the maker, and top-rack dishwasher safe or hand washable. [[15]](https://springlandpets.com/products/22oz-classic-dog-travel-water-bottle) The page gives the size in the name only, and the leak claim is the maker's.

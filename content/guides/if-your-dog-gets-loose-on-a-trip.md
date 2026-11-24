@@ -315,7 +315,7 @@ Copy this before you shop. The maker's own page should answer each line; if it d
 - A water-resistance rating if your trip involves lakes, rain or snow.
 - Warranty wording, and whether the tracker also needs a membership. One collar-style maker's collar page states no carrier, coverage or subscription terms, and its membership page says every membership includes the app and the collar, so confirm both before buying. [[12]](https://fitracking.com/collar) [[14]](https://fitracking.com/membership)
 
-A tracker can help you search; it cannot stop a dog getting lost. We researched products from the maker's page and have not tested any. Check the current price on the listing.
+A tracker can help you search; it cannot stop a dog getting lost. Check the current price on the listing.
 
 ### Three trackers, and who each suits
 

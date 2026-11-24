@@ -153,7 +153,6 @@ Your dog used to leap into the back of the car without a thought, and now he sto
 - **Ramps are the usual pick for cars.** AKC says ramps suit car use because they are easier to fold and often lighter than quality dog stairs. [[1]](https://www.akc.org/expert-advice/health/general-health/dog-stairs-and-ramps/)
 - **Steps suit a fixed-height door.** The PetSafe Side Door Steps list three set heights.
 - **Weight ratings differ a lot.** The four products here run from 150 lb to 300 lb, as the makers state.
-- **Researched, not tested.** This guide is researched from the maker's specifications and cited sources, not tested by us.
 
 ## Buying checklist
 

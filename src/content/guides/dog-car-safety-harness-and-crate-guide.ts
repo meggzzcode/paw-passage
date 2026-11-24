@@ -29,7 +29,7 @@ Your dog is bouncing between the back seat and the center console, and you are d
 
 ## How we researched this
 
-Paws & Passage has not tested, used, or reviewed any product in this guide. The picks rest on the buying checklist below, the makers' published specifications, and the certification listings of CPS, a nonprofit that tests pet travel products. Every spec links to its source. Models, sizes, and certifications change, so confirm the exact model and size with the maker and the CPS directory before buying. Nothing here replaces your veterinarian's advice about your own dog.
+The picks rest on the buying checklist below, the makers' published specifications, and the certification listings of CPS, a nonprofit that tests pet travel products. Every spec links to its source. Models, sizes, and certifications change, so confirm the exact model and size with the maker and the CPS directory before buying. Nothing here replaces your veterinarian's advice about your own dog.
 
 ## Why restraint matters
 
@@ -183,7 +183,7 @@ CDC and ASPCA recommend building up to a long trip with short drives first. Fitt
     },
     {
       q: "Which harness should I look at first?",
-      a: "Start with a harness whose CPS listing shows a test dog at or above your dog's weight, in your dog's size. The Sleepypod Clickit Sport is the harness CPS lists: passed with 5 stars in July 2014, with test dogs rated to 25 lbs (Small), 45 to 90 lbs (Medium and Large) and to 90 lbs (X-Large). Paws & Passage has not tested any harness; check the listing for your dog's size, and confirm fit with the maker before buying.",
+      a: "Start with a harness whose CPS listing shows a test dog at or above your dog's weight, in your dog's size. The Sleepypod Clickit Sport is the harness CPS lists: passed with 5 stars in July 2014, with test dogs rated to 25 lbs (Small), 45 to 90 lbs (Medium and Large) and to 90 lbs (X-Large). Check the listing for your dog's size, and confirm fit with the maker before buying.",
     },
   ],
   gear: [
@@ -427,7 +427,6 @@ CDC and ASPCA recommend building up to a long trip with short drives first. Fitt
     ],
     differentiators: [
       "Teaches readers how to verify a claim in the CPS directory instead of ranking products by opinion.",
-      "States clearly that Paws & Passage has not tested the products and picks by criteria and published specs.",
       "Covers cargo anchors and extension tethers using CPS advisories.",
       "Explains certification is specific to a model, size and test weight.",
       "Includes a pick-by-situation section and a pre-trip checklist linked to site tools.",

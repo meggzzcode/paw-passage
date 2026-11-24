@@ -242,8 +242,6 @@ At the cabin, a few of our own suggestions, with no source behind them. Test the
 - **Our judgment, with no source:** the arrival routine at the cabin, boots off at the door, the vest being a walking harness and not a car restraint, and the cabin tips.
 - **Unknown:** your dog's own limits, and how any item performs in your conditions.
 
-Specs here are researched from the makers' pages and cited sources, not tested by us.
-
 ## What to buy first
 
 Start with the surface and the dog, not the catalog. If the paths are salted or icy, put boots or a wipe-down routine first. If your dog is small, thin-coated or old, a fleece or vest is next. Measure the paws and the chest tonight and compare with the chart on each listing. Then add a towel for the door to the [packing list tool](/tools/packing-list), look over the [winter travel gear page](/gear/winter-travel), and run the [pre-booking checklist](/tools/checklist) with the question about what the host puts on the paths added.

@@ -154,7 +154,7 @@ research:
 
 You are staying in a cabin, the trailhead is ten minutes away, and your dog is already at the door. Before you buy anything, two questions come first: is your dog allowed on that trail, and on what leash? The gear is only worth buying once those are answered.
 
-This guide covers day hikes from a cabin or mountain rental. Specs below are from maker pages and the sources cited, not tested by us. For the rest of the bag, see our [cabin packing list guide](/guides/dog-friendly-cabin-packing-list).
+This guide covers day hikes from a cabin or mountain rental. For the rest of the bag, see our [cabin packing list guide](/guides/dog-friendly-cabin-packing-list).
 
 - **Rules first.** NPS says many parks do not allow pets on hiking trails or boardwalks, and to check the park before you go. [[1]](https://www.nps.gov/subjects/trails/hiking-with-pets.htm)
 - **Leash.** NPS says to always keep your dog on a 6 foot leash. [[1]](https://www.nps.gov/subjects/trails/hiking-with-pets.htm)

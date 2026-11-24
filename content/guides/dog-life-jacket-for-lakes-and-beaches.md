@@ -219,8 +219,6 @@ One maker calls its product "a flotation aid intended for use on a conscious dog
 
 So every flotation statement here is the maker's. No lab test or certification body is named on any maker page we read. The Coast Guard video above is the only official statement we read, and it is from 2013. [[1]](https://www.dvidshub.net/video/291603/boating-responsibly-with-mans-best-friend)
 
-Specs here are researched from the makers' pages and cited sources, not tested by us.
-
 ## Jackets to start with
 
 Start with a jacket that has the features above in your dog's girth range, and a maker page that states its sizes and return terms. Three to begin with, each suited to a different dog and a different shoreline. Check sizes and the current price on each listing before you order. More are on our [beach vacations gear page](/gear/beach-vacations).

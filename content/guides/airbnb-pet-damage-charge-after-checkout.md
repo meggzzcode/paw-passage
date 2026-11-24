@@ -250,8 +250,6 @@ For a puppy, a senior or a dog in a new place, a washable pad on a hard floor ma
 
 {{pick:pet-parents-pawtect-pads|Our pick|The maker lists two pads per pack in four sizes, with a waterproof backing and a floor-gripping backing.|https://petparentsbrand.com/products/washable-puppy-pads}}
 
-All of these are researched from the makers' pages, not tested by us.
-
 ## What to write back
 
 Keep replies short, polite and on the platform, and replace the brackets.

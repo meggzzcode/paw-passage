@@ -272,8 +272,6 @@ Use it at a stop with the engine and air conditioning on and someone with the do
 
 A 22 oz bottle is not much for a big dog on a long hot walk, and the page states no insulation, so water will warm in the sun. Carry more than one bottle, or a larger container in the car, for longer outings. For more bowl and bottle options and food storage, see our [travel bowls guide](/guides/dog-travel-bowls-and-food-storage).
 
-Specs here are researched from the makers' pages and cited sources, not tested by us.
-
 ## What we could not confirm
 
 | Question | Why it is open | Check for yourself |

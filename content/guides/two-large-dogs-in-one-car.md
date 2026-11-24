@@ -265,7 +265,7 @@ With two dogs, our practical suggestion (not a source's rule): clip both leashes
 
 - **Confirmed by a source we cite:** the CPS crate-study and anchor statements, the ASPCA, CDC and Cornell wording, and each maker's page as quoted. Restraints are manufacturer claims unless a tester is named; Ruffwear names MGA Research, an independent facility by its own description, but the tests were part of Ruffwear's product development.
 - **What most people report:** nothing here rests on reports.
-- **Unknown:** what any independent test shows for two dogs, and the rows above. Product notes are researched from the maker's specifications and cited sources, not tested by us.
+- **Unknown:** what any independent test shows for two dogs, and the rows above.
 
 ## What to buy first
 

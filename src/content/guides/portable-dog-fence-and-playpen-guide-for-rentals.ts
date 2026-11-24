@@ -31,7 +31,7 @@ If the trip depends on a yard, start with our guide to [finding a rental with a 
 
 ## Buying checklist
 
-Copy this and hold each listing up against it. We researched products from the maker's page and have not tested any.
+Copy this and hold each listing up against it.
 
 - [ ] **Height:** taller than your dog's jump, not a size word like "medium". Makers state panel heights, so compare numbers.
 - [ ] **A stated dog size or weight limit.** Many makers state none; if yours does not, choose conservatively.
@@ -351,7 +351,7 @@ Then read the manual, practice at home, photograph the space before and after, a
     differentiators: [
       "Rental-first framing: host questions, floor protection and lawn-stake etiquette.",
       "Specs taken only from each maker's own page, with unstated limits left blank.",
-      "Clear criteria-based, untested disclosure and no prices or ratings.",
+      "No prices or ratings.",
       "Tie-out caution sourced to Humane World for Animals.",
     ],
     angle:

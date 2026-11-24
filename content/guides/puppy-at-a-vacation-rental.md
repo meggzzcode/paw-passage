@@ -172,7 +172,7 @@ Copy this before you shop for a puppy's rental trip:
 - [ ] **Crate size:** sized for the adult dog, with a divider panel included so a small puppy gets a smaller space (the ASPCA's advice, below).
 - [ ] **Crate practicalities:** folds flat for the car and has a removable pan you can wipe. Measure the car and the rental room first.
 - [ ] **Chew toy:** a stuffable rubber toy in the maker's size band for your puppy's weight, a softer puppy version if the maker offers one, used under supervision and thrown out when damaged.
-- [ ] **Check the current price** on the listing, and the size, before you order. We researched these from the makers' pages and have not tested them.
+- [ ] **Check the current price** on the listing, and the size, before you order.
 
 ## Age rules, in the managers' own words
 

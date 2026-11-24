@@ -143,7 +143,8 @@ When you leave, wipe the panels, fill any stake holes, take the "after" photos a
     },
     {
       productId: "petmate-precision-pet-soft-side-play-yard",
-      bestFor: "A foldable soft-sided yard for a calm puppy or small dog on a trip (check the size; no height is stated)",
+      bestFor:
+        "A foldable soft-sided yard for a calm puppy or small dog on a trip (check the size; no height is stated)",
       whyItMadeTheList:
         "The maker lists eight ventilated mesh panels, reinforced corners, a removable top and a removable washable floor, tool-free setup and ground stakes, for indoor or outdoor use including road trips and camping.",
       watchOuts: [

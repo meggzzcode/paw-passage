@@ -10,3 +10,8 @@
 - PRODUCT DATA: if the Ruffwear Web Master page really states a light loop, reflective trim and a between-sizes rule, add them to `ruffwear-web-master-harness` keySpecs with an access date; the guide can then restore them.
 - PIN ROW (docs/pinterest-pins.csv line 7): echo "dog hiking gear for a cabin trip". Hero image `guide-dog-hiking-gear` is on topic.
 - Expected score: about 9.0 to 9.3.
+
+## Round 3
+- Added a plain sentence that all five picks are Ruffwear because that is the catalog researched, not a ranking; plain six-foot leash and other-maker light/headlamp alternatives added.
+- seoTitle now "Dog Hiking Gear for a Cabin Trip: Buy List" (42 chars). Duplicate size-down sentence and three "buy first" sentences removed; bowl added as step 5 in the close. Chest-loop claim checked against products.yml keySpecs (supported).
+- For the lead: pin row title should mirror the new seoTitle (CSV not edited).

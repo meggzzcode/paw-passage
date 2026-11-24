@@ -6,3 +6,9 @@
 - Pin row 10 text: suggest title "Dog Travel Bowls and Food Storage: What to Pack First" and description matching seoDescription.
 ## For the lead
 - Hero `guide-travel-bowls` is on topic; no change needed.
+
+## Round 3
+- Dek and meta now say nine products; IRIS row added to the maker table (page states no care instructions).
+- Opening split into short paragraphs; "What to buy" paragraph became a three-line list (Collaps, Kibble Carrier, Vittles).
+- "Water first" section moved after the bowl and food picks; three in-body "buy first" lines replaced with neutral wording, leaving "What to buy first" as the only one.
+- For the lead: Vittles display name and card icon are product-record items (not edited); pin row description still says eight if it does.

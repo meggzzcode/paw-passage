@@ -1,6 +1,6 @@
 ---
 title: "Dog Hiking Gear for a Cabin Vacation: What to Buy"
-seoTitle: "Dog Hiking Gear for Cabin Trips: What to Buy"
+seoTitle: "Dog Hiking Gear for a Cabin Trip: Buy List"
 seoDescription: "What dog hiking gear a cabin trip needs: trail rules first, then a leash, harness, boots and a dusk light, each sized from the maker's chart."
 dek: Most trail trips need less gear than the lists say, and the rules decide where your dog can go before the gear does. Here is what to check, how to size it and what the park and forest pages actually require.
 category: Planning
@@ -159,6 +159,8 @@ You are staying in a cabin, the trailhead is ten minutes away, and your dog is a
 
 This guide covers day hikes from a cabin or mountain rental. For the rest of the bag, see our [cabin packing list guide](/guides/dog-friendly-cabin-packing-list).
 
+All five products below are from Ruffwear. That is the catalog we researched, and its maker pages gave sizing and care facts we could read; it is not a claim that Ruffwear is the only sound choice. A fixed leash of six feet or less from any maker meets the rule, and no source we read ranks brands.
+
 - **What to buy:** a fixed leash of six feet or less for every trail; a handle harness only for steep or scrambling ground; boots only if a short test hike shows your dog needs them; a clip-on light if you may be out near dusk.
 - **Rules first.** NPS says many parks do not allow pets on hiking trails or boardwalks, and to check the park before you go. [[1]](https://www.nps.gov/subjects/trails/hiking-with-pets.htm)
 - **Leash.** NPS says to always keep your dog on a 6 foot leash. [[1]](https://www.nps.gov/subjects/trails/hiking-with-pets.htm)
@@ -193,7 +195,7 @@ Our own reasoning, labeled as ours: on a ledge, a scramble or a wet step, you ma
 
 {{pick:ruffwear-web-master-harness|For steep, rocky trails: a handle to lift|Ruffwear says the reinforced handle offers balanced lift and assist support for navigating technical terrain. The maker lists three leash attachment points, including a chest loop described for dogs that pull, and a neck buckle for dogs that dislike going over the head, sized by girth from XXS to L/XL.|https://ruffwear.com/products/web-master-dog-harness}}
 
-Who it suits: a dog that will scramble with you, or one you may need to help over a step, where a handle beats a collar clip. Skip it if your dog walks easy paths on a leash and you never need to lift or steady them. What it does not do: the page makes no car-crash or mobility-support claim, so do not treat it as either. Before you buy, measure the girth around the widest part of the rib cage and compare it with the maker's chart: XXS 13-17 in, XS 17-22, S 22-27, M 27-32, L/XL 32-42 in. [[11]](https://ruffwear.com/products/web-master-dog-harness) The maker page we read gives no between-sizes rule, so check the chart for the exact size and fit it at the cabin before the trail. This is the harness to buy first if your trail is steep or you may need to steady your dog.
+Who it suits: a dog that will scramble with you, or one you may need to help over a step, where a handle beats a collar clip. Skip it if your dog walks easy paths on a leash and you never need to lift or steady them. What it does not do: the page makes no car-crash or mobility-support claim, so do not treat it as either. Before you buy, measure the girth around the widest part of the rib cage and compare it with the maker's chart: XXS 13-17 in, XS 17-22, S 22-27, M 27-32, L/XL 32-42 in. [[11]](https://ruffwear.com/products/web-master-dog-harness) The maker page we read gives no between-sizes rule, so check the chart for the exact size and fit it at the cabin before the trail.
 
 ## Do you need boots
 
@@ -210,7 +212,7 @@ What none of them gives is a distance, temperature or surface at which boots bec
 
 Skip them if your dog stays on soft paths and the paw check after a hike shows no wear. What the page does not state: any limit for heat, snow or water. The traction and paw-protection wording is the maker's. Sizing is where most people go wrong, so measure first. Ruffwear says to "Measure across widest part of paw when bearing weight. Measure ALL paws. If between sizes, size down." [[10]](https://ruffwear.com/products/grip-trex-dog-boots) Front and rear paws can differ, which is why the boots sell as a set and you may need two sizes. AKC adds a way to do it at home: trace the paw on paper, draw a line across the widest part and measure it. [[7]](https://www.akc.org/expert-advice/lifestyle/dog-boots/)
 
-Two more steps. AKC says to introduce one boot first, then the second, with indoor practice before an outing. [[7]](https://www.akc.org/expert-advice/lifestyle/dog-boots/) Ruffwear says to check the closure and adjust the fit about 15 minutes into the activity. [[10]](https://ruffwear.com/products/grip-trex-dog-boots) Do the indoor practice at the cabin on day one, not at the trailhead. Buy them after a short test hike shows your dog's paws need them. If you are between sizes, Ruffwear says to size down.
+Two more steps. AKC says to introduce one boot first, then the second, with indoor practice before an outing. [[7]](https://www.akc.org/expert-advice/lifestyle/dog-boots/) Ruffwear says to check the closure and adjust the fit about 15 minutes into the activity. [[10]](https://ruffwear.com/products/grip-trex-dog-boots) Do the indoor practice at the cabin on day one, not at the trailhead. Buy them after a short test hike shows your dog's paws need them.
 
 ## Leash length and type
 
@@ -218,7 +220,7 @@ NPS says to always keep your dog on a 6 foot leash. [[1]](https://www.nps.gov/su
 
 {{pick:ruffwear-knot-a-leash|A fixed 5 ft trail leash for every hike|The maker lists it at 5 ft in both sizes, in reflective rope with a tri-action auto-locking carabiner and a silicone swivel cover. Small has 7 mm rope and Large 11 mm.|https://ruffwear.com/products/knot-a-leash-dog-leash}}
 
-At 5 feet it sits inside the 6-foot limit. [[12]](https://ruffwear.com/products/knot-a-leash-dog-leash) What the page does not say: any strength rating or guidance by dog weight, so use the page's size chart and judge the rope thickness against your dog's pulling. Skip it if you want a hands-free or bungee leash; it is not one. This is the first thing to buy if you own no fixed short leash, because every trail needs one.
+At 5 feet it sits inside the 6-foot limit. [[12]](https://ruffwear.com/products/knot-a-leash-dog-leash) What the page does not say: any strength rating or guidance by dog weight, so use the page's size chart and judge the rope thickness against your dog's pulling. Skip it if you want a hands-free or bungee leash; it is not one. If you already own a plain six-foot leash, that is enough; buy a new one only if yours is retractable or longer than the trail allows.
 
 ## Seeing the dog at dusk
 
@@ -226,7 +228,7 @@ A late start or a slow descent can leave you on the trail at dusk. We found litt
 
 {{pick:ruffwear-the-beacon-dog-safety-light|For dusk: a light that shows without a beam|The maker lists three modes (Slow Flash, Fast Flash, Always On), three colors, up to 20 hours of operating time, about 1.5 hours to charge by micro USB and a rating of waterproof to 1 m for 30 minutes.|https://ruffwear.com/products/the-beacon-safety-dog-light}}
 
-It clips to Ruffwear collars and apparel light loops, [[13]](https://ruffwear.com/products/the-beacon-safety-dog-light) so check that your dog's collar or harness has a light loop, or carry a headlamp instead. Skip it if you will be off the trail by dusk. The run time and waterproof depth are maker figures, and the page states no weight. A light is for seeing the dog, not for finding a lost one; add it if late starts are likely. Our [loose dog guide](/guides/if-your-dog-gets-loose-on-a-trip) covers that situation.
+It clips to Ruffwear collars and apparel light loops, [[13]](https://ruffwear.com/products/the-beacon-safety-dog-light) so check that your dog's collar or harness has a light loop. If it does not, a headlamp on you, or a light from another maker that clips to your dog's gear, does the same job; the maker's figures above are only for this one. Skip it if you will be off the trail by dusk. The run time and waterproof depth are maker figures, and the page states no weight. A light is for seeing the dog, not for finding a lost one; add it if late starts are likely. Our [loose dog guide](/guides/if-your-dog-gets-loose-on-a-trip) covers that situation.
 
 ## Trail etiquette in a few lines
 
@@ -248,7 +250,7 @@ What that means on a trail:
 - **Boots and heat.** Orvis warns that dogs can overheat if booties are left on too long, so check the paws and take them off at rest stops (our suggestion). [[6]](https://www.orvis.com/how-to-hike-safely-with-your-dog.html)
 - **Never leave a dog in a parked car.** The Gila page says that in summer even a few minutes in the car can kill or seriously injure a pet. [[3]](https://www.fs.usda.gov/r03/gila/safety-ethics/canine-campers-bringing-dogs-national-forest)
 
-A packable bowl keeps the water stop easy, and on the trail it is the item that makes you actually offer a drink. Ruffwear's Quencher Collapsible Dog Bowl is listed in one size, the Medium, with a 5.5 in opening and 4.2 cups (1 L), enough for a real drink at a trailhead or summit stop rather than a sip. The maker lists a 4,000 mm waterproof rating on the lining and says to hand wash and air dry. [[14]](https://ruffwear.com/products/quencher-dog-bowl) It is for the hiker whose dog drinks a lot on a longer loop and who wants a bowl that packs flat. Skip it if you want something dishwasher safe, because it is hand wash only, and note the shell is described as water-resistant, not waterproof. It is the bowl to buy first if you do one bowl for the trail.
+A packable bowl keeps the water stop easy, and on the trail it is the item that makes you actually offer a drink. Ruffwear's Quencher Collapsible Dog Bowl is listed in one size, the Medium, with a 5.5 in opening and 4.2 cups (1 L), enough for a real drink at a trailhead or summit stop rather than a sip. The maker lists a 4,000 mm waterproof rating on the lining and says to hand wash and air dry. [[14]](https://ruffwear.com/products/quencher-dog-bowl) It is for the hiker whose dog drinks a lot on a longer loop and who wants a bowl that packs flat. Skip it if you want something dishwasher safe, because it is hand wash only, and note the shell is described as water-resistant, not waterproof.
 
 {{pick:ruffwear-quencher-bowl|A packable trail bowl: 4.2 cups (1 L)|The maker lists one size, Medium, with a 5.5 in opening and 4.2 cups (1 L), a lining with a 4,000 mm waterproof rating labelled Food Contact Safe (the maker's wording, no tester named), and hand wash only.|https://ruffwear.com/products/quencher-dog-bowl}}
 
@@ -285,11 +287,12 @@ Add the pieces to our [packing list tool](/tools/packing-list), and see our [cab
 
 ## What to buy first
 
-Settle the trail rules, then measure two things tonight: the girth around your dog's rib cage and the width of each paw standing. Buy in this order:
+Settle the trail rules, then measure two things tonight: the girth around your dog's rib cage and the width of each paw standing. Buy in this order, skipping what your trail does not call for:
 
 1. **A fixed leash of six feet or less**, because every trail needs one: the Knot-a-Leash at 5 ft fits inside the limit.
 2. **The Web Master harness** only if your trail is steep or you may need to lift or steady the dog.
 3. **The Grip Trex boots** only after a short test hike shows your dog's paws need them.
 4. **The Beacon light** if late starts are likely.
+5. **A packable bowl** such as the Quencher if the trail has no water stop.
 
 Compare your measurements with each maker chart (linked in the cards above), then run the [pre-booking checklist](/tools/checklist) with the trail questions added.

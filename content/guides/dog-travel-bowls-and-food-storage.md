@@ -1,8 +1,8 @@
 ---
 title: "Dog Travel Bowls and Food Storage: What to Pack First"
 seoTitle: "Dog Travel Bowls and Food Storage: What to Pack"
-seoDescription: "Pick a collapsible dog bowl for travel and a food container sized to your trip. Eight products compared on maker specs, plus kibble and bear-country rules."
-dek: Which dog travel bowl and food container to pack, with capacity, cleaning and materials for eight products from the makers' own pages, plus what the CDC, FDA and park agencies say about water and food on the road.
+seoDescription: "Pick a collapsible dog bowl for travel and a food container sized to your trip. Nine products compared on maker specs, plus kibble and bear-country rules."
+dek: Which dog travel bowl and food container to pack, with capacity, cleaning and materials for nine products from the makers' own pages, plus what the CDC, FDA and park agencies say about water and food on the road.
 category: Planning
 states: []
 status: published
@@ -161,9 +161,18 @@ research:
   researchComplete: true
 ---
 
-You are loading the car, the kibble is in a half-open bag, and the rental may be a cabin where food storage is a safety rule. This guide covers what to pack in a dog travel bowl, bottle and food container kit, with each product's capacity, materials and cleaning taken from the maker's own page, read on 2026-11-18.
+You are loading the car, the kibble is in a half-open bag, and the rental may be a cabin where food storage is a safety rule.
 
-- **What to buy:** a bowl that packs flat (the Kurgo Collaps A Bowl holds 24 oz and collapses to under 1 inch, per the maker) and, for food, a lid-tight container with room for the days you need (the Vittles Vault Travel-Tainer is a 6-cup container with two 3-cup bowls, per the maker; the Kurgo Kibble Carrier holds up to 5 lbs of dry food for a few days away). Both are easier to pack than to improvise.
+This guide covers what to pack in a dog travel bowl, bottle and food container kit, with each product's capacity, materials and cleaning taken from the maker's own page, read on 2026-11-18.
+
+**What to pack:**
+
+- **A bowl that packs flat:** the Kurgo Collaps A Bowl holds 24 oz and collapses to under 1 inch, per the maker.
+- **Food for a few days:** the Kurgo Kibble Carrier holds up to 5 lbs of dry food, per the maker.
+- **Food plus two bowls in one carry:** the Vittles Vault Travel-Tainer is a 6-cup container with two 3-cup bowls, per the maker.
+
+The rules that matter more than the gear:
+
 - **Bring water from home.** The ASPCA says to opt for bottled water or water from home on a road trip, because unfamiliar water could upset a pet's stomach. [[1]](https://www.aspca.org/news/traveling-pets-follow-these-expert-dos-and-donts-keep-them-safe)
 - **Keep kibble in its bag.** If you use another container, the FDA says to put the entire bag into it. [[2]](https://www.fda.gov/animal-veterinary/animal-health-literacy/proper-storage-pet-food-treats)
 - **In bear country, scent is the issue;** see the cabin section below. [[3]](https://www.nps.gov/articles/bearsafetyfood.htm)
@@ -179,12 +188,6 @@ You are loading the car, the kibble is in a half-open bag, and the rental may be
 6. No bear-resistance assumption: a maker that does not claim it has not claimed it.
 7. Check the maker's capacity and care notes on the listing before you order.
 
-## Water first: what the sources say
-
-The ASPCA's travel kit (page dated 2025-12-30) is food and a bowl, a leash, waste bags, grooming supplies, medication, a first-aid kit, your vet's contact details and any travel documents. [[1]](https://www.aspca.org/news/traveling-pets-follow-these-expert-dos-and-donts-keep-them-safe) The CDC's pet travel page says to bring plenty of water, food and a bowl, and to feed your pet 3 to 4 hours before leaving. [[4]](https://cdc.gov/healthy-pets/travel/index.html) Both put a bowl on the list, which is why a bowl that packs flat earns its space.
-
-Water you meet along the way is a separate question. The CDC says dogs can get Giardia by drinking from a contaminated creek, pond or other water source, that puppies and kittens are more likely to get sick than adults, and that while a pet is sick, its items, water and food bowls included, should be regularly cleaned and disinfected. [[5]](https://www.cdc.gov/giardia/about/about-giardia-and-pets.html) Our takeaway, which is our judgment and not a source's rule: carry enough water and a bowl on every walk so the dog is never drinking from whatever is nearby.
-
 ## Collapsible dog bowls, bottles and food carriers: what the maker pages say
 
 Everything below is the maker's own wording or figures, read on 2026-11-18. The table holds no ratings or prices. Where a page is silent, the cell says so. Dishwasher status is listed only where the page states it.
@@ -198,6 +201,7 @@ Everything below is the maker's own wording or figures, read on 2026-11-18. The 
 | Kurgo Kibble Carrier [[10]](https://www.kurgo.com/dog-travel/kibble-carrier) | Up to 5 lbs dry food, about 20 cups of average kibble | "Hand wash. Air dry." | Ripstop material, food-safe PEVA liner with heat-sealed seams; roll top |
 | Ruffwear Quencher (Medium, one size) [[11]](https://ruffwear.com/products/quencher-dog-bowl) | 4.2 cups (1 L); 5.5 in opening | Hand wash, mild detergent, air dry | Polyester ripstop shell, water-resistant; nylon lining with a 4,000 mm waterproof rating, Food Contact Safe |
 | Kurgo Splash Free Wander [[12]](https://www.kurgo.com/p/splash-free-wander-dog-water-bowl/K01812) | Holds 24 oz (710 ml); dimensions not stated | "Dishwasher safe, top rack" | Food-grade silicone, PVC and BPA free |
+| IRIS USA Airtight Dog Food Storage Container (up to 10 lbs) [[15]](https://www.irisusainc.com/collections/airtight-pet-food-containers/products/airtight-dog-food-storage-container-up-to-10-lbs-3) | 12.75 quarts; holds about 10 lb of dry food, depending on the food | Not stated on the page | Made in USA and BPA free (the maker's wording); airtight seals and buckles |
 | Gunner Dog Bowl with Travel Lid [[13]](https://gunner.com/products/gunner-dog-bowl-black) | No capacity or dimensions stated | Bowl "top-rack dishwasher safe" | Nylon, "BPA free and Food Grade compliant"; lid described as spill-proof |
 
 Two things the table shows. Gunner gives no capacity, and the two Springland bottles carry their size in the product name only. The bowl figures also vary, from Kurgo's 24 ounces to Ruffwear's 4.2 cups (1 L). Our reading is that a bowl sized to your dog's single drink, not a whole day's, is the easier one to pack.
@@ -208,7 +212,7 @@ Two more items from the pages. Ruffwear's page lists the lining as waterproof an
 
 Pick the bowl by where it will ride. Check size on each listing.
 
-**For a bowl that disappears into a door pocket, the Kurgo Collaps A Bowl.** It holds 24 ounces and, per the maker, collapses to less than 1 inch high, so it travels in a door pocket, a coat or the corner of a bag. [[6]](https://www.kurgo.com/pet-travel-bowls/collaps-a-bowl) It is for the owner who wants one bowl for water and food and a dog who drinks a bowlful at a time. Skip it if you want a lid, or a bigger drink on a long hike. This is the bowl to buy first if you have room for only one.
+**For a bowl that disappears into a door pocket, the Kurgo Collaps A Bowl.** It holds 24 ounces and, per the maker, collapses to less than 1 inch high, so it travels in a door pocket, a coat or the corner of a bag. [[6]](https://www.kurgo.com/pet-travel-bowls/collaps-a-bowl) It is for the owner who wants one bowl for water and food and a dog who drinks a bowlful at a time. Skip it if you want a lid, or a bigger drink on a long hike. It is the pick if you have room for only one bowl.
 
 {{pick:kurgo-collaps-a-bowl|Collapses under 1 in, holds 24 oz|The maker says it holds 24 ounces, collapses to less than 1 inch high and is dishwasher safe on the top rack.|https://www.kurgo.com/pet-travel-bowls/collaps-a-bowl}}
 
@@ -224,17 +228,23 @@ Two more bowls cover different jobs, and a third is worth a look for the car.
 
 Kurgo's Splash Free Wander also holds 24 oz, and the maker describes a tapered lip and a wedge shape that lays flat on a seat, which makes it the one to look at if the bowl will live in the car. [[12]](https://www.kurgo.com/p/splash-free-wander-dog-water-bowl/K01812) For a bottle with the bowl attached, the Springland 22oz Classic and 20oz Flip are both listed by the maker as top-rack dishwasher safe, with a leak-proof lock design. [[7]](https://springlandpets.com/products/22oz-classic-dog-travel-water-bottle) [[8]](https://springlandpets.com/products/20oz-flip-dog-travel-water-bottle)
 
+## Water first: what the sources say
+
+The ASPCA's travel kit (page dated 2025-12-30) is food and a bowl, a leash, waste bags, grooming supplies, medication, a first-aid kit, your vet's contact details and any travel documents. [[1]](https://www.aspca.org/news/traveling-pets-follow-these-expert-dos-and-donts-keep-them-safe) The CDC's pet travel page says to bring plenty of water, food and a bowl, and to feed your pet 3 to 4 hours before leaving. [[4]](https://cdc.gov/healthy-pets/travel/index.html) Both put a bowl on the list, which is why a bowl that packs flat earns its space.
+
+Water you meet along the way is a separate question. The CDC says dogs can get Giardia by drinking from a contaminated creek, pond or other water source, that puppies and kittens are more likely to get sick than adults, and that while a pet is sick, its items, water and food bowls included, should be regularly cleaned and disinfected. [[5]](https://www.cdc.gov/giardia/about/about-giardia-and-pets.html) Our takeaway, which is our judgment and not a source's rule: carry enough water and a bowl on every walk so the dog is never drinking from whatever is nearby.
+
 ## Keeping dry food fresh in the car and the rental
 
 The FDA's advice has four parts. Store pet food and treats in the original container or bag. If you want another container, put the entire bag into it instead of pouring the kibble in. If you do pour it, the container should be clean, dry and have a lid that fits snugly. And the temperature should be less than 80 F. [[2]](https://www.fda.gov/animal-veterinary/animal-health-literacy/proper-storage-pet-food-treats) The page says the original bag keeps the lot number and "best by" date, which is useful if a food is ever recalled. The FDA page showed a last-updated date of 05/23/2024.
 
 That makes a rigid container a holder for the bag, and a maker's stated capacity a guide only: one maker's page says capacity depends on kibble shape. [[9]](https://www.petmate.com/vittles-vault-travel-trainer-portable-food-storage-container/product/4504) So match the container to the bag you own, and keep the bag's lot number and "best by" date with it (photographing the bag is our suggestion). Our reading: the FDA's 80 F figure is the number to check a hot car trunk against. No source we read says how fast kibble spoils in a car.
 
-For a weekend away without the whole bag, the Kurgo Kibble Carrier is the light option: a roll-top ripstop bag with a food-safe PEVA liner that the maker says holds up to 5 lbs of dry food, about 20 cups of average kibble, and is hand wash only. [[10]](https://www.kurgo.com/dog-travel/kibble-carrier) It is for the owner who wants a few days of food in a small bag, and the maker's page frames it for carrying, not long-term storage. Skip it if you want a rigid lid or a container to leave at the cabin all week. This is the one to buy first for a short trip with a medium or large dog.
+For a weekend away without the whole bag, the Kurgo Kibble Carrier is the light option: a roll-top ripstop bag with a food-safe PEVA liner that the maker says holds up to 5 lbs of dry food, about 20 cups of average kibble, and is hand wash only. [[10]](https://www.kurgo.com/dog-travel/kibble-carrier) It is for the owner who wants a few days of food in a small bag, and the maker's page frames it for carrying, not long-term storage. Skip it if you want a rigid lid or a container to leave at the cabin all week. It suits a short trip with a medium or large dog.
 
 {{pick:kurgo-kibble-carrier|Up to 5 lbs of kibble, roll-top|The maker lists up to 5 lbs of dry food, about 20 cups of average kibble, ripstop material with a food-safe PEVA liner, and hand wash only.|https://www.kurgo.com/dog-travel/kibble-carrier}}
 
-For a weekend with a small or medium dog, one product bundles the container with the bowls. Petmate's Vittles Vault Travel-Tainer is a 6-cup container with two 3-cup bowls, one for food and one for water, and a carry handle, and the maker says its capacity depends on kibble shape and density. [[9]](https://www.petmate.com/vittles-vault-travel-trainer-portable-food-storage-container/product/4504) Check the 6 cups against the days of food you need, since a large dog on a week-long stay will outrun it. The maker says the bowls are dishwasher safe but the clear container is not, so rinse and dry that part by hand. This is the one to buy first if you want food and two bowls in one carry. Skip it if your dog needs more than 6 cups for the trip.
+For a weekend with a small or medium dog, one product bundles the container with the bowls. Petmate's Vittles Vault Travel-Tainer is a 6-cup container with two 3-cup bowls, one for food and one for water, and a carry handle, and the maker says its capacity depends on kibble shape and density. [[9]](https://www.petmate.com/vittles-vault-travel-trainer-portable-food-storage-container/product/4504) Check the 6 cups against the days of food you need, since a large dog on a week-long stay will outrun it. The maker says the bowls are dishwasher safe but the clear container is not, so rinse and dry that part by hand. It is the pick if you want food and two bowls in one carry. Skip it if your dog needs more than 6 cups for the trip.
 
 {{pick:vittles-vault-travel-tainer|6-cup container plus two 3-cup bowls|The maker lists a 6-cup container with two 3-cup bowls and a carry handle, and says actual capacity depends on kibble shape and density.|https://www.petmate.com/vittles-vault-travel-trainer-portable-food-storage-container/product/4504}}
 

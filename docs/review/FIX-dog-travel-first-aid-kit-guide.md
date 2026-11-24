@@ -8,3 +8,9 @@ Trail Dog paragraph rewritten (who it is for, skip it if, contents sentence repl
 - Pin row 27 description: use the new seoDescription text.
 ## For the lead
 - Please add a cabin-size kit, a thermometer and a basket muzzle to the catalog if the owner wants cards there.
+
+## Round 3
+- "What to carry" paragraph moved to the first paragraph under the short answer, now states plainly that Trail Dog is the only kit we researched and links /gear/safety-id-first-aid.
+- Wipes H2, card, gear entry, relatedProducts id, source 9 and the "after the trail" buy-first step removed (wipes remain in can-dogs-go-in-a-rental-pool-or-hot-tub).
+- Situation-table cabin cell reworded honestly; Trail Dog cell now says "Trail Dog kit" so it auto-links; cabin/car/trail section says the cabin and car layers are built from the checklist; "buy first" sentence removed from the Trail Dog paragraph; the final list carries the Trail Dog note once. readingMinutes 10.
+- For the lead: no cabin kit, thermometer or muzzle in the catalog, so Buying advice/Product placement stay limited; pin row should echo the primary keyword (not edited).

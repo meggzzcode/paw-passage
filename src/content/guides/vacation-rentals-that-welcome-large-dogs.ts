@@ -17,7 +17,7 @@ export const guide: Guide = {
   heroImage: "guide-large-dogs",
   body: `## The short answer
 
-Large dog friendly vacation rentals do exist, but "pets allowed" does not mean your dog is accepted: check the weight limit for this dog, get the yes in writing, then check the stairs, floors, yard and total price. You found the cabin, the listing says "dogs welcome," and your Lab is 80 pounds. Then the rules page says 50. In the 38-manager sample we read, six state a weight limit, and the limits run from under 35 to 65 pounds, so "welcome" tells you very little until you know whose number applies to your dog.
+Large dog friendly vacation rentals do exist, but "pets allowed" does not mean your dog is accepted: check the weight limit for this dog, get the yes in writing, then check the stairs, floors, yard and total price. You found the cabin, the listing says "dogs welcome," and your Lab is 80 pounds. Then the rules page says 50. Where a manager states a number, "welcome" tells you very little until you know whose number applies to your dog.
 
 - Test every rental twice: does the rule explicitly allow this dog (permission), and can this dog move, rest and toilet comfortably there (practical fit)?
 - "Large dogs considered" means ask, not yes. Get written approval naming your dog's current weight and breed.
@@ -27,7 +27,7 @@ This guide is about pet dogs. Service animals have separate protections under ap
 
 ## What real weight limits look like
 
-Here are the six managers that state one, from public pages read on 2026-11-18. The 38 managers are a convenience sample of sites we could read, not a survey, and many policies vary by home.
+Here are the six managers that state one (public pages, read 2026-11-18). The 38 managers are a convenience sample, not a survey, and many policies vary by home.
 
 | Manager | Stated limit | Per dog or combined |
 | --- | --- | --- |
@@ -67,7 +67,7 @@ Start with the weight rule, not the destination. Pick two or three managers in y
 - **Managers that say no limit.** Sliding Rock Cabins says its cabins have no weight limits, and Hapey Cabin Rentals says "No weight limits. Great Danes and Chihuahuas are equally welcome." [[7]](https://slidingrockcabins.com/) [[8]](https://hapeycabinrentals.com/pet-friendly-smoky-mountain-cabin-rentals/) Those are marketing pages, not your reservation, so still get the yes for your dog in writing. All 38 managers are read in [rentals with no dog weight limit](/guides/vacation-rentals-with-no-dog-weight-limit).
 - **Managers with a higher stated limit.** Of the six in the table, Emmons Realty (65 lb per dog) and Brindley Beach Vacations (60 lb per dog) state the highest numbers. [[6]](https://www.emmonsrealty.com/pages/rental-policies) [[5]](https://www.brindleybeach.com/node/3691) Hearthside says some cabins take larger dogs for a higher fee, so ask which cabins. [[1]](https://hearthsidecabinrentals.com/frequently-asked-questions)
 - **Managers with their own size categories.** Sun Palace Vacation Homes has a "Dogs Over 30lb" filter, which shows why a generic "large dogs" search can miss inventory. [[9]](https://www.sunpalacevacationhomes.com/pet-friendly/) Vacasa says weight limits and dog counts vary by home and are stated in each listing, so use its pages to build a shortlist and then read the full policy. [[10]](https://www.vacasa.com/explore/pet-friendly-vacation-rentals)
-- **Airbnb and Vrbo:** add pets with accurate details, then read house rules and fees. Airbnb advises contacting the host even when pets are allowed, and the pet policy sits in House rules. [[11]](https://www.airbnb.com/help/article/86) Search the listing text for "weight," "pounds," "breed," "stairs," "crate" and "unattended," or try the destination plus "dogs any size vacation rental" or "ground floor dog friendly rental."
+- **Airbnb and Vrbo:** add pets with accurate details, then read house rules and fees. Airbnb advises contacting the host even when pets are allowed, and the pet policy sits in House rules. [[11]](https://www.airbnb.com/help/article/86) Search the listing text for "weight," "pounds," "breed," "stairs," "crate" and "unattended," or try the destination plus "dogs any size vacation rental" or "ground floor dog friendly rental." Searching a destination plus "large dog friendly vacation rentals" works the same way as a starting list, never as the answer for your dog.
 - **On this site:** [browse stays](/stays) and use the weight-limit filter ("limit of 50 lb or more stated", for example); it matches only stays that state a limit. Where a stay says "Not confirmed," ask the question in the message above.
 
 ## Five checks before you pay
@@ -98,6 +98,8 @@ A pet health policy is a different product from liability cover for injuries or 
 
 Pick by the problem: a bed gives the dog its own spot on the rental floor, a hammock covers the back seat, and a ramp helps a dog walk up into a high vehicle. None of these makes a rental accept your dog; they only help once the host has said yes. You rarely need all three; choose the one that matches a problem you have. Before you buy, write down the dog's weight and length, the vehicle's seat width and the height the dog must reach, and leave a margin on any rating, because it is the maker's figure.
 
+Most of this is about the drive; for the rental itself, the checks above (steps, floor, yard) matter more than any product.
+
 ### In the rental
 
 **For a big dog on a hard floor.** A big dog needs somewhere of its own to lie down, and a rental bed or sofa is not it. The Kurgo Loft Wander is a roll-up travel bed with a water-resistant ripstop top and a waterproof, non-slip bottom. It opens to 27 x 36 in (Medium) or 36 x 48 in (Large), rolls up with a handle for toting, and the maker lists no weight limit, so measure your dog lying down. [[14]](https://www.kurgo.com/p/loft-wander-dog-bed/K01560) The listing we link is the Large. It is a fiber-filled travel bed, so skip it if your dog already has a bed that travels or your vet has asked for an orthopedic one.
@@ -106,7 +108,7 @@ Pick by the problem: a bed gives the dog its own spot on the rental floor, a ham
 
 ### In the car
 
-**For a big dog on a wide bench seat.** A wet or muddy big dog is a lot to clean off upholstery. The Kurgo Rover Hammock, Extended Width is 63 in wide by 56 in long, with eight attachment points and a lifetime guarantee; the maker says it fits most full-size trucks and large SUVs, and that its front headrest straps can be removed to use it as a simple seat cover. [[15]](https://kurgo.com/car-seat-covers/dog-hammocks/wander-hammock-extended-width) That width suits a full-size truck or large SUV; in a compact car, measure your seat before you order. It protects the car and is not a restraint.
+**For a big dog on a wide bench seat.** A wet or muddy big dog is a lot to clean off upholstery. The Kurgo Rover Hammock, Extended Width is 63 in wide by 56 in long, with eight attachment points; the maker says it fits most full-size trucks and large SUVs, and that its front headrest straps can be removed to use it as a simple seat cover. [[15]](https://kurgo.com/car-seat-covers/dog-hammocks/wander-hammock-extended-width) That width suits a full-size truck or large SUV; in a compact car, measure your seat before you order. It protects the car and is not a restraint.
 
 {{pick:kurgo-rover-hammock-extended-width|For full-size trucks and large SUVs|For a wide bench seat in a full-size truck or large SUV: measure your seat first.|https://kurgo.com/car-seat-covers/dog-hammocks/wander-hammock-extended-width}}
 
@@ -146,6 +148,10 @@ Put your dog's weight into the [will my dog be accepted tool](/tools/will-my-dog
     {
       q: "Is a ground-floor rental always step-free?",
       a: "No. There may be external steps, a steep approach, thresholds, or an upper-level entrance. Ask about the complete route from parking to the entrance and from the sleeping area to outdoor access.",
+    },
+    {
+      q: "Do vacation rentals charge more for large dogs?",
+      a: "Some do. Pet fees vary by manager, and Hearthside Cabin Rentals, for one, says some cabins take larger dogs for a higher fee. Ask for the total with your real dog count and dates; the [pet-fee guide](/guides/how-vacation-rental-pet-fees-work) explains the terms.",
     },
   ],
   relatedGuides: [

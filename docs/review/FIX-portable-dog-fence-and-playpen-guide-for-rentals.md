@@ -8,3 +8,7 @@ lastReviewed 2026-11-24; readingMinutes 11 (about 3,000 words).
 - docs/pinterest-pins.csv: set title to "Portable Dog Fence for Rentals: Pens and Playpens When There Is No Yard" and description to "Choose a portable dog fence for a rental with no fenced yard: pen height, latches, floor protection, gates and crates, and what to ask the host first."
 - Question for owner from the review (Petmate soft yard as filler) left as is; it is honestly labelled "calm puppy or small dog".
 - Expected score about 9.1.
+
+## Round 3
+- Dek now answers the question; seoTitle "Portable Dog Fence for Rentals Without a Yard" (45); one-sentence differentiator under the short answer; "If you pick one" verdict above the comparison table; removed all four "buy first" closers; "What to buy first" item 3 no longer leads with Petmate (kept as a card, described as a floored option whose page gives no usable height); first two "When not to use" bullets removed.
+- Lead: Petmate remains a pick (owner question from r2 still open); no product removed.

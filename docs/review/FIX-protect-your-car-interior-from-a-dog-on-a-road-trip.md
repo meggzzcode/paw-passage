@@ -8,3 +8,8 @@ lastReviewed 2026-11-24; readingMinutes 9.
 - Kurgo Rover Backseat Bridge is inactive and its affiliate link is off (unavailable), so the extender section gives no pick.
 - Review edit 7 sentence about the hammock page "says its front-seat barrier keeps everyone safer" in the open-points table was left untouched.
 - Expected score about 9.1.
+
+## Round 3
+- Applied all r2 edits: dek now answers (bench cover / extended hammock / cargo cape); seoTitle "Dog Car Seat Cover vs Hammock for Road Trips"; primaryKeyword "dog car seat cover"; "smaller Rover Hammock" reworded to "a smaller standard-width hammock from the same maker" (no product name, so no wrong alias link; the text says that smaller model is a separate listing we do not link).
+- Removed every "This is the one to buy first" closer; "buy first" now appears only in the final list. Open-points hammock cell reworded; "How sure we are" merged to two bullets.
+- Lead: smaller hammock has no catalog record; consider adding one if it earns.

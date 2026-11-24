@@ -245,4 +245,9 @@ export const imageCredits: ImageCredit[] = [
     unsplashUrl:
       "https://unsplash.com/photos/two-pug-dogs-sitting-in-the-back-seat-of-a-car-EHI8SdWiQ-w",
   },
+  {
+    key: "guide-large-dogs-rental",
+    photographer: "Illia Bondar",
+    unsplashUrl: "https://unsplash.com/photos/person-and-dog-on-mountain-deck-H5LOYby0rI8",
+  },
 ];

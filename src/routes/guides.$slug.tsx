@@ -107,15 +107,18 @@ function GuidePage() {
             </ul>
           </div>
         )}
-        <header className="mx-auto mt-6 max-w-3xl text-center sm:mt-10">
+        <header className="mx-auto mt-4 max-w-3xl text-center sm:mt-10">
           <p className="eyebrow">{g.category} guide</p>
-          <h1 className="mt-3 text-4xl leading-tight md:text-6xl">{g.title}</h1>
-          <p className="mt-4 text-lg text-muted-foreground">{g.dek}</p>
-          <p className="mt-4 text-sm text-muted-foreground sm:mt-5">
-            By {g.author} · {g.readingMinutes} min read
-          </p>
-          <TrustStrip guide={g} />
-          <ArticleActions slug={g.slug} title={g.title} />
+          <h1 className="mt-2 text-3xl leading-tight sm:mt-3 sm:text-4xl md:text-6xl">{g.title}</h1>
+          <p className="mt-3 text-base text-muted-foreground sm:mt-4 sm:text-lg">{g.dek}</p>
+          <TrustStrip
+            guide={g}
+            lead={
+              <>
+                By {g.author} · {g.readingMinutes} min read
+              </>
+            }
+          />
         </header>
       </div>
       <img
@@ -129,7 +132,10 @@ function GuidePage() {
         fetchPriority="high"
         className="mx-auto mt-6 aspect-[16/9] sm:mt-10 sm:aspect-[21/9] w-full max-w-6xl object-cover md:rounded-xl"
       />
-      <div className="container-page mt-8 grid gap-12 sm:mt-12 lg:grid-cols-[minmax(0,1fr)_260px]">
+      <div className="container-page">
+        <ArticleActions slug={g.slug} title={g.title} />
+      </div>
+      <div className="container-page mt-6 grid gap-12 sm:mt-12 lg:grid-cols-[minmax(0,1fr)_260px]">
         <div className="mx-auto w-full min-w-0 max-w-[42rem]">
           <AffiliateNotice guide={g} />
           <TableOfContents headings={headings} variant="mobile" />

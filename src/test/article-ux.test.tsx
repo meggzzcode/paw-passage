@@ -37,6 +37,18 @@ describe("article UX", () => {
     expect(planning).toContain("Nov 16, 2026");
     expect(planning).toContain("2 sources cited");
     expect(planning).not.toContain("Affiliate");
+    // No separator glyphs that could wrap to the start of a line.
+    expect(planning).not.toContain("·");
+  });
+  it("never shows an 'Affiliate links disclosed' chip, even for monetised guides", () => {
+    const out = renderToStaticMarkup(
+      <TrustStrip
+        guide={{ ...base, category: "Gear", body: "{{pick:kong-classic}}" }}
+        lead="By Us · 5 min read"
+      />,
+    );
+    expect(out).not.toMatch(/Affiliate links disclosed/);
+    expect(out).toContain("By Us");
   });
 });
 

@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { affiliateUsage } from "@/content/affiliate-usage";
+import { useState, type ReactNode } from "react";
 import { site } from "@/config/site";
 
 /** Print and copy-link buttons. No third-party scripts. */
@@ -27,9 +26,10 @@ export function ArticleActions({ slug, title }: { slug?: string; title?: string 
     }
     setTimeout(() => setState("idle"), 2500);
   }
-  const btn = "rounded-full border border-input px-4 py-1.5 text-sm hover:bg-muted";
+  const btn =
+    "inline-flex min-h-9 items-center rounded-full border border-input px-3.5 text-sm hover:bg-muted";
   return (
-    <div className="no-print mt-5 flex flex-wrap items-center justify-center gap-2">
+    <div className="no-print mx-auto mt-4 flex max-w-3xl flex-wrap items-center justify-center gap-2">
       <button type="button" onClick={() => window.print()} className={btn}>
         Print
       </button>
@@ -77,9 +77,14 @@ export function formatDate(iso: string): string {
   return `${months[Number(m[2]) - 1] ?? m[2]} ${Number(m[3])}, ${m[1]}`;
 }
 
-/** Facts about the article that are true of it, shown under the byline. */
+/**
+ * One compact byline row: author and reading time (optional `lead`), when it was last reviewed and
+ * how many sources it cites. No separator glyphs, so a wrapped line never starts with "·";
+ * the dated and sourced facts are small chips and the gap does the spacing.
+ */
 export function TrustStrip({
   guide,
+  lead,
 }: {
   guide: {
     category: string;
@@ -88,29 +93,24 @@ export function TrustStrip({
     body: string;
     gear?: { productId: string }[] | undefined;
   };
+  lead?: ReactNode;
 }) {
   const n = guide.sources.length;
-  const items = [
-    <>
-      Last reviewed <time dateTime={guide.lastReviewed}>{formatDate(guide.lastReviewed)}</time>
-    </>,
-    n > 0 ? (
-      <>
-        {n} {n === 1 ? "source" : "sources"} cited
-      </>
-    ) : null,
-    affiliateUsage(guide).count > 0 ? <>Affiliate links disclosed</> : null,
-  ].filter(Boolean);
+  const chip = "rounded-full border border-border px-2.5 py-0.5";
   return (
     <ul
       aria-label="About this guide"
-      className="mt-3 flex flex-wrap justify-center gap-x-4 gap-y-1 text-xs text-muted-foreground"
+      className="mt-3 flex flex-wrap items-center justify-center gap-x-2.5 gap-y-1.5 text-xs text-muted-foreground sm:text-sm"
     >
-      {items.map((it, i) => (
-        <li key={i} className="before:mr-4 before:content-['·'] first:before:hidden">
-          {it}
+      {lead ? <li>{lead}</li> : null}
+      <li className={chip}>
+        Last reviewed <time dateTime={guide.lastReviewed}>{formatDate(guide.lastReviewed)}</time>
+      </li>
+      {n > 0 ? (
+        <li className={chip}>
+          {n} {n === 1 ? "source" : "sources"} cited
         </li>
-      ))}
+      ) : null}
     </ul>
   );
 }

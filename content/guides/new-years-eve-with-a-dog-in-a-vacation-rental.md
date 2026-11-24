@@ -217,13 +217,7 @@ Copy, paste and fill in the brackets:
 
 ## What hosts and local rules say
 
-Local law varies by county and city. Wording differs by manager (sample, not a survey, as of 2026-11-18):
-
-| Manager | Dogs and fees | Fireworks and holiday wording |
-| --- | --- | --- |
-| Aunt Bug's Cabin Rentals (Gatlinburg area) | 2 small dogs, 40 lb or less; $75 per pet, non-refundable | Fireworks prohibited at all times; "some minimum stay requirements during holidays" |
-| Cabin Rentals of Georgia (Blue Ridge) | Under 35 lb; $50 per pet per night, $75 cleaning fee, $250 refundable deposit | Firecrackers prohibited on the property |
-| Vacasa (many places) | "a small fee per dog, per night", amount not listed | No fireworks text on the page |
+Local law varies by county and city, and wording differs by manager (sample, not a survey, as of 2026-11-18). Aunt Bug's Cabin Rentals (Gatlinburg area) prohibits fireworks at all times and has "some minimum stay requirements during holidays". Cabin Rentals of Georgia prohibits firecrackers on the property. [[9]](https://www.cabin-rentals-of-georgia.com/policies) [[8]](https://www.auntbugs.com/rental-policies/) Two managers' pages do not make the fireworks rule decisive for a booking, so ask your host.
 
 None of the 38 manager pet pages we read for our [how-many-dogs guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental#how-many-dogs-do-rental-managers-actually-allow) mentioned a holiday pet-fee surcharge (a convenience sample, read 2026-11-18). For the full total, use our [pet fees guide](/guides/how-vacation-rental-pet-fees-work). Booking the week before? See [Christmas week in a cabin with a dog](/guides/christmas-week-in-a-cabin-with-a-dog).
 
@@ -313,14 +307,9 @@ There is no national count for New Year's Eve: Petco Love's 2023 release says Ju
 
 We read the sources and manager pages above on 2026-11-18, and did not test any product. The escape stories (four news and first-person items, a small non-random set) point to doors, fences and phone numbers: a theme, not odds.
 
-| Open point | Who to ask |
-| --- | --- |
-| How often fireworks go off near this cabin, and whether the host's rule covers the neighbors | The host and a recent guest: "Have fireworks been reported around New Year's Eve here?" |
-| What a "firework-free" claim covers on Airbnb or Vrbo | Platform support and the host: "Does that label cover the grounds only, or the surrounding area, and who enforces it?" |
-| A national count of lost dogs on New Year's Eve | Your vet or chip registry: "Is my dog's chip registered to my current mobile number?" |
-| The local fireworks rule at your address | The host and the city or county |
-| Whether pet fees rise at holidays | The host: "What is the full pet total for these exact dates?" |
-| Whether staying home is safer than travelling with a fearful dog | Your vet: "Given my dog's reaction to noise, is this trip a good idea?" |
+- **The local fireworks rule at your address.** Ask the host and the city or county.
+- **Whether pet fees rise at holidays.** Ask the host: "What is the full pet total for these exact dates?"
+- **Whether staying home is safer than travelling with a fearful dog.** Ask your vet: "Given my dog's reaction to noise, is this trip a good idea?"
 
 ## Before you leave
 

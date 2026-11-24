@@ -311,7 +311,7 @@ Booked somewhere that says no pets? Ask the manager before you travel rather tha
       "Approval, financial exposure, and itinerary feasibility benefit from separate decision gates.",
     ],
     differentiators: [
-      "Permission/practicality/price framework with a booking decision table.",
+      "Permission/practicality/price framework with an 8-item booking checklist.",
       "Primary-source distinction between pet fees, refundable deposits, and host damage protection.",
       "ADA scope caveat alongside separately linked Airbnb and Vrbo accessibility policies.",
       "Day-in-the-trip audit that tests furniture, crates, and unattended rules against the itinerary.",

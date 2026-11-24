@@ -167,35 +167,27 @@ research:
 
 Only designated cottages take dogs, and the state publishes no official list of them, so confirm your exact unit with the park before you pay. The rules below are from the Georgia State Parks rules page, read 2026-11-18. [[1]](https://gastateparks.org/ParkRules)
 
-## The rules in one table
+## The rules at a glance
 
 | Rule | What the page says |
 | --- | --- |
 | Which cottages | "Dogs may not be taken into cottages that are not designated dog-friendly." |
 | How many dogs | "A maximum of two dogs per cottage is allowed, regardless of size." |
 | Fee | $50 per dog (limit 2), collected at check-in, covers the duration of your stay. So $50 for one dog, $100 for two. |
-| Request | You must request a dog-friendly cottage prior to arrival. Reservations are strongly encouraged. |
-| Unattended | "Dogs may not be left unattended at any time, either in the cottage, your vehicle or the park." |
 | Leash | A 6-foot leash at all times when not inside cottages. No tying to trees, fences or the ground. |
-| Cleanup | Guests must clean up after their dogs. |
-| Noise | Guests are asked to vacate if their dogs disturb other guests. |
 | Extra charges | Extra fees are assessed when extra cleaning is required or the cottage or fixtures are damaged. |
 
 Kennels are not available at the parks, and pets are not allowed in lodges, yurts, group camps, swimming areas or beaches. [[1]](https://gastateparks.org/ParkRules)
 
 ## Which Georgia state parks have dog friendly cabins
 
-There is no single official list on the pages we read. The cottages page says "Designated dog-friendly cabins are available" and gives two park examples. [[2]](https://gastateparks.org/Cottages) Here is what each official page says, park by park.
+There is no single official list on the pages we read. The cottages page says "Designated dog-friendly cabins are available" and gives two park examples. [[2]](https://gastateparks.org/Cottages) Here is what each official page says, park by park:
 
-| Park | What the official page says about dogs |
-| --- | --- |
-| Skidaway Island | Cabins A and C do not allow pets; Cabin B, the ADA accessible one, does |
-| Mistletoe | One cabin described as pet-friendly (fee), no amount shown |
-| Smithgall Woods | Garden Cottage is "our singular pet-friendly (with fee) cabin" among six cottages |
-| Fort Yargo | 17 cottages listed, nothing about pets; call the park line, 770-867-3489 |
-| Red Top Mountain | 20 cottages listed, no mention of dogs or leashes |
+- **Skidaway Island:** Cabin B, the ADA accessible one, allows pets; Cabins A and C do not. [[2]](https://gastateparks.org/Cottages)
+- **Mistletoe:** one cabin is described as pet-friendly for a fee, with no amount shown. [[2]](https://gastateparks.org/Cottages)
+- **Smithgall Woods:** the Garden Cottage is "our singular pet-friendly (with fee) cabin" among six cottages. [[3]](https://gastateparks.org/SmithgallWoods/Cottages)
 
-Sources for this table: [[2]](https://gastateparks.org/Cottages), [[3]](https://gastateparks.org/SmithgallWoods/Cottages), [[4]](https://gastateparks.org/FortYargo), [[5]](https://gastateparks.org/RedTopMountain)
+Fort Yargo and Red Top Mountain list cottages with no pet wording, so call before booking (770-867-3489 for Fort Yargo). [[4]](https://gastateparks.org/FortYargo) [[5]](https://gastateparks.org/RedTopMountain)
 
 An Explore Georgia list (undated) adds dog-friendly cottages at Black Rock Mountain (#5, #8 and #10), Crooked River (four), F.D. Roosevelt (four) and Mistletoe (five). [[6]](https://exploregeorgia.org/places-to-stay/list/stay-in-these-cozy-cabins-with-your-dog-at-georgia-state-parks) Treat it as a lead, since designations can change; GoPetFriendly (August 2024) also lists cottage numbers [[7]](https://gopetfriendly.com/blog/us-state-parks-that-allow-pets-your-guide-to-pet-friendly-cabins-campgrounds-beaches-and-more). The park confirms the unit you book.
 
@@ -240,9 +232,8 @@ A state park cottage sets one two-dog limit regardless of size, one fee and one 
 | Georgia state park cottage | 2, any size; never unattended | $50 per dog per stay |
 | Cabin Rentals of Georgia | Under 35 lb, non-shedding, crate trained; every dog approved first | $50 per pet per night, $75 cleaning, $250 refundable deposit |
 | A Blue Ridge Cabin Rental | 2 pets per stay; deeper cleaning can cost more | $150 per pet, non-refundable |
-| Sliding Rock Cabins | Not stated; fenced yards only at select cabins | No pet fees, breed or weight limits |
 
-Sources for this table: [[12]](https://cabin-rentals-of-georgia.com/policies), [[13]](https://ablueridgecabinrental.com/cabin-policies/), [[14]](https://slidingrockcabins.com/)
+Sources for this table: [[12]](https://cabin-rentals-of-georgia.com/policies), [[13]](https://ablueridgecabinrental.com/cabin-policies/). Sliding Rock Cabins lists no pet fees or breed or weight limits and offers fenced yards only at select cabins. [[14]](https://slidingrockcabins.com/)
 
 **Which to choose:** pick the state park cottage if you have one or two dogs, want a flat fee and can keep the dog with you every minute. Pick a private cabin if you have a third dog, need a fenced yard or want to leave the dog for an hour.
 

@@ -142,15 +142,14 @@ Of the 38 managers' pet pages we read on 2026-11-18, 25 state a fee: 22 charge a
 
 Fees as stated on each manager's public page (a convenience sample read 2026-11-18, not a survey; what any one home charges for your dates, only the host can confirm). Many apply only to pet-friendly homes and some vary by property. Resort Realty says "up to $1,000, varies by property." The full tables are on the [pet policy dataset page](/data/pet-policies).
 
-| How the fee is written | Amounts stated | Managers (examples) |
-| --- | --- | --- |
-| Per night | $20 to $50 a night; A Blue Ridge Vacation and Cabin Rentals of Georgia add a cleaning fee on top | Big Bear Vacations, Tahoe Getaways, Rocky Mountain Resorts, A Blue Ridge Vacation, Cabin Rentals of Georgia |
-| Per pet | $75 to $300 per pet | Tahoe Vacation Rentals, Bear Camp Cabins, A Blue Ridge Cabin Rental, Rosemary Beach Cottage Rental Company |
-| Tiered by pet | $250 first pet, $100 second; $250 first dog, $150 second | My Vacation Haven; St. Simons Island Beach Rentals |
-| Per stay, per reservation or per week | $250 per stay; $161 to $231 per reservation; $200 per week | AMI Locals, Sun Realty, Surf or Sound Realty |
-| Amount given, unit not stated | $50 to $147 | Tahoe Signature Properties, Emmons Realty, Asheville Cabins of Willow Winds, Cabins USA |
-| One-time, by dog size | $55, or $75 for a larger dog | Hearthside Cabin Rentals |
-| $0 | None on the pages we read | Sliding Rock Cabins, Twiddy & Company, Hapey Cabin Rentals |
+| How the fee is written | Amounts stated |
+| --- | --- |
+| Per night | $20 to $50 a night; some add a cleaning fee on top |
+| Per pet | $75 to $300 per pet |
+| Tiered by pet | $250 first pet, $100 second; $250 first dog, $150 second |
+| Per stay, reservation or week | $250 per stay; $161 to $231 per reservation; $200 per week; or one-time by dog size, $55 or $75 for a larger dog |
+
+Three managers charge $0 on the pages we read (Sliding Rock Cabins, Twiddy & Company, Hapey Cabin Rentals). A few more give an amount, $50 to $147, with no unit.
 
 There is no single average worth quoting: a $25 nightly fee and a $300 per-pet fee are different animals, and a week-long stay can flip which costs more. The unit often sits in fine print. Elk Springs Resort lists $50 per animal without saying per stay or per night, which is exactly why you ask. Our [no-pet-fee guide](/guides/vacation-rentals-with-no-pet-fee) lists the three $0 managers.
 
@@ -171,13 +170,12 @@ The smallest headline number gives the largest bill. Caps and tiers matter too: 
 
 The agreement matters more than the label.
 
-| Item | How to budget it |
-| --- | --- |
-| Nonrefundable pet fee | Definite expense, subject to cancellation terms |
-| Refundable pet deposit | Cash you need up front, with deduction risk |
-| Card authorization hold | Not money paid, but it shrinks available credit |
-| Damage waiver | Usually an expense; read exclusions |
-| Damage claim after checkout | Contingent liability, not a standard pet rate |
+- **Nonrefundable pet fee:** a definite expense, subject to cancellation terms.
+- **Refundable pet deposit:** cash you need up front, with deduction risk.
+- **Card authorization hold:** not money paid, but it shrinks available credit.
+- **Damage waiver:** usually an expense; read the exclusions.
+
+A damage claim after checkout is a contingent liability, not a standard pet rate.
 
 Several managers in our sample call their fee nonrefundable, including Tahoe Vacation Rentals, Rosemary Beach Cottage Rental Company and A Blue Ridge Cabin Rental. "Refundable" does not mean returned immediately, so ask who holds the money, what can be deducted and when it is released.
 
@@ -191,11 +189,10 @@ Airbnb and Vrbo describe fees on help pages written for hosts and travelers, not
 
 | | Airbnb | Vrbo |
 | --- | --- | --- |
-| Fee structures | Hosts can charge per booking, per night, per pet, or per pet per night. | Pets, cleaning and extra guests are listed as standard fee categories; hosts enter charges in fee settings. |
-| Where it shows | In the nightly rate and in the checkout total, after the guest says how many pets are coming. | Displayed prices include mandatory fees and service fees; taxes usually appear by checkout. |
-| Service animals | Service animals stay free. | Hosts in countries with service-animal laws must accommodate guests who need them regardless of the pet policy. |
+| Fee structures | Per booking, per night, per pet, or per pet per night | Pets, cleaning and extra guests are standard fee categories |
+| Where it shows | In the nightly rate and checkout total, after you say how many pets | In displayed prices with mandatory and service fees; taxes by checkout |
 
-Sources for this table: Airbnb column [[1]](https://www.airbnb.com/help/article/3623); Vrbo column [[3]](https://help.vrbo.com/articles/About-Price-Display), [[4]](https://help.vrbo.com/articles/How-do-I-manage-my-fees), [[5]](https://help.vrbo.com/articles/What-is-HomeAway-s-service-animal-policy)
+Sources for this table: Airbnb column [[1]](https://www.airbnb.com/help/article/3623); Vrbo column [[3]](https://help.vrbo.com/articles/About-Price-Display), [[4]](https://help.vrbo.com/articles/How-do-I-manage-my-fees)
 
 Because Airbnb can fold a pet fee into the nightly rate, a displayed nightly number is not necessarily the billing unit: a hypothetical $100 per-stay fee shows as $50 a night over two nights and $20 over five. On Airbnb, tell the host about your pets even at a property that allows them; a pet-friendly label does not settle size, breed or count [[6]](https://www.airbnb.com/help/article/86). On Vrbo, hosts can send a payment request to add a charge to an existing reservation [[4]](https://help.vrbo.com/articles/How-do-I-manage-my-fees). Our [pet-friendly rental checklist](/guides/pet-friendly-vacation-rental-checklist) covers the rest of the booking questions.
 
@@ -205,7 +202,7 @@ A no-pet-fee home can cost more overall: a rental with a $60 pet fee can still b
 
 ## Service animals are not pets
 
-The Department of Justice's ADA requirements say a business that requires a deposit or fee from patrons with pets must waive it for service animals [[2]](https://www.ada.gov/resources/service-animals-2010-requirements/). Its FAQ adds that hotels may not charge for cleaning hair or dander shed by a service animal, though they may charge for damage as they would for any guest [[7]](https://www.ada.gov/resources/service-animals-faqs/). The ADA does not automatically apply identically to every privately rented home, and other laws and platform rules may apply. Emotional support animals are not automatically ADA service animals, and you should not misrepresent a pet to avoid a fee.
+The Department of Justice's ADA requirements say a business that requires a deposit or fee from patrons with pets must waive it for service animals [[2]](https://www.ada.gov/resources/service-animals-2010-requirements/). Vrbo says hosts in countries with service-animal laws must accommodate guests who need them regardless of the pet policy [[5]](https://help.vrbo.com/articles/What-is-HomeAway-s-service-animal-policy). The ADA FAQ adds that hotels may not charge for cleaning hair or dander shed by a service animal, though they may charge for damage as they would for any guest [[7]](https://www.ada.gov/resources/service-animals-faqs/). The ADA does not automatically apply identically to every privately rented home, and other laws and platform rules may apply. Emotional support animals are not automatically ADA service animals, and you should not misrepresent a pet to avoid a fee.
 
 ## If a charge surprises you
 

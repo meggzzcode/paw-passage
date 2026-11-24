@@ -319,7 +319,7 @@ Add these to your [trip checklist](/tools/checklist) and the [packing list](/too
     differentiators: [
       "Kit contents anchored to the AVMA checklist, with the poison control numbers and fee note verified on the AVMA brochure and ASPCA page.",
       "The kit described only from the contents its maker lists, with medication items flagged for a vet conversation.",
-      "Layered kit approach for cabin, car and trail, and a pick-by-situation table.",
+      "Layered kit approach for cabin, car and trail, with a short cabin, car and trail table.",
       "No doses, prices, ratings or testing claims.",
     ],
     angle:

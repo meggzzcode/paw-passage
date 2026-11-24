@@ -17,7 +17,7 @@ faqs:
   - q: What size travel bowl does my dog need?
     a: No source we read gives a bowl size per dog. Makers state capacity (Kurgo 24 oz, Ruffwear 4.2 cups or 1 L); compare that with how much your dog drinks at a stop, and carry water from home.
   - q: Which collapsible dog bowl is best for travel?
-    a: We do not rank them. The maker pages list the Kurgo Collaps A Bowl at 24 oz, collapsing to under 1 inch, and the Ruffwear Quencher at 4.2 cups with a waterproof lining; the table in this guide shows what each maker states and what it leaves out.
+    a: We do not rank them. The maker pages list the Kurgo Collaps A Bowl at 24 oz, collapsing to under 1 inch, and the Ruffwear Quencher at 4.2 cups with a waterproof lining; the table in this guide shows the capacity and dishwasher guidance each maker states.
   - q: What should I pack to feed and water my dog on a trip?
     a: The ASPCA's travel kit lists food, a bowl, a leash, waste bags, grooming supplies, medication, a first-aid kit and travel documents, and it says to bring bottled water or water from home on a road trip because unfamiliar water could upset a pet's stomach.
   - q: How should I store dry dog food while traveling?
@@ -191,25 +191,20 @@ A bowl is a one-line decision; the food container and the rental kitchen are whe
 
 {{pick:gunner-dog-bowl|For carrying filled water: a lid the maker calls spill-proof|The maker describes a spill-proof, leak-resistant lid, non-slip rubber feet and a top-rack dishwasher-safe bowl; the page gives no capacity or dimensions, so check the size and test the lid yourself.|https://gunner.com/products/gunner-dog-bowl-black}}
 
-Two more appear in the table below without cards. Kurgo's Splash Free Wander also holds 24 oz, and its wedge shape lays flat on a car seat. [[12]](https://www.kurgo.com/p/splash-free-wander-dog-water-bowl/K01812) The Springland 22oz Classic and 20oz Flip are bottles with a bowl attached, listed top-rack dishwasher safe. [[7]](https://springlandpets.com/products/22oz-classic-dog-travel-water-bottle) [[8]](https://springlandpets.com/products/20oz-flip-dog-travel-water-bottle) Springland gives the size in the product name only.
+Two more have no cards. Kurgo's Splash Free Wander also holds 24 oz, and its wedge shape lays flat on a car seat. [[12]](https://www.kurgo.com/p/splash-free-wander-dog-water-bowl/K01812) The Springland 22oz Classic and 20oz Flip are bottles with a bowl attached, listed top-rack dishwasher safe. [[7]](https://springlandpets.com/products/22oz-classic-dog-travel-water-bottle) [[8]](https://springlandpets.com/products/20oz-flip-dog-travel-water-bottle) Springland gives the size in the product name only.
 
 ## What the maker pages say
 
-Everything here is the maker's own wording, read on 2026-11-18. There are no ratings or prices, and a blank means the page is silent.
+Everything here is the maker's own wording, read on 2026-11-18. There are no ratings or prices. Bowls without a stated capacity are covered in the prose above, and the IRIS container is covered with the food picks below.
 
-| Product | Capacity as stated | Cleaning and materials as stated |
+| Product | Capacity | Dishwasher |
 | --- | --- | --- |
-| Kurgo Collaps A Bowl | 24 oz; under 1 inch collapsed | Top-rack dishwasher; food-grade silicone |
-| Kurgo Splash Free Wander | 24 oz (710 ml) | Top-rack dishwasher; food-grade silicone |
-| Ruffwear Quencher, Medium | 4.2 cups (1 L); 5.5 in opening | Hand wash, air dry; polyester shell, waterproof nylon lining |
-| Gunner Dog Bowl with Travel Lid | Not stated | Bowl top-rack dishwasher; nylon, lid described as spill-proof |
-| Springland 22oz Classic | Named 22oz; no volume figure | Top-rack dishwasher or hand wash; polypropylene |
-| Springland 20oz Flip | Named 20oz; no volume figure | Top-rack dishwasher or hand wash; polypropylene, silicone flip-top bowl |
-| Vittles Vault Travel-Tainer | 6 cups plus two 3-cup bowls; depends on kibble | Bowls dishwasher safe; container hand wash only |
-| Kurgo Kibble Carrier | Up to 5 lbs, about 20 cups | Hand wash, air dry; ripstop with PEVA liner |
-| IRIS USA airtight container | 12.75 quarts, about 10 lb of food | Not stated; airtight seals and buckles |
+| Kurgo Collaps A Bowl, Splash Free Wander | 24 oz each | Top rack |
+| Ruffwear Quencher, Medium | 4.2 cups (1 L) | Hand wash |
+| Vittles Vault Travel-Tainer | 6 cups plus two 3-cup bowls | Bowls yes; container hand wash |
+| Kurgo Kibble Carrier | Up to 5 lbs, about 20 cups | Hand wash |
 
-No page cites independent testing, so treat leak and spill claims as the maker's own; Springland gives bottle volume only in the name, and Gunner gives no capacity. For where each sits in a trip bag, see our [feeding and hydration gear page](/gear/feeding-and-hydration); for the rest of the trail bag, our [dog hiking gear guide](/guides/dog-hiking-gear-for-a-cabin-vacation).
+No page cites independent testing, so treat leak and spill claims as the maker's own; Springland gives bottle volume only in the name, and Gunner gives no capacity (see its pick above). For where each sits in a trip bag, see our [feeding and hydration gear page](/gear/feeding-and-hydration); for the rest of the trail bag, our [dog hiking gear guide](/guides/dog-hiking-gear-for-a-cabin-vacation).
 
 ## Water first
 

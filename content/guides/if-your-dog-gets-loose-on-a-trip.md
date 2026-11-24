@@ -213,17 +213,9 @@ If you are separated in an emergency such as a flood or fire, [AKC Reunite](http
 
 A legible tag with a number you will answer, a chip whose registry record is current and, if you want a search tool, a cellular tracker cover for each other. A tracker shows a location, not a rescue; if someone else has the dog, the tag and chip are how they reach you.
 
-| Layer | What it does | What it does not do |
-| --- | --- | --- |
-| Tag on the collar | Lets any finder read your number on the spot, with no scanner and no wait for animal control. | Helps nothing if it falls off or wears smooth; AKC Reunite notes tags can fall off or become hard to read. |
-| Microchip, registered | A permanent ID number a vet or shelter scanner can read. | Does not locate the dog and needs a scan, plus a current record; only the ID number shows, then the registry is contacted for your details. |
-| Tracker (cellular GPS or Bluetooth) | Shows a location on your phone while it is on the dog, charged and connected. | Does not stop an escape, and does not tell a finder who you are. |
-
-Source: [AKC Reunite on ID tags](https://www.akcreunite.org/idtags/).
-
 ### The tag
 
-The ASPCA says a collar with an ID tag should carry your name, current phone number and other contact information, even for indoor-only pets. [[2]](https://www.aspca.org/pet-care/general-pet-care/finding-lost-pet) For travel, put a mobile number you will answer and a second number for a friend or relative. Engrave or stamp the number rather than using a sticker, and check the ring for wear (our suggestion). Any engraved tag from a pet store will do; more ID items are in [safety, ID and first aid gear](/gear/safety-id-first-aid).
+The ASPCA says a collar with an ID tag should carry your name, current phone number and other contact information, even for indoor-only pets. [[2]](https://www.aspca.org/pet-care/general-pet-care/finding-lost-pet) For travel, put a mobile number you will answer and a second number for a friend or relative. Engrave or stamp the number rather than using a sticker, and check the ring for wear (our suggestion); AKC Reunite notes tags can fall off or become hard to read. [AKC Reunite on ID tags](https://www.akcreunite.org/idtags/) Any engraved tag from a pet store will do; more ID items are in [safety, ID and first aid gear](/gear/safety-id-first-aid).
 
 ### The microchip, and the record behind it
 

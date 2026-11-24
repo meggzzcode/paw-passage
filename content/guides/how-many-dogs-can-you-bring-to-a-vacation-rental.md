@@ -186,8 +186,6 @@ A sample of published limits as of 2026-11-18, not a survey. Most pages carry no
 | Twiddy, Outer Banks | Two unless advertised; homes may restrict size | Above two only if advertised; violation is cause for termination of tenancy |
 | Brindley Beach, Outer Banks | Two dogs, 60 lb each | Not permitted; eviction without refund |
 | Cabin Rentals of Georgia | No number; each dog approved; under 35 lb | Fees doubled |
-| My Vacation Haven, Miramar Beach | Two per property | Not stated |
-| One Vrbo listing, Blue Ridge | Limit 2 total; 23 kg per pet | Not stated |
 
 Sources for this table: [[8]](https://www.brindleybeach.com/node/3691)
 
@@ -220,17 +218,7 @@ Also check the layout before you pay:
 
 ## What do extra dogs cost?
 
-The fee shape matters more than the headline number. [Airbnb](https://www.airbnb.com/help/article/3623) names four models: per booking, per night, per pet, per pet per night. Here are round, made-up amounts for three dogs over four nights, not quoted rates:
-
-| Fee shape (hypothetical) | Calculation | Total |
-| --- | --- | --- |
-| $60 per booking | $60 once | $60 |
-| $25 per night | $25 x 4 | $100 |
-| $40 per pet | $40 x 3 | $120 |
-| $15 per pet per night | $15 x 3 x 4 | $180 |
-| $100 first pet, $50 each additional | $100 + $50 + $50 | $200 |
-
-The smallest-looking number produced one of the largest totals. Also confirm whether the pet charge sits on top of the cleaning fee, whether tax is included, and whether a refundable deposit ties up your card. Our [pet fees guide](/guides/how-vacation-rental-pet-fees-work) prices all four units in more detail.
+The fee shape matters more than the headline number. [Airbnb](https://www.airbnb.com/help/article/3623) names four models: per booking, per night, per pet, per pet per night. The same pet can cost $60 or $200 depending on whether the fee is per booking, per night, per pet or tiered, so ask for the total for your dog count and dates (see the pet fees guide below). Also confirm whether the pet charge sits on top of the cleaning fee, whether tax is included, and whether a refundable deposit ties up your card. Our [pet fees guide](/guides/how-vacation-rental-pet-fees-work) prices all four units in more detail.
 
 Published figures as of 2026-11-18:
 
@@ -245,7 +233,7 @@ Managers treat it as a serious violation: Twiddy calls it cause for termination 
 ## Do puppies and service animals count?
 
 - **Puppies:** none of the policies that give a number exempt them, so mention any puppy up front.
-- **Service animals:** [Airbnb](https://www.airbnb.com/help/article/3623) says they always stay for free, and hosts must allow one to accompany its owner [[5]](https://www.airbnb.com/resources/hosting-homes/a/what-you-need-to-know-about-hosting-pets-463). The ADA FAQ discusses hotel cleaning charges for service-animal hair or dander, not vacation rentals [[14]](https://www.ada.gov/resources/service-animals-faqs/). Whether a service animal counts toward a numeric cap is in the table at the end.
+- **Service animals:** [Airbnb](https://www.airbnb.com/help/article/3623) says they always stay for free, and hosts must allow one to accompany its owner [[5]](https://www.airbnb.com/resources/hosting-homes/a/what-you-need-to-know-about-hosting-pets-463). The ADA FAQ discusses hotel cleaning charges for service-animal hair or dander, not vacation rentals [[14]](https://www.ada.gov/resources/service-animals-faqs/). Whether a service animal counts toward a numeric cap is in the open questions at the end.
 
 ## How do you ask for a third dog?
 
@@ -270,11 +258,6 @@ Before you book:
 
 Confirmed by a source we cite: the two Airbnb numbers and the limits, weights, fees and penalty wording above. Two as the usual cap rests on 22 of 38 managers, a small convenience sample. Open questions:
 
-| Open question | Who to ask |
-| --- | --- |
-| Whether Airbnb's 0 to 5 guest declaration overrides a host's lower limit | Host, then Airbnb: "Your listing limit is [number]. May we bring [number] dogs?" |
-| What Airbnb does if you arrive with more dogs than booked | Host and Airbnb |
-| Whether a service animal counts toward a numeric limit | Host or manager |
-| Whether local dog limits apply to a guest's dogs | Host, then the local authority |
-| Whether insurers cap dogs per stay | Host |
-| Whether the November 2026 house-rules change shows a pet count (third-party source only) | Airbnb and the listing's house rules |
+- **Airbnb host limit versus guest declaration.** Ask the host, then Airbnb: "Your listing limit is [number]. May we bring [number] dogs?"
+- **Arriving with more dogs than booked.** Ask the host and Airbnb what happens.
+- **Service animals and numeric caps.** Ask the host or manager whether a service animal counts toward the limit.

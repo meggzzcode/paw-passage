@@ -253,12 +253,12 @@ Talk to your vet, get photos and written answers from the host, and only then pa
 2. **Send the host the message below** and request photos of the route, steps and floors.
 3. **Pack for slipping and accidents:** non-slip rugs, your dog's own bed, washable layers and your vet's medication list.
 
-Nothing here needs buying to book. What to buy, and in what order, is in [What to buy, in order](#what-to-buy-in-order) near the end.
+Nothing here needs buying to book; the two optional items are near the end ([jump to what to buy](#what-should-you-buy-for-a-senior-dogs-rental-stay)).
 
 What your vet says decides the plan:
 
 - **Your vet says the trip is fine and the dog moves comfortably:** go, and check the rental carefully.
-- **Your dog is stiff, slow to rise or hesitates at stairs:** call your vet first; these are listed signs of joint disease. [[4]](https://www.banfield.com/Senior-hub/common-health-issues-in-senior-pets/osteoarthritis-in-dogs-cats) [[3]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/osteoarthritis)
+- **Your dog is stiff, slow to rise or hesitates at stairs:** call your vet first; these are listed signs of joint disease. [[3]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/osteoarthritis) [[4]](https://www.banfield.com/Senior-hub/common-health-issues-in-senior-pets/osteoarthritis-in-dogs-cats)
 - **Your dog is newly confused, restless at night or having accidents:** call your vet first (see the vet list near the end).
 - **Your vet advises against travel:** consider a sitter or boarding.
 
@@ -314,13 +314,13 @@ Bring grip with you, put the question to the host before laying anything down, a
 - **Short nails** help paw-pad traction. [[1]](https://dogagingproject.org/mobility-tips-and-tricks-for-senior-dogs)
 - **Grip aids.** Boots, rubber-soled socks and toe grips can help; the same page cautions about toe grips for chewers. [[1]](https://dogagingproject.org/mobility-tips-and-tricks-for-senior-dogs)
 - **Ramps and steps for furniture or a car.** AKC says to match the height to the sofa, bed or trunk, check the weight limit and look for a non-slip surface. [[13]](https://www.akc.org/expert-advice/health/general-health/dog-stairs-and-ramps/) None of these pages says a ramp works for a full indoor flight, so for rental stairs use the photo check and ask the host before you move anything.
-- **Your own bed.** Banfield lists an orthopedic bed with a low profile, washable cover and non-slip bottom. [[2]](https://www.banfield.com/Senior-hub/care-for-older-pets/senior-proof-your-home) A familiar bed also keeps the host's furniture clean. Our picks are in [What to buy, in order](#what-to-buy-in-order).
+- **Your own bed.** Banfield lists an orthopedic bed with a low profile, washable cover and non-slip bottom. [[2]](https://www.banfield.com/Senior-hub/care-for-older-pets/senior-proof-your-home) A familiar bed also keeps the host's furniture clean. Our picks are near the end.
 
 Owners in forum threads (4 of 17 rental-related threads, three of them from Tripawds, a three-legged-dog forum, so not independent) mention rubber bath mats cut to fit the steps, traction strips and carpet laid on bare treads, which matches the vet sources. [[14]](https://tripawds.com/forums/hopping-around/looking-for-advice-on-wooden-steps/) [[15]](https://tripawds.com/forums/size-and-age-matters/senior-stair-struggles) [[16]](https://tripawds.com/forums/hopping-around/stairs-was-fine-and-then-it-changed) [[17]](https://forums.mst3k.com/t/older-dogs-and-stairs/20432)
 
 ## What if your dog balks at the stairs when you arrive?
 
-Do not force it. Stop, work out a plan with the host, and call your vet if the refusal is new; hesitating at stairs is a listed sign of joint disease. [[4]](https://www.banfield.com/Senior-hub/common-health-issues-in-senior-pets/osteoarthritis-in-dogs-cats) [[3]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/osteoarthritis) On Tripawds, an owner who pulled a refusing dog up by the leash was warned it "could definitely turn him off" the stairs, which is one report but a good reason to do the photo check before you pay. [[16]](https://tripawds.com/forums/hopping-around/stairs-was-fine-and-then-it-changed) Get the cancellation terms in writing in case the stairs turn out to be a problem.
+Do not force it. Stop, work out a plan with the host, and call your vet if the refusal is new; hesitating at stairs is a listed sign of joint disease. [[3]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/osteoarthritis) [[4]](https://www.banfield.com/Senior-hub/common-health-issues-in-senior-pets/osteoarthritis-in-dogs-cats) On Tripawds, an owner who pulled a refusing dog up by the leash was warned it "could definitely turn him off" the stairs, which is one report but a good reason to do the photo check before you pay. [[16]](https://tripawds.com/forums/hopping-around/stairs-was-fine-and-then-it-changed) Get the cancellation terms in writing in case the stairs turn out to be a problem.
 
 ## What if your dog leaks or has accidents?
 
@@ -330,7 +330,7 @@ In a small non-random sample of forum threads, hosts mention keeping a cleaner a
 
 What to do:
 
-- **Layers.** Pack washable or waterproof bedding, pads and a sheet for furniture. Our pick for pads is in [What to buy, in order](#what-to-buy-in-order).
+- **Layers.** Pack washable or waterproof bedding, pads and a sheet for furniture. Our pick for pads is near the end.
 - **Report and clean right away.** Tell the host or manager what happened and what you did.
 
 If a host later asks for money, our [damage-charge guide](/guides/airbnb-pet-damage-charge-after-checkout) covers the clocks and what to reply. Whether a deposit or charge applies to an accident you reported and cleaned is a question for the host in writing; our [pet fees guide](/guides/how-vacation-rental-pet-fees-work) explains how pet fees work.
@@ -345,12 +345,12 @@ For the drive, no vet source we read gives a stop interval, so ask your vet what
 
 Call before booking for any sign below, and again if it appears on the trip. This list is a prompt to call, not medical advice.
 
-- **Joint signs.** Banfield and Cornell list stiffness, trouble rising, hesitation on stairs and difficulty getting onto couches, and Banfield says not to dismiss them as just old age. [[4]](https://www.banfield.com/Senior-hub/common-health-issues-in-senior-pets/osteoarthritis-in-dogs-cats) [[3]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/osteoarthritis)
+- **Joint signs.** Banfield and Cornell list stiffness, trouble rising, hesitation on stairs and difficulty getting onto couches, and Banfield says not to dismiss them as just old age. [[3]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/osteoarthritis) [[4]](https://www.banfield.com/Senior-hub/common-health-issues-in-senior-pets/osteoarthritis-in-dogs-cats)
 - **Behavior changes.** ASPCA lists confusion and changes in sleep, activity or house training and says to report all changes to your vet. [[28]](https://www.aspca.org/pet-care/dog-care/common-dog-behavior-issues/behavior-problems-older-dogs) AKC says a full evaluation by your vet is imperative. [[29]](https://www.akc.org/expert-advice/health/recognizing-behavioral-changes-in-senior-dogs/)
 - **Dementia is not the only explanation.** Dog Aging Project says pain, dental disease, sensory loss and other illness can cause behavior changes. [[30]](https://dogagingproject.org/understanding-behavioral-changes-in-senior-dogs/)
 - **Routine.** The same page says older dogs have a much tougher time with inconsistent routines; keep feeding, walks and bedtime close to normal. [[30]](https://dogagingproject.org/understanding-behavioral-changes-in-senior-dogs/)
 
-## What to buy, in order
+## What should you buy for a senior dog's rental stay?
 
 Nothing here is needed to book. It is for after your vet and the host have said yes, and each item answers one problem from the sections above. If your dog does not have that problem, skip the item.
 
@@ -361,6 +361,8 @@ Nothing here is needed to book. It is for after your vet and the host have said 
 **For a bed that comes with you: a roll-up travel bed.** Banfield's list for a senior includes a washable cover and a non-slip bottom, and a familiar bed gives a stiff dog a place to settle on the host's floor. The Kurgo Loft Wander has a water-resistant ripstop top and a waterproof, non-slip bottom, rolls up with a handle for toting, and can be washed by hand or on a gentle machine cycle. Medium opens to 27 x 36 in and Large to 36 x 48 in, and the page lists no weight limit, so measure your dog lying down; the listing we link is the Large. [[32]](https://www.kurgo.com/p/loft-wander-dog-bed/K01560) It is a travel bed with fiber fill, not an orthopedic bed, so if your vet has told you to use one, bring that instead. It suits a dog with no bed that rolls or folds for the car.
 
 {{pick:kurgo-loft-wander-dog-bed|For a portable bed|The maker lists a roll-up bed with a water-resistant top, waterproof bottom and non-slip underside, in Medium (27 x 36 in) and Large (36 x 48 in) with no weight limit stated.|https://www.kurgo.com/p/loft-wander-dog-bed/K01560}}
+
+We did not pick a rug: measure the route first, since the host may not allow one.
 
 If the car is your dog's hurdle (hesitating at the tailgate or a high sill), a ramp or steps may help; our [ramp or steps guide](/guides/dog-ramp-or-steps-for-the-car-and-cabin) compares the options. Neither helps with rental stairs.
 

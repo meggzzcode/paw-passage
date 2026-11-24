@@ -2,7 +2,7 @@
 title: "Dog Travel Bowls and Food Storage: What to Pack First"
 seoTitle: "Dog Travel Bowls and Food Storage: What to Pack"
 seoDescription: "Pick a collapsible dog bowl for travel and a food container sized to your trip. Nine products compared on maker specs, plus kibble and bear-country rules."
-dek: Which dog travel bowl and food container to pack, with capacity, cleaning and materials for nine products from the makers' own pages (six with a pick card), plus what the CDC, FDA and park agencies say about water and food on the road.
+dek: Which dog travel bowl and food container to pack, with capacity and cleaning for nine products from the makers' own pages, plus what the CDC and FDA say.
 category: Planning
 states: []
 status: published
@@ -208,7 +208,7 @@ Kurgo's Splash Free Wander also holds 24 oz, and the maker describes a tapered l
 
 ## Collapsible dog bowls, bottles and food carriers: what the maker pages say
 
-Everything below is the maker's own wording or figures, read on 2026-11-18. The table holds no ratings or prices. Where a page is silent, the cell says so. Dishwasher status is listed only where the page states it.
+Everything below is the maker's own wording or figures, read on 2026-11-18. The table holds no ratings or prices. Where a page is silent, the cell says so. Dishwasher status is listed only where the page states it. Six of the nine products have a pick card above or below; the other three (Kurgo Splash Free Wander and the two Springland bottles) are linked in the text and table only.
 
 | Product | Capacity or size as stated | Cleaning as stated | Materials as the maker describes them |
 | --- | --- | --- | --- |
@@ -217,7 +217,7 @@ Everything below is the maker's own wording or figures, read on 2026-11-18. The 
 | Springland 20oz Flip bottle [[8]](https://springlandpets.com/products/20oz-flip-dog-travel-water-bottle) | Named 20oz; no separate volume figure on the page | Dishwasher (top rack only) or hand wash with dish soap | Food-safe, BPA-free polypropylene; aluminum carabiner; silicone flip-top bowl named in the description |
 | Vittles Vault Travel-Tainer [[9]](https://www.petmate.com/vittles-vault-travel-trainer-portable-food-storage-container/product/4504) | "Capacity: 6 Cups" container plus two 3-cup bowls; maker says capacity depends on kibble shape and density | Bowls dishwasher safe; the clear container "NOT dishwasher safe", hand wash | "Heavy-duty BPA food-grade plastic" (the page's wording); a "proprietary sealing system" |
 | Kurgo Kibble Carrier [[10]](https://www.kurgo.com/dog-travel/kibble-carrier) | Up to 5 lbs dry food, about 20 cups of average kibble | "Hand wash. Air dry." | Ripstop material, food-safe PEVA liner with heat-sealed seams; roll top |
-| Ruffwear Quencher (Medium, one size) [[11]](https://ruffwear.com/products/quencher-dog-bowl) | 4.2 cups (1 L); 5.5 in opening | Hand wash, mild detergent, air dry | Polyester ripstop shell, water-resistant; nylon lining with a 4,000 mm waterproof rating, Food Contact Safe |
+| Ruffwear Quencher (Medium) [[11]](https://ruffwear.com/products/quencher-dog-bowl) | 4.2 cups (1 L); 5.5 in opening | Hand wash, mild detergent, air dry | Polyester ripstop shell, water-resistant; nylon lining with a 4,000 mm waterproof rating, Food Contact Safe |
 | Kurgo Splash Free Wander [[12]](https://www.kurgo.com/p/splash-free-wander-dog-water-bowl/K01812) | Holds 24 oz (710 ml); dimensions not stated | "Dishwasher safe, top rack" | Food-grade silicone, PVC and BPA free |
 | Gunner Dog Bowl with Travel Lid [[13]](https://gunner.com/products/gunner-dog-bowl-black) | No capacity or dimensions stated | Bowl "top-rack dishwasher safe" | Nylon, "BPA free and Food Grade compliant"; lid described as spill-proof |
 | IRIS USA Airtight Dog Food Storage Container (up to 10 lbs) [[15]](https://www.irisusainc.com/collections/airtight-pet-food-containers/products/airtight-dog-food-storage-container-up-to-10-lbs-3) | 12.75 quarts; holds about 10 lb of dry food, depending on the food | Not stated on the page | Made in USA and BPA free (the maker's wording); airtight seals and buckles |
@@ -234,7 +234,16 @@ Water you meet along the way is a separate question. The CDC says dogs can get G
 
 ## Keeping dry food fresh in the car and the rental
 
-The FDA's advice has four parts. Store pet food and treats in the original container or bag. If you want another container, put the entire bag into it instead of pouring the kibble in. If you do pour it, the container should be clean, dry and have a lid that fits snugly. And the temperature should be less than 80 F. [[2]](https://www.fda.gov/animal-veterinary/animal-health-literacy/proper-storage-pet-food-treats) The page says the original bag keeps the lot number and "best by" date, which is useful if a food is ever recalled. The FDA page showed a last-updated date of 05/23/2024.
+Short on time? The Kibble Carrier, Vittles Vault and IRIS picks are just below the FDA summary.
+
+The FDA's advice has four parts: [[2]](https://www.fda.gov/animal-veterinary/animal-health-literacy/proper-storage-pet-food-treats)
+
+- Store pet food and treats in the original container or bag.
+- If you want another container, put the entire bag into it instead of pouring the kibble in.
+- If you do pour it, the container should be clean, dry and have a lid that fits snugly.
+- The temperature should be less than 80 F.
+
+The page says the original bag keeps the lot number and "best by" date, which is useful if a food is ever recalled. The FDA page showed a last-updated date of 05/23/2024.
 
 That makes a rigid container a holder for the bag, and a maker's stated capacity a guide only: one maker's page says capacity depends on kibble shape. [[9]](https://www.petmate.com/vittles-vault-travel-trainer-portable-food-storage-container/product/4504) So match the container to the bag you own, and keep the bag's lot number and "best by" date with it (photographing the bag is our suggestion). Our reading: the FDA's 80 F figure is the number to check a hot car trunk against. No source we read says how fast kibble spoils in a car.
 

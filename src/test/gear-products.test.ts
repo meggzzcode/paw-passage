@@ -25,12 +25,17 @@ const links = parse(readFileSync("content/affiliates.yml", "utf8")).links as Aff
 const slugsOf = () => [...gearCategorySlugs] as string[];
 
 describe("product catalog rules", () => {
-  it("every active product has a manufacturer link on an https host (inactive Amazon-listing finds may lack one until a guide places them)", () => {
+  it("every active product has a destination: a maker page on https, or an approved Amazon affiliate link (Amazon is where the site earns; the listing is then the spec source)", () => {
     for (const p of products.filter((x) => x.active !== false)) {
-      expect(p.productUrl, `${p.id}: manufacturerUrl`).toBeTruthy();
-      const u = new URL(p.productUrl!);
-      expect(u.protocol, p.id).toBe("https:");
-      expect(u.hostname, p.id).toContain(".");
+      const aff = links.find((l) => l.id === p.id && l.approved === true);
+      if (p.productUrl) {
+        const u = new URL(p.productUrl);
+        expect(u.protocol, p.id).toBe("https:");
+        expect(u.hostname, p.id).toContain(".");
+      } else {
+        expect(aff, `${p.id}: needs a maker page or an approved Amazon affiliate link`).toBeTruthy();
+        expect(String((aff as { url?: string }).url ?? ""), p.id).toContain("amazon.com/dp/");
+      }
     }
   });
   it("no product record has a price, rating or commission key (at any depth)", () => {

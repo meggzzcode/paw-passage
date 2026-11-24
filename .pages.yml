@@ -419,6 +419,7 @@ content:
           - { name: name, label: Product name, type: string, required: true }
           - { name: brand, label: Brand, type: string, required: true }
           - { name: aliases, label: "Other exact spellings of the name used in guide text, one per line (for example iCrate). Each links to the affiliate link while the product earns. Never a brand alone or one common word", type: string, list: true }
+          - { name: cardSpecs, label: "Spec card chips: up to three short facts (28 characters each), taken from this product's own record", type: string, list: true }
           - name: categories
             label: "Categories (the first one is the main one; add at most one more as a cross-listing)"
             type: select

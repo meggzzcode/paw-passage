@@ -66,6 +66,8 @@ export const productRecordObject = z
      * links to the product's affiliate link while the product earns. Never a bare brand or a single common word.
      */
     aliases: z.array(nonEmpty).default([]),
+    /** Up to three short fact chips (28 characters each) for the product spec card, each taken from the record itself. */
+    cardSpecs: z.array(z.string().trim().min(1).max(28)).max(3).default([]),
     /** The first entry is the primary category; an optional second one is a cross-listing (at most two in all). */
     categories: z
       .array(z.enum(gearCategorySlugs))

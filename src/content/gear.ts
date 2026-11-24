@@ -10,6 +10,8 @@ export interface Product {
   brand: string;
   /** Other exact spellings of the name used in guide text; each links to the affiliate link while the product earns. */
   aliases?: string[];
+  /** Up to three short fact chips for the spec card (our own graphic, no photo). */
+  cardSpecs?: string[];
   /** What the product is, in plain words. */
   summary: string;
   /** Specs/claims taken from `specSource` (size range, weight limit, certification...). */
@@ -62,6 +64,7 @@ export const products: Product[] = records.map((r) => ({
   name: r.name,
   brand: r.brand,
   ...(r.aliases.length ? { aliases: r.aliases } : {}),
+  ...(r.cardSpecs.length ? { cardSpecs: r.cardSpecs } : {}),
   summary: r.summary,
   keySpecs: r.keySpecs,
   specSource: r.specSource,

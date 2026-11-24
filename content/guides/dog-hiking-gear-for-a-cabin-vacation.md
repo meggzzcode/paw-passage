@@ -2,7 +2,7 @@
 title: "Dog Hiking Gear for a Cabin Vacation: What to Bring and What to Skip"
 seoTitle: "Dog Hiking Gear for a Cabin Trip: What to Bring"
 seoDescription: "What to bring on a dog hike from a cabin, what only some trails call for, and how trail rules, heat and terrain change the plan."
-dek: Most walks need a leash, water and waste bags. A harness, boots or a dusk light only make sense on steep, rough or late hikes.
+dek: Most dog hikes need very little gear. A harness, boots or a light only suit steep, rough or late trails.
 category: Planning
 states: []
 status: published
@@ -149,21 +149,18 @@ research:
   researchComplete: true
 ---
 
-Most cabin hikes need four things: a fixed leash, water, a bowl and waste bags. Everything else depends on the trail. First confirm dogs are allowed at all, because [NPS](https://www.nps.gov/subjects/trails/hiking-with-pets.htm) says many national parks do not allow pets on hiking trails. Then let terrain, heat and daylight decide whether a harness, boots or a light earns a place in your pack.
+Most cabin hikes need four things: a fixed leash, water, a bowl and waste bags. The rest depends on the trail. First confirm dogs are allowed at all, because [NPS](https://www.nps.gov/subjects/trails/hiking-with-pets.htm) says many national parks do not allow pets on hiking trails. Then let terrain, heat and daylight decide whether a harness, boots or a light earns a place in your pack.
 
-## What to bring on most hikes
+## The basics, with reasons
 
 - **A fixed leash.** Not a retractable one; [Orvis](https://www.orvis.com/how-to-hike-safely-with-your-dog.html) advises against them. The length rule is in the trail rules below.
-- **Water for the dog.** Plan a water break every fifteen minutes to half hour, depending on difficulty and temperature ([Orvis](https://www.orvis.com/how-to-hike-safely-with-your-dog.html)). The [AKC](https://www.akc.org/expert-advice/lifestyle/dog-boots/) rule for the ground you stop on: if you would not walk barefoot on it, your dog should not.
-- **A bowl.** Any collapsible one works.
+- **Water and a bowl.** Any collapsible bowl works. Plan a water break every fifteen minutes to half hour, depending on difficulty and temperature ([Orvis](https://www.orvis.com/how-to-hike-safely-with-your-dog.html)). The [AKC](https://www.akc.org/expert-advice/lifestyle/dog-boots/) rule for the ground you stop on: if you would not walk barefoot on it, your dog should not.
 - **Waste bags.** Leave No Trace applies, and dog waste can carry harmful bacteria into fresh water and pass diseases to wildlife ([National Park Service](https://www.nps.gov/articles/000/idkt_pets.htm)).
 
 ## Trail-day checklist
 
 - [ ] Dogs are allowed on this trail, and you have the trail name.
-- [ ] Fixed leash.
-- [ ] Water and a bowl.
-- [ ] Waste bags.
+- [ ] The four basics above packed.
 - [ ] Forecast checked; hot day means a shorter, earlier walk.
 - [ ] Steep ground: harness fitted at the cabin.
 - [ ] Rough or hot ground: boots practiced, pads checked after.
@@ -191,11 +188,11 @@ A posted limit overrides all of these. Ask the rental host which nearby trails a
 
 ## Which gear for which problem
 
-All three cards below are Ruffwear, the catalog we researched; no source we read ranks brands, and any gear that fits the same way does the same job. Skip each one if your hike does not have its problem.
+The three cards below, and the light and leash after them, are Ruffwear, the catalog we researched; no source we read ranks brands, and any gear that fits the same way does the same job. Skip each one if your hike does not have its problem.
 
-**Water.** On a long loop with a thirsty dog, a packable bowl saves carrying a rigid one. The Quencher folds flat ([Ruffwear](https://ruffwear.com/products/quencher-dog-bowl)); the catch is hand wash and air dry, so skip it if you already carry a bowl or want dishwasher-safe.
+**Water.** A bowl does not need a card; any collapsible one works. The Quencher is one option that folds flat ([Ruffwear](https://ruffwear.com/products/quencher-dog-bowl)); the catch is hand wash and air dry, so skip it if you already carry a bowl or want dishwasher-safe.
 
-{{pick:ruffwear-quencher-bowl|A packable trail bowl, 4.2 cups (1 L)|One size, Medium, with a 5.5 in opening.|https://ruffwear.com/products/quencher-dog-bowl}}
+{{pick:ruffwear-quencher-bowl|One packable bowl option, 4.2 cups (1 L)|Folds flat; one size, Medium, with a 5.5 in opening. Hand wash only.|https://ruffwear.com/products/quencher-dog-bowl}}
 
 **Harness, for steep ground.** [PetMD](https://www.petmd.com/dog/general-health/best-hiking-gear-for-dogs) says harnesses provide a more secure hold than a collar. Our reasoning: on a ledge or wet step you may need to steady or lift the dog, and a collar clip puts that pull on the neck. On easy paths a collar is fine. [Ruffwear](https://ruffwear.com/products/web-master-dog-harness)'s Web Master has a reinforced handle and a chest loop for pullers. Any harness with a handle and a back clip does that job. Size by girth around the widest part of the rib cage (XXS 13-17 in, XS 17-22, S 22-27, M 27-32, L/XL 32-42), and fit it at the cabin before the trail.
 

@@ -21,7 +21,7 @@ export const Route = createFileRoute("/stays/")({
     return pageHead({
       title: "Dog-friendly stays and their pet policies",
       description:
-        "Search dog-friendly cabins, cottages and beach houses by fenced yard, large dogs, number of dogs, pet fees and breed rules. Details come from each listing, and anything we could not confirm is marked Not confirmed.",
+        "Dog-friendly cabins, cottages and beach houses, with pet fee, dog limit, weight limit and fenced yard shown for each. Anything unconfirmed is marked.",
       path: "/stays",
       noindex: filtered || !hasStays(),
     });
@@ -170,9 +170,37 @@ function StaysPage() {
       <header className="mt-6 max-w-3xl">
         <h1 className="text-4xl md:text-5xl">Dog-friendly stays</h1>
         <p className="mt-3 text-muted-foreground">
-          The details here come from each listing. Ask the host any additional questions before
-          booking. Anything marked "Not confirmed" is unknown, not a yes, and filters only match
-          details that are confirmed.
+          Each card is a vacation rental whose pet details we read from its public listing. You can
+          compare the pet fee, how many dogs are allowed, any weight limit and whether the yard is
+          fenced. Anything marked "Not confirmed" is unknown, not a yes, and filters only match
+          confirmed details. Ask the host any remaining questions before booking.
+        </p>
+        <p className="mt-3 text-muted-foreground">
+          Not sure your dog will qualify? Try{" "}
+          <Link to="/tools/will-my-dog-be-accepted" className="underline">
+            Will my dog be accepted?
+          </Link>
+          , or see how rules vary in our{" "}
+          <Link to="/data/pet-policies" className="underline">
+            pet policies of 38 managers
+          </Link>
+          . For background, read{" "}
+          <Link
+            to="/guides/$slug"
+            params={{ slug: "how-vacation-rental-pet-fees-work" }}
+            className="underline"
+          >
+            how pet fees work
+          </Link>{" "}
+          and{" "}
+          <Link
+            to="/guides/$slug"
+            params={{ slug: "vacation-rental-secure-fenced-yard" }}
+            className="underline"
+          >
+            how to check a fenced yard
+          </Link>
+          .
         </p>
       </header>
 

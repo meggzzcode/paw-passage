@@ -2,6 +2,14 @@ import { createStart, createCsrfMiddleware, createMiddleware } from "@tanstack/r
 
 import { renderErrorPage } from "./lib/error-page";
 import { securityHeadersMiddleware } from "./lib/security-headers";
+import { trailingSlashRedirect } from "./lib/trailing-slash";
+
+// /guides/ and every other trailing-slash URL gets a permanent redirect to the slashless page.
+const trailingSlashMiddleware = createMiddleware().server(async ({ request, next }) => {
+  const to = trailingSlashRedirect(new URL(request.url), request.method);
+  if (to) return new Response(null, { status: 301, headers: { Location: to } });
+  return next();
+});
 
 const errorMiddleware = createMiddleware().server(async ({ next }) => {
   try {
@@ -32,5 +40,10 @@ const csrfMiddleware = createCsrfMiddleware({
 // user-managed Supabase project is connected, no middleware here sets Authorization, and the
 // project did not intentionally replace it.
 export const startInstance = createStart(() => ({
-  requestMiddleware: [securityHeadersMiddleware, errorMiddleware, csrfMiddleware],
+  requestMiddleware: [
+    trailingSlashMiddleware,
+    securityHeadersMiddleware,
+    errorMiddleware,
+    csrfMiddleware,
+  ],
 }));

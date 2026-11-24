@@ -35,7 +35,6 @@ relatedProducts:
   - north-states-mypet-universal-petgate
   - midwest-icrate-dog-crate
   - petsafe-happy-ride-collapsible-crate
-  - kurgo-kibble-carrier
 relatedTools:
   - checklist
 sources:
@@ -115,10 +114,6 @@ sources:
     url: https://www.petsafe.com/p/happy-ride-collapsible-travel-crate/ZTV00-17289/
     publisher: PetSafe
     accessedOn: 2026-11-18
-  - title: Kibble Carrier
-    url: https://www.kurgo.com/dog-travel/kibble-carrier
-    publisher: Kurgo
-    accessedOn: 2026-11-16
 research:
   primaryKeyword: how many dogs allowed at airbnb
   relatedKeywords:
@@ -205,24 +200,24 @@ Vrbo handles pets through house rules in text. Hosts can note pet type and size,
 
 Published limits as of 2026-11-18, ten sources, a sample and not a survey. Most pages carry no date.
 
-| Source | Dogs and size | Fee as published | Extra or unapproved dog |
-| --- | --- | --- | --- |
-| Airbnb, platform [[1]](https://www.airbnb.com/help/article/3623) [[2]](https://www.airbnb.com/resources/hosting-homes/a/what-you-need-to-know-about-hosting-pets-463) | Guest declares 0 to 5; host sets one to five; no size stated | Host picks one of four models; "can't be more than your nightly base rate" | Not stated |
-| Vrbo, platform [[3]](https://help.vrbo.com/articles/Add-or-edit-house-rules) | Free text, no count field described; type and size note | Host chooses | Not stated |
-| Vacasa [[4]](https://www.vacasa.com/explore/pet-friendly-vacation-rentals) | Varies by home | Per dog, per night; amount not published | Only dogs authorized in the reservation allowed |
-| Twiddy, Outer Banks [[5]](https://www.twiddy.com/outer-banks/guests/pets/) | Two unless advertised; no size limit on the page, homes may restrict | No additional fee | Above two only if advertised; violation is cause for termination of tenancy |
-| Brindley Beach, Outer Banks [[6]](https://www.brindleybeach.com/node/3691) | Two dogs, 60 lb each | Non-refundable, per reservation | Not permitted; eviction without refund |
-| Cabin Rentals of Georgia [[7]](https://cabin-rentals-of-georgia.com/policies) | No number; each dog approved; under 35 lb | $50 per pet per night, $75 cleaning, $250 refundable deposit | Fees doubled |
-| My Vacation Haven, Miramar Beach [[8]](https://www.myvacationhaven.com/pet-policy) | Two per property; no size stated | $250 first pet, $100 second, non-refundable, plus taxes and admin fee | Not stated |
-| Kinlin Grover, Cape Cod [[9]](https://www.vacationcapecod.com/kinlin-grover-vacation-rentals-pet-policy/) | No number or size on page | Owner-set, non-refundable, per reservation | Contact your rental agent |
-| AvantStay, Big Bear [[10]](https://avantstay.com/vacation-rentals/pet-friendly/california/big-bear) | "Up to two" at most homes; no size | Deep-cleaning fee; amount not shown | Not stated |
-| One Vrbo listing, Blue Ridge [[11]](https://www.vrbo.com/en-sg/p2719492vb) | Limit 2 total; 23 kg per pet | Not on page | Not stated |
+|  Source | Dogs and size | Extra or unapproved dog  |
+|  --- | --- | ---  |
+|  Airbnb, platform [[1]](https://www.airbnb.com/help/article/3623) [[2]](https://www.airbnb.com/resources/hosting-homes/a/what-you-need-to-know-about-hosting-pets-463) | Guest declares 0 to 5; host sets one to five; no size stated | Not stated  |
+|  Vrbo, platform [[3]](https://help.vrbo.com/articles/Add-or-edit-house-rules) | Free text, no count field described; type and size note | Not stated  |
+|  Vacasa [[4]](https://www.vacasa.com/explore/pet-friendly-vacation-rentals) | Varies by home | Only dogs authorized in the reservation allowed  |
+|  Twiddy, Outer Banks [[5]](https://www.twiddy.com/outer-banks/guests/pets/) | Two unless advertised; no size limit on the page, homes may restrict | Above two only if advertised; violation is cause for termination of tenancy  |
+|  Brindley Beach, Outer Banks [[6]](https://www.brindleybeach.com/node/3691) | Two dogs, 60 lb each | Not permitted; eviction without refund  |
+|  Cabin Rentals of Georgia [[7]](https://cabin-rentals-of-georgia.com/policies) | No number; each dog approved; under 35 lb | Fees doubled  |
+|  My Vacation Haven, Miramar Beach [[8]](https://www.myvacationhaven.com/pet-policy) | Two per property; no size stated | Not stated  |
+|  Kinlin Grover, Cape Cod [[9]](https://www.vacationcapecod.com/kinlin-grover-vacation-rentals-pet-policy/) | No number or size on page | Contact your rental agent  |
+|  AvantStay, Big Bear [[10]](https://avantstay.com/vacation-rentals/pet-friendly/california/big-bear) | "Up to two" at most homes; no size | Not stated  |
+|  One Vrbo listing, Blue Ridge [[11]](https://www.vrbo.com/en-sg/p2719492vb) | Limit 2 total; 23 kg per pet | Not stated  |
 
 A manager default often reads "unless advertised", so the listing text beats the manager's general page. Brindley says its 60 lb is "each"; no standard exists for per-dog versus combined weight, which is why the weight question below matters. For the managers that state no weight limit, see [rentals with no dog weight limit](/guides/vacation-rentals-with-no-dog-weight-limit).
 
 ### What 38 manager pages add
 
-We read the pet pages of 38 vacation rental managers on 2026-11-18 (38 managers, convenience sample, read 2026-11-18) across the Smokies, North Carolina, Georgia, California, Colorado and the Florida Gulf Coast. Another 11 sites refused automated reading and were skipped.
+We read the pet pages of 38 vacation rental managers on 2026-11-18, a convenience sample, across the Smokies, North Carolina, Georgia, California, Colorado and the Florida Gulf Coast. Another 11 sites refused automated reading and were skipped.
 
 - **Two is the usual cap.** 22 of the 38 state a limit of two (for some it is two pets, or "most homes"), 2 set it at three pets, and 14 give no number.
 - **Fees are all over the map.** Single stated amounts run from $20 a night to a $300 one-time fee. Resort Realty says up to $1,000 depending on the property, and three managers charge nothing on the homes we saw, Twiddy among them.
@@ -275,7 +270,7 @@ Published figures as of 2026-11-18:
 - At My Vacation Haven two pets cost $250 plus $100, or $350, non-refundable, before taxes and the admin fee [[8]](https://www.myvacationhaven.com/pet-policy).
 - Airbnb's fee "can't be more than your nightly base rate" [[1]](https://www.airbnb.com/help/article/3623). How that applies to a per pet per night fee is not spelled out, so read the checkout total.
 
-Compare totals using our [pet fees guide](/guides/how-vacation-rental-pet-fees-work), and see [what pet fees look like on Airbnb and Vrbo](/guides/how-vacation-rental-pet-fees-work) side by side.
+Compare totals with our [pet fees guide](/guides/how-vacation-rental-pet-fees-work), which prices the four fee units.
 
 ## What if you bring more dogs than the listing allows?
 
@@ -305,9 +300,11 @@ Before you book:
 - [ ] You declared the true number of pets when you booked.
 - [ ] Any service animal or puppy has been mentioned to the host.
 
+**Next step:** add up the pet charges for your dog count and dates with our [pet fees guide](/guides/how-vacation-rental-pet-fees-work), then work down our [pet-friendly rental checklist](/guides/pet-friendly-vacation-rental-checklist) and the [trip checklist tool](/tools/checklist).
+
 ## If your rental has no separate spaces
 
-The third-dog message gets you the host's yes. It does not give two dogs two places to eat, and an open-plan cabin or studio has no doors to close. Whether you need hardware depends on the rental, so ask the host about a closed bedroom door first. If there is none, these are the options, in the order most readers should consider them.
+The third-dog message gets you the host's yes. It does not give two dogs two places to eat, and an open-plan cabin or studio has no doors to close. Whether you need hardware depends on the rental, so ask the host about a closed bedroom door first. If there is none, the gate is the first thing to consider, and two crates can do the job: the iCrate for a wire crate that stays in the rental, the Happy Ride if the same crate must ride in the back seat first.
 
 **Buy first if the cabin is open-plan: the gate.** A pressure-mounted gate can split a kitchen or hallway so each dog eats on its own side, and it needs no tools. The maker lists the North States MyPet Universal Petgate at 26 inches high, fitting openings of 26 to 42 inches, with an optional hardware mount for a solid surface. It is a plastic gate with rounded edges, and the maker says never to use it at the top of a stairway when held only by tension. [[17]](https://northstatesind.com/north-states-mypet-universal-petgate/) Skip it if your dogs jump 26-inch gates or the opening is wider than 42 inches, so measure before you buy. Ask the host before using the hardware mount.
 
@@ -321,16 +318,12 @@ The third-dog message gets you the host's yes. It does not give two dogs two pla
 
 {{pick:petsafe-happy-ride-collapsible-crate|One crate for the car and the rental|The maker lists a 60 lb limit and 27 x 19 x 28 inches expanded, with two unzipping doors; it describes the dog as contained, not restrained, and makes no crash-test claim.|https://www.petsafe.com/p/happy-ride-collapsible-travel-crate/ZTV00-17289/}}
 
-**For feeding two or three dogs apart: the kibble carrier.** Separate meals mean carrying more food than one bag suggests, and one bag per dog keeps each dog's food apart. The Kurgo Kibble Carrier is a soft roll-top bag that the maker says holds up to 5 lbs of dry food, roughly 20 cups of average-sized kibble, with a ripstop shell, a food-safe PEVA liner, heat-sealed seams and a roll-and-clip closure. [[20]](https://www.kurgo.com/dog-travel/kibble-carrier) Do the sum first: cups per day x nights, for each dog. A dog eating 2 cups a day for a 7-night trip needs 14 cups, which fits one carrier; a bigger eater or a longer stay needs a second. The maker builds it for packing rather than long-term storage, so empty it and hand wash it after the trip. Skip it if you decant food into a bag or container you already own.
-
-{{pick:kurgo-kibble-carrier|One bag of food per dog|The maker says it holds up to 5 lbs of dry food, about 20 cups of average-sized kibble, with a food-safe liner and a roll-and-clip top; it is built for packing, not long-term storage.|https://www.kurgo.com/dog-travel/kibble-carrier}}
-
 ### What to buy first
 
 1. Ask the host about a closed bedroom door. If there is one, you may need none of the above.
 2. Open-plan with no door: the gate, after you measure the opening (26 to 42 inches).
 3. Both dogs already crate-trained: the iCrate for meals and rest, or the Happy Ride if one dog is under 60 lb and rides in the back seat.
-4. The kibble carrier last, once you know the cups per day. More on all of these on our [pens and gates gear page](/gear/pens-and-gates).
+Two dogs fed apart also means two bowls and a cups-per-day sum for each. More on all of these on our [pens and gates gear page](/gear/pens-and-gates).
 
 ## How sure we are
 
@@ -349,4 +342,4 @@ The third-dog message gets you the host's yes. It does not give two dogs two pla
 
 For a vet question, such as whether your dogs suit a shared stay, ask your vet. For everything else, message the host and save the written answer.
 
-**Next step:** add up the pet charges for your dog count and dates with our [pet fees guide](/guides/how-vacation-rental-pet-fees-work), then work down our [pet-friendly rental checklist](/guides/pet-friendly-vacation-rental-checklist) and the [trip checklist tool](/tools/checklist).
+**Next step:** price the pet charges for your dog count with our [pet fees guide](/guides/how-vacation-rental-pet-fees-work).

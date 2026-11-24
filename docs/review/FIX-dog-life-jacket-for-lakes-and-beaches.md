@@ -9,3 +9,6 @@
 ## For the lead
 - PIN ROW (docs/pinterest-pins.csv line 8): echo "dog life jacket size and fit". Hero and pin are on topic.
 - Expected score: about 9.0 to 9.3.
+
+## Round 3 polish (2026-11-24)
+- Prose now says "EzyDog's DFD Life Jacket" (the catalog name) so the site links it; "What to buy first" names are plain text (auto-linked to the buy buttons) instead of maker pages; checklist item 6 reworded; the unknowns-row pool stat replaced with the two-manager beach wording (Newman-Dailey, Twiddy). Not applied: edits 5 and 6 (already acceptable). lastReviewed 2026-11-24.

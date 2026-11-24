@@ -8,3 +8,6 @@ Compact row added to the specs table; "four" changed to "five" everywhere; Foldi
 ## For the lead
 - Hitch Step has no card because of the 4-product cap; swap it in for Side Door Steps if preferred.
 - Spec cards will show cardSpecs; the Folding Ramp record already has them.
+
+## Round 3 polish (2026-11-24)
+- "our record" leaks replaced ("not stated on the page", "The pages list no figure"); added a plain sentence that all five picks are PetSafe because those are the pages researched. Compact table cell links through its existing alias. "low-to-mid 20s" was already fixed. Hero not touched. lastReviewed 2026-11-24.

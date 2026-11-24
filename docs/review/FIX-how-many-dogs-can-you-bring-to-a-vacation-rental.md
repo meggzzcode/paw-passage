@@ -12,3 +12,7 @@
 - Other guides still use the anchor "Airbnb vs Vrbo guide" or "Airbnb vs Vrbo with a dog" pointing at how-vacation-rental-pet-fees-work (can-you-leave-a-dog-alone-in-a-vacation-rental line ~197, airbnb-pet-damage-charge-after-checkout line ~219). Not my files; the target is a pet fees guide, so the anchor should change.
 - Keep-reading cards blank-gap on mobile and the end-of-page "Gear for this trip" repeat are template issues.
 - Pin row: suggest echoing "How many dogs are allowed at an Airbnb or rental".
+
+## Round 3 polish (2026-11-24)
+- Cut the Kurgo Kibble Carrier (paragraph, pick, source, relatedProducts, buy-first step 4); it still appears in dog-travel-bowls-and-food-storage. Kept gate, iCrate and Happy Ride (Happy Ride is in six other guides); added one lead sentence tying the two crates together.
+- Fixed the doubled pet-fees link, the doubled "38 managers/date" wording, dropped the Fee column from the ten-source table, moved the Next step to follow the third-dog checklist with a short pointer at the end. lastReviewed 2026-11-24.

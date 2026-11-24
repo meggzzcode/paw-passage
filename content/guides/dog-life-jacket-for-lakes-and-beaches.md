@@ -184,13 +184,13 @@ Choose a dog life jacket by your dog's chest girth, not weight, then fit-test it
 3. Look for a handle, a leash ring, bright or reflective trim and adjustable straps.
 4. Treat any buoyancy wording as the maker's own claim: no standard backs it.
 5. Check the return terms on the listing, so a jacket that fails the shallow-water test can go back.
-6. Check that your dog's size is listed on the listing before you order.
+6. Confirm your dog's girth falls inside a listed size before you order.
 
 ## Three jackets to compare
 
 Who needs one? The sources we read give no rule. AKC's page covers which dogs struggle in water, and Outward Hound calls its jacket an aid, not supervision. If your dog tires quickly or you will be near deep or open water, a jacket is a reasonable precaution; a dog that only wades may not need one. Each jacket below suits a different dog and shoreline, and none has an independent flotation test, so the choice comes down to size range, handle and how much you will be within reach. More are on our [beach vacations gear page](/gear/beach-vacations).
 
-**Big dog or rocky shoreline.** EzyDog's DFD comes in sizes XS (15-25 lbs, girth 19-32 in) to XL (90+ lbs, girth 30-48 in), the widest range of the three, with a padded back grab handle, a heavy-duty D-ring and neoprene chest and belly straps. [[17]](https://store.ezydog.com/dfd-life-jacket/) That handle is what you use to lift a heavy dog back onto a dock or over rocks. The maker's weight ranges overlap, so size by girth and length, as step 1 of the fit test says. It claims up to 50% more flotation but gives no baseline or rating, so read that as marketing, not a measurement. Whole Dog Journal, in a 2021 review with two test dogs (observational, buoyancy not measured), named it its all-around pick and gave it top paws [[16]](https://www.whole-dog-journal.com/lifestyle/dog-life-jacket-review/), and the maker lists a 1-year warranty and 30-day returns on its store. Skip it if your dog's girth is under 19 in, below its smallest size. This is the one to buy first if you have a big dog, you will be lifting the dog out of water by the handle and you want a return window.
+**Big dog or rocky shoreline.** EzyDog's DFD Life Jacket comes in sizes XS (15-25 lbs, girth 19-32 in) to XL (90+ lbs, girth 30-48 in), the widest range of the three, with a padded back grab handle, a heavy-duty D-ring and neoprene chest and belly straps. [[17]](https://store.ezydog.com/dfd-life-jacket/) That handle is what you use to lift a heavy dog back onto a dock or over rocks. The maker's weight ranges overlap, so size by girth and length, as step 1 of the fit test says. It claims up to 50% more flotation but gives no baseline or rating, so read that as marketing, not a measurement. Whole Dog Journal, in a 2021 review with two test dogs (observational, buoyancy not measured), named it its all-around pick and gave it top paws [[16]](https://www.whole-dog-journal.com/lifestyle/dog-life-jacket-review/), and the maker lists a 1-year warranty and 30-day returns on its store. Skip it if your dog's girth is under 19 in, below its smallest size. This is the one to buy first if you have a big dog, you will be lifting the dog out of water by the handle and you want a return window.
 
 {{pick:ezydog-dfd-life-jacket|For a big dog: sizes up to 90+ lb|The maker lists sizes XS to XL by girth and weight (XL is 90+ lbs, girth 30-48 in), a padded back grab handle and a leash D-ring. Whole Dog Journal's 2021 review, with two test dogs and no measured buoyancy, gave it top paws.|https://www.whole-dog-journal.com/lifestyle/dog-life-jacket-review/}}
 
@@ -278,7 +278,7 @@ A jacket will not make a beach legal. Ask the host for the beach, lake and dock 
 | Whether a given state or lake requires dogs to wear jackets | We read no state boating page | Check the state boating agency and the lake's posted rules |
 | Whether a particular jacket fits your dog's body shape | Makers give girth ranges, and the Ruffwear and Outward Hound pages differ on in-between sizes | Run the fit test above with the jacket in hand |
 | How long a dog can safely swim or how often to break | Cornell and AKC give different break intervals | Ask your vet |
-| Whether the rental allows dogs on its beach or dock | Manager rules vary, and 31 of 38 manager pages did not address pools | Get the rule from the host in writing |
+| Whether the rental allows dogs on its beach or dock | Manager rules vary, and the two managers we read give different beach rules | Get the rule from the host in writing |
 
 ## How sure we are
 
@@ -289,6 +289,6 @@ A jacket will not make a beach legal. Ask the host for the beach, lake and dock 
 ## What to buy first
 
 1. **Measure tonight.** Girth around the widest part of the rib cage, then compare it with the size chart on the listing.
-2. **Buy the jacket that fits your dog and your water.** The [DFD](https://store.ezydog.com/dfd-life-jacket/) for a big dog you may need to lift, the [Float Coat](https://ruffwear.com/products/float-coat-dog-life-jacket) for a small to medium dog, the [Dawson Swim](https://outwardhound.com/dawson-swim-dog-life-jacket/) only for calm water where you stay within reach.
+2. **Buy the jacket that fits your dog and your water.** The DFD Life Jacket for a big dog you may need to lift, the Float Coat for a small to medium dog, the Dawson Swim only for calm water where you stay within reach.
 3. **Fit-test it** in shallow water, then add fresh water for the dock (the Springland bottle above is one way).
 4. **Plan the rest.** Add the jacket, water and a dog towel to the [packing list tool](/tools/packing-list), read the [cabin packing guide](/guides/dog-friendly-cabin-packing-list) for the rest of the bag, and run the [pre-booking checklist](/tools/checklist) with the beach and dock rules added.

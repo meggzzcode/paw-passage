@@ -1,5 +1,5 @@
 ---
-title: "Dog Friendly Cabins in Georgia State Parks: The 2-Dog Rule, the $50 Fee and How to Request One"
+title: "Dog Friendly Cabins in Georgia State Parks: Rules, Fee and How to Request"
 seoTitle: "Dog Friendly Cabins in Georgia State Parks: Rules"
 seoDescription: "Georgia state park cottages take 2 dogs at $50 each per stay and must be requested before arrival. See named parks, the rules and a message to send."
 dek: Two dogs at most, $50 per dog, never alone and requested before you arrive. What the official pages say today, and what they leave out.
@@ -191,15 +191,15 @@ Kennels are not available at the parks, and pets are not allowed in lodges, yurt
 
 There is no single official list on the pages we read. The cottages page says "Designated dog-friendly cabins are available" and gives two park examples. [[2]](https://gastateparks.org/Cottages) Here is what each official page says, park by park.
 
-| Park | What the official page says about dogs | Source |
-| --- | --- | --- |
-| Skidaway Island | Cabins A and C do not allow pets; Cabin B, the ADA accessible one, does | [[2]](https://gastateparks.org/Cottages) |
-| Mistletoe | One cabin described as pet-friendly (fee), no amount shown | [[2]](https://gastateparks.org/Cottages) |
-| Smithgall Woods | Garden Cottage is "our singular pet-friendly (with fee) cabin" among six cottages | [[3]](https://gastateparks.org/SmithgallWoods/Cottages) |
-| Fort Yargo | 17 cottages listed, nothing about pets; call the park line, 770-867-3489 | [[4]](https://gastateparks.org/FortYargo) |
-| Red Top Mountain | 20 cottages listed, no mention of dogs or leashes | [[5]](https://gastateparks.org/RedTopMountain) |
+| Park | What the official page says about dogs |
+| --- | --- |
+| Skidaway Island | Cabins A and C do not allow pets; Cabin B, the ADA accessible one, does [[2]](https://gastateparks.org/Cottages) |
+| Mistletoe | One cabin described as pet-friendly (fee), no amount shown [[2]](https://gastateparks.org/Cottages) |
+| Smithgall Woods | Garden Cottage is "our singular pet-friendly (with fee) cabin" among six cottages [[3]](https://gastateparks.org/SmithgallWoods/Cottages) |
+| Fort Yargo | 17 cottages listed, nothing about pets; call the park line, 770-867-3489 [[4]](https://gastateparks.org/FortYargo) |
+| Red Top Mountain | 20 cottages listed, no mention of dogs or leashes [[5]](https://gastateparks.org/RedTopMountain) |
 
-An Explore Georgia list (undated) adds dog-friendly cottages at Black Rock Mountain (#5, #8 and #10), Crooked River (four), F.D. Roosevelt (four) and Mistletoe (five). [[6]](https://exploregeorgia.org/places-to-stay/list/stay-in-these-cozy-cabins-with-your-dog-at-georgia-state-parks) Treat it as a lead, since cottage designations can change; the park confirms the unit you book.
+An Explore Georgia list (undated) adds dog-friendly cottages at Black Rock Mountain (#5, #8 and #10), Crooked River (four), F.D. Roosevelt (four) and Mistletoe (five). [[6]](https://exploregeorgia.org/places-to-stay/list/stay-in-these-cozy-cabins-with-your-dog-at-georgia-state-parks) Treat it as a lead, since cottage designations can change; the park confirms the unit you book. Whichever park you pick, ask for the unit number and the designation in writing.
 
 ## How do you request a dog friendly cabin?
 
@@ -270,7 +270,7 @@ The rules make three things non-negotiable: a leash of 6 feet or shorter at all 
 
 1. Check your leash. Over 6 feet means the Knot-a-Leash comes first; 6 feet or under means keep what you have.
 2. Water next: the Springland bottle for short outings, or the Quencher if your days are long hikes.
-3. Bags for cleanup, which the rules require, cost almost nothing and go on the leash loop.
+3. Bags for cleanup, which the rules require; clip them to the leash loop.
 
 ## Where other pages differ
 

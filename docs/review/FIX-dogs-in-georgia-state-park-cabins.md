@@ -12,3 +12,6 @@
 - The gear block "Gear for this trip" at page end repeats the same three cards (template); not changed.
 - The hero/pin image was not inspected for relevance.
 - Products: no catalog errors found. Knot-a-Leash page lists the accessory loop only in the catalog summary; I wrote "accessory loop for bags" from that.
+
+## Round 3 polish (2026-11-24)
+- H1 shortened to "Rules, Fee and How to Request"; park table now two columns with citations inside the cell; "cost almost nothing" removed; added "ask for the unit number and designation in writing". Leash card unchanged (skip-if line already present). lastReviewed 2026-11-24.

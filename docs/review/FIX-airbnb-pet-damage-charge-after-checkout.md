@@ -11,3 +11,6 @@ Also: the first paragraph now states the three clocks; lastReviewed 2026-11-24; 
 - Hero and pin image (dog in a car trunk) carry no damage-claim signal; consider an entry mat or photo-documenting scene.
 - Owner question open: Airbnb help pages 1415 or 3591 may say how to file the 60-day appeal; not added because I did not have it re-read.
 - Not applied: no product record changes needed. The towel record shows "Quick drying & odor free" wording; I did not repeat it.
+
+## Round 3 polish (2026-11-24)
+- Host message moved out of "What is not published" to its own H2 "Before your next booking: message to send the host", placed above "How sure we are" and "What is not published"; "news report" changed to "consumer-news item". Hero and pad pick not changed. lastReviewed 2026-11-24.

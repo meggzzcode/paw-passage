@@ -25,7 +25,7 @@ faqs:
   - q: How do I tell if the ground is too hot for my dog's paws?
     a: AKC says to hold your hand on the surface for ten seconds, and the Royal Kennel Club says seven seconds. Both say that if it is too hot for your hand it is too hot for your dog. The Royal Kennel Club adds that sun, wind and humidity change surface heat, so air temperature alone is a poor guide.
   - q: Is a cooling vest or a cooling pad better for travel?
-    a: "We found no independent test of either product named here. A soaked vest is made for wearing on walks and the pad for resting on, and both makers' warnings apply: the pad should not be left in sun, heat or a hot car. Shade, water and rest come first."
+    a: "A soaked vest is made for wearing on walks and the pad for resting on, and both makers' warnings apply: the pad should not be left in sun, heat or a hot car. Shade, water and rest come first."
   - q: How do I keep a dog cool at a rental without air conditioning?
     a: We found no source on safe indoor temperatures for dogs. Ask the host in writing whether the room the dog will sleep in is air conditioned and whether there is shaded outdoor space, and call a vet if the dog shows heat signs.
 relatedGuides:
@@ -171,7 +171,7 @@ You are packing the car for a week at a rental, the forecast is hot, and the dog
 - **Heatstroke is an emergency.** AKC lists heavy panting, rapid breathing and bright red gums and tongue as early signs, and pale or bluish gums and collapse as severe ones. [[1]](https://www.akc.org/expert-advice/health/heat-stroke-in-dogs/)
 - **Never leave a dog in a parked car.** AKC says not even for a short time, and Cornell says never unattended. [[1]](https://www.akc.org/expert-advice/health/heat-stroke-in-dogs/) [[2]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/heatstroke-medical-emergency)
 - **Surfaces matter.** AKC and the Royal Kennel Club both use a hand test on the ground before a walk. [[3]](https://www.akc.org/expert-advice/health/dog-paws-hot-pavement/) [[4]](https://www.royalkennelclub.com/hotpavements)
-- **Cooling gear has thin evidence.** The studies we found were small and on working dogs, and we found no independent test of the products named here. [[5]](https://www.mdpi.com/2076-2615/12/18/2347) [[6]](https://www.vetmed.ufl.edu/2012/04/26/uf-study-looks-at-role-of-vests-in-heat-related-illness-of-working-dogs)
+- **Water and shade come first, gear second.** Pack a bowl or bottle before a vest or pad; the order to buy in is [at the end](#what-to-do-and-buy-first).
 - **Water is the common thread.** AKC says to bring enough for your dog's size and activity and to plan breaks. [[1]](https://www.akc.org/expert-advice/health/heat-stroke-in-dogs/)
 
 ## Signs of heat illness, and what the sources say to do
@@ -210,7 +210,7 @@ The advice is consistent. AKC says never leave your dog in a parked car, even fo
 
 Laws change, and ALDF itself says to consult an official source. [[8]](https://aldf.org/hotcars) Check the statute for each state on your route. The law is not the reason to stay with the dog, though; the heat is.
 
-**Plan the day so the dog is never alone in the car (our suggestion).** Take turns at stops, choose food stops with outdoor seating, and do errands before you pick the dog up or after you drop the dog off. Our [two large dogs in one car guide](/guides/two-large-dogs-in-one-car) covers heat stops on the road.
+**Plan the day so the dog is never alone in the car (our suggestion).** Take turns at stops, choose food stops with outdoor seating, and do errands before you pick the dog up or after you drop the dog off. While driving, we found no source on safe cabin temperatures, so use the air conditioning, shade the car at stops and offer water often (our suggestions, not tested). Our [two large dogs in one car guide](/guides/two-large-dogs-in-one-car) covers heat stops on the road.
 
 ## Shade and surface heat
 
@@ -224,7 +224,7 @@ Cornell's prevention list adds shade when outside, frequent water, limiting hard
 
 Plain cool water is the baseline in the sources: AKC and Cornell both name wetting the dog with cool water for first aid. [[1]](https://www.akc.org/expert-advice/health/heat-stroke-in-dogs/) [[2]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/heatstroke-medical-emergency) Gear adds convenience, and the claims need reading carefully.
 
-What independent evidence we found is thin. A 2022 study in the journal Animals looked at military working dogs training in moderately hot conditions, with and without cooling vests (we could not open the full text to check its findings, so we do not report them). [[5]](https://www.mdpi.com/2076-2615/12/18/2347) A 2012 University of Florida study of seven working dogs found that cooling vests with rechargeable packs helped some dogs cool faster, and called the work preliminary. [[6]](https://www.vetmed.ufl.edu/2012/04/26/uf-study-looks-at-role-of-vests-in-heat-related-illness-of-working-dogs) Neither tested a pet dog on a beach holiday, and neither tested the products below.
+A 2022 study in the journal Animals looked at military working dogs training in moderately hot conditions, with and without cooling vests (we could not open the full text to check its findings, so we do not report them). [[5]](https://www.mdpi.com/2076-2615/12/18/2347) A 2012 University of Florida study of seven working dogs found that cooling vests with rechargeable packs helped some dogs cool faster, and called the work preliminary. [[6]](https://www.vetmed.ufl.edu/2012/04/26/uf-study-looks-at-role-of-vests-in-heat-related-illness-of-working-dogs) Neither tested a pet dog on a beach holiday, and neither tested the products below.
 
 | Option | What the source or maker says | What we could not find |
 | --- | --- | --- |
@@ -233,7 +233,7 @@ What independent evidence we found is thin. A 2022 study in the journal Animals 
 | Gel pad | Maker: pressure-activated, no water or electricity, cools up to 3 hours [[11]](https://www.thegreenpetshop.com/products/cool-pet-pad) | An independent measure of how cool it stays under a dog |
 | Shade and a cooled room | Cornell and AKC both put shade and cool spaces first | Nothing missing: this is the baseline |
 
-**Which one first.** If you walk or sit outdoors with your dog, a soaked vest is the item the small studies looked at (in other designs, on working dogs). If your dog rests indoors or in a cooled car, a pad is the comfort option, with the maker's warnings. For every trip, a bowl or bottle and shade come before either. None of these replaces working air conditioning or a vet's advice for a dog on the higher-risk lists.
+**Which one first.** If you walk or sit outdoors with your dog, a soaked vest is the item the small studies looked at. If your dog rests indoors or in a cooled car, a pad is the comfort option, with the maker's warnings. For every trip, a bowl or bottle and shade come before either. None of these replaces working air conditioning or a vet's advice for a dog on the higher-risk lists.
 
 ### A vest for walks and outdoor stops
 

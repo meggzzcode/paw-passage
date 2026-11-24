@@ -13,3 +13,7 @@
 ## For the lead
 - Please confirm hero `guide-keep-dog-cool` shows a dog drinking or otherwise cooling (review saw a dog nosing at foliage).
 - Pin row 15 should use the new title and a description echoing "keep a dog cool in the car".
+
+## Round 3 polish (2026-11-24)
+- Thin-evidence stance cut to the dek, the options table, the FAQ and "How sure we are": replaced the bullet with a "water and shade first" pointer, removed the "What independent evidence we found is thin" sentence, the "(in other designs, on working dogs)" aside and the repeated FAQ opener.
+- Added the one-line driving suggestion (labelled ours, no figure) under the parked-car section. lastReviewed 2026-11-24. Template items (vest icon, hero crop) not touched.

@@ -244,7 +244,7 @@ Treat it as a last resort, after the platform process. A card-privacy company's 
 
 ## What evidence helps against a pet damage claim?
 
-Dated, per-item photos from arrival and checkout are your strongest protection, and evidence cannot be created after the request arrives. In one 2026 news report, a guest with two large dogs and a $300 pet fee was asked for $90.47 about two weeks after checkout and argued the host's photos showed items before washing; no outcome was reported. [[11]](https://www.thecooldown.com/?p=815147) An anecdote, but it shows why per-item photos matter. Small claims are common: the examples we read ($64, $90.47, a $100 rug) were mostly around $100 or less, though people post what they choose to post.
+Dated, per-item photos from arrival and checkout are your strongest protection, and evidence cannot be created after the request arrives. In one 2026 consumer-news item, a guest with two large dogs and a $300 pet fee was asked for $90.47 about two weeks after checkout and argued the host's photos showed items before washing; no outcome was reported. [[11]](https://www.thecooldown.com/?p=815147) An anecdote, but it shows why per-item photos matter. Small claims are common: the examples we read ($64, $90.47, a $100 rug) were mostly around $100 or less, though people post what they choose to post.
 
 - [ ] On arrival, dated photos or video of floors, furniture, bedding, screens and fences, plus close-ups of flaws.
 - [ ] Save the listing, house rules and pet terms as they read when you booked.
@@ -257,6 +257,10 @@ Dated, per-item photos from arrival and checkout are your strongest protection, 
 ## What if the dog is a service animal?
 
 Airbnb's ground rules say service animals, and in some locations emotional support animals, are not pets. [[4]](https://www.airbnb.com/help/article/2894) Its pet-fee page says service animals are always free of pet fees, but if one damages property the host can still request payment under AirCover. [[7]](https://www.airbnb.com/help/article/3623) Message Airbnb or Vrbo support to ask how they treat your situation, and save the reply.
+
+## Before your next booking: message to send the host
+
+> Hi, we are bringing [number] dog(s) for [dates]. Please confirm in writing: (1) what the pet fee covers, including normal dog hair; (2) whether there is a separate fee for an undeclared pet and where it is written; (3) whether you keep move-in photos and will share them if a claim arises; (4) your process if there is a damage claim. Thank you.
 
 ## How sure we are
 
@@ -276,10 +280,6 @@ Airbnb's ground rules say service animals, and in some locations emotional suppo
 | Vrbo dispute timelines | Ask Vrbo support: "How long does a Contact Us damage dispute take?" |
 | Whether paying a different amount closes the request | Ask support in writing and save the reply |
 | Whether a chargeback affects your account | Ask Airbnb or Vrbo support |
-
-### Message to send the host before you book
-
-> Hi, we are bringing [number] dog(s) for [dates]. Please confirm in writing: (1) what the pet fee covers, including normal dog hair; (2) whether there is a separate fee for an undeclared pet and where it is written; (3) whether you keep move-in photos and will share them if a claim arises; (4) your process if there is a damage claim. Thank you.
 
 ## Before you respond
 

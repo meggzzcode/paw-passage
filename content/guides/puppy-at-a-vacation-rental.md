@@ -35,7 +35,7 @@ relatedGuides:
   - how-many-dogs-can-you-bring-to-a-vacation-rental
   - pet-friendly-vacation-rental-checklist
 relatedProducts:
-  - pet-parents-pawtect-pads
+  - pet-parents-pawtect-pads-24x36
   - midwest-icrate-dog-crate
   - kong-classic
   - petmate-precision-pet-soft-side-play-yard
@@ -208,9 +208,9 @@ So a pet fee is not damage cover. None of the five pages described a separate pu
 
 To lower the odds, use the [ASPCA](https://www.aspca.org/news/house-training-your-dog-or-puppy)'s approach: limit the puppy to "one or two rooms where you are able to see her," take her out often, and if there is a mess, "just clean it up and soldier on," because "a dog will not learn anything by being scolded for a past accident." A bathroom or tiled kitchen is easier to wipe than a rug, and you can close a door or use a baby gate.
 
-For the floor and the sleeping spot, the Pet Parents Pawtect Pads suit a puppy that is not yet reliably house-trained. The maker lists four sizes, from Extra Small (18 x 24 in) to Large (41 x 41 in), two pads to a pack, with an absorbency layer, a waterproof backing and a floor-gripping backing, all machine washable ([Pet Parents](https://petparentsbrand.com/products/washable-puppy-pads)). That is one set you wash and reuse instead of a stack of disposables, sized to the sleeping spot you measure. The card button opens the smallest (18 x 24 in) pack, so pick your size on the listing. Skip them if the rental has no washer access or your puppy shreds fabric.
+For the floor and the sleeping spot, the Pet Parents Pawtect Pads suit a puppy that is not yet reliably house-trained. The maker lists four sizes, from Extra Small (18 x 24 in) to Large (41 x 41 in), two pads to a pack, with an absorbency layer, a waterproof backing and a floor-gripping backing, all machine washable ([Pet Parents](https://petparentsbrand.com/products/washable-puppy-pads)). That is one set you wash and reuse instead of a stack of disposables, sized to the sleeping spot you measure. The card opens the 24 x 36 in pack (Small), two to a pack, which the listing states in grey and beige; measure the spot first. Skip them if the rental has no washer access or your puppy shreds fabric.
 
-{{pick:pet-parents-pawtect-pads|Washable pads for the sleeping spot|Reusable instead of disposable; confirm the size on the listing before you order.|https://petparentsbrand.com/products/washable-puppy-pads}}
+{{pick:pet-parents-pawtect-pads-24x36|Washable 24 x 36 in pads for the sleeping spot|Reusable instead of disposable; the listing states a 2-pack in 24 x 36 in.}}
 
 ## Crates and alone time
 

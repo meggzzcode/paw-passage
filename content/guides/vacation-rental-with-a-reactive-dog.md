@@ -31,6 +31,7 @@ relatedTools:
   - packing-list
 relatedProducts:
   - rabbitgoo-frosted-window-privacy-film
+  - amazon-basics-dog-crate-cover-36-inch
   - midwest-icrate-dog-crate
 sources:
   - title: Understanding Reactivity in Dogs
@@ -252,7 +253,11 @@ A dog watching movement through a window is the most common trigger on this page
 
 {{pick:rabbitgoo-frosted-window-privacy-film|For the window beside the door|Frosts the lower panes so the dog cannot track people and dogs outside; the listing states it removes without residue.}}
 
-**Crate: the quiet room starts here.** If your dog already settles in a crate at home, bring it; it turns any corner into the quiet room before you unload. The MidWest iCrate comes in seven sizes from 18 to 48 in, with a divider panel and removable leak-proof pan, and the maker says it folds flat ([MidWest Homes for Pets](https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/)). A wire crate is open on the sides, so drape a cover over it or face it to a wall. Skip it if your dog has never used a crate.
+**A crate cover: block the view into the crate, not the noise.** If your dog rests in a wire crate, the sides are open, so what it sees from the crate is the room. The Amazon Basics crate cover is made for 36 x 23 x 26 in wire crates (the listing states), with den-like privacy, zippered panels and a fit that slides on and off for washing. It blocks the view into the crate; it does not block noise, so a barker next door will still be heard. Check your crate is the 36-inch size first, and skip it if your dog does not use a crate or the crate is another size. A sheet over a crate does the same job.
+
+{{pick:amazon-basics-dog-crate-cover-36-inch|For a 36-inch wire crate|Made for 36 x 23 x 26 in wire crates, per the listing; blocks the view into the crate, not noise.}}
+
+**Crate: the quiet room starts here.** If your dog already settles in a crate at home, bring it; it turns any corner into the quiet room before you unload. The MidWest iCrate comes in seven sizes from 18 to 48 in, with a divider panel and removable leak-proof pan, and the maker says it folds flat ([MidWest Homes for Pets](https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/)). A wire crate is open on the sides, so drape a cover over it (see above) or face it to a wall. Skip it if your dog has never used a crate.
 
 {{pick:midwest-icrate-dog-crate|For a crate-trained dog|The maker lists seven sizes, so you can match your dog.|https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/}}
 

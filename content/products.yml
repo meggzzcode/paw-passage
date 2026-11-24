@@ -513,7 +513,7 @@ products:
       - "22oz Classic"
       - "22oz Original"
     cardSpecs:
-      - "Named 22oz bottle"
+      - "22oz-named bottle with bowl"
       - "Squeeze to fill the bowl"
       - "Leak-proof lock, per maker"
     categories:
@@ -1488,7 +1488,7 @@ products:
     aliases:
       - "Float Coat"
     cardSpecs:
-      - "XXS to XL, girth 13-42 in"
+      - "Telescoping neck closure"
       - "Low-profile lift handle"
       - "No certification named"
     categories:
@@ -1925,7 +1925,7 @@ products:
     cardSpecs:
       - "5 ft; 7 mm or 11 mm rope"
       - "Auto-locking carabiner"
-      - "No strength rating stated"
+      - "Leash strength not stated"
     categories:
       - trail-and-hiking
     summary: A 5 ft reflective rope leash with an auto-locking carabiner and an accessory loop for bags.
@@ -2146,7 +2146,7 @@ products:
     name: DFD Life Jacket
     brand: EzyDog
     cardSpecs:
-      - "XS 15-25 lbs to XL 90+ lbs"
+      - "XS to XL, girth 19-48 in"
       - "Padded back grab handle"
       - "No flotation rating given"
     categories:
@@ -3087,15 +3087,17 @@ products:
     cardSpecs:
       - "QR code and NFC"
       - "Silent slide-on silicone"
-      - "Fits collars 3/8 to 1 in"
+      - "One-time purchase (listing)"
     categories:
       - safety-id-first-aid
-    summary: "A QR code and NFC dog tag in silent slide-on silicone; the listing states it fits collars 3/8 to 1 in wide."
+    summary: "A QR code and NFC dog tag in silent slide-on silicone; the listing states a one-time purchase with no subscription fee and no app required, and that it fits collars 3/8 to 1 in wide."
     keySpecs:
       - "Listing states QR code and NFC"
       - "Listing states a silent, slide-on silicone design, size small"
       - "Listing states it fits collars 3/8 to 1 in wide"
-      - "Subscription terms unconfirmed"
+      - "Listing (bullets and Q&A) states a one-time purchase with no subscription fee and no app required"
+      - "The brand page could not be read; specs are from the Amazon listing only"
+      - "A tag only helps if the QR profile is filled in and the phone number is current"
     specSource:
       title: Amazon listing as read 2026-11-24
       url: https://www.amazon.com/dp/B0C9MCCDH9
@@ -3104,7 +3106,7 @@ products:
     retailerUrl: ""
     retailerName: ""
     lastVerified: 2026-11-24
-    active: false
+    active: true
     imageSource: ""
     imageRights: none
     affiliateProgram: ""
@@ -3215,3 +3217,185 @@ products:
       url: ""
     relatedGuides: []
     manufacturerClaimsVsIndependentTesting: none cited. Size 55 x 56 in matches the maker page; the maker page does not name colors (two swatches by product code).
+  - id: amazon-basics-dog-crate-cover-36-inch
+    name: "Amazon Basics Dog Crate Cover for 36 inch wire crates"
+    brand: "Amazon Basics"
+    aliases:
+      - "Amazon Basics crate cover"
+      - "Amazon Basics 36 inch crate cover"
+    cardSpecs:
+      - "For 36x23x26 in wire crates"
+      - "Zippered panels"
+      - "50% recycled polyester"
+    categories:
+      - comfort-and-cooling
+    summary: "A crate cover; the listing states it is made for 36 x 23 x 26 in wire crates, with den-like privacy, zippered panels and a slide-on, slide-off fit for washing."
+    keySpecs:
+      - "Listing states it is made for 36 x 23 x 26 in wire crates"
+      - "Listing states den-like privacy and zippered panels"
+      - "Listing states it slides on and off for washing"
+      - "Listing states 50% recycled polyester"
+      - "Blocks the view into the crate; the listing makes no noise claim"
+    specSource:
+      title: Amazon listing as read 2026-11-24
+      url: https://www.amazon.com/dp/B0DPQ4PFD6
+      publisher: Amazon
+      accessedOn: 2026-11-24
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-24
+    active: true
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides: []
+    manufacturerClaimsVsIndependentTesting: none cited. Specs are as the Amazon listing states them.
+  - id: gorilla-grip-dog-crate-cover-36-inch
+    name: "GORILLA GRIP Dog Crate Cover, 36 in"
+    brand: "GORILLA GRIP"
+    aliases:
+      - "Gorilla Grip crate cover"
+      - "Gorilla Grip 36 inch crate cover"
+    cardSpecs:
+      - "For 36 in crates, 1-3 doors"
+      - "Light-reducing fabric"
+      - "Flaps roll up on all sides"
+    categories:
+      - comfort-and-cooling
+    summary: "A crate cover; the listing states 36 x 23 x 25 in, light-reducing fabric, hook-and-loop fasteners and flaps that roll up on all sides."
+    keySpecs:
+      - "Listing states size 36 x 23 x 25 in"
+      - "Listing states light-reducing fabric and hook-and-loop fasteners"
+      - "Listing states flaps roll up on all sides"
+      - "Listing states it fits 1-, 2- or 3-door crates"
+      - "Seller is GORILLA COMMERCE; kept inactive as an alternative to the Amazon Basics cover"
+    specSource:
+      title: Amazon listing as read 2026-11-24
+      url: https://www.amazon.com/dp/B0C3WT8C69
+      publisher: Amazon
+      accessedOn: 2026-11-24
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-24
+    active: false
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides: []
+    manufacturerClaimsVsIndependentTesting: none cited. Specs are as the Amazon listing states them.
+  - id: joejoy-xl-dog-bed-41-42-inch-crates
+    name: "JOEJOY XL Dog Bed for Large Dogs up to 80 lbs, fits 41 and 42 in crates"
+    brand: "JOEJOY"
+    aliases:
+      - "JOEJOY XL dog bed"
+      - "JOEJOY large dog crate pad"
+    cardSpecs:
+      - "Fits 41 and 42 in crates"
+      - "Egg-crate foam, 4 in thick"
+      - "Waterproof liner, non-slip"
+    categories:
+      - comfort-and-cooling
+    summary: "A large-dog bed; the listing states 41 x 27 x 4 in, egg-crate foam, a washable zipper cover, a waterproof liner and a non-slip bottom, and the title states up to 80 lbs."
+    keySpecs:
+      - "Listing states size 41 x 27 x 4 in"
+      - "Title states for large dogs up to 80 lbs and fits 41 and 42 in crates"
+      - "Listing states egg-crate foam, a washable zipper cover, a waterproof liner and a non-slip bottom"
+      - "JOEJOY is a lesser-known brand; the maker page was not read"
+    specSource:
+      title: Amazon listing as read 2026-11-24
+      url: https://www.amazon.com/dp/B0FRMRRZV3
+      publisher: Amazon
+      accessedOn: 2026-11-24
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-24
+    active: true
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides: []
+    manufacturerClaimsVsIndependentTesting: none cited. Specs are as the Amazon listing states them.
+  - id: midwest-icrate-36-inch-double-door-crate
+    name: "MidWest iCrate 36-inch double door crate"
+    brand: "MidWest Homes for Pets"
+    aliases:
+      - "MidWest iCrate 36 inch"
+      - "iCrate 36 in double door"
+    cardSpecs:
+      - "Listing states 41-70 lb"
+      - "36.5 x 23.25 x 24.75 in"
+      - "Double door"
+    categories:
+      - pens-and-gates
+    summary: "A 36-inch folding wire crate with two doors; the listing states it is for dogs 41-70 lb and gives its size as 36.5 x 23.25 x 24.75 in."
+    keySpecs:
+      - "Listing states size 36 in, double door, for dogs 41-70 lb"
+      - "Listing states 36.5 x 23.25 x 24.75 in"
+      - "Other sizes are separate Amazon listings; 42 in (71-90 lb) is B000QFT1RC"
+      - "The listing is a home wire crate and makes no crash-test claim here"
+    specSource:
+      title: Amazon listing as read 2026-11-24
+      url: https://www.amazon.com/dp/B000QFT1R2
+      publisher: Amazon
+      accessedOn: 2026-11-24
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-24
+    active: true
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides: []
+    manufacturerClaimsVsIndependentTesting: none cited. Specs are as the Amazon listing states them.
+  - id: pet-parents-pawtect-pads-24x36
+    name: "Pawtect Pads 24x36 (2 pack)"
+    brand: "Pet Parents"
+    aliases:
+      - "Pawtect Pads 24x36"
+      - "Pet Parents Pawtect Pads 24x36"
+    cardSpecs:
+      - "24 x 36 in; 2 per pack"
+      - "Machine washable"
+      - "Floor-gripping backing"
+    categories:
+      - rental-cleanup
+    summary: "Machine-washable reusable pads sold two to a pack; this listing is the 24 x 36 in size in grey and beige, and the maker lists a floor-gripping backing."
+    keySpecs:
+      - "Listing states size 24 x 36 in, 2-pack, Grey & Beige"
+      - "Maker lists a triple-layer build with an absorbency layer, waterproof backing and floor-gripping backing"
+      - "Machine washable per the maker"
+      - "Other sizes are separate listings; the 18 x 24 in pack is on pet-parents-pawtect-pads"
+    specSource:
+      title: Amazon listing as read 2026-11-24
+      url: https://www.amazon.com/dp/B07H2RHVK4
+      publisher: Amazon
+      accessedOn: 2026-11-24
+    retailerUrl: ""
+    retailerName: ""
+    lastVerified: 2026-11-24
+    active: true
+    imageSource: ""
+    imageRights: none
+    affiliateProgram: ""
+    affiliateTrackingId: ""
+    alternativeRetailer:
+      name: ""
+      url: ""
+    relatedGuides: []
+    manufacturerClaimsVsIndependentTesting: none cited. Specs are as the Amazon listing states them.

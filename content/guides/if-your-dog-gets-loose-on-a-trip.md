@@ -44,6 +44,7 @@ relatedProducts:
   - fi-series-3-plus
   - petcube-gps-tracker
   - ruffwear-the-beacon-dog-safety-light
+  - whoseid-qr-nfc-dog-tag-silicone-small
 sources:
   - title: "Lost Pet Tips"
     url: https://www.akcreunite.org/lostpettips/
@@ -218,7 +219,11 @@ If you must leave for work or a flight, give a friend, your host or the registry
 
 Most of this takes ten minutes and no purchase.
 
-**Put a tag on the collar.** The [ASPCA](https://www.aspca.org/pet-care/general-pet-care/finding-lost-pet) says to include your name and current phone number, even for indoor pets. For travel, add a number you will answer and a second one for a friend or relative. Engrave or stamp it rather than use a sticker, and check the ring for wear; tags can fall off or become hard to read ([AKC Reunite](https://www.akcreunite.org/idtags/)). More ID items are in [safety, ID and first aid gear](/gear/safety-id-first-aid).
+**Put a tag on the collar.** The [ASPCA](https://www.aspca.org/pet-care/general-pet-care/finding-lost-pet) says to include your name and current phone number, even for indoor pets. For travel, add a number you will answer and a second one for a friend or relative. Engrave or stamp it rather than use a sticker, and check the ring for wear; tags can fall off or become hard to read ([AKC Reunite](https://www.akcreunite.org/idtags/)). 
+
+If you want a tag that is silent on the collar, the WhoseID is a slide-on silicone tag with a QR code and NFC. The listing states a one-time purchase with no subscription and no app required; we could not read the brand's own page, so that is the listing's word. A tag like this only helps if the QR profile is filled in and the phone number is current, and a finder needs a phone that can scan it. Keep an engraved tag on the collar too. More ID items are in [safety, ID and first aid gear](/gear/safety-id-first-aid).
+
+{{pick:whoseid-qr-nfc-dog-tag-silicone-small|A silent slide-on tag with a QR code|The listing states a one-time purchase with no subscription; fill in the QR profile and keep the phone number current.}}
 
 **Check the microchip record.** A chip has no power source and is not a GPS; a scanner activates it for a few seconds, and the number is like a blank tag until it is registered with your details ([AKC Reunite](https://www.akcreunite.org/importance/)). [AKC Reunite](https://www.akcreunite.org/travel/) says to verify your enrollment is up to date before you travel.
 

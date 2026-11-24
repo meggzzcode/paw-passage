@@ -38,8 +38,8 @@ relatedProducts:
   - kurgo-enhanced-strength-tru-fit
   - lucky-duck-lucky-kennel
   - lucky-duck-lucky-kennel-large
-  - rabbitgoo-suv-dog-car-barrier
-  - petsafe-happy-ride-dog-barrier
+  - midwest-icrate-36-inch-double-door-crate
+  - joejoy-xl-dog-bed-41-42-inch-crates
 relatedTools:
   - will-my-dog-be-accepted
   - packing-list
@@ -228,6 +228,12 @@ Each of these matches a setup above; the makers' claims are theirs unless a test
 {{pick:lucky-duck-lucky-kennel-large|For each dog of 70 to 110 lb, in a wagon or SUV|Large: 35.75 x 22 x 26.5 in interior, 45 lb kennel, integrated tie-downs. Strap kit sold separately.|https://www.luckyduck.com/lucky-kennel-large}}
 
 {{pick:lucky-duck-lucky-kennel|For each dog under 70 lb, in a wagon or SUV|Intermediate: 20.5 in interior width, 38 lb kennel, integrated tie-downs.|https://www.luckyduck.com/products/lucky-kennel}}
+
+**A wire crate and a pad for a large dog at the rental.** The strapped crates above are for the car. A wire crate for the rental is a different job, and its sizes are listed by dog weight: the MidWest iCrate 36-inch double door lists for dogs 41-70 lb at 36.5 x 23.25 x 24.75 in (the listing states), and the 42-inch is listed for 71-90 lb. That is a home crate with no crash claim, so do not use it as the car restraint. Choose the size from the weight on the listing, and confirm your dog can stand, turn and lie down in it ([ASPCA](https://www.aspca.org/pet-care/general-pet-care/travel-safety-tips)). For the floor of a 41 or 42 in crate, the JOEJOY XL bed lists 41 x 27 x 4 in, egg-crate foam, a washable cover and a waterproof liner, and its title states up to 80 lb. JOEJOY is a lesser-known brand and we could not read a maker page, so treat it as a listing-only pick, and skip it for a dog above 80 lb.
+
+{{pick:midwest-icrate-36-inch-double-door-crate|A 41-70 lb example for the rental|The listing states 41-70 lb and 36.5 x 23.25 x 24.75 in; a home crate, no crash claim.|https://www.amazon.com/dp/B000QFT1R2}}
+
+{{pick:joejoy-xl-dog-bed-41-42-inch-crates|For the floor of a 41 or 42 in crate|The title states up to 80 lb and fits 41 and 42 in crates; lesser-known brand, listing only.|https://www.amazon.com/dp/B0FRMRRZV3}}
 
 **Harnesses for dogs under 75 lb.** [Ruffwear](https://ruffwear.com/products/load-up-dog-car-harness)'s Load Up has girth sizes XXS to L/XL (32 to 42 inches), a loop that attaches to the existing seat belt, and no stated weight limit. [Ruffwear](https://ruffwear.ca/pages/load-up-car-harness-testing-design)'s testing page cites sled tests with 25, 45 and 75 pound mannequins at MGA Research, which it calls independent, and says the harness was not tested to the CPS protocol. Pick it for padding; skip it if you will only buy a CPS-certified one.
 

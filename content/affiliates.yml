@@ -482,7 +482,7 @@ links:
     url: https://www.amazon.com/dp/B000QFWCK0?tag={amazonTrackingId}
     approved: true
     kind: product
-    notes: "Amazon ASIN B000QFWCK0 (MEDIUM); variant: Brand/model match but many sizes and single/double door each have own ASIN. 30in double door chosen as a common size. Others: 42in double B000QFT1RC. Cowork 2026-11-24 flag: the default offer on this 30-inch listing is Amazon Resale (used/open-box), so condition is NOT confirmed new; link left unchanged. The 36-inch B000QFT1R2 (Buy New by Amazon.com; for dogs 41-70 lb per the listing) was checked but not added as a record because the existing iCrate record covers all sizes in one record."
+    notes: "Amazon ASIN B000QFWCK0 (MEDIUM); variant: Brand/model match but many sizes and single/double door each have own ASIN. 30in double door chosen as a common size. Others: 42in double B000QFT1RC. Cowork 2026-11-24 flag: the default offer on this 30-inch listing is Amazon Resale (used/open-box), so condition is NOT confirmed new; link left unchanged. Task 16 verified Buy New listings (all Amazon.com, buy box yes): 18 in B000TZ59ES up to 10 lb; 22 in B000QFUNWY up to 15 lb; 24 in B000QFWCJ6 12-20 lb; 36 in B000QFT1R2 41-70 lb (36.5 x 23.25 x 24.75 in; wired as midwest-icrate-36-inch-double-door-crate); 42 in B000QFT1RC 71-90 lb. 48 in B000QFWCLY has no buy box. 30 in B000QFWCK0 (this link) defaults to Amazon Resale; kept as is."
   - id: soggy-doggy-super-shammy-towel
     network: Amazon Associates
     url: https://www.amazon.com/dp/B007679312?tag={amazonTrackingId}
@@ -512,7 +512,7 @@ links:
     url: https://www.amazon.com/dp/B07DZSF2C2?tag={amazonTrackingId}
     approved: true
     kind: product
-    notes: "Amazon ASIN B07DZSF2C2 (MEDIUM); variant: 18x24 2-pack. Other sizes: 17in round B07ZVGXKT1, 34x36 B0C5N8MNWZ (wired as pet-parents-pawtect-pads-34x36). Unresolved: 24x36 buy box not checked."
+    notes: "Amazon ASIN B07DZSF2C2 (MEDIUM); variant: 18x24 2-pack. Other sizes: 17in round B07ZVGXKT1, 34x36 B0C5N8MNWZ (wired as pet-parents-pawtect-pads-34x36). 24x36 2-pack B07H2RHVK4 verified 2026-11-24 and wired as pet-parents-pawtect-pads-24x36."
   - id: midwest-lifestages-dog-crate
     network: Amazon Associates
     url: https://www.amazon.com/dp/B0002AT3M4?tag={amazonTrackingId}
@@ -758,7 +758,7 @@ links:
     url: https://www.amazon.com/dp/B0C9MCCDH9?tag={amazonTrackingId}
     approved: true
     kind: product
-    notes: "Amazon ASIN B0C9MCCDH9. Cowork-verified 2026-11-24: buy box present, listing read; specs from the Amazon listing, not the maker page. Subscription terms unconfirmed (QR tags may need a subscription); keep inactive until the owner decides."
+    notes: "Amazon ASIN B0C9MCCDH9. Cowork-verified 2026-11-24: buy box present, listing read; specs from the Amazon listing, not the maker page. Task 16: the listing's bullets and Q&A state a one-time purchase, no subscription fee, no app required; maker site unreadable, so product is active on listing facts only."
   - id: rabbitgoo-suv-dog-car-barrier
     network: Amazon Associates
     url: https://www.amazon.com/dp/B0CKQV4R3C?tag={amazonTrackingId}
@@ -777,3 +777,33 @@ links:
     approved: true
     kind: product
     notes: "Amazon ASIN B00164SZPQ. Cowork-verified 2026-11-24: buy box present, listing read; specs from the Amazon listing, not the maker page. Standard model, not the Extended 63-in (that is B07CRTPX8D on kurgo-rover-hammock-extended-width)."
+  - id: amazon-basics-dog-crate-cover-36-inch
+    network: Amazon Associates
+    url: https://www.amazon.com/dp/B0DPQ4PFD6?tag={amazonTrackingId}
+    approved: true
+    kind: product
+    notes: "Amazon ASIN B0DPQ4PFD6. Cowork-verified 2026-11-24 (task 16): buy box present, listing read; specs from the Amazon listing, not the maker page."
+  - id: gorilla-grip-dog-crate-cover-36-inch
+    network: Amazon Associates
+    url: https://www.amazon.com/dp/B0C3WT8C69?tag={amazonTrackingId}
+    approved: true
+    kind: product
+    notes: "Amazon ASIN B0C3WT8C69. Cowork-verified 2026-11-24 (task 16): buy box present, listing read; specs from the Amazon listing, not the maker page. Inactive alternative; seller GORILLA COMMERCE."
+  - id: joejoy-xl-dog-bed-41-42-inch-crates
+    network: Amazon Associates
+    url: https://www.amazon.com/dp/B0FRMRRZV3?tag={amazonTrackingId}
+    approved: true
+    kind: product
+    notes: "Amazon ASIN B0FRMRRZV3. Cowork-verified 2026-11-24 (task 16): buy box present, listing read; specs from the Amazon listing, not the maker page. Lesser-known brand; title states up to 80 lb. Paw Inspired B0CJXRVMX5 was skipped."
+  - id: midwest-icrate-36-inch-double-door-crate
+    network: Amazon Associates
+    url: https://www.amazon.com/dp/B000QFT1R2?tag={amazonTrackingId}
+    approved: true
+    kind: product
+    notes: "Amazon ASIN B000QFT1R2. Cowork-verified 2026-11-24 (task 16): buy box present, listing read; specs from the Amazon listing, not the maker page. Buy New by Amazon.com; listing states 41-70 lb, 36.5 x 23.25 x 24.75 in."
+  - id: pet-parents-pawtect-pads-24x36
+    network: Amazon Associates
+    url: https://www.amazon.com/dp/B07H2RHVK4?tag={amazonTrackingId}
+    approved: true
+    kind: product
+    notes: "Amazon ASIN B07H2RHVK4. Cowork-verified 2026-11-24 (task 16): buy box present, listing read; specs from the Amazon listing, not the maker page. 24x36 2-pack, Grey & Beige; buy box present."

@@ -27,3 +27,11 @@ For each find: ASIN, exact title, seller, buy box yes/no, availability, price ba
 One table per part: item | ASIN | page title | same product? | variant | seller | buy box? | availability | price band | notes. Then a short summary: which existing links are fine, which need a different size or ASIN, and which first-aid products you recommend adding. Save as amazon-checks-and-first-aid-results.md (private folder). Do not commit anything to GitHub.
 
 (Append new checks below this line.)
+
+## Part D: pricing evidence the researchers could not reach (public pages, owner's browser; added 2026-11-24)
+Record exact numbers, dates and URLs; mark anything blocked. No accounts, no bids, no messages.
+1. Flippa Data Insights (https://flippa.com/data-insights) or any public Flippa sold-listings view: filter to website listings under $5,000, content or affiliate, no revenue or under $50 a month, and record at least 20 SOLD prices with site age, article or page count, traffic, and monetization if shown.
+2. NameBio (https://namebio.com): search .com sales containing "paws" and "passage", "pawsand", "pet" + "travel", "dogfriendly"; list 15 sales with price, date and venue.
+3. DNJournal sales reports and Sedo or Afternic published sold lists for pet and travel .com names: any sales of $500 to $3,000 for comparable names.
+4. GoDaddy or Atom appraisal for pawsandpassage.com (read-only; record the number and say it is an automated estimate).
+5. USPTO trademark search (https://tmsearch.uspto.gov): search "paws passage" and "paws and passage" and near terms in classes 35, 39, 41, 43, 44 (pet services, travel, directory services); record each live or dead record's owner name, status and goods or services.

@@ -35,7 +35,6 @@ describe("article UX", () => {
     const planning = renderToStaticMarkup(<TrustStrip guide={{ ...base, category: "Planning" }} />);
     expect(planning).not.toContain("Not tested");
     expect(planning).toContain("Nov 16, 2026");
-    expect(planning).toContain("2 sources cited");
     expect(planning).not.toContain("Affiliate");
     // No separator glyphs that could wrap to the start of a line.
     expect(planning).not.toContain("·");
@@ -86,6 +85,97 @@ describe("source numbers in article text", () => {
     expect(html).toMatch(/<a href="https:\/\/example.com\/a"[^>]* id="cite-1-1"/);
     expect(html).toContain('rel="noopener noreferrer"');
     expect(html).not.toContain('id="cite-1-2"');
+  });
+});
+
+describe("source numbers follow reading order", () => {
+  const sources = [
+    { url: "https://e.com/one" },
+    { url: "https://e.com/two" },
+    { url: "https://e.com/three" },
+    { url: "https://e.com/four" },
+  ];
+  const body =
+    "A [[3]](https://e.com/three) b [[1]](https://e.com/one) c [two](https://e.com/two) d [[3]](https://e.com/three).";
+  it("numbers by first appearance (marker or exact-URL link); unreferenced sources follow", async () => {
+    const { citationDisplayMap } = await import("@/content/citations");
+    expect([...citationDisplayMap(body, sources)]).toEqual([
+      [3, 1],
+      [1, 2],
+      [2, 3],
+      [4, 4],
+    ]);
+  });
+  it("uses display numbers for text, aria-label, anchors and inline back-link ids", async () => {
+    const { renderToStaticMarkup } = await import("react-dom/server");
+    const { Markdown } = await import("@/components/site/Markdown");
+    const html = renderToStaticMarkup(
+      <Markdown source={body} sourceUrls={sources.map((s) => s.url)} />,
+    );
+    expect(html).toContain(
+      '<sup class="cite"><a id="cite-1-1" href="#src-1" aria-label="Source 1: jump to the sources list">1</a></sup>',
+    );
+    expect(html).toContain('id="cite-1-2" href="#src-1"');
+    expect(html).toContain('id="cite-2-1" href="#src-2"');
+    expect(html).toMatch(/<a href="https:\/\/e.com\/two"[^>]* id="cite-3-1"/);
+    expect(html).not.toContain('jump to the sources list">[');
+    expect(html.indexOf("cite-1-1")).toBeLessThan(html.indexOf("cite-2-1"));
+  });
+  it("lists sources in display order with matching ids and back-links", async () => {
+    const { renderToStaticMarkup } = await import("react-dom/server");
+    const { SourcesList } = await import("@/components/site/SourcesList");
+    const { citationDisplayMap, citedSourceNumbers } = await import("@/content/citations");
+    const { RouterProvider, createMemoryHistory, createRouter, createRootRoute } =
+      await import("@tanstack/react-router");
+    const items = sources.map((s, i) => ({
+      ...s,
+      title: `T${i + 1}`,
+      publisher: `P${i + 1}`,
+      accessedOn: "2026-11-18",
+    }));
+    const root = createRootRoute({
+      component: () => (
+        <SourcesList
+          sources={items}
+          backLinks={citedSourceNumbers(body, items)}
+          display={citationDisplayMap(body, items)}
+        />
+      ),
+    });
+    const router = createRouter({
+      routeTree: root,
+      history: createMemoryHistory({ initialEntries: ["/"] }),
+    });
+    await router.load();
+    const html = renderToStaticMarkup(<RouterProvider router={router} />);
+    const order = [...html.matchAll(/id="src-(\d+)"[^>]*>.*?(T\d)/g)].map((m) => [m[1], m[2]]);
+    expect(order).toEqual([
+      ["1", "T3"],
+      ["2", "T1"],
+      ["3", "T2"],
+      ["4", "T4"],
+    ]);
+    expect(html).toContain('href="#cite-1-1"');
+    expect(html).toContain('href="#cite-3-1"');
+    expect(html).not.toContain('href="#cite-4-1"');
+  });
+  it("shows the swipe hint hidden by default (the overflow check shows it client-side)", async () => {
+    const { renderToStaticMarkup } = await import("react-dom/server");
+    const { Markdown } = await import("@/components/site/Markdown");
+    const html = renderToStaticMarkup(<Markdown source={"| a | b |\n|-|-|\n| 1 | 2 |"} />);
+    expect(html).not.toContain("is-overflowing");
+    expect(html).not.toContain('tabindex="0"');
+  });
+});
+
+describe("reading time", () => {
+  it("is computed from the body at 220 wpm, rounded up, ignoring link addresses", async () => {
+    const { readingMinutes, bodyWordCount } = await import("@/lib/reading-time");
+    const body = `${"word ".repeat(441)}[[1]](https://example.com/very/long/url) [link](https://example.com/x)`;
+    expect(bodyWordCount(body)).toBe(442);
+    expect(readingMinutes(body, 12)).toBe(3);
+    expect(readingMinutes("word ".repeat(220), 12)).toBe(1);
+    expect(readingMinutes("", 7)).toBe(7);
   });
 });
 

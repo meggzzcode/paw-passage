@@ -4,6 +4,8 @@ import { AFFILIATE_BOOK_LABEL, AFFILIATE_BUY_LABEL } from "@/lib/disclosure";
 import { Markdown } from "@/components/site/Markdown";
 import { getApprovedLink } from "@/content/affiliates";
 import { products } from "@/content/gear";
+import { AffiliateNotice } from "@/components/site/AffiliateNotice";
+import { AMAZON_DISCLOSURE } from "@/content/affiliates";
 import { productLinkId } from "@/content/affiliate-usage";
 
 describe("affiliate button labels", () => {
@@ -15,16 +17,35 @@ describe("affiliate button labels", () => {
     expect(AFFILIATE_BUY_LABEL + AFFILIATE_BOOK_LABEL).not.toMatch(/sponsored/i);
   });
 
-  it("every affiliate pick card carries the label after its button, and none keeps the old price line", () => {
+  it("pick cards put the buy button before Details and carry no per-button label (the page notice discloses)", () => {
     const affiliate = products.filter((p) => getApprovedLink(productLinkId(p)));
     expect(affiliate.length).toBeGreaterThan(0);
     for (const p of affiliate) {
       const html = renderToStaticMarkup(<Markdown source={`{{pick:${p.id}}}`} />);
       if (!html.includes("data-pick")) continue;
-      expect(html).toContain("Affiliate link · We may earn a commission if you ");
-      expect(html).toContain("data-affiliate-label");
+      expect(html).not.toContain("data-affiliate-label");
+      expect(html).not.toContain("We may earn a commission if you ");
       expect(html).not.toContain("Check the current price");
-      expect(html.indexOf("data-affiliate-label")).toBeGreaterThan(html.indexOf('rel="sponsored'));
+      if (html.includes("Details and specs"))
+        expect(html.indexOf('rel="sponsored')).toBeLessThan(html.indexOf("Details and specs"));
     }
+  });
+
+  it("the page-level notice still carries the Amazon sentence", async () => {
+    const { RouterProvider, createMemoryHistory, createRouter, createRootRoute } =
+      await import("@tanstack/react-router");
+    const { affiliateUsage } = await import("@/content/affiliate-usage");
+    const withAmazon = products.find(
+      (p) => affiliateUsage({ body: `{{pick:${p.id}}}`, gear: [] }).anyAmazon,
+    );
+    expect(withAmazon).toBeDefined();
+    const guide = { body: `{{pick:${withAmazon!.id}}}`, gear: [] };
+    const root = createRootRoute({ component: () => <AffiliateNotice guide={guide} /> });
+    const router = createRouter({
+      routeTree: root,
+      history: createMemoryHistory({ initialEntries: ["/"] }),
+    });
+    await router.load();
+    expect(renderToStaticMarkup(<RouterProvider router={router} />)).toContain(AMAZON_DISCLOSURE);
   });
 });

@@ -4,7 +4,7 @@ import { guideHero, srcSetForKey } from "@/lib/images";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { Markdown, articleHeadings } from "@/components/site/Markdown";
 import { SourcesList } from "@/components/site/SourcesList";
-import { citedSourceNumbers } from "@/content/citations";
+import { citedSourceNumbers, citationDisplayMap } from "@/content/citations";
 import { RelatedProducts } from "@/components/site/RelatedProducts";
 import { GearPicks } from "@/components/site/GearPicks";
 import { AffiliateNotice } from "@/components/site/AffiliateNotice";
@@ -13,6 +13,7 @@ import { PreviewBadge } from "@/components/site/StatusBadge";
 import { pageHead, breadcrumbLd, jsonLd, absoluteUrl, isoDate } from "@/lib/seo";
 import { site } from "@/config/site";
 import { TableOfContents } from "@/components/site/TableOfContents";
+import { readingMinutes } from "@/lib/reading-time";
 import { pickIdsInBody } from "@/lib/product-display";
 import { ArticleActions, TrustStrip } from "@/components/site/ArticleActions";
 
@@ -117,7 +118,7 @@ function GuidePage() {
             guide={g}
             lead={
               <>
-                By {g.author} · {g.readingMinutes} min read
+                By {g.author} · {readingMinutes(g.body, g.readingMinutes)} min read
               </>
             }
           />
@@ -209,7 +210,11 @@ function GuidePage() {
           )}
           <section className="mt-16 rounded-xl bg-muted p-6 text-sm">
             <h2 className="font-display text-xl">Sources and how we researched this</h2>
-            <SourcesList sources={g.sources} backLinks={citedSourceNumbers(g.body, g.sources)} />
+            <SourcesList
+              sources={g.sources}
+              backLinks={citedSourceNumbers(g.body, g.sources)}
+              display={citationDisplayMap(g.body, g.sources)}
+            />
           </section>
           {g.relatedProducts && g.relatedProducts.length > 0 && (
             <RelatedProducts productIds={g.relatedProducts} excludeIds={shownAsPicks} />

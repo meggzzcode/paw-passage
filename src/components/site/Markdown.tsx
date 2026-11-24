@@ -1,9 +1,10 @@
+import { useEffect, useRef } from "react";
+import { citationDisplayMap } from "@/content/citations";
 import { productSpecCardHtml } from "@/components/site/ProductSpecCard";
 import { marked, type Tokens, type Token, type TokensList, type Renderer } from "marked";
 import { cn } from "@/lib/utils";
 import { getApprovedLink } from "@/content/affiliates";
 import { trackProductClick } from "@/lib/analytics";
-import { AFFILIATE_BUY_LABEL, AFFILIATE_BOOK_LABEL } from "@/lib/disclosure";
 import { getProduct } from "@/content/gear";
 import { resolveProductLink } from "@/content/gear-links";
 import { isMonetized } from "@/content/affiliate-usage";
@@ -22,7 +23,13 @@ const safeUrl = (href: string | null | undefined) =>
  * marker (and the first inline link to a source's exact URL) gets an id so the Sources entry can link back to it.
  * Markdown() resets this before each render and rendering is synchronous, so module state is safe here.
  */
-const cite = { count: new Map<number, number>(), urls: new Map<string, number>() };
+const cite = {
+  count: new Map<number, number>(),
+  urls: new Map<string, number>(),
+  /** original source number -> display number (first-appearance order); a number it does not know shows as written. */
+  display: new Map<number, number>(),
+};
+const shown = (n: number) => cite.display.get(n) ?? n;
 const nextCiteId = (n: number): string => {
   const k = (cite.count.get(n) ?? 0) + 1;
   cite.count.set(n, k);
@@ -50,11 +57,11 @@ marked.use({
       // A source number written as [[5]](url) is shown as a small, quiet superscript instead of a full-size "[5]" link.
       const marker = /^\[(\d{1,3})\]$/.exec(text.trim());
       if (marker) {
-        const n = Number(marker[1]);
+        const n = shown(Number(marker[1]));
         return `<sup class="cite"><a${nextCiteId(n)} href="#src-${n}" aria-label="Source ${n}: jump to the sources list">${n}</a></sup>`;
       }
       // An inline link to a source's exact URL (a publisher name linked in the sentence) also counts as citing it.
-      const srcN = cite.urls.get(url);
+      const srcN = cite.urls.get(url); // already a display number
       const idAttr = srcN ? nextCiteId(srcN) : "";
       return `<a href="${escapeHtml(url)}"${idAttr}${title ? ` title="${escapeHtml(title)}"` : ""}>${text}</a>`;
     },
@@ -125,7 +132,6 @@ marked.use({
 <div class="mt-3">${productSpecCardHtml(product)}</div>
 <p class="mt-2 text-sm text-muted-foreground">${escapeHtml(product.summary)}</p>${t.note ? `\n<p class="mt-2 text-sm"><span class="font-medium">Why we picked it:</span> ${escapeHtml(t.note)}${t.sourceUrl ? ` <a href="${escapeHtml(t.sourceUrl)}" target="_blank" rel="noopener noreferrer" class="underline">Source</a>` : ""}</p>` : ""}
 <p class="mt-4 flex flex-wrap items-center gap-4"><a${attrs} href="${escapeHtml(link.url)}" target="_blank" rel="${escapeHtml(link.rel)}" class="inline-flex h-11 items-center rounded-full bg-terracotta-button px-6 text-base font-semibold text-terracotta-foreground hover:brightness-95" style="text-decoration:none;color:#fff">${escapeHtml(link.label)}</a>${cat ? `<a href="/gear/${escapeHtml(cat)}#${escapeHtml(product.id)}" class="text-sm underline">Details and specs</a>` : ""}</p>
-${link.kind === "affiliate" ? `<p class="mt-3 text-xs text-foreground/75" data-affiliate-label>${escapeHtml(/vrbo/i.test(link.network ?? "") ? AFFILIATE_BOOK_LABEL : AFFILIATE_BUY_LABEL)}</p>\n` : ""}
 </aside>
 `;
       },
@@ -204,7 +210,12 @@ export function Markdown({
   sourceUrls?: string[];
 }) {
   cite.count = new Map();
-  cite.urls = new Map((sourceUrls ?? []).map((u, i) => [u, i + 1] as const));
+  const srcs = (sourceUrls ?? []).map((url) => ({ url }));
+  cite.display = citationDisplayMap(source, srcs);
+  cite.urls = new Map();
+  srcs.forEach((s, i) => {
+    if (!cite.urls.has(s.url)) cite.urls.set(s.url, shown(i + 1));
+  });
   const { tokens } = lexWithIds(source);
   linkProductMentions(tokens);
   const html = marked
@@ -212,7 +223,7 @@ export function Markdown({
     // Wide tables scroll sideways inside their own box instead of widening the page on phones.
     .replace(
       /<table>/g,
-      '<p class="table-swipe-hint no-print" aria-hidden="true">Swipe sideways to see all columns</p><div class="table-scroll max-w-full overflow-x-auto" tabindex="0" role="region" aria-label="Table, scrolls sideways"><table>',
+      '<p class="table-swipe-hint no-print" aria-hidden="true">Swipe sideways to see all columns</p><div class="table-scroll max-w-full overflow-x-auto" role="region" aria-label="Table, scrolls sideways"><table>',
     )
     // A task-list item shows its checkbox, not a bullet as well.
     .replace(/<li><input (checked=""\s)?disabled=""/g, '<li class="task-item"><input $1disabled=""')
@@ -221,6 +232,36 @@ export function Markdown({
       /<a href="(https?:\/\/[^"]+)"/g,
       '<a href="$1" target="_blank" rel="noopener noreferrer"',
     );
+  return <ArticleHtml html={html} className={className} />;
+}
+
+/** The rendered article. Hooks live here (not in Markdown()) so Markdown() stays a plain function that tests may call directly. */
+function ArticleHtml({ html, className }: { html: string; className: string | undefined }) {
+  const ref = useRef<HTMLDivElement>(null);
+  // Show the swipe hint (and make the box keyboard-scrollable) only for tables that really overflow their box.
+  // Server-side the hint stays hidden, so nothing shifts when this runs after hydration.
+  useEffect(() => {
+    const root = ref.current;
+    if (!root) return;
+    const boxes = Array.from(root.querySelectorAll<HTMLElement>(".table-scroll"));
+    const apply = (box: HTMLElement) => {
+      const over = box.scrollWidth > box.clientWidth + 1;
+      box.previousElementSibling?.classList.toggle("is-overflowing", over);
+      if (over) box.setAttribute("tabindex", "0");
+      else box.removeAttribute("tabindex");
+    };
+    boxes.forEach(apply);
+    if (typeof ResizeObserver === "undefined") return;
+    const ro = new ResizeObserver((entries) =>
+      entries.forEach((e) => apply(e.target as HTMLElement)),
+    );
+    boxes.forEach((b) => {
+      ro.observe(b);
+      const t = b.querySelector("table");
+      if (t) ro.observe(t);
+    });
+    return () => ro.disconnect();
+  }, [html]);
   const onClick = (e: import("react").MouseEvent<HTMLDivElement>) => {
     const a = (e.target as HTMLElement).closest?.("a[data-aff]") as HTMLAnchorElement | null;
     if (a)
@@ -233,6 +274,7 @@ export function Markdown({
   };
   return (
     <div
+      ref={ref}
       className={cn("prose-article", className)}
       onClick={onClick}
       dangerouslySetInnerHTML={{ __html: html }}

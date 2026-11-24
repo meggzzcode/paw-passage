@@ -1,4 +1,5 @@
 import { Link } from "@tanstack/react-router";
+import { readingMinutes } from "@/lib/reading-time";
 import type { Guide } from "@/content/types";
 import { guideHero } from "@/lib/images";
 import { isPublic } from "@/content/guides";
@@ -62,7 +63,8 @@ export function GuideCard({
         </h3>
         <p className="mt-2 text-sm text-muted-foreground">{guide.dek}</p>
         <p className="mt-3 text-xs text-muted-foreground">
-          {guide.readingMinutes} min read · Reviewed {guide.lastReviewed}
+          {readingMinutes(guide.body, guide.readingMinutes)} min read · Reviewed{" "}
+          {guide.lastReviewed}
         </p>
       </div>
     </Link>

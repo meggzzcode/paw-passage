@@ -16,10 +16,17 @@ export interface SourceItem {
 export function SourcesList({
   sources,
   backLinks,
+  display,
 }: {
   sources: SourceItem[];
+  /** Original (frontmatter, 1-based) numbers of the sources the text cites. */
   backLinks: ReadonlySet<number>;
+  /** Original number -> display number (first-appearance order, see citationDisplayMap). Omitted: frontmatter order. */
+  display?: ReadonlyMap<number, number>;
 }) {
+  const items = sources
+    .map((s, i) => ({ s, cited: backLinks.has(i + 1), n: display?.get(i + 1) ?? i + 1 }))
+    .sort((a, b) => a.n - b.n);
   const ref = useRef<HTMLDetailsElement>(null);
   useEffect(() => {
     const openForHash = () => {
@@ -60,8 +67,8 @@ export function SourcesList({
           Show the {sources.length} sources
         </summary>
         <ol className="sources-list mt-3 list-decimal space-y-2 pl-6">
-          {sources.map((s, i) => (
-            <li key={s.url} id={`src-${i + 1}`} className="scroll-mt-28 rounded-sm pl-1">
+          {items.map(({ s, n, cited }) => (
+            <li key={s.url} id={`src-${n}`} className="scroll-mt-28 rounded-sm pl-1">
               <span className="text-muted-foreground">{s.publisher}.</span>{" "}
               <a
                 href={s.url}
@@ -72,12 +79,12 @@ export function SourcesList({
                 {s.title}
               </a>{" "}
               <span className="whitespace-nowrap text-muted-foreground">(read {s.accessedOn})</span>
-              {backLinks.has(i + 1) && (
+              {cited && (
                 <>
                   {" "}
                   <a
-                    href={`#cite-${i + 1}-1`}
-                    aria-label={`Back to text, where source ${i + 1} is first cited`}
+                    href={`#cite-${n}-1`}
+                    aria-label={`Back to text, where source ${n} is first cited`}
                     className="inline-flex min-h-6 min-w-6 items-center gap-1 whitespace-nowrap text-primary underline"
                   >
                     <span aria-hidden="true">&#8617;&#xFE0E;</span> back to text

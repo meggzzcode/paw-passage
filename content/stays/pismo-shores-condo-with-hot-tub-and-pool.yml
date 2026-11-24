@@ -1,0 +1,33 @@
+status: unverified
+name: Pismo Shores condo with hot tub and pool
+type: vacation-home
+state: california
+town: pismo-beach
+summary: Two-bedroom condo in Pismo Beach; up to 1 dog, 45 lb limit, hot tub.
+description: 'A condo in Pismo Beach, California, that sleeps 6 with 2 bedrooms and 1 bathroom. Setting, as the listing describes it: pismo Shores, on the beach. On the Vrbo page, the amenity list includes a hot tub. Dog rules we read: 1 non-shedding dog under 45 lb; No retrievers or large shedding breeds; Crate when alone; pet fee applies. We read this from the public Vrbo listing on 2026-11-24 and have not confirmed it with the host.'
+sleeps: 6
+bedrooms: 2
+bathrooms: 1
+amenityGroups:
+- title: Outdoors
+  items:
+  - Hot tub
+  - Shared pool
+locationNote: Pismo Shores, on the beach. Pismo Beach, California.
+maxDogs: 1
+weightLimitLbs: 45
+largeDogsOk: 'no'
+fencedYard: not-confirmed
+privateOutdoor: not-confirmed
+petFee: not-confirmed
+breedRestrictions: 'yes'
+beach: true
+mountain: false
+hotTub: 'yes'
+houseRules:
+- 'Pets: 1 non-shedding dog under 45 lb (Vrbo listing, read 2026-11-24)'
+- No retrievers or large shedding breeds
+- Crate when alone; pet fee applies
+- The pet fee amount is not recorded here; check the Vrbo listing before booking.
+photoPermission: false
+sourceUrl: https://www.vrbo.com/1797012

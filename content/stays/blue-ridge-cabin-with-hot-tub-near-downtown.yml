@@ -1,0 +1,32 @@
+status: unverified
+name: Blue Ridge cabin with hot tub near downtown
+type: cabin
+state: georgia
+town: blue-ridge
+summary: Two-bedroom cabin in Blue Ridge; up to 2 dogs, 50 lb limit, hot tub.
+description: 'A cabin in Blue Ridge, Georgia, that sleeps 4 with 2 bedrooms and 1 bathroom. Setting, as the listing describes it: downtown Blue Ridge, walkable to the scenic railway. On the Vrbo page, the amenity list includes a hot tub. Dog rules we read: Up to 2 dogs, 50 lb or less; One-time non-refundable pet fee; House-trained dogs; off beds and furniture. We read this from the public Vrbo listing on 2026-11-24 and have not confirmed it with the host.'
+sleeps: 4
+bedrooms: 2
+bathrooms: 1
+amenityGroups:
+- title: Outdoors
+  items:
+  - Hot tub
+locationNote: Downtown Blue Ridge, walkable to the scenic railway. Blue Ridge, Georgia.
+maxDogs: 2
+weightLimitLbs: 50
+largeDogsOk: 'no'
+fencedYard: not-confirmed
+privateOutdoor: not-confirmed
+petFee: not-confirmed
+breedRestrictions: not-confirmed
+beach: false
+mountain: true
+hotTub: 'yes'
+houseRules:
+- 'Pets: Up to 2 dogs, 50 lb or less (Vrbo listing, read 2026-11-24)'
+- One-time non-refundable pet fee
+- House-trained dogs; off beds and furniture
+- The pet fee amount is not recorded here; check the Vrbo listing before booking.
+photoPermission: false
+sourceUrl: https://www.vrbo.com/2826060

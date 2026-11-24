@@ -1,0 +1,30 @@
+status: unverified
+name: Big Bear Moonridge cabin with spa and fenced deck
+type: cabin
+state: california
+town: big-bear-lake
+summary: Three-bedroom cabin in Big Bear Lake; pets stay free, no dog limit listed, partly fenced, hot tub.
+description: 'A cabin in Big Bear Lake, California, that sleeps 5 with 3 bedrooms and 1 bathroom. Setting, as the listing describes it: moonridge, Big Bear Lake. On the Vrbo page, the amenity list includes a hot tub and it notes: enclosed, fenced deck. Dog rules we read: Listing says pets stay free; No dog limit stated. We read this from the public Vrbo listing on 2026-11-24 and have not confirmed it with the host.'
+sleeps: 5
+bedrooms: 3
+bathrooms: 1
+amenityGroups:
+- title: Outdoors
+  items:
+  - Hot tub
+  - Deck
+locationNote: Moonridge, Big Bear Lake. Big Bear Lake, California.
+largeDogsOk: not-confirmed
+fencedYard: partial
+fenceNotes: Enclosed, fenced deck
+privateOutdoor: 'yes'
+petFee: none
+breedRestrictions: not-confirmed
+beach: false
+mountain: true
+hotTub: 'yes'
+houseRules:
+- 'Pets: Listing says pets stay free (Vrbo listing, read 2026-11-24)'
+- No dog limit stated
+photoPermission: false
+sourceUrl: https://www.vrbo.com/207329

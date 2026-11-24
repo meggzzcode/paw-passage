@@ -1,0 +1,26 @@
+status: unverified
+name: Santa Cruz historic beach cottage near Seabright Beach
+type: cottage
+state: california
+town: santa-cruz
+summary: Three-bedroom cottage in Santa Cruz; up to 1 dog.
+description: 'A cottage in Santa Cruz, California, that sleeps 6 with 3 bedrooms and 2 bathrooms. Setting, as the listing describes it: seabright area, three houses from the beach. Dog rules we read: 1 dog with property-manager approval; Non-refundable pet fee. We read this from the public Vrbo listing on 2026-11-24 and have not confirmed it with the host.'
+sleeps: 6
+bedrooms: 3
+bathrooms: 2
+locationNote: Seabright area, three houses from the beach. Santa Cruz, California.
+maxDogs: 1
+largeDogsOk: not-confirmed
+fencedYard: not-confirmed
+privateOutdoor: not-confirmed
+petFee: not-confirmed
+breedRestrictions: not-confirmed
+beach: true
+mountain: false
+hotTub: not-confirmed
+houseRules:
+- 'Pets: 1 dog with property-manager approval (Vrbo listing, read 2026-11-24)'
+- Non-refundable pet fee
+- The pet fee amount is not recorded here; check the Vrbo listing before booking.
+photoPermission: false
+sourceUrl: https://www.vrbo.com/1327986

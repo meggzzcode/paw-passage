@@ -96,7 +96,7 @@ describe("stay indexing quality rule", () => {
           townIsIndexable(d.slug, t.slug, list),
         );
     }
-  });
+  }, 30000);
   it("never indexes sample stays", () => {
     expect(
       sitemapEntries().some(

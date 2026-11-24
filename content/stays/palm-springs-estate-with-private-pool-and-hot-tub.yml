@@ -1,0 +1,31 @@
+status: unverified
+name: Palm Springs estate with private pool and hot tub
+type: vacation-home
+state: california
+town: palm-springs
+summary: Five-bedroom vacation home in Palm Springs; up to 2 dogs, hot tub.
+description: 'A vacation home in Palm Springs, California, that sleeps 12 with 5 bedrooms and 4 bathrooms. Setting, as the listing describes it: palm Springs. On the Vrbo page, the amenity list includes a hot tub. Dog rules we read: Up to 2 small dogs; Pet fee applies. We read this from the public Vrbo listing on 2026-11-24 and have not confirmed it with the host.'
+sleeps: 12
+bedrooms: 5
+bathrooms: 4
+amenityGroups:
+- title: Outdoors
+  items:
+  - Hot tub
+  - Private pool
+locationNote: Palm Springs. Palm Springs, California.
+maxDogs: 2
+largeDogsOk: 'no'
+fencedYard: not-confirmed
+privateOutdoor: 'yes'
+petFee: not-confirmed
+breedRestrictions: not-confirmed
+beach: false
+mountain: false
+hotTub: 'yes'
+houseRules:
+- 'Pets: Up to 2 small dogs (Vrbo listing, read 2026-11-24)'
+- Pet fee applies
+- The pet fee amount is not recorded here; check the Vrbo listing before booking.
+photoPermission: false
+sourceUrl: https://www.vrbo.com/3350213

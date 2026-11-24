@@ -1,0 +1,32 @@
+status: unverified
+name: Little River home with garden and BBQ
+type: vacation-home
+state: california
+town: little-river
+summary: Three-bedroom vacation home in Little River; up to 2 dogs, 50 lb limit.
+description: 'A vacation home in Little River, California, that sleeps 6 with 3 bedrooms and 2 bathrooms. Setting, as the listing describes it: little River, minutes from Van Damme State Beach. Dog rules we read: Up to 2 well-behaved dogs, 50 lb or under; Nightly pet fee; disclose pets at booking; Crate if left alone; off furniture. We read this from the public Vrbo listing on 2026-11-24 and have not confirmed it with the host.'
+sleeps: 6
+bedrooms: 3
+bathrooms: 2
+amenityGroups:
+- title: Outdoors
+  items:
+  - Patio and garden
+locationNote: Little River, minutes from Van Damme State Beach. Little River, California.
+maxDogs: 2
+weightLimitLbs: 50
+largeDogsOk: 'no'
+fencedYard: not-confirmed
+privateOutdoor: 'yes'
+petFee: not-confirmed
+breedRestrictions: not-confirmed
+beach: false
+mountain: false
+hotTub: not-confirmed
+houseRules:
+- 'Pets: Up to 2 well-behaved dogs, 50 lb or under (Vrbo listing, read 2026-11-24)'
+- Nightly pet fee; disclose pets at booking
+- Crate if left alone; off furniture
+- The pet fee amount is not recorded here; check the Vrbo listing before booking.
+photoPermission: false
+sourceUrl: https://www.vrbo.com/5507992

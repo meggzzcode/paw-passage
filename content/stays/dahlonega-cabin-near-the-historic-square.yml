@@ -1,0 +1,24 @@
+status: unverified
+name: Dahlonega cabin near the historic square
+type: cabin
+state: georgia
+town: dahlonega
+summary: Three-bedroom cabin in Dahlonega; dog fee stated, no dog limit listed.
+description: 'A cabin in Dahlonega, Georgia, that sleeps 8 with 3 bedrooms and 2 bathrooms. Setting, as the listing describes it: dahlonega historic district. Dog rules we read: Pets allowed for a per-pet fee. We read this from the public Vrbo listing on 2026-11-24 and have not confirmed it with the host.'
+sleeps: 8
+bedrooms: 3
+bathrooms: 2
+locationNote: Dahlonega historic district. Dahlonega, Georgia.
+largeDogsOk: not-confirmed
+fencedYard: not-confirmed
+privateOutdoor: not-confirmed
+petFee: not-confirmed
+breedRestrictions: not-confirmed
+beach: false
+mountain: true
+hotTub: not-confirmed
+houseRules:
+- 'Pets: Pets allowed for a per-pet fee (Vrbo listing, read 2026-11-24)'
+- The pet fee amount is not recorded here; check the Vrbo listing before booking.
+photoPermission: false
+sourceUrl: https://www.vrbo.com/3518618

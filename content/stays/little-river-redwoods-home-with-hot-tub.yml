@@ -1,0 +1,32 @@
+status: unverified
+name: Little River redwoods home with hot tub
+type: vacation-home
+state: california
+town: little-river
+summary: Three-bedroom vacation home in Little River; up to 1 dog, 40 lb limit, hot tub.
+description: 'A vacation home in Little River, California, that sleeps 8 with 3 bedrooms and 2 bathrooms. Setting, as the listing describes it: little River, near Van Damme State Park. On the Vrbo page, the amenity list includes a hot tub. Dog rules we read: 1 well-behaved dog, 40 lb or under; Nightly pet fee; disclose pets at booking; Crate if left alone; off furniture. We read this from the public Vrbo listing on 2026-11-24 and have not confirmed it with the host.'
+sleeps: 8
+bedrooms: 3
+bathrooms: 2
+amenityGroups:
+- title: Outdoors
+  items:
+  - Hot tub
+locationNote: Little River, near Van Damme State Park. Little River, California.
+maxDogs: 1
+weightLimitLbs: 40
+largeDogsOk: 'no'
+fencedYard: not-confirmed
+privateOutdoor: not-confirmed
+petFee: not-confirmed
+breedRestrictions: not-confirmed
+beach: false
+mountain: false
+hotTub: 'yes'
+houseRules:
+- 'Pets: 1 well-behaved dog, 40 lb or under (Vrbo listing, read 2026-11-24)'
+- Nightly pet fee; disclose pets at booking
+- Crate if left alone; off furniture
+- The pet fee amount is not recorded here; check the Vrbo listing before booking.
+photoPermission: false
+sourceUrl: https://www.vrbo.com/4968841

@@ -91,6 +91,8 @@ The planner at `/tools/packing-list` sends visitors into Gear in three ways, all
 
 ## How to replace affiliate IDs
 
+> Updated 2026-11-24: the full, ordered procedure (all seller identifiers, the Impact value now in `content/settings.yml`, what breaks if links are removed, the stay-directory mode, `node scripts/audit-seller-ids.mjs`) is `docs/BUYER_AFFILIATE_TRANSITION.md`; use it first. The Amazon and per-product notes below remain correct. Configured links are not proof of approval.
+
 Where the IDs live: `content/settings.yml` (`amazonTrackingId`, `ga4MeasurementId`, `stay22AccountId`) and `content/affiliates.yml` (one entry per product or stay link: `id`, `network`, `url`, `approved`, `kind`, `notes`). Product records store no affiliate URL; they name an entry.
 
 **Amazon (all products at once).** Every Amazon entry's URL ends in `?tag={amazonTrackingId}`. Change the one value `amazonTrackingId` in `content/settings.yml` to your own Associates store ID (format `yourname-20`; the schema rejects a URL or a value with spaces). Every Amazon link on the site is retagged at the next build. An empty value hides every Amazon link and the Amazon disclosure sentence, which is the safe state until your account is approved (tested in `src/test/amazon-tracking-id.test.ts`). The ASINs in the URLs stay valid for any Associates account; check each product still has a buy box in your own account before you rely on it. The current ID is `pawspassage-20`, the seller's, and does not transfer.

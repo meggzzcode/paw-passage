@@ -1,5 +1,8 @@
 # Monetization readiness (verified 2026-11-24)
 
+> Superseded in part (2026-11-24): crawl counts, per-button labels and the 95-URL sitemap here are older. Current numbers: `docs/buyer/ROUTE_AND_ASSET_COUNTS.md`; replacing seller IDs and the stay-directory mode: `docs/BUYER_AFFILIATE_TRANSITION.md`. <!-- SUPERSEDED-NOTE -->
+
+
 Purpose: tell a buyer exactly what earns, what is only configured, what they must own, and how to swap IDs. No revenue figures are given on purpose. A configured ID or link here is NOT evidence of an active, approved partnership: approval needs account access (see section 8).
 
 Method. Repo at HEAD 882d8a3 (committed state; the working tree was mid-edit by other workers and did not build). The frozen build on port 4175 was not running, so I built HEAD into a scratch copy (`NITRO_PRESET=node-server vite build`) and crawled that with Playwright (107 pages: sitemap plus every link on the /stays, /guides, /gear, /destinations, /dogs and /tools indexes, so non-indexed stays are included). Counts below are from that crawl and may drift as the guides and templates change.

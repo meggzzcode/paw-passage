@@ -1,5 +1,8 @@
 # Sale readiness (planning notes)
 
+> Superseded (2026-11-24): scores and counts (30 guides, 32 listed stays, 53 products) are from 2026-11-17 to 11-23. Current state and verdict: `docs/FINAL_SALE_CODE_RELEASE.md`; counts: `docs/buyer/ROUTE_AND_ASSET_COUNTS.md`. <!-- SUPERSEDED-NOTE -->
+
+
 Scored 2026-11-18, reasons updated 2026-11-23 to the verified facts in `docs/BUYER_ASSET_INVENTORY.md`; scoring rules unchanged. Scored from the evidence in `docs/recovery/09-traffic-monetization-valuation.md` (section C). These are the owner's planning notes. They are **not a valuation, not market evidence and not a guarantee** of any price.
 
 ## Score (1 to 10; for risk, 10 means lowest risk)

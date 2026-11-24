@@ -1,5 +1,8 @@
 # Gear shopper experience: design spec and self-scoring
 
+> Note (2026-11-24): the 95-URL figure and the Vrbo-label status here are older; current counts are in `docs/buyer/ROUTE_AND_ASSET_COUNTS.md`. <!-- SUPERSEDED-NOTE -->
+
+
 Date: 2026-11-24. Repository HEAD `13a7ce1`. **Not deployed:** Netlify builds are stopped, so everything here describes the repository and the final build served locally on port 4199, not the live site.
 
 Companion files: `docs/GEAR_REDESIGN_BRIEF.md` (the owner's brief), `docs/GEAR_REDESIGN_IMPLEMENTATION.md` (component contract, how curation works, how to add a product, how to replace affiliate IDs), `docs/review/FINAL-GEAR-REVIEW.md` (the independent review), `docs/buyer/FINAL_QA_CRAWL_2026-11-24.md` (the crawl). Labels: VERIFIED (checked on the HEAD build on 2026-11-24 or in a named file), REVIEW (an independent reviewer's finding on an earlier build), UNVERIFIED (not checked).

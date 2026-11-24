@@ -1,5 +1,8 @@
 # SEO 30-day tracking plan
 
+> Note (2026-11-24): the plan is valid, but nothing is deployed, so day 0 starts only after the owner deploys and verifies (`docs/cowork/FINAL_PRE_SALE_BROWSER_QA.md`). <!-- SUPERSEDED-NOTE -->
+
+
 Start date for the clock: the day the final build is deployed (not before). Until then nothing below can be measured against the new pages. All numbers must come from Search Console or GA4 exports; none are estimated here.
 
 ## Baseline (historical, old build, not current)

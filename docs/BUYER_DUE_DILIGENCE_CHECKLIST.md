@@ -1,5 +1,7 @@
 # Buyer due-diligence checklist: private evidence index
 
+Updated 2026-11-24 for repo `HEAD` `9797221`. **Nothing is deployed**; production is a stale build until the owner deploys, so every live-site row below stays UNVERIFIED until the post-deploy checks in `docs/cowork/FINAL_PRE_SALE_BROWSER_QA.md` pass.
+
 Purpose: list the evidence a buyer of a roughly $1,500, pre-revenue starter site can reasonably ask for, where each item is kept **privately**, who collects it and whether it exists yet. This file is the **sanitized index only**. It is committed to the repo; the evidence itself is not.
 
 Rules
@@ -14,14 +16,14 @@ Rules
 | Fact | Evidence kept privately | Executor | Status |
 |---|---|---|---|
 | Domain `pawsandpassage.com`: registrar start 2026-11-16, valid to 2027-11-17, auto-renew OFF pending owner decision | Registrar domain list and overview page (redact account email); a dated WHOIS/RDAP lookup saved as PDF | Owner / Cowork (read-only) | OWNER (facts supplied by the owner; no screenshot in the repo) |
-| Google URL Inspection showed 21 of 23 inspected pages indexed | Search Console URL Inspection results with the inspected URL list and date | Owner / Cowork | OWNER |
-| Search Console reported 236 impressions and 0 clicks over 28 days | Performance report screenshot with the date range visible | Owner / Cowork | OWNER |
+| HISTORICAL baseline (older production build): Google URL Inspection showed 21 of 23 inspected pages indexed | Search Console URL Inspection results with the inspected URL list and date | Owner / Cowork | OWNER |
+| HISTORICAL baseline (older production build): Search Console reported 236 impressions and 0 clicks over 28 days | Performance report screenshot with the date range visible | Owner / Cowork | OWNER |
 | Netlify free plan; builds stopped by the owner; about 65 credits left (15 per deploy) | Netlify plan and usage page (redact team and email) | Owner | OWNER |
-| Counts of routes, guides, data and tests | `docs/buyer/ROUTE_AND_ASSET_COUNTS.md` plus the saved build and test output | Claude | VERIFIED 2026-11-24 at HEAD `56552fc` (re-run after the final commit) |
-| All 3 tools work | Playwright run recorded in `docs/BUYER_ASSET_INVENTORY.md` section 6 | Claude | VERIFIED 2026-11-24 |
+| Counts of routes, guides, data and tests | `docs/buyer/ROUTE_AND_ASSET_COUNTS.md` (commands recorded there) | Claude | VERIFIED 2026-11-24 at HEAD `9797221` (771 tests in 59 files, `tsc` and `eslint --quiet` clean, build passed, 319 `verify-site` checks passed, 103 sitemap URLs). Re-run after any later commit |
+| The 3 tools work | `docs/BUYER_ASSET_INVENTORY.md` section 6, packing planner tests and browser runs in `docs/PACKING_PLANNER_QA.md` | Claude | VERIFIED on a local build 2026-11-24; real-device checks pending |
 | Hero photos are credited Unsplash photos; no third-party (Amazon) images | `src/content/image-credits.ts`, grep of product cards; Unsplash License text | Claude | VERIFIED in repo; license reading (usage rights, not ownership or exclusivity) is general, not legal advice |
 | AI-assisted content is disclosed | `/editorial-standards` page text | Claude | VERIFIED |
-| Per-button affiliate labels and Amazon sentence on every page with Amazon links | Crawl result in the counts file | Claude | VERIFIED (wording not legally reviewed) |
+| One affiliate notice and the Amazon sentence on every page with an Amazon link; no per-button labels on guides and Gear | Crawl in the counts file: 49 of 49 Amazon pages carry the sentence | Claude | VERIFIED on the local build (wording not legally reviewed). **Open:** Vrbo stay buttons keep a label and `/affiliate-disclosure` still says every button has one (owner decision) |
 
 ## B. Evidence checklist
 
@@ -31,8 +33,8 @@ Rules
 | 2 | Auto-renew decision recorded | Domain expires 2027-11-17 if nobody renews | Owner turns it on before the push or tells the buyer in writing | Owner | Private | OWNER |
 | 3 | Domain not locked, registrant contact is the seller | Push can complete | Registrar page check | Owner / Cowork | Private | UNVERIFIED |
 | 4 | Live site loads over HTTPS, www and apex behave | Buyer's first click | Fresh check with `node scripts/verify-site.mjs https://www.pawsandpassage.com` before listing | Claude | Repo summary only | UNVERIFIED (last live check pre-dates the stopped builds; the live site may differ from HEAD) |
-| 5 | Repository ownership and history (commit count, first and last commit date, default branch) | Code title; 435 commits, first commit 2026-11-16 at HEAD | `git log` summary | Claude | Repo summary | VERIFIED |
-| 6 | Build and test proof on the final commit | Shows it runs | Re-run `bunx vitest run`, `tsc`, `vite build`; save summaries | Claude | Repo summary | VERIFIED at `56552fc` (498 tests, 40 files, build passed); repeat on the final commit |
+| 5 | Repository ownership and history (commit count, first and last commit date, default branch) | Code title; 518 commits at `9797221`, first commit 2026-11-16 | `git log` summary | Claude | Repo summary | VERIFIED |
+| 6 | Build and test proof on the final commit | Shows it runs | Re-run `bunx vitest run`, `tsc`, `vite build`; save summaries | Claude | Repo summary | VERIFIED at `9797221` (771 tests, 59 files; `tsc`, `eslint --quiet` and build passed); repeat on the final commit |
 | 7 | Hosting proof: Netlify project, deploy history, plan | Shows how it is hosted and what it costs | Screenshot of Deploys and plan page | Owner / Cowork | Private | OWNER |
 | 8 | Portability proof: clean install and build without any Lovable account | Removes a "paid Lovable usage" worry | `docs/HOSTING_PORTABILITY_REPORT.md` (three builds passed on 2026-11-24) | Claude | Repo | VERIFIED |
 | 9 | Lovable GitHub sync disconnected | Nothing from Lovable can push to the live branch | Owner disconnects in Lovable project settings; screenshot of the disconnected state | Owner | Private | UNVERIFIED (current state could not be read) |
@@ -48,8 +50,12 @@ Rules
 | 19 | Seller identity verification | Marketplace requirement | Marketplace flow only; never send ID to a buyer | Owner | Marketplace | OWNER |
 | 20 | Transfer plan and package index | Reduces closing risk | `docs/TRANSFER_CHECKLIST.md`, `docs/buyer/TRANSFER_PACKAGE_INDEX.md` | Claude | Repo | VERIFIED |
 | 21 | Rights statement (copyright assignment, bill of sale) | Clean title | Written text reviewed by the owner's adviser | Owner | Private | OWNER |
-| 22 | Pages CMS opens the repo and a save becomes a commit | Buyer will edit this way | First-edit test (`BUYER_HANDOVER.md` section 6); not done | Owner or buyer | n/a | UNVERIFIED |
-| 23 | Screenshots of the live site | Buyers skim | `docs/flip/evidence/` (sanitized) | Cowork / Claude | Repo | UNVERIFIED (re-capture after the final deploy) |
+| 22 | Pages CMS opens the repo and a save becomes a commit | Buyer will edit this way | The "Pages CMS" steps in `docs/cowork/FINAL_PRE_SALE_BROWSER_QA.md`; not done. Structure and tests pass locally; the authenticated flow is untested | Owner or buyer | n/a | UNVERIFIED |
+| 23 | Screenshots of the live site | Buyers skim | Capture list in `docs/BUYER_WALKTHROUGH_SCRIPT.md` (private folder) | Cowork / Owner | Private | UNVERIFIED (capture after the final deploy) |
+| 24 | Editorial quality evidence, stated honestly | A buyer will ask whether the guides are good | `docs/FINAL_EDITORIAL_RELEASE.md`: independent reader mean **7.1 of 10**, "ready with minor fixes". The reader scores were taken **before the final fixes** and the corrected text was not re-scored. Report it as a reviewer's reading of the pre-fix text, not as a quality score for the current text and not as marketing | Claude | Repo | VERIFIED as a record; no re-score exists |
+| 25 | Seller identifiers inventory | Shows exactly what the buyer must replace | `node scripts/audit-seller-ids.mjs` (5 kinds remain: Amazon tag, GA4 ID, Impact value, Pinterest URL, 79 Vrbo deeplinks) and `docs/BUYER_AFFILIATE_TRANSITION.md` | Claude | Repo | VERIFIED 2026-11-24; the buyer runs `--expect-none` after replacing |
+| 26 | Real-device and assistive-technology checks | Buyers on phones | Safari/iPhone and VoiceOver steps in `docs/cowork/FINAL_PRE_SALE_BROWSER_QA.md` | Owner / Cowork | Private | UNVERIFIED |
+| 27 | Production matches the repository | The listing describes `HEAD` | Deploy, then the post-deploy section of the QA file (sitemap 103, things-to-do 200, retired URL 301) | Owner / Cowork | Private | UNVERIFIED: production is a stale build from about 2026-11-23 |
 
 ## C. Evidence a buyer cannot be given
 

@@ -1,5 +1,8 @@
 # Product links guide: how a product earns, why 9 were switched off, how to change it
 
+> Counts here (30 published guides, 53 active products) are older; current counts are in `docs/buyer/ROUTE_AND_ASSET_COUNTS.md`. The monthly link-check procedure is still valid. <!-- SUPERSEDED-NOTE -->
+
+
 Last updated 2026-11-19.
 
 ## 1. How a product earns on this site

@@ -1,95 +1,124 @@
-# Route and asset counts (recount of 2026-11-24, final)
+# Route and asset counts (recount of 2026-11-24 at `9797221`)
 
-Purpose: one place for every headline number a buyer or a listing may quote, with the method, so the numbers can be re-run. Nothing here is a traffic, revenue, ranking or valuation figure. This file replaces the earlier recount made at `56552fc`; the older numbers (498 tests, 57,011 guide words, 452 sources, 37 stay files, 53 active products, per-button affiliate labels) are superseded.
+Purpose: one place for every headline number a buyer or a listing may quote, with the commands that produced it, so each number can be re-run. Nothing here is a traffic, revenue, ranking, valuation or buyer-interest figure.
 
-## Status of the site
+This file replaces the recount made at `13a7ce1`. Superseded numbers that must not be quoted: 498 and 605 and 610 tests; 57,011 and 81,901 and 76,890 guide words; 452 and 491 sources; 37 stay files and "32 listed"; 53 active products; the 95-URL and 98-URL sitemaps; a "15-item" packing list; per-button affiliate labels on guides and Gear; calculators (retired); numbered citations.
 
-**The final build is NOT deployed.** The owner stopped Netlify builds to preserve credits, so the live site still serves an older deploy. Every number below describes the repository at `HEAD` `13a7ce1` (pushed to `main`) and a production build of it served locally. No live site was fetched. Any listing claim about the live site must be re-checked by Cowork after the first deploy.
+## Status of the site: read this first
 
-## Method
+- **Nothing is deployed.** Production (https://www.pawsandpassage.com) serves a build from about 2026-11-23 (`ced2c93`), 214 commits behind `HEAD` when it was compared (`docs/SEO_ROOT_CAUSE_INVESTIGATION.md`): 98 sitemap URLs, the retired weight-limit guide still 200, the town "things to do" pages 404, old guide titles. **Every number below describes the repository at `HEAD` and a production build of it served locally on this machine.** No claim about the live site is made. The first deploy must be verified (`docs/cowork/FINAL_PRE_SALE_BROWSER_QA.md`, section "Production deploy verification").
+- Evidence types: COUNTED (script or command below), BUILT (from the locally served production build), OWNER (supplied by the owner, not checkable here).
 
-- Source: committed code at HEAD `13a7ce1` (508 commits; the first is 2026-11-16).
-- Build: production build (`NITRO_PRESET=node-server`) served by `node` on port 4199.
-- Sitemap: `curl /sitemap.xml` from that build, grouped by first path segment. The sitemap comes from `src/lib/sitemap-entries.ts`.
-- Page checks: each of the 103 sitemap URLs fetched from the build and parsed for status, canonical, H1 count, title length, description length and `noindex`; every guide page parsed for body links; the stays directory parsed for listed stay links, and each listed stay's robots meta read.
-- Data counts: YAML read from `content/products.yml`, `content/affiliates.yml` and `content/stays/*.yml`; guide frontmatter and `src/content/guides/*.ts` read directly.
-- Tests: `bunx vitest run` at HEAD.
-- Word counts: whitespace-split words of each published guide's Markdown body (frontmatter, FAQs, Sources and page chrome excluded; card directives and link syntax included). The rendered-page counts in the QA crawl are higher.
+## Commands used (re-runnable)
 
-## Sitemap: 103 URLs
+```
+git archive HEAD | tar -x -C <scratch>        # clean copy of HEAD; copy node_modules in (or bun install)
+cd <scratch>
+bunx vitest run                                # tests
+bunx tsc --noEmit                              # types
+bunx eslint . --quiet                          # lint
+NITRO_PRESET=node-server bunx vite build       # production build
+PORT=4581 node .output/server/index.mjs &      # serve it
+curl -s localhost:4581/sitemap.xml | grep -o '<loc>[^<]*' | wc -l
+node scripts/verify-site.mjs http://localhost:4581 --site-url https://www.pawsandpassage.com
+node scripts/audit-seller-ids.mjs              # seller identifiers (report mode, exit 0)
+node scripts/test-netlify-ignore.mjs           # build-skip rule, 20 change types
+bun scripts/gear-coverage-report.ts            # packing-to-Gear coverage (regenerates docs/PACKING_GEAR_COVERAGE.md)
+```
+
+The content counts were produced by a throwaway Vitest file (not committed, run in the scratch copy) that imports the site's own rules (`allGuides`, `isPublic`, `visibleStays`, `indexableStays`, `sitemapEntries`, `products`, `liveCategories`, `tripCollections`, `affiliateLinks`, `imageCredits`, `destinations`, `allTownReads`, `dogTypes`) and prints the totals, so the counts use the same code paths the site uses. Page-level counts (links, labels, titles, canonicals) come from fetching every one of the 103 sitemap URLs from the served build and parsing the HTML.
+
+## Result of the checks at `9797221` (scratch copy of HEAD)
+
+| Check | Result |
+|---|---|
+| `bunx vitest run` | **771 tests passed in 59 files**, 0 failed (55 s) |
+| `bunx tsc --noEmit` | exit 0, no errors |
+| `bunx eslint . --quiet` | exit 0, no errors (warnings are hidden by `--quiet`) |
+| `NITRO_PRESET=node-server bunx vite build` | exit 0 |
+| `node scripts/verify-site.mjs` on the served build | **319 checks passed, 0 failed** |
+| Sitemap | **103 URLs**, all HTTP 200, all self-canonical on `https://www.pawsandpassage.com`, exactly one H1, no `noindex`, every title 60 characters or fewer (after decoding `&amp;`), every description 120 to 160 characters |
+| Spot checks | the 8 `.../things-to-do` URLs: 200; `/guides/vacation-rentals-with-no-dog-weight-limit`: 301 to the large-dog guide; `/tools/cost-calculator`, `/tools/pet-cost-check`, `/tools/host-questions`: 301; `/pet-policies-38-managers.csv`: 200 |
+
+## Sitemap: 103 URLs (BUILT and COUNTED, the two agree)
 
 | Type | URLs | Detail |
 |---|---:|---|
 | Home | 1 | `/` |
-| Guides | 30 | `/guides` index + 29 published guides |
-| Stays | 24 | `/stays` index + 23 indexable stay pages |
-| Gear | 12 | `/gear` hub + 11 category pages |
-| Destinations | 17 | `/destinations` + 2 state pages (Georgia, California) + 6 town pages (Blue Ridge, Ellijay, Helen, Dahlonega, San Diego, Santa Barbara) + 8 companion 'things to do with a dog' articles at `/destinations/<state>/<town>/things-to-do` (not guides; the guide count stays 29) |
-| Dog types | 5 | `/dogs` + 4 pages (escape artists, big dogs, multi-dog families, senior dogs) |
-| Tools | 4 | `/tools` + 3 tools |
+| Guides | 30 | `/guides` + 29 published guides |
+| Stays | 24 | `/stays` + 23 indexable stay pages |
+| Gear | 12 | `/gear` + 11 category pages |
+| Destinations | 17 | `/destinations` + 2 state pages + 6 town pages (Blue Ridge, Ellijay, Helen, Dahlonega, San Diego, Santa Barbara) + 8 "things to do with a dog" articles (`/destinations/<state>/<town>/things-to-do`; these are not guides) |
+| Dog types | 5 | `/dogs` + 4 pages |
+| Tools | 4 | `/tools` + 3 tools (packing planner, will my dog be accepted, before-you-book checklist) |
 | Research data | 1 | `/data/pet-policies` |
 | Trust and info pages | 9 | about, contact, list-your-property, affiliate-disclosure, privacy, terms, editorial-standards, methodology, corrections |
-| **Total** | **103** | checked against the XML; 1 + 30 + 24 + 12 + 17 + 5 + 4 + 1 + 9 = 103 |
+| **Total** | **103** | 1 + 30 + 24 + 12 + 17 + 5 + 4 + 1 + 9 |
 
-Checks on the first 95 on the final build (2026-11-24; the 8 added town articles were checked by `scripts/verify-site.mjs`, 318 checks passed): HTTP 200 on all; a self-referencing canonical on all; exactly one H1 on all; every title 60 characters or fewer; every meta description 120 to 160 characters; no stray `noindex`. The five gear trip views (`/gear?trip=<slug>`) are not in the sitemap, are `noindex, nofollow` and canonicalize to `/gear`. Not in the sitemap on purpose: `/dog-rules` (noindex, no verified place), the retired tool addresses (301 to `/tools`), the draft guides (404), 55 listed stays that are `noindex` as too thin, and the Monterey and Mendocino town pages (`noindex`). A sitemap lists URLs offered for indexing; it is not evidence that Google has indexed them (see the inventory, section 12, for the only indexing evidence that exists).
+Not in the sitemap on purpose: `/dog-rules` (noindex, no verified place), the five Gear trip views (`/gear?trip=<slug>`, `noindex, nofollow`, canonical `/gear`), retired tool addresses (301 to `/tools`), the three draft guides (404), 55 shown stays that are `noindex` as too thin, and the Monterey and Mendocino town pages (`noindex`; their things-to-do articles are indexable and are linked from the state pages). A sitemap lists URLs offered for indexing; it is not evidence that Google has indexed them.
+
+## Listing terms: use exactly these words
+
+| Term | Count | Meaning |
+|---|---:|---|
+| Stay files written up | **83** (Georgia 49, California 34, 27 towns) | files in `content/stays/` |
+| Host-confirmed | **0** | every file is `status: unverified`: written from public listing pages, never confirmed with a host. Each is labelled "Not yet verified" |
+| Shown in the directory (listed) | **78** (Georgia 47, California 31) | listed only while a stay has an approved affiliate link (`STAYS_REQUIRE_AFFILIATE_LINK`; `stayDirectoryMode: affiliate-only`) |
+| Indexable (in the sitemap) | **23** | pass the quality rule in `src/content/publish-rule.ts` |
+| Shown but `noindex` | 55 | 78 minus 23 |
+| Hidden | 5 | no approved link: `coastal-bliss-fort-bragg-hot-tub-ocean-views`, `large-oceanfront-home-cleone-fort-bragg-hot-tub`, `rosemarys-retreat-mendocino-oceanfront`, `that-cabin-on-that-lane-blue-ridge`, `woof-in-the-woods-cabin-blue-ridge` (non-Vrbo source) |
+| Published guides | **29** | `isPublic()`: status published, research complete, no unverified claims, approver and date |
+| Draft guides (404) | 3 | `breed-restrictions-at-vacation-rentals`, `pet-friendly-listing-red-flags`, `bringing-a-dog-to-a-no-pets-rental` |
+| Configured affiliate links | 160 | 79 Vrbo + 81 Amazon; "approved: true" is a switch in `content/affiliates.yml`, not proof of any programme's approval |
+| **Verified affiliate approvals a buyer can rely on** | **0** | no approval is evidenced in the repo for the buyer; the seller's accounts do not transfer |
+
+**Mode caveat (owner decision, open).** The directory exists only because the seller's Vrbo deeplinks are marked approved. If those links are switched off (`node scripts/neutralize-seller-vrbo-links.mjs --write`) while `stayDirectoryMode` stays `affiliate-only`, the directory empties: 0 listed, 0 indexable, the stay pages 404 and the sitemap drops by 24 stay URLs plus any town and state pages that lose their indexable stays (`docs/BUYER_AFFILIATE_TRANSITION.md` section 5 measured 103 to 73 on a test copy). The alternative, `public-sources` (off), lists the same 78 stays with plain Vrbo or Airbnb source links, no commission and no affiliate label. Which mode the sale ships in is an owner decision (section 6 of that file).
 
 ## Content and data
 
 | Asset | Count | How counted |
-|---|---:|---|
-| Guide files | 32 (25 Markdown in `content/guides/`, 7 TypeScript in `src/content/guides/`) | file listing |
-| Published guides | 29 (22 Markdown + 7 TypeScript) | the sitemap and `isPublic()` (status, research complete, no unverified claims, approver and date) |
-| Draft guides (404 on the site) | 3 | `breed-restrictions-at-vacation-rentals`, `pet-friendly-listing-red-flags`, `bringing-a-dog-to-a-no-pets-rental` |
-| Words in published guide bodies | **45,057** (longest 2,027; shortest 1,014) | script, method above. The same method gave 57,011 at `b0f371a` and 81,901 for the same 29 guides at `dbbbb94`: the final editorial pass cut length on purpose |
-| FAQs in published guides | 152 | the 152 FAQ entries rendered in the print list of the 29 pages |
-| Sources in published guides (the Sources lists) | **420** (every one linked inside the article text) | frontmatter `sources` summed over the 29 guides; each URL checked against the built page |
-| Citation presentation | inline publisher-name links in the text, plus a collapsible Sources list with the read date; no numbered markers | QA crawl: 0 `sup.cite` elements; Sources list count equals the frontmatter on 29 of 29 |
-| Pick / spec cards in guides | 90 across all 29 guides | `{{pick:}}` directives; 90 `data-pick` elements rendered |
-| Pet-policy dataset | 38 rows x 13 fields | `public/pet-policies-38-managers.csv` (39 lines); one read date (2026-11-18); also a 38-row table on `/data/pet-policies` |
-| Raw regional notes behind the dataset | 5 CSVs in `docs/data/` | file listing |
-| Stay files | **83** (Georgia 49, California 34), all `status: unverified`, across 27 towns | `content/stays/*.yml` |
-| Stays shown in the directory (each with a detail page) | **78** (Georgia 47, California 31) | `/stays` links 78 distinct detail pages; a stay is shown only with an approved Vrbo link (rule `STAYS_REQUIRE_AFFILIATE_LINK`) |
-| Stays in the sitemap (indexable) | **23** | sitemap |
-| Stays shown but `noindex` | 55 | robots meta read on each of the 78 listed pages |
-| Stays written up but hidden (no approved link) | 5 | 83 minus 78 (`coastal-bliss-fort-bragg-hot-tub-ocean-views`, `large-oceanfront-home-cleone-fort-bragg-hot-tub`, `rosemarys-retreat-mendocino-oceanfront`, `that-cabin-on-that-lane-blue-ridge`, `woof-in-the-woods-cabin-blue-ridge`) |
-| Destination pages | 2 states + 8 towns defined (6 indexable) | `src/content/destinations.ts` |
-| Dog-type pages | 4 (+ index) | all live |
-| Dog-rules place files | 14, all `unverified`, 0 public | `content/places/*.yml`; the section is `noindex` |
-| Tools | **3** working tools (will-my-dog-be-accepted, packing list, before-you-book checklist) + the stay directory filters; no calculators | the pet cost calculator, pet cost check and host-questions tool were removed; their old addresses 301 to `/tools` and no rendered page mentions them (QA crawl) |
-| Gear categories (live) | **11** | sitemap and `liveCategories()` |
-| Gear products | **92 records, 65 active** (27 inactive) | `content/products.yml`. Every active product has an approved Amazon link; 65 distinct Amazon URLs render on the 11 category pages |
-| Products per category (hub count, a product can be in two) | car-safety 10, car-interior 4, ramps-and-steps 5, feeding-and-hydration 9, pens-and-gates 8, comfort-and-cooling 7, water-and-beach 5, trail-and-hiking 7, cold-weather 3, safety-id-first-aid 9, rental-cleanup 9 | primary-category counts sum to 65 |
-| Gear trip collections | 5 (road trip, cabin stay, beach and lake, winter, hiking), 9 to 13 cards each, no repeated product | `/gear?trip=` views on the build |
-| Affiliate entries | **160**: 79 Vrbo (all approved) + 81 Amazon (71 approved, 10 not) | `content/affiliates.yml`. "Approved" is a switch in the file, not proof of a partnership |
-| Trust and legal pages | 9 | sitemap |
-| Pinterest pin images | 29 (one per published guide, 1000x1500) + pin sheet `docs/pinterest-pins.csv` (29 data rows) | `public/pins/`, CSV line count 30 |
+|---|---|---|
+| Guide files | 32 (25 Markdown in `content/guides/`, 7 TypeScript in `src/content/guides/`) | `allGuides` |
+| Published guides | 29 (22 Markdown + 7 TypeScript) | `isPublic` |
+| Words in published guide bodies | **45,093** (shortest 1,014, longest 2,027) | whitespace-split words of each published guide's Markdown body (front matter, FAQs and Sources excluded; card directives and link syntax included). The same method gave 57,011 at `b0f371a` and 81,901 for the same guides at `dbbbb94`: the final editorial pass cut length on purpose. (The `13a7ce1` recount gave 45,057; the 36-word difference is the small SEO link edits made since.) |
+| FAQs in published guides | 152 | sum of `faqs` |
+| Sources in published guides | **420**, every URL present in its article text | sum of `sources`; for each source `body.includes(url)` is true on all 420 |
+| Pick / spec cards in guides | 90 | `{{pick:}}` directives (counted at `13a7ce1`, guide text unchanged in spirit since; re-run before quoting) |
+| Pet-policy dataset | **38 records x 13 fields** (header: manager, region, place, dog_or_pet_limit, limit_basis, weight_limit, breed_rule, pet_fee_as_stated, dogs_in_pool_or_hot_tub, minimum_dog_age, leaving_dog_alone, source_page, read_on) | `public/pet-policies-38-managers.csv` (39 lines); read date 2026-11-18 |
+| Town "things to do" articles | 8 (all public) | `allTownReads`; indexable at `/destinations/<state>/<town>/things-to-do` |
+| Destinations | 2 states (Georgia, California), 8 towns defined (6 indexable) | `destinations` |
+| Dog-type pages | 4 live (+ `/dogs`) | `dogTypeIsLive` |
+| Dog-rules place files | 14, all unverified, 0 public | `content/places/*.yml`; section is `noindex` |
+| Tools | **3**: packing planner (`/tools/packing-list`), will my dog be accepted (`/tools/will-my-dog-be-accepted`), before-you-book checklist (`/tools/checklist`), plus the stay-directory filters. No calculators | `staticPaths`; the old calculator, pet cost check and host-questions addresses 301 to `/tools` |
+| Packing planner content | **37 items** (12 essential, 15 conditional, 10 optional), 5 trip types, 9 conditions, 7 categories | `content/packing.yml`. The list is built from trip answers; it is not a fixed 15-item list. Gear coverage: 37 active products recommended directly by an item, 28 reachable through a live Gear category, 0 only via the hub, **0 unreachable** (`docs/PACKING_GEAR_COVERAGE.md`) |
+| Gear categories (live) | **11** | `liveCategories()` |
+| Gear trip collections | **5** (road trip, cabin stay, beach and lake, winter trip, hiking) | `tripCollections` (`noindex` views) |
+| Gear products | **92 records, 65 active** (27 inactive) | `content/products.yml`. Active products by primary category (a product may sit in two): car-safety 10, car-interior 4, ramps-and-steps 5, feeding-and-hydration 9, pens-and-gates 6, comfort-and-cooling 7, water-and-beach 3, trail-and-hiking 3, cold-weather 3, safety-id-first-aid 9, rental-cleanup 6 (sums to 65; hub tiles show 8, 5, 7, 9 for pens, water, trail, rental because they count every membership) |
+| Affiliate entries | **160**: 79 Vrbo (all marked approved) + 81 Amazon (71 marked approved, 10 not) | `content/affiliates.yml` |
+| Seller identifiers in the repo | 5 kinds remain: Amazon tracking ID, GA4 ID, Impact verification value, Pinterest profile, 79 Vrbo deeplinks | `node scripts/audit-seller-ids.mjs` ("RESULT: 5 seller identifier(s) remain"); 78 of the 83 stay files use a seller deeplink |
+| Seller IDs (public identifiers, not secrets) | Amazon tag `pawspassage-20`; GA4 `G-1J97C8CPC1`; Impact verification value and Pinterest URL in `content/settings.yml`; Vrbo deeplink codes in `scripts/seller-ids.json` | the buyer replaces all of them (`docs/BUYER_AFFILIATE_TRANSITION.md`) |
+| Pinterest pin images | 29 (1000x1500) + `docs/pinterest-pins.csv` (29 data rows) | `public/pins/` |
 | Share (link-preview) images | 30 | `public/share/` |
-| Image files in `src/assets` | 211 JPG (incl. 24 for the eight town article heroes) | file listing |
-| Image credit entries | 65 in `src/content/image-credits.ts` (plus pack photo credits), 8 of them the town article heroes | `key:` count |
-| Fonts | 2 variable WOFF2 files (DM Sans, Fraunces) with OFL texts | `public/fonts/` |
-| Automated tests | **610 passing in 47 files** | `bunx vitest run`, 38 s |
-| GitHub workflows | 4 | `.github/workflows/` |
-| Pages CMS collections | 6 (guides, stays, places, affiliates, products, settings) | `.pages.yml`; never opened in the live Pages CMS app (UNVERIFIED) |
-| Netlify redirects in `netlify.toml` | 10 permanent redirect rules (retired guides) plus app-level redirects for retired tool, gear and guide addresses | `grep -c "from ="` |
-| Markdown docs | 156 in `docs/` (642 in the folder tree) | file listing |
-| Git history | 508 commits, first commit 2026-11-16 | `git log` |
+| Image files in `src/assets` | 211 JPG | file listing |
+| Image credit entries | **64** (Unsplash photographers), plus pack-photo credits in `src/content/pack-photos.ts` | `imageCredits.length` (a `grep -c "key:"` gives 65 because the type line also matches) |
+| Fonts | 2 variable WOFF2 (DM Sans, Fraunces) with OFL texts | `public/fonts/` |
+| Automated tests | **771 in 59 files** | `bunx vitest run` |
+| GitHub workflows | 4 (`ci.yml`, `indexnow.yml`, `monthly-digest.yml`, `site-health.yml`) | `.github/workflows/` |
+| Pages CMS collections | 7 (guides, stays, places, affiliates, products, packing, settings) | `.pages.yml`; **never used in the live Pages CMS app (UNVERIFIED)** |
+| Permanent redirects in `netlify.toml` | 10 (retired guide addresses) plus app-level redirects for retired tool, Gear and guide addresses | `grep -c "from =" netlify.toml` |
+| Markdown docs | 166 files in `docs/` (655 in the folder tree) | file listing |
+| Git history | 518 commits at `9797221`, first commit 2026-11-16 | `git log --oneline \| wc -l` |
 
-## Link and disclosure counts (first 95 sitemap pages, final build; the 8 town articles are not included)
+## Link and disclosure counts (all 103 sitemap pages, BUILT)
 
 | Link type | Occurrences | Notes |
 |---|---:|---|
-| Amazon affiliate (`amazon.com/dp/<ASIN>?tag=pawspassage-20`) | 254 occurrences, 65 distinct URLs | guides 173, Gear 81; no tagged link lacks `sponsored` |
-| Vrbo affiliate (`vrbo.com/affiliate/...`) | 50 occurrences, 24 distinct URLs on sitemap pages | stay pages 46 (2 on each of 23 indexable stays), guides 4. The 55 noindex stays are not in this count |
-| Untagged Amazon links | 14 on 10 ASINs across 8 guide and Gear pages | citation "Source" and "Amazon listing as read" links, not buy buttons; none uses another tag |
+| Amazon affiliate (`amazon.com/...tag=`) | 270 on 49 pages, 65 distinct URLs | one `sponsored` notice per page |
+| Vrbo affiliate (`vrbo.com/affiliate/...`) | 50, 24 distinct | stay pages (2 on each of 23 indexable stays) and 4 in guides |
+| Untagged Amazon links | 14 on 10 distinct ASINs | citation "Source" links, not buy buttons; the "10 ASINs untagged source links" to sample in the QA file |
 
-Disclosure on the final build: 41 of 41 pages with an Amazon link carry Amazon's sentence ("As an Amazon Associate I earn from qualifying purchases."). Guides and Gear carry **one notice at the top and no per-button label** (0 matches for "Affiliate link ·" or "Check the current price" on any guide or Gear page). **Exception:** the Vrbo booking buttons on stay pages still show their own short label ("Affiliate link · We may earn a commission if you book, at no extra cost to you."), and `/affiliate-disclosure` still says every buy or booking button carries a label; those come from code and are an open owner decision. NOT checked: whether any Amazon product or Vrbo link currently resolves or pays (those hosts were not requested), or legal sufficiency of the wording. See `docs/MONETIZATION_READINESS.md`, whose crawl counts are older.
+Disclosure on the build: 49 of 49 pages with an Amazon link carry Amazon's sentence ("As an Amazon Associate I earn from qualifying purchases."). Guides and Gear carry one notice at the top and no per-button label; 0 occurrences of "Check the current price" and 0 numbered citation markers on any sitemap page. **Still open (owner decision):** the Vrbo booking buttons on the 23 indexable stay pages (and the 55 `noindex` ones) show "Affiliate link · We may earn a commission if you book, at no extra cost to you." (46 occurrences on indexable stay pages), while `/affiliate-disclosure` (source `src/routes/affiliate-disclosure.tsx`, line 22) still says every affiliate buy or booking button carries its own label. Amazon buttons no longer do. That sentence is therefore inaccurate for Amazon buttons until the owner either restores labels or rewrites the page. NOT checked: whether any Amazon or Vrbo link resolves or pays on the live hosts (not requested), or legal sufficiency of the wording.
 
-## Re-run
+## What these counts do not show
 
-```
-git archive HEAD | tar -x -C <scratch>            # or git worktree add
-cd <scratch> && bun install && NITRO_PRESET=node-server bunx vite build
-PORT=4291 node .output/server/index.mjs &
-curl -s localhost:4291/sitemap.xml | grep -o '<loc>[^<]*' | wc -l
-bunx vitest run
-```
+No traffic, revenue, earnings, clicks, rankings or backlinks. The only Search Console evidence is historical and owner-supplied: 236 impressions and 0 clicks over 28 days and 21 of 23 inspected pages indexed, measured on the older production build; GA4 for 2026-11-17 to 11-23 showed 463 sessions, 450 Direct, 0 Organic (`docs/SEO_ROOT_CAUSE_INVESTIGATION.md`). The domain was registered 2026-11-16 and is about 8 days old; it is too early to read rankings.

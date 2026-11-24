@@ -12,7 +12,7 @@ You only need the ones below. Copy an existing article's text if unsure.
 | **Bold** | `**bold words**` |
 | *Italic* | `*italic words*` |
 | A link | `[the words people click](https://example.com)` |
-| A source citation | `[[1]](https://the-source-address)` (the number must match the position in the Sources list) |
+| A source citation | An inline link on the publisher's name in the sentence, for example `[Georgia State Parks](https://the-source-address) allows two dogs per cottage`, and the same source listed in the front-matter `sources`. **No numbered markers** (the old `[[1]](...)` style was removed on 2026-11-24; see `docs/EDITORIAL_STYLE_GUIDE.md`) |
 | A bullet list | Start each line with `- ` (dash and a space) |
 | A numbered list | Start each line with `1. `, `2. `, `3. ` |
 | A tick-box list | `- [ ] not done` and `- [x] done` |

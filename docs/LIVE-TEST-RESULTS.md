@@ -1,5 +1,8 @@
 # Live test results
 
+> Historical results. Pages CMS and other CMS functions listed here were not tested with a login; see `docs/cowork/FINAL_PRE_SALE_BROWSER_QA.md`. <!-- SUPERSEDED-NOTE -->
+
+
 *Filled in as each test is done. Evidence = a link, screenshot name or GitHub commit. Nothing here is verified until it has a Result and Evidence.*
 
 Repository: existing (`meggzzcode/paw-passage`), branch `claude/cms-poc`. `main` must stay at `8f50649`.    Netlify address: _(not deployed yet)_    Date started: 2026-11-17. Netlify project: `paws-passage-test` (deploys `claude/cms-poc`, auto-publish on), https://paws-passage-test.netlify.app (set to Private, so it needs a Netlify login; see A2).

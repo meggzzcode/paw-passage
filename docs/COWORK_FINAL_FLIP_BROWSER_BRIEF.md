@@ -1,5 +1,8 @@
 # Cowork final flip browser brief (Paws & Passage)
 
+> Superseded (2026-11-24): written when per-button affiliate labels and "Check the current price" lines still existed; both were removed from guides and Gear. Use `docs/cowork/FINAL_PRE_SALE_BROWSER_QA.md`. <!-- SUPERSEDED-NOTE -->
+
+
 Self-contained. Written 2026-11-24. Repo: https://github.com/meggzzcode/paw-passage (production branch `main`). Live site: https://www.pawsandpassage.com. This replaces `docs/COWORK_EDITORIAL_BROWSER_BRIEF.md` and the editorial parts of earlier briefs; it is not another research assignment. Every task below needs a live browser. Report back in the format in section 10.
 
 ## 0. Rules (read first)

@@ -1,5 +1,8 @@
 # Packing planner brief (owner directive, saved verbatim)
 
+> Historical brief. The delivered planner has 37 items in `content/packing.yml` (not a fixed 15-item list); see `docs/PACKING_PLANNER_PRODUCT_GUIDE.md`. <!-- SUPERSEDED-NOTE -->
+
+
 OWNER DIRECTIVE (implement fully and autonomously; test; document). Business: Paws & Passage is being sold as a pre-revenue starter site (~$1,500); this planner should be a flagship, buyer-demonstrable feature. Honest claims only (no fake prices, ratings, reviews, tested/best-seller claims, stock). All products must be Amazon-sourced products already in the catalog (content/products.yml with approved affiliate links); never construct Amazon URLs or put affiliate URLs in packing records; use resolveProductLink() / productButton() precedence (src/content/gear-links.ts, affiliate-usage.ts) unchanged. Existing tools: no calculators were removed-by-owner (per-stay fee calculator, pet cost check): do not link them. No product photography. No hero photo above the planner.
 
 Route /tools/packing-list (keep URL; canonical to itself; presets by query params only; no new indexable pages; title 'Dog Travel Packing List Builder | Paws & Passage' (<=60 chars), description about creating a personalized list, customizing, checking off, printing; server-rendered explanatory content; hydration-safe; no personal state in SSR HTML). Related guide /guides/dog-friendly-cabin-packing-list; shopping /gear.

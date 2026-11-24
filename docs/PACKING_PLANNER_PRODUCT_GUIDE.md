@@ -2,6 +2,8 @@
 
 The packing planner at `/tools/packing-list` builds a personalized dog packing list from a short trip description. It is a free tool, saves on the visitor's device only, and shows product suggestions only when the visitor marks an item "Need to buy". Nothing is deployed by this work; the owner's brief is saved in `docs/PACKING_PLANNER_BRIEF.md`.
 
+**Current content (counted 2026-11-24 at `9797221`):** `content/packing.yml` declares 37 items (12 essential, 15 conditional, 10 optional), 5 trip types, 9 conditions and 7 categories; all 65 active Gear products are reachable from the planner or a Gear category it links to (`docs/PACKING_GEAR_COVERAGE.md`). Lists are saved in the visitor's browser only; there are no accounts or sync. Any older "15-item" or "Add to bag" description elsewhere is superseded.
+
 ## Purpose and journey
 1. Visitor lands (directly, from the Tools page, the Gear hub, or the cabin guide's "Make this list yours" module).
 2. Setup: trip type (cabin is preselected for direct visitors; a guide link can preset it), days (1 to 30, counts every day including travel days), dogs (1 to 5), optional meals per dog per day, and optional "anything else" conditions. One button: "Build my packing list".

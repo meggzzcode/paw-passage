@@ -1,5 +1,8 @@
 # Live test runbook: Netlify + Pages CMS + GitHub
 
+> Historical runbook (2026-11-17). The Pages CMS authenticated flow, including the rich-text round trip, has NOT been tested; the current steps are the "Pages CMS" section of `docs/cowork/FINAL_PRE_SALE_BROWSER_QA.md`. Guides are now edited as plain Markdown, not rich text. <!-- SUPERSEDED-NOTE -->
+
+
 *Purpose: finish the verification that `BUYER_HANDOVER.md` (section 5) says has not been done. Nothing here changes the live site, buys anything, or touches `main`.*
 
 **Who does what.** Claude cannot sign in to your Netlify, GitHub or Pages CMS accounts. You do the clicking; Claude prepares everything, then checks each result from the outside (running the site checker against your Netlify address and reading the GitHub history). Record every result in `docs/LIVE-TEST-RESULTS.md`.

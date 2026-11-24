@@ -1,5 +1,8 @@
 # Go-live and traffic plan (2026-11-19)
 
+> Superseded: the sale plan replaced this keep-and-grow plan; its 98-URL and guide counts are old (`docs/FINAL_SALE_CODE_RELEASE.md`). <!-- SUPERSEDED-NOTE -->
+
+
 Written by working backwards: where we want to be, what has to be true one step earlier, and what is true today. Everything marked VERIFIED was checked on 2026-11-19; ESTIMATE is judgment, not data.
 
 ## 1. The vision and what it requires

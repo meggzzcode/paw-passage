@@ -1,5 +1,8 @@
 # Cowork brief: immediate flip of Paws & Passage (about $1,500, pre-revenue)
 
+> Superseded (2026-11-24): counts here (30 guides, 37 stay files, 53 products) are old. Open browser tasks are now in `docs/cowork/FINAL_PRE_SALE_BROWSER_QA.md`; counts in `docs/buyer/ROUTE_AND_ASSET_COUNTS.md`. <!-- SUPERSEDED-NOTE -->
+
+
 Read this whole file first. It is self-contained: you start with no prior conversation. Date written: 2026-11-23. The repo is https://github.com/meggzzcode/paw-passage (work is on branch `claude/affiliate-setup`; production is `main`). Live site: https://www.pawsandpassage.com. Related files in the repo: `docs/FLIP_READINESS_AUDIT.md`, `docs/BUYER_ASSET_INVENTORY.md`, `docs/BUYER_DUE_DILIGENCE_CHECKLIST.md`, `docs/SALE_LISTING_DRAFT.md`, `docs/TRANSFER_CHECKLIST.md`, `docs/research/MARKETPLACES-AND-COMPS-2026-11.md`, `docs/flip/`.
 
 ## 1. Mission and constraints

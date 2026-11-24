@@ -1,23 +1,25 @@
 # Flip readiness audit: Paws & Passage (2026-11-23)
 
+> The final pre-sale verdict, gates and blocker list are in `docs/FINAL_SALE_CODE_RELEASE.md`. The 2026-11-23 sections below are the earlier audit and its scores are superseded.
+
 Objective (owner, 2026-11-23): sell the site as a turnkey, pre-revenue starter asset for about $1,500, quickly. This replaces the earlier keep-and-grow plan (`docs/GO-LIVE-PLAN.md`); that plan is not needed for this flip. Evidence behind every statement is in `docs/BUYER_ASSET_INVENTORY.md`, `docs/flip/audit-assets.md`, `docs/flip/audit-legal-transfer.md`, `docs/flip/audit-live-qa.md` (screenshots in `docs/flip/evidence/`) and `docs/research/MARKETPLACES-AND-COMPS-2026-11.md`. Labels: VERIFIED (evidence in those files), UNVERIFIED, OWNER (needs the owner).
 
-## Status update, 2026-11-24 (final, repo `HEAD` `13a7ce1`)
+## Status update, 2026-11-24 (final, repo `HEAD` `9797221`)
 
-The sections below are the 2026-11-23 audit; this block says what changed. Counts are re-verified in `docs/BUYER_ASSET_INVENTORY.md` and `docs/buyer/ROUTE_AND_ASSET_COUNTS.md`. **The final build is not deployed** (Netlify builds are stopped), so nothing below is a statement about the live site; Cowork must re-verify the live domain after the first deploy.
+The sections below are the 2026-11-23 audit; this block says what changed. Counts are re-verified in `docs/BUYER_ASSET_INVENTORY.md` and `docs/buyer/ROUTE_AND_ASSET_COUNTS.md`. **Nothing is deployed** (Netlify builds are stopped; production is a stale build from about 2026-11-23), so nothing below is a statement about the live site; Cowork must re-verify the live domain after the first deploy.
 
 | Then (2026-11-23) | Now (repo, verified 2026-11-24) |
 |---|---|
-| 30 published guides, about 76,900 words, 491 citations | 29 published guides, 45,057 words, 420 sources (all linked inside the text, no numbered markers, collapsible Sources list); independent reader mean 7.1 of 10, "ready with minor fixes", the later corrections not re-scored (`docs/FINAL_EDITORIAL_RELEASE.md`) |
-| Sitemap of 98 URLs | 95 URLs (no-weight-limit guide merged and 301-redirected; 11 gear categories); all 95 return 200 on the local build with canonicals, one H1, 60-character titles and 120 to 160 character descriptions |
+| 30 published guides, about 76,900 words, 491 citations | 29 published guides, 45,093 words, 420 sources (all linked inside the text, no numbered markers, collapsible Sources list); independent reader mean 7.1 of 10, "ready with minor fixes", the later corrections not re-scored (`docs/FINAL_EDITORIAL_RELEASE.md`) |
+| Sitemap of 98 URLs | 103 URLs (the 95 plus 8 town "things to do" articles; no-weight-limit guide merged and 301-redirected; 11 gear categories); all 103 return 200 on the local build with canonicals, one H1, titles of 60 characters or fewer and 120 to 160 character descriptions |
 | 32 stays listed; 24 sitemap `/stays` URLs | 83 stay files, 78 listed (each with an approved Vrbo link), 23 in the sitemap, 55 listed `noindex`, 5 hidden; none verified |
 | 54 active products on production, 53 on the branch | 92 records, 65 active, all with an Amazon link; Gear redesigned as a photo-free editorial shop with 5 curated trip collections (its own spec scores it 7.7 of 10, below its 9 target) |
-| 3 tools plus the pet cost check | 3 tools; no calculators |
+| 3 tools plus the pet cost check | 3 tools (packing planner rebuilt as a personalized planner, will my dog be accepted, checklist); no calculators |
 | Per-button affiliate labels | Removed on guides and Gear; one top notice with Amazon's sentence. Vrbo buttons on stay pages still show a label (open decision) |
-| Tests 486 (later 498) | 605 in 46 files |
+| Tests 486 (later 498) | 771 in 59 files |
 | Blocker 1: branch not merged | Resolved in the repository: the fixes are on `main`; no Backseat Bridge text appears on any guide or Gear page, and the Sleepypod Clickit Sport Plus appears only as two text mentions in the car-safety guide, with no card or buy link. **Not deployed**, so production still shows the old pages |
-| Blocker 2: links to the draft guides | Resolved: 0 links to the three drafts on any of the 95 sitemap pages (checked on the build) |
-| Blockers 3, 5, 7 (Vrbo click test, GA and Search Console evidence, Namecheap lock rule) | Still open; need Cowork or the owner. Search evidence on file: 21 of 23 inspected URLs indexed, 236 impressions and 0 clicks over 28 days, which does not show that all sitemap URLs are indexed |
+| Blocker 2: links to the draft guides | Resolved: 0 links to the three drafts on any of the 103 sitemap pages (checked on the build) |
+| Blockers 3, 5, 7 (Vrbo click test, GA and Search Console evidence, Namecheap lock rule) | Still open; need Cowork or the owner. Search evidence on file (historical, older build): 21 of 23 inspected URLs indexed, 236 impressions and 0 clicks over 28 days, which does not show that all sitemap URLs are indexed |
 | Blocker 4: hero image rights | Resolved earlier (credited Unsplash photo) |
 
 ## 1. Readiness score (each 1 to 10; average of four)

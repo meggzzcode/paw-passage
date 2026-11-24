@@ -1,5 +1,8 @@
 # Hosting portability report
 
+> Note (2026-11-24): hosting prices are list prices read on 2026-11-18 and 11-24 and are not the seller's bills; the Pages CMS authenticated flow is still UNVERIFIED (`docs/cowork/FINAL_PRE_SALE_BROWSER_QA.md`). <!-- SUPERSEDED-NOTE -->
+
+
 Written 2026-11-24. Read-only audit of repo HEAD `bebafb9`; nothing in the repo, DNS, Netlify or Lovable was changed. Labels: VERIFIED (run or read today), UNVERIFIED (could not be read or tested).
 
 ## 1. Verdict

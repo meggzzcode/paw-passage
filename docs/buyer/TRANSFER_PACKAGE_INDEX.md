@@ -6,7 +6,11 @@ Every handover document, its purpose and the order a transfer normally follows. 
 
 | Document | Purpose |
 |---|---|
+| `docs/BUYER_OVERVIEW.md` | One-page summary: what it is, what is and is not included, costs, first steps |
 | `docs/BUYER_ASSET_INVENTORY.md` | What is being sold, what is not, with verified counts |
+| `docs/BUYER_AFFILIATE_TRANSITION.md` | Replacing the seller's IDs, in order; the stay-directory mode decision |
+| `docs/FINAL_SALE_CODE_RELEASE.md` | Release report, sale gates, blockers and verdict |
+| `docs/BUYER_WALKTHROUGH_SCRIPT.md` | Walkthrough script and screenshot list (no video exists) |
 | `docs/SALE_LISTING_DRAFT.md` | The listing text, terms and risks |
 | `docs/BUYER_DUE_DILIGENCE_CHECKLIST.md` | Private evidence index: what exists, who collects it |
 | `docs/TRANSFER_CHECKLIST.md` | Step-by-step transfer plan with risks and sign-off |

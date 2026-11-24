@@ -1,5 +1,8 @@
 # Editorial consistency audit
 
+> Historical audit; its counts predate the 2026-11-24 recount (`docs/buyer/ROUTE_AND_ASSET_COUNTS.md`). <!-- SUPERSEDED-NOTE -->
+
+
 Audit date: 2026-11-17. Scope: 16 articles (1 Markdown guide, 15 TypeScript guides) plus the 6 gear files in `src/content/gear/`. The test articles `cms-test-article.md` and `cowork-test-article.md` were ignored. I did not edit any article, did not fetch any source page, and did not commit anything.
 
 How to read this file:

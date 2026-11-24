@@ -26,7 +26,7 @@ Stays out of scope (needs a developer): page design, the home page layout and wo
 - Run the existing converter: `bun scripts/convert-guide-to-md.ts <slug>` for each article. It copies the text word for word and keeps the approval, so nothing goes offline.
 - For each batch: run the tests, rebuild, and compare the rendered pages with the "before" pages (the same character-for-character comparison used on the first article). Anything that differs is a bug.
 - Gear articles also need Step 2 first, because they refer to products.
-- Risk: citations use `[[1]](link)` numbers that must match the Sources list. The tests already check this; the editor form tells editors to keep the order.
+- Risk (superseded 2026-11-24): this described numbered `[[1]](link)` citations; guides now use inline publisher links with no numbers (`docs/EDITORIAL_STYLE_GUIDE.md`).
 
 **Step 2: gear products.**
 - Add a `products` collection (one file per product: name, brand, summary, key facts, where the facts came from, optional affiliate link id) and a loader like the one for stays.

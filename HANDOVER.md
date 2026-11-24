@@ -8,14 +8,15 @@ Everything on this site lives in plain files. There is no database, no admin log
 
 | What | File |
 | --- | --- |
-| Email, site URL, GA4 ID, Amazon tag, Pinterest URL, Stay22 ID | `content/settings.yml` (`src/config/site.ts` only reads it) |
-| Stays (37 files; 32 listed, 5 hidden; none verified) | `content/stays/*.yml` (`src/content/stays/verified.ts` holds no records) |
+| Email, site URL, GA4 ID, Amazon tag, Impact verification value, Pinterest URL, Stay22 ID, `stayDirectoryMode` | `content/settings.yml` (`src/config/site.ts` only reads it) |
+| Stays (83 files; 78 listed, 23 indexable, 5 hidden; 0 host-confirmed) | `content/stays/*.yml` (`src/content/stays/verified.ts` holds no records) |
 | Sample stays (preview only, never live) | `src/content/stays/samples.ts` |
-| Gear products (74 records, 53 active) | `content/products.yml` |
-| Affiliate / booking links (96 entries) | `content/affiliates.yml` (`src/content/affiliates.ts` only reads it) |
+| Gear products (92 records, 65 active) | `content/products.yml` |
+| Affiliate / booking links (160 entries: 79 Vrbo, 81 Amazon) | `content/affiliates.yml` (`src/content/affiliates.ts` only reads it) |
 | Destinations (states and towns) | `src/content/destinations.ts` |
-| Guides (33 files: 26 Markdown, 7 legacy code; 30 published) | `content/guides/<slug>.md`; legacy `src/content/guides/<slug>.ts` |
+| Guides (32 files: 25 Markdown, 7 legacy code; 29 published, 3 drafts) | `content/guides/<slug>.md`; legacy `src/content/guides/<slug>.ts` |
 | Checklist tool items | `src/content/checklist.ts` |
+| Packing planner items, rules and trip types (37 items) | `content/packing.yml` (`docs/PACKING_PLANNER_PRODUCT_GUIDE.md`) |
 | Images | `src/assets/` + `src/lib/images.ts` |
 | Policy pages | `src/routes/privacy.tsx`, `terms.tsx`, `affiliate-disclosure.tsx`, `editorial-standards.tsx` |
 
@@ -50,7 +51,7 @@ Set `ga4MeasurementId` in `content/settings.yml`. Outbound booking clicks are se
 There is no newsletter signup on the site (removed by the owner's decision). Research for adding one later is in `docs/LEAD-CAPTURE.md`.
 
 ## 9. Sitemap and domain
-`siteUrl` is set in `content/settings.yml` (change it if the domain changes). `/sitemap.xml` lists every published page (98 URLs on 2026-11-23), and `public/robots.txt` already has the Sitemap line (update it for a new domain).
+`siteUrl` is set in `content/settings.yml` (change it if the domain changes). `/sitemap.xml` lists every published page (103 URLs counted on 2026-11-24 at `9797221`; 98 was the 2026-11-23 count), and `public/robots.txt` already has the Sitemap line (update it for a new domain).
 
 ## 10. Export and deploy elsewhere
 - Connect GitHub in Lovable (Project settings → Git). The repository is a standard TanStack Start + Vite app.

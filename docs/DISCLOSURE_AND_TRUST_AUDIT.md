@@ -1,5 +1,8 @@
 # Disclosure and trust-language audit
 
+> Historical audit (2026-11-23). Per-button affiliate labels and "Check the current price" lines were removed from guides and Gear afterwards; the Vrbo stay-button label and the `/affiliate-disclosure` wording remain an open owner decision (`docs/FINAL_SALE_CODE_RELEASE.md`). <!-- SUPERSEDED-NOTE -->
+
+
 Date: 2026-11-24. This file is the full inventory and proposed policy (nothing on the site was changed by the audit). Source research notes: FTC Endorsement Guides and "Disclosures 101", Amazon Associates Operating Agreement, Expedia/Vrbo affiliate terms (URLs and limits are listed in section 1; the literal U.S. Amazon Section 5 sentence and Expedia's trademark Schedule 6 were not retrieved, so check both before editing the Vrbo line). Not legal advice.
 
 Executive summary:

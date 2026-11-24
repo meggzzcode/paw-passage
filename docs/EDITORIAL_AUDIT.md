@@ -1,5 +1,8 @@
 # Editorial, reader-experience and trust audit
 
+> Historical audit (before the final editorial pass). Guide counts, word counts, numbered citations and "Check the current price" lines described here no longer apply (`docs/FINAL_EDITORIAL_RELEASE.md`, `docs/buyer/ROUTE_AND_ASSET_COUNTS.md`). <!-- SUPERSEDED-NOTE -->
+
+
 Date: 2026-11-24. Scope: all 30 published guides (rendered at 390 and 1280 px from a frozen build of `main`), the disclosure and citation systems, and live competitor research. Companion files: `docs/ARTICLE_SCORECARD.md`, `docs/EDITORIAL_STYLE_GUIDE.md`, `docs/DISCLOSURE_AND_TRUST_AUDIT.md`, `docs/EDITORIAL_FIX_PLAN.md`, `docs/COWORK_EDITORIAL_BROWSER_BRIEF.md`. Detailed notes: `docs/editorial/`. Labels: FACT (measured or quoted from a page we read), JUDGMENT (editorial opinion), UNVERIFIED (could not be read). No user testing was done.
 
 ## 1. Executive answers

@@ -1,5 +1,8 @@
 # Costs, accounts and the owner's action list (WP8)
 
+> Note (2026-11-24): prices are list prices read on 2026-11-18, not the seller's bills; the sale summary of costs is `docs/buyer/HOSTING_OPTIONS.md`. <!-- SUPERSEDED-NOTE -->
+
+
 Written and researched 2026-11-18. Every price or term below was read on the page named beside it on **2026-11-18**. Labels: VERIFIED (read on an official page or inspected in the repo today), UNCONFIRMED (not shown on an official page, or the page is ambiguous), RECOMMENDED, NEEDS-YOU. **Introductory and renewal prices are kept apart on purpose.** Nothing was cancelled, bought, changed or submitted while writing this.
 
 Companion documents: `docs/EMAIL-AND-TRANSFER.md`, `docs/SECURITY-AND-RECOVERY.md`, `docs/NETLIFY-BADGE.md`, `docs/OPERATIONS-HANDBOOK.md`, `docs/OPERATIONS-RECORD.md`.

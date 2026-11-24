@@ -1,5 +1,8 @@
 # Gear redesign brief (owner directive, 2026-11-24): a 10/10 photo-free gear shopping experience
 
+> Historical brief. The shipped Gear shop is described in `docs/GEAR_REDESIGN_IMPLEMENTATION.md` and `docs/GEAR_SHOPPER_EXPERIENCE_SPEC.md`; counts in `docs/buyer/ROUTE_AND_ASSET_COUNTS.md`. <!-- SUPERSEDED-NOTE -->
+
+
 Source of truth for the Gear redesign workers. Build and test, do not just recommend. Goal: a premium starter-site flip (about $1,500): the Gear section must feel like a polished editorial gear shop that real visitors want to browse and click through, with no fabricated ratings, reviews, prices, testing, stock or popularity.
 
 ## Hard constraints

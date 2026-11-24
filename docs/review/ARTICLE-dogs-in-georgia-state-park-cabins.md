@@ -1,0 +1,45 @@
+# Review: Dogs in Georgia State Park Cabins: The 2-Dog Rule, the Pet Fee and How to Request a Dog Cabin (dogs-in-georgia-state-park-cabins)
+Verdict: FIX FIRST (excellent rules content and honest unknowns, but the buying layer is thin and orphaned, and the "which parks" promise is only half kept)
+Overall: 8.0 / 10 (FAIL)
+Scores (1 to 5): Answer clarity 5 | Reader flow 4 | Buying advice 3 | Product placement 3 | Layout 4 | Trust 4 | SEO fit 4 | Differentiation 5
+
+Review basis: source `content/guides/dogs-in-georgia-state-park-cabins.md`; rendered http://localhost:4173/guides/dogs-in-georgia-state-park-cabins at 1280 and 390 wide (screenshots in the scratchpad, read); head read from the page. Title tag: "Dogs in Georgia State Park Cabins: Rules | Paws & Passage". Meta description: "Georgia state park cottages take 2 dogs at $50 each per stay, and you must request one before arrival. Rules, which parks, and a message to send." Pin row (docs/pinterest-pins.csv) matches the article promise. Catalog records read for ruffwear-knot-a-leash, springland-22oz-original-travel-bottle, ruffwear-quencher-bowl.
+
+## Top 5 issues (most important first)
+1. **Where: "Pack for a state park cabin" (Knot-a-Leash card).** What: the leash pick appears as a bare card with no product name in prose, no link in prose, and a generic "Our pick" label while the other two cards carry a problem label. The catalog says "5 ft in both sizes: Small with 7 mm rope, Large with 11 mm rope" and "No strength rating or guidance by dog weight is stated", yet the article never tells a buyer which size to choose or that the maker gives no weight guidance. The 6-foot limit also does not make a 5-foot leash an obvious need; a buyer who already owns a leash gets no reason to buy. Also the maker page is not cited in the article or its sources (only Springland and Quencher are). Fix: rewrite the lead-in and label (edits 1, 2) and add the maker page to sources (edit 3).
+2. **Where: "Which cabins accept dogs" vs the meta description ("Rules, which parks").** What: the page does not deliver a park list. The reader learns Skidaway Island, Mistletoe, Smithgall Woods, Black Rock Mountain, Crooked River and F.D. Roosevelt in scattered sentences, with Explore Georgia (undated) as the only multi-park source. A searcher for "which Georgia state parks have dog friendly cabins" has to assemble it. Fix: add a short table of named parks and what each official page said (edit 4), and change the meta description (edit 9).
+3. **Where: the buying decision for the cabin itself ("State park cabin or private cabin").** What: the page is strongest when it compares, but the comparison table has no "who should choose which" line, and the "what to buy first" close for gear is missing; the end ("Your next step") sends the reader to the generic `/stays` directory, not to the Georgia destination page that exists (/destinations/georgia returns 200) and not to the Georgia stays. Fix: add a one-sentence decision shortcut (edit 5) and link /destinations/georgia (edit 6).
+4. **Where: header row "16 official sources".** What: the sources list includes cabin managers, three third-party blogs, a travel-listing site and two maker product pages, so "official" overstates it. Only 9 are Georgia State Parks/DNR pages. Fix: edit 10 (site-level template; flag to owner).
+5. **Where: mobile "State park cabin or private cabin" table.** What: the 4-column table renders 383 px wide in a 350 px wrapper at 390; the fourth column is cut ("Never unattend", "Every dog approved first") with no visible scroll cue. Citation numbers also appear out of order (15 and 16 appear before 13 and 14). Fix: edit 7 (shorten table) and edit 8 (renumber).
+
+## What works well
+- The first paragraph and dek give the whole rule set (2 dogs, $50 each, request first, never alone) and attribute it to a named, dated official page; the "rules in one table" quotes the page and is readable on a phone.
+- "What we could not confirm" and "Where other pages differ" are specific (booking vs check-in fee timing, $75 vs $85 nightly floor), which is real differentiation against Animal of Things, GoPetFriendly and Explore Georgia, and the request message and call script fill a gap named in the research.
+- Product claims are carefully hedged to the maker's page ("per the maker", "the 22oz size appears in the name only"), matching the catalog keySpecs; affiliate disclosure sits above the fold before the first affiliate link, and links carry sponsored/nofollow.
+
+## Buyer walkthrough
+1. Lands on the answer in two sentences; the rules table confirms it. The reader's real decision is which cabin and whether to call, and the page serves that well.
+2. The request steps and message are copy-ready; the reader leaves with an action, not a product.
+3. Gear appears only at the 60% mark, after the private-cabin comparison; a leash card appears with no explanation and no size guidance.
+4. The two water products are well tied to the unattended rule (dog goes everywhere, carry water), but "why not the bowl you already own" is not answered, and nothing says who should skip them.
+5. Dead end: the close points to the generic stays directory and tools, with no "what to buy first" and no Georgia hub.
+
+## Mobile notes
+- Header, dek, disclosure box and a collapsed "On this page" fit cleanly; the hero image fills width without cropping the dog.
+- The four-column private cabin table clips its last column at 390 px with no scroll cue; the rules table (2 columns) is fine.
+- Page is about 17,900 px tall on mobile; the pick cards stack well with a full-width button, but the end-of-page "Gear for this trip" repeats the same three cards.
+
+## Specific edits to make
+1. TEXT (Pack section, before the leash card): replace "Bring a leash of 6 feet or shorter, plus bags to clean up after the dog, which the rules require." with "The rules require a 6-foot leash and cleanup, so you need a leash of 6 feet or shorter and bags. If you already own one that fits, skip this. If not, Ruffwear's [Knot-a-Leash](aff-link-via-pick) is a rope leash the maker lists at 5 ft in both sizes (Small 7 mm rope, Large 11 mm rope); the page gives no strength rating or dog-weight guidance, so check the size against the maker's page for your dog before buying."  (Keep affiliate handling via the existing pick token; do not hand-write the URL.)
+2. PRODUCT (leash pick token): change the label "Our pick" to "A leash within the 6-foot limit" so it matches the problem-first labels of the other two cards, and change the card reason to "Maker lists it at 5 ft in Small (7 mm) and Large (11 mm) rope; no strength rating or weight guidance is stated, so check the size yourself."
+3. SEO/TEXT (sources): add a source row for the Knot-a-Leash maker page (https://ruffwear.com/products/knot-a-leash-dog-leash, publisher Ruffwear, accessedOn 2026-11-18) and cite it after the new leash sentence.
+4. STRUCTURE ("Which cabins accept dogs"): add a table with columns Park | What the official page says about dogs | Source, one row each for Skidaway Island (Cabins A and C no pets, Cabin B yes), Mistletoe (one pet-friendly cabin with fee, no amount), Smithgall Woods (Garden Cottage, pet-friendly with fee), Fort Yargo (17 cottages, silent on pets, 770-867-3489), Red Top Mountain (20 cottages, silent on pets), then one row "Explore Georgia list (undated): Black Rock Mountain #5, #8, #10; Crooked River (four); F.D. Roosevelt (four); Mistletoe (five)". Keep the existing prose sentence order or trim it to avoid repeating.
+5. TEXT (after the private-cabin table): add "Pick the state park cottage if you have one or two dogs, want a flat fee and can keep the dog with you every minute; pick a private cabin if you have a third dog, need a fenced yard or want to leave the dog for an hour."  (All from the guide's own sourced limits; no new claims.)
+6. STRUCTURE (Your next step): change "Browse dog-friendly options in our stays directory" to "Browse dog-friendly Georgia options on our [Georgia destination page](/destinations/georgia), then ..." and keep the pet fees guide, will-my-dog-be-accepted and checklist links.
+7. STRUCTURE (private cabin table): merge "Other limits" into the Dogs column or drop it to three columns (Cabin | Dogs and limits | Fee as of 2026-11-18) so nothing clips at 390 px.
+8. STRUCTURE (citations): renumber so the Springland and Quencher citations are [13] and [14] and Animal of Things and GoPetFriendly are [15] and [16], in order of first appearance.
+9. SEO (seoDescription): change to "Georgia state park cottages take 2 dogs at $50 each per stay and must be requested before arrival. Rules, named parks, and a message to send." (under 160 characters; "named parks" stays true only if edit 4 is applied).
+10. SEO/TRUST (site template): change the header chip "N official sources" to "N sources" or count only government/maker/platform pages, since this guide's 16 include blogs and cabin managers.
+
+## Questions for the owner
+- Should the "N official sources" chip be changed site-wide, since it affects every guide?

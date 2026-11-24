@@ -24,16 +24,7 @@ export const guide: Guide = {
 - Check for ticks every evening. [[4]](https://www.cdc.gov/ticks/prevention/preventing-ticks-on-pets.html)
 - In cold weather, keep your dog away from stoves, ash and antifreeze; our [Christmas-week cabin guide](/guides/christmas-week-in-a-cabin-with-a-dog) covers the winter hazards.
 
-## Our picks at a glance
-
-| Job | Pick | Size as the maker states it |
-| --- | --- | --- |
-| Kibble that arrives dry | IRIS USA Airtight Dog Food Storage Container | 12.75 quarts, about 10 lb of food |
-| Drying paws at the door | Soggy Doggy Super Shammy | 31 x 14 in |
-| A bed that is clearly theirs | Kurgo Loft Wander | Medium 27 x 36 in, Large 36 x 48 in |
-| Dark toilet trips | Ruffwear Beacon | Up to 20 hours run time |
-
-The rest is what most owners already have.
+Our four picks are a dry-kibble bin, a towel for the door, a bed that is clearly theirs and a light for dark toilet trips. The rest is what most owners already have.
 
 ## Five questions for the host
 

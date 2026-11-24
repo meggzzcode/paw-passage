@@ -163,12 +163,12 @@ Salt and ice decide whether your dog needs boots; size, age and coat decide whet
 
 The sources agree on the pattern and differ on the numbers. PetMD, written by a veterinarian, says cold should not become a problem for most dogs until below 45 F, that small, thin-coated, very young, old or sick dogs could be in danger below 32 F, and that below 20 F "all pet parents need to be aware." [[1]](https://www.petmd.com/dog/care/how-cold-too-cold-dog) A Cornell veterinarian quoted by NBC Select says at 32 F and below, limit all dogs' time outside, and below 20 F only very short bathroom breaks. [[5]](https://www.nbcnews.com/select/shopping/how-to-keep-dogs-warm-winter-rcna239641) PetSmart says under 40 F can become risky and suggests 10 to 15 minutes, supervised, below freezing. [[6]](https://www.petsmart.com/learning-center/dog-care/how-cold-is-too-cold-for-dogs) ASPCA gives no number: if it is too cold for you, it is probably too cold for your pet. [[4]](https://www.aspca.org/pet-care/general-pet-care/cold-weather-safety-tips) A brisk breeze and wet fur reduce insulation, so every band feels colder.
 
-| Dog | What the sources say, and what it suggests (our reading in italics) |
+PetMD names Siberian Huskies, Newfoundlands and Samoyeds, and Cornell names Huskies and Malamutes, as dogs that handle cold best; for them, paw care comes first and the coat should not be clipped short.
+
+| Dog | Do this |
 | --- | --- |
-| Thick double coat (PetMD names Siberian Husky, Newfoundland, Samoyed; Cornell names Huskies and Malamutes) | Handle cold best. *Paw care first; do not clip short.* |
-| Short or thin coat, lean build | ASPCA suggests a coat or sweater with a high collar for short-haired dogs; thin dogs get cold faster because body fat insulates. *Pack a layer for any walk near or below 32 F.* |
-| Small or toy breed | Smaller dogs lose heat faster, and deep snow can reach the chest. *Cover belly and chest.* |
-| Puppy, senior or ill dog | Regulate body temperature less well. *Use the cautious end of every number; ask your vet.* |
+| Short or thin coat, lean build (ASPCA suggests a coat or sweater with a high collar; thin dogs get cold faster because body fat insulates) | Pack a layer for any walk near or below 32 F |
+| Small or toy breed (smaller dogs lose heat faster, and deep snow can reach the chest) | Cover belly and chest |
 
 Sources: [PetMD](https://www.petmd.com/dog/care/how-cold-too-cold-dog), [Cornell](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/winter-safety-tips), [ASPCA](https://www.aspca.org/pet-care/general-pet-care/cold-weather-safety-tips), [Outward Hound](https://outwardhound.com/furtropolis/dogs/how-cold-is-too-cold-for-dogs)
 

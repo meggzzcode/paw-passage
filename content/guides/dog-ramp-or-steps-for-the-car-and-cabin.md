@@ -172,13 +172,13 @@ If your dog stops at the bumper and looks at you, a ramp is usually the fix, and
 
 Every figure is what the maker's page said on 2026-11-18. The three ramp pages say the rating was independently tested and name no tester; the two steps pages say nothing about testing. [[6]](https://petsafe.com/product/happy-ride-compact-telescoping-dog-ramp) [[7]](https://www.petsafe.com/p/happy-ride-folding-dog-ramp/62462/)
 
-| Product | Size as listed | Maker's weight rating | Weight |
-| --- | --- | --- | --- |
-| Happy Ride Compact Telescoping Dog Ramp | 28 to 70 in long | 300 lb | 14 lb |
-| Happy Ride Folding Dog Ramp | 62 x 16 x 4 in | 150 lb | 10 lb |
-| Happy Ride Extra Long Telescoping Dog Ramp | 47 to 87 x 20 x 4 in | 300 lb | 18 lb |
-| Happy Ride Side Door Pet Steps | 44.9 x 18.2 x 8 in; set at 21.25, 24.75 or 28 in | 200 lb | 13 lb |
-| Happy Ride Dog Hitch Step | 20 x 18 x 12 in; fits a 2 in hitch | 200 lb | Not stated |
+| Product | Maker's weight rating | Length and weight |
+| --- | --- | --- |
+| Happy Ride Compact Telescoping Dog Ramp | 300 lb | 28 to 70 in, 14 lb |
+| Happy Ride Folding Dog Ramp | 150 lb | 62 x 16 x 4 in, 10 lb |
+| Happy Ride Extra Long Telescoping Dog Ramp | 300 lb | 47 to 87 x 20 x 4 in, 18 lb |
+| Happy Ride Side Door Pet Steps | 200 lb | 44.9 x 18.2 x 8 in, 13 lb |
+| Happy Ride Dog Hitch Step | 200 lb | 20 x 18 x 12 in; fits a 2 in hitch |
 
 All five are PetSafe, the only maker whose pages we read; other brands exist, and the same measuring and arithmetic apply to them. None of the pages states an incline or a vehicle height range, and the Folding Ramp's folded size and the Compact's width and height are not listed.
 
@@ -186,14 +186,7 @@ All five are PetSafe, the only maker whose pages we read; other brands exist, an
 
 None of the five pages states an incline. Petful, citing a dog behaviorist, gives about 18 to 20 degrees, which is one person's figure, not a veterinary standard. [[11]](https://www.petful.com/pet-products/dog-ramp-for-car) CARE says only that a car ramp must not be too steep. [[3]](https://caninearthritis.org/?p=2503)
 
-Simple geometry gives the height a ramp reaches at a chosen angle: length times the sine of the angle. This table is our arithmetic on the listed lengths, rounded to whole inches, not a maker claim.
-
-| Ramp length (maker's listing) | Height reached at 18 degrees | Height reached at 20 degrees |
-| --- | --- | --- |
-| 47 in (Extra Long, shortest setting) | about 15 in | about 16 in |
-| 62 in (Folding) | about 19 in | about 21 in |
-| 70 in (Compact, fully extended) | about 22 in | about 24 in |
-| 87 in (Extra Long, fully extended) | about 27 in | about 30 in |
+Simple geometry gives the height a ramp reaches at a chosen angle: length times the sine of the angle. At 18 degrees, our arithmetic on the listed lengths (not a maker claim) gives about 19 in for the 62 in Folding Ramp, 22 in for the Compact at 70 in and 27 in for the Extra Long at 87 in; at 20 degrees those become about 21, 24 and 30 in.
 
 ## Measure the vehicle before you buy
 
@@ -247,14 +240,9 @@ The Canine Arthritis Resources and Education page says jumping down from an SUV 
 
 ## What we could not confirm
 
-| What we cannot tell you | Why | Check for yourself |
-| --- | --- | --- |
-| Whether any of the five suits a senior or arthritic dog | No maker page makes a senior or mobility claim; the steps page says "all ages" | Ask your vet |
-| How steep each ramp is on your vehicle | No maker states an incline | Measure your height and do the arithmetic above |
-| The folded size of the folding ramp, the Compact's width and height, the hitch step's height range | The pages list no figure | Ask the maker before packing |
-| Who tested the weight ratings | The ramp pages say independently tested and name no tester | Ask the maker |
-| Whether a ramp or steps suit your dog's spine, hips or pain | Only a vet who examines the dog can say | Ask your vet |
-| Whether a ramp can go on rental steps | None of the pages covers it | Ask the host and the maker |
+- Whether any of the five suits a senior or arthritic dog, or your dog's spine, hips or pain: no maker page makes a senior or mobility claim (the steps page says "all ages"), and only a vet who examines the dog can say. Ask your vet.
+- The folded size of the Folding Ramp, the Compact's width and height and the hitch step's height range: the pages list no figure. Ask the maker before packing.
+- Whether a ramp can go on rental steps: none of the pages covers it. Ask the host and the maker.
 
 ## What to buy first
 

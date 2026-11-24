@@ -180,15 +180,15 @@ That is a convenience sample of managers whose sites we could read, not a survey
 
 Quotes are as written on each live page, re-read on 2026-11-18.
 
-| Manager | What the page says | Does it name a hot tub or spa? |
-| --- | --- | --- |
-| Newman-Dailey Resort Properties | "Dogs are not permitted on the beach or in the pool area and must be on a leash when outside per county regulations." | No: it says "pool area" only |
-| My Vacation Haven | "Pets are not allowed in the pool or hot tub." | Yes: hot tub |
-| Brindley Beach Vacations | "Dogs are not allowed to swim in the pool or the hot tub – additional cleaning may be needed and a charge may apply." | Yes: hot tub |
-| Sun Realty | "Pets are not permitted in pools or hot tubs." | Yes: hot tubs |
-| Beach Realty & Construction | "No dogs are allowed in the pool or hot tub." | Yes: hot tub |
-| Surf or Sound Realty | "All dogs, including approved dogs, are strictly prohibited in the pool and spa." | Yes: spa |
-| Twiddy & Company (blog, one home) | At Sunnybuns: "You can enjoy the pool, but your dogs will have to save their water time for the ocean!" | No: pool only (Twiddy's pet page names hot tubs) |
+| Manager | What the page says |
+| --- | --- |
+| Newman-Dailey Resort Properties | "Dogs are not permitted on the beach or in the pool area" |
+| My Vacation Haven | "Pets are not allowed in the pool or hot tub." |
+| Brindley Beach Vacations | "Dogs are not allowed to swim in the pool or the hot tub – additional cleaning may be needed and a charge may apply." |
+| Sun Realty | "Pets are not permitted in pools or hot tubs." |
+| Beach Realty & Construction | "No dogs are allowed in the pool or hot tub." |
+| Surf or Sound Realty | "All dogs, including approved dogs, are strictly prohibited in the pool and spa." |
+| Twiddy & Company (blog, one home) | At Sunnybuns the pool is fine, but "your dogs will have to save their water time for the ocean!" |
 
 Sources: [Newman-Dailey](https://www.destinvacation.com/pet-friendly), [My Vacation Haven](https://www.myvacationhaven.com/pet-policy), [Brindley Beach](https://www.brindleybeach.com/node/3691), [Sun Realty](https://www.sunrealtync.com/node/1163), [Beach Realty](https://www.beachrealtync.com/node/707), [Surf or Sound](https://www.surforsound.com/vacation-planning/rental-policies/), [Twiddy blog](https://blog.twiddy.com/bring-your-pets-on-vacation/).
 
@@ -234,9 +234,4 @@ Before you pay for a rental with water in the yard, run your dog through the [wi
 
 Everything above rests on the seven quotes (each manager's live page, 2026-11-18), the CDC, VCA and Cornell statements, and the Airbnb and Vrbo help pages. The 7 of 38 figure is our count in a convenience sample, not a random or national one. Not answered anywhere we looked:
 
-| Open question | Who to ask |
-| --- | --- |
-| Whether a given home's host bans dogs from the pool (31 of 38 manager pages are silent, and homes can differ) | The host, in writing |
-| What a pool-related cleaning charge costs (only Brindley Beach mentions one, with no amount) | The host |
-| A safe hot tub time or temperature for a dog | Your vet |
-| Who is liable if a dog is injured at a rental pool | The rental agreement; a lawyer if needed |
+We found no cleaning-charge amount (only Brindley Beach mentions a charge), no safe hot tub time or temperature for a dog (ask your vet) and nothing on who is liable if a dog is injured at a rental pool (read the rental agreement).

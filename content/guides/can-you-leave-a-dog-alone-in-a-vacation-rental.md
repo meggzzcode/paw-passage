@@ -197,13 +197,11 @@ Only if the listing's house rules, or the host in writing, say so. Airbnb says a
 
 Wording varies, so read it literally: one host-forum thread ranges from "dogs must not be left on their own except by prior arrangement" to "Do NOT leave your dog at the cabin unattended." [[12]](https://airhostsforum.com/t/are-these-reasonable-rules-for-dogs/24289)
 
-| What the listing says | What it probably means for your dinner | What to do |
-| --- | --- | --- |
-| "No unattended pets" or "pets may not be left alone" | Someone must stay with the dog | Plan a sitter, daycare, or dog-friendly restaurants, or pick another rental |
-| "Crate required when alone" | Short absences may be allowed with the dog crated | Ask whether you must bring the crate and any time limit |
-| "By prior arrangement" | Permission is case by case | Ask in writing, with dates and likely duration |
-| Pets mentioned, nothing about alone time | Unknown | Ask before booking, and keep the reply |
-| "No furniture" or "not on beds or sofas" | Not about alone time, but it matters when no one is watching | Pack a bed or throw and ask what is allowed |
+| What the listing says | What to do |
+| --- | --- |
+| "No unattended pets" or "pets may not be left alone" | Plan a sitter, daycare, or dog-friendly restaurants, or pick another rental |
+| "Crate required when alone" | Ask whether you must bring the crate and any time limit |
+| "By prior arrangement" | Ask in writing, with dates and likely duration |
 
 **What managers say.** Four managers in our dataset (a convenience sample, re-read on their live pages 2026-11-18) wrote an alone-time rule:
 

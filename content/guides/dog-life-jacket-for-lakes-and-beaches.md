@@ -187,17 +187,9 @@ Buy one if you will be on a boat or dock, in deep or open water, or your dog tir
 
 {{pick:ruffwear-float-coat|For the smallest dogs: from 13-17 in girth|The maker sizes it by girth from XXS (13-17 in) to XL (36-42 in) and lists a lifting handle, a telescoping neck closure and reflective accents, with no flotation rating stated.|https://ruffwear.com/products/float-coat-dog-life-jacket}}
 
-**Calm water, within reach.** Outward Hound's Dawson Swim is sized X-Small to X-Large by girth, with neoprene side panels, a front neck float and top grab handles (dual rescue handles on Medium to XL). [[1]](https://outwardhound.com/dawson-swim-dog-life-jacket/) The maker is blunt about the limits: a flotation aid for a conscious dog in calm waters, never to be left unattended. That makes it a fit for a quiet cove and a poor choice for surf, current or any swim where you cannot stay within reach. The page lists no size ranges or return terms, so read the size chart and the listing before buying.
+**Calm water, within reach.** Outward Hound's Dawson Swim is sized X-Small to X-Large by girth, with neoprene side panels, a front neck float and top grab handles (dual rescue handles on Medium to XL). [[1]](https://outwardhound.com/dawson-swim-dog-life-jacket/) The maker is blunt about the limits: a flotation aid for a conscious dog in calm waters, never to be left unattended. That makes it a fit for a quiet cove and a poor choice for surf, current or any swim where you cannot stay within reach. The maker page lists no girth ranges or return terms, so ask before ordering and read the size chart and the listing before buying.
 
 {{pick:outward-hound-dawson-swim-life-jacket|For calm water, within reach|The maker sizes it XS to XL by girth and calls it a flotation aid for a conscious dog in calm waters; it lists a front neck float and says never to leave the dog unattended.|https://outwardhound.com/dawson-swim-dog-life-jacket/}}
-
-### Size ranges side by side
-
-| Jacket | Sizing basis | Smallest to largest, from the maker page |
-| --- | --- | --- |
-| [Float Coat](https://ruffwear.com/products/float-coat-dog-life-jacket) | Girth | XXS 13-17 in to XL 36-42 in |
-| [DFD](https://store.ezydog.com/dfd-life-jacket/) | Girth and weight, ranges overlap | XS 19-32 in girth (15-25 lb) to XL 30-48 in girth (90+ lb) |
-| [Dawson Swim](https://outwardhound.com/dawson-swim-dog-life-jacket/) | Girth | XS to XL; the page lists no ranges |
 
 ## The fit test, step by step
 

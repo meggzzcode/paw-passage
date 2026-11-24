@@ -189,15 +189,7 @@ Not sure the home takes your dog at all? Start with the [will my dog be accepted
 
 **2. What is the complete pet total?** None of the 38 managers' public pet pages we read (a small convenience sample, read 2026-11-18) stated a holiday pet surcharge, and the pet fees were flat or per-night figures. What differs is the room rate. Ask "what is the full total for these dates with one dog?" and compare with our [pet fees guide](/guides/how-vacation-rental-pet-fees-work).
 
-**3. What does cancellation look like?** Holiday weeks fill early and winter weather disrupts travel. Three examples from pages we read:
-
-| Manager | Cancellation wording on the page |
-| --- | --- |
-| Aunt Bugs Cabin Rentals | "no cancellation policy"; an optional Vacation Guarantee (7% plus tax) allows a refund up to 30 days before arrival for 1-4 bedroom cabins |
-| Hearthside Cabin Rentals | Deposits non-refundable unless you buy the Reservation Guarantee (8%); refund at least 15 days before arrival for 1-5 bedroom cabins |
-| Tahoe Vacation Rentals | Full refund 30 or more days before check-in; 50% from 7 to 30 days; none inside 7 days |
-
-Sources for this table: [[2]](https://www.auntbugs.com/rental-policies/), [[5]](https://hearthsidecabinrentals.com/frequently-asked-questions), [[6]](https://www.tahoevacationrentals.com/reservation-information/)
+**3. What does cancellation look like?** Holiday weeks fill early and winter weather disrupts travel. Some cabin managers sell an optional guarantee for a refund window: Aunt Bugs offers a Vacation Guarantee (7% plus tax) that allows a refund up to 30 days before arrival for 1-4 bedroom cabins and otherwise states "no cancellation policy" [[2]](https://www.auntbugs.com/rental-policies/), and Hearthside makes deposits non-refundable unless you buy the Reservation Guarantee (8%), with a refund at least 15 days before arrival for 1-5 bedroom cabins [[5]](https://hearthsidecabinrentals.com/frequently-asked-questions). Others use a sliding scale: Tahoe Vacation Rentals refunds in full 30 or more days before check-in, 50% from 7 to 30 days, and nothing inside 7 days [[6]](https://www.tahoevacationrentals.com/reservation-information/).
 
 These are three managers, not a pattern. Ask whether a sick dog or a road closure changes anything, and whether the pet fee is refundable.
 

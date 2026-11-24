@@ -55,27 +55,13 @@ CPS describes crash forces as mass multiplied by acceleration. For a harness the
 
 ## Harness or crate?
 
-| Factor | Crash-tested harness | Secured crate |
+| Factor | Harness (rear seat, on the belt) | Crate (cargo area, anchored) |
 | --- | --- | --- |
-| Where it goes | Rear seat, on the seat belt | Cargo area or rear seat area, anchored |
 | Vehicle needs | Seat belt compatible with the harness design | Space, plus strength-rated anchor points |
 | Dog needs | Comfortable in a snug vest; good for dogs that dislike confinement | Comfortable confined; good for dogs that settle in a den |
 | At each stop | Quick on and off; the dog is a seat passenger | Crate stays put; a heavy crate is a hassle to carry |
-| Main risk | Correct sizing and fit | Correct anchoring and sizing |
 
 The ASPCA says a crate is the safest option and describes a harness on a secured seat belt as the alternative. [[8]](https://www.aspca.org/pet-care/general-pet-care/travel-safety-tips) The CDC lists both. [[7]](https://www.cdc.gov/healthy-pets/travel/index.html)
-
-## What the CPS listings say
-
-These are examples of how to read a listing, not a ranking. The records come from CPS listing pages re-read 2026-11-19.
-
-| Product and model | Sizes on the CPS listing | Test dog and date |
-| --- | --- | --- |
-| Harness, Sleepypod Clickit Sport | Small, Medium, Large, X-Large | Small 25 lb; Medium 45 to 90 lb; Large 75 to 90 lb; X-Large up to 90 lb (July 2014, CPS-001-014.01) |
-| Carrier, Sleepypod Atom | One size | 12 lb, five stars (August 2024) |
-| Crate, Lucky Duck Lucky Kennel Large | Large (the directory also lists the Intermediate and Medium) | 110 lb, with the Lucky Ratchet Strap Kit (July 2022) |
-
-Sources for this table: [[1]](https://centerforpetsafety.org/cps-certified/), [[13]](https://centerforpetsafety.org/sleepypod-atom/), [[14]](https://centerforpetsafety.org/lucky-duck-lucky-kennel-large/), [[16]](https://centerforpetsafety.org/sleepypod-clickit-sport/)
 
 ### Harness pick
 

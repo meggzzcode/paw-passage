@@ -176,8 +176,7 @@ You do not have to accept the number as sent. On [Airbnb](https://www.airbnb.com
 
 | Clock | Airbnb | Vrbo |
 | --- | --- | --- |
-| Guest response | 24 hours before Airbnb steps in, for damage requests | Not stated on the pages we read |
-| Host claim window | 14 days from checkout for damage | 14 days after the stay |
+| Host claim window | 14 days from checkout | 14 days after the stay |
 | Appeal | 60 days after you are charged | Contact Us dispute; no deadline on the page |
 
 Two things trip people up. The 60 days to appeal is separate from the 60-day limit for new Resolution Center requests, which excludes damage claims [[2]](https://www.airbnb.com/help/article/3591). And an unanswered Airbnb request can be cancelled and resent within 60 days of checkout, so a late request is worth questioning [[3]](https://www.airbnb.com/help/article/4291). A host blog, Hometime, says 72 hours to pay and 30 days to involve Airbnb Support; that does not match Airbnb's current pages [[13]](https://www.hometime.io/blog/how-to-file-a-damage-claim-with-airbnb), so go by Airbnb.
@@ -192,12 +191,9 @@ If you pay part, decline or stay silent, the host may involve [Airbnb](https://w
 
 Airbnb says pet fees should cover expected cleaning [[7]](https://www.airbnb.com/help/article/3623) and that host protection covers unexpected damage, such as a chewed sofa [[5]](https://www.airbnb.com/d/guarantee) [[6]](https://www.airbnb.com/resources/hosting-homes/a/what-you-need-to-know-about-hosting-pets-463). Its host page also lists extra cleaning for pet-accident stains as reimbursable. No platform text defines hair, odor or stains, so the argument is about "expected": normal hair is arguably what the fee is for, a chewed couch is not. Hosts disagree. In one forum thread the host waived under-$100 extra cleaning after guests who had paid dog fees did not offer to pay, and a commenter said a fee likely blocks a cleaning claim but not drywall damage. One thread, not a rule [[12]](https://www.biggerpockets.com/forums/530/topics/1253487-anyone-successfully-use-vrbo-damage-protection-for-extra-cleaning-sub-200). See our [pet fees guide](/guides/how-vacation-rental-pet-fees-work) for how fees are structured, and our [puppy rental guide](/guides/puppy-at-a-vacation-rental) if a puppy is coming.
 
-| Situation | What the sources say | Your focus |
-| --- | --- | --- |
-| Ordinary hair after a paid pet fee | Fee covers expected costs | Ask what extra work was needed |
-| Stain, odor or scratches | Pet accidents and stains listed as reimbursable | Dated photos, itemized claim |
-| Dog not declared | Vrbo claims can cover undeclared pets | Read the listing and booking terms |
-| Listing said no pets | Airbnb says not to bring pets to such listings | Manager penalties for unapproved dogs can apply too |
+- Ordinary hair after a paid pet fee: ask what extra work was needed.
+- Stain, odor or scratches: send dated photos and ask for an itemized claim.
+- Dog not declared: read the listing and booking terms.
 
 ## What to write back
 
@@ -255,6 +251,3 @@ Confirmed by pages we cite: the 24-hour response, 14-day host window and 60-day 
 | --- | --- |
 | Whether Airbnb enforces the 14-day damage window strictly | Airbnb support: "A host asked for damage money [number] days after checkout. Is that still allowed?" |
 | What an appeal should include, and whether appeals recover money | Airbnb support |
-| Where expected pet cleaning ends and extra cleaning begins | The host: "Does the pet fee cover normal dog hair?" |
-| How "reasonable" is decided and repair amounts are set | The host: share a quote or receipt |
-| Vrbo dispute timelines | Vrbo support |

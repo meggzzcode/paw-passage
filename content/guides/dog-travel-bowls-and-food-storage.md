@@ -164,9 +164,9 @@ A bowl is a one-line decision; the food container and the rental kitchen are whe
 
 **Short answer:**
 
-- **Bring water from home.** The ASPCA says to opt for bottled water or water from home on a road trip, because unfamiliar water could upset a pet's stomach. [[1]](https://www.aspca.org/news/traveling-pets-follow-these-expert-dos-and-donts-keep-them-safe)
-- **Keep kibble in its bag.** If you use another container, the FDA says to put the entire bag into it. [[2]](https://www.fda.gov/animal-veterinary/animal-health-literacy/proper-storage-pet-food-treats)
-- **In bear country, scent is the issue,** not the bowl; see the cabin section. [[3]](https://www.nps.gov/articles/bearsafetyfood.htm)
+- **Bring water from home.** The [ASPCA](https://www.aspca.org/news/traveling-pets-follow-these-expert-dos-and-donts-keep-them-safe) says to opt for bottled water or water from home on a road trip, because unfamiliar water could upset a pet's stomach.
+- **Keep kibble in its bag.** If you use another container, the [FDA](https://www.fda.gov/animal-veterinary/animal-health-literacy/proper-storage-pet-food-treats) says to put the entire bag into it.
+- **In bear country, scent is the issue,** not the bowl; see the cabin section ([National Park Service](https://www.nps.gov/articles/bearsafetyfood.htm)).
 - **Wash bowls by hand in a rental.** That is our advice.
 
 ## Buying checklist
@@ -179,19 +179,19 @@ A bowl is a one-line decision; the food container and the rental kitchen are whe
 
 ## Which dog travel bowl to pack
 
-**For a bowl that disappears into a door pocket, the Kurgo Collaps A Bowl.** It holds 24 ounces and, per the maker, collapses to less than 1 inch high. [[6]](https://www.kurgo.com/pet-travel-bowls/collaps-a-bowl) It suits one bowl for water and food and a dog who drinks a bowlful at a time. Skip it if you want a lid or a bigger drink on a long hike.
+**For a bowl that disappears into a door pocket, the Kurgo Collaps A Bowl.** It holds 24 ounces and, per the maker, collapses to less than 1 inch high ([Kurgo](https://www.kurgo.com/pet-travel-bowls/collaps-a-bowl)). It suits one bowl for water and food and a dog who drinks a bowlful at a time. Skip it if you want a lid or a bigger drink on a long hike.
 
 {{pick:kurgo-collaps-a-bowl|Collapses under 1 in, holds 24 oz|The maker says it holds 24 ounces, collapses to less than 1 inch high and is dishwasher safe on the top rack.|https://www.kurgo.com/pet-travel-bowls/collaps-a-bowl}}
 
-**For a long walk or a thirsty big dog, the Ruffwear Quencher.** It holds 4.2 cups (1 L) with a 5.5 inch opening, in a fabric shell with a waterproof lining the maker labels Food Contact Safe. [[11]](https://ruffwear.com/products/quencher-dog-bowl) Skip it if you want the dishwasher: it is hand wash and air dry, and the shell is water-resistant, not waterproof.
+**For a long walk or a thirsty big dog, the Ruffwear Quencher.** It holds 4.2 cups (1 L) with a 5.5 inch opening, in a fabric shell with a waterproof lining the maker labels Food Contact Safe ([Ruffwear](https://ruffwear.com/products/quencher-dog-bowl)). Skip it if you want the dishwasher: it is hand wash and air dry, and the shell is water-resistant, not waterproof.
 
 {{pick:ruffwear-quencher-bowl|Holds 4.2 cups (1 L) for a longer walk|The maker lists one size, Medium, with a 5.5 in opening and 4.2 cups (1 L), a waterproof lining labelled Food Contact Safe (the maker's wording, no tester named) and hand wash only.|https://ruffwear.com/products/quencher-dog-bowl}}
 
-**For water you carry from the cabin tap, the Gunner Dog Bowl with Travel Lid.** The maker describes the lid as spill-proof and leak-resistant, and the bowl has non-slip rubber feet and is top-rack dishwasher safe. [[13]](https://gunner.com/products/gunner-dog-bowl-black) The page gives no capacity, and one caption says silicone where the copy says nylon, so check the size on the listing and run a water test at home. Skip it if you need a known capacity before you order.
+**For water you carry from the cabin tap, the Gunner Dog Bowl with Travel Lid.** The maker describes the lid as spill-proof and leak-resistant, and the bowl has non-slip rubber feet and is top-rack dishwasher safe ([Gunner](https://gunner.com/products/gunner-dog-bowl-black)). The page gives no capacity, and one caption says silicone where the copy says nylon, so check the size on the listing and run a water test at home. Skip it if you need a known capacity before you order.
 
 {{pick:gunner-dog-bowl|For carrying filled water: a lid the maker calls spill-proof|The maker describes a spill-proof, leak-resistant lid, non-slip rubber feet and a top-rack dishwasher-safe bowl; the page gives no capacity or dimensions, so check the size and test the lid yourself.|https://gunner.com/products/gunner-dog-bowl-black}}
 
-Two more have no cards. Kurgo's Splash Free Wander also holds 24 oz, and its wedge shape lays flat on a car seat. [[12]](https://www.kurgo.com/p/splash-free-wander-dog-water-bowl/K01812) The Springland 22oz Classic and 20oz Flip are bottles with a bowl attached, listed top-rack dishwasher safe. [[7]](https://springlandpets.com/products/22oz-classic-dog-travel-water-bottle) [[8]](https://springlandpets.com/products/20oz-flip-dog-travel-water-bottle) Springland gives the size in the product name only.
+Two more have no cards. [Kurgo](https://www.kurgo.com/p/splash-free-wander-dog-water-bowl/K01812)'s Splash Free Wander also holds 24 oz, and its wedge shape lays flat on a car seat. The [Springland](https://springlandpets.com/products/22oz-classic-dog-travel-water-bottle) 22oz Classic and 20oz Flip are bottles with a bowl attached, listed top-rack dishwasher safe ([Springland](https://springlandpets.com/products/20oz-flip-dog-travel-water-bottle)). Springland gives the size in the product name only.
 
 ## What the maker pages say
 
@@ -208,41 +208,41 @@ No page cites independent testing, so treat leak and spill claims as the maker's
 
 ## Water first
 
-The CDC's pet travel page says to bring plenty of water, food and a bowl. [[4]](https://cdc.gov/healthy-pets/travel/index.html) Water you meet along the way is a separate question: the CDC says dogs can get Giardia by drinking from a contaminated creek, pond or other water source, and that a sick pet's water and food bowls should be regularly cleaned and disinfected. [[5]](https://www.cdc.gov/giardia/about/about-giardia-and-pets.html) Our judgment: carry enough water and a bowl on every walk so the dog never drinks from whatever is nearby.
+The [CDC](https://cdc.gov/healthy-pets/travel/index.html)'s pet travel page says to bring plenty of water, food and a bowl. Water you meet along the way is a separate question: the [CDC](https://www.cdc.gov/giardia/about/about-giardia-and-pets.html) says dogs can get Giardia by drinking from a contaminated creek, pond or other water source, and that a sick pet's water and food bowls should be regularly cleaned and disinfected. Our judgment: carry enough water and a bowl on every walk so the dog never drinks from whatever is nearby.
 
 ## Keeping dry food fresh in the car and the rental
 
-The FDA's advice has four parts: [[2]](https://www.fda.gov/animal-veterinary/animal-health-literacy/proper-storage-pet-food-treats)
+The [FDA](https://www.fda.gov/animal-veterinary/animal-health-literacy/proper-storage-pet-food-treats)'s advice has four parts:
 
 - Store pet food and treats in the original container or bag.
 - If you want another container, put the entire bag into it instead of pouring the kibble in.
 - If you do pour it, use a clean, dry container with a lid that fits snugly.
 - Keep the temperature below 80 F.
 
-The original bag keeps the lot number and "best by" date, which matters if a food is recalled. So a rigid container is a holder for the bag, and a maker's stated capacity is only a guide: one maker says capacity depends on kibble shape. [[9]](https://www.petmate.com/vittles-vault-travel-trainer-portable-food-storage-container/product/4504) Our reading: the 80 F figure is what to check a hot trunk against. No source we read says how fast kibble spoils in a car.
+The original bag keeps the lot number and "best by" date, which matters if a food is recalled. So a rigid container is a holder for the bag, and a maker's stated capacity is only a guide: one maker says capacity depends on kibble shape ([Petmate](https://www.petmate.com/vittles-vault-travel-trainer-portable-food-storage-container/product/4504)). Our reading: the 80 F figure is what to check a hot trunk against. No source we read says how fast kibble spoils in a car.
 
-**For a weekend away, the Kurgo Kibble Carrier.** It is a roll-top ripstop bag with a food-safe PEVA liner that holds up to 5 lbs of dry food, per the maker, and is hand wash only. [[10]](https://www.kurgo.com/dog-travel/kibble-carrier) It is made for carrying, not long-term storage. Skip it if you want a rigid lid.
+**For a weekend away, the Kurgo Kibble Carrier.** It is a roll-top ripstop bag with a food-safe PEVA liner that holds up to 5 lbs of dry food, per the maker, and is hand wash only ([Kurgo](https://www.kurgo.com/dog-travel/kibble-carrier)). It is made for carrying, not long-term storage. Skip it if you want a rigid lid.
 
 {{pick:kurgo-kibble-carrier|Up to 5 lbs of kibble, roll-top|The maker lists up to 5 lbs of dry food, about 20 cups of average kibble, ripstop material with a food-safe PEVA liner, and hand wash only.|https://www.kurgo.com/dog-travel/kibble-carrier}}
 
-**For food and two bowls in one carry, the Vittles Vault Travel-Tainer.** It is a 6-cup container with two 3-cup bowls and a carry handle. [[9]](https://www.petmate.com/vittles-vault-travel-trainer-portable-food-storage-container/product/4504) The bowls are dishwasher safe but the clear container is not. Skip it if your dog needs more than 6 cups for the trip.
+**For food and two bowls in one carry, the Vittles Vault Travel-Tainer.** It is a 6-cup container with two 3-cup bowls and a carry handle ([Petmate](https://www.petmate.com/vittles-vault-travel-trainer-portable-food-storage-container/product/4504)). The bowls are dishwasher safe but the clear container is not. Skip it if your dog needs more than 6 cups for the trip.
 
 {{pick:vittles-vault-travel-tainer|6-cup container plus two 3-cup bowls|The maker lists a 6-cup container with two 3-cup bowls and a carry handle, and says actual capacity depends on kibble shape and density.|https://www.petmate.com/vittles-vault-travel-trainer-portable-food-storage-container/product/4504}}
 
-**For a long stay or a big dog, the IRIS USA airtight container.** It holds about 10 lb of dry food (12.75 quarts), with airtight seals and buckles and a wide top for scooping, per the maker. [[15]](https://www.irisusainc.com/collections/airtight-pet-food-containers/products/airtight-dog-food-storage-container-up-to-10-lbs-3) It stays at the cabin; skip it if it has to ride in a small trunk every trip.
+**For a long stay or a big dog, the IRIS USA airtight container.** It holds about 10 lb of dry food (12.75 quarts), with airtight seals and buckles and a wide top for scooping, per the maker ([IRIS USA](https://www.irisusainc.com/collections/airtight-pet-food-containers/products/airtight-dog-food-storage-container-up-to-10-lbs-3)). It stays at the cabin; skip it if it has to ride in a small trunk every trip.
 
 {{pick:iris-usa-airtight-dog-food-container-10-lb|Holds about 10 lb, airtight seals and buckles|The maker lists 12.75 quarts for about 10 lb of dry food, depending on the food, with airtight seals and buckles; its page makes no bear-resistance claim.|https://www.irisusainc.com/collections/airtight-pet-food-containers/products/airtight-dog-food-storage-container-up-to-10-lbs-3}}
 
 ## Cabins and bear country: food is the rule, not the bowl
 
-The National Park Service says bears treat anything with a scent as food, that its list of items to store properly includes toiletries and ice chests, and that regulations differ from park to park. Some parks let you keep food in a car, out of sight with the windows closed, in daylight hours only; others require lockers. The page does not name pet food, so treat dog food as scented. [[3]](https://www.nps.gov/articles/bearsafetyfood.htm) West Virginia's wildlife agency is more direct: for homes and campsites, "all food, including dog food" belongs in a vehicle or a bear-resistant container. [[14]](https://wvdnr.gov/bearwise-tips/)
+The National Park Service says bears treat anything with a scent as food, that its list of items to store properly includes toiletries and ice chests, and that regulations differ from park to park. Some parks let you keep food in a car, out of sight with the windows closed, in daylight hours only; others require lockers. The page does not name pet food, so treat dog food as scented ([National Park Service](https://www.nps.gov/articles/bearsafetyfood.htm)). West Virginia's wildlife agency is more direct: for homes and campsites, "all food, including dog food" belongs in a vehicle or a bear-resistant container ([West Virginia DNR](https://wvdnr.gov/bearwise-tips/)).
 
 An airtight lid is not a bear-resistance rating; that is our reading. So the dependable plan is the host's: ask where food goes inside the home and whether the property has a bear-resistant bin. Our [cabin packing list](/guides/dog-friendly-cabin-packing-list) covers the rest of bear-aware packing.
 
 ## The rental kitchen: our advice, not a rule
 
 - **Do not use the host's dishes for the dog.** Pack your own bowls, including a spare.
-- **Wash the dog's bowls by hand with your own sponge and dry them on your own towel.** The FDA says to wash and dry pet food bowls after each use. [[2]](https://www.fda.gov/animal-veterinary/animal-health-literacy/proper-storage-pet-food-treats)
+- **Wash the dog's bowls by hand with your own sponge and dry them on your own towel.** The [FDA](https://www.fda.gov/animal-veterinary/animal-health-literacy/proper-storage-pet-food-treats) says to wash and dry pet food bowls after each use.
 - **Feed on a mat you brought.** Spills and stains are what a damage claim is made of; see how the [damage-charge process works](/guides/airbnb-pet-damage-charge-after-checkout).
 - **Skip the host's dishwasher** unless they say yes. Top-rack safety is about the bowl, not the house rules.
 

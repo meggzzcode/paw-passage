@@ -168,7 +168,7 @@ Compare quotes on the first pile, and check the second against your card limit.
 
 ## What the pet fee does and does not cover
 
-On Airbnb, the pet fee is meant for expected cleaning after a pet stay, and it cannot be more than the nightly base rate. For unexpected damage, [Airbnb's pet-fee page](https://www.airbnb.com/help/article/3623) points to its AirCover protection. The fee can be a separate line from the cleaning fee: [Airbnb's pricing page](https://www.airbnb.com/help/article/125) says a pet charge "may be separate from cleaning fees". Managers write it the same way. Tahoe Vacation Rentals says its pet fee "does not include damage or additional cleaning caused by the pet" [[9]](https://www.tahoevacationrentals.com/reservation-information/). So the pet fee is a charge for being allowed in, not insurance.
+On Airbnb, the pet fee is meant for expected cleaning after a pet stay, and it cannot be more than the nightly base rate. For unexpected damage, [Airbnb's pet-fee page](https://www.airbnb.com/help/article/3623) points to its AirCover protection. The fee can be a separate line from the cleaning fee: [Airbnb's pricing page](https://www.airbnb.com/help/article/125) says a pet charge "may be separate from cleaning fees". Managers write it the same way. [Tahoe Vacation Rentals](https://www.tahoevacationrentals.com/reservation-information/) says its pet fee "does not include damage or additional cleaning caused by the pet". So the pet fee is a charge for being allowed in, not insurance.
 
 ## The pet fee line, in our dataset
 
@@ -181,7 +181,7 @@ How each fee type works is in our [pet fees guide](/guides/how-vacation-rental-p
 | AMI Locals | $250 per stay; max 2 dogs, combined weight 50 lb or less |
 | Resort Realty | Non-refundable fee up to $1,000, varying by property, due with the balance payment |
 
-Big Bear states its fee on its pet information page [[8]](https://www.bigbearvacations.com/about-us/pet-information/), and Tahoe on its reservation page [[9]](https://www.tahoevacationrentals.com/reservation-information/). AMI Locals posts its fee in an FAQ [[11]](https://www.amilocals.com/faqs). Rosemary Beach, which charges a non-refundable $300 per pet, maximum 3, does the same [[10]](https://rosemarybeach.com/faq/). Resort Realty's fee is on its Outer Banks page [[12]](https://resortrealty.com/outer-banks-pet-friendly), and Twiddy's blog post lists ten homes that all waive the pet fee and deposit, nine saying "no additional fee or deposit" [[13]](https://blog.twiddy.com/bring-your-pets-on-vacation/).
+Big Bear states its fee on its pet information page ([Big Bear Vacations](https://www.bigbearvacations.com/about-us/pet-information/)), and Tahoe on its reservation page ([Tahoe Vacation Rentals](https://www.tahoevacationrentals.com/reservation-information/)). [AMI Locals](https://www.amilocals.com/faqs) posts its fee in an FAQ. Rosemary Beach, which charges a non-refundable $300 per pet, maximum 3, does the same ([Rosemary Beach Cottage Rental](https://rosemarybeach.com/faq/)). [Resort Realty](https://resortrealty.com/outer-banks-pet-friendly)'s fee is on its Outer Banks page, and [Twiddy](https://blog.twiddy.com/bring-your-pets-on-vacation/)'s blog post lists ten homes that all waive the pet fee and deposit, nine saying "no additional fee or deposit".
 
 Nobody can quote you "the" pet cost from a range this wide. The fee only becomes a number once you know your dates and dog count. Our [no pet fee rentals guide](/guides/vacation-rentals-with-no-pet-fee) goes through what the $0 managers say.
 
@@ -194,11 +194,11 @@ Nobody can quote you "the" pet cost from a range this wide. The fee only becomes
 
 Vrbo's displayed price leaves out optional extras, and its damage deposit is host-set and returned unless the host claims damage. Airbnb shows a cleaning fee separately unless total-price display is on.
 
-The Airbnb cells and cleaning note follow its additional-fees page [[3]](https://www.airbnb.com/help/article/2385). The Vrbo cells follow its price display [[4]](https://help.vrbo.com/articles/About-Price-Display), fee [[5]](https://help.vrbo.com/articles/How-do-I-manage-my-fees) and payment-detail help pages [[6]](https://help.vrbo.com/articles/How-do-I-read-my-payment-details).
+The [Airbnb](https://www.airbnb.com/help/article/2385) cells and cleaning note follow its additional-fees page. The [Vrbo](https://help.vrbo.com/articles/About-Price-Display) cells follow its price display, fee ([Vrbo](https://help.vrbo.com/articles/How-do-I-manage-my-fees)) and payment-detail help pages ([Vrbo](https://help.vrbo.com/articles/How-do-I-read-my-payment-details)).
 
 Managers add their own twists:
 
-- Cabin Rentals of Georgia lists "$50/pet/night" plus a "$75 pet cleaning fee", which the page does not label per night, so we read it as charged once. It also lists "a refundable $250 pet deposit" returned at departure if there is no pet damage or excessive pet hair [[7]](https://cabin-rentals-of-georgia.com/policies). One dog for five nights is $250 plus $75, so $325 of definite pet cost, before the nightly rate and taxes.
+- Cabin Rentals of Georgia lists "$50/pet/night" plus a "$75 pet cleaning fee", which the page does not label per night, so we read it as charged once. It also lists "a refundable $250 pet deposit" returned at departure if there is no pet damage or excessive pet hair ([Cabin Rentals of Georgia](https://cabin-rentals-of-georgia.com/policies)). One dog for five nights is $250 plus $75, so $325 of definite pet cost, before the nightly rate and taxes.
 - Tahoe Vacation Rentals sells a nonrefundable waiver covering up to $1,000 of accidental damage "in lieu of a security deposit", which is a cost even though it replaces a deposit.
 - Tahoe's "$75 plus tax per pet" means its pet line is more than $75.
 
@@ -229,11 +229,11 @@ Rental B, the "no pet fee" one, is cheapest. A and C tie on cost, but C asks for
 
 ## Charges you avoid by asking first
 
-- **Damage and extra cleaning after checkout.** A pet fee does not stand in for a damage claim. If a charge appears afterwards, see [what to do about an Airbnb pet damage charge](/guides/airbnb-pet-damage-charge-after-checkout). Mud is the part you can control: a washable doormat like the Soggy Doggy Microfiber Doormat, which the maker lists with a non-slip backing and says is machine washable [[14]](https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate), gives wet paws somewhere to land. Skip it if the entry is carpeted or tiny. Photos at arrival and checkout matter more than any gear, and our [rental cleanup gear page](/gear/rental-cleanup) lists cleanup options.
+- **Damage and extra cleaning after checkout.** A pet fee does not stand in for a damage claim. If a charge appears afterwards, see [what to do about an Airbnb pet damage charge](/guides/airbnb-pet-damage-charge-after-checkout). Mud is the part you can control: a washable doormat like the [Soggy Doggy](https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate) Microfiber Doormat, which the maker lists with a non-slip backing and says is machine washable, gives wet paws somewhere to land. Skip it if the entry is carpeted or tiny. Photos at arrival and checkout matter more than any gear, and our [rental cleanup gear page](/gear/rental-cleanup) lists cleanup options.
 
 {{pick:soggy-doggy-microfiber-doormat|For muddy entries: a washable mat|The maker lists a non-slip backing and says it is machine washable; it does not say how much mud it holds.|https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate}}
 
-- **A dog the booking did not approve.** Cabin Rentals of Georgia says all pet fees are doubled if an unapproved dog is found [[7]](https://cabin-rentals-of-georgia.com/policies). Tahoe Vacation Rentals lists a $300 nonrefundable per-pet charge and immediate departure for a pet in a non-pet-friendly home [[9]](https://www.tahoevacationrentals.com/reservation-information/).
+- **A dog the booking did not approve.** [Cabin Rentals of Georgia](https://cabin-rentals-of-georgia.com/policies) says all pet fees are doubled if an unapproved dog is found. [Tahoe Vacation Rentals](https://www.tahoevacationrentals.com/reservation-information/) lists a $300 nonrefundable per-pet charge and immediate departure for a pet in a non-pet-friendly home.
 
 ## What we could not confirm
 

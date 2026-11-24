@@ -155,7 +155,7 @@ research:
   researchComplete: true
 ---
 
-Match the cover to the vehicle first. A bench cover suits a car, an extended hammock suits a big dog in a truck or large SUV, and a cargo cape suits a dog that rides behind the rear seat. Measure before you buy: makers list sizes from 45 by 56 inches (bench cover) to 63 by 56 inches (extended hammock). [[1]](https://www.petsafe.com/p/happy-ride-quilted-bench-seat-cover/PTV00-17462/) [[2]](https://kurgo.com/car-seat-covers/dog-hammocks/wander-hammock-extended-width)
+Match the cover to the vehicle first. A bench cover suits a car, an extended hammock suits a big dog in a truck or large SUV, and a cargo cape suits a dog that rides behind the rear seat. Measure before you buy: makers list sizes from 45 by 56 inches (bench cover) to 63 by 56 inches (extended hammock) ([PetSafe](https://www.petsafe.com/p/happy-ride-quilted-bench-seat-cover/PTV00-17462/), [Kurgo](https://kurgo.com/car-seat-covers/dog-hammocks/wander-hammock-extended-width)).
 
 > **At a glance: our picks**
 >
@@ -172,17 +172,17 @@ Match the cover to the vehicle first. A bench cover suits a car, an extended ham
 
 ## Fit: measure first
 
-The makers say the PetSafe cover "fits the back seat of most cars, trucks and SUVs," the Kurgo hammock is for "most full size trucks and large SUVs," and the cape fits "most cargo areas." [[3]](https://www.kurgo.com/p/cargo-cape/POG30-17676) None of these pages lists a vehicle compatibility chart, weight limit or crash-test rating, so the tape measure is the real check. For a compact car, the hammock page points to a smaller standard-width hammock from Kurgo, listed at 55 by 56 inches.
+The makers say the PetSafe cover "fits the back seat of most cars, trucks and SUVs," the [Kurgo](https://www.kurgo.com/p/cargo-cape/POG30-17676) hammock is for "most full size trucks and large SUVs," and the cape fits "most cargo areas." None of these pages lists a vehicle compatibility chart, weight limit or crash-test rating, so the tape measure is the real check. For a compact car, the hammock page points to a smaller standard-width hammock from Kurgo, listed at 55 by 56 inches.
 
 Retail guides sort covers by dog. [Chewy](https://www.chewy.com/education/dog/pet-parenting/your-guide-to-the-best-dog-car-seat-covers-to-protect-your-ride) says hammocks keep a dog out of the footwell, bench covers install easily with seat belt openings, and cargo liners suit large and crated dogs. A [seller page](https://www.seatcoversolutions.com/blogs/news/are-dog-car-seat-covers-and-hammocks-same) suggests covers for small, calm dogs and hammocks for large or active ones. Those are retailers' views, not tests.
 
 ## The back seat: bench cover or hammock
 
-PetSafe's Happy Ride Quilted Bench Seat Cover is listed at 45 by 56 inches, in padded heavy cotton twill, with waterproof protection, a high-grip bottom, leather headrest straps and adjustable straps with seat anchors. The maker says seat belts can be reached without taking it off and that it is machine washable, with no temperature given. [[1]](https://www.petsafe.com/p/happy-ride-quilted-bench-seat-cover/PTV00-17462/) It suits a dog that settles on the seat and a family that still needs the back row. Skip it if your dog is big enough to need the footwell blocked. The page names no weight limit.
+PetSafe's Happy Ride Quilted Bench Seat Cover is listed at 45 by 56 inches, in padded heavy cotton twill, with waterproof protection, a high-grip bottom, leather headrest straps and adjustable straps with seat anchors. The maker says seat belts can be reached without taking it off and that it is machine washable, with no temperature given ([PetSafe](https://www.petsafe.com/p/happy-ride-quilted-bench-seat-cover/PTV00-17462/)). It suits a dog that settles on the seat and a family that still needs the back row. Skip it if your dog is big enough to need the footwell blocked. The page names no weight limit.
 
 {{pick:petsafe-happy-ride-bench-seat-cover|For one dog on a car or SUV back seat|45 by 56 in, waterproof quilted cover with headrest straps, seat anchors and a high-grip bottom; seat belt access without removing it; machine washable.|https://www.petsafe.com/p/happy-ride-quilted-bench-seat-cover/PTV00-17462/}}
 
-A hammock hangs from the front headrests, so it also blocks the route to the front seat and the footwell. Kurgo's Rover Hammock in the extended width is 63 by 56 inches, with eight attachment points, Bench Beans anchors, under-seat paracord and hook-and-loop openings for seat belts and latches. The maker says it is waterproof and stain resistant, and a lifetime guarantee covers manufacturing defects. Remove the front headrest straps to use it as a simple seat cover. [[2]](https://kurgo.com/car-seat-covers/dog-hammocks/wander-hammock-extended-width) It is the one for a Labrador or a pair of dogs in a pickup or large SUV; skip it in a compact car.
+A hammock hangs from the front headrests, so it also blocks the route to the front seat and the footwell. Kurgo's Rover Hammock in the extended width is 63 by 56 inches, with eight attachment points, Bench Beans anchors, under-seat paracord and hook-and-loop openings for seat belts and latches. The maker says it is waterproof and stain resistant, and a lifetime guarantee covers manufacturing defects. Remove the front headrest straps to use it as a simple seat cover ([Kurgo](https://kurgo.com/car-seat-covers/dog-hammocks/wander-hammock-extended-width)). It is the one for a Labrador or a pair of dogs in a pickup or large SUV; skip it in a compact car.
 
 {{pick:kurgo-rover-hammock-extended-width|For a big dog or two in a truck or large SUV|63 by 56 in, eight attachment points, hook-and-loop seat belt and latch openings, lifetime guarantee against manufacturing defects.|https://kurgo.com/car-seat-covers/dog-hammocks/wander-hammock-extended-width}}
 
@@ -192,7 +192,7 @@ For two large dogs, see our [two-large-dogs guide](/guides/two-large-dogs-in-one
 
 ## The cargo area: a cape for an SUV or wagon
 
-If the dog rides behind the rear seat, the damage is to the cargo floor, the folded seat backs and the bumper. Kurgo's Rover Cargo Cape is listed at 52 by 62 inches, with mesh pockets, hook-and-loop back pieces, "multiple attachment points," a fold-out bumper guard with reflective trim and a center zipper for 50/50 split seats. The maker calls the fabric waterproof and stain resistant, and says to spot clean or hand wash and air dry. [[3]](https://www.kurgo.com/p/cargo-cape/POG30-17676) The bumper guard helps if your dog jumps in on their own. Skip the cape if your dog rides on the back seat.
+If the dog rides behind the rear seat, the damage is to the cargo floor, the folded seat backs and the bumper. Kurgo's Rover Cargo Cape is listed at 52 by 62 inches, with mesh pockets, hook-and-loop back pieces, "multiple attachment points," a fold-out bumper guard with reflective trim and a center zipper for 50/50 split seats. The maker calls the fabric waterproof and stain resistant, and says to spot clean or hand wash and air dry ([Kurgo](https://www.kurgo.com/p/cargo-cape/POG30-17676)). The bumper guard helps if your dog jumps in on their own. Skip the cape if your dog rides on the back seat.
 
 {{pick:kurgo-rover-cargo-cape|For a dog behind the rear seat|52 by 62 in, fold-out bumper guard, center zipper for 50/50 split seats; spot clean or hand wash.|https://www.kurgo.com/p/cargo-cape/POG30-17676}}
 
@@ -202,14 +202,14 @@ A cape is not a barrier or a crate. For cargo-area anchors and barriers, see our
 
 Covers change how belts and headrests work. These four checks are our suggestions, built on the maker details above.
 
-1. **Buckle access.** Click each belt in with the cover installed. [[1]](https://www.petsafe.com/p/happy-ride-quilted-bench-seat-cover/PTV00-17462/)
+1. **Buckle access.** Click each belt in with the cover installed ([PetSafe](https://www.petsafe.com/p/happy-ride-quilted-bench-seat-cover/PTV00-17462/)).
 2. **Tether reach.** Fit the harness and tether over the cover and confirm the dog can sit and lie down without the tether pulling tight.
 3. **Headrest straps.** A front passenger must still be able to adjust their headrest, and nothing should hang across a vent or sensor.
 4. **Slip check.** Push the loaded cover; PetSafe lists a high-grip bottom, [Kurgo](https://kurgo.com/car-seat-covers/dog-hammocks/wander-hammock-extended-width) lists anchors and paracord. If it slides, re-tighten the lower straps.
 
 ## A small dog: booster seat
 
-A booster is comfort and a tether point, not upholstery protection. Kurgo's Heather is listed for dogs up to 30 pounds at 12 by 16 by 8 inches, installs on a bucket seat and has an integrated tether, with a removable liner and pad that machine wash on gentle and a waterproof outer seat (spot clean). The maker does not claim it is crash tested, recommends a separate crash-tested harness, and says to replace it after an accident. [[4]](https://www.kurgo.com/p/heather-dog-booster-seat/K01724) It suits a small dog that rides calmer raised to the window. Skip it for a dog over 30 pounds or for a bench seat.
+A booster is comfort and a tether point, not upholstery protection. Kurgo's Heather is listed for dogs up to 30 pounds at 12 by 16 by 8 inches, installs on a bucket seat and has an integrated tether, with a removable liner and pad that machine wash on gentle and a waterproof outer seat (spot clean). The maker does not claim it is crash tested, recommends a separate crash-tested harness, and says to replace it after an accident ([Kurgo](https://www.kurgo.com/p/heather-dog-booster-seat/K01724)). It suits a small dog that rides calmer raised to the window. Skip it for a dog over 30 pounds or for a bench seat.
 
 {{pick:kurgo-heather-booster-seat|For a dog up to 30 lb in a bucket seat|12 x 16 x 8 in, waterproof outer seat, removable washable liner and pad, integrated tether for a harness.|https://www.kurgo.com/p/heather-dog-booster-seat/K01724}}
 
@@ -222,7 +222,7 @@ A booster is comfort and a tether point, not upholstery protection. Kurgo's Heat
 
 [Enterprise's U.S. page](https://www.enterprise.com/en/car-rental-faqs/us-general/car-rental-pet-friendly-policy.html) says pets are allowed, that they must stay in a carrier, and that you must return the car free of "pet hair and dander" to avoid cleaning or detailing fees; service animals can ride without a carrier. We read no other company's terms, and franchises can differ, so read the agreement from the company you book with. Our suggestions: ask before the dog gets in, use a cover that comes off cleanly, and vacuum before you hand the car back.
 
-If the company asks for a carrier, PetSafe's Happy Ride Collapsible Travel Crate is a soft-sided back-seat crate listed for pets up to 60 pounds at 27 by 19 by 28 inches expanded, held by a headrest strap and the seat belt, with a removable waterproof fleece cover that machine washes. The maker describes the dog as contained, not restrained, and the page makes no crash-test claim. [[5]](https://www.petsafe.com/p/happy-ride-collapsible-travel-crate/ZTV00-17289/) It may not fit compact cars, and you should confirm with the rental company that a soft crate counts as a carrier. Skip it if your dog already rides in a crash-tested setup in your own car.
+If the company asks for a carrier, PetSafe's Happy Ride Collapsible Travel Crate is a soft-sided back-seat crate listed for pets up to 60 pounds at 27 by 19 by 28 inches expanded, held by a headrest strap and the seat belt, with a removable waterproof fleece cover that machine washes. The maker describes the dog as contained, not restrained, and the page makes no crash-test claim ([PetSafe](https://www.petsafe.com/p/happy-ride-collapsible-travel-crate/ZTV00-17289/)). It may not fit compact cars, and you should confirm with the rental company that a soft crate counts as a carrier. Skip it if your dog already rides in a crash-tested setup in your own car.
 
 {{pick:petsafe-happy-ride-collapsible-crate|For a rental that requires a carrier|Up to 60 lb, 27 x 19 x 28 in expanded, two doors that fully unzip, headrest strap plus seat belt hold.|https://www.petsafe.com/p/happy-ride-collapsible-travel-crate/ZTV00-17289/}}
 

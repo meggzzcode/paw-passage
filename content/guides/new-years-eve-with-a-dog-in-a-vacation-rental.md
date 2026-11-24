@@ -192,13 +192,13 @@ research:
 approvedBy: Paws & Passage Editors
 approvedOn: 2026-11-18
 ---
-The real risk is a dog that bolts through a door, not only the noise. In the one account we found of a park advertised as firework-free, fireworks went off on arrival, the night before New Year's Eve and at midnight, because the label covered the grounds and not the area around them. [[1]](https://www.petbook-magazine.com/dogs/dog-owner-how-we-were-misled-by-a-firework-free-vacation-park) A host's rule governs guests, not neighbors.
+The real risk is a dog that bolts through a door, not only the noise. In the one account we found of a park advertised as firework-free, fireworks went off on arrival, the night before New Year's Eve and at midnight, because the label covered the grounds and not the area around them ([Petbook](https://www.petbook-magazine.com/dogs/dog-owner-how-we-were-misled-by-a-firework-free-vacation-park)). A host's rule governs guests, not neighbors.
 
 ## Do this first
 
-1. Ask the host how far the nearest homes are and what the fireworks rule says, in writing. [[1]](https://www.petbook-magazine.com/dogs/dog-owner-how-we-were-misled-by-a-firework-free-vacation-park)
-2. Plan the evening: a familiar quiet room far from the noise, a leash even in a fenced yard, and a person at each door. [[4]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/fear-fireworks-and-thunderstorms)
-3. Do not leave the dog alone at midnight; Cabin Rentals of Georgia says no dogs alone in the cabin. [[9]](https://www.cabin-rentals-of-georgia.com/policies)
+1. Ask the host how far the nearest homes are and what the fireworks rule says, in writing ([Petbook](https://www.petbook-magazine.com/dogs/dog-owner-how-we-were-misled-by-a-firework-free-vacation-park)).
+2. Plan the evening: a familiar quiet room far from the noise, a leash even in a fenced yard, and a person at each door ([Cornell Riney Center](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/fear-fireworks-and-thunderstorms)).
+3. Do not leave the dog alone at midnight; [Cabin Rentals of Georgia](https://www.cabin-rentals-of-georgia.com/policies) says no dogs alone in the cabin.
 
 ## Questions to ask the host
 
@@ -217,29 +217,29 @@ Copy, paste and fill in the brackets:
 
 ## What hosts and local rules say
 
-Local law varies by county and city, and wording differs by manager (sample, not a survey, as of 2026-11-18). Aunt Bug's Cabin Rentals (Gatlinburg area) prohibits fireworks at all times and has "some minimum stay requirements during holidays". Cabin Rentals of Georgia prohibits firecrackers on the property. [[9]](https://www.cabin-rentals-of-georgia.com/policies) [[8]](https://www.auntbugs.com/rental-policies/) Two managers' pages do not make the fireworks rule decisive for a booking, so ask your host.
+Local law varies by county and city, and wording differs by manager (sample, not a survey, as of 2026-11-18). Aunt Bug's Cabin Rentals (Gatlinburg area) prohibits fireworks at all times and has "some minimum stay requirements during holidays". [Cabin Rentals of Georgia](https://www.cabin-rentals-of-georgia.com/policies) prohibits firecrackers on the property ([Aunt Bugs](https://www.auntbugs.com/rental-policies/)). Two managers' pages do not make the fireworks rule decisive for a booking, so ask your host.
 
 None of the 38 manager pet pages we read for our [how-many-dogs guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental#how-many-dogs-do-rental-managers-actually-allow) mentioned a holiday pet-fee surcharge (a convenience sample, read 2026-11-18). For the full total, use our [pet fees guide](/guides/how-vacation-rental-pet-fees-work). Booking the week before? See [Christmas week in a cabin with a dog](/guides/christmas-week-in-a-cabin-with-a-dog).
 
 ## Keeping your dog from bolting
 
-Cornell advises a leash even in a fenced yard, and a familiar room far from the noise with few windows. [[4]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/fear-fireworks-and-thunderstorms) Use a crate only if the dog is used to one. Escapes we read about:
+Cornell advises a leash even in a fenced yard, and a familiar room far from the noise with few windows ([Cornell Riney Center](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/fear-fireworks-and-thunderstorms)). Use a crate only if the dog is used to one. Escapes we read about:
 
-- A lab left a Killington, Vermont ski house on New Year's Eve after fireworks. [[11]](https://www.mountaintimes.info/killington-community-helps-visitor-search-for-lost-dog/)
-- A young Golden Retriever bolted from a relative who could not run, after neighbors' fireworks, and was found after two days. [[12]](https://www.kpcw.org/park-city/2024-01-02/park-city-community-helps-reunite-lost-golden-retriever-with-owners)
-- A dog climbed an 8-foot fence around July 4 (a different holiday, same fear), believed spooked by fireworks, and was found months later about 60 miles away. [[14]](https://www.upworthy.com/christmas-miracle-family-reunited-with-their-dog-found-60-miles-away)
+- A lab left a Killington, Vermont ski house on New Year's Eve after fireworks ([Mountain Times](https://www.mountaintimes.info/killington-community-helps-visitor-search-for-lost-dog/)).
+- A young Golden Retriever bolted from a relative who could not run, after neighbors' fireworks, and was found after two days ([KPCW](https://www.kpcw.org/park-city/2024-01-02/park-city-community-helps-reunite-lost-golden-retriever-with-owners)).
+- A dog climbed an 8-foot fence around July 4 (a different holiday, same fear), believed spooked by fireworks, and was found months later about 60 miles away ([Upworthy](https://www.upworthy.com/christmas-miracle-family-reunited-with-their-dog-found-60-miles-away)).
 
-In several of these, a fence, a door, or a person who could not give chase was involved, which is why doors and leashes come first. Patch says even a calm dog can bolt from a rental house or hotel hallway. [[15]](https://patch.com/massachusetts/across-ma/july-4-fireworks-cause-spike-lost-dog-reports-what-ma-pet-owners-should-know) See our [secure fenced yard guide](/guides/vacation-rental-secure-fenced-yard) and [ID tags and GPS trackers guide](/guides/if-your-dog-gets-loose-on-a-trip).
+In several of these, a fence, a door, or a person who could not give chase was involved, which is why doors and leashes come first. [Patch](https://patch.com/massachusetts/across-ma/july-4-fireworks-cause-spike-lost-dog-reports-what-ma-pet-owners-should-know) says even a calm dog can bolt from a rental house or hotel hallway. See our [secure fenced yard guide](/guides/vacation-rental-secure-fenced-yard) and [ID tags and GPS trackers guide](/guides/if-your-dog-gets-loose-on-a-trip).
 
 **ID plan for an unfamiliar place**
 
-- A tag with a mobile number you will answer. Patch recommends a current cell number, a microchip, and a tracker if possible. [[15]](https://patch.com/massachusetts/across-ma/july-4-fireworks-cause-spike-lost-dog-reports-what-ma-pet-owners-should-know)
-- Current microchip registration; a chip identified the dog in the 60-mile case. [[14]](https://www.upworthy.com/christmas-miracle-family-reunited-with-their-dog-found-60-miles-away)
+- A tag with a mobile number you will answer. [Patch](https://patch.com/massachusetts/across-ma/july-4-fireworks-cause-spike-lost-dog-reports-what-ma-pet-owners-should-know) recommends a current cell number, a microchip, and a tracker if possible.
+- Current microchip registration; a chip identified the dog in the 60-mile case ([Upworthy](https://www.upworthy.com/christmas-miracle-family-reunited-with-their-dog-found-60-miles-away)).
 - A recent photo on your phone, ready to post.
 
 ## What helps a dog scared of New Year's Eve fireworks
 
-Food or play during noise has the strongest support. Riemer's 2023 review calls gradual desensitization with recorded sounds the "gold standard", though some dogs do not respond, and says medication belongs with behavior work, not alone. [[2]](https://pmc.ncbi.nlm.nih.gov/articles/PMC10705068/) Desensitization takes weeks of training, so it cannot be done in the week before 31 December; ask your vet about it for next year and use the steps below this time.
+Food or play during noise has the strongest support. Riemer's 2023 review calls gradual desensitization with recorded sounds the "gold standard", though some dogs do not respond, and says medication belongs with behavior work, not alone ([Animals (Basel)](https://pmc.ncbi.nlm.nih.gov/articles/PMC10705068/)). Desensitization takes weeks of training, so it cannot be done in the week before 31 December; ask your vet about it for next year and use the steps below this time.
 
 | What | What the sources say |
 | --- | --- |
@@ -247,27 +247,27 @@ Food or play during noise has the strongest support. Riemer's 2023 review calls 
 | Safe space, masking sound | Short-term and "important (but not sufficient)"; Cornell recommends a quiet room |
 | Pressure vests | "a small beneficial effect is possible" |
 
-Sources for this table: [[3]](https://avsab.org/survey-shows-which-treatments-are-effective-for-fireworks-fears-in-dogs/)
+Sources for this table: [AVSAB](https://avsab.org/survey-shows-which-treatments-are-effective-for-fireworks-fears-in-dogs/)
 
-Owners of dogs given a placebo often report improvement, and one study found no evidence of calming properties for cannabidiol. [[2]](https://pmc.ncbi.nlm.nih.gov/articles/PMC10705068/) Cornell advises trying any prescribed medication on a quiet day first, so talk to your vet well ahead, and never to punish a scared dog. [[4]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/fear-fireworks-and-thunderstorms)
+Owners of dogs given a placebo often report improvement, and one study found no evidence of calming properties for cannabidiol ([Animals (Basel)](https://pmc.ncbi.nlm.nih.gov/articles/PMC10705068/)). Cornell advises trying any prescribed medication on a quiet day first, so talk to your vet well ahead, and never to punish a scared dog ([Cornell Riney Center](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/fear-fireworks-and-thunderstorms)).
 
 ## What to buy for the night
 
 Nothing here replaces a tag with a number you will answer and a current chip record. Each item answers one problem above, and each says who can skip it.
 
-**If your dog will eat or play during noise, get the chew.** Food or play is the best-supported method in the table, so have something ready before dark. The KONG Classic is a stuffable natural rubber toy in six size bands by dog weight, from XS (up to 5 lb) to XXL (85+ lb); the maker says to size up if between sizes, to use it under supervision and that no toy is indestructible. [[18]](https://www.kongcompany.com/kong-classic/) Stuff it ahead of time. It delivers food during noise; it is not a treatment, and the maker makes no calming claim. Skip it if your dog refuses food when scared; ask your vet instead.
+**If your dog will eat or play during noise, get the chew.** Food or play is the best-supported method in the table, so have something ready before dark. The [KONG](https://www.kongcompany.com/kong-classic/) Classic is a stuffable natural rubber toy in six size bands by dog weight, from XS (up to 5 lb) to XXL (85+ lb); the maker says to size up if between sizes, to use it under supervision and that no toy is indestructible. Stuff it ahead of time. It delivers food during noise; it is not a treatment, and the maker makes no calming claim. Skip it if your dog refuses food when scared; ask your vet instead.
 
 {{pick:kong-classic|A chew for the first bangs|The maker publishes six size bands by dog weight, from XS up to 5 lb to XXL 85+ lb, and says supervised use only and to stop using a damaged toy.|https://www.kongcompany.com/kong-classic/}}
 
-**If the quiet room is unfamiliar, bring a spot that smells like home.** The Kurgo Loft Wander rolls up for travel (Medium 27 x 36 in open, Large 36 x 48 in open), has a water-resistant top and a nonslip, waterproof bottom, and the maker says it can be machine washed on a gentle cycle. [[19]](https://www.kurgo.com/p/loft-wander-dog-bed/K01560) The page gives no dog weight guidance, so measure your dog lying stretched out first. It is not a pressure vest, and the page makes no anxiety claim. Skip it if your dog's own bed fits in the car.
+**If the quiet room is unfamiliar, bring a spot that smells like home.** The [Kurgo](https://www.kurgo.com/p/loft-wander-dog-bed/K01560) Loft Wander rolls up for travel (Medium 27 x 36 in open, Large 36 x 48 in open), has a water-resistant top and a nonslip, waterproof bottom, and the maker says it can be machine washed on a gentle cycle. The page gives no dog weight guidance, so measure your dog lying stretched out first. It is not a pressure vest, and the page makes no anxiety claim. Skip it if your dog's own bed fits in the car.
 
 {{pick:kurgo-loft-wander-dog-bed|A familiar spot, packed flat|The maker lists two sizes (27 x 36 in and 36 x 48 in open), a waterproof nonslip bottom, a carry handle and machine-wash care.|https://www.kurgo.com/p/loft-wander-dog-bed/K01560}}
 
-**If the midnight potty break is in the dark, add a light.** The Ruffwear Beacon is a clip-on light with Slow Flash, Fast Flash and Always On modes and a stated run time of up to 20 hours, waterproof to 1 m for 30 minutes (maker figures). [[21]](https://ruffwear.com/products/the-beacon-safety-dog-light) It clips to Ruffwear collars and apparel light loops, so skip it if your dog's gear has none. It does not replace the leash.
+**If the midnight potty break is in the dark, add a light.** The [Ruffwear](https://ruffwear.com/products/the-beacon-safety-dog-light) Beacon is a clip-on light with Slow Flash, Fast Flash and Always On modes and a stated run time of up to 20 hours, waterproof to 1 m for 30 minutes (maker figures). It clips to Ruffwear collars and apparel light loops, so skip it if your dog's gear has none. It does not replace the leash.
 
 {{pick:ruffwear-the-beacon-dog-safety-light|Seeing the dog after dark|The maker lists three modes, up to 20 hours of run time and a Quick Clip for Ruffwear collars and light loops.|https://ruffwear.com/products/the-beacon-safety-dog-light}}
 
-**If your dog has bolted before, add a tracker as a second layer.** A GPS tracker is meant to show where the dog went. The Petcube GPS Tracker weighs 29 g, and its maker says a paid plan is required and lists battery of up to 30 days in power save mode. [[20]](https://petcube.com/tracker/) Check the plan cost and cellular coverage near the cabin first. In a round-up of GPS collars, Tree Line Review called the Petcube GPS Tracker "the most inaccurate location-wise" of the group, a single reviewer's verdict; our [tracker guide](/guides/if-your-dog-gets-loose-on-a-trip) has the full buying checklist. [[22]](https://www.treelinereview.com/gearreviews/best-gps-dog-collars) Skip it for a dog that has never bolted and will be on a leash all night, and if location accuracy matters most, read the buying checklist in the tracker guide before choosing.
+**If your dog has bolted before, add a tracker as a second layer.** A GPS tracker is meant to show where the dog went. The [Petcube](https://petcube.com/tracker/) GPS Tracker weighs 29 g, and its maker says a paid plan is required and lists battery of up to 30 days in power save mode. Check the plan cost and cellular coverage near the cabin first. In a round-up of GPS collars, [Tree Line Review](https://www.treelinereview.com/gearreviews/best-gps-dog-collars) called the Petcube GPS Tracker "the most inaccurate location-wise" of the group, a single reviewer's verdict; our [tracker guide](/guides/if-your-dog-gets-loose-on-a-trip) has the full buying checklist. Skip it for a dog that has never bolted and will be on a leash all night, and if location accuracy matters most, read the buying checklist in the tracker guide before choosing.
 
 **Buy in this order:**
 
@@ -283,25 +283,25 @@ More ID and safety items are in the [safety, ID and first aid gear](/gear/safety
 
 Our suggested schedule, from the guidance above:
 
-- **Daytime:** exercise early. [[4]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/fear-fireworks-and-thunderstorms) Check the yard for gaps and debris; [ASPCA](https://www.aspca.org/news/ring-pet-safe-new-year-these-expert-safety-tips) warns that ingesting fireworks is very dangerous.
-- **Late afternoon:** set up the quiet room with warm blankets [[5]](https://www.aspca.org/news/ring-pet-safe-new-year-these-expert-safety-tips), and put alcohol and guests' medications out of reach.
+- **Daytime:** exercise early ([Cornell Riney Center](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/fear-fireworks-and-thunderstorms)). Check the yard for gaps and debris; [ASPCA](https://www.aspca.org/news/ring-pet-safe-new-year-these-expert-safety-tips) warns that ingesting fireworks is very dangerous.
+- **Late afternoon:** set up the quiet room with warm blankets ([ASPCA](https://www.aspca.org/news/ring-pet-safe-new-year-these-expert-safety-tips)), and put alcohol and guests' medications out of reach.
 - **Before dark:** last potty break on a leash, a person at each door. Check the tag.
 - **Evening:** keep the dog with you, food or play ready; give treats when bangs start.
 - **After midnight:** leash for the first outing; check the yard again.
 
-**Keep saved:** ASPCA Animal Poison Control (888) 426-4435, 24 hours a day, a consultation fee may apply [[6]](https://www.aspca.org/pet-care/animal-poison-control); Pet Poison Helpline (855) 764-7661, 24/7. [[7]](https://www.petpoisonhelpline.com/) Our [first-aid kit guide](/guides/dog-travel-first-aid-kit-guide) lists items to keep handy.
+**Keep saved:** [ASPCA](https://www.aspca.org/pet-care/animal-poison-control) Animal Poison Control (888) 426-4435, 24 hours a day, a consultation fee may apply; [Pet Poison Helpline](https://www.petpoisonhelpline.com/) (855) 764-7661, 24/7. Our [first-aid kit guide](/guides/dog-travel-first-aid-kit-guide) lists items to keep handy.
 
-Tell guests not to let the dog out. If you plan to go out, see our [guide on leaving a dog alone](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental): Vacasa says not unsupervised [[10]](https://www.vacasa.com/pet-friendly-vacation-rentals), and Aunt Bug's asks for a crate. [[8]](https://www.auntbugs.com/rental-policies/)
+Tell guests not to let the dog out. If you plan to go out, see our [guide on leaving a dog alone](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental): [Vacasa](https://www.vacasa.com/pet-friendly-vacation-rentals) says not unsupervised, and [Aunt Bug's](https://www.auntbugs.com/rental-policies/) asks for a crate.
 
 ## If your dog runs
 
-Ask people to phone you rather than chase. In Killington, the public was asked to do exactly that. [[11]](https://www.mountaintimes.info/killington-community-helps-visitor-search-for-lost-dog/) In Park City, a finder saw a phone number on a notice, sat down so as not to frighten the dog, and the owner talked to the dog by speakerphone. [[12]](https://www.kpcw.org/park-city/2024-01-02/park-city-community-helps-reunite-lost-golden-retriever-with-owners)
+Ask people to phone you rather than chase. In Killington, the public was asked to do exactly that ([Mountain Times](https://www.mountaintimes.info/killington-community-helps-visitor-search-for-lost-dog/)). In Park City, a finder saw a phone number on a notice, sat down so as not to frighten the dog, and the owner talked to the dog by speakerphone ([KPCW](https://www.kpcw.org/park-city/2024-01-02/park-city-community-helps-reunite-lost-golden-retriever-with-owners)).
 
-- Post flyers with your mobile number. In Homer, Alaska, a small dog missing since New Year's Eve was found about two weeks later by a woman who had seen his poster; he was dehydrated and thin. [[13]](https://www.kbbi.org/local-news/2022-01-13/pup-found-after-days-in-the-zero-degree-cold)
+- Post flyers with your mobile number. In Homer, Alaska, a small dog missing since New Year's Eve was found about two weeks later by a woman who had seen his poster; he was dehydrated and thin ([KBBI](https://www.kbbi.org/local-news/2022-01-13/pup-found-after-days-in-the-zero-degree-cold)).
 - Alert shelters and lost-pet pages near the rental.
 - Plan for cold; it added danger in the Homer story.
 
-There is no national count for New Year's Eve: Petco Love's 2023 release says July 4 is the peak day, and a self-selected Dutch survey found about 5% of dogs had ever been lost after hearing fireworks. [[17]](https://prnewswire.com/news-releases/lost-pets-fill-animal-shelters-after-july-4th-festivities-petco-love-urging-pet-parents-to-search-for-them-on-petco-love-lost-301870824.html) [[16]](https://www.uu.nl/en/news/survey-result-fireworks-outside-new-years-eve-disastrous-for-animal-welfare)
+There is no national count for New Year's Eve: [Petco Love](https://prnewswire.com/news-releases/lost-pets-fill-animal-shelters-after-july-4th-festivities-petco-love-urging-pet-parents-to-search-for-them-on-petco-love-lost-301870824.html)'s 2023 release says July 4 is the peak day, and a self-selected Dutch survey found about 5% of dogs had ever been lost after hearing fireworks ([Utrecht University](https://www.uu.nl/en/news/survey-result-fireworks-outside-new-years-eve-disastrous-for-animal-welfare)).
 
 ## What we could not confirm
 

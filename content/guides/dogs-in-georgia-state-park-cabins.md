@@ -165,7 +165,7 @@ research:
   researchComplete: true
 ---
 
-Only designated cottages take dogs, and the state publishes no official list of them, so confirm your exact unit with the park before you pay. The rules below are from the Georgia State Parks rules page, read 2026-11-18. [[1]](https://gastateparks.org/ParkRules)
+Only designated cottages take dogs, and the state publishes no official list of them, so confirm your exact unit with the park before you pay. The rules below are from the [Georgia State Parks](https://gastateparks.org/ParkRules) rules page, read 2026-11-18.
 
 ## The rules at a glance
 
@@ -177,38 +177,38 @@ Only designated cottages take dogs, and the state publishes no official list of 
 | Leash | A 6-foot leash at all times when not inside cottages. No tying to trees, fences or the ground. |
 | Extra charges | Extra fees are assessed when extra cleaning is required or the cottage or fixtures are damaged. |
 
-Kennels are not available at the parks, and pets are not allowed in lodges, yurts, group camps, swimming areas or beaches. [[1]](https://gastateparks.org/ParkRules)
+Kennels are not available at the parks, and pets are not allowed in lodges, yurts, group camps, swimming areas or beaches ([Georgia State Parks](https://gastateparks.org/ParkRules)).
 
 ## Which Georgia state parks have dog friendly cabins
 
-There is no single official list on the pages we read. The cottages page says "Designated dog-friendly cabins are available" and gives two park examples. [[2]](https://gastateparks.org/Cottages) Here is what each official page says, park by park:
+There is no single official list on the pages we read. The cottages page says "Designated dog-friendly cabins are available" and gives two park examples ([Georgia State Parks](https://gastateparks.org/Cottages)). Here is what each official page says, park by park:
 
-- **Skidaway Island:** Cabin B, the ADA accessible one, allows pets; Cabins A and C do not. [[2]](https://gastateparks.org/Cottages)
-- **Mistletoe:** one cabin is described as pet-friendly for a fee, with no amount shown. [[2]](https://gastateparks.org/Cottages)
-- **Smithgall Woods:** the Garden Cottage is "our singular pet-friendly (with fee) cabin" among six cottages. [[3]](https://gastateparks.org/SmithgallWoods/Cottages)
+- **Skidaway Island:** Cabin B, the ADA accessible one, allows pets; Cabins A and C do not ([Georgia State Parks](https://gastateparks.org/Cottages)).
+- **Mistletoe:** one cabin is described as pet-friendly for a fee, with no amount shown ([Georgia State Parks](https://gastateparks.org/Cottages)).
+- **Smithgall Woods:** the Garden Cottage is "our singular pet-friendly (with fee) cabin" among six cottages ([Georgia State Parks](https://gastateparks.org/SmithgallWoods/Cottages)).
 
-Fort Yargo and Red Top Mountain list cottages with no pet wording, so call before booking (770-867-3489 for Fort Yargo). [[4]](https://gastateparks.org/FortYargo) [[5]](https://gastateparks.org/RedTopMountain)
+Fort Yargo and Red Top Mountain list cottages with no pet wording, so call before booking (770-867-3489 for Fort Yargo) ([Georgia State Parks](https://gastateparks.org/FortYargo), [Georgia State Parks](https://gastateparks.org/RedTopMountain)).
 
-An Explore Georgia list (undated) adds dog-friendly cottages at Black Rock Mountain (#5, #8 and #10), Crooked River (four), F.D. Roosevelt (four) and Mistletoe (five). [[6]](https://exploregeorgia.org/places-to-stay/list/stay-in-these-cozy-cabins-with-your-dog-at-georgia-state-parks) Treat it as a lead, since designations can change; GoPetFriendly (August 2024) also lists cottage numbers [[7]](https://gopetfriendly.com/blog/us-state-parks-that-allow-pets-your-guide-to-pet-friendly-cabins-campgrounds-beaches-and-more). The park confirms the unit you book.
+An [Explore Georgia](https://exploregeorgia.org/places-to-stay/list/stay-in-these-cozy-cabins-with-your-dog-at-georgia-state-parks) list (undated) adds dog-friendly cottages at Black Rock Mountain (#5, #8 and #10), Crooked River (four), F.D. Roosevelt (four) and Mistletoe (five). Treat it as a lead, since designations can change; [GoPetFriendly](https://gopetfriendly.com/blog/us-state-parks-that-allow-pets-your-guide-to-pet-friendly-cabins-campgrounds-beaches-and-more) (August 2024) also lists cottage numbers. The park confirms the unit you book.
 
 ## How do you request a dog friendly cabin?
 
 The rules page does not say how to request. A practical route:
 
 1. Pick a cabin the park describes as dog-friendly, or ask which ones are.
-2. Call the reservations line, 1-800-864-7275 (Monday to Friday 8 a.m. to 8 p.m., Saturday and Sunday 9 a.m. to 5 p.m. Eastern, as of 2026-11-18), or the park office. [[8]](https://gastateparks.org/Reservations)
+2. Call the reservations line, 1-800-864-7275 (Monday to Friday 8 a.m. to 8 p.m., Saturday and Sunday 9 a.m. to 5 p.m. Eastern, as of 2026-11-18), or the park office ([Georgia State Parks](https://gastateparks.org/Reservations)).
 3. Say how many dogs you are bringing and ask for the request to be noted on the booking.
 4. Ask for a written confirmation, then bring it.
 
-The rules page says the $50 is collected at check-in; Animal of Things (August 2026) says at booking and cites no source [[9]](https://animalofthings.com/dogs-in-state-parks-in-georgia/), so ask. The Mistletoe and Smithgall fee amounts are not shown on their pages, and the rules page says working service animals are allowed in overnight accommodations without explaining booking steps, so raise both when you call.
+The rules page says the $50 is collected at check-in; [Animal of Things](https://animalofthings.com/dogs-in-state-parks-in-georgia/) (August 2026) says at booking and cites no source, so ask. The Mistletoe and Smithgall fee amounts are not shown on their pages, and the rules page says working service animals are allowed in overnight accommodations without explaining booking steps, so raise both when you call.
 
-Booking timing: reservations open 13 months ahead, or 14 for Georgia residents. [[8]](https://gastateparks.org/Reservations) Cancelling a cottage costs $10 if you cancel 15 or more days out, and lose 50% of the use fee at 14 days or fewer. Check-in is 4 to 10 p.m., checkout 11 a.m., and the balance is due at check-in. [[10]](https://gastateparks.org/ReservationPolicies) The cottages page puts rates at around $85 to $250 per night with no separate cleaning fee, while the reservations page says $75 to $250, so confirm the price for your dates. [[2]](https://gastateparks.org/Cottages)
+Booking timing: reservations open 13 months ahead, or 14 for Georgia residents ([Georgia State Parks](https://gastateparks.org/Reservations)). Cancelling a cottage costs $10 if you cancel 15 or more days out, and lose 50% of the use fee at 14 days or fewer. Check-in is 4 to 10 p.m., checkout 11 a.m., and the balance is due at check-in ([Georgia State Parks](https://gastateparks.org/ReservationPolicies)). The cottages page puts rates at around $85 to $250 per night with no separate cleaning fee, while the reservations page says $75 to $250, so confirm the price for your dates.
 
 ## Can you leave a dog alone in a state park cabin?
 
-No. A dog cannot wait in the cabin, your vehicle or the park while you hike, kayak or eat out. [[1]](https://gastateparks.org/ParkRules) Plan trips where the dog goes with you; see our guide to [leaving a dog alone in a rental](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental) for how private hosts word the same rule.
+No. A dog cannot wait in the cabin, your vehicle or the park while you hike, kayak or eat out ([Georgia State Parks](https://gastateparks.org/ParkRules)). Plan trips where the dog goes with you; see our guide to [leaving a dog alone in a rental](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental) for how private hosts word the same rule.
 
-On trails, pets are welcome at state parks on a leash no longer than six feet, but not on some trails at Panola Mountain and Tallulah Gorge. [[1]](https://gastateparks.org/ParkRules) Tallulah's own page says pets are not allowed on the gorge floor, Sliding Rock Trail or the Hurricane Falls staircase to the suspension bridge, and that leashed pets are welcome on the rim trails. [[11]](https://gastateparks.org/TallulahGorge) That page lists no cottages at Tallulah, so Tallulah is a day-hike stop in this guide, not a cabin to book. The Red Top Mountain page gives no trail rules for pets, so the six-foot rule is what the official pages support there. [[5]](https://gastateparks.org/RedTopMountain)
+On trails, pets are welcome at state parks on a leash no longer than six feet, but not on some trails at Panola Mountain and Tallulah Gorge ([Georgia State Parks](https://gastateparks.org/ParkRules)). Tallulah's own page says pets are not allowed on the gorge floor, Sliding Rock Trail or the Hurricane Falls staircase to the suspension bridge, and that leashed pets are welcome on the rim trails ([Georgia State Parks](https://gastateparks.org/TallulahGorge)). That page lists no cottages at Tallulah, so Tallulah is a day-hike stop in this guide, not a cabin to book. The Red Top Mountain page gives no trail rules for pets, so the six-foot rule is what the official pages support there.
 
 ## What to ask the park
 
@@ -233,7 +233,7 @@ A state park cottage sets one two-dog limit regardless of size, one fee and one 
 | Cabin Rentals of Georgia | Under 35 lb, non-shedding, crate trained; every dog approved first | $50 per pet per night, $75 cleaning, $250 refundable deposit |
 | A Blue Ridge Cabin Rental | 2 pets per stay; deeper cleaning can cost more | $150 per pet, non-refundable |
 
-Sources for this table: [[12]](https://cabin-rentals-of-georgia.com/policies), [[13]](https://ablueridgecabinrental.com/cabin-policies/). Sliding Rock Cabins lists no pet fees or breed or weight limits and offers fenced yards only at select cabins. [[14]](https://slidingrockcabins.com/)
+Sources for this table: [Cabin Rentals of Georgia](https://cabin-rentals-of-georgia.com/policies), [A Blue Ridge Cabin Rental](https://ablueridgecabinrental.com/cabin-policies/). [Sliding Rock Cabins](https://slidingrockcabins.com/) lists no pet fees or breed or weight limits and offers fenced yards only at select cabins.
 
 **Which to choose:** pick the state park cottage if you have one or two dogs, want a flat fee and can keep the dog with you every minute. Pick a private cabin if you have a third dog, need a fenced yard or want to leave the dog for an hour.
 
@@ -243,11 +243,11 @@ Our [pet fees guide](/guides/how-vacation-rental-pet-fees-work) explains how tho
 
 The rules need a leash of 6 feet or shorter outside the cottage, cleanup bags, and water on every outing, since the dog cannot wait behind. The rest is in our [dog-friendly cabin packing list](/guides/dog-friendly-cabin-packing-list) and the [packing list tool](/tools/packing-list).
 
-**A leash that fits the rule.** If your leash is 6 feet or shorter, skip this. If it is longer, Ruffwear's Knot-a-Leash is a rope leash the maker lists at 5 ft in both sizes (Small with 7 mm rope, Large with 11 mm rope), so it sits inside the 6-foot limit, with an auto-locking carabiner and an accessory loop for bags. [[15]](https://ruffwear.com/products/knot-a-leash-dog-leash) The page gives no strength rating or dog-weight guidance, so check the size against your dog before ordering.
+**A leash that fits the rule.** If your leash is 6 feet or shorter, skip this. If it is longer, [Ruffwear](https://ruffwear.com/products/knot-a-leash-dog-leash)'s Knot-a-Leash is a rope leash the maker lists at 5 ft in both sizes (Small with 7 mm rope, Large with 11 mm rope), so it sits inside the 6-foot limit, with an auto-locking carabiner and an accessory loop for bags. The page gives no strength rating or dog-weight guidance, so check the size against your dog before ordering.
 
 {{pick:ruffwear-knot-a-leash|Fits the 6-foot leash rule|Maker lists 5 ft in Small (7 mm rope) and Large (11 mm rope), with an accessory loop for bags; no strength rating or weight guidance is stated, so check the size yourself.|https://ruffwear.com/products/knot-a-leash-dog-leash}}
 
-**Water for the outing.** The dog cannot wait behind, so water travels with you. For short walks, Springland's 22oz Classic is a squeeze-to-fill bottle with an attached bowl that works one-handed; the maker lists food-safe, BPA-free polypropylene with an aluminum carabiner and a leak-proof lock design, and the leak claim is the maker's. [[16]](https://springlandpets.com/products/22oz-classic-dog-travel-water-bottle) For a full hiking day with a thirsty or larger dog, Ruffwear's Quencher collapsible bowl holds 4.2 cups (1 L); the shell is water-resistant, not waterproof, and it is hand wash only. [[17]](https://ruffwear.com/products/quencher-dog-bowl) Pick one: the bottle for short outings, the Quencher for long ones, and neither if you already clip a bowl and bottle to your pack.
+**Water for the outing.** The dog cannot wait behind, so water travels with you. For short walks, [Springland](https://springlandpets.com/products/22oz-classic-dog-travel-water-bottle)'s 22oz Classic is a squeeze-to-fill bottle with an attached bowl that works one-handed; the maker lists food-safe, BPA-free polypropylene with an aluminum carabiner and a leak-proof lock design, and the leak claim is the maker's. For a full hiking day with a thirsty or larger dog, [Ruffwear](https://ruffwear.com/products/quencher-dog-bowl)'s Quencher collapsible bowl holds 4.2 cups (1 L); the shell is water-resistant, not waterproof, and it is hand wash only. Pick one: the bottle for short outings, the Quencher for long ones, and neither if you already clip a bowl and bottle to your pack.
 
 {{pick:springland-22oz-original-travel-bottle|One-hand water for short outings|The maker describes a squeeze-to-fill bottle with an attached bowl, a leak-proof lock design and an aluminum carabiner; the 22oz size appears in the name only.|https://springlandpets.com/products/22oz-classic-dog-travel-water-bottle}}
 

@@ -15,3 +15,14 @@ Expected score: about 9.2 (answer 5, flow 4-5, buying advice 5, placement 4-5, l
 ## For the lead
 - docs/pinterest-pins.csv row puppy-at-a-vacation-rental: title still says "Age Rules, Accidents and Deposits" and is printed on public/pins/puppy-at-a-vacation-rental.jpg. New pin title: "Taking a Puppy to a Vacation Rental: Age Rules, Accidents and Fees"; the image needs re-rendering. Suggested pin description: "Taking a puppy to a vacation rental? 5 of 38 managers set a minimum age or ban puppies. See their exact words and copy a host message."
 - Pawtect pads maker URL is petparentsbrand.com/products/washable-puppy-pads (product manufacturerUrl); the hero (small terrier puppy) is fine.
+
+## Round 3
+- KONG "cheapest" price claim replaced with "smallest item to pack".
+- "Buy first" wording removed from the pads and iCrate paragraphs; it now lives only in "What to buy first" (iCrate if already crate-trained, otherwise pads).
+- Repeated quotes: removed the Resort Realty and Emmons "No exceptions" paragraph from "Age rules" (Resort Realty is still quoted in the five-page list and the fee clause).
+- Pawtect Pads: body and buy list now say the card link is the smallest pack (Extra Small, 18 x 24 in) and to choose the size on the listing.
+- Checklist section folded into "What to buy first" (vet, alone-time plan, fee and damage terms).
+- seoTitle "Vacation Rental With a Puppy: Age Rules" (39 chars). lastReviewed 2026-11-24, readingMinutes 12 (about 2,800 words).
+
+## For the lead
+- Card heading brand duplication is a template item (done elsewhere); no product removed.

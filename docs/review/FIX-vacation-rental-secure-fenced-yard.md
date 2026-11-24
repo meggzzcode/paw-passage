@@ -15,3 +15,9 @@ Expected score: about 9.1 (answer 5, flow 4-5, buying 4-5, placement 4-5, layout
 ## For the lead
 - Pin row (docs/pinterest-pins.csv) still matches the unchanged H1; optionally echo "fenced yard vacation rental" in its description.
 - Knot-a-Leash catalog category is trail-and-hiking and its relatedGuides is empty; add this guide to its relatedGuides if the catalog tracks it.
+
+## Round 3
+- "Buy first" now appears only in the closing list: MidWest paragraph reworded ("Choose it when...") and leash paragraph ("It suits a yard that is partial, shared or unconfirmed").
+- FAQ on partially fenced adds the new fact (is the open side a driveway, road or neighbor's land) and drops the repeated line.
+- seoTitle (55 chars) kept; title suffix and brand duplicates handled by the template. Hero height cap on mobile is a layout item, not done here.
+- lastReviewed 2026-11-24, readingMinutes 10 unchanged.

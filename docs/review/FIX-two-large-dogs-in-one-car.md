@@ -17,3 +17,14 @@ Expected score: about 9.0 (answer 5, flow 4-5, buying 4-5, placement 4-5, layout
 - Decide on Sleepypod Clickit Sport: three prose mentions auto-link to it; if the product is inactive or lacks a maker page, consider removing it from the catalog aliases or finding the current page.
 - If PetSafe Happy Ride must keep a pick card, another guide (the car-safety guide) should carry it.
 - Pin row title in docs/pinterest-pins.csv is the old H1 "Two Large Dogs in One Car: Crates, Harnesses and Barriers"; new H1 is "Traveling With Two Large Dogs in a Car: Crates, Harnesses and Barriers". The pin image still fits (two collies in a cargo area).
+
+## Round 3
+- Lucky Kennel: prose and pick text now say CPS lists only the Large (one dog, one crate), the Intermediate and Medium are not on that listing, the button opens the Intermediate, and the Large is a separate unverified listing to check. Orphan sentence removed.
+- Barrier section: deleted the duplicated Kurgo/PetSafe spec paragraph; specs now appear once in prose with citations and the PetSafe pick text no longer repeats the dimensions.
+- "Buy first" now only in the final list (removed from Lucky, Load Up paragraphs).
+- seoTitle "Two Large Dogs in a Car: Safe Setups" (36 chars). H2 renamed "The short answer in four lines".
+- Removed the orphan Ceva/ADAPTIL competitor sentence and its source (kept in research.competitors); renumbered citations to first-appearance order 1 to 16 and reordered sources.
+- FAQ crate-width edit (optional) already present; lastReviewed 2026-11-24, readingMinutes 12 unchanged.
+
+## For the lead
+- The Lucky Kennel card chip "Maker: CPS crash-test rated" comes from cardSpecs in content/products.yml (not mine to edit). Suggest `CPS lists the Large (one dog)` and `Medium, Intermediate, Large` so the chip beside the Intermediate button is not misread.

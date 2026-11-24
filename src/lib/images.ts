@@ -152,7 +152,7 @@ const stockImages = {
   "guide-cabin-packing": {
     src: cabinPacking,
     card: cabinPackingCard,
-    alt: "A black, white and tan dog lying calmly in the open back of an SUV beside a packed canvas duffel bag",
+    alt: "Two border collies at a white station wagon with its tailgate and door open, beside an orange suitcase, a collapsible bowl and bags, packed for a trip",
   },
   "gear-car-safety": {
     src: gearCarSafety,
@@ -262,7 +262,7 @@ const stockImages = {
   "guide-ramp-steps": {
     src: guideRampSteps,
     card: guideRampStepsCard,
-    alt: "A black, white and gray merle dog standing on its hind legs with front paws on the wooden steps of a blue metal platform, on a gravel play area",
+    alt: "A brindle and white dog sitting in the open rear cargo area of a white SUV with a dog guard, in the snow",
   },
   "guide-loose-dog": {
     src: guideLooseDog,
@@ -282,7 +282,7 @@ const stockImages = {
   "guide-true-cost": {
     src: guideTrueCost,
     card: guideTrueCostCard,
-    alt: "A tan and white Shiba Inu lying on a shop doorstep beside a white rolling suitcase on a city street",
+    alt: "A small dark dachshund mix on a leash lying on the wooden floor of a hotel lobby while its owners check in at a desk, with a stack of vintage suitcases behind them",
   },
   "guide-travel-bowls": {
     src: guideTravelBowls,

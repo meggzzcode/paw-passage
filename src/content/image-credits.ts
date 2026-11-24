@@ -61,8 +61,8 @@ export const imageCredits: ImageCredit[] = [
   },
   {
     key: "guide-cabin-packing",
-    photographer: "Christian Crocker",
-    unsplashUrl: "https://unsplash.com/photos/dog-relaxes-in-the-car-trunk-with-a-bag-REFa-Kh22KU",
+    photographer: "Rafaëlla Waasdorp",
+    unsplashUrl: "https://unsplash.com/photos/dogs-in-white-station-wagon-hoD-a_0ed9c",
   },
   {
     key: "gear-car-safety",
@@ -185,9 +185,9 @@ export const imageCredits: ImageCredit[] = [
   },
   {
     key: "guide-ramp-steps",
-    photographer: "Anton Borzenkov",
+    photographer: "Logan Weaver",
     unsplashUrl:
-      "https://unsplash.com/photos/speckled-dog-stepping-onto-blue-metal-stairs-outdoors-NplkZ9GhK-A",
+      "https://unsplash.com/photos/dog-sitting-in-the-open-trunk-of-a-car-2XU7g_OebKU",
   },
   {
     key: "guide-loose-dog",
@@ -207,9 +207,9 @@ export const imageCredits: ImageCredit[] = [
   },
   {
     key: "guide-true-cost",
-    photographer: "Eminent Luggage",
+    photographer: "Paolo Bici",
     unsplashUrl:
-      "https://unsplash.com/photos/a-brown-and-white-dog-laying-next-to-a-white-suitcase-039EFeyJs2I",
+      "https://unsplash.com/photos/people-and-dog-at-a-vintage-luggage-themed-hotel-reception-J58vaEkUQ70",
   },
   {
     key: "guide-travel-bowls",

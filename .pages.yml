@@ -418,6 +418,7 @@ content:
           - { name: id, label: "Short name (lowercase letters, numbers and hyphens). Never change it once a guide or an affiliate link uses it", type: string, required: true }
           - { name: name, label: Product name, type: string, required: true }
           - { name: brand, label: Brand, type: string, required: true }
+          - { name: aliases, label: "Other exact spellings of the name used in guide text, one per line (for example iCrate). Each links to the affiliate link while the product earns. Never a brand alone or one common word", type: string, list: true }
           - name: categories
             label: "Categories (the first one is the main one)"
             type: select

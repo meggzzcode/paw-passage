@@ -6,6 +6,7 @@ import { getProduct } from "@/content/gear";
 import { resolveProductLink } from "@/content/gear-links";
 import { isMonetized } from "@/content/affiliate-usage";
 import { PRODUCT_CALLOUTS_REQUIRE_AFFILIATE_LINK } from "@/content/publish-rule";
+import { linkProductMentions, type ProductLinkToken } from "@/lib/product-text-links";
 
 const escapeHtml = (s: string) =>
   s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -112,6 +113,24 @@ marked.use({
   ],
 });
 
+/**
+ * A product name in running text (paragraphs, lists, tables) that earns: an inline affiliate link, built exactly like
+ * the pick card's button (same address, rel, data attributes for click tracking). linkProductMentions() creates these
+ * tokens only for products with an approved link, so a product that stops earning renders as plain text again.
+ */
+marked.use({
+  extensions: [
+    {
+      name: "productlink",
+      level: "inline",
+      renderer(token: Tokens.Generic) {
+        const t = token as ProductLinkToken;
+        return `<a data-aff="${escapeHtml(t.link.affId)}" data-partner="${escapeHtml(t.link.partner)}" data-product-link="${escapeHtml(t.link.id)}" href="${escapeHtml(t.link.url)}" target="_blank" rel="${escapeHtml(t.link.rel)}">${escapeHtml(t.text)}</a>`;
+      },
+    },
+  ],
+});
+
 const plain = (t: Token): string =>
   "tokens" in t && Array.isArray(t.tokens)
     ? (t.tokens as Token[]).map(plain).join("")
@@ -155,8 +174,10 @@ export const articleHeadings = (source: string): ArticleHeading[] => lexWithIds(
 
 /** Renders Markdown for articles. Raw HTML in the text is escaped, never run. */
 export function Markdown({ source, className }: { source: string; className?: string }) {
+  const { tokens } = lexWithIds(source);
+  linkProductMentions(tokens);
   const html = marked
-    .parser(lexWithIds(source).tokens)
+    .parser(tokens)
     // Wide tables scroll sideways inside their own box instead of widening the page on phones.
     .replace(/<table>/g, '<div class="table-scroll max-w-full overflow-x-auto"><table>')
     .replace(/<\/table>/g, "</table></div>")

@@ -62,6 +62,11 @@ export const productRecordObject = z
     id: z.string().regex(/^[a-z0-9-]+$/, "use lowercase letters, numbers and hyphens"),
     name: nonEmpty,
     brand: nonEmpty,
+    /**
+     * Other exact spellings of the name that guides use in their text and tables (for example "iCrate"). Each one
+     * links to the product's affiliate link while the product earns. Never a bare brand or a single common word.
+     */
+    aliases: z.array(nonEmpty).default([]),
     categories: z.array(z.enum(gearCategorySlugs)).min(1, "pick at least one category"),
     summary: nonEmpty,
     keySpecs: z.array(nonEmpty).default([]),

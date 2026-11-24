@@ -77,6 +77,9 @@ products:
   - id: sleepypod-atom
     name: Atom Crash-Tested Carrier
     brand: Sleepypod
+    aliases:
+      - "Sleepypod Atom"
+      - "Sleepypod Atom Crash-Tested Carrier"
     categories:
       - road-trips
       - travel-safety
@@ -150,6 +153,8 @@ products:
   - id: lucky-duck-lucky-kennel
     name: Lucky Kennel
     brand: Lucky Duck
+    aliases:
+      - "Lucky Duck Lucky Kennel"
     categories:
       - road-trips
       - travel-safety
@@ -222,6 +227,9 @@ products:
   - id: kurgo-loft-wander-dog-bed
     name: Loft Wander Dog Bed
     brand: Kurgo
+    aliases:
+      - "Kurgo Loft Wander"
+      - "Loft Wander"
     categories:
       - cabin-vacations
       - travel-comfort
@@ -327,6 +335,9 @@ products:
   - id: amk-trail-dog
     name: "Adventure Dog Medical Kit: Trail Dog"
     brand: Adventure Medical Kits
+    aliases:
+      - "Adventure Dog Medical Kit - Trail Dog"
+      - "Trail Dog kit"
     categories:
       - travel-safety
     summary: A compact dog-focused kit in a waterproof bag with a pet first aid handbook, aimed by the maker at hiking, camping and travel.
@@ -455,6 +466,8 @@ products:
   - id: kurgo-collaps-a-bowl
     name: Collaps A Bowl
     brand: Kurgo
+    aliases:
+      - "Kurgo Collaps A Bowl"
     categories:
       - road-trips
       - feeding-and-hydration
@@ -489,6 +502,11 @@ products:
   - id: springland-22oz-original-travel-bottle
     name: 22oz Classic Travel Dog Water Bottle
     brand: Springland (formerly Springer)
+    aliases:
+      - "Springland 22oz Classic bottle"
+      - "Springland 22oz Classic"
+      - "22oz Classic"
+      - "22oz Original"
     categories:
       - feeding-and-hydration
     summary: A squeeze-to-fill water bottle with an attached bowl, designed to be operated with one hand.
@@ -522,6 +540,10 @@ products:
   - id: springland-20oz-flip-travel-bottle
     name: 20oz Flip Travel Dog Water Bottle
     brand: Springland (formerly Springer)
+    aliases:
+      - "Springland 20oz Flip bottle"
+      - "Springland 20oz Flip"
+      - "20oz Flip"
     categories:
       - feeding-and-hydration
     summary: A squeeze-to-drink water bottle topped with a silicone bowl that flips up for drinking and folds down for storage.
@@ -555,6 +577,8 @@ products:
   - id: vittles-vault-travel-tainer
     name: Vittles Vault Travel-Tainer Portable Food Storage Container
     brand: Vittles Vault (Gamma2 / Petmate)
+    aliases:
+      - "Vittles Vault Travel-Tainer"
     categories:
       - feeding-and-hydration
     summary: A rigid food container with a sealing lid that comes with two bowls and a carry handle.
@@ -587,6 +611,8 @@ products:
   - id: kurgo-kibble-carrier
     name: Kibble Carrier
     brand: Kurgo
+    aliases:
+      - "Kurgo Kibble Carrier"
     categories:
       - road-trips
       - feeding-and-hydration
@@ -654,6 +680,8 @@ products:
   - id: tractive-dog-6
     name: Tractive DOG 6
     brand: Tractive
+    aliases:
+      - "DOG 6"
     categories:
       - travel-safety
     summary: A clip-on GPS tracker for dogs that uses a built-in SIM and cellular networks, sold for dogs above 8.8 lbs (one place on the page also says above 9 lbs).
@@ -756,6 +784,8 @@ products:
   - id: midwest-exercise-pen-with-door
     name: MidWest Exercise Pen with Door
     brand: MidWest Homes for Pets
+    aliases:
+      - "Exercise Pen with Door"
     categories:
       - cabin-vacations
     summary: A folding wire exercise pen with a latched door that sets up as a freestanding enclosure indoors or outdoors.
@@ -826,6 +856,9 @@ products:
   - id: carlson-convertible-pet-yard
     name: "Convertible Pet Yard (Model #2200)"
     brand: Carlson Pet Products
+    aliases:
+      - "Carlson Convertible Pet Yard"
+      - "Convertible Pet Yard"
     categories:
       - cabin-vacations
     summary: A six-panel all-metal pen with a walk-through door that the maker says can also be used as a gate.
@@ -893,6 +926,8 @@ products:
   - id: kurgo-enhanced-strength-tru-fit
     name: Enhanced Strength Tru-Fit Dog Car Harness
     brand: Kurgo
+    aliases:
+      - "Tru-Fit"
     categories:
       - car-safety
       - road-trips
@@ -926,6 +961,9 @@ products:
   - id: kurgo-heather-booster-seat
     name: Heather Dog Booster Seat
     brand: Kurgo
+    aliases:
+      - "Heather booster seat"
+      - "Heather booster"
     categories:
       - car-safety
       - road-trips
@@ -1030,6 +1068,10 @@ products:
   - id: petsafe-happy-ride-dog-barrier
     name: Happy Ride Dog Barrier
     brand: PetSafe
+    aliases:
+      - "Happy Ride Metal Dog Barrier"
+      - "Happy Ride barrier"
+      - "PetSafe Happy Ride Dog Barrier"
     categories:
       - car-safety
       - road-trips
@@ -1062,6 +1104,8 @@ products:
   - id: petsafe-happy-ride-collapsible-crate
     name: Happy Ride Collapsible Travel Crate
     brand: PetSafe
+    aliases:
+      - "PetSafe Happy Ride Collapsible Travel Crate"
     categories:
       - road-trips
     summary: A soft-sided collapsible crate for the back seat, held by the headrest strap and seat belt, for pets up to 60 lb.
@@ -1095,6 +1139,9 @@ products:
   - id: petsafe-happy-ride-folding-ramp
     name: Happy Ride Folding Dog Ramp
     brand: PetSafe
+    aliases:
+      - "Happy Ride Folding Ramp"
+      - "PetSafe Happy Ride Folding Dog Ramp"
     categories:
       - senior-dogs
       - large-dogs
@@ -1131,6 +1178,8 @@ products:
   - id: petsafe-happy-ride-extra-long-ramp
     name: Happy Ride Extra Long Telescoping Dog Ramp
     brand: PetSafe
+    aliases:
+      - "Happy Ride Extra Long Telescoping Ramp"
     categories:
       - senior-dogs
       - large-dogs
@@ -1268,6 +1317,8 @@ products:
   - id: kurgo-rover-cargo-cape
     name: Rover Cargo Cape
     brand: Kurgo
+    aliases:
+      - "Cargo Cape"
     categories:
       - road-trips
       - cleaning-and-rental-protection
@@ -1366,6 +1417,8 @@ products:
   - id: ruffwear-float-coat
     name: Float Coat Dog Life Jacket
     brand: Ruffwear
+    aliases:
+      - "Float Coat"
     categories:
       - beach-vacations
       - outdoor-adventures
@@ -1400,6 +1453,8 @@ products:
   - id: outward-hound-dawson-swim-life-jacket
     name: Dawson Swim Dog Life Jacket
     brand: Outward Hound
+    aliases:
+      - "Dawson Swim"
     categories:
       - beach-vacations
       - outdoor-adventures
@@ -1433,6 +1488,9 @@ products:
   - id: ruffwear-swamp-cooler
     name: Swamp Cooler Cooling Dog Vest
     brand: Ruffwear
+    aliases:
+      - "Ruffwear Swamp Cooler"
+      - "Swamp Cooler"
     categories:
       - beach-vacations
       - travel-comfort
@@ -1499,6 +1557,8 @@ products:
   - id: adventure-medical-kits-dog-wipes
     name: Adventure Dog Wipes (pack of 8)
     brand: Adventure Medical Kits
+    aliases:
+      - "Adventure Dog Wipes"
     categories:
       - cleaning-and-rental-protection
     summary: Rinse-free pet wipes made to wipe dirt and odour off a dog.
@@ -1594,6 +1654,8 @@ products:
   - id: ruffwear-quencher-bowl
     name: Quencher Collapsible Dog Bowl
     brand: Ruffwear
+    aliases:
+      - "Ruffwear Quencher"
     categories:
       - feeding-and-hydration
       - outdoor-adventures
@@ -1627,6 +1689,9 @@ products:
   - id: kurgo-splash-free-wander-bowl
     name: Splash Free Wander Dog Water Bowl
     brand: Kurgo
+    aliases:
+      - "Kurgo Splash Free Wander"
+      - "Splash Free Wander"
     categories:
       - feeding-and-hydration
       - road-trips
@@ -1691,6 +1756,9 @@ products:
   - id: gunner-dog-bowl
     name: Dog Bowl with Travel Lid
     brand: Gunner
+    aliases:
+      - "Gunner Dog Bowl"
+      - "Gunner Dog Bowl with Travel Lid"
     categories:
       - feeding-and-hydration
       - road-trips
@@ -1724,6 +1792,8 @@ products:
   - id: petmate-precision-pet-soft-side-play-yard
     name: Precision Pet Soft Side Play Yard
     brand: Petmate
+    aliases:
+      - "Petmate Precision Pet Soft Side Play Yard"
     categories:
       - cabin-vacations
       - road-trips
@@ -1759,6 +1829,9 @@ products:
   - id: ruffwear-knot-a-leash
     name: Knot-a-Leash Rope Dog Leash
     brand: Ruffwear
+    aliases:
+      - "Ruffwear Knot-a-Leash"
+      - "Knot-a-Leash"
     categories:
       - outdoor-adventures
     summary: A 5 ft reflective rope leash with an auto-locking carabiner and an accessory loop for bags.
@@ -1789,6 +1862,8 @@ products:
   - id: ruffwear-grip-trex-boots
     name: Grip Trex Dog Boots
     brand: Ruffwear
+    aliases:
+      - "Grip Trex"
     categories:
       - outdoor-adventures
     summary: A set of two dog boots with a Vibram outsole for hiking, biking, running and outdoor exploring.
@@ -1820,6 +1895,9 @@ products:
   - id: ruffwear-web-master-harness
     name: Web Master Dog Harness with Handle
     brand: Ruffwear
+    aliases:
+      - "Ruffwear Web Master"
+      - "Web Master"
     categories:
       - outdoor-adventures
     summary: A three-strap harness with a neck buckle and a reinforced handle, made for technical terrain.
@@ -1851,6 +1929,9 @@ products:
   - id: ruffwear-climate-changer-fleece
     name: Climate Changer Dog Fleece
     brand: Ruffwear
+    aliases:
+      - "Ruffwear Climate Changer Fleece"
+      - "Climate Changer Fleece"
     categories:
       - winter-travel
       - outdoor-adventures
@@ -1884,6 +1965,8 @@ products:
   - id: ruffwear-polar-trex-boots
     name: Polar Trex Winter Dog Boots
     brand: Ruffwear
+    aliases:
+      - "Polar Trex"
     categories:
       - winter-travel
       - outdoor-adventures
@@ -1917,6 +2000,8 @@ products:
   - id: ruffwear-timberline-fuse-vest
     name: Timberline Fuse Fleece Vest
     brand: Ruffwear
+    aliases:
+      - "Timberline Fuse"
     categories:
       - winter-travel
       - outdoor-adventures
@@ -2018,6 +2103,9 @@ products:
   - id: kurgo-rover-hammock-extended-width
     name: Rover Hammock, Extended Width
     brand: Kurgo
+    aliases:
+      - "Rover Hammock"
+      - "Rover Hammock - Extended Width"
     categories:
       - road-trips
       - large-dogs
@@ -2055,6 +2143,8 @@ products:
   - id: north-states-mypet-universal-petgate
     name: MyPet Universal Petgate
     brand: North States
+    aliases:
+      - "North States MyPet Universal Petgate"
     categories:
       - cabin-vacations
     summary: A plastic gate for doorways and hallways that mounts by pressure or, optionally, to a solid surface with hardware.
@@ -2089,6 +2179,9 @@ products:
   - id: midwest-icrate-dog-crate
     name: iCrate Dog Crate
     brand: MidWest Homes for Pets
+    aliases:
+      - "MidWest iCrate"
+      - "iCrate"
     categories:
       - cabin-vacations
     summary: A folding wire crate with divider panel and removable pan, in single- or double-door versions.
@@ -2122,6 +2215,8 @@ products:
   - id: green-pet-shop-cool-pet-pad
     name: Cool Pet Pad
     brand: The Green Pet Shop
+    aliases:
+      - "Green Pet Shop Cool Pet Pad"
     categories:
       - travel-comfort
       - cabin-vacations
@@ -2194,6 +2289,9 @@ products:
   - id: soggy-doggy-super-shammy-towel
     name: Super Shammy Towel
     brand: Soggy Doggy
+    aliases:
+      - "Soggy Doggy Super Shammy"
+      - "Super Shammy"
     categories:
       - cleaning-and-rental-protection
       - travel-comfort
@@ -2228,6 +2326,9 @@ products:
   - id: soggy-doggy-microfiber-doormat
     name: Microfiber Doormat (no bone)
     brand: Soggy Doggy
+    aliases:
+      - "Soggy Doggy Microfiber Doormat"
+      - "Microfiber Doormat"
     categories:
       - cabin-vacations
       - cleaning-and-rental-protection
@@ -2262,6 +2363,9 @@ products:
   - id: pet-parents-pawtect-pads
     name: Pawtect Pads (washable pee pads, 2 pack)
     brand: Pet Parents
+    aliases:
+      - "Pet Parents Pawtect Pads"
+      - "Pawtect Pads"
     categories:
       - cabin-vacations
       - cleaning-and-rental-protection
@@ -2364,6 +2468,9 @@ products:
   - id: ruffwear-the-beacon-dog-safety-light
     name: The Beacon Dog Safety Light
     brand: Ruffwear
+    aliases:
+      - "Ruffwear Beacon"
+      - "Beacon Dog Safety Light"
     categories:
       - travel-safety
       - outdoor-adventures
@@ -2468,6 +2575,9 @@ products:
   - id: sleepypod-clickit-sport
     name: Clickit Sport Pet Harness
     brand: Sleepypod
+    aliases:
+      - "Sleepypod Clickit Sport"
+      - "Clickit Sport"
     categories:
       - road-trips
       - travel-safety

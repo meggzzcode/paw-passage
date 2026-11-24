@@ -8,6 +8,8 @@ export interface Product {
   id: string;
   name: string;
   brand: string;
+  /** Other exact spellings of the name used in guide text; each links to the affiliate link while the product earns. */
+  aliases?: string[];
   /** What the product is, in plain words. */
   summary: string;
   /** Specs/claims taken from `specSource` (size range, weight limit, certification...). */
@@ -59,6 +61,7 @@ export const products: Product[] = records.map((r) => ({
   id: r.id,
   name: r.name,
   brand: r.brand,
+  ...(r.aliases.length ? { aliases: r.aliases } : {}),
   summary: r.summary,
   keySpecs: r.keySpecs,
   specSource: r.specSource,

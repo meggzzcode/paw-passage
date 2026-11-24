@@ -31,7 +31,7 @@ export const Route = createFileRoute("/gear/$category")({
     if (!c) return { meta: [{ title: "Page not found" }, { name: "robots", content: "noindex" }] };
     const h = pageHead({
       title: `${c.name} for Dogs`,
-      description: `Researched picks for ${c.name.toLowerCase()}: the maker's own specs, sources and what we could not confirm. Not tested by us.`,
+      description: `Researched picks for ${c.name.toLowerCase()}: the maker's own specs, sources and what we could not confirm.`,
       path: `/gear/${params.category}`,
       noindex: !categoryIsLive(c.slug),
     });
@@ -77,9 +77,7 @@ function GearCategoryPage() {
       <header className="mt-6 max-w-3xl">
         <h1 className="text-4xl md:text-5xl">{c.name}</h1>
         <p className="mt-3 text-muted-foreground">{c.intro}</p>
-        <p className="mt-3 text-sm text-muted-foreground">
-          Researched, not personally tested. No prices, no ratings.
-        </p>
+        <p className="mt-3 text-sm text-muted-foreground">No prices, no ratings.</p>
       </header>
       {dogType && dogTypeIsLive(dogType) && (
         <p className="mt-4 text-sm">

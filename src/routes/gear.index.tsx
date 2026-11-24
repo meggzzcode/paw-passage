@@ -96,7 +96,7 @@ function GearHub() {
         <h1 className="text-4xl md:text-5xl">Travel essentials for dogs</h1>
         <p className="mt-3 text-muted-foreground">
           Researched gear picks for road trips and rentals. This is not a store: no prices, no
-          ratings, and we say what we could not confirm. We have not tested these products.
+          ratings, and we say what we could not confirm.
         </p>
       </header>
       <section className="mt-10" aria-labelledby="gear-cats">

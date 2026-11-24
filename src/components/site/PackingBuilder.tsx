@@ -250,8 +250,7 @@ export function PackingBuilder() {
         )}
         <p className="mb-6 text-sm text-muted-foreground">
           Hover over, tap or focus an item to see what it is, why you might want it and where to get
-          it. We have not tested these products: the picks come from the makers' published
-          specifications, explained in our guides.
+          it. The picks come from the makers' published specifications, explained in our guides.
         </p>
         {groupsInOrder.map((g) => {
           const list = packItems.filter((i) => i.group === g);

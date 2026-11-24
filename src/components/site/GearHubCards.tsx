@@ -153,13 +153,12 @@ export function HowWePick() {
       </h2>
       <ul className="mt-4 list-disc space-y-2 pl-5 text-sm">
         <li>
-          <strong>Researched, not personally tested.</strong> Every product here is chosen against
-          stated criteria from the maker's own page or an independent standard. Each card cites its
-          source and the date we read it. We have not tested these products.
+          <strong>Chosen against stated criteria.</strong> Every product here comes from the maker's
+          own page or an independent standard. Each card cites its source and the date we read it.
         </li>
         <li>
-          No prices and no star ratings: prices change and we have no tests to rate them on. Where a
-          maker does not state something, we say so.
+          No prices and no star ratings, because prices change. Where a maker does not state
+          something, we say so.
         </li>
         <li>A link, if there is one, never changes which products we list or what we write.</li>
       </ul>

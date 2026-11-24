@@ -3,6 +3,7 @@
 // They reuse the guide gate (publish-rule.ts), the guide Markdown renderer and the guide Sources list.
 import { guideIsPublic } from "./publish-rule";
 import type { Source } from "./types";
+import type { ImageKey } from "@/lib/images";
 import { georgiaReads } from "./town-reads/georgia";
 import { californiaReads } from "./town-reads/california";
 
@@ -57,3 +58,10 @@ export function townReadWordCount(body: string): number {
     .split(/\s+/)
     .filter(Boolean).length;
 }
+
+/** Hero photo key for a town article (src/assets/things-<town>.jpg, credited in image-credits.ts). */
+export const townReadImageKey = (townSlug: string) => `things-${townSlug}` as ImageKey;
+
+/** 1200x630 share image for a town article (made by scripts/make-town-share-images.py). */
+export const townReadShareImage = (stateSlug: string, townSlug: string) =>
+  `/share-towns/${stateSlug}-${townSlug}.jpg`;

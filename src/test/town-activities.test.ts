@@ -7,7 +7,12 @@ import {
   townReadIsPublic,
   townReadPath,
   townReadWordCount,
+  townReadImageKey,
+  townReadShareImage,
 } from "@/content/town-reads";
+import { images } from "@/lib/images";
+import { imageCredits } from "@/content/image-credits";
+import { existsSync } from "node:fs";
 import { allGuides } from "@/content/guides";
 import { getProduct } from "@/content/gear";
 import { isMonetized } from "@/content/affiliate-usage";
@@ -88,5 +93,27 @@ describe("town companion articles", () => {
     const paths = sitemapEntries().map((e) => e.path);
     for (const r of allTownReads) expect(paths).toContain(townReadPath(r.state, r.town));
     expect(paths.some((p) => p.startsWith("/guides/dog-friendly-things"))).toBe(false);
+  });
+});
+
+describe("town article hero photos", () => {
+  it("each town has its own credited hero, a card, alt text and a share image, shared with nothing else", () => {
+    const keys = new Set<string>();
+    for (const r of allTownReads) {
+      const key = townReadImageKey(r.town);
+      const id = `${r.state}/${r.town}`;
+      expect(images[key], id).toBeTruthy();
+      expect(images[key].alt.length, id).toBeGreaterThan(30);
+      expect(images[key].card, id).toBeTruthy();
+      expect(images[key].src, id).not.toBe(images[`dest-${r.town}` as keyof typeof images]?.src);
+      const credit = imageCredits.find((c) => c.key === key);
+      expect(credit?.photographer, id).toBeTruthy();
+      expect(credit?.unsplashUrl, id).toMatch(/^https:\/\/unsplash\.com\/photos\//);
+      expect(existsSync(`public${townReadShareImage(r.state, r.town)}`), id).toBe(true);
+      keys.add(images[key].src);
+    }
+    expect(keys.size).toBe(allTownReads.length);
+    const allCredited = imageCredits.map((c) => c.unsplashUrl.split(/[-/]/).pop());
+    expect(new Set(allCredited).size).toBe(allCredited.length);
   });
 });

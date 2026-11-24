@@ -33,6 +33,22 @@ import helenDest from "@/assets/dest-helen.jpg";
 import helenDestCard from "@/assets/dest-helen-card.jpg";
 import dahlonegaDest from "@/assets/dest-dahlonega.jpg";
 import dahlonegaDestCard from "@/assets/dest-dahlonega-card.jpg";
+import thingsBlueRidge from "@/assets/things-blue-ridge.jpg";
+import thingsBlueRidgeCard from "@/assets/things-blue-ridge-card.jpg";
+import thingsEllijay from "@/assets/things-ellijay.jpg";
+import thingsEllijayCard from "@/assets/things-ellijay-card.jpg";
+import thingsHelen from "@/assets/things-helen.jpg";
+import thingsHelenCard from "@/assets/things-helen-card.jpg";
+import thingsDahlonega from "@/assets/things-dahlonega.jpg";
+import thingsDahlonegaCard from "@/assets/things-dahlonega-card.jpg";
+import thingsSanDiego from "@/assets/things-san-diego.jpg";
+import thingsSanDiegoCard from "@/assets/things-san-diego-card.jpg";
+import thingsSantaBarbara from "@/assets/things-santa-barbara.jpg";
+import thingsSantaBarbaraCard from "@/assets/things-santa-barbara-card.jpg";
+import thingsMonterey from "@/assets/things-monterey.jpg";
+import thingsMontereyCard from "@/assets/things-monterey-card.jpg";
+import thingsMendocino from "@/assets/things-mendocino.jpg";
+import thingsMendocinoCard from "@/assets/things-mendocino-card.jpg";
 import homeMountain from "@/assets/home-mountain-escapes.jpg";
 import homeMountainCard from "@/assets/home-mountain-escapes-card.jpg";
 import petFees from "@/assets/guide-pet-fees.jpg";
@@ -404,6 +420,46 @@ const stockImages = {
     src: guidePackingListBoots,
     card: guidePackingListBootsCard,
     alt: "A golden retriever in a black harness and red-and-black protective dog boots lying on a wooden bench in the sun, panting happily",
+  },
+  "things-blue-ridge": {
+    src: thingsBlueRidge,
+    card: thingsBlueRidgeCard,
+    alt: "A small shaggy tan-and-white dog swimming with its head above the surface of rippled green water",
+  },
+  "things-ellijay": {
+    src: thingsEllijay,
+    card: thingsEllijayCard,
+    alt: "A tan Labrador-type dog in a black harness on a red leash, looking off to the side beside a shallow rocky stream with a small cascade behind it",
+  },
+  "things-helen": {
+    src: thingsHelen,
+    card: thingsHelenCard,
+    alt: "A shaggy brown dog walking away down a sun-dappled dirt path inside a tunnel of green trees and shrubs",
+  },
+  "things-dahlonega": {
+    src: thingsDahlonega,
+    card: thingsDahlonegaCard,
+    alt: "A curly white dog resting its front paws on an outdoor wooden table beside a glass of red wine and a glass of white, with string lights and white tents blurred behind",
+  },
+  "things-san-diego": {
+    src: thingsSanDiego,
+    card: thingsSanDiegoCard,
+    alt: "A brown-and-white dog with a curled tail standing in shallow water on a beach, looking to the side with small waves behind it",
+  },
+  "things-santa-barbara": {
+    src: thingsSantaBarbara,
+    card: thingsSantaBarbaraCard,
+    alt: "A wet brown-and-white dog trotting along the water's edge of a beach, tongue out, with white surf foam behind it",
+  },
+  "things-monterey": {
+    src: thingsMonterey,
+    card: thingsMontereyCard,
+    alt: "A tan dog standing on a grassy bluff above a wide stretch of calm blue-green water",
+  },
+  "things-mendocino": {
+    src: thingsMendocino,
+    card: thingsMendocinoCard,
+    alt: "A brown dog in a yellow harness on a leash standing on a grassy bluff beside a sandy path, with sparkling blue water and a cliff headland beyond",
   },
 } as const satisfies Record<string, StockImage>;
 

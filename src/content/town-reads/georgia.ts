@@ -115,20 +115,14 @@ Rules change. Check each linked page before you go.`,
     title: "What Can You Do With a Dog Around Ellijay, Georgia?",
     seoTitle: "Dog-Friendly Things to Do in Ellijay, GA",
     seoDescription:
-      "Ellijay trails, town parks, Carters Lake and winery patios for dogs, with the leash rule each source page states and where it stays silent.",
-    dek: "Town parks, lake trails and orchard-country wineries, with a clear note where a page gives no leash rule.",
+      "Ellijay's town parks, Bear Creek Trail and winery patios for dogs, with the leash rule each source page states and where it stays silent.",
+    dek: "Town parks, a favorite trail and orchard-country wineries, with a clear note where a page gives no leash rule.",
     relatedGuides: ["vacation-rental-secure-fenced-yard", "how-vacation-rental-pet-fees-work"],
     sources: [
       {
         title: "Ellijay, Georgia: a pet-friendly paradise",
         url: "https://www.gilmerchamber.com/blog/explore-the-ellijays/ellijay-georgia-a-pet-friendly-paradise/",
         publisher: "Gilmer County Chamber",
-        accessedOn: read,
-      },
-      {
-        title: "Woodring Branch Primitive Campground, Carters Lake",
-        url: "https://www.recreation.gov/camping/campgrounds/10009939",
-        publisher: "Recreation.gov",
         accessedOn: read,
       },
       {
@@ -139,17 +133,15 @@ Rules change. Check each linked page before you go.`,
       },
       kurgoSource,
     ],
-    body: `Around Ellijay, the best three things for a dog are a lake trail at Carters Lake, a walk in the town's river and woodland parks, and a winery visit in orchard country. The main rule is a leash. The [Gilmer County Chamber](https://www.gilmerchamber.com/blog/explore-the-ellijays/ellijay-georgia-a-pet-friendly-paradise/) says to keep your companion leashed and to carry water and waste bags.
+    body: `Around Ellijay, the best three things for a dog are a walk in the town's river and woodland parks, a hike on Bear Creek Trail, and a winery visit in orchard country. The main rule is a leash. The [Gilmer County Chamber](https://www.gilmerchamber.com/blog/explore-the-ellijays/ellijay-georgia-a-pet-friendly-paradise/) says to keep your companion leashed on the trail and to carry ample water and waste bags.
 
 ## Outdoors
 
-The chamber points to Tumbling Waters Nature Trail at Carters Lake with that leash reminder. Carters Lake is run by the Army Corps of Engineers, and the [Recreation.gov](https://www.recreation.gov/camping/campgrounds/10009939) page for Woodring Branch Campground says pets must be penned, caged or on a leash under six feet. That is a campground rule, but it is a good guide for the lake.
-
-In town, the chamber names Harrison Park and River Park, both with walking trails and wooded areas; Harrison Park is a short walk from the Downtown Square. It also lists Bear Creek Trail among the pet-friendly hiking trails. The page states no leash rule for these three, so carry a leash and use it.
+In town, the chamber names Harrison Park and River Park, both with walking trails and wooded areas; Harrison Park is a short walk from the Downtown Square. It also lists Bear Creek Trail among the favorites and describes Ellijay's trails broadly as an extensive network of pet-friendly hiking trails. The page states no leash rule for these three places, so carry a leash and use it.
 
 ## Water
 
-The river and lake are the draw on a warm day. We found no dog rule for the river parks beyond the chamber's general leash advice, and none we could read for swimming at Carters Lake, so go by the signs on site. Pack water for the dog, because a folding bowl is the lightest way to carry it. The [Kurgo](https://www.kurgo.com/pet-travel-bowls/collaps-a-bowl) Collaps A Bowl holds 24 ounces and collapses under an inch, per the maker.
+We found no dog rule for the river parks beyond the chamber's general leash advice, and nothing on swimming, so go by the signs on site. Pack water for the dog, because a folding bowl is the lightest way to carry it. The [Kurgo](https://www.kurgo.com/pet-travel-bowls/collaps-a-bowl) Collaps A Bowl holds 24 ounces and collapses under an inch, per the maker.
 
 ${PICK}
 
@@ -161,15 +153,15 @@ The chamber adds that some downtown restaurants have patios and temperature-cont
 
 ## Rain and the off-season
 
-The chamber lists seasonal festivals and a pet party. Festival grounds can have their own dog rules, so check the event page first. For a wet day, a winery with covered seating is the safer bet, so ask the winery.
+The chamber says leashed dogs are also welcome at the Apple Arts festival on the second and third weekends of October, and lists a Woofstock Pet Party with a pet parade, costume contests and dock diving. Festival grounds can have their own dog rules, so check the event page first. The chamber also says many orchards and vineyards offer water stations and designated areas for pets, so ask when you arrive. For a wet day, a winery with covered seating is the safer bet, so ask the winery.
 
 ## A simple day plan
 
-Walk the Tumbling Waters trail in the morning, on the leash. Stretch your legs in Harrison Park near the square at midday. Finish with a winery patio. None of the pages we read gives winery hours or seasonal patio closures, so call ahead before you drive over.
+Walk Bear Creek Trail in the morning, on the leash. Stretch your legs in Harrison Park near the square at midday. Finish with a winery patio. None of the pages we read gives winery hours or seasonal patio closures, so call ahead before you drive over.
 
 ## Leash lengths
 
-The only length on any of these pages is under six feet at the Carters Lake campgrounds. The town park and winery pages give none. A standard six-foot leash fits every rule we read.
+None of the Ellijay pages we read gives a leash length. A standard six-foot leash is the easy choice, and it is what we would carry.
 
 ## Where to stay with a dog
 

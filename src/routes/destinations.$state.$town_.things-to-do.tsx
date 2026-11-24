@@ -5,7 +5,10 @@ import {
   townReadIsPublic,
   townReadPath,
   townReadWordCount,
+  townReadImageKey,
+  townReadShareImage,
 } from "@/content/town-reads";
+import { images, srcSetForKey } from "@/lib/images";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { Markdown, articleHeadings } from "@/components/site/Markdown";
 import { SourcesList } from "@/components/site/SourcesList";
@@ -36,6 +39,7 @@ export const Route = createFileRoute("/destinations/$state/$town_/things-to-do")
       path,
       type: "article",
       noindex: !townReadIsPublic(r),
+      image: townReadShareImage(params.state, params.town),
     });
     return {
       ...h,
@@ -47,6 +51,7 @@ export const Route = createFileRoute("/destinations/$state/$town_/things-to-do")
             "@context": "https://schema.org",
             "@type": "Article",
             headline: r.title,
+            image: absoluteUrl(townReadShareImage(params.state, params.town)),
             description: r.seoDescription,
             datePublished: isoDate(r.publishedOn),
             dateModified: isoDate(r.lastReviewed),
@@ -73,6 +78,8 @@ function TownReadPage() {
   const { d, t, r } = Route.useLoaderData();
   const headings = articleHeadings(r.body);
   const minutes = Math.max(1, Math.round(townReadWordCount(r.body) / 220));
+  const heroKey = townReadImageKey(t.slug);
+  const hero = images[heroKey];
   return (
     <article>
       <div className="container-page pt-4 sm:pt-10">
@@ -106,7 +113,18 @@ function TownReadPage() {
           </p>
         </header>
       </div>
-      <div className="container-page mt-6 grid gap-12 sm:mt-10 lg:grid-cols-[minmax(0,1fr)_260px]">
+      <img
+        src={hero.src}
+        srcSet={srcSetForKey(heroKey)}
+        sizes="(max-width: 800px) 100vw, 1152px"
+        alt={hero.alt}
+        width={1600}
+        height={1067}
+        decoding="async"
+        fetchPriority="high"
+        className="mx-auto mt-2 aspect-[2/1] max-h-[96px] w-full max-w-6xl object-cover sm:mt-10 sm:aspect-[21/9] sm:max-h-none md:rounded-xl"
+      />
+      <div className="container-page mt-4 grid gap-12 sm:mt-12 lg:grid-cols-[minmax(0,1fr)_260px]">
         <div className="mx-auto w-full min-w-0 max-w-[42rem]">
           <AffiliateNotice guide={r} />
           <TableOfContents headings={headings} variant="mobile" />

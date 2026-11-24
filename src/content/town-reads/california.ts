@@ -42,7 +42,7 @@ export const californiaReads: TownRead[] = [
     title: "What Can You Do With a Dog in San Diego?",
     seoTitle: "Dog-Friendly Things to Do in San Diego, CA",
     seoDescription:
-      "San Diego's leash-free Dog Beach, Fiesta Island and Balboa Park areas, plus the hours dogs are barred from other beaches and Mission Bay.",
+      "San Diego's leash-free Dog Beach, Fiesta Island and Balboa Park areas, plus the hours dogs are barred from the city's other beaches.",
     dek: "Three official leash-free spots, and the daytime hours when dogs are not allowed on the city's other beaches.",
     relatedGuides: [
       "how-vacation-rental-pet-fees-work",
@@ -87,17 +87,17 @@ export const californiaReads: TownRead[] = [
       },
       kurgoSource,
     ],
-    body: `The best three things to do with a dog in San Diego are Dog Beach in Ocean Beach, Fiesta Island in Mission Bay, and the off-leash areas in Balboa Park. The rule to know: off leash only inside a posted area. Everywhere else, the city's other beaches and Mission Bay have hours when dogs are not allowed at all.
+    body: `The best three things to do with a dog in San Diego are Dog Beach in Ocean Beach, Fiesta Island in Mission Bay, and the off-leash areas in Balboa Park. The rule to know: off leash only inside a posted area. Everywhere else, the city's other beaches have hours when dogs are not allowed at all.
 
 ## Leash-free spots
 
 The city's [leash-free list](https://sandiego.gov/park-and-recreation/parks/dogs/leashfree) shows Dog Beach at the foot of Voltaire Street, Ocean Beach, open 24 hours. It also lists Fiesta Island in Mission Bay Park, with a 5.2-mile asphalt path around the island, and two Balboa Park areas, Nate's Point and Morley Field, both listed as open 24 hours. Owners use these areas at their own risk and are responsible for their dogs.
 
-Fiesta Island needs a closer read. The leash-free list gives hours of 6 a.m. to 10 p.m., while the [city's beach and bay page](https://sandiego.gov/park-and-recreation/parks/dogs/bchdog) says 4 a.m. to 10 p.m. That page also says two tern nesting sites are gated year-round, the buffer zones around them are closed April 15 through September 15, and dogs are barred from the Youth Aquatic Center. The island is leash-optional, shoreline included.
+Fiesta Island needs a closer read. The city's two pages give different opening hours for it, so check before you go. The [city's beach and bay page](https://sandiego.gov/park-and-recreation/parks/dogs/bchdog) also says two tern nesting sites are gated year-round, the buffer zones around them are closed April 15 through September 15, and dogs are barred from the Youth Aquatic Center. The island is leash-optional, shoreline included.
 
-## Other beaches and Mission Bay
+## Other city beaches
 
-Outside the leash-free areas, the [City of San Diego Lifeguards](https://www.sandiego.gov/lifeguards/safety/bchreg) say dogs are not allowed on the beach, boardwalk or adjacent parks from 9 a.m. to 4 p.m. between Nov. 1 and Mar. 31, or from 9 a.m. to 6 p.m. between Apr. 1 and Oct. 31. At other hours they must be on a leash. The city's beach and bay page lists the winter start as Oct. 31, so check the date if you arrive at the changeover.
+Outside the leash-free areas, the [City of San Diego Lifeguards](https://www.sandiego.gov/lifeguards/safety/bchreg) say dogs are not allowed on the beach, boardwalk or adjacent parks from 9 a.m. to 4 p.m. between Nov. 1 and Mar. 31, or from 9 a.m. to 6 p.m. between Apr. 1 and Oct. 31. At other hours they must be on a leash.
 
 In city parks, including trails and canyons, the [city](https://www.sandiego.gov/park-and-recreation/parks/dogs) says the leash may not exceed 8 feet.
 
@@ -109,7 +109,7 @@ ${PICK}
 
 ## Beyond the city line
 
-The [San Diego Tourism Authority](https://sandiego.org/articles/pets/California-dog-beaches-parks-recreation-areas-in-san-diego.aspx) lists the Coronado North Beach Dog Run, on Ocean Boulevard near Sunset Park, as off leash around the clock, with dogs leashed until they reach the beach. Del Mar changes with the season, says the [City of Del Mar](https://www.delmar.ca.us/FAQ.aspx?QID=96). From the day after Labor Day to June 15, dogs may be off leash on North Beach under voice control. From June 16 to Labor Day they must be leashed except from dawn to 8 a.m. on North Beach, and no dogs are allowed on Main Beach at any time.
+The [San Diego Tourism Authority](https://sandiego.org/articles/pets/California-dog-beaches-parks-recreation-areas-in-san-diego.aspx) lists the Coronado North Beach Dog Run, on Ocean Boulevard near Sunset Park, as off leash around the clock, with dogs leashed until they reach the beach. Del Mar changes with the season, says the [City of Del Mar](https://www.delmar.ca.us/FAQ.aspx?QID=96). From the day after Labor Day to June 15, dogs may be off leash on North Beach under voice control. From June 16 to Labor Day they must be leashed except from dawn to 8 a.m. on North Beach, and no dogs are allowed on Main Beach during those summer months.
 
 ## Eating and rainy days
 
@@ -127,8 +127,8 @@ Rules change. Check each linked page before you go.`,
     title: "What Can You Do With a Dog in Santa Barbara?",
     seoTitle: "Dog-Friendly Things to Do in Santa Barbara, CA",
     seoDescription:
-      "Santa Barbara's off-leash Douglas Family Preserve, Arroyo Burro Beach, leashed bluff parks and Funk Zone tasting rooms, with each rule.",
-    dek: "One off-leash preserve, one beach with mixed signals, and leashed parks and patios around town.",
+      "Santa Barbara's Douglas Family Preserve, leashed bluff parks, downtown patios and Funk Zone tasting rooms, with the rule for each.",
+    dek: "One preserve with off-leash areas, then leashed parks, patios and tasting rooms around town.",
     relatedGuides: ["pet-friendly-vacation-rental-checklist", "how-vacation-rental-pet-fees-work"],
     sources: [
       {
@@ -141,18 +141,6 @@ Rules change. Check each linked page before you go.`,
         title: "Shoreline Park",
         url: "https://sbparksandrec.santabarbaraca.gov/parks/shoreline-park",
         publisher: "City of Santa Barbara",
-        accessedOn: read,
-      },
-      {
-        title: "Off-leash dog areas",
-        url: "https://www.countyofsb.org/887/Off-Leash-Dog-Areas",
-        publisher: "Santa Barbara County",
-        accessedOn: read,
-      },
-      {
-        title: "Arroyo Burro Beach",
-        url: "https://santabarbaraca.com/businesses/arroyo-burro-beach/",
-        publisher: "Visit Santa Barbara",
         accessedOn: read,
       },
       {
@@ -169,27 +157,25 @@ Rules change. Check each linked page before you go.`,
       },
       kurgoSource,
     ],
-    body: `For a dog in Santa Barbara, the three best stops are Douglas Family Preserve, Arroyo Burro Beach and a Funk Zone tasting room. The rule to carry: off leash is allowed in a few marked places only, and the official pages do not agree on exactly where, so bring the leash everywhere.
+    body: `For a dog in Santa Barbara, the three best stops are Douglas Family Preserve, Shoreline Park and a Funk Zone tasting room. The rule to carry: off leash is allowed in a few marked places only, so bring the leash everywhere and use it unless the page for that spot says otherwise.
 
 ## Off-leash time
 
-The [City of Santa Barbara](https://sbparksandrec.santabarbaraca.gov/park/douglas-family-preserve) says dogs are allowed off leash in certain areas of Douglas Family Preserve, if they stay under sight and voice control. Owners must carry a leash at all times and use it when needed. The preserve sits above the beach and has walking trails and a dog water fountain.
-
-Next door, the [county's off-leash list](https://www.countyofsb.org/887/Off-Leash-Dog-Areas) includes Arroyo Burro Beach, but [Visit Santa Barbara](https://santabarbaraca.com/businesses/arroyo-burro-beach/) says dogs must always be leashed on the beach. Its [dog guide](https://santabarbaraca.com/plan-your-trip/know-before-you-go/pet-friendly-santa-barbara/) calls it the only beach in town that allows dogs off leash in select locations, and says dogs must be leashed elsewhere on the beach. Treat the beach as leashed unless a sign marks an off-leash stretch. The beach also has self-serve dog washing stations.
+The [City of Santa Barbara](https://sbparksandrec.santabarbaraca.gov/park/douglas-family-preserve) says dogs are allowed off leash in certain areas of Douglas Family Preserve, if they stay under sight and voice control. Owners must carry a leash at all times and use it when needed. The preserve sits above Arroyo Burro Beach and has walking trails and a dog water fountain. We left the beach itself out, because the pages we read disagree about where dogs may be off leash there.
 
 ## Leashed walks
 
-Dogs are on leash at Shoreline Park, according to the [city's park page](https://sbparksandrec.santabarbaraca.gov/parks/shoreline-park), which describes a park overlooking the beach and harbor with a stairway down to it. Visit Santa Barbara says leash required at Chase Palm Park, and that dogs of all sizes are allowed downtown on a leash.
+Dogs are on leash at Shoreline Park, according to the [city's park page](https://sbparksandrec.santabarbaraca.gov/parks/shoreline-park), which calls it one of the city's most popular parks overlooking the beach and harbor and lists a stairway to the beach. The page spells out no further dog rules, so keep the leash on and read any posted signs. The [Visit Santa Barbara dog guide](https://santabarbaraca.com/plan-your-trip/know-before-you-go/pet-friendly-santa-barbara/) says leash required at Chase Palm Park, and that dogs of all sizes are allowed downtown on a leash.
 
 ## Water
 
-The pages we read state no swim rules for dogs at Santa Barbara beaches, so go by posted signs, and keep the dog on the leash where you are not in a marked off-leash spot. Carry water and a bowl that folds flat. The [Kurgo](https://www.kurgo.com/pet-travel-bowls/collaps-a-bowl) Collaps A Bowl holds 24 ounces and collapses under an inch, per the maker.
+The pages we read state no swim rules for dogs at Santa Barbara beaches, so go by posted signs, and keep the dog on the leash unless a sign marks an off-leash spot. Carry water and a bowl that folds flat. The [Kurgo](https://www.kurgo.com/pet-travel-bowls/collaps-a-bowl) Collaps A Bowl holds 24 ounces and collapses under an inch, per the maker.
 
 ${PICK}
 
 ## Eating and sipping
 
-Downtown, Visit Santa Barbara says dogs can join you on open-air dining patios. In the Funk Zone, its [winery page](https://santabarbaraca.com/itinerary/dog-friendly-wineries-in-santa-barbara/) gives different rules room by room. Kunin Wines, Whitcraft and The Valley Project require a leash. Margerum Wine Company and the Santa Barbara Wine Collective allow pets on the patio only. Pali Wine Co welcomes dogs indoors and out, but its Santa Barbara tasting room is under renovation, with tastings temporarily on Anacapa Street.
+Downtown, Visit Santa Barbara says dogs can join you on open-air dining patios. In the Funk Zone, its [winery page](https://santabarbaraca.com/itinerary/dog-friendly-wineries-in-santa-barbara/) gives different rules room by room. Kunin Wines, Whitcraft and The Valley Project require a leash. Margerum Wine Company and the Santa Barbara Wine Collective allow pets on the patio only. Pali Wine Co welcomes dogs indoors and out and keeps a stash of dog treats, but its Santa Barbara tasting room is under renovation, with tastings temporarily on Anacapa Street.
 
 ## A rainy day
 
@@ -299,7 +285,7 @@ The city's [dog park](https://monterey.gov/your_city_hall/departments/parks_and_
 
 ## Off-season
 
-Plover seasons and closures change what is open. Asilomar's page listed a closure on our read date, so check the park page the morning you go.
+Plover seasons and closures change what is open. Asilomar's park page listed a closure for large swells and high tides on our read date (2026-11-24), so check it the morning you go.
 
 ## A simple day plan
 
@@ -339,12 +325,6 @@ Rules change. Check each linked page before you go.`,
         publisher: "Mendocino Land Trust",
         accessedOn: read,
       },
-      {
-        title: "The world's dog-friendliest wine region",
-        url: "https://avwines.com/blog/worlds-dog-friendliest-wine-region/",
-        publisher: "Anderson Valley wine site",
-        accessedOn: read,
-      },
       kurgoSource,
     ],
     body: `The three best things to do with a dog near Mendocino are the Mendocino Headlands, a beach day at Russian Gulch or Van Damme, and the Noyo Headlands Trail in Fort Bragg. The rule to know: the state's leash is six feet at most, and [California State Parks](https://www.parks.ca.gov/Dogs) says dogs are generally not allowed on trails unless a park opens them to dogs.
@@ -370,17 +350,17 @@ The sources we read state no swim or tide rules for dogs on this coast. Keep you
 
 ${PICK}
 
-## Eating and sipping
-
-A 2024 article on the [Anderson Valley wine site](https://avwines.com/blog/worlds-dog-friendliest-wine-region/) says Goldeneye in Philo has a dog-friendly patio and that Foursight in Boonville has water and treats for dogs. It states no leash or indoor rules, so ask each winery. 
-
 ## A rainy day
 
 The pages we read name no indoor dog attractions on the coast, so we list none.
 
 ## A simple day plan
 
-Walk the Headlands in the morning, take the dog to a beach at Russian Gulch or Van Damme in the afternoon, and save the Noyo Headlands Trail for a second day. The state's page says to check its table before bringing a dog to a state beach, because dogs are not permitted on most beaches.
+Walk the Headlands in the morning, take the dog to a beach at Russian Gulch or Van Damme in the afternoon, and save the Noyo Headlands Trail for a second day. The state's page says to check its table before bringing a dog to a state beach, because dogs are not permitted on most beaches. Bring water and waste bags for every stop, and plan a rest between walks.
+
+## Rules at a glance
+
+California State Parks says in general dogs are not allowed on trails, and not permitted on most beaches, unless a park's own entry opens them to dogs. It suggests calling the park before you go. The six-foot leash limit applies at all times. The Mendocino Headlands page says the park is day use only, with no camping.
 
 ## Where to stay with a dog
 

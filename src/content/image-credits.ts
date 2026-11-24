@@ -311,4 +311,44 @@ export const imageCredits: ImageCredit[] = [
     photographer: "Abraham Kabdrashit",
     unsplashUrl: "https://unsplash.com/photos/b5vriFRUUlo",
   },
+  {
+    key: "things-blue-ridge",
+    photographer: "Gabriel Martin",
+    unsplashUrl: "https://unsplash.com/photos/lr0cTjYov8A",
+  },
+  {
+    key: "things-ellijay",
+    photographer: "Guillaume Coué",
+    unsplashUrl: "https://unsplash.com/photos/xWQ4JDU1P_c",
+  },
+  {
+    key: "things-helen",
+    photographer: "Barney Goodman",
+    unsplashUrl: "https://unsplash.com/photos/keprVH9L1aU",
+  },
+  {
+    key: "things-dahlonega",
+    photographer: "Desirae Hayes-Vitor",
+    unsplashUrl: "https://unsplash.com/photos/wOHY5BQpAuk",
+  },
+  {
+    key: "things-san-diego",
+    photographer: "Nathalie Anfuso",
+    unsplashUrl: "https://unsplash.com/photos/dw-MSpKX0OA",
+  },
+  {
+    key: "things-santa-barbara",
+    photographer: "Sven Piper",
+    unsplashUrl: "https://unsplash.com/photos/n8qEXfXgogo",
+  },
+  {
+    key: "things-monterey",
+    photographer: "Sydney Moore",
+    unsplashUrl: "https://unsplash.com/photos/ac0D3zExbGg",
+  },
+  {
+    key: "things-mendocino",
+    photographer: "Max",
+    unsplashUrl: "https://unsplash.com/photos/hTsBtTB-Jaw",
+  },
 ];

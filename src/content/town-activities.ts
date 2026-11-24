@@ -124,19 +124,6 @@ export const townActivities: Record<string, TownActivity[]> = {
   ],
   "georgia/ellijay": [
     {
-      name: "Tumbling Waters Nature Trail, Carters Lake",
-      summary: "A nature trail at Carters Lake, an Army Corps lake.",
-      dogNote:
-        "Keep your dog leashed and carry water and waste bags, per the chamber. The Corps requires pets in its campgrounds to be on a leash under six feet.",
-      kind: "trail",
-      source: GILMER_PETS,
-      alsoSource: {
-        publisher: "Recreation.gov",
-        url: "https://www.recreation.gov/camping/campgrounds/10009939",
-      },
-      checkedOn: D,
-    },
-    {
       name: "Harrison Park and River Park",
       summary:
         "Town parks with walking trails and wooded areas; Harrison Park is a short walk from the Downtown Square.",
@@ -342,7 +329,7 @@ export const townActivities: Record<string, TownActivity[]> = {
       name: "Fiesta Island, Mission Bay Park",
       summary: "A leash-optional island with a 5.2-mile path around it.",
       dogNote:
-        "Leash-optional, shoreline included. Hours differ by city page: 4 a.m. to 10 p.m. on one, 6 a.m. to 10 p.m. on another. Two tern nesting sites are gated year-round, the buffer zones around them are closed April 15 through September 15, and dogs are barred from the Youth Aquatic Center.",
+        "Leash-optional, shoreline included. The city's pages give conflicting opening hours, so check before you go. Two tern nesting sites are gated year-round, the buffer zones around them are closed April 15 through September 15, and dogs are barred from the Youth Aquatic Center.",
       kind: "park",
       source: {
         publisher: "City of San Diego",
@@ -355,7 +342,7 @@ export const townActivities: Record<string, TownActivity[]> = {
       checkedOn: D,
     },
     {
-      name: "Other city beaches and Mission Bay",
+      name: "Other city beaches",
       summary: "Leashed walks outside the no-dog hours.",
       dogNote:
         "Dogs are not allowed on the beach, boardwalk or adjacent parks from 9 a.m. to 4 p.m. between Nov. 1 and Mar. 31, or 9 a.m. to 6 p.m. between Apr. 1 and Oct. 31. At other hours they must be on a leash.",
@@ -405,22 +392,6 @@ export const townActivities: Record<string, TownActivity[]> = {
     },
   ],
   "california/santa-barbara": [
-    {
-      name: "Arroyo Burro Beach (Hendry's)",
-      summary: "A county beach park with self-serve dog wash stations.",
-      dogNote:
-        "The county lists it among its off-leash dog areas. Visit Santa Barbara says dogs must always be leashed on the beach, and its dog guide says off-leash is allowed only in select spots. Follow the posted signs.",
-      kind: "beach",
-      source: {
-        publisher: "Santa Barbara County",
-        url: "https://www.countyofsb.org/887/Off-Leash-Dog-Areas",
-      },
-      alsoSource: {
-        publisher: "Visit Santa Barbara",
-        url: "https://santabarbaraca.com/businesses/arroyo-burro-beach/",
-      },
-      checkedOn: D,
-    },
     {
       name: "Douglas Family Preserve",
       summary: "A preserve above Arroyo Burro Beach with walking trails and a dog water fountain.",
@@ -516,7 +487,7 @@ export const townActivities: Record<string, TownActivity[]> = {
       name: "Asilomar State Beach, Pacific Grove",
       summary: "A state beach and coast trail open 8 a.m. to sunset.",
       dogNote:
-        "Dogs on leash are allowed on the beach, trails and conference grounds, not in conference buildings. The park page currently lists the beach and Coast Trail as closed for large swells and high tides, so check it first.",
+        "Dogs on leash are allowed on the beach, trails and conference grounds, not in conference buildings. The park page posts closure alerts; on 2026-11-24 it listed the beach and Coast Trail as closed for large swells and high tides, so check it first.",
       kind: "beach",
       source: { publisher: "California State Parks", url: "https://www.parks.ca.gov/?page_id=566" },
       checkedOn: D,
@@ -610,18 +581,6 @@ export const townActivities: Record<string, TownActivity[]> = {
       source: {
         publisher: "Mendocino Land Trust",
         url: "https://www.mendocinolandtrust.org/trails/noyo-headlands-trail/",
-      },
-      checkedOn: D,
-    },
-    {
-      name: "Anderson Valley wineries",
-      summary: "Tasting rooms inland in Anderson Valley, such as Goldeneye in Philo.",
-      dogNote:
-        "A 2024 article from the valley's wine site says Goldeneye has a dog-friendly patio and others offer water and treats. It states no leash or indoor rules, so ask each winery.",
-      kind: "tasting-room",
-      source: {
-        publisher: "Anderson Valley wine site",
-        url: "https://avwines.com/blog/worlds-dog-friendliest-wine-region/",
       },
       checkedOn: D,
     },

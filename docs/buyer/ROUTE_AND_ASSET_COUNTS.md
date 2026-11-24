@@ -64,8 +64,8 @@ Checks on the first 95 on the final build (2026-11-24; the 8 added town articles
 | Trust and legal pages | 9 | sitemap |
 | Pinterest pin images | 29 (one per published guide, 1000x1500) + pin sheet `docs/pinterest-pins.csv` (29 data rows) | `public/pins/`, CSV line count 30 |
 | Share (link-preview) images | 30 | `public/share/` |
-| Image files in `src/assets` | 154 JPG | file listing |
-| Image credit entries | 46 in `src/content/image-credits.ts` (plus pack photo credits) | `key:` count |
+| Image files in `src/assets` | 211 JPG (incl. 24 for the eight town article heroes) | file listing |
+| Image credit entries | 65 in `src/content/image-credits.ts` (plus pack photo credits), 8 of them the town article heroes | `key:` count |
 | Fonts | 2 variable WOFF2 files (DM Sans, Fraunces) with OFL texts | `public/fonts/` |
 | Automated tests | **610 passing in 47 files** | `bunx vitest run`, 38 s |
 | GitHub workflows | 4 | `.github/workflows/` |

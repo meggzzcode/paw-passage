@@ -42,6 +42,7 @@ import { Route as ToolsPetCostCheckRouteImport } from './routes/tools.pet-cost-c
 import { Route as ToolsWillMyDogBeAcceptedRouteImport } from './routes/tools.will-my-dog-be-accepted'
 import { Route as DestinationsStateIndexRouteImport } from './routes/destinations.$state.index'
 import { Route as DestinationsStateTownRouteImport } from './routes/destinations.$state.$town'
+import { Route as DestinationsStateTownThingsToDoRouteImport } from './routes/destinations.$state.$town_.things-to-do'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -210,6 +211,12 @@ const DestinationsStateTownRoute = DestinationsStateTownRouteImport.update({
   path: '/destinations/$state/$town',
   getParentRoute: () => rootRouteImport,
 } as any)
+const DestinationsStateTownThingsToDoRoute =
+  DestinationsStateTownThingsToDoRouteImport.update({
+    id: '/destinations/$state/$town_/things-to-do',
+    path: '/destinations/$state/$town/things-to-do',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -245,6 +252,7 @@ export interface FileRoutesByFullPath {
   '/tools/': typeof ToolsIndexRoute
   '/destinations/$state/$town': typeof DestinationsStateTownRoute
   '/destinations/$state/': typeof DestinationsStateIndexRoute
+  '/destinations/$state/$town/things-to-do': typeof DestinationsStateTownThingsToDoRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -280,6 +288,7 @@ export interface FileRoutesByTo {
   '/tools': typeof ToolsIndexRoute
   '/destinations/$state/$town': typeof DestinationsStateTownRoute
   '/destinations/$state': typeof DestinationsStateIndexRoute
+  '/destinations/$state/$town/things-to-do': typeof DestinationsStateTownThingsToDoRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -316,6 +325,7 @@ export interface FileRoutesById {
   '/tools/': typeof ToolsIndexRoute
   '/destinations/$state/$town': typeof DestinationsStateTownRoute
   '/destinations/$state/': typeof DestinationsStateIndexRoute
+  '/destinations/$state/$town_/things-to-do': typeof DestinationsStateTownThingsToDoRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -353,6 +363,7 @@ export interface FileRouteTypes {
     | '/tools/'
     | '/destinations/$state/$town'
     | '/destinations/$state/'
+    | '/destinations/$state/$town/things-to-do'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -388,6 +399,7 @@ export interface FileRouteTypes {
     | '/tools'
     | '/destinations/$state/$town'
     | '/destinations/$state'
+    | '/destinations/$state/$town/things-to-do'
   id:
     | '__root__'
     | '/'
@@ -423,6 +435,7 @@ export interface FileRouteTypes {
     | '/tools/'
     | '/destinations/$state/$town'
     | '/destinations/$state/'
+    | '/destinations/$state/$town_/things-to-do'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -459,6 +472,7 @@ export interface RootRouteChildren {
   ToolsIndexRoute: typeof ToolsIndexRoute
   DestinationsStateTownRoute: typeof DestinationsStateTownRoute
   DestinationsStateIndexRoute: typeof DestinationsStateIndexRoute
+  DestinationsStateTownThingsToDoRoute: typeof DestinationsStateTownThingsToDoRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -694,6 +708,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof DestinationsStateTownRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/destinations/$state/$town_/things-to-do': {
+      id: '/destinations/$state/$town_/things-to-do'
+      path: '/destinations/$state/$town/things-to-do'
+      fullPath: '/destinations/$state/$town/things-to-do'
+      preLoaderRoute: typeof DestinationsStateTownThingsToDoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -732,6 +753,7 @@ const rootRouteChildren: RootRouteChildren = {
   ToolsIndexRoute: ToolsIndexRoute,
   DestinationsStateTownRoute: DestinationsStateTownRoute,
   DestinationsStateIndexRoute: DestinationsStateIndexRoute,
+  DestinationsStateTownThingsToDoRoute: DestinationsStateTownThingsToDoRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

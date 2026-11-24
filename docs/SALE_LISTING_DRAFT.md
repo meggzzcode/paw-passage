@@ -25,11 +25,11 @@ This is a **new, pre-revenue starter site**. The domain was registered in Novemb
 - **3 planning tools**, each loaded and used in a browser on 2026-11-24: "will my dog be accepted" (checks the 38 managers), a 15-item packing list, a 25-item before-you-book checklist.
 - **Gear shop**: a photo-free editorial shop with 11 category pages, 5 curated trip collections, 92 product records (65 active, each with an Amazon link and a source), and 90 pick cards in the guides. No third-party (Amazon) product images. Its own design spec scores it 7.7 of 10 against a target of 9 (`docs/GEAR_SHOPPER_EXPERIENCE_SPEC.md`); keyboard and screen-reader checks on real devices were not done.
 - **Affiliate disclosure**: one notice at the top of each guide and Gear page that carries an affiliate link, with the Amazon Associates sentence where Amazon links appear; the per-button labels were removed from guides and Gear (the Vrbo booking buttons on stay pages still carry a short label). Affiliate links are wired through two config files so you replace IDs without code (steps in `docs/GEAR_REDESIGN_IMPLEMENTATION.md`).
-- **SEO foundations**: 95-URL generated sitemap, canonicals, noindex rules, structured data, 301 redirects for retired guides, IndexNow key and script, weekly health-check workflow.
+- **SEO foundations**: 103-URL generated sitemap, canonicals, noindex rules, structured data, 301 redirects for retired guides, IndexNow key and script, weekly health-check workflow.
 - **Pinterest assets**: 29 pins (1000x1500) with a posting sheet and 30 share images. No Pinterest account is included.
 - **Images**: Unsplash photos with credits (the license gives usage rights, not ownership or exclusivity), the site's own graphic spec cards, self-hosted open-license fonts.
 - **Trust pages**: about, methodology, editorial standards (AI-assisted content is disclosed there), corrections, affiliate disclosure, privacy, terms, contact.
-- **Codebase and tools**: React/TanStack Start site, no database and no logins, 605 automated tests passing, a content editor setup for Pages CMS, 4 GitHub Actions workflows.
+- **Codebase and tools**: React/TanStack Start site, no database and no logins, 610 automated tests passing, a content editor setup for Pages CMS, 4 GitHub Actions workflows.
 - **Documentation**: handover guide, transfer checklist and package index, DNS and email transfer notes, operations handbook, security and recovery runbook, monetization-readiness guide, hosting options.
 
 ## What you do not get

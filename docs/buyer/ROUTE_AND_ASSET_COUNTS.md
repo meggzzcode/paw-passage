@@ -11,12 +11,12 @@ Purpose: one place for every headline number a buyer or a listing may quote, wit
 - Source: committed code at HEAD `13a7ce1` (508 commits; the first is 2026-11-16).
 - Build: production build (`NITRO_PRESET=node-server`) served by `node` on port 4199.
 - Sitemap: `curl /sitemap.xml` from that build, grouped by first path segment. The sitemap comes from `src/lib/sitemap-entries.ts`.
-- Page checks: each of the 95 sitemap URLs fetched from the build and parsed for status, canonical, H1 count, title length, description length and `noindex`; every guide page parsed for body links; the stays directory parsed for listed stay links, and each listed stay's robots meta read.
+- Page checks: each of the 103 sitemap URLs fetched from the build and parsed for status, canonical, H1 count, title length, description length and `noindex`; every guide page parsed for body links; the stays directory parsed for listed stay links, and each listed stay's robots meta read.
 - Data counts: YAML read from `content/products.yml`, `content/affiliates.yml` and `content/stays/*.yml`; guide frontmatter and `src/content/guides/*.ts` read directly.
 - Tests: `bunx vitest run` at HEAD.
 - Word counts: whitespace-split words of each published guide's Markdown body (frontmatter, FAQs, Sources and page chrome excluded; card directives and link syntax included). The rendered-page counts in the QA crawl are higher.
 
-## Sitemap: 95 URLs
+## Sitemap: 103 URLs
 
 | Type | URLs | Detail |
 |---|---:|---|
@@ -24,14 +24,14 @@ Purpose: one place for every headline number a buyer or a listing may quote, wit
 | Guides | 30 | `/guides` index + 29 published guides |
 | Stays | 24 | `/stays` index + 23 indexable stay pages |
 | Gear | 12 | `/gear` hub + 11 category pages |
-| Destinations | 9 | `/destinations` + 2 state pages (Georgia, California) + 6 town pages (Blue Ridge, Ellijay, Helen, Dahlonega, San Diego, Santa Barbara) |
+| Destinations | 17 | `/destinations` + 2 state pages (Georgia, California) + 6 town pages (Blue Ridge, Ellijay, Helen, Dahlonega, San Diego, Santa Barbara) + 8 companion 'things to do with a dog' articles at `/destinations/<state>/<town>/things-to-do` (not guides; the guide count stays 29) |
 | Dog types | 5 | `/dogs` + 4 pages (escape artists, big dogs, multi-dog families, senior dogs) |
 | Tools | 4 | `/tools` + 3 tools |
 | Research data | 1 | `/data/pet-policies` |
 | Trust and info pages | 9 | about, contact, list-your-property, affiliate-disclosure, privacy, terms, editorial-standards, methodology, corrections |
-| **Total** | **95** | checked against the XML; 1 + 30 + 24 + 12 + 9 + 5 + 4 + 1 + 9 = 95 |
+| **Total** | **103** | checked against the XML; 1 + 30 + 24 + 12 + 17 + 5 + 4 + 1 + 9 = 103 |
 
-Checks on all 95 on the final build (2026-11-24): HTTP 200 on all; a self-referencing canonical on all; exactly one H1 on all; every title 60 characters or fewer; every meta description 120 to 160 characters; no stray `noindex`. The five gear trip views (`/gear?trip=<slug>`) are not in the sitemap, are `noindex, nofollow` and canonicalize to `/gear`. Not in the sitemap on purpose: `/dog-rules` (noindex, no verified place), the retired tool addresses (301 to `/tools`), the draft guides (404), 55 listed stays that are `noindex` as too thin, and the Monterey and Mendocino town pages (`noindex`). A sitemap lists URLs offered for indexing; it is not evidence that Google has indexed them (see the inventory, section 12, for the only indexing evidence that exists).
+Checks on the first 95 on the final build (2026-11-24; the 8 added town articles were checked by `scripts/verify-site.mjs`, 318 checks passed): HTTP 200 on all; a self-referencing canonical on all; exactly one H1 on all; every title 60 characters or fewer; every meta description 120 to 160 characters; no stray `noindex`. The five gear trip views (`/gear?trip=<slug>`) are not in the sitemap, are `noindex, nofollow` and canonicalize to `/gear`. Not in the sitemap on purpose: `/dog-rules` (noindex, no verified place), the retired tool addresses (301 to `/tools`), the draft guides (404), 55 listed stays that are `noindex` as too thin, and the Monterey and Mendocino town pages (`noindex`). A sitemap lists URLs offered for indexing; it is not evidence that Google has indexed them (see the inventory, section 12, for the only indexing evidence that exists).
 
 ## Content and data
 
@@ -67,14 +67,14 @@ Checks on all 95 on the final build (2026-11-24): HTTP 200 on all; a self-refere
 | Image files in `src/assets` | 154 JPG | file listing |
 | Image credit entries | 46 in `src/content/image-credits.ts` (plus pack photo credits) | `key:` count |
 | Fonts | 2 variable WOFF2 files (DM Sans, Fraunces) with OFL texts | `public/fonts/` |
-| Automated tests | **605 passing in 46 files** | `bunx vitest run`, 38 s |
+| Automated tests | **610 passing in 47 files** | `bunx vitest run`, 38 s |
 | GitHub workflows | 4 | `.github/workflows/` |
 | Pages CMS collections | 6 (guides, stays, places, affiliates, products, settings) | `.pages.yml`; never opened in the live Pages CMS app (UNVERIFIED) |
 | Netlify redirects in `netlify.toml` | 10 permanent redirect rules (retired guides) plus app-level redirects for retired tool, gear and guide addresses | `grep -c "from ="` |
 | Markdown docs | 156 in `docs/` (642 in the folder tree) | file listing |
 | Git history | 508 commits, first commit 2026-11-16 | `git log` |
 
-## Link and disclosure counts (95 sitemap pages, final build)
+## Link and disclosure counts (first 95 sitemap pages, final build; the 8 town articles are not included)
 
 | Link type | Occurrences | Notes |
 |---|---:|---|

@@ -1,6 +1,8 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { getState, getTown } from "@/content/destinations";
 import { getGuide } from "@/content/guides";
+import { getTownActivities } from "@/content/town-activities";
+import { getPublicTownRead } from "@/content/town-reads";
 import { visibleStays } from "@/content/stays";
 import { images, srcSetForKey } from "@/lib/images";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
@@ -67,6 +69,8 @@ function TownPage() {
   const { d, t } = Route.useLoaderData();
   const guides = t.guides.map((g) => getGuide(g)).filter((g) => !!g);
   const stays = visibleStays().filter((s) => s.town === t.slug);
+  const activities = getTownActivities(d.slug, t.slug);
+  const read = getPublicTownRead(d.slug, t.slug);
   return (
     <div className="container-page pt-10">
       <Breadcrumbs
@@ -95,6 +99,67 @@ function TownPage() {
           className="aspect-[4/3] w-full rounded-xl object-cover"
         />
       </div>
+      {activities.length > 0 && (
+        <section className="mt-12" aria-labelledby="things-to-do">
+          <h2 id="things-to-do" className="text-3xl">
+            Dog-friendly things to do near {t.name}
+          </h2>
+          <p className="mt-2 text-sm text-muted-foreground">
+            Rules change: check the linked page before you go. Rules read {activities[0]!.checkedOn}
+            .
+          </p>
+          <ul className="mt-5 max-w-3xl space-y-4">
+            {activities.map((a) => (
+              <li key={a.name} className="flex gap-3">
+                <span className="mt-2.5 size-2 shrink-0 rounded-full bg-terracotta" aria-hidden />
+                <span>
+                  <strong>{a.name}.</strong> {a.summary} <span>{a.dogNote}</span>{" "}
+                  <span className="whitespace-nowrap text-sm text-muted-foreground">
+                    (
+                    <a
+                      href={a.source.url}
+                      className="underline"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {a.source.publisher}
+                    </a>
+                    {a.alsoSource && (
+                      <>
+                        {", "}
+                        <a
+                          href={a.alsoSource.url}
+                          className="underline"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {a.alsoSource.publisher}
+                        </a>
+                      </>
+                    )}
+                    )
+                  </span>
+                </span>
+              </li>
+            ))}
+          </ul>
+          {read && (
+            <aside className="mt-6 max-w-3xl rounded-xl bg-secondary/70 p-5">
+              <p className="eyebrow">Suggested read</p>
+              <p className="mt-1 font-display text-xl">
+                <Link
+                  to="/destinations/$state/$town/things-to-do"
+                  params={{ state: d.slug, town: t.slug }}
+                  className="text-primary underline"
+                >
+                  {read.title}
+                </Link>
+              </p>
+              <p className="mt-1 text-sm text-muted-foreground">{read.dek}</p>
+            </aside>
+          )}
+        </section>
+      )}
       <section className="mt-16 grid gap-10 md:grid-cols-[1.3fr_1fr]">
         <div>
           <h2 className="text-3xl">What to check before you book here</h2>

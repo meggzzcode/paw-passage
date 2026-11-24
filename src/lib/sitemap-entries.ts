@@ -1,5 +1,6 @@
 import { destinations } from "@/content/destinations";
 import { allGuides, isPublic } from "@/content/guides";
+import { allTownReads, townReadIsPublic, townReadPath } from "@/content/town-reads";
 import { visibleStays } from "@/content/stays";
 import { visiblePlaces } from "@/content/places";
 import { dogTypes, dogTypeIsLive } from "@/content/dog-types";
@@ -42,6 +43,9 @@ export function sitemapEntries(): { path: string; lastmod?: string }[] {
       if (townIsIndexable(d.slug, t.slug, allStays))
         out.push({ path: `/destinations/${d.slug}/${t.slug}` });
   }
+  // Companion "things to do" articles under each town (published ones only; they are not guides).
+  for (const r of allTownReads.filter(townReadIsPublic))
+    out.push({ path: townReadPath(r.state, r.town), lastmod: r.lastReviewed });
   // The dog-rules lookup is noindexed until a verified place exists, so it joins the sitemap only then (verified places only, never unverified seeds).
   const livePlaces = visiblePlaces({ includeUnverified: false });
   if (livePlaces.length > 0) {

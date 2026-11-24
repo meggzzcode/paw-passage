@@ -13,7 +13,7 @@ describe("sitemap lastmod rules", () => {
   });
   it("only guides, verified places and verified stays carry a lastmod", () => {
     for (const e of entries.filter((x) => x.lastmod))
-      expect(/^\/(guides|dog-rules|stays)\//.test(e.path)).toBe(true);
+      expect(/^\/(guides|dog-rules|stays)\/|\/things-to-do$/.test(e.path)).toBe(true);
   });
   it("has no duplicate URLs and no query-string (trip view) URLs", () => {
     const paths = entries.map((e) => e.path);

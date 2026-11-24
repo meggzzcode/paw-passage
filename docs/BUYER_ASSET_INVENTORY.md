@@ -1,6 +1,6 @@
 # Buyer asset inventory: Paws & Passage
 
-Re-verified 2026-11-24 (final) against repository `HEAD` `13a7ce1`, pushed to `main`: a production build served locally, all 95 sitemap URLs fetched (all HTTP 200), every guide page parsed, `content/*.yml` read, and `bunx vitest run` (605 tests in 46 files, all passing). Method and every count: `docs/buyer/ROUTE_AND_ASSET_COUNTS.md`. This file replaces the earlier 2026-11-24 version made at `56552fc`; older numbers (498 tests, 57,011 words, 452 sources, 37 stay files, 53 active products, per-button affiliate labels) and the 2026-11-23 numbers (98-URL sitemap, 30 guides, 76,890 words, 491 sources) are superseded.
+Re-verified 2026-11-24 (final) against repository `HEAD` `13a7ce1`, pushed to `main`: a production build served locally, all 103 sitemap URLs fetched (95 at `13a7ce1` plus 8 town 'things to do' pages added afterwards) (all HTTP 200), every guide page parsed, `content/*.yml` read, and `bunx vitest run` (605 tests in 46 files, all passing). Method and every count: `docs/buyer/ROUTE_AND_ASSET_COUNTS.md`. This file replaces the earlier 2026-11-24 version made at `56552fc`; older numbers (498 tests, 57,011 words, 452 sources, 37 stay files, 53 active products, per-button affiliate labels) and the 2026-11-23 numbers (98-URL sitemap, 30 guides, 76,890 words, 491 sources) are superseded.
 
 **Deploy pending: the final build is NOT live.** The owner stopped Netlify builds, so the live site shows an older deploy. This file describes the repository. Every listing claim about the live site must be re-verified by Cowork after the first deploy (sitemap, canonicals, Amazon links and disclosure on the live domain).
 
@@ -16,7 +16,7 @@ Live site versus repo: the owner has stopped Netlify builds to preserve credits 
 
 | Asset | Quantity |
 |---|---|
-| Sitemap URLs | 95 (home 1, guides 30, stays 24, gear 12, destinations 9, dogs 5, tools 4, data 1, trust and info pages 9) |
+| Sitemap URLs | 103 (home 1, guides 30, stays 24, gear 12, destinations 17, dogs 5, tools 4, data 1, trust and info pages 9) |
 | Published guides | 29 (32 files: 25 Markdown, 7 TypeScript; 3 drafts held back) |
 | Words in published guide bodies | 45,057 (1,014 to 2,027 per guide) |
 | Sources / inline citations | 420 listed sources, each linked inside the article text by publisher name (no numbered markers); 152 FAQs |
@@ -27,7 +27,7 @@ Live site versus repo: the owner has stopped Netlify builds to preserve credits 
 | Gear | 11 category pages + hub; 92 product records, 65 active; 5 curated trip collections |
 | Pick/spec cards in guides | 90 across all 29 guides |
 | Pins and share images | 29 pins (1000x1500) + pin sheet; 30 share images (1200x630) |
-| Tests | 605 in 46 files |
+| Tests | 610 in 47 files |
 
 ## 3. Published guides and research
 
@@ -110,7 +110,7 @@ The final QA crawl exercised all three tools again at 390 and 1280 px on the fin
 | Portability | Clean installs and builds were run with no Lovable account: Node build, default build and a Netlify-style build all passed (`docs/HOSTING_PORTABILITY_REPORT.md`, `docs/buyer/HOSTING_OPTIONS.md`). Netlify is recommended; Lovable hosting is optional and untested |
 | One Lovable dependency | devDependency `@lovable.dev/vite-tanstack-config` 2.27.2 (public npm, MIT, no login). A developer could replace it with a plain Vite config. Plus a no-op error hook and text/comments mentioning Lovable. Advice: the owner disconnects Lovable's GitHub sync before handover (UNVERIFIED whether it is currently connected) |
 | CI and automation | 4 GitHub Actions workflows (tests and build, weekly health check, monthly digest, manual IndexNow). Not observed running on a schedule in this audit |
-| Tests and build | 605 tests pass in 46 files; build passes; scripts for verifying a live site (`scripts/verify-site.mjs`) |
+| Tests and build | 610 tests pass in 47 files; build passes; scripts for verifying a live site (`scripts/verify-site.mjs`) |
 
 ## 10. Content management (Pages CMS, `.pages.yml`)
 
@@ -130,7 +130,7 @@ The final QA crawl exercised all three tools again at 390 and 1280 px on the fin
 
 ## 12. SEO implementation and verified indexing evidence
 
-Implemented (VERIFIED in the crawl): 95-URL generated sitemap, absolute canonical on every page (0 mismatches), per-page titles and descriptions, `noindex` on thin pages, `robots.txt` with the sitemap line, Organization, Article, BreadcrumbList and Dataset JSON-LD, IndexNow key file and script, 301 redirects for retired addresses (the merged large-dog guide returns 301 to its survivor), and a weekly health-check workflow.
+Implemented (VERIFIED in the crawl): 103-URL generated sitemap, absolute canonical on every page (0 mismatches), per-page titles and descriptions, `noindex` on thin pages, `robots.txt` with the sitemap line, Organization, Article, BreadcrumbList and Dataset JSON-LD, IndexNow key file and script, 301 redirects for retired addresses (the merged large-dog guide returns 301 to its survivor), and a weekly health-check workflow.
 
 Indexing evidence (OWNER, Google Search Console, not re-checked here): **Google URL Inspection showed 21 of 23 inspected pages indexed. Search Console reported 236 impressions and 0 clicks over 28 days.** That is the whole of it. It does not show that all 95 sitemap URLs are indexed, and it is not a traffic or revenue history. Evidence screenshots are held privately (`docs/BUYER_DUE_DILIGENCE_CHECKLIST.md`).
 
@@ -142,7 +142,7 @@ Full detail: `docs/MONETIZATION_READINESS.md` (its crawl counts are older than t
 
 | Channel | State in the repo | What the buyer must do |
 |---|---|---|
-| Amazon Associates | Tag `pawspassage-20` configured; 81 Amazon link entries (71 approved, 10 not); 65 distinct Amazon URLs render on the Gear pages (254 tagged links across the 95 sitemap pages); approval status of the seller's account UNKNOWN | Apply for their own Associates account, set `amazonTrackingId` in `content/settings.yml` (tested: one value retags every link; empty value hides all Amazon links and the Amazon sentence) |
+| Amazon Associates | Tag `pawspassage-20` configured; 81 Amazon link entries (71 approved, 10 not); 65 distinct Amazon URLs render on the Gear pages (254 tagged links across the first 95 sitemap pages; the 8 town 'things to do' pages each carry one Amazon product link and were not recounted); approval status of the seller's account UNKNOWN | Apply for their own Associates account, set `amazonTrackingId` in `content/settings.yml` (tested: one value retags every link; empty value hides all Amazon links and the Amazon sentence) |
 | Vrbo (Expedia Group creator deeplinks) | 79 entries (1 generic + 78 per-listing), all marked approved; each listed stay shows 2 booking buttons | Open their own Expedia Group affiliate account and regenerate and replace every deeplink (worksheet and import scripts included); until replaced, clicks credit the seller |
 | Impact | Only a site-verification meta tag in `src/routes/__root.tsx`; no Impact links | Remove the tag, verify with their own account |
 | Awin, Chewy, others | Not in code; proposed in `docs/AFFILIATE-APPLICATION-PACK.md` | Apply fresh, per brand |

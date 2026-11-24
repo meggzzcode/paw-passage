@@ -41,7 +41,6 @@ describe("template fixes", () => {
         guide={{ category: "x", lastReviewed: "2026-11-16", sources: [{}, {}], body: "" }}
       />,
     );
-    expect(out).toContain("2 sources cited");
     expect(out).not.toContain("official");
   });
   it("task items carry a class that removes the bullet", () => {

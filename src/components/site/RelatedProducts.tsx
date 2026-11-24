@@ -2,7 +2,6 @@ import { Link, useLocation } from "@tanstack/react-router";
 import { getProducts } from "@/content/gear";
 import { resolveProductLink } from "@/content/gear-links";
 import { ProductSpecCard } from "@/components/site/ProductSpecCard";
-import { AFFILIATE_BUY_LABEL, AFFILIATE_LABEL_CLASS } from "@/lib/disclosure";
 import { trackProductClick } from "@/lib/analytics";
 import { isMonetized } from "@/content/affiliate-usage";
 import { PRODUCT_CALLOUTS_REQUIRE_AFFILIATE_LINK } from "@/content/publish-rule";
@@ -49,16 +48,6 @@ export function RelatedProducts({
               <ProductSpecCard product={p} as="h3" />
               <p className="mt-3 text-sm text-muted-foreground">{p.summary}</p>
               <div className="mt-3 flex flex-wrap items-center gap-3 text-sm">
-                {cat && (
-                  <Link
-                    to="/gear/$category"
-                    params={{ category: cat }}
-                    hash={p.id}
-                    className="text-primary underline"
-                  >
-                    Details and specs
-                  </Link>
-                )}
                 {link && (
                   <>
                     <a
@@ -86,10 +75,17 @@ export function RelatedProducts({
                     >
                       {link.label}
                     </a>
-                    {link.kind === "affiliate" && (
-                      <span className={AFFILIATE_LABEL_CLASS}>{AFFILIATE_BUY_LABEL}</span>
-                    )}
                   </>
+                )}
+                {cat && (
+                  <Link
+                    to="/gear/$category"
+                    params={{ category: cat }}
+                    hash={p.id}
+                    className="text-primary underline"
+                  >
+                    Details and specs
+                  </Link>
                 )}
               </div>
             </li>

@@ -6,7 +6,6 @@ import { guidePickFor } from "@/content/gear-hub";
 import { getGuide } from "@/content/guides";
 import { isPublic } from "@/content/guides";
 import { ProductSpecCard } from "@/components/site/ProductSpecCard";
-import { AFFILIATE_BUY_LABEL, AFFILIATE_LABEL_CLASS } from "@/lib/disclosure";
 import { trackProductClick } from "@/lib/analytics";
 
 /**
@@ -117,9 +116,6 @@ export function GearProductCard({ product }: { product: Product }) {
           >
             {link.label}
           </a>
-          {link.kind === "affiliate" && (
-            <span className={AFFILIATE_LABEL_CLASS}>{AFFILIATE_BUY_LABEL}</span>
-          )}
           {product.alternativeRetailer && (
             <span className="text-sm text-muted-foreground">
               Also at{" "}

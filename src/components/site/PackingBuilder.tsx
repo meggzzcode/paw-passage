@@ -34,7 +34,6 @@ import { getProduct } from "@/content/gear";
 import { liveCategoryFor } from "@/content/gear-hub";
 import { allGuides } from "@/content/guides";
 import { getApprovedLink, isAmazon, AMAZON_DISCLOSURE } from "@/content/affiliates";
-import { AFFILIATE_BUY_LABEL, AFFILIATE_LABEL_CLASS } from "@/lib/disclosure";
 import { productButton, productLinkId } from "@/content/affiliate-usage";
 import { packPhoto, packPhotoCredits } from "@/lib/pack-images";
 import { trackProductClick, trackTool, trackToolOnce } from "@/lib/analytics";
@@ -481,9 +480,6 @@ function Popover({
                     >
                       {btn.label}
                     </a>
-                    {aff && (
-                      <p className={`mt-1 ${AFFILIATE_LABEL_CLASS}`}>{AFFILIATE_BUY_LABEL}</p>
-                    )}
                   </>
                 )}
               </div>

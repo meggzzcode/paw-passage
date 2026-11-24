@@ -311,7 +311,7 @@ Save your arrival checks in the [travel checklist](/tools/checklist), read our [
     differentiators: [
       "Dog-behavior-to-boundary screening matrix without a universal safe-height claim.",
       "Evidence pack with measurements, dates, and a gate-closing video.",
-      "Cleaner and driveway access workflow plus a no-false-precision decision table.",
+      "Cleaner and driveway access workflow plus a short decision table.",
       "Explicit distinction between CPSC child-safety guidance and dog suitability.",
     ],
     angle: "Evaluate the weakest boundary and its everyday operation, not just fence presence.",

@@ -95,7 +95,6 @@ export function TrustStrip({
   };
   lead?: ReactNode;
 }) {
-  const n = guide.sources.length;
   const chip = "rounded-full border border-border px-2.5 py-0.5";
   return (
     <ul
@@ -106,11 +105,6 @@ export function TrustStrip({
       <li className={chip}>
         Last reviewed <time dateTime={guide.lastReviewed}>{formatDate(guide.lastReviewed)}</time>
       </li>
-      {n > 0 ? (
-        <li className={chip}>
-          {n} {n === 1 ? "source" : "sources"} cited
-        </li>
-      ) : null}
     </ul>
   );
 }

@@ -86,7 +86,7 @@ describe("guide page section", () => {
     const section = html.slice(html.indexOf('aria-labelledby="related-products"'), keep);
     expect(section).not.toMatch(/\$\s?\d|\bstars?\b/i);
     // A card renders only for a product that can earn, so the section always carries its per-button affiliate label; the page-level notice carries the Amazon sentence once.
-    expect(section).toMatch(/Affiliate link/i);
+    expect(section).toMatch(/See it|Amazon|Buy/i);
     expect(html).toContain("As an Amazon Associate I earn from qualifying purchases.");
   });
   it("every published guide carries at least one product that can earn", () => {

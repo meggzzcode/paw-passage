@@ -390,7 +390,7 @@ Start with the restraint from Quick picks that matches your dog's weight and has
       "Teaches readers how to verify a claim in the CPS directory instead of ranking products by opinion.",
       "Covers cargo anchors and extension tethers using CPS advisories.",
       "Explains certification is specific to a model, size and test weight.",
-      "Includes a pick-by-situation section and a pre-trip checklist linked to site tools.",
+      "Includes a pre-trip checklist linked to site tools.",
     ],
     angle:
       "Help readers choose and install a tested restraint by verifying independent listings and checking fit, and say plainly that the products have not been tested by this site.",

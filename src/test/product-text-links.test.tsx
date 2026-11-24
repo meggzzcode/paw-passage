@@ -119,24 +119,16 @@ describe("real guides", () => {
 
   it("dog-car-safety-harness-and-crate-guide links its table products", async () => {
     const html = await sample("dog-car-safety-harness-and-crate-guide");
-    const text = tableLinks(html).map((m) => m[1]);
-    expect(
-      text.some((c) =>
-        /data-product-link="sleepypod-clickit-sport"[^>]*>Sleepypod Clickit Sport<\/a>/.test(c!),
-      ),
-    ).toBe(true);
-    expect(text.some((c) => /data-product-link="sleepypod-atom"/.test(c!))).toBe(true);
-    expect(text.some((c) => /data-product-link="lucky-duck-lucky-kennel"/.test(c!))).toBe(true);
+    // The CPS listings table was removed as noise; the products must still link wherever they are named.
+    expect(html).toMatch(/data-product-link="sleepypod-clickit-sport"/);
+    expect(html).toMatch(/data-product-link="sleepypod-atom"/);
+    expect(html).toMatch(/data-product-link="lucky-duck-lucky-kennel"/);
     expect(html).not.toMatch(/<h[1-6][^>]*>(?:(?!<\/h[1-6]>)[^])*data-product-link/);
   });
 
   it("dog-travel-bowls-and-food-storage links its table products", async () => {
     const html = await sample("dog-travel-bowls-and-food-storage");
-    const ids = new Set(
-      tableLinks(html).flatMap((m) =>
-        [...m[1]!.matchAll(/data-product-link="([^"]+)"/g)].map((x) => x[1]),
-      ),
-    );
+    const ids = new Set([...html.matchAll(/data-product-link="([^"]+)"/g)].map((x) => x[1]));
     for (const id of [
       "kurgo-collaps-a-bowl",
       "springland-22oz-original-travel-bottle",

@@ -3,7 +3,6 @@ import { liveCategoryFor } from "@/content/gear-hub";
 import { AMAZON_DISCLOSURE, getApprovedLink, isAmazon } from "@/content/affiliates";
 import { getProduct, type GearPick } from "@/content/gear";
 import { trackProductClick } from "@/lib/analytics";
-import { AFFILIATE_BUY_LABEL, AFFILIATE_LABEL_CLASS } from "@/lib/disclosure";
 import { ProductSpecCard } from "@/components/site/ProductSpecCard";
 import { productLinkId, productButton, isMonetized } from "@/content/affiliate-usage";
 import { PRODUCT_CALLOUTS_REQUIRE_AFFILIATE_LINK } from "@/content/publish-rule";
@@ -123,9 +122,6 @@ export function GearPicks({
                     >
                       {btn.label}
                     </a>
-                    {affiliate && (
-                      <p className={`mt-2 ${AFFILIATE_LABEL_CLASS}`}>{AFFILIATE_BUY_LABEL}</p>
-                    )}
                   </>
                 );
               })()}

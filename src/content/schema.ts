@@ -61,7 +61,7 @@ export const guideSchema = z.object({
   faqs: z.array(z.object({ q: nonEmpty, a: nonEmpty })).default([]),
   relatedGuides: z.array(z.string()).default([]),
   // Product ids from content/products.yml shown as "Gear for this trip" after the article. Unknown ids stop the build.
-  relatedProducts: z.array(nonEmpty).max(4, "can list at most 4 products").default([]),
+  relatedProducts: z.array(nonEmpty).max(6, "can list at most 6 products").default([]),
   relatedTools: z
     .array(z.enum(["checklist", "will-my-dog-be-accepted", "packing-list"]))
     .default([]),
@@ -123,8 +123,8 @@ export function relatedProductProblems(
           `${g.slug}: the text has {{pick:${id}}}, which is not a product id in content/products.yml`,
         );
     const ids = g.relatedProducts ?? [];
-    if (ids.length > 4)
-      out.push(`${g.slug}: relatedProducts lists ${ids.length} products; the most allowed is 4`);
+    if (ids.length > 6)
+      out.push(`${g.slug}: relatedProducts lists ${ids.length} products; the most allowed is 6`);
     for (const id of ids)
       if (!known.has(id))
         out.push(

@@ -21,12 +21,12 @@ describe("guide relatedProducts validation", () => {
     expect(p[0]).toContain('"no-such-product"');
     expect(p[0]).toContain("content/products.yml");
     expect(
-      relatedProductProblems([{ slug: "g", relatedProducts: ids.slice(0, 5) }], ids)[0],
-    ).toMatch(/most allowed is 4/);
+      relatedProductProblems([{ slug: "g", relatedProducts: ids.slice(0, 7) }], ids)[0],
+    ).toMatch(/most allowed is 6/);
   });
-  it("the schema caps the field at 4 and defaults to empty", () => {
+  it("the schema caps the field at 6 and defaults to empty", () => {
     const shape = guideSchema.shape.relatedProducts;
-    expect(shape.safeParse(["a", "b", "c", "d", "e"]).success).toBe(false);
+    expect(shape.safeParse(["a", "b", "c", "d", "e", "f", "g"]).success).toBe(false);
     expect(shape.parse(undefined)).toEqual([]);
   });
   it("every guide in the repo names only real products", () => {

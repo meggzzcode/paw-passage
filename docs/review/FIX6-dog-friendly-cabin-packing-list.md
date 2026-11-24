@@ -1,0 +1,5 @@
+# FIX6 dog-friendly-cabin-packing-list
+Changed: opening now "a vet who may be far away"; Buying checklist deleted (table is the checklist); "rest is what most owners already have"; first aid, ticks and winter hazards collapsed to one short section with links (first-aid guide, Christmas-week cabin guide); sources cut from 22 to 10 (heat sources, ice melt, mothballs, antifreeze, PPH, AVMA first-aid, leash rules, Airbnb removed with their text); leash/Airbnb detail reduced to one sentence plus the rental checklist link; markers renumbered by first appearance and Sources reordered; readingMinutes 11 to 8; antifreeze FAQ replaced by bear-proof FAQ.
+Restored: BearWise single-portion rule, "regular bin or cooler is not bear-proof", tick check method (well-lit, check yourself), checkout hair/yard waste, stain-remover caution, entry-mat advice.
+Skipped: first-aid kit contents (pointer to dedicated guide); Cornell boots-for-traction line (boots not recommended here); Pet Poison Helpline number dropped with its source (ASPCA number kept).
+Body words 3806 to 3252 (file incl. metadata).

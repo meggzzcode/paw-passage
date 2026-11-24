@@ -13,16 +13,16 @@ export const guide: Guide = {
   author: "Paws & Passage Editors",
   publishedOn: "2026-11-16",
   lastReviewed: "2026-11-24",
-  readingMinutes: 11,
+  readingMinutes: 8,
   heroImage: "guide-packing-list-boots",
-  body: `Muddy paws at the door, a dark deck at 11 pm and a vet an hour away are what a cabin adds to a normal trip. Pack your dog's usual routine, then cover those gaps, and get the host's answers on stairs, fencing and food storage before you load the car.
+  body: `Muddy paws at the door, a dark deck at 11 pm and a vet who may be far away are what a cabin adds to a normal trip. Pack your dog's usual routine, then cover those gaps, and get the host's answers on stairs, fencing and food storage before you load the car.
 
 ## The short answer
 
-- Keep pet food, treats, bowls and rubbish indoors, or stored the way the property and park say. [[1]](https://www.nps.gov/articles/bearsafetyfood.htm) [[13]](https://bearwise.org/six-bearwise-basics/never-leave-pet-food-outdoors/)
-- Carry offline records, microchip details, and emergency vet and poison control numbers (ASPCA 888-426-4435; Pet Poison Helpline 855-764-7661; a consultation fee may apply).
+- Keep pet food, treats, bowls and rubbish indoors, or stored the way the property and park say. [[1]](https://www.nps.gov/articles/bearsafetyfood.htm) [[2]](https://bearwise.org/six-bearwise-basics/never-leave-pet-food-outdoors/)
+- Carry offline records, microchip details, and emergency vet and poison control numbers (ASPCA 888-426-4435; a consultation fee may apply). [[3]](https://www.aspca.org/pet-care/aspca-poison-control)
 - Check for ticks every evening. [[4]](https://www.cdc.gov/ticks/prevention/preventing-ticks-on-pets.html)
-- Keep winter heaters, ash and de-winterizing chemicals away from your dog.
+- In cold weather, keep your dog away from stoves, ash and antifreeze; our [Christmas-week cabin guide](/guides/christmas-week-in-a-cabin-with-a-dog) covers the winter hazards.
 
 ## Our picks at a glance
 
@@ -33,15 +33,7 @@ export const guide: Guide = {
 | A bed that is clearly theirs | Kurgo Loft Wander | Medium 27 x 36 in, Large 36 x 48 in |
 | Dark toilet trips | Ruffwear Beacon | Up to 20 hours run time |
 
-Everything else on this list is what you already own.
-
-## Buying checklist
-
-1. A food container with a snug lid that fits the whole bag. It is tidy storage, not bear-proof; compare its capacity with your dog's food bag before you order.
-2. A machine-washable drying towel, with a size and care rule the maker states.
-3. A roll-up bed with a waterproof bottom, sized to the space you will give it.
-4. A clip-on light that fits the collar or harness you already own.
-5. A reserve of food and medication, in labeled packaging.
+The rest is what most owners already have.
 
 ## Five questions for the host
 
@@ -59,9 +51,9 @@ If essential access depends on stairs your dog cannot manage, change the sleepin
 
 Bring your dog's usual food measured for every travel and cabin day plus a reserve, the usual scoop and treats, bowls, drinking water for the journey, and prescribed medication in labeled packaging with written dosing instructions. Keep medication reachable during the drive, and ask your veterinarian about temperature-sensitive medication and missed doses. Do not introduce a new food on holiday. For bowl and container options, see our [travel bowls and food storage guide](/guides/dog-travel-bowls-and-food-storage).
 
-**Storage.** The National Park Service says bears treat anything with a scent as food, lists trash, toiletries and ice chests among items to store properly, and notes that rules differ from park to park. It does not name pet food, so treat it as scented. Some places allow food in a closed car out of sight while others require lockers. [[1]](https://www.nps.gov/articles/bearsafetyfood.htm) BearWise says pet food is rich in fat and protein, which makes it extremely attractive to bears: feed pets indoors when possible, bring bowls inside at night, and store pet food where bears cannot see or smell it. [[13]](https://bearwise.org/six-bearwise-basics/never-leave-pet-food-outdoors/) Wash bowls and put supplies away after each meal.
+**Storage.** Do not count on a regular food bin or an ordinary cooler as bear-proof. The National Park Service says bears treat anything with a scent as food, lists trash, toiletries and ice chests among items to store properly, and notes that rules differ from park to park. It does not name pet food, so treat it as scented. Some places allow food in a closed car out of sight while others require lockers. [[1]](https://www.nps.gov/articles/bearsafetyfood.htm) BearWise says pet food is rich in fat and protein, which makes it extremely attractive to bears: feed pets indoors when possible; if you must feed outside, give single portions and remove the food and bowls afterward; bring bowls inside at night; and store pet food where bears cannot see or smell it. [[2]](https://bearwise.org/six-bearwise-basics/never-leave-pet-food-outdoors/) Wash bowls and put supplies away after each meal.
 
-For a kibble bin, take the Airtight Dog Food Storage Container Up to 10 lbs from IRIS USA. The maker lists 12.75 quarts, about 10 lb of dry food, with airtight seals and buckles. [[22]](https://www.irisusainc.com/collections/airtight-pet-food-containers/products/airtight-dog-food-storage-container-up-to-10-lbs-3) Skip it, or bring a second one, if your bag is much bigger than 10 lb.
+For a kibble bin, take the Airtight Dog Food Storage Container Up to 10 lbs from IRIS USA. The maker lists 12.75 quarts, about 10 lb of dry food, with airtight seals and buckles. [[5]](https://www.irisusainc.com/collections/airtight-pet-food-containers/products/airtight-dog-food-storage-container-up-to-10-lbs-3) It is a tidy bin, not a bear-proof one. Skip it, or bring a second one, if your bag is much bigger than 10 lb.
 
 {{pick:iris-usa-airtight-dog-food-container-10-lb|Tidy kibble storage for about 10 lb of food|For keeping kibble dry in a car or cabin kitchen; the maker makes no bear-resistance claim.|https://www.irisusainc.com/collections/airtight-pet-food-containers/products/airtight-dog-food-storage-container-up-to-10-lbs-3}}
 
@@ -76,13 +68,13 @@ Wi-Fi is not an emergency plan: save key information offline and carry a paper b
 - The cabin's full address and the host's arrival directions.
 - Contacts and routes for nearby veterinary practices and an emergency hospital.
 
-AVMA's travel brochure advises up-to-date ID tags, current microchip registry details, a recent photograph, vaccination proof and copies of relevant medical records. [[2]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-travel-with-pet-2023.pdf) Call the emergency practice to confirm hours and overnight staffing, and download the route while you have service.
+AVMA's travel brochure advises up-to-date ID tags, current microchip registry details, a recent photograph, vaccination proof and copies of relevant medical records. [[6]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-travel-with-pet-2023.pdf) Call the emergency practice to confirm hours and overnight staffing, and download the route while you have service.
 
 ## Leashes, barriers and safer movement
 
 Pack a well-fitting harness or collar, a fixed-length leash and a spare, spare waste bags, a headlamp or flashlight, and your usual vehicle restraint or secured crate.
 
-Check the rules for each park and trail. Georgia State Parks generally require pets on a leash no longer than six feet, and California State Parks' general rule, where dogs are allowed at all, is the same. [[14]](https://gastateparks.org/ParkRules) [[15]](https://www.parks.ca.gov/Dogs) National forests, counties and cities set their own rules, and a dog-accepting rental does not make nearby trails dog-friendly. For trail hikes, our [dog hiking gear guide](/guides/dog-hiking-gear-for-a-cabin-vacation) covers harness, boots and leash length.
+Rules differ by park, forest and county, and a dog-accepting rental does not make nearby trails dog-friendly; check each trail's leash rule before you go. For trail hikes, our [dog hiking gear guide](/guides/dog-hiking-gear-for-a-cabin-vacation) covers harness, boots and leash length.
 
 **Barriers.** A portable gate or exercise pen can separate a dog from an entrance, food preparation or an unsuitable room, once you have confirmed opening dimensions and host permission. Never use a pressure-mounted gate at the top of stairs: a stair gate there must be approved by its maker for that position, which usually means hardware mounting, and the host must agree first. If safe installation is impossible, keep the dog downstairs behind another secure boundary or choose different accommodation.
 
@@ -90,50 +82,40 @@ Bring washable nonslip runners if the host approves. A railed deck is not an enc
 
 ## Muddy floors and furniture: towel, bed and throw
 
-Airbnb says that even when pets are allowed you should contact the host to confirm, and gives the example that pets may not be allowed on beds or sofas. [[16]](https://www.airbnb.com/help/article/86) A cover helps you follow a permission the host has given; it does not override a no-dogs-on-furniture rule. Airbnb's pet-fee page says a pet fee should cover the expected cleaning that comes with hosting pets and separates that from unexpected damage. [[17]](https://www.airbnb.com/help/article/3623)
+Confirm furniture rules with the host in writing: a pet-friendly listing may still bar dogs from beds and sofas, and a cover helps you follow a permission the host has given without overriding a no-dogs-on-furniture rule. Our [vacation rental checklist](/guides/pet-friendly-vacation-rental-checklist) has the questions.
 
 Pack:
 
 - A familiar bed or mat and a washable blanket or old bedsheet.
 - Two or three dog-only towels in a color you will recognize. Leave the rental's bath towels alone unless the host says otherwise.
-- A washable entrance mat if the host permits it, a brush, a cloth for paws and a lint roller.
+- A washable entrance mat if the host permits it (put the second one at the door the dog uses most), a brush, a cloth for paws and a lint roller.
 - A crate, only if your dog already uses one. A cabin is a poor place to try crating for the first time.
 
-Dry the dog at the door and wipe paws before they cross the floor, and pick a sleeping spot away from the entrance. With two dogs, bring separate beds and bowls; see our [two-dog accommodation guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental). If an accident happens, blot promptly, follow the property's cleaning instructions and tell the host. To tick these items off, use the [packing list tool](/tools/packing-list).
+Dry the dog at the door and wipe paws before they cross the floor, and pick a sleeping spot away from the entrance. With two dogs, bring separate beds and bowls; see our [two-dog accommodation guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental). If an accident happens, blot promptly, follow the property's cleaning instructions and tell the host; stain removers can damage some materials, so check first. Before checkout, collect yard waste and remove loose hair. To tick these items off, use the [packing list tool](/tools/packing-list).
 
-**The towel to buy for the door is the Soggy Doggy Super Shammy.** It is 31 x 14 in, one size, in microfiber chenille with hand pockets. The maker says to machine wash it alone with no chlorine bleach or fabric softener and tumble dry low. [[20]](https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey) The page gives no absorbency figure, so a large or double-coated dog may want a second towel.
+**The towel to buy for the door is the Soggy Doggy Super Shammy.** It is 31 x 14 in, one size, in microfiber chenille with hand pockets. The maker says to machine wash it alone with no chlorine bleach or fabric softener and tumble dry low. [[7]](https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey) The page gives no absorbency figure, so a large or double-coated dog may want a second towel.
 
 {{pick:soggy-doggy-super-shammy-towel|For drying muddy paws at the door: 31 x 14 in|For wiping paws and legs at the door before they cross the floor.|https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey}}
 
-**For a bed that travels, the roll-up Kurgo Loft Wander.** It comes in Medium (27 x 36 in, rolls to 12.5 x 8 in) and Large (36 x 48 in, rolls to 17 x 9.5 in), with a water-resistant ripstop top and a waterproof nonslip bottom. The maker says to wash it by hand or machine on a gentle cycle, cold, and to hang it dry. [[19]](https://www.kurgo.com/p/loft-wander-dog-bed/K01560) The page lists no dog weight guidance, so choose the size by how your dog lies down. Skip it if the host supplies a bed you trust.
+**For a bed that travels, the roll-up Kurgo Loft Wander.** It comes in Medium (27 x 36 in, rolls to 12.5 x 8 in) and Large (36 x 48 in, rolls to 17 x 9.5 in), with a water-resistant ripstop top and a waterproof nonslip bottom. The maker says to wash it by hand or machine on a gentle cycle, cold, and to hang it dry. [[8]](https://www.kurgo.com/p/loft-wander-dog-bed/K01560) The page lists no dog weight guidance, so choose the size by how your dog lies down. Skip it if the host supplies a bed you trust.
 
 {{pick:kurgo-loft-wander-dog-bed|A roll-up bed that is clearly theirs: Medium or Large|For giving the dog a clear spot of its own that rolls up for the car.|https://www.kurgo.com/p/loft-wander-dog-bed/K01560}}
 
 ## Heat, light and dark nights
 
-**Hot weather.** A cooling pad is a resting spot, not heatstroke prevention: Cornell's prevention advice is shade, frequent water and avoiding exercise in hot weather, and it calls heatstroke a medical emergency. [[18]](https://www.vet.cornell.edu/index.php/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/heatstroke-medical-emergency)
+**Hot weather.** A cooling pad is a resting spot, not heatstroke prevention: Cornell's prevention advice is shade, frequent water and avoiding exercise in hot weather, and it calls heatstroke a medical emergency. [[9]](https://www.vet.cornell.edu/index.php/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/heatstroke-medical-emergency)
 
-**Dark toilet trips.** A cabin yard has no streetlights, and a dog on a long line in the dark is hard to see. The Ruffwear Beacon is a clip-on light with three modes and three colors, a stated run time of up to 20 hours and a charge time of about 1.5 hours by micro USB; the maker says it is waterproof to 1 m for 30 minutes. [[21]](https://ruffwear.com/products/the-beacon-safety-dog-light) It clips to Ruffwear collars and apparel light loops; if your dog's gear has none, use a headlamp and a short leash. Skip it if the yard is fenced and lit.
+**Dark toilet trips.** A cabin yard has no streetlights, and a dog on a long line in the dark is hard to see. The Ruffwear Beacon is a clip-on light with three modes and three colors, a stated run time of up to 20 hours and a charge time of about 1.5 hours by micro USB; the maker says it is waterproof to 1 m for 30 minutes. [[10]](https://ruffwear.com/products/the-beacon-safety-dog-light) It clips to Ruffwear collars and apparel light loops; if your dog's gear has none, use a headlamp and a short leash. Skip it if the yard is fenced and lit.
 
 {{pick:ruffwear-the-beacon-dog-safety-light|For seeing the dog on dark toilet trips: up to 20 hours|For seeing where the dog is on late toilet trips; check the clip fits your collar.|https://ruffwear.com/products/the-beacon-safety-dog-light}}
 
-## First aid and poison numbers
+## First aid, ticks and winter hazards
 
-AVMA's travel brochure lists a first aid kit and the phone numbers of your veterinarian, a national poison control hotline and a 24-hour emergency hospital at your destination. [[2]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-travel-with-pet-2023.pdf) AVMA notes contact-lens saline works for most wound and eye flushing. [[3]](https://www.avma.org/resources-tools/pet-owners/emergencycare/first-aid-tips-pet-owners) Do not induce vomiting or give any medication unless a veterinarian or poison control tells you to. [[10]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf) Save the ASPCA Animal Poison Control number, **888-426-4435**, and keep any product packaging handy; a consultation fee may apply. [[11]](https://www.aspca.org/pet-care/aspca-poison-control) The full kit list is in our [dog travel first-aid kit guide](/guides/dog-travel-first-aid-kit-guide).
+Pack a first aid kit and keep your vet, an emergency hospital and a poison control number where you can reach them. [[6]](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-travel-with-pet-2023.pdf) Do not induce vomiting or give medication unless a veterinarian or poison control tells you to; keep any product packaging handy. [[3]](https://www.aspca.org/pet-care/aspca-poison-control) The kit list is in our [dog travel first-aid kit guide](/guides/dog-travel-first-aid-kit-guide).
 
-## Ticks
+**Ticks.** Bring your vet's preventive and a tick-removal tool, check your dog every evening in a well-lit spot (ears, eyelids, collar area, legs, toes, tail) and check yourself too. Signs of tickborne disease can take 7 to 21 days or longer to appear. [[4]](https://www.cdc.gov/ticks/prevention/preventing-ticks-on-pets.html)
 
-Pack your veterinarian-recommended preventive, a tick-removal tool and a bright light. CDC recommends daily tick checks for pets that go outdoors and prompt removal of attached ticks, highlighting the ears, eyelids, collar area, legs, toes and tail. Tick vaccines do not keep dogs from bringing ticks into your home, and signs of tickborne disease may not appear for 7 to 21 days or longer after a bite, so keep watching appetite and behavior after the holiday. [[4]](https://www.cdc.gov/ticks/prevention/preventing-ticks-on-pets.html)
-
-## Cold weather, wood stoves and seasonal chemicals
-
-**Heat sources.** Check whether the cabin has a wood stove, fireplace or portable heater, and whether a guard is supplied. Cornell's Riney Canine Health Center advises keeping dogs about three feet from heat sources and never leaving them unsupervised nearby. [[5]](https://riney.vet.cornell.edu/member-benefits-health-tips/winter-safety-january-2026) Cornell's veterinary college warns that fireplace and wood-stove ashes can burn pets if they contain live embers. [[6]](https://www.vet.cornell.edu/about-us/news/20161215/cvm-cold-weather-tips-pet-owners) If you cannot create a safe separation, leave the appliance unused. Holiday weeks add their own hazards; see [Christmas week in a cabin with a dog](/guides/christmas-week-in-a-cabin-with-a-dog).
-
-**Ice melt.** ASPCA warns that ice-melting chemicals can be dangerous if swallowed and recommends washing and drying paws and belly after winter walks. [[7]](https://www.aspca.org/pet-care/general-pet-care/cold-weather-safety-tips)
-
-**Reopened cabins.** Check whether the cabin has been fully de-winterized and whether mothballs or rodent bait are present. ASPCA says mothballs can cause stomach upset and, in some types, organ damage, and that pets must not have access to rodenticides. [[8]](https://www.aspca.org/news/pet-safety-tips-closing-down-rv-and-cabin-season)
-
-**Antifreeze.** Keep toilet lids closed and block utility spaces until checked. Pet Poison Helpline reports that some cabin owners put antifreeze in toilets to prevent freezing. [[12]](https://www.petpoisonhelpline.com/uncategorized/antifreeze-poisoning-in-dogs-cats-ethylene-glycol-poisoning/) ASPCA says ethylene glycol antifreeze can taste sweet to pets and advises contacting a veterinarian or poison control immediately if ingestion is suspected. [[9]](https://www.aspca.org/news/digging-deeper-getting-facts-dangers-antifreeze-and-your-pets)
+**Winter cabins.** Ask whether there is a wood stove or heater and a guard, keep the dog away from hot ash, ice-melt and antifreeze in toilets or utility spaces, and check a reopened cabin for mothballs and rodent bait. Details are in our [Christmas-week cabin guide](/guides/christmas-week-in-a-cabin-with-a-dog).
 
 ## Before you leave
 
@@ -141,12 +123,12 @@ Trial anything new, such as boots, barriers or restraints, at home first, and ke
 
 > **How sure we are**
 >
-> - **Confirmed by a source we cite:** the NPS and BearWise food-storage rules, product specs from each maker's page (read 2026-11-18), CDC tick advice, the AVMA brochures, ASPCA and Cornell advice and the state-park leash rules.
+> - **Confirmed by a source we cite:** the NPS and BearWise food-storage rules, product specs from each maker's page (read 2026-11-18), CDC tick advice, the AVMA travel brochure, and ASPCA and Cornell advice.
 > - **Unknown, and who to ask:** the cabin's own stairs, stove, supplied items and food-storage set-up. The host can tell you.`,
   faqs: [
     {
       q: "What should I pack for a dog at a cabin?",
-      a: "Food and medication with a reserve, ID and offline records, a leash and spare bags, barriers and runners if the host permits, a towel and a bed that is clearly the dog's, a first-aid kit, tick tool and preventive, and cold-weather and chemical checks. Ask the host about stairs, fencing and food storage first.",
+      a: "Food and medication with a reserve, ID and offline records, a leash and spare bags, barriers and runners if the host permits, a towel and a bed that is clearly the dog's, a first-aid kit, a tick tool and preventive, and a quick winter-hazard check. Ask the host about stairs, fencing and food storage first.",
     },
     {
       q: "How much dog food should I pack for a cabin vacation?",
@@ -158,15 +140,15 @@ Trial anything new, such as boots, barriers or restraints, at home first, and ke
     },
     {
       q: "Can I leave dog food on the cabin deck in a sealed bin?",
-      a: "No. BearWise says to store pet food where bears cannot see or smell it, and NPS says bear-resistant containers only work when closed and locked. [[1]](https://www.nps.gov/articles/bearsafetyfood.htm) [[13]](https://bearwise.org/six-bearwise-basics/never-leave-pet-food-outdoors/) Follow the property's instructions and local wildlife rules.",
+      a: "No. BearWise says to store pet food where bears cannot see or smell it, and NPS says bear-resistant containers only work when closed and locked. [[1]](https://www.nps.gov/articles/bearsafetyfood.htm) [[2]](https://bearwise.org/six-bearwise-basics/never-leave-pet-food-outdoors/) Follow the property's instructions and local wildlife rules.",
     },
     {
       q: "Do I need furniture covers if the cabin charges a pet fee?",
       a: "A pet fee does not establish furniture permission, so confirm the rules first. Where furniture is allowed, a washable cover helps with hair and damp paws but does not remove responsibility for damage.",
     },
     {
-      q: "What should I do if my dog may have swallowed antifreeze?",
-      a: "Contact a veterinarian, emergency veterinary hospital, ASPCA Animal Poison Control at 888-426-4435, or Pet Poison Helpline at 855-764-7661 immediately. ASPCA's antifreeze guidance says to get the dog to a veterinary hospital right away, as signs can be missed early. [[9]](https://www.aspca.org/news/digging-deeper-getting-facts-dangers-antifreeze-and-your-pets) Do not induce vomiting unless a veterinary professional directs you. Keep the product label available if possible; a consultation fee may apply.",
+      q: "Do I need a bear-proof container for dog food at a cabin?",
+      a: "An ordinary bin or cooler is not bear-proof, and the one we pick makes no bear-resistance claim. Keep pet food and bowls indoors or stored as the property and local wildlife rules direct, and ask the host what the cabin uses. [[1]](https://www.nps.gov/articles/bearsafetyfood.htm) [[2]](https://bearwise.org/six-bearwise-basics/never-leave-pet-food-outdoors/)",
     },
   ],
   relatedGuides: [
@@ -194,57 +176,9 @@ Trial anything new, such as boots, barriers or restraints, at home first, and ke
       accessedOn: "2026-11-16",
     },
     {
-      title: "Traveling With Your Pet",
-      url: "https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-travel-with-pet-2023.pdf",
-      publisher: "American Veterinary Medical Association",
-      accessedOn: "2026-11-16",
-    },
-    {
-      title: "First aid tips for pet owners",
-      url: "https://www.avma.org/resources-tools/pet-owners/emergencycare/first-aid-tips-pet-owners",
-      publisher: "American Veterinary Medical Association",
-      accessedOn: "2026-11-16",
-    },
-    {
-      title: "Preventing Ticks on Pets",
-      url: "https://www.cdc.gov/ticks/prevention/preventing-ticks-on-pets.html",
-      publisher: "Centers for Disease Control and Prevention",
-      accessedOn: "2026-11-16",
-    },
-    {
-      title: "Winter Safety - January 2026",
-      url: "https://riney.vet.cornell.edu/member-benefits-health-tips/winter-safety-january-2026",
-      publisher: "Cornell Richard P. Riney Canine Health Center",
-      accessedOn: "2026-11-16",
-    },
-    {
-      title: "CVM cold-weather tips for pet owners",
-      url: "https://www.vet.cornell.edu/about-us/news/20161215/cvm-cold-weather-tips-pet-owners",
-      publisher: "Cornell University College of Veterinary Medicine",
-      accessedOn: "2026-11-16",
-    },
-    {
-      title: "Cold Weather Safety Tips",
-      url: "https://www.aspca.org/pet-care/general-pet-care/cold-weather-safety-tips",
-      publisher: "ASPCA",
-      accessedOn: "2026-11-16",
-    },
-    {
-      title: "Pet Safety Tips for Closing Down the RV and Cabin for the Season",
-      url: "https://www.aspca.org/news/pet-safety-tips-closing-down-rv-and-cabin-season",
-      publisher: "ASPCA Animal Poison Control Center",
-      accessedOn: "2026-11-16",
-    },
-    {
-      title: "Digging Deeper: Getting the Facts on the Dangers of Antifreeze and Your Pets",
-      url: "https://www.aspca.org/news/digging-deeper-getting-facts-dangers-antifreeze-and-your-pets",
-      publisher: "ASPCA Animal Poison Control Center",
-      accessedOn: "2026-11-16",
-    },
-    {
-      title: "Pet First Aid (brochure with first aid kit checklist)",
-      url: "https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf",
-      publisher: "American Veterinary Medical Association",
+      title: "Never Leave Pet Food Outdoors",
+      url: "https://bearwise.org/six-bearwise-basics/never-leave-pet-food-outdoors/",
+      publisher: "BearWise",
       accessedOn: "2026-11-16",
     },
     {
@@ -254,51 +188,21 @@ Trial anything new, such as boots, barriers or restraints, at home first, and ke
       accessedOn: "2026-11-16",
     },
     {
-      title: "Antifreeze Poisoning in Dogs & Cats (Ethylene Glycol Poisoning)",
-      url: "https://www.petpoisonhelpline.com/uncategorized/antifreeze-poisoning-in-dogs-cats-ethylene-glycol-poisoning/",
-      publisher: "Pet Poison Helpline",
+      title: "Preventing Ticks on Pets",
+      url: "https://www.cdc.gov/ticks/prevention/preventing-ticks-on-pets.html",
+      publisher: "Centers for Disease Control and Prevention",
       accessedOn: "2026-11-16",
     },
     {
-      title: "Never Leave Pet Food Outdoors",
-      url: "https://bearwise.org/six-bearwise-basics/never-leave-pet-food-outdoors/",
-      publisher: "BearWise",
+      title: "Airtight Dog Food Storage Container Up To 10 lbs",
+      url: "https://www.irisusainc.com/collections/airtight-pet-food-containers/products/airtight-dog-food-storage-container-up-to-10-lbs-3",
+      publisher: "IRIS USA",
       accessedOn: "2026-11-16",
     },
     {
-      title: "Park Rules & Regulations",
-      url: "https://gastateparks.org/ParkRules",
-      publisher: "Georgia Department of Natural Resources",
-      accessedOn: "2026-11-16",
-    },
-    {
-      title: "Visiting State Parks With Your Dog",
-      url: "https://www.parks.ca.gov/Dogs",
-      publisher: "California State Parks",
-      accessedOn: "2026-11-16",
-    },
-    {
-      title: "Finding places that allow pets",
-      url: "https://www.airbnb.com/help/article/86",
-      publisher: "Airbnb",
-      accessedOn: "2026-11-16",
-    },
-    {
-      title: "Adding a pet fee",
-      url: "https://www.airbnb.com/help/article/3623",
-      publisher: "Airbnb Help Center",
-      accessedOn: "2026-11-16",
-    },
-    {
-      title: "Heatstroke, a medical emergency",
-      url: "https://www.vet.cornell.edu/index.php/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/heatstroke-medical-emergency",
-      publisher: "Cornell University College of Veterinary Medicine",
-      accessedOn: "2026-11-19",
-    },
-    {
-      title: "Loft Wander Dog Bed",
-      url: "https://www.kurgo.com/p/loft-wander-dog-bed/K01560",
-      publisher: "Kurgo",
+      title: "Traveling With Your Pet",
+      url: "https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-travel-with-pet-2023.pdf",
+      publisher: "American Veterinary Medical Association",
       accessedOn: "2026-11-16",
     },
     {
@@ -308,16 +212,22 @@ Trial anything new, such as boots, barriers or restraints, at home first, and ke
       accessedOn: "2026-11-16",
     },
     {
+      title: "Loft Wander Dog Bed",
+      url: "https://www.kurgo.com/p/loft-wander-dog-bed/K01560",
+      publisher: "Kurgo",
+      accessedOn: "2026-11-16",
+    },
+    {
+      title: "Heatstroke, a medical emergency",
+      url: "https://www.vet.cornell.edu/index.php/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/heatstroke-medical-emergency",
+      publisher: "Cornell University College of Veterinary Medicine",
+      accessedOn: "2026-11-19",
+    },
+    {
       title: "The Beacon Dog Safety Light",
       url: "https://ruffwear.com/products/the-beacon-safety-dog-light",
       publisher: "Ruffwear",
       accessedOn: "2026-11-18",
-    },
-    {
-      title: "Airtight Dog Food Storage Container Up To 10 lbs",
-      url: "https://www.irisusainc.com/collections/airtight-pet-food-containers/products/airtight-dog-food-storage-container-up-to-10-lbs-3",
-      publisher: "IRIS USA",
-      accessedOn: "2026-11-16",
     },
   ],
   research: {

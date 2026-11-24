@@ -175,7 +175,6 @@ So what is the catch? In the three managers we found, "no pet fee" describes one
 ## The short answer
 
 - **Fee-free is rare.** Of 38 managers' public pet pages (a convenience sample, read 2026-11-18), three stated $0: Sliding Rock Cabins, Hapey Cabin Rentals, and Twiddy & Company on the homes it lists. Twenty-two stated a charge and 13 gave no amount.
-- **Which fits:** Sliding Rock in Georgia (Ellijay and Blue Ridge), Hapey in the Smokies, Twiddy on the Outer Banks, usually two pets maximum.
 - **The fix is cheap:** put your dates and dog count into one total and compare it with a home that charges a fee. Our [pet fees guide](/guides/how-vacation-rental-pet-fees-work) shows how the charges add up.
 
 ## What the three fee-free managers say
@@ -215,7 +214,7 @@ Of the 38 managers, 22 state a charge, from $20 a night [[18]](https://www.ablue
 | Cabin Rentals of Georgia | $50 per pet per night plus a $75 pet cleaning fee | Dogs under 35 lb; a refundable $250 pet deposit is also listed |
 | Resort Realty | "non-refundable pet fee up to $1,000," varies by property | Two adult dogs, no puppies |
 
-Sources for this table: [[8]](https://www.bigbearvacations.com/about-us/pet-information/), [[9]](https://rosemarybeach.com/faq/), [[10]](https://cabin-rentals-of-georgia.com/policies), [[11]](https://resortrealty.com/outer-banks-pet-friendly)
+Big Bear's figure is from its pet information page [[8]](https://www.bigbearvacations.com/about-us/pet-information/) and Rosemary Beach's from its FAQ [[9]](https://rosemarybeach.com/faq/). Cabin Rentals of Georgia's comes from its policies page [[10]](https://cabin-rentals-of-georgia.com/policies), and Resort Realty's from its Outer Banks pet page [[11]](https://resortrealty.com/outer-banks-pet-friendly).
 
 A fee is sometimes where cleaning is paid for: Big Bear says its pet fee covers cleaning, and Cabin Rentals of Georgia stacks a nightly fee and a cleaning fee. So a $0 pet fee plus a cleaning fee can land close to a home with a pet fee and no cleaning fee, which is why totals beat headlines (our reading, not a figure from any page). For how the units differ, see [how pet fees work](/guides/how-vacation-rental-pet-fees-work), and for the wider picture, [what a dog really costs on a rental trip](/guides/what-a-dog-really-costs-on-a-vacation-rental).
 
@@ -236,14 +235,16 @@ The fee-free home is not automatically cheaper: here the home with a $60 pet fee
 
 The official help pages tell you what hosts can set, not which listings have no fee, so open the price breakdown on any listing.
 
-- **[Airbnb](https://www.airbnb.com/help/article/86):** add your pets under Who, or choose Allows pets under Booking options. The fee can be per booking, per night, per pet or per pet per night, cannot exceed the nightly base rate, and shows in the nightly rate and the checkout total [[13]](https://www.airbnb.com/help/article/3623). Service animals stay free of pet fees; for emotional support animals, hosts may charge normal pet fees unless local policy requires them to accept the animal [[14]](https://www.airbnb.com/help/article/1869).
-- **Vrbo:** the displayed price includes mandatory and service fees, with taxes added at checkout, though that page does not mention pets [[16]](https://help.vrbo.com/articles/About-Price-Display). Pets are one of the standard fee types a host can set, and a host can add a charge to an existing reservation by payment request before the stay is complete [[15]](https://help.vrbo.com/articles/How-do-I-manage-my-fees). "Pets allowed" is a predefined house rule, with a host note of 50 characters [[17]](https://help.vrbo.com/articles/Add-or-edit-house-rules).
+- **[Airbnb](https://www.airbnb.com/help/article/86):** add your pets under Who, or choose Allows pets under Booking options. The fee can be per booking, per night, per pet or per pet per night, cannot exceed the nightly base rate (it is meant to cover expected cleaning, not unexpected damage), and shows in the nightly rate and the checkout total [[13]](https://www.airbnb.com/help/article/3623). Service animals stay free of pet fees; for emotional support animals, hosts may charge normal pet fees unless local policy requires them to accept the animal [[14]](https://www.airbnb.com/help/article/1869).
+- **Vrbo:** the displayed price includes mandatory fees, which must be shown upfront, and service fees, with taxes added at checkout, though that page does not mention pets [[16]](https://help.vrbo.com/articles/About-Price-Display). Pets are one of the standard fee types a host can set, and a host can add a charge to an existing reservation by payment request before the stay is complete; fee changes apply only to future bookings [[15]](https://help.vrbo.com/articles/How-do-I-manage-my-fees). "Pets allowed" is a predefined house rule, with a host note of 50 characters [[17]](https://help.vrbo.com/articles/Add-or-edit-house-rules).
 
 To see real homes with their full totals, [start a pet-friendly search on Vrbo](aff:vrbo) and price the same dates and dog count for each.
 
 ## Keeping a fee-free stay fee-free
 
 A $0 pet fee does not cover what happens if the dog leaves mud, hair or an accident behind, and the pages above say little about damage terms. Hand the home back as you found it. Mud is the part you control, since Sliding Rock says every cabin has cleaning fees: a washable mat like the Soggy Doggy Microfiber Doormat, which the maker lists with a non-slip backing and says is machine washable [[19]](https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate), catches wet paws at the door. Skip it if the entry is tiny or already carpeted. For other cleanup items see our [rental cleanup gear page](/gear/rental-cleanup); for puppies and seniors, our [puppy guide](/guides/puppy-at-a-vacation-rental) and [senior dog guide](/guides/vacation-rental-with-a-senior-dog) cover washable pads.
+
+{{pick:soggy-doggy-microfiber-doormat|For muddy entries: a washable mat|The maker lists a non-slip backing and says it is machine washable; it does not say how much mud it holds.|https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate}}
 
 ## What to ask the host
 

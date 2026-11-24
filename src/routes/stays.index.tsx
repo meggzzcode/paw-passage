@@ -176,15 +176,16 @@ function StaysPage() {
           confirmed details. Ask the host any remaining questions before booking.
         </p>
         <p className="mt-3 text-muted-foreground">
-          Not sure your dog will qualify? Try{" "}
+          Not sure your dog will qualify? Use the{" "}
           <Link to="/tools/will-my-dog-be-accepted" className="underline">
-            Will my dog be accepted?
-          </Link>
-          , or see how rules vary in our{" "}
+            dog acceptance tool
+          </Link>{" "}
+          or see how rules vary in our{" "}
           <Link to="/data/pet-policies" className="underline">
             pet policies of 38 managers
-          </Link>
-          . For background, read{" "}
+          </Link>{" "}
+          (that dataset covers 38 property managers; this directory lists 32 stays). For background,
+          read{" "}
           <Link
             to="/guides/$slug"
             params={{ slug: "how-vacation-rental-pet-fees-work" }}

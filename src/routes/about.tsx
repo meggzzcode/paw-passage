@@ -7,7 +7,7 @@ export const Route = createFileRoute("/about")({
     pageHead({
       title: "About Paws & Passage",
       description:
-        "Why we started a dog-friendly travel guide built around the details that decide whether a stay works for your dog.",
+        "Why we started a dog-friendly travel guide built around the pet-policy details that decide whether a rental stay works for your dog and your trip.",
       path: "/about",
     }),
   component: () => (

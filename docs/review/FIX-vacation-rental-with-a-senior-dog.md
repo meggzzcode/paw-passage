@@ -22,3 +22,9 @@
 ## For the lead
 - Pawtect Pads link is still the 18x24 pack; text says so and points to larger sizes on the maker page. Header "sources cited" chip still counts forum threads (component).
 - Pin CSV row is unchanged.
+
+## Round 4
+- Applied the round-3 edit list (see git diff). Items needing the lead are below.
+- Deleted the "Four portable fixes" orphan sentence (lead-in "What your vet says decides the plan:" added), the scene paragraph and "Everything below..." line. Dropped the seat cover (card, buy-first item, source 33, relatedProducts); it remains in protect-your-car-interior-from-a-dog-on-a-road-trip.
+### For the lead
+- STRUCTURE: the header chip counts all sources including 11 forum threads; count non-forum only or relabel. PRODUCT (owner): Pawtect link is the smallest size; approve B0C5N8MNWZ if wanted.

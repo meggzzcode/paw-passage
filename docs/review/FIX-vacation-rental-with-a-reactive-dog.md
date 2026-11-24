@@ -17,3 +17,9 @@
 - H1 shortened to "Traveling With a Reactive Dog: Choose the Right Rental"; readingMinutes 11.
 ## For the lead
 - Pin CSV row 20 should match the new H1. Ruffwear Web Master still needs a home in some other guide.
+
+## Round 4
+- Applied the round-3 edit list (see git diff). Items needing the lead are below.
+- Removed short-answer bullet 1, moved citation convention to "How sure we are", replaced unsourced FAQ competitor claim, trigger table now two columns (look for plus ask) with two new rows, KONG caveat added, meta description updated (vacation rental, under 155).
+### For the lead
+- PRODUCT (owner): a verified window-cover item would lift buying advice.

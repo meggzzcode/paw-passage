@@ -41,7 +41,6 @@ relatedGuides:
 relatedProducts:
   - pet-parents-pawtect-pads
   - kurgo-loft-wander-dog-bed
-  - petsafe-happy-ride-bench-seat-cover
 relatedTools:
   - checklist
 sources:
@@ -173,10 +172,6 @@ sources:
     url: https://www.kurgo.com/p/loft-wander-dog-bed/K01560
     publisher: Kurgo
     accessedOn: 2026-11-16
-  - title: Happy Ride Quilted Bench Seat Cover
-    url: https://www.petsafe.com/p/happy-ride-quilted-bench-seat-cover/PTV00-17462/
-    publisher: PetSafe
-    accessedOn: 2026-11-18
 research:
   primaryKeyword: senior dog vacation rental
   relatedKeywords:
@@ -246,9 +241,7 @@ approvedBy: Paws & Passage Editors
 approvedOn: 2026-11-18
 ---
 
-To book a vacation rental with a senior dog, check the stairs, the floors and the host's rules before you pay, and ask your vet first whether the trip suits your dog. Everything below is built around those three checks.
-
-You booked the cabin with the view, and then you saw the photo of the staircase to the only bedroom. Your fourteen-year-old dog hesitates at two steps at home. Most senior-dog travel advice is about the car. This guide is about the rental, because a place you cannot change is where an older dog's trip is won or lost.
+To book a vacation rental with a senior dog, check the stairs, the floors and the host's rules before you pay, and ask your vet first whether the trip suits your dog.
 
 This is general information, not veterinary advice. Rules vary by place and host.
 
@@ -262,7 +255,7 @@ Talk to your vet, get photos and written answers from the host, and only then pa
 
 Nothing here needs buying to book. What to buy, and in what order, is in [What to buy, in order](#what-to-buy-in-order) near the end.
 
-Four portable fixes come up across vet sources: non-slip rugs or mats, short nails, grip aids, and ramps with traction. [[1]](https://dogagingproject.org/mobility-tips-and-tricks-for-senior-dogs) [[2]](https://www.banfield.com/Senior-hub/care-for-older-pets/senior-proof-your-home) [[3]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/osteoarthritis)
+What your vet says decides the plan:
 
 - **Your vet says the trip is fine and the dog moves comfortably:** go, and check the rental carefully.
 - **Your dog is stiff, slow to rise or hesitates at stairs:** call your vet first; these are listed signs of joint disease. [[4]](https://www.banfield.com/Senior-hub/common-health-issues-in-senior-pets/osteoarthritis-in-dogs-cats) [[3]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/osteoarthritis)
@@ -369,10 +362,6 @@ Nothing here is needed to book. It is for after your vet and the host have said 
 
 {{pick:kurgo-loft-wander-dog-bed|For a portable bed|The maker lists a roll-up bed with a water-resistant top, waterproof bottom and non-slip underside, in Medium (27 x 36 in) and Large (36 x 48 in) with no weight limit stated.|https://www.kurgo.com/p/loft-wander-dog-bed/K01560}}
 
-**For a leaky or shedding senior in the back seat: a waterproof seat cover.** Accidents can happen in the car as well as the cabin, and a back seat is hard to clean. PetSafe's Happy Ride Quilted Bench Seat Cover is 45 in long by 56 in wide, made of padded heavy cotton twill with waterproof protection and a high-grip bottom coating; the maker says it fits the back seat of most cars, trucks and SUVs, lets you reach the seat belts without removing it, and is machine washable. [[33]](https://www.petsafe.com/p/happy-ride-quilted-bench-seat-cover/PTV00-17462/) It is not a restraint: your dog still needs a harness or crate. Check your seat width against those dimensions first, and skip it if the drive is short in a car you do not mind cleaning.
-
-{{pick:petsafe-happy-ride-bench-seat-cover|For the back seat|The maker lists a 45 by 56 in quilted cover with waterproof protection, a high-grip bottom coating, seat belt access and machine washing; it is a seat cover, not a restraint.|https://www.petsafe.com/p/happy-ride-quilted-bench-seat-cover/PTV00-17462/}}
-
 If the car is your dog's hurdle (hesitating at the tailgate or a high sill), a ramp or steps may help; our [ramp or steps guide](/guides/dog-ramp-or-steps-for-the-car-and-cabin) compares the options. Neither helps with rental stairs.
 
 ### What to buy first
@@ -380,7 +369,6 @@ If the car is your dog's hurdle (hesitating at the tailgate or a high sill), a r
 1. **Nothing, until the vet and the host have answered.**
 2. **Washable pads**, if your dog may leak.
 3. **A portable bed**, if your dog has none that travels.
-4. **A seat cover**, last, for a long drive in a car you want to keep clean.
 
 For a big senior, read the [large-dog rental guide](/guides/vacation-rentals-that-welcome-large-dogs) too. All products with their specs are in [travel gear](/gear). Before you pay, run through the [trip checklist](/tools/checklist) and the [pet-friendly rental checklist](/guides/pet-friendly-vacation-rental-checklist).
 

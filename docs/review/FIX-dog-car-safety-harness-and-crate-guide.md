@@ -24,3 +24,10 @@
 - First paragraph now answers first; harness "Start here" made conditional on the listing naming the Clickit Sport; source 9 relabelled as a different, current model.
 - For the lead: the Lucky Kennel card chip ("Intermediate: under 70 lbs") and the Atom card blurb grammar live in content/products.yml (not mine); the Large ASIN (candidate B0DW9JGDJM) still needs owner verification. The Intermediate CPS listing was not read; the text says so.
 - Sponsored mentions of the harness are auto-linked from the name; I did not restructure all mentions.
+
+## Round 4
+- Applied the round-3 edit list (see git diff). Items needing the lead are below.
+- Description and dek no longer say "four picks"; quick-picks lead-in says three restraint picks plus a booster seat. Clickit Sport, Lucky Kennel, Atom and Heather names reduced in prose (later mentions say "the harness pick", "the Sport"). Timberline Fuse mention made plain text. Removed "buy the harness first" so "buy first" is only the heading.
+### For the lead
+- PRODUCT: sleepypod-atom summary in content/products.yml still reads "a carrier that for very small dogs that the maker says..."; fix to "A soft, fold-flat carrier for very small dogs that the maker says can be used as a car seat, with a safety tether inside."
+- PRODUCT (owner): verify the Lucky Kennel Large listing and add a button.

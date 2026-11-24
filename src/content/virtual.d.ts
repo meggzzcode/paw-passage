@@ -10,6 +10,8 @@ declare module "virtual:content" {
   export const places: Place[];
   import type { ProductRecord } from "@/content/products-schema";
   export const products: ProductRecord[];
+  import type { PackingConfig } from "@/lib/packing/schema";
+  export const packing: PackingConfig;
   export const affiliates: AffiliateLink[];
   export const settings: SiteSettings;
   export const showDrafts: boolean;

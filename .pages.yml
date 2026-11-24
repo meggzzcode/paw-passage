@@ -481,6 +481,175 @@ content:
           - { name: relatedGuides, label: "Guides worth reading with it (guide web address, for example dog-friendly-cabin-packing-list)", type: string, list: true }
           - { name: manufacturerClaimsVsIndependentTesting, label: "Maker's claims versus independent testing. Write 'none cited' unless a named independent tester is cited with its source", type: text }
 
+  # ------------------------------------------------------------ Packing planner
+  # The dog packing list planner at /tools/packing-list. Edit content/packing.yml directly (the verified route) or through this
+  # form (the form is checked by tests but has not been walked through in the live Pages CMS: see docs/PACKING_PLANNER_QA.md).
+  # Product ids are typed, not picked from a list (Pages CMS can only reference collections, not a file); the build checks every id.
+  - name: packing
+    label: Packing planner (dog packing list)
+    type: file
+    path: content/packing.yml
+    format: yaml
+    operations:
+      create: false
+      delete: false
+    fields:
+      - name: tripTypes
+        label: "Trip types (the cards in step 1). Change wording freely; keep the Short name and the Short id as they are once items use them"
+        type: object
+        list: true
+        fields:
+          - { name: id, label: "Short id (lowercase letters, numbers and hyphens). Never change it once an item uses it", type: string, required: true }
+          - { name: label, label: "Card title", type: string, required: true }
+          - { name: short, label: "Short name used in sentences (for example cabin, road trip)", type: string, required: true }
+          - { name: listTitle, label: "Heading of the finished list (for example Your cabin getaway packing list)", type: string, required: true }
+          - { name: hint, label: "One short line under the title", type: string }
+          - name: icon
+            label: Icon
+            type: select
+            required: true
+            options:
+              values:
+                - { value: house, label: House }
+                - { value: car, label: Car }
+                - { value: waves, label: Waves }
+                - { value: tent, label: Tent }
+                - { value: compass, label: Compass }
+          - name: implies
+            label: "Conditions this trip type always includes (for example a road trip includes 'driving')"
+            type: select
+            list: true
+            options:
+              values:
+                - { value: driving, label: "We're driving" }
+                - { value: outdoors, label: "Hiking or outdoors" }
+                - { value: water, label: "Beach, lake or swimming" }
+                - { value: cold, label: "Cold or snowy weather" }
+                - { value: hot, label: "Hot weather" }
+                - { value: senior, label: "Older dog or mobility considerations" }
+                - { value: no-fence, label: "No securely fenced yard" }
+                - { value: escape-risk, label: "A dog who may slip away" }
+                - { value: medication, label: "Medication or special supplies" }
+      - name: conditions
+        label: "Plan-for options (the tick boxes in step 4). Add one only together with the items that use it"
+        type: object
+        list: true
+        fields:
+          - { name: id, label: "Short id. Never change it once an item uses it", type: string, required: true }
+          - { name: label, label: "What the visitor sees", type: string, required: true }
+          - { name: hint, label: "Optional small hint", type: string }
+      - name: categories
+        label: "Categories (headings on the finished list). Only categories that have items are shown"
+        type: object
+        list: true
+        fields:
+          - { name: id, label: "Short id. Never change it once an item uses it", type: string, required: true }
+          - { name: label, label: "Heading", type: string, required: true }
+          - { name: order, label: "Order (smaller comes first)", type: number, required: true }
+      - name: items
+        label: "Items. No prices, ratings or 'tested' claims. A mistake stops the build and names the item and field"
+        type: object
+        list: true
+        fields:
+          - { name: id, label: "Short id (lowercase letters, numbers and hyphens). Never change it once someone may have saved a list", type: string, required: true }
+          - { name: name, label: Item name, type: string, required: true }
+          - name: category
+            label: Category
+            type: select
+            required: true
+            options:
+              values:
+                - { value: food-water, label: "Food and water" }
+                - { value: leash-id-safety, label: "Leashes, ID and safety" }
+                - { value: sleep-comfort, label: "Sleep and comfort" }
+                - { value: car-travel, label: "Car and travel" }
+                - { value: outdoor, label: "Outdoor adventures" }
+                - { value: health, label: "Health and medication" }
+                - { value: rental, label: "Cabin and rental essentials" }
+          - { name: order, label: "Order inside its category (smaller comes first)", type: number }
+          - { name: what, label: "What is this for? (one short sentence shown under the name)", type: text, required: true }
+          - { name: why, label: "Why this is included (shown when the visitor opens 'Why this is included')", type: text, required: true }
+          - { name: tip, label: "Extra tip (optional)", type: text }
+          - name: appears
+            label: "When should this appear?"
+            type: select
+            required: true
+            options:
+              values:
+                - { value: essential, label: "Always: on every list" }
+                - { value: conditional, label: "Only when the rule below matches the trip" }
+                - { value: optional, label: "Offered as an idea, or as 'Consider' when the rule below matches" }
+          - name: when
+            label: "The rule (leave empty for 'Always'). Every part you fill in must match"
+            type: object
+            fields:
+              - name: tripTypes
+                label: "Only for these trip types"
+                type: select
+                list: true
+                options:
+                  values:
+                    - { value: cabin, label: "Cabin or vacation rental" }
+                    - { value: road-trip, label: "Road trip" }
+                    - { value: beach-lake, label: "Beach or lake getaway" }
+                    - { value: camping-hiking, label: "Camping or hiking trip" }
+                    - { value: other, label: "Other getaway" }
+              - name: anyConditions
+                label: "When at least one of these is ticked"
+                type: select
+                list: true
+                options:
+                  values: &conditions
+                    - { value: driving, label: "We're driving" }
+                    - { value: outdoors, label: "Hiking or outdoors" }
+                    - { value: water, label: "Beach, lake or swimming" }
+                    - { value: cold, label: "Cold or snowy weather" }
+                    - { value: hot, label: "Hot weather" }
+                    - { value: senior, label: "Older dog or mobility considerations" }
+                    - { value: no-fence, label: "No securely fenced yard" }
+                    - { value: escape-risk, label: "A dog who may slip away" }
+                    - { value: medication, label: "Medication or special supplies" }
+              - { name: allConditions, label: "When all of these are ticked", type: select, list: true, options: { values: *conditions } }
+              - { name: unlessConditions, label: "Not when any of these is ticked", type: select, list: true, options: { values: *conditions } }
+              - { name: minDays, label: "At least this many days", type: number }
+              - { name: maxDays, label: "At most this many days", type: number }
+          - name: quantity
+            label: Quantity suggestion
+            type: object
+            fields:
+              - name: strategy
+                label: "How the number is worked out"
+                type: select
+                options:
+                  values:
+                    - { value: none, label: "No quantity" }
+                    - { value: fixed, label: "A fixed number" }
+                    - { value: perDog, label: "Per dog" }
+                    - { value: perDay, label: "Per day" }
+                    - { value: perDogPerDay, label: "Per dog per day" }
+                    - { value: dogDays, label: "Dogs x days (for food)" }
+                    - { value: meals, label: "Meal portions if the visitor gives meals per day, else dog-days (for food)" }
+                    - { value: text, label: "A short sentence instead of a number (for medication or water: never a dose or volume)" }
+              - { name: count, label: "The number (per dog, per day, or fixed)", type: number }
+              - { name: unit, label: "What is counted, singular (for example bed, bag, bowl set)", type: string }
+              - { name: min, label: "Never fewer than (optional)", type: number }
+              - { name: max, label: "Never more than (optional)", type: number }
+              - { name: text, label: "Sentence (only for the 'sentence' choice)", type: string }
+              - { name: note, label: "Short note after the number (for example plus a spare)", type: string }
+          - { name: shopFor, label: "What to call the product in 'Need a ...?' (for example travel bowl). Required when products are listed", type: string }
+          - name: products
+            label: "Related Gear products (at most 4; the first is the main suggestion, a second needs 'How it differs')"
+            type: object
+            list: true
+            fields:
+              - { name: id, label: "Product id exactly as written in Products (typed, not picked). The build stops if it is unknown or switched off", type: string, required: true }
+              - { name: because, label: "How it differs from the first (required for every product after the first)", type: string }
+              - { name: caution, label: "The one thing to check before buying (size range, a limit, a maker warning). Never a claim about 'senior' or 'large' dogs unless the maker says it", type: text, required: true }
+              - { name: benefit, label: "One sentence replacing the product's own summary (optional)", type: text }
+              - { name: onlyConditions, label: "Show only when one of these is ticked (optional)", type: select, list: true, options: { values: *conditions } }
+              - { name: unlessConditions, label: "Hide when one of these is ticked (optional)", type: select, list: true, options: { values: *conditions } }
+          - { name: active, label: "Show this item? (untick to hide it everywhere but keep the record)", type: boolean }
+
   # ------------------------------------------------------------ Business settings
   - name: settings
     label: Business settings

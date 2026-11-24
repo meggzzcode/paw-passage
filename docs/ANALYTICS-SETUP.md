@@ -17,6 +17,11 @@ Events are sent only when a GA4 ID is set in `content/settings.yml`. Nothing a v
 | `tool_complete` | Visitor gets a result | same | exists |
 | `tool_copy` | Copied the result | same | exists |
 | `tool_print` | Printed the result | same | exists |
+| `packing_trip_edited` | Packing planner: changed the trip details after building a list (`tool_name` = `packing-builder`; `item_count` = items on the list) | same | exists |
+| `packing_custom_added` | Packing planner: added one of their own items. The text is never sent | same | exists |
+| `packing_item_packed` | Packing planner: ticked "Packed" (`tool_label` = the item's id from `content/packing.yml`, or `custom`) | same | exists |
+| `packing_item_need_to_buy` | Packing planner: ticked "Need to buy" (`tool_label` = item id, or `custom`) | same | exists |
+| `packing_recommendation_opened` | Packing planner: a product panel opened under an item (once per item per visit; `tool_label` = item id) | same | exists |
 | `rules_search` | Used dog-rules search or filters (label is the filter name, never typed text) | same | exists |
 | `rules_view` | Opened a place's rules page | same | exists |
 | `rules_source_click` | Clicked through to an official source | same | exists |

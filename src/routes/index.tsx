@@ -549,7 +549,7 @@ function Home() {
                 to: "/tools/packing-list",
                 icon: Backpack,
                 t: "Pack your dog's bag",
-                d: "Tap the items you need, see what each is for, and print the list.",
+                d: "Tell us about your trip, get a personalized packing list, check items off and print it.",
               },
               {
                 to: "/tools/checklist",

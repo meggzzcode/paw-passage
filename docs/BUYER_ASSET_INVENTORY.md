@@ -73,11 +73,14 @@ The guides are researched from public sources with the method disclosed. They ar
 | Tool | Route | What was done | Result |
 |---|---|---|---|
 | Will my dog be accepted? | `/tools/will-my-dog-be-accepted` | chose 2 dogs, entered weights, picked a breed group, pressed "Check these managers" | Worked: "Of 38 rental managers, 0 show no conflict for your 2 dogs, 34 need a question first, and 4 look like a problem", with per-manager reasons, region filter, copy and print |
-| Pack your dog's bag | `/tools/packing-list` | toggled "Older dog", tapped "Add to bag" on an item, reloaded | Worked: 15 items, tailoring by trip profile, "Packed" state survived a reload |
+| Dog packing list planner | `/tools/packing-list` | rebuilt 2026-11-24 (see section 6b): trip setup, personalized checklist, saves on the device | See section 6b; the older "Add to bag" tool described here no longer exists |
 | Before-you-book checklist | `/tools/checklist` | ticked 2 items, reloaded | Worked: 25 items in 5 groups; ticks persisted; Print and Reset buttons present |
 | Stay directory filters | `/stays` | typed in the search box | Worked; filter controls listed |
 
 The final QA crawl exercised all three tools again at 390 and 1280 px on the final build (ticking two checklist boxes changed "0 of 25 done" to "2 of 25 done"; the packing tool changed its list; the acceptance tool returned "Of 38 rental managers, 22 show no conflict for your 2 dogs, 13 need a question first, 3 look like a problem" for 2 dogs at 60 lb), so the result above depends on the inputs chosen. Tools run in the browser; no data is sent anywhere. Old calculator, question-writer and pet-cost addresses 301 to `/tools` (checked). The only console errors were the Google, Amazon and Vrbo requests this test blocked on purpose.
+
+## 6b. Dog packing list planner (rebuilt, content-driven)
+A trip setup (trip type, days, dogs, optional meals per day and conditions) produces a grouped packing checklist with packed and need-to-buy states, editable quantities, custom items, copy as text and a print stylesheet. Everything it suggests is declared in `content/packing.yml` (about 35 items, rules, quantity strategies, product ids) and checked at build time, so a buyer can add or reword items without touching code. Product suggestions appear only when a visitor marks an item "Need to buy", use the existing catalog and approved Amazon links, and carry the Amazon disclosure sentence. The cabin guide has a "Make this list yours" module that opens the planner with a preset. Lists are stored in the visitor's own browser: there are no accounts, no sync across devices and no AI. Documentation: `docs/PACKING_PLANNER_PRODUCT_GUIDE.md`; test evidence and unverified items: `docs/PACKING_PLANNER_QA.md`. The Pages CMS form for it has not been tried live; direct YAML editing is the verified route.
 
 ## 7. Gear guides and commercial pages
 
@@ -120,7 +123,7 @@ The final QA crawl exercised all three tools again at 390 and 1280 px on the fin
 
 | Asset | License / status |
 |---|---|
-| Hero and guide photos | Unsplash photos used under the Unsplash License, 46 credit entries in `src/content/image-credits.ts` plus `src/content/pack-photos.ts`. The home hero is a credited Unsplash photo (`hero-porch`, photographer Cody Scott Milewski). **The license gives usage rights, not ownership or exclusivity**: the buyer may keep using the photos, but does not own their copyright and others may use them too. Credits must stay |
+| Hero and guide photos | Unsplash photos used under the Unsplash License, 65 credit entries in `src/content/image-credits.ts` plus `src/content/pack-photos.ts`. The home hero is a credited Unsplash photo (`hero-porch`, photographer Cody Scott Milewski). **The license gives usage rights, not ownership or exclusivity**: the buyer may keep using the photos, but does not own their copyright and others may use them too. Credits must stay |
 | Product imagery | None from third parties; no Amazon images. Product cards use the site's own line-icon spec cards |
 | Photos of real rentals | None |
 | Pins and share images | 29 pins (1000x1500) and 30 share images (1200x630) generated from the site's own photos and text by `scripts/make-pin-sheet.py` and `scripts/make-share-images.py`; rights chain follows the Unsplash photos |

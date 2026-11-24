@@ -17,6 +17,8 @@ export const guide: Guide = {
   heroImage: "guide-packing-list-boots",
   body: `Cabin weekends fail on small things: a missing medication dose, muddy paws on a white rug, a food bag left on the porch. Start with the essentials below, then add only what your cabin and season call for.
 
+{{planner:cabin}}
+
 ## Essential packing checklist
 
 Everything here goes in the car for any two- or three-night stay. Want it matched to your dog and dates? [Build your own list in two minutes](/tools/packing-list).

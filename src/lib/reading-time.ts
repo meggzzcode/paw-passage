@@ -4,7 +4,7 @@ export const WORDS_PER_MINUTE = 220;
 /** Words a reader actually reads in a Markdown body: link addresses, pick tags, code fences and markup symbols do not count. */
 export function bodyWordCount(body: string): number {
   const text = body
-    .replace(/\{\{pick:[^}]*\}\}/g, " ")
+    .replace(/\{\{(?:pick|planner):[^}]*\}\}/g, " ")
     .replace(/```[\s\S]*?```/g, " ")
     .replace(/\[\[\d{1,3}\]\](?:\([^)]*\))?/g, " ")
     .replace(/!?\[([^\]]*)\]\([^)]*\)/g, "$1")

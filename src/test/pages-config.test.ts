@@ -132,3 +132,38 @@ describe("Pages CMS form matches the content rules", () => {
     for (const v of values(s)) expect(Object.keys(images), v).toContain(v);
   });
 });
+
+describe("Pages CMS form for the packing planner", () => {
+  it("covers every field content/packing.yml accepts, and its drop-downs match the content", async () => {
+    const { packingSchema } = await import("../lib/packing/schema");
+    const { parse: parseYaml } = await import("yaml");
+    const packing = parseYaml(readFileSync("content/packing.yml", "utf8")) as {
+      tripTypes: { id: string }[];
+      conditions: { id: string }[];
+      categories: { id: string }[];
+    };
+    const e = entry("packing");
+    expect(names(e.fields)).toEqual(shapeKeys(packingSchema));
+    const items = e.fields.find((f) => f.name === "items")!;
+    const itemKeys = shapeKeys(elementOf(unwrap(packingSchema).shape.items));
+    expect(names(items.fields!)).toEqual(itemKeys);
+    const f = (n: string) => items.fields!.find((x) => x.name === n)!;
+    expect(values(f("category"))).toEqual(packing.categories.map((c) => c.id).sort());
+    const when = f("when").fields!;
+    expect(values(when.find((x) => x.name === "tripTypes")!)).toEqual(
+      packing.tripTypes.map((t) => t.id).sort(),
+    );
+    for (const k of ["anyConditions", "allConditions", "unlessConditions"])
+      expect(values(when.find((x) => x.name === k)!), k).toEqual(
+        packing.conditions.map((c) => c.id).sort(),
+      );
+    const qty = f("quantity").fields!;
+    expect(values(qty.find((x) => x.name === "strategy")!)).toEqual(
+      ["none", "fixed", "perDog", "perDay", "perDogPerDay", "dogDays", "meals", "text"].sort(),
+    );
+    expect(f("active").type).toBe("boolean");
+    expect(items.fields!.map((x) => x.name)).toEqual(
+      expect.arrayContaining(["name", "what", "why", "appears", "quantity", "products", "active"]),
+    );
+  });
+});

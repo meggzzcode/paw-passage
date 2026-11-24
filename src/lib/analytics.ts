@@ -52,6 +52,11 @@ export type ToolEvent =
   | "tool_complete" // the visitor produced a result (a total, a message, a rule)
   | "tool_copy" // copied the result
   | "tool_print" // printed the result
+  | "packing_trip_edited" // packing planner: the visitor changed their trip details after building a list
+  | "packing_custom_added" // packing planner: added one of their own items (the text is never sent)
+  | "packing_item_packed" // packing planner: ticked "Packed" (label = the item's content id)
+  | "packing_item_need_to_buy" // packing planner: ticked "Need to buy" (label = the item's content id)
+  | "packing_recommendation_opened" // packing planner: a product panel opened under an item (label = the item's content id)
   | "rules_search" // used the dog-rules lookup search or filters
   | "rules_view" // opened a place's rules page
   | "rules_source_click"; // clicked through to the official source
@@ -159,6 +164,11 @@ export const EVENT_VOCABULARY = {
   tool_complete: ["tool_name", "tool_label", "item_count", "page_path"],
   tool_copy: ["tool_name", "tool_label", "item_count", "page_path"],
   tool_print: ["tool_name", "tool_label", "item_count", "page_path"],
+  packing_trip_edited: ["tool_name", "tool_label", "item_count", "page_path"],
+  packing_custom_added: ["tool_name", "tool_label", "item_count", "page_path"],
+  packing_item_packed: ["tool_name", "tool_label", "item_count", "page_path"],
+  packing_item_need_to_buy: ["tool_name", "tool_label", "item_count", "page_path"],
+  packing_recommendation_opened: ["tool_name", "tool_label", "item_count", "page_path"],
   rules_search: ["tool_name", "tool_label", "item_count", "page_path"],
   rules_view: ["tool_name", "tool_label", "item_count", "page_path"],
   rules_source_click: ["tool_name", "tool_label", "item_count", "page_path"],

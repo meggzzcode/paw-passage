@@ -1,0 +1,499 @@
+# The packing planner (/tools/packing-list). Everything the planner suggests lives in this file; no code change is
+# needed to add, reword, hide or reorder an item. Pages CMS: "Packing planner". Checked at build time by
+# src/lib/packing/schema.ts, so a typo fails the build with the item and field named instead of breaking the page.
+#
+# appears:  essential   always on the list (cannot have a "when" rule)
+#           conditional on the list only when its "when" rule matches the trip
+#           optional    with a "when" rule: on the list as "Consider" when it matches; without one: only offered
+#                       under "Other ideas" and never added by itself
+# when:     tripTypes (one of), anyConditions (at least one), allConditions (all), unlessConditions (none),
+#           minDays / maxDays. Every part that is present must match.
+# quantity: none | fixed | perDog | perDay | perDogPerDay | dogDays | meals | text (see docs/PACKING_PLANNER_PRODUCT_GUIDE.md)
+# products: ids from content/products.yml, best first. A product shows only when it is active and has a working
+#           link. NEVER put a link here: affiliate links live in content/affiliates.yml. The first listed product is
+#           the main suggestion; a second one needs "because" (how it genuinely differs). "caution" is required.
+# No prices, ratings, "best" or "tested" claims.
+
+tripTypes:
+  - id: cabin
+    label: Cabin or vacation rental
+    short: cabin
+    listTitle: Your cabin getaway packing list
+    hint: A stay with a kitchen, a host and house rules
+    icon: house
+    implies: []
+  - id: road-trip
+    label: Road trip
+    short: road trip
+    listTitle: Your road trip packing list
+    hint: Hours in the car, a few stops along the way
+    icon: car
+    implies: [driving]
+  - id: beach-lake
+    label: Beach or lake getaway
+    short: beach or lake
+    listTitle: Your beach or lake getaway packing list
+    hint: Sand, water and wet towels
+    icon: waves
+    implies: [water]
+  - id: camping-hiking
+    label: Camping or hiking trip
+    short: camping or hiking
+    listTitle: Your camping or hiking packing list
+    hint: Trails, tents and long days outside
+    icon: tent
+    implies: [outdoors]
+  - id: other
+    label: Other getaway
+    short: getaway
+    listTitle: Your getaway packing list
+    hint: Hotels, family visits and everything else
+    icon: compass
+    implies: []
+
+conditions:
+  - { id: driving, label: "We're driving", hint: "Adds car travel items" }
+  - { id: outdoors, label: "Hiking or outdoors", hint: "Trails, parks and long walks" }
+  - { id: water, label: "Beach, lake or swimming" }
+  - { id: cold, label: "Cold or snowy weather" }
+  - { id: hot, label: "Hot weather" }
+  - { id: senior, label: "Older dog or mobility considerations" }
+  - { id: no-fence, label: "No securely fenced yard" }
+  - { id: escape-risk, label: "A dog who may slip away" }
+  - { id: medication, label: "Medication or special supplies to remember" }
+
+categories:
+  - { id: food-water, label: "Food and water", order: 10 }
+  - { id: leash-id-safety, label: "Leashes, ID and safety", order: 20 }
+  - { id: sleep-comfort, label: "Sleep and comfort", order: 30 }
+  - { id: car-travel, label: "Car and travel", order: 40 }
+  - { id: outdoor, label: "Outdoor adventures", order: 50 }
+  - { id: health, label: "Health and medication", order: 60 }
+  - { id: rental, label: "Cabin and rental essentials", order: 70 }
+
+items:
+  # ------------------------------------------------------------------ Food and water
+  - id: food
+    name: Your dog's usual food
+    category: food-water
+    order: 10
+    appears: essential
+    what: The food your dog already eats, measured before you leave.
+    why: A sudden change of food can upset a dog's stomach, and a trip is a poor time to find out.
+    tip: Many people add a spare day in case of delays. Follow any wildlife food-storage rules at your stay.
+    quantity: { strategy: meals, unit: "meal portion" }
+  - id: treats
+    name: Treats and a chew
+    category: food-water
+    order: 20
+    appears: essential
+    what: A few familiar treats and one chew for settling in.
+    why: Familiar treats help in a new place, and two or three familiar toys are usually enough.
+    quantity: { strategy: none }
+  - id: food-container
+    name: Food container with a closing lid
+    category: food-water
+    order: 30
+    appears: conditional
+    when: { tripTypes: [cabin, road-trip, camping-hiking], minDays: 2 }
+    what: Keeps food dry and contained in the car and at your stay.
+    why: Food travels better in one sealed container than in a torn bag, and some places ask you to store it a certain way.
+    tip: In bear country treat pet food as scented, and ask the host or park what storage they require.
+    quantity: { strategy: fixed, count: 1, unit: container }
+    shopFor: food storage container
+    products:
+      - id: vittles-vault-travel-tainer
+        caution: The maker notes real capacity depends on kibble shape and density, and the clear food container is not dishwasher safe.
+      - id: kurgo-kibble-carrier
+        because: A soft roll-top bag made for carrying a few days of food, instead of a rigid container.
+        caution: Holds up to 5 lbs of dry food per the maker and is built for packing, not long-term storage.
+  - id: bowl
+    name: Food and water bowls
+    category: food-water
+    order: 40
+    appears: essential
+    what: A bowl for food and one for water, ideally one that folds flat.
+    why: You need water at every stop and a place to feed on schedule if you arrive late.
+    quantity: { strategy: perDog, count: 1, unit: "bowl set" }
+    shopFor: travel bowl
+    products:
+      - id: kurgo-collaps-a-bowl
+        caution: Holds 24 ounces and collapses flat; check that size suits your dog's food and water.
+      - id: gunner-dog-bowl
+        because: A rigid nylon bowl with a travel lid and non-slip feet, instead of a collapsible one.
+        caution: The maker's page gives no capacity or dimensions, so check the size on the listing before you buy.
+  - id: water
+    name: Safe drinking water for your dog
+    category: food-water
+    order: 50
+    appears: essential
+    what: A plan for where your dog drinks on the drive, on walks and at your stay.
+    why: You can't always count on a clean source on the way. If you are unsure about local water or a natural source, bring water from home.
+    quantity: { strategy: text, text: Plan access to safe drinking water }
+  - id: bottle
+    name: Travel water bottle
+    category: food-water
+    order: 60
+    appears: conditional
+    when: { anyConditions: [driving, outdoors] }
+    what: A bottle with a built-in trough for rest stops and trails.
+    why: Handy for rest stops on a drive and on walks away from a tap.
+    quantity: { strategy: perDog, count: 1, unit: bottle }
+    shopFor: travel water bottle
+    products:
+      - id: springland-22oz-original-travel-bottle
+        caution: Named 22oz, but the maker's page gives no separate capacity figure, so check the capacity on the listing.
+
+  # ------------------------------------------------------------------ Leashes, ID and safety
+  - id: leash
+    name: Leash
+    category: leash-id-safety
+    order: 10
+    appears: essential
+    what: A sturdy fixed-length leash you trust.
+    why: Every walk and every rest stop needs one, and a spare is easy to forget.
+    quantity: { strategy: perDog, count: 1, unit: leash, note: plus a spare }
+  - id: id-tag
+    name: Collar with an ID tag
+    category: leash-id-safety
+    order: 20
+    appears: essential
+    what: A collar and tag with a phone number that will be answered on this trip.
+    why: The fastest way for a stranger to reach you if your dog slips out in an unfamiliar place.
+    tip: Check that the number on the tag is the phone you will have with you.
+    quantity: { strategy: perDog, count: 1, unit: tag }
+    shopFor: ID tag
+    products:
+      - id: whoseid-qr-nfc-dog-tag-silicone-small
+        caution: Listed for collars 3/8 to 1 in wide, and a tag only helps if its profile is filled in and the phone number is current.
+  - id: harness
+    name: Well-fitting harness
+    category: leash-id-safety
+    order: 30
+    appears: conditional
+    when: { anyConditions: [outdoors, escape-risk] }
+    what: A harness your dog can't back out of, adjusted before the trip.
+    why: Trails and a dog who may slip away both call for a more secure fit than a loose collar.
+    quantity: { strategy: perDog, count: 1, unit: harness }
+    shopFor: harness
+    products:
+      - id: ruffwear-web-master-harness
+        caution: Sized by girth from XXS to L/XL, so measure your dog first. The maker makes no car or crash-test claim for it.
+  - id: gps
+    name: GPS tracker
+    category: leash-id-safety
+    order: 40
+    appears: conditional
+    when: { anyConditions: [escape-risk] }
+    what: A tracker that clips to the collar and shows where your dog is.
+    why: A second chance if a tag isn't enough for a dog who may slip away. Check its plan and coverage first.
+    quantity: { strategy: perDog, count: 1, unit: tracker }
+    shopFor: GPS tracker
+    products:
+      - id: tractive-dog-6
+        caution: The maker says it needs a subscription and cellular coverage where you are, and lists it for dogs above 8.8 lbs.
+      - id: fi-series-3-plus
+        because: A smart collar with GPS built in, instead of a clip-on tracker.
+        caution: The product page does not state the cellular carrier, coverage area or subscription terms, so check them first.
+  - id: waste-bags
+    name: Waste bags
+    category: leash-id-safety
+    order: 50
+    appears: essential
+    what: More bags than you think you need.
+    why: Every walk, every rest stop and every yard check uses them.
+    tip: The number is only a starting point. Change it to what you would feel comfortable with.
+    quantity: { strategy: perDogPerDay, count: 3, unit: bag, min: 10, note: a starting point }
+  - id: paperwork
+    name: Vaccination and microchip records, plus a recent photo
+    category: leash-id-safety
+    order: 60
+    appears: essential
+    what: Paper copies or phone screenshots you can open without signal.
+    why: The AVMA's travel brochure recommends current ID tags and microchip registry details, a recent photo, vaccination proof and relevant medical records.
+    quantity: { strategy: none }
+  - id: vet-info
+    name: Your vet's details and the nearest emergency vet
+    category: leash-id-safety
+    order: 70
+    appears: essential
+    what: Phone numbers and the route to the nearest emergency hospital, saved offline.
+    why: Signal comes and goes in many places, and you don't want to search for a vet during an emergency.
+    tip: Call the emergency practice before you go to confirm its overnight hours.
+    quantity: { strategy: none }
+  - id: dog-light
+    name: Clip-on safety light
+    category: leash-id-safety
+    order: 80
+    appears: optional
+    what: A small light that clips to the collar or harness for dusk and night walks.
+    why: Helps you see your dog on a dark path. Optional for most trips.
+    quantity: { strategy: perDog, count: 1, unit: light }
+    shopFor: safety light
+    products:
+      - id: ruffwear-the-beacon-dog-safety-light
+        caution: Made to clip onto Ruffwear collars and apparel light loops, so check that your dog's gear has one.
+
+  # ------------------------------------------------------------------ Sleep and comfort
+  - id: bed
+    name: A familiar bed or blanket
+    category: sleep-comfort
+    order: 10
+    appears: essential
+    what: Something that smells like home, to give each dog a place of their own.
+    why: A familiar bed helps a dog settle in an unfamiliar room.
+    tip: Check whether the host supplies a bed before you pack a bulky one.
+    quantity: { strategy: perDog, count: 1, unit: bed }
+    shopFor: travel bed
+    products:
+      - id: kurgo-loft-wander-dog-bed
+        caution: Open sizes are 27 x 36 in (Medium) and 36 x 48 in (Large) and the page lists no weight limit, so measure your dog.
+  - id: throw
+    name: Washable throw for furniture
+    category: sleep-comfort
+    order: 20
+    appears: conditional
+    when: { tripTypes: [cabin] }
+    what: A washable blanket for the sofa or bed.
+    why: Use one only where the host allows dogs on furniture, and ask first. A pet fee does not mean furniture permission.
+    quantity: { strategy: fixed, count: 1, unit: throw }
+  - id: pen
+    name: Portable pen
+    category: sleep-comfort
+    order: 30
+    appears: conditional
+    when: { anyConditions: [no-fence, escape-risk] }
+    what: A freestanding pen you can set up indoors or outside.
+    why: A safe space when there is no secure fence, or when your dog may slip out.
+    tip: Ask the host before you set one up at a rental.
+    quantity: { strategy: fixed, count: 1, unit: pen }
+    shopFor: portable pen
+    products:
+      - id: midwest-exercise-pen-with-door
+        caution: The maker warns that a pet not trained to be restricted may try to escape, and says to remove collars, tags and leads before a dog goes inside.
+      - id: petmate-precision-pet-soft-side-play-yard
+        because: A soft-sided play yard with a removable floor, instead of a wire pen.
+        caution: The page does not state its height or folded size, so check both before you buy.
+  - id: warm-layer
+    name: Warm layer or coat
+    category: sleep-comfort
+    order: 40
+    appears: conditional
+    when: { anyConditions: [cold] }
+    what: A fleece or coat for walks and car rides in the cold.
+    why: Cold and snowy weather is harder on some dogs than others. Think about your dog's coat and age.
+    quantity: { strategy: perDog, count: 1, unit: layer }
+    shopFor: warm layer
+    products:
+      - id: ruffwear-climate-changer-fleece
+        caution: Sized by chest girth, and the page states no temperature range or insulation rating.
+      - id: ruffwear-timberline-fuse-vest
+        because: A fleece vest with a built-in harness, instead of a jacket with sleeves.
+        caution: The maker describes it for mild to cool weather and states no thermal rating.
+  - id: cooling
+    name: Cooling pad or vest
+    category: sleep-comfort
+    order: 50
+    appears: conditional
+    when: { anyConditions: [hot] }
+    what: Something cool to rest on, plus shade and plenty of water.
+    why: A cooling product is a resting spot, not heatstroke prevention. Cornell advises shade, frequent water and avoiding exercise in the heat.
+    quantity: { strategy: fixed, count: 1, unit: cooling item }
+    shopFor: cooling pad
+    products:
+      - id: green-pet-shop-cool-pet-pad
+        caution: The maker says not to leave it in direct sunlight or a hot car, and sells it in five sizes by pet weight.
+      - id: ruffwear-swamp-cooler
+        because: A vest you soak and wear, instead of a pad your dog lies on.
+        caution: The page makes no claim that it prevents heat illness, and it is sized by chest girth.
+
+  # ------------------------------------------------------------------ Car and travel
+  - id: car-restraint
+    name: Car harness or secured crate
+    category: car-travel
+    order: 10
+    appears: conditional
+    when: { anyConditions: [driving] }
+    what: A harness that clips into the seat belt system, or a crate secured in the car.
+    why: Keeps your dog restrained and you focused on the road. A seat cover is not a restraint.
+    quantity: { strategy: perDog, count: 1, unit: restraint }
+    shopFor: car harness
+    products:
+      - id: ruffwear-load-up-car-harness
+        caution: The crash-test wording is the maker's own and the page says it is not CPS certified. Sized by girth; the page advises the smaller size between sizes.
+      - id: lucky-duck-lucky-kennel
+        because: A hard-sided travel kennel with tie-downs, for dogs that travel crated.
+        caution: Choose by interior size (Medium under 50 lbs, Intermediate under 70 lbs, Large 70 to 110 lbs per the maker). The ratchet strap kit is sold separately.
+  - id: seat-cover
+    name: Back-seat cover or hammock
+    category: car-travel
+    order: 20
+    appears: conditional
+    when: { anyConditions: [driving] }
+    what: A washable cover that protects the back seat.
+    why: Catches hair, mud and drool on the way. It is not a restraint, so use it alongside a harness or crate.
+    quantity: { strategy: fixed, count: 1, unit: cover }
+    shopFor: seat cover
+    products:
+      - id: petsafe-happy-ride-bench-seat-cover
+        caution: A seat cover is not a restraint. It measures 45 x 56 in, so check it against your back seat.
+  - id: ramp
+    name: Ramp or steps for the car
+    category: car-travel
+    order: 30
+    appears: optional
+    when: { allConditions: [driving, senior] }
+    what: Helps a dog who struggles with the jump into or out of the car.
+    why: You told us about an older dog or mobility considerations. Not every dog needs one, so consider it rather than assume it.
+    tip: Ask your vet about your dog's mobility, and try it at home before the trip.
+    quantity: { strategy: fixed, count: 1, unit: ramp or steps }
+    shopFor: car ramp
+    products:
+      - id: petsafe-happy-ride-folding-ramp
+        caution: Rated to 150 lb per the maker. The page gives no vehicle-height guidance and does not describe it as a senior or mobility product.
+      - id: petsafe-happy-ride-side-door-steps
+        because: Folding steps with three height settings, instead of a ramp.
+        caution: Heights are 21.25, 24.75 and 28 in, and the page does not say how it attaches.
+
+  # ------------------------------------------------------------------ Outdoor adventures
+  - id: towel
+    name: Dog-only towels
+    category: outdoor
+    order: 10
+    appears: essential
+    what: Old towels you don't mind getting muddy.
+    why: Wet or muddy paws are easier to deal with at the door than on a rental floor. Use dog-only towels, not the rental's.
+    quantity: { strategy: perDog, count: 1, unit: towel }
+    shopFor: dog towel
+    products:
+      - id: soggy-doggy-super-shammy-towel
+        caution: One size, 31 x 14 in. The maker says to machine wash it alone, without bleach or fabric softener.
+  - id: paw-care
+    name: Paw wipes or a paw cloth
+    category: outdoor
+    order: 20
+    appears: conditional
+    when: { anyConditions: [outdoors, water, cold] }
+    what: For wiping paws and legs after walks, sand or salt.
+    why: Mud, sand and de-icing salt come inside on paws, so a quick wipe at the door helps.
+    quantity: { strategy: fixed, count: 1, unit: pack }
+    shopFor: paw wipes
+    products:
+      - id: adventure-medical-kits-dog-wipes
+        caution: Check the pack count on the listing. The maker lists 8 wipes per pack, each 8 x 8 in.
+  - id: tick-kit
+    name: Tick preventive and a tick remover
+    category: outdoor
+    order: 30
+    appears: conditional
+    when: { anyConditions: [outdoors] }
+    what: Your vet's preventive, plus a tick-removal tool.
+    why: The CDC says signs of tickborne disease can take 7 to 21 days or longer to appear, so check your dog every evening.
+    tip: Ask your vet what preventive suits your dog.
+    quantity: { strategy: none }
+  - id: life-jacket
+    name: Dog life jacket
+    category: outdoor
+    order: 40
+    appears: optional
+    when: { anyConditions: [water] }
+    what: A fitted life jacket for lake or beach days.
+    why: Not every dog swims, and dogs tire in open water. If your dog will be near deep water, a fitted jacket is worth considering.
+    tip: Fit-test it at home or in shallow water before the trip, and stay within reach.
+    quantity: { strategy: perDog, count: 1, unit: life jacket }
+    shopFor: life jacket
+    products:
+      - id: ruffwear-float-coat
+        caution: Sized by girth from XXS to XL. The page gives no buoyancy figure and names no certification, so fit-test it.
+      - id: outward-hound-dawson-swim-life-jacket
+        because: A neoprene-sided jacket with a front neck float.
+        caution: The maker calls it a flotation aid for a conscious dog in calm water and warns not to leave the dog unattended.
+  - id: boots
+    name: Dog boots
+    category: outdoor
+    order: 50
+    appears: optional
+    what: Boots for snow, ice or rough ground, only if your dog already wears them.
+    why: Boots and coats are not needed for mild weather and short paved walks, and a dog who has never worn boots needs practice first.
+    tip: Try them at home well before the trip.
+    quantity: { strategy: perDog, count: 1, unit: set }
+    shopFor: dog boots
+    products:
+      - id: ruffwear-polar-trex-boots
+        onlyConditions: [cold]
+        caution: Sold as a set of two, sized by paw width. The page states no insulation rating or temperature range.
+      - id: ruffwear-grip-trex-boots
+        because: Boots for dry trails rather than snow and ice.
+        caution: Sold as a set of two, sized by paw width. The maker says to size down if between sizes.
+
+  # ------------------------------------------------------------------ Health and medication
+  - id: first-aid
+    name: Dog first-aid kit
+    category: health
+    order: 10
+    appears: essential
+    what: A kit made for dogs, for minor problems until you reach a vet.
+    why: It doesn't replace a vet, but it helps with small cuts and tick removal on the way.
+    quantity: { strategy: fixed, count: 1, unit: kit }
+    shopFor: first-aid kit
+    products:
+      - id: amk-trail-dog
+        caution: A compact kit. It lists diphenhydramine tablets, so ask your vet before using any medicine on your dog.
+      - id: arca-pet-cat-dog-first-aid-kit-100
+        because: A larger 100-piece kit that also lists a dog thermometer and a tick remover kit.
+        caution: Made for cats and dogs, and the listing is the source for its contents, so check them before you buy.
+  - id: medication
+    name: Prescribed medication and supplements
+    category: health
+    order: 20
+    appears: conditional
+    when: { anyConditions: [medication] }
+    what: Everything your vet has prescribed, in its labeled packaging with written directions.
+    why: A missed dose is a common travel slip. Ask your vet whether to pack a reserve in case of delays.
+    quantity:
+      { strategy: text, text: "Pack what your vet prescribed, and a reserve if your vet advises" }
+  - id: senior-care
+    name: Comfort and mobility items your vet recommends
+    category: health
+    order: 30
+    appears: conditional
+    when: { anyConditions: [senior] }
+    what: Anything that helps your dog stay comfortable, plus a restful place to lie down.
+    why: Older dogs and dogs with mobility needs may need extra rest stops and a comfortable place to sleep. Ask your vet what suits your dog.
+    quantity: { strategy: none }
+  - id: muzzle
+    name: Muzzle
+    category: health
+    order: 40
+    appears: optional
+    what: A basket muzzle your dog is already used to wearing.
+    why: Some injured dogs snap. Ask your vet whether your dog should have one ready.
+    quantity: { strategy: fixed, count: 1, unit: muzzle }
+    shopFor: muzzle
+    products:
+      - id: baskerville-ultra-muzzle
+        caution: Sized by nose length and circumference. The maker says it is not for extended periods unless necessary and the dog should be supervised.
+
+  # ------------------------------------------------------------------ Cabin and rental essentials
+  - id: rental-rules
+    name: Host's pet rules and check-in details
+    category: rental
+    order: 10
+    appears: conditional
+    when: { tripTypes: [cabin] }
+    what: The host's answers in writing, the address and the directions, saved offline.
+    why: A "pet-friendly" listing doesn't make every rule clear, and cabin signal comes and goes.
+    quantity: { strategy: none }
+  - id: door-mat
+    name: Paw-drying mat for the door
+    category: rental
+    order: 20
+    appears: optional
+    when: { tripTypes: [cabin], anyConditions: [outdoors, water, cold] }
+    what: A mat to stand muddy or wet paws on before they cross the floor.
+    why: Cleanup is easier at the door, and it helps you leave the rental the way you found it.
+    quantity: { strategy: fixed, count: 1, unit: mat }
+    shopFor: paw mat
+    products:
+      - id: soggy-doggy-microfiber-doormat
+        caution: Sold in Large (26 x 36 in) and Extra Large (36 x 60 in), and machine washable per the maker.

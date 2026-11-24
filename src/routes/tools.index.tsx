@@ -25,7 +25,7 @@ const tools = [
     to: "/tools/packing-list",
     icon: Backpack,
     t: "Pack your dog's bag",
-    d: "Tell us about the trip and fill the bag item by item. Tap an item to see what it is, why you might need it and where to get it.",
+    d: "Tell us about your trip and get a packing list that fits it. Check items off, add your own, then copy or print it. Saves on this device.",
   },
   {
     to: "/tools/checklist",

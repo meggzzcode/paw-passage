@@ -33,6 +33,7 @@ import { guideIsPublic, stayIsPublic, placeIsPublic } from "../src/content/publi
 import { destinations } from "../src/content/destinations";
 import { readingMinutes } from "../src/lib/reading-time";
 import { productsSchema, productReferenceProblems } from "../src/content/products-schema";
+import { packingSchema, packingProblems, emptyPackingConfig } from "../src/lib/packing/schema";
 
 const VIRTUAL = "virtual:content";
 const RESOLVED = "\0" + VIRTUAL;
@@ -430,6 +431,26 @@ export function loadContent(
       `\n\nContent problem in content/guides (relatedProducts):\n${rpProblems.map((x) => `  - ${x}`).join("\n")}\n`,
     );
 
+  // Packing planner (content/packing.yml). Item, category, trip-type and condition references, rules, quantity
+  // settings and product recommendations are all checked here, so a bad edit fails the build with the item and field named.
+  const kfile = join(dir, "packing.yml");
+  if (!existsSync(kfile))
+    console.warn(
+      "[content] content/packing.yml is missing, so the packing planner has no suggestions.",
+    );
+  const kparsed = packingSchema.safeParse(
+    existsSync(kfile) ? readYamlFile(kfile) : emptyPackingConfig,
+  );
+  if (!kparsed.success) throw new ContentError(formatIssues("content/packing.yml", kparsed.error));
+  const kProblems = packingProblems(
+    kparsed.data,
+    pparsed.data.products.map((p) => ({ id: p.id, active: p.active })),
+  );
+  if (kProblems.length)
+    throw new ContentError(
+      `\n\nContent problem in content/packing.yml:\n${kProblems.map((x) => `  - ${x}`).join("\n")}\n`,
+    );
+
   const sfile = join(dir, "settings.yml");
   const sparsed = settingsSchema.safeParse(existsSync(sfile) ? readYamlFile(sfile) : {});
   if (!sparsed.success) throw new ContentError(formatIssues("content/settings.yml", sparsed.error));
@@ -468,6 +489,7 @@ export function loadContent(
     places,
     affiliates: links,
     products: pparsed.data.products,
+    packing: kparsed.data,
     settings: sparsed.data,
     showDrafts: includeUnpublished,
   };

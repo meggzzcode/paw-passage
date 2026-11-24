@@ -11,6 +11,9 @@ import { isMonetized } from "@/content/affiliate-usage";
 import { PRODUCT_CALLOUTS_REQUIRE_AFFILIATE_LINK } from "@/content/publish-rule";
 import { productTitle, defaultPickLabel } from "@/lib/product-display";
 import { linkProductMentions, type ProductLinkToken } from "@/lib/product-text-links";
+import { packingConfig } from "@/content/packing";
+import { plannerModuleHtml } from "@/lib/packing/guide-module";
+import "@/components/packing/guide-module.css";
 
 const escapeHtml = (s: string) =>
   s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -128,6 +131,28 @@ marked.use({
 <p class="mt-4 flex flex-wrap items-center gap-4"><a${attrs} href="${escapeHtml(link.url)}" target="_blank" rel="${escapeHtml(link.rel)}" class="inline-flex h-11 items-center rounded-full bg-terracotta-button px-6 text-base font-semibold text-terracotta-foreground hover:brightness-95" style="text-decoration:none;color:#fff">${escapeHtml(link.label)}</a>${cat ? `<a href="/gear/${escapeHtml(cat)}#${escapeHtml(product.id)}" class="text-sm underline">Details and specs</a>` : ""}</p>
 </aside>
 `;
+      },
+    },
+  ],
+});
+
+/**
+ * {{planner:cabin}} on a line of its own is the "Make this list yours" module: trip type preset, days and dogs selectors, and a
+ * button that opens /tools/packing-list with those choices in the address. A plain form, so it needs no JavaScript.
+ * The trip id is any trip type in content/packing.yml; an unknown one renders nothing.
+ */
+marked.use({
+  extensions: [
+    {
+      name: "planner",
+      level: "block",
+      start: (src: string) => src.indexOf("{{planner:"),
+      tokenizer(src: string): Tokens.Generic | undefined {
+        const m = /^\{\{planner:([a-z0-9-]+)\}\}[ \t]*(?:\n|$)/.exec(src);
+        return m ? { type: "planner", raw: m[0], trip: m[1]! } : undefined;
+      },
+      renderer(token: Tokens.Generic) {
+        return plannerModuleHtml(String(token["trip"]), packingConfig);
       },
     },
   ],

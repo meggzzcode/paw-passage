@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { citationDisplayMap } from "@/content/citations";
+import { publisherDisplayName } from "@/content/citations";
 import { productSpecCardHtml } from "@/components/site/ProductSpecCard";
 import { marked, type Tokens, type Token, type TokensList, type Renderer } from "marked";
 import { cn } from "@/lib/utils";
@@ -19,21 +19,17 @@ const safeUrl = (href: string | null | undefined) =>
   href && /^(https?:\/\/|mailto:|\/(?!\/)|#)/i.test(href.trim()) ? href.trim() : null;
 
 /**
- * Per-render citation state. A [[n]](url) marker jumps to the entry id="src-n" in the page's Sources list; every
- * marker (and the first inline link to a source's exact URL) gets an id so the Sources entry can link back to it.
- * Markdown() resets this before each render and rendering is synchronous, so module state is safe here.
+ * Per-render source list. Guides link sources by publisher name, so no numbers are shown. A leftover legacy
+ * [[n]](url) marker (an old draft) is rendered as a muted parenthetical publisher link, never as a superscript number.
+ * Markdown() sets this before each render and rendering is synchronous, so module state is safe here.
  */
-const cite = {
-  count: new Map<number, number>(),
-  urls: new Map<string, number>(),
-  /** original source number -> display number (first-appearance order); a number it does not know shows as written. */
-  display: new Map<number, number>(),
-};
-const shown = (n: number) => cite.display.get(n) ?? n;
-const nextCiteId = (n: number): string => {
-  const k = (cite.count.get(n) ?? 0) + 1;
-  cite.count.set(n, k);
-  return ` id="cite-${n}-${k}"`;
+let sourcePublishers: string[] = [];
+const hostOf = (url: string) => {
+  try {
+    return new URL(url).hostname.replace(/^www\./, "");
+  } catch {
+    return "source";
+  }
 };
 
 // Articles are edited in a CMS, so treat the text as untrusted: raw HTML typed into an article is shown as
@@ -54,16 +50,14 @@ marked.use({
       }
       const url = safeUrl(href);
       if (!url) return text;
-      // A source number written as [[5]](url) is shown as a small, quiet superscript instead of a full-size "[5]" link.
+      // A legacy numbered marker [[5]](url) becomes a plain parenthetical publisher link: "(Airbnb)".
       const marker = /^\[(\d{1,3})\]$/.exec(text.trim());
       if (marker) {
-        const n = shown(Number(marker[1]));
-        return `<sup class="cite"><a${nextCiteId(n)} href="#src-${n}" aria-label="Source ${n}: jump to the sources list">${n}</a></sup>`;
+        const publisher = sourcePublishers[Number(marker[1]) - 1];
+        const name = publisher ? publisherDisplayName(publisher) : hostOf(url);
+        return `(<a href="${escapeHtml(url)}">${escapeHtml(name)}</a>)`;
       }
-      // An inline link to a source's exact URL (a publisher name linked in the sentence) also counts as citing it.
-      const srcN = cite.urls.get(url); // already a display number
-      const idAttr = srcN ? nextCiteId(srcN) : "";
-      return `<a href="${escapeHtml(url)}"${idAttr}${title ? ` title="${escapeHtml(title)}"` : ""}>${text}</a>`;
+      return `<a href="${escapeHtml(url)}"${title ? ` title="${escapeHtml(title)}"` : ""}>${text}</a>`;
     },
     heading(this: Renderer, token: Tokens.Heading & { id?: string }) {
       const inner = this.parser.parseInline(token.tokens);
@@ -202,20 +196,14 @@ export const articleHeadings = (source: string): ArticleHeading[] => lexWithIds(
 export function Markdown({
   source,
   className,
-  sourceUrls,
+  sources,
 }: {
   source: string;
   className?: string;
-  /** The guide's source URLs in order (sources[0].url first): lets inline links to them get back-link ids. */
-  sourceUrls?: string[];
+  /** The guide's sources in order: only a leftover legacy [[n]] marker needs them (n names the publisher it shows). */
+  sources?: { publisher: string }[];
 }) {
-  cite.count = new Map();
-  const srcs = (sourceUrls ?? []).map((url) => ({ url }));
-  cite.display = citationDisplayMap(source, srcs);
-  cite.urls = new Map();
-  srcs.forEach((s, i) => {
-    if (!cite.urls.has(s.url)) cite.urls.set(s.url, shown(i + 1));
-  });
+  sourcePublishers = (sources ?? []).map((s) => s.publisher);
   const { tokens } = lexWithIds(source);
   linkProductMentions(tokens);
   const html = marked
@@ -228,6 +216,11 @@ export function Markdown({
     // A task-list item shows its checkbox, not a bullet as well.
     .replace(/<li><input (checked=""\s)?disabled=""/g, '<li class="task-item"><input $1disabled=""')
     .replace(/<\/table>/g, "</table></div>")
+    // A publisher link in parentheses, ([Airbnb](url)), is wrapped so it can be styled quietly.
+    .replace(
+      /\((<a href="https?:\/\/[^"]+"[^>]*>[^<]*<\/a>(?:, <a href="https?:\/\/[^"]+"[^>]*>[^<]*<\/a>)*)\)/g,
+      '<span class="src-paren">($1)</span>',
+    )
     .replace(
       /<a href="(https?:\/\/[^"]+)"/g,
       '<a href="$1" target="_blank" rel="noopener noreferrer"',

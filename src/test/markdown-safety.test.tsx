@@ -22,11 +22,13 @@ describe("article text is treated as untrusted", () => {
     expect(out).not.toMatch(/javascript:/i);
     expect(out).not.toMatch(/data:text/i);
   });
-  it("keeps normal links, on-site links and citations working", () => {
+  it("keeps normal links and on-site links working; a leftover [[n]] marker shows a publisher link, not a number", () => {
     const out = html("[a](https://example.com) [b](/guides/x) [[1]](https://example.com/src)");
     expect(out).toContain('href="https://example.com"');
     expect(out).toContain('href="/guides/x"');
-    expect(out).toContain('href="#src-1"');
+    expect(out).toContain('href="https://example.com/src"');
+    expect(out).not.toContain("<sup");
+    expect(out).not.toContain("#src-");
     expect(out).toContain('target="_blank"');
   });
   it("still renders tables and lists", () => {

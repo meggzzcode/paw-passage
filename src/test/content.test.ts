@@ -1,45 +1,57 @@
 import { describe, expect, it } from "vitest";
 import { allGuides, isPublic } from "@/content/guides";
-import { citedSourceNumbers } from "@/content/citations";
+import { linkedSourceNumbers } from "@/content/citations";
 
 const tools = ["checklist", "will-my-dog-be-accepted", "packing-list"];
-// Every public guide has been moved to the new citation style (scripts/migrate-citations.mjs).
-const migrated = (g: (typeof allGuides)[number]) => isPublic(g);
+// Published guides name their sources with plain publisher links (scripts/remove-citation-numbers.mjs): no numbered
+// markers, a link to every source in the body, and a Sources list at the end of the page.
+const published = (g: (typeof allGuides)[number]) => isPublic(g);
 const text = (g: (typeof allGuides)[number]) => g.body + "\n" + g.faqs.map((f) => f.a).join("\n");
+const sentences = (s: string) => s.split(/(?<=[.!?])\s+(?=[A-Z"([*])/);
+// ([Airbnb](https://...)) or ([Airbnb](https://...), [Vrbo](https://...))
+const PAREN = /\(\[[^\]]+\]\(https?:[^)\s]+\)(?:, \[[^\]]+\]\(https?:[^)\s]+\))*\)/g;
+const PAREN_LINK = /\[[^\]]+\]\(https?:[^)\s]+\)/g;
 
 describe.each(allGuides.map((g) => [g.slug, g] as const))("guide content: %s", (_slug, g) => {
-  it("every [[n]] marker points at an existing source", () => {
-    const nums = [...text(g).matchAll(/\[\[(\d+)\]\]/g)].map((m) => Number(m[1]));
-    const bad = nums.filter((n) => n < 1 || n > g.sources.length);
-    expect(bad, `${g.slug}: markers out of range (sources: ${g.sources.length})`).toEqual([]);
+  it("shows no numbered [[n]] source markers in a published guide", () => {
+    if (!published(g)) return;
+    expect(text(g).match(/\[\[\d+\]\]/g) ?? [], `${g.slug}: numbered markers`).toEqual([]);
   });
-  it("every source is cited at least once", () => {
-    // Cited by a [[n]] marker or by an inline link to the source's exact URL.
-    const cited = citedSourceNumbers(text(g), g.sources);
+  it("every source is cited at least once, by an inline link to its exact URL", () => {
+    if (!published(g)) return;
+    const linked = linkedSourceNumbers(text(g), g.sources);
     const uncited = g.sources
       .map((s, i) => [i + 1, s.title] as const)
-      .filter(([n]) => !cited.has(n));
-    expect(uncited, `${g.slug}: sources never cited`).toEqual([]);
+      .filter(([n]) => !linked.has(n));
+    expect(uncited, `${g.slug}: sources never linked`).toEqual([]);
   });
-  it("[[n]](url) links use the same URL as sources[n]", () => {
-    const mismatches = [...text(g).matchAll(/\[\[(\d+)\]\]\((https?:[^)\s]+)\)/g)]
-      .filter((m) => g.sources[Number(m[1]) - 1] && g.sources[Number(m[1]) - 1]!.url !== m[2])
-      .map(
-        (m) =>
-          `[[${m[1]}]] links ${m[2]} but sources[${m[1]}] is ${g.sources[Number(m[1]) - 1]!.url}`,
+  it("a parenthetical publisher link names the publisher, never a number or 'source'", () => {
+    if (!published(g)) return;
+    const bad = [...g.body.matchAll(PAREN)]
+      .flatMap((m) => [...m[0].matchAll(/\[([^\]]+)\]/g)].map((x) => x[1]!))
+      .filter((label) => /^\d+$/.test(label) || /^(source|link|here)$/i.test(label));
+    expect(bad, `${g.slug}: parenthetical labels`).toEqual([]);
+  });
+  it("no more than 2 parenthetical publisher links stand in one sentence", () => {
+    if (!published(g)) return;
+    const over = g.body
+      .split("\n")
+      .flatMap(sentences)
+      .filter((s) => (s.match(PAREN)?.join("").match(PAREN_LINK) ?? []).length > 2);
+    expect(over, `${g.slug}: sentences with 3+ parenthetical links`).toEqual([]);
+  });
+  it("table rows carry no source links or markers (sources sit in a line under the table)", () => {
+    if (!published(g)) return;
+    const sources = new Set(g.sources.map((s) => s.url));
+    const bad = g.body
+      .split("\n")
+      .filter(
+        (l) =>
+          /^\s*\|/.test(l) &&
+          (/\[\[\d+\]\]/.test(l) ||
+            [...l.matchAll(/\]\((https?:[^)\s]+)\)/g)].some((m) => sources.has(m[1]!))),
       );
-    expect(mismatches).toEqual([]);
-  });
-  it("no more than 2 source markers stand side by side (known exceptions: 3 senior-dog stacks of sole citations)", () => {
-    if (!migrated(g)) return;
-    const runs = [...g.body.matchAll(/(?:\[\[\d+\]\]\([^)\s]+\)[ \t]*){3,}/g)];
-    const allowed = g.slug === "vacation-rental-with-a-senior-dog" ? 3 : 0;
-    expect(runs.length, `${g.slug}: stacks of 3+ markers`).toBeLessThanOrEqual(allowed);
-  });
-  it("table rows carry no source markers", () => {
-    if (!migrated(g)) return;
-    const bad = g.body.split("\n").filter((l) => /^\s*\|/.test(l) && /\[\[\d+\]\]/.test(l));
-    expect(bad, `${g.slug}: markers inside table rows`).toEqual([]);
+    expect(bad, `${g.slug}: source links inside table rows`).toEqual([]);
   });
   it("internal links resolve", () => {
     // Retired guides keep a 301 to their replacement (netlify.toml), so a leftover link to one still resolves.
@@ -107,5 +119,18 @@ describe("gear guides and affiliate products", () => {
           affiliateLinks.some((l) => l.id === p.affiliateId),
           `${p.id}: unknown affiliateId`,
         ).toBe(true);
+  });
+});
+
+describe("publisher names used for source links", () => {
+  it("shortens a few long names with a small override map and strips notes", async () => {
+    const { publisherDisplayName } = await import("@/content/citations");
+    expect(publisherDisplayName("Cornell University College of Veterinary Medicine")).toBe(
+      "Cornell Vet",
+    );
+    expect(publisherDisplayName("U.S. Centers for Disease Control and Prevention")).toBe("CDC");
+    expect(publisherDisplayName("ASPCA (2018-12-04)")).toBe("ASPCA");
+    expect(publisherDisplayName("Animals (Basel), 2022")).toBe("Animals (Basel)");
+    expect(publisherDisplayName("Airbnb")).toBe("Airbnb");
   });
 });

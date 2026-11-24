@@ -16,23 +16,180 @@ export function citedSourceNumbers(body: string, sources: { url: string }[]): Se
   return cited;
 }
 
-/**
- * Display numbers for a guide's sources: the order a reader meets them. Maps each source's original (frontmatter,
- * 1-based) number to its display number by first appearance in the body of either a [[n]] marker or an inline link to
- * the source's exact URL; sources the body never references follow, in frontmatter order. The frontmatter and the
- * markdown stay untouched; only what the page shows (superscripts, anchors, Sources list order) uses this map.
- */
-export function citationDisplayMap(body: string, sources: { url: string }[]): Map<number, number> {
-  const byUrl = new Map<string, number>();
+/** Source numbers (1-based) a body links to by the source's exact URL (inline publisher links; markers do not count). */
+export function linkedSourceNumbers(body: string, sources: { url: string }[]): Set<number> {
+  const links = new Set<string>();
+  for (const m of body.matchAll(/\]\((https?:[^)\s]+)(?:\s+"[^"]*")?\)/g)) links.add(m[1]!);
+  const out = new Set<number>();
   sources.forEach((s, i) => {
-    if (!byUrl.has(s.url)) byUrl.set(s.url, i + 1);
+    if (links.has(s.url)) out.add(i + 1);
   });
-  const display = new Map<number, number>();
-  const take = (n: number | undefined) => {
-    if (n && n >= 1 && n <= sources.length && !display.has(n)) display.set(n, display.size + 1);
-  };
-  const re = /\[\[(\d{1,3})\]\](?:\((https?:[^)\s]+)\))?|\]\((https?:[^)\s]+)(?:\s+"[^"]*")?\)/g;
-  for (const m of body.matchAll(re)) take(m[1] ? Number(m[1]) : byUrl.get(m[3]!));
-  for (let n = 1; n <= sources.length; n++) take(n);
-  return display;
+  return out;
+}
+
+// Publisher names as written in a sentence. The display name is what a link shows; aliases are other ways the same
+// publisher is named in running text (the first mention of any of them can carry the link).
+const NAMES: Record<string, { name: string; aliases?: string[] }> = {
+  "Cornell University College of Veterinary Medicine": {
+    name: "Cornell Vet",
+    aliases: ["Cornell University College of Veterinary Medicine", "Cornell Vet"],
+  },
+  "Cornell University Riney Canine Health Center": {
+    name: "Cornell Riney Center",
+    aliases: ["Riney Canine Health Center", "Cornell Riney Center"],
+  },
+  "U.S. Centers for Disease Control and Prevention": {
+    name: "CDC",
+    aliases: ["Centers for Disease Control and Prevention", "CDC"],
+  },
+  "Centers for Disease Control and Prevention": {
+    name: "CDC",
+    aliases: ["Centers for Disease Control and Prevention", "CDC"],
+  },
+  "U.S. Department of Justice": {
+    name: "DOJ",
+    aliases: ["Department of Justice", "Justice Department", "DOJ"],
+  },
+  "American Kennel Club": { name: "AKC", aliases: ["American Kennel Club", "AKC"] },
+  "American Veterinary Medical Association": {
+    name: "AVMA",
+    aliases: ["American Veterinary Medical Association", "AVMA"],
+  },
+  "American Veterinary Society of Animal Behavior": {
+    name: "AVSAB",
+    aliases: ["American Veterinary Society of Animal Behavior", "AVSAB"],
+  },
+  "Georgia State Parks (Georgia DNR)": {
+    name: "Georgia State Parks",
+    aliases: ["Georgia State Parks", "Georgia DNR"],
+  },
+  "Humane World for Animals (formerly the Humane Society of the United States)": {
+    name: "Humane World for Animals",
+    aliases: ["Humane World for Animals", "Humane Society of the United States"],
+  },
+  "KONG Company": { name: "KONG", aliases: ["KONG"] },
+  "National Park Service": {
+    name: "National Park Service",
+    aliases: ["National Park Service", "NPS"],
+  },
+  "U.S. National Park Service": {
+    name: "National Park Service",
+    aliases: ["National Park Service", "NPS"],
+  },
+  "National Fire Protection Association": {
+    name: "NFPA",
+    aliases: ["National Fire Protection Association", "NFPA"],
+  },
+  "U.S. Consumer Product Safety Commission": {
+    name: "CPSC",
+    aliases: ["Consumer Product Safety Commission", "CPSC"],
+  },
+  "U.S. Food and Drug Administration": {
+    name: "FDA",
+    aliases: ["Food and Drug Administration", "FDA"],
+  },
+  "Animal Legal & Historical Center, Michigan State University College of Law": {
+    name: "Michigan State Animal Legal Center",
+    aliases: ["Animal Legal & Historical Center", "Michigan State"],
+  },
+  "Animals (Basel)": { name: "Animals (Basel)", aliases: ["Animals (Basel)"] },
+  "Petco Love": { name: "Petco Love" },
+  "University of Florida College of Veterinary Medicine": {
+    name: "UF Vet",
+    aliases: ["University of Florida College of Veterinary Medicine", "UF Vet"],
+  },
+  "West Virginia Division of Natural Resources": {
+    name: "West Virginia DNR",
+    aliases: ["West Virginia Division of Natural Resources", "West Virginia DNR"],
+  },
+  "U.S. Forest Service, Gila National Forest": {
+    name: "U.S. Forest Service",
+    aliases: ["U.S. Forest Service", "Forest Service"],
+  },
+  "Twiddy & Company": { name: "Twiddy", aliases: ["Twiddy & Company", "Twiddy"] },
+  "Aunt Bug's Cabin Rentals": {
+    name: "Aunt Bugs",
+    aliases: ["Aunt Bug's Cabin Rentals", "Aunt Bug's", "Aunt Bugs"],
+  },
+  "Aunt Bugs Cabin Rentals": {
+    name: "Aunt Bugs",
+    aliases: ["Aunt Bugs Cabin Rentals", "Aunt Bug's", "Aunt Bugs"],
+  },
+  "Rosemary Beach Cottage Rental Company": {
+    name: "Rosemary Beach Cottage Rental",
+    aliases: ["Rosemary Beach Cottage Rental Company", "Rosemary Beach Cottage Rental"],
+  },
+  "Elk Springs Resort Cabin Rentals": {
+    name: "Elk Springs Resort",
+    aliases: ["Elk Springs Resort Cabin Rentals", "Elk Springs Resort"],
+  },
+  "Brindley Beach Vacations": {
+    name: "Brindley Beach",
+    aliases: ["Brindley Beach Vacations", "Brindley Beach"],
+  },
+  "Beach Realty & Construction": {
+    name: "Beach Realty",
+    aliases: ["Beach Realty & Construction", "Beach Realty"],
+  },
+  "Soggy Doggy Productions": {
+    name: "Soggy Doggy",
+    aliases: ["Soggy Doggy Productions", "Soggy Doggy"],
+  },
+  "Carolina Designs Realty": {
+    name: "Carolina Designs",
+    aliases: ["Carolina Designs Realty", "Carolina Designs"],
+  },
+  "Sacred Waters North Georgia Cabin Rental": {
+    name: "Sacred Waters",
+    aliases: ["Sacred Waters North Georgia Cabin Rental", "Sacred Waters"],
+  },
+  "Newman-Dailey Resort Properties": {
+    name: "Newman-Dailey",
+    aliases: ["Newman-Dailey Resort Properties", "Newman-Dailey"],
+  },
+  "Kinlin Grover Vacation Rentals": {
+    name: "Kinlin Grover",
+    aliases: ["Kinlin Grover Vacation Rentals", "Kinlin Grover"],
+  },
+  "Canine Arthritis Resources and Education": {
+    name: "CARE",
+    aliases: ["Canine Arthritis Resources and Education"],
+  },
+  "Enterprise Rent-A-Car": { name: "Enterprise", aliases: ["Enterprise Rent-A-Car", "Enterprise"] },
+  "Small Door Veterinary": { name: "Small Door", aliases: ["Small Door Veterinary", "Small Door"] },
+  "Sun Palace Vacation Homes": {
+    name: "Sun Palace",
+    aliases: ["Sun Palace Vacation Homes", "Sun Palace"],
+  },
+  "U.S. Coast Guard": { name: "U.S. Coast Guard", aliases: ["U.S. Coast Guard", "Coast Guard"] },
+};
+
+/** The publisher's name with notes removed: "ASPCA (2018-12-04)" -> "ASPCA", "Animals (Basel), 2022" -> "Animals (Basel)". */
+function cleanPublisher(publisher: string): string {
+  let p = publisher
+    .trim()
+    .replace(/\s+via\s+.*$/i, "")
+    .replace(/,\s*\d{4}$/, "");
+  p = p.replace(
+    /\s*\((?:updated [^)]*|[^)]*\b\d{4}\b[^)]*|[^)]*(?:thread|blog|DVM)[^)]*|AVSAB|via [^)]*|formerly[^)]*)\)/gi,
+    "",
+  );
+  return p.trim();
+}
+
+/** Short publisher name a link shows: a small override map, otherwise the cleaned publisher as written. */
+export function publisherDisplayName(publisher: string): string {
+  const c = cleanPublisher(publisher);
+  return NAMES[c]?.name ?? NAMES[publisher]?.name ?? c;
+}
+
+/** Names that may stand for this publisher in running text, longest first. */
+export function publisherAliases(publisher: string): string[] {
+  const c = cleanPublisher(publisher);
+  const set = new Set<string>([
+    c,
+    publisherDisplayName(publisher),
+    ...(NAMES[c]?.aliases ?? NAMES[publisher]?.aliases ?? []),
+  ]);
+  return [...set].filter((n) => n.length >= 2).sort((a, b) => b.length - a.length);
 }

@@ -51,113 +51,44 @@ describe("article UX", () => {
   });
 });
 
-describe("source numbers in article text", () => {
-  it("are small superscript links that jump to the Sources list, not off-site", async () => {
+describe("sources in article text", () => {
+  it("shows no superscript numbers: a leftover [[n]] marker becomes a parenthetical publisher link", async () => {
+    const { renderToStaticMarkup } = await import("react-dom/server");
+    const { Markdown } = await import("@/components/site/Markdown");
+    const html = renderToStaticMarkup(
+      <Markdown
+        source={"A claim. [[2]](https://example.com/b) More [[9]](https://www.example.org/x)."}
+        sources={[{ publisher: "Airbnb" }, { publisher: "U.S. Department of Justice" }]}
+      />,
+    );
+    expect(html).not.toContain("<sup");
+    expect(html).not.toContain("cite");
+    expect(html).not.toContain("#src-");
+    expect(html).not.toContain("[2]");
+    expect(html).toContain(
+      '<span class="src-paren">(<a href="https://example.com/b" target="_blank" rel="noopener noreferrer">DOJ</a>)</span>',
+    );
+    // A number the sources list does not know falls back to the address host.
+    expect(html).toContain(">example.org</a>");
+  });
+  it("renders an inline publisher link as a normal external link, a parenthetical one quietly", async () => {
     const { renderToStaticMarkup } = await import("react-dom/server");
     const { Markdown } = await import("@/components/site/Markdown");
     const html = renderToStaticMarkup(
       <Markdown
         source={
-          "A claim. [[5]](https://example.com/a) More. [[10]](https://example.com/b) Again [[5]](https://example.com/a)"
+          "[PetMD](https://example.com/a) says so. It holds ([Airbnb](https://example.com/b), [Vrbo](https://example.com/c)). See (our [guide](/guides/x))."
         }
       />,
     );
-    expect(html).toContain('<sup class="cite">');
-    expect(html).toContain('href="#src-5"');
-    expect(html).toContain('href="#src-10"');
-    expect(html).toContain('id="cite-5-1"');
-    expect(html).toContain('id="cite-5-2"');
-    expect(html).toContain('aria-label="Source 5: jump to the sources list"');
-    expect(html).not.toContain("[5]");
-    // The marker stays on the page: no new tab, no off-site address.
-    expect(html).not.toContain("example.com");
-    expect(html).not.toMatch(/<sup class="cite"><a[^>]*target=/);
-  });
-  it("gives the first inline link to a source's exact URL a back-link id", async () => {
-    const { renderToStaticMarkup } = await import("react-dom/server");
-    const { Markdown } = await import("@/components/site/Markdown");
-    const html = renderToStaticMarkup(
-      <Markdown
-        source={"[PetMD](https://example.com/a) says so. Also [other](https://example.com/z)."}
-        sourceUrls={["https://example.com/a"]}
-      />,
-    );
-    expect(html).toMatch(/<a href="https:\/\/example.com\/a"[^>]* id="cite-1-1"/);
-    expect(html).toContain('rel="noopener noreferrer"');
-    expect(html).not.toContain('id="cite-1-2"');
-  });
-});
-
-describe("source numbers follow reading order", () => {
-  const sources = [
-    { url: "https://e.com/one" },
-    { url: "https://e.com/two" },
-    { url: "https://e.com/three" },
-    { url: "https://e.com/four" },
-  ];
-  const body =
-    "A [[3]](https://e.com/three) b [[1]](https://e.com/one) c [two](https://e.com/two) d [[3]](https://e.com/three).";
-  it("numbers by first appearance (marker or exact-URL link); unreferenced sources follow", async () => {
-    const { citationDisplayMap } = await import("@/content/citations");
-    expect([...citationDisplayMap(body, sources)]).toEqual([
-      [3, 1],
-      [1, 2],
-      [2, 3],
-      [4, 4],
-    ]);
-  });
-  it("uses display numbers for text, aria-label, anchors and inline back-link ids", async () => {
-    const { renderToStaticMarkup } = await import("react-dom/server");
-    const { Markdown } = await import("@/components/site/Markdown");
-    const html = renderToStaticMarkup(
-      <Markdown source={body} sourceUrls={sources.map((s) => s.url)} />,
-    );
     expect(html).toContain(
-      '<sup class="cite"><a id="cite-1-1" href="#src-1" aria-label="Source 1: jump to the sources list">1</a></sup>',
+      '<a href="https://example.com/a" target="_blank" rel="noopener noreferrer">PetMD</a>',
     );
-    expect(html).toContain('id="cite-1-2" href="#src-1"');
-    expect(html).toContain('id="cite-2-1" href="#src-2"');
-    expect(html).toMatch(/<a href="https:\/\/e.com\/two"[^>]* id="cite-3-1"/);
-    expect(html).not.toContain('jump to the sources list">[');
-    expect(html.indexOf("cite-1-1")).toBeLessThan(html.indexOf("cite-2-1"));
-  });
-  it("lists sources in display order with matching ids and back-links", async () => {
-    const { renderToStaticMarkup } = await import("react-dom/server");
-    const { SourcesList } = await import("@/components/site/SourcesList");
-    const { citationDisplayMap, citedSourceNumbers } = await import("@/content/citations");
-    const { RouterProvider, createMemoryHistory, createRouter, createRootRoute } =
-      await import("@tanstack/react-router");
-    const items = sources.map((s, i) => ({
-      ...s,
-      title: `T${i + 1}`,
-      publisher: `P${i + 1}`,
-      accessedOn: "2026-11-18",
-    }));
-    const root = createRootRoute({
-      component: () => (
-        <SourcesList
-          sources={items}
-          backLinks={citedSourceNumbers(body, items)}
-          display={citationDisplayMap(body, items)}
-        />
-      ),
-    });
-    const router = createRouter({
-      routeTree: root,
-      history: createMemoryHistory({ initialEntries: ["/"] }),
-    });
-    await router.load();
-    const html = renderToStaticMarkup(<RouterProvider router={router} />);
-    const order = [...html.matchAll(/id="src-(\d+)"[^>]*>.*?(T\d)/g)].map((m) => [m[1], m[2]]);
-    expect(order).toEqual([
-      ["1", "T3"],
-      ["2", "T1"],
-      ["3", "T2"],
-      ["4", "T4"],
-    ]);
-    expect(html).toContain('href="#cite-1-1"');
-    expect(html).toContain('href="#cite-3-1"');
-    expect(html).not.toContain('href="#cite-4-1"');
+    expect(html).toContain('<span class="src-paren">(<a href="https://example.com/b"');
+    expect(html).toContain(">Vrbo</a>)</span>");
+    // An on-site link in parentheses is not a publisher link.
+    expect(html).not.toContain('<span class="src-paren">(our');
+    expect(html).not.toMatch(/<a [^>]*id="cite/);
   });
   it("shows the swipe hint hidden by default (the overflow check shows it client-side)", async () => {
     const { renderToStaticMarkup } = await import("react-dom/server");
@@ -180,7 +111,7 @@ describe("reading time", () => {
 });
 
 describe("Sources list", () => {
-  it("is a details element with an id per entry, publisher, read date and back-links", async () => {
+  it("is a collapsed details element with an unnumbered list: publisher, linked title, read date", async () => {
     const { renderToStaticMarkup } = await import("react-dom/server");
     const { SourcesList } = await import("@/components/site/SourcesList");
     const { RouterProvider, createMemoryHistory, createRouter, createRootRoute } =
@@ -195,7 +126,7 @@ describe("Sources list", () => {
       { title: "Rules", url: "https://example.com/b", publisher: "Vrbo", accessedOn: "2026-11-19" },
     ];
     const root = createRootRoute({
-      component: () => <SourcesList sources={sources} backLinks={new Set([1])} />,
+      component: () => <SourcesList sources={sources} />,
     });
     const router = createRouter({
       routeTree: root,
@@ -204,13 +135,14 @@ describe("Sources list", () => {
     await router.load();
     const html = renderToStaticMarkup(<RouterProvider router={router} />);
     expect(html).toContain("<details");
-    expect(html).toContain('id="src-1"');
-    expect(html).toContain('id="src-2"');
+    expect(html).toContain("<ul");
+    expect(html).not.toContain("<ol");
+    expect(html).not.toMatch(/id="src-/);
+    expect(html).toContain("Show the 2 sources");
     expect(html).toContain("Airbnb.");
     expect(html).toContain("(read 2026-11-18)");
-    expect(html).toContain('href="#cite-1-1"');
-    expect(html).not.toContain('href="#cite-2-1"');
-    expect(html).toContain("back to text");
+    expect(html).not.toContain("back to text");
+    expect(html).not.toContain("#cite-");
     expect(html).toContain('href="/methodology"');
     expect(html).toContain('href="/editorial-standards#use-of-artificial-intelligence"');
     expect(html).toContain('href="https://example.com/a"');

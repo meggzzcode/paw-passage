@@ -4,7 +4,6 @@ import { guideHero, srcSetForKey } from "@/lib/images";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { Markdown, articleHeadings } from "@/components/site/Markdown";
 import { SourcesList } from "@/components/site/SourcesList";
-import { citedSourceNumbers, citationDisplayMap } from "@/content/citations";
 import { RelatedProducts } from "@/components/site/RelatedProducts";
 import { GearPicks } from "@/components/site/GearPicks";
 import { AffiliateNotice } from "@/components/site/AffiliateNotice";
@@ -142,7 +141,7 @@ function GuidePage() {
         <div className="mx-auto w-full min-w-0 max-w-[42rem]">
           <AffiliateNotice guide={g} />
           <TableOfContents headings={headings} variant="mobile" />
-          <Markdown source={g.body} sourceUrls={g.sources.map((x) => x.url)} />
+          <Markdown source={g.body} sources={g.sources} />
           {g.gear && g.gear.length > 0 && <GearPicks picks={g.gear} excludeIds={inBody} />}
           {g.faqs.length > 0 && (
             <section className="mt-16">
@@ -210,11 +209,7 @@ function GuidePage() {
           )}
           <section className="mt-16 rounded-xl bg-muted p-6 text-sm">
             <h2 className="font-display text-xl">Sources and how we researched this</h2>
-            <SourcesList
-              sources={g.sources}
-              backLinks={citedSourceNumbers(g.body, g.sources)}
-              display={citationDisplayMap(g.body, g.sources)}
-            />
+            <SourcesList sources={g.sources} />
           </section>
           {g.relatedProducts && g.relatedProducts.length > 0 && (
             <RelatedProducts productIds={g.relatedProducts} excludeIds={shownAsPicks} />

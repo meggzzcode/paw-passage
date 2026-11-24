@@ -17,7 +17,7 @@ Live site versus repo: the owner has stopped Netlify builds to preserve credits 
 | Sitemap URLs | 95 (home 1, guides 30, stays 24, gear 12, destinations 9, dogs 5, tools 4, data 1, trust and info pages 9) |
 | Published guides | 29 (32 files: 25 Markdown, 7 TypeScript; 3 drafts held back) |
 | Words in published guide bodies | 57,011 |
-| Sources / inline citations | 452 listed sources; 809 numbered inline markers; 193 FAQs |
+| Sources / inline citations | 452 listed sources, each linked inline by publisher name (no numbered markers); 193 FAQs |
 | Original dataset | 38 vacation-rental managers x 13 fields, read 2026-11-18, one source URL per row |
 | Stay pages | 37 stay files; 32 shown with their own detail page; 23 in the sitemap |
 | Destination / dog-type pages | 2 states + 8 towns defined (6 indexable); 4 dog-type pages |
@@ -33,7 +33,7 @@ Live site versus repo: the owner has stopped Netlify builds to preserve credits 
 |---|---|---|
 | Published guides | 29 on dog-friendly vacation-rental travel: pet fees, dog limits, breed restrictions, damage charges, fenced yards, large dogs (the former no-weight-limit guide is merged into the large-dog guide and redirects with a 301), puppies, seniors, reactive dogs, two large dogs in a car, holidays, packing, car safety, first aid, cooling, cold weather, hiking, life jackets, ramps, bowls, lost-dog plan | `content/guides/*.md` (25 files, editable in Pages CMS), `src/content/guides/*.ts` (7 files, need a developer) |
 | Length | 57,011 words in bodies; 1,391 to 2,519 per guide | probe, method in the counts file |
-| Citations | 452 sources (title, publisher, URL, access date) listed per guide and 809 numbered inline markers that point at them. The presentation of citations on the page was being reworked by a separate editorial pass when this was written: check a guide page for the final look | frontmatter `sources`, body `[[n]](url)` |
+| Citations | 452 sources (title, publisher, URL, access date) listed per guide in a compact collapsed Sources list, and linked inline in the article text by publisher name (natural publisher links or short parenthetical links such as ([Airbnb](url)); numbered markers were removed 2026-11-24) | frontmatter `sources`, body inline links |
 | Pick/spec cards | 79 cards with maker-sourced spec lines and per-button affiliate labels | guide bodies |
 | Drafts | 3 unpublished guides (breed restrictions, listing red flags, no-pets rental), ready to finish | `content/guides/` |
 | Audit trail | Per-guide claims and fact-check files (`docs/CLAIMS-*.md`, `docs/FACTCHECK-*.md`), editorial scorecards and change logs (`docs/editorial/`, `docs/ARTICLE_SCORECARD.md`) | `docs/` |

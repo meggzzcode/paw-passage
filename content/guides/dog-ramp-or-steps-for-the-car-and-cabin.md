@@ -239,5 +239,5 @@ The [Canine Arthritis Resources and Education](https://caninearthritis.org/?p=25
 
 1. **A ramp, once you have two numbers:** ground-to-floor height and your dog's weight. Then use the reach list above.
 2. **Nothing for the cabin stairs yet.** Get the host's answer first; our guide to [rentals that welcome large dogs](/guides/vacation-rentals-that-welcome-large-dogs) covers the booking side for a big dog.
-3. **The restraint for the drive.** A ramp gets the dog in; a harness or crate keeps the dog safe on the road, covered in our [car safety guide](/guides/dog-car-safety-harness-and-crate-guide). For two big dogs, see [two large dogs in one car](/guides/two-large-dogs-in-one-car).
+3. **The restraint for the drive.** A ramp gets the dog in; a harness or crate keeps the dog safe on the road, covered in our [car safety guide](/guides/dog-car-safety-harness-and-crate-guide). For two big dogs, see [two large dogs in one car](/guides/two-large-dogs-in-one-car); for muddy paws and hair on the cargo floor, see how to [protect your car interior](/guides/protect-your-car-interior-from-a-dog-on-a-road-trip).
 4. **The trip lists.** Add the ramp and the host's stair answer to your [trip checklist](/tools/checklist) and [packing list](/tools/packing-list). More options are on our [ramps and steps gear page](/gear/ramps-and-steps).

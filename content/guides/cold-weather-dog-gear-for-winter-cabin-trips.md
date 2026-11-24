@@ -223,4 +223,4 @@ Cornell says ethylene glycol antifreeze can be deadly to pets and to clean up sp
 
 How warm any Ruffwear item is, whether a boot is waterproof in practice (the claims are the makers', with no test named), and what your host puts on paths or lets you wash (ask in writing). Sources were read 2026-11-19.
 
-Before you go, measure paws and chest and add the towel to the [packing list tool](/tools/packing-list). The [winter travel gear page](/gear/winter-travel) has more, and the [pre-booking checklist](/tools/checklist) covers the question about what the host puts on paths.
+Before you go, measure paws and chest and add the towel to the [packing list tool](/tools/packing-list). The [winter travel gear page](/gear/cold-weather) has more, and the [pre-booking checklist](/tools/checklist) covers the question about what the host puts on paths.

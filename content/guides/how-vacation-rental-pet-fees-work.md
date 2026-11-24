@@ -1,7 +1,7 @@
 ---
 title: "How Vacation Rental Pet Fees Work: Per Night, Per Dog or Per Stay"
 seoTitle: "Vacation Rental Pet Fees: Per Night or Per Stay?"
-seoDescription: "How vacation rental pet fees work: we read 38 managers: 22 state a charge, 3 charge $0 and 13 name no amount. See the units and price your trip."
+seoDescription: "How vacation rental pet fees work: we read 38 managers; 22 state a charge, 3 charge $0 and 13 name no amount. See the units and price your trip."
 dek: "A pet fee is a formula: per stay, per night, per dog or per dog per night. See what 38 managers charge and how to total it."
 category: Planning
 states: []

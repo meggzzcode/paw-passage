@@ -174,7 +174,7 @@ approvedOn: 2026-11-18
 ---
 
 
-Airbnb and Vrbo leave this to each host, and "pet-friendly" says nothing about it. Four of the 38 managers in our dataset wrote an alone-time rule, and no two match: never, crated only, or crate recommended. Settle it before you pay, not on the afternoon of the dinner reservation.
+Airbnb and Vrbo leave this to each host, and "pet-friendly" says nothing about it. Four of the 38 managers in our [pet policy dataset](/data/pet-policies) wrote an alone-time rule, and no two match: never, crated only, or crate recommended. Settle it before you pay, not on the afternoon of the dinner reservation.
 
 ## The short answer
 

@@ -158,7 +158,7 @@ research:
 
 The rule is usually one sentence on the manager's pet page, so a "pet friendly" listing can still exclude a 14-week-old dog. A fee will not change an age rule, so settle it before anything else.
 
-Five of the 38 managers' public pet pages we read (a convenience sample, read 2026-11-18, not a count of the market) state a rule:
+Five of the 38 managers' public pet pages we read, listed in our [pet policy dataset](/data/pet-policies) (a convenience sample, read 2026-11-18, not a count of the market) state a rule:
 
 - [Tahoe Getaways](https://tahoegetaways.com/policies): "We do not allow dogs under the age of 18 months."
 - [A Blue Ridge Cabin Rental](https://ablueridgecabinrental.com/cabin-policies/): "Each pet must be at least 18 months old and be fully house-trained."

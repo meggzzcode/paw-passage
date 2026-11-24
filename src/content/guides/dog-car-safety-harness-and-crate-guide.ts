@@ -107,7 +107,7 @@ Build up to a long trip with short drives, and feed 3 to 4 hours before leaving 
 - Never leave your dog alone in a parked vehicle ([CDC](https://www.cdc.gov/healthy-pets/travel/index.html), [ASPCA](https://www.aspca.org/pet-care/general-pet-care/travel-safety-tips)). Heading to a winter cabin? The vest in our [cold-weather gear guide](/guides/cold-weather-dog-gear-for-winter-cabin-trips) is a walking harness, not a car restraint.
 - Microchip and contact details are current, ([CDC](https://www.cdc.gov/healthy-pets/travel/index.html)) and, as the [ASPCA](https://www.aspca.org/pet-care/general-pet-care/travel-safety-tips) suggests, your dog wears a temporary travel tag with your cell phone and destination phone number.
 - After a crash, follow the maker's guidance on replacing a restraint, and ask your vet about weight, joints, breathing and anxiety.
-- Water, bowl, leash, waste bags and medications are packed. Our [cabin packing list](/guides/dog-friendly-cabin-packing-list) covers more, and the [trip checklist](/tools/checklist) is the next step.
+- Water, bowl, leash, waste bags and medications are packed. Our [cabin packing list](/guides/dog-friendly-cabin-packing-list) covers more, [protecting your car interior](/guides/protect-your-car-interior-from-a-dog-on-a-road-trip) covers the mess a dog leaves behind, and the [trip checklist](/tools/checklist) is the next step.
 
 ## What to buy first
 

@@ -1,6 +1,7 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { getState } from "@/content/destinations";
 import { getGuide } from "@/content/guides";
+import { getPublicTownRead } from "@/content/town-reads";
 import { visibleStays } from "@/content/stays";
 import { images, srcSetForKey } from "@/lib/images";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
@@ -39,6 +40,11 @@ export const Route = createFileRoute("/destinations/$state/")({
 function StatePage() {
   const { d } = Route.useLoaderData();
   const guides = d.guides.map((g) => getGuide(g)).filter((g) => !!g);
+  const reads = d.towns
+    .map((t) => ({ town: t, read: getPublicTownRead(d.slug, t.slug) }))
+    .filter(
+      (x): x is { town: (typeof d.towns)[number]; read: NonNullable<typeof x.read> } => !!x.read,
+    );
   const stays = visibleStays()
     .filter((s) => s.state === d.slug)
     .slice(0, 3);
@@ -93,6 +99,25 @@ function StatePage() {
             </Link>
           ))}
         </div>
+        {reads.length > 0 && (
+          <>
+            <h2 className="mt-16 text-3xl">What to do with a dog, town by town</h2>
+            <ul className="mt-5 max-w-3xl space-y-3">
+              {reads.map(({ town, read }) => (
+                <li key={town.slug}>
+                  <Link
+                    to="/destinations/$state/$town/things-to-do"
+                    params={{ state: d.slug, town: town.slug }}
+                    className="text-primary underline"
+                  >
+                    {read.title}
+                  </Link>
+                  <span className="text-muted-foreground"> {read.dek}</span>
+                </li>
+              ))}
+            </ul>
+          </>
+        )}
         {guides.length > 0 && (
           <>
             <h2 className="mt-20 text-3xl">Guides for {d.name}</h2>

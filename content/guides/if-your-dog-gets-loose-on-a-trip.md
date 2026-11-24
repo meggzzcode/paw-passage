@@ -2,7 +2,7 @@
 title: "Dog Got Loose on Vacation: The First Hour and Prevention"
 seoTitle: "Dog Got Loose on Vacation: First Hour Plan"
 seoDescription: "Dog got loose on vacation? Do these three things first, then who to call, what to say, and how to prepare ID, chip and tracker for the next trip."
-dek: Search within 2 miles of where you last saw the dog, call your chip registry, then call animal control, shelters and your host.
+dek: The first hour is for searching and calling, in that order. Then the ID, chip and rental habits that make a safe return likelier.
 category: Planning
 states: []
 status: published
@@ -15,18 +15,14 @@ readingMinutes: 8
 heroImage: guide-loose-dog
 layout: emergency
 faqs:
-  - q: What should I do first if my dog runs off in a place I do not know?
-    a: Start searching right away close to where the dog was last seen. AKC Reunite says to begin within a 2 mile radius, with neighbors, friends and a favorite treat or toy. Then call your microchip registry, local animal control, vets and shelters, and tell your host.
-  - q: Should I call the police or animal control when my dog is lost?
-    a: The ASPCA's list of places to contact is animal control, veterinary hospitals, municipal and private shelters and local rescue groups, and the police if no shelter is nearby. Give an accurate description, including coat length and color, markings and size, and ask whether they hold a dog matching it.
+  - q: Should I call the police when my dog is lost?
+    a: The ASPCA lists the police as a contact if no shelter is nearby. Call animal control, vets and shelters first, give a description that matches the dog, and ask whether they hold one.
   - q: How do I find out where my dog's microchip is registered?
     a: A vet can scan the chip, and AAHA's lookup tool shows which participating registries hold it. AAHA keeps no database of its own, so contact the registry itself to check or change your details.
   - q: Do GPS dog trackers need a subscription and cell coverage?
     a: Cellular trackers generally do. One maker, Tractive, says its trackers have a built-in SIM, with network fees covered by a subscription, and need 2G and/or LTE coverage from its partners. Check current terms and the coverage tool for your route.
   - q: Can a Bluetooth tag replace a GPS tracker?
-    a: It depends on nearby devices relaying its position, and Apple's AirTag page describes keys and bags, not pets. For a dog that bolts in a place you do not know, treat a Bluetooth tag as a backup, not the plan (our view).
-  - q: Is a GPS tracker worth buying for a trip with a dog?
-    a: It is a search tool, not a leash. A cellular tracker can show where the dog is while it is charged and connected, but it does not stop an escape or tell a finder who you are. Check the plan requirement, coverage and size range on the maker's page, and sort out the tag and chip record first.
+    a: It depends on nearby devices relaying its position, and Apple's AirTag page describes keys and bags, not pets. For a dog that bolts in a place you do not know, treat a Bluetooth tag as a backup, not the plan.
   - q: How do I stop my dog escaping from a vacation rental?
     a: Treat arrival as the riskiest moment, with one person holding the dog while another handles the bags, and keep a leash on for every outing. Ask the host what closes the yard and who opens the gates. A pen is a supervised tool, not a fence.
 relatedGuides:
@@ -187,25 +183,25 @@ Send someone else to make the calls while you keep searching, if there is anyone
 
 Take a favorite treat or toy, call the dog's name and bring helpers ([AKC Reunite](https://www.akcreunite.org/lostpettips/)). The [ASPCA](https://www.aspca.org/pet-care/general-pet-care/finding-lost-pet) says shaking a food dish, treat jar or favorite toy can lure a pet out of hiding.
 
-Check the small places too: under beds, in closets and dark spaces, and ask neighbors to look in sheds and garages in case the dog was shut in by accident (ASPCA, above).
+Check the small places too: under beds, in closets and dark spaces, and ask neighbors to look in sheds and garages in case the dog was shut in by accident.
 
-Two things are our suggestions, not from a source. Split up and keep your phone on so helpers can reach you, and leave one person at the rental in case the dog returns on its own. Neither of our sources gives advice on approaching a frightened dog, so we do not claim a method here; a dog that has bolted may be hard to read, and a stranger's help may or may not be welcome.
+Split up and keep your phone on so helpers can reach you, and leave one person at the rental in case the dog returns on its own.
 
 ## Who to contact and what to say
 
-Call these in order, and keep a note of who you spoke to and when.
+Keep a note of who you spoke to and when.
 
 - **Your microchip registry.** Give the chip number if you have it, and confirm your phone and email on file.
-- **Local animal control, vets, shelters and rescue groups.** The [ASPCA](https://www.aspca.org/pet-care/general-pet-care/finding-lost-pet) names these, and the police if no shelter is near. You are away from home, so ask your host or property manager which agency covers the area (our suggestion).
-- **Neighbors, and local "Lost Pet" Facebook pages.** The ASPCA suggests asking page administrators to share your dog's details and creating a post or digital card others can share.
+- **Local animal control, vets, shelters and rescue groups.** The [ASPCA](https://www.aspca.org/pet-care/general-pet-care/finding-lost-pet) also names the police if no shelter is near. You are away from home, so ask your host or property manager which agency covers the area.
+- **Neighbors and local "Lost Pet" Facebook pages.** The ASPCA suggests asking page administrators to share your dog's details.
 
-Give a description that a stranger can match: coat length and color, markings, size, plus where and when the dog was last seen ([ASPCA](https://www.aspca.org/pet-care/general-pet-care/finding-lost-pet), [AKC Reunite](https://www.akcreunite.org/lostpettips/)). Ask whether they hold a dog matching it, and leave a number you will answer.
+Give a description a stranger can match: coat length and color, markings, size, plus where and when the dog was last seen ([ASPCA](https://www.aspca.org/pet-care/general-pet-care/finding-lost-pet), [AKC Reunite](https://www.akcreunite.org/lostpettips/)). Ask whether they hold a dog matching it, and leave a number you will answer.
 
 ## If your dog wears a tracker
 
 Open the app and read both the location and the time of the last update. A tracker shows where the device was, not whether the dog is safe or whether someone has picked it up, and it only helps while it is charged and connected.
 
-[Tractive](https://tractive.com/en/pd/gps-tracker-dog) says its trackers have a built-in SIM and need 2G and/or LTE coverage from its partners, so a dead zone can mean a stale location. [Apple](https://www.apple.com/airtag/) describes AirTag as a Bluetooth signal relayed by nearby Find My devices, and its page describes keys and bags, not pets. In a place with few people around, our view is that it is a weak backup.
+[Tractive](https://tractive.com/en/pd/gps-tracker-dog) says its trackers have a built-in SIM and need 2G and/or LTE coverage from its partners, so a dead zone can mean a stale location. [Apple](https://www.apple.com/airtag/) describes AirTag as a Bluetooth signal relayed by nearby Find My devices, and its page describes keys and bags, not pets. In a place with few people around, it is a weak backup.
 
 If the app shows the dog, go there, but keep calling the registry and shelters too. A location is a lead, not a rescue.
 
@@ -216,13 +212,13 @@ If the app shows the dog, go there, but keep calling the registry and shelters t
 - **Post flyers near where the dog was lost** and at dog parks, pet supply stores, groomers and vet offices, and share the same post online.
 - **Keep searching.** The ASPCA notes that many lost animals find their way home.
 
-If you must leave for work or a flight, give a friend, your host or the registry a second contact number. We found no figure we could cite for how many dogs lost while traveling are found, or how fast, so we state none.
+If you must leave for work or a flight, give a friend, your host or the registry a second contact number.
 
 ## Before your next trip
 
 Most of this takes ten minutes and no purchase.
 
-**Put a tag on the collar.** The [ASPCA](https://www.aspca.org/pet-care/general-pet-care/finding-lost-pet) says to include your name and current phone number, even for indoor pets. For travel, add a number you will answer and a second one for a friend or relative. Engrave or stamp it rather than use a sticker, and check the ring for wear (our suggestion); tags can fall off or become hard to read ([AKC Reunite](https://www.akcreunite.org/idtags/)). More ID items are in [safety, ID and first aid gear](/gear/safety-id-first-aid).
+**Put a tag on the collar.** The [ASPCA](https://www.aspca.org/pet-care/general-pet-care/finding-lost-pet) says to include your name and current phone number, even for indoor pets. For travel, add a number you will answer and a second one for a friend or relative. Engrave or stamp it rather than use a sticker, and check the ring for wear; tags can fall off or become hard to read ([AKC Reunite](https://www.akcreunite.org/idtags/)). More ID items are in [safety, ID and first aid gear](/gear/safety-id-first-aid).
 
 **Check the microchip record.** A chip has no power source and is not a GPS; a scanner activates it for a few seconds, and the number is like a blank tag until it is registered with your details ([AKC Reunite](https://www.akcreunite.org/importance/)). [AKC Reunite](https://www.akcreunite.org/travel/) says to verify your enrollment is up to date before you travel.
 
@@ -232,7 +228,7 @@ Most of this takes ten minutes and no purchase.
 
 More than one registry operates in the US. AAHA's free lookup tool shows which participating registries hold a chip, but AAHA keeps no database of its own, so contact that registry to change the record. Registration does not signify ownership, so keep vet paperwork and photos ([AKC Reunite](https://www.akcreunite.org/lostfoundpetfaq/)). AKC Reunite sells enrollment and ID tags, so read its pages with that in mind.
 
-**Make arrival the careful part.** [Patch](https://patch.com/massachusetts/across-ma/july-4-fireworks-cause-spike-lost-dog-reports-what-ma-pet-owners-should-know) warns that a dog that stays put at home can bolt from a rest stop, rental house, campground or hotel hallway if fireworks go off. One person holds the dog while another handles the bags, and the dog goes out only on a leash (our suggestions). Cornell advises a leash even in a fenced yard when fireworks or storms are the worry ([Cornell Riney Center](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/fear-fireworks-and-thunderstorms)).
+**Make arrival the careful part.** [Patch](https://patch.com/massachusetts/across-ma/july-4-fireworks-cause-spike-lost-dog-reports-what-ma-pet-owners-should-know) warns that a dog that stays put at home can bolt from a rest stop, rental house, campground or hotel hallway if fireworks go off. One person holds the dog while another handles the bags, and the dog goes out only on a leash. Cornell advises a leash even in a fenced yard when fireworks or storms are the worry ([Cornell Riney Center](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/fear-fireworks-and-thunderstorms)).
 
 **Ask what closes the yard.** "Fenced" is not a yard you can trust. Our [secure fenced yard guide](/guides/vacation-rental-secure-fenced-yard) lists the questions and photos to request, and a freestanding pen can give a supervised space; see the [portable pen guide](/guides/portable-dog-fence-and-playpen-guide-for-rentals). Holiday nights carry extra risk, and our [New Year's Eve guide](/guides/new-years-eve-with-a-dog-in-a-vacation-rental#keeping-your-dog-from-bolting) covers the real escape cases.
 
@@ -242,18 +238,20 @@ A tracker does not stop an escape or tell a finder who you are, so sort out the 
 
 **A clip-on for a collar you keep.** [Tractive](https://tractive.com/en/pd/gps-tracker-dog)'s DOG 6 is listed for dogs above 8.8 lbs at 1.4 oz, with IP68 waterproofing and collar widths up to 1.1 in. A subscription is required; charge it before each leg. Skip it for a dog under 8.8 lbs or one in a wide collar.
 
-{{pick:tractive-dog-6|Clip-on GPS for a collar you keep|The maker lists dogs above 8.8 lbs, collar widths up to 1.1 in, up to 2 weeks of battery with Power Saving Zones, and says a subscription is required for its built-in SIM.|https://tractive.com/en/pd/gps-tracker-dog}}
+{{pick:tractive-dog-6|Clip-on GPS for a collar you keep|Up to 2 weeks of battery with Power Saving Zones; a subscription is required for its built-in SIM.|https://tractive.com/en/pd/gps-tracker-dog}}
 
 **A collar with the tracker built in.** [Fi](https://fitracking.com/theapp) describes GPS and LTE tracking with live updates. The Series 3+ lists IP68 and IP66K ratings and a colored LED night light for XS to XL dogs, but its collar page states no carrier, coverage or subscription terms, so confirm the plan before you order ([Fi: GPS Dog Collar with Health & Activity Tracking](https://fitracking.com/collar), [Fi: Membership and Community](https://fitracking.com/membership)). Choose it when your dog will wear a new collar all trip.
 
-{{pick:fi-series-3-plus|Collar with GPS built in|The maker lists up to 3 months of battery life, a colored LED night light and IP68 and IP66K ratings; its product page does not state carrier or subscription terms.|https://fitracking.com/collar}}
+{{pick:fi-series-3-plus|Collar with GPS built in|Up to 3 months of battery life per the maker; its product page does not state carrier or subscription terms.|https://fitracking.com/collar}}
 
 **The smallest unit.** The [Petcube](https://petcube.com/tracker/) GPS Tracker is 29 g with IP67 water resistance; the maker says a paid plan is required and states no dog size range. [Tree Line Review](https://www.treelinereview.com/gearreviews/best-gps-dog-collars) called it "the most inaccurate location-wise" of its round-up, one reviewer's verdict. Buy it for its size, not for accuracy.
 
-{{pick:petcube-gps-tracker|The smallest tracker, with an accuracy caveat|The maker lists 29 g, IP67 water resistance and up to 30 days of battery in power save mode, says a paid plan is required and states no dog size range; one reviewer called it the most inaccurate of its group.|https://petcube.com/tracker/}}
+{{pick:petcube-gps-tracker|The smallest tracker, with an accuracy caveat|Up to 30 days of battery in power save mode per the maker; one reviewer called it the most inaccurate of its group.|https://petcube.com/tracker/}}
 
 **After dark.** A clip-on light does not find a dog, but it makes one easier to see in a yard you do not know. The [Ruffwear](https://ruffwear.com/products/the-beacon-safety-dog-light) Beacon lists three modes, up to 20 hours of run time and waterproofing to 1 m for 30 minutes, and clips to Ruffwear collars and light loops. Skip it if the collar has no light loop.
 
-{{pick:ruffwear-the-beacon-dog-safety-light|A light to see the dog after dark|The maker lists three modes, up to 20 hours of run time, waterproofing to 1 m for 30 minutes and a Quick Clip for Ruffwear collars and light loops.|https://ruffwear.com/products/the-beacon-safety-dog-light}}
+{{pick:ruffwear-the-beacon-dog-safety-light|A light to see the dog after dark|Has a Quick Clip for Ruffwear collars and light loops.|https://ruffwear.com/products/the-beacon-safety-dog-light}}
 
 Next step: run the [trip checklist](/tools/checklist) or add a tag, a flyer and a charger from the [packing list](/tools/packing-list).
+
+Where a line has no source link above, such as the arrival routine, the tag-ring check and asking your host which agency covers the area, it is our suggestion.

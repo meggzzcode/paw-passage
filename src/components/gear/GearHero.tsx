@@ -7,7 +7,7 @@ function HeroComposition() {
   return (
     <div
       aria-hidden="true"
-      className="relative hidden h-[19rem] w-full max-w-md justify-self-end md:block lg:h-[21rem]"
+      className="relative hidden h-[19rem] w-full max-w-md justify-self-end lg:block lg:h-[21rem]"
     >
       <svg
         className="absolute inset-0 size-full text-primary/10"
@@ -47,7 +47,7 @@ export function GearHero() {
   return (
     <section
       aria-labelledby="gear-hero-title"
-      className="mt-5 grid items-center gap-8 overflow-hidden rounded-3xl bg-muted/60 px-5 py-6 sm:px-8 md:grid-cols-[1.1fr_1fr] md:py-12 lg:px-12"
+      className="mt-5 grid items-center gap-8 overflow-hidden rounded-3xl bg-muted/60 px-5 py-6 sm:px-8 md:py-12 lg:grid-cols-[1.1fr_1fr] lg:px-12"
     >
       <div className="max-w-xl">
         <p className="eyebrow">Dog travel essentials</p>

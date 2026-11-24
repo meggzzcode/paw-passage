@@ -1,7 +1,7 @@
 ---
 title: "Dog Got Loose on Vacation: The First Hour, ID and Prevention"
 seoTitle: "Dog Got Loose on Vacation: First Hour Plan"
-seoDescription: "Dog got loose on vacation? Follow the first-hour steps, see what a tag, microchip and GPS tracker each do, and learn what to buy."
+seoDescription: "Dog got loose on vacation? Follow the first-hour steps, see what a tag, microchip and GPS tracker each do, and which GPS trackers to compare."
 dek: If your dog bolts, search near where it was last seen, then call your chip registry and host. Then fix the tag, the chip record and a tracker so it does not happen again.
 category: Planning
 states: []
@@ -16,6 +16,8 @@ heroImage: guide-loose-dog
 faqs:
   - q: What should I do first if my dog runs off in a place I do not know?
     a: Start searching right away close to where the dog was last seen. AKC Reunite says to begin within a 2 mile radius, with neighbors, friends and a favorite treat or toy. Then call your microchip registry, local animal control, vets and shelters, and tell your host.
+  - q: Should I call the police or animal control when my dog is lost?
+    a: The ASPCA's list of places to contact is animal control, veterinary hospitals, municipal and private shelters and local rescue groups, and the police if no shelter is nearby. Give an accurate description, including coat length and color, markings and size, and ask whether they hold a dog matching it.
   - q: How do I find out where my dog's microchip is registered?
     a: A vet can scan the chip, and AAHA's lookup tool shows which participating registries hold it. AAHA keeps no database of its own, so contact the registry itself to check or change your details.
   - q: Do GPS dog trackers need a subscription and cell coverage?
@@ -196,20 +198,16 @@ If your dog ran away or got loose on vacation, search close to where it was last
 2. **Get people and something familiar.** Bring a favorite treat or toy and call the dog's name. [[1]](https://www.akcreunite.org/lostpettips/)
 3. **Check the small places.** The ASPCA lists under beds, closets and dark or small spaces, and asks neighbors to check sheds and garages in case the pet was shut in by accident. [[2]](https://www.aspca.org/pet-care/general-pet-care/finding-lost-pet)
 4. **Open the tracker app, if the dog wears one,** and read the live location and the time of the last update.
-5. **Ring the host or property manager.** They know the roads, the neighbors and which agency covers the area (our suggestion, not from a source).
-6. **Then work the phone:** your microchip registry, local animal control, vets and shelters, and a flyer.
+5. **Call your microchip registry.** AKC Reunite asks owners to call its 24/7 helpline so it can confirm your contact information is current. [[1]](https://www.akcreunite.org/lostpettips/)
+6. **Ring the host or property manager,** then local animal control, vets and shelters. The host knows the roads, the neighbors and which agency covers the area (our suggestion, not from a source).
 
 If you are separated in an emergency such as a flood or fire, AKC Reunite says to get your family to a safe place before you search. [[1]](https://www.akcreunite.org/lostpettips/)
 
-**The short version for the next trip:** a legible tag with a number you will answer, a chip whose registry record is current, a cellular tracker that states its plan requirement, coverage and dog weight range, and a clip-on light for dark walks. The sections below say what each does and does not do.
+## Lost dog in an unfamiliar place: the first hour
 
-## The first hour, minute by minute
+Steps 1 to 6 above are the order of work. This section adds what to say and carry.
 
-**Minutes 0 to 15: search and call.** Walk and drive the 2 mile circle slowly, splitting up if you have helpers (our suggestion).
-
-**Minutes 15 to 30: tell the registry.** AKC Reunite asks owners to call its 24/7 helpline so it can confirm your contact information is current. [[1]](https://www.akcreunite.org/lostpettips/)
-
-**Minutes 30 to 60: widen the net.** The ASPCA's list is animal control, veterinary hospitals, municipal and private shelters and local rescue groups, and the police if no shelter is nearby. [[2]](https://www.aspca.org/pet-care/general-pet-care/finding-lost-pet) Give an accurate description including coat length and color, markings and size. [[1]](https://www.akcreunite.org/lostpettips/)
+**Minutes 0 to 60: widen the net.** Walk and drive the search area slowly, splitting up if you have helpers (our suggestion). The ASPCA's list of places to call is animal control, veterinary hospitals, municipal and private shelters and local rescue groups, and the police if no shelter is nearby. [[2]](https://www.aspca.org/pet-care/general-pet-care/finding-lost-pet) Give an accurate description including coat length and color, markings and size. [[1]](https://www.akcreunite.org/lostpettips/)
 
 **Same day and after:** visit shelters in person with a photo. The ASPCA recommends checking daily, and AKC Reunite notes that staff can change from day to day. [[2]](https://www.aspca.org/pet-care/general-pet-care/finding-lost-pet) [[1]](https://www.akcreunite.org/lostpettips/) Put up flyers. The ASPCA suggests a bold headline, a recent clear photo, breed, sex, coloring, age, weight, distinguishing features, when and where last seen, and your name with two phone numbers, one a friend or relative. Post it at dog parks, pet stores, groomers, vet offices, busy businesses and lampposts near where the dog was lost. [[2]](https://www.aspca.org/pet-care/general-pet-care/finding-lost-pet)
 
@@ -223,7 +221,9 @@ These are news and first-person items, not a sample, and each is one story:
 
 A tracker shows a location, not a rescue; if someone else has the dog, the tag and chip are how they reach you.
 
-## ID that actually works
+## Microchip vs GPS tracker vs tag: what each does
+
+**The short version for the next trip:** a legible tag with a number you will answer, a chip whose registry record is current, a cellular tracker that states its plan requirement, coverage and dog weight range, and a clip-on light for dark walks. The sections below say what each does and does not do.
 
 Three layers cover for each other.
 

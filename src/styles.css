@@ -92,6 +92,8 @@
   --terracotta-foreground: oklch(0.99 0.005 90);
   /* Terracotta darkened to L 0.565 so white button text reaches 4.62:1 (the plain terracotta gives 2.91:1). Buttons only. */
   --terracotta-button: oklch(0.53 0.11 45);
+  /* Small terracotta text (eyebrows, pick labels): darker again so it reaches 4.5:1 on cream and sage panels. */
+  --terracotta-text: oklch(0.48 0.11 45);
   --sage: oklch(0.83 0.045 150);
   --sky: oklch(0.91 0.03 230);
   --destructive: oklch(0.577 0.2 27);
@@ -143,7 +145,7 @@
   font-weight: 600;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--terracotta);
+  color: var(--terracotta-text);
 }
 
 /* Long-form article typography */

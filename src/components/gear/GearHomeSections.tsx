@@ -118,7 +118,7 @@ export function TripCollectionSection({ resolved }: { resolved: ResolvedTripColl
   return (
     <section
       id="trip-collection"
-      aria-labelledby="trip-collection-title"
+      aria-label={`${collection.heading}: ${count} picks`}
       className="mt-8 scroll-mt-20 rounded-3xl bg-muted/60 p-4 sm:p-6 lg:p-8"
     >
       <div className="flex flex-wrap items-end justify-between gap-3">

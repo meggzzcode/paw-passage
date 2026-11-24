@@ -7,7 +7,7 @@ import { AFFILIATE_SURFACE_NOTICE } from "@/lib/disclosure";
 import { trackProductClick } from "@/lib/analytics";
 import { productNameOnly } from "@/lib/product-display";
 import {
-  categoryPhrase,
+  categoryGearPhrase,
   hasAffiliate,
   needsAmazonSentence,
   type BuyResponse,
@@ -155,7 +155,7 @@ export function ShoppingPanel({ entry, response }: { entry: Entry; response: Buy
         {cat && (
           <p className="pk-shop-more">
             <Link to="/gear/$category" params={{ category: cat.slug }}>
-              See more {cat.name.toLowerCase()} gear
+              See more {categoryGearPhrase(cat)}
             </Link>
           </p>
         )}
@@ -180,7 +180,7 @@ export function ShoppingPanel({ entry, response }: { entry: Entry; response: Buy
           params={{ category: cat.slug }}
           className="pk-btn pk-btn-sm pk-shop-cta"
         >
-          Explore {categoryPhrase(cat)} gear
+          Explore {categoryGearPhrase(cat)}
           <ArrowRight aria-hidden="true" focusable="false" />
         </Link>
       </section>
@@ -309,7 +309,7 @@ export function PickUpList({ rows }: { rows: PickRow[] }) {
                 <div className="pk-pick-rec">
                   <span className="pk-pick-none">No specific pick yet.</span>
                   <Link to="/gear/$category" params={{ category: area.slug }}>
-                    Explore {categoryPhrase(area)} gear
+                    Explore {categoryGearPhrase(area)}
                   </Link>
                 </div>
               )}

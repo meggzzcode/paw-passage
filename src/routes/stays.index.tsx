@@ -184,8 +184,8 @@ function StaysPage() {
           <Link to="/data/pet-policies" className="underline">
             pet policies of 38 managers
           </Link>{" "}
-          (that dataset covers 38 property managers; this directory lists 32 stays). For background,
-          read{" "}
+          (that dataset covers 38 property managers; this directory lists {all.length} stays). For
+          background, read{" "}
           <Link
             to="/guides/$slug"
             params={{ slug: "how-vacation-rental-pet-fees-work" }}
@@ -210,11 +210,11 @@ function StaysPage() {
           {filters}
         </aside>
         <section>
-          <div className="mb-6 flex items-center justify-between gap-4">
+          <div className="mb-6 flex flex-wrap items-center justify-between gap-x-4 gap-y-2">
             <p className="text-sm text-muted-foreground" aria-live="polite">
               {results.length} {results.length === 1 ? "stay" : "stays"}
             </p>
-            <div className="flex items-center gap-3">
+            <div className="flex flex-wrap items-center gap-3">
               <button
                 type="button"
                 onClick={() => setDrawer(true)}
@@ -255,11 +255,14 @@ function StaysPage() {
               </button>
             </div>
           ) : (
-            <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
-              {results.map((s) => (
-                <StayCard key={s.slug} stay={s} />
-              ))}
-            </div>
+            <>
+              <h2 className="sr-only">Stays</h2>
+              <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
+                {results.map((s) => (
+                  <StayCard key={s.slug} stay={s} />
+                ))}
+              </div>
+            </>
           )}
         </section>
       </div>

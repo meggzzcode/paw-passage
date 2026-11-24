@@ -585,7 +585,7 @@ function Home() {
           <div className="md:text-right">
             <Link
               to="/list-your-property"
-              className="inline-flex rounded-full bg-terracotta px-6 py-3 font-medium text-terracotta-foreground"
+              className="inline-flex rounded-full bg-terracotta-button px-6 py-3 font-medium text-terracotta-foreground"
             >
               List your property
             </Link>

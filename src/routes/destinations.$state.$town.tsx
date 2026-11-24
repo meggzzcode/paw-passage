@@ -114,7 +114,7 @@ function TownPage() {
                 <span className="mt-2.5 size-2 shrink-0 rounded-full bg-terracotta" aria-hidden />
                 <span>
                   <strong>{a.name}.</strong> {a.summary} <span>{a.dogNote}</span>{" "}
-                  <span className="whitespace-nowrap text-sm text-muted-foreground">
+                  <span className="text-sm sm:whitespace-nowrap text-muted-foreground">
                     (
                     <a
                       href={a.source.url}

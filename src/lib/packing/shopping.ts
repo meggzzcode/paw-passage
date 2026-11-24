@@ -159,3 +159,9 @@ export function categoryPhrase(c: GearCategory): string {
   const n = c.name;
   return /^[A-Z]{2}/.test(n) ? n : n.charAt(0).toLowerCase() + n.slice(1);
 }
+
+/** The category phrase followed by "gear", without repeating it for names that already end in "gear". */
+export function categoryGearPhrase(c: GearCategory): string {
+  const p = categoryPhrase(c);
+  return /\bgear$/i.test(p) ? p : `${p} gear`;
+}

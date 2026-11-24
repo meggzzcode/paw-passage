@@ -125,7 +125,7 @@ marked.use({
             ? ` data-aff="${escapeHtml(product.affiliateId ?? product.id)}" data-partner="${escapeHtml(link.network ?? "")}"`
             : "";
         return `<aside class="no-print not-prose my-8 rounded-xl border border-border bg-secondary/50 p-5" data-pick="${escapeHtml(product.id)}">
-<p class="text-xs font-semibold uppercase tracking-[0.14em] text-terracotta">${escapeHtml(t.label && t.label.toLowerCase() !== "our pick" ? t.label : defaultPickLabel(product))}</p>
+<p class="text-xs font-semibold uppercase tracking-[0.14em] text-[var(--terracotta-text)]">${escapeHtml(t.label && t.label.toLowerCase() !== "our pick" ? t.label : defaultPickLabel(product))}</p>
 <div class="mt-3">${productSpecCardHtml(product)}</div>
 <p class="mt-2 text-sm text-muted-foreground">${escapeHtml(product.summary)}</p>${t.note ? `\n<p class="mt-2 text-sm"><span class="font-medium">Why we picked it:</span> ${escapeHtml(t.note)}${t.sourceUrl ? ` <a href="${escapeHtml(t.sourceUrl)}" target="_blank" rel="noopener noreferrer" class="underline">Source</a>` : ""}</p>` : ""}
 <p class="mt-4 flex flex-wrap items-center gap-4"><a${attrs} href="${escapeHtml(link.url)}" target="_blank" rel="${escapeHtml(link.rel)}" class="inline-flex h-11 items-center rounded-full bg-terracotta-button px-6 text-base font-semibold text-terracotta-foreground hover:brightness-95" style="text-decoration:none;color:#fff">${escapeHtml(link.label)}</a>${cat ? `<a href="/gear/${escapeHtml(cat)}#${escapeHtml(product.id)}" class="text-sm underline">Details and specs</a>` : ""}</p>
@@ -231,15 +231,27 @@ export function Markdown({
   sourcePublishers = (sources ?? []).map((s) => s.publisher);
   const { tokens } = lexWithIds(source);
   linkProductMentions(tokens);
+  let tableNo = 0;
   const html = marked
     .parser(tokens)
     // Wide tables scroll sideways inside their own box instead of widening the page on phones.
     .replace(
       /<table>/g,
-      '<p class="table-swipe-hint no-print" aria-hidden="true">Swipe sideways to see all columns</p><div class="table-scroll max-w-full overflow-x-auto" role="region" aria-label="Table, scrolls sideways"><table>',
+      () =>
+        `<p class="table-swipe-hint no-print" aria-hidden="true">Swipe sideways to see all columns</p><div class="table-scroll max-w-full overflow-x-auto" role="region" aria-label="Table ${++tableNo}, scrolls sideways"><table>`,
     )
-    // A task-list item shows its checkbox, not a bullet as well.
-    .replace(/<li><input (checked=""\s)?disabled=""/g, '<li class="task-item"><input $1disabled=""')
+    // A task-list item shows its checkbox, not a bullet as well; the checkbox is named by the item's own text.
+    .replace(
+      /<li><input (checked=""\s)?disabled=""([^>]*)>([\s\S]*?)<\/li>/g,
+      (_m, checked: string | undefined, rest: string, text: string) => {
+        const label = text
+          .replace(/<[^>]+>/g, "")
+          .replace(/\s+/g, " ")
+          .trim()
+          .replace(/"/g, "&quot;");
+        return `<li class="task-item"><input ${checked ?? ""}disabled=""${rest} aria-label="${label}">${text}</li>`;
+      },
+    )
     .replace(/<\/table>/g, "</table></div>")
     // A publisher link in parentheses, ([Airbnb](url)), is wrapped so it can be styled quietly.
     .replace(

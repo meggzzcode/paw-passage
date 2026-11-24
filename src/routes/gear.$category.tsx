@@ -1,17 +1,17 @@
 import { createFileRoute, Link, notFound, redirect } from "@tanstack/react-router";
-import { Breadcrumbs } from "@/components/site/Breadcrumbs";
-import { GuideCard } from "@/components/site/GuideCard";
-import { GearDisclosure, GearProductCard, HowWePick } from "@/components/site/GearHubCards";
+import { GearDisclosure } from "@/components/site/GearHubCards";
+import { CategoryHero, SafetyNote } from "@/components/gear/CategoryHero";
+import { GearHashTarget } from "@/components/gear/GearHashTarget";
+import { HowToChoose } from "@/components/gear/HowToChoose";
+import { CategoryHowWePick, RelatedGuides } from "@/components/gear/RelatedGuides";
+import { CategoryProductGrid, RelatedProductRows } from "@/components/gear/RelatedProductRows";
+import { buildCategoryView, siblingCategories } from "@/content/gear-category-view";
 import {
   categoryProducts,
   categoryIsLive,
   getGearCategory,
-  guidesFeaturing,
   legacyRedirectFor,
 } from "@/content/gear-hub";
-import { getGuide, isPublic } from "@/content/guides";
-import { gearCategories } from "@/content/gear-categories";
-import { dogTypeIsLive, getDogType } from "@/content/dog-types";
 import { pageHead, breadcrumbLd } from "@/lib/seo";
 
 export const Route = createFileRoute("/gear/$category")({
@@ -50,97 +50,20 @@ export const Route = createFileRoute("/gear/$category")({
 
 function GearCategoryPage() {
   const { slug } = Route.useLoaderData();
-  const c = getGearCategory(slug)!;
-  const all = categoryProducts(slug);
-  const items = all.filter((p) => p.categories?.[0] === slug);
-  const alsoFits = all.filter((p) => p.categories?.[0] !== slug);
-  const siblings = gearCategories
-    .filter((x) => x.slug !== slug && categoryIsLive(x.slug))
-    .slice(0, 2);
-  const guides = [
-    ...new Map(
-      [...(c.guideSlugs ?? []).map((s) => getGuide(s)), ...guidesFeaturing(all)]
-        .filter((g): g is NonNullable<typeof g> => !!g && isPublic(g))
-        .map((g) => [g.slug, g]),
-    ).values(),
-  ].slice(0, 3);
-  const dogType = c.dogTypeSlug ? getDogType(c.dogTypeSlug) : undefined;
+  const view = buildCategoryView(slug)!;
+  const siblings = siblingCategories(slug);
+  const all = [...view.primary, ...view.secondary];
   return (
-    <div className="container-page pt-10">
-      <Breadcrumbs
-        items={[
-          { label: "Home", to: "/" },
-          { label: "Travel essentials", to: "/gear" },
-          { label: c.name },
-        ]}
-      />
-      <header className="mt-6 max-w-3xl">
-        <h1 className="text-4xl md:text-5xl">{c.name}</h1>
-        <p className="mt-3 text-muted-foreground">{c.intro}</p>
-        <p className="mt-3 text-sm text-muted-foreground">
-          Specs are as each maker's page read on the date shown. Sizes, models and availability
-          change; confirm on the seller's page.
-        </p>
-      </header>
-      {dogType && dogTypeIsLive(dogType) && (
-        <p className="mt-4 text-sm">
-          Also see{" "}
-          <Link to="/dogs/$slug" params={{ slug: dogType.slug }} className="text-primary underline">
-            {dogType.name}
-          </Link>
-          .
-        </p>
-      )}
-      <section
-        className="mt-8 max-w-3xl rounded-xl border border-border bg-card p-6"
-        aria-labelledby="how-to-choose"
-      >
-        <h2 id="how-to-choose" className="text-2xl">
-          How to choose
-        </h2>
-        <ul className="mt-4 list-disc space-y-2 pl-5 text-sm">
-          {c.howToChoose.map((b) => (
-            <li key={b}>{b}</li>
-          ))}
-        </ul>
-      </section>
+    <div className="container-page pt-6 md:pt-10">
+      <GearHashTarget />
+      <CategoryHero view={view} />
       <GearDisclosure products={all} />
-      <ul className="mt-8 max-w-3xl space-y-6">
-        {items.map((p) => (
-          <GearProductCard key={p.id} product={p} />
-        ))}
-      </ul>
-      {alsoFits.length > 0 && (
-        <section className="mt-12" aria-labelledby="also-fits">
-          <h2 id="also-fits" className="text-2xl">
-            Also fits here
-          </h2>
-          <div className="mt-6 max-w-3xl space-y-6">
-            {alsoFits.map((p) => (
-              <div key={p.id}>
-                <p className="mb-2 text-xs text-muted-foreground">
-                  Also fits here. Mainly listed under{" "}
-                  {getGearCategory(p.categories?.[0] ?? "")?.name ?? "another category"}.
-                </p>
-                <ul>
-                  <GearProductCard product={p} />
-                </ul>
-              </div>
-            ))}
-          </div>
-        </section>
-      )}
-      <HowWePick />
-      {guides.length > 0 && (
-        <section className="mt-12">
-          <h2 className="text-2xl">Related guides</h2>
-          <div className="mt-6 grid gap-10 md:grid-cols-2 lg:grid-cols-3">
-            {guides.map((g) => (
-              <GuideCard key={g.slug} guide={g} />
-            ))}
-          </div>
-        </section>
-      )}
+      {view.safetyNote && <SafetyNote text={view.safetyNote} />}
+      <CategoryProductGrid products={view.primary} />
+      <RelatedProductRows products={view.secondary} />
+      <HowToChoose view={view} />
+      <RelatedGuides guides={view.guides} />
+      <CategoryHowWePick />
       <nav className="mt-12 text-sm" aria-label="More gear">
         <Link to="/gear" className="text-primary underline">
           All travel essentials

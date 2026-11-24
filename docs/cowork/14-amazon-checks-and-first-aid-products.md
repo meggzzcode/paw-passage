@@ -1,5 +1,7 @@
 # Cowork task 14: Amazon checks and first-aid product finds (read-only, run later)
 
+> SUPERSEDED 2026-11-24: Parts A, B and C are replaced by `docs/cowork/15-product-checks-and-finds.md` (send that one). Only Part D (pricing evidence) below is still current.
+
 Paste everything below the line into Cowork when you are ready to run it. Read-only in Megan's signed-in Chrome: do not buy, add to a cart or list, change any setting, or enter any payment, tax or identity detail. Stop at any CAPTCHA, login wall or bot check and say so; never work around it. Price bands only (under $25, $25 to $50, $50 to $100, over $100), never exact prices. This file keeps growing: append new checks at the bottom as the work needs them.
 
 ---

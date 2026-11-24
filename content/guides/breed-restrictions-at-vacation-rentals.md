@@ -31,7 +31,7 @@ relatedGuides:
   - how-vacation-rental-pet-fees-work
   - pet-friendly-vacation-rental-checklist
   - bringing-a-dog-to-a-no-pets-rental
-  - vacation-rentals-with-no-dog-weight-limit
+  - vacation-rentals-that-welcome-large-dogs
 relatedTools:
   - checklist
 sources:
@@ -223,7 +223,7 @@ A rule is about a category, not your individual dog, and nothing here says any b
 
 When a manager publishes a breed list it can be long: Elk Springs names 12 breeds. But the wall is often a number. In the 14-row table below, 6 policies have a weight cap of 35 to 60 lb and 2 name breeds. Cabin Rentals of Georgia says only "certain breeds" without naming them, and Cabins of the Smoky Mountains lists no breed but caps combined dog weight at 60 lb.
 
-**Our inference:** a cap in the 35 to 60 lb range can exclude many large dogs, shepherds, retrievers, hounds and mixes alike, without any breed being named. So when you read "no breed restrictions," read the weight line too. In our wider 38-manager dataset (a convenience sample, read 2026-11-18; see the [pet-policy data page](/data/pet-policies)), only 5 mentioned breed limits and only 2 named breeds. Both samples are small, so use them as a reason to read your own listing, not as odds. Two managers in our wider sample say they have no weight limit; see [rentals with no dog weight limit](/guides/vacation-rentals-with-no-dog-weight-limit).
+**Our inference:** a cap in the 35 to 60 lb range can exclude many large dogs, shepherds, retrievers, hounds and mixes alike, without any breed being named. So when you read "no breed restrictions," read the weight line too. In our wider 38-manager dataset (a convenience sample, read 2026-11-18; see the [pet-policy data page](/data/pet-policies)), only 5 mentioned breed limits and only 2 named breeds. Both samples are small, so use them as a reason to read your own listing, not as odds. Two managers in our wider sample say they have no weight limit; see [rentals with no dog weight limit](/guides/vacation-rentals-that-welcome-large-dogs).
 
 **Two dogs: watch for combined limits.** Row 8 caps dogs at "60 lb total." One host posted a scheduled guest message setting "the maximum combined pet mass" at 36 kg (80 lb) and a maximum of 2 pets (2021). That is one host's own limit, not an Airbnb rule, but it shows a combined cap can hide in a guest message. [[10]](https://airhostsforum.com/t/airs-new-pet-policy/50459?page=4) With two dogs, add the weights and check whether the cap is per dog or combined. Our [how-many-dogs guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental) covers counts.
 

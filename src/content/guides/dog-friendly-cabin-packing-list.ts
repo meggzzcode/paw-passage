@@ -14,7 +14,7 @@ export const guide: Guide = {
   publishedOn: "2026-11-16",
   lastReviewed: "2026-11-24",
   readingMinutes: 11,
-  heroImage: "guide-cabin-packing",
+  heroImage: "guide-packing-list-boots",
   body: `Muddy paws at the door, a dark deck at 11 pm and a vet an hour away are what a cabin adds to a normal trip. Pack your dog's usual routine, then cover those gaps, and get the host's answers on stairs, fencing and food storage before you load the car.
 
 ## The short answer

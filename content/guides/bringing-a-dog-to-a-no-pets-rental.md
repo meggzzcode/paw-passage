@@ -5,7 +5,7 @@ seoDescription: "Booked a rental that says no pets? See what the platforms say, 
 dek: What the platforms say, what hosts say really happens, and how to ask the host before you pack the dog's bed.
 category: Planning
 states: []
-status: published
+status: draft
 author: Paws & Passage Editors
 publishedOn: 2026-11-18
 lastReviewed: 2026-11-18

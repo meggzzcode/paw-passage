@@ -16,3 +16,7 @@ Decision: published (frontmatter `status: draft` to `published`). No safeguard b
 - Titles: no guide title exceeds 60 characters once pageHead drops the brand suffix, and /stays is 58. Nothing to fix; src/lib/seo.ts unchanged.
 - /guides/: the router answered `/guides/` with a 307. A request middleware (src/lib/trailing-slash.ts, registered first in src/start.ts) now returns 301 to the slashless URL for any GET/HEAD, keeping the query string. Verified on the node server: `/guides/` and `/stays/?q=a` return 301; `/guides`, `/stays` 200; unknown guide 404.
 - Sitemap lastmod: already present for guides (lastReviewed), stays (lastVerified) and places (lastChecked); static pages deliberately have none. No change.
+
+
+## Lead override on SEO-B (2026-11-24)
+The guide was reverted to draft. It was unpublished earlier on an owner rule (published guides must carry an earning product; the only fitting gear would read as helping hide a dog; see docs/ARTICLE-PRODUCT-REPORT-policyB.md). No other published guide satisfies the same search intent, so there is no 301: the URL stays a 404. The 64 impressions are not recoverable without breaking that rule. Revisit only if the owner changes the rule.

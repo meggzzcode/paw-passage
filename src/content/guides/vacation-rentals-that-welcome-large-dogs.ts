@@ -14,7 +14,7 @@ export const guide: Guide = {
   publishedOn: "2026-11-16",
   lastReviewed: "2026-11-24",
   readingMinutes: 11,
-  heroImage: "guide-large-dogs",
+  heroImage: "guide-large-dogs-rental",
   body: `Yes, large dog friendly vacation rentals exist, and a few managers say outright that they have no dog weight limit. But "pets allowed" never settles it for your dog. You find the cabin, the listing says "dogs welcome," your Lab is 80 pounds, and the rules page says 50. The only approval that counts is a written yes that names your dog.
 
 - Read the limit for this dog, per dog or combined, before you read the views.

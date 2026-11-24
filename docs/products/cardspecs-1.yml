@@ -1,17 +1,17 @@
 - id: sleepypod-clickit-sport
-  cardSpecs: ["Sizes Small to X-Large", "CPS lists: passed, July 2014", "Test dogs rated to 90 lbs"]
+  cardSpecs: ["CPS-tested: Small to X-Large", "CPS lists: passed, July 2014", "Test dogs rated to 90 lbs"]
   # source: keySpecs lines 1,2 (CPS sizes; CPS listing; test dog weights)
 - id: ruffwear-load-up-car-harness
   cardSpecs: ["Girth sizes XXS to L/XL", "Maker: crash tested", "Not CPS certified"]
   # source: keySpecs lines 1,4; summary; manufacturerClaimsVsIndependentTesting
 - id: kurgo-enhanced-strength-tru-fit
-  cardSpecs: ["Size chart: 5-110 lbs", "10 in seat belt tether", "Maker: crash tested, 75 lbs"]
+  cardSpecs: ["Size chart: 5-110 lbs", "10 in seat belt tether", "Maker: crash tested to 75 lb"]
   # source: keySpecs lines 1,2,4
 - id: sleepypod-atom
   cardSpecs: ["Maker: rated to 12 lbs (CPS)", "Folds flat; mesh on 3 sides", "No non-Sleepypod accessories"]
   # source: keySpecs lines 1,3,4,6
 - id: lucky-duck-lucky-kennel
-  cardSpecs: ["Large 70 to 110 lbs", "Integrated tie-downs", "Maker: CPS crash-test rated"]
+  cardSpecs: ["Intermediate: under 70 lbs", "Integrated tie-downs", "Maker: CPS crash-test rated"]
   # source: keySpecs lines 1,4,5
 - id: petsafe-happy-ride-collapsible-crate
   cardSpecs: ["Maker: pets up to 60 lb", "Two doors that fully unzip", "No crash-test claim on page"]

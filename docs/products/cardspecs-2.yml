@@ -5,7 +5,7 @@
   cardSpecs: ["24 oz (710 ml) capacity", "Tapered edge, less splashing", "PVC/BPA-free per the maker"]
   # source: Capacity 24 oz; tapered edge; food-grade silicone line
 - id: gunner-dog-bowl
-  cardSpecs: ["Bowl body plus travel lid", "Lid spill-proof, per maker", "No capacity listed on page"]
+  cardSpecs: ["Non-slip rubber feet", "Lid spill-proof, per maker", "Maker: BPA free, food-grade"]
   # source: Includes one bowl body and one travel lid; lid wording (maker)
 - id: kurgo-collaps-a-bowl
   cardSpecs: ["Holds 24 ounces", "Collapses under 1 inch high", "Maker: PVC and BPA free"]
@@ -26,22 +26,22 @@
   cardSpecs: ["12.75 Qt, about 10 lbs food", "Airtight, per the maker", "Maker: made in USA, BPA free"]
   # source: 12.75 Qt, approx 10 lbs; airtight seals line; Made in USA line
 - id: midwest-exercise-pen-with-door
-  cardSpecs: ["24 to 48 size designations", "Door: two slide-bolt latches", "Untrained pets may escape"]
+  cardSpecs: ["8 panels; 8 ground anchors", "Door: two slide-bolt latches", "Maker: untrained pets escape"]
   # source: Model numbers/24 to 48 designations; door latches line; maker escape warning
 - id: carlson-convertible-pet-yard
-  cardSpecs: ["28 in high; six 24-in panels", "16.3-in walk-through door", "No dog-size limit stated"]
+  cardSpecs: ["28 in high; six 24-in panels", "16.3-in walk-through door", "Up to 146.5 in as a gate"]
   # source: 28 inches high; six panels; 16.3-inch door; no weight or dog-size limit stated
 - id: petmate-precision-pet-soft-side-play-yard
-  cardSpecs: ["Listed as size Large", "Eight ventilated mesh panels", "Folded size not stated"]
+  cardSpecs: ["Water-resistant fabric", "Eight ventilated mesh panels", "Maker: sets up with no tools"]
   # source: Size Large; eight mesh panels; folded size not stated
 - id: north-states-mypet-universal-petgate
   cardSpecs: ["26 in high; fits 26-42 in", "Pressure or hardware mount", "Not for stair tops (tension)"]
   # source: 26 inches high; 26 to 42 inches wide; mount line; stairway line
 - id: midwest-icrate-dog-crate
-  cardSpecs: ["Sizes 18-48 in; 1 or 2 doors", "Divider panel, removable pan", "No weights listed on page"]
+  cardSpecs: ["Sizes 18-48 in; 1 or 2 doors", "Divider panel, removable pan", "Rubber feet protect floors"]
   # source: SKU 1500 sizes/doors; divider and pan line; page gives no weights
 - id: kurgo-loft-wander-dog-bed
-  cardSpecs: ["M 27x36 in, L 36x48 in open", "Rolls up, handle for toting", "No weight listed on page"]
+  cardSpecs: ["M 27x36 in, L 36x48 in open", "Rolls up, handle for toting", "Large rolls to 17 x 9.5 in"]
   # source: Medium/Large open sizes; rolls into bundle with handle; no weight listed
 - id: green-pet-shop-cool-pet-pad
   cardSpecs: ["Five sizes by pet weight", "Cools up to 3 hours (maker)", "12-month limited warranty"]

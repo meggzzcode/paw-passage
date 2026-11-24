@@ -11,7 +11,7 @@
   cardSpecs: ["XXS to L/XL, girth 13-42 in", "Reinforced lift handle", "No crash-test claim"]
   # source: keySpecs 1, 2, 5
 - id: ruffwear-grip-trex-boots
-  cardSpecs: ["Paw width 1.50-3.25 in", "Vibram outsole, mesh upper", "Size down if between sizes"]
+  cardSpecs: ["Sizes 1.50-3.25 in; set of 2", "Vibram outsole, mesh upper", "Size down if between sizes"]
   # source: keySpecs 2, 3
 - id: ruffwear-knot-a-leash
   cardSpecs: ["5 ft; 7 mm or 11 mm rope", "Auto-locking carabiner", "No strength rating stated"]
@@ -23,32 +23,32 @@
   cardSpecs: ["XXS to XL, girth 13-42 in", "Built-in harness, V-ring", "No thermal rating stated"]
   # source: keySpecs 1, 3, 4
 - id: ruffwear-polar-trex-boots
-  cardSpecs: ["Paw width 1.50-3.25 in", "Waterproof, windproof upper", "No insulation rating stated"]
+  cardSpecs: ["Sizes 1.50-3.25 in; set of 2", "Maker: waterproof, windproof", "No insulation rating stated"]
   # source: keySpecs 1, 2, 4
 - id: fi-series-3-plus
-  cardSpecs: ["Modular, XS to XL dogs", "Up to 3 months battery", "IP68 and IP66K certification"]
+  cardSpecs: ["Modular, XS to XL dogs", "Up to 3 months battery", "Maker lists IP68 and IP66K"]
   # source: keySpecs 1, 4, 3
 - id: tractive-dog-6
-  cardSpecs: ["Dogs above 8.8 lbs", "IP68 waterproof, LED light", "Subscription required"]
+  cardSpecs: ["Maker: dogs above 8.8 lbs", "Maker: IP68 waterproof, LED", "Subscription required"]
   # source: keySpecs 1, 3, 5
 - id: petcube-gps-tracker
-  cardSpecs: ["29 g; 60 x 25 x 20 mm", "IP67 water resistance", "Paid plan required (maker)"]
+  cardSpecs: ["29 g; 60 x 25 x 20 mm", "Maker: IP67 water resistance", "Paid plan required (maker)"]
   # source: keySpecs 3, 5, 2
 - id: ruffwear-the-beacon-dog-safety-light
-  cardSpecs: ["Up to 20 hrs operating time", "3 modes, 3 colors", "Waterproof to 1 m, 30 min"]
+  cardSpecs: ["Up to 20 hrs operating time", "3 modes, 3 colors", "Maker: waterproof 1 m/30 min"]
   # source: keySpecs 1, 2, 3
 - id: amk-trail-dog
   cardSpecs: ["12 oz; 7.5 x 5.3 x 1.5 in", "Waterproof Dryflex bag", "Pet First Aid Handbook"]
   # source: keySpecs 1, 5, 4
 - id: soggy-doggy-super-shammy-towel
-  cardSpecs: ["31 x 14 in, one size", "Hand pockets, microfiber", "No absorbency figure given"]
+  cardSpecs: ["31 x 14 in, one size", "Hand pockets, microfiber", "Care: tumble dry low"]
   # source: keySpecs 1, 3, 5
 - id: soggy-doggy-microfiber-doormat
-  cardSpecs: ["L 26 x 36 in; XL 36 x 60 in", "Non-slip backing", "No warranty on the page"]
+  cardSpecs: ["L 26 x 36 in; XL 36 x 60 in", "Non-slip backing", "Machine washable, dryer safe"]
   # source: keySpecs 1, 3, 5
 - id: pet-parents-pawtect-pads
-  cardSpecs: ["XS 18x24 to L 41x41 in", "Floor-gripping backing", "Warranty terms not shown"]
+  cardSpecs: ["XS 18x24 to L 41x41 in", "Floor-gripping backing", "Machine washable; 2 per pack"]
   # source: keySpecs 1, 2, 4
 - id: adventure-medical-kits-dog-wipes
-  cardSpecs: ["8 wipes, each 8 x 8 in", "Aloe, rosemary, witch hazel", "Rinse-free, 60-day guarantee"]
+  cardSpecs: ["8 per pack; each 8 x 8 in", "Aloe, rosemary, witch hazel", "Rinse-free, 60-day guarantee"]
   # source: keySpecs 1, 2, 3, 4

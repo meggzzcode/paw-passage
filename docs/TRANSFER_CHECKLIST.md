@@ -1,6 +1,6 @@
 # Buyer transfer checklist: Paws & Passage (pawsandpassage.com)
 
-Prepared 2026-11-23 for a quick, pre-revenue turnkey sale. Companion audit: `docs/flip/audit-legal-transfer.md`.
+Prepared 2026-11-23, counts and hosting refreshed 2026-11-24 for a quick, pre-revenue starter-site sale. Package order: `docs/buyer/TRANSFER_PACKAGE_INDEX.md`. Companion audit: `docs/flip/audit-legal-transfer.md`.
 Labels: **VERIFIED** (read in this repo today, path given) or **UNVERIFIED** (from older docs or needs a live check).
 No passwords, keys or private data belong in this file. Hand credentials over only through each service's own transfer or invite feature.
 
@@ -8,9 +8,10 @@ This file does not repeat the detailed procedures. Follow them in: `docs/DNS-AND
 
 ## 0. What is being sold (no traffic or earnings claims)
 
-- A static-content TanStack Start site (React, Tailwind, Vite) with content in `/content` (VERIFIED: `content/`): 26 guide files, of which 23 are `status: published` and 3 are not (`breed-restrictions-at-vacation-rentals`, `bringing-a-dog-to-a-no-pets-rental`, `pet-friendly-listing-red-flags`); 37 stay files, all `status: unverified` (so none is shown on the live site: `plugins/content.ts` publishes stays only when `verified`); 14 place files; a 38-manager pet-policy dataset (`public/pet-policies-38-managers.csv`, 39 lines with header).
-- Stale statements in older docs: "24 guides" (`docs/SALE-READINESS.md`) and "only Verified stays appear" (true in code, but there are zero verified stays, so the Stays section is effectively empty to visitors). Do not repeat either in a listing without rechecking.
-- Revenue today: none claimed. `docs/SALE-READINESS.md` itself says monthly net profit is $0. Do not state traffic, rankings or earnings; none are evidenced in the repo.
+- A TanStack Start site (React, Tailwind, Vite), server rendered, with content in `/content` (counts at repo `HEAD` `56552fc`, 2026-11-24; method in `docs/buyer/ROUTE_AND_ASSET_COUNTS.md`): 32 guide files (25 Markdown in `content/guides`, 7 TypeScript in `src/content/guides`), of which 29 are published and 3 are drafts (`breed-restrictions-at-vacation-rentals`, `bringing-a-dog-to-a-no-pets-rental`, `pet-friendly-listing-red-flags`); 37 stay files, all `status: unverified`, of which 32 are shown with a "Not yet verified" label because they have an approved booking link and 5 are hidden; 14 place files (0 public); a 38-manager pet-policy dataset (`public/pet-policies-38-managers.csv`, 38 rows x 13 fields); 3 tools; 11 gear categories with 53 active products; a 95-URL sitemap; 498 passing tests.
+- Stale statements in older docs: "24 guides", "30 guides", "only Verified stays appear" and "98 URLs" (the current figures are above). Do not repeat them in a listing without rechecking.
+- Revenue today: none claimed. Traffic: Search Console reported 236 impressions and 0 clicks over 28 days; URL Inspection showed 21 of 23 inspected pages indexed (OWNER; screenshots kept privately). Do not state rankings or earnings; none are evidenced in the repo.
+- Domain: registrar start 2026-11-16, valid to 2027-11-17, auto-renew OFF pending the owner's decision (decide before the push, section 1).
 
 ## Classification summary
 
@@ -19,7 +20,7 @@ This file does not repeat the detailed procedures. Follow them in: `docs/DNS-AND
 | Domain pawsandpassage.com (Namecheap) | TRANSFERS | Account-to-account Change Ownership, free, per `docs/DNS-AND-TRANSFER.md` s.6a. |
 | DNS records (Namecheap Advanced DNS) | TRANSFERS (with the domain) | Namecheap says a push does not change DNS (cited in `docs/DNS-AND-TRANSFER.md`). |
 | Namecheap Private Email, hello@ | OWNER DECISION, then TRANSFERS or BUYER MUST REPLACE | Not pushed with the domain; support-assisted transfer or new subscription plus IMAP copy (`docs/EMAIL-AND-TRANSFER.md`). A fresh empty mailbox is simplest. |
-| Netlify project `paws-passage-test` | TRANSFERS (project transfer) or BUYER MUST REPLACE | Netlify Team Owner can transfer a project; side effects unconfirmed. Re-creating from the repo is the fallback. |
+| Netlify project `paws-passage-test` | TRANSFERS (project transfer) or BUYER MUST REPLACE | Netlify Team Owner can transfer a project; side effects unconfirmed. Re-creating from the repo on the buyer's own free account is the recommended path. The seller's builds are stopped to preserve credits. |
 | GitHub repo `meggzzcode/paw-passage` | TRANSFERS | Repository transfer (Settings > Danger Zone). Public repo; history includes the seller's git author email. |
 | Pages CMS | BUYER MUST REPLACE (re-link) | Account-less tool; buyer signs in with GitHub and installs the Pages CMS GitHub App on the repo owner (`.pages.yml`). Not yet opened live per its own header comment. |
 | Code and original content | TRANSFERS (by assignment) | Needs a written assignment; no LICENSE file exists. |
@@ -30,17 +31,17 @@ This file does not repeat the detailed procedures. Follow them in: `docs/DNS-AND
 | Search Console property | BUYER MUST REPLACE | Verification file and ownership are per account. |
 | Pinterest Business account | OWNER DECISION | Accounts are generally not transferable; handle: login handover only if buyer accepts the risk (UNVERIFIED). |
 | Amazon Associates tag pawspassage-20 | NOT TRANSFERABLE | Tied to the seller's account and terms; buyer applies for own ID. |
-| Vrbo/Expedia affiliate links (33 `vrbo.com/affiliate` deeplinks) | NOT TRANSFERABLE | Tied to the seller's affiliate account; buyer must regenerate. |
+| Vrbo/Expedia affiliate links (33 `vrbo.com/affiliate` deeplinks, marked approved; approval itself is not proof of a partnership) | NOT TRANSFERABLE | Tied to the seller's affiliate account; buyer must regenerate. |
 | Impact site-verification meta tag | NOT TRANSFERABLE | Seller's Impact account; `src/routes/__root.tsx` comment says remove at sale. |
 | Awin | UNVERIFIED | No Awin ID found in code (grep of `src`, `content`). Check seller's account list. |
-| Lovable workspace | NOT NEEDED | Optional builder, not required to run (`docs/OPERATIONS-RECORD.md`). Build uses npm package `@lovable.dev/vite-tanstack-config`. |
+| Lovable workspace | NOT NEEDED, NOT TRANSFERRED | Optional design tool; no paid Lovable usage is required (`docs/HOSTING_PORTABILITY_REPORT.md`). The seller disconnects Lovable's GitHub sync at handover. The build uses the free public devDependency `@lovable.dev/vite-tanstack-config` (no account). |
 
 ## 1. Domain (Namecheap)
 
 - **Who acts:** Seller starts, buyer accepts. Buyer needs a Namecheap account first.
 - **Steps:** Follow `docs/DNS-AND-TRANSFER.md` s.6a: Domain List > Manage > Sharing & Transfer > Change Ownership; enter the buyer's Namecheap **username** (not email); seller confirms with their account password; choose the Registrant Contact option; buyer accepts. Free. Seller removes any shared-access managers first.
 - **60-day rule (ICANN):** a change of registrant can lock a later move to a different registrar for 60 days unless the registrant opts out. Whether a Namecheap account-to-account Change Ownership triggers that lock is **UNVERIFIED**: older docs record conflicting Namecheap sources, and my attempt to read an official Namecheap page today returned the wrong article. Ask Namecheap support in writing before closing; tell the buyer that moving to another registrar may be blocked for up to 60 days. Staying at Namecheap is unaffected.
-- **Before the push:** seller confirms domain not expired (expired domains cannot be moved), auto-renew state, domain privacy on, registrant contact is the seller (not a third party). Domain was bought 2026-11-17 (`docs/OPERATIONS-RECORD.md`); a new registration is normally also subject to the ICANN 60-day post-registration transfer lock to other registrars (general ICANN policy; confirm on the Namecheap domain page). That lock ends about 2027-01-16 (UNVERIFIED arithmetic from the purchase date).
+- **Before the push:** seller confirms domain not expired (expired domains cannot be moved), domain privacy on, registrant contact is the seller (not a third party), and **decides auto-renew**: it is currently OFF, so the registration lapses on 2027-11-17 unless renewed (about $19.98 a year). Registrar start date is 2026-11-16 (valid to 2027-11-17); a new registration is normally also subject to the ICANN 60-day post-registration transfer lock to other registrars (general ICANN policy; confirm on the Namecheap domain page). That lock would end about 2027-01-15 (UNVERIFIED arithmetic from the start date).
 - **Evidence to keep:** Namecheap confirmation emails, screenshot of the domain list on the buyer's account, support ticket text.
 - **Risk:** Medium. Irreversible once accepted (per Namecheap, cited in the doc).
 
@@ -56,7 +57,9 @@ This file does not repeat the detailed procedures. Follow them in: `docs/DNS-AND
 - **Who acts:** Buyer creates Netlify account and team; seller (Team Owner) transfers the project (Project configuration > General > Transfer project), per `docs/DNS-AND-TRANSFER.md` s.6d.
 - **After transfer:** recheck Git link to the repo, environment variables (none required for build per `netlify.toml`; `SHOW_DRAFTS=false` is set in `netlify.toml`), custom domain and HTTPS. Netlify's behavior for these is unconfirmed in the older doc.
 - **Fallback:** buyer creates a new site from the repo (`netlify.toml`: `npm run build`, publish `dist`, Node 22) and attaches the domain. The project name `paws-passage-test` is a test name; renaming is optional.
-- **Note:** Free plan is 300 credits a month, a hard limit; each production deploy is 15 credits (`docs/COSTS-AND-ACCOUNTS.md` s.1a, UNVERIFIED today).
+- **Note:** Free plan is 300 credits a month, a hard limit; each production deploy is 15 credits (`docs/COSTS-AND-ACCOUNTS.md` s.1a, read 2026-11-18). The owner has stopped builds on the seller's project to preserve credits (about 65 left); the live site shows its last deploy. On the buyer's account the first deploy publishes repo `HEAD`; batch edits afterwards because every Pages CMS save is a deploy.
+- **Hosting options (`docs/buyer/HOSTING_OPTIONS.md`, `docs/HOSTING_PORTABILITY_REPORT.md`):** Netlify is recommended. Lovable hosting is optional, was not tested with this site and needs a paid plan for a custom domain; no paid Lovable usage is required. Any Node 22 host works if the buyer recreates the `netlify.toml` redirects and headers. One devDependency (`@lovable.dev/vite-tanstack-config`) is a public, login-free package; a developer can swap it for a plain Vite config if it ever disappears.
+- **Seller before handover:** disconnect Lovable's GitHub sync (UNVERIFIED whether connected now) and remove the seller's name from the Netlify team after the project move.
 - **Evidence:** Netlify transfer confirmation, a successful production deploy on the buyer's team, HTTPS padlock screenshot.
 - **Risk:** Medium (downtime if domain is switched before the new site works).
 
@@ -64,8 +67,8 @@ This file does not repeat the detailed procedures. Follow them in: `docs/DNS-AND
 
 - **Who acts:** Seller (admin) transfers; buyer accepts.
 - **Steps:** Settings > Danger Zone > Transfer; enter buyer's username or org; confirm. Then buyer rotates any tokens, sets branch protection, enables secret scanning (public repo).
-- **Seller cleanup first:** remove seller-only collaborators and deploy keys; check the Actions workflows (`.github/workflows/ci.yml`, site health) run on the buyer's account.
-- **History note:** git history contains the seller's author email (a personal-looking address) on 41 commits and 253 commits by the Claude author. History cannot be rewritten without breaking links; disclose it or ask the owner whether to squash into a fresh repo (OWNER DECISION).
+- **Seller cleanup first:** disconnect Lovable's GitHub sync in the Lovable project settings; remove seller-only collaborators and deploy keys; check the Actions workflows (4 workflows: `ci.yml`, `site-health.yml`, `monthly-digest.yml`, `indexnow.yml`) run on the buyer's account.
+- **History note:** git history contains the seller's author email (a personal-looking address) on some commits (re-count at handover; 435 commits at `HEAD` `56552fc`) and many commits by the Claude author. History cannot be rewritten without breaking links; disclose it or ask the owner whether to squash into a fresh repo (OWNER DECISION).
 - **Secrets:** scan found no keys or tokens in the working tree or history (see audit). Buyer should still rotate any account tokens they create.
 - **Evidence:** transfer email, repo URL on the buyer's account, a green CI run.
 - **Risk:** Low.
@@ -80,7 +83,7 @@ This file does not repeat the detailed procedures. Follow them in: `docs/DNS-AND
 ## 6. Content and images
 
 - **Who acts:** Seller assigns rights in writing; buyer swaps seller-specific text.
-- **Steps:** (a) Signed assignment of copyright in the original text, code and docs (no LICENSE file exists). (b) Keep `src/content/image-credits.ts` and `src/content/pack-photos.ts` intact: all guide/gear/destination photos are credited Unsplash photographers; the home hero (`hero-porch*.jpg`) is now a credited Unsplash photo too (unsplash gives usage rights, not ownership or exclusivity). (c) Buyer edits the About page byline paragraph (`src/routes/about.tsx`) and legal pages (see section 14 and the audit).
+- **Steps:** (a) Signed assignment of copyright in the original text, code and docs (no LICENSE file exists). (b) Keep `src/content/image-credits.ts` and `src/content/pack-photos.ts` intact: all guide/gear/destination photos are credited Unsplash photographers (46 credit entries); no third-party (Amazon) product images are used; the home hero (`hero-porch*.jpg`) is now a credited Unsplash photo too (unsplash gives usage rights, not ownership or exclusivity). (c) Buyer edits the About page byline paragraph (`src/routes/about.tsx`) and legal pages (see section 14 and the audit).
 - **Do not claim** "unique photos" or product photography; the brief states maker photos are not licensed (`docs/PRODUCT-PHOTOS.md`).
 - **Evidence:** signed assignment; export of image credits; hero photo credit in `src/content/image-credits.ts`.
 - **Risk:** Medium (derived `public/pins` and `public/share` images were made from the site's photos, rights chain UNVERIFIED).
@@ -116,7 +119,7 @@ This file does not repeat the detailed procedures. Follow them in: `docs/DNS-AND
 ## 11. Affiliate accounts
 
 - **Who acts:** Buyer applies; seller removes seller IDs.
-- **Not transferable:** Amazon Associates tag (`amazonTrackingId` in `content/settings.yml`; 63 places in `content/affiliates.yml` use it via `{amazonTrackingId}`), Vrbo/Expedia deeplinks (33 `vrbo.com/affiliate` URLs in `content/affiliates.yml`), Impact verification tag (`src/routes/__root.tsx` lines around 107). Programs forbid or do not mention assignment (read each program's terms; UNVERIFIED).
+- **Not transferable:** Amazon Associates tag (`amazonTrackingId` in `content/settings.yml`; 63 places in `content/affiliates.yml` use it via `{amazonTrackingId}`), Vrbo/Expedia deeplinks (33 `vrbo.com/affiliate` URLs in `content/affiliates.yml`, 63 Amazon entries of which 53 approved), Impact verification tag (`src/routes/__root.tsx` lines around 107). Programs forbid or do not mention assignment (read each program's terms; UNVERIFIED).
 - **Steps:** Buyer applies to Amazon Associates (a site must usually show real content and, for Amazon, qualifying sales within a set period; verify current terms), Vrbo/Expedia, others. Then update the settings value, regenerate Vrbo links, remove or replace the Impact meta tag. Until then set `amazonTrackingId` to "" (Amazon links hide automatically per `src/config/site.ts`) and set affiliate links `approved: false` to avoid paying the seller by accident or breaching terms.
 - **Evidence:** program approval emails; a test click on the live site showing the buyer's tag.
 - **Risk:** High to the buyer's expectations: the site arrives with no earning ability; seller links must be off before handover.

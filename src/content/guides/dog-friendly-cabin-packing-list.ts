@@ -22,7 +22,7 @@ export const guide: Guide = {
 - **What to buy:** a lid-tight food container, a washable drying towel, a roll-up bed that is clearly the dog's, and a clip-on light for dark toilet trips. Everything else on the list is what you already own.
 - Pack your dog's familiar routine first, then add what the cabin requires: traction, barriers, cleanup gear, and wildlife-safe food storage.
 - Get host answers on stairs, fencing, crating, and food storage before you pack. A gate will not fix a stairs-and-bedroom mismatch.
-- Do not count on an ordinary food bin or cooler as bear-proof. Keep pet food, treats, bowls and rubbish indoors, or store them the way the property and park tell you to. [[1]](https://www.nps.gov/articles/bearsafetyfood.htm) [[13]](https://bearwise.org/six-bearwise-basics/never-leave-pet-food-outdoors/)
+- Keep pet food, treats, bowls and rubbish indoors, or stored the way the property and park say (see Storage below). [[1]](https://www.nps.gov/articles/bearsafetyfood.htm) [[13]](https://bearwise.org/six-bearwise-basics/never-leave-pet-food-outdoors/)
 - Carry offline records, microchip details, and emergency vet and poison control numbers (ASPCA 888-426-4435; Pet Poison Helpline 855-764-7661; a consultation fee may apply).
 - Check for ticks every evening and keep winter heaters, ash, and de-winterizing chemicals away from your dog. [[4]](https://www.cdc.gov/ticks/prevention/preventing-ticks-on-pets.html)
 
@@ -33,8 +33,8 @@ export const guide: Guide = {
 - [Leash, harness and spare bags; barriers and nonslip runners where the host permits](#leashes-barriers-and-safer-movement)
 - [Towel, bed and throw](#muddy-floors-and-furniture-towel-bed-and-throw)
 - [A light for dark toilet trips](#heat-light-and-dark-nights)
-- [First-aid kit](#a-practical-canine-first-aid-kit)
-- [Tick tool and preventive](#tick-prevention-and-the-evening-inspection)
+- [First-aid kit (no product needed)](#a-practical-canine-first-aid-kit)
+- [Tick tool and preventive (no product needed)](#tick-prevention-and-the-evening-inspection)
 - [Cold-weather and chemical checks](#cold-weather-wood-stoves-and-seasonal-chemicals)
 
 ## Buying checklist
@@ -77,7 +77,7 @@ BearWise says pet food is rich in fat and protein, which makes it extremely attr
 
 If you buy one thing for the food, make it the Airtight Dog Food Storage Container Up to 10 lbs from IRIS USA. It is for the dog owner who wants the kibble to arrive dry and the bag to stay closed in a car or a cabin kitchen: the maker lists 12.75 quarts, about 10 lb of dry food, with airtight seals and buckles. [[22]](https://www.irisusainc.com/collections/airtight-pet-food-containers/products/airtight-dog-food-storage-container-up-to-10-lbs-3) Skip it, or bring a second one, if you carry a bag much bigger than 10 lb. It is a tidy bin, not a bear-proof one.
 
-{{pick:iris-usa-airtight-dog-food-container-10-lb|Tidy kibble storage for about 10 lb of food (not bear-proof)|The maker lists 12.75 quarts for about 10 lb of dry food and airtight seals and buckles, and makes no bear-resistance claim.|https://www.irisusainc.com/collections/airtight-pet-food-containers/products/airtight-dog-food-storage-container-up-to-10-lbs-3}}
+{{pick:iris-usa-airtight-dog-food-container-10-lb|Tidy kibble storage for about 10 lb of food (not bear-proof)|For keeping kibble dry in a car or cabin kitchen; the maker makes no bear-resistance claim.|https://www.irisusainc.com/collections/airtight-pet-food-containers/products/airtight-dog-food-storage-container-up-to-10-lbs-3}}
 
 ## Identification, records, and an offline emergency folder
 
@@ -128,11 +128,11 @@ Dry the dog at the door and wipe paws before they cross the floor, and pick a sl
 
 In our view a washable drying towel is the item most worth buying for muddy floors, with a washable entry mat as a second choice if the host permits one (we do not recommend a specific mat). The Soggy Doggy Super Shammy is the one to buy for the door: it is 31 x 14 in, one size, in microfiber chenille with hand pockets, so you can dry paws and legs before they cross the floor. The maker says to machine wash it alone with no chlorine bleach or fabric softener and tumble dry low. [[20]](https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey) The page gives no absorbency figure, so a large or double-coated dog may want a second towel, and anyone with a small, short-coated dog can skip the second.
 
-{{pick:soggy-doggy-super-shammy-towel|For drying muddy paws at the door: 31 x 14 in|The maker lists a 31 x 14 in microfiber chenille towel with hand pockets that is machine washable.|https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey}}
+{{pick:soggy-doggy-super-shammy-towel|For drying muddy paws at the door: 31 x 14 in|For wiping paws and legs at the door before they cross the floor.|https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey}}
 
 For a bed that travels, the roll-up Kurgo Loft Wander gives the dog a spot that is clearly theirs and takes the hair, mud and damp. It comes in Medium (27 x 36 in, rolls to 12.5 x 8 in) and Large (36 x 48 in, rolls to 17 x 9.5 in), with a water-resistant ripstop top, a waterproof nonslip bottom and a handle. The maker says to wash it by hand or machine on a gentle cycle, cold, and to hang it dry. [[19]](https://www.kurgo.com/p/loft-wander-dog-bed/K01560) The page lists no dog weight guidance, so choose the size by how your dog lies down. It suits a dog that settles best on its own bed; skip it if the host already supplies a dog bed you trust or your dog will use only its bed from home.
 
-{{pick:kurgo-loft-wander-dog-bed|A roll-up bed that is clearly theirs: Medium or Large|The maker lists Medium and Large sizes, a waterproof nonslip bottom, a carry handle and machine or hand-wash care.|https://www.kurgo.com/p/loft-wander-dog-bed/K01560}}
+{{pick:kurgo-loft-wander-dog-bed|A roll-up bed that is clearly theirs: Medium or Large|For giving the dog a clear spot of its own that rolls up for the car.|https://www.kurgo.com/p/loft-wander-dog-bed/K01560}}
 
 ## Heat, light and dark nights
 
@@ -140,7 +140,7 @@ For a bed that travels, the roll-up Kurgo Loft Wander gives the dog a spot that 
 
 **Dark toilet trips.** A cabin yard has no streetlights, and a dog on a long line in the dark is hard to see. The Ruffwear Beacon is a clip-on light with Slow Flash, Fast Flash and Always On modes and three colors, with a stated run time of up to 20 hours and a charge time of about 1.5 hours by micro USB; the maker says it is waterproof to 1 m for 30 minutes. [[21]](https://ruffwear.com/products/the-beacon-safety-dog-light) Those figures are the maker's. It clips to Ruffwear collars and apparel light loops; if your dog's gear has no loop, use a headlamp and a short leash instead. Skip it if the yard is fenced and lit and your dog toilets on a leash within sight.
 
-{{pick:ruffwear-the-beacon-dog-safety-light|For seeing the dog on dark toilet trips: up to 20 hours|The maker lists three modes, up to 20 hours of run time and a Quick Clip for Ruffwear collars and light loops.|https://ruffwear.com/products/the-beacon-safety-dog-light}}
+{{pick:ruffwear-the-beacon-dog-safety-light|For seeing the dog on dark toilet trips: up to 20 hours|For seeing where the dog is on late toilet trips; check the clip fits your collar.|https://ruffwear.com/products/the-beacon-safety-dog-light}}
 
 ## A practical canine first-aid kit
 
@@ -203,11 +203,11 @@ Buy in this order: the lid-tight food container (it affects every meal and the c
     },
     {
       q: "Can I leave dog food on the cabin deck in a sealed bin?",
-      a: "No: treat any household bin or cooler as scented food storage, not bear-resistant storage. BearWise says to store pet food where bears cannot see or smell it, and NPS says bear-resistant containers only work when closed and locked. [[1]](https://www.nps.gov/articles/bearsafetyfood.htm) [[13]](https://bearwise.org/six-bearwise-basics/never-leave-pet-food-outdoors/) Follow the property's instructions and local wildlife rules.",
+      a: "No. BearWise says to store pet food where bears cannot see or smell it, and NPS says bear-resistant containers only work when closed and locked. [[1]](https://www.nps.gov/articles/bearsafetyfood.htm) [[13]](https://bearwise.org/six-bearwise-basics/never-leave-pet-food-outdoors/) Follow the property's instructions and local wildlife rules.",
     },
     {
       q: "Do I need a bear-proof container for dog food at a cabin?",
-      a: "Ask the host and the park, because rules differ. A household bin is not bear-resistant, and BearWise says pet food should be stored where bears cannot see or smell it. [[13]](https://bearwise.org/six-bearwise-basics/never-leave-pet-food-outdoors/)",
+      a: "Ask the host and the park, because rules differ, and do not assume a household bin counts: the Storage section above explains why. [[13]](https://bearwise.org/six-bearwise-basics/never-leave-pet-food-outdoors/)",
     },
     {
       q: "Do I need furniture covers if the cabin charges a pet fee?",

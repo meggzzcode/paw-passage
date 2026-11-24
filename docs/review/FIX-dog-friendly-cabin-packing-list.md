@@ -18,3 +18,7 @@
 - Linked the first-aid and bowls guides in text and relatedGuides; Iris container now named by its catalog name so it links to the sponsored target.
 - Checklist item 6 replaced; "buy first" repetition removed from container, towel, bed and light paragraphs; Kurgo specs moved into the bed paragraph (no duplicate); seoDescription gets a call-to-action verb.
 - For the lead: hero and pin still not replaced (not mine to edit).
+
+## Round 4
+Applied r3 edits 2, 4 and 5: bear caveat now in Storage and the Iris card only (short-answer bullet shortened to a pointer, FAQs trimmed to avoid repeating it); card why-texts state the job once instead of repeating chip specs (Iris, Soggy Doggy, Kurgo, Beacon); "(no product needed)" added to first-aid and tick items in the glance list.
+For the lead: edit 1 (cabin hero/pin without third-party brand, alt text in src/lib/images.ts), edit 3 (drop leading "IRIS USA" in products.yml name) and edit 6 (pick-card button contrast, component) need owner or component work.

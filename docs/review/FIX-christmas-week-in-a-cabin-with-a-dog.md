@@ -23,3 +23,7 @@
 - Gear section moved up to directly after the booking questions (before hazards); gate card moved into it. Fleece card and its source removed (the cold-weather guide carries it, linked); boots card kept once, linked to the cold-weather guide. Buying checklist block deleted; packing-list gear bullet replaced by a pointer. Per-card "buy first" lines removed; one in "What to buy first".
 - seoTitle now "Christmas Cabin With a Dog: Booking Rules and Safety" (53). readingMinutes 10. Citations renumbered after dropping the fleece source.
 - For the lead: the fleece still appears in cold-weather-dog-gear-for-winter-cabin-trips; ruffwear-climate-changer-fleece relatedProducts id removed here. products.yml relatedGuides for the fleece still lists this slug (not edited).
+
+## Round 4
+Applied r3 edits 1, 2, 3 and 5: removed the repeated sample sentence and the duplicate "Ask four things" bullet; removed the cost claim in "What to buy first"; added the /gear/pens-and-gates link; gate paragraph now points to the hazards section. lastReviewed 2026-11-24, readingMinutes 10.
+For the lead: edit 4 (hero crop or alt text in src/lib/images.ts) not touched; alt should say only what is visible (golden retriever on a wooden floor with blurred string lights).

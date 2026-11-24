@@ -15,3 +15,7 @@
 - Added a plain sentence that all five picks are Ruffwear because that is the catalog researched, not a ranking; plain six-foot leash and other-maker light/headlamp alternatives added.
 - seoTitle now "Dog Hiking Gear for a Cabin Trip: Buy List" (42 chars). Duplicate size-down sentence and three "buy first" sentences removed; bowl added as step 5 in the close. Chest-loop claim checked against products.yml keySpecs (supported).
 - For the lead: pin row title should mirror the new seoTitle (CSV not edited).
+
+## Round 4
+Applied r3 edits 1 to 5: removed the unsupported "most people go wrong" line; trimmed the Quencher prose (card carries the figures) and the "no tester named" clutter; boots test-hike advice now once in the section plus the close (kit item points back); Ruffwear Beacon and Quencher names in the close now match the auto-linker. lastReviewed 2026-11-24, readingMinutes 9.
+For the lead: edit 6 (pin row title) is in docs/pinterest-pins.csv, not touched; generic mountain icon on the Web Master card is template/product data.

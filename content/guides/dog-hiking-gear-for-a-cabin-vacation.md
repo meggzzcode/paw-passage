@@ -210,9 +210,9 @@ What none of them gives is a distance, temperature or surface at which boots bec
 
 {{pick:ruffwear-grip-trex-boots|For sharp rock or hot ground: sold as a set of two|The maker describes a Vibram outsole and a mesh upper for dogs that hike, bike, run or explore, with a closure that keeps its holding power when wet. Sold as a set of two, in paw widths from 1.50 to 3.25 in.|https://ruffwear.com/products/grip-trex-dog-boots}}
 
-Skip them if your dog stays on soft paths and the paw check after a hike shows no wear. What the page does not state: any limit for heat, snow or water. The traction and paw-protection wording is the maker's. Sizing is where most people go wrong, so measure first. Ruffwear says to "Measure across widest part of paw when bearing weight. Measure ALL paws. If between sizes, size down." [[10]](https://ruffwear.com/products/grip-trex-dog-boots) Front and rear paws can differ, which is why the boots sell as a set and you may need two sizes. AKC adds a way to do it at home: trace the paw on paper, draw a line across the widest part and measure it. [[7]](https://www.akc.org/expert-advice/lifestyle/dog-boots/)
+Skip them if your dog stays on soft paths and the paw check after a hike shows no wear. What the page does not state: any limit for heat, snow or water. The traction and paw-protection wording is the maker's. Measure before you order. Ruffwear says to "Measure across widest part of paw when bearing weight. Measure ALL paws. If between sizes, size down." [[10]](https://ruffwear.com/products/grip-trex-dog-boots) Front and rear paws can differ, which is why the boots sell as a set and you may need two sizes. AKC adds a way to do it at home: trace the paw on paper, draw a line across the widest part and measure it. [[7]](https://www.akc.org/expert-advice/lifestyle/dog-boots/)
 
-Two more steps. AKC says to introduce one boot first, then the second, with indoor practice before an outing. [[7]](https://www.akc.org/expert-advice/lifestyle/dog-boots/) Ruffwear says to check the closure and adjust the fit about 15 minutes into the activity. [[10]](https://ruffwear.com/products/grip-trex-dog-boots) Do the indoor practice at the cabin on day one, not at the trailhead. Buy them after a short test hike shows your dog's paws need them.
+Two more steps. AKC says to introduce one boot first, then the second, with indoor practice before an outing. [[7]](https://www.akc.org/expert-advice/lifestyle/dog-boots/) Ruffwear says to check the closure and adjust the fit about 15 minutes into the activity. [[10]](https://ruffwear.com/products/grip-trex-dog-boots) Do the indoor practice at the cabin on day one, not at the trailhead.
 
 ## Leash length and type
 
@@ -250,9 +250,9 @@ What that means on a trail:
 - **Boots and heat.** Orvis warns that dogs can overheat if booties are left on too long, so check the paws and take them off at rest stops (our suggestion). [[6]](https://www.orvis.com/how-to-hike-safely-with-your-dog.html)
 - **Never leave a dog in a parked car.** The Gila page says that in summer even a few minutes in the car can kill or seriously injure a pet. [[3]](https://www.fs.usda.gov/r03/gila/safety-ethics/canine-campers-bringing-dogs-national-forest)
 
-A packable bowl keeps the water stop easy, and on the trail it is the item that makes you actually offer a drink. Ruffwear's Quencher Collapsible Dog Bowl is listed in one size, the Medium, with a 5.5 in opening and 4.2 cups (1 L), enough for a real drink at a trailhead or summit stop rather than a sip. The maker lists a 4,000 mm waterproof rating on the lining and says to hand wash and air dry. [[14]](https://ruffwear.com/products/quencher-dog-bowl) It is for the hiker whose dog drinks a lot on a longer loop and who wants a bowl that packs flat. Skip it if you want something dishwasher safe, because it is hand wash only, and note the shell is described as water-resistant, not waterproof.
+A packable bowl keeps the water stop easy. The maker lists one size, Medium, with a 4,000 mm waterproof rating on the lining, and says to hand wash and air dry. [[14]](https://ruffwear.com/products/quencher-dog-bowl) It is for the hiker whose dog drinks a lot on a longer loop and who wants a bowl that packs flat. Skip it if you want something dishwasher safe, because it is hand wash only, and note the shell is described as water-resistant, not waterproof.
 
-{{pick:ruffwear-quencher-bowl|A packable trail bowl: 4.2 cups (1 L)|The maker lists one size, Medium, with a 5.5 in opening and 4.2 cups (1 L), a lining with a 4,000 mm waterproof rating labelled Food Contact Safe (the maker's wording, no tester named), and hand wash only.|https://ruffwear.com/products/quencher-dog-bowl}}
+{{pick:ruffwear-quencher-bowl|A packable trail bowl: 4.2 cups (1 L)|The maker lists one size, Medium, with a 5.5 in opening and 4.2 cups (1 L), a lining with a 4,000 mm waterproof rating labelled Food Contact Safe, and hand wash only.|https://ruffwear.com/products/quencher-dog-bowl}}
 
 Our [bowls and food storage guide](/guides/dog-travel-bowls-and-food-storage) compares more options. If the hike ends at a lake, see our [life jacket guide](/guides/dog-life-jacket-for-lakes-and-beaches).
 
@@ -262,7 +262,7 @@ Our [bowls and food storage guide](/guides/dog-travel-bowls-and-food-storage) co
 2. Water and a collapsible bowl, such as the Quencher, plus a plan for how often you stop.
 3. Waste bags, packed out.
 4. A light, if you may be out near dusk.
-5. Boots only if the terrain or surface calls for them, practiced at the cabin first.
+5. Boots, only after a test hike (see above).
 6. A paw check after each hike.
 
 Add the pieces to our [packing list tool](/tools/packing-list), and see our [cabin packing list](/guides/dog-friendly-cabin-packing-list) for food, records and first aid and the [outdoor adventures gear page](/gear/outdoor-adventures) for more.
@@ -292,7 +292,7 @@ Settle the trail rules, then measure two things tonight: the girth around your d
 1. **A fixed leash of six feet or less**, because every trail needs one: the Knot-a-Leash at 5 ft fits inside the limit.
 2. **The Web Master harness** only if your trail is steep or you may need to lift or steady the dog.
 3. **The Grip Trex boots** only after a short test hike shows your dog's paws need them.
-4. **The Beacon light** if late starts are likely.
-5. **A packable bowl** such as the Quencher if the trail has no water stop.
+4. **The Ruffwear Beacon light** if late starts are likely.
+5. **A packable bowl** such as the Ruffwear Quencher if the trail has no water stop.
 
 Compare your measurements with each maker chart (linked in the cards above), then run the [pre-booking checklist](/tools/checklist) with the trail questions added.

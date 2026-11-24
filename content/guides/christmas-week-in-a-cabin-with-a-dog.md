@@ -32,6 +32,7 @@ relatedGuides:
   - can-you-leave-a-dog-alone-in-a-vacation-rental
   - how-many-dogs-can-you-bring-to-a-vacation-rental
   - cold-weather-dog-gear-for-winter-cabin-trips
+  - dogs-in-georgia-state-park-cabins
   - dog-friendly-cabin-packing-list
 relatedProducts:
   - kurgo-loft-wander-dog-bed
@@ -175,10 +176,9 @@ approvedOn: 2026-11-18
 
 ## The short answer
 
-Booking a Christmas cabin with a dog comes down to four questions you ask the manager (minimum stay, the full total with one dog, cancellation, and whether this home takes dogs) and one hazard plan for the tree. In the 38 manager pet pages we read, none stated a holiday pet surcharge, but that is a sample, not proof.
+Booking a Christmas cabin with a dog comes down to four questions you ask the manager (minimum stay, the full total with one dog, cancellation, and whether this home takes dogs) and one hazard plan for the tree.
 
 - **We found no stated holiday pet surcharge** on the 38 manager pet pages in our dataset (a convenience sample, read 2026-11-18). That is not proof none exist, so ask for the total for your dates.
-- **Ask four things before you pay:** the minimum stay for your dates, the full total with one dog, the cancellation terms, and whether this exact home takes dogs.
 - **Minimum stays and cancellation are where holiday terms show up.** A Blue Ridge Vacation says "There is a 5-night minimum requirement for major holidays" and lists Christmas. [[1]](https://www.ablueridgevacation.com/rental-and-cancellation-policies/) Aunt Bugs says some minimum stays apply "during holidays, peak periods, etc." and has a no-cancellation policy unless you buy its optional guarantee. [[2]](https://www.auntbugs.com/rental-policies/)
 - **The tree and what is under it cause most of the trouble.** The ASPCA says to secure the tree so it cannot tip, cover the tree water, and skip tinsel. [[3]](https://www.aspca.org/pet-care/general-pet-care/holiday-safety-tips)
 - **Chocolate and xylitol are the foods to take seriously.** Pet Poison Helpline calls chocolate highly toxic to dogs and xylitol toxic to dogs. [[4]](https://www.petpoisonhelpline.com/pet-safety-tips/winter-holiday-pet-poison-tips/)
@@ -210,9 +210,9 @@ These are three managers, not a pattern. Whatever the terms, ask whether a sick 
 
 ## Gear for the evenings and the cold walks
 
-Four things do most of the work once the tree is booked in: a gate for the tree room, somewhere for the dog to settle, something to do, and boots only if the paths are icy or salted. The picks below are the ones that match this trip; for a fleece or coat see the [cold-weather gear guide](/guides/cold-weather-dog-gear-for-winter-cabin-trips).
+Four things do most of the work once the tree is booked in: a gate for the tree room, somewhere for the dog to settle, something to do, and boots only if the paths are icy or salted. The picks below are the ones that match this trip; more gates and pens are on our [pens and gates gear page](/gear/pens-and-gates); for a fleece or coat see the [cold-weather gear guide](/guides/cold-weather-dog-gear-for-winter-cabin-trips).
 
-**A gate for the tree room.** PetMD suggests a gate or pen around the tree, and a doorway gate is the least intrusive way to act on that in a house that is not yours. The North States MyPet Universal Petgate is 26 in high and adjusts to openings 26 to 42 in wide. It mounts by pressure with no tools, or with hardware to a solid surface, and the maker says to use the wall cups and never to use it at the top of a stairway when held only by tension. [[10]](https://northstatesind.com/north-states-mypet-universal-petgate/) It is for you if the tree stands in a room with a doorway: it keeps the dog off the tree, the water and the gifts while you cook or sleep. Skip it if the room has no doorway to gate, or if your dog jumps 26 inches; a closed door or crate time works better then. A gate this size does not circle a tree, and the maker claims no containment strength; the page says only that it is designed to securely block doorways, stairways and other spaces.  Ask the host before using the hardware mount.
+**A gate for the tree room.** PetMD suggests a gate or pen around the tree, and a doorway gate is the least intrusive way to act on that in a house that is not yours. The North States MyPet Universal Petgate is 26 in high and adjusts to openings 26 to 42 in wide. It mounts by pressure with no tools, or with hardware to a solid surface, and the maker says to use the wall cups and never to use it at the top of a stairway when held only by tension. [[10]](https://northstatesind.com/north-states-mypet-universal-petgate/) It is for you if the tree stands in a room with a doorway: it keeps the dog off the tree, the water and the gifts while you cook or sleep. Skip it if the room has no doorway to gate, or if your dog jumps 26 inches; a closed door or crate time works better then. A gate this size does not circle a tree, and the maker claims no containment strength; the page says only that it is designed to securely block doorways, stairways and other spaces.  Ask the host before using the hardware mount. The hazards it protects against are listed further down, under [Holiday hazards for dogs](#holiday-hazards-for-dogs).
 
 {{pick:north-states-mypet-universal-petgate|For a tree room with a doorway|The maker lists a 26 in high gate for 26 to 42 in openings that mounts by pressure or, with hardware, to a solid surface.|https://northstatesind.com/north-states-mypet-universal-petgate/}}
 
@@ -315,7 +315,7 @@ Settle the booking questions first, because a minimum stay or a no-tree rule cha
 
 1. **The booking answers,** in writing, before the deposit.
 2. **A gate for the tree-room doorway,** if the room has one and the host allows it.
-3. **The bed and the chew toy,** because they cost little and carry the evenings.
+3. **The bed and the chew toy,** because they carry the evenings in a room where the tree is off limits.
 4. **Boots,** such as the Polar Trex, only if the walks will be on snow, ice or salted paths; for a coat, read the [cold-weather gear guide](/guides/cold-weather-dog-gear-for-winter-cabin-trips).
 
 Check the size chart and return terms on each listing, and build the rest in the [packing list tool](/tools/packing-list) and the [trip checklist](/tools/checklist).

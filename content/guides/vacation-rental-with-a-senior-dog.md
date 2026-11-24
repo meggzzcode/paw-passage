@@ -2,7 +2,7 @@
 title: "Vacation Rental With a Senior Dog: What to Check Before You Book"
 seoTitle: "Senior Dog Vacation Rental: What to Check Before You Book"
 seoDescription: "Planning a vacation rental with a senior dog? Check stairs, floors and bed height, send the host this message, and get answers before you pay."
-dek: Check stairs, floors, bed height and house rules before you pay, and get the host's answers in writing while a refund is still possible.
+dek: Photos of the steps and floors, your vet's okay and the host's written answers settle most of a senior dog's rental stay before you pay.
 category: Planning
 states: []
 status: published
@@ -241,30 +241,19 @@ approvedBy: Paws & Passage Editors
 approvedOn: 2026-11-18
 ---
 
-To book a vacation rental with a senior dog, check the stairs, the floors and the host's rules before you pay, and ask your vet first whether the trip suits your dog.
-
-This is general information, not veterinary advice. Rules vary by place and host.
+Stairs and slippery floors decide most trips with a senior dog, and a listing rarely shows enough of either. The fix is cheap: photos from the host, a written answer on rugs and accidents, and your vet's okay, all before you pay. General information, not veterinary advice; rules vary by place and host.
 
 ## Do this first
 
-Talk to your vet, get photos and written answers from the host, and only then pay.
-
-1. **Call your vet** before booking and ask whether the trip suits your dog. The sources we read set no age cutoff, so it comes down to your dog's health, mobility and comfort in the car.
+1. **Call your vet** before booking and ask whether the trip suits your dog's health, mobility and comfort in the car.
 2. **Send the host the message below** and request photos of the route, steps and floors.
 3. **Pack for slipping and accidents:** non-slip rugs, your dog's own bed, washable layers and your vet's medication list.
 
 Nothing here needs buying to book; the two optional items are near the end ([jump to what to buy](#what-should-you-buy-for-a-senior-dogs-rental-stay)).
 
-What your vet says decides the plan:
-
-- **Your vet says the trip is fine and the dog moves comfortably:** go, and check the rental carefully.
-- **Your dog is stiff, slow to rise or hesitates at stairs:** call your vet first; these are listed signs of joint disease. [[3]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/osteoarthritis) [[4]](https://www.banfield.com/Senior-hub/common-health-issues-in-senior-pets/osteoarthritis-in-dogs-cats)
-- **Your dog is newly confused, restless at night or having accidents:** call your vet first (see the vet list near the end).
-- **Your vet advises against travel:** consider a sitter or boarding.
-
 ## What should you check on the listing?
 
-Stairs and floors decide most trips, and a listing rarely shows enough of either. Treat the listing text as a starting point and the photos as the answer.
+Treat the listing text as a starting point and the photos as the answer.
 
 - [ ] **Stairs.** Where is the bedroom, and how many flights lie between the entrance, bedroom and bathroom? Are the steps open-backed, narrow or steep, and are the treads bare or carpeted?
 - [ ] **Floors.** Dog Aging Project says to limit an older dog's access to slippery hard floors, and Banfield suggests non-slip rugs or yoga mats on them. [[1]](https://dogagingproject.org/mobility-tips-and-tricks-for-senior-dogs) [[2]](https://www.banfield.com/Senior-hub/care-for-older-pets/senior-proof-your-home)
@@ -273,11 +262,11 @@ Stairs and floors decide most trips, and a listing rarely shows enough of either
 - [ ] **Bed and couch height.** Cornell lists trouble getting onto couches as a sign of joint disease and suggests ramps for beds, couches or cars. [[3]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/osteoarthritis)
 - [ ] **Steps down to the yard,** and whether it is fenced (see our [fenced-yard guide](/guides/vacation-rental-secure-fenced-yard)).
 
-**A borrowed photo standard.** Airbnb publishes how hosts should photograph step-free features: no steps, stairs or curbs over 2 inches along the entrance route, photos every 10 feet, thresholds shown close up. [[5]](https://www.airbnb.com/resources/hosting-homes/a/a-guide-to-photographing-accessibility-features-30) It also lists "Step-free access" and "Step-free bedroom access" as accessibility features guests can filter for. [[6]](https://www.airbnb.com/help/article/3138) These are built for human guests, so applying them to a dog is our inference, and the standard has no flooring or bed-height photos.
+**A borrowed photo standard.** Airbnb publishes how hosts should photograph step-free features: no steps, stairs or curbs over 2 inches along the entrance route, photos every 10 feet, thresholds shown close up. [[5]](https://www.airbnb.com/resources/hosting-homes/a/a-guide-to-photographing-accessibility-features-30) It also lists "Step-free access" and "Step-free bedroom access" as filters. [[6]](https://www.airbnb.com/help/article/3138) These are built for human guests, so applying them to a dog is our inference, and they have no flooring or bed-height photos.
 
 ## What should you ask the host?
 
-A vague "is it accessible?" gets a vague answer; "send a photo of the steps from the driveway" gets a fact. Request:
+"Is it accessible?" gets a vague answer; "send a photo of the steps from the driveway" gets a fact. Request:
 
 - The route from parking to the front door, with any steps or curbs
 - The entrance threshold, close up
@@ -289,57 +278,40 @@ A message you can copy:
 
 > Hi [Host], we are considering [dates] with our [age]-year-old [breed]. [Name] is steady but slow on stairs and slippery floors. Could you tell me: (1) Is there a step-free route from parking to the door, and could you send a photo? (2) What flooring is in the living area and bedroom, and are the stairs carpeted or bare? (3) Are there stairs between the bedroom, bathroom and entrance? (4) Are there steps to the yard? (5) May we put down a rubber-backed rug or a small ramp, and bring our own bed and washable bedding? (6) How are accidents by an older dog handled, and is any deposit involved? We will clean up and tell you right away. Thank you.
 
-If your dog may leak, say so in the message. Send it through the booking platform so the answers are on record. Our [pet-friendly rental checklist](/guides/pet-friendly-vacation-rental-checklist) covers the general questions, and our [pet fees guide](/guides/how-vacation-rental-pet-fees-work) explains how the total is built. For a young dog instead, see our [puppy rental guide](/guides/puppy-at-a-vacation-rental).
+If your dog may leak, say so in the message, and send it through the booking platform so the answers are on record. Our [pet-friendly rental checklist](/guides/pet-friendly-vacation-rental-checklist) covers the general questions, and the [pet fees guide](/guides/how-vacation-rental-pet-fees-work) explains how the total is built.
 
 ## What do manager rules mean for an older dog?
 
-Some common rules clash with an older dog's needs. We read six manager pages on 2026-11-18, mostly Outer Banks; none showed an effective date, and the last column is our inference.
-
-| Manager | Rules we read | What it could mean for a senior |
-| --- | --- | --- |
-| Twiddy [[7]](https://www.twiddy.com/outer-banks/guests/pets/) | Up to two pets "unless otherwise advertised"; only in homes listed pet-friendly; no pools or hot tubs | Check that your exact home is on the list |
-| Brindley Beach [[8]](https://www.brindleybeach.com/node/3691) | Up to 2 dogs, 60 lb or less unless advertised; fee does not cover "unreported accidents"; off furniture unless covered with your own sheet; not alone unless crated | A heavier dog may not qualify; a dog needing a ramp to a bed should check first |
-| Sun Realty [[9]](https://www.sunrealtync.com/node/1163) | Up to 2; flea extermination fee by property; no pools or hot tubs | Fee varies; get the amount |
-| Resort Realty [[10]](https://resortrealty.com/outer-banks-pet-friendly) | Up to 2 adult dogs; fee varies by property | A senior is an adult, so not a barrier |
-| Carolina Designs [[11]](https://www.carolinadesigns.com/outer-banks-vacation/pet-friendly) | Up to 2 adult dogs unless noted; off furniture; not unattended | An anxious dog should check the unattended rule |
-| Vacasa [[12]](https://vacasa.com/furryfriends) | Varies by home; notify the host first; "don't leave dogs unsupervised inside" | Read the listing; see our [unattended-dog guide](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental) |
-
-Two things stand out. Brindley's fee does not cover unreported accidents, which is a reason to tell the manager rather than hide one. And five of the six cap dogs at two, which matters for two older dogs (see [traveling with two dogs](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental)). Large older dogs should read our [large-dog guide](/guides/vacation-rentals-that-welcome-large-dogs); fees are in [how pet fees work](/guides/how-vacation-rental-pet-fees-work).
+We read six manager pages on 2026-11-18, mostly Outer Banks, and the rules that matter most are the ones that clash with a senior's needs. Brindley Beach caps dogs at 60 lb unless advertised, keeps them off furniture unless covered with your own sheet, and says its fee does not cover "unreported accidents," a reason to tell the manager rather than hide one. [[8]](https://www.brindleybeach.com/node/3691) Carolina Designs and Vacasa say dogs may not be left unattended or unsupervised inside, which matters for an anxious dog. [[11]](https://www.carolinadesigns.com/outer-banks-vacation/pet-friendly) [[12]](https://vacasa.com/furryfriends) Twiddy allows pets only in homes listed pet-friendly, and Sun Realty and Resort Realty set fees by property, so get the amount. [[7]](https://www.twiddy.com/outer-banks/guests/pets/) [[9]](https://www.sunrealtync.com/node/1163) [[10]](https://resortrealty.com/outer-banks-pet-friendly) Most cap dogs at two, which matters for two older dogs (see [traveling with two dogs](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental)). A big senior should read our [large-dog guide](/guides/vacation-rentals-that-welcome-large-dogs).
 
 ## How do you make slippery floors safer in a rental you cannot change?
 
 Bring grip with you, put the question to the host before laying anything down, and expect hard floors.
 
 - **Rugs or mats.** Banfield suggests non-slip rugs or yoga mats. [[2]](https://www.banfield.com/Senior-hub/care-for-older-pets/senior-proof-your-home) Dog Aging Project suggests them where the dog lies down and in high-traffic areas, and says to be present the first time your dog uses them. [[1]](https://dogagingproject.org/mobility-tips-and-tricks-for-senior-dogs)
-- **Short nails** help paw-pad traction. [[1]](https://dogagingproject.org/mobility-tips-and-tricks-for-senior-dogs)
-- **Grip aids.** Boots, rubber-soled socks and toe grips can help; the same page cautions about toe grips for chewers. [[1]](https://dogagingproject.org/mobility-tips-and-tricks-for-senior-dogs)
-- **Ramps and steps for furniture or a car.** AKC says to match the height to the sofa, bed or trunk, check the weight limit and look for a non-slip surface. [[13]](https://www.akc.org/expert-advice/health/general-health/dog-stairs-and-ramps/) None of these pages says a ramp works for a full indoor flight, so for rental stairs use the photo check and ask the host before you move anything.
-- **Your own bed.** Banfield lists an orthopedic bed with a low profile, washable cover and non-slip bottom. [[2]](https://www.banfield.com/Senior-hub/care-for-older-pets/senior-proof-your-home) A familiar bed also keeps the host's furniture clean. Our picks are near the end.
+- **Short nails** help paw-pad traction, and boots, rubber-soled socks or toe grips can help; the same page cautions about toe grips for chewers. [[1]](https://dogagingproject.org/mobility-tips-and-tricks-for-senior-dogs)
+- **Ramps and steps for furniture or a car.** AKC says to match the height to the sofa, bed or trunk, check the weight limit and look for a non-slip surface. [[13]](https://www.akc.org/expert-advice/health/general-health/dog-stairs-and-ramps/) None of these pages says a ramp works for a full indoor flight, so for rental stairs rely on the photo check.
+- **Your own bed.** Banfield lists an orthopedic bed with a low profile, washable cover and non-slip bottom. [[2]](https://www.banfield.com/Senior-hub/care-for-older-pets/senior-proof-your-home) A familiar bed also keeps the host's furniture clean.
 
-Owners in forum threads (4 of 17 rental-related threads, three of them from Tripawds, a three-legged-dog forum, so not independent) mention rubber bath mats cut to fit the steps, traction strips and carpet laid on bare treads, which matches the vet sources. [[14]](https://tripawds.com/forums/hopping-around/looking-for-advice-on-wooden-steps/) [[15]](https://tripawds.com/forums/size-and-age-matters/senior-stair-struggles) [[16]](https://tripawds.com/forums/hopping-around/stairs-was-fine-and-then-it-changed) [[17]](https://forums.mst3k.com/t/older-dogs-and-stairs/20432)
+Owners on forums (mostly Tripawds, a three-legged-dog forum, so not independent) mention rubber bath mats cut to fit steps, traction strips and carpet on bare treads, which matches the vet sources. [[14]](https://tripawds.com/forums/hopping-around/looking-for-advice-on-wooden-steps/) [[15]](https://tripawds.com/forums/size-and-age-matters/senior-stair-struggles) [[17]](https://forums.mst3k.com/t/older-dogs-and-stairs/20432)
 
 ## What if your dog balks at the stairs when you arrive?
 
-Do not force it. Stop, work out a plan with the host, and call your vet if the refusal is new; hesitating at stairs is a listed sign of joint disease. [[3]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/osteoarthritis) [[4]](https://www.banfield.com/Senior-hub/common-health-issues-in-senior-pets/osteoarthritis-in-dogs-cats) On Tripawds, an owner who pulled a refusing dog up by the leash was warned it "could definitely turn him off" the stairs, which is one report but a good reason to do the photo check before you pay. [[16]](https://tripawds.com/forums/hopping-around/stairs-was-fine-and-then-it-changed) Get the cancellation terms in writing in case the stairs turn out to be a problem.
+Do not force it. Stop, work out a plan with the host, and call your vet if the refusal is new; hesitating at stairs is a listed sign of joint disease. [[3]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/osteoarthritis) [[4]](https://www.banfield.com/Senior-hub/common-health-issues-in-senior-pets/osteoarthritis-in-dogs-cats) One Tripawds owner who pulled a refusing dog up by the leash was warned it "could definitely turn him off" the stairs, a good reason to do the photo check before you pay. [[16]](https://tripawds.com/forums/hopping-around/stairs-was-fine-and-then-it-changed) Get the cancellation terms in writing in case the stairs turn out to be a problem.
 
 ## What if your dog leaks or has accidents?
 
-Tell your vet first, since leaking in an older dog can have causes a vet should check. Then plan the rental side.
+Tell your vet first, since leaking in an older dog can have causes a vet should check. For the rental, pack washable or waterproof bedding, pads and a sheet for furniture, and report and clean any accident right away. Hosts in forum threads mention keeping a cleaner and old towels on hand [[18]](https://airhostsforum.com/t/instant-book-and-pets/45138) [[21]](https://airhostsforum.com/t/pet-friendly-hosts-tips-for-setting-up-your-place/18610) or asking guests to report accidents [[22]](https://airhostsforum.com/t/are-these-reasonable-rules-for-dogs/24289) [[23]](https://www.mumsnet.com/talk/uk/3413892-Question-about-a-holiday-cottage), and owners bring their own bedding [[24]](https://airhostsforum.com/t/renting-to-dog-owners-your-thoughts/3126?page=2) [[19]](https://www.mumsnet.com/talk/the_doghouse/5090152-old-dog-support-thread?page=1) [[20]](https://www.mumsnet.com/talk/the_doghouse/1128953-geriatric-dog-peeing-in-house); these are views, not platform rules.
 
-In a small non-random sample of forum threads, hosts mention keeping a cleaner and old towels on hand or asking guests to report any accident, and owners bring their own bedding; these are views, not platform rules. [[18]](https://airhostsforum.com/t/instant-book-and-pets/45138) [[21]](https://airhostsforum.com/t/pet-friendly-hosts-tips-for-setting-up-your-place/18610) [[22]](https://airhostsforum.com/t/are-these-reasonable-rules-for-dogs/24289) [[23]](https://www.mumsnet.com/talk/uk/3413892-Question-about-a-holiday-cottage) [[24]](https://airhostsforum.com/t/renting-to-dog-owners-your-thoughts/3126?page=2) [[19]](https://www.mumsnet.com/talk/the_doghouse/5090152-old-dog-support-thread?page=1) [[20]](https://www.mumsnet.com/talk/the_doghouse/1128953-geriatric-dog-peeing-in-house) That lines up with Brindley Beach's page, where the pet fee does not cover unreported accidents. [[8]](https://www.brindleybeach.com/node/3691)
-
-What to do:
-
-- **Layers.** Pack washable or waterproof bedding, pads and a sheet for furniture. Our pick for pads is near the end.
-- **Report and clean right away.** Tell the host or manager what happened and what you did.
-
-If a host later asks for money, our [damage-charge guide](/guides/airbnb-pet-damage-charge-after-checkout) covers the clocks and what to reply. Whether a deposit or charge applies to an accident you reported and cleaned is a question for the host in writing; our [pet fees guide](/guides/how-vacation-rental-pet-fees-work) explains how pet fees work.
+Whether a deposit or charge applies to an accident you reported and cleaned is a question for the host in writing. If a host later asks for money, our [damage-charge guide](/guides/airbnb-pet-damage-charge-after-checkout) covers the clocks and what to reply.
 
 ## What else should you plan for the trip?
 
-Save an emergency vet near the rental and check its hours; ASPCA says to keep a local veterinary emergency hospital in your phone, and no source sets a distance, so pick the minutes you would accept. [[25]](https://www.aspca.org/news/traveling-your-pets-dos-and-donts) Save poison help too: ASPCA Animal Poison Control is 888-426-4435 [[26]](https://www.aspca.org/pet-care/animal-poison-control) and Pet Poison Helpline is 855-764-7661 [[27]](https://www.petpoisonhelpline.com/); a consultation fee may apply. Pack a vet-written medication list with extra in case the return is delayed, a [first-aid kit](/guides/dog-travel-first-aid-kit-guide), and tags (see the [lost-dog guide](/guides/if-your-dog-gets-loose-on-a-trip)); the [cabin packing list](/guides/dog-friendly-cabin-packing-list) covers the rest.
+- **Emergency vet:** save one near the rental and check its hours. The ASPCA says to keep a local veterinary emergency hospital in your phone; no source sets a distance, so pick the minutes you would accept. [[25]](https://www.aspca.org/news/traveling-your-pets-dos-and-donts)
+- **Poison help:** ASPCA Animal Poison Control is 888-426-4435 [[26]](https://www.aspca.org/pet-care/animal-poison-control) and Pet Poison Helpline is 855-764-7661 [[27]](https://www.petpoisonhelpline.com/); a consultation fee may apply.
+- **Medication and the drive:** a vet-written medication list with extra in case the return is delayed. No vet source we read gives a stop interval, so ask your vet, and never leave a pet in a parked car. [[25]](https://www.aspca.org/news/traveling-your-pets-dos-and-donts)
 
-For the drive, no vet source we read gives a stop interval, so ask your vet what your dog can manage, and never leave a pet in a parked car. [[25]](https://www.aspca.org/news/traveling-your-pets-dos-and-donts) Restraints are in our [car safety guide](/guides/dog-car-safety-harness-and-crate-guide).
+The [first-aid kit guide](/guides/dog-travel-first-aid-kit-guide), [car safety guide](/guides/dog-car-safety-harness-and-crate-guide) and [cabin packing list](/guides/dog-friendly-cabin-packing-list) cover the rest.
 
 ## When should you call your vet?
 
@@ -347,35 +319,23 @@ Call before booking for any sign below, and again if it appears on the trip. Thi
 
 - **Joint signs.** Banfield and Cornell list stiffness, trouble rising, hesitation on stairs and difficulty getting onto couches, and Banfield says not to dismiss them as just old age. [[3]](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/osteoarthritis) [[4]](https://www.banfield.com/Senior-hub/common-health-issues-in-senior-pets/osteoarthritis-in-dogs-cats)
 - **Behavior changes.** ASPCA lists confusion and changes in sleep, activity or house training and says to report all changes to your vet. [[28]](https://www.aspca.org/pet-care/dog-care/common-dog-behavior-issues/behavior-problems-older-dogs) AKC says a full evaluation by your vet is imperative. [[29]](https://www.akc.org/expert-advice/health/recognizing-behavioral-changes-in-senior-dogs/)
-- **Dementia is not the only explanation.** Dog Aging Project says pain, dental disease, sensory loss and other illness can cause behavior changes. [[30]](https://dogagingproject.org/understanding-behavioral-changes-in-senior-dogs/)
-- **Routine.** The same page says older dogs have a much tougher time with inconsistent routines; keep feeding, walks and bedtime close to normal. [[30]](https://dogagingproject.org/understanding-behavioral-changes-in-senior-dogs/)
+- **Dementia is not the only explanation.** Dog Aging Project says pain, dental disease, sensory loss and other illness can cause behavior changes, and that older dogs have a much tougher time with inconsistent routines, so keep feeding, walks and bedtime close to normal. [[30]](https://dogagingproject.org/understanding-behavioral-changes-in-senior-dogs/)
 
 ## What should you buy for a senior dog's rental stay?
 
 Nothing here is needed to book. It is for after your vet and the host have said yes, and each item answers one problem from the sections above. If your dog does not have that problem, skip the item.
 
-**For a dog that may leak: washable pads.** A pad under the bed or sofa throw turns a night-time accident into a load of laundry, and a backing that grips keeps the pad from sliding on a hard floor. The Pet Parents Pawtect Pads are machine washable with a waterproof layer and a floor-gripping backing, sold two to a pack in four sizes from 18 x 24 in to 41 x 41 in. [[31]](https://petparentsbrand.com/products/washable-puppy-pads) The listing we link is the smallest size (18 x 24 in), so measure the bed first and pick a larger size on the maker's page if it needs one. They are a rental-side fix, not a treatment: if leaking is new, call your vet first.
+**For a dog that may leak: washable pads.** A pad under the bed or sofa throw turns a night-time accident into a load of laundry. The Pet Parents Pawtect Pads are machine washable with a waterproof layer and a floor-gripping backing, sold two to a pack in four sizes from 18 x 24 in to 41 x 41 in. [[31]](https://petparentsbrand.com/products/washable-puppy-pads) The listing we link is the smallest size, so measure the bed first and pick a larger one on the maker's page if needed. They are a rental-side fix, not a treatment: if leaking is new, call your vet first.
 
 {{pick:pet-parents-pawtect-pads|For a dog that may leak|The maker lists machine-washable pads with a waterproof layer and a floor-gripping backing, two to a pack, in four sizes from 18 x 24 in to 41 x 41 in.|https://petparentsbrand.com/products/washable-puppy-pads}}
 
-**For a bed that comes with you: a roll-up travel bed.** Banfield's list for a senior includes a washable cover and a non-slip bottom, and a familiar bed gives a stiff dog a place to settle on the host's floor. The Kurgo Loft Wander has a water-resistant ripstop top and a waterproof, non-slip bottom, rolls up with a handle for toting, and can be washed by hand or on a gentle machine cycle. Medium opens to 27 x 36 in and Large to 36 x 48 in, and the page lists no weight limit, so measure your dog lying down; the listing we link is the Large. [[32]](https://www.kurgo.com/p/loft-wander-dog-bed/K01560) It is a travel bed with fiber fill, not an orthopedic bed, so if your vet has told you to use one, bring that instead. It suits a dog with no bed that rolls or folds for the car.
+**For a bed that comes with you: a roll-up travel bed.** Banfield's list for a senior includes a washable cover and a non-slip bottom, and a familiar bed gives a stiff dog a place to settle on the host's floor. The Kurgo Loft Wander has a water-resistant ripstop top and a waterproof, non-slip bottom, rolls up with a handle, and can be washed by hand or on a gentle machine cycle. Medium opens to 27 x 36 in and Large to 36 x 48 in, and the page lists no weight limit, so measure your dog lying down; the listing we link is the Large. [[32]](https://www.kurgo.com/p/loft-wander-dog-bed/K01560) It is a travel bed with fiber fill, not an orthopedic bed, so if your vet has told you to use one, bring that instead.
 
 {{pick:kurgo-loft-wander-dog-bed|For a portable bed|The maker lists a roll-up bed with a water-resistant top, waterproof bottom and non-slip underside, in Medium (27 x 36 in) and Large (36 x 48 in) with no weight limit stated.|https://www.kurgo.com/p/loft-wander-dog-bed/K01560}}
 
-We did not pick a rug: measure the route first, since the host may not allow one.
-
-If the car is your dog's hurdle (hesitating at the tailgate or a high sill), a ramp or steps may help; our [ramp or steps guide](/guides/dog-ramp-or-steps-for-the-car-and-cabin) compares the options. Neither helps with rental stairs.
-
-### What to buy first
-
-1. **Nothing, until the vet and the host have answered.**
-2. **Washable pads**, if your dog may leak.
-3. **A portable bed**, if your dog has none that travels.
-
-For a big senior, read the [large-dog rental guide](/guides/vacation-rentals-that-welcome-large-dogs) too. All products with their specs are in [travel gear](/gear). Before you pay, run through the [trip checklist](/tools/checklist) and the [pet-friendly rental checklist](/guides/pet-friendly-vacation-rental-checklist).
+We did not pick a rug: measure the route first, since the host may not allow one. If the car is the hurdle (hesitating at the tailgate or a high sill), our [ramp or steps guide](/guides/dog-ramp-or-steps-for-the-car-and-cabin) compares options; neither helps with rental stairs. Buy nothing until the vet and the host have answered. All products with their specs are in [travel gear](/gear), and the [trip checklist](/tools/checklist) is worth a run before you pay.
 
 ## How sure we are
 
-- **Confirmed:** a vet, platform, manager or maker page we cite says it (joint signs, floor and ramp advice, the manager table, Airbnb's photo standard, product specs). The sources block also lists 11 forum threads, used only as labelled samples; the text marks every forum item as such.
-- **What most people report:** the forum findings above, each with its count, from a small non-random sample of rental-related threads that leans toward host forums and includes UK and three-legged-dog communities.
-- **Unknown, so ask:** whether you may lay a rug or ramp, how an accident is charged, whether the host wants notice of incontinence, whether Airbnb's step-free features suit a dog (ask for a photo of the route), how far an emergency vet may be, and your stop interval (ask your vet). Quotes and rules are as read on 2026-11-18.
+- **Confirmed:** a vet, platform, manager or maker page we cite says it. The sources block also lists forum threads, used only as labelled samples from a small non-random set that leans toward host forums and UK and three-legged-dog communities.
+- **Unknown, so ask:** whether you may lay a rug or ramp, how an accident is charged, whether Airbnb's step-free features suit a dog (ask for a photo of the route), and your stop interval (ask your vet). Quotes and rules are as read on 2026-11-18.

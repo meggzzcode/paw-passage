@@ -6,7 +6,7 @@ export const guide: Guide = {
   seoTitle: "Pet-Friendly Vacation Rental Checklist",
   seoDescription:
     "A pet-friendly vacation rental checklist for dog owners: eight checks to clear before you pay, from written approval and total price to cancellation terms.",
-  dek: "A practical booking audit for the dogs you have, the trip you want, and the rules you can actually follow.",
+  dek: "A pets-welcome badge says little about fees, rules or approval. These eight checks tell you whether a listing works for your dogs before you pay.",
   category: "Checklist",
   states: [],
   status: "published",
@@ -15,7 +15,7 @@ export const guide: Guide = {
   lastReviewed: "2026-11-24",
   readingMinutes: 7,
   heroImage: "guide-rental-checklist",
-  body: `A pet-friendly vacation rental checklist comes down to eight checks: written approval for your exact dogs, the complete price, house rules you can follow, a layout and yard that suit your dog, cancellation terms, legal walks and an emergency vet. Clear all eight for the exact listing before you pay anything nonrefundable, because a "pets welcome" badge does not cover a pet fee, a cleaning charge or a no-dogs-alone rule that the photos never mentioned. Work top to bottom, and stop at the first line you cannot answer.
+  body: `Most booking surprises are a pet fee, a cleaning charge or a no-dogs-alone rule the photos never mentioned. Clear the eight checks below for the exact listing before you pay anything nonrefundable, work top to bottom, and stop at the first line you cannot answer.
 
 Tick it off on your phone in the [interactive checklist](/tools/checklist); the [pet fees guide](/guides/how-vacation-rental-pet-fees-work) shows how the total is built.
 
@@ -32,7 +32,7 @@ Do not commit nonrefundable money until you can answer all eight:
 7. **Walks.** Are the beaches, trails and parks we planned open to dogs?
 8. **Vet.** Where is the nearest after-hours emergency hospital?
 
-Everything below is detail for these eight. The first box in each section is the one that can stop a booking. An unanswered preference can wait. An unanswered deal-breaker cannot.
+An unanswered preference can wait. An unanswered deal-breaker cannot.
 
 ## Permission (check 1)
 
@@ -41,7 +41,7 @@ Check the exact unit, not the manager's portfolio. Vrbo's house-rules guidance l
 - [ ] Count, weight (per dog or combined), breed and age limits written down.
 - [ ] Approval received in the booking channel, naming each dog and the dates.
 
-Weight limits are real and they differ a lot. Across the 38 managers in our convenience sample (public pages read 2026-11-18), six state one, from 35 to 65 pounds. Our [large-dog guide](/guides/vacation-rentals-that-welcome-large-dogs) names them, and the [two-dog guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental) covers counts and combined weight. For a quick yes or no on your own dog, try the [acceptance tool](/tools/will-my-dog-be-accepted). Ask about breed rules in writing too. The two managers that state no weight limit are covered in [rentals with no dog weight limit](/guides/vacation-rentals-with-no-dog-weight-limit), and puppies face their own age questions in our [puppy rental guide](/guides/puppy-at-a-vacation-rental).
+Weight limits are real and they differ a lot. Across the 38 managers in our convenience sample (public pages read 2026-11-18), six state one, from 35 to 65 pounds. Our [large-dog guide](/guides/vacation-rentals-that-welcome-large-dogs) names them, and the [two-dog guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental) covers counts and combined weight. For a quick yes or no on your own dog, try the [acceptance tool](/tools/will-my-dog-be-accepted); breed rules are worth confirming in writing too. Puppies face their own age questions in our [puppy rental guide](/guides/puppy-at-a-vacation-rental).
 
 ## Price (check 2)
 
@@ -54,18 +54,18 @@ Enter your real dates, guest count and pet count before comparing, and save the 
 - [ ] Taxes and platform charges: the final payable amount.
 - [ ] Any request to pay a pet charge off-platform goes to platform support first. [[3]](https://www.airbnb.com/help/article/2799)
 
-The same-looking number can bill very differently. As of 2026-11-18, Big Bear Vacations lists $40 per night per pet, while AMI Locals lists $250 per stay. For a 7-night stay with two dogs that is $560 versus $250, using the managers' own stated bases. Check the manager's page again before you book, as fees change. Vrbo notes that property settings and pending claims can affect a refundable deposit's return. [[4]](https://help.vrbo.com/articles/Does-HomeAway-Payments-automatically-issue-refunds-to-travelers) The [damage-charge guide](/guides/airbnb-pet-damage-charge-after-checkout) covers checkout, and [what a dog really costs on a rental trip](/guides/what-a-dog-really-costs-on-a-vacation-rental) covers the wider picture. Choosing a platform? Pet-fee terms differ by platform; see [how pet fees actually work](/guides/how-vacation-rental-pet-fees-work).
+The same-looking number can bill very differently. As of 2026-11-18, Big Bear Vacations lists $40 per night per pet, while AMI Locals lists $250 per stay. For a 7-night stay with two dogs that is $560 versus $250, using the managers' own stated bases. Vrbo notes that property settings and pending claims can affect a refundable deposit's return. [[4]](https://help.vrbo.com/articles/Does-HomeAway-Payments-automatically-issue-refunds-to-travelers) The [damage-charge guide](/guides/airbnb-pet-damage-charge-after-checkout) covers checkout, and [what a dog really costs on a rental trip](/guides/what-a-dog-really-costs-on-a-vacation-rental) covers the wider picture.
 
 ## House rules, on a real day (check 3)
 
-Walk through breakfast, the main activity, dinner, bedtime and the late-night toilet break.
+Walk through breakfast, the main activity, dinner, bedtime and the late-night toilet break:
 
 - [ ] Sofas, chairs, beds and bedrooms: allowed, covered, or off limits?
 - [ ] Crate: required only when alone, or always? If provided, what size?
 - [ ] Unattended time: permitted, for how long, and does a short restaurant pickup count?
 - [ ] A sitter or day care lined up before you book nonrefundable activities.
 
-A throw does not override a furniture rule, and "crate provided" does not mean your dog fits. The reasoning is in [can you leave a dog alone in a vacation rental](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental).
+A throw does not override a furniture rule, and "crate provided" does not mean your dog fits. See [can you leave a dog alone in a vacation rental](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental).
 
 ## The physical stay (checks 4 and 5)
 
@@ -102,24 +102,19 @@ A clear approval names the dogs and the stay; "we're pet-friendly" is not one. M
 
 ## What to buy for the lines you flagged
 
-Now the booking is settled and the rules are in writing, some lines turn into a purchase. Most stays need none of this. Buy only for a line you flagged, and skip anything the host already provides. More options sit in our [pens, gates and crates picks](/gear/pens-and-gates).
+Most stays need none of this. Buy only for a line you flagged, once the rules are in writing, and skip anything the host already provides. More options sit in our [pens, gates and crates picks](/gear/pens-and-gates).
 
-**A rule that says crate when alone.** "Crate provided" does not mean your dog fits, and a crate your dog already knows removes the guess. The MidWest iCrate comes in seven sizes from 18 to 48 in, with a divider panel, a removable leak-proof pan and rubber feet that protect rental floors, and the maker says it folds flat. [[8]](https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/) It is for a dog that is already crate-trained and faces a crate rule; skip it if the host provides a crate your dog fits. The page gives no folded dimensions or weight, so check your trunk.
+**A rule that says crate when alone.** "Crate provided" does not mean your dog fits, and a crate your dog already knows removes the guess. The MidWest iCrate comes in seven sizes from 18 to 48 in, with a divider panel, a removable leak-proof pan and rubber feet that protect rental floors, and the maker says it folds flat. [[8]](https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/) It is for a dog that is already crate-trained; the page gives no folded dimensions or weight, so check your trunk.
 
 {{pick:midwest-icrate-dog-crate|For a crate-when-alone rule|The maker lists sizes 18 to 48 in, an included divider panel, a removable pan and a flat fold.|https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/}}
 
-**A rule that keeps dogs off the furniture.** Your dog needs somewhere obvious to lie, and a bed that comes with you beats guessing what the host leaves out. The Kurgo Loft Wander is a roll-up bed in Medium (27 x 36 in) and Large (36 x 48 in) with a water-resistant top and a waterproof, nonslip bottom, and it has a carry handle. [[9]](https://www.kurgo.com/p/loft-wander-dog-bed/K01560) The maker lists no weight, so pick the size from your dog's lying-down length. The button opens the Large (36 x 48 in); the Medium is the smaller size on the same maker page, so check which fits your dog. Skip it if furniture is allowed or the host provides dog beds.
+**A rule that keeps dogs off the furniture.** Your dog needs somewhere obvious to lie, and a bed that comes with you beats guessing what the host leaves out. The Kurgo Loft Wander is a roll-up bed in Medium (27 x 36 in) and Large (36 x 48 in) with a water-resistant top, a waterproof nonslip bottom and a carry handle. [[9]](https://www.kurgo.com/p/loft-wander-dog-bed/K01560) The maker lists no weight, so pick the size from your dog's lying-down length; the button opens the Large.
 
 {{pick:kurgo-loft-wander-dog-bed|For a no-dogs-on-furniture rule|The maker lists a water-resistant top, a waterproof nonslip bottom, a carry handle and washable care.|https://www.kurgo.com/p/loft-wander-dog-bed/K01560}}
 
 **A closed room or a deck with no fence.** A pressure-mounted gate such as the North States MyPet Universal Petgate (26 in high, 26 to 42 in openings) closes a bedroom or kitchen doorway without screws, but it will not stop a dog that can jump it and the maker says never to use it at the top of a stairway on tension alone. [[11]](https://northstatesind.com/north-states-mypet-universal-petgate/) For a deck or lawn with no fence, a portable pen such as the MidWest Exercise Pen with Door works only with the host's written permission and with you outside too; the maker warns that a pet not trained to be restricted may try to escape. [[10]](https://www.midwesthomes4pets.com/wp-content/uploads/ExPen_550DR_Eng.pdf) Our [pen and playpen guide](/guides/portable-dog-fence-and-playpen-guide-for-rentals) compares them with the alternatives.
 
-## What to buy first
-
-1. Settle the checklist before you spend anything: approval and cancellation come first.
-2. The item that matches your most restrictive rule: the crate if the rule is crate when alone, the bed if furniture is off limits, a gate if a room is closed to dogs.
-3. A pen last, and only with the host's permission in writing.
-4. If two listings tie, choose the one whose approval names your dogs in writing and whose cancellation deadline is later; do not trade those for a better photo.
+If two listings tie, choose the one whose approval names your dogs in writing and whose cancellation deadline is later; do not trade those for a better photo.
 
 ## Before you leave
 
@@ -129,9 +124,7 @@ Now the booking is settled and the rules are in writing, some lines turn into a 
 
 ## How sure we are
 
-- **Confirmed by a source we cite:** the platform, DOJ, AVMA and manager statements above, each from its cited page.
-- **What most people report:** no survey here; the manager figures come from 38 managers, a convenience sample read 2026-11-18.
-- **Unknown, so ask:** your exact unit's rules, fees and insurer conditions, in writing.
+The platform, DOJ, AVMA and manager statements above come from the pages cited. The manager figures are a convenience sample of 38 managers read 2026-11-18, not a survey. Your exact unit's rules, fees and insurer conditions are unknown until the host confirms them in writing.
 
 Booked somewhere that says no pets? Ask the manager before you travel rather than bringing the dog unapproved. Next step: save your answers in the [checklist tool](/tools/checklist).
 `,
@@ -172,7 +165,6 @@ Booked somewhere that says no pets? Ask the manager before you travel rather tha
     "vacation-rentals-that-welcome-large-dogs",
     "airbnb-pet-damage-charge-after-checkout",
     "can-you-leave-a-dog-alone-in-a-vacation-rental",
-    "vacation-rentals-with-no-dog-weight-limit",
     "puppy-at-a-vacation-rental",
   ],
   relatedProducts: ["midwest-icrate-dog-crate", "kurgo-loft-wander-dog-bed"],

@@ -6,7 +6,8 @@ export const Route = createFileRoute("/terms")({
   head: () =>
     pageHead({
       title: "Terms of use",
-      description: "The terms for using Paws & Passage's travel guides, tools and stay listings.",
+      description:
+        "The terms for using Paws & Passage's travel guides, tools and stay listings: information not a guarantee, bookings, affiliate links and liability.",
       path: "/terms",
     }),
   component: () => (

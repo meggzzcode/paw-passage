@@ -10,11 +10,17 @@ import { pageHead, breadcrumbLd, jsonLd, townIsIndexable } from "@/lib/seo";
 import { hasStays } from "@/lib/launch";
 import { Stay22Map } from "@/components/site/Stay22Map";
 
-/** Meta descriptions stay within 155 characters: use the full text if it fits, else the blurb, else the blurb cut at a word. */
-function fitDescription(full: string, short: string) {
-  if (full.length <= 155) return full;
-  if (short.length <= 155) return short;
-  return `${short.slice(0, 152).replace(/\s+\S*$/, "")}...`;
+/** Meta descriptions run 120-155 characters: the first of these candidates that fits, else the blurb cut at a word. */
+function fitDescription(blurb: string, name: string) {
+  const candidates = [
+    `${blurb} What to check before booking a dog-friendly stay in ${name}.`,
+    `${blurb} Dog rules and what to check before you book.`,
+    `${blurb} Dog rules to check first.`,
+  ];
+  const fit = candidates.find((c) => c.length >= 120 && c.length <= 155);
+  if (fit) return fit;
+  if (blurb.length <= 155) return blurb;
+  return `${blurb.slice(0, 152).replace(/\s+\S*$/, "")}...`;
 }
 
 export const Route = createFileRoute("/destinations/$state/$town")({
@@ -32,10 +38,7 @@ export const Route = createFileRoute("/destinations/$state/$town")({
     return {
       ...pageHead({
         title: `Dog-friendly ${t.name}: planning notes`,
-        description: fitDescription(
-          `${t.blurb} What to check before booking a dog-friendly stay in ${t.name}.`,
-          t.blurb,
-        ),
+        description: fitDescription(t.blurb, t.name),
         path,
         noindex: !townIsIndexable(params.state, t.slug),
       }),

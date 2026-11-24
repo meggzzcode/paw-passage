@@ -7,7 +7,7 @@ export const Route = createFileRoute("/corrections")({
     pageHead({
       title: "Corrections and updates",
       description:
-        "A log of notable corrections and changes to Paws & Passage guides and pages, with dates.",
+        "A dated log of notable corrections and changes to Paws & Passage guides, gear pages and tools, plus how to report an error you have spotted.",
       path: "/corrections",
     }),
   component: () => (

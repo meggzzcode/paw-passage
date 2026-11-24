@@ -8,7 +8,7 @@ export const Route = createFileRoute("/contact")({
     pageHead({
       title: "Contact Paws & Passage",
       description:
-        "Get in touch with Paws & Passage about corrections, partnerships or listing a dog-friendly property.",
+        "Get in touch with Paws & Passage about a correction, a partnership or listing a dog-friendly property. Tell us what is out of date and where you saw it.",
       path: "/contact",
     }),
   component: () => (

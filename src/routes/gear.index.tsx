@@ -50,7 +50,11 @@ function GearHub() {
   const cats = liveCategories();
   const trips = liveTrips();
   const selected = trip ? resolveTripCollection(trip) : undefined;
-  const featured = featuredGear();
+  // On a trip view the collection already shows its products: the featured section never repeats them,
+  // and is hidden when fewer than three would remain.
+  const inTrip = new Set(selected?.groups.flatMap((g) => g.products.map((p) => p.id)) ?? []);
+  const remaining = featuredGear().filter((f) => !inTrip.has(f.product.id));
+  const featured = selected && remaining.length < 3 ? [] : remaining;
   const dogs = liveShortcuts(shopByDog);
   const guides = planGuides();
   const shown = [

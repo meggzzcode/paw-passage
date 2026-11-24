@@ -9,6 +9,9 @@ export interface GearCategory {
   name: string;
   /** One line for tiles. */
   tagline: string;
+  /** Page title (60 characters or fewer) and meta description (120-155) for the category page. */
+  metaTitle: string;
+  metaDescription: string;
   /** Two sentences at the top of the category page. */
   intro: string;
   /** Exactly three short bullets: who it suits, what to check before buying, what it does not do. */
@@ -29,6 +32,9 @@ export const gearCategories: GearCategory[] = [
     slug: "car-safety",
     name: "Car safety and restraints",
     tagline: "Harnesses, crash-tested crates, booster and barriers.",
+    metaTitle: "Dog Car Safety Gear: Crates, Harness Advice and Barriers",
+    metaDescription:
+      "Dog car safety gear for road trips: harnesses, crash-tested crates, a booster and barriers, with what each maker says and what we could not confirm.",
     intro:
       "Keep your dog secure and settled for the drive, with harnesses, crates, a booster seat and a barrier. Each pick separates what the maker says about crash testing from what a named independent tester says, if one is cited.",
     safetyNote:
@@ -45,6 +51,9 @@ export const gearCategories: GearCategory[] = [
     slug: "car-interior",
     name: "Seat covers and cargo liners",
     tagline: "Keep the seats and cargo area clean.",
+    metaTitle: "Dog Seat Covers and Cargo Liners for the Car",
+    metaDescription:
+      "Seat covers, bench hammocks and cargo liners that keep dog hair, mud and water off your car, with the sizes each maker lists and what they do not do.",
     intro:
       "Keep dog hair, mud and water off your car with a bench-seat hammock, a seat cover or a cargo cover. Sizes are the dimensions each maker lists, so measure your seat or cargo area first.",
     howToChoose: [
@@ -58,6 +67,9 @@ export const gearCategories: GearCategory[] = [
     slug: "ramps-and-steps",
     name: "Ramps and steps",
     tagline: "Getting a dog into the car or up to the cabin.",
+    metaTitle: "Dog Ramps and Steps for the Car and Cabin",
+    metaDescription:
+      "Dog ramps and steps for the car or a cabin door, with the lengths, step heights and weight limits makers list and what we could not confirm.",
     intro:
       "Help a dog get into the car or up to the cabin door without jumping. The makers do not sell these as senior or mobility products, so ask your vet whether a ramp or steps suit an older dog.",
     safetyNote:
@@ -74,6 +86,9 @@ export const gearCategories: GearCategory[] = [
     slug: "feeding-and-hydration",
     name: "Bowls, bottles and food storage",
     tagline: "Eating and drinking on the road and in the rental.",
+    metaTitle: "Dog Travel Bowls, Bottles and Food Storage",
+    metaDescription:
+      "Collapsible dog bowls, water bottles and food containers for the car, trail and rental, with the capacities makers list and what we could not confirm.",
     intro:
       "Keep your dog fed and watered on the road and in the rental, with collapsible bowls, bottles and food containers. Capacities are the sizes the maker lists, and some pages list none.",
     howToChoose: [
@@ -87,6 +102,9 @@ export const gearCategories: GearCategory[] = [
     slug: "pens-and-gates",
     name: "Pens, fences and gates",
     tagline: "Contain a dog in a rental with no fenced yard.",
+    metaTitle: "Dog Pens, Fences and Gates for Rentals",
+    metaDescription:
+      "Exercise pens, yard fences, doorway gates and folding crates for a rental with no fenced yard, with what each maker states and what we could not confirm.",
     intro:
       "Give your dog a safe space in a rental with no fenced yard, with exercise pens, a yard fence, a doorway gate or a folding crate. Check the rental's own rules first, since some hosts limit what you can set up.",
     safetyNote:
@@ -107,6 +125,9 @@ export const gearCategories: GearCategory[] = [
     slug: "comfort-and-cooling",
     name: "Beds, comfort and cooling",
     tagline: "A place to settle, and ways to stay cool.",
+    metaTitle: "Dog Beds, Cooling Pads and Comfort Gear for Travel",
+    metaDescription:
+      "Roll-up beds, cooling pads, an evaporative vest and a stuffable chew toy for dogs away from home, with the sizes and warnings makers list on their pages.",
     intro:
       "Help your dog settle and stay comfortable away from home, with a roll-up bed, a cooling pad, an evaporative cooling vest and a stuffable chew toy. Dimensions and materials come from the maker's page.",
     howToChoose: [
@@ -120,6 +141,9 @@ export const gearCategories: GearCategory[] = [
     slug: "water-and-beach",
     name: "Life jackets and water safety",
     tagline: "For lakes, rivers and beaches.",
+    metaTitle: "Dog Life Jackets and Water Safety Gear",
+    metaDescription:
+      "Dog life jackets and water gear for lakes, rivers and beaches, with the sizing, buoyancy and warnings each maker states and what we could not confirm.",
     intro:
       "Give your dog a flotation aid for the boat, the lake or the beach. Buoyancy wording is the maker's own, and none of these pages names an independent test.",
     howToChoose: [
@@ -136,6 +160,9 @@ export const gearCategories: GearCategory[] = [
     slug: "trail-and-hiking",
     name: "Trail and hiking gear",
     tagline: "Harness, boots and leash for the trail.",
+    metaTitle: "Dog Trail and Hiking Gear: Harnesses, Boots, Leashes",
+    metaDescription:
+      "Dog hiking gear for the trail: harnesses, boots, leashes and trail supplies, with the sizes and specs each maker lists and what we could not confirm.",
     intro:
       "Get ready for trails and rough ground with a harness, boots and a rope leash made for time outdoors. Sizing is by girth or paw width, so measure your dog and read the maker's size chart.",
     howToChoose: [
@@ -149,6 +176,9 @@ export const gearCategories: GearCategory[] = [
     slug: "cold-weather",
     name: "Cold-weather gear",
     tagline: "Fleece, vest and snow boots.",
+    metaTitle: "Dog Cold-Weather Gear: Fleece, Vests and Snow Boots",
+    metaDescription:
+      "Fleece, vests and snow boots for dogs on winter cabin trips, with the sizing each maker lists and what we could not confirm about warmth or fit.",
     intro:
       "Keep your dog warm for a winter trip with a fleece, a vest with a built-in harness and snow boots. Warmth and traction wording is the maker's own, and none of these pages states a temperature rating.",
     howToChoose: [
@@ -165,6 +195,9 @@ export const gearCategories: GearCategory[] = [
     slug: "safety-id-first-aid",
     name: "ID, GPS and first aid",
     tagline: "Find a lost dog and handle a small injury.",
+    metaTitle: "Dog ID Tags, GPS Trackers and First Aid Kits",
+    metaDescription:
+      "ID tags, GPS trackers and first aid kits for travelling with a dog, with what each maker states, any membership involved and what we could not confirm.",
     intro:
       "Be ready if your dog gets loose or hurt on a trip, with GPS trackers, a clip-on safety light and a small first aid kit. Subscription and coverage wording is the maker's own, and some pages state none.",
     howToChoose: [
@@ -183,6 +216,9 @@ export const gearCategories: GearCategory[] = [
     slug: "rental-cleanup",
     name: "Rental cleanup and protection",
     tagline: "Towels, mats, pads and wipes.",
+    metaTitle: "Dog Towels, Mats and Cleanup Gear for Rentals",
+    metaDescription:
+      "Towels, doormats, pads and wipes for keeping a rental clean after a dog, with the sizes and care notes each maker lists and what we could not confirm.",
     intro:
       "Keep floors and furniture clean in a rental with a drying towel, a doormat, washable pads and wipes. Check the host's rules, since some do not allow dogs on furniture, with or without a cover.",
     howToChoose: [

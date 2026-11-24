@@ -30,8 +30,8 @@ export const Route = createFileRoute("/gear/$category")({
     const c = loaderData ? getGearCategory(loaderData.slug) : undefined;
     if (!c) return { meta: [{ title: "Page not found" }, { name: "robots", content: "noindex" }] };
     const h = pageHead({
-      title: `${c.name} for Dogs`,
-      description: `Researched picks for ${c.name.toLowerCase()}: the maker's own specs, sources and what we could not confirm.`,
+      title: c.metaTitle,
+      description: c.metaDescription,
       path: `/gear/${params.category}`,
       noindex: !categoryIsLive(c.slug),
     });

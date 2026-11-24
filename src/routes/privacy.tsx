@@ -7,7 +7,7 @@ export const Route = createFileRoute("/privacy")({
     pageHead({
       title: "Privacy policy",
       description:
-        "What information Paws & Passage collects, how analytics works, and your choices.",
+        "What information Paws & Passage collects, how analytics and cookies work, how affiliate links are handled, and the choices you have over your data.",
       path: "/privacy",
     }),
   component: () => (

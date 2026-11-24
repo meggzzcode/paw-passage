@@ -8,7 +8,7 @@ export const Route = createFileRoute("/tools/")({
     pageHead({
       title: "Free dog travel planning tools",
       description:
-        "A pet policy checker, a dog packing list and a printable before-you-book checklist for renting with a dog.",
+        "Free dog travel tools: a pet policy checker for rental managers, a dog packing list and a printable before-you-book checklist for renting with a dog.",
       path: "/tools",
     }),
   component: ToolsPage,

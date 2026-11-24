@@ -26,3 +26,9 @@
 - Fireworks section cut to the Cornell advice plus the NYE guide link; removed the now-uncited Utrecht, Petco and Petbook sources and renumbered citations (20 sources, all cited).
 - Removed battery restatements from the three tracker paragraphs (table keeps them); "buy first/start with" wording trimmed so it appears only in the final list; "tested" changed to "included in a round-up" for Tree Line.
 - For the lead: spec-card icons remain a template item. readingMinutes left at 14.
+
+## Round 4
+- Removed the invented "door was open for four seconds" scene; the first paragraph now reads "If your dog ran away or got loose on vacation, search close to where it was last seen right now, then call your microchip registry and your host..."
+- "How sure we are" table cut from seven rows to three (tracker coverage, registry, agency); the unknowns that were dropped are folded into one sentence. readingMinutes 13, lastReviewed 2026-11-24.
+- "the one to buy first" in item 3 now "the simplest fit"; meta description no longer says "buy first" (the phrase appears once, in the heading).
+- For the lead: no ID tag product exists in the catalog (owner question); the dek-to-steps layout gap is a template matter.

@@ -1,7 +1,7 @@
 ---
 title: "Dog Got Loose on Vacation: The First Hour, ID and Prevention"
 seoTitle: "Dog Got Loose on Vacation: First Hour Plan"
-seoDescription: "Dog got loose on vacation? Follow the first-hour steps, see what a tag, microchip and GPS tracker each do, and learn what to buy first."
+seoDescription: "Dog got loose on vacation? Follow the first-hour steps, see what a tag, microchip and GPS tracker each do, and learn what to buy."
 dek: If your dog bolts, search near where it was last seen, then call your chip registry and host. Then fix the tag, the chip record and a tracker so it does not happen again.
 category: Planning
 states: []
@@ -11,7 +11,7 @@ approvedOn: 2026-11-18
 author: Paws & Passage Editors
 publishedOn: 2026-11-18
 lastReviewed: 2026-11-24
-readingMinutes: 14
+readingMinutes: 13
 heroImage: guide-loose-dog
 faqs:
   - q: What should I do first if my dog runs off in a place I do not know?
@@ -190,7 +190,7 @@ research:
 
 ## If your dog just bolted, start here
 
-The door was open for four seconds, and now your dog is gone, in a town whose street names you learned this morning. If your dog ran away on vacation and you searched for a lost dog on a trip, search close to where it was last seen right now, then call your microchip registry and your host. Do the steps in order; if you only have time for three, those are steps 1, 5 and 6 below.
+If your dog ran away or got loose on vacation, search close to where it was last seen right now, then call your microchip registry and your host. Do the steps in order; if you only have time for three, those are steps 1, 5 and 6 below.
 
 1. **Search right now, close to where the dog was last seen.** AKC Reunite says to start immediately within a 2 mile radius, before the pet has time to roam too far. [[1]](https://www.akcreunite.org/lostpettips/)
 2. **Get people and something familiar.** Bring a favorite treat or toy and call the dog's name. [[1]](https://www.akcreunite.org/lostpettips/)
@@ -333,7 +333,7 @@ Fireworks were reported behind two of the stories above and suspected in a third
 
 1. **A tag with a number you will answer.** It is the one layer a finder can use without a scanner. The catalog has no tag product, so this is a cheap local purchase with no link here; check the ring and the lettering before every trip.
 2. **No purchase, one phone call:** confirm the chip registry record is current with your phone, email and an alternate contact.
-3. **A tracker, if you want a search tool.** If your dog is above 8.8 lbs and already wears a collar you like, the Tractive DOG 6 is the one to buy first. If you would rather swap the collar and want the longest listed battery, look at the Fi Series 3+. Pick the Petcube only for its size, with the accuracy caveat above. Whichever you choose, check the plan and coverage, and set it up on every adult's phone before you leave.
+3. **A tracker, if you want a search tool.** If your dog is above 8.8 lbs and already wears a collar you like, the Tractive DOG 6 is the simplest fit. If you would rather swap the collar and want the longest listed battery, look at the Fi Series 3+. Pick the Petcube only for its size, with the accuracy caveat above. Whichever you choose, check the plan and coverage, and set it up on every adult's phone before you leave.
 4. **A clip-on light** if your trips involve dusk arrivals or night toilet walks, and your dog's collar has a light loop.
 5. **Something to contain the dog at the rental.** A pen is a supervised tool, not a fence; see our [portable pen and playpen guide](/guides/portable-dog-fence-and-playpen-guide-for-rentals) and the [secure fenced yard guide](/guides/vacation-rental-secure-fenced-yard).
 
@@ -343,14 +343,10 @@ Next step: run through the [trip checklist](/tools/checklist) and add the lost-d
 
 - **Confirmed by a source we cite:** the first-hour steps, how a chip and registry work, and the tracker specs and terms.
 - **Too few to call a pattern:** of the three news items, two recoveries both began with a stranger who had seen a phone number on a notice or poster and called; the third has no reported outcome. That is a small, non-random set, not a rate, so we give it no certainty level above unknown.
-- **Unknown:** the rows below, each with who to ask.
+- **Unknown:** the rows below, each with who to ask. We found no figure we could cite for how many dogs lost while traveling are found, or how fast.
 
 | Open point | Check for yourself |
 | --- | --- |
-| How many dogs lost while traveling are found, and how fast | We found no figure we could cite. Your vet or local shelter may share local numbers. |
 | Whether a tracker works at your destination | The maker's coverage tool, for the exact address and route. |
-| Current subscription cost and terms for a tracker | The maker's current plan page on the day you buy. |
-| Whether a collar-style tracker needs a membership and what it covers | The maker's current pages, before buying. |
 | Which registry holds your dog's chip | Your vet, or AAHA's lookup tool, then the registry itself. |
 | Which agency handles lost dogs at the rental's address | Your host and the town or county website. |
-| Whether the rental's fence and gates are dog-safe | The host, using the questions in our fenced yard guide. |

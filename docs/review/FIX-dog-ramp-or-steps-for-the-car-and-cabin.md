@@ -11,3 +11,9 @@ Compact row added to the specs table; "four" changed to "five" everywhere; Foldi
 
 ## Round 3 polish (2026-11-24)
 - "our record" leaks replaced ("not stated on the page", "The pages list no figure"); added a plain sentence that all five picks are PetSafe because those are the pages researched. Compact table cell links through its existing alias. "low-to-mid 20s" was already fixed. Hero not touched. lastReviewed 2026-11-24.
+
+## Round 4
+- "low-to-mid 20s" replaced with "about 20 to 22 inches", "buy first" changed to "start with" / "Start here" in three paragraphs (now only the closing heading uses it), and the garbled "longest reach, at 18 lb" sentence fixed; "aluminium" fixed in the body.
+- Compact and Extra Long names in the table and prose now use the catalog name "... Telescoping Dog Ramp" so the product-text auto-link matches them (the Compact table cell was plain text because the page said "Telescoping Ramp").
+- lastReviewed 2026-11-24; readingMinutes 8.
+- For the lead: hero image is being replaced elsewhere (not touched); the Extra Long summary in products.yml still says "aluminium".

@@ -12,3 +12,10 @@
 - Opening split into short paragraphs; "What to buy" paragraph became a three-line list (Collaps, Kibble Carrier, Vittles).
 - "Water first" section moved after the bowl and food picks; three in-body "buy first" lines replaced with neutral wording, leaving "What to buy first" as the only one.
 - For the lead: Vittles display name and card icon are product-record items (not edited); pin row description still says eight if it does.
+
+## Round 4
+- Opening is answer-first: "Pack one flat bowl and a food container sized to your trip..." then the What to pack list; the scene paragraph is gone.
+- "Which dog travel bowl to pack" is now an H2 placed right after the buying checklist, so the first pick card comes before the maker table; the table follows with a pointer.
+- IRIS row moved after Gunner so table citations read 11, 12, 13, 15 in order.
+- Dek now says "nine products ... (six with a pick card)". lastReviewed 2026-11-24; readingMinutes stays 10.
+- For the lead: the Vittles Vault card still shows "Vittles Vault (Gamma2 / Petmate)" with a doubled product name; it needs a products.yml change (display name "Vittles Vault Travel-Tainer", brand "Petmate"), which I did not touch.

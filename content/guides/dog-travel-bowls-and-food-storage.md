@@ -2,7 +2,7 @@
 title: "Dog Travel Bowls and Food Storage: What to Pack First"
 seoTitle: "Dog Travel Bowls and Food Storage: What to Pack"
 seoDescription: "Pick a collapsible dog bowl for travel and a food container sized to your trip. Nine products compared on maker specs, plus kibble and bear-country rules."
-dek: Which dog travel bowl and food container to pack, with capacity, cleaning and materials for nine products from the makers' own pages, plus what the CDC, FDA and park agencies say about water and food on the road.
+dek: Which dog travel bowl and food container to pack, with capacity, cleaning and materials for nine products from the makers' own pages (six with a pick card), plus what the CDC, FDA and park agencies say about water and food on the road.
 category: Planning
 states: []
 status: published
@@ -161,9 +161,7 @@ research:
   researchComplete: true
 ---
 
-You are loading the car, the kibble is in a half-open bag, and the rental may be a cabin where food storage is a safety rule.
-
-This guide covers what to pack in a dog travel bowl, bottle and food container kit, with each product's capacity, materials and cleaning taken from the maker's own page, read on 2026-11-18.
+Pack one flat bowl and a food container sized to your trip. Each product's capacity, materials and cleaning below come from the maker's own page, read on 2026-11-18.
 
 **What to pack:**
 
@@ -188,29 +186,9 @@ The rules that matter more than the gear:
 6. No bear-resistance assumption: a maker that does not claim it has not claimed it.
 7. Check the maker's capacity and care notes on the listing before you order.
 
-## Collapsible dog bowls, bottles and food carriers: what the maker pages say
+## Which dog travel bowl to pack
 
-Everything below is the maker's own wording or figures, read on 2026-11-18. The table holds no ratings or prices. Where a page is silent, the cell says so. Dishwasher status is listed only where the page states it.
-
-| Product | Capacity or size as stated | Cleaning as stated | Materials as the maker describes them |
-| --- | --- | --- | --- |
-| Kurgo Collaps A Bowl [[6]](https://www.kurgo.com/pet-travel-bowls/collaps-a-bowl) | "Holds 24 ounces"; collapses to less than 1 inch high | "Dishwasher safe, top rack" | Food-grade silicone, PVC and BPA free |
-| Springland 22oz Classic bottle [[7]](https://springlandpets.com/products/22oz-classic-dog-travel-water-bottle) | Named 22oz; no separate volume figure on the page | Dishwasher (top rack only) or hand wash with dish soap | Food-safe, BPA-free polypropylene; aluminum carabiner |
-| Springland 20oz Flip bottle [[8]](https://springlandpets.com/products/20oz-flip-dog-travel-water-bottle) | Named 20oz; no separate volume figure on the page | Dishwasher (top rack only) or hand wash with dish soap | Food-safe, BPA-free polypropylene; aluminum carabiner; silicone flip-top bowl named in the description |
-| Vittles Vault Travel-Tainer [[9]](https://www.petmate.com/vittles-vault-travel-trainer-portable-food-storage-container/product/4504) | "Capacity: 6 Cups" container plus two 3-cup bowls; maker says capacity depends on kibble shape and density | Bowls dishwasher safe; the clear container "NOT dishwasher safe", hand wash | "Heavy-duty BPA food-grade plastic" (the page's wording); a "proprietary sealing system" |
-| Kurgo Kibble Carrier [[10]](https://www.kurgo.com/dog-travel/kibble-carrier) | Up to 5 lbs dry food, about 20 cups of average kibble | "Hand wash. Air dry." | Ripstop material, food-safe PEVA liner with heat-sealed seams; roll top |
-| Ruffwear Quencher (Medium, one size) [[11]](https://ruffwear.com/products/quencher-dog-bowl) | 4.2 cups (1 L); 5.5 in opening | Hand wash, mild detergent, air dry | Polyester ripstop shell, water-resistant; nylon lining with a 4,000 mm waterproof rating, Food Contact Safe |
-| Kurgo Splash Free Wander [[12]](https://www.kurgo.com/p/splash-free-wander-dog-water-bowl/K01812) | Holds 24 oz (710 ml); dimensions not stated | "Dishwasher safe, top rack" | Food-grade silicone, PVC and BPA free |
-| IRIS USA Airtight Dog Food Storage Container (up to 10 lbs) [[15]](https://www.irisusainc.com/collections/airtight-pet-food-containers/products/airtight-dog-food-storage-container-up-to-10-lbs-3) | 12.75 quarts; holds about 10 lb of dry food, depending on the food | Not stated on the page | Made in USA and BPA free (the maker's wording); airtight seals and buckles |
-| Gunner Dog Bowl with Travel Lid [[13]](https://gunner.com/products/gunner-dog-bowl-black) | No capacity or dimensions stated | Bowl "top-rack dishwasher safe" | Nylon, "BPA free and Food Grade compliant"; lid described as spill-proof |
-
-Two things the table shows. Gunner gives no capacity, and the two Springland bottles carry their size in the product name only. The bowl figures also vary, from Kurgo's 24 ounces to Ruffwear's 4.2 cups (1 L). Our reading is that a bowl sized to your dog's single drink, not a whole day's, is the easier one to pack.
-
-Two more items from the pages. Ruffwear's page lists the lining as waterproof and the shell as water-resistant. [[11]](https://ruffwear.com/products/quencher-dog-bowl) Gunner's page calls the lid spill-proof and leak-resistant but gives no test data behind it. [[13]](https://gunner.com/products/gunner-dog-bowl-black) For where each sits in a trip bag, see our [feeding and hydration gear page](/gear/feeding-and-hydration). Hiking with the dog? Our [dog hiking gear guide](/guides/dog-hiking-gear-for-a-cabin-vacation) covers the rest of the trail bag.
-
-### Which dog travel bowl to pack
-
-Pick the bowl by where it will ride. Check size on each listing.
+Pick the bowl by where it will ride. Check size on each listing; the full maker comparison is in the table after these picks.
 
 **For a bowl that disappears into a door pocket, the Kurgo Collaps A Bowl.** It holds 24 ounces and, per the maker, collapses to less than 1 inch high, so it travels in a door pocket, a coat or the corner of a bag. [[6]](https://www.kurgo.com/pet-travel-bowls/collaps-a-bowl) It is for the owner who wants one bowl for water and food and a dog who drinks a bowlful at a time. Skip it if you want a lid, or a bigger drink on a long hike. It is the pick if you have room for only one bowl.
 
@@ -227,6 +205,26 @@ Two more bowls cover different jobs, and a third is worth a look for the car.
 {{pick:gunner-dog-bowl|For carrying filled water: a lid the maker calls spill-proof|The maker describes a spill-proof, leak-resistant lid, non-slip rubber feet and a top-rack dishwasher-safe bowl; the page gives no capacity or dimensions, so check the size and test the lid yourself.|https://gunner.com/products/gunner-dog-bowl-black}}
 
 Kurgo's Splash Free Wander also holds 24 oz, and the maker describes a tapered lip and a wedge shape that lays flat on a seat, which makes it the one to look at if the bowl will live in the car. [[12]](https://www.kurgo.com/p/splash-free-wander-dog-water-bowl/K01812) For a bottle with the bowl attached, the Springland 22oz Classic and 20oz Flip are both listed by the maker as top-rack dishwasher safe, with a leak-proof lock design. [[7]](https://springlandpets.com/products/22oz-classic-dog-travel-water-bottle) [[8]](https://springlandpets.com/products/20oz-flip-dog-travel-water-bottle)
+
+## Collapsible dog bowls, bottles and food carriers: what the maker pages say
+
+Everything below is the maker's own wording or figures, read on 2026-11-18. The table holds no ratings or prices. Where a page is silent, the cell says so. Dishwasher status is listed only where the page states it.
+
+| Product | Capacity or size as stated | Cleaning as stated | Materials as the maker describes them |
+| --- | --- | --- | --- |
+| Kurgo Collaps A Bowl [[6]](https://www.kurgo.com/pet-travel-bowls/collaps-a-bowl) | "Holds 24 ounces"; collapses to less than 1 inch high | "Dishwasher safe, top rack" | Food-grade silicone, PVC and BPA free |
+| Springland 22oz Classic bottle [[7]](https://springlandpets.com/products/22oz-classic-dog-travel-water-bottle) | Named 22oz; no separate volume figure on the page | Dishwasher (top rack only) or hand wash with dish soap | Food-safe, BPA-free polypropylene; aluminum carabiner |
+| Springland 20oz Flip bottle [[8]](https://springlandpets.com/products/20oz-flip-dog-travel-water-bottle) | Named 20oz; no separate volume figure on the page | Dishwasher (top rack only) or hand wash with dish soap | Food-safe, BPA-free polypropylene; aluminum carabiner; silicone flip-top bowl named in the description |
+| Vittles Vault Travel-Tainer [[9]](https://www.petmate.com/vittles-vault-travel-trainer-portable-food-storage-container/product/4504) | "Capacity: 6 Cups" container plus two 3-cup bowls; maker says capacity depends on kibble shape and density | Bowls dishwasher safe; the clear container "NOT dishwasher safe", hand wash | "Heavy-duty BPA food-grade plastic" (the page's wording); a "proprietary sealing system" |
+| Kurgo Kibble Carrier [[10]](https://www.kurgo.com/dog-travel/kibble-carrier) | Up to 5 lbs dry food, about 20 cups of average kibble | "Hand wash. Air dry." | Ripstop material, food-safe PEVA liner with heat-sealed seams; roll top |
+| Ruffwear Quencher (Medium, one size) [[11]](https://ruffwear.com/products/quencher-dog-bowl) | 4.2 cups (1 L); 5.5 in opening | Hand wash, mild detergent, air dry | Polyester ripstop shell, water-resistant; nylon lining with a 4,000 mm waterproof rating, Food Contact Safe |
+| Kurgo Splash Free Wander [[12]](https://www.kurgo.com/p/splash-free-wander-dog-water-bowl/K01812) | Holds 24 oz (710 ml); dimensions not stated | "Dishwasher safe, top rack" | Food-grade silicone, PVC and BPA free |
+| Gunner Dog Bowl with Travel Lid [[13]](https://gunner.com/products/gunner-dog-bowl-black) | No capacity or dimensions stated | Bowl "top-rack dishwasher safe" | Nylon, "BPA free and Food Grade compliant"; lid described as spill-proof |
+| IRIS USA Airtight Dog Food Storage Container (up to 10 lbs) [[15]](https://www.irisusainc.com/collections/airtight-pet-food-containers/products/airtight-dog-food-storage-container-up-to-10-lbs-3) | 12.75 quarts; holds about 10 lb of dry food, depending on the food | Not stated on the page | Made in USA and BPA free (the maker's wording); airtight seals and buckles |
+
+Two things the table shows. Gunner gives no capacity, and the two Springland bottles carry their size in the product name only. The bowl figures also vary, from Kurgo's 24 ounces to Ruffwear's 4.2 cups (1 L). Our reading is that a bowl sized to your dog's single drink, not a whole day's, is the easier one to pack.
+
+Two more items from the pages. Ruffwear's page lists the lining as waterproof and the shell as water-resistant. [[11]](https://ruffwear.com/products/quencher-dog-bowl) Gunner's page calls the lid spill-proof and leak-resistant but gives no test data behind it. [[13]](https://gunner.com/products/gunner-dog-bowl-black) For where each sits in a trip bag, see our [feeding and hydration gear page](/gear/feeding-and-hydration). Hiking with the dog? Our [dog hiking gear guide](/guides/dog-hiking-gear-for-a-cabin-vacation) covers the rest of the trail bag.
 
 ## Water first: what the sources say
 

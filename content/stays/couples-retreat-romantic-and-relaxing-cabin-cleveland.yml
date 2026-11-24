@@ -1,0 +1,32 @@
+status: unverified
+name: Couples Retreat Romantic and Relaxing Cabin (Cleveland)
+type: cabin
+state: georgia
+town: cleveland
+summary: One-bedroom cabin in Cleveland; up to 1 dog, 25 lb limit, hot tub.
+description: 'A cabin in Cleveland, Georgia, that sleeps 2 with 1 bedroom and 2 bathrooms. Setting, as the listing describes it: Cleveland, near Serenity Cellars. On the Vrbo page, the amenity list includes a hot tub. Dog rules we read: One small dog under 25 lb; One-time $100 pet fee plus tax. We read this from the public Vrbo listing on 2026-11-24 and have not confirmed it with the host.'
+sleeps: 2
+bedrooms: 1
+bathrooms: 2
+amenityGroups:
+- title: Outdoors
+  items:
+  - Hot tub
+locationNote: Cleveland, near Serenity Cellars, Georgia.
+maxDogs: 1
+weightLimitLbs: 25
+largeDogsOk: 'no'
+fencedYard: not-confirmed
+privateOutdoor: not-confirmed
+petFee: charged
+petFeeAmount: 100
+petFeeBasis: stay
+breedRestrictions: not-confirmed
+beach: false
+mountain: true
+hotTub: 'yes'
+houseRules:
+- 'Pets: One small dog under 25 lb (Vrbo listing, read 2026-11-24)'
+- One-time $100 pet fee plus tax
+photoPermission: false
+sourceUrl: https://www.vrbo.com/1367012

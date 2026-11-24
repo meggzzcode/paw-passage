@@ -1,0 +1,27 @@
+status: unverified
+name: Monterey Bay Home Near Beach and Wharf
+type: vacation-home
+state: california
+town: monterey
+summary: Three-bedroom vacation home in Monterey; up to 2 dogs, partly fenced.
+description: 'A vacation home in Monterey, California, that sleeps 6 with 3 bedrooms and 1 bathroom. Setting, as the listing describes it: Del Rey Oaks, next to Monterey. On the Vrbo page, it notes: A past guest review mentions a securely fenced yard. Dog rules we read: Dogs welcome with advance notice, up to 2; $35 per pet per night; $150 per dog fee, arranged with the host after booking. We read this from the public Vrbo listing on 2026-11-24 and have not confirmed it with the host.'
+sleeps: 6
+bedrooms: 3
+bathrooms: 1
+locationNote: Del Rey Oaks, next to Monterey, California.
+maxDogs: 2
+largeDogsOk: not-confirmed
+fencedYard: partial
+fenceNotes: A past guest review mentions a securely fenced yard
+privateOutdoor: not-confirmed
+petFee: not-confirmed
+breedRestrictions: not-confirmed
+beach: true
+mountain: false
+hotTub: not-confirmed
+houseRules:
+- 'Pets: Dogs welcome with advance notice, up to 2 (Vrbo listing, read 2026-11-24)'
+- $35 per pet per night
+- $150 per dog fee, arranged with the host after booking
+photoPermission: false
+sourceUrl: https://www.vrbo.com/4147680

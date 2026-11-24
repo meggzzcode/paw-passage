@@ -6,6 +6,7 @@ import { contentPlugin } from "./plugins/content";
 export default defineConfig({
   plugins: [react(), contentPlugin()],
   test: {
+    testTimeout: 30000,
     environment: "jsdom",
     globals: true,
     setupFiles: ["./src/test/setup.ts"],

@@ -321,6 +321,81 @@ links:
     url: https://vrbo.com/affiliate/bwVfDcA
     approved: true
     kind: stay
+  - id: vrbo-555839
+    network: Vrbo
+    url: https://vrbo.com/affiliate/oxE3kjF
+    approved: true
+    kind: stay
+  - id: vrbo-478093
+    network: Vrbo
+    url: https://vrbo.com/affiliate/qQfx27o
+    approved: true
+    kind: stay
+  - id: vrbo-1934201
+    network: Vrbo
+    url: https://vrbo.com/affiliate/uUJhB71
+    approved: true
+    kind: stay
+  - id: vrbo-2436376
+    network: Vrbo
+    url: https://vrbo.com/affiliate/E6B5vUX
+    approved: true
+    kind: stay
+  - id: vrbo-1367012
+    network: Vrbo
+    url: https://vrbo.com/affiliate/dAQ5QQw
+    approved: true
+    kind: stay
+  - id: vrbo-2807981
+    network: Vrbo
+    url: https://vrbo.com/affiliate/L26ipAT
+    approved: true
+    kind: stay
+  - id: vrbo-5291460
+    network: Vrbo
+    url: https://vrbo.com/affiliate/RfZ8ixE
+    approved: true
+    kind: stay
+  - id: vrbo-4361269
+    network: Vrbo
+    url: https://vrbo.com/affiliate/xVrPt5y
+    approved: true
+    kind: stay
+  - id: vrbo-5177396
+    network: Vrbo
+    url: https://vrbo.com/affiliate/7zloWyn
+    approved: true
+    kind: stay
+  - id: vrbo-980414
+    network: Vrbo
+    url: https://vrbo.com/affiliate/Gp528Du
+    approved: true
+    kind: stay
+  - id: vrbo-2955022
+    network: Vrbo
+    url: https://vrbo.com/affiliate/OwoCIb5
+    approved: true
+    kind: stay
+  - id: vrbo-4147680
+    network: Vrbo
+    url: https://vrbo.com/affiliate/UJHUL3q
+    approved: true
+    kind: stay
+  - id: vrbo-4421298
+    network: Vrbo
+    url: https://vrbo.com/affiliate/SqpEZdH
+    approved: true
+    kind: stay
+  - id: vrbo-4076826
+    network: Vrbo
+    url: https://vrbo.com/affiliate/zHWWlhj
+    approved: true
+    kind: stay
+  - id: vrbo-4848791
+    network: Vrbo
+    url: https://vrbo.com/affiliate/A0hrgRo
+    approved: true
+    kind: stay
   - id: adventure-medical-kits-dog-wipes
     network: Amazon Associates
     url: https://www.amazon.com/dp/B07PF1RCGD?tag={amazonTrackingId}

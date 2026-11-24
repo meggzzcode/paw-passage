@@ -25,7 +25,7 @@ faqs:
   - q: Which one is right for an SUV where the dog rides in the cargo area?
     a: Kurgo's Rover Cargo Cape is a cargo-area cover with a fold-out bumper guard and a center zipper for 50/50 split seats, listed at 52 by 62 inches. It protects the floor and bumper; it does not restrain the dog, so the dog still needs a crate or harness.
   - q: How do I keep dog hair out of my car on a road trip?
-    a: Nationwide says it is impossible to keep the car completely free of dog hair and suggests a lint roller in the console. NAPA suggests vacuuming before loading the dog and a small kit with paper towels and pet cleaner. A washable cover keeps most hair off the seat itself.
+    a: Nationwide says it is impossible to keep the car completely free of dog hair and suggests a lint roller in the console. NAPA suggests vacuuming before loading the dog. A washable cover keeps most hair off the seat itself.
 relatedGuides:
   - dog-car-safety-harness-and-crate-guide
   - two-large-dogs-in-one-car
@@ -157,14 +157,6 @@ research:
 
 Match the cover to the vehicle first. A bench cover suits a car, an extended hammock suits a big dog in a truck or large SUV, and a cargo cape suits a dog that rides behind the rear seat. Measure before you buy: makers list sizes from 45 by 56 inches (bench cover) to 63 by 56 inches (extended hammock) ([PetSafe](https://www.petsafe.com/p/happy-ride-quilted-bench-seat-cover/PTV00-17462/), [Kurgo](https://kurgo.com/car-seat-covers/dog-hammocks/wander-hammock-extended-width)).
 
-> **At a glance: our picks**
->
-> - **One dog on a car or SUV back seat:** [PetSafe Happy Ride bench cover](https://www.petsafe.com/p/happy-ride-quilted-bench-seat-cover/PTV00-17462/).
-> - **Big dog or two in a truck or large SUV:** [Kurgo Rover Hammock, extended width](https://kurgo.com/car-seat-covers/dog-hammocks/wander-hammock-extended-width).
-> - **Dog behind the rear seat:** [Kurgo Rover Cargo Cape](https://www.kurgo.com/p/cargo-cape/POG30-17676), with a crate.
-> - **Rental that requires a carrier:** [PetSafe collapsible crate](https://www.petsafe.com/p/happy-ride-collapsible-travel-crate/ZTV00-17289/).
-> - **Small dog on a bucket seat:** [Kurgo Heather booster](https://www.kurgo.com/p/heather-dog-booster-seat/K01724), with a separate crash-tested harness.
-
 **Pair it with a restraint**
 
 - The [ASPCA](https://www.aspca.org/pet-care/general-pet-care/travel-safety-tips) advises a secured, well-ventilated crate or, without one, the back seat in a harness attached to a seat belt. Our [harness and crate guide](/guides/dog-car-safety-harness-and-crate-guide) covers crash-test details.
@@ -174,7 +166,7 @@ Match the cover to the vehicle first. A bench cover suits a car, an extended ham
 
 The makers say the PetSafe cover "fits the back seat of most cars, trucks and SUVs," the [Kurgo](https://www.kurgo.com/p/cargo-cape/POG30-17676) hammock is for "most full size trucks and large SUVs," and the cape fits "most cargo areas." None of these pages lists a vehicle compatibility chart, weight limit or crash-test rating, so the tape measure is the real check. For a compact car, the hammock page points to a smaller standard-width hammock from Kurgo, listed at 55 by 56 inches.
 
-Retail guides sort covers by dog. [Chewy](https://www.chewy.com/education/dog/pet-parenting/your-guide-to-the-best-dog-car-seat-covers-to-protect-your-ride) says hammocks keep a dog out of the footwell, bench covers install easily with seat belt openings, and cargo liners suit large and crated dogs. A [seller page](https://www.seatcoversolutions.com/blogs/news/are-dog-car-seat-covers-and-hammocks-same) suggests covers for small, calm dogs and hammocks for large or active ones. Those are retailers' views, not tests.
+Retail guides sort covers by dog. [Chewy](https://www.chewy.com/education/dog/pet-parenting/your-guide-to-the-best-dog-car-seat-covers-to-protect-your-ride) says hammocks keep a dog out of the footwell, bench covers install easily with seat belt openings, and cargo liners suit large and crated dogs. [Seat Cover Solutions](https://www.seatcoversolutions.com/blogs/news/are-dog-car-seat-covers-and-hammocks-same) (a seller) suggests covers for small, calm dogs and hammocks for large or active ones. Those are retailers' views, not tests.
 
 ## The back seat: bench cover or hammock
 

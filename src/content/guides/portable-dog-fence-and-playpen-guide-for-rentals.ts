@@ -15,14 +15,7 @@ export const guide: Guide = {
   lastReviewed: "2026-11-24",
   readingMinutes: 8,
   heroImage: "gear-portable-fence",
-  body: `Pens, gates and crates solve different problems, so match the product to your dog and to the doorway or deck you need to close.
-
-> **At a glance: our picks**
->
-> - **Dog that leans or jumps:** MidWest Exercise Pen with Door, 24 to 48 in size designations.
-> - **Small or medium dog, deck or doorway:** Carlson Convertible Pet Yard, 28 in, doubles as a gate.
-> - **Calm puppy or small dog:** Petmate Precision Pet Soft Side Play Yard, with a washable floor.
-> - **A doorway where screws are not allowed:** North States MyPet Universal Petgate, 26 in.
+  body: `Pick by dog and doorway: a jumper needs a rigid pen, a small calm dog can use a soft or Carlson pen, and a doorway wants a gate.
 
 **Before you buy**
 
@@ -43,7 +36,7 @@ If the trip depends on a yard, start with our guide to [finding a rental with a 
 
 **Freestanding exercise pens** are connected panels that open into a rough circle, square or octagon. They give a dog a bounded space indoors, on a patio or on grass. They do not stop a determined jumper or climber, or survive a dog leaning hard on one panel. Each spec below is what the maker's page states.
 
-**A rigid pen for a dog who tests the walls.** The MidWest Exercise Pen with Door is a wire pen with eight connected panels in 24 to 48 inch size designations, a door with two slide-bolt latches plus a safety clip, and eight ground anchors and eight corner stabilizers in the box ([MidWest Homes for Pets](https://www.midwesthomes4pets.com/wp-content/uploads/ExPen_550DR_Eng.pdf)). The manual says the stabilizers give maximum stability with all eight on top, a mix with every other one on the bottom, and floor protection only with all eight on the bottom. Choose the height from the size designations and your dog's jump. It suits a dog that will face a pen with you present; skip it for a dog that panics in enclosures.
+**A rigid pen for a dog who tests the walls.** The MidWest Exercise Pen with Door is a wire pen with eight connected panels in 24 to 48 inch size designations, a door with two slide-bolt latches plus a safety clip, and eight ground anchors and eight corner stabilizers in the box ([MidWest Homes for Pets](https://www.midwesthomes4pets.com/wp-content/uploads/ExPen_550DR_Eng.pdf)). The manual says the stabilizers give maximum stability with all eight on top, a mix with every other one on the bottom, and floor protection only with all eight on the bottom. Choose the height from the size designations and your dog's jump. It suits a dog that will stay in a pen with you present.
 
 {{pick:midwest-exercise-pen-with-door|Tallest rigid option: 24 to 48 in sizes|Eight connected panels, two-latch door with a safety clip, ground anchors, and corner stabilizers that can serve as floor protectors.|https://www.midwesthomes4pets.com/product/dogs/pens-gates-barriers/exercise-pen-with-door/}}
 
@@ -67,9 +60,7 @@ If the trip depends on a yard, start with our guide to [finding a rental with a 
 
 ## Height, stability and latches
 
-Ask whether your dog jumps on counters or fences, climbs (horizontal rails can work like a ladder), digs at floors, or reacts to a squirrel or a delivery. If you do not know, treat the pen as untested and keep a hand on the leash during the first sessions. No maker we read promises a dog cannot get out.
-
-The soft yard has mesh panels and a floor instead of rigid rails, so a leaning or chewing dog tests it differently from a wire pen. The MidWest manual says its corner stabilizers help prevent the opposite end from collapsing if the animal jumps up on the side, which could injure the animal or tip the pen over ([MidWest Homes for Pets](https://www.midwesthomes4pets.com/wp-content/uploads/ExPen_550DR_Eng.pdf), [MidWest Homes for Pets](https://www.midwesthomes4pets.com/product/dogs/pens-gates-barriers/exercise-pen-with-door/)).
+Horizontal rails can work like a ladder, and the soft yard has mesh panels instead of rigid rails, so a leaning or chewing dog tests it differently. No maker we read promises a dog cannot get out. The MidWest manual says its corner stabilizers help prevent the opposite end from collapsing if the animal jumps up on the side, which could injure the animal or tip the pen over ([MidWest Homes for Pets](https://www.midwesthomes4pets.com/wp-content/uploads/ExPen_550DR_Eng.pdf), [MidWest Homes for Pets](https://www.midwesthomes4pets.com/product/dogs/pens-gates-barriers/exercise-pen-with-door/)).
 
 MidWest tells owners to remove collars, tags and leads before placing the pet inside, to prevent entanglement. Put the collar and tag back on as soon as the dog is out, and keep the microchip record current, because the dog has no visible ID inside. Our [loose-dog guide](/guides/if-your-dog-gets-loose-on-a-trip) covers what to do if the dog gets out.
 
@@ -91,7 +82,7 @@ Do not set up a pen for the first time in an unfamiliar rental. Put it in a room
 
 ## When not to use a portable pen
 
-- **For a dog that escapes, climbs or panics.** A pen is more likely to become an injury risk than a solution.
+- **For a dog that escapes, climbs or panics.**
 - **Near hazards** such as a hot stove, a stairwell, a pool or an open balcony door.
 - **As a substitute for exercise.**
 
@@ -109,7 +100,7 @@ Measure your dog and note whether it jumps, climbs or digs; that decides the pen
     },
     {
       q: "Can a portable dog fence replace a fenced yard at a rental?",
-      a: "No. A pen is a short, supervised tool. [MidWest](https://www.midwesthomes4pets.com/wp-content/uploads/ExPen_550DR_Eng.pdf) warns that a dog not trained to be restricted may try to escape and be injured. If your trip depends on unsupervised yard time, book a rental with a genuinely secure yard instead.",
+      a: "No. A pen is a short, supervised tool. If your trip depends on unsupervised yard time, book a rental with a genuinely secure yard instead.",
     },
     {
       q: "Do I need the host's permission to bring a pen?",
@@ -136,7 +127,6 @@ Measure your dog and note whether it jumps, climbs or digs; that decides the pen
       whyItMadeTheList:
         "The maker's instructions describe eight connected panels, a two-latch door with a safety clip, ground anchors for outdoor use, and corner stabilizers that can sit on the bottom of the pen as floor protectors, at some cost to stability versus placing them on top. A range of heights lets you match the pen to your dog.",
       watchOuts: [
-        "Maker says a pet not trained to be restricted may attempt to escape, risking injury to the pet or the product",
         "Maker says not to leave young animals unsupervised for extended periods",
         "Ground anchors go into the lawn, so ask the host first",
         "Weight and intended dog size are not stated in the sources we read",

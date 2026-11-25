@@ -37,3 +37,9 @@ dist-ssr
 # Python bytecode
 __pycache__/
 *.pyc
+
+# Environment files and test output
+.env
+.env.*
+!.env.example
+coverage

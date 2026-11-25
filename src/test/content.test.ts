@@ -1,10 +1,10 @@
 import { describe, expect, it } from "vitest";
 import { allGuides, isPublic } from "@/content/guides";
-import { linkedSourceNumbers } from "@/content/citations";
 
 const tools = ["checklist", "will-my-dog-be-accepted", "packing-list"];
 // Published guides name their sources with plain publisher links (scripts/remove-citation-numbers.mjs): no numbered
-// markers, a link to every source in the body, and a Sources list at the end of the page.
+// markers, every source listed in the Sources list at the end of the page (rendered from the frontmatter), and any inline
+// link to an outside site pointing at one of the guide's own sources. Inline links are light (scripts/lighten-citations.mjs).
 const published = (g: (typeof allGuides)[number]) => isPublic(g);
 const text = (g: (typeof allGuides)[number]) => g.body + "\n" + g.faqs.map((f) => f.a).join("\n");
 const sentences = (s: string) => s.split(/(?<=[.!?])\s+(?=[A-Z"([*])/);
@@ -17,13 +17,29 @@ describe.each(allGuides.map((g) => [g.slug, g] as const))("guide content: %s", (
     if (!published(g)) return;
     expect(text(g).match(/\[\[\d+\]\]/g) ?? [], `${g.slug}: numbered markers`).toEqual([]);
   });
-  it("every source is cited at least once, by an inline link to its exact URL", () => {
+  it("every source is listed in the guide's Sources list (title, publisher, URL, date read)", () => {
     if (!published(g)) return;
-    const linked = linkedSourceNumbers(text(g), g.sources);
-    const uncited = g.sources
-      .map((s, i) => [i + 1, s.title] as const)
-      .filter(([n]) => !linked.has(n));
-    expect(uncited, `${g.slug}: sources never linked`).toEqual([]);
+    // The Sources list at the end of the page is rendered from the frontmatter `sources` (SourcesList), so a source
+    // is listed when it has everything the list prints. Inline links in the text are optional and light.
+    const incomplete = g.sources
+      .map((s, i) => [i + 1, s] as const)
+      .filter(
+        ([, s]) =>
+          !s.title?.trim() || !s.publisher?.trim() || !/^https?:\/\//.test(s.url) || !s.accessedOn,
+      )
+      .map(([n]) => n);
+    expect(incomplete, `${g.slug}: sources the list cannot show in full`).toEqual([]);
+    expect(new Set(g.sources.map((s) => s.url)).size, `${g.slug}: duplicate source URLs`).toBe(
+      g.sources.length,
+    );
+  });
+  it("every inline link to an external site goes to one of the guide's own sources", () => {
+    if (!published(g)) return;
+    const sources = new Set(g.sources.map((s) => s.url));
+    const foreign = [...text(g).matchAll(/\]\((https?:[^)\s]+)(?:\s+"[^"]*")?\)/g)]
+      .map((m) => m[1]!)
+      .filter((u) => !sources.has(u));
+    expect(foreign, `${g.slug}: inline links that are not in the frontmatter sources`).toEqual([]);
   });
   it("a parenthetical publisher link names the publisher, never a number or 'source'", () => {
     if (!published(g)) return;

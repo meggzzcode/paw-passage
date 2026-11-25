@@ -183,7 +183,7 @@ If anyone is with you, send them to make the calls while you keep searching. If 
 
 ## Search without losing time
 
-Take a favorite treat or toy, call the dog's name and bring helpers ([AKC Reunite](https://www.akcreunite.org/lostpettips/)). The [ASPCA](https://www.aspca.org/pet-care/general-pet-care/finding-lost-pet) says shaking a food dish, treat jar or favorite toy can lure a pet out of hiding.
+Take a favorite treat or toy, call the dog's name and bring helpers. The [ASPCA](https://www.aspca.org/pet-care/general-pet-care/finding-lost-pet) says shaking a food dish, treat jar or favorite toy can lure a pet out of hiding.
 
 Check the small places too: under beds, in closets and dark spaces, and ask neighbors to look in sheds and garages in case the dog was shut in by accident.
 
@@ -197,7 +197,7 @@ Keep a note of who you spoke to and when.
 - **Local animal control, vets, shelters and rescue groups.** The [ASPCA](https://www.aspca.org/pet-care/general-pet-care/finding-lost-pet) also names the police if no shelter is near. You are away from home, so ask your host or property manager which agency covers the area.
 - **Neighbors and local "Lost Pet" Facebook pages.** The ASPCA suggests asking page administrators to share your dog's details.
 
-Give a description a stranger can match: coat length and color, markings, size, plus where and when the dog was last seen ([ASPCA](https://www.aspca.org/pet-care/general-pet-care/finding-lost-pet), [AKC Reunite](https://www.akcreunite.org/lostpettips/)). Ask whether they hold a dog matching it, and leave a number you will answer.
+Give a description a stranger can match: coat length and color, markings, size, plus where and when the dog was last seen. Ask whether they hold a dog matching it, and leave a number you will answer.
 
 ## If your dog wears a tracker
 
@@ -220,17 +220,17 @@ If you must leave for work or a flight, give a friend, your host or the registry
 
 Most of this takes ten minutes and no purchase.
 
-**Put a tag on the collar.** The [ASPCA](https://www.aspca.org/pet-care/general-pet-care/finding-lost-pet) says to include your name and current phone number, even for indoor pets. For travel, add a number you will answer and a second one for a friend or relative. Engrave or stamp it rather than use a sticker, and check the ring for wear; tags can fall off or become hard to read ([AKC Reunite](https://www.akcreunite.org/idtags/)). 
+**Put a tag on the collar.** The [ASPCA](https://www.aspca.org/pet-care/general-pet-care/finding-lost-pet) says to include your name and current phone number, even for indoor pets. For travel, add a number you will answer and a second one for a friend or relative. Engrave or stamp it rather than use a sticker, and check the ring for wear; tags can fall off or become hard to read. 
 
-**Check the microchip record.** A chip has no power source and is not a GPS; a scanner activates it for a few seconds, and the number is like a blank tag until it is registered with your details ([AKC Reunite](https://www.akcreunite.org/importance/)). [AKC Reunite](https://www.akcreunite.org/travel/) says to verify your enrollment is up to date before you travel.
+**Check the microchip record.** A chip has no power source and is not a GPS; a scanner activates it for a few seconds, and the number is like a blank tag until it is registered with your details. [AKC Reunite](https://www.akcreunite.org/travel/) says to verify your enrollment is up to date before you travel.
 
 1. Find the chip number and the registry that holds it. A vet can scan the chip if you are unsure.
-2. Check the phone, email and alternate contacts on file, and add one who lives outside your area ([AKC Reunite](https://www.akcreunite.org/lostfoundpetfaq/)).
+2. Check the phone, email and alternate contacts on file, and add one who lives outside your area.
 3. Save the registry's number in your phone so you recognize its call.
 
-More than one registry operates in the US. AAHA's free lookup tool shows which participating registries hold a chip, but AAHA keeps no database of its own, so contact that registry to change the record. Registration does not signify ownership, so keep vet paperwork and photos ([AKC Reunite](https://www.akcreunite.org/lostfoundpetfaq/)). AKC Reunite sells enrollment and ID tags, so read its pages with that in mind.
+More than one registry operates in the US. AAHA's free lookup tool shows which participating registries hold a chip, but AAHA keeps no database of its own, so contact that registry to change the record. Registration does not signify ownership, so keep vet paperwork and photos. AKC Reunite sells enrollment and ID tags, so read its pages with that in mind.
 
-**Make arrival the careful part.** [Patch](https://patch.com/massachusetts/across-ma/july-4-fireworks-cause-spike-lost-dog-reports-what-ma-pet-owners-should-know) warns that a dog that stays put at home can bolt from a rest stop, rental house, campground or hotel hallway if fireworks go off. One person holds the dog while another handles the bags, and the dog goes out only on a leash. Cornell advises a leash even in a fenced yard when fireworks or storms are the worry ([Cornell Riney Center](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/fear-fireworks-and-thunderstorms)).
+**Make arrival the careful part.** [Patch](https://patch.com/massachusetts/across-ma/july-4-fireworks-cause-spike-lost-dog-reports-what-ma-pet-owners-should-know) warns that a dog that stays put at home can bolt from a rest stop, rental house, campground or hotel hallway if fireworks go off. One person holds the dog while another handles the bags, and the dog goes out only on a leash. Cornell advises a leash even in a fenced yard when fireworks or storms are the worry.
 
 **Ask what closes the yard.** "Fenced" is not a yard you can trust. Our [secure fenced yard guide](/guides/vacation-rental-secure-fenced-yard) lists the questions and photos to request, and a freestanding pen can give a supervised space; see the [portable pen guide](/guides/portable-dog-fence-and-playpen-guide-for-rentals). Holiday nights carry extra risk, and our [New Year's Eve guide](/guides/new-years-eve-with-a-dog-in-a-vacation-rental#keeping-your-dog-from-bolting) covers the real escape cases.
 
@@ -248,7 +248,7 @@ A tracker does not stop an escape or tell a finder who you are, so sort out the 
 
 {{pick:tractive-dog-6|Clip-on GPS for a collar you keep|Up to 2 weeks of battery with Power Saving Zones; a subscription is required for its built-in SIM.|https://tractive.com/en/pd/gps-tracker-dog}}
 
-**A collar with the tracker built in.** [Fi](https://fitracking.com/theapp) describes GPS and LTE tracking with live updates. The Series 3+ lists IP68 and IP66K ratings and a colored LED night light for XS to XL dogs, but its collar page states no carrier, coverage or subscription terms, so confirm the plan before you order ([Fi: GPS Dog Collar with Health & Activity Tracking](https://fitracking.com/collar), [Fi: Membership and Community](https://fitracking.com/membership)). Choose it when your dog will wear a new collar all trip.
+**A collar with the tracker built in.** [Fi](https://fitracking.com/theapp) describes GPS and LTE tracking with live updates. The Series 3+ lists IP68 and IP66K ratings and a colored LED night light for XS to XL dogs, but its collar page states no carrier, coverage or subscription terms, so confirm the plan before you order. Choose it when your dog will wear a new collar all trip.
 
 {{pick:fi-series-3-plus|Collar with GPS built in|Up to 3 months of battery life per the maker; its product page does not state carrier or subscription terms.|https://fitracking.com/collar}}
 

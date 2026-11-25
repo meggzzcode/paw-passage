@@ -154,8 +154,8 @@ Most cabin hikes need four things: a fixed leash, water, a bowl and waste bags. 
 ## The basics, with reasons
 
 - **A fixed leash.** Not a retractable one; [Orvis](https://www.orvis.com/how-to-hike-safely-with-your-dog.html) advises against them. The length rule is in the trail rules below.
-- **Water and a bowl.** Any collapsible bowl works. Plan a water break every fifteen minutes to half hour, depending on difficulty and temperature ([Orvis](https://www.orvis.com/how-to-hike-safely-with-your-dog.html)). The [AKC](https://www.akc.org/expert-advice/lifestyle/dog-boots/) rule for the ground you stop on: if you would not walk barefoot on it, your dog should not.
-- **Waste bags.** Leave No Trace applies, and dog waste can carry harmful bacteria into fresh water and pass diseases to wildlife ([National Park Service](https://www.nps.gov/articles/000/idkt_pets.htm)).
+- **Water and a bowl.** Any collapsible bowl works. Plan a water break every fifteen minutes to half hour, depending on difficulty and temperature. The [AKC](https://www.akc.org/expert-advice/lifestyle/dog-boots/) rule for the ground you stop on: if you would not walk barefoot on it, your dog should not.
+- **Waste bags.** Leave No Trace applies, and dog waste can carry harmful bacteria into fresh water and pass diseases to wildlife.
 
 ## Trail-day checklist
 
@@ -172,15 +172,15 @@ Add these to our [packing list tool](/tools/packing-list).
 
 Rules differ by land manager, so start with who runs the trail. A trail the dog cannot use makes every item here pointless, so settle this before you buy.
 
-- **National parks.** NPS says to always keep your dog on a 6 foot leash, and that many parks do not allow pets on hiking trails or boardwalks ([National Park Service](https://www.nps.gov/subjects/trails/hiking-with-pets.htm)). Some parks welcome pets on trails, so check which areas are off-limits.
-- **National forests.** The Gila National Forest page says pets must be leashed in developed recreation sites, including campgrounds, picnic areas and trailheads, and not to let a pet bark, lunge or run up to people and dogs ([U.S. Forest Service](https://www.fs.usda.gov/r03/gila/safety-ethics/canine-campers-bringing-dogs-national-forest)). That is one forest; read the page for yours.
+- **National parks.** NPS says to always keep your dog on a 6 foot leash, and that many parks do not allow pets on hiking trails or boardwalks. Some parks welcome pets on trails, so check which areas are off-limits.
+- **National forests.** The Gila National Forest page says pets must be leashed in developed recreation sites, including campgrounds, picnic areas and trailheads, and not to let a pet bark, lunge or run up to people and dogs. That is one forest; read the page for yours.
 - **State, county and local trails.** The [Washington Trails Association](https://www.wta.org/hiking-info/basics/hiking-with-dogs) says dogs must be leashed on all King County trails, and to yield to hikers and horses. That is a Washington example, not a national rule.
 
 A posted limit overrides all of these. Ask the rental host which nearby trails allow dogs and get the trail name in writing; our [pre-booking checklist](/tools/checklist) has the other questions. If your dog is reactive in new spaces, NPS suggests leaving it at home, and our [guide to a reactive dog at a rental](/guides/vacation-rental-with-a-reactive-dog) covers the stay.
 
 ## Heat, terrain and daylight
 
-**Heat.** Dogs don't sweat like humans do and are at higher risk of overheating ([National Park Service](https://www.nps.gov/subjects/trails/hiking-with-pets.htm)). Short-muzzle, elderly and overweight dogs are higher risk, and Cornell advises avoiding strenuous exercise in hot, humid weather. Heavy panting, drooling, vomiting, weakness, confusion, seizures and collapse are signs of heatstroke; treatment is immediate cooling and veterinary care ([Cornell Vet](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/heatstroke-medical-emergency)). Extra water, a shorter distance and an earlier start do more than any product, and a parked car is never a rest stop.
+**Heat.** Dogs don't sweat like humans do and are at higher risk of overheating. Short-muzzle, elderly and overweight dogs are higher risk, and Cornell advises avoiding strenuous exercise in hot, humid weather. Heavy panting, drooling, vomiting, weakness, confusion, seizures and collapse are signs of heatstroke; treatment is immediate cooling and veterinary care. Extra water, a shorter distance and an earlier start do more than any product, and a parked car is never a rest stop.
 
 **Terrain.** Rough, steep or rocky ground raises the odds you need a harness or boots. Soft forest paths usually do not.
 
@@ -190,7 +190,7 @@ A posted limit overrides all of these. Ask the rental host which nearby trails a
 
 The three cards below, and the light and leash after them, are Ruffwear, the catalog we researched; no source we read ranks brands, and any gear that fits the same way does the same job. Skip each one if your hike does not have its problem.
 
-**Water.** A bowl does not need a card; any collapsible one works. The Quencher is one option that folds flat ([Ruffwear](https://ruffwear.com/products/quencher-dog-bowl)); the catch is hand wash and air dry, so skip it if you already carry a bowl or want dishwasher-safe.
+**Water.** A bowl does not need a card; any collapsible one works. The Quencher is one option that folds flat; the catch is hand wash and air dry, so skip it if you already carry a bowl or want dishwasher-safe.
 
 {{pick:ruffwear-quencher-bowl|One packable bowl option, 4.2 cups (1 L)|Folds flat; one size, Medium, with a 5.5 in opening. Hand wash only.|https://ruffwear.com/products/quencher-dog-bowl}}
 

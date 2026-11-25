@@ -176,7 +176,7 @@ Pick by how your dog drinks, not by features.
 
 {{pick:kurgo-collaps-a-bowl|Collapses under 1 in, holds 24 oz|Listed as top-rack dishwasher safe.|https://www.kurgo.com/pet-travel-bowls/collaps-a-bowl}}
 
-**A bigger bowl suits long walks or a thirsty large dog.** The Ruffwear Quencher holds 4.2 cups (1 L) in a fabric shell with a lining the maker labels Food Contact Safe ([Ruffwear](https://ruffwear.com/products/quencher-dog-bowl)). It is hand wash and air dry, and the shell is water-resistant, not waterproof.
+**A bigger bowl suits long walks or a thirsty large dog.** The Ruffwear Quencher holds 4.2 cups (1 L) in a fabric shell with a lining the maker labels Food Contact Safe. It is hand wash and air dry, and the shell is water-resistant, not waterproof.
 
 {{pick:ruffwear-quencher-bowl|Holds 4.2 cups (1 L) for a longer walk|Maker lists one size, Medium, with a 5.5 in opening, a lining labelled Food Contact Safe (the maker's wording, no tester named) and hand wash only.|https://ruffwear.com/products/quencher-dog-bowl}}
 
@@ -195,11 +195,11 @@ The [FDA](https://www.fda.gov/animal-veterinary/animal-health-literacy/proper-st
 
 The bag keeps the lot number and "best by" date, which matters if a food is recalled. The 80 F figure is what to check a hot trunk against; no source we read says how fast kibble spoils in a car.
 
-**For a weekend,** the bag plus a roll-top carrier does it. The Kurgo Kibble Carrier is a ripstop bag with a food-safe PEVA liner that holds up to 5 lbs, per the maker, and is hand wash only. It is made for carrying, not long-term storage ([Kurgo](https://www.kurgo.com/dog-travel/kibble-carrier)).
+**For a weekend,** the bag plus a roll-top carrier does it. The Kurgo Kibble Carrier is a ripstop bag with a food-safe PEVA liner that holds up to 5 lbs, per the maker, and is hand wash only. It is made for carrying, not long-term storage.
 
 {{pick:kurgo-kibble-carrier|Ripstop carrier, holds up to 5 lbs|Food-safe PEVA liner; hand wash only.|https://www.kurgo.com/dog-travel/kibble-carrier}}
 
-If you would rather have food and bowls in one carry, the Vittles Vault Travel-Tainer is a 6-cup container with two 3-cup bowls and a handle; the maker says actual capacity depends on kibble shape ([Petmate](https://www.petmate.com/vittles-vault-travel-trainer-portable-food-storage-container/product/4504)).
+If you would rather have food and bowls in one carry, the Vittles Vault Travel-Tainer is a 6-cup container with two 3-cup bowls and a handle; the maker says actual capacity depends on kibble shape.
 
 {{pick:vittles-vault-travel-tainer|6-cup container plus two 3-cup bowls|Carry handle; the maker says actual capacity depends on kibble shape and density.|https://www.petmate.com/vittles-vault-travel-trainer-portable-food-storage-container/product/4504}}
 
@@ -207,7 +207,7 @@ If you would rather have food and bowls in one carry, the Vittles Vault Travel-T
 
 {{pick:iris-usa-airtight-dog-food-container-10-lb|About 10 lb of dry food|Airtight seals and buckles; no bear-resistance claim.|https://www.irisusainc.com/collections/airtight-pet-food-containers/products/airtight-dog-food-storage-container-up-to-10-lbs-3}}
 
-**At a cabin in bear country, the food matters more than the container.** The [National Park Service](https://www.nps.gov/articles/bearsafetyfood.htm) says bears treat anything with a scent as food and that regulations differ from park to park; some let you keep food in a car, out of sight with the windows closed, in daylight only, while others require lockers. The page does not name pet food, so treat dog food as scented. West Virginia's wildlife agency is more direct: for homes and campsites, "all food, including dog food" belongs in a vehicle or a bear-resistant container ([West Virginia DNR](https://wvdnr.gov/bearwise-tips/)). None of the maker pages we read claim bear resistance, and an airtight lid is not a rating. So ask the host where food goes inside and whether there is a bear-resistant bin.
+**At a cabin in bear country, the food matters more than the container.** The [National Park Service](https://www.nps.gov/articles/bearsafetyfood.htm) says bears treat anything with a scent as food and that regulations differ from park to park; some let you keep food in a car, out of sight with the windows closed, in daylight only, while others require lockers. The page does not name pet food, so treat dog food as scented. West Virginia's wildlife agency is more direct: for homes and campsites, "all food, including dog food" belongs in a vehicle or a bear-resistant container. None of the maker pages we read claim bear resistance, and an airtight lid is not a rating. So ask the host where food goes inside and whether there is a bear-resistant bin.
 
 ## Portions and what else to pack
 

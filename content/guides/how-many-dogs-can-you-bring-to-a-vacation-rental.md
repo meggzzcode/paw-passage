@@ -169,9 +169,9 @@ The listing's own pet rule is the only number that counts. Of the 38 managers we
 
 ## How many dogs are allowed at an Airbnb or Vrbo?
 
-[Airbnb](https://www.airbnb.com/help/article/3623) shows two different numbers on two pages: guests declare 0 to 5 pets, hosts set one to five. Whether a host limit of two stops a guest from declaring three is not stated anywhere we read, so ask the host, then Airbnb: "Your listing limit is [number]. May we bring [number] dogs?" A hosting-software explainer updated 2 November 2026 says hosts "can specify whether pets are allowed and, if so, how many" ([Guestable](https://www.guestable.com/blog/airbnb-new-house-rules-policy/)), though no Airbnb page repeats that wording.
+[Airbnb](https://www.airbnb.com/help/article/3623) shows two different numbers on two pages: guests declare 0 to 5 pets, hosts set one to five. Whether a host limit of two stops a guest from declaring three is not stated anywhere we read, so ask the host, then Airbnb: "Your listing limit is [number]. May we bring [number] dogs?" A hosting-software explainer updated 2 November 2026 says hosts "can specify whether pets are allowed and, if so, how many", though no Airbnb page repeats that wording.
 
-Vrbo handles pets through house rules in text. Hosts can note pet type and size, with a custom note limited to 50 characters ([Vrbo](https://help.vrbo.com/articles/Add-or-edit-house-rules)). Read the whole listing, FAQ included.
+Vrbo handles pets through house rules in text. Hosts can note pet type and size, with a custom note limited to 50 characters. Read the whole listing, FAQ included.
 
 ## What do vacation rental managers allow?
 
@@ -231,11 +231,11 @@ Managers treat it as a serious violation: Twiddy calls it cause for termination 
 ## Do puppies and service animals count?
 
 - **Puppies:** none of the policies that give a number exempt them, so mention any puppy up front.
-- **Service animals:** [Airbnb](https://www.airbnb.com/help/article/3623) says they always stay for free, and hosts must allow one to accompany its owner ([Airbnb](https://www.airbnb.com/resources/hosting-homes/a/what-you-need-to-know-about-hosting-pets-463)). The ADA FAQ discusses hotel cleaning charges for service-animal hair or dander, not vacation rentals ([DOJ](https://www.ada.gov/resources/service-animals-faqs/)). No source we read says whether a service animal counts toward a numeric cap, so ask the host or manager early.
+- **Service animals:** [Airbnb](https://www.airbnb.com/help/article/3623) says they always stay for free, and hosts must allow one to accompany its owner. The ADA FAQ discusses hotel cleaning charges for service-animal hair or dander, not vacation rentals. No source we read says whether a service animal counts toward a numeric cap, so ask the host or manager early.
 
 ## How do you ask for a third dog?
 
-Hosts cite insurance, noise, hair, local caps and neighbours ([Tokeet](https://blog.tokeet.com/?p=6080)), so answer those in one clear message. Copy and edit:
+Hosts cite insurance, noise, hair, local caps and neighbours, so answer those in one clear message. Copy and edit:
 
 > Hi [Host], we are interested in [dates]. We would bring [number] dogs: [breed, weight and age of each]. All are house-trained and current on vaccines. Your listing allows pets but [does not give a number / says two]. Would you consider [number] dogs? Is there a weight limit per dog or combined? What is the total pet charge for our dates, and will it appear in the checkout total? We are happy to use covers on furniture and keep the dogs off beds, and we will feed them in separate spaces. If yes, please confirm here in writing.
 

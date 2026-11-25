@@ -143,7 +143,7 @@ content:
         type: code
         options:
           format: markdown
-        description: "Sources are linked like [[1]](https://...). Keep the numbers in the same order as the Sources list below. Tick boxes are written - [ ] and - [x]. An affiliate link is written [the words](aff:short-name), using a short name from Affiliate links; it shows as a link only once that link is Approved."
+        description: "List every source in the Sources field below. In the text, link a publisher only where the sentence names it, like [Airbnb](https://...), and only to an address in that list. Tick boxes are written - [ ] and - [x]. An affiliate link is written [the words](aff:short-name), using a short name from Affiliate links; it shows as a link only once that link is Approved."
       - name: faqs
         label: Questions and answers at the end
         type: object
@@ -155,7 +155,7 @@ content:
         label: Sources (shown at the end of the article)
         type: object
         list: true
-        description: "Number 1 here is the [[1]] link in the article, and so on."
+        description: "Every source you rely on goes here; it is printed in the Sources list at the end of the article."
         fields:
           - { name: title, label: Page title, type: string, required: true }
           - { name: url, label: Web address, type: string, required: true }

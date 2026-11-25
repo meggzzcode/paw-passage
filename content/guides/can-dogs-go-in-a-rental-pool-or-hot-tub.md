@@ -200,7 +200,7 @@ If a host does allow it, [VCA Animal Hospitals](https://vcahospitals.com/shop/ho
 
 ## What about a hot tub and a dog?
 
-The safest reading is that the dog stays out of it: where managers address hot tubs, the wording is a ban. The [CDC](https://www.cdc.gov/control-legionella/php/toolkit/hot-tub-module.html) recommends keeping hot tub water at or below 104 degrees Fahrenheit to prevent scalding. Cornell's veterinary college calls heatstroke a medical emergency: cool the dog right away and get it to a veterinary hospital ([Cornell Vet](https://www.vet.cornell.edu/index.php/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/heatstroke-medical-emergency)).
+The safest reading is that the dog stays out of it: where managers address hot tubs, the wording is a ban. The [CDC](https://www.cdc.gov/control-legionella/php/toolkit/hot-tub-module.html) recommends keeping hot tub water at or below 104 degrees Fahrenheit to prevent scalding. Cornell's veterinary college calls heatstroke a medical emergency: cool the dog right away and get it to a veterinary hospital.
 
 Our practical suggestions, not a source's rules: keep the dog on a lead near the tub and the cover on when nobody is using it, and if the dog went in, tell the host the same day, because a short message beats a surprise cleaning charge. No source we read gives a safe hot tub temperature or time for a dog, so for health worries, call your vet.
 

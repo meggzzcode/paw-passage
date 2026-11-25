@@ -173,16 +173,16 @@ If a dog turns up at a rental that says no pets, the host decides what happens n
 
 ## What can happen if you bring a dog to a no-pets rental
 
-**The platform sets the baseline and the host decides the rest.** Airbnb lists bringing pets into a "no pets" listing, exceeding the approved number of pets and not disclosing pets as rule-breaking. A host can talk to the guest, document the problem, leave an honest review, ask for payment through the Resolution Center or contact Airbnb, which may respond with education, warnings or, for repeated or severe cases, removal from the community ([Airbnb](https://www.airbnb.com/help/article/2894), [Airbnb animal safety](https://www.airbnb.com/help/article/2135/S)). [Vrbo](https://help.vrbo.com/articles/What-are-House-Rules) says travelers must agree to the house rules before they book; the page we read lists no penalties. Platform rules vary, so read the help page for the one you booked on.
+**The platform sets the baseline and the host decides the rest.** Airbnb lists bringing pets into a "no pets" listing, exceeding the approved number of pets and not disclosing pets as rule-breaking. A host can talk to the guest, document the problem, leave an honest review, ask for payment through the Resolution Center or contact Airbnb, which may respond with education, warnings or, for repeated or severe cases, removal from the community. [Vrbo](https://help.vrbo.com/articles/What-are-House-Rules) says travelers must agree to the house rules before they book; the page we read lists no penalties. Platform rules vary, so read the help page for the one you booked on.
 
 **Rental managers write their own penalties.** The next ones are examples from our sample of 38 managers, not rules that apply everywhere. In that sample, 14 describe some consequence for an unapproved pet, and 11 name an amount. Six, re-read on 2026-11-25:
 
-- Tahoe Vacation Rentals: a non-refundable $300 per pet for a pet at a non-pet-friendly home, and guests asked to vacate immediately ([policy](https://www.tahoevacationrentals.com/reservation-information/)).
-- Cabin Rentals of Georgia: all pet fees doubled if unauthorized dogs are discovered ([policy](https://cabin-rentals-of-georgia.com/policies)).
-- Brindley Beach Vacations: eviction without refund for a dog in a home not designated Dogs Welcome ([policy](https://www.brindleybeach.com/node/3691)).
-- Surf or Sound Realty: $400 per undeclared dog, cleaning costs on top in a home that is not dog friendly, and grounds for expedited eviction ([policy](https://www.surforsound.com/vacation-planning/rental-policies/)).
-- Aunt Bugs Cabin Rentals: a $500 fine and leaving the cabin without a refund ([policy](https://www.auntbugs.com/rental-policies/)).
-- Bear Camp Cabins: a fine of up to $1,000, removal from the property and all money paid forfeited ([policy](https://www.bearcampcabins.com/blog/gatlinburg-cabins-pigeon-forge-pet-friendly-cabins)).
+- Tahoe Vacation Rentals: a non-refundable $300 per pet for a pet at a non-pet-friendly home, and guests asked to vacate immediately.
+- Cabin Rentals of Georgia: all pet fees doubled if unauthorized dogs are discovered.
+- Brindley Beach Vacations: eviction without refund for a dog in a home not designated Dogs Welcome.
+- Surf or Sound Realty: $400 per undeclared dog, cleaning costs on top in a home that is not dog friendly, and grounds for expedited eviction.
+- Aunt Bugs Cabin Rentals: a $500 fine and leaving the cabin without a refund.
+- Bear Camp Cabins: a fine of up to $1,000, removal from the property and all money paid forfeited.
 
 Our dataset has the other managers and the [full pet-policy tables](/data/pet-policies). It is a convenience sample, so treat it as a reason to read your own booking terms, not as odds.
 
@@ -190,11 +190,11 @@ Our dataset has the other managers and the [full pet-policy tables](/data/pet-po
 
 ## Why hosts say no, and what that tells you to offer
 
-**Usually damage, allergies, insurance or liability.** A short-term-rental insurer's blog says many policies restrict coverage for guest-caused damage, that dander can turn away guests with allergies, and that hosts can be named in dog-bite claims even when the dog is not theirs ([Proper Insurance](https://www.proper.insure/blog/pros-and-cons-of-allowing-pets-at-your-rental/)). Your message works best when it answers the worry that matters to that host.
+**Usually damage, allergies, insurance or liability.** The [Proper Insurance](https://www.proper.insure/blog/pros-and-cons-of-allowing-pets-at-your-rental/) blog, from a short-term-rental insurer, says many policies restrict coverage for guest-caused damage, that dander can turn away guests with allergies, and that hosts can be named in dog-bite claims even when the dog is not theirs. Your message works best when it answers the worry that matters to that host.
 
 ## How to ask a host for an exception
 
-**Ask before you book, and make it easy to say yes.** Start with the listing's house rules and the pet line. On Airbnb you can filter for stays that allow pets under Filters, then Booking options, and the help page says to confirm with the host even then, naming the pets you plan to bring ([Airbnb](https://www.airbnb.com/help/article/86)). A travel writer at Afar says many owners will consider an exception unless the listing firmly rules pets out, and that offering a pet cleaning fee and a damage deposit helps ([Afar](https://www.afar.com/magazine/how-to-find-a-pet-friendly-airbnb-or-vacation-rental)). A firm "no pets" can still be a firm no.
+**Ask before you book, and make it easy to say yes.** Start with the listing's house rules and the pet line. On Airbnb you can filter for stays that allow pets under Filters, then Booking options, and the help page says to confirm with the host even then, naming the pets you plan to bring. A travel writer at Afar says many owners will consider an exception unless the listing firmly rules pets out, and that offering a pet cleaning fee and a damage deposit helps. A firm "no pets" can still be a firm no.
 
 Copy, edit and send before booking:
 
@@ -204,7 +204,7 @@ Copy, edit and send before booking:
 
 - A pet fee or a refundable deposit. Say it is yours to set.
 - Protection for soft surfaces, and a plan for when you are out. Hosts worry most about what happens when no one is home.
-- Written permission, kept in the booking thread. The AKC, writing about leases, advises getting an approval in writing with the pet's breed and weight and any deposit listed ([AKC](https://www.akc.org/expert-advice/home-living/happens-if-sneak-pet-into-rental/)). The same idea works for a rental.
+- Written permission, kept in the booking thread. The AKC, writing about leases, advises getting an approval in writing with the pet's breed and weight and any deposit listed. The same idea works for a rental.
 
 A washable cover is the simplest thing to offer for a bed or sofa. It is something to show a host, not a guarantee against damage, so ask the host whether they want it.
 
@@ -222,7 +222,7 @@ For floors, tell the host what you will do about accidents and muddy paws. A was
 
 **Book a stay that allows dogs, and compare the total.** Use the pet filter, then read the house rules for the number, size and breed lines. See [rentals that welcome large dogs](/guides/vacation-rentals-that-welcome-large-dogs), [rentals with no pet fee](/guides/vacation-rentals-with-no-pet-fee) and [how pet fees work](/guides/how-vacation-rental-pet-fees-work), or try the [will-my-dog-be-accepted tool](/tools/will-my-dog-be-accepted) and the [pet-friendly rental checklist](/guides/pet-friendly-vacation-rental-checklist).
 
-If you already booked, message the host before you travel. Airbnb says your cancellation policy is under the reservation details in Trips, and that a refund depends on the policy and on when you cancel ([Airbnb](https://www.airbnb.com/help/article/149)). If the answer is no, decide between cancelling under the policy and arranging boarding or a sitter. Waiting until check-in leaves the fewest options.
+If you already booked, message the host before you travel. Airbnb says your cancellation policy is under the reservation details in Trips, and that a refund depends on the policy and on when you cancel. If the answer is no, decide between cancelling under the policy and arranging boarding or a sitter. Waiting until check-in leaves the fewest options.
 
 ## Service animals and emotional support animals are a different question
 

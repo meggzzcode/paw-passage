@@ -52,7 +52,7 @@ Fees change, so check the manager's page again before you book. Enter your real 
 - [ ] Refundable deposit: how much, held how, released when?
 - [ ] Damage waiver or protection: what it covers and what it leaves to you.
 - [ ] Taxes and platform charges: the final payable amount.
-- [ ] Any request to pay a pet charge off-platform goes to platform support first ([Airbnb policy](https://www.airbnb.com/help/article/2799)).
+- [ ] Any request to pay a pet charge off-platform goes to platform support first.
 
 The same-looking number can bill very differently. As of 2026-11-18, Big Bear Vacations lists $40 per night per pet, while AMI Locals lists $250 per stay. For a 7-night stay with two dogs that is $560 versus $250, using the managers' own stated bases. [Vrbo notes](https://help.vrbo.com/articles/Does-HomeAway-Payments-automatically-issue-refunds-to-travelers) that property settings and pending claims can affect a refundable deposit's return.
 
@@ -92,7 +92,7 @@ The [fenced-yard guide](/guides/vacation-rental-secure-fenced-yard) has the phot
 
 ## Service animals (not covered by checks 1 to 3)
 
-Skip the pet rules if your dog is a service animal; use the platform's accessibility team. Under the ADA, a service animal is generally a dog individually trained to do work or perform tasks for a person with a disability, and emotional support alone does not qualify ([DOJ ADA FAQ](https://www.ada.gov/resources/service-animals-faqs/)). Coverage of a private rental depends on state law and platform policy, so ask the accessibility team, not the pet line.
+Skip the pet rules if your dog is a service animal; use the platform's accessibility team. Under the ADA, a service animal is generally a dog individually trained to do work or perform tasks for a person with a disability, and emotional support alone does not qualify. Coverage of a private rental depends on state law and platform policy, so ask the accessibility team, not the pet line.
 
 ## What to ask the host: one message to send
 
@@ -104,7 +104,7 @@ A clear approval names the dogs and the stay; "we're pet-friendly" is not one. M
 
 Most stays need none of this. Buy only for a line you flagged, once the rules are in writing, and skip anything the host already provides. More options sit in our [pens, gates and crates picks](/gear/pens-and-gates).
 
-**A rule that says crate when alone.** A crate your dog already knows removes the guess. The MidWest iCrate comes in seven sizes from 18 to 48 in, with a divider panel, a removable leak-proof pan and rubber feet that protect rental floors, and the maker says it folds flat ([MidWest Homes for Pets](https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/)). It is for a dog that is already crate-trained; the page gives no folded size or weight, so check your trunk. Skip it if the host provides a crate your dog fits.
+**A rule that says crate when alone.** A crate your dog already knows removes the guess. The MidWest iCrate comes in seven sizes from 18 to 48 in, with a divider panel, a removable leak-proof pan and rubber feet that protect rental floors, and the maker says it folds flat. It is for a dog that is already crate-trained; the page gives no folded size or weight, so check your trunk. Skip it if the host provides a crate your dog fits.
 
 {{pick:midwest-icrate-dog-crate|For a crate-when-alone rule|The maker lists sizes 18 to 48 in, an included divider panel, a removable pan and rubber feet.|https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/}}
 
@@ -116,7 +116,7 @@ Most stays need none of this. Buy only for a line you flagged, once the rules ar
 
 {{pick:north-states-mypet-universal-petgate|For closing a doorway without screws|The maker lists a 26 in gate for 26 to 42 in openings with a no-tools pressure mount; skip it for a jumper or the top of stairs.|https://northstatesind.com/north-states-mypet-universal-petgate/}}
 
-**A deck or lawn with no fence.** The MidWest Exercise Pen with Door works only with the host's written permission and with you outside too; the maker warns that a pet not trained to be restricted may try to escape ([MidWest Homes for Pets](https://www.midwesthomes4pets.com/wp-content/uploads/ExPen_550DR_Eng.pdf)). Our [pen and playpen guide](/guides/portable-dog-fence-and-playpen-guide-for-rentals) compares it with the alternatives.
+**A deck or lawn with no fence.** The MidWest Exercise Pen with Door works only with the host's written permission and with you outside too; the maker warns that a pet not trained to be restricted may try to escape. Our [pen and playpen guide](/guides/portable-dog-fence-and-playpen-guide-for-rentals) compares it with the alternatives.
 
 {{pick:midwest-exercise-pen-with-door|For a deck with no fence, if the host allows|Eight panels in 24 to 48 in sizes, a two-latch door and corner stabilizers; skip it for a dog that panics in enclosures or without written permission.|https://www.midwesthomes4pets.com/product/dogs/pens-gates-barriers/exercise-pen-with-door/}}
 

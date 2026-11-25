@@ -187,7 +187,7 @@ A fee is spent when you book; a deposit comes back unless there is a claim. Both
 
 Cabin Rentals of Georgia lists "a refundable $250 pet deposit" returned at departure if there is no pet damage or excessive pet hair. For one dog for five nights, the fee is $50 x 5 = $250, and with the $75 cleaning fee the definite, non-refundable pet cost is $325. The $250 deposit is separate cash held back, so $575 leaves your card at booking and $325 of it is gone for good.
 
-Vrbo describes a host-set damage deposit returned unless the host claims damage ([Manage your fees](https://help.vrbo.com/articles/How-do-I-manage-my-fees), [payment details](https://help.vrbo.com/articles/How-do-I-read-my-payment-details)). Ask who holds the money and when it is released.
+Vrbo describes a host-set damage deposit returned unless the host claims damage. Ask who holds the money and when it is released.
 
 Some managers swap the deposit for a fee. Tahoe Vacation Rentals sells a nonrefundable waiver covering up to $1,000 of accidental damage "in lieu of a security deposit". That's a cost even though it replaces a deposit.
 

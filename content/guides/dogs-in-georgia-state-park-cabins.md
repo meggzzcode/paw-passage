@@ -187,7 +187,7 @@ There is no single official list on the pages we read. The [cottages page](https
 
 - **Skidaway Island:** Cabin B, the ADA accessible one, allows pets; Cabins A and C do not.
 - **Mistletoe:** one cabin is described as pet-friendly for a fee, with no amount shown.
-- **Smithgall Woods:** the Garden Cottage is "our singular pet-friendly (with fee) cabin" among six cottages ([Georgia State Parks](https://gastateparks.org/SmithgallWoods/Cottages)).
+- **Smithgall Woods:** the Garden Cottage is "our singular pet-friendly (with fee) cabin" among six cottages.
 
 Fort Yargo and Red Top Mountain list cottages with no pet wording, so call before booking (770-867-3489 for Fort Yargo). Their pages: [Fort Yargo](https://gastateparks.org/FortYargo) and [Red Top Mountain](https://gastateparks.org/RedTopMountain).
 
@@ -198,19 +198,19 @@ An [Explore Georgia](https://exploregeorgia.org/places-to-stay/list/stay-in-thes
 The rules page does not say how to request. A practical route:
 
 1. Pick a cabin the park describes as dog-friendly, or ask which ones are.
-2. Call the reservations line, 1-800-864-7275 (Monday to Friday 8 a.m. to 8 p.m., Saturday and Sunday 9 a.m. to 5 p.m. Eastern, as of 2026-11-18), or the park office ([Georgia State Parks](https://gastateparks.org/Reservations)).
+2. Call the reservations line, 1-800-864-7275 (Monday to Friday 8 a.m. to 8 p.m., Saturday and Sunday 9 a.m. to 5 p.m. Eastern, as of 2026-11-18), or the park office.
 3. Say how many dogs you are bringing and ask for the request to be noted on the booking.
 4. Ask for a written confirmation, then bring it.
 
 The Mistletoe and Smithgall fee amounts are not shown on their pages, and the rules page says working service animals are allowed in overnight accommodations without explaining booking steps, so raise both when you call.
 
-Booking timing: reservations open 13 months ahead, or 14 for Georgia residents. Cancelling a cottage costs $10 if you cancel 15 or more days out, and you lose 50% of the use fee at 14 days or fewer. Check-in is 4 to 10 p.m., checkout 11 a.m., and the balance is due at check-in ([Georgia State Parks](https://gastateparks.org/ReservationPolicies)). The cottages page puts rates at around $85 to $250 per night with no separate cleaning fee, while the reservations page says $75 to $250, so confirm the price for your dates.
+Booking timing: reservations open 13 months ahead, or 14 for Georgia residents. Cancelling a cottage costs $10 if you cancel 15 or more days out, and you lose 50% of the use fee at 14 days or fewer. Check-in is 4 to 10 p.m., checkout 11 a.m., and the balance is due at check-in. The cottages page puts rates at around $85 to $250 per night with no separate cleaning fee, while the reservations page says $75 to $250, so confirm the price for your dates.
 
 ## Can you leave a dog alone in a state park cabin?
 
-No. A dog cannot wait in the cabin, your vehicle or the park while you hike, kayak or eat out ([Georgia State Parks](https://gastateparks.org/ParkRules)). Plan trips where the dog goes with you; see our guide to [leaving a dog alone in a rental](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental) for how private hosts word the same rule.
+No. A dog cannot wait in the cabin, your vehicle or the park while you hike, kayak or eat out. Plan trips where the dog goes with you; see our guide to [leaving a dog alone in a rental](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental) for how private hosts word the same rule.
 
-On trails, pets are welcome at state parks on a leash no longer than six feet, but not on some trails at Panola Mountain and Tallulah Gorge. Tallulah's own page says pets are not allowed on the gorge floor, Sliding Rock Trail or the Hurricane Falls staircase to the suspension bridge, and that leashed pets are welcome on the rim trails ([Georgia State Parks](https://gastateparks.org/TallulahGorge)). That page lists no cottages at Tallulah, so Tallulah is a day-hike stop in this guide, not a cabin to book. The Red Top Mountain page gives no trail rules for pets, so the six-foot rule is what the official pages support there.
+On trails, pets are welcome at state parks on a leash no longer than six feet, but not on some trails at Panola Mountain and Tallulah Gorge. Tallulah's own page says pets are not allowed on the gorge floor, Sliding Rock Trail or the Hurricane Falls staircase to the suspension bridge, and that leashed pets are welcome on the rim trails. That page lists no cottages at Tallulah, so Tallulah is a day-hike stop in this guide, not a cabin to book. The Red Top Mountain page gives no trail rules for pets, so the six-foot rule is what the official pages support there.
 
 ## Message to send
 

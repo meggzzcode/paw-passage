@@ -44,7 +44,7 @@ Not sure where your dog falls? Enter its weight and count in the [will my dog be
 
 ## Are there rentals with no dog weight limit?
 
-A few. Two of the 38 managers say so. [Sliding Rock Cabins](https://slidingrockcabins.com/) says: "Every cabin welcomes them with no pet fees, breed restrictions, or weight limits." Hapey Cabin Rentals says: "No weight limits. Great Danes and Chihuahuas are equally welcome." It also asks that dogs be "well behaved, up-to-date on vaccinations, and housebroken" ([Hapey Cabin Rentals](https://hapeycabinrentals.com/pet-friendly-smoky-mountain-cabin-rentals/)).
+A few. Two of the 38 managers say so. [Sliding Rock Cabins](https://slidingrockcabins.com/) says: "Every cabin welcomes them with no pet fees, breed restrictions, or weight limits." Hapey Cabin Rentals says: "No weight limits. Great Danes and Chihuahuas are equally welcome." It also asks that dogs be "well behaved, up-to-date on vaccinations, and housebroken".
 
 Two caveats. "No weight limit" is not "no rules": Hapey says more than two dogs should be mentioned at booking so they can confirm, so a count rule can sit beside a weight policy. And a marketing page is not your reservation; the booking terms are.
 
@@ -65,8 +65,8 @@ There is no universal booking definition of "large." Read the listing literally:
 
 Neither page we read sets a platform-wide number. Both put the pet policy in the host's house rules.
 
-- **Vrbo:** the "Pets allowed" house rule lets hosts "add information like the pet type and size permitted at your property" ([Vrbo](https://help.vrbo.com/articles/Add-or-edit-house-rules)). Vrbo also tells hosts to state "any size restriction," and guests "must agree to your house rules before they book" ([Vrbo help](https://help.vrbo.com/articles/What-are-House-Rules)).
-- **Airbnb:** the pet policy is in the listing's House rules, and Airbnb says: "Even if a listing says pets are allowed, always contact the host to confirm" ([Airbnb](https://www.airbnb.com/help/article/86)). Its host page lets guests state how many pets (0 to 5) they plan to bring and describes fee structures, but does not mention size or weight ([Airbnb](https://www.airbnb.com/help/article/3623)).
+- **Vrbo:** the "Pets allowed" house rule lets hosts "add information like the pet type and size permitted at your property". Vrbo also tells hosts to state "any size restriction," and guests "must agree to your house rules before they book".
+- **Airbnb:** the pet policy is in the listing's House rules, and Airbnb says: "Even if a listing says pets are allowed, always contact the host to confirm". Its host page lets guests state how many pets (0 to 5) they plan to bring and describes fee structures, but does not mention size or weight.
 
 So a "Pets allowed" badge tells you the host accepts animals, not your 72-pound dog. Open the house rules and search for "weight," "pounds," "breed," "stairs," "crate" and "unattended."
 
@@ -110,7 +110,7 @@ Once a rental passes permission, run these. The [full booking checklist](/guides
 
 ## When a breed rule applies
 
-Restrictions can come from an owner, insurer, association or building. The [Insurance Information Institute](https://www.iii.org/article/spotlight-on-dog-bite-liability) reports that insurers vary: some restrict certain breeds, some assess individual dogs, and some do not ask about breed. So "insurance won't allow it" is a real limit for some properties and not a universal one. Ask whether it is a firm property or insurer rule, or whether the host can approve your dog in writing. A pet health policy is a different product from liability cover for injuries or damage your dog causes ([Insurance Information Institute](https://www.iii.org/article/facts-about-pet-insurance)). Check with your own insurer whether liability extends to a temporary rental.
+Restrictions can come from an owner, insurer, association or building. The [Insurance Information Institute](https://www.iii.org/article/spotlight-on-dog-bite-liability) reports that insurers vary: some restrict certain breeds, some assess individual dogs, and some do not ask about breed. So "insurance won't allow it" is a real limit for some properties and not a universal one. Ask whether it is a firm property or insurer rule, or whether the host can approve your dog in writing. A pet health policy is a different product from liability cover for injuries or damage your dog causes. Check with your own insurer whether liability extends to a temporary rental.
 
 ## If the host says "protect the furniture"
 

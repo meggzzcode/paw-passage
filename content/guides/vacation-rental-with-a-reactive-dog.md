@@ -198,7 +198,7 @@ Find your dog's trigger, then use the "look for" and "ask" lines to read the lis
 
 Describe what your dog does and what you do about it, rather than relying on the word "reactive."
 
-The platform pages we read ask you to tell the host about the pets you bring and not to exceed the approved number ([Airbnb](https://www.airbnb.com/help/article/2894)). [Vrbo](https://help.vrbo.com/articles/What-are-House-Rules) says hosts set whether pets are allowed, how many and any size limit, and travelers agree to the house rules before they book. None mentions behavior, so what you share is your choice. On [Vrbo](https://help.vrbo.com/articles/How-do-I-contact-a-vacation-rental-owner-or-manager) you use "Contact host" on the listing, and keeping messages on the site helps protect you from phishing and fraud. Here is a message you can adapt:
+The platform pages we read ask you to tell the host about the pets you bring and not to exceed the approved number. [Vrbo](https://help.vrbo.com/articles/What-are-House-Rules) says hosts set whether pets are allowed, how many and any size limit, and travelers agree to the house rules before they book. None mentions behavior, so what you share is your choice. On [Vrbo](https://help.vrbo.com/articles/How-do-I-contact-a-vacation-rental-owner-or-manager) you use "Contact host" on the listing, and keeping messages on the site helps protect you from phishing and fraud. Here is a message you can adapt:
 
 > Hi [name], we are looking at your place for [dates]. We would be traveling with one dog, [size and age]. Our dog barks and pulls toward other dogs and strangers when they are close, and does best with space and a quiet setting. We manage this with a leash, a crate and off-peak walks, and we would like to be sure your place is a good fit before we book.
 >
@@ -257,7 +257,7 @@ A dog watching movement through a window is the most common trigger on this page
 
 {{pick:amazon-basics-dog-crate-cover-36-inch|For a 36-inch wire crate|Made for 36 x 23 x 26 in wire crates, per the listing; blocks the view into the crate, not noise.}}
 
-**Crate: the quiet room starts here.** If your dog already settles in a crate at home, bring it; it turns any corner into the quiet room before you unload. The MidWest iCrate comes in seven sizes from 18 to 48 in, with a divider panel and removable leak-proof pan, and the maker says it folds flat ([MidWest Homes for Pets](https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/)). A wire crate is open on the sides, so drape a cover over it (see above) or face it to a wall. Skip it if your dog has never used a crate.
+**Crate: the quiet room starts here.** If your dog already settles in a crate at home, bring it; it turns any corner into the quiet room before you unload. The MidWest iCrate comes in seven sizes from 18 to 48 in, with a divider panel and removable leak-proof pan, and the maker says it folds flat. A wire crate is open on the sides, so drape a cover over it (see above) or face it to a wall. Skip it if your dog has never used a crate.
 
 {{pick:midwest-icrate-dog-crate|For a crate-trained dog|The maker lists seven sizes, so you can match your dog.|https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/}}
 

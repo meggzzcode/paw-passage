@@ -224,7 +224,7 @@ The limits: these checks come from two sources, not a standard, and a dry or sha
 
 You. Never leave a dog unattended in a jacket, and a jacket does nothing about the other water problems:
 
-- **Tiring.** Offer fresh water and rinse the dog afterward ([VCA](https://vcahospitals.com/shop/home/articles/the-dos-and-don-ts-of-dog-water-safety)).
+- **Tiring.** Offer fresh water and rinse the dog afterward.
 - **Swallowed water.** [Cornell](https://www.vet.cornell.edu/departments/riney-canine-health-center/canine-health-information/summer-safety-tips) says a dog in and out of water all day can swallow a lot, and suggests half-hour breaks.
 - **Salt water.** Cornell says seawater's magnesium is a strong laxative and too much salt can cause tremors, disorientation and seizures. [AKC](https://www.akc.org/expert-advice/health/general-health/dogs-drinking-salt-water/) says large amounts can be fatal and suggests a break every 15 minutes. The two sources differ on intervals, so ask your vet.
 - **Algae.** The CDC says to rinse with tap water right after contact.

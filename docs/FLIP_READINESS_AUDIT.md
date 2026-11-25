@@ -10,7 +10,7 @@ The sections below are the 2026-11-23 audit; this block says what changed. Count
 
 | Then (2026-11-23) | Now (repo, verified 2026-11-24) |
 |---|---|
-| 30 published guides, about 76,900 words, 491 citations | 29 published guides, 45,093 words, 420 sources (all linked inside the text, no numbered markers, collapsible Sources list); independent reader mean 7.1 of 10, "ready with minor fixes", the later corrections not re-scored (`docs/FINAL_EDITORIAL_RELEASE.md`) |
+| 30 published guides, about 76,900 words, 491 citations | 29 published guides, 45,093 words, 420 sources (all listed in each guide's Sources list, light inline links where the sentence names its source, no numbered markers); independent reader mean 7.1 of 10, "ready with minor fixes", the later corrections not re-scored (`docs/FINAL_EDITORIAL_RELEASE.md`) |
 | Sitemap of 98 URLs | 103 URLs (the 95 plus 8 town "things to do" articles; no-weight-limit guide merged and 301-redirected; 11 gear categories); all 103 return 200 on the local build with canonicals, one H1, titles of 60 characters or fewer and 120 to 160 character descriptions |
 | 32 stays listed; 24 sitemap `/stays` URLs | 83 stay files, 78 listed (each with an approved Vrbo link), 23 in the sitemap, 55 listed `noindex`, 5 hidden; none verified |
 | 54 active products on production, 53 on the branch | 92 records, 65 active, all with an Amazon link; Gear redesigned as a photo-free editorial shop with 5 curated trip collections (its own spec scores it 7.7 of 10, below its 9 target) |

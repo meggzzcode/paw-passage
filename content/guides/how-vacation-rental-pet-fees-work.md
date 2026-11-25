@@ -147,7 +147,7 @@ Cabin B costs $45 less even with the fee, because its $30 nightly gap saves $120
 
 - Get one total for your dogs and your exact dates before you book. The wording decides it: [Airbnb](https://www.airbnb.com/help/article/3623) says hosts can charge per booking, per night, per pet, or per pet per night.
 - Keep refundable deposits and card holds in a separate column from definite expenses.
-- Where the ADA applies, pet fees and deposits must be waived for service animals ([DOJ](https://www.ada.gov/resources/service-animals-2010-requirements/)).
+- Where the ADA applies, pet fees and deposits must be waived for service animals.
 - Paying a fee does not override a weight limit, breed restriction or pet-count maximum. To see whether a home will take your dog at all, start with the [will my dog be accepted tool](/tools/will-my-dog-be-accepted).
 
 ## What 38 managers actually charge
@@ -207,7 +207,7 @@ A saving is no use if the dog is over the weight limit. See the [large-dog renta
 
 ## Service animals are not pets
 
-The [Department of Justice](https://www.ada.gov/resources/service-animals-2010-requirements/)'s ADA requirements say a business that requires a deposit or fee from patrons with pets must waive it for service animals. [Vrbo](https://help.vrbo.com/articles/What-is-HomeAway-s-service-animal-policy) says hosts in countries with service-animal laws must accommodate guests who need them regardless of the pet policy. The ADA FAQ adds that hotels may not charge for cleaning hair or dander shed by a service animal, though they may charge for damage as they would for any guest ([DOJ](https://www.ada.gov/resources/service-animals-faqs/)). The ADA does not automatically apply identically to every privately rented home, and other laws and platform rules may apply. Emotional support animals are not automatically ADA service animals, and you should not misrepresent a pet to avoid a fee.
+The [Department of Justice](https://www.ada.gov/resources/service-animals-2010-requirements/)'s ADA requirements say a business that requires a deposit or fee from patrons with pets must waive it for service animals. [Vrbo](https://help.vrbo.com/articles/What-is-HomeAway-s-service-animal-policy) says hosts in countries with service-animal laws must accommodate guests who need them regardless of the pet policy. The ADA FAQ adds that hotels may not charge for cleaning hair or dander shed by a service animal, though they may charge for damage as they would for any guest. The ADA does not automatically apply identically to every privately rented home, and other laws and platform rules may apply. Emotional support animals are not automatically ADA service animals, and you should not misrepresent a pet to avoid a fee.
 
 ## If a charge surprises you
 

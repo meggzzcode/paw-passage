@@ -232,7 +232,7 @@ Treat the listing text as a starting point and the photos as the answer.
 - [ ] **Bed and couch height.** [Cornell](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/osteoarthritis) lists trouble getting onto couches as a sign of joint disease and suggests ramps for beds, couches or cars.
 - [ ] **Steps down to the yard,** and whether it is fenced (see our [fenced-yard guide](/guides/vacation-rental-secure-fenced-yard)).
 
-[Airbnb](https://www.airbnb.com/resources/hosting-homes/a/a-guide-to-photographing-accessibility-features-30) asks hosts for step-free photos (nothing over 2 inches along the entrance route, a photo every 10 feet) and offers "Step-free access" and "Step-free bedroom access" filters ([Airbnb](https://www.airbnb.com/help/article/3138)). That was written for people, so treat it as a starting point for a dog.
+[Airbnb](https://www.airbnb.com/resources/hosting-homes/a/a-guide-to-photographing-accessibility-features-30) asks hosts for step-free photos (nothing over 2 inches along the entrance route, a photo every 10 feet) and offers "Step-free access" and "Step-free bedroom access" filters. That was written for people, so treat it as a starting point for a dog.
 
 ## What should you ask the host?
 
@@ -261,7 +261,7 @@ Most cap dogs at two, which matters for two older dogs (see [traveling with two 
 Bring grip with you, put the question to the host before laying anything down, and expect hard floors.
 
 - **Rugs or mats.** Banfield suggests non-slip rugs or yoga mats (see the floors check above). [Dog Aging Project](https://dogagingproject.org/mobility-tips-and-tricks-for-senior-dogs) suggests them where the dog lies down and in high-traffic areas, and says to be present the first time your dog uses them.
-- **Short nails** help paw-pad traction, and boots, rubber-soled socks or toe grips can help; the same page cautions about toe grips for chewers ([Dog Aging Project](https://dogagingproject.org/mobility-tips-and-tricks-for-senior-dogs)).
+- **Short nails** help paw-pad traction, and boots, rubber-soled socks or toe grips can help; the same Dog Aging Project page cautions about toe grips for chewers.
 - **Ramps and steps for furniture or a car.** [AKC](https://www.akc.org/expert-advice/health/general-health/dog-stairs-and-ramps/) says to match the height to the sofa, bed or trunk, check the weight limit and look for a non-slip surface. None of these pages says a ramp works for a full indoor flight, so for rental stairs rely on the photo check.
 - **Your own bed.** [Banfield](https://www.banfield.com/Senior-hub/care-for-older-pets/senior-proof-your-home) lists an orthopedic bed with a low profile, washable cover and non-slip bottom. A familiar bed also keeps the host's furniture clean.
 
@@ -269,7 +269,7 @@ Owners in forum threads (a small sample, so views, not rules) mention rubber bat
 
 ## What if your dog balks at the stairs when you arrive?
 
-Do not force it. Stop and work out a plan with the host; hesitating at stairs is a listed sign of joint disease, which is why a new refusal belongs in the vet section below ([Cornell Riney Center](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/osteoarthritis), [Banfield Pet Hospital](https://www.banfield.com/Senior-hub/common-health-issues-in-senior-pets/osteoarthritis-in-dogs-cats)). One Tripawds owner who pulled a refusing dog up by the leash was warned it "could definitely turn him off" the stairs, a good reason to do the photo check before you pay ([Tripawds forum](https://tripawds.com/forums/hopping-around/stairs-was-fine-and-then-it-changed)). Get the cancellation terms in writing in case the stairs turn out to be a problem.
+Do not force it. Stop and work out a plan with the host; hesitating at stairs is a listed sign of joint disease, which is why a new refusal belongs in the vet section below. One Tripawds owner who pulled a refusing dog up by the leash was warned it "could definitely turn him off" the stairs, a good reason to do the photo check before you pay. Get the cancellation terms in writing in case the stairs turn out to be a problem.
 
 ## What if your dog leaks or has accidents?
 
@@ -281,7 +281,7 @@ Whether a deposit or charge applies to an accident you reported and cleaned is a
 
 - **Emergency vet:** save one near the rental and check its hours. The [ASPCA](https://www.aspca.org/news/traveling-your-pets-dos-and-donts) says to keep a local veterinary emergency hospital in your phone; no source sets a distance, so pick the minutes you would accept.
 - **Poison help:** [ASPCA](https://www.aspca.org/pet-care/animal-poison-control) Animal Poison Control is 888-426-4435 and [Pet Poison Helpline](https://www.petpoisonhelpline.com/) is 855-764-7661; a consultation fee may apply.
-- **Medication and the drive:** a vet-written medication list with extra in case the return is delayed. No vet source we read gives a stop interval, so ask your vet, and never leave a pet in a parked car ([ASPCA](https://www.aspca.org/news/traveling-your-pets-dos-and-donts)).
+- **Medication and the drive:** a vet-written medication list with extra in case the return is delayed. No vet source we read gives a stop interval, so ask your vet, and never leave a pet in a parked car.
 
 The [first-aid kit guide](/guides/dog-travel-first-aid-kit-guide), [car safety guide](/guides/dog-car-safety-harness-and-crate-guide) and [cabin packing list](/guides/dog-friendly-cabin-packing-list) cover the rest.
 
@@ -289,7 +289,7 @@ The [first-aid kit guide](/guides/dog-travel-first-aid-kit-guide), [car safety g
 
 Call before booking if you see any sign below, and again if one appears on the trip.
 
-- **Joint signs.** [Banfield](https://www.banfield.com/Senior-hub/common-health-issues-in-senior-pets/osteoarthritis-in-dogs-cats) and Cornell list stiffness, trouble rising, hesitation on stairs and difficulty getting onto couches, and Banfield says not to dismiss them as just old age ([Cornell Riney Center](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/osteoarthritis)).
+- **Joint signs.** [Banfield](https://www.banfield.com/Senior-hub/common-health-issues-in-senior-pets/osteoarthritis-in-dogs-cats) and Cornell list stiffness, trouble rising, hesitation on stairs and difficulty getting onto couches, and Banfield says not to dismiss them as just old age.
 - **Behavior changes.** [ASPCA](https://www.aspca.org/pet-care/dog-care/common-dog-behavior-issues/behavior-problems-older-dogs) lists confusion and changes in sleep, activity or house training and says to report all changes to your vet. [AKC](https://www.akc.org/expert-advice/health/recognizing-behavioral-changes-in-senior-dogs/) says a full evaluation by your vet is imperative.
 - **Dementia is not the only explanation.** [Dog Aging Project](https://dogagingproject.org/understanding-behavioral-changes-in-senior-dogs/) says pain, dental disease, sensory loss and other illness can cause behavior changes, and that older dogs have a much tougher time with inconsistent routines, so keep feeding, walks and bedtime close to normal.
 
@@ -301,7 +301,7 @@ Each item answers one problem from the sections above; skip it if your dog does 
 
 {{pick:pet-parents-pawtect-pads|For a dog that may leak|Two to a pack, 18 x 24 in up to 41 x 41 in, with a floor-gripping backing.|https://petparentsbrand.com/products/washable-puppy-pads}}
 
-**For a bed that comes with you: a roll-up travel bed.** A familiar bed gives a stiff dog a place to settle on the host's floor. The Kurgo Loft Wander has a water-resistant top and a waterproof, non-slip bottom, and rolls up with a handle ([Kurgo](https://www.kurgo.com/p/loft-wander-dog-bed/K01560)). Measure your dog lying down; the page lists no weight limit. It is a fiber-filled travel bed, not an orthopedic one, so if your vet prescribed one, bring that instead.
+**For a bed that comes with you: a roll-up travel bed.** A familiar bed gives a stiff dog a place to settle on the host's floor. The Kurgo Loft Wander has a water-resistant top and a waterproof, non-slip bottom, and rolls up with a handle. Measure your dog lying down; the page lists no weight limit. It is a fiber-filled travel bed, not an orthopedic one, so if your vet prescribed one, bring that instead.
 
 {{pick:kurgo-loft-wander-dog-bed|For a portable bed|Opens to 27 x 36 in (Medium) or 36 x 48 in (Large); the linked listing is the Large.|https://www.kurgo.com/p/loft-wander-dog-bed/K01560}}
 

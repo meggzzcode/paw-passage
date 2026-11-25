@@ -189,7 +189,7 @@ Not sure the home takes your dog at all? Start with the [will my dog be accepted
 
 **2. What is the complete pet total?** None of the 38 managers' public pet pages we read (a small convenience sample, read 2026-11-18) stated a holiday pet surcharge, and the pet fees were flat or per-night figures. What differs is the room rate. Ask "what is the full total for these dates with one dog?" and compare with our [pet fees guide](/guides/how-vacation-rental-pet-fees-work).
 
-**3. What does cancellation look like?** Holiday weeks fill early and winter weather disrupts travel. Some cabin managers sell an optional guarantee for a refund window: [Aunt Bugs](https://www.auntbugs.com/rental-policies/) offers a Vacation Guarantee (7% plus tax) that allows a refund up to 30 days before arrival for 1-4 bedroom cabins and otherwise states "no cancellation policy", and Hearthside makes deposits non-refundable unless you buy the Reservation Guarantee (8%), with a refund at least 15 days before arrival for 1-5 bedroom cabins ([Hearthside Cabin Rentals](https://hearthsidecabinrentals.com/frequently-asked-questions)). Others use a sliding scale: [Tahoe Vacation Rentals](https://www.tahoevacationrentals.com/reservation-information/) refunds in full 30 or more days before check-in, 50% from 7 to 30 days, and nothing inside 7 days.
+**3. What does cancellation look like?** Holiday weeks fill early and winter weather disrupts travel. Some cabin managers sell an optional guarantee for a refund window: [Aunt Bugs](https://www.auntbugs.com/rental-policies/) offers a Vacation Guarantee (7% plus tax) that allows a refund up to 30 days before arrival for 1-4 bedroom cabins and otherwise states "no cancellation policy", and Hearthside makes deposits non-refundable unless you buy the Reservation Guarantee (8%), with a refund at least 15 days before arrival for 1-5 bedroom cabins. Others use a sliding scale: [Tahoe Vacation Rentals](https://www.tahoevacationrentals.com/reservation-information/) refunds in full 30 or more days before check-in, 50% from 7 to 30 days, and nothing inside 7 days.
 
 These are three managers, not a pattern. Ask whether a sick dog or a road closure changes anything, and whether the pet fee is refundable.
 
@@ -203,8 +203,8 @@ Most holiday emergencies come from things within reach of a nose.
 - **Tinsel and strings.** The ASPCA says ingested tinsel can cause "severe vomiting, obstructed digestive tract, dehydration" and may need surgery.
 - **Ornaments and cords.** Shards of breakable ornaments can damage the mouth and digestive tract, and a chewed wire can deliver a potentially lethal shock, says the ASPCA. [Pet Poison Helpline](https://www.petpoisonhelpline.com/pet-safety-tips/winter-holiday-pet-poison-tips/) says snow globes and bubble lights may contain poisonous chemicals.
 - **Poinsettia, holly and mistletoe.** The ASPCA says poinsettias cause mild to moderate stomach irritation, while mistletoe and holly can cause stomach upset and heart and circulation problems. [Pet Poison Helpline](https://www.petpoisonhelpline.com/uncategorized/holiday-pet-poison-myths-debunked/) calls poinsettias only mildly dangerous and says holly leaves can damage the stomach and intestines. Keep all three out of reach.
-- **Chocolate and xylitol.** Chocolate contains theobromine, which is highly toxic to dogs, and xylitol, found in some sugar-free gum and candy, is toxic to dogs ([Pet Poison Helpline](https://www.petpoisonhelpline.com/pet-safety-tips/winter-holiday-pet-poison-tips/)).
-- **Rich food and wrapped gifts.** Leftover fatty meat scraps can cause severe inflammation of the pancreas ([Pet Poison Helpline](https://www.petpoisonhelpline.com/pet-safety-tips/winter-holiday-pet-poison-tips/)). The [ASPCA](https://www.aspca.org/pet-care/general-pet-care/holiday-safety-tips) lists fatty, sweet and spicy foods and turkey or chicken bones as dangerous, and notes that a dog might smell food inside a wrapped present.
+- **Chocolate and xylitol.** According to [Pet Poison Helpline](https://www.petpoisonhelpline.com/pet-safety-tips/winter-holiday-pet-poison-tips/), chocolate contains theobromine, which is highly toxic to dogs, and xylitol, found in some sugar-free gum and candy, is toxic to dogs.
+- **Rich food and wrapped gifts.** Leftover fatty meat scraps can cause severe inflammation of the pancreas. The [ASPCA](https://www.aspca.org/pet-care/general-pet-care/holiday-safety-tips) lists fatty, sweet and spicy foods and turkey or chicken bones as dangerous, and notes that a dog might smell food inside a wrapped present.
 
 ## A tree and gift plan for a house you do not own
 
@@ -224,11 +224,11 @@ The practical version of PetMD's gate suggestion is a doorway gate on the tree r
 
 Four things do most of the work: a gate, a bed, a chew and, only if paths are icy, boots. More gates and pens are on our [pens and gates gear page](/gear/pens-and-gates); for a coat or fleece see the [cold-weather gear guide](/guides/cold-weather-dog-gear-for-winter-cabin-trips).
 
-**A gate for the tree room.** This is the practical version of the tree-room gate: it goes in the doorway, not around the tree. The maker says never to use it at the top of a stairway when held only by tension ([North States](https://northstatesind.com/north-states-mypet-universal-petgate/)). Ask the host before using the hardware mount. Skip it if the room has no doorway to gate, or if your dog jumps 26 inches; a closed door or crate time works better then. It will not circle a tree, and the maker claims no containment strength.
+**A gate for the tree room.** This is the practical version of the tree-room gate: it goes in the doorway, not around the tree. The maker says never to use it at the top of a stairway when held only by tension. Ask the host before using the hardware mount. Skip it if the room has no doorway to gate, or if your dog jumps 26 inches; a closed door or crate time works better then. It will not circle a tree, and the maker claims no containment strength.
 
 {{pick:north-states-mypet-universal-petgate|For a tree room with a doorway|For gating one doorway; pressure mount means no drilling.|https://northstatesind.com/north-states-mypet-universal-petgate/}}
 
-**A place to settle.** A roll-up bed gives the dog its own spot on an unfamiliar floor and washes when the cabin visit is over ([Kurgo](https://www.kurgo.com/p/loft-wander-dog-bed/K01560)). The page lists no dog weight guide, so choose the size by how your dog lies down.
+**A place to settle.** A roll-up bed gives the dog its own spot on an unfamiliar floor and washes when the cabin visit is over. The page lists no dog weight guide, so choose the size by how your dog lies down.
 
 {{pick:kurgo-loft-wander-dog-bed|A place to settle|A washable bed that rolls up for the car.|https://www.kurgo.com/p/loft-wander-dog-bed/K01560}}
 
@@ -244,7 +244,7 @@ Four things do most of the work: a gate, a bed, a chew and, only if paths are ic
 
 NFPA and the ASPCA give rules that travel well:
 
-- **Tree:** keep it at least three feet from any heat source such as fireplaces, radiators, candles, heat vents or lights; do not block an exit; and turn off tree lights before leaving home or going to bed ([NFPA](https://content.nfpa.org/-/media/project/storefront/catalog/files/safety-tip-sheets/christmastreesafetytips.pdf)).
+- **Tree:** keep it at least three feet from any heat source such as fireplaces, radiators, candles, heat vents or lights; do not block an exit; and turn off tree lights before leaving home or going to bed.
 - **Candles:** keep pets away from lit candles and blow them out when you leave the room or go to bed; [NFPA](https://content.nfpa.org/-/media/project/storefront/catalog/files/safety-tip-sheets/winterholidaysafetytips.pdf) says more than one-third of home decoration fires are started by candles. The [ASPCA](https://www.aspca.org/pet-care/general-pet-care/holiday-safety-tips) adds not to leave candles unattended.
 - **Fireplace:** neither source covers dogs and fireplaces, so ask the host how it works and whether it has a screen.
 
@@ -261,7 +261,7 @@ For cold, the [ASPCA](https://www.aspca.org/pet-care/general-pet-care/cold-weath
 
 ## Before you go
 
-Pack records, usual food, medication in original packaging, an ID tag with a number you will answer, and paw wipes and a towel for salty feet ([ASPCA](https://www.aspca.org/pet-care/general-pet-care/cold-weather-safety-tips)). On arrival, walk the house for loose cords, fireplace access, plants and small objects within reach. Our [cabin packing list](/guides/dog-friendly-cabin-packing-list) covers the rest, and the [packing list tool](/tools/packing-list) and [trip checklist](/tools/checklist) build your own.
+Pack records, usual food, medication in original packaging, an ID tag with a number you will answer, and paw wipes and a towel for salty feet. On arrival, walk the house for loose cords, fireplace access, plants and small objects within reach. Our [cabin packing list](/guides/dog-friendly-cabin-packing-list) covers the rest, and the [packing list tool](/tools/packing-list) and [trip checklist](/tools/checklist) build your own.
 
 ## What we could not confirm
 

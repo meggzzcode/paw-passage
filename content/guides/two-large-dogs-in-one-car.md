@@ -192,13 +192,13 @@ Compare the floor, wheel wells and height with a crate's exterior size. Lucky Du
 
 ## Space and fit: why two dogs is not double one
 
-Weight adds up. CPS says crash force is mass times acceleration, and for a crate the mass is the dog plus the crate ([Center for Pet Safety](https://centerforpetsafety.org/cargo-area-connection-advisory/)). Two crates side by side put both loads on the same cargo area.
+Weight adds up. CPS says crash force is mass times acceleration, and for a crate the mass is the dog plus the crate. Two crates side by side put both loads on the same cargo area.
 
-Width is the other limit, and this is arithmetic from maker figures, not a test. Lucky Duck lists its Intermediate Lucky Kennel for dogs under 70 pounds, with a 38-pound kennel and a 20.5 inch interior width. Two of them come to under 216 pounds in total, in more than 41 inches of interior width. The Large is listed for 70 to 110 pounds, with a 45-pound kennel and a 22 inch interior width: up to 310 pounds in total, and at least 44 inches of width before the walls. Its interior is 35.75 by 22 by 26.5 inches ([Lucky Duck](https://www.luckyduck.com/lucky-kennel-large)). Each dog should be able to stand, sit, lie down and turn around in its crate ([ASPCA](https://www.aspca.org/pet-care/general-pet-care/travel-safety-tips)).
+Width is the other limit, and this is arithmetic from maker figures, not a test. Lucky Duck lists its Intermediate Lucky Kennel for dogs under 70 pounds, with a 38-pound kennel and a 20.5 inch interior width. Two of them come to under 216 pounds in total, in more than 41 inches of interior width. The Large is listed for 70 to 110 pounds, with a 45-pound kennel and a 22 inch interior width: up to 310 pounds in total, and at least 44 inches of width before the walls. Its interior is 35.75 by 22 by 26.5 inches. Each dog should be able to stand, sit, lie down and turn around in its crate.
 
 ## Common setups and where each falls short
 
-**Two crates in the cargo area.** Never share one: [Vetstreet](https://www.vetstreet.com/?p=1117) says animals housed together can be injured if thrown against each other. The 2015 CPS study used 75 or 110 pound test dogs, one dog per crate ([Center for Pet Safety](https://centerforpetsafety.org/2015-crate-study-results/)). It found one maker's straps ruptured and released a crate, rubber straps gave no meaningful protection on a wire crate, and wire crates should be considered distraction-prevention tools. Strapping and crate construction matter as much as the crate itself.
+**Two crates in the cargo area.** Never share one: [Vetstreet](https://www.vetstreet.com/?p=1117) says animals housed together can be injured if thrown against each other. The 2015 CPS study used 75 or 110 pound test dogs, one dog per crate. It found one maker's straps ruptured and released a crate, rubber straps gave no meaningful protection on a wire crate, and wire crates should be considered distraction-prevention tools. Strapping and crate construction matter as much as the crate itself.
 
 **A harness per dog on the rear seat.** You need two good belt positions. A harness is rated by the dog's weight, so start with a published tested weight at or above your dog's, then check fit by girth. Above 75 lb we found no harness with a published test, and a harness that fits badly protects badly.
 
@@ -215,7 +215,7 @@ Width is the other limit, and this is arithmetic from maker figures, not a test.
 
 ## Travel-day comfort and stops
 
-The [CDC](https://www.cdc.gov/healthy-pets/travel/index.html) says temperatures in a parked car can rise within minutes and cause death, never to leave a pet alone in a parked vehicle, and to make frequent stops. Cornell's veterinary college calls heatstroke a medical emergency needing a veterinary hospital ([Cornell Vet](https://www.vet.cornell.edu/index.php/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/heatstroke-medical-emergency)).
+The [CDC](https://www.cdc.gov/healthy-pets/travel/index.html) says temperatures in a parked car can rise within minutes and cause death, never to leave a pet alone in a parked vehicle, and to make frequent stops. Cornell's veterinary college calls heatstroke a medical emergency needing a veterinary hospital.
 
 With two dogs, our suggestion, not a source's rule: clip both leashes before the door opens, and stop where you can water and walk each dog without leaving either in the car. Check that the vents reach a cargo area filled with two large crates. Our [packing list tool](/tools/packing-list) covers water and bowls. Restraint laws also differ by state: [AAA Northeast](https://magazine.northeast.aaa.com/?p=95415) gives Maine, where pets shouldn't ride on the driver's lap, and New York, which has no specific restraint law, as examples. This is not legal advice, so read the statutes for each state you cross.
 
@@ -223,7 +223,7 @@ With two dogs, our suggestion, not a source's rule: clip both leashes before the
 
 Each of these matches a setup above; the makers' claims are theirs unless a tester is named.
 
-**Strapped crates for an SUV or wagon.** CPS lists the Lucky Kennel Large as tested with a 110 pound dog and the Lucky Ratchet Strap Kit, one crate and one dog ([Center for Pet Safety](https://centerforpetsafety.org/lucky-duck-lucky-kennel-large/)). That listing is narrow, and the maker's "crash-test rated" wording should not be read as covering the Intermediate. By size, per the maker, the Large fits a dog of 70 to 110 pounds and the Intermediate ([Lucky Duck](https://www.luckyduck.com/products/lucky-kennel)) a dog under 70; two large dogs will often need two Larges. The CPS listing covers the Large only.
+**Strapped crates for an SUV or wagon.** CPS lists the Lucky Kennel Large as tested with a 110 pound dog and the Lucky Ratchet Strap Kit, one crate and one dog. That listing is narrow, and the maker's "crash-test rated" wording should not be read as covering the Intermediate. By size, per [Lucky Duck](https://www.luckyduck.com/products/lucky-kennel), the Large fits a dog of 70 to 110 pounds and the Intermediate a dog under 70; two large dogs will often need two Larges. The CPS listing covers the Large only.
 
 {{pick:lucky-duck-lucky-kennel-large|For each dog of 70 to 110 lb, in a wagon or SUV|Large: 35.75 x 22 x 26.5 in interior, 45 lb kennel, integrated tie-downs. Strap kit sold separately.|https://www.luckyduck.com/lucky-kennel-large}}
 
@@ -247,7 +247,7 @@ Each of these matches a setup above; the makers' claims are theirs unless a test
 
 ## Once you arrive
 
-The strapped crates above are for the car only. For the rental, a home crate such as the MidWest iCrate 36-inch double door lists 41-70 lb dogs and makes no crash claim, so do not use it as the car restraint; confirm your dog can stand, turn and lie down in it ([ASPCA](https://www.aspca.org/pet-care/general-pet-care/travel-safety-tips)). Its floor pad:
+The strapped crates above are for the car only. For the rental, a home crate such as the MidWest iCrate 36-inch double door lists 41-70 lb dogs and makes no crash claim, so do not use it as the car restraint; confirm your dog can stand, turn and lie down in it. Its floor pad:
 
 {{pick:joejoy-xl-dog-bed-41-42-inch-crates|A pad for a 41 or 42 in crate at the rental|The title states up to 80 lb; lesser-known brand, listing only, so skip it above 80 lb.|https://www.amazon.com/dp/B0FRMRRZV3}}
 

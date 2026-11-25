@@ -19,7 +19,7 @@ export const guide: Guide = {
 
 ## At a glance: what to carry
 
-- **The kit:** a waterproof or zippered kit that matches the AVMA checklist below, plus a digital thermometer, your contacts and your dog's records. One veterinary-written guide says many pre-made kits lack necessary items ([Preventive Vet](https://www.preventivevet.com/how-to-make-a-pet-first-aid-kit)).
+- **The kit:** a waterproof or zippered kit that matches the AVMA checklist below, plus a digital thermometer, your contacts and your dog's records. One veterinary-written guide says many pre-made kits lack necessary items.
 - **Where it rides:** the full kit at the cabin, a smaller grab kit in the car and a compact one on the trail.
 - **Ready-made options:** the ARCA PET 100-piece kit for the cabin and the smaller Adventure Medical Kits Trail Dog for a pack; both are covered below.
 - **Medication:** do not give any unless a vet or poison control tells you to. That includes human-use items in some ready-made kits.
@@ -54,13 +54,13 @@ The core list follows the [AVMA's pet first-aid brochure](https://ebusiness.avma
 
 ## If your dog may have eaten something harmful
 
-Call your vet, a local hospital or a hotline right away: ASPCA Poison Control 888-426-4435 or Pet Poison Helpline 855-764-7661. A consultation fee may apply to either call ([AVMA](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf), [ASPCA](https://www.aspca.org/pet-care/aspca-poison-control)). Keep the product or container for reference, and collect any vomited or chewed material in a sealed plastic bag. Do not induce vomiting unless a veterinarian or poison control tells you to.
+Call your vet, a local hospital or a hotline right away: ASPCA Poison Control 888-426-4435 or Pet Poison Helpline 855-764-7661. A consultation fee may apply to either call. Keep the product or container for reference, and collect any vomited or chewed material in a sealed plastic bag. Do not induce vomiting unless a veterinarian or poison control tells you to.
 
 Cabins add easy-to-miss risks: cleaners under sinks, rodent bait in outbuildings, human medications on a nightstand. See our [cabin packing list](/guides/dog-friendly-cabin-packing-list) and [rental checklist](/guides/pet-friendly-vacation-rental-checklist).
 
 ## What changes when you travel
 
-**Pack for the trip you are taking.** One veterinary-written guide splits its list into a home kit and a smaller kit for car trips, hiking and camping ([Preventive Vet](https://www.preventivevet.com/how-to-make-a-pet-first-aid-kit)). Another suggests a larger evacuation-style kit adds travel bowls, a leash and collar, towels or a blanket, a soft muzzle, and a pill organizer with a supply of medications ([Small Door](https://www.smalldoorvet.com/learning-center/medical/pet-first-aid-kit/)). Plan three layers:
+**Pack for the trip you are taking.** One veterinary-written guide splits its list into a home kit and a smaller kit for car trips, hiking and camping. Another suggests a larger evacuation-style kit adds travel bowls, a leash and collar, towels or a blanket, a soft muzzle, and a pill organizer with a supply of medications. Plan three layers:
 
 | Where | Kit | Prioritise |
 | --- | --- | --- |
@@ -68,21 +68,21 @@ Cabins add easy-to-miss risks: cleaners under sinks, rodent bait in outbuildings
 | Car | Smaller grab kit, kept where it does not bake in summer or freeze in winter | Bandage basics, tape, scissors, gloves, a cold pack |
 | Trail | Compact kit on you or your dog's pack | Wound care and the poison control numbers |
 
-**Map your emergency options.** Rural cabins can be far from a clinic. Look up the nearest emergency vet hospital, check whether it takes walk-ins and save the number ([Small Door](https://www.smalldoorvet.com/learning-center/medical/pet-first-aid-kit/)). Ask your host about nearby vets before you book.
+**Map your emergency options.** Rural cabins can be far from a clinic. Look up the nearest emergency vet hospital, check whether it takes walk-ins and save the number. Ask your host about nearby vets before you book.
 
-**Medications and records.** Bring regular medications in their original labeled containers, with a little extra if your vet agrees. Kit guides list human antihistamines, pain relievers and ointments and disagree on products and amounts; one says not to give human over-the-counter painkillers such as ibuprofen, acetaminophen or aspirin unless your vet says otherwise ([Mom Goes Camping](https://momgoescamping.com/dog-first-aid-kit/)). We list no doses because the right answer depends on your dog.
+**Medications and records.** Bring regular medications in their original labeled containers, with a little extra if your vet agrees. Kit guides list human antihistamines, pain relievers and ointments and disagree on products and amounts; [Mom Goes Camping](https://momgoescamping.com/dog-first-aid-kit/) says not to give human over-the-counter painkillers such as ibuprofen, acetaminophen or aspirin unless your vet says otherwise. We list no doses because the right answer depends on your dog.
 
 **Heat.** The [AVMA](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf) lists heatstroke signs: rapid breathing or heavy panting, excessive drooling, weakness or drowsiness, confusion, vomiting or diarrhea, and abnormally colored, dry or sticky gums. For heatstroke, call a vet and follow the cooling steps in our [heat guide](/guides/keep-a-dog-cool-on-a-summer-trip).
 
 ## Ready-made kit or build your own?
 
-A hybrid is often best: a ready-made kit gives you organized, often waterproof basics, and you fill the gaps. One veterinary-written guide recommends buying a pre-made travel kit and supplementing it ([Preventive Vet](https://www.preventivevet.com/how-to-make-a-pet-first-aid-kit)), and a travel-blog guide notes a custom kit may suit a dog better ([Pure Travel](https://puretravel.com/blog/2022/05/19/what-should-you-include-in-your-dogs-travel-first-aid-kit)). To judge any kit, hold its contents list against the AVMA checklist, count line items rather than the piece count, and note which medicines it includes, since some kits list human-use items.
+A hybrid is often best: a ready-made kit gives you organized, often waterproof basics, and you fill the gaps. One veterinary-written guide recommends buying a pre-made travel kit and supplementing it, and a travel-blog guide notes a custom kit may suit a dog better. To judge any kit, hold its contents list against the AVMA checklist, count line items rather than the piece count, and note which medicines it includes, since some kits list human-use items.
 
 **For the cabin, the ARCA PET 100-piece kit.** The Amazon listing states 100 pieces for cats and dogs, including a dog thermometer, a medicine feeder, a tick remover kit and a first-aid manual, in a reflective zipper pouch. We could not find a maker page, so the listing is all we have and it does not give a full contents list. Check the listing for bandage materials, scissors and saline before you rely on it, and top it up from the checklist.
 
 {{pick:arca-pet-cat-dog-first-aid-kit-100|100 pieces, with a thermometer and a first-aid manual|Cabin-size starting point; the listing states a dog thermometer, medicine feeder, tick remover kit and manual.|https://www.amazon.com/dp/B09FKVQQVH}}
 
-**For a day hike, the Adventure Medical Kits Trail Dog.** It is the smaller option because it is built for a pack. The maker lists 12 oz, 7.5 x 5.3 x 1.5 inches, in a waterproof Dryflex bag with a Pet First Aid Handbook ([Adventure Medical Kits](https://www.adventuremedicalkits.com/products/adventure-dog-medical-kit-trail-dog)). The listed contents are gauze dressings and pads, a roller gauze, an elastic bandage, a triangular bandage, a 10 cc irrigation tool, tick forceps and saline. It also lists triple antibiotic packets, 3% hydrogen peroxide and two diphenhydramine tablets, so take that list to your vet and set those aside if you want no medications. It suits one dog and a trail day; skip it as your only kit for a week at the cabin or a multi-dog trip.
+**For a day hike, the Adventure Medical Kits Trail Dog.** It is the smaller option because it is built for a pack. The maker lists 12 oz, 7.5 x 5.3 x 1.5 inches, in a waterproof Dryflex bag with a Pet First Aid Handbook. The listed contents are gauze dressings and pads, a roller gauze, an elastic bandage, a triangular bandage, a 10 cc irrigation tool, tick forceps and saline. It also lists triple antibiotic packets, 3% hydrogen peroxide and two diphenhydramine tablets, so take that list to your vet and set those aside if you want no medications. It suits one dog and a trail day; skip it as your only kit for a week at the cabin or a multi-dog trip.
 
 {{pick:amk-trail-dog|Pack-sized trail kit: 12 oz, waterproof bag|Compact kit for one dog on a trail day; no thermometer, muzzle or flashlight listed.|https://www.adventuremedicalkits.com/products/adventure-dog-medical-kit-trail-dog}}
 
@@ -90,7 +90,7 @@ A multi-dog trip needs duplicates of key items (see our [two-dog guide](/guides/
 
 ## Add-ons worth carrying, and what to leave out
 
-**A muzzle, if your dog may bite when hurt.** The [AVMA](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf) says to apply one if a pet threatens to bite, because pain and fear can make even the gentlest pet unpredictable; gauze or a triangular bandage works as an improvised one. A basket style lets the dog pant and drink. The [Baskerville Ultra Muzzle](https://companyofanimals.com/us/brand-product/baskerville-ultra-muzzle/) is sized by snout length with the maker's fitting guide, is heat-shapeable and lists a lockable strap, but the maker says it is not for extended periods and the dog should be supervised. Never muzzle a dog that is vomiting, overheating, struggling to breathe or in respiratory distress. Fit it in advance and practice at home with treats.
+**A muzzle, if your dog may bite when hurt.** The [AVMA](https://ebusiness.avma.org/files/ProductDownloads/mcm-client-brochures-pet-first-aid-2025.pdf) says to apply one if a pet threatens to bite, because pain and fear can make even the gentlest pet unpredictable; gauze or a triangular bandage works as an improvised one. A basket style lets the dog pant and drink. The Baskerville Ultra Muzzle is sized by snout length with the maker's fitting guide, is heat-shapeable and lists a lockable strap, but the maker says it is not for extended periods and the dog should be supervised. Never muzzle a dog that is vomiting, overheating, struggling to breathe or in respiratory distress. Fit it in advance and practice at home with treats.
 
 {{pick:baskerville-ultra-muzzle|Basket muzzle that allows panting and drinking|Sizes 2 to 6, chosen by snout length with the maker's fitting guide.|https://companyofanimals.com/us/brand-product/baskerville-ultra-muzzle/}}
 
@@ -100,14 +100,14 @@ A multi-dog trip needs duplicates of key items (see our [two-dog guide](/guides/
 
 Also worth carrying:
 
-- **An instant cold pack and a foil emergency blanket**, both in veterinary-written lists ([Small Door](https://www.smalldoorvet.com/learning-center/medical/pet-first-aid-kit/)).
-- **Styptic product for nail bleeding.** Several guides list it; one notes the product it names contains benzocaine and is for mild bleeding ([PetMD](https://www.petmd.com/general-health/must-have-items-for-pet-first-aid-kit)).
+- **An instant cold pack and a foil emergency blanket**, both in veterinary-written lists.
+- **Styptic product for nail bleeding.** Several guides list it; [PetMD](https://www.petmd.com/general-health/must-have-items-for-pet-first-aid-kit) notes the product it names contains benzocaine and is for mild bleeding.
 - **A tick remover.** Check tick risk at your destination.
 
 **Leave out unless your vet says otherwise**
 
-- Human painkillers ([Mom Goes Camping](https://momgoescamping.com/dog-first-aid-kit/)).
-- Antibiotic ointment you have not cleared with your vet. One guide warns triple antibiotic ointment should not be ingested by cats because its polymyxin B can cause anaphylaxis in cats ([Preventive Vet](https://www.preventivevet.com/how-to-make-a-pet-first-aid-kit)).
+- Human painkillers.
+- Antibiotic ointment you have not cleared with your vet. [Preventive Vet](https://www.preventivevet.com/how-to-make-a-pet-first-aid-kit) warns triple antibiotic ointment should not be ingested by cats because its polymyxin B can cause anaphylaxis in cats.
 - Anything you do not know how to use. A poorly applied bandage or splint can do more harm than good, and the AVMA says to leave the step to the vet if you are uncertain.
 
 ## Learn the basics before you need them
@@ -123,7 +123,7 @@ A first-aid class taught by a veterinary professional teaches the practical part
 
 ## Before every trip
 
-Check the kit and replace anything used, damaged or past its expiry date. One list recommends reviewing it every six months, another every few months ([PetMD](https://www.petmd.com/general-health/must-have-items-for-pet-first-aid-kit), [Small Door](https://www.smalldoorvet.com/learning-center/medical/pet-first-aid-kit/)).
+Check the kit and replace anything used, damaged or past its expiry date. One list recommends reviewing it every six months, another every few months.
 
 - [ ] Vet, emergency clinic near the destination and both poison control numbers saved and written down.
 - [ ] Medical records and medication list copied.

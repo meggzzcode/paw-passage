@@ -2,8 +2,8 @@
 # This file tells Pages CMS what forms to show for each kind of content. It only ever edits the
 # files in /content and the photos in /public/uploads. It cannot change the website's code.
 #
-# STATUS: written from Pages CMS's published documentation. It has NOT yet been opened in the live
-# Pages CMS app (that needs the owner's GitHub login). See BUYER_HANDOVER.md, "First-time CMS test".
+# STATUS: the forms were opened in the live Pages CMS app on 2026-11-25 (Cowork preflight: every form loads, no
+# configuration error; nothing was saved). The full edit, save and publish loop is NOT yet verified: see BUYER_HANDOVER.md.
 
 # Keep any setting in a file that this form doesn't know about, instead of deleting it on save.
 settings:
@@ -36,7 +36,7 @@ content:
         label: Status
         type: select
         required: true
-        description: "Keep on Draft while you write. A article goes live only when it is Published AND has an 'Approved by' name and date below."
+        description: "Keep on Draft while you write. An article goes live only when it is Published AND has an 'Approved by' name and date below."
         options:
           values:
             - { value: draft, label: "Draft (not on the website)" }
@@ -699,5 +699,5 @@ content:
         default: affiliate-only
         options:
           values:
-            - { value: affiliate-only, label: "Only stays with an approved affiliate link (current behaviour)" }
+            - { value: affiliate-only, label: "Only stays with an approved affiliate link (older mode: the directory empties if the seller links are removed)" }
             - { value: public-sources, label: "Also stays with a plain public Vrbo or Airbnb source link (no commission)" }

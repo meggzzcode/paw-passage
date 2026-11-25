@@ -31,3 +31,8 @@
 
 ## Proposed inbound links (do not edit old guides)
 Winter road trip article; cold-weather guide ("The car and the cabin"); first-aid guide (cold exposure); packing list guide.
+
+## Reader-first edit (W6, 2026-11-25): claims removed from the draft
+- Cornell heatstroke row: the "closed RV in winter sun" paragraph is no longer in the text (the Cornell heatstroke source stays listed).
+- CDC CO symptom list shortened to headache, dizziness, vomiting; the per-manager-style example bullets for five parks are replaced by one line that links each park page for the question it illustrates (number, breeds, fees, leaving dogs alone, quiet hours).
+- Removed the "what we could not confirm" section (the same limits stay in research.unverified).

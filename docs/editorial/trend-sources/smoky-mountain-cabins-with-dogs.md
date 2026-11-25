@@ -30,3 +30,7 @@ Venture Smoky Mountains (not in the 38) not used; SmokyMountains.com article, AA
 ## Proposed inbound links (do not edit old guides)
 Christmas guide ("What to ask before you book a holiday week"); fees guide; how-many-dogs guide; Georgia state park cabins guide; cold-weather guide ("The car and the cabin"); winter road trip article.
 Distinct from the multi-dog worksheet (merged into how-many-dogs): this guide links there for count and arithmetic.
+
+## Reader-first edit (W6, 2026-11-25): claims removed from the draft
+- The seven-row manager table and the per-manager two-dog arithmetic are replaced by one summary paragraph (counts and $50 to $75 range as in the dataset method above); Elk Springs, Hapey and Hemlock Hills figures are no longer printed individually. No weight figure is published, as before.
+- Removed the "outside Christmas week" section (summer cooling and Georgia state park links) and "what we could not confirm" (kept as the read-date sentence under the message). Removed the Cabins USA-specific consequence count ("four of seven").

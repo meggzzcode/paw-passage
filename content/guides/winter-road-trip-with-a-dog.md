@@ -136,94 +136,66 @@ research:
     - "Inbound links in existing guides are listed in the source record; not edited here."
   researchComplete: false
 ---
+A winter drive with a dog comes down to three decisions you make before you pack: how the dog rides, how often you stop, and what you'll do if the road closes or the cabin isn't ready. Never leave the dog alone in the parked car, because cold is dangerous too. Keep water, food and a blanket within reach, and have a backup lodging that takes dogs. The timeline and problem table below walk you through it.
 
-Plan the drive around your dog's worst hour, not the average one: a closed road, a long wait or a cold stop. Fix three things before you pack: how the dog rides, where and how often you stop, and what you will do if the route or the cabin falls through. The two tables below give you a drive-day timeline and a plan for five common problems.
+**Never leave the dog in a parked car.** CDC says never leave a pet alone in a parked vehicle and that cold weather is also dangerous. [ASPCA](https://www.aspca.org/pet-care/general-pet-care/cold-weather-safety-tips) says cars hold in the cold, and Cornell says the inside can become like a refrigerator. A winter stop is a reason to split up, not to leave the dog. Driving an RV or camper? See [winter RV travel with a dog](/guides/winter-rv-travel-with-a-dog) for heat, gas and carbon monoxide.
 
 ## Before you leave
 
-- **Practice drives.** CDC says to take a dog that is not used to the car on a series of short drives, building up the time, and to feed 3 to 4 hours before leaving to cut the chance of car sickness.
-- **ID and records.** CDC says to microchip your dog and keep the contact details current. [PetMD](https://www.petmd.com/dog/seasonal/cold-weather-safety-tips-traveling-pet) adds a collar with current contact details, printed medical records from your vet, extra medication in case the trip runs long, and emergency vet contacts near your destination and along the route. It also says to check whether you need a current health certificate, typically when crossing state lines; [CDC](https://www.cdc.gov/healthy-pets/travel/index.html) says to check each state's requirements first.
-- **Ask your vet** about your own dog's limits in cold, especially a puppy, an older dog or one with a health condition. This is not veterinary advice.
-- **Know who is open.** CDC suggests finding a 24-hour emergency veterinary hospital where you will be staying and keeping the ASPCA Animal Poison Control number, (888) 426-4435, with you. Save both in your phone, not only on paper.
+- **Practice drives.** If your dog isn't used to the car, do a few short drives first, building up the time, and feed 3 to 4 hours before leaving (CDC).
+- **ID and records.** Microchip with current contact details (CDC), a collar with current contact details, printed medical records and extra medication in case the trip runs long ([PetMD](https://www.petmd.com/dog/seasonal/cold-weather-safety-tips-traveling-pet)). Check whether you need a current health certificate, typically when crossing state lines, and each state's requirements ([CDC](https://www.cdc.gov/healthy-pets/travel/index.html)).
+- **Know who's open.** Save a 24-hour emergency veterinary hospital near where you're staying and the ASPCA Animal Poison Control number, (888) 426-4435, in your phone, not only on paper.
+- **Ask your vet** about your dog's limits in cold, especially a puppy, an older dog or one with a health condition. This is not veterinary advice.
 
-## How the dog rides
+## How does the dog ride?
 
-CDC says a dog riding on the seat should be in the back seat in a harness attached to the seat buckle, and that a crate should be big enough to stand, sit, lie down and turn in, well ventilated and secured so it cannot slide when you brake. PetMD notes that unrestrained pets can quickly become a distraction.
-
-Cold adds only one thing here: bulk. Our suggestion is to check that a coat or sweater does not change where the harness sits or add slack, and to take a thick layer off if it does. For how to judge a harness or crate, see our [car safety harness and crate guide](/guides/dog-car-safety-harness-and-crate-guide); we do not repeat it here. For two big dogs, see [two large dogs in one car](/guides/two-large-dogs-in-one-car).
+Back seat, in a harness attached to the seat buckle, or in a crate that's secured so it can't slide when you brake (CDC). A coat or sweater shouldn't change where the harness sits or add slack; take a thick layer off if it does. See our [car safety harness and crate guide](/guides/dog-car-safety-harness-and-crate-guide), or [two large dogs in one car](/guides/two-large-dogs-in-one-car).
 
 ## Drive-day timeline
 
-This is our suggested sequence, built from the sources named under the table. Adjust it to your route.
+Our suggested sequence; adjust it to your route.
 
 | When | What to do |
 |---|---|
 | The night before | Check the forecast and road status for the whole route, not only the start. Charge phones and a power bank. Fill the water bottle. Put records and vet numbers where you can reach them without unpacking. |
-| Leaving | Fuel up if you are under half a tank. Walk the dog and let it relieve itself first. Clear snow and ice from the car before the dog gets in. |
+| Leaving | Fuel up if you're under half a tank (AAA). Walk the dog and let it relieve itself first. Clear snow and ice from the car before the dog gets in. |
 | First hour | Watch how the dog settles. A short early stop is better than a long wait later. |
-| Each stop | Leash on before the door opens. Check the ground for ice melt and puddles of antifreeze. Wipe paws before the dog gets back in. Offer water. |
-| Fuel stops | One person stays with the dog, or both go in turns. The dog does not wait alone in the car. |
-| Last hour | Call the host or manager if you will arrive late. Confirm entry instructions and parking. Look at the cabin approach in daylight if you can. |
-| Arrival | Unload the dog first, then the car. Check the paths and steps for salt, ice or antifreeze before the dog does. |
+| Each stop | Stop about every two hours, sooner for a puppy, an older dog or a restless dog (AAA, PetMD). Leash on before the door opens. Check the ground for ice melt and puddles of antifreeze; ethylene glycol antifreeze can be deadly. Wipe paws before the dog gets back in. Offer water. |
+| Fuel stops | One person stays with the dog, or you go in turns. The dog doesn't wait alone in the car. |
+| Last hour | Call the host or manager if you'll arrive late. Confirm entry instructions and parking. Look at the cabin approach in daylight if you can. |
+| Arrival | Unload the dog first, then the car. Check paths and steps for salt, ice or antifreeze before the dog does. Bring in the dog, its bed, food, water, any medication and the wet towels; the car keeps the luggage. |
 
-Where each part comes from: AAA advises half a tank or more of fuel; CDC says to make frequent stops; PetMD says to check sidewalks, lots and roads at stops for ice-melt products and to wipe paws after each pit stop with grooming wipes; Cornell says to clean up antifreeze spills right away and that ethylene glycol antifreeze can be deadly to pets. [ASPCA](https://www.aspca.org/pet-care/general-pet-care/cold-weather-safety-tips) says to towel-dry the dog's feet and between the toes when it comes in.
-
-## Stops, water and food in the cold
-
-**How often.** [AAA](https://cluballiance.aaa.com/the-extra-mile/articles/prepare/travel/how-to-road-trip-with-your-dog) suggests roughly every two hours and notes more may be needed when a dog is confined in a vehicle; PetMD says every few hours. No source gives one correct number, so plan for the earlier end and let the dog's behavior decide.
-
-**Never leave the dog in a parked car.** CDC says never leave a pet alone in a parked vehicle and that cold weather is also dangerous. [ASPCA](https://www.aspca.org/pet-care/general-pet-care/cold-weather-safety-tips) says cars hold in the cold, and Cornell says the inside can become like a refrigerator. A winter stop is a reason to split up, not to leave the dog.
-
-**Water and food.** PetMD says to pack extra food in a secure container and a portable water bowl, which matters most if you get stuck in traffic or have car trouble. ASPCA says to feed a little extra in cold weather, since pets burn energy staying warm, and to provide plenty of water. Our suggestion: keep the water bottle inside the car cabin, not the trunk, and check that it still pours before you rely on it. We found no source on when water freezes.
+Water and food: pack extra food in a secure container and a portable water bowl, which matters most if you're stuck in traffic or have car trouble (PetMD), and feed a little extra in the cold (ASPCA). Our suggestion: keep the water bottle in the car's cabin, not the trunk, and check that it still pours. We found no source on when water freezes.
 
 {{pick:springland-22oz-original-travel-bottle|A spill-proof water bottle for the cabin of the car|The maker describes a squeeze-to-fill bottle with an attached bowl and a leak-proof lock, operated with one hand; the page gives no separate capacity figure, and it does not address freezing.|https://springlandpets.com/products/22oz-classic-dog-travel-water-bottle}}
 
-**Paws at stops.** Wipe after each stop and, on a longer walk, see our [boots versus paw wax guide](/guides/dog-boots-or-paw-wax-for-winter) for what to use and when to call a vet.
+Boots, wax, towels and the paw-wiping routine live in our [boots or paw wax guide](/guides/dog-boots-or-paw-wax-for-winter); cold limits and coats are in the [cold-weather gear guide](/guides/cold-weather-dog-gear-for-winter-cabin-trips).
 
-## When something goes wrong
+## What if something goes wrong?
 
-This table is our planning aid, not a veterinary protocol. It leans on AAA's winter driving advice, NPS's note about mountain roads, and the ASPCA and Cornell winter guidance named below it.
+Our planning aid, not a veterinary protocol.
 
 | Situation | What to have | What to do |
 |---|---|---|
-| The road closes ahead | A second route saved offline; the dog's water and food within reach; a phone that is charged | Turn around or stop at the next safe town. Do not push on to a closure. Check the park, county or state road status page again before choosing the next route. |
-| Breakdown or stuck in snow | A winter kit, a blanket, a power bank, the dog restrained or crated | If you are in a safe location, stay in the vehicle and call roadside help. Keep the dog with you, warm and dry. Do not walk off with the dog to look for help unless you are not safe where you are. |
+| The road closes ahead | A second route saved offline; the dog's water and food within reach; a charged phone | Turn around or stop at the next safe town. Don't push on to a closure. Check the park, county or state road status page again before choosing the next route. |
+| Breakdown or stuck in snow | A winter kit, a blanket, a power bank, the dog restrained or crated | If you're in a safe location, stay in the vehicle and call roadside help. Keep the dog with you, warm and dry. Don't walk off with the dog to look for help unless you're not safe where you are. |
 | Stranded for hours | Extra food and water, a blanket for the dog, the vet and poison control numbers | Stay together. Watch the dog for shivering, whining, a tucked tail or lifting paws, and warm it slowly if it seems cold. |
-| Cabin not ready or entry fails | Host contact, the reservation and a printed copy, a backup lodging with a pet policy confirmed | Call the host. If you cannot get in, go to the backup. Do not leave the dog in the car while you sort it out. |
-| The dog will not go out at a stop | A leash, a towel, a quiet corner of the lot | Try a quieter spot and a short wait. A dog that refuses may be cold, sore-footed or stressed; Cornell lists these signs of cold. If the dog seems unwell, call a vet. |
+| Cabin not ready or entry fails | Host contact, the reservation and a printed copy, a backup lodging with a pet policy confirmed | Call the host. If you can't get in, go to the backup. Don't leave the dog in the car while you sort it out. |
+| The dog won't go out at a stop | A leash, a towel, a quiet corner of the lot | Try a quieter spot and a short wait. A dog that refuses may be cold, sore-footed or stressed; Cornell lists these signs of cold. If the dog seems unwell, call a vet. |
 
-On closures, the [National Park Service](https://www.nps.gov/grsm/planyourvisit/seasonalroads.htm) tells Great Smoky Mountains visitors to know the status of the park's roads before they go and warns that clear skies in lower areas do not guarantee the same weather at higher elevations. Secondary roads there are subject to closure for snow or ice. [AAA](https://cluballiance.aaa.com/the-extra-mile/advice/car/tips-for-safe-winter-driving) recommends staying in your vehicle if you are stuck in a safe location and calling roadside help, and keeping a kit with a blanket, water, snacks, a flashlight, a first aid kit and a phone power source. The AAA page we read gives no guidance on running the engine while stranded, so neither does our table.
+Check the road status before you go; clear skies in town don't mean clear roads higher up ([NPS](https://www.nps.gov/grsm/planyourvisit/seasonalroads.htm)). If you're stuck in a safe place, [AAA](https://cluballiance.aaa.com/the-extra-mile/advice/car/tips-for-safe-winter-driving) says to stay in the vehicle and call roadside help, with a blanket, water, snacks, a flashlight, a first aid kit and a phone power source in the car.
 
-For signs of cold stress, [Cornell](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/winter-safety-tips) lists shivering, whining, a tucked tail, lifting paws, reluctance to walk and sudden anxiety, and says a dog that may have frostbite or hypothermia should be seen by a veterinarian immediately. [VCA](https://vcahospitals.com/know-your-pet/frostbite-in-dogs) says signs of frostbite can take days to show, and not to rub the area or use direct heat. Nothing in a car kit, coat or boot prevents frostbite or hypothermia; shorter exposure and a vet do more.
+If you think it's frostbite or hypothermia, see a vet right away ([Cornell](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/winter-safety-tips)); don't rub the area or use direct heat, and know that signs can take days to show ([VCA](https://vcahospitals.com/know-your-pet/frostbite-in-dogs)). Nothing in a car kit, coat or boot prevents either; shorter exposure and a vet do more.
 
 {{pick:amk-trail-dog|A compact first aid kit for the glove box|The maker lists wound-care items such as gauze, bandages and a saline solution, packed in a waterproof bag with a pet first aid handbook; it is not a treatment for frostbite or hypothermia.|https://www.adventuremedicalkits.com/products/adventure-dog-medical-kit-trail-dog}}
 
-## Cold, clothing and paws, briefly
+## More than one dog?
 
-Cold limits vary by dog, and the sources disagree on numbers, so we do not give one. Our [cold-weather gear guide](/guides/cold-weather-dog-gear-for-winter-cabin-trips) sorts dogs by cold risk and covers coats. For paws on ice and salt, use the [boots or paw wax decision guide](/guides/dog-boots-or-paw-wax-for-winter).
-
-## What stays in the car and what comes inside
-
-Nothing the dog needs stays in the car overnight. Bring in the dog, its bed, food, water, any medication and the wet towels. The car stays for luggage. PetMD lists extra medication as part of what to pack; our suggestion is to carry it in with you. Dry wet boots and coats inside too.
-
-Our [cabin packing list](/guides/dog-friendly-cabin-packing-list) covers the full kit, and our [Christmas week guide](/guides/christmas-week-in-a-cabin-with-a-dog) covers booking terms and holiday hazards. For a muddy or wet dog in the car, see [how to protect your car interior](/guides/protect-your-car-interior-from-a-dog-on-a-road-trip).
-
-## One dog or several
-
-These points are our suggestions, not from a source.
-
-- Stops take longer with more dogs: allow time for each to relieve itself and be wiped.
-- Decide who rides where before you leave, and who handles which leash at a stop.
-- Plan for the slowest dog: the older one, the puppy or the one that gets car sick sets the pace.
-- Keep water, a towel and a blanket per dog within reach.
-
-## Backups
-
-Keep a printed copy of reservations and records, a second lodging that accepts dogs (AAA suggests calling ahead about pet fees and where dogs are allowed), the nearest emergency vet along the route, and the poison control number. Winter in an RV is a different plan, with heating and carbon monoxide to think about; see [winter RV travel with a dog](/guides/winter-rv-travel-with-a-dog).
+Our suggestions, not from a source: the slowest dog sets the pace, and each dog gets its own water, towel and blanket.
 
 ## Make the packing list yours
 
-Choose the road trip preset, add the days and dogs, and add cold-weather items.
+Choose the road trip preset, add the days and dogs, and add cold-weather items. Our [cabin packing list](/guides/dog-friendly-cabin-packing-list) covers the full kit, and the [Christmas week guide](/guides/christmas-week-in-a-cabin-with-a-dog) covers booking terms and holiday hazards.
 
 {{planner:road-trip}}
 

@@ -141,117 +141,81 @@ research:
   researchComplete: false
 approvedBy: Paws & Passage Editors
 ---
-In a winter RV, your dog is as safe as the rig's heat, ventilation and gas systems and the supervision you give it. Check the RV first: working carbon monoxide and propane alarms, a heat source you understand and no fuel-burning improvisations. Then check the dog: a warm, dry place off the floor, a routine for night breaks, and a plan for when the heat stops. Never leave the dog alone in the RV.
+Before you worry about the dog's bed, check the rig: a working carbon monoxide alarm and propane alarm made for RVs, a built-in heater you understand, and no portable fuel-burning heater running while you sleep. Then the dog: a warm, dry spot off the floor, a leash-and-light routine for night breaks, and a backup motel if the heat stops. Never leave the dog alone in the RV, even briefly.
 
-**The short answer:**
+**No temperature monitor makes an unattended dog safe.** The [National Park Service](https://www.nps.gov/grsm/planyourvisit/pets.htm) says never to leave pets unattended in vehicles or RVs, and the [CDC](https://www.cdc.gov/healthy-pets/travel/index.html) says never to leave a pet alone in a parked vehicle. A monitor can't warm the dog, open a window or get it out if the furnace stops or an alarm sounds. If a campground allows dogs inside an RV when you step out, that's a campground rule, not a statement that it's safe; our [guide on leaving a dog alone](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental) explains why "allowed" and "safe" differ.
 
-- **Two separate checks.** RV equipment safety (gas, carbon monoxide, heat) protects everyone aboard. Dog care (cold signs, bedding, breaks) is a veterinary question. This guide keeps them apart because they have different authorities.
-- **No monitor makes an unattended dog safe.** The National Park Service says never to leave pets unattended in vehicles or RVs.
-- **Know your exit plan.** Decide what you will do if an alarm sounds or the heat fails, before it happens.
+## What to bring
 
-## Check the RV first: carbon monoxide, propane and heat
-
-Nothing here is dog advice. It is what official and maker sources say about the rig. We are not RV technicians, and we do not recommend any heater or appliance. If your RV's heating or gas system has not been serviced, a qualified RV technician is the right person to ask.
-
-### Carbon monoxide
-
-The CDC says gas- and oil-burning furnaces, portable generators and charcoal grills produce carbon monoxide, which can poison people and animals who breathe it, and lists stoves, lanterns and fireplaces among other sources. Symptoms it names include headache, dizziness, weakness, upset stomach, vomiting, chest pain and confusion; it adds that sleeping people can die before showing symptoms.
-
-The [Consumer Product Safety Commission](https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/Carbon-Monoxide-Information-Center/Portable-Heaters--Camping-Equipment) is direct about camping: "Never use fuel-burning portable heaters or lanterns while sleeping in enclosed areas such as tents, campers and vehicles." That covers the common idea of running a small camp heater overnight "just for the dog."
-
-What the sources say to do:
-
-- **Use generators outdoors only.** The [CDC](https://www.cdc.gov/carbon-monoxide/about/index.html) says generators go outside, more than 20 feet from windows, doors and vents. The [US Fire Administration](https://www.usfa.fema.gov/prevention/vehicle-fires/recreational-vehicles/) says to point the generator's exhaust away and downwind of the RV.
-- **Have a working alarm made for the RV.** The CDC's alarm advice is written for homes, so for the RV read the alarm maker's manual. One maker's manual, [RV Safe for model RVCOLP-2](https://cdn.shopify.com/s/files/1/0013/5780/7686/files/RVSafe_Manual.pdf), says to replace the alarm after five years of operation, that its test button checks electrical function and not gas detection, and that it detects only gas at the sensor. Your alarm's manual may differ; read yours.
-- **Know the alarm response.** The same manual says a carbon monoxide alarm means open windows and doors, turn off appliances, move to fresh air and call 911, and not to re-enter until responders say so. Treat the dog as part of the head count: take it out with you.
-
-### Propane
-
-Propane is the usual fuel for RV furnaces, stoves and water heaters. The US Fire Administration says to check propane supply lines for kinks or damage and to test all fitting connections with a gas leak detection device, and to keep a portable fire extinguisher where you can easily reach it.
-
-The RV Safe manual adds that propane is denser than air and usually collects near the floor, so a propane sensor belongs low. It says a propane alarm means everyone out, shut off the supply at the tank, touch no electrical switch, start no engine or generator and call a qualified technician. That matters for a dog that sleeps on the floor.
-
-### Heat and ventilation
-
-We do not tell you how to heat the RV, and we do not recommend portable, fuel-burning, or electric heating products for dogs. The rules we can source are narrow:
-
-- Never use fuel-burning portable heaters or lanterns while sleeping in enclosed areas (CPSC).
-- Gas appliances need ventilation. The RV Safe manual says carbon monoxide can accumulate with improper ventilation and lists extended use of unvented fuel-burning devices as a cause.
-- Never heat a space with a gas oven (CDC).
-
-For the heater built into your RV, use the manual for that heater and ask the owner, dealer or technician how it vents. If you cannot find that out, plan for a different place to sleep.
-
-## Then check the dog
-
-### Cold signs
-
-Veterinary guidance is about watching the dog, not trusting a number. [Cornell's veterinary college](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/winter-safety-tips) says every dog is susceptible to cold, that you should adjust exposure to the dog's behavior, and to move a dog to a warm, dry area if it shivers, whines or barks, tucks its tail, hunches, lifts its paws or is reluctant to walk. It says frostbite most often affects ears, paws and tail tips, can be hard to see early and can take days to show its extent, and that a dog you think has frostbite or hypothermia should be seen by a veterinarian right away.
-
-The [ASPCA](https://www.aspca.org/pet-care/general-pet-care/cold-weather-safety-tips) says a warm place to sleep should be off the floor and away from drafts, and warns that antifreeze is lethal to dogs; wash and dry paws after walks. Our [cold-weather gear guide](/guides/cold-weather-dog-gear-for-winter-cabin-trips) compares the veterinary temperature guidance and covers coats and boots.
-
-### Unattended: the rule that has no exception
-
-The [National Park Service](https://www.nps.gov/grsm/planyourvisit/pets.htm) says to never leave pets unattended in vehicles or RVs, and the [CDC](https://www.cdc.gov/healthy-pets/travel/index.html) says never to leave a pet alone in a parked vehicle. Cornell says dogs should not be left in a car alone when the weather is cold, because cold air inside a parked car can fall far below the outside temperature.
-
-The risk also runs the other way. [Cornell](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/heatstroke-medical-emergency) lists a dog left alone in a car, where temperatures can rise quickly, among heatstroke causes, and a closed RV in winter sun is also an enclosed space.
-
-**A temperature monitor is an extra reading for you, not a reason to leave.** It cannot warm the dog, open a window, or get it out if the furnace stops or an alarm sounds. If a campground permits dogs inside an RV when you step out briefly, that is a rule about the campground, not a statement that it is safe; our [guide on leaving a dog alone](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental) explains why "allowed" and "safe" differ.
-
-### Sleeping, night breaks and wet paws
-
-- **Bed:** off the floor and away from drafts (ASPCA), where you can hear the dog. We do not recommend a heater or heating pad for it.
-- **Night breaks:** use a leash, a light and a known route, and look at paws for ice balls or salt when you come in. Ice and salt are the likely trouble; our [boots or paw wax guide](/guides/dog-boots-or-paw-wax-for-winter) covers paw care.
-- **Mud and snow:** a washable mat at the door keeps wet paws off the bedding. The [Soggy Doggy mat](https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate) maker lists a non-slip backing and machine washing in two sizes, and calls it absorbent; it says nothing about how much mud it holds.
+- A carbon monoxide alarm and a propane alarm made for RVs, if the rig doesn't have working ones (read your alarm's manual for its replacement date).
+- A bed for the dog that sits off the floor, away from drafts. We don't recommend a heater or heating pad for it.
+- A leash and a light for night breaks.
+- A washable mat for the door; see the pick below.
+- Written backup: a pet-accepting motel within about an hour of your campsite (confirm by phone), the nearest 24-hour emergency vet and the campground office number.
+- A first aid kit and a plan for a sick or chilled dog: see our [first-aid kit guide](/guides/dog-travel-first-aid-kit-guide).
 
 {{pick:soggy-doggy-microfiber-doormat|For muddy entries: a washable mat|The maker lists a non-slip backing and says it is machine washable; it does not say how much mud it holds.|https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate}}
 
-### While driving
+## Keeping the dog warm and safe
 
-A loose dog in a motorhome is not safer than one in a car. The CDC advises a harness attached to the seat buckle in a car, and our [car safety guide](/guides/dog-car-safety-harness-and-crate-guide) covers what restraint claims do and do not mean. Ask your RV's maker or the rental company where a dog can be secured.
+Watch your dog, not the thermometer. [Cornell's veterinary college](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/winter-safety-tips) says every dog is susceptible to cold. If your dog shivers, whines or barks, tucks its tail, hunches, lifts its paws or won't walk, move it somewhere warm and dry. If you think it's frostbite (most often ears, paws and tail tips, and it can take days to show) or hypothermia, see a vet right away.
 
-## What to do when: alarms and heat loss
+- **Bed:** off the floor and away from drafts, where you can hear the dog (ASPCA).
+- **Night breaks:** leash, light and a known route. Check paws for ice balls or salt when you come in; antifreeze is lethal to dogs, so wash and dry paws after walks (ASPCA). Our [boots or paw wax guide](/guides/dog-boots-or-paw-wax-for-winter) covers paw care.
+- **Mud and snow:** a washable mat at the door keeps wet paws off the bedding.
+- **While driving:** a loose dog in a motorhome isn't safer than one in a car. Ask your RV's maker or the rental company where a dog can be secured, and see our [car safety guide](/guides/dog-car-safety-harness-and-crate-guide). Driving there? Our [winter road trip guide](/guides/winter-road-trip-with-a-dog) covers stops, closures and what stays in the car.
 
-| Situation | Do this | Source |
-|---|---|---|
-| Carbon monoxide alarm sounds | Open doors and windows, turn off appliances, move everyone including the dog to fresh air, call 911, do not re-enter until cleared | RV Safe manual (check your own alarm's manual) |
-| Propane alarm sounds (constant beeps on this model) | Everyone out, shut off propane at the tank, touch no electrical switch, start no engine or generator, call a technician or fire department | RV Safe manual |
-| Furnace stops | Do not fire up a fuel-burning heater to compensate. Get yourself and the dog warm and dry, then decide whether to stay or move | CPSC on fuel-burning heaters |
-| Dog shivers, hunches, lifts paws or will not walk | Move to a warm, dry place; call a vet if worried; see a vet right away if you suspect frostbite or hypothermia | Cornell |
-| Anything that frightens you about the rig | Leave, and call a qualified technician before you sleep there again | Our recommendation |
+## Check the RV: carbon monoxide, propane and heat
 
-Our own recommendation, not a source, is that any heat failure with an overnight forecast below freezing means you move to a motel or other prepared shelter rather than ride it out. Write down a backup before you leave: a pet-accepting motel within about an hour of your campsite (confirm by phone), the nearest 24-hour emergency vet and the campground office number.
+We're not RV technicians and don't recommend any heater or appliance. If the heating or gas system hasn't been serviced, ask a qualified RV technician.
 
-## Campground and RV park pet rules
+**Carbon monoxide** (CDC: furnaces, generators, stoves, lanterns and grills can produce it; it can poison people and animals). Symptoms are headache, dizziness and vomiting, and sleeping people can die before they notice any.
 
-Rules vary, and a pet-friendly label tells you little. These are examples from pages we read on 2026-11-25; none speaks for your park.
+- Have a working alarm made for the RV. The [maker's manual we read](https://cdn.shopify.com/s/files/1/0013/5780/7686/files/RVSafe_Manual.pdf) says to replace it after its stated period (five years for that model) and that the test button checks electrical function, not gas detection. Read yours.
+- The [Consumer Product Safety Commission](https://www.cpsc.gov/Safety-Education/Safety-Education-Centers/Carbon-Monoxide-Information-Center/Portable-Heaters--Camping-Equipment) is direct: "Never use fuel-burning portable heaters or lanterns while sleeping in enclosed areas such as tents, campers and vehicles." That includes a small camp heater overnight "just for the dog."
+- Run a generator outdoors only, more than 20 feet from windows, doors and vents (CDC), with the exhaust pointed away and downwind of the RV ([US Fire Administration](https://www.usfa.fema.gov/prevention/vehicle-fires/recreational-vehicles/)).
+- Never heat a space with a gas oven (CDC).
+- If the alarm sounds: open windows and doors, turn off appliances, get everyone, dog included, into fresh air, call 911, and don't go back in until responders say so.
 
-- **Number:** [Pennsylvania state parks](https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/rules-and-regulations/pets-in-parks) allow no more than two non-caged pets per campsite; [Century RV Park](https://www.campspot.com/park/century-rv-park/policies/terms-of-service) says it generally allows up to two dogs or cats; [Mission Bay RV Resort](https://www.missionbayrvresort.com/wp-content/uploads/2024/05/Mission-Bay-RV-Resort-Pet-Policies-04-2024.pdf) allows three for daily or weekly campers and two for extended stays, with written approval.
-- **Breeds:** Century RV Park lists restricted breeds; Mission Bay lists prohibited breeds and requires approval of all dogs.
-- **Unattended:** Century says animals may never be left unattended outdoors. Pennsylvania says pets must not be left unattended except briefly and then must be kept in the camping unit or vehicle, weather permitting. [California State Parks](https://www.parks.ca.gov/Dogs) says dogs cannot be left alone, including at campsites, and overnight campers must keep their dog in a tent or vehicle.
-- **Leash and noise:** California and Century require a 6-foot leash; [Maryland](https://dnr.maryland.gov/publiclands/pages/pets.aspx) says excessive barking is not permitted, especially during quiet hours of 10 p.m. to 7 a.m.
-- **Fee:** Century lists $25 per animal per stay.
+**Propane** (the usual fuel for RV furnaces, stoves and water heaters).
 
-Before you book, ask the park:
+- Check supply lines for kinks or damage, test fittings with a gas leak detection device, and keep a fire extinguisher within easy reach (US Fire Administration).
+- Propane is denser than air and collects near the floor, so the sensor goes low, right where the dog sleeps (alarm maker's manual).
+- If a propane alarm sounds: everyone out, shut off the supply at the tank, touch no electrical switch, start no engine or generator, and call a qualified technician.
 
-1. How many dogs and what breed or size limits apply?
-2. May a dog stay in the RV while I am out? For how long?
+**Heat and ventilation.** Gas appliances need ventilation; carbon monoxide can build up with improper ventilation or long use of unvented fuel-burning devices. For the heater built into your RV, use its manual and ask the owner, dealer or technician how it vents. If you can't find that out, plan to sleep somewhere else.
+
+## What to do when
+
+| Situation | Do this |
+|---|---|
+| Carbon monoxide alarm sounds | Open doors and windows, turn off appliances, move everyone including the dog to fresh air, call 911, don't re-enter until cleared (check your own alarm's manual) |
+| Propane alarm sounds | Everyone out, shut off propane at the tank, touch no electrical switch, start no engine or generator, call a technician or the fire department |
+| Furnace stops | Don't fire up a fuel-burning heater to compensate. Get yourself and the dog warm and dry, then decide whether to stay or move |
+| Dog shivers, hunches, lifts paws or won't walk | Move to a warm, dry place; call a vet if worried; see a vet right away if you suspect frostbite or hypothermia |
+| Anything that frightens you about the rig | Leave, and call a qualified technician before you sleep there again |
+
+Our recommendation, not a source's: any heat failure with an overnight forecast below freezing means you move to a motel or other prepared shelter rather than ride it out.
+
+## Ask the campground before you book
+
+Rules vary and "pet friendly" tells you little. The pages we read on 2026-11-25 differ on [how many pets per site](https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/rules-and-regulations/pets-in-parks), [breeds and approval](https://www.missionbayrvresort.com/wp-content/uploads/2024/05/Mission-Bay-RV-Resort-Pet-Policies-04-2024.pdf), [fees](https://www.campspot.com/park/century-rv-park/policies/terms-of-service), [leaving dogs alone](https://www.parks.ca.gov/Dogs) and [quiet hours](https://dnr.maryland.gov/publiclands/pages/pets.aspx); none speaks for your park. Ask:
+
+1. How many dogs, and what breed or size limits apply?
+2. May a dog stay in the RV while I'm out? For how long?
 3. What are the leash and tie-out rules, and are crates or pens allowed outside?
 4. Where may dogs walk, and is there an off-leash area?
 5. What are the quiet hours and the barking rule?
 6. Are there pet fees, and are they per pet or per stay?
-7. Is the site open and plowed in winter, and what are hookup limits in freezing weather?
+7. Is the site open and plowed in winter, and what are the hookup limits in freezing weather?
 8. Who do I call at night?
 
 ## Rental or owned RV
 
-- **Owned:** you can have the heater, propane lines and alarms serviced, replace an alarm past its date and read the manuals. Do that before the first cold trip.
-- **Rented:** you cannot service anything, so ask. [RVshare](https://rvshare.com/rv/pet-friendly-rv-rentals) says to read each owner's pet policy, because they vary and some welcome only dogs, and to message the owner about it. Ask the owner or company: Are dogs allowed? What fee or cleaning charge applies? Does the RV have a working CO and propane alarm, and how old is it? How does the heater work and vent? Is winter use allowed at all?
-- **Either way:** a rental's or a park's "pets welcome" never covers the rig's safety checks.
-
-## What we could not confirm
-
-We did not find an RVIA or NFPA page, or a furnace maker's manual, that we could read, so the carbon monoxide and propane specifics come from the CPSC, the Fire Administration, the CDC and one alarm maker's manual. We could not read the AVMA's cold-weather page. We cannot say how any specific RV is heated or ventilated; ask the maker, owner or a technician. Campground rules above are examples, not the rules at your park.
+- **Owned:** service the heater, propane lines and alarms before the first cold trip, and replace an alarm past its date.
+- **Rented:** you can't service anything, so ask. [RVshare](https://rvshare.com/rv/pet-friendly-rv-rentals) says owners' pet policies vary and some welcome only dogs. Ask: Are dogs allowed? What fee or cleaning charge applies? Does the RV have a working CO and propane alarm, and how old is it? How does the heater work and vent? Is winter use allowed at all?
+- Either way, "pets welcome" never covers the rig's safety checks.
 
 ## Next step
 
-Before you book, ask the park its eight questions and the RV owner their five, and write down the answers. Planning the drive there? See our [winter road trip guide](/guides/winter-road-trip-with-a-dog). Then build a [packing list for the trip](/tools/packing-list?trip=camping-hiking), choosing the cold condition, and read our [first-aid kit guide](/guides/dog-travel-first-aid-kit-guide) so the plan for a sick or chilled dog is on paper before you leave.
+Write down the campground's answers and the owner's, then build a [packing list for the trip](/tools/packing-list?trip=camping-hiking), choosing the cold condition.

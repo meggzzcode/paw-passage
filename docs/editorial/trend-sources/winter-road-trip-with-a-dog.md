@@ -23,3 +23,6 @@ Wag, Petmate and Chewy competitor pages were not re-read this session (plan read
 - Confirm slug of Article 6 (winter-rv-travel-with-a-dog) before publish; link is in the body.
 - Hero, share image, pin, pins CSV row.
 - Proposed inbound links (max 5): cold-weather guide "The car and the cabin"; packing list "Seasonal extras"; Christmas guide "Before you go"; car-safety guide "Before you leave"; keep-a-dog-cool-on-a-summer-trip closing next step.
+
+## Reader-first edit (W6, 2026-11-25): claims removed from the draft
+- Removed the "where each part comes from" source paragraph, the PetMD interval comparison, the Cornell/VCA sign lists beyond the vet-right-away and no-rub lines, the "Cold, clothing and paws" and "Backups" sections (boots, towel and paw content now only links to dog-boots-or-paw-wax-for-winter; RV content links to winter-rv-travel-with-a-dog), and two of four multi-dog bullets.

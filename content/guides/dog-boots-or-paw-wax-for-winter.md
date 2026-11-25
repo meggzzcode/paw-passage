@@ -125,14 +125,13 @@ research:
     - "Hero image: placeholder guide-cold-weather-gear (HERO-PENDING), share image, pin and pins CSV row."
   researchComplete: false
 ---
-
-Use boots for ice, salted or de-iced pavement and long outings. A thin layer of wax can cover a short walk on fresh snow, or a dog that will not wear boots, but PetMD says balm will not stop sharp ice, and one source says wax is no replacement for boots in extreme cold or against de-icers. After either, wipe paws, legs and belly. In our reading, the surface matters more than the thermometer.
+Boots for ice, salted pavement and long walks. Wax only for a short walk on fresh snow, or for a dog that won't wear boots, because wax won't stop sharp ice or de-icers. Either way, wipe paws, legs and belly when you come in and keep the dog from licking until they're clean. The surface matters more than the thermometer, so use the table to pick for today's walk.
 
 ## Which one for this walk?
 
-This table is our summary of what the veterinary and kennel-club sources below say, not a rule from any one of them. Use it as a starting point and watch your dog's paws.
+Our summary of what the veterinary and kennel-club sources say, not a rule from any one of them. Watch your dog's paws.
 
-| Walk | Boots | Wax | Wipe only |
+| Walk | Boots: a physical barrier with traction | Wax: a thin layer on the pad | Wipe only: removes what the paw picked up |
 |---|---|---|---|
 | Fresh snow, a short potty break, or a dog that refuses boots | Optional | Reasonable | Always, once inside |
 | Fresh snow, a longer walk | Good choice | Reapply as needed | Always |
@@ -142,31 +141,20 @@ This table is our summary of what the veterinary and kennel-club sources below s
 | A dog that rubs, slips or freezes in boots | Not yet; train first, see below | Fallback | Always |
 | Cracked or already sore pads | Ask your vet first | Ask your vet first | Gentle, then ask a vet |
 
-Sources for the table sit below it. [PetMD](https://www.petmd.com/dog/care/how-to-protect-dog-paws-in-winter) calls boots the most reliable way to protect paws and says balm forms a barrier against dampness and chemicals but will not stop sharp ice. [The Farmer's Dog](https://www.thefarmersdog.com/digest/?p=6614) says wax should not replace boots in extreme cold or against de-icers. [ASPCA](https://www.aspca.org/news/keeping-pets-safe-during-winter-dangers-ice-melts) says wax or booties both give a barrier for sensitive pads.
-
-## What each one does, and what it does not
-
-**Boots** are a physical barrier and add traction. PetMD says they offer a nearly impenetrable barrier against ice, snow, dampness and chemicals, and [AKC](https://www.akc.org/expert-advice/lifestyle/best-dog-boots/) says to ask whether you would walk barefoot on that surface. Their limits are fit, a dog's willingness, and time: PetMD says boots left on too long can cause painful pressure sores, and that latex or rubber ones can trap moisture.
-
-**Wax or balm** is a thin layer on the pad. PetMD says it helps keep snow from clumping between the toes and may need reapplying on a long outing. [Cornell](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/winter-safety-tips) says certain balms or petroleum jelly may help prevent and ease cracked pads. None of the sources says wax gives traction or stops a cut from ice.
-
-**A wipe** removes what the paw picked up. It is not protection while you are out, but it is the step that limits licking afterward.
-
-No boot, wax or wipe is a guard against frostbite or hypothermia. Those depend on how long the dog is out, wetness and the dog itself; see the vet list at the end.
+[PetMD](https://www.petmd.com/dog/care/how-to-protect-dog-paws-in-winter) calls boots the most reliable way to protect paws, and [The Farmer's Dog](https://www.thefarmersdog.com/digest/?p=6614) says wax shouldn't replace boots in extreme cold or against de-icers. No boot, wax or wipe guards against frostbite or hypothermia; see the vet list at the end.
 
 ## Salt, de-icers and licking
 
-ASPCA lists sodium, potassium, calcium and magnesium chloride as common ice melts. It says swallowing them can cause stomach upset, vomiting and diarrhea, and in larger amounts tremors and seizures, and that calcium chloride can ulcerate the mouth. Products labelled pet-friendly, usually urea or magnesium chloride, are gentler but can still upset the stomach.
-
-You cannot tell what a sidewalk was treated with. That is the case for boots on treated pavement, or at least for a careful wipe, and for stopping paw licking until the paws are clean. Ask the rental host what goes on the steps, as our [cold-weather gear guide](/guides/cold-weather-dog-gear-for-winter-cabin-trips) suggests.
+Salt and de-icers upset the stomach if licked ([ASPCA](https://www.aspca.org/news/keeping-pets-safe-during-winter-dangers-ice-melts)); "pet-friendly" melts are gentler but can still upset it. You can't tell what a sidewalk was treated with. That's the case for boots on treated pavement, or at least a careful wipe, and no licking until the paws are clean. Ask the rental host what goes on the steps, as our [cold-weather gear guide](/guides/cold-weather-dog-gear-for-winter-cabin-trips) suggests.
 
 ## Fitting boots and getting a dog used to them
 
-- **Measure first.** AKC has you press the paw onto paper, trace it and measure across the widest part. Ruffwear's Polar Trex page says to measure across the widest part of the paw while bearing weight and to measure all paws.
-- **Introduce them slowly.** AKC and The Farmer's Dog both say to let the dog sniff the boots with treats, start with one, then try both indoors for short sessions and lengthen them.
-- **Check the fit.** AKC says poor fit shows as paws slipping out, little traction or a shape that does not match the paw. PetMD says snug but comfortable.
-- **Check again on the walk.** Ruffwear says to adjust the straps and check tension 15 minutes into the activity. Look for rubbing afterward.
-- **Take them off indoors.** PetMD says this avoids overheating and licking chemicals off the boots, and it recommends cleaning the outside of boots daily.
+- **Measure first.** Press the paw onto paper, trace it and measure across the widest part ([AKC](https://www.akc.org/expert-advice/lifestyle/best-dog-boots/)); measure all paws, with weight on them (Ruffwear).
+- **Introduce them slowly.** Let the dog sniff them with treats, start with one, then try both indoors for short sessions and lengthen them.
+- **Check the fit.** Snug but comfortable; paws slipping out or little traction means a poor fit.
+- **Check again on the walk.** Adjust the straps and check tension 15 minutes in (Ruffwear), and look for rubbing afterward.
+- **Take them off indoors.** That avoids overheating and licking chemicals off them (PetMD). Clean the outside daily.
+- **If the dog slips, walks stiffly and won't move, or you see rubbing,** go back to short indoor sessions, or use a wipe and a thin layer of wax on short walks. [Cornell](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/winter-safety-tips) says dogs can be trained to wear well-fitting booties, so give training time before giving up.
 
 Practice at home, not on the first snowy walk of the trip.
 
@@ -174,12 +162,11 @@ Practice at home, not on the first snowy walk of the trip.
 
 ## Putting wax on
 
-ASPCA and The Farmer's Dog both point to vet-approved products. We have not confirmed any maker's claim about licking, so read the label and ask your vet, especially about a dog that licks its feet.
+ASPCA and The Farmer's Dog both point to vet-approved products. We haven't confirmed any maker's claim about licking, so read the label and ask your vet, especially about a dog that licks its feet.
 
-1. Start with clean, dry paws.
-2. Put on a thin layer before going out. ASPCA suggests petroleum jelly or another vet-approved protectant massaged into the pads.
-3. Reapply on a long outing, as PetMD says.
-4. Wipe off excess when you come in, before the dog walks on a rental's floor or bed.
+1. Start with clean, dry paws and put on a thin layer before going out (ASPCA suggests petroleum jelly or another vet-approved protectant massaged into the pads).
+2. Reapply on a long outing.
+3. Wipe off excess when you come in, before the dog walks on a rental's floor or bed.
 
 ## The door routine
 
@@ -187,15 +174,11 @@ ASPCA and The Farmer's Dog both point to vet-approved products. We have not conf
 2. Wipe paws, legs and belly with a damp cloth or baby wipe, as ASPCA and Cornell advise, and remove snowballs from between the toes.
 3. Dry the feet, including between the toes.
 4. Look at the pads for cracks, redness or cuts.
-5. Keep the dog from licking until it is clean.
+5. Keep the dog from licking until it's clean.
 
-Keep a towel, wipes and any used boots in one spot by the door. A microfiber towel does the drying job; the maker of this one says it is quick drying and lists no absorbency figure.
+Keep a towel, wipes and any used boots in one spot by the door. A microfiber towel does the drying job; the maker of this one says it's quick drying and lists no absorbency figure.
 
 {{pick:soggy-doggy-super-shammy-towel|A towel for the door|The maker lists a 31 x 14 in microfiber chenille towel with hand pockets, described as quick drying; the page gives no absorbency figure.|https://www.soggydoggydoormat.com/products/soggy-doggy-super-shammy-grey}}
-
-## When boots are the wrong choice
-
-Skip boots, for now, if the dog slips, walks stiffly and will not move, or you see rubbing or sore spots. Go back to short indoor sessions or use a wipe and a thin layer of wax on short walks. Cornell says dogs can be trained to wear well-fitting booties, so give it time before giving up. On clear, dry paths, boots may not be needed at all.
 
 ## When to see a vet
 
@@ -205,6 +188,4 @@ Skip boots, for now, if the dog slips, walks stiffly and will not move, or you s
 
 This is not veterinary advice. Ask your own vet about an older dog, a dog with a heart condition or diabetes, or any dog whose paws are already sore.
 
-## Before you go
-
-Add boots, a towel and wipes to your [winter road trip plan](/guides/winter-road-trip-with-a-dog), and see the [cold-weather gear guide](/guides/cold-weather-dog-gear-for-winter-cabin-trips) for coats and cold limits.
+Packing for the drive? Add boots, a towel and wipes to your [winter road trip plan](/guides/winter-road-trip-with-a-dog); coats and cold limits are in the [cold-weather gear guide](/guides/cold-weather-dog-gear-for-winter-cabin-trips).

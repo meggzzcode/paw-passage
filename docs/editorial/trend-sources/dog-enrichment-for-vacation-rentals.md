@@ -32,3 +32,6 @@ Draft written 2026-11-25. Status draft; `researchComplete: false`. Hero: placeho
 5. Required earning product proposed for the publish rule: `kong-classic` (one {{pick}} card already used in the draft; Amazon link is Large only, third-party seller, categorised comfort-and-cooling per the matrix; dishwasher claim now found on KONG's cleaning page).
 6. A veterinary-college or AVMA source for general enrichment advice; a second source for hard-chew dental risk; recheck the ASPCA poison-control number.
 7. Hero, pin and related links; proposed inbound links (max 5): puppy guide Chewing, NYE guide food or play, packing list Sleep, food and cleanup, Christmas guide evenings, dog-travel-bowls guide.
+
+## Reader-first edit (W6, 2026-11-25): claims removed from the draft
+- Removed the KONG Wobbler size bands and the "25 lb dog falls between" sentence, the ACVS "string can cut through the intestine" sentence, per-maker cleaning and dishwasher detail beyond one line, the ASPCA "incredibly important to allow your dog to use their nose" quote, and the AKC "yogurt without artificial sugars" suggestion.

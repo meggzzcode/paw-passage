@@ -24,3 +24,6 @@ Walkee Paws (seller) and REI (403 per plan) were not opened or cited. "Limping" 
 - Confirm Polar Trex is active and in stock (page showed out of stock); proposed required earning product: ruffwear-polar-trex-boots (also soggy-doggy-super-shammy-towel).
 - Hero, share image, pin and pins CSV row.
 - Proposed inbound links: cold-weather guide "Boots, salt and de-icer" (replace long boot text with "Not sure between boots and wax? Use this table."), Christmas guide "Gear for the evenings and the cold walks", hiking-gear guide (boots), packing list "Seasonal extras", winter-road-trip-with-a-dog.
+
+## Reader-first edit (W6, 2026-11-25): claims removed from the draft
+- Removed the ingredient list of ice melts and the calcium chloride mouth-ulcer sentence (ASPCA), the PetMD "nearly impenetrable barrier" and latex/rubber moisture wording, the Cornell balm/petroleum jelly cracked-pad sentence, and "none of the sources says wax gives traction". The table, vet list and fitting steps are unchanged.

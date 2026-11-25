@@ -132,80 +132,13 @@ research:
   researchComplete: false
 approvedBy: Paws & Passage Editors
 ---
-"Pet friendly" in the Gatlinburg, Pigeon Forge and Sevierville area usually means that some of a manager's cabins take dogs, usually one or two, for a fee and under a crate rule, and the details differ by manager and by cabin. Before you pay, get six things in writing: the dog count, the weight rule, the fee and its basis, whether this cabin accepts dogs, what happens if the rule is broken, and how you will reach the cabin in winter.
+"Pet friendly" in Gatlinburg and Pigeon Forge usually means some cabins, one or two dogs, a fee and a crate rule, and it varies by manager and by cabin. Before you pay, get six things in writing: the dog count, the weight rule, the fee and its basis, that this exact cabin takes dogs, what happens if a rule is broken, and how you'll reach the cabin in winter. The message below does it for you.
 
-**The short answer:**
-
-- **A manager's pet page is not your cabin's rule.** Several pages say pets are allowed only in certain cabins.
-- **Ask for numbers in writing:** how many dogs, the weight rule (per dog or combined), the fee and whether it is per pet, per stay and refundable.
-- **For Christmas week,** holiday minimums and cancellation are covered in our [Christmas cabin guide](/guides/christmas-week-in-a-cabin-with-a-dog); this guide covers the pet conditions and the access questions.
-
-Not sure your dog fits at all? Try the [will my dog be accepted tool](/tools/will-my-dog-be-accepted).
-
-## What "pet friendly" looked like on seven manager pages
-
-The table below comes from our public file of 38 managers' pet pages, read on 2026-11-18. It is a convenience sample of one day's wording, not a survey of Smokies cabins, and the policy for your cabin may differ. We counted the seven managers in the file whose region is "Smoky Mountains, TN". Nothing here says a cabin is available, fenced or approved for your dog, and none of these pages was a confirmation from a host.
-
-| Manager | Dog or pet limit stated | Fee as stated | Crate wording when you leave |
-|---|---|---|---|
-| Hearthside Cabin Rentals | 2 dogs | $55 per pet, one time; $75 for a large pet | "must" |
-| Aunt Bugs Cabin Rentals | 2 dogs | $75 per pet | "must" |
-| Bear Camp Cabins | not stated | $75 plus tax per pet | "must" and "recommended" on the same page |
-| Elk Springs Resort | not stated | $50 per animal | not stated |
-| Hapey Cabin Rentals | not stated | $0 | recommended |
-| Cabins USA | 2 pets | $50 (basis not stated) | not stated |
-| Hemlock Hills Cabin Rentals | not stated | not stated | not stated |
-
-How we counted, from the public file: a dog or pet limit is stated by 3 of 7 (all say two). A fee is stated by 6 of 7: four give an amount per pet or per animal, one gives a flat figure with no basis, and one states $0. A crate rule when leaving the dog is stated by 4 of 7: "must" on three pages (one of which also says "recommended") and "recommended" on the fourth. The public file also records a weight number for only some of the seven. We think that undercounts, because weight wording sits in several places on these sites, so we do not print any manager's weight rule here; the next section shows how to get your cabin's.
-
-## Fees: per pet or per stay, and the two-dog arithmetic
-
-A fee can be per pet, per stay or per night, and the label may not say which. [Airbnb's host help page](https://www.airbnb.com/help/article/3623) says hosts can set a flat fee per booking, per night, per pet, or per pet per night, so ask which one applies. Our [pet fees guide](/guides/how-vacation-rental-pet-fees-work) explains the structures and our [cost guide](/guides/what-a-dog-really-costs-on-a-vacation-rental) turns them into a real total.
-
-Using the per-pet amounts on these pages, two dogs would cost, before tax:
-
-- **Elk Springs:** $100 (two at $50 per animal)
-- **Hearthside:** $110 at the standard tier, or up to $150 if both dogs fall in the larger tier
-- **Aunt Bugs:** $150
-- **Bear Camp:** $150 plus tax
-
-Hapey lists $0, Cabins USA lists $50 with no basis, and Hemlock Hills states none, so those cannot be added up. These are the amounts as read on 2026-11-18, and the fee is not the whole cost. Three of the four pages we reread on 2026-11-25 call the fee non-refundable, and at least one says it does not cover extra cleaning or damage. Ask what you pay if you cancel, and what counts as extra cleaning. For fees across all 38 managers, see our [pet policy data](/data/pet-policies).
-
-## Limits and approval: what to ask, not what to assume
-
-**Dog count.** Where a page states a limit it is two. Ask the cabin's own limit, not the manager's.
-
-**Weight.** Do not stop at "large dogs welcome" or "small dogs only." Ask for the number, whether it is per dog or the combined weight of all dogs, whether a larger-dog fee tier applies, and where the rule is written. Policy pages and blog posts from the same manager can differ, and our own reading found cases where a published summary and the manager's page did not match. Our [large-dog rentals guide](/guides/vacation-rentals-that-welcome-large-dogs) shows how to ask a host to approve a bigger dog.
-
-**Which cabin.** Several of the pages say pets are allowed only in cabins designated pet-friendly, and send you to a separate list. "Pet friendly" in a search filter is not the same as written approval for your dog count and weight.
-
-**Fences and gates.** The pages we read did not state fenced yards, and our file has no fence column, so do not assume one. Our [fenced-yard guide](/guides/vacation-rental-secure-fenced-yard) covers what to ask. Pools and hot tubs have their own rules; see the [pool and hot tub guide](/guides/can-dogs-go-in-a-rental-pool-or-hot-tub).
-
-**Written approval.** Ask for the approval and the full total by email with your dates, dog count and breed or weight, before you pay.
-
-## Penalties and deposits
-
-The pages we read describe consequences for a dog the manager did not approve. As read in our working notes and reconfirmed on four pages on 2026-11-25: Hearthside says up to $500 for extra cleaning or misrepresentation; Aunt Bugs says a $500 fine and that you must leave immediately with no refund; Bear Camp says a fine of up to $1,000 as a cleaning fee, immediate removal and forfeiture of money paid; Cabins USA says unauthorized pets "may result in additional charges" and gives no amount. Four of the seven managers state such a consequence in our working notes; the others are silent, which does not mean there is none. These are the pages' own words on those dates and a cabin's contract may differ.
-
-The lesson is simple: a dog the cabin has not approved is the costliest mistake available. Do not bring a second dog, a visiting friend's dog or a larger dog than you disclosed.
-
-## Winter and Christmas access
-
-Pet rules are only half of a December booking. The other half is whether you can reach the cabin.
-
-- **The park roads.** The National Park Service says Newfound Gap Road (US 441), Little River Road and the Cades Cove Loop Road are open year-round, weather permitting. Several secondary roads close for the season, so check the park's closures and alerts page or call (865) 436-1200 before you plan a drive through the park.
-- **Elevation.** The NPS notes that clear skies in lower areas do not guarantee the same weather in higher elevations. A town can look clear while the road to a cabin is not.
-- **Your cabin's road.** The NPS pages do not cover private cabin roads. Ask whether the approach is paved, steep, shared or gravel, who clears snow and ice, where you park and how far you carry bags, and what the manager recommends for a car without four-wheel drive. Do not count on an answer you did not get in writing.
-- **Vet access.** Find the emergency vet and its holiday hours before you go; our [Christmas guide](/guides/christmas-week-in-a-cabin-with-a-dog) shows how.
-- **Cold.** Our [cold-weather gear guide](/guides/cold-weather-dog-gear-for-winter-cabin-trips) covers coats, boots and salted paths, and our [winter road trip guide](/guides/winter-road-trip-with-a-dog) covers the drive.
-
-## In the park and in town
-
-The [National Park Service](https://www.nps.gov/grsm/planyourvisit/pets.htm) says pets in Great Smoky Mountains National Park must be on a leash no longer than 6 feet at all times, that only the Gatlinburg Trail and the Oconaluftee River Trail allow leashed pets, and that you should never leave pets unattended in vehicles or RVs. Pets are welcome in frontcountry campgrounds, picnic areas and along roads. Because only those two trails allow leashed pets, plan longer hikes elsewhere; our [hiking gear guide](/guides/dog-hiking-gear-for-a-cabin-vacation) covers the kit. Do not leave the dog in the car while you eat or shop; if you cannot take it in, skip the stop.
+Going at Christmas? Holiday minimums and cancellation are in our [Christmas cabin guide](/guides/christmas-week-in-a-cabin-with-a-dog); this guide covers the pet conditions and the access questions. Not sure your dog fits at all? Try the [will my dog be accepted tool](/tools/will-my-dog-be-accepted).
 
 ## Message to send the manager
 
-Copy, fill in and send it before you book, then save the reply.
+Copy, fill in and send it before you book, then save the reply. A manager's pet page is not your cabin's rule: several pages say pets are allowed only in certain cabins.
 
 > Hello, we are looking at [cabin name or link] for [dates] with [number] dog(s): [breed or type], about [weight] each. Could you confirm in writing:
 > 1. Does this cabin accept dogs, and is our dog count allowed?
@@ -215,33 +148,47 @@ Copy, fill in and send it before you book, then save the reply.
 > 5. Is a crate required when we leave the dog, and may we leave the dog alone at all?
 > 6. Is the yard fenced? If not, is a portable fence or gate allowed?
 > 7. Is the road to the cabin plowed or treated in winter, and where do we park?
-> 8. What is the full total with the dog(s) for these dates, including taxes and holiday rates?
+> 8. What are the cancellation terms and the minimum stay for our dates?
+> 9. What is the full total with the dog(s) for these dates, including taxes and holiday rates?
+> 10. Where is the nearest emergency vet, and what are its holiday hours?
 > Thank you.
 
-## Booking checklist
+Ask for the approval and the full total by email, with your dates, dog count and breed or weight, before you pay. Rules and fees below were read on 2026-11-18 and 2026-11-25 and may have changed; ask in writing.
 
-- [ ] Written confirmation that this exact cabin accepts dogs
-- [ ] Dog count and weight rule confirmed, per dog or combined
-- [ ] Fee amount, basis and refundability in writing
-- [ ] Deposit, cleaning and damage terms in writing
-- [ ] Crate rule and rule on leaving the dog alone
-- [ ] Fence and gate facts for the cabin, not the manager
-- [ ] Parking and winter road access
-- [ ] Cancellation terms and minimum stay for your dates
-- [ ] Nearest emergency vet and its holiday hours
+## What to bring and how to look after the dog
 
-A crate that fits your dog is the practical answer to a crate rule; if you will use one, read our [leaving a dog alone guide](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental) first. A pressure-mounted gate avoids drilling in a house you do not own, but ask the host before you bring any hardware.
+- **A crate that fits your dog** is the practical answer to a crate rule. If you'll use one, read our [leaving a dog alone guide](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental) first.
+- **A pressure-mounted gate** avoids drilling in a house you don't own, but ask the host before you bring any hardware.
+- **Cold-weather kit and the drive:** our [cold-weather gear guide](/guides/cold-weather-dog-gear-for-winter-cabin-trips) covers coats, boots and salted paths, and our [winter road trip guide](/guides/winter-road-trip-with-a-dog) covers the drive.
+- **In the park:** the [National Park Service](https://www.nps.gov/grsm/planyourvisit/pets.htm) says pets must be on a leash no longer than 6 feet at all times, only the Gatlinburg Trail and the Oconaluftee River Trail allow leashed pets, and you should never leave pets unattended in vehicles or RVs. Plan longer hikes elsewhere (our [hiking gear guide](/guides/dog-hiking-gear-for-a-cabin-vacation)), and don't leave the dog in the car while you eat or shop; if you can't take it in, skip the stop.
+- **Vet:** find the emergency vet and its holiday hours before you go.
 
-## Outside Christmas week
+## What does the fee really cost?
 
-The questions do not change in summer or fall: dog count, weight rule, fee basis, which cabin, and written approval. What changes is access (roads and parking are different without snow, though the park's seasonal road dates still apply), heat (see our [summer cooling guide](/guides/keep-a-dog-cool-on-a-summer-trip)), and how early the cabin you want is booked. We have no figures on how fast Smokies cabins book, so ask rather than assume.
+A fee can be per pet, per stay or per night, and the label may not say which. [Airbnb's host help page](https://www.airbnb.com/help/article/3623) says hosts can set a flat fee per booking, per night, per pet, or per pet per night, so ask which one applies. Our [pet fees guide](/guides/how-vacation-rental-pet-fees-work) explains the structures and our [cost guide](/guides/what-a-dog-really-costs-on-a-vacation-rental) turns them into a real total.
 
-For a comparison with a state park setting, see our guide to [dogs in Georgia state park cabins](/guides/dogs-in-georgia-state-park-cabins). We do not list or vouch for any Tennessee cabin.
+Of the seven Smoky Mountains managers in our file of 38 (read 2026-11-18), three state a limit and all say two dogs; six state a fee, four per pet or per animal ($50 to $75), one flat, one $0; four state a crate rule, mostly "must". Two dogs at the per-pet amounts we read comes to $100 to $150 before tax, and Hearthside's larger-pet tier can push it to $150. Three of the four pages we reread on 2026-11-25 call the fee non-refundable, and at least one says it does not cover extra cleaning or damage. Ask what you pay if you cancel, and what counts as extra cleaning. This is one day's wording, not a survey of Smokies cabins; for fees across all 38 managers, see our [pet policy data](/data/pet-policies).
 
-## What we could not confirm
+## What should you check about limits and approval?
 
-We cannot confirm any cabin's pet rule, fee, fence, approval, vacancy or winter road condition, and the manager pages above are as read on 2026-11-18 and 2026-11-25 and may have changed. We have not checked whether any manager's pages contradict each other beyond the cases we mention. Ask the manager, in writing.
+- **Dog count.** Where a page states a limit it is two. Ask the cabin's own limit, not the manager's.
+- **Weight.** Don't stop at "large dogs welcome" or "small dogs only." Ask for the number, whether it is per dog or the combined weight of all dogs, whether a larger-dog fee tier applies, and where the rule is written. Policy pages and blog posts from the same manager can differ. Our [large-dog rentals guide](/guides/vacation-rentals-that-welcome-large-dogs) shows how to ask a host to approve a bigger dog.
+- **Which cabin.** "Pet friendly" in a search filter is not the same as written approval for your dog count and weight.
+- **Fences and gates.** The pages we read did not state fenced yards, so don't assume one. Our [fenced-yard guide](/guides/vacation-rental-secure-fenced-yard) covers what to ask; pools and hot tubs have their own rules in the [pool and hot tub guide](/guides/can-dogs-go-in-a-rental-pool-or-hot-tub).
+
+## What happens if a rule is broken?
+
+A dog the cabin hasn't approved is the costliest mistake available. The pages we read say: Hearthside, up to $500 for extra cleaning or misrepresentation; Aunt Bugs, a $500 fine and you must leave immediately with no refund; Bear Camp, a fine of up to $1,000 as a cleaning fee, immediate removal and forfeiture of money paid; Cabins USA, unauthorized pets "may result in additional charges" with no amount. Other managers are silent, which doesn't mean there is no consequence, and a cabin's contract may differ. Don't bring a second dog, a visiting friend's dog or a larger dog than you disclosed.
+
+## Winter and Christmas access
+
+Pet rules are only half of a December booking. The other half is whether you can reach the cabin.
+
+- **The park roads.** The National Park Service says Newfound Gap Road (US 441), Little River Road and the Cades Cove Loop Road are open year-round, weather permitting. Several secondary roads close for the season, so check the park's closures and alerts page or call (865) 436-1200 before you plan a drive through the park.
+- **Elevation.** Clear skies in lower areas don't guarantee the same weather higher up (NPS). A town can look clear while the road to a cabin is not.
+- **Your cabin's road.** The NPS pages don't cover private cabin roads. Ask whether the approach is paved, steep, shared or gravel, who clears snow and ice, where you park and how far you carry bags, and what the manager recommends for a car without four-wheel drive. Don't count on an answer you didn't get in writing.
+- **Vet access.** Find the emergency vet and its holiday hours; our [Christmas guide](/guides/christmas-week-in-a-cabin-with-a-dog) shows how.
 
 ## Next step
 
-Send the message above to the manager for your cabin and keep the reply with your confirmation. If you are still choosing, our [pre-booking checklist](/tools/checklist) walks through the other questions.
+Send the message above to the manager for your cabin and keep the reply with your confirmation. If you're still choosing, our [pre-booking checklist](/tools/checklist) walks through the other questions.

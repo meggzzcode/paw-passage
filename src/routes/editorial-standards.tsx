@@ -45,7 +45,7 @@ Photos on our guides, destination pages and the home page are licensed from Unsp
 
 ## Money
 
-We may earn commissions from some booking and product links, and some placements may be sponsored and labeled as such. An article that contains affiliate links says so at the top. This never changes what we report. See our [affiliate disclosure](/affiliate-disclosure).
+We may earn commissions from some booking and product links, and some placements may be sponsored and labeled as such. An article that contains affiliate links says so at the top. It does not change what we report about a product or a stay, but it can affect which products we point to in articles. See our [affiliate disclosure](/affiliate-disclosure).
 
 ## Researched is not tested
 

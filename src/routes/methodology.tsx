@@ -42,7 +42,7 @@ We write the criteria first, for example the safety standard, the size and weigh
 
 ## Affiliate relationships
 
-Some links may earn us a commission. Commissions do not decide whether a product is included or what we say about it, and products without an affiliate link are covered the same way. Links follow a fixed order. If we have an approved affiliate arrangement for the product, we use that link, marked \`sponsored\`. If not, we link to the manufacturer. If there is no suitable manufacturer page, we use a plain retailer link marked \`nofollow\`. We never create an affiliate link we are not approved for. Details are in our [affiliate disclosure](/affiliate-disclosure).
+Some links may earn us a commission. We choose products from their specifications and published standards, and commissions do not change what we say about them. In articles we only point to a product when we have a working link for it, and some of those links earn us a commission. Links follow a fixed order. If we have an approved affiliate arrangement for the product, we use that link, marked \`sponsored\`. If not, we link to the manufacturer. If there is no suitable manufacturer page, we use a plain retailer link marked \`nofollow\`. We never create an affiliate link we are not approved for. Details are in our [affiliate disclosure](/affiliate-disclosure).
 
 ## Updating and corrections
 

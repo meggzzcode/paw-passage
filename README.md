@@ -7,9 +7,9 @@ What the repository contains (counted 2026-11-24 at `9797221`; commands in `docs
 - **29 published researched guides** (32 files; 3 drafts stay unpublished) and **8 town "things to do with a dog" articles**.
 - **An original 38-manager pet-policy dataset** (13 fields per manager) on `/data/pet-policies` and as `public/pet-policies-38-managers.csv`.
 - **3 tools:** a personalized dog packing planner (saves on the visitor's device only; copy and print; no accounts), "will my dog be accepted" (checks the 38 managers) and a before-you-book checklist. There are no calculators.
-- **A stay directory:** 83 stay files, none confirmed with a host; 78 shown (each page says its details are not confirmed with the host) because each has an approved booking link, 23 of them indexable, 5 hidden. It lists a stay only while it has an approved affiliate link (`stayDirectoryMode: affiliate-only`); an optional `public-sources` mode is described in `docs/BUYER_AFFILIATE_TRANSITION.md`.
+- **A stay directory:** 83 stay files, none confirmed with a host; 78 shown (each page says its details are not confirmed with the host) because each has a public Vrbo listing link, 23 of them indexable, 5 hidden. The site ships in `stayDirectoryMode: public-sources`: stays keep plain source links if the seller's affiliate links are removed (`docs/BUYER_AFFILIATE_TRANSITION.md`).
 - **A photo-free Gear shop:** 11 category pages, 5 trip collections, 65 active products (92 records), no third-party product images.
-- A 103-URL generated sitemap, structured data, redirects and a weekly health check. **771 automated tests in 59 files.**
+- A 103-URL generated sitemap, structured data, redirects and a weekly health check. **785 automated tests in 62 files.**
 
 **Nothing is deployed from this branch.** Production still serves an older build; see `docs/SEO_ROOT_CAUSE_INVESTIGATION.md`. Affiliate accounts, analytics and Search Console are the seller's and are **not** part of a sale; the IDs in the repository are the seller's (`node scripts/audit-seller-ids.mjs` lists them).
 

@@ -49,3 +49,11 @@ This is multiple weeks of work if done properly; the 5 to 7 day sprint is a scop
 1. Make the repository private (recommended) or choose option (b) above. Blocks all premium content.
 2. Confirm the pre-pivot tag limitation is acceptable (recovery by SHA `2125a2a`), or push the tag yourself.
 3. Confirm the Gumroad account owner/payout setup will be done by you with Cowork (CW-PAY tasks), not by me.
+
+## 7. Owner decisions received (2026-11-25)
+- Repository stays **public** on purpose (an external reviewer reads it). Recovery by commit `2125a2a` accepted; remote tag optional (CW-GH-2).
+- All pivot work happens on `claude/lucid-davinci-l2fixa`. `main` is not modified or merged into.
+- Gumroad account, identity and payout are set up by the owner with Cowork at the end. Engineering continues behind the checkout interface; no payment account is touched by Claude.
+- Premium adventures live **outside the public repo**: a site-wide Netlify Blobs store (`premium-<env>`), one JSON record per adventure ID plus an index, read only by an authenticated Function that checks the session cookie server-side. The public repo contains the schema, free adventures, engine, and clearly marked **synthetic** premium fixtures used for tests. Owner workflow (to be built and proven, CW-BLOB-3): keep the premium library as one JSON export file outside GitHub, import it with an owner-only import script guarded by an environment-variable secret, export it back for backup. This is a technical step, so the buyer handover must include a plain-language runbook; Pages CMS cannot edit private content while the repo is public.
+- Environment isolation: stores are named from the deploy context (`customers-production` vs `customers-preview`, same for premium), so preview tests never touch real customer records.
+- Customer IDs are random opaque IDs (`cus_` plus 16 random bytes), created on first successful verification and independent of the checkout provider. The provider purchase reference is stored beside it, never in a URL, log or analytics event.

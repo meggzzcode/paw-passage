@@ -1,6 +1,6 @@
 # Owner decision: stay directory mode
 
-Prepared 2026-11-25. Nothing is activated or deployed. `content/settings.yml` still says `stayDirectoryMode: "affiliate-only"`.
+Prepared 2026-11-25. **DECIDED 2026-11-25: owner approved `public-sources`; `content/settings.yml` now says `stayDirectoryMode: "public-sources"` (commit `daa758f`).** Disclosure wording approved in principle with a legibility correction (notices now 14px; one repeat beside the first product card in an article). Nothing is deployed.
 
 ## Recommendation
 

@@ -37,7 +37,7 @@ There is **no** database, Supabase project key, payment key or server secret in 
 - Vrbo: 79 entries, all marked approved, all seller deeplinks. 78 stay records (of 83) use one; the other 5 stay records have a non-Vrbo source
   and are never listed.
 - GA4 `G-1J97C8CPC1`, Impact verification tag, Pinterest profile: all the seller's.
-- `stayDirectoryMode: "affiliate-only"` (default, section 6).
+- `stayDirectoryMode: "public-sources"` (shipped since 2026-11-25; `affiliate-only` is the schema default if the setting is missing, section 6).
 
 ## 3. The transfer procedure, in order
 
@@ -92,7 +92,7 @@ any search ranking those pages earned is lost until links come back. The five st
 A single documented setting, **off by default**, so that the buyer is not forced to choose between "keep the seller's links" and "empty directory".
 
 - Setting: `stayDirectoryMode` in `content/settings.yml` (Pages CMS, Business settings, "Which stays are listed").
-- `affiliate-only` (default, exactly today's behaviour): list a stay only while it has an approved affiliate link.
+- `affiliate-only` (the schema default; it was the shipped behaviour until 2026-11-25): list a stay only while it has an approved affiliate link.
 - `public-sources`: list every stay that has a public Vrbo or Airbnb source address (78 stays, 23 indexable, the same as today), even with no affiliate link. For these stays:
   - the button is the plain public link ("View the listing on Vrbo"), `rel="nofollow noopener"`, **no** "Affiliate link" label, no commission wording, no seller deeplink;
   - pages keep their existing wording: details "read from the listing, not confirmed with the host", and the "Not confirmed" markers;

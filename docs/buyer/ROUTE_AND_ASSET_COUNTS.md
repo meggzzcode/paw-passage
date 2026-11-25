@@ -63,7 +63,7 @@ Not in the sitemap on purpose: `/dog-rules` (noindex, no verified place), the fi
 |---|---:|---|
 | Stay files written up | **83** (Georgia 49, California 34, 27 towns) | files in `content/stays/` |
 | Host-confirmed | **0** | every file is `status: unverified`: written from public listing pages, never confirmed with a host. Each page says its details are not confirmed with the host |
-| Shown in the directory (listed) | **78** (Georgia 47, California 31) | listed only while a stay has an approved affiliate link (`STAYS_REQUIRE_AFFILIATE_LINK`; `stayDirectoryMode: affiliate-only`) |
+| Shown in the directory (listed) | **78** (Georgia 47, California 31) | listed with a public Vrbo or Airbnb source link (`stayDirectoryMode: public-sources`, shipped from 2026-11-25); the old `affiliate-only` rule listed a stay only while it had an approved affiliate link |
 | Indexable (in the sitemap) | **23** | pass the quality rule in `src/content/publish-rule.ts` |
 | Shown but `noindex` | 55 | 78 minus 23 |
 | Hidden | 5 | no approved link: `coastal-bliss-fort-bragg-hot-tub-ocean-views`, `large-oceanfront-home-cleone-fort-bragg-hot-tub`, `rosemarys-retreat-mendocino-oceanfront`, `that-cabin-on-that-lane-blue-ridge`, `woof-in-the-woods-cabin-blue-ridge` (non-Vrbo source) |
@@ -72,7 +72,7 @@ Not in the sitemap on purpose: `/dog-rules` (noindex, no verified place), the fi
 | Configured affiliate links | 160 | 79 Vrbo + 81 Amazon; "approved: true" is a switch in `content/affiliates.yml`, not proof of any programme's approval |
 | **Verified affiliate approvals a buyer can rely on** | **0** | no approval is evidenced in the repo for the buyer; the seller's accounts do not transfer |
 
-**Mode caveat (owner decision, open).** The directory exists only because the seller's Vrbo deeplinks are marked approved. If those links are switched off (`node scripts/neutralize-seller-vrbo-links.mjs --write`) while `stayDirectoryMode` stays `affiliate-only`, the directory empties: 0 listed, 0 indexable, the stay pages 404 and the sitemap drops by 24 stay URLs plus any town and state pages that lose their indexable stays (`docs/BUYER_AFFILIATE_TRANSITION.md` section 5 measured 103 to 73 on a test copy). The alternative, `public-sources` (off), lists the same 78 stays with plain Vrbo or Airbnb source links, no commission and no affiliate label. Which mode the sale ships in is an owner decision (section 6 of that file).
+**Mode caveat (owner decision made 2026-11-25: `public-sources` ships).** Historical analysis of the old mode: The directory exists only because the seller's Vrbo deeplinks are marked approved. If those links are switched off (`node scripts/neutralize-seller-vrbo-links.mjs --write`) while `stayDirectoryMode` stays `affiliate-only`, the directory empties: 0 listed, 0 indexable, the stay pages 404 and the sitemap drops by 24 stay URLs plus any town and state pages that lose their indexable stays (`docs/BUYER_AFFILIATE_TRANSITION.md` section 5 measured 103 to 73 on a test copy). The shipped `public-sources` mode lists the same 78 stays with plain Vrbo or Airbnb source links, no commission and no affiliate label. The owner chose `public-sources` for the sale (section 6 of that file).
 
 ## Content and data
 

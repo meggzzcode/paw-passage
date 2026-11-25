@@ -1,5 +1,7 @@
 # Buyer asset inventory: Paws & Passage
 
+> **Update 2026-11-25 at `5aeb8b8` (listing red-flags guide republished at the same URL, breed-restrictions draft deleted, owner-approved).** Current counts: 31 published guides (24 Markdown, 7 TypeScript), 0 drafts, 31 guide files, 105 sitemap URLs, 48,109 words (shortest 1,014, longest 2,047), 161 FAQs, 449 sources, 95 pick cards, 31 pins and 32 share images (31 guides plus `default.jpg`), 774 tests in 61 files. This supersedes the 30-guide figures in the next note and below.
+
 > **Update 2026-11-25 at `6f9add3`.** The no-pets-rental guide was republished (same URL). Current counts: 30 published guides (23 Markdown, 7 TypeScript), 2 drafts, 104 sitemap URLs, 46,721 words, 156 FAQs, 439 sources, 93 pick cards, 30 pins and 31 share images, 783 tests in 61 files. Older figures below (29 guides, 103 URLs, 45,093 words, 420 sources, 152 FAQs, 90 picks, 29 pins) are superseded; see `docs/buyer/ROUTE_AND_ASSET_COUNTS.md`.
 
 > **Update 2026-11-25.** Counts re-run at commit `3e5923b`: 783 tests in 61 files (was 771 in 59 after the cleanup removed unused code and tests); every content count below is unchanged (29 published guides, 83 stay files, 78 shown, 23 indexable, 65 active products, 103 sitemap URLs). Live status: production runs `main@82b0b34`; the final commit is not yet deployed. Where this file says "nothing is deployed" or "Pages CMS never opened", it is older: see [SALE_RELEASE_STATUS.md](./SALE_RELEASE_STATUS.md) (the CMS forms loaded in the seller's account on 2026-11-25; the save-to-live loop is UNVERIFIED). The open disclosure mismatch noted in section 7 was addressed by the 2026-11-25 rewrite of `/affiliate-disclosure` (not legally certified). Owner's guide: [BUYER_HANDOVER.md](../BUYER_HANDOVER.md).
@@ -20,17 +22,17 @@ Live site versus repo: the owner has stopped Netlify builds to preserve credits 
 
 | Asset | Quantity |
 |---|---|
-| Sitemap URLs | 104 (home 1, guides 31, stays 24, gear 12, destinations 17, dogs 5, tools 4, data 1, trust and info pages 9) |
-| Published guides | 30 (32 files: 25 Markdown, 7 TypeScript; 2 drafts held back) |
-| Words in published guide bodies | 46,721 (1,014 to 2,027 per guide) |
-| Sources / inline citations | 439 listed sources, each linked inside the article text by publisher name (no numbered markers); 156 FAQs |
+| Sitemap URLs | 105 (home 1, guides 32, stays 24, gear 12, destinations 17, dogs 5, tools 4, data 1, trust and info pages 9) |
+| Published guides | 31 (31 files: 24 Markdown, 7 TypeScript; 0 drafts) |
+| Words in published guide bodies | 48,109 (1,014 to 2,047 per guide) |
+| Sources / inline citations | 449 sources, all listed in each guide's Sources list (light inline links where the sentence names its source; no numbered markers); 161 FAQs |
 | Original dataset | 38 vacation-rental managers x 13 fields, read 2026-11-18, one source URL per row |
 | Stay pages | 83 stay files, **0 host-confirmed** (none confirmed with a host); 78 shown (listed) with their own detail page; 23 indexable (in the sitemap); 55 shown but `noindex`; 5 hidden |
 | Destination / dog-type pages | 2 states + 8 towns defined (6 indexable) + 8 "things to do with a dog" articles (not guides); 4 dog-type pages |
 | Planning tools | 3 (will my dog be accepted, dog packing list planner, before-you-book checklist); no calculators |
 | Gear | 11 category pages + hub; 92 product records, 65 active; 5 curated trip collections |
-| Pick/spec cards in guides | 93 across all 30 guides |
-| Pins and share images | 30 pins (1000x1500) + pin sheet; 31 share images (1200x630) |
+| Pick/spec cards in guides | 95 across all 31 guides |
+| Pins and share images | 31 pins (1000x1500) + pin sheet; 32 share images (1200x630, including `default.jpg`) |
 | Tests | 771 in 59 files |
 
 ## 3. Published guides and research
@@ -38,10 +40,10 @@ Live site versus repo: the owner has stopped Netlify builds to preserve credits 
 | Item | Detail | Where |
 |---|---|---|
 | Published guides | 30 on dog-friendly vacation-rental travel: pet fees, dog limits, breed restrictions, damage charges, fenced yards, large dogs (the former no-weight-limit guide is merged into the large-dog guide and redirects with a 301), puppies, seniors, reactive dogs, two large dogs in a car, holidays, packing, car safety, first aid, cooling, cold weather, hiking, life jackets, ramps, bowls, lost-dog plan | `content/guides/*.md` (25 files, editable in Pages CMS), `src/content/guides/*.ts` (7 files, need a developer) |
-| Length | 46,721 words in bodies; 1,014 to 2,027 per guide (the final editorial pass cut the 29 guides then published by about 45% from 81,901; the guides are answer-first, not padded) | script, method in the counts file |
-| Citations | 439 sources (title, publisher, URL, access date) listed per guide in a compact collapsed Sources list, and linked inline in the article text by publisher name (natural publisher links or short parenthetical links such as (`[Airbnb](url)`); no numbers; numbered markers were removed 2026-11-24). All 439 are linked inside the text (checked on the built pages) | frontmatter `sources`, body inline links |
+| Length | 48,109 words in bodies; 1,014 to 2,047 per guide (the final editorial pass cut the 29 guides then published by about 45% from 81,901; the guides are answer-first, not padded) | script, method in the counts file |
+| Citations | 449 sources (title, publisher, URL, access date) listed per guide in a compact collapsed Sources list, with light inline links where the sentence names its source (no trailing parenthetical tags since 2026-11-25; no numbers). All 439 are listed in each guide's Sources list | frontmatter `sources`, body inline links |
 | Pick/spec cards | 90 cards (the shared Gear product card) with a reason, up to three fact chips and one "See it at Amazon" button; no per-card affiliate label | guide bodies |
-| Drafts | 3 unpublished guides (breed restrictions, listing red flags, no-pets rental), ready to finish | `content/guides/` |
+| Drafts | None today: every guide file is published (the breed-restrictions draft was deleted and the listing red-flags and no-pets-rental guides were published on 2026-11-25). The CMS still supports the Draft status for new articles | `content/guides/` |
 | Audit trail | Per-guide claims and fact-check files (`docs/CLAIMS-*.md`, `docs/FACTCHECK-*.md`), editorial scorecards and change logs (`docs/editorial/`, [docs/ARTICLE_SCORECARD.md](ARTICLE_SCORECARD.md)), independent reader reviews (`docs/review/FINAL-READER-*.md`) and the final release report ([docs/FINAL_EDITORIAL_RELEASE.md](FINAL_EDITORIAL_RELEASE.md): independent reader mean 7.1 of 10, "ready with minor fixes", corrections applied after review and not re-scored) | `docs/` |
 | Publish gate | A guide is public only with status published, research complete, no unverified claims, and an approver name and date | `src/content/publish-rule.ts` |
 | AI-assisted content | Disclosed on `/editorial-standards`: AI tools assist research, analysis and drafting; source checks are also AI-assisted; no first-hand testing, property visits or human fact-checker is claimed | `src/routes/editorial-standards.tsx` |
@@ -117,7 +119,7 @@ A trip setup (trip type, days, dogs, optional meals per day and conditions) prod
 | Portability | Clean installs and builds were run with no Lovable account: Node build, default build and a Netlify-style build all passed ([docs/HOSTING_PORTABILITY_REPORT.md](HOSTING_PORTABILITY_REPORT.md), [docs/buyer/HOSTING_OPTIONS.md](buyer/HOSTING_OPTIONS.md)). Netlify is recommended; Lovable hosting is optional and untested |
 | One Lovable dependency | devDependency `@lovable.dev/vite-tanstack-config` 2.27.2 (public npm, MIT, no login). A developer could replace it with a plain Vite config. Plus a no-op error hook and text/comments mentioning Lovable. Advice: the owner disconnects Lovable's GitHub sync before handover (UNVERIFIED whether it is currently connected) |
 | CI and automation | 4 GitHub Actions workflows (tests and build, weekly health check, monthly digest, manual IndexNow). Not observed running on a schedule in this audit |
-| Tests and build | 771 tests pass in 59 files; `tsc`, `eslint --quiet` and the production build pass; scripts for verifying a live site (`scripts/verify-site.mjs`) |
+| Tests and build | 774 tests pass in 61 files; `tsc`, `eslint --quiet` and the production build pass; scripts for verifying a live site (`scripts/verify-site.mjs`) |
 
 ## 10. Content management (Pages CMS, `.pages.yml`)
 
@@ -130,7 +132,7 @@ A trip setup (trip type, days, dogs, optional meals per day and conditions) prod
 | Hero and guide photos | Unsplash photos used under the Unsplash License, 64 credit entries in `src/content/image-credits.ts`. The home hero is a credited Unsplash photo (`hero-porch`, photographer Cody Scott Milewski). **The license gives usage rights, not ownership or exclusivity**: the buyer may keep using the photos, but does not own their copyright and others may use them too. Credits must stay |
 | Product imagery | None from third parties; no Amazon images. Product cards use the site's own line-icon spec cards |
 | Photos of real rentals | None |
-| Pins and share images | 30 pins (1000x1500) and 31 share images (1200x630) generated from the site's own photos and text by `scripts/make-pin-sheet.py` and `scripts/make-share-images.py`; rights chain follows the Unsplash photos |
+| Pins and share images | 31 pins (1000x1500) and 32 share images (1200x630) generated from the site's own photos and text by `scripts/make-pin-sheet.py` and `scripts/make-share-images.py`; rights chain follows the Unsplash photos |
 | Fonts | DM Sans and Fraunces, self-hosted variable WOFF2, SIL Open Font License texts included |
 | Icons | `lucide-react` (open source); favicon and apple-touch icon in `public/` |
 | Name, logo, wordmark | The "Paws & Passage" name is in the sale. No trademark search or registration was made (UNVERIFIED) |
@@ -171,7 +173,7 @@ Qualitative only. No replacement cost, development cost or dollar value is claim
 
 - **Research:** the buyer does not have to read, compare and cite hundreds of sources on pet fees, dog limits, fencing, car safety and gear, or re-derive the 38-manager policy dataset, with a source link and read date for each row.
 - **Structuring:** topics, internal links between guides, dog-type collections, destination hubs, FAQs, source lists and a publish gate already exist.
-- **Writing:** 30 finished guides with per-guide claims and fact-check records, plus 2 drafts, instead of a blank content calendar. Independent readers called them ready with minor fixes; the corrections made afterwards were not re-scored. Writers still need to review and keep them current.
+- **Writing:** 31 finished guides with per-guide claims and fact-check records instead of a blank content calendar. Independent readers called them ready with minor fixes; the corrections made afterwards were not re-scored. Writers still need to review and keep them current.
 - **Building tools:** three browser tools, a filterable stay directory and a policy data page are built, tested and documented.
 - **SEO plumbing:** sitemap rules, canonicals, structured data, redirects, noindex rules, IndexNow and health checks are done; the buyer verifies their own Search Console and submits the sitemap.
 - **Commerce plumbing:** affiliate-link management, a single top notice with Amazon's sentence, an Amazon-tag switch (one value retags every Amazon link) and click-event tracking are wired so the buyer swaps IDs instead of building a system; steps in [docs/GEAR_REDESIGN_IMPLEMENTATION.md](GEAR_REDESIGN_IMPLEMENTATION.md).

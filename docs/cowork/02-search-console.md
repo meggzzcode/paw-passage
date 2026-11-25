@@ -36,7 +36,7 @@ https://www.pawsandpassage.com/guides/if-your-dog-gets-loose-on-a-trip
 Day 2 list (only if I say "day 2"):
 https://www.pawsandpassage.com/guides/new-years-eve-with-a-dog-in-a-vacation-rental
 https://www.pawsandpassage.com/guides/how-many-dogs-can-you-bring-to-a-vacation-rental
-https://www.pawsandpassage.com/guides/breed-restrictions-at-vacation-rentals
+https://www.pawsandpassage.com/guides/pet-friendly-listing-red-flags
 https://www.pawsandpassage.com/guides/can-you-leave-a-dog-alone-in-a-vacation-rental
 https://www.pawsandpassage.com/guides/vacation-rental-with-a-reactive-dog
 

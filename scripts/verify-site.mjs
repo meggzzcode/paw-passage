@@ -5,7 +5,7 @@
 //   node scripts/verify-site.mjs http://localhost:8888 --site-url https://yourdomain.com --draft-marker "SOME TEXT ONLY IN A DRAFT"
 //
 // It checks what a visitor and a search engine would see: readable HTML, every guide and info page,
-// real 404s, images, scripts and fonts, canonical tags, the sitemap, and that draft text is not served.
+// real 404s, images, scripts and fonts, canonical tags, the sitemap, and (when --draft-marker is given) that draft text is not served. There are no drafts today, so omit the marker.
 // Exit code 0 = everything passed, 1 = at least one check failed.
 
 const args = process.argv.slice(2);

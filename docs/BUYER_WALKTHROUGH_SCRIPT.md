@@ -8,7 +8,7 @@ Written 2026-11-24; the numbers below were counted at commit `9797221`. For the 
 - **Do not record yet.** Nothing is deployed: https://www.pawsandpassage.com serves a build from about 2026-11-23 that lacks the packing planner rebuild, the Gear redesign, the 8 town articles and the final guides. Record only after the owner has deployed and stage C1 (live release verification) of [docs/cowork/FINAL_PRE_SALE_BROWSER_QA.md](cowork/FINAL_PRE_SALE_BROWSER_QA.md) has passed. Until then, a rehearsal can run against a local build (`bun install`, `NITRO_PRESET=node-server bunx vite build`, `PORT=4581 node .output/server/index.mjs`, base URL `http://localhost:4581`); label any rehearsal recording "local build, not for the buyer".
 - Ground rules for every line of narration: no traffic, revenue, ranking, affiliate-approval or buyer-interest claim. The true statement is: "a new, pre-revenue site; no earnings or traffic history". If a number on screen differs from the numbers below, say what is on screen and tell the owner to correct the listing.
 
-Numbers used (from [docs/buyer/ROUTE_AND_ASSET_COUNTS.md](buyer/ROUTE_AND_ASSET_COUNTS.md)): 30 guides, about 46,700 words, 439 sources, 38-manager dataset with 13 fields, 83 stay files (78 shown, 23 indexable, 0 host-confirmed), 3 tools, 11 Gear categories, 5 trip collections, 65 active products, 103 sitemap URLs.
+Numbers used (from [docs/buyer/ROUTE_AND_ASSET_COUNTS.md](buyer/ROUTE_AND_ASSET_COUNTS.md)): 31 guides, about 48,100 words, 449 sources, 38-manager dataset with 13 fields, 83 stay files (78 shown, 23 indexable, 0 host-confirmed), 3 tools, 11 Gear categories, 5 trip collections, 65 active products, 105 sitemap URLs.
 
 ## 1. Plan at a glance (6 minutes 30 seconds)
 
@@ -39,8 +39,8 @@ Screenshots: `wt02-dataset-desktop.png`, `wt02-dataset-csv.png` (spreadsheet vie
 
 ## 4. Segment 3: Guides (0:45), https://www.pawsandpassage.com/guides/how-vacation-rental-pet-fees-work
 
-Clicks: scroll past the short answer to a table; open the FAQs; scroll to the collapsed **Sources** list and expand it; click one inline publisher link in the text and return.
-Say: "There are 30 published guides, about 46,700 words in all. Each starts with a short answer, then tables, FAQs and a dated Sources list; every one of the 439 sources is linked in the text by publisher name. The guides are researched from public sources with AI assistance, and that is disclosed on the Editorial standards page. They are not first-hand tests. Independent readers averaged 7.1 out of 10 before the final fixes; I am not claiming a score for the current text."
+Clicks: scroll past the short answer to a table; open the FAQs; scroll to the collapsed **Sources** list and expand it; click one inline publisher link in the text (where a sentence names its source) and return.
+Say: "There are 31 published guides, about 48,100 words in all. Each starts with a short answer, then tables, FAQs and a dated Sources list; every one of the 449 sources is listed in that guide's Sources list, with light links in the text where a sentence names its source. The guides are researched from public sources with AI assistance, and that is disclosed on the Editorial standards page. They are not first-hand tests. Independent readers averaged 7.1 out of 10 before the final fixes; I am not claiming a score for the current text."
 Screenshots: `wt03-guide-top.png`, `wt03-guide-sources.png` (Sources expanded), `wt03-guide-phone.png` (390 px).
 
 ## 5. Segment 4: Gear shop (1:00), https://www.pawsandpassage.com/gear

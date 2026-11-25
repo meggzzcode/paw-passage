@@ -55,7 +55,7 @@ What transfers is set by your signed purchase agreement. This table describes wh
 | Gear catalog                    | Yes                                | 92 product records, 65 active, 11 categories, 5 trip collections.                                                          |
 | Packing planner and other tools | Yes                                | 3 tools: packing planner (37 items), "Will my dog be accepted?", before-you-book checklist. No calculators.                |
 | Images and licenses             | Photos are licensed, not owned     | Credited Unsplash photos. The Unsplash license is nonexclusive: you may use them, you do not own them, and others may too. |
-| Pinterest and social assets     | Image files only                   | 30 pins and 31 share images, derived from the site's photos. No account unless your agreement says so.                     |
+| Pinterest and social assets     | Image files only                   | 31 pins and 32 share images, derived from the site's photos. No account unless your agreement says so.                     |
 | Documentation                   | Yes                                | This guide and the files in `docs/`.                                                                                       |
 | Hosting configuration           | Yes                                | `netlify.toml` in the repository. The Netlify project itself is transferred or recreated as agreed (section 3).            |
 | Affiliate infrastructure        | The wiring, yes; the accounts, no  | Links, tags and disclosures are set up. Section 5.                                                                         |
@@ -132,7 +132,7 @@ Work in this order. It follows the safe sequence in [docs/DNS-AND-TRANSFER.md](.
 
 - **Where:** the live site on a phone and a computer.
 - **What to do:** open the home page, one guide, a Gear category, the packing planner and one stay. Check the sitemap at `/sitemap.xml`.
-- **Success looks like:** every page loads, with no error page. The sitemap listed 104 addresses when counted.
+- **Success looks like:** every page loads, with no error page. The sitemap listed 105 addresses when counted.
 - **If it fails:** section 8.
 
 ### Step 10. Save recovery information and backups
@@ -145,7 +145,7 @@ Work in this order. It follows the safe sequence in [docs/DNS-AND-TRANSFER.md](.
 
 **What Pages CMS can edit.** `.pages.yml` defines seven areas. Three are collections of files: **Articles**, **Stays (accommodation listings)** and **Dog rules (places)**. Four are single files: **Affiliate links**, **Products (travel essentials)**, **Packing planner (dog packing list)** and **Business settings**. Uploaded photos go to `public/uploads`.
 
-**Exceptions.** Of 32 guide files, **25 are Markdown (23 published, 2 drafts) and editable in Pages CMS**. **7 are code-managed and all 7 are published**: the car-safety, first-aid, cabin-packing, fenced-yard, large-dog, rental-checklist and portable-fence guides. They do not appear in Articles. Also outside Pages CMS: towns and destinations, the eight "things to do" articles, Gear category text, dog-type pages, the checklist items, the 38-manager data file, the legal pages and all design. The fallback for a Markdown or YAML file is editing it directly on GitHub (section 6). Code files need a developer.
+**Exceptions.** Of 31 guide files, **24 are Markdown (all 24 published; none is a draft today) and editable in Pages CMS**. **7 are code-managed and all 7 are published**: the car-safety, first-aid, cabin-packing, fenced-yard, large-dog, rental-checklist and portable-fence guides. They do not appear in Articles. Also outside Pages CMS: towns and destinations, the eight "things to do" articles, Gear category text, dog-type pages, the checklist items, the 38-manager data file, the legal pages and all design. The fallback for a Markdown or YAML file is editing it directly on GitHub (section 6). Code files need a developer.
 
 After any task, save, wait for the build, and check the live page (section 6).
 
@@ -153,7 +153,7 @@ After any task, save, wait for the build, and check the live page (section 6).
 
 - **What you're changing:** the text, a fact or the review date of a Markdown article.
 - **Where to click:** Pages CMS, **Articles**, then the article by its title.
-- **Steps:** edit **"Article text (written in Markdown)"**. For a new fact, update **"Sources (shown at the end of the article)"** and set **"Last checked on"** to today. Save. Writing help: [docs/WRITING-IN-MARKDOWN.md](./docs/WRITING-IN-MARKDOWN.md).
+- **Steps:** edit **"Article text (written in Markdown)"**. For a new fact, add its source to **"Sources (shown at the end of the article)"** (every source must be listed there; links in the text are optional and light, only where the sentence names its source, and must go to a listed source) and set **"Last checked on"** to today. Save. Writing help: [docs/WRITING-IN-MARKDOWN.md](./docs/WRITING-IN-MARKDOWN.md).
 - **How to check:** after the build, open the article and look for your change.
 - **Cannot find your article?** It is one of the 7 code-managed guides (see Exceptions above). Those need a developer.
 - Screenshot pending (buyer-02-article-editor).

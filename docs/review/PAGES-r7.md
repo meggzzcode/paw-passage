@@ -1,8 +1,0 @@
-# Review (round 7): site pages, 390 and 1280 (localhost:4177)
-Verdict: SHIP. Checked /, /guides, /gear, /gear/car-safety, /stays, /affiliate-disclosure, /about, /terms, /data/pet-policies with Chrome via Playwright at both widths.
-
-- Layout: all nine return 200; scrollWidth equals viewport at both widths; no element overflows the viewport outside table scrollers; no console or page errors anywhere. Screenshots of /stays footer and /gear/car-safety cards at 390 show no glitches.
-- Product cards (only /gear/car-safety has them, 9 cards; /gear is a hub with none): the one button is "See it at Amazon" (rel "sponsored nofollow noopener"); no per-card "Affiliate link" label; "Check the current price" appears nowhere. "Details and specs" is absent on car-safety because that page is the detail page; on the two guides the order is See it at Amazon then Details and specs.
-- Notice: /gear/car-safety and both guides carry a clear top notice with "As an Amazon Associate I earn from qualifying purchases." and a "How we earn money" link. /affiliate-disclosure holds the full text. Pages with no affiliate links (/, /guides, /gear, /stays, /about, /terms, /data/pet-policies) have no sponsored links; all show the footer affiliate line.
-- Footer: readable at both widths (links 14 px at 85% cream, copyright and VRBO trademark lines 12 px at 65% to 75% cream on dark green). Minor: at 390 the footer is 1,157 px tall, longer than a screen and a half, and the 12 px 65% copyright line is the faintest text on the site.
-- Minor: /stays is 20,065 px tall at 390 (32 cards); unchanged from r6 and not a defect.

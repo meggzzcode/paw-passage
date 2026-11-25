@@ -1,4 +1,0 @@
-# Pass G: how-many-dogs-can-you-bring-to-a-vacation-rental
-Words (file incl. frontmatter): 2857 -> 2594.
-Fixed: table sources line now lists Twiddy, Brindley Beach and Cabin Rentals of Georgia by row; the Vrbo /en-sg/ listing claim ("23 kg per pet", "limit 2 total") removed from body, FAQ and frontmatter source because the US page (/en-us/) returned 429 to us and could not be verified (/en-ca/ also shows kg); sample caveat now stated in intro only, "in writing" in short answer, message and checklist; extra-cost section cut to two sentences plus fees-guide link (My Vacation Haven example kept, source still linked); gate and crate mentions moved after the bulleted list; "What we could not confirm" folded into body (Airbnb host-versus-guest question, service-animal cap); stray Georgia "See also" removed.
-Rejected as taste: crate card kept (both relatedProducts stay).

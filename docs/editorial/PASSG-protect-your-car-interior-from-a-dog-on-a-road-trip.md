@@ -1,4 +1,0 @@
-# Pass G: protect-your-car-interior-from-a-dog-on-a-road-trip
-Words (file): 2545 -> 2226.
-Fixed: bench/hammock/cargo split told once (bullets and two FAQ entries removed, Options by setup now only cards plus unique detail); "cargo liner" used throughout (title and description too); restraint disclaimer kept in lead and first FAQ; Heather booster card, source and relatedProducts entry removed; one sentence for SUV with folded seats (no invented product); hammock switched to kurgo-rover-hammock-standard (55 x 56 in, maker page https://kurgo.com/car-seat-covers/rover-hammock), Extended 63-in only as the larger-vehicle variant with its own matching URL; rental-crate hedging shortened; repeated "machine washable" removed.
-Rejected as taste: cleanup routine section, "Common mistakes" list, Happy Ride crate card (rental carrier rule is useful).

@@ -1,3 +1,0 @@
-# Pass G: keep-a-dog-cool-on-a-summer-trip
-Fixed: numbered 'If your dog is overheating right now' block moved first (shade, small cool sips, tepid cooling, call vet now on the way); confusing 104/105 sentence and nested parentheses replaced with plain sourced numbers; defensive 'not veterinary advice' line removed; state bullets condensed to one sourced sentence; FAQ hot-car-law answer points to the body; repeated 'water, shade, rest first' lines and extra 'we found no source' hedges removed (vest/pad note kept); Springland naming fixed; sourced safety statements kept.
-Rejected as taste: product card restructuring.

@@ -508,3 +508,13 @@ A curated set, grouped by how hard the gift is to choose. All from the catalog f
 - Shortlist slots: 19 distinct ids; reserve and HOLD items listed in section 5.
 - Rejected: 14 explicit rejects in the table above plus the existing inactive records.
 
+
+## 9. Finalists (2026-11-25; owner decisions applied)
+
+Owner decisions: Article 4 is merged into `dog-car-safety-harness-and-crate-guide` (no CPS-certified winner until the exact model and certification are verified); Article 7 is merged into `how-many-dogs-can-you-bring-to-a-vacation-rental` (no new products); Article 8 is written last and published only if Cowork verifies a strong practical selection. Cowork prompt: `docs/cowork/TREND_AMAZON_PROMPT_2.md` (verifies about 57 products in four batches instead of all 66).
+
+- **Batch 1A (re-verify and paw care):** Polar Trex boots, Musher's Secret, Natural Dog Company Paw Soother, AMK wipes, Super Shammy, Trail Dog kit, Springland 22oz, Soggy Doggy doormat, Kurgo Loft Wander bed, MidWest iCrate, North States gate, KONG Classic.
+- **Batch 1B (new slots and reserves):** KONG Wobbler, LickiMat, KONG Extreme, West Paw Toppl, Woof Pupsicle (candidate only), one crumb mat, Collaps-A-Bowl, Vittles Vault, Mt. Bachelor Pad, Waggle (only if sold on Amazon and defensible), Govee, Grip Trex.
+- **Batch 2 (car-safety merge):** Lucky Kennel Large and Intermediate plus strap kit, GUNNER G1 Intermediate and Small plus strap kit, Sleepypod Clickit Range, Saker Bomber, Sleepypod Atom (carrier row), Load Up and PetSafe collapsible crate as controls.
+- **Batch 3 (gifts):** 10 new checks plus about 10 carried over from Batches 1 and 2.
+- **Dropped from further research (not needed for any slot):** C09 Clickit Sport Plus, C10 Terrain Plus, C14 Kurgo Tru-Fit (stays in catalog, never called crash tested), W03, W04, W05 boots, W08 Burt's Bees, W12 Hurtta Warmer, Q04, Q05, E06, B03, B04, S02 to S05, D02, M01, M02, M03 (not placed in the cabin draft), M04, M06, V04, V05.

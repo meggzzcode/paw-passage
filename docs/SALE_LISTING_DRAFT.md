@@ -18,7 +18,7 @@ This is a **new, pre-revenue starter site**. The domain was registered 2026-11-1
 
 ## What you get
 
-- **Domain** pawsandpassage.com (Namecheap; valid to 2027-11-17; pushed to your Namecheap account at closing). Auto-renew is off pending the seller's decision; either the seller turns it on before the push or you renew (about $19.98 a year, read 2026-11-18).
+- **Domain** pawsandpassage.com (Namecheap; valid to 2027-11-17; pushed to your Namecheap account at closing). Auto-renew is off by the seller's decision: renewal is the buyer's responsibility (about $19.98 a year plus the ICANN fee, read 2026-11-25), and so is checking the HTTPS certificate (expires 2027-02-14).
 - **Original 38-manager research.** A dataset of 38 vacation-rental managers, 13 fields each (dog limit, weight limit, breed rule, fee, pool and hot-tub wording, minimum age, leaving a dog alone), one source link per row, all read 2026-11-18; published as a data page (`/data/pet-policies`) and a CSV download. Each cell is a public fact; the original part is the selection, structure and dated sourcing. It is a convenience sample, not a survey, and policies change.
 - **29 published guides, about 45,000 words** (shortest about 1,000, longest about 2,000), answer-first, each with FAQs (152 in all) and a Sources list (420 sources, every one linked inside the article text by publisher name; no numbered markers), plus per-guide claim and fact-check records. Topics: pet fees, dog limits, breed rules, damage charges, fenced yards, large dogs, puppies, seniors, reactive dogs, car safety, holidays, packing, first aid, cooling, cold weather, hiking, life jackets. Plus 3 unpublished drafts and 8 town "things to do with a dog" articles (not counted as guides). Independent readers rated the guides "ready with minor fixes", mean 7.1 of 10 on their scale; corrections made afterwards were not re-scored (`docs/FINAL_EDITORIAL_RELEASE.md`). That is a reviewer's reading, not a quality guarantee.
 - **Stay directory.** 83 stay files (Georgia 49, California 34) written from public listing pages. **0 are host-confirmed**; every page says its details were read from the listing and are not confirmed with the host. **78 are shown** (each has a public Vrbo listing link; stays that still have the seller's approved affiliate link show a labelled button), **23 are indexable** (in the sitemap), 55 are shown but `noindex` as too thin, and 5 are hidden. **Caveat for the buyer:** the 78 shown stays exist because the *seller's* Vrbo deeplinks are marked approved. They do not transfer. The site ships in `public-sources` mode (owner-approved 2026-11-25), so removing the seller's links keeps the same 78 shown and 23 indexable stays with plain Vrbo source links, no commission and no affiliate label. A listing link does not guarantee availability. (`docs/BUYER_AFFILIATE_TRANSITION.md`, sections 5 and 6.)
@@ -59,7 +59,7 @@ Original text, data selection and code written for the site are the seller's and
 - The 78 shown stays are not confirmed with a host; none was confirmed with a host. The 38-manager dataset is a single-date sample.
 - **Disclosure wording.** `/affiliate-disclosure` was rewritten on 2026-11-25 to match the real behaviour and the stay directory mode; it is not legally certified (see [OWNER_DECISION_STAY_MODE.md](./OWNER_DECISION_STAY_MODE.md)). Check the live page after the final deploy.
 - Affiliate earnings need accounts you open and get approved, including Amazon's own site review and qualifying-sales window.
-- Domain auto-renew is off; the domain expires 2027-11-17 if nobody renews it.
+- Domain auto-renew is off on purpose and is left to the buyer; the domain expires 2027-11-17 if the buyer does not renew it, and the HTTPS certificate (expires 2027-02-14) is also the buyer's to check.
 - One devDependency comes from a vendor namespace (below).
 
 ## Hosting options
@@ -73,7 +73,7 @@ Short version: the site does not depend on paid Lovable usage. Lovable was a des
 
 ## First-week plan for the buyer
 
-1. Accept the domain push and repository transfer; turn domain auto-renew on (`docs/TRANSFER_CHECKLIST.md`).
+1. Accept the domain push and repository transfer; turn domain auto-renew on and check the HTTPS certificate (`docs/TRANSFER_CHECKLIST.md`).
 2. Create your Netlify account, import the repo, deploy, attach the domain, confirm HTTPS.
 3. Run `node scripts/audit-seller-ids.mjs`, then follow `docs/BUYER_AFFILIATE_TRANSITION.md` in order: open your own accounts first, then replace IDs; decide the stay directory mode.
 4. Verify the site in your own Search Console and Bing, submit the sitemap, create your own GA4 property.

@@ -57,6 +57,7 @@ Historical counts for older commits stay in `docs/FINAL_SALE_CODE_RELEASE.md` an
 | 2026-11-25 | Stay directory mode | `public-sources` (same listed stays, plain public source links, no commission, no affiliate label; stays with the seller's approved link keep their labelled button). | APPROVED by owner; implemented `daa758f` |
 | 2026-11-25 | Affiliate disclosure wording | Truthful, mode-aware `/affiliate-disclosure` kept; make notices legible on mobile and close to recommendations in long guides. | APPROVED in principle; implemented `daa758f`; legal uncertainty flagged |
 | 2026-11-25 | Deploy | Owner said "yes deploy" (one production deploy of `main`, `docs/cowork/DEPLOY_NOW.md`). Builds are still off; not yet performed. | Approved, not executed |
+| 2026-11-25 | Domain auto-renew and HTTPS certificate | Owner decision: the seller does NOT turn on auto-renew and does NOT renew the domain or certificate; both are left to the buyer. Documented in `BUYER_HANDOVER.md` (maintenance section), `docs/TRANSFER_CHECKLIST.md`, `docs/BUYER_OVERVIEW.md` and `docs/SALE_LISTING_DRAFT.md`. | DECIDED |
 | 2026-11-25 | Marketplace publication | Not authorized. A draft preview only is allowed (C5). | Not authorized |
 
 ## Cowork read-only follow-up (2026-11-25) and triage
@@ -66,7 +67,7 @@ Historical counts for older commits stay in `docs/FINAL_SALE_CODE_RELEASE.md` an
 | Credits 45 (62 production deploys / 930 credits used); about 15 per build; builds Stopped | Enough for one more build (leaves about 30). |
 | 9848745 and 7fc3f3b built (not published) although docs-only | Not a defect: Netlify compares with the last built deploy, and the diff included code. Keep builds Stopped except for the one planned build. |
 | Node: build used 22.23.5; UI setting says 24; netlify.toml says 22 | OPTIONAL: align (keep 22, remove the UI override). |
-| Certificate: apex 'renewal incomplete', expires 2027-02-14 | OWNER, later; documented in the buyer guide. |
+| Certificate: apex 'renewal incomplete', expires 2027-02-14 | DECIDED: seller does not renew; documented as the buyer's responsibility in the buyer guide. |
 | Namecheap: Change Ownership (account to account) has no 60-day wait; outside-registrar Transfer Out waits about 60 days from 2026-11-16 (about 2027-01-15, Cowork arithmetic from public help pages); Domain Lock ON | Plan the sale handover as an account-to-account Change Ownership through escrow. |
 | Search Console data only 2026-11-16 to 11-23: 0 clicks, 306 impressions, position 17.4, 47 queries; top page was the now-404 no-pets-rental draft (83 impressions); GSC sitemap read 2026-11-23 with 98 URLs; 0 external links | Baseline recorded; DEFERRED WITH DISCLOSURE (no established traffic). Decision for the owner: 301 the draft URL to a relevant live guide (optional). |
 | GA4 Oct 28 to Nov 24: 527 sessions, 513 Direct, 11 'Paid Search' (nothing paid runs), no Organic Search | Disclose: mostly direct (owner and testing), property predates the domain; no traffic claims. |

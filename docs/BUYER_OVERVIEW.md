@@ -36,7 +36,7 @@ Follow [BUYER_HANDOVER.md](../BUYER_HANDOVER.md) section 3, then replace the sel
 
 ## Ongoing costs and limits
 
-Domain renewal $19.98 a year plus the ICANN fee (Namecheap notice read 2026-11-25; auto-renew is currently off; expires 2027-11-17). Optional mailbox listed at $14.88 a year. Netlify Free is $0 with 300 credits a month; each production deploy uses 15. GitHub Free and Pages CMS are free as of 2026-11-25. Prices change; check before buying ([BUYER_HANDOVER.md](../BUYER_HANDOVER.md) section 12).
+Domain renewal $19.98 a year plus the ICANN fee (Namecheap notice read 2026-11-25; auto-renew is off by design and the new owner handles renewal; expires 2027-11-17; the HTTPS certificate expires 2027-02-14 and is also the new owner's to check). Optional mailbox listed at $14.88 a year. Netlify Free is $0 with 300 credits a month; each production deploy uses 15. GitHub Free and Pages CMS are free as of 2026-11-25. Prices change; check before buying ([BUYER_HANDOVER.md](../BUYER_HANDOVER.md) section 12).
 Limits: seven guides, towns, Gear category text and design changes need a developer. The Pages CMS forms loaded in the seller's account on 2026-11-25 (VERIFIED IN ACCOUNT); the full save-to-live loop is UNVERIFIED. Real-device checks are partly pending. Guides are researched from public sources, not first-hand.
 
 ## How transfer works

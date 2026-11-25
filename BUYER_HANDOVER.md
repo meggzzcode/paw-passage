@@ -47,7 +47,7 @@ What transfers is set by your signed purchase agreement. This table describes wh
 
 | Asset                           | Included?                          | What you should know                                                                                                       |
 | ------------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| Domain `pawsandpassage.com`     | Yes, by Namecheap ownership change | Registered 2026-11-16, expires 2027-11-17. Auto-renew is OFF (VERIFIED IN ACCOUNT 2026-11-25).                             |
+| Domain `pawsandpassage.com`     | Yes, by Namecheap ownership change | Registered 2026-11-16, expires 2027-11-17. Auto-renew is OFF on purpose; renewal is the buyer's job (VERIFIED IN ACCOUNT 2026-11-25).                             |
 | Website code                    | Yes, by GitHub repository transfer | Plus a written copyright assignment. There is no LICENSE file; the assignment wording is a seller and legal item.          |
 | Published guides                | Yes                                | 29 published. 22 are editable in Pages CMS; 7 are code files (section 4 and 9). VERIFIED IN CODE.                          |
 | Original research and CSV       | Yes                                | 38 rental managers, 13 fields, read 2026-11-18. A convenience sample, not a survey.                                        |
@@ -281,8 +281,8 @@ No daily routine is needed.
 **Periodically:**
 
 - **Data refresh.** The pet-policy dataset is a dated snapshot from 2026-11-18. Re-read every manager page at least every six months, following [docs/DATA-RECHECK-LOG.md](./docs/DATA-RECHECK-LOG.md). The data file is code, so this needs a developer.
-- **Domain renewal.** Expires **2027-11-17**. Auto-renew is OFF until you turn it on. Do this on day one.
-- **Certificate.** The current certificate expires **2027-02-14** and renews itself. Netlify's "renewal incomplete" flag for the apex domain (2026-11-25) should clear after your DNS is correct. Check it in January 2027.
+- **Domain renewal (your responsibility).** The domain expires **2027-11-17**. The seller is deliberately NOT renewing or turning on auto-renew: renewal belongs to the new owner. On day one, in your own Namecheap account, turn Auto-Renew on (or put a calendar reminder at least 60 days before 2027-11-17). A missed renewal can lose the domain.
+- **HTTPS certificate (your responsibility after transfer).** The seller is not renewing the certificate. The current certificate expires **2027-02-14**. Netlify normally renews it by itself once your domain's DNS points at your Netlify site, but on 2026-11-25 Netlify flagged "Certificate renewal incomplete: missing domains pawsandpassage.com" for the apex domain (VERIFIED IN ACCOUNT). After the transfer, open Netlify > Domain management > HTTPS, and if the flag is still there click the renew/provision option; check again in January 2027 before the expiry date.
 - **Netlify credits** if the site grows.
 
 ## 8. If something goes wrong

@@ -49,13 +49,13 @@ What transfers is set by your signed purchase agreement. This table describes wh
 | ------------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
 | Domain `pawsandpassage.com`     | Yes, by Namecheap ownership change | Registered 2026-11-16, expires 2027-11-17. Auto-renew is OFF on purpose; renewal is the buyer's job (VERIFIED IN ACCOUNT 2026-11-25).                             |
 | Website code                    | Yes, by GitHub repository transfer | Plus a written copyright assignment. There is no LICENSE file; the assignment wording is a seller and legal item.          |
-| Published guides                | Yes                                | 29 published. 22 are editable in Pages CMS; 7 are code files (section 4 and 9). VERIFIED IN CODE.                          |
+| Published guides                | Yes                                | 30 published. 23 are editable in Pages CMS; 7 are code files (section 4 and 9). VERIFIED IN CODE.                          |
 | Original research and CSV       | Yes                                | 38 rental managers, 13 fields, read 2026-11-18. A convenience sample, not a survey.                                        |
 | Stay directory                  | Yes                                | 83 stay files; 78 shown; 23 in the sitemap; **0 confirmed with a host**.                                                   |
 | Gear catalog                    | Yes                                | 92 product records, 65 active, 11 categories, 5 trip collections.                                                          |
 | Packing planner and other tools | Yes                                | 3 tools: packing planner (37 items), "Will my dog be accepted?", before-you-book checklist. No calculators.                |
 | Images and licenses             | Photos are licensed, not owned     | Credited Unsplash photos. The Unsplash license is nonexclusive: you may use them, you do not own them, and others may too. |
-| Pinterest and social assets     | Image files only                   | 29 pins and 30 share images, derived from the site's photos. No account unless your agreement says so.                     |
+| Pinterest and social assets     | Image files only                   | 30 pins and 31 share images, derived from the site's photos. No account unless your agreement says so.                     |
 | Documentation                   | Yes                                | This guide and the files in `docs/`.                                                                                       |
 | Hosting configuration           | Yes                                | `netlify.toml` in the repository. The Netlify project itself is transferred or recreated as agreed (section 3).            |
 | Affiliate infrastructure        | The wiring, yes; the accounts, no  | Links, tags and disclosures are set up. Section 5.                                                                         |
@@ -132,7 +132,7 @@ Work in this order. It follows the safe sequence in [docs/DNS-AND-TRANSFER.md](.
 
 - **Where:** the live site on a phone and a computer.
 - **What to do:** open the home page, one guide, a Gear category, the packing planner and one stay. Check the sitemap at `/sitemap.xml`.
-- **Success looks like:** every page loads, with no error page. The sitemap listed 103 addresses when counted.
+- **Success looks like:** every page loads, with no error page. The sitemap listed 104 addresses when counted.
 - **If it fails:** section 8.
 
 ### Step 10. Save recovery information and backups
@@ -145,7 +145,7 @@ Work in this order. It follows the safe sequence in [docs/DNS-AND-TRANSFER.md](.
 
 **What Pages CMS can edit.** `.pages.yml` defines seven areas. Three are collections of files: **Articles**, **Stays (accommodation listings)** and **Dog rules (places)**. Four are single files: **Affiliate links**, **Products (travel essentials)**, **Packing planner (dog packing list)** and **Business settings**. Uploaded photos go to `public/uploads`.
 
-**Exceptions.** Of 32 guide files, **25 are Markdown (22 published, 3 drafts) and editable in Pages CMS**. **7 are code-managed and all 7 are published**: the car-safety, first-aid, cabin-packing, fenced-yard, large-dog, rental-checklist and portable-fence guides. They do not appear in Articles. Also outside Pages CMS: towns and destinations, the eight "things to do" articles, Gear category text, dog-type pages, the checklist items, the 38-manager data file, the legal pages and all design. The fallback for a Markdown or YAML file is editing it directly on GitHub (section 6). Code files need a developer.
+**Exceptions.** Of 32 guide files, **25 are Markdown (23 published, 2 drafts) and editable in Pages CMS**. **7 are code-managed and all 7 are published**: the car-safety, first-aid, cabin-packing, fenced-yard, large-dog, rental-checklist and portable-fence guides. They do not appear in Articles. Also outside Pages CMS: towns and destinations, the eight "things to do" articles, Gear category text, dog-type pages, the checklist items, the 38-manager data file, the legal pages and all design. The fallback for a Markdown or YAML file is editing it directly on GitHub (section 6). Code files need a developer.
 
 After any task, save, wait for the build, and check the live page (section 6).
 

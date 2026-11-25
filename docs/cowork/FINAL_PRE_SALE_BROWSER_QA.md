@@ -125,8 +125,9 @@ Then:
 8. Gear trip collections: `/gear` shows "Shop by trip" and the trip collections (for example `/gear?trip=road-trip`).
 9. Stay directory mode behaves as the owner approved (see the Decision log): listed stays, links and labels match the approved mode.
 10. Affiliate disclosure page: `/affiliate-disclosure` text matches what renders on Amazon buttons and Vrbo/stay buttons (record any difference; it is an owner decision item, not a pass).
+11a. The republished guide `/guides/bringing-a-dog-to-a-no-pets-rental` returns 200 (it returned 404 live from about 2026-11-24 while it was a draft) with title "No-Pets Rental With a Dog: What Happens, What to Do", a self-canonical URL, one H1, Article and BreadcrumbList JSON-LD, the FAQ, the Sources list and the product cards. Expected sitemap count is 104 and `/guides` lists 30 guides.
 11. No server errors (5xx), no 404 on any manifest URL, no old-build artifacts (old titles, the retired URL answering 200, the old packing tool).
-12. Run `node scripts/verify-site.mjs https://www.pawsandpassage.com --site-url https://www.pawsandpassage.com --draft-marker bringing-a-dog-to-a-no-pets-rental` where reachable, and record the final line ("N checks passed, 0 failed").
+12. Run `node scripts/verify-site.mjs https://www.pawsandpassage.com --site-url https://www.pawsandpassage.com --draft-marker breed-restrictions-at-vacation-rentals` where reachable, and record the final line ("N checks passed, 0 failed"). The marker is a draft guide that must return 404 (there are 2 drafts: `breed-restrictions-at-vacation-rentals` and `pet-friendly-listing-red-flags`; the no-pets-rental guide is published now).
 
 **Evidence required**
 The filled table above; the published commit hash; the last line of `verify-site`; a status-code table (8 things-to-do, the retired URL 301, the tool redirects, the 10 netlify redirects); two screenshots (planner, Gear hub). Private folder; the repository records only values.
@@ -324,12 +325,12 @@ Google Search Console (domain property `pawsandpassage.com`, or note the URL-pre
 1. Export the current query and page data (CSV preferred): impressions, clicks, CTR and average position, with the exact date range stated (data lags 2 to 3 days).
 2. Sitemap report: submitted `https://www.pawsandpassage.com/sitemap.xml`, status, discovered URL count versus the manifest `SITEMAP_URL_COUNT`.
 3. Pages report headline: indexed versus not indexed and the exclusion reasons.
-4. URL Inspection for key URLs (home, `/guides/how-vacation-rental-pet-fees-work`, `/data/pet-policies`, `/tools/packing-list`, one things-to-do URL): fetchable, canonical accepted; confirm the new pages are crawlable.
+4. URL Inspection for key URLs (home, `/guides/bringing-a-dog-to-a-no-pets-rental` (the republished guide: inspect only; record the status and the live-page test result, make no indexing request unless the owner separately authorizes it), `/guides/how-vacation-rental-pet-fees-work`, `/data/pet-policies`, `/tools/packing-list`, one things-to-do URL): fetchable, canonical accepted; confirm the new pages are crawlable.
 5. GA4: traffic sources and engagement for the same date range.
 6. Bing (optional): site added/verified, sitemap status and discovered count, and whether the IndexNow key file `https://www.pawsandpassage.com/c020721357f8d6912ac3f66e4c956986.txt` returns 200. Read-only.
 
 *Part 2: later growth review (separate, after recrawl)*
-Repeat the exports after the recrawl window and compare with the Part 1 baseline. Do not read rankings in the first 2 to 4 weeks after a deploy.
+Monitor impressions and clicks for `/guides/bringing-a-dog-to-a-no-pets-rental` and report them as observed, without claiming an immediate ranking recovery. Repeat the exports after the recrawl window and compare with the Part 1 baseline. Do not read rankings in the first 2 to 4 weeks after a deploy.
 
 **Evidence required**
 CSV exports and the sanitized return defined in the investigation file; the exact date range and time read; no emails, account IDs or tokens. Historical figures (236 impressions, 0 clicks, 21 of 23 inspected indexed) describe the older build and must stay labelled historical.

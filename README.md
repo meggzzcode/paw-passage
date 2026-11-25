@@ -4,12 +4,12 @@ A dog-friendly vacation-rental travel site. Pre-revenue, plain-file content, no 
 
 What the repository contains (counted 2026-11-25 at `3e5923b`; commands in [docs/buyer/ROUTE_AND_ASSET_COUNTS.md](docs/buyer/ROUTE_AND_ASSET_COUNTS.md)):
 
-- **29 published researched guides** (32 files; 3 drafts stay unpublished) and **8 town "things to do with a dog" articles**.
+- **30 published researched guides** (32 files; 2 drafts stay unpublished) and **8 town "things to do with a dog" articles**.
 - **An original 38-manager pet-policy dataset** (13 fields per manager) on `/data/pet-policies` and as `public/pet-policies-38-managers.csv`.
 - **3 tools:** a personalized dog packing planner (saves on the visitor's device only; copy and print; no accounts), "will my dog be accepted" (checks the 38 managers) and a before-you-book checklist. There are no calculators.
 - **A stay directory:** 83 stay files, none confirmed with a host; 78 shown (each page says its details are not confirmed with the host) because each has a public Vrbo listing link, 23 of them indexable, 5 hidden. The site ships in `stayDirectoryMode: public-sources`: stays keep plain source links if the seller's affiliate links are removed ([docs/BUYER_AFFILIATE_TRANSITION.md](docs/BUYER_AFFILIATE_TRANSITION.md)).
 - **A photo-free Gear shop:** 11 category pages, 5 trip collections, 65 active products (92 records), no third-party product images.
-- A 103-URL generated sitemap, structured data, redirects and a weekly health check. **783 automated tests in 61 files.**
+- A 104-URL generated sitemap, structured data, redirects and a weekly health check. **783 automated tests in 61 files.**
 
 **Deployment (2026-11-25):** production runs `main@82b0b34`, which is older than the final commit; the final build is not yet deployed and needs the owner's approval ([docs/SALE_RELEASE_STATUS.md](docs/SALE_RELEASE_STATUS.md)). Affiliate accounts, analytics and Search Console are the seller's and are **not** part of a sale; the IDs in the repository are the seller's (`node scripts/audit-seller-ids.mjs` lists them).
 

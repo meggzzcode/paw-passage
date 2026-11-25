@@ -1,5 +1,8 @@
 # Route and asset counts (recount of 2026-11-24 at `9797221`)
 
+> **Update 2026-11-25 at `6f9add3` (no-pets-rental guide republished at the same URL, owner-approved).** The only content change since the recount below: `bringing-a-dog-to-a-no-pets-rental` is now published (it was a draft returning 404). Re-counted from a local production build with a throwaway Vitest file using the same method as the table below (`allGuides`, `isPublic`, whitespace-split bodies): **30 published guides (23 Markdown + 7 TypeScript), 2 drafts** (`breed-restrictions-at-vacation-rentals`, `pet-friendly-listing-red-flags`), 32 guide files; **46,721 words** in published bodies (shortest 1,014, longest 2,027; the new guide is 1,518 by this method, about 1,420 words of prose); **156 FAQs**; **439 sources**, every URL linked in its article text; **93 pick cards**; **104 sitemap URLs** (guides row 31 = `/guides` + 30); **30 pins and 31 share images** (`public/pins/`, `public/share/`, 30 data rows in `docs/pinterest-pins.csv`); **783 tests in 61 files**; `verify-site` run with `--draft-marker breed-restrictions-at-vacation-rentals`. Where a row below still says 29 guides, 103 URLs, 29 pins, 3 drafts, 45,093 words, 152 FAQs or 420 sources, this note supersedes it (the table keeps its 2026-11-24 and `3e5923b` wording as history).
+
+
 > **Recount 2026-11-25 at `3e5923b`.** Every content count in this file was re-run and is unchanged (29 published guides: 22 Markdown and 7 TypeScript; 32 files; 83 stay files, 78 shown, 23 indexable, 55 shown but noindex, 5 hidden, 0 host-confirmed; 92 products, 65 active; 11 categories; 5 trip collections; 160 affiliate entries; 37 packing items; 8 town articles; 103 sitemap URLs from a local production build). Only the test count changed: **783 tests in 61 files** (the cleanup removed unused code and its tests). `verify-site` 319 passed, 0 failed; tsc and eslint clean; `test-netlify-ignore` all rows pass; the seller-ID audit reports 5 items. Production runs `main@82b0b34`; the final commit is not yet deployed.
 
 Purpose: one place for every headline number a buyer or a listing may quote, with the commands that produced it, so each number can be re-run. Nothing here is a traffic, revenue, ranking, valuation or buyer-interest figure.
@@ -42,12 +45,12 @@ The content counts were produced by a throwaway Vitest file (not committed, run 
 | Sitemap | **103 URLs**, all HTTP 200, all self-canonical on `https://www.pawsandpassage.com`, exactly one H1, no `noindex`, every title 60 characters or fewer (after decoding `&amp;`), every description 120 to 160 characters |
 | Spot checks | the 8 `.../things-to-do` URLs: 200; `/guides/vacation-rentals-with-no-dog-weight-limit`: 301 to the large-dog guide; `/tools/cost-calculator`, `/tools/pet-cost-check`, `/tools/host-questions`: 301; `/pet-policies-38-managers.csv`: 200 |
 
-## Sitemap: 103 URLs (BUILT and COUNTED, the two agree)
+## Sitemap: 104 URLs from 2026-11-25 (103 before the no-pets-rental guide was republished; BUILT and COUNTED, the two agree)
 
 | Type | URLs | Detail |
 |---|---:|---|
 | Home | 1 | `/` |
-| Guides | 30 | `/guides` + 29 published guides |
+| Guides | 31 | `/guides` + 30 published guides (updated 2026-11-25) |
 | Stays | 24 | `/stays` + 23 indexable stay pages |
 | Gear | 12 | `/gear` + 11 category pages |
 | Destinations | 17 | `/destinations` + 2 state pages + 6 town pages (Blue Ridge, Ellijay, Helen, Dahlonega, San Diego, Santa Barbara) + 8 "things to do with a dog" articles (`/destinations/<state>/<town>/things-to-do`; these are not guides) |
@@ -55,9 +58,9 @@ The content counts were produced by a throwaway Vitest file (not committed, run 
 | Tools | 4 | `/tools` + 3 tools (packing planner, will my dog be accepted, before-you-book checklist) |
 | Research data | 1 | `/data/pet-policies` |
 | Trust and info pages | 9 | about, contact, list-your-property, affiliate-disclosure, privacy, terms, editorial-standards, methodology, corrections |
-| **Total** | **103** | 1 + 30 + 24 + 12 + 17 + 5 + 4 + 1 + 9 |
+| **Total** | **104** | 1 + 31 + 24 + 12 + 17 + 5 + 4 + 1 + 9 |
 
-Not in the sitemap on purpose: `/dog-rules` (noindex, no verified place), the five Gear trip views (`/gear?trip=<slug>`, `noindex, nofollow`, canonical `/gear`), retired tool addresses (301 to `/tools`), the three draft guides (404), 55 shown stays that are `noindex` as too thin, and the Monterey and Mendocino town pages (`noindex`; their things-to-do articles are indexable and are linked from the state pages). A sitemap lists URLs offered for indexing; it is not evidence that Google has indexed them.
+Not in the sitemap on purpose: `/dog-rules` (noindex, no verified place), the five Gear trip views (`/gear?trip=<slug>`, `noindex, nofollow`, canonical `/gear`), retired tool addresses (301 to `/tools`), the two draft guides (404), 55 shown stays that are `noindex` as too thin, and the Monterey and Mendocino town pages (`noindex`; their things-to-do articles are indexable and are linked from the state pages). A sitemap lists URLs offered for indexing; it is not evidence that Google has indexed them.
 
 ## Listing terms: use exactly these words
 
@@ -81,11 +84,11 @@ Not in the sitemap on purpose: `/dog-rules` (noindex, no verified place), the fi
 | Asset | Count | How counted |
 |---|---|---|
 | Guide files | 32 (25 Markdown in `content/guides/`, 7 TypeScript in `src/content/guides/`) | `allGuides` |
-| Published guides | 29 (22 Markdown + 7 TypeScript) | `isPublic` |
-| Words in published guide bodies | **45,093** (shortest 1,014, longest 2,027) | whitespace-split words of each published guide's Markdown body (front matter, FAQs and Sources excluded; card directives and link syntax included). The same method gave 57,011 at `b0f371a` and 81,901 for the same guides at `dbbbb94`: the final editorial pass cut length on purpose. (The `13a7ce1` recount gave 45,057; the 36-word difference is the small SEO link edits made since.) |
-| FAQs in published guides | 152 | sum of `faqs` |
-| Sources in published guides | **420**, every URL present in its article text | sum of `sources`; for each source `body.includes(url)` is true on all 420 |
-| Pick / spec cards in guides | 90 | `{{pick:}}` directives (counted at `13a7ce1`, guide text unchanged in spirit since; re-run before quoting) |
+| Published guides | **30 (23 Markdown + 7 TypeScript)**; 2 drafts (was 29 and 3 before 2026-11-25) | `isPublic` |
+| Words in published guide bodies | **46,721 at 2026-11-25** (was 45,093 with 29 guides; shortest 1,014, longest 2,027) | whitespace-split words of each published guide's Markdown body (front matter, FAQs and Sources excluded; card directives and link syntax included). The same method gave 57,011 at `b0f371a` and 81,901 for the same guides at `dbbbb94`: the final editorial pass cut length on purpose. (The `13a7ce1` recount gave 45,057; the 36-word difference is the small SEO link edits made since.) |
+| FAQs in published guides | 156 (was 152) | sum of `faqs` |
+| Sources in published guides | **439** (was 420), every URL present in its article text | sum of `sources`; for each source `body.includes(url)` is true on all 439 |
+| Pick / spec cards in guides | 93 (2026-11-25 recount; was 90) | `{{pick:}}` directives (counted at `13a7ce1`, guide text unchanged in spirit since; re-run before quoting) |
 | Pet-policy dataset | **38 records x 13 fields** (header: manager, region, place, dog_or_pet_limit, limit_basis, weight_limit, breed_rule, pet_fee_as_stated, dogs_in_pool_or_hot_tub, minimum_dog_age, leaving_dog_alone, source_page, read_on) | `public/pet-policies-38-managers.csv` (39 lines); read date 2026-11-18 |
 | Town "things to do" articles | 8 (all public) | `allTownReads`; indexable at `/destinations/<state>/<town>/things-to-do` |
 | Destinations | 2 states (Georgia, California), 8 towns defined (6 indexable) | `destinations` |
@@ -99,8 +102,8 @@ Not in the sitemap on purpose: `/dog-rules` (noindex, no verified place), the fi
 | Affiliate entries | **160**: 79 Vrbo (all marked approved) + 81 Amazon (71 marked approved, 10 not) | `content/affiliates.yml` |
 | Seller identifiers in the repo | 5 kinds remain: Amazon tracking ID, GA4 ID, Impact verification value, Pinterest profile, 79 Vrbo deeplinks | `node scripts/audit-seller-ids.mjs` ("RESULT: 5 seller identifier(s) remain"); 78 of the 83 stay files use a seller deeplink |
 | Seller IDs (public identifiers, not secrets) | Amazon tag `pawspassage-20`; GA4 `G-1J97C8CPC1`; Impact verification value and Pinterest URL in `content/settings.yml`; Vrbo deeplink codes in `scripts/seller-ids.json` | the buyer replaces all of them ([docs/BUYER_AFFILIATE_TRANSITION.md](../BUYER_AFFILIATE_TRANSITION.md)) |
-| Pinterest pin images | 29 (1000x1500) + `docs/pinterest-pins.csv` (29 data rows) | `public/pins/` |
-| Share (link-preview) images | 30 | `public/share/` |
+| Pinterest pin images | 30 (1000x1500) + `docs/pinterest-pins.csv` (30 data rows) | `public/pins/` |
+| Share (link-preview) images | 31 | `public/share/` |
 | Image files in `src/assets` | 196 JPG | file listing |
 | Image credit entries | **64** (Unsplash photographers) | `imageCredits.length` (a `grep -c "key:"` gives 65 because the type line also matches) |
 | Fonts | 2 variable WOFF2 (DM Sans, Fraunces) with OFL texts | `public/fonts/` |

@@ -1,5 +1,7 @@
 # Buyer asset inventory: Paws & Passage
 
+> **Update 2026-11-25 at `6f9add3`.** The no-pets-rental guide was republished (same URL). Current counts: 30 published guides (23 Markdown, 7 TypeScript), 2 drafts, 104 sitemap URLs, 46,721 words, 156 FAQs, 439 sources, 93 pick cards, 30 pins and 31 share images, 783 tests in 61 files. Older figures below (29 guides, 103 URLs, 45,093 words, 420 sources, 152 FAQs, 90 picks, 29 pins) are superseded; see `docs/buyer/ROUTE_AND_ASSET_COUNTS.md`.
+
 > **Update 2026-11-25.** Counts re-run at commit `3e5923b`: 783 tests in 61 files (was 771 in 59 after the cleanup removed unused code and tests); every content count below is unchanged (29 published guides, 83 stay files, 78 shown, 23 indexable, 65 active products, 103 sitemap URLs). Live status: production runs `main@82b0b34`; the final commit is not yet deployed. Where this file says "nothing is deployed" or "Pages CMS never opened", it is older: see [SALE_RELEASE_STATUS.md](./SALE_RELEASE_STATUS.md) (the CMS forms loaded in the seller's account on 2026-11-25; the save-to-live loop is UNVERIFIED). The open disclosure mismatch noted in section 7 was addressed by the 2026-11-25 rewrite of `/affiliate-disclosure` (not legally certified). Owner's guide: [BUYER_HANDOVER.md](../BUYER_HANDOVER.md).
 
 Re-verified 2026-11-24 (final) against repository `HEAD` `9797221` on `main`: tests (`bunx vitest run`: **771 tests in 59 files**, all passing), `bunx tsc --noEmit` and `bunx eslint . --quiet` clean, a production build served locally, all **103** sitemap URLs fetched (all HTTP 200), `node scripts/verify-site.mjs` (**319 checks passed, 0 failed**), and the content counted with the site's own rules. Commands and every count: [docs/buyer/ROUTE_AND_ASSET_COUNTS.md](buyer/ROUTE_AND_ASSET_COUNTS.md). This file replaces the versions made at `13a7ce1` and `56552fc`; the older numbers (498, 605 and 610 tests, 57,011 words, 452 sources, 37 stay files, 53 active products, the 95-URL and 98-URL sitemaps, a "15-item" packing list, calculators, per-button affiliate labels on guides and Gear) are superseded.
@@ -18,26 +20,26 @@ Live site versus repo: the owner has stopped Netlify builds to preserve credits 
 
 | Asset | Quantity |
 |---|---|
-| Sitemap URLs | 103 (home 1, guides 30, stays 24, gear 12, destinations 17, dogs 5, tools 4, data 1, trust and info pages 9) |
-| Published guides | 29 (32 files: 25 Markdown, 7 TypeScript; 3 drafts held back) |
-| Words in published guide bodies | 45,093 (1,014 to 2,027 per guide) |
-| Sources / inline citations | 420 listed sources, each linked inside the article text by publisher name (no numbered markers); 152 FAQs |
+| Sitemap URLs | 104 (home 1, guides 31, stays 24, gear 12, destinations 17, dogs 5, tools 4, data 1, trust and info pages 9) |
+| Published guides | 30 (32 files: 25 Markdown, 7 TypeScript; 2 drafts held back) |
+| Words in published guide bodies | 46,721 (1,014 to 2,027 per guide) |
+| Sources / inline citations | 439 listed sources, each linked inside the article text by publisher name (no numbered markers); 156 FAQs |
 | Original dataset | 38 vacation-rental managers x 13 fields, read 2026-11-18, one source URL per row |
 | Stay pages | 83 stay files, **0 host-confirmed** (none confirmed with a host); 78 shown (listed) with their own detail page; 23 indexable (in the sitemap); 55 shown but `noindex`; 5 hidden |
 | Destination / dog-type pages | 2 states + 8 towns defined (6 indexable) + 8 "things to do with a dog" articles (not guides); 4 dog-type pages |
 | Planning tools | 3 (will my dog be accepted, dog packing list planner, before-you-book checklist); no calculators |
 | Gear | 11 category pages + hub; 92 product records, 65 active; 5 curated trip collections |
-| Pick/spec cards in guides | 90 across all 29 guides |
-| Pins and share images | 29 pins (1000x1500) + pin sheet; 30 share images (1200x630) |
+| Pick/spec cards in guides | 93 across all 30 guides |
+| Pins and share images | 30 pins (1000x1500) + pin sheet; 31 share images (1200x630) |
 | Tests | 771 in 59 files |
 
 ## 3. Published guides and research
 
 | Item | Detail | Where |
 |---|---|---|
-| Published guides | 29 on dog-friendly vacation-rental travel: pet fees, dog limits, breed restrictions, damage charges, fenced yards, large dogs (the former no-weight-limit guide is merged into the large-dog guide and redirects with a 301), puppies, seniors, reactive dogs, two large dogs in a car, holidays, packing, car safety, first aid, cooling, cold weather, hiking, life jackets, ramps, bowls, lost-dog plan | `content/guides/*.md` (25 files, editable in Pages CMS), `src/content/guides/*.ts` (7 files, need a developer) |
-| Length | 45,093 words in bodies; 1,014 to 2,027 per guide (the final editorial pass cut the same 29 guides by about 45% from 81,901; the guides are answer-first, not padded) | script, method in the counts file |
-| Citations | 420 sources (title, publisher, URL, access date) listed per guide in a compact collapsed Sources list, and linked inline in the article text by publisher name (natural publisher links or short parenthetical links such as (`[Airbnb](url)`); no numbers; numbered markers were removed 2026-11-24). All 420 are linked inside the text (checked on the built pages) | frontmatter `sources`, body inline links |
+| Published guides | 30 on dog-friendly vacation-rental travel: pet fees, dog limits, breed restrictions, damage charges, fenced yards, large dogs (the former no-weight-limit guide is merged into the large-dog guide and redirects with a 301), puppies, seniors, reactive dogs, two large dogs in a car, holidays, packing, car safety, first aid, cooling, cold weather, hiking, life jackets, ramps, bowls, lost-dog plan | `content/guides/*.md` (25 files, editable in Pages CMS), `src/content/guides/*.ts` (7 files, need a developer) |
+| Length | 46,721 words in bodies; 1,014 to 2,027 per guide (the final editorial pass cut the 29 guides then published by about 45% from 81,901; the guides are answer-first, not padded) | script, method in the counts file |
+| Citations | 439 sources (title, publisher, URL, access date) listed per guide in a compact collapsed Sources list, and linked inline in the article text by publisher name (natural publisher links or short parenthetical links such as (`[Airbnb](url)`); no numbers; numbered markers were removed 2026-11-24). All 439 are linked inside the text (checked on the built pages) | frontmatter `sources`, body inline links |
 | Pick/spec cards | 90 cards (the shared Gear product card) with a reason, up to three fact chips and one "See it at Amazon" button; no per-card affiliate label | guide bodies |
 | Drafts | 3 unpublished guides (breed restrictions, listing red flags, no-pets rental), ready to finish | `content/guides/` |
 | Audit trail | Per-guide claims and fact-check files (`docs/CLAIMS-*.md`, `docs/FACTCHECK-*.md`), editorial scorecards and change logs (`docs/editorial/`, [docs/ARTICLE_SCORECARD.md](ARTICLE_SCORECARD.md)), independent reader reviews (`docs/review/FINAL-READER-*.md`) and the final release report ([docs/FINAL_EDITORIAL_RELEASE.md](FINAL_EDITORIAL_RELEASE.md): independent reader mean 7.1 of 10, "ready with minor fixes", corrections applied after review and not re-scored) | `docs/` |
@@ -90,7 +92,7 @@ A trip setup (trip type, days, dogs, optional meals per day and conditions) prod
 |---|---|
 | Gear hub | `/gear` is a **photo-free editorial shop**: hero, five curated trip collections (road trip, cabin stay, beach and lake, winter, hiking; server-rendered `?trip=` views, `noindex`), a short featured list, all 11 category tiles, dog-type shortcuts and a link to the packing tool. 11 live category pages (car safety, car interior, ramps and steps, feeding and hydration, pens and gates, comfort and cooling, water and beach, trail and hiking, cold weather, safety ID and first aid, rental cleanup). Legacy category addresses redirect with 301. Design spec and an honest self-score (7.7 of 10, not the 9 target): [docs/GEAR_SHOPPER_EXPERIENCE_SPEC.md](GEAR_SHOPPER_EXPERIENCE_SPEC.md) |
 | Products | 92 records, 65 active, each with a source, a read date and an Amazon link (the Amazon listing is the working link; a maker page is shown where one was found). No prices, ratings, stock or "tested" claims by design. No third-party (Amazon) product images: cards use the site's own graphic panels, icons and spec chips |
-| Gear guides | Every published guide (29 of 29) carries at least one earning product, placed beside the paragraph that explains it; 90 pick cards in all |
+| Gear guides | Every published guide (30 of 30) carries at least one earning product, placed beside the paragraph that explains it; 93 pick cards in all |
 | Disclosure | One affiliate notice at the top of every guide and Gear page that carries an affiliate link, including Amazon's exact sentence ("As an Amazon Associate I earn from qualifying purchases."); **per-button affiliate labels were removed** on guides and Gear (0 on the build) and no "Check the current price" lines remain. **Open mismatch (owner decision):** Vrbo booking buttons on stay pages still show "Affiliate link · We may earn a commission if you book, at no extra cost to you.", while `/affiliate-disclosure` still says every buy or booking button carries its own label, which is no longer true for Amazon buttons. 49 of 49 pages with an Amazon link carry the sentence (build of `9797221`) |
 | Commerce wiring | `content/affiliates.yml` (160 entries) and `content/settings.yml`; see section 13 and [docs/GEAR_REDESIGN_IMPLEMENTATION.md](GEAR_REDESIGN_IMPLEMENTATION.md) ("How to replace affiliate IDs") |
 
@@ -128,7 +130,7 @@ A trip setup (trip type, days, dogs, optional meals per day and conditions) prod
 | Hero and guide photos | Unsplash photos used under the Unsplash License, 64 credit entries in `src/content/image-credits.ts`. The home hero is a credited Unsplash photo (`hero-porch`, photographer Cody Scott Milewski). **The license gives usage rights, not ownership or exclusivity**: the buyer may keep using the photos, but does not own their copyright and others may use them too. Credits must stay |
 | Product imagery | None from third parties; no Amazon images. Product cards use the site's own line-icon spec cards |
 | Photos of real rentals | None |
-| Pins and share images | 29 pins (1000x1500) and 30 share images (1200x630) generated from the site's own photos and text by `scripts/make-pin-sheet.py` and `scripts/make-share-images.py`; rights chain follows the Unsplash photos |
+| Pins and share images | 30 pins (1000x1500) and 31 share images (1200x630) generated from the site's own photos and text by `scripts/make-pin-sheet.py` and `scripts/make-share-images.py`; rights chain follows the Unsplash photos |
 | Fonts | DM Sans and Fraunces, self-hosted variable WOFF2, SIL Open Font License texts included |
 | Icons | `lucide-react` (open source); favicon and apple-touch icon in `public/` |
 | Name, logo, wordmark | The "Paws & Passage" name is in the sale. No trademark search or registration was made (UNVERIFIED) |
@@ -169,7 +171,7 @@ Qualitative only. No replacement cost, development cost or dollar value is claim
 
 - **Research:** the buyer does not have to read, compare and cite hundreds of sources on pet fees, dog limits, fencing, car safety and gear, or re-derive the 38-manager policy dataset, with a source link and read date for each row.
 - **Structuring:** topics, internal links between guides, dog-type collections, destination hubs, FAQs, source lists and a publish gate already exist.
-- **Writing:** 29 finished guides with per-guide claims and fact-check records, plus 3 drafts, instead of a blank content calendar. Independent readers called them ready with minor fixes; the corrections made afterwards were not re-scored. Writers still need to review and keep them current.
+- **Writing:** 30 finished guides with per-guide claims and fact-check records, plus 2 drafts, instead of a blank content calendar. Independent readers called them ready with minor fixes; the corrections made afterwards were not re-scored. Writers still need to review and keep them current.
 - **Building tools:** three browser tools, a filterable stay directory and a policy data page are built, tested and documented.
 - **SEO plumbing:** sitemap rules, canonicals, structured data, redirects, noindex rules, IndexNow and health checks are done; the buyer verifies their own Search Console and submits the sitemap.
 - **Commerce plumbing:** affiliate-link management, a single top notice with Amazon's sentence, an Amazon-tag switch (one value retags every Amazon link) and click-event tracking are wired so the buyer swaps IDs instead of building a system; steps in [docs/GEAR_REDESIGN_IMPLEMENTATION.md](GEAR_REDESIGN_IMPLEMENTATION.md).

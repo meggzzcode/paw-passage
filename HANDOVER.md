@@ -14,7 +14,7 @@ Everything on this site lives in plain files. There is no database, no admin log
 | Gear products (92 records, 65 active) | `content/products.yml` |
 | Affiliate / booking links (160 entries: 79 Vrbo, 81 Amazon) | `content/affiliates.yml` (`src/content/affiliates.ts` only reads it) |
 | Destinations (states and towns) | `src/content/destinations.ts` |
-| Guides (32 files: 25 Markdown, 7 legacy code; 29 published, 3 drafts) | `content/guides/<slug>.md`; legacy `src/content/guides/<slug>.ts` |
+| Guides (32 files: 25 Markdown, 7 legacy code; 30 published, 2 drafts) | `content/guides/<slug>.md`; legacy `src/content/guides/<slug>.ts` |
 | Checklist tool items | `src/content/checklist.ts` |
 | Packing planner items, rules and trip types (37 items) | `content/packing.yml` ([docs/PACKING_PLANNER_PRODUCT_GUIDE.md](docs/PACKING_PLANNER_PRODUCT_GUIDE.md)) |
 | Images | `src/assets/` + `src/lib/images.ts` |
@@ -51,7 +51,7 @@ Set `ga4MeasurementId` in `content/settings.yml`. Outbound booking clicks are se
 There is no newsletter signup on the site (removed by the owner's decision). Research for adding one later is in [docs/LEAD-CAPTURE.md](docs/LEAD-CAPTURE.md).
 
 ## 9. Sitemap and domain
-`siteUrl` is set in `content/settings.yml` (change it if the domain changes). `/sitemap.xml` lists every published page (103 URLs counted on 2026-11-24 at `9797221`; 98 was the 2026-11-23 count), and `public/robots.txt` already has the Sitemap line (update it for a new domain).
+`siteUrl` is set in `content/settings.yml` (change it if the domain changes). `/sitemap.xml` lists every published page (104 URLs counted on 2026-11-25 after the no-pets-rental guide was republished; 103 before that, 98 on 2026-11-23), and `public/robots.txt` already has the Sitemap line (update it for a new domain).
 
 ## 10. Export and deploy elsewhere
 - Lovable is not needed. The seller disconnects Lovable's GitHub sync at handover. The repository is a standard TanStack Start + Vite app ([docs/buyer/HOSTING_OPTIONS.md](docs/buyer/HOSTING_OPTIONS.md)).

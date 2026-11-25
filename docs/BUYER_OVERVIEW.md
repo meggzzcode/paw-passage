@@ -10,17 +10,17 @@ A dog-friendly vacation-rental travel site. Plain-file content, no database, no 
 
 ## What the repository contains
 
-- **29 published guides** (32 files, 3 drafts held back). 22 published guides are Markdown and editable in Pages CMS; 7 are code files that need a developer.
+- **30 published guides** (32 files, 2 drafts held back). 23 published guides are Markdown and editable in Pages CMS; 7 are code files that need a developer.
 - **8 town "things to do" articles** (not guides).
 - **A 38-manager pet-policy dataset**: 13 fields each, read 2026-11-18, one source link per row; a data page and a CSV. A convenience sample.
 - **3 tools**: a packing planner (37 items; saves in the visitor's own browser), "Will my dog be accepted?" and a before-you-book checklist. No calculators.
 - **83 stay files, none confirmed with a host.** 78 are shown, 23 are in the sitemap, 55 are shown but `noindex`, 5 are hidden.
 - **A Gear shop** with 11 categories, 5 trip collections and 65 active products (92 records). No third-party product photos.
-- **A 103-URL sitemap** and **783 passing automated tests in 61 files** (counted at `3e5923b`).
+- **A 104-URL sitemap** and **783 passing automated tests in 61 files** (counted at `3e5923b`).
 
 ## What you receive
 
-The domain `pawsandpassage.com` (Namecheap ownership change), the GitHub repository, the documentation, 29 pins and 30 share images, and a written copyright assignment (wording is a seller and legal item; there is no LICENSE file). Everything transfers only as your purchase agreement states.
+The domain `pawsandpassage.com` (Namecheap ownership change), the GitHub repository, the documentation, 30 pins and 31 share images, and a written copyright assignment (wording is a seller and legal item; there is no LICENSE file). Everything transfers only as your purchase agreement states.
 
 ## What you do not receive
 

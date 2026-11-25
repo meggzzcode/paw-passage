@@ -15,6 +15,8 @@ Start date for the clock: the day the final build is deployed (not before). Unti
 Domain registered 2026-11-16. Re-baseline on deploy day with the Cowork brief (docs/cowork/SEO_SEARCH_CONSOLE_INVESTIGATION.md) and write the real numbers in the first row of the weekly table.
 
 ## Priority landing pages
+`/guides/bringing-a-dog-to-a-no-pets-rental` is a priority page (added 2026-11-25): it had a first signal of impressions before it went 404 (it was a draft), and it was republished at the same URL. That is URL continuity, not a guaranteed Google position; it is not proven demand. Inspect it after deployment and track its impressions, clicks and position as observed; no indexing request without separate owner authorization.
+
 `/data/pet-policies`, `/guides/how-vacation-rental-pet-fees-work`, `/guides/vacation-rentals-with-no-pet-fee`, `/guides/vacation-rentals-that-welcome-large-dogs`, `/guides/how-many-dogs-can-you-bring-to-a-vacation-rental`, `/guides/two-large-dogs-in-one-car`, `/guides/dog-car-safety-harness-and-crate-guide`, `/guides/dog-friendly-cabin-packing-list` with `/tools/packing-list`, `/guides/vacation-rental-secure-fenced-yard`, `/gear`, `/stays`, `/destinations/georgia/blue-ridge`, its `/things-to-do`, and the Mendocino and Monterey things-to-do pages.
 
 ## Query groups (classify the GSC query export by hand; do not buy volumes)

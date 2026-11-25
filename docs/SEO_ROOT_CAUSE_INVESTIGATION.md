@@ -39,7 +39,7 @@ Method: `curl` of 19 live URLs plus robots.txt and sitemap.xml, compared with th
 | `/stays`, Blue Ridge | same titles, older descriptions | longer pages (more links) | Minor |
 | robots.txt | allows Googlebot, Bingbot, `*`; lists https://www.pawsandpassage.com/sitemap.xml | identical | Same |
 | Host behaviour | `http://pawsandpassage.com` 301 to `https://pawsandpassage.com` 301 to `https://www.…`; `http://www` 301 to https | not applicable locally | OK, one extra hop on the apex |
-| Draft `/guides/bringing-a-dog-to-a-no-pets-rental`, unknown paths | 404 | 404 | Same |
+| Draft `/guides/bringing-a-dog-to-a-no-pets-rental`, unknown paths | 404 | 404 | Same (update 2026-11-25: the guide was republished at the same URL in `6f9add3` and now returns 200 in the build; the drafts that still return 404 are `breed-restrictions-at-vacation-rentals` and `pet-friendly-listing-red-flags`) |
 
 Consequence: Google's index and any impressions reflect the live (older) pages. The 236-impression baseline, any CTR conclusion and any "this guide is not ranking" conclusion are about the old titles and text. Deploying changes titles and H1s on all 8 guides compared and redirects one indexed URL, so expect a re-crawl period after deploy. **Do not read rankings as a verdict on the new build until 2 to 4 weeks after it is deployed.**
 

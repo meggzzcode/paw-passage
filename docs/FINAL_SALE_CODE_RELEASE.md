@@ -1,6 +1,6 @@
 # Final sale code release report
 
-Written 2026-11-24 for repo `HEAD` `9797221` on `main` (518 commits). Purpose: say, with evidence, whether Paws & Passage is ready to list for about $1,500 as a pre-revenue starter site, what was done in the final code release, what is still open and who must do it. **Nothing is deployed.** Production serves a build from about 2026-11-23 (`ced2c93`); everything below is the repository and a production build of it served locally.
+Written 2026-11-24 when `main` was at `9797221` (518 commits); all counts below were taken at that commit. For the current release target commit and live status, see docs/SALE_RELEASE_STATUS.md. Purpose: say, with evidence, whether Paws & Passage is ready to list for about $1,500 as a pre-revenue starter site, what was done in the final code release, what is still open and who must do it. **Nothing is deployed.** Production serves a build from about 2026-11-23 (`ced2c93`); everything below is the repository and a production build of it served locally.
 
 ## Verdict
 
@@ -38,7 +38,7 @@ Total since `a659f05` (code and docs): 80 files changed, 3,988 insertions, 225 d
 | `.pages.yml` risk | `docs/cowork/FINAL_PRE_SALE_BROWSER_QA.md` "Pages CMS" | YAML anchors expanded; **three labels containing question marks were unquoted and broke strict YAML parsers**, now quoted (`9797221`); structure tests added (`pages-config-structure.test.ts`) |
 | SEO internal links | `docs/SEO_IMPLEMENTATION_RESULTS.md` | State pages now link the town articles (orphans 2 to 0, max click depth 3 to 2); one link that went through a 301 replaced; dataset links added to two guides; the car-interior guide linked from two guides; one description colon fixed |
 
-## 4. Test and build results (clean copy of `HEAD`, run 2026-11-24)
+## 4. Test and build results (historical: clean copy of `9797221`, run 2026-11-24; re-run on the target commit in docs/SALE_RELEASE_STATUS.md)
 
 Commands are recorded in `docs/buyer/ROUTE_AND_ASSET_COUNTS.md`. Run on `git archive HEAD` extracted to a scratch directory (so uncommitted work by other workers is excluded).
 
@@ -59,7 +59,7 @@ If another worker's code fixes land after this report, re-run the same commands 
 
 ## 5. Browser QA summary
 
-- A local QA worker writes `docs/PRESALE_BROWSER_QA_RESULTS.md`. **At the time of writing this file does not exist**, so no result from it is reported here. Read it before listing and treat every row it marks UNVERIFIED as open (they are carried into the "Mobile and desktop visual QA" section of `docs/cowork/FINAL_PRE_SALE_BROWSER_QA.md`).
+- A local QA worker writes `docs/PRESALE_BROWSER_QA_RESULTS.md`. **At the time of writing this file does not exist**, so no result from it is reported here. Read it before listing and treat every row it marks UNVERIFIED as open (they are carried into the stage C2 of `docs/cowork/FINAL_PRE_SALE_BROWSER_QA.md`).
 - Earlier local browser evidence (older commits, desktop Chromium at phone and desktop widths): `docs/buyer/FINAL_QA_CRAWL_2026-11-24.md` and `docs/PACKING_PLANNER_QA.md` (no horizontal overflow at 320 to 1440 px on the planner and cabin guide; print order fixed). Not verified anywhere: real iPhone Safari, VoiceOver, TalkBack, desktop Safari and Firefox, the Pages CMS authenticated flow, any live-site behaviour.
 
 ## 6. Production deployment status
@@ -92,7 +92,7 @@ If another worker's code fixes land after this report, re-run the same commands 
 ## 9. Issues by class
 
 **BLOCKER (listing must wait):**
-1. Owner deploys `main` (builds are off; one deploy, about 15 credits) and the deploy is verified live (sitemap 103, 8 things-to-do 200, retired URL 301, new planner): `docs/cowork/FINAL_PRE_SALE_BROWSER_QA.md`, "Production deploy verification".
+1. Owner deploys `main` (builds are off; one deploy, about 15 credits) and the deploy is verified live (sitemap 103, 8 things-to-do 200, retired URL 301, new planner): `docs/cowork/FINAL_PRE_SALE_BROWSER_QA.md`, stage C1 (live release verification).
 2. Owner decision: stay directory mode. Ship `affiliate-only` (the directory has value only while seller links exist, so a buyer who removes them loses it) or `public-sources` (same 78 stays with plain links, no commission). Whatever is chosen, the listing text must say so (`docs/BUYER_AFFILIATE_TRANSITION.md` sections 5 and 6).
 3. Owner decision: Vrbo label versus `/affiliate-disclosure`. Either restore per-button labels on Amazon buttons or rewrite the page sentence so it matches the one-notice design. Open now.
 4. Cowork live checks: Amazon sample including the 10 untagged ASINs, 5 Vrbo deeplinks, Netlify usage and deploy status.

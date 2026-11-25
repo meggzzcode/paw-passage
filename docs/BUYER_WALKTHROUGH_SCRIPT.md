@@ -1,11 +1,11 @@
 # Buyer walkthrough script (5 to 7 minutes)
 
-Written 2026-11-24 for repo `HEAD` `9797221`. This is the single walkthrough document; it supersedes `docs/buyer/BUYER_WALKTHROUGH.md`, which now only points here.
+Written 2026-11-24; the numbers below were counted at commit `9797221`. For the current release target commit, see docs/SALE_RELEASE_STATUS.md. This is the single walkthrough document; it supersedes `docs/buyer/BUYER_WALKTHROUGH.md`, which now only points here.
 
 ## 0. Status, stated plainly
 
 - **No video exists.** The tools used to prepare this package cannot record a screen. This file is a script, a screenshot list and recording steps for the owner or Cowork.
-- **Do not record yet.** Nothing is deployed: https://www.pawsandpassage.com serves a build from about 2026-11-23 that lacks the packing planner rebuild, the Gear redesign, the 8 town articles and the final guides. Record only after the owner has deployed and the "Production deploy verification" section of `docs/cowork/FINAL_PRE_SALE_BROWSER_QA.md` has passed. Until then, a rehearsal can run against a local build (`bun install`, `NITRO_PRESET=node-server bunx vite build`, `PORT=4581 node .output/server/index.mjs`, base URL `http://localhost:4581`); label any rehearsal recording "local build, not for the buyer".
+- **Do not record yet.** Nothing is deployed: https://www.pawsandpassage.com serves a build from about 2026-11-23 that lacks the packing planner rebuild, the Gear redesign, the 8 town articles and the final guides. Record only after the owner has deployed and stage C1 (live release verification) of `docs/cowork/FINAL_PRE_SALE_BROWSER_QA.md` has passed. Until then, a rehearsal can run against a local build (`bun install`, `NITRO_PRESET=node-server bunx vite build`, `PORT=4581 node .output/server/index.mjs`, base URL `http://localhost:4581`); label any rehearsal recording "local build, not for the buyer".
 - Ground rules for every line of narration: no traffic, revenue, ranking, affiliate-approval or buyer-interest claim. The true statement is: "a new, pre-revenue site; no earnings or traffic history". If a number on screen differs from the numbers below, say what is on screen and tell the owner to correct the listing.
 
 Numbers used (from `docs/buyer/ROUTE_AND_ASSET_COUNTS.md`): 29 guides, about 45,000 words, 420 sources, 38-manager dataset with 13 fields, 83 stay files (78 shown, 23 indexable, 0 host-confirmed), 3 tools, 11 Gear categories, 5 trip collections, 65 active products, 103 sitemap URLs.

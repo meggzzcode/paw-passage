@@ -12,7 +12,7 @@ Tools: `knip 6.48` (offline from cache), `eslint`, `prettier --check`, `tsc`, `v
 | `src/assets/pack-*.jpg` (14 files) | Only loaded by the `import.meta.glob("../assets/pack-*.jpg")` inside the removed `pack-images.ts`. |
 | `src/lib/pet-fee-calc.ts`, `src/test/pet-fee-calc.test.ts` | Remnant of the retired fee calculator: imported only by its own test. |
 | `scripts/__pycache__/make-share-images.cpython-313.pyc` | Tracked bytecode. `__pycache__/` and `*.pyc` are now in `.gitignore`. |
-| `src/components/ui/*` (47 shadcn files), `src/hooks/use-mobile.tsx` | Lovable scaffolding; no file outside `ui/` imports any of them (knip, grep for `components/ui`, `use-mobile`). |
+| `src/components/ui/*` (46 shadcn files; their deletion was swept into commit 9e2ede9 by a concurrent worker), `src/hooks/use-mobile.tsx` | Lovable scaffolding; no file outside `ui/` imports any of them (knip, grep for `components/ui`, `use-mobile`). |
 | 38 npm dependencies: `@hookform/resolvers`, 27 `@radix-ui/*`, `class-variance-authority`, `cmdk`, `date-fns`, `embla-carousel-react`, `input-otp`, `react-day-picker`, `react-hook-form`, `react-resizable-panels`, `recharts`, `sonner`, `vaul` | Used only by the removed `ui/` files (grep over src, plugins, scripts, configs). Lockfiles regenerated (`package-lock.json` via npm, `bun.lock` via `bun install --lockfile-only`). |
 
 Added instead: `@testing-library/dom` (devDependency). It is a peer of `@testing-library/react` that was only present by accident (hoisted in the bun `node_modules`). On a clean `npm ci`, 3 packing test files failed with "Cannot find module '@testing-library/dom'". Fixed and verified in a clean copy (61 files, 783 tests pass).

@@ -37,7 +37,7 @@ describe("local store", () => {
   });
   it("trims memories and keeps profile edits", () => {
     setMemory("adv-aaaaa1", "x".repeat(500), 5);
-    expect(getSave().memories["adv-aaaaa1"].text).toHaveLength(280);
+    expect(getSave().memories["adv-aaaaa1"]?.text).toHaveLength(280);
     setProfile({ name: "Juno" }, 6);
     setProfile({ lifeStage: "senior" }, 7);
     expect(getSave().profile.data).toEqual({ name: "Juno", lifeStage: "senior" });
@@ -81,7 +81,7 @@ describe("analytics events", () => {
     expect(
       track("adventure_completed", { adventure: "adv-aaaaa1", name: "Juno Smith", n: 3 }),
     ).toBe(true);
-    const [, event, params] = gtag.mock.calls[0];
+    const [, event, params] = gtag.mock.calls[0]!;
     expect(event).toBe("pp_adventure_completed");
     expect(params).toMatchObject({ adventure: "adv-aaaaa1", n: 3 });
     expect(JSON.stringify(params)).not.toContain("Juno");

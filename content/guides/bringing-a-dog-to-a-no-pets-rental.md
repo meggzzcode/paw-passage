@@ -29,8 +29,8 @@ relatedGuides:
   - can-you-leave-a-dog-alone-in-a-vacation-rental
 relatedProducts:
   - ameritex-waterproof-dog-bed-blanket-cover
-  - midwest-icrate-dog-crate
-  - pet-parents-pawtect-pads
+  - midwest-icrate-36-inch-double-door-crate
+  - pet-parents-pawtect-pads-24x36
 relatedTools:
   - checklist
   - will-my-dog-be-accepted
@@ -212,11 +212,11 @@ A washable cover is the simplest thing to offer for a bed or sofa. It is somethi
 
 If you will leave the dog alone at any point, tell the host where the dog will be. A crate is one plan, and only if your dog is already used to one. Our guide to [leaving a dog alone in a rental](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental) has the details.
 
-{{pick:midwest-icrate-dog-crate|For a dog already crate trained|Sizes from 18 to 48 inches, single or double door, a divider panel, a removable leak-proof pan and rubber floor feet; the maker says it folds flat.|https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/}}
+{{pick:midwest-icrate-36-inch-double-door-crate|For a dog already crate trained|The link opens the 36-inch double-door size, listed for dogs 41-70 lb (36.5 x 23.25 x 24.75 in); other sizes are separate listings.|https://www.amazon.com/dp/B000QFT1R2}}
 
 For floors, tell the host what you will do about accidents and muddy paws. A washable pad under the bed or by the door is one answer, if your dog is new to a place or has the odd accident, and a washable doormat or towel at the entrance handles wet paws. These are things to offer, and the host decides whether they are welcome.
 
-{{pick:pet-parents-pawtect-pads|For floor cover you can offer a host|Maker lists four sizes from 18 x 24 to 41 x 41 in, 2 pads per pack, a waterproof backing and a floor-gripping backing; machine washable.|https://petparentsbrand.com/products/washable-puppy-pads}}
+{{pick:pet-parents-pawtect-pads-24x36|For floor cover you can offer a host|The link opens the 24 x 36 in size, 2 pads per pack; the maker lists a waterproof backing and a floor-gripping backing, and says they are machine washable. Other sizes are separate listings.|https://www.amazon.com/dp/B07H2RHVK4}}
 
 ## If the host says no
 

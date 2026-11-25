@@ -249,9 +249,7 @@ describe("content build step", () => {
     reset();
     writeFileSync(
       join(root, "content/guides/aff.md"),
-      guideWith((t) =>
-        t.replace("## The short answer", "Try the [thing](aff:not-there).\n\n## The short answer"),
-      ),
+      guideWith((t) => t.replace(/^## /m, "Try the [thing](aff:not-there).\n\n## ")),
     );
     expect(() => loadContent(root, false)).toThrow(/affiliate link "not-there"/);
     writeFileSync(
@@ -265,7 +263,7 @@ describe("content build step", () => {
       guideWith((t) =>
         t
           .replace("status: published", "status: draft")
-          .replace("## The short answer", "Try the [thing](aff:not-there).\n\n## The short answer"),
+          .replace(/^## /m, "Try the [thing](aff:not-there).\n\n## "),
       ),
     );
     expect(loadContent(root, false).guides).toEqual([]);

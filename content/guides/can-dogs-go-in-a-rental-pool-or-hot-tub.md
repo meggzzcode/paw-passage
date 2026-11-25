@@ -170,43 +170,27 @@ Where a property manager has written a rule, the answer is almost always no. We 
 
 That is a convenience sample of managers whose sites we could read, not a survey. The full tables are on the [pet policy dataset page](/data/pet-policies).
 
-## The short answer
+This is a convenience sample of managers whose sites we could read, not a survey; the full tables are on the [pet policy dataset page](/data/pet-policies). A pet fee does not change the rule, and a swim anyway can mean a cleaning charge: tell the host the same day (the [charge process](#what-if-your-dog-swims-anyway) is below).
 
-- **Five of the seven quotes also name the hot tub or spa.** Twiddy's separate pet page names hot tubs as well.
-- **A pet fee does not change that.** In the seven quotes, the pool rule is a separate sentence from any fee, and Brindley Beach attaches a possible cleaning charge to it.
-- **A swim anyway can cost you.** Tell the host the same day; the [charge process](#what-if-your-dog-swims-anyway) is below.
+## What do the seven pages say?
 
-## What the seven pages say
+Six restrict dogs outright, and five of the seven name the hot tub or spa. Quotes are as written on each live page, re-read on 2026-11-18:
 
-Quotes are as written on each live page, re-read on 2026-11-18. Six restrict dogs outright.
-
-- **[Newman-Dailey Resort Properties](https://www.destinvacation.com/pet-friendly):** "Dogs are not permitted on the beach or in the pool area"
 - **[My Vacation Haven](https://www.myvacationhaven.com/pet-policy):** "Pets are not allowed in the pool or hot tub."
-- **[Brindley Beach Vacations](https://www.brindleybeach.com/node/3691):** "Dogs are not allowed to swim in the pool or the hot tub – additional cleaning may be needed and a charge may apply."
 - **[Sun Realty](https://www.sunrealtync.com/node/1163):** "Pets are not permitted in pools or hot tubs."
-- **[Beach Realty & Construction](https://www.beachrealtync.com/node/707):** "No dogs are allowed in the pool or hot tub."
 - **[Surf or Sound Realty](https://www.surforsound.com/vacation-planning/rental-policies/):** "All dogs, including approved dogs, are strictly prohibited in the pool and spa."
-- **[Twiddy & Company blog](https://blog.twiddy.com/bring-your-pets-on-vacation/) (one home):** at Sunnybuns the pool is fine, but "your dogs will have to save their water time for the ocean!"
 
-Two details matter. Surf or Sound's wording covers "approved dogs", so being on the accepted list is not the same as being welcome in the water. And Newman-Dailey's "pool area" reads wider than the water itself.
+The other four say the same in their own words. Two details matter. Surf or Sound's wording covers "approved dogs", so being on the accepted list is not the same as being welcome in the water. And [Newman-Dailey](https://www.destinvacation.com/pet-friendly) bans dogs from "the pool area", which reads wider than the water itself. [Brindley Beach](https://www.brindleybeach.com/node/3691) adds that "additional cleaning may be needed and a charge may apply."
 
-[Twiddy](https://www.twiddy.com/outer-banks/guests/pets/)'s separate pet page is broader than its blog post: "Pets are not permitted in pools or hot tubs." We count Twiddy once.
-
-## Why would a manager write this rule?
-
-Most pages state the rule and stop. [Brindley Beach](https://www.brindleybeach.com/node/3691) gives the closest thing to a reason, additional cleaning. The [CDC](https://www.cdc.gov/healthy-swimming/response/) lists animals among the most common pool contaminants, and a pool that has to be treated or closed between guests costs a manager money and days. That is our reading, not something these managers wrote.
-
-If a host does allow it, [VCA Animal Hospitals](https://vcahospitals.com/shop/home/articles/the-dos-and-don-ts-of-dog-water-safety) says not to assume your dog can swim or leave it unattended near water, and to rinse it afterwards. Find the steps before any dog goes near an unfamiliar pool.
+If a host does allow it, [VCA Animal Hospitals](https://vcahospitals.com/shop/home/articles/the-dos-and-don-ts-of-dog-water-safety) says not to assume your dog can swim or leave it unattended near water, and to rinse it afterwards.
 
 ## What about a hot tub and a dog?
 
-The safest reading is that the dog stays out of it: where managers address hot tubs, the wording is a ban. The [CDC](https://www.cdc.gov/control-legionella/php/toolkit/hot-tub-module.html) recommends keeping hot tub water at or below 104 degrees Fahrenheit to prevent scalding. Cornell's veterinary college calls heatstroke a medical emergency: cool the dog right away and get it to a veterinary hospital.
-
-Our practical suggestions, not a source's rules: keep the dog on a lead near the tub and the cover on when nobody is using it, and if the dog went in, tell the host the same day, because a short message beats a surprise cleaning charge. No source we read gives a safe hot tub temperature or time for a dog, so for health worries, call your vet.
+Keep the dog out: where managers address hot tubs, the wording is a ban. Our practical suggestions, not a source's rules: keep the dog on a lead near the tub and the cover on when nobody is using it, and if the dog went in, tell the host the same day, because a short message beats a surprise cleaning charge. Cornell's veterinary college calls heatstroke a medical emergency: cool the dog right away and get it to a veterinary hospital. No source we read gives a safe hot tub temperature or time for a dog, so for health worries, call your vet.
 
 ## What to ask the host
 
-A rule can sit in the booking terms, the welcome packet or the manager's general page instead of the listing text. [Airbnb](https://www.airbnb.com/help/article/2894)'s ground rules tell guests to follow the host's house rules, and [Vrbo](https://help.vrbo.com/articles/What-are-House-Rules) says travelers must agree to the house rules before they book and describes the pets rule as covering whether pets are allowed, how many, what type and any size restriction. Neither page names pools or hot tubs, so the pool line is up to the host.
+A rule can sit in the booking terms, the welcome packet or the manager's general page instead of the listing text, so ask in writing. Neither [Airbnb](https://www.airbnb.com/help/article/2894) nor [Vrbo](https://help.vrbo.com/articles/What-are-House-Rules) names pools or hot tubs in its house-rules pages, so the pool line is up to the host.
 
 Copy, paste and edit:
 
@@ -216,7 +200,7 @@ A good answer names the pool, the hot tub, the deck and any charge. If the host 
 
 ## What if your dog swims anyway?
 
-A swim in a banned pool is a plausible trigger for an extra cleaning request. [Airbnb](https://www.airbnb.com/help/article/1415) says a guest can be responsible for damage caused by "you, someone you invite, or a pet", and that a host may send a reimbursement request for damage, missing items or unexpected cleaning costs, to which you have 24 hours to respond. [Vrbo](https://help.vrbo.com/articles/What-happens-if-my-card-on-file-is-charged-for-property-damage) says that with a card on file you are only charged if the host submits a claim for damage during your stay, and you can lodge a dispute. Keep the booking terms and your messages, and see our [damage-charge guide](/guides/airbnb-pet-damage-charge-after-checkout) for how to answer a request. Our [pet fees guide](/guides/how-vacation-rental-pet-fees-work) explains why a pet fee is not damage cover.
+A swim in a banned pool is a plausible trigger for an extra cleaning request. [Airbnb](https://www.airbnb.com/help/article/1415) says a guest can be responsible for damage caused by "you, someone you invite, or a pet", and that you have 24 hours to respond to a reimbursement request. [Vrbo](https://help.vrbo.com/articles/What-happens-if-my-card-on-file-is-charged-for-property-damage) says you are only charged if the host submits a claim, and you can lodge a dispute. Keep the booking terms and your messages, and see our [damage-charge guide](/guides/airbnb-pet-damage-charge-after-checkout) for how to answer a request.
 
 ## If the pool is off limits
 
@@ -226,8 +210,4 @@ When the pool is a no, dog water time moves to a lake, a hose or the rain, and t
 
 Before you pay for a rental with water in the yard, run your dog through the [will my dog be accepted tool](/tools/will-my-dog-be-accepted), check the total with our [pet fees guide](/guides/how-vacation-rental-pet-fees-work), and add the pool rule to your [trip checklist](/tools/checklist). Our guide to [leaving a dog alone in a rental](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental) helps with the hours you spend away from the water.
 
-## What we could not confirm
-
-Everything above rests on the seven quotes (each manager's live page, 2026-11-18), the CDC, VCA and Cornell statements, and the Airbnb and Vrbo help pages. The 7 of 38 figure is our count in a convenience sample, not a random or national one. Not answered anywhere we looked:
-
-We found no cleaning-charge amount (only Brindley Beach mentions a charge), no safe hot tub time or temperature for a dog (ask your vet) and nothing on who is liable if a dog is injured at a rental pool (read the rental agreement).
+Not answered anywhere we looked: a cleaning-charge amount (only Brindley Beach mentions a charge) and who is liable if a dog is injured at a rental pool, so read the rental agreement.

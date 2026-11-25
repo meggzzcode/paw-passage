@@ -141,7 +141,7 @@ A "pet-friendly" listing usually falls short in one of four ways: it states no l
 
 **The tag says pets are possible. It does not say whose, how many or at what cost.** [Airbnb's help page](https://www.airbnb.com/help/article/86) describes the Allows pets filter, then says to always contact the host to confirm and to tell them about any pets you plan to bring. On Vrbo the pet rule lives in the house rules, where [hosts say](https://help.vrbo.com/articles/What-are-House-Rules) whether pets are allowed, how many, what type and any size restriction, and guests must agree to those rules before they book.
 
-A clear listing names the number of dogs, any size or breed rule and the fee. If it has the tag but you cannot find those details, the details are your first question. Of the 38 rental managers in our [pet-policy dataset](/data/pet-policies), 14 state no limit on the number of dogs. It is a convenience sample of managers whose sites we could read, not a survey, but it shows how often the number is simply missing.
+A clear listing names the number of dogs, any size or breed rule and the fee. If it has the tag but you cannot find those details, the details are your first question. Of the 38 rental managers in our [pet-policy dataset](/data/pet-policies), 14 state no limit on the number of dogs. (A convenience sample, not a survey, but it shows how often the number is simply missing.)
 
 ## Limits that sit in the fine print
 
@@ -150,15 +150,13 @@ A clear listing names the number of dogs, any size or breed rule and the fee. If
 - [Cabin Rentals of Georgia](https://cabin-rentals-of-georgia.com/policies) says its pet-friendly cabins accept only dogs under 35 pounds, non-shedding and crate trained, allow only "certain breeds" without naming them, and require management approval of every dog before it is added to a reservation.
 - [Hearthside Cabin Rentals](https://hearthsidecabinrentals.com/frequently-asked-questions) says pets are limited to dogs no larger than 35 pounds with a 2 dog limit, then adds that some cabins will allow larger pets if you check with a reservation specialist.
 
-Limits can also change from home to home. [Twiddy & Company's pet page](https://blog.twiddy.com/bring-your-pets-on-vacation/) lists a separate cap for each home, "2 Dog Maximum" for most and "4 Dog Maximum" for one, so read the rule for the home, not the company. Our guides to [rentals that welcome large dogs](/guides/vacation-rentals-that-welcome-large-dogs) and [how many dogs you can bring](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental) go further.
+Limits can also change from home to home (Twiddy lists a separate cap for each home), so read the rule for the home, not the company. Our guides to [rentals that welcome large dogs](/guides/vacation-rentals-that-welcome-large-dogs) and [how many dogs you can bring](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental) go further.
 
 In the dataset, 6 of 38 managers state a weight limit and 31 of 38 say nothing about breed. Of the six weight limits, five apply to each dog and one to the dogs combined, so ask which kind you are looking at, especially with two dogs. A silent page does not mean there is no restriction. It means you cannot tell from the page, so ask. And if a page says "considered," "on request" or "with approval," the answer is not yes yet: send your dog's size, age and number, and wait for a reply in the booking thread.
 
 ## A pet fee that is not on the page you are reading
 
-**A pet charge can be real and still be missing from the listing text.** Airbnb says a pet fee is [shown](https://www.airbnb.com/help/article/3623) as part of the nightly rate and in the total price at checkout, and that guests can say how many pets they plan to bring. Vrbo says its [displayed price](https://help.vrbo.com/articles/About-Price-Display) includes all mandatory fees and service fees, with taxes added at checkout, and leaves out optional extras. Whether a given pet charge counts as mandatory on a given listing is something the help page cannot tell you.
-
-Manager pages vary more. In the dataset, 13 of 38 give no fee amount. [AvantStay's Pismo Beach page](https://www.avantstay.com/pet-friendly-vacation-rentals/california/pismo-beach) says a specialized deep-cleaning fee applies to all stays there and lists no amount. Cabin Rentals of Georgia's single "pet fee" is really three charges: $50 per pet per night, a $75 cleaning fee and a $250 deposit that is refunded if there is no pet damage or excessive hair. Compare the final total with your dog added; [how pet fees work](/guides/how-vacation-rental-pet-fees-work) explains the formulas, and [rentals with no pet fee](/guides/vacation-rentals-with-no-pet-fee) shows what a real zero looks like.
+**A pet charge can be real and still be missing from the listing text.** In the dataset, 13 of 38 managers give no amount, and Cabin Rentals of Georgia's single "pet fee" is really $50 per pet per night plus a $75 cleaning fee and a $250 deposit that is refunded if there is no pet damage or excessive hair. [AvantStay's Pismo Beach page](https://www.avantstay.com/pet-friendly-vacation-rentals/california/pismo-beach) says a specialized deep-cleaning fee applies to all stays there and lists no amount. Compare the final total with your dog added; [how pet fees work](/guides/how-vacation-rental-pet-fees-work) explains the formulas, and [rentals with no pet fee](/guides/vacation-rentals-with-no-pet-fee) shows what a real zero looks like.
 
 ## A "fenced yard" that may be a gated deck
 
@@ -166,11 +164,7 @@ Manager pages vary more. In the dataset, 13 of 38 give no fee amount. [AvantStay
 
 Ask which exact cabin you are booking, whether the gate opens onto fenced ground, and for a photo from inside the fence. Our [secure fenced yard guide](/guides/vacation-rental-secure-fenced-yard) shows how to check one.
 
-If the yard is not what the listing implied and you still want to stay, the fallback is a pen for supervised time outside, if the host agrees to it on the deck or lawn. It does not make a yard secure, and it will not hold a jumper or a dog that panics when confined. The Carlson Convertible Pet Yard is a six-panel metal pen, 28 inches high, with a walk-through door; that is low for a jumper.
-
-{{pick:carlson-convertible-pet-yard|For a small or medium dog on a deck|The link opens the Carlson Convertible Pet Yard: 28 in high, six 24-in panels, 16.3-in walk-through door; the maker states no dog size limit, so judge it against your dog's jump.|https://carlsonpetproducts.com/products/convertible-pet-yard}}
-
-For a taller dog, the MidWest Exercise Pen with Door is a freestanding folding pen with eight panels, a latched door and ground anchors, which you should not push into a lawn without asking the host. The maker warns that a pet not trained to be restricted may try to escape, so introduce it at home first.
+If the yard is not what the listing implied and you still want to stay, the fallback is a pen for supervised time outside, if the host agrees to it on the deck or lawn. It does not make a yard secure, and it will not hold a jumper or a dog that panics when confined. The MidWest Exercise Pen with Door is a freestanding folding pen with a latched door and ground anchors, which you should not push into a lawn without asking the host. The maker warns that a pet not trained to be restricted may try to escape, so introduce it at home first.
 
 {{pick:midwest-exercise-pen-with-door|For a dog that will stay put in a pen|The Amazon link opens the 42-inch size; the maker's instructions cover 24 to 48 in sizes, which are separate listings, so match the height to your dog's jump.|https://www.midwesthomes4pets.com/product/dogs/pens-gates-barriers/exercise-pen-with-door/}}
 
@@ -184,7 +178,7 @@ For a quick check of one dog against one home, try the [Will my dog be accepted?
 
 ## If the listing does not match when you arrive
 
-Photograph the problem and tell the host through the booking channel. [Airbnb's help page](https://www.airbnb.com/help/article/248) says guests have 72 hours from discovery to report an issue to the host or to Airbnb, suggests photos or video, and points to Get Help on the reservation page if the host cannot sort it out. It does not promise a refund for a particular problem, and neither should you plan on one. Have a backup for the first evening, such as leashed toilet breaks and a second place to exercise your dog.
+Photograph the problem and tell the host through the booking channel. [Airbnb's help page](https://www.airbnb.com/help/article/248) says guests have 72 hours from discovery to report an issue to the host or to Airbnb, suggests photos or video, and points to Get Help on the reservation page if the host cannot sort it out. It does not promise a refund for a particular problem. Have a backup for the first evening, such as leashed toilet breaks and a second place to exercise your dog.
 
 ## Before you pay
 

@@ -157,7 +157,7 @@ A rental with no pet fee can still cost more than one that charges $40 a night, 
 
 ## Two rentals, one real number
 
-Example numbers, not market data: invented, round and not prices from any listing. One dog, five nights, taxes left out. "Real cost" is money you will not get back; "cash needed up front" adds any refundable deposit.
+Example numbers, not real prices. One dog, five nights, taxes left out. "Real cost" is money you will not get back; "cash needed up front" adds any refundable deposit.
 
 | Line | Rental A | Rental B |
 | --- | --- | --- |
@@ -195,26 +195,13 @@ Some managers swap the deposit for a fee. Tahoe Vacation Rentals sells a nonrefu
 
 A pet fee is a charge for being allowed in, not insurance. [Tahoe Vacation Rentals](https://www.tahoevacationrentals.com/reservation-information/) says its pet fee "does not include damage or additional cleaning caused by the pet", and Airbnb points to its AirCover protection for unexpected damage. If a charge does appear afterwards, see [what to do about an Airbnb pet damage charge](/guides/airbnb-pet-damage-charge-after-checkout).
 
-Mud is the part you can control at the door, and a washable mat such as the [Soggy Doggy](https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate) microfiber doormat gives wet paws somewhere to land. Skip it if the entry is carpeted or tiny; see the [rental cleanup gear page](/gear/rental-cleanup) for other options.
+Mud is the part you can control at the door: a washable mat such as the [Soggy Doggy](https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate) microfiber doormat gives wet paws somewhere to land. Skip it if the entry is carpeted or tiny; more options are on the [rental cleanup gear page](/gear/rental-cleanup).
 
 {{pick:soggy-doggy-microfiber-doormat|For muddy entries: a washable mat|The maker lists a non-slip backing and says it is machine washable; it does not say how much mud it holds.|https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate}}
 
-## What 38 rental managers say about pet fees
+## What do 38 rental managers charge?
 
-We read the pet pages of 38 managers, a small convenience sample, and re-read each figure below on 2026-11-18. Policies change, so treat these as examples and not a market average.
-
-Of the 38, 22 state a charge, three say $0 (Sliding Rock Cabins, Twiddy & Company and Hapey Cabin Rentals) and 13 give no amount. Nightly fees ran $20 to $50 and flat or per-pet fees $50 to $400, with one manager saying "up to $1,000". The $400 is one manager's rate for stays of 14 or more days. Full tables are on the [pet policy dataset page](/data/pet-policies).
-
-| Manager | What the page says |
-| --- | --- |
-| Big Bear Vacations | "$40 per pet/per night", described as covering extra cleaning |
-| Tahoe Vacation Rentals | Nonrefundable $75 plus tax per pet, up to 3 pets |
-| AMI Locals | $250 per stay; max 2 dogs, combined weight 50 lb or less |
-| Resort Realty | Non-refundable fee up to $1,000, varying by property |
-
-Sources: [Big Bear Vacations](https://www.bigbearvacations.com/about-us/pet-information/), [Tahoe Vacation Rentals](https://www.tahoevacationrentals.com/reservation-information/), [AMI Locals](https://www.amilocals.com/faqs), [Resort Realty](https://resortrealty.com/outer-banks-pet-friendly).
-
-[Rosemary Beach](https://rosemarybeach.com/faq/) charges a non-refundable $300 per pet, maximum 3, while [Twiddy](https://blog.twiddy.com/bring-your-pets-on-vacation/)'s blog lists ten homes that all waive the pet fee and deposit. Our [no pet fee rentals guide](/guides/vacation-rentals-with-no-pet-fee) covers what the $0 managers say, and the [pet fees guide](/guides/how-vacation-rental-pet-fees-work) explains each fee type.
+Of 38 managers whose pages we read on 2026-11-18, 22 state a charge (nightly fees $20 to $50, flat or per-pet fees $50 to $400, one manager "up to $1,000"; the $400 is for stays of 14 or more days), three say $0 and 13 give no amount. It is a small convenience sample, so use it as a rough range and check your own listing. Full tables are on the [pet policy dataset page](/data/pet-policies); for the $0 managers see the [no pet fee rentals guide](/guides/vacation-rentals-with-no-pet-fee), and the [pet fees guide](/guides/how-vacation-rental-pet-fees-work) explains each fee type.
 
 ## How to check the real cost of two rentals
 

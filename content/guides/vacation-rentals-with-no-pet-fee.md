@@ -170,79 +170,11 @@ approvedBy: Paws & Passage Editors
 approvedOn: 2026-11-18
 ---
 
-So what is the catch? In the three managers we found, "no pet fee" describes one line of the bill: Sliding Rock Cabins also lists cleaning fees, Hapey Cabin Rentals adds a guest service fee, and Twiddy's $0 comes from a list of ten homes. None of the three pages gave a full price picture, so compare totals, not pet lines.
+Fee-free is rare. Of the 38 managers' public pet pages we read, three state $0: Sliding Rock Cabins, Hapey Cabin Rentals and Twiddy & Company on ten listed homes. "No pet fee" covers one line of the bill, though: Sliding Rock also lists cleaning fees and Hapey adds a guest service fee. So compare the total for your dates and dog count, and send the host the questions below.
 
-## The short answer
+## What should I ask the host?
 
-- **Fee-free is rare.** Of [38 managers' public pet pages](/data/pet-policies) (a convenience sample, read 2026-11-18), three stated $0: Sliding Rock Cabins, Hapey Cabin Rentals, and Twiddy & Company on the homes it lists. 22 stated a charge; 13 gave no amount.
-- **Compare totals:** put your dates and dog count into one total and compare it with a home that charges a fee. Our [pet fees guide](/guides/how-vacation-rental-pet-fees-work) shows how the charges add up.
-
-## What the three fee-free managers say
-
-Everything below is from each manager's own public page, re-read on 2026-11-18.
-
-| Manager | What the page says about pet fees | What it does not say |
-| --- | --- | --- |
-| Sliding Rock Cabins | "No pet fees, breed restrictions, or weight limits" | Cleaning fee amount, pet deposit, damage terms |
-| Hapey Cabin Rentals | "No pet fees. Ever."; no pet deposit, no cleaning surcharge for dogs | Damage terms; which booking route applies |
-| Twiddy & Company | "No additional fee or deposit required" on ten listed homes | Cleaning fees, damage policy, other homes |
-
-Sources: [Sliding Rock Cabins](https://slidingrockcabins.com/), [Hapey Cabin Rentals](https://hapeycabinrentals.com/pet-friendly-smoky-mountain-cabin-rentals/), [Twiddy & Company](https://blog.twiddy.com/bring-your-pets-on-vacation/).
-
-### Sliding Rock Cabins (Ellijay and Blue Ridge, Georgia)
-
-The [Sliding Rock Cabins](https://slidingrockcabins.com/) home page says every cabin welcomes dogs with "no pet fees, breed restrictions, or weight limits". It gives no dog count, though the booking site lists "2 dog max" for Creekside Manner and "4 dogs max" for Forever Friday. Select cabins have fenced yards.
-
-What else is charged: the [Sliding Rock Cabins booking site](https://bookings-slidingrockcabins.escapia.com/?cat=10) says "Each cabin has nominal cleaning fees" and gives no amount. Pet deposits, processing fees and damage terms are not stated.
-
-### Hapey Cabin Rentals (Smoky Mountains, Tennessee)
-
-Hapey is the most explicit. The [Hapey Cabin Rentals](https://hapeycabinrentals.com/pet-friendly-smoky-mountain-cabin-rentals/) page says "No pet fees. Ever. What you see when you book is what you pay," and the FAQ says "No pet deposit, no nightly pet surcharge, no pet fee of any kind".
-
-**Dog limits.** No breed or weight limits, and "More than two dogs? Just mention it at booking and we'll confirm". A second page says it does not restrict how many dogs can be guests and asks you to reach out first if you have more than two. It asks that dogs be vaccinated and housebroken. Fenced space varies: five named cabins have enclosed outdoor space, so check the individual cabin page.
-
-**What else is charged.** The [Pet Paradise Promise](https://hapeycabinrentals.com/the-pet-paradise-promise/) page says there is no cleaning surcharge for dogs and no flat pet deposit, but it does not address damage. Another Hapey page mentions a 6% to 14% guest service fee that falls as the total rises, and says some platforms advertise "No Service Fees, No Cleaning Fees" while rolling those costs into higher nightly rates. That is Hapey's claim about other companies, and the same logic applies to any "no fee" claim, theirs included.
-
-**Booking route.** Two Hapey pages disagree: the Promise page says booking through Vrbo or Airbnb may bring service fees and booking direct skips them, while the other says the company uses Vrbo exclusively. Ask which route applies before relying on "what you see is what you pay."
-
-### Twiddy & Company (Outer Banks, North Carolina), on the homes it lists
-
-This one is fragile. Our $0 comes from a [Twiddy blog post](https://blog.twiddy.com/bring-your-pets-on-vacation/) that lists ten homes; each says "No additional fee or deposit required" (or the near-identical "1 pet is allowed for no additional fee"). Limits vary by home: eight list a two-dog or two-pet maximum, Atlantic View lists four dogs, and Kissed by the Wind allows one pet.
-
-The [Duck pet-friendly page](https://www.twiddy.com/outer-banks/pet-friendly/duck-rentals) says "no additional pet fees," a maximum of two pets "unless otherwise advertised," pets only in homes marked "Pets Allowed," and no pets in pools or hot tubs.
-
-Neither page mentions cleaning fees or damage policy, and this is a ten-home blog sample, not a statement for every Twiddy home.
-
-## Who charges, for contrast
-
-Of the 38 managers, 22 state a charge, from $20 a night at [A Blue Ridge Vacation](https://www.ablueridgevacation.com/rental-and-cancellation-policies/) to "up to $1,000." Examples, each re-read on 2026-11-18: [Big Bear Vacations](https://www.bigbearvacations.com/about-us/pet-information/) charges "an extra $40 per pet/per night" that it says covers the additional cleaning, and Rosemary Beach a non-refundable $300 per pet, maximum of 3. [Cabin Rentals of Georgia](https://cabin-rentals-of-georgia.com/policies) lists $50 per pet per night plus a $75 pet cleaning fee, and a refundable $250 pet deposit. [Resort Realty](https://resortrealty.com/outer-banks-pet-friendly) lists a "non-refundable pet fee up to $1,000," varying by property.
-
-A fee is sometimes where cleaning is paid for: Big Bear says its pet fee covers cleaning, and Cabin Rentals of Georgia stacks a nightly fee and a cleaning fee. So a $0 pet fee plus a cleaning fee can land close to a home with a pet fee and no cleaning fee, which is why totals beat headlines (our reading, not a figure from any page). The wider picture is in [what a dog really costs on a rental trip](/guides/what-a-dog-really-costs-on-a-vacation-rental).
-
-## Read the total, not the pet line
-
-Price the same dates and the same number of dogs for each place, and put every line side by side: nightly rate, cleaning, pet fee, deposit, service fee, taxes. A hypothetical example with round numbers, four nights and one dog: a fee-free home at $800 plus $120 cleaning is $920, while a home at $720 plus $100 cleaning plus a $60 pet fee is $880. Here the home with the pet fee costs $40 less overall. The numbers are made up to show the method.
-
-## How to look for fee-free homes on the platforms
-
-The official help pages tell you what hosts can set, not which listings have no fee, so open the price breakdown on any listing.
-
-- **[Airbnb](https://www.airbnb.com/help/article/86):** add your pets under Who, or choose Allows pets under Booking options. The fee can be per booking, per night, per pet or per pet per night, cannot exceed the nightly base rate (it is meant to cover expected cleaning, not unexpected damage), and shows in the nightly rate and the checkout total. Service animals stay free of pet fees; for emotional support animals, hosts may charge normal pet fees unless local policy requires them to accept the animal.
-- **[Vrbo](https://help.vrbo.com/articles/About-Price-Display):** the displayed price includes mandatory fees, which must be shown upfront, and service fees, with taxes added at checkout, though that page does not mention pets. Pets are one of the standard fee types a host can set, and a host can add a charge to an existing reservation by payment request before the stay is complete; fee changes apply only to future bookings. "Pets allowed" is a predefined house rule, with a host note of 50 characters.
-
-To see real homes with their full totals, [start a pet-friendly search on Vrbo](aff:vrbo) and price the same dates and dog count for each.
-
-## Keeping a fee-free stay fee-free
-
-A $0 pet fee does not settle what happens if the dog leaves mud, hair or an accident behind, and the pages above say little about damage terms. Even where cleaning is already on the bill, as at Sliding Rock, a messy return invites further charges, so cleaning expectations stay the same in a fee-free home. Mud at the door is the part you control: a washable mat like the [Soggy Doggy](https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate) Microfiber Doormat, which the maker lists with a non-slip backing and says is machine washable, catches wet paws at the door. Skip it if the entry is tiny or already carpeted. For other cleanup items see our [rental cleanup gear page](/gear/rental-cleanup); for puppies and seniors, our [puppy guide](/guides/puppy-at-a-vacation-rental) and [senior dog guide](/guides/vacation-rental-with-a-senior-dog) cover washable pads.
-
-{{pick:soggy-doggy-microfiber-doormat|For muddy entries: a washable mat|The maker lists a non-slip backing and says it is machine washable; it does not say how much mud it holds.|https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate}}
-
-## What to ask the host
-
-A "no pet fee" claim is worth checking like any other; see [how to spot a pet-friendly listing that isn't](/guides/pet-friendly-listing-red-flags).
-
-If a listing you like says no pets, that is a different question: see [how to ask a host for an exception](/guides/bringing-a-dog-to-a-no-pets-rental).
+Copy these into your message. Ask for the answers in writing.
 
 - "Do you charge a pet fee, a pet deposit, or a pet cleaning fee for [number] dog(s) on [dates]?"
 - "Is there a cleaning fee that applies to every guest, and what is it?"
@@ -251,6 +183,33 @@ If a listing you like says no pets, that is a different question: see [how to as
 - "Is there a limit on the number or size of dogs at this home, and a fenced yard?"
 - "Can you confirm in writing that no pet charge applies?"
 
-Our [dog-count guide](/guides/how-many-dogs-can-you-bring-to-a-vacation-rental) covers limits, the [acceptance tool](/tools/will-my-dog-be-accepted) shows what a home's rules mean for your dog, and our [damage-charge guide](/guides/airbnb-pet-damage-charge-after-checkout) covers what happens if the damage question is left open.
+## Which three managers say dogs stay free?
 
-If your dog is large, check weight rules first: [which managers welcome large dogs](/guides/vacation-rentals-that-welcome-large-dogs).
+| Manager | What the page says | What it does not say |
+| --- | --- | --- |
+| Sliding Rock Cabins (Georgia) | "No pet fees, breed restrictions, or weight limits"; the booking site says "Each cabin has nominal cleaning fees" | Cleaning fee amount, pet deposit, damage terms |
+| Hapey Cabin Rentals (Smokies) | "No pet fees. Ever."; no pet deposit, no cleaning surcharge for dogs; more than two dogs, mention it at booking. Another page mentions a 6% to 14% guest service fee | Damage terms. Two Hapey pages disagree on the booking route (Vrbo or Airbnb service fees versus direct), so ask which applies |
+| Twiddy & Company (Outer Banks) | "No additional fee or deposit required" on ten listed homes; most list a two-dog maximum | Cleaning fees, damage policy, any home not on the list |
+
+Sources: [Sliding Rock Cabins](https://slidingrockcabins.com/) and its [booking site](https://bookings-slidingrockcabins.escapia.com/?cat=10), [Hapey Cabin Rentals](https://hapeycabinrentals.com/pet-friendly-smoky-mountain-cabin-rentals/) and its [direct-booking page](https://hapeycabinrentals.com/why-dont-you-offer-direct-booking/), [Twiddy & Company](https://blog.twiddy.com/bring-your-pets-on-vacation/).
+
+Twiddy's $0 is for those ten homes only, so check the home you want. All three were read on 2026-11-18. The full list of 38 is on the [pet policy data page](/data/pet-policies).
+
+## Is a fee-free home really cheaper?
+
+Not automatically. 22 of the 38 managers state a charge, from $20 a night to "up to $1,000", and 13 name no amount. Some fold cleaning into the pet fee (Big Bear Vacations says its $40 per pet per night covers extra cleaning), while a fee-free home may bill cleaning separately. A $0 pet fee plus a cleaning fee can land close to a home with a pet fee and no cleaning fee (our reading, not a figure from any page). Put every line side by side for the same dates and dogs: nightly rate, cleaning, pet fee, deposit, service fee, taxes. The [pet fees guide](/guides/how-vacation-rental-pet-fees-work) shows how the charges add up.
+
+## How do I look on Airbnb and Vrbo?
+
+The help pages tell you what hosts can set, not which listings are fee-free, so open the price breakdown on any listing.
+
+- **[Airbnb](https://www.airbnb.com/help/article/86):** add your pets under Who, or choose Allows pets under Booking options. A pet fee cannot exceed the nightly base rate, and service animals stay free of pet fees.
+- **[Vrbo](https://help.vrbo.com/articles/About-Price-Display):** pets are one of the fee types a host can set, and a host can add a charge to an existing reservation by payment request before the stay is complete. Ask the host to confirm in writing that no pet charge applies. To see real homes with totals, [start a pet-friendly search on Vrbo](aff:vrbo) and price the same dates and dog count for each.
+
+## How do I keep a fee-free stay fee-free?
+
+A $0 pet fee does not settle what happens if the dog leaves mud, hair or an accident behind, and the pages above say little about damage terms. Cleaning expectations stay the same in a fee-free home. Mud at the door is the part you control: a washable mat like the [Soggy Doggy](https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate) Microfiber Doormat catches wet paws. Skip it if the entry is tiny or already carpeted. For other cleanup items see our [rental cleanup gear page](/gear/rental-cleanup).
+
+{{pick:soggy-doggy-microfiber-doormat|For muddy entries: a washable mat|The maker lists a non-slip backing and says it is machine washable; it does not say how much mud it holds.|https://www.soggydoggydoormat.com/products/soggy-doggy-no-bone-doormat-chocolate}}
+
+Next: [how to spot a pet-friendly listing that isn't](/guides/pet-friendly-listing-red-flags), [what a dog really costs on a rental trip](/guides/what-a-dog-really-costs-on-a-vacation-rental), and [which managers welcome large dogs](/guides/vacation-rentals-that-welcome-large-dogs).

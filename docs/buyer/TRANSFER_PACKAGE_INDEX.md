@@ -23,3 +23,5 @@ Start with **[BUYER_HANDOVER.md](../../BUYER_HANDOVER.md)**, the owner's guide. 
 | Data refresh                                     | [DATA-RECHECK-LOG.md](../DATA-RECHECK-LOG.md)                                                                     |
 | Developer notes                                  | [HANDOVER.md](../../HANDOVER.md)                                                                                  |
 | Release status and evidence                      | [SALE_RELEASE_STATUS.md](../SALE_RELEASE_STATUS.md)                                                               |
+
+**Evidence a buyer can inspect before paying:** [EVIDENCE_PACK.md](EVIDENCE_PACK.md) (what each piece of evidence proves and does not prove; affiliate accounts do not transfer).

@@ -193,8 +193,11 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
+      <a href="#main" className="skip-link">
+        Skip to main content
+      </a>
       <SiteHeader />
-      <main id="main">
+      <main id="main" tabIndex={-1}>
         {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
         <Outlet />
       </main>

@@ -1,597 +1,319 @@
-import { dogTypes, dogTypeIsLive } from "@/content/dog-types";
-import { createFileRoute, Link, useNavigate } from "@tanstack/react-router";
-import { useState } from "react";
-import {
-  ArrowRight,
-  Fence,
-  Ruler,
-  Dog,
-  BadgeDollarSign,
-  Calculator,
-  ListChecks,
-  Backpack,
-} from "lucide-react";
-import { preload } from "react-dom";
-import { images, srcSetFor, HERO_MOBILE } from "@/lib/images";
-import { destinations } from "@/content/destinations";
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { Backpack, CloudRain, Compass, Hourglass, PawPrint, Sprout, Timer } from "lucide-react";
+import type { ReactNode } from "react";
+import { Button } from "@/components/shell/Button";
+import { Card } from "@/components/shell/Card";
+import { Container } from "@/components/shell/Container";
+import { SectionHeading } from "@/components/shell/SectionHeading";
 import { visibleGuides } from "@/content/guides";
-import { visibleStays } from "@/content/stays";
-import { GuideCard } from "@/components/site/GuideCard";
-import { StayCard } from "@/components/site/StayCard";
-import { featureFilters, type FeatureKey } from "@/lib/stay-search";
-import { filterStays, defaultFilters, stayTypeLabels } from "@/lib/filters";
 import { pageHead } from "@/lib/seo";
 import { site } from "@/config/site";
-import { hasStays } from "@/lib/launch";
-import { policyStats } from "@/lib/policy-stats";
-import { liveCategories } from "@/content/gear-hub";
 
 export const Route = createFileRoute("/")({
   head: () =>
     pageHead({
-      title: `${site.name}: ${site.tagline}`,
-      description: hasStays()
-        ? `Plan a trip with your dog: dog-friendly stays, what ${policyStats().total} rental managers' pet pages really say about fees and limits, and travel gear.`
-        : "Researched guides and free tools for renting and traveling with your dog: pet fees, fenced yards, car safety and local rules, with every source listed.",
+      title: `The Adventure Passport | ${site.name}`,
+      description:
+        "A collectible passport of little adventures for you and your dog. Free to try, no account needed. Collect adventures, not just things.",
       path: "/",
     }),
   component: Home,
 });
 
-/** Preferred order for the homepage guides. Slugs that do not exist or are not public are skipped; the rest fill in. */
-const featuredGuideSlugs = [
-  "how-vacation-rental-pet-fees-work",
-  "pet-friendly-vacation-rental-checklist",
-  "vacation-rental-secure-fenced-yard",
-  "dog-car-safety-harness-and-crate-guide",
-];
-
-const styles = [
-  { label: "Cabins", search: { type: "cabin" }, img: "guide-ga-cabins" },
-  { label: "Beach houses", search: { beach: true }, img: "guide-ca-beach" },
-  { label: "Mountain escapes", search: { mountain: true }, img: "home-mountain-escapes" },
+const collections: { name: string; blurb: string; icon: ReactNode }[] = [
+  { name: "Five-Minute Moments", blurb: "Tiny rituals for a busy day.", icon: <Timer size={22} /> },
   {
-    label: "Weekend getaways",
-    guide: "dog-friendly-cabin-packing-list",
-    img: "guide-atlanta-getaways",
+    name: "Rainy Day Club",
+    blurb: "Indoor games for grey weather.",
+    icon: <CloudRain size={22} />,
   },
-  { label: "Unique stays", search: { type: "unique" }, img: "guide-la-getaways" },
-] as const;
-
-const mustHaves: { key: FeatureKey; label: string; icon: typeof Fence; note: string }[] = [
+  { name: "Road Trip Adventures", blurb: "Stops worth the detour.", icon: <Compass size={22} /> },
   {
-    key: "fenced",
-    label: "Fully fenced yards",
-    icon: Fence,
-    note: "Fenced on every side, not just partly",
+    name: "The Golden Years",
+    blurb: "Gentle outings at a slower pace.",
+    icon: <Hourglass size={22} />,
   },
   {
-    key: "large",
-    label: "Large-dog friendly",
-    icon: Ruler,
-    note: "No small-dogs-only weight limits",
-  },
-  { key: "multi", label: "Multiple dogs", icon: Dog, note: "Two or more dogs confirmed" },
-  {
-    key: "noFee",
-    label: "No pet fee",
-    icon: BadgeDollarSign,
-    note: 'Confirmed $0, not just "ask"',
+    name: "Puppy's First Chapter",
+    blurb: "First times worth remembering.",
+    icon: <Sprout size={22} />,
   },
 ];
+
+const faqs = [
+  {
+    q: "Is it really free to try?",
+    a: "Yes. You can find an adventure and flip your first card without paying and without creating an account.",
+  },
+  {
+    q: "Do I need an account?",
+    a: "No. There are no accounts. If you buy the full Passport, you get an access code you can use to restore it on another device.",
+  },
+  {
+    q: "What does the full Passport cost?",
+    a: "It is a one-time purchase, price shown at checkout. There is no subscription.",
+  },
+  {
+    q: "Is it just for puppies or active dogs?",
+    a: "No. Collections range from five-minute moments to gentle outings for older dogs.",
+  },
+];
+
+function Stamp({ label, state }: { label: string; state: "earned" | "empty" }) {
+  return (
+    <div className={`pp-stamp is-${state}`}>
+      <div>
+        <PawPrint aria-hidden="true" />
+        {label}
+      </div>
+    </div>
+  );
+}
 
 function Home() {
-  const navigate = useNavigate();
-  const [where, setWhere] = useState("");
-  const [type, setType] = useState("");
-  const [feature, setFeature] = useState("");
-  const guides = visibleGuides();
-  const preferred = featuredGuideSlugs
-    .map((slug) => guides.find((g) => g.slug === slug))
-    .filter((g): g is (typeof guides)[number] => !!g);
-  const featuredGuides = [...preferred, ...guides.filter((g) => !preferred.includes(g))].slice(
-    0,
-    4,
-  );
-  const listed = visibleStays();
-  const stays = listed.slice(0, 3);
-  // A browse tile is shown only when its filter finds at least one listed stay, so no tile leads to an empty page.
-  const hasResults = (search: Record<string, unknown>) =>
-    filterStays(listed, { ...defaultFilters, ...search }).length > 0;
-  const styleTiles = styles.filter((t) => "guide" in t || hasResults(t.search));
-  const mustHaveTiles = mustHaves.filter((m) => hasResults({ [m.key]: true }));
-  const anyStays = hasStays();
-  const gearTiles = liveCategories().filter((c) =>
-    ["car-safety", "ramps-and-steps", "feeding-and-hydration"].includes(c.slug),
-  );
-
-  function onSearch(e: React.FormEvent) {
-    e.preventDefault();
-    const [state, town] = where.split(":");
-    navigate({
-      to: "/stays",
-      search: (prev) => ({
-        ...prev,
-        state: state ?? "",
-        town: town ?? "",
-        type,
-        ...(feature ? { [feature]: true } : {}),
-      }),
-    });
-  }
-
-  // The hero is the LCP element. React does not preload an <img> inside <picture>, so preload both candidates explicitly. react-dom's preload() puts them first in <head> (the imageSrcSet form is what gets the early, high-priority slot when a media query is present)
-  // (ahead of the stylesheet and scripts), each limited to the viewport it serves, so a browser never fetches the wrong one.
-  preload(HERO_MOBILE.src, {
-    as: "image",
-    imageSrcSet: HERO_MOBILE.src,
-    media: HERO_MOBILE.media,
-    fetchPriority: "high",
-  });
-  preload(images["hero-porch"].src, {
-    as: "image",
-    imageSrcSet: srcSetFor("hero-porch"),
-    imageSizes: "100vw",
-    media: "(min-width: 768px)",
-    fetchPriority: "high",
-  });
+  const guides = visibleGuides().slice(0, 3);
   return (
     <>
-      <section className="relative isolate min-h-[88vh] overflow-hidden">
-        <picture>
-          <source
-            media={HERO_MOBILE.media}
-            srcSet={HERO_MOBILE.src}
-            width={HERO_MOBILE.width}
-            height={HERO_MOBILE.height}
-          />
-          <img
-            src={images["hero-porch"].src}
-            srcSet={srcSetFor("hero-porch")}
-            sizes="100vw"
-            alt={images["hero-porch"].alt}
-            width={1920}
-            height={1088}
-            fetchPriority="high"
-            className="absolute inset-0 -z-10 h-full w-full object-cover"
-          />
-        </picture>
-        <div className="absolute inset-0 -z-10 bg-scrim" />
-        <div className="container-page flex min-h-[88vh] flex-col justify-end pb-14 pt-32">
-          <p className="eyebrow animate-rise !text-primary-foreground [text-shadow:0_1px_8px_rgb(0_0_0/0.7)]">
-            Dog-friendly travel, done properly
-          </p>
-          <h1 className="animate-rise mt-4 max-w-3xl text-5xl leading-[1.05] text-primary-foreground md:text-7xl">
-            Their favorite getaway starts here.
-          </h1>
-          <p className="animate-rise mt-5 max-w-xl text-lg text-primary-foreground/90">
-            {anyStays
-              ? "Discover cabins, beach escapes, and beautiful stays that welcome your dog, with the details that matter."
-              : "Researched guides and free tools for renting, driving and vacationing with your dog. Facts link to their sources, and anything we could not confirm says so."}
-          </p>
-          {anyStays ? (
-            <form
-              onSubmit={onSearch}
-              className="animate-rise mt-9 grid gap-2 rounded-2xl bg-background p-2 shadow-card md:grid-cols-[1.3fr_1fr_1fr_auto]"
-              aria-label="Find dog-friendly stays"
-            >
-              <label className="flex flex-col rounded-xl px-4 py-2 hover:bg-muted">
-                <span className="text-xs font-semibold">Destination</span>
-                <select
-                  value={where}
-                  onChange={(e) => setWhere(e.target.value)}
-                  className="bg-transparent text-sm outline-none"
-                >
-                  <option value="">Anywhere</option>
-                  {destinations.map((d) => (
-                    <optgroup key={d.slug} label={d.name}>
-                      <option value={`${d.slug}:`}>All of {d.name}</option>
-                      {d.towns.map((t) => (
-                        <option key={t.slug} value={`${d.slug}:${t.slug}`}>
-                          {t.name}
-                        </option>
-                      ))}
-                    </optgroup>
-                  ))}
-                </select>
-              </label>
-              <label className="flex flex-col rounded-xl px-4 py-2 hover:bg-muted">
-                <span className="text-xs font-semibold">Stay type</span>
-                <select
-                  value={type}
-                  onChange={(e) => setType(e.target.value)}
-                  className="bg-transparent text-sm outline-none"
-                >
-                  <option value="">Any type</option>
-                  {Object.entries(stayTypeLabels).map(([k, v]) => (
-                    <option key={k} value={k}>
-                      {v}
-                    </option>
-                  ))}
-                </select>
-              </label>
-              <label className="flex flex-col rounded-xl px-4 py-2 hover:bg-muted">
-                <span className="text-xs font-semibold">Must-have</span>
-                <select
-                  value={feature}
-                  onChange={(e) => setFeature(e.target.value)}
-                  className="bg-transparent text-sm outline-none"
-                >
-                  <option value="">No preference</option>
-                  {featureFilters.map((f) => (
-                    <option key={f.key} value={f.key}>
-                      {f.label}
-                    </option>
-                  ))}
-                </select>
-              </label>
-              <button className="h-14 rounded-xl bg-primary px-6 font-medium text-primary-foreground hover:bg-primary/90">
-                Find dog-friendly stays
-              </button>
-            </form>
-          ) : (
-            <div className="animate-rise mt-9 flex flex-wrap gap-3">
-              <Link
-                to="/guides"
-                className="inline-flex h-14 items-center rounded-xl bg-primary px-7 font-medium text-primary-foreground hover:bg-primary/90"
-              >
-                Read the guides
-              </Link>
-              <Link
-                to="/tools"
-                className="inline-flex h-14 items-center rounded-xl bg-background px-7 font-medium text-foreground hover:bg-background/90"
-              >
-                Use the free tools
-              </Link>
-            </div>
-          )}
-        </div>
-      </section>
-
-      {anyStays && styleTiles.length > 0 && (
-        <section className="container-page mt-20">
-          <h2 className="text-3xl md:text-4xl">Browse by travel style</h2>
-          <div className="mt-8 grid grid-cols-2 gap-4 md:grid-cols-5">
-            {styleTiles.map((s) => {
-              const img = images[s.img];
-              const inner = (
-                <>
-                  <img
-                    src={img.tile ?? img.card ?? img.src}
-                    alt=""
-                    loading="lazy"
-                    decoding="async"
-                    width={480}
-                    height={600}
-                    className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-scrim" />
-                  <span className="absolute bottom-4 left-4 font-display text-xl text-primary-foreground">
-                    {s.label}
-                  </span>
-                </>
-              );
-              return "guide" in s ? (
-                <Link
-                  key={s.label}
-                  to="/guides/$slug"
-                  params={{ slug: s.guide }}
-                  className="group relative aspect-[4/5] overflow-hidden rounded-lg"
-                >
-                  {inner}
-                </Link>
-              ) : (
-                <Link
-                  key={s.label}
-                  to="/stays"
-                  search={(p) => ({ ...p, ...s.search })}
-                  className="group relative aspect-[4/5] overflow-hidden rounded-lg"
-                >
-                  {inner}
-                </Link>
-              );
-            })}
-          </div>
-        </section>
-      )}
-
-      <section className="container-page mt-20">
-        <h2 className="text-3xl md:text-4xl">Find the right trip for your dog</h2>
-        <p className="mt-3 max-w-2xl text-muted-foreground">
-          A rental that suits one dog can fail another. Start with the one that sounds like yours.
-        </p>
-        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {dogTypes.filter(dogTypeIsLive).map((d) => (
-            <Link
-              key={d.slug}
-              to="/dogs/$slug"
-              params={{ slug: d.slug }}
-              className="rounded-lg border p-5 hover:bg-muted"
-            >
-              <h3 className="text-xl">{d.name}</h3>
-              <p className="mt-2 text-sm text-muted-foreground">{d.tagline}</p>
-            </Link>
-          ))}
-        </div>
-      </section>
-
-      {gearTiles.length > 0 && (
-        <section className="container-page mt-20">
-          <div className="flex items-end justify-between gap-4">
+      <section className="pp-hero" aria-labelledby="home-h1">
+        <Container>
+          <div className="pp-hero-grid">
             <div>
-              <h2 className="text-3xl md:text-4xl">Travel essentials</h2>
-              <p className="mt-3 max-w-2xl text-muted-foreground">
-                Researched gear for the drive and the rental, with sources on every card.
+              <p className="pp-eyebrow">The Adventure Passport</p>
+              <h1 id="home-h1" className="pp-h1">
+                A lifetime of <em>little adventures</em> with your dog.
+              </h1>
+              <p className="pp-lede">
+                A collectible passport of small, doable adventures. Flip a card, go do it, stamp
+                your passport. Collect adventures, not just things.
               </p>
+              <ul className="pp-hero-points" aria-label="Good to know">
+                <li>Free to try</li>
+                <li>No account needed</li>
+              </ul>
+              <div className="mt-6">
+                <Button to="/discover">Find our next adventure</Button>
+              </div>
             </div>
-            <Link to="/gear" className="text-sm font-medium text-primary hover:underline">
-              See all →
-            </Link>
+            <div aria-hidden="false">
+              <MysteryCard />
+            </div>
           </div>
-          <div className="mt-8 grid gap-4 sm:grid-cols-3">
-            {gearTiles.map((c) => (
-              <Link
-                key={c.slug}
-                to="/gear/$category"
-                params={{ category: c.slug }}
-                className="rounded-lg border p-5 hover:bg-muted"
-              >
-                <h3 className="text-xl">{c.name}</h3>
-                <p className="mt-2 text-sm text-muted-foreground">{c.tagline}</p>
-              </Link>
-            ))}
-          </div>
-        </section>
-      )}
-
-      <section className="container-page mt-24">
-        <div className="flex items-end justify-between gap-4">
-          <div>
-            <p className="eyebrow">Launch destinations</p>
-            <h2 className="mt-2 text-3xl md:text-4xl">Where we're starting</h2>
-          </div>
-          <Link
-            to="/destinations"
-            className="hidden text-sm font-medium text-primary hover:underline md:inline"
-          >
-            All destinations →
-          </Link>
-        </div>
-        <div className="mt-8 grid gap-6 md:grid-cols-2">
-          {destinations.map((d) => (
-            <Link
-              key={d.slug}
-              to="/destinations/$state"
-              params={{ state: d.slug }}
-              className="group relative block overflow-hidden rounded-xl"
-            >
-              <img
-                src={images[d.image].card ?? images[d.image].src}
-                alt={images[d.image].alt}
-                loading="lazy"
-                decoding="async"
-                width={1600}
-                height={1008}
-                className="aspect-[16/11] w-full object-cover transition duration-700 group-hover:scale-[1.03]"
-              />
-              <div className="absolute inset-0 bg-scrim" />
-              <div className="absolute bottom-0 p-7 text-primary-foreground">
-                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-sage">
-                  {d.focus}
-                </p>
-                <h3 className="mt-1 text-4xl">{d.name}</h3>
-                <p className="mt-2 text-sm text-primary-foreground/85">
-                  {d.towns.map((t) => t.name).join(" · ")}
-                </p>
-              </div>
-            </Link>
-          ))}
-        </div>
+        </Container>
       </section>
 
-      <section className="mt-24 bg-secondary/60 py-20">
-        <div className="container-page grid gap-12 md:grid-cols-[1fr_1.2fr] md:items-center">
-          <div>
-            <p className="eyebrow">More than just pet-friendly</p>
-            <h2 className="mt-2 text-4xl leading-tight">
-              "Pet-friendly" is one checkbox. Your dog needs more than that.
-            </h2>
-            <p className="mt-5 text-muted-foreground">
-              Most travel sites stop at "pets allowed." We record the details that decide whether a
-              stay actually works: whether the fence goes all the way around, how the pet fee is
-              charged, weight and breed limits, and how many dogs are welcome. If a detail isn't
-              confirmed, we say so instead of guessing.
-            </p>
-            <Link
-              to="/editorial-standards"
-              className="mt-6 inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline"
-            >
-              How we research stays <ArrowRight className="size-4" />
-            </Link>
-          </div>
-          <dl className="grid gap-4 sm:grid-cols-2">
-            {[
-              [
-                "Fence, in detail",
-                "Fully fenced, partly fenced or none, plus height and gate notes.",
-              ],
-              ["Fees, decoded", "Per stay, per night or per dog: we record which."],
-              ["Size and breed", "Weight limits and breed rules stated plainly."],
-            ].map(([t, d]) => (
-              <div key={t} className="rounded-lg bg-background p-5 shadow-card">
-                <dt className="font-display text-lg">{t}</dt>
-                <dd className="mt-1 text-sm text-muted-foreground">{d}</dd>
-              </div>
-            ))}
-          </dl>
-        </div>
-      </section>
+      <div className="pp-perf" aria-hidden="true" />
 
-      {stays.length > 0 && (
-        <section className="container-page mt-24">
-          <div className="flex items-end justify-between">
+      <section className="pp-section" aria-labelledby="passport-h">
+        <Container>
+          <div className="pp-split">
             <div>
-              <p className="eyebrow">Stays</p>
-              <h2 className="mt-2 text-3xl md:text-4xl">Stays</h2>
+              <SectionHeading
+                eyebrow="Your passport"
+                title="Every adventure earns a stamp"
+                id="passport-h"
+              >
+                Mark an adventure done and it lands in your passport. Over time the pages fill with
+                the little things you did together.
+              </SectionHeading>
+              <div className="mt-5">
+                <Button to="/passport" variant="secondary">
+                  See how the passport works
+                </Button>
+              </div>
+            </div>
+            <PassportPreview />
+          </div>
+        </Container>
+      </section>
+
+      <section className="pp-section pp-band" aria-labelledby="collections-h">
+        <Container>
+          <SectionHeading eyebrow="Collections" title="Pick a chapter" id="collections-h">
+            Adventures come in themed collections. A first look at some of them:
+          </SectionHeading>
+          <div className="pp-grid pp-grid-3 mt-6">
+            {collections.map((c) => (
+              <Card key={c.name} to="/collections">
+                <div className="pp-collection">
+                  <span className="pp-collection-icon" aria-hidden="true">
+                    {c.icon}
+                  </span>
+                  <div>
+                    <h3>{c.name}</h3>
+                    <p>{c.blurb}</p>
+                  </div>
+                </div>
+              </Card>
+            ))}
+          </div>
+          <div className="mt-6">
+            <Button to="/collections" variant="ghost">
+              Browse collections
+            </Button>
+          </div>
+        </Container>
+      </section>
+
+      <section className="pp-section" aria-labelledby="keepsake-h">
+        <Container>
+          <div className="pp-split">
+            <div className="order-2 md:order-1">
+              <Keepsake />
+            </div>
+            <div className="order-1 md:order-2">
+              <SectionHeading eyebrow="Keepsakes" title="Something to keep" id="keepsake-h">
+                Finished adventures can become a keepsake page to save or print, a small record of
+                the day you did it.
+              </SectionHeading>
             </div>
           </div>
-          <div className="mt-8 grid gap-6 md:grid-cols-3">
-            {stays.map((s) => (
-              <StayCard key={s.slug} stay={s} />
+        </Container>
+      </section>
+
+      <section className="pp-section pp-band" aria-labelledby="how-h">
+        <Container>
+          <SectionHeading eyebrow="How it works" title="Three steps" id="how-h" />
+          <ol className="pp-steps mt-6">
+            <li>
+              <h3>Find</h3>
+              <p>
+                Tell us a little about your day and your dog. We suggest an adventure that fits.
+              </p>
+            </li>
+            <li>
+              <h3>Do</h3>
+              <p>Flip the card, read the idea and go. Most take less than an afternoon.</p>
+            </li>
+            <li>
+              <h3>Stamp</h3>
+              <p>Mark it done. Your passport fills up, and you can save a keepsake.</p>
+            </li>
+          </ol>
+        </Container>
+      </section>
+
+      <section className="pp-section" aria-labelledby="buy-h">
+        <Container>
+          <div className="pp-card" style={{ padding: "1.5rem" }}>
+            <SectionHeading eyebrow="The full Passport" title="Pay once, keep it" id="buy-h">
+              Start free. If you want the whole set of collections, the full Passport is a one-time
+              purchase, price shown at checkout. No subscription and no account.
+            </SectionHeading>
+            <div className="mt-5 flex flex-wrap gap-3">
+              <Button to="/unlock">Get the Passport</Button>
+              <Button to="/free-challenges" variant="secondary">
+                Try free challenges
+              </Button>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      <section className="pp-section pt-0" aria-labelledby="faq-h">
+        <Container>
+          <SectionHeading eyebrow="Questions" title="Quick answers" id="faq-h" />
+          <div className="pp-faq mt-4">
+            {faqs.map((f) => (
+              <details key={f.q}>
+                <summary>{f.q}</summary>
+                <p>{f.a}</p>
+              </details>
             ))}
           </div>
+        </Container>
+      </section>
+
+      {guides.length > 0 && (
+        <section className="pp-section pt-0" aria-labelledby="guides-h">
+          <Container>
+            <SectionHeading eyebrow="From the guides" title="Reading for the road" id="guides-h" />
+            <div className="mt-4">
+              {guides.map((g) => (
+                <Link
+                  key={g.slug}
+                  to="/guides/$slug"
+                  params={{ slug: g.slug }}
+                  className="pp-guide"
+                >
+                  <span className="pp-guide-title">{g.title}</span>
+                  <span className="pp-guide-dek">{g.dek}</span>
+                </Link>
+              ))}
+            </div>
+            <div className="mt-5">
+              <Button to="/guides" variant="secondary">
+                All guides
+              </Button>
+            </div>
+          </Container>
         </section>
       )}
-
-      {anyStays && mustHaveTiles.length > 0 && (
-        <section className="container-page mt-24">
-          <h2 className="text-3xl md:text-4xl">Browse by must-have</h2>
-          <div className="mt-8 grid gap-4 sm:grid-cols-2 md:grid-cols-4">
-            {mustHaveTiles.map((m) => (
-              <Link
-                key={m.key}
-                to="/stays"
-                search={(p) => ({ ...p, [m.key]: true })}
-                className="group rounded-lg border border-border bg-card p-6 transition hover:border-primary"
-              >
-                <m.icon className="size-7 text-terracotta" />
-                <p className="mt-4 font-display text-xl group-hover:text-primary">{m.label}</p>
-                <p className="mt-1 text-sm text-muted-foreground">{m.note}</p>
-              </Link>
-            ))}
-          </div>
-        </section>
-      )}
-
-      <section className="container-page mt-24">
-        <div className="flex items-end justify-between">
-          <div>
-            <p className="eyebrow">Guides</p>
-            <h2 className="mt-2 text-3xl md:text-4xl">Read before you book</h2>
-          </div>
-          <Link to="/guides" className="text-sm font-medium text-primary hover:underline">
-            All guides →
-          </Link>
-        </div>
-        {featuredGuides[0] && (
-          <div className="mt-8">
-            <GuideCard guide={featuredGuides[0]} variant="wide" />
-          </div>
-        )}
-        <div className="mt-12 grid gap-8 md:grid-cols-3">
-          {featuredGuides.slice(1).map((g) => (
-            <GuideCard key={g.slug} guide={g} />
-          ))}
-        </div>
-      </section>
-
-      <section className="container-page mt-24">
-        <div className="rounded-2xl border border-border bg-card p-8 md:p-12">
-          <p className="eyebrow">Original research</p>
-          <h2 className="mt-2 max-w-3xl text-3xl md:text-4xl">
-            We read what {policyStats().total} rental managers actually say about dogs
-          </h2>
-          <div className="mt-6 grid gap-4 sm:grid-cols-3">
-            {[
-              [`${policyStats().capTwo} of ${policyStats().total}`, "state a limit of two dogs"],
-              [
-                `${policyStats().zeroFee} of ${policyStats().total}`,
-                "charge no pet fee on the pages we read",
-              ],
-              [
-                `${policyStats().breedSilent} of ${policyStats().total}`,
-                "say nothing about breed on their pet page",
-              ],
-            ].map(([n, t]) => (
-              <div key={t}>
-                <p className="font-display text-4xl">{n}</p>
-                <p className="mt-1 text-sm text-muted-foreground">{t}</p>
-              </div>
-            ))}
-          </div>
-          <p className="mt-6 text-sm text-muted-foreground">
-            A convenience sample, read {policyStats().date}, with a source link for every row.
-          </p>
-          <div className="mt-6 flex flex-wrap gap-3">
-            <Link
-              to="/data/pet-policies"
-              className="inline-flex h-11 items-center rounded-full bg-primary px-6 text-sm font-medium text-primary-foreground hover:bg-primary/90"
-            >
-              See the data
-            </Link>
-            <Link
-              to="/tools/will-my-dog-be-accepted"
-              className="inline-flex h-11 items-center rounded-full border border-input px-6 text-sm font-medium hover:bg-muted"
-            >
-              Check your dog
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      <section className="container-page mt-12">
-        <div className="rounded-2xl bg-primary p-8 text-primary-foreground md:p-12">
-          <p className="text-xs font-semibold uppercase tracking-[0.16em] text-sage">
-            Free planning tools
-          </p>
-          <h2 className="mt-2 max-w-2xl text-4xl">
-            Tools that do the awkward part of booking for you
-          </h2>
-          <div className="mt-8 grid gap-4 md:grid-cols-2">
-            {[
-              {
-                to: "/tools/will-my-dog-be-accepted",
-                icon: Dog,
-                t: "Will my dog be accepted?",
-                d: `Check your dogs against ${policyStats().total} rental managers' own pet policies, with a source for each.`,
-              },
-              {
-                to: "/tools/packing-list",
-                icon: Backpack,
-                t: "Pack your dog's bag",
-                d: "Tell us about your trip, get a personalized packing list, check items off and print it.",
-              },
-              {
-                to: "/tools/checklist",
-                icon: ListChecks,
-                t: "Before-you-book checklist",
-                d: "Tick it off, save it, print it.",
-              },
-            ].map((t) => (
-              <Link
-                key={t.to}
-                to={t.to}
-                className="rounded-lg bg-primary-foreground/10 p-5 transition hover:bg-primary-foreground/15"
-              >
-                <t.icon className="size-6 text-terracotta" />
-                <p className="mt-3 font-display text-lg">{t.t}</p>
-                <p className="mt-1 text-sm text-primary-foreground/75">{t.d}</p>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="container-page mt-24">
-        <div className="grid items-center gap-8 rounded-xl border border-border p-8 md:grid-cols-[1.5fr_1fr] md:p-12">
-          <div>
-            <p className="eyebrow">For hosts</p>
-            <h2 className="mt-2 text-3xl">Run a genuinely dog-friendly stay?</h2>
-            <p className="mt-2 text-muted-foreground">
-              We list properties whose pet policies we have read from public pages. There's no cost
-              to be considered.
-            </p>
-          </div>
-          <div className="md:text-right">
-            <Link
-              to="/list-your-property"
-              className="inline-flex rounded-full bg-terracotta-button px-6 py-3 font-medium text-terracotta-foreground"
-            >
-              List your property
-            </Link>
-          </div>
-        </div>
-      </section>
     </>
+  );
+}
+
+function MysteryCard() {
+  return (
+    <div>
+      <div className="pp-flip" role="group" aria-label="Sample mystery card">
+        <div className="pp-flip-inner">
+          <div className="pp-face pp-face-back">
+            <span className="pp-meta">Mystery card</span>
+            <div>
+              <Backpack size={44} aria-hidden="true" />
+              <h3>Your next adventure is face down</h3>
+            </div>
+            <span className="pp-meta">Sample</span>
+          </div>
+          <div className="pp-face pp-face-front">
+            <span className="pp-meta">Five-Minute Moments</span>
+            <div>
+              <h3>The Slow Sniff Walk</h3>
+              <p>Let your dog choose the route for ten minutes. You follow the nose.</p>
+            </div>
+            <span className="pp-meta">Sample adventure</span>
+          </div>
+        </div>
+      </div>
+      <p className="mt-3 text-center text-sm" style={{ color: "var(--pp-muted)" }}>
+        A sample card. Real ones are revealed when you find an adventure.
+      </p>
+    </div>
+  );
+}
+
+function PassportPreview() {
+  return (
+    <div
+      className="pp-passport"
+      role="img"
+      aria-label="Preview of a passport page with three earned stamps and three empty spaces"
+    >
+      <p className="pp-passport-title">Adventure Passport</p>
+      <div className="pp-page">
+        <div className="pp-stamps">
+          <Stamp label="First Sniff" state="earned" />
+          <Stamp label="Rainy Day" state="earned" />
+          <Stamp label="Road Stop" state="earned" />
+          <Stamp label="Next up" state="empty" />
+          <Stamp label="Next up" state="empty" />
+          <Stamp label="Next up" state="empty" />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Keepsake() {
+  return (
+    <div className="pp-keepsake" role="img" aria-label="Preview of a keepsake page">
+      <div className="pp-keepsake-frame">
+        <span className="pp-postmark" aria-hidden="true">
+          Adventure done
+        </span>
+        <strong>The Slow Sniff Walk</strong>
+        <p>Collected together. Date and a line of your own go here.</p>
+      </div>
+    </div>
   );
 }

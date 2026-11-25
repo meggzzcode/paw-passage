@@ -94,3 +94,18 @@ Historical counts for older commits stay in `docs/FINAL_SALE_CODE_RELEASE.md` an
 | Bing | Not signed in | Owner decision: no Bing. DEFERRED WITH DISCLOSURE. |
 
 Not yet built or deployed: `7fb1e63` (skip link and focus ring). The next build is batched with any home-page speed fix; production still runs `main@f02e4f9`.
+
+## Cowork follow-up v2 (2026-11-25): results and triage
+
+| Finding | Triage |
+|---|---|
+| Indexing requests: 10 SUBMITTED, 1 refused (Quota Exceeded on /stays), 3 not attempted (/destinations/georgia/blue-ridge, its things-to-do page, the San Diego things-to-do page) | Retry on 2026-11-26: /stays first, then the two things-to-do pages. Blue Ridge hub: the 'noindex' Google reports is from its Nov 18 crawl; the live page has no robots meta tag and is in the sitemap (Claude check 2026-11-25), so it is stale, not a defect: recheck after a recrawl; a request is worthwhile after the next deploy. |
+| /stays 'Crawled, currently not indexed' | A quality signal on a new site, not a discovery problem. Do not spam requests; revisit when more internal links point at it. |
+| Red-flags guide, how-many-dogs guide and the two things-to-do pages 'Discovered, not indexed' | Expected for new URLs; requested (guides) or to be requested (things-to-do). Recheck in a week. |
+| Retired weight-limit URL still indexed in Google's Nov 19 crawl | Live 301 confirmed by Claude (curl: 301 to the large-dog guide); consolidates on recrawl. |
+| 'No referring sitemap' on some URLs | All are in the live sitemap.xml (checked); Search Console read the sitemap on Nov 25 with 105 pages. Stale report. |
+| Page indexing summary stale (last update 11/15, 0 indexed) vs URL Inspection and `site:` (~85 URLs) | Do not quote the summary; use URL Inspection and `site:` with the caveat. Recheck in a few days. |
+| SERP check (9 searches) | Page 1 for 3 of 9 (#1 'no pet fee vacation rentals', #2 'what happens if you bring a dog to a no pets rental', about #9 'per night per dog'); page 2 for 1; absent from the top 30 for 4. Recorded as a dated snapshot in `docs/buyer/EVIDENCE_PACK.md` item 11 with caveats. |
+| Keyword Planner: 'airbnb pet fee' and 'dog friendly vacation rental' about 100 to 1K a month; the other long-tail phrases no data | The niche is small: never claim demand or volume in the listing. Cowork created a saved plan 'Plan from Nov 25, 2026' in the owner's Google Ads account (no campaign, no spend); the owner may delete it. |
+| GA4 'Internal Traffic' data filter in Testing | Leave it. The GA4 property is the seller's and does not transfer; activating is permanent and gains the buyer nothing. |
+| Home mobile LCP 5.2 to 5.3 s with a 1.9 s 'element render delay' on the hero (PageSpeed) | Claude could not reproduce it: calibrated Lighthouse on production gives home 0.85 (LCP 3.7 s), the same as /gear (0.84); an emulated slow-phone run shows the hero painting 17 ms after it loads (LCP 2.6 s). The hero is already 99 KB, preloaded, and a lower JPEG quality saves under 15 KB. The remaining lever is trimming the JavaScript the home page runs (the stay data chunk and the zod search schemas): a refactor, not done. DEFERRED WITH DISCLOSURE: a lab score for one page, no field data yet; listed under known limitations. |

@@ -1,6 +1,6 @@
 # Sale listing draft: Paws & Passage (pre-revenue starter site)
 
-DRAFT for the owner. Not submitted anywhere. Every number comes from `docs/buyer/ROUTE_AND_ASSET_COUNTS.md` and `docs/BUYER_ASSET_INVENTORY.md` (recounted 2026-11-24 on repository `HEAD` `9797221`; re-run the counts after any later commit and before posting). **Nothing is deployed:** production still serves a build from about 2026-11-23, so do not post a claim about what the live site shows until the owner has deployed and the checks in `docs/cowork/FINAL_PRE_SALE_BROWSER_QA.md` have passed. Nothing here claims traffic, earnings, rankings, affiliate approvals, replacement value or buyer interest, because none are evidenced. Do not put an invented number in any bracket. One-page summary for a buyer: `docs/BUYER_OVERVIEW.md`.
+DRAFT for the owner. Not submitted anywhere. Counts re-run 2026-11-25 at `3e5923b` are unchanged except tests: 783 in 61 files (the 771 and 59 below are older). Every number comes from `docs/buyer/ROUTE_AND_ASSET_COUNTS.md` and `docs/BUYER_ASSET_INVENTORY.md` (recounted 2026-11-24 on repository `HEAD` `9797221`; re-run the counts after any later commit and before posting). **Nothing is deployed:** production still serves a build from about 2026-11-23, so do not post a claim about what the live site shows until the owner has deployed and the checks in `docs/cowork/FINAL_PRE_SALE_BROWSER_QA.md` have passed. Nothing here claims traffic, earnings, rankings, affiliate approvals, replacement value or buyer interest, because none are evidenced. Do not put an invented number in any bracket. One-page summary for a buyer: `docs/BUYER_OVERVIEW.md`.
 
 ## Headline
 
@@ -52,12 +52,12 @@ Original text, data selection and code written for the site are the seller's and
 
 ## Known limitations (state them, do not hide them)
 
-- **Not deployed.** The live site is a stale build until the owner deploys; the post-deploy checks have not been run.
-- **Pages CMS: the authenticated flow is UNVERIFIED.** The configuration was checked structurally and by tests, and a direct-edit path was rebuilt locally, but no one has signed in to the live Pages CMS app and saved a change. Editing on GitHub works without it.
+- **Partly deployed (2026-11-25).** Production runs `main@82b0b34`, older than the final commit; the final build is not yet deployed and needs the owner's approval. Live post-deploy checks (C1) have not been run on the final build ([SALE_RELEASE_STATUS.md](./SALE_RELEASE_STATUS.md)).
+- **Pages CMS: the forms loaded in the seller's account on 2026-11-25 (VERIFIED IN ACCOUNT, nothing saved); the full save-to-live loop is UNVERIFIED.** Editing on GitHub works without it.
 - **Real-device checks are pending** (iPhone/Safari, VoiceOver, Android). The local browser QA used a desktop browser at phone and desktop widths.
 - Guides are researched from public sources with the method disclosed, not first-hand tested; AI tools assisted research, drafting and source checks (disclosed on the site). The reader reviews (mean 7.1 of 10) preceded the final corrections.
 - The 78 shown stays are not confirmed with a host; none was confirmed with a host. The 38-manager dataset is a single-date sample.
-- **Open disclosure wording mismatch:** Vrbo buttons on stay pages carry a short "Affiliate link" label, while `/affiliate-disclosure` still says every buy or booking button does (Amazon buttons no longer carry one). The owner decides whether to restore labels or reword the page before the listing goes up.
+- **Disclosure wording.** `/affiliate-disclosure` was rewritten on 2026-11-25 to match the real behaviour and the stay directory mode; it is not legally certified (see [OWNER_DECISION_STAY_MODE.md](./OWNER_DECISION_STAY_MODE.md)). Check the live page after the final deploy.
 - Affiliate earnings need accounts you open and get approved, including Amazon's own site review and qualifying-sales window.
 - Domain auto-renew is off; the domain expires 2027-11-17 if nobody renews it.
 - One devDependency comes from a vendor namespace (below).

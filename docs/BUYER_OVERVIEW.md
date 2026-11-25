@@ -1,32 +1,44 @@
 # Paws & Passage: buyer overview (one page)
 
-Counted 2026-11-24 at repo `9797221`. Method and every number: `docs/buyer/ROUTE_AND_ASSET_COUNTS.md`. **Nothing is deployed yet:** the live site is an older build until the owner deploys, so this page describes the repository.
+Counted 2026-11-25 at commit `3e5923b`. Method and every number: [buyer/ROUTE_AND_ASSET_COUNTS.md](./buyer/ROUTE_AND_ASSET_COUNTS.md). Full guide: [BUYER_HANDOVER.md](../BUYER_HANDOVER.md).
+
+**Deployment status (2026-11-25).** The live site runs `main@82b0b34`, which is older than the final commit. The final build, which adds the owner-approved stay directory mode and larger disclosure notices, is **not yet deployed**; a second deploy awaits the owner's approval. The numbers below describe the repository. Ask the seller which commit is live on your closing date.
 
 ## What it is
-A new, pre-revenue starter site about renting vacation homes with a dog (domain registered 2026-11-16, about 8 days old). Plain-file content, no database, no logins. Asking price $1,500. It is sold as is: no traffic, revenue, ranking or approved-partner history exists.
 
-## Why it is different from a blank site
-- **Original research:** a dated 38-manager pet-policy dataset (13 fields each, one source link per row, read 2026-11-18), published as a data page and CSV, and used by the "will my dog be accepted" tool.
-- **29 sourced guides** (about 45,000 words, 420 sources linked in the text, FAQs), answer-first, with a documented fact-check trail. An independent reader panel averaged 7.1 of 10 before the final fixes; the corrected text was not re-scored.
-- **A personalized packing planner** (37 declared items; trip type, days, dogs and conditions build the list; "Need to buy" points to researched Gear products). Lists save in the visitor's browser only: no accounts, no sync.
-- **A photo-free Gear shop:** 11 categories, 5 trip collections, 65 active products with sources.
-- **A stay directory** of 78 shown stays, each shown as "not confirmed with the host" (none host-confirmed; 23 are indexable), plus 8 town "things to do" articles.
-- **SEO groundwork** (103-URL sitemap, canonicals, structured data, redirects, internal links). No ranking result is claimed.
+A dog-friendly vacation-rental travel site. Plain-file content, no database, no logins. **Domain registered November 16, 2026. Google Search Console previously recorded approximately 236 impressions and zero clicks in a 28-day window that included the site's launch. No established organic traffic or revenue.** It is sold as is.
 
-## Exactly what you receive
-The domain pawsandpassage.com (pushed at closing); the GitHub repository (code, content, 771 passing tests, 518 commits of history); 29 pins and 30 share images; the documentation set (`docs/buyer/TRANSFER_PACKAGE_INDEX.md`); a written copyright assignment (wording is a seller and legal item; there is no LICENSE file).
+## What the repository contains
+
+- **29 published guides** (32 files, 3 drafts held back). 22 published guides are Markdown and editable in Pages CMS; 7 are code files that need a developer.
+- **8 town "things to do" articles** (not guides).
+- **A 38-manager pet-policy dataset**: 13 fields each, read 2026-11-18, one source link per row; a data page and a CSV. A convenience sample.
+- **3 tools**: a packing planner (37 items; saves in the visitor's own browser), "Will my dog be accepted?" and a before-you-book checklist. No calculators.
+- **83 stay files, none confirmed with a host.** 78 are shown, 23 are in the sitemap, 55 are shown but `noindex`, 5 are hidden.
+- **A Gear shop** with 11 categories, 5 trip collections and 65 active products (92 records). No third-party product photos.
+- **A 103-URL sitemap** and **783 passing automated tests in 61 files** (counted at `3e5923b`).
+
+## What you receive
+
+The domain `pawsandpassage.com` (Namecheap ownership change), the GitHub repository, the documentation, 29 pins and 30 share images, and a written copyright assignment (wording is a seller and legal item; there is no LICENSE file). Everything transfers only as your purchase agreement states.
 
 ## What you do not receive
-Affiliate accounts or verified approvals (the Amazon tag, 79 Vrbo deeplinks, Impact value and GA4 property are the seller's and do not transfer); analytics, Search Console or Bing history; Pinterest or social accounts (unless the owner adds them in writing); an email list (none exists); host-verified stays; ownership of the Unsplash photos (usage rights only).
 
-## How it could monetize (no earnings claims)
-Amazon Associates links on guides, Gear and the planner; Vrbo/Expedia booking links on stays. Both need **your own** accounts to be approved by those programmes first; approval can be refused, and Amazon has a qualifying-sales window. A link marked "approved" in the repository is not proof of anyone's approval. Other models (ads, other affiliates, selling the dataset) are possible but untested.
+The seller's affiliate accounts or any verified approval (Amazon, Vrbo and Expedia, Impact, Stay22); analytics, Search Console or Bing history; Pinterest or other social accounts unless your agreement says so; an email list (none exists); host-confirmed stays; ownership of the Unsplash photos (licensed use only); the seller's Lovable subscription.
 
-## What to do after buying
-Follow `docs/BUYER_AFFILIATE_TRANSITION.md` in order: open your own accounts, run `node scripts/audit-seller-ids.mjs`, replace the seller IDs, and choose the stay directory mode. Important: the directory exists only while approved affiliate links exist; if the seller's links are switched off it empties unless you turn on the `public-sources` mode (plain links, no commission). Then verify the deploy and the site in your own Search Console.
+## How it could earn (no earnings claim)
+
+Amazon links on guides, Gear and the planner; Vrbo links on stays. Both need **your own** approved accounts. Approval can be refused. A link marked "approved" in the repository is not proof of anyone's approval. The shipped **public-sources** mode keeps the same 78 stays listed with plain public source links that earn nothing, even after the seller's links are removed.
+
+## First steps
+
+Follow [BUYER_HANDOVER.md](../BUYER_HANDOVER.md) section 3, then replace the seller's identifiers using [BUYER_AFFILIATE_TRANSITION.md](./BUYER_AFFILIATE_TRANSITION.md).
 
 ## Ongoing costs and limits
-Domain renewal about $19.98 a year (auto-renew is currently off; it expires 2027-11-17 unless renewed); optional mailbox about $14.88 a year; Netlify Free and GitHub Free $0, paid plans if you outgrow them (`docs/buyer/HOSTING_OPTIONS.md`, list prices, not the seller's bills). Limits: 7 guides, town pages and Gear copy need a developer; Pages CMS has never been tested with a login (UNVERIFIED); real-device checks are pending; the guides are researched from public sources, not first-hand; the dataset is a single-date sample.
+
+Domain renewal $19.98 a year plus the ICANN fee (Namecheap notice read 2026-11-25; auto-renew is currently off; expires 2027-11-17). Optional mailbox listed at $14.88 a year. Netlify Free is $0 with 300 credits a month; each production deploy uses 15. GitHub Free and Pages CMS are free as of 2026-11-25. Prices change; check before buying ([BUYER_HANDOVER.md](../BUYER_HANDOVER.md) section 12).
+Limits: seven guides, towns, Gear category text and design changes need a developer. The Pages CMS forms loaded in the seller's account on 2026-11-25 (VERIFIED IN ACCOUNT); the full save-to-live loop is UNVERIFIED. Real-device checks are partly pending. Guides are researched from public sources, not first-hand.
 
 ## How transfer works
-Marketplace escrow only. Seller pushes the domain (Namecheap change of ownership), transfers the GitHub repository, and removes or hands over service access using each service's own invite feature; you create your own Netlify account, import the repo, attach the domain and verify the site. Step-by-step: `docs/TRANSFER_CHECKLIST.md`. A short written question window after closing is offered (owner to confirm the length).
+
+Through the agreed escrow only. The seller pushes the domain, transfers the repository and removes or hands over service access using each service's own feature; you set up Netlify, Pages CMS and your own affiliate and analytics accounts. Step by step: [TRANSFER_CHECKLIST.md](./TRANSFER_CHECKLIST.md).

@@ -1,5 +1,7 @@
 # Costs, accounts and the owner's action list (WP8)
 
+> Update 2026-11-25: Netlify plans re-read (Free 300 credits, Personal $9 and 1,000 credits, Pro $20 and 3,000 credits; 15 credits per production deploy) and the .com renewal of $19.98 a year re-confirmed on Namecheap's notice. The seller's Netlify account showed a Personal plan with 1,000 credits on 2026-11-25 (VERIFIED IN ACCOUNT), not the free plan assumed below. Owner's guide: [BUYER_HANDOVER.md](../BUYER_HANDOVER.md) section 12.
+
 > Note (2026-11-24): prices are list prices read on 2026-11-18, not the seller's bills; the sale summary of costs is `docs/buyer/HOSTING_OPTIONS.md`. <!-- SUPERSEDED-NOTE -->
 
 

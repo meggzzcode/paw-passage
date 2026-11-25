@@ -1,6 +1,6 @@
 # Final QA crawl, 2026-11-24
 
-> Historical (2026-11-24): crawl of an earlier commit (95 URLs; 605 tests). Current counts and checks: `docs/buyer/ROUTE_AND_ASSET_COUNTS.md`. <!-- SUPERSEDED-NOTE -->
+> Historical (2026-11-24): crawl of an earlier commit (95 URLs; 605 tests). Current counts and checks: [docs/buyer/ROUTE_AND_ASSET_COUNTS.md](ROUTE_AND_ASSET_COUNTS.md). <!-- SUPERSEDED-NOTE -->
 
 
 Read-only crawl of the final build at http://localhost:4180 (HEAD ac5da97), Playwright Chromium. Sitemap host https://www.pawsandpassage.com mapped to localhost. 95 sitemap URLs plus 5 `/gear?trip=<slug>` URLs = 100 URLs, each loaded at 1280x800 and 390x844 (200 page loads). Nothing was fixed.

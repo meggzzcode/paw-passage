@@ -1,5 +1,7 @@
 # Operations handbook (for a future owner)
 
+> Advanced reference: only needed for technical changes. Written 2026-11-18; the plain-English owner's guide is [BUYER_HANDOVER.md](../BUYER_HANDOVER.md). Where this file differs on counts, the CMS area names or stay rules, the guide and [SALE_RELEASE_STATUS.md](./SALE_RELEASE_STATUS.md) win. The Netlify plan seen in the seller's account on 2026-11-25 differs from the free-plan figures below; check your own plan.
+
 Written 2026-11-18. This pulls together what a new owner needs to run Paws & Passage. It points to the detailed documents instead of repeating them. Nothing here is a promise of income, and no figure is invented: where a number is not known, it says so.
 
 Related: `BUYER_HANDOVER.md` (what you are buying), `docs/DNS-AND-TRANSFER.md` (domain and email steps), `docs/OPERATIONS-RECORD.md` (account register), `docs/AFFILIATE-AND-SELLING.md`, `docs/SALE-READINESS.md`, and the audit reports in `docs/recovery/`. Verified costs, the owner's action list, email, security, restore steps and the Netlify badge are in `docs/COSTS-AND-ACCOUNTS.md`, `docs/EMAIL-AND-TRANSFER.md`, `docs/SECURITY-AND-RECOVERY.md` and `docs/NETLIFY-BADGE.md` (read 2026-11-18).
@@ -26,12 +28,12 @@ Related: `BUYER_HANDOVER.md` (what you are buying), `docs/DNS-AND-TRANSFER.md` (
 
 ## 3. Content management (Pages CMS)
 
-Open Pages CMS, sign in with GitHub, pick the repository. Collections: Articles, Stays, Dog-rule places, Affiliate links, Site settings. Saving creates a commit; Netlify then rebuilds (a few minutes).
+Open Pages CMS, sign in with GitHub, pick the repository. Areas, as labelled in the CMS: Articles, Stays (accommodation listings), Dog rules (places), Affiliate links, Products (travel essentials), Packing planner (dog packing list), Business settings. Saving creates a commit; Netlify then rebuilds (a few minutes).
 
 - An article goes live only when Status is **Published**, **Approved by** and **Approved on** are filled, fact-checking is ticked and no claims are left unchecked.
 - A stay appears with its status shown. Unverified stays show "Not confirmed" for unknown details and are never described as verified.
 - A dog-rules place goes live only if verified with the official page address, the exact quoted sentence and the date read.
-- 15 of the 24 guides, the towns, the gear product lists and the legal pages are still code files and need a developer (`docs/MIGRATION-PLAN.md`). Count as of 2026-11-18; check the folders for today's figure.
+- 7 of the 32 guide files (all published), the towns, Gear category text and the legal pages are code files and need a developer. 25 guide files are Markdown and editable in Pages CMS; Gear products and the packing planner are editable too (counted 2026-11-25 at `3e5923b`).
 - House style for articles: `docs/audit/HOUSE-STYLE.md` and `docs/WRITING-IN-MARKDOWN.md`.
 
 ## 4. Affiliate relationships (and what will NOT transfer)

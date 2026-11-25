@@ -1,193 +1,361 @@
-# Paws & Passage: buyer handover guide
+# START HERE: Paws & Passage Owner's Guide
 
-## Status as of 2026-11-24
+**Version 2.0 · written 2026-11-25 · counts taken at commit `3e5923b` · DRAFT: SCREENSHOT VERIFICATION PENDING**
 
-- **What exists (counted on repo HEAD `9797221`, 2026-11-24; commands and method in `docs/buyer/ROUTE_AND_ASSET_COUNTS.md`; one-page summary `docs/BUYER_OVERVIEW.md`):** a dog-friendly travel site with 29 published guides (32 guide files, 3 drafts; about 45,000 words; 420 sources, every one linked in the text), 8 town "things to do" articles (not guides), a 38-manager pet-policy dataset, 3 planning tools (a personalized packing planner that saves in the visitor's browser only, will my dog be accepted, a before-you-book checklist; no calculators), 83 stay files with **0 host-confirmed** (78 shown with Vrbo links marked approved and a "Not yet verified" label, 23 of them indexable and 55 shown but `noindex`, 5 hidden), a photo-free Gear shop (11 categories, 5 trip collections, 65 active products), a 103-URL sitemap and 771 passing automatic tests (59 files). Guides cite sources as inline publisher links with a collapsible Sources list (no numbers). One affiliate notice with Amazon's sentence sits at the top of each guide and Gear page; the per-button affiliate labels were removed there, but the Vrbo buttons on stay pages still carry a short label while `/affiliate-disclosure` says every button does (open owner decision).
-- **Deploy pending:** nothing is deployed. Production serves a stale build from about 2026-11-23 (98 sitemap URLs, old titles); Netlify builds are stopped. Everything in this guide describes the repository. Any claim about the live site must be re-verified after the first deploy (`docs/cowork/FINAL_PRE_SALE_BROWSER_QA.md`).
-- **Pre-revenue:** new domain (registrar start 2026-11-16, about 8 days old on 2026-11-24, valid to 2027-11-17; auto-renew is off until the owner decides), no revenue history, no subscribers. Search Console previously recorded approximately 236 impressions and zero clicks in a 28-day window that included the site's launch, and URL Inspection showed 21 of 23 inspected pages indexed (not all sitemap URLs); these are historical figures from an older build, to be replaced by a fresh dated export. No established organic traffic or revenue. Nothing here claims more.
-- **What you must replace:** every seller identifier: the Amazon tag `pawspassage-20`, the 79 Vrbo deeplinks, the Impact verification value, the GA4 ID `G-1J97C8CPC1` and the Pinterest URL. These accounts stay with the seller and are not part of the sale, and the affiliate links in the repository are **not proof of approval** for anyone. Run `node scripts/audit-seller-ids.mjs`, then follow `docs/BUYER_AFFILIATE_TRANSITION.md` in order (it also explains what happens to the stay directory when the seller links go, and the optional `public-sources` mode).
-- **Also yours to arrange:** the mailbox, domain, GitHub, Netlify and Pages CMS transfers, and the unreviewed legal pages. Hosting: Netlify is recommended; the site does not depend on paid Lovable usage (see "Hosting options" under section 2).
-- **Netlify note:** the owner stopped builds to preserve free-plan credits (about 65 left; 15 per deploy; OWNER), so the live site shows the last deploy until you deploy from your own account. The build-skip rule was fixed on 2026-11-24 so Markdown guide edits and Pages CMS saves do trigger builds (`node scripts/test-netlify-ignore.mjs`).
-- **Where to look:** the step-by-step transfer list is `docs/TRANSFER_CHECKLIST.md`; the verified counts and evidence are in `docs/BUYER_ASSET_INVENTORY.md`.
-- **Older sections below:** written 2026-11-16 to 18 and corrected where counts changed; the inventory wins if they disagree.
+> **DRAFT: SCREENSHOT VERIFICATION PENDING.** Every step below is written so you can follow it without pictures. Real screenshots of Pages CMS, Netlify, GitHub and Namecheap have not been captured yet. Lines marked "Screenshot pending" show where they will go. Button wording in services you have not opened yet is described, not quoted, unless it appears in the project's own configuration.
 
-*Written 2026-11-16, counts corrected 2026-11-24. Read the "What has and has not been verified" section first. Nothing in this guide has been tried on live Netlify, Namecheap, GitHub or Pages CMS accounts yet.*
+**Status of the live site (2026-11-25).** Production runs an earlier build (`main@82b0b34`). The final version of the code, which adds the owner-approved stay directory mode and larger disclosure notices, is **not deployed yet**; a second deploy needs the owner's approval. OWNER ACTION REQUIRED: ask the seller to confirm in writing which commit is live on your closing date.
 
-*More documents: `docs/COSTS-AND-ACCOUNTS.md` (verified prices and the owner's action list), `docs/EMAIL-AND-TRANSFER.md`, `docs/SECURITY-AND-RECOVERY.md` (security steps and rebuild-from-repo runbook), `docs/NETLIFY-BADGE.md`, `docs/OPERATIONS-HANDBOOK.md` (running the site, costs, procedures, transfer checklist), `docs/SALE-READINESS.md` (scores and planning multiples) and the audit reports in `docs/recovery/`.*
+**Evidence labels used in this guide:** VERIFIED LIVE (checked on the public site), VERIFIED IN CODE (read or tested in the repository), VERIFIED IN ACCOUNT (seen in a seller account by a reviewer on the date given), OWNER CONFIRMATION (stated by the seller, not checkable here), UNVERIFIED (not checked), NOT INCLUDED, OWNER ACTION REQUIRED. Detailed ledger: [docs/SALE_RELEASE_STATUS.md](./docs/SALE_RELEASE_STATUS.md).
 
-## 1. What you are buying
+## How the pieces fit
 
-Paws & Passage is a dog-friendly travel website: researched articles (29 published), 3 planning tools (will my dog be accepted, a packing list and a before-you-book checklist), an 11-category gear hub and a directory of stays (78 listed, each labelled "Not yet verified"; none has been verified). It is set up to earn from affiliate links (a commission when a visitor books or buys through a link), but it is pre-revenue and the affiliate accounts are the seller's, not part of the sale. It has **no database, no logins and no server you have to look after**. Everything on the site is plain files stored in GitHub.
+```
+  You edit content ──> Pages CMS (web editor) ──saves to──> GitHub (stores content and code)
+                                                               │
+                                                  change detected
+                                                               ▼
+                                     Netlify (builds and publishes) ──> live website
+                                                               ▲
+  Namecheap (domain name and DNS address book) ── points visitors here
+  Your own Amazon / Vrbo accounts ──> affiliate links (settings in GitHub files)
+```
 
-The plan is that you can run it day to day without a developer:
+The site is **not** hosted by Pages CMS and **not** hosted by Lovable. Pages CMS only edits files. GitHub only stores them. Netlify turns them into the website. Namecheap tells the internet where the website lives.
 
-| Job | Where you do it | Needs a developer? |
-|---|---|---|
-| Write or edit an article | Pages CMS (a web form) | No |
-| Add or update a place to stay | Pages CMS | No |
-| Change affiliate links | Pages CMS | No |
-| Change your email address, website address, Google Analytics ID | Pages CMS | No |
-| Replace a photo | Pages CMS (upload) | No |
-| Change the design, add a new kind of page, add a new tool | Code | Yes |
-| Update software when security notices arrive | Code | Yes, now and then |
+## 1. Welcome
 
-**Not everything is in Pages CMS yet.** As of 2026-11-24 there are 32 guide files: 25 are Markdown files in `content/guides/` (editable in Pages CMS; 22 published, 3 draft) and 7 are code files in `src/content/guides/` (a developer is needed to edit those; see `docs/MIGRATION-PLAN.md`). 29 guides are published in total. Stays, affiliate links (`content/affiliates.yml`), gear products (`content/products.yml`), business settings (`content/settings.yml`, including the Amazon tag and Stay22 account ID) and dog-rules places are in Pages CMS. The towns, gear category copy, dog-type pages and the legal pages are still code files. Section 8 lists exactly what is left.
+Paws & Passage is a dog-friendly vacation-rental travel site. It publishes researched guides, an original pet-policy dataset, three planning tools, a directory of stays and a Gear shop of dog travel products. It is built to earn affiliate commission, but it is **pre-revenue**: the domain was registered November 16, 2026. Google Search Console previously recorded approximately 236 impressions and zero clicks in a 28-day window that included the site's launch. There is no established organic traffic or revenue, and nothing here promises any.
 
-## 2. The five services, and who owns what
+**Plain words you will meet:**
 
-| Service | What it does | Cost | You need |
-|---|---|---|---|
-| **Namecheap** | Owns the website address (domain `pawsandpassage.com`, registrar start 2026-11-16, valid to 2027-11-17, auto-renew off pending the owner's decision, free domain privacy) and runs the business email (Private Email, the "Launch" plan with 1 mailbox) | Renewal read from Namecheap on 2026-11-18: `.com` $19.98 a year; Private Email Launch listed at $14.88 a year (whether that is the renewal price is unconfirmed). The first-term order was $24.16. | A Namecheap account |
-| **Netlify** (recommended host) | Hosts the website and rebuilds it automatically when content changes | Free plan: $0, 300 credits a month (hard limit), 15 credits per production deploy; see section 8. The seller's builds are stopped to preserve credits (about 65 left) | A Netlify account |
-| **GitHub** | Stores the website's files and every change ever made | Free | A GitHub account |
-| **Pages CMS** | The friendly web form for editing content | No price shown on any official Pages CMS page; treated as free with no guarantee | Your GitHub login |
-| **Lovable** (optional) | A design tool the seller used. **Not needed to build, host or edit**; no paid Lovable usage is required (the build uses one of its free public npm packages, no account). | Not needed (the seller's Pro plan is about $25 a month and does not transfer) | Nothing |
+- **GitHub** is where the content and code live, with every past version.
+- **Netlify** publishes the site when those source files change.
+- **Pages CMS** is a web editor for the content it supports. It is not a full site builder.
+- **Namecheap** holds the domain name and its DNS records, the "address book" that points the name at the host.
+- **Affiliate link:** a link that pays a commission if a visitor buys or books through it. It only pays the person whose account created it.
 
-There is no custom database or backend, and Hostinger is not used.
+**What you can do without a developer:** edit and publish most articles, change Gear product details, update the packing planner, update stays, change your business details and affiliate settings, and check that a change went live.
 
-### Hosting options (checked 2026-11-24; details `docs/buyer/HOSTING_OPTIONS.md` and `docs/HOSTING_PORTABILITY_REPORT.md`)
+**What needs a developer:** this is a custom React application, **not WordPress**. Design changes, new tools, seven older guides, the town pages and the legal pages are code. Section 9 lists them.
 
-- **Recommended: keep Netlify.** Create free GitHub and Netlify accounts, take over the repository, choose "Import from Git"; `netlify.toml` holds the build settings. Add your domain in Netlify and point Namecheap at it. Because each production deploy costs 15 of the free plan's 300 monthly credits, batch your edits.
-- **Lovable is optional, never required.** A clean copy was installed and built three ways (Node server, default, Netlify-style) with no Lovable account or variable, and all builds passed. Lovable hosting needs a paid plan for your own domain, does not read `netlify.toml` and was not tested with this site; a Lovable project can only move between members of one workspace, so you get the code from GitHub, not from Lovable.
-- **Any other Node 22 host works** (`NITRO_PRESET=node-server vite build`), but you must recreate what `netlify.toml` does: the permanent redirects for retired guide addresses, caching on `/assets/*`, two security headers on static files and the docs-only build skip.
-- **The one dependency:** `@lovable.dev/vite-tanstack-config` is a devDependency (public npm, MIT, no login). If Lovable ever unpublished it a developer would replace it with a plain Vite config. It is a small coupling, not a hosting lock-in.
-- **At handover:** the seller disconnects Lovable's GitHub sync (its docs say sync is two-way on the live branch) so nothing from Lovable can push to your `main`. Whether it is connected now is UNVERIFIED.
+**Core services you will use:** Namecheap (domain), GitHub (storage), Netlify (publishing), Pages CMS (editing, free to sign in with GitHub). Costs are in section 12.
 
-**Launch to-do list:** `docs/LAUNCH-CHECKLIST.md`.
+## 2. What you receive
 
-**Records:** every service, domain, mailbox and cost is listed in `docs/OPERATIONS-RECORD.md`; dated decisions and actions are in `docs/RECORD-TRAIL.md`.
+What transfers is set by your signed purchase agreement. This table describes what exists in the project. Where a right needs a signed document, it is not yours until that document is signed.
 
-## 3. How publishing works
+| Asset                           | Included?                          | What you should know                                                                                                       |
+| ------------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| Domain `pawsandpassage.com`     | Yes, by Namecheap ownership change | Registered 2026-11-16, expires 2027-11-17. Auto-renew is OFF (VERIFIED IN ACCOUNT 2026-11-25).                             |
+| Website code                    | Yes, by GitHub repository transfer | Plus a written copyright assignment. There is no LICENSE file; the assignment wording is a seller and legal item.          |
+| Published guides                | Yes                                | 29 published. 22 are editable in Pages CMS; 7 are code files (section 4 and 9). VERIFIED IN CODE.                          |
+| Original research and CSV       | Yes                                | 38 rental managers, 13 fields, read 2026-11-18. A convenience sample, not a survey.                                        |
+| Stay directory                  | Yes                                | 83 stay files; 78 shown; 23 in the sitemap; **0 confirmed with a host**.                                                   |
+| Gear catalog                    | Yes                                | 92 product records, 65 active, 11 categories, 5 trip collections.                                                          |
+| Packing planner and other tools | Yes                                | 3 tools: packing planner (37 items), "Will my dog be accepted?", before-you-book checklist. No calculators.                |
+| Images and licenses             | Photos are licensed, not owned     | Credited Unsplash photos. The Unsplash license is nonexclusive: you may use them, you do not own them, and others may too. |
+| Pinterest and social assets     | Image files only                   | 29 pins and 30 share images, derived from the site's photos. No account unless your agreement says so.                     |
+| Documentation                   | Yes                                | This guide and the files in `docs/`.                                                                                       |
+| Hosting configuration           | Yes                                | `netlify.toml` in the repository. The Netlify project itself is transferred or recreated as agreed (section 3).            |
+| Affiliate infrastructure        | The wiring, yes; the accounts, no  | Links, tags and disclosures are set up. Section 5.                                                                         |
 
-1. You edit something in Pages CMS and save.
-2. Pages CMS saves your change into GitHub.
-3. Netlify notices the change, rebuilds the site, and publishes it. This usually takes a few minutes.
-4. If the rebuild fails, Netlify keeps showing the previous version of the site, so visitors never see a broken page. **On Netlify's free plan you are not emailed about a failed build** (email alerts are a paid feature; tested 2026-11-17). So after saving a change, wait about three minutes and check that it appeared. If it did not, open Netlify's **Deploys** page: a failed build shows there with a plain message naming the file and the field to fix. Optional free alert: Netlify can post a pass/fail mark on each GitHub commit (see section 6, step 4).
+**Does not automatically transfer (NOT INCLUDED unless your agreement says so):** the seller's affiliate accounts (Amazon, Vrbo and Expedia through Impact, Stay22), the seller's Google Analytics property unless the seller authorizes access, Search Console access, the seller's personal email, the seller's Lovable subscription and workspace, the seller's social accounts, and copyright in third-party stock photos.
 
-### Saving is not publishing
+Do not treat a draft, an unsigned document or an invitation as a completed transfer. Nothing here guarantees income, traffic or rankings.
 
-An article is public only when **all** of these are true:
-- Status is **Published**
-- **Approved by** has a name and **Approved on** has a date
-- **Fact-checking finished** is ticked
-- **Claims still unchecked** is empty
+## 3. Your first day
 
-Anything else stays a draft. A draft is not just hidden: its text is left out of the website's code entirely, so nobody can read it by looking behind the scenes. (This was tested; see section 7.) Stays are different: a stay is listed when it has an approved affiliate link (rule `STAYS_REQUIRE_AFFILIATE_LINK` in `src/content/publish-rule.ts`), whether it is Verified or Unverified. Unverified stays carry a "Not yet verified" label. Samples never appear.
+Work in this order. It follows the safe sequence in [docs/DNS-AND-TRANSFER.md](./docs/DNS-AND-TRANSFER.md). The full chronological list with seller and buyer columns is [docs/TRANSFER_CHECKLIST.md](./docs/TRANSFER_CHECKLIST.md).
 
-If an editor saves a half-finished draft, the build skips it and carries on. If someone saves a **published** article with a mistake in it, the build stops with a plain message naming the file and the field, and the live site stays as it was.
+**Before transfer, the seller prepares.** The seller confirms the domain is unexpired, records the DNS page, lists which accounts are included, and has no valuable asset moved until funds are secured by the agreed escrow process. **After transfer, you confirm** each step below.
 
-## 4. Everyday jobs (once Pages CMS is connected)
+### Step 1. Confirm payment and escrow
 
-**Write an article.** Pages CMS > Articles > New. Keep Status on *Draft* while writing. Fill in the title, summary, text, sources and the "Research notes". When it is ready and checked, ask the person who approves to type their name and today's date in *Approved by / Approved on*, tick fact-checking finished, and set Status to *Published*. It goes live after the next rebuild.
+- **Where:** your escrow or marketplace account.
+- **What to do:** confirm the funds are held by the agreed process before any asset moves. Confirm the signed agreement lists the domain, repository and any accounts included.
+- **Success looks like:** the escrow shows funds secured and a signed agreement is saved.
+- **If it fails:** pause. Do not accept transfers until this is fixed.
 
-**Add a place to stay.** Pages CMS > Stays > New. Only fill in what the host has confirmed. Leave unknown boxes as **not-confirmed** (the site then says "Not confirmed"; it never guesses). Set Status to *Verified* only after the host confirmed the details, and fill in the date. A stay left as *Unverified* is still listed, with a "Not yet verified" label, so visitors know to confirm the details with the host. Use a photo only if you have the owner's permission.
+### Step 2. Receive the domain
 
-**Programs with their own rules (for example Expedia Group, which covers Vrbo).** Use their links exactly as the program gives them, never alter or redirect them, and keep commission figures out of public pages. The previous owner's account does not transfer; you apply for your own. See `docs/AFFILIATE-AND-SELLING.md` ("Expedia Group program rules") for the full list and how to remove links.
+- **Where:** your Namecheap account (create one first). The seller opens Domain List, Manage, **Sharing & Transfer**, **Change Ownership** and enters your Namecheap **username**, not your email.
+- **What to do:** accept the request in your account and check your contact details. Namecheap says this move is free and does not change DNS. Leave the DNS records alone.
+- **Success looks like:** the domain appears in your Domain List. You then send a test email to and from the business address.
+- **If it fails:** the Domain Lock was ON on 2026-11-25 (VERIFIED IN ACCOUNT); the seller may need to turn it off. Whether a recent-registration restriction applies is UNVERIFIED. Ask Namecheap support in writing. An invitation sent is not a completed transfer.
+- Screenshot pending (buyer-08-namecheap-change-ownership).
 
-**Add an affiliate link.** Pages CMS > Affiliate links. Add the link, then tick **Approved** only after the company has approved your account. A Book or Buy button appears on the site only for approved links.
+### Step 3. Receive the GitHub repository
 
-**Change your business details.** Pages CMS > Business settings: email address, website address, Google Analytics ID (looks like `G-XXXXXXXXXX`). Anything left empty shows an honest "coming soon" message instead of a broken link.
+- **Where:** GitHub. The seller opens the repository, Settings, Danger Zone, Transfer.
+- **What to do:** accept the transfer email within a day. Turn on two-factor sign-in. Keep the repository public unless you plan for paid features ([docs/COSTS-AND-ACCOUNTS.md](./docs/COSTS-AND-ACCOUNTS.md)).
+- **Success looks like:** the repository is under your account and shows the full history.
+- **If it fails:** the transfer email expires after one day; ask the seller to start it again.
+- Screenshot pending (buyer-07-github-repo-overview).
 
-**Replace a photo.** Upload a new one in the article or stay form. Use a landscape photo about 1600 pixels wide and under 400 KB, and only one you have the right to use. The site's current photos are free-to-use Unsplash photos (credits are in `src/content/image-credits.ts`); the large picture at the top of the home page is also a credited Unsplash photo (usage rights, not ownership or exclusivity).
+### Step 4. Confirm hosting and deployment
 
-## 5. What has and has not been verified
+- **Where:** Netlify. Two routes: the seller transfers the project to a team you own, or you create a new project from the repository ("Import from Git"). Recreating is the simpler route; the settings are in `netlify.toml`.
+- **What to do:** check the repository link, the production branch (`main`), build command (`npm run build`) and publish folder (`dist`). Decide how builds publish (section 6).
+- **Success looks like:** a deploy shows Published and the site opens at a `.netlify.app` address.
+- **If it fails:** open the deploy log and see section 8.
 
-### Tested (on 2026-11-16, in a test setup that imitates Netlify; not on Netlify itself)
+### Step 5. Domain and HTTPS
 
-- **On real Netlify (2026-11-17; older results, not re-run):** 198 automatic site checks and 61 real-browser checks passed on the live test site. The first browser run found a hydration error caused by Netlify's free plan adding content to every page; it was fixed and re-tested.
-- **A fresh start works.** A brand-new copy of the code from GitHub installs, passes its automatic tests (771 in 59 files on 2026-11-24) and builds, using only what is in the repository. It needs no Lovable account and none of the previous owner's personal accounts. (A first attempt failed because a lock file was out of date. That was found, fixed, and a check now guards against it.)
-- **Netlify's own command-line tool** (a local imitation of Netlify's servers) built and ran the site: 216 automatic checks passed. These cover readable page text for search engines, every article, real "404 not found" pages for unknown addresses, correct canonical addresses and sitemap for a configured domain, images, scripts and fonts loading, and no empty pages.
-- **Older browser check (superseded):** an earlier run of 61 real-browser checks on a desktop and a phone-sized screen predates the packing planner rebuild; the cost calculator and question writer it mentions were removed. Current browser QA status: `docs/PRESALE_BROWSER_QA_RESULTS.md` when it exists, and the open items in `docs/cowork/FINAL_PRE_SALE_BROWSER_QA.md`.
-- **Search and filters:** 9 checks passed (fenced yard, number of dogs, no pet fee, text search, and that "not confirmed" is never treated as "yes").
-- **Editing by file:** changing a pet fee, an article title, a status, an affiliate link, a photo or a business setting in the content files changed the site as expected. Mistakes produced plain-English messages.
-- **Drafts do not leak.** Drafts, unapproved articles and sample stays are absent from every file a visitor can download, and their addresses return "404". (An earlier version leaked draft text inside the site's downloadable JavaScript. That was found and fixed.)
-- **An independent reviewer tried to break the safeguards** and found real problems (a duplicate web address crashing the site, unsafe text in articles, private notes shipped in public code). All were fixed and now have automatic tests.
-- The article that was moved into the new format looks **identical** to before: 7 pages compared character by character.
+- **Where:** Netlify domain settings, then Namecheap Advanced DNS.
+- **What to do:** add the domain in Netlify. Change only the website records Netlify tells you to. **Never delete mail records and never change nameservers.** Keep a screenshot of the DNS page from before.
+- **Success looks like:** the site opens at `https://www.pawsandpassage.com` with a padlock, and email still works.
+- **If it fails:** see "domain not working" in section 8. The certificate was due to expire 2027-02-14 and Netlify showed "Certificate renewal incomplete" for the apex domain on 2026-11-25 (VERIFIED IN ACCOUNT). Check the HTTPS page in Netlify and fix any old IPv6 (AAAA) records.
 
-### NOT yet verified (needs your accounts; steps in section 6)
+### Step 6. Connect Pages CMS
 
-| Not verified | Why |
-|---|---|
-| ~~A real deploy on Netlify and automatic rebuild when GitHub changes~~ | **Tested (2026-11-17):** a real deploy worked; a GitHub change published itself in about a minute; a deliberately bad edit failed the build while the live site stayed up; the live site then passed 198 automatic checks and 61 real-browser checks (desktop and phone). See `docs/LIVE-TEST-RESULTS.md`. Still open: failure emails (a paid Netlify feature, left for the buyer). |
-| Pages CMS itself: signing in, installing its GitHub App, the editing forms, saving | Needs your GitHub login. The form file (`.pages.yml`) was written from Pages CMS's documentation and checked by tests, but never opened in the real app. |
-| Whether Pages CMS saves straight to the main branch or can use branches / pull requests | The documentation does not say. The "Approved by" safeguard works either way. |
-| Whether a collaborator with no GitHub account can sign in to Pages CMS | Not stated in the documentation. |
-| Plain Markdown editor round trip | The visual editor was tested on 2026-11-17: it kept tables, citations, links and formatting but **turned tick-box lists into plain bullets**, so articles now use the plain Markdown editor (`docs/WRITING-IN-MARKDOWN.md`). The plain editor itself still has to be tested the same way (section 6, step 7). |
-| HTTPS certificate, DNS, domain transfer, Private Email transfer, GitHub and Netlify ownership transfer | Written from the companies' published instructions only: see `docs/DNS-AND-TRANSFER.md`. |
-| Affiliate programs | Wired into the site but the accounts are the seller's and do not transfer: Vrbo has 79 links marked approved (78 per-listing deeplinks); Amazon uses tag `pawspassage-20` on 71 approved links covering all 65 active products; Stay22 is not set up. A configured ID or approved flag is not proof of an active partnership. Google Analytics and Search Console exist under the seller's accounts. There is no newsletter. |
+- **Where:** `app.pagescms.org`, signing in with GitHub.
+- **What to do:** install the Pages CMS GitHub App on the account that owns the repository, then open the repository on the `main` branch.
+- **Success looks like:** the sidebar shows seven areas: Articles, Stays (accommodation listings), Dog rules (places), Affiliate links, Products (travel essentials), Packing planner (dog packing list) and Business settings. The forms loaded in the seller's account on 2026-11-25 (VERIFIED IN ACCOUNT).
+- **If it fails:** edit on GitHub instead (section 6).
+- Screenshot pending (buyer-01-pages-cms-dashboard).
 
-**Do not treat the handover as complete until section 6 has been done and every box ticked.**
+### Step 7. Set contact details
 
-## 6. First-time setup and the tests that finish the verification
+- **Where:** Pages CMS, Business settings.
+- **What to do:** set "Business email address (shown on the Contact page)" and "Website address". Confirm you can read mail at that address. The mailbox is a separate Namecheap subscription and does not move with the domain ([docs/EMAIL-AND-TRANSFER.md](./docs/EMAIL-AND-TRANSFER.md)).
+- **Success looks like:** the Contact page shows your address and a test message reaches you.
+- **If it fails:** the address points to a dead mailbox. Fix the mailbox first.
 
-Do these in order. Each step says what "working" looks like.
+### Step 8. Replace seller tracking and affiliate settings
 
-1. **GitHub.** Make sure the repository is under the account that will own the business. Create a free GitHub account for the buyer when the time comes (transfer steps: `docs/DNS-AND-TRANSFER.md`, section 6c).
-2. **Netlify.** New project > import from GitHub > pick the repository and the `main` branch. Netlify reads `netlify.toml` itself. *Working:* the first deploy succeeds and the site opens at a `.netlify.app` address.
-3. **Run the site checker** against that address (needs only Node 22):
-   `node scripts/verify-site.mjs https://YOUR-NAME.netlify.app`
-   *Working:* it ends with "0 failed". It will report one failed check about image caching if Netlify is not applying the headers file; if so, tell a developer.
-4. **Failure alerts (optional, your choice).** The seller has **not** set these up. Netlify's email alerts for a failed update are a paid feature, so on the free plan a failed update is silent: just check the live page about three minutes after saving, or look at Netlify's **Deploys** page. If you want alerts, you can pay for Netlify's email notifications, or use the free "GitHub commit status" option (it puts a pass or fail mark on each commit in GitHub). Business email through Namecheap is a separate thing and does not provide these alerts.
-5. **Pages CMS.** Open app.pagescms.org, sign in with GitHub, install its GitHub App on the repository, and open the project. *Working:* you see the 6 collections defined in `.pages.yml`: guides, stays, places, affiliates, products and settings.
-6. **Harmless edit test.** Change the "Last checked on" date of the sample article, save, then look in GitHub for a new entry in the history. *Working:* a commit appears, Netlify starts a build, and a few minutes later the live article shows the new date. Write down which branch the commit went to.
-7. **Rich-text test.** Open an article, change one word, save, and in GitHub look at what changed. *Working:* only that word changed. *Not working:* if tables or the source links changed, stop and ask a developer to switch that field to the plain-text editor.
-8. **Draft test.** Create a new article, leave it on *Draft*, save. *Working:* it does not appear on the live site, and its address shows "404".
-9. **Unapproved test.** Set Status to *Published* but leave *Approved by* empty. *Working:* still not on the live site.
-10. **Mistake test.** Put the wrong text in a link (for example `abc`) in the Affiliate links form and save. *Working:* the Netlify build fails with a message naming the field, and the live site keeps working. (Tested on 2026-11-17.) Fix it and save again.
-11. **Collaborator test.** Invite a second person by email in Pages CMS. *Working:* they can sign in and edit. Note whether they needed a GitHub account.
-12. **Set the real details** in Business settings (website address, email, Google Analytics ID), then re-run the site checker with `--site-url https://yourdomain.com` to check canonical addresses and the sitemap.
+- **Where:** section 5.
+- **What to do:** replace or empty every seller identifier.
+- **Success looks like:** the audit command in section 5 reports none left.
 
-## 7. Taking over each account
+### Step 9. Confirm the site works
 
-The detailed, step-by-step instructions are in **`docs/DNS-AND-TRANSFER.md`**. In short:
+- **Where:** the live site on a phone and a computer.
+- **What to do:** open the home page, one guide, a Gear category, the packing planner and one stay. Check the sitemap at `/sitemap.xml`.
+- **Success looks like:** every page loads, with no error page. The sitemap listed 103 addresses when counted.
+- **If it fails:** section 8.
 
-- **Namecheap domain:** moved account-to-account with Namecheap's "Change Ownership". It is free, the website and email keep working, and the domain's privacy and DNS add-ons move with it.
-- **Private Email:** the subscription is **not** moved with the domain. Namecheap's published route is a support-assisted transfer; the fallback is a new subscription plus copying the mail across. Fees, downtime and password handover are **not confirmed**: ask Namecheap support before the sale.
-- **GitHub:** the owner transfers the repository to the buyer's account.
-- **Netlify:** the project is transferred to a team the buyer owns, then the connection to GitHub, the domain and HTTPS are checked.
-- **Pages CMS:** the buyer signs in with GitHub and installs the Pages CMS GitHub App on the repository.
-- **Affiliate programs:** these accounts belong to the person who applied. The buyer will probably need to apply themselves and replace every link.
+### Step 10. Save recovery information and backups
 
-**Never change the nameservers.** Keep DNS at Namecheap so the email records are never touched.
+- **Where:** your password manager and a private folder.
+- **What to do:** turn on two-factor sign-in on Namecheap, GitHub, Netlify and email. Save recovery codes privately, never in the repository. Download a copy of the repository. Never receive passwords from the seller; use each service's invitation or transfer feature. Then see [docs/SECURITY-AND-RECOVERY.md](./docs/SECURITY-AND-RECOVERY.md).
+- **Success looks like:** you can sign in to every service without the seller, and the seller's access and recovery methods are removed.
 
-## 8. Remaining transfer risks (most important first)
+## 4. How to manage the website
 
-1. **Part of the content is not editable in Pages CMS yet.** 7 of the 32 guide files, the towns, gear category copy, dog-type pages and the legal pages are code (gear products are editable in Pages CMS). Until `docs/MIGRATION-PLAN.md` is carried out, editing them needs a developer.
-2. **Only the Netlify part has been tested on a real account** (2026-11-17). Pages CMS, Namecheap and the ownership transfers have not. The most important unknown is the real Pages CMS editing forms.
-3. **Private Email cannot be pushed with the domain.** Plan this early. Namecheap's published route is a support-assisted transfer (pesupport@namecheap.com, no fee mentioned on its page, "no emails or other data will be lost"); fees, downtime and password hand-over remain unconfirmed. Verified options and a do-not-do list: `docs/EMAIL-AND-TRANSFER.md`.
-4. **One build dependency on Lovable's published configuration package** (`@lovable.dev/vite-tanstack-config` 2.27.2, devDependency, MIT licence, public npm registry; clean installs and builds passed again on 2026-11-24 with no Lovable account and no Lovable variables). If Lovable ever withdrew it, a fresh install would fail and a developer would replace it with a standard Vite configuration. The code also has a harmless error-reporting hook for Lovable's editor that does nothing without it. Advice: disconnect Lovable's GitHub sync at handover. See "Hosting options" in section 2.
-5. **Two package lists in the repository** (`package-lock.json` for Netlify, `bun.lock` for Lovable). They can drift apart; the automatic GitHub check now fails if they do.
-6. **Pages CMS is a free service run by a small open-source project** with no stated guarantee. Your content stays in GitHub, so you could switch tools, but the forms would need rebuilding. It can also be self-hosted (needs its own database).
-7. **Draft preview links are public.** Private preview deploys (set up in `netlify.toml`) show drafts to anyone who has the link, and are not password protected on a free plan. They tell search engines to stay away.
-8. **Netlify free plan limits and terms (read 2026-11-18).** The Self-Serve Subscription Agreement (updated 2026-11-04) and the acceptable-use policy do not prohibit commercial use of the free tier, but Netlify may change, pause or remove a free site at any time without notice. The free plan has 300 credits a month as a hard limit and each production deploy costs 15, so about 20 deploys use the allowance; at zero visitors see "Site not available". Plan accordingly and see `docs/COSTS-AND-ACCOUNTS.md`.
-9. **Affiliate programs must be re-applied for** by the buyer, and Amazon requires its exact disclosure sentence wherever its links appear (the site adds it automatically).
-10. **The legal pages (privacy, terms, affiliate disclosure) were written by the original owner's assistant and have not been reviewed by a lawyer.** The owner decided on 2026-11-17 not to obtain a legal review. A new owner may make their own choice; the pages are plain Markdown-style files that are easy to change.
-11. **The site loads fonts from Google Fonts**, and Google Analytics only once an ID is entered. The privacy page should say so.
-12. **Photos:** stock photos, including the home page hero, are credited Unsplash photos used under the Unsplash licence (usage rights, not ownership or exclusivity); no third-party (Amazon) product images are used. Any photo of a real rental needs the owner's written permission.
-13. **No failure emails on Netlify's free plan (email needs Pro; the free GitHub commit status works), a possible "Powered by Netlify" badge, and new projects may default to Private.** The badge is a Netlify project setting, not part of the code: `docs/NETLIFY-BADGE.md`. A failed build is silent unless someone looks at the Deploys page. A project set to Private makes the website ask visitors to sign in to Netlify: a live site must be set to public. Check this on day one.
-14. **Domain basics:** keep auto-renew on, keep the Namecheap sign-in and recovery email under the buyer's control, and check whether changing the owner's contact details triggers a transfer lock (the sources conflict).
+**What Pages CMS can edit.** `.pages.yml` defines seven areas. Three are collections of files: **Articles**, **Stays (accommodation listings)** and **Dog rules (places)**. Four are single files: **Affiliate links**, **Products (travel essentials)**, **Packing planner (dog packing list)** and **Business settings**. Uploaded photos go to `public/uploads`.
 
-## 9. Where things live (for a developer)
+**Exceptions.** Of 32 guide files, **25 are Markdown (22 published, 3 drafts) and editable in Pages CMS**. **7 are code-managed and all 7 are published**: the car-safety, first-aid, cabin-packing, fenced-yard, large-dog, rental-checklist and portable-fence guides. They do not appear in Articles. Also outside Pages CMS: towns and destinations, the eight "things to do" articles, Gear category text, dog-type pages, the checklist items, the 38-manager data file, the legal pages and all design. The fallback for a Markdown or YAML file is editing it directly on GitHub (section 6). Code files need a developer.
 
-| What | Where |
-|---|---|
-| Articles | `content/guides/*.md` (25 files; 7 legacy guides remain in `src/content/guides/*.ts`) |
-| Stays | `content/stays/*.yml` |
-| Affiliate links | `content/affiliates.yml` (160 entries) |
-| Gear products | `content/products.yml` (92 records, 65 active; 11 live categories) |
-| Business settings | `content/settings.yml` |
-| Photos you upload | `public/uploads/` |
-| The Pages CMS forms | `.pages.yml` |
-| Content checks and "unpublished stays out" step | `plugins/content.ts`, `src/content/schema.ts`, `src/content/publish-rule.ts` |
-| Netlify settings | `netlify.toml` |
-| Check a live site | `node scripts/verify-site.mjs <address>` |
-| Tests | `bunx vitest run` (771 tests in 59 files, 2026-11-24) |
-| Developer handbook (corrected 2026-11-23; Hostinger notes are a 2026-11-16 test, production is Netlify) | `HANDOVER.md` |
+After any task, save, wait for the build, and check the live page (section 6).
 
-## 10. Original data and how to keep it honest (added 2026-11-18)
+### Task A. Edit an article
 
-The site's main original asset is the pet-policy data from 38 vacation rental managers: `src/content/manager-policies.ts` (what the site reads), `public/pet-policies-38-managers.csv` (the public download, made by `bun scripts/make-policy-csv.mjs`), and the raw reading notes in `docs/data/`. It powers the "Will my dog be accepted?" tool and the `/data/pet-policies` page.
+- **What you're changing:** the text, a fact or the review date of a Markdown article.
+- **Where to click:** Pages CMS, **Articles**, then the article by its title.
+- **Steps:** edit **"Article text (written in Markdown)"**. For a new fact, update **"Sources (shown at the end of the article)"** and set **"Last checked on"** to today. Save. Writing help: [docs/WRITING-IN-MARKDOWN.md](./docs/WRITING-IN-MARKDOWN.md).
+- **How to check:** after the build, open the article and look for your change.
+- **Cannot find your article?** It is one of the 7 code-managed guides (see Exceptions above). Those need a developer.
+- Screenshot pending (buyer-02-article-editor).
 
-- It is a convenience sample read on 2026-11-18, not a survey. Eleven more managers blocked automated reading and are not in it.
-- Policies change. Follow `docs/DATA-RECHECK-LOG.md`: re-read every manager page at least every six months, update the date and counts, and log it. Numbers on the site come from this file, not from hand-typed text, except where an article quotes a count with its date.
-- Accounts for affiliate programs (and Stay22) belong to the previous owner and do not transfer. Apply for your own and add the IDs in Pages CMS (`content/settings.yml` and `content/affiliates.yml`).
+### Task B. Publish a new article
+
+- **What you're changing:** adding a page to the site.
+- **Where to click:** Pages CMS, **Articles**, then add a new entry.
+- **Steps:** keep **Status** on "Draft (not on the website)" while you write. Fill the required fields: Title, "One-line summary (shown under the title)", "Type of article", "Author name shown on the article", "First published on", "Last checked on", "Reading time (minutes)", "Title for Google (60 characters or fewer)", "Description for Google (160 characters or fewer)". Under "Research notes", fill "Main search phrase", "Who this is for" and "What makes this article different". To publish, set **Status** to "Published (live once approved below)", type a name in **"Approved by"**, set **"Approved on"**, tick **"Fact-checking finished? (must be ticked for the article to go live)"** and leave **"Claims still unchecked"** empty. Leave "Open follow-ups" empty too, as its label asks.
+- **How to check:** the article appears at `/guides/<file name>` after the build. If it does not, one of the four gate items is missing.
+- **Warning:** a published article with a mistake stops the build and names the field. The live site keeps its previous version.
+
+### Task C. Add or update a stay
+
+- **What you're changing:** a stay's details.
+- **Where to click:** Pages CMS, **Stays (accommodation listings)**.
+- **Steps:** fill only what the listing states. Leave unknown choices on "not-confirmed". Set the Status to "Verified (shown; the host confirmed the details)" **only** if the host confirmed them. Update **"Where the facts came from (listing link)"** to change its source address. The directory mode in Business settings (section 5) is "public-sources" in the shipped configuration (VERIFIED IN CODE), so a stay with a public Vrbo or Airbnb source address is listed with a plain link.
+- **How to check:** the stay page shows your details after the build.
+- **Know this:** visible does not mean host-confirmed. All 83 stays are unconfirmed and say so. A stay is hidden if it has no Vrbo or Airbnb source address. It is shown but `noindex` (kept out of search and the sitemap) when it is too thin: fewer than five of six content sections filled, a description under 250 characters, or text too similar to another stay. 78 are shown, 23 indexable, 55 shown but `noindex`, 5 hidden. The "public-sources" mode lists stays using a plain public link that earns nothing.
+- Screenshot pending (buyer-09-stay-editor).
+
+### Task D. Update a Gear product
+
+- **What you're changing:** a product on the Gear pages and in articles. The Gear shop is the **Products (travel essentials)** form. No code change is needed.
+- **Where to click:** Pages CMS, **Products (travel essentials)**, then the product.
+- **Steps:** edit "What it is, in plain words" and "What the maker states (one fact per line, taken from the source below)". Update "Where the facts came from" and "Date you last re-read the source page". To hide a product, untick **"Show this product?"**. Never change a product's Short name, because guides and affiliate links use it.
+- **How to check:** open the product's Gear category page after the build. A category needs at least three active products to appear.
+- **Warning:** no prices, ratings or "tested" claims. The form says so, and so do the disclosure pages.
+- Screenshot pending (buyer-04-gear-product-editor).
+
+### Task E. Update the packing planner
+
+- **What you're changing:** the list the planner builds.
+- **Where to click:** Pages CMS, **Packing planner (dog packing list)**, then Items. It is a large form and loads slowly (about 40 seconds in the seller's account).
+- **Steps:** for an existing item, change "Item name", "What is this for?", "Why bring this?", "Category" or **"When should this appear?"** and the rule. To attach an existing Gear product, add it under **"Related Gear products"** and type the Product id exactly as it appears in Products (its "Short name"). Each product needs "The one thing to check before buying". To remove an outdated recommendation, delete that product row, or untick "Show this item?" to hide a whole item.
+- **How to check:** open `/tools/packing-list`, choose a matching trip and look for the item.
+- **Warning:** the Gear catalog and the planner share product records. Add a product once in Products; never create a duplicate. An unknown or hidden product id stops the build. Never change an id once an item uses it. Details: [docs/PACKING_PLANNER_PRODUCT_GUIDE.md](./docs/PACKING_PLANNER_PRODUCT_GUIDE.md).
+- Screenshot pending (buyer-03-packing-item-editor).
+
+### Task F. Update an affiliate link
+
+- **What you're changing:** where a Buy or Book button goes.
+- **Where to click:** Pages CMS, **Affiliate links**.
+- **Steps:** find the entry by its Short name. Paste your own link exactly as the program gave it into **"Your affiliate link (starts with https://)"**. Tick **"Approved? (tick only after the company approved you)"** only after the company's own dashboard shows you approved. Never rename an entry: stays and articles refer to it by name.
+- **To remove a link:** untick "Approved?". The button then falls back to the maker's page, or disappears. Never delete the entry: stays and articles refer to it by name, and the build stops.
+- **How to check:** click the button on the live page and read the address in the browser.
+- **Warning:** "Approved" inside this site is only a switch. It is not proof that any program approved you.
+
+### Task G. Change business information
+
+- **Where to click:** Pages CMS, **Business settings**. These fields exist: "Business email address (shown on the Contact page)", "Website address", "Google Analytics ID", "Amazon Associates tracking ID", "Pinterest profile address", "Stay22 account ID", "Impact (impact.com) site-verification value" and "Which stays are listed".
+- **Steps:** change the value and save. An empty value shows an honest "coming soon" message or hides the item.
+- **Needs file edits beyond the CMS:** a new domain also needs the `Sitemap:` line in `public/robots.txt` and the address in `scripts/site-health.mjs`; the footer and legal-page owner names are code files (`src/routes/*.tsx`).
+- Screenshot pending (buyer-05-business-settings).
+
+> **Label trap.** The "Which stays are listed" drop-down text still says to leave it on "Only stays with an approved affiliate link (current behaviour)". The shipped value is the second choice, "Also stays with a plain public Vrbo or Airbnb source link (no commission)". The form label is out of date. OWNER ACTION REQUIRED: do not switch this setting because of that label. Read section 5 first.
+
+## 5. Affiliate accounts and monetization
+
+**In plain English:** the site earns only when a visitor clicks a link created by _your_ approved affiliate account and then buys or books. The seller's accounts stay with the seller. Until you replace the seller's identifiers, any commission would go to the seller, not to you. That is not what you paid for and may break program rules, so replace them early.
+
+**Transition checklist.** Full detail is in [docs/BUYER_AFFILIATE_TRANSITION.md](./docs/BUYER_AFFILIATE_TRANSITION.md). That file also covers the 79 Vrbo records, so this guide does not repeat them.
+
+- [ ] Apply to Amazon Associates and to Vrbo or Expedia on Impact. Create your own Google Analytics property.
+- [ ] Wait for approval. Approval is the program's decision and may be refused.
+- [ ] Replace the Amazon tracking ID in Business settings. One value retags every Amazon link.
+- [ ] Replace the Vrbo links with your own, or disable the seller's (the transition file explains the safe script).
+- [ ] Replace or empty the Impact verification value, the Google Analytics ID and the Pinterest address.
+- [ ] Run the audit (below) until it reports nothing left.
+- [ ] Re-read the affiliate disclosure page and make sure it is still accurate for your programs.
+- [ ] Click a sample of links and check they carry your identifiers.
+
+**Check with one command:** `node scripts/audit-seller-ids.mjs --expect-none`. It stops with an error while any seller identifier remains. It needs Node 22 and a copy of the repository (Advanced section). On 2026-11-25 it reported five seller items remaining.
+
+**Public-sources mode.** The shipped setting lists every stay that has a public Vrbo or Airbnb source address (78 stays, 23 indexable), with a plain "View the listing" link, no commission wording, no affiliate label and no claim of a partnership. Owner approved this on 2026-11-25. The reason: the old rule listed a stay only while it had an approved affiliate link, so removing the seller's links would have emptied the directory and made those pages disappear. Plain source links **earn nothing**. When your own Vrbo links are approved, add them in **Affiliate links** using the same entry names, and those stays show a labelled earning button again. Do not change the mode setting just to chase income.
+
+**Warnings.**
+
+- The seller's affiliate accounts do not transfer.
+- A configured link is not buyer approval.
+- Clicks are not earnings.
+- Maker links on Gear products are plain links, not commission opportunities.
+- No revenue is guaranteed. Amazon in particular expects qualifying sales within a set window.
+- Your affiliate disclosure must stay accurate. Amazon requires its exact sentence next to Amazon links; the site adds it automatically.
+
+## 6. How publishing works
+
+**Edit, Save, Build, Live site.** You save in Pages CMS. Pages CMS writes a commit (a saved version) to GitHub. Netlify sees the commit, builds the site and publishes it, usually in a few minutes.
+
+**A successful save is not a successful deploy.** Check Netlify, **Deploys**. A failed build shows a message naming the file and field, and visitors keep seeing the previous version. On Netlify's free plan you are not emailed about failures (an older finding from 2026-11-17), so look at Deploys after you save.
+
+**Build settings are yours to confirm.**
+
+- In the seller's account on 2026-11-25, builds had been stopped to save credits, then reactivated for one deploy, and **auto-publishing was locked**, so a finished deploy had to be published by hand (VERIFIED IN ACCOUNT, seller's project).
+- A project you create or receive may behave differently. Check its continuous-deployment settings yourself. The wording of buttons such as "Publish deploy" and "Trigger deploy" comes from the repository's own instructions ([docs/ROLLBACK.md](./docs/ROLLBACK.md)) and is UNVERIFIED in your account.
+- Each production deploy used about 15 credits (VERIFIED IN ACCOUNT 2026-11-25; Netlify's pricing page agrees). The free plan allows 300 credits a month. Batch your edits.
+
+**Which changes trigger a build.** The rule in `netlify.toml` skips a build only when a push changes nothing but `docs/`, `.github/` or Markdown files in the repository root. Guide Markdown and content YAML always build. Developers can test the rule with `node scripts/test-netlify-ignore.mjs` (VERIFIED IN CODE, all rows pass).
+
+**What is verified and what is not.**
+
+- **CMS forms load: VERIFIED IN ACCOUNT 2026-11-25** (Cowork C0, read-only, nothing saved).
+- **The full authenticated loop of edit, save, build and live page: UNVERIFIED.** No one has saved a real change through Pages CMS. Test it with one harmless edit, such as a review date, and watch the Deploys page.
+- Which branch Pages CMS saves to is expected to be `main` and should be confirmed by that first edit.
+
+**Verified fallback: edit on GitHub.** Open the file in the repository (for example `content/settings.yml`), use the pencil (edit) icon, change the text and commit to `main`. Netlify then builds. A GitHub edit published itself in about a minute on the seller's test site on 2026-11-17 ([docs/LIVE-TEST-RESULTS.md](./docs/LIVE-TEST-RESULTS.md)), and the same direct-edit path was rebuilt locally on 2026-11-24.
+
+Screenshot pending (buyer-06-netlify-deploys).
+
+**Check a change is live:** wait for the Netlify deploy to show Published, then reload the page with your edit (hold Shift while reloading to skip a stored copy). If it is not there, go to section 8.
+
+## 7. Monthly maintenance
+
+No daily routine is needed.
+
+**After every update:** check Netlify Deploys shows Published, then open the changed page.
+
+**Monthly (about 20 minutes):**
+
+- [ ] Open the home page, one guide, the Gear page and the packing planner on your phone.
+- [ ] Check Netlify credits remaining.
+- [ ] Check Google Analytics records visits and Search Console shows no new errors.
+- [ ] Click three affiliate buttons and confirm they carry your tag.
+
+**Periodically:**
+
+- **Data refresh.** The pet-policy dataset is a dated snapshot from 2026-11-18. Re-read every manager page at least every six months, following [docs/DATA-RECHECK-LOG.md](./docs/DATA-RECHECK-LOG.md). The data file is code, so this needs a developer.
+- **Domain renewal.** Expires **2027-11-17**. Auto-renew is OFF until you turn it on. Do this on day one.
+- **Certificate.** The current certificate expires **2027-02-14** and renews itself. Netlify's "renewal incomplete" flag for the apex domain (2026-11-25) should clear after your DNS is correct. Check it in January 2027.
+- **Netlify credits** if the site grows.
+
+## 8. If something goes wrong
+
+| Problem                       | What to check                                                                                                                                               | What to do                                                                                                                                              |
+| ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Edit not showing              | Netlify Deploys: did a deploy start, and is it Published? Is the item a code-managed guide? For a new article, are all four publishing items in Task B set? | Wait five minutes. If the deploy says Failed, open the log. If it needs publishing by hand, publish it. For a code-managed guide, you need a developer. |
+| Failed build                  | The log names a file and a field.                                                                                                                           | Fix that field (usually a missing or wrong value) and save. The live site is untouched meanwhile.                                                       |
+| Product button disappeared    | Is the product ticked "Show this product?" Does it have an approved affiliate entry, a maker address or a retailer address?                                 | The button order is approved affiliate link, then maker page, then retailer page, then none. Restore one of them.                                       |
+| Stay disappeared              | Does its "Where the facts came from (listing link)" point to Vrbo or Airbnb? Did someone change the directory mode?                                         | Restore the source link. In the old "affiliate-only" mode a stay needs an approved link.                                                                |
+| Packing updates not appearing | Did the build fail? Is the item active and its rule matching the trip you test?                                                                             | Check Deploys, then test with the right trip type and conditions.                                                                                       |
+| Domain not working            | Namecheap Advanced DNS and Netlify domain settings.                                                                                                         | Compare with your "before" screenshot. Fix only website records. Allow up to a day for DNS to spread.                                                   |
+| Email stopped after transfer  | Are the mail records (MX and TXT) still present?                                                                                                            | Restore any missing ones from your screenshot. Do not change nameservers. [docs/EMAIL-AND-TRANSFER.md](./docs/EMAIL-AND-TRANSFER.md)                    |
+| Analytics not recording       | Is the Google Analytics ID in Business settings yours and correct?                                                                                          | Fix the value and wait for the build. Check Realtime in Google Analytics.                                                                               |
+| Restore an older version      | GitHub history, or Netlify Deploys.                                                                                                                         | GitHub: open the bad commit and revert it. Netlify: publish an earlier good deploy. Steps: [docs/ROLLBACK.md](./docs/ROLLBACK.md).                      |
+
+## 9. What needs a developer
+
+This is a **custom React application, not WordPress**. There is no plugin store or visual page builder.
+
+| Task                                     | Pages CMS? | Developer needed?                                |
+| ---------------------------------------- | ---------- | ------------------------------------------------ |
+| Edit a supported Markdown article        | Yes        | No                                               |
+| Gear product details                     | Yes        | No                                               |
+| Packing items and their products         | Yes        | No                                               |
+| Affiliate IDs and links                  | Yes        | No                                               |
+| Contact info and other business settings | Yes        | No, unless the domain changes (a few file edits) |
+| The 7 legacy code-managed guides         | No         | Yes, or direct GitHub edits if you are confident |
+| Redesign, new page type or new tool      | No         | Yes                                              |
+| Publishing logic and rules               | No         | Yes                                              |
+| Dependency or build failures             | No         | Yes                                              |
+| Legal pages, towns, Gear category text   | No         | Yes                                              |
+
+## 10. Transfer completion
+
+You are done when the sign-off block in [docs/TRANSFER_CHECKLIST.md](./docs/TRANSFER_CHECKLIST.md) is complete: you control the domain, repository and hosting; the site loads; the seller's identifiers are replaced; documents are signed; and the seller's access is removed. An invitation sent is not a completed transfer.
+
+**You fully own the site when you can, without the seller:** renew or manage the domain in your Namecheap account; open and change the repository on GitHub; publish from your own Netlify project; save in Pages CMS; read mail at your business address; and see only your own identifiers in the audit.
+
+## 11. Important things to know
+
+- **Rights documents.** The assignment of copyright must be signed. Until it is, the text and code are not yours by transfer alone.
+- **Photos.** Unsplash licenses are nonexclusive. Keep the credits. The pins and share images use those photos, so their rights follow the same licenses.
+- **The dataset** was compiled from public manager pages. It is not a guarantee of any current policy, and the managers' own terms were not reviewed.
+- **Pre-revenue.** No traffic, rankings or earnings are promised. Domain registered November 16, 2026.
+- **Legal pages** (privacy, terms, affiliate disclosure) were not reviewed by a professional. No legal or compliance certification exists. Consider your own review.
+- **Stays** are not confirmed with hosts. The site says so; keep saying so.
+- **Provider rules change.** Affiliate programs, Netlify plans and Namecheap prices change. Recheck before relying on this guide.
+
+## 12. Costs and accounts
+
+Prices below are public list prices read on **2026-11-25** unless noted. They are not the seller's bills. Check current pricing before transferring.
+
+| Service                                          | Needed?                  | Expected cost                                                                                                                  | Important note                                                                                                                                                           |
+| ------------------------------------------------ | ------------------------ | ------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Namecheap domain renewal                         | Yes                      | $19.98 a year plus the ICANN fee (Namecheap notice, effective 2026-11-01; read 2026-11-25)                                     | Auto-renew is OFF now. First-term price is not your renewal price.                                                                                                       |
+| Business email (Namecheap Private Email, Launch) | Optional                 | Listed $14.88 a year (read 2026-11-25)                                                                                         | The page does not say whether this is a renewal price. Not moved with the domain.                                                                                        |
+| Netlify                                          | Yes                      | Free $0 with 300 credits a month; Personal $9 a month with 1,000 credits; Pro $20 a month with 3,000 credits (read 2026-11-25) | A production deploy uses 15 credits. The seller's account showed 1,000 credits (VERIFIED IN ACCOUNT); your plan may differ.                                              |
+| GitHub                                           | Yes                      | Free plan $0 (read 2026-11-25)                                                                                                 | Keep the repository public or budget for paid features.                                                                                                                  |
+| Pages CMS                                        | Optional but recommended | Its site says it is free (read 2026-11-25)                                                                                     | Small open-source project with no stated guarantee. Your content stays in GitHub.                                                                                        |
+| Analytics (Google)                               | Recommended              | $0                                                                                                                             | Create your own property.                                                                                                                                                |
+| Lovable                                          | Not needed               | $0                                                                                                                             | Only if a clean independent build is demonstrated. It was: [docs/buyer/HOSTING_OPTIONS.md](./docs/buyer/HOSTING_OPTIONS.md). Do not run Lovable prompts on this project. |
+| Optional developer tools                         | Optional                 | Varies                                                                                                                         | Check current pricing before transferring.                                                                                                                               |
+
+A typical year is a domain plus optional email, but you must confirm each price when you buy. Nothing here promises $0 a month.
+
+## Advanced / developer
+
+Only needed for technical changes. Everything above works without these commands.
+
+- **Get the code.** Clone the repository from GitHub (a clone is a full local copy).
+- **Install and test.** Use Node 22. `npm ci` installs; `npx vitest run` runs the tests (783 pass in 61 files at the counted commit).
+- **Build.** `npm run build` is what Netlify runs. `NITRO_PRESET=node-server npx vite build` makes a plain Node server in `.output`.
+- **Check a live site.** `node scripts/verify-site.mjs https://www.pawsandpassage.com` (319 checks pass on a local build).
+- **Scripts.** `node scripts/audit-seller-ids.mjs` (seller identifiers), `node scripts/neutralize-seller-vrbo-links.mjs` (switch off seller Vrbo links; dry run first), `node scripts/test-netlify-ignore.mjs` (build-skip rule).
+- **Advanced reference: only needed for technical changes.** [HANDOVER.md](./HANDOVER.md) (developer notes), [docs/OPERATIONS-HANDBOOK.md](./docs/OPERATIONS-HANDBOOK.md), [docs/buyer/ROUTE_AND_ASSET_COUNTS.md](./docs/buyer/ROUTE_AND_ASSET_COUNTS.md) (every count and how it was made), [docs/BUYER_ASSET_INVENTORY.md](./docs/BUYER_ASSET_INVENTORY.md).

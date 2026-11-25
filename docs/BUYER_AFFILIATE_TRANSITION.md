@@ -19,15 +19,15 @@ Found by `node scripts/audit-seller-ids.mjs` (section 8). Where a value lives, a
 | Seller-owned item | Where it lives | Buyer changes it in | Notes |
 |---|---|---|---|
 | Amazon Associates tracking ID | `content/settings.yml` `amazonTrackingId` (one place) | Pages CMS, Business settings, "Amazon Associates tracking ID" | All 81 Amazon links in `content/affiliates.yml` use `tag={amazonTrackingId}`; changing the one setting retags every link. Leave empty = Amazon buttons disappear (section 5). |
-| Vrbo / Impact deeplinks | `content/affiliates.yml`, 79 entries `network: Vrbo` (78 per-listing `vrbo-<listing id>` plus the generic `vrbo`) | Pages CMS, Affiliate links | Each is a deeplink generated in the seller's Impact account. The buyer generates their own for each listing (`docs/cowork/06-vrbo-deeplinks.md`, `docs/stay-deeplink-worksheet.csv`). |
-| Google Analytics 4 measurement ID | `content/settings.yml` `ga4MeasurementId` | Pages CMS, Business settings | Empty = no analytics script is sent. Also create the buyer's own GA4 property and key events (`docs/ANALYTICS-SETUP.md`). |
+| Vrbo / Impact deeplinks | `content/affiliates.yml`, 79 entries `network: Vrbo` (78 per-listing `vrbo-<listing id>` plus the generic `vrbo`) | Pages CMS, Affiliate links | Each is a deeplink generated in the seller's Impact account. The buyer generates their own for each listing ([docs/cowork/06-vrbo-deeplinks.md](cowork/06-vrbo-deeplinks.md), `docs/stay-deeplink-worksheet.csv`). |
+| Google Analytics 4 measurement ID | `content/settings.yml` `ga4MeasurementId` | Pages CMS, Business settings | Empty = no analytics script is sent. Also create the buyer's own GA4 property and key events ([docs/ANALYTICS-SETUP.md](ANALYTICS-SETUP.md)). |
 | Impact site-verification tag | `content/settings.yml` `impactSiteVerification` (was hard-coded in `src/routes/__root.tsx` until this change) | Pages CMS, Business settings | Impact issues one per account. Empty = no tag is sent. |
 | Pinterest profile link | `content/settings.yml` `pinterestUrl` | Pages CMS, Business settings | Empty hides the footer icon. Pin sheets in `docs/` are the seller's account material. |
 | Stay22 account ID | `content/settings.yml` `stay22AccountId` (empty today) | Pages CMS, Business settings | Empty = no Stay22 map. |
-| Google Search Console | Domain property in the seller's Google account | Buyer verifies the domain in their own account, submits the sitemap | There is no verification file or meta tag in the repo (`docs/cowork/02-search-console.md`). |
+| Google Search Console | Domain property in the seller's Google account | Buyer verifies the domain in their own account, submits the sitemap | There is no verification file or meta tag in the repo ([docs/cowork/02-search-console.md](cowork/02-search-console.md)). |
 | Bing Webmaster / IndexNow key | `public/<32-hex>.txt`, used by `scripts/indexnow.mjs` | Buyer may keep it (it is public by design and tied to the domain) or replace the file and its content | Informational. |
 | Business email, website address | `content/settings.yml` `contactEmail`, `siteUrl`; `public/robots.txt` `Sitemap:` line; `scripts/site-health.mjs` | Pages CMS (email, address); `robots.txt` and `site-health.mjs` need a file edit if the domain changes | Fine to keep if the domain and mailbox transfer with the sale. |
-| Netlify, GitHub, domain registrar, Pages CMS login | Accounts | Buyer's own (`docs/TRANSFER_CHECKLIST.md`, `docs/DNS-AND-TRANSFER.md`) | Not affiliate items, listed so nothing is forgotten. |
+| Netlify, GitHub, domain registrar, Pages CMS login | Accounts | Buyer's own ([docs/TRANSFER_CHECKLIST.md](TRANSFER_CHECKLIST.md), [docs/DNS-AND-TRANSFER.md](DNS-AND-TRANSFER.md)) | Not affiliate items, listed so nothing is forgotten. |
 
 There is **no** database, Supabase project key, payment key or server secret in the code (checked 2026-11-24, section 10).
 
@@ -52,11 +52,11 @@ Do these in this order. Do not skip ahead to deleting things (section 5 explains
 5. **Impact verification and Pinterest.** Replace with the buyer's values, or empty them.
 6. **Vrbo, when the buyer is approved:** for each stay, generate the buyer's deeplink and replace the `url` of the matching entry
    (same `id`, for example `vrbo-1056490`) in Pages CMS "Affiliate links", then tick Approved. Do not rename ids: stay files and one article
-   refer to them by name. `docs/cowork/06-vrbo-deeplinks.md` is the click-by-click for the Vrbo hub and `docs/cowork/12-vrbo-click-test.md` tests them.
+   refer to them by name. [docs/cowork/06-vrbo-deeplinks.md](cowork/06-vrbo-deeplinks.md) is the click-by-click for the Vrbo hub and [docs/cowork/12-vrbo-click-test.md](cowork/12-vrbo-click-test.md) tests them.
 7. **Vrbo, if the buyer is NOT yet approved** and the seller's links must go now: run
    `node scripts/neutralize-seller-vrbo-links.mjs` (dry run, prints what it would change), then `node scripts/neutralize-seller-vrbo-links.mjs --write`.
    It switches the 79 seller deeplinks off (address set to `https://www.vrbo.com/`, Approved off) and keeps the entries, so the build still passes.
-   Then read section 6 about what the stay directory does next.
+   With the shipped `public-sources` mode the stay directory stays listed with plain links (section 6); in `affiliate-only` mode it empties.
 8. **Run the audit** (section 8): `node scripts/audit-seller-ids.mjs --expect-none` must exit 0.
 9. **Verify outbound links** (section 7).
 10. Update the disclosure wording if the buyer's programme mix differs (section 9).
@@ -82,14 +82,13 @@ Tested 2026-11-24 on a throwaway copy (full build plus `scripts/verify-site.mjs`
 | Empty `ga4MeasurementId` | No analytics script. Pages unaffected. |
 | Empty `impactSiteVerification` | The tag is not sent. Impact cannot confirm ownership for the buyer until the buyer's own value is in. |
 
-**Stay directory when the Vrbo links are removed (default mode).** The directory is tied to approved affiliate links on purpose (owner decision
-2026-11-18, `STAYS_REQUIRE_AFFILIATE_LINK` in `src/content/publish-rule.ts`): a stay is listed only while it has an approved link. Today: 83 stay records, **78 listed, 23 indexable**.
-With every seller link off: **0 listed, 0 indexable**. The stay pages return 404, `/stays` and the stay pages leave the sitemap (the test build went from 103 sitemap URLs to 73), and
+**Stay directory when the Vrbo links are removed (`affiliate-only` mode, no longer the shipped mode).** The directory is tied to approved affiliate links on purpose (owner decision
+2026-11-18, `STAYS_REQUIRE_AFFILIATE_LINK` in `src/content/publish-rule.ts`): a stay is listed only while it has an approved link. In `affiliate-only` mode, with 83 stay records, **78 listed, 23 indexable** while the seller links exist. With every seller link off in that mode: **0 listed, 0 indexable**. (The shipped `public-sources` mode keeps 78 and 23.) The stay pages return 404, `/stays` and the stay pages leave the sitemap (the test build went from 103 sitemap URLs to 73), and
 any search ranking those pages earned is lost until links come back. The five stays without a Vrbo source stay unlisted either way. This happened in the test above.
 
 ## 6. The explicit non-affiliate fallback: `stayDirectoryMode`
 
-A single documented setting, **off by default**, so that the buyer is not forced to choose between "keep the seller's links" and "empty directory".
+A single documented setting, so that the buyer is not forced to choose between "keep the seller's links" and "empty directory". **The owner approved `public-sources` for the sale on 2026-11-25 and `content/settings.yml` ships with it.** `affiliate-only` is the schema default if the setting is missing.
 
 - Setting: `stayDirectoryMode` in `content/settings.yml` (Pages CMS, Business settings, "Which stays are listed").
 - `affiliate-only` (the schema default; it was the shipped behaviour until 2026-11-25): list a stay only while it has an approved affiliate link.
@@ -99,13 +98,12 @@ A single documented setting, **off by default**, so that the buyer is not forced
   - nothing says the stay is verified, approved, or partnered. A stay that has the buyer's own approved link still shows the affiliate button as usual.
 - Not changed by this mode: no stay is claimed host-verified, no editorial text changes, and no new link type is created.
 
-**This is an owner decision, not a default.** It changes the site's monetisation policy (a directory of stays that earn nothing) and the SEO footprint (pages stay
-indexed), so it is shipped switched off. Owner to decide before sale whether to leave it for the buyer to switch on. Tests: `src/test/stay-directory-mode.test.ts`.
+**This was an owner decision (made 2026-11-25).** It changes the site's monetisation policy (a directory of stays that earn nothing) and keeps the stay pages indexed. A buyer may switch back to `affiliate-only` once their own approved links exist. Note: the Pages CMS drop-down text for this setting still calls the first option "current behaviour"; the shipped value is the second option. Tests: `src/test/stay-directory-mode.test.ts`.
 
 ## 7. Verifying outbound links
 
 After each build, from a clone: `npm ci`, `npm run build:node`, `PORT=4400 node .output/server/index.mjs`, then `node scripts/verify-site.mjs http://127.0.0.1:4400 --site-url https://yourdomain.com`.
-Then by hand on the live site (also in `docs/cowork/07-amazon-links.md` and `12-vrbo-click-test.md`):
+Then by hand on the live site (also in [docs/cowork/07-amazon-links.md](cowork/07-amazon-links.md) and `12-vrbo-click-test.md`):
 
 1. Open three product buttons: the address must contain `tag=<buyer's ID>`. View-source search for the seller's old tag: it must find nothing.
 2. Open a stay page: with the buyer's own deeplink the button label is "Affiliate link" and the address is the buyer's deeplink; in fallback mode it is the plain Vrbo/Airbnb listing and has no affiliate label.
@@ -135,7 +133,7 @@ Typical buyer run: change the settings, run `node scripts/neutralize-seller-vrbo
 - `/affiliate-disclosure` (TypeScript page, `src/routes/affiliate-disclosure.tsx`) says Amazon's required statement appears wherever a link goes to Amazon and that stays and products
   with no affiliate link are treated the same. Both stay true after the transition, but if the buyer is **not** an Amazon Associate the disclosure should not keep implying the programme. Edit that file (a developer or the buyer's AI assistant).
 - Amazon's Operating Agreement allows only Amazon's own statement; `AMAZON_DISCLOSURE` in `src/content/affiliates.ts` is shown only when an approved Amazon link is on the page.
-- Copy such as `BUYER_HANDOVER.md` and the docs under `docs/` quote the seller's IDs as history; they are informational.
+- Copy such as [BUYER_HANDOVER.md](../BUYER_HANDOVER.md) and the docs under `docs/` quote the seller's IDs as history; they are informational.
 
 ## 10. Tracking and secrets found in the 2026-11-24 sweep
 

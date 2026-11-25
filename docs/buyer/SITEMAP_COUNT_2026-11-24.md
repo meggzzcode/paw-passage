@@ -1,6 +1,6 @@
 # Sitemap count, 2026-11-24
 
-> Superseded (2026-11-24): this is the 95-URL count; the 8 town "things to do" articles bring the sitemap to 103 (`docs/buyer/ROUTE_AND_ASSET_COUNTS.md`). <!-- SUPERSEDED-NOTE -->
+> Superseded (2026-11-24): this is the 95-URL count; the 8 town "things to do" articles bring the sitemap to 103 ([docs/buyer/ROUTE_AND_ASSET_COUNTS.md](ROUTE_AND_ASSET_COUNTS.md)). <!-- SUPERSEDED-NOTE -->
 
 
 Counted from a production build (`NITRO_PRESET=node-server bunx vite build`), served on port 4196, by fetching `/sitemap.xml` and parsing every `<loc>`.

@@ -1,6 +1,6 @@
 # Paws & Passage: owner's handbook
 
-*Corrected 2026-11-23 against `docs/BUYER_ASSET_INVENTORY.md`; the Hostinger section is an older test.*
+*Corrected 2026-11-25 (stay counts and directory mode) and 2026-11-23 against [docs/BUYER_ASSET_INVENTORY.md](docs/BUYER_ASSET_INVENTORY.md); the Hostinger section is an older test.*
 
 Everything on this site lives in plain files. There is no database, no admin login, and no paid service required. Edit a file, commit it, and publish.
 
@@ -16,15 +16,15 @@ Everything on this site lives in plain files. There is no database, no admin log
 | Destinations (states and towns) | `src/content/destinations.ts` |
 | Guides (32 files: 25 Markdown, 7 legacy code; 29 published, 3 drafts) | `content/guides/<slug>.md`; legacy `src/content/guides/<slug>.ts` |
 | Checklist tool items | `src/content/checklist.ts` |
-| Packing planner items, rules and trip types (37 items) | `content/packing.yml` (`docs/PACKING_PLANNER_PRODUCT_GUIDE.md`) |
+| Packing planner items, rules and trip types (37 items) | `content/packing.yml` ([docs/PACKING_PLANNER_PRODUCT_GUIDE.md](docs/PACKING_PLANNER_PRODUCT_GUIDE.md)) |
 | Images | `src/assets/` + `src/lib/images.ts` |
 | Policy pages | `src/routes/privacy.tsx`, `terms.tsx`, `affiliate-disclosure.tsx`, `editorial-standards.tsx` |
 
 ## 1. Add a new stay
 1. Confirm with the host: dog count, weight and breed limits, pet fee and its basis, fencing, unattended rules, and **permission to use photos**.
 2. Either add a file in `content/stays/` (Pages CMS "stays" collection; copy an existing `.yml`), or fill in `data/stays-template.csv`, save it as `data/stays.csv`, and run `bun scripts/import-stays.ts data/stays.csv`.
-3. Set `status: verified` and `lastVerified: YYYY-MM-DD` only after the host confirmed the details (all 37 current stays are `unverified`). Anything not confirmed stays `null` and shows as "Not confirmed". Filters never treat that as a yes.
-4. A stay is listed on the live site only if it has an approved affiliate link (`STAYS_REQUIRE_AFFILIATE_LINK`), verified or not; unverified stays show a "Not yet verified" label. 32 are listed now and 5 are hidden until a link is added. `sample` stays show only in the private preview.
+3. Set `status: verified` and `lastVerified: YYYY-MM-DD` only after the host confirmed the details (all 83 current stay files are `unverified`). Anything not confirmed stays `null` and shows as "Not confirmed". Filters never treat that as a yes.
+4. With the shipped `stayDirectoryMode: public-sources` (owner-approved 2026-11-25), a stay is listed when it has a public Vrbo or Airbnb source address or an approved affiliate link; unverified stays show a "Not yet verified" label. 78 are listed, 23 are indexable and 5 are hidden (no Vrbo or Airbnb source address). In the older `affiliate-only` mode a stay is listed only while it has an approved affiliate link (`STAYS_REQUIRE_AFFILIATE_LINK`). Counted 2026-11-25 at `3e5923b`. `sample` stays show only in the private preview.
 
 ## 2. Update a stay's pet policy
 Edit the fields in the stay's `.yml` file in `content/stays/` (`maxDogs`, `petFee`, `fencedYard`, `breedRestrictions`, and so on) and update `lastVerified`.
@@ -48,17 +48,19 @@ Put the file in `src/assets/`, register it in `src/lib/images.ts` with alt text,
 Set `ga4MeasurementId` in `content/settings.yml`. Outbound booking clicks are sent as a `booking_click` event. Nothing is sent while it's empty.
 
 ## 8. Connect an email service
-There is no newsletter signup on the site (removed by the owner's decision). Research for adding one later is in `docs/LEAD-CAPTURE.md`.
+There is no newsletter signup on the site (removed by the owner's decision). Research for adding one later is in [docs/LEAD-CAPTURE.md](docs/LEAD-CAPTURE.md).
 
 ## 9. Sitemap and domain
 `siteUrl` is set in `content/settings.yml` (change it if the domain changes). `/sitemap.xml` lists every published page (103 URLs counted on 2026-11-24 at `9797221`; 98 was the 2026-11-23 count), and `public/robots.txt` already has the Sitemap line (update it for a new domain).
 
 ## 10. Export and deploy elsewhere
-- Connect GitHub in Lovable (Project settings → Git). The repository is a standard TanStack Start + Vite app.
+- Lovable is not needed. The seller disconnects Lovable's GitHub sync at handover. The repository is a standard TanStack Start + Vite app ([docs/buyer/HOSTING_OPTIONS.md](docs/buyer/HOSTING_OPTIONS.md)).
 - Locally: `bun install`, `bun run dev`, `bun run build`, `bunx vitest run`.
 - Production is Netlify (`netlify.toml`); `bun run build` is the default build and `build:node` makes the Node build. Any host that runs TanStack Start works.
 
 ## Deploying on Hostinger (Node.js web app)
+
+*Historical: a 2026-11-16 test. Production is Netlify; Hostinger is not used.*
 
 Tested 2026-11-16: the app builds as a plain Node server and renders pages on the server.
 
@@ -77,6 +79,6 @@ Hand over: the GitHub repo, the domain registrar, the GA4 property (add the buye
 
 ## Still needed before launch
 - Already configured (seller's accounts): business email, domain, GA4 ID, Vrbo and Amazon approvals. The buyer must replace these with their own.
-- Real verified stays (none of the 37 is verified).
+- Real verified stays (none of the 83 stay files is verified).
 - Legal pages: the owner decided (2026-11-17) not to get a legal review. They are unreviewed drafts.
 - Each guide's `research.followUps` lists optional editor follow-ups, such as competitor pages that could only be read as search excerpts.

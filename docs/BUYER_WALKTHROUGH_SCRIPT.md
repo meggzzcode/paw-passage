@@ -1,14 +1,14 @@
 # Buyer walkthrough script (5 to 7 minutes)
 
-Written 2026-11-24; the numbers below were counted at commit `9797221`. For the current release target commit, see docs/SALE_RELEASE_STATUS.md. This is the single walkthrough document; it supersedes `docs/buyer/BUYER_WALKTHROUGH.md`, which now only points here.
+Written 2026-11-24; the numbers below were counted at commit `9797221`. For the current release target commit, see docs/SALE_RELEASE_STATUS.md. This is the single walkthrough document; it supersedes [docs/buyer/BUYER_WALKTHROUGH.md](buyer/BUYER_WALKTHROUGH.md), which now only points here.
 
 ## 0. Status, stated plainly
 
 - **No video exists.** The tools used to prepare this package cannot record a screen. This file is a script, a screenshot list and recording steps for the owner or Cowork.
-- **Do not record yet.** Nothing is deployed: https://www.pawsandpassage.com serves a build from about 2026-11-23 that lacks the packing planner rebuild, the Gear redesign, the 8 town articles and the final guides. Record only after the owner has deployed and stage C1 (live release verification) of `docs/cowork/FINAL_PRE_SALE_BROWSER_QA.md` has passed. Until then, a rehearsal can run against a local build (`bun install`, `NITRO_PRESET=node-server bunx vite build`, `PORT=4581 node .output/server/index.mjs`, base URL `http://localhost:4581`); label any rehearsal recording "local build, not for the buyer".
+- **Do not record yet.** Nothing is deployed: https://www.pawsandpassage.com serves a build from about 2026-11-23 that lacks the packing planner rebuild, the Gear redesign, the 8 town articles and the final guides. Record only after the owner has deployed and stage C1 (live release verification) of [docs/cowork/FINAL_PRE_SALE_BROWSER_QA.md](cowork/FINAL_PRE_SALE_BROWSER_QA.md) has passed. Until then, a rehearsal can run against a local build (`bun install`, `NITRO_PRESET=node-server bunx vite build`, `PORT=4581 node .output/server/index.mjs`, base URL `http://localhost:4581`); label any rehearsal recording "local build, not for the buyer".
 - Ground rules for every line of narration: no traffic, revenue, ranking, affiliate-approval or buyer-interest claim. The true statement is: "a new, pre-revenue site; no earnings or traffic history". If a number on screen differs from the numbers below, say what is on screen and tell the owner to correct the listing.
 
-Numbers used (from `docs/buyer/ROUTE_AND_ASSET_COUNTS.md`): 29 guides, about 45,000 words, 420 sources, 38-manager dataset with 13 fields, 83 stay files (78 shown, 23 indexable, 0 host-confirmed), 3 tools, 11 Gear categories, 5 trip collections, 65 active products, 103 sitemap URLs.
+Numbers used (from [docs/buyer/ROUTE_AND_ASSET_COUNTS.md](buyer/ROUTE_AND_ASSET_COUNTS.md)): 29 guides, about 45,000 words, 420 sources, 38-manager dataset with 13 fields, 83 stay files (78 shown, 23 indexable, 0 host-confirmed), 3 tools, 11 Gear categories, 5 trip collections, 65 active products, 103 sitemap URLs.
 
 ## 1. Plan at a glance (6 minutes 30 seconds)
 
@@ -75,9 +75,9 @@ Screenshots: `wt06-stays-index.png`, `wt06-stay-detail.png` (include the label a
 ## 8. Segment 7: Buyer operations (1:00), repository and dashboards (screenshots only)
 
 Show, in this order (GitHub's file viewer is fine; no logins on screen):
-1. `docs/BUYER_OVERVIEW.md` (the one-page summary).
-2. `docs/BUYER_AFFILIATE_TRANSITION.md`: scroll the table "What the buyer replaces". Show the output of `node scripts/audit-seller-ids.mjs` (run it locally; it reports five seller identifiers remaining and exits 0 in report mode).
-3. `docs/TRANSFER_CHECKLIST.md` and `docs/buyer/HOSTING_OPTIONS.md` (costs: domain renewal about $19.98 a year; Netlify Free and GitHub $0 at list price).
+1. [docs/BUYER_OVERVIEW.md](BUYER_OVERVIEW.md) (the one-page summary).
+2. [docs/BUYER_AFFILIATE_TRANSITION.md](BUYER_AFFILIATE_TRANSITION.md): scroll the table "What the buyer replaces". Show the output of `node scripts/audit-seller-ids.mjs` (run it locally; it reports five seller identifiers remaining and exits 0 in report mode).
+3. [docs/TRANSFER_CHECKLIST.md](TRANSFER_CHECKLIST.md) and [docs/buyer/HOSTING_OPTIONS.md](buyer/HOSTING_OPTIONS.md) (costs: domain renewal about $19.98 a year; Netlify Free and GitHub $0 at list price).
 4. A diagram of the edit flow: Pages CMS or GitHub, then `main`, then Netlify.
 Say: "A buyer's first week is written down: open your own affiliate accounts, run the audit, replace the seller's IDs, choose the stay directory mode, deploy on your own Netlify account, verify in your own Search Console. The seller's affiliate accounts, analytics and Search Console are not part of the sale."
 Say, honestly: "Editing through Pages CMS has not been tested with a login yet; editing the files on GitHub works. Real-phone checks are still pending. The domain renewal is the only recurring cost I know of, and auto-renew is currently off."
@@ -86,7 +86,7 @@ Screenshots: `wt07-transition-doc.png`, `wt07-audit-output.png` (terminal, no pe
 
 ## 9. Screenshot list (all names)
 
-`wt01-home-desktop.png`, `wt01-home-phone.png`, `wt02-dataset-desktop.png`, `wt02-dataset-csv.png`, `wt03-guide-top.png`, `wt03-guide-sources.png`, `wt03-guide-phone.png`, `wt04-gear-hub.png`, `wt04-gear-trip-road.png`, `wt04-gear-card.png`, `wt05-planner-setup.png`, `wt05-planner-list.png`, `wt05-planner-needtobuy.png`, `wt05-planner-print.png`, `wt06-stays-index.png`, `wt06-stay-detail.png`, `wt07-transition-doc.png`, `wt07-audit-output.png`, `wt07-flow-diagram.png` (19 files). Desktop shots at 1280 px wide, phone shots at 390 px wide, browser zoom 100 percent. Store them in a private folder named by the owner; the repository records file names only. They are also the capture list for the marketplace listing (`docs/cowork/FINAL_PRE_SALE_BROWSER_QA.md`, section "Buyer-facing screenshots").
+`wt01-home-desktop.png`, `wt01-home-phone.png`, `wt02-dataset-desktop.png`, `wt02-dataset-csv.png`, `wt03-guide-top.png`, `wt03-guide-sources.png`, `wt03-guide-phone.png`, `wt04-gear-hub.png`, `wt04-gear-trip-road.png`, `wt04-gear-card.png`, `wt05-planner-setup.png`, `wt05-planner-list.png`, `wt05-planner-needtobuy.png`, `wt05-planner-print.png`, `wt06-stays-index.png`, `wt06-stay-detail.png`, `wt07-transition-doc.png`, `wt07-audit-output.png`, `wt07-flow-diagram.png` (19 files). Desktop shots at 1280 px wide, phone shots at 390 px wide, browser zoom 100 percent. Store them in a private folder named by the owner; the repository records file names only. They are also the capture list for the marketplace listing ([docs/cowork/FINAL_PRE_SALE_BROWSER_QA.md](cowork/FINAL_PRE_SALE_BROWSER_QA.md), section "Buyer-facing screenshots").
 
 ## 10. Recording instructions (screen recording steps)
 

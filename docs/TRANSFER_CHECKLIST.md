@@ -84,7 +84,7 @@ This file does not repeat the detailed procedures. Follow them in: `docs/DNS-AND
 ## 6. Content and images
 
 - **Who acts:** Seller assigns rights in writing; buyer swaps seller-specific text.
-- **Steps:** (a) Signed assignment of copyright in the original text, code and docs (no LICENSE file exists). (b) Keep `src/content/image-credits.ts` and `src/content/pack-photos.ts` intact: all guide/gear/destination photos are credited Unsplash photographers (46 credit entries); no third-party (Amazon) product images are used; the home hero (`hero-porch*.jpg`) is now a credited Unsplash photo too (unsplash gives usage rights, not ownership or exclusivity). (c) Buyer edits the About page byline paragraph (`src/routes/about.tsx`) and legal pages (see section 14 and the audit).
+- **Steps:** (a) Signed assignment of copyright in the original text, code and docs (no LICENSE file exists). (b) Keep `src/content/image-credits.ts` intact: all guide/gear/destination photos are credited Unsplash photographers (46 credit entries); no third-party (Amazon) product images are used; the home hero (`hero-porch*.jpg`) is now a credited Unsplash photo too (unsplash gives usage rights, not ownership or exclusivity). (c) Buyer edits the About page byline paragraph (`src/routes/about.tsx`) and legal pages (see section 14 and the audit).
 - **Do not claim** "unique photos" or product photography; the brief states maker photos are not licensed (`docs/PRODUCT-PHOTOS.md`).
 - **Evidence:** signed assignment; export of image credits; hero photo credit in `src/content/image-credits.ts`.
 - **Risk:** Medium (derived `public/pins` and `public/share` images were made from the site's photos, rights chain UNVERIFIED).

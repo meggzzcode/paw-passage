@@ -123,7 +123,7 @@ A trip setup (trip type, days, dogs, optional meals per day and conditions) prod
 
 | Asset | License / status |
 |---|---|
-| Hero and guide photos | Unsplash photos used under the Unsplash License, 64 credit entries in `src/content/image-credits.ts` plus `src/content/pack-photos.ts`. The home hero is a credited Unsplash photo (`hero-porch`, photographer Cody Scott Milewski). **The license gives usage rights, not ownership or exclusivity**: the buyer may keep using the photos, but does not own their copyright and others may use them too. Credits must stay |
+| Hero and guide photos | Unsplash photos used under the Unsplash License, 64 credit entries in `src/content/image-credits.ts`. The home hero is a credited Unsplash photo (`hero-porch`, photographer Cody Scott Milewski). **The license gives usage rights, not ownership or exclusivity**: the buyer may keep using the photos, but does not own their copyright and others may use them too. Credits must stay |
 | Product imagery | None from third parties; no Amazon images. Product cards use the site's own line-icon spec cards |
 | Photos of real rentals | None |
 | Pins and share images | 29 pins (1000x1500) and 30 share images (1200x630) generated from the site's own photos and text by `scripts/make-pin-sheet.py` and `scripts/make-share-images.py`; rights chain follows the Unsplash photos |

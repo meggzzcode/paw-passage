@@ -99,8 +99,8 @@ Not in the sitemap on purpose: `/dog-rules` (noindex, no verified place), the fi
 | Seller IDs (public identifiers, not secrets) | Amazon tag `pawspassage-20`; GA4 `G-1J97C8CPC1`; Impact verification value and Pinterest URL in `content/settings.yml`; Vrbo deeplink codes in `scripts/seller-ids.json` | the buyer replaces all of them (`docs/BUYER_AFFILIATE_TRANSITION.md`) |
 | Pinterest pin images | 29 (1000x1500) + `docs/pinterest-pins.csv` (29 data rows) | `public/pins/` |
 | Share (link-preview) images | 30 | `public/share/` |
-| Image files in `src/assets` | 211 JPG | file listing |
-| Image credit entries | **64** (Unsplash photographers), plus pack-photo credits in `src/content/pack-photos.ts` | `imageCredits.length` (a `grep -c "key:"` gives 65 because the type line also matches) |
+| Image files in `src/assets` | 196 JPG | file listing |
+| Image credit entries | **64** (Unsplash photographers) | `imageCredits.length` (a `grep -c "key:"` gives 65 because the type line also matches) |
 | Fonts | 2 variable WOFF2 (DM Sans, Fraunces) with OFL texts | `public/fonts/` |
 | Automated tests | **771 in 59 files** | `bunx vitest run` |
 | GitHub workflows | 4 (`ci.yml`, `indexnow.yml`, `monthly-digest.yml`, `site-health.yml`) | `.github/workflows/` |

@@ -43,3 +43,7 @@ __pycache__/
 .env.*
 !.env.example
 coverage
+
+# Premium adventure library lives OUTSIDE git (Netlify Blobs); never commit exports or backups
+/premium-content/
+*.premium.json

@@ -112,3 +112,13 @@
   to = "/guides/vacation-rentals-that-welcome-large-dogs"
   status = 301
   force = true
+
+# Adventure Passport API (netlify/functions/api.ts). Customer data must never be cached by the CDN or a browser.
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
+[[headers]]
+  for = "/api/*"
+  [headers.values]
+    Cache-Control = "no-store"

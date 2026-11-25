@@ -300,6 +300,31 @@ Tests to run after any edit: content.test.ts (description 120 to 160, title at m
 
 **What I could not verify:** actual rank order (WebSearch returns result sets), autocomplete and PAA, search volume, difficulty, Trends, Search Console after the final build, live-page rendering of the new build (read from source), which stay files are listed after the affiliate gate (counts above are stay FILES: 83 total, 78 listed and 23 indexable per the SEO doc; town counts are files), page-1 content depth of each competitor, persona audit P1 and P4 (not present), and whether the large-dogs, fenced-yard and packing-list guides have already been edited by a worker whose log was not yet committed.
 
-## 10. Part 2 (Cowork evidence): not yet written
+## 10. Part 2 (Cowork evidence, 2026-11-25)
 
-To be added when Cowork returns: per-query GSC, Trends and Keyword Planner results for the seed queries in section 4, an update of the winnable and avoid lists, and a go/no-go for each proposal in section 5.
+Full evidence and limits: `docs/editorial/SEARCH_DEMAND_EVIDENCE_2026-11-25.md`. Short version: Search Console covers 8 days (306 impressions, 0 clicks); none of the 36 queries has a measurable volume; 18 SERPs were not checked. This evidence can rank where we are plausible, not how much traffic there is. Nothing below claims a volume.
+
+### Go / no-go for the section 5 proposals
+
+| Proposal | Decision | Why (evidence) |
+|---|---|---|
+| Do not retitle ranking pages (no-pet-fee, no-pets, fees) | GO (leave titles) | no-pet-fee is on page 1 for two queries; fees is on page 1; no-pets guide has the most impressions (83, pos 6.6) |
+| Retitle the large-dogs guide | HOLD | It already sits at position 1 to 5 on question queries; retitling risks that. Instead add the weight-limit table wording to the opening. Re-measure first. |
+| Add a stays shortlist/route block to how-many-dogs, no-pet-fee and /stays | HOLD | The "cabins that allow 2 or 3 dogs" and "no pet fee cabins" booking SERPs are listings; a shortlist of our 83 stays cannot match inventory and /stays has placeholder cards. A single "how to find them" paragraph with a link is enough. |
+| Town pages: cabin-style rewrites for Blue Ridge, Ellijay, Dahlonega | NO-GO | SERPs are cabin modules and local managers. Keep them as things-to-do pages and say so in the first lines so expectations match. |
+| Fix /destinations/georgia cut-off meta description | GO (quick fix) | It is the page attached to the fenced-yard-cabins query; no risk |
+| Link /corrections to the fees guide for "vrbo pet policy" | GO (quick fix) | Query attached to the wrong page (QA-001-A) |
+| Make one page the owner of "vacation rental dog limit" (data page vs how-many-dogs guide) | GO (small) | Add a prominent link from /data/pet-policies to the guide and back; do not merge pages |
+| New cabin-inventory or town-cabin content | NO-GO | Dominated by managers and OTAs; our evidence says AVOID |
+
+### Winnable (hypotheses, volume unproven)
+1. No-pet-fee (already page 1). 2. Fee amounts (page 1, moving up). 3. Dog limits as an information question. 4. Large-dog weight limits as questions. 5. Cabin packing list (low value).
+
+### Avoid
+Town cabin queries (Blue Ridge, Ellijay, Dahlonega, Gatlinburg, Pigeon Forge); 2- or 3-dog cabin inventory queries; fenced-yard rentals as inventory; generic dog travel packing list and road trip checklist; "airbnb no pet fee" and "host charges after checkout" (host-side, Airbnb-owned).
+
+### Consequence for the article plan
+The search evidence supports the existing information-first guides, not new inventory pages. It gives no evidence for or against the five drafts (RV, Smokies, enrichment, boots-or-wax, winter road trip): none was among the 36 queries. Their go-ahead rests on the reader-first and Amazon product evidence, not on this data. Re-pull Search Console on about 2026-12-14 (4 weeks) before any retitling.
+
+### Still not checked
+SERPs for 18 queries (Ellijay, Gatlinburg large-dog, Pigeon Forge, Dahlonega, most of E and F); Trends 90-day; query-to-page mapping except four queries; whether the Smokies draft query set has any demand.

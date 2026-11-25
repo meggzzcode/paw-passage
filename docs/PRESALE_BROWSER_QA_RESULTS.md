@@ -93,3 +93,7 @@ Code commit: 84c0577 (fixes 1 to 8). Docs and screenshots commit follows it.
 - Production: DNS, headers and caching behind Netlify, the real Google Tag Manager / GA4 load, redirects and the live sitemap domain. Run `node scripts/verify-site.mjs https://<domain> --site-url https://<domain>` after deploy.
 - Amazon and Vrbo destinations (external sites were not followed), affiliate link validity and attribution in the partners' dashboards.
 - Real-world 3G performance and Core Web Vitals.
+
+
+## Owner-reported update (2026-11-25)
+The owner reported that real iPhone Safari looks good. This is the owner's statement; no screenshots or per-page notes were captured, so it is recorded as owner-reported, not as a tested result. Safari should be re-checked on the live site after the deploy using docs/cowork/FINAL_PRE_SALE_BROWSER_QA.md.

@@ -176,35 +176,26 @@ Whether this trip is realistic depends on three things: how your dog reacts to n
 
 ## Decide before you book
 
-Start with the dog. A dog that eats or plays through loud noise at home is a good candidate. A dog that freezes, shakes or hunts for an exit needs a vet conversation first, and no study we found compares staying home with travelling.
+Start with the dog. A dog that eats or plays through loud noise at home is a good candidate. A dog that freezes, shakes or hunts for an exit needs a vet conversation first.
 
 Then look at the place. A cabin in a town or subdivision is surrounded by neighbors who set their own rules. A property on its own land is better, though still not a guarantee. The biggest risk is not the noise itself but a frightened dog slipping through a door or gate in a place it doesn't know.
 
 ## What to ask the host
 
-"Firework-free" often describes the host's guests and grounds, not the area around them. One owner wrote in [Petbook](https://www.petbook-magazine.com/dogs/dog-owner-how-we-were-misled-by-a-firework-free-vacation-park) that a park advertised as firework-free still had fireworks on arrival, the night before New Year's Eve and at midnight, and staff said they couldn't control what happens outside the park. That park was Dutch, so treat it as a reason to ask, not as the odds. The same account suggests zooming out on the map and asking in online groups.
+"Firework-free" often covers the host's grounds, not the area around them, so ask who enforces it. One owner wrote in [Petbook](https://www.petbook-magazine.com/dogs/dog-owner-how-we-were-misled-by-a-firework-free-vacation-park) that a park advertised as firework-free still had fireworks on arrival and at midnight, and staff couldn't control what happens outside the park. Local law varies by county and city, so ask the host and check locally.
 
 - [ ] How far are the nearest homes? Is it a town, a subdivision or its own land?
 - [ ] Does "firework-free" cover only the grounds, or the area around? Who enforces it?
 - [ ] Have past guests reported fireworks around New Year's Eve?
 - [ ] What is the guest fireworks rule, and what happens if someone breaks it?
 - [ ] Is the yard fully enclosed? Which doors and gates open directly outside?
-- [ ] What is the full pet total for these dates, and are there holiday minimum stays or cancellation terms?
+- [ ] What is the full pet total for these dates, and are there holiday minimum stays or cancellation terms? Our [pet fees guide](/guides/how-vacation-rental-pet-fees-work) explains how to compare.
+- [ ] Is there an interior room away from the road and the windows facing neighbors? Cornell advises a familiar room far from the noise with few windows.
+- [ ] Will the host answer in writing? Between two similar rentals, pick the one with more space around it and fewer entry points; our [secure fenced yard guide](/guides/vacation-rental-secure-fenced-yard) covers gates and fences.
 
 Copy, paste and fill in the brackets:
 
 > We are booking [dates] with [number] dog(s), about [weight] lb. Our dog gets anxious around fireworks. How far are the nearest homes, have fireworks been reported around New Year's Eve here, and what does your fireworks rule say? Please reply in writing. Thank you.
-
-A host's rule governs guests, not neighbors. [Aunt Bug's Cabin Rentals](https://www.auntbugs.com/rental-policies/), for example, prohibits fireworks at all times and notes some holiday minimum stays. Local law varies by county and city, so ask the host and check locally. Our [pet fees guide](/guides/how-vacation-rental-pet-fees-work) explains how to compare the total for your dates.
-
-## Choosing a quieter setup
-
-Between two similar rentals, pick the one with more distance and fewer entry points:
-
-- More space around the property, not just a quiet street.
-- A fully enclosed yard with gates that latch, or a single door you can control.
-- An interior room away from the road and the windows facing neighbors. Cornell advises a familiar room far from the noise with few windows.
-- A host who answers questions in writing. Our [secure fenced yard guide](/guides/vacation-rental-secure-fenced-yard) covers what to check on gates and fences.
 
 ## Set up the rental
 
@@ -214,9 +205,9 @@ Do this on arrival, before dark.
 
 {{pick:kurgo-loft-wander-dog-bed|Only if your dog's own bed will not fit|Rolls up for travel; two sizes, waterproof nonslip bottom.|https://www.kurgo.com/p/loft-wander-dog-bed/K01560}}
 
-**Sound masking.** A safe space with masking sound is "important (but not sufficient)" on its own, per an [AVSAB](https://avsab.org/survey-shows-which-treatments-are-effective-for-fireworks-fears-in-dogs/) summary of an owner survey. Use a fan, white noise or the TV to soften the bangs. It supports the evening plan below; it doesn't replace it.
+**Sound masking.** Use a fan, white noise or the TV to soften the bangs. A safe space with masking sound is "important (but not sufficient)" on its own, per an [AVSAB](https://avsab.org/survey-shows-which-treatments-are-effective-for-fireworks-fears-in-dogs/) summary of an owner survey, so pair it with the evening plan below.
 
-**Leash and ID.** Put a tag on the collar with a mobile number you will answer, and check your dog's microchip registration is current. Cornell says to make sure ID collar and microchip information are up to date. Keep a recent photo on your phone. If your dog has bolted before, a GPS tracker is a second layer. The [Petcube](https://petcube.com/tracker/) tracker weighs 29 g and its maker says a paid plan is required. In a round-up of GPS collars, [Tree Line Review](https://www.treelinereview.com/gearreviews/best-gps-dog-collars) called it "the most inaccurate location-wise" of the group, one reviewer's verdict, so read the buying checklist in our [tracker guide](/guides/if-your-dog-gets-loose-on-a-trip#trackers-gps-and-bluetooth) first. A tracker never replaces a leash.
+**Leash and ID.** Put a tag on the collar with a mobile number you will answer, so a finder can call, and check your dog's microchip registration is current. Keep a recent photo on your phone. If your dog has bolted before, a GPS tracker is a second layer, never a replacement for a leash; read the buying checklist in our [tracker guide](/guides/if-your-dog-gets-loose-on-a-trip#a-tracker-if-you-want-a-search-tool) first.
 
 **Walk the property.** Look for gaps and debris; the [ASPCA](https://www.aspca.org/news/ring-pet-safe-new-year-these-expert-safety-tips) warns that ingesting fireworks is very dangerous. Tell guests not to let the dog out, and keep the dog on a leash even in a fenced yard. Put alcohol and guests' medications out of reach.
 
@@ -228,24 +219,23 @@ Do this on arrival, before dark.
 - **Evening:** keep the dog with you, with food or play ready, and give treats when bangs start.
 - **After midnight:** leash for the first outing; check the yard again.
 
-Don't plan to leave the dog alone at midnight. [Cabin Rentals of Georgia](https://www.cabin-rentals-of-georgia.com/policies) says no dogs alone in the cabin, [Vacasa](https://www.vacasa.com/pet-friendly-vacation-rentals) says not unsupervised, and [Aunt Bug's](https://www.auntbugs.com/rental-policies/) asks for a crate. We found no source that says a fearful dog is safe alone at midnight. If you plan to go out, see our [guide on leaving a dog alone](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental).
+Don't plan to leave the dog alone at midnight. [Cabin Rentals of Georgia](https://www.cabin-rentals-of-georgia.com/policies) says no dogs alone in the cabin, [Vacasa](https://www.vacasa.com/pet-friendly-vacation-rentals) says not unsupervised, and [Aunt Bug's](https://www.auntbugs.com/rental-policies/) asks for a crate. If you plan to go out, see our [guide on leaving a dog alone](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental).
 
-Food or play during noise has the strongest support in that survey summary, which linked it to improvement in severely affected dogs. A stuffed chew is an easy way to do it. The [KONG](https://www.kongcompany.com/kong-classic/) Classic comes in six size bands by dog weight, from XS (up to 5 lb) to XXL (85+ lb); the maker says to size up if between sizes, supervise and remember that no toy is indestructible. Stuff it ahead of time. It delivers food, not treatment, and makes no calming claim. Skip it if your dog refuses food when scared.
+Food or play during noise has the strongest support in that survey summary, which linked it to improvement in severely affected dogs. A stuffed chew is an easy way to do it: stuff the [KONG](https://www.kongcompany.com/kong-classic/) Classic ahead of time, size up if between sizes and supervise, since no toy is indestructible. Skip it if your dog refuses food when scared.
 
 {{pick:kong-classic|A chew for the first bangs|The maker publishes six size bands by dog weight, from XS up to 5 lb to XXL 85+ lb, and says supervised use only and to stop using a damaged toy.|https://www.kongcompany.com/kong-classic/}}
 
 ## If your dog becomes distressed
 
-Stay calm, stay with the dog and offer food or play. Never punish a scared dog. According to [Animals (Basel)](https://pmc.ncbi.nlm.nih.gov/articles/PMC10705068/), pressure vests may give "a small beneficial effect," and one study found no evidence of calming properties for cannabidiol. Treat any calming product as an extra, not a fix.
+Stay calm, stay with the dog and offer food or play. Never punish a scared dog. Calming products are extras, not a fix.
 
-Medication is a vet decision. Ask well before the trip. Cornell advises trying any prescribed medication on a quiet day first. We give no drug names or doses. Training with recorded sounds is called the "gold standard" in a 2023 review, but it takes weeks and some dogs don't respond; ask your vet about it for next year.
+Medication is a vet decision. Ask well before the trip, and try any prescribed medication on a quiet day first (Cornell). For next year, ask your vet about training with recorded sounds; it takes weeks and some dogs don't respond.
 
 If your dog swallows something from the yard or gets into guests' medications, call [ASPCA](https://www.aspca.org/pet-care/animal-poison-control) Animal Poison Control at (888) 426-4435 (24 hours, a consultation fee may apply) or [Pet Poison Helpline](https://www.petpoisonhelpline.com/) at (855) 764-7661 (24/7). Our [first-aid kit guide](/guides/dog-travel-first-aid-kit-guide) lists items to keep handy.
 
-
 ## If your dog bolts
 
-Ask people to phone you rather than chase, post flyers with your mobile number, and alert shelters and lost-pet pages near the rental. Our [loose-dog guide](/guides/if-your-dog-gets-loose-on-a-trip) has the full steps. For the potty breaks after dark, a clip-on light helps you see the dog: the [Ruffwear](https://ruffwear.com/products/the-beacon-safety-dog-light) Beacon has three modes and clips to Ruffwear collars and apparel light loops, so skip it if your gear has none. It does not replace the leash.
+Ask people to phone you rather than chase, post flyers with your mobile number, and alert shelters and lost-pet pages near the rental. Our [loose-dog guide](/guides/if-your-dog-gets-loose-on-a-trip) has the full steps. Reported escapes point to doors, fences and phone numbers, not noise alone, which is why a person at each door comes first. For the potty breaks after dark, a clip-on light helps you see the dog: the [Ruffwear](https://ruffwear.com/products/the-beacon-safety-dog-light) Beacon has three modes and clips to Ruffwear collars and apparel light loops, so skip it if your gear has none. It does not replace the leash.
 
 {{pick:ruffwear-the-beacon-dog-safety-light|Seeing the dog after dark|The maker lists three modes, up to 20 hours of run time and a Quick Clip for Ruffwear collars and light loops.|https://ruffwear.com/products/the-beacon-safety-dog-light}}
 
@@ -257,9 +247,3 @@ Ask people to phone you rather than chase, post flyers with your mobile number, 
 - [ ] Update the tag and chip record if anything changed.
 - [ ] Pack the tag, leash, chew and bed; run through the [rental checklist](/guides/pet-friendly-vacation-rental-checklist), the [trip checklist](/tools/checklist) and our [packing list](/guides/dog-friendly-cabin-packing-list).
 - [ ] Booking Christmas week too? See [Christmas week in a cabin with a dog](/guides/christmas-week-in-a-cabin-with-a-dog). More ID and safety items are in the [safety, ID and first aid gear](/gear/safety-id-first-aid) section.
-
-## Why the doors come first
-
-Reported escapes point to doors, fences and phone numbers, not noise alone. A lab left a Killington, Vermont ski house on New Year's Eve after fireworks. [KPCW](https://www.kpcw.org/park-city/2024-01-02/park-city-community-helps-reunite-lost-golden-retriever-with-owners) reported that a young Golden Retriever bolted in Park City from a relative who could not run, after neighbors' fireworks, and was found after two days; a phone number on a notice let a finder call. [Patch](https://patch.com/massachusetts/across-ma/july-4-fireworks-cause-spike-lost-dog-reports-what-ma-pet-owners-should-know) says even a calm dog can bolt from a rental house or hotel hallway.
-
-There is no national count for New Year's Eve: [Petco Love](https://prnewswire.com/news-releases/lost-pets-fill-animal-shelters-after-july-4th-festivities-petco-love-urging-pet-parents-to-search-for-them-on-petco-love-lost-301870824.html)'s 2023 release says July 4 is the peak day, and a self-selected Dutch survey found about 5% of dogs had ever been lost after hearing fireworks.

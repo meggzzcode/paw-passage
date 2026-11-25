@@ -130,7 +130,7 @@ If two listings tie, choose the one whose approval names your dogs in writing an
 
 Your unit's rules count only once the host confirms them in writing.
 
-Booked somewhere that says no pets? Ask the manager before you travel rather than bringing the dog unapproved. Next step: save your answers in the [checklist tool](/tools/checklist).
+Booked somewhere that says no pets? Ask the manager before you travel rather than bringing the dog unapproved; our guide to [bringing a dog to a no-pets rental](/guides/bringing-a-dog-to-a-no-pets-rental) has a message to send. Next step: save your answers in the [checklist tool](/tools/checklist).
 `,
   faqs: [
     {

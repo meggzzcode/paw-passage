@@ -255,7 +255,7 @@ Copy and paste this, filled in with your details:
 
 > Hi, we are considering booking [dates] with one [size] dog, [age]. Your house rules mention pets. Are we allowed to leave the dog alone in the rental for a short time, for example a dinner or a few hours, and if so are there conditions such as a crate or a time limit? Is the dog permitted on furniture and beds? Does anyone live on the property or nearby who might hear barking? Are there any cameras or noise monitors we should know about? We would be grateful for a written reply, and we will follow your rules.
 
-Then confirm the totals in our [pet fees guide](/guides/how-vacation-rental-pet-fees-work), and check your dog with the [will-my-dog-be-accepted tool](/tools/will-my-dog-be-accepted). Before you book, make sure the host's reply is in writing, the host has agreed to any pet camera, your dog has stayed calmly alone before, and you have a first-night plan. Add the answers to your [trip checklist](/tools/checklist) and [packing list](/tools/packing-list).
+If the listing says no pets at all, start with our guide to [asking a host to allow a dog](/guides/bringing-a-dog-to-a-no-pets-rental). Then confirm the totals in our [pet fees guide](/guides/how-vacation-rental-pet-fees-work), and check your dog with the [will-my-dog-be-accepted tool](/tools/will-my-dog-be-accepted). Before you book, make sure the host's reply is in writing, the host has agreed to any pet camera, your dog has stayed calmly alone before, and you have a first-night plan. Add the answers to your [trip checklist](/tools/checklist) and [packing list](/tools/packing-list).
 
 ## What we could not confirm
 

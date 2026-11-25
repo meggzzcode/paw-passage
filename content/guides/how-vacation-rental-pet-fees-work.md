@@ -211,7 +211,7 @@ The [Department of Justice](https://www.ada.gov/resources/service-animals-2010-r
 
 ## If a charge surprises you
 
-Save the listing terms, booking price and messages. Ask the host to show the calculation, and check where the charge was disclosed before you booked. If the explanation conflicts with the booking, contact platform support, and do not pay an unexplained duplicate just to end the conversation. After checkout, ask for an itemized explanation separating ordinary cleaning from alleged damage; our [Airbnb post-checkout damage guide](/guides/airbnb-pet-damage-charge-after-checkout) walks through that.
+If the listing says no pets, ask for an exception before booking; our guide to [bringing a dog to a no-pets rental](/guides/bringing-a-dog-to-a-no-pets-rental) has a message to copy. Save the listing terms, booking price and messages. Ask the host to show the calculation, and check where the charge was disclosed before you booked. If the explanation conflicts with the booking, contact platform support, and do not pay an unexplained duplicate just to end the conversation. After checkout, ask for an itemized explanation separating ordinary cleaning from alleged damage; our [Airbnb post-checkout damage guide](/guides/airbnb-pet-damage-charge-after-checkout) walks through that.
 
 ## Protect your deposit
 

@@ -193,7 +193,7 @@ The host may involve [Airbnb](https://www.airbnb.com/help/article/1415) or its i
 
 - Ordinary hair after a paid pet fee: ask what extra work was needed.
 - Stain, odor or scratches: send dated photos and ask for an itemized claim.
-- Dog not declared: read the listing and booking terms.
+- Dog not declared: read the listing and booking terms. Our guide to [a dog in a no-pets rental](/guides/bringing-a-dog-to-a-no-pets-rental) covers what hosts and platforms can do.
 
 One purchase fits here, and only for mess: a washable mat at the door keeps mud off the host's floors, so there is less to photograph at checkout. It does not change how a claim is decided, and it will not help with chewing or stains. Skip it if the rental has a mudroom, and ask before laying anything down. More options are on our [rental cleanup gear page](/gear/rental-cleanup).
 

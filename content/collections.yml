@@ -1,0 +1,71 @@
+collections:
+  - slug: "five-minute-moments"
+    title: "Five-Minute Moments"
+    tagline: "Tiny adventures for busy days."
+    description: "Short, low-prep adventures that fit between emails and errands. Each one can be done in a few minutes and still leave a memory."
+    order: 1
+    accent: "poppy"
+    premiumOnly: false
+  - slug: "home-sweet-home"
+    title: "Home Sweet Home"
+    tagline: "The best adventures start at the front door."
+    description: "Adventures you can have without leaving the house, using what you already own and the rooms your dog knows best."
+    order: 2
+    accent: "ochre"
+    premiumOnly: false
+  - slug: "rainy-day-club"
+    title: "Rainy Day Club"
+    tagline: "Bad weather, good company."
+    description: "Cosy indoor adventures for wet, cold or windy days when staying in is the plan."
+    order: 3
+    accent: "sky"
+    premiumOnly: false
+  - slug: "weekend-together"
+    title: "Weekend Together"
+    tagline: "Slow mornings and bigger outings."
+    description: "Adventures with a bit more time: picnics, shoreline strolls and sunrise starts to make a weekend feel special."
+    order: 4
+    accent: "sage"
+    premiumOnly: false
+  - slug: "the-golden-years"
+    title: "The Golden Years"
+    tagline: "Gentle adventures at a senior pace."
+    description: "Unhurried adventures for older dogs, with easy variations that can be done in place and at your dog's own speed."
+    order: 5
+    accent: "plum"
+    premiumOnly: false
+  - slug: "apartment-adventures"
+    title: "Apartment Adventures"
+    tagline: "Big memories in small spaces."
+    description: "Adventures that work in an apartment, on a balcony or on the block outside, with no yard needed."
+    order: 6
+    accent: "ink"
+    premiumOnly: false
+  - slug: "city-explorers"
+    title: "City Explorers"
+    tagline: "Your neighbourhood, with fresh eyes."
+    description: "Urban adventures that turn familiar streets, parks and corners into a day of discovery."
+    order: 7
+    accent: "sky"
+    premiumOnly: false
+  - slug: "road-trip-adventures"
+    title: "Road Trip Adventures"
+    tagline: "Stops, stamps and memories along the way."
+    description: "Adventures for the road. Note for editors: this collection is filled by the premium library, so it has no free adventures yet."
+    order: 8
+    accent: "ochre"
+    premiumOnly: true
+  - slug: "adventures-without-spending-a-dollar"
+    title: "Adventures Without Spending a Dollar"
+    tagline: "Zero cost, full of heart."
+    description: "Every adventure here costs nothing. Use what you have and the time you spend together."
+    order: 9
+    accent: "sage"
+    premiumOnly: false
+  - slug: "the-cozy-companion"
+    title: "The Cozy Companion"
+    tagline: "Quiet moments side by side."
+    description: "Soft, slow adventures for time together on the sofa, by the window or in a blanket fort."
+    order: 10
+    accent: "plum"
+    premiumOnly: false

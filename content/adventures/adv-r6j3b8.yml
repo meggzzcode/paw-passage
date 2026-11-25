@@ -1,0 +1,37 @@
+id: "adv-r6j3b8"
+title: "The Sunrise Breakfast Club"
+clue: "The world is quiet, the sky is changing colour, and the only rule is to sit still."
+description: "Greet the morning together at a doorstep, balcony or garden edge. You have a hot drink, your dog has a calm start, and the two of you watch the day arrive."
+instructions:
+  - "Check the sunrise time the night before and set an alarm about twenty minutes earlier."
+  - "Choose a comfy spot you can reach easily: a balcony, a doorstep, a window seat or the garden edge. Bring a blanket."
+  - "Sit with your drink while your dog explores at their own pace or lies beside you. Name three things you can see and hear."
+  - "Snap one photo of the sky and one of your dog, and note the date and the colour of the morning."
+twist: "A club of two with one rule: no phones except for a single sunrise photograph."
+prep: "light"
+supplies: ["Blanket", "A warm drink for you", "Phone for one photo"]
+minutesMin: 10
+minutesMax: 30
+costMin: 0
+costMax: 6
+setting: "either"
+environments: ["apartment", "house", "city", "countryside", "beach", "mountains"]
+lifeStages: ["puppy", "adult", "senior"]
+energy: "gentle"
+mobilityFriendly: true
+crowd: "none"
+otherDogs: false
+seasons: []
+safety:
+  - "Mornings can be cold. Check the temperature and dress your dog's spot with a blanket if the air is cool, and stay with them outdoors."
+  - "Keep your dog on a leash or in an enclosed space, since dawn is when wildlife is most active."
+variations:
+  - "From bed or the sofa: open a window and watch the sky from inside."
+  - "On a beach or mountain trip, check conditions and keep well back from water edges and drops."
+memoryPrompt: "What colour was the sky, and what did your dog notice first?"
+keepsake: "seasonal-recap"
+collections: ["weekend-together", "the-golden-years", "apartment-adventures"]
+stamps: ["first-adventure", "sunshine-seeker", "seasonal-explorer"]
+access: "free"
+status: "published"
+relatedGuides: []

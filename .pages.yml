@@ -676,6 +676,108 @@ content:
               - { name: unlessConditions, label: "Hide when one of these is ticked (optional)", type: select, list: true, options: { values: [{ value: driving, label: "We're driving" }, { value: outdoors, label: "Hiking or outdoors" }, { value: water, label: "Beach, lake or swimming" }, { value: cold, label: "Cold or snowy weather" }, { value: hot, label: "Hot weather" }, { value: senior, label: "Older dog or mobility considerations" }, { value: no-fence, label: "No securely fenced yard" }, { value: escape-risk, label: "A dog who may slip away" }, { value: medication, label: "Medication or special supplies" }] } }
           - { name: active, label: "Show this item? (untick to hide it everywhere but keep the record)", type: boolean }
 
+  # ------------------------------------------------------------ Adventure Passport (free adventures)
+  - name: adventures
+    label: Adventures (free)
+    type: collection
+    path: content/adventures
+    format: yaml
+    filename: "{fields.id}.yml"
+    view:
+      fields: [title, status, access]
+      primary: title
+      sort: [title]
+    fields:
+      - { name: id, label: Adventure ID, type: string, required: true, readonly: true, description: "A permanent code like adv-k3m9x2. It never changes, even if you rename the adventure. Do not edit it." }
+      - { name: title, label: Title, type: string, required: true }
+      - { name: clue, label: "Mystery clue shown before the reveal (must not contain the title)", type: string, required: true }
+      - { name: description, label: Description, type: text, required: true }
+      - { name: instructions, label: "Steps (2 to 8)", type: string, list: true, required: true }
+      - { name: twist, label: "The twist (what makes this one different)", type: text, required: true }
+      - { name: prep, label: Preparation, type: select, required: true, options: { values: [none, light, some] } }
+      - { name: supplies, label: Supplies, type: string, list: true }
+      - { name: minutesMin, label: Minimum minutes, type: number, required: true }
+      - { name: minutesMax, label: Maximum minutes, type: number, required: true }
+      - { name: costMin, label: Minimum cost (dollars), type: number, required: true }
+      - { name: costMax, label: Maximum cost (dollars), type: number, required: true }
+      - { name: setting, label: Setting, type: select, required: true, options: { values: [indoor, outdoor, either] } }
+      - { name: environments, label: Places it works, type: select, list: true, required: true, options: { values: [apartment, house, city, countryside, beach, mountains, road-trip] } }
+      - { name: lifeStages, label: Life stages, type: select, list: true, required: true, options: { values: [puppy, adult, senior] } }
+      - { name: energy, label: Energy, type: select, required: true, options: { values: [gentle, moderate, lively] } }
+      - { name: mobilityFriendly, label: "Can be done at a very gentle pace or in place", type: boolean }
+      - { name: crowd, label: Other people around, type: select, required: true, options: { values: [none, some, busy] } }
+      - { name: otherDogs, label: Other dogs likely nearby, type: boolean }
+      - { name: seasons, label: "Seasons (leave empty for any season)", type: select, list: true, options: { values: [spring, summer, autumn, winter] } }
+      - { name: safety, label: "Dog-welfare safety lines (at least one; no medical claims)", type: string, list: true, required: true }
+      - { name: variations, label: Variations, type: string, list: true }
+      - { name: memoryPrompt, label: "Memory prompt (one line)", type: string, required: true }
+      - { name: keepsake, label: Keepsake, type: select, required: true, options: { values: [postcard, magazine-cover, then-and-now, milestone-card, certificate, seasonal-recap, collage, collection-complete] } }
+      - { name: collections, label: "Collections (use the collection codes)", type: string, list: true, required: true }
+      - { name: stamps, label: "Stamps (use the stamp codes)", type: string, list: true }
+      - { name: access, label: Access, type: select, required: true, description: "Only 'free' belongs in this public repository.", options: { values: [free, premium] } }
+      - { name: status, label: Status, type: select, required: true, options: { values: [draft, published] } }
+      - { name: relatedGuides, label: Related guide codes, type: string, list: true }
+
+  - name: collections
+    label: Adventure collections
+    type: file
+    path: content/collections.yml
+    format: yaml
+    operations:
+      create: false
+      delete: false
+    fields:
+      - name: collections
+        label: Collections
+        type: object
+        list: true
+        fields:
+          - { name: slug, label: Collection code, type: string, required: true, readonly: true, description: "Permanent code used by adventures. Do not edit it." }
+          - { name: title, label: Title, type: string, required: true }
+          - { name: tagline, label: Tagline, type: string, required: true }
+          - { name: description, label: Description, type: text, required: true }
+          - { name: order, label: Order on the page, type: number, required: true }
+          - { name: accent, label: Accent colour, type: select, required: true, options: { values: [ink, poppy, ochre, sage, sky, plum] } }
+          - { name: premiumOnly, label: "Filled by the premium library only", type: boolean }
+
+  - name: stamps
+    label: Passport stamps
+    type: file
+    path: content/stamps.yml
+    format: yaml
+    operations:
+      create: false
+      delete: false
+    fields:
+      - name: stamps
+        label: Stamps
+        type: object
+        list: true
+        fields:
+          - { name: slug, label: Stamp code, type: string, required: true, readonly: true, description: "Permanent code used by adventures. Do not edit it." }
+          - { name: title, label: Title, type: string, required: true }
+          - { name: blurb, label: Short blurb, type: string, required: true }
+          - { name: rule, label: "How it is earned (plain words)", type: text, required: true }
+
+  - name: achievements
+    label: Achievements and milestones
+    type: file
+    path: content/achievements.yml
+    format: yaml
+    operations:
+      create: false
+      delete: false
+    fields:
+      - name: achievements
+        label: Milestones
+        type: object
+        list: true
+        fields:
+          - { name: threshold, label: "Adventures completed (leave empty for collection complete)", type: number }
+          - { name: kind, label: Kind, type: select, options: { values: [count, collection-complete] } }
+          - { name: title, label: Title, type: string, required: true }
+          - { name: reward, label: "Keepsake reward (never withholds content)", type: text, required: true }
+
   # ------------------------------------------------------------ Business settings
   - name: settings
     label: Business settings

@@ -1,0 +1,25 @@
+achievements:
+  - threshold: 1
+    title: "First Footprint"
+    reward: "A milestone card for your very first adventure."
+  - threshold: 5
+    title: "Pawing Along"
+    reward: "A milestone card and a printable page for your passport."
+  - threshold: 10
+    title: "Regular Explorer"
+    reward: "A milestone card with a recap of your first ten adventures."
+  - threshold: 20
+    title: "Seasoned Traveller"
+    reward: "A seasonal recap keepsake that shows where you have been."
+  - threshold: 30
+    title: "Trailblazing Duo"
+    reward: "A collage keepsake built from your saved memories."
+  - threshold: 50
+    title: "Adventure Veteran"
+    reward: "A certificate with your dog's name and your favourite adventures."
+  - threshold: 75
+    title: "Passport Master"
+    reward: "A large keepsake card for the full journey so far."
+  - kind: "collection-complete"
+    title: "Collection Complete"
+    reward: "A collection-complete keepsake for each collection you finish."

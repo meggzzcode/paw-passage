@@ -1,0 +1,45 @@
+id: "adv-c2h7v4"
+title: "The Paw-trait Studio"
+clue: "Soft window light, a plain wall and a face made for the front page."
+description: "Set up a tiny photo corner beside a window and take a relaxed portrait of your dog in natural light. Turn the best shot into a make-believe magazine cover."
+instructions:
+  - "Find the brightest window in your home and place your dog's bed or blanket where the light falls gently."
+  - "Turn off the flash, sit low at your dog's eye level and take photos while they relax. Use a quiet word or toy squeak for attention if they like it."
+  - "Pick the shot where their eyes or ears look most like them."
+  - "Add a magazine title, a funny headline and one line about your dog on the cover."
+twist: "No props, no posing: wait for the natural moments and let your dog be the cover star."
+prep: "none"
+supplies: ["Phone or camera", "Blanket or bed"]
+minutesMin: 5
+minutesMax: 20
+costMin: 0
+costMax: 0
+setting: "indoor"
+environments: ["apartment", "house", "city", "countryside"]
+lifeStages: ["puppy", "adult", "senior"]
+energy: "gentle"
+mobilityFriendly: true
+crowd: "none"
+otherDogs: false
+seasons: []
+safety:
+  - "Never force a pose or hold your dog in place. Take photos only while they are relaxed, and stop if they look uneasy."
+  - "Skip the flash, which can startle some dogs."
+variations:
+  - "For a dog who will not sit still, photograph them while they nap and keep the camera quiet."
+  - "No window: use a lamp with a soft shade instead of overhead light."
+memoryPrompt: "What was the headline of your dog's cover?"
+keepsake: "magazine-cover"
+collections:
+  [
+    "five-minute-moments",
+    "home-sweet-home",
+    "the-golden-years",
+    "apartment-adventures",
+    "adventures-without-spending-a-dollar",
+    "the-cozy-companion",
+  ]
+stamps: ["first-adventure", "sunshine-seeker"]
+access: "free"
+status: "published"
+relatedGuides: []

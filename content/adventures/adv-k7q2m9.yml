@@ -1,0 +1,44 @@
+id: "adv-k7q2m9"
+title: "The Great Toy Showdown"
+clue: "Four contenders enter. One walks away with a certificate."
+description: "Predict which toy your dog loves most, then let your dog cast the deciding vote. A tiny tournament with a bracket, a champion and a certificate worth framing."
+instructions:
+  - "Pick four toys and write your own prediction of the winner on a slip of paper, folded away."
+  - "Set two toys on the floor a few steps apart and let your dog choose one by sniffing, nudging or picking it up. Note the pick."
+  - "Pair up the winners in a second round, then a final. Cheer for every choice, whichever toy it is."
+  - "Reveal your prediction, crown the Toy Champion and fill in the certificate."
+twist: "You bet against yourself: write a prediction first, and see whether you know your dog as well as you think."
+prep: "none"
+supplies: ["Four toys your dog already owns", "Paper and a pen"]
+minutesMin: 5
+minutesMax: 25
+costMin: 0
+costMax: 0
+setting: "indoor"
+environments: ["apartment", "house", "city", "countryside"]
+lifeStages: ["puppy", "adult", "senior"]
+energy: "gentle"
+mobilityFriendly: true
+crowd: "none"
+otherDogs: false
+seasons: []
+safety:
+  - "Use only toys that are in good shape, and put away any that are chewed apart or have loose pieces."
+  - "Stop whenever your dog loses interest. A pick does not have to be completed."
+variations:
+  - "Short on time: run a two-toy final only, about five minutes."
+  - "For a dog who prefers to lie down: bring each toy to their bed and watch where their nose goes first."
+memoryPrompt: "Which toy won, and did it match your prediction?"
+keepsake: "certificate"
+collections:
+  [
+    "five-minute-moments",
+    "home-sweet-home",
+    "rainy-day-club",
+    "apartment-adventures",
+    "adventures-without-spending-a-dollar",
+  ]
+stamps: ["first-adventure", "playtime-champion"]
+access: "free"
+status: "published"
+relatedGuides: []

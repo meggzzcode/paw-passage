@@ -1,0 +1,43 @@
+id: "adv-d7s6w1"
+title: "The Neighbourhood Sound Map"
+clue: "Close your eyes and your street turns into an orchestra."
+description: "Slow right down and listen. Pause at three spots near home and draw a sound map of what you hear, while your dog shows you which sounds matter most."
+instructions:
+  - "Pick three spots near home, such as your doorstep, a park bench and a corner shop. Bring a notebook."
+  - "At each spot, stand or sit for two quiet minutes. Listen to what you hear and watch what your dog's ears do."
+  - "Draw a simple map of the three places and add a symbol for each sound: a bird, a bus, a bell, a breeze."
+  - "Add a star next to the sound your dog reacted to most."
+twist: "Your dog's ears are the guide: you map what they notice, not just what you hear."
+prep: "light"
+supplies: ["Notebook and pen", "Leash"]
+minutesMin: 10
+minutesMax: 40
+costMin: 0
+costMax: 0
+setting: "outdoor"
+environments: ["apartment", "house", "city", "countryside"]
+lifeStages: ["puppy", "adult", "senior"]
+energy: "gentle"
+mobilityFriendly: true
+crowd: "some"
+otherDogs: false
+seasons: []
+safety:
+  - "Choose quiet spots away from heavy traffic, and keep your dog on a leash. Leave if the noise upsets them."
+  - "Let your dog move away from any sound that worries them."
+variations:
+  - "In place: map three sounds from your balcony or doorstep without going anywhere."
+  - "Do the same from a bench in a quiet park on a different day to compare."
+memoryPrompt: "Which sound did your dog notice that you almost missed?"
+keepsake: "collage"
+collections:
+  [
+    "the-golden-years",
+    "city-explorers",
+    "apartment-adventures",
+    "adventures-without-spending-a-dollar",
+  ]
+stamps: ["first-adventure", "city-explorer", "trail-blazer"]
+access: "free"
+status: "published"
+relatedGuides: []

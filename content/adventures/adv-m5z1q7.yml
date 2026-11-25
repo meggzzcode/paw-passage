@@ -1,0 +1,44 @@
+id: "adv-m5z1q7"
+title: "A Trip Down Memory Lane"
+clue: "Then and now, side by side, and one of you has not changed their expression."
+description: "Dig out an old photo of your dog, find a way to recreate the setting or the pose today, and make a then-and-now keepsake that shows how far you have come together."
+instructions:
+  - "Scroll your photos for an early picture of your dog. Choose one with a clear place or object in it."
+  - "Work out where it was taken, or what it was, and head there if you can. If not, recreate it at home with a similar blanket or corner."
+  - "Take a new photo from the same angle without forcing a pose, and wait for a natural moment."
+  - "Place the two photos side by side and jot a line for each: what you remember then, and what you notice now."
+twist: "Look at the old photo together and let your dog sniff the screen or print before you head out."
+prep: "light"
+supplies: ["Old photo or print", "Phone or camera"]
+minutesMin: 15
+minutesMax: 60
+costMin: 0
+costMax: 0
+setting: "either"
+environments: ["apartment", "house", "city", "countryside", "beach", "mountains"]
+lifeStages: ["puppy", "adult", "senior"]
+energy: "gentle"
+mobilityFriendly: true
+crowd: "none"
+otherDogs: false
+seasons: []
+safety:
+  - "Go only where your dog is comfortable now. A beloved old spot may be too far or too busy today."
+  - "Never ask your dog to hold a pose. A relaxed moment is the whole point."
+variations:
+  - "Recreate the photo at home from the same angle, using a blanket or a corner of the room."
+  - "For a puppy: make a first-month photo to compare with in a year."
+memoryPrompt: "What has changed since the first photo, and what has not?"
+keepsake: "then-and-now"
+collections:
+  [
+    "home-sweet-home",
+    "rainy-day-club",
+    "the-golden-years",
+    "adventures-without-spending-a-dollar",
+    "the-cozy-companion",
+  ]
+stamps: ["first-adventure", "cozy-companion"]
+access: "free"
+status: "published"
+relatedGuides: []

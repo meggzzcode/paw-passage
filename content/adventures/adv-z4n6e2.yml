@@ -1,0 +1,38 @@
+id: "adv-z4n6e2"
+title: "The Tide-Line Postcard"
+clue: "The sea writes a new message every hour, and you have a front-row seat."
+description: "Walk the edge of a beach, lake or river shore and look for the day's messages in shells, driftwood and patterns. Photograph your finds and write a postcard from the water's edge."
+instructions:
+  - "Check the local beach or shore rules, the tide and the weather before you leave."
+  - "Walk the dry sand or bank at your dog's pace and look for three finds: a pattern, a colour and a shape."
+  - "Photograph each find without moving it, and snap your dog in the same frame if they are relaxed."
+  - "Write a postcard to home from the shore with the three finds as the message."
+twist: "You collect photographs, not objects, so the shore stays exactly as you found it."
+prep: "some"
+supplies: ["Leash", "Fresh water and a bowl", "Shade or a sun umbrella", "Phone for photos"]
+minutesMin: 30
+minutesMax: 90
+costMin: 0
+costMax: 10
+setting: "outdoor"
+environments: ["beach", "road-trip", "countryside"]
+lifeStages: ["puppy", "adult", "senior"]
+energy: "moderate"
+mobilityFriendly: false
+crowd: "some"
+otherDogs: true
+seasons: ["spring", "summer", "autumn"]
+safety:
+  - "Check conditions and local dog rules first, and supervise your dog near water at all times. Keep them on a leash and away from deep or fast water."
+  - "Provide fresh water and shade, check the sand with your hand and avoid hot or crowded stretches."
+variations:
+  - "Gentle: sit at a spot above the sand or in the car with the door open and watch the water."
+  - "Bring a mat for your dog to rest on in the shade."
+memoryPrompt: "What were your three finds, and what did your dog sniff first?"
+keepsake: "postcard"
+collections: ["weekend-together"]
+stamps:
+  ["first-adventure", "beach-explorer", "road-tripper", "sunshine-seeker", "seasonal-explorer"]
+access: "free"
+status: "published"
+relatedGuides: []

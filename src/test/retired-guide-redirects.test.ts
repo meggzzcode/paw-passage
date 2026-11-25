@@ -54,3 +54,29 @@ describe("no-dog-weight-limit guide merged into the large-dog guide", () => {
     expect(g.body).not.toContain(`/guides/${RETIRED}`);
   });
 });
+
+describe("breed-restrictions draft redirects to the large-dog guide", () => {
+  const BREED = "breed-restrictions-at-vacation-rentals";
+  it("is not a guide, is not in the sitemap, and netlify.toml has a forced 301", () => {
+    expect(allGuides.some((g) => g.slug === BREED)).toBe(false);
+    expect(sitemapEntries().map((e) => e.path)).not.toContain(`/guides/${BREED}`);
+    const toml = readFileSync(resolve(root, "netlify.toml"), "utf8");
+    const block = toml.split("[[redirects]]").find((b) => b.includes(`from = "/guides/${BREED}"`));
+    expect(block).toBeDefined();
+    expect(block).toContain(`to = "/guides/${SURVIVOR}"`);
+    expect(block).toContain("status = 301");
+    expect(block).toContain("force = true");
+  });
+  it("the app route throws a 301 to the large-dog guide", async () => {
+    const { Route } = await import("@/routes/guides.breed-restrictions-at-vacation-rentals");
+    let thrown: unknown;
+    try {
+      await (Route.options.beforeLoad as () => unknown)();
+    } catch (e) {
+      thrown = e;
+    }
+    const r = thrown as { options?: { statusCode?: number; href?: string } };
+    expect(r.options?.statusCode).toBe(301);
+    expect(r.options?.href).toBe(`/guides/${SURVIVOR}`);
+  });
+});

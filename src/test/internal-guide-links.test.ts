@@ -10,7 +10,10 @@ const published = allGuides.filter(isPublic);
 
 // Retired guides whose old URL is a permanent 301 (src/routes/guides.<slug>.tsx and netlify.toml). Other guides may still
 // link to them until a later pass updates the text; the redirect sends readers to the surviving guide.
-const retiredRedirects = new Set(["vacation-rentals-with-no-dog-weight-limit"]);
+const retiredRedirects = new Set([
+  "vacation-rentals-with-no-dog-weight-limit",
+  "breed-restrictions-at-vacation-rentals",
+]);
 const linkable = (slug: string) => publicSlugs.has(slug) || retiredRedirects.has(slug);
 
 function guideLinks(text: string): string[] {

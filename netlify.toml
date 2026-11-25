@@ -105,3 +105,10 @@
   to = "/guides/vacation-rentals-that-welcome-large-dogs"
   status = 301
   force = true
+
+# Retired draft: breed restrictions are covered in the large-dog guide.
+[[redirects]]
+  from = "/guides/breed-restrictions-at-vacation-rentals"
+  to = "/guides/vacation-rentals-that-welcome-large-dogs"
+  status = 301
+  force = true

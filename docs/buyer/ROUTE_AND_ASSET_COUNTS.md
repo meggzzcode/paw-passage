@@ -75,7 +75,7 @@ Not in the sitemap on purpose: `/dog-rules` (noindex, no verified place), the fi
 | Shown but `noindex` | 55 | 78 minus 23 |
 | Hidden | 5 | no approved link: `coastal-bliss-fort-bragg-hot-tub-ocean-views`, `large-oceanfront-home-cleone-fort-bragg-hot-tub`, `rosemarys-retreat-mendocino-oceanfront`, `that-cabin-on-that-lane-blue-ridge`, `woof-in-the-woods-cabin-blue-ridge` (non-Vrbo source) |
 | Published guides | **29** | `isPublic()`: status published, research complete, no unverified claims, approver and date |
-| Draft guides (404) | 0 | none today; `breed-restrictions-at-vacation-rentals` was deleted and returns 404 |
+| Draft guides | 0 | none today; `breed-restrictions-at-vacation-rentals` was deleted: it returns 404 on production `f02e4f9` and 301s to the large-dog guide from the next build (committed 2026-11-25) |
 | Configured affiliate links | 160 | 79 Vrbo + 81 Amazon; "approved: true" is a switch in `content/affiliates.yml`, not proof of any programme's approval |
 | **Verified affiliate approvals a buyer can rely on** | **0** | no approval is evidenced in the repo for the buyer; the seller's accounts do not transfer |
 
@@ -112,7 +112,7 @@ Not in the sitemap on purpose: `/dog-rules` (noindex, no verified place), the fi
 | Automated tests | **771 in 59 files** | `bunx vitest run` |
 | GitHub workflows | 4 (`ci.yml`, `indexnow.yml`, `monthly-digest.yml`, `site-health.yml`) | `.github/workflows/` |
 | Pages CMS collections | 7 (guides, stays, places, affiliates, products, packing, settings) | `.pages.yml`; **never used in the live Pages CMS app (UNVERIFIED)** |
-| Permanent redirects in `netlify.toml` | 10 (retired guide addresses) plus app-level redirects for retired tool, Gear and guide addresses | `grep -c "from =" netlify.toml` |
+| Permanent redirects in `netlify.toml` | 11 (retired guide addresses; the 11th, the breed-restrictions draft, is in the next build) plus app-level redirects for retired tool, Gear and guide addresses | `grep -c "from =" netlify.toml` |
 | Markdown docs | 166 files in `docs/` (655 in the folder tree) | file listing |
 | Git history | 518 commits at `9797221`, first commit 2026-11-16 | `git log --oneline \| wc -l` |
 

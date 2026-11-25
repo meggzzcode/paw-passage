@@ -15,7 +15,7 @@ faqs:
   - q: How many dogs are allowed at an Airbnb?
     a: Two is the most common cap among the 38 managers we read, but no platform-wide number exists. Airbnb's guest page lets you declare 0 to 5 pets and its host guide lets hosts set a limit from one to five (as of 2026-11-18), so the listing's own pet rule decides.
   - q: Can I bring three dogs if the listing says two?
-    a: Only with the host's yes before you book. Send the message in this guide; penalties for an unapproved dog are in the section on bringing more dogs than the listing allows.
+    a: Only with the host's yes before you book. Send the message in this guide; the table shows what three managers do about an unapproved dog.
   - q: Is there a weight limit for dogs at vacation rentals?
     a: Hosts and managers set it, not platforms. The managers we read ranged from 60 pounds per dog to under 35, so ask whether the limit is per dog or combined.
   - q: Is the pet fee charged per dog?
@@ -158,24 +158,13 @@ research:
 approvedBy: Paws & Passage Editors
 approvedOn: 2026-11-18
 ---
+The listing's own number is the only one that counts. Of the 38 managers we read on 2026-11-18 (a convenience sample), 22 cap pets at two, 2 allow three and 14 give no number, so a listing can say "pets welcome" in the title and "2 dogs maximum" in the house rules. Get your exact dog count in writing before you pay, and ask whether any weight limit is per dog or combined. Bringing three? Message the host before you book.
 
-The listing's own pet rule is the only number that counts. Of the 38 managers we read on 2026-11-18 (a convenience sample), 22 cap pets at two, 2 allow three and 14 give no number. Bringing three? Message the host before you book.
+## What do platforms and managers allow?
 
-## The short answer
+[Airbnb](https://www.airbnb.com/help/article/3623) shows two numbers on two pages: guests declare 0 to 5 pets, hosts set one to five. No page we read says which wins when they disagree, so ask the host, then Airbnb: "Your listing limit is [number]. May we bring [number] dogs?" Vrbo handles pets through house rules in text, so read the whole listing, FAQ included.
 
-- Get your exact dog count in writing before you pay. A listing can say "pets welcome" in the title and "2 dogs maximum" in the house rules.
-- Limits hide in odd places: [Twiddy](https://www.twiddy.com/outer-banks/guests/pets/) sets two unless a home advertises more.
-- Weight limits run from 60 pounds per dog down to under 35 (table below). Ask whether yours is per dog or combined.
-
-## How many dogs are allowed at an Airbnb or Vrbo?
-
-[Airbnb](https://www.airbnb.com/help/article/3623) shows two different numbers on two pages: guests declare 0 to 5 pets, hosts set one to five. Whether a host limit of two stops a guest from declaring three is not stated anywhere we read, so ask the host, then Airbnb: "Your listing limit is [number]. May we bring [number] dogs?" A hosting-software explainer updated 2 November 2026 says hosts "can specify whether pets are allowed and, if so, how many", though no Airbnb page repeats that wording.
-
-Vrbo handles pets through house rules in text. Hosts can note pet type and size, with a custom note limited to 50 characters. Read the whole listing, FAQ included.
-
-## What do vacation rental managers allow?
-
-Published limits as of 2026-11-18. Most pages carry no date.
+Managers set weight limits, not platforms, and a manager default often reads "unless advertised", so the listing text beats the general page. Published limits as of 2026-11-18:
 
 | Source | Dogs and size | Extra or unapproved dog |
 | --- | --- | --- |
@@ -183,19 +172,9 @@ Published limits as of 2026-11-18. Most pages carry no date.
 | Brindley Beach, Outer Banks | Two dogs, 60 lb each | Not permitted; eviction without refund |
 | Cabin Rentals of Georgia | No number; each dog approved; under 35 lb | Fees doubled |
 
-Sources for this table, by row: [Twiddy](https://www.twiddy.com/outer-banks/guests/pets/), [Brindley Beach](https://www.brindleybeach.com/node/3691), [Cabin Rentals of Georgia](https://cabin-rentals-of-georgia.com/policies).
+Sources, by row: [Twiddy](https://www.twiddy.com/outer-banks/guests/pets/), [Brindley Beach](https://www.brindleybeach.com/node/3691), [Cabin Rentals of Georgia](https://cabin-rentals-of-georgia.com/policies). Every manager, with its limit, fee and link, is on the [pet policies data page](/data/pet-policies). For big dogs, see [rentals that welcome large dogs](/guides/vacation-rentals-that-welcome-large-dogs).
 
-Other managers are looser: [Vacasa](https://www.vacasa.com/explore/pet-friendly-vacation-rentals) says it varies by home and allows only dogs authorized in the reservation, [AvantStay](https://avantstay.com/vacation-rentals/pet-friendly/california/big-bear) says "up to two" at most Big Bear homes, and [Kinlin Grover](https://www.vacationcapecod.com/kinlin-grover-vacation-rentals-pet-policy/) on Cape Cod gives no number and tells guests to contact their rental agent. A manager default often reads "unless advertised", so the listing text beats the manager's general page.
-
-Across the 38 pet pages we read (Smokies, North Carolina, Georgia, California, Colorado, Florida Gulf Coast), single stated fees run from $20 a night to a $300 one-time charge, and three managers charge nothing on the homes we saw. Only 5 mention breed limits. Every manager, with its limit, fee and link, is on the [pet policies data page](/data/pet-policies).
-
-## Is there a weight limit for dogs in a vacation rental?
-
-Hosts and managers set weight limits, not platforms: 60 pounds per dog at Brindley Beach, under 35 pounds at Cabin Rentals of Georgia. Twiddy sets none but says individual homes may restrict number, size or type. No standard says whether a limit is per dog or combined, so ask. For big dogs, see our guide to [rentals that welcome large dogs](/guides/vacation-rentals-that-welcome-large-dogs).
-
-## Two dogs: what the wording really means
-
-"Two dogs allowed" can still leave your two dogs out. [Airbnb](https://www.airbnb.com/help/article/86) advises contacting the host even when a listing allows pets and naming the animals you are bringing; the "Allows pets" filter does not show that every size or combination is accepted. Weight wording is where it goes wrong:
+"Two dogs allowed" can still leave your two dogs out. [Airbnb](https://www.airbnb.com/help/article/86) advises contacting the host even when a listing allows pets and naming the animals you are bringing. Weight wording is where it goes wrong:
 
 | Listing wording | What you still need to know |
 | --- | --- |
@@ -205,41 +184,37 @@ Hosts and managers set weight limits, not platforms: 60 pounds per dog at Brindl
 | "Maximum two pets" | Per unit, reservation or traveling party? |
 | "Larger dogs by arrangement" | Is the exception approved for your booking? |
 
-Also check the layout before you pay:
+## Booking two or more dogs: worksheet
 
-- **Two usable zones.** Bedroom count says little. Look for two resting spots away from the entrance, two feeding areas you can physically separate, and a bedroom door that latches. A studio may have no secure separation; a small one-bedroom with a door can work well.
-- **A way to split meals.** Ask the host about a closed bedroom door first; with one, you may need no hardware. In an open-plan cabin, a gate or crate does the job.
+For each booking, get these answers and write them down. Copy the host's reply into your notes.
 
-For that open-plan case, a pressure-mounted gate splits a kitchen or hallway without tools. The MyPet Universal Petgate stands 26 inches high and fits openings of 26 to 42 inches, so measure first. Skip it if your dogs clear 26 inches or you would use it at a stair top (the maker says never, on tension alone), and ask the host before using any hardware mount.
+- [ ] **Count.** The exact number of dogs the host approves, in writing.
+- [ ] **Weight and breed.** The limit, and whether it is per dog or combined. Only 5 of the 38 managers mention breed limits, so ask if yours could be an issue.
+- [ ] **Fee model.** Per pet, per night, per booking or per pet per night. [Airbnb](https://www.airbnb.com/help/article/3623) lists all four, so the same pet can cost $60 or $200.
+- [ ] **Total for your dates and dogs**, and whether it shows in the checkout total. Our [pet fees guide](/guides/how-vacation-rental-pet-fees-work) prices each unit.
+- [ ] **House rules for your dogs.** Crate, yard and alone-time rules, in case they differ from the listing.
+- [ ] **Where each dog rests and eats.** Two resting spots away from the entrance, two feeding areas you can separate, and a bedroom door that latches. A closed door may be all you need; in an open-plan cabin a gate or crate does the job.
+- [ ] **Written approval** in the booking thread, before you pay.
+
+**What two dogs add.** Of the 38 managers, nine state a per-pet amount you can turn into a two-dog total: $100 to $600, median $150, before tax. Per-night fees multiply: Cabin Rentals of Georgia's $50 per pet per night comes to $500 for two dogs over five nights. The sample is 38 managers we chose and read on 2026-11-18, only those that state an amount; it is not the market. Method: nine stated per-pet amounts, doubled (or first plus second pet where stated), Hearthside at its 35 lb tier, St. Simons at its under-14-day rate, computed by script from the [public CSV](/pet-policies-38-managers.csv).
+
+For splitting meals in an open plan, a pressure-mounted gate works without tools. The MyPet Universal Petgate fits openings of 26 to 42 inches, so measure first. Skip it if your dogs clear 26 inches or you would use it at a stair top (the maker says never, on tension alone), and ask the host before using any hardware mount.
 
 {{pick:north-states-mypet-universal-petgate|For splitting meals in an open plan|26 inches high, fits openings of 26 to 42 inches, with a no-tools pressure mount or an optional hardware mount; the maker says never to use a tension-held gate at the top of stairs.|https://northstatesind.com/north-states-mypet-universal-petgate/}}
 
-A folding crate works if both dogs already rest in one at home: the iCrate folds flat for meals and rest time. Skip it if either dog has never been crated, because a rental is the wrong place to start.
+A folding crate works if both dogs already rest in one at home. Skip it if either dog has never been crated, because a rental is the wrong place to start.
 
 {{pick:midwest-icrate-dog-crate|For a dog already crate trained|Sizes from 18 to 48 inches, single or double door, a divider panel, a removable leak-proof pan and rubber floor feet; the maker says it folds flat.|https://www.midwesthomes4pets.com/product/dogs/crates-carriers-kennels/icrate-dog-crate/}}
 
 More options are on our [pens and gates page](/gear/pens-and-gates); the [pet-friendly rental checklist](/guides/pet-friendly-vacation-rental-checklist) covers the rest of the packing.
 
-## What do extra dogs cost?
-
-[Airbnb](https://www.airbnb.com/help/article/3623) names four fee models (per booking, per night, per pet, per pet per night), so the same pet can cost $60 or $200; at [My Vacation Haven](https://www.myvacationhaven.com/pet-policy), for example, two pets cost $350 non-refundable before taxes and the admin fee. Our [pet fees guide](/guides/how-vacation-rental-pet-fees-work) prices each unit and shows what to ask for in the total.
-
-## What if you bring more dogs than the listing allows?
-
-Managers treat it as a serious violation: Twiddy calls it cause for termination of tenancy, Brindley Beach says eviction without refund, and Cabin Rentals of Georgia says "all pet fees will be doubled". What the platforms do is not stated, so settle the number before you book.
-
-## Do puppies and service animals count?
-
-- **Puppies:** none of the policies that give a number exempt them, so mention any puppy up front.
-- **Service animals:** [Airbnb](https://www.airbnb.com/help/article/3623) says they always stay for free, and hosts must allow one to accompany its owner. The ADA FAQ discusses hotel cleaning charges for service-animal hair or dander, not vacation rentals. No source we read says whether a service animal counts toward a numeric cap, so ask the host or manager early.
-
-## How do you ask for a third dog?
+## How do you ask for a second or third dog?
 
 Hosts cite insurance, noise, hair, local caps and neighbours, so answer those in one clear message. Copy and edit:
 
-> Hi [Host], we are interested in [dates]. We would bring [number] dogs: [breed, weight and age of each]. All are house-trained and current on vaccines. Your listing allows pets but [does not give a number / says two]. Would you consider [number] dogs? Is there a weight limit per dog or combined? What is the total pet charge for our dates, and will it appear in the checkout total? We are happy to use covers on furniture and keep the dogs off beds, and we will feed them in separate spaces. If yes, please confirm here in writing.
+> Hi [Host], we are interested in [dates]. We would bring [number] dogs: [breed, weight and age of each]. All are house-trained and current on vaccines. Your listing allows pets but [does not give a number / says two]. Would you consider [number] dogs? Is there a weight limit per dog or combined? What is the total pet charge for our dates, and will it appear in the checkout total? We are happy to use covers on furniture and keep the dogs off beds, and we will feed them in separate spaces. Is there a bedroom door we can close to give them a quiet place to rest? If yes, please confirm here in writing.
 
-If the answer is no, do not bring the dog and hope it goes unnoticed.
+If the answer is no, do not bring the dog and hope it goes unnoticed. An unapproved extra dog is the fastest way to lose a booking: see the table above for Twiddy, Brindley Beach and Cabin Rentals of Georgia.
 
 Before you book:
 
@@ -248,6 +223,7 @@ Before you book:
 - [ ] You know the weight limit and whether it is per dog or combined.
 - [ ] You have the total pet charge for your dates and dog count.
 - [ ] You declared the true number of pets when you booked.
-- [ ] Any service animal or puppy has been mentioned to the host.
+- [ ] Any service animal or puppy has been mentioned to the host. [Airbnb](https://www.airbnb.com/help/article/3623) says service animals always stay for free, but no source we read says whether one counts toward a numeric cap, so ask early; none of the policies that give a number exempt puppies.
+- [ ] Two resting spots and a door that latches.
 
 **Next step:** add up the pet charges for your dog count and dates with our [pet fees guide](/guides/how-vacation-rental-pet-fees-work), then work down our [pet-friendly rental checklist](/guides/pet-friendly-vacation-rental-checklist) and the [trip checklist tool](/tools/checklist).

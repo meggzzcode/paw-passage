@@ -10,10 +10,10 @@ Who updates it: Claude Code, from Cowork returns (`docs/cowork/FINAL_PRE_SALE_BR
 
 | Item | Status | Evidence or reason |
 |---|---|---|
-| Target commit | READY | `daa758f` (see Release manifest). Code checkpoint complete: disclosure page, settings tests and owner decision document landed in `6590f0b`; methodology and editorial-standards wording aligned in `daa758f`. |
+| Target commit | READY | `613a27d` (last code or content commit; later commits are documentation only). Includes everything in `daa758f` plus: heat-guide water instruction fix (`edbd6e0`), repo cleanup (46 unused UI files, 38 unused dependencies, unused photo module, orphaned calculator lib), wipes card name, buyer guide docs. The already-built Netlify artifacts (`9848745`, `7fc3f3b`) do NOT contain the heat-guide fix or the cleanup, so they must not be published as the final release; one new build is required. |
 | Current production commit | PASS | Production runs `main@82b0b34` (published 2026-11-25 8:33 PM, 32s build, per Cowork), replacing `dbfa280`. This is BEFORE the final code commit `daa758f`: live still has the 11px article notice, no first-product notice and `affiliate-only` mode. Claude's own public fetch on 2026-11-25 confirmed the build is the new generation (see Live deployment). |
-| Code verification | PASS | On `daa758f`, 2026-11-25: tsc, eslint, 785 tests, production build, `verify-site` 321/321, netlify-ignore rows, sitemap 103 (details in the manifest). Earlier evidence: `docs/FINAL_SALE_CODE_RELEASE.md` section 4 records tsc, eslint, 771 tests, build and 319 `verify-site` checks passing for commit `9797221` (2026-11-24). `docs/PRESALE_BROWSER_QA_RESULTS.md` records 147 local Chromium page checks and 5 journeys passing after fixes (commit `84c0577`), with 286 `verify-site` checks. The local browser QA (147 checks, 5 journeys) ran on `84c0577`; later commits changed the disclosure page, planner wording and two policy pages only. |
-| Live deployment | PASS (partial) | Deployed by Cowork on the owner's instruction. Claude public checks of https://www.pawsandpassage.com: sitemap 103 URLs; town things-to-do 200; `/tools/packing-list`, `/gear`, `/gear?trip=cabin-stay` 200; retired weight-limit URL 301 to the large-dog guide; `scripts/verify-site.mjs` 321 passed, 0 failed. NOT yet live: commit `daa758f` (public-sources mode, 14px notices, first-card notice). A second deploy of the final commit needs the owner's approval (about 15 credits). |
+| Code verification | PASS | On `613a27d`, 2026-11-25: tsc clean; eslint --quiet clean; vitest 783 passed in 61 files; production build OK; `verify-site` 321/321 (port 4800); sitemap 103 (23 stay URLs); `scripts/test-netlify-ignore.mjs` all rows pass; `npm audit` 0 vulnerabilities; doc link check 187 links, 0 broken; audit-seller-ids reports the 5 seller identifier kinds the buyer must replace. Independent heat-guide read: FIXED AND SAFE (`docs/review/HEAT-GUIDE-FINAL-READ-2026-11-25.md`). Live review of production `82b0b34`: no P0, no P1 (`docs/LIVE_REVIEW_2026-11-25.md`). |
+| Live deployment | BLOCKED | Production runs `main@82b0b34`. Final release needs ONE new Netlify build of `613a27d` or later (about 15 credits; Cowork read 45 credits on 2026-11-25; builds are Stopped; auto-publishing is locked so Publish deploy is also needed). Owner authorization for that second build: PENDING. |
 | Owner decision: stay directory mode | PASS | Owner approved `public-sources` on 2026-11-25; implemented in `daa758f` (`content/settings.yml`), tested (`src/test/stay-directory-mode.test.ts`, `stay-mode-public-sources.test.ts`). C1 must confirm it on the live site. |
 | Owner decision: disclosure wording | READY | `/affiliate-disclosure` rewritten (`6590f0b`) to match the real behaviour and the active stay mode; `/methodology` and `/editorial-standards` aligned (`daa758f`). Proposed text and five items for owner or legal review: `docs/OWNER_DECISION_STAY_MODE.md` section 'Disclosure wording'. Owner approved in principle 2026-11-25 with a legibility correction, implemented in `daa758f`: notices are now 14px (were 11px) and the first product card in each article repeats the notice beside its buy button. Legal uncertainty stays flagged for owner review (`docs/OWNER_DECISION_STAY_MODE.md`); not certified compliance. |
 | Owner decision: deploy approval | PASS | Owner said "yes deploy" on 2026-11-25; one deploy ran (`82b0b34`). The final commit `daa758f` needs a second deploy: approval PENDING. |
@@ -29,7 +29,7 @@ Who updates it: Claude Code, from Cowork returns (`docs/cowork/FINAL_PRE_SALE_BR
 | Search Console | UNVERIFIED | Historical figures (236 impressions, 0 clicks, 21 of 23 inspected indexed) describe the older build. No post-release baseline. |
 | Buyer presentation | NOT STARTED | 19 walkthrough screenshots not captured; no video exists; listing draft in `docs/SALE_LISTING_DRAFT.md` not checked against the live site. |
 | Exact remaining blockers | BLOCKED | (1) C0 preflight not yet run. (2) Owner enables builds and deploys once; C1 verification. (4) C2 affiliate and journey checks. (5) C5 screenshots and draft preview. (6) Owner approval to publish. Not blockers: CMS publish loop (disclosed as unverified), Search Console growth review, real-device VoiceOver/Android (listing must not claim them if not done). |
-| Next responsible party | READY | Claude Code: done (final code checkpoint `daa758f`). Cowork: C0 may run now. Owner: after C0 passes, confirm credits and deploy once (target commit `daa758f` is final unless C0 finds a P0). |
+| Next responsible party | READY | Claude Code: done (final code commit `613a27d`). Cowork: C0 may run now. Owner: after C0 passes, confirm credits and deploy once (target commit `daa758f` is final unless C0 finds a P0). |
 
 ## Release manifest
 
@@ -37,15 +37,15 @@ To be filled by the code checkpoint from the target commit's build. Do not fill 
 
 | Field | Value |
 |---|---|
-| TARGET_COMMIT | `daa758f` (last code commit; every later commit is documentation only, so the deployed build of a later `main` is code-identical). Verify with `git diff --stat daa758f origin/main -- src content netlify.toml package.json` showing nothing. |
-| Date and time of manifest | 2026-11-25, counted on a production build of `daa758f` served locally |
+| TARGET_COMMIT | `613a27d` (last code or content commit; every later commit is documentation only; verify with `git diff --stat 613a27d origin/main -- src content netlify.toml package.json` showing nothing) |
+| Date and time of manifest | 2026-11-25, counted on a production build of `613a27d` served locally (port 4800) |
 | SITEMAP_URL_COUNT | 103 |
 | TOOL_COUNT | 3 (packing planner, will-my-dog-be-accepted, rental checklist); no calculators |
 | PUBLISHED_GUIDE_COUNT | 29 published, 3 drafts (the no-pets-rental draft returns 404 by design) |
 | STAY_COUNTS_AND_INDEXING_MODE (files, listed, indexable, host-confirmed, `stayDirectoryMode`) | 83 files; 78 listed; 23 indexable (in the sitemap); 55 listed but noindex; 5 hidden; 0 host-confirmed; `stayDirectoryMode: "public-sources"` (owner-approved 2026-11-25; counts identical in both modes while the seller Vrbo links exist; with them removed `public-sources` keeps 78 / 23; see `docs/OWNER_DECISION_STAY_MODE.md`) |
 | ACTIVE_GEAR_COUNT (products, categories, trip collections) | 65 active products of 92 records; 11 categories; 5 trip collections; 0 unreachable products (`docs/PACKING_GEAR_COVERAGE.md`) |
 | Things-to-do articles | 8 (`/destinations/<state>/<town>/things-to-do`) |
-| Local checks on the target (tsc, eslint, tests, build, `verify-site` count) | tsc clean; eslint --quiet clean; vitest 785 passed in 62 files; production build OK; `verify-site` 321 checks passed, 0 failed (port 4470, 2026-11-25); `/stays` plus 23 stay URLs in the sitemap; `scripts/test-netlify-ignore.mjs` all rows pass; sitemap 103 URLs |
+| Local checks on the target (tsc, eslint, tests, build, `verify-site` count) | tsc clean; eslint --quiet clean; vitest 783 passed in 61 files; build OK; `verify-site` 321 passed, 0 failed; sitemap 103 with 23 stay URLs; netlify-ignore rows pass; npm audit 0 |
 | SIGNATURE_STRINGS (planner title and button, "Shop by trip", disclosure sentence, retired-URL redirect target) | Planner: H1 "Pack for your next adventure.", button "Build my packing list", sections "A few extras worth considering" and "Things to pick up before you go"; Gear: "Good gear. Better getaways." and "Shop by trip"; Amazon sentence "As an Amazon Associate I earn from qualifying purchases."; `/guides/vacation-rentals-with-no-dog-weight-limit` 301 to `/guides/vacation-rentals-that-welcome-large-dogs`; no "Check the current price" text; no `[[n]]` numbers |
 
 Historical counts for older commits stay in `docs/FINAL_SALE_CODE_RELEASE.md` and `docs/buyer/ROUTE_AND_ASSET_COUNTS.md`, labelled with the commit at which they were counted.
@@ -58,3 +58,22 @@ Historical counts for older commits stay in `docs/FINAL_SALE_CODE_RELEASE.md` an
 | 2026-11-25 | Affiliate disclosure wording | Truthful, mode-aware `/affiliate-disclosure` kept; make notices legible on mobile and close to recommendations in long guides. | APPROVED in principle; implemented `daa758f`; legal uncertainty flagged |
 | 2026-11-25 | Deploy | Owner said "yes deploy" (one production deploy of `main`, `docs/cowork/DEPLOY_NOW.md`). Builds are still off; not yet performed. | Approved, not executed |
 | 2026-11-25 | Marketplace publication | Not authorized. A draft preview only is allowed (C5). | Not authorized |
+
+## Cowork read-only follow-up (2026-11-25) and triage
+
+| Finding | Triage |
+|---|---|
+| Credits 45 (62 production deploys / 930 credits used); about 15 per build; builds Stopped | Enough for one more build (leaves about 30). |
+| 9848745 and 7fc3f3b built (not published) although docs-only | Not a defect: Netlify compares with the last built deploy, and the diff included code. Keep builds Stopped except for the one planned build. |
+| Node: build used 22.23.5; UI setting says 24; netlify.toml says 22 | OPTIONAL: align (keep 22, remove the UI override). |
+| Certificate: apex 'renewal incomplete', expires 2027-02-14 | OWNER, later; documented in the buyer guide. |
+| Namecheap: Change Ownership (account to account) has no 60-day wait; outside-registrar Transfer Out waits about 60 days from 2026-11-16 (about 2027-01-15, Cowork arithmetic from public help pages); Domain Lock ON | Plan the sale handover as an account-to-account Change Ownership through escrow. |
+| Search Console data only 2026-11-16 to 11-23: 0 clicks, 306 impressions, position 17.4, 47 queries; top page was the now-404 no-pets-rental draft (83 impressions); GSC sitemap read 2026-11-23 with 98 URLs; 0 external links | Baseline recorded; DEFERRED WITH DISCLOSURE (no established traffic). Decision for the owner: 301 the draft URL to a relevant live guide (optional). |
+| GA4 Oct 28 to Nov 24: 527 sessions, 513 Direct, 11 'Paid Search' (nothing paid runs), no Organic Search | Disclose: mostly direct (owner and testing), property predates the domain; no traffic claims. |
+| MidWest 42-inch pen (B005OCWML4) 'Currently unavailable' | P1-OPTIONAL: Cowork to check B002904LZE (36-inch) and the 48-inch listing; swap the ASIN or turn the affiliate off (turning off breaks 3 packing/guide tests and removes 3 guide cards, so do it only with a replacement plan). Not a deploy blocker. |
+| Ramp and AMK kit in stock again; repo has them OFF | OPTIONAL owner decision. |
+| Wipes card said pack of 8, Amazon lists pack of 4 | Fixed in `613a27d` (card now says 8 wipes per pack). |
+| Two untagged Amazon 'Source' links | Intentional (plain source citations). |
+| `/data/pet-policies`, `/tools/packing-list` 'no referring sitemap' | Not an issue: both are in the live sitemap.xml (checked 2026-11-25); GSC read the sitemap on 11-23. |
+| `/affiliate-disclosure` 'every button labelled' | Not an issue: the live page was already rewritten and has no such sentence; the final build adds mode-aware text. |
+| Live review P2s: sitemap has no lastmod; 22 bot-blocked source URLs; stale Airbnb/Psychology Today source labels; dated Asilomar closure sentence; 4 Amazon items to check stock (kurgo cargo cape, kong classic, vittles vault, midwest pen); town-page CLS 0.14 to 0.18 on live (0.04 to 0.06 on final build) | OPTIONAL; none blocks the deploy; re-measure town-page CLS after the final deploy. |

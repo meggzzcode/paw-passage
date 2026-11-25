@@ -328,7 +328,7 @@ Google Search Console (domain property `pawsandpassage.com`, or note the URL-pre
 3. Pages report headline: indexed versus not indexed and the exclusion reasons.
 4. URL Inspection for key URLs (home, `/guides/bringing-a-dog-to-a-no-pets-rental` and `/guides/pet-friendly-listing-red-flags` (the republished guides: inspect only; record the status and the live-page test result, make no indexing request unless the owner separately authorizes it), `/guides/how-vacation-rental-pet-fees-work`, `/data/pet-policies`, `/tools/packing-list`, one things-to-do URL): fetchable, canonical accepted; confirm the new pages are crawlable.
 5. GA4: traffic sources and engagement for the same date range.
-6. Bing (optional): site added/verified, sitemap status and discovered count, and whether the IndexNow key file `https://www.pawsandpassage.com/c020721357f8d6912ac3f66e4c956986.txt` returns 200. Read-only.
+6. Bing (DEFERRED by the owner 2026-11-25: skip; the IndexNow key file returns 200): site added/verified, sitemap status and discovered count, and whether the IndexNow key file `https://www.pawsandpassage.com/c020721357f8d6912ac3f66e4c956986.txt` returns 200. Read-only.
 
 *Part 2: later growth review (separate, after recrawl)*
 Monitor impressions and clicks for `/guides/bringing-a-dog-to-a-no-pets-rental` and report them as observed, without claiming an immediate ranking recovery. Repeat the exports after the recrawl window and compare with the Part 1 baseline. Do not read rankings in the first 2 to 4 weeks after a deploy.

@@ -170,7 +170,7 @@ research:
 
 1. **Get the dog out of the heat** to shade or air conditioning ([AKC](https://www.akc.org/expert-advice/health/heat-stroke-in-dogs/)).
 2. **Call a vet or an emergency vet now**, on the way if possible, and tell them the dog's temperature if you can take it.
-3. **Cool the dog with cool (not cold) water.** Wet the dog's body, fan it, and offer small sips of water ([AKC](https://www.akc.org/expert-advice/health/heat-stroke-in-dogs/), [Cornell Vet](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/heatstroke-medical-emergency)).
+3. **Cool the dog with cool (not cold) water.** Wet the dog's body, fan it, and offer water only if the dog is alert and able to drink; never force it ([AKC](https://www.akc.org/expert-advice/health/heat-stroke-in-dogs/), [Cornell Vet](https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/heatstroke-medical-emergency)).
 4. **Do not use ice-cold water or ice baths.** [AKC](https://www.akc.org/expert-advice/health/heat-stroke-in-dogs/) says extremely cold water can cause shock.
 5. **Even if the dog seems better, a vet check is needed** ([AKC](https://www.akc.org/expert-advice/health/heat-stroke-in-dogs/)).
 

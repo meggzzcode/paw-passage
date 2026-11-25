@@ -240,6 +240,8 @@ A $0 pet fee does not settle what happens if the dog leaves mud, hair or an acci
 
 ## What to ask the host
 
+A "no pet fee" claim is worth checking like any other; see [how to spot a pet-friendly listing that isn't](/guides/pet-friendly-listing-red-flags).
+
 If a listing you like says no pets, that is a different question: see [how to ask a host for an exception](/guides/bringing-a-dog-to-a-no-pets-rental).
 
 - "Do you charge a pet fee, a pet deposit, or a pet cleaning fee for [number] dog(s) on [dates]?"

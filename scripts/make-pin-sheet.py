@@ -14,7 +14,6 @@ SITE = "https://www.pawsandpassage.com"
 OUT = "docs/pinterest-pins.csv"
 BOARDS = {  # guide slug -> ONE primary board (see docs/PINTEREST-SETUP.md for the table and boards still waiting for content)
     "airbnb-pet-damage-charge-after-checkout": "Vacation Rental Planning",
-    "breed-restrictions-at-vacation-rentals": "Vacation Rental Planning",
     "bringing-a-dog-to-a-no-pets-rental": "Vacation Rental Planning",
     "can-dogs-go-in-a-rental-pool-or-hot-tub": "Vacation Rental Planning",
     "can-you-leave-a-dog-alone-in-a-vacation-rental": "Vacation Rental Planning",

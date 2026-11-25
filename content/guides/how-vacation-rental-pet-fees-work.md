@@ -199,7 +199,7 @@ A cleaning fee charged to every guest is not a pet surcharge, and a cleaning cha
 
 [Airbnb](https://www.airbnb.com/help/article/3623) shows a pet fee in the nightly rate and checkout total once you say how many pets are coming. [Vrbo](https://help.vrbo.com/articles/About-Price-Display) lists pets, cleaning and extra guests as standard fee categories, with mandatory and service fees in displayed prices and taxes by checkout.
 
-Because Airbnb can fold a pet fee into the nightly rate, a displayed nightly number is not necessarily the billing unit: a $100 per-stay fee shows as $50 a night over two nights and $20 over five. On [Airbnb](https://www.airbnb.com/help/article/86), tell the host about your pets even at a property that allows them; a pet-friendly label does not settle size, breed or count. On [Vrbo](https://help.vrbo.com/articles/How-do-I-manage-my-fees), hosts can send a payment request to add a charge to an existing reservation.
+Because Airbnb can fold a pet fee into the nightly rate, a displayed nightly number is not necessarily the billing unit: a $100 per-stay fee shows as $50 a night over two nights and $20 over five. On [Airbnb](https://www.airbnb.com/help/article/86), tell the host about your pets even at a property that allows them; a pet-friendly label does not settle size, breed or count (see how to [spot a pet-friendly listing that isn't](/guides/pet-friendly-listing-red-flags)). On [Vrbo](https://help.vrbo.com/articles/How-do-I-manage-my-fees), hosts can send a payment request to add a charge to an existing reservation.
 
 ## Check suitability before you compare
 

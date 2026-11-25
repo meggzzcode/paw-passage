@@ -35,7 +35,7 @@ These are screening questions, not engineering specifications. For two dogs, ass
 
 ## Decode the listing before you contact the host
 
-Read the description, captions and recent dog-owner reviews for "fence," "gate," "shared," "driveway," "pool" and "unattended," and treat contradictions as questions.
+Read the description, captions and recent dog-owner reviews for "fence," "gate," "shared," "driveway," "pool" and "unattended," and treat contradictions as questions. A gated deck is not a fenced yard; our guide to [pet-friendly listings that fall short](/guides/pet-friendly-listing-red-flags) has a real example.
 
 - **"Fenced property"** may describe outer acreage, not a dog-accessible yard. **"Enclosed patio"** may be a small paved space, **"gated community"** describes a neighborhood entrance, and **"private yard"** says nothing about fencing.
 - **"Natural boundary"** may be a hedge or terrain change; ask whether a physical barrier continues behind it. **"Dog run"**: request dimensions, surface, shade and access route. **"Secure"** is an opinion until construction and management details are supplied.

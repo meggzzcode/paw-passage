@@ -126,11 +126,6 @@ export const imageCredits: ImageCredit[] = [
       "https://unsplash.com/photos/a-dog-laying-on-top-of-a-couch-next-to-a-window-tj3KKeRGJ50",
   },
   {
-    key: "guide-breed",
-    photographer: "Joel Moysuh",
-    unsplashUrl: "https://unsplash.com/photos/adult-tan-and-black-rottweilfer-face-_lJHFKpWDAU",
-  },
-  {
     key: "guide-senior",
     photographer: "Jack Plant",
     unsplashUrl:

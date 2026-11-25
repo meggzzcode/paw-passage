@@ -36,7 +36,7 @@ An unanswered preference can wait. An unanswered deal-breaker cannot.
 
 ## Permission (check 1)
 
-Check the exact unit, not the manager's portfolio. [Vrbo's house-rules guidance](https://help.vrbo.com/articles/what-are-house-rules) lets hosts state pet type, number and size limits, so read them instead of trusting the pet-friendly filter.
+Check the exact unit, not the manager's portfolio. [Vrbo's house-rules guidance](https://help.vrbo.com/articles/what-are-house-rules) lets hosts state pet type, number and size limits, so read them instead of trusting the pet-friendly filter; our guide to [spotting a pet-friendly listing that isn't](/guides/pet-friendly-listing-red-flags) shows the usual gaps.
 
 - [ ] Count, weight (per dog or combined), breed and age limits written down.
 - [ ] Approval received in the booking channel, naming each dog and the dates.

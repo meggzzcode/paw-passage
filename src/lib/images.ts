@@ -85,8 +85,6 @@ import guideNye from "@/assets/guide-nye.jpg";
 import guideNyeCard from "@/assets/guide-nye-card.jpg";
 import guideAlone from "@/assets/guide-alone.jpg";
 import guideAloneCard from "@/assets/guide-alone-card.jpg";
-import guideBreed from "@/assets/guide-breed.jpg";
-import guideBreedCard from "@/assets/guide-breed-card.jpg";
 import guideSenior from "@/assets/guide-senior.jpg";
 import guideSeniorCard from "@/assets/guide-senior-card.jpg";
 import guideDamageCharge from "@/assets/guide-damage-charge.jpg";
@@ -305,11 +303,6 @@ const stockImages = {
     src: guideAlone,
     card: guideAloneCard,
     alt: "A slim brindle dog in a blue coat sleeping alone on a tan leather sofa beside a bright window",
-  },
-  "guide-breed": {
-    src: guideBreed,
-    card: guideBreedCard,
-    alt: "Close portrait of a black and tan Rottweiler with its mouth open in a relaxed smile, with soft blurred water behind",
   },
   "guide-senior": {
     src: guideSenior,

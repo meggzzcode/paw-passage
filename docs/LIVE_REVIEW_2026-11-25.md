@@ -16,7 +16,7 @@ No code or content was changed, so no fix commit exists; this report is the only
 |---|---|---|
 | Sitemap crawl | 103 of 103 URLs | all 200 with no redirect; canonical absolute https, www host and equal to the URL on all 103; no robots meta on any (all indexable); exactly one H1 on all 103; titles 20 to 60 characters and descriptions 123 to 155, no duplicate titles; every page has 1 to 3 JSON-LD blocks and all parse; no `[[`, `{{`, `undefined`, `NaN`, `TODO` or "Check the current price" in visible text; no duplicated FAQ section |
 | Browser load, 25 pages | 390 and 1280 (15 of them also at 320) | 65 + 50 page loads: no horizontal overflow at 320, 390 or 1280, no console errors, no failed requests other than analytics beacons I aborted myself, no broken visible image |
-| Live vs local daa758f | 103 pages | 38 pages differ, all explained by the expected differences (see below); 65 pages are byte-for-byte equal in text, links, title, canonical, JSON-LD and share images |
+| Live vs local daa758f | 103 pages | 38 pages differ, all explained by the expected differences (see below); 65 pages are equal in visible text, link and image sets, title, canonical, JSON-LD block count and share images (not compared byte for byte) |
 | Headers and redirects | see section 2 | all as designed |
 | Share images | 38 distinct og:image and twitter:image URLs | all 200 image/jpeg, all absolute https |
 | Outbound links | 348 distinct non-Amazon external URLs | 0 broken (no 404, 410, 5xx, timeout); 1 "soft" (expected); 22 unverifiable by script; 63 moved permanently |
@@ -32,7 +32,7 @@ No code or content was changed, so no fix commit exists; this report is the only
 2. 37 pages (29 guides and 8 town things-to-do pages) have one extra affiliate notice beside the first product card in the local build; live has none there. Expected (one notice beside the first card). In each of these 37 the only text change is that single inserted notice; hrefs, titles, canonicals, JSON-LD and images are identical.
 3. Notice size (12 px live, 14 px local) is CSS only, so it does not show in the text diff. Not measured separately.
 
-No other page differs. The stays directory itself (`/stays`, 22 stay pages in the sitemap) is identical, because every stay already carries an approved affiliate link live.
+No other page differs. The stays directory (`/stays` and the 22 stay pages in the sitemap) is identical in text and links.
 
 ## Findings
 
@@ -239,6 +239,6 @@ layout, misleading commercial statement or heading typo found. Only F8 is worth 
 - Content accuracy of the cited sources themselves, and whether retitled sources (F5) are the same document.
 - Page-by-page reading of all 103 pages: the mechanical checks cover all of them, the human-style read covers 9.
 
-Analytics note: my first browser pass (65 loads) ran before I started aborting analytics beacons, so a small number of
+Analytics note: my first browser pass (65 loads, plus about 10 from an aborted rerun) ran before I started aborting analytics beacons, so a small number of
 GA4 page_view hits from a headless Chrome may have reached the property; every later run aborted them. Filter by that
 afternoon if the numbers matter.

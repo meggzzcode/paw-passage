@@ -3,7 +3,7 @@ import { publisherDisplayName } from "@/content/citations";
 import { productSpecCardHtml } from "@/components/site/ProductSpecCard";
 import { marked, type Tokens, type Token, type TokensList, type Renderer } from "marked";
 import { cn } from "@/lib/utils";
-import { getApprovedLink } from "@/content/affiliates";
+import { AMAZON_DISCLOSURE, getApprovedLink } from "@/content/affiliates";
 import { trackProductClick } from "@/lib/analytics";
 import { getProduct } from "@/content/gear";
 import { resolveProductLink } from "@/content/gear-links";
@@ -253,6 +253,15 @@ export function Markdown({
       },
     )
     .replace(/<\/table>/g, "</table></div>")
+    // The first product card in an article repeats the affiliate notice at the point of recommendation, in readable text,
+    // so a reader who skipped the top of a long guide still sees it beside the first buy button. Once per article.
+    .replace(
+      /(data-pick="[^"]*"[\s\S]*?<\/p>\n)(<\/aside>)/,
+      (_m: string, card: string, close: string) =>
+        /data-aff="/.test(card)
+          ? `${card}<p class="mt-3 text-sm text-muted-foreground">Affiliate link: we may earn a commission at no extra cost to you.${/data-partner="Amazon/i.test(card) ? ` ${AMAZON_DISCLOSURE}` : ""} <a href="/affiliate-disclosure" class="underline">How we earn</a></p>\n${close}`
+          : `${card}${close}`,
+    )
     // A publisher link in parentheses, ([Airbnb](url)), is wrapped so it can be styled quietly.
     .replace(
       /\((<a href="https?:\/\/[^"]+"[^>]*>[^<]*<\/a>(?:, <a href="https?:\/\/[^"]+"[^>]*>[^<]*<\/a>)*)\)/g,

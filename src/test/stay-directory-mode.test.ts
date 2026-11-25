@@ -29,8 +29,8 @@ import { BookingButton } from "@/components/site/BookingButton";
 const SELLER_VRBO = /vrbo\.com\/affiliate\//;
 
 describe("stay directory when seller Vrbo links are removed", () => {
-  it("the shipped default is the current behaviour (affiliate-only)", () => {
-    expect(site.stayDirectoryMode).toBe("affiliate-only");
+  it("the sale configuration is public-sources (owner-approved 2026-11-25); the schema default stays affiliate-only", () => {
+    expect(site.stayDirectoryMode).toBe("public-sources");
     expect(settingsSchema.parse({}).stayDirectoryMode).toBe("affiliate-only");
     expect(settingsSchema.parse({ stayDirectoryMode: "" }).stayDirectoryMode).toBe(
       "affiliate-only",
@@ -45,15 +45,25 @@ describe("stay directory when seller Vrbo links are removed", () => {
     ).toBeGreaterThanOrEqual(78);
   });
 
-  it("DEFAULT mode with the links removed: every stay disappears (0 listed, 0 indexable, no /stays sitemap entry)", () => {
+  it("AFFILIATE-ONLY mode with the links removed: every stay disappears (0 listed, 0 indexable, the sitemap rule follows the shipped mode)", () => {
     flags.linksRemoved = true;
     try {
       expect(allStayRecords().length).toBe(83);
-      expect(visibleStays({ includeSamples: false })).toHaveLength(0);
-      expect(indexableStays(visibleStays({ includeSamples: false }))).toHaveLength(0);
+      expect(visibleStays({ includeSamples: false, mode: "affiliate-only" })).toHaveLength(0);
+      expect(
+        indexableStays(visibleStays({ includeSamples: false, mode: "affiliate-only" })),
+      ).toHaveLength(0);
+    } finally {
+      flags.linksRemoved = false;
+    }
+  });
+
+  it("SHIPPED mode (public-sources) with the links removed: /stays and 23 stay pages stay in the sitemap", () => {
+    flags.linksRemoved = true;
+    try {
       const paths = sitemapEntries().map((e) => e.path);
-      expect(paths.some((p) => p.startsWith("/stays/"))).toBe(false);
-      expect(paths).not.toContain("/stays");
+      expect(paths).toContain("/stays");
+      expect(paths.filter((p) => p.startsWith("/stays/"))).toHaveLength(23);
     } finally {
       flags.linksRemoved = false;
     }

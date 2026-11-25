@@ -13,7 +13,7 @@ export function AffiliateNotice({
   return (
     <aside
       role="note"
-      className="mb-3 rounded-md bg-muted px-2.5 py-1.5 text-[11px] leading-4 text-muted-foreground sm:mb-6 sm:py-2 sm:text-sm sm:leading-snug"
+      className="mb-4 rounded-md bg-muted px-3 py-2 text-sm leading-snug text-muted-foreground sm:mb-6"
     >
       Some links are affiliate links; we may earn a commission.{" "}
       {usage.anyAmazon && <>{AMAZON_DISCLOSURE} </>}

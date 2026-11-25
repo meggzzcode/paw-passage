@@ -55,7 +55,7 @@ What transfers is set by your signed purchase agreement. This table describes wh
 | Gear catalog                    | Yes                                | 92 product records, 65 active, 11 categories, 5 trip collections.                                                          |
 | Packing planner and other tools | Yes                                | 3 tools: packing planner (37 items), "Will my dog be accepted?", before-you-book checklist. No calculators.                |
 | Images and licenses             | Photos are licensed, not owned     | Credited Unsplash photos. The Unsplash license is nonexclusive: you may use them, you do not own them, and others may too. |
-| Pinterest and social assets     | Image files only                   | 31 pins and 32 share images, derived from the site's photos. No account unless your agreement says so.                     |
+| Pinterest and social assets     | Image files only                   | 31 pins and 32 share images, derived from the site's photos, plus the posting sheet. The seller's Pinterest account (pinterest.com/paws_and_passage) is NOT included unless your agreement says so: see Task H.                     |
 | Documentation                   | Yes                                | This guide and the files in `docs/`.                                                                                       |
 | Hosting configuration           | Yes                                | `netlify.toml` in the repository. The Netlify project itself is transferred or recreated as agreed (section 3).            |
 | Affiliate infrastructure        | The wiring, yes; the accounts, no  | Links, tags and disclosures are set up. Section 5.                                                                         |
@@ -209,7 +209,16 @@ After any task, save, wait for the build, and check the live page (section 6).
 - **Needs file edits beyond the CMS:** a new domain also needs the `Sitemap:` line in `public/robots.txt` and the address in `scripts/site-health.mjs`; the footer and legal-page owner names are code files (`src/routes/*.tsx`).
 - Screenshot pending (buyer-05-business-settings).
 
-> **Label trap.** The "Which stays are listed" drop-down text still says to leave it on "Only stays with an approved affiliate link (current behaviour)". The shipped value is the second choice, "Also stays with a plain public Vrbo or Airbnb source link (no commission)". The form label is out of date. OWNER ACTION REQUIRED: do not switch this setting because of that label. Read section 5 first.
+> **Stay setting.** The "Which stays are listed" drop-down has two choices. The shipped value is "Also stays with a plain public Vrbo or Airbnb source link (no commission)" (`public-sources`). The other choice is labelled as the older mode: with it, the directory empties if the seller's Vrbo links are removed. Read section 5 before changing it. (VERIFIED IN CODE: the label was corrected on 2026-11-25; Cowork saw the form on `main`.)
+
+### Task H. Pinterest: the account, the pins and how to post
+
+- **The account.** The seller has a Pinterest account at **https://www.pinterest.com/paws_and_passage/**. Its address is stored in Business settings as "Pinterest profile address" (it controls the footer icon). **The account is the seller's and is NOT part of the sale unless your agreement says so** (OWNER ACTION REQUIRED: the seller decides at closing). Pinterest's rules on handing an account to another person are UNVERIFIED here; read Pinterest's current terms before agreeing to take it over.
+- **The safe path (works either way).** Create your own Pinterest business account, claim `pawsandpassage.com` in its settings, create your boards, and upload the pins you receive. Then replace the Pinterest profile address in Business settings with yours (or empty it).
+- **What you receive.** One pin image per published guide (1000 x 1500 px) in the repository folder `public/pins/`, the posting sheet [docs/pinterest-pins.csv](./docs/pinterest-pins.csv) (pin image address, title, description, destination with tracking, board), the board plan in [docs/PINTEREST-SETUP.md](./docs/PINTEREST-SETUP.md) and the approach in [docs/PINTEREST-STRATEGY.md](./docs/PINTEREST-STRATEGY.md). Marketing-style pin designs made in Canva, if the seller supplies them, are separate image files; the Canva account and designs stay with the seller unless the agreement says otherwise.
+- **Add pins for a new article.** Publish the article, then run `python3 scripts/make-share-images.py` and `python3 scripts/make-pin-sheet.py` (developer step) or design the pin yourself in any design tool at 1000 x 1500 px. Pinterest destinations carry `utm_source=pinterest` so you can see Pinterest visits separately in analytics.
+- **Honest expectations.** Pins can bring referral visitors over weeks; nothing here guarantees traffic. Keep pin titles and descriptions truthful to the article, and follow Pinterest's published guidelines (no repeated spam pins, no bought engagement).
+- **Check:** open the pin's destination link; the guide loads and the page address carries the tracking parameters.
 
 ## 5. Affiliate accounts and monetization
 

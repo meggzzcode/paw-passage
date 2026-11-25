@@ -44,7 +44,7 @@ Fixing class 4: wire the product to a Gear category in `content/products.yml` (`
 | Ruffwear Float Coat Dog Life Jacket (`ruffwear-float-coat`) | Packing item: Dog life jacket | affiliate |
 | Outward Hound Dawson Swim Dog Life Jacket (`outward-hound-dawson-swim-life-jacket`) | Packing item: Dog life jacket | affiliate |
 | Ruffwear Swamp Cooler Cooling Dog Vest (`ruffwear-swamp-cooler`) | Packing item: Cooling pad or vest | affiliate |
-| Adventure Medical Kits Adventure Dog Wipes (pack of 8) (`adventure-medical-kits-dog-wipes`) | Packing item: Paw wipes or a paw cloth | affiliate |
+| Adventure Medical Kits Adventure Dog Wipes (8 wipes per pack) (`adventure-medical-kits-dog-wipes`) | Packing item: Paw wipes or a paw cloth | affiliate |
 | Ruffwear Quencher Collapsible Dog Bowl (`ruffwear-quencher-bowl`) | Packing item: Packable trail water bowl | affiliate |
 | Kurgo Splash Free Wander Dog Water Bowl (`kurgo-splash-free-wander-bowl`) | Packing item: Spill-resistant car water bowl | affiliate |
 | Gunner Dog Bowl with Travel Lid (`gunner-dog-bowl`) | Packing item: Food and water bowls | affiliate |

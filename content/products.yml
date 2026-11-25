@@ -1631,7 +1631,7 @@ products:
       - airbnb-pet-damage-charge-after-checkout
     manufacturerClaimsVsIndependentTesting: none cited
   - id: adventure-medical-kits-dog-wipes
-    name: Adventure Dog Wipes (pack of 8)
+    name: Adventure Dog Wipes (8 wipes per pack)
     brand: Adventure Medical Kits
     aliases:
       - "Adventure Dog Wipes"

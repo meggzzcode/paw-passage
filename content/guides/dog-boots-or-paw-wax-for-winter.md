@@ -28,8 +28,7 @@ relatedGuides:
 relatedProducts:
   - ruffwear-polar-trex-boots
   - soggy-doggy-super-shammy-towel
-relatedTools:
-  - packing-list
+relatedTools: []
 sources:
   - title: How To Protect Your Dog's Paws in the Winter
     url: https://www.petmd.com/dog/care/how-to-protect-dog-paws-in-winter
@@ -208,4 +207,4 @@ This is not veterinary advice. Ask your own vet about an older dog, a dog with a
 
 ## Before you go
 
-Add boots, a towel and wipes to the [packing list tool](/tools/packing-list?trip=road-trip), and see the [cold-weather gear guide](/guides/cold-weather-dog-gear-for-winter-cabin-trips) for coats and cold limits.
+Add boots, a towel and wipes to your [winter road trip plan](/guides/winter-road-trip-with-a-dog), and see the [cold-weather gear guide](/guides/cold-weather-dog-gear-for-winter-cabin-trips) for coats and cold limits.

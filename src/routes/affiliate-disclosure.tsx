@@ -1,42 +1,23 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { InfoPage } from "@/components/site/InfoPage";
 import { pageHead } from "@/lib/seo";
+import { site } from "@/config/site";
+import { AMAZON_DISCLOSURE } from "@/content/affiliates";
+import { affiliateDisclosureBody } from "@/lib/disclosure";
 
 export const Route = createFileRoute("/affiliate-disclosure")({
   head: () =>
     pageHead({
       title: "Affiliate disclosure",
       description:
-        "How Paws & Passage earns money through affiliate links and sponsored listings, and how we keep that separate from our recommendations.",
+        "Where Paws & Passage earns money through affiliate links, where the notices appear, and how our stay and product choices work.",
       path: "/affiliate-disclosure",
     }),
   component: () => (
     <InfoPage
       title="Affiliate disclosure"
-      updated="2026-11-18"
-      body={`Paws & Passage is free to read. To keep it that way, some links on this site may be **affiliate links**. If you click one and then book a stay or buy a product, we may earn a commission from the company, at no extra cost to you.
-
-## How this works in practice
-
-- A link appears only when we have an approved arrangement with that company. Booking buttons appear on a stay page only where we hold an approved link for that listing.
-- Any guide, gear or packing page that contains an affiliate link shows a notice at the top. Every affiliate buy or booking button also carries its own label ("Affiliate link · We may earn a commission if you buy", or "if you book" for stays), and every affiliate link is marked with the \`sponsored\` attribute for search engines.
-- Where a link goes to Amazon, the page also shows Amazon's required statement. As an Amazon Associate I earn from qualifying purchases.
-- We do not show prices or star ratings for products, because they change and we have not tested the products. We choose products using the maker's published specifications and independent standards, and each article says so. See our [methodology](/methodology). Where we have no approved affiliate arrangement, we link to the manufacturer, or to a plain retailer link marked \`nofollow\`.
-- Commissions never decide whether a stay or product is listed, what we say about it, or which details we report. A stay or product with no affiliate link is covered in the same way as one with a link.
-
-## Maps of places to stay
-
-Some pages may show a map of places to stay from our booking partner Stay22. We have not checked those listings and the map cannot filter for dogs, so each map says so and points to our checkers. If you book through the map we may earn a commission at no extra cost to you.
-
-## Sponsored listings
-
-Occasionally a host may pay for extra visibility. "Sponsored" always means a host paid for placement; a commission link is called an "affiliate link". Sponsored stays are always labeled **"Sponsored"**, are held to the same standards, and their pet-policy details are reported exactly as for any other stay.
-
-## Questions
-
-See our [editorial standards](/editorial-standards) or [contact us](/contact).
-
-This disclosure is provided in line with the U.S. Federal Trade Commission's guidance on endorsements.`}
+      updated="2026-11-25"
+      body={affiliateDisclosureBody(site.stayDirectoryMode, AMAZON_DISCLOSURE)}
     />
   ),
 });

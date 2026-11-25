@@ -91,7 +91,7 @@ describe("stay directory when seller Vrbo links are removed", () => {
       expect(html).not.toContain("sponsored");
       expect(html).not.toMatch(SELLER_VRBO);
       expect(html).not.toMatch(/affiliate|commission|earn|verified|approved|partner/i);
-      expect(html).toMatch(/See photos and dates on (Vrbo|Airbnb)/);
+      expect(html).toMatch(/View the listing on (Vrbo|Airbnb)/);
     } finally {
       flags.linksRemoved = false;
     }

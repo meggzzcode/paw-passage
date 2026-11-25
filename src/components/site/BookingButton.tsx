@@ -67,7 +67,7 @@ export function BookingButton({
         }
         className={`${btn} border border-border bg-background text-foreground hover:bg-muted`}
       >
-        {compact || book ? `View on ${name}` : `See photos and dates on ${name}`}
+        {compact || book ? `View on ${name}` : `View the listing on ${name}`}
       </a>
     );
   }

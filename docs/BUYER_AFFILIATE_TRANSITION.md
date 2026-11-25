@@ -94,7 +94,7 @@ A single documented setting, **off by default**, so that the buyer is not forced
 - Setting: `stayDirectoryMode` in `content/settings.yml` (Pages CMS, Business settings, "Which stays are listed").
 - `affiliate-only` (default, exactly today's behaviour): list a stay only while it has an approved affiliate link.
 - `public-sources`: list every stay that has a public Vrbo or Airbnb source address (78 stays, 23 indexable, the same as today), even with no affiliate link. For these stays:
-  - the button is the plain public link ("See photos and dates on Vrbo"), `rel="nofollow noopener"`, **no** "Affiliate link" label, no commission wording, no seller deeplink;
+  - the button is the plain public link ("View the listing on Vrbo"), `rel="nofollow noopener"`, **no** "Affiliate link" label, no commission wording, no seller deeplink;
   - pages keep their existing wording: details "read from the listing, not confirmed with the host", and the "Not confirmed" markers;
   - nothing says the stay is verified, approved, or partnered. A stay that has the buyer's own approved link still shows the affiliate button as usual.
 - Not changed by this mode: no stay is claimed host-verified, no editorial text changes, and no new link type is created.

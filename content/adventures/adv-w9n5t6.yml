@@ -72,9 +72,9 @@ noise: some
 food: false
 water: none
 safety:
-  - Keep your dog on a leash and check the pavement with your hand before walking in hot or icy weather.
-  - Leave any stop where your dog seems stressed. The itinerary is optional.
-  - Meant for adult and senior dogs. It involves public places, so check with your vet about readiness if your dog is young, and keep it voluntary.
+  - "Check pavement with your hand: too hot for you is too hot for paws."
+  - Keep your dog on a leash and follow local leash rules.
+  - "Puppies: ask your vet before public outings."
 activityTypes:
   - outdoor-exploration
   - travel
@@ -92,6 +92,7 @@ keepsake:
   theme: hometown-postcard
   headline: GREETINGS FROM OUR TOWN
   subhead: Wish you were here
+  explainer: "Tourists in our own town, full vacation mode"
 access: free
 status: published
 relatedGuides: []

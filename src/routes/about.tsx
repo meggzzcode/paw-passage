@@ -5,17 +5,17 @@ import { pageHead } from "@/lib/seo";
 export const Route = createFileRoute("/about")({
   head: () =>
     pageHead({
-      title: "About Paw & Passage",
+      title: "About Paws & Passage",
       description:
-        "Paw & Passage makes the Adventure Passport, a collectible set of little adventures to share with your dog, plus researched dog travel and outdoor guides.",
+        "Paws & Passage makes the Adventure Passport, a collectible set of little adventures to share with your dog, plus researched dog travel and outdoor guides.",
       path: "/about",
     }),
   component: () => (
     <InfoPage
-      title="About Paw & Passage"
+      title="About Paws & Passage"
       intro="A lifetime of little adventures."
       updated="2026-11-26"
-      body={`Paw & Passage makes the **Adventure Passport**: a collectible, self-paced set of little adventures to share with your dog. Collect adventures, not just things. There are no daily streaks and nothing to keep up with. You pick an adventure when you feel like it, and your dog can stop any time.
+      body={`Paws & Passage makes the **Adventure Passport**: a collectible, self-paced set of little adventures to share with your dog. Collect adventures, not just things. There are no daily streaks and nothing to keep up with. You pick an adventure when you feel like it, and your dog can stop any time.
 
 ## What is here
 
@@ -25,7 +25,7 @@ export const Route = createFileRoute("/about")({
 
 ## Who publishes this
 
-Paw & Passage is an independent publication. Guides carry the byline "Paws & Passage Editors." That is an editorial process with written standards, not a named individual: the site owner has chosen not to publish a personal bio, and we do not invent people, credentials or experience. We hold no veterinary or trainer credentials, so use a vet for health decisions and a qualified trainer for behavior. How we work is set out in our [editorial standards](/editorial-standards), [methodology](/methodology) and [corrections log](/corrections).
+Paws & Passage is an independent publication. Guides carry the byline "Paws & Passage Editors." That is an editorial process with written standards, not a named individual: the site owner has chosen not to publish a personal bio, and we do not invent people, credentials or experience. We hold no veterinary or trainer credentials, so use a vet for health decisions and a qualified trainer for behavior. How we work is set out in our [editorial standards](/editorial-standards), [methodology](/methodology) and [corrections log](/corrections).
 
 ## What we don't do
 

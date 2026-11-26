@@ -7,14 +7,14 @@ export const Route = createFileRoute("/privacy")({
     pageHead({
       title: "Privacy policy",
       description:
-        "What information Paw & Passage keeps on your device and on our server, what we never collect (photos), how analytics and cookies work, and your choices.",
+        "What information Paws & Passage keeps on your device and on our server, what we never collect (photos), how analytics and cookies work, and your choices.",
       path: "/privacy",
     }),
   component: () => (
     <InfoPage
       title="Privacy policy"
       updated="2026-11-26"
-      body={`This policy explains what happens to information when you use Paw & Passage and the Adventure Passport.
+      body={`This policy explains what happens to information when you use Paws & Passage and the Adventure Passport.
 
 ## Your progress stays on your device
 

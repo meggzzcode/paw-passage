@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// Post-deploy check for Paw & Passage. Needs only Node 22 (no installs).
+// Post-deploy check for Paws & Passage. Needs only Node 22 (no installs).
 //
 //   node scripts/verify-site.mjs https://your-site.netlify.app
 //   node scripts/verify-site.mjs http://localhost:8888 --site-url https://yourdomain.com

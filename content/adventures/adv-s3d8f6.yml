@@ -67,9 +67,7 @@ noise: quiet
 food: false
 water: none
 safety:
-  - Never take hold of a paw, push or hold your dog in place. If they move away, the handshake is over for now.
-  - Ask for nothing, and never repeat it to the point where your dog looks bored or tired.
-  - "Follow your dog's body language: ears back, turning away or yawning means finish and let them rest."
+  - Never take hold of a paw or hold your dog in place.
 activityTypes:
   - play-and-games
   - memory-making
@@ -88,6 +86,7 @@ keepsake:
   theme: star-card
   headline: FOUNDING MEMBER
   subhead: Secret Handshake Club. Greeting invented by the dog
+  explainer: "Founding member of a club with a secret handshake"
 access: free
 status: published
 relatedGuides: []

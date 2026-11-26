@@ -101,6 +101,18 @@ describe("free adventure library", () => {
       expect(a.safety.length, a.id).toBeGreaterThan(0);
     }
   });
+  it("keeps safety lines short, few and free of the app's standing lines", () => {
+    for (const a of adventures) {
+      expect(a.safety.length, a.id).toBeGreaterThanOrEqual(1);
+      expect(a.safety.length, a.id).toBeLessThanOrEqual(3);
+      for (const line of a.safety) {
+        expect(line.length, `${a.id}: ${line}`).toBeLessThanOrEqual(130);
+        expect(line, a.id).not.toMatch(
+          /walk away at any|ending early|not veterinary advice|general information from public guidance/i,
+        );
+      }
+    }
+  });
   it("tells owners to check conditions and supervise around water, heat or cold", () => {
     for (const a of adventures.filter((x) =>
       /\b(water|beach|shore|heat|cold|sun|hot (?:pavement|surfaces|weather))\b/i.test(
@@ -133,6 +145,17 @@ describe("free adventure library", () => {
     if (!THEME_REGISTRY) return skip();
     for (const a of adventures)
       expect(THEME_REGISTRY[a.keepsake.family] ?? [], a.id).toContain(a.keepsake.theme);
+  });
+  it("gives every free adventure a short, clean photo-filter explainer", () => {
+    const emoji = /[\u{1F000}-\u{1FAFF}\u{2600}-\u{27BF}\u{2B00}-\u{2BFF}]|\u{FE0F}/u;
+    for (const a of adventures.filter((x) => x.access === "free")) {
+      const line = a.keepsake.explainer;
+      expect(line, a.id).toBeTruthy();
+      expect(line!.length, a.id).toBeLessThanOrEqual(64);
+      expect(line, a.id).not.toContain("#");
+      expect(line, a.id).not.toMatch(emoji);
+      expect(line, a.id).not.toMatch(/tested|best|vet-approved/i);
+    }
   });
   it("mixes budgets roughly as planned", () => {
     const free = adventures.filter((a) => a.costMax === 0).length / adventures.length;

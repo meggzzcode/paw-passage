@@ -67,9 +67,8 @@ noise: quiet
 food: false
 water: none
 safety:
-  - Do this at home by default. Go out only if the place is still quiet for your dog, and leave if people or dogs arrive and your dog seems unsure. Go only where your dog is comfortable now. A beloved old place may be too far or too busy today.
-  - Your dog can walk away at any point and the photo can wait. Never ask your dog to hold a pose. A relaxed moment is the whole point.
-  - For a puppy, check with your vet about vaccination and readiness before any public outing, and keep to your own yard or home until then.
+  - Go out only if the place is still quiet for your dog; home is a fine default.
+  - "Puppies: ask your vet before public outings, and stay in your own yard until then."
 activityTypes:
   - memory-making
   - photography
@@ -86,6 +85,7 @@ keepsake:
   theme: then-and-now
   headline: THEN AND NOW
   subhead: Same spot, a little more story
+  explainer: "Same spot, new chapter: then on the left, now on the right"
 access: free
 status: published
 relatedGuides: []

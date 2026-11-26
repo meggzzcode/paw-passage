@@ -6,9 +6,9 @@ import { pageHead } from "@/lib/seo";
 export const Route = createFileRoute("/contact")({
   head: () =>
     pageHead({
-      title: "Contact Paw & Passage",
+      title: "Contact Paws & Passage",
       description:
-        "Contact Paw & Passage about the Adventure Passport, a purchase or refund, a correction to a guide, or press.",
+        "Contact Paws & Passage about the Adventure Passport, a purchase or refund, a correction to a guide, or press.",
       path: "/contact",
     }),
   component: () => (
@@ -35,7 +35,7 @@ export const Route = createFileRoute("/contact")({
         <p>Please do not send photos of your dog to this address. The Passport never needs them.</p>
       </div>
       <div className="mt-8">
-        <ContactEmail subject="Hello from the Paw & Passage site" />
+        <ContactEmail subject="Hello from the Paws & Passage site" />
       </div>
     </InfoPage>
   ),

@@ -11,7 +11,7 @@ export const AFFILIATE_SURFACE_NOTICE =
  * `amazonSentence` is Amazon's required statement, passed in from AMAZON_DISCLOSURE so it exists in one place.
  */
 export function affiliateDisclosureBody(amazonSentence: string): string {
-  return `Paw & Passage earns money in two ways. The main one is the one-time purchase of the full Adventure Passport (see the [terms](/terms)). The second is affiliate links in our guides and gear pages: if you click one and then buy a product, we may earn a commission from the company, at no extra cost to you.
+  return `Paws & Passage earns money in two ways. The main one is the one-time purchase of the full Adventure Passport (see the [terms](/terms)). The second is affiliate links in our guides and gear pages: if you click one and then buy a product, we may earn a commission from the company, at no extra cost to you.
 
 ## Where you will see a notice
 

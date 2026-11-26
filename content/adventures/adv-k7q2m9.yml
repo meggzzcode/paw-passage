@@ -68,9 +68,8 @@ noise: quiet
 food: false
 water: none
 safety:
-  - Use only toys in good shape and put away any that are chewed apart or have loose pieces.
-  - Stop whenever your dog loses interest. A choice never has to be completed.
-  - If more than one dog lives with you, run it one dog at a time with the other dog elsewhere, so no toy is guarded.
+  - Toss any toy with loose parts or stuffing coming out.
+  - With more than one dog at home, run it one dog at a time so no toy gets guarded.
 activityTypes:
   - play-and-games
   - celebrations
@@ -88,6 +87,7 @@ keepsake:
   theme: toy-champion
   headline: OFFICIAL TOY CHAMPION
   subhead: Chosen by the dog, announced by you
+  explainer: "Toy showdown: four contenders, one front-page winner"
 access: free
 status: published
 relatedGuides: []

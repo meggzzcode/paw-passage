@@ -9,7 +9,7 @@ export const Route = createFileRoute("/affiliate-disclosure")({
     pageHead({
       title: "Affiliate disclosure",
       description:
-        "Where Paw & Passage earns money through affiliate links, where the notices appear, and how our product choices work.",
+        "Where Paws & Passage earns money through affiliate links, where the notices appear, and how our product choices work.",
       path: "/affiliate-disclosure",
     }),
   component: () => (

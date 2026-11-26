@@ -7,7 +7,7 @@ export const Route = createFileRoute("/corrections")({
     pageHead({
       title: "Corrections and updates",
       description:
-        "A dated log of notable corrections and changes to Paw & Passage guides, gear pages and the Adventure Passport, plus how to report an error you have spotted.",
+        "A dated log of notable corrections and changes to Paws & Passage guides, gear pages and the Adventure Passport, plus how to report an error you have spotted.",
       path: "/corrections",
     }),
   component: () => (
@@ -23,7 +23,7 @@ If a rule or detail has changed or is wrong, [contact us](/contact) with the pag
 
 | Date | Page | What changed |
 |---|---|---|
-| 2026-11-26 | Whole site | Paw & Passage is now the Adventure Passport. The earlier dog-friendly stays directory, destination pages, rental pet-policy data, rental guides and their tools were retired and are no longer published. Their old addresses now say the page is gone. |
+| 2026-11-26 | Whole site | Paws & Passage is now the Adventure Passport. The earlier dog-friendly stays directory, destination pages, rental pet-policy data, rental guides and their tools were retired and are no longer published. Their old addresses now say the page is gone. |
 | 2026-11-26 | Guides | Guides that only served the stays directory were retired. The dog travel, outdoor, safety and gear guides remain, with links to retired pages removed. |
 
 Earlier fixes made before this page was rewritten are not listed.`}

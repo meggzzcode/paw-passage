@@ -1,4 +1,4 @@
-# Paw & Passage: The Adventure Passport
+# Paws & Passage: The Adventure Passport
 
 The Adventure Passport is a collectible, self-paced set of little adventures to share with a dog. Visitors try free sample adventures with no account. A one-time purchase unlocks a much larger, protected library, progress that syncs across devices, and extra keepsakes. There are no subscriptions, no AI APIs and no accounts for the free experience.
 

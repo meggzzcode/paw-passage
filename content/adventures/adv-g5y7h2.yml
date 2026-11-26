@@ -73,10 +73,9 @@ noise: some
 food: false
 water: none
 safety:
-  - Keep your dog on a leash and away from wildlife, and never let them eat anything they find.
-  - Check the pavement with your hand in hot or icy weather, and carry water.
-  - Leave early if the area is busy and your dog seems uneasy.
-  - Meant for adult and senior dogs. It involves public places, so check with your vet about readiness if your dog is young, and keep it voluntary.
+  - "Check pavement with your hand: too hot for you is too hot for paws."
+  - Keep your dog on a leash, away from wildlife, and follow local leash rules.
+  - "Puppies: ask your vet before public outings."
 activityTypes:
   - outdoor-exploration
   - scent-and-discovery
@@ -95,6 +94,7 @@ keepsake:
   theme: explorer-card
   headline: SAFARI EXPLORER
   subhead: Spotter card. Tracked by one very good nose
+  explainer: "Safari day: spotted every critter on our own block"
 access: free
 status: published
 relatedGuides: []

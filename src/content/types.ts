@@ -1,4 +1,4 @@
-// Content model for the Paw & Passage guides. Plain files, no backend.
+// Content model for the Paws & Passage guides. Plain files, no backend.
 
 import type { GearPick } from "./gear";
 

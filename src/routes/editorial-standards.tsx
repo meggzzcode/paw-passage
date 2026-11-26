@@ -7,7 +7,7 @@ export const Route = createFileRoute("/editorial-standards")({
     pageHead({
       title: "Editorial standards",
       description:
-        "How Paw & Passage researches guides, writes adventures and handles corrections. No fake reviews, no invented experiences.",
+        "How Paws & Passage researches guides, writes adventures and handles corrections. No fake reviews, no invented experiences.",
       path: "/editorial-standards",
     }),
   component: () => (
@@ -28,7 +28,7 @@ Adventures in the Passport are gentle ideas to try with your dog. They are not t
 
 ## Use of Artificial Intelligence
 
-Paw & Passage uses artificial intelligence (AI) tools to assist with research, data analysis, content development, organization and website operations. Our guides, adventures and product recommendations are informed by publicly available information, manufacturer specifications, published policies and other relevant sources. We aim to provide accurate, useful and transparent information. We do not claim firsthand experiences, personal product testing or independent verification unless explicitly stated. Information may change over time, and readers are encouraged to confirm important details directly with the relevant provider.
+Paws & Passage uses artificial intelligence (AI) tools to assist with research, data analysis, content development, organization and website operations. Our guides, adventures and product recommendations are informed by publicly available information, manufacturer specifications, published policies and other relevant sources. We aim to provide accurate, useful and transparent information. We do not claim firsthand experiences, personal product testing or independent verification unless explicitly stated. Information may change over time, and readers are encouraged to confirm important details directly with the relevant provider.
 
 Our source checks are also done with AI tools: a separate AI review re-reads the cited pages before a guide is published. We do not describe these checks as review by a human fact-checker.
 

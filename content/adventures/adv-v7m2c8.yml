@@ -70,10 +70,9 @@ noise: some
 food: false
 water: none
 safety:
-  - Choose only forks where every option is safe, and keep your dog on a leash. Your veto always wins.
-  - Check the pavement with your hand in hot or icy weather and bring water.
-  - Turn back at any point if your dog slows down, lags or seems unsettled.
-  - Meant for adult and senior dogs. It involves public places, so check with your vet about readiness if your dog is young, and keep it voluntary.
+  - "Check pavement with your hand: too hot for you is too hot for paws."
+  - Keep your dog on a leash and follow local leash rules.
+  - "Puppies: ask your vet before public outings."
 activityTypes:
   - outdoor-exploration
   - travel
@@ -92,6 +91,7 @@ keepsake:
   theme: day-trip
   headline: CAPTAIN'S ROUTE
   subhead: Route chosen by the dog
+  explainer: "Today's route was decided at every fork by my nose"
 access: free
 status: published
 relatedGuides: []

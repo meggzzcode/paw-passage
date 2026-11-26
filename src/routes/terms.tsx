@@ -7,14 +7,14 @@ export const Route = createFileRoute("/terms")({
     pageHead({
       title: "Terms of use",
       description:
-        "The terms for using Paw & Passage: the Adventure Passport, the one-time purchase and what it includes, refunds, guides, affiliate links and liability.",
+        "The terms for using Paws & Passage: the Adventure Passport, the one-time purchase and what it includes, refunds, guides, affiliate links and liability.",
       path: "/terms",
     }),
   component: () => (
     <InfoPage
       title="Terms of use"
       updated="2026-11-26"
-      body={`By using Paw & Passage you agree to these terms.
+      body={`By using Paws & Passage you agree to these terms.
 
 ## Gentle suggestions, not advice
 
@@ -48,13 +48,13 @@ Some links are affiliate links, as explained in our [affiliate disclosure](/affi
 
 ## Content
 
-The text, design and adventures on this site belong to Paw & Passage. You're welcome to share links and short quotes with attribution. Please don't republish whole guides or adventures. The keepsakes you make from your own photos are yours.
+The text, design and adventures on this site belong to Paws & Passage. You're welcome to share links and short quotes with attribution. Please don't republish whole guides or adventures. The keepsakes you make from your own photos are yours.
 
 Photos on our guides are licensed from Unsplash under the Unsplash License, which gives us the right to use them. We do not own them and claim no exclusive rights in them.
 
 ## Liability
 
-To the extent permitted by law, Paw & Passage is not liable for losses arising from reliance on information on this site or for the actions of third-party sellers and sites. Nothing here limits any right you have under consumer law that cannot be limited.
+To the extent permitted by law, Paws & Passage is not liable for losses arising from reliance on information on this site or for the actions of third-party sellers and sites. Nothing here limits any right you have under consumer law that cannot be limited.
 
 ## Changes
 

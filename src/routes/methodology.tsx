@@ -7,7 +7,7 @@ export const Route = createFileRoute("/methodology")({
     pageHead({
       title: "Product review methodology",
       description:
-        "How Paw & Passage researches and chooses dog travel gear: what we read, what researched means, and why nothing is described as tested unless we say so.",
+        "How Paws & Passage researches and chooses dog travel gear: what we read, what researched means, and why nothing is described as tested unless we say so.",
       path: "/methodology",
     }),
   component: () => (

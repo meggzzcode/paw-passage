@@ -2,24 +2,24 @@ schema: 2
 id: adv-p4x8d3
 title: The Little Picnic Club
 clue: "A blanket, a menu of mysteries and a guest who orders with their nose."
-reveal: "Hold a small picnic where the menu is made of smells. Set out three scent courses on a blanket, let your dog choose the dish of the day by where they linger, then close the club with a toast and a picnic postcard."
-objective: "Lay out a three-course scent menu on a blanket, let your dog choose the dish of the day, and write a picnic postcard."
+reveal: "Hold a small picnic where the menu is made of smells. Set out three scent courses on a blanket, let your dog choose the dish of the day by where they linger, then reveal the chef's surprise hidden under a napkin and close the club with a toast."
+objective: "Lay out a three-course scent menu on a blanket, let your dog choose the dish of the day, find the chef's surprise and toast the club."
 instructions:
-  - "Choose a theme from your dog: their coat colour, a favourite toy, the way they greet you or the sound of their name. Use it for the club name, such as The Red Dog Social."
   - "Choose a quiet spot where your dog is already relaxed: your yard, a patio, a balcony or a corner of the living room. Check the ground for hot surfaces, sharp bits and plants."
-  - "Write the scent menu: three courses, each a smell that is safe and too big to swallow. For example a large fallen leaf from outside, a clean cloth that has been near the kitchen window, and a T-shirt you have worn. Lay each course on its own corner of the blanket with space between them."
+  - "Write the scent menu on a card: three courses, each a smell that is safe and too big to swallow. For example a large fallen leaf from outside, a clean cloth that has been near the kitchen window, and a T-shirt you have worn. Lay each course on its own corner of the blanket with space between them. Hide the chef's surprise, one favourite toy, under a folded napkin or small towel in the fourth corner."
   - "Let your dog arrive in their own time and take the menu in any order. Do not point or lead. They can sniff, skip a course or leave the blanket, and the picnic works every way."
   - "Watch for the dish of the day: the course they linger over longest. Put the other two away and give the winner the middle of the blanket. Sit down on the far side with your own snack, out of reach of your dog's nose."
-  - "Close the club with a toast: clink your cup against the rim of their water bowl, say the club name once, then write a postcard to your future selves with the theme, the dish of the day and what your dog did first on the blanket."
-twist: "The picnic menu is made of smells, not food: your dog orders the dish of the day with their nose, and the toast comes last."
+  - "Serve the chef's surprise: when your dog has finished with the dish of the day, nudge the napkin corner so the toy peeks out, then sit back and let them uncover it, carry it off or play."
+  - "Close the club with a toast: clink your cup against the rim of their water bowl, say the club name once and name the dish of the day out loud as the winner. Let your dog have the blanket for the rest of the picnic."
+twist: "The picnic menu is made of smells, not food: your dog orders the dish of the day with their nose, a chef's surprise waits under a napkin, and the toast goes to the winning dish."
 variations:
   - "Rain version: lay the blanket on the living-room floor and open a window."
   - "For a nervous dog: use your own yard or balcony, offer only one course and keep it to ten minutes."
-  - "For a lively dog: add a fourth course that is their favourite toy."
-  - "For limited mobility: picnic from a chair on a porch or patio with the blanket beside you and the three courses within a few steps."
-completion: "Your dog has chosen a dish of the day, you have toasted the club and written the postcard."
+  - "For a lively dog: add a fourth scent course and tuck the surprise toy a little deeper in its napkin."
+  - "For limited mobility: picnic from a chair on a porch or patio with the blanket beside you and the courses within a few steps."
+completion: "Your dog has chosen a dish of the day, found the chef's surprise and you have toasted the club."
 photoIdea: "Your dog investigating the scent menu on the blanket, taken from their eye level."
-memoryPrompt: "What was the theme, and which course did your dog choose?"
+memoryPrompt: "Which course did your dog choose as the dish of the day, and what did they do with the surprise?"
 minutesMin: 45
 minutesMax: 90
 activeMinutes: 20
@@ -30,7 +30,8 @@ supplies:
   - "Blanket"
   - "Water bowl and fresh water"
   - "Your own snack and cup"
-  - "A postcard or paper"
+  - "A card or paper for the menu"
+  - "A napkin or small towel"
   - "A large leaf, a clean cloth and a worn T-shirt for the scent menu"
 optionalSupplies:
   - Shade umbrella
@@ -84,12 +85,9 @@ noise: quiet
 food: false
 water: none
 safety:
-  - Check the weather and the ground first. Keep your dog out of strong sun and off hot surfaces, and bring shade and water.
-  - Keep your own food out of reach and check that nothing on the ground is something your dog should not chew.
-  - Choose scent courses that are clean, non-toxic and too large to swallow, and take away anything your dog starts to chew.
-  - Choose a spot where your dog can move away from the blanket whenever they like.
-  - Keep to your own yard, patio or balcony by default. At a park corner, leave at once if other dogs or people turn up and your dog seems unsettled.
-  - For a puppy, check with your vet about vaccination and readiness before any public outing, and keep to your own yard or home until then.
+  - "Check the ground and sun first: too hot for your hand is too hot for paws."
+  - Keep your own food out of reach, and pick scent courses too big to swallow.
+  - "Puppies: ask your vet before public outings, and stay in your own yard until then."
 activityTypes:
   - relaxation
   - memory-making
@@ -107,6 +105,7 @@ keepsake:
   theme: picnic-postcard
   headline: GREETINGS FROM THE PICNIC
   subhead: A party for two. Wish you were here
+  explainer: "Picnic for two, menu ordered entirely by nose"
 access: free
 status: draft
 relatedGuides: []

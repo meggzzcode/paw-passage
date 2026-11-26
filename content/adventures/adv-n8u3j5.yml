@@ -6,7 +6,7 @@ reveal: "Pitch a camp in your living room: a low blanket shelter, a pretend camp
 objective: Build a low open camp, let your dog choose their campsite and spend an evening there together.
 instructions:
   - Pick the camp spot and clear the floor. Move cables, candles and heaters well away and put down a non-slip mat or rug.
-  - "Build a low, open camp: drape a blanket over two chairs or a sofa arm so one whole side stays open and your dog can walk in and out. Never cover your dog."
+  - "Build a low, open camp: drape a blanket over two chairs or a sofa arm so one whole side stays open and your dog can walk in and out."
   - Make two paper tickets, Campsite 1 and Camper. Put your dog's bed or favourite blanket inside and let them choose where in the camp to settle. That is their pitch.
   - "Make a campfire without a flame: a ring of cushions with a battery lantern or battery tealight in the middle."
   - Dim the lights and settle in for fifteen to twenty minutes. Tell the campfire story of the day in a soft voice, or play a quiet nature soundtrack at low volume.
@@ -71,9 +71,8 @@ noise: quiet
 food: false
 water: none
 safety:
-  - Keep the camp open on at least one side so your dog can leave whenever they like, and never cover them with blankets.
-  - No real flames. Keep the camp away from heaters, candles and trailing cables.
-  - Keep any sound low; stop it if your dog seems unsettled.
+  - Keep one side of the camp open, and never cover your dog with blankets.
+  - Battery lights only, and keep the camp away from heaters and cables.
 activityTypes:
   - relaxation
   - celebrations
@@ -92,6 +91,7 @@ keepsake:
   theme: campout-ticket
   headline: CAMPGROUND PASS
   subhead: Living room campsite. One night only
+  explainer: "Camping trip, but the tent is the living room"
 access: free
 status: published
 relatedGuides: []

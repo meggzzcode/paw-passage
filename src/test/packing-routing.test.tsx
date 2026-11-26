@@ -25,7 +25,7 @@ const validate = Route.options.validateSearch as unknown as (
 describe("packing planner route, metadata and indexing", () => {
   it("keeps the URL, a self canonical, the promised title and a description about the planner", () => {
     const h = head(Route);
-    expect(h.meta[0].title).toBe("Road Trip Packing List for Dogs | Paw & Passage");
+    expect(h.meta[0].title).toBe("Road Trip Packing List for Dogs | Paws & Passage");
     expect(h.meta[0].title.length).toBeLessThanOrEqual(60);
     const d = meta(h, "description");
     expect(d).toMatch(/personalized/i);

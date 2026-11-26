@@ -7,7 +7,7 @@ objective: Make a detective ID, lay a short scent trail that ends at a hidden to
 instructions:
   - "Make the detective ID: on a card write a code name for your dog, the name of your agency and Case No. 1. Leave a corner empty for a photo."
   - "Choose the missing item: one favourite toy. Show it to your dog, then move your dog to another room or behind a gate while you set up."
-  - "Lay the trail: rub the toy and then a clean, worn sock along the floor in a line with two or three clue spots, for example a sofa leg and a doorway, ending at the hiding place. Use only the toy and the sock. Never use spices, perfume, essential oils or cleaning products."
+  - "Lay the trail: rub the toy and then a clean, worn sock along the floor in a line with two or three clue spots, for example a sofa leg and a doorway, ending at the hiding place. Skip anything strongly scented."
   - "Hide the toy low and easy: behind a cushion with a corner showing, or beside a chair leg. No jumping, climbing or reaching. A first case should be solved in under two minutes."
   - "Open the case: bring your dog in with a calm case word, stay quiet and do not point. Let them follow their nose at their own pace. If they stall, walk a step toward the first clue yourself rather than leading them."
   - "Case closed: celebrate the find and let them keep the toy. Stamp the ID Case Solved and write one line in the case file: the clues and the detective's method."
@@ -73,9 +73,8 @@ noise: quiet
 food: false
 water: none
 safety:
-  - Keep the trail clear of slippery floors, stairs and anything breakable, and hide the toy where your dog does not need to jump.
-  - If your dog seems unsure, shorten the trail and make the find easier. Always end on a success.
-  - Use only the toy and a clean sock for scent. Anything strongly scented can upset a dog's nose.
+  - Keep the trail clear of slippery floors and stairs.
+  - Skip strong scents like perfume or essential oils; a toy and a clean sock are plenty.
 activityTypes:
   - scent-and-discovery
   - problem-solving
@@ -93,6 +92,7 @@ keepsake:
   theme: secret-agent
   headline: DETECTIVE ID
   subhead: Cases solved by nose
+  explainer: "Case file: one mystery, one very good nose on the job"
 access: free
 status: published
 relatedGuides: []

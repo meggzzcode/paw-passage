@@ -2,7 +2,7 @@ import { settings, showDrafts } from "virtual:content";
 
 // Central brand + integration settings. The business details (domain, email, analytics ID) live in content/settings.yml so an owner can change them in Pages CMS without touching code.
 export const site = {
-  name: "Paw & Passage",
+  name: "Paws & Passage",
   tagline: "The Adventure Passport: a lifetime of little adventures with your dog",
   description:
     "The Adventure Passport is a collectible, self-paced set of little adventures to share with your dog. Free to try with no account, with a one-time purchase to unlock the full library.",

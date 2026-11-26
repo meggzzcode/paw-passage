@@ -12,7 +12,7 @@ export const Route = createFileRoute("/tools/packing-list")({
   validateSearch: (search: Record<string, unknown>) => parsePresetSearch(search, packingConfig),
   head: () =>
     pageHead({
-      title: "Road Trip Packing List for Dogs | Paw & Passage",
+      title: "Road Trip Packing List for Dogs | Paws & Passage",
       description:
         "Build a personalized packing list for a road trip adventure with your dog, customize it, check items off as you pack and print it. Free, with no signup.",
       path: "/tools/packing-list",

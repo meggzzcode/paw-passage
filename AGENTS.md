@@ -1,6 +1,6 @@
 # Agent instructions
 
-Product: The Adventure Passport (Paw & Passage). Read `README.md` first, then `docs/ARCHITECTURE.md`.
+Product: The Adventure Passport (Paws & Passage). Read `README.md` first, then `docs/ARCHITECTURE.md`.
 
 ## Commands
 

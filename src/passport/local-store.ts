@@ -151,7 +151,7 @@ export function importJson(text: string): { ok: true } | { ok: false; error: str
     return { ok: false, error: "That file is not valid JSON." };
   }
   const upgraded = migrate(parsed);
-  if (!upgraded) return { ok: false, error: "That file is not a Paw & Passage save." };
+  if (!upgraded) return { ok: false, error: "That file is not a Paws & Passage save." };
   commit(merge(getSave(), { ...upgraded, rev: 0 }));
   return { ok: true };
 }

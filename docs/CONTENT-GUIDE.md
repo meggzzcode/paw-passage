@@ -19,13 +19,20 @@ Set every one of these honestly. Missing information is treated as unknown, neve
 
 `transport`, `setting`, `homes`, `space`, `places`, `lifeStages`, `energy`, `dogMobility`, `ownerMobility`, `stepFree`, `crowd`, `strangers`, `otherDogs`, `noise`, `food`, `water`, `safety`, `activityTypes` (1 to 3), `collections`, `requires` (controlled supply keys for the "what I have" filter), `reservation`. Optional helpers: `substitutes` (household stand-ins for supplies the owner may not have) and `personalities` (who tends to enjoy it: a hint only, never used for eligibility). Do not use breed as an input anywhere.
 
-## Safety and claims (non-negotiable)
+## Safety lines (non-negotiable, but light)
 
-- At least one dog-welfare safety line on every adventure, specific to what the adventure really involves.
+The app already shows a general "Read your dog" card and two standing lines: "Your dog can walk away at any time. Ending early is a good ending." and "General information from public guidance. Not veterinary advice. Ask your vet about your dog." Adventures must not repeat any of that.
+
+- Every adventure has 1 to 3 `safety` lines (usually 1 or 2). Each is ONE short plain sentence, about 110 characters at most (the test allows 130), written like a friend's tip, not a warning label.
+- Write a line only for a hazard that is non-obvious or specific to this activity. Keep: toxic foods people really forget (grapes, raisins, chocolate, xylitol, onion, garlic, macadamia) when food is involved; a heat, cold or surface check outdoors ("Pavement too hot for your hand is too hot for paws"); water quality, algae and currents near water; a real tug, chase or arousal rule when play is physical; "ask your vet first" for puppies before public places and for diet changes; handling and lifting guidance; leash and local rules, once; vehicle restraint when a car is used.
+- Cut the obvious and the repeated: tape, string or foil unless truly surprising, "don't leave your dog alone with X", repeated "supervise", "stop if your dog seems unsure" or "skip if uncomfortable", boilerplate "check with your vet" stacked on every card, and anything restating the two standing lines. Keep inline cautions in steps, variations and twist to a minimum so the text stays lively and practical.
+- Never remove a hazard line that a reviewer flagged as a blocker if it is still the only mitigation (puppy-outing vet line, food hazards, heat, cold or pavement, water quality, tug rules); shorten it instead.
+- Keep `food`, `dietNotes`, `avoidWeather`, `lifeStages`, `strangers` and `otherDogs` consistent with the text. Food adventures need `dietNotes` that say "ask your vet about diet", use only foods the dog already eats well, and offer a no-food variation where possible.
+
+## Claims (non-negotiable)
+
 - No medical, nutrition, exercise-duration, medication or behaviour-modification claims. Avoid words like cure, diagnose, medication, best, guaranteed, tested. Say "follow your vet's guidance" instead.
-- Always let the dog disengage at any time and end on a success. No costumes, forced poses or holding a dog still, and no coercion (never take hold of a paw, never block the way out).
-- Water, heat and cold: tell the owner to check conditions and supervise.
-- Food adventures need `dietNotes` and must say "ask your vet about diet". Use only foods the dog already eats well; name the foods never to use (chocolate, xylitol, grapes, raisins, onion, garlic, macadamia nuts); count food in the day's portions; provide a no-food variation where possible.
+- No costumes, forced poses or holding a dog still, and no coercion (never take hold of a paw, never block the way out).
 - Never require a specific product or brand. `affiliateProducts` is for optional suggestions only and must not be needed to finish.
 
 ## Scoring (six criteria)

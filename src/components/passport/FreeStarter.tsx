@@ -1,38 +1,58 @@
-// The free experience: a short preference quiz, then ONE introductory adventure picked for this dog.
-// Flow: understand the product -> "Find Our First Adventure" -> a few preferences -> a recommendation shown with
-// practical info only (time, cost, setting, effort, prerequisites, restrictions; NOT the steps) -> Accept, or
-// "Show me another" as often as you like (never the same one twice in a session) -> reveal -> complete whenever ->
-// intro stamp and a static keepsake example (making one is part of the full Passport) -> a quiet invitation to the full Passport.
+// The free experience: a short four-screen quiz, then ONE introductory adventure picked for this dog.
+// Flow: the homepage CTA lands straight on the first question -> a mystery card shown with practical info only (time,
+// cost, setting, effort, requirements; NOT the steps) -> "Scratch or tap to reveal", or "Show me another" while another
+// fit exists (never the same one twice, never the last match) -> reveal (locked in: no second intro reveal) -> complete
+// whenever -> intro stamp -> one quiet invitation to the full Passport. A revealed visitor returns straight to it.
 // This is a product choice, not a security gate (the free pool is public). Everything here runs on this device with no
 // network call. Unanswered questions stay UNKNOWN, never "safe". No account, email or card; nothing forces completion.
 import { RevealSurface } from "./RevealSurface";
-import { IntroQuiz } from "./IntroQuiz";
-import { KeepsakeUnlock } from "./KeepsakeUnlock";
+import { IntroQuiz, focusInto } from "./IntroQuiz";
 import { activityConfirm } from "@/passport/engine";
-import { parseCtx, type CtxKey } from "@/passport/journal-context";
-import { MULTI_DOG_NOTE, dogWho, hasManyDogs, type DogProfile } from "@/passport/profile";
-import { presetFor } from "@/passport/quiz";
+import { type CtxKey } from "@/passport/journal-context";
+import {
+  MULTI_DOG_NOTE,
+  dogWho,
+  hasManyDogs,
+  type DogProfile,
+  type OwnerPrefs,
+} from "@/passport/profile";
+import { presetFor, type RelaxKey } from "@/passport/quiz";
 import { useEffect, useRef, useState } from "react";
 import { AppLink } from "@/components/shell/AppLink";
 import { Container } from "@/components/shell/Container";
 import { StampGrid } from "@/passport/art/stamps";
 import { getSave, revealStarter, setProfile, setStarter } from "@/passport/local-store";
 import { has } from "@/passport/progress";
-import { PREVIEWS_PATH, isRevealed, savedStarter, selectStarter } from "@/passport/starter";
+import {
+  PREVIEWS_PATH,
+  hasAnother,
+  isRevealed,
+  noMatchCause,
+  savedStarter,
+  selectStarter,
+  type NoMatchCause,
+} from "@/passport/starter";
 import { usePassport } from "@/passport/usePassport";
 import { unlockLine, type PremiumSummary } from "@/lib/premium-summary";
 import type { Adventure } from "@/passport/schema";
 import { AdventureCard, Chips } from "./AdventureCard";
 import { useAdventureLibrary } from "./collections-shared";
 import { flow } from "./flow-events";
-import { PreviewMatch } from "./PreviewMatch";
 import { needChips, glanceOf, suitabilityNotes, SUPPLY_LABELS } from "./labels";
 
 export const FREE_PROMISE =
   "Tell us about your dog or dogs. Get one adventure picked for them, free.";
 
 /** One concise safety question before this adventure's reveal, using the same "confirm" idea as held adventures. */
-function ConfirmBeforeReveal({ a, onAnother }: { a: Adventure; onAnother: () => void }) {
+function ConfirmBeforeReveal({
+  a,
+  onAnother,
+  another = true,
+}: {
+  a: Adventure;
+  onAnother: () => void;
+  another?: boolean;
+}) {
   const { profile } = usePassport();
   const ask = activityConfirm(a, profile);
   if (!ask) return null;
@@ -54,14 +74,14 @@ function ConfirmBeforeReveal({ a, onAnother }: { a: Adventure; onAnother: () => 
             onAnother();
           }}
         >
-          No, find another
+          {another ? "No, find another" : "No, edit my answers"}
         </button>
         <button type="button" className="pa-chip" onClick={onAnother}>
-          Not sure, find another
+          {another ? "Not sure, find another" : "Not sure, edit my answers"}
         </button>
       </div>
       <p className="pa-fine">
-        We never guess about your dog, so an unsure answer means another pick.
+        We never guess about your dog, so an unsure answer means a different pick or new answers.
       </p>
     </div>
   );
@@ -98,45 +118,29 @@ export function UnlockPitch({
   );
 }
 
-/** A quiet line, shown while the introductory adventure is still in progress: buying never has to wait. */
-function SkipAheadLine() {
-  return (
-    <p className="pa-fine">
-      You do not need to finish this first. You can{" "}
-      <AppLink
-        to="/unlock"
-        className="pa-linkbtn"
-        onClick={() => flow("purchase_cta_clicked", { where: "intro-inline" })}
-      >
-        get the full Passport
-      </AppLink>{" "}
-      or{" "}
-      <AppLink to={PREVIEWS_PATH} className="pa-linkbtn">
-        browse previews
-      </AppLink>{" "}
-      any time.
-    </p>
-  );
-}
-
-/** The recommendation: practical facts only. The title, steps and twist stay a surprise until you accept. */
+/** The recommendation: ONE mystery card with practical facts only. The title, steps and twist stay a surprise until you reveal. */
 function Recommendation({
   a,
   dogName,
   why,
   widenedNote,
+  another,
   onAccept,
   onAnother,
   onChange,
+  headRef,
 }: {
   a: Adventure;
   dogName: string | undefined;
-  why: string[];
-  /** Plain words about optional answers that were set aside to find this pick, or null. */
+  why: string | undefined;
+  /** Plain words about optional answers the visitor chose to set aside, or null. */
   widenedNote: string | null;
+  /** False when no other free adventure fits: "Show me another" is then not offered. */
+  another: boolean;
   onAccept: () => void;
   onAnother: () => void;
   onChange: () => void;
+  headRef: React.RefObject<HTMLHeadingElement | null>;
 }) {
   const { profile } = usePassport();
   const needsConfirm = activityConfirm(a, profile) !== null;
@@ -147,15 +151,13 @@ function Recommendation({
   ];
   return (
     <>
-      <h1 className="pa-h1">
-        {dogName ? `A first adventure for ${dogName}` : "A first adventure"}
+      <h1 className="pa-h1" tabIndex={-1} ref={headRef}>
+        A little adventure awaits...
       </h1>
-      <p className="pa-sub">
-        Here is what to expect. Scratch or tap the card to see what it is and how it goes, or ask
-        for another.
-      </p>
       <article className="pa-card pa-mystery" aria-label="Recommended adventure">
-        <p className="pa-kicker">Your free first adventure</p>
+        <p className="pa-kicker">
+          {dogName ? `Your free first adventure for ${dogName}` : "Your free first adventure"}
+        </p>
         {a.teaser && <p className="pa-clue">“{a.teaser}”</p>}
         <Chips a={a} />
         {notes.length > 0 && (
@@ -166,30 +168,38 @@ function Recommendation({
           </ul>
         )}
         {widenedNote && <p className="pa-fine">{widenedNote}</p>}
-        {why.length > 0 && (
+        {why && (
           <p className="pd-why">
-            <strong>Why this one:</strong> {why.join(". ")}.
+            <strong>Why this one:</strong> {why}.
           </p>
         )}
         <div className="pa-actions">
           {needsConfirm ? (
-            <ConfirmBeforeReveal a={a} onAnother={onAnother} />
+            <ConfirmBeforeReveal
+              a={a}
+              onAnother={another ? onAnother : onChange}
+              another={another}
+            />
           ) : (
             <RevealSurface adventureId={a.id} onReveal={onAccept} />
           )}
-          <button type="button" className="pp-btn pp-btn-ghost" onClick={onAnother}>
-            Show me another
-          </button>
+          {another ? (
+            <button type="button" className="pp-btn pp-btn-ghost" onClick={onAnother}>
+              Show me another
+            </button>
+          ) : (
+            <p className="pa-fine" role="status">
+              This is the little adventure that suits you best today.
+            </p>
+          )}
         </div>
         {hasManyDogs(dogName) && <p className="pa-fine">{MULTI_DOG_NOTE}</p>}
       </article>
       <p className="pa-fine">
-        Not the right fit? Show me another as many times as you like.{" "}
         <button type="button" className="pa-linkbtn" onClick={onChange}>
-          Change my answers
+          Edit preferences
         </button>
       </p>
-      <SkipAheadLine />
     </>
   );
 }
@@ -213,15 +223,51 @@ function writeOffered(s: Set<string>) {
   }
 }
 
+const RELAX_TEXT: Record<
+  RelaxKey,
+  { ask: (o: OwnerPrefs) => string; button: (o: OwnerPrefs) => string; noted: string }
+> = {
+  where: {
+    ask: (o) =>
+      o.where === "home"
+        ? "Nothing cozy at home fits just yet. Would you like to try somewhere beyond home too?"
+        : "We haven't found the right little outdoor adventure yet. Would you like to try something indoors instead?",
+    button: (o) => (o.where === "home" ? "Yes, beyond home is fine" : "Yes, try something indoors"),
+    noted: "where",
+  },
+  time: {
+    ask: () => "Could you spare a little more time today?",
+    button: () => "Yes, a little longer is fine",
+    noted: "time",
+  },
+  spend: {
+    ask: () => "Would a small spend be okay for this one?",
+    button: () => "Yes, a small spend is okay",
+    noted: "spend",
+  },
+  kids: {
+    ask: () => "Would you like to do this one without the children joining?",
+    button: () => "Do this one without the children joining",
+    noted: "children joining",
+  },
+};
+const listOf = (keys: readonly RelaxKey[]): string =>
+  keys
+    .map((k) => RELAX_TEXT[k].noted)
+    .join(", ")
+    .replace(/, ([^,]*)$/, " and $1");
+
 export function FreeStarter({ ctx }: { ctx?: CtxKey | undefined } = {}) {
   const { ready, save } = usePassport();
   const { all: library, status } = useAdventureLibrary();
   const [stage, setStage] = useState<"welcome" | "survey">("welcome");
-  const [none, setNone] = useState<"nothing" | "seen-all" | "narrow" | null>(null);
+  const [none, setNone] = useState<NoMatchCause | null>(null);
   const [quizMode, setQuizMode] = useState<"first" | "edit">("first");
-  const [widened, setWidened] = useState(false);
+  const [relaxed, setRelaxed] = useState<RelaxKey[]>([]);
   const offered = useRef<Set<string> | null>(null);
   const wasDone = useRef<boolean | null>(null);
+  const head = useRef<HTMLHeadingElement>(null);
+  const lastView = useRef<string | null>(null);
 
   const adventure = ready ? savedStarter(library, save) : undefined;
   const done = adventure ? has(save.done, adventure.id) : false;
@@ -233,6 +279,35 @@ export function FreeStarter({ ctx }: { ctx?: CtxKey | undefined } = {}) {
     wasDone.current = done;
   }, [ready, done]);
 
+  // Browser Back from the recommendation steps back into the quiz (the quiz marks its history entries).
+  useEffect(() => {
+    const pop = () => {
+      const st = window.history.state as { ppQuiz?: unknown } | null;
+      if (typeof st?.ppQuiz === "number" && !isRevealed(getSave())) {
+        setQuizMode("first");
+        setStage("survey");
+      }
+    };
+    window.addEventListener("popstate", pop);
+    return () => window.removeEventListener("popstate", pop);
+  }, []);
+
+  const inQuiz = stage === "survey" || (!revealed && !adventure && !none);
+  const view = revealed
+    ? `revealed:${adventure?.id}`
+    : inQuiz
+      ? "quiz"
+      : adventure
+        ? `rec:${adventure.id}`
+        : "none";
+  // A new view (recommendation, reveal, no-match) takes focus on its heading. The quiz moves focus itself, per question.
+  useEffect(() => {
+    if (!ready) return;
+    const prev = lastView.current;
+    lastView.current = view;
+    if (prev !== null && prev !== view && view !== "quiz") focusInto(head.current);
+  }, [ready, view]);
+
   if (!ready || status === "checking")
     return (
       <Container>
@@ -243,9 +318,8 @@ export function FreeStarter({ ctx }: { ctx?: CtxKey | undefined } = {}) {
   const seen = (): Set<string> => (offered.current ??= readOffered());
   const dogName = save.profile.data.name;
 
-  function pickNext(replace: boolean, relaxNow?: boolean) {
-    const relax = relaxNow ?? widened; // "show me another" keeps the widening the visitor chose
-    if (relaxNow !== undefined) setWidened(relaxNow);
+  function pickNext(replace: boolean, relax: RelaxKey[]) {
+    setRelaxed(relax);
     const s = seen();
     const cur = getSave().starter?.id;
     if (cur) s.add(cur);
@@ -259,16 +333,10 @@ export function FreeStarter({ ctx }: { ctx?: CtxKey | undefined } = {}) {
       flow(replace ? "intro_replaced" : "intro_recommended");
       return;
     }
-    // Never leave a pick the answers rule out, and say which kind of "nothing" this is.
-    const again = selectStarter(library, getSave(), new Set(), { relax });
+    // "Show me another" is only offered when one exists. If that ever fails, the current pick simply stays.
+    if (replace) return;
     setStarter(null);
-    setNone(
-      again.ok
-        ? "seen-all"
-        : !relax && selectStarter(library, getSave(), new Set(), { relax: true }).ok
-          ? "narrow"
-          : "nothing",
-    );
+    setNone(noMatchCause(library, getSave(), relax));
     setStage("welcome");
   }
 
@@ -277,7 +345,7 @@ export function FreeStarter({ ctx }: { ctx?: CtxKey | undefined } = {}) {
     seen().clear();
     writeOffered(seen());
     setStarter(null); // a fresh set of answers starts a fresh list
-    pickNext(false, false);
+    pickNext(false, []);
   }
 
   function accept() {
@@ -285,16 +353,23 @@ export function FreeStarter({ ctx }: { ctx?: CtxKey | undefined } = {}) {
     flow("intro_revealed");
   }
 
+  const editPrefs = () => {
+    setQuizMode("edit");
+    setStage("survey");
+  };
+
   let body;
-  if (adventure && revealed) {
+  if (adventure && revealed && stage !== "survey") {
     body = (
       <>
-        <h1 className="pa-h1">Your first adventure</h1>
+        <h1 className="pa-h1" tabIndex={-1} ref={head}>
+          Your first adventure
+        </h1>
         <p className="pa-sub">
           Picked for {dogWho(dogName)}. It stays here, free, so you can come back to it any time.
         </p>
         <AdventureCard a={adventure} dogName={dogName} />
-        {done ? (
+        {done && (
           <>
             <section className="pa-panel" aria-labelledby="fs-stamp-h">
               <h2 className="pa-h" id="fs-stamp-h">
@@ -311,167 +386,137 @@ export function FreeStarter({ ctx }: { ctx?: CtxKey | undefined } = {}) {
             </p>
             <UnlockPitch where="intro-complete" />
           </>
-        ) : (
-          <SkipAheadLine />
         )}
-      </>
-    );
-  } else if (adventure && stage === "welcome") {
-    const why = (() => {
-      const pick = selectStarter(library, save);
-      return pick.ok && pick.adventure.id === adventure.id ? pick.why : [];
-    })();
-    const o = save.owner.data;
-    const widenedNote = !widened
-      ? null
-      : [
-          o.where || o.time || o.spend
-            ? "We widened your where, time and spend answers to find this one."
-            : "",
-          o.kids && !adventure.household.includes("family")
-            ? "We also set aside the children-joining preference."
-            : "",
-        ]
-          .filter(Boolean)
-          .join(" ") || null;
-    body = (
-      <>
-        <Recommendation
-          a={adventure}
-          dogName={dogName}
-          why={why}
-          widenedNote={widenedNote}
-          onAccept={accept}
-          onAnother={() => pickNext(true)}
-          onChange={() => {
-            setQuizMode("edit");
-            setStage("survey");
-          }}
-        />
-        <PreviewMatch hasIntro />
-      </>
-    );
-  } else if (none && stage === "welcome") {
-    body = (
-      <>
-        <h1 className="pa-h1">
-          {none === "seen-all"
-            ? "That was every free fit"
-            : none === "narrow"
-              ? "Nothing free fits all of that"
-              : "No free adventure fits yet"}
-        </h1>
-        <div className="pa-card" role="status">
-          <p>
-            {none === "seen-all"
-              ? "You have seen every free adventure that suits what you told us. We can start the list over, or you can change your answers."
-              : none === "narrow"
-                ? `Free adventures suit your dog, but none fits your ${save.owner.data.kids ? "optional answers (where, time, spend and children joining)" : "where, time and spend answers"} together. You can widen those, or change your answers. Widening never loosens what keeps your dog safe and comfortable.`
-                : "None of the free adventures suits what you told us. We use your answers to leave out adventures that do not fit, and we never loosen those. If you picked something by mistake, or answered optional questions such as children joining or keeping it quiet, you can change your answers."}
-          </p>
-          <div className="pa-row">
-            {none === "seen-all" && (
-              <button
-                type="button"
-                className="pp-btn pp-btn-primary"
-                onClick={() => {
-                  seen().clear();
-                  writeOffered(seen());
-                  pickNext(false);
-                }}
-              >
-                Start the list over
-              </button>
-            )}
-            {none === "narrow" && (
-              <button
-                type="button"
-                className="pp-btn pp-btn-primary"
-                onClick={() => {
-                  seen().clear();
-                  writeOffered(seen());
-                  pickNext(false, true);
-                }}
-              >
-                {save.owner.data.kids
-                  ? "Widen where, time, spend and children joining"
-                  : "Widen where, time and spend"}
-              </button>
-            )}
-            <button
-              type="button"
-              className="pp-btn pp-btn-secondary"
-              onClick={() => {
-                setQuizMode("edit");
-                setStage("survey");
-              }}
-            >
-              Change my answers
-            </button>
-          </div>
-        </div>
         <p className="pa-fine">
-          The full Passport has more adventures to choose from.{" "}
-          <AppLink
-            to="/unlock"
-            className="pa-linkbtn"
-            onClick={() => flow("purchase_cta_clicked", { where: "intro-none" })}
-          >
-            See the full Passport
-          </AppLink>
+          <button type="button" className="pa-linkbtn" onClick={editPrefs}>
+            Edit preferences
+          </button>{" "}
+          Your adventure stays the same; this only updates what we remember.
         </p>
       </>
     );
-  } else if (stage === "survey") {
+  } else if (inQuiz) {
+    const editing = quizMode === "edit";
     body = (
       <>
-        <h1 className="pa-h1">A few quick questions</h1>
-
+        <h1 className="pa-h1">{editing ? "Your preferences" : "Your first adventure is free"}</h1>
+        {!editing && (
+          <p className="pa-sub">
+            A few quick taps and we will pick one for you. No account needed.
+          </p>
+        )}
         <IntroQuiz
           save={save}
           mode={quizMode}
           preset={quizMode === "first" ? presetFor(ctx, save) : undefined}
-          onDone={submit}
-          onCancel={() => setStage("welcome")}
-          submitLabel={adventure ? "Update my pick" : "Find our adventure"}
+          onDone={() => (adventure && revealed ? setStage("welcome") : submit())}
+          onCancel={editing ? () => setStage("welcome") : undefined}
+          submitLabel={
+            revealed ? "Save preferences" : adventure ? "Update my pick" : "Find our adventure"
+          }
         />
       </>
     );
-  } else {
+  } else if (adventure) {
+    const why = (() => {
+      const pick = selectStarter(library, save, new Set(), { relax: relaxed });
+      return pick.ok && pick.adventure.id === adventure.id ? pick.why[0] : undefined;
+    })();
+    const widenedNote = relaxed.length
+      ? `As you chose, we set aside your ${listOf(relaxed)} preference${relaxed.length > 1 ? "s" : ""} for this one.`
+      : null;
+    body = (
+      <Recommendation
+        a={adventure}
+        dogName={dogName}
+        why={why}
+        widenedNote={widenedNote}
+        another={hasAnother(library, save, seen(), relaxed)}
+        onAccept={accept}
+        onAnother={() => pickNext(true, relaxed)}
+        onChange={editPrefs}
+        headRef={head}
+      />
+    );
+  } else if (none) {
+    const o = save.owner.data;
+    const again = (keys: RelaxKey[]) => {
+      seen().clear();
+      writeOffered(seen());
+      pickNext(false, keys);
+    };
+    const keys = none.kind === "hard" ? [] : none.keys;
     body = (
       <>
-        <h1 className="pa-h1">Your first adventure is free</h1>
-        <p className="pa-sub">{FREE_PROMISE}</p>
-        <KeepsakeUnlock where="intro-start" />
-        <section className="pa-panel" aria-labelledby="fs-how-h">
-          <h2 className="pa-h" id="fs-how-h">
-            How it works
-          </h2>
-          <ol className="pa-steps">
-            <li>Answer a few quick questions, or skip any of them.</li>
-            <li>
-              See a recommendation with the practical details: time, cost, setting and effort.
-            </li>
-            <li>Accept it, or ask for another as often as you like.</li>
-            <li>Then the full adventure is yours to keep. No account, email or card.</li>
-          </ol>
+        <h1 className="pa-h1" tabIndex={-1} ref={head}>
+          {none.kind === "hard"
+            ? "We haven't found a free adventure for you just yet"
+            : "We haven't found the right little adventure yet"}
+        </h1>
+        <div className="pa-card" role="status">
+          {none.kind === "single" &&
+            keys.slice(0, 2).map((k) => (
+              <div key={k} className="pd-nomatch">
+                <p>{RELAX_TEXT[k].ask(o)}</p>
+                <button
+                  type="button"
+                  className="pp-btn pp-btn-primary"
+                  onClick={() => again([...relaxed, k])}
+                >
+                  {RELAX_TEXT[k].button(o)}
+                </button>
+              </div>
+            ))}
+          {none.kind === "several" && (
+            <div className="pd-nomatch">
+              <p>
+                Your {listOf(keys)} preferences are working together to keep us from finding one.
+                Would you like to set them aside for now?
+              </p>
+              <button
+                type="button"
+                className="pp-btn pp-btn-primary"
+                onClick={() => again([...relaxed, ...keys])}
+              >
+                {keys.includes("kids")
+                  ? "Yes, even without the children joining"
+                  : "Yes, set them aside"}
+              </button>
+            </div>
+          )}
+          {none.kind === "hard" && (
+            <p>
+              We stay careful with the answers that keep your dog safe and comfortable, and we never
+              loosen them. If you picked something by mistake, you can change your answers.
+            </p>
+          )}
           <div className="pa-row">
             <button
               type="button"
-              className="pp-btn pp-btn-primary"
-              onClick={() => {
-                flow("intro_started");
-                setQuizMode("first");
-                setStage("survey");
-              }}
+              className={none.kind === "hard" ? "pp-btn pp-btn-primary" : "pp-btn pp-btn-secondary"}
+              onClick={editPrefs}
             >
-              Find Our First Adventure
+              Edit preferences
             </button>
-            <AppLink to={PREVIEWS_PATH} className="pp-btn pp-btn-ghost">
-              Browse previews first
-            </AppLink>
           </div>
-        </section>
+        </div>
+        {none.kind === "hard" && (
+          <p className="pa-fine">
+            You can also{" "}
+            <AppLink to={PREVIEWS_PATH} className="pa-linkbtn">
+              browse previews
+            </AppLink>{" "}
+            or{" "}
+            <AppLink
+              to="/unlock"
+              className="pa-linkbtn"
+              onClick={() => flow("purchase_cta_clicked", { where: "intro-none" })}
+            >
+              see the full Passport
+            </AppLink>
+            .
+          </p>
+        )}
       </>
     );
   }

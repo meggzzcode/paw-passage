@@ -1,0 +1,60 @@
+/* Intro quiz refinements: short step transition (off for reduced motion), focus target, optional refinements. Tokens only. */
+.pd-quiz-q {
+  scroll-margin-top: 5.5rem;
+  outline-offset: 4px;
+}
+.pd-quiz-q:focus:not(:focus-visible) {
+  outline: none;
+}
+.pd-quiz-step {
+  animation: pd-step-in 180ms ease-out;
+}
+@keyframes pd-step-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pd-quiz-step {
+    animation: none;
+  }
+}
+.pd-choices {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+.pd-quiz-nav {
+  align-items: center;
+}
+.pd-personal {
+  display: grid;
+  gap: 0.9rem;
+  margin-top: 0.6rem;
+}
+.pd-opt {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+.pd-opt > legend {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+.pd-nomatch {
+  display: grid;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.pd-page h1[tabindex="-1"],
+.pd-page h2[tabindex="-1"] {
+  scroll-margin-top: 5.5rem;
+}
+.pd-page h1[tabindex="-1"]:focus:not(:focus-visible) {
+  outline: none;
+}

@@ -65,6 +65,8 @@ const withProfile = (data: Record<string, unknown>) => {
 
 beforeEach(() => {
   ent.status = "free";
+  window.sessionStorage.clear();
+  window.history.replaceState(null, "");
   window.localStorage.clear();
   _resetForTests();
 });
@@ -185,28 +187,23 @@ describe("free Discover: the introductory flow", () => {
     }
     fireEvent.click(screen.getByRole("button", { name: "Find our adventure" }));
   };
-  const start = () => {
-    fireEvent.click(screen.getByRole("button", { name: "Find Our First Adventure" }));
-    finishQuiz();
-  };
+  const start = () => finishQuiz();
   const shownTitle = () => getSave().starter?.id;
 
-  it("explains the product first, then asks a few questions, with no network call", async () => {
+  it("opens straight on the first question (no welcome screen, no explainer, no keepsake pitch), with no network call", async () => {
     const fetchSpy = vi.fn();
     vi.stubGlobal("fetch", fetchSpy);
     await show();
     expect(
-      screen.getByRole("heading", { name: "Your first adventure is free" }),
+      screen.getByRole("heading", { name: "Who is your little sidekick?" }),
     ).toBeInTheDocument();
-    expect(screen.getByRole("link", { name: "Browse previews first" })).toHaveAttribute(
-      "href",
-      "/previews",
-    );
-    expect(screen.queryByRole("group", { name: /life stage/i })).toBeNull();
-    fireEvent.click(screen.getByRole("button", { name: "Find Our First Adventure" }));
-    fireEvent.click(screen.getByRole("button", { name: "Skip" })); // the optional name
-    const stage = screen.getByRole("group", { name: /life stage/i });
-    fireEvent.click(within(stage).getByRole("button", { name: "Puppy" }));
+    expect(screen.getByText("Question 1 of 4")).toBeInTheDocument();
+    expect(screen.queryByRole("button", { name: "Find Our First Adventure" })).toBeNull();
+    expect(screen.queryByText(/How it works/)).toBeNull();
+    expect(screen.queryByLabelText("About personalized keepsakes")).toBeNull();
+    const stage = screen.getByRole("group", { name: "Who is your little sidekick?" });
+    fireEvent.click(within(stage).getByRole("button", { name: "Puppy" })); // auto-advances
+    expect(screen.getByText("Question 2 of 4")).toBeInTheDocument();
     finishQuiz();
     expect(
       await screen.findByRole("article", { name: "Recommended adventure" }),
@@ -219,16 +216,23 @@ describe("free Discover: the introductory flow", () => {
     await show();
     start();
     const card = await screen.findByRole("article", { name: "Recommended adventure" });
+    expect(
+      screen.getByRole("heading", { name: "A little adventure awaits..." }),
+    ).toBeInTheDocument();
     const t = within(card).getByLabelText("At a glance");
     expect(t.textContent).toMatch(/min/);
     expect(t.textContent).toMatch(/Free/);
     expect(t.textContent).toMatch(/Indoors/);
-    expect(t.textContent).toMatch(/effort/);
+    expect(t.textContent).toMatch(/effort|Dog:/);
     expect(within(card).queryByRole("heading")).toBeNull();
     expect(screen.queryByText("How it goes")).toBeNull();
     expect(screen.queryByText("Continue")).toBeNull(); // an instruction line
     expect(screen.queryByText("A twist")).toBeNull();
     expect(getSave().starter?.revealedAt).toBeUndefined();
+    // one card, one primary gesture, one secondary, one quiet link; no acceptance screen or product explainer
+    expect(screen.getByRole("button", { name: "Scratch or tap to reveal." })).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: "Show me another" })).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: "Edit preferences" })).toBeInTheDocument();
   });
 
   it("skipped questions stay unknown", async () => {
@@ -242,7 +246,7 @@ describe("free Discover: the introductory flow", () => {
     expect(getSave().owner.data.where).toBeUndefined();
   });
 
-  it("lets you ask for another without limit, never repeating one, until the list runs out", async () => {
+  it("'Show me another' never repeats one and never consumes the only match", async () => {
     await show();
     start();
     await screen.findByRole("article", { name: "Recommended adventure" });
@@ -252,22 +256,24 @@ describe("free Discover: the introductory flow", () => {
       seen.push(shownTitle());
     }
     expect(new Set(seen).size).toBe(3);
-    expect(seen.every((x) => typeof x === "string")).toBe(true);
-    fireEvent.click(screen.getByRole("button", { name: "Show me another" }));
-    expect(screen.getByRole("heading", { name: "That was every free fit" })).toBeInTheDocument();
-    expect(getSave().starter).toBeUndefined();
-    fireEvent.click(screen.getByRole("button", { name: "Start the list over" }));
-    expect(screen.getByRole("article", { name: "Recommended adventure" })).toBeInTheDocument();
+    // the last remaining fit: the button is gone, a friendly line says so, and the pick is kept
+    expect(screen.queryByRole("button", { name: "Show me another" })).toBeNull();
+    expect(screen.getByText(/the little adventure that suits you best today/)).toBeInTheDocument();
+    expect(screen.queryByText(/That was every free fit/)).toBeNull();
+    expect(getSave().starter?.id).toBe(seen[2]);
+    expect(screen.getByRole("button", { name: "Scratch or tap to reveal." })).toBeInTheDocument();
   });
 
-  it("reveals only on accept, and the revealed adventure persists and stays readable", async () => {
+  it("reveals on tap, locks the intro adventure in, and returns straight to it", async () => {
     const first = await show();
     start();
     await screen.findByRole("article", { name: "Recommended adventure" });
     const id = shownTitle();
     fireEvent.click(screen.getByRole("button", { name: "Scratch or tap to reveal." }));
     expect(await screen.findByText("How it goes")).toBeInTheDocument();
-    expect(screen.getByRole("heading", { name: "Your first adventure" })).toBeInTheDocument();
+    const h = screen.getByRole("heading", { name: "Your first adventure" });
+    expect(h).toBeInTheDocument();
+    expect(document.activeElement).toBe(h); // focus lands on the revealed content
     expect(getSave().starter?.revealedAt).toBeTypeOf("number");
     expect(screen.queryByRole("button", { name: "Show me another" })).toBeNull();
     first.unmount();
@@ -276,7 +282,17 @@ describe("free Discover: the introductory flow", () => {
     await show();
     expect(screen.getByText("How it goes")).toBeInTheDocument();
     expect(getSave().starter?.id).toBe(id);
-    expect(screen.queryByRole("button", { name: "Find Our First Adventure" })).toBeNull();
+    expect(screen.queryByText(/Question \d of/)).toBeNull(); // no quiz repeat
+    // a quiet way to edit preferences; re-taking never grants another reveal
+    fireEvent.click(screen.getByRole("button", { name: "Edit preferences" }));
+    expect(
+      screen.getByRole("heading", { name: "Who is your little sidekick?" }),
+    ).toBeInTheDocument();
+    for (let i = 0; i < 3; i++)
+      fireEvent.click(screen.getByRole("button", { name: /^(Skip|Next)$/ }));
+    fireEvent.click(screen.getByRole("button", { name: "Save preferences" }));
+    expect(screen.getByText("How it goes")).toBeInTheDocument(); // still the same, already revealed
+    expect(getSave().starter?.id).toBe(id);
   });
 
   it("completion shows the intro stamp and a tasteful unlock, with no network call", async () => {
@@ -288,10 +304,6 @@ describe("free Discover: the introductory flow", () => {
     fireEvent.click(screen.getByRole("button", { name: "Scratch or tap to reveal." }));
     await screen.findByText("How it goes");
     expect(screen.queryByText(/Want more little adventures/)).toBeNull(); // not before completing
-    expect(screen.getByRole("link", { name: "get the full Passport" })).toHaveAttribute(
-      "href",
-      "/unlock",
-    ); // but buying never waits for it
     fireEvent.click(screen.getByRole("button", { name: "Collect it" }));
     expect(await screen.findByRole("heading", { name: "Your first stamp" })).toBeInTheDocument();
     expect(screen.getByText(/Want more little adventures with your dog\?/)).toBeInTheDocument();
@@ -316,42 +328,33 @@ describe("free Discover: the introductory flow", () => {
     expect(screen.getAllByLabelText("About personalized keepsakes")).toHaveLength(1);
   });
 
-  it("says plainly when nothing is eligible, and shows the pitch", async () => {
+  it("when nothing free suits the dog, says so warmly (no jargon) and offers editing, previews and the Passport", async () => {
     await show();
-    fireEvent.click(screen.getByRole("button", { name: "Find Our First Adventure" }));
-    fireEvent.click(screen.getByRole("button", { name: "Skip" }));
     fireEvent.click(
-      within(screen.getByRole("group", { name: /life stage/i })).getByRole("button", {
-        name: "Senior",
-      }),
+      within(screen.getByRole("group", { name: "Who is your little sidekick?" })).getByRole(
+        "button",
+        {
+          name: "Senior",
+        },
+      ),
     ); // none of the fixture adventures is meant for a senior
     finishQuiz();
     expect(
-      await screen.findByRole("heading", { name: "No free adventure fits yet" }),
+      await screen.findByRole("heading", {
+        name: "We haven't found a free adventure for you just yet",
+      }),
     ).toBeInTheDocument();
-    expect(screen.getByText(/leave out adventures that do not fit/i)).toBeInTheDocument();
-    expect(screen.getByRole("link", { name: "See the full Passport" })).toBeInTheDocument();
+    expect(screen.getByText(/never loosen them/i)).toBeInTheDocument();
+    expect(
+      screen.queryByText(/No free adventure fits yet|Widen where|Nothing free fits all/),
+    ).toBeNull();
+    expect(screen.getByRole("link", { name: "see the full Passport" })).toBeInTheDocument();
+    expect(screen.getByRole("link", { name: "browse previews" })).toHaveAttribute(
+      "href",
+      "/previews",
+    );
     expect(getSave().starter).toBeUndefined();
     expect(screen.queryByRole("article")).toBeNull();
-  });
-
-  it("makes no request for the match count until the button is pressed", async () => {
-    const fetchSpy = vi.fn(async () => new Response("{}", { status: 500 }));
-    vi.stubGlobal("fetch", fetchSpy);
-    await show();
-    start();
-    await screen.findByRole("article", { name: "Recommended adventure" });
-    expect(fetchSpy).not.toHaveBeenCalled();
-    fireEvent.click(screen.getByRole("button", { name: "Count what matches" }));
-    expect(await screen.findByText(/could not check right now/i)).toBeInTheDocument();
-    expect(fetchSpy).toHaveBeenCalledTimes(1);
-    const sent = JSON.parse(
-      String(
-        (fetchSpy.mock.calls[0] as unknown[])[1] &&
-          ((fetchSpy.mock.calls[0] as unknown[])[1] as RequestInit).body,
-      ),
-    );
-    expect(sent.dog.name).toBeUndefined();
   });
 });
 

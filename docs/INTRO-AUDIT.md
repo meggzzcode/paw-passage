@@ -9,7 +9,7 @@ Audited against the real free library (17 published free adventures in `content/
 | Requirement                                                                                 | Proof                                                                                                                                                         |
 | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | No account, email or card; no network in the quiz                                           | intro-audit (source scan: no `fetch`/email/password fields in quiz, starter, FreeStarter), intro-quiz "makes no network call", free-starter "no network call" |
-| 8 default steps, 10 maximum (counted honestly: "Question n of N")                           | intro-audit, intro-quiz "step count"                                                                                                                          |
+| 4 default screens (counted honestly: "Question n of 4"); optional refinements add none      | intro-audit, intro-quiz "step count"                                                                                                                          |
 | One shared profile, one or several names                                                    | intro-quiz "several dogs, one profile"                                                                                                                        |
 | Mixed life stages conservative; variable energy gentle-to-moderate                          | intro-quiz "answers map onto the existing profile"                                                                                                            |
 | Ten Journal `?ctx=` presets prefill, never overwrite saved answers or preset safety answers | intro-audit "Journal context presets" (all ten keys)                                                                                                          |
@@ -121,3 +121,10 @@ Coverage now, strictly (no widening):
 - Free outdoors for gentle dogs: one new free introductory card, The Listening Post (outdoor, seated owner, quiet, no
   food, no cost; puppy, adult, senior with vet and vaccination caveats), now exists. It is eligible for the quiet/puppy/senior
   outdoor profiles but does not always rank first. Adventure expansion is frozen.
+
+## Regeneration notes (UX simplification, 2026-11-26)
+
+- The quiz is now four screens (life stage, energy, mood, anything to keep in mind). `INTRO_AUDIT_TABLE=1 npx vitest run src/test/intro-audit.test.tsx` still prints the profile table; rows now include a playful adult, senior, children joining on the default screens, and the all-stages "mix of ages" profile (9 eligible, safe pick).
+- `saveFor` in the audit test applies every step (default + optional + extra) through `applyAnswers`, deriving the mood from `where` so older rows keep their meaning.
+- No-match handling is tested per cause: `noMatchCause` (single, several, hard) and a loop over every profile asserting a safe pick or a friendly specific no-match whose offered relaxation finds a hard-rule-clean pick. "Show me another" is tested to never consume the last match (`hasAnother`).
+- Measured typical path (headless Chrome, 390x844): 7 views / 7 taps from the homepage to a revealed adventure (baseline 11 / 18).

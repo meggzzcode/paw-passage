@@ -1,8 +1,10 @@
-// The free intro quiz: at most ten steps, one concise question each, attractive answer chips and an honest
-// "Question n of N" progress indicator. The default path is eight steps; two optional steps appear only on request, and
-// questions the saved profile already answers are skipped. Skipping a question leaves it UNKNOWN. Answers are kept in
-// this component until the last step, then written to the existing profile / owner preferences. No network.
-import { useMemo, useState } from "react";
+// The free intro quiz: FOUR short screens (life stage, energy, mood, anything to keep in mind) and an honest
+// "Question n of 4" indicator. Single-choice screens move on when you tap an answer (Back is always there); the last
+// screen is a multi-select with an explicit button. Optional refinements sit behind one control, "Make it more
+// personal (optional)", and add no screens. Skipping leaves a question UNKNOWN. Answers stay in this component until
+// the last step, then are written to the existing profile / owner preferences. No network.
+// Browser Back steps back inside the quiz (history state), and a reload resumes where you were (session storage).
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import {
   MULTI_DOG_NOTE,
   type DogProfile,
@@ -16,13 +18,17 @@ import {
   ENERGY_OPTIONS,
   ENJOY_OPTIONS,
   KEEP_EXCLUSIVE,
+  KEEP_HIDDEN,
   KEEP_OPTIONS,
-  LIFE_OPTIONS,
+  KIDS_OPTION,
+  LIFE_CHOICES,
+  MIXED_STAGES,
+  MOOD_OPTIONS,
+  PERSONAL_STEPS,
   SPEND_OPTIONS,
   STEP_QUESTION,
   TIME_OPTIONS,
   WALK_OPTIONS,
-  WHERE_OPTIONS,
   answersFromSave,
   applyAnswers,
   stepsToAsk,
@@ -47,19 +53,31 @@ const TILE_EMOJI: Record<string, string> = {
   Food: "🦴",
   Creative: "🎨",
   Relaxing: "🛋️",
-  Mobility: "🐾",
-  "Food limits": "🥣",
+  "A mix of ages": "🐾",
+  "Cozy at home": "🛋️",
+  "A little outdoor adventure": "🌳",
+  "Something playful": "🎾",
+  "Surprise us": "🎁",
+  "Mobility limits": "🐾",
+  "Food restrictions": "🥣",
+  "Children joining": "🧒",
   Water: "💧",
   Noise: "🔊",
   Crowds: "👥",
   "Other dogs": "🐕‍🦺",
-  "Exercise limits": "🛑",
+  "Exercise or health limits": "🛑",
   "Nothing in particular": "✨",
   "Not sure": "🤔",
   "Prefer not to say": "🤐",
   "At home": "🏡",
   "Nearby outdoors": "🌳",
   "Anywhere suitable": "🗺️",
+  "I'd rather sit": "🪑",
+  "Very little walking": "🐢",
+  "A short walk": "🚶",
+  "Happy to walk further": "🥾",
+  "I have a car": "🚗",
+  "No car": "🚶‍♀️",
   "Short (about 15 min)": "⏱️",
   "Medium (about 30 min)": "⏳",
   "Longer is fine": "🕰️",
@@ -74,20 +92,68 @@ const Emoji = ({ label }: { label: string }) =>
     </span>
   ) : null;
 
-function Single<T extends string>({
-  legend,
+const DRAFT_KEY = "pp.quiz.draft.v1";
+type Stored = { draft: QuizAnswers; open: boolean; mode: string };
+
+function readStored(mode: string): Stored | null {
+  try {
+    const v = JSON.parse(window.sessionStorage.getItem(DRAFT_KEY) ?? "null") as Stored | null;
+    return v && v.mode === mode && typeof v.draft === "object" ? v : null;
+  } catch {
+    return null;
+  }
+}
+function writeStored(v: Stored | null) {
+  try {
+    if (v) window.sessionStorage.setItem(DRAFT_KEY, JSON.stringify(v));
+    else window.sessionStorage.removeItem(DRAFT_KEY);
+  } catch {
+    /* blocked storage: the quiz still works, a reload just starts over */
+  }
+}
+const histIdx = (): number | undefined => {
+  try {
+    const v = (window.history.state as { ppQuiz?: unknown } | null)?.ppQuiz;
+    return typeof v === "number" ? v : undefined;
+  } catch {
+    return undefined;
+  }
+};
+function setHist(kind: "push" | "replace", idx: number) {
+  try {
+    const st = { ...((window.history.state as object | null) ?? {}), ppQuiz: idx };
+    if (kind === "push") window.history.pushState(st, "");
+    else window.history.replaceState(st, "");
+  } catch {
+    /* history unavailable: the in-app Back button still works */
+  }
+}
+
+/** Moves focus to an element and brings it into view only when needed. Honors reduced motion. */
+export function focusInto(el: HTMLElement | null) {
+  if (!el) return;
+  el.focus({ preventScroll: true });
+  const r = el.getBoundingClientRect();
+  const h = window.innerHeight || 800;
+  if (r.top < 64 || r.top > h * 0.55) {
+    const calm = window.matchMedia?.("(prefers-reduced-motion: reduce)").matches;
+    el.scrollIntoView?.({ block: "start", behavior: calm ? "auto" : "smooth" });
+  }
+}
+
+function Choices<T extends string>({
+  labelledBy,
   options,
   value,
-  onChange,
+  onPick,
 }: {
-  legend: string;
+  labelledBy: string;
   options: readonly Opt<T>[];
   value: T | undefined;
-  onChange: (v: T | undefined) => void;
+  onPick: (v: T) => void;
 }) {
   return (
-    <fieldset className="pa-field">
-      <legend>{legend}</legend>
+    <fieldset className="pa-field pd-choices" aria-labelledby={labelledBy}>
       <div className="pa-chips">
         {options.map((o) => (
           <button
@@ -95,7 +161,7 @@ function Single<T extends string>({
             type="button"
             className="pa-chip"
             aria-pressed={o.value === value}
-            onClick={() => onChange(o.value === value ? undefined : o.value)}
+            onClick={() => onPick(o.value)}
           >
             <Emoji label={o.label} />
             {o.label}
@@ -106,74 +172,37 @@ function Single<T extends string>({
   );
 }
 
-function Multi<T extends string>({
-  legend,
-  hint,
-  options,
-  values,
-  onChange,
-  extra,
-}: {
-  legend: string;
-  hint?: string;
-  options: readonly Opt<T>[];
-  values: readonly T[];
-  onChange: (v: T[]) => void;
-  extra?: readonly Opt<T>[];
-}) {
-  const toggle = (v: T, exclusive: boolean) => {
-    const on = values.includes(v);
-    if (on) return onChange(values.filter((x) => x !== v));
-    const ex = new Set((extra ?? []).map((e) => e.value));
-    onChange(exclusive ? [v] : [...values.filter((x) => !ex.has(x)), v]);
-  };
-  const chip = (o: Opt<T>, exclusive: boolean) => (
-    <button
-      key={o.value}
-      type="button"
-      className="pa-chip"
-      aria-pressed={values.includes(o.value)}
-      onClick={() => toggle(o.value, exclusive)}
-    >
-      <Emoji label={o.label} />
-      {o.label}
-    </button>
-  );
+/** A small labelled group for the optional refinements (a legend is right here: there is no step heading for these). */
+function Group({ legend, children }: { legend: string; children: React.ReactNode }) {
   return (
-    <fieldset className="pa-field">
+    <fieldset className="pa-field pd-opt">
       <legend>{legend}</legend>
-      {hint && <p className="pa-fine">{hint}</p>}
-      <div className="pa-chips">
-        {options.map((o) => chip(o, false))}
-        {extra?.map((o) => chip(o, true))}
-      </div>
+      <div className="pa-chips">{children}</div>
     </fieldset>
   );
 }
+function Chip({ on, onClick, children }: { on: boolean; onClick: () => void; children: string }) {
+  return (
+    <button type="button" className="pa-chip" aria-pressed={on} onClick={onClick}>
+      <Emoji label={children} />
+      {children}
+    </button>
+  );
+}
 
-/** True when this step has an answer in the draft (the button then says "Next" instead of "Skip"). */
+/** True when this step has an answer in the draft (the quiet link then says "Next" instead of "Skip"). */
 function answeredIn(id: StepId, a: QuizAnswers): boolean {
   switch (id) {
-    case "names":
-      return !!a.names?.trim();
     case "life":
       return !!a.lifeStages?.length;
     case "energy":
       return !!a.energy;
-    case "enjoy":
-      return !!a.enjoy?.length;
+    case "mood":
+      return !!a.mood;
     case "keep":
-      return !!a.keepInMind?.length;
-    case "where":
-      return !!a.where;
-    case "time":
-      return !!a.time;
-    case "spend":
-      return !!a.spend;
-    case "works":
-      return !!(a.walking || a.stepFree || a.car);
-    case "extra":
-      return !!(a.quiet || a.kids);
+      return !!a.keepInMind?.length || !!a.kids;
+    default:
+      return false;
   }
 }
 
@@ -193,18 +222,56 @@ export function IntroQuiz({
   onDone: () => void;
   onCancel?: (() => void) | undefined;
 }) {
-  const [extras, setExtras] = useState<StepId[]>([]);
-  const [draft, setDraft] = useState<QuizAnswers>(() => ({
-    ...(preset ?? {}),
-    ...(mode === "edit" ? answersFromSave(save) : {}),
-  }));
-  const [i, setI] = useState(0);
+  // A reload (or Back from the recommendation) mid-quiz resumes: the history entry carries the step, session storage the answers.
+  const resume = useRef<{ idx: number; stored: Stored | null } | null>(null);
+  if (resume.current === null) {
+    const idx = mode === "first" ? histIdx() : undefined;
+    resume.current = { idx: idx ?? 0, stored: idx === undefined ? null : readStored(mode) };
+  }
+  const [open, setOpen] = useState(resume.current.stored?.open ?? false);
+  const [draft, setDraft] = useState<QuizAnswers>(
+    () => resume.current?.stored?.draft ?? { ...(preset ?? {}), ...answersFromSave(save) },
+  );
   const steps = useMemo(
-    () => stepsToAsk(save, { all: mode === "edit", extras }),
+    () => stepsToAsk(save, { all: mode === "edit" }),
     // The save is only written at the end, so the list stays stable while answering.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [mode, extras],
+    [mode],
   );
+  const [i, setI] = useState(() =>
+    Math.min(resume.current?.idx ?? 0, Math.max(0, steps.length - 1)),
+  );
+  const heading = useRef<HTMLHeadingElement>(null);
+  const moved = useRef(resume.current.idx > 0);
+
+  const setHistory = useCallback(
+    (n: number) => {
+      if (n === i) return;
+      setHist("push", n);
+      moved.current = true;
+      setI(n);
+    },
+    [i],
+  );
+
+  // Mark the first screen so a reload or Back lands on a quiz step, and follow the browser's Back/Forward inside the quiz.
+  useEffect(() => {
+    if (mode === "edit" || histIdx() === undefined) setHist("replace", 0);
+    const pop = () => {
+      moved.current = true;
+      setI(Math.min(histIdx() ?? 0, Math.max(0, steps.length - 1)));
+    };
+    window.addEventListener("popstate", pop);
+    return () => window.removeEventListener("popstate", pop);
+  }, [steps.length, mode]);
+
+  useEffect(() => writeStored({ draft, open, mode }), [draft, open, mode]);
+
+  // Every move scrolls the new question into view and moves focus to its heading (no trap: Tab continues into the answers).
+  useEffect(() => {
+    if (moved.current) focusInto(heading.current);
+  }, [i]);
+
   const set = (p: Partial<QuizAnswers>) => setDraft((d) => ({ ...d, ...p }));
   const clear = (...keys: (keyof QuizAnswers)[]) =>
     setDraft((d) => {
@@ -214,7 +281,8 @@ export function IntroQuiz({
     });
 
   function finish() {
-    const { dog, owner } = applyAnswers(draft, steps, save);
+    const shown = [...steps, ...(open ? PERSONAL_STEPS : [])];
+    const { dog, owner } = applyAnswers(draft, shown, save);
     if (Object.keys(dog).length) setProfile(dog as Partial<DogProfile>);
     if (Object.keys(owner).length) setOwner(owner as OwnerPrefs);
     onDone();
@@ -238,159 +306,126 @@ export function IntroQuiz({
   const idx = Math.min(i, steps.length - 1);
   const id = steps[idx]!;
   const last = idx === steps.length - 1;
-  const q = STEP_QUESTION[id];
   const n = steps.length;
+  const advance = () => (last ? finish() : setHistory(idx + 1));
+  const pick = (p: Partial<QuizAnswers>) => {
+    set(p);
+    advance();
+  };
+  const back = () => {
+    if (histIdx() === idx && idx > 0) window.history.back();
+    else setI(idx - 1);
+  };
 
+  const stages = draft.lifeStages ?? [];
+  const toggleKeep = (v: KeepItem) =>
+    setDraft((d) => {
+      const cur = d.keepInMind ?? [];
+      const hidden = cur.filter((x) => KEEP_HIDDEN.includes(x));
+      const next = { ...d };
+      const exclusive = KEEP_EXCLUSIVE.some((e) => e.value === v);
+      let list: KeepItem[];
+      if (cur.includes(v)) list = cur.filter((x) => x !== v);
+      else if (exclusive) list = [...hidden, v];
+      else list = [...cur.filter((x) => x !== "none" && x !== "unsure"), v];
+      if (list.length) next.keepInMind = list;
+      else delete next.keepInMind;
+      return next;
+    });
+  const toggleKids = () =>
+    setDraft((d) => {
+      const next = { ...d };
+      if (d.kids) delete next.kids;
+      else next.kids = true;
+      return next;
+    });
+
+  const qid = "fs-quiz-h";
   let body;
   switch (id) {
-    case "names":
-      body = (
-        <label className="pa-field">
-          <span className="pa-fine">
-            Optional.{" "}
-            {MULTI_DOG_NOTE.replace(
-              /^More than one dog\? /,
-              "More than one dog? Add every name, like “Luna and Milo”. ",
-            )}
-          </span>
-          <input
-            aria-label="Your dog's name, or names"
-            value={draft.names ?? ""}
-            maxLength={60}
-            autoComplete="off"
-            placeholder="Luna and Milo"
-            onChange={(e) => set({ names: e.target.value })}
-          />
-        </label>
-      );
-      break;
     case "life":
       body = (
-        <Multi
-          legend={q}
-          hint="Pick every one that applies. For a mix of ages we choose something that suits all of them."
-          options={LIFE_OPTIONS}
-          values={draft.lifeStages ?? []}
-          onChange={(v) => set({ lifeStages: v })}
-        />
+        <>
+          <Choices
+            labelledBy={qid}
+            options={LIFE_CHOICES}
+            value={stages.length > 1 ? "mixed" : stages[0]}
+            onPick={(v) =>
+              pick({
+                lifeStages: v === "mixed" ? (stages.length > 1 ? stages : [...MIXED_STAGES]) : [v],
+              })
+            }
+          />
+          <p className="pa-fine">
+            More than one dog? One shared profile is fine: choose “A mix of ages” and we pick
+            something that suits every dog.
+          </p>
+        </>
       );
       break;
     case "energy":
       body = (
-        <Single
-          legend={q}
+        <Choices
+          labelledBy={qid}
           options={ENERGY_OPTIONS}
           value={draft.energy}
-          onChange={(v) => (v ? set({ energy: v }) : clear("energy"))}
+          onPick={(v) => pick({ energy: v })}
         />
       );
       break;
-    case "enjoy":
+    case "mood":
       body = (
-        <Multi
-          legend={q}
-          hint="Pick any. It is a gentle nudge for ideas, never a rule."
-          options={ENJOY_OPTIONS}
-          values={draft.enjoy ?? []}
-          onChange={(v) => set({ enjoy: v })}
+        <Choices
+          labelledBy={qid}
+          options={MOOD_OPTIONS}
+          value={draft.mood}
+          onPick={(v) =>
+            pick({
+              mood: v,
+              where: v === "cozy" ? "home" : v === "outdoor" ? "nearby" : "anywhere",
+            })
+          }
         />
       );
       break;
-    case "keep":
+    default:
       body = (
-        <Multi<KeepItem>
-          legend={q}
-          hint="Pick any that apply. Only you know your dog. Anything left open stays unknown, and we ask before an adventure that depends on it."
-          options={KEEP_OPTIONS}
-          extra={KEEP_EXCLUSIVE}
-          values={draft.keepInMind ?? []}
-          onChange={(v) => set({ keepInMind: v })}
-        />
-      );
-      break;
-    case "where":
-      body = (
-        <Single
-          legend={q}
-          options={WHERE_OPTIONS}
-          value={draft.where}
-          onChange={(v) => (v ? set({ where: v }) : clear("where"))}
-        />
-      );
-      break;
-    case "time":
-      body = (
-        <Single
-          legend={q}
-          options={TIME_OPTIONS}
-          value={draft.time}
-          onChange={(v) => (v ? set({ time: v }) : clear("time"))}
-        />
-      );
-      break;
-    case "spend":
-      body = (
-        <Single
-          legend={q}
-          options={SPEND_OPTIONS}
-          value={draft.spend}
-          onChange={(v) => (v ? set({ spend: v }) : clear("spend"))}
-        />
-      );
-      break;
-    case "works":
-      body = (
-        <>
-          <Single
-            legend="Walking"
-            options={WALK_OPTIONS}
-            value={draft.walking}
-            onChange={(v) => (v ? set({ walking: v }) : clear("walking"))}
-          />
-          <Multi
-            legend="Getting around"
-            options={[{ value: "stepfree", label: "Step-free routes only" }]}
-            values={draft.stepFree ? ["stepfree"] : []}
-            onChange={(v) => (v.length ? set({ stepFree: true }) : clear("stepFree"))}
-          />
-          <Single
-            legend="Transport"
-            options={CAR_OPTIONS}
-            value={draft.car}
-            onChange={(v) => (v ? set({ car: v }) : clear("car"))}
-          />
-        </>
-      );
-      break;
-    case "extra":
-      body = (
-        <Multi
-          legend={q}
-          options={[
-            { value: "quiet", label: "Keep it quiet" },
-            { value: "kids", label: "Children will join" },
-          ]}
-          hint="With children, an adult supervises and the dog can always walk away. We never ask for a child's name or age."
-          values={[...(draft.quiet ? ["quiet"] : []), ...(draft.kids ? ["kids"] : [])]}
-          onChange={(v) => {
-            const next = { ...draft };
-            delete next.quiet;
-            delete next.kids;
-            if (v.includes("quiet")) next.quiet = true;
-            if (v.includes("kids")) next.kids = true;
-            setDraft(next);
-          }}
-        />
+        <fieldset className="pa-field pd-choices" aria-labelledby={qid}>
+          <p className="pa-fine">
+            Pick any that apply. Only you know your dog. “Not sure” stays unknown, and we ask before
+            an adventure that depends on it.
+          </p>
+          <div className="pa-chips">
+            {KEEP_OPTIONS.map((o) => (
+              <Chip
+                key={o.value}
+                on={!!draft.keepInMind?.includes(o.value)}
+                onClick={() => toggleKeep(o.value)}
+              >
+                {o.label}
+              </Chip>
+            ))}
+            <Chip on={!!draft.kids} onClick={toggleKids}>
+              {KIDS_OPTION.label}
+            </Chip>
+            {KEEP_EXCLUSIVE.map((o) => (
+              <Chip
+                key={o.value}
+                on={!!draft.keepInMind?.includes(o.value)}
+                onClick={() => toggleKeep(o.value)}
+              >
+                {o.label}
+              </Chip>
+            ))}
+          </div>
+        </fieldset>
       );
   }
 
   const answered = answeredIn(id, draft);
-  const more = (s: StepId) => {
-    setExtras((e) => [...e, s]);
-    setI(idx + 1);
-  };
+  const personalId = "fs-personal";
   return (
-    <section className="pa-panel pd-quiz" aria-labelledby="fs-quiz-h">
+    <section className="pa-panel pd-quiz">
       <p className="pd-quiz-count" id="fs-quiz-count">
         Question {idx + 1} of {n}
       </p>
@@ -407,13 +442,121 @@ export function IntroQuiz({
         {/* Decorative segment dividers (the segmented look); the real progressbar above carries the meaning. */}
         <i aria-hidden="true" style={{ ["--steps" as string]: n }} />
       </div>
-      <h2 className="pa-h" id="fs-quiz-h">
-        {q}
-      </h2>
-      <div className="pd-editor">{body}</div>
+      <div className="pd-quiz-step" key={id}>
+        <h2 className="pa-h pd-quiz-q" id={qid} tabIndex={-1} ref={heading}>
+          {STEP_QUESTION[id]}
+        </h2>
+        <div className="pd-editor">{body}</div>
+      </div>
+      {last && (
+        <div className="pd-quiz-more">
+          <button
+            type="button"
+            className="pa-linkbtn"
+            aria-expanded={open}
+            aria-controls={personalId}
+            onClick={() => setOpen((o) => !o)}
+          >
+            Make it more personal (optional)
+          </button>
+          {open && (
+            <div id={personalId} className="pd-personal">
+              <label className="pa-field">
+                <span className="pa-fine">
+                  Dog name or names, like “Luna and Milo”. We keep one shared profile.
+                </span>
+                <input
+                  aria-label="Your dog's name, or names"
+                  value={draft.names ?? ""}
+                  maxLength={60}
+                  autoComplete="off"
+                  placeholder="Luna and Milo"
+                  onChange={(e) => set({ names: e.target.value })}
+                />
+              </label>
+              {draft.names && draft.names.split(/,|&|\band\b/i).length > 1 && (
+                <p className="pa-fine">{MULTI_DOG_NOTE}</p>
+              )}
+              <Group legend="Available time">
+                {TIME_OPTIONS.map((o) => (
+                  <Chip
+                    key={o.value}
+                    on={draft.time === o.value}
+                    onClick={() =>
+                      draft.time === o.value ? clear("time") : set({ time: o.value })
+                    }
+                  >
+                    {o.label}
+                  </Chip>
+                ))}
+              </Group>
+              <Group legend="Budget">
+                {SPEND_OPTIONS.map((o) => (
+                  <Chip
+                    key={o.value}
+                    on={draft.spend === o.value}
+                    onClick={() =>
+                      draft.spend === o.value ? clear("spend") : set({ spend: o.value })
+                    }
+                  >
+                    {o.label}
+                  </Chip>
+                ))}
+              </Group>
+              <Group legend="Walking">
+                {WALK_OPTIONS.map((o) => (
+                  <Chip
+                    key={o.value}
+                    on={draft.walking === o.value}
+                    onClick={() =>
+                      draft.walking === o.value ? clear("walking") : set({ walking: o.value })
+                    }
+                  >
+                    {o.label}
+                  </Chip>
+                ))}
+                <Chip
+                  on={!!draft.stepFree}
+                  onClick={() => (draft.stepFree ? clear("stepFree") : set({ stepFree: true }))}
+                >
+                  Step-free routes only
+                </Chip>
+              </Group>
+              <Group legend="Transport">
+                {CAR_OPTIONS.map((o) => (
+                  <Chip
+                    key={o.value}
+                    on={draft.car === o.value}
+                    onClick={() => (draft.car === o.value ? clear("car") : set({ car: o.value }))}
+                  >
+                    {o.label}
+                  </Chip>
+                ))}
+              </Group>
+              <Group legend="Interests (a gentle nudge, never a rule)">
+                {ENJOY_OPTIONS.map((o) => (
+                  <Chip
+                    key={o.value}
+                    on={!!draft.enjoy?.includes(o.value)}
+                    onClick={() =>
+                      set({
+                        enjoy: draft.enjoy?.includes(o.value)
+                          ? draft.enjoy.filter((x) => x !== o.value)
+                          : [...(draft.enjoy ?? []), o.value],
+                      })
+                    }
+                  >
+                    {o.label}
+                  </Chip>
+                ))}
+              </Group>
+            </div>
+          )}
+        </div>
+      )}
       <div className="pd-quiz-nav">
         {idx > 0 ? (
-          <button type="button" className="pp-btn pp-btn-ghost" onClick={() => setI(idx - 1)}>
+          <button type="button" className="pp-btn pp-btn-ghost" onClick={back}>
             Back
           </button>
         ) : (
@@ -428,25 +571,11 @@ export function IntroQuiz({
             {submitLabel}
           </button>
         ) : (
-          <button type="button" className="pp-btn pp-btn-primary" onClick={() => setI(idx + 1)}>
+          <button type="button" className="pa-linkbtn" onClick={advance}>
             {answered ? "Next" : "Skip"}
           </button>
         )}
       </div>
-      {last && (!steps.includes("works") || !steps.includes("extra")) && (
-        <div className="pd-quiz-more">
-          {!steps.includes("works") && (
-            <button type="button" className="pa-linkbtn" onClick={() => more("works")}>
-              Add what works for you (walking, steps, car)
-            </button>
-          )}
-          {!steps.includes("extra") && (
-            <button type="button" className="pa-linkbtn" onClick={() => more("extra")}>
-              Add a detail (quiet, children joining)
-            </button>
-          )}
-        </div>
-      )}
       <p className="pa-fine">Skipped questions stay unknown. Nothing leaves this device.</p>
     </section>
   );

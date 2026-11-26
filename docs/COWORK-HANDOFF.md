@@ -35,7 +35,11 @@ The single list of things that need the owner's accounts, devices or money. Each
 
 ## Price constant must match Gumroad
 
-`offer.price` in `src/config/site.ts` (currently "$14.99") is shown on the home and unlock pages. Before launch it must equal the Gumroad listing price exactly. Change both together; never show a discount or "was" price unless the listing really has one.
+`offer.price` in `src/config/site.ts` (currently "$19.99", one-time, no subscription) is shown on the home and unlock pages. Before launch it must equal the Gumroad listing price exactly. Change both together; never show a discount or "was" price in the app.
+
+## Partner discounts (Gumroad discount codes)
+
+Partner and promotional discounts are done only with Gumroad discount codes. To set one up: in Gumroad, open the product, go to Discounts, and create a code for the partner (a percentage or fixed amount, optionally with an expiry or a use limit). Share the code, or a Gumroad link with the code applied, with the partner. The Gumroad checkout page applies the discount. The app shows no code and no discounted price; the site keeps showing the $19.99 price.
 
 ## CW-GH-1
 

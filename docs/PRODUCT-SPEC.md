@@ -8,9 +8,9 @@ A collectible, self-paced set of little adventures to do with a dog. Each advent
 
 ## Journey
 
-1. **Arrive** on the home page. Free adventures are playable immediately with no account.
-2. **Tell us about your dog (optional).** A short onboarding asks a few quick questions, with "Not sure" always available. More detail and an "About you" section can be added later. Skipping is allowed.
-3. **Discover** an adventure in one of three modes (below). The adventure appears as a mystery card showing a clue; the reveal shows the full adventure.
+1. **Arrive** on the home page. The free promise: "Tell us about your dog. Get one adventure picked for them, free." No account.
+2. **Tell us about your dog.** A short survey (life stage, energy, size, comfort with people, other dogs and noise, mobility, food) with "Not sure" always available. Skipped answers stay unknown, never "safe".
+3. **Get one adventure.** Free visitors get exactly one adventure picked by the engine from the free pool: hard eligibility first, unknown never safe, the gentle default when the profile is unknown. It is shown as "Your first adventure". Paid visitors get Discover in three modes (below).
 4. **Do it, then mark it done.** Completion adds the adventure to the passport once. Repeating an adventure logs a repeat memory and never raises the unique count.
 5. **Remember.** Add a short memory note (up to 280 characters) and optionally make a keepsake.
 6. **Collect.** Stamps, milestones and collection progress are derived from what is done.
@@ -18,9 +18,13 @@ A collectible, self-paced set of little adventures to do with a dog. Each advent
 
 Routes: `/` home, `/discover`, `/collections` (and `/collections/<slug>`, `/collections/mine/<id>`), `/passport`, `/unlock`, `/restore-access`, plus guides, gear, the packing list and trust pages.
 
-## Discovery modes
+## Free starter (one tailored adventure)
 
-Tabs on `/discover`:
+`src/passport/starter.ts` (`selectStarter`, `savedStarter`) runs `rank()` over the public free pool for the survey answers and takes the top result. The pick is saved in the local Save as the additive optional field `starter: { id, at }` (`chooseStarter` in `progress.ts`), so it does not change on each visit. Re-answering the survey may change it only until that adventure is completed; after that it stays as the free keepsake and can be re-read. If no free adventure is eligible the page says so plainly and shows the unlock pitch. The gate is a product and UX choice, not security: the free pool is public in this repository. The free flow makes no network call.
+
+## Discovery modes (full Passport)
+
+Tabs on `/discover` for entitled visitors:
 
 - **Made for You.** A ranked list from the engine (`rank`), using the dog profile, owner preferences and today's filters. Each suggestion shows up to three plain-language reasons. Adventures that depend on an unanswered question are shown as **held**, with the question to answer.
 - **Surprise Me.** One adventure drawn from a chosen scope (all, a curated collection, a custom collection, favorites, or done) with more randomness than Made for You. Completed adventures are never drawn unless repeats are requested or the scope is "done"; skipped adventures are avoided.
@@ -79,7 +83,7 @@ Ten keepsake families (travel postcard, magazine cover, ID card, trading card, c
 
 |                                                      | Free                                                                                                           | Full Passport (one-time purchase)                                                                                                                    |
 | ---------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Adventures                                           | 12 sample adventures in this repository                                                                        | A much larger library, protected and delivered by the server                                                                                         |
+| Adventures                                           | One adventure picked for your dog from the free pool in this repository                                        | A much larger library, protected and delivered by the server                                                                                         |
 | Account                                              | None                                                                                                           | None; a license code activates access                                                                                                                |
 | Discovery, collections, stamps, milestones, memories | Yes                                                                                                            | Yes                                                                                                                                                  |
 | Suggestions                                          | "For you today" card, "This season" shelf, occasion card and smart-collection picks, all from the free library | The same, from the much larger library; plus yearly calendar reminders (`.ics`, built on the device) for the dog's birthday and adoption anniversary |
@@ -90,7 +94,7 @@ Premium adventures are never in this repository, the bundle or any public file. 
 
 ## Pricing stance
 
-No price appears in code. The checkout link is set through the build variable `VITE_CHECKOUT_URL`, and the price is shown at checkout. Working **hypotheses** to validate, not facts: an introductory price of $14.99 and a standard price of $19.99, one time, no subscription. See `DECISIONS.md` for the validation thresholds.
+The price is $19.99, one time, no subscription, held in `offer.price` in `src/config/site.ts` and matching the Gumroad listing. The checkout link is set through the build variable `VITE_CHECKOUT_URL`. Partner discounts are Gumroad discount codes applied on the Gumroad checkout page; the app shows no code. See `DECISIONS.md` for the validation thresholds.
 
 ## Gamification philosophy
 

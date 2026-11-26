@@ -17,7 +17,19 @@ import { listCollections } from "@/passport/progress";
 
 vi.mock("@/passport/content", async () => (await import("./collections-fixtures")).contentMock);
 
+const ent = vi.hoisted(() => ({ status: "entitled" as "entitled" | "free" }));
+vi.mock("@/passport/useEntitlement", () => ({
+  useEntitlement: () => ({
+    status: ent.status,
+    premium: [],
+    signedIn: false,
+    csrf: "",
+    message: null,
+  }),
+}));
+
 beforeEach(() => {
+  ent.status = "entitled";
   window.localStorage.clear();
   _resetForTests();
 });
@@ -119,11 +131,14 @@ describe("shared completion", () => {
     expect(screen.getByText("1 of 2 done")).toBeInTheDocument();
   });
 
-  it("premium-only collections say so honestly and invent no counts", async () => {
+  it("free visitors see no per-collection counts, only that the adventures are in the full Passport", async () => {
+    ent.status = "free";
     await renderUi(<CuratedCollections />);
-    const li = screen.getByRole("heading", { name: "Road Trip Adventures" }).closest("li")!;
-    expect(within(li).getByText(/In the full Passport/)).toBeInTheDocument();
-    expect(li.textContent).not.toMatch(/\d/);
+    for (const name of ["Road Trip Adventures", "Five-Minute Moments"]) {
+      const li = screen.getByRole("heading", { name }).closest("li")!;
+      expect(within(li).getByText(/in the full Passport/)).toBeInTheDocument();
+      expect(li.textContent).not.toMatch(/\d/);
+    }
   });
 
   it("an adventure that does not suit the dog is not counted in a curated deck", async () => {

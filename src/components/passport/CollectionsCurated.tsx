@@ -41,7 +41,9 @@ function CuratedCard({ c }: { c: Collection }) {
         <AppLink to={`/collections/${c.slug}`}>{c.title}</AppLink>
       </h3>
       <p>{c.tagline}</p>
-      {total > 0 ? (
+      {!unlocked ? (
+        <p className="pa-fine">The adventures in this collection are in the full Passport.</p>
+      ) : total > 0 ? (
         <>
           <p className="pa-fine">
             {total} {unlocked ? "" : "free "}
@@ -81,6 +83,31 @@ export function CuratedDetail({ c }: { c: Collection }) {
   const { items, done, total, save } = useCuratedProgress(c.slug);
   const doneIds = new Set(members(save.done));
   const { unlocked } = useAdventureLibrary();
+  if (!unlocked)
+    return (
+      <>
+        <h1 className="pa-h1">{c.title}</h1>
+        <p className="pa-sub">{c.description}</p>
+        <div className="pa-card">
+          <p>The adventures in this collection are in the full Passport.</p>
+          <p className="pa-fine">
+            Free visitors get one adventure picked for their dog. Take the short survey to get
+            yours.
+          </p>
+          <div className="pa-row">
+            <Button to="/discover">Get my free pick</Button>
+            <Button to="/unlock" variant="secondary">
+              See what's included
+            </Button>
+          </div>
+        </div>
+        <p>
+          <AppLink to="/collections" className="pa-linkbtn">
+            All collections
+          </AppLink>
+        </p>
+      </>
+    );
   return (
     <>
       <h1 className="pa-h1">{c.title}</h1>

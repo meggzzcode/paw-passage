@@ -2,7 +2,12 @@ import { afterEach, describe, expect, it, vi } from "vitest";
 import { cleanup, render, screen, waitFor } from "@testing-library/react";
 import { readFileSync } from "node:fs";
 import { offer } from "@/config/site";
-import { fetchPremiumSummary, summaryText, SUMMARY_FALLBACK } from "@/lib/premium-summary";
+import {
+  fetchPremiumSummary,
+  summaryText,
+  unlockLine,
+  SUMMARY_FALLBACK,
+} from "@/lib/premium-summary";
 import { PhotoFilterExamples } from "@/components/site/PhotoFilterExamples";
 import { TrustBlock } from "@/components/passport/TrustBlock";
 import { StampShelf } from "@/components/passport/StampShelf";
@@ -20,11 +25,38 @@ afterEach(() => {
 
 describe("offer and premium summary", () => {
   it("has one price constant and honest pricing text", () => {
-    expect(offer.price).toBe("$14.99");
+    expect(offer.price).toBe("$19.99");
     expect(offer.pricing).toBe("one-time purchase, no subscription");
     expect(readFileSync("docs/COWORK-HANDOFF.md", "utf8")).toMatch(
       /must (equal|match)[^.]*Gumroad/i,
     );
+  });
+  it("keeps no intro price or old price anywhere in the app source or docs", () => {
+    const files = [
+      "src/config/site.ts",
+      "src/routes/index.tsx",
+      "src/routes/unlock.tsx",
+      "docs/COWORK-HANDOFF.md",
+      "docs/DECISIONS.md",
+      "docs/FLIP-HANDOFF.md",
+      "docs/PRODUCT-SPEC.md",
+    ];
+    for (const f of files) expect(readFileSync(f, "utf8")).not.toMatch(/14\.99|introductory/i);
+  });
+  it("builds the live unlock line from the summary, with an honest fallback", () => {
+    expect(
+      unlockLine({
+        count: 120,
+        collections: [
+          { slug: "a", count: 60 },
+          { slug: "b", count: 60 },
+        ],
+      }),
+    ).toMatch(
+      /^Unlock 120 adventures and challenges across 2 collections, for every kind of dog: puppies, seniors/,
+    );
+    expect(unlockLine(null)).toMatch(/^Unlock a much larger library/);
+    expect(unlockLine(null)).not.toMatch(/\d/);
   });
   it("formats the count, and falls back honestly", () => {
     expect(summaryText(null)).toBe(SUMMARY_FALLBACK);

@@ -5,7 +5,7 @@ export const site = {
   name: "Paws & Passage",
   tagline: "The Adventure Passport: a lifetime of little adventures with your dog",
   description:
-    "The Adventure Passport is a collectible, self-paced set of little adventures to share with your dog. Free to try with no account, with a one-time purchase to unlock the full library.",
+    "The Adventure Passport is a collectible, self-paced set of little adventures to share with your dog. Free to try with no account: tell us about your dog and get one adventure picked for them. A one-time purchase unlocks the full library.",
   /** Public site origin, e.g. "https://pawsandpassage.com". Required for sitemap.xml (returns 503 until set). */
   siteUrl: settings.siteUrl,
   /** Business email for contact and support. Leave "" until you have one: pages then say so honestly instead of showing a dead link. */
@@ -24,9 +24,10 @@ export const site = {
 
 /**
  * The public offer. The price must match the Gumroad listing before launch (see docs/COWORK-HANDOFF.md).
- * No other price, discount or "was" price appears anywhere on the site.
+ * No other price, discount or "was" price appears anywhere on the site. Partner discounts are Gumroad discount codes
+ * applied at checkout; the app never shows a code.
  */
 export const offer = {
-  price: "$14.99",
+  price: "$19.99",
   pricing: "one-time purchase, no subscription",
 } as const;

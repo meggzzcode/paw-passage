@@ -29,7 +29,8 @@ describe("shell navigation", () => {
 describe("homepage copy", () => {
   const src = readFileSync("src/routes/index.tsx", "utf8");
   it("has the single primary CTA and the five placeholder collections", () => {
-    expect(src).toContain("Find our next adventure");
+    expect(src).toContain("Pick our free adventure");
+    expect(src).toContain("Tell us about your dog. Get one adventure picked for them, free.");
     for (const c of [
       "Five-Minute Moments",
       "Rainy Day Club",
@@ -48,6 +49,6 @@ describe("homepage copy", () => {
     expect(src).toContain("Little adventures for you and");
     expect(src).toContain("Free to start");
     expect(src).toContain("No account");
-    expect(src).not.toContain("Collect adventures, not just things");
+    expect(src).not.toMatch(/collect\s+adventures/i);
   });
 });

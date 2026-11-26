@@ -63,7 +63,7 @@ No other recurring costs are known. There is no subscription, no AI API cost and
 
 **Headline:** The Adventure Passport - a built, pre-launch product for dog owners: collectible little adventures, free samples, a one-time paid library.
 
-**What it is:** A complete web product on TanStack Start, Netlify Functions and Netlify Blobs. Visitors try 10 free adventures with no account, a matching engine that suggests adventures for their dog, collections (20 defined), stamps and milestones, memory notes and keepsake images made on the device. A one-time purchase through Gumroad is designed to unlock a much larger protected library, synced progress and more keepsakes.
+**What it is:** A complete web product on TanStack Start, Netlify Functions and Netlify Blobs. Visitors answer a short dog survey and get one free adventure picked for their dog with no account, a matching engine that picks adventures for their dog, collections (20 defined), stamps and milestones, memory notes and keepsake images made on the device. A one-time purchase through Gumroad is designed to unlock a much larger protected library, synced progress and more keepsakes.
 
 **What is true and checkable:**
 
@@ -77,6 +77,6 @@ No other recurring costs are known. There is no subscription, no AI API cost and
 - It has not launched. There is no revenue and no customer base to transfer, and no traffic figure is claimed.
 - The checkout, the license integration, the live deploy and real-device behavior are unverified (`LAUNCH-CHECKLIST.md`). The browser does not yet load the paid library from the server.
 - The premium library is not yet imported to a store.
-- Price points ($14.99 introductory, $19.99 standard) are untested hypotheses.
+- The $19.99 one-time price is untested against real demand.
 
 **Included in the sale:** the repository, documentation, content, design assets, the premium library file at closing (once it is imported and backed up), and a handover session. **Not included:** the seller's accounts, payouts and affiliate accounts.

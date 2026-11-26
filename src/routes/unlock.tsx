@@ -3,12 +3,11 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Container } from "@/components/shell/Container";
 import { AppLink } from "@/components/shell/AppLink";
 import { AccessForm } from "@/components/passport/AccessForms";
-import { freeLibrary } from "@/passport/content";
 import { track } from "@/passport/events";
 import { checkoutUrl } from "@/lib/passport-api";
 import { collections } from "@/passport/content";
 import { offer } from "@/config/site";
-import { summaryText, usePremiumSummary } from "@/lib/premium-summary";
+import { unlockLine, usePremiumSummary } from "@/lib/premium-summary";
 import { TrustBlock } from "@/components/passport/TrustBlock";
 import { pageHead } from "@/lib/seo";
 
@@ -24,7 +23,6 @@ export const Route = createFileRoute("/unlock")({
 });
 
 function Unlock() {
-  const n = freeLibrary().length;
   const link = checkoutUrl();
   const summary = usePremiumSummary();
   useEffect(() => {
@@ -36,8 +34,10 @@ function Unlock() {
         <p className="pa-kicker">The Adventure Passport</p>
         <h1 className="pa-h1">Get the full Passport</h1>
         <p className="pa-sub">
-          The free passport is a real, working passport. The full Passport adds more to collect.
+          Tell us about your dog. Get one adventure picked for them, free. The full Passport is for
+          when you want more.
         </p>
+        <p>Want more little adventures with your dog? {unlockLine(summary)}</p>
 
         <div className="co-compare">
           <section className="pa-card" aria-labelledby="free-h">
@@ -45,17 +45,10 @@ function Unlock() {
               Free, always
             </h2>
             <ul className="co-plain">
-              <li>
-                {n} free {n === 1 ? "adventure" : "adventures"} to try
-              </li>
-              <li>Mystery reveals matched to your dog</li>
-              <li>A daily suggestion, “For you today”, from the free library</li>
-              <li>A “This season” shelf of the free adventures tagged for the season</li>
-              <li>Suggestions from your own smart collections</li>
-              <li>Occasion ideas near your dog's birthday or adoption anniversary</li>
-              <li>Stamps, milestones and memories</li>
-              <li>Your own collections</li>
-              <li>Keepsake postcards made on your device</li>
+              <li>A short survey about your dog, then one adventure picked for them</li>
+              <li>“Your first adventure”: do it, collect it, make a photo filter</li>
+              <li>A stamp and a keepsake postcard made on your device</li>
+              <li>Re-read your pick and keep your keepsake any time</li>
               <li>No account needed</li>
             </ul>
           </section>
@@ -67,21 +60,19 @@ function Unlock() {
               <strong>{offer.price}</strong> <span>one-time, no subscription</span>
             </p>
             <p className="pa-fine">
-              {summaryText(summary)}.{" "}
               <AppLink to="/refund-policy" className="pa-linkbtn">
                 Refund policy
               </AppLink>
             </p>
             <ul className="co-plain">
-              <li>A much larger library of adventures to suggest from</li>
-              <li>A fuller “This season” shelf, with the full library's seasonal adventures</li>
-              <li>Yearly calendar reminders for your dog's birthday and adoption anniversary</li>
-              <li>Smart-collection picks drawn from the larger library</li>
-              <li>Collections that only exist in the full Passport</li>
-              <li>More keepsake designs</li>
+              <li>Browse and pick from the whole library, not just one adventure</li>
+              <li>Mystery reveals and “Made for you” picks, matched to your dog</li>
+              <li>Every collection, from puppies to seniors, hyper dogs to homebodies</li>
+              <li>Daily and seasonal suggestions, plus birthday and adoption reminders</li>
+              <li>Your own collections and more keepsake designs</li>
               <li>Synced progress that follows you across devices</li>
             </ul>
-            <p className="pa-fine">One-time purchase, no subscription. No subscription.</p>
+            <p className="pa-fine">One-time purchase, no subscription.</p>
             {link ? (
               <a
                 className="pp-btn pp-btn-primary"

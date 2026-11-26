@@ -23,10 +23,7 @@ export function SiteFooter() {
           <p className="flex items-center gap-2 font-display text-2xl">
             <LogoMark size={30} /> {site.name}
           </p>
-          <p className="mt-3 max-w-xs text-sm opacity-90">
-            The Adventure Passport. A lifetime of little adventures. Collect adventures, not just
-            things.
-          </p>
+          <p className="mt-3 max-w-xs text-sm opacity-90">A lifetime of little adventures.</p>
         </div>
         <nav aria-label="Explore">
           <p className="text-xs font-semibold uppercase tracking-[0.16em] opacity-80">Explore</p>

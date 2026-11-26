@@ -38,5 +38,5 @@ None of these has been done, so none is claimed:
 3. **Stale default page title.** `src/routes/__root.tsx` sets the title of ordinary pages without their own title to "dog-friendly travel guides and stays", which does not describe the product.
 4. **Dark mode is not reachable.** Dark tokens exist but nothing sets the `dark` class (UNVERIFIED by search of `src/`).
 5. **Unverified provider contract and deploy path** as listed above.
-6. **Content gaps** recorded in `CONTENT-REVIEW.md`: several free adventures sit at the minimum score, no free adventure needs a car, water or a beach, and the one food adventure needs a vet or behavior professional's read before launch.
+6. **Content gaps** recorded in `CONTENT-REVIEW.md`: several free adventures sit at the minimum score, no free adventure needs a car, water or a beach, and there is one food adventure (the site states that nothing is vet-reviewed).
 7. **Lint warnings:** 30 `react-refresh/only-export-components` warnings (no errors).

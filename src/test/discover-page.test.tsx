@@ -1,4 +1,4 @@
-import { afterEach, beforeEach, describe, expect, it } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { cleanup, fireEvent, render, screen, within } from "@testing-library/react";
 import { useState } from "react";
 import { DiscoverPage } from "@/components/passport/DiscoverPage";
@@ -14,6 +14,16 @@ import {
 } from "@/passport/local-store";
 import { has, listCollections, members } from "@/passport/progress";
 import type { DogProfile, SessionFilters } from "@/passport/profile";
+
+vi.mock("@/passport/useEntitlement", () => ({
+  useEntitlement: () => ({
+    status: "entitled",
+    premium: [],
+    signedIn: false,
+    csrf: "",
+    message: null,
+  }),
+}));
 
 const library = freeLibrary();
 
@@ -239,10 +249,10 @@ describe("discover: completion and cards", () => {
     expect(getSave().done.added[library.find((a) => a.title === title)!.id]).toBeTruthy();
     expect(within(first).getByRole("status")).toHaveTextContent(/added to your passport/i);
     expect(within(first).getByRole("button", { name: "Make my photo filter" })).toBeInTheDocument();
-    expect(screen.getByText(new RegExp(`^1 of ${library.length} free adventures`))).toBeTruthy();
+    expect(screen.getByText(new RegExp(`^1 of ${library.length} adventures`))).toBeTruthy();
     // Same card, same completion, in another tab.
     fireEvent.click(screen.getByRole("tab", { name: "Made for You" }));
-    expect(screen.getByText(new RegExp(`^1 of ${library.length} free adventures`))).toBeTruthy();
+    expect(screen.getByText(new RegExp(`^1 of ${library.length} adventures`))).toBeTruthy();
     fireEvent.click(screen.getByRole("tab", { name: "Browse All" }));
     const again = screen.getAllByRole("article")[0]!;
     openMore(again);

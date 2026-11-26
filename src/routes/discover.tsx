@@ -8,7 +8,7 @@ export const Route = createFileRoute("/discover")({
     pageHead({
       title: "Find a little adventure for your dog",
       description:
-        "Adventures made for your dog, a mystery to reveal, or every adventure to browse. Free to try, no account needed. Complete adventures to collect passport stamps.",
+        "Tell us about your dog and get one adventure picked for them, free. No account needed.",
       path: "/discover",
     }),
   validateSearch: (s: Record<string, unknown>): { mode?: DiscoverMode } => {

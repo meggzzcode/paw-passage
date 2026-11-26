@@ -3,6 +3,7 @@
 import {
   add,
   addToCollection,
+  chooseStarter,
   createCollection,
   deleteCollection,
   emptySave,
@@ -126,6 +127,9 @@ export function repeatAdventure(id: string) {
 const apply = (next: Save) => {
   if (next !== getSave()) commit(next);
 };
+/** Remembers the free visitor's one picked adventure (null clears it). Ignored once that adventure is completed. */
+export const setStarter = (id: string | null, now = Date.now()) =>
+  apply(chooseStarter(getSave(), id, now));
 export const newCollection = (c: CustomCollection, now = Date.now()) =>
   apply(createCollection(getSave(), c, now));
 export const renameCustomCollection = (id: string, name: string, now = Date.now()) =>

@@ -81,7 +81,7 @@ An extra adventure from our first draft. We removed it because its core (a slow,
 - Several adventures sit between 7.2 and 7.4 and could drop under the bar with a harsher reviewer; originality (6 on six of the twelve) and adventure factor are the weakest criteria library-wide.
 - The rewritten Paw-trait Studio, Little Picnic Club and Sunrise Breakfast Club need an independent re-score before they can be published again.
 - No free adventure needs a car, water or a beach, so those dog profiles are served only by the premium library.
-- The Taste-Off is the only food adventure. It is deliberately vet-deferential, with a no-food Sniff-Off variation, but a vet or behaviour professional should read it before launch.
+- The Taste-Off is the only food adventure. It is deliberately vet-deferential, with a no-food Sniff-Off variation. The site states plainly that nothing is vet-reviewed.
 - Several outdoor adventures declare crowd "some" with strangers and other dogs, so they are correctly held back from nervous dogs; the indoor and home-spot set carries those profiles.
 - Content has not been tested with real dogs or owners, and the scores are editorial judgements (see the top of this document).
 
@@ -131,3 +131,15 @@ Three independent reviewers re-scored the three free drafts. This note records o
 - **The Little Picnic Club** did not reach the bar (a plant-ingestion concern, a places mismatch and an overlap with the Bazaar of Smells). It is now a ten-minute loop near home with one scent course at each of three stops, a clean cloth left on the windowsill in place of the fallen leaf, `places` set to home, `stepFree` true and no snack. It stays `draft` with our own estimated scores until it is independently re-scored.
 - **The Sunrise Breakfast Club** did not reach the bar (a sock in the bundle, a mismatched away-from-home variation and a hard dawn start). The sock is gone (a loosely rolled worn T-shirt, called the Morning Paper), the doorstep or yard version is the default with sunrise optional, a dog-specific dawn-versus-noon comparison of one favourite stop was added, the away-from-home variation was removed and the "step back indoors if another dog appears" line was added. It stays `draft` with our own estimated scores until it is independently re-scored.
 - The free library now has 10 published and 2 draft adventures.
+
+## Survey match gap pass on the free set (2026-11-26)
+
+Each free user now takes a short dog survey and gets one match from the free pool, so every dog type needs at least one safe, strong free match. Audited the 10 published free adventures against 16 dog and home types. The first-pass audit found no free match for: lively or hyper dogs (none declared energy "lively"), two-dog households and families with kids (no `household` tags), puppy-friendly outdoor or surface play, and shy or reactive dogs who want something with a little movement (every quiet card was gentle, and every outdoor card meets strangers and other dogs).
+
+Eight new free adventures were drafted, each with a different mechanic from the existing set and from each other. An independent scorer then reviewed all eight (verdicts in the premium-content gap3 folder). Outcome: 2 kept, 2 pending a re-score, 4 deleted. Free keepsake themes remain unique across the free cards.
+
+- **Kept (2), fixed, independent scores applied to the `review` block:** The Dog's Time Capsule Dig (adv-d9g5p2; 7, 7, 6, 6, 8, 8, mean 7.0) now seals the paper note in a zip bag, out of reach of digging. The Photo Finish Lane (adv-z7c4v5; 7, 8, 6, 7, 7, 7, mean 7.0) now lists puppy, adult and senior to match its variations and notes a bowl of fresh water near the lane (the `water` field stays `none`, since that field describes water activities).
+- **Re-scored:** The Low-Down Tour (adv-l4d7h3) passed the independent re-score at 7.33 after its group was capped at 2 or 3 people staying 6 or more feet back and its payoff was strengthened; it is back in the repo as published. The Twin Mailroom (adv-t6w2n9) scored 6.83 and was deleted.
+- **Deleted (4):** The Cardboard Canyon Run (adv-b3r8x4, generic and overlapping), The Texture Trail (adv-x2f6k8), The Sundial Dog (adv-u5s9a7) and The Bedtime Story Audition (adv-y8e3j6), all scored below the bar by the independent scorer.
+
+The free library in the repo now has 13 published adventures: the 10 earlier ones plus Time Capsule Dig, Photo Finish Lane and Low-Down Tour. These scores are independent but are still editorial judgement, not testing with dogs or owners.

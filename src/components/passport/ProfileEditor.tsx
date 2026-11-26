@@ -79,7 +79,7 @@ export function MultiChoice<T extends string>({
   );
 }
 
-const COMFORT: { value: Comfort | undefined; label: string }[] = [
+export const COMFORT: { value: Comfort | undefined; label: string }[] = [
   { value: "comfortable", label: "Comfortable" },
   { value: "nervous", label: "Nervous" },
   { value: "unknown", label: "Not sure" },
@@ -91,7 +91,7 @@ const TRI: { value: Tri | undefined; label: string }[] = [
 ];
 
 // Clearing a value sets it to undefined, which the typed Partial does not allow under exactOptionalPropertyTypes.
-const patch = (p: { [K in keyof DogProfile]?: DogProfile[K] | undefined }) =>
+export const patch = (p: { [K in keyof DogProfile]?: DogProfile[K] | undefined }) =>
   setProfile(p as Partial<DogProfile>);
 
 export const hasProfile = (p: DogProfile): boolean =>

@@ -45,7 +45,12 @@ export type Save = {
   repeats: Record<string, number>; // adventure ID -> number of repeat memories (never counted as new adventures)
   feedback: Record<string, { value: "liked" | "not-for-us"; at: number }>;
   collections: Record<string, StoredCollection>;
+  /** The one adventure a free visitor was picked. Additive and optional, so older saves stay valid. */
+  starter?: Starter;
 };
+
+/** The free visitor's single picked adventure (an ID only, never a copy of the adventure). */
+export type Starter = { id: string; at: number };
 
 export const MAX_MEMORY_CHARS = 280;
 export const MAX_IDS = 400;
@@ -197,6 +202,7 @@ export function merge(a: Save, b: Save): Save {
     const cur = collections[k];
     collections[k] = cur ? mergeCollection(cur, c) : c;
   }
+  const starter = a.starter && b.starter ? later(a.starter, b.starter) : (a.starter ?? b.starter);
   return clamp({
     v: 2,
     rev: Math.max(a.rev, b.rev),
@@ -209,6 +215,7 @@ export function merge(a: Save, b: Save): Save {
     repeats: maxMerge(a.repeats, b.repeats),
     feedback: sortKeys(feedback),
     collections: sortKeys(collections),
+    ...(starter ? { starter } : {}),
   });
 }
 
@@ -396,8 +403,15 @@ function checkTree(x: Record<string, unknown>): string | null {
     "repeats",
     "feedback",
     "collections",
+    "starter",
   ];
   if (Object.keys(x).some((k) => !allowed.includes(k))) return "unknown field";
+  if ("starter" in x) {
+    const st = x["starter"];
+    if (!isObj(st) || Object.keys(st).some((k) => k !== "id" && k !== "at")) return "bad starter";
+    if (typeof st["id"] !== "string" || !ADV_RE.test(st["id"]) || !goodTime(st["at"]))
+      return "bad starter";
+  }
   if (typeof x["rev"] !== "number" || !Number.isInteger(x["rev"]) || x["rev"] < 0) return "bad rev";
   for (const [key, specs] of [
     ["profile", PROFILE_SPEC],
@@ -485,6 +499,24 @@ export function migrate(raw: unknown): Save | null {
   } catch {
     return null;
   }
+}
+
+// ---------------------------------------------------------------- free starter
+
+/**
+ * Records (or clears, with null) the one adventure picked for a free visitor. Once that adventure is completed it is
+ * the free keepsake and can no longer be changed here. Returns the same Save when nothing changes.
+ */
+export function chooseStarter(s: Save, id: string | null, now: number): Save {
+  const cur = s.starter;
+  if (cur && has(s.done, cur.id)) return s;
+  if (id === null) {
+    if (!cur) return s;
+    const { starter: _gone, ...rest } = s;
+    return rest;
+  }
+  if (cur?.id === id) return s;
+  return { ...s, starter: { id, at: Math.max(now, (cur?.at ?? 0) + 1) } };
 }
 
 // ---------------------------------------------------------------- collections API

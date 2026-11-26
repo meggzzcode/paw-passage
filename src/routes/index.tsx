@@ -8,9 +8,8 @@ import { SectionHeading } from "@/components/shell/SectionHeading";
 import { visibleGuides } from "@/content/guides";
 import { pageHead } from "@/lib/seo";
 import { site, offer } from "@/config/site";
-import { freeLibrary } from "@/passport/content";
 import { PhotoFilterExamples } from "@/components/site/PhotoFilterExamples";
-import { summaryText, usePremiumSummary } from "@/lib/premium-summary";
+import { unlockLine, usePremiumSummary } from "@/lib/premium-summary";
 
 /** Real photo-filter example images go here (paths under public/, e.g. "/examples/filter-1.jpg"). Empty hides the slot. */
 const FILTER_EXAMPLES: readonly string[] = [];
@@ -20,7 +19,7 @@ export const Route = createFileRoute("/")({
     pageHead({
       title: `The Adventure Passport | ${site.name}`,
       description:
-        "Little adventures for you and your dog. Free to start, no account needed. Pick a mystery card, do it together, collect it and make a photo filter.",
+        "Little adventures for you and your dog. Tell us about your dog and get one adventure picked for them, free. No account needed.",
       path: "/",
     }),
   component: Home,
@@ -49,7 +48,7 @@ const collections: { name: string; blurb: string; icon: ReactNode }[] = [
 const faqs = [
   {
     q: "Is it really free to try?",
-    a: "Yes. You can find an adventure and flip your first card without paying and without creating an account.",
+    a: "Yes. Tell us about your dog and we pick one adventure for them, free. You can do it, collect it and make a keepsake without paying and without creating an account.",
   },
   {
     q: "Do I need an account?",
@@ -78,7 +77,6 @@ function Stamp({ label, state }: { label: string; state: "earned" | "empty" }) {
 
 function Home() {
   const guides = visibleGuides().slice(0, 3);
-  const free = freeLibrary().length;
   const summary = usePremiumSummary();
   return (
     <>
@@ -91,16 +89,16 @@ function Home() {
                 Little adventures for you and <em>your dog</em>.
               </h1>
               <p className="pp-lede">
-                A free set of small, doable things to do together: flip a mystery card, go do it,
+                Tell us about your dog. Get one adventure picked for them, free. Go do it together,
                 collect it, and turn it into a photo filter. A lifetime of little adventures.
               </p>
               <ul className="pp-hero-points" aria-label="Good to know">
                 <li>Free to start</li>
                 <li>No account</li>
-                <li>{free} free adventures</li>
+                <li>One adventure picked for your dog</li>
               </ul>
               <div className="mt-6">
-                <Button to="/discover">Find our next adventure</Button>
+                <Button to="/discover">Pick our free adventure</Button>
               </div>
             </div>
             <MysteryCard />
@@ -191,9 +189,7 @@ function Home() {
           <ol className="pp-steps mt-6">
             <li>
               <h3>Find</h3>
-              <p>
-                Tell us a little about your day and your dog. We suggest an adventure that fits.
-              </p>
+              <p>Answer a few quick taps about your dog. We pick the one adventure that fits.</p>
             </li>
             <li>
               <h3>Do</h3>
@@ -211,13 +207,13 @@ function Home() {
         <Container>
           <div className="pp-card" style={{ padding: "1.5rem" }}>
             <SectionHeading eyebrow="The full Passport" title="Pay once, keep it" id="buy-h">
-              Start with the {free} free adventures. The full Passport adds {summaryText(summary)}:{" "}
-              {offer.price}, {offer.pricing}. No account.
+              Want more little adventures with your dog? {unlockLine(summary)} {offer.price},{" "}
+              {offer.pricing}. No account.
             </SectionHeading>
             <div className="mt-5 flex flex-wrap gap-3">
               <Button to="/unlock">Get the Passport</Button>
               <Button to="/discover" variant="secondary">
-                Try the free adventures
+                Get my free pick
               </Button>
             </div>
           </div>
@@ -275,7 +271,7 @@ function MysteryCard() {
         “Four contenders enter the ring, and only one makes the front page.”
       </p>
       <p className="pp-mini-note">
-        A sample clue. Tap an adventure in Discover to reveal the real thing.
+        A sample clue. Take the short survey and your dog's own adventure is waiting.
       </p>
     </div>
   );

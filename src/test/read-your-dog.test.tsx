@@ -10,6 +10,17 @@ import { DiscoverPage } from "@/components/passport/DiscoverPage";
 import { _resetForTests, completeAdventure, favorite, newCollection } from "@/passport/local-store";
 
 vi.mock("@/passport/content", async () => (await import("./collections-fixtures")).contentMock);
+
+const ent = vi.hoisted(() => ({ status: "entitled" as "entitled" | "free" }));
+vi.mock("@/passport/useEntitlement", () => ({
+  useEntitlement: () => ({
+    status: ent.status,
+    premium: [],
+    signedIn: false,
+    csrf: "",
+    message: null,
+  }),
+}));
 vi.mock("@/components/passport/Keepsake", () => ({ Keepsake: () => <div /> }));
 
 beforeEach(() => {

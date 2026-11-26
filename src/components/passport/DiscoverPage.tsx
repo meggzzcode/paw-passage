@@ -10,6 +10,7 @@ import { Suggestions } from "./Suggestions";
 import { DiscoverTabs, panelId, tabId, type DiscoverMode } from "./DiscoverTabs";
 import { collections } from "@/passport/content";
 import { useAdventureLibrary } from "./collections-shared";
+import { FreeStarter } from "./FreeStarter";
 import { FILTER_LABELS, pickSurprise, rank, type Ctx, type History } from "@/passport/engine";
 import type { CustomCollection, DogProfile, Scope, SessionFilters } from "@/passport/profile";
 import { listCollections, members, newCollectionId } from "@/passport/progress";
@@ -32,13 +33,16 @@ function useDiscoverData() {
   return { save, dog, library, ctx, history };
 }
 
-export function DiscoverPage({
-  mode,
-  onMode,
-}: {
-  mode: DiscoverMode;
-  onMode: (m: DiscoverMode) => void;
-}) {
+/**
+ * Free visitors get one adventure picked for their dog (a short survey, then "Your first adventure"). The full
+ * browse / mystery / made-for-you experience is for entitled visitors. This is a product choice, not a security gate.
+ */
+export function DiscoverPage(props: { mode: DiscoverMode; onMode: (m: DiscoverMode) => void }) {
+  const { unlocked } = useAdventureLibrary();
+  return unlocked ? <FullDiscover {...props} /> : <FreeStarter />;
+}
+
+function FullDiscover({ mode, onMode }: { mode: DiscoverMode; onMode: (m: DiscoverMode) => void }) {
   const { ready, profile } = usePassport();
   const [onboarding, setOnboarding] = useState(false);
   const [editing, setEditing] = useState(false);
@@ -57,7 +61,7 @@ export function DiscoverPage({
       <div className="pa-page pd-page">
         <h1 className="pa-h1">Find a little adventure</h1>
         <p className="pa-sub">
-          Free to try, no account, no deadlines. Pick one when it suits you
+          Your full Passport. No deadlines. Pick one when it suits you
           {profile.name ? ` and ${profile.name}` : ""}.
         </p>
 

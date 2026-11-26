@@ -7,7 +7,7 @@
 //   add --env production --write --yes-production to touch the live store; add --prune to delete adventures not in the file.
 //
 // The file is a JSON array of adventures (schema: src/passport/schema.ts), kept OUTSIDE git. Paths inside this repo are refused.
-// Store layout (read by src/server/passport/store.ts readPremium): `index` -> {v:1, ids:[...]}, `adventure/<id>` -> adventure.
+// Store layout (read by src/server/passport/store.ts readPremium): `index` -> {v:1, ids:[...], items:[{id,status,collections}]}, `adventure/<id>` -> adventure.
 import { readFileSync, realpathSync } from "node:fs";
 import { dirname, join, resolve, sep } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -61,6 +61,17 @@ problems.push(
 );
 if (problems.length) die(`Validation failed:\n${problems.join("\n")}`, 1);
 console.log(`Validated ${adventures.length} premium adventures for store premium-${env}.`);
+// The index carries what GET /api/premium/summary needs (published status and collection slugs, no titles or text).
+function buildIndex(list) {
+  return {
+    v: 1,
+    ids: list.map((a) => a.id),
+    items: list.map((a) => ({ id: a.id, status: a.status, collections: a.collections })),
+  };
+}
+console.log(
+  `Index will list ${adventures.filter((a) => a.status === "published").length} published of ${adventures.length} adventures.`,
+);
 if (!flag("--write")) {
   console.log("Dry run: nothing written. Add --write to import.");
   process.exit(0);
@@ -71,7 +82,7 @@ const siteID = process.env.SITE_ID ?? die("SITE_ID is not set");
 const store = getStore({ name: `premium-${env}`, siteID, token, consistency: "strong" });
 const old = (await store.get("index", { type: "json" }))?.ids ?? [];
 for (const a of adventures) await store.setJSON(`adventure/${a.id}`, a);
-await store.setJSON("index", { v: 1, ids: adventures.map((a) => a.id) });
+await store.setJSON("index", buildIndex(adventures));
 if (flag("--prune"))
   for (const id of old)
     if (!adventures.some((a) => a.id === id)) await store.delete(`adventure/${id}`);

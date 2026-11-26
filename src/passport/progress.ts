@@ -285,6 +285,12 @@ const FILTER_SPEC: Record<string, Spec> = {
   novelty: en(["new-only", "any", "done-only"]),
   favoritesOnly: bool,
   collection: str(60),
+  chair: bool,
+  quick: bool,
+  noYard: bool,
+  puppy: bool,
+  highEnergy: bool,
+  household: arr(["two-dogs", "family"], 2),
 };
 
 const isObj = (x: unknown): x is Record<string, unknown> =>

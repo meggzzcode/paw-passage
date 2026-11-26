@@ -3,7 +3,32 @@ import type { SessionFilters } from "@/passport/profile";
 import { ACTIVITY_TYPES, PLACES, SEASONS, SUPPLY_KEYS } from "@/passport/schema";
 import { describeFilters } from "@/passport/engine";
 import { Choice, MultiChoice } from "./ProfileEditor";
-import { ACTIVITY_LABELS, PLACE_LABELS, SEASON_LABELS, SUPPLY_LABELS } from "./labels";
+import {
+  ACTIVITY_LABELS,
+  PLACE_LABELS,
+  QUICK_PICKS,
+  QUICK_PICK_LABELS,
+  SEASON_LABELS,
+  SUPPLY_LABELS,
+  type QuickPick,
+} from "./labels";
+
+const BOOL_PICKS = ["chair", "quick", "quiet", "noYard", "puppy", "highEnergy"] as const;
+
+/** Which quick-pick chips are on, read from the filters. */
+function picksOf(f: SessionFilters): QuickPick[] {
+  return [...BOOL_PICKS.filter((k) => f[k] === true), ...(f.household ?? [])] as QuickPick[];
+}
+
+/** Writes the chosen quick picks back into the filters. */
+function withPicks(f: SessionFilters, picks: QuickPick[]): SessionFilters {
+  let next = f;
+  for (const k of BOOL_PICKS) next = set(next, k, picks.includes(k) ? true : undefined);
+  const household = picks.filter(
+    (p): p is "two-dogs" | "family" => p === "two-dogs" || p === "family",
+  );
+  return set(next, "household", household);
+}
 
 /** Returns the filters with one field changed or cleared (undefined = no preference). */
 function set<K extends keyof SessionFilters>(
@@ -86,6 +111,13 @@ export function FilterPanel({
         ]}
         values={filters.energy}
         onChange={(v) => onChange(set(filters, "energy", v))}
+      />
+
+      <MultiChoice
+        legend="Quick picks"
+        options={QUICK_PICKS.map((v) => ({ value: v, label: QUICK_PICK_LABELS[v] }))}
+        values={picksOf(filters)}
+        onChange={(v) => onChange(withPicks(filters, v))}
       />
 
       <button

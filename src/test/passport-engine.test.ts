@@ -272,3 +272,64 @@ describe("no match", () => {
     expect(r).toEqual({ ok: false, reason: "filters-too-narrow", relax: ["novelty"] });
   });
 });
+
+describe("unknown-profile safe default (soft ranking only)", () => {
+  const tourists = () =>
+    mk({
+      title: "Tourists",
+      setting: "outdoor",
+      places: ["city"],
+      crowd: "some",
+      strangers: true,
+      otherDogs: true,
+      stepFree: false,
+      noise: "some",
+      ownerMobility: "short-walk",
+      minutesMin: 45,
+      minutesMax: 90,
+      energy: "moderate",
+      dogMobility: "moderate",
+    });
+  const order = (c: Ctx, list: Adventure[]) => {
+    const r = rank(list, c, {}, hist(), { seed: "s" });
+    if (!r.ok) throw new Error("none");
+    return r.ranked;
+  };
+  it("never ranks an outing with strangers, dogs and steps above a comparable home adventure", () => {
+    for (const seed of ["a", "b", "c", "d"]) {
+      const out = tourists();
+      const home = mk({ title: "Home" });
+      const r = rank([out, home], ctx(), {}, hist(), { seed });
+      if (!r.ok) throw new Error("none");
+      expect(r.ranked[0]?.adventure.id).toBe(home.id);
+    }
+  });
+  it("explains it without percentages", () => {
+    const top = order(ctx(), [tourists(), mk()])[0]!;
+    expect(top.why).toContain("Starting gentle until we know your dog");
+    expect(top.why.join(" ")).not.toMatch(/%/);
+  });
+  it("does not change hard eligibility: unknown still holds a restricted adventure", () => {
+    const v = eligibility(mk({ sizes: ["large"] }), ctx());
+    expect(v.eligible).toBe(false);
+    expect(v.confirm.length).toBeGreaterThan(0);
+  });
+  it("is unrestricted once the profile says comfortable", () => {
+    const comfy = ctx({ people: "comfortable", dogs: "comfortable", crowds: "comfortable" });
+    const r = order(comfy, [tourists(), mk()]);
+    expect(r.every((x) => !x.why.includes("Starting gentle until we know your dog"))).toBe(true);
+    const lover = ctx({ people: "comfortable", favoriteTypes: ["outdoor-exploration"] });
+    const o2 = mk({
+      setting: "outdoor",
+      strangers: true,
+      otherDogs: true,
+      stepFree: false,
+      activityTypes: ["outdoor-exploration"],
+    });
+    expect(order(lover, [mk(), o2])[0]?.adventure.id).toBe(o2.id);
+  });
+  it("a partly answered profile (life stage) is also known", () => {
+    const r = order(ctx({ lifeStage: "adult" }), [mk()]);
+    expect(r[0]?.why).not.toContain("Starting gentle until we know your dog");
+  });
+});

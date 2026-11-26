@@ -11,6 +11,7 @@ export const config = {
     "/api/access/restore",
     "/api/progress",
     "/api/premium/adventures",
+    "/api/premium/summary",
     "/api/account/export",
     "/api/account/delete",
   ],

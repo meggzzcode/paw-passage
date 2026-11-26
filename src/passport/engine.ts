@@ -128,6 +128,12 @@ const FILTER_ORDER: (keyof SessionFilters)[] = [
   "novelty",
   "favoritesOnly",
   "collection",
+  "chair",
+  "quick",
+  "noYard",
+  "puppy",
+  "highEnergy",
+  "household",
 ];
 
 /** The filter fields this adventure fails. An empty or missing field means "no preference". */
@@ -155,6 +161,13 @@ function failing(
   if (f.novelty === "done-only" && !h.done.has(a.id)) bad.push("novelty");
   if (f.favoritesOnly && !h.favorites.has(a.id)) bad.push("favoritesOnly");
   if (f.collection && !a.collections.includes(f.collection)) bad.push("collection");
+  if (f.chair && a.ownerMobility !== "seated") bad.push("chair");
+  if (f.quick && a.minutesMax > 15) bad.push("quick");
+  if (f.noYard && a.space === "yard") bad.push("noYard");
+  if (f.puppy && !a.lifeStages.includes("puppy")) bad.push("puppy");
+  if (f.highEnergy && a.energy !== "lively" && a.dogMobility !== "high") bad.push("highEnergy");
+  if (f.household?.length && !f.household.some((x) => a.household.includes(x)))
+    bad.push("household");
   return bad;
 }
 
@@ -207,6 +220,39 @@ function hash(str: string): number {
 }
 const jitter = (seed: string | undefined, id: string, amount: number) =>
   ((hash(`${seed ?? ""}|${id}`) % 1000) / 1000) * amount;
+
+/**
+ * True when we know nothing about how the dog copes (no life stage, and no answer on people, dogs, crowds or noise).
+ * This only ever changes ranking. Hard eligibility still treats unknown as unknown, never as "safe".
+ */
+export function profileUnknown(dog: DogProfile): boolean {
+  const unset = (v: string | undefined) => v === undefined || v === "unknown";
+  return (
+    dog.lifeStage === undefined &&
+    unset(dog.people) &&
+    unset(dog.dogs) &&
+    unset(dog.crowds) &&
+    unset(dog.noiseSensitive)
+  );
+}
+
+export const GENTLE_START_NOTE = "Starting gentle until we know your dog";
+const GENTLE_STEP = 1.2;
+const GENTLE_NOTE_MIN = 6;
+
+/** Soft bonus for the conservative traits of an adventure: 0 to 7 steps. */
+function gentleSteps(a: Adventure): number {
+  return [
+    !a.strangers,
+    !a.otherDogs,
+    a.crowd === "none",
+    a.noise === "quiet",
+    a.minutesMax <= 30,
+    a.setting === "indoor" || a.places.includes("home") || a.space === "yard",
+    a.stepFree,
+    a.energy === "gentle",
+  ].filter(Boolean).length;
+}
 
 const money = (n: number) => `$${Number.isInteger(n) ? n : n.toFixed(2)}`;
 
@@ -263,6 +309,12 @@ function score(
     note(1, "Quiet and indoors");
   if (filters.minutes !== undefined && a.minutesMax <= filters.minutes)
     note(0.5, `Done within ${filters.minutes} minutes`);
+  if (profileUnknown(dog)) {
+    const steps = gentleSteps(a);
+    // Every adventure gets the bonus; only clearly gentle ones are labelled as such in `why`.
+    if (steps >= GENTLE_NOTE_MIN) note(steps * GENTLE_STEP, GENTLE_START_NOTE);
+    else s += steps * GENTLE_STEP;
+  }
   if (a.reservation.needed) notes.push({ w: 0, text: "Needs a booking ahead" });
 
   const fb = h.feedback?.[a.id];
@@ -418,6 +470,12 @@ export const FILTER_LABELS: Record<keyof SessionFilters, string> = {
   novelty: "New or done",
   favoritesOnly: "Favorites only",
   collection: "Collection",
+  chair: "From a chair",
+  quick: "Quick",
+  noYard: "No yard needed",
+  puppy: "Puppy-friendly",
+  highEnergy: "High energy",
+  household: "Household",
 };
 
 const PREP_PHRASE: Record<Adventure["prep"], string> = {
@@ -447,5 +505,14 @@ export function describeFilters(f: SessionFilters): string[] {
   if (f.novelty === "done-only") out.push("Already done");
   if (f.favoritesOnly) out.push("Favorites only");
   if (f.collection) out.push(`Collection: ${humanize(f.collection)}`);
+  if (f.chair) out.push("From a chair");
+  if (f.quick) out.push("Quick (15 min or less)");
+  if (f.noYard) out.push("No yard needed");
+  if (f.puppy) out.push("Puppy-friendly");
+  if (f.highEnergy) out.push("High energy");
+  if (f.household?.length)
+    out.push(
+      f.household.map((h) => (h === "two-dogs" ? "Two dogs" : "Family friendly")).join(" or "),
+    );
   return out;
 }

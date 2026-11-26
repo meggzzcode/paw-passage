@@ -65,6 +65,13 @@ export type SessionFilters = {
   novelty?: "new-only" | "any" | "done-only";
   favoritesOnly?: boolean;
   collection?: string; // a curated collection slug
+  // Derived chips: each is computed from fields the adventure already has (no extra upkeep).
+  chair?: boolean; // owner can stay seated (ownerMobility "seated")
+  quick?: boolean; // 15 minutes or less (minutesMax)
+  noYard?: boolean; // does not need a yard
+  puppy?: boolean; // suits puppies (lifeStages includes "puppy")
+  highEnergy?: boolean; // lively pace or a dog that moves a lot
+  household?: ("two-dogs" | "family")[]; // tagged for two dogs and/or families (any of the selected)
 };
 
 export type Scope =

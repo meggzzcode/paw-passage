@@ -145,6 +145,42 @@ export async function readPremium(kv: KV): Promise<unknown[]> {
   return all.filter((x) => x !== null).map((x) => x.value);
 }
 
+/** Public, anonymous shape: counts only. No titles, text or ids. */
+export type PremiumSummary = { count: number; collections: { slug: string; count: number }[] };
+
+/**
+ * Counts PUBLISHED premium adventures from the store's `index` record. The import script writes
+ * `items: [{id, status, collections}]` there, so no adventure body is read. An older index with only `ids` falls back
+ * to reading each adventure once. Throws when the store cannot be read (the caller maps that to unknown).
+ */
+export async function premiumSummary(kv: KV): Promise<PremiumSummary> {
+  const idx = (await kv.get("index"))?.value as { ids?: unknown; items?: unknown } | undefined;
+  let rows: { status?: unknown; collections?: unknown }[] = [];
+  if (Array.isArray(idx?.items)) {
+    rows = idx.items as typeof rows;
+  } else if (Array.isArray(idx?.ids)) {
+    const got = await Promise.all(
+      (idx.ids as unknown[])
+        .filter((id): id is string => typeof id === "string")
+        .map((id) => kv.get(`adventure/${id}`)),
+    );
+    rows = got.filter((x) => x !== null).map((x) => x.value as (typeof rows)[number]);
+  }
+  const bySlug = new Map<string, number>();
+  let count = 0;
+  for (const r of rows) {
+    if (!r || r.status !== "published") continue;
+    count++;
+    const slugs = Array.isArray(r.collections) ? r.collections : [];
+    for (const s of new Set(slugs.filter((x): x is string => typeof x === "string")))
+      bySlug.set(s, (bySlug.get(s) ?? 0) + 1);
+  }
+  const collections = [...bySlug.entries()]
+    .sort((a, b) => a[0].localeCompare(b[0]))
+    .map(([slug, n]) => ({ slug, count: n }));
+  return { count, collections };
+}
+
 export async function findCustomerId(kv: KV, hash: string): Promise<string | null> {
   const f = await kv.get(lookupKey(hash));
   return f ? ((f.value as { cus?: string }).cus ?? null) : null;

@@ -679,3 +679,65 @@ describe("Gumroad adapter (response shapes UNVERIFIED, CW-PAY-1)", () => {
     );
   });
 });
+
+describe("public premium summary", () => {
+  const get = (h: Harness) => call(h, "GET", "/api/premium/summary");
+  async function seeded(items: { id: string; status: string; collections: string[] }[]) {
+    const h = setup();
+    await h.premium.put("index", { v: 1, ids: items.map((i) => i.id), items });
+    return h;
+  }
+  it("counts published only, by collection, with no adventure fields and no session", async () => {
+    const h = await seeded([
+      { id: "adv-p1", status: "published", collections: ["home", "rainy"] },
+      { id: "adv-p2", status: "published", collections: ["home"] },
+      { id: "adv-d1", status: "draft", collections: ["secret-draft"] },
+    ]);
+    const r = await get(h);
+    expect(r.status).toBe(200);
+    expect(r.json).toEqual({
+      ok: true,
+      count: 2,
+      collections: [
+        { slug: "home", count: 2 },
+        { slug: "rainy", count: 1 },
+      ],
+    });
+    expect(r.text).not.toMatch(/adv-|secret-draft|title/);
+    expect(r.setCookie).toBeNull();
+  });
+  it("is cacheable for ten minutes", async () => {
+    const r = await get(await seeded([]));
+    expect(r.res.headers.get("cache-control")).toBe("public, max-age=600");
+  });
+  it("falls back to an ids-only index and leaks nothing", async () => {
+    const r = await get(setup());
+    expect(r.status).toBe(200);
+    expect(r.json["count"]).toBe(syntheticPremium.filter((a) => a.status === "published").length);
+    for (const a of syntheticPremium) {
+      expect(r.text).not.toContain(a.id);
+      expect(r.text).not.toContain(a.title);
+    }
+  });
+  it("is safe when the store is empty or unavailable", async () => {
+    const empty = await get(setup({ premium: new MemoryKV() }));
+    expect(empty.status).toBe(200);
+    expect(empty.json).toMatchObject({ count: 0, collections: [] });
+    const broken = new MemoryKV();
+    vi.spyOn(broken, "get").mockRejectedValue(new Error("down"));
+    const r = await get(setup({ premium: broken }));
+    expect(r.status).toBe(503);
+    expect(r.text).not.toContain("down");
+  });
+  it("is rate limited and works without a configured session secret", async () => {
+    const limited = setup({ generalLimiter: createRateLimiter({ windowMs: 60_000, max: 1 }) });
+    expect((await get(limited)).status).toBe(200);
+    expect((await get(limited)).status).toBe(429);
+    expect((await get(setup({ secret: undefined }))).status).toBe(200);
+  });
+  it("only allows GET, and the premium library itself still needs a session", async () => {
+    const h = setup();
+    expect((await call(h, "POST", "/api/premium/summary", { body: {} })).status).toBe(405);
+    expect((await call(h, "GET", "/api/premium/adventures")).status).toBe(401);
+  });
+});

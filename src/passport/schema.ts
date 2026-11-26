@@ -140,6 +140,7 @@ export const adventureSchema = z
     // classification and rewards
     activityTypes: z.array(z.enum(ACTIVITY_TYPES)).min(1).max(3),
     collections: z.array(slug).min(1),
+    household: z.array(z.enum(["two-dogs", "family"])).default([]), // optional tags for two-dog and family households
     stamps: z.array(slug).default([]),
     achievements: z.array(slug).default([]),
     keepsake: z.object({

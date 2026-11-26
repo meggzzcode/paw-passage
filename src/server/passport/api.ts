@@ -23,6 +23,7 @@ import {
   ConflictError,
   CustomerStore,
   findCustomerId,
+  premiumSummary,
   readPremium,
   type CustomerRecord,
   type EntitlementStatus,
@@ -112,6 +113,7 @@ export function createApi(deps: ApiDeps) {
       "/api/access/restore": ["POST"],
       "/api/progress": ["GET", "PUT"],
       "/api/premium/adventures": ["GET"],
+      "/api/premium/summary": ["GET"],
       "/api/account/export": ["POST"],
       "/api/account/delete": ["POST"],
     };
@@ -119,6 +121,13 @@ export function createApi(deps: ApiDeps) {
     if (!allowed) return fail(404, "not_found");
     if (!allowed.includes(method))
       return fail(405, "method_not_allowed", {}, { allow: allowed.join(", ") });
+
+    // Public and anonymous: counts only, no session needed, so it works even before sign-in.
+    if (path === "/api/premium/summary") {
+      if (!deps.generalLimiter.allow(`g:${deps.ip ?? "unknown"}`))
+        return fail(429, "rate_limited", {}, { "retry-after": "60" });
+      return await summary();
+    }
 
     const secret = deps.secret;
     if (!secret || secret.length < MIN_SECRET_LENGTH) {
@@ -302,6 +311,17 @@ export function createApi(deps: ApiDeps) {
     if (rec.entitlement.status !== "active")
       return fail(403, "not_entitled", { reason: rec.entitlement.status });
     return json(200, { ok: true, adventures: await readPremium(deps.premium) });
+  }
+
+  /** Cacheable for 10 minutes. An unreadable store is a 503 the client treats as "unknown"; an empty one is zero. */
+  async function summary() {
+    try {
+      const s = await premiumSummary(deps.premium);
+      return json(200, { ok: true, ...s }, { "cache-control": "public, max-age=600" });
+    } catch {
+      log("summary_unavailable");
+      return fail(503, "summary_unavailable", {}, { "retry-after": "60" });
+    }
   }
 
   function exportData(rec: CustomerRecord) {

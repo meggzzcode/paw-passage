@@ -282,7 +282,7 @@ describe("describeFilters and labels", () => {
     expect(describeFilters({ novelty: "any", transport: "any", types: [] })).toEqual([]);
   });
   it("has a label for every filter field", () => {
-    expect(Object.keys(FILTER_LABELS)).toHaveLength(16);
+    expect(Object.keys(FILTER_LABELS)).toHaveLength(22);
     for (const v of Object.values(FILTER_LABELS)) expect(v.length).toBeGreaterThan(2);
   });
 
@@ -305,5 +305,48 @@ describe("describeFilters and labels", () => {
       ),
     );
     expect(picks.size).toBeGreaterThan(1);
+  });
+});
+
+describe("derived quick-pick filters", () => {
+  const m = (o: Record<string, unknown>, f: Parameters<typeof matchesFilters>[1]) =>
+    matchesFilters(mk(o), f, H);
+  it("chair, quick, noYard, puppy, highEnergy", () => {
+    expect(m({ ownerMobility: "seated" }, { chair: true })).toBe(true);
+    expect(m({ ownerMobility: "short-walk" }, { chair: true })).toBe(false);
+    expect(m({ minutesMin: 5, minutesMax: 15 }, { quick: true })).toBe(true);
+    expect(m({ minutesMin: 5, minutesMax: 16 }, { quick: true })).toBe(false);
+    expect(m({ space: "yard" }, { noYard: true })).toBe(false);
+    expect(m({ space: "none" }, { noYard: true })).toBe(true);
+    expect(m({ lifeStages: ["adult"] }, { puppy: true })).toBe(false);
+    expect(m({ lifeStages: ["puppy", "adult"] }, { puppy: true })).toBe(true);
+    expect(m({ energy: "lively" }, { highEnergy: true })).toBe(true);
+    expect(m({ energy: "gentle", dogMobility: "high" }, { highEnergy: true })).toBe(true);
+    expect(m({ energy: "gentle", dogMobility: "low" }, { highEnergy: true })).toBe(false);
+  });
+  it("household matches any selected tag; default is empty", () => {
+    expect(mk({}).household).toEqual([]);
+    expect(m({ household: ["family"] }, { household: ["two-dogs", "family"] })).toBe(true);
+    expect(m({}, { household: ["two-dogs"] })).toBe(false);
+    expect(m({}, { household: [] })).toBe(true);
+  });
+  it("are described in plain words", () => {
+    expect(
+      describeFilters({
+        chair: true,
+        quick: true,
+        noYard: true,
+        puppy: true,
+        highEnergy: true,
+        household: ["two-dogs", "family"],
+      }),
+    ).toEqual([
+      "From a chair",
+      "Quick (15 min or less)",
+      "No yard needed",
+      "Puppy-friendly",
+      "High energy",
+      "Two dogs or Family friendly",
+    ]);
   });
 });

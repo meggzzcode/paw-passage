@@ -1,0 +1,113 @@
+schema: 2
+seasons: []
+avoidWeather: []
+sizes: []
+reservation:
+  needed: false
+optionalSupplies: []
+substitutes:
+  - No towels? Use old T-shirts or a thick blanket.
+transport: none
+homes:
+  - apartment
+  - house-no-yard
+  - house-with-yard
+crowd: none
+strangers: false
+otherDogs: false
+noise: quiet
+food: false
+water: none
+household: []
+stamps:
+  - first-adventure
+achievements: []
+relatedGuides: []
+affiliateProducts: []
+research:
+  - label: "ASPCA: canine DIY enrichment"
+    url: https://www.aspca.org/pet-care/dog-care/canine-diy-enrichment
+  - label: "Cornell Riney Canine Health Center: canine enrichment ideas"
+    url: https://riney.vet.cornell.edu/member-benefits-health-tips/canine-enrichment-ideas
+access: free
+status: published
+dogMobility: moderate
+stepFree: true
+id: adv-d9g5p2
+title: The Dog's Time Capsule Dig
+clue: Something goes in today, something comes out, and your dog does the digging.
+reveal: You and your dog fill a small capsule with this year's treasures, bury it in a box of towels and let your dog dig it out. A note inside tells future you what this season was like.
+objective: Fill a paper-bag capsule with your dog's keepsakes, let them dig it out of a towel box and write a note for next year.
+instructions:
+  - "Collect three items for the capsule: a toy your dog loves right now, a clean cloth they have napped on and a note from you about this year. Write the date, one thing your dog is into lately and one thing you love about them. Seal the note in a zip bag so it stays out of reach."
+  - Let your dog sniff each item (the note stays sealed in its zip bag) as you put the toy and cloth in a paper bag or a lidless cardboard sleeve. Roll the top over loosely so it can be opened by nose or paw, and tuck the sealed note bag in the middle of the cloth.
+  - Put a sturdy box on a rug in a quiet corner, with sides higher than your dog's chest, and fill it a third full with rolled clean towels. Bury the capsule a few inches below the surface with a corner peeking out.
+  - Bring your dog over. Say "dig" once. Nosing, pawing, pulling or ignoring are all fine, and you never press their head down. Bury it deeper for round two if they are still keen.
+  - When the capsule comes out, let them keep the toy. Open the bag together, take the sealed note out of reach, read it aloud once and add one new line for this moment.
+  - Seal the note and cloth in the bag and store it in a drawer. Dig it out together next year, with the same box, and compare.
+twist: The capsule is built with your dog sniffing every item, then dug out by them. The note inside is a letter to next year, not a game result.
+variations:
+  - "For a small dog or puppy: use a shallow tray and leave the capsule half-visible."
+  - "For a senior or limited-mobility dog: use a low tray and bury under one towel only."
+  - "For a big or lively dog: use a larger box and add a second layer of towels."
+  - "For a seated owner: set the box on a low table beside you and bury the capsule yourself."
+completion: Your dog has dug out the capsule and you have added a line to the note.
+photoIdea: Your dog with the capsule bag and the note beside the towel box.
+memoryPrompt: What did you put in the capsule, and how did your dog dig it out?
+minutesMin: 15
+minutesMax: 30
+activeMinutes: 10
+costMin: 0
+costMax: 0
+prep: light
+supplies:
+  - A paper bag
+  - A zip bag for the note
+  - A favorite toy
+  - A clean cloth
+  - Paper and pen
+  - A sturdy box and rolled towels
+requires:
+  - cardboard-boxes
+  - towels
+  - toys
+  - paper-and-pens
+setting: indoor
+space: small-indoor
+places:
+  - home
+lifeStages:
+  - puppy
+  - adult
+  - senior
+energy: lively
+personalities:
+  - curious
+  - playful
+  - adventurous
+ownerMobility: seated
+safety:
+  - Use clean towels and fabric only, and remove anything your dog starts to chew or swallow.
+  - Keep the box on a non-slip rug so it does not slide.
+  - Keep the paper note sealed in a zip bag and out of your dog's reach, so digging cannot shred or swallow it.
+activityTypes:
+  - play-and-games
+  - memory-making
+collections:
+  - our-story
+  - rainy-day-club
+  - home-sweet-home
+keepsake:
+  family: poster
+  theme: archaeology-report
+  headline: TIME CAPSULE
+  subhead: Dug up by paw
+  explainer: "Mission: dug up this year's capsule from the towel pit"
+review:
+  ownerAppeal: 7
+  dogEnjoyment: 7
+  originality: 6
+  adventureFactor: 6
+  practicality: 8
+  memoryValue: 8
+  reviewedOn: "2026-11-26"

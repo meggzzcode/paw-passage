@@ -1,0 +1,112 @@
+schema: 2
+seasons: []
+avoidWeather:
+  - rain
+  - heat
+sizes: []
+reservation:
+  needed: false
+optionalSupplies: []
+substitutes:
+  - No slow-motion mode? Take a burst of photos.
+transport: none
+homes:
+  - house-with-yard
+crowd: none
+strangers: false
+otherDogs: false
+noise: quiet
+food: false
+water: none
+household:
+  - family
+stamps:
+  - first-adventure
+achievements: []
+relatedGuides: []
+affiliateProducts: []
+research:
+  - label: "ASPCA: canine DIY enrichment"
+    url: https://www.aspca.org/pet-care/dog-care/canine-diy-enrichment
+  - label: "Cornell Riney Canine Health Center: canine enrichment ideas"
+    url: https://riney.vet.cornell.edu/member-benefits-health-tips/canine-enrichment-ideas
+access: free
+status: published
+dogMobility: high
+stepFree: true
+id: adv-z7c4v5
+title: The Photo Finish Lane
+clue: A short strip of grass, two helpers and a slow-motion camera.
+reveal: Two people stand at opposite ends of a short strip in your fenced yard and call your dog back and forth. Your phone films it in slow motion, and the sharpest freeze-frame becomes the photo finish.
+objective: Set up a short sprint lane, let your dog run between two people and capture a photo-finish frame.
+instructions:
+  - Pick a fenced yard or a safe enclosed space with dry, non-slip grass or dirt. Mark a lane about 30 feet long using two towels as start and finish lines.
+  - Stand one person at each end, facing each other. A third person, or a phone propped on a chair, films in slow-motion mode from the side halfway along.
+  - Bring your dog to the start. Put a bowl of fresh water near the lane. Say their name and "ready" once, cheerful and low, then step back.
+  - The person at the far end calls once, then crouches. Your dog may run, trot or stroll. All speeds are valid.
+  - When your dog reaches the finish, the receiver gives praise and a toy. Then the other person calls them back for a second run.
+  - Do at most three or four runs and then stop. Look through the slow-motion clip together and pick your favorite freeze-frame.
+  - Write the winning run time on a sticky note and prop it on the finish-line towel for the final picture.
+twist: The slow-motion clip turns your dog's ordinary run into a photo finish, and the winning frame is chosen by the family.
+variations:
+  - "For a small dog: shorten the lane to 15 feet."
+  - "For a shy dog: use only one caller and a short lane."
+  - "For a puppy: use a 10-foot lane and a very short run."
+  - "For an older dog: let them walk, with no running at all."
+completion: Your dog has run the lane at least once and you have chosen a photo-finish frame.
+photoIdea: The winning slow-motion frame, with your dog mid-stride and ears flying.
+memoryPrompt: What did your dog look like at top speed, and who won the call-back?
+minutesMin: 15
+minutesMax: 30
+activeMinutes: 10
+costMin: 0
+costMax: 0
+prep: light
+supplies:
+  - Two towels
+  - A phone with slow-motion mode
+  - A favorite toy
+  - A bowl of fresh water
+  - Sticky notes
+requires:
+  - towels
+  - toys
+  - camera-phone
+setting: outdoor
+space: yard
+places:
+  - home
+lifeStages:
+  - puppy
+  - adult
+  - senior
+energy: lively
+personalities:
+  - playful
+  - adventurous
+ownerMobility: short-walk
+safety:
+  - Use dry, non-slip ground and check the temperature before any running.
+  - Keep it to a few short runs so your dog finishes wanting more.
+  - Keep fresh water available near the lane and offer it between runs.
+activityTypes:
+  - play-and-games
+  - photography
+collections:
+  - the-playful-pup
+  - the-great-outdoors
+  - home-sweet-home
+keepsake:
+  family: trading-card
+  theme: champion-medal-card
+  headline: PHOTO FINISH
+  subhead: Caught in slow motion
+  explainer: "Mission: sprinted the lane and caught it on camera"
+review:
+  ownerAppeal: 7
+  dogEnjoyment: 8
+  originality: 6
+  adventureFactor: 7
+  practicality: 7
+  memoryValue: 7
+  reviewedOn: "2026-11-26"

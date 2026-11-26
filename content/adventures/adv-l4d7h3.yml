@@ -1,0 +1,107 @@
+schema: 2
+seasons: []
+avoidWeather: []
+sizes: []
+reservation:
+  needed: false
+optionalSupplies: []
+substitutes:
+  - No big paper? Tape sheets of notebook paper together.
+transport: none
+homes:
+  - apartment
+  - house-no-yard
+  - house-with-yard
+crowd: none
+strangers: false
+otherDogs: false
+noise: some
+food: false
+water: none
+household:
+  - family
+stamps:
+  - first-adventure
+achievements: []
+relatedGuides: []
+affiliateProducts: []
+research:
+  - label: "ASPCA: canine DIY enrichment"
+    url: https://www.aspca.org/pet-care/dog-care/canine-diy-enrichment
+  - label: "Cornell Riney Canine Health Center: canine enrichment ideas"
+    url: https://riney.vet.cornell.edu/member-benefits-health-tips/canine-enrichment-ideas
+access: free
+status: published
+dogMobility: low
+stepFree: true
+id: adv-l4d7h3
+title: The Low-Down Tour
+clue: Everyone in the house gets down on the floor, and the guide has four legs.
+reveal: Your family sees the house the way your dog does. Everyone follows your dog on hands and knees through one room, then draws a map of what they noticed. The route ends at a low-down treasure the grownups planted for the dog.
+objective: Follow your dog slowly around one room at floor level, map what you notice and find the treasure at the end.
+instructions:
+  - "Before the tour, an adult hides one safe treasure low in a room your dog knows: a favorite toy tucked behind a cushion or under a bed skirt, where your dog can reach it without squeezing."
+  - Keep the group to 2 or 3 people. Gather them with paper and pens. Each person agrees to move at floor level, speak softly and let the dog lead. Nobody grabs, hugs or follows closely behind.
+  - Let your dog wander in the room at their pace. Follow at least 6 feet behind on hands and knees, staying out of their way. Anyone who spots something interesting at the dog's level, such as a crumb of sunlight or a table leg, makes a quick sketch.
+  - When your dog lingers somewhere, everyone stays put and draws that spot. Say what they might be thinking, in a kind voice, as a story.
+  - After a few minutes, an adult quietly points toward the hiding place with a finger; let your dog decide if they want to go. When your dog reaches it, celebrate quietly, let them have the toy and a short play, and add a big X and a paw print to the map.
+  - Pool the sketches into one map on a big sheet. Draw an X at the treasure spot and write the tour title across the top. Prop it up where your dog can see it.
+twist: Everyone shares your dog's height and point of view, and the map is drawn from what the dog notices, not what the people think matters.
+variations:
+  - "For young kids: use a camera instead of drawing and take one photo at each stop."
+  - "For a shy dog: do it in the room where they feel safest and keep the group to two people."
+  - "For a dog with limited mobility: pick a small room and let them lie down while you sketch."
+  - "For a seated grownup: draw from a low stool and let the kids crawl."
+completion: The family has followed your dog, drawn the map and your dog has found or ignored the treasure.
+photoIdea: The finished map with your dog sniffing beside it, shot from the floor.
+memoryPrompt: What was the most surprising thing your family noticed at dog level?
+minutesMin: 20
+minutesMax: 40
+activeMinutes: 15
+costMin: 0
+costMax: 0
+prep: light
+supplies:
+  - Paper
+  - Pens or crayons
+  - A favorite toy
+requires:
+  - paper-and-pens
+  - toys
+setting: indoor
+space: a-room
+places:
+  - home
+lifeStages:
+  - adult
+  - senior
+energy: gentle
+personalities:
+  - curious
+  - gentle
+ownerMobility: minimal-walking
+safety:
+  - Keep the group to 2 or 3 people who stay 6 or more feet back from the dog.
+  - Children stay seated or crawling, never chase or grab, and an adult watches the dog's body language.
+  - Make sure the treasure spot has an easy exit so your dog can walk away.
+activityTypes:
+  - creative-projects
+  - scent-and-discovery
+collections:
+  - creative-companions
+  - rainy-day-club
+  - home-sweet-home
+keepsake:
+  family: poster
+  theme: ground-level-report
+  headline: THE LOW-DOWN
+  subhead: Our house, from the floor
+  explainer: "Mission: the whole family saw the house from my height"
+review:
+  ownerAppeal: 8
+  dogEnjoyment: 6
+  originality: 8
+  adventureFactor: 6
+  practicality: 8
+  memoryValue: 8
+  reviewedOn: "2026-11-26"

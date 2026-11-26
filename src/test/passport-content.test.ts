@@ -212,8 +212,8 @@ describe("who the free library serves", () => {
 });
 
 describe("collections, stamps, achievements", () => {
-  it("has the 20 library collections with unique slugs and orders", () => {
-    expect(collections.length).toBe(20);
+  it("has the 25 library collections with unique slugs and orders", () => {
+    expect(collections.length).toBe(25);
     expect(new Set(collections.map((c) => c.slug)).size).toBe(collections.length);
     expect(new Set(collections.map((c) => c.order)).size).toBe(collections.length);
   });

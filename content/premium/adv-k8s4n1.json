@@ -7,7 +7,7 @@
   "sizes": [],
   "access": "premium",
   "status": "published",
-  "showcase": false,
+  "showcase": true,
   "research": [
     {
       "label": "Dogs Trust: enrichment ideas for bored dogs",

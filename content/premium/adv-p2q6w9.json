@@ -14,7 +14,7 @@
   "substitutes": [],
   "access": "premium",
   "status": "published",
-  "showcase": true,
+  "showcase": false,
   "stepFree": false,
   "strangers": true,
   "otherDogs": true,

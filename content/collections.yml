@@ -139,3 +139,38 @@ collections:
     order: 20
     accent: "ink"
     premiumOnly: false
+  - slug: "after-hours"
+    title: "After Hours"
+    tagline: "Evenings with your dog."
+    description: "Calm, easy adventures for after work, when the light is soft and you have a little time and a lot of affection to spare. The premium library fills this collection."
+    order: 21
+    accent: "ink"
+    premiumOnly: true
+  - slug: "apartment-adventures"
+    title: "Apartment Adventures"
+    tagline: "Big fun, small space."
+    description: "Adventures that need no yard and no car: a hallway, a window, a few steps from your door. The premium library fills this collection."
+    order: 22
+    accent: "sky"
+    premiumOnly: true
+  - slug: "adventures-without-spending"
+    title: "Adventures Without Spending"
+    tagline: "Nothing to buy."
+    description: "Every adventure here can be done with what you already have, so the only thing you spend is time together. The premium library fills this collection."
+    order: 23
+    accent: "sage"
+    premiumOnly: true
+  - slug: "the-gentle-soul"
+    title: "The Gentle Soul"
+    tagline: "For the sensitive, the shy and the slow."
+    description: "Quiet, low-pressure adventures at your dog's own pace, with plenty of room to say no thanks. The premium library fills this collection."
+    order: 24
+    accent: "plum"
+    premiumOnly: true
+  - slug: "birthday-and-gotcha-day"
+    title: "Birthday and Gotcha Day"
+    tagline: "Celebrate the day they arrived."
+    description: "Small celebrations for birthdays and adoption anniversaries, made from your dog's favorite things. The premium library fills this collection."
+    order: 25
+    accent: "poppy"
+    premiumOnly: true

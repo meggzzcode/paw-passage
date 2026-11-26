@@ -46,7 +46,7 @@ Add `research` entries (label and https URL) only for pages you actually read. I
 ## Collections, stamps, achievements
 
 - Every adventure lists at least one collection slug from `content/collections.yml` and lists `first-adventure` among its stamps.
-- The 20 collections are defined in `content/collections.yml`. A collection that has free adventures needs at least 2 of them; one with none is marked `premiumOnly` and its description says the premium library fills it. Collection copy never names premium adventures. Collections are self-paced; there are no deadlines or streaks.
+- The 25 collections are defined in `content/collections.yml`. A collection that has free adventures needs at least 2 of them; one with none is marked `premiumOnly` and its description says the premium library fills it. Collection copy never names premium adventures. Collections are self-paced; there are no deadlines or streaks.
 - Memory Maker and Adventure Legend are awarded automatically and are never listed on an adventure.
 
 ## Free versus premium

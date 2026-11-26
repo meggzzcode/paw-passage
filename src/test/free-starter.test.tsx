@@ -254,7 +254,7 @@ describe("free Discover: the introductory flow", () => {
     start();
     await screen.findByRole("article", { name: "Recommended adventure" });
     const id = shownTitle();
-    fireEvent.click(screen.getByRole("button", { name: "Accept this adventure" }));
+    fireEvent.click(screen.getByRole("button", { name: "Scratch or tap to reveal." }));
     expect(await screen.findByText("How it goes")).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "Your first adventure" })).toBeInTheDocument();
     expect(getSave().starter?.revealedAt).toBeTypeOf("number");
@@ -274,7 +274,7 @@ describe("free Discover: the introductory flow", () => {
     await show();
     start();
     await screen.findByRole("article", { name: "Recommended adventure" });
-    fireEvent.click(screen.getByRole("button", { name: "Accept this adventure" }));
+    fireEvent.click(screen.getByRole("button", { name: "Scratch or tap to reveal." }));
     await screen.findByText("How it goes");
     expect(screen.queryByText(/Want more little adventures/)).toBeNull(); // not before completing
     expect(screen.getByRole("link", { name: "get the full Passport" })).toHaveAttribute(

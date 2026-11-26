@@ -4,6 +4,11 @@ export type Env = {
   PP_DATA_KEY?: string;
   GUMROAD_PRODUCT_ID?: string;
   PP_ALLOW_TEST_PROVIDER?: string;
+  /** Push kill switch: notifications deliver only when this is exactly "true". */
+  NOTIFICATIONS_ENABLED?: string;
+  VAPID_PUBLIC_KEY?: string;
+  VAPID_PRIVATE_KEY?: string;
+  VAPID_SUBJECT?: string;
 };
 
 export type DeployContext =

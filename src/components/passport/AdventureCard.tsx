@@ -1,4 +1,6 @@
 import { useEffect, useId, useRef, useState, type ReactNode } from "react";
+import { RevealSurface, wasRevealed } from "./RevealSurface";
+import { ScheduleAdventure } from "./ScheduleAdventure";
 import type { Adventure } from "@/passport/schema";
 import {
   completeAdventure,
@@ -75,6 +77,16 @@ export function MysteryCard({
     ...logistics(a),
     ...a.requires.filter((r) => r !== "car").map((r) => `Needs: ${SUPPLY_LABELS[r]}`),
   ];
+  const before = wasRevealed(a.id);
+  // An adventure this browser already revealed never asks again.
+  const fired = useRef("");
+  useEffect(() => {
+    if (before && fired.current !== a.id) {
+      fired.current = a.id;
+      onReveal();
+    }
+  }, [before, a.id, onReveal]);
+  if (before) return null;
   return (
     <article className="pa-card pa-mystery" aria-label="Mystery adventure">
       <p className="pa-kicker">Mystery adventure</p>
@@ -88,9 +100,7 @@ export function MysteryCard({
         </ul>
       )}
       <div className="pa-actions">
-        <button type="button" className="pp-btn pp-btn-primary" onClick={onReveal}>
-          Reveal adventure
-        </button>
+        <RevealSurface adventureId={a.id} onReveal={onReveal} />
         {onAnother && (
           <button type="button" className="pp-btn pp-btn-ghost" onClick={onAnother}>
             Try another
@@ -421,6 +431,7 @@ export function AdventureCard({
           <AddToCollection adventureId={a.id} title={a.title} />
         </MoreMenu>
       </div>
+      <ScheduleAdventure a={a} />
       <p className="pd-status" role="status">
         {note}
       </p>

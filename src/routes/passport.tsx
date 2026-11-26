@@ -15,6 +15,9 @@ import { downloadBlob, makeKeepsakeBlob } from "@/passport/keepsake/render";
 import { usePassport } from "@/passport/usePassport";
 import { track } from "@/passport/events";
 import { pageHead } from "@/lib/seo";
+import { NotificationSettings } from "@/components/passport/NotificationSettings";
+import { InstallCard } from "@/components/site/InstallCard";
+import { UpcomingAdventures } from "@/components/passport/UpcomingAdventures";
 
 export const Route = createFileRoute("/passport")({
   head: () =>
@@ -25,6 +28,12 @@ export const Route = createFileRoute("/passport")({
       path: "/passport",
       noindex: true,
     }),
+  validateSearch: (s: Record<string, unknown>): { view?: "upcoming"; plan?: string } => {
+    const out: { view?: "upcoming"; plan?: string } = {};
+    if (s["view"] === "upcoming") out.view = "upcoming";
+    if (typeof s["plan"] === "string" && /^pl-[a-z0-9]{8}$/.test(s["plan"])) out.plan = s["plan"];
+    return out;
+  },
   component: PassportPage,
 });
 
@@ -32,6 +41,7 @@ const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
 
 function PassportPage() {
   const { ready, save, saveState, profile } = usePassport();
+  const { view, plan } = Route.useSearch();
   const [msg, setMsg] = useState("");
   const [askDelete, setAskDelete] = useState(false);
   const { all: lib } = useAdventureLibrary();
@@ -100,6 +110,10 @@ function PassportPage() {
         <SyncStatus />
 
         <StampShelf earned={earned.stamps} />
+
+        <UpcomingAdventures focus={view === "upcoming"} planId={plan} />
+        <NotificationSettings />
+        <InstallCard />
 
         <section className="pa-panel" aria-labelledby="ms-h">
           <h2 id="ms-h" className="pa-h">

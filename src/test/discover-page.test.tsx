@@ -176,7 +176,7 @@ describe("discover: surprise me", () => {
     expect(screen.queryByText(a.title)).toBeNull();
     expect(screen.queryByText(a.instructions[0]!)).toBeNull();
     expect(within(mystery).getByLabelText("At a glance")).toBeInTheDocument();
-    fireEvent.click(within(mystery).getByRole("button", { name: "Reveal adventure" }));
+    fireEvent.click(within(mystery).getByRole("button", { name: "Scratch or tap to reveal." }));
     expect(screen.getByRole("heading", { name: a.title })).toBeInTheDocument();
   });
 

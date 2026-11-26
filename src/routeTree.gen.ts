@@ -22,6 +22,7 @@ import { Route as FaqRouteImport } from './routes/faq'
 import { Route as FreeThingsToDoWithYourDogRouteImport } from './routes/free-things-to-do-with-your-dog'
 import { Route as HowWeWriteAdventuresRouteImport } from './routes/how-we-write-adventures'
 import { Route as IndoorDogAdventuresRouteImport } from './routes/indoor-dog-adventures'
+import { Route as InstallRouteImport } from './routes/install'
 import { Route as MethodologyRouteImport } from './routes/methodology'
 import { Route as OurStoryRouteImport } from './routes/our-story'
 import { Route as PassportRouteImport } from './routes/passport'
@@ -109,6 +110,11 @@ const HowWeWriteAdventuresRoute = HowWeWriteAdventuresRouteImport.update({
 const IndoorDogAdventuresRoute = IndoorDogAdventuresRouteImport.update({
   id: '/indoor-dog-adventures',
   path: '/indoor-dog-adventures',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const InstallRoute = InstallRouteImport.update({
+  id: '/install',
+  path: '/install',
   getParentRoute: () => rootRouteImport,
 } as any)
 const MethodologyRoute = MethodologyRouteImport.update({
@@ -236,6 +242,7 @@ export interface FileRoutesByFullPath {
   '/free-things-to-do-with-your-dog': typeof FreeThingsToDoWithYourDogRoute
   '/how-we-write-adventures': typeof HowWeWriteAdventuresRoute
   '/indoor-dog-adventures': typeof IndoorDogAdventuresRoute
+  '/install': typeof InstallRoute
   '/methodology': typeof MethodologyRoute
   '/our-story': typeof OurStoryRoute
   '/passport': typeof PassportRoute
@@ -273,6 +280,7 @@ export interface FileRoutesByTo {
   '/free-things-to-do-with-your-dog': typeof FreeThingsToDoWithYourDogRoute
   '/how-we-write-adventures': typeof HowWeWriteAdventuresRoute
   '/indoor-dog-adventures': typeof IndoorDogAdventuresRoute
+  '/install': typeof InstallRoute
   '/methodology': typeof MethodologyRoute
   '/our-story': typeof OurStoryRoute
   '/passport': typeof PassportRoute
@@ -311,6 +319,7 @@ export interface FileRoutesById {
   '/free-things-to-do-with-your-dog': typeof FreeThingsToDoWithYourDogRoute
   '/how-we-write-adventures': typeof HowWeWriteAdventuresRoute
   '/indoor-dog-adventures': typeof IndoorDogAdventuresRoute
+  '/install': typeof InstallRoute
   '/methodology': typeof MethodologyRoute
   '/our-story': typeof OurStoryRoute
   '/passport': typeof PassportRoute
@@ -350,6 +359,7 @@ export interface FileRouteTypes {
     | '/free-things-to-do-with-your-dog'
     | '/how-we-write-adventures'
     | '/indoor-dog-adventures'
+    | '/install'
     | '/methodology'
     | '/our-story'
     | '/passport'
@@ -387,6 +397,7 @@ export interface FileRouteTypes {
     | '/free-things-to-do-with-your-dog'
     | '/how-we-write-adventures'
     | '/indoor-dog-adventures'
+    | '/install'
     | '/methodology'
     | '/our-story'
     | '/passport'
@@ -424,6 +435,7 @@ export interface FileRouteTypes {
     | '/free-things-to-do-with-your-dog'
     | '/how-we-write-adventures'
     | '/indoor-dog-adventures'
+    | '/install'
     | '/methodology'
     | '/our-story'
     | '/passport'
@@ -462,6 +474,7 @@ export interface RootRouteChildren {
   FreeThingsToDoWithYourDogRoute: typeof FreeThingsToDoWithYourDogRoute
   HowWeWriteAdventuresRoute: typeof HowWeWriteAdventuresRoute
   IndoorDogAdventuresRoute: typeof IndoorDogAdventuresRoute
+  InstallRoute: typeof InstallRoute
   MethodologyRoute: typeof MethodologyRoute
   OurStoryRoute: typeof OurStoryRoute
   PassportRoute: typeof PassportRoute
@@ -577,6 +590,13 @@ declare module '@tanstack/react-router' {
       path: '/indoor-dog-adventures'
       fullPath: '/indoor-dog-adventures'
       preLoaderRoute: typeof IndoorDogAdventuresRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/install': {
+      id: '/install'
+      path: '/install'
+      fullPath: '/install'
+      preLoaderRoute: typeof InstallRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/methodology': {
@@ -750,6 +770,7 @@ const rootRouteChildren: RootRouteChildren = {
   FreeThingsToDoWithYourDogRoute: FreeThingsToDoWithYourDogRoute,
   HowWeWriteAdventuresRoute: HowWeWriteAdventuresRoute,
   IndoorDogAdventuresRoute: IndoorDogAdventuresRoute,
+  InstallRoute: InstallRoute,
   MethodologyRoute: MethodologyRoute,
   OurStoryRoute: OurStoryRoute,
   PassportRoute: PassportRoute,

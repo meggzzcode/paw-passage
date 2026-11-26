@@ -4,6 +4,7 @@
 import { emptySave, merge, migrate, type Save } from "../../passport/progress";
 import { newCustomerId, stableStringify } from "./crypto";
 import type { KV } from "./kv";
+import { notifKey } from "./push-store";
 
 export type EntitlementStatus = "active" | "refunded" | "disputed" | "revoked";
 export type Entitlement = {
@@ -124,11 +125,18 @@ export class CustomerStore {
 
   /** Changes entitlement only. Progress is never touched or deleted. */
   async setEntitlement(id: string, patch: Partial<Pick<Entitlement, "status" | "lastVerifiedAt">>) {
-    return this.mutate(id, (rec) => ({ ...rec, entitlement: { ...rec.entitlement, ...patch } }));
+    const out = await this.mutate(id, (rec) => ({
+      ...rec,
+      entitlement: { ...rec.entitlement, ...patch },
+    }));
+    // Refund, dispute or revoke: push devices, notification preferences and plans go with the entitlement.
+    if (out && out.rec.entitlement.status !== "active") await this.kv.delete(notifKey(id));
+    return out;
   }
 
-  /** Deletes the customer's progress and the purchase lookup. */
+  /** Deletes the customer's progress, the purchase lookup and any push devices, preferences and plans. */
   async remove(id: string): Promise<boolean> {
+    await this.kv.delete(notifKey(id));
     const cur = await this.get(id);
     if (!cur) return false;
     await this.kv.delete(lookupKey(cur.rec.entitlement.purchaseRefHash));

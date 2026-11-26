@@ -16,5 +16,13 @@ export const config = {
     "/api/previews/match",
     "/api/account/export",
     "/api/account/delete",
+    "/api/push/config",
+    "/api/push/subscribe",
+    "/api/push/devices",
+    "/api/push/primary",
+    "/api/notifications",
+    "/api/notifications/prefs",
+    "/api/schedule",
+    "/api/schedule/*",
   ],
 };

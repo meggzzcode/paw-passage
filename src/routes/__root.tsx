@@ -16,6 +16,7 @@ import { reportLovableError } from "../lib/lovable-error-reporting";
 import { site } from "../config/site";
 import { SiteHeader } from "../components/shell/SiteHeader";
 import { SiteFooter } from "../components/shell/SiteFooter";
+import { InstallRuntime } from "../components/site/InstallRuntime";
 import { PassportRuntime } from "../passport/useSync";
 
 function NotFoundComponent() {
@@ -105,6 +106,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "theme-color", content: "#234D44" },
+      { name: "mobile-web-app-capable", content: "yes" },
+      { name: "apple-mobile-web-app-capable", content: "yes" },
+      { name: "apple-mobile-web-app-title", content: "Paws & Passage" },
+      { name: "apple-mobile-web-app-status-bar-style", content: "default" },
       // Impact (impact.com) site-ownership check. Impact issues this tag with a "value" attribute, not "content". The value is
       // settings.impactSiteVerification (content/settings.yml, Pages CMS "Business settings"): the buyer replaces it with their own, or clears it.
       ...(site.impactSiteVerification
@@ -135,6 +140,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
       { rel: "icon", href: "/icon-192.png", type: "image/png", sizes: "192x192" },
       { rel: "apple-touch-icon", href: "/apple-touch-icon.png" },
+      { rel: "manifest", href: "/manifest.webmanifest" },
     ],
     scripts: [
       // Organization: url and name always; sameAs lists only the Pinterest profile, and only once site.pinterestUrl is set. No logo property: the site's logo is a text wordmark, and there is no brand logo image file to point to.
@@ -199,6 +205,7 @@ function RootComponent() {
         Skip to main content
       </a>
       <PassportRuntime />
+      <InstallRuntime />
       <SiteHeader />
       <main id="main" tabIndex={-1}>
         {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}

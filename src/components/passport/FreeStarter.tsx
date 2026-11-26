@@ -5,6 +5,8 @@
 // intro stamp and keepsake -> a quiet invitation to the full Passport.
 // This is a product choice, not a security gate (the free pool is public). Everything here runs on this device with no
 // network call. Unanswered questions stay UNKNOWN, never "safe". No account, email or card; nothing forces completion.
+import { InstallPrompt } from "@/components/site/InstallPrompt";
+import { RevealSurface } from "./RevealSurface";
 import { useEffect, useRef, useState } from "react";
 import { AppLink } from "@/components/shell/AppLink";
 import { Container } from "@/components/shell/Container";
@@ -237,14 +239,15 @@ function Recommendation({
         {dogName ? `A first adventure for ${dogName}` : "A first adventure"}
       </h1>
       <p className="pa-sub">
-        Here is what to expect. Accept it to see what it is and how it goes, or ask for another.
+        Here is what to expect. Scratch or tap the card to see what it is and how it goes, or ask
+        for another.
       </p>
       <article className="pa-card pa-mystery" aria-label="Recommended adventure">
         <p className="pa-kicker">Your free first adventure</p>
         {a.teaser && <p className="pa-clue">“{a.teaser}”</p>}
         <Chips a={a} />
         {notes.length > 0 && (
-          <ul className="pa-meta" aria-label="Good to know before you accept">
+          <ul className="pa-meta" aria-label="Good to know before you reveal">
             {[...new Set(notes)].map((n) => (
               <li key={n}>{n}</li>
             ))}
@@ -256,9 +259,7 @@ function Recommendation({
           </p>
         )}
         <div className="pa-actions">
-          <button type="button" className="pp-btn pp-btn-primary" onClick={onAccept}>
-            Accept this adventure
-          </button>
+          <RevealSurface adventureId={a.id} onReveal={onAccept} />
           <button type="button" className="pp-btn pp-btn-ghost" onClick={onAnother}>
             Show me another
           </button>
@@ -377,6 +378,7 @@ export function FreeStarter() {
                 Added to your passport. Make a keepsake from your photo above whenever you like.
               </p>
             </section>
+            <InstallPrompt where="intro-complete" />
             <UnlockPitch where="intro-complete" />
           </>
         ) : (

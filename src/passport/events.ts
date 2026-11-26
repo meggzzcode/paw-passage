@@ -30,7 +30,20 @@ export type EventName =
   | "collection_preview_viewed"
   | "keepsake_downloaded"
   | "keepsake_share_attempted"
-  | "purchase_cta_clicked";
+  | "purchase_cta_clicked"
+  | "install_guide_viewed"
+  | "install_initiated"
+  | "install_detected"
+  | "notification_permission_requested"
+  | "notification_permission_granted"
+  | "notification_permission_declined"
+  | "push_subscription_enabled"
+  | "push_subscription_disabled"
+  | "notification_delivery_accepted"
+  | "notification_opened"
+  | "adventure_scheduled"
+  | "calendar_event_exported"
+  | "scheduled_adventure_completed";
 
 const ALLOWED = new Set<EventName>([
   "profile_completed",
@@ -61,6 +74,19 @@ const ALLOWED = new Set<EventName>([
   "keepsake_downloaded",
   "keepsake_share_attempted",
   "purchase_cta_clicked",
+  "install_guide_viewed",
+  "install_initiated",
+  "install_detected",
+  "notification_permission_requested",
+  "notification_permission_granted",
+  "notification_permission_declined",
+  "push_subscription_enabled",
+  "push_subscription_disabled",
+  "notification_delivery_accepted",
+  "notification_opened",
+  "adventure_scheduled",
+  "calendar_event_exported",
+  "scheduled_adventure_completed",
 ]);
 const FIELD = /^[a-z0-9_-]{1,40}$/;
 

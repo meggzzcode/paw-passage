@@ -6,8 +6,10 @@ import { MAX_BODY_BYTES, MIN_SECRET_LENGTH, REVERIFY_MS } from "./config";
 import { MATCH_MAX_BODY_BYTES, matchProfile, validateMatchBody } from "./match";
 import { PREVIEW_INDEX_KEY, parsePreviewIndex } from "./previews";
 import { open, purchaseRefHash, seal } from "./crypto";
+import { createNotificationsApi, type NotifEnv } from "./notifications-api";
+import { PushConflictError } from "./push-store";
 import type { KV } from "./kv";
-import type { RateLimiter } from "./limits";
+import { createRateLimiter, type RateLimiter } from "./limits";
 import type { CheckoutProvider } from "./provider";
 import {
   clearCookie,
@@ -43,7 +45,14 @@ export type ApiDeps = {
   accessLimiter: RateLimiter;
   generalLimiter: RateLimiter;
   log?: (event: string, fields?: Record<string, string | number | boolean>) => void;
+  /** Push settings from the environment (kill switch and VAPID keys). Absent means notifications are off. */
+  notifEnv?: NotifEnv;
+  /** Per-customer limit for notification writes. Defaults to a shared in-memory limiter (best effort per instance). */
+  notifLimiter?: RateLimiter;
 };
+
+// Module-level so counters survive between requests handled by the same function instance.
+const defaultNotifLimiter = createRateLimiter({ windowMs: 60_000, max: 40 });
 
 const CODE_RE = /^[A-Za-z0-9_-]{8,100}$/;
 const STATE_CHANGING = new Set(["POST", "PUT", "PATCH", "DELETE"]);
@@ -104,6 +113,13 @@ export function createApi(deps: ApiDeps) {
   const now = deps.now ?? Date.now;
   const log = deps.log ?? defaultLog;
   const store = new CustomerStore(deps.customers, now);
+  const notifLimiter = deps.notifLimiter ?? defaultNotifLimiter;
+  const notif = createNotificationsApi({
+    customers: deps.customers,
+    premium: deps.premium,
+    now,
+    env: deps.notifEnv ?? {},
+  });
 
   async function handle(req: Request): Promise<Response> {
     const url = new URL(req.url);
@@ -121,7 +137,7 @@ export function createApi(deps: ApiDeps) {
       "/api/account/export": ["POST"],
       "/api/account/delete": ["POST"],
     };
-    const allowed = routes[path];
+    const allowed = routes[path] ?? notif.methods(path);
     if (!allowed) return fail(404, "not_found");
     if (!allowed.includes(method))
       return fail(405, "method_not_allowed", {}, { allow: allowed.join(", ") });
@@ -138,6 +154,18 @@ export function createApi(deps: ApiDeps) {
       if (!deps.generalLimiter.allow(`g:${deps.ip ?? "unknown"}`))
         return fail(429, "rate_limited", {}, { "retry-after": "60" });
       return path === "/api/previews" ? await previews() : await previewMatch(req);
+    }
+
+    // Public and anonymous: whether notifications are on, and the public VAPID key. Nothing about any customer.
+    if (path === "/api/push/config") {
+      if (!deps.generalLimiter.allow(`g:${deps.ip ?? "unknown"}`))
+        return fail(429, "rate_limited", {}, { "retry-after": "60" });
+      try {
+        const c = await notif.config();
+        return json(c.status, c.body);
+      } catch {
+        return json(200, { enabled: false, publicKey: null });
+      }
     }
 
     const secret = deps.secret;
@@ -181,6 +209,23 @@ export function createApi(deps: ApiDeps) {
       const cur = await store.get(session.cus);
       if (!cur) return fail(401, "not_signed_in", {}, {}, [clearCookie()]);
 
+      if (
+        path.startsWith("/api/push/") ||
+        path.startsWith("/api/notifications") ||
+        path.startsWith("/api/schedule")
+      ) {
+        // Customers only: an active entitlement, and the customer is always the one named by the cookie.
+        const ent = await freshEntitlement(cur.rec, dataKey);
+        if (ent.entitlement.status !== "active")
+          return fail(403, "not_entitled", { reason: ent.entitlement.status });
+        if (STATE_CHANGING.has(method) && !notifLimiter.allow(`n:${session.cus}`))
+          return fail(429, "rate_limited", {}, { "retry-after": "60" });
+        const r = await notif.handle(path, method, session.cus, dataKey, (max) =>
+          readBody(req, max),
+        );
+        return json(r.status, r.body);
+      }
+
       switch (path) {
         case "/api/session":
           return await sessionInfo(session, cur.rec, secret, dataKey);
@@ -197,7 +242,8 @@ export function createApi(deps: ApiDeps) {
       }
     } catch (e) {
       if (e instanceof HttpError) return fail(e.status, e.code);
-      if (e instanceof ConflictError) return fail(503, "busy_retry", {}, { "retry-after": "1" });
+      if (e instanceof ConflictError || e instanceof PushConflictError)
+        return fail(503, "busy_retry", {}, { "retry-after": "1" });
       log("unhandled_error", { name: e instanceof Error ? e.name : "unknown" }); // message omitted on purpose
       return fail(500, "server_error");
     }

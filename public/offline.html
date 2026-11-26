@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>You are offline | Paws &amp; Passage</title>
+<style>
+  :root { color-scheme: light dark; --bg: #f7f0e1; --fg: #14283a; --card: #fffaf0; --line: #14283a; --accent: #a82f23; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #0f1e2b; --fg: #f3ead6; --card: #1a2f42; --line: #f3ead6; --accent: #e0705f; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 1rem/1.55 "DM Sans", system-ui, sans-serif; }
+  main { max-width: 34rem; margin: 0 auto; padding: 2.5rem 1rem; }
+  h1 { font: 600 1.75rem/1.2 "Fraunces", Georgia, serif; margin: 0 0 1rem; }
+  .card { background: var(--card); border: 1.5px solid var(--line); border-radius: 6px; padding: 1rem 1.25rem; box-shadow: 3px 3px 0 var(--line); }
+  button { min-height: 2.75rem; padding: 0.65rem 1.25rem; font: 600 1rem/1.2 inherit; border: 1.5px solid var(--line); border-radius: 6px; background: var(--accent); color: #fffaf0; cursor: pointer; }
+  @media (prefers-color-scheme: dark) { button { color: #14100e; } }
+  button:focus-visible { outline: 3px solid var(--fg); outline-offset: 2px; }
+  ul { padding-left: 1.2rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>You are offline right now</h1>
+  <p>Paws &amp; Passage needs an internet connection for most things. Here is what to expect until you are back online:</p>
+  <div class="card">
+    <ul>
+      <li>Pages you already opened on this device may still load.</li>
+      <li>This page works offline. Nothing else is promised.</li>
+      <li>Finding adventures, your full library, purchases and restoring access need a connection.</li>
+    </ul>
+  </div>
+  <p>Your saved progress stays on this device. Nothing is lost by being offline.</p>
+  <p><button type="button" id="retry">Try again</button></p>
+</main>
+<script>document.getElementById("retry").addEventListener("click", function () { location.reload(); });</script>
+</body>
+</html>

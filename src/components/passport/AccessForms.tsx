@@ -1,5 +1,6 @@
 // Activation and restore forms, plus the account panel for someone who is signed in.
 // The code is held only in this component's input while typing. It is never put in a URL, a log, storage or an event.
+import { InstallPrompt } from "@/components/site/InstallPrompt";
 import { useState } from "react";
 import { importJson, getSave } from "@/passport/local-store";
 import { clearEntitlement, entitlementGranted, refreshCsrf } from "@/passport/premium-client";
@@ -109,6 +110,7 @@ export function AccessForm({ kind }: { kind: AccessKind }) {
         {error && <p className="co-error">{FAILURE_TEXT[error]}</p>}
         {done && <p>{done}</p>}
       </div>
+      {done && <InstallPrompt where="purchase" />}
       <p className="pa-fine">
         Your code is only sent to confirm your purchase. It is never added to a web address or saved
         in this browser.

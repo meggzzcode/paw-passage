@@ -376,3 +376,36 @@ Partner and promotional discounts are done only with Gumroad discount codes. To 
 - **Return to Claude:** The finding.
 - **Blocks production?** No. Gift checkout is not a launch blocker and no page on the site mentions gifting.
 - **Safe handling:** Never paste a license code. Change nothing.
+
+## CW-PUSH-1
+
+- **Task ID:** CW-PUSH-1
+- **Objective:** Turn on optional Web Push notifications for paying customers: create the VAPID keys, add four environment variables, and test one device end to end. Optional; the site works fully without it.
+- **Why Claude cannot do it:** It needs the owner's Netlify account and real devices, and the private key must never pass through Claude, the repository or a chat.
+- **URL:** The Netlify site settings (environment variables) and the live site.
+- **Required owner authorization:** Owner signed in to Netlify. Owner confirms adding the secret values.
+- **Prerequisite:** CW-NET-1 and a working purchase restore (CW-PAY-1). The notification code is deployed to production (scheduled functions run only for published production deploys).
+- **Step-by-step:**
+  1. On your own computer run `npx web-push generate-vapid-keys`. It prints a public and a private key. Do not paste either into a chat or the repository.
+  2. In the Netlify site settings, environment variables, add for the production context: `VAPID_PUBLIC_KEY` (the public key), `VAPID_PRIVATE_KEY` (the private key, mark it secret), `VAPID_SUBJECT` (`mailto:` plus a monitored address), and `NOTIFICATIONS_ENABLED` = `true`. Leave `NOTIFICATIONS_ENABLED` unset for previews.
+  3. Trigger a production deploy so the functions see the values.
+  4. Open the site on a phone, restore access with your own purchase code, open the notification settings, and turn on weekly reminders with a time about 20 minutes ahead. On iPhone first add the site to the Home Screen (iOS 16.4 or later).
+  5. In the Netlify Functions page open `push-deliver` and check that it appears as scheduled every 15 minutes. Use "Run now" once if needed and read its log: it shows counts only.
+  6. Confirm the notification arrives once, opens the Discover page, and that turning it off in settings stops it.
+  7. Kill switch drill: set `NOTIFICATIONS_ENABLED` to `false` and redeploy, or write the blob `notifications/flag` = `{"enabled": false}` in the `premium-production` store. Confirm the settings screen hides the option and the log shows `push_run_disabled`.
+- **Expected outcome:** One notification arrives at the chosen time, opens the right page, and opt-out stops it. The function log shows counts, never endpoints or keys.
+- **Evidence to capture:** A screenshot of the notification, the function log line (counts only), and the Functions page showing the 15-minute schedule.
+- **Return to Claude:** Pass or fail per step, the device and browser, and whether an environment variable change needed a redeploy to take effect (UNVERIFIED in the docs).
+- **Blocks production?** No.
+- **Safe handling:** Never share the private key. If it is ever exposed, generate a new pair, replace both variables, and redeploy; customers re-subscribe automatically on their next visit to settings. Preview deploys do not run the schedule.
+
+### Notifications environment variables (summary)
+
+| Variable                | Where                                     | Secret?                 |
+| ----------------------- | ----------------------------------------- | ----------------------- |
+| `NOTIFICATIONS_ENABLED` | production only; `true` turns delivery on | no                      |
+| `VAPID_PUBLIC_KEY`      | production                                | no (served to browsers) |
+| `VAPID_PRIVATE_KEY`     | production                                | **yes**                 |
+| `VAPID_SUBJECT`         | production                                | no                      |
+
+Full details, data model and operating cost model are in `NOTIFICATIONS.md`.

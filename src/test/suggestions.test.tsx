@@ -58,7 +58,7 @@ describe("For you today", () => {
   it("free library: suggests a free adventure and shows one honest line, no counts", async () => {
     await show([FREE1]);
     expect(within(today()).getByText(/much larger library/)).toBeInTheDocument();
-    fireEvent.click(within(today()).getByRole("button", { name: "Reveal adventure" }));
+    fireEvent.click(within(today()).getByRole("button", { name: "Scratch or tap to reveal." }));
     expect(within(today()).getByText("Free Spring Sniff")).toBeInTheDocument();
     expect(today().textContent).not.toMatch(/\d+ (more )?adventures/);
   });
@@ -66,13 +66,13 @@ describe("For you today", () => {
   it("entitled library: suggests from the combined library and drops the upgrade line", async () => {
     await show([PREM1], { unlocked: true });
     expect(within(today()).queryByText(/much larger library/)).toBeNull();
-    fireEvent.click(within(today()).getByRole("button", { name: "Reveal adventure" }));
+    fireEvent.click(within(today()).getByRole("button", { name: "Scratch or tap to reveal." }));
     expect(within(today()).getByText("Premium Spring Trail")).toBeInTheDocument();
   });
 
   it("never suggests a premium adventure to someone who is not unlocked", async () => {
     await show([PREM1], { unlocked: false });
-    expect(within(today()).queryByRole("button", { name: "Reveal adventure" })).toBeNull();
+    expect(within(today()).queryByRole("button", { name: "Scratch or tap to reveal." })).toBeNull();
     expect(within(today()).getByRole("status")).toBeInTheDocument();
   });
 
@@ -89,7 +89,7 @@ describe("For you today", () => {
     await show(lib);
     const seen: string[] = [];
     for (let i = 0; i < 6; i++) {
-      const reveal = within(today()).queryByRole("button", { name: "Reveal adventure" });
+      const reveal = within(today()).queryByRole("button", { name: "Scratch or tap to reveal." });
       if (!reveal) break;
       fireEvent.click(reveal);
       const title = ["Good One", "Good Two"].find((t) => within(today()).queryByText(t));
@@ -102,27 +102,33 @@ describe("For you today", () => {
     expect(seen.sort()).toEqual(["Good One", "Good Two"]);
     expect(within(today()).getByText("That is everything for now.")).toBeInTheDocument();
     fireEvent.click(within(today()).getByRole("button", { name: "Start over" }));
-    expect(within(today()).getByRole("button", { name: "Reveal adventure" })).toBeInTheDocument();
+    // Both were revealed already, so the card never asks again: it opens straight to the adventure.
+    expect(within(today()).queryByRole("button", { name: "Scratch or tap to reveal." })).toBeNull();
+    expect(["Good One", "Good Two"].some((t) => within(today()).queryByText(t))).toBe(true);
   });
 
   it("quick chips narrow the pick through the engine and are pressed-state buttons", async () => {
     const lib = [adv("adv-long11", "Long Outing", { ...SPRING, minutesMin: 50, minutesMax: 60 })];
     await show(lib);
-    expect(within(today()).getByRole("button", { name: "Reveal adventure" })).toBeInTheDocument();
+    expect(
+      within(today()).getByRole("button", { name: "Scratch or tap to reveal." }),
+    ).toBeInTheDocument();
     const ten = within(today()).getByRole("button", { name: "About 10 minutes" });
     fireEvent.click(ten);
     expect(ten).toHaveAttribute("aria-pressed", "true");
-    expect(within(today()).queryByRole("button", { name: "Reveal adventure" })).toBeNull();
+    expect(within(today()).queryByRole("button", { name: "Scratch or tap to reveal." })).toBeNull();
   });
 
   it("derives the season from the date and lets the owner choose the hemisphere", async () => {
     const lib = [adv("adv-aut111", "Autumn Only", { seasons: ["autumn"] })];
     await show(lib);
-    expect(within(today()).queryByRole("button", { name: "Reveal adventure" })).toBeNull();
+    expect(within(today()).queryByRole("button", { name: "Scratch or tap to reveal." })).toBeNull();
     fireEvent.change(within(today()).getByLabelText("Where I live, for the season"), {
       target: { value: "south" },
     });
-    expect(within(today()).getByRole("button", { name: "Reveal adventure" })).toBeInTheDocument();
+    expect(
+      within(today()).getByRole("button", { name: "Scratch or tap to reveal." }),
+    ).toBeInTheDocument();
   });
 });
 
@@ -157,7 +163,7 @@ describe("Occasion and calendar", () => {
     await show([FREE1, CELEBRATE]);
     const occ = screen.getByRole("region", { name: "Occasion" });
     expect(within(occ).getByText(/Juno's birthday is in 5 days/)).toBeInTheDocument();
-    fireEvent.click(within(occ).getByRole("button", { name: "Reveal adventure" }));
+    fireEvent.click(within(occ).getByRole("button", { name: "Scratch or tap to reveal." }));
     expect(within(occ).getByText("Party Walk")).toBeInTheDocument();
   });
   it("uses our-story for an adoption anniversary and is absent outside the window", async () => {
@@ -165,7 +171,7 @@ describe("Occasion and calendar", () => {
     await show([CELEBRATE, STORY]);
     const occ = screen.getByRole("region", { name: "Occasion" });
     expect(within(occ).getByText(/adoption anniversary was 2 days ago/)).toBeInTheDocument();
-    fireEvent.click(within(occ).getByRole("button", { name: "Reveal adventure" }));
+    fireEvent.click(within(occ).getByRole("button", { name: "Scratch or tap to reveal." }));
     expect(within(occ).getByText("Story Walk")).toBeInTheDocument();
     cleanup();
     setProfile({ adoptionDate: "2021-07-08" });
@@ -236,10 +242,10 @@ describe("Smart collection picks", () => {
     ];
     await show(lib);
     const sec = screen.getByRole("region", { name: "From your collection Quick Wins" });
-    fireEvent.click(within(sec).getByRole("button", { name: "Reveal adventure" }));
+    fireEvent.click(within(sec).getByRole("button", { name: "Scratch or tap to reveal." }));
     expect(within(sec).getByText("Quick Thing")).toBeInTheDocument();
     fireEvent.click(within(sec).getByRole("button", { name: "Try another" }));
-    expect(within(sec).queryByRole("button", { name: "Reveal adventure" })).toBeNull();
+    expect(within(sec).queryByRole("button", { name: "Scratch or tap to reveal." })).toBeNull();
     expect(within(sec).getByText("That is everything for now.")).toBeInTheDocument();
   });
   it("shows nothing for visitors without smart collections", async () => {
@@ -259,7 +265,8 @@ describe("free tier privacy and wording", () => {
       FREE1,
       adv("adv-cel111", "Party Walk", { collections: ["holidays-and-celebrations"] }),
     ]);
-    for (const b of screen.getAllByRole("button", { name: "Reveal adventure" })) fireEvent.click(b);
+    for (const b of screen.getAllByRole("button", { name: "Scratch or tap to reveal." }))
+      fireEvent.click(b);
     expect(fetchSpy).not.toHaveBeenCalled();
     expect(beacon).not.toHaveBeenCalled();
     expect(container.textContent).not.toMatch(/%|perfect for/i);

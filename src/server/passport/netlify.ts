@@ -23,6 +23,12 @@ export function handleNetlify(req: Request, context: NetlifyContextLike): Promis
     provider: selectProvider(env, ctx),
     secret: env.SESSION_SECRET,
     dataKey: env.PP_DATA_KEY,
+    notifEnv: {
+      NOTIFICATIONS_ENABLED: env.NOTIFICATIONS_ENABLED,
+      VAPID_PUBLIC_KEY: env.VAPID_PUBLIC_KEY,
+      VAPID_PRIVATE_KEY: env.VAPID_PRIVATE_KEY,
+      VAPID_SUBJECT: env.VAPID_SUBJECT,
+    },
     ip: context.ip ?? req.headers.get("x-nf-client-connection-ip") ?? undefined,
     accessLimiter,
     generalLimiter,

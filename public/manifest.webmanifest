@@ -1,0 +1,25 @@
+{
+  "id": "/",
+  "name": "Paws & Passage",
+  "short_name": "Paws & Passage",
+  "description": "A lifetime of little adventures. The Adventure Passport for you and your dog.",
+  "lang": "en-US",
+  "dir": "ltr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#234D44",
+  "background_color": "#f7f0e1",
+  "categories": ["lifestyle", "travel"],
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    {
+      "src": "/icons/maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

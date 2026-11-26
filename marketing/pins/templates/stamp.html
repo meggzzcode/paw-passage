@@ -1,0 +1,56 @@
+<style>
+  body {
+    background: var(--ink);
+    background-image: radial-gradient(rgb(243 234 214/0.05) 1px, transparent 1.2px);
+    background-size: 7px 7px;
+  }
+  .stamp {
+    height: 100%;
+    border: 6px solid var(--ochre);
+    border-radius: 12px;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #f3ead6;
+    justify-content: space-between;
+  }
+  .stamp .kicker {
+    color: var(--ochre);
+  }
+  .stamp .sub {
+    color: #d5dbe0;
+  }
+  .stamp .art {
+    width: 620px;
+    height: 620px;
+    border-radius: 50%;
+    background: var(--paper);
+    border: 10px solid var(--ochre);
+    padding: 34px;
+    outline: 4px dashed var(--ochre);
+    outline-offset: 14px;
+  }
+  .stamp h1 {
+    color: #f3ead6;
+    margin: 10px 0;
+  }
+  .stamp .brand {
+    color: #f3ead6;
+  }
+  .stamp .brand i {
+    background: var(--ochre);
+  }
+</style>
+<div class="pin">
+  <div class="stamp">
+    <div class="kicker">{{kicker}}</div>
+    <div class="art">{{art}}</div>
+    <div>
+      <h1 class="{{hsize}}">{{headline}}</h1>
+      <p class="sub">{{sub}}</p>
+    </div>
+    <div class="brand"><i></i>Paws &amp; Passage</div>
+  </div>
+</div>

@@ -1,0 +1,61 @@
+<style>
+  body {
+    background: var(--paper2);
+  }
+  .cover {
+    height: 100%;
+    background: var(--ink);
+    border-radius: 18px;
+    box-shadow: 14px 14px 0 rgb(20 40 58/0.35);
+    padding: 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: var(--ochre);
+    border: 6px solid var(--ink2);
+    position: relative;
+    justify-content: space-between;
+  }
+  .cover:before {
+    content: "";
+    position: absolute;
+    inset: 22px;
+    border: 4px solid var(--ochre);
+    border-radius: 10px;
+    pointer-events: none;
+  }
+  .cover .kicker {
+    color: var(--ochre);
+  }
+  .cover .art {
+    width: 560px;
+    height: 560px;
+    background: var(--paper);
+    border-radius: 50%;
+    padding: 30px;
+  }
+  .cover h1 {
+    color: #f3ead6;
+  }
+  .cover .sub {
+    color: #d5dbe0;
+  }
+  .cover .brand {
+    color: var(--ochre);
+  }
+  .cover .brand i {
+    background: var(--ochre);
+  }
+</style>
+<div class="pin">
+  <div class="cover">
+    <div class="kicker">Passport</div>
+    <div class="art">{{art}}</div>
+    <div>
+      <h1 class="{{hsize}}">{{headline}}</h1>
+      <p class="sub">{{sub}}</p>
+    </div>
+    <div class="brand"><i></i>Paws &amp; Passage</div>
+  </div>
+</div>

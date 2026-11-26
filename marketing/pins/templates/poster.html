@@ -1,0 +1,42 @@
+<style>
+  .poster {
+    border: 6px solid var(--ink);
+    margin: 0;
+    height: 100%;
+    padding: 56px;
+    display: flex;
+    flex-direction: column;
+    background: var(--card);
+    box-shadow: 10px 10px 0 rgb(20 40 58/0.9);
+    justify-content: space-between;
+  }
+  .poster .art {
+    flex: 1;
+    margin: 24px 0;
+    min-height: 0;
+    background: var(--paper2);
+    border: 5px solid var(--ink);
+    border-radius: 6px;
+    padding: 20px;
+    outline: 3px dashed var(--ink);
+    outline-offset: -22px;
+  }
+  .poster h1 {
+    margin: 20px 0 14px;
+  }
+</style>
+<div class="pin">
+  <div class="poster">
+    <div>
+      <div class="kicker">{{kicker}}</div>
+      <h1 class="{{hsize}}">{{headline}}</h1>
+      <p class="sub">{{sub}}</p>
+    </div>
+    <div class="art">{{art}}</div>
+    <div class="brand">
+      <i></i>Paws &amp; Passage<span class="tag" style="margin-left: auto"
+        >A lifetime of little adventures.</span
+      >
+    </div>
+  </div>
+</div>

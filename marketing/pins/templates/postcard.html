@@ -1,0 +1,71 @@
+<style>
+  .pc {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+  }
+  .card {
+    flex: 1;
+    min-height: 0;
+    background: var(--card);
+    border: 6px solid var(--ink);
+    padding: 44px;
+    position: relative;
+    box-shadow: 10px 10px 0 rgb(20 40 58/0.9);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transform: rotate(-1.2deg);
+  }
+  .card .art {
+    flex: 1;
+    min-height: 0;
+  }
+  .card:before {
+    content: "";
+    position: absolute;
+    inset: 14px;
+    border: 3px dashed var(--hair, rgb(20 40 58/0.35));
+    pointer-events: none;
+  }
+  .pm {
+    position: absolute;
+    right: 36px;
+    top: 36px;
+    width: 150px;
+    height: 150px;
+    border: 5px solid var(--red);
+    border-radius: 50%;
+    color: var(--red);
+    font-weight: 800;
+    font-size: 22px;
+    letter-spacing: 0.14em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transform: rotate(12deg);
+    background: var(--card);
+    z-index: 2;
+  }
+  .pc h1 {
+    padding-right: 120px;
+  }
+</style>
+<div class="pin">
+  <div class="pc">
+    <div class="card">
+      <div class="pm">GREETINGS<br />FROM<br />TOGETHER</div>
+      <div class="kicker">{{kicker}}</div>
+      <h1 class="{{hsize}}">{{headline}}</h1>
+      <div class="art">{{art}}</div>
+      <p class="sub">{{sub}}</p>
+    </div>
+    <div class="brand">
+      <i></i>Paws &amp; Passage<span class="tag" style="margin-left: auto"
+        >A lifetime of little adventures.</span
+      >
+    </div>
+  </div>
+</div>

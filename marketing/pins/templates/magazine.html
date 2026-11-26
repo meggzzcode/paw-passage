@@ -1,0 +1,62 @@
+<style>
+  body {
+    background: var(--paper2);
+  }
+  .mag {
+    height: 100%;
+    background: var(--card);
+    border: 6px solid var(--ink);
+    box-shadow: 12px 12px 0 rgb(20 40 58/0.9);
+    padding: 44px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .mast {
+    font-family: Fraunces, serif;
+    font-weight: 900;
+    font-size: 128px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--red);
+    text-align: center;
+    border-bottom: 6px solid var(--ink);
+    padding-bottom: 14px;
+    line-height: 1;
+  }
+  .iss {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    padding: 12px 0;
+  }
+  .mag .art {
+    flex: 1;
+    background: var(--sky);
+    border: 5px solid var(--ink);
+    padding: 20px;
+    min-height: 0;
+  }
+  .lines {
+    margin-top: 26px;
+  }
+  .lines h1 {
+    margin: 8px 0;
+  }
+</style>
+<div class="pin">
+  <div class="mag">
+    <div class="mast">Your Dog</div>
+    <div class="iss"><span>The adventure issue</span><span>Made together</span></div>
+    <div class="art">{{art}}</div>
+    <div class="lines">
+      <div class="kicker">{{kicker}}</div>
+      <h1 class="{{hsize}}">{{headline}}</h1>
+      <p class="sub">{{sub}}</p>
+    </div>
+    <div class="brand" style="margin-top: 20px"><i></i>Paws &amp; Passage</div>
+  </div>
+</div>

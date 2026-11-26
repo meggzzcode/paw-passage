@@ -84,7 +84,7 @@
 .pd-types li {
   background: var(--pp-ink);
   color: var(--pp-paper);
-  border-radius: 999px;
+  border-radius: 4px;
   padding: 0.1rem 0.65rem;
   font-size: 0.8rem;
   font-weight: 600;
@@ -209,7 +209,7 @@
 }
 .pd-quiz-bar {
   height: 0.5rem;
-  border-radius: 999px;
+  border-radius: 4px;
   background: var(--pp-line);
   overflow: hidden;
   margin-bottom: 1rem;

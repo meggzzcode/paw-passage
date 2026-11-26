@@ -11,11 +11,11 @@
 .pp-marquee > div { display: inline-block; animation: pp-scroll 40s linear infinite; }
 @keyframes pp-scroll { to { transform: translateX(-50%); } }
 @media (prefers-reduced-motion: reduce) { .pp-marquee > div { animation: none; } }
-/* Pill buttons with a soft lift instead of hard offset shadows. */
-html .pp-btn { border-radius: 999px; border-color: transparent; box-shadow: none; }
-html .pp-btn-secondary, html .pp-btn-ghost { border-color: var(--pp-hairline); }
-html .pp-btn:hover { transform: translateY(-2px); box-shadow: var(--pp-shadow); }
-html .pp-btn:active { transform: none; box-shadow: none; }
+/* Buttons: squared-off, inked edge and a printed offset shadow that presses in on click, like a rubber stamp. */
+html .pp-btn { border-radius: 6px; border: 2px solid var(--pp-ink); box-shadow: 3px 3px 0 var(--pp-ink); transition: transform .12s, box-shadow .12s; }
+html .pp-btn-secondary, html .pp-btn-ghost { border-color: var(--pp-ink); }
+html .pp-btn:hover { transform: translate(-1px, -1px); box-shadow: 4px 4px 0 var(--pp-ink); }
+html .pp-btn:active { transform: translate(3px, 3px); box-shadow: 0 0 0 var(--pp-ink); }
 html .pp-h1 em { background: var(--pp-ochre); color: inherit; border-radius: .3em; padding: 0 .12em; font-style: normal; }
 
 /* ---- Site-wide Everyday Magic personality layer ----
@@ -26,21 +26,22 @@ html .pp-h1 em { background: var(--pp-ochre); color: inherit; border-radius: .3e
 main h1, .pa-h1, .pp-h1 { font-family: var(--font-display); font-weight: 700; letter-spacing: -0.02em; text-wrap: balance; }
 main h1:not(.pp-h1)::after, .pa-h1::after {
   content: ""; display: block; width: 4.5rem; height: .55rem; margin-top: .55rem;
-  background: var(--pp-ochre); border-radius: 999px; rotate: -2deg;
+  background: var(--pp-ochre); border-radius: 2px; rotate: -2deg;
 }
 main h2, .pp-h2, .pa-h { font-family: var(--font-display); font-weight: 650; letter-spacing: -0.015em; }
 
-/* Eyebrows and kickers become little sticker pills. */
+/* Eyebrows and kickers: a strip of label tape, square-cut and slightly crooked. */
 .pp-eyebrow, .pa-kicker {
-  display: inline-block; padding: .3rem .75rem; border-radius: 999px;
-  background: color-mix(in oklab, var(--pp-strawberry) 55%, var(--pp-card));
-  color: var(--pp-ink); letter-spacing: .12em; rotate: -1.5deg; width: fit-content; max-width: 100%;
+  display: inline-block; padding: .25rem .6rem; border-radius: 1px;
+  background: color-mix(in oklab, var(--pp-strawberry) 45%, var(--pp-card));
+  color: var(--pp-ink); letter-spacing: .14em; rotate: -1.5deg; width: fit-content; max-width: 100%;
+  clip-path: polygon(0 8%, 100% 0, 98% 100%, 2% 92%);
 }
 .pp-band .pp-eyebrow { background: var(--pp-ochre); color: var(--pp-ink); }
 
 /* Cards: softer outline, rounder corners, gentle lift; linked cards tilt a touch on hover. */
 .pp-card, .pa-card, .pa-panel {
-  border: 1.5px solid var(--pp-hairline); border-radius: 1.5rem;
+  border: 1.5px solid var(--pp-hairline); border-radius: 10px;
   box-shadow: 0 1px 0 var(--pp-hairline), var(--pp-shadow);
 }
 a.pp-card, a.pa-card { transition: transform .18s ease, box-shadow .18s ease; }
@@ -56,13 +57,15 @@ a.pp-card:hover, a.pa-card:hover { transform: translateY(-4px) rotate(-.6deg); }
 
 /* Tailwind-built cards on guide, gear and info pages pick up the same rounder, softer feel. */
 main .rounded-lg.border, main .rounded-xl.border, main .rounded-2xl.border, main .rounded-md.border.bg-card {
-  border-radius: 1.5rem; border-color: var(--pp-hairline); box-shadow: var(--pp-shadow);
+  border-radius: 10px; border-color: var(--pp-hairline); box-shadow: var(--pp-shadow);
 }
 
-/* Chips, tags and form controls go pill-shaped. */
-.pa-chip, .pp-chip, .pa-tags > * { border-radius: 999px; }
-main :where(input:not([type=checkbox]):not([type=radio]):not([type=range]), select) { border-radius: 999px; }
-main textarea { border-radius: 1.1rem; }
+/* Chips and tags: luggage-tag labels with square corners and a dashed stitch, not pills. */
+.pa-chip, .pp-chip, .pa-tags > * { border-radius: 4px; border-style: dashed; }
+main :where(input:not([type=checkbox]):not([type=radio]):not([type=range]), select, textarea) { border-radius: 6px; }
+/* Tailwind pill links, buttons and badges across guides and gear pages lose the pill too. */
+main :where(a, button, span[class*="px-"]).rounded-full { border-radius: 6px; }
+main :where(a, button).rounded-full:not([class*="bg-primary"]):not([class*="bg-terracotta"]) { border-style: dashed; }
 main :where(input, select, textarea):focus-visible { outline: 3px solid color-mix(in oklab, var(--pp-red) 45%, transparent); outline-offset: 2px; }
 
 /* Text links: butter underline that fills on hover. */
@@ -72,10 +75,10 @@ main :where(input, select, textarea):focus-visible { outline: 3px solid color-mi
 }
 .pp-textlink:hover, .pp-prose a:hover, main article p a:hover { background-size: 100% 100%; }
 
-/* Header: lighter rule, pill hover on nav links. */
+/* Header: lighter rule; nav links get a hand-drawn butter underline instead of a pill. */
 .pp-header { border-bottom: 1.5px solid var(--pp-hairline); }
-.pp-nav a { border-radius: 999px; padding-inline: .75rem; transition: background-color .15s; }
-.pp-nav a:hover, .pp-nav a[aria-current=page] { background: color-mix(in oklab, var(--pp-ochre) 70%, transparent); }
+.pp-nav a { padding-inline: .6rem; background: linear-gradient(var(--pp-ochre), var(--pp-ochre)) 50% 88% / 0 .3em no-repeat; transition: background-size .18s; }
+.pp-nav a:hover, .pp-nav a[aria-current=page] { background-size: calc(100% - 1.2rem) .3em; }
 
 /* Dark bands get a hint of the butter accent. */
 .pp-band { background: var(--pp-ink); }
@@ -84,12 +87,11 @@ main :where(input, select, textarea):focus-visible { outline: 3px solid color-mi
 .pp-footer .pp-marquee { border-bottom: 1px dashed color-mix(in oklab, var(--pp-paper) 30%, transparent); }
 .pp-footer nav > p { color: var(--pp-ochre); opacity: 1; }
 
-/* Breadcrumbs read as a soft pill trail. */
-main nav[aria-label="Breadcrumb"] ol, main nav[aria-label="breadcrumb"] ol { display: inline-flex; flex-wrap: wrap; padding: .35rem .9rem; border-radius: 999px; background: var(--pp-paper-2); }
-main nav[aria-label="Breadcrumb"] ol { align-items: center; gap: .25rem; padding: 0 .9rem; }
-main a img, main figure img { border-radius: 1.25rem; }
+/* Breadcrumbs: plain trail, no capsule. */
+main nav[aria-label="Breadcrumb"] ol { align-items: center; gap: .25rem; }
+main a img, main figure img { border-radius: 6px; }
 
 /* Mystery and dark sample cards: warm ink with a butter edge instead of plain dark slabs. */
-.pa-mystery { border: 2px solid var(--pp-ochre); border-radius: 1.5rem; box-shadow: 6px 6px 0 var(--pp-ochre); }
+.pa-mystery { border: 2px solid var(--pp-ochre); border-radius: 10px; box-shadow: 6px 6px 0 var(--pp-ochre); }
 .pa-mystery .pa-kicker { background: var(--pp-ochre); color: var(--pp-ink); }
-.pa-scratch { border-radius: 1.25rem; }
+.pa-scratch { border-radius: 6px; }

@@ -433,7 +433,7 @@ a.pp-navlink.active {
 .pp-hero-points li {
   padding: 0.3rem 0.75rem;
   border: 1.5px dashed var(--pp-line);
-  border-radius: 999px;
+  border-radius: 4px;
   font-size: 0.875rem;
   font-weight: 500;
 }

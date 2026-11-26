@@ -27,3 +27,4 @@ npx prettier --check <files>
 - Netlify builds cost credits: do not change `netlify.toml` `ignore` without running `node scripts/test-netlify-ignore.mjs`.
 - Handwritten type (Caveat, `font-hand-note`) is decorative only: never for safety, eligibility, payment, refund or instructional text, so critical text stays easy to read.
 - Keepsake palettes are snapped onto the Everyday Magic swatches in `src/passport/keepsake/everyday-palette.ts` (keeps readability and sibling distinctness) so every keepsake matches the site; redraw `public/examples/` with the real renderer after palette changes.
+- Shapes: no pill shapes (999px / rounded-full on buttons, chips, nav). Buttons are square-cornered with an inked offset shadow; eyebrows are crooked label tape; chips are dashed tags. Why: owner rejected pills as a generic AI look.

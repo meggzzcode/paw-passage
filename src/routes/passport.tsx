@@ -5,7 +5,9 @@ import { Button } from "@/components/shell/Button";
 import { AppLink } from "@/components/shell/AppLink";
 import { StampShelf } from "@/components/passport/StampShelf";
 import { AccountPanel } from "@/components/passport/AccessForms";
-import { achievements as achDefs, collections, freeLibrary } from "@/passport/content";
+import { achievements as achDefs, collections } from "@/passport/content";
+import { useAdventureLibrary } from "@/components/passport/collections-shared";
+import { SyncStatus } from "@/components/passport/SyncStatus";
 import { achievements, members } from "@/passport/progress";
 import { clearLocal, exportJson, importJson } from "@/passport/local-store";
 import { downloadBlob, makeKeepsakeBlob } from "@/passport/keepsake/render";
@@ -31,7 +33,7 @@ function PassportPage() {
   const { ready, save, saveState, profile } = usePassport();
   const [msg, setMsg] = useState("");
   const [askDelete, setAskDelete] = useState(false);
-  const lib = freeLibrary();
+  const { all: lib } = useAdventureLibrary();
   const cols = Object.fromEntries(
     collections.map((c) => [
       c.slug,
@@ -79,6 +81,8 @@ function PassportPage() {
             ? "Your progress is saved in this browser on this device. It isn't uploaded anywhere. Export a backup below to keep a copy or move to another device."
             : "This browser couldn't save your progress, so it is only kept while this tab stays open. Export a backup below before you leave."}
         </p>
+
+        <SyncStatus />
 
         <StampShelf earned={earned.stamps} />
 

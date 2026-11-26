@@ -117,7 +117,10 @@ export function StoryTimeline() {
     .map((id) => ({ a: lib.byId.get(id), at: save.done.added[id] ?? 0 }))
     .filter((x): x is { a: Adventure; at: number } => x.a !== undefined)
     .sort((x, y) => y.at - x.at);
-  const other = ids.length - known.length;
+  const unknown = ids
+    .filter((id) => !lib.byId.has(id))
+    .map((id) => ({ id, at: save.done.added[id] ?? 0 }))
+    .sort((x, y) => y.at - x.at);
   return (
     <>
       <p className="pa-sub" role="status">
@@ -133,11 +136,23 @@ export function StoryTimeline() {
           ))}
         </ol>
       )}
-      {other > 0 && (
-        <p className="pa-fine">
-          {other} more {other === 1 ? "adventure" : "adventures"} from outside the free library{" "}
-          {other === 1 ? "is" : "are"} counted in the total but cannot be listed here.
-        </p>
+      {unknown.length > 0 && (
+        <>
+          <p className="pa-fine">
+            {unknown.length === 1 ? "One adventure is" : `${unknown.length} adventures are`} counted
+            in your total but not available to show on this device right now.
+          </p>
+          <ol className="co-timeline" aria-label="Adventures not shown">
+            {unknown.map(({ id, at }) => (
+              <li key={id} className="pa-card co-entry" data-placeholder>
+                <p className="pa-kicker">
+                  {new Date(at).toLocaleDateString(undefined, { dateStyle: "medium" })}
+                </p>
+                <h3 className="pa-title">Premium adventure (unlock to view)</h3>
+              </li>
+            ))}
+          </ol>
+        </>
       )}
       <p className="pa-fine">
         Memories are part of your passport progress (text only). No photos are saved anywhere: a

@@ -56,7 +56,7 @@ function GuidesPage() {
               key={s.slug}
               to="/guides/$slug"
               params={{ slug: s.slug }}
-              className="text-primary underline"
+              className="inline-flex min-h-11 items-center text-primary underline"
             >
               {s.label}
             </Link>
@@ -70,7 +70,7 @@ function GuidesPage() {
             type="button"
             aria-pressed={filter === c}
             onClick={() => setFilter(c)}
-            className={`rounded-full border px-4 py-1.5 text-sm ${filter === c ? "border-primary bg-primary text-primary-foreground" : "border-input hover:bg-muted"}`}
+            className={`min-h-11 rounded-full border px-4 py-1.5 text-sm ${filter === c ? "border-primary bg-primary text-primary-foreground" : "border-input hover:bg-muted"}`}
           >
             {c}
           </button>

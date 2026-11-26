@@ -45,7 +45,7 @@ export const FAMILY_LABELS: Record<Adventure["keepsake"]["family"], string> = {
   certificate: "certificate",
   "seasonal-frame": "seasonal frame",
   "event-ticket": "event ticket",
-  "then-and-now": "then-and-now",
+  "then-and-now": "photo pair",
   collage: "collage",
   poster: "poster",
 };

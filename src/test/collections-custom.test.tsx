@@ -82,7 +82,7 @@ describe("hand-picked collection lifecycle through the UI", () => {
     fireEvent.click(screen.getByRole("button", { name: "Delete collection" }));
     fireEvent.click(screen.getByRole("button", { name: "Yes, delete it" }));
     expect(listCollections(getSave())).toHaveLength(0);
-    expect(await screen.findByText("Collection deleted.")).toBeInTheDocument();
+    expect(await screen.findByText("Collection deleted")).toBeInTheDocument();
     // completed adventures are untouched by deleting a collection
     expect(Object.keys(getSave().done.added)).toEqual([A1.id]);
   });

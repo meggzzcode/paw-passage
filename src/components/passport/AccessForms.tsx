@@ -1,16 +1,16 @@
 // Activation and restore forms, plus the account panel for someone who is signed in.
 // The code is held only in this component's input while typing. It is never put in a URL, a log, storage or an event.
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { importJson, getSave } from "@/passport/local-store";
+import { clearEntitlement, entitlementGranted, refreshCsrf } from "@/passport/premium-client";
+import { useEntitlement } from "@/passport/useEntitlement";
 import { track } from "@/passport/events";
 import {
   deleteAccount,
   exportAccount,
-  getSessionInfo,
   submitAccessCode,
   type AccessFailure,
   type AccessKind,
-  type SessionInfo,
 } from "@/lib/passport-api";
 import { downloadBlob } from "@/passport/keepsake/render";
 
@@ -55,6 +55,8 @@ export function AccessForm({ kind }: { kind: AccessKind }) {
     } catch {
       /* the save on the server stays safe even if this device could not merge it */
     }
+    // Load the premium library and run the first sync now, so the free-to-paid merge shows straight away.
+    void entitlementGranted(r.csrf);
     track(r.reason === "activated" ? "purchase_confirmed" : "access_restored", {
       reason: r.reason,
     });
@@ -117,32 +119,33 @@ export function AccessForm({ kind }: { kind: AccessKind }) {
 
 /** Shown on My Passport only when a signed-in session exists. Quietly absent for the free passport. */
 export function AccountPanel() {
-  const [info, setInfo] = useState<SessionInfo>({ signedIn: false });
+  const ent = useEntitlement();
   const [msg, setMsg] = useState("");
   const [askDelete, setAskDelete] = useState(false);
-  useEffect(() => {
-    let live = true;
-    void getSessionInfo().then((s) => live && setInfo(s));
-    return () => {
-      live = false;
-    };
-  }, []);
-  if (!info.signedIn) return null;
+  if (!ent.signedIn) return null;
+  /** Calls the API; if the token went stale, fetches a fresh one and tries once more. */
+  async function withCsrf<T>(run: (csrf: string) => Promise<T | null | false>): Promise<T | null> {
+    const first = await run(ent.csrf);
+    if (first) return first;
+    const csrf = await refreshCsrf();
+    if (!csrf || csrf === ent.csrf) return null;
+    return (await run(csrf)) || null;
+  }
   return (
     <section className="pa-panel" aria-labelledby="acct-h">
       <h2 id="acct-h" className="pa-h">
         Full Passport account
       </h2>
       <p className="pa-fine">
-        Access status: {info.entitled ? "active" : info.status}. This copy is separate from the one
-        stored in this browser.
+        Access status: {ent.status === "entitled" ? "active" : "not active"}. This copy is separate
+        from the one stored in this browser.
       </p>
       <div className="pa-row">
         <button
           type="button"
           className="pp-btn pp-btn-secondary"
           onClick={async () => {
-            const text = await exportAccount(info.csrf);
+            const text = await withCsrf(exportAccount);
             if (text === null) {
               setMsg("Couldn't download your account data. Please try again.");
               return;
@@ -166,10 +169,10 @@ export function AccountPanel() {
               type="button"
               className="pp-btn pp-btn-primary"
               onClick={async () => {
-                const ok = await deleteAccount(info.csrf);
+                const ok = await withCsrf(deleteAccount);
                 setAskDelete(false);
                 if (ok) {
-                  setInfo({ signedIn: false });
+                  clearEntitlement(); // premium, the sign-in flag and sync all stop; progress on this device stays
                   setMsg("Your account copy was deleted. Progress on this device is untouched.");
                 } else setMsg("Couldn't delete it right now. Please try again.");
               }}

@@ -156,6 +156,13 @@ export function importJson(text: string): { ok: true } | { ok: false; error: str
   return { ok: true };
 }
 
+/** Merges a Save that came from the server into this device's copy (never replaces). No-op when nothing new. */
+export function mergeRemote(remote: Save) {
+  const cur = getSave();
+  const next = merge(cur, { ...remote, rev: 0 });
+  if (JSON.stringify(next) !== JSON.stringify(cur)) commit(next);
+}
+
 export function clearLocal() {
   try {
     window.localStorage.removeItem(STORAGE_KEY);

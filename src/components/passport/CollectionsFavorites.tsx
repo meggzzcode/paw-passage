@@ -40,7 +40,7 @@ export function FavoriteCollections() {
                 const a = pickSurprise(
                   lib.all,
                   { kind: "favorites" },
-                  ctxFor(save),
+                  ctxFor(save, lib.unlocked),
                   {},
                   historyFor(save),
                   listCollections(save),

@@ -1,4 +1,4 @@
-import { useMemo, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { Container } from "@/components/shell/Container";
 import { Onboarding } from "./Onboarding";
 import { ProfileEditor, hasProfile } from "./ProfileEditor";
@@ -7,7 +7,8 @@ import { AdventureCard, MysteryCard } from "./AdventureCard";
 import { FilterPanel } from "./FilterPanel";
 import { HeldQuestions } from "./HeldQuestions";
 import { DiscoverTabs, panelId, tabId, type DiscoverMode } from "./DiscoverTabs";
-import { collections, freeLibrary } from "@/passport/content";
+import { collections } from "@/passport/content";
+import { useAdventureLibrary } from "./collections-shared";
 import { FILTER_LABELS, pickSurprise, rank, type Ctx, type History } from "@/passport/engine";
 import type { CustomCollection, DogProfile, Scope, SessionFilters } from "@/passport/profile";
 import { listCollections, members, newCollectionId } from "@/passport/progress";
@@ -18,9 +19,9 @@ import { track } from "@/passport/events";
 /** Everything the three tabs share: the library, who it is for, and what has been done. */
 function useDiscoverData() {
   const { save, profile } = usePassport();
-  const library = useMemo(() => freeLibrary(), []);
+  const { all: library, unlocked } = useAdventureLibrary();
   const dog: DogProfile = profile;
-  const ctx: Ctx = { dog, owner: save.owner.data, unlocked: false };
+  const ctx: Ctx = { dog, owner: save.owner.data, unlocked };
   const history: History = {
     done: new Set(members(save.done)),
     favorites: new Set(members(save.favorites)),
@@ -158,14 +159,16 @@ function Empty({ reason, onReset }: { reason: string; onReset?: (() => void) | u
 }
 
 const NONE_ELIGIBLE =
-  "Nothing in the free set suits these answers yet. We never suggest something your answers rule out.";
+  "Nothing in your library suits these answers yet. We never suggest something your answers rule out.";
 
 function Progress() {
-  const { save, library } = useDiscoverData();
-  const n = members(save.done).length;
+  const { save, library, ctx } = useDiscoverData();
+  const known = new Set(library.map((a) => a.id));
+  const n = members(save.done).filter((id) => known.has(id)).length;
   return (
     <p className="pa-fine">
-      {n} of {library.length} free adventures completed. <a href="/passport">See your passport</a>
+      {n} of {library.length} {ctx.unlocked ? "" : "free "}adventures completed.{" "}
+      <a href="/passport">See your passport</a>
     </p>
   );
 }

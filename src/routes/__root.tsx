@@ -16,6 +16,7 @@ import { reportLovableError } from "../lib/lovable-error-reporting";
 import { site } from "../config/site";
 import { SiteHeader } from "../components/shell/SiteHeader";
 import { SiteFooter } from "../components/shell/SiteFooter";
+import { PassportRuntime } from "../passport/useSync";
 
 function NotFoundComponent() {
   return (
@@ -29,7 +30,7 @@ function NotFoundComponent() {
         <div className="mt-6">
           <Link
             to="/"
-            className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+            className="inline-flex min-h-11 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
           >
             Go home
           </Link>
@@ -61,13 +62,13 @@ function ErrorComponent({ error, reset }: ErrorComponentProps) {
               router.invalidate();
               reset();
             }}
-            className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+            className="inline-flex min-h-11 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
           >
             Try again
           </button>
           <a
             href="/"
-            className="inline-flex items-center justify-center rounded-md border border-input bg-background px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-accent"
+            className="inline-flex min-h-11 items-center justify-center rounded-md border border-input bg-background px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-accent"
           >
             Go home
           </a>
@@ -96,7 +97,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         title: isNotFoundLane(ctx?.matches)
           ? `Page not found | ${site.name}`
-          : `${site.name}: dog-friendly travel guides and stays`,
+          : `${site.name} | ${site.tagline}`,
       },
       ...(isNotFoundLane(ctx?.matches) ? [{ name: "robots", content: "noindex, nofollow" }] : []),
       { name: "description", content: site.description },
@@ -197,6 +198,7 @@ function RootComponent() {
       <a href="#main" className="skip-link">
         Skip to main content
       </a>
+      <PassportRuntime />
       <SiteHeader />
       <main id="main" tabIndex={-1}>
         {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}

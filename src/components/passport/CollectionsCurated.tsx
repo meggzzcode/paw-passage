@@ -5,7 +5,7 @@ import { members } from "@/passport/progress";
 import { AppLink } from "@/components/shell/AppLink";
 import { Button } from "@/components/shell/Button";
 import { usePassport } from "@/passport/usePassport";
-import { AdventureRow, useLibrary } from "./collections-shared";
+import { AdventureRow, useAdventureLibrary, useLibrary } from "./collections-shared";
 
 export function useCuratedProgress(slug: string) {
   const { save } = usePassport();
@@ -34,6 +34,7 @@ function Progress({ done, total }: { done: number; total: number }) {
 
 function CuratedCard({ c }: { c: Collection }) {
   const { done, total } = useCuratedProgress(c.slug);
+  const { unlocked } = useAdventureLibrary();
   return (
     <li className={`pa-card pa-accent-${c.accent}`}>
       <h3 className="pa-title">
@@ -43,11 +44,12 @@ function CuratedCard({ c }: { c: Collection }) {
       {total > 0 ? (
         <>
           <p className="pa-fine">
-            {total} free {total === 1 ? "adventure" : "adventures"} that suit your dog
+            {total} {unlocked ? "" : "free "}
+            {total === 1 ? "adventure" : "adventures"} that suit your dog
           </p>
           <Progress done={done} total={total} />
         </>
-      ) : c.premiumOnly ? (
+      ) : c.premiumOnly && !unlocked ? (
         <p className="pa-fine">In the full Passport. The free set has none of these.</p>
       ) : (
         <p className="pa-fine">No free adventures here suit what we know about your dog yet.</p>
@@ -78,12 +80,13 @@ export function CuratedCollections() {
 export function CuratedDetail({ c }: { c: Collection }) {
   const { items, done, total, save } = useCuratedProgress(c.slug);
   const doneIds = new Set(members(save.done));
+  const { unlocked } = useAdventureLibrary();
   return (
     <>
       <h1 className="pa-h1">{c.title}</h1>
       <p className="pa-sub">{c.description}</p>
       {total > 0 && <Progress done={done} total={total} />}
-      {c.premiumOnly && total === 0 && (
+      {c.premiumOnly && !unlocked && total === 0 && (
         <div className="pa-card">
           <p>This collection lives in the full Adventure Passport.</p>
           <p className="pa-fine">
@@ -92,9 +95,9 @@ export function CuratedDetail({ c }: { c: Collection }) {
           <Button to="/unlock">See what's included</Button>
         </div>
       )}
-      {!c.premiumOnly && total === 0 && (
+      {(!c.premiumOnly || unlocked) && total === 0 && (
         <p className="pa-fine">
-          None of the free adventures in this collection suit what we know about your dog right now.
+          None of the adventures in this collection suit what we know about your dog right now.
         </p>
       )}
       <ul className="co-list">

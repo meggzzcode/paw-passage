@@ -445,7 +445,10 @@ export function CollectionEditor({ id }: { id: string }) {
   if (deleted)
     return (
       <>
-        <p role="status">Collection deleted.</p>
+        <h1 className="pa-h1">Collection deleted</h1>
+        <p className="pa-sub" role="status">
+          The adventures themselves are still in your passport.
+        </p>
         <AppLink
           to="/collections"
           search={{ tab: "mine" } as never}
@@ -513,7 +516,7 @@ export function CollectionEditor({ id }: { id: string }) {
             const a = pickSurprise(
               lib.all,
               { kind: "custom", id: c.id },
-              ctxFor(save),
+              ctxFor(save, lib.unlocked),
               {},
               historyFor(save),
               listCollections(save),

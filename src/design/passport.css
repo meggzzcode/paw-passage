@@ -307,14 +307,20 @@ a.pp-navlink.active {
     display: none;
   }
 }
-@media (max-width: 380px) {
-  .pp-cta-long {
+/* On phones the paid CTA lives in the menu, so the first screen has one clear action: find an adventure. */
+@media (max-width: 479px) {
+  .pp-header-actions .pp-header-cta {
     display: none;
   }
 }
-@media (min-width: 381px) {
-  .pp-cta-short {
-    display: none;
+.pp-logo span,
+.pp-header-actions a {
+  white-space: nowrap;
+}
+@media (max-width: 400px) {
+  .pp-logo {
+    font-size: 1rem;
+    gap: 0.4rem;
   }
 }
 .pp-sheet {
@@ -431,7 +437,7 @@ a.pp-navlink.active {
 }
 .pp-stamps {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0.6rem;
 }
 .pp-stamp {
@@ -736,12 +742,13 @@ a.pp-navlink.active {
 }
 .pp-split {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 2rem;
   align-items: center;
 }
 @media (min-width: 800px) {
   .pp-split {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     gap: 3rem;
   }
 }

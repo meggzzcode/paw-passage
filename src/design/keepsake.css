@@ -1,4 +1,4 @@
-/* Keepsake maker (Keepsake.tsx, PhotoEditor.tsx). Uses the --pp-* tokens. Not imported anywhere yet: the integrator adds the import. */
+/* Keepsake maker (Keepsake.tsx, PhotoEditor.tsx). Uses the --pp-* tokens. Imported by src/styles.css. */
 .kp {
   display: grid;
   gap: 1.25rem;

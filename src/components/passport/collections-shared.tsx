@@ -1,14 +1,15 @@
 // Small pieces shared by the Collections screens: the engine context, the library views and one adventure row.
 import { useMemo, useState, type ReactNode } from "react";
 import { freeLibrary } from "@/passport/content";
+import { useEntitlement } from "@/passport/useEntitlement";
 import { eligibility, smartMembers, type Ctx, type History } from "@/passport/engine";
 import { members, type Save } from "@/passport/progress";
 import type { CustomCollection, SessionFilters } from "@/passport/profile";
 import type { Adventure } from "@/passport/schema";
 import { RevealedCard } from "@/components/passport/AdventureCard";
 
-export function ctxFor(save: Save): Ctx {
-  return { dog: save.profile.data, owner: save.owner.data, unlocked: false };
+export function ctxFor(save: Save, unlocked = false): Ctx {
+  return { dog: save.profile.data, owner: save.owner.data, unlocked };
 }
 export function historyFor(save: Save): History {
   return {
@@ -18,20 +19,37 @@ export function historyFor(save: Save): History {
   };
 }
 
-/** The free library, and the part of it that suits this dog (hard eligibility only; never loosened here). */
+/**
+ * The one library every screen uses: the free adventures, plus the premium ones only while access is confirmed.
+ * Premium adventures live in memory only. Ids are the same stable ids everywhere. Free wins if an id ever collides.
+ */
+export function useAdventureLibrary() {
+  const { status, premium, message } = useEntitlement();
+  const unlocked = status === "entitled";
+  const all = useMemo(() => {
+    const free = freeLibrary();
+    if (!unlocked || premium.length === 0) return free;
+    const ids = new Set(free.map((a) => a.id));
+    return [...free, ...premium.filter((a) => !ids.has(a.id))];
+  }, [unlocked, premium]);
+  return { all, unlocked, status, message };
+}
+
+/** The library, and the part of it that suits this dog (hard eligibility only; never loosened here). */
 export function useLibrary(save: Save) {
+  const { all, unlocked } = useAdventureLibrary();
   return useMemo(() => {
-    const all = freeLibrary();
-    const ctx = ctxFor(save);
+    const ctx = ctxFor(save, unlocked);
     const eligible = all.filter((a) => eligibility(a, ctx).eligible);
     return {
       all,
+      unlocked,
       eligible,
       byId: new Map(all.map((a) => [a.id, a])),
       eligibleIds: new Set(eligible.map((a) => a.id)),
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [save.profile, save.owner]);
+  }, [save.profile, save.owner, all, unlocked]);
 }
 
 type Lib = ReturnType<typeof useLibrary>;
@@ -39,7 +57,7 @@ type Lib = ReturnType<typeof useLibrary>;
 /** The adventures that currently count toward a custom collection (always suited to this dog). */
 export function memberIdsOf(c: CustomCollection, lib: Lib, save: Save): string[] {
   if (c.kind === "smart")
-    return smartMembers(lib.all, c, ctxFor(save), historyFor(save)).map((a) => a.id);
+    return smartMembers(lib.all, c, ctxFor(save, lib.unlocked), historyFor(save)).map((a) => a.id);
   return c.ids.filter((id) => lib.eligibleIds.has(id));
 }
 

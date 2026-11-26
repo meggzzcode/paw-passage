@@ -36,12 +36,8 @@ export function SiteHeader() {
           <AppLink to={restoreLink.to} className="pp-restore-link">
             {restoreLink.label}
           </AppLink>
-          <Button to={unlockCta.to} size="sm">
-            <span className="pp-cta-long">{unlockCta.label}</span>
-            <span className="pp-cta-short" aria-hidden="true">
-              Get it
-            </span>
-            <span className="sr-only pp-cta-short">{unlockCta.label}</span>
+          <Button to={unlockCta.to} size="sm" className="pp-header-cta">
+            {unlockCta.label}
           </Button>
           <button
             type="button"

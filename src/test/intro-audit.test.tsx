@@ -8,7 +8,7 @@ import { renderUi } from "./collections-fixtures";
 import { FreeStarter } from "@/components/passport/FreeStarter";
 import { _resetForTests, getSave, setOwner, setProfile } from "@/passport/local-store";
 import { CTX_KEYS } from "@/passport/journal-context";
-import { CTX_QUIZ_PRESETS, presetFor } from "@/passport/quiz";
+import { CTX_QUIZ_PRESETS, PERSONAL_STEPS, moodOf, presetFor } from "@/passport/quiz";
 import { freeLibrary } from "@/passport/content";
 import { emptySave, type Save } from "@/passport/progress";
 import {
@@ -18,16 +18,17 @@ import {
   DEFAULT_STEPS,
   type QuizAnswers,
 } from "@/passport/quiz";
-import { eligibleFreeCount, selectStarter } from "@/passport/starter";
+import { eligibleFreeCount, hasAnother, noMatchCause, selectStarter } from "@/passport/starter";
 import { eligibility } from "@/passport/engine";
 
 const lib = freeLibrary();
-const ALL = [...DEFAULT_STEPS, "works", "extra"] as const;
+const ALL = [...DEFAULT_STEPS, ...PERSONAL_STEPS, "extra"] as const;
 
 /** Builds a save by applying quiz answers through the real quiz mapping (same as the user answering every step). */
 function saveFor(a: QuizAnswers): Save {
   const base = emptySave();
-  const { dog, owner } = applyAnswers(a, ALL, base);
+  const mood = a.mood ?? moodOf(a.where, a.enjoy);
+  const { dog, owner } = applyAnswers(mood ? { ...a, mood } : a, ALL, base);
   const clean = (o: object) =>
     Object.fromEntries(Object.entries(o).filter(([, v]) => v !== undefined));
   return {
@@ -42,6 +43,12 @@ const ROWS: Row[] = [
   { name: "unknown dog (all skipped)", answers: {} },
   { name: "active adult", answers: { lifeStages: ["adult"], energy: "lively" } },
   { name: "young puppy", answers: { lifeStages: ["puppy"] } },
+  {
+    name: "playful adult",
+    answers: { lifeStages: ["adult"], energy: "lively", mood: "playful", where: "anywhere" },
+  },
+  { name: "senior (gentle)", answers: { lifeStages: ["senior"], energy: "gentle" } },
+  { name: "children joining (default screens)", answers: { lifeStages: ["adult"], kids: true } },
   {
     name: "senior limited mobility",
     answers: { lifeStages: ["senior"], keepInMind: ["mobility"] },
@@ -157,9 +164,53 @@ describe("representative profiles", () => {
       }
   });
 
-  it("the default quiz is eight steps and the maximum is ten", () => {
-    expect(stepsToAsk(emptySave()).length).toBe(8);
-    expect(stepsToAsk(emptySave(), { extras: ["works", "extra"] }).length).toBe(10);
+  it("the default quiz is four screens", () => {
+    expect(stepsToAsk(emptySave()).length).toBe(4);
+  });
+
+  it("every profile gets a safe pick or a friendly, specific no-match (never a purchase-only answer)", () => {
+    for (const x of results) {
+      if (x.pick.ok) continue;
+      const cause = noMatchCause(lib, x.save);
+      expect(["single", "several", "hard"]).toContain(cause.kind);
+      if (cause.kind !== "hard") {
+        // setting aside only the offered optional preferences must find a safe pick, never loosening a hard rule
+        const r = selectStarter(lib, x.save, new Set(), {
+          relax: cause.kind === "single" ? [cause.keys[0]!] : cause.keys,
+        });
+        expect(r.ok).toBe(true);
+        if (r.ok)
+          expect(
+            eligibility(r.adventure, {
+              dog: x.save.profile.data,
+              owner: x.save.owner.data,
+              unlocked: false,
+            }).reasons,
+          ).toEqual([]);
+      }
+    }
+  });
+
+  it("'show me another' is only offered while a different match remains", () => {
+    const save = saveFor({ lifeStages: ["adult"] });
+    const first = selectStarter(lib, save);
+    expect(first.ok).toBe(true);
+    if (!first.ok) return;
+    const seen = new Set<string>();
+    let guard = 0;
+    let cur = first.adventure.id;
+    // walk through the whole list: the last one must report that nothing else remains
+    while (guard++ < 40) {
+      const s = { ...save, starter: { id: cur, at: 1 } } as Save;
+      if (!hasAnother(lib, s, seen, false)) break;
+      seen.add(cur);
+      const next = selectStarter(lib, s, new Set([...seen, cur]));
+      expect(next.ok).toBe(true);
+      if (!next.ok) break;
+      cur = next.adventure.id;
+    }
+    expect(guard).toBeLessThan(40);
+    expect(seen.has(cur)).toBe(false); // the final one was never consumed by "another"
   });
 });
 
@@ -264,7 +315,6 @@ describe("empty results in the page", () => {
     vi.unstubAllGlobals();
   });
   const finish = () => {
-    fireEvent.click(screen.getByRole("button", { name: "Find Our First Adventure" }));
     for (let i = 0; i < 12; i++) {
       const next = screen.queryByRole("button", { name: /^(Skip|Next)$/ });
       if (!next) break;
@@ -272,54 +322,57 @@ describe("empty results in the page", () => {
     }
     fireEvent.click(screen.getByRole("button", { name: /Find our adventure/ }));
   };
+  const NO_MATCH = "We haven't found the right little adventure yet";
 
-  it("puppy + senior + children + nearby outdoors: nothing strictly fits, widening is offered, says what was set aside and keeps safety", async () => {
+  it("puppy + senior + children + nearby outdoors: warm, specific choices; nothing is relaxed silently; safety kept", async () => {
     setProfile({ lifeStages: ["puppy", "senior"], energyVariable: true });
     setOwner({ kids: true, where: "nearby" });
     await renderUi(<FreeStarter />);
     finish();
+    expect(await screen.findByRole("heading", { name: NO_MATCH })).toBeInTheDocument();
     expect(
-      await screen.findByRole("heading", { name: "Nothing free fits all of that" }),
-    ).toBeInTheDocument();
-    // not a sales pitch: one secondary mention of the full Passport
-    expect(screen.getAllByRole("link", { name: "See the full Passport" })).toHaveLength(1);
-    expect(screen.queryByText(/Want more little adventures/)).toBeNull();
+      screen.queryByText(/Widen where, time and spend|Nothing free fits all of that/),
+    ).toBeNull();
+    expect(screen.queryByText(/That was every free fit/)).toBeNull();
+    // not a sales pitch: no purchase offered while a free alternative exists
+    expect(screen.queryByRole("link", { name: /full Passport/ })).toBeNull();
     expect(getSave().starter).toBeUndefined();
-    fireEvent.click(
-      screen.getByRole("button", { name: "Widen where, time, spend and children joining" }),
-    );
+    // the choice is explicit and names the thing that is set aside
+    fireEvent.click(screen.getByRole("button", { name: "Yes, try something indoors" }));
     expect(
       await screen.findByRole("article", { name: "Recommended adventure" }),
     ).toBeInTheDocument();
-    // a family-suited adventure now fits, so children joining is NOT set aside; only where/time/spend were widened
-    expect(screen.getByText(/We widened your where, time and spend answers/)).toBeInTheDocument();
-    expect(screen.queryByText(/children-joining preference/)).toBeNull();
-    expect(getSave().owner.data.kids).toBe(true); // the saved answer itself is untouched
+    expect(screen.getByText(/we set aside your where preference/)).toBeInTheDocument();
+    expect(getSave().owner.data.where).toBe("nearby"); // the saved answer itself is untouched
+    expect(getSave().owner.data.kids).toBe(true);
     const a = lib.find((x) => x.id === getSave().starter?.id)!;
-    expect(a.household).toContain("family");
     expect(a.lifeStages).toEqual(expect.arrayContaining(["puppy", "senior"]));
   });
 
-  it("only optional answers rule everything out (adult + children + nearby outdoors): offers widening, keeps hard rules", async () => {
+  it("only optional answers rule everything out (adult + children + nearby): the explicit children choice is offered", async () => {
     setProfile({ lifeStage: "adult" });
     setOwner({ where: "nearby", kids: true });
     await renderUi(<FreeStarter />);
     finish();
+    expect(await screen.findByRole("heading", { name: NO_MATCH })).toBeInTheDocument();
+    const cause = noMatchCause(lib, getSave());
+    expect(cause.kind).not.toBe("hard");
+    // exactly the relevant choices (at most two), each a plain sentence and an explicit button
     expect(
-      await screen.findByRole("heading", { name: "Nothing free fits all of that" }),
-    ).toBeInTheDocument();
-    expect(screen.queryByText(/Want more little adventures/)).toBeNull();
-    fireEvent.click(
-      screen.getByRole("button", { name: "Widen where, time, spend and children joining" }),
-    );
-    expect(
-      await screen.findByRole("article", { name: "Recommended adventure" }),
-    ).toBeInTheDocument();
-    const id = getSave().starter?.id;
-    const a = lib.find((x) => x.id === id)!;
+      screen.getAllByRole("button", { name: /^(Yes|Do this one)/ }).length,
+    ).toBeLessThanOrEqual(2);
+    const btn = screen.queryByRole("button", { name: "Do this one without the children joining" });
+    if (btn) fireEvent.click(btn);
+    else fireEvent.click(screen.getAllByRole("button", { name: /^Yes/ })[0]!);
+    const card = await screen.findByRole("article", { name: "Recommended adventure" });
+    expect(card).toBeInTheDocument();
+    const a = lib.find((x) => x.id === getSave().starter?.id)!;
     expect(a.lifeStages).toContain("adult"); // hard rule kept
-    expect(a.household).toContain("family"); // a family-suited adventure still ranks first when one fits
-    expect(getSave().owner.data.where).toBe("nearby"); // the saved answer itself is untouched
+    expect(getSave().owner.data.where).toBe("nearby");
+  });
+
+  it("with no eligible free adventure at all the cause is 'hard': safety is never loosened", () => {
+    expect(noMatchCause([], saveFor({ lifeStages: ["senior"], where: "home" })).kind).toBe("hard");
   });
 });
 

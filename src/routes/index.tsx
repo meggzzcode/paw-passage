@@ -94,6 +94,7 @@ function Home() {
                   {homePromo.secondaryCta}
                 </Button>
               </p>
+              <p className="pp-fine">{homePromo.primaryCtaNote}</p>
               <p className="pp-fine">
                 Want it all?{" "}
                 <AppLink
@@ -205,7 +206,7 @@ function Home() {
                 you like.
               </p>
               <p className="mt-5">
-                <Button to="/discover">Find Our First Adventure — Free</Button>
+                <Button to="/discover">{homePromo.primaryCta}</Button>
               </p>
             </div>
             <ol className="pp-steps" aria-label="How it works">

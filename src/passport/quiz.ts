@@ -1,5 +1,6 @@
 // The free intro quiz: its questions, how answers map onto the existing DogProfile / OwnerPrefs / SessionFilters, and
-// which questions can be skipped. Pure functions, no network. At most ten steps; the default path is eight.
+// which questions can be skipped. Pure functions, no network. The default path is FOUR short screens (life stage, energy,
+// mood, anything to keep in mind); the optional "Make it more personal" fields add no screens.
 // Unknown stays unknown: a skipped question writes nothing, and "Not sure" never counts as a safe answer.
 import {
   ENJOY,
@@ -15,8 +16,12 @@ import type { Adventure } from "./schema";
 
 export type LifeStage = NonNullable<DogProfile["lifeStage"]>;
 
+/** The adventure mood: it maps onto the existing where / enjoy answers. */
+export type Mood = "cozy" | "outdoor" | "playful" | "surprise";
+
 export type QuizAnswers = {
   names?: string;
+  mood?: Mood;
   lifeStages?: LifeStage[]; // one stage, or several for a mixed household
   energy?: "gentle" | "moderate" | "lively" | "variable";
   enjoy?: Enjoy[];
@@ -32,28 +37,32 @@ export type QuizAnswers = {
 };
 
 export type StepId =
-  "names" | "life" | "energy" | "enjoy" | "keep" | "where" | "time" | "spend" | "works" | "extra";
+  | "names"
+  | "life"
+  | "energy"
+  | "mood"
+  | "enjoy"
+  | "keep"
+  | "where"
+  | "time"
+  | "spend"
+  | "works"
+  | "extra";
 
-/** The default path: eight steps. Two optional steps are added only when the visitor asks for them. */
-export const DEFAULT_STEPS: readonly StepId[] = [
-  "names",
-  "life",
-  "energy",
-  "enjoy",
-  "keep",
-  "where",
-  "time",
-  "spend",
-];
-export const OPTIONAL_STEPS: readonly StepId[] = ["works", "extra"];
+/** The default path: four short screens. */
+export const DEFAULT_STEPS: readonly StepId[] = ["life", "energy", "mood", "keep"];
+/** The optional fields behind the single "Make it more personal (optional)" control. They are never extra screens. */
+export const PERSONAL_STEPS: readonly StepId[] = ["names", "enjoy", "time", "spend", "works"];
+export const OPTIONAL_STEPS: readonly StepId[] = PERSONAL_STEPS;
 export const MAX_STEPS = 10;
 
 export const STEP_QUESTION: Record<StepId, string> = {
   names: "Who's coming on the adventure?",
-  life: "What life stage is your dog or dogs?",
-  energy: "How would you describe their energy?",
+  life: "Who is your little sidekick?",
+  energy: "What's their usual vibe?",
+  mood: "What are we in the mood for?",
   enjoy: "What do they enjoy?",
-  keep: "Anything to keep in mind?",
+  keep: "Anything we should keep in mind?",
   where: "Where would you like to go?",
   time: "How much time do you have?",
   spend: "How much would you like to spend?",
@@ -66,6 +75,20 @@ export const LIFE_OPTIONS: Opt<LifeStage>[] = [
   { value: "puppy", label: "Puppy" },
   { value: "adult", label: "Adult" },
   { value: "senior", label: "Senior" },
+];
+/** The life-stage screen offers one shared profile for several dogs: "mixed" lists every stage, the most cautious reading. */
+export const MIXED_STAGES: LifeStage[] = ["puppy", "adult", "senior"];
+export const LIFE_CHOICES: Opt<LifeStage | "mixed">[] = [
+  { value: "puppy", label: "Puppy" },
+  { value: "adult", label: "Adult" },
+  { value: "senior", label: "Senior" },
+  { value: "mixed", label: "A mix of ages" },
+];
+export const MOOD_OPTIONS: Opt<Mood>[] = [
+  { value: "cozy", label: "Cozy at home" },
+  { value: "outdoor", label: "A little outdoor adventure" },
+  { value: "playful", label: "Something playful" },
+  { value: "surprise", label: "Surprise us" },
 ];
 export const ENERGY_OPTIONS: Opt<NonNullable<QuizAnswers["energy"]>>[] = [
   { value: "gentle", label: "Gentle" },
@@ -81,21 +104,27 @@ export const ENJOY_OPTIONS: Opt<Enjoy>[] = [
   { value: "creative", label: "Creative" },
   { value: "relaxing", label: "Relaxing" },
 ];
+/** The options the keep-in-mind screen shows. Each is its own distinct safety field; they are never merged into one flag. */
 export const KEEP_OPTIONS: Opt<KeepItem>[] = [
-  { value: "mobility", label: "Mobility" },
-  { value: "food", label: "Food limits" },
-  { value: "water", label: "Water" },
+  { value: "mobility", label: "Mobility limits" },
+  { value: "food", label: "Food restrictions" },
   { value: "noise", label: "Noise" },
   { value: "crowds", label: "Crowds" },
   { value: "dogs", label: "Other dogs" },
-  { value: "exercise", label: "Exercise limits" },
+  { value: "exercise", label: "Exercise or health limits" },
 ];
-/** Exclusive answers: choosing one clears the specific picks. None of them writes a "safe" value. */
+/** Children joining is an owner preference (not a dog safety field); it sits beside the dog options on the same screen. */
+export const KIDS_OPTION: Opt<"kids"> = { value: "kids", label: "Children joining" };
+/**
+ * Exclusive answers: choosing one clears the specific picks. "Not sure" writes nothing (unknown, never safe).
+ * "Nothing in particular" confirms none ONLY for the options shown above (see applyAnswers).
+ */
 export const KEEP_EXCLUSIVE: Opt<KeepItem>[] = [
-  { value: "none", label: "Nothing in particular" },
   { value: "unsure", label: "Not sure" },
-  { value: "private", label: "Prefer not to say" },
+  { value: "none", label: "Nothing in particular" },
 ];
+/** Saved answers the keep screen does not show (water, prefer-not-to-say) are kept untouched when the screen is saved. */
+export const KEEP_HIDDEN: readonly KeepItem[] = ["water", "private"];
 export const WHERE_OPTIONS: Opt<NonNullable<QuizAnswers["where"]>>[] = [
   { value: "home", label: "At home" },
   { value: "nearby", label: "Nearby outdoors" },
@@ -126,6 +155,17 @@ export const CAR_OPTIONS: Opt<"yes" | "no">[] = [
 
 type Loose<T> = { [K in keyof T]?: T[K] | undefined };
 
+/** The mood a where/enjoy pair stands for (undefined when no where answer is held). */
+export function moodOf(
+  where: QuizAnswers["where"],
+  enjoy: readonly Enjoy[] | undefined,
+): Mood | undefined {
+  if (where === "home") return "cozy";
+  if (where === "nearby") return "outdoor";
+  if (where === "anywhere") return enjoy?.includes("games") ? "playful" : "surprise";
+  return undefined;
+}
+
 /** The quiz answers this save already holds (undefined fields are unanswered). */
 export function answersFromSave(save: Save): QuizAnswers {
   const d = save.profile.data;
@@ -143,6 +183,7 @@ export function answersFromSave(save: Save): QuizAnswers {
   add("dogs", d.dogs === "nervous");
   const out: Loose<QuizAnswers> = {
     names: d.name,
+    mood: moodOf(o.where, d.enjoy),
     lifeStages: stages,
     energy: d.energyVariable ? "variable" : d.energy,
     enjoy: d.enjoy,
@@ -170,6 +211,8 @@ export function stepAnswered(id: StepId, save: Save): boolean {
       return d.lifeStage !== undefined || !!d.lifeStages?.length;
     case "energy":
       return d.energy !== undefined || d.energyVariable !== undefined;
+    case "mood":
+      return o.where !== undefined;
     case "enjoy":
       return !!d.enjoy?.length;
     case "keep":
@@ -180,7 +223,8 @@ export function stepAnswered(id: StepId, save: Save): boolean {
         d.water !== undefined ||
         d.noiseSensitive !== undefined ||
         d.crowds !== undefined ||
-        d.dogs !== undefined
+        d.dogs !== undefined ||
+        o.kids !== undefined
       );
     case "where":
       return o.where !== undefined;
@@ -228,6 +272,13 @@ export function applyAnswers(
     dog.energyVariable = a.energy === "variable" ? true : undefined;
     dog.energy = a.energy && a.energy !== "variable" ? a.energy : undefined;
   }
+  if (has("mood")) {
+    // The mood maps onto the existing where / enjoy answers. "Playful" leans on games, never overriding other interests.
+    const m = a.mood;
+    owner.where = m === "cozy" ? "home" : m === "outdoor" ? "nearby" : m ? "anywhere" : undefined;
+    if (m === "playful" && !has("enjoy") && !(a.enjoy ?? cur.enjoy)?.includes("games"))
+      dog.enjoy = ENJOY.filter((e) => e === "games" || (a.enjoy ?? cur.enjoy)?.includes(e));
+  }
   if (has("enjoy"))
     dog.enjoy = a.enjoy?.length ? ENJOY.filter((e) => a.enjoy?.includes(e)) : undefined;
   if (has("keep")) {
@@ -244,6 +295,16 @@ export function applyAnswers(
     set(k.includes("noise"), "noiseSensitive", "yes");
     set(k.includes("crowds"), "crowds", "nervous");
     set(k.includes("dogs"), "dogs", "nervous");
+    // "Nothing in particular" confirms none ONLY for the options the screen shows, and never overrides a cautious answer.
+    // "Not sure" and "prefer not to say" write nothing: those fields stay unknown, never safe.
+    if (k.includes("none")) {
+      const unknown = (v: string | undefined) => v === undefined || v === "unknown";
+      if (unknown(cur.noiseSensitive)) dog.noiseSensitive = "no";
+      if (unknown(cur.crowds)) dog.crowds = "comfortable";
+      if (unknown(cur.dogs)) dog.dogs = "comfortable";
+      if (unknown(cur.foodActivities)) dog.foodActivities = "yes";
+    }
+    owner.kids = a.kids ? true : undefined;
   }
   if (has("where")) owner.where = a.where;
   if (has("time")) owner.time = a.time;
@@ -260,21 +321,33 @@ export function applyAnswers(
   return { dog, owner };
 }
 
+/** The optional preferences a visitor can explicitly set aside, one at a time. Never a safety rule. */
+export type RelaxKey = "where" | "time" | "spend" | "kids";
+export const RELAX_KEYS: readonly RelaxKey[] = ["where", "time", "spend", "kids"];
+/** `true` sets aside every optional preference; an array sets aside just those the visitor chose. */
+export type Relax = boolean | readonly RelaxKey[];
+
 /**
  * Today's filters from the owner's quiz answers, through the existing SessionFilters mechanism.
  * `relax` drops only the OPTIONAL preferences (where, time, spend, children joining). No car and quiet stay, and so does
  * every hard suitability rule in the engine (life stage, mobility, noise/crowd/dogs, food, water).
  */
-export function starterFilters(owner: OwnerPrefs, opts: { relax?: boolean } = {}): SessionFilters {
+export function starterFilters(owner: OwnerPrefs, opts: { relax?: Relax } = {}): SessionFilters {
   const f: SessionFilters = {};
-  if (!opts.relax) {
+  const drop = (k: RelaxKey) =>
+    opts.relax === true || (Array.isArray(opts.relax) && opts.relax.includes(k));
+  if (!drop("where")) {
     if (owner.where === "home") f.places = ["home"];
     if (owner.where === "nearby") {
       f.setting = "outdoor";
       f.transport = "none-or-walk";
     }
+  }
+  if (!drop("time")) {
     if (owner.time === "short") f.minutes = 15;
     if (owner.time === "medium") f.minutes = 30;
+  }
+  if (!drop("spend")) {
     if (owner.spend === "none") f.budget = 0;
     if (owner.spend === "inexpensive") f.budget = 10;
   }
@@ -282,7 +355,7 @@ export function starterFilters(owner: OwnerPrefs, opts: { relax?: boolean } = {}
   if (owner.quiet) f.quiet = true;
   // Children joining is an optional preference: it narrows the list, and "widen" can set it aside. The engine still
   // prefers family-friendly adventures when it is set (see `score`). Hard suitability is never relaxed.
-  if (owner.kids && !opts.relax) f.household = ["family"];
+  if (owner.kids && !drop("kids")) f.household = ["family"];
   return f;
 }
 
@@ -297,7 +370,11 @@ export function quizAnswersFromCtx(a: CtxAnswers): Partial<QuizAnswers> {
   if (a.lifeStage && a.lifeStage !== "mixed") out.lifeStages = [a.lifeStage];
   if (a.energy) out.energy = a.energy;
   if (a.enjoy) out.enjoy = [...a.enjoy];
-  if (a.where) out.where = a.where;
+  if (a.where) {
+    out.where = a.where;
+    const m = moodOf(a.where, a.enjoy);
+    if (m) out.mood = m;
+  }
   if (a.time) out.time = a.time;
   if (a.spend) out.spend = a.spend;
   if (a.owner)

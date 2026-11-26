@@ -32,7 +32,8 @@ describe("homepage copy", () => {
     readFileSync("src/routes/index.tsx", "utf8") + readFileSync("src/config/commercial.ts", "utf8");
   it("leads with the adventure headline and one clear primary CTA", () => {
     expect(src).toContain("Life is better with a little");
-    expect(src).toContain("Find Our First Adventure");
+    expect(src).toContain("Find our first adventure");
+    expect(src).toContain("Your first adventure is free.");
     expect(src).toContain("Explore the Adventure Collection");
     expect(src).toContain("One payment, not a subscription");
     expect(src).toContain("No account");

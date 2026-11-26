@@ -1,15 +1,16 @@
-import { cleanup, fireEvent, screen, within } from "@testing-library/react";
+import { cleanup, fireEvent, screen, waitFor, within } from "@testing-library/react";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { adv, renderUi } from "./collections-fixtures";
 import { DiscoverPage } from "@/components/passport/DiscoverPage";
 import { FreeStarter } from "@/components/passport/FreeStarter";
 import { activityConfirm, eligibility } from "@/passport/engine";
 import { _resetForTests, getSave, setOwner, setProfile } from "@/passport/local-store";
-import { dogWho, hasManyDogs, parseDogNames } from "@/passport/profile";
+import { dogWho, hasManyDogs, parseDogNames, type DogProfile } from "@/passport/profile";
 import { emptySave, migrate, validateSave } from "@/passport/progress";
 import {
   DEFAULT_STEPS,
   MAX_STEPS,
+  PERSONAL_STEPS,
   applyAnswers,
   presetFor,
   starterFilters,
@@ -38,56 +39,190 @@ const withData = (profile: Record<string, unknown>, owner: Record<string, unknow
   }) as ReturnType<typeof emptySave>;
 
 beforeEach(() => {
+  window.sessionStorage.clear();
+  window.history.replaceState(null, "");
   window.localStorage.clear();
   _resetForTests();
 });
 afterEach(() => cleanup());
 
-const startQuiz = () =>
-  fireEvent.click(screen.getByRole("button", { name: "Find Our First Adventure" }));
 const counter = () => screen.getByText(/^Question \d+ of \d+$/).textContent;
 const next = () => fireEvent.click(screen.getByRole("button", { name: /^(Skip|Next)$/ }));
+const pickChip = (name: string) => fireEvent.click(screen.getByRole("button", { name }));
+const heading = () => screen.getByRole("heading", { level: 2 }).textContent;
+/** From the first question: skip the three single-choice screens, then find the adventure. */
+const finish = () => {
+  for (let i = 0; i < 3; i++) next();
+  fireEvent.click(screen.getByRole("button", { name: "Find our adventure" }));
+};
 
 describe("step count and the honest counter", () => {
-  it("the default path is eight steps and never more than ten", () => {
-    expect(DEFAULT_STEPS.length).toBe(8);
-    expect(stepsToAsk(emptySave()).length).toBe(8);
-    expect(stepsToAsk(emptySave(), { extras: ["works", "extra"] }).length).toBe(10);
+  it("the default path is four screens; the optional refinements add none", () => {
+    expect(DEFAULT_STEPS).toEqual(["life", "energy", "mood", "keep"]);
+    expect(stepsToAsk(emptySave()).length).toBe(4);
+    expect(PERSONAL_STEPS.length).toBeGreaterThan(0);
     expect(MAX_STEPS).toBe(10);
   });
 
-  it("shows 'Question n of N' with a matching progress bar, and N shrinks when answers are already saved", async () => {
+  it("shows 'Question n of 4' with a matching progress bar, and N shrinks when answers are already saved", async () => {
     await renderUi(<FreeStarter />);
-    startQuiz();
-    expect(counter()).toBe("Question 1 of 8");
-    expect(screen.getByRole("progressbar")).toHaveAttribute("aria-valuemax", "8");
+    expect(counter()).toBe("Question 1 of 4");
+    expect(screen.getByRole("progressbar")).toHaveAttribute("aria-valuemax", "4");
     next();
-    expect(counter()).toBe("Question 2 of 8");
+    expect(counter()).toBe("Question 2 of 4");
   });
 
   it("skips questions a saved profile already answers", async () => {
-    setProfile({ name: "Luna", lifeStage: "adult" });
-    setOwner({ spend: "none" });
+    setProfile({ lifeStage: "adult" });
+    setOwner({ where: "home" });
     await renderUi(<FreeStarter />);
-    startQuiz();
-    expect(counter()).toBe("Question 1 of 5");
-    expect(screen.queryByRole("group", { name: /life stage/i })).toBeNull();
-    expect(screen.getByRole("group", { name: /energy/i })).toBeInTheDocument();
+    expect(counter()).toBe("Question 1 of 2");
+    expect(screen.queryByRole("group", { name: /sidekick/i })).toBeNull();
+    expect(screen.getByRole("group", { name: /vibe/i })).toBeInTheDocument();
+  });
+});
+
+describe("single-choice screens move on by themselves", () => {
+  it("auto-advances on tap with one heading and a labelled group (nothing is read twice)", async () => {
+    await renderUi(<FreeStarter />);
+    expect(heading()).toBe("Who is your little sidekick?");
+    const group = screen.getByRole("group", { name: "Who is your little sidekick?" });
+    expect(group.querySelector("legend")).toBeNull();
+    expect(group).toHaveAttribute("aria-labelledby", screen.getByRole("heading", { level: 2 }).id);
+    fireEvent.click(within(group).getByRole("button", { name: "Senior" }));
+    expect(counter()).toBe("Question 2 of 4");
+    expect(heading()).toBe("What's their usual vibe?");
+    pickChip("Lively");
+    expect(heading()).toBe("What are we in the mood for?");
+    pickChip("A little outdoor adventure");
+    expect(heading()).toBe("Anything we should keep in mind?");
+    // the last screen is multi-select: nothing moves on until the explicit button
+    pickChip("Noise");
+    pickChip("Crowds");
+    expect(heading()).toBe("Anything we should keep in mind?");
+    fireEvent.click(screen.getByRole("button", { name: "Find our adventure" }));
+    expect(getSave().profile.data).toMatchObject({
+      lifeStage: "senior",
+      energy: "lively",
+      noiseSensitive: "yes",
+      crowds: "nervous",
+    });
+    expect(getSave().owner.data.where).toBe("nearby");
   });
 
-  it("the two extra steps appear only on request, and every step can be skipped", async () => {
+  it("moves focus to the question heading on every move, without trapping", async () => {
     await renderUi(<FreeStarter />);
-    startQuiz();
-    for (let i = 0; i < 7; i++) next();
-    expect(counter()).toBe("Question 8 of 8");
-    expect(screen.queryByText(/What works for you/)).toBeNull();
-    fireEvent.click(screen.getByRole("button", { name: /Add what works for you/ }));
-    expect(counter()).toBe("Question 9 of 9");
-    fireEvent.click(screen.getByRole("button", { name: "Add a detail (quiet, children joining)" }));
-    expect(counter()).toBe("Question 10 of 10");
+    pickChip("Adult");
+    expect(document.activeElement).toBe(screen.getByRole("heading", { level: 2 }));
+    expect(document.activeElement).toHaveAttribute("tabindex", "-1");
+  });
+
+  it("offers a visible Back on every later screen, and a 44px-friendly chip class", async () => {
+    await renderUi(<FreeStarter />);
+    expect(screen.queryByRole("button", { name: "Back" })).toBeNull();
+    pickChip("Adult");
+    expect(screen.getByRole("button", { name: "Back" })).toBeInTheDocument();
+  });
+
+  it("the mixed answer is one conservative shared profile covering every age", async () => {
+    await renderUi(<FreeStarter />);
+    pickChip("A mix of ages");
+    expect(screen.getByText("Question 2 of 4")).toBeInTheDocument();
+    finishRest();
+    await screen.findByRole("heading", { level: 1, name: /adventure/i });
+    expect(getSave().profile.data.lifeStages).toEqual(["puppy", "adult", "senior"]);
+  });
+  const finishRest = () => {
+    next();
+    next();
     fireEvent.click(screen.getByRole("button", { name: "Find our adventure" }));
+  };
+});
+
+describe("Back and reload inside the quiz", () => {
+  it("the Back button steps back inside the quiz, keeping the answer", async () => {
+    await renderUi(<FreeStarter />);
+    pickChip("Senior");
+    expect(counter()).toBe("Question 2 of 4");
+    fireEvent.click(screen.getByRole("button", { name: "Back" }));
+    await waitFor(() => expect(counter()).toBe("Question 1 of 4"));
+    expect(screen.getByRole("button", { name: "Senior" })).toHaveAttribute("aria-pressed", "true");
+  });
+
+  it("the browser's Back steps back a question (history state), staying on the page", async () => {
+    await renderUi(<FreeStarter />);
+    pickChip("Adult");
+    pickChip("Lively");
+    expect(counter()).toBe("Question 3 of 4");
+    window.history.back();
+    await waitFor(() => expect(counter()).toBe("Question 2 of 4"));
+    window.history.back();
+    await waitFor(() => expect(counter()).toBe("Question 1 of 4"));
+    expect(screen.getByRole("button", { name: "Adult" })).toHaveAttribute("aria-pressed", "true");
+  });
+
+  it("a reload mid-quiz resumes the same question with the answers kept", async () => {
+    const first = await renderUi(<FreeStarter />);
+    pickChip("Senior");
+    pickChip("Gentle");
+    expect(counter()).toBe("Question 3 of 4");
+    first.unmount(); // a reload: the page state is gone, the history entry and session storage remain
+    _resetForTests();
+    await renderUi(<FreeStarter />);
+    expect(counter()).toBe("Question 3 of 4");
+    fireEvent.click(screen.getByRole("button", { name: "Back" }));
+    await waitFor(() => expect(counter()).toBe("Question 2 of 4"));
+    expect(screen.getByRole("button", { name: "Gentle" })).toHaveAttribute("aria-pressed", "true");
+  });
+
+  it("a fresh visit does not resume an old, finished quiz", async () => {
+    window.sessionStorage.setItem(
+      "pp.quiz.draft.v1",
+      JSON.stringify({ draft: { energy: "lively" }, open: false, mode: "first" }),
+    );
+    await renderUi(<FreeStarter />);
+    expect(counter()).toBe("Question 1 of 4");
+    expect(screen.queryByRole("button", { name: "Lively" })).toBeNull();
+  });
+});
+
+describe("the optional refinements sit behind one control and add no screens", () => {
+  it("'Make it more personal (optional)' opens names, time, budget, transport, walking and interests", async () => {
+    await renderUi(<FreeStarter />);
+    pickChip("Adult");
+    next();
+    next();
+    expect(screen.queryByLabelText("Your dog's name, or names")).toBeNull();
+    fireEvent.click(screen.getByRole("button", { name: "Make it more personal (optional)" }));
+    fireEvent.change(screen.getByLabelText("Your dog's name, or names"), {
+      target: { value: "Luna and Milo" },
+    });
+    pickChip("Short (about 15 min)");
+    pickChip("Nothing");
+    pickChip("No car");
+    pickChip("Step-free routes only");
+    pickChip("Sniffing");
+    expect(counter()).toBe("Question 4 of 4");
+    fireEvent.click(screen.getByRole("button", { name: "Find our adventure" }));
+    expect(getSave().profile.data.name).toBe("Luna and Milo");
+    expect(getSave().owner.data).toMatchObject({
+      time: "short",
+      spend: "none",
+      hasCar: "no",
+      stepFree: true,
+    });
+    expect(getSave().profile.data.enjoy).toEqual(["sniffing"]);
+  });
+
+  it("left closed, nothing optional is written (skipped means unknown)", async () => {
+    await renderUi(<FreeStarter />);
+    finish();
     await screen.findByRole("article", { name: "Recommended adventure" });
-    expect(getSave().profile.data.lifeStage).toBeUndefined(); // skipped = unknown
+    const o = getSave().owner.data;
+    expect(o.time).toBeUndefined();
+    expect(o.spend).toBeUndefined();
+    expect(o.hasCar).toBeUndefined();
+    expect(getSave().profile.data.name).toBeUndefined();
   });
 });
 
@@ -130,6 +265,55 @@ describe("answers map onto the existing profile", () => {
     const saved = withData({ dogs: "comfortable" });
     expect(applyAnswers({ keepInMind: [] }, ["keep"], saved).dog.dogs).toBeUndefined();
     expect("dogs" in applyAnswers({ keepInMind: [] }, ["keep"], saved).dog).toBe(false);
+  });
+
+  it("the safety fields stay distinct: each option writes only its own field", () => {
+    const one = (k: "mobility" | "food" | "noise" | "crowds" | "dogs" | "exercise") =>
+      applyAnswers({ keepInMind: [k] }, ["keep"], emptySave()).dog;
+    expect(one("noise")).toEqual({ keepInMind: ["noise"], noiseSensitive: "yes" });
+    expect(one("crowds")).toEqual({ keepInMind: ["crowds"], crowds: "nervous" });
+    expect(one("dogs")).toEqual({ keepInMind: ["dogs"], dogs: "nervous" });
+    expect(one("food")).toEqual({ keepInMind: ["food"], foodActivities: "no" });
+    expect(one("mobility")).toEqual({ keepInMind: ["mobility"], limitedMobility: true });
+    expect(one("exercise")).toEqual({ keepInMind: ["exercise"], limitedMobility: true });
+  });
+
+  it("'not sure' stays unknown, never safe; 'nothing in particular' confirms only the options shown and never overrides a cautious answer", () => {
+    const unsure = applyAnswers({ keepInMind: ["unsure"] }, ["keep"], emptySave()).dog;
+    expect(unsure).toEqual({ keepInMind: ["unsure"] });
+    const none = applyAnswers({ keepInMind: ["none"] }, ["keep"], emptySave()).dog;
+    expect(none).toMatchObject({
+      noiseSensitive: "no",
+      crowds: "comfortable",
+      dogs: "comfortable",
+    });
+    expect(none.people).toBeUndefined(); // not asked on this screen: stays unknown
+    expect(none.water).toBeUndefined();
+    const careful = applyAnswers(
+      { keepInMind: ["none"] },
+      ["keep"],
+      withData({ noiseSensitive: "yes", dogs: "nervous" }),
+    ).dog;
+    expect(careful.noiseSensitive).toBeUndefined(); // not rewritten: the saved cautious value stands
+    expect(careful.dogs).toBeUndefined();
+    expect(careful.crowds).toBe("comfortable");
+  });
+
+  it("an activity that depends on an unknown field still asks (held), whatever 'not sure' says", () => {
+    const dog = applyAnswers({ keepInMind: ["unsure"] }, ["keep"], emptySave()).dog;
+    const busy = adv("adv-bz2222", "Busy", { otherDogs: true });
+    expect(activityConfirm(busy, dog as DogProfile)?.field).toBe("dogs");
+  });
+
+  it("children joining is an owner preference on the same screen; mood maps onto where and enjoy", () => {
+    expect(applyAnswers({ kids: true }, ["keep"], emptySave()).owner.kids).toBe(true);
+    expect(applyAnswers({ mood: "cozy" }, ["mood"], emptySave()).owner.where).toBe("home");
+    expect(applyAnswers({ mood: "outdoor" }, ["mood"], emptySave()).owner.where).toBe("nearby");
+    const play = applyAnswers({ mood: "playful" }, ["mood"], emptySave());
+    expect(play.owner.where).toBe("anywhere");
+    expect(play.dog.enjoy).toEqual(["games"]);
+    expect(applyAnswers({ mood: "surprise" }, ["mood"], emptySave()).dog.enjoy).toBeUndefined();
+    expect(applyAnswers({}, ["mood"], emptySave()).owner.where).toBeUndefined(); // skipped = unknown
   });
 
   it("owner walking, steps and car map to ownerMobility, stepFree and transport", () => {
@@ -180,9 +364,7 @@ describe("activity-specific safety question", () => {
     const lib = await import("@/passport/content");
     void lib;
     await renderUi(<FreeStarter />);
-    startQuiz();
-    for (let i = 0; i < 7; i++) next();
-    fireEvent.click(screen.getByRole("button", { name: "Find our adventure" }));
+    finish();
     await screen.findByRole("article", { name: "Recommended adventure" });
     // The fixture cards are quiet, so no question is shown and the reveal is offered at once.
     expect(screen.getByRole("button", { name: "Scratch or tap to reveal." })).toBeInTheDocument();
@@ -201,12 +383,8 @@ describe("several dogs, one profile", () => {
   it("uses the names as written and says to choose something every dog can enjoy", async () => {
     setProfile({ name: "Luna and Milo" });
     await renderUi(<FreeStarter />);
-    startQuiz();
-    for (let i = 0; i < 6; i++) next(); // the name is saved, so seven questions remain
-    fireEvent.click(screen.getByRole("button", { name: "Find our adventure" }));
-    expect(
-      await screen.findByRole("heading", { name: "A first adventure for Luna and Milo" }),
-    ).toBeInTheDocument();
+    finish();
+    expect(await screen.findByText(/first adventure for Luna and Milo/)).toBeInTheDocument();
     expect(screen.getByText(/suit every dog/i)).toBeInTheDocument();
     expect(screen.getByText(/guarding/i)).toBeInTheDocument();
   });
@@ -245,11 +423,9 @@ describe("Starting from a Journal context", () => {
   it("shows the pre-selected chip in the quiz and leaves the saved profile untouched", async () => {
     setProfile({ energy: "moderate" });
     await renderUi(<FreeStarter ctx="rainy-day" />);
-    startQuiz();
-    for (let i = 0; i < 2; i++) next(); // names, life stage
-    // energy is saved, so it is skipped; "what they enjoy" is next and pre-selected
-    const enjoy = screen.getByRole("group", { name: /enjoy/i });
-    expect(within(enjoy).getByRole("button", { name: "Games" })).toHaveAttribute(
+    next(); // life stage; energy is saved, so the mood screen is next, with the preset pre-selected
+    const mood = screen.getByRole("group", { name: /mood/i });
+    expect(within(mood).getByRole("button", { name: "Cozy at home" })).toHaveAttribute(
       "aria-pressed",
       "true",
     );
@@ -258,28 +434,28 @@ describe("Starting from a Journal context", () => {
 
   it("works through the Discover page too", async () => {
     await renderUi(<DiscoverPage mode="made" onMode={() => undefined} ctx="at-home" />);
-    expect(screen.getByRole("button", { name: "Find Our First Adventure" })).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { name: "Who is your little sidekick?" }),
+    ).toBeInTheDocument();
   });
 });
 
 describe("keepsake creation is paid", () => {
-  it("says so before the free adventure starts, with no uploader anywhere in the free flow", async () => {
+  it("has no keepsake pitch before the quiz, no uploader anywhere in the free flow, and the explainer once afterwards", async () => {
     const { container } = await renderUi(<FreeStarter />);
-    expect(screen.getByText(/part of the full Passport/i)).toBeInTheDocument();
+    expect(screen.queryByText(/part of the full Passport/i)).toBeNull();
+    expect(screen.queryByLabelText("About personalized keepsakes")).toBeNull();
     expect(container.querySelector('input[type="file"]')).toBeNull();
-    startQuiz();
-    expect(container.querySelector('input[type="file"]')).toBeNull();
-    for (let i = 0; i < 7; i++) next();
-    fireEvent.click(screen.getByRole("button", { name: "Find our adventure" }));
+    finish();
     await screen.findByRole("article", { name: "Recommended adventure" });
+    expect(screen.queryByLabelText("About personalized keepsakes")).toBeNull();
     fireEvent.click(screen.getByRole("button", { name: "Scratch or tap to reveal." }));
     await screen.findByText("How it goes");
     fireEvent.click(screen.getByRole("button", { name: "Collect it" }));
     await screen.findByRole("heading", { name: "Your first stamp" });
-    // the explainer appears once, inside the card, when the visitor opens the keepsake style
     expect(screen.queryByLabelText("About personalized keepsakes")).toBeNull();
     fireEvent.click(screen.getByRole("button", { name: "See the keepsake style" }));
-    expect(screen.getByLabelText("About personalized keepsakes")).toBeInTheDocument();
+    expect(screen.getAllByLabelText("About personalized keepsakes")).toHaveLength(1);
     expect(container.querySelector('input[type="file"]')).toBeNull();
   });
 
@@ -287,9 +463,7 @@ describe("keepsake creation is paid", () => {
     const f = vi.fn();
     vi.stubGlobal("fetch", f);
     await renderUi(<FreeStarter />);
-    startQuiz();
-    for (let i = 0; i < 7; i++) next();
-    fireEvent.click(screen.getByRole("button", { name: "Find our adventure" }));
+    finish();
     await screen.findByRole("article", { name: "Recommended adventure" });
     expect(f).not.toHaveBeenCalled();
     vi.unstubAllGlobals();

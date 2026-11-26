@@ -18,6 +18,9 @@ const about = [
 export function SiteFooter() {
   return (
     <footer className="pp-footer no-print mt-16">
+      <div className="pp-marquee" aria-hidden="true">
+        <div>{Array(2).fill("Better adventures, together ✿ Little moments, big memories ✿ Collect adventures, not just things ✿ Made for the two of you ✿ ").join("")}</div>
+      </div>
       <div className="pp-container grid gap-8 py-12 md:grid-cols-[1.3fr_1fr_1fr]">
         <div>
           <p className="flex items-center gap-2 font-display text-2xl">

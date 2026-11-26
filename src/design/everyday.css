@@ -17,3 +17,74 @@ html .pp-btn-secondary, html .pp-btn-ghost { border-color: var(--pp-hairline); }
 html .pp-btn:hover { transform: translateY(-2px); box-shadow: var(--pp-shadow); }
 html .pp-btn:active { transform: none; box-shadow: none; }
 html .pp-h1 em { background: var(--pp-ochre); color: inherit; border-radius: .3em; padding: 0 .12em; font-style: normal; }
+
+/* ---- Site-wide Everyday Magic personality layer ----
+   Applies the homepage look to every page through shared classes. Decorative only: never changes
+   safety, eligibility or payment text, and never uses the handwritten face for it. */
+
+/* Page titles: display face plus a butter "highlighter" swash under every main heading. */
+main h1, .pa-h1, .pp-h1 { font-family: var(--font-display); font-weight: 700; letter-spacing: -0.02em; text-wrap: balance; }
+main h1:not(.pp-h1)::after, .pa-h1::after {
+  content: ""; display: block; width: 4.5rem; height: .55rem; margin-top: .55rem;
+  background: var(--pp-ochre); border-radius: 999px; rotate: -2deg;
+}
+main h2, .pp-h2, .pa-h { font-family: var(--font-display); font-weight: 650; letter-spacing: -0.015em; }
+
+/* Eyebrows and kickers become little sticker pills. */
+.pp-eyebrow, .pa-kicker {
+  display: inline-block; padding: .3rem .75rem; border-radius: 999px;
+  background: color-mix(in oklab, var(--pp-strawberry) 55%, var(--pp-card));
+  color: var(--pp-ink); letter-spacing: .12em; rotate: -1.5deg;
+}
+.pp-band .pp-eyebrow { background: var(--pp-ochre); color: var(--pp-ink); }
+
+/* Cards: softer outline, rounder corners, gentle lift; linked cards tilt a touch on hover. */
+.pp-card, .pa-card, .pa-panel {
+  border: 1.5px solid var(--pp-hairline); border-radius: 1.5rem;
+  box-shadow: 0 1px 0 var(--pp-hairline), var(--pp-shadow);
+}
+a.pp-card, a.pa-card { transition: transform .18s ease, box-shadow .18s ease; }
+a.pp-card:hover, a.pa-card:hover { transform: translateY(-4px) rotate(-.6deg); }
+.pp-grid > a.pp-card:nth-child(even):hover { transform: translateY(-4px) rotate(.6deg); }
+@media (prefers-reduced-motion: reduce) { a.pp-card:hover, a.pa-card:hover, .pp-grid > a.pp-card:nth-child(even):hover { transform: none; } }
+
+/* Rotate soft pastel tops across card grids so lists feel collected, not uniform. */
+.pp-grid > .pp-card { border-top: .45rem solid var(--pp-sage); }
+.pp-grid > .pp-card:nth-child(4n+2) { border-top-color: var(--pp-strawberry); }
+.pp-grid > .pp-card:nth-child(4n+3) { border-top-color: var(--pp-powder); }
+.pp-grid > .pp-card:nth-child(4n+4) { border-top-color: var(--pp-ochre); }
+
+/* Tailwind-built cards on guide, gear and info pages pick up the same rounder, softer feel. */
+main .rounded-lg.border, main .rounded-xl.border, main .rounded-2xl.border, main .rounded-md.border.bg-card {
+  border-radius: 1.5rem; border-color: var(--pp-hairline); box-shadow: var(--pp-shadow);
+}
+
+/* Chips, tags and form controls go pill-shaped. */
+.pa-chip, .pp-chip, .pa-tags > * { border-radius: 999px; }
+main :where(input:not([type=checkbox]):not([type=radio]):not([type=range]), select) { border-radius: 999px; }
+main textarea { border-radius: 1.1rem; }
+main :where(input, select, textarea):focus-visible { outline: 3px solid color-mix(in oklab, var(--pp-red) 45%, transparent); outline-offset: 2px; }
+
+/* Text links: butter underline that fills on hover. */
+.pp-textlink, .pp-prose a, main article p a {
+  text-decoration: none; background: linear-gradient(var(--pp-ochre), var(--pp-ochre)) 0 100% / 100% .35em no-repeat;
+  transition: background-size .18s; color: inherit; font-weight: 600;
+}
+.pp-textlink:hover, .pp-prose a:hover, main article p a:hover { background-size: 100% 100%; }
+
+/* Header: lighter rule, pill hover on nav links. */
+.pp-header { border-bottom: 1.5px solid var(--pp-hairline); }
+.pp-nav a { border-radius: 999px; padding-inline: .75rem; transition: background-color .15s; }
+.pp-nav a:hover, .pp-nav a[aria-current=page] { background: color-mix(in oklab, var(--pp-ochre) 70%, transparent); }
+
+/* Dark bands get a hint of the butter accent. */
+.pp-band { background: var(--pp-ink); background-image: radial-gradient(circle at 92% 8%, color-mix(in oklab, var(--pp-ochre) 22%, transparent) 0 7rem, transparent 7.1rem); }
+
+/* Footer: banner strip on top, butter column headings. */
+.pp-footer .pp-marquee { border-bottom: 1px dashed color-mix(in oklab, var(--pp-paper) 30%, transparent); }
+.pp-footer nav > p { color: var(--pp-ochre); opacity: 1; }
+
+/* Breadcrumbs read as a soft pill trail. */
+main nav[aria-label="Breadcrumb"] ol, main nav[aria-label="breadcrumb"] ol { display: inline-flex; flex-wrap: wrap; padding: .35rem .9rem; border-radius: 999px; background: var(--pp-paper-2); }
+main nav[aria-label="Breadcrumb"] ol { align-items: center; gap: .25rem; padding: 0 .9rem; }
+main a img, main figure img { border-radius: 1.25rem; }

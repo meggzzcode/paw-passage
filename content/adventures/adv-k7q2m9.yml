@@ -1,44 +1,107 @@
-id: "adv-k7q2m9"
-title: "The Great Toy Showdown"
-clue: "Four contenders enter. One walks away with a certificate."
-description: "Predict which toy your dog loves most, then let your dog cast the deciding vote. A tiny tournament with a bracket, a champion and a certificate worth framing."
+schema: 2
+id: adv-k7q2m9
+title: The Great Toy Showdown
+clue: Four contenders enter the ring, and only one makes the front page.
+reveal: Your dog is about to judge a tiny tournament of their own toys while you bet on the winner. Predict first, let your dog choose, then crown a champion and put it on a magazine cover.
+objective: Run a four-toy bracket where your dog's own choices pick the winner, then give the champion a magazine cover.
 instructions:
-  - "Pick four toys and write your own prediction of the winner on a slip of paper, folded away."
-  - "Set two toys on the floor a few steps apart and let your dog choose one by sniffing, nudging or picking it up. Note the pick."
-  - "Pair up the winners in a second round, then a final. Cheer for every choice, whichever toy it is."
-  - "Reveal your prediction, crown the Toy Champion and fill in the certificate."
-twist: "You bet against yourself: write a prediction first, and see whether you know your dog as well as you think."
-prep: "none"
-supplies: ["Four toys your dog already owns", "Paper and a pen"]
-minutesMin: 5
-minutesMax: 25
+  - "Pick four toys your dog already knows. Check each one: set aside any with loose parts, torn seams or stuffing coming out."
+  - Write your prediction of the champion on a scrap of paper, fold it and put it away. No telling your dog and no peeking.
+  - "Round one: put two toys on the floor about a metre apart, on a non-slip surface. Sit still and say nothing. Whichever toy your dog sniffs first, nudges, picks up or settles beside wins the match. Then run the second match the same way."
+  - "Round two: set the two winners down the same way for the final."
+  - If your dog ignores a pair, swap the toys' places once. If they still do not choose, call it a draw and let both through. Never nudge, point or hold a toy to steer them.
+  - Unfold your prediction, announce the champion with a flourish and play with it for a minute as the victory lap.
+twist: "You bet against yourself: a sealed prediction goes in first, so you find out whether you know your dog as well as you think."
+variations:
+  - "Short on time: skip round one and run a two-toy final only (about five minutes)."
+  - "For a dog who prefers to lie down: carry each toy to their bed and watch where their nose goes first."
+  - "For a lively dog: enter eight toys and let them have a short play break between rounds."
+  - "For a puppy: use two soft toys that are made for puppies and keep each match to a minute."
+completion: The final has a winner chosen by your dog and you have opened your prediction.
+photoIdea: Photograph your dog beside the champion toy against a plain wall, relaxed and not posed. That frame becomes the cover.
+memoryPrompt: Which toy won, and did it match your prediction?
+minutesMin: 10
+minutesMax: 20
+activeMinutes: 10
 costMin: 0
 costMax: 0
-setting: "indoor"
-environments: ["apartment", "house", "city", "countryside"]
-lifeStages: ["puppy", "adult", "senior"]
-energy: "gentle"
-mobilityFriendly: true
-crowd: "none"
-otherDogs: false
+prep: none
+supplies:
+  - Four toys your dog already owns
+  - Paper and a pen
+optionalSupplies:
+  - Phone for the cover photo
+requires:
+  - toys
+  - paper-and-pens
+substitutes:
+  - No fourth toy? Use a knotted clean sock or a rolled towel as a contender.
+transport: none
+reservation:
+  needed: false
+setting: indoor
+homes:
+  - apartment
+  - house-no-yard
+  - house-with-yard
+space: small-indoor
+places:
+  - home
 seasons: []
+avoidWeather: []
+lifeStages:
+  - puppy
+  - adult
+  - senior
+personalities:
+  - playful
+  - curious
+sizes: []
+energy: gentle
+dogMobility: low
+ownerMobility: seated
+stepFree: true
+crowd: none
+strangers: false
+otherDogs: false
+noise: quiet
+food: false
+water: none
 safety:
-  - "Use only toys that are in good shape, and put away any that are chewed apart or have loose pieces."
-  - "Stop whenever your dog loses interest. A pick does not have to be completed."
-variations:
-  - "Short on time: run a two-toy final only, about five minutes."
-  - "For a dog who prefers to lie down: bring each toy to their bed and watch where their nose goes first."
-memoryPrompt: "Which toy won, and did it match your prediction?"
-keepsake: "certificate"
+  - Use only toys in good shape and put away any that are chewed apart or have loose pieces.
+  - Stop whenever your dog loses interest. A choice never has to be completed.
+  - If more than one dog lives with you, run it one dog at a time with the other dog elsewhere, so no toy is guarded.
+activityTypes:
+  - play-and-games
+  - celebrations
 collections:
-  [
-    "five-minute-moments",
-    "home-sweet-home",
-    "rainy-day-club",
-    "apartment-adventures",
-    "adventures-without-spending-a-dollar",
-  ]
-stamps: ["first-adventure", "playtime-champion"]
-access: "free"
-status: "published"
+  - five-minute-wonders
+  - rainy-day-club
+  - the-playful-pup
+  - home-sweet-home
+stamps:
+  - first-adventure
+  - playtime-champion
+achievements: []
+keepsake:
+  family: magazine-cover
+  theme: toy-champion
+  headline: OFFICIAL TOY CHAMPION
+  subhead: Chosen by the dog, announced by you
+access: free
+status: published
 relatedGuides: []
+affiliateProducts: []
+research:
+  - label: "Dogs Trust: enrichment activities for dogs"
+    url: https://www.dogstrust.org.uk/dog-advice/life-with-your-dog/enrichment/enrichment-activities-for-dogs
+  - label: "VCA Animal Hospitals: enrichment and foraging toys"
+    url: https://vcahospitals.com/know-your-pet/enrichment
+review:
+  ownerAppeal: 9
+  dogEnjoyment: 8
+  originality: 8
+  adventureFactor: 7
+  practicality: 10
+  memoryValue: 9
+  reviewedOn: 2026-11-26

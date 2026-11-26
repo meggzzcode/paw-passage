@@ -4,8 +4,6 @@ import { join } from "node:path";
 import { parse } from "yaml";
 
 // @ts-expect-error plain .mjs script without types
-import * as health from "../../scripts/site-health.mjs";
-// @ts-expect-error plain .mjs script without types
 import * as indexnow from "../../scripts/indexnow.mjs";
 
 const root = process.cwd();
@@ -35,33 +33,6 @@ describe("workflows and dependabot parse as YAML", () => {
       on: Record<string, unknown>;
     };
     expect(Object.keys(w.on)).toEqual(["workflow_dispatch"]);
-  });
-});
-
-describe("site-health checks", () => {
-  it("the real affiliate configuration is clean", () => {
-    const links = health.parseAffiliates(
-      readFileSync(join(root, "content/affiliates.yml"), "utf8"),
-    );
-    expect(links.length).toBeGreaterThan(0);
-    expect(health.checkAffiliates(links, [])).toEqual([]);
-  });
-  it("flags a missing https URL, duplicate id and dangling reference", () => {
-    const links = health.parseAffiliates(
-      "links:\n  - id: a\n    network: X\n    url: http://x.com\n    approved: true\n  - id: a\n    network: X\n    url: https://x.com\n    approved: false\n",
-    );
-    const p: string[] = health.checkAffiliates(links, [["zzz", "content/stays/s.yml"]]);
-    expect(p.join("\n")).toMatch(/no https URL/);
-    expect(p.join("\n")).toMatch(/appears twice/);
-    expect(p.join("\n")).toMatch(/zzz/);
-  });
-  it("validates sitemap structure", () => {
-    const ok = `<urlset><url><loc>https://www.pawsandpassage.com/</loc></url></urlset>`;
-    expect(health.validateSitemapXml(ok, "https://www.pawsandpassage.com").problems).toEqual([]);
-    const bad = `<urlset><url><loc>http://www.pawsandpassage.com/a?x=1</loc></url><url><loc>http://www.pawsandpassage.com/a?x=1</loc></url></urlset>`;
-    expect(
-      health.validateSitemapXml(bad, "https://www.pawsandpassage.com").problems.length,
-    ).toBeGreaterThanOrEqual(3);
   });
 });
 

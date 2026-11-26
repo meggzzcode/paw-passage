@@ -1,65 +1,161 @@
-// Adventure content rules. Pure (no "@/" imports) so the build and the tests can load it.
+// Adventure content rules, schema version 2. Pure (no "@/" imports) so the build, scripts and tests can load it.
 // The adventure ID is permanent: it never changes when a title, URL or collection changes.
+// Every classification below is a controlled list, never free-text tags, so filtering and eligibility stay exact.
 import { z } from "zod";
 
+export const SCHEMA_VERSION = 2;
 const nonEmpty = z.string().trim().min(1, "must not be empty");
+const slug = z.string().regex(/^[a-z0-9-]+$/);
 
+export const ACTIVITY_TYPES = [
+  "play-and-games",
+  "food-and-treats",
+  "scent-and-discovery",
+  "problem-solving",
+  "creative-projects",
+  "photography",
+  "outdoor-exploration",
+  "travel",
+  "water",
+  "relaxation",
+  "celebrations",
+  "memory-making",
+] as const;
 export const LIFE_STAGES = ["puppy", "adult", "senior"] as const;
+export const SIZES = ["small", "medium", "large"] as const;
 export const SETTINGS = ["indoor", "outdoor", "either"] as const;
 export const ENERGY = ["gentle", "moderate", "lively"] as const;
 export const CROWD = ["none", "some", "busy"] as const;
+export const NOISE = ["quiet", "some", "loud"] as const;
 export const SEASONS = ["spring", "summer", "autumn", "winter"] as const;
-export const ENVIRONMENTS = [
-  "apartment",
-  "house",
-  "city",
-  "countryside",
-  "beach",
-  "mountains",
-  "road-trip",
+export const HOMES = ["apartment", "house-no-yard", "house-with-yard"] as const;
+export const PLACES = ["home", "city", "countryside", "beach", "mountains", "road-trip"] as const;
+export const SPACE = ["small-indoor", "a-room", "yard", "none"] as const; // none = no particular space needed
+export const TRANSPORT = ["none", "walkable", "car"] as const;
+export const DOG_MOBILITY = ["low", "moderate", "high"] as const; // low = fine for a dog who moves slowly or not far
+export const OWNER_MOBILITY = ["seated", "minimal-walking", "short-walk", "long-walk"] as const;
+export const WATER = ["none", "near-water", "in-water"] as const;
+export const AVOID_WEATHER = ["rain", "heat", "cold"] as const; // conditions in which this should not be done
+export const SUPPLY_KEYS = [
+  "toys",
+  "treats",
+  "blanket",
+  "camera-phone",
+  "paper-and-pens",
+  "picnic-gear",
+  "bake-ingredients",
+  "towels",
+  "household-items",
+  "cardboard-boxes",
+  "leash-and-harness",
+  "car",
 ] as const;
-export const KEEPSAKES = [
-  "postcard",
+export const KEEPSAKE_FAMILIES = [
+  "travel-postcard",
   "magazine-cover",
-  "then-and-now",
-  "milestone-card",
+  "id-card",
+  "trading-card",
   "certificate",
-  "seasonal-recap",
+  "seasonal-frame",
+  "event-ticket",
+  "then-and-now",
   "collage",
-  "collection-complete",
+  "poster",
 ] as const;
+
+const researchRef = z.object({
+  label: nonEmpty.max(120),
+  url: z.string().url().startsWith("https://"),
+});
+const score = z.number().int().min(1).max(10);
 
 export const adventureSchema = z
   .object({
+    schema: z.literal(2),
     id: z.string().regex(/^adv-[a-z0-9]{6}$/, "must look like adv-k3m9x2 and never be edited"),
     title: nonEmpty.max(70),
-    clue: nonEmpty.max(140), // the mystery line shown before the reveal; must not give the title away
-    description: nonEmpty.max(300),
-    instructions: z.array(nonEmpty).min(2).max(8),
+    clue: nonEmpty.max(140), // mystery line shown before the reveal; must not give the title away
+    reveal: nonEmpty.max(300), // the introduction shown after the reveal
+    objective: nonEmpty.max(200),
+    instructions: z.array(nonEmpty).min(3).max(9),
     twist: nonEmpty.max(220),
-    prep: z.enum(["none", "light", "some"]),
-    supplies: z.array(nonEmpty).max(10).default([]),
+    variations: z.array(nonEmpty).max(4).default([]), // easier or more accessible versions
+    completion: nonEmpty.max(200), // the natural point at which it counts as done
+    photoIdea: nonEmpty.max(200).optional(),
+    memoryPrompt: nonEmpty.max(160),
+
+    // time and money
     minutesMin: z.number().int().min(1),
     minutesMax: z.number().int().min(1),
+    activeMinutes: z.number().int().min(1).optional(), // time the dog is actively involved
     costMin: z.number().min(0),
     costMax: z.number().min(0),
+    prep: z.enum(["none", "light", "some"]),
+
+    // supplies and logistics
+    supplies: z.array(nonEmpty).max(10).default([]),
+    optionalSupplies: z.array(nonEmpty).max(8).default([]),
+    substitutes: z.array(nonEmpty).max(6).default([]), // household stand-ins for supplies the owner may not have
+    requires: z.array(z.enum(SUPPLY_KEYS)).default([]), // controlled keys for the "what I have" filter
+    transport: z.enum(TRANSPORT),
+    reservation: z
+      .object({ needed: z.boolean(), note: nonEmpty.max(160).optional() })
+      .default({ needed: false }),
+
+    // where
     setting: z.enum(SETTINGS),
-    environments: z.array(z.enum(ENVIRONMENTS)).min(1),
-    lifeStages: z.array(z.enum(LIFE_STAGES)).min(1),
-    energy: z.enum(ENERGY),
-    mobilityFriendly: z.boolean(), // true = can be done at a very gentle pace or in place
-    crowd: z.enum(CROWD), // how many other people are around
-    otherDogs: z.boolean(), // true = other dogs are likely to be near
+    homes: z.array(z.enum(HOMES)).min(1),
+    space: z.enum(SPACE),
+    places: z.array(z.enum(PLACES)).min(1),
     seasons: z.array(z.enum(SEASONS)).default([]), // empty = any season
-    safety: z.array(nonEmpty).min(1).max(5), // at least one dog-welfare line, no medical claims
-    variations: z.array(nonEmpty).max(4).default([]),
-    memoryPrompt: nonEmpty.max(160),
-    keepsake: z.enum(KEEPSAKES),
-    collections: z.array(z.string().regex(/^[a-z0-9-]+$/)).min(1),
-    stamps: z.array(z.string().regex(/^[a-z0-9-]+$/)).default([]),
+    avoidWeather: z.array(z.enum(AVOID_WEATHER)).default([]),
+
+    // who it suits (hard eligibility inputs)
+    lifeStages: z.array(z.enum(LIFE_STAGES)).min(1),
+    sizes: z.array(z.enum(SIZES)).default([]), // empty = any size
+    energy: z.enum(ENERGY),
+    personalities: z
+      .array(z.enum(["curious", "playful", "cozy", "gentle", "adventurous"]))
+      .default([]), // who tends to enjoy it; a hint, never eligibility
+    dogMobility: z.enum(DOG_MOBILITY),
+    ownerMobility: z.enum(OWNER_MOBILITY),
+    stepFree: z.boolean(), // true = no steps or uneven ground needed
+    crowd: z.enum(CROWD),
+    strangers: z.boolean(), // true = meets unfamiliar people
+    otherDogs: z.boolean(), // true = other dogs are likely to be near
+    noise: z.enum(NOISE),
+    food: z.boolean(), // true = food or treats are part of it
+    dietNotes: nonEmpty.max(200).optional(),
+    water: z.enum(WATER),
+    safety: z.array(nonEmpty).min(1).max(6), // dog-welfare lines; never medical claims
+
+    // classification and rewards
+    activityTypes: z.array(z.enum(ACTIVITY_TYPES)).min(1).max(3),
+    collections: z.array(slug).min(1),
+    stamps: z.array(slug).default([]),
+    achievements: z.array(slug).default([]),
+    keepsake: z.object({
+      family: z.enum(KEEPSAKE_FAMILIES),
+      theme: slug, // names the variant of the family: palette, wording and ornaments are chosen from it
+      headline: nonEmpty.max(40), // the big words on the artwork, e.g. "TOY CHAMPION"
+      subhead: nonEmpty.max(60).optional(),
+    }),
     access: z.enum(["free", "premium"]),
     status: z.enum(["draft", "published"]),
-    relatedGuides: z.array(z.string().regex(/^[a-z0-9-]+$/)).default([]),
+    relatedGuides: z.array(slug).default([]),
+    affiliateProducts: z.array(slug).default([]), // product ids from content/products.yml; never required to finish
+    research: z.array(researchRef).default([]),
+    review: z
+      .object({
+        ownerAppeal: score,
+        dogEnjoyment: score,
+        originality: score,
+        adventureFactor: score,
+        practicality: score,
+        memoryValue: score,
+        reviewedOn: nonEmpty,
+      })
+      .optional(), // internal editorial scores, never shown to customers or described as customer ratings
   })
   .superRefine((a, ctx) => {
     if (a.minutesMax < a.minutesMin)
@@ -73,9 +169,53 @@ export const adventureSchema = z
     const t = a.title.toLowerCase();
     if (t.length > 4 && a.clue.toLowerCase().includes(t))
       ctx.addIssue({ code: "custom", path: ["clue"], message: "must not contain the title" });
+    if (a.transport === "car" && !a.requires.includes("car"))
+      ctx.addIssue({
+        code: "custom",
+        path: ["requires"],
+        message: "a car adventure must list 'car' in requires",
+      });
+    if (a.food && a.activityTypes.every((t2) => t2 !== "food-and-treats") && !a.dietNotes)
+      ctx.addIssue({
+        code: "custom",
+        path: ["dietNotes"],
+        message: "food adventures need dietNotes",
+      });
+    if (a.reservation.needed && !a.reservation.note)
+      ctx.addIssue({
+        code: "custom",
+        path: ["reservation"],
+        message: "needs a note saying what to book",
+      });
+    if (a.water === "in-water" && !a.safety.some((s) => /supervis|check/i.test(s)))
+      ctx.addIssue({
+        code: "custom",
+        path: ["safety"],
+        message: "water adventures need a supervise/check safety line",
+      });
+    if (a.review) {
+      const vals = [
+        a.review.ownerAppeal,
+        a.review.dogEnjoyment,
+        a.review.originality,
+        a.review.adventureFactor,
+        a.review.practicality,
+        a.review.memoryValue,
+      ];
+      if (
+        a.status === "published" &&
+        (Math.min(...vals) < 7 || vals.reduce((x, y) => x + y, 0) / 6 < 8)
+      )
+        ctx.addIssue({
+          code: "custom",
+          path: ["review"],
+          message: "a published adventure needs an average of at least 8 and no score below 7",
+        });
+    }
   });
 
 export type Adventure = z.infer<typeof adventureSchema>;
+export type ActivityType = (typeof ACTIVITY_TYPES)[number];
 
 /** Checks a whole library: unique IDs and every collection/stamp reference is defined. Returns messages; empty = fine. */
 export function validateLibrary(

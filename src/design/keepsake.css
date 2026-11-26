@@ -1,0 +1,162 @@
+/* Keepsake maker (Keepsake.tsx, PhotoEditor.tsx). Uses the --pp-* tokens. Not imported anywhere yet: the integrator adds the import. */
+.kp {
+  display: grid;
+  gap: 1.25rem;
+}
+.kp-file {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+.kp-step {
+  display: grid;
+  gap: 0.7rem;
+  padding: 1rem;
+  background: var(--pp-card);
+  border: 2px solid var(--pp-line);
+  border-radius: var(--pp-radius);
+}
+.kp-h {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--pp-ink);
+}
+.kp-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  align-items: center;
+}
+.kp-row .pp-btn,
+.kp-controls .pp-btn {
+  min-height: 44px;
+}
+.kp-slots {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.8rem;
+}
+.kp-slot {
+  display: grid;
+  gap: 0.4rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px dashed var(--pp-hairline);
+}
+.kp-slot:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+.kp-editor {
+  display: grid;
+  gap: 0.8rem;
+  justify-items: center;
+}
+.kp-viewport {
+  width: 100%;
+  max-width: 26rem;
+  height: auto;
+  border: 3px solid var(--pp-line);
+  border-radius: var(--pp-radius);
+  background: var(--pp-ink);
+  cursor: grab;
+  touch-action: none;
+}
+.kp-viewport:active {
+  cursor: grabbing;
+}
+.kp-viewport:focus-visible {
+  outline: 3px solid var(--pp-focus);
+  outline-offset: 3px;
+}
+.kp-controls {
+  display: grid;
+  gap: 0.35rem;
+  width: 100%;
+  max-width: 26rem;
+}
+.kp-controls label {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--pp-ink);
+}
+.kp-controls input[type="range"] {
+  width: 100%;
+  min-height: 44px;
+  accent-color: var(--pp-red);
+}
+.kp-sizes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+.kp-sizes legend {
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0;
+  margin-bottom: 0.35rem;
+}
+.kp-size {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0.4rem 0.9rem;
+  border: 2px solid var(--pp-line);
+  border-radius: var(--pp-radius);
+  background: var(--pp-paper);
+  color: var(--pp-ink);
+  cursor: pointer;
+}
+.kp-size input {
+  position: absolute;
+  opacity: 0;
+  inset: 0;
+  margin: 0;
+  cursor: pointer;
+}
+.kp-size small {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--pp-muted);
+}
+.kp-size-on {
+  background: var(--pp-ink);
+  color: var(--pp-paper);
+  box-shadow: var(--pp-shadow);
+}
+.kp-size-on small {
+  color: var(--pp-paper);
+}
+.kp-size:focus-within {
+  outline: 3px solid var(--pp-focus);
+  outline-offset: 2px;
+}
+.kp-preview {
+  width: 100%;
+  max-width: 24rem;
+  height: auto;
+  justify-self: center;
+  border: 2px solid var(--pp-line);
+  border-radius: var(--pp-radius);
+  background: var(--pp-paper-2);
+  box-shadow: var(--pp-shadow);
+}
+.kp-status {
+  min-height: 1.4em;
+}
+@media (prefers-reduced-motion: reduce) {
+  .kp *,
+  .kp *::before,
+  .kp *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}

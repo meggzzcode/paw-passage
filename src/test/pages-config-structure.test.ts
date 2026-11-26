@@ -37,9 +37,12 @@ describe(".pages.yml structure", () => {
       expect(statSync(c.path).isDirectory(), c.name).toBe(c.type === "collection");
       expect(["collection", "file"]).toContain(c.type);
     }
-    expect(cfg.content.map((c) => c.name).sort()).toEqual(
-      ["affiliates", "guides", "packing", "places", "products", "settings", "stays"].sort(),
+    const have = cfg.content.map((c) => c.name);
+    expect(have).toEqual(
+      expect.arrayContaining(["affiliates", "guides", "packing", "products", "settings"]),
     );
+    for (const retired of ["stays", "places", "towns", "destinations", "policies"])
+      expect(have, retired).not.toContain(retired);
   });
 
   it("field names are unique inside each form level", () => {
@@ -61,19 +64,6 @@ describe(".pages.yml structure", () => {
     expect(list.fields!.map((f) => f.name).sort()).toEqual(
       Object.keys(productRecordObject.shape).sort(),
     );
-  });
-
-  it("the stay directory mode drop-down offers exactly the allowed settings", async () => {
-    const { settingsSchema } = await import("../content/schema");
-    const s = cfg.content.find((c) => c.name === "settings")!;
-    const f = s.fields.find((x) => x.name === "stayDirectoryMode") as unknown as {
-      options: { values: { value: string }[] };
-    };
-    expect(f.options.values.map((v) => v.value).sort()).toEqual([
-      "affiliate-only",
-      "public-sources",
-    ]);
-    expect(settingsSchema.parse({}).stayDirectoryMode).toBe("affiliate-only");
   });
 });
 

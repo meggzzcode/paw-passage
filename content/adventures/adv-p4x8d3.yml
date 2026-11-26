@@ -1,37 +1,122 @@
-id: "adv-p4x8d3"
-title: "The Little Picnic Club"
-clue: "A tiny party for two, with a theme, a blanket and a very serious guest."
-description: "Hold a small themed picnic where the dog's colour, favourite toy or name sets the theme. Spread a blanket somewhere pleasant, then send a picnic postcard to your future self."
+schema: 2
+id: adv-p4x8d3
+title: The Little Picnic Club
+clue: A tiny party for two, with a blanket for a ballroom and a very serious guest.
+reveal: Hold a small picnic with a theme taken from your dog. Spread a blanket somewhere quiet, settle in at their pace, and write a picnic postcard home before you leave the blanket.
+objective: Spend a relaxed stretch on a blanket together under a theme taken from your dog, and write a picnic postcard.
 instructions:
-  - "Choose a theme from your dog: their coat colour, a favourite toy or the way they greet you at the door."
-  - "Pack a blanket, a water bowl, your own snack and one small prop that matches the theme."
-  - "Pick a quiet spot at a yard, patio, park edge or balcony and lay out the blanket with the prop in the middle."
-  - "Settle in, let your dog explore at their own speed and write a short picnic postcard together."
-twist: "The theme comes from your dog, so the whole picnic is decorated around who they are."
-prep: "light"
-supplies: ["Blanket", "Water bowl and fresh water", "Your own snack", "Postcard or paper"]
-minutesMin: 30
-minutesMax: 90
-costMin: 0
-costMax: 12
-setting: "outdoor"
-environments: ["house", "city", "countryside", "mountains"]
-lifeStages: ["puppy", "adult", "senior"]
-energy: "moderate"
-mobilityFriendly: true
-crowd: "some"
-otherDogs: true
-seasons: ["spring", "summer", "autumn"]
-safety:
-  - "Check the weather and the ground first, and keep your dog out of strong sun or on hot surfaces. Bring shade and water."
-  - "Keep your own food out of reach and check that plants or items on the ground are not something your dog should chew."
+  - "Choose a theme from your dog: their coat colour, a favourite toy, the way they greet you or the sound of their name. Choose one prop that fits, such as a red cloth for a red dog or the favourite toy itself."
+  - "Choose a quiet spot where your dog is already relaxed: your yard, a patio, a balcony or a quiet park corner away from other dogs. Check the ground for hot surfaces, sharp bits and plants."
+  - Pack a blanket, a bowl and fresh water, shade if it is sunny, your own snack and the prop.
+  - Lay the blanket with the prop in the middle and let your dog arrive in their own time. They can explore, sit on it or ignore it, and the picnic works every way.
+  - Settle in for at least ten minutes. Keep your own food on the far side of the blanket, out of reach of your dog's nose, and give the picnic a club name such as The Red Dog Social.
+  - Write a postcard to your future selves with the theme, the weather and what your dog did first on the blanket.
+twist: The whole picnic is decorated around who your dog is, and the postcard is written before you leave the blanket.
 variations:
-  - "Mobility-friendly: picnic on a patio, porch or balcony, or in the car park beside the car with the door open."
-  - "If other dogs make your dog uneasy, choose a quiet corner or your own yard."
-memoryPrompt: "What was the theme, and what did your dog do first on the blanket?"
-keepsake: "postcard"
-collections: ["weekend-together", "city-explorers"]
-stamps: ["first-adventure", "sunshine-seeker", "seasonal-explorer"]
-access: "free"
-status: "published"
+  - "Rain version: lay the blanket on the living-room floor and open a window."
+  - "For a nervous dog: use your own yard or balcony and keep it to ten minutes."
+  - "For a lively dog: bring a favourite chew toy to settle with."
+  - "For limited mobility: picnic from a chair on a porch or patio, with the blanket beside you."
+completion: You have spent about ten minutes on the blanket together and written the postcard.
+photoIdea: Your dog on or beside the blanket with the theme prop, taken from their eye level.
+memoryPrompt: What was the theme, and what did your dog do first on the blanket?
+minutesMin: 45
+minutesMax: 90
+activeMinutes: 20
+costMin: 0
+costMax: 20
+prep: light
+supplies:
+  - Blanket
+  - Water bowl and fresh water
+  - Your own snack
+  - A postcard or paper
+  - One small themed prop
+optionalSupplies:
+  - Shade umbrella
+  - Folding chair
+  - Picnic basket
+requires:
+  - blanket
+  - picnic-gear
+  - paper-and-pens
+substitutes:
+  - No picnic blanket? A bed sheet or a large towel works.
+  - No basket? A tote bag will do.
+transport: none
+reservation:
+  needed: false
+setting: outdoor
+homes:
+  - apartment
+  - house-no-yard
+  - house-with-yard
+space: none
+places:
+  - home
+  - city
+  - countryside
+seasons:
+  - spring
+  - summer
+  - autumn
+avoidWeather:
+  - rain
+  - heat
+  - cold
+lifeStages:
+  - puppy
+  - adult
+  - senior
+personalities:
+  - cozy
+  - gentle
+sizes: []
+energy: gentle
+dogMobility: low
+ownerMobility: minimal-walking
+stepFree: false
+crowd: none
+strangers: false
+otherDogs: false
+noise: quiet
+food: false
+water: none
+safety:
+  - Check the weather and the ground first. Keep your dog out of strong sun and off hot surfaces, and bring shade and water.
+  - Keep your own food out of reach and check that nothing on the ground is something your dog should not chew.
+  - Choose a spot where your dog can move away from the blanket whenever they like.
+  - Leave at once if other dogs or crowds turn up and your dog seems unsettled.
+activityTypes:
+  - relaxation
+  - memory-making
+collections:
+  - doggy-date-club
+  - taste-and-treat
+  - the-great-outdoors
+  - seasons-together
+stamps:
+  - first-adventure
+  - sunshine-seeker
+  - seasonal-explorer
+achievements: []
+keepsake:
+  family: travel-postcard
+  theme: picnic-postcard
+  headline: GREETINGS FROM THE PICNIC
+  subhead: A party for two. Wish you were here
+access: free
+status: published
 relatedGuides: []
+affiliateProducts: []
+research:
+  - label: "Dogs Trust: enrichment activities for dogs"
+    url: https://www.dogstrust.org.uk/dog-advice/life-with-your-dog/enrichment/enrichment-activities-for-dogs
+review:
+  ownerAppeal: 8
+  dogEnjoyment: 8
+  originality: 7
+  adventureFactor: 8
+  practicality: 8
+  memoryValue: 9
+  reviewedOn: 2026-11-26

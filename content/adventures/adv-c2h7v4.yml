@@ -1,45 +1,102 @@
-id: "adv-c2h7v4"
-title: "The Paw-trait Studio"
-clue: "Soft window light, a plain wall and a face made for the front page."
-description: "Set up a tiny photo corner beside a window and take a relaxed portrait of your dog in natural light. Turn the best shot into a make-believe magazine cover."
+schema: 2
+id: adv-c2h7v4
+title: The Paw-trait Studio
+clue: Soft window light, a plain wall and a face made for the front page.
+reveal: Set up a tiny photo corner beside a window and take relaxed portraits of your dog in natural light. Pick the frame that looks most like them and turn it into a make-believe magazine cover.
+objective: Take a set of relaxed window-light portraits and choose one for a magazine cover.
 instructions:
-  - "Find the brightest window in your home and place your dog's bed or blanket where the light falls gently."
-  - "Turn off the flash, sit low at your dog's eye level and take photos while they relax. Use a quiet word or toy squeak for attention if they like it."
-  - "Pick the shot where their eyes or ears look most like them."
-  - "Add a magazine title, a funny headline and one line about your dog on the cover."
-twist: "No props, no posing: wait for the natural moments and let your dog be the cover star."
-prep: "none"
-supplies: ["Phone or camera", "Blanket or bed"]
-minutesMin: 5
-minutesMax: 20
+  - Find the brightest window with soft, indirect light and a plain wall or curtain behind. Lay your dog's bed or blanket where the light falls gently.
+  - Turn the flash off and turn the phone's shutter sound down. Sit or lie low, at your dog's eye level, a couple of steps back.
+  - Do not pose or place your dog. Take photos over about ten minutes while they relax, sniff, stretch or watch the window. A soft word or a quiet squeak is allowed if they enjoy it.
+  - Pick the three frames where their eyes, ears or whiskers look most like them, then choose one as the cover.
+  - Give the cover a magazine name, a silly headline and one line about the exclusive inside.
+twist: "Your dog is the art director: only moments they offer count, so there are no props, no poses and no second takes."
+variations:
+  - "For a dog who will not stay still: photograph them while they nap, with the camera quiet."
+  - "No bright window: use a lamp with a soft shade instead of overhead light."
+  - "For a puppy: take just a few frames in a minute or two and try again another day."
+completion: You have chosen a cover shot and given it a headline.
+photoIdea: "The cover itself: a candid portrait at your dog's eye level."
+memoryPrompt: What was the headline of your dog's cover?
+minutesMin: 20
+minutesMax: 30
+activeMinutes: 10
 costMin: 0
 costMax: 0
-setting: "indoor"
-environments: ["apartment", "house", "city", "countryside"]
-lifeStages: ["puppy", "adult", "senior"]
-energy: "gentle"
-mobilityFriendly: true
-crowd: "none"
-otherDogs: false
+prep: none
+supplies:
+  - Phone or camera
+  - Blanket or bed
+optionalSupplies: []
+requires:
+  - camera-phone
+  - blanket
+substitutes:
+  - No spare blanket? A folded towel or a clean sheet works.
+transport: none
+reservation:
+  needed: false
+setting: indoor
+homes:
+  - apartment
+  - house-no-yard
+  - house-with-yard
+space: small-indoor
+places:
+  - home
 seasons: []
+avoidWeather: []
+lifeStages:
+  - puppy
+  - adult
+  - senior
+personalities:
+  - gentle
+  - cozy
+sizes: []
+energy: gentle
+dogMobility: low
+ownerMobility: seated
+stepFree: true
+crowd: none
+strangers: false
+otherDogs: false
+noise: quiet
+food: false
+water: none
 safety:
-  - "Never force a pose or hold your dog in place. Take photos only while they are relaxed, and stop if they look uneasy."
-  - "Skip the flash, which can startle some dogs."
-variations:
-  - "For a dog who will not sit still, photograph them while they nap and keep the camera quiet."
-  - "No window: use a lamp with a soft shade instead of overhead light."
-memoryPrompt: "What was the headline of your dog's cover?"
-keepsake: "magazine-cover"
+  - Never force a pose or hold your dog in place. Take photos only while they are relaxed and stop if they look uneasy.
+  - Skip the flash, which can startle some dogs.
+activityTypes:
+  - photography
+  - creative-projects
 collections:
-  [
-    "five-minute-moments",
-    "home-sweet-home",
-    "the-golden-years",
-    "apartment-adventures",
-    "adventures-without-spending-a-dollar",
-    "the-cozy-companion",
-  ]
-stamps: ["first-adventure", "sunshine-seeker"]
-access: "free"
-status: "published"
+  - creative-companions
+  - rainy-day-club
+  - home-sweet-home
+  - our-story
+stamps:
+  - first-adventure
+  - sunshine-seeker
+  - cozy-companion
+achievements: []
+keepsake:
+  family: magazine-cover
+  theme: editorial-cover
+  headline: COVER STAR
+  subhead: Exclusive portrait. No flash
+access: free
+status: published
 relatedGuides: []
+affiliateProducts: []
+research:
+  - label: "Dogs Trust: enrichment activities for dogs"
+    url: https://www.dogstrust.org.uk/dog-advice/life-with-your-dog/enrichment/enrichment-activities-for-dogs
+review:
+  ownerAppeal: 9
+  dogEnjoyment: 8
+  originality: 7
+  adventureFactor: 7
+  practicality: 9
+  memoryValue: 9
+  reviewedOn: 2026-11-26

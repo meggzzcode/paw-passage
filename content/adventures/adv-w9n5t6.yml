@@ -1,37 +1,108 @@
-id: "adv-w9n5t6"
-title: "Tourists in Our Own Town"
-clue: "You live here, but today you are on vacation."
-description: "Act like visitors in your own neighbourhood. Choose three sights a tourist would photograph, visit them at your dog's pace and send home a postcard from the trip."
+schema: 2
+id: adv-w9n5t6
+title: Tourists in Our Own Town
+clue: You live here, but today you are on vacation.
+reveal: Act like visitors in your own neighborhood. Choose three sights a tourist would photograph, visit them at your dog's pace and send home a postcard from the trip. Your dog is the local guide.
+objective: Visit three sights near home like tourists and write a postcard about the trip.
 instructions:
-  - "Pick three places you pass every day but never stop at: a mural, a fountain, a quirky shop front, an old tree."
-  - "Make a mini itinerary of the three stops on paper and give your dog a tourist name."
-  - "Visit each stop, pausing for a photo and a few slow sniffs. Skip a stop if your dog is tired or the area is crowded."
-  - "Write a postcard to yourselves with the best moment of the trip."
-twist: "You will see your own street through the eyes of a tourist, with a dog who is the real local guide."
-prep: "light"
-supplies: ["Phone for photos", "Paper or a postcard", "Leash and bags"]
-minutesMin: 30
-minutesMax: 75
-costMin: 0
-costMax: 5
-setting: "outdoor"
-environments: ["city", "countryside", "road-trip"]
-lifeStages: ["puppy", "adult", "senior"]
-energy: "moderate"
-mobilityFriendly: false
-crowd: "busy"
-otherDogs: true
-seasons: []
-safety:
-  - "Keep your dog on a leash and check pavement temperature with your hand before walking in hot or icy weather."
-  - "Leave any stop where your dog seems stressed. The itinerary is optional."
+  - "Pick three places a tourist would photograph: a mural, a fountain, a shop front, an old tree, a bench with a view. Choose a corner of town you know less well if you like, but keep all three within a short, comfortable walk and check that none needs steep kerbs or stairs."
+  - Write the itinerary on a card and give your dog a tourist name, such as Signora Biscuit. A name only, with no costume.
+  - "Walk to the first stop like a visitor: slow down, look up and read the signs. Let your dog sniff for as long as they like."
+  - At each stop take one tourist photo and write down what a visitor would notice that you never have.
+  - Skip a stop if it is crowded, loud or your dog is tired. Two stops out of three still counts.
+  - Back home or on a bench, write the postcard. Name the Top Sight, which is the stop where your dog sniffed longest.
+twist: "You are the visitors and your dog is the local expert: the stop they sniff longest is crowned Top Sight of the trip."
 variations:
-  - "Gentle version: choose three sights on one block, or take the tour by car with short stops."
-  - "On a road trip, run the same game at a rest stop or in a town you are passing through."
-memoryPrompt: "Which of the three sights surprised you most?"
-keepsake: "postcard"
-collections: ["weekend-together", "city-explorers"]
-stamps: ["first-adventure", "city-explorer", "road-tripper", "seasonal-explorer"]
-access: "free"
-status: "published"
+  - "Gentle: choose three sights on one block."
+  - "From home: tour three views from your balcony or front window."
+  - "On a road trip: run the same game at a rest stop or in a town you pass through."
+completion: You have visited two or three stops and written the postcard.
+photoIdea: A tourist photo at the Top Sight with your dog in the frame, relaxed and not posed.
+memoryPrompt: Which of the three sights surprised you most?
+minutesMin: 45
+minutesMax: 120
+activeMinutes: 30
+costMin: 0
+costMax: 10
+prep: light
+supplies:
+  - Phone for photos
+  - Card or postcard
+  - A pen
+  - Leash and bags
+optionalSupplies:
+  - A real postcard and stamp
+requires:
+  - camera-phone
+  - paper-and-pens
+  - leash-and-harness
+substitutes:
+  - No postcard? Fold a piece of card in half and draw a stamp on it.
+transport: walkable
+reservation:
+  needed: false
+setting: outdoor
+homes:
+  - apartment
+  - house-no-yard
+  - house-with-yard
+space: none
+places:
+  - city
+  - countryside
+seasons: []
+avoidWeather:
+  - heat
+lifeStages:
+  - puppy
+  - adult
+  - senior
+personalities:
+  - curious
+  - adventurous
+sizes: []
+energy: moderate
+dogMobility: moderate
+ownerMobility: short-walk
+stepFree: false
+crowd: some
+strangers: true
+otherDogs: true
+noise: some
+food: false
+water: none
+safety:
+  - Keep your dog on a leash and check the pavement with your hand before walking in hot or icy weather.
+  - Leave any stop where your dog seems stressed. The itinerary is optional.
+activityTypes:
+  - outdoor-exploration
+  - travel
+  - photography
+collections:
+  - the-curious-explorer
+  - city-explorers
+stamps:
+  - first-adventure
+  - city-explorer
+  - road-tripper
+achievements: []
+keepsake:
+  family: travel-postcard
+  theme: hometown-postcard
+  headline: GREETINGS FROM OUR TOWN
+  subhead: Wish you were here
+access: free
+status: published
 relatedGuides: []
+affiliateProducts: []
+research:
+  - label: "Cornell Riney Canine Health Center: canine enrichment ideas"
+    url: https://riney.vet.cornell.edu/member-benefits-health-tips/canine-enrichment-ideas
+review:
+  ownerAppeal: 8
+  dogEnjoyment: 8
+  originality: 8
+  adventureFactor: 8
+  practicality: 8
+  memoryValue: 8
+  reviewedOn: 2026-11-26

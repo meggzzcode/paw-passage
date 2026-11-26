@@ -1,7 +1,5 @@
 import { describe, expect, it } from "vitest";
 import { allGuides } from "@/content/guides";
-import { dogTypes } from "@/content/dog-types";
-import { destinations } from "@/content/destinations";
 import { pageHead } from "@/lib/seo";
 import { Route as home } from "@/routes/index";
 import { Route as about } from "@/routes/about";
@@ -10,23 +8,14 @@ import { Route as privacy } from "@/routes/privacy";
 import { Route as terms } from "@/routes/terms";
 import { Route as affiliateDisclosure } from "@/routes/affiliate-disclosure";
 import { Route as editorial } from "@/routes/editorial-standards";
-import { Route as listProperty } from "@/routes/list-your-property";
+import { Route as refund } from "@/routes/refund-policy";
 import { Route as guidesIndex } from "@/routes/guides.index";
-import { Route as dogsIndex } from "@/routes/dogs.index";
-import { Route as destIndex } from "@/routes/destinations.index";
-import { Route as toolsIndex } from "@/routes/tools.index";
-import { Route as checklist } from "@/routes/tools.checklist";
-import { Route as accepted } from "@/routes/tools.will-my-dog-be-accepted";
 import { Route as packing } from "@/routes/tools.packing-list";
-import { Route as policies } from "@/routes/data.pet-policies";
-import { Route as dogType } from "@/routes/dogs.$slug";
-import { Route as statePage } from "@/routes/destinations.$state.index";
-import { Route as townPage } from "@/routes/destinations.$state.$town";
 import { Route as guidePage } from "@/routes/guides.$slug";
 
 // Expedia Group's affiliate terms bar its marks in meta tags (section 12.7 as read 2026-11-18). H1 and body text may use the names.
 const EXPEDIA = /vrbo|expedia|hotels\.com|homeaway/i;
-// Non-guide pages (written in the route files) also stay free of Airbnb. Three guides still name Airbnb in their seoTitle/seoDescription (content files); add them to this check once retitled.
+// Non-guide pages (written in the route files) also stay free of Airbnb.
 const BRANDS = /vrbo|expedia|hotels\.com|homeaway|airbnb/i;
 
 type Head = { meta?: Record<string, string>[]; links?: unknown[] };
@@ -54,38 +43,16 @@ describe("meta tags", () => {
       ["/terms", headOf(terms)],
       ["/affiliate-disclosure", headOf(affiliateDisclosure)],
       ["/editorial-standards", headOf(editorial)],
-      ["/list-your-property", headOf(listProperty)],
+      ["/refund-policy", headOf(refund)],
       ["/guides", headOf(guidesIndex)],
-      ["/dogs", headOf(dogsIndex)],
-      ["/destinations", headOf(destIndex)],
-      ["/tools", headOf(toolsIndex)],
-      ["/tools/checklist", headOf(checklist)],
-      ["/tools/will-my-dog-be-accepted", headOf(accepted)],
       ["/tools/packing-list", headOf(packing)],
-      ["/data/pet-policies", headOf(policies)],
     ];
-    for (const d of dogTypes)
-      heads.push([
-        `/dogs/${d.slug}`,
-        headOf(dogType, { loaderData: { d }, params: { slug: d.slug } }),
-      ]);
-    for (const d of destinations) {
-      heads.push([
-        `/destinations/${d.slug}`,
-        headOf(statePage, { loaderData: { d }, params: { state: d.slug } }),
-      ]);
-      for (const t of d.towns)
-        heads.push([
-          `/destinations/${d.slug}/${t.slug}`,
-          headOf(townPage, { loaderData: { d, t }, params: { state: d.slug, town: t.slug } }),
-        ]);
-    }
     for (const g of allGuides)
       heads.push([
         `/guides/${g.slug}`,
         headOf(guidePage, { loaderData: { guide: g }, params: { slug: g.slug } }),
       ]);
-    expect(heads.length).toBeGreaterThan(40);
+    expect(heads.length).toBeGreaterThan(10);
     for (const [path, h] of heads) {
       expect(text(h), path).not.toMatch(path.startsWith("/guides/") ? EXPEDIA : BRANDS);
       // Brand names in a title/description are the rule; length limits apply to the non-guide pages tuned here.
@@ -101,30 +68,5 @@ describe("meta tags", () => {
   it("pageHead's final og/twitter tags carry no brand even when the title does not", () => {
     const h = pageHead({ title: "Dog fees", description: "What a dog costs.", path: "/x" });
     expect(text(h)).not.toMatch(BRANDS);
-  });
-});
-
-describe("stay page meta", () => {
-  it("every stay has a title of at most 60 characters and a 120-155 character description, with no retailer brand and noindex logic intact", async () => {
-    const { allStayRecords } = await import("@/content/stays");
-    const { Route: stayPage } = await import("@/routes/stays.$slug");
-    const { stayIsIndexable } = await import("@/lib/seo");
-    for (const s of allStayRecords()) {
-      const h = headOf(stayPage, { loaderData: { stay: s }, params: { slug: s.slug } });
-      const title = prop(h, "og:title");
-      const description = prop(h, "description");
-      expect(title.length, `${s.slug} title "${title}"`).toBeLessThanOrEqual(60);
-      expect(title, s.slug).toMatch(/\| Paws & Passage$/);
-      expect(description.length, `${s.slug} description "${description}"`).toBeGreaterThanOrEqual(
-        120,
-      );
-      expect(description.length, `${s.slug} description "${description}"`).toBeLessThanOrEqual(155);
-      expect(text(h), s.slug).not.toMatch(/vrbo|expedia|hotels\.com|homeaway/i);
-      expect(prop(h, "og:title"), s.slug).toBe(prop(h, "twitter:title"));
-      expect(
-        h.meta?.some((m) => m["name"] === "robots" && /noindex/.test(m["content"] ?? "")),
-        s.slug,
-      ).toBe(!stayIsIndexable(s));
-    }
   });
 });

@@ -91,7 +91,12 @@ function loadAdventures(): Adventure[] {
   const out: Adventure[] = [];
   for (const [path, raw] of Object.entries(adventureFiles)) {
     const file = path.replace(/^(\.\.\/)+/, "");
-    const r = adventureSchema.safeParse(parseFile(file, raw));
+    const doc = parseFile(file, raw);
+    if ((doc as { schema?: unknown } | null)?.schema !== 2)
+      throw new PassportContentError(
+        `Content problem in ${file}: this adventure must say "schema: 2" and use the version 2 fields (see docs/CONTENT-GUIDE.md)`,
+      );
+    const r = adventureSchema.safeParse(doc);
     if (!r.success) issues(file, r.error);
     else {
       const a = r.data;

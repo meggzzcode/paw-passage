@@ -2,14 +2,23 @@
 // Storage can be blocked or full (private windows, cleared data), so every access is wrapped and the app still works in memory.
 import {
   add,
+  addToCollection,
+  createCollection,
+  deleteCollection,
   emptySave,
   merge,
+  migrate,
+  recordRepeat,
   remove,
-  validateSave,
+  removeFromCollection,
+  renameCollection,
+  reorderCollection,
+  setSmartFilters,
   MAX_MEMORY_CHARS,
   type Save,
   type TimedSet,
 } from "./progress";
+import type { CustomCollection, DogProfile, OwnerPrefs, SessionFilters } from "./profile";
 
 export const STORAGE_KEY = "pp.save.v1";
 export type SaveState = "saved" | "memory-only";
@@ -22,8 +31,8 @@ function read(): Save {
   try {
     const raw = window.localStorage.getItem(STORAGE_KEY);
     if (raw) {
-      const parsed: unknown = JSON.parse(raw);
-      if (validateSave(parsed) === null) return parsed as Save;
+      const upgraded = migrate(JSON.parse(raw) as unknown); // v1 saves are upgraded here
+      if (upgraded) return upgraded;
     }
   } catch {
     state = "memory-only";
@@ -76,10 +85,61 @@ export function setMemory(id: string, text: string, now = Date.now()) {
   commit({ ...s, memories });
 }
 
-export function setProfile(data: Record<string, unknown>, now = Date.now()) {
+export function setProfile(data: Partial<DogProfile>, now = Date.now()) {
   const s = getSave();
-  commit({ ...s, profile: { data: { ...s.profile.data, ...data }, at: now } });
+  commit({
+    ...s,
+    profile: { data: { ...s.profile.data, ...data }, at: Math.max(now, s.profile.at) },
+  });
 }
+
+export function setOwner(partial: OwnerPrefs, now = Date.now()) {
+  const s = getSave();
+  commit({ ...s, owner: { data: { ...s.owner.data, ...partial }, at: Math.max(now, s.owner.at) } });
+}
+
+/** Records "liked" or "not-for-us" for an adventure; null clears it on this device. */
+export function setFeedback(id: string, value: "liked" | "not-for-us" | null, now = Date.now()) {
+  const s = getSave();
+  const cur = s.feedback[id];
+  if (value === null) {
+    if (!cur) return;
+    const feedback = { ...s.feedback };
+    delete feedback[id];
+    commit({ ...s, feedback });
+    return;
+  }
+  if (cur?.value === value) return;
+  commit({
+    ...s,
+    feedback: { ...s.feedback, [id]: { value, at: Math.max(now, (cur?.at ?? 0) + 1) } },
+  });
+}
+
+/** A repeat memory. Never counted as a new adventure. */
+export function repeatAdventure(id: string) {
+  const s = getSave();
+  const next = recordRepeat(s, id);
+  if (next !== s) commit(next);
+}
+
+const apply = (next: Save) => {
+  if (next !== getSave()) commit(next);
+};
+export const newCollection = (c: CustomCollection, now = Date.now()) =>
+  apply(createCollection(getSave(), c, now));
+export const renameCustomCollection = (id: string, name: string, now = Date.now()) =>
+  apply(renameCollection(getSave(), id, name, now));
+export const addToCustomCollection = (id: string, advId: string, now = Date.now()) =>
+  apply(addToCollection(getSave(), id, advId, now));
+export const removeFromCustomCollection = (id: string, advId: string, now = Date.now()) =>
+  apply(removeFromCollection(getSave(), id, advId, now));
+export const reorderCustomCollection = (id: string, ids: string[], now = Date.now()) =>
+  apply(reorderCollection(getSave(), id, ids, now));
+export const updateSmartFilters = (id: string, filters: SessionFilters, now = Date.now()) =>
+  apply(setSmartFilters(getSave(), id, filters, now));
+export const deleteCustomCollection = (id: string, now = Date.now()) =>
+  apply(deleteCollection(getSave(), id, now));
 
 /** Download-friendly export and a validated import that merges (never replaces) what is already here. */
 export const exportJson = (): string => JSON.stringify(getSave(), null, 2);
@@ -90,9 +150,9 @@ export function importJson(text: string): { ok: true } | { ok: false; error: str
   } catch {
     return { ok: false, error: "That file is not valid JSON." };
   }
-  const err = validateSave(parsed);
-  if (err) return { ok: false, error: `That file is not a Paw & Passage save (${err}).` };
-  commit(merge(getSave(), parsed as Save));
+  const upgraded = migrate(parsed);
+  if (!upgraded) return { ok: false, error: "That file is not a Paw & Passage save." };
+  commit(merge(getSave(), { ...upgraded, rev: 0 }));
   return { ok: true };
 }
 

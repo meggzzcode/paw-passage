@@ -1,0 +1,105 @@
+schema: 2
+id: adv-s3d8f6
+title: The Secret Handshake Club
+clue: Every club needs a secret greeting, and this one is invented by its newest member.
+reveal: "Invent a greeting with your dog from whatever they already offer: a paw lift, a nose bump, a head tilt. You notice it, answer it and name it, and it becomes the club handshake. No asking and no pressure."
+objective: Notice a greeting your dog offers on their own, answer it, name it and add it to a membership card.
+instructions:
+  - Choose a calm moment at home when your dog is relaxed near you. Sit or lie down at their level with no treats and no toys in hand.
+  - "For about five minutes just watch for small things they do when they greet or check in with you: a paw lift, a nose touch to your hand, a head tilt, a stretch, a slow blink. Do not ask for anything."
+  - "When you see one, answer it softly: hold out a still, open hand for a nose bump, or say a happy quiet club word. Only ever touch a paw that your dog has lifted themselves, and let go the moment they move it."
+  - See whether they offer it again. If they do, you have a handshake. If they do not, drop it for the day. The handshake is only the one your dog repeats because they want to.
+  - "Name it together, for example The Double Bump, and write it on a membership card with Rule One: only if the dog wants to."
+  - Try it once more later in the day, for example at the door. If your dog brushes it off, they are voting no, and that is fine.
+twist: The handshake is invented by your dog, not taught by you. You copy what they offer, so you are the one learning a trick.
+variations:
+  - "If your dog offers nothing: make the handshake your own, a slow blink and a soft word, and notice if they answer."
+  - "For a dog who dislikes being touched: use only a nose bump to an open hand held still."
+  - "For a senior or lying-down dog: do it side by side on the floor or the sofa."
+  - "For a puppy: keep each session to a minute or two."
+completion: You have named a handshake your dog offered, or agreed that there is nothing to name today, and written the membership card.
+photoIdea: A calm moment of the handshake itself, such as the nose bump to your open hand, taken by someone else or with the phone propped nearby.
+memoryPrompt: What is the handshake called, and who offered it first?
+minutesMin: 5
+minutesMax: 10
+activeMinutes: 10
+costMin: 0
+costMax: 0
+prep: none
+supplies:
+  - Card or paper for the membership card
+  - A pen
+optionalSupplies: []
+requires:
+  - paper-and-pens
+substitutes:
+  - No card? Use any scrap of paper or the back of an envelope for the membership card.
+transport: none
+reservation:
+  needed: false
+setting: indoor
+homes:
+  - apartment
+  - house-no-yard
+  - house-with-yard
+space: small-indoor
+places:
+  - home
+seasons: []
+avoidWeather: []
+lifeStages:
+  - puppy
+  - adult
+  - senior
+personalities:
+  - gentle
+  - cozy
+  - curious
+sizes: []
+energy: gentle
+dogMobility: low
+ownerMobility: seated
+stepFree: true
+crowd: none
+strangers: false
+otherDogs: false
+noise: quiet
+food: false
+water: none
+safety:
+  - Never take hold of a paw, push or hold your dog in place. If they move away, the handshake is over for now.
+  - Ask for nothing, and never repeat it to the point where your dog looks bored or tired.
+  - "Follow your dog's body language: ears back, turning away or yawning means finish and let them rest."
+activityTypes:
+  - play-and-games
+  - memory-making
+collections:
+  - five-minute-wonders
+  - the-playful-pup
+  - home-sweet-home
+  - the-golden-years
+stamps:
+  - first-adventure
+  - cozy-companion
+  - playtime-champion
+achievements: []
+keepsake:
+  family: trading-card
+  theme: star-card
+  headline: FOUNDING MEMBER
+  subhead: Secret Handshake Club. Greeting invented by the dog
+access: free
+status: published
+relatedGuides: []
+affiliateProducts: []
+research:
+  - label: "Cornell Riney Canine Health Center: canine enrichment ideas"
+    url: https://riney.vet.cornell.edu/member-benefits-health-tips/canine-enrichment-ideas
+review:
+  ownerAppeal: 8
+  dogEnjoyment: 9
+  originality: 8
+  adventureFactor: 7
+  practicality: 9
+  memoryValue: 8
+  reviewedOn: 2026-11-26

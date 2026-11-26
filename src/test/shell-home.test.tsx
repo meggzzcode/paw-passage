@@ -1,17 +1,22 @@
 import { describe, it, expect } from "vitest";
 import { readFileSync } from "node:fs";
-import { navItems, unlockCta } from "@/components/shell/nav-items";
+import { guidesLink, navItems, restoreLink, unlockCta } from "@/components/shell/nav-items";
 
 describe("shell navigation", () => {
-  it("lists the five primary destinations and the unlock CTA", () => {
+  it("lists the four product areas, the unlock CTA and a small restore link", () => {
     expect(navItems.map((n) => n.label)).toEqual([
       "Discover",
       "Collections",
       "My Passport",
-      "Guides",
-      "Restore Access",
+      "Our Story",
     ]);
     expect(unlockCta).toEqual({ to: "/unlock", label: "Get the Passport" });
+    expect(restoreLink).toEqual({ to: "/restore-access", label: "Restore access" });
+  });
+  it("keeps Guides out of the primary nav but in the footer", () => {
+    expect(navItems.map((n) => n.label as string)).not.toContain("Guides");
+    expect(readFileSync("src/components/shell/SiteFooter.tsx", "utf8")).toContain("guidesLink");
+    expect(guidesLink.to).toBe("/guides");
   });
   it("the footer links to the legal and about pages", () => {
     const src = readFileSync("src/components/shell/SiteFooter.tsx", "utf8");

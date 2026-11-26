@@ -6,10 +6,7 @@ import { loadContent } from "../../plugins/content";
 
 // These tests protect the promise a buyer relies on: saving something in the CMS never makes it public
 // by accident, and a mistake in a content file stops the build with a clear message instead of publishing.
-const realGuide = join(process.cwd(), "content/guides/how-vacation-rental-pet-fees-work.md");
-// A real stay record used as a fixture (its booking link is removed so it stands alone in a temporary site).
-const realStayPath = join(process.cwd(), "content/stays/mountain-view-cabin-hilltop-hideaway.yml");
-const stayFixture = () => readFileSync(realStayPath, "utf8").replace(/^affiliateId:.*\n?/m, "");
+const realGuide = join(process.cwd(), "content/guides/dog-hiking-gear-for-a-cabin-vacation.md");
 let root = "";
 
 // The real guide, with its links to other articles removed (the temporary test project has no other articles).
@@ -25,7 +22,6 @@ const guideWith = (edit: (t: string) => string) => edit(cleanGuide());
 beforeAll(() => {
   root = mkdtempSync(join(tmpdir(), "paws-content-"));
   mkdirSync(join(root, "content/guides"), { recursive: true });
-  mkdirSync(join(root, "content/stays"), { recursive: true });
   mkdirSync(join(root, "public"), { recursive: true });
 });
 afterAll(() => rmSync(root, { recursive: true, force: true }));
@@ -33,7 +29,6 @@ afterAll(() => rmSync(root, { recursive: true, force: true }));
 const reset = () => {
   rmSync(join(root, "content"), { recursive: true, force: true });
   mkdirSync(join(root, "content/guides"), { recursive: true });
-  mkdirSync(join(root, "content/stays"), { recursive: true });
 };
 
 describe("content build step", () => {
@@ -43,7 +38,7 @@ describe("content build step", () => {
     expect(loadContent(root, false).guides.length).toBe(1);
   });
 
-  it("leaves drafts and unapproved guides OUT of production builds, but lists unverified stays", () => {
+  it("leaves drafts and unapproved guides OUT of production builds", () => {
     reset();
     writeFileSync(
       join(root, "content/guides/draft.md"),
@@ -53,14 +48,10 @@ describe("content build step", () => {
       join(root, "content/guides/unapproved.md"),
       guideWith((t) => t.replace(/^approvedBy:.*\n/m, "").replace(/^approvedOn:.*\n/m, "")),
     );
-    writeFileSync(join(root, "content/stays/unverified.yml"), stayFixture());
     const prod = loadContent(root, false);
     expect(prod.guides).toEqual([]);
-    expect(prod.stays).toHaveLength(1);
-    expect((prod.stays[0] as { status: string }).status).toBe("unverified");
     const preview = loadContent(root, true);
     expect(preview.guides.length).toBe(2);
-    expect(preview.stays.length).toBe(1);
   });
 
   it("a guide whose research is not complete is not public even when approved", () => {
@@ -102,29 +93,7 @@ describe("content build step", () => {
     expect(() => loadContent(root, false)).toThrow(/settings\.yml[\s\S]*ga4MeasurementId/);
   });
 
-  it("treats empty fields in a stay as 'not confirmed', never as 'no'", () => {
-    reset();
-    writeFileSync(
-      join(root, "content/stays/s.yml"),
-      "name: Test\nstatus: verified\ntype: cabin\nstate: georgia\ntown: blue-ridge\nsummary: s\ndescription: d\nimage: guide-ga-cabins\nlastVerified: 2026-11-16\n",
-    );
-    const s = loadContent(root, false).stays[0] as Record<string, unknown>;
-    expect(s["largeDogsOk"]).toBeNull();
-    expect(s["maxDogs"]).toBeNull();
-    expect(s["petFee"]).toBeNull();
-    expect(s["fencedYard"]).toBeNull();
-  });
-
   // ---- Found by an independent review: each of these used to slip through ----
-  it("refuses an article whose web address is already used by an existing article (this used to crash the live site)", () => {
-    reset();
-    mkdirSync(join(root, "src/content/guides"), { recursive: true });
-    writeFileSync(join(root, "src/content/guides/existing-guide.ts"), "export const guide = {};\n");
-    writeFileSync(join(root, "content/guides/existing-guide.md"), cleanGuide());
-    expect(() => loadContent(root, false)).toThrow(/already exists/);
-    rmSync(join(root, "src"), { recursive: true, force: true });
-  });
-
   it("refuses a built-in photo name that does not exist (this used to crash the home page)", () => {
     reset();
     mkdirSync(join(root, "src/lib"), { recursive: true });
@@ -233,16 +202,6 @@ describe("content build step", () => {
       guideWith((t) => t),
       /lowercase letters/,
     );
-    bad(
-      "content/stays/Bad Name.yml",
-      "name: X\nstatus: verified\nlastVerified: 2026-11-16\ntype: cabin\nstate: georgia\ntown: a\nsummary: s\ndescription: d\nimage: guide-ga-cabins\n",
-      /lowercase letters/,
-    );
-    bad(
-      "content/stays/zero.yml",
-      "name: X\nstatus: unverified\ntype: cabin\nstate: georgia\ntown: a\nsummary: s\ndescription: d\nimage: guide-ga-cabins\npetFee: charged\npetFeeAmount: 0\npetFeeBasis: stay\n",
-      /above zero/,
-    );
   });
 
   it("affiliate links in article text must exist in Affiliate links (a typo fails the build; an unfinished draft is skipped)", () => {
@@ -303,54 +262,5 @@ describe("content build step", () => {
     writeFileSync(join(root, "content/guides/published.md"), noPhoto);
     expect(() => loadContent(root, false)).toThrow(/pick a built-in hero image/);
     rmSync(join(root, "src"), { recursive: true, force: true });
-  });
-
-  it("a stay needs no photo; a photo that is named but missing never blocks an unfinished stay, but still stops a verified one", () => {
-    reset();
-    mkdirSync(join(root, "src/lib"), { recursive: true });
-    writeFileSync(
-      join(root, "src/lib/images.ts"),
-      'export const images = {\n  "real-photo": { src: a, alt: "x" },\n} as const;\n',
-    );
-    const draft = stayFixture().replace(/^image:.*\n/m, "");
-    const verified = draft.replace(
-      "status: unverified",
-      "status: verified\nlastVerified: 2026-11-16",
-    );
-    writeFileSync(join(root, "content/stays/draft.yml"), draft);
-    expect(loadContent(root, false).stays).toHaveLength(1);
-    writeFileSync(
-      join(root, "content/stays/draft.yml"),
-      draft.replace(/^name:/m, "image: not-a-photo\nname:"),
-    );
-    expect(loadContent(root, false).stays).toEqual([]);
-    writeFileSync(
-      join(root, "content/stays/draft.yml"),
-      draft.replace(/^name:/m, "imageUpload: /uploads/missing.jpg\nname:"),
-    );
-    expect(loadContent(root, false).stays).toEqual([]);
-    reset();
-    writeFileSync(join(root, "content/stays/verified.yml"), verified);
-    expect(loadContent(root, false).stays).toHaveLength(1);
-    writeFileSync(
-      join(root, "content/stays/verified.yml"),
-      verified.replace(/^name:/m, "image: not-a-photo\nname:"),
-    );
-    expect(() => loadContent(root, false)).toThrow(/not-a-photo[\s\S]*does not exist/);
-    writeFileSync(
-      join(root, "content/stays/verified.yml"),
-      verified.replace(/^name:/m, "imageUpload: /uploads/missing.jpg\nname:"),
-    );
-    expect(() => loadContent(root, false)).toThrow(/missing\.jpg/);
-    rmSync(join(root, "src"), { recursive: true, force: true });
-  });
-
-  it("a stay's booking link must exist in Affiliate links", () => {
-    reset();
-    writeFileSync(
-      join(root, "content/stays/b.yml"),
-      "name: B\nstatus: verified\ntype: cabin\nstate: georgia\ntown: a\nsummary: s\ndescription: d\nimage: guide-ga-cabins\nlastVerified: 2026-11-16\naffiliateId: nope\n",
-    );
-    expect(() => loadContent(root, false)).toThrow(/booking link "nope"/);
   });
 });

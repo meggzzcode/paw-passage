@@ -1,0 +1,112 @@
+schema: 2
+id: adv-q6v2s9
+title: The Secret Detective Agency
+clue: A case has landed on the desk, and the only detective on staff has a very good nose.
+reveal: Something has gone missing at home. Make your dog an official detective ID, lay a short and safe scent trail through a room or two, and let them crack the case at their own pace.
+objective: Make a detective ID, lay a short scent trail that ends at a hidden toy, and let your dog solve the case.
+instructions:
+  - "Make the detective ID: on a card write a code name for your dog, the name of your agency and Case No. 1. Leave a corner empty for a photo."
+  - "Choose the missing item: one favourite toy. Show it to your dog, then move your dog to another room or behind a gate while you set up."
+  - "Lay the trail: rub the toy and then a clean, worn sock along the floor in a line with two or three clue spots, for example a sofa leg and a doorway, ending at the hiding place. Use only the toy and the sock. Never use spices, perfume, essential oils or cleaning products."
+  - "Hide the toy low and easy: behind a cushion with a corner showing, or beside a chair leg. No jumping, climbing or reaching. A first case should be solved in under two minutes."
+  - "Open the case: bring your dog in with a calm case word, stay quiet and do not point. Let them follow their nose at their own pace. If they stall, walk a step toward the first clue yourself rather than leading them."
+  - "Case closed: celebrate the find and let them keep the toy. Stamp the ID Case Solved and write one line in the case file: the clues and the detective's method."
+twist: "Your dog is a detective with an ID you made yourself and a case file to keep: you play the crime scene and the praise is the pay."
+variations:
+  - "Very gentle: lay the trail on one rug with the toy a few steps away."
+  - "For a lively dog: lay a longer trail across two rooms and add a second hidden toy for a two-part case."
+  - "For a dog who loves food games and has a vet who is happy with them: hide one of their usual tiny treats instead of the toy, and count it as part of the day."
+  - "For a dog who is not toy-motivated: hide their favourite blanket instead."
+completion: The detective finds the hidden item and the case file has its first entry.
+photoIdea: A calm portrait of your dog beside the found toy and the case file, taken once the case is closed and they are relaxed.
+memoryPrompt: What was the case, and what was the detective's method?
+minutesMin: 15
+minutesMax: 25
+activeMinutes: 8
+costMin: 0
+costMax: 0
+prep: light
+supplies:
+  - Index card or paper for the ID
+  - A pen
+  - One favourite toy
+  - A clean, worn sock or soft cloth
+optionalSupplies:
+  - Baby gate
+  - Phone for the ID photo
+requires:
+  - toys
+  - paper-and-pens
+  - household-items
+substitutes:
+  - No sock? Rub a clean cloth or tea towel instead.
+  - No baby gate? Close a door or ask someone to keep your dog company.
+transport: none
+reservation:
+  needed: false
+setting: indoor
+homes:
+  - apartment
+  - house-no-yard
+  - house-with-yard
+space: a-room
+places:
+  - home
+seasons: []
+avoidWeather: []
+lifeStages:
+  - puppy
+  - adult
+  - senior
+personalities:
+  - curious
+  - playful
+sizes: []
+energy: moderate
+dogMobility: low
+ownerMobility: minimal-walking
+stepFree: true
+crowd: none
+strangers: false
+otherDogs: false
+noise: quiet
+food: false
+water: none
+safety:
+  - Keep the trail clear of slippery floors, stairs and anything breakable, and hide the toy where your dog does not need to jump.
+  - If your dog seems unsure, shorten the trail and make the find easier. Always end on a success.
+  - Use only the toy and a clean sock for scent. Anything strongly scented can upset a dog's nose.
+activityTypes:
+  - scent-and-discovery
+  - problem-solving
+  - play-and-games
+collections:
+  - rainy-day-club
+  - the-playful-pup
+  - home-sweet-home
+stamps:
+  - first-adventure
+  - playtime-champion
+achievements: []
+keepsake:
+  family: id-card
+  theme: secret-agent
+  headline: DETECTIVE ID
+  subhead: Cases solved by nose
+access: free
+status: published
+relatedGuides: []
+affiliateProducts: []
+research:
+  - label: "Cornell Riney Canine Health Center: canine enrichment ideas"
+    url: https://riney.vet.cornell.edu/member-benefits-health-tips/canine-enrichment-ideas
+  - label: "ASPCA: canine DIY enrichment"
+    url: https://www.aspca.org/pet-care/dog-care/canine-diy-enrichment
+review:
+  ownerAppeal: 9
+  dogEnjoyment: 9
+  originality: 8
+  adventureFactor: 8
+  practicality: 8
+  memoryValue: 9
+  reviewedOn: 2026-11-26

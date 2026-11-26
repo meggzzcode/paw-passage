@@ -1,0 +1,287 @@
+/* Adventure, passport and keepsake screens. Uses the tokens from passport.css. */
+.pa-page {
+  padding-block: 1.5rem 3rem;
+  display: grid;
+  gap: 1.25rem;
+  max-width: 46rem;
+  margin-inline: auto;
+}
+.pa-h1 {
+  font-family: var(--font-display);
+  font-size: clamp(1.9rem, 6vw, 2.8rem);
+  line-height: 1.1;
+  color: var(--pp-ink);
+  margin: 0;
+}
+.pa-h {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  margin: 0 0 0.4rem;
+  color: var(--pp-ink);
+}
+.pa-sub {
+  margin: 0;
+  color: var(--pp-muted);
+  font-size: 1.05rem;
+  max-width: 38rem;
+}
+.pa-fine {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--pp-muted);
+}
+.pa-kicker {
+  margin: 0;
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--pp-red);
+  font-weight: 700;
+}
+.pa-panel,
+.pa-card {
+  background: var(--pp-card);
+  border: 2px solid var(--pp-line);
+  border-radius: var(--pp-radius);
+  box-shadow: var(--pp-shadow);
+  padding: 1.1rem;
+  display: grid;
+  gap: 0.8rem;
+}
+.pa-title {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  margin: 0;
+  line-height: 1.2;
+}
+.pa-title a {
+  color: inherit;
+  text-decoration: none;
+}
+.pa-title a:hover {
+  text-decoration: underline;
+}
+.pa-clue {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-style: italic;
+  margin: 0;
+  line-height: 1.35;
+}
+.pa-mystery {
+  background: var(--pp-ink);
+  color: var(--pp-paper);
+  border-color: var(--pp-ink);
+}
+.pa-mystery .pa-kicker {
+  color: var(--pp-ochre);
+}
+.pa-mystery .pa-meta li {
+  border-color: rgb(247 240 225 / 0.5);
+  color: var(--pp-paper);
+}
+.pa-mystery .pp-btn-primary {
+  background: var(--pp-ochre);
+  color: #14283a;
+  border-color: var(--pp-ochre);
+}
+.pa-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.pa-meta li {
+  border: 1.5px solid var(--pp-line);
+  border-radius: 999px;
+  padding: 0.15rem 0.7rem;
+  font-size: 0.88rem;
+}
+.pa-steps {
+  margin: 0;
+  padding-left: 1.2rem;
+  display: grid;
+  gap: 0.4rem;
+}
+.pa-sec {
+  margin: 0.3rem 0 0;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--pp-muted);
+}
+.pa-twist {
+  background: var(--pp-paper-2);
+  border-left: 4px solid var(--pp-ochre);
+  padding: 0.6rem 0.8rem;
+  margin: 0;
+}
+.pa-safety {
+  border: 1.5px dashed var(--pp-pine);
+  border-radius: var(--pp-radius);
+  padding: 0.7rem 0.9rem;
+  font-size: 0.95rem;
+}
+.pa-safety ul {
+  margin: 0.3rem 0;
+  padding-left: 1.1rem;
+}
+.pa-safety p {
+  margin: 0;
+  color: var(--pp-muted);
+}
+.pa-details summary {
+  cursor: pointer;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+.pa-actions,
+.pa-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  align-items: center;
+}
+.pa-field {
+  display: grid;
+  gap: 0.35rem;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+.pa-field > span,
+.pa-field legend {
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0;
+}
+.pa-field input:not([type="checkbox"]):not([type="file"]),
+.pa-field textarea {
+  font: inherit;
+  padding: 0.65rem 0.75rem;
+  border: 2px solid var(--pp-line);
+  border-radius: var(--pp-radius);
+  background: var(--pp-paper);
+  color: var(--pp-ink);
+  min-height: 44px;
+  width: 100%;
+}
+.pa-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.pa-chip {
+  min-height: 44px;
+  padding: 0.4rem 0.95rem;
+  border: 2px solid var(--pp-line);
+  border-radius: 999px;
+  background: var(--pp-paper);
+  color: var(--pp-ink);
+  font: inherit;
+  cursor: pointer;
+}
+.pa-chip[aria-pressed="true"] {
+  background: var(--pp-ink);
+  color: var(--pp-paper);
+}
+.pa-check {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  min-height: 44px;
+}
+.pa-check input {
+  width: 1.4rem;
+  height: 1.4rem;
+  accent-color: var(--pp-red);
+}
+.pa-linkbtn {
+  background: none;
+  border: 0;
+  color: var(--pp-red);
+  text-decoration: underline;
+  font: inherit;
+  cursor: pointer;
+  min-height: 44px;
+  padding: 0 0.3rem;
+}
+.pa-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.8rem;
+}
+.pa-listbtn {
+  width: 100%;
+  text-align: left;
+  display: grid;
+  gap: 0.4rem;
+  background: var(--pp-card);
+  border: 2px solid var(--pp-line);
+  border-radius: var(--pp-radius);
+  padding: 0.9rem;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  min-height: 44px;
+}
+.pa-grid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+}
+.pa-accent-poppy {
+  border-top: 8px solid var(--pp-red);
+}
+.pa-accent-ochre {
+  border-top: 8px solid var(--pp-ochre);
+}
+.pa-accent-sage {
+  border-top: 8px solid var(--pp-pine);
+}
+.pa-accent-ink {
+  border-top: 8px solid var(--pp-ink);
+}
+.pa-accent-sky {
+  border-top: 8px solid #3e7ea6;
+}
+.pa-accent-plum {
+  border-top: 8px solid #6b3b6f;
+}
+.pa-keepsake {
+  display: grid;
+  gap: 0.8rem;
+}
+.pa-keepsake-out img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid var(--pp-line);
+  border-radius: var(--pp-radius);
+}
+.pa-page :where(a, button, input, textarea, summary):focus-visible {
+  outline: 3px solid var(--pp-focus);
+  outline-offset: 2px;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .pa-card {
+    animation: pa-in 0.25s ease-out;
+  }
+}
+@keyframes pa-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}

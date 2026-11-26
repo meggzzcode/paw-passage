@@ -4,7 +4,6 @@ import { parse } from "yaml";
 import { products, getProducts, type Product } from "@/content/gear";
 import { gearCategories, legacyCategorySlugs } from "@/content/gear-categories";
 import { categoryProducts, MIN_LIVE, shopByDog, shopByTrip } from "@/content/gear-hub";
-import { dogTypes } from "@/content/dog-types";
 import { sitemapEntries } from "@/lib/sitemap-entries";
 import { resolveProductLink } from "@/content/gear-links";
 import { allGuides, isPublic } from "@/content/guides";
@@ -88,7 +87,7 @@ describe("product catalog rules", () => {
       "trail-and-hiking",
       "cold-weather",
       "safety-id-first-aid",
-      "rental-cleanup",
+      "cleanup-and-protection",
     ];
     expect([...gearCategorySlugs].sort()).toEqual([...slugsExpected].sort());
     expect(gearCategories.map((c) => c.slug).sort()).toEqual([...slugsExpected].sort());
@@ -118,11 +117,6 @@ describe("product catalog rules", () => {
         expect(guide, `${c.slug}: ${g}`).toBeTruthy();
         expect(isPublic(guide!), `${c.slug}: ${g} is not public`).toBe(true);
       }
-      if (c.dogTypeSlug)
-        expect(
-          dogTypes.some((d) => d.slug === c.dogTypeSlug),
-          `${c.slug}: ${c.dogTypeSlug}`,
-        ).toBe(true);
       expect(JSON.stringify(c), c.slug).not.toMatch(
         /\$\s?\d|stars?\b|\bwe (have )?(tested|tried)/i,
       );
@@ -134,18 +128,13 @@ describe("product catalog rules", () => {
       expect(slugs.has(now), `${old} -> ${now}`).toBe(true);
       expect(slugs.has(old) && old === now, old).toBe(false);
     }
-    expect(Object.keys(legacyCategorySlugs)).toHaveLength(10);
+    expect(Object.keys(legacyCategorySlugs)).toHaveLength(11);
   });
-  it("shop-by shortcuts link only to real categories and dog pages", () => {
+  it("shop-by shortcuts link only to real categories", () => {
     const slugs = new Set<string>(gearCategorySlugs);
     for (const s of [...shopByTrip, ...shopByDog]) {
       expect(s.categorySlugs.length, s.slug).toBeGreaterThan(0);
       for (const c of s.categorySlugs) expect(slugs.has(c), `${s.slug}: ${c}`).toBe(true);
-      if (s.dogTypeSlug)
-        expect(
-          dogTypes.some((d) => d.slug === s.dogTypeSlug),
-          `${s.slug}: ${s.dogTypeSlug}`,
-        ).toBe(true);
     }
   });
   it("the sitemap lists the new category pages and none of the old slugs", () => {
@@ -166,7 +155,6 @@ describe("product catalog rules", () => {
   it("no product stores an affiliate reference until an approved product entry exists", () => {
     for (const p of products) {
       const l = links.find((x) => x.id === (p.affiliateId ?? p.id));
-      if (l) expect(l.kind, `${p.id} would use a stay link`).not.toBe("stay");
       if (p.affiliateId) expect(l, `${p.id}: unknown affiliate entry`).toBeTruthy();
     }
   });
@@ -241,24 +229,12 @@ describe("new schema fields", () => {
       ),
     ).toHaveLength(1);
     expect(
-      productReferenceProblems(
-        [r({ affiliateProgram: "acme", affiliateTrackingId: "acme-x" })],
-        [
-          { id: "acme", kind: "stay" },
-          { id: "acme-x", kind: "stay" },
-        ],
-      ),
-    ).toHaveLength(2);
-    expect(
       productReferenceProblems([r({ relatedGuides: ["nope"] })], [], new Set(["yes"])),
     ).toHaveLength(1);
     expect(
       productReferenceProblems(
         [r({ affiliateProgram: "acme", affiliateTrackingId: "acme-x" })],
-        [
-          { id: "acme", kind: "product" },
-          { id: "acme-x", kind: "product" },
-        ],
+        [{ id: "acme" }, { id: "acme-x" }],
       ),
     ).toEqual([]);
   });
@@ -285,7 +261,6 @@ describe("affiliate swap procedure (docs/recovery/AFFILIATE-SWAP-PROCEDURE.md)",
     network: "Acme",
     url,
     approved: true,
-    kind: "product",
     ...over,
   });
   it("editing one affiliate entry changes the link of every product that names it, and nothing else", () => {
@@ -315,11 +290,6 @@ describe("affiliate swap procedure (docs/recovery/AFFILIATE-SWAP-PROCEDURE.md)",
     const off = [entry("acme-a", "https://acme.example/r?id=OLD", { approved: false })];
     expect(resolveProductLink(list[0]!, off)?.url).toBe("https://maker.example/a");
     expect(resolveProductLink(list[1]!, off)?.rel).toBe("nofollow noopener");
-  });
-  it("a product never takes a stay link, even if it names one", () => {
-    expect(
-      resolveProductLink(list[0]!, [entry("acme-a", "https://vrbo.com/x", { kind: "stay" })])?.url,
-    ).toBe("https://maker.example/a");
   });
   it("getProducts skips unknown and inactive ids", () => {
     const l = [mk("a"), { ...mk("b"), active: false }];

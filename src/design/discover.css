@@ -1,0 +1,184 @@
+/* Discover screens (tabs, cards, filters, onboarding). Uses the tokens from passport.css. Import after adventure.css. */
+.pd-page {
+  max-width: 52rem;
+}
+.pd-tabs {
+  display: flex;
+  gap: 0.25rem;
+  border-bottom: 2px solid var(--pp-line);
+  overflow-x: auto;
+}
+.pd-tab {
+  min-height: 44px;
+  padding: 0.5rem 1rem;
+  font: inherit;
+  font-weight: 600;
+  background: transparent;
+  color: var(--pp-ink);
+  border: 2px solid transparent;
+  border-bottom: 0;
+  border-radius: var(--pp-radius) var(--pp-radius) 0 0;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.pd-tab[aria-selected="true"] {
+  background: var(--pp-card);
+  border-color: var(--pp-line);
+  margin-bottom: -2px;
+  padding-bottom: calc(0.5rem + 2px);
+}
+.pd-panel {
+  display: grid;
+  gap: 1.1rem;
+}
+.pd-panel:focus-visible {
+  outline: 3px solid var(--pp-focus);
+  outline-offset: 2px;
+}
+.pd-banner {
+  display: grid;
+  gap: 0.6rem;
+  background: var(--pp-paper-2);
+  border: 1.5px dashed var(--pp-line);
+  border-radius: var(--pp-radius);
+  padding: 0.8rem 1rem;
+}
+.pd-banner p {
+  margin: 0;
+}
+.pd-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 1rem;
+}
+.pd-plain {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.6rem;
+}
+.pd-types {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.pd-types li {
+  background: var(--pp-ink);
+  color: var(--pp-paper);
+  border-radius: 999px;
+  padding: 0.1rem 0.65rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.pd-types li.pd-done {
+  background: var(--pp-pine);
+  color: var(--pp-card);
+}
+.pd-why {
+  margin: 0;
+  padding: 0.4rem 0.7rem;
+  border-left: 4px solid var(--pp-ochre);
+  background: var(--pp-paper-2);
+}
+.pd-facts {
+  margin: 0;
+  padding-left: 1.1rem;
+  display: grid;
+  gap: 0.15rem;
+  font-size: 0.93rem;
+  color: var(--pp-muted);
+}
+.pd-toggle {
+  justify-self: start;
+}
+.pd-details {
+  display: grid;
+  gap: 0.7rem;
+  border-top: 1.5px solid var(--pp-hairline);
+  padding-top: 0.8rem;
+}
+.pd-status {
+  margin: 0;
+  min-height: 1.2em;
+  color: var(--pp-pine);
+  font-weight: 600;
+  font-size: 0.93rem;
+}
+.pd-keepsake {
+  display: grid;
+  gap: 0.8rem;
+}
+.pd-addto {
+  position: relative;
+  display: grid;
+  gap: 0.5rem;
+}
+.pd-popover {
+  display: grid;
+  gap: 0.6rem;
+  background: var(--pp-card);
+  border: 2px solid var(--pp-line);
+  border-radius: var(--pp-radius);
+  padding: 0.8rem;
+}
+.pd-grow {
+  flex: 1 1 12rem;
+}
+.pd-pair {
+  display: grid;
+  gap: 0.8rem;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+}
+.pd-editor,
+.pd-more {
+  display: grid;
+  gap: 1rem;
+}
+.pd-expansions {
+  display: grid;
+  gap: 0.8rem;
+  justify-items: start;
+}
+.pd-expansions > .pd-editor {
+  justify-self: stretch;
+}
+.pd-filters .pa-chip {
+  font-size: 0.95rem;
+}
+.pd-question {
+  display: grid;
+  gap: 0.4rem;
+}
+.pd-qtext {
+  margin: 0;
+  font-weight: 600;
+}
+.pd-select {
+  font: inherit;
+  min-height: 44px;
+  padding: 0.5rem 0.7rem;
+  border: 2px solid var(--pp-line);
+  border-radius: var(--pp-radius);
+  background: var(--pp-paper);
+  color: var(--pp-ink);
+  max-width: 100%;
+}
+.pd-page :where(select):focus-visible {
+  outline: 3px solid var(--pp-focus);
+  outline-offset: 2px;
+}
+.pd-page .pp-btn {
+  min-height: 44px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .pd-page * {
+    animation: none !important;
+    transition: none !important;
+  }
+}

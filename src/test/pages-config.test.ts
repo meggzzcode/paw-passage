@@ -1,13 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { readFileSync } from "node:fs";
 import { parse } from "yaml";
-import {
-  guideSchema,
-  stayYamlSchema,
-  placeYamlSchema,
-  affiliatesSchema,
-  settingsSchema,
-} from "../content/schema";
+import { guideSchema, affiliatesSchema, settingsSchema } from "../content/schema";
 
 // The Pages CMS form (.pages.yml) must offer every field the website's content rules know about,
 // and every drop-down must offer exactly the allowed choices. Otherwise an edit in the CMS could
@@ -82,38 +76,6 @@ describe("Pages CMS form matches the content rules", () => {
     expect(values(f("status"))).toEqual(enumValues(sh.status));
     expect(values(f("category"))).toEqual(enumValues(sh.category));
     expect(values(f("relatedTools"))).toEqual(enumValues(elementOf(sh.relatedTools)));
-    expect(values(f("states"))).toEqual(enumValues(elementOf(sh.states)));
-  });
-
-  it("stays: the form has every field the rules accept, with matching choices", () => {
-    const sh = unwrap(stayYamlSchema).shape;
-    expect(names(entry("stays").fields)).toEqual(shapeKeys(stayYamlSchema));
-    const f = (n: string) => entry("stays").fields.find((x) => x.name === n)!;
-    for (const k of [
-      "status",
-      "type",
-      "state",
-      "fencedYard",
-      "petFee",
-      "petFeeBasis",
-      "largeDogsOk",
-      "privateOutdoor",
-      "breedRestrictions",
-      "hotTub",
-    ]) {
-      expect(values(f(k)), `stay field ${k}`).toEqual(enumValues(sh[k]));
-    }
-  });
-
-  it("dog rules (places): the form has every field the rules accept, with matching choices", () => {
-    const sh = unwrap(placeYamlSchema).shape;
-    expect(names(entry("places").fields)).toEqual(shapeKeys(placeYamlSchema));
-    const f = (n: string) => entry("places").fields.find((x) => x.name === n)!;
-    for (const k of ["status", "state", "kind"])
-      expect(values(f(k)), `place field ${k}`).toEqual(enumValues(sh[k]));
-    expect(names(f("dogsAllowed").fields!)).toEqual(shapeKeys(elementOf(sh.dogsAllowed)));
-    const rule = f("dogsAllowed").fields!.find((x) => x.name === "rule")!;
-    expect(values(rule)).toEqual(enumValues(unwrap(elementOf(sh.dogsAllowed)).shape.rule));
   });
 
   it("affiliate links and business settings forms match the rules", () => {
@@ -128,8 +90,6 @@ describe("Pages CMS form matches the content rules", () => {
     const { images } = await import("../lib/images");
     const f = entry("guides").fields.find((x) => x.name === "heroImage")!;
     for (const v of values(f)) expect(Object.keys(images), v).toContain(v);
-    const s = entry("stays").fields.find((x) => x.name === "image")!;
-    for (const v of values(s)) expect(Object.keys(images), v).toContain(v);
   });
 });
 
@@ -146,7 +106,7 @@ describe("Pages CMS form for the packing planner", () => {
     expect(names(e.fields)).toEqual(shapeKeys(packingSchema));
     const items = e.fields.find((f) => f.name === "items")!;
     const itemKeys = shapeKeys(elementOf(unwrap(packingSchema).shape.items));
-    // `gearCategory` (docs/PACKING_PLANNER_QA.md, "CMS follow-up") is accepted in content/packing.yml before the Pages CMS
+    // `gearCategory` is accepted in content/packing.yml before the Pages CMS
     // form offers it; it is exempt only while the form lacks it. Once the form has it, the order must match.
     const cmsItemNames = names(items.fields!);
     expect(cmsItemNames).toEqual(

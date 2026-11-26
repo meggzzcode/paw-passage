@@ -1,0 +1,154 @@
+/* Collections, My Passport, Our Story and access screens. Builds on the tokens in passport.css and the pa-* classes in adventure.css. */
+.pp-restore-link {
+  display: none;
+  align-items: center;
+  min-height: 44px;
+  padding-inline: 0.4rem;
+  font-size: 0.85rem;
+  color: var(--pp-muted);
+  text-decoration: underline;
+}
+@media (min-width: 900px) {
+  .pp-restore-link {
+    display: inline-flex;
+  }
+}
+
+.co-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.co-tab {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+.co-tab[aria-current="page"] {
+  background: var(--pp-ink);
+  color: var(--pp-paper);
+}
+.co-stack {
+  display: grid;
+  gap: 1rem;
+}
+.co-gap {
+  margin-top: 0.8rem;
+}
+.co-plain {
+  list-style: disc;
+  padding-left: 1.2rem;
+  margin: 0;
+  display: grid;
+  gap: 0.35rem;
+}
+.co-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.7rem;
+}
+.co-row {
+  display: grid;
+  gap: 0.5rem;
+  background: var(--pp-card);
+  border: 2px solid var(--pp-line);
+  border-radius: var(--pp-radius);
+  padding: 0.8rem 0.9rem;
+}
+.co-row-title {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+}
+.co-row-main p {
+  margin: 0;
+}
+.co-row-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.co-row-detail {
+  margin-top: 0.4rem;
+}
+.co-progress {
+  width: 100%;
+  height: 0.8rem;
+  accent-color: var(--pp-pine);
+}
+.co-templates {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.6rem;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+}
+.co-templates .pa-listbtn:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+.co-inline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  align-items: end;
+}
+.co-grow {
+  flex: 1 1 14rem;
+}
+.co-fields {
+  display: grid;
+  gap: 0.7rem;
+  grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
+}
+.co-select {
+  font: inherit;
+  min-height: 44px;
+  padding: 0.5rem 0.6rem;
+  border: 2px solid var(--pp-line);
+  border-radius: var(--pp-radius);
+  background: var(--pp-paper);
+  color: var(--pp-ink);
+  width: 100%;
+}
+.co-timeline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 1rem;
+  border-left: 3px dotted var(--pp-line);
+  padding-left: 0.9rem;
+}
+.co-memory {
+  margin: 0;
+  padding: 0.5rem 0.8rem;
+  border-left: 4px solid var(--pp-ochre);
+  background: var(--pp-paper-2);
+  font-style: italic;
+}
+.co-compare {
+  display: grid;
+  gap: 1rem;
+}
+@media (min-width: 720px) {
+  .co-compare {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.co-error {
+  color: var(--pp-red);
+  font-weight: 600;
+  margin: 0;
+}
+.pp-btn:focus-within {
+  outline: 3px solid var(--pp-focus);
+  outline-offset: 2px;
+}
+.pa-page :where(select, progress):focus-visible {
+  outline: 3px solid var(--pp-focus);
+  outline-offset: 2px;
+}

@@ -20,7 +20,9 @@ export interface KeepsakeSpec {
   stampSlugs?: string[];
 }
 
-export type PhotoSource = ImageBitmap | HTMLImageElement;
+import { loadPhotoFile, sourceSize, type PhotoSource } from "./photo";
+export { loadPhotoFile };
+export type { PhotoSource };
 export interface KeepsakeAssets {
   photo?: PhotoSource | null | undefined;
 }
@@ -28,7 +30,7 @@ export interface KeepsakeAssets {
 export const FOOTER_TEXT = "pawsandpassage.com";
 export const MEMORY_MAX = 140;
 
-const SERIF = 'Georgia, "Times New Roman", serif';
+export const SERIF = 'Georgia, "Times New Roman", serif';
 const PAPER = "#f6efe0";
 const INK = "#2b3a4a";
 const RED = "#b4412f";
@@ -58,7 +60,7 @@ export function cleanText(input: unknown, maxChars = 400): string {
   return Array.from(t).slice(0, maxChars).join("");
 }
 
-type Ctx = CanvasRenderingContext2D;
+export type Ctx = CanvasRenderingContext2D;
 
 function width(ctx: Ctx, s: string): number {
   return ctx.measureText(s).width;
@@ -132,7 +134,7 @@ export function fitText(ctx: Ctx, text: string, o: FitOptions): { size: number; 
   }
 }
 
-interface BlockStyle extends Omit<FitOptions, "font"> {
+export interface BlockStyle extends Omit<FitOptions, "font"> {
   font: (size: number) => string;
   color: string;
   align: CanvasTextAlign;
@@ -140,7 +142,7 @@ interface BlockStyle extends Omit<FitOptions, "font"> {
 }
 
 /** Draws fitted, wrapped text starting at y (top). Returns the y just below the block. */
-function drawBlock(ctx: Ctx, text: string, x: number, y: number, s: BlockStyle): number {
+export function drawBlock(ctx: Ctx, text: string, x: number, y: number, s: BlockStyle): number {
   const { size, lines } = fitText(ctx, text, s);
   const lh = size * (s.lineHeight ?? 1.25);
   ctx.font = s.font(size);
@@ -171,12 +173,12 @@ function paper(ctx: Ctx, w: number, h: number): void {
   }
 }
 
-function circle(ctx: Ctx, x: number, y: number, r: number): void {
+export function circle(ctx: Ctx, x: number, y: number, r: number): void {
   ctx.beginPath();
   ctx.arc(x, y, r, 0, Math.PI * 2);
 }
 
-function drawPaw(ctx: Ctx, cx: number, cy: number, s: number, color: string): void {
+export function drawPaw(ctx: Ctx, cx: number, cy: number, s: number, color: string): void {
   ctx.fillStyle = color;
   circle(ctx, cx, cy + s * 0.28, s * 0.36);
   ctx.fill();
@@ -193,7 +195,7 @@ function drawPaw(ctx: Ctx, cx: number, cy: number, s: number, color: string): vo
 }
 
 /** Perforated paper rectangle: white card with paper-coloured holes along the edge. */
-function perforatedRect(
+export function perforatedRect(
   ctx: Ctx,
   x: number,
   y: number,
@@ -223,7 +225,14 @@ function perforatedRect(
   }
 }
 
-function postmark(ctx: Ctx, cx: number, cy: number, r: number, label: string, color: string): void {
+export function postmark(
+  ctx: Ctx,
+  cx: number,
+  cy: number,
+  r: number,
+  label: string,
+  color: string,
+): void {
   ctx.save();
   ctx.strokeStyle = color;
   ctx.fillStyle = color;
@@ -261,13 +270,7 @@ function postmark(ctx: Ctx, cx: number, cy: number, r: number, label: string, co
 }
 
 function imgSize(p: PhotoSource): { w: number; h: number } {
-  const anyP = p as {
-    naturalWidth?: number;
-    naturalHeight?: number;
-    width: number;
-    height: number;
-  };
-  return { w: anyP.naturalWidth || anyP.width || 0, h: anyP.naturalHeight || anyP.height || 0 };
+  return sourceSize(p);
 }
 
 /** Source rectangle that fills dst with no distortion (cover fit), centred. */
@@ -763,22 +766,6 @@ export async function makeKeepsakeBlob(
   );
 }
 
-/** Decodes a photo the person picked. The temporary object URL is revoked as soon as decoding ends. */
-export async function loadPhotoFile(file: Blob): Promise<PhotoSource> {
-  if (typeof createImageBitmap === "function") return createImageBitmap(file);
-  const url = URL.createObjectURL(file);
-  try {
-    return await new Promise<HTMLImageElement>((resolve, reject) => {
-      const img = new Image();
-      img.onload = () => resolve(img);
-      img.onerror = () => reject(new Error("Could not read that photo"));
-      img.src = url;
-    });
-  } finally {
-    URL.revokeObjectURL(url);
-  }
-}
-
 export function downloadBlob(blob: Blob, filename: string): void {
   const url = URL.createObjectURL(blob);
   const a = document.createElement("a");
@@ -806,7 +793,7 @@ export async function shareBlob(
       return "download";
     const file = new File([blob], filename, { type: blob.type || "image/png" });
     if (!nav.canShare({ files: [file] })) return "download";
-    await nav.share({ files: [file], text });
+    await nav.share(text ? { files: [file], text } : { files: [file] });
     return "shared";
   } catch (e) {
     if (e instanceof DOMException && e.name === "AbortError") return "cancelled";

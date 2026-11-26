@@ -14,10 +14,10 @@ describe("shared product card and title fixes", () => {
     const meta = (t: string) =>
       pageHead({ title: t, description: "d", path: "/x" }).meta as { title?: string }[];
     const short = meta("Short title")[0]?.title ?? "";
-    expect(short).toContain("Paws & Passage");
+    expect(short).toContain("Paw & Passage");
     const long = meta("A fairly long page title that would overflow the limit")[0]?.title ?? "";
     expect(long.length).toBeLessThanOrEqual(60);
-    expect(long).not.toContain("Paws & Passage");
+    expect(long).not.toContain("Paw & Passage");
   });
   it("shows the name without the brand when the card has a brand line", () => {
     expect(productNameOnly({ brand: "Pet Parents", name: "Pet Parents Pawtect Pads" })).toBe(

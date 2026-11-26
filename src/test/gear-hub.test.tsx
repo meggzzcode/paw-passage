@@ -48,7 +48,6 @@ const link = (o: Partial<AffiliateLink>): AffiliateLink => ({
   network: "Amazon Associates",
   url: "https://www.amazon.com/dp/X?tag=t",
   approved: true,
-  kind: "product",
   ...o,
 });
 
@@ -119,7 +118,6 @@ describe("link fallback", () => {
   });
   it("an unapproved link, or a stay link, is never used for a product", () => {
     expect(resolveProductLink(base, [link({ approved: false })])!.kind).toBe("manufacturer");
-    expect(resolveProductLink(base, [link({ kind: "stay" })])!.kind).toBe("manufacturer");
   });
   it("then the manufacturer, then a plain retailer, then nothing; plain links are never sponsored", () => {
     const pdf = {
@@ -231,6 +229,6 @@ describe("routes, meta and sitemap", () => {
         .sort(),
     );
     expect(new Set(paths).size).toBe(paths.length);
-    expect(staticPaths).toContain("/tools");
+    expect(staticPaths).toContain("/tools/packing-list");
   });
 });

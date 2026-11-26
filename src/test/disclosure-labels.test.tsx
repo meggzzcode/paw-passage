@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { renderToStaticMarkup } from "react-dom/server";
-import { AFFILIATE_BOOK_LABEL, AFFILIATE_BUY_LABEL } from "@/lib/disclosure";
+import { AFFILIATE_BUY_LABEL } from "@/lib/disclosure";
 import { Markdown } from "@/components/site/Markdown";
 import { getApprovedLink } from "@/content/affiliates";
 import { products } from "@/content/gear";
@@ -11,10 +11,7 @@ import { productLinkId } from "@/content/affiliate-usage";
 describe("affiliate button labels", () => {
   it("labels use the agreed wording and never say Sponsored", () => {
     expect(AFFILIATE_BUY_LABEL).toBe("Affiliate link · We may earn a commission if you buy.");
-    expect(AFFILIATE_BOOK_LABEL).toBe(
-      "Affiliate link · We may earn a commission if you book, at no extra cost to you.",
-    );
-    expect(AFFILIATE_BUY_LABEL + AFFILIATE_BOOK_LABEL).not.toMatch(/sponsored/i);
+    expect(AFFILIATE_BUY_LABEL).not.toMatch(/sponsored/i);
   });
 
   it("pick cards put the buy button before Details and carry no per-button label (the page notice discloses)", () => {

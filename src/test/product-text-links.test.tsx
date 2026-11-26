@@ -26,7 +26,6 @@ const link = (id: string, approved = true): AffiliateLink => ({
   network: "Amazon Associates",
   url: AMAZON,
   approved,
-  kind: "product",
 });
 const fixture = [
   prod({ id: "crate-one", name: "Cozy Crate", aliases: ["Cozy"], affiliateId: "crate-one" }),

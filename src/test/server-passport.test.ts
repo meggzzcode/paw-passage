@@ -1,7 +1,15 @@
 // Server-side purchase verification, sessions, progress sync and premium delivery, against an in-memory store and a
 // fake provider. Gumroad specifics are UNVERIFIED (CW-PAY-1); these tests pin OUR behaviour, not Gumroad's.
 import { afterEach, describe, expect, it, vi } from "vitest";
-import { add, emptySave, members, type Save } from "../passport/progress";
+import {
+  add,
+  addToCollection,
+  createCollection,
+  emptySave,
+  listCollections,
+  members,
+  type Save,
+} from "../passport/progress";
 import { syntheticPremium } from "../passport/fixtures/premium.synthetic";
 import { createApi, type ApiDeps } from "../server/passport/api";
 import { customersStoreName, premiumStoreName } from "../server/passport/config";
@@ -162,6 +170,29 @@ describe("activation and verification", () => {
     expect(members(noLocal.json["save"].done)).toHaveLength(2);
   });
 
+  it("a v1 local save activates into a v2 record", async () => {
+    const h = setup();
+    const v1 = {
+      v: 1,
+      rev: 0,
+      profile: { data: { name: "Juno", nervousAroundPeople: true }, at: 5 },
+      done: { added: { "adv-aaaaa1": 7 }, removed: {} },
+      favorites: { added: {}, removed: {} },
+      saved: { added: {}, removed: {} },
+      memories: {},
+      repeats: {},
+    };
+    const r = await call(h, "POST", "/api/access/activate", {
+      body: { code: GOOD, localSave: v1 },
+    });
+    expect(r.status).toBe(200);
+    expect(r.json["save"].v).toBe(2);
+    expect(members(r.json["save"].done)).toEqual(["adv-aaaaa1"]);
+    expect(r.json["save"].profile.data).toEqual({ name: "Juno", people: "nervous" });
+    const again = await activate(h, GOOD, withDone("adv-bbbbb2", 3000));
+    expect(members(again.json["save"].done).sort()).toEqual(["adv-aaaaa1", "adv-bbbbb2"]);
+  });
+
   it("an invalid local save is refused", async () => {
     const h = setup();
     const r = await call(h, "POST", "/api/access/activate", {
@@ -219,6 +250,78 @@ describe("sessions and CSRF", () => {
 
   it("GET /api/progress without a cookie is 401", async () => {
     expect((await call(setup(), "GET", "/api/progress")).status).toBe(401);
+  });
+});
+
+describe("collections sync", () => {
+  const COL = "col-abcd1234";
+  const hand = (ids: string[]): Save =>
+    createCollection(emptySave(), { id: COL, kind: "handpicked", name: "Rainy", ids }, 10);
+
+  it("collections from two devices merge and survive a PUT", async () => {
+    const h = setup();
+    const a = await activate(h);
+    const phone = addToCollection(hand(["adv-aaaaa1"]), COL, "adv-bbbbb2", 20);
+    const laptop = addToCollection(hand(["adv-aaaaa1"]), COL, "adv-ccccc3", 30);
+    for (const save of [phone, laptop]) {
+      const r = await call(h, "PUT", "/api/progress", {
+        cookie: a.cookie!,
+        csrf: a.csrf,
+        body: { save, baseRev: 0 },
+      });
+      expect(r.status).toBe(200);
+    }
+    const got = await call(h, "GET", "/api/progress", { cookie: a.cookie! });
+    expect(got.json["save"].v).toBe(2);
+    const cols = listCollections(got.json["save"]);
+    expect(cols).toHaveLength(1);
+    expect(cols[0]).toMatchObject({
+      kind: "handpicked",
+      ids: ["adv-aaaaa1", "adv-bbbbb2", "adv-ccccc3"],
+    });
+  });
+
+  it("an old v1 record in storage is upgraded on read and accepts a v2 write", async () => {
+    const h = setup();
+    const a = await activate(h);
+    const key = customerKeys(h)[0]!;
+    const cur = (await h.customers.get(key))!;
+    const rec = cur.value as { save: unknown };
+    rec.save = {
+      v: 1,
+      rev: 1,
+      profile: { data: {}, at: 0 },
+      done: { added: { "adv-aaaaa1": 5 }, removed: {} },
+      favorites: { added: {}, removed: {} },
+      saved: { added: {}, removed: {} },
+      memories: {},
+      repeats: {},
+    };
+    await h.customers.update(key, rec, cur.etag);
+    const r = await call(h, "PUT", "/api/progress", {
+      cookie: a.cookie!,
+      csrf: a.csrf,
+      body: { save: hand(["adv-bbbbb2"]), baseRev: 1 },
+    });
+    expect(r.status).toBe(200);
+    expect(r.json["save"].v).toBe(2);
+    expect(members(r.json["save"].done)).toEqual(["adv-aaaaa1"]);
+    expect(listCollections(r.json["save"])).toHaveLength(1);
+  });
+
+  it("malformed collections and unknown keys are refused", async () => {
+    const h = setup();
+    const a = await activate(h);
+    const bad = hand([]);
+    (bad.collections[COL] as unknown as { name: { v: string } }).name.v = "x".repeat(41);
+    for (const save of [bad, { ...emptySave(), sneaky: 1 }]) {
+      const r = await call(h, "PUT", "/api/progress", {
+        cookie: a.cookie!,
+        csrf: a.csrf,
+        body: { save, baseRev: 0 },
+      });
+      expect(r.status).toBe(400);
+    }
   });
 });
 

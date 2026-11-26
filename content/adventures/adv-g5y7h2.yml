@@ -1,0 +1,113 @@
+schema: 2
+id: adv-g5y7h2
+title: The Great Neighborhood Safari
+clue: Somewhere close by there is wildlife, and today you have the binoculars.
+reveal: Turn your own block into a safari. Make a pass and a spotter checklist, craft cardboard binoculars and let your dog's ears and nose tell you where to look for the day's sightings.
+objective: Tick off at least five items on a spotter checklist on a short walk, guided by what your dog notices.
+instructions:
+  - "Make the safari pass: a paper ticket with your dog's name and the date. Write a checklist of eight sightings: a bird on a wire, a squirrel, a cat in a window, a bee on a flower, a snail or worm, a tree with a hole, something flapping in the wind, and paw prints in mud."
+  - Make binoculars from two cardboard tubes taped side by side. They are for you, not for your dog.
+  - Choose a loop near home of ten to twenty minutes, and keep your dog on their leash.
+  - Walk slowly. When your dog's ears prick or their nose lifts, stop and look the way they are looking first. Tick the checklist when you spot something.
+  - Keep a respectful distance from wildlife. Never let your dog chase, approach or eat anything. If they fix on something, let them watch for a few seconds and then move on calmly.
+  - Head home when you have five ticks or your dog signals they are done. Fill in the pass with your favourite sighting.
+twist: "Your dog is the tracker: the moment their ears or nose lock on tells you where to point the binoculars."
+variations:
+  - "Balcony or window safari: tick the checklist from one comfortable spot."
+  - "Yard safari: hunt for the checklist in your own garden."
+  - "For a nervous dog: go at a quiet hour and keep the loop short."
+  - "For a senior dog: take a bench safari and let the sightings come to you."
+completion: Five or more items are ticked, or your dog signals that they are done.
+photoIdea: Your dog mid-look at something off camera, ears up, taken at a distance without calling them.
+memoryPrompt: What was the favourite sighting, and who spotted it first?
+minutesMin: 20
+minutesMax: 45
+activeMinutes: 20
+costMin: 0
+costMax: 0
+prep: light
+supplies:
+  - Paper and a pen
+  - Two cardboard tubes from the recycling and tape
+  - Leash
+optionalSupplies:
+  - Phone for photos
+requires:
+  - paper-and-pens
+  - household-items
+  - leash-and-harness
+substitutes:
+  - No tubes? Make binoculars from your fingers, or skip them.
+transport: walkable
+reservation:
+  needed: false
+setting: outdoor
+homes:
+  - apartment
+  - house-no-yard
+  - house-with-yard
+space: none
+places:
+  - home
+  - city
+  - countryside
+seasons: []
+avoidWeather:
+  - heat
+lifeStages:
+  - puppy
+  - adult
+  - senior
+personalities:
+  - curious
+  - adventurous
+sizes: []
+energy: moderate
+dogMobility: moderate
+ownerMobility: short-walk
+stepFree: false
+crowd: some
+strangers: true
+otherDogs: true
+noise: some
+food: false
+water: none
+safety:
+  - Keep your dog on a leash and away from wildlife, and never let them eat anything they find.
+  - Check the pavement with your hand in hot or icy weather, and carry water.
+  - Leave early if the area is busy and your dog seems uneasy.
+activityTypes:
+  - outdoor-exploration
+  - scent-and-discovery
+  - play-and-games
+collections:
+  - the-curious-explorer
+  - city-explorers
+  - the-great-outdoors
+stamps:
+  - first-adventure
+  - city-explorer
+  - trail-blazer
+achievements: []
+keepsake:
+  family: trading-card
+  theme: explorer-card
+  headline: SAFARI EXPLORER
+  subhead: Spotter card. Tracked by one very good nose
+access: free
+status: published
+relatedGuides: []
+affiliateProducts: []
+research:
+  - label: "Cornell Riney Canine Health Center: canine enrichment ideas"
+    url: https://riney.vet.cornell.edu/member-benefits-health-tips/canine-enrichment-ideas
+  - label: "ASPCA: canine DIY enrichment"
+    url: https://www.aspca.org/pet-care/dog-care/canine-diy-enrichment
+review:
+  ownerAppeal: 8
+  dogEnjoyment: 8
+  originality: 8
+  adventureFactor: 9
+  practicality: 8
+  memoryValue: 8
+  reviewedOn: 2026-11-26

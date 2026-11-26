@@ -1,44 +1,102 @@
-id: "adv-m5z1q7"
-title: "A Trip Down Memory Lane"
-clue: "Then and now, side by side, and one of you has not changed their expression."
-description: "Dig out an old photo of your dog, find a way to recreate the setting or the pose today, and make a then-and-now keepsake that shows how far you have come together."
+schema: 2
+id: adv-m5z1q7
+title: A Trip Down Memory Lane
+clue: Then and now, side by side, and one of you has not changed their expression.
+reveal: Find an old photo of your dog, bring back something from it and recreate the setting today. Put the two side by side and see what has changed and what has not.
+objective: Recreate an old photo of your dog and make a then-and-now pair.
 instructions:
-  - "Scroll your photos for an early picture of your dog. Choose one with a clear place or object in it."
-  - "Work out where it was taken, or what it was, and head there if you can. If not, recreate it at home with a similar blanket or corner."
-  - "Take a new photo from the same angle without forcing a pose, and wait for a natural moment."
-  - "Place the two photos side by side and jot a line for each: what you remember then, and what you notice now."
-twist: "Look at the old photo together and let your dog sniff the screen or print before you head out."
-prep: "light"
-supplies: ["Old photo or print", "Phone or camera"]
-minutesMin: 15
-minutesMax: 60
+  - Scroll your photos for an early picture of your dog with a clear place or object in it, such as a blanket, a toy or a corner of a room.
+  - Work out where it was taken. If it is a quiet place your dog still enjoys, plan to go there. If not, recreate it at home with a similar blanket or corner.
+  - Gather one item from the photo, such as the old toy or blanket, and let your dog sniff it before you start. Let them take it in at their own pace.
+  - Set up the same angle and take a new photo without posing them. Wait for a natural moment; many frames are fine.
+  - "Place the two photos side by side and write one line for each: what you remember then and what you notice now."
+twist: "Your dog gets to revisit too: bring back the old toy, blanket or spot and see what they make of it."
+variations:
+  - "At home: recreate the old photo with a blanket and a corner of the room."
+  - "For a puppy: make a first-month photo now to compare in a year."
+  - "For a dog who has no early photos: choose the oldest one you have."
+completion: You have a new photo that matches the old one and a line written for each.
+photoIdea: The new photo, from the same angle as the old one, with your dog relaxed rather than still.
+memoryPrompt: What has changed since the first photo, and what has not?
+minutesMin: 20
+minutesMax: 45
+activeMinutes: 10
 costMin: 0
 costMax: 0
-setting: "either"
-environments: ["apartment", "house", "city", "countryside", "beach", "mountains"]
-lifeStages: ["puppy", "adult", "senior"]
-energy: "gentle"
-mobilityFriendly: true
-crowd: "none"
-otherDogs: false
+prep: light
+supplies:
+  - An old photo
+  - Phone or camera
+optionalSupplies:
+  - The old toy or blanket from the photo
+requires:
+  - camera-phone
+substitutes:
+  - No old print? Use the oldest photo on your phone.
+transport: none
+reservation:
+  needed: false
+setting: either
+homes:
+  - apartment
+  - house-no-yard
+  - house-with-yard
+space: none
+places:
+  - home
+  - city
+  - countryside
 seasons: []
+avoidWeather: []
+lifeStages:
+  - puppy
+  - adult
+  - senior
+personalities:
+  - cozy
+  - gentle
+sizes: []
+energy: gentle
+dogMobility: low
+ownerMobility: seated
+stepFree: true
+crowd: none
+strangers: false
+otherDogs: false
+noise: quiet
+food: false
+water: none
 safety:
-  - "Go only where your dog is comfortable now. A beloved old spot may be too far or too busy today."
-  - "Never ask your dog to hold a pose. A relaxed moment is the whole point."
-variations:
-  - "Recreate the photo at home from the same angle, using a blanket or a corner of the room."
-  - "For a puppy: make a first-month photo to compare with in a year."
-memoryPrompt: "What has changed since the first photo, and what has not?"
-keepsake: "then-and-now"
+  - Go only where your dog is comfortable now. A beloved old place may be too far or too busy today.
+  - Never ask your dog to hold a pose. A relaxed moment is the whole point.
+activityTypes:
+  - memory-making
+  - photography
 collections:
-  [
-    "home-sweet-home",
-    "rainy-day-club",
-    "the-golden-years",
-    "adventures-without-spending-a-dollar",
-    "the-cozy-companion",
-  ]
-stamps: ["first-adventure", "cozy-companion"]
-access: "free"
-status: "published"
+  - the-golden-years
+  - our-story
+  - creative-companions
+stamps:
+  - first-adventure
+  - cozy-companion
+achievements: []
+keepsake:
+  family: then-and-now
+  theme: then-and-now
+  headline: THEN AND NOW
+  subhead: Same spot, a little more story
+access: free
+status: published
 relatedGuides: []
+affiliateProducts: []
+research:
+  - label: "Cornell Riney Canine Health Center: senior dog enrichment"
+    url: https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/senior-dog-enrichment
+review:
+  ownerAppeal: 9
+  dogEnjoyment: 7
+  originality: 7
+  adventureFactor: 7
+  practicality: 8
+  memoryValue: 10
+  reviewedOn: 2026-11-26

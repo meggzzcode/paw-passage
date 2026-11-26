@@ -1,71 +1,141 @@
 collections:
-  - slug: "five-minute-moments"
-    title: "Five-Minute Moments"
+  - slug: "five-minute-wonders"
+    title: "Five-Minute Wonders"
     tagline: "Tiny adventures for busy days."
-    description: "Short, low-prep adventures that fit between emails and errands. Each one can be done in a few minutes and still leave a memory."
+    description: "Short, low-prep adventures that fit between emails and errands and still leave a memory behind."
     order: 1
+    accent: "poppy"
+    premiumOnly: false
+  - slug: "rainy-day-club"
+    title: "Rainy Day Club"
+    tagline: "Bad weather, good company."
+    description: "Cosy indoor adventures for wet, cold or windy days when staying in is the plan."
+    order: 2
+    accent: "sky"
+    premiumOnly: false
+  - slug: "creative-companions"
+    title: "Creative Companions"
+    tagline: "Make something together."
+    description: "Adventures that turn an ordinary afternoon into photographs, pages and keepsakes you made with your dog."
+    order: 3
+    accent: "plum"
+    premiumOnly: false
+  - slug: "doggy-date-club"
+    title: "Doggy Date Club"
+    tagline: "A date for two."
+    description: "Unhurried outings for you and your dog: a blanket, a morning, a theme and nowhere else to be."
+    order: 4
+    accent: "ochre"
+    premiumOnly: false
+  - slug: "the-curious-explorer"
+    title: "The Curious Explorer"
+    tagline: "Fresh eyes on familiar streets."
+    description: "Walks that let your dog's nose and curiosity decide what is worth stopping for."
+    order: 5
+    accent: "sage"
+    premiumOnly: false
+  - slug: "taste-and-treat"
+    title: "Taste & Treat"
+    tagline: "Food-led fun, vet-first."
+    description: "Adventures around food and snacks, built to use only what your dog already eats well. Ask your vet about diet before trying anything new."
+    order: 6
+    accent: "ochre"
+    premiumOnly: false
+  - slug: "the-playful-pup"
+    title: "The Playful Pup"
+    tagline: "Games for lively minds."
+    description: "Games and puzzles for dogs who love to play, choose and find things, at any age."
+    order: 7
     accent: "poppy"
     premiumOnly: false
   - slug: "home-sweet-home"
     title: "Home Sweet Home"
     tagline: "The best adventures start at the front door."
     description: "Adventures you can have without leaving the house, using what you already own and the rooms your dog knows best."
-    order: 2
+    order: 8
     accent: "ochre"
-    premiumOnly: false
-  - slug: "rainy-day-club"
-    title: "Rainy Day Club"
-    tagline: "Bad weather, good company."
-    description: "Cosy indoor adventures for wet, cold or windy days when staying in is the plan."
-    order: 3
-    accent: "sky"
-    premiumOnly: false
-  - slug: "weekend-together"
-    title: "Weekend Together"
-    tagline: "Slow mornings and bigger outings."
-    description: "Adventures with a bit more time: picnics, shoreline strolls and sunrise starts to make a weekend feel special."
-    order: 4
-    accent: "sage"
-    premiumOnly: false
-  - slug: "the-golden-years"
-    title: "The Golden Years"
-    tagline: "Gentle adventures at a senior pace."
-    description: "Unhurried adventures for older dogs, with easy variations that can be done in place and at your dog's own speed."
-    order: 5
-    accent: "plum"
-    premiumOnly: false
-  - slug: "apartment-adventures"
-    title: "Apartment Adventures"
-    tagline: "Big memories in small spaces."
-    description: "Adventures that work in an apartment, on a balcony or on the block outside, with no yard needed."
-    order: 6
-    accent: "ink"
     premiumOnly: false
   - slug: "city-explorers"
     title: "City Explorers"
     tagline: "Your neighbourhood, with fresh eyes."
     description: "Urban adventures that turn familiar streets, parks and corners into a day of discovery."
-    order: 7
+    order: 9
     accent: "sky"
     premiumOnly: false
+  - slug: "the-great-outdoors"
+    title: "The Great Outdoors"
+    tagline: "Fresh air at your dog's pace."
+    description: "Adventures in yards, parks and green corners, planned around comfort, shade and a slow pace."
+    order: 10
+    accent: "sage"
+    premiumOnly: false
+  - slug: "beach-days-and-waterside"
+    title: "Beach Days & Waterside Escapes"
+    tagline: "Shores, lakes and riverbanks."
+    description: "Waterside adventures need extra care with conditions and supervision. The premium library fills this collection; there are no free adventures here yet."
+    order: 11
+    accent: "sky"
+    premiumOnly: true
   - slug: "road-trip-adventures"
     title: "Road Trip Adventures"
     tagline: "Stops, stamps and memories along the way."
-    description: "Adventures for the road. Note for editors: this collection is filled by the premium library, so it has no free adventures yet."
-    order: 8
+    description: "Adventures for the road and for days away from home. The premium library fills this collection; there are no free adventures here yet."
+    order: 12
     accent: "ochre"
     premiumOnly: true
-  - slug: "adventures-without-spending-a-dollar"
-    title: "Adventures Without Spending a Dollar"
-    tagline: "Zero cost, full of heart."
-    description: "Every adventure here costs nothing. Use what you have and the time you spend together."
-    order: 9
+  - slug: "camping-companions"
+    title: "Camping Companions"
+    tagline: "Nights away, under canvas or stars."
+    description: "Camping-inspired adventures with a careful eye on weather, gear and rest. The premium library fills this collection; there are no free adventures here yet."
+    order: 13
+    accent: "sage"
+    premiumOnly: true
+  - slug: "puppys-first-chapter"
+    title: "Puppy's First Chapter"
+    tagline: "Gentle firsts, at a puppy's own speed."
+    description: "Early adventures planned around your vet's guidance and your puppy's own development. The premium library fills this collection; there are no free adventures here yet."
+    order: 14
+    accent: "poppy"
+    premiumOnly: true
+  - slug: "rescue-and-new-beginnings"
+    title: "Rescue & New Beginnings"
+    tagline: "No pressure, no timetable."
+    description: "Adventures for dogs settling into a new home, with no forced meetings and no milestones to hit. The premium library fills this collection; there are no free adventures here yet."
+    order: 15
+    accent: "plum"
+    premiumOnly: true
+  - slug: "the-golden-years"
+    title: "The Golden Years"
+    tagline: "Gentle adventures at a senior pace."
+    description: "Unhurried adventures for older dogs, with easy variations that can be done in place and at your dog's own speed."
+    order: 16
+    accent: "plum"
+    premiumOnly: false
+  - slug: "seasons-together"
+    title: "Seasons Together"
+    tagline: "The time of year, noticed."
+    description: "Adventures that mark the season you are in, from a spring picnic to a first-light morning."
+    order: 17
     accent: "sage"
     premiumOnly: false
-  - slug: "the-cozy-companion"
-    title: "The Cozy Companion"
-    tagline: "Quiet moments side by side."
-    description: "Soft, slow adventures for time together on the sofa, by the window or in a blanket fort."
-    order: 10
-    accent: "plum"
+  - slug: "holidays-and-celebrations"
+    title: "Holidays & Celebrations"
+    tagline: "Marking the days that matter."
+    description: "Calm ways to celebrate with your dog that keep the dog's comfort first. The premium library fills this collection; there are no free adventures here yet."
+    order: 18
+    accent: "poppy"
+    premiumOnly: true
+  - slug: "little-splurges"
+    title: "Little Splurges"
+    tagline: "Optional treats, never required."
+    description: "Adventures with an optional small spend, always finishable without buying anything. The premium library fills this collection; there are no free adventures here yet."
+    order: 19
+    accent: "ochre"
+    premiumOnly: true
+  - slug: "our-story"
+    title: "Our Story"
+    tagline: "The adventures that become your history."
+    description: "Adventures about looking back together and keeping what you find, from old photographs to favourite things."
+    order: 20
+    accent: "ink"
     premiumOnly: false

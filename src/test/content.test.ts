@@ -4,7 +4,7 @@ import { allGuides, isPublic } from "@/content/guides";
 const tools = ["checklist", "will-my-dog-be-accepted", "packing-list"];
 // Published guides name their sources with plain publisher links (scripts/remove-citation-numbers.mjs): no numbered
 // markers, every source listed in the Sources list at the end of the page (rendered from the frontmatter), and any inline
-// link to an outside site pointing at one of the guide's own sources. Inline links are light (scripts/lighten-citations.mjs).
+// link to an outside site pointing at one of the guide's own sources.
 const published = (g: (typeof allGuides)[number]) => isPublic(g);
 const text = (g: (typeof allGuides)[number]) => g.body + "\n" + g.faqs.map((f) => f.a).join("\n");
 const sentences = (s: string) => s.split(/(?<=[.!?])\s+(?=[A-Z"([*])/);

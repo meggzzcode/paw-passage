@@ -1,0 +1,110 @@
+schema: 2
+id: adv-v7m2c8
+title: The Pick-a-Path Expedition
+clue: At every fork in the road, the vote goes to the one with the keenest nose.
+reveal: Plan a short walk with three safe forks and let your dog choose the way at each one. Where you end up is the expedition, and the postcard records the route you took together.
+objective: Walk a short route where your dog picks the way at three safe forks, then write up the expedition.
+instructions:
+  - "Before you leave, choose three forks on a familiar route where every option is safe: no road to cross, nothing steep, nowhere you would avoid. Write Fork 1, 2 and 3 on a card with the choices."
+  - At the first fork, stop, loosen the leash and wait a few relaxed seconds. Read your dog's choice from where they look, lean or head with their nose.
+  - Follow their choice for a few minutes. If they do not choose, pick for them and write No vote. You may veto any choice, but only for safety.
+  - Repeat at forks two and three. Give the expedition a name and sketch the route with arrows as you go.
+  - At the end spot, take a break with water and a few quiet minutes, which is the expedition camp.
+  - Draw the route on the back of a postcard and write what you found along the way.
+twist: "A choose-your-own-adventure walk: your dog's lean at each fork decides the route, and you only hold a veto for safety."
+variations:
+  - "Indoor expedition: use forks in a hallway or between rooms."
+  - "For a senior or slow dog: choose three forks within one block, five minutes apart."
+  - "For a quiet day: use a small park with three paths."
+completion: Your dog has voted at three forks, or at the ones you reached, and the route is on the postcard.
+photoIdea: Your dog at a fork looking down the path they chose, taken from behind with the route ahead.
+memoryPrompt: Where did the expedition end up, and which fork surprised you?
+minutesMin: 20
+minutesMax: 45
+activeMinutes: 25
+costMin: 0
+costMax: 0
+prep: light
+supplies:
+  - Leash
+  - Card or postcard
+  - A pen
+  - Water and a bowl
+optionalSupplies: []
+requires:
+  - leash-and-harness
+  - paper-and-pens
+substitutes:
+  - No postcard? Draw the route on the back of any envelope.
+transport: walkable
+reservation:
+  needed: false
+setting: outdoor
+homes:
+  - apartment
+  - house-no-yard
+  - house-with-yard
+space: none
+places:
+  - city
+  - countryside
+seasons: []
+avoidWeather:
+  - heat
+lifeStages:
+  - puppy
+  - adult
+  - senior
+personalities:
+  - adventurous
+  - curious
+sizes: []
+energy: moderate
+dogMobility: moderate
+ownerMobility: short-walk
+stepFree: false
+crowd: some
+strangers: true
+otherDogs: true
+noise: some
+food: false
+water: none
+safety:
+  - Choose only forks where every option is safe, and keep your dog on a leash. Your veto always wins.
+  - Check the pavement with your hand in hot or icy weather and bring water.
+  - Turn back at any point if your dog slows down, lags or seems unsettled.
+activityTypes:
+  - outdoor-exploration
+  - travel
+  - problem-solving
+collections:
+  - the-curious-explorer
+  - city-explorers
+stamps:
+  - first-adventure
+  - trail-blazer
+  - city-explorer
+  - road-tripper
+achievements: []
+keepsake:
+  family: travel-postcard
+  theme: day-trip
+  headline: CAPTAIN'S ROUTE
+  subhead: Route chosen by the dog
+access: free
+status: published
+relatedGuides: []
+affiliateProducts: []
+research:
+  - label: "Cornell Riney Canine Health Center: canine enrichment ideas"
+    url: https://riney.vet.cornell.edu/member-benefits-health-tips/canine-enrichment-ideas
+  - label: "Cornell Riney Canine Health Center: senior dog enrichment"
+    url: https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/senior-dog-enrichment
+review:
+  ownerAppeal: 8
+  dogEnjoyment: 8
+  originality: 9
+  adventureFactor: 9
+  practicality: 7
+  memoryValue: 8
+  reviewedOn: 2026-11-26

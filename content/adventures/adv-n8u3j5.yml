@@ -1,0 +1,108 @@
+schema: 2
+id: adv-n8u3j5
+title: The Living Room Campout
+clue: No tent poles and no mosquitoes, just a night away that never leaves the house.
+reveal: "Pitch a camp in your living room: a low blanket shelter, a pretend campfire and a ticket for your dog's campsite. You are a few steps from the kitchen, but the evening feels like somewhere else."
+objective: Build a low open camp, let your dog choose their campsite and spend an evening there together.
+instructions:
+  - Pick the camp spot and clear the floor. Move cables, candles and heaters well away and put down a non-slip mat or rug.
+  - "Build a low, open camp: drape a blanket over two chairs or a sofa arm so one whole side stays open and your dog can walk in and out. Never cover your dog."
+  - Make two paper tickets, Campsite 1 and Camper. Put your dog's bed or favourite blanket inside and let them choose where in the camp to settle. That is their pitch.
+  - "Make a campfire without a flame: a ring of cushions with a battery lantern or tealight in the middle."
+  - Dim the lights and settle in for fifteen to twenty minutes. Tell the campfire story of the day in a soft voice, or play a quiet nature soundtrack at low volume.
+  - "Lights out: say goodnight, stick the tickets on a page and note the campsite name and who fell asleep first."
+twist: Your dog chooses the campsite and the ticket stub marks the spot. There is no gear to buy, only a place that feels like somewhere else.
+variations:
+  - "Very low camp: a single blanket over a sofa arm so a stiff dog can step in easily."
+  - "For a noise-sensitive or nervous dog: skip the soundtrack and sit quietly near the camp."
+  - "For a lively dog: start with a short hunt for toy firewood around the room before the camp."
+  - "Rainy-afternoon version: hold the campout by daylight at a window."
+completion: Your dog has spent a few calm minutes at the campsite they chose and the tickets are on the page.
+photoIdea: Your dog settled in the camp with the lantern glow, taken without a flash.
+memoryPrompt: Where did your dog pitch camp, and who fell asleep first?
+minutesMin: 60
+minutesMax: 120
+activeMinutes: 20
+costMin: 0
+costMax: 0
+prep: light
+supplies:
+  - Blankets and cushions
+  - Paper and a pen for tickets
+  - A battery lantern or tealight
+optionalSupplies:
+  - A device for a nature soundtrack
+requires:
+  - blanket
+  - household-items
+  - paper-and-pens
+substitutes:
+  - No lantern? A phone torch under a cushion gives the glow.
+  - No spare chairs? Drape the blanket over the sofa arm.
+transport: none
+reservation:
+  needed: false
+setting: indoor
+homes:
+  - apartment
+  - house-no-yard
+  - house-with-yard
+space: a-room
+places:
+  - home
+seasons: []
+avoidWeather: []
+lifeStages:
+  - puppy
+  - adult
+  - senior
+personalities:
+  - cozy
+  - gentle
+sizes: []
+energy: gentle
+dogMobility: low
+ownerMobility: minimal-walking
+stepFree: true
+crowd: none
+strangers: false
+otherDogs: false
+noise: quiet
+food: false
+water: none
+safety:
+  - Keep the camp open on at least one side so your dog can leave whenever they like, and never cover them with blankets.
+  - No real flames. Keep the camp away from heaters, candles and trailing cables.
+  - Keep any sound low; stop it if your dog seems unsettled.
+activityTypes:
+  - relaxation
+  - celebrations
+  - memory-making
+collections:
+  - home-sweet-home
+  - rainy-day-club
+stamps:
+  - first-adventure
+  - cozy-companion
+  - night-owl
+achievements: []
+keepsake:
+  family: event-ticket
+  theme: campout-ticket
+  headline: CAMPGROUND PASS
+  subhead: Living room campsite. One night only
+access: free
+status: published
+relatedGuides: []
+affiliateProducts: []
+research:
+  - label: "Cornell Riney Canine Health Center: senior dog enrichment"
+    url: https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/senior-dog-enrichment
+review:
+  ownerAppeal: 8
+  dogEnjoyment: 8
+  originality: 8
+  adventureFactor: 8
+  practicality: 7
+  memoryValue: 9
+  reviewedOn: 2026-11-26

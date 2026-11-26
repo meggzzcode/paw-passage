@@ -1,0 +1,114 @@
+schema: 2
+id: adv-j4k9e1
+title: The Great Doggy Bake-Off
+clue: Three entries, one very honest judge and not an oven mitt in sight.
+reveal: "Stage a tiny bake-off with three plates made only from foods your dog already eats well. Your dog is the only judge: present each entry, let their nose decide and award the paper rosette."
+objective: Plate three small entries from foods your dog already eats, let your dog judge them and make a poster of the result.
+instructions:
+  - Plan three tiny entries using only foods your dog already eats well, such as their usual treats or foods your vet is happy with. Nothing new today.
+  - "Make the entries. The Showstopper: five tiny pieces of their usual treat arranged like a flower on a plate. The Frozen Fancy: one usual treat frozen in an ice cube tray of plain water. The Lick-Off: a thin smear of a spread your dog already eats, with no xylitol, on a plate or lick mat."
+  - Decide the total first and keep it small. Take what you use out of today's meal portions, and ask your vet about diet if you are unsure.
+  - "Open the bakery: set a counter on a non-slip floor with a paper menu naming each entry. Present one entry at a time and let your dog come to it in their own time. Remove each plate when they finish or walk away."
+  - "Score by your dog's behaviour: what they sniffed first, ate most eagerly and stayed with longest. Draw paw-print stars on a scorecard and award the paper rosette to the Chief Taste Tester's favourite."
+  - Clear every plate away, wash the dishes and write the results on a poster.
+twist: "Nothing is baked: it is a tasting contest of foods your dog already enjoys, and the judge's only scoring tool is their own nose."
+variations:
+  - "No-food version, the Sniff-Off: three safe sniffables on plates (a clean sock, a dry leaf, a scrap of cloth) judged the same way."
+  - "For a dog on a special diet: use their usual meal in three small portions plated differently, after asking your vet."
+  - "For a puppy: use tiny pieces and run one entry only."
+completion: Your dog has judged all three entries, or as many as they wanted, and the rosette has a winner.
+photoIdea: Your dog at the judge's table sniffing the winning entry, taken at their eye level.
+memoryPrompt: Which entry won, and what did the judge do first?
+minutesMin: 20
+minutesMax: 45
+activeMinutes: 15
+costMin: 0
+costMax: 10
+prep: some
+supplies:
+  - Your dog's usual treats
+  - Plates or a muffin tin
+  - An ice cube tray
+  - Paper and a pen
+optionalSupplies:
+  - Lick mat
+  - Paper rosette
+requires:
+  - treats
+  - household-items
+  - paper-and-pens
+substitutes:
+  - No ice cube tray? Freeze one treat in a small cup of water.
+  - No lick mat? Use a flat plate.
+transport: none
+reservation:
+  needed: false
+setting: indoor
+homes:
+  - apartment
+  - house-no-yard
+  - house-with-yard
+space: small-indoor
+places:
+  - home
+seasons: []
+avoidWeather: []
+lifeStages:
+  - puppy
+  - adult
+  - senior
+personalities:
+  - playful
+  - curious
+sizes: []
+energy: gentle
+dogMobility: low
+ownerMobility: minimal-walking
+stepFree: true
+crowd: none
+strangers: false
+otherDogs: false
+noise: quiet
+food: true
+dietNotes: Use only foods your dog already eats well and count them in the day's portions. No chocolate, xylitol, grapes, raisins, onion, garlic or macadamia nuts. Ask your vet about diet.
+water: none
+safety:
+  - Use only foods your dog already eats well, and ask your vet about diet before changing anything.
+  - Keep every piece tiny and stay with your dog the whole time.
+  - If your dog guards food or gets tense around it, skip this one or do the no-food Sniff-Off.
+  - Never use chocolate, xylitol sweeteners, grapes, raisins, onion, garlic or macadamia nuts.
+activityTypes:
+  - food-and-treats
+  - creative-projects
+  - celebrations
+collections:
+  - taste-and-treat
+  - rainy-day-club
+  - home-sweet-home
+stamps:
+  - first-adventure
+achievements: []
+keepsake:
+  family: poster
+  theme: bake-off
+  headline: CHIEF TASTE TESTER
+  subhead: The Great Doggy Bake-Off
+access: free
+status: published
+relatedGuides: []
+affiliateProducts: []
+research:
+  - label: "Cornell Riney Canine Health Center: canine enrichment ideas"
+    url: https://riney.vet.cornell.edu/member-benefits-health-tips/canine-enrichment-ideas
+  - label: "Dogs Trust: enrichment activities for dogs"
+    url: https://www.dogstrust.org.uk/dog-advice/life-with-your-dog/enrichment/enrichment-activities-for-dogs
+  - label: "VCA Animal Hospitals: enrichment and foraging toys"
+    url: https://vcahospitals.com/know-your-pet/enrichment
+review:
+  ownerAppeal: 9
+  dogEnjoyment: 8
+  originality: 8
+  adventureFactor: 8
+  practicality: 7
+  memoryValue: 9
+  reviewedOn: 2026-11-26

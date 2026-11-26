@@ -3,42 +3,26 @@ import { affiliateDisclosureBody } from "@/lib/disclosure";
 import { AMAZON_DISCLOSURE } from "@/content/affiliates";
 import { affiliateUsage } from "@/content/affiliate-usage";
 import { products } from "@/content/gear";
-import { site } from "@/config/site";
 
-const body = (m: "affiliate-only" | "public-sources") =>
-  affiliateDisclosureBody(m, AMAZON_DISCLOSURE);
+const body = () => affiliateDisclosureBody(AMAZON_DISCLOSURE);
 
 describe("/affiliate-disclosure text", () => {
   it("carries Amazon's exact required sentence", () => {
     expect(AMAZON_DISCLOSURE).toBe("As an Amazon Associate I earn from qualifying purchases.");
-    for (const m of ["affiliate-only", "public-sources"] as const)
-      expect(body(m)).toContain("As an Amazon Associate I earn from qualifying purchases.");
+    expect(body()).toContain("As an Amazon Associate I earn from qualifying purchases.");
   });
 
-  it("the stay-listing paragraph is true for the active mode", () => {
-    const a = body("affiliate-only");
-    const p = body("public-sources");
-    expect(a).toContain(
-      "Stays are listed when we have a booking link we can use for them, which means a link that may pay us a commission.",
-    );
-    expect(a).not.toContain("does not depend on commissions");
-    expect(p).toContain("Whether a stay is listed does not depend on commissions.");
-    expect(p).not.toContain("which means a link that may pay us a commission");
-    expect(a).not.toBe(p);
+  it("describes the Adventure Passport purchase and no retired stay or booking business", () => {
+    expect(body()).toContain("one-time purchase");
+    expect(body()).not.toMatch(/\bstays?\b|vrbo|airbnb|stay22|booking/i);
   });
 
   it("makes no false blanket claims", () => {
-    for (const m of ["affiliate-only", "public-sources"] as const) {
-      const t = body(m);
-      expect(t).not.toMatch(/every (affiliate )?(buy|booking|buy or booking) button/i);
-      expect(t).not.toMatch(/never decide|never affect/i);
-      expect(t).not.toMatch(/approved arrangement|approved by/i);
-      expect(t).not.toMatch(/partner(ship)? with|official partner|we have tested|we tested/i);
-    }
-  });
-
-  it("the committed site setting renders one of the two texts", () => {
-    expect(["affiliate-only", "public-sources"]).toContain(site.stayDirectoryMode);
+    const t = body();
+    expect(t).not.toMatch(/every (affiliate )?(buy|booking|buy or booking) button/i);
+    expect(t).not.toMatch(/never decide|never affect/i);
+    expect(t).not.toMatch(/approved arrangement|approved by/i);
+    expect(t).not.toMatch(/partner(ship)? with|official partner|we have tested|we tested/i);
   });
 });
 

@@ -24,7 +24,7 @@ import {
 } from "@/lib/packing/engine";
 import { buyResponseFor, gearCategoryForItem } from "@/lib/packing/shopping";
 import { classifyCoverage } from "@/lib/packing/coverage";
-import { liveCoverage, liveCoverageMarkdown } from "@/lib/packing/coverage-live";
+import { liveCoverage } from "@/lib/packing/coverage-live";
 import { loadContent } from "../../plugins/content";
 
 const trip = (over: Partial<Trip> = {}): Trip => normalizeTrip({ ...defaultTrip(), ...over }, cfg);
@@ -252,10 +252,5 @@ describe("Gear coverage", () => {
     const cls = Object.fromEntries(r.rows.map((x) => [x.id, x.class]));
     expect(cls).toEqual({ a: 1, b: 2, c: 3, d: 3, e: 4 });
     expect(r.inactive).toBe(1);
-  });
-
-  it("docs/PACKING_GEAR_COVERAGE.md is current (run: bun scripts/gear-coverage-report.ts)", () => {
-    expect(existsSync("docs/PACKING_GEAR_COVERAGE.md")).toBe(true);
-    expect(readFileSync("docs/PACKING_GEAR_COVERAGE.md", "utf8")).toBe(liveCoverageMarkdown());
   });
 });

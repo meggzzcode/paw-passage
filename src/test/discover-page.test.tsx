@@ -12,7 +12,7 @@ import {
   getSave,
   setProfile,
 } from "@/passport/local-store";
-import { listCollections, members } from "@/passport/progress";
+import { has, listCollections, members } from "@/passport/progress";
 import type { DogProfile, SessionFilters } from "@/passport/profile";
 
 const library = freeLibrary();
@@ -41,20 +41,20 @@ beforeEach(() => {
 afterEach(cleanup);
 
 describe("discover: onboarding and browsing", () => {
-  it("browses without a profile and the Personalise banner is dismissible", () => {
+  it("browses without a profile and the Personalize banner is dismissible", () => {
     show("browse");
     expect(screen.getAllByRole("article").length).toBeGreaterThan(0);
-    const banner = screen.getByRole("complementary", { name: "Personalise" });
+    const banner = screen.getByRole("complementary", { name: "Personalize" });
     expect(banner).toBeInTheDocument();
     fireEvent.click(within(banner).getByRole("button", { name: "Not now" }));
-    expect(screen.queryByRole("complementary", { name: "Personalise" })).toBeNull();
+    expect(screen.queryByRole("complementary", { name: "Personalize" })).toBeNull();
     expect(getSave().profile.data.skipped).toBe(true);
     expect(screen.getAllByRole("article").length).toBeGreaterThan(0);
   });
 
   it("saves quick answers as you go and keeps 'Not sure' as unknown", () => {
     show("browse");
-    fireEvent.click(screen.getByRole("button", { name: "Personalise" }));
+    fireEvent.click(screen.getByRole("button", { name: "Personalize" }));
     fireEvent.change(screen.getByLabelText(/dog's name/i), { target: { value: "Biscuit" } });
     const people = screen.getByRole("group", { name: /unfamiliar people/i });
     fireEvent.click(within(people).getByRole("button", { name: "Nervous" }));
@@ -73,7 +73,7 @@ describe("discover: onboarding and browsing", () => {
 
   it("skipping onboarding keeps browsing available", () => {
     show("made");
-    fireEvent.click(screen.getByRole("button", { name: "Personalise" }));
+    fireEvent.click(screen.getByRole("button", { name: "Personalize" }));
     fireEvent.click(screen.getByRole("button", { name: "Skip for now" }));
     expect(screen.queryByRole("heading", { name: /who's coming/i })).toBeNull();
     expect(screen.getAllByRole("article").length).toBeGreaterThan(0);
@@ -225,51 +225,66 @@ describe("discover: surprise me", () => {
 });
 
 describe("discover: completion and cards", () => {
-  it("completion updates progress everywhere and offers a keepsake without requiring it", () => {
+  const openMore = (card: HTMLElement) => {
+    const more = within(card).getByRole("button", { name: "More" });
+    if (more.getAttribute("aria-expanded") !== "true") fireEvent.click(more);
+  };
+
+  it("completion updates progress everywhere and moves on to the photo filter", () => {
     show("browse");
     const first = screen.getAllByRole("article")[0]!;
     const title = within(first).getByRole("heading").textContent!;
-    expect(within(first).queryByRole("button", { name: "Create keepsake" })).toBeNull();
-    fireEvent.click(within(first).getByRole("button", { name: "Mark complete" }));
+    expect(within(first).queryByRole("button", { name: "Make my photo filter" })).toBeNull();
+    fireEvent.click(within(first).getByRole("button", { name: "Collect it" }));
     expect(getSave().done.added[library.find((a) => a.title === title)!.id]).toBeTruthy();
     expect(within(first).getByRole("status")).toHaveTextContent(/added to your passport/i);
-    expect(within(first).getByRole("button", { name: "Create keepsake" })).toBeInTheDocument();
+    expect(within(first).getByRole("button", { name: "Make my photo filter" })).toBeInTheDocument();
     expect(screen.getByText(new RegExp(`^1 of ${library.length} free adventures`))).toBeTruthy();
     // Same card, same completion, in another tab.
     fireEvent.click(screen.getByRole("tab", { name: "Made for You" }));
     expect(screen.getByText(new RegExp(`^1 of ${library.length} free adventures`))).toBeTruthy();
     fireEvent.click(screen.getByRole("tab", { name: "Browse All" }));
     const again = screen.getAllByRole("article")[0]!;
+    openMore(again);
     fireEvent.click(within(again).getByRole("button", { name: "Do it again" }));
     expect(Object.values(getSave().repeats)).toEqual([1]);
     expect(members(getSave().done)).toHaveLength(1); // a repeat is not a second unique completion
-    fireEvent.click(within(again).getByRole("button", { name: "Undo completion" }));
+    fireEvent.click(within(again).getByRole("button", { name: "Undo collecting" }));
     expect(members(getSave().done)).toHaveLength(0);
   });
 
-  it("shows the compact facts and expands for full details", () => {
+  it("leads with the twist, one 'You'll need' line and labelled chips; the rest is collapsed", () => {
     show("browse");
     const card = screen.getAllByRole("article")[0]!;
     const a = library.find((x) => x.title === within(card).getByRole("heading").textContent)!;
-    expect(within(card).getByLabelText("Kinds of adventure")).toBeInTheDocument();
-    expect(within(card).getByLabelText("At a glance")).toBeInTheDocument();
-    expect(within(card).getByText(/^Keepsake: /)).toBeInTheDocument();
-    expect(within(card).queryByText(a.twist)).toBeNull();
-    const toggle = within(card).getByRole("button", { name: "Show details" });
-    expect(toggle).toHaveAttribute("aria-expanded", "false");
-    fireEvent.click(toggle);
-    expect(toggle).toHaveAttribute("aria-expanded", "true");
-    expect(within(card).getByText(a.twist, { exact: false })).toBeInTheDocument();
-    expect(within(card).getByRole("complementary", { name: /safety/i })).toBeInTheDocument();
+    expect(within(card).getByText(a.twist, { exact: false }).closest(".pa-twist")).not.toBeNull();
+    expect(within(card).getAllByText(/^You'll need:/)).toHaveLength(1);
+    const glance = within(card).getByLabelText("At a glance");
+    expect(glance.textContent).toMatch(/Time/);
+    expect(glance.textContent).toMatch(/Cost/);
+    expect(glance.textContent).toMatch(/Where/);
+    const tags = card.querySelector(".pa-tags");
+    expect((tags?.querySelectorAll("li").length ?? 0) <= 4).toBe(true);
+    const more = within(card).getByText("More details").closest("details")!;
+    expect(more.open).toBe(false);
+    expect(within(card).getByText("How it goes")).toBeInTheDocument();
+    // Overlapping buttons are gone: no separate Liked, no loose Favorite or Save until More is opened.
+    expect(within(card).queryByRole("button", { name: "Liked" })).toBeNull();
+    expect(within(card).queryByRole("button", { name: /Favorite/ })).toBeNull();
+    expect(within(card).queryByRole("button", { name: /Save for later/ })).toBeNull();
   });
 
-  it("records liked and not-for-us feedback and offers collections", () => {
+  it("records not-for-us, merges liked into the heart, and offers collections", () => {
     show("browse");
     const card = screen.getAllByRole("article")[0]!;
     const id = library.find((x) => x.title === within(card).getByRole("heading").textContent)!.id;
+    openMore(card);
+    fireEvent.click(within(card).getByRole("button", { name: /Favorite/ }));
+    expect(getSave().feedback[id]?.value).toBe("liked");
+    expect(has(getSave().favorites, id)).toBe(true);
     fireEvent.click(within(card).getByRole("button", { name: "Not for us" }));
     expect(getSave().feedback[id]?.value).toBe("not-for-us");
-    fireEvent.click(within(card).getByRole("button", { name: "Add to my collection" }));
+    fireEvent.click(within(card).getByRole("button", { name: "Add to collection" }));
     fireEvent.change(within(card).getByLabelText(/new collection name/i), {
       target: { value: "Rainy day" },
     });
@@ -280,7 +295,7 @@ describe("discover: completion and cards", () => {
 
   it("never suggests captions, hashtags or ready-made posts", () => {
     show("browse");
-    for (const b of screen.getAllByRole("button", { name: "Show details" })) fireEvent.click(b);
+    for (const d of document.querySelectorAll("details")) d.open = true;
     const text = document.body.textContent ?? "";
     expect(text).not.toMatch(/caption|hashtag|#\w/i);
   });

@@ -182,7 +182,7 @@ export const gearCategories: GearCategory[] = [
     tagline: "Find a lost dog and handle a small injury.",
     metaTitle: "Dog ID Tags, GPS Trackers and First Aid Kits",
     metaDescription:
-      "ID tags, GPS trackers and first aid kits for travelling with a dog, with what each maker states, any membership involved and what we could not confirm.",
+      "ID tags, GPS trackers and first aid kits for traveling with a dog, with what each maker states, any membership involved and what we could not confirm.",
     intro:
       "Be ready if your dog gets loose or hurt on a trip, with GPS trackers, a clip-on safety light and a small first aid kit. Subscription and coverage wording is the maker's own, and some pages state none.",
     howToChoose: [

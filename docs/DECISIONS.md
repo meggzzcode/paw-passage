@@ -6,7 +6,7 @@ Current architecture and commercial decisions. Each entry states the decision an
 
 | #   | Decision                                                                                                                                                                        | Status  |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| P1  | One product: The Adventure Passport (Paws & Passage). A collectible, self-paced set of dog adventures. Free samples, one-time purchase for the full library.                     | Decided |
+| P1  | One product: The Adventure Passport (Paws & Passage). A collectible, self-paced set of dog adventures. Free samples, one-time purchase for the full library.                    | Decided |
 | P2  | No AI or generative APIs. Content is written by people; selection is a fixed, explainable rule set, so results are reproducible and free to run.                                | Decided |
 | P3  | No accounts for the free experience and no subscriptions. Free progress is stored on the device. Paid access is a license code, not a login.                                    | Decided |
 | P4  | Hard eligibility: a known conflict excludes an adventure; a missing fact holds it behind a question. Unknown is never safe. Ranking, randomness and filters cannot override it. | Decided |

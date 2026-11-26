@@ -7,6 +7,7 @@ import { guidesLink, navItems, restoreLink, unlockCta } from "./nav-items";
 
 const about = [
   ["/about", "About"],
+  ["/how-we-write-adventures", "How we write adventures"],
   ["/contact", "Contact"],
   ["/privacy", "Privacy"],
   ["/terms", "Terms"],

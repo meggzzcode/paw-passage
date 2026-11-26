@@ -3,7 +3,7 @@ import { readFileSync } from "node:fs";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { A1, A2, renderUi } from "./collections-fixtures";
 import { AdventureCard, MysteryCard } from "@/components/passport/AdventureCard";
-import { ReadYourDog, STANDING_LINE, WALK_AWAY_LINE } from "@/components/passport/ReadYourDog";
+import { SAFETY_LINE } from "@/components/passport/ReadYourDog";
 import { StoryTimeline } from "@/components/passport/StoryTimeline";
 import { FavoriteCollections } from "@/components/passport/CollectionsFavorites";
 import { CollectionEditor } from "@/components/passport/CollectionEditor";
@@ -19,26 +19,25 @@ beforeEach(() => {
 });
 afterEach(cleanup);
 
-const STANDING =
-  "General information from public guidance. Not veterinary advice. Ask your vet about your dog.";
-const WALK = "Your dog can walk away at any time. Ending early is a good ending.";
+const LINE = "Your dog can walk away any time. General guidance, not veterinary advice.";
 
-describe("Read your dog card", () => {
-  it("uses the exact lines", () => {
-    expect(STANDING_LINE).toBe(STANDING);
-    expect(WALK_AWAY_LINE).toBe(WALK);
+describe("Safety copy on cards", () => {
+  it("uses the exact merged line", () => {
+    expect(SAFETY_LINE).toBe(LINE);
   });
 
-  it("shows the standing and walk-away lines without opening anything, and lists the signs", () => {
-    render(<ReadYourDog />);
-    expect(screen.getByText(STANDING)).toBeVisible();
-    expect(screen.getByText(WALK)).toBeVisible();
-    const box = screen.getByRole("region", { name: "Read your dog" });
-    expect(box.querySelector("summary")?.textContent).toBe("Read your dog");
+  it("collapses the safety lines and the signs into ONE 'Good to know' disclosure", () => {
+    const { container } = render(<AdventureCard a={A1} />);
+    const all = container.querySelectorAll("details.pa-gtk");
+    expect(all).toHaveLength(1);
+    const box = all[0] as HTMLDetailsElement;
+    expect(box.open).toBe(false);
+    expect(box.querySelector("summary")?.textContent).toBe("Good to know");
+    for (const line of A1.safety) expect(box.textContent).toContain(line);
     for (const w of [
       "Relaxed",
       "Unsure",
-      "Needs space now",
+      "Needs space",
       "lip licking",
       "yawning",
       "tucked tail",
@@ -47,23 +46,29 @@ describe("Read your dog card", () => {
       "hiding",
     ])
       expect(box.textContent?.toLowerCase()).toContain(w.toLowerCase());
+    expect(box.textContent).toContain("Read your dog");
+    expect(container.querySelectorAll(".pa-safety")).toHaveLength(0);
+  });
+
+  it("always shows the single muted line, once, and nothing else standing", () => {
+    render(<AdventureCard a={A1} />);
+    expect(screen.getAllByText(LINE)).toHaveLength(1);
+    expect(screen.getByText(LINE)).toBeVisible();
+    expect(document.body.textContent).not.toMatch(/Ending early is a good ending/);
   });
 
   it("has no medical claims", () => {
-    render(<ReadYourDog />);
-    const t = screen.getByRole("region", { name: "Read your dog" }).textContent ?? "";
+    const { container } = render(<AdventureCard a={A1} />);
+    const t = container.querySelector(".pa-ryd")?.textContent ?? "";
     expect(t).not.toMatch(
       /diagnos|cure|treat(s|ment)|disease|pain|anxiety disorder|medication|calms|prevents/i,
     );
   });
 
-  it("is on a revealed card even when the details are closed, but not on a mystery card", () => {
-    const { unmount } = render(<AdventureCard a={A1} />);
-    expect(screen.getByText(STANDING)).toBeVisible();
-    expect(screen.queryByText(A1.instructions[0]!)).toBeNull();
-    unmount();
-    render(<MysteryCard a={A1} onReveal={() => undefined} />);
-    expect(screen.queryByText(STANDING)).toBeNull();
+  it("shows no safety block on a mystery card", () => {
+    const { container } = render(<MysteryCard a={A1} onReveal={() => undefined} />);
+    expect(screen.queryByText(LINE)).toBeNull();
+    expect(container.querySelector(".pa-gtk")).toBeNull();
   });
 
   it("is on revealed cards in Collections and Favorites", async () => {
@@ -71,31 +76,30 @@ describe("Read your dog card", () => {
     const v = await renderUi(<CollectionEditor id="col-abcd1234" />);
     fireEvent.click(screen.getByRole("button", { name: "Reveal a random one" }));
     const card = await screen.findByRole("article");
-    expect(within(card).getByText(STANDING)).toBeVisible();
+    expect(within(card).getByText(LINE)).toBeVisible();
     v.unmount();
     act(() => favorite(A1.id));
     await renderUi(<FavoriteCollections />);
     fireEvent.click(screen.getByRole("button", { name: "Surprise me from my favorites" }));
-    expect((await screen.findAllByText(STANDING)).length).toBeGreaterThan(0);
+    expect((await screen.findAllByText(LINE)).length).toBeGreaterThan(0);
   });
 
   it("is on adventure cards in Discover", async () => {
     await renderUi(<DiscoverPage mode="browse" onMode={() => undefined} />);
     expect(screen.getAllByRole("article").length).toBeGreaterThan(0);
-    expect(screen.getAllByText(STANDING).length).toBe(screen.getAllByRole("article").length);
+    expect(screen.getAllByText(LINE).length).toBe(screen.getAllByRole("article").length);
   });
 
   it("is on entries in Our Story", async () => {
     act(() => completeAdventure(A1.id, 1000));
     await renderUi(<StoryTimeline />);
-    expect(screen.getByText(STANDING)).toBeVisible();
-    expect(screen.getByText(WALK)).toBeVisible();
+    expect(screen.getByText(LINE)).toBeVisible();
   });
 
   it("is accessible and motion-safe in the stylesheet", () => {
     const css = readFileSync("src/design/adventure.css", "utf8");
-    expect(css).toMatch(/\.pa-ryd summary\s*\{[^}]*min-height:\s*44px/);
-    expect(css).toMatch(/prefers-reduced-motion[^{]*\{\s*\.pa-ryd/);
-    expect(css).not.toMatch(/\.pa-ryd[^{]*:hover/);
+    expect(css).toMatch(/\.pa-gtk summary\s*\{[^}]*min-height:\s*44px/);
+    expect(css).toMatch(/prefers-reduced-motion[^{]*\{\s*\.pa-fold/);
+    expect(css).not.toMatch(/\.pa-(gtk|fold|ryd)[^{]*:hover/);
   });
 });

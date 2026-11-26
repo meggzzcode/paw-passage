@@ -7,7 +7,7 @@ import { members } from "@/passport/progress";
 import { usePassport } from "@/passport/usePassport";
 import { Button } from "@/components/shell/Button";
 import { Keepsake } from "./Keepsake";
-import { ReadYourDog } from "./ReadYourDog";
+import { GoodToKnow, SafetyLine } from "./ReadYourDog";
 import { useLibrary } from "./collections-shared";
 
 const MEMORY_MAX = 140;
@@ -64,7 +64,8 @@ function Entry({ a, at, dogName }: { a: Adventure; at: number; dogName: string |
       ) : (
         <p className="pa-fine">No memory written. That is perfectly fine.</p>
       )}
-      <ReadYourDog />
+      <GoodToKnow lines={a.safety} />
+      <SafetyLine />
       {repeats > 0 && (
         <p className="pa-fine">
           Done again {repeats} {repeats === 1 ? "time" : "times"}.

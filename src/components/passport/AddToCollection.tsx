@@ -24,12 +24,12 @@ export function AddToCollection({ adventureId, title }: { adventureId: string; t
     <div className="pd-addto">
       <button
         type="button"
-        className="pp-btn pp-btn-secondary"
+        className="pp-btn pp-btn-ghost"
         aria-expanded={open}
         aria-controls={panel}
         onClick={() => setOpen((v) => !v)}
       >
-        Add to my collection
+        Add to collection
       </button>
       {open && (
         <div

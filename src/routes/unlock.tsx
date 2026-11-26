@@ -6,6 +6,10 @@ import { AccessForm } from "@/components/passport/AccessForms";
 import { freeLibrary } from "@/passport/content";
 import { track } from "@/passport/events";
 import { checkoutUrl } from "@/lib/passport-api";
+import { collections } from "@/passport/content";
+import { offer } from "@/config/site";
+import { summaryText, usePremiumSummary } from "@/lib/premium-summary";
+import { TrustBlock } from "@/components/passport/TrustBlock";
 import { pageHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/unlock")({
@@ -13,7 +17,7 @@ export const Route = createFileRoute("/unlock")({
     pageHead({
       title: "Get the Adventure Passport",
       description:
-        "What the free Adventure Passport includes and what the full Passport adds. One-time purchase, price shown at checkout.",
+        "What the free Adventure Passport includes and what the full Passport adds. One-time purchase, no subscription.",
       path: "/unlock",
     }),
   component: Unlock,
@@ -22,6 +26,7 @@ export const Route = createFileRoute("/unlock")({
 function Unlock() {
   const n = freeLibrary().length;
   const link = checkoutUrl();
+  const summary = usePremiumSummary();
   useEffect(() => {
     track("unlock_viewed");
   }, []);
@@ -58,6 +63,15 @@ function Unlock() {
             <h2 id="full-h" className="pa-h">
               The full Passport adds
             </h2>
+            <p className="pa-price">
+              <strong>{offer.price}</strong> <span>one-time, no subscription</span>
+            </p>
+            <p className="pa-fine">
+              {summaryText(summary)}.{" "}
+              <AppLink to="/refund-policy" className="pa-linkbtn">
+                Refund policy
+              </AppLink>
+            </p>
             <ul className="co-plain">
               <li>A much larger library of adventures to suggest from</li>
               <li>A fuller “This season” shelf, with the full library's seasonal adventures</li>
@@ -67,7 +81,7 @@ function Unlock() {
               <li>More keepsake designs</li>
               <li>Synced progress that follows you across devices</li>
             </ul>
-            <p className="pa-fine">One-time purchase, price shown at checkout. No subscription.</p>
+            <p className="pa-fine">One-time purchase, no subscription. No subscription.</p>
             {link ? (
               <a
                 className="pp-btn pp-btn-primary"
@@ -95,9 +109,24 @@ function Unlock() {
           </section>
         </div>
 
+        <section className="pa-panel" aria-labelledby="coll-h">
+          <h2 id="coll-h" className="pa-h">
+            The {collections.length} collections
+          </h2>
+          <p className="pa-fine">
+            Premium adventures fill these collections. We do not list individual premium adventures.
+          </p>
+          <ul className="co-plain pa-cols">
+            {collections.map((c) => (
+              <li key={c.slug}>{c.title}</li>
+            ))}
+          </ul>
+        </section>
+
+        <TrustBlock />
+
         <p className="pa-fine">
-          Every adventure is a gentle suggestion: your dog can stop at any time, and your vet is the
-          one to ask about health questions.
+          Every adventure is a gentle suggestion. Your dog can stop at any time.
         </p>
 
         <AccessForm kind="activate" />

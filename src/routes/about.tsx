@@ -15,7 +15,7 @@ export const Route = createFileRoute("/about")({
       title="About Paws & Passage"
       intro="A lifetime of little adventures."
       updated="2026-11-26"
-      body={`Paws & Passage makes the **Adventure Passport**: a collectible, self-paced set of little adventures to share with your dog. Collect adventures, not just things. There are no daily streaks and nothing to keep up with. You pick an adventure when you feel like it, and your dog can stop any time.
+      body={`Paws & Passage makes the **Adventure Passport**: a collectible, self-paced set of little adventures to share with your dog. There are no daily streaks and nothing to keep up with. You pick an adventure when you feel like it, and your dog can stop any time.
 
 ## What is here
 

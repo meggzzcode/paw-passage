@@ -39,8 +39,15 @@ describe("homepage copy", () => {
     ])
       expect(src).toContain(c);
   });
-  it("states one-time purchase without a price or unproven claim", () => {
-    expect(src).toContain("one-time purchase, price shown at checkout");
+  it("shows the price from the one offer constant, with no discount or unproven claim", () => {
+    expect(src).toContain("offer.price");
+    expect(src).toContain("offer.pricing");
     expect(src).not.toMatch(/\$\d|% off|\breviews?\b|customers|testimonial/i);
+  });
+  it("leads with a concrete H1 and keeps the old slogan out of the hero", () => {
+    expect(src).toContain("Little adventures for you and");
+    expect(src).toContain("Free to start");
+    expect(src).toContain("No account");
+    expect(src).not.toContain("Collect adventures, not just things");
   });
 });

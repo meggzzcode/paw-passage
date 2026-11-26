@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Backpack, CloudRain, Compass, Hourglass, PawPrint, Sprout, Timer } from "lucide-react";
+import { CloudRain, Compass, Hourglass, PawPrint, Sprout, Timer } from "lucide-react";
 import type { ReactNode } from "react";
 import { Button } from "@/components/shell/Button";
 import { Card } from "@/components/shell/Card";
@@ -7,14 +7,20 @@ import { Container } from "@/components/shell/Container";
 import { SectionHeading } from "@/components/shell/SectionHeading";
 import { visibleGuides } from "@/content/guides";
 import { pageHead } from "@/lib/seo";
-import { site } from "@/config/site";
+import { site, offer } from "@/config/site";
+import { freeLibrary } from "@/passport/content";
+import { PhotoFilterExamples } from "@/components/site/PhotoFilterExamples";
+import { summaryText, usePremiumSummary } from "@/lib/premium-summary";
+
+/** Real photo-filter example images go here (paths under public/, e.g. "/examples/filter-1.jpg"). Empty hides the slot. */
+const FILTER_EXAMPLES: readonly string[] = [];
 
 export const Route = createFileRoute("/")({
   head: () =>
     pageHead({
       title: `The Adventure Passport | ${site.name}`,
       description:
-        "A collectible passport of little adventures for you and your dog. Free to try, no account needed. Collect adventures, not just things.",
+        "Little adventures for you and your dog. Free to start, no account needed. Pick a mystery card, do it together, collect it and make a photo filter.",
       path: "/",
     }),
   component: Home,
@@ -24,7 +30,7 @@ const collections: { name: string; blurb: string; icon: ReactNode }[] = [
   { name: "Five-Minute Moments", blurb: "Tiny rituals for a busy day.", icon: <Timer size={22} /> },
   {
     name: "Rainy Day Club",
-    blurb: "Indoor games for grey weather.",
+    blurb: "Indoor games for gray weather.",
     icon: <CloudRain size={22} />,
   },
   { name: "Road Trip Adventures", blurb: "Stops worth the detour.", icon: <Compass size={22} /> },
@@ -51,7 +57,7 @@ const faqs = [
   },
   {
     q: "What does the full Passport cost?",
-    a: "It is a one-time purchase, price shown at checkout. There is no subscription.",
+    a: `${offer.price}, ${offer.pricing}. Start free first.`,
   },
   {
     q: "Is it just for puppies or active dogs?",
@@ -72,6 +78,8 @@ function Stamp({ label, state }: { label: string; state: "earned" | "empty" }) {
 
 function Home() {
   const guides = visibleGuides().slice(0, 3);
+  const free = freeLibrary().length;
+  const summary = usePremiumSummary();
   return (
     <>
       <section className="pp-hero" aria-labelledby="home-h1">
@@ -80,28 +88,35 @@ function Home() {
             <div>
               <p className="pp-eyebrow">The Adventure Passport</p>
               <h1 id="home-h1" className="pp-h1">
-                A lifetime of <em>little adventures</em> with your dog.
+                Little adventures for you and <em>your dog</em>.
               </h1>
               <p className="pp-lede">
-                A collectible passport of small, doable adventures. Flip a card, go do it, stamp
-                your passport. Collect adventures, not just things.
+                A free set of small, doable things to do together: flip a mystery card, go do it,
+                collect it, and turn it into a photo filter. A lifetime of little adventures.
               </p>
               <ul className="pp-hero-points" aria-label="Good to know">
-                <li>Free to try</li>
-                <li>No account needed</li>
+                <li>Free to start</li>
+                <li>No account</li>
+                <li>{free} free adventures</li>
               </ul>
               <div className="mt-6">
                 <Button to="/discover">Find our next adventure</Button>
               </div>
             </div>
-            <div aria-hidden="false">
-              <MysteryCard />
-            </div>
+            <MysteryCard />
           </div>
         </Container>
       </section>
 
       <div className="pp-perf" aria-hidden="true" />
+
+      {FILTER_EXAMPLES.length > 0 && (
+        <section className="pp-section pb-0" aria-label="Photo filter examples">
+          <Container>
+            <PhotoFilterExamples images={FILTER_EXAMPLES} />
+          </Container>
+        </section>
+      )}
 
       <section className="pp-section" aria-labelledby="passport-h">
         <Container>
@@ -196,13 +211,13 @@ function Home() {
         <Container>
           <div className="pp-card" style={{ padding: "1.5rem" }}>
             <SectionHeading eyebrow="The full Passport" title="Pay once, keep it" id="buy-h">
-              Start free. If you want the whole set of collections, the full Passport is a one-time
-              purchase, price shown at checkout. No subscription and no account.
+              Start with the {free} free adventures. The full Passport adds {summaryText(summary)}:{" "}
+              {offer.price}, {offer.pricing}. No account.
             </SectionHeading>
             <div className="mt-5 flex flex-wrap gap-3">
               <Button to="/unlock">Get the Passport</Button>
-              <Button to="/free-challenges" variant="secondary">
-                Try free challenges
+              <Button to="/discover" variant="secondary">
+                Try the free adventures
               </Button>
             </div>
           </div>
@@ -254,29 +269,13 @@ function Home() {
 
 function MysteryCard() {
   return (
-    <div>
-      <div className="pp-flip" role="group" aria-label="Sample mystery card">
-        <div className="pp-flip-inner">
-          <div className="pp-face pp-face-back">
-            <span className="pp-meta">Mystery card</span>
-            <div>
-              <Backpack size={44} aria-hidden="true" />
-              <h3>Your next adventure is face down</h3>
-            </div>
-            <span className="pp-meta">Sample</span>
-          </div>
-          <div className="pp-face pp-face-front">
-            <span className="pp-meta">Five-Minute Moments</span>
-            <div>
-              <h3>The Slow Sniff Walk</h3>
-              <p>Let your dog choose the route for ten minutes. You follow the nose.</p>
-            </div>
-            <span className="pp-meta">Sample adventure</span>
-          </div>
-        </div>
-      </div>
-      <p className="mt-3 text-center text-sm" style={{ color: "var(--pp-muted)" }}>
-        A sample card. Real ones are revealed when you find an adventure.
+    <div className="pp-mini" role="group" aria-label="Sample mystery card">
+      <span className="pp-meta">Mystery card</span>
+      <p className="pp-mini-clue">
+        “Four contenders enter the ring, and only one makes the front page.”
+      </p>
+      <p className="pp-mini-note">
+        A sample clue. Tap an adventure in Discover to reveal the real thing.
       </p>
     </div>
   );

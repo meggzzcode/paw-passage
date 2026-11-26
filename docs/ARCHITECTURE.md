@@ -35,17 +35,18 @@ Pages are server-rendered by TanStack Start (`src/server.ts`, `src/start.ts`). T
 
 ## Server (`src/server/passport/`)
 
-Routes (all `Cache-Control: no-store`; JSON):
+Routes (all `Cache-Control: no-store`, except `/api/premium/summary`; JSON). UNVERIFIED: `netlify.toml` sets `no-store` for `/api/*`; confirm on a preview deploy that the function's own `public, max-age=600` on the summary wins:
 
-| Route                     | Method   | Purpose                                                                                                        |
-| ------------------------- | -------- | -------------------------------------------------------------------------------------------------------------- |
-| `/api/access/activate`    | POST     | Verify a license code with the provider, find or create the customer, merge local progress, set the cookie     |
-| `/api/access/restore`     | POST     | Same lookup on another device; never creates a second customer for the same purchase                           |
-| `/api/session`            | GET      | Whether the cookie is valid and entitled; returns the CSRF token                                               |
-| `/api/progress`           | GET, PUT | Read the synced Save; merge a Save in (the server owns `rev`; a stale `baseRev` is merged and flagged `stale`) |
-| `/api/premium/adventures` | GET      | The premium library, only for an entitled session                                                              |
-| `/api/account/export`     | POST     | Download the synced progress as JSON                                                                           |
-| `/api/account/delete`     | POST     | Delete the synced record and the purchase lookup (body `{"confirm":"DELETE"}`)                                 |
+| Route                     | Method   | Purpose                                                                                                                                                                                                                                                                                |
+| ------------------------- | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `/api/access/activate`    | POST     | Verify a license code with the provider, find or create the customer, merge local progress, set the cookie                                                                                                                                                                             |
+| `/api/access/restore`     | POST     | Same lookup on another device; never creates a second customer for the same purchase                                                                                                                                                                                                   |
+| `/api/session`            | GET      | Whether the cookie is valid and entitled; returns the CSRF token                                                                                                                                                                                                                       |
+| `/api/progress`           | GET, PUT | Read the synced Save; merge a Save in (the server owns `rev`; a stale `baseRev` is merged and flagged `stale`)                                                                                                                                                                         |
+| `/api/premium/adventures` | GET      | The premium library, only for an entitled session                                                                                                                                                                                                                                      |
+| `/api/premium/summary`    | GET      | Public, no session: `{count, collections:[{slug,count}]}` of PUBLISHED premium adventures from the `index` record only (no titles, text or ids). `Cache-Control: public, max-age=600`, rate limited. Empty store gives zeros; unreadable store gives 503 (clients treat it as unknown) |
+| `/api/account/export`     | POST     | Download the synced progress as JSON                                                                                                                                                                                                                                                   |
+| `/api/account/delete`     | POST     | Delete the synced record and the purchase lookup (body `{"confirm":"DELETE"}`)                                                                                                                                                                                                         |
 
 Modules: `api.ts` (handler), `provider.ts` (checkout interface, Gumroad adapter, test provider, selection), `session.ts` (cookie, CSRF, same-origin check), `store.ts` (customer records, compare-and-set), `kv.ts` (Blobs layer with etags; in-memory twin for tests), `crypto.ts` (HMAC, AES-GCM seal, key derivation), `limits.ts` (rate limiter), `config.ts` (environment and store naming), `netlify.ts` (wiring).
 
@@ -57,10 +58,10 @@ Flow:
 
 ## Stores (Netlify Blobs, strong consistency)
 
-| Store             | Keys                                                                                                                                                    |
-| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `customers-<env>` | `customer/<cus_id>` = {v, id, save (Save v2), entitlement {purchaseRefHash, status, createdAt, lastVerifiedAt, sealed code}}; `purchase/<hash>` = {cus} |
-| `premium-<env>`   | `index` = {v:1, ids}; `adventure/<id>` = one adventure                                                                                                  |
+| Store             | Keys                                                                                                                                                                                            |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `customers-<env>` | `customer/<cus_id>` = {v, id, save (Save v2), entitlement {purchaseRefHash, status, createdAt, lastVerifiedAt, sealed code}}; `purchase/<hash>` = {cus}                                         |
+| `premium-<env>`   | `index` = {v:1, ids, items:[{id, status, collections}]} (items feed the public summary; an older ids-only index still works but costs one read per adventure); `adventure/<id>` = one adventure |
 
 `<env>` is `production` only when the deploy context is `production`; every other context is `preview`. Older v1 records are upgraded on read.
 

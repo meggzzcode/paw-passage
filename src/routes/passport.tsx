@@ -7,6 +7,7 @@ import { StampShelf } from "@/components/passport/StampShelf";
 import { AccountPanel } from "@/components/passport/AccessForms";
 import { achievements as achDefs, collections } from "@/passport/content";
 import { useAdventureLibrary } from "@/components/passport/collections-shared";
+import { TrustBlock } from "@/components/passport/TrustBlock";
 import { SyncStatus } from "@/components/passport/SyncStatus";
 import { achievements, members } from "@/passport/progress";
 import { clearLocal, exportJson, importJson } from "@/passport/local-store";
@@ -47,6 +48,13 @@ function PassportPage() {
     .slice(0, 5);
   const next = achDefs.find((x) => x.kind === "count" && x.threshold === earned.next);
 
+  function doExport() {
+    downloadBlob(
+      new Blob([exportJson()], { type: "application/json" }),
+      "paw-and-passage-progress.json",
+    );
+  }
+
   if (!ready)
     return (
       <Container>
@@ -81,6 +89,13 @@ function PassportPage() {
             ? "Your progress is saved in this browser on this device. It isn't uploaded anywhere. Export a backup below to keep a copy or move to another device."
             : "This browser couldn't save your progress, so it is only kept while this tab stays open. Export a backup below before you leave."}
         </p>
+
+        <div className="pa-row">
+          <button type="button" className="pp-btn pp-btn-primary" onClick={doExport}>
+            Export my progress
+          </button>
+          <span className="pa-fine">Free, always. A small file with your progress.</span>
+        </div>
 
         <SyncStatus />
 
@@ -153,7 +168,7 @@ function PassportPage() {
               hash="profile"
               className="pp-btn pp-btn-secondary"
             >
-              Edit profile and preferences
+              Personalize
             </AppLink>
           </div>
         </section>
@@ -195,17 +210,8 @@ function PassportPage() {
             keepsakes.
           </p>
           <div className="pa-row">
-            <button
-              type="button"
-              className="pp-btn pp-btn-secondary"
-              onClick={() =>
-                downloadBlob(
-                  new Blob([exportJson()], { type: "application/json" }),
-                  "paw-and-passage-progress.json",
-                )
-              }
-            >
-              Export backup
+            <button type="button" className="pp-btn pp-btn-secondary" onClick={doExport}>
+              Export my progress
             </button>
             <label className="pp-btn pp-btn-secondary">
               Import backup
@@ -254,6 +260,8 @@ function PassportPage() {
           </div>
           {msg && <p role="status">{msg}</p>}
         </section>
+
+        <TrustBlock heading="Where your data lives" />
 
         <AccountPanel />
       </div>

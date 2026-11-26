@@ -62,9 +62,9 @@ export function DiscoverPage({
         </p>
 
         {showBanner && (
-          <aside className="pd-banner" aria-label="Personalise">
+          <aside className="pd-banner" aria-label="Personalize">
             <p>
-              <strong>Personalise</strong> your suggestions with a few optional questions. You can
+              <strong>Personalize</strong> your suggestions with a few optional questions. You can
               browse without answering.
             </p>
             <div className="pa-row">
@@ -73,7 +73,7 @@ export function DiscoverPage({
                 className="pp-btn pp-btn-secondary"
                 onClick={() => setOnboarding(true)}
               >
-                Personalise
+                Personalize
               </button>
               <button
                 type="button"
@@ -109,7 +109,7 @@ export function DiscoverPage({
           <p className="pa-fine">
             {profile.name ? `Planning for ${profile.name}. ` : ""}
             <button type="button" className="pa-linkbtn" onClick={() => setEditing(true)}>
-              {hasProfile(profile) ? "Edit profile and preferences" : "Personalise"}
+              {"Personalize"}
             </button>
           </p>
         )}
@@ -340,7 +340,7 @@ function SurpriseMe() {
         {s.scopeKey === "custom" &&
           (mine.length === 0 ? (
             <p className="pa-fine">
-              You have no collections of your own yet. Use “Add to my collection” on any adventure.
+              You have no collections of your own yet. Use “Add to collection” on any adventure.
             </p>
           ) : (
             <label className="pa-field">

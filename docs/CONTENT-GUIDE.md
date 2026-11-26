@@ -17,7 +17,7 @@ Every adventure is one file in `content/adventures/<id>.yml`. The file name equa
 
 Set every one of these honestly. Missing information is treated as unknown, never safe, so under-declaring a risk hides the adventure from the wrong dogs and over-declaring hides it from the right ones.
 
-`transport`, `setting`, `homes`, `space`, `places`, `lifeStages`, `energy`, `dogMobility`, `ownerMobility`, `stepFree`, `crowd`, `strangers`, `otherDogs`, `noise`, `food`, `water`, `safety`, `activityTypes` (1 to 3), `collections`, `requires` (controlled supply keys for the "what I have" filter), `reservation`. Optional helpers: `substitutes` (household stand-ins for supplies the owner may not have) and `personalities` (who tends to enjoy it: a hint only, never used for eligibility). Do not use breed as an input anywhere.
+`transport`, `setting`, `homes`, `space`, `places`, `lifeStages`, `energy`, `dogMobility`, `ownerMobility`, `stepFree`, `crowd`, `strangers`, `otherDogs`, `noise`, `food`, `water`, `safety`, `activityTypes` (1 to 3), `collections`, `requires` (controlled supply keys for the "what I have" filter), `reservation`. Optional helpers: `substitutes` (household stand-ins for supplies the owner may not have) and `personalities` (who tends to enjoy it: a hint only, never used for eligibility). Do not use breed as an input anywhere. Optional `household` (`two-dogs` and/or `family`, default empty) tags adventures that suit a two-dog or family household and feeds the "Two dogs" and "Family friendly" filter chips. The other chips ("From a chair", "Quick", "Quiet", "No yard needed", "Puppy-friendly", "High energy") are derived from existing fields, so they need no extra tagging.
 
 ## Safety lines (non-negotiable, but light)
 

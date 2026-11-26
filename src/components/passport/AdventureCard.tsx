@@ -1,4 +1,4 @@
-import { useId, useState } from "react";
+import { useEffect, useId, useRef, useState, type ReactNode } from "react";
 import type { Adventure } from "@/passport/schema";
 import {
   completeAdventure,
@@ -17,7 +17,7 @@ import { track } from "@/passport/events";
 import { usePassport } from "@/passport/usePassport";
 import { Keepsake } from "./Keepsake";
 import { AddToCollection } from "./AddToCollection";
-import { ReadYourDog } from "./ReadYourDog";
+import { GoodToKnow, SafetyLine } from "./ReadYourDog";
 import {
   ACTIVITY_LABELS,
   PREP_LABELS,
@@ -27,6 +27,7 @@ import {
   formatTime,
   keepsakeName,
   suitabilityNotes,
+  tagChips,
 } from "./labels";
 
 const EFFORT = { gentle: "Gentle effort", moderate: "Moderate effort", lively: "Lively effort" };
@@ -104,17 +105,80 @@ export function MysteryCard({
   );
 }
 
+/** Labelled facts for a revealed card: time, cost and where. Plain labels, nothing else. */
+export function FactChips({ a }: { a: Adventure }) {
+  const facts: [string, string][] = [
+    ["Time", formatTime(a)],
+    ["Cost", formatCost(a)],
+    ["Where", formatSetting(a)],
+  ];
+  return (
+    <ul className="pa-facts" aria-label="At a glance">
+      {facts.map(([k, v]) => (
+        <li key={k}>
+          <span className="pa-facts-k">{k}</span> {v}
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+/** The one "You'll need" line: the first few supplies, or "Nothing special". The full list is under More details. */
+function needLine(a: Adventure): string {
+  if (a.supplies.length === 0) return "Nothing special";
+  const shown = a.supplies.slice(0, 3).join(", ");
+  const more = a.supplies.length - 3;
+  return more > 0 ? `${shown} and ${more} more` : shown;
+}
+
+/** A small disclosure of secondary actions. Plain button + panel (not a hover menu); Escape closes it. */
+function MoreMenu({ label, children }: { label: string; children: ReactNode }) {
+  const [open, setOpen] = useState(false);
+  const panel = useId();
+  const btn = useRef<HTMLButtonElement>(null);
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setOpen(false);
+        btn.current?.focus();
+      }
+    };
+    document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
+  }, [open]);
+  return (
+    <div className="pa-more">
+      <button
+        ref={btn}
+        type="button"
+        className="pp-btn pp-btn-ghost"
+        aria-expanded={open}
+        aria-controls={panel}
+        onClick={() => setOpen((v) => !v)}
+      >
+        More
+      </button>
+      {open && (
+        <div id={panel} className="pa-more-panel" role="group" aria-label={label}>
+          {children}
+        </div>
+      )}
+    </div>
+  );
+}
+
 export function AdventureCard({
   a,
   dogName,
   why,
-  defaultOpen = false,
   onAnother,
   anotherLabel = "Try another",
 }: {
   a: Adventure;
   dogName?: string | undefined;
   why?: string[] | undefined;
+  /** Kept so existing callers still compile; the card no longer hides its steps. */
   defaultOpen?: boolean | undefined;
   onAnother?: (() => void) | undefined;
   anotherLabel?: string | undefined;
@@ -125,15 +189,25 @@ export function AdventureCard({
   const later = has(save.saved, a.id);
   const repeats = save.repeats[a.id] ?? 0;
   const feedback = save.feedback[a.id]?.value;
-  const [open, setOpen] = useState(defaultOpen);
   const [memory, setMem] = useState(save.memories[a.id]?.text ?? "");
   const [showKeepsake, setShowKeepsake] = useState(false);
   const [note, setNote] = useState("");
-  const detailsId = useId();
   const dog = dogName || "your dog";
-  const key = a.supplies.slice(0, 3);
+  const tags = tagChips(a);
   const notes = suitabilityNotes(a);
   const book = logistics(a);
+  const memoryField = (
+    <label className="pa-field">
+      <span>{a.memoryPrompt} (optional)</span>
+      <textarea
+        rows={2}
+        maxLength={140}
+        value={memory}
+        onChange={(e) => setMem(e.target.value)}
+        onBlur={() => setMemory(a.id, memory)}
+      />
+    </label>
+  );
 
   function complete() {
     completeAdventure(a.id);
@@ -142,181 +216,195 @@ export function AdventureCard({
       .map((s) => stamps.find((x) => x.slug === s)?.title ?? "")
       .filter(Boolean);
     setNote(
-      `Added to your passport.${names.length ? ` It counts toward: ${names.join(", ")}.` : ""} A keepsake is there if you would like one.`,
+      `Added to your passport.${names.length ? ` It counts toward: ${names.join(", ")}.` : ""} Next: turn it into a photo filter if you would like one.`,
     );
+  }
+  function toggleHeart() {
+    if (fav) {
+      unfavorite(a.id);
+      if (feedback === "liked") setFeedback(a.id, null);
+    } else {
+      favorite(a.id);
+      setFeedback(a.id, "liked");
+      track("favorite_added", { adventure: a.id });
+    }
   }
 
   return (
     <article className="pa-card pd-card" aria-label={a.title}>
-      <ul className="pd-types" aria-label="Kinds of adventure">
-        {a.activityTypes.map((t) => (
-          <li key={t}>{ACTIVITY_LABELS[t]}</li>
-        ))}
-        {done && <li className="pd-done">✓ Completed</li>}
-        {repeats > 0 && <li>Repeated {repeats}×</li>}
-      </ul>
+      {(done || repeats > 0) && (
+        <p className="pd-types">
+          {done && <span className="pd-done">✓ Collected</span>}
+          {repeats > 0 && <span>Repeated {repeats}×</span>}
+        </p>
+      )}
       <h3 className="pa-title">{a.title}</h3>
       {why && why.length > 0 && (
         <p className="pd-why">
           <strong>Why this one:</strong> {why.join(". ")}.
         </p>
       )}
-      <Chips a={a} />
-      {(key.length > 0 || notes.length > 0 || book.length > 0) && (
-        <ul className="pd-facts">
-          {key.length > 0 && <li>You will need: {key.join(", ")}</li>}
-          {book.map((b) => (
-            <li key={b}>{b}</li>
-          ))}
-          {notes.map((n) => (
-            <li key={n}>{n}</li>
+
+      <p className="pa-twist">
+        <span className="pa-twist-k">The twist</span>
+        {a.twist}
+      </p>
+      <p className="pa-need">
+        <strong>You'll need:</strong> {needLine(a)}
+      </p>
+      <FactChips a={a} />
+      {tags.length > 0 && (
+        <ul className="pa-tags" aria-label="Good fit">
+          {tags.map((t) => (
+            <li key={t}>{t}</li>
           ))}
         </ul>
       )}
-      <p className="pa-fine">Keepsake: {keepsakeName(a)}</p>
-      <ReadYourDog />
 
-      <button
-        type="button"
-        className="pp-btn pp-btn-ghost pd-toggle"
-        aria-expanded={open}
-        aria-controls={detailsId}
-        onClick={() => setOpen((v) => !v)}
-      >
-        {open ? "Hide details" : "Show details"}
-      </button>
-      {open && (
-        <div id={detailsId} className="pd-details">
+      <details className="pa-fold">
+        <summary>More details</summary>
+        <div className="pa-fold-body">
           <p>{a.reveal}</p>
-          <h4 className="pa-sec">How it goes</h4>
-          <ol className="pa-steps">
-            {a.instructions.map((s) => (
-              <li key={s}>{s}</li>
-            ))}
-          </ol>
-          <p className="pa-twist">
-            <strong>The twist:</strong> {a.twist}
-          </p>
           {a.supplies.length > 0 && (
-            <p>
-              <strong>You will need:</strong> {a.supplies.join(", ")}
-              {a.optionalSupplies.length > 0 && ` (optional: ${a.optionalSupplies.join(", ")})`}
-            </p>
-          )}
-          {a.variations.length > 0 && (
             <>
-              <h4 className="pa-sec">Variations</h4>
-              <ul>
-                {a.variations.map((v) => (
-                  <li key={v}>{v}</li>
+              <p className="pa-sec">You'll need</p>
+              <ul className="pa-list-plain">
+                {a.supplies.map((s) => (
+                  <li key={s}>{s}</li>
+                ))}
+                {a.optionalSupplies.map((s) => (
+                  <li key={s}>{s} (optional)</li>
                 ))}
               </ul>
             </>
           )}
-          <aside className="pa-safety" aria-label="Safety and suitability">
-            <strong>For {dog}'s comfort</strong>
-            <ul>
-              {a.safety.map((s) => (
-                <li key={s}>{s}</li>
+          {(notes.length > 0 || book.length > 0 || a.activityTypes.length > 0) && (
+            <>
+              <p className="pa-sec">At a glance</p>
+              <ul className="pa-meta" aria-label="All details">
+                {[...a.activityTypes.map((t) => ACTIVITY_LABELS[t]), ...book, ...notes].map((n) => (
+                  <li key={n}>{n}</li>
+                ))}
+                <li>{EFFORT[a.energy]}</li>
+                <li>{PREP_LABELS[a.prep]}</li>
+              </ul>
+            </>
+          )}
+          <p className="pa-fine">Keepsake: {keepsakeName(a)}</p>
+          {!done && memoryField}
+        </div>
+      </details>
+
+      <p className="pa-sec">How it goes</p>
+      <ol className="pa-steps">
+        {a.instructions.map((s) => (
+          <li key={s}>{s}</li>
+        ))}
+      </ol>
+
+      {(a.variations.length > 0 || a.substitutes.length > 0) && (
+        <details className="pa-fold">
+          <summary>Easier ways</summary>
+          <div className="pa-fold-body">
+            <ul className="pa-list-plain">
+              {[...a.variations, ...a.substitutes].map((v) => (
+                <li key={v}>{v}</li>
               ))}
             </ul>
-            <p>
-              {dog[0]!.toUpperCase() + dog.slice(1)} can stop or skip any time. Ask your vet about
-              health questions.
-            </p>
-          </aside>
-          <label className="pa-field">
-            <span>{a.memoryPrompt} (optional)</span>
-            <textarea
-              rows={2}
-              maxLength={140}
-              value={memory}
-              onChange={(e) => setMem(e.target.value)}
-              onBlur={() => setMemory(a.id, memory)}
-            />
-          </label>
-        </div>
+          </div>
+        </details>
       )}
+
+      <GoodToKnow lines={a.safety} />
 
       <div className="pa-actions">
         {done ? (
-          <>
-            <button
-              type="button"
-              className="pp-btn pp-btn-secondary"
-              onClick={() => {
-                undoCompletion(a.id);
-                setNote("");
-              }}
-            >
-              Undo completion
-            </button>
-            <button
-              type="button"
-              className="pp-btn pp-btn-secondary"
-              onClick={() => {
-                repeatAdventure(a.id);
-                setNote("Logged another time. Your unique adventure count stays the same.");
-              }}
-            >
-              Do it again
-            </button>
-          </>
+          <button
+            type="button"
+            className="pp-btn pp-btn-primary"
+            aria-expanded={showKeepsake}
+            onClick={() => {
+              setMemory(a.id, memory);
+              setShowKeepsake((v) => !v);
+            }}
+          >
+            {showKeepsake ? "Hide photo filter" : "Make my photo filter"}
+          </button>
         ) : (
           <button type="button" className="pp-btn pp-btn-primary" onClick={complete}>
-            Mark complete
+            Collect it
           </button>
         )}
-        <button
-          type="button"
-          className="pp-btn pp-btn-secondary"
-          aria-pressed={later}
-          onClick={() => {
-            if (later) unsaveForLater(a.id);
-            else {
-              saveForLater(a.id);
-              track("adventure_saved", { adventure: a.id });
-            }
-          }}
-        >
-          {later ? "Saved for later ✓" : "Save for later"}
-        </button>
-        <button
-          type="button"
-          className="pp-btn pp-btn-ghost"
-          aria-pressed={fav}
-          onClick={() => {
-            if (fav) unfavorite(a.id);
-            else {
-              favorite(a.id);
-              track("favorite_added", { adventure: a.id });
-            }
-          }}
-        >
-          {fav ? "♥ Favorite" : "♡ Favorite"}
-        </button>
-        <AddToCollection adventureId={a.id} title={a.title} />
-        <button
-          type="button"
-          className="pp-btn pp-btn-ghost"
-          aria-pressed={feedback === "liked"}
-          onClick={() => setFeedback(a.id, feedback === "liked" ? null : "liked")}
-        >
-          Liked
-        </button>
-        <button
-          type="button"
-          className="pp-btn pp-btn-ghost"
-          aria-pressed={feedback === "not-for-us"}
-          onClick={() => setFeedback(a.id, feedback === "not-for-us" ? null : "not-for-us")}
-        >
-          Not for us
-        </button>
         {onAnother && (
-          <button type="button" className="pp-btn pp-btn-ghost" onClick={onAnother}>
+          <button type="button" className="pp-btn pp-btn-secondary" onClick={onAnother}>
             {anotherLabel}
           </button>
         )}
+        <MoreMenu label={`More for ${a.title}`}>
+          {done && (
+            <>
+              <button
+                type="button"
+                className="pp-btn pp-btn-ghost"
+                onClick={() => {
+                  repeatAdventure(a.id);
+                  setNote("Logged another time. Your unique adventure count stays the same.");
+                }}
+              >
+                Do it again
+              </button>
+              <button
+                type="button"
+                className="pp-btn pp-btn-ghost"
+                onClick={() => {
+                  undoCompletion(a.id);
+                  setShowKeepsake(false);
+                  setNote("");
+                }}
+              >
+                Undo collecting
+              </button>
+            </>
+          )}
+          <button
+            type="button"
+            className="pp-btn pp-btn-ghost"
+            aria-pressed={later}
+            onClick={() => {
+              if (later) unsaveForLater(a.id);
+              else {
+                saveForLater(a.id);
+                track("adventure_saved", { adventure: a.id });
+              }
+            }}
+          >
+            {later ? "Saved for later ✓" : "Save for later"}
+          </button>
+          <button
+            type="button"
+            className="pp-btn pp-btn-ghost"
+            aria-pressed={fav}
+            onClick={toggleHeart}
+          >
+            {fav ? "♥ Favorite" : "♡ Favorite"}
+          </button>
+          <button
+            type="button"
+            className="pp-btn pp-btn-ghost"
+            aria-pressed={feedback === "not-for-us"}
+            onClick={() => {
+              if (feedback === "not-for-us") setFeedback(a.id, null);
+              else {
+                if (fav) unfavorite(a.id);
+                setFeedback(a.id, "not-for-us");
+                setNote(`Noted. We will treat this one as not for ${dog}.`);
+              }
+            }}
+          >
+            Not for us
+          </button>
+          <AddToCollection adventureId={a.id} title={a.title} />
+        </MoreMenu>
       </div>
       <p className="pd-status" role="status">
         {note}
@@ -324,20 +412,11 @@ export function AdventureCard({
 
       {done && (
         <div className="pd-keepsake">
-          <button
-            type="button"
-            className="pp-btn pp-btn-secondary"
-            aria-expanded={showKeepsake}
-            onClick={() => {
-              setMemory(a.id, memory);
-              setShowKeepsake((v) => !v);
-            }}
-          >
-            {showKeepsake ? "Hide keepsake" : "Create keepsake"}
-          </button>
+          {memoryField}
           {showKeepsake && <Keepsake adventure={a} dogName={dogName} memory={memory} />}
         </div>
       )}
+      <SafetyLine />
     </article>
   );
 }

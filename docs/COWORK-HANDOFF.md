@@ -33,6 +33,10 @@ The single list of things that need the owner's accounts, devices or money. Each
 | CW-PIN-1  | No                                                                |
 | CW-CMS-1  | No                                                                |
 
+## Price constant must match Gumroad
+
+`offer.price` in `src/config/site.ts` (currently "$14.99") is shown on the home and unlock pages. Before launch it must equal the Gumroad listing price exactly. Change both together; never show a discount or "was" price unless the listing really has one.
+
 ## CW-GH-1
 
 - **Task ID:** CW-GH-1
@@ -99,6 +103,7 @@ The single list of things that need the owner's accounts, devices or money. Each
   1. On Billing and Usage look for any Blobs, storage or Functions line and its credit cost.
   2. Re-read the Blobs documentation for persistence across deploys, strong consistency and conditional writes (`onlyIfMatch`, `onlyIfNew`).
   3. Note any per-plan limits or retention.
+- **Index record (after any premium import):** the `index` record in `premium-<env>` must exist and list `items` with `id`, `status` and `collections` for every adventure (`scripts/premium-import.mjs` writes it; re-run the import if an older ids-only index is present). `GET /api/premium/summary` counts published adventures from it; without it the count is 0 or one read per adventure.
 - **Expected outcome:** A written yes or no for: metered? charged in credits? persists across deploys? strong consistency available on this plan?
 - **Evidence to capture:** Screenshots of billing lines and the documentation passages (URL plus quoted sentence).
 - **Return to Claude:** A findings table.

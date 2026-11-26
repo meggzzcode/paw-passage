@@ -813,3 +813,58 @@ a.pp-navlink.active {
   border-top: 3px dotted var(--pp-line);
   opacity: 0.35;
 }
+
+/* Home: compact sample mystery card and the filter-examples slot */
+.pp-mini {
+  background: var(--pp-ink);
+  color: var(--pp-paper);
+  border-radius: 10px;
+  padding: 1rem 1.1rem;
+  box-shadow: var(--pp-shadow);
+  display: grid;
+  gap: 0.4rem;
+  align-self: center;
+}
+.pp-mini .pp-meta {
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--pp-ochre);
+}
+.pp-mini-clue {
+  margin: 0;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.2rem;
+  line-height: 1.35;
+}
+.pp-mini-note {
+  margin: 0;
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
+.pp-examples {
+  margin: 0;
+}
+.pp-examples-row {
+  display: flex;
+  gap: 0.75rem;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.5rem;
+  overflow-x: auto;
+}
+.pp-examples-row img {
+  display: block;
+  height: 12.5rem;
+  width: auto;
+  border-radius: var(--pp-radius);
+  border: 1.5px solid var(--pp-line);
+}
+.pp-slogan {
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--pp-muted);
+  margin: 1.5rem 0 0;
+}

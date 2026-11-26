@@ -16,6 +16,7 @@ import { Route as ContactRouteImport } from './routes/contact'
 import { Route as CorrectionsRouteImport } from './routes/corrections'
 import { Route as DiscoverRouteImport } from './routes/discover'
 import { Route as EditorialStandardsRouteImport } from './routes/editorial-standards'
+import { Route as HowWeWriteAdventuresRouteImport } from './routes/how-we-write-adventures'
 import { Route as MethodologyRouteImport } from './routes/methodology'
 import { Route as OurStoryRouteImport } from './routes/our-story'
 import { Route as PassportRouteImport } from './routes/passport'
@@ -67,6 +68,11 @@ const DiscoverRoute = DiscoverRouteImport.update({
 const EditorialStandardsRoute = EditorialStandardsRouteImport.update({
   id: '/editorial-standards',
   path: '/editorial-standards',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HowWeWriteAdventuresRoute = HowWeWriteAdventuresRouteImport.update({
+  id: '/how-we-write-adventures',
+  path: '/how-we-write-adventures',
   getParentRoute: () => rootRouteImport,
 } as any)
 const MethodologyRoute = MethodologyRouteImport.update({
@@ -163,6 +169,7 @@ export interface FileRoutesByFullPath {
   '/corrections': typeof CorrectionsRoute
   '/discover': typeof DiscoverRoute
   '/editorial-standards': typeof EditorialStandardsRoute
+  '/how-we-write-adventures': typeof HowWeWriteAdventuresRoute
   '/methodology': typeof MethodologyRoute
   '/our-story': typeof OurStoryRoute
   '/passport': typeof PassportRoute
@@ -189,6 +196,7 @@ export interface FileRoutesByTo {
   '/corrections': typeof CorrectionsRoute
   '/discover': typeof DiscoverRoute
   '/editorial-standards': typeof EditorialStandardsRoute
+  '/how-we-write-adventures': typeof HowWeWriteAdventuresRoute
   '/methodology': typeof MethodologyRoute
   '/our-story': typeof OurStoryRoute
   '/passport': typeof PassportRoute
@@ -216,6 +224,7 @@ export interface FileRoutesById {
   '/corrections': typeof CorrectionsRoute
   '/discover': typeof DiscoverRoute
   '/editorial-standards': typeof EditorialStandardsRoute
+  '/how-we-write-adventures': typeof HowWeWriteAdventuresRoute
   '/methodology': typeof MethodologyRoute
   '/our-story': typeof OurStoryRoute
   '/passport': typeof PassportRoute
@@ -244,6 +253,7 @@ export interface FileRouteTypes {
     | '/corrections'
     | '/discover'
     | '/editorial-standards'
+    | '/how-we-write-adventures'
     | '/methodology'
     | '/our-story'
     | '/passport'
@@ -270,6 +280,7 @@ export interface FileRouteTypes {
     | '/corrections'
     | '/discover'
     | '/editorial-standards'
+    | '/how-we-write-adventures'
     | '/methodology'
     | '/our-story'
     | '/passport'
@@ -296,6 +307,7 @@ export interface FileRouteTypes {
     | '/corrections'
     | '/discover'
     | '/editorial-standards'
+    | '/how-we-write-adventures'
     | '/methodology'
     | '/our-story'
     | '/passport'
@@ -323,6 +335,7 @@ export interface RootRouteChildren {
   CorrectionsRoute: typeof CorrectionsRoute
   DiscoverRoute: typeof DiscoverRoute
   EditorialStandardsRoute: typeof EditorialStandardsRoute
+  HowWeWriteAdventuresRoute: typeof HowWeWriteAdventuresRoute
   MethodologyRoute: typeof MethodologyRoute
   OurStoryRoute: typeof OurStoryRoute
   PassportRoute: typeof PassportRoute
@@ -391,6 +404,13 @@ declare module '@tanstack/react-router' {
       path: '/editorial-standards'
       fullPath: '/editorial-standards'
       preLoaderRoute: typeof EditorialStandardsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/how-we-write-adventures': {
+      id: '/how-we-write-adventures'
+      path: '/how-we-write-adventures'
+      fullPath: '/how-we-write-adventures'
+      preLoaderRoute: typeof HowWeWriteAdventuresRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/methodology': {
@@ -523,6 +543,7 @@ const rootRouteChildren: RootRouteChildren = {
   CorrectionsRoute: CorrectionsRoute,
   DiscoverRoute: DiscoverRoute,
   EditorialStandardsRoute: EditorialStandardsRoute,
+  HowWeWriteAdventuresRoute: HowWeWriteAdventuresRoute,
   MethodologyRoute: MethodologyRoute,
   OurStoryRoute: OurStoryRoute,
   PassportRoute: PassportRoute,

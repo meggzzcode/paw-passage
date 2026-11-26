@@ -21,3 +21,12 @@ export const site = {
   /** Draft guides render (noindexed, labeled) only in development / private preview builds (SHOW_DRAFTS=true). */
   showDraftGuides: import.meta.env.DEV || showDrafts,
 };
+
+/**
+ * The public offer. The price must match the Gumroad listing before launch (see docs/COWORK-HANDOFF.md).
+ * No other price, discount or "was" price appears anywhere on the site.
+ */
+export const offer = {
+  price: "$14.99",
+  pricing: "one-time purchase, no subscription",
+} as const;

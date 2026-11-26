@@ -100,6 +100,7 @@
   font-size: 0.88rem;
 }
 .pa-steps {
+  list-style: decimal;
   margin: 0;
   padding-left: 1.2rem;
   display: grid;
@@ -114,9 +115,135 @@
 }
 .pa-twist {
   background: var(--pp-paper-2);
-  border-left: 4px solid var(--pp-ochre);
-  padding: 0.6rem 0.8rem;
+  border: 1.5px solid var(--pp-ochre);
+  border-left-width: 6px;
+  border-radius: var(--pp-radius);
+  padding: 0.7rem 0.9rem;
   margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.45;
+}
+.pa-twist-k {
+  display: block;
+  font-size: 0.74rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--pp-ochre-text);
+  margin-bottom: 0.15rem;
+}
+.pa-need {
+  margin: 0;
+}
+.pa-facts,
+.pa-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.pa-facts li {
+  border: 1.5px solid var(--pp-line);
+  border-radius: 999px;
+  padding: 0.2rem 0.75rem;
+  font-size: 0.92rem;
+  font-weight: 600;
+}
+.pa-facts-k {
+  font-weight: 400;
+  color: var(--pp-muted);
+  margin-right: 0.15rem;
+}
+.pa-tags li {
+  background: var(--pp-paper-2);
+  border-radius: 999px;
+  padding: 0.2rem 0.7rem;
+  font-size: 0.88rem;
+}
+.pa-list-plain {
+  list-style: disc;
+  margin: 0;
+  padding-left: 1.2rem;
+  display: grid;
+  gap: 0.25rem;
+}
+/* Collapsed disclosures: More details, Easier ways, Good to know. Native <details>, 44px targets. */
+.pa-fold,
+.pa-gtk {
+  border: 1.5px solid var(--pp-hairline);
+  border-radius: var(--pp-radius);
+  padding: 0 0.9rem;
+}
+.pa-fold summary,
+.pa-gtk summary {
+  cursor: pointer;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+}
+.pa-fold summary:focus-visible,
+.pa-gtk summary:focus-visible {
+  outline: 3px solid var(--pp-focus);
+  outline-offset: 2px;
+}
+.pa-fold-body,
+.pa-gtk-body {
+  display: grid;
+  gap: 0.6rem;
+  padding-bottom: 0.8rem;
+}
+.pa-fold-body p {
+  margin: 0;
+}
+.pa-gtk-lines {
+  list-style: disc;
+  margin: 0;
+  padding-left: 1.2rem;
+  display: grid;
+  gap: 0.3rem;
+}
+.pa-safety-line {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--pp-muted);
+}
+/* "More" actions disclosure */
+.pa-more {
+  position: relative;
+}
+.pa-more-panel {
+  position: absolute;
+  z-index: 5;
+  right: 0;
+  top: calc(100% + 0.3rem);
+  min-width: 15rem;
+  max-width: calc(100vw - 2rem);
+  display: grid;
+  gap: 0.15rem;
+  padding: 0.4rem;
+  background: var(--pp-card);
+  border: 2px solid var(--pp-line);
+  border-radius: var(--pp-radius);
+  box-shadow: var(--pp-shadow);
+}
+.pa-more-panel .pp-btn {
+  justify-content: flex-start;
+  border-color: transparent;
+}
+.pa-more-panel .pd-addto {
+  display: grid;
+}
+@media (max-width: 30rem) {
+  .pa-more-panel {
+    top: auto;
+    bottom: calc(100% + 0.3rem);
+  }
+  .pa-actions > .pp-btn {
+    flex: 1 1 auto;
+  }
 }
 .pa-safety {
   border: 1.5px dashed var(--pp-pine);
@@ -286,26 +413,17 @@
   }
 }
 
-/* Read your dog: app-level safety card on every revealed adventure card. */
+/* Read your dog: the signs inside "Good to know". */
 .pa-ryd {
-  border: 1.5px dashed var(--pp-pine);
-  border-radius: var(--pp-radius);
-  padding: 0.3rem 0.9rem 0.7rem;
+  display: grid;
+  gap: 0.5rem;
   font-size: 0.95rem;
 }
-.pa-ryd summary {
-  cursor: pointer;
-  min-height: 44px;
-  display: flex;
-  align-items: center;
-  font-weight: 700;
-}
-.pa-ryd summary:focus-visible {
-  outline: 3px solid var(--pp-focus);
-  outline-offset: 2px;
+.pa-ryd p {
+  margin: 0;
 }
 .pa-ryd-signs {
-  margin: 0 0 0.5rem;
+  margin: 0;
   display: grid;
   gap: 0.5rem;
 }
@@ -315,16 +433,24 @@
 .pa-ryd-signs dd {
   margin: 0;
 }
-.pa-ryd p {
-  margin: 0.25rem 0 0;
-}
-.pa-ryd-standing {
-  color: var(--pp-muted);
-  font-size: 0.9rem;
-}
 @media (prefers-reduced-motion: reduce) {
-  .pa-ryd * {
+  .pa-fold *,
+  .pa-gtk *,
+  .pa-more * {
     animation: none !important;
     transition: none !important;
   }
+}
+
+.pa-price {
+  margin: 0;
+  font-size: 1rem;
+}
+.pa-price strong {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  margin-right: 0.3rem;
+}
+.pa-cols {
+  columns: 2 14rem;
 }

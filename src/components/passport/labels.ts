@@ -67,6 +67,29 @@ export const SEASON_LABELS: Record<Adventure["seasons"][number], string> = {
   winter: "Winter",
 };
 
+/** Derived quick-pick chips: every one is computed from fields the adventure already has. */
+export const QUICK_PICKS = [
+  "chair",
+  "quick",
+  "quiet",
+  "noYard",
+  "puppy",
+  "highEnergy",
+  "two-dogs",
+  "family",
+] as const;
+export type QuickPick = (typeof QUICK_PICKS)[number];
+export const QUICK_PICK_LABELS: Record<QuickPick, string> = {
+  chair: "From a chair",
+  quick: "Quick (15 min or less)",
+  quiet: "Quiet",
+  noYard: "No yard needed",
+  puppy: "Puppy-friendly",
+  highEnergy: "High energy",
+  "two-dogs": "Two dogs",
+  family: "Family friendly",
+};
+
 export const formatCost = (a: Adventure): string =>
   a.costMax === 0
     ? "Free"
@@ -105,4 +128,21 @@ export function suitabilityNotes(a: Adventure): string[] {
   if (a.avoidWeather.length > 0) n.push(`Not for ${a.avoidWeather.join(" or ")} days`);
   if (a.lifeStages.length < 3) n.push(`Suits ${a.lifeStages.join(" and ")} dogs`);
   return n;
+}
+
+/**
+ * Up to four plain chips for a revealed card, chosen by relevance: things that may rule an adventure out
+ * (a yard, other people or dogs) come first, then the reassuring ones. Everything else is under "More details".
+ */
+export function tagChips(a: Adventure): string[] {
+  const out: string[] = [];
+  if (a.space === "yard" || (a.homes.length === 1 && a.homes[0] === "house-with-yard"))
+    out.push("Needs a yard");
+  if (a.strangers || a.otherDogs) out.push("Meets people or dogs");
+  if (a.ownerMobility === "seated") out.push("From a chair");
+  if (a.noise === "quiet") out.push("Quiet");
+  if (a.stepFree) out.push("No stairs");
+  if (a.lifeStages.includes("puppy")) out.push("Puppy-friendly");
+  if (a.lifeStages.includes("senior")) out.push("Senior-friendly");
+  return out.slice(0, 4);
 }

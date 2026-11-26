@@ -59,7 +59,7 @@ export SITE_ID=...              # the site's API id (Site configuration, Site in
 3. Write to the live store only when satisfied: `--env production --write --yes-production`.
 4. `--prune` also deletes stored adventures that are not in the file. Use it deliberately.
 
-The import writes `adventure/<id>` for each adventure and an `index` listing the ids. Requires Node 22.18 or newer.
+The import writes `adventure/<id>` for each adventure and an `index` listing the ids plus each adventure's status and collection slugs (used by the public summary). Requires Node 22.18 or newer.
 
 **Export (backup):**
 `node scripts/premium-export.mjs --out <path outside the repository>/premium-backup.json --env production`

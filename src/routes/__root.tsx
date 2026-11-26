@@ -180,6 +180,15 @@ function RootShell({ children }: { children: ReactNode }) {
               "(function(){var h=document.head;if(!h)return;var n=h.firstChild;while(n){var x=n.nextSibling;if(n.nodeType===8||(n.nodeType===3&&!/\\S/.test(n.nodeValue||'')))h.removeChild(n);n=x}})();",
           }}
         />
+        {/* Returning customers: reads one local flag (pp.acct.v1) before first paint and sets a data attribute, so CSS can
+            keep the purchase button and the free-visitor links out of sight until the page knows the access state. The
+            header removes the attribute once it does. Nothing is sent anywhere; without storage nothing changes. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "try{if(window.localStorage.getItem('pp.acct.v1'))document.documentElement.setAttribute('data-acct','1')}catch(e){}",
+          }}
+        />
       </head>
       <body>
         {children}

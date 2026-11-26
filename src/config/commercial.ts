@@ -19,7 +19,7 @@ export const ONE_TIME_LINE = `One payment of ${price}. Yours to keep.`;
  * What "pay once" means in practice. It does not promise unlimited future content or that the service never changes:
  * refunds and revocation still follow the refund policy, and any adventures we add later are a bonus, not a promise.
  */
-export const KEEP_LINE = "No subscription. No renewals. Your Passport does not expire.";
+export const KEEP_LINE = "No subscription. No renewals.";
 
 /**
  * Feature flags for what the pages may MENTION. A flag is false until the feature is shipped and verified, so the

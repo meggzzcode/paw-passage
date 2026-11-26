@@ -20,7 +20,6 @@ import { presetFor, type RelaxKey } from "@/passport/quiz";
 import { useEffect, useRef, useState } from "react";
 import { AppLink } from "@/components/shell/AppLink";
 import { Container } from "@/components/shell/Container";
-import { StampGrid } from "@/passport/art/stamps";
 import { getSave, revealStarter, setProfile, setStarter } from "@/passport/local-store";
 import { has } from "@/passport/progress";
 import {
@@ -33,7 +32,6 @@ import {
   type NoMatchCause,
 } from "@/passport/starter";
 import { usePassport } from "@/passport/usePassport";
-import { unlockLine, type PremiumSummary } from "@/lib/premium-summary";
 import type { Adventure } from "@/passport/schema";
 import { AdventureCard, Chips } from "./AdventureCard";
 import { useAdventureLibrary } from "./collections-shared";
@@ -87,34 +85,24 @@ function ConfirmBeforeReveal({
   );
 }
 
-/** The unlock pitch. Pass the live summary where the page already fetches it; otherwise it uses the fallback wording. */
-export function UnlockPitch({
-  summary = null,
-  where = "intro",
-}: {
-  summary?: PremiumSummary | null;
-  where?: string;
-}) {
+/** A quiet line, shown while the introductory adventure is still in progress: buying never has to wait. */
+function SkipAheadLine() {
   return (
-    <aside className="pa-panel" aria-labelledby="pitch-h">
-      <h2 className="pa-h" id="pitch-h">
-        Want more little adventures with your dog?
-      </h2>
-      <p>{unlockLine(summary)}</p>
-      <p className="pa-fine">One-time purchase, no subscription, no account.</p>
-      <div className="pa-row">
-        <AppLink
-          to="/unlock"
-          className="pp-btn pp-btn-primary"
-          onClick={() => flow("purchase_cta_clicked", { where })}
-        >
-          See the full Passport
-        </AppLink>
-        <AppLink to={PREVIEWS_PATH} className="pp-btn pp-btn-ghost">
-          Browse previews
-        </AppLink>
-      </div>
-    </aside>
+    <p className="pa-fine">
+      You do not need to finish this first. You can{" "}
+      <AppLink
+        to="/unlock"
+        className="pa-linkbtn"
+        onClick={() => flow("purchase_cta_clicked", { where: "intro-inline" })}
+      >
+        get the full Passport
+      </AppLink>{" "}
+      or{" "}
+      <AppLink to={PREVIEWS_PATH} className="pa-linkbtn">
+        browse previews
+      </AppLink>{" "}
+      any time.
+    </p>
   );
 }
 
@@ -368,25 +356,8 @@ export function FreeStarter({ ctx }: { ctx?: CtxKey | undefined } = {}) {
         <p className="pa-sub">
           Picked for {dogWho(dogName)}. It stays here, free, so you can come back to it any time.
         </p>
-        <AdventureCard a={adventure} dogName={dogName} />
-        {done && (
-          <>
-            <section className="pa-panel" aria-labelledby="fs-stamp-h">
-              <h2 className="pa-h" id="fs-stamp-h">
-                Your first stamp
-              </h2>
-              <StampGrid earned={["first-adventure"]} slugs={["first-adventure"]} size={112} />
-              <p className="pa-fine">Added to your passport.</p>
-            </section>
-            <p className="pa-fine" id="fs-storage-note">
-              Your progress is kept on this device, in this browser, and nothing is uploaded. If you
-              clear your browser's site data, or open Paws &amp; Passage somewhere else (another
-              browser, another device, or a home-screen shortcut, which keeps its own separate
-              storage), it will not be there. Exporting a backup from My Passport is optional.
-            </p>
-            <UnlockPitch where="intro-complete" />
-          </>
-        )}
+        <AdventureCard a={adventure} dogName={dogName} focusOnMount />
+        {!done && <SkipAheadLine />}
         <p className="pa-fine">
           <button type="button" className="pa-linkbtn" onClick={editPrefs}>
             Edit preferences

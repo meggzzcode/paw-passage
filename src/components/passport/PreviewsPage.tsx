@@ -17,6 +17,7 @@ import {
 import { useEntitlement } from "@/passport/useEntitlement";
 import { usePassport } from "@/passport/usePassport";
 import { hasProfile } from "./ProfileEditor";
+import { collections as allCollections } from "@/passport/content";
 import { PreviewCard } from "./PreviewCard";
 import { PreviewMatch } from "./PreviewMatch";
 import { flow } from "./flow-events";
@@ -71,7 +72,7 @@ export function PreviewsPage() {
     });
 
   const total = data?.total ?? 0;
-  const collections = data?.collections ?? 0;
+  const collections = allCollections.length;
   const intro =
     status === "ready" && items.length > 0 && total > 0
       ? `${items.length} hand-picked previews from a larger collection of ${total} adventures${

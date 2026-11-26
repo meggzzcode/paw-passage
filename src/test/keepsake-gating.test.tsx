@@ -119,7 +119,7 @@ describe("keepsake gating", () => {
 });
 
 describe("KeepsakeUnlock", () => {
-  it.each(["intro-start", "intro-complete", "card"] as const)(
+  it.each(["intro-complete", "card"] as const)(
     "%s has a static example and no uploader",
     (where) => {
       const { container } = render(<KeepsakeUnlock where={where} />);

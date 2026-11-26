@@ -1,6 +1,10 @@
 // The size of the premium library, from the public GET /api/premium/summary. Counts only: no titles, no text.
 // Any failure returns null and the page shows honest fallback copy instead of a number.
 import { useEffect, useState } from "react";
+import { collections as allCollections } from "@/passport/content";
+
+/** Collections are counted the one way everywhere: the collections the site lists (same number as /collections). */
+const COLLECTION_COUNT = allCollections.length;
 
 export type PremiumSummary = { count: number; collections: { slug: string; count: number }[] };
 
@@ -31,7 +35,7 @@ export async function fetchPremiumSummary(): Promise<PremiumSummary | null> {
 /** "N premium adventures across M collections", or the fallback text when the summary is unavailable. */
 export function summaryText(s: PremiumSummary | null): string {
   if (!s) return SUMMARY_FALLBACK;
-  const m = s.collections.length;
+  const m = COLLECTION_COUNT;
   const adv = `${s.count} premium ${s.count === 1 ? "adventure" : "adventures"}`;
   return m > 0 ? `${adv} across ${m} ${m === 1 ? "collection" : "collections"}` : adv;
 }
@@ -42,7 +46,7 @@ const KINDS = "puppies, seniors, hyper dogs, homebodies and more";
 export function unlockLine(s: PremiumSummary | null): string {
   if (!s)
     return `Unlock a much larger library of adventures and challenges, for every kind of dog: ${KINDS}.`;
-  const m = s.collections.length;
+  const m = COLLECTION_COUNT;
   const where = m > 0 ? ` across ${m} ${m === 1 ? "collection" : "collections"}` : "";
   return `Unlock ${s.count} adventures and challenges${where}, for every kind of dog: ${KINDS}.`;
 }

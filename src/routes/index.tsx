@@ -1,3 +1,4 @@
+import { collections } from "@/passport/content";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import picnicImg from "@/assets/everyday/picnic.jpg";
 import dateImg from "@/assets/everyday/date.jpg";
@@ -110,7 +111,7 @@ function Home() {
   // Counts are advertised only when the previews API verified them; otherwise the summary or honest fallback wording.
   const variety =
     previews.status === "ready" && (previews.data?.total ?? 0) > 0
-      ? libraryLine(previews.data?.total, previews.data?.collections)
+      ? libraryLine(previews.data?.total, collections.length)
       : unlockLine(summary);
   return (
     <>
@@ -201,7 +202,7 @@ function Home() {
 
       <FactsStrip
         total={previews.data?.total}
-        collections={previews.data?.collections}
+        collections={collections.length}
         verified={previews.status === "ready"}
       />
 

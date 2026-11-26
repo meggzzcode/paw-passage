@@ -26,7 +26,7 @@ The free Passport works without an account. Your progress is stored on your devi
 
 ## The full Passport: a one-time purchase
 
-The full Passport is a **one-time purchase**. It is not a subscription and does not renew, so you pay once and it is yours to keep. "Does not expire" means we will not charge renewals or put a time limit on your purchase. It is not a promise that the service will run unchanged indefinitely: websites, browsers and hosting providers change, and we may change or retire features. Download a backup of your progress from your Passport page now and then. The price is shown at checkout before you pay. Checkout and payment are handled by our checkout provider, Gumroad, who sends you a license key. Refunds and access are covered in our [refund policy](/refund-policy).
+The full Passport is a **one-time purchase**. It is not a subscription and does not renew, so you pay once and it is yours to keep. "Yours to keep" means we will not charge renewals or put a time limit on your purchase. It is not a promise that the service will run unchanged indefinitely: websites, browsers and hosting providers change, and we may change or retire features. Download a backup of your progress from your Passport page now and then. The price is shown at checkout before you pay. Checkout and payment are handled by our checkout provider, Gumroad, who sends you a license key. Refunds and access are covered in our [refund policy](/refund-policy).
 
 ## What you are buying: the edition
 

@@ -309,13 +309,14 @@ describe("free Discover: the introductory flow", () => {
       "/unlock",
     ); // but buying never waits for it
     fireEvent.click(screen.getByRole("button", { name: "We did it" }));
-    expect(await screen.findByRole("heading", { name: "Your first stamp" })).toBeInTheDocument();
-    expect(screen.getByText(/Want more little adventures with your dog\?/)).toBeInTheDocument();
-    expect(screen.getAllByRole("link", { name: "See the full Passport" })[0]!).toBeInTheDocument();
-    expect(screen.getByRole("link", { name: "Browse previews" })).toHaveAttribute(
-      "href",
-      "/previews",
-    );
+    expect(
+      await screen.findByRole("heading", { name: "Another little memory made." }),
+    ).toBeInTheDocument();
+    // One purchase invitation only: no second "Want more" pitch, and the skip-ahead line is gone.
+    expect(screen.queryByText(/Want more little adventures/)).toBeNull();
+    expect(screen.queryByRole("link", { name: "get the full Passport" })).toBeNull();
+    expect(screen.getAllByTestId("purchase-invite")).toHaveLength(1);
+    expect(screen.getAllByRole("link", { name: "See the full Passport" })).toHaveLength(1);
     expect(fetchSpy).not.toHaveBeenCalled();
   });
 
@@ -326,7 +327,7 @@ describe("free Discover: the introductory flow", () => {
     fireEvent.click(screen.getByRole("button", { name: "Scratch or tap to reveal." }));
     await screen.findByText("How it goes");
     fireEvent.click(screen.getByRole("button", { name: "We did it" }));
-    await screen.findByRole("heading", { name: "Your first stamp" });
+    await screen.findByRole("heading", { name: "Another little memory made." });
     expect(
       screen.getByRole("heading", { name: "Another little memory made." }),
     ).toBeInTheDocument();

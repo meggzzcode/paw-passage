@@ -55,7 +55,8 @@ describe("approved brand copy", () => {
       "Collect adventures, not just things.",
       "One payment. Yours to keep.",
     ]);
-    expect(KEEP_LINE).toMatch(/^No subscription\. No renewals\./);
+    expect(KEEP_LINE).toBe("No subscription. No renewals.");
+    expect(KEEP_LINE).not.toMatch(/expire/i);
   });
 
   it("the home page and other pages read the one source", () => {

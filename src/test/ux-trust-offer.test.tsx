@@ -12,7 +12,7 @@ import { PhotoFilterExamples } from "@/components/site/PhotoFilterExamples";
 import { TrustBlock } from "@/components/passport/TrustBlock";
 import { StampShelf } from "@/components/passport/StampShelf";
 import { tagChips } from "@/components/passport/labels";
-import { adventures, stamps } from "@/passport/content";
+import { adventures, collections as allCollections, stamps } from "@/passport/content";
 
 vi.mock("@/components/shell/AppLink", () => ({
   AppLink: ({ children }: { children: unknown }) => <a href="/x">{children as string}</a>,
@@ -52,7 +52,9 @@ describe("offer and premium summary", () => {
         ],
       }),
     ).toMatch(
-      /^Unlock 120 adventures and challenges across 2 collections, for every kind of dog: puppies, seniors/,
+      new RegExp(
+        `^Unlock 120 adventures and challenges across ${allCollections.length} collections, for every kind of dog: puppies, seniors`,
+      ),
     );
     expect(unlockLine(null)).toMatch(/^Unlock a much larger library/);
     expect(unlockLine(null)).not.toMatch(/\d/);
@@ -67,7 +69,7 @@ describe("offer and premium summary", () => {
           { slug: "b", count: 60 },
         ],
       }),
-    ).toBe("120 premium adventures across 2 collections");
+    ).toBe(`120 premium adventures across ${allCollections.length} collections`);
   });
   it("returns null on any failure or a bad shape", async () => {
     vi.stubGlobal("fetch", vi.fn().mockRejectedValue(new Error("x")));

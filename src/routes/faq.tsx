@@ -1,3 +1,4 @@
+import { BRAND } from "@/config/brand";
 import { createFileRoute } from "@tanstack/react-router";
 import { Container } from "@/components/shell/Container";
 import { Button } from "@/components/shell/Button";
@@ -48,7 +49,7 @@ function Faq() {
         <FaqList />
         <TrustStrip />
         <p className="pp-cta-row">
-          <Button to="/discover">Find Our First Adventure — Free</Button>
+          <Button to="/discover">{BRAND.hero.primaryCta}</Button>
           <Button to="/unlock" variant="secondary">
             See what is included
           </Button>

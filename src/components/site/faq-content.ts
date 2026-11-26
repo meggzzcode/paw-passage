@@ -35,7 +35,7 @@ const BASE_FAQS: readonly Faq[] = [
     id: "keep-access",
     group: "buying",
     q: "How long do I keep access?",
-    a: "Your access does not expire and never needs renewing. It is yours to keep on your own devices, and you can restore it with your purchase code. We may add adventures over time, but we do not promise future additions. Access ends only if a purchase is refunded or reversed, as described in our refund policy.",
+    a: "You pay once and never renew. It is yours to keep on your own devices, and you can restore it with your purchase code. We may add adventures over time, but we do not promise future additions. Access ends only if a purchase is refunded or reversed, as described in our refund policy.",
   },
   {
     id: "digital-not-book",

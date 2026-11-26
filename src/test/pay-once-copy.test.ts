@@ -10,7 +10,7 @@ const ONCE = /one[- ]time|pay once|paid once|one payment|yours to keep/i;
 describe("pay-once copy", () => {
   it("the shared lines say what the offer is, once, in one place", () => {
     expect(ONE_TIME_LINE).toBe(`One payment of ${price}. Yours to keep.`);
-    expect(KEEP_LINE).toBe("No subscription. No renewals. Your Passport does not expire.");
+    expect(KEEP_LINE).toBe("No subscription. No renewals.");
   });
   it("every page that shows the price also says it is one-time", () => {
     expect(homePromo.commercial).toMatch(ONCE);

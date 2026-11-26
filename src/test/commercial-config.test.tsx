@@ -50,6 +50,7 @@ import { syntheticPremium } from "@/passport/fixtures/premium.synthetic";
 import { freeLibrary } from "@/passport/content";
 import { FAQS } from "@/components/site/faq-content";
 import { renderUi } from "./collections-fixtures";
+import { collections as allCollections } from "@/passport/content";
 import { _resetForTests, bookmarkPreview } from "@/passport/local-store";
 
 const walk = (dir: string): string[] =>
@@ -294,7 +295,10 @@ describe("welcome page", () => {
     { collections: ["c"] },
   ] as never;
   it("computes verified totals from the delivered library", () => {
-    expect(unlockedTotals(premiumFixture)).toEqual({ adventures: 3, collections: 3 });
+    expect(unlockedTotals(premiumFixture)).toEqual({
+      adventures: 3,
+      collections: allCollections.length,
+    });
   });
   it("welcomes an entitled customer: totals, saved previews, one next action, optional extras", async () => {
     ent.state = {
@@ -309,7 +313,7 @@ describe("welcome page", () => {
     await renderUi(<WelcomePage />);
     const t = document.body.textContent ?? "";
     expect(t).toContain("Welcome to the full Passport");
-    expect(t).toContain("3 premium adventures across 3 collections");
+    expect(t).toContain(`3 premium adventures across ${allCollections.length} collections`);
     expect(t).toContain("Your saved previews are now ready: 2 saved");
     expect(screen.getByRole("link", { name: "Open my Passport" })).toBeTruthy();
     expect(screen.getByTestId("install-card")).toBeTruthy();

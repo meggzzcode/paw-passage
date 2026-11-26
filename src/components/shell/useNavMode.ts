@@ -25,6 +25,11 @@ export function useNavMode(): { mode: NavMode; introStarted: boolean; retry: () 
   else if (status === "checking" || (flagged && status === "free")) mode = "loading";
   else if (status === "offline" && flagged) mode = "error";
 
+  // The pre-hydration hint (data-acct, set by a tiny inline script in the root document) is no longer needed once the state is known.
+  useEffect(() => {
+    if (mounted && mode !== "loading") document.documentElement.removeAttribute("data-acct");
+  }, [mounted, mode]);
+
   const introStarted = ready && !!save.starter && !!savedStarter(freeLibrary(), save);
   return { mode, introStarted, retry: () => void refreshEntitlement({ force: true }) };
 }

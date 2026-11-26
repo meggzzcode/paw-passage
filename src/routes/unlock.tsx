@@ -268,7 +268,7 @@ function Unlock() {
             The {collections.length} collections
           </h2>
           <p className="pa-fine">
-            The full library fills these collections. You can see selected previews before you buy.
+            Premium adventures fill these collections. You can see selected previews before you buy.
           </p>
           <ul className="co-plain pa-cols">
             {collections.map((c) => (

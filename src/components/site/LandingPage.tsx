@@ -1,3 +1,4 @@
+import { BRAND } from "@/config/brand";
 import { Container } from "@/components/shell/Container";
 import { Button } from "@/components/shell/Button";
 import { AppLink } from "@/components/shell/AppLink";
@@ -20,7 +21,7 @@ export function LandingPage({ slug }: { slug: string }) {
         <h1 className="pp-h1">{l.h1}</h1>
         <p className="pp-lede">{l.intro}</p>
         <p className="pp-cta-row">
-          <Button to="/discover">Find Our First Adventure — Free</Button>
+          <Button to="/discover">{BRAND.hero.primaryCta}</Button>
           <Button to="/passport" variant="secondary">
             See the Passport
           </Button>

@@ -1,6 +1,7 @@
 // The page after a verified purchase or restore. Everything shown is either verified (the library the server just
 // delivered to this browser) or counted on this device. It asks for nothing: one obvious next step, then optional
 // extras. The purchase code is never on this page or in its address.
+import { collections as allCollections } from "@/passport/content";
 import { AppLink } from "@/components/shell/AppLink";
 import { flags } from "@/config/commercial";
 import { InstallCard } from "@/components/site/InstallCard";
@@ -21,7 +22,7 @@ export function unlockedTotals(premium: readonly Adventure[]): {
 } {
   return {
     adventures: premium.length,
-    collections: new Set(premium.flatMap((a) => a.collections)).size,
+    collections: allCollections.length,
   };
 }
 

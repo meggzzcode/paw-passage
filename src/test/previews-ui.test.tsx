@@ -2,6 +2,7 @@ import { cleanup, fireEvent, render, screen, within } from "@testing-library/rea
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { PreviewsPage } from "@/components/passport/PreviewsPage";
 import { renderUi } from "./collections-fixtures";
+import { collections as allCollections } from "@/passport/content";
 import type { PreviewItem } from "@/lib/previews";
 import {
   _resetForTests,
@@ -95,7 +96,9 @@ describe("previews page", () => {
     ).toBeInTheDocument();
     expect(
       screen.getByText(
-        /3 hand-picked previews from a larger collection of 72 adventures across 14 collections/,
+        new RegExp(
+          `3 hand-picked previews from a larger collection of 72 adventures across ${allCollections.length} collections`,
+        ),
       ),
     ).toBeInTheDocument();
     // free-pool cards are not part of the premium showcase

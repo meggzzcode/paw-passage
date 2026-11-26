@@ -513,3 +513,10 @@
   font-size: 1rem;
   color: var(--pp-muted);
 }
+
+/* Returning customers, before the page knows their access state: no purchase button or free-visitor links in the first frame. */
+html[data-acct] .pp-header .pp-nav,
+html[data-acct] .pp-header .pp-header-cta,
+html[data-acct] .pp-header .pp-restore-link {
+  visibility: hidden;
+}

@@ -10,7 +10,7 @@ export const Route = createFileRoute("/discover")({
     pageHead({
       title: "Find a little adventure for your dog",
       description:
-        "Tell us about your dog and get one adventure picked for them, free. No account needed.",
+        "Answer a few questions about your dog and get a personalized little adventure to try together. Your first adventure is free, with no account needed.",
       path: "/discover",
       noindex: !!(match.search.ctx || match.search.mode),
     }),

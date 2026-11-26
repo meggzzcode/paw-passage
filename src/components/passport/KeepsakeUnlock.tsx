@@ -6,7 +6,7 @@ import { FILTER_EXAMPLES } from "@/components/site/keepsake-examples";
 import { price } from "@/config/commercial";
 import { track } from "@/passport/events";
 
-export type KeepsakeUnlockWhere = "intro-start" | "intro-complete" | "card";
+export type KeepsakeUnlockWhere = "intro-complete" | "card";
 
 const BY_FAMILY: Record<string, string> = {
   "travel-postcard": "/examples/postcard.webp",
@@ -18,16 +18,11 @@ const BY_FAMILY: Record<string, string> = {
   "then-and-now": "/examples/then-and-now.webp",
 };
 const BY_WHERE: Record<KeepsakeUnlockWhere, string> = {
-  "intro-start": "/examples/postcard.webp",
   "intro-complete": "/examples/magazine.webp",
   card: "/examples/trading-card.webp",
 };
 
 const COPY: Record<KeepsakeUnlockWhere, { lead: string; line: string }> = {
-  "intro-start": {
-    lead: "Before you start:",
-    line: `your free adventure gives you a stamp for your passport. Creating a personalized keepsake from your own photo is part of the full Passport (${price}, once).`,
-  },
   "intro-complete": {
     lead: "Your stamp is in your passport.",
     line: `This is the keepsake style that goes with it. Making one from your own photo is part of the full Passport (${price}, once).`,

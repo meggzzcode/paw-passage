@@ -4,7 +4,6 @@ import { site } from "@/config/site";
 import { campaignFields } from "@/lib/campaign";
 
 export type EventName =
-  | "profile_completed"
   | "adventure_revealed"
   | "adventure_completed"
   | "adventure_saved"
@@ -48,7 +47,6 @@ export type EventName =
   | "journal_preview_click";
 
 const ALLOWED = new Set<EventName>([
-  "profile_completed",
   "adventure_revealed",
   "adventure_completed",
   "adventure_saved",

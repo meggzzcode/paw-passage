@@ -83,3 +83,36 @@ An extra adventure from our first draft. We removed it because its core (a slow,
 - The Taste-Off is the only food adventure. It is deliberately vet-deferential, with a no-food Sniff-Off variation, but a vet or behaviour professional should read it before launch.
 - Several outdoor adventures declare crowd "some" with strangers and other dogs, so they are correctly held back from nervous dogs; the indoor and home-spot set carries those profiles.
 - Content has not been tested with real dogs or owners, and the scores are our own generous self-assessments (see the top of this document).
+
+## Independent re-score of the free set
+
+A second, independent reviewer re-read all 12 free adventures (steps, twist, variations, safety text and structured fields) on one scale where 5 is an ordinary pet-blog suggestion, 7 is good and 8 is genuinely excellent. This is editorial judgement only: nothing was tested with dogs or owners, and none of it is veterinary review. The authors' own numbers in each adventure file are unchanged.
+
+Independent averages (Appeal / Dog / Original / Adventure / Practical / Memory):
+
+| Adventure                     | Independent average |
+| ----------------------------- | ------------------- |
+| The Secret Detective Agency   | 8.17                |
+| The Secret Handshake Club     | 7.83                |
+| The Pick-a-Path Expedition    | 7.67                |
+| The Great Toy Showdown        | 7.67                |
+| The Great Neighborhood Safari | 7.33                |
+| The Great Doggy Taste-Off     | 7.33                |
+| The Living Room Campout       | 7.33                |
+| Tourists in Our Own Town      | 7.33                |
+| A Trip Down Memory Lane       | 7.17                |
+| The Paw-trait Studio          | 7.00                |
+| The Little Picnic Club        | 7.00                |
+| The Sunrise Breakfast Club    | 6.50                |
+
+Free-set mean: 7.36 independent against 8.15 from the authors. **Calibration: the authors scored about 0.8 points higher than the independent reviewer on the free set.** Read the independent column as the more cautious view. Only one free adventure reaches 8.0 on that scale, so the 8/10 authoring gate was not independently met. The lowest three (Paw-trait Studio, Little Picnic Club, Sunrise Breakfast Club) stay live as gentle starters but should not lead any promotion.
+
+Fixes made after the re-score (ids unchanged, statuses unchanged, publication gate unchanged):
+
+- Secret Detective Agency: the food-treat variation is replaced by a no-food longer-hunt variation, so the `food: false` field matches the text.
+- Pick-a-Path, Neighborhood Safari and Tourists: `cold` added to `avoidWeather`, matching the safety text about icy pavements.
+- Great Doggy Taste-Off: the frozen treat is set in plain water only, with a matching safety line and a clear stop rule.
+- A Trip Down Memory Lane: recreating at home is now the default; going back to the old place only if it is still quiet, with a leave-if-unsure line and a walk-away line.
+- Little Picnic Club: your own yard, patio or balcony is the default; a park corner only if it is empty and stays that way, with leave-if-others-arrive wording.
+- Sunrise Breakfast Club: the away-from-home variation is limited to places where the dog is already comfortable.
+- A "Read your dog" safety card (plain-words signs of relaxed, unsure and needs-space-now, a walk-away line and the standing line "General information from public guidance. Not veterinary advice. Ask your vet about your dog.") now shows on every revealed adventure card in the app, including Our Story entries, so these no longer depend on each adventure's own safety text.

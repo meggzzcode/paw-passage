@@ -17,6 +17,7 @@ import { track } from "@/passport/events";
 import { usePassport } from "@/passport/usePassport";
 import { Keepsake } from "./Keepsake";
 import { AddToCollection } from "./AddToCollection";
+import { ReadYourDog } from "./ReadYourDog";
 import {
   ACTIVITY_LABELS,
   PREP_LABELS,
@@ -173,6 +174,7 @@ export function AdventureCard({
         </ul>
       )}
       <p className="pa-fine">Keepsake: {keepsakeName(a)}</p>
+      <ReadYourDog />
 
       <button
         type="button"

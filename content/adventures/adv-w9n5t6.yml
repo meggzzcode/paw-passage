@@ -53,6 +53,7 @@ places:
 seasons: []
 avoidWeather:
   - heat
+  - cold
 lifeStages:
   - adult
   - senior

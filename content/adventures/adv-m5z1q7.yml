@@ -6,7 +6,7 @@ reveal: Find an old photo of your dog, bring back something from it and recreate
 objective: Recreate an old photo of your dog and make a then-and-now pair.
 instructions:
   - Scroll your photos for an early picture of your dog with a clear place or object in it, such as a blanket, a toy or a corner of a room.
-  - Work out where it was taken. If it is a quiet place your dog still enjoys, plan to go there. If not, recreate it at home with a similar blanket or corner.
+  - Work out where it was taken. Recreate it at home with a similar blanket or corner by default. Go back to the place only if it is still quiet and your dog is comfortable there now.
   - Gather one item from the photo, such as the old toy or blanket, and let your dog sniff it before you start. Let them take it in at their own pace.
   - Set up the same angle and take a new photo without posing them. Wait for a natural moment; many frames are fine.
   - "Place the two photos side by side and write one line for each: what you remember then and what you notice now."
@@ -67,8 +67,8 @@ noise: quiet
 food: false
 water: none
 safety:
-  - Go only where your dog is comfortable now. A beloved old place may be too far or too busy today.
-  - Never ask your dog to hold a pose. A relaxed moment is the whole point.
+  - Do this at home by default. Go out only if the place is still quiet for your dog, and leave if people or dogs arrive and your dog seems unsure. Go only where your dog is comfortable now. A beloved old place may be too far or too busy today.
+  - Your dog can walk away at any point and the photo can wait. Never ask your dog to hold a pose. A relaxed moment is the whole point.
   - For a puppy, check with your vet about vaccination and readiness before any public outing, and keep to your own yard or home until then.
 activityTypes:
   - memory-making

@@ -3,6 +3,8 @@
 // license codes are never logged or returned, every response is no-store, state changes need same-origin plus a CSRF header.
 import { migrate, validateSave, type Save } from "../../passport/progress";
 import { MAX_BODY_BYTES, MIN_SECRET_LENGTH, REVERIFY_MS } from "./config";
+import { MATCH_MAX_BODY_BYTES, matchProfile, validateMatchBody } from "./match";
+import { PREVIEW_INDEX_KEY, parsePreviewIndex } from "./previews";
 import { open, purchaseRefHash, seal } from "./crypto";
 import type { KV } from "./kv";
 import type { RateLimiter } from "./limits";
@@ -83,11 +85,11 @@ class HttpError extends Error {
   }
 }
 
-async function readBody(req: Request): Promise<Record<string, unknown>> {
+async function readBody(req: Request, max = MAX_BODY_BYTES): Promise<Record<string, unknown>> {
   const len = Number(req.headers.get("content-length") ?? "0");
-  if (len > MAX_BODY_BYTES) throw new HttpError(413, "payload_too_large");
+  if (len > max) throw new HttpError(413, "payload_too_large");
   const text = await req.text();
-  if (Buffer.byteLength(text) > MAX_BODY_BYTES) throw new HttpError(413, "payload_too_large");
+  if (Buffer.byteLength(text) > max) throw new HttpError(413, "payload_too_large");
   if (!text) return {};
   try {
     const v = JSON.parse(text) as unknown;
@@ -114,6 +116,8 @@ export function createApi(deps: ApiDeps) {
       "/api/progress": ["GET", "PUT"],
       "/api/premium/adventures": ["GET"],
       "/api/premium/summary": ["GET"],
+      "/api/previews": ["GET"],
+      "/api/previews/match": ["POST"],
       "/api/account/export": ["POST"],
       "/api/account/delete": ["POST"],
     };
@@ -127,6 +131,13 @@ export function createApi(deps: ApiDeps) {
       if (!deps.generalLimiter.allow(`g:${deps.ip ?? "unknown"}`))
         return fail(429, "rate_limited", {}, { "retry-after": "60" });
       return await summary();
+    }
+
+    // Public and anonymous: allowlisted preview records and aggregate counts. Never any card text beyond the teaser.
+    if (path === "/api/previews" || path === "/api/previews/match") {
+      if (!deps.generalLimiter.allow(`g:${deps.ip ?? "unknown"}`))
+        return fail(429, "rate_limited", {}, { "retry-after": "60" });
+      return path === "/api/previews" ? await previews() : await previewMatch(req);
     }
 
     const secret = deps.secret;
@@ -321,6 +332,38 @@ export function createApi(deps: ApiDeps) {
     } catch {
       log("summary_unavailable");
       return fail(503, "summary_unavailable", {}, { "retry-after": "60" });
+    }
+  }
+
+  async function readPreviewStore() {
+    return parsePreviewIndex((await deps.premium.get(PREVIEW_INDEX_KEY))?.value);
+  }
+
+  /** Cacheable for 5 minutes. No store (or an empty one) is an honest empty answer, not an error. */
+  async function previews() {
+    try {
+      const idx = await readPreviewStore();
+      const body = idx
+        ? { items: idx.items, total: idx.total, collections: idx.collections }
+        : { items: [], total: 0, collections: 0 };
+      return json(200, body, { "cache-control": "public, max-age=300" });
+    } catch {
+      log("previews_unavailable");
+      return fail(503, "previews_unavailable", {}, { "retry-after": "60" });
+    }
+  }
+
+  /** The body (an optional dog profile) is validated and never logged. Not cacheable. */
+  async function previewMatch(req: Request) {
+    if (!sameOrigin(req)) return fail(403, "bad_origin");
+    try {
+      const parsed = validateMatchBody(await readBody(req, MATCH_MAX_BODY_BYTES));
+      if (!parsed) return fail(400, "bad_profile");
+      return json(200, matchProfile(await readPreviewStore(), parsed.dog, parsed.owner));
+    } catch (e) {
+      if (e instanceof HttpError) return fail(e.status, e.code);
+      log("previews_unavailable");
+      return fail(503, "previews_unavailable", {}, { "retry-after": "60" });
     }
   }
 

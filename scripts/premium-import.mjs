@@ -7,12 +7,17 @@
 //   add --env production --write --yes-production to touch the live store; add --prune to delete adventures not in the file.
 //
 // The file is a JSON array of adventures (schema: src/passport/schema.ts), kept OUTSIDE git. Paths inside this repo are refused.
+// Public previews: cards flagged showcase:true are projected (allowlist, src/server/passport/previews.ts) into `previews/index`,
+// together with library totals and structural match fields for every published card (free ones are read from content/adventures).
+// A showcase card with no teaser, or a teaser that explains mechanics, is REFUSED. The dry run reports the showcase count.
 // Store layout (read by src/server/passport/store.ts readPremium): `index` -> {v:1, ids:[...], items:[{id,status,collections}]}, `adventure/<id>` -> adventure.
-import { readFileSync, realpathSync } from "node:fs";
+import { readdirSync, readFileSync, realpathSync } from "node:fs";
 import { dirname, join, resolve, sep } from "node:path";
 import { fileURLToPath } from "node:url";
 import { getStore } from "@netlify/blobs";
+import { parse as parseYaml } from "yaml";
 import { adventureSchema, validateLibrary } from "../src/passport/schema.ts";
+import { buildPreviewIndex, PREVIEW_INDEX_KEY } from "../src/server/passport/previews.ts";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const args = process.argv.slice(2);
@@ -60,6 +65,17 @@ problems.push(
   ),
 );
 if (problems.length) die(`Validation failed:\n${problems.join("\n")}`, 1);
+const freeDir = join(root, "content", "adventures");
+const free = readdirSync(freeDir)
+  .filter((f) => f.endsWith(".yml"))
+  .map((f) => adventureSchema.parse(parseYaml(readFileSync(join(freeDir, f), "utf8"))));
+let previewIndex;
+try {
+  previewIndex = buildPreviewIndex(adventures, free);
+} catch (e) {
+  die(`Preview import refused: ${e instanceof Error ? e.message : "error"}`, 1);
+}
+const showcase = adventures.filter((a) => a.status === "published" && a.showcase).length;
 console.log(`Validated ${adventures.length} premium adventures for store premium-${env}.`);
 // The index carries what GET /api/premium/summary needs (published status and collection slugs, no titles or text).
 function buildIndex(list) {
@@ -69,6 +85,9 @@ function buildIndex(list) {
     items: list.map((a) => ({ id: a.id, status: a.status, collections: a.collections })),
   };
 }
+console.log(
+  `Showcase previews: ${showcase} premium (${previewIndex.items.length} preview records in total); library ${previewIndex.total} published across ${previewIndex.collections} collections.`,
+);
 console.log(
   `Index will list ${adventures.filter((a) => a.status === "published").length} published of ${adventures.length} adventures.`,
 );
@@ -83,6 +102,7 @@ const store = getStore({ name: `premium-${env}`, siteID, token, consistency: "st
 const old = (await store.get("index", { type: "json" }))?.ids ?? [];
 for (const a of adventures) await store.setJSON(`adventure/${a.id}`, a);
 await store.setJSON("index", buildIndex(adventures));
+await store.setJSON(PREVIEW_INDEX_KEY, previewIndex);
 if (flag("--prune"))
   for (const id of old)
     if (!adventures.some((a) => a.id === id)) await store.delete(`adventure/${id}`);

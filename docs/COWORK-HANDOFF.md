@@ -1,71 +1,38 @@
 # Cowork handoff
 
-The one current list of what remains. It replaces every earlier handoff, including the old A to F phases. Google tasks keep their ids from `docs/GOOGLE-SETUP.md` (R1 to R10, P1 to P7, L1 to L10, T1 to T5, M1 and A1 to A9); they are not repeated here.
+The one current list of what remains, in the owner's seven phases. Google tasks keep their ids from `docs/GOOGLE-SETUP.md` (R, P, L, T, M, A groups) and are not repeated here.
 
-**Rules for every task.** Nothing here may spend money, publish, deploy or change DNS or billing without the owner's explicit authorization in that session. Never paste a secret, license code, token or banking detail into chat, a file, a commit or a screenshot. Secrets are entered by the owner in the Netlify web UI only. Do not nag the owner about items marked "later".
+**Rules.** Nothing here may spend money, publish, deploy or change DNS or billing without the owner's explicit authorization in that session. Never paste a secret, license code, token or banking detail into chat, a file, a commit or a screenshot; the owner enters secrets in the Netlify web UI only. The repository, Netlify site, domain, Search Console, GA4, Pages CMS and Lovable project stay as they are: no new repository, no history rewrite.
 
-**Standing facts.** One-time $19.99 (`offer` in `src/config/site.ts`; it must equal the price on the Gumroad product); no subscription. Photos stay on the device. Gifting, PWA install prompts and push stay disabled (`flags.gifting=false`, `PWA_ENABLED=false`, `flags.notifications=false`). Preview testing uses SYNTHETIC content only; the real premium library goes only into an access-controlled environment after the owner authorizes it (an undisclosed URL is not access control). The protected premium package is kept outside the repo; private records are kept privately by the owner. Library size is 115 adventures in the repo (16 free plus 99 premium), 116 once the staged private premium card is added; quote counts only from `node scripts/library-stats.mjs --md` in the matching mode.
+**Standing facts.** The one-time price in `offer` (`src/config/site.ts`) must equal the price on the Gumroad product; no subscription. Photos stay on the device. Gifting, PWA install prompts and push stay disabled (`flags.gifting=false`, `PWA_ENABLED=false`, `flags.notifications=false`). The protected premium package lives outside the repository; the repository tracks no premium text. Preview testing uses SYNTHETIC content only; the real library goes only into an access-controlled environment after the owner authorizes it. Quote library counts only from `node scripts/library-stats.mjs --md`.
 
-## 1. Code changes
+## Recorded decisions
 
-**Done.** Free first-adventure flow with practical-info-first recommendation and "show me another"; public showcase previews and the two public preview endpoints; save before you buy; the commercial pages (home, unlock, FAQ, trust pages); analytics event allow-list; leak guards; Journal; the Google setup and indexing policy (`docs/GOOGLE-SETUP.md`).
+| Topic                 | Decision                                                                                                                                                                                                                                                                  |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Lovable (Option C)    | Leave Lovable `main` alone until the final integrated app is approved, then a controlled merge into `main`. After that `main` is authoritative; obsolete branches are retired only when safe and approved, and premium files are removed from `main`'s tree at that point |
+| Markets and consent   | US-first marketing; analytics stays opt-in (Basic Google Consent Mode); the Cookies section of `/privacy` must match                                                                                                                                                      |
+| Shared devices        | Approved. Anonymous intro progress may merge into the first paying customer; another customer's records never merge automatically. Test with two customers                                                                                                                |
+| Gifting, PWA, push    | Disabled                                                                                                                                                                                                                                                                  |
+| Price and positioning | Unchanged: one-time, no subscription; tagline "A lifetime of little adventures."                                                                                                                                                                                          |
+| Content               | FROZEN after the targeted additions in phase 2                                                                                                                                                                                                                            |
+| Sign-out everywhere   | Not offered                                                                                                                                                                                                                                                               |
 
-**Pending.**
+## The seven phases (in order)
 
-1. Design integration after Lovable approval. Lovable has already committed a site-wide retheme to `main` (`59cd632`, which deleted the concept pages) and a plan file (`5941db1`). The owner's options A, B and C for how to bring that work into this codebase are pending; do not choose for the owner. Details: `docs/DESIGN-INTEGRATION.md`, `docs/DESIGN-ASSET-LICENSES.md`.
-2. Consent restyle: the consent surface restyled to match the approved design, behavior unchanged until the owner decides the markets and consent mode (section 2).
-3. Final verification: the lead fills the Last verified run tables in `docs/QA-REPORT.md` for the commit that is proposed for launch.
+1. **Final Lovable design approval.** The owner approves the design in Lovable. Lovable has committed a retheme to `main` (`59cd632`) and a plan file (`5941db1`); nothing is merged before approval (`docs/DESIGN-INTEGRATION.md`, `docs/DESIGN-ASSET-LICENSES.md`).
+2. **Selective visual integration and targeted repo corrections.** Bring in only what is needed, restyle the consent surface (behavior unchanged). Corrections: Quiet Garden added to the package; Treasure Island adaptable variation; one more free outdoor card (puppies, limited-mobility and noise-sensitive dogs); family ranking fix. Then content is frozen.
+3. **Final integrated tests and owner package verification.** Fill the Last verified run tables in `docs/QA-REPORT.md` for the proposed launch commit; run the leak checks and `node scripts/sanitize-check.mjs` (0 findings); rebuild the owner package (`marketing/README.md`) and check its six sections.
+4. **Netlify preview, protected storage, real-device tests, Google preparation, support verification.**
+   - Netlify: manual deploys only, auto builds stopped, branch deploys off; record the live deploy id and the rollback target (`docs/NETLIFY-PREVIEW.md`).
+   - Protected storage: import and backup per `docs/PREMIUM-CONTENT-WORKFLOW.md`, preview store with synthetic content first.
+   - Real iPhone and Android, preview only, test codes only: sign-out on this device (progress stays; restore works); second person on a shared phone; consent behavior; keepsake export has no EXIF or GPS and no image upload; free flow with 44 px targets and reduced motion. Report OS and browser versions for every failure.
+   - Google: read-only inspection now (R1 to R10); change nothing, export history first. Cleanup is planned from the findings and changed only after approval.
+   - Support: write to the address on `/contact` from an outside address and confirm a reply from the same address (launch blocker).
+5. **Gumroad setup and live transaction verification.** Owner-only for account, payout and any purchase. Product at the `offer` price with license keys; product id and checkout link entered in Netlify; verify the license response fields with a real test key; one authorized purchase, restore on a second browser, refund and revocation; set the refund period on the product (the site states none); buyers-only email workflow (`docs/EMAIL-NUDGES.md`); attribution findings (T1 to T5). Do not claim pin-to-sale attribution.
+6. **Authorized production launch, Search Console updates, marketing distribution.** Needs the owner's written approval in that session, the launch gates in `docs/LAUNCH-CHECKLIST.md` at Pass, and a rollback copy plus a secure backup. Afterwards: `node scripts/verify-site.mjs <site url>`, `node scripts/check-leaks.mjs` on the build, sitemap and Search Console updates, weekly checks for the first month (M1, A1 to A9), then marketing distribution (`docs/MARKETING.md`). Recovery is a Netlify production rollback.
+7. **Customer acquisition and commercial validation.** Measure against the thresholds in `docs/DECISIONS.md`; no invented figures; review price only with data.
 
-## 2. Owner decisions
+## Still to confirm (owner)
 
-Record each answer with date and decider. Cowork does not decide these.
-
-| Decision                         | Notes                                                                                                                                          |
-| -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
-| Markets and consent mode         | Which regions to serve; banner, or analytics cookies off; then the Cookies section of `/privacy` must match                                    |
-| Canonical host                   | www (recommended) or apex; the other 301s to it (L1)                                                                                           |
-| Repository privacy               | Owner: fine, later. Do not nag                                                                                                                 |
-| New clean repository             | Name it and migrate at the end, with a separate approval for re-linking Netlify and Lovable (`docs/REPO-MIGRATION.md`)                         |
-| Premium package additions        | Quiet Garden card; Treasure Island variation                                                                                                   |
-| Free outdoor card                | One free outdoor adventure for puppies, limited-mobility dogs and noise-sensitive dogs                                                         |
-| Bonus experiences                | Define the term (the inventory currently counts 22) before any public copy uses a number                                                       |
-| Refund period                    | Set on the Gumroad product; the site states no period                                                                                          |
-| Gifting go or no-go              | Stays off unless the Gumroad gift test passes completely                                                                                       |
-| PWA and push go or no-go         | Stay off at launch (recommended)                                                                                                               |
-| Slogan                           | The earlier signature line is removed everywhere with a guard test; the tagline is "A lifetime of little adventures." Confirm the final slogan |
-| Two flagged 301s                 | Confirm the two redirects flagged in `docs/GOOGLE-SETUP.md` section 2.3 before any change                                                      |
-| Attribution option               | Which Gumroad attribution option to use (`docs/GOOGLE-SETUP.md` 4.5)                                                                           |
-| Internal-traffic IPs             | Owner supplies the addresses to exclude from GA4 (never written to the repo)                                                                   |
-| Retention                        | GA4 data retention (14 months recommended)                                                                                                     |
-| Retire stays-era GA4 items       | Approve deleting old key events, audiences and definitions                                                                                     |
-| Lovable asset provenance         | Source and license of every image and font, and whether any imagery is AI-generated; label AI imagery visibly where used                       |
-| Real library in a preview store  | No (recommended): synthetic content only. Real import only into an access-controlled environment after authorization                           |
-| Support mailbox and policy items | Confirm the support address receives mail; deletion-request policy; lawyer review of the trust pages (`docs/POLICIES-REVIEW.md`)               |
-
-## 3. External setup
-
-- **Netlify credits and deploys (Phase N).** Live production is `main@6d80efb`; rollback target is `main@f02e4f9`. Credits were 6.8, then the owner bought one pack. N1 confirm the pack is applied and auto-recharge stays disabled. N2 manual deploys only: stop automatic builds, keep auto publishing locked, and confirm a push to `main` does not start a build. N3 keep branch deploys off. N4 record the live deploy id and rollback target. N5 deploy only when the owner says so (one production build is about 15 credits; `node scripts/cost-model.mjs`). Pass: a test push creates no build and credits are unchanged.
-- **Domain.** Decide the canonical host and keep DNS changes owner-approved (L1 to L10).
-- **Google, read-only inspection NOW.** Search Console properties, sitemaps, Pages and Removals reports, GA4 stream and settings: R1 to R10. Change nothing; export history first. Old Google URL cleanup is planned from what this finds, and is changed only after owner approval (L-group, T-group).
-- **Supabase and Netlify.** Supabase is only touched if the design integration requires it. Netlify environment variables are set by the owner: `SESSION_SECRET`, `PP_DATA_KEY`, `GUMROAD_PRODUCT_ID` (Functions) and `VITE_CHECKOUT_URL` (build). `PP_ALLOW_TEST_PROVIDER` only on previews. Preview procedure: `docs/NETLIFY-PREVIEW.md`; import and backup: `docs/PREMIUM-CONTENT-WORKFLOW.md`.
-- **Support mailbox test.** Send a message to the address on `/contact` from an outside address and confirm a reply from the same address (launch blocker).
-- **Preview checks.** P1 to P7 once a preview exists (synthetic content only).
-
-## 4. Physical-device verification
-
-On a real iPhone and a real Android phone, preview only, test codes only. Report OS and browser versions for every failure.
-
-- Sign-out: My Passport, "Sign out of this device"; progress stays; restore through Restore access.
-- Shared device: a second person on the same phone sees no one else's dog or photos after sign-out.
-- Consent: the banner or setting appears per the chosen mode, can be changed later, and analytics events arrive only when allowed.
-- Keepsake: camera and library both work; the exported PNG has no EXIF or GPS; no network request carries image data.
-- Free flow: quiz, recommendation, "show me another", reveal, stamp, widen with puppy plus senior plus children; 44 px tap targets; reduced motion honored.
-- PWA and push: later, only if the owner turns them on (`docs/PWA-DEVICE-TEST.md`).
-
-## 5. Gumroad (LAST, owner-owned)
-
-Do not start until sections 1 to 4 are clear. Owner only for account, payout and any purchase. Steps: seller account; draft product at $19.99 with license keys; product id and checkout link entered by the owner in Netlify; verify the license response fields with a real test key; one authorized purchase, restore on a second browser, refund and revocation; optional gift test; buyers-only email workflow (`docs/EMAIL-NUDGES.md`); attribution findings (T1 to T5). Do not claim pin-to-sale attribution.
-
-## 6. Production authorization
-
-Nothing deploys, imports the real library, changes DNS or changes billing without the owner's written approval in that session. Before approval: the launch gates in `docs/LAUNCH-CHECKLIST.md` read Pass, the QA tables are filled for the launch commit, and a rollback copy and secure backup exist. After a production deploy: `node scripts/verify-site.mjs <site url>`, `node scripts/check-leaks.mjs` on the build, and weekly Search Console checks for the first month (M1, A1 to A9). Recovery is a Netlify production rollback to the earlier published deploy; no tag is needed.
+Canonical host (www or apex); the two flagged 301s (`docs/GOOGLE-SETUP.md` 2.3); Gumroad attribution option; internal-traffic IPs for GA4 (never written to the repo); GA4 retention; deleting old GA4 items; source and license of every Lovable image and font (`docs/DESIGN-ASSET-LICENSES.md`); deletion-request policy and lawyer review of trust pages (`docs/POLICIES-REVIEW.md`); the definition of "bonus experiences" before any public copy uses a number. Transfer facts for a future sale are in `docs/TRANSFER-INVENTORY.md`.

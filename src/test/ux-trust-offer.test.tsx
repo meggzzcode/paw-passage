@@ -38,7 +38,6 @@ describe("offer and premium summary", () => {
       "src/routes/unlock.tsx",
       "docs/COWORK-HANDOFF.md",
       "docs/DECISIONS.md",
-      "docs/FLIP-HANDOFF.md",
       "docs/PRODUCT-SPEC.md",
     ];
     for (const f of files) expect(readFileSync(f, "utf8")).not.toMatch(/14\.99|introductory/i);

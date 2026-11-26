@@ -298,6 +298,7 @@ export function profileUnknown(dog: DogProfile): boolean {
 export const GENTLE_START_NOTE = "Starting gentle until we know your dog";
 const GENTLE_STEP = 1.2;
 const GENTLE_NOTE_MIN = 6;
+const FAMILY_UNREQUESTED = 0.5; // larger than the tie-break jitter (0.05), far smaller than any real preference
 
 /** Soft bonus for the conservative traits of an adventure: 0 to 7 steps. */
 function gentleSteps(a: Adventure): number {
@@ -384,7 +385,12 @@ function score(
   }
   // Children joining is a preference (a hard filter only in the strict pass of the free quiz): family-suited adventures
   // still rank first when it was set aside by "widen".
-  if (owner.kids && a.household.includes("family")) note(2, "Suited to families with children");
+  // The tag is a preference ONLY when children are joining (or the visitor filtered for family). Without that, a family-tagged
+  // adventure must not win a tie by accident (every score is otherwise equal and the fixed-seed tie-break would pick it).
+  if (a.household.includes("family")) {
+    if (owner.kids) note(2, "Suited to families with children");
+    else if (!filters.household?.includes("family")) s -= FAMILY_UNREQUESTED;
+  }
   if (a.reservation.needed) notes.push({ w: 0, text: "Needs a booking ahead" });
 
   const fb = h.feedback?.[a.id];

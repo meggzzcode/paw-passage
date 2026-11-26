@@ -43,7 +43,7 @@ Collections and stamps: every collection or stamp code listed on an adventure mu
 
 ## Premium library runbook (import, export, backup)
 
-The standard path is one JSON file per adventure in the protected package's `adventures/` folder (`export PREMIUM_DIR=<that folder>`; a git-ignored local copy may sit in `content/premium/`): validate with `node scripts/premium-import.mjs --dir "$PREMIUM_DIR" --env preview` (dry run), back up with `node scripts/premium-export.mjs --dir <folder> --env production`, then import with `--write`. The full workflow, rollback and the optional GitHub Action template are in `PREMIUM-CONTENT-WORKFLOW.md`; handing the business to a new owner is `OWNERSHIP-TRANSFER.md`. The single-file commands below still work.
+The standard path is one JSON file per adventure in the protected package's `adventures/` folder (`export PREMIUM_DIR=<that folder>`; a git-ignored local copy may sit in `content/premium/`): validate with `node scripts/premium-import.mjs --dir "$PREMIUM_DIR" --env preview` (dry run), back up with `node scripts/premium-export.mjs --dir <folder> --env production`, then import with `--write`. The full workflow, rollback and the optional GitHub Action template are in `PREMIUM-CONTENT-WORKFLOW.md`; handing the business to a new owner is `TRANSFER-INVENTORY.md`. The single-file commands below still work.
 
 The premium adventures live only in Netlify Blobs, in store `premium-production` (live site) and `premium-preview` (previews and tests). They are loaded by two owner-run scripts on your own computer. The scripts are never deployed, are not web endpoints and are never run by Claude.
 
@@ -71,6 +71,25 @@ The import writes `adventure/<id>` for each adventure and an `index` listing the
 It refuses to overwrite an existing file unless `--overwrite` is given and writes the file readable by you only. The output is the same array the import reads, so export then import restores a store.
 
 **Round-trip test (once, with synthetic data):** B7 in `COWORK-HANDOFF.md`.
+
+## Customer data, export and restore, and minimum recovery
+
+**What lives where.** Netlify Blobs, strong consistency. `<env>` is `production` only on the production deploy context; everything else uses `preview`.
+
+| Store             | Keys                                             | Contents                                                                                                                                                            |
+| ----------------- | ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `customers-<env>` | `customer/<cus_id>`                              | Progress (Save v2: dog profile, preferences, done, saved, memories, starter), entitlement {purchaseRefHash, status, createdAt, lastVerifiedAt, sealed license code} |
+| `customers-<env>` | `purchase/<hash>`                                | {cus}: the lookup from the purchase hash (HMAC with `PP_DATA_KEY`) to the customer                                                                                  |
+| `customers-<env>` | `notif/<cus_id>`, `notifdue/<slot>` and a cursor | Push devices and plans. Empty while push is disabled                                                                                                                |
+| `premium-<env>`   | `index`, `adventure/<id>`, `previews/index`      | The paid library, its index and public previews                                                                                                                     |
+
+There are no photos in these stores and the app asks for no email address (confirm against a live Gumroad response). The license code is stored only sealed (AES-GCM with a key derived from `PP_DATA_KEY`).
+
+**Export (owner, from a terminal, never in a repository).** The premium library has `node scripts/premium-export.mjs --dir <folder> --env production`. There is NO customer export script yet. A developer writes a one-off Node script using `@netlify/blobs` (`getStore({ name: "customers-production", siteID, token })`, then `list()` and `get(key, { type: "json" })` for every `customer/`, `purchase/` and `notif/` key) and writes one file per key. UNVERIFIED until it is written and tested on the preview store with synthetic data. Rules: run on the owner's own computer; token entered in the terminal only; encrypt the output at once (for example `age` or an encrypted archive) and keep ONE offline copy plus one off-site copy; delete scratch copies; never email it, commit it or give it to a prospective buyer. Keep the minimum: the export is only needed before a platform change, a rotation of `PP_DATA_KEY`, or a bulk change.
+
+**Restore.** Decrypt on the owner's computer, then write each key back with `set` (the same script reversed), into the preview store first and check one sign-in with a test code, then production. Restoring needs the SAME `PP_DATA_KEY` or the `purchase/<hash>` lookups and sealed codes will not match. Premium restore: `premium-import.mjs --dir <folder>` (dry run, then `--write`).
+
+**Minimum recovery process (a future owner starting from nothing).** (1) Get the repository and the protected content package with its checksum. (2) Create the Netlify site from the repository; set the environment variable names in the table above (values from the password manager). (3) Run the premium import into the production store (dry run first). (4) Point `GUMROAD_PRODUCT_ID` and `VITE_CHECKOUT_URL` at the product and deploy manually. (5) If customer records were lost and no export exists: customers restore access by entering their license key, which creates a fresh record (their progress also lives in their own browser and in their own Passport export). (6) Run `node scripts/verify-site.mjs <site url>` and a test restore. Which pieces live outside any export (Gumroad sales list, license keys) are listed in `docs/TRANSFER-INVENTORY.md`.
 
 ## Netlify credits and the build-skip rule
 
@@ -103,7 +122,7 @@ Affiliate links are limited to verified Amazon products.
 | `NETLIFY_AUTH_TOKEN`     | Your terminal only            | Used by the premium scripts                                                                              |
 | `SITE_ID`                | Your terminal only            | Used by the premium scripts                                                                              |
 
-Notification variables (`NOTIFICATIONS_ENABLED`, `VAPID_PUBLIC_KEY`, `VAPID_PRIVATE_KEY`, `VAPID_SUBJECT`) are in `NOTIFICATIONS.md`; what to rotate when ownership changes is in `OWNERSHIP-TRANSFER.md`, section 2. Rotating `SESSION_SECRET` signs everyone out. Rotating `PP_DATA_KEY` breaks purchase lookups and the stored-code re-check, so treat it as permanent. If either leaks, set a new `SESSION_SECRET` immediately and plan `PP_DATA_KEY` migration with a developer.
+Notification variables (`NOTIFICATIONS_ENABLED`, `VAPID_PUBLIC_KEY`, `VAPID_PRIVATE_KEY`, `VAPID_SUBJECT`) are in `NOTIFICATIONS.md`; what to rotate when ownership changes is in `TRANSFER-INVENTORY.md`. Rotating `SESSION_SECRET` signs everyone out. Rotating `PP_DATA_KEY` breaks purchase lookups and the stored-code re-check, so treat it as permanent. If either leaks, set a new `SESSION_SECRET` immediately and plan `PP_DATA_KEY` migration with a developer.
 
 The step-by-step preview procedure, the preview-versus-production values for each variable and the checks to run are in `NETLIFY-PREVIEW.md`.
 

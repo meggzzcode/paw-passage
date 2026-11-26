@@ -296,7 +296,7 @@ Or restore from this package: unzip it and use the commands in IMPORT.md.
 1. Give the new owner the .zip (private channel) and the sha256 shown next to it; they compare it to the file they received.
 2. They unzip it, run the dry run in IMPORT.md against their own store, then preview, then production. They use their own Netlify token and site id.
 3. You then revoke your own Netlify token. No secret or customer detail is in the package.
-4. Delete or archive your copies once the transfer is confirmed. See OWNERSHIP-TRANSFER.md in the repository for the rest of a sale.
+4. Delete or archive your copies once the transfer is confirmed. See docs/TRANSFER-INVENTORY.md in the repository for the rest.
 `;
 
 // 9. Write the folder.

@@ -1,5 +1,9 @@
 # Marketing assets
 
+## Owner package
+
+`node marketing/build-owner-package.mjs --out <folder outside the repository> [--skip-render] [--site https://real-domain] [--zip]` builds the owner package in exactly six sections: 01 Business Overview, 02 Website and Operations, 03 Product Assets, 04 Marketing, 05 Financial Performance (empty Sheet-ready template), 06 Transfer and Recovery. It refuses to write inside the repository, reads no secrets or premium text, and clears the output folder first so no stale files remain. Photo and example images are listed in 03 with the credits from `docs/IMAGE-CREDITS.md`; nothing is marked pending.
+
 Owner instructions for the Pinterest pin system. Plan and rationale: docs/MARKETING.md.
 
 ## What is here

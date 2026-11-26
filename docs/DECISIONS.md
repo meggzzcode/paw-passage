@@ -60,7 +60,7 @@ Current architecture and commercial decisions. Each entry states the decision an
 
 ## Open items
 
-Owner decisions are listed with options in `COWORK-HANDOFF.md` (OD1 to OD12). Open external facts:
+Owner decisions are recorded in `COWORK-HANDOFF.md`. Open external facts:
 
 - Verify the Gumroad license API fields and behavior (A7, E4) and replace every UNVERIFIED comment in `src/server/passport/provider.ts`.
 - Confirm Netlify Blobs metering, persistence across deploys and etag behavior on the owner's plan (A5, B3 to B8).

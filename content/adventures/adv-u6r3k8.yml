@@ -1,0 +1,118 @@
+schema: 2
+id: adv-u6r3k8
+title: The Listening Post
+clue: Somewhere quiet outside, a very small station is about to open, and the only instrument is a pair of ears.
+reveal: Sit still in a calm outdoor spot and let your dog be the instrument. Every time their ears or head turn toward a sound, you mark a dot on a little compass card. Three short sittings later, the post files its report.
+objective: Sit in one quiet outdoor spot for three short watches, mark where your dog's attention goes on a compass card and read the report aloud.
+instructions:
+  - "Pick a quiet, calm spot you can reach easily: a porch, a yard chair, a bench or a doorstep. Choose a time with no traffic rush, no mowers and no visitors. Bring a seat for you and a mat or blanket for your dog."
+  - "On a card or scrap of paper draw a plus sign, then write the four directions at its ends, or pick four landmarks such as the tree, the gate, the house and the sky. This is the compass card."
+  - "Settle in and let your dog choose where to lie, sit or stand, with the leash or fence keeping things safe. Say nothing and ask nothing of them. The first watch lasts about three minutes."
+  - "Each time your dog's ears prick, or their head turns toward something, make a small dot on the compass card in that direction. You are only noticing: do not point, call or react."
+  - "Take a short breather and watch again, twice more. Your dog may nap through a watch or stare at a leaf, and an empty card is a valid report."
+  - "Read the report aloud in a calm voice: where most of the dots landed and what the post concluded. Then stop the post, and let your dog stay where they are or go in whenever they like."
+twist: "Your dog is the instrument and you are only the clerk: the post's report is written entirely by what they notice."
+variations:
+  - "Very gentle: one two-minute watch from a doorstep or open door, then go in."
+  - "For a seated owner: sit in the shade of your own porch or yard seat and keep the whole post within a few steps of the door."
+  - "For a puppy: only after your vet says outdoor contact is okay. Until then, hold the post at an open window, and keep unvaccinated puppies off ground other dogs have used (a clean blanket in your arms or your own enclosed space is enough)."
+  - "For a senior dog: stop whenever they like, pick a shaded spot with water nearby, and avoid wet or slippery ground."
+completion: "Three short watches are logged on the compass card, the report is read aloud and your dog has chosen when the post is closed."
+photoIdea: A calm portrait of your dog at their listening spot, taken from your seat while their ears are relaxed, with the compass card in a corner of the frame.
+memoryPrompt: Where did most of the dots land, and what was your dog listening to?
+minutesMin: 10
+minutesMax: 20
+activeMinutes: 10
+costMin: 0
+costMax: 0
+prep: none
+supplies:
+  - A seat for you
+  - A mat or blanket for your dog
+  - Paper and a pen
+  - Leash
+optionalSupplies:
+  - A cushion
+  - A water bowl
+requires:
+  - blanket
+  - paper-and-pens
+  - leash-and-harness
+substitutes:
+  - No mat? A folded towel or a jacket in the shade works.
+  - No bench or yard? Sit on your doorstep or at an open doorway.
+transport: none
+reservation:
+  needed: false
+setting: outdoor
+homes:
+  - apartment
+  - house-no-yard
+  - house-with-yard
+space: none
+places:
+  - home
+seasons: []
+avoidWeather:
+  - rain
+  - heat
+  - cold
+lifeStages:
+  - puppy
+  - adult
+  - senior
+personalities:
+  - curious
+  - gentle
+  - cozy
+sizes: []
+energy: gentle
+dogMobility: low
+ownerMobility: seated
+stepFree: true
+crowd: none
+strangers: false
+otherDogs: false
+noise: quiet
+food: false
+water: none
+safety:
+  - "Choose a calm spot with no crowds, loud machines or other dogs, and end the post if anything startles your dog."
+  - "Use a leash or your own fenced space, check weather and ground, offer shade and water, and skip slippery surfaces."
+  - "Ask your vet before taking a puppy outdoors. Unvaccinated puppies stay off ground that other dogs have used."
+activityTypes:
+  - relaxation
+  - outdoor-exploration
+  - memory-making
+collections:
+  - the-curious-explorer
+  - the-great-outdoors
+stamps:
+  - first-adventure
+  - sunshine-seeker
+achievements: []
+keepsake:
+  family: certificate
+  theme: quiet-club-certificate
+  headline: LISTENING POST
+  subhead: Official station of one good listener
+  explainer: "Station report: all ears, no hurry at all"
+access: free
+status: published
+relatedGuides: []
+affiliateProducts: []
+research:
+  - label: "Cornell Riney Canine Health Center: senior dog enrichment"
+    url: https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/senior-dog-enrichment
+  - label: "ASPCA: canine DIY enrichment"
+    url: https://www.aspca.org/pet-care/dog-care/canine-diy-enrichment
+review:
+  ownerAppeal: 7
+  dogEnjoyment: 8
+  originality: 6
+  adventureFactor: 7
+  practicality: 8
+  memoryValue: 7
+  reviewedOn: 2026-11-26
+role: everyday
+teaser: "A tiny station opens outdoors, and the only staff on duty are two very good ears."

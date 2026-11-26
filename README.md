@@ -81,4 +81,4 @@ node scripts/test-netlify-ignore.mjs   # regression test for the Netlify build-s
 | [docs/IMAGE-CREDITS.md](docs/IMAGE-CREDITS.md)                                                                                 | Sources and licenses of photos                                         |
 | [docs/PRINTABLES.md](docs/PRINTABLES.md)                                                                                       | Printables                                                             |
 | [docs/PWA.md](docs/PWA.md), [docs/PWA-DEVICE-TEST.md](docs/PWA-DEVICE-TEST.md), [docs/NOTIFICATIONS.md](docs/NOTIFICATIONS.md) | PWA and push (paused)                                                  |
-| [docs/OWNERSHIP-TRANSFER.md](docs/OWNERSHIP-TRANSFER.md), [docs/FLIP-HANDOFF.md](docs/FLIP-HANDOFF.md)                         | Selling the business: accounts, rotation, checklists                   |
+| [docs/TRANSFER-INVENTORY.md](docs/TRANSFER-INVENTORY.md)                                                                       | Assets, transfer limits, secrets (names only), recovery                |

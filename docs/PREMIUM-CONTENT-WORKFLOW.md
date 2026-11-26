@@ -6,7 +6,7 @@ How the paid adventure library is edited, checked, backed up and loaded into the
 
 **By the owner's directive of 2026-11-26, the premium adventure text is NOT tracked in this repository any more.** The 99 premium adventure JSON files were removed from the current source tree (`content/premium/*.json` is git-ignored; a test fails if one is ever tracked again). What stays public: marketing previews (teasers, never instructions), the schema, free adventures and synthetic test fixtures.
 
-Run `node scripts/sanitize-check.mjs` before publishing a snapshot: it scans every tracked file for private markers and secret patterns and exits non-zero on a hit. The owner can add private strings that must never appear (for example a storage path or an id) through the `SANITIZE_EXTRA_MARKERS` environment variable (comma separated); those strings are never written into the repository.
+Run `node scripts/sanitize-check.mjs` as a repo-hygiene check (before a release or any hand-over of the repository): it scans every tracked file for private markers and secret patterns and exits non-zero on a hit. The owner can add private strings that must never appear (for example a storage path or an id) through the `SANITIZE_EXTRA_MARKERS` environment variable (comma separated); those strings are never written into the repository.
 
 - The website never reads premium text from the repository: the content plugin skips `content/premium/`, no import glob can match it, and `src/test/handover-premium-isolation.test.ts` fails if that changes. Customers receive premium text only from the server, after a purchase.
 - Scripts and tests that need the real library take its folder from `--dir <folder>` or the environment variable `PREMIUM_DIR`. There is no default folder. Without it, scripts that need premium data stop with an explicit message, and `library-stats` and the Journal overlap check run in a clearly labelled free-only (partial) mode.
@@ -32,7 +32,7 @@ What is inside: `premium-import.json` (one array), `adventures/` (one file per a
 
 ## 1. Repository hygiene
 
-The repository tracks no premium text. Run the leak check on every build (section 5a) and `node scripts/sanitize-check.mjs` before any repository hand-over or snapshot. Repository migration planning is kept in the owner's private records.
+The repository tracks no premium text. Run the leak check on every build (section 5a) and `node scripts/sanitize-check.mjs` (0 findings expected) before a release. Private records about the repository are kept by the owner outside the repository.
 
 ## 2. The folder and the file format
 
@@ -123,7 +123,7 @@ node scripts/premium-import.mjs --dir ~/premium-backups/2026-12-01 --env product
 
 ## 7. Optional: GitHub Action for review and approved imports
 
-This is optional, **not usable as written while premium text is untracked** (the workflow below checks out files that no longer exist in the public repository), and works only in a PRIVATE repository that tracks premium text, such as the one in section 8. A workflow that writes to the live store must never run in a public repository. It is kept as a template only. Put the file below at `.github/workflows/premium-import.yml`. It costs nothing beyond the GitHub free tier (private repositories have a monthly allowance of free Actions minutes; the amount is **UNVERIFIED** here, check GitHub's current plan page). It makes three promises:
+This is optional, **not usable as written while premium text is untracked** (the workflow below checks out files that no longer exist in the public repository), and would work only in a PRIVATE repository that tracks premium text, which this project does not have. A workflow that writes to the live store must never run in a public repository. It is kept as a template only. Put the file below at `.github/workflows/premium-import.yml`. It costs nothing beyond the GitHub free tier (private repositories have a monthly allowance of free Actions minutes; the amount is **UNVERIFIED** here, check GitHub's current plan page). It makes three promises:
 
 - On a pull request that changes `content/premium/`, it runs the **dry run only**, with no secrets.
 - It writes to a store only when a person manually starts it and, for production, types the word `production` and the run is approved by a reviewer you set up on a GitHub Environment (reviewer rules on private repositories may need a paid GitHub plan: **UNVERIFIED**; without them, the typed confirmation is the only gate).
@@ -200,9 +200,9 @@ jobs:
 
 Notes: the dry run never needs credentials. The export step needs them, so it runs only in the approved job. Pull requests from forks never receive secrets. The Action never uses `--prune`; retiring an adventure is a deliberate local step (section 5). The upload step stores premium text as a private run artifact; it is private only if the repository is private.
 
-## 8. Recommended layout for CMS editing: a separate private repository
+## 8. Where editing happens
 
-This is now the recommended layout (premium text is out of the website repository). Create a private GitHub repository (suggested name `premium-private-repo`), put the same `content/premium/*.json` layout in it, copy the "Adventures (premium)" block from `.pages.yml` into that repository's own `.pages.yml` (change nothing but, if you like, the path), and run `node <path to site repo>/scripts/premium-import.mjs --dir <folder in the private repo>` from a checkout of both. The scripts accept any folder outside the website repository. The website repository stays free of premium text.
+Premium text is edited in the protected package folder on the owner's computer (one JSON file per adventure) and loaded with `premium-import.mjs --dir <folder>`. The Pages CMS premium form stays OFF, and no repository holds premium text.
 
 ## 9. Who does what
 

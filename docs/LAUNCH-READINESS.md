@@ -37,7 +37,7 @@ Netlify Functions scope: `SESSION_SECRET` (32+ chars), `PP_DATA_KEY` (set once, 
 
 ## What a nontechnical buyer needs
 
-A GitHub account (repository transfer), a Netlify account (site transfer), the domain registrar login, a Gumroad account or a plan to re-list the product, Pages CMS sign-in with their own GitHub account, the protected premium package and a dated backup (handed over outside the repository), the three secrets re-created at closing, and `OPERATIONS.md` plus `FLIP-HANDOFF.md`. Everyday editing is Pages CMS for guides, collections and settings. Premium changes need a person comfortable running two terminal scripts, so a buyer without that skill needs a short paid handover session.
+A GitHub account (repository transfer), a Netlify account (site transfer), the domain registrar login, a Gumroad account or a plan to re-list the product, Pages CMS sign-in with their own GitHub account, the protected premium package and a dated backup (handed over outside the repository), the three secrets re-created at closing, and `OPERATIONS.md` plus `TRANSFER-INVENTORY.md`. Everyday editing is Pages CMS for guides, collections and settings. Premium changes need a person comfortable running two terminal scripts, so a buyer without that skill needs a short paid handover session.
 
 ## Decisions needing owner approval
 

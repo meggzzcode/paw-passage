@@ -110,9 +110,9 @@ function run(r: Row) {
 }
 
 describe("free pool", () => {
-  it("is the 16 public free adventures, all published and free", () => {
-    // 14 + 2 family-suited, puppy-and-senior-safe adventures added 2026-11-26 (Discovery Club, Storybook Afternoon).
-    expect(lib.length).toBe(16);
+  it("is the 17 public free adventures, all published and free", () => {
+    // 14 + 2 family-suited adventures (Discovery Club, Storybook Afternoon) + 1 quiet outdoor intro (Listening Post), 2026-11-26. Frozen.
+    expect(lib.length).toBe(17);
     expect(lib.every((a) => a.access === "free" && a.status === "published")).toBe(true);
   });
 });

@@ -1,5 +1,5 @@
 // Server-side purchase verification, sessions, progress sync and premium delivery, against an in-memory store and a
-// fake provider. Gumroad specifics are UNVERIFIED (CW-PAY-1); these tests pin OUR behaviour, not Gumroad's.
+// fake provider. Gumroad specifics are UNVERIFIED (handoff task E4); these tests pin OUR behaviour, not Gumroad's.
 import { afterEach, describe, expect, it, vi } from "vitest";
 import {
   add,
@@ -594,7 +594,7 @@ describe("store and provider isolation", () => {
   });
 });
 
-describe("Gumroad adapter (response shapes UNVERIFIED, CW-PAY-1)", () => {
+describe("Gumroad adapter (response shapes UNVERIFIED, handoff task E4)", () => {
   const reply = (body: unknown, status = 200) =>
     vi.fn(
       async (_u: string | URL | Request, _i?: RequestInit) =>

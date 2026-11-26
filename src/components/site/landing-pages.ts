@@ -92,7 +92,7 @@ export const LANDINGS: readonly Landing[] = [
     ],
     previews: { filter: "any", heading: "A few selected previews" },
     related: [
-      COLL("five-minute-wonders", "Five-Minute Wonders collection"),
+      COLL("five-minute-wonders", "Quick Wonders collection"),
       COLL("rainy-day-club", "Rainy Day Club collection"),
       COLL("the-curious-explorer", "The Curious Explorer collection"),
       COLL("adventures-without-spending", "Adventures Without Spending collection"),

@@ -1,5 +1,5 @@
 // Launch-readiness checks for the commercial path, at HTTP level against the real handler with an in-memory store and a
-// fake Gumroad (fetch stub). No network, no accounts. The Gumroad field names remain UNVERIFIED (CW-PAY-1): these tests
+// fake Gumroad (fetch stub). No network, no accounts. The Gumroad field names remain UNVERIFIED (handoff task E4): these tests
 // pin OUR behavior given the assumed shape. The model is pull verification (no webhook): refunds are noticed by the
 // 24 hour re-check, so there is no signature to verify; replay and duplicate handling is by purchase reference.
 import { describe, expect, it } from "vitest";
@@ -151,7 +151,7 @@ describe("launch: protected premium delivery", () => {
   });
 });
 
-describe("launch: gifted licenses (Gumroad gift behavior UNVERIFIED, CW-PAY-7)", () => {
+describe("launch: gifted licenses (Gumroad gift behavior UNVERIFIED, handoff task E8)", () => {
   // A gift purchase gives the RECIPIENT a license key. From our server's point of view that is an ordinary key: it must
   // activate whatever session presents it, build a passport from that session's own device only (never the purchaser's),
   // and a refund or revocation of the gift purchase must end access like any other purchase.

@@ -15,7 +15,7 @@ Netlify Blobs: customers-<env>, premium-<env>
 Checkout provider (Gumroad adapter) for license verification
 ```
 
-Pages are server-rendered by TanStack Start (`src/server.ts`, `src/start.ts`). The start file adds middleware for trailing-slash redirects, security headers on HTML (`Referrer-Policy`, `Permissions-Policy`; no frame header and no Content-Security-Policy yet) and an error page.
+Pages are server-rendered by TanStack Start (`src/server.ts`, `src/start.ts`). The start file adds middleware for trailing-slash redirects, security headers on HTML (`X-Content-Type-Options: nosniff`, `Referrer-Policy`, `Permissions-Policy`, and a REPORT-ONLY `Content-Security-Policy` that allows inline scripts; `src/lib/security-headers.ts`) and an error page. There is deliberately no `X-Frame-Options`/`frame-ancestors` and no enforced CSP (the Lovable editor previews the site in an iframe; the inline scripts in the root document would need nonces first).
 
 ## Content pipeline
 
@@ -48,7 +48,7 @@ Free visitors can view finished static examples; only entitled customers can upl
 
 ## Server (`src/server/passport/`)
 
-Routes (all `Cache-Control: no-store`, except `/api/premium/summary`; JSON). UNVERIFIED: `netlify.toml` sets `no-store` for `/api/*`; confirm on a preview deploy that the function's own `public, max-age=600` on the summary wins:
+Routes (all `Cache-Control: no-store`, except `/api/premium/summary` (`public, max-age=600`) and `/api/previews` (`public, max-age=300`); JSON). UNVERIFIED: `netlify.toml` sets `no-store` for `/api/*` as a fallback; confirm on a preview deploy (B5) that the function's own header wins on those two (no-store would also be acceptable):
 
 | Route                     | Method   | Purpose                                                                                                                                                                                                                                                                                                                                          |
 | ------------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -62,6 +62,8 @@ Routes (all `Cache-Control: no-store`, except `/api/premium/summary`; JSON). UNV
 | `/api/previews/match`     | POST     | Public, same-origin, `no-store`: body `{dog, owner}` (whitelisted enum fields only, under 4 KB, never logged) gives `{matching, total, previews}` computed with `eligibility()` over the full published library; held (unknown) cards are not counted; ids only, no titles                                                                       |
 | `/api/account/export`     | POST     | Download the synced progress as JSON                                                                                                                                                                                                                                                                                                             |
 | `/api/account/delete`     | POST     | Delete the synced record and the purchase lookup (body `{"confirm":"DELETE"}`)                                                                                                                                                                                                                                                                   |
+
+The same function also routes `/api/push/*`, `/api/notifications*` and `/api/schedule*` (18 paths in `netlify/functions/api.ts` in all). Notifications are paused (`flags.notifications=false`, `NOTIFICATIONS.md`); the scheduled function `push-deliver.ts` has no schedule.
 
 Modules: `api.ts` (handler), `provider.ts` (checkout interface, Gumroad adapter, test provider, selection), `session.ts` (cookie, CSRF, same-origin check), `store.ts` (customer records, compare-and-set), `kv.ts` (Blobs layer with etags; in-memory twin for tests), `crypto.ts` (HMAC, AES-GCM seal, key derivation), `limits.ts` (rate limiter), `config.ts` (environment and store naming), `netlify.ts` (wiring).
 
@@ -82,10 +84,10 @@ Flow:
 
 ## Stores (Netlify Blobs, strong consistency)
 
-| Store             | Keys                                                                                                                                                                                            |
-| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `customers-<env>` | `customer/<cus_id>` = {v, id, save (Save v2), entitlement {purchaseRefHash, status, createdAt, lastVerifiedAt, sealed code}}; `purchase/<hash>` = {cus}                                         |
-| `premium-<env>`   | `index` = {v:1, ids, items:[{id, status, collections}]} (items feed the public summary; an older ids-only index still works but costs one read per adventure); `adventure/<id>` = one adventure |
+| Store             | Keys                                                                                                                                                                                                                                                                                         |
+| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `customers-<env>` | `customer/<cus_id>` = {v, id, save (Save v2), entitlement {purchaseRefHash, status, createdAt, lastVerifiedAt, sealed code}}; `purchase/<hash>` = {cus}                                                                                                                                      |
+| `premium-<env>`   | `index` = {v:1, ids, items:[{id, status, collections}]} (items feed the public summary; an older ids-only index still works but costs one read per adventure); `adventure/<id>` = one adventure; `previews/index` = the public preview records, totals and structural match fields (no text) |
 
 `<env>` is `production` only when the deploy context is `production`; every other context is `preview`. Older v1 records are upgraded on read.
 
@@ -98,18 +100,19 @@ Flow:
 - License codes are never in URLs, logs or responses; logs hold event names and reason codes only.
 - Request bodies over 64 KB are refused. Per-IP limits (12 access attempts and 120 other calls per minute) are held in function memory: best effort per instance, not global.
 - Test provider only when `PP_ALLOW_TEST_PROVIDER=1` in `dev`, `deploy-preview` or `branch-deploy`.
+- While the test provider is enabled on a preview, anyone who finds the preview URL can activate a `TEST-VALID-...` code, so a preview store that holds the real library is readable by them. Keep the preview URL private and clear the preview store after testing, or test with synthetic data (`COWORK-HANDOFF.md`, OD12).
 - Fail closed: no valid `SESSION_SECRET` (32+ characters) means 503.
 - Premium text is absent from the bundle and public files; the build never reads `content/premium/`. Owner's decision (2026-11-26): the premium authoring files are in that folder of this repository while it is still PUBLIC, so the paid library is protected only once the repository is private (`PREMIUM-CONTENT-WORKFLOW.md`).
 - `netlify.toml` sets `no-store` for `/api/*` and static security headers.
 
 ## Build and deploy
 
-`netlify.toml`: `npm run build`, Node 22, functions directory `netlify/functions`, build-skip rule, cache headers for hashed assets, 410 responses for retired addresses (served from `public/gone.html`) and a few 301s. CI (`.github/workflows/ci.yml`) runs install, type check, lint, tests, the build-skip test and the build.
+`netlify.toml`: `npm run build` with `NITRO_PRESET=netlify` (static files to `dist/`, server-rendered pages to `.netlify/functions-internal/server`), Node 22, functions directory `netlify/functions`, build-skip rule, cache headers for hashed assets, static security headers, 46 rules that answer 410 for retired addresses (served from `public/gone.html`) and 10 forced 301s (three retired gear guides, `/tools`, and six former landing pages that point to Journal articles; `netlify-config.test.ts` pins ten). CI (`.github/workflows/ci.yml`) runs install, type check, lint, tests, the build-skip test and the build.
 
 ## Known limits and UNVERIFIED items
 
-- **Gumroad:** the verify URL, parameter names, response fields (success, purchase id, refunded, chargebacked, disputed, dispute_won, license_disabled), the unknown-key status code, and `increment_uses_count=false` behaviour are written from the documented shape and are **UNVERIFIED** (CW-PAY-1).
-- **Netlify:** that `/api/*` reaches the Function ahead of the TanStack Start server, what `context.deploy.context` contains on this site, and that the build output and the Function deploy together with the current `publish` setting (`dist`) while the local build writes `.output/`, are **UNVERIFIED** until a preview deploy (CW-NET-5). Blobs billing, persistence and etag behaviour against the real service are **UNVERIFIED** (CW-NET-2).
+- **Gumroad:** the verify URL, parameter names, response fields (success, purchase id, refunded, chargebacked, disputed, dispute_won, license_disabled), the unknown-key status code, and `increment_uses_count=false` behaviour are written from the documented shape and are **UNVERIFIED** (A7, E4).
+- **Netlify:** that `/api/*` reaches the Function ahead of the TanStack Start server, what `context.deploy.context` contains on this site, and that the build output and the Function deploy together are **UNVERIFIED** until a preview deploy (B3, B4): a clean local build with `NITRO_PRESET=netlify` produced `dist/` and `.netlify/functions-internal/server`, and that is all that is proven. Whether Netlify applies the redirects and headers as written is also unverified. Blobs billing, persistence and etag behaviour against the real service are **UNVERIFIED** (A5).
 - **Browser wiring:** `src/passport/premium-client.ts` loads the premium library into memory only (never storage) when this browser has activated before (a content-free flag `pp.acct.v1`, so free visitors make no network calls), and `src/passport/sync.ts` pulls, merges and pushes the Save (debounced about 2 s, flushed on tab hide, retried when back online, focus check at most once a minute). Both are covered by tests with a fake server; none of it has run against the real Function, Blobs or Gumroad (**UNVERIFIED**).
 - The `[[headers]]` block for `/api/*` may not apply to Function responses; the handler sets `no-store` itself.
 - Server-side the code is kept sealed to allow the 24-hour re-check; see decision D6.

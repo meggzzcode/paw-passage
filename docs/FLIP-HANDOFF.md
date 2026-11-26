@@ -14,9 +14,9 @@ How the business moves to a new owner. Written for the seller and for a buyer's 
 | Premium library                                             | One JSON file per adventure in `content/premium/` (edited in Pages CMS), plus a Drive backup and the live `premium-production` store | Hand over the latest export (`OPERATIONS.md`, runbook) at closing, never during diligence.                                                                                                                                                     |
 | Design assets                                               | In the repository: CSS design system, keepsake artwork code, stamp art, self-hosted fonts (SIL OFL licences included), guide images  | Guide photos are licensed from Unsplash under the Unsplash License (see the editorial standards page); they are not owned by the business.                                                                                                     |
 | Affiliate IDs                                               | Buyer replaces them                                                                                                                  | Amazon: change `amazonTrackingId` in Business settings. Impact: replace or clear `impactSiteVerification`. The buyer needs their own Amazon Associates approval.                                                                               |
-| Gumroad product and entitlements                            | Depends on Gumroad's rules (CW-PAY-5, **UNVERIFIED**)                                                                                | License codes are verified against the seller's Gumroad product id. If the account cannot transfer, existing customers need a re-issue or a new product id plan agreed with the buyer.                                                         |
+| Gumroad product and entitlements                            | Depends on Gumroad's rules (A8, **UNVERIFIED**)                                                                                      | License codes are verified against the seller's Gumroad product id. If the account cannot transfer, existing customers need a re-issue or a new product id plan agreed with the buyer.                                                         |
 | Analytics and Search Console                                | Add the buyer as owner, then the seller removes themselves                                                                           | GA4 property id is in `content/settings.yml`; the buyer should replace it with their own property if they prefer.                                                                                                                              |
-| Pinterest                                                   | Transfer or hand over the profile (CW-PIN-1)                                                                                         | Address is `pinterestUrl` in settings.                                                                                                                                                                                                         |
+| Pinterest                                                   | Transfer or hand over the profile (D6)                                                                                               | Address is `pinterestUrl` in settings.                                                                                                                                                                                                         |
 | Documentation                                               | All files under `docs/`                                                                                                              |                                                                                                                                                                                                                                                |
 
 ## What does NOT transfer
@@ -30,7 +30,7 @@ How the business moves to a new owner. Written for the seller and for a buyer's 
 
 ## Blobs export and restore
 
-- **Premium library:** export with `node scripts/premium-export.mjs --dir <folder> --env production`; the buyer restores with `premium-import.mjs` (dry run, then `--write`) using their own token and site id. Round trip proven only with synthetic data once CW-BLOB-3 is done.
+- **Premium library:** export with `node scripts/premium-export.mjs --dir <folder> --env production`; the buyer restores with `premium-import.mjs` (dry run, then `--write`) using their own token and site id. Round trip is proven only once B7 is done (synthetic data).
 - **Customer records** (`customers-production`: progress and purchase lookups): there is **no export or import script** for them in this repository. If the buyer recreates the Netlify site, a developer must write and test one; if the Netlify site is transferred, the store moves with it (**UNVERIFIED**). Customers can also export their own progress from their Passport page.
 - Restoring premium content never requires customer data.
 
@@ -50,12 +50,12 @@ How the business moves to a new owner. Written for the seller and for a buyer's 
 
 ## Expense register (known costs only)
 
-| Item                                   | Cost                                                      | Notes                                                                        |
-| -------------------------------------- | --------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| Netlify Personal plan                  | About $9 per month, shared across the owner's other sites | Credits and Blobs or Functions metering **UNVERIFIED** (CW-NET-1, CW-NET-2). |
-| Domain registration                    | Renewal amount and date not recorded here                 | **UNVERIFIED**; owner to fill in from the registrar.                         |
-| Gumroad                                | Per-sale fee only; no recorded fixed fee                  | Rate **UNVERIFIED** here (CW-PAY-1, CW-PAY-5).                               |
-| GitHub, Pages CMS, GA4, Search Console | No cost recorded                                          | **UNVERIFIED** plans; owner to confirm.                                      |
+| Item                                   | Cost                                                      | Notes                                                            |
+| -------------------------------------- | --------------------------------------------------------- | ---------------------------------------------------------------- |
+| Netlify Personal plan                  | About $9 per month, shared across the owner's other sites | Credits and Blobs or Functions metering **UNVERIFIED** (A1, A5). |
+| Domain registration                    | Renewal amount and date not recorded here                 | **UNVERIFIED**; owner to fill in from the registrar.             |
+| Gumroad                                | Per-sale fee only; no recorded fixed fee                  | Rate **UNVERIFIED** here (A7, A8).                               |
+| GitHub, Pages CMS, GA4, Search Console | No cost recorded                                          | **UNVERIFIED** plans; owner to confirm.                          |
 
 No other recurring costs are known. There is no subscription, no AI API cost and no email service.
 
@@ -68,7 +68,7 @@ No other recurring costs are known. There is no subscription, no AI API cost and
 **What is true and checkable:**
 
 - Source code, free content and (until the repo is made private) the premium library, with no secrets or customer data; written documentation for product, design, architecture, operations and a launch checklist.
-- Automated checks that passed on 2026-11-26: type check, lint with no errors, 847 tests, production build (`QA-REPORT.md`).
+- Automated checks (type check, lint, tests, build): the result for the exact sale commit is recorded in the Last verified run section of `QA-REPORT.md`. Do not quote an earlier count.
 - No AI APIs, no accounts for the free experience, no subscriptions; photos never leave the visitor's device.
 - Content managed by Pages CMS; affiliate links limited to verified Amazon products.
 

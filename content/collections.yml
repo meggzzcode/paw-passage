@@ -1,7 +1,7 @@
 collections:
   - slug: "five-minute-wonders"
-    title: "Five-Minute Wonders"
-    tagline: "Tiny adventures for busy days."
+    title: "Quick Wonders"
+    tagline: "Small adventures for busy days."
     description: "Short, low-prep adventures that fit between emails and errands and still leave a memory behind."
     order: 1
     accent: "poppy"

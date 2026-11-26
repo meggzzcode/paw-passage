@@ -19,9 +19,17 @@ export const Route = createFileRoute("/contact")({
     >
       <div className="prose-article mt-8">
         <p>
-          <strong>Purchases and access:</strong> if you cannot unlock or restore the full Passport,
-          tell us which device you used and the email address you bought with. Never send us your
-          license code in an email. See also our <a href="/refund-policy">refund policy</a>.
+          <strong>Purchases and access:</strong> first try{" "}
+          <a href="/restore-access">Restore access</a> with the license key from your purchase
+          email. If that does not work, email us the address you bought with, the date, and which
+          device and browser you used. Never send your license key. Refunds: see our{" "}
+          <a href="/refund-policy">refund policy</a>.
+        </p>
+        <p>
+          <strong>Your data:</strong> to download or delete your synced Passport copy, use the
+          buttons on your Passport page once you are signed in. If you cannot sign in and want a
+          record deleted, or have a privacy question, email us. See our{" "}
+          <a href="/privacy">privacy policy</a>.
         </p>
         <p>
           <strong>Corrections:</strong> if a rule or detail in one of our guides has changed, tell
@@ -29,10 +37,10 @@ export const Route = createFileRoute("/contact")({
           date. See our <a href="/corrections">corrections log</a>.
         </p>
         <p>
-          <strong>Business and press:</strong> use the email below. It is a business address; we do
-          not publish personal contact details.
+          <strong>Business and press:</strong> use the same email. It is a business address; we do
+          not publish personal contact details. There is no phone line, chat or contact form.
         </p>
-        <p>Please do not send photos of your dog to this address. The Passport never needs them.</p>
+        <p>Please do not send photos of your dog. The Passport never needs them.</p>
       </div>
       <div className="mt-8">
         <ContactEmail subject="Hello from the Paws & Passage site" />

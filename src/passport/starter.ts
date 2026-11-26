@@ -29,7 +29,8 @@ const historyOf = (save: Save): History => ({
 /**
  * Picks the best free adventure for this save's answers. Held (unanswered) adventures are never picked.
  * `exclude` holds ids already offered this session ("show me another" never repeats one).
- * Where / time / spend answers act as today's filters; `relax` ignores them (hard eligibility still applies).
+ * Where / time / spend answers act as today's filters; `relax` ignores only those three optional ones. Hard eligibility,
+ * no-car, quiet and children-joining always still apply.
  * An adventure that needs no safety question is preferred over one that does.
  */
 export function selectStarter(
@@ -41,7 +42,7 @@ export function selectStarter(
   const free = library.filter((a) => a.access === "free" && !exclude.has(a.id));
   const ctx = ctxOf(save);
   const history = historyOf(save);
-  const filters = opts.relax ? {} : starterFilters(save.owner.data);
+  const filters = starterFilters(save.owner.data, { relax: opts.relax === true });
   let narrow = false;
   for (const includeDone of [false, true]) {
     const r = rank(free, ctx, filters, history, { seed: "starter", includeDone });

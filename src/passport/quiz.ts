@@ -260,19 +260,25 @@ export function applyAnswers(
   return { dog, owner };
 }
 
-/** Today's filters from the owner's quiz answers, through the existing SessionFilters mechanism. */
-export function starterFilters(owner: OwnerPrefs): SessionFilters {
+/**
+ * Today's filters from the owner's quiz answers, through the existing SessionFilters mechanism.
+ * `relax` drops only the OPTIONAL preferences (where, time, spend). What the owner told us about the household (no car,
+ * quiet, children joining) stays, and so does every hard suitability rule in the engine.
+ */
+export function starterFilters(owner: OwnerPrefs, opts: { relax?: boolean } = {}): SessionFilters {
   const f: SessionFilters = {};
-  if (owner.where === "home") f.places = ["home"];
-  if (owner.where === "nearby") {
-    f.setting = "outdoor";
-    f.transport = "none-or-walk";
+  if (!opts.relax) {
+    if (owner.where === "home") f.places = ["home"];
+    if (owner.where === "nearby") {
+      f.setting = "outdoor";
+      f.transport = "none-or-walk";
+    }
+    if (owner.time === "short") f.minutes = 15;
+    if (owner.time === "medium") f.minutes = 30;
+    if (owner.spend === "none") f.budget = 0;
+    if (owner.spend === "inexpensive") f.budget = 10;
   }
   if (owner.hasCar === "no") f.transport = "none-or-walk";
-  if (owner.time === "short") f.minutes = 15;
-  if (owner.time === "medium") f.minutes = 30;
-  if (owner.spend === "none") f.budget = 0;
-  if (owner.spend === "inexpensive") f.budget = 10;
   if (owner.quiet) f.quiet = true;
   if (owner.kids) f.household = ["family"];
   return f;

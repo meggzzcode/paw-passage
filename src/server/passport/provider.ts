@@ -14,7 +14,7 @@ export const GUMROAD_VERIFY_URL = "https://api.gumroad.com/v2/licenses/verify";
 
 /**
  * Gumroad adapter.
- * UNVERIFIED (Cowork task CW-PAY-1): Gumroad's live API reference could not be read. Every Gumroad specific below is
+ * UNVERIFIED (Cowork task handoff task E4): Gumroad's live API reference could not be read. Every Gumroad specific below is
  * from the documented shape as recalled, and MUST be confirmed before launch: the endpoint URL, the parameter names
  * product_id / license_key / increment_uses_count, the response fields success / purchase.id / purchase.sale_id /
  * purchase.refunded / purchase.chargebacked / purchase.disputed / purchase.dispute_won / purchase.license_disabled,

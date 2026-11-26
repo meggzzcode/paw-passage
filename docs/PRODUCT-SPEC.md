@@ -8,8 +8,9 @@ A digital, collectible, self-paced library of little adventures to do with a dog
 
 **Product model (single source of truth, owner directive of 2026-11-26).**
 
-- **Free:** one complete, personalized first adventure from a pool of free adventures. No account, email or card. Selected public previews of the larger collection can be browsed without any onboarding.
-- **Paid:** one payment of $19.99 (`offer` in `src/config/site.ts`), not a subscription, unlocks the full library.
+- **Free:** one complete, personalized first adventure from a pool of 14 free adventures. No account, email or card. Selected public previews of the larger collection can be browsed without any onboarding.
+- **Paid:** one payment of $19.99 (`offer` in `src/config/site.ts`), yours to keep: no subscription and no renewals. It unlocks the full library (113 published adventures in 25 collections: the free pool of 14 plus 99 premium), personalized keepsake creation and synced progress. The product promises no perpetual service, no future content and no unlimited updates.
+- **Status of the paid side:** PWA install prompts and push notifications are paused (`PWA_ENABLED=false`, `flags.notifications=false`); gifting is off (`flags.gifting=false`) until verified on Gumroad.
 - **Brand line:** "A lifetime of little adventures." The homepage headline is "Life is better with a little adventure." The retired slogan stays out of the hero and headings (guard test).
 
 ## Journey
@@ -27,14 +28,14 @@ Routes: `/` home, `/discover`, `/previews` (selected previews), `/collections` (
 
 ## Public previews
 
-About 50 curated showcase adventures are served from an allowlisted public record (`GET /api/previews`), never the full adventure record. Public fields: id, public title, teaser, activity label, minutes and cost ranges, setting, effort, prerequisites flags, life stages, keepsake family and theme, role and collections. Never public: instructions, twist, reveal, clue, objective, variations, completion, safety text, supplies detail, photo idea, memory prompt, review scores or research. Pages say previews are "selected previews from a larger collection". Counts on public pages come only from the endpoint (or the live premium summary) and fall back to plain wording; no number such as "150" is ever claimed until verified.
+The 50 curated showcase adventures are served from an allowlisted public record (`GET /api/previews`), never the full adventure record. Public fields: id, public title, teaser, activity label, minutes and cost ranges, setting, effort, prerequisites flags, life stages, keepsake family and theme, role and collections. Never public: instructions, twist, reveal, clue, objective, variations, completion, safety text, supplies detail, photo idea, memory prompt, review scores or research. Pages say previews are "selected previews from a larger collection". Counts on public pages come only from the endpoint (or the live premium summary) and fall back to plain wording; no number such as "150" is ever claimed until verified.
 
 ## Commercial pages
 
 - **Home** sections in order: emotional benefit, adventure variety (verified counts with fallback), personalized discovery, mystery reveal demo (a clue only), collectible passport (real stamp art), keepsake demonstrations, what is included, one-time price, FAQ, final call to action.
 - **/unlock** is the purchase page; **/faq** answers the buyer questions in `src/components/site/faq-content.ts` (the count changes with that file; a test pins it), and the same content is summarized on `/unlock`. Sync and recovery wording must match `ARCHITECTURE.md`.
 - **Public demonstration card:** `src/config/demo-adventure.ts` is one complete, original adventure (steps, twist, safety lines) shown in full on `/unlock` and collapsed on the homepage, labeled "A full adventure, shown in full". It is written for this purpose and is not a library card.
-- **Keepsake demonstrations** (examples only for free visitors) are produced by the real renderer from original sample art (an illustrated sample dog named Biscuit, clearly not a customer) and stored as small webp files in `public/examples/` (each under 120 KB, under 1.2 MB in total).
+- **Keepsake demonstrations** (examples only for free visitors) are produced by the real renderer and stored as small webp files in `public/examples/`. Six of the eight use real CC0 dog photos from Wikimedia Commons (no people in any photo; sources and licenses in `IMAGE-CREDITS.md`); then-and-now, seasonal and camping-patch stay illustrated and are labeled "(illustration)". None is a customer's keepsake.
 - **The hub page** (`/things-to-do-with-your-dog`) holds short original owner-perspective guidance, links to the Journal articles and collections, preview cards and a call to action to the free adventure and the Passport. It never contains the steps of any adventure. Topic questions are answered by the Journal articles, not by separate landing pages (the free-access distinction lives in the free-things article).
 - **Purchase prompts** are one reusable component (`where`, optional `count`) that fires `purchase_cta_clicked` with the `where` slug.
 - No fake testimonials, ratings, counts or urgency anywhere (guard tests scan the new pages).
@@ -43,7 +44,7 @@ About 50 curated showcase adventures are served from an allowlisted public recor
 
 **The intro quiz** (`src/passport/quiz.ts`, `src/components/passport/IntroQuiz.tsx`): at most ten steps, one concise question each, with a "Question n of N" counter that counts only the steps actually asked. The default path is eight: 1 names (one or more dogs in one field), 2 life stage (pick several for a mixed household: the card must suit every stage), 3 energy (gentle, moderate, lively, it varies: "varies" keeps to gentle-to-moderate), 4 what they enjoy (soft ranking nudge only), 5 anything to keep in mind (cautious fields only; "Not sure" and "Prefer not to say" write nothing), 6 where (a places/setting filter), 7 time (a minutes filter), 8 spend (a budget filter). Optional steps 9 (what works for you: walking, step-free, car, mapped to ownerMobility/stepFree/hasCar) and 10 (quiet, children join) appear only on request. Questions a saved profile already answers are skipped, answers are written only on the last step, additive fields only (`lifeStages`, `energyVariable`, `enjoy`, `keepInMind` on the dog; `where`, `time`, `spend`, `quiet`, `kids` on the owner), so old saves load unchanged. A `?ctx=` Journal starting point pre-selects unanswered steps and never overwrites a saved answer. One activity-specific safety question (`activityConfirm`) is asked before an adventure's reveal when the dog's comfort with what it involves is unknown; "not sure" means another pick. Several dogs share one profile: the most cautious answer wins. Personalized keepsake creation is paid; the free flow shows a notice before the first question and a static example after the intro adventure, and has no photo upload.
 
-`src/passport/starter.ts` (`selectStarter`, `savedStarter`) runs `rank()` over the public free pool (about 13 to 15 adventures) for the quiz answers and takes the top result; "show me another" excludes ones already offered this visit. The pick is saved in the local Save as the additive optional field `starter: { id, at }` (`chooseStarter` in `progress.ts`), so it does not change on each visit. Re-answering the quiz may change it only until that adventure is completed; after that it stays as the free keepsake and can be re-read. If no free adventure is eligible the page says so plainly and shows the unlock pitch. The gate is a product and UX choice, not security: the free pool is public in this repository. The free flow makes no network call.
+`src/passport/starter.ts` (`selectStarter`, `savedStarter`) runs `rank()` over the public free pool (14 adventures) for the quiz answers and takes the top result; "show me another" excludes ones already offered this visit. The pick is saved in the local Save as the additive optional field `starter: { id, at }` (`chooseStarter` in `progress.ts`), so it does not change on each visit. Re-answering the quiz may change it only until that adventure is completed; after that it stays as the free keepsake and can be re-read. If no free adventure is eligible the page says so plainly with one secondary link to the full Passport (not the full pitch panel); "Widen" relaxes only where, time and spend and never drops hard filters (`INTRO-AUDIT.md`). The gate is a product and UX choice, not security: the free pool is public in this repository. The free flow makes no network call.
 
 ## Discovery modes (full Passport)
 
@@ -57,7 +58,7 @@ Today's filters (soft; they never override eligibility): time available, budget,
 
 ## Collections
 
-- **Curated collections** are defined in `content/collections.yml` (20 today; 13 have free adventures, 7 are marked premium-only because the premium library fills them). An adventure can belong to several collections and counts once everywhere.
+- **Curated collections** are defined in `content/collections.yml` (25 today, every one with at least one published adventure; 11 are marked `premiumOnly` because the premium library fills them). An adventure can belong to several collections and counts once everywhere.
 - **Custom collections** are made by the customer and live in their Save: **handpicked** (a list of adventure ids, reorderable) or **smart** (saved filters evaluated against today's profile). Limits: 30 collections, 100 items each, 40-character names. Custom collections never earn collection-complete achievements and never store copies of adventure records.
 - Favorites and Done are built-in scopes.
 
@@ -90,7 +91,7 @@ Defined in `src/passport/schema.ts`; the writing rules are in `docs/CONTENT-GUID
 - **Who it suits (hard eligibility inputs):** life stages, sizes, energy, dog mobility, owner mobility, step-free, crowd, strangers, other dogs, noise, food (with diet notes), water, 1 to 6 safety lines. Personalities are a hint only.
 - **Classification and rewards:** 1 to 3 activity types, collections, stamps, achievements, a keepsake (family, theme, headline, subhead), access (free or premium), status (draft or published), related guides, optional affiliate products, research references, internal review scores.
 
-The build rejects violations (for example a car adventure that does not list `car`, a food adventure without diet notes, a published adventure whose internal review average is under 8 or has a score under 7).
+The build rejects violations (for example a car adventure that does not list `car`, a food adventure without diet notes, a published adventure whose independent review average is under 7.0 or has a criterion under 6, with originality allowed to be 5 for non-signature roles).
 
 ## Progress and sync (Save v2)
 
@@ -98,7 +99,7 @@ The build rejects violations (for example a car adventure that does not list `ca
 
 ## Keepsakes and photo privacy
 
-Ten keepsake families (travel postcard, magazine cover, ID card, trading card, certificate, seasonal frame, event ticket, then-and-now, collage, poster), each with themes. Creating a personalized keepsake is a full Passport feature; free visitors see static examples only. A keepsake is drawn on a canvas on the device in square, portrait or story size, from a chosen photo (or an illustrated option), a dog name and a short memory, then downloaded or shared.
+Ten keepsake families (travel postcard, magazine cover, ID card, trading card, certificate, seasonal frame, event ticket, then-and-now, collage, poster) with 117 keepsake themes in all. Creating a personalized keepsake is a full Passport feature; free visitors see static examples only. A keepsake is drawn on a canvas on the device in square, portrait or story size, from a chosen photo (or an illustrated option), a dog name and a short memory, then downloaded or shared.
 
 **Photos never leave the device.** They are decoded in memory, limited to 20 MB and 2,400 px on the long edge, never written to browser storage, never sent to a server, never included in analytics, and never part of a Save. The exported PNG is a fresh canvas encode without the original metadata. There is no photo upload endpoint.
 
@@ -113,11 +114,11 @@ Ten keepsake families (travel postcard, magazine cover, ID card, trading card, c
 | Keepsakes                                            | Examples and the matching style only; no creation                                                              | Create personalized keepsakes from your own photo (device only), and premium-only collections                                                        |
 | Progress                                             | On the device                                                                                                  | Also synced across devices, restorable with the code                                                                                                 |
 
-Premium adventures are never in this repository, the bundle or any public file. **Status:** the browser loads the premium library into memory only (never storage) for a browser that has activated, and pulls, merges and pushes the Save for sync (see `ARCHITECTURE.md`). This is covered by tests against a fake server and is **UNVERIFIED** against the real Function, Blobs and Gumroad. Public pages therefore describe sync and recovery in plain terms (progress can follow the purchase code to other devices) and nothing more.
+Premium adventures are never in the browser bundle or any public file the site serves. By the owner's decision the premium text currently also exists in `content/premium/` of the PUBLIC repository (an open owner decision to make it private), while the authoritative protected package is kept outside the repository; no further premium text is added to the repo. **Status:** the browser loads the premium library into memory only (never storage) for a browser that has activated, and pulls, merges and pushes the Save for sync (see `ARCHITECTURE.md`). This is covered by tests against a fake server and is **UNVERIFIED** against the real Function, Blobs and Gumroad. Public pages therefore describe sync and recovery in plain terms (progress can follow the purchase code to other devices) and nothing more.
 
 ## Pricing stance
 
-The price is $19.99, one time, no subscription, held in `offer.price` in `src/config/site.ts` and matching the Gumroad listing. The checkout link is set through the build variable `VITE_CHECKOUT_URL`. Partner discounts are Gumroad discount codes applied on the Gumroad checkout page; the app shows no code. See `DECISIONS.md` for the validation thresholds.
+The price is $19.99, one time, yours to keep, no subscription and no renewals, held in `offer.price` in `src/config/site.ts` and matching the Gumroad listing. The checkout link is set through the build variable `VITE_CHECKOUT_URL`. Partner discounts are Gumroad discount codes applied on the Gumroad checkout page; the app shows no code. See `DECISIONS.md` for the validation thresholds.
 
 ## Gamification philosophy
 
@@ -129,7 +130,7 @@ Only allow-listed, named events are sent (`src/passport/events.ts`), each with a
 
 ## What is excluded
 
-No AI or generative APIs, no accounts for the free experience, no subscriptions, no ads, no newsletter or email capture, no leaderboards or social feeds, no photo upload or storage, no medical, nutrition or behavior-training claims, no breed-based eligibility, no premium text in the public repository, and no affiliate links other than verified Amazon products.
+No AI or generative APIs, no accounts for the free experience, no subscriptions, no ads, no newsletter or email capture, no leaderboards or social feeds, no photo upload or storage, no medical, nutrition or behavior-training claims, no breed-based eligibility, no premium text in the shipped site or bundle (the repository copy is an owner decision, see above), and no affiliate links other than verified Amazon products.
 
 ## Suggestions
 
@@ -149,7 +150,7 @@ Deterministic, no AI, no live weather, no push or email, no accounts for free us
 
 **Match aggregates.** `POST /api/previews/match` additionally returns `matchingNoSpend` (matches whose cost ceiling is 0) and `collections` (slugs of collections with a match, most matches first, max 6), computed with the same hard eligibility. The stored pool now carries `costMax` and `collections` (structural, not text). An index imported before this change lacks them, so the aggregates are omitted until the next `premium-import`; the client shows nothing for an absent number. The "Here's what's waiting for you" panel (`PurchaseValue`) appears only after the visitor presses "Count what matches".
 
-**Welcome (`/welcome`).** Noindex, not in the sitemap, reached from the verified activation or restore success state with a plain link (no code, no query string). It shows verified totals from the library delivered to the browser, the saved-preview count on this device, one next action (Find my next adventure when a profile exists, otherwise Open my Passport), then the optional install card and a note that reminders are optional.
+**Welcome (`/welcome`).** Noindex, not in the sitemap, reached from the verified activation or restore success state with a plain link (no code, no query string). It shows verified totals from the library delivered to the browser, the saved-preview count on this device, one next action (Find my next adventure when a profile exists, otherwise Open my Passport), then a note that reminders are optional. (The install card renders nothing while PWA prompts are off.)
 
 **Household evaluation.** The save holds one dog profile (`save.profile`) and one owner preference block; progress (done, favorites, saved previews, stamps, memories) is keyed by adventure id and is not per dog. A purchase code restores that one save on any device. So one purchase serves a household's use on its own devices, but two dogs would share one progress record and one profile. Multi-profile (per-dog profiles with separate progress, and a "who is this for" switcher through discovery, suggestions, keepsakes and sync) touches the save schema, the merge rules, the engine context and every progress count; it is a real piece of work and is NOT implemented or advertised. The FAQ and /unlock say: one purchase covers your household's use on your devices; the Passport keeps one dog profile at a time (switch by editing the profile; progress is shared); separate profiles are possible later and not part of the product today.
 

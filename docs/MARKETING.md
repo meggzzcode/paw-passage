@@ -156,3 +156,11 @@ Render: `node marketing/pins/generate.mjs --set article` writes 30 PNGs (1000 by
 5. Each month, retire the weakest pins and re-render a variant by editing the headline in article-pins.json. Keep each article's three angles in rotation, and judge results over several weeks, not days.
 
 Keep a private local note of which pins were posted (do not commit it). The same rules as section 5 apply.
+
+## 10. Owner package
+
+Everything marketing is consolidated outside the repo in the owner package (a folder and zip kept beside the protected premium package, with a Google Drive backup whose file id is recorded in the package's OWNER-README.md; the Drive upload of split parts is still pending). Rebuild it from the repo with `node marketing/build-owner-package.mjs` (options `--skip-render`, `--site https://your-domain`, `--drive-id ID`). It contains the 60 rendered pins (COMPLETED graphics, all original art), `PINS.csv` (title, description, link with UTM, source, status, alt text), copies of the site example, demo and journal images with their final or pending status, the licensing summary, the campaign tracking guide and the weekly routine. Concepts without finished graphics are listed separately in `PROPOSED-CONCEPTS.md`.
+
+Pin links: every destination is the hub, `/discover` or a Journal article, with `utm_source=pinterest&utm_medium=social&utm_campaign=...`. General pins also carry `utm_content=<pin id>`. The six old landing pages are redirects and are no longer used (guarded by `src/test/pins.test.ts`). Attribution limit: campaign data is not yet connected to confirmed Gumroad purchases.
+
+Until the live domain is chosen (decision OD10) the pin links in `PINS.csv` start with a placeholder, so rebuild the package with `--site https://<real-domain>` before uploading any pin. The marketing tasks (Pinterest boards, rebuild, upload cadence, UTM check, hero-art provenance) are D6 to D9, D11 and F8 in `COWORK-HANDOFF.md`.

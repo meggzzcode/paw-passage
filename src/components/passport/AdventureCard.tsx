@@ -266,7 +266,7 @@ export function AdventureCard({
           {repeats > 0 && <span>Repeated {repeats}×</span>}
         </p>
       )}
-      <h3 className="pa-title">{a.title}</h3>
+      <h2 className="pa-title">{a.title}</h2>
       {why && why.length > 0 && (
         <p className="pd-why">
           <strong>Why this one:</strong> {why.join(". ")}.

@@ -1,6 +1,6 @@
 // Shared helpers for the `--dir` mode of premium-import.mjs and premium-export.mjs: one JSON file per premium adventure.
 // Pure file handling, no network. The folder must be OUTSIDE the repository, except the single sanctioned in-repo folder
-// content/premium, which is git-ignored and may only be used once the repository is private (docs/PREMIUM-CONTENT-WORKFLOW.md).
+// content/premium, which is tracked in this repository by the owner decision (private repository recommended; docs/PREMIUM-CONTENT-WORKFLOW.md).
 import {
   existsSync,
   mkdirSync,
@@ -24,7 +24,7 @@ export function resolvePremiumDir(dir, root, { create = false } = {}) {
   const inside = abs === realRoot || abs.startsWith(realRoot + sep);
   if (inside && abs !== sanctioned && !abs.startsWith(sanctioned + sep))
     throw new Error(
-      "Refusing: the premium folder must be outside the repository, or exactly content/premium (git-ignored; private repositories only).",
+      "Refusing: the premium folder must be outside the repository, or exactly content/premium (tracked here by the owner decision; make the repository private).",
     );
   return abs;
 }

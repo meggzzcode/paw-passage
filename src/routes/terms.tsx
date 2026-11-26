@@ -22,21 +22,21 @@ The adventures and guides are for general information and fun. Every adventure i
 
 ## The free Passport
 
-The free Passport works without an account. Your progress is stored on your device, as described in our [privacy policy](/privacy). If you clear your browser data without exporting, that progress is gone.
+The free Passport works without an account. Your progress is stored on your device, as described in our [privacy policy](/privacy). If you clear your browser data without exporting, that progress is gone. The free Passport includes one personalized introductory adventure. Making a personalized keepsake from your own photo is part of the full Passport.
 
 ## The full Passport: a one-time purchase
 
-The full Passport is a **one-time purchase**. It is not a subscription, does not renew and does not expire, so you pay once and it is yours to keep. Refunds and access are covered in our [refund policy](/refund-policy). The price is shown at checkout before you pay. Checkout and payment are handled by our checkout provider, who sends you a license code.
+The full Passport is a **one-time purchase**. It is not a subscription and does not renew, so you pay once and it is yours to keep. "Does not expire" means we will not charge renewals or put a time limit on your purchase. It is not a promise that the service will run unchanged indefinitely: websites, browsers and hosting providers change, and we may change or retire features. Download a backup of your progress from your Passport page now and then. The price is shown at checkout before you pay. Checkout and payment are handled by our checkout provider, Gumroad, who sends you a license key. Refunds and access are covered in our [refund policy](/refund-policy).
 
 ## What you are buying: the edition
 
-The full Passport is sold as an edition. A purchase unlocks the library of the edition you bought, as described on the [Get the Passport](/unlock) page when you bought it. If we add adventures to that edition, they are included. If we ever publish a new edition as a separate product, we will say clearly that it is a new edition and what it costs, and your purchase is not affected.
+The full Passport is sold as an edition. A purchase unlocks the library of the edition you bought, as described on the [Get the Passport](/unlock) page. We do not promise to add adventures, features or updates. If we do add adventures to your edition, they are included at no charge. If we ever publish a new edition as a separate product, we will say clearly that it is a new edition and what it costs, and your purchase is not affected.
 
-Your access is for personal use by you and your household, on your own devices. Please do not share your license code or republish the premium adventures.
+Your access is for personal use by you and your household, on your own devices. Please do not share your license key or republish the premium adventures. You can restore access on a new device with your license key on the [Restore access](/restore-access) page.
 
 ## Refunds and access
 
-See our [refund policy](/refund-policy). If a purchase is refunded or reversed by a payment dispute, access to the full Passport for that purchase is switched off. Your progress is kept, and the free Passport keeps working.
+See our [refund policy](/refund-policy). If a purchase is refunded or reversed by a payment dispute, access to the full Passport for that purchase is switched off. Your progress on your device is kept, and the free Passport keeps working.
 
 ## Tools and guides
 

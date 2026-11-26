@@ -8,6 +8,8 @@ import { checkoutUrl } from "@/lib/passport-api";
 import { collections } from "@/passport/content";
 import { flags, GIFT_CTA, KEEP_LINE, price, pricing, REFUND_SUMMARY } from "@/config/commercial";
 import { DemoAdventure } from "@/components/site/DemoAdventure";
+import { PhotoFilterExamples } from "@/components/site/PhotoFilterExamples";
+import { FILTER_EXAMPLES } from "@/components/site/keepsake-examples";
 import { TrustStrip } from "@/components/site/TrustStrip";
 import { unlockLine, usePremiumSummary } from "@/lib/premium-summary";
 import { TrustBlock } from "@/components/passport/TrustBlock";
@@ -115,7 +117,7 @@ function Unlock() {
                   <li key={t}>{t}</li>
                 ))}
               </ul>
-              <AppLink to="/refund-policy" className="pa-linkbtn">
+              <AppLink to="/refund-policy" className="pa-linkbtn inline-flex items-center">
                 Read the full refund policy
               </AppLink>
             </div>
@@ -167,6 +169,21 @@ function Unlock() {
         </div>
 
         <DemoAdventure open />
+
+        <section className="pa-panel" aria-labelledby="examples-h" style={{ minWidth: 0 }}>
+          <h2 id="examples-h" className="pa-h">
+            Examples of what you can make with the full Passport
+          </h2>
+          <p className="pa-fine">
+            Personalized keepsake creation is part of the full Passport. These are examples, not
+            customer stories: licensed dog photographs, made on-device with the same tool you would
+            use, with sample names.
+          </p>
+          <PhotoFilterExamples
+            images={FILTER_EXAMPLES}
+            caption="Original photo on the left, finished keepsake on the right. Photos are CC0 (public domain) from Wikimedia Commons."
+          />
+        </section>
 
         <section className="pa-panel" aria-labelledby="faq-h">
           <h2 id="faq-h" className="pa-h">

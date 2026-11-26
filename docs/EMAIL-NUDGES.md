@@ -1,6 +1,6 @@
 # Weekly email nudges: research, recommendation, copy
 
-Status: proposal for owner approval. Nothing here is built. Not legal advice.
+Status: owner decision recorded (buyers only, through Gumroad); setup is Cowork task E10. Nothing here is built in the repository. Sections that describe visitor signup forms, other email platforms or an own backend are research kept for reference and are NOT adopted. Not legal advice.
 Research date: 2026-11-26. "UNVERIFIED" means I could not read it on the vendor's own page.
 
 ## Owner decisions (2026-11-26)
@@ -85,17 +85,17 @@ It is the heaviest option: every item above is something a hosted platform alrea
 
 **Launch setup (recommended):** one Gumroad Workflow, trigger "new purchase", 12 emails each 1 week after the previous (first at 1 week), filtered to this product. Before turning it on the owner must (a) send a test to themselves and confirm it shows an unsubscribe link and an address, (b) confirm Gumroad's terms allow it, (c) approve the copy. If either check fails, fall back to MailerLite free with an imported buyer list only if buyers opted in.
 
-**Later upgrade for free visitors (needs owner approval, no backend):** a MailerLite hosted signup form (free tier: 3 forms, 250 subscribers) with the consent line below and confirmation email. Place it only (1) at the bottom of the existing keepsake/unlock moment after the free adventure is complete and (2) in the site footer as a quiet text link opening the hosted form. Never as a popup, banner, interstitial or before the free adventure. Free automation allows about 3 emails (5 steps, third party), so send emails 1 to 3 of the series, then stop. Moving past 250 subscribers or a longer series is a paid decision. Kit free (10,000, forms free) is the alternative if we accept manual weekly broadcasts.
+**Not adopted (owner decision: buyers only; no visitor signup form). Kept as reference only. Possible later upgrade for free visitors (would need new owner approval, no backend):** a MailerLite hosted signup form (free tier: 3 forms, 250 subscribers) with the consent line below and confirmation email. Place it only (1) at the bottom of the existing keepsake/unlock moment after the free adventure is complete and (2) in the site footer as a quiet text link opening the hosted form. Never as a popup, banner, interstitial or before the free adventure. Free automation allows about 3 emails (5 steps, third party), so send emails 1 to 3 of the series, then stop. Moving past 250 subscribers or a longer series is a paid decision. Kit free (10,000, forms free) is the alternative if we accept manual weekly broadcasts.
 
 ## 6. Copy
 
 Rules applied: subjects 50 characters or fewer, bodies 90 words or fewer, one same-site link each, no urgency, no discounts, nothing about steps or twists of premium adventures, no health or behavior claims. Links are paths on the site's own domain (the platform needs the full domain prefixed).
 
-### Consent line (signup form)
+### Consent line (signup form; not adopted, reference only)
 
 Send me an occasional adventure idea by email. Unsubscribe any time.
 
-### Confirmation email (visitor signups only)
+### Confirmation email (visitor signups only; not adopted, reference only)
 
 Subject: Please confirm your email
 Preview: One click and we're set.
@@ -175,5 +175,5 @@ Link: /passport
 1. Which route: Gumroad Workflow now (free) after verifying the points marked UNVERIFIED.
 2. Copy approval for the 12 emails and the confirmation email.
 3. Any paid plan (MailerLite Comfort, Kit Creator, etc.). None is assumed.
-4. Whether to add a visitor signup form later, and where it sits.
-5. A postal address (street, PO box or registered mailbox) for the legal footer.
+4. (Not adopted: a visitor signup form. The owner decided on buyers only.)
+5. (Not needed for the buyers-only route: a postal address for our own list. Check what footer Gumroad's workflow email shows.)

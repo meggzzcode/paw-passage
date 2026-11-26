@@ -23,7 +23,7 @@ export function Breadcrumbs({
             {it.to ? (
               <a
                 href={it.to}
-                className="inline-flex min-h-11 items-center hover:text-primary hover:underline"
+                className="inline-flex min-h-11 min-w-11 items-center hover:text-primary hover:underline"
               >
                 {it.label}
               </a>

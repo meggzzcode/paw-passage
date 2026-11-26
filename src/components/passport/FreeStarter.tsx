@@ -347,7 +347,7 @@ export function FreeStarter({ ctx }: { ctx?: CtxKey | undefined } = {}) {
               ? "You have seen every free adventure that suits what you told us. We can start the list over, or you can change your answers."
               : none === "narrow"
                 ? "Free adventures suit your dog, but none fits your where, time and spend answers together. You can widen those, or change your answers."
-                : "None of the free adventures suits what you told us. We use your answers to leave out adventures that do not fit. The full Passport has far more to choose from."}
+                : "None of the free adventures suits what you told us. We use your answers to leave out adventures that do not fit, and we never loosen those. If you picked something by mistake, or answered optional questions such as children joining or keeping it quiet, you can change your answers."}
           </p>
           <div className="pa-row">
             {none === "seen-all" && (
@@ -388,7 +388,16 @@ export function FreeStarter({ ctx }: { ctx?: CtxKey | undefined } = {}) {
             </button>
           </div>
         </div>
-        <UnlockPitch where="intro-none" />
+        <p className="pa-fine">
+          The full Passport has more adventures to choose from.{" "}
+          <AppLink
+            to="/unlock"
+            className="pa-linkbtn"
+            onClick={() => flow("purchase_cta_clicked", { where: "intro-none" })}
+          >
+            See the full Passport
+          </AppLink>
+        </p>
       </>
     );
   } else if (stage === "survey") {

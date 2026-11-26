@@ -35,7 +35,7 @@ export const flags = {
   previewsShowcase: true,
   /**
    * Gifting through Gumroad's native "Give as a gift" on the SAME product and price (no custom gift platform).
-   * FALSE until the owner has verified it end to end (docs/COWORK-HANDOFF.md, CW-PAY-7): the recipient receives a
+   * FALSE until the owner has verified it end to end (docs/COWORK-HANDOFF.md, handoff task E8): the recipient receives a
    * usable license key, activation attaches to the RECIPIENT, and a refund revokes it. While false, nothing on the
    * site mentions gifting.
    */

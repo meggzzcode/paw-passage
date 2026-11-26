@@ -226,6 +226,7 @@ export function PreviewsPage() {
                 No previews match those filters. Try loosening one.
               </p>
             )}
+            <h2 className="sr-only">Previews</h2>
             <ul className="pa-grid pv-grid" aria-label="Previews">
               {shown.map((i) => (
                 <PreviewCard key={i.id} item={i} />

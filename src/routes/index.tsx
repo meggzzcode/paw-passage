@@ -52,7 +52,7 @@ const HOME_FAQ_IDS = [
 ];
 
 const COLLECTION_TASTE = [
-  { slug: "five-minute-wonders", name: "Five-Minute Wonders", blurb: "Tiny games for a busy day." },
+  { slug: "five-minute-wonders", name: "Quick Wonders", blurb: "Tiny games for a busy day." },
   { slug: "rainy-day-club", name: "Rainy Day Club", blurb: "Indoor fun for gray weather." },
   { slug: "doggy-date-club", name: "Doggy Date Club", blurb: "An outing, just the two of you." },
   {
@@ -109,13 +109,13 @@ function Home() {
             <figure className="pp-hero-art">
               <img
                 src="/examples/postcard.webp"
-                alt="An example postcard keepsake with a sample illustrated dog named Biscuit"
+                alt="An example postcard keepsake made from a real photo of a brown dog on a snowy mountain ridge"
                 width={560}
                 height={560}
               />
               <figcaption>
-                An example keepsake style (sample art). Making your own is part of the full
-                Passport.
+                An example keepsake made from a licensed dog photo. Making your own is part of the
+                full Passport.
               </figcaption>
             </figure>
           </div>
@@ -274,13 +274,14 @@ function Home() {
             The full Passport turns a favorite day into a postcard, a magazine cover, a detective ID
             or a trading card, made from your own dog's photo. They are drawn on your own device,
             your photos are never uploaded, and you can save or print them. Free visitors can see
-            the examples below, and the matching style after the free adventure. The examples use a
-            sample illustrated dog, not a real customer.
+            the examples below, and the matching style after the free adventure. These are examples
+            of what you can make, not customer stories: the photos are licensed dog photographs and
+            the names on them are samples.
           </SectionHeading>
           <div className="mt-6">
             <PhotoFilterExamples
               images={FILTER_EXAMPLES}
-              caption="Examples drawn by the same tool the full Passport uses. Sample dog art, not a customer."
+              caption="Examples of what you can make with the full Passport, drawn by the same tool you would use. Examples, not customer stories. Photos are CC0 (public domain) from Wikimedia Commons."
             />
           </div>
         </Container>

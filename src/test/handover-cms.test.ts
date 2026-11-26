@@ -49,7 +49,21 @@ const adventureShape = shape(S.adventureSchema);
 
 // Pull the commented-out/enabled premium block out as live YAML for the same checks (the block is now enabled, so this
 // is simply the parsed entry; the fallback keeps the test meaningful if someone comments it out again).
-const premiumEntry = entry("premium-adventures");
+// The premium form sits behind a switch (PREMIUM-CMS-SWITCH:BEGIN/END in .pages.yml). OFF is the recommended state (the public
+// repository must not need to hold the premium library); either way the block, once uncommented, must still match the schema.
+const SWITCH_RE = /^ *# PREMIUM-CMS-SWITCH:BEGIN\n([\s\S]*?)\n {2}# PREMIUM-CMS-SWITCH:END/m;
+const switchBlock = SWITCH_RE.exec(text)?.[1];
+const premiumLive = cfg.content.some((c) => c.name === "premium-adventures");
+const premiumEntry: Entry = premiumLive
+  ? entry("premium-adventures")
+  : (
+      parse(
+        (switchBlock ?? "")
+          .split("\n")
+          .map((l) => l.replace(/^\s*# ?/, ""))
+          .join("\n"),
+      ) as Entry[]
+    )[0]!;
 
 // Inside an OPTIONAL object (review) inner fields stay un-required in the form, so an editor can leave the whole object empty.
 function checkForm(
@@ -175,5 +189,59 @@ describe("Pages CMS adventure forms match src/passport/schema.ts", () => {
       if (c.name !== "premium-adventures") expect(c.path, c.name).not.toMatch(/premium/);
     // the public free form's own description tells editors premium is elsewhere
     expect(text).toMatch(/content\/premium/);
+  });
+});
+
+describe("premium CMS switch and access locks", () => {
+  it("has exactly one switch block and the recommended state is OFF (premium form not live)", () => {
+    expect(text.match(/^ *# PREMIUM-CMS-SWITCH:BEGIN$/gm)).toHaveLength(1);
+    expect(text.match(/^ *# PREMIUM-CMS-SWITCH:END$/gm)).toHaveLength(1);
+    expect(switchBlock, "switch block present").toBeTruthy();
+    expect(text).toContain("RECOMMENDED STATE: OFF");
+    expect(premiumLive, "premium-adventures is commented out (OFF)").toBe(false);
+    expect(premiumEntry.path).toBe("content/premium");
+  });
+
+  it("the premium block (live or uncommented) is a premium-locked collection", () => {
+    expect(premiumEntry.name).toBe("premium-adventures");
+    const acc = premiumEntry.fields.find((f) => f.name === "access") as Field & {
+      default?: string;
+      readonly?: boolean;
+    };
+    expect(acc.default).toBe("premium");
+    expect(acc.readonly).toBe(true);
+  });
+
+  it("the free form locks access to free (single option, default, read-only) and cannot create a premium file", () => {
+    const acc = entry("adventures").fields.find((f) => f.name === "access") as Field & {
+      default?: string;
+      readonly?: boolean;
+    };
+    expect(values(acc)).toEqual(["free"]);
+    expect(acc.default).toBe("free");
+    expect(acc.readonly).toBe(true);
+    expect(entry("adventures").path).toBe("content/adventures");
+    expect(entry("adventures").format).toBe("yaml");
+    expect(entry("adventures").filename).toBe("{fields.id}.yml");
+  });
+
+  it("the id field is required and described; the schema (enforced by the build) pins the id pattern", () => {
+    const id = entry("adventures").fields.find((f) => f.name === "id") as Field & {
+      description?: string;
+    };
+    expect(id.required).toBe(true);
+    expect(id.description).toContain("adv-");
+    // The CMS does not validate the pattern itself (UNVERIFIED that Pages CMS supports a pattern option); the build does.
+    expect(S.adventureSchema.shape.id.safeParse("adv-k3m9x2").success).toBe(true);
+    expect(S.adventureSchema.shape.id.safeParse("adv-K3M9X2").success).toBe(false);
+    expect(S.adventureSchema.shape.id.safeParse("k3m9x2").success).toBe(false);
+  });
+
+  it("keeps Journal editing and names content/premium outside the switch only in comments or descriptions", () => {
+    expect(entry("journal").path).toBe("content/journal");
+    const outside = text.replace(new RegExp(SWITCH_RE.source, "m"), "");
+    for (const line of outside.split("\n"))
+      if (/content\/premium/.test(line))
+        expect(line.trim().startsWith("#") || line.includes("description")).toBe(true);
   });
 });

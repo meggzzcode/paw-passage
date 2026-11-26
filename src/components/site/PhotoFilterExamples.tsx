@@ -21,7 +21,7 @@ export function PhotoFilterExamples({
   if (images.length === 0) return null;
   return (
     <figure className="pp-examples">
-      <ul className="pp-examples-row">
+      <ul className="pp-examples-row" tabIndex={0} aria-label="Keepsake examples, scrolls sideways">
         {images.map((it) => {
           const e: ExampleImage = typeof it === "string" ? { src: it, alt: "" } : it;
           return (

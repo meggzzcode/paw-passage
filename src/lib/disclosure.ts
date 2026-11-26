@@ -35,7 +35,7 @@ In guides we call out a product only when we have an affiliate link for it, so a
 
 ## Adventures
 
-The adventures in the Passport are not advertisements. No adventure is sponsored, and affiliate links do not decide which adventures we write or show.
+The adventures in the Passport are not advertisements. No adventure is sponsored, and affiliate links do not decide which adventures we write or show. There are no display ads in the Passport or on this site, and the Passport shows no affiliate links.
 
 ## Questions
 

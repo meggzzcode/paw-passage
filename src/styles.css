@@ -171,6 +171,7 @@
     top: -4rem;
     z-index: 100;
     padding: 0.6rem 1rem;
+    min-height: 44px;
     border-radius: 0.5rem;
     background: var(--primary);
     color: var(--primary-foreground);

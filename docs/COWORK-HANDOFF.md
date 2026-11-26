@@ -1,436 +1,177 @@
-# Cowork handoff: external tasks
+# Cowork handoff: the one consolidated list
 
-The single list of things that need the owner's accounts, devices or money. Each task is done by the owner with Cowork assisting on screen. Updated 2026-11-26.
+The single list of everything that still needs the owner's accounts, devices, money or judgment. It replaces every earlier per-task handoff. Tasks are done by the owner with Cowork assisting on screen. Task ids (A1, B3, C7 ...) are the ids used everywhere in `docs/`.
 
-**Rules for every task.** Nothing here may spend money, publish, deploy or change DNS or billing without the owner's explicit authorization in that session. Never paste a secret, license code, token or banking detail into chat, a file, a commit or a screenshot. Use test codes only, except where a task says otherwise. Secrets are entered by the owner in the Netlify web UI only.
+**Rules for every task.** Nothing here may spend money, publish, deploy or change DNS or billing without the owner's explicit authorization in that session. Never paste a secret, license code, token or banking detail into chat, a file, a commit or a screenshot. Use test codes only, except where a task says a real purchase is permitted. Secrets are entered by the owner in the Netlify web UI only. Never deploy automatically.
 
-## Recommended order
+**Recovery.** If anything goes wrong after a deploy, recovery is the existing commit `2125a2a` plus a Netlify production rollback (Deploys, pick an earlier published deploy, Publish deploy). No tag needs to be created.
 
-1. Read-only checks first: CW-GH-1, CW-NET-1, CW-NET-2, CW-NET-3, CW-PAY-1, CW-PAY-5.
-2. CW-GH-2 (recovery tag), CW-PIN-1 (Pinterest), CW-CMS-1 (Pages CMS loop).
-3. Preview work with test data: CW-NET-4 (preview values), CW-NET-5, CW-BLOB-3 (premium import dry run), CW-QA-1 (real devices), CW-ANA-1 (GA4 events).
-4. **Owner Gumroad setup last:** CW-PAY-2 (seller account), CW-PAY-3 (draft product), then CW-NET-4 (production values including the product id), then CW-PAY-4 (permitted purchase, restore and refund test).
+## State of the build (what Cowork is not asked to fix)
 
-## Summary: what blocks production
+| Fact                  | Current value                                                                                                                                                         |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Published adventures  | 113 (14 free pool + 99 premium), 50 showcase previews, 25 collections, 117 keepsake themes                                                                            |
+| Price                 | $19.99 one time. "One payment of $19.99. Yours to keep. No subscription. No renewals." No perpetual-service or future-content promise anywhere                        |
+| Quiz                  | 8 default steps, 10 at most                                                                                                                                           |
+| Keepsakes             | Personalized creation is premium only; free visitors see static examples (6 of 8 use real CC0 dog photos, 2 are labeled illustrations); photos never leave the device |
+| Journal               | Ten articles at `/journal`; the hub `/things-to-do-with-your-dog` is kept                                                                                             |
+| Redirects             | 10 forced 301s and many 410s in `netlify.toml` (tests pin ten)                                                                                                        |
+| PWA and push          | PAUSED: `PWA_ENABLED=false`, `flags.notifications=false`, `push-deliver` has no schedule                                                                              |
+| Gifting               | Flag OFF (`flags.gifting=false`) until verified on Gumroad                                                                                                            |
+| Premium text location | Also in the PUBLIC repo `content/premium/` by the owner's decision; the authoritative protected package is outside the repo (see `PREMIUM-CONTENT-WORKFLOW.md` 0a)    |
+| Pages CMS             | Premium form shipped OFF (commented switch in `.pages.yml`); free form and Journal are on                                                                             |
+| Email nudges          | Gumroad workflow, buyers only (`EMAIL-NUDGES.md`); no visitor signup form                                                                                             |
+| Verification          | Nothing in this file has been run on a live service. For code checks see the Last verified run section of `QA-REPORT.md`                                              |
 
-| Task      | Blocks production?                                                |
-| --------- | ----------------------------------------------------------------- |
-| CW-GH-1   | No                                                                |
-| CW-GH-2   | No (recovery by commit id is accepted)                            |
-| CW-NET-1  | Yes (cost control before any preview or production deploy)        |
-| CW-NET-2  | Yes (storage choice depends on it; fallback is an owner decision) |
-| CW-NET-3  | Yes (a rollback target must exist before cutover)                 |
-| CW-NET-4  | Yes                                                               |
-| CW-NET-5  | Yes                                                               |
-| CW-BLOB-3 | Yes                                                               |
-| CW-PAY-1  | Yes                                                               |
-| CW-PAY-2  | Yes                                                               |
-| CW-PAY-3  | Yes                                                               |
-| CW-PAY-4  | Yes                                                               |
-| CW-PAY-5  | No                                                                |
-| CW-PAY-6  | No (optional gift checkout evaluation)                            |
-| CW-PAY-7  | No (gating: `flags.gifting` stays false until this passes)        |
-| CW-QA-1   | Yes                                                               |
-| CW-ANA-1  | No                                                                |
-| CW-PIN-1  | No                                                                |
-| CW-CMS-1  | No                                                                |
+## Owner decisions
 
-## Price constant must match Gumroad
+Each one changes what a task below does. Record the answer, date and who decided it in your own notes.
 
-`offer.price` in `src/config/site.ts` (currently "$19.99", one-time, no subscription) is shown on the home, unlock and FAQ pages. Before launch it must equal the Gumroad listing price exactly. Change both together; never show a discount or "was" price in the app.
+| #    | Decision                                                    | Options and recommendation                                                                                                                                                                                                                             | Needed by  | Affects    |
+| ---- | ----------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | ---------- |
+| OD1  | Premium text in the public repository                       | Make the repo private (recommended: `PREMIUM-CONTENT-WORKFLOW.md` section 1) or knowingly accept public readability. Deleting later does not remove git history. Pass: premium JSON is not readable logged out                                         | Before B8  | B1, B8, F3 |
+| OD2  | Pages CMS premium form                                      | Keep OFF (recommended). While ON, every save commits premium text to the repo                                                                                                                                                                          | Before C9  | C9         |
+| OD3  | Refund period                                               | Set on the Gumroad product so checkout shows it. `/refund-policy` deliberately states no period; do not invent one on the site                                                                                                                         | Before E2  | E2, D2     |
+| OD4  | Cookie consent approach                                     | Banner, or turn Google Analytics cookies off, then update the Cookies section of `/privacy`                                                                                                                                                            | Before F5  | D3, C11    |
+| OD5  | Support mailbox                                             | Confirm `hello@pawsandpassage.com` exists and receives mail, or choose another address and change it in settings                                                                                                                                       | Before D1  | D1         |
+| OD6  | Definition of "bonus experiences"                           | The inventory counts 22 (6 printables, 6 itineraries, 10 shortcuts). Confirm or redefine before any public copy uses the number                                                                                                                        | Before D13 | D13        |
+| OD7  | Should `/previews` be indexable                             | Today it is a live public route not in the sitemap. Decide whether to add it                                                                                                                                                                           | Before F7  | F7         |
+| OD8  | Gifting go or no-go                                         | Stays OFF unless E8 passes completely                                                                                                                                                                                                                  | After E8   | E8         |
+| OD9  | PWA install prompts and push go or no-go                    | Stay OFF at launch (recommended). Revisit after C10 passes on real devices and after a month of real credit usage                                                                                                                                      | After F9   | C10        |
+| OD10 | Domain used on pins                                         | The live domain is not set in `src/config/site.ts`; pin links currently start with a placeholder. Decide the final domain before the owner package is rebuilt                                                                                          | Before D7  | D7, F8     |
+| OD11 | Deletion-request policy                                     | Whether emailed deletion requests from people who cannot sign in are honored, and how identity is checked                                                                                                                                              | Before D2  | D2         |
+| OD12 | Real library in the preview store while the test flag is on | Anyone who finds the preview URL could activate a test code. Either keep the URL private and clear the preview store after testing (recommended), use Netlify site protection if the plan has it (UNVERIFIED), or test with the synthetic library only | Before B8  | B8, B2     |
 
-## Partner discounts (Gumroad discount codes)
+## Launch blockers
 
-Partner and promotional discounts are done only with Gumroad discount codes. To set one up: in Gumroad, open the product, go to Discounts, and create a code for the partner (a percentage or fixed amount, optionally with an expiry or a use limit). Share the code, or a Gumroad link with the code applied, with the partner. The Gumroad checkout page applies the discount. The app shows no code and no discounted price; the site keeps showing the $19.99 price.
+Grouped by who can clear them. "Cleared" means the pass condition in the task was seen, not assumed.
 
-## CW-GH-1
+| Group                              | Item                                                                                                                                                                                                | Tasks                | Blocks launch |
+| ---------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------- | ------------- |
+| 1. Repository defects              | None known. Verified in this pass: type check clean at documentation time; the retired Five-Minute-Wonders overpromise is fixed (collection now titled "Quick Wonders"); the privacy route compiles | none                 | No            |
+| 2. External Netlify setup          | Plan and credits known; preview deploy green; `/api/*` reaches the Function; env vars scoped correctly; preview isolated from production; premium imported to preview; blob metering understood     | A1, A3, A5, B2 to B8 | Yes           |
+| 3. Real-device verification        | iPhone Safari and Android Chrome free flow, keepsake editor with camera and library, premium on a phone via the test provider, restore on a second device                                           | C2, C3, C5 to C8     | Yes           |
+| 4. Owner administrative decisions  | OD1 to OD5, OD10, OD11; support mailbox answering; policies read by a lawyer; cookie approach                                                                                                       | D1 to D4             | Yes           |
+| 5. Optional enhancements           | Gifting (E8), PWA and push (C10), more free adventures for children, retagging thin collections, replacing 2 illustrated examples with real photos, CSP enforcement, a sign-out route               | E8, C10, D14, D15    | No            |
+| 6. Gumroad setup                   | Seller account, $19.99 product, product id and checkout link, verified license fields, real purchase, restore, refund and revocation                                                                | E1 to E7             | Yes           |
+| 7. Production launch authorization | Written owner approval, production env, real import, backup, approved deploy, live verification                                                                                                     | F1 to F6             | Yes           |
 
-- **Task ID:** CW-GH-1
-- **Objective:** Verify the recovery commit `2125a2a` and the branch `claude/lucid-davinci-l2fixa` exist on GitHub, and record whether the repository is public.
-- **Why Claude cannot do it:** Claude has no GitHub web session, and tag and branch pushes are refused in its environment.
-- **URL:** The owner's GitHub repository: `/commit/2125a2a` and `/branches`
-- **Required owner authorization:** Owner signed in to GitHub; read-only.
-- **Prerequisite:** None.
-- **Step-by-step:**
-  1. Open the repository and paste `2125a2a` into the commit URL.
-  2. Open the Branches page and look for `claude/lucid-davinci-l2fixa`.
-  3. Note whether the repository is public. It is meant to be public.
-- **Expected outcome:** Both exist; visibility recorded.
-- **Evidence to capture:** Screenshot of the commit page and the branch list.
-- **Return to Claude:** Yes or no for each, and repository visibility.
-- **Blocks production?** No
-- **Safe handling:** Read only. Change nothing.
+## Verdict
 
-## CW-GH-2
+**BUILD COMPLETE — EXTERNAL SETUP REQUIRED** (Provisional. The lead confirms the final verdict. It rests on there being no repository defect in the documentation record; the live-service behaviors below are unverified, not defective.)
 
-- **Task ID:** CW-GH-2
-- **Objective:** Create and push the recovery tag `pre-pivot-2026-11-25` at `2125a2a`.
-- **Why Claude cannot do it:** Tag pushes return HTTP 403 from Claude's environment.
-- **URL:** The repository's Tags page, or the owner's terminal in their own checkout.
-- **Required owner authorization:** Owner approves creating a tag (adds a name, deletes nothing).
-- **Prerequisite:** CW-GH-1.
-- **Step-by-step:**
-  1. In the owner's checkout: `git tag -a pre-pivot-2026-11-25 2125a2a -m 'recovery point'` (skip if the tag exists).
-  2. `git push origin pre-pivot-2026-11-25`.
-  3. Confirm it on the Tags page.
-- **Expected outcome:** Tag visible and pointing at `2125a2a`.
-- **Evidence to capture:** Screenshot of the tag page.
-- **Return to Claude:** Created yes or no; the error text if no.
-- **Blocks production?** No (recovery by commit id is accepted)
-- **Safe handling:** Never force-push or move a branch.
+## Phase A: read-only infrastructure checks
 
-## CW-NET-1
+Change nothing. Record findings in your own notes; return a pass or fail to Claude.
 
-- **Task ID:** CW-NET-1
-- **Objective:** Record the Netlify plan, credits, usage and auto-recharge state, and the state of builds for the site.
-- **Why Claude cannot do it:** Needs the owner's signed-in Netlify dashboard.
-- **URL:** https://app.netlify.com/ (Team settings, Billing; Site configuration, Build and deploy)
-- **Required owner authorization:** Owner signed in; read-only. Changing any setting needs separate approval.
-- **Prerequisite:** None.
-- **Step-by-step:**
-  1. On Billing, note the plan, credits remaining and credits used this cycle.
-  2. Find the auto-recharge or credit-pack setting and confirm it is OFF.
-  3. Open the site's build settings and note whether builds are active or stopped. Turn nothing on.
-- **Expected outcome:** Plan and credits recorded; auto-recharge off; build state known.
-- **Evidence to capture:** Screenshots of the billing summary, auto-recharge setting and build state.
-- **Return to Claude:** Plan name, credits left, auto-recharge state, build state.
-- **Blocks production?** Yes (cost control before any preview or production deploy)
-- **Safe handling:** Never click Upgrade, Buy credits or Resume builds without the owner.
+| ID  | What                                                                                                                                               | Where                                    | Pass condition                                                                                                  | Who    |
+| --- | -------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- | --------------------------------------------------------------------------------------------------------------- | ------ |
+| A1  | Record the Netlify plan, monthly credits, current usage and whether auto-recharge is ON or OFF                                                     | Netlify, Usage and billing, Plan details | Plan name and credit number written down; auto-recharge confirmed OFF (Team Owner may be needed)                | Cowork |
+| A2  | Confirm the 50, 75, 90 and 100 percent usage alerts go to a monitored address                                                                      | Netlify, billing notifications           | Alert address is one you read                                                                                   | Owner  |
+| A3  | Confirm the live deployment still exists in the Deploys list and that a rollback (publish an earlier deploy) is available                          | Netlify, Deploys                         | An earlier published deploy is listed and "Publish deploy" is enabled                                           | Cowork |
+| A4  | Confirm commit `2125a2a` and branch `claude/lucid-davinci-l2fixa` exist on GitHub; record the repository's current visibility                      | GitHub                                   | Both found; visibility (Public or Private) noted with the date                                                  | Cowork |
+| A5  | Read Netlify Blobs pricing, limits, metering and persistence across deploys, and Functions memory and rounding                                     | Netlify docs                             | Written answers replace the UNVERIFIED items in `OPERATING-COSTS.md` and `ARCHITECTURE.md`                      | Cowork |
+| A6  | Confirm existing analytics (GA4 property id in `content/settings.yml`) and Search Console access belong to the owner                               | GA4, Search Console                      | Owner is an owner or admin on both                                                                              | Owner  |
+| A7  | Read Gumroad's live license documentation and fee pages: verify endpoint, parameters, response fields, unknown-key status, processor fee treatment | Gumroad API docs and help center         | Quoted passages returned verbatim; every UNVERIFIED comment in `src/server/passport/provider.ts` can be settled | Cowork |
+| A8  | Read Gumroad's rules for transferring a seller account or product and for exporting customers                                                      | Gumroad help center, terms               | Written answer usable by `FLIP-HANDOFF.md`                                                                      | Cowork |
+| A9  | Run a secret scanner (for example gitleaks) over the full git history before any ownership transfer or visibility change                           | Your computer                            | Zero findings, or each finding rotated                                                                          | Owner  |
 
-## CW-NET-2
+## Phase B: preview setup
 
-- **Task ID:** CW-NET-2
-- **Objective:** Establish Netlify Blobs metering, storage limits, persistence across deploys and consistency on the owner's plan.
-- **Why Claude cannot do it:** The public pricing page lists no Blobs line; only the owner's billing and usage pages show real metering.
-- **URL:** Team Billing and Usage pages; https://docs.netlify.com/build/data-and-storage/netlify-blobs/
-- **Required owner authorization:** Owner signed in; read-only.
-- **Prerequisite:** CW-NET-1.
-- **Step-by-step:**
-  1. On Billing and Usage look for any Blobs, storage or Functions line and its credit cost.
-  2. Re-read the Blobs documentation for persistence across deploys, strong consistency and conditional writes (`onlyIfMatch`, `onlyIfNew`).
-  3. Note any per-plan limits or retention.
-- **Index record (after any premium import):** the `index` record in `premium-<env>` must exist and list `items` with `id`, `status` and `collections` for every adventure (`scripts/premium-import.mjs` writes it; re-run the import if an older ids-only index is present). `GET /api/premium/summary` counts published adventures from it; without it the count is 0 or one read per adventure.
-- **Expected outcome:** A written yes or no for: metered? charged in credits? persists across deploys? strong consistency available on this plan?
-- **Evidence to capture:** Screenshots of billing lines and the documentation passages (URL plus quoted sentence).
-- **Return to Claude:** A findings table.
-- **Blocks production?** Yes (storage choice depends on it; the fallback is an owner decision)
-- **Safe handling:** Read only.
+Preview only. Production settings stay untouched in this phase.
 
-## CW-NET-3
+| ID  | What                                                                                                                                                                                                                                                         | Where                                               | Pass condition                                                                                                              | Who                   |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | --------------------- |
+| B1  | Download the protected package from Drive (file id `16_18luRbxED1OLmYAfyJQGx4UMO2xp4Z`), compare its sha256 with the value in `PREMIUM-CONTENT-WORKFLOW.md` 0a, and keep a second offline private copy                                                       | Drive and your computer                             | Hashes match; two copies exist                                                                                              | Owner                 |
+| B2  | Add preview-scoped variables: `SESSION_SECRET` (32+ random characters, secret), `PP_DATA_KEY` (secret, different), `PP_ALLOW_TEST_PROVIDER=1` for Branch deploys and Deploy previews ONLY. Production stays unset                                            | Netlify, Site configuration, Environment variables  | Names and scopes screenshotted with values hidden; `/unlock` on the preview accepts `TEST-VALID-ABC12345`                   | Owner (Cowork guides) |
+| B3  | With the owner's authorization, create a branch deploy for `claude/lucid-davinci-l2fixa` (Branch deploys, add individual branch) and copy its URL                                                                                                            | Netlify, Branch deploys                             | Deploy is green. Previews and rollbacks cost 0 credits; confirm in A1 numbers                                               | Owner                 |
+| B4  | Run the section 3 checklist of `NETLIFY-PREVIEW.md` on the preview: `/stays` returns 410, `/doggy-date-ideas` returns 301 to `/journal/doggy-date-ideas`, `/api/previews` and `/api/session` return JSON, no service worker is registered                    | The preview URL                                     | All pass. **If `/api/*` returns the site's HTML 404, report a BLOCKER** (the request reached the catch-all function)        | Cowork                |
+| B5  | `curl -I` the preview: `/` shows Referrer-Policy, Permissions-Policy, HSTS (if present), nosniff and Content-Security-Policy-Report-Only; `/api/*` Cache-Control; `/api/previews` Cache-Control (public, max-age=300 expected, no-store acceptable, note it) | Terminal                                            | Headers recorded; `/api/premium/adventures` returns 401 with no body text with no cookie and with `Cookie: pp_session=junk` | Cowork                |
+| B6  | Prove preview and production are isolated: the test code does NOT unlock on the production URL; `PP_ALLOW_TEST_PROVIDER` is unset for Production; a test activation appears only in `customers-preview`                                                      | Netlify, Blobs                                      | Production refuses the code ("not recognized"); records only in `*-preview`; delete the test records afterwards             | Cowork                |
+| B7  | Premium import round trip with SYNTHETIC data: dry run, `--write --env preview`, export with `premium-export.mjs --dir <folder outside the repo>`, dry-run import of the export                                                                              | Your computer (`NETLIFY_AUTH_TOKEN`, `SITE_ID` set) | Exported count equals imported count                                                                                        | Owner                 |
+| B8  | Import the real protected package into the PREVIEW store: `node scripts/premium-import.mjs --dir content/premium --env preview` (dry run) then `--write`. Decide OD12 first                                                                                  | Your computer                                       | "Validated 99 premium adventures"; 50 showcase previews. If OD12 says so, clear the preview store after C-phase testing     | Owner                 |
+| B9  | Check accurate public previews and counts on the preview: `/api/previews` lists showcase previews with no instruction, twist, reveal, clue or safety text; public counts show 113 total and 25 collections, or plain fallback wording                        | Preview `/`, `/previews`, `/unlock`                 | Counts equal `node scripts/library-stats.mjs --md`; nothing premium beyond the allowlist is visible                         | Cowork                |
+| B10 | Run `PREVIEW_URL=<preview> TEST_LICENSE_KEY=TEST-VALID-<made-up> node scripts/preview-smoke.mjs`; then run it from two shells at once with different keys. Wait a minute between reruns (12 per minute limit). Never run it on production                    | Your computer                                       | 10 steps PASS, exit 0, in both shells                                                                                       | Owner                 |
+| B11 | Run `node scripts/check-leaks.mjs dist` on the build of the deployed commit                                                                                                                                                                                  | Your computer                                       | "Leak check passed"                                                                                                         | Owner                 |
+| B12 | Open `/`, `/discover`, `/unlock`, `/passport`, `/journal` with the console open and list every Content-Security-Policy report-only violation                                                                                                                 | Preview, browser console                            | List returned (needed before anyone considers enforcing the policy)                                                         | Cowork                |
 
-- **Task ID:** CW-NET-3
-- **Objective:** Confirm that the deploy currently live (built from `main` at `f02e4f9`) still exists in the Deploys list, so a rollback target exists before cutover.
-- **Why Claude cannot do it:** Needs the owner's Netlify dashboard.
-- **URL:** https://app.netlify.com/ , the site, Deploys
-- **Required owner authorization:** Owner signed in; read-only. Do NOT press Publish deploy.
-- **Prerequisite:** None.
-- **Step-by-step:**
-  1. Find the production deploy built from `f02e4f9`.
-  2. Confirm it is listed and the Publish deploy button exists (do not press it).
-  3. Note the currently published deploy id and commit.
-- **Expected outcome:** Rollback target exists.
-- **Evidence to capture:** Screenshot of the deploy page with the commit hash.
-- **Return to Claude:** Deploy id, commit, published or not.
-- **Blocks production?** Yes (a rollback must exist before cutover)
-- **Safe handling:** No publishing, no deleting, no settings changes.
+## Phase C: actual testing
 
-## CW-NET-4
+All on the preview, with test codes only. Report OS and browser versions for every failure.
 
-- **Task ID:** CW-NET-4
-- **Objective:** Set the environment variables in the Netlify UI: `SESSION_SECRET`, `PP_DATA_KEY`, `GUMROAD_PRODUCT_ID`, `VITE_CHECKOUT_URL`, and on previews `PP_ALLOW_TEST_PROVIDER=1`.
-- **Why Claude cannot do it:** Claude must never hold secrets; only the owner can set them.
-- **URL:** Netlify, Site configuration, Environment variables
-- **Required owner authorization:** Owner authorizes setting them. `SESSION_SECRET` and `PP_DATA_KEY` are generated by the owner (a password manager, 40 or more random characters each, different from each other).
-- **Prerequisite:** For the production values, CW-PAY-3 (product id and link).
-- **Step-by-step:**
-  1. Add `SESSION_SECRET` and `PP_DATA_KEY` scoped to Functions, marked secret. Once real customers exist, `PP_DATA_KEY` must never change.
-  2. For previews, add `PP_ALLOW_TEST_PROVIDER=1` scoped to the Deploy Preview and Branch deploy contexts only, plus preview-only secret values.
-  3. Later (last step of the order above): add `GUMROAD_PRODUCT_ID` (Functions) and `VITE_CHECKOUT_URL` (build; a public https link, not a secret) from the draft Gumroad product.
-  4. Never set `PP_ALLOW_TEST_PROVIDER` for the Production context. The code store is chosen from the deploy context; there is no `PP_ENV` setting.
-  5. Do not set `SHOW_DRAFTS` for Production.
-- **Expected outcome:** Variables exist with the right scopes.
-- **Evidence to capture:** Screenshot of variable NAMES and scopes only, values hidden.
-- **Return to Claude:** Confirmation that the names and scopes are set.
-- **Blocks production?** Yes
-- **Safe handling:** NEVER paste a secret value into chat, a file or a screenshot. Mark secret values as secret in Netlify.
+| ID  | What                                                                                                                                                                                                                                                                                                | Where                     | Pass condition                                                                                                                                                                          | Who             |
+| --- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- |
+| C1  | Desktop browsers (Chrome, Safari, Firefox, Edge): free flow arrive, quiz, recommendation, accept or show another, reveal, complete, stamp, static keepsake example, `/previews`, `/collections`, `/unlock`, `/faq`, trust pages                                                                     | Preview, desktop          | No layout break; no horizontal scroll at 1280 and 390 wide; reduced motion honored                                                                                                      | Cowork          |
+| C2  | Physical iPhone Safari: the full free flow including the quiz (8 default steps, up to 2 optional; counter honest; 44 px chips), tap reveal, the empty-result paths (puppy plus senior plus children; adult plus children plus nearby outdoors), home and unlock keepsake sections at 320 and 390 px | Preview, iPhone           | Every step works by touch; empty results show the plain message, not the pitch panel; no overflow                                                                                       | Cowork or owner |
+| C3  | Same as C2 on a physical Android phone (Chrome)                                                                                                                                                                                                                                                     | Preview, Android          | Same                                                                                                                                                                                    | Cowork or owner |
+| C4  | Screen reader and reduced-motion pass over the quiz, reveal, stamp and static keepsake demo                                                                                                                                                                                                         | Preview                   | Labels read sensibly; no motion when reduced motion is set                                                                                                                              | Owner           |
+| C5  | Premium via the test provider: activate on phone 1, confirm the full library loads (99 premium adventures available), save and favorite, complete an adventure, confirm the 50 previews are marked as selected previews                                                                             | Preview, phone            | Premium loads; free progress migrates; library discovery and collections work                                                                                                           | Cowork          |
+| C6  | Photo editing and export: on iPhone and Android the camera choice opens the system camera and the library choice opens the picker; download a keepsake from a real geotagged phone photo and run `exiftool`; watch the DevTools Network tab                                                         | Preview, devices, desktop | Photos appear in the editor; the PNG has no EXIF or GPS; no request carries image data. If the camera fails, report OS and browser versions (`camera=()` is UNVERIFIED across browsers) | Cowork          |
+| C7  | Sync and restore access: activate on phone 1, restore with the key only on phone 2 or a laptop; progress arrives                                                                                                                                                                                    | Preview                   | Progress and premium appear on the second device; the record sits in `customers-preview`                                                                                                | Cowork          |
+| C8  | Calendar export: "Add to my calendar" for a birthday and an adoption date on iPhone, Android and desktop                                                                                                                                                                                            | Preview, `/passport`      | The `.ics` opens in the calendar, titled with the dog's name, yearly, all day; no network call is made                                                                                  | Cowork          |
+| C9  | Pages CMS edit loop: edit and revert one Journal entry; confirm two green builds; confirm the free form is locked to free adventures; try "Add new" and note whether you can type the Adventure ID; confirm the premium form is absent (OD2)                                                        | Pages CMS, Netlify        | Two green builds; premium form absent from the menu. If the ID cannot be typed, the owner decides whether to allow it                                                                   | Owner           |
+| C10 | PWA and notification tests, ONLY if the owner has decided to turn them on (OD9): follow `PWA-DEVICE-TEST.md`; for push, `NOTIFICATIONS.md` (VAPID keys, four variables, restore the schedule line in `push-deliver.ts`, production deploy)                                                          | Real devices              | Every REQUIRED row passes. Skip entirely at launch: both stay paused                                                                                                                    | Owner           |
+| C11 | Analytics verification: with a GA4 DebugView or Realtime session, run the free flow and a checkout click                                                                                                                                                                                            | GA4                       | The named events arrive with no dog name, memory text, code, email or customer id; `purchase_cta_clicked` is recorded. Consent approach per OD4                                         | Cowork          |
 
-## CW-NET-5
+## Phase D: marketing and admin readiness
 
-- **Task ID:** CW-NET-5
-- **Objective:** Prove, on a deploy preview, that the site and Function deploy, that `/api/*` reaches the Function, and that preview and production stores are isolated.
-- **Why Claude cannot do it:** Needs a real deploy and the Netlify UI; Claude does not deploy.
-- **URL:** A deploy preview URL and Netlify, Blobs
-- **Required owner authorization:** Owner authorizes one preview deploy (costs credits if builds are on; confirm with CW-NET-1).
-- **Prerequisite:** CW-NET-1, CW-NET-4 (preview values).
-- **Step-by-step:**
-  1. Confirm the preview builds and pages load (this also settles the `publish` and build-output question in `ARCHITECTURE.md`).
-  2. Activate with the test code `TEST-VALID-ABC12345` and complete one adventure.
-  3. In the Blobs UI confirm the record is in `customers-preview` and NOT in `customers-production`.
-  4. Confirm `/api/session` answers JSON with `Cache-Control: no-store` (not an HTML page).
-- **Expected outcome:** Preview writes only to `*-preview` stores; `/api/*` reaches the Function.
-- **Evidence to capture:** Screenshots of the store lists and the response headers.
-- **Return to Claude:** Pass or fail, and any HTML-instead-of-JSON or build finding.
-- **Blocks production?** Yes
-- **Safe handling:** Test codes only. Delete the preview records afterwards.
+| ID  | What                                                                                                                                                                                                                                                                                                                                                           | Where                       | Pass condition                                                                                                  | Who    |
+| --- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- | --------------------------------------------------------------------------------------------------------------- | ------ |
+| D1  | Support mailbox: send a message to the address on `/contact` from an outside address                                                                                                                                                                                                                                                                           | Mail                        | You receive it and reply from the same address (LAUNCH BLOCKER)                                                 | Owner  |
+| D2  | Policy review by a lawyer: `/privacy`, `/terms`, `/refund-policy`, the affiliate disclosure (items listed in `POLICIES-REVIEW.md`: cookie consent for EU, UK and CA visitors, privacy-rights wording, governing law, liability limits, "does not expire" wording). Add business name, address and governing law if asked. Apply OD3 and OD11. Not legal advice | `POLICIES-REVIEW.md`        | Written comments received; edits applied; then `npx vitest run src/test/policies.test.ts` is run by a developer | Owner  |
+| D3  | Apply the cookie-consent decision (OD4) to `/privacy`                                                                                                                                                                                                                                                                                                          | `src/routes/privacy.tsx`    | The Cookies section describes exactly what the site sets                                                        | Owner  |
+| D4  | Confirm Gumroad is the merchant of record (the site does not assert it)                                                                                                                                                                                                                                                                                        | Gumroad docs and settings   | Written confirmation, or the site wording stays neutral                                                         | Owner  |
+| D5  | Journal verification on the deployed preview: 390 px screenshots of the other seven articles; open one `/discover?ctx=` link and confirm the "Starting from" chip; confirm the sitemap lists `/journal` and the ten articles with `lastmod`                                                                                                                    | Preview                     | All ten render; canonical equals the page; BlogPosting data present                                             | Cowork |
+| D6  | Pinterest: create or confirm the business account and one board per article theme plus a general board                                                                                                                                                                                                                                                         | Pinterest                   | Boards exist                                                                                                    | Owner  |
+| D7  | After OD10, rebuild the owner package: `node marketing/build-owner-package.mjs --site https://<real-domain>`; pin links must no longer start with the placeholder                                                                                                                                                                                              | Your computer               | `PINS.csv` has 60 rows with the real domain                                                                     | Owner  |
+| D8  | Pinterest asset handoff: confirm the 60 pins (30 general, 30 article) and alt text are in the owner package, back up the package (Drive upload of split parts pending)                                                                                                                                                                                         | Owner package, Drive        | Backup exists; alt text pasted per pin when posting                                                             | Owner  |
+| D9  | UTM check: open a pin link, confirm `utm_campaign` and `utm_content` appear in analytics, then a test checkout click is recorded as `purchase_cta_clicked`. Sales cannot be credited to a pin yet                                                                                                                                                              | GA4                         | Both seen; the limitation stays written down                                                                    | Cowork |
+| D10 | Search Console readiness: verify the domain property (DNS TXT preferred)                                                                                                                                                                                                                                                                                       | Search Console, DNS         | Property verified                                                                                               | Owner  |
+| D11 | Re-open each Wikimedia Commons file page in `IMAGE-CREDITS.md` and confirm the license still reads CC0 1.0; confirm Journal hero art provenance (original flat art from `scripts/journal/make-heroes.mjs`)                                                                                                                                                     | Commons, `IMAGE-CREDITS.md` | All six photos still CC0; provenance recorded                                                                   | Owner  |
+| D12 | Content owner: confirm adv-m5z1q7 (A Trip Down Memory Lane) stays puppy-suitable with city or countryside places                                                                                                                                                                                                                                               | Content                     | Decision recorded                                                                                               | Owner  |
+| D13 | Library claims: confirm or redefine "bonus experiences" (OD6); on launch day re-run `node scripts/library-stats.mjs --md` and quote counts in public copy only after that                                                                                                                                                                                      | Your computer               | Public counts equal the script output                                                                           | Owner  |
+| D14 | Optional: retag thin collections (after-hours 1, birthday-and-gotcha-day 1, adventures-without-spending 2, apartment-adventures 3, the-gentle-soul 3) and the family and two-dog cards before advertising those audiences; add free adventures for children with puppies or seniors                                                                            | Content                     | Not required for launch (scope freeze)                                                                          | Owner  |
+| D15 | Optional: replace the 2 illustrated examples (then-and-now, seasonal) with real licensed photo pairs and rebuild the owner package                                                                                                                                                                                                                             | `public/examples/`          | Not required for launch                                                                                         | Owner  |
+| D16 | Re-check each approved Amazon affiliate link the week of launch and confirm the tracking id                                                                                                                                                                                                                                                                    | `content/affiliates.yml`    | Each link still shows a buy box, or is switched off                                                             | Owner  |
+| D17 | Final commercial review: read `/`, `/unlock`, `/faq`, `/previews`, `/our-story` and the trust pages once as a stranger. Check the price text equals Gumroad's listing, there is no urgency, no invented count, no perpetual-service or future-content promise                                                                                                  | Preview                     | Owner signs off in writing                                                                                      | Owner  |
 
-## CW-BLOB-3
+## Phase E: Gumroad (completed last)
 
-- **Task ID:** CW-BLOB-3
-- **Objective:** Premium import and export dry run with SYNTHETIC data.
-- **Why Claude cannot do it:** Needs the owner's computer and Netlify token; Claude must not hold them.
-- **URL:** The owner's terminal in their checkout.
-- **Required owner authorization:** Owner authorizes using their `NETLIFY_AUTH_TOKEN` and `SITE_ID` locally.
-- **Prerequisite:** CW-NET-2; Node 22.18 or newer.
-- **Step-by-step:**
-  1. Write the `syntheticPremium` array from `src/passport/fixtures/premium.synthetic.ts` to a JSON file in a private folder outside the repository (the scripts refuse paths inside it).
-  2. `node scripts/premium-import.mjs --file <file> --env preview` (dry run), then again with `--write`.
-  3. On the preview, activate with a test code and call `/api/premium/adventures`; compare with the file.
-  4. `node scripts/premium-export.mjs --out <path outside the repo> --env preview` and diff against the input.
-  5. Delete the synthetic data from `premium-preview` afterwards (`--prune` with an empty array file).
-- **Expected outcome:** The round trip is identical and nothing reaches production.
-- **Evidence to capture:** Terminal output without the token, and the diff result.
-- **Return to Claude:** Pass or fail and any error text.
-- **Blocks production?** Yes
-- **Safe handling:** Token only in the environment, never in a file or chat. Always `--env preview`.
+Do not start before Phases A to D. Real money may be involved: each purchase needs the owner's explicit authorization.
 
-## CW-PAY-1
+| ID  | What                                                                                                                                                                                                                                                                                                     | Where                         | Pass condition                                                                                                                      | Who               |
+| --- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- | ----------------- |
+| E1  | Create the Gumroad seller account with identity and payout. Record which email owns it and the payout method type (never the numbers)                                                                                                                                                                    | gumroad.com                   | Dashboard reachable                                                                                                                 | Owner only        |
+| E2  | Create the product as a DRAFT at $19.99, license keys enabled, and the delivery email telling buyers to enter the code at `/unlock` or `/restore-access`. Set the refund period (OD3). Do not publish                                                                                                    | Gumroad, Products             | Draft exists, price exactly $19.99, license keys ON                                                                                 | Owner             |
+| E3  | Record the product id and checkout link; the owner enters `GUMROAD_PRODUCT_ID` (Functions, secret-style) and `VITE_CHECKOUT_URL` (build, public https link) in Netlify. Confirm `offer.price` in `src/config/site.ts` equals the listing price                                                           | Netlify environment variables | Names and scopes set; `/unlock` shows the checkout button only once the link is set                                                 | Owner             |
+| E4  | With a real test key, verify the license response fields (success, purchase id, refunded, chargebacked, disputed, license disabled) and that `increment_uses_count=false` behaves as the code assumes. A wrong field guess could revoke paying customers                                                 | Gumroad, preview              | Fields match `provider.ts`; any UNVERIFIED comment replaced by the Gumroad fact                                                     | Owner with Cowork |
+| E5  | One real purchase (a 100 percent discount code if the documentation allows, otherwise one real $19.99 purchase the owner authorizes): copy the key from the email, activate on the preview                                                                                                               | Gumroad, preview              | Premium loads and the key never appears in chat, file or screenshot                                                                 | Owner             |
+| E6  | Restore on a second browser using only the key                                                                                                                                                                                                                                                           | Preview                       | Same account and progress arrive; no second customer is created                                                                     | Owner             |
+| E7  | Refund the purchase in Gumroad; wait, then reload (the server re-checks at most every 24 hours; a restore also re-checks)                                                                                                                                                                                | Gumroad, preview              | `/api/premium/adventures` returns 403 within about a day while free progress stays; a reversed refund re-activates the same account | Owner             |
+| E8  | Optional, only if gifting is wanted (OD8): enable Gumroad's native gift option on a test product; buy with a second email as recipient; confirm the recipient's key activates with an empty save (the buyer's progress must not appear), restore works, refund revokes. Then set `flags.gifting` to true | Gumroad, preview              | Every step passes; otherwise the flag stays false and the site says nothing about gifting                                           | Owner             |
+| E9  | Purchase attribution where feasible: record what Gumroad's dashboard can show (source, referrer, discount code). Do not claim pin-to-sale attribution on the site                                                                                                                                        | Gumroad analytics             | Findings written; no attribution claim published                                                                                    | Cowork            |
+| E10 | Set up the buyers-only email workflow (one workflow, trigger "new purchase", 12 emails a week apart per `EMAIL-NUDGES.md`): send a test to yourself and confirm the unsubscribe link and footer; approve the copy                                                                                        | Gumroad, Workflows            | Test received with unsubscribe link; copy approved. Gumroad may limit sending until earnings and payout exist (UNVERIFIED)          | Owner             |
+| E11 | Partner discounts, if any: create Gumroad discount codes; the site shows no code and no discounted price                                                                                                                                                                                                 | Gumroad, Discounts            | Code works at checkout; the site price stays $19.99                                                                                 | Owner             |
 
-- **Task ID:** CW-PAY-1
-- **Objective:** Read Gumroad's live license documentation and return the exact facts.
-- **Why Claude cannot do it:** Gumroad's API pages did not render for Claude.
-- **URL:** https://gumroad.com/api (licenses, verify) and Gumroad's help center article on license keys
-- **Required owner authorization:** Read only; no account needed.
-- **Prerequisite:** None.
-- **Step-by-step:**
-  1. Find the license verify endpoint. Copy the exact URL, HTTP method and parameter names (`product_id` or `product_permalink`, `license_key`, `increment_uses_count`).
-  2. Copy a full example response and list every field, especially the purchase id or sale id, refunded, chargebacked, disputed, dispute_won and any disabled flag.
-  3. Find how a key is disabled and whether a disabled key fails verification.
-  4. Record what `increment_uses_count=false` does and the default.
-  5. Record the HTTP status and body for an unknown key and for rate limiting.
-- **Expected outcome:** A verified specification that replaces every UNVERIFIED comment in `src/server/passport/provider.ts`.
-- **Evidence to capture:** Quoted text and URL of each documentation passage.
-- **Return to Claude:** The completed list, verbatim.
-- **Blocks production?** Yes
-- **Safe handling:** Read only.
+## Phase F: production launch
 
-## CW-PAY-2
+Only after every gate above is clear and the owner approves in writing. Never deploy automatically.
 
-- **Task ID:** CW-PAY-2
-- **Objective:** Owner creates the Gumroad seller account with identity and payout. (Do this last; see the order above.)
-- **Why Claude cannot do it:** Identity and banking data are owner-only; Claude never touches them.
-- **URL:** https://gumroad.com/
-- **Required owner authorization:** Owner only. Cowork may guide on screen but must never enter identity or bank data.
-- **Prerequisite:** CW-PAY-1 and CW-PAY-5 read.
-- **Step-by-step:**
-  1. Owner signs up and completes identity and payout setup.
-  2. Record which email owns the account and the payout method type (not the numbers).
-- **Expected outcome:** Seller account ready.
-- **Evidence to capture:** Screenshot of the dashboard with sensitive fields hidden.
-- **Return to Claude:** Account ready yes or no.
-- **Blocks production?** Yes
-- **Safe handling:** Never capture identity or bank details.
+| ID  | What                                                                                                                                                                                                                                                                                                                                                                                    | Where                   | Pass condition                                                            | Who               |
+| --- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------- | ------------------------------------------------------------------------- | ----------------- |
+| F1  | Owner approval: the launch gates in `LAUNCH-CHECKLIST.md` all read Pass, the Last verified run table in `QA-REPORT.md` is filled for the launch commit, and the owner authorizes the production deploy and, separately, any DNS or billing change                                                                                                                                       | Owner                   | Written authorization exists                                              | Owner             |
+| F2  | Production configuration: `SESSION_SECRET`, `PP_DATA_KEY` (never changed once customers exist), `GUMROAD_PRODUCT_ID`, `VITE_CHECKOUT_URL`. `PP_ALLOW_TEST_PROVIDER` and `SHOW_DRAFTS` NOT set                                                                                                                                                                                           | Netlify                 | Variable names and scopes screenshotted, values hidden                    | Owner             |
+| F3  | Take a rollback copy of the live store (`premium-export.mjs --env production --dir <folder outside the repo>`), then the real premium import: dry run, then `--env production --write --yes-production`                                                                                                                                                                                 | Your computer           | "Validated 99 premium adventures"; 50 showcase previews                   | Owner             |
+| F4  | Secure backup: a dated production export plus the protected package zip, two private places                                                                                                                                                                                                                                                                                             | Your computer, Drive    | Both copies exist; the sha256 of the package is recorded                  | Owner             |
+| F5  | Approved deployment: the owner clicks Deploy (a production deploy costs 15 credits; check the budget with `node scripts/cost-model.mjs`)                                                                                                                                                                                                                                                | Netlify                 | Deploy green; the previous deploy is kept for rollback for the first week | Owner             |
+| F6  | Live-site verification: `node scripts/verify-site.mjs <site url>`; `/stays` 410; `/doggy-date-ideas` 301; the test code is refused; `/api/previews` and `/api/session` return JSON; `node scripts/check-leaks.mjs` on the build; one permitted purchase and refund (E5 to E7) on the live product                                                                                       | Live site               | Exit 0; every check passes                                                | Owner with Cowork |
+| F7  | Submit `https://www.pawsandpassage.com/sitemap.xml` once; URL Inspection and Request indexing for `/journal`, the ten articles and `/things-to-do-with-your-dog` (canonical must be the page itself); apply OD7                                                                                                                                                                         | Search Console          | Sitemap shows Success and the expected URL count                          | Owner             |
+| F8  | Initial marketing distribution: upload pins weekly from `PINS.csv` (3 to 5 per week, link exactly as written, paste the alt text)                                                                                                                                                                                                                                                       | Pinterest               | First week of pins posted; links open                                     | Owner             |
+| F9  | Post-launch monitoring: Search Console Pages and Sitemaps reports weekly for the first month ("Discovered, not indexed" is normal early; no ranking is promised); securityheaders.com or Mozilla Observatory grade recorded; after one full month read Netlify per-meter usage and update the constants in `scripts/cost-model.mjs`; the 30, 60 and 90 day check-ins in `OPERATIONS.md` | Search Console, Netlify | Notes recorded; any "push relaunch" waits for a credit-budget check       | Owner             |
+| F10 | At ownership transfer only: rotate `SESSION_SECRET`, Netlify and Gumroad tokens (not `PP_DATA_KEY` once customers exist) per `OWNERSHIP-TRANSFER.md`                                                                                                                                                                                                                                    | `OWNERSHIP-TRANSFER.md` | Rotation checklist complete                                               | Owner             |
 
-## CW-PAY-3
+## Reference
 
-- **Task ID:** CW-PAY-3
-- **Objective:** Create the product as a DRAFT, not published: price per the owner's decision, license keys enabled, delivery email telling buyers to enter the code on the site.
-- **Why Claude cannot do it:** Account actions need the owner's account.
-- **URL:** Gumroad dashboard, Products
-- **Required owner authorization:** Owner decides the price (the code holds none; see `DECISIONS.md`, C2) and authorizes a draft. Do NOT publish.
-- **Prerequisite:** CW-PAY-2, CW-PAY-1.
-- **Step-by-step:**
-  1. Create the product in draft state.
-  2. Enable license keys; note the product id the API uses (CW-PAY-1).
-  3. Write the delivery email so it tells the buyer to enter the code at `/unlock` or `/restore-access`.
-  4. Leave it unpublished.
-- **Expected outcome:** A draft product with license keys enabled.
-- **Evidence to capture:** Screenshot of the settings and the product id.
-- **Return to Claude:** The product id (entered by the owner in Netlify as `GUMROAD_PRODUCT_ID`) and the product link (for `VITE_CHECKOUT_URL`).
-- **Blocks production?** Yes
-- **Safe handling:** Do not publish or share the product link.
-
-## CW-PAY-4
-
-- **Task ID:** CW-PAY-4
-- **Objective:** A permitted test purchase, restore and refund.
-- **Why Claude cannot do it:** Real money may be involved; only the owner can authorize it.
-- **URL:** The Gumroad product page (when permitted) and a preview deploy
-- **Required owner authorization:** Explicit per-purchase authorization. Use a 100 percent coupon or Gumroad test mode only if the documentation allows; otherwise the owner decides on a real small purchase and refund.
-- **Prerequisite:** CW-PAY-1, CW-PAY-3, CW-NET-4, CW-NET-5.
-- **Step-by-step:**
-  1. Buy once as permitted; copy the license code from the email.
-  2. Activate on the preview, then restore on a second browser.
-  3. Refund the purchase in Gumroad, wait, then call `/api/session` (the 24-hour re-check; the owner may force it on a preview only).
-  4. Confirm premium returns 403 and progress remains.
-- **Expected outcome:** Purchase, restore and refund behave as designed.
-- **Evidence to capture:** Screenshots with the code hidden; response status codes.
-- **Return to Claude:** Pass or fail per step.
-- **Blocks production?** Yes
-- **Safe handling:** Never put a real license code into chat or files.
-
-## CW-PAY-5
-
-- **Task ID:** CW-PAY-5
-- **Objective:** Find Gumroad's rules for transferring a seller account or product, and for migrating entitlements, customers and license keys.
-- **Why Claude cannot do it:** The terms live in Gumroad's help center and the owner's agreements.
-- **URL:** Gumroad help center and terms of service
-- **Required owner authorization:** Read only.
-- **Prerequisite:** None.
-- **Step-by-step:**
-  1. Find whether a seller account or product can be transferred or sold.
-  2. Note what happens to customers, license keys and payouts on transfer.
-  3. Note any way to export customers.
-- **Expected outcome:** A written answer the buyer handover can rely on (`FLIP-HANDOFF.md`).
-- **Evidence to capture:** Quoted passages with URLs.
-- **Return to Claude:** Findings.
-- **Blocks production?** No
-- **Safe handling:** Read only.
-
-## CW-QA-1
-
-- **Task ID:** CW-QA-1
-- **Objective:** Real iPhone Safari and Android Chrome run of the free flow and, on a preview, the activation flow.
-- **Why Claude cannot do it:** Claude has no real devices.
-- **URL:** The preview URL, on each phone
-- **Required owner authorization:** Owner provides the devices.
-- **Prerequisite:** A deploy preview (CW-NET-5).
-- **Step-by-step:**
-  1. Complete the profile, reveal an adventure, mark it done, add a memory and make a keepsake from a photo from the camera or library.
-  2. Reload and confirm progress persists; try a private window and note the "memory only" notice.
-  3. Activate with a test code on the preview, close the tab and return; confirm the cookie keeps the session.
-  4. Note layout, tap-target, keyboard and download or share problems.
-- **Expected outcome:** The free flow works on both devices.
-- **Evidence to capture:** Screen recordings or screenshots.
-- **Return to Claude:** A defects list.
-- **Blocks production?** Yes
-- **Safe handling:** Test codes only. Use a photo you do not mind keeping on the device; nothing is uploaded.
-
-## CW-ANA-1
-
-- **Task ID:** CW-ANA-1
-- **Objective:** Verify the GA4 events fire and contain no license code, dog name, memory text or customer id.
-- **Why Claude cannot do it:** Needs the owner's GA4 property.
-- **URL:** GA4, Admin, DebugView, on a preview
-- **Required owner authorization:** Owner signed in to GA4.
-- **Prerequisite:** A deploy preview.
-- **Step-by-step:**
-  1. Open the preview with debug mode on.
-  2. Walk through profile, reveal, complete, keepsake, unlock view, activate and restore.
-  3. Check every event name (prefix `pp_`) and parameter against the list in `PRODUCT-SPEC.md`.
-- **Expected outcome:** Events arrive; no personal data, code or id in any parameter.
-- **Evidence to capture:** DebugView screenshots.
-- **Return to Claude:** The event list with parameters.
-- **Blocks production?** No
-- **Safe handling:** Do not send real codes.
-
-## CW-PIN-1
-
-- **Task ID:** CW-PIN-1
-- **Objective:** Pinterest: claim the site, set up the profile and boards.
-- **Why Claude cannot do it:** Needs the owner's Pinterest account.
-- **URL:** https://www.pinterest.com/
-- **Required owner authorization:** Owner authorizes; nothing is published without approval.
-- **Prerequisite:** None.
-- **Step-by-step:**
-  1. Claim the website using the meta tag or file method the owner chooses.
-  2. Create the boards; post nothing yet.
-  3. Make sure the profile address matches `pinterestUrl` in Business settings.
-- **Expected outcome:** Site claimed.
-- **Evidence to capture:** Screenshot of the claimed status.
-- **Return to Claude:** Done yes or no.
-- **Blocks production?** No
-- **Safe handling:** Do not publish pins without approval.
-
-## CW-CMS-1
-
-- **Task ID:** CW-CMS-1
-- **Objective:** Verify the Pages CMS edit, save and publish loop on a harmless change, and confirm which branch Pages CMS writes to.
-- **Why Claude cannot do it:** Needs the owner's Pages CMS login; `.pages.yml` records that the full loop is not yet verified.
-- **URL:** https://app.pagescms.org/
-- **Required owner authorization:** Owner signed in; the owner approves one small saved edit and its build.
-- **Prerequisite:** CW-NET-1 (a save starts a build if builds are on).
-- **Step-by-step:**
-  1. Open the repository in Pages CMS and note the branch.
-  2. In "Passport stamps" change the blurb of one stamp by a few words and save.
-  3. Confirm a commit appears on that branch and the Netlify build runs; open the page when done.
-  4. Revert the edit.
-- **Expected outcome:** Save creates a commit; the build passes; the change shows on the site.
-- **Evidence to capture:** Screenshots of the commit and the finished deploy.
-- **Return to Claude:** Branch name, pass or fail, any form error.
-- **Blocks production?** No
-- **Safe handling:** Do not edit adventures in the CMS (known form defect, see `OPERATIONS.md`).
-
-## CW-PAY-6
-
-- **Task ID:** CW-PAY-6
-- **Objective:** Evaluate, as an optional extra, whether the checkout provider can sell the Passport as a gift (a code the buyer passes on), and record what it would take. Do not build or advertise gifting.
-- **Why Claude cannot do it:** It needs the seller account and the provider's current documentation and settings.
-- **URL:** The checkout provider's product settings and documentation.
-- **Required owner authorization:** Read-only. No product, price or listing changes.
-- **Prerequisite:** CW-PAY-1 (license behavior verified).
-- **Step-by-step:**
-  1. Read the provider's current documentation on gifting, multiple purchases and license-code transfer.
-  2. Note whether a purchase code redeemed by someone else would work with our restore and refund checks, and whether the provider shows the buyer or the recipient as the purchaser.
-  3. Write down the finding in two or three lines. Do not change anything.
-- **Expected outcome:** A short written finding: possible as is, possible with changes, or not supported.
-- **Evidence to capture:** The documentation page or setting that supports the finding.
-- **Return to Claude:** The finding.
-- **Blocks production?** No. Gift checkout is not a launch blocker and no page on the site mentions gifting.
-- **Safe handling:** Never paste a license code. Change nothing.
-
-## CW-PAY-7
-
-- **Task ID:** CW-PAY-7
-- **Objective:** Verify Gumroad's native "Give as a gift" end to end, then (and only then) set `flags.gifting` to `true` in `src/config/commercial.ts`. Until then the site says nothing about gifting. We build no gift platform: the gift action on `/unlock` links to the same checkout link and price.
-- **What Claude could and could not verify (read this first):** Gumroad's help article 213, "How do I give a product as a gift", could not be read in full from the build environment. From secondary sources only: Gumroad's API has an `is_gift_receiver_purchase` field on a purchase, and a public Gumroad issue (antiwork/gumroad #193) says the intended behavior is that only the recipient gets the license key. Everything else is **UNVERIFIED**: where the seller turns gifting on (and whether it is a per-product or account setting), whether the buyer sees the gift option on the same checkout link or needs a different URL, whether the recipient is emailed a receipt with the license key, whether the buyer also receives a key, whether a refund of the gift purchase disables the recipient's key, and the Gumroad license-verify field names (also CW-PAY-1). The wording on `/unlock` ("On the checkout page, choose the gift option") and in the gift FAQ is therefore UNVERIFIED and must be corrected to match what you see before the flag is turned on.
-- **Why Claude cannot do it:** It needs the seller account, real checkout and a second email address.
-- **URL:** The Gumroad help article https://gumroad.com/help/article/213-how-do-i-give-a-product-as-a-gift and the Gumroad product settings.
-- **Required owner authorization:** Creating one test product or 100%-off test coupon, one test purchase, and one refund of it.
-- **Prerequisite:** CW-PAY-1 to CW-PAY-3 (product, checkout link, license verification) done.
-- **Step-by-step:**
-  1. Read article 213 in full. Write down where the gift setting lives and any restriction (for example, which products or payment methods allow a gift).
-  2. Enable the seller setting that allows gifts for the Adventure Passport product (use a separate test product or a 100% coupon so no real charge is needed).
-  3. Make a test gift purchase as the buyer, using one email address for you and a second email address as the recipient. Note exactly what the buyer sees at checkout and whether it is on the same link as the normal purchase.
-  4. Confirm the RECIPIENT receives a receipt email with a usable license key (and note whether the buyer also receives one; the product design assumes the recipient's is the one that matters).
-  5. On a clean browser profile (the recipient's device), open `/unlock`, enter the recipient's license key under "Activate", and confirm the Passport unlocks. Confirm it starts with that browser's own progress only: the buyer's dog profile, progress and stamps must NOT appear. (In code, `store.activate` in `src/server/passport/store.ts` builds a new customer from an empty save plus the activating device's own local save, never from the purchaser's record. The test `src/test/launch-commerce.test.ts`, "gifted licenses", pins this against a fake Gumroad.)
-  6. Restore test: on a second clean browser, use Restore access with the recipient's key and confirm it reaches the same recipient passport.
-  7. Refund and revocation test: refund the gift purchase in Gumroad. Within about a day (the server re-checks every 24 hours) the recipient's premium library must stop loading, while their free passport and progress stay. Record what Gumroad reports for the key (disabled, refunded) so `provider.ts` maps it (see CW-PAY-1).
-  8. If all of steps 3 to 7 pass, correct the wording on `/unlock` and in the gift FAQ to match what you saw, set `flags.gifting` to `true`, and add the finding to `LAUNCH-CHECKLIST.md` row C9.
-- **Expected outcome:** A pass/fail note for each of steps 3 to 7, and a decision on the flag.
-- **Evidence to capture:** Screenshots of the gift option at checkout and of the recipient's receipt, with the license key hidden.
-- **Return to Claude:** The note. Never paste a license key.
-- **Blocks production?** No.
-- **Safe handling:** Never paste a license code. Refund the test purchase. Leave `flags.gifting` false if any step fails.
-
-## CW-PUSH-1
-
-- **Task ID:** CW-PUSH-1
-- **Objective:** Turn on optional Web Push notifications for paying customers: create the VAPID keys, add four environment variables, and test one device end to end. Optional; the site works fully without it.
-- **Why Claude cannot do it:** It needs the owner's Netlify account and real devices, and the private key must never pass through Claude, the repository or a chat.
-- **URL:** The Netlify site settings (environment variables) and the live site.
-- **Required owner authorization:** Owner signed in to Netlify. Owner confirms adding the secret values.
-- **Prerequisite:** CW-NET-1 and a working purchase restore (CW-PAY-1). The notification code is deployed to production (scheduled functions run only for published production deploys).
-- **Step-by-step:**
-  1. On your own computer run `npx web-push generate-vapid-keys`. It prints a public and a private key. Do not paste either into a chat or the repository.
-  2. In the Netlify site settings, environment variables, add for the production context: `VAPID_PUBLIC_KEY` (the public key), `VAPID_PRIVATE_KEY` (the private key, mark it secret), `VAPID_SUBJECT` (`mailto:` plus a monitored address), and `NOTIFICATIONS_ENABLED` = `true`. Leave `NOTIFICATIONS_ENABLED` unset for previews.
-  3. Trigger a production deploy so the functions see the values.
-  4. Open the site on a phone, restore access with your own purchase code, open the notification settings, and turn on weekly reminders with a time about 20 minutes ahead. On iPhone first add the site to the Home Screen (iOS 16.4 or later).
-  5. In the Netlify Functions page open `push-deliver`. While push is paused its 15-minute schedule is removed, so it will not show as scheduled; only after the schedule is restored (when notifications are resumed) check that it appears every 15 minutes. Use "Run now" once if needed and read its log: it shows counts only.
-  6. Confirm the notification arrives once, opens the Discover page, and that turning it off in settings stops it.
-  7. Kill switch drill: set `NOTIFICATIONS_ENABLED` to `false` and redeploy, or write the blob `notifications/flag` = `{"enabled": false}` in the `premium-production` store. Confirm the settings screen hides the option and the log shows `push_run_disabled`.
-- **Expected outcome:** One notification arrives at the chosen time, opens the right page, and opt-out stops it. The function log shows counts, never endpoints or keys.
-- **Evidence to capture:** A screenshot of the notification, the function log line (counts only), and, once notifications are resumed and the schedule restored, the Functions page showing the 15-minute schedule.
-- **Return to Claude:** Pass or fail per step, the device and browser, and whether an environment variable change needed a redeploy to take effect (UNVERIFIED in the docs).
-- **Blocks production?** No.
-- **Safe handling:** Never share the private key. If it is ever exposed, generate a new pair, replace both variables, and redeploy; customers re-subscribe automatically on their next visit to settings. Preview deploys do not run the schedule.
-
-### Notifications environment variables (summary)
-
-| Variable                | Where                                     | Secret?                 |
-| ----------------------- | ----------------------------------------- | ----------------------- |
-| `NOTIFICATIONS_ENABLED` | production only; `true` turns delivery on | no                      |
-| `VAPID_PUBLIC_KEY`      | production                                | no (served to browsers) |
-| `VAPID_PRIVATE_KEY`     | production                                | **yes**                 |
-| `VAPID_SUBJECT`         | production                                | no                      |
-
-Full details, data model and operating cost model are in `NOTIFICATIONS.md`.
+- Preview procedure and the check list: `NETLIFY-PREVIEW.md`. Premium import, export and backup: `PREMIUM-CONTENT-WORKFLOW.md`. Costs: `OPERATING-COSTS.md`. Security findings: `SECURITY-REVIEW.md`. Integration tests and the smoke script: `PREMIUM-INTEGRATION-TESTS.md`.
+- **Price constant.** `offer.price` in `src/config/site.ts` (currently "$19.99") is shown on the home, unlock and FAQ pages and must equal the Gumroad listing exactly. Change both together; never show a discount or "was" price in the app.
+- **Environment variables (names only).** `SESSION_SECRET`, `PP_DATA_KEY`, `GUMROAD_PRODUCT_ID` (Functions); `VITE_CHECKOUT_URL` (build, public); `PP_ALLOW_TEST_PROVIDER` (Branch deploys and Deploy previews only). Notification variables (`NOTIFICATIONS_ENABLED`, `VAPID_PUBLIC_KEY`, `VAPID_PRIVATE_KEY`, `VAPID_SUBJECT`) matter only if C10 is ever done; see `NOTIFICATIONS.md`.

@@ -62,5 +62,5 @@ Old-site addresses are retired with 410 (see `netlify.toml`), deliberately never
 
 - `/guides/puppy-at-a-vacation-rental`, `/guides/vacation-rental-with-a-senior-dog`: about rentals, not the puppy/senior activity articles; a redirect would mislead. Kept 410.
 - `/tools/*`, `/dog-rules*`, `/stays*`, `/destinations*`: no equivalent page.
-- The former landing pages `/doggy-date-ideas`, `/puppy-bucket-list`, `/free-things-to-do-with-your-dog`, `/indoor-dog-adventures`, `/senior-dog-adventures` and `/weekend-adventure-finder` were removed and 301 to the matching Journal article (`netlify.toml`). Only the broad hub `/things-to-do-with-your-dog` remains; it links to all ten articles.
+- The former landing pages `/doggy-date-ideas`, `/puppy-bucket-list`, `/free-things-to-do-with-your-dog`, `/indoor-dog-adventures`, `/senior-dog-adventures` and `/weekend-adventure-finder` were removed and 301 to the matching Journal article (`netlify.toml`; with `/tools` and three retired gear guides these make the ten forced 301s that the tests pin). Only the broad hub `/things-to-do-with-your-dog` remains; it links to all ten articles.
   If old backlinks to a specific retired guide are later found in Search Console, add a one-to-one redirect to the closest article in `netlify.toml` ahead of the 410 rules.

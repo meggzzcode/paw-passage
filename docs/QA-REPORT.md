@@ -1,46 +1,63 @@
 # QA report
 
-Only results that were run and read are recorded here. Run on 2026-11-26 with Node v22.23.4 from `HEAD` `e965d75` plus uncommitted working-tree changes (documentation and design/keepsake work in progress). These are a snapshot: **re-run all five commands on the exact commit before launch.**
+This document records what kinds of checking exist, what has never been done, and where the result of the final run goes. It states **no test count and no "all tests pass" claim**. Counts written in earlier versions of this file or in any report are out of date and must not be reused. For the status of the final commit, see the **Last verified run** section.
 
-## Automated checks
+## Automated checks (commands)
 
-| Command                                | Result                                                                                                                                                                                 |
-| -------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `npx tsc --noEmit`                     | Exit 0, no errors.                                                                                                                                                                     |
-| `npx eslint .`                         | Exit 0. 0 errors, 30 warnings, all `react-refresh/only-export-components` (files that export both components and helpers; development hot-reload hint only, not a defect in behavior). |
-| `npx vitest run`                       | Exit 0. **65 test files passed, 847 tests passed**, 0 failed, about 36 s.                                                                                                              |
-| `npx vite build`                       | Exit 0. Client and server bundles built; the server output is generated under `.output/` (Nitro).                                                                                      |
-| `node scripts/test-netlify-ignore.mjs` | Exit 0. "All rows pass": 20 of 20 situations (13 content or code changes build, 5 docs-only changes skip, a docs-plus-guide push builds, a missing cached commit builds).              |
+| Command                                | What it proves                                                                                                                                  |
+| -------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| `npx tsc --noEmit`                     | The code type checks.                                                                                                                           |
+| `npx eslint .`                         | The code passes lint rules.                                                                                                                     |
+| `npx vitest run`                       | The test suite (unit, component and API tests with in-memory stores and fake providers) passes.                                                 |
+| `NITRO_PRESET=netlify npx vite build`  | A clean production build succeeds. Static files go to `dist/`, server-rendered pages to `.netlify/functions-internal/server`.                   |
+| `node scripts/test-netlify-ignore.mjs` | The Netlify build-skip rule skips docs-only pushes and builds everything else.                                                                  |
+| `node scripts/check-leaks.mjs dist`    | The build output carries no premium text markers (run after the build; it cannot see the owner's real private text, only that no record ships). |
 
-## What the 847 tests cover
+## What the automated tests cover
 
-Content and schema validation (adventures, collections, stamps, achievements, guides, products, packing); the eligibility and ranking engine; discovery screens; Save v2 merge, migration and limits; the local store; custom collections; keepsake families, artwork and the photo path (in memory); the server API with an in-memory store and a fake provider (activation, restore, refund, dispute, revoke, outage, CSRF, origin, rate limit, body size, conflict retry, export, delete, test-provider exclusion in production); security headers; Pages CMS configuration structure; affiliate link rules and Amazon tracking-id replacement; disclosure labels; SEO and internal links; accessibility structure checks in component tests; trust pages.
+Content and schema validation (adventures, collections, stamps, achievements, guides, Journal, products, packing); the eligibility and ranking engine; the free-first journey (quiz with 8 default and at most 10 steps, free starter, reveal) and a 17-profile audit over the real free pool (`INTRO-AUDIT.md`); discovery screens; Save v2 merge, migration and limits; the local store; custom collections; keepsake families, artwork, the premium-only gate and the photo path (in memory); the server API with an in-memory store and a fake provider (activation, restore, refund, dispute, revoke, outage, CSRF, origin, rate limit, body size, conflict retry, export, delete, test-provider exclusion in production); premium end to end over the real handler with the test provider (`PREMIUM-INTEGRATION-TESTS.md`); public previews and the leak guards; library inventory; security (`SECURITY-REVIEW.md`); security headers; policies and pay-once copy guards; Netlify configuration (redirect rules, env inventory); Pages CMS configuration structure and the premium switch; SEO and Journal content; PWA and notification code (paused); affiliate link rules; disclosure labels; accessibility structure checks in component tests; trust pages.
+
+These are code checks against fakes. None of them is a live-service, device or browser result.
 
 ## NOT tested
 
-None of these has been done, so none is claimed:
+None of these has been done, so none is claimed. Each has a task in `COWORK-HANDOFF.md`.
 
-- **Real devices.** No iPhone Safari or Android Chrome run; no real touch, camera, photo-picker, share-sheet or download behavior.
-- **Browsers.** Component tests run in jsdom, not in real browsers. No cross-browser, print or screen-reader testing. Contrast ratios in the design documents are calculations, not tool-measured.
-- **Gumroad.** No request has ever reached Gumroad. The adapter's URL, parameters and response fields are **UNVERIFIED**.
-- **Netlify Blobs.** All server tests use an in-memory store. Strong consistency, etag compare-and-set, persistence, limits and metering against the real service are untested.
-- **Live or preview deploy.** Nothing has been deployed from this branch. That `/api/*` reaches the Function, deploy-context values, headers on Function responses, and the build and Function deploying together with the current `netlify.toml` `publish` value are untested.
-- **Pages CMS.** The edit, save and publish loop is not verified end to end.
-- **Premium import and export.** The scripts have not been run against a real store (dry run or write).
-- **GA4.** Event delivery and parameter contents are not verified in a real property.
-- **Load, abuse and penetration testing.** None. Rate limiting is per function instance only.
-- **Content with real dogs and owners.** None.
+- **Real devices (C2, C3, C6).** No iPhone Safari or Android Chrome run; no real touch, camera, photo-picker, share-sheet or download behavior.
+- **Browsers (C1, C4).** Component tests run in jsdom, not in real browsers. No cross-browser, print or screen-reader testing. Contrast ratios in the design documents are calculations, not tool-measured.
+- **Gumroad (A7, E4 to E7).** No request has ever reached Gumroad. The adapter's URL, parameters and response fields are **UNVERIFIED**.
+- **Netlify Blobs (A5, B7, B8).** All server tests use an in-memory store. Strong consistency, etag compare-and-set, persistence, limits and metering against the real service are untested. The import and export scripts have not been run against a real store.
+- **Live or preview deploy (B3 to B6).** Nothing has been deployed from this branch. A clean local build with the Netlify preset succeeds, but that `/api/*` reaches the Function, that redirects and headers are applied by Netlify, deploy-context values, and the `Cache-Control` that wins on `/api/previews` are untested.
+- **Pages CMS (C9).** The edit, save and publish loop is not verified end to end; whether "Add new" lets you type an adventure id is unknown.
+- **Google Analytics (C11).** Event delivery and parameter contents are not verified in a real property.
+- **PWA and push (C10).** Paused; nothing is tested on devices.
+- **Load, abuse and penetration testing.** None. Rate limiting is per function instance only. The security review is a code review plus unit tests, not penetration testing.
+- **Content with real dogs and owners.** None. Review scores are editorial judgments.
 
-## Known defects and gaps
+## Known gaps (none are launch-blocking repository defects)
 
-1. **Browser does not use premium or sync endpoints.** Discovery runs on the free library with `unlocked: false`; nothing in the browser calls `GET /api/premium/adventures` or `PUT /api/progress`. A purchaser can activate and restore, but the full library and live sync are not reachable from the UI. Blocks launch.
-2. **Pages CMS adventure form is out of date.** It shows 29 fields; schema v2 has 56. It offers three fields the schema does not use and omits many required ones, so new adventures cannot be created correctly in the CMS (existing ones are protected by `merge: true`). See `OPERATIONS.md`.
-3. **Stale default page title.** `src/routes/__root.tsx` sets the title of ordinary pages without their own title to "dog-friendly travel guides and stays", which does not describe the product.
-4. **Dark mode is not reachable.** Dark tokens exist but nothing sets the `dark` class (UNVERIFIED by search of `src/`).
-5. **Unverified provider contract and deploy path** as listed above.
-6. **Content gaps** recorded in `CONTENT-REVIEW.md`: several free adventures sit at the minimum score, no free adventure needs a car, water or a beach, and there is one food adventure (the site states that nothing is vet-reviewed).
-7. **Lint warnings:** 30 `react-refresh/only-export-components` warnings (no errors).
+1. **Content coverage.** The free pool of 14 has only two adventures that suit children, so some restrictive combinations (for example puppy plus adult plus senior plus children plus no car) return no free result and the page says so plainly. No adventures were added (scope freeze). Details in `INTRO-AUDIT.md` and `LIBRARY-INVENTORY.md`.
+2. **Thin collections** (after-hours, birthday-and-gotcha-day, adventures-without-spending, apartment-adventures, the-gentle-soul) and the family and two-dog tags: do not advertise those audiences yet (D14).
+3. **Missing sign-out route** (low). Security headers: `X-Frame-Options` and an enforced Content-Security-Policy are not sent on purpose (a report-only policy is).
+4. **Dark mode** tokens exist but nothing sets the `dark` class (UNVERIFIED by search of `src/`); not a launch requirement.
+5. **Provider contract and deploy path** are unverified as listed above.
+6. **Lint warnings.** The lint run may report `react-refresh/only-export-components` warnings (development hot-reload hint only). Read the actual count from the final run.
 
-## Q3 launch checks (2026-11-26)
+## Last verified run
 
-Added `src/test/launch-commerce.test.ts` and `src/test/launch-static.test.ts` (15 tests, all pass locally with fakes: no network, no accounts). They cover activation, duplicate and replay, restore without a URL key, refund, chargeback and disabled-key revocation, protected premium delivery, photo local-only, analytics keys, documented environment variables and the service worker rules. `node scripts/check-leaks.mjs .output/public` passed on the 15:27 build. Still NOT tested: everything under "NOT tested" above, plus that the current build output (`.output`, Nitro `cloudflare-module` preset) deploys on Netlify with `publish = "dist"`. See `LAUNCH-READINESS.md`.
+Fill this table for the exact launch commit. Do not copy numbers from any earlier document, report or message. A run on any other commit does not count.
+
+| Field  | Value    |
+| ------ | -------- |
+| COMMIT | `<fill>` |
+| DATE   | `<fill>` |
+| NODE   | `<fill>` |
+
+| Command                                | Result   |
+| -------------------------------------- | -------- |
+| `npx tsc --noEmit`                     | `<fill>` |
+| `npx eslint .`                         | `<fill>` |
+| `npx vitest run`                       | `<fill>` |
+| `NITRO_PRESET=netlify npx vite build`  | `<fill>` |
+| `node scripts/test-netlify-ignore.mjs` | `<fill>` |
+| `node scripts/check-leaks.mjs dist`    | `<fill>` |

@@ -13,7 +13,14 @@ describe("HTML security headers", () => {
       "camera=(), microphone=(), geolocation=(), payment=(), usb=()",
     );
     expect(r.headers.get("x-frame-options")).toBeNull();
-    expect(Object.keys(HTML_SECURITY_HEADERS)).toHaveLength(2);
+    expect(r.headers.get("x-content-type-options")).toBe("nosniff");
+    expect(Object.keys(HTML_SECURITY_HEADERS).sort()).toEqual([
+      "Content-Security-Policy-Report-Only",
+      "Permissions-Policy",
+      "Referrer-Policy",
+      "X-Content-Type-Options",
+    ]);
+    expect(r.headers.get("content-security-policy")).toBeNull();
   });
   it("leaves non-HTML responses alone and works on immutable headers", () => {
     expect(

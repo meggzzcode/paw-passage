@@ -2,6 +2,8 @@
 
 Nothing in this file is verified. Every row below is blank until a person runs it on a real device and fills it in. Documentation, emulation and unit tests do not count. For the owner or Cowork to run; Claude cannot test on devices.
 
+**Status: PAUSED.** The PWA is off (`PWA_ENABLED=false`: no manifest link, no service worker registration, any earlier worker and cache are removed) and push is off (`flags.notifications=false`). This checklist is needed only if the owner decides to turn them on (decision OD9; Cowork task C10 in `COWORK-HANDOFF.md`). Row ids below (A1, B1 ...) belong to this checklist only; they are not Cowork task ids.
+
 ## Install prompts stay hidden until these pass
 
 `PWA_PROMPTS_ENABLED` in `src/lib/pwa.ts` ships `false`: no install prompt, no install card, no link to `/install`, and no customer-facing claim about PWA or offline use. Change it to `true` only when every row marked REQUIRED in sections A to H has Pass, with OS and browser versions, date and tester filled in, on at least one iPhone (Safari, iOS 17.2 or later), one Android phone (Chrome) and one desktop browser. Any Fail on a REQUIRED row keeps the flag `false`; record the failure and the decision in `docs/PWA.md`. Notification rows (section I) gate only the notification wording, not the flag.
@@ -20,7 +22,7 @@ Nothing in this file is verified. Every row below is blank until a person runs i
 
 ## Checklist
 
-Use a permitted test purchase only (CW-PAY-4). Never write a purchase code into this file. Pass/Fail: P or F. Exact versions: fill per row if they differ from the record above.
+Use a permitted test purchase only (E5 to E7). Never write a purchase code into this file. Pass/Fail: P or F. Exact versions: fill per row if they differ from the record above.
 
 | #   | Step                                                                                                                                                                                                                          | REQUIRED | OS / browser version | Pass/Fail | Date | Tester | Notes |
 | --- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | -------------------- | --------- | ---- | ------ | ----- |

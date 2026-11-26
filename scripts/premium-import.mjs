@@ -7,7 +7,7 @@
 //   add --env production --write --yes-production to touch the live store; add --prune to delete adventures not in the file.
 //
 // --dir <folder> instead of --file: one JSON file per adventure (<id>.json, any sub-folders). Standard path in the single-repo
-// workflow: --dir content/premium (git-ignored; docs/PREMIUM-CONTENT-WORKFLOW.md). Same validation, same dry-run default.
+// workflow: --dir content/premium (tracked in this repo by the owner decision; docs/PREMIUM-CONTENT-WORKFLOW.md). Same validation, same dry-run default.
 // The file is a JSON array of adventures (schema: src/passport/schema.ts), kept OUTSIDE git. Paths inside this repo are refused.
 // Public previews: cards flagged showcase:true are projected (allowlist, src/server/passport/previews.ts) into `previews/index`,
 // together with library totals and structural match fields for every published card (free ones are read from content/adventures).

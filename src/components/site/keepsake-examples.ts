@@ -1,63 +1,101 @@
 import type { ExampleImage } from "./PhotoFilterExamples";
 
 /**
- * Finished keepsakes drawn by the real keepsake renderer, using original sample art: an illustrated sample dog
- * ("Biscuit"), not a customer's dog. Files live in public/examples/.
+ * Keepsake examples, drawn by the real keepsake editor (scripts/demo/render-examples.mjs). The first six are made
+ * from real, licensed dog photographs, shown beside the original photo; credits are in docs/IMAGE-CREDITS.md. The last
+ * two (then-and-now, seasonal) are original illustrations, labelled as such, until licensed photos are added.
+ * These are examples, not customer stories; the dog names on them are sample names. Files live in public/examples/.
  */
 export const FILTER_EXAMPLES: readonly ExampleImage[] = [
   {
     src: "/examples/postcard.webp",
-    alt: "A travel postcard keepsake: a sample illustrated dog named Biscuit at a lakeside picnic",
+    alt: "A travel postcard keepsake made from a real photo of a brown dog standing on a snowy ridge with mountains behind",
     label: "Postcard",
     width: 560,
     height: 560,
+    before: {
+      src: "/examples/postcard-photo.webp",
+      alt: "A brown dog standing on a snowy mountain ridge, the original photo",
+      width: 620,
+      height: 520,
+    },
   },
   {
     src: "/examples/magazine.webp",
-    alt: "A magazine cover keepsake titled The Slow Sniff Issue, with a sample illustrated dog",
+    alt: "A magazine cover keepsake with the headline COVER STAR, made from a real close-up photo of a chocolate Labrador looking up",
     label: "Magazine cover",
     width: 560,
     height: 700,
+    before: {
+      src: "/examples/magazine-photo.webp",
+      alt: "A chocolate Labrador looking up with its mouth open, the original photo",
+      width: 620,
+      height: 520,
+    },
   },
   {
     src: "/examples/detective.webp",
-    alt: "A detective ID card keepsake for a sample dog named Biscuit",
+    alt: "A detective ID card keepsake made from a real photo of a black and tan dog sniffing a ball on grass",
     label: "Detective ID",
     width: 560,
     height: 700,
+    before: {
+      src: "/examples/detective-photo.webp",
+      alt: "A black and tan dog sniffing a ball on a lawn, the original photo",
+      width: 620,
+      height: 520,
+    },
   },
   {
     src: "/examples/birthday.webp",
-    alt: "A birthday magazine cover keepsake reading Biscuit Turns Five",
+    alt: "A birthday magazine cover keepsake reading Happy Birthday, made from a real photo of a golden dog sitting indoors",
     label: "Birthday cover",
     width: 560,
     height: 700,
+    before: {
+      src: "/examples/birthday-photo.webp",
+      alt: "A golden dog sitting on a tiled floor next to plant pots, the original photo",
+      width: 390,
+      height: 520,
+    },
   },
   {
-    src: "/examples/camping-patch.webp",
-    alt: "A camping patch ticket keepsake for a backyard campout with a sample dog",
-    label: "Camping patch",
+    src: "/examples/certificate.webp",
+    alt: "An achievement certificate keepsake titled Toy Champion, made from a real photo of a chocolate Labrador puppy",
+    label: "Certificate",
     width: 560,
-    height: 560,
-  },
-  {
-    src: "/examples/then-and-now.webp",
-    alt: "A then-and-now keepsake showing a sample puppy and the same sample dog grown up",
-    label: "Then and now",
-    width: 560,
-    height: 560,
+    height: 700,
+    before: {
+      src: "/examples/certificate-photo.webp",
+      alt: "A chocolate Labrador puppy, the original photo",
+      width: 520,
+      height: 520,
+    },
   },
   {
     src: "/examples/trading-card.webp",
-    alt: "A trading card keepsake for a sample dog named Biscuit the Brave",
+    alt: "A collectible trading card keepsake titled Safari Explorer, made from a real photo of a cream golden retriever resting in a forest",
     label: "Trading card",
     width: 560,
     height: 700,
+    before: {
+      src: "/examples/trading-card-photo.webp",
+      alt: "A cream golden retriever resting among forest plants, the original photo",
+      width: 620,
+      height: 520,
+    },
+  },
+  {
+    src: "/examples/then-and-now.webp",
+    alt: "An illustration of a then-and-now keepsake showing a sample puppy and the same sample dog grown up",
+    label: "Then and now (illustration)",
+    width: 560,
+    height: 560,
   },
   {
     src: "/examples/seasonal.webp",
-    alt: "An autumn seasonal frame keepsake titled Leaf Pile Day with a sample dog",
-    label: "Seasonal frame",
+    alt: "An illustration of an autumn seasonal frame keepsake titled Leaf Pile Day with a sample dog",
+    label: "Seasonal frame (illustration)",
     width: 560,
     height: 700,
   },

@@ -4,6 +4,8 @@ Optional, opt-in reminders for paying customers. The website works fully without
 
 ## Status: paused
 
+(Turning notifications back on is owner decision OD9 and Cowork task C10 in `COWORK-HANDOFF.md`; it needs real-device tests and a credit-budget check first.)
+
 Push and the PWA are paused (`PWA_ENABLED=false`, `flags.notifications=false`). The scheduled function `netlify/functions/push-deliver.ts` therefore has **no `config.schedule`** and does not run on its own, so there are no idle invocations. The handler code is unchanged. To restore it when push is relaunched, add `export const config = { schedule: "*/15 * * * *" };` back to that file (the line is kept in a comment there), turn the flags on, and redeploy to production. Everything below describes the design once it is running; the 15-minute figures apply only after the schedule is restored.
 
 ## Architecture

@@ -11,6 +11,24 @@ How the paid adventure library is edited, checked, backed up and loaded into the
 - **Next step: make the repository private, then check forks and clones** (checklist in section 1). Do this before any real marketing, and before sharing the repository with a buyer.
 - Making a repository private later does not erase what was public before. Assume anyone who cloned or forked it while it was public still has a copy. The business answer to that is the owner's call; this document only records the fact.
 
+## 0a. The protected content package (authoritative copy)
+
+**The protected package is the authoritative copy of the paid library.** To be plain about the current risk: `content/premium/` in the PUBLIC repository **currently also holds the premium text**, by the owner's earlier decision. Until the repository is private, that text is readable by anyone, including through history, forks and clones. **Recommended next step: make the repository private and check forks (section 1), and commit no further premium text.** Treat the package, not the repository folder, as the source of truth for restores and transfers.
+
+| Item       | Value                                                                                                                                                                                                                          |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Local path | `/home/user/premium-content/package/<version>/` (outside the repository) plus `<version>.zip` and `<version>.zip.sha256`                                                                                                       |
+| Current    | `premium-2026-11-26-1` (99 adventures, 50 showcase previews, 25 collections in the library)                                                                                                                                    |
+| Drive copy | Google Drive file id `16_18luRbxED1OLmYAfyJQGx4UMO2xp4Z`, `premium-package-premium-2026-11-26-1.zip`, folder id `1quEq2z0rfSUeA4SpHCyezaL2wZQhxFuc`; sha256 `d83e792ea577e477f8db9180e5fe7a0571bc63606fd711acc7f493b3362a1900` |
+
+What is inside: `premium-import.json` (one array), `adventures/` (one file per adventure, the `content/premium` layout), `public-previews.json`, `collections.json`, `keepsake-configs.json` (per card family, theme, headline, subhead, explainer, plus the registered theme ids), `validation-report.txt` (the exact dry-run output), `MANIFEST.json` (version, date, git commit, sha256 of every file, counts), `IMPORT.md` and `EXPORT-RECOVERY.md`.
+
+- **Access:** open the Drive file (it is private to the Drive account that owns it; share it only with someone you trust) or use the local folder. Check the zip against its `.sha256` file and the files against `MANIFEST.json`.
+- **Update:** change adventures where you keep them, then from the repository run `node scripts/premium-package.mjs --out <folder outside the repo>`. It validates with the real schema through the import script's dry run, writes the next numbered version (`premium-<date>-<n>`), never writes to any store and refuses to write inside the repository. Upload the new zip to Drive and update the table above.
+- **Export from the live store:** `node scripts/premium-export.mjs --dir <folder> --env production` (see `EXPORT-RECOVERY.md` in the package).
+- **Transfer to a new owner:** hand over the zip and its sha256 privately; they follow `IMPORT.md` with their own store credentials. Details in `EXPORT-RECOVERY.md`.
+- The package holds adventure text only: no customer data, no secrets. Keep it private anyway.
+
 ## 1. One-time checklist: make the repository private
 
 Do these in order, on GitHub, as the repository owner.
@@ -18,7 +36,7 @@ Do these in order, on GitHub, as the repository owner.
 1. **Check visibility now.** Repository, Settings, General, "Danger Zone" shows "Change repository visibility". Note today's visibility and the date.
 2. **Check forks and clones.** Repository, Insights, Forks (or the "Forks" count on the front page) lists public forks. A private repository's public forks stay public and detached; ask each fork owner to delete theirs or report them to GitHub if they hold the paid text. You cannot see private local clones; treat any past clone as existing.
 3. **Make it private.** Settings, General, Danger Zone, "Change visibility", "Make private". Read the warning: stars and watchers are lost, GitHub Pages (if used) is affected, Actions minutes become metered by plan.
-4. **Confirm Pages CMS access.** Pages CMS signs in with GitHub. Open the CMS as the owner and confirm the repository still opens and the "Adventures (premium)" menu lists the files. Any other person who edits must be added as a repository collaborator (Settings, Collaborators) first.
+4. **Confirm Pages CMS access.** Pages CMS signs in with GitHub. Open the CMS as the owner and confirm the repository still opens and the free menus work (the "Adventures (premium)" menu is OFF by default, see section 3). Any other person who edits must be added as a repository collaborator (Settings, Collaborators) first.
 5. **Confirm Netlify can still build.** Netlify's GitHub connection needs access to private repositories. Trigger a deploy and confirm it succeeds. If it fails with an access error, re-authorize the Netlify GitHub app for this repository.
 6. **Rotate nothing.** No secret is stored in the repository, so making it private requires no rotation. (Rotation rules for a sale are in `OWNERSHIP-TRANSFER.md`.)
 7. **Run the leak check on a build.** A developer or the owner, with Node 22.18 or newer: `npm ci`, `npm run build`, then `node scripts/check-leaks.mjs dist` (use the output folder the build reports if it is different). It must say "Leak check passed". It proves the build output carries no premium text; it cannot judge the repository itself.
@@ -39,9 +57,9 @@ content/premium/
 
 ## 3. Editing without a developer (Pages CMS)
 
-Pages CMS has a menu **Adventures (premium)** that edits `content/premium/*.json` with a form listing every field, with drop-downs for every controlled choice. It is generated from, and tested against, the schema (`src/test/handover-cms.test.ts` fails if the form and the schema drift apart), so a new adventure made in the CMS passes the same checks as one written by hand.
+**The premium form is OFF by default (owner decision OD2):** `.pages.yml` ships it commented out between `PREMIUM-CMS-SWITCH:BEGIN` and `PREMIUM-CMS-SWITCH:END`, so the menu does not exist until the owner turns it on, and every save while it is on commits premium text to the public repository. If it is switched on, Pages CMS has a menu **Adventures (premium)** that edits `content/premium/*.json` with a form listing every field, with drop-downs for every controlled choice. It is generated from, and tested against, the schema (`src/test/handover-cms.test.ts` fails if the form and the schema drift apart), so a new adventure made in the CMS passes the same checks as one written by hand.
 
-1. Open Pages CMS, choose **Adventures (premium)**, open an adventure (or "Add" for a new one).
+1. With the switch on, open Pages CMS, choose **Adventures (premium)**, open an adventure (or "Add" for a new one).
 2. Change the fields. Every label says what it wants and its length limit.
 3. Save. This only saves a file in the repository. **It does not change the live store.** The paid library on the site changes only when you run the import (section 5).
 4. Leave `status` on `draft` until the adventure has been independently scored (see `CONTENT-GUIDE.md`, Scoring).

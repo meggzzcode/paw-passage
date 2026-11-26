@@ -341,7 +341,7 @@
   display: block;
 }
 .pp-examples-side img {
-  height: 12rem;
+  height: 8.5rem;
   width: auto;
   max-width: 100%;
 }
@@ -349,7 +349,11 @@
   display: block;
   margin-top: 0.25rem;
   font-size: 0.75rem;
-  color: var(--pp-muted);
+  color: inherit; /* sits on the dark keepsake band: the muted token was 2.1:1 there */
+}
+.pp-demo-adv summary {
+  cursor: pointer;
+  min-height: 44px;
 }
 @media (min-width: 720px) {
   .pp-examples-row {
@@ -360,4 +364,8 @@
   .pp-examples-pair img {
     height: 15rem;
   }
+}
+.pp-examples {
+  min-width: 0;
+  max-width: 100%;
 }

@@ -1,5 +1,7 @@
 # PWA: install, service worker
 
+**Status: PAUSED (2026-11-26).** `PWA_ENABLED = false` in `src/lib/pwa.ts`: the page does not link the manifest, does not register the service worker and actively removes any worker and cache an earlier visit installed, so the site behaves as a plain website. `PWA_PROMPTS_ENABLED` is also false and push notifications are paused. The code below is kept for a later launch and describes the design once `PWA_ENABLED` is true. Turning it on is owner decision OD9 and Cowork task C10 (`COWORK-HANDOFF.md`).
+
 Optional features. The website stays primary: nothing requires installing, and nothing here requests a permission. Nothing customer-facing claims PWA or offline capability; install prompts are behind a launch gate (below).
 
 ## Files
@@ -23,7 +25,7 @@ Optional features. The website stays primary: nothing requires installing, and n
 
 - `InstallPrompt` and `InstallCard` render nothing, anywhere. Nothing proactive encourages installing, and no customer-facing page advertises installing, PWA or offline use.
 - `/install` still works by URL, is `noindex`, is not in the sitemap and is not linked from the header, footer, FAQ, `/unlock` or home. Its first paragraph says installing is optional and the website works fully in the browser. The only in-app pointer is in My Passport notification settings, which must tell iPhone and iPad customers plainly that reminders need the home-screen app (and that this is not confirmed on every iPhone version).
-- The manifest and service worker stay active (harmless: the worker caches only public static assets and never touches `/api/*`).
+- With `PWA_ENABLED` false (the current state) the manifest is not linked and no service worker is registered, so nothing is installed or cached. Once `PWA_ENABLED` is true the worker caches only public static assets and never touches `/api/*`.
 
 Flip it to `true` only after the rule in `docs/PWA-DEVICE-TEST.md` ("Install prompts stay hidden until these pass") is satisfied on real devices. Q2 may mirror the value in commercial config; the components read only this constant.
 

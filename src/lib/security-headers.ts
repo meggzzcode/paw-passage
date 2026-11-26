@@ -4,10 +4,31 @@ import { createMiddleware } from "@tanstack/react-start";
  * Response headers for every HTML page. netlify.toml [[headers]] only reaches static files; pages are rendered by the
  * server function, so these are set here (request middleware runs in dev and in production).
  *
- * X-Frame-Options is deliberately NOT sent: the Lovable editor previews the site inside an iframe and would show a
- * blank pane. Frame protection is a deliberate decision (see netlify.toml).
+ * Frame policy (deliberate): X-Frame-Options and CSP frame-ancestors are NOT sent. The Lovable editor previews the site
+ * inside an iframe, and DENY/SAMEORIGIN would blank that pane. Revisit (frame-ancestors 'self' plus the Lovable origins)
+ * once the site no longer needs embedding. HSTS is not sent by the app; Netlify serves HSTS on its own HTTPS domains
+ * (confirm on the deployed domain, docs/NETLIFY-PREVIEW.md section 9).
+ *
+ * Content-Security-Policy is REPORT-ONLY on purpose: the root document has inline scripts and styles that an enforced policy
+ * would block without a hash or nonce. Violations show in the browser console only (no reporting endpoint). Enforcing it
+ * is a Cowork follow-up: review the console on the deploy preview, then move to hashes/nonces and drop 'unsafe-inline'.
  */
+export const CSP_REPORT_ONLY = [
+  "default-src 'self'",
+  "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://gumroad.com https://assets.gumroad.com",
+  "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
+  "font-src 'self' https://fonts.gstatic.com data:",
+  "img-src 'self' data: blob: https:",
+  "connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com https://www.googletagmanager.com",
+  "frame-src 'self' https://gumroad.com https://*.gumroad.com",
+  "object-src 'none'",
+  "base-uri 'self'",
+  "form-action 'self' https://gumroad.com https://*.gumroad.com",
+].join("; ");
+
 export const HTML_SECURITY_HEADERS: Record<string, string> = {
+  "X-Content-Type-Options": "nosniff",
+  "Content-Security-Policy-Report-Only": CSP_REPORT_ONLY,
   "Referrer-Policy": "strict-origin-when-cross-origin",
   "Permissions-Policy": "camera=(), microphone=(), geolocation=(), payment=(), usb=()",
 };

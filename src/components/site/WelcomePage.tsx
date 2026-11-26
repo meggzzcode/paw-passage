@@ -90,7 +90,8 @@ export function WelcomePage() {
       <p className="pa-kicker">Thank you</p>
       <h1 className="pa-h1">Welcome to the full Passport</h1>
       <p className="pa-sub">
-        Your purchase is confirmed. Everything you have already done together is still here.
+        Your purchase is confirmed, and the Passport is yours to keep. Everything you have already
+        done together is still here.
       </p>
 
       <section className="pa-card" aria-labelledby="wl-unlocked-h">

@@ -100,7 +100,7 @@ export function PurchaseValue({
                 ? `Unlock these ${data.matching} adventures, ${price}`
                 : `See the full Passport, ${price}`}
             </AppLink>
-            <span className="pa-fine">{pricing}</span>
+            <span className="pa-fine">{pricing}, yours to keep</span>
           </>
         )}
       </div>

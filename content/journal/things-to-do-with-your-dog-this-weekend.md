@@ -55,7 +55,7 @@ A lively dog may enjoy two outings; a senior or a nervous dog may be happiest wi
 
 ## When you want the plan made for you
 
-If you would like someone to do the choosing, the Adventure Passport picks one adventure for your dog, free, with time, cost and effort shown before you start. No account, email or card is needed. The Curious Explorer collection is built for fresh-eyed outings close to home. The full Passport is $19.99, one time, and opens a large library for more weekends. A good weekend never requires it.
+If you would like someone to do the choosing, the Adventure Passport picks one adventure for your dog, free, with time, cost and effort shown before you start. No account, email or card is needed. The Curious Explorer collection is built for fresh-eyed outings close to home. The full Passport is $19.99, paid once and yours to keep, and opens a large library for more weekends. A good weekend never requires it.
 
 ## Keep exploring
 

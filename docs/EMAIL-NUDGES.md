@@ -127,7 +127,7 @@ Link: /collections?tab=favorites
 
 **4.** Subject: A peek at the bigger collection
 Preview: Selected previews, no commitment.
-Body: There is a wide library of adventures, and a few selected previews are open for anyone to browse. See what each one involves in a glance: how long, what setting, how active. It's a pleasant way to spend a coffee break, and it's fine to just look.
+Body: There is a wide library of adventures, and a few selected previews are open for anyone to browse. See what each one involves in a glance: how long, what setting, how active. It's a pleasant way to spend a coffee break, and it's fine to just look. And if you ever want the whole library, it's one payment of $19.99, with no subscription, and yours to keep.
 Link: /previews
 
 **5.** Subject: Something to print and keep
@@ -137,7 +137,7 @@ Link: /printables
 
 **6.** Subject: Your passport is here when you want it
 Preview: A home for the adventures you've shared.
-Body: Your passport keeps a quiet record of the adventures you've shared, kept on your own device. Stamps, keepsakes and memories gather there over time. Open it whenever you feel like looking back, or leave it be for a while. It will be just as you left it.
+Body: Your passport keeps a quiet record of the adventures you've shared, kept on your own device. Stamps, keepsakes and memories gather there over time. Open it whenever you feel like looking back, or leave it be for a while. It will be just as you left it. If you have the full Passport, you paid once, so there's nothing to renew.
 Link: /passport
 
 **7.** Subject: An ordinary day, a little different
@@ -167,7 +167,7 @@ Link: /printables
 
 **12.** Subject: A quiet note to close the series
 Preview: Thank you for being part of this.
-Body: This is the last email in this series, and we just wanted to say thank you for spending your time with Paws & Passage. A lifetime of little adventures is built one small moment at a time. Your passport is always there whenever you'd like to add another page.
+Body: This is the last email in this series, and we just wanted to say thank you for spending your time with Paws & Passage. A lifetime of little adventures is built one small moment at a time. Your passport is always there whenever you'd like to add another page, and if you've bought the full Passport, it's yours to keep.
 Link: /passport
 
 ## 7. Owner approvals needed

@@ -6,7 +6,7 @@ import { AccessForm } from "@/components/passport/AccessForms";
 import { track } from "@/passport/events";
 import { checkoutUrl } from "@/lib/passport-api";
 import { collections } from "@/passport/content";
-import { flags, price, pricing, REFUND_SUMMARY, GIFT_CTA } from "@/config/commercial";
+import { flags, GIFT_CTA, KEEP_LINE, price, pricing, REFUND_SUMMARY } from "@/config/commercial";
 import { DemoAdventure } from "@/components/site/DemoAdventure";
 import { TrustStrip } from "@/components/site/TrustStrip";
 import { unlockLine, usePremiumSummary } from "@/lib/premium-summary";
@@ -41,8 +41,9 @@ function Unlock() {
         <p className="pa-sub">
           A digital collection of little adventures for you and your dog, in your browser. Start
           with one free adventure picked for your dog. When you want more, the full Passport opens
-          the whole library for {price}, once.
+          the whole library for {price}, once, and it is yours to keep.
         </p>
+        <p className="pp-fine">{KEEP_LINE}</p>
         <p>{unlockLine(summary)}</p>
         <p className="pp-cta-row">
           <AppLink to="/discover" className="pp-btn pp-btn-primary">

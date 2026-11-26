@@ -57,7 +57,7 @@ Participation is voluntary. If a puppy freezes, hides or turns away, increase di
 
 ## Where the Passport fits
 
-The Adventure Passport includes puppy-friendly adventures in Puppy's First Chapter. Tell us a little about your puppy, and we choose one adventure for free, with the practical details first. No account, email or card. The full Passport is $19.99, one time, and opens a large library. Your puppy's first year does not require it.
+The Adventure Passport includes puppy-friendly adventures in Puppy's First Chapter. Tell us a little about your puppy, and we choose one adventure for free, with the practical details first. No account, email or card. The full Passport is $19.99, one time, yours to keep, and opens a large library. Your puppy's first year does not require it.
 
 ## Keep exploring
 

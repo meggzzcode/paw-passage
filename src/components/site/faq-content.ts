@@ -1,7 +1,14 @@
 // One source for the questions buyers ask. Used by /faq (all of them) and /unlock (a summary).
 // Rules: say only what the product does today. Nothing here promises a feature that is not built, quotes a number we
 // have not verified, or makes a medical or behavior claim. Price comes from the single offer constant.
-import { flags, price, pricing, GIFT_HELP_URL } from "@/config/commercial";
+import {
+  flags,
+  price,
+  pricing,
+  GIFT_HELP_URL,
+  KEEP_LINE,
+  ONE_TIME_LINE,
+} from "@/config/commercial";
 
 export type Faq = { id: string; q: string; a: string; group: "buying" | "dogs" | "privacy" };
 
@@ -16,7 +23,19 @@ const BASE_FAQS: readonly Faq[] = [
     id: "subscription",
     group: "buying",
     q: "Is this a subscription?",
-    a: `No. It is a ${pricing}. There is no renewal, no trial that turns into a charge, and nothing to cancel.`,
+    a: `No. It is a ${pricing}. ${ONE_TIME_LINE} ${KEEP_LINE} There is no trial that turns into a charge and nothing to cancel.`,
+  },
+  {
+    id: "pay-again",
+    group: "buying",
+    q: "Do I pay again later?",
+    a: "No. You pay once and that is the whole price: no renewal and no yearly fee. If we ever publish a new edition as a separate product, we will say so clearly, and your purchase is not affected.",
+  },
+  {
+    id: "keep-access",
+    group: "buying",
+    q: "How long do I keep access?",
+    a: "Your access does not expire and never needs renewing. It is yours to keep on your own devices, and you can restore it with your purchase code. We may add adventures over time, but we do not promise future additions. Access ends only if a purchase is refunded or reversed, as described in our refund policy.",
   },
   {
     id: "digital-not-book",
@@ -164,6 +183,7 @@ export const FAQS: readonly Faq[] = buildFaqs(flags.gifting);
 export const UNLOCK_FAQ_IDS = [
   "what-you-buy",
   "subscription",
+  "keep-access",
   "try-first",
   "spending",
   "multi-dog",

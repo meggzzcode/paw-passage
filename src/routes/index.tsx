@@ -17,7 +17,16 @@ import { DemoAdventure } from "@/components/site/DemoAdventure";
 import { SeasonalPicks } from "@/components/site/SeasonalPicks";
 import { TrustStrip } from "@/components/site/TrustStrip";
 import { PreviewCards } from "@/components/site/PreviewCards";
-import { featured, flags, homePromo, libraryLine, price, pricing } from "@/config/commercial";
+import {
+  featured,
+  flags,
+  homePromo,
+  KEEP_LINE,
+  libraryLine,
+  ONE_TIME_LINE,
+  price,
+  pricing,
+} from "@/config/commercial";
 import { unlockLine, usePremiumSummary } from "@/lib/premium-summary";
 import { usePreviews } from "@/lib/usePreviews";
 import { track } from "@/passport/events";
@@ -298,6 +307,9 @@ function Home() {
               <h3>The full Passport</h3>
               <p className="pp-price-line">
                 <strong>{price}</strong> <span>{pricing}</span>
+              </p>
+              <p className="pp-fine">
+                {ONE_TIME_LINE} {KEEP_LINE}
               </p>
               <ul className="pp-plainlist-dots">
                 <li>The whole library in every collection</li>

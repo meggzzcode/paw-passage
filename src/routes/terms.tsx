@@ -26,7 +26,7 @@ The free Passport works without an account. Your progress is stored on your devi
 
 ## The full Passport: a one-time purchase
 
-The full Passport is a **one-time purchase**. It is not a subscription and does not renew. The price is shown at checkout before you pay. Checkout and payment are handled by our checkout provider, who sends you a license code.
+The full Passport is a **one-time purchase**. It is not a subscription, does not renew and does not expire, so you pay once and it is yours to keep. Refunds and access are covered in our [refund policy](/refund-policy). The price is shown at checkout before you pay. Checkout and payment are handled by our checkout provider, who sends you a license code.
 
 ## What you are buying: the edition
 

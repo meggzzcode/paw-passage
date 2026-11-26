@@ -55,7 +55,7 @@ Some seniors still love an adventure; others like a warm patch of sun. Both are 
 
 ## Where the Passport fits
 
-The Adventure Passport includes gentle adventures in The Golden Years collection. Tell us a little about your dog, and we choose one adventure for free, with effort and time shown first. No account, email or card. The full Passport is $19.99, one time, and opens a large library of adventures. Your dog's good days do not depend on it.
+The Adventure Passport includes gentle adventures in The Golden Years collection. Tell us a little about your dog, and we choose one adventure for free, with effort and time shown first. No account, email or card. The full Passport is $19.99, pay once and keep it, and opens a large library of adventures. Your dog's good days do not depend on it.
 
 ## Keep exploring
 

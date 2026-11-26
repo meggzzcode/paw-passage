@@ -55,7 +55,7 @@ Dogs who are cautious, older or very young may need quieter versions. Give your 
 
 ## Where the Passport fits
 
-The Adventure Passport includes outdoor and family-friendly adventures. Tell us a little about your dog, and we choose one adventure for free, with effort, time and cost shown first. No account, email or card. The Great Outdoors is the collection for parks and yards. The full Passport is $19.99, one time, with a large library of adventures. A happy family day does not require it.
+The Adventure Passport includes outdoor and family-friendly adventures. Tell us a little about your dog, and we choose one adventure for free, with effort, time and cost shown first. No account, email or card. The Great Outdoors is the collection for parks and yards. The full Passport is $19.99, one time and yours to keep, with a large library of adventures. A happy family day does not require it.
 
 ## Keep exploring
 

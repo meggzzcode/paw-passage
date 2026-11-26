@@ -55,7 +55,7 @@ function copyFor(where: string, count?: number): { lead: string; line: string } 
     default:
       return {
         lead: "Ready for more little adventures?",
-        line: "The full Passport is one payment, and there is no subscription.",
+        line: "The full Passport is one payment, yours to keep, with no subscription.",
       };
   }
 }

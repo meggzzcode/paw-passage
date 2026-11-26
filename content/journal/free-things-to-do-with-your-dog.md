@@ -61,7 +61,7 @@ A cautious dog may prefer porch time to a new route. A senior may love a slow sn
 
 ## Where the Passport fits
 
-The Adventure Passport includes a large number of adventures that are free to do, meaning they need no spending to complete. Free to do is not the same as free access. You can try one personalized adventure free, with no account, email or card, and the full Passport is $19.99, one time. Adventures Without Spending is the collection built around no-cost days. You never need to pay to enjoy your dog.
+The Adventure Passport includes a large number of adventures that are free to do, meaning they need no spending to complete. Free to do is not the same as free access. You can try one personalized adventure free, with no account, email or card, and the full Passport is $19.99, one time, with no subscription and no expiry. Adventures Without Spending is the collection built around no-cost days. You never need to pay to enjoy your dog.
 
 ## Keep exploring
 

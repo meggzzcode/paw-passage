@@ -92,9 +92,9 @@ describe("things-to-do hub and removed landing pages", () => {
 });
 
 describe("faq", () => {
-  it("answers all twenty-three questions (no gift question while gifting is off), with unique ids", () => {
-    expect(FAQS).toHaveLength(23);
-    expect(new Set(FAQS.map((f) => f.id)).size).toBe(23);
+  it("answers all twenty-five questions (no gift question while gifting is off), with unique ids", () => {
+    expect(FAQS).toHaveLength(25);
+    expect(new Set(FAQS.map((f) => f.id)).size).toBe(25);
     const all = FAQS.map((f) => `${f.q} ${f.a}`).join(" ");
     for (const w of [
       "subscription",

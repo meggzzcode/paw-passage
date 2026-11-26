@@ -55,7 +55,7 @@ A lively dog may want a second short game later in the day, while a senior may p
 
 ## When you want a plan
 
-The Adventure Passport pairs your dog's needs with an adventure that fits the weather. Tell us a little about your dog, and we pick one adventure for free, with time, cost and effort shown first. No account, email or card is needed. Rainy Day Club is the collection for exactly this kind of day. The full Passport is $19.99, one time. It is a large library for when you want more, never a requirement for a good rainy afternoon.
+The Adventure Passport pairs your dog's needs with an adventure that fits the weather. Tell us a little about your dog, and we pick one adventure for free, with time, cost and effort shown first. No account, email or card is needed. Rainy Day Club is the collection for exactly this kind of day. The full Passport is $19.99, one time, yours to keep. It is a large library for when you want more, never a requirement for a good rainy afternoon.
 
 ## Keep exploring
 

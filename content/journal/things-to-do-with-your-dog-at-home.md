@@ -55,7 +55,7 @@ A young dog may want movement, while a senior may prefer a slow sniff and a nap.
 
 ## When you want the planning done
 
-If deciding is the hard part, the Adventure Passport does it for you. Tell us a little about your dog, and we choose one adventure for you, free, with the practical details shown first. There is no account, email or card for that first one. Home Sweet Home is the collection built around the rooms your dog already knows. The full Passport is $19.99, one time, and unlocks a large library of adventures. You never need it to enjoy your dog, but if you like having ideas ready, it is there.
+If deciding is the hard part, the Adventure Passport does it for you. Tell us a little about your dog, and we choose one adventure for you, free, with the practical details shown first. There is no account, email or card for that first one. Home Sweet Home is the collection built around the rooms your dog already knows. The full Passport is $19.99, pay once and keep it, with no renewals, and unlocks a large library of adventures. You never need it to enjoy your dog, but if you like having ideas ready, it is there.
 
 ## Keep exploring
 

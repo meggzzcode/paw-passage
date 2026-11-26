@@ -34,7 +34,7 @@ const COPY: Record<KeepsakeUnlockWhere, { lead: string; line: string }> = {
   },
   card: {
     lead: "Keepsakes made from your photo are part of the full Passport.",
-    line: `Here is what this style looks like (${price}, once, no subscription).`,
+    line: `Here is what this style looks like (${price}, once, yours to keep).`,
   },
 };
 

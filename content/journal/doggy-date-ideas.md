@@ -57,7 +57,7 @@ A senior dog may love a bench and a slow sniff; a young dog may want more to do.
 
 ## When you want a theme and a plan
 
-The Adventure Passport creates a date for two: tell us a little about your dog, and we pick one adventure for free, with the details up front. No account, email or card. Doggy Date Club is the collection of themed outings made for this. The full Passport is $19.99, one time, and opens a large library of dates and other adventures, though a good date never needs one.
+The Adventure Passport creates a date for two: tell us a little about your dog, and we pick one adventure for free, with the details up front. No account, email or card. Doggy Date Club is the collection of themed outings made for this. The full Passport is $19.99, paid once with no renewals, and opens a large library of dates and other adventures, though a good date never needs one.
 
 ## Keep exploring
 

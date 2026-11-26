@@ -55,7 +55,7 @@ Not every energetic dog wants the same thing. A scent-lover may prefer a search 
 
 ## Where the Passport fits
 
-The Adventure Passport includes games and puzzles in The Playful Pup collection. Tell us a little about your dog, and we choose one adventure for free, with effort and time shown first. No account, email or card. The full Passport is $19.99, one time, and opens a large library. Your dog does not need it to have a good day.
+The Adventure Passport includes games and puzzles in The Playful Pup collection. Tell us a little about your dog, and we choose one adventure for free, with effort and time shown first. No account, email or card. The full Passport is $19.99, one time, yours to keep, and opens a large library. Your dog does not need it to have a good day.
 
 ## Keep exploring
 

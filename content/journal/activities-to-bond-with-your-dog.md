@@ -55,7 +55,7 @@ A new dog may need days or weeks of low-key company before they are ready for mo
 
 ## When you want ideas ready
 
-The Adventure Passport gives you a shared project each time. Tell us a little about your dog, and we choose one adventure, free, with practical details first. No account, email or card is needed. Creative Companions is the collection for making something together. The full Passport is $19.99, one time, with a large library of adventures. You never need it to love your dog well.
+The Adventure Passport gives you a shared project each time. Tell us a little about your dog, and we choose one adventure, free, with practical details first. No account, email or card is needed. Creative Companions is the collection for making something together. The full Passport is $19.99, pay once and it is yours to keep, with a large library of adventures. You never need it to love your dog well.
 
 ## Keep exploring
 

@@ -12,6 +12,13 @@ export const price = offer.price;
 export const pricing = offer.pricing;
 /** The one-line promise repeated near purchase prompts. */
 export const ONE_PAYMENT_LINE = "One-time purchase, no subscription, no account.";
+/** The pay-once promise, in one sentence. Pages use this instead of retyping it. */
+export const ONE_TIME_LINE = `One payment of ${price}. Yours to keep.`;
+/**
+ * What "pay once" means in practice. It does not promise unlimited future content or that the service never changes:
+ * refunds and revocation still follow the refund policy, and any adventures we add later are a bonus, not a promise.
+ */
+export const KEEP_LINE = "No subscription. No renewals. Your Passport does not expire.";
 
 /**
  * Feature flags for what the pages may MENTION. A flag is false until the feature is shipped and verified, so the
@@ -67,7 +74,7 @@ export const homePromo = {
   eyebrow: "Digital adventures for you and your dog",
   titleLead: "Life is better with a little",
   titleEm: "adventure",
-  lede: "Five-minute games at home, doggy dates, weekend adventures. A personalized library of little adventures for you and your dog, with a free first adventure picked just for them.",
+  lede: "Five-minute games at home, doggy dates, weekend adventures. A personalized library of little adventures for you and your dog, with a free first adventure picked just for them. Pay once, and the full Passport is yours to keep.",
   points: [
     "One free adventure to start",
     "Personalized to your dog",
@@ -201,7 +208,7 @@ export const DEMO_STEPS: readonly DemoStep[] = [
 /** The trust points repeated on the homepage, /unlock and /faq. Plain statements of what the product does today. */
 export const TRUST_POINTS: readonly { id: string; text: string }[] = [
   { id: "digital", text: "Digital: nothing ships, and you use it in your browser" },
-  { id: "one-time", text: `One payment of ${price}, no subscription` },
+  { id: "one-time", text: `One payment of ${price}, no subscription. Yours to keep.` },
   { id: "no-extra", text: "Many adventures cost nothing extra to do" },
   { id: "dogs", text: "Picks adapt to your dog and to you" },
   { id: "photos", text: "Photos stay on your device, always" },

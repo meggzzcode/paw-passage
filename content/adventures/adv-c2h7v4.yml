@@ -6,7 +6,7 @@ reveal: "Your dog is the art director today. Build three tiny photo sets, each w
 objective: "Let your dog scout three tiny sets, find the scent surprise hidden in each, take relaxed portraits where they settle and choose one for a magazine cover."
 instructions:
   - "Build three small sets in soft indirect light, away from busy walkways: a bed or blanket by the window, a folded towel and cushion in a quiet corner, and a different rug or throw in a third spot. Tuck a different small scent surprise under a fold of each, too big to swallow and never food: a worn T-shirt of yours, a clean cloth that has dried in the sun, and your dog's own blanket. Turn the flash off and the shutter sound down."
-  - "Open the scouting: walk your dog to the first set, then the second, then the third, with a slack lead or no lead indoors. Let them sniff and nose out the surprise at each for as long as they like, and move on when they do. Do not call them, point or place them."
+  - "Open the scouting: with a slack lead or no lead indoors, stand back and let your dog wander to the sets at their own pace, in any order. They can sniff and nose out the surprise at each for as long as they like and skip any set. Do not call them, point or place them."
   - "Watch where they choose to settle, or where they linger longest. That set is the location. If they ignore all three, the cover is a candid of whatever they do instead, and that counts."
   - "Sit or lie low at their eye level a couple of steps back and take photos over about ten minutes while they relax, sniff, stretch or watch the window. If they bring a favourite toy to the set, that is the cover prop, since the art director chooses the props too. A soft word is allowed if they enjoy it."
   - "Pick three frames where their eyes, ears or whiskers look most like them and choose one as the cover. Give it a magazine name, a silly headline and one line about the exclusive inside."
@@ -31,6 +31,7 @@ supplies:
   - Blanket or bed
   - Towel, cushion or throw
   - A worn T-shirt
+  - A clean cloth
 optionalSupplies: []
 requires:
   - camera-phone
@@ -91,7 +92,7 @@ keepsake:
   subhead: Exclusive portrait. No flash
   explainer: "Cover shoot: three sets, one very picky art director"
 access: free
-status: draft
+status: published
 relatedGuides: []
 affiliateProducts: []
 research:
@@ -99,9 +100,9 @@ research:
     url: https://www.dogstrust.org.uk/dog-advice/life-with-your-dog/enrichment/enrichment-activities-for-dogs
 review:
   ownerAppeal: 8
-  dogEnjoyment: 7
-  originality: 6
+  dogEnjoyment: 6
+  originality: 7
   adventureFactor: 6
-  practicality: 9
+  practicality: 8
   memoryValue: 8
   reviewedOn: 2026-11-26

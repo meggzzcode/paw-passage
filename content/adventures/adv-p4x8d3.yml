@@ -1,54 +1,50 @@
 schema: 2
 id: adv-p4x8d3
 title: The Little Picnic Club
-clue: "A blanket, a menu of mysteries and a guest who orders with their nose."
-reveal: "Hold a small picnic where the menu is made of smells. Set out three scent courses on a blanket, let your dog choose the dish of the day by where they linger, then reveal the chef's surprise hidden under a napkin and close the club with a toast."
-objective: "Lay out a three-course scent menu on a blanket, let your dog choose the dish of the day, find the chef's surprise and toast the club."
+clue: "A ten-minute trail, three courses at three stops and a guest who orders with their nose."
+reveal: "Take a tiny picnic trail near home where the menu is made of smells. Your dog visits three stops on a ten-minute loop, each with one scent course, and chooses the dish of the day by where they linger. The loop ends on the picnic blanket with a chef's surprise under a napkin and a toast."
+objective: "Walk a ten-minute loop with a scent course at each of three stops, let your dog choose the dish of the day, find the chef's surprise on the blanket and toast the club."
 instructions:
-  - "Choose a quiet spot where your dog is already relaxed: your yard, a patio, a balcony or a corner of the living room. Check the ground for hot surfaces, sharp bits and plants."
-  - "Write the scent menu on a card: three courses, each a smell that is safe and too big to swallow. For example a large fallen leaf from outside, a clean cloth that has been near the kitchen window, and a T-shirt you have worn. Lay each course on its own corner of the blanket with space between them. Hide the chef's surprise, one favourite toy, under a folded napkin or small towel in the fourth corner."
-  - "Let your dog arrive in their own time and take the menu in any order. Do not point or lead. They can sniff, skip a course or leave the blanket, and the picnic works every way."
-  - "Watch for the dish of the day: the course they linger over longest. Put the other two away and give the winner the middle of the blanket. Sit down on the far side with your own snack, out of reach of your dog's nose."
+  - "Plan a flat loop at home that takes about ten minutes with plenty of sniffing: round your yard or patio, along a balcony, or along a hallway and through two rooms. Check the ground for hot surfaces, sharp bits and plants. The last stop is the picnic blanket."
+  - "Write the scent menu on a card: Starter, Main and Dessert. Each course is a smell, laid flat and too big to swallow, at its own stop: a clean cloth that has sat on the windowsill all morning, a T-shirt you have worn and a corner of your dog's own blanket. Leave a little space around each. Hide the chef's surprise, one favourite toy, under a folded napkin or small towel on the picnic blanket."
+  - "Set off on a slack lead, or no lead indoors. At each stop let your dog arrive in their own time and take the course in any order or skip it. Do not point or lead. They can sniff, move on or leave, and the picnic works every way."
+  - "Watch for the dish of the day: the stop where they linger longest. Gather up that course on the way to the blanket and put the other two away."
+  - "At the picnic blanket, lay the winning course in the middle, sit down on the far side with your cup and let your dog take the blanket in their own time."
   - "Serve the chef's surprise: when your dog has finished with the dish of the day, nudge the napkin corner so the toy peeks out, then sit back and let them uncover it, carry it off or play."
   - "Close the club with a toast: clink your cup against the rim of their water bowl, say the club name once and name the dish of the day out loud as the winner. Let your dog have the blanket for the rest of the picnic."
-twist: "The picnic menu is made of smells, not food: your dog orders the dish of the day with their nose, a chef's surprise waits under a napkin, and the toast goes to the winning dish."
+twist: "The picnic is a journey made of smells, not food: your dog orders the dish of the day with their nose along a ten-minute trail, a chef's surprise waits under a napkin at the end and the toast goes to the winning dish."
 variations:
-  - "Rain version: lay the blanket on the living-room floor and open a window."
+  - "Rain version: run the trail along the hallway and through two rooms, and finish on the living-room floor with a window open."
   - "For a nervous dog: use your own yard or balcony, offer only one course and keep it to ten minutes."
-  - "For a lively dog: add a fourth scent course and tuck the surprise toy a little deeper in its napkin."
-  - "For limited mobility: picnic from a chair on a porch or patio with the blanket beside you and the courses within a few steps."
-completion: "Your dog has chosen a dish of the day, found the chef's surprise and you have toasted the club."
-photoIdea: "Your dog investigating the scent menu on the blanket, taken from their eye level."
-memoryPrompt: "Which course did your dog choose as the dish of the day, and what did they do with the surprise?"
-minutesMin: 45
-minutesMax: 90
-activeMinutes: 20
+  - "For a lively dog: add a fourth stop and tuck the surprise toy a little deeper in its napkin."
+  - "For limited mobility: shorten the loop to three stops within a few steps of a chair, and picnic from the chair with the blanket beside you."
+completion: "Your dog has visited the stops they liked, chosen a dish of the day, found the chef's surprise and you have toasted the club."
+photoIdea: "Your dog investigating the scent menu at one of the stops, taken from their eye level."
+memoryPrompt: "Which stop did your dog choose as the dish of the day, and what did they do with the surprise?"
+minutesMin: 30
+minutesMax: 60
+activeMinutes: 25
 costMin: 0
-costMax: 20
+costMax: 5
 prep: light
 supplies:
   - "Blanket"
   - "Water bowl and fresh water"
-  - "Your own snack and cup"
+  - "A cup for your own drink"
   - "A card or paper for the menu"
   - "A napkin or small towel"
-  - "A large leaf, a clean cloth and a worn T-shirt for the scent menu"
+  - "A clean cloth, a worn T-shirt and a corner of your dog's blanket for the scent menu"
+  - "One favourite toy for the chef's surprise"
 optionalSupplies:
   - Shade umbrella
   - Folding chair
-  - Picnic basket
-requires:
-  - blanket
-  - picnic-gear
-  - household-items
-  - paper-and-pens
 substitutes:
   - No picnic blanket? A bed sheet or a large towel works.
-  - No basket? A tote bag will do.
+  - No yard or balcony? Use a hallway and one or two rooms.
 transport: none
 reservation:
   needed: false
-setting: outdoor
+setting: either
 homes:
   - apartment
   - house-no-yard
@@ -56,8 +52,6 @@ homes:
 space: none
 places:
   - home
-  - city
-  - countryside
 seasons:
   - spring
   - summer
@@ -77,7 +71,7 @@ sizes: []
 energy: gentle
 dogMobility: low
 ownerMobility: minimal-walking
-stepFree: false
+stepFree: true
 crowd: none
 strangers: false
 otherDogs: false
@@ -86,10 +80,11 @@ food: false
 water: none
 safety:
   - "Check the ground and sun first: too hot for your hand is too hot for paws."
-  - Keep your own food out of reach, and pick scent courses too big to swallow.
+  - Use only sniff-safe items too big to swallow, and take away anything your dog chews.
   - "Puppies: ask your vet before public outings, and stay in your own yard until then."
 activityTypes:
   - relaxation
+  - scent-and-discovery
   - memory-making
 collections:
   - doggy-date-club
@@ -105,7 +100,7 @@ keepsake:
   theme: picnic-postcard
   headline: GREETINGS FROM THE PICNIC
   subhead: A party for two. Wish you were here
-  explainer: "Picnic for two, menu ordered entirely by nose"
+  explainer: "Picnic trail for two, menu ordered entirely by nose"
 access: free
 status: draft
 relatedGuides: []
@@ -114,10 +109,10 @@ research:
   - label: "Dogs Trust: enrichment activities for dogs"
     url: https://www.dogstrust.org.uk/dog-advice/life-with-your-dog/enrichment/enrichment-activities-for-dogs
 review:
-  ownerAppeal: 8
+  ownerAppeal: 7
   dogEnjoyment: 7
   originality: 6
   adventureFactor: 7
-  practicality: 8
-  memoryValue: 8
+  practicality: 7
+  memoryValue: 7
   reviewedOn: 2026-11-26

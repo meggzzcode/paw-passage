@@ -1,39 +1,39 @@
 schema: 2
 id: adv-r6j3b8
 title: The Sunrise Breakfast Club
-clue: "The world is quiet, the sky is changing colour and someone has left the morning paper under the blanket."
-reveal: "Start the day with a dawn nose-round of a small patch near home, with your dog choosing which way to read the morning news. A rolled-up paper that smells of you and a favourite toy wait under the blanket at the club spot, and your dog decides which one is today's headline."
-objective: "Take a short dog-led sniff round at dawn, let your dog find the paper and the toy waiting at the club spot, and watch the sunrise from there."
+clue: "The world is quiet, the sky is changing colour and the morning paper is rolled up under the blanket."
+reveal: "Start the day with a dog-led nose-round of the first-light smells near your door. Back at the club spot, a rolled worn T-shirt (the Morning Paper) and a favourite toy wait under the blanket, and your dog picks the headline. At noon, their favourite stop gets a second look."
+objective: "Take a short dog-led sniff round in the first light, let your dog find the paper and the toy at the club spot, and compare their favourite stop at dawn and at noon."
 instructions:
-  - "The evening before, check tomorrow's sunrise time, set an alarm forty minutes earlier and pick a comfortable club spot you can reach easily: a window seat, balcony, doorstep or yard edge. Roll a worn T-shirt or sock into a loose bundle, the morning paper, and tuck it under a folded corner of a blanket there beside one of your dog's favourite toys, both partly showing."
-  - "In the morning, take your dog out on a leash or into an enclosed space for the morning round: three short stops within sight of home, such as the doorstep, the nearest tree and the garden edge. Stand still and let your dog choose which stop to read first and how long to stay. That is the morning news."
+  - "The evening before, pick a club spot a few steps from your door that you can reach easily: a doorstep, balcony, yard edge or window seat. Roll a worn T-shirt loosely into a bundle: this bundle is the Morning Paper. Sunrise itself is optional. If you want to watch it, check tomorrow's sunrise time and set an alarm forty minutes earlier; otherwise any time in your dog's first hour of the morning works."
+  - "In the morning, lay a blanket at the club spot and tuck the Morning Paper under a folded corner, beside one of your dog's favourite toys, both partly showing."
+  - "Take your dog out on a lead, or into an enclosed space, for the morning round: three short stops within sight of home, such as the doorstep, the nearest tree and the garden edge. Stand still and let your dog choose which stop to read first and how long to stay. The stop where they stay longest is the Dew Post. If another dog appears, step back indoors."
   - "Follow their nose rather than leading it. If they stop to sniff, wait. If they want to go home early, go home early."
-  - "Walk to the club spot together. Let your dog find what is under the blanket in their own time and choose: the paper, the toy or neither. Whichever they pick first is today's headline."
-  - "Settle in with your warm drink and put the phone away. It comes out once, for the single sunrise photo. Sit quietly while your dog has the morning, and name three things you can see, hear or smell, taking turns in a low voice."
-  - "Close the club with the front-page ritual: say the headline aloud once, such as Toy Beats Paper, Again, leave both on the blanket for your dog to keep for the rest of the morning, and take your one photo as the light comes up."
-twist: "Your dog reads the morning news first with their nose, picking the stops, and then picks the front page from the paper and the toy waiting under the blanket."
+  - "Walk to the club spot together. Let your dog find what is under the blanket in their own time and choose: the paper, the toy or neither. Whichever they pick first is today's headline. Take the bundle away if your dog chews it."
+  - "Settle in with your warm drink and put the phone away. It comes out once, for the single sunrise or morning-sky photo. Sit quietly while your dog has the morning, and name three things you can see, hear or smell, taking turns in a low voice."
+  - "Noon check: around midday, or any time later that day, visit the Dew Post again on a lead for a minute and see if your dog reads it the same way. Close the club with the front-page ritual: say both headlines aloud, such as Toy Beats Paper, Again, and Long Read at Dawn, Quick Glance at Noon, and leave the toy and the bundle on the blanket for your dog to keep until you tidy up."
+twist: "Your dog reads the morning news first with their nose, picks the front page from the paper and the toy, and then you find out whether the Dew Post smells the same at noon as it did at first light."
 variations:
   - "From bed or the sofa: open a window, hide the paper and toy under the blanket beside you and skip the outdoor round."
-  - "Away from home: only at a spot where your dog is already comfortable, and keep well back from water edges and drops."
   - "For a dog who sleeps in: skip the sunrise and hold the club at the first sunny spot of the morning."
   - "For limited mobility: make it one stop, a few steps from the door, and sit for the rest."
-completion: "Your dog has read the morning news, chosen the headline and you have watched the sky change and taken your one photo."
+  - "Sunrise chaser, optional: set the alarm and hold the club at the actual sunrise, still on your doorstep or balcony."
+completion: "Your dog has read the morning round, chosen the headline and you have taken your one photo. Skipping the noon check or ending early still counts."
 photoIdea: "One photo of the sky, and if the light allows, your dog's silhouette with their toy."
-memoryPrompt: "Which stop did your dog read first, what was the headline and what colour was the sky?"
+memoryPrompt: "Which stop did your dog read first, what was the headline and was the Dew Post the same at noon?"
 minutesMin: 30
 minutesMax: 60
 activeMinutes: 20
 costMin: 0
-costMax: 10
+costMax: 0
 prep: light
 supplies:
   - "Blanket"
   - "A warm drink for you"
   - "Phone for one photo"
   - "One favourite toy of your dog's"
-  - "A worn T-shirt or sock to roll into the paper"
+  - "A worn T-shirt, rolled loosely, to be the Morning Paper"
 optionalSupplies:
-  - Breakfast pastry for you from a bakery
   - Thermos
 requires:
   - blanket
@@ -54,8 +54,6 @@ homes:
 space: none
 places:
   - home
-  - city
-  - countryside
 seasons: []
 avoidWeather:
   - rain
@@ -81,8 +79,8 @@ food: false
 water: none
 safety:
   - Check the cold before heading out, and add a blanket if it is chilly.
-  - Dawn is peak wildlife time, so use a leash or an enclosed space.
-  - "Puppies: ask your vet before public outings, and stay in your own yard until then."
+  - "Dawn is peak wildlife time: use a lead or an enclosed space, and step back indoors if another dog appears."
+  - "Puppies: ask your vet before public outings; take the bundle away if your dog chews it."
 activityTypes:
   - relaxation
   - photography
@@ -112,9 +110,9 @@ research:
     url: https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/senior-dog-enrichment
 review:
   ownerAppeal: 7
-  dogEnjoyment: 7
+  dogEnjoyment: 6
   originality: 6
   adventureFactor: 7
   practicality: 7
-  memoryValue: 8
+  memoryValue: 7
   reviewedOn: 2026-11-26

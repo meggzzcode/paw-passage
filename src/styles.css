@@ -8,6 +8,7 @@
 @import "./design/keepsake.css";
 @import "./design/commercial.css";
 @import "./design/notifications.css";
+@import "./design/everyday.css";
 
 @custom-variant dark (&:is(.dark *));
 

@@ -1,4 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import picnicImg from "@/assets/everyday/picnic.jpg";
+import dateImg from "@/assets/everyday/date.jpg";
+import puppyImg from "@/assets/everyday/puppy.jpg";
 import { PawPrint } from "lucide-react";
 import { Button } from "@/components/shell/Button";
 import { AppLink } from "@/components/shell/AppLink";
@@ -106,23 +109,32 @@ function Home() {
                 .
               </p>
             </div>
-            <figure className="pp-hero-art">
-              <img
-                src="/examples/postcard.webp"
-                alt="An example postcard keepsake with a sample illustrated dog named Biscuit"
-                width={560}
-                height={560}
-              />
-              <figcaption>
-                An example keepsake style (sample art). Making your own is part of the full
-                Passport.
-              </figcaption>
-            </figure>
+            <div>
+              <div className="pp-collage" aria-hidden="true">
+                <figure className="pp-polaroid" style={{ width: "58%", height: "78%", left: "4%", top: "4%", rotate: "-5deg" }}>
+                  <span className="pp-tape" />
+                  <img src={picnicImg} alt="" width={1024} height={1280} />
+                  <span>picnic day</span>
+                </figure>
+                <figure className="pp-polaroid" style={{ width: "44%", height: "46%", right: "2%", top: "0%", rotate: "6deg" }}>
+                  <img src={dateImg} alt="" width={1024} height={1024} loading="lazy" />
+                  <span>coffee date</span>
+                </figure>
+                <figure className="pp-polaroid" style={{ width: "42%", height: "44%", right: "6%", bottom: "0%", rotate: "-3deg" }}>
+                  <img src={puppyImg} alt="" width={1024} height={1024} loading="lazy" />
+                  <span>first puddle!</span>
+                </figure>
+                <div className="pp-sticker">Little<br />moments.<br />Big<br />memories.</div>
+              </div>
+              <p className="pp-collage-note">Illustrative images, not customers.</p>
+            </div>
           </div>
         </Container>
       </section>
 
-      <div className="pp-perf" aria-hidden="true" />
+      <div className="pp-marquee" aria-hidden="true">
+        <div>{Array(2).fill("Your favorite little sidekick ✿ Let’s make a date ✿ Collect adventures, not just things ✿ Made for the two of you ✿ ").join("")}</div>
+      </div>
 
       <section className="pp-section" aria-labelledby="demo-h">
         <Container>

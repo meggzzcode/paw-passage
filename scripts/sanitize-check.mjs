@@ -61,7 +61,7 @@ export function scanText(text, extra = []) {
   ]);
   lines.forEach((line, idx) => {
     // the name of the workflow document is public and legitimately contains the first marker's words
-    const low = line.toLowerCase().replaceAll(j("premium-content", "-workflow"), "");
+    const low = line.toLowerCase().replaceAll(j("premium", "-content", "-workflow"), "");
     for (const [name, m] of markers) if (low.includes(m)) hits.push({ line: idx + 1, kind: name });
     for (const [name, re] of SECRET_PATTERNS)
       if (re.test(line)) hits.push({ line: idx + 1, kind: `secret: ${name}` });

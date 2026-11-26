@@ -3,6 +3,14 @@
 Status: proposal for owner approval. Nothing here is built. Not legal advice.
 Research date: 2026-11-26. "UNVERIFIED" means I could not read it on the vendor's own page.
 
+## Owner decisions (2026-11-26)
+
+- Email nudges go to BUYERS only, through Gumroad. No visitor signup form, no email platform, no list of our own, so no postal address is needed on our side.
+- Free visitors have no login and no email collection. A login exists only after purchase (license key and session).
+- The 12-email length is our own design, not a Gumroad limit. Gumroad's help center says each workflow email is scheduled hours, days, weeks or months after the trigger; no maximum was found (UNVERIFIED: check the workflow screen). A longer series, or occasional one-off updates sent to all customers, is possible.
+- PWA and push reminders are paused (`PWA_ENABLED = false`). Revisit only if installs can be counted in aggregate (the install and notification events already exist).
+- Open checks before relying on it: Gumroad may limit sending until the seller has $100 net earnings and a payout (sources conflict); send a test workflow email to yourself and read the footer and unsubscribe link.
+
 ## 1. What Gumroad can do itself
 
 Gumroad's own help pages (gumroad.com/help/article/...) returned only page titles to my fetch tool, so everything about Gumroad below comes from search summaries and a third-party article. Treat it as UNVERIFIED until the owner confirms it in the dashboard.

@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { BRAND } from "@/config/brand";
 import { Container } from "@/components/shell/Container";
 import { StoryTimeline } from "@/components/passport/StoryTimeline";
 import { SyncStatus } from "@/components/passport/SyncStatus";
@@ -23,6 +24,7 @@ function OurStory() {
       <div className="pa-page">
         <p className="pa-kicker">Our Story</p>
         <h1 className="pa-h1">{profile.name ? `${profile.name}'s story` : "Our story so far"}</h1>
+        <p className="pa-sub">{BRAND.ourStory}</p>
         {ready && <SyncStatus />}
         {ready ? <StoryTimeline /> : <div aria-busy="true" />}
       </div>

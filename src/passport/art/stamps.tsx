@@ -38,7 +38,7 @@ export const STAMP_LABELS: Record<StampSlug, string> = {
 
 const PAPER = "#fbf6ea";
 const FAINT = "#9a9486";
-const SERIF = 'Georgia, "Times New Roman", serif';
+const SERIF = '"Bricolage Grotesque", Georgia, "Times New Roman", serif';
 
 // ------------------------------------------------------------------ outlines (viewBox 0 0 120 120)
 
@@ -307,18 +307,18 @@ const ART: Record<StampSlug, Art> = {
 };
 
 const INKS: Record<StampSlug, Inks> = {
-  "first-adventure": { a: "#b4412f", b: "#2f5d62" },
+  "first-adventure": { a: "#c8343f", b: "#4f8a5b" },
   "cozy-companion": { a: "#8a4f3a", b: "#c9786a" },
   "beach-explorer": { a: "#2c6e8a", b: "#d19a3a" },
   "trail-blazer": { a: "#2f5f3a", b: "#8a5a2b" },
-  "city-explorer": { a: "#2b3a4a", b: "#b4412f" },
-  "playtime-champion": { a: "#b4412f", b: "#2b5c8a" },
-  "road-tripper": { a: "#2f5d62", b: "#b4412f" },
+  "city-explorer": { a: "#43352e", b: "#c8343f" },
+  "playtime-champion": { a: "#c8343f", b: "#2b5c8a" },
+  "road-tripper": { a: "#4f8a5b", b: "#c8343f" },
   "night-owl": { a: "#3d3a7a", b: "#c9962c" },
-  "sunshine-seeker": { a: "#c47a14", b: "#b4412f" },
+  "sunshine-seeker": { a: "#c47a14", b: "#c8343f" },
   "memory-maker": { a: "#6a3f7a", b: "#c9786a" },
   "seasonal-explorer": { a: "#8a4b1f", b: "#2c6e8a" },
-  "adventure-legend": { a: "#a9822c", b: "#7a2a2a" },
+  "adventure-legend": { a: "#b08a24", b: "#7a2a2a" },
 };
 
 // ------------------------------------------------------------------ component

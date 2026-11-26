@@ -339,6 +339,16 @@ describe("the free flow stays free, static and offline", () => {
       );
     }
   });
+  it("the decorative reveal foil canvas never touches photos: it paints a gradient and erases it, nothing else", () => {
+    // RevealFoil is Lovable's scratch look. The ban above is about photo/editor features; the foil is aria-hidden and cannot read,
+    // export or upload anything.
+    const t = src("RevealFoil.tsx");
+    expect(t).toContain('aria-hidden="true"');
+    expect(t).not.toMatch(
+      /type=["']file["']|getUserMedia|capture=|PhotoEditor|createObjectURL|drawImage|getImageData|toBlob|toDataURL|fetch\(|XMLHttpRequest|sendBeacon/,
+    );
+    expect(src("RevealSurface.tsx")).toContain("RevealFoil");
+  });
   it("the quiz and starter modules make no network call and ask for no account, email or card", () => {
     for (const f of [
       "src/passport/quiz.ts",

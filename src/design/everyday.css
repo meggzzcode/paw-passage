@@ -1,0 +1,843 @@
+/* Everyday Magic homepage pieces: polaroid collage and marquee strip. Uses --pp-* tokens. */
+.pp-collage {
+  position: relative;
+  height: 32rem;
+}
+@media (max-width: 640px) {
+  .pp-collage {
+    height: 24rem;
+  }
+}
+.pp-polaroid {
+  position: absolute;
+  margin: 0;
+  background: var(--pp-card);
+  padding: 0.6rem 0.6rem 2.4rem;
+  border-radius: 6px;
+  box-shadow: var(--pp-shadow);
+}
+.pp-polaroid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 3px;
+}
+.pp-polaroid span {
+  position: absolute;
+  bottom: 0.35rem;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-family: var(--font-hand);
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: var(--pp-ink);
+}
+.pp-tape {
+  position: absolute;
+  width: 5.5rem;
+  height: 1.6rem;
+  background: color-mix(in oklab, var(--pp-ochre) 75%, transparent);
+  top: -0.7rem;
+  left: 50%;
+  translate: -50% 0;
+  rotate: -4deg;
+}
+.pp-sticker {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  border-radius: 999px;
+  background: var(--pp-ochre);
+  color: var(--pp-ink);
+  font: 700 1rem/1 var(--font-display);
+  width: 7.5rem;
+  height: 7.5rem;
+  left: 44%;
+  top: 52%;
+  rotate: 12deg;
+}
+.pp-collage-note {
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  color: var(--pp-muted);
+  text-align: center;
+}
+.pp-marquee {
+  background: var(--pp-ink);
+  color: var(--pp-ochre);
+  padding: 0.9rem 0;
+  white-space: nowrap;
+  overflow: hidden;
+  font: 700 1.35rem/1.2 var(--font-display);
+}
+.pp-marquee > div {
+  display: inline-block;
+  animation: pp-scroll 40s linear infinite;
+}
+@keyframes pp-scroll {
+  to {
+    transform: translateX(-50%);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pp-marquee > div {
+    animation: none;
+  }
+}
+/* Pill buttons with a soft lift instead of hard offset shadows. */
+html .pp-btn {
+  border-radius: 999px;
+  border-color: transparent;
+  box-shadow: none;
+}
+html .pp-btn-secondary,
+html .pp-btn-ghost {
+  border-color: var(--pp-hairline);
+}
+html .pp-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--pp-shadow);
+}
+html .pp-btn:active {
+  transform: none;
+  box-shadow: none;
+}
+html .pp-h1 em {
+  background: var(--pp-ochre);
+  color: inherit;
+  border-radius: 0.3em;
+  padding: 0 0.12em;
+  font-style: normal;
+}
+
+/* ---- Site-wide Everyday Magic personality layer ----
+   Applies the homepage look to every page through shared classes. Decorative only: never changes
+   safety, eligibility or payment text, and never uses the handwritten face for it. */
+
+/* Page titles: display face plus a butter "highlighter" swash under every main heading. */
+main h1,
+.pa-h1,
+.pp-h1 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}
+main h1:not(.pp-h1)::after,
+.pa-h1::after {
+  content: "";
+  display: block;
+  width: 4.5rem;
+  height: 0.55rem;
+  margin-top: 0.55rem;
+  background: var(--pp-ochre);
+  border-radius: 999px;
+  rotate: -2deg;
+}
+main h2,
+.pp-h2,
+.pa-h {
+  font-family: var(--font-display);
+  font-weight: 650;
+  letter-spacing: -0.015em;
+}
+
+/* Eyebrows and kickers become little sticker pills. */
+.pp-eyebrow,
+.pa-kicker {
+  display: inline-block;
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  background: color-mix(in oklab, var(--pp-strawberry) 55%, var(--pp-card));
+  color: var(--pp-ink);
+  letter-spacing: 0.12em;
+  rotate: -1.5deg;
+  width: fit-content;
+  max-width: 100%;
+}
+.pp-band .pp-eyebrow {
+  background: var(--pp-ochre);
+  color: var(--pp-ink);
+}
+
+/* Cards: softer outline, rounder corners, gentle lift; linked cards tilt a touch on hover. */
+.pp-card,
+.pa-card,
+.pa-panel {
+  border: 1.5px solid var(--pp-hairline);
+  border-radius: 1.5rem;
+  box-shadow:
+    0 1px 0 var(--pp-hairline),
+    var(--pp-shadow);
+}
+a.pp-card,
+a.pa-card {
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease;
+}
+a.pp-card:hover,
+a.pa-card:hover {
+  transform: translateY(-4px) rotate(-0.6deg);
+}
+.pp-grid > a.pp-card:nth-child(even):hover {
+  transform: translateY(-4px) rotate(0.6deg);
+}
+@media (prefers-reduced-motion: reduce) {
+  a.pp-card:hover,
+  a.pa-card:hover,
+  .pp-grid > a.pp-card:nth-child(even):hover {
+    transform: none;
+  }
+}
+
+/* Rotate soft pastel tops across card grids so lists feel collected, not uniform. */
+.pp-grid > .pp-card {
+  border-top: 0.45rem solid var(--pp-sage);
+}
+.pp-grid > .pp-card:nth-child(4n + 2) {
+  border-top-color: var(--pp-strawberry);
+}
+.pp-grid > .pp-card:nth-child(4n + 3) {
+  border-top-color: var(--pp-powder);
+}
+.pp-grid > .pp-card:nth-child(4n + 4) {
+  border-top-color: var(--pp-ochre);
+}
+
+/* Tailwind-built cards on guide, gear and info pages pick up the same rounder, softer feel. */
+main .rounded-lg.border,
+main .rounded-xl.border,
+main .rounded-2xl.border,
+main .rounded-md.border.bg-card {
+  border-radius: 1.5rem;
+  border-color: var(--pp-hairline);
+  box-shadow: var(--pp-shadow);
+}
+
+/* Chips, tags and form controls go pill-shaped. */
+.pa-chip,
+.pp-chip,
+.pa-tags > * {
+  border-radius: 999px;
+}
+main :where(input:not([type="checkbox"]):not([type="radio"]):not([type="range"]), select) {
+  border-radius: 999px;
+}
+main textarea {
+  border-radius: 1.1rem;
+}
+main :where(input, select, textarea):focus-visible {
+  outline: 3px solid color-mix(in oklab, var(--pp-red) 45%, transparent);
+  outline-offset: 2px;
+}
+
+/* Text links: butter underline that fills on hover. */
+.pp-textlink,
+.pp-prose a,
+main article p a {
+  text-decoration: none;
+  background: linear-gradient(var(--pp-ochre), var(--pp-ochre)) 0 100% / 100% 0.35em no-repeat;
+  transition: background-size 0.18s;
+  color: inherit;
+  font-weight: 600;
+}
+.pp-textlink:hover,
+.pp-prose a:hover,
+main article p a:hover {
+  background-size: 100% 100%;
+}
+
+/* Header: lighter rule, pill hover on nav links. */
+.pp-header {
+  border-bottom: 1.5px solid var(--pp-hairline);
+}
+.pp-nav a {
+  border-radius: 999px;
+  padding-inline: 0.75rem;
+  transition: background-color 0.15s;
+}
+.pp-nav a:hover,
+.pp-nav a[aria-current="page"] {
+  background: color-mix(in oklab, var(--pp-ochre) 70%, transparent);
+}
+
+/* Dark bands get a hint of the butter accent. */
+.pp-band {
+  background: var(--pp-ink);
+}
+
+/* Footer: banner strip on top, butter column headings. */
+.pp-footer .pp-marquee {
+  border-bottom: 1px dashed color-mix(in oklab, var(--pp-paper) 30%, transparent);
+}
+.pp-footer nav > p {
+  color: var(--pp-ochre);
+  opacity: 1;
+}
+
+/* Breadcrumbs read as a soft pill trail. */
+main nav[aria-label="Breadcrumb"] ol,
+main nav[aria-label="breadcrumb"] ol {
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  background: var(--pp-paper-2);
+}
+main nav[aria-label="Breadcrumb"] ol {
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0 0.9rem;
+}
+main a img,
+main figure img {
+  border-radius: 1.25rem;
+}
+
+/* Mystery and dark sample cards: warm ink with a butter edge instead of plain dark slabs. */
+.pa-mystery {
+  border: 2px solid var(--pp-ochre);
+  border-radius: 1.5rem;
+  box-shadow: 6px 6px 0 var(--pp-ochre);
+}
+.pa-mystery .pa-kicker {
+  background: var(--pp-ochre);
+  color: var(--pp-ink);
+}
+.pa-scratch {
+  border-radius: 1.25rem;
+}
+
+/* ======================================================================================================
+   Concept pieces (from Lovable's "Everyday Magic" concept, 08168d3 concept.css) applied to the real components.
+   Presentation only. Decorative handwriting (Caveat) never carries safety, payment or instructional text.
+   ====================================================================================================== */
+
+/* Hero: concept headline scale (the longer owner headline simply wraps), tagline line, hand-lettered notes */
+html .pp-h1 {
+  font-size: clamp(3rem, 8vw, 6.2rem);
+  line-height: 0.95;
+  letter-spacing: -0.035em;
+  font-weight: 700;
+}
+
+@media (min-width: 900px) {
+  .pp-hero-grid {
+    grid-template-columns: 1.05fr 1fr;
+    gap: 3rem;
+  }
+}
+.pp-hero {
+  padding-block: 3.5rem 5rem;
+}
+.pp-collage {
+  height: 34rem;
+}
+@media (max-width: 640px) {
+  .pp-collage {
+    height: 26rem;
+  }
+}
+.pp-polaroid {
+  padding: 0.6rem 0.6rem 2.6rem;
+}
+.pp-polaroid span:not(.pp-tape) {
+  bottom: 0.4rem;
+  font-size: 1.35rem;
+}
+.pp-sticker {
+  background: var(--pp-ochre);
+  left: 46%;
+  top: 52%;
+  font-size: 1rem;
+}
+.pp-marquee {
+  font-size: 1.4rem;
+}
+
+/* Facts strip */
+.pp-facts {
+  padding-top: 3rem;
+  display: grid;
+  gap: 1.5rem;
+}
+.pp-facts-intro {
+  font-size: 1.1rem;
+  max-width: 44rem;
+  font-weight: 600;
+}
+.pp-facts dl {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 0;
+}
+@media (min-width: 760px) {
+  .pp-facts dl {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+}
+.pp-facts dl > div {
+  background: var(--pp-card);
+  border-radius: 1.4rem;
+  padding: 1.2rem;
+  box-shadow: var(--pp-shadow);
+}
+.pp-facts dt {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 6vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  color: var(--pp-red);
+  line-height: 1;
+}
+.pp-facts dd {
+  font-size: 0.95rem;
+  margin: 0.3rem 0 0;
+}
+
+/* Collections: horizontal pastel mood cards (scroll-snap row) */
+.pp-library {
+  background: transparent;
+  color: inherit;
+}
+.pp-library .pp-eyebrow {
+  background: color-mix(in oklab, var(--pp-strawberry) 55%, var(--pp-card));
+  color: var(--pp-ink);
+}
+.pp-moods {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding: 0.5rem 0.25rem 1.5rem;
+  margin: 1.5rem 0 0;
+  list-style: none;
+  scroll-snap-type: x mandatory;
+}
+.pp-moods > li {
+  flex: 0 0 15rem;
+  scroll-snap-align: start;
+  display: flex;
+}
+.pp-mood {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 19rem;
+  padding: 1.4rem;
+  border-radius: 2rem;
+  color: var(--pp-ink);
+  text-decoration: none;
+  transition: transform 0.25s;
+}
+.pp-mood:hover {
+  transform: rotate(-1.5deg) translateY(-4px);
+}
+@media (prefers-reduced-motion: reduce) {
+  .pp-mood:hover {
+    transform: none;
+  }
+}
+.pp-mood-butter {
+  background: var(--pp-ochre);
+}
+.pp-mood-strawberry {
+  background: var(--pp-strawberry);
+}
+.pp-mood-powder {
+  background: var(--pp-powder);
+}
+.pp-mood-sage {
+  background: var(--pp-sage);
+}
+.pp-mood-img {
+  display: block;
+  height: 9rem;
+  border-radius: 1.3rem;
+  overflow: hidden;
+}
+.pp-mood-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+}
+.pp-mood h3 {
+  margin: 0;
+  font-size: 2rem;
+  line-height: 0.95;
+  letter-spacing: -0.035em;
+}
+.pp-mood p {
+  margin: 0.3rem 0 0;
+  font-size: 1.3rem;
+  line-height: 1.1;
+  color: var(--pp-ink);
+}
+
+/* Adventure cards: photo-less preview tiles keep their art; card chrome follows the concept (1.75rem, soft shadow, pill tag, dotted locked footer) */
+.pv-card,
+.pa-card {
+  border-radius: 1.75rem;
+}
+.pv-art {
+  border-radius: 1.4rem 1.4rem 0 0;
+}
+.pv-art-tag {
+  border-radius: 999px;
+  font-weight: 700;
+}
+.pv-card .pa-meta li,
+.pa-card .pa-meta li {
+  background: var(--pp-paper);
+  border: 0;
+  border-radius: 999px;
+}
+.pa-meta li {
+  border-color: transparent;
+  background: var(--pp-paper);
+}
+.pv-card .pv-views,
+.pv-card .pa-fine:last-child {
+  border-top: 1.5px dotted var(--pp-hairline);
+  padding-top: 0.7rem;
+}
+
+/* Quiz: powder panel, segmented progress, large paper answer tiles with a cherry ring when picked */
+.pd-quiz {
+  background: var(--pp-powder);
+  border: 0;
+  border-radius: 2.5rem;
+  padding: clamp(1.5rem, 4vw, 3.5rem);
+  box-shadow: none;
+}
+.pd-quiz .pa-h {
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  line-height: 1;
+  letter-spacing: -0.035em;
+}
+.pd-quiz-count {
+  font-weight: 700;
+}
+.pd-quiz .pa-fine,
+.pd-quiz .pa-sub {
+  color: var(--pp-ink);
+}
+.pd-quiz-bar {
+  position: relative;
+  height: 0.45rem;
+  background: color-mix(in oklab, var(--pp-card) 70%, transparent);
+  border-radius: 999px;
+  overflow: hidden;
+}
+.pd-quiz-bar > span {
+  background: var(--pp-ink);
+  border-radius: 999px;
+  transition: width 0.3s;
+}
+.pd-quiz-bar > i {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    90deg,
+    transparent 0 calc(100% / var(--steps) - 0.35rem),
+    var(--pp-powder) calc(100% / var(--steps) - 0.35rem) calc(100% / var(--steps))
+  );
+}
+.pd-quiz .pa-chips {
+  display: grid;
+  gap: 0.8rem;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+}
+.pd-quiz .pa-chip {
+  background: var(--pp-card);
+  border: 0;
+  border-radius: 1.4rem;
+  padding: 1.2rem;
+  min-height: 6.5rem;
+  text-align: left;
+  display: grid;
+  gap: 0.4rem;
+  align-content: start;
+  justify-items: start;
+  font-weight: 600;
+  box-shadow: none;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+.pd-quiz .pa-chip:hover {
+  transform: translateY(-3px);
+}
+.pd-quiz .pa-chip[aria-pressed="true"] {
+  background: var(--pp-card);
+  color: var(--pp-ink);
+  box-shadow: inset 0 0 0 3px var(--pp-red);
+}
+.pa-chip-emoji {
+  font-size: 1.8rem;
+  line-height: 1;
+}
+.pd-quiz .pp-btn-ghost {
+  background: var(--pp-card);
+  border-color: transparent;
+  color: var(--pp-ink);
+}
+@media (prefers-reduced-motion: reduce) {
+  .pd-quiz .pa-chip:hover {
+    transform: none;
+  }
+}
+
+/* Mystery reveal: foil scratch surface (3:4 card, tilted), tap or scratch, text stays a real button label */
+.pa-scratch {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  width: min(100%, 24rem);
+  min-height: 0;
+  aspect-ratio: 3 / 4;
+  margin-inline: auto;
+  border: 0;
+  border-radius: 1.75rem;
+  flex-direction: column;
+  gap: 0.6rem;
+  rotate: 2deg;
+  padding: 1.6rem;
+  color: var(--pp-ink);
+  box-shadow: var(--pp-shadow);
+  text-align: center;
+  background:
+    radial-gradient(
+      circle at 20% 22%,
+      color-mix(in oklab, var(--pp-card) 80%, transparent) 0 3px,
+      transparent 4px
+    ),
+    radial-gradient(
+      circle at 76% 58%,
+      color-mix(in oklab, var(--pp-card) 80%, transparent) 0 3px,
+      transparent 4px
+    ),
+    radial-gradient(
+      circle at 38% 84%,
+      color-mix(in oklab, var(--pp-card) 80%, transparent) 0 2px,
+      transparent 3px
+    ),
+    linear-gradient(135deg, var(--pp-ochre), var(--pp-strawberry) 55%, var(--pp-powder));
+}
+.pa-scratch-foil {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+.pa-scratch-hand {
+  font-size: 1.8rem;
+  line-height: 1;
+}
+.pa-scratch-text {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.35rem;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+@media (prefers-reduced-motion: reduce) {
+  .pa-scratch {
+    rotate: 0deg;
+  }
+}
+/* The home page's sample clue card shares the look */
+.pp-mini {
+  border-radius: 1.75rem;
+  box-shadow: var(--pp-shadow);
+}
+[aria-labelledby="mystery-h"].pp-band {
+  background: var(--pp-strawberry);
+  color: var(--pp-ink);
+}
+[aria-labelledby="mystery-h"] .pp-eyebrow {
+  background: var(--pp-card);
+}
+
+/* Passport: leaf cover with butter lettering, tilted; dotted second page */
+.pp-passport {
+  background: var(--pp-pine);
+  color: var(--pp-ochre);
+  border: 0;
+  border-radius: 1rem 1.4rem 1.4rem 1rem;
+  rotate: -3deg;
+  max-width: 24rem;
+}
+.pp-passport::before {
+  display: none;
+}
+.pp-passport-title {
+  color: var(--pp-ochre);
+}
+.pp-page {
+  background-color: var(--pp-card);
+  background-image: radial-gradient(
+    color-mix(in oklab, var(--pp-ink) 9%, transparent) 1px,
+    transparent 1px
+  );
+  background-size: 16px 16px;
+  border-radius: 1.2rem;
+}
+@media (prefers-reduced-motion: reduce) {
+  .pp-passport {
+    rotate: 0deg;
+  }
+}
+
+/* Keepsakes section: sage background, framed examples (postcard / trading-card / magazine feel) */
+[aria-labelledby="keepsake-h"].pp-band {
+  background: var(--pp-sage);
+  color: var(--pp-ink);
+}
+[aria-labelledby="keepsake-h"] .pp-eyebrow {
+  background: var(--pp-card);
+}
+[aria-labelledby="keepsake-h"] .pp-examples-row > li {
+  background: var(--pp-card);
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--pp-shadow);
+  rotate: 2deg;
+}
+[aria-labelledby="keepsake-h"] .pp-examples-row > li:nth-child(3n + 2) {
+  rotate: -2deg;
+  background: var(--pp-ochre);
+  border-radius: 1rem;
+}
+[aria-labelledby="keepsake-h"] .pp-examples-row > li:nth-child(3n) {
+  rotate: 0deg;
+}
+[aria-labelledby="keepsake-h"] figcaption,
+[aria-labelledby="keepsake-h"] .pp-examples-label {
+  color: var(--pp-ink);
+}
+@media (prefers-reduced-motion: reduce) {
+  [aria-labelledby="keepsake-h"] .pp-examples-row > li {
+    rotate: 0deg !important;
+  }
+}
+
+/* Offer: ink panel with a butter price ticket */
+[aria-labelledby="included-h"] .co-compare {
+  background: var(--pp-ink);
+  color: var(--pp-paper);
+  border-radius: 2.5rem;
+  padding: clamp(1.5rem, 5vw, 3.5rem);
+  gap: 2rem;
+}
+[aria-labelledby="included-h"] .co-compare > .pp-card {
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  color: inherit;
+  padding: 0;
+}
+[aria-labelledby="included-h"] .co-compare > .pp-card h3 {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+}
+[aria-labelledby="included-h"] .co-compare > .pp-card:last-child {
+  background: var(--pp-ochre);
+  color: var(--accent-foreground);
+  border-radius: 1.75rem;
+  padding: 2rem;
+  display: grid;
+  gap: 1rem;
+  align-content: start;
+}
+[aria-labelledby="included-h"] .co-compare .pp-fine,
+[aria-labelledby="included-h"] .co-compare p,
+[aria-labelledby="included-h"] .co-compare li {
+  color: inherit;
+}
+[aria-labelledby="included-h"] .co-compare .pp-price-line strong {
+  font-size: clamp(3.5rem, 10vw, 5rem);
+  font-weight: 800;
+  letter-spacing: -0.06em;
+  line-height: 1;
+}
+[aria-labelledby="included-h"] .co-compare .pp-plainlist-dots li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid color-mix(in oklab, currentColor 14%, transparent);
+}
+[aria-labelledby="included-h"] .co-compare > .pp-card:last-child .pp-btn-primary {
+  background: var(--pp-red);
+  color: var(--pp-on-red);
+  justify-self: stretch;
+}
+
+/* FAQ: paper rounded rows */
+.pp-faq details {
+  background: var(--pp-card);
+  border: 0;
+  border-radius: 1.25rem;
+  padding: 1.1rem 1.4rem;
+}
+.pp-faq summary {
+  font-weight: 600;
+}
+.pp-faq details p {
+  color: var(--pp-muted);
+}
+
+/* Consent notice: same soft card and pill buttons (both choices styled alike) */
+.cn-notice {
+  border-radius: 1.5rem;
+  border: 1.5px solid var(--pp-hairline);
+  background: var(--pp-card);
+  color: var(--pp-ink);
+  box-shadow: 0 18px 40px -18px oklch(0.27 0.015 40 / 0.5);
+  max-width: calc(100% - 1.5rem);
+  width: 44rem;
+}
+.cn-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+}
+.cn-btn {
+  border-radius: 999px;
+  border: 1.5px solid var(--pp-hairline);
+  background: var(--pp-card);
+  color: var(--pp-ink);
+  padding-inline: 1.25rem;
+}
+.cn-link {
+  color: var(--pp-red);
+}
+
+.jn-kicker {
+  display: inline-block;
+  margin: 0 0 0.6rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  background: color-mix(in oklab, var(--pp-strawberry) 55%, var(--pp-card));
+  color: var(--pp-ink);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  rotate: -1.5deg;
+}
+
+/* Mystery card keeps main's ink card: its fact pills stay outlined (not the paper pills used on light cards) */
+.pa-mystery .pa-meta li {
+  background: transparent;
+  border: 1.5px solid color-mix(in oklab, var(--pp-paper) 50%, transparent);
+  color: var(--pp-paper);
+}
+.pd-quiz .pa-chips {
+  grid-template-columns: repeat(auto-fit, minmax(8.5rem, 1fr));
+}

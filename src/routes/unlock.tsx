@@ -6,6 +6,7 @@ import { AccessForm } from "@/components/passport/AccessForms";
 import { track } from "@/passport/events";
 import { checkoutUrl } from "@/lib/passport-api";
 import { collections } from "@/passport/content";
+import { BRAND } from "@/config/brand";
 import { flags, GIFT_CTA, KEEP_LINE, price, pricing, REFUND_SUMMARY } from "@/config/commercial";
 import { DemoAdventure } from "@/components/site/DemoAdventure";
 import { PhotoFilterExamples } from "@/components/site/PhotoFilterExamples";
@@ -39,7 +40,7 @@ function Unlock() {
     <Container>
       <div className="pa-page">
         <p className="pa-kicker">The Adventure Passport</p>
-        <h1 className="pa-h1">The full Passport: one payment, no subscription</h1>
+        <h1 className="pa-h1">{BRAND.unlockHeadline}</h1>
         <p className="pa-sub">
           A digital collection of little adventures for you and your dog, in your browser. Start
           with one free adventure picked for your dog. When you want more, the full Passport opens
@@ -162,7 +163,8 @@ function Unlock() {
                 >
                   {GIFT_CTA}
                 </a>{" "}
-                Same Passport, same price. On the checkout page, choose the gift option.
+                {BRAND.giftLine} Same Passport, same price. On the checkout page, choose the gift
+                option.
               </p>
             )}
           </section>

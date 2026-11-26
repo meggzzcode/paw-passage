@@ -48,7 +48,7 @@ The full table with options is in `COWORK-HANDOFF.md` (Owner decisions OD1 to OD
 3. A license key is not limited to one device or person (restore works from any device; `increment_uses_count=false`). Accept key-sharing risk, or set a use limit once the Gumroad contract is read.
 4. Keep PWA install prompts and notifications off at launch and revisit after the first month of real credit usage.
 5. Cookie consent approach, support mailbox, refund period on Gumroad, deletion-request policy.
-6. Slogan: the tagline is "A lifetime of little adventures."; the retired signature line stays out of the hero and H1 with its guard test, unless the owner says otherwise.
+6. Brand copy: the approved lines live in `src/config/brand.ts` (see PRODUCT-SPEC brand line). "Collect adventures, not just things." is approved for the My Passport headline only; other retired lines stay banned by `src/test/brand-copy.test.ts`.
 
 ## Tests
 

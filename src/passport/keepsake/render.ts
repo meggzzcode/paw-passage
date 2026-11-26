@@ -30,11 +30,11 @@ export interface KeepsakeAssets {
 export const FOOTER_TEXT = "pawsandpassage.com";
 export const MEMORY_MAX = 140;
 
-export const SERIF = 'Georgia, "Times New Roman", serif';
-const PAPER = "#f6efe0";
-const INK = "#2b3a4a";
-const RED = "#b4412f";
-const GOLD = "#a9822c";
+export const SERIF = '"Bricolage Grotesque", Georgia, "Times New Roman", serif';
+const PAPER = "#fbf3df";
+const INK = "#43352e";
+const RED = "#c8343f";
+const GOLD = "#b08a24";
 const MUTED = "#6b6559";
 
 export function keepsakeSize(spec: Pick<KeepsakeSpec, "template" | "variant">): {
@@ -451,11 +451,11 @@ function seal(ctx: Ctx, cx: number, cy: number, r: number): void {
   }
   ctx.closePath();
   ctx.fill();
-  ctx.strokeStyle = "#f6efe0";
+  ctx.strokeStyle = "#fbf3df";
   ctx.lineWidth = 2;
   circle(ctx, cx, cy, r * 0.72);
   ctx.stroke();
-  drawPaw(ctx, cx, cy - 2, r * 0.8, "#f6efe0");
+  drawPaw(ctx, cx, cy - 2, r * 0.8, "#fbf3df");
 }
 
 function renderCertificate(ctx: Ctx, spec: KeepsakeSpec): void {
@@ -589,11 +589,11 @@ function renderCertificate(ctx: Ctx, spec: KeepsakeSpec): void {
 
 // ----------------------------------------------------------- milestone card
 
-const INKS = ["#b4412f", "#2f5d62", "#5b4a8a", "#a9822c", "#3b6b3a", "#2b3a4a"];
+const INKS = ["#c8343f", "#4f8a5b", "#5b4a8a", "#b08a24", "#3b6b3a", "#43352e"];
 function inkFor(slug: string, i: number): string {
   let h = i;
   for (const c of slug) h = (h * 31 + c.charCodeAt(0)) >>> 0;
-  return INKS[h % INKS.length] ?? "#2b3a4a";
+  return INKS[h % INKS.length] ?? "#43352e";
 }
 
 function miniStamp(ctx: Ctx, x: number, y: number, size: number, slug: string, i: number): void {
@@ -747,6 +747,9 @@ export async function makeKeepsakeBlob(
   photo?: PhotoSource | null,
 ): Promise<Blob> {
   const { width: w, height: h } = keepsakeSize(spec);
+  // Wait for the self-hosted brand fonts so keepsakes draw in them (falls back to system fonts).
+  if (typeof document !== "undefined" && document.fonts)
+    await document.fonts.ready.catch(() => undefined);
   if (typeof OffscreenCanvas !== "undefined") {
     const c = new OffscreenCanvas(w, h);
     const ctx = c.getContext("2d");

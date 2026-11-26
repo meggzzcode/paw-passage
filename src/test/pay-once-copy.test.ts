@@ -13,7 +13,7 @@ describe("pay-once copy", () => {
     expect(KEEP_LINE).toBe("No subscription. No renewals. Your Passport does not expire.");
   });
   it("every page that shows the price also says it is one-time", () => {
-    expect(homePromo.lede).toMatch(ONCE);
+    expect(homePromo.commercial).toMatch(ONCE);
     const home = read("src/routes/index.tsx");
     expect(home).toContain("ONE_TIME_LINE");
     expect(home).toContain("KEEP_LINE");

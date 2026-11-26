@@ -1,4 +1,5 @@
 import "@/design/journal.css";
+import { BRAND } from "@/config/brand";
 import { AppLink } from "@/components/shell/AppLink";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { JOURNAL_NAME, JOURNAL_TAGLINE, articlePath } from "@/lib/journal";
@@ -9,7 +10,8 @@ export function JournalIndex({ articles }: { articles: JournalArticle[] }) {
     <div className="jn-wrap">
       <Breadcrumbs items={[{ label: "Home", to: "/" }, { label: JOURNAL_NAME }]} />
       <header className="jn-head">
-        <h1>{JOURNAL_NAME}</h1>
+        <p className="jn-kicker">{JOURNAL_NAME}</p>
+        <h1>{BRAND.journalHeadline}</h1>
         <p className="jn-lead">{JOURNAL_TAGLINE}</p>
       </header>
       <ul className="jn-grid" aria-label="Articles">

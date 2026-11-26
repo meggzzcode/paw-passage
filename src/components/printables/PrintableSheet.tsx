@@ -1,5 +1,6 @@
 // One printable sheet, laid out for paper: the same sheet is what you see on screen and what the browser prints.
 // Generic content only. The certificate's name fields live in this page's memory and are never stored or sent.
+import { BRAND } from "@/config/brand";
 import { useId, useState } from "react";
 import "@/design/print.css";
 import { site } from "@/config/site";
@@ -19,7 +20,7 @@ function Footer() {
   return (
     <footer className="pr-foot">
       <span>{site.name}</span>
-      <span>A lifetime of little adventures.</span>
+      <span>{BRAND.lifetime}</span>
     </footer>
   );
 }

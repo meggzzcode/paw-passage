@@ -6,6 +6,7 @@
 // they come from the previews API (published total and collections) or from the server's match aggregates, and
 // when those are unavailable the wording below says so plainly instead of inventing a number.
 import { offer } from "./site";
+import { BRAND } from "./brand";
 
 /** The price. Defined once, in `offer` in src/config/site.ts (it must equal the checkout listing). */
 export const price = offer.price;
@@ -71,17 +72,20 @@ export const featured = {
 
 /** Homepage promo copy. Keys, not layout: the page reads these so wording lives in one place. */
 export const homePromo = {
-  eyebrow: "Digital adventures for you and your dog",
-  titleLead: "Life is better with a little",
-  titleEm: "adventure",
-  lede: "Five-minute games at home, doggy dates, weekend adventures. A personalized library of little adventures for you and your dog, with a free first adventure picked just for them. Pay once, and the full Passport is yours to keep.",
+  eyebrow: BRAND.hero.eyebrow,
+  titleLead: BRAND.hero.titleLead,
+  titleEm: BRAND.hero.titleEm,
+  titleTail: BRAND.hero.titleTail,
+  lede: BRAND.hero.support,
+  ctaNote: BRAND.hero.ctaNote,
+  commercial: ONE_TIME_LINE,
   points: [
     "One free adventure to start",
     "Personalized to your dog",
     "One payment, not a subscription",
     "No account",
   ],
-  primaryCta: "Find Our First Adventure — Free",
+  primaryCta: BRAND.hero.primaryCta,
   secondaryCta: "Explore the Adventure Collection",
   demo: {
     eyebrow: "See it in action",

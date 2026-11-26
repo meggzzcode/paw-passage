@@ -1,7 +1,15 @@
 import { describe, expect, it } from "vitest";
 import { spawnSync } from "node:child_process";
 import { createHash } from "node:crypto";
-import { mkdirSync, mkdtempSync, readFileSync, readdirSync, rmSync, writeFileSync } from "node:fs";
+import {
+  existsSync,
+  mkdirSync,
+  mkdtempSync,
+  readFileSync,
+  readdirSync,
+  rmSync,
+  writeFileSync,
+} from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { parse as parseYaml } from "yaml";
@@ -38,7 +46,11 @@ function syntheticSource(dir: string) {
 
 describe("scripts/premium-package.mjs", () => {
   it("refuses to write inside the repository and creates nothing there", () => {
-    const r = run(["--out", join(REPO, "node_modules", ".tmp-package-test")]);
+    // A real (never symlinked) directory inside the repo: node_modules may be a symlink to another checkout (git worktrees),
+    // which resolves outside the repo and would, correctly, not be refused.
+    const target = join(REPO, "src", ".tmp-package-test");
+    const r = run(["--out", target]);
+    expect(existsSync(target)).toBe(false);
     expect(r.status).not.toBe(0);
     expect(r.stderr).toMatch(/OUTSIDE the git repository/);
   });

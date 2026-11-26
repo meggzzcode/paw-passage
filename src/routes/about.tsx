@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { BRAND } from "@/config/brand";
 import { InfoPage } from "@/components/site/InfoPage";
 import { pageHead } from "@/lib/seo";
 
@@ -13,7 +14,7 @@ export const Route = createFileRoute("/about")({
   component: () => (
     <InfoPage
       title="About Paws & Passage"
-      intro="A lifetime of little adventures."
+      intro={BRAND.lifetime}
       updated="2026-11-26"
       body={`Paws & Passage makes the **Adventure Passport**: a collectible, self-paced set of little adventures to share with your dog. There are no daily streaks and nothing to keep up with. You pick an adventure when you feel like it, and your dog can stop any time.
 

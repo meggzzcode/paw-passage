@@ -1,9 +1,10 @@
 import { settings, showDrafts } from "virtual:content";
+import { BRAND } from "@/config/brand";
 
 // Central brand + integration settings. The business details (domain, email, analytics ID) live in content/settings.yml so an owner can change them in Pages CMS without touching code.
 export const site = {
   name: "Paws & Passage",
-  tagline: "The Adventure Passport: a lifetime of little adventures with your dog",
+  tagline: `The Adventure Passport: ${BRAND.lifetime.replace(".", "").toLowerCase()} with your dog`,
   description:
     "The Adventure Passport is a collectible, self-paced set of little adventures to share with your dog. Free to try with no account: tell us about your dog and get one adventure picked for them. A one-time purchase unlocks the full library.",
   /** Public site origin, e.g. "https://pawsandpassage.com". Required for sitemap.xml (returns 503 until set). */

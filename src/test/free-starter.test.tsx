@@ -370,30 +370,40 @@ describe("price and slogan guards", () => {
     expect(offer.pricing).toBe("one-time purchase, no subscription");
   });
 
-  it("the old slogan never returns in source, docs or public files", () => {
-    const OLD = /collect\s+adventures,?\s+not\s+just\s+things/i;
+  it("retired lines never return, and the approved slogan is written only in src/config/brand.ts", () => {
+    // Owner directive 2026-11-26: "Collect adventures, not just things." is APPROVED again (My Passport headline). It is
+    // single-sourced in brand.ts; other retired variants stay banned. See src/test/brand-copy.test.ts for the full list.
+    const RETIRED =
+      /life\s+is\s+better\s+with\s+a\s+little\s+adventure|deserves\s+a\s+little\s+wonder\.\s*A\s+lifetime/i;
+    const APPROVED = /collect\s+adventures,?\s+not\s+just\s+things/i;
     const skip = new Set(["node_modules", ".git", "dist", ".output"]);
-    const hits: string[] = [];
+    const retiredHits: string[] = [];
+    const strayApproved: string[] = [];
     const walk = (dir: string) => {
       for (const name of readdirSync(dir)) {
         if (skip.has(name)) continue;
         const p = join(dir, name);
         if (statSync(p).isDirectory()) walk(p);
-        else if (
-          /\.(tsx?|md|ya?ml|json|html|css|txt)$/.test(name) &&
-          !p.endsWith("free-starter.test.tsx")
-        )
-          if (OLD.test(readFileSync(p, "utf8"))) hits.push(p);
+        else if (/\.(tsx?|md|ya?ml|json|html|css|txt)$/.test(name) && !/\.test\.tsx?$/.test(name)) {
+          const t = readFileSync(p, "utf8");
+          if (RETIRED.test(t)) retiredHits.push(p);
+          if (APPROVED.test(t) && !p.endsWith("src/config/brand.ts") && !p.startsWith("docs"))
+            strayApproved.push(p);
+        }
       }
     };
     for (const d of ["src", "docs", "public", "content", "README.md"]) {
       try {
         if (statSync(d).isDirectory()) walk(d);
-        else if (OLD.test(readFileSync(d, "utf8"))) hits.push(d);
+        else {
+          const t = readFileSync(d, "utf8");
+          if (RETIRED.test(t)) retiredHits.push(d);
+        }
       } catch {
         /* optional */
       }
     }
-    expect(hits).toEqual([]);
+    expect(retiredHits).toEqual([]);
+    expect(strayApproved).toEqual([]);
   });
 });

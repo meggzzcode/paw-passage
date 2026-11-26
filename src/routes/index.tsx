@@ -1,4 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import picnicImg from "@/assets/everyday/picnic.jpg";
+import dateImg from "@/assets/everyday/date.jpg";
+import puppyImg from "@/assets/everyday/puppy.jpg";
+import cozyImg from "@/assets/concept/cozy.jpg";
+import trailImg from "@/assets/concept/trail.jpg";
+import portraitImg from "@/assets/concept/portrait.jpg";
 import { PawPrint } from "lucide-react";
 import { Button } from "@/components/shell/Button";
 import { AppLink } from "@/components/shell/AppLink";
@@ -7,6 +13,7 @@ import { SectionHeading } from "@/components/shell/SectionHeading";
 import { Stamp } from "@/passport/art/stamps";
 import { pageHead } from "@/lib/seo";
 import { site } from "@/config/site";
+import { BRAND } from "@/config/brand";
 import { PhotoFilterExamples } from "@/components/site/PhotoFilterExamples";
 import { FILTER_EXAMPLES } from "@/components/site/keepsake-examples";
 import { FaqList } from "@/components/site/FaqList";
@@ -36,7 +43,7 @@ export const Route = createFileRoute("/")({
   head: () =>
     pageHead({
       title: `Dog Adventures, Free to Start | ${site.name}`,
-      description: `Life is better with a little adventure. One free adventure picked for your dog, then a large library for ${price}, once. No subscription.`,
+      description: `${BRAND.lifetime} One free adventure picked for your dog, then a large library for ${price}, once. No subscription.`,
       path: "/",
     }),
   component: Home,
@@ -51,17 +58,50 @@ const HOME_FAQ_IDS = [
   "photos-not-uploaded",
 ];
 
+// Decorative pairing of each real collection with one of the design's illustrative images and a pastel.
 const COLLECTION_TASTE = [
-  { slug: "five-minute-wonders", name: "Quick Wonders", blurb: "Tiny games for a busy day." },
-  { slug: "rainy-day-club", name: "Rainy Day Club", blurb: "Indoor fun for gray weather." },
-  { slug: "doggy-date-club", name: "Doggy Date Club", blurb: "An outing, just the two of you." },
+  {
+    slug: "five-minute-wonders",
+    name: "Quick Wonders",
+    blurb: "Tiny games for a busy day.",
+    img: cozyImg,
+    bg: "butter",
+  },
+  {
+    slug: "rainy-day-club",
+    name: "Rainy Day Club",
+    blurb: "Indoor fun for gray weather.",
+    img: puppyImg,
+    bg: "powder",
+  },
+  {
+    slug: "doggy-date-club",
+    name: "Doggy Date Club",
+    blurb: "An outing, just the two of you.",
+    img: dateImg,
+    bg: "strawberry",
+  },
   {
     slug: "puppys-first-chapter",
     name: "Puppy's First Chapter",
     blurb: "First times to remember.",
+    img: portraitImg,
+    bg: "sage",
   },
-  { slug: "the-golden-years", name: "The Golden Years", blurb: "Gentle days at a slower pace." },
-  { slug: "road-trip-adventures", name: "Road Trip Adventures", blurb: "Stops worth the detour." },
+  {
+    slug: "the-golden-years",
+    name: "The Golden Years",
+    blurb: "Gentle days at a slower pace.",
+    img: trailImg,
+    bg: "butter",
+  },
+  {
+    slug: "road-trip-adventures",
+    name: "Road Trip Adventures",
+    blurb: "Stops worth the detour.",
+    img: picnicImg,
+    bg: "powder",
+  },
 ];
 
 function Home() {
@@ -80,7 +120,7 @@ function Home() {
             <div>
               <p className="pp-eyebrow">{homePromo.eyebrow}</p>
               <h1 id="home-h1" className="pp-h1">
-                {homePromo.titleLead} <em>{homePromo.titleEm}</em>.
+                {homePromo.titleLead} <em>{homePromo.titleEm}</em> {homePromo.titleTail}
               </h1>
               <p className="pp-lede">{homePromo.lede}</p>
               <ul className="pp-hero-points" aria-label="Good to know">
@@ -95,34 +135,75 @@ function Home() {
                 </Button>
               </p>
               <p className="pp-fine">
-                Want it all?{" "}
+                {homePromo.ctaNote} {homePromo.commercial}{" "}
                 <AppLink
                   to="/unlock"
                   className="pp-textlink"
                   onClick={() => track("purchase_cta_clicked", { where: "home-hero" })}
                 >
-                  Get the full Passport, {price} once
+                  Get the full Passport
                 </AppLink>
                 .
               </p>
             </div>
-            <figure className="pp-hero-art">
-              <img
-                src="/examples/postcard.webp"
-                alt="An example postcard keepsake made from a real photo of a brown dog on a snowy mountain ridge"
-                width={560}
-                height={560}
-              />
-              <figcaption>
-                An example keepsake made from a licensed dog photo. Making your own is part of the
-                full Passport.
-              </figcaption>
-            </figure>
+            <div>
+              <div className="pp-collage" aria-hidden="true">
+                <figure
+                  className="pp-polaroid"
+                  style={{ width: "58%", height: "78%", left: "4%", top: "4%", rotate: "-5deg" }}
+                >
+                  <span className="pp-tape" />
+                  <img src={picnicImg} alt="" width={1024} height={1280} />
+                  <span>sunday picnic</span>
+                </figure>
+                <figure
+                  className="pp-polaroid"
+                  style={{ width: "44%", height: "46%", right: "2%", top: "0%", rotate: "6deg" }}
+                >
+                  <img src={dateImg} alt="" width={1024} height={1024} loading="lazy" />
+                  <span>coffee date ☕</span>
+                </figure>
+                <figure
+                  className="pp-polaroid"
+                  style={{
+                    width: "42%",
+                    height: "44%",
+                    right: "6%",
+                    bottom: "0%",
+                    rotate: "-3deg",
+                  }}
+                >
+                  <img src={puppyImg} alt="" width={1024} height={1024} loading="lazy" />
+                  <span>first puddle!</span>
+                </figure>
+                <div className="pp-sticker">
+                  Little
+                  <br />
+                  moments.
+                  <br />
+                  Big
+                  <br />
+                  memories.
+                </div>
+              </div>
+              <p className="pp-collage-note">
+                Illustrative images only. They are not photos of real dogs, people or completed
+                adventures.
+              </p>
+            </div>
           </div>
         </Container>
       </section>
 
-      <div className="pp-perf" aria-hidden="true" />
+      <div className="pp-marquee" aria-hidden="true">
+        <div>{Array(2).fill(BRAND.marquee).join("")}</div>
+      </div>
+
+      <FactsStrip
+        total={previews.data?.total}
+        collections={previews.data?.collections}
+        verified={previews.status === "ready"}
+      />
 
       <section className="pp-section" aria-labelledby="demo-h">
         <Container>
@@ -148,7 +229,7 @@ function Home() {
         </Container>
       </section>
 
-      <section className="pp-section pp-band" aria-labelledby="variety-h">
+      <section className="pp-section pp-library" aria-labelledby="variety-h">
         <Container>
           <SectionHeading
             eyebrow="The library"
@@ -157,12 +238,21 @@ function Home() {
           >
             {variety} From five-minute games to weekend outings.
           </SectionHeading>
-          <ul className="pp-grid pp-grid-3 mt-6 pp-plainlist">
+          <ul className="pp-moods pp-plainlist" aria-label="Collections">
             {COLLECTION_TASTE.map((c) => (
               <li key={c.slug}>
-                <Link to="/collections/$slug" params={{ slug: c.slug }} className="pp-card pp-chip">
-                  <h3>{c.name}</h3>
-                  <p>{c.blurb}</p>
+                <Link
+                  to="/collections/$slug"
+                  params={{ slug: c.slug }}
+                  className={`pp-mood pp-mood-${c.bg}`}
+                >
+                  <span className="pp-mood-img" aria-hidden="true">
+                    <img src={c.img} alt="" loading="lazy" width={1024} height={1024} />
+                  </span>
+                  <span>
+                    <h3>{c.name}</h3>
+                    <p className="font-hand-note">{c.blurb}</p>
+                  </span>
                 </Link>
               </li>
             ))}
@@ -192,7 +282,7 @@ function Home() {
         <Container>
           <div className="pp-split">
             <div>
-              <SectionHeading eyebrow="Personalized" title="Picked for your dog" id="discover-h">
+              <SectionHeading eyebrow="Personalized" title={BRAND.discoverHeadline} id="discover-h">
                 Answer a few quick taps: your dog's age and energy, how they feel about people, dogs
                 and noise, and whether you have a car or a yard. We pick an adventure that fits. If
                 we do not know something that matters, we ask instead of guessing, and we leave out
@@ -232,11 +322,7 @@ function Home() {
         <Container>
           <div className="pp-split">
             <MysteryCard />
-            <SectionHeading
-              eyebrow="The mystery"
-              title="Part of the fun is not knowing"
-              id="mystery-h"
-            >
+            <SectionHeading eyebrow="The mystery" title={BRAND.mysteryHeadline} id="mystery-h">
               Many adventures begin with a clue instead of a list. You decide to say yes, then the
               reveal turns the page into a plan. This sample is only a clue: the real instructions
               appear after you accept an adventure.
@@ -270,7 +356,7 @@ function Home() {
 
       <section className="pp-section pp-band" aria-labelledby="keepsake-h">
         <Container>
-          <SectionHeading eyebrow="Keepsakes" title="Something to keep" id="keepsake-h">
+          <SectionHeading eyebrow="Keepsakes" title={BRAND.keepsakeHeadline} id="keepsake-h">
             The full Passport turns a favorite day into a postcard, a magazine cover, a detective ID
             or a trading card, made from your own dog's photo. They are drawn on your own device,
             your photos are never uploaded, and you can save or print them. Free visitors can see
@@ -365,6 +451,38 @@ function Home() {
         </Container>
       </section>
     </>
+  );
+}
+
+/** Verified facts only: the two always-true ones, plus library counts when the previews API confirmed them. */
+function FactsStrip({
+  total,
+  collections,
+  verified,
+}: {
+  total?: number | undefined;
+  collections?: number | undefined;
+  verified: boolean;
+}) {
+  const items: [string, string][] = [];
+  if (verified && (total ?? 0) > 0) items.push([String(total), "adventures in the library"]);
+  if (verified && (collections ?? 0) > 0) items.push([String(collections), "collections"]);
+  items.push(["1", "free personalized adventure"], [price, "once, no subscription"]);
+  return (
+    <section className="pp-facts pp-container" aria-label="What is inside the Adventure Passport">
+      <p className="pp-facts-intro">
+        An interactive digital passport for you and your dog: answer a few questions, reveal an
+        adventure, collect stamps and make keepsakes, all in your browser.
+      </p>
+      <dl>
+        {items.map(([n, l]) => (
+          <div key={l}>
+            <dt>{n}</dt>
+            <dd>{l}</dd>
+          </div>
+        ))}
+      </dl>
+    </section>
   );
 }
 

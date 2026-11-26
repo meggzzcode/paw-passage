@@ -126,14 +126,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       // Self-hosted fonts (see src/styles.css). Both are used above the fold, so both are preloaded.
       {
         rel: "preload",
-        href: "/fonts/dm-sans-latin-variable.woff2",
+        href: "/fonts/figtree-latin-variable.woff2",
         as: "font",
         type: "font/woff2",
         crossOrigin: "anonymous",
       },
       {
         rel: "preload",
-        href: "/fonts/fraunces-latin-variable.woff2",
+        href: "/fonts/bricolage-grotesque-latin-variable.woff2",
         as: "font",
         type: "font/woff2",
         crossOrigin: "anonymous",

@@ -4,14 +4,15 @@ The look is a travel postcard and a printed passport: warm paper, ink, one red a
 
 ## Files
 
-| File                         | Prefix | Contents                                                                                |
-| ---------------------------- | ------ | --------------------------------------------------------------------------------------- |
-| `src/design/passport.css`    | `pp-`  | Tokens, layout primitives, buttons, cards, header, footer, home page, stamps, flip card |
-| `src/design/adventure.css`   | `pa-`  | Adventure page, panels, forms, mystery card, reveal, progress                           |
-| `src/design/discover.css`    | `pd-`  | Discover tabs, filters, results                                                         |
-| `src/design/collections.css` | `co-`  | Curated and custom collection screens                                                   |
-| `src/design/keepsake.css`    | `kp-`  | Keepsake maker and photo editor                                                         |
-| `src/styles.css`             | -      | Tailwind setup, `@font-face`, base typography, article styles, skip link                |
+| File                         | Prefix | Contents                                                                                                                                                               |
+| ---------------------------- | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `src/design/passport.css`    | `pp-`  | Tokens, layout primitives, buttons, cards, header, footer, home page, stamps, flip card                                                                                |
+| `src/design/adventure.css`   | `pa-`  | Adventure page, panels, forms, mystery card, reveal, progress                                                                                                          |
+| `src/design/discover.css`    | `pd-`  | Discover tabs, filters, results                                                                                                                                        |
+| `src/design/collections.css` | `co-`  | Curated and custom collection screens                                                                                                                                  |
+| `src/design/keepsake.css`    | `kp-`  | Keepsake maker and photo editor                                                                                                                                        |
+| `src/design/everyday.css`    | -      | Lovable's "Everyday Magic" layer, imported last: pill buttons, site-wide personality rules (from main) and the concept's quiz, scratch, mood, keepsake and offer looks |
+| `src/styles.css`             | -      | Tailwind setup, `@font-face`, base typography, article styles, skip link                                                                                               |
 
 ## Tokens
 
@@ -39,7 +40,7 @@ Paper texture is CSS only (two faint radial-dot layers on `body`). Stamps, perfo
 
 ## Type
 
-- Display and headings: **Fraunces** (variable). Body: **DM Sans** (variable). Both are self-hosted in `public/fonts/` (SIL OFL licences included); there is no third-party font request.
+- Display and headings: **Bricolage Grotesque**. Body: **Figtree**. Handwritten notes: **Caveat** (`font-hand-note`). All are self-hosted in `public/fonts/` (SIL OFL licences included); there is no third-party font request.
 - Headings use `clamp()` sizes (for example the section heading is `clamp(1.75rem, 6vw, 2.5rem)`), balanced wrapping and a 1.12 line height. Body copy is about 1.0625rem at a 1.6 line height. Eyebrows are 0.75rem, uppercase, tracked.
 - Keepsake artwork uses system serif and sans stacks only (canvas drawing); nothing is downloaded for it.
 

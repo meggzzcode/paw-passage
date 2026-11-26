@@ -1,6 +1,8 @@
 // The one reveal gesture for a mystery adventure: a single surface you can scratch (drag across it) or simply tap.
 // Keyboard users press Enter or Space on it. There is no second button, mode or pop-up. A reveal is announced politely.
+import { BRAND } from "@/config/brand";
 import { useRef, useState } from "react";
+import { RevealFoil } from "@/components/passport/RevealFoil";
 
 export const REVEAL_LABEL = "Scratch or tap to reveal.";
 const KEY = "pp.revealed.v1";
@@ -99,6 +101,10 @@ export function RevealSurface({
         setProgress(0);
       }}
     >
+      <RevealFoil drag={drag} />
+      <span className="pa-scratch-hand font-hand-note" aria-hidden="true">
+        {BRAND.mysteryHeadline}
+      </span>
       <span className="pa-scratch-text">{REVEAL_LABEL}</span>
     </button>
   );

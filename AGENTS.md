@@ -27,3 +27,4 @@ npx prettier --check <files>
 - Netlify builds cost credits: do not change `netlify.toml` `ignore` without running `node scripts/test-netlify-ignore.mjs`.
 - Verified status: never write a test count or "all tests pass" in a document. Results go only in the Last verified run section of `docs/QA-REPORT.md`.
 - PWA and push notifications are paused (`PWA_ENABLED=false`, `flags.notifications=false`); gifting is off (`flags.gifting=false`). Do not turn them on without the owner.
+- Handwritten type (Caveat, `font-hand-note`) is decorative only: never for safety, eligibility, payment, refund or instructional text, so critical text stays easy to read.

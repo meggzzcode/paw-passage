@@ -1,6 +1,7 @@
 import { describe, it, expect } from "vitest";
 import { readFileSync } from "node:fs";
 import { guidesLink, navItems, restoreLink, unlockCta } from "@/components/shell/nav-items";
+import { homePromo } from "@/config/commercial";
 
 describe("shell navigation", () => {
   it("lists the four product areas, the unlock CTA and a small restore link", () => {
@@ -31,8 +32,16 @@ describe("homepage copy", () => {
   const src =
     readFileSync("src/routes/index.tsx", "utf8") + readFileSync("src/config/commercial.ts", "utf8");
   it("leads with the adventure headline and one clear primary CTA", () => {
-    expect(src).toContain("Life is better with a little");
-    expect(src).toContain("Find Our First Adventure");
+    expect(homePromo.eyebrow).toBe("Because every dog deserves a little adventure.");
+    expect(`${homePromo.titleLead} ${homePromo.titleEm} ${homePromo.titleTail}`).toBe(
+      "A passport full of little adventures for you and your dog.",
+    );
+    expect(homePromo.lede).toMatch(
+      /^Discover 100\+ fun, creative and memorable things to do together/,
+    );
+    expect(homePromo.ctaNote).toBe("Your first adventure is free.");
+    expect(homePromo.commercial).toBe("One payment of $19.99. Yours to keep.");
+    expect(homePromo.primaryCta).toBe("Find our first adventure");
     expect(src).toContain("Explore the Adventure Collection");
     expect(src).toContain("One payment, not a subscription");
     expect(src).toContain("No account");

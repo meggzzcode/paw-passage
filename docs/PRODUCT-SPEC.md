@@ -11,7 +11,7 @@ A digital, collectible, self-paced library of little adventures to do with a dog
 - **Free:** one complete, personalized first adventure from a pool of 14 free adventures. No account, email or card. Selected public previews of the larger collection can be browsed without any onboarding.
 - **Paid:** one payment of $19.99 (`offer` in `src/config/site.ts`), yours to keep: no subscription and no renewals. It unlocks the full library (115 published adventures in 25 collections in the repo: the free pool of 16 plus 99 premium; 116 once the staged private premium card is added), personalized keepsake creation and synced progress. The product promises no perpetual service, no future content and no unlimited updates.
 - **Status of the paid side:** PWA install prompts and push notifications are paused (`PWA_ENABLED=false`, `flags.notifications=false`); gifting is off (`flags.gifting=false`) until verified on Gumroad.
-- **Brand line:** "A lifetime of little adventures." The homepage headline is "Life is better with a little adventure." The retired slogan stays out of the hero and headings (guard test).
+- **Brand line:** "A lifetime of little adventures." Approved signature phrases (owner, 2026-11-26), all single-sourced in `src/config/brand.ts`: "A lifetime of little adventures.", "Because every dog deserves a little adventure.", "Collect adventures, not just things." (My Passport headline only, never the hero) and "One payment. Yours to keep." The homepage reads "A passport full of little adventures for you and your dog." The library claim ("100+", "Over a hundred") is tied to `LIBRARY_CLAIM_MIN` and checked against the verified library by `src/test/brand-copy.test.ts`.
 
 ## Journey
 

@@ -32,6 +32,48 @@ import {
 
 type Opt<T> = { value: T; label: string };
 
+/** Decorative emoji for the answer tiles (the Everyday Magic look). aria-hidden: the label alone names the button. */
+const TILE_EMOJI: Record<string, string> = {
+  Puppy: "🐶",
+  Adult: "🐕",
+  Senior: "🦮",
+  Gentle: "🌿",
+  Moderate: "🚶",
+  Lively: "⚡",
+  "It varies": "🎲",
+  Sniffing: "👃",
+  Games: "🎾",
+  Exploring: "🧭",
+  Food: "🦴",
+  Creative: "🎨",
+  Relaxing: "🛋️",
+  Mobility: "🐾",
+  "Food limits": "🥣",
+  Water: "💧",
+  Noise: "🔊",
+  Crowds: "👥",
+  "Other dogs": "🐕‍🦺",
+  "Exercise limits": "🛑",
+  "Nothing in particular": "✨",
+  "Not sure": "🤔",
+  "Prefer not to say": "🤐",
+  "At home": "🏡",
+  "Nearby outdoors": "🌳",
+  "Anywhere suitable": "🗺️",
+  "Short (about 15 min)": "⏱️",
+  "Medium (about 30 min)": "⏳",
+  "Longer is fine": "🕰️",
+  Nothing: "🆓",
+  "Inexpensive (under $10)": "🪙",
+  Flexible: "🎈",
+};
+const Emoji = ({ label }: { label: string }) =>
+  TILE_EMOJI[label] ? (
+    <span className="pa-chip-emoji" aria-hidden="true">
+      {TILE_EMOJI[label]}
+    </span>
+  ) : null;
+
 function Single<T extends string>({
   legend,
   options,
@@ -55,6 +97,7 @@ function Single<T extends string>({
             aria-pressed={o.value === value}
             onClick={() => onChange(o.value === value ? undefined : o.value)}
           >
+            <Emoji label={o.label} />
             {o.label}
           </button>
         ))}
@@ -92,6 +135,7 @@ function Multi<T extends string>({
       aria-pressed={values.includes(o.value)}
       onClick={() => toggle(o.value, exclusive)}
     >
+      <Emoji label={o.label} />
       {o.label}
     </button>
   );
@@ -360,6 +404,8 @@ export function IntroQuiz({
         aria-valuetext={`Question ${idx + 1} of ${n}`}
       >
         <span style={{ width: `${((idx + 1) / n) * 100}%` }} />
+        {/* Decorative segment dividers (the segmented look); the real progressbar above carries the meaning. */}
+        <i aria-hidden="true" style={{ ["--steps" as string]: n }} />
       </div>
       <h2 className="pa-h" id="fs-quiz-h">
         {q}

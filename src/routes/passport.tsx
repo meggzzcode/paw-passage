@@ -1,4 +1,5 @@
 import { flags } from "@/config/commercial";
+import { BRAND } from "@/config/brand";
 import { useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { Container } from "@/components/shell/Container";
@@ -96,8 +97,8 @@ function PassportPage() {
     <Container>
       <div className="pa-page">
         <RestoreAccessCallout />
-        <p className="pa-kicker">Adventure Passport</p>
-        <h1 className="pa-h1">{name}'s passport</h1>
+        <p className="pa-kicker">{name}'s Adventure Passport</p>
+        <h1 className="pa-h1">{BRAND.passportHeadline}</h1>
         <p className="pa-sub">
           {earned.count} {earned.count === 1 ? "adventure" : "adventures"} collected ·{" "}
           {earned.stamps.length} {earned.stamps.length === 1 ? "stamp" : "stamps"}

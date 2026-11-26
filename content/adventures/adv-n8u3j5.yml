@@ -7,17 +7,17 @@ objective: Build a low open camp, let your dog choose their campsite and spend a
 instructions:
   - Pick the camp spot and clear the floor. Move cables, candles and heaters well away and put down a non-slip mat or rug.
   - "Build a low, open camp: drape a blanket over two chairs or a sofa arm so one whole side stays open and your dog can walk in and out."
-  - Make two paper tickets, Campsite 1 and Camper. Put your dog's bed or favourite blanket inside and let them choose where in the camp to settle. That is their pitch.
+  - Put your dog's bed or favorite blanket inside and let them choose where in the camp to settle. That is their pitch. Paper tickets for the campsite are optional.
   - "Make a campfire without a flame: a ring of cushions with a battery lantern or battery tealight in the middle."
   - Dim the lights and settle in for fifteen to twenty minutes. Tell the campfire story of the day in a soft voice, or play a quiet nature soundtrack at low volume.
-  - "Lights out: say goodnight, stick the tickets on a page and note the campsite name and who fell asleep first."
-twist: Your dog chooses the campsite and the ticket stub marks the spot. There is no gear to buy, only a place that feels like somewhere else.
+  - "Lights out: say goodnight and note the campsite name and who fell asleep first."
+twist: Your dog chooses the campsite. There is no gear to buy, only a place that feels like somewhere else.
 variations:
   - "Very low camp: a single blanket over a sofa arm so a stiff dog can step in easily."
   - "For a noise-sensitive or nervous dog: skip the soundtrack and sit quietly near the camp."
   - "For a lively dog: start with a short hunt for toy firewood around the room before the camp."
   - "Rainy-afternoon version: hold the campout by daylight at a window."
-completion: Your dog has spent a few calm minutes at the campsite they chose and the tickets are on the page.
+completion: Your dog has spent a few calm minutes at the campsite they chose.
 photoIdea: Your dog settled in the camp with the lantern glow, taken without a flash.
 memoryPrompt: Where did your dog pitch camp, and who fell asleep first?
 minutesMin: 60
@@ -28,16 +28,16 @@ costMax: 0
 prep: light
 supplies:
   - Blankets and cushions
-  - Paper and a pen for tickets
   - A battery lantern or battery tealight
 optionalSupplies:
   - A device for a nature soundtrack
+  - Paper and a pen for campsite tickets
 requires:
   - blanket
   - household-items
   - paper-and-pens
 substitutes:
-  - No lantern? A phone torch under a cushion gives the glow.
+  - No lantern? A phone flashlight under a cushion gives the glow.
   - No spare chairs? Drape the blanket over the sofa arm.
 transport: none
 reservation:
@@ -91,7 +91,7 @@ keepsake:
   theme: campout-ticket
   headline: CAMPGROUND PASS
   subhead: Living room campsite. One night only
-  explainer: "Camping trip, but the tent is the living room"
+  explainer: We went camping and never left the living room
 access: free
 status: published
 relatedGuides: []

@@ -1,25 +1,25 @@
 schema: 2
 id: adv-c2h7v4
 title: The Paw-trait Studio
-clue: "Three little sets, one very particular art director and a front page waiting for a face."
-reveal: "Your dog is the art director today. Build three tiny photo sets, each with its own hidden scent surprise, then follow your dog as they scout them. Wherever they settle becomes the location for their make-believe magazine cover, and you finish with a launch party for one."
-objective: "Let your dog scout three tiny sets, find the scent surprise hidden in each, take relaxed portraits where they settle and choose one for a magazine cover."
+clue: Three tiny photo sets and an art director who has opinions.
+reveal: Your dog is the art director today. Build three tiny photo sets, each with a hidden scent surprise, then follow your dog as they scout them. Wherever they settle becomes the location for their make-believe magazine cover.
+objective: Let your dog scout three tiny sets, find the scent surprise hidden in each, take relaxed portraits where they settle and choose one for a magazine cover.
 instructions:
   - "Build three small sets in soft indirect light, away from busy walkways: a bed or blanket by the window, a folded towel and cushion in a quiet corner, and a different rug or throw in a third spot. Tuck a different small scent surprise under a fold of each, too big to swallow and never food: a worn T-shirt of yours, a clean cloth that has dried in the sun, and your dog's own blanket. Turn the flash off and the shutter sound down."
-  - "Open the scouting: with a slack lead or no lead indoors, stand back and let your dog wander to the sets at their own pace, in any order. They can sniff and nose out the surprise at each for as long as they like and skip any set. Do not call them, point or place them."
-  - "Watch where they choose to settle, or where they linger longest. That set is the location. If they ignore all three, the cover is a candid of whatever they do instead, and that counts."
-  - "Sit or lie low at their eye level a couple of steps back and take photos over about ten minutes while they relax, sniff, stretch or watch the window. If they bring a favourite toy to the set, that is the cover prop, since the art director chooses the props too. A soft word is allowed if they enjoy it."
-  - "Pick three frames where their eyes, ears or whiskers look most like them and choose one as the cover. Give it a magazine name, a silly headline and one line about the exclusive inside."
-  - "Hold the cover launch: prop the cover up on your phone beside the chosen set, say the headline aloud once in a quiet voice, then tidy the other two sets away and leave your dog to rest on the winning set with its surprise. The shoot is wrapped."
-twist: "Your dog is both location scout and art director: the cover is shot wherever they choose to settle, with their own props, and only moments they offer count, with no poses and no second takes."
+  - "Open the scouting: with a slack leash or no leash indoors, stand back and let your dog wander to the sets at their own pace, in any order. They can sniff and nose out the surprise at each for as long as they like and skip any set. Do not call them, point or place them."
+  - Watch where they choose to settle, or where they linger longest. That set is the location. If they ignore all three, the cover is a candid of whatever they do instead, and that counts.
+  - Sit or lie low at their eye level a couple of steps back and take photos over about ten minutes while they relax, sniff, stretch or watch the window. If they bring a favorite toy to the set, that is the cover prop, since the art director chooses the props too. A soft word is allowed if they enjoy it.
+  - Pick three frames where their eyes, ears or whiskers look most like them and choose one as the cover. Give it a magazine name, a silly headline and one line about the exclusive inside.
+  - Prop the cover up on your phone beside the chosen set and read the headline aloud once, quietly. Tidy the other two sets away and leave your dog to rest on the winning set with its surprise.
+twist: "The dog picks the set and the props. You only shoot moments they offer: no poses, no second takes."
 variations:
   - "For a dog who will not stay still: photograph them while they nap, with the camera quiet."
   - "No bright window: use a lamp with a soft shade instead of overhead light, and build all three sets in one room."
   - "For a puppy: build only two sets, scout for a minute or two and try again another day."
   - "For limited mobility: set all three sets within a few steps of your dog's bed and sit while they scout."
-completion: "Your dog has scouted the sets, you have chosen a cover shot and given it a headline."
+completion: Your dog has scouted the sets, you have chosen a cover shot and given it a headline.
 photoIdea: "The cover itself: a candid portrait at your dog's eye level, on the set they chose."
-memoryPrompt: "Which set did your dog choose, and what was the headline?"
+memoryPrompt: Which set did your dog choose, and what was the headline?
 minutesMin: 25
 minutesMax: 40
 activeMinutes: 20
@@ -90,7 +90,7 @@ keepsake:
   theme: editorial-cover
   headline: COVER STAR
   subhead: Exclusive portrait. No flash
-  explainer: "Cover shoot: three sets, one very picky art director"
+  explainer: "Cover shoot: the dog picked the set, I took the pictures"
 access: free
 status: published
 relatedGuides: []

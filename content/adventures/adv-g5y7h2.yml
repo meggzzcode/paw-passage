@@ -2,24 +2,24 @@ schema: 2
 id: adv-g5y7h2
 title: The Great Neighborhood Safari
 clue: Somewhere close by there is wildlife, and today you have the binoculars.
-reveal: Turn your own block into a safari. Make a pass and a spotter checklist, craft cardboard binoculars and let your dog's ears and nose tell you where to look for the day's sightings.
+reveal: Turn your own block into a safari. Write a short spotter checklist (cardboard binoculars optional) and let your dog's ears and nose tell you where to look.
 objective: Tick off at least five items on a spotter checklist on a short walk, guided by what your dog notices.
 instructions:
-  - "Make the safari pass: a paper ticket with your dog's name and the date. Write a checklist of eight sightings: a bird on a wire, a squirrel, a cat in a window, a bee on a flower, a snail or worm, a tree with a hole, something flapping in the wind, and paw prints in mud."
-  - Make binoculars from two cardboard tubes taped side by side. They are for you, not for your dog.
+  - "Write a checklist of eight sightings on any scrap of paper: a bird on a wire, a squirrel, a cat in a window, a bee on a flower, a snail or worm, a tree with a hole, something flapping in the wind, and paw prints in mud."
+  - "Optional: make binoculars from two cardboard tubes taped side by side. They are for you, not for your dog."
   - Choose a loop near home of ten to twenty minutes, and keep your dog on their leash.
   - Walk slowly. When your dog's ears prick or their nose lifts, stop and look the way they are looking first. Tick the checklist when you spot something.
   - Keep a respectful distance from wildlife. Never let your dog chase, approach or eat anything. If they fix on something, let them watch for a few seconds and then move on calmly.
-  - Head home when you have five ticks or your dog signals they are done. Fill in the pass with your favourite sighting.
-twist: "Your dog is the tracker: the moment their ears or nose lock on tells you where to point the binoculars."
+  - Head home when you have five ticks or your dog signals they are done. Circle your favorite sighting on the list.
+twist: "Your dog is the tracker: the moment their ears or nose lock on tells you where to look."
 variations:
   - "Balcony or window safari: tick the checklist from one comfortable spot."
-  - "Yard safari: hunt for the checklist in your own garden."
+  - "Yard safari: hunt for the checklist in your own yard."
   - "For a nervous dog: go at a quiet hour and keep the loop short."
   - "For a senior dog: take a bench safari and let the sightings come to you."
 completion: Five or more items are ticked, or your dog signals that they are done.
 photoIdea: Your dog mid-look at something off camera, ears up, taken at a distance without calling them.
-memoryPrompt: What was the favourite sighting, and who spotted it first?
+memoryPrompt: What was the favorite sighting, and who spotted it first?
 minutesMin: 20
 minutesMax: 45
 activeMinutes: 20
@@ -28,16 +28,14 @@ costMax: 0
 prep: light
 supplies:
   - Paper and a pen
-  - Two cardboard tubes from the recycling and tape
   - Leash
 optionalSupplies:
-  - Phone for photos
+  - Two cardboard tubes and tape, for binoculars
 requires:
   - paper-and-pens
   - household-items
   - leash-and-harness
-substitutes:
-  - No tubes? Make binoculars from your fingers, or skip them.
+substitutes: []
 transport: walkable
 reservation:
   needed: false
@@ -73,7 +71,7 @@ noise: some
 food: false
 water: none
 safety:
-  - "Check pavement with your hand: too hot for you is too hot for paws."
+  - "Check the sidewalk with your hand: too hot for you is too hot for paws."
   - Keep your dog on a leash, away from wildlife, and follow local leash rules.
   - "Puppies: ask your vet before public outings."
 activityTypes:
@@ -94,7 +92,7 @@ keepsake:
   theme: explorer-card
   headline: SAFARI EXPLORER
   subhead: Spotter card. Tracked by one very good nose
-  explainer: "Safari day: spotted every critter on our own block"
+  explainer: "Safari rule: stop wherever the ears go up"
 access: free
 status: published
 relatedGuides: []

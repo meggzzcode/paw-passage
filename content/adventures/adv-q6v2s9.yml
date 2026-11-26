@@ -2,21 +2,21 @@ schema: 2
 id: adv-q6v2s9
 title: The Secret Detective Agency
 clue: A case has landed on the desk, and the only detective on staff has a very good nose.
-reveal: Something has gone missing at home. Make your dog an official detective ID, lay a short and safe scent trail through a room or two, and let them crack the case at their own pace.
-objective: Make a detective ID, lay a short scent trail that ends at a hidden toy, and let your dog solve the case.
+reveal: Something has gone missing at home. Lay a short, safe scent trail through a room or two and let your dog crack the case at their own pace. An ID card is optional.
+objective: Lay a short scent trail that ends at a hidden toy and let your dog solve the case.
 instructions:
-  - "Make the detective ID: on a card write a code name for your dog, the name of your agency and Case No. 1. Leave a corner empty for a photo."
-  - "Choose the missing item: one favourite toy. Show it to your dog, then move your dog to another room or behind a gate while you set up."
+  - "Optional: on an index card write a code name for your dog and Case No. 1, with a corner left for a photo."
+  - "Choose the missing item: one favorite toy. Show it to your dog, then move your dog to another room or behind a gate while you set up."
   - "Lay the trail: rub the toy and then a clean, worn sock along the floor in a line with two or three clue spots, for example a sofa leg and a doorway, ending at the hiding place. Skip anything strongly scented."
   - "Hide the toy low and easy: behind a cushion with a corner showing, or beside a chair leg. No jumping, climbing or reaching. A first case should be solved in under two minutes."
   - "Open the case: bring your dog in with a calm case word, stay quiet and do not point. Let them follow their nose at their own pace. If they stall, walk a step toward the first clue yourself rather than leading them."
-  - "Case closed: celebrate the find and let them keep the toy. Stamp the ID Case Solved and write one line in the case file: the clues and the detective's method."
-twist: "Your dog is a detective with an ID you made yourself and a case file to keep: you play the crime scene and the praise is the pay."
+  - "Case closed: celebrate the find and let them keep the toy. Write one line in the case file: the clues and the detective's method."
+twist: "Your dog is the detective and you play the crime scene: the praise is the pay."
 variations:
   - "Very gentle: lay the trail on one rug with the toy a few steps away."
   - "For a lively dog: lay a longer trail across two rooms and add a second hidden toy for a two-part case."
-  - "For a dog who loves a longer hunt: hide a second favourite toy or a rolled-up towel with the toy tucked in a fold, with no food involved."
-  - "For a dog who is not toy-motivated: hide their favourite blanket instead."
+  - "For a dog who loves a longer hunt: hide a second favorite toy or a rolled-up towel with the toy tucked in a fold, with no food involved."
+  - "For a dog who is not toy-motivated: hide their favorite blanket instead."
 completion: The detective finds the hidden item and the case file has its first entry.
 photoIdea: A calm portrait of your dog beside the found toy and the case file, taken once the case is closed and they are relaxed.
 memoryPrompt: What was the case, and what was the detective's method?
@@ -29,7 +29,7 @@ prep: light
 supplies:
   - Index card or paper for the ID
   - A pen
-  - One favourite toy
+  - One favorite toy
   - A clean, worn sock or soft cloth
 optionalSupplies:
   - Baby gate
@@ -39,7 +39,7 @@ requires:
   - paper-and-pens
   - household-items
 substitutes:
-  - No sock? Rub a clean cloth or tea towel instead.
+  - No sock? Rub a clean cloth or dish towel instead.
   - No baby gate? Close a door or ask someone to keep your dog company.
 transport: none
 reservation:
@@ -92,7 +92,7 @@ keepsake:
   theme: secret-agent
   headline: DETECTIVE ID
   subhead: Cases solved by nose
-  explainer: "Case file: one mystery, one very good nose on the job"
+  explainer: "Case file: the toy vanished, the nose solved it"
 access: free
 status: published
 relatedGuides: []

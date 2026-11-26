@@ -9,7 +9,7 @@ collections:
   - slug: "rainy-day-club"
     title: "Rainy Day Club"
     tagline: "Bad weather, good company."
-    description: "Cosy indoor adventures for wet, cold or windy days when staying in is the plan."
+    description: "Cozy indoor adventures for wet, cold or windy days when staying in is the plan."
     order: 2
     accent: "sky"
     premiumOnly: false
@@ -57,7 +57,7 @@ collections:
     premiumOnly: false
   - slug: "city-explorers"
     title: "City Explorers"
-    tagline: "Your neighbourhood, with fresh eyes."
+    tagline: "Your neighborhood, with fresh eyes."
     description: "Urban adventures that turn familiar streets, parks and corners into a day of discovery."
     order: 9
     accent: "sky"
@@ -135,7 +135,7 @@ collections:
   - slug: "our-story"
     title: "Our Story"
     tagline: "The adventures that become your history."
-    description: "Adventures about looking back together and keeping what you find, from old photographs to favourite things."
+    description: "Adventures about looking back together and keeping what you find, from old photographs to favorite things."
     order: 20
     accent: "ink"
     premiumOnly: false

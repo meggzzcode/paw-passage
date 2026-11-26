@@ -5,12 +5,12 @@ clue: At every fork in the road, the vote goes to the one with the keenest nose.
 reveal: Plan a short walk with three safe forks and let your dog choose the way at each one. Where you end up is the expedition, and the postcard records the route you took together.
 objective: Walk a short route where your dog picks the way at three safe forks, then write up the expedition.
 instructions:
-  - "Before you leave, choose three forks on a familiar route where every option is safe: no road to cross, nothing steep, nowhere you would avoid. Write Fork 1, 2 and 3 on a card with the choices."
+  - "Before you leave, choose three forks on a familiar route where every option is safe: no road to cross, nothing steep, nowhere you would avoid. Jot Fork 1, 2 and 3 on your phone or a scrap of paper."
   - At the first fork, stop, loosen the leash and wait a few relaxed seconds. Read your dog's choice from where they look, lean or head with their nose.
   - Follow their choice for a few minutes. If they do not choose, pick for them and write No vote. You may veto any choice, but only for safety.
   - Repeat at forks two and three. Give the expedition a name and sketch the route with arrows as you go.
   - At the end spot, take a break with water and a few quiet minutes, which is the expedition camp.
-  - Draw the route on the back of a postcard and write what you found along the way.
+  - Sketch the route on any scrap of paper and note what you found along the way.
 twist: "A choose-your-own-adventure walk: your dog's lean at each fork decides the route, and you only hold a veto for safety."
 variations:
   - "Indoor expedition: use forks in a hallway or between rooms."
@@ -70,7 +70,7 @@ noise: some
 food: false
 water: none
 safety:
-  - "Check pavement with your hand: too hot for you is too hot for paws."
+  - "Check the sidewalk with your hand: too hot for you is too hot for paws."
   - Keep your dog on a leash and follow local leash rules.
   - "Puppies: ask your vet before public outings."
 activityTypes:
@@ -91,7 +91,7 @@ keepsake:
   theme: day-trip
   headline: CAPTAIN'S ROUTE
   subhead: Route chosen by the dog
-  explainer: "Today's route was decided at every fork by my nose"
+  explainer: Three forks, three votes, and I only had a veto
 access: free
 status: published
 relatedGuides: []

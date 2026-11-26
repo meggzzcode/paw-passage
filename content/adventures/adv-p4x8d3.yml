@@ -1,41 +1,42 @@
 schema: 2
 id: adv-p4x8d3
 title: The Little Picnic Club
-clue: "A ten-minute trail, three courses at three stops and a guest who orders with their nose."
-reveal: "Take a tiny picnic trail near home where the menu is made of smells. Your dog visits three stops on a ten-minute loop, each with one scent course, and chooses the dish of the day by where they linger. The loop ends on the picnic blanket with a chef's surprise under a napkin and a toast."
-objective: "Walk a ten-minute loop with a scent course at each of three stops, let your dog choose the dish of the day, find the chef's surprise on the blanket and toast the club."
+clue: A ten-minute trail, three courses at three stops and a guest who orders with their nose.
+reveal: Take a tiny picnic trail near home where the menu is made of smells. Your dog visits three stops on a ten-minute loop, each with one scent course, and picks the dish of the day by where they linger. The loop ends on the blanket with a surprise toy under a napkin.
+objective: Walk a ten-minute loop with a scent course at each of three stops, let your dog pick the dish of the day, find the surprise on the blanket and raise a cup to it.
 instructions:
-  - "Plan a flat loop at home that takes about ten minutes with plenty of sniffing: round your yard or patio, along a balcony, or along a hallway and through two rooms. Check the ground for hot surfaces, sharp bits and plants. The last stop is the picnic blanket."
-  - "Write the scent menu on a card: Starter, Main and Dessert. Each course is a smell, laid flat and too big to swallow, at its own stop: a clean cloth that has sat on the windowsill all morning, a T-shirt you have worn and a corner of your dog's own blanket. Leave a little space around each. Hide the chef's surprise, one favourite toy, under a folded napkin or small towel on the picnic blanket."
-  - "Set off on a slack lead, or no lead indoors. At each stop let your dog arrive in their own time and take the course in any order or skip it. Do not point or lead. They can sniff, move on or leave, and the picnic works every way."
+  - "Plan a flat loop near home that takes about ten minutes with plenty of sniffing: round your yard or patio, along a balcony, or down a hallway and through two rooms. Check the ground for hot surfaces, sharp bits and plants. The last stop is the picnic blanket."
+  - "Set out three scent courses, one per stop, each laid flat and too big to swallow: a clean cloth that has sat on the windowsill all morning, a T-shirt you have worn and a small clean piece of fabric rubbed on your dog's own blanket. (A scribbled Starter, Main and Dessert card is optional.) Hide the surprise, one favorite toy, under a folded napkin or small towel on the picnic blanket."
+  - Set off on a slack leash, or no leash indoors. At each stop let your dog arrive in their own time and take the course in any order or skip it. Do not point or lead. They can sniff, move on or leave, and the picnic works every way.
   - "Watch for the dish of the day: the stop where they linger longest. Gather up that course on the way to the blanket and put the other two away."
-  - "At the picnic blanket, lay the winning course in the middle, sit down on the far side with your cup and let your dog take the blanket in their own time."
-  - "Serve the chef's surprise: when your dog has finished with the dish of the day, nudge the napkin corner so the toy peeks out, then sit back and let them uncover it, carry it off or play."
-  - "Close the club with a toast: clink your cup against the rim of their water bowl, say the club name once and name the dish of the day out loud as the winner. Let your dog have the blanket for the rest of the picnic."
-twist: "The picnic is a journey made of smells, not food: your dog orders the dish of the day with their nose along a ten-minute trail, a chef's surprise waits under a napkin at the end and the toast goes to the winning dish."
+  - At the blanket, lay the winning course in the middle, sit on the far side with your cup and let your dog take the blanket in their own time.
+  - "Serve the surprise: when your dog has finished with the dish of the day, nudge the napkin corner so the toy peeks out, then sit back and let them uncover it, carry it off or play."
+  - Raise your cup, say the name of the winning dish out loud and let your dog have the blanket for the rest of the picnic.
+twist: "The picnic is a trail of smells, not food: your dog orders the dish of the day with their nose, and a toy waits under a napkin at the end."
 variations:
   - "Rain version: run the trail along the hallway and through two rooms, and finish on the living-room floor with a window open."
   - "For a nervous dog: use your own yard or balcony, offer only one course and keep it to ten minutes."
   - "For a lively dog: add a fourth stop and tuck the surprise toy a little deeper in its napkin."
   - "For limited mobility: shorten the loop to three stops within a few steps of a chair, and picnic from the chair with the blanket beside you."
-completion: "Your dog has visited the stops they liked, chosen a dish of the day, found the chef's surprise and you have toasted the club."
-photoIdea: "Your dog investigating the scent menu at one of the stops, taken from their eye level."
-memoryPrompt: "Which stop did your dog choose as the dish of the day, and what did they do with the surprise?"
+completion: Your dog has visited the stops they liked, picked a dish of the day and found the surprise.
+photoIdea: Your dog investigating the scent menu at one of the stops, taken from their eye level.
+memoryPrompt: Which stop did your dog choose as the dish of the day, and what did they do with the surprise?
 minutesMin: 30
 minutesMax: 60
 activeMinutes: 25
 costMin: 0
-costMax: 5
+costMax: 0
 prep: light
 supplies:
-  - "Blanket"
-  - "Water bowl and fresh water"
-  - "A cup for your own drink"
-  - "A card or paper for the menu"
-  - "A napkin or small towel"
-  - "A clean cloth, a worn T-shirt and a corner of your dog's blanket for the scent menu"
-  - "One favourite toy for the chef's surprise"
+  - Blanket
+  - Water bowl and fresh water
+  - A cup for your own drink
+  - A napkin or small towel
+  - A clean cloth, a worn T-shirt and a small piece of fabric for the scent courses
+  - One favorite toy for the surprise
 optionalSupplies:
+  - Leash, for a yard or balcony
+  - Card and pen for the menu
   - Shade umbrella
   - Folding chair
 substitutes:
@@ -57,7 +58,6 @@ seasons:
   - summer
   - autumn
 avoidWeather:
-  - rain
   - heat
   - cold
 lifeStages:
@@ -99,8 +99,8 @@ keepsake:
   family: travel-postcard
   theme: picnic-postcard
   headline: GREETINGS FROM THE PICNIC
-  subhead: A party for two. Wish you were here
-  explainer: "Picnic trail for two, menu ordered entirely by nose"
+  subhead: A party for two. Menu by nose
+  explainer: "Menu ordered by nose: three stops, one dish of the day"
 access: free
 status: draft
 relatedGuides: []
@@ -116,3 +116,8 @@ review:
   practicality: 7
   memoryValue: 7
   reviewedOn: 2026-11-26
+requires:
+  - blanket
+  - household-items
+  - toys
+  - leash-and-harness

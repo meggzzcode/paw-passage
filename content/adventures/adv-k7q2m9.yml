@@ -7,7 +7,7 @@ objective: Run a four-toy bracket where your dog's own choices pick the winner, 
 instructions:
   - "Pick four toys your dog already knows. Check each one: set aside any with loose parts, torn seams or stuffing coming out."
   - Write your prediction of the champion on a scrap of paper, fold it and put it away. No telling your dog and no peeking.
-  - "Round one: put two toys on the floor about a metre apart, on a non-slip surface. Sit still and say nothing. Whichever toy your dog sniffs first, nudges, picks up or settles beside wins the match. Then run the second match the same way."
+  - "Round one: put two toys on the floor about a meter apart, on a non-slip surface. Sit still and say nothing. Whichever toy your dog sniffs first, nudges, picks up or settles beside wins the match. Then run the second match the same way."
   - "Round two: set the two winners down the same way for the final."
   - If your dog ignores a pair, swap the toys' places once. If they still do not choose, call it a draw and let both through. Never nudge, point or hold a toy to steer them.
   - Unfold your prediction, announce the champion with a flourish and play with it for a minute as the victory lap.
@@ -87,7 +87,7 @@ keepsake:
   theme: toy-champion
   headline: OFFICIAL TOY CHAMPION
   subhead: Chosen by the dog, announced by you
-  explainer: "Toy showdown: four contenders, one front-page winner"
+  explainer: I wrote my prediction down first. The dog ignored it
 access: free
 status: published
 relatedGuides: []

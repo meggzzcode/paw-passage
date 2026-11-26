@@ -5,8 +5,8 @@ clue: You live here, but today you are on vacation.
 reveal: Act like visitors in your own neighborhood. Choose three sights a tourist would photograph, visit them at your dog's pace and send home a postcard from the trip. Your dog is the local guide.
 objective: Visit three sights near home like tourists and write a postcard about the trip.
 instructions:
-  - "Pick three places a tourist would photograph: a mural, a fountain, a shop front, an old tree, a bench with a view. Choose a corner of town you know less well if you like, but keep all three within a short, comfortable walk and check that none needs steep kerbs or stairs."
-  - Write the itinerary on a card and give your dog a tourist name, such as Signora Biscuit. A name only, with no costume.
+  - "Pick three places a tourist would photograph: a mural, a fountain, a shop front, an old tree, a bench with a view. Choose a corner of town you know less well if you like, but keep all three within a short, comfortable walk and check that none needs steep curbs or stairs."
+  - "Jot the three stops on a card. A tourist name for your dog is optional, such as Signora Biscuit, but names only: no costume."
   - "Walk to the first stop like a visitor: slow down, look up and read the signs. Let your dog sniff for as long as they like."
   - At each stop take one tourist photo and write down what a visitor would notice that you never have.
   - Skip a stop if it is crowded, loud or your dog is tired. Two stops out of three still counts.
@@ -72,7 +72,7 @@ noise: some
 food: false
 water: none
 safety:
-  - "Check pavement with your hand: too hot for you is too hot for paws."
+  - "Check the sidewalk with your hand: too hot for you is too hot for paws."
   - Keep your dog on a leash and follow local leash rules.
   - "Puppies: ask your vet before public outings."
 activityTypes:
@@ -92,7 +92,7 @@ keepsake:
   theme: hometown-postcard
   headline: GREETINGS FROM OUR TOWN
   subhead: Wish you were here
-  explainer: "Tourists in our own town, full vacation mode"
+  explainer: Tourists in our own town. The dog was the guide
 access: free
 status: published
 relatedGuides: []

@@ -16,7 +16,7 @@ achievements:
     reward: "A collage keepsake built from your saved memories."
   - threshold: 50
     title: "Adventure Veteran"
-    reward: "A certificate with your dog's name and your favourite adventures."
+    reward: "A certificate with your dog's name and your favorite adventures."
   - threshold: 75
     title: "Passport Master"
     reward: "A large keepsake card for the full journey so far."

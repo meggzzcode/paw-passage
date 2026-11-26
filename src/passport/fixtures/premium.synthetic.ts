@@ -42,6 +42,7 @@ const base: Omit<Adventure, "id" | "title" | "clue" | "reveal" | "twist"> = {
   safety: ["SYNTHETIC safety line for tests."],
   activityTypes: ["relaxation"],
   collections: ["road-trip-adventures"],
+  household: [],
   stamps: [],
   achievements: [],
   keepsake: { family: "collage", theme: "favorite-moments", headline: "SYNTHETIC" },

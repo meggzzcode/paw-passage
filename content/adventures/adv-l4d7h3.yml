@@ -35,7 +35,7 @@ status: published
 dogMobility: low
 stepFree: true
 id: adv-l4d7h3
-title: The Low-Down Tour
+title: A Dog's-Eye Adventure
 clue: Everyone in the house gets down on the floor, and the guide has four legs.
 reveal: Your family sees the house the way your dog does. Everyone follows your dog on hands and knees through one room, then draws a map of what they noticed. The route ends at a low-down treasure the grownups planted for the dog.
 objective: Follow your dog slowly around one room at floor level, map what you notice and find the treasure at the end.
@@ -105,3 +105,5 @@ review:
   practicality: 8
   memoryValue: 8
   reviewedOn: "2026-11-26"
+role: everyday
+teaser: "The whole house looks different from down there. Come and see."

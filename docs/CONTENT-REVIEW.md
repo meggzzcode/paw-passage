@@ -4,7 +4,7 @@ Review date: 2026-11-26. This document is public: it describes only the free adv
 
 **Honest statement about the scores.** The 1 to 10 numbers in each adventure file are the independent reviewer's scores, not the authors' own (the authors scored about 0.8 points higher on average and were judged too generous). Publication bar (chosen by the owner on 2026-11-26): average of at least 7.0 and no criterion below 6, with an editorial goal of 7.5 or more for premium adventures. Nothing has been tested with dogs or owners. The scores are editorial judgements, not customer ratings, and must never be shown or described as such. The bar is an authoring gate, not a quality guarantee.
 
-**Status.** The Little Picnic Club and The Sunrise Breakfast Club did not pass the bar after a rewrite and were deleted. The free library is the 10 published adventures.
+**Status.** The Little Picnic Club failed the independent re-score (6.83) and was deleted; The Sunrise Breakfast Club passed at 7.17 after a wording fix. The free library is the 10 published adventures.
 
 ## Library (10 free adventures, all published)
 

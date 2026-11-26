@@ -1,0 +1,119 @@
+schema: 2
+transport: none
+reservation:
+  needed: false
+homes:
+  - apartment
+  - house-no-yard
+  - house-with-yard
+seasons: []
+avoidWeather: []
+sizes: []
+household: []
+achievements: []
+relatedGuides: []
+affiliateProducts: []
+access: free
+status: published
+crowd: none
+strangers: false
+otherDogs: false
+noise: quiet
+water: none
+stepFree: true
+prep: none
+research:
+  - label: "ASPCA: canine DIY enrichment"
+    url: https://www.aspca.org/pet-care/dog-care/canine-diy-enrichment
+  - label: "Cornell Riney Canine Health Center: canine enrichment ideas"
+    url: https://riney.vet.cornell.edu/member-benefits-health-tips/canine-enrichment-ideas
+id: adv-t5s7w3
+title: The Sunrise Breakfast Club
+clue: An early alarm, a warm mug and a morning that nobody is in a hurry to start.
+reveal: "Greet the day together before the neighborhood wakes up. Find a quiet spot for sunrise, share breakfast (your mug, their usual meal) and let your dog read the early-morning news. The club has one rule: nobody hurries."
+objective: Share a slow breakfast with your dog in a quiet spot at sunrise, and let them take in the early morning at their own pace.
+instructions:
+  - "The evening before, check tomorrow's sunrise time and choose a quiet spot you can reach without steps: your doorstep, balcony, yard or a bright window seat. Leave a blanket, your mug and your dog's bowl by the door, and set an alarm for about twenty minutes before sunrise."
+  - In the morning, take your time. Let your dog stretch and decide whether they are in. A dog who prefers to stay in bed can be served breakfast in bed, and the club still counts.
+  - Settle at the spot with the blanket and wait for the light. Let your dog watch, sniff the air or lie down, with no commands needed. Early mornings smell different, so expect some long sniffs.
+  - "As the sky brightens, serve their usual breakfast in their bowl, with no extras: the club's breakfast is their normal meal in a new place. Sip your own drink beside them."
+  - When the sun clears the rooftops or the sky turns bright, raise your mug for a quiet toast to the new day. If your dog wants to explore the spot, let them wander on a leash unless your yard is fully fenced.
+  - Take a slow lap of the yard, balcony or doorstep area if your dog is up for it, and let them lead. Nobody is checking the clock.
+  - "Write one line for the club record: the weather, the first sound you heard and what your dog sniffed longest."
+twist: The sunrise is the guest of honor, and your dog sets the pace of the whole morning from the first stretch to the last sniff.
+variations:
+  - "Window version for apartments: set the blanket beside a bright window and watch the light arrive in the room."
+  - "Dark winter mornings: hold the club by lamplight and make the toast when the sky begins to lighten."
+  - "Sleepy-weekend edition: skip sunrise and hold the club at nine o'clock in the sunniest spot you have."
+  - "Senior or limited-mobility dog: carry the bowl and blanket to their bed and let the morning come to them."
+completion: You have shared a quiet breakfast with your dog in a spot with morning light, and your dog has set the pace.
+photoIdea: Your dog's sleepy face or silhouette in the first light, taken from a little distance with no posing.
+memoryPrompt: What was the first sound of the morning, and what did your dog sniff longest?
+minutesMin: 30
+minutesMax: 60
+activeMinutes: 20
+costMin: 0
+costMax: 0
+supplies:
+  - A blanket
+  - Your dog's bowl and usual breakfast
+  - A mug for you
+  - Leash
+optionalSupplies:
+  - A thermos
+  - A small notebook for the club record
+requires:
+  - blanket
+  - household-items
+  - treats
+  - leash-and-harness
+substitutes:
+  - No balcony or yard? A bright window and a folded blanket make a fine clubhouse.
+setting: either
+space: none
+places:
+  - home
+lifeStages:
+  - adult
+  - senior
+personalities:
+  - cozy
+  - gentle
+  - curious
+energy: gentle
+dogMobility: low
+ownerMobility: seated
+food: true
+dietNotes: Only their usual breakfast portion, served as normal. Ask your vet about diet; share nothing from your own plate.
+safety:
+  - "Share nothing from your plate or mug: caffeine, chocolate and grapes are unsafe for dogs."
+  - Check the cold, heat and ground first, dress for the weather and head in if your dog shivers or pants.
+  - Beyond your own fenced yard, keep your dog on a leash, and ask your vet before taking a puppy anywhere public.
+activityTypes:
+  - relaxation
+  - food-and-treats
+  - memory-making
+collections:
+  - seasons-together
+  - the-great-outdoors
+  - home-sweet-home
+stamps:
+  - first-adventure
+  - sunshine-seeker
+  - cozy-companion
+keepsake:
+  family: seasonal-frame
+  theme: sunrise
+  headline: SUNRISE CLUB
+  subhead: Breakfast with the first light
+  explainer: "Club meeting: breakfast at sunrise, no hurry at all"
+review:
+  ownerAppeal: 8
+  dogEnjoyment: 7
+  originality: 6
+  adventureFactor: 7
+  practicality: 7
+  memoryValue: 8
+  reviewedOn: "2026-11-26"
+role: lifestyle
+teaser: Be up before the neighborhood wakes, and have the quiet morning all to yourselves.

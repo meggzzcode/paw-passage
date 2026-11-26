@@ -47,17 +47,30 @@ None of these has been done, so none is claimed. Each has a task in `COWORK-HAND
 
 Fill this table for the exact launch commit. Do not copy numbers from any earlier document, report or message. A run on any other commit does not count.
 
-| Field  | Value    |
-| ------ | -------- |
-| COMMIT | `<fill>` |
-| DATE   | `<fill>` |
-| NODE   | `<fill>` |
+| Field  | Value                                                                                                                                                   |
+| ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| COMMIT | `00eaf25aa145c24c4e5071609767af7f33127ac6` (every check below was run on this commit with a clean working tree; the next commit changes only this file) |
+| DATE   | `2026-11-26`                                                                                                                                            |
+| NODE   | `v22 (container default)`; Vite dev notices about `vite-tsconfig-paths` and the experimental `EnvHttpProxyAgent` appear in logs and are harmless        |
 
-| Command                                | Result   |
-| -------------------------------------- | -------- |
-| `npx tsc --noEmit`                     | `<fill>` |
-| `npx eslint .`                         | `<fill>` |
-| `npx vitest run`                       | `<fill>` |
-| `NITRO_PRESET=netlify npx vite build`  | `<fill>` |
-| `node scripts/test-netlify-ignore.mjs` | `<fill>` |
-| `node scripts/check-leaks.mjs dist`    | `<fill>` |
+| Command                                                                                                           | Result                                                                                                                                                                         |
+| ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `npx tsc --noEmit`                                                                                                | 0 errors                                                                                                                                                                       |
+| `npx eslint .` (run as `npx eslint src plugins scripts netlify`; the bare `.` form exceeded the 120 s tool limit) | 0 errors, 41 warnings (existing `react-refresh/only-export-components` and similar)                                                                                            |
+| `npx vitest run`                                                                                                  | 117 files, 2018 tests, all passed, no exclusions (49 s)                                                                                                                        |
+| `NITRO_PRESET=netlify npx vite build`                                                                             | exit 0 after `rm -rf dist .netlify .output`; outputs `dist/` and `.netlify/functions-internal`; no `.map` files                                                                |
+| `node scripts/test-netlify-ignore.mjs`                                                                            | All rows pass                                                                                                                                                                  |
+| `node scripts/check-leaks.mjs dist` and `.netlify`                                                                | passed (130 and 143 files, 22 markers, no premium instructions); an extra scan of 981 real premium text fragments from `content/premium` found 0 hits in `dist` and `.netlify` |
+
+### Other checks run on the same commit
+
+| Check                                                                                                                                      | Result                                                                                                                    |
+| ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
+| `node scripts/validate-journal.mjs`                                                                                                        | `journal content OK` (ten articles, word counts, banned phrases, premium sentence overlap)                                |
+| `node scripts/premium-import.mjs --dir content/premium` (dry run, nothing written)                                                         | Validated 99 premium adventures; 50 showcase previews; 113 published across 25 collections                                |
+| `node scripts/library-stats.mjs --md`                                                                                                      | 113 adventures (14 free pool, 99 premium), 117 keepsake themes, 25 collections                                            |
+| Entitlement, premium integration, photo-editor gating and security tests (`netlify-env`, `premium-e2e`, `keepsake-gating`, `security-api`) | 4 files, 88 tests passed (also part of the full run)                                                                      |
+| Secret scan of tracked text files (patterns for live keys, private keys, tokens)                                                           | no matches. This is a pattern scan of current files, not a git-history scan (gitleaks over history remains a Cowork task) |
+| `npx prettier --check` (src, docs, content, scripts, netlify, plugins, README, AGENTS, `.pages.yml`)                                       | 7 warnings, all in older `content/guides/*.md` files (formatting only); `netlify.toml` has no prettier parser             |
+
+Warnings are reported separately from errors above: 0 errors in tsc and eslint; 41 eslint warnings; 7 prettier formatting warnings in legacy guide files.

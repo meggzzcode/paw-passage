@@ -10,7 +10,7 @@ Choose one:
 - **BUILD COMPLETE — EXTERNAL SETUP REQUIRED**: everything in the code and content passes; only the tasks in `COWORK-HANDOFF.md` remain.
 - **NOT READY**: at least one gate fails for a reason inside the repository.
 
-**Current verdict: BUILD COMPLETE — EXTERNAL SETUP REQUIRED** (provisional; the lead confirms). No repository defect is known. What remains is external: nothing has run on Netlify or Gumroad, no real device has been used, the premium library is not yet in any store, and several owner decisions are open (`COWORK-HANDOFF.md`, Owner decisions). Gift checkout, PWA install prompts and push notifications are optional and off; they do not block launch.
+**Current verdict: BUILD COMPLETE — EXTERNAL SETUP REQUIRED** (confirmed against commit 00eaf25 on 2026-11-26; see QA-REPORT.md, Last verified run). No repository defect is known. What remains is external: nothing has run on Netlify or Gumroad, no real device has been used, the premium library is not yet in any store, and several owner decisions are open (`COWORK-HANDOFF.md`, Owner decisions). Gift checkout, PWA install prompts and push notifications are optional and off; they do not block launch.
 
 ## Gates
 

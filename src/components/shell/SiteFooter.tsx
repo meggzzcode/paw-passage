@@ -45,6 +45,11 @@ export function SiteFooter() {
             <li>
               <AppLink to={restoreLink.to}>{restoreLink.label}</AppLink>
             </li>
+            <li>
+              <AppLink to="/concept" className="italic opacity-80">
+                Design concept (sample)
+              </AppLink>
+            </li>
           </ul>
         </nav>
         <nav aria-label="About and legal">

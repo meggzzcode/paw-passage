@@ -2,7 +2,7 @@
   command = "npm run build"
   publish = "dist"
   # Skip the build (and its credits) ONLY when a push changes nothing but docs/, .github/ or root-level Markdown files
-  # (README.md, COWORK-HANDOFF.md ...). Published Markdown (content/guides/*.md, content/**/*.md, src/**/*.md) and every
+  # (README.md, AGENTS.md ...). Published Markdown (content/guides/*.md, content/**/*.md, src/**/*.md) and every
   # Pages CMS save MUST build, so never exclude "*.md" generally: ':(exclude,glob)*.md' matches the repo root only.
   # Exit 0 = skip. An empty CACHED_COMMIT_REF fails the -n test (exit 1), so the build runs. Regression test:
   # node scripts/test-netlify-ignore.mjs (run by CI).
@@ -28,7 +28,7 @@
     Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
 
 # ---------------------------------------------------------------------------------------------------------------------
-# Retired addresses (the old stays directory and its rental policy guides). The pages are gone for good and have no
+# Retired addresses (removed sections, tools, data files and guides). The pages are gone for good and have no
 # relevant replacement, so they answer 410 Gone. They are never redirected to the home page.
 # Order matters: the first matching rule wins.
 # ---------------------------------------------------------------------------------------------------------------------
@@ -150,7 +150,7 @@
   status = 410
   force = true
 
-# Retired guides (rental policy and lodging directory). No relevant replacement exists.
+# Retired guides. No relevant replacement exists.
 [[redirects]]
   from = "/guides/airbnb-pet-damage-charge-after-checkout"
   to = "/gone.html"

@@ -37,7 +37,7 @@ const rows = [
   ["docs only (nested docs/x/y.csv)", "docs/data/x.csv", "skip"],
   [".github workflow only", ".github/workflows/ci.yml", "skip"],
   ["root README.md", "README.md", "skip"],
-  ["root COWORK-HANDOFF.md", "COWORK-HANDOFF.md", "skip"],
+  ["root AGENTS.md", "AGENTS.md", "skip"],
 ];
 
 const dir = mkdtempSync(join(tmpdir(), "netlify-ignore-"));

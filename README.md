@@ -1,43 +1,65 @@
-# Paws & Passage
+# Paw & Passage: The Adventure Passport
 
-A dog-friendly vacation-rental travel site. Pre-revenue, plain-file content, no database, no admin login, no server to look after.
+The Adventure Passport is a collectible, self-paced set of little adventures to share with a dog. Visitors try free sample adventures with no account. A one-time purchase unlocks a much larger, protected library, progress that syncs across devices, and extra keepsakes. There are no subscriptions, no AI APIs and no accounts for the free experience.
 
-What the repository contains (counted 2026-11-25 at `3e5923b`; commands in [docs/buyer/ROUTE_AND_ASSET_COUNTS.md](docs/buyer/ROUTE_AND_ASSET_COUNTS.md)):
+This repository is **public**. It holds the website, the free adventures, the engine and the server code. It does **not** hold the premium library, any secret or any customer data.
 
-- **31 published researched guides** (31 files; no drafts today) and **8 town "things to do with a dog" articles**.
-- **An original 38-manager pet-policy dataset** (13 fields per manager) on `/data/pet-policies` and as `public/pet-policies-38-managers.csv`.
-- **3 tools:** a personalized dog packing planner (saves on the visitor's device only; copy and print; no accounts), "will my dog be accepted" (checks the 38 managers) and a before-you-book checklist. There are no calculators.
-- **A stay directory:** 83 stay files, none confirmed with a host; 78 shown (each page says its details are not confirmed with the host) because each has a public Vrbo listing link, 23 of them indexable, 5 hidden. The site ships in `stayDirectoryMode: public-sources`: stays keep plain source links if the seller's affiliate links are removed ([docs/BUYER_AFFILIATE_TRANSITION.md](docs/BUYER_AFFILIATE_TRANSITION.md)).
-- **A photo-free Gear shop:** 11 category pages, 5 trip collections, 65 active products (92 records), no third-party product images.
-- A 105-URL generated sitemap, structured data, redirects and a weekly health check. **774 automated tests in 61 files.**
+## Run it
 
-**Deployment (2026-11-25):** production runs `main@82b0b34`, which is older than the final commit; the final build is not yet deployed and needs the owner's approval ([docs/SALE_RELEASE_STATUS.md](docs/SALE_RELEASE_STATUS.md)). Affiliate accounts, analytics and Search Console are the seller's and are **not** part of a sale; the IDs in the repository are the seller's (`node scripts/audit-seller-ids.mjs` lists them).
+Requires Node 22 or newer.
 
-Built with TanStack Start + Vite + Tailwind, hosted on Netlify. It was edited in Lovable, which is not needed to build, host or edit.
-
-**Buyer start: [BUYER_HANDOVER.md](./BUYER_HANDOVER.md) (START HERE: Owner's Guide)**, with [docs/BUYER_OVERVIEW.md](./docs/BUYER_OVERVIEW.md) as the one-page summary; verified counts: [docs/BUYER_ASSET_INVENTORY.md](docs/BUYER_ASSET_INVENTORY.md); transfer steps: [docs/TRANSFER_CHECKLIST.md](docs/TRANSFER_CHECKLIST.md); replacing the seller's IDs: [docs/BUYER_AFFILIATE_TRANSITION.md](docs/BUYER_AFFILIATE_TRANSITION.md).
-**Developer handbook: see [HANDOVER.md](./HANDOVER.md)** (where content lives: stays, affiliate links, products, the packing planner and settings are in `content/*.yml`, Markdown guides in `content/guides/*.md`, 7 guides still in `src/content/guides/*.ts`).
-
-## Develop
-
-```sh
-bun install
-bun run dev                              # local preview (sample stays and any draft guides are visible)
-bunx vitest run                          # 774 tests in 61 files (2026-11-25)
-bunx tsc --noEmit                        # types, no errors
-bunx eslint . --quiet                    # lint errors only, none
-NITRO_PRESET=node-server bunx vite build   # production build served by Node (Netlify runs npm run build = vite build)
-PORT=4581 node .output/server/index.mjs  # serve the build, then:
-node scripts/verify-site.mjs http://localhost:4581 --site-url https://www.pawsandpassage.com   # 319 checks pass (2026-11-25)
-node scripts/audit-seller-ids.mjs        # which seller IDs are still in the repository (--expect-none after a transfer)
-node scripts/test-netlify-ignore.mjs     # the Netlify build-skip rule
-bun scripts/gear-coverage-report.ts      # packing-to-Gear coverage (writes docs/PACKING_GEAR_COVERAGE.md)
+```bash
+npm ci               # install exactly what package-lock.json says
+npm run dev          # local dev server (Vite)
+npm test             # vitest run (all tests, once)
+npm run lint         # eslint .
+npx tsc --noEmit     # type check
+npm run build        # production build (output in .output/)
+node scripts/test-netlify-ignore.mjs   # regression test for the Netlify build-skip rule
 ```
 
-CI runs tests and build on every push and pull request.
+`npm run format` rewrites files with Prettier; `npx prettier --check <files>` only checks. CI (`.github/workflows/ci.yml`) runs `npm ci`, `tsc`, `lint`, `vitest`, the Netlify-ignore test and the build on every pull request and every push to `main`.
 
-## Publishing rules (enforced in code and tests)
+## Structure
 
-- A guide is public only when `status: "published"`, `research.researchComplete` is `true`, `research.unverified` is empty, and `approvedBy` and `approvedOn` are filled. Anything else is a noindexed, preview-only draft left out of the sitemap.
-- A stay is listed when it has a public Vrbo or Airbnb source address (`stayDirectoryMode: public-sources`, owner-approved 2026-11-25) or an approved affiliate link; the older `affiliate-only` mode lists a stay only while it has an approved link. Unverified stays are labelled. Sample stays never appear. Approved only means a person allowed the button to show; it is not proof that any affiliate programme approved the site.
-- A labelled booking button appears only for stays with an approved affiliate link; other stays get a plain source link that earns nothing. Seller-held affiliate IDs and accounts are not part of a sale.
+| Path                             | What lives there                                                                                                                                                                                             |
+| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `content/`                       | All public content, edited in Pages CMS: `adventures/*.yml` (free only), `collections.yml`, `stamps.yml`, `achievements.yml`, `guides/*.md`, `products.yml`, `affiliates.yml`, `packing.yml`, `settings.yml` |
+| `.pages.yml`                     | Pages CMS configuration (the forms for the files above)                                                                                                                                                      |
+| `src/passport/`                  | Product logic with no UI: adventure schema v2, eligibility and ranking engine, Save v2 and merge rules, local store, keepsake renderer                                                                       |
+| `src/server/passport/`           | Server logic with no Netlify imports in the core: HTTP handler, checkout provider interface, session, stores                                                                                                 |
+| `netlify/functions/api.ts`       | The single Netlify Function that serves every `/api/*` route                                                                                                                                                 |
+| `src/routes/`                    | TanStack Start file-based routes (`/`, `/discover`, `/collections`, `/passport`, `/unlock`, `/restore-access`, guides, gear, packing list, trust pages)                                                      |
+| `src/components/`, `src/design/` | UI components and the design system CSS                                                                                                                                                                      |
+| `plugins/content.ts`             | Build step that validates `content/` and fails the build with a file and field name on any mistake                                                                                                           |
+| `scripts/`                       | Owner and CI scripts (premium import and export, build-skip test, post-deploy check, IndexNow)                                                                                                               |
+| `docs/`                          | The documents listed below                                                                                                                                                                                   |
+
+## Where content lives
+
+- **Free adventures, collections, stamps, achievements, guides, products, affiliate links and site settings:** plain files under `content/`, edited through Pages CMS or directly in git. A build validates every file.
+- **Premium adventures:** not in this repository. They are stored in Netlify Blobs (store `premium-<env>`), loaded by an owner-only script from a JSON file kept outside the repository, and delivered only by the server to a signed-in, entitled session. The browser bundle and public files never contain them. Tests use a clearly marked synthetic fixture (`src/passport/fixtures/premium.synthetic.ts`).
+- **Customer progress:** Netlify Blobs (store `customers-<env>`), keyed by a random customer id. Photos are never stored anywhere: keepsakes are drawn on the device.
+
+## Rules for contributors
+
+- Never commit secrets, customer data, premium adventure text or exports (`/premium-content/` and `*.premium.json` are git-ignored).
+- Eligibility is a hard rule: an unknown fact about a dog is never treated as safe.
+- Affiliate links are limited to verified Amazon products listed in `content/affiliates.yml`.
+- See `AGENTS.md` for the short list used by coding agents.
+
+## Documents
+
+| Document                                             | Subject                                           |
+| ---------------------------------------------------- | ------------------------------------------------- |
+| [docs/PRODUCT-SPEC.md](docs/PRODUCT-SPEC.md)         | What the product is and how it behaves            |
+| [docs/DESIGN-SYSTEM.md](docs/DESIGN-SYSTEM.md)       | Tokens, type, components, motion, accessibility   |
+| [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)         | Code structure, data, server, security            |
+| [docs/DECISIONS.md](docs/DECISIONS.md)               | Current architecture and commercial decisions     |
+| [docs/CONTENT-GUIDE.md](docs/CONTENT-GUIDE.md)       | How to write an adventure                         |
+| [docs/CONTENT-REVIEW.md](docs/CONTENT-REVIEW.md)     | Editorial review of the free library              |
+| [docs/OPERATIONS.md](docs/OPERATIONS.md)             | Maintenance, CMS workflow, premium runbook, costs |
+| [docs/QA-REPORT.md](docs/QA-REPORT.md)               | Verified test results and what is not tested      |
+| [docs/LAUNCH-CHECKLIST.md](docs/LAUNCH-CHECKLIST.md) | Launch gates and verdict                          |
+| [docs/COWORK-HANDOFF.md](docs/COWORK-HANDOFF.md)     | External tasks only the owner can do              |
+| [docs/FLIP-HANDOFF.md](docs/FLIP-HANDOFF.md)         | Transfer plan for a sale                          |

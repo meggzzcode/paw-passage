@@ -1,49 +1,90 @@
-# Adventure Passport: server architecture
+# Architecture
 
-Status 2026-11-25. Branch `claude/lucid-davinci-l2fixa`. Nothing here has run against live Netlify or Gumroad.
+How the Adventure Passport is built. Facts come from the code; anything not proven against a live service is marked **UNVERIFIED**. Decisions and their reasons are in `DECISIONS.md`.
 
-## Flow
+## Overview
 
-1. **Free:** progress lives in the browser (local state, `src/passport/progress.ts`). No server involved.
-2. **Buy:** the owner sells on Gumroad (the checkout provider). The buyer gets a license code by email.
-3. **Activate:** `POST /api/access/activate {code, localSave?}`. The function asks the provider to verify the code (without using up a count), derives a purchase reference, hashes it, finds or creates the customer, merges the free local progress into the cloud record, and sets the `pp_session` cookie.
-4. **Use:** `GET/PUT /api/progress` sync progress; `GET /api/premium/adventures` returns premium content only to an entitled session.
-5. **Restore:** `POST /api/access/restore {code}` on any device finds the same customer through the purchase lookup. A second customer is never created for the same purchase.
-6. **Refund:** at most every 24h the server re-verifies with the provider. `refunded`, `disputed`, `revoked` (or a code that became `invalid`) switch premium off (403). Progress is kept. `unavailable` never grants or revokes.
-7. **Own your data:** `POST /api/account/export` downloads progress; `POST /api/account/delete {confirm:"DELETE"}` removes the record and the lookup.
+```
+browser (TanStack Start pages, local Save v2, keepsake canvas)
+   |  free: no server call
+   |  paid: same-origin fetch /api/*  (cookie pp_session + x-pp-csrf)
+Netlify Function netlify/functions/api.ts
+   -> src/server/passport/netlify.ts (wires Blobs, env, provider)
+   -> src/server/passport/api.ts     (one framework-free handler: Request -> Response)
+Netlify Blobs: customers-<env>, premium-<env>
+Checkout provider (Gumroad adapter) for license verification
+```
 
-Code: pure modules in `src/server/passport/` (`api.ts` handler, `provider.ts`, `session.ts`, `store.ts`, `kv.ts`), wired to Netlify by `src/server/passport/netlify.ts` and the single Function `netlify/functions/api.ts`. Tests: `src/test/server-passport.test.ts` (in-memory KV, fake provider).
+Pages are server-rendered by TanStack Start (`src/server.ts`, `src/start.ts`). The start file adds middleware for trailing-slash redirects, security headers on HTML (`Referrer-Policy`, `Permissions-Policy`; no frame header and no Content-Security-Policy yet) and an error page.
 
-## Stores (Netlify Blobs, site-wide, strong consistency)
+## Content pipeline
 
-| Store             | Keys                                                                                                                                                            |
-| ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `customers-<env>` | `customer/<cus_id>` = {progress Save, entitlement {purchaseRefHash, status, createdAt, lastVerifiedAt, sealed code, v:1}}; `purchase/<purchaseRefHash>` = {cus} |
-| `premium-<env>`   | `index` = {ids}; `adventure/<id>` = one adventure                                                                                                               |
+- `plugins/content.ts` (a Vite plugin) reads `content/` at build time, validates it with zod, and fails the build with the file and field name on any error. Unpublished guides are left out of production bundles.
+- `src/passport/content.ts` loads `content/adventures/*.yml` (schema v2 required, file name equals id, only `access: free` allowed), `collections.yml`, `stamps.yml` and `achievements.yml`, then checks that every collection and stamp an adventure names exists. Only published adventures are exposed (`freeLibrary()`).
+- The premium library is not part of this pipeline. It is never imported into the bundle.
 
-`<env>` is `production` only when `context.deploy.context === "production"`; every other context (deploy preview, branch deploy, dev, unknown) is `preview`. Previews therefore never read or write production customers or premium content. Premium text is loaded by the owner-run scripts `scripts/premium-import.mjs` and `scripts/premium-export.mjs` from a JSON file kept outside git; it is never in the repo, bundle or public JSON. The synthetic fixture `src/passport/fixtures/premium.synthetic.ts` is for tests only.
+## Schema v2 and the engine (`src/passport/`)
 
-## Conflict rule
+- `schema.ts`: the adventure schema (56 fields, controlled lists, cross-field rules such as car adventures must require `car`, food adventures need diet notes, a published adventure needs review average at least 8 and no score under 7) and `validateLibrary`.
+- `profile.ts`: types for the dog profile, owner preferences, session filters, scopes and custom collections. Every field is optional.
+- `engine.ts`: pure functions, no network, no AI. `eligibility()` is the hard filter (Stage A): known conflicts exclude, missing facts produce **held** adventures with a question. `rank()` scores the survivors with an explainable additive score (profile and owner matches, favorites, feedback, budget, preparation, supplies, a small deterministic jitter from a seed) and returns up to three reasons per result, or which filters to relax. `pickSurprise()` draws one adventure within a scope. `smartMembers()` evaluates a saved smart collection against today's profile.
+- `progress.ts`: Save v2 and its merge. A Save contains the profile and owner preferences (last write wins by timestamp), add/remove timestamped sets (done, favorites, saved), memories (max 280 characters), repeat counts, feedback and custom collections (merged per field, with delete tombstones). Limits: 400 ids per set, 30 collections, 100 items per collection, 60,000 characters per record. `migrate()` upgrades a v1 Save; `validateSave()` rejects malformed or oversized input. **A Save never contains a photo or keepsake.**
+- `local-store.ts`: browser persistence in `localStorage` key `pp.save.v1`, with an in-memory fallback and a visible notice when storage is blocked; JSON export and import.
+- `keepsake/`: canvas renderer, ten families, themes, photo intake (`photo.ts`: in memory only, 20 MB and 2,400 px limits). Nothing in this folder talks to a server or writes to storage.
+- `events.ts`: allow-listed analytics events.
 
-Creation uses `onlyIfNew`. Updates use `onlyIfMatch` with the etag. On a lost race the server re-reads, re-applies the change with `merge()` (set union with timestamps and tombstones, order independent), and retries up to 6 times, then answers 503 `busy_retry`. Two devices writing at once both survive. The server owns `rev` (incremented only when the merged result differs); a repeated identical PUT changes nothing. A stale `baseRev` is merged and flagged `stale:true`, never rejected.
+## Server (`src/server/passport/`)
+
+Routes (all `Cache-Control: no-store`; JSON):
+
+| Route                     | Method   | Purpose                                                                                                        |
+| ------------------------- | -------- | -------------------------------------------------------------------------------------------------------------- |
+| `/api/access/activate`    | POST     | Verify a license code with the provider, find or create the customer, merge local progress, set the cookie     |
+| `/api/access/restore`     | POST     | Same lookup on another device; never creates a second customer for the same purchase                           |
+| `/api/session`            | GET      | Whether the cookie is valid and entitled; returns the CSRF token                                               |
+| `/api/progress`           | GET, PUT | Read the synced Save; merge a Save in (the server owns `rev`; a stale `baseRev` is merged and flagged `stale`) |
+| `/api/premium/adventures` | GET      | The premium library, only for an entitled session                                                              |
+| `/api/account/export`     | POST     | Download the synced progress as JSON                                                                           |
+| `/api/account/delete`     | POST     | Delete the synced record and the purchase lookup (body `{"confirm":"DELETE"}`)                                 |
+
+Modules: `api.ts` (handler), `provider.ts` (checkout interface, Gumroad adapter, test provider, selection), `session.ts` (cookie, CSRF, same-origin check), `store.ts` (customer records, compare-and-set), `kv.ts` (Blobs layer with etags; in-memory twin for tests), `crypto.ts` (HMAC, AES-GCM seal, key derivation), `limits.ts` (rate limiter), `config.ts` (environment and store naming), `netlify.ts` (wiring).
+
+Flow:
+
+1. **Activate.** The handler checks the code format, asks the provider to verify it (the code is sent only in a POST body), hashes the provider's purchase reference with `PP_DATA_KEY`, finds or creates the customer, merges the device's Save, stores the sealed code, and sets the session cookie. A refunded, disputed or revoked purchase answers 403 with a reason; a provider outage answers 503 and never grants or revokes.
+2. **Use.** Every later call reads the customer id from the signed cookie only. At most every 24 hours the server re-verifies with the provider; a non-valid result switches premium off while keeping progress.
+3. **Restore.** Same as activate from a new device; the same purchase hash finds the same customer.
+
+## Stores (Netlify Blobs, strong consistency)
+
+| Store             | Keys                                                                                                                                                    |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `customers-<env>` | `customer/<cus_id>` = {v, id, save (Save v2), entitlement {purchaseRefHash, status, createdAt, lastVerifiedAt, sealed code}}; `purchase/<hash>` = {cus} |
+| `premium-<env>`   | `index` = {v:1, ids}; `adventure/<id>` = one adventure                                                                                                  |
+
+`<env>` is `production` only when the deploy context is `production`; every other context is `preview`. Older v1 records are upgraded on read.
+
+**Conflict rule:** create with `onlyIfNew`, update with `onlyIfMatch` (etag). On a lost race re-read, re-apply with `merge()` and retry up to 6 times, then 503 `busy_retry`. Two devices writing at once both survive.
 
 ## Security controls
 
-- Cookie `pp_session`: HMAC-SHA256 signed with a key derived from `SESSION_SECRET`, constant-time compare, 30-day expiry, version field, HttpOnly, Secure, SameSite=Lax; carries only `cus_<16 random bytes hex>` and the expiry. The browser never names a record.
-- CSRF: state-changing calls need a same-origin `Origin` header and `x-pp-csrf` equal to a token derived from the session (returned by activate and `/api/session`).
-- Raw license codes: sent only in a POST body to the provider, never in a URL, log or response. The customer lookup uses a salted HMAC of the provider purchase reference. The code is also stored AES-256-GCM sealed in the customer record solely so the 24h re-verification can run (see "Decisions to confirm"). Logs contain event names and reason codes only.
-- All `/api/` responses are `Cache-Control: no-store`. Bodies over 64KB get 413; saves are checked with `validateSave`.
-- Per-IP rate limits (12 access attempts and 120 other calls per minute) held in function memory: best effort per instance, not global.
-- A test provider exists only if `PP_ALLOW_TEST_PROVIDER=1` and the context is `dev`, `deploy-preview` or `branch-deploy`; production (or an unknown context) cannot construct it. The server fails closed with 503 if `SESSION_SECRET` is missing or shorter than 32 characters.
-- Rotating `SESSION_SECRET` signs everyone out and, unless `PP_DATA_KEY` is set to a stable value first, breaks purchase lookups. Set `PP_DATA_KEY` once before the first real customer and never change it.
+- Cookie `pp_session`: signed (HMAC-SHA256, key derived from `SESSION_SECRET`), constant-time compare, 30-day expiry, HttpOnly, Secure, SameSite=Lax.
+- CSRF: same-origin `Origin` required (a missing one is refused) plus `x-pp-csrf`.
+- License codes are never in URLs, logs or responses; logs hold event names and reason codes only.
+- Request bodies over 64 KB are refused. Per-IP limits (12 access attempts and 120 other calls per minute) are held in function memory: best effort per instance, not global.
+- Test provider only when `PP_ALLOW_TEST_PROVIDER=1` in `dev`, `deploy-preview` or `branch-deploy`.
+- Fail closed: no valid `SESSION_SECRET` (32+ characters) means 503.
+- Premium text is absent from the repository, the bundle and public files.
+- `netlify.toml` sets `no-store` for `/api/*` and static security headers.
 
-## Decisions to confirm
+## Build and deploy
 
-Re-verifying every 24h needs the license code, but the brief said store only a hash. The record therefore keeps the code sealed (AES-GCM, key derived from the secret). If the owner prefers hash-only, remove `codeSealed` and accept that refund detection then needs the customer to restore again.
+`netlify.toml`: `npm run build`, Node 22, functions directory `netlify/functions`, build-skip rule, cache headers for hashed assets, 410 responses for retired addresses (served from `public/gone.html`) and a few 301s. CI (`.github/workflows/ci.yml`) runs install, type check, lint, tests, the build-skip test and the build.
 
-## Unverified (do not ship until proven)
+## Known limits and UNVERIFIED items
 
-- Gumroad: verify URL, parameter names, response fields (`success`, `purchase.id`, `sale_id`, `refunded`, `chargebacked`, `disputed`, `dispute_won`, `license_disabled`), status code for an unknown key, `increment_uses_count=false` behaviour, how a key is disabled (CW-PAY-1).
-- That the Function path `/api/*` is served by the Function ahead of the TanStack Start server on Netlify, and that `context.deploy.context` has these values in this site (CW-NET-5).
-- Blobs billing, persistence and strong-consistency behaviour on this plan (CW-NET-2); `getWithMetadata` returning the etag used by `onlyIfMatch` against the real service.
-- The `[[headers]]` block for `/api/*` may not apply to Function responses; the Function sets `no-store` itself.
+- **Gumroad:** the verify URL, parameter names, response fields (success, purchase id, refunded, chargebacked, disputed, dispute_won, license_disabled), the unknown-key status code, and `increment_uses_count=false` behaviour are written from the documented shape and are **UNVERIFIED** (CW-PAY-1).
+- **Netlify:** that `/api/*` reaches the Function ahead of the TanStack Start server, what `context.deploy.context` contains on this site, and that the build output and the Function deploy together with the current `publish` setting (`dist`) while the local build writes `.output/`, are **UNVERIFIED** until a preview deploy (CW-NET-5). Blobs billing, persistence and etag behaviour against the real service are **UNVERIFIED** (CW-NET-2).
+- **Browser wiring:** the browser does not yet call `GET /api/premium/adventures` or `PUT /api/progress`; discovery runs on the free library with `unlocked: false`. Activation returns and merges the synced Save.
+- The `[[headers]]` block for `/api/*` may not apply to Function responses; the handler sets `no-store` itself.
+- Server-side the code is kept sealed to allow the 24-hour re-check; see decision D6.

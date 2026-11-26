@@ -168,7 +168,7 @@ put(
   "README.md",
   `# 01 Business overview
 
-Paws & Passage: a dog-adventure library. A visitor gets one free personalized introductory adventure with no account, email or card, can browse public previews, and may buy the full library once for ${price} (one-time, no subscription, no renewals). Photos never leave the device. Tagline: "A lifetime of little adventures."
+Paws & Passage: a dog-adventure library. A visitor gets one free personalized introductory adventure with no account, email or card, can browse public previews, and may buy the full library once for ${price} (one-time, no subscription, no renewals). Photos never leave the device. Tagline: "A lifetime of little adventures." Headline: "A passport full of little adventures for you and your dog." One free adventure, then one payment of ${price}. Yours to keep.
 
 Facts to quote only from their source: library size (node scripts/library-stats.mjs --md in the repository), price (src/config/site.ts), costs (02 OPERATING-COSTS.md, a model not a measurement). Revenue, traffic and customer numbers come only from the source account on the day (05). No testimonials, ratings or urgency claims exist or should be added.
 

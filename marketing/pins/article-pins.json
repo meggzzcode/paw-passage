@@ -1,5 +1,5 @@
 {
-  "note": "Public pin metadata for the ten Journal articles, 3 pins each. Plain-prose descriptions, no hashtags. Destinations are /journal/<slug> with UTM parameters.",
+  "note": "Public pin metadata for the ten Journal articles, 3 pins each. Plain-prose descriptions, no hashtags. Destinations are /journal/<slug> with UTM parameters. Optional `tag` is the small brand-strip line on poster, postcard and ticket templates; signature phrases are rotated, never on every pin.",
   "pins": [
     {
       "id": "things-to-do-with-your-dog-at-home-1",
@@ -13,7 +13,7 @@
       "sub": "Ideas for a quiet day in.",
       "destination": "/journal/things-to-do-with-your-dog-at-home?utm_source=pinterest&utm_medium=social&utm_campaign=things-to-do-with-your-dog-at-home-1",
       "title": "Things to do with your dog at home when you want something new",
-      "description": "Looking for something to do with your dog without leaving the house? Browse practical ideas for living rooms, hallways and small spaces, with notes on time, supplies and which dogs they suit."
+      "description": "Looking for something to do with your dog without leaving the house? Browse practical ideas for living rooms, hallways and small spaces, with notes on time and supplies. Find our first adventure. Your first adventure is free."
     },
     {
       "id": "things-to-do-with-your-dog-at-home-2",
@@ -83,7 +83,8 @@
       "sub": "New places, same companion.",
       "destination": "/journal/rainy-day-dog-activities?utm_source=pinterest&utm_medium=social&utm_campaign=rainy-day-dog-activities-3",
       "title": "Discover indoor adventures with your dog on rainy days",
-      "description": "Rain does not have to cancel your plans. Explore adventure ideas that move indoors and find one that fits your dog's pace and your home."
+      "description": "Rain does not have to cancel your plans. Explore adventure ideas that move indoors and find one that fits your dog's pace and your home.",
+      "tag": "Because every dog deserves a little adventure."
     },
     {
       "id": "things-to-do-with-your-dog-this-weekend-1",
@@ -97,7 +98,7 @@
       "sub": "Your weekend, planned.",
       "destination": "/journal/things-to-do-with-your-dog-this-weekend?utm_source=pinterest&utm_medium=social&utm_campaign=things-to-do-with-your-dog-this-weekend-1",
       "title": "Things to do with your dog this weekend",
-      "description": "Need a plan for Saturday or Sunday? This guide offers practical weekend ideas for you and your dog, with notes on time, cost and how much effort each one takes."
+      "description": "Need a plan for Saturday or Sunday? Browse practical ideas with notes on time, cost and effort. Adventures picked for your dog. Memories made by you."
     },
     {
       "id": "things-to-do-with-your-dog-this-weekend-2",
@@ -122,7 +123,7 @@
       "palette": "pine",
       "kicker": "This weekend",
       "headline": "Your Next Weekend Is Full of Little Adventures",
-      "sub": "Explore something new.",
+      "sub": "More than walks. More than fetch. More little adventures.",
       "destination": "/journal/things-to-do-with-your-dog-this-weekend?utm_source=pinterest&utm_medium=social&utm_campaign=things-to-do-with-your-dog-this-weekend-3",
       "title": "Find new weekend adventures to share with your dog",
       "description": "Skip the usual routine and try something different this weekend. Discover local-minded ideas that fit an open Saturday and the dog who is always ready to come along."
@@ -167,7 +168,7 @@
       "sub": "Made for two.",
       "destination": "/journal/doggy-date-ideas?utm_source=pinterest&utm_medium=social&utm_campaign=doggy-date-ideas-3",
       "title": "Little adventures for you and your favorite companion",
-      "description": "Discover small, thoughtful ways to share time with your dog. Each idea is meant to be simple to plan and easy to adjust to your dog's comfort."
+      "description": "Discover small, thoughtful ways to share time with your dog. Adventures picked for your dog, memories made by you."
     },
     {
       "id": "free-things-to-do-with-your-dog-1",
@@ -195,7 +196,8 @@
       "sub": "Simple pleasures together.",
       "destination": "/journal/free-things-to-do-with-your-dog?utm_source=pinterest&utm_medium=social&utm_campaign=free-things-to-do-with-your-dog-2",
       "title": "Enjoy memorable days with your dog on any budget",
-      "description": "Some of the best moments with a dog are the simplest. Explore ideas that need no spending and find one to try this week."
+      "description": "Some of the best moments with a dog are the simplest. Explore ideas that need no spending and find one to try this week.",
+      "tag": "Collect adventures, not just things."
     },
     {
       "id": "free-things-to-do-with-your-dog-3",
@@ -251,7 +253,8 @@
       "sub": "A fresh way to connect.",
       "destination": "/journal/activities-to-bond-with-your-dog?utm_source=pinterest&utm_medium=social&utm_campaign=activities-to-bond-with-your-dog-3",
       "title": "Try something new together with your dog",
-      "description": "A little novelty can make an ordinary week feel bright. Explore easy activities to try together, always at your dog's own pace."
+      "description": "A little novelty can make an ordinary week feel bright. Explore easy activities to try together, always at your dog's own pace.",
+      "tag": "Collect adventures, not just things."
     },
     {
       "id": "puppy-bucket-list-1",
@@ -279,7 +282,7 @@
       "sub": "Start with the very first days.",
       "destination": "/journal/puppy-bucket-list?utm_source=pinterest&utm_medium=social&utm_campaign=puppy-bucket-list-2",
       "title": "Your puppy bucket list starts here",
-      "description": "Plan a list of memorable firsts for your new puppy. Find practical ideas to pick and choose from, always at your puppy's pace and comfort level."
+      "description": "Plan a list of memorable firsts for your new puppy. Find practical ideas to pick and choose from, always at your puppy's pace. Find our first adventure. Your first adventure is free."
     },
     {
       "id": "puppy-bucket-list-3",
@@ -293,7 +296,8 @@
       "sub": "Begin the story together.",
       "destination": "/journal/puppy-bucket-list?utm_source=pinterest&utm_medium=social&utm_campaign=puppy-bucket-list-3",
       "title": "Make memories with your puppy from the very beginning",
-      "description": "The early days pass quickly. Explore ideas for gentle, happy moments you will want to remember, and ask your vet what suits your puppy right now."
+      "description": "The early days pass quickly. Explore ideas for gentle, happy moments you will want to remember, and ask your vet what suits your puppy right now.",
+      "tag": "A lifetime of little adventures."
     },
     {
       "id": "fun-things-to-do-with-your-senior-dog-1",
@@ -335,7 +339,8 @@
       "sub": "Cherish the everyday.",
       "destination": "/journal/fun-things-to-do-with-your-senior-dog?utm_source=pinterest&utm_medium=social&utm_campaign=fun-things-to-do-with-your-senior-dog-3",
       "title": "Celebrate everyday moments with your senior dog",
-      "description": "Some of the best days are the quiet ones. Explore ideas that make the most of quiet time together and honor what your dog enjoys."
+      "description": "Some of the best days are the quiet ones. Explore ideas that make the most of quiet time together and honor what your dog enjoys.",
+      "tag": "A lifetime of little adventures."
     },
     {
       "id": "family-activities-with-dogs-1",
@@ -377,7 +382,8 @@
       "sub": "Bring everyone along.",
       "destination": "/journal/family-activities-with-dogs?utm_source=pinterest&utm_medium=social&utm_campaign=family-activities-with-dogs-3",
       "title": "Little adventures for the whole household and the dog",
-      "description": "Find ideas that give each family member a role while keeping the dog comfortable. Each one is simple to plan and easy to adjust."
+      "description": "Find ideas that give each family member a role while keeping the dog comfortable. Each one is simple to plan and easy to adjust.",
+      "tag": "Because every dog deserves a little adventure."
     },
     {
       "id": "activities-for-high-energy-dogs-1",
@@ -402,7 +408,7 @@
       "palette": "ink",
       "kicker": "Lively dogs",
       "headline": "Give Your Energetic Dog Something New to Explore",
-      "sub": "New places, new things to try.",
+      "sub": "More than walks. More than fetch. More little adventures.",
       "destination": "/journal/activities-for-high-energy-dogs?utm_source=pinterest&utm_medium=social&utm_campaign=activities-for-high-energy-dogs-2",
       "title": "Give your energetic dog something new to explore",
       "description": "Variety keeps lively dogs and their people interested. Find ideas to try on a walk, in the yard or at home, scaled to your dog's own comfort."
@@ -419,7 +425,8 @@
       "sub": "Make the day count.",
       "destination": "/journal/activities-for-high-energy-dogs?utm_source=pinterest&utm_medium=social&utm_campaign=activities-for-high-energy-dogs-3",
       "title": "Big adventures for big-energy dogs",
-      "description": "If your dog greets every day with enthusiasm, here are ideas to match. Read about options that can fit different spaces and schedules."
+      "description": "If your dog greets every day with enthusiasm, here are ideas to match. Read about options that can fit different spaces and schedules.",
+      "tag": "Because every dog deserves a little adventure."
     }
   ]
 }

@@ -25,6 +25,10 @@ Everything is edited in Pages CMS under **Journal**. Each article is one file in
 - Do not paste raw HTML, tracking codes or `?utm_` links into articles. Do not add medical or behavior promises, made-up statistics, reviews or expert quotes. Do not add the paid adventure steps.
 - The product paragraph inside each article is written for that article's reader. Do not reuse one paragraph across articles.
 
+## Voice and social blurbs
+
+Journal line: "More than walks. More than fetch. More little adventures." Use it on the Journal index or a social blurb, not on every article. The Pinterest pins for each article are in `marketing/pins/article-pins.json` (three per article). Blurbs follow docs/MARKETING.md section 0: plain prose, no hashtags, no gifting, say "100+" never another count, one free introductory adventure then $19.99 once.
+
 ## Publishing checklist
 
 1. Title is unique, under about 60 characters; description is 155 characters or fewer and unique.

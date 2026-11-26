@@ -108,26 +108,26 @@ Thanks for signing up for occasional adventure ideas from Paws & Passage. Please
 
 ### Weekly series (12 emails)
 
-Footer for every email: [unsubscribe + address added by the platform]
+Footer for every email: [unsubscribe + address added by the platform] Plus one support line: "Questions? Just reply to this email." Copy is for buyers only, so no email promotes the free adventure or asks anyone to buy. Signature phrases are rotated (docs/MARKETING.md section 0), never on every email; no gifting wording until the owner verifies gifting; no "forever" or promises of future content or updates.
 
 **1.** Subject: A little idea for this week
 Preview: Small, simple, no rush.
-Body: Hi there. Here is a gentle thought for the week: pick one small adventure, whenever it suits you. Some days a short outing is plenty, and some days a cozy one at home is just right. If you'd like something chosen for you, let the surprise button pick one. Your dog is always welcome to skip it for another day.
+Body: Hi there. Because every dog deserves a little adventure, here is a gentle thought for the week: pick one small adventure, whenever it suits you. Some days a short outing is plenty, and some days a cozy one at home is just right. If you'd like something chosen for you, let the surprise button pick one. Your dog is always welcome to skip it for another day.
 Link: /discover?mode=surprise
 
 **2.** Subject: Something made, not bought
 Preview: A hands-on idea for a quiet hour.
-Body: Some of our favorite adventures end with something you made together: a little keepsake, a photo you like, a memory worth tucking away. If you're in a crafty mood this week, the made-by-hand ideas are a nice place to wander. Take whatever speaks to you and leave the rest.
+Body: Some of our favorite adventures end with something you made together: a little keepsake, a photo you like, a memory worth tucking away. Adventures for your dog, keepsakes for you. If you're in a crafty mood this week, the made-by-hand ideas are a nice place to wander. Take whatever speaks to you and leave the rest.
 Link: /discover?mode=made
 
 **3.** Subject: Your saved ideas, in one place
 Preview: Favorites are easy to find again.
-Body: When an adventure catches your eye, you can save it and come back later. Everything you've saved lives together on one page, ready for a free afternoon or a slow weekend. It's a small collection that grows at your own pace, and nothing about it is on a schedule.
+Body: Collect adventures, not just things. When one catches your eye, you can save it and come back later. Everything you've saved lives together on one page, ready for a free afternoon or a slow weekend. It's a small collection that grows at your own pace, and nothing about it is on a schedule.
 Link: /collections?tab=favorites
 
 **4.** Subject: A peek at the bigger collection
 Preview: Selected previews, no commitment.
-Body: There is a wide library of adventures, and a few selected previews are open for anyone to browse. See what each one involves in a glance: how long, what setting, how active. It's a pleasant way to spend a coffee break, and it's fine to just look. And if you ever want the whole library, it's one payment of $19.99, with no subscription, and yours to keep.
+Body: Your passport holds over a hundred adventures, picked for your dog and made memorable by you. Browse the previews to see each one at a glance: how long, what setting, how active. It's a pleasant way to spend a coffee break, and it's fine to just look. One payment, yours to keep, with no subscription.
 Link: /previews
 
 **5.** Subject: Something to print and keep
@@ -137,12 +137,12 @@ Link: /printables
 
 **6.** Subject: Your passport is here when you want it
 Preview: A home for the adventures you've shared.
-Body: Your passport keeps a quiet record of the adventures you've shared, kept on your own device. Stamps, keepsakes and memories gather there over time. Open it whenever you feel like looking back, or leave it be for a while. It will be just as you left it. If you have the full Passport, you paid once, so there's nothing to renew.
+Body: Your passport keeps a quiet record of the adventures you've shared, kept on your own device. Stamps, keepsakes and memories gather there over time. Open it whenever you feel like looking back, or leave it be for a while. It will be just as you left it. You paid once, so there's nothing to renew.
 Link: /passport
 
 **7.** Subject: An ordinary day, a little different
 Preview: Let a surprise do the choosing.
-Body: Not every adventure needs a plan. Sometimes the nicest ones start with a small, unexpected idea on an ordinary day. Let a surprise suggest something simple, and see how it feels. If it isn't right for the moment, you can always ask for another one.
+Body: A little adventure awaits... and it needn't be planned. Sometimes the nicest ones start with a small, unexpected idea on an ordinary day. Let a surprise suggest something simple, and see how it feels. If it isn't right for the moment, you can always ask for another one.
 Link: /discover?mode=surprise
 
 **8.** Subject: A slow-weekend idea
@@ -157,7 +157,7 @@ Link: /collections?tab=favorites
 
 **10.** Subject: Browse at your own pace
 Preview: A few previews to wander through.
-Body: If you enjoy looking at what's possible, the previews are a relaxed way to do it. Each one shows the basics at a glance, so you can imagine the day without committing to anything. Come back as often as you like, or not at all. Either is just fine.
+Body: More than walks, more than fetch, more little adventures: if you enjoy looking at what's possible, the previews are a relaxed way to do it. Each one shows the basics at a glance, so you can imagine the day without committing to anything. Come back as often as you like, or not at all. Either is just fine.
 Link: /previews
 
 **11.** Subject: Little keepsakes, big smiles
@@ -167,7 +167,7 @@ Link: /printables
 
 **12.** Subject: A quiet note to close the series
 Preview: Thank you for being part of this.
-Body: This is the last email in this series, and we just wanted to say thank you for spending your time with Paws & Passage. A lifetime of little adventures is built one small moment at a time. Your passport is always there whenever you'd like to add another page, and if you've bought the full Passport, it's yours to keep.
+Body: This is the last email in this series, and we just wanted to say thank you for spending your time with Paws & Passage. A lifetime of little adventures is built one small moment at a time. Your passport is there whenever you'd like to add another page. One payment. Yours to keep.
 Link: /passport
 
 ## 7. Owner approvals needed

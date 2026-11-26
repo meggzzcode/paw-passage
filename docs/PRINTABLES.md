@@ -6,6 +6,7 @@ Six browser-printed pages: adventure bucket list, indoor and outdoor discovery b
 
 - Routes: `/printables` (index) and `/printables/<slug>`. Two samples (bucket list, indoor bingo) are open to everyone; the other four are for customers with the full Passport. The content is generic, so this is a product choice, not a security gate. Non-sample pages are `noindex`.
 - Content lives in `src/components/printables/data.ts`. It must stay generic: kinds of adventures and things to notice, never an adventure title, id or instruction. `src/test/printables.test.tsx` fails if a free adventure title, an `adv-` id or an instruction marker appears. Before adding copy, also check it against the private library titles (a one-off local check; the private titles are not in this repo).
+- Copy: printable headers and lines may use the approved phrases sparingly (docs/MARKETING.md section 0), for example "Collect adventures, not just things." on the bucket list; no counts other than "100+", no gifting wording, and no suggested captions or hashtags.
 - My Passport link: render `<PrintablesCard />` (exported from `src/components/printables/PrintablesIndex.tsx`).
 
 ## Discovery shortcuts

@@ -11,6 +11,12 @@ import { tmpdir } from "node:os";
 const here = dirname(fileURLToPath(import.meta.url));
 const root = resolve(here, "../..");
 const args = process.argv.slice(2);
+if (args.includes("--help") || args.includes("-h")) {
+  console.log(
+    "Usage: node marketing/pins/generate.mjs [--set main|article] [--out DIR] [--only pin-id]\nRenders 1000x1500 pin PNGs outside the repository. Re-render pins after the design integration lands.",
+  );
+  process.exit(0);
+}
 const arg = (n, d) => (args.includes(n) ? args[args.indexOf(n) + 1] : d);
 // --set article renders article-pins.json (Journal pins) into .../pins/article by default.
 const set = arg("--set", "main");
@@ -109,6 +115,7 @@ for (const [i, p] of pins.entries()) {
     .replace("{{hsize}}", sizeClass(p.headline))
     .replace("{{headline}}", esc(p.headline))
     .replace("{{sub}}", esc(p.sub))
+    .replace("{{tag}}", esc(p.tag ?? ""))
     .replace("{{art}}", art);
   const vars = `${palettes[p.palette] ?? palettes.red};${fur[i % fur.length]}`;
   const html = `<!doctype html><html lang="en"><head><meta charset="utf-8"><style>${base}:root{${vars}}</style></head><body>${tpl}</body></html>`;

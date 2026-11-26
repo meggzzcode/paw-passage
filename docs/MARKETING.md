@@ -4,6 +4,40 @@ Public document. No premium text, no secrets. Everything here is a plan or a hyp
 
 Research was done on 2026-11-26 from pages that could actually be read. Keyword volumes were not available and none are invented: "validated" below means the search results page and competitor structure show that the topic is actively published, not how many people search for it.
 
+## 0. Approved messaging (owner-approved 2026-11-26)
+
+Use naturally and selectively. Do not put the same tagline on every asset: no signature phrase on more than about one pin in four.
+
+| Role              | Line                                                                                                                                                         |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Eyebrow           | Because every dog deserves a little adventure.                                                                                                               |
+| Main headline     | A passport full of little adventures for you and your dog.                                                                                                   |
+| Supporting        | Discover 100+ fun, creative and memorable things to do together, personalized to your dog and your lifestyle.                                                |
+| Call to action    | Find our first adventure. Your first adventure is free.                                                                                                      |
+| Commercial        | One payment of $19.99. Yours to keep. (short form: One payment. Yours to keep.)                                                                              |
+| Discovery         | Adventures picked for your dog. Memories made by you.                                                                                                        |
+| Purchase          | One passport. Over a hundred adventures. Endless little memories.                                                                                            |
+| Keepsakes         | Adventures for your dog. Keepsakes for you.                                                                                                                  |
+| My Passport       | Collect adventures, not just things.                                                                                                                         |
+| Brand / Our Story | A lifetime of little adventures.                                                                                                                             |
+| Reveal            | A little adventure awaits...                                                                                                                                 |
+| Journal           | More than walks. More than fetch. More little adventures.                                                                                                    |
+| Gifting           | "Give a lifetime of little adventures." Held back: use only after the owner verifies gifting (section 6). Keep gifting out of all live marketing until then. |
+
+Facts behind the lines: the library holds 117 unique adventures, 17 free and 100 premium (verified with `node scripts/library-stats.mjs --md`; the public repo only shows the free 17, so the premium total comes from the protected package). Say "100+" or "Over a hundred", never another count. One free introductory adventure, then $19.99 once: no subscription, no renewals. Never promise perpetual hosting, unlimited updates or future content, and never use "forever". Keepsake creation is part of the full passport: marketing may show examples but must never imply a free editor. No suggested captions or hashtags for customers. AI-generated lifestyle imagery must never be presented as real customers. No testimonials, ratings or statistics.
+
+Copy map (this repository):
+
+| Asset                                | Phrases                                                                                                                                                                                                                                                                        |
+| ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Main pins (pins.json, 30)            | Brand-strip `tag` rotates: Because every dog... (4 pins), A lifetime... (4 incl. one headline), Collect adventures... (3), plus discovery, purchase, keepsake and Journal lines once or twice each; call to action on 6 pins; commercial line on 4 keepsake and passport pins. |
+| Journal pins (article-pins.json, 30) | Mostly plain search-intent copy; each signature phrase on at most 3 pins, call to action on 2.                                                                                                                                                                                 |
+| Boards                               | See section 5 (board names and descriptions).                                                                                                                                                                                                                                  |
+| Email nudges                         | Rotated across the 12 emails, buyers only (docs/EMAIL-NUDGES.md).                                                                                                                                                                                                              |
+| Journal                              | Journal line on the index and article social blurbs (docs/JOURNAL.md).                                                                                                                                                                                                         |
+
+Pin images were NOT regenerated for this copy change. Re-render pins after the design integration lands (`node marketing/pins/generate.mjs`, then `--set article`), then rebuild the owner package. Check that the longer brand-strip lines fit on the poster, postcard and ticket templates.
+
 ## 1. Competitor findings
 
 Two direct competitors were read in full. Their claims are their own marketing, not verified sales or review evidence.
@@ -81,19 +115,29 @@ Pins point to the hub, a Journal article or /discover. Birthday and keepsake pin
 
 Uses existing collections only. Never use a deadline, countdown or "limited time" wording; the product is always available and the price is constant. Seasons are themes, not events with end dates.
 
-| Month                | Theme                       | Collections                                                                         | Pin and page focus                                          |
-| -------------------- | --------------------------- | ----------------------------------------------------------------------------------- | ----------------------------------------------------------- |
-| January              | A year of adventures        | seasons-together, the-curious-explorer                                              | "Start a year of little adventures", passport pins          |
-| February             | Valentine, doggy date       | doggy-date-club                                                                     | Date pins, /journal/doggy-date-ideas                        |
-| March to May         | Spring outdoors             | the-great-outdoors, city-explorers                                                  | Weekend and trail pins                                      |
-| June to August       | Summer comfort and vacation | beach-days-and-waterside, road-trip-adventures, camping-companions, home-sweet-home | Heat-aware and indoor-cool framing; travel postcard pins    |
-| September to October | Autumn harvest              | taste-and-treat, seasons-together                                                   | Cozy and neighborhood pins                                  |
-| November             | Gratitude and memory        | our-story, the-golden-years, rescue-and-new-beginnings                              | Keepsake, older dog and adoption-anniversary pins           |
-| December             | Holiday and gifting         | holidays-and-celebrations, little-splurges                                          | Gift-angle pins (see section 5); keepsake and passport pins |
+| Month                | Theme                       | Collections                                                                         | Pin and page focus                                                              |
+| -------------------- | --------------------------- | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
+| January              | A year of adventures        | seasons-together, the-curious-explorer                                              | "Start a year of little adventures", passport pins                              |
+| February             | Valentine, doggy date       | doggy-date-club                                                                     | Date pins, /journal/doggy-date-ideas                                            |
+| March to May         | Spring outdoors             | the-great-outdoors, city-explorers                                                  | Weekend and trail pins                                                          |
+| June to August       | Summer comfort and vacation | beach-days-and-waterside, road-trip-adventures, camping-companions, home-sweet-home | Heat-aware and indoor-cool framing; travel postcard pins                        |
+| September to October | Autumn harvest              | taste-and-treat, seasons-together                                                   | Cozy and neighborhood pins                                                      |
+| November             | Gratitude and memory        | our-story, the-golden-years, rescue-and-new-beginnings                              | Keepsake, older dog and adoption-anniversary pins                               |
+| December             | Holiday and keepsakes       | holidays-and-celebrations, little-splurges                                          | Keepsake and passport pins; no gift angle until gifting is verified (section 6) |
 
 ## 5. Pinterest routine (owner-operable, about 30 minutes per week, no paid scheduler)
 
-Pinterest's own tools (free) are enough. Pins are made by the generator in `paws-passage-export/pins/` next to the repository folder (never in the repo).
+Pinterest's own tools (free) are enough. Boards (name, then description; plain prose, no hashtags):
+
+- Little adventures with your dog: Fun, creative and memorable things to do together. Because every dog deserves a little adventure.
+- Rainy day and at-home dog ideas: Cozy ideas for a quiet day in, sorted by time and effort.
+- Weekend dog adventures: Pick one little adventure and go. Adventures picked for your dog. Memories made by you.
+- Doggy date ideas: Sweet, simple ideas for two (and one very good dog).
+- Puppy and senior dog days: Gentle ideas that go at your dog's pace. Check with your vet about what suits your dog.
+- Low-cost dog ideas: Big memories, small budget.
+- Dog keepsakes and passport: Adventures for your dog. Keepsakes for you. Collect adventures, not just things.
+
+Pins are made by the generator in `paws-passage-export/pins/` next to the repository folder (never in the repo).
 
 1. Monday, 5 minutes: open marketing/pins/pins.json, pick the 5 next unposted pins (rotate themes, favor the current season from section 4). Note the ones posted in marketing/pins/posted.log (create locally if wanted, do not commit).
 2. 15 minutes: on Pinterest, create each pin: upload the PNG, paste the `title` and `description` from pins.json, set the link to your site plus the `destination` path. Use a board per theme. Pinterest's native scheduling for a business account can spread the five across the week at no cost (check the current Pinterest interface; this was not verified here).
@@ -106,7 +150,7 @@ Rules: no hashtags, no suggested customer captions, no fake scarcity, no claim t
 
 - Checkout provider is Gumroad (see docs/OPERATIONS.md). Search results indicated that Gumroad's help center has an article titled "How do I give a product as a gift" and describe a "Give as a gift" toggle at checkout, limited to one product in a cart. The article body could not be fetched, so details (recipient notification, license code delivery, fit with our license verification) are **UNVERIFIED**.
 - Not a launch blocker. Before putting gift wording on any page, the owner should open Gumroad's help article, run one test purchase as a gift, and confirm the recipient receives a working code and that our unlock flow accepts it.
-- Until verified: say nothing about gifting on site pages. December pins may use keepsake and passport themes without promising a gift flow.
+- Until verified: say nothing about gifting on site pages, pins, boards or emails, and do not use "Give a lifetime of little adventures." December pins use keepsake and passport themes without promising a gift flow. Once the owner has verified the flow, that line is the gifting headline.
 
 ## 7. Commercial hypotheses and test plan
 
@@ -139,11 +183,11 @@ Rules: change one thing at a time; run each test for a fixed period decided in a
 
 ## 8. Pin assets
 
-See marketing/README.md. 30 initial pins (1000 by 1500) across the directive themes are described in marketing/pins/pins.json; only generic ideas, no premium mechanics.
+See marketing/README.md. 30 initial pins (1000 by 1500) across the directive themes are described in marketing/pins/pins.json; only generic ideas, no premium mechanics. Copy follows section 0. Re-render pins after the design integration lands.
 
 ## 9. Journal pins
 
-The Adventure Journal has ten articles. Each has three pins in marketing/pins/article-pins.json: a practical question or problem, an attractive lifestyle benefit, and a discovery message. Their destinations are the article pages (`/journal/<slug>`) with UTM parameters (`utm_source=pinterest&utm_medium=social&utm_campaign=<slug>-<n>`), so the site can attribute visits to one pin without storing personal data. Pin descriptions are plain prose with no hashtags, never suggest that paid content is free, make no health or behavior claims and reveal nothing about the paid adventures.
+The Adventure Journal has ten articles. Each has three pins in marketing/pins/article-pins.json: a practical question or problem, an attractive lifestyle benefit, and a discovery message. Their destinations are the article pages (`/journal/<slug>`) with UTM parameters (`utm_source=pinterest&utm_medium=social&utm_campaign=<slug>-<n>`), so the site can attribute visits to one pin without storing personal data. Pin descriptions follow section 0 and are plain prose with no hashtags, never suggest that paid content is free, make no health or behavior claims and reveal nothing about the paid adventures.
 
 Render: `node marketing/pins/generate.mjs --set article` writes 30 PNGs (1000 by 1500) to `paws-passage-export/pins/article/` next to the repository folder. They are never committed.
 

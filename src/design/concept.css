@@ -1,0 +1,128 @@
+/* "Everyday Magic" creative concept (/concept). Self-contained; does not affect the live app's --pp-* system. */
+.em {
+  --em-vanilla: oklch(0.975 0.018 85);
+  --em-butter: oklch(0.91 0.11 95);
+  --em-strawberry: oklch(0.86 0.075 10);
+  --em-cherry: oklch(0.6 0.17 22);
+  --em-sage: oklch(0.82 0.06 145);
+  --em-leaf: oklch(0.5 0.08 150);
+  --em-powder: oklch(0.88 0.045 235);
+  --em-ink: oklch(0.27 0.015 40);
+  --em-ink-soft: oklch(0.45 0.015 40);
+  --em-paper: oklch(0.995 0.006 85);
+  --em-display: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+  --em-body: "Figtree", ui-sans-serif, system-ui, sans-serif;
+  --em-hand: "Caveat", cursive;
+  --em-soft-shadow: 0 18px 40px -22px color-mix(in oklab, var(--em-ink) 45%, transparent);
+  background: var(--em-vanilla);
+  color: var(--em-ink);
+  font-family: var(--em-body);
+  overflow-x: clip;
+}
+.em h1, .em h2, .em h3 { font-family: var(--em-display); letter-spacing: -0.035em; line-height: 0.95; font-weight: 700; }
+.em-hand { font-family: var(--em-hand); font-weight: 600; letter-spacing: 0; }
+.em-wrap { max-width: 1180px; margin: 0 auto; padding: 0 1.25rem; }
+.em-section { padding: 5rem 0; }
+.em-eyebrow { font-family: var(--em-hand); font-size: 1.6rem; color: var(--em-cherry); }
+.em-lede { font-size: 1.15rem; line-height: 1.55; color: var(--em-ink-soft); max-width: 34rem; }
+
+.em-btn { display: inline-flex; align-items: center; gap: .5rem; min-height: 3.1rem; padding: 0 1.5rem; border-radius: 999px; font-weight: 600; transition: transform .2s, background .2s; }
+.em-btn:hover { transform: translateY(-2px); }
+.em-btn-primary { background: var(--em-cherry); color: var(--em-paper); }
+.em-btn-ghost { background: var(--em-paper); color: var(--em-ink); box-shadow: inset 0 0 0 1.5px color-mix(in oklab, var(--em-ink) 18%, transparent); }
+
+/* Hero */
+.em-hero { position: relative; padding: 3.5rem 0 5rem; }
+.em-hero-grid { display: grid; gap: 3rem; align-items: center; }
+@media (min-width: 900px) { .em-hero-grid { grid-template-columns: 1.05fr 1fr; } }
+.em-hero h1 { font-size: clamp(3rem, 8vw, 6.2rem); }
+.em-hero h1 .em-hl { background: var(--em-butter); border-radius: .3em; padding: 0 .12em; }
+.em-collage { position: relative; height: 34rem; }
+@media (max-width: 640px) { .em-collage { height: 26rem; } }
+.em-polaroid { position: absolute; background: var(--em-paper); padding: .6rem .6rem 2.6rem; border-radius: 6px; box-shadow: var(--em-soft-shadow); }
+.em-polaroid img { width: 100%; height: 100%; object-fit: cover; border-radius: 3px; }
+.em-polaroid figcaption { position: absolute; bottom: .4rem; left: 0; right: 0; text-align: center; font-family: var(--em-hand); font-size: 1.35rem; }
+.em-sticker { position: absolute; display: grid; place-items: center; text-align: center; border-radius: 999px; font-family: var(--em-display); font-weight: 700; line-height: 1; }
+.em-tape { position: absolute; width: 5.5rem; height: 1.6rem; background: color-mix(in oklab, var(--em-butter) 75%, transparent); top: -.7rem; left: 50%; translate: -50% 0; rotate: -4deg; }
+
+/* Marquee */
+.em-marquee { background: var(--em-ink); color: var(--em-butter); padding: .9rem 0; white-space: nowrap; overflow: hidden; font-family: var(--em-display); font-size: 1.4rem; }
+.em-marquee > div { display: inline-block; animation: em-scroll 40s linear infinite; }
+@keyframes em-scroll { to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) { .em-marquee > div { animation: none; } }
+
+/* Collections */
+.em-moods { display: flex; gap: 1rem; overflow-x: auto; padding: .5rem 1.25rem 1.5rem; scroll-snap-type: x mandatory; }
+.em-mood { flex: 0 0 15rem; scroll-snap-align: start; border-radius: 2rem; padding: 1.4rem; min-height: 19rem; display: flex; flex-direction: column; justify-content: space-between; transition: transform .25s; }
+.em-mood:hover { transform: rotate(-1.5deg) translateY(-4px); }
+.em-mood h3 { font-size: 2rem; }
+.em-mood-img { height: 9rem; border-radius: 1.3rem; overflow: hidden; }
+.em-mood-img img { width: 100%; height: 100%; object-fit: cover; }
+
+/* Adventure cards */
+.em-cards { display: grid; gap: 1.5rem; }
+@media (min-width: 760px) { .em-cards { grid-template-columns: repeat(3, 1fr); } }
+.em-card { background: var(--em-paper); border-radius: 1.75rem; overflow: hidden; box-shadow: var(--em-soft-shadow); display: flex; flex-direction: column; }
+.em-card-top { position: relative; aspect-ratio: 4/3; }
+.em-card-top img { width: 100%; height: 100%; object-fit: cover; }
+.em-card-tag { position: absolute; top: 1rem; left: 1rem; padding: .35rem .8rem; border-radius: 999px; font-size: .8rem; font-weight: 700; }
+.em-card-body { padding: 1.3rem 1.4rem 1.5rem; display: grid; gap: .8rem; }
+.em-card h3 { font-size: 1.65rem; line-height: 1.05; }
+.em-chips { display: flex; flex-wrap: wrap; gap: .4rem; }
+.em-chip { font-size: .8rem; padding: .3rem .65rem; border-radius: 999px; background: var(--em-vanilla); }
+.em-locked { font-size: .85rem; color: var(--em-ink-soft); border-top: 1.5px dotted color-mix(in oklab, var(--em-ink) 20%, transparent); padding-top: .7rem; }
+
+/* Quiz */
+.em-quiz { background: var(--em-powder); border-radius: 2.5rem; padding: clamp(1.5rem, 4vw, 3.5rem); }
+.em-progress { display: flex; gap: .35rem; }
+.em-progress span { flex: 1; height: .45rem; border-radius: 999px; background: color-mix(in oklab, var(--em-paper) 70%, transparent); transition: background .3s; }
+.em-progress span[data-on="true"] { background: var(--em-ink); }
+.em-answers { display: grid; gap: .8rem; grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); }
+.em-answer { background: var(--em-paper); border-radius: 1.4rem; padding: 1.2rem; text-align: left; transition: transform .2s, box-shadow .2s; min-height: 6.5rem; display: grid; gap: .4rem; align-content: start; }
+.em-answer:hover { transform: translateY(-3px); }
+.em-answer[aria-pressed="true"] { box-shadow: inset 0 0 0 3px var(--em-cherry); }
+.em-answer .em-emoji { font-size: 1.8rem; }
+
+/* Scratch card */
+.em-mystery { background: var(--em-strawberry); }
+.em-scratch { position: relative; width: min(100%, 24rem); aspect-ratio: 3/4; border-radius: 1.75rem; overflow: hidden; box-shadow: var(--em-soft-shadow); background: var(--em-paper); margin: 0 auto; rotate: 2deg; }
+.em-scratch canvas { position: absolute; inset: 0; width: 100%; height: 100%; cursor: grab; touch-action: none; transition: opacity .5s; }
+.em-scratch[data-revealed="true"] canvas { opacity: 0; pointer-events: none; }
+.em-scratch-inner { position: absolute; inset: 0; padding: 1.6rem; display: flex; flex-direction: column; justify-content: space-between; }
+
+/* Passport */
+.em-passport { display: grid; gap: 2.5rem; align-items: center; }
+@media (min-width: 900px) { .em-passport { grid-template-columns: 1fr 1.3fr; } }
+.em-book { display: grid; grid-template-columns: 1fr 1fr; background: var(--em-paper); border-radius: 1.2rem 1.6rem 1.6rem 1.2rem; box-shadow: var(--em-soft-shadow); overflow: hidden; }
+.em-page { padding: 1.5rem; min-height: 24rem; position: relative; }
+.em-page + .em-page { border-left: 1.5px solid color-mix(in oklab, var(--em-ink) 10%, transparent); background-image: radial-gradient(color-mix(in oklab, var(--em-ink) 9%, transparent) 1px, transparent 1px); background-size: 16px 16px; }
+.em-stamps { display: grid; grid-template-columns: repeat(3, 1fr); gap: .7rem; }
+.em-stamp { aspect-ratio: 1; border-radius: 999px; display: grid; place-items: center; text-align: center; font-family: var(--em-display); font-size: .7rem; font-weight: 700; line-height: 1.05; padding: .4rem; box-shadow: inset 0 0 0 3px color-mix(in oklab, var(--em-paper) 60%, transparent), inset 0 0 0 5px currentColor; }
+.em-stamp[data-empty="true"] { box-shadow: inset 0 0 0 2px color-mix(in oklab, var(--em-ink) 15%, transparent); color: var(--em-ink-soft); background: transparent; font-family: var(--em-hand); font-size: 1rem; font-weight: 500; }
+.em-cover { background: var(--em-leaf); color: var(--em-butter); border-radius: 1rem 1.4rem 1.4rem 1rem; padding: 2rem; aspect-ratio: 3/4; max-width: 20rem; display: flex; flex-direction: column; justify-content: space-between; box-shadow: var(--em-soft-shadow); rotate: -3deg; }
+
+/* Keepsakes */
+.em-keeps { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); align-items: start; }
+.em-magazine { position: relative; aspect-ratio: 3/4; border-radius: .5rem; overflow: hidden; box-shadow: var(--em-soft-shadow); }
+.em-magazine img { width: 100%; height: 100%; object-fit: cover; }
+.em-magazine .em-mast { position: absolute; top: .6rem; left: 0; right: 0; text-align: center; font-family: var(--em-display); font-size: 3rem; font-weight: 800; color: var(--em-butter); letter-spacing: -.06em; }
+.em-postcard { background: var(--em-paper); padding: .8rem; border-radius: .5rem; box-shadow: var(--em-soft-shadow); rotate: 2deg; }
+.em-trading { background: var(--em-butter); padding: .7rem; border-radius: 1rem; box-shadow: var(--em-soft-shadow); rotate: -2deg; }
+.em-trading .em-inner { background: var(--em-paper); border-radius: .6rem; overflow: hidden; }
+
+/* Purchase */
+.em-offer { background: var(--em-ink); color: var(--em-vanilla); border-radius: 2.5rem; padding: clamp(1.75rem, 5vw, 4rem); display: grid; gap: 2.5rem; }
+@media (min-width: 900px) { .em-offer { grid-template-columns: 1.2fr 1fr; } }
+.em-offer ul li { display: flex; gap: .7rem; padding: .55rem 0; border-bottom: 1px solid color-mix(in oklab, var(--em-vanilla) 14%, transparent); }
+.em-ticket { background: var(--em-butter); color: var(--em-ink); border-radius: 1.75rem; padding: 2rem; display: grid; gap: 1rem; align-content: start; }
+.em-price { font-family: var(--em-display); font-size: 5rem; font-weight: 800; letter-spacing: -.06em; line-height: 1; }
+
+/* FAQ */
+.em-faq details { background: var(--em-paper); border-radius: 1.25rem; padding: 1.1rem 1.4rem; }
+.em-faq summary { cursor: pointer; font-weight: 600; font-size: 1.05rem; list-style: none; display: flex; justify-content: space-between; gap: 1rem; }
+.em-faq summary::after { content: "+"; font-family: var(--em-display); font-size: 1.4rem; line-height: 1; }
+.em-faq details[open] summary::after { content: "–"; }
+.em-faq p { margin-top: .6rem; color: var(--em-ink-soft); line-height: 1.55; }
+
+.em-concept-note { background: var(--em-butter); text-align: center; font-size: .85rem; padding: .5rem 1rem; }
+.em :focus-visible { outline: 3px solid var(--em-cherry); outline-offset: 3px; }

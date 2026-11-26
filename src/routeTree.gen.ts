@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as AffiliateDisclosureRouteImport } from './routes/affiliate-disclosure'
+import { Route as ConceptRouteImport } from './routes/concept'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as CorrectionsRouteImport } from './routes/corrections'
 import { Route as DisclaimerRouteImport } from './routes/disclaimer'
@@ -58,6 +59,11 @@ const AboutRoute = AboutRouteImport.update({
 const AffiliateDisclosureRoute = AffiliateDisclosureRouteImport.update({
   id: '/affiliate-disclosure',
   path: '/affiliate-disclosure',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ConceptRoute = ConceptRouteImport.update({
+  id: '/concept',
+  path: '/concept',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ContactRoute = ContactRouteImport.update({
@@ -225,6 +231,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/affiliate-disclosure': typeof AffiliateDisclosureRoute
+  '/concept': typeof ConceptRoute
   '/contact': typeof ContactRoute
   '/corrections': typeof CorrectionsRoute
   '/disclaimer': typeof DisclaimerRoute
@@ -262,6 +269,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/affiliate-disclosure': typeof AffiliateDisclosureRoute
+  '/concept': typeof ConceptRoute
   '/contact': typeof ContactRoute
   '/corrections': typeof CorrectionsRoute
   '/disclaimer': typeof DisclaimerRoute
@@ -300,6 +308,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/affiliate-disclosure': typeof AffiliateDisclosureRoute
+  '/concept': typeof ConceptRoute
   '/contact': typeof ContactRoute
   '/corrections': typeof CorrectionsRoute
   '/disclaimer': typeof DisclaimerRoute
@@ -339,6 +348,7 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/affiliate-disclosure'
+    | '/concept'
     | '/contact'
     | '/corrections'
     | '/disclaimer'
@@ -376,6 +386,7 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/affiliate-disclosure'
+    | '/concept'
     | '/contact'
     | '/corrections'
     | '/disclaimer'
@@ -413,6 +424,7 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/affiliate-disclosure'
+    | '/concept'
     | '/contact'
     | '/corrections'
     | '/disclaimer'
@@ -451,6 +463,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   AffiliateDisclosureRoute: typeof AffiliateDisclosureRoute
+  ConceptRoute: typeof ConceptRoute
   ContactRoute: typeof ContactRoute
   CorrectionsRoute: typeof CorrectionsRoute
   DisclaimerRoute: typeof DisclaimerRoute
@@ -506,6 +519,13 @@ declare module '@tanstack/react-router' {
       path: '/affiliate-disclosure'
       fullPath: '/affiliate-disclosure'
       preLoaderRoute: typeof AffiliateDisclosureRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/concept': {
+      id: '/concept'
+      path: '/concept'
+      fullPath: '/concept'
+      preLoaderRoute: typeof ConceptRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/contact': {
@@ -739,6 +759,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   AffiliateDisclosureRoute: AffiliateDisclosureRoute,
+  ConceptRoute: ConceptRoute,
   ContactRoute: ContactRoute,
   CorrectionsRoute: CorrectionsRoute,
   DisclaimerRoute: DisclaimerRoute,

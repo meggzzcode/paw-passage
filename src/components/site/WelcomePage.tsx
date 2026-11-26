@@ -4,6 +4,7 @@
 import { AppLink } from "@/components/shell/AppLink";
 import { flags } from "@/config/commercial";
 import { InstallCard } from "@/components/site/InstallCard";
+import { useInstallEligible } from "@/components/site/useInstallEligibility";
 import { hasProfile } from "@/components/passport/ProfileEditor";
 import { members } from "@/passport/progress";
 import { savedIdCount } from "@/passport/preview-view";
@@ -27,6 +28,7 @@ export function unlockedTotals(premium: readonly Adventure[]): {
 export function WelcomePage() {
   const ent = useEntitlement();
   const { ready, save, profile } = usePassport();
+  const installEligible = useInstallEligible();
 
   if (ent.status === "checking" || (ent.status === "free" && ent.signedIn)) {
     return (
@@ -146,7 +148,7 @@ export function WelcomePage() {
         )}
       </p>
 
-      <h2 className="pa-h">Only if you like</h2>
+      {(installEligible || flags.notifications) && <h2 className="pa-h">Only if you like</h2>}
       <InstallCard />
       {flags.notifications && (
         <p className="pa-fine">

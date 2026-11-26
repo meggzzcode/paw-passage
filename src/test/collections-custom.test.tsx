@@ -104,7 +104,7 @@ describe("hand-picked collection lifecycle through the UI", () => {
     await renderUi(<CollectionEditor id="col-abcd1234" />);
     fireEvent.click(screen.getByRole("button", { name: "Reveal a random one" }));
     const card = await screen.findByRole("article");
-    expect([A2.title, A4.title]).toContain(within(card).getByRole("heading").textContent);
+    expect([A2.title, A4.title]).toContain(within(card).getAllByRole("heading")[0]!.textContent);
   });
 });
 

@@ -1,21 +1,23 @@
-import { useEffect } from "react";
+import { useEffect, useState, useSyncExternalStore } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { Container } from "@/components/shell/Container";
 import { AppLink } from "@/components/shell/AppLink";
 import { AccessForm } from "@/components/passport/AccessForms";
 import { track } from "@/passport/events";
+import { hasAccountFlag } from "@/passport/premium-client";
+import { useEntitlement } from "@/passport/useEntitlement";
+import { PASSPORT_INVITE, PASSPORT_PAYMENT } from "@/components/passport/purchase-copy";
 import { checkoutUrl } from "@/lib/passport-api";
 import { collections } from "@/passport/content";
 import { BRAND } from "@/config/brand";
-import { flags, GIFT_CTA, KEEP_LINE, price, pricing, REFUND_SUMMARY } from "@/config/commercial";
+import { flags, GIFT_CTA, KEEP_LINE, price, REFUND_SUMMARY } from "@/config/commercial";
 import { DemoAdventure } from "@/components/site/DemoAdventure";
 import { PhotoFilterExamples } from "@/components/site/PhotoFilterExamples";
 import { FILTER_EXAMPLES } from "@/components/site/keepsake-examples";
 import { TrustStrip } from "@/components/site/TrustStrip";
-import { unlockLine, usePremiumSummary } from "@/lib/premium-summary";
 import { TrustBlock } from "@/components/passport/TrustBlock";
 import { pageHead } from "@/lib/seo";
-import { PREVIEWS_PATH } from "@/passport/starter";
+import "@/design/ux-detail.css";
 import { FaqList } from "@/components/site/FaqList";
 import { FAQS, UNLOCK_FAQ_IDS } from "@/components/site/faq-content";
 
@@ -30,98 +32,154 @@ export const Route = createFileRoute("/unlock")({
   component: Unlock,
 });
 
+/** True on this browser when a purchase was activated here before. Server render and first client render say false. */
+const noopSubscribe = () => () => {};
+
 function Unlock() {
-  const link = checkoutUrl();
-  const summary = usePremiumSummary();
+  const ent = useEntitlement();
+  const flagged = useSyncExternalStore(noopSubscribe, hasAccountFlag, () => false);
+  const entitled = ent.status === "entitled";
+  // A returning customer is never shown the sales page while we are still checking: neutral state until we know.
+  const pending = !entitled && (ent.status === "checking" || (flagged && ent.status === "free"));
+  const [submitted, setSubmitted] = useState(false);
+  const [codeOpen, setCodeOpen] = useState(false);
   useEffect(() => {
-    track("unlock_viewed");
-  }, []);
+    if (submitted && entitled) setCodeOpen(true); // keep the "confirmed" message visible after activating here
+  }, [submitted, entitled]);
+  useEffect(() => {
+    if (!entitled && !pending) track("unlock_viewed");
+  }, [entitled, pending]);
+  const showCode = !entitled || submitted;
+  const code = showCode ? (
+    <details
+      key="code"
+      className="ux-code pa-card"
+      open={codeOpen}
+      onSubmitCapture={() => setSubmitted(true)}
+      data-testid="code-section"
+    >
+      <summary
+        onClick={(e) => {
+          e.preventDefault();
+          setCodeOpen((v) => !v);
+        }}
+      >
+        Already have a code?
+      </summary>
+      <AccessForm kind="activate" />
+    </details>
+  ) : null;
+
+  if (pending)
+    return (
+      <Container>
+        <div className="pa-page">
+          <h1 className="pa-h1">The Adventure Passport</h1>
+          <p role="status" aria-busy="true">
+            Checking your Passport...
+          </p>
+        </div>
+      </Container>
+    );
+
+  if (entitled)
+    return (
+      <Container>
+        <div className="pa-page ux-owned" data-testid="unlock-entitled">
+          <p className="pa-kicker">Thank you</p>
+          <h1 className="pa-h1">You have the Passport</h1>
+          <p className="pa-sub">
+            The full library is open on this device, and it is yours to keep. Pick up wherever you
+            like.
+          </p>
+          <p>
+            <AppLink to="/discover" className="pp-btn pp-btn-primary">
+              Find today's adventure
+            </AppLink>
+            <AppLink to="/passport" className="pp-btn pp-btn-secondary">
+              My Passport
+            </AppLink>
+          </p>
+          <p className="pa-fine">
+            Using another device?{" "}
+            <AppLink to="/restore-access" className="pa-linkbtn">
+              Restore access
+            </AppLink>
+            . Questions?{" "}
+            <AppLink to="/contact" className="pa-linkbtn">
+              Contact support
+            </AppLink>
+            .
+          </p>
+          {code}
+        </div>
+      </Container>
+    );
+
+  const link = checkoutUrl();
   return (
     <Container>
       <div className="pa-page">
         <p className="pa-kicker">The Adventure Passport</p>
         <h1 className="pa-h1">{BRAND.unlockHeadline}</h1>
         <p className="pa-sub">
-          A digital collection of little adventures for you and your dog, in your browser. Start
-          with one free adventure picked for your dog. When you want more, the full Passport opens
-          the whole library for {price}, once, and it is yours to keep.
+          <strong>{PASSPORT_INVITE}</strong> Little adventures for you and your dog, in your
+          browser. Start free, or get the complete Passport.
         </p>
-        <p className="pp-fine">{KEEP_LINE}</p>
-        <p>{unlockLine(summary)}</p>
-        <p className="pp-cta-row">
-          <AppLink to="/discover" className="pp-btn pp-btn-primary">
-            Find Our First Adventure — Free
-          </AppLink>
-          <AppLink
-            to={PREVIEWS_PATH}
-            className="pp-btn pp-btn-secondary"
-            onClick={() => track("preview_viewed", { where: "unlock" })}
-          >
-            Explore the Adventure Collection
-          </AppLink>
-        </p>
+        {code}
 
-        <div className="co-compare">
+        <div className="co-compare ux-options">
           <section className="pa-card" aria-labelledby="free-h">
             <h2 id="free-h" className="pa-h">
-              Free, always
+              Try your first adventure: free
             </h2>
             <ul className="co-plain">
-              <li>
-                A few quick questions about your dog, then one complete adventure picked for them
-              </li>
-              <li>
-                Practical details first (time, cost, setting, effort), and another pick if you like
-              </li>
+              <li>A few quick questions, then one complete adventure picked for your dog</li>
+              <li>The practical details first: time, cost, setting and effort</li>
               <li>
                 A stamp for your passport, and the matching keepsake style shown as an example
               </li>
-              <li>Selected previews from the larger collection</li>
               <li>No account, no email, no card</li>
             </ul>
+            <p>
+              <AppLink to="/discover" className="pp-btn pp-btn-primary">
+                Find our first adventure
+              </AppLink>
+            </p>
           </section>
           <section className="pa-card" aria-labelledby="full-h">
             <h2 id="full-h" className="pa-h">
-              The full Passport adds
+              The complete Adventure Passport: {price} once
             </h2>
-            <p className="pa-price">
-              <strong>{price}</strong> <span>{pricing}</span>
+            <p>
+              <strong>{PASSPORT_PAYMENT}</strong>
             </p>
+            <p className="pa-fine">Digital and browser-based, so nothing is shipped. {KEEP_LINE}</p>
             <ul className="co-plain">
-              <li>The whole library, in every collection, not just one adventure</li>
-              <li>
-                Mystery reveals and picks matched to your dog, with filters for time, budget and
-                setting
-              </li>
-              <li>Collections from puppies to seniors, homebodies to hikers</li>
-              <li>Daily and seasonal suggestions, plus birthday and adoption reminders</li>
-              {flags.notifications && (
-                <li>Optional reminders in My Passport, only if you turn them on</li>
-              )}
+              <li>Over a hundred adventures, in every collection</li>
+              <li>Picks matched to your dog, mystery reveals and filters for time and budget</li>
               <li>
                 Personalized keepsakes: make your own from your dog's photo, drawn on your device
                 and never uploaded
               </li>
-              <li>Your own collections</li>
-              <li>Progress that can follow you to your other devices</li>
+              <li>Your own collections, and progress that can follow you to your other devices</li>
+              {flags.notifications && (
+                <li>Optional reminders in My Passport, only if you turn them on</li>
+              )}
             </ul>
-            <p className="pa-fine">
-              Many adventures cost nothing extra to do. Each shows its cost range before you start.
-              It is digital, so nothing ships. One purchase covers your household on your own
-              devices. The Passport keeps one shared profile, so you can add one dog or several (for
-              example, Luna and Milo) and pick activities that suit every dog.
-            </p>
-            <div className="pa-fine" data-testid="refund-terms">
-              <h3 className="pa-h">Refund terms, before you pay</h3>
-              <ul className="co-plain">
-                {REFUND_SUMMARY.map((t) => (
-                  <li key={t}>{t}</li>
-                ))}
-              </ul>
-              <AppLink to="/refund-policy" className="pa-linkbtn inline-flex items-center">
-                Read the full refund policy
-              </AppLink>
-            </div>
+            <details className="pa-fold" data-testid="refund-terms">
+              <summary>Refund terms, before you pay</summary>
+              <div className="pa-fold-body">
+                <ul className="co-plain">
+                  {REFUND_SUMMARY.map((t) => (
+                    <li key={t}>{t}</li>
+                  ))}
+                </ul>
+                <AppLink to="/refund-policy" className="pa-linkbtn inline-flex items-center">
+                  Read the full refund policy
+                </AppLink>
+              </div>
+            </details>
             {link ? (
               <a
                 className="pp-btn pp-btn-primary"
@@ -142,13 +200,17 @@ function Unlock() {
                   disabled
                   aria-describedby="checkout-note"
                 >
-                  Get the Passport
+                  Checkout opens soon
                 </button>
                 <p id="checkout-note" className="pa-fine">
-                  Checkout opens soon. Nothing can be bought yet, and nothing is charged.
+                  Nothing can be bought yet, and nothing is charged.
                 </p>
               </>
             )}
+            <p className="pa-fine">
+              One purchase covers your household on your own devices. The Passport keeps one shared
+              profile, so you can add one dog or several (for example, Luna and Milo).
+            </p>
             {flags.gifting && link && (
               <p className="pa-fine">
                 <a
@@ -222,7 +284,6 @@ function Unlock() {
           Every adventure is a gentle suggestion. Your dog can stop at any time.
         </p>
 
-        <AccessForm kind="activate" />
         <p className="pa-fine">
           Bought it on another device?{" "}
           <AppLink to="/restore-access" className="pa-linkbtn">

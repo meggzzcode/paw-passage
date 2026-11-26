@@ -38,6 +38,32 @@ const COPY: Record<KeepsakeUnlockWhere, { lead: string; line: string }> = {
   },
 };
 
+/** The static example alone (no explanation, no button), for places that already say what it is. */
+export function KeepsakeExampleFigure({
+  where,
+  family,
+}: {
+  where: KeepsakeUnlockWhere;
+  family?: string | undefined;
+}) {
+  const src = (family && BY_FAMILY[family]) || BY_WHERE[where];
+  const ex = FILTER_EXAMPLES.find((e) => e.src === src) ?? FILTER_EXAMPLES[0];
+  if (!ex) return null;
+  return (
+    <figure className="kp-unlock-fig">
+      <img
+        src={ex.src}
+        alt={ex.alt}
+        loading="lazy"
+        width={ex.width}
+        height={ex.height}
+        style={{ maxWidth: "min(220px, 100%)", height: "auto" }}
+      />
+      <figcaption className="pa-fine">Example keepsake with sample art, not a customer.</figcaption>
+    </figure>
+  );
+}
+
 export function KeepsakeUnlock({
   where,
   family,

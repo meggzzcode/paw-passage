@@ -2,8 +2,7 @@ import { Shortcuts } from "./Shortcuts";
 import { Itineraries } from "./Itineraries";
 import { useRef, useState } from "react";
 import { Container } from "@/components/shell/Container";
-import { Onboarding } from "./Onboarding";
-import { ProfileEditor, hasProfile } from "./ProfileEditor";
+import { ProfileEditor } from "./ProfileEditor";
 import { OwnerPrefsEditor } from "./OwnerPrefsEditor";
 import { AdventureCard, MysteryCard } from "./AdventureCard";
 import { FilterPanel } from "./FilterPanel";
@@ -13,6 +12,9 @@ import { DiscoverTabs, panelId, tabId, type DiscoverMode } from "./DiscoverTabs"
 import { collections } from "@/passport/content";
 import { useAdventureLibrary } from "./collections-shared";
 import { FreeStarter } from "./FreeStarter";
+import { useDiscoverData } from "./discover-data";
+import { QuickSurprise, TodayCard } from "./PaidDiscover";
+import "@/design/ux-detail.css";
 import { FILTER_LABELS, pickSurprise, rank, type Ctx, type History } from "@/passport/engine";
 import type { CustomCollection, DogProfile, Scope, SessionFilters } from "@/passport/profile";
 import { listCollections, members, newCollectionId } from "@/passport/progress";
@@ -22,21 +24,6 @@ import { track } from "@/passport/events";
 import { CtxChip } from "@/components/journal/CtxChip";
 import { ctxToFilters, type CtxKey } from "@/passport/journal-context";
 import { AppLink } from "@/components/shell/AppLink";
-
-/** Everything the three tabs share: the library, who it is for, and what has been done. */
-function useDiscoverData() {
-  const { save, profile } = usePassport();
-  const { all: library, unlocked } = useAdventureLibrary();
-  const dog: DogProfile = profile;
-  const ctx: Ctx = { dog, owner: save.owner.data, unlocked };
-  const history: History = {
-    done: new Set(members(save.done)),
-    favorites: new Set(members(save.favorites)),
-    skipped: new Set<string>(),
-    feedback: Object.fromEntries(Object.entries(save.feedback).map(([k, v]) => [k, v.value])),
-  };
-  return { save, dog, library, ctx, history };
-}
 
 /**
  * Public, server-rendered explanation of free adventure discovery. It is plain text that search engines can read without
@@ -114,8 +101,10 @@ function FullDiscover({
   ctx?: CtxKey;
 }) {
   const { ready, profile } = usePassport();
-  const [onboarding, setOnboarding] = useState(false);
   const [editing, setEditing] = useState(false);
+  // Advanced browsing is tucked away unless the address asks for it (?mode=surprise|browse or a journal ?ctx=).
+  const [moreOpen, setMoreOpen] = useState(mode !== "made");
+  const [surprise, setSurprise] = useState(false);
 
   if (!ready)
     return (
@@ -124,45 +113,45 @@ function FullDiscover({
       </Container>
     );
 
-  const showBanner = !profile.skipped && !hasProfile(profile) && !onboarding && !editing;
-
   return (
     <Container>
       <div className="pa-page pd-page">
-        <h1 className="pa-h1">Find a little adventure</h1>
+        <h1 className="pa-h1">What shall we do today?</h1>
         <p className="pa-sub">
-          Your full Passport. No deadlines. Pick one when it suits you
-          {profile.name ? ` and ${profile.name}` : ""}.
+          Your full Passport. No deadlines{profile.name ? `, just you and ${profile.name}` : ""}.
         </p>
 
-        <Shortcuts />
-        <Itineraries />
+        <TodayCard onPersonalize={() => setEditing(true)} />
 
-        {showBanner && (
-          <aside className="pd-banner" aria-label="Personalize">
-            <p>
-              <strong>Personalize</strong> your suggestions with a few optional questions. You can
-              browse without answering.
-            </p>
-            <div className="pa-row">
-              <button
-                type="button"
-                className="pp-btn pp-btn-secondary"
-                onClick={() => setOnboarding(true)}
-              >
-                Personalize
-              </button>
-              <button
-                type="button"
-                className="pp-btn pp-btn-ghost"
-                onClick={() => setProfile({ skipped: true })}
-              >
-                Not now
-              </button>
-            </div>
-          </aside>
-        )}
-        {onboarding && <Onboarding onDone={() => setOnboarding(false)} />}
+        <div className="ux-quick" role="group" aria-label="Other ways in">
+          <button
+            type="button"
+            className="pp-btn pp-btn-secondary"
+            aria-expanded={surprise}
+            onClick={() => setSurprise((v) => !v)}
+          >
+            Surprise us
+          </button>
+          <AppLink to="/collections" className="pp-btn pp-btn-secondary">
+            Explore collections
+          </AppLink>
+          <AppLink
+            to="/collections"
+            search={{ tab: "favorites" } as never}
+            className="pp-btn pp-btn-secondary"
+          >
+            Saved
+          </AppLink>
+          <button
+            type="button"
+            className="pp-btn pp-btn-ghost"
+            aria-expanded={editing}
+            onClick={() => setEditing((v) => !v)}
+          >
+            Preferences
+          </button>
+        </div>
+        {surprise && <QuickSurprise />}
         {editing && (
           <section className="pa-panel" aria-labelledby="pd-edit-h">
             <h2 className="pa-h" id="pd-edit-h">
@@ -182,33 +171,41 @@ function FullDiscover({
             </div>
           </section>
         )}
-        {!editing && !onboarding && !showBanner && (
-          <p className="pa-fine">
-            {profile.name ? `Planning for ${profile.name}. ` : ""}
-            <button type="button" className="pa-linkbtn" onClick={() => setEditing(true)}>
-              {"Personalize"}
-            </button>
-          </p>
-        )}
 
-        <DiscoverTabs mode={mode} onChange={onMode} />
-        <div
-          role="tabpanel"
-          id={panelId(mode)}
-          aria-labelledby={tabId(mode)}
-          tabIndex={0}
-          className="pd-panel"
-        >
-          {mode === "made" && <MadeForYou onEditProfile={() => setEditing(true)} />}
-          {mode === "surprise" && <SurpriseMe />}
-          {mode === "browse" && (
-            <BrowseAll
-              key={ctxKey ?? "none"}
-              onMode={onMode}
-              start={ctxKey ? ctxToFilters(ctxKey) : {}}
-            />
+        <details className="ux-more" open={moreOpen}>
+          <summary
+            onClick={(e) => {
+              e.preventDefault();
+              setMoreOpen((v) => !v);
+            }}
+          >
+            More ways to find an adventure
+          </summary>
+          {moreOpen && (
+            <>
+              <Shortcuts />
+              <Itineraries />
+              <DiscoverTabs mode={mode} onChange={onMode} />
+              <div
+                role="tabpanel"
+                id={panelId(mode)}
+                aria-labelledby={tabId(mode)}
+                tabIndex={0}
+                className="pd-panel"
+              >
+                {mode === "made" && <MadeForYou onEditProfile={() => setEditing(true)} />}
+                {mode === "surprise" && <SurpriseMe />}
+                {mode === "browse" && (
+                  <BrowseAll
+                    key={ctxKey ?? "none"}
+                    onMode={onMode}
+                    start={ctxKey ? ctxToFilters(ctxKey) : {}}
+                  />
+                )}
+              </div>
+            </>
           )}
-        </div>
+        </details>
       </div>
     </Container>
   );

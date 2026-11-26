@@ -19,6 +19,14 @@ import type { DogProfile, SessionFilters } from "@/passport/profile";
 vi.mock("@/components/passport/Shortcuts", () => ({ Shortcuts: () => null }));
 vi.mock("@/components/passport/Itineraries", () => ({ Itineraries: () => null }));
 
+vi.mock("@/components/shell/AppLink", () => ({
+  AppLink: ({ to, children, ...r }: { to: string; children?: unknown }) => (
+    <a href={to} {...(r as object)}>
+      {children as never}
+    </a>
+  ),
+}));
+
 vi.mock("@/passport/useEntitlement", () => ({
   useEntitlement: () => ({
     status: "entitled",
@@ -35,7 +43,14 @@ function Harness({ start }: { start: DiscoverMode }) {
   const [mode, setMode] = useState<DiscoverMode>(start);
   return <DiscoverPage mode={mode} onMode={setMode} />;
 }
-const show = (mode: DiscoverMode = "made") => render(<Harness start={mode} />);
+/** Advanced browsing is behind "More ways to find an adventure"; open it unless the mode already did. */
+const show = (mode: DiscoverMode = "made") => {
+  const r = render(<Harness start={mode} />);
+  if (!screen.queryByRole("tabpanel"))
+    fireEvent.click(screen.getByText("More ways to find an adventure"));
+  return r;
+};
+const panelCards = () => within(screen.getByRole("tabpanel")).getAllByRole("article");
 
 function ctxHistory(filters: SessionFilters = {}) {
   const s = getSave();
@@ -55,20 +70,21 @@ beforeEach(() => {
 afterEach(cleanup);
 
 describe("discover: onboarding and browsing", () => {
-  it("browses without a profile and the Personalize banner is dismissible", () => {
+  it("leads with one suggestion and never asks for a second onboarding", () => {
     show("browse");
-    expect(screen.getAllByRole("article").length).toBeGreaterThan(0);
-    const banner = screen.getByRole("complementary", { name: "Personalize" });
-    expect(banner).toBeInTheDocument();
-    fireEvent.click(within(banner).getByRole("button", { name: "Not now" }));
+    expect(panelCards().length).toBeGreaterThan(0);
+    expect(screen.getByRole("heading", { level: 1, name: "What shall we do today?" })).toBeTruthy();
+    const today = screen.getByTestId("today");
+    expect(within(today).getByRole("heading", { name: "A good place to start" })).toBeTruthy();
     expect(screen.queryByRole("complementary", { name: "Personalize" })).toBeNull();
-    expect(getSave().profile.data.skipped).toBe(true);
-    expect(screen.getAllByRole("article").length).toBeGreaterThan(0);
+    // A quiet, optional invitation, not a questionnaire.
+    fireEvent.click(within(today).getByRole("button", { name: "Personalize" }));
+    expect(screen.getByRole("heading", { name: "Your dog and you" })).toBeTruthy();
   });
 
   it("saves quick answers as you go and keeps 'Not sure' as unknown", () => {
     show("browse");
-    fireEvent.click(screen.getByRole("button", { name: "Personalize" }));
+    fireEvent.click(screen.getByRole("button", { name: "Preferences" }));
     fireEvent.change(screen.getByLabelText(/dog's name/i), { target: { value: "Biscuit" } });
     const people = screen.getByRole("group", { name: /unfamiliar people/i });
     fireEvent.click(within(people).getByRole("button", { name: "Nervous" }));
@@ -78,19 +94,7 @@ describe("discover: onboarding and browsing", () => {
     expect(d.name).toBe("Biscuit");
     expect(d.people).toBe("nervous");
     expect(d.dogs).toBe("unknown");
-    fireEvent.click(screen.getByRole("button", { name: "Add more about your dog" }));
-    expect(screen.getByText(/only a gentle hint/i)).toBeInTheDocument();
-    fireEvent.click(screen.getByRole("button", { name: "About you" }));
     expect(screen.getByRole("group", { name: /how much walking/i })).toBeInTheDocument();
-    expect(screen.getByText(/stay on hold/i)).toBeInTheDocument();
-  });
-
-  it("skipping onboarding keeps browsing available", () => {
-    show("made");
-    fireEvent.click(screen.getByRole("button", { name: "Personalize" }));
-    fireEvent.click(screen.getByRole("button", { name: "Skip for now" }));
-    expect(screen.queryByRole("heading", { name: /who's coming/i })).toBeNull();
-    expect(screen.getAllByRole("article").length).toBeGreaterThan(0);
   });
 
   it("exposes the tabs accessibly and moves between them with arrow keys", () => {
@@ -246,52 +250,66 @@ describe("discover: completion and cards", () => {
 
   it("completion updates progress everywhere and moves on to the photo filter", () => {
     show("browse");
-    const first = screen.getAllByRole("article")[0]!;
-    const title = within(first).getByRole("heading").textContent!;
-    expect(within(first).queryByRole("button", { name: "Make my photo filter" })).toBeNull();
-    fireEvent.click(within(first).getByRole("button", { name: "Collect it" }));
+    const first = panelCards()[0]!;
+    const title = within(first).getAllByRole("heading")[0]!.textContent!;
+    expect(within(first).queryByRole("button", { name: "Make a photo keepsake" })).toBeNull();
+    fireEvent.click(within(first).getByRole("button", { name: "We did it" }));
     expect(getSave().done.added[library.find((a) => a.title === title)!.id]).toBeTruthy();
-    expect(within(first).getByRole("status")).toHaveTextContent(/added to your passport/i);
-    expect(within(first).getByRole("button", { name: "Make my photo filter" })).toBeInTheDocument();
+    expect(
+      within(first).getByRole("heading", { name: "Another little memory made." }),
+    ).toBeTruthy();
+    expect(
+      within(first).getByRole("button", { name: "Make a photo keepsake" }),
+    ).toBeInTheDocument();
+    // A paying customer is never sold the Passport again.
+    expect(within(first).queryByTestId("purchase-invite")).toBeNull();
     expect(screen.getByText(new RegExp(`^1 of ${library.length} adventures`))).toBeTruthy();
     // Same card, same completion, in another tab.
     fireEvent.click(screen.getByRole("tab", { name: "Made for You" }));
     expect(screen.getByText(new RegExp(`^1 of ${library.length} adventures`))).toBeTruthy();
     fireEvent.click(screen.getByRole("tab", { name: "Browse All" }));
-    const again = screen.getAllByRole("article")[0]!;
+    const again = panelCards()[0]!;
     openMore(again);
     fireEvent.click(within(again).getByRole("button", { name: "Do it again" }));
     expect(Object.values(getSave().repeats)).toEqual([1]);
     expect(members(getSave().done)).toHaveLength(1); // a repeat is not a second unique completion
-    fireEvent.click(within(again).getByRole("button", { name: "Undo collecting" }));
+    fireEvent.click(within(again).getByRole("button", { name: "Undo" }));
     expect(members(getSave().done)).toHaveLength(0);
   });
 
   it("leads with the twist, one 'You'll need' line and labelled chips; the rest is collapsed", () => {
     show("browse");
-    const card = screen.getAllByRole("article")[0]!;
-    const a = library.find((x) => x.title === within(card).getByRole("heading").textContent)!;
+    const card = panelCards()[0]!;
+    const a = library.find(
+      (x) => x.title === within(card).getAllByRole("heading")[0]!.textContent,
+    )!;
     expect(within(card).getByText(a.twist, { exact: false }).closest(".pa-twist")).not.toBeNull();
-    expect(within(card).getAllByText(/^You'll need:/)).toHaveLength(1);
+    expect(within(card).getByRole("heading", { name: "What you'll need" })).toBeTruthy();
     const glance = within(card).getByLabelText("At a glance");
     expect(glance.textContent).toMatch(/Time/);
     expect(glance.textContent).toMatch(/Cost/);
     expect(glance.textContent).toMatch(/Where/);
     const tags = card.querySelector(".pa-tags");
     expect((tags?.querySelectorAll("li").length ?? 0) <= 7).toBe(true);
-    const more = within(card).getByText("More details").closest("details")!;
-    expect(more.open).toBe(false);
-    expect(within(card).getByText("How it goes")).toBeInTheDocument();
+    // Suitability and preparation are always on the page, never inside a closed fold.
+    const before = within(card).getByRole("heading", { name: "Before you start" });
+    expect(before.closest("details.pa-fold")).toBeNull();
+    expect(within(card).getByRole("list", { name: /safety and preparation/i })).toBeTruthy();
+    expect(within(card).getByRole("heading", { name: "How it goes" })).toBeInTheDocument();
+    expect(card.querySelector("ol.pa-steps")).not.toBeNull();
+    expect(within(card).getByRole("button", { name: "We did it" })).toBeInTheDocument();
+    expect(within(card).getByRole("button", { name: /Save for later/ })).toBeInTheDocument();
     // Overlapping buttons are gone: no separate Liked, no loose Favorite or Save until More is opened.
     expect(within(card).queryByRole("button", { name: "Liked" })).toBeNull();
     expect(within(card).queryByRole("button", { name: /Favorite/ })).toBeNull();
-    expect(within(card).queryByRole("button", { name: /Save for later/ })).toBeNull();
   });
 
   it("records not-for-us, merges liked into the heart, and offers collections", () => {
     show("browse");
-    const card = screen.getAllByRole("article")[0]!;
-    const id = library.find((x) => x.title === within(card).getByRole("heading").textContent)!.id;
+    const card = panelCards()[0]!;
+    const id = library.find(
+      (x) => x.title === within(card).getAllByRole("heading")[0]!.textContent,
+    )!.id;
     openMore(card);
     fireEvent.click(within(card).getByRole("button", { name: /Favorite/ }));
     expect(getSave().feedback[id]?.value).toBe("liked");

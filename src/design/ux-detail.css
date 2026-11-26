@@ -1,0 +1,84 @@
+/* Adventure detail, completion, paid Discover and purchase pages. Uses existing design tokens only. */
+.ux-about {
+  margin: 0 0 var(--space-3, 0.75rem);
+}
+.ux-before {
+  margin: var(--space-3, 0.75rem) 0;
+}
+.ux-steps {
+  font-size: 1.0625rem;
+  line-height: 1.55;
+}
+.ux-steps li {
+  margin-bottom: 0.6rem;
+}
+.ux-done h3:focus,
+.pd-card h2:focus {
+  outline: none;
+}
+.ux-done {
+  margin-top: var(--space-4, 1rem);
+}
+.ux-done figure {
+  margin: 0.75rem 0;
+}
+.ux-invite {
+  margin-top: var(--space-3, 0.75rem);
+}
+.ux-invite p {
+  margin: 0 0 0.5rem;
+}
+.ux-today .pa-actions,
+.ux-quick {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.ux-quick .pp-btn {
+  min-height: 44px;
+}
+.ux-more > summary {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.ux-owned .pp-btn {
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  min-height: 44px;
+}
+.ux-code {
+  margin: var(--space-3, 0.75rem) 0;
+}
+.ux-code > summary {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.ux-options {
+  display: grid;
+  gap: 0.75rem;
+}
+.ux-more > summary,
+.ux-code > summary {
+  font-weight: 600;
+  list-style: none;
+  padding: 0 0.25rem;
+}
+.ux-more > summary::before,
+.ux-code > summary::before {
+  content: "+";
+  display: inline-block;
+  width: 1.25rem;
+  font-weight: 700;
+}
+.ux-more[open] > summary::before,
+.ux-code[open] > summary::before {
+  content: "\2212";
+}
+.ux-more > summary::-webkit-details-marker,
+.ux-code > summary::-webkit-details-marker {
+  display: none;
+}

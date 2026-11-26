@@ -32,14 +32,17 @@ afterEach(cleanup);
 const LINE = /veterinary advice|walk away any time/i;
 
 describe("Safety copy on cards", () => {
-  it("collapses the safety lines and the signs into ONE 'Good to know' disclosure", () => {
+  it("shows the safety lines on the page and keeps only the signs in ONE disclosure", () => {
     const { container } = render(<AdventureCard a={A1} />);
     const all = container.querySelectorAll("details.pa-gtk");
     expect(all).toHaveLength(1);
     const box = all[0] as HTMLDetailsElement;
     expect(box.open).toBe(false);
-    expect(box.querySelector("summary")?.textContent).toBe("Good to know");
-    for (const line of A1.safety) expect(box.textContent).toContain(line);
+    expect(box.querySelector("summary")?.textContent).toBe("Signs your dog needs a break");
+    // Suitability and safety are always visible, outside any fold.
+    const list = container.querySelector('ul[aria-label^="Safety and preparation"]')!;
+    expect(list.closest("details")).toBeNull();
+    for (const line of A1.safety) expect(list.textContent).toContain(line);
     for (const w of [
       "Relaxed",
       "Unsure",

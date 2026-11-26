@@ -292,10 +292,10 @@ describe("free Discover: the introductory flow", () => {
       "href",
       "/unlock",
     ); // but buying never waits for it
-    fireEvent.click(screen.getByRole("button", { name: "Collect it" }));
+    fireEvent.click(screen.getByRole("button", { name: "We did it" }));
     expect(await screen.findByRole("heading", { name: "Your first stamp" })).toBeInTheDocument();
     expect(screen.getByText(/Want more little adventures with your dog\?/)).toBeInTheDocument();
-    expect(screen.getByRole("link", { name: "See the full Passport" })).toBeInTheDocument();
+    expect(screen.getAllByRole("link", { name: "See the full Passport" })[0]!).toBeInTheDocument();
     expect(screen.getByRole("link", { name: "Browse previews" })).toHaveAttribute(
       "href",
       "/previews",
@@ -303,17 +303,27 @@ describe("free Discover: the introductory flow", () => {
     expect(fetchSpy).not.toHaveBeenCalled();
   });
 
-  it("shows the keepsake explainer at most once after completion, and only when the visitor opens the keepsake style", async () => {
+  it("completion shows the memory line, one static keepsake example and one purchase invitation", async () => {
     await show();
     start();
     await screen.findByRole("article", { name: "Recommended adventure" });
     fireEvent.click(screen.getByRole("button", { name: "Scratch or tap to reveal." }));
     await screen.findByText("How it goes");
-    fireEvent.click(screen.getByRole("button", { name: "Collect it" }));
+    fireEvent.click(screen.getByRole("button", { name: "We did it" }));
     await screen.findByRole("heading", { name: "Your first stamp" });
+    expect(
+      screen.getByRole("heading", { name: "Another little memory made." }),
+    ).toBeInTheDocument();
+    // Exactly one keepsake example and no second keepsake explainer or toggle.
+    expect(screen.getAllByAltText(/keepsake/i)).toHaveLength(1);
     expect(screen.queryAllByLabelText("About personalized keepsakes")).toHaveLength(0);
-    fireEvent.click(screen.getByRole("button", { name: "See the keepsake style" }));
-    expect(screen.getAllByLabelText("About personalized keepsakes")).toHaveLength(1);
+    expect(screen.queryByRole("button", { name: "See the keepsake style" })).toBeNull();
+    expect(screen.getByText(/included in the full Passport/i)).toBeInTheDocument();
+    // One purchase invitation with the approved lines, no upload control and no file input.
+    expect(screen.getAllByTestId("purchase-invite")).toHaveLength(1);
+    expect(screen.getByText(/One passport\. Over a hundred adventures\./)).toBeInTheDocument();
+    expect(screen.getByText(`One payment of ${offer.price}. Yours to keep.`)).toBeInTheDocument();
+    expect(document.querySelector("input[type=file]")).toBeNull();
   });
 
   it("says plainly when nothing is eligible, and shows the pitch", async () => {

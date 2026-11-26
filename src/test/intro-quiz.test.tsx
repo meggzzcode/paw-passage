@@ -274,12 +274,11 @@ describe("keepsake creation is paid", () => {
     await screen.findByRole("article", { name: "Recommended adventure" });
     fireEvent.click(screen.getByRole("button", { name: "Scratch or tap to reveal." }));
     await screen.findByText("How it goes");
-    fireEvent.click(screen.getByRole("button", { name: "Collect it" }));
+    fireEvent.click(screen.getByRole("button", { name: "We did it" }));
     await screen.findByRole("heading", { name: "Your first stamp" });
-    // the explainer appears once, inside the card, when the visitor opens the keepsake style
+    // one static example and one plain line, with no separate keepsake explainer to open
     expect(screen.queryByLabelText("About personalized keepsakes")).toBeNull();
-    fireEvent.click(screen.getByRole("button", { name: "See the keepsake style" }));
-    expect(screen.getByLabelText("About personalized keepsakes")).toBeInTheDocument();
+    expect(screen.getByText(/included in the full Passport/i)).toBeInTheDocument();
     expect(container.querySelector('input[type="file"]')).toBeNull();
   });
 

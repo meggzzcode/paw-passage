@@ -77,13 +77,14 @@ Ten keepsake families (travel postcard, magazine cover, ID card, trading card, c
 
 ## Free versus premium
 
-|                                                      | Free                                    | Full Passport (one-time purchase)                            |
-| ---------------------------------------------------- | --------------------------------------- | ------------------------------------------------------------ |
-| Adventures                                           | 12 sample adventures in this repository | A much larger library, protected and delivered by the server |
-| Account                                              | None                                    | None; a license code activates access                        |
-| Discovery, collections, stamps, milestones, memories | Yes                                     | Yes                                                          |
-| Keepsakes                                            | Yes (device only)                       | More designs and premium-only collections                    |
-| Progress                                             | On the device                           | Also synced across devices, restorable with the code         |
+|                                                      | Free                                                                                                           | Full Passport (one-time purchase)                                                                                                                    |
+| ---------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Adventures                                           | 12 sample adventures in this repository                                                                        | A much larger library, protected and delivered by the server                                                                                         |
+| Account                                              | None                                                                                                           | None; a license code activates access                                                                                                                |
+| Discovery, collections, stamps, milestones, memories | Yes                                                                                                            | Yes                                                                                                                                                  |
+| Suggestions                                          | "For you today" card, "This season" shelf, occasion card and smart-collection picks, all from the free library | The same, from the much larger library; plus yearly calendar reminders (`.ics`, built on the device) for the dog's birthday and adoption anniversary |
+| Keepsakes                                            | Yes (device only)                                                                                              | More designs and premium-only collections                                                                                                            |
+| Progress                                             | On the device                                                                                                  | Also synced across devices, restorable with the code                                                                                                 |
 
 Premium adventures are never in this repository, the bundle or any public file. **Current gap (verified in code):** the server endpoint for premium adventures exists, but the browser does not yet request it; the discovery screens use the free library with `unlocked: false`. The sync endpoint `PUT /api/progress` is also not yet called by the browser. Activation does merge the device's progress into the synced record and returns it.
 
@@ -97,8 +98,20 @@ Collecting, not competing. Stamps and milestones reward doing things with the do
 
 ## Analytics
 
-Only 13 named events are sent (profile completed, adventure revealed, completed, saved, favorite added, keepsake created, share clicked and completed, unlock viewed, checkout started, purchase confirmed, access restored, affiliate clicked), each with a few slug-safe fields. Free text is dropped. Dog names, memories, license codes, emails and customer ids are never sent.
+Only 15 named events are sent (profile completed, adventure revealed, completed, saved, favorite added, keepsake created, share clicked and completed, unlock viewed, checkout started, purchase confirmed, access restored, affiliate clicked, suggestion revealed, calendar reminder downloaded), each with a few slug-safe fields. Free text is dropped. Dog names, memories, license codes, emails and customer ids are never sent.
 
 ## What is excluded
 
 No AI or generative APIs, no accounts for the free experience, no subscriptions, no ads, no newsletter or email capture, no leaderboards or social feeds, no photo upload or storage, no medical, nutrition or behavior-training claims, no breed-based eligibility, no premium text in the public repository, and no affiliate links other than verified Amazon products.
+
+## Suggestions
+
+Deterministic, no AI, no live weather, no push or email, no accounts for free users (`src/components/passport/Suggestions.tsx`, pure helpers in `src/passport/suggest.ts`). Every pick comes from the engine (`rank`, `pickSurprise`), so hard eligibility, held questions, completed adventures and "unknown is never safe" apply unchanged.
+
+- **For you today** (top of Made for You): one suggestion from `rank()` using the dog profile, owner preferences, the season and optional chips (time I have, at home or outdoors). "Try another" never repeats within the visit and never shows completed adventures; Reveal opens the normal card. Free visitors draw from the free library and see one plain line that the full Passport suggests from a much larger library (no counts).
+- **Season** is derived from today's date using meteorological seasons (Dec-Feb winter in the north). Northern is the default; a small selector on the card switches to Southern (remembered in this browser only).
+- **This season**: adventures tagged for the current season that suit the dog. Adventures with no season tag are "any season" and are not listed here. Empty state says so.
+- **Occasion**: when the birthday or adoption date falls from 3 days before to 14 days after today (year wrap handled; a 29 February date is observed on 28 February in other years) an Occasion card suggests an adventure from `holidays-and-celebrations` or `our-story` where the library has one that suits the dog.
+- **Calendar reminders** (full Passport): "Add to my calendar" makes a yearly all-day `.ics` in the browser, titled "<name>: adventure day?". It contains only the dog's name and the dates the owner typed. No network call. Free visitors see a one-line teaser.
+- **Smart-collection picks**: up to three "From your collection <name>" cards via `pickSurprise` with the custom scope.
+- Analytics add `suggestion_revealed` (source and adventure id) and `calendar_reminder_downloaded` (kind), slugs and ids only.

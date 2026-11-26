@@ -6,6 +6,7 @@ import { OwnerPrefsEditor } from "./OwnerPrefsEditor";
 import { AdventureCard, MysteryCard } from "./AdventureCard";
 import { FilterPanel } from "./FilterPanel";
 import { HeldQuestions } from "./HeldQuestions";
+import { Suggestions } from "./Suggestions";
 import { DiscoverTabs, panelId, tabId, type DiscoverMode } from "./DiscoverTabs";
 import { collections } from "@/passport/content";
 import { useAdventureLibrary } from "./collections-shared";
@@ -193,6 +194,7 @@ function MadeForYou({ onEditProfile }: { onEditProfile: () => void }) {
 
   return (
     <>
+      <Suggestions library={library} ctx={ctx} history={history} save={save} dog={dog} />
       {!result.ok ? (
         <Empty reason={NONE_ELIGIBLE} />
       ) : (

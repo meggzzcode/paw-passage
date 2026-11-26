@@ -44,6 +44,10 @@ function Unlock() {
                 {n} free {n === 1 ? "adventure" : "adventures"} to try
               </li>
               <li>Mystery reveals matched to your dog</li>
+              <li>A daily suggestion, “For you today”, from the free library</li>
+              <li>A “This season” shelf of the free adventures tagged for the season</li>
+              <li>Suggestions from your own smart collections</li>
+              <li>Occasion ideas near your dog's birthday or adoption anniversary</li>
               <li>Stamps, milestones and memories</li>
               <li>Your own collections</li>
               <li>Keepsake postcards made on your device</li>
@@ -55,10 +59,13 @@ function Unlock() {
               The full Passport adds
             </h2>
             <ul className="co-plain">
-              <li>A much larger library of adventures</li>
+              <li>A much larger library of adventures to suggest from</li>
+              <li>A fuller “This season” shelf, with the full library's seasonal adventures</li>
+              <li>Yearly calendar reminders for your dog's birthday and adoption anniversary</li>
+              <li>Smart-collection picks drawn from the larger library</li>
               <li>Collections that only exist in the full Passport</li>
               <li>More keepsake designs</li>
-              <li>Progress that follows you across devices</li>
+              <li>Synced progress that follows you across devices</li>
             </ul>
             <p className="pa-fine">One-time purchase, price shown at checkout. No subscription.</p>
             {link ? (

@@ -15,7 +15,9 @@ export type EventName =
   | "checkout_started"
   | "purchase_confirmed"
   | "access_restored"
-  | "affiliate_clicked";
+  | "affiliate_clicked"
+  | "suggestion_revealed"
+  | "calendar_reminder_downloaded";
 
 const ALLOWED = new Set<EventName>([
   "profile_completed",
@@ -31,6 +33,8 @@ const ALLOWED = new Set<EventName>([
   "purchase_confirmed",
   "access_restored",
   "affiliate_clicked",
+  "suggestion_revealed",
+  "calendar_reminder_downloaded",
 ]);
 const FIELD = /^[a-z0-9_-]{1,40}$/;
 

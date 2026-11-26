@@ -183,3 +183,7 @@ G1 canonical host (www or apex) and 301 of the other; G2 verify Search Console p
 ## Phase H: design integration and sign-out checks
 
 See docs/DESIGN-INTEGRATION.md and docs/DESIGN-ASSET-LICENSES.md (ask Lovable about image source/licence, fonts, AI labelling; owner approves design; /concept deleted at launch by default). Test sign-out on a phone (My Passport > Sign out of this device; progress stays; restore via Restore access); test Widen with puppy+senior+children.
+
+## Phase N: Netlify credits and deploy control (owner decision 2026-11-26)
+
+Owner bought one credit pack. Cowork: N1 confirm the pack is applied (Billing: credits remaining; auto-recharge stays Disabled unless the owner says otherwise). N2 make sure ONLY manual deploys happen: Site configuration > Build & deploy > Continuous deployment: stop auto builds (Stop builds) and keep Auto Publishing locked; confirm a push to main does NOT start a build. N3 keep branch deploys off. N4 record the live deploy id (currently main@6d80efb) and the rollback target (main@f02e4f9). N5 deploy only when the owner says so (one production build is about 15 credits). Pass: a test push does not create a build; credits unchanged.

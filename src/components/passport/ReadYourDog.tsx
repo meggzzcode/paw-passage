@@ -4,8 +4,7 @@
 // and never depends on hover. General guidance from public sources. Not veterinary advice.
 
 /** The one standing line under every revealed card (the walk-away line and the not-vet-advice line, merged). */
-export const SAFETY_LINE =
-  "Your dog can walk away any time. General guidance, not veterinary advice.";
+export const SAFETY_LINE = "General guidance, not veterinary advice.";
 
 /** One short line that says what "Read your dog" is, wherever it appears. */
 export const RYD_EXPLAINER =

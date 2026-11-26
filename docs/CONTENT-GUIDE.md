@@ -21,11 +21,11 @@ Set every one of these honestly. Missing information is treated as unknown, neve
 
 ## Safety lines (non-negotiable, but light)
 
-The app already shows a general "Read your dog" card and two standing lines: "Your dog can walk away at any time. Ending early is a good ending." and "General information from public guidance. Not veterinary advice. Ask your vet about your dog." Adventures must not repeat any of that.
+The app already shows a general "Read your dog" card and standing line: "General guidance, not veterinary advice." Adventures must not repeat any of that.
 
 - Every adventure has 1 to 3 `safety` lines (usually 1 or 2). Each is ONE short plain sentence, about 110 characters at most (the test allows 130), written like a friend's tip, not a warning label.
 - Write a line only for a hazard that is non-obvious or specific to this activity. Keep: toxic foods people really forget (grapes, raisins, chocolate, xylitol, onion, garlic, macadamia) when food is involved; a heat, cold or surface check outdoors ("Pavement too hot for your hand is too hot for paws"); water quality, algae and currents near water; a real tug, chase or arousal rule when play is physical; "ask your vet first" for puppies before public places and for diet changes; handling and lifting guidance; leash and local rules, once; vehicle restraint when a car is used.
-- Cut the obvious and the repeated: tape, string or foil unless truly surprising, "don't leave your dog alone with X", repeated "supervise", "stop if your dog seems unsure" or "skip if uncomfortable", boilerplate "check with your vet" stacked on every card, and anything restating the two standing lines. Keep inline cautions in steps, variations and twist to a minimum so the text stays lively and practical.
+- Cut the obvious and the repeated: tape, string or foil unless truly surprising, "don't leave your dog alone with X", repeated "supervise", "stop if your dog seems unsure" or "skip if uncomfortable", boilerplate "check with your vet" stacked on every card, and anything restating the standing line. Keep inline cautions in steps, variations and twist to a minimum so the text stays lively and practical.
 - Never remove a hazard line that a reviewer flagged as a blocker if it is still the only mitigation (puppy-outing vet line, food hazards, heat, cold or pavement, water quality, tug rules); shorten it instead.
 - Keep `food`, `dietNotes`, `avoidWeather`, `lifeStages`, `strangers` and `otherDogs` consistent with the text. Food adventures need `dietNotes` that say "ask your vet about diet", use only foods the dog already eats well, and offer a no-food variation where possible.
 

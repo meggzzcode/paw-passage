@@ -19,7 +19,7 @@ beforeEach(() => {
 });
 afterEach(cleanup);
 
-const LINE = "Your dog can walk away any time. General guidance, not veterinary advice.";
+const LINE = "General guidance, not veterinary advice.";
 
 describe("Safety copy on cards", () => {
   it("uses the exact merged line", () => {

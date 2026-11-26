@@ -31,13 +31,14 @@ const FAQ = [
   ["Can I try it first?", "Of course. Take the quiz and unwrap one personalized adventure free — no account needed."],
   ["Are the adventures safe for my dog?", "Each adventure lists time, budget and what your pup needs to enjoy it. You know your dog best — skip anything that doesn't suit them."],
   ["Where do my photos go?", "Keepsakes are made right on your device. Your photos are never uploaded or stored by us."],
-  ["Can I give it as a gift?", "We'd love that. Gifting is part of this design and will open when checkout supports it."],
+  ["Is this a physical book?", "No — the Adventure Passport is an interactive digital experience you use on your phone or computer. Nothing is shipped."],
+  ["Do I need to spend money on the adventures?", "Plenty cost nothing at all. Every adventure shows its budget before you start."],
 ];
 
 export function ConceptPage() {
   return (
     <div className="em">
-      <p className="em-concept-note">Design concept “Everyday Magic” · demonstration content only · not the live product</p>
+      <p className="em-concept-note">Design concept “Everyday Magic” · demonstration content only · not the live product · <a href="/concept-journey" style={{ textDecoration: "underline" }}>Full customer journey</a> · <a href="/concept-system" style={{ textDecoration: "underline" }}>Design system</a></p>
 
       {/* HERO */}
       <section className="em-hero">
@@ -69,10 +70,17 @@ export function ConceptPage() {
 
       <div className="em-marquee" aria-hidden><div>{Array(2).fill("Your favorite little sidekick ✿ Let’s make a date ✿ Collect adventures, not just things ✿ Made for the two of you ✿ ").join("")}</div></div>
 
+      <section className="em-wrap em-facts" aria-label="What is inside the Adventure Passport">
+        <p className="em-facts-intro">An interactive digital passport for you and your dog — take the quiz, reveal a mystery adventure, collect stamps and make keepsakes, all in your browser.</p>
+        <dl>
+          {[["113", "unique adventures"], ["25", "curated collections"], ["1", "free personalized adventure"], ["$19.99", "once · no subscription"]].map(([n, l]) => <div key={l}><dt>{n}</dt><dd>{l}</dd></div>)}
+        </dl>
+      </section>
+
       {/* MOODS */}
       <section className="em-section">
         <div className="em-wrap" style={{ marginBottom: "2rem" }}>
-          <p className="em-eyebrow">ten collections</p>
+          <p className="em-eyebrow">25 curated collections</p>
           <h2 style={{ fontSize: "clamp(2.4rem,6vw,4.2rem)" }}>What are we in the mood for?</h2>
         </div>
         <div className="em-moods">
@@ -184,10 +192,10 @@ export function ConceptPage() {
         <div className="em-wrap">
           <div className="em-offer">
             <div style={{ display: "grid", gap: "1.2rem" }}>
-              <p className="em-eyebrow" style={{ color: v("butter") }}>one little purchase. so many possibilities.</p>
-              <h2 style={{ fontSize: "clamp(2.4rem,6vw,4rem)" }}>The complete Adventure Passport.</h2>
+              <p className="em-eyebrow" style={{ color: v("butter") }}>the complete adventure passport</p>
+              <h2 style={{ fontSize: "clamp(2.4rem,6vw,4rem)" }}>100+ adventures. One little purchase. So many possibilities.</h2>
               <ul>
-                {["The full adventure library & all ten collections", "Personalized picks for your dog", "Scratch-off mystery adventures", "Collectible stamps & your passport journal", "Save favorites, build your own collections, plan dates", "Photo keepsakes — covers, postcards, trading cards"].map((x) => <li key={x}><span style={{ color: v("butter") }}>✿</span>{x}</li>)}
+                {["All 113 adventures across 25 curated collections", "Personalized picks for your dog (or dogs)", "Scratch-or-tap mystery adventures", "Twelve stamp types & eight achievements in My Passport", "Save favorites, build your own collections, plan on the calendar", "113 adventure-matched photo keepsakes — made on your device"].map((x) => <li key={x}><span style={{ color: v("butter") }}>✿</span>{x}</li>)}
               </ul>
             </div>
             <div className="em-ticket">
@@ -196,7 +204,7 @@ export function ConceptPage() {
               <p style={{ fontWeight: 600 }}>Paid once. Yours to keep. No subscription, no renewals.</p>
               <a href="#offer" className="em-btn em-btn-primary" style={{ justifyContent: "center" }}>Get the passport</a>
               <a href="#quiz" className="em-btn em-btn-ghost" style={{ justifyContent: "center" }}>Try one free first</a>
-              <p style={{ fontSize: ".85rem", textAlign: "center" }}>🎁 Gifting for a dog-loving friend — coming with checkout</p>
+              <p style={{ fontSize: ".85rem", textAlign: "center" }}>A digital passport that works in your browser — nothing ships.</p>
             </div>
           </div>
         </div>

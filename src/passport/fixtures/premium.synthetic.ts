@@ -43,6 +43,8 @@ const base: Omit<Adventure, "id" | "title" | "clue" | "reveal" | "twist"> = {
   activityTypes: ["relaxation"],
   collections: ["road-trip-adventures"],
   household: [],
+  role: "everyday",
+  showcase: false,
   stamps: [],
   achievements: [],
   keepsake: { family: "collage", theme: "favorite-moments", headline: "SYNTHETIC" },

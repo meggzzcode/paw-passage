@@ -70,6 +70,13 @@ export const KEEPSAKE_FAMILIES = [
 // Editorial goal: premium adventures at 7.5 or more. To restore the original bar, set 8 and 7.
 export const PUBLISH_MIN_AVERAGE = 7.0;
 export const PUBLISH_MIN_CRITERION = 6;
+// Owner directive 2026-11-26 (balanced commercial editorial system): originality is judged against the adventure's
+// purpose. A simple everyday, lifestyle or aspirational adventure may score 5 on originality; every other criterion keeps
+// the bar above, and a SIGNATURE adventure must clear the full bar on originality too. Safety and genuine value are
+// mandatory whatever the role.
+export const PUBLISH_MIN_ORIGINALITY_NON_SIGNATURE = 5;
+export const ADVENTURE_ROLES = ["signature", "everyday", "lifestyle", "aspirational"] as const;
+export type AdventureRole = (typeof ADVENTURE_ROLES)[number];
 
 const researchRef = z.object({
   label: nonEmpty.max(120),
@@ -152,6 +159,15 @@ export const adventureSchema = z
       // pocket"). It is part of the artwork, never a suggested caption; no hashtags, no emoji.
       explainer: nonEmpty.max(64).optional(),
     }),
+    // Primary editorial role: signature (marketing flagship), everyday (easy, at home or nearby), lifestyle (dates,
+    // creativity, seasons, celebrations, life stages) or aspirational (weekend, travel, camping, special outings).
+    role: z.enum(ADVENTURE_ROLES).default("everyday"),
+    // PUBLIC marketing copy. The teaser must tease without explaining how the activity works (no steps, mechanics or
+    // twists). previewTitle is an optional mystery-style marketing title used instead of the real title in public previews.
+    // showcase marks the card as approved for the curated public preview showcase (about 50 premium cards).
+    teaser: nonEmpty.max(110).optional(),
+    previewTitle: nonEmpty.max(60).optional(),
+    showcase: z.boolean().default(false),
     access: z.enum(["free", "premium"]),
     status: z.enum(["draft", "published"]),
     relatedGuides: z.array(slug).default([]),
@@ -205,6 +221,18 @@ export const adventureSchema = z
         path: ["safety"],
         message: "water adventures need a supervise/check safety line",
       });
+    if (a.showcase && !a.teaser)
+      ctx.addIssue({
+        code: "custom",
+        path: ["teaser"],
+        message: "a showcase adventure needs a teaser",
+      });
+    if (a.teaser && /(?:step\s*\d|first,|then you|next,)/i.test(a.teaser))
+      ctx.addIssue({
+        code: "custom",
+        path: ["teaser"],
+        message: "a teaser must not explain how it works",
+      });
     if (a.review) {
       const vals = [
         a.review.ownerAppeal,
@@ -214,15 +242,25 @@ export const adventureSchema = z
         a.review.practicality,
         a.review.memoryValue,
       ];
+      const floors =
+        a.role === "signature" ? PUBLISH_MIN_CRITERION : PUBLISH_MIN_ORIGINALITY_NON_SIGNATURE;
+      const others = [
+        a.review.ownerAppeal,
+        a.review.dogEnjoyment,
+        a.review.adventureFactor,
+        a.review.practicality,
+        a.review.memoryValue,
+      ];
       if (
         a.status === "published" &&
-        (Math.min(...vals) < PUBLISH_MIN_CRITERION ||
+        (Math.min(...others) < PUBLISH_MIN_CRITERION ||
+          a.review.originality < floors ||
           vals.reduce((x, y) => x + y, 0) / 6 < PUBLISH_MIN_AVERAGE)
       )
         ctx.addIssue({
           code: "custom",
           path: ["review"],
-          message: `a published adventure needs an average of at least ${PUBLISH_MIN_AVERAGE} and no score below ${PUBLISH_MIN_CRITERION}`,
+          message: `a published adventure needs an average of at least ${PUBLISH_MIN_AVERAGE}, no score below ${PUBLISH_MIN_CRITERION}, and originality of at least ${floors}`,
         });
     }
   });

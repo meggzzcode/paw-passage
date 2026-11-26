@@ -57,6 +57,8 @@ export function adv(id: string, title: string, over: Partial<Adventure> = {}): A
     activityTypes: ["play-and-games"],
     collections: ["rainy-day-club"],
     household: [],
+    role: "everyday",
+    showcase: false,
     stamps: [],
     achievements: [],
     keepsake: { family: "travel-postcard", theme: "hometown-postcard", headline: "A DAY OUT" },

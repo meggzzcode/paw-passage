@@ -39,7 +39,7 @@ Paper texture is CSS only (two faint radial-dot layers on `body`). Stamps, perfo
 
 ## Type
 
-- Display and headings: **Fraunces** (variable). Body: **DM Sans** (variable). Both are self-hosted in `public/fonts/` (SIL OFL licences included); there is no third-party font request.
+- Display and headings: **Bricolage Grotesque**. Body: **Figtree**. Handwritten notes: **Caveat** (`font-hand-note`). All are self-hosted in `public/fonts/` (SIL OFL licences included); there is no third-party font request.
 - Headings use `clamp()` sizes (for example the section heading is `clamp(1.75rem, 6vw, 2.5rem)`), balanced wrapping and a 1.12 line height. Body copy is about 1.0625rem at a 1.6 line height. Eyebrows are 0.75rem, uppercase, tracked.
 - Keepsake artwork uses system serif and sans stacks only (canvas drawing); nothing is downloaded for it.
 

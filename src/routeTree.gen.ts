@@ -12,9 +12,6 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as AffiliateDisclosureRouteImport } from './routes/affiliate-disclosure'
-import { Route as ConceptRouteImport } from './routes/concept'
-import { Route as ConceptJourneyRouteImport } from './routes/concept-journey'
-import { Route as ConceptSystemRouteImport } from './routes/concept-system'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as CorrectionsRouteImport } from './routes/corrections'
 import { Route as DisclaimerRouteImport } from './routes/disclaimer'
@@ -61,21 +58,6 @@ const AboutRoute = AboutRouteImport.update({
 const AffiliateDisclosureRoute = AffiliateDisclosureRouteImport.update({
   id: '/affiliate-disclosure',
   path: '/affiliate-disclosure',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ConceptRoute = ConceptRouteImport.update({
-  id: '/concept',
-  path: '/concept',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ConceptJourneyRoute = ConceptJourneyRouteImport.update({
-  id: '/concept-journey',
-  path: '/concept-journey',
-  getParentRoute: () => rootRouteImport,
-} as any)
-const ConceptSystemRoute = ConceptSystemRouteImport.update({
-  id: '/concept-system',
-  path: '/concept-system',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ContactRoute = ContactRouteImport.update({
@@ -243,9 +225,6 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/affiliate-disclosure': typeof AffiliateDisclosureRoute
-  '/concept': typeof ConceptRoute
-  '/concept-journey': typeof ConceptJourneyRoute
-  '/concept-system': typeof ConceptSystemRoute
   '/contact': typeof ContactRoute
   '/corrections': typeof CorrectionsRoute
   '/disclaimer': typeof DisclaimerRoute
@@ -283,9 +262,6 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/affiliate-disclosure': typeof AffiliateDisclosureRoute
-  '/concept': typeof ConceptRoute
-  '/concept-journey': typeof ConceptJourneyRoute
-  '/concept-system': typeof ConceptSystemRoute
   '/contact': typeof ContactRoute
   '/corrections': typeof CorrectionsRoute
   '/disclaimer': typeof DisclaimerRoute
@@ -324,9 +300,6 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
   '/affiliate-disclosure': typeof AffiliateDisclosureRoute
-  '/concept': typeof ConceptRoute
-  '/concept-journey': typeof ConceptJourneyRoute
-  '/concept-system': typeof ConceptSystemRoute
   '/contact': typeof ContactRoute
   '/corrections': typeof CorrectionsRoute
   '/disclaimer': typeof DisclaimerRoute
@@ -366,9 +339,6 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/affiliate-disclosure'
-    | '/concept'
-    | '/concept-journey'
-    | '/concept-system'
     | '/contact'
     | '/corrections'
     | '/disclaimer'
@@ -406,9 +376,6 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/affiliate-disclosure'
-    | '/concept'
-    | '/concept-journey'
-    | '/concept-system'
     | '/contact'
     | '/corrections'
     | '/disclaimer'
@@ -446,9 +413,6 @@ export interface FileRouteTypes {
     | '/'
     | '/about'
     | '/affiliate-disclosure'
-    | '/concept'
-    | '/concept-journey'
-    | '/concept-system'
     | '/contact'
     | '/corrections'
     | '/disclaimer'
@@ -487,9 +451,6 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
   AffiliateDisclosureRoute: typeof AffiliateDisclosureRoute
-  ConceptRoute: typeof ConceptRoute
-  ConceptJourneyRoute: typeof ConceptJourneyRoute
-  ConceptSystemRoute: typeof ConceptSystemRoute
   ContactRoute: typeof ContactRoute
   CorrectionsRoute: typeof CorrectionsRoute
   DisclaimerRoute: typeof DisclaimerRoute
@@ -545,27 +506,6 @@ declare module '@tanstack/react-router' {
       path: '/affiliate-disclosure'
       fullPath: '/affiliate-disclosure'
       preLoaderRoute: typeof AffiliateDisclosureRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/concept': {
-      id: '/concept'
-      path: '/concept'
-      fullPath: '/concept'
-      preLoaderRoute: typeof ConceptRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/concept-journey': {
-      id: '/concept-journey'
-      path: '/concept-journey'
-      fullPath: '/concept-journey'
-      preLoaderRoute: typeof ConceptJourneyRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/concept-system': {
-      id: '/concept-system'
-      path: '/concept-system'
-      fullPath: '/concept-system'
-      preLoaderRoute: typeof ConceptSystemRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/contact': {
@@ -799,9 +739,6 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
   AffiliateDisclosureRoute: AffiliateDisclosureRoute,
-  ConceptRoute: ConceptRoute,
-  ConceptJourneyRoute: ConceptJourneyRoute,
-  ConceptSystemRoute: ConceptSystemRoute,
   ContactRoute: ContactRoute,
   CorrectionsRoute: CorrectionsRoute,
   DisclaimerRoute: DisclaimerRoute,

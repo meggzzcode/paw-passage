@@ -1,61 +1,79 @@
 /* Adventure Passport design tokens and shell/home styles. See src/design/README.md. */
 html:root {
-  --pp-ink: #14283a;
-  --pp-ink-2: #1d3a52;
-  --pp-paper: #f7f0e1;
-  --pp-paper-2: #efe5cf;
-  --pp-card: #fffaf0;
-  --pp-red: #a82f23;
-  --pp-red-hover: #8e261b;
-  --pp-on-red: #fffaf0;
-  --pp-ochre: #e0a53a;
-  --pp-ochre-text: #7a5200;
-  --pp-pine: #2f5d4e;
-  --pp-muted: #4a5a68;
-  --pp-line: #14283a;
-  --pp-hairline: rgb(20 40 58 / 0.2);
-  --pp-focus: #a82f23;
-  --pp-shadow: 3px 3px 0 rgb(20 40 58 / 0.9);
-  --pp-radius: 6px;
-  --pp-dots:
-    radial-gradient(rgb(20 40 58 / 0.045) 1px, transparent 1.2px) 0 0 / 7px 7px,
-    radial-gradient(rgb(168 47 35 / 0.03) 1px, transparent 1.2px) 3px 3px / 11px 11px;
+  /* "Everyday Magic" palette: vanilla paper, warm ink, cherry action, butter highlight, sage, leaf, powder blue. */
+  --pp-ink: oklch(0.27 0.015 40);
+  --pp-ink-2: oklch(0.34 0.02 40);
+  --pp-paper: oklch(0.975 0.018 85);
+  --pp-paper-2: oklch(0.945 0.03 88);
+  --pp-card: oklch(0.995 0.006 85);
+  --pp-red: oklch(0.55 0.17 22);
+  --pp-red-hover: oklch(0.49 0.16 22);
+  --pp-on-red: oklch(0.995 0.006 85);
+  --pp-ochre: oklch(0.91 0.11 95);
+  --pp-ochre-text: oklch(0.47 0.09 80);
+  --pp-pine: oklch(0.5 0.08 150);
+  --pp-sage: oklch(0.82 0.06 145);
+  --pp-strawberry: oklch(0.86 0.075 10);
+  --pp-powder: oklch(0.88 0.045 235);
+  --pp-muted: oklch(0.45 0.015 40);
+  --pp-line: oklch(0.27 0.015 40 / 0.85);
+  --pp-hairline: oklch(0.27 0.015 40 / 0.16);
+  --pp-focus: oklch(0.55 0.17 22);
+  --pp-shadow: 0 18px 40px -22px oklch(0.27 0.015 40 / 0.45);
+  --pp-radius: 1.25rem;
+  --pp-dots: none;
 
-  /* Remap legacy tokens so existing guide/gear pages match the new shell. */
+  /* Remap legacy tokens so existing guide/gear pages match the shell. */
   --background: var(--pp-paper);
   --foreground: var(--pp-ink);
   --card: var(--pp-card);
   --card-foreground: var(--pp-ink);
-  --primary: var(--pp-ink);
-  --primary-foreground: var(--pp-paper);
+  --popover: var(--pp-card);
+  --popover-foreground: var(--pp-ink);
+  --primary: var(--pp-red);
+  --primary-foreground: var(--pp-on-red);
+  --secondary: var(--pp-sage);
+  --secondary-foreground: var(--pp-ink);
+  --muted: var(--pp-paper-2);
   --muted-foreground: var(--pp-muted);
+  --accent: var(--pp-ochre);
+  --accent-foreground: var(--pp-ink);
+  --sage: var(--pp-sage);
+  --sky: var(--pp-powder);
+  --ivory: var(--pp-paper);
   --terracotta: var(--pp-red);
   --terracotta-button: var(--pp-red);
   --terracotta-text: var(--pp-red);
   --ring: var(--pp-red);
-  --border: #d9ccb0;
+  --border: oklch(0.88 0.025 85);
+  --input: oklch(0.86 0.025 85);
 }
 html.dark {
-  --pp-ink: #f3ead6;
-  --pp-ink-2: #e6dac0;
-  --pp-paper: #0f1e2b;
-  --pp-paper-2: #16293a;
-  --pp-card: #1a2f42;
-  --pp-red: #e0705f;
-  --pp-red-hover: #eb8676;
-  --pp-on-red: #14100e;
-  --pp-ochre: #e8b04a;
-  --pp-ochre-text: #e8b04a;
-  --pp-pine: #86c0a8;
-  --pp-muted: #b4c0c9;
-  --pp-line: #f3ead6;
-  --pp-hairline: rgb(243 234 214 / 0.22);
-  --pp-focus: #e8b04a;
-  --pp-shadow: 3px 3px 0 rgb(0 0 0 / 0.55);
-  --pp-dots: radial-gradient(rgb(243 234 214 / 0.04) 1px, transparent 1.2px) 0 0 / 7px 7px;
-  --primary: #f3ead6;
-  --primary-foreground: #0f1e2b;
-  --border: #2c4458;
+  --pp-ink: oklch(0.95 0.02 85);
+  --pp-ink-2: oklch(0.88 0.025 85);
+  --pp-paper: oklch(0.22 0.015 40);
+  --pp-paper-2: oklch(0.27 0.018 40);
+  --pp-card: oklch(0.29 0.018 40);
+  --pp-red: oklch(0.72 0.14 22);
+  --pp-red-hover: oklch(0.78 0.12 22);
+  --pp-on-red: oklch(0.2 0.015 40);
+  --pp-ochre: oklch(0.85 0.12 95);
+  --pp-ochre-text: oklch(0.85 0.12 95);
+  --pp-pine: oklch(0.78 0.08 150);
+  --pp-sage: oklch(0.45 0.05 145);
+  --pp-strawberry: oklch(0.5 0.08 10);
+  --pp-powder: oklch(0.45 0.04 235);
+  --pp-muted: oklch(0.78 0.015 85);
+  --pp-line: oklch(0.95 0.02 85 / 0.8);
+  --pp-hairline: oklch(0.95 0.02 85 / 0.18);
+  --pp-focus: oklch(0.85 0.12 95);
+  --pp-shadow: 0 18px 40px -22px oklch(0 0 0 / 0.7);
+  --pp-dots: none;
+  --primary: var(--pp-red);
+  --primary-foreground: var(--pp-on-red);
+  --accent-foreground: oklch(0.2 0.015 40);
+  --border: oklch(0.36 0.02 40);
+  --input: oklch(0.38 0.02 40);
 }
 
 body {

@@ -17,7 +17,7 @@ import { track } from "@/passport/events";
 import { usePassport } from "@/passport/usePassport";
 import { Keepsake } from "./Keepsake";
 import { AddToCollection } from "./AddToCollection";
-import { GoodToKnow, SafetyLine } from "./ReadYourDog";
+import { GoodToKnow } from "./ReadYourDog";
 import {
   ACTIVITY_LABELS,
   PREP_LABELS,
@@ -416,7 +416,6 @@ export function AdventureCard({
           {showKeepsake && <Keepsake adventure={a} dogName={dogName} memory={memory} />}
         </div>
       )}
-      <SafetyLine />
     </article>
   );
 }

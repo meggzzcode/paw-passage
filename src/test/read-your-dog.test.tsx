@@ -3,7 +3,6 @@ import { readFileSync } from "node:fs";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { A1, A2, renderUi } from "./collections-fixtures";
 import { AdventureCard, MysteryCard } from "@/components/passport/AdventureCard";
-import { SAFETY_LINE } from "@/components/passport/ReadYourDog";
 import { StoryTimeline } from "@/components/passport/StoryTimeline";
 import { FavoriteCollections } from "@/components/passport/CollectionsFavorites";
 import { CollectionEditor } from "@/components/passport/CollectionEditor";
@@ -19,13 +18,9 @@ beforeEach(() => {
 });
 afterEach(cleanup);
 
-const LINE = "General guidance, not veterinary advice.";
+const LINE = /veterinary advice|walk away any time/i;
 
 describe("Safety copy on cards", () => {
-  it("uses the exact merged line", () => {
-    expect(SAFETY_LINE).toBe(LINE);
-  });
-
   it("collapses the safety lines and the signs into ONE 'Good to know' disclosure", () => {
     const { container } = render(<AdventureCard a={A1} />);
     const all = container.querySelectorAll("details.pa-gtk");
@@ -50,10 +45,10 @@ describe("Safety copy on cards", () => {
     expect(container.querySelectorAll(".pa-safety")).toHaveLength(0);
   });
 
-  it("always shows the single muted line, once, and nothing else standing", () => {
+  it("shows no standing disclaimer line on the card", () => {
     render(<AdventureCard a={A1} />);
-    expect(screen.getAllByText(LINE)).toHaveLength(1);
-    expect(screen.getByText(LINE)).toBeVisible();
+    expect(screen.queryByText(LINE)).toBeNull();
+    expect(document.body.textContent).not.toMatch(LINE);
     expect(document.body.textContent).not.toMatch(/Ending early is a good ending/);
   });
 
@@ -76,24 +71,26 @@ describe("Safety copy on cards", () => {
     const v = await renderUi(<CollectionEditor id="col-abcd1234" />);
     fireEvent.click(screen.getByRole("button", { name: "Reveal a random one" }));
     const card = await screen.findByRole("article");
-    expect(within(card).getByText(LINE)).toBeVisible();
+    expect(within(card).queryByText(LINE)).toBeNull();
+    expect(card.querySelector("details.pa-gtk")).not.toBeNull();
     v.unmount();
     act(() => favorite(A1.id));
     await renderUi(<FavoriteCollections />);
     fireEvent.click(screen.getByRole("button", { name: "Surprise me from my favorites" }));
-    expect((await screen.findAllByText(LINE)).length).toBeGreaterThan(0);
+    expect((await screen.findAllByRole("article")).length).toBeGreaterThan(0);
+    expect(screen.queryByText(LINE)).toBeNull();
   });
 
   it("is on adventure cards in Discover", async () => {
     await renderUi(<DiscoverPage mode="browse" onMode={() => undefined} />);
     expect(screen.getAllByRole("article").length).toBeGreaterThan(0);
-    expect(screen.getAllByText(LINE).length).toBe(screen.getAllByRole("article").length);
+    expect(screen.queryByText(LINE)).toBeNull();
   });
 
   it("is on entries in Our Story", async () => {
     act(() => completeAdventure(A1.id, 1000));
     await renderUi(<StoryTimeline />);
-    expect(screen.getByText(LINE)).toBeVisible();
+    expect(screen.queryByText(LINE)).toBeNull();
   });
 
   it("is accessible and motion-safe in the stylesheet", () => {

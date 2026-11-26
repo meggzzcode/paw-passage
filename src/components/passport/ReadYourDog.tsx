@@ -1,10 +1,7 @@
-// App-level safety copy for revealed adventure cards. One small muted line is always visible under the card.
-// Everything else sits in ONE collapsed "Good to know" disclosure: the adventure's own safety lines plus the
+// App-level safety copy for revealed adventure cards. Cards carry no standing disclaimer line (that lives on /disclaimer).
+// The safety copy sits in ONE collapsed "Good to know" disclosure: the adventure's own safety lines plus the
 // "Read your dog" signs. It is a native <details>, so it works without JavaScript, by keyboard and by touch,
 // and never depends on hover. General guidance from public sources. Not veterinary advice.
-
-/** The one standing line under every revealed card (the walk-away line and the not-vet-advice line, merged). */
-export const SAFETY_LINE = "General guidance, not veterinary advice.";
 
 /** One short line that says what "Read your dog" is, wherever it appears. */
 export const RYD_EXPLAINER =
@@ -58,9 +55,4 @@ export function GoodToKnow({ lines }: { lines: readonly string[] }) {
       </div>
     </details>
   );
-}
-
-/** The small muted line that is always visible under a revealed card. */
-export function SafetyLine() {
-  return <p className="pa-safety-line">{SAFETY_LINE}</p>;
 }

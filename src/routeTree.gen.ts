@@ -14,6 +14,7 @@ import { Route as AboutRouteImport } from './routes/about'
 import { Route as AffiliateDisclosureRouteImport } from './routes/affiliate-disclosure'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as CorrectionsRouteImport } from './routes/corrections'
+import { Route as DisclaimerRouteImport } from './routes/disclaimer'
 import { Route as DiscoverRouteImport } from './routes/discover'
 import { Route as EditorialStandardsRouteImport } from './routes/editorial-standards'
 import { Route as HowWeWriteAdventuresRouteImport } from './routes/how-we-write-adventures'
@@ -58,6 +59,11 @@ const ContactRoute = ContactRouteImport.update({
 const CorrectionsRoute = CorrectionsRouteImport.update({
   id: '/corrections',
   path: '/corrections',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DisclaimerRoute = DisclaimerRouteImport.update({
+  id: '/disclaimer',
+  path: '/disclaimer',
   getParentRoute: () => rootRouteImport,
 } as any)
 const DiscoverRoute = DiscoverRouteImport.update({
@@ -167,6 +173,7 @@ export interface FileRoutesByFullPath {
   '/affiliate-disclosure': typeof AffiliateDisclosureRoute
   '/contact': typeof ContactRoute
   '/corrections': typeof CorrectionsRoute
+  '/disclaimer': typeof DisclaimerRoute
   '/discover': typeof DiscoverRoute
   '/editorial-standards': typeof EditorialStandardsRoute
   '/how-we-write-adventures': typeof HowWeWriteAdventuresRoute
@@ -194,6 +201,7 @@ export interface FileRoutesByTo {
   '/affiliate-disclosure': typeof AffiliateDisclosureRoute
   '/contact': typeof ContactRoute
   '/corrections': typeof CorrectionsRoute
+  '/disclaimer': typeof DisclaimerRoute
   '/discover': typeof DiscoverRoute
   '/editorial-standards': typeof EditorialStandardsRoute
   '/how-we-write-adventures': typeof HowWeWriteAdventuresRoute
@@ -222,6 +230,7 @@ export interface FileRoutesById {
   '/affiliate-disclosure': typeof AffiliateDisclosureRoute
   '/contact': typeof ContactRoute
   '/corrections': typeof CorrectionsRoute
+  '/disclaimer': typeof DisclaimerRoute
   '/discover': typeof DiscoverRoute
   '/editorial-standards': typeof EditorialStandardsRoute
   '/how-we-write-adventures': typeof HowWeWriteAdventuresRoute
@@ -251,6 +260,7 @@ export interface FileRouteTypes {
     | '/affiliate-disclosure'
     | '/contact'
     | '/corrections'
+    | '/disclaimer'
     | '/discover'
     | '/editorial-standards'
     | '/how-we-write-adventures'
@@ -278,6 +288,7 @@ export interface FileRouteTypes {
     | '/affiliate-disclosure'
     | '/contact'
     | '/corrections'
+    | '/disclaimer'
     | '/discover'
     | '/editorial-standards'
     | '/how-we-write-adventures'
@@ -305,6 +316,7 @@ export interface FileRouteTypes {
     | '/affiliate-disclosure'
     | '/contact'
     | '/corrections'
+    | '/disclaimer'
     | '/discover'
     | '/editorial-standards'
     | '/how-we-write-adventures'
@@ -333,6 +345,7 @@ export interface RootRouteChildren {
   AffiliateDisclosureRoute: typeof AffiliateDisclosureRoute
   ContactRoute: typeof ContactRoute
   CorrectionsRoute: typeof CorrectionsRoute
+  DisclaimerRoute: typeof DisclaimerRoute
   DiscoverRoute: typeof DiscoverRoute
   EditorialStandardsRoute: typeof EditorialStandardsRoute
   HowWeWriteAdventuresRoute: typeof HowWeWriteAdventuresRoute
@@ -390,6 +403,13 @@ declare module '@tanstack/react-router' {
       path: '/corrections'
       fullPath: '/corrections'
       preLoaderRoute: typeof CorrectionsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/disclaimer': {
+      id: '/disclaimer'
+      path: '/disclaimer'
+      fullPath: '/disclaimer'
+      preLoaderRoute: typeof DisclaimerRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/discover': {
@@ -541,6 +561,7 @@ const rootRouteChildren: RootRouteChildren = {
   AffiliateDisclosureRoute: AffiliateDisclosureRoute,
   ContactRoute: ContactRoute,
   CorrectionsRoute: CorrectionsRoute,
+  DisclaimerRoute: DisclaimerRoute,
   DiscoverRoute: DiscoverRoute,
   EditorialStandardsRoute: EditorialStandardsRoute,
   HowWeWriteAdventuresRoute: HowWeWriteAdventuresRoute,

@@ -16,6 +16,7 @@ export const staticPaths = [
   "/privacy",
   "/terms",
   "/refund-policy",
+  "/disclaimer",
   "/editorial-standards",
   "/methodology",
   "/corrections",

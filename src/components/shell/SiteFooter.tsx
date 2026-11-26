@@ -11,6 +11,7 @@ const about = [
   ["/contact", "Contact"],
   ["/privacy", "Privacy"],
   ["/terms", "Terms"],
+  ["/disclaimer", "Disclaimer"],
   ["/affiliate-disclosure", "Affiliate disclosure"],
 ] as const;
 

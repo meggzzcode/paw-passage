@@ -52,7 +52,6 @@ seasons: []
 avoidWeather:
   - heat
 lifeStages:
-  - puppy
   - adult
   - senior
 personalities:
@@ -73,6 +72,7 @@ safety:
   - Choose only forks where every option is safe, and keep your dog on a leash. Your veto always wins.
   - Check the pavement with your hand in hot or icy weather and bring water.
   - Turn back at any point if your dog slows down, lags or seems unsettled.
+  - Meant for adult and senior dogs. It involves public places, so check with your vet about readiness if your dog is young, and keep it voluntary.
 activityTypes:
   - outdoor-exploration
   - travel

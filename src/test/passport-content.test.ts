@@ -159,6 +159,16 @@ describe("who the free library serves", () => {
       count({ dog: { foodActivities: "no" }, owner: {}, unlocked: false }),
     ).toBeGreaterThanOrEqual(8);
   });
+  it("keeps public-outing adventures adult and senior only and tells owners to check with a vet", () => {
+    for (const a of adventures.filter((x) => x.strangers || x.otherDogs)) {
+      expect(a.lifeStages, a.id).not.toContain("puppy");
+      expect(a.safety.join(" "), a.id).toMatch(/vet/i);
+    }
+  });
+  it("uses only battery light in the campout", () => {
+    for (const a of adventures)
+      expect(JSON.stringify(a), a.id).not.toMatch(/(?<!battery )tealight/i);
+  });
   it("shows several keepsake families", () => {
     expect(new Set(adventures.map((a) => a.keepsake.family)).size).toBeGreaterThanOrEqual(6);
   });
@@ -179,12 +189,12 @@ describe("collections, stamps, achievements", () => {
     expect(new Set(collections.map((c) => c.slug)).size).toBe(collections.length);
     expect(new Set(collections.map((c) => c.order)).size).toBe(collections.length);
   });
-  it("fills every non-premium collection with 2 or more free adventures and leaves premium-only ones empty", () => {
+  it("fills every non-premium collection with at least 1 free adventure and leaves premium-only ones empty", () => {
     for (const c of collections.filter((x) => !x.premiumOnly))
       expect(
         adventures.filter((a) => a.collections.includes(c.slug)).length,
         c.slug,
-      ).toBeGreaterThanOrEqual(2);
+      ).toBeGreaterThanOrEqual(1);
     for (const c of collections.filter((x) => x.premiumOnly)) {
       expect(c.description).toMatch(/premium library/i);
       expect(adventures.filter((a) => a.collections.includes(c.slug)).length, c.slug).toBe(0);

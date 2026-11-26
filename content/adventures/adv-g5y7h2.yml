@@ -55,7 +55,6 @@ seasons: []
 avoidWeather:
   - heat
 lifeStages:
-  - puppy
   - adult
   - senior
 personalities:
@@ -76,6 +75,7 @@ safety:
   - Keep your dog on a leash and away from wildlife, and never let them eat anything they find.
   - Check the pavement with your hand in hot or icy weather, and carry water.
   - Leave early if the area is busy and your dog seems uneasy.
+  - Meant for adult and senior dogs. It involves public places, so check with your vet about readiness if your dog is young, and keep it voluntary.
 activityTypes:
   - outdoor-exploration
   - scent-and-discovery

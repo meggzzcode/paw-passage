@@ -1,9 +1,9 @@
 schema: 2
 id: adv-j4k9e1
-title: The Great Doggy Bake-Off
+title: The Great Doggy Taste-Off
 clue: Three entries, one very honest judge and not an oven mitt in sight.
-reveal: "Stage a tiny bake-off with three plates made only from foods your dog already eats well. Your dog is the only judge: present each entry, let their nose decide and award the paper rosette."
-objective: Plate three small entries from foods your dog already eats, let your dog judge them and make a poster of the result.
+reveal: "Stage a tiny taste-off at your own bakery counter with three plates made only from foods your dog already eats well. Your dog is the only judge: present each entry, let their nose decide and award the paper rosette."
+objective: Open a pretend bakery counter with three small entries made from foods your dog already eats, let your dog judge them and make a poster of the result.
 instructions:
   - Plan three tiny entries using only foods your dog already eats well, such as their usual treats or foods your vet is happy with. Nothing new today.
   - "Make the entries. The Showstopper: five tiny pieces of their usual treat arranged like a flower on a plate. The Frozen Fancy: one usual treat frozen in an ice cube tray of plain water. The Lick-Off: a thin smear of a spread your dog already eats, with no xylitol, on a plate or lick mat."
@@ -11,7 +11,7 @@ instructions:
   - "Open the bakery: set a counter on a non-slip floor with a paper menu naming each entry. Present one entry at a time and let your dog come to it in their own time. Remove each plate when they finish or walk away."
   - "Score by your dog's behaviour: what they sniffed first, ate most eagerly and stayed with longest. Draw paw-print stars on a scorecard and award the paper rosette to the Chief Taste Tester's favourite."
   - Clear every plate away, wash the dishes and write the results on a poster.
-twist: "Nothing is baked: it is a tasting contest of foods your dog already enjoys, and the judge's only scoring tool is their own nose."
+twist: "Nothing is baked and the oven stays off: it is a tasting contest of foods your dog already enjoys, and the judge's only scoring tool is their own nose."
 variations:
   - "No-food version, the Sniff-Off: three safe sniffables on plates (a clean sock, a dry leaf, a scrap of cloth) judged the same way."
   - "For a dog on a special diet: use their usual meal in three small portions plated differently, after asking your vet."
@@ -92,7 +92,7 @@ keepsake:
   family: poster
   theme: bake-off
   headline: CHIEF TASTE TESTER
-  subhead: The Great Doggy Bake-Off
+  subhead: The Great Doggy Taste-Off
 access: free
 status: published
 relatedGuides: []

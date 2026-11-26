@@ -86,10 +86,10 @@ collections:
   - slug: "camping-companions"
     title: "Camping Companions"
     tagline: "Nights away, under canvas or stars."
-    description: "Camping-inspired adventures with a careful eye on weather, gear and rest. The premium library fills this collection; there are no free adventures here yet."
+    description: "Camping-inspired adventures with a careful eye on weather, gear and rest. This collection starts with an indoor campsite; the premium library adds more."
     order: 13
     accent: "sage"
-    premiumOnly: true
+    premiumOnly: false
   - slug: "puppys-first-chapter"
     title: "Puppy's First Chapter"
     tagline: "Gentle firsts, at a puppy's own speed."

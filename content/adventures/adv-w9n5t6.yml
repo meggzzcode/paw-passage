@@ -54,7 +54,6 @@ seasons: []
 avoidWeather:
   - heat
 lifeStages:
-  - puppy
   - adult
   - senior
 personalities:
@@ -74,6 +73,7 @@ water: none
 safety:
   - Keep your dog on a leash and check the pavement with your hand before walking in hot or icy weather.
   - Leave any stop where your dog seems stressed. The itinerary is optional.
+  - Meant for adult and senior dogs. It involves public places, so check with your vet about readiness if your dog is young, and keep it voluntary.
 activityTypes:
   - outdoor-exploration
   - travel

@@ -1,9 +1,9 @@
 import { act, cleanup, fireEvent, screen, within } from "@testing-library/react";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
-import { A1, A2, A3, A4, renderUi } from "./collections-fixtures";
+import { A1, A2, A3, A4, contentMock, renderUi } from "./collections-fixtures";
 import { MyCollections } from "@/components/passport/CollectionsMine";
 import { CollectionEditor } from "@/components/passport/CollectionEditor";
-import { CuratedCollections } from "@/components/passport/CollectionsCurated";
+import { CuratedCollections, CuratedDetail } from "@/components/passport/CollectionsCurated";
 import { FavoriteCollections } from "@/components/passport/CollectionsFavorites";
 import {
   _resetForTests,
@@ -109,47 +109,51 @@ describe("hand-picked collection lifecycle through the UI", () => {
 });
 
 describe("shared completion", () => {
-  it("one completion shows in curated decks and in a custom collection", async () => {
+  const rainy = () => contentMock.collections.find((c) => c.slug === "rainy-day-club")!;
+
+  it("one completion shows in a collection page and in a custom collection", async () => {
     newCollection({
       id: "col-abcd1234",
       kind: "handpicked",
       name: "Mixed",
       ids: [A1.id, A3.id],
     });
-    const view = await renderUi(<CuratedCollections />);
-    // before: nothing done anywhere
-    const card = (title: string) => screen.getByRole("heading", { name: title }).closest("li")!;
-    expect(within(card("Five-Minute Moments")).getByText("0 of 2 done")).toBeInTheDocument();
-    expect(within(card("Rainy Day Club")).getByText("0 of 2 done")).toBeInTheDocument();
+    const view = await renderUi(<CuratedDetail c={rainy()} />);
+    expect(screen.getByRole("progressbar", { name: "0 of 2 done" })).toBeInTheDocument();
     act(() => completeAdventure(A1.id)); // belongs to two curated decks and the custom one
-    expect(within(card("Five-Minute Moments")).getByText("1 of 2 done")).toBeInTheDocument();
-    expect(within(card("Rainy Day Club")).getByText("1 of 2 done")).toBeInTheDocument();
-    expect(within(card("Weekend Together")).getByText("0 of 2 done")).toBeInTheDocument();
+    expect(screen.getByRole("progressbar", { name: "1 of 2 done" })).toBeInTheDocument();
     view.unmount();
 
     await renderUi(<MyCollections />);
     expect(screen.getByText("1 of 2 done")).toBeInTheDocument();
   });
 
-  it("free visitors see no per-collection counts, only that the adventures are in the full Passport", async () => {
-    ent.status = "free";
+  it("the directory lists every collection and gives counts from the library", async () => {
     await renderUi(<CuratedCollections />);
-    for (const name of ["Road Trip Adventures", "Five-Minute Moments"]) {
-      const li = screen.getByRole("heading", { name }).closest("li")!;
-      expect(within(li).getByText(/in the full Passport/)).toBeInTheDocument();
-      expect(li.textContent).not.toMatch(/\d/);
-    }
+    const all = document.getElementById("all-collections")!;
+    for (const c of contentMock.collections)
+      expect(within(all).getByRole("link", { name: c.title })).toBeInTheDocument();
+    const row = within(all).getByRole("link", { name: "Rainy Day Club" }).closest("li")!;
+    expect(row.textContent).toMatch(/2 adventures/);
   });
 
-  it("an adventure that does not suit the dog is not counted in a curated deck", async () => {
+  it("free visitors get no adventure instructions or Open buttons from a collection page", async () => {
+    ent.status = "free";
+    await renderUi(<CuratedDetail c={rainy()} />);
+    expect(screen.queryByRole("button", { name: /^Open/ })).toBeNull();
+    expect(document.body.textContent).not.toMatch(/Cozy Treasure Hunt|Blanket Fort Picnic/);
+    expect(screen.getAllByRole("link", { name: /Find our first adventure/ }).length).toBe(1);
+  });
+
+  it("an adventure that does not suit the dog is not counted in a collection", async () => {
     act(() => setProfile({ lifeStage: "senior" })); // A1 is for puppies and adults only
-    await renderUi(<CuratedCollections />);
-    const li = screen.getByRole("heading", { name: "Rainy Day Club" }).closest("li")!;
-    expect(within(li).getByText("0 of 1 done")).toBeInTheDocument();
+    await renderUi(<CuratedDetail c={rainy()} />);
+    expect(screen.getByRole("progressbar", { name: "0 of 1 done" })).toBeInTheDocument();
+    expect(screen.getByText(/1 suit your dog/)).toBeInTheDocument();
   });
 });
 
-describe("favorites", () => {
+describe("saved", () => {
   it("lists favorites, offers a surprise from them and logs a repeat without a new completion", async () => {
     act(() => {
       favorite(A2.id);
@@ -160,12 +164,12 @@ describe("favorites", () => {
     fireEvent.click(screen.getByRole("button", { name: /Did it again/ }));
     expect(getSave().repeats[A2.id]).toBe(1);
     expect(Object.keys(getSave().done.added)).toEqual([A2.id]);
-    fireEvent.click(screen.getByRole("button", { name: /Surprise me from my favorites/ }));
+    fireEvent.click(screen.getByRole("button", { name: /Surprise me from my saved/ }));
     expect(await screen.findByRole("article")).toBeInTheDocument();
   });
 
   it("has an empty state", async () => {
     await renderUi(<FavoriteCollections />);
-    expect(screen.getByText(/No favorites yet/)).toBeInTheDocument();
+    expect(screen.getByText(/Nothing saved yet/)).toBeInTheDocument();
   });
 });

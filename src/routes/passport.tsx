@@ -51,7 +51,7 @@ function PassportPage() {
   const canMake = useKeepsakeEntitled();
   const [msg, setMsg] = useState("");
   const [askDelete, setAskDelete] = useState(false);
-  const { all: lib } = useAdventureLibrary();
+  const { all: lib, unlocked: entitled } = useAdventureLibrary();
   const cols = Object.fromEntries(
     collections.map((c) => [
       c.slug,
@@ -288,7 +288,7 @@ function PassportPage() {
           {msg && <p role="status">{msg}</p>}
         </section>
 
-        <TrustBlock heading="Where your data lives" />
+        <TrustBlock heading="Where your data lives" entitled={entitled} />
 
         <AccountPanel />
       </div>

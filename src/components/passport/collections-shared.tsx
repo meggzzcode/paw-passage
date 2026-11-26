@@ -1,6 +1,8 @@
 // Small pieces shared by the Collections screens: the engine context, the library views and one adventure row.
 import { useMemo, useState, type ReactNode } from "react";
 import { freeLibrary } from "@/passport/content";
+import { isRevealed, savedStarter } from "@/passport/starter";
+import { usePassport } from "@/passport/usePassport";
 import { useEntitlement } from "@/passport/useEntitlement";
 import { eligibility, smartMembers, type Ctx, type History } from "@/passport/engine";
 import { members, type Save } from "@/passport/progress";
@@ -20,8 +22,9 @@ export function historyFor(save: Save): History {
 }
 
 /**
- * The one library every screen uses: the free adventures, plus the premium ones only while access is confirmed.
+ * The library for Discover and the intro flow: the free adventures, plus the premium ones only while access is confirmed.
  * Premium adventures live in memory only. Ids are the same stable ids everywhere. Free wins if an id ever collides.
+ * Do NOT use this for the Collections, Saved or editor screens: see useAccessLibrary.
  */
 export function useAdventureLibrary() {
   const { status, premium, message } = useEntitlement();
@@ -35,9 +38,29 @@ export function useAdventureLibrary() {
   return { all, unlocked, status, message };
 }
 
+/**
+ * The library the Collections, Saved and editor screens may show. A visitor without the full Passport gets exactly one
+ * adventure here: their own revealed intro adventure. Every other free-pool adventure stays behind the intro flow, so no
+ * list, expansion, favorite or saved link can reveal a second one. (The free pool is public YAML in the bundle, so this
+ * keeps the product promise; it is not a security boundary.) Entitled visitors get the whole library, unchanged.
+ */
+export function useAccessLibrary() {
+  const lib = useAdventureLibrary();
+  const { save } = usePassport();
+  const introId = useMemo(() => {
+    const a = isRevealed(save) ? savedStarter(freeLibrary(), save) : undefined;
+    return a?.id;
+  }, [save]);
+  const all = useMemo(
+    () => (lib.unlocked ? lib.all : lib.all.filter((a) => a.id === introId)),
+    [lib.unlocked, lib.all, introId],
+  );
+  return { all, unlocked: lib.unlocked, status: lib.status, message: lib.message, introId };
+}
+
 /** The library, and the part of it that suits this dog (hard eligibility only; never loosened here). */
 export function useLibrary(save: Save) {
-  const { all, unlocked } = useAdventureLibrary();
+  const { all, unlocked } = useAccessLibrary();
   return useMemo(() => {
     const ctx = ctxFor(save, unlocked);
     const eligible = all.filter((a) => eligibility(a, ctx).eligible);
@@ -85,6 +108,9 @@ export function AdventureRow({
   dogName?: string | undefined;
 }) {
   const [open, setOpen] = useState(false);
+  const { unlocked, introId } = useAccessLibrary();
+  // Defense in depth: only an entitled visitor, or the visitor's own intro adventure, can be opened from a list.
+  const canOpen = unlocked || a.id === introId;
   return (
     <li className="co-row">
       <div className="co-row-main">
@@ -100,17 +126,19 @@ export function AdventureRow({
       </div>
       <div className="co-row-actions">
         {actions}
-        <button
-          type="button"
-          className="pp-btn pp-btn-ghost"
-          aria-expanded={open}
-          onClick={() => setOpen((v) => !v)}
-        >
-          {open ? "Close" : "Open"}
-          <span className="sr-only"> {a.title}</span>
-        </button>
+        {canOpen && (
+          <button
+            type="button"
+            className="pp-btn pp-btn-ghost"
+            aria-expanded={open}
+            onClick={() => setOpen((v) => !v)}
+          >
+            {open ? "Close" : "Open"}
+            <span className="sr-only"> {a.title}</span>
+          </button>
+        )}
       </div>
-      {open && (
+      {open && canOpen && (
         <div className="co-row-detail">
           <RevealedCard a={a} dogName={dogName} />
         </div>

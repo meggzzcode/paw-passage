@@ -1,6 +1,6 @@
 // Our Story: the adventures you have completed, newest first, with the memory you wrote and a keepsake on request.
 // Photos are never stored: a keepsake is drawn on this device from a photo you pick, then forgotten.
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import type { Adventure } from "@/passport/schema";
 import { setMemory } from "@/passport/local-store";
 import { members } from "@/passport/progress";
@@ -9,7 +9,7 @@ import { Button } from "@/components/shell/Button";
 import { KeepsakeGate } from "./KeepsakeGate";
 import { useKeepsakeEntitled } from "@/passport/useKeepsakeEntitled";
 import { GoodToKnow } from "./ReadYourDog";
-import { useLibrary } from "./collections-shared";
+import { useAdventureLibrary } from "./collections-shared";
 
 const MEMORY_MAX = 140;
 
@@ -115,7 +115,9 @@ function Entry({ a, at, dogName }: { a: Adventure; at: number; dogName: string |
 
 export function StoryTimeline() {
   const { save, profile } = usePassport();
-  const lib = useLibrary(save);
+  // Our Story lists only adventures this visitor already completed, so it uses the whole free pool for titles.
+  const { all } = useAdventureLibrary();
+  const lib = useMemo(() => ({ byId: new Map(all.map((a) => [a.id, a])) }), [all]);
   const ids = members(save.done);
   const known = ids
     .map((id) => ({ a: lib.byId.get(id), at: save.done.added[id] ?? 0 }))

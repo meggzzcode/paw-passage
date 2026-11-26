@@ -40,3 +40,7 @@ None of these has been done, so none is claimed:
 5. **Unverified provider contract and deploy path** as listed above.
 6. **Content gaps** recorded in `CONTENT-REVIEW.md`: several free adventures sit at the minimum score, no free adventure needs a car, water or a beach, and there is one food adventure (the site states that nothing is vet-reviewed).
 7. **Lint warnings:** 30 `react-refresh/only-export-components` warnings (no errors).
+
+## Q3 launch checks (2026-11-26)
+
+Added `src/test/launch-commerce.test.ts` and `src/test/launch-static.test.ts` (15 tests, all pass locally with fakes: no network, no accounts). They cover activation, duplicate and replay, restore without a URL key, refund, chargeback and disabled-key revocation, protected premium delivery, photo local-only, analytics keys, documented environment variables and the service worker rules. `node scripts/check-leaks.mjs .output/public` passed on the 15:27 build. Still NOT tested: everything under "NOT tested" above, plus that the current build output (`.output`, Nitro `cloudflare-module` preset) deploys on Netlify with `publish = "dist"`. See `LAUNCH-READINESS.md`.

@@ -1,6 +1,9 @@
 [build]
   command = "npm run build"
   publish = "dist"
+  # The Vite config defaults Nitro to the Cloudflare target. Netlify needs its own preset: it writes the static site to
+  # dist/ and the server-rendered pages to .netlify/functions-internal. Verified locally by a build with this variable
+  # (a real preview deploy is still required to prove it, see docs/LAUNCH-READINESS.md).
   # Skip the build (and its credits) ONLY when a push changes nothing but docs/, .github/ or root-level Markdown files
   # (README.md, AGENTS.md ...). Published Markdown (content/guides/*.md, content/**/*.md, src/**/*.md) and every
   # Pages CMS save MUST build, so never exclude "*.md" generally: ':(exclude,glob)*.md' matches the repo root only.
@@ -10,6 +13,10 @@
 
 [build.environment]
   NODE_VERSION = "22"
+  # The Vite config defaults Nitro to the Cloudflare target. Netlify needs its own preset: it writes the static site to
+  # dist/ and the server-rendered pages to .netlify/functions-internal. A local build with this variable produced both
+  # (a real preview deploy is still required to prove it, see docs/LAUNCH-READINESS.md).
+  NITRO_PRESET = "netlify"
 
 # Hashed build output never changes, so browsers and the CDN may keep it for a year.
 [[headers]]

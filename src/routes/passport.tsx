@@ -1,3 +1,4 @@
+import { flags } from "@/config/commercial";
 import { useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { Container } from "@/components/shell/Container";
@@ -116,7 +117,7 @@ function PassportPage() {
 
         <UpcomingAdventures focus={view === "upcoming"} planId={plan} />
         <PrintablesCard />
-        <NotificationSettings />
+        {flags.notifications && <NotificationSettings />}
         <InstallCard />
 
         <section className="pa-panel" aria-labelledby="ms-h">

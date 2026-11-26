@@ -18,8 +18,8 @@ export const ONE_PAYMENT_LINE = "One-time purchase, no subscription, no account.
  * site never advertises something that is not there. Flipping a flag changes copy only; it does not build a feature.
  */
 export const flags = {
-  /** Optional reminders in My Passport (push and calendar). Never required, never advertised as a reason to buy. */
-  notifications: true,
+  /** Push reminders in My Passport. PAUSED by the owner (2026-11-26) in favor of email nudges; calendar export stays. */
+  notifications: false,
   /** Trip itineraries. Shipped. */
   itineraries: true,
   /** Printable keepsakes and sheets. Shipped. */

@@ -313,7 +313,7 @@ describe("welcome page", () => {
     expect(t).toContain("Your saved previews are now ready: 2 saved");
     expect(screen.getByRole("link", { name: "Open my Passport" })).toBeTruthy();
     expect(screen.getByTestId("install-card")).toBeTruthy();
-    expect(t).toMatch(/Reminders are optional/);
+    expect(t).not.toMatch(/Reminders are optional/); // push reminders are paused
     expect(t).not.toMatch(/code/i);
     expect(window.location.search).toBe("");
   });

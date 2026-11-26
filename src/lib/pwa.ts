@@ -11,6 +11,13 @@ import { track, type EventName } from "@/passport/events";
  */
 export const PWA_PROMPTS_ENABLED = false;
 
+/**
+ * PWA master switch. PAUSED by the owner (2026-11-26): while false the site does not link the manifest, does not register
+ * the service worker, and actively removes any worker and cache an earlier visit installed, so the site behaves as a plain
+ * website. The code stays for a later launch; flip to true only after docs/PWA-DEVICE-TEST.md passes.
+ */
+export const PWA_ENABLED = false;
+
 export const INSTALL_DISMISS_KEY = "pp.install.dismissedAt";
 export const INSTALL_DETECTED_KEY = "pp.install.detected";
 export const INSTALL_COOLDOWN_MS = 90 * 24 * 60 * 60 * 1000;
@@ -179,6 +186,21 @@ export const SW_URL = "/sw.js";
 export function registerServiceWorker(onUpdate?: (activate: () => void) => void): void {
   if (typeof window === "undefined" || !("serviceWorker" in navigator)) return;
   if (import.meta.env.DEV) return; // a cached dev page is confusing; the worker is for the built site
+  if (!PWA_ENABLED) {
+    // Paused: clean up anything an earlier visit left behind (worker and our caches), then stop.
+    void navigator.serviceWorker
+      .getRegistrations()
+      .then((regs) => Promise.all(regs.map((r) => r.unregister())))
+      .catch(() => undefined);
+    if ("caches" in window)
+      void caches
+        .keys()
+        .then((keys) =>
+          Promise.all(keys.filter((k) => k.startsWith("pp-")).map((k) => caches.delete(k))),
+        )
+        .catch(() => undefined);
+    return;
+  }
   const run = () => {
     navigator.serviceWorker
       .register(SW_URL, { scope: "/" })

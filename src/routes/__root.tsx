@@ -1,3 +1,4 @@
+import { PWA_ENABLED } from "@/lib/pwa";
 import { jsonLd } from "@/lib/seo";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import {
@@ -140,7 +141,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
       { rel: "icon", href: "/icon-192.png", type: "image/png", sizes: "192x192" },
       { rel: "apple-touch-icon", href: "/apple-touch-icon.png" },
-      { rel: "manifest", href: "/manifest.webmanifest" },
+      ...(PWA_ENABLED ? [{ rel: "manifest", href: "/manifest.webmanifest" }] : []),
     ],
     scripts: [
       // Organization: url and name always; sameAs lists only the Pinterest profile, and only once site.pinterestUrl is set. No logo property: the site's logo is a text wordmark, and there is no brand logo image file to point to.

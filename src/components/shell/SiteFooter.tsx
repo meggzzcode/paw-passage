@@ -5,7 +5,8 @@ import { hasApprovedAffiliates } from "@/lib/launch";
 import { AnalyticsChoicesButton } from "../site/ConsentNotice";
 import { AppLink } from "./AppLink";
 import { LogoMark } from "./Logo";
-import { guidesLink, navItems, restoreLink, unlockCta } from "./nav-items";
+import { freeNav, guidesLink, paidNav, restoreLink, unlockCta } from "./nav-items";
+import { linkProps, useNavMode } from "./useNavMode";
 
 const about = [
   ["/about", "About"],
@@ -18,6 +19,8 @@ const about = [
 ] as const;
 
 export function SiteFooter() {
+  const { mode } = useNavMode();
+  const exploreLinks = mode === "paid" ? paidNav : freeNav;
   return (
     <footer className="pp-footer no-print mt-16">
       <div className="pp-marquee" aria-hidden="true">
@@ -39,23 +42,34 @@ export function SiteFooter() {
         <nav aria-label="Explore">
           <p className="text-xs font-semibold uppercase tracking-[0.16em] opacity-80">Explore</p>
           <ul className="mt-2">
-            {navItems.map((n) => (
-              <li key={n.to}>
-                <AppLink to={n.to}>{n.label}</AppLink>
+            {exploreLinks.map((n) => (
+              <li key={n.label}>
+                <AppLink {...linkProps(n)}>{n.label}</AppLink>
               </li>
             ))}
             <li>
               <AppLink to={guidesLink.to}>{guidesLink.label}</AppLink>
             </li>
-            <li>
-              <AppLink to="/journal">The Adventure Journal</AppLink>
-            </li>
-            <li>
-              <AppLink to={unlockCta.to}>{unlockCta.label}</AppLink>
-            </li>
-            <li>
-              <AppLink to={restoreLink.to}>{restoreLink.label}</AppLink>
-            </li>
+            {mode === "paid" && (
+              <>
+                <li>
+                  <AppLink to="/journal">The Adventure Journal</AppLink>
+                </li>
+                <li>
+                  <AppLink to="/our-story">Our Story</AppLink>
+                </li>
+              </>
+            )}
+            {mode === "free" && (
+              <>
+                <li>
+                  <AppLink to={unlockCta.to}>{unlockCta.label}</AppLink>
+                </li>
+                <li>
+                  <AppLink to={restoreLink.to}>{restoreLink.label}</AppLink>
+                </li>
+              </>
+            )}
           </ul>
         </nav>
         <nav aria-label="About and legal">

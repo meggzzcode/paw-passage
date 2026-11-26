@@ -7,6 +7,15 @@ import { _resetForTests, getSave, newCollection, setProfile } from "@/passport/l
 import { listCollections } from "@/passport/progress";
 
 vi.mock("@/passport/content", async () => (await import("./collections-fixtures")).contentMock);
+vi.mock("@/passport/useEntitlement", () => ({
+  useEntitlement: () => ({
+    status: "entitled",
+    premium: [],
+    signedIn: false,
+    csrf: "",
+    message: null,
+  }),
+}));
 
 beforeEach(() => {
   window.localStorage.clear();

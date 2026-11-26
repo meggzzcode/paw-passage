@@ -90,7 +90,7 @@ describe("Safety copy on cards", () => {
     v.unmount();
     act(() => favorite(A1.id));
     await renderUi(<FavoriteCollections />);
-    fireEvent.click(screen.getByRole("button", { name: "Surprise me from my favorites" }));
+    fireEvent.click(screen.getByRole("button", { name: "Surprise me from my saved" }));
     expect((await screen.findAllByRole("article")).length).toBeGreaterThan(0);
     expect(screen.queryByText(LINE)).toBeNull();
   });

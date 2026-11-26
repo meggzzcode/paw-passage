@@ -3,8 +3,11 @@ import { AppLink } from "@/components/shell/AppLink";
 
 export function TrustBlock({
   heading = "How it works and where your data lives",
+  entitled = false,
 }: {
   heading?: string;
+  /** A paying customer already has sync: never tell them that buying adds it. */
+  entitled?: boolean;
 }) {
   return (
     <section className="pa-panel" aria-labelledby="trust-h">
@@ -24,10 +27,17 @@ export function TrustBlock({
           <strong>Photos never leave your device.</strong> Personalized keepsakes in the full
           Passport are made in your browser and are never uploaded.
         </li>
-        <li>
-          <strong>Buying adds sync.</strong> With the full Passport your progress follows you across
-          devices, and you can restore it with your purchase code.
-        </li>
+        {entitled ? (
+          <li>
+            <strong>Your progress syncs.</strong> With your Passport, your progress follows you
+            across devices, and you can restore it with your purchase code.
+          </li>
+        ) : (
+          <li>
+            <strong>Buying adds sync.</strong> With the full Passport your progress follows you
+            across devices, and you can restore it with your purchase code.
+          </li>
+        )}
       </ul>
       <p className="pa-fine">
         Read your dog: three short signs on every adventure card that tell you when to ease off.{" "}

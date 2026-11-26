@@ -5,7 +5,8 @@ import { newCollection } from "@/passport/local-store";
 import { newCollectionId, listCollections, collectionProgress } from "@/passport/progress";
 import { usePassport } from "@/passport/usePassport";
 import { AppLink } from "@/components/shell/AppLink";
-import { memberIdsOf, smartTemplates, useLibrary } from "./collections-shared";
+import { MineInvite } from "@/components/collections/Invites";
+import { memberIdsOf, smartTemplates, useAccessLibrary, useLibrary } from "./collections-shared";
 
 const MAX_NAME = 60;
 
@@ -64,7 +65,13 @@ function CreateForm({
   );
 }
 
+/** Custom collections are a Passport feature: a visitor without it sees a short invitation, never the builder. */
 export function MyCollections() {
+  const { unlocked } = useAccessLibrary();
+  return unlocked ? <MyCollectionsFull /> : <MineInvite />;
+}
+
+function MyCollectionsFull() {
   const { save, profile } = usePassport();
   const lib = useLibrary(save);
   const cols = listCollections(save);

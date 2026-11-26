@@ -1,21 +1,43 @@
 import { describe, it, expect } from "vitest";
 import { readFileSync } from "node:fs";
-import { guidesLink, navItems, restoreLink, unlockCta } from "@/components/shell/nav-items";
+import {
+  freeNav,
+  guidesLink,
+  paidMore,
+  paidNav,
+  restoreLink,
+  unlockCta,
+} from "@/components/shell/nav-items";
 import { homePromo } from "@/config/commercial";
 
 describe("shell navigation", () => {
-  it("lists the four product areas, the unlock CTA and a small restore link", () => {
-    expect(navItems.map((n) => n.label)).toEqual([
-      "Discover",
-      "Collections",
-      "My Passport",
+  it("free nav: browse, read, our story; the Passport is the one primary action", () => {
+    expect(freeNav.map((n) => n.label)).toEqual([
+      "Home",
+      "Explore Adventures",
+      "Journal",
       "Our Story",
     ]);
     expect(unlockCta).toEqual({ to: "/unlock", label: "Get the Passport" });
     expect(restoreLink).toEqual({ to: "/restore-access", label: "Restore access" });
   });
+  it("paid nav: Discover, Collections, My Passport, Saved; the rest is secondary and has no upsell", () => {
+    expect(paidNav.map((n) => n.label)).toEqual([
+      "Discover",
+      "Collections",
+      "My Passport",
+      "Saved",
+    ]);
+    expect(paidMore.map((n) => n.label)).toEqual([
+      "Journal",
+      "Our Story",
+      "Settings and account",
+      "Support",
+    ]);
+    for (const n of [...paidNav, ...paidMore]) expect(n.to).not.toBe("/unlock");
+  });
   it("keeps Guides out of the primary nav but in the footer", () => {
-    expect(navItems.map((n) => n.label as string)).not.toContain("Guides");
+    expect([...freeNav, ...paidNav].map((n) => n.label as string)).not.toContain("Guides");
     expect(readFileSync("src/components/shell/SiteFooter.tsx", "utf8")).toContain("guidesLink");
     expect(guidesLink.to).toBe("/guides");
   });
@@ -54,5 +76,18 @@ describe("homepage copy", () => {
   });
   it("keeps the old slogan out of the hero", () => {
     expect(src).not.toMatch(/collect\s+adventures/i);
+  });
+});
+
+import { WORLDS } from "@/passport/worlds";
+import { collections } from "@/passport/content";
+
+describe("collection worlds", () => {
+  it("place every one of the collections in exactly one of six worlds", () => {
+    expect(WORLDS).toHaveLength(6);
+    const placed = WORLDS.flatMap((w) => [...w.slugs]);
+    expect(new Set(placed).size).toBe(placed.length);
+    expect(placed.sort()).toEqual(collections.map((c) => c.slug).sort());
+    expect(placed).toHaveLength(25);
   });
 });

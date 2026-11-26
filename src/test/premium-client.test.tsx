@@ -270,7 +270,7 @@ describe("entitled visitor", () => {
     expect(screen.queryByText(/Lighthouse/)).toBeNull();
   });
 
-  it("when the site cannot be reached it says so, shows the free library and never claims 'locked'", async () => {
+  it("when the site cannot be reached it says so, shows no premium library and never claims 'locked'", async () => {
     flag();
     install(server());
     srv.s.offline = true;
@@ -281,12 +281,8 @@ describe("entitled visitor", () => {
       </>,
     );
     await waitFor(() => expect(getEntitlement().status).toBe("offline"));
-    expect(titles("all")).toEqual([
-      "Cozy Treasure Hunt",
-      "Blanket Fort Picnic",
-      "Backyard Safari",
-      "Neighborhood Postcard Walk",
-    ]);
+    // offline: no premium library, and the collections library holds no free-pool adventure without a revealed intro
+    expect(titles("all")).toEqual([]);
     expect(screen.getByText(OFFLINE_MESSAGE)).toBeInTheDocument();
     expect(document.body.textContent).not.toMatch(/locked/i);
     // back online: the next check recovers

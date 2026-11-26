@@ -14,6 +14,7 @@ import { collectionProgress, listCollections, members } from "@/passport/progres
 import type { CustomCollection, SessionFilters } from "@/passport/profile";
 import { usePassport } from "@/passport/usePassport";
 import { AppLink } from "@/components/shell/AppLink";
+import { MineInvite } from "@/components/collections/Invites";
 import { RevealedCard } from "./AdventureCard";
 import {
   AdventureRow,
@@ -442,6 +443,7 @@ export function CollectionEditor({ id }: { id: string }) {
   const c = listCollections(save).find((x) => x.id === id);
 
   if (!ready) return <div aria-busy="true" />;
+  if (!lib.unlocked) return <MineInvite />; // deep links to a custom collection need the full Passport
   if (deleted)
     return (
       <>

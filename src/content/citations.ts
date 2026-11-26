@@ -1,4 +1,4 @@
-// Pure helpers for how a guide's body cites its frontmatter `sources` (no "@/" imports: the codemod script and tests load this too).
+// Pure helpers for how a guide's body cites its frontmatter `sources` (no "@/" imports: the build and tests load this too).
 // A source is cited when the body has a [[n]] marker for it OR an inline Markdown link to its exact URL.
 
 /** A numbered marker, written [[7]](https://source-url). The address is optional so [[7]] alone also counts. */
@@ -107,49 +107,13 @@ const NAMES: Record<string, { name: string; aliases?: string[] }> = {
     aliases: ["U.S. Forest Service", "Forest Service"],
   },
   "Twiddy & Company": { name: "Twiddy", aliases: ["Twiddy & Company", "Twiddy"] },
-  "Aunt Bug's Cabin Rentals": {
-    name: "Aunt Bugs",
-    aliases: ["Aunt Bug's Cabin Rentals", "Aunt Bug's", "Aunt Bugs"],
-  },
-  "Aunt Bugs Cabin Rentals": {
-    name: "Aunt Bugs",
-    aliases: ["Aunt Bugs Cabin Rentals", "Aunt Bug's", "Aunt Bugs"],
-  },
-  "Rosemary Beach Cottage Rental Company": {
-    name: "Rosemary Beach Cottage Rental",
-    aliases: ["Rosemary Beach Cottage Rental Company", "Rosemary Beach Cottage Rental"],
-  },
-  "Elk Springs Resort Cabin Rentals": {
-    name: "Elk Springs Resort",
-    aliases: ["Elk Springs Resort Cabin Rentals", "Elk Springs Resort"],
-  },
-  "Brindley Beach Vacations": {
-    name: "Brindley Beach",
-    aliases: ["Brindley Beach Vacations", "Brindley Beach"],
-  },
-  "Beach Realty & Construction": {
-    name: "Beach Realty",
-    aliases: ["Beach Realty & Construction", "Beach Realty"],
-  },
   "Soggy Doggy Productions": {
     name: "Soggy Doggy",
     aliases: ["Soggy Doggy Productions", "Soggy Doggy"],
   },
-  "Carolina Designs Realty": {
-    name: "Carolina Designs",
-    aliases: ["Carolina Designs Realty", "Carolina Designs"],
-  },
-  "Sacred Waters North Georgia Cabin Rental": {
-    name: "Sacred Waters",
-    aliases: ["Sacred Waters North Georgia Cabin Rental", "Sacred Waters"],
-  },
   "Newman-Dailey Resort Properties": {
     name: "Newman-Dailey",
     aliases: ["Newman-Dailey Resort Properties", "Newman-Dailey"],
-  },
-  "Kinlin Grover Vacation Rentals": {
-    name: "Kinlin Grover",
-    aliases: ["Kinlin Grover Vacation Rentals", "Kinlin Grover"],
   },
   "Canine Arthritis Resources and Education": {
     name: "CARE",
@@ -157,10 +121,6 @@ const NAMES: Record<string, { name: string; aliases?: string[] }> = {
   },
   "Enterprise Rent-A-Car": { name: "Enterprise", aliases: ["Enterprise Rent-A-Car", "Enterprise"] },
   "Small Door Veterinary": { name: "Small Door", aliases: ["Small Door Veterinary", "Small Door"] },
-  "Sun Palace Vacation Homes": {
-    name: "Sun Palace",
-    aliases: ["Sun Palace Vacation Homes", "Sun Palace"],
-  },
   "U.S. Coast Guard": { name: "U.S. Coast Guard", aliases: ["U.S. Coast Guard", "Coast Guard"] },
 };
 

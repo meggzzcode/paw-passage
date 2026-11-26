@@ -13,7 +13,7 @@
 #                change what appears.
 # when:     tripTypes (one of), anyConditions (at least one), allConditions (all), unlessConditions (none),
 #           minDays / maxDays. Every part that is present must match.
-# quantity: none | fixed | perDog | perDay | perDogPerDay | dogDays | meals | text (see docs/PACKING_PLANNER_PRODUCT_GUIDE.md)
+# quantity: none | fixed | perDog | perDay | perDogPerDay | dogDays | meals | text
 # gearCategory (optional): a /gear category slug (see src/content/gear-categories.ts) for an item with no researched
 #           product. When the visitor ticks "Need to buy" and no product applies, they get "Looking for a ...?" and a link
 #           "Explore ... gear" to that category. Needs shopFor. The build fails for an unknown category or one with
@@ -282,7 +282,7 @@ items:
     why: Use one only where the host allows dogs on furniture, and ask first. A pet fee does not mean furniture permission.
     quantity: { strategy: fixed, count: 1, unit: throw }
     shopFor: washable throw
-    gearCategory: rental-cleanup
+    gearCategory: cleanup-and-protection
   - id: pen
     name: Portable pen
     category: sleep-comfort

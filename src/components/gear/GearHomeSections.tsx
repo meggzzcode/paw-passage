@@ -16,7 +16,6 @@ import {
 import type { ReactNode } from "react";
 import { SPEC_CARD_STYLE } from "@/components/site/ProductSpecCard";
 import { GearProductCard } from "@/components/site/GearProductCard";
-import { getDogType, dogTypeIsLive } from "@/content/dog-types";
 import { getGearCategory } from "@/content/gear-categories";
 import {
   categoryProducts,
@@ -221,7 +220,6 @@ export function DogTypeCard({
   shortcut: GearShortcut & { categories: GearCategory[] };
 }) {
   const Icon = DOG_ICON[shortcut.slug] ?? Dog;
-  const dog = shortcut.dogTypeSlug ? getDogType(shortcut.dogTypeSlug) : undefined;
   return (
     <li className="rounded-2xl border border-border bg-card p-4 sm:p-5">
       <div className="flex items-center gap-3">
@@ -240,15 +238,6 @@ export function DogTypeCard({
             {getGearCategory(c.slug)?.name ?? c.name}
           </Link>
         ))}
-        {dog && dogTypeIsLive(dog) && (
-          <Link
-            to="/dogs/$slug"
-            params={{ slug: dog.slug }}
-            className={`inline-flex min-h-9 items-center rounded-full border border-border px-3 text-sm transition hover:bg-muted ${linkFocus}`}
-          >
-            Guides for this dog
-          </Link>
-        )}
       </p>
     </li>
   );
@@ -261,7 +250,7 @@ export function PlanTripSection({ guides, children }: { guides: Guide[]; childre
         id="gear-plan"
         eyebrow="Before you go"
         title="Plan the trip, not just the packing"
-        lead="Buying guides for the gear that is hardest to choose, and a checklist for everything else."
+        lead="Buying guides for the gear that is hardest to choose."
       />
       <div className="mt-6 grid gap-4 lg:grid-cols-[1.3fr_1fr]">
         {guides.length > 0 && (

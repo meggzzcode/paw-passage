@@ -1,5 +1,4 @@
-// Content model for Paws & Passage. Plain files, no backend.
-// Shapes mirror future database tables so a CMS/DB can be added later.
+// Content model for the Paw & Passage guides. Plain files, no backend.
 
 import type { GearPick } from "./gear";
 
@@ -47,8 +46,7 @@ export interface Guide {
   seoTitle: string; // <= 60 chars
   seoDescription: string; // <= 160 chars
   dek: string; // one-line standfirst under the title
-  category: "Destination" | "Planning" | "Checklist" | "Gear";
-  states: ("georgia" | "california")[];
+  category: "Planning" | "Checklist" | "Gear";
   status: GuideStatus;
   author: string;
   publishedOn: string; // YYYY-MM-DD
@@ -71,7 +69,7 @@ export interface Guide {
   relatedGuides: string[]; // slugs
   /** Product ids from content/products.yml (at most 6), shown as "Gear for this trip" after the article. */
   relatedProducts?: string[];
-  relatedTools: ("checklist" | "will-my-dog-be-accepted" | "packing-list")[];
+  relatedTools: "packing-list"[];
   sources: Source[];
   research: ResearchBrief;
 }

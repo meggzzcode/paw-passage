@@ -4,7 +4,6 @@ seoTitle: "Dog Life Jacket Size and Fit: What to Buy"
 seoDescription: "Choose a dog life jacket for a lake or beach rental: measure by girth, run a fit test, compare three jackets and see what no standard covers."
 dek: Girth, not weight, sets the size. Here is when a vest earns its place, what to compare before you click, and what it cannot do.
 category: Planning
-states: []
 status: published
 approvedBy: Paws & Passage Editors
 approvedOn: 2026-11-18
@@ -21,9 +20,7 @@ faqs:
   - q: What is a quick way to check the fit?
     a: AKC describes two fingers fitting under the straps, and a test in a bathtub or shallow water before open water. Ezydog adds that straps should lie flat and the front legs should move freely.
 relatedGuides:
-  - can-dogs-go-in-a-rental-pool-or-hot-tub
   - dog-friendly-cabin-packing-list
-  - can-you-leave-a-dog-alone-in-a-vacation-rental
   - dog-hiking-gear-for-a-cabin-vacation
   - keep-a-dog-cool-on-a-summer-trip
 relatedProducts:
@@ -32,7 +29,6 @@ relatedProducts:
   - outward-hound-dawson-swim-life-jacket
 relatedTools:
   - packing-list
-  - checklist
 sources:
   - title: Dawson Swim Dog Life Jacket
     url: https://outwardhound.com/dawson-swim-dog-life-jacket/
@@ -179,7 +175,7 @@ You. Never leave a dog unattended in a jacket, and a jacket does nothing about t
 - **Algae.** The [CDC](https://www.cdc.gov/harmful-algal-blooms/about/index.html) says animals can get very sick or die within hours of contact with harmful algae, and blooms can look like foam, scum, mats or paint. Check before any lake swim, stay out if the water looks like that, and rinse with tap water right after contact.
 - **Surf and current.** VCA advises avoiding big waves, riptides and strong currents, and dangerously cold water. A jacket doesn't change that, and none of the pages we read say how long a jacket helps a dog in cold water.
 
-Call a vet right away if your dog seems ill after time in or near water. Pools and hot tubs are a separate question, covered in our [pool and hot tub guide](/guides/can-dogs-go-in-a-rental-pool-or-hot-tub).
+Call a vet right away if your dog seems ill after time in or near water. Pools and hot tubs are a separate question that this guide does not cover.
 
 ## Size and fit
 
@@ -219,7 +215,7 @@ More options are on the [water and beach gear page](/gear/water-and-beach).
 - Fresh water and a bowl for the dock or shore ([travel bowls](/guides/dog-travel-bowls-and-food-storage)).
 - Towel and tap-water rinse for after swimming.
 - Beach, lake and dock rules from the host, in writing.
-- A plan for who watches the dog ([leaving a dog alone](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental)).
+- A plan for who watches the dog.
 - Shade and breaks. See [keeping a dog cool](/guides/keep-a-dog-cool-on-a-summer-trip), and [hiking gear](/guides/dog-hiking-gear-for-a-cabin-vacation) if the water is at the end of a trail.
 
-Add the jacket to the [packing list tool](/tools/packing-list) and run the [pre-booking checklist](/tools/checklist) with beach and dock rules added.
+Add the jacket to the [packing list tool](/tools/packing-list) and check the beach and dock rules before you go.

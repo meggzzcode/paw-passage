@@ -2,8 +2,9 @@
 # This file tells Pages CMS what forms to show for each kind of content. It only ever edits the
 # files in /content and the photos in /public/uploads. It cannot change the website's code.
 #
-# STATUS: the forms were opened in the live Pages CMS app on 2026-11-25 (Cowork preflight: every form loads, no
-# configuration error; nothing was saved). The full edit, save and publish loop is NOT yet verified: see BUYER_HANDOVER.md.
+# STATUS: the guides, products, affiliate and settings forms were opened in the live Pages CMS app on 2026-11-25
+# (Cowork preflight: every form loads, no configuration error; nothing was saved). The full edit, save and publish loop
+# is NOT yet verified.
 
 # Keep any setting in a file that this form doesn't know about, instead of deleting it on save.
 settings:
@@ -62,13 +63,7 @@ content:
         type: select
         required: true
         options:
-          values: [Destination, Planning, Checklist, Gear]
-      - name: states
-        label: States covered (if any)
-        type: select
-        list: true
-        options:
-          values: [georgia, california]
+          values: [Planning, Checklist, Gear]
       - name: author
         label: Author name shown on the article
         type: string
@@ -111,22 +106,19 @@ content:
         description: "Use this OR upload your own photo in the next box."
         options:
           values:
-            - guide-ga-cabins
-            - guide-atlanta-getaways
-            - guide-la-getaways
-            - guide-ca-beach
-            - guide-pet-fees
-            - guide-rental-checklist
-            - guide-two-dogs
-            - guide-fenced-yard
-            - guide-large-dogs
-            - guide-cabin-packing
             - gear-car-safety
             - gear-first-aid
-            - gear-feeding
-            - gear-rental-protection
             - gear-portable-fence
-            - gear-id-tracking
+            - guide-cold-weather-gear
+            - guide-dog-hiking-gear
+            - guide-dog-life-jacket
+            - guide-keep-dog-cool
+            - guide-loose-dog
+            - guide-packing-list-boots
+            - guide-protect-car-interior
+            - guide-ramp-steps
+            - guide-travel-bowls
+            - guide-two-large-dogs-car
       - name: heroUpload
         label: Top photo (upload your own - replaces the built-in photo)
         type: image
@@ -139,11 +131,11 @@ content:
       # articles use them. A plain-text editor never rewrites what it was not asked to change.
       # (Written from the Pages CMS docs; the "format: markdown" setting is documented for the code field.)
       - name: body
-        label: "Article text (written in Markdown: see docs/WRITING-IN-MARKDOWN.md)"
+        label: "Article text (written in Markdown)"
         type: code
         options:
           format: markdown
-        description: "List every source in the Sources field below. In the text, link a publisher only where the sentence names it, like [Airbnb](https://...), and only to an address in that list. Tick boxes are written - [ ] and - [x]. An affiliate link is written [the words](aff:short-name), using a short name from Affiliate links; it shows as a link only once that link is Approved."
+        description: "List every source in the Sources field below. In the text, link a publisher only where the sentence names it, like [AKC](https://...), and only to an address in that list. Tick boxes are written - [ ] and - [x]. An affiliate link is written [the words](aff:short-name), using a short name from Affiliate links; it shows as a link only once that link is Approved."
       - name: faqs
         label: Questions and answers at the end
         type: object
@@ -174,7 +166,7 @@ content:
         type: select
         list: true
         options:
-          values: [checklist, will-my-dog-be-accepted, packing-list]
+          values: [packing-list]
       - name: gear
         label: Product picks (gear articles only)
         type: object
@@ -188,8 +180,17 @@ content:
         label: Research notes (how this article was checked)
         type: object
         fields:
-          - { name: researchComplete, label: "Fact-checking finished? (must be ticked for the article to go live)", type: boolean }
-          - { name: unverified, label: "Claims still unchecked (must be empty for the article to go live)", type: string, list: true }
+          - {
+              name: researchComplete,
+              label: "Fact-checking finished? (must be ticked for the article to go live)",
+              type: boolean,
+            }
+          - {
+              name: unverified,
+              label: "Claims still unchecked (must be empty for the article to go live)",
+              type: string,
+              list: true,
+            }
           - { name: primaryKeyword, label: Main search phrase, type: string, required: true }
           - { name: relatedKeywords, label: Other search phrases, type: string, list: true }
           - { name: readerQuestions, label: Questions readers ask, type: string, list: true }
@@ -197,7 +198,12 @@ content:
           - { name: angle, label: What makes this article different, type: text, required: true }
           - { name: gapsFound, label: Gaps found in other articles, type: string, list: true }
           - { name: differentiators, label: What we add, type: string, list: true }
-          - { name: followUps, label: Open follow-ups (must be empty for the article to go live), type: string, list: true }
+          - {
+              name: followUps,
+              label: Open follow-ups (must be empty for the article to go live),
+              type: string,
+              list: true,
+            }
           - name: competitors
             label: Other articles we read
             type: object
@@ -208,177 +214,6 @@ content:
               - { name: checkedOn, label: Date read, type: date, required: true }
               - { name: coversWell, label: What it covers well, type: text, required: true }
               - { name: gaps, label: What it misses, type: text, required: true }
-
-  # ------------------------------------------------------------ Accommodation listings
-  - name: stays
-    label: Stays (accommodation listings)
-    type: collection
-    path: content/stays
-    format: yaml
-    filename: "{primary}.yml"
-    view:
-      fields: [name, status, town, type]
-      primary: name
-    fields:
-      - name: status
-        label: Status
-        type: select
-        required: true
-        description: "Verified and Unverified stays both appear on the website. Unverified ones carry a 'Not yet verified' label. Mark a stay Verified only after the host confirmed the details."
-        options:
-          values:
-            - { value: unverified, label: "Unverified (shown, labelled Not yet verified)" }
-            - { value: verified, label: "Verified (shown; the host confirmed the details)" }
-      - { name: name, label: Name of the stay, type: string, required: true }
-      - name: type
-        label: Type
-        type: select
-        required: true
-        options:
-          values: [cabin, vacation-home, cottage, beach-house, unique]
-      - name: state
-        label: State
-        type: select
-        required: true
-        options:
-          values: [georgia, california]
-      - { name: town, label: "Town (web-address name, e.g. blue-ridge)", type: string, required: true }
-      - { name: summary, label: One-line summary, type: text, required: true }
-      - { name: description, label: Description, type: text, required: true }
-      - { name: sleeps, label: Sleeps (people), type: number }
-      - { name: bedrooms, label: Bedrooms, type: number }
-      - { name: bathrooms, label: Bathrooms, type: number }
-      - { name: beds, label: "Beds (one line each, e.g. Bedroom 1: 1 king bed)", type: string, list: true }
-      - name: amenityGroups
-        label: "What is included (only what the listing states)"
-        type: object
-        list: true
-        fields:
-          - { name: title, label: "Group (e.g. Kitchen, Comfort, Outdoors, Laundry)", type: string, required: true }
-          - { name: items, label: Items, type: string, list: true }
-      - { name: locationNote, label: "The setting in a sentence or two", type: text }
-      - { name: distances, label: "Distances (e.g. Downtown Blue Ridge: about 10 minutes)", type: string, list: true }
-      - { name: checkIn, label: "Check-in time", type: string }
-      - { name: checkOut, label: "Check-out time", type: string }
-      - { name: minimumStay, label: "Minimum stay", type: string }
-      - { name: cancellation, label: "Cancellation policy (short)", type: string }
-      - { name: accessNotes, label: "Stairs, parking, steep drive, accessibility", type: string, list: true }
-      - { name: generalRules, label: "Other house rules (smoking, quiet hours...)", type: string, list: true }
-      - { name: guestNotes, label: "Heads-ups from guest reviews (paraphrase, one per line)", type: string, list: true }
-      - { name: maxDogs, label: "Most dogs allowed (leave empty if not confirmed)", type: number }
-      - { name: weightLimitLbs, label: "Weight limit per dog in lbs (leave empty if none stated)", type: number }
-      - name: largeDogsOk
-        label: Large dogs allowed?
-        type: select
-        default: not-confirmed
-        options:
-          values: [yes, no, not-confirmed]
-      - name: fencedYard
-        label: Fenced yard
-        type: select
-        default: not-confirmed
-        options:
-          values: [full, partial, none, not-confirmed]
-      - { name: fenceNotes, label: "Fence details (height, gate, gaps)", type: text }
-      - { name: privateOutdoor, label: "Private outdoor space?", type: select, default: not-confirmed, options: { values: [yes, no, not-confirmed] } }
-      - name: petFee
-        label: Pet fee
-        type: select
-        default: not-confirmed
-        options:
-          values: [not-confirmed, none, charged]
-      - { name: petFeeAmount, label: "Pet fee amount in dollars (only if 'charged')", type: number }
-      - name: petFeeBasis
-        label: "Pet fee is charged per... (only if 'charged')"
-        type: select
-        options:
-          values:
-            - { value: stay, label: "per stay" }
-            - { value: night, label: "per night" }
-            - { value: dog, label: "per dog" }
-            - { value: dog-night, label: "per dog, per night" }
-      - { name: breedRestrictions, label: "Breed restrictions stated?", type: select, default: not-confirmed, options: { values: [yes, no, not-confirmed] } }
-      - { name: beach, label: Beach access, type: boolean }
-      - { name: mountain, label: Mountain location, type: boolean }
-      - { name: hotTub, label: "Hot tub?", type: select, default: not-confirmed, options: { values: [yes, no, not-confirmed] } }
-      - { name: nearby, label: Nearby dog-friendly places, type: string, list: true }
-      - { name: houseRules, label: House rules about dogs, type: string, list: true }
-      - name: image
-        label: "Stock photo (leave empty: we do not show stock pictures of real properties)"
-        type: select
-        required: false
-        options:
-          values: [guide-ga-cabins, guide-ca-beach, guide-fenced-yard, guide-two-dogs, guide-large-dogs]
-      - { name: imageUpload, label: "Photo (upload ONLY with the owner's written permission; leave empty otherwise)", type: image }
-      - { name: photoPermission, label: "Do we have the owner's written permission to show this photo?", type: boolean }
-      - { name: sourceUrl, label: "Where the facts came from (listing link)", type: string }
-      - { name: lastVerified, label: "Date the host confirmed the details", type: date }
-      - { name: affiliateId, label: "Booking link (the 'id' of a link in Affiliate links)", type: string }
-
-  # ------------------------------------------------------------ Dog rules (parks, trails, beaches)
-  - name: places
-    label: Dog rules (places)
-    type: collection
-    path: content/places
-    format: yaml
-    filename: "{primary}.yml"
-    view:
-      fields: [name, status, state, kind, lastChecked]
-      primary: name
-    fields:
-      - name: status
-        label: Status
-        type: select
-        required: true
-        description: "Only 'Verified' places appear on the website, and only if the official source address, the exact quote and the date checked below are all filled in. Verified only after someone read the official page and pasted the exact sentence below."
-        options:
-          values:
-            - { value: unverified, label: "Unverified (not on the website)" }
-            - { value: verified, label: "Verified (on the website once the source, quote and date are filled in)" }
-      - { name: name, label: Name of the park, trail or beach, type: string, required: true }
-      - name: state
-        label: State
-        type: select
-        required: true
-        options:
-          values: [georgia, california]
-      - { name: managedBy, label: "Who manages it (e.g. Georgia State Parks, National Park Service, Santa Barbara County Parks)", type: string, required: true }
-      - name: kind
-        label: Kind of place
-        type: select
-        required: true
-        options:
-          values: [state-park, national-park, national-forest, county-park, city-park, beach, trail]
-      - { name: nearTown, label: "Nearest town of ours (web-address name, e.g. santa-barbara; leave empty if none)", type: string }
-      - name: dogsAllowed
-        label: "Where dogs are allowed (one row per area)"
-        type: object
-        list: true
-        fields:
-          - { name: area, label: "Area (e.g. Rim trails, Beach east of the creek)", type: string, required: true }
-          - name: rule
-            label: Rule
-            type: select
-            required: true
-            options:
-              values:
-                - { value: "yes", label: "Dogs allowed" }
-                - { value: leash, label: "Allowed on a leash" }
-                - { value: "no", label: "Not allowed" }
-                - { value: some, label: "Allowed in some places" }
-          - { name: note, label: "Note (optional)", type: text }
-      - { name: leash, label: "Leash rule (e.g. 6 ft or shorter)", type: text }
-      - { name: fees, label: "Fees (exact amounts, or 'none stated')", type: text }
-      - { name: exclusions, label: "Where dogs are NOT allowed", type: string, list: true }
-      - { name: seasonal, label: "Seasonal rules and closures (e.g. nesting season dates)", type: text }
-      - { name: nearbyAlternative, label: "Nearby alternative if dogs are not allowed", type: text }
-      - { name: conflictNote, label: "Where sources disagree (say which sources and how)", type: text }
-      - { name: sourceUrl, label: "Official page (starts with https://)", type: string }
-      - { name: sourceQuote, label: "The exact sentence from the official page (copy and paste, do not rewrite)", type: text }
-      - { name: sourcePageDate, label: "The date the official page itself shows (if any)", type: string }
-      - { name: lastChecked, label: "Date you read the official page (YYYY-MM-DD)", type: date }
-      - { name: verifiedBy, label: "Your name", type: string }
-      - { name: claimFrom, label: "Article this claim first came from (web-address name; leave as is)", type: string }
 
   # ---------------------------------------------------------- Affiliate links
   - name: affiliates
@@ -391,21 +226,33 @@ content:
       delete: false
     fields:
       - name: links
-        label: "Links (a Book or Buy button shows only for links marked Approved)"
+        label: "Links (a Buy button shows only for links marked Approved)"
         type: object
         list: true
         fields:
-          - { name: id, label: "Short name (lowercase letters, numbers and hyphens). For a product, use the product's id exactly (see docs/affiliate-link-worksheet.csv), for example kurgo-heather-hammock", type: string, required: true }
-          - { name: network, label: "Company (e.g. Vrbo, Amazon Associates)", type: string, required: true }
-          - { name: url, label: "Your affiliate link (starts with https://)", type: string, required: true }
-          - { name: approved, label: "Approved? (tick only after the company approved you)", type: boolean }
-          - name: kind
-            label: Used for
-            type: select
-            options:
-              values:
-                - { value: stay, label: "A place to stay" }
-                - { value: product, label: "A product" }
+          - {
+              name: id,
+              label: "Short name (lowercase letters, numbers and hyphens). For a product, use the product's id exactly for example kurgo-heather-hammock",
+              type: string,
+              required: true,
+            }
+          - {
+              name: network,
+              label: "Company (e.g. Amazon Associates)",
+              type: string,
+              required: true,
+            }
+          - {
+              name: url,
+              label: "Your affiliate link (starts with https://)",
+              type: string,
+              required: true,
+            }
+          - {
+              name: approved,
+              label: "Approved? (tick only after the company approved you)",
+              type: boolean,
+            }
           - { name: notes, label: Notes to yourself, type: text }
 
   # ------------------------------------------------------------ Products (gear)
@@ -423,11 +270,26 @@ content:
         type: object
         list: true
         fields:
-          - { name: id, label: "Short name (lowercase letters, numbers and hyphens). Never change it once a guide or an affiliate link uses it", type: string, required: true }
+          - {
+              name: id,
+              label: "Short name (lowercase letters, numbers and hyphens). Never change it once a guide or an affiliate link uses it",
+              type: string,
+              required: true,
+            }
           - { name: name, label: Product name, type: string, required: true }
           - { name: brand, label: Brand, type: string, required: true }
-          - { name: aliases, label: "Other exact spellings of the name used in guide text, one per line (for example iCrate). Each links to the affiliate link while the product earns. Never a brand alone or one common word", type: string, list: true }
-          - { name: cardSpecs, label: "Spec card chips: up to three short facts (28 characters each), taken from this product's own record", type: string, list: true }
+          - {
+              name: aliases,
+              label: "Other exact spellings of the name used in guide text, one per line (for example iCrate). Each links to the affiliate link while the product earns. Never a brand alone or one common word",
+              type: string,
+              list: true,
+            }
+          - {
+              name: cardSpecs,
+              label: "Spec card chips: up to three short facts (28 characters each), taken from this product's own record",
+              type: string,
+              list: true,
+            }
           - name: categories
             label: "Categories (the first one is the main one; add at most one more as a cross-listing)"
             type: select
@@ -445,23 +307,59 @@ content:
                 - { value: trail-and-hiking, label: "Trail and hiking gear" }
                 - { value: cold-weather, label: "Cold-weather gear" }
                 - { value: safety-id-first-aid, label: "ID, GPS and first aid" }
-                - { value: rental-cleanup, label: "Rental cleanup and protection" }
+                - { value: cleanup-and-protection, label: "Cleanup and protection" }
           - { name: summary, label: "What it is, in plain words", type: text, required: true }
-          - { name: keySpecs, label: "What the maker states (one fact per line, taken from the source below)", type: string, list: true }
+          - {
+              name: keySpecs,
+              label: "What the maker states (one fact per line, taken from the source below)",
+              type: string,
+              list: true,
+            }
           - name: specSource
             label: Where the facts came from
             type: object
             fields:
               - { name: title, label: Page title, type: string, required: true }
-              - { name: url, label: "Page address (starts with https://)", type: string, required: true }
+              - {
+                  name: url,
+                  label: "Page address (starts with https://)",
+                  type: string,
+                  required: true,
+                }
               - { name: publisher, label: Publisher, type: string, required: true }
-              - { name: accessedOn, label: "Date you read it (YYYY-MM-DD)", type: string, required: true }
-          - { name: manufacturerUrl, label: "Maker's page for this product (plain link, starts with https://)", type: string }
-          - { name: retailerUrl, label: "A plain retailer page (not an affiliate link). Used only if there is no maker page", type: string }
+              - {
+                  name: accessedOn,
+                  label: "Date you read it (YYYY-MM-DD)",
+                  type: string,
+                  required: true,
+                }
+          - {
+              name: manufacturerUrl,
+              label: "Maker's page for this product (plain link, starts with https://)",
+              type: string,
+            }
+          - {
+              name: retailerUrl,
+              label: "A plain retailer page (not an affiliate link). Used only if there is no maker page",
+              type: string,
+            }
           - { name: retailerName, label: "Retailer name (for the button)", type: string }
-          - { name: lastVerified, label: "Date you last re-read the source page (YYYY-MM-DD)", type: string, required: true }
-          - { name: active, label: "Show this product? (untick to hide it everywhere but keep the record)", type: boolean }
-          - { name: imageSource, label: "Photo credit or source. Leave EMPTY (no photo) unless you have written permission or took the photo yourself", type: string }
+          - {
+              name: lastVerified,
+              label: "Date you last re-read the source page (YYYY-MM-DD)",
+              type: string,
+              required: true,
+            }
+          - {
+              name: active,
+              label: "Show this product? (untick to hide it everywhere but keep the record)",
+              type: boolean,
+            }
+          - {
+              name: imageSource,
+              label: "Photo credit or source. Leave EMPTY (no photo) unless you have written permission or took the photo yourself",
+              type: string,
+            }
           - name: imageRights
             label: "Photo rights. 'none' = the card has no photo"
             type: select
@@ -470,20 +368,37 @@ content:
                 - { value: none, label: "None (no photo)" }
                 - { value: permitted, label: "Written permission from the maker or photographer" }
                 - { value: own, label: "My own photo" }
-          - { name: affiliateProgram, label: "Affiliate program: the NAME of an entry in Affiliate links. Leave EMPTY unless that entry exists and is approved. Never paste a link or an ID here", type: string }
-          - { name: affiliateTrackingId, label: "Tracked link: the NAME of the entry in Affiliate links that holds this product's link. Leave EMPTY until approved. Change the link itself in Affiliate links, never here", type: string }
+          - {
+              name: affiliateProgram,
+              label: "Affiliate program: the NAME of an entry in Affiliate links. Leave EMPTY unless that entry exists and is approved. Never paste a link or an ID here",
+              type: string,
+            }
+          - {
+              name: affiliateTrackingId,
+              label: "Tracked link: the NAME of the entry in Affiliate links that holds this product's link. Leave EMPTY until approved. Change the link itself in Affiliate links, never here",
+              type: string,
+            }
           - name: alternativeRetailer
             label: "Another seller (plain link, not an affiliate link). Optional"
             type: object
             fields:
               - { name: name, label: Seller name, type: string }
               - { name: url, label: "Page address (starts with https://)", type: string }
-          - { name: relatedGuides, label: "Guides worth reading with it (guide web address, for example dog-friendly-cabin-packing-list)", type: string, list: true }
-          - { name: manufacturerClaimsVsIndependentTesting, label: "Maker's claims versus independent testing. Write 'none cited' unless a named independent tester is cited with its source", type: text }
+          - {
+              name: relatedGuides,
+              label: "Guides worth reading with it (guide web address, for example dog-friendly-cabin-packing-list)",
+              type: string,
+              list: true,
+            }
+          - {
+              name: manufacturerClaimsVsIndependentTesting,
+              label: "Maker's claims versus independent testing. Write 'none cited' unless a named independent tester is cited with its source",
+              type: text,
+            }
 
   # ------------------------------------------------------------ Packing planner
   # The dog packing list planner at /tools/packing-list. Edit content/packing.yml directly (the verified route) or through this
-  # form (the form is checked by tests but has not been walked through in the live Pages CMS: see docs/PACKING_PLANNER_QA.md).
+  # form (the form is checked by tests but has not been walked through in the live Pages CMS).
   # Product ids are typed, not picked from a list (Pages CMS can only reference collections, not a file); the build checks every id.
   - name: packing
     label: Packing planner (dog packing list)
@@ -499,10 +414,25 @@ content:
         type: object
         list: true
         fields:
-          - { name: id, label: "Short id (lowercase letters, numbers and hyphens). Never change it once an item uses it", type: string, required: true }
+          - {
+              name: id,
+              label: "Short id (lowercase letters, numbers and hyphens). Never change it once an item uses it",
+              type: string,
+              required: true,
+            }
           - { name: label, label: "Card title", type: string, required: true }
-          - { name: short, label: "Short name used in sentences (for example cabin, road trip)", type: string, required: true }
-          - { name: listTitle, label: "Heading of the finished list (for example Your cabin getaway packing list)", type: string, required: true }
+          - {
+              name: short,
+              label: "Short name used in sentences (for example cabin, road trip)",
+              type: string,
+              required: true,
+            }
+          - {
+              name: listTitle,
+              label: "Heading of the finished list (for example Your cabin getaway packing list)",
+              type: string,
+              required: true,
+            }
           - { name: hint, label: "One short line under the title", type: string }
           - name: icon
             label: Icon
@@ -545,7 +475,12 @@ content:
         type: object
         list: true
         fields:
-          - { name: id, label: "Short id. Never change it once an item uses it", type: string, required: true }
+          - {
+              name: id,
+              label: "Short id. Never change it once an item uses it",
+              type: string,
+              required: true,
+            }
           - { name: label, label: "What the visitor sees", type: string, required: true }
           - { name: hint, label: "Optional small hint", type: string }
       - name: categories
@@ -553,7 +488,12 @@ content:
         type: object
         list: true
         fields:
-          - { name: id, label: "Short id. Never change it once an item uses it", type: string, required: true }
+          - {
+              name: id,
+              label: "Short id. Never change it once an item uses it",
+              type: string,
+              required: true,
+            }
           - { name: label, label: "Heading", type: string, required: true }
           - { name: order, label: "Order (smaller comes first)", type: number, required: true }
       - name: items
@@ -561,7 +501,12 @@ content:
         type: object
         list: true
         fields:
-          - { name: id, label: "Short id (lowercase letters, numbers and hyphens). Never change it once someone may have saved a list", type: string, required: true }
+          - {
+              name: id,
+              label: "Short id (lowercase letters, numbers and hyphens). Never change it once someone may have saved a list",
+              type: string,
+              required: true,
+            }
           - { name: name, label: Item name, type: string, required: true }
           - name: category
             label: Category
@@ -577,8 +522,18 @@ content:
                 - { value: health, label: "Health and medication" }
                 - { value: rental, label: "Cabin and rental essentials" }
           - { name: order, label: "Order inside its category (smaller comes first)", type: number }
-          - { name: what, label: "What is this for? (one short sentence shown under the name)", type: text, required: true }
-          - { name: why, label: "Why bring this? (shown when the visitor opens 'Why bring this?')", type: text, required: true }
+          - {
+              name: what,
+              label: "What is this for? (one short sentence shown under the name)",
+              type: text,
+              required: true,
+            }
+          - {
+              name: why,
+              label: "Why bring this? (shown when the visitor opens 'Why bring this?')",
+              type: text,
+              required: true,
+            }
           - { name: tip, label: "Extra tip (optional)", type: text }
           - name: appears
             label: "When should this appear?"
@@ -588,7 +543,10 @@ content:
               values:
                 - { value: essential, label: "Always: on every list" }
                 - { value: conditional, label: "Only when the rule below matches the trip" }
-                - { value: optional, label: "Offered as an idea, or as 'Consider' when the rule below matches" }
+                - {
+                    value: optional,
+                    label: "Offered as an idea, or as 'Consider' when the rule below matches",
+                  }
           - name: when
             label: "The rule (leave empty for 'Always'). Every part you fill in must match"
             type: object
@@ -619,8 +577,48 @@ content:
                     - { value: no-fence, label: "No securely fenced yard" }
                     - { value: escape-risk, label: "A dog who may slip away" }
                     - { value: medication, label: "Medication or special supplies" }
-              - { name: allConditions, label: "When all of these are ticked", type: select, list: true, options: { values: [{ value: driving, label: "We're driving" }, { value: outdoors, label: "Hiking or outdoors" }, { value: water, label: "Beach, lake or swimming" }, { value: cold, label: "Cold or snowy weather" }, { value: hot, label: "Hot weather" }, { value: senior, label: "Older dog or mobility considerations" }, { value: no-fence, label: "No securely fenced yard" }, { value: escape-risk, label: "A dog who may slip away" }, { value: medication, label: "Medication or special supplies" }] } }
-              - { name: unlessConditions, label: "Not when any of these is ticked", type: select, list: true, options: { values: [{ value: driving, label: "We're driving" }, { value: outdoors, label: "Hiking or outdoors" }, { value: water, label: "Beach, lake or swimming" }, { value: cold, label: "Cold or snowy weather" }, { value: hot, label: "Hot weather" }, { value: senior, label: "Older dog or mobility considerations" }, { value: no-fence, label: "No securely fenced yard" }, { value: escape-risk, label: "A dog who may slip away" }, { value: medication, label: "Medication or special supplies" }] } }
+              - {
+                  name: allConditions,
+                  label: "When all of these are ticked",
+                  type: select,
+                  list: true,
+                  options:
+                    {
+                      values:
+                        [
+                          { value: driving, label: "We're driving" },
+                          { value: outdoors, label: "Hiking or outdoors" },
+                          { value: water, label: "Beach, lake or swimming" },
+                          { value: cold, label: "Cold or snowy weather" },
+                          { value: hot, label: "Hot weather" },
+                          { value: senior, label: "Older dog or mobility considerations" },
+                          { value: no-fence, label: "No securely fenced yard" },
+                          { value: escape-risk, label: "A dog who may slip away" },
+                          { value: medication, label: "Medication or special supplies" },
+                        ],
+                    },
+                }
+              - {
+                  name: unlessConditions,
+                  label: "Not when any of these is ticked",
+                  type: select,
+                  list: true,
+                  options:
+                    {
+                      values:
+                        [
+                          { value: driving, label: "We're driving" },
+                          { value: outdoors, label: "Hiking or outdoors" },
+                          { value: water, label: "Beach, lake or swimming" },
+                          { value: cold, label: "Cold or snowy weather" },
+                          { value: hot, label: "Hot weather" },
+                          { value: senior, label: "Older dog or mobility considerations" },
+                          { value: no-fence, label: "No securely fenced yard" },
+                          { value: escape-risk, label: "A dog who may slip away" },
+                          { value: medication, label: "Medication or special supplies" },
+                        ],
+                    },
+                }
               - { name: minDays, label: "At least this many days", type: number }
               - { name: maxDays, label: "At most this many days", type: number }
           - name: quantity
@@ -638,15 +636,33 @@ content:
                     - { value: perDay, label: "Per day" }
                     - { value: perDogPerDay, label: "Per dog per day" }
                     - { value: dogDays, label: "Dogs x days (for food)" }
-                    - { value: meals, label: "Meal portions if the visitor gives meals per day, else dog-days (for food)" }
-                    - { value: text, label: "A short sentence instead of a number (for medication or water: never a dose or volume)" }
+                    - {
+                        value: meals,
+                        label: "Meal portions if the visitor gives meals per day, else dog-days (for food)",
+                      }
+                    - {
+                        value: text,
+                        label: "A short sentence instead of a number (for medication or water: never a dose or volume)",
+                      }
               - { name: count, label: "The number (per dog, per day, or fixed)", type: number }
-              - { name: unit, label: "What is counted, singular (for example bed, bag, bowl set)", type: string }
+              - {
+                  name: unit,
+                  label: "What is counted, singular (for example bed, bag, bowl set)",
+                  type: string,
+                }
               - { name: min, label: "Never fewer than (optional)", type: number }
               - { name: max, label: "Never more than (optional)", type: number }
               - { name: text, label: "Sentence (only for the 'sentence' choice)", type: string }
-              - { name: note, label: "Short note after the number (for example plus a spare)", type: string }
-          - { name: shopFor, label: "What to call the product in 'Need a ...?' (for example travel bowl). Required when products are listed", type: string }
+              - {
+                  name: note,
+                  label: "Short note after the number (for example plus a spare)",
+                  type: string,
+                }
+          - {
+              name: shopFor,
+              label: "What to call the product in 'Need a ...?' (for example travel bowl). Required when products are listed",
+              type: string,
+            }
           - name: gearCategory
             label: "Gear category to point to when no product is listed (needs 'What to call the product')"
             type: select
@@ -662,19 +678,81 @@ content:
                 - { value: trail-and-hiking, label: Trail and hiking }
                 - { value: cold-weather, label: Cold weather }
                 - { value: safety-id-first-aid, label: Safety, ID and first aid }
-                - { value: rental-cleanup, label: Rental cleanup }
+                - { value: cleanup-and-protection, label: Cleanup and protection }
           - name: products
             label: "Related Gear products (at most 4; the first is the main suggestion, a second needs 'How it differs')"
             type: object
             list: true
             fields:
-              - { name: id, label: "Product id exactly as written in Products (typed, not picked). The build stops if it is unknown or switched off", type: string, required: true }
-              - { name: because, label: "How it differs from the first (required for every product after the first)", type: string }
-              - { name: caution, label: "The one thing to check before buying (size range, a limit, a maker warning). Never a claim about 'senior' or 'large' dogs unless the maker says it", type: text, required: true }
-              - { name: benefit, label: "One sentence replacing the product's own summary (optional)", type: text }
-              - { name: onlyConditions, label: "Show only when one of these is ticked (optional)", type: select, list: true, options: { values: [{ value: driving, label: "We're driving" }, { value: outdoors, label: "Hiking or outdoors" }, { value: water, label: "Beach, lake or swimming" }, { value: cold, label: "Cold or snowy weather" }, { value: hot, label: "Hot weather" }, { value: senior, label: "Older dog or mobility considerations" }, { value: no-fence, label: "No securely fenced yard" }, { value: escape-risk, label: "A dog who may slip away" }, { value: medication, label: "Medication or special supplies" }] } }
-              - { name: unlessConditions, label: "Hide when one of these is ticked (optional)", type: select, list: true, options: { values: [{ value: driving, label: "We're driving" }, { value: outdoors, label: "Hiking or outdoors" }, { value: water, label: "Beach, lake or swimming" }, { value: cold, label: "Cold or snowy weather" }, { value: hot, label: "Hot weather" }, { value: senior, label: "Older dog or mobility considerations" }, { value: no-fence, label: "No securely fenced yard" }, { value: escape-risk, label: "A dog who may slip away" }, { value: medication, label: "Medication or special supplies" }] } }
-          - { name: active, label: "Show this item? (untick to hide it everywhere but keep the record)", type: boolean }
+              - {
+                  name: id,
+                  label: "Product id exactly as written in Products (typed, not picked). The build stops if it is unknown or switched off",
+                  type: string,
+                  required: true,
+                }
+              - {
+                  name: because,
+                  label: "How it differs from the first (required for every product after the first)",
+                  type: string,
+                }
+              - {
+                  name: caution,
+                  label: "The one thing to check before buying (size range, a limit, a maker warning). Never a claim about 'senior' or 'large' dogs unless the maker says it",
+                  type: text,
+                  required: true,
+                }
+              - {
+                  name: benefit,
+                  label: "One sentence replacing the product's own summary (optional)",
+                  type: text,
+                }
+              - {
+                  name: onlyConditions,
+                  label: "Show only when one of these is ticked (optional)",
+                  type: select,
+                  list: true,
+                  options:
+                    {
+                      values:
+                        [
+                          { value: driving, label: "We're driving" },
+                          { value: outdoors, label: "Hiking or outdoors" },
+                          { value: water, label: "Beach, lake or swimming" },
+                          { value: cold, label: "Cold or snowy weather" },
+                          { value: hot, label: "Hot weather" },
+                          { value: senior, label: "Older dog or mobility considerations" },
+                          { value: no-fence, label: "No securely fenced yard" },
+                          { value: escape-risk, label: "A dog who may slip away" },
+                          { value: medication, label: "Medication or special supplies" },
+                        ],
+                    },
+                }
+              - {
+                  name: unlessConditions,
+                  label: "Hide when one of these is ticked (optional)",
+                  type: select,
+                  list: true,
+                  options:
+                    {
+                      values:
+                        [
+                          { value: driving, label: "We're driving" },
+                          { value: outdoors, label: "Hiking or outdoors" },
+                          { value: water, label: "Beach, lake or swimming" },
+                          { value: cold, label: "Cold or snowy weather" },
+                          { value: hot, label: "Hot weather" },
+                          { value: senior, label: "Older dog or mobility considerations" },
+                          { value: no-fence, label: "No securely fenced yard" },
+                          { value: escape-risk, label: "A dog who may slip away" },
+                          { value: medication, label: "Medication or special supplies" },
+                        ],
+                    },
+                }
+          - {
+              name: active,
+              label: "Show this item? (untick to hide it everywhere but keep the record)",
+              type: boolean,
+            }
 
   # ------------------------------------------------------------ Adventure Passport (free adventures)
   - name: adventures
@@ -688,34 +766,143 @@ content:
       primary: title
       sort: [title]
     fields:
-      - { name: id, label: Adventure ID, type: string, required: true, readonly: true, description: "A permanent code like adv-k3m9x2. It never changes, even if you rename the adventure. Do not edit it." }
+      - {
+          name: id,
+          label: Adventure ID,
+          type: string,
+          required: true,
+          readonly: true,
+          description: "A permanent code like adv-k3m9x2. It never changes, even if you rename the adventure. Do not edit it.",
+        }
       - { name: title, label: Title, type: string, required: true }
-      - { name: clue, label: "Mystery clue shown before the reveal (must not contain the title)", type: string, required: true }
+      - {
+          name: clue,
+          label: "Mystery clue shown before the reveal (must not contain the title)",
+          type: string,
+          required: true,
+        }
       - { name: description, label: Description, type: text, required: true }
       - { name: instructions, label: "Steps (2 to 8)", type: string, list: true, required: true }
-      - { name: twist, label: "The twist (what makes this one different)", type: text, required: true }
-      - { name: prep, label: Preparation, type: select, required: true, options: { values: [none, light, some] } }
+      - {
+          name: twist,
+          label: "The twist (what makes this one different)",
+          type: text,
+          required: true,
+        }
+      - {
+          name: prep,
+          label: Preparation,
+          type: select,
+          required: true,
+          options: { values: [none, light, some] },
+        }
       - { name: supplies, label: Supplies, type: string, list: true }
       - { name: minutesMin, label: Minimum minutes, type: number, required: true }
       - { name: minutesMax, label: Maximum minutes, type: number, required: true }
       - { name: costMin, label: Minimum cost (dollars), type: number, required: true }
       - { name: costMax, label: Maximum cost (dollars), type: number, required: true }
-      - { name: setting, label: Setting, type: select, required: true, options: { values: [indoor, outdoor, either] } }
-      - { name: environments, label: Places it works, type: select, list: true, required: true, options: { values: [apartment, house, city, countryside, beach, mountains, road-trip] } }
-      - { name: lifeStages, label: Life stages, type: select, list: true, required: true, options: { values: [puppy, adult, senior] } }
-      - { name: energy, label: Energy, type: select, required: true, options: { values: [gentle, moderate, lively] } }
-      - { name: mobilityFriendly, label: "Can be done at a very gentle pace or in place", type: boolean }
-      - { name: crowd, label: Other people around, type: select, required: true, options: { values: [none, some, busy] } }
+      - {
+          name: setting,
+          label: Setting,
+          type: select,
+          required: true,
+          options: { values: [indoor, outdoor, either] },
+        }
+      - {
+          name: environments,
+          label: Places it works,
+          type: select,
+          list: true,
+          required: true,
+          options: { values: [apartment, house, city, countryside, beach, mountains, road-trip] },
+        }
+      - {
+          name: lifeStages,
+          label: Life stages,
+          type: select,
+          list: true,
+          required: true,
+          options: { values: [puppy, adult, senior] },
+        }
+      - {
+          name: energy,
+          label: Energy,
+          type: select,
+          required: true,
+          options: { values: [gentle, moderate, lively] },
+        }
+      - {
+          name: mobilityFriendly,
+          label: "Can be done at a very gentle pace or in place",
+          type: boolean,
+        }
+      - {
+          name: crowd,
+          label: Other people around,
+          type: select,
+          required: true,
+          options: { values: [none, some, busy] },
+        }
       - { name: otherDogs, label: Other dogs likely nearby, type: boolean }
-      - { name: seasons, label: "Seasons (leave empty for any season)", type: select, list: true, options: { values: [spring, summer, autumn, winter] } }
-      - { name: safety, label: "Dog-welfare safety lines (at least one; no medical claims)", type: string, list: true, required: true }
+      - {
+          name: seasons,
+          label: "Seasons (leave empty for any season)",
+          type: select,
+          list: true,
+          options: { values: [spring, summer, autumn, winter] },
+        }
+      - {
+          name: safety,
+          label: "Dog-welfare safety lines (at least one; no medical claims)",
+          type: string,
+          list: true,
+          required: true,
+        }
       - { name: variations, label: Variations, type: string, list: true }
       - { name: memoryPrompt, label: "Memory prompt (one line)", type: string, required: true }
-      - { name: keepsake, label: Keepsake, type: select, required: true, options: { values: [postcard, magazine-cover, then-and-now, milestone-card, certificate, seasonal-recap, collage, collection-complete] } }
-      - { name: collections, label: "Collections (use the collection codes)", type: string, list: true, required: true }
+      - {
+          name: keepsake,
+          label: Keepsake,
+          type: select,
+          required: true,
+          options:
+            {
+              values:
+                [
+                  postcard,
+                  magazine-cover,
+                  then-and-now,
+                  milestone-card,
+                  certificate,
+                  seasonal-recap,
+                  collage,
+                  collection-complete,
+                ],
+            },
+        }
+      - {
+          name: collections,
+          label: "Collections (use the collection codes)",
+          type: string,
+          list: true,
+          required: true,
+        }
       - { name: stamps, label: "Stamps (use the stamp codes)", type: string, list: true }
-      - { name: access, label: Access, type: select, required: true, description: "Only 'free' belongs in this public repository.", options: { values: [free, premium] } }
-      - { name: status, label: Status, type: select, required: true, options: { values: [draft, published] } }
+      - {
+          name: access,
+          label: Access,
+          type: select,
+          required: true,
+          description: "Only 'free' belongs in this public repository.",
+          options: { values: [free, premium] },
+        }
+      - {
+          name: status,
+          label: Status,
+          type: select,
+          required: true,
+          options: { values: [draft, published] },
+        }
       - { name: relatedGuides, label: Related guide codes, type: string, list: true }
 
   - name: collections
@@ -732,12 +919,25 @@ content:
         type: object
         list: true
         fields:
-          - { name: slug, label: Collection code, type: string, required: true, readonly: true, description: "Permanent code used by adventures. Do not edit it." }
+          - {
+              name: slug,
+              label: Collection code,
+              type: string,
+              required: true,
+              readonly: true,
+              description: "Permanent code used by adventures. Do not edit it.",
+            }
           - { name: title, label: Title, type: string, required: true }
           - { name: tagline, label: Tagline, type: string, required: true }
           - { name: description, label: Description, type: text, required: true }
           - { name: order, label: Order on the page, type: number, required: true }
-          - { name: accent, label: Accent colour, type: select, required: true, options: { values: [ink, poppy, ochre, sage, sky, plum] } }
+          - {
+              name: accent,
+              label: Accent colour,
+              type: select,
+              required: true,
+              options: { values: [ink, poppy, ochre, sage, sky, plum] },
+            }
           - { name: premiumOnly, label: "Filled by the premium library only", type: boolean }
 
   - name: stamps
@@ -754,7 +954,14 @@ content:
         type: object
         list: true
         fields:
-          - { name: slug, label: Stamp code, type: string, required: true, readonly: true, description: "Permanent code used by adventures. Do not edit it." }
+          - {
+              name: slug,
+              label: Stamp code,
+              type: string,
+              required: true,
+              readonly: true,
+              description: "Permanent code used by adventures. Do not edit it.",
+            }
           - { name: title, label: Title, type: string, required: true }
           - { name: blurb, label: Short blurb, type: string, required: true }
           - { name: rule, label: "How it is earned (plain words)", type: text, required: true }
@@ -773,10 +980,24 @@ content:
         type: object
         list: true
         fields:
-          - { name: threshold, label: "Adventures completed (leave empty for collection complete)", type: number }
-          - { name: kind, label: Kind, type: select, options: { values: [count, collection-complete] } }
+          - {
+              name: threshold,
+              label: "Adventures completed (leave empty for collection complete)",
+              type: number,
+            }
+          - {
+              name: kind,
+              label: Kind,
+              type: select,
+              options: { values: [count, collection-complete] },
+            }
           - { name: title, label: Title, type: string, required: true }
-          - { name: reward, label: "Keepsake reward (never withholds content)", type: text, required: true }
+          - {
+              name: reward,
+              label: "Keepsake reward (never withholds content)",
+              type: text,
+              required: true,
+            }
 
   # ------------------------------------------------------------ Business settings
   - name: settings
@@ -788,18 +1009,33 @@ content:
       create: false
       delete: false
     fields:
-      - { name: contactEmail, label: Business email address (shown on the Contact page), type: string }
-      - { name: siteUrl, label: "Website address, e.g. https://pawsandpassage.com (no slash at the end)", type: string }
-      - { name: ga4MeasurementId, label: "Google Analytics ID (looks like G-XXXXXXXXXX)", type: string }
-      - { name: amazonTrackingId, label: "Amazon Associates tracking ID (looks like yourname-20; Amazon links use it; leave empty to hide Amazon links)", type: string }
-      - { name: pinterestUrl, label: "Pinterest profile address (https://www.pinterest.com/yourname/; leave empty until the account is ready)", type: string }
-      - { name: stay22AccountId, label: "Stay22 account ID (from hub.stay22.com; leave empty until you have one)", type: string }
-      - { name: impactSiteVerification, label: "Impact (impact.com) site-verification value (from your own Impact account; leave empty if you have none)", type: string }
-      - name: stayDirectoryMode
-        label: "Which stays are listed (leave on 'Only stays with an approved affiliate link' unless docs/BUYER_AFFILIATE_TRANSITION.md says otherwise)"
-        type: select
-        default: affiliate-only
-        options:
-          values:
-            - { value: affiliate-only, label: "Only stays with an approved affiliate link (older mode: the directory empties if the seller links are removed)" }
-            - { value: public-sources, label: "Also stays with a plain public Vrbo or Airbnb source link (no commission)" }
+      - {
+          name: contactEmail,
+          label: Business email address (shown on the Contact page),
+          type: string,
+        }
+      - {
+          name: siteUrl,
+          label: "Website address, e.g. https://pawsandpassage.com (no slash at the end)",
+          type: string,
+        }
+      - {
+          name: ga4MeasurementId,
+          label: "Google Analytics ID (looks like G-XXXXXXXXXX)",
+          type: string,
+        }
+      - {
+          name: amazonTrackingId,
+          label: "Amazon Associates tracking ID (looks like yourname-20; Amazon links use it; leave empty to hide Amazon links)",
+          type: string,
+        }
+      - {
+          name: pinterestUrl,
+          label: "Pinterest profile address (https://www.pinterest.com/yourname/; leave empty until the account is ready)",
+          type: string,
+        }
+      - {
+          name: impactSiteVerification,
+          label: "Impact (impact.com) site-verification value (from your own Impact account; leave empty if you have none)",
+          type: string,
+        }

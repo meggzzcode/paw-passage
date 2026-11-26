@@ -4,7 +4,6 @@ seoTitle: "Dog Ramp for Car or SUV: Ramp vs Steps, Compared"
 seoDescription: "Dog ramp for car or SUV? Compare five PetSafe ramps and steps by maker weight rating and reach, measure your vehicle, and see what vets say."
 dek: "Most cars and SUVs suit a telescoping ramp; steps only suit a fixed door sill or hitch, so measure ground to floor first."
 category: Planning
-states: []
 status: published
 approvedBy: Paws & Passage Editors
 approvedOn: 2026-11-18
@@ -29,8 +28,6 @@ faqs:
   - q: Can I use a dog ramp on cabin or rental steps?
     a: None of the maker pages says it is meant for house steps, and a host may have rules about what goes on the porch. Ask the host first.
 relatedGuides:
-  - vacation-rental-with-a-senior-dog
-  - vacation-rentals-that-welcome-large-dogs
   - dog-car-safety-harness-and-crate-guide
   - cold-weather-dog-gear-for-winter-cabin-trips
   - protect-your-car-interior-from-a-dog-on-a-road-trip
@@ -41,9 +38,7 @@ relatedProducts:
   - petsafe-happy-ride-side-door-steps
   - petsafe-happy-ride-hitch-step
 relatedTools:
-  - checklist
   - packing-list
-  - will-my-dog-be-accepted
 sources:
   - title: Does Your Dog Need Dog Stairs or a Ramp?
     url: https://www.akc.org/expert-advice/health/general-health/dog-stairs-and-ramps/
@@ -198,7 +193,7 @@ All five are PetSafe, the only brand whose pages we read; the same measuring app
 
 A vehicle ramp solves the car. A cabin has its own problem: porch steps, an upstairs bedroom, a deck with no rail.
 
-- **Count and measure before you book.** Ask for photos of the route from the parking spot to the door, the number of steps and whether there is a rail. Our [senior dog rental guide](/guides/vacation-rental-with-a-senior-dog) has a longer checklist.
+- **Count and measure before you book.** Ask for photos of the route from the parking spot to the door, the number of steps and whether there is a rail.
 - **Ask the host first.** None of the five maker pages mentions house steps, and a host may have rules about what goes on a deck.
 - **Block stairs when you cannot watch.** VCA suggests preventing access to stairs with a baby gate when no one can supervise, and says better traction helps a dog move more confidently; Cornell suggests non-slip rugs.
 
@@ -213,4 +208,4 @@ Message to a host: "Hi [name], we are booking [dates] with one [size] dog who fi
 1. **A ramp, once you have two numbers:** ground-to-floor height and your dog's weight.
 2. **Nothing for the cabin stairs yet.** Get the host's answer first.
 3. **The restraint for the drive.** A ramp gets the dog in; a harness or crate keeps the dog safe on the road, covered in our [car safety guide](/guides/dog-car-safety-harness-and-crate-guide).
-4. **The trip lists.** Add the ramp and the host's stair answer to your [trip checklist](/tools/checklist) and [packing list](/tools/packing-list). More options are on our [ramps and steps gear page](/gear/ramps-and-steps).
+4. **The trip lists.** Add the ramp and the host's stair answer to your [packing list](/tools/packing-list). More options are on our [ramps and steps gear page](/gear/ramps-and-steps).

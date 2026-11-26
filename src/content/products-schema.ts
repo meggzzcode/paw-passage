@@ -14,7 +14,7 @@ export const gearCategorySlugs = [
   "trail-and-hiking",
   "cold-weather",
   "safety-id-first-aid",
-  "rental-cleanup",
+  "cleanup-and-protection",
 ] as const;
 export type GearCategorySlug = (typeof gearCategorySlugs)[number];
 
@@ -132,7 +132,7 @@ export type ProductRecord = z.infer<typeof productRecordSchema>;
 /** The affiliate entries and guide slugs a product list may point to. Used by the build loader and by the tests. */
 export function productReferenceProblems(
   list: ProductRecord[],
-  links: { id: string; kind?: string | undefined }[],
+  links: { id: string }[],
   guideSlugs?: Set<string>,
 ): string[] {
   const problems: string[] = [];
@@ -146,10 +146,6 @@ export function productReferenceProblems(
       const l = byId.get(ref);
       if (!l)
         problems.push(`product "${p.id}": ${field} "${ref}" does not exist in Affiliate links`);
-      else if (l.kind === "stay")
-        problems.push(
-          `product "${p.id}": ${field} "${ref}" is marked as a place to stay, not a product`,
-        );
     }
     if (guideSlugs)
       for (const g of p.relatedGuides)

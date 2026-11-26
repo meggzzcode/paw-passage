@@ -6,7 +6,7 @@ import { AppLink } from "./AppLink";
 import { Button } from "./Button";
 import { LogoMark } from "./Logo";
 import { MobileNav } from "./MobileNav";
-import { navItems, unlockCta } from "./nav-items";
+import { navItems, restoreLink, unlockCta } from "./nav-items";
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
@@ -33,6 +33,9 @@ export function SiteHeader() {
           ))}
         </nav>
         <div className="pp-header-actions">
+          <AppLink to={restoreLink.to} className="pp-restore-link">
+            {restoreLink.label}
+          </AppLink>
           <Button to={unlockCta.to} size="sm">
             <span className="pp-cta-long">{unlockCta.label}</span>
             <span className="pp-cta-short" aria-hidden="true">

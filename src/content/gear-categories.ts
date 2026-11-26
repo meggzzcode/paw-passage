@@ -1,4 +1,4 @@
-// Categories for the /gear hub, decided in docs/GEAR-TAXONOMY.md: a category is the JOB a product does. Trips and dog
+// Categories for the /gear hub: a category is the JOB a product does. Trips and dog
 // types are "shop by" shortcuts in gear-hub.ts, not categories. Copy is descriptive only: no prices, ratings or "tested"
 // claims, and no suitability claim the makers do not state. Which products belong to a category is set in
 // content/products.yml (categories: the first entry is the primary category, an optional second is a cross-listing).
@@ -23,8 +23,6 @@ export interface GearCategory {
   safetyNote?: string;
   /** Existing guides worth reading first (shown only if public). */
   guideSlugs?: string[];
-  /** An existing /dogs/<slug> page for readers with this kind of dog. */
-  dogTypeSlug?: string;
 }
 
 export const gearCategories: GearCategory[] = [
@@ -45,7 +43,6 @@ export const gearCategories: GearCategory[] = [
       "A barrier or a booster is not a crash-tested restraint on its own, and none of these pages promises a dog will be unharmed in a crash.",
     ],
     guideSlugs: ["dog-car-safety-harness-and-crate-guide", "two-large-dogs-in-one-car"],
-    dogTypeSlug: "big-dogs",
   },
   {
     slug: "car-interior",
@@ -79,18 +76,17 @@ export const gearCategories: GearCategory[] = [
       "Check the maker's listed length or step heights against your vehicle, the weight it states it supports, and the ramp's own weight.",
       "None of these pages gives vehicle height guidance, and a ramp does not teach a dog to use it.",
     ],
-    guideSlugs: ["dog-ramp-or-steps-for-the-car-and-cabin", "vacation-rental-with-a-senior-dog"],
-    dogTypeSlug: "senior-dogs",
+    guideSlugs: ["dog-ramp-or-steps-for-the-car-and-cabin"],
   },
   {
     slug: "feeding-and-hydration",
     name: "Bowls, bottles and food storage",
-    tagline: "Eating and drinking on the road and in the rental.",
+    tagline: "Eating and drinking on the road and at the campsite or cabin.",
     metaTitle: "Dog Travel Bowls, Bottles and Food Storage",
     metaDescription:
-      "Collapsible dog bowls, water bottles and food containers for the car, trail and rental, with the capacities makers list and what we could not confirm.",
+      "Collapsible dog bowls, water bottles and food containers for the car, trail and cabin, with the capacities makers list and what we could not confirm.",
     intro:
-      "Keep your dog fed and watered on the road and in the rental, with collapsible bowls, bottles and food containers. Capacities are the sizes the maker lists, and some pages list none.",
+      "Keep your dog fed and watered on the road and at the cabin, with collapsible bowls, bottles and food containers. Capacities are the sizes the maker lists, and some pages list none.",
     howToChoose: [
       "Collapsible bowls and bottles suit the car and trail, and bins and carriers suit food. Most trips need one of each kind.",
       "Check the capacity the maker lists, the material and how it is washed; some bowls are top-rack dishwasher safe only.",
@@ -101,12 +97,12 @@ export const gearCategories: GearCategory[] = [
   {
     slug: "pens-and-gates",
     name: "Pens, fences and gates",
-    tagline: "Contain a dog in a rental with no fenced yard.",
-    metaTitle: "Dog Pens, Fences and Gates for Rentals",
+    tagline: "Contain a dog at a cabin or campsite with no fenced yard.",
+    metaTitle: "Dog Pens, Fences and Gates for Trips",
     metaDescription:
-      "Exercise pens, yard fences, doorway gates and folding crates for a rental with no fenced yard, with what each maker states and what we could not confirm.",
+      "Exercise pens, yard fences, doorway gates and folding crates for a stay with no fenced yard, with what each maker states and what we could not confirm.",
     intro:
-      "Give your dog a safe space in a rental with no fenced yard, with exercise pens, a yard fence, a doorway gate or a folding crate. Check the rental's own rules first, since some hosts limit what you can set up.",
+      "Give your dog a safe space where there is no fenced yard, with exercise pens, a yard fence, a doorway gate or a folding crate. Check the rules of wherever you are staying first, since some places limit what you can set up.",
     safetyNote:
       "Pens and gates differ in whether they stand alone, and a pet gate is held either by pressure or by hardware. None of these is a reliable barrier for a determined jumper or chewer, and the makers warn that a dog not trained to a pen may try to escape.",
     howToChoose: [
@@ -114,12 +110,7 @@ export const gearCategories: GearCategory[] = [
       "Check the height and panel count the maker lists, how it sets up, and whether a pet gate is held by pressure or by hardware.",
       "None of these is a reliable barrier for a determined jumper or chewer, and the makers warn a dog that is not trained to a pen may try to escape.",
     ],
-    guideSlugs: [
-      "portable-dog-fence-and-playpen-guide-for-rentals",
-      "vacation-rental-secure-fenced-yard",
-      "can-you-leave-a-dog-alone-in-a-vacation-rental",
-    ],
-    dogTypeSlug: "escape-artists",
+    guideSlugs: ["portable-dog-fence-and-playpen-guide-for-rentals"],
   },
   {
     slug: "comfort-and-cooling",
@@ -151,10 +142,7 @@ export const gearCategories: GearCategory[] = [
       "Check the maker's size chart, the handle for lifting a dog out of the water, and the maker's own warnings about supervision.",
       "A life jacket is a flotation aid, not a promise a dog will stay safe, and it does not replace watching the dog.",
     ],
-    guideSlugs: [
-      "dog-life-jacket-for-lakes-and-beaches",
-      "can-dogs-go-in-a-rental-pool-or-hot-tub",
-    ],
+    guideSlugs: ["dog-life-jacket-for-lakes-and-beaches"],
   },
   {
     slug: "trail-and-hiking",
@@ -186,10 +174,7 @@ export const gearCategories: GearCategory[] = [
       "Check the size chart, whether you want a layer, a vest with a harness or boots, and the care instructions.",
       "No page states an insulation rating or a temperature range, so these do not tell you how cold is too cold.",
     ],
-    guideSlugs: [
-      "cold-weather-dog-gear-for-winter-cabin-trips",
-      "christmas-week-in-a-cabin-with-a-dog",
-    ],
+    guideSlugs: ["cold-weather-dog-gear-for-winter-cabin-trips"],
   },
   {
     slug: "safety-id-first-aid",
@@ -205,35 +190,26 @@ export const gearCategories: GearCategory[] = [
       "Check what the maker says about subscription, coverage and battery, and whether the page gives a dog size range.",
       "A tracker does not stop a dog getting loose, and a kit is for a small injury, not a substitute for a vet.",
     ],
-    guideSlugs: [
-      "if-your-dog-gets-loose-on-a-trip",
-      "dog-travel-first-aid-kit-guide",
-      "new-years-eve-with-a-dog-in-a-vacation-rental",
-    ],
-    dogTypeSlug: "escape-artists",
+    guideSlugs: ["if-your-dog-gets-loose-on-a-trip", "dog-travel-first-aid-kit-guide"],
   },
   {
-    slug: "rental-cleanup",
-    name: "Rental cleanup and protection",
+    slug: "cleanup-and-protection",
+    name: "Cleanup and protection",
     tagline: "Towels, mats, pads and wipes.",
-    metaTitle: "Dog Towels, Mats and Cleanup Gear for Rentals",
+    metaTitle: "Dog Towels, Mats and Cleanup Gear",
     metaDescription:
-      "Towels, doormats, pads and wipes for keeping a rental clean after a dog, with the sizes and care notes each maker lists and what we could not confirm.",
+      "Towels, doormats, pads and wipes to keep a car or cabin clean after a dog, with the sizes and care notes each maker lists and what we could not confirm.",
     intro:
-      "Keep floors and furniture clean in a rental with a drying towel, a doormat, washable pads and wipes. Check the host's rules, since some do not allow dogs on furniture, with or without a cover.",
+      "Keep floors, seats and furniture clean after a muddy or wet adventure with a drying towel, a doormat, washable pads and wipes. Check the rules of wherever you are staying, since some do not allow dogs on furniture, with or without a cover.",
     howToChoose: [
       "Best for a stay where a muddy or wet dog could mark floors or furniture. Pick by the size the maker lists.",
       "Check the listed dimensions, whether it can be machine washed, and whether the page states absorbency or a warranty.",
-      "Protection is not a guarantee against a damage charge, and it does not replace the host's pet rules.",
-    ],
-    guideSlugs: [
-      "airbnb-pet-damage-charge-after-checkout",
-      "what-a-dog-really-costs-on-a-vacation-rental",
+      "Protection is not a guarantee against damage, and it does not replace the rules of wherever you are staying.",
     ],
   },
 ];
 
-/** Old category addresses and where each now points (docs/GEAR-TAXONOMY.md, "Old URL handling"). Used for redirects. */
+/** Old category addresses and where each now points. Used for redirects. */
 export const legacyCategorySlugs: Record<string, GearCategorySlug> = {
   "road-trips": "car-safety",
   "cabin-vacations": "pens-and-gates",
@@ -244,7 +220,8 @@ export const legacyCategorySlugs: Record<string, GearCategorySlug> = {
   "travel-comfort": "comfort-and-cooling",
   "winter-travel": "cold-weather",
   "outdoor-adventures": "trail-and-hiking",
-  "cleaning-and-rental-protection": "rental-cleanup",
+  "cleaning-and-rental-protection": "cleanup-and-protection",
+  "rental-cleanup": "cleanup-and-protection",
 };
 
 export function getGearCategory(slug: string): GearCategory | undefined {

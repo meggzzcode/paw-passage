@@ -2,23 +2,14 @@
   command = "npm run build"
   publish = "dist"
   # Skip the build (and its credits) ONLY when a push changes nothing but docs/, .github/ or root-level Markdown files
-  # (README.md, HANDOVER.md ...). Published Markdown (content/guides/*.md, content/**/*.md, src/**/*.md) and every
+  # (README.md, COWORK-HANDOFF.md ...). Published Markdown (content/guides/*.md, content/**/*.md, src/**/*.md) and every
   # Pages CMS save MUST build, so never exclude "*.md" generally: ':(exclude,glob)*.md' matches the repo root only.
   # Exit 0 = skip. An empty CACHED_COMMIT_REF fails the -n test (exit 1), so the build runs. Regression test:
-  # node scripts/test-netlify-ignore.mjs (documented in docs/OPERATIONS-HANDBOOK.md, "Netlify build skipping").
+  # node scripts/test-netlify-ignore.mjs (run by CI).
   ignore = "[ -n \"$CACHED_COMMIT_REF\" ] && git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- . ':(exclude)docs' ':(exclude).github' ':(exclude,glob)*.md'"
 
 [build.environment]
   NODE_VERSION = "22"
-
-# Previews no longer show unpublished drafts (the site has no drafts). To preview an unfinished article, set SHOW_DRAFTS to "true" for a branch deploy. Branch and pull-request previews could show unpublished drafts (and say "noindex" to
-# search engines). The live site (the "production" context) never does. Preview links are not password
-# protected unless you pay for that: anyone with the link can read the drafts, so share them carefully.
-[context.branch-deploy.environment]
-  SHOW_DRAFTS = "false"
-
-[context.deploy-preview.environment]
-  SHOW_DRAFTS = "false"
 
 # Hashed build output never changes, so browsers and the CDN may keep it for a year.
 [[headers]]
@@ -28,88 +19,324 @@
 
 # Security headers for static files. This block does NOT reach HTML pages: they are rendered by the server function, which
 # sends Referrer-Policy and Permissions-Policy itself (src/lib/security-headers.ts, wired in src/start.ts).
-# X-Frame-Options is not sent on pages because the Lovable editor previews the site in an iframe; see
-# docs/SECURITY-AND-RECOVERY.md section 6. There is deliberately no Content-Security-Policy yet (see docs/recovery/08-security-infrastructure.md).
+# X-Frame-Options is not sent on pages because the Lovable editor previews the site in an iframe.
+# There is deliberately no Content-Security-Policy yet.
 [[headers]]
   for = "/*"
   [headers.values]
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
 
-# Retired guide: its content moved into the how-many-dogs guide.
+# ---------------------------------------------------------------------------------------------------------------------
+# Retired addresses (the old stays directory and its rental policy guides). The pages are gone for good and have no
+# relevant replacement, so they answer 410 Gone. They are never redirected to the home page.
+# Order matters: the first matching rule wins.
+# ---------------------------------------------------------------------------------------------------------------------
+
+# Retired section roots and everything beneath them.
+[[redirects]]
+  from = "/stays"
+  to = "/gone.html"
+  status = 410
+  force = true
+
+[[redirects]]
+  from = "/stays/*"
+  to = "/gone.html"
+  status = 410
+  force = true
+
+[[redirects]]
+  from = "/destinations"
+  to = "/gone.html"
+  status = 410
+  force = true
+
+[[redirects]]
+  from = "/destinations/*"
+  to = "/gone.html"
+  status = 410
+  force = true
+
+[[redirects]]
+  from = "/dogs"
+  to = "/gone.html"
+  status = 410
+  force = true
+
+[[redirects]]
+  from = "/dogs/*"
+  to = "/gone.html"
+  status = 410
+  force = true
+
+[[redirects]]
+  from = "/dog-rules"
+  to = "/gone.html"
+  status = 410
+  force = true
+
+[[redirects]]
+  from = "/dog-rules/*"
+  to = "/gone.html"
+  status = 410
+  force = true
+
+[[redirects]]
+  from = "/data/pet-policies"
+  to = "/gone.html"
+  status = 410
+  force = true
+
+[[redirects]]
+  from = "/list-your-property"
+  to = "/gone.html"
+  status = 410
+  force = true
+
+# Retired tools.
+[[redirects]]
+  from = "/tools/checklist"
+  to = "/gone.html"
+  status = 410
+  force = true
+
+[[redirects]]
+  from = "/tools/cost-calculator"
+  to = "/gone.html"
+  status = 410
+  force = true
+
+[[redirects]]
+  from = "/tools/host-questions"
+  to = "/gone.html"
+  status = 410
+  force = true
+
+[[redirects]]
+  from = "/tools/pet-cost-check"
+  to = "/gone.html"
+  status = 410
+  force = true
+
+[[redirects]]
+  from = "/tools/will-my-dog-be-accepted"
+  to = "/gone.html"
+  status = 410
+  force = true
+
+[[redirects]]
+  from = "/tools/compare"
+  to = "/gone.html"
+  status = 410
+  force = true
+
+# Retired public files.
+[[redirects]]
+  from = "/pet-policies-38-managers.csv"
+  to = "/gone.html"
+  status = 410
+  force = true
+
+[[redirects]]
+  from = "/pins/*"
+  to = "/gone.html"
+  status = 410
+  force = true
+
+[[redirects]]
+  from = "/share-towns/*"
+  to = "/gone.html"
+  status = 410
+  force = true
+
+# Retired guides (rental policy and lodging directory). No relevant replacement exists.
+[[redirects]]
+  from = "/guides/airbnb-pet-damage-charge-after-checkout"
+  to = "/gone.html"
+  status = 410
+  force = true
+
+[[redirects]]
+  from = "/guides/bringing-a-dog-to-a-no-pets-rental"
+  to = "/gone.html"
+  status = 410
+  force = true
+
+[[redirects]]
+  from = "/guides/can-dogs-go-in-a-rental-pool-or-hot-tub"
+  to = "/gone.html"
+  status = 410
+  force = true
+
+[[redirects]]
+  from = "/guides/can-you-leave-a-dog-alone-in-a-vacation-rental"
+  to = "/gone.html"
+  status = 410
+  force = true
+
+[[redirects]]
+  from = "/guides/christmas-week-in-a-cabin-with-a-dog"
+  to = "/gone.html"
+  status = 410
+  force = true
+
+[[redirects]]
+  from = "/guides/dogs-in-georgia-state-park-cabins"
+  to = "/gone.html"
+  status = 410
+  force = true
+
+[[redirects]]
+  from = "/guides/how-many-dogs-can-you-bring-to-a-vacation-rental"
+  to = "/gone.html"
+  status = 410
+  force = true
+
+[[redirects]]
+  from = "/guides/how-vacation-rental-pet-fees-work"
+  to = "/gone.html"
+  status = 410
+  force = true
+
+[[redirects]]
+  from = "/guides/new-years-eve-with-a-dog-in-a-vacation-rental"
+  to = "/gone.html"
+  status = 410
+  force = true
+
+[[redirects]]
+  from = "/guides/pet-friendly-listing-red-flags"
+  to = "/gone.html"
+  status = 410
+  force = true
+
+[[redirects]]
+  from = "/guides/pet-friendly-vacation-rental-checklist"
+  to = "/gone.html"
+  status = 410
+  force = true
+
+[[redirects]]
+  from = "/guides/puppy-at-a-vacation-rental"
+  to = "/gone.html"
+  status = 410
+  force = true
+
+[[redirects]]
+  from = "/guides/smoky-mountain-cabins-with-dogs"
+  to = "/gone.html"
+  status = 410
+  force = true
+
+[[redirects]]
+  from = "/guides/vacation-rental-secure-fenced-yard"
+  to = "/gone.html"
+  status = 410
+  force = true
+
+[[redirects]]
+  from = "/guides/vacation-rental-with-a-reactive-dog"
+  to = "/gone.html"
+  status = 410
+  force = true
+
+[[redirects]]
+  from = "/guides/vacation-rental-with-a-senior-dog"
+  to = "/gone.html"
+  status = 410
+  force = true
+
+[[redirects]]
+  from = "/guides/vacation-rentals-that-welcome-large-dogs"
+  to = "/gone.html"
+  status = 410
+  force = true
+
+[[redirects]]
+  from = "/guides/vacation-rentals-with-no-pet-fee"
+  to = "/gone.html"
+  status = 410
+  force = true
+
+[[redirects]]
+  from = "/guides/what-a-dog-really-costs-on-a-vacation-rental"
+  to = "/gone.html"
+  status = 410
+  force = true
+
+[[redirects]]
+  from = "/guides/vacation-rentals-with-no-dog-weight-limit"
+  to = "/gone.html"
+  status = 410
+  force = true
+
+[[redirects]]
+  from = "/guides/breed-restrictions-at-vacation-rentals"
+  to = "/gone.html"
+  status = 410
+  force = true
+
+# Guides retired earlier whose replacements are now gone as well.
 [[redirects]]
   from = "/guides/traveling-with-two-dogs-accommodation-guide"
-  to = "/guides/how-many-dogs-can-you-bring-to-a-vacation-rental"
-  status = 301
+  to = "/gone.html"
+  status = 410
   force = true
 
-# Retired guide.
 [[redirects]]
   from = "/guides/dog-friendly-cabins-fenced-yards-georgia"
-  to = "/guides/vacation-rental-secure-fenced-yard"
-  status = 301
+  to = "/gone.html"
+  status = 410
   force = true
 
-# Retired guide.
 [[redirects]]
   from = "/guides/pet-friendly-beachfront-rentals-california"
-  to = "/destinations/california"
-  status = 301
+  to = "/gone.html"
+  status = 410
   force = true
 
-# Retired guide.
 [[redirects]]
   from = "/guides/dog-friendly-weekend-getaways-from-atlanta"
-  to = "/destinations/georgia"
-  status = 301
+  to = "/gone.html"
+  status = 410
   force = true
 
-# Retired guide.
 [[redirects]]
   from = "/guides/dog-friendly-weekend-getaways-from-los-angeles"
-  to = "/destinations/california"
-  status = 301
+  to = "/gone.html"
+  status = 410
   force = true
 
-# Retired guide.
+[[redirects]]
+  from = "/guides/airbnb-vs-vrbo-with-a-dog"
+  to = "/gone.html"
+  status = 410
+  force = true
+
+# Retired earlier, and their replacement is still a live guide.
 [[redirects]]
   from = "/guides/dog-travel-water-and-feeding-gear-guide"
   to = "/guides/dog-friendly-cabin-packing-list"
   status = 301
   force = true
 
-# Retired guide.
 [[redirects]]
   from = "/guides/dog-friendly-rental-protection-gear-guide"
   to = "/guides/dog-friendly-cabin-packing-list"
   status = 301
   force = true
 
-# Retired guide.
-[[redirects]]
-  from = "/guides/airbnb-vs-vrbo-with-a-dog"
-  to = "/guides/how-vacation-rental-pet-fees-work"
-  status = 301
-  force = true
-
-# Retired guide: replaced by the lost-dog guide.
 [[redirects]]
   from = "/guides/dog-id-tags-and-gps-trackers-for-travel-guide"
   to = "/guides/if-your-dog-gets-loose-on-a-trip"
   status = 301
   force = true
 
-# Retired guide: merged into the large-dog guide.
+# The tools index is gone; the packing list is the one remaining tool.
 [[redirects]]
-  from = "/guides/vacation-rentals-with-no-dog-weight-limit"
-  to = "/guides/vacation-rentals-that-welcome-large-dogs"
-  status = 301
-  force = true
-
-# Retired draft: breed restrictions are covered in the large-dog guide.
-[[redirects]]
-  from = "/guides/breed-restrictions-at-vacation-rentals"
-  to = "/guides/vacation-rentals-that-welcome-large-dogs"
+  from = "/tools"
+  to = "/tools/packing-list"
   status = 301
   force = true
 

@@ -63,7 +63,7 @@ export function legacyRedirectFor(slug: string): GearCategorySlug | undefined {
   return Object.hasOwn(legacyCategorySlugs, slug) ? legacyCategorySlugs[slug] : undefined;
 }
 
-/** A shortcut on the hub: a trip or a kind of dog, linking to category pages and (for dogs) a /dogs page. */
+/** A shortcut on the hub: a trip or a kind of dog, linking to category pages. */
 export interface GearShortcut {
   slug: string;
   label: string;
@@ -71,8 +71,6 @@ export interface GearShortcut {
   line: string;
   /** Category pages (/gear/<slug>) this shortcut links to, in order. */
   categorySlugs: GearCategorySlug[];
-  /** An existing /dogs/<slug> page, for dog shortcuts. */
-  dogTypeSlug?: string;
 }
 
 export const shopByTrip: GearShortcut[] = [
@@ -85,8 +83,8 @@ export const shopByTrip: GearShortcut[] = [
   {
     slug: "cabin-stay",
     label: "Cabin stay",
-    line: "Pens, beds and cleanup for a rental with a dog.",
-    categorySlugs: ["pens-and-gates", "comfort-and-cooling", "rental-cleanup"],
+    line: "Pens, beds and cleanup for a stay away from home.",
+    categorySlugs: ["pens-and-gates", "comfort-and-cooling", "cleanup-and-protection"],
   },
   {
     slug: "beach-and-lake",
@@ -114,28 +112,24 @@ export const shopByDog: GearShortcut[] = [
     label: "Large dogs",
     line: "Ramps and car restraints, with the sizes the makers list.",
     categorySlugs: ["ramps-and-steps", "car-safety"],
-    dogTypeSlug: "big-dogs",
   },
   {
     slug: "senior-dogs",
     label: "Senior dogs",
     line: "Ramps and steps for getting into a car.",
     categorySlugs: ["ramps-and-steps"],
-    dogTypeSlug: "senior-dogs",
   },
   {
     slug: "escape-artists",
     label: "Escape artists",
     line: "GPS, ID and a safety light for a dog that bolts.",
     categorySlugs: ["safety-id-first-aid"],
-    dogTypeSlug: "escape-artists",
   },
   {
     slug: "multi-dog-families",
     label: "Multi-dog families",
     line: "Pens and gates for more than one dog.",
     categorySlugs: ["pens-and-gates"],
-    dogTypeSlug: "multi-dog-families",
   },
 ];
 
@@ -213,7 +207,7 @@ export const tripCollections: TripCollection[] = [
     slug: "cabin-stay",
     heading: "Gear for a cabin stay",
     intro:
-      "Contain the dog where there is no fenced yard, give them a place to settle, and clean up before checkout.",
+      "Contain the dog where there is no fenced yard, give them a place to settle, and clean up before you leave.",
     groups: [
       {
         title: "Containment",

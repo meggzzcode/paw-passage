@@ -1,7 +1,7 @@
 // The checklist a visitor builds on top of the rules: what is packed, what needs buying, what they removed or
 // added. Pure functions over a plain object, so every behaviour can be tested without a screen.
 //
-// Rules this file keeps (see docs/PACKING_PLANNER_PRODUCT_GUIDE.md, "State model"):
+// Rules this file keeps:
 //  * "Packed" and "Need to buy" are independent. Neither ever sets the other.
 //  * "Remove from list" hides a suggestion and takes it out of the progress count. It never deletes the
 //    record, and the item can be put back.

@@ -21,12 +21,12 @@ const command = JSON.parse(`"${m[1]}"`);
 // [label, path changed, expected]: "build" or "skip"
 const rows = [
   ["published guide .md (content/guides/*.md)", "content/guides/some-guide.md", "build"],
-  ["nested content .md (content/places/x/y.md)", "content/places/x/y.md", "build"],
+  ["nested content .md (content/adventures/x/y.md)", "content/adventures/x/y.md", "build"],
   ["content/packing.yml", "content/packing.yml", "build"],
   ["content/products.yml", "content/products.yml", "build"],
   ["content/affiliates.yml", "content/affiliates.yml", "build"],
   ["content/settings.yml", "content/settings.yml", "build"],
-  ["content/stays/*.yml", "content/stays/georgia.yml", "build"],
+  ["content/collections.yml", "content/collections.yml", "build"],
   ["src code", "src/routes/index.tsx", "build"],
   ["src markdown (src/content/readme.md)", "src/content/readme.md", "build"],
   ["package.json", "package.json", "build"],
@@ -37,7 +37,7 @@ const rows = [
   ["docs only (nested docs/x/y.csv)", "docs/data/x.csv", "skip"],
   [".github workflow only", ".github/workflows/ci.yml", "skip"],
   ["root README.md", "README.md", "skip"],
-  ["root HANDOVER.md", "HANDOVER.md", "skip"],
+  ["root COWORK-HANDOFF.md", "COWORK-HANDOFF.md", "skip"],
 ];
 
 const dir = mkdtempSync(join(tmpdir(), "netlify-ignore-"));

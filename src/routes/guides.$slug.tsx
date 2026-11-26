@@ -17,11 +17,6 @@ import { pickIdsInBody } from "@/lib/product-display";
 import { ArticleActions, TrustStrip } from "@/components/site/ArticleActions";
 
 const toolLabels = {
-  checklist: { to: "/tools/checklist", label: "Before-you-book checklist" },
-  "will-my-dog-be-accepted": {
-    to: "/tools/will-my-dog-be-accepted",
-    label: "Will my dog be accepted?",
-  },
   "packing-list": { to: "/tools/packing-list", label: "Pack your dog's bag" },
 } as const;
 
@@ -65,7 +60,7 @@ export const Route = createFileRoute("/guides/$slug")({
         { name: g.title, path },
       ]),
     ];
-    // No FAQPage JSON-LD: Google stopped showing FAQ rich results on May 7, 2026 (docs/recovery/FAQPAGE-DECISION.md). The visible questions below stay.
+    // No FAQPage JSON-LD: Google stopped showing FAQ rich results on May 7, 2026. The visible questions below stay.
     return {
       ...h,
       meta: [...h.meta, { property: "article:modified_time", content: isoDate(g.lastReviewed) }],

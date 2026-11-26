@@ -3,7 +3,7 @@ import { site } from "@/config/site";
 import { hasApprovedAffiliates } from "@/lib/launch";
 import { AppLink } from "./AppLink";
 import { LogoMark } from "./Logo";
-import { navItems, unlockCta } from "./nav-items";
+import { guidesLink, navItems, restoreLink, unlockCta } from "./nav-items";
 
 const about = [
   ["/about", "About"],
@@ -35,7 +35,13 @@ export function SiteFooter() {
               </li>
             ))}
             <li>
+              <AppLink to={guidesLink.to}>{guidesLink.label}</AppLink>
+            </li>
+            <li>
               <AppLink to={unlockCta.to}>{unlockCta.label}</AppLink>
+            </li>
+            <li>
+              <AppLink to={restoreLink.to}>{restoreLink.label}</AppLink>
             </li>
           </ul>
         </nav>

@@ -5,37 +5,33 @@ import { pageHead } from "@/lib/seo";
 export const Route = createFileRoute("/about")({
   head: () =>
     pageHead({
-      title: "About Paws & Passage",
+      title: "About Paw & Passage",
       description:
-        "Why we started a dog-friendly travel guide built around the pet-policy details that decide whether a rental stay works for your dog and your trip.",
+        "Paw & Passage makes the Adventure Passport, a collectible set of little adventures to share with your dog, plus researched dog travel and outdoor guides.",
       path: "/about",
     }),
   component: () => (
     <InfoPage
-      title="About Paws & Passage"
-      intro="Dog-Friendly Stays, Travel Guides & Gear"
-      updated="2026-11-18"
-      body={`Most travel sites treat "pet-friendly" as a single checkbox. Anyone who has turned up at a "fenced" cabin to find three sides of fence and a gravel road on the fourth knows that isn't enough.
+      title="About Paw & Passage"
+      intro="A lifetime of little adventures."
+      updated="2026-11-26"
+      body={`Paw & Passage makes the **Adventure Passport**: a collectible, self-paced set of little adventures to share with your dog. Collect adventures, not just things. There are no daily streaks and nothing to keep up with. You pick an adventure when you feel like it, and your dog can stop any time.
 
-Paws & Passage is a travel guide for people who plan around their dogs. We focus on the specifics that decide whether a stay actually works: whether the fence goes all the way around, how the pet fee is charged, weight and breed limits, how many dogs are welcome, and what the local beach and trail rules really say.
+## What is here
+
+- **The Adventure Passport.** A free set of adventures to try with no account, and a one-time purchase that unlocks the full library, more keepsakes and progress that follows you across devices. See [get the Passport](/unlock).
+- **Guides.** Researched dog travel and outdoor guides: car safety, first aid, water and cold-weather gear, and what to pack. Sources are listed at the end of each guide. See [guides](/guides).
+- **A road trip packing list.** A free planner that runs in your browser. See the [packing list](/tools/packing-list).
 
 ## Who publishes this
 
-Paws & Passage is an independent publication launched in November 2026, so it is new. Guides carry the byline "Paws & Passage Editors." That is an editorial process with written standards, not a named individual: the site owner has chosen not to publish a personal bio, and we do not invent people, credentials or experience. Editors research, check facts against listed sources and own corrections (see our [editorial standards](/editorial-standards)). We hold no veterinary, legal or trainer credentials, so use a vet for health decisions. How we work is set out in our [methodology](/methodology), [editorial standards](/editorial-standards) and [corrections log](/corrections).
-
-## What we do
-
-- **Guides** that answer the questions other articles skip. We research what already ranks, find the gaps, and check facts against official sources: park agencies, city beach rules, veterinary organizations. Sources are listed at the end of each guide, with the date we checked them.
-- **Tools** that make the awkward part of booking easier, like a packing list and a checklist of what to ask before you book.
-- **Stays**, with the pet policy, fees and fencing details we could find on each public listing. Anything we could not find is marked Not confirmed, and we suggest you ask the host any additional questions before you book.
+Paw & Passage is an independent publication. Guides carry the byline "Paws & Passage Editors." That is an editorial process with written standards, not a named individual: the site owner has chosen not to publish a personal bio, and we do not invent people, credentials or experience. We hold no veterinary or trainer credentials, so use a vet for health decisions and a qualified trainer for behavior. How we work is set out in our [editorial standards](/editorial-standards), [methodology](/methodology) and [corrections log](/corrections).
 
 ## What we don't do
 
-We don't publish fake reviews, ratings or booking numbers. We don't claim to have visited places we haven't. If we don't know something, we say "not confirmed."
+We don't publish fake reviews, ratings or customer numbers. We don't claim to have visited places or tested products we haven't. We don't ask you to upload your dog's photos: keepsakes are made on your own device. If we don't know something, we say so.
 
-We're starting with two regions, the North Georgia mountains and coastal California, and adding more as we can cover them properly.
-
-Business or press contact: see [contact](/contact). Read our [methodology](/methodology), [editorial standards](/editorial-standards) and [affiliate disclosure](/affiliate-disclosure).`}
+Questions or press: see [contact](/contact). Read our [privacy policy](/privacy), [terms](/terms) and [affiliate disclosure](/affiliate-disclosure).`}
     />
   ),
 });

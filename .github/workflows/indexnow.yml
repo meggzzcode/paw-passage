@@ -1,7 +1,7 @@
 # Submits the sitemap's page addresses to IndexNow (Bing and other participating search engines).
 # DISABLED ON PURPOSE: it only runs when you click "Run workflow" (GitHub > Actions > IndexNow > Run workflow),
 # and only after a production deploy has finished. To make it automatic later, add a `push: branches: [main]` trigger
-# AFTER the first manual run has returned status 200 or 202 (see docs/ANALYTICS-SETUP.md, Bing section).
+# AFTER the first manual run has returned status 200 or 202.
 # No secrets: the key is public and lives in public/<key>.txt.
 name: IndexNow
 

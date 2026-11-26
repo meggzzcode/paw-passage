@@ -1,884 +1,408 @@
-# Affiliate and booking links. Edit in Pages CMS ("Affiliate links").
-# A "Buy" or "Book" button appears on the site ONLY when a link here is switched to Approved.
+# Affiliate links. Edit in Pages CMS ("Affiliate links").
+# A "Buy" button appears on the site ONLY when a link here is switched to Approved.
 links:
-  - id: vrbo
-    network: Vrbo
-    url: https://vrbo.com/affiliate/hdPLmiF
-    approved: true
-    kind: stay
-  - id: vrbo-3016263
-    network: Vrbo
-    url: https://vrbo.com/affiliate/OvDjmi2
-    approved: true
-    kind: stay
-  - id: vrbo-3067945
-    network: Vrbo
-    url: https://vrbo.com/affiliate/85WJUQc
-    approved: true
-    kind: stay
-  - id: vrbo-989362
-    network: Vrbo
-    url: https://vrbo.com/affiliate/hj38sa6
-    approved: true
-    kind: stay
-  - id: vrbo-1056490
-    network: Vrbo
-    url: https://vrbo.com/affiliate/dpJNgL9
-    approved: true
-    kind: stay
-  - id: vrbo-5283109
-    network: Vrbo
-    url: https://vrbo.com/affiliate/8PAjLc3
-    approved: true
-    kind: stay
-  - id: vrbo-2839563
-    network: Vrbo
-    url: https://vrbo.com/affiliate/ZZFfMMq
-    approved: true
-    kind: stay
-  - id: vrbo-3441964
-    network: Vrbo
-    url: https://vrbo.com/affiliate/vjqhYf3
-    approved: true
-    kind: stay
-  - id: vrbo-4929336
-    network: Vrbo
-    url: https://vrbo.com/affiliate/kckCpcg
-    approved: true
-    kind: stay
-  - id: vrbo-4396826
-    network: Vrbo
-    url: https://vrbo.com/affiliate/U0R4kX5
-    approved: true
-    kind: stay
-  - id: vrbo-4242052
-    network: Vrbo
-    url: https://vrbo.com/affiliate/B6H2O0L
-    approved: true
-    kind: stay
-  - id: vrbo-3348768
-    network: Vrbo
-    url: https://vrbo.com/affiliate/yZhbNj1
-    approved: true
-    kind: stay
-  - id: vrbo-2295009
-    network: Vrbo
-    url: https://vrbo.com/affiliate/9ohw6rO
-    approved: true
-    kind: stay
-  - id: vrbo-3042489
-    network: Vrbo
-    url: https://vrbo.com/affiliate/yN6RamV
-    approved: true
-    kind: stay
-  - id: vrbo-1445930
-    network: Vrbo
-    url: https://vrbo.com/affiliate/pJUfCJ5
-    approved: true
-    kind: stay
-  - id: vrbo-3320896
-    network: Vrbo
-    url: https://vrbo.com/affiliate/vdhFynJ
-    approved: true
-    kind: stay
-  - id: vrbo-4717796
-    network: Vrbo
-    url: https://vrbo.com/affiliate/Rv6H1jf
-    approved: true
-    kind: stay
-  - id: vrbo-2363171
-    network: Vrbo
-    url: https://vrbo.com/affiliate/AI5XyNV
-    approved: true
-    kind: stay
-  - id: vrbo-3106796
-    network: Vrbo
-    url: https://vrbo.com/affiliate/xW5r4An
-    approved: true
-    kind: stay
-  - id: vrbo-3622396
-    network: Vrbo
-    url: https://vrbo.com/affiliate/xVAYhL6
-    approved: true
-    kind: stay
-  - id: vrbo-2908219
-    network: Vrbo
-    url: https://vrbo.com/affiliate/bPX2HqV
-    approved: true
-    kind: stay
-  - id: vrbo-3500343
-    network: Vrbo
-    url: https://vrbo.com/affiliate/GyVTsy5
-    approved: true
-    kind: stay
-  - id: vrbo-889523
-    network: Vrbo
-    url: https://vrbo.com/affiliate/be0iQi0
-    approved: true
-    kind: stay
-  - id: vrbo-2357464
-    network: Vrbo
-    url: https://vrbo.com/affiliate/NhkNGy5
-    approved: true
-    kind: stay
-  - id: vrbo-2193383
-    network: Vrbo
-    url: https://vrbo.com/affiliate/ptcCUQV
-    approved: true
-    kind: stay
-  - id: vrbo-1250124
-    network: Vrbo
-    url: https://vrbo.com/affiliate/8KcXsga
-    approved: true
-    kind: stay
-  - id: vrbo-317612
-    network: Vrbo
-    url: https://vrbo.com/affiliate/8DBnN9J
-    approved: true
-    kind: stay
-  - id: vrbo-3495924
-    network: Vrbo
-    url: https://vrbo.com/affiliate/w58qAta
-    approved: true
-    kind: stay
-  - id: vrbo-4188412
-    network: Vrbo
-    url: https://vrbo.com/affiliate/lmNdL3f
-    approved: true
-    kind: stay
-  - id: vrbo-2827825
-    network: Vrbo
-    url: https://vrbo.com/affiliate/brntBHo
-    approved: true
-    kind: stay
-  - id: vrbo-4195368
-    network: Vrbo
-    url: https://vrbo.com/affiliate/xoVpM0l
-    approved: true
-    kind: stay
-  - id: vrbo-689968
-    network: Vrbo
-    url: https://vrbo.com/affiliate/hmFk7X7
-    approved: true
-    kind: stay
-  - id: vrbo-3869736
-    network: Vrbo
-    url: https://vrbo.com/affiliate/umaC9R4
-    approved: true
-    kind: stay
-  - id: vrbo-1297670
-    network: Vrbo
-    url: https://vrbo.com/affiliate/K1aJJNl
-    approved: true
-    kind: stay
-  - id: vrbo-1045038
-    network: Vrbo
-    url: https://vrbo.com/affiliate/dHP2Kbd
-    approved: true
-    kind: stay
-  - id: vrbo-2826060
-    network: Vrbo
-    url: https://vrbo.com/affiliate/3VzJY0H
-    approved: true
-    kind: stay
-  - id: vrbo-1715307
-    network: Vrbo
-    url: https://vrbo.com/affiliate/RZ7nZ4U
-    approved: true
-    kind: stay
-  - id: vrbo-3461858
-    network: Vrbo
-    url: https://vrbo.com/affiliate/MyCgB7j
-    approved: true
-    kind: stay
-  - id: vrbo-4195401
-    network: Vrbo
-    url: https://vrbo.com/affiliate/Hnz1vf0
-    approved: true
-    kind: stay
-  - id: vrbo-1302282
-    network: Vrbo
-    url: https://vrbo.com/affiliate/mYnPAiZ
-    approved: true
-    kind: stay
-  - id: vrbo-2483259
-    network: Vrbo
-    url: https://vrbo.com/affiliate/zOLuOiH
-    approved: true
-    kind: stay
-  - id: vrbo-734509
-    network: Vrbo
-    url: https://vrbo.com/affiliate/7kRI5jB
-    approved: true
-    kind: stay
-  - id: vrbo-1123312
-    network: Vrbo
-    url: https://vrbo.com/affiliate/XKiCE1f
-    approved: true
-    kind: stay
-  - id: vrbo-1178277
-    network: Vrbo
-    url: https://vrbo.com/affiliate/IKXrF0h
-    approved: true
-    kind: stay
-  - id: vrbo-907140
-    network: Vrbo
-    url: https://vrbo.com/affiliate/b3am1Jh
-    approved: true
-    kind: stay
-  - id: vrbo-1656879
-    network: Vrbo
-    url: https://vrbo.com/affiliate/dd5YvaL
-    approved: true
-    kind: stay
-  - id: vrbo-1423615
-    network: Vrbo
-    url: https://vrbo.com/affiliate/qtc2uOt
-    approved: true
-    kind: stay
-  - id: vrbo-822810
-    network: Vrbo
-    url: https://vrbo.com/affiliate/qFNhnZT
-    approved: true
-    kind: stay
-  - id: vrbo-2483495
-    network: Vrbo
-    url: https://vrbo.com/affiliate/P4ujFR0
-    approved: true
-    kind: stay
-  - id: vrbo-3518618
-    network: Vrbo
-    url: https://vrbo.com/affiliate/rH1UYHb
-    approved: true
-    kind: stay
-  - id: vrbo-4404453
-    network: Vrbo
-    url: https://vrbo.com/affiliate/QNcfECF
-    approved: true
-    kind: stay
-  - id: vrbo-5551373
-    network: Vrbo
-    url: https://vrbo.com/affiliate/oKVypIt
-    approved: true
-    kind: stay
-  - id: vrbo-1797012
-    network: Vrbo
-    url: https://vrbo.com/affiliate/auxqN0E
-    approved: true
-    kind: stay
-  - id: vrbo-1327986
-    network: Vrbo
-    url: https://vrbo.com/affiliate/9qHA0IO
-    approved: true
-    kind: stay
-  - id: vrbo-610709
-    network: Vrbo
-    url: https://vrbo.com/affiliate/5BWJvHT
-    approved: true
-    kind: stay
-  - id: vrbo-1317137
-    network: Vrbo
-    url: https://vrbo.com/affiliate/MqGC6iH
-    approved: true
-    kind: stay
-  - id: vrbo-207329
-    network: Vrbo
-    url: https://vrbo.com/affiliate/T6IvhAk
-    approved: true
-    kind: stay
-  - id: vrbo-4968847
-    network: Vrbo
-    url: https://vrbo.com/affiliate/lAwRdYC
-    approved: true
-    kind: stay
-  - id: vrbo-4968855
-    network: Vrbo
-    url: https://vrbo.com/affiliate/tsQjaWU
-    approved: true
-    kind: stay
-  - id: vrbo-4968841
-    network: Vrbo
-    url: https://vrbo.com/affiliate/HomkXyC
-    approved: true
-    kind: stay
-  - id: vrbo-4968812
-    network: Vrbo
-    url: https://vrbo.com/affiliate/WaYCMoA
-    approved: true
-    kind: stay
-  - id: vrbo-4968867
-    network: Vrbo
-    url: https://vrbo.com/affiliate/68SGu5Z
-    approved: true
-    kind: stay
-  - id: vrbo-5507992
-    network: Vrbo
-    url: https://vrbo.com/affiliate/tlGITwA
-    approved: true
-    kind: stay
-  - id: vrbo-3350213
-    network: Vrbo
-    url: https://vrbo.com/affiliate/bwVfDcA
-    approved: true
-    kind: stay
-  - id: vrbo-555839
-    network: Vrbo
-    url: https://vrbo.com/affiliate/oxE3kjF
-    approved: true
-    kind: stay
-  - id: vrbo-478093
-    network: Vrbo
-    url: https://vrbo.com/affiliate/qQfx27o
-    approved: true
-    kind: stay
-  - id: vrbo-1934201
-    network: Vrbo
-    url: https://vrbo.com/affiliate/uUJhB71
-    approved: true
-    kind: stay
-  - id: vrbo-2436376
-    network: Vrbo
-    url: https://vrbo.com/affiliate/E6B5vUX
-    approved: true
-    kind: stay
-  - id: vrbo-1367012
-    network: Vrbo
-    url: https://vrbo.com/affiliate/dAQ5QQw
-    approved: true
-    kind: stay
-  - id: vrbo-2807981
-    network: Vrbo
-    url: https://vrbo.com/affiliate/L26ipAT
-    approved: true
-    kind: stay
-  - id: vrbo-5291460
-    network: Vrbo
-    url: https://vrbo.com/affiliate/RfZ8ixE
-    approved: true
-    kind: stay
-  - id: vrbo-4361269
-    network: Vrbo
-    url: https://vrbo.com/affiliate/xVrPt5y
-    approved: true
-    kind: stay
-  - id: vrbo-5177396
-    network: Vrbo
-    url: https://vrbo.com/affiliate/7zloWyn
-    approved: true
-    kind: stay
-  - id: vrbo-980414
-    network: Vrbo
-    url: https://vrbo.com/affiliate/Gp528Du
-    approved: true
-    kind: stay
-  - id: vrbo-2955022
-    network: Vrbo
-    url: https://vrbo.com/affiliate/OwoCIb5
-    approved: true
-    kind: stay
-  - id: vrbo-4147680
-    network: Vrbo
-    url: https://vrbo.com/affiliate/UJHUL3q
-    approved: true
-    kind: stay
-  - id: vrbo-4421298
-    network: Vrbo
-    url: https://vrbo.com/affiliate/SqpEZdH
-    approved: true
-    kind: stay
-  - id: vrbo-4076826
-    network: Vrbo
-    url: https://vrbo.com/affiliate/zHWWlhj
-    approved: true
-    kind: stay
-  - id: vrbo-4848791
-    network: Vrbo
-    url: https://vrbo.com/affiliate/A0hrgRo
-    approved: true
-    kind: stay
   - id: adventure-medical-kits-dog-wipes
     network: Amazon Associates
     url: https://www.amazon.com/dp/B07PF1RCGD?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B07PF1RCGD (MEDIUM); variant: Amazon listing is a 4-pack of the 8-wipe packages; a single 8-wipe package listing was not found. Owner to confirm pack count."
   - id: amk-me-and-my-dog
     network: Amazon Associates
     url: https://www.amazon.com/dp/B00T72ST0A?tag={amazonTrackingId}
     approved: false
-    kind: product
     notes: "OFF 2026-11-18: unavailable on Amazon (no buy box). Set approved true when back in stock. Amazon ASIN B00T72ST0A (HIGH); variant: Other listings of same kit exist: B01M123H7Y and B0HJQVFFKB (shown unavailable). Maker page has no Amazon link."
   - id: amk-trail-dog
     network: Amazon Associates
     url: https://www.amazon.com/dp/B00T72ST1Y?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B00T72ST1Y (HIGH); variant: Another listing B0HJQPW2LS shown unavailable. Maker page has no Amazon link."
   - id: baskerville-ultra-muzzle
     network: Amazon Associates
     url: https://www.amazon.com/dp/B00596TFVA?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B00596TFVA (size 4). Cowork-verified 2026-11-24: sold by Amazon.com, buy box present, listing read; only sizes 4 (B00596TFVA) and 5 (B0051H45GC) had buy boxes verified. Other sizes exist: 2 B005D4O0OA, 3 B005MJ65Z8, 6 B005184AG6 (buy boxes not verified). Replaces the earlier size-unspecified link B01IFJ0FMU (no buy box 2026-11-18). Size by snout per the maker's fitting guide; do not claim sizes by breed."
   - id: carlson-convertible-pet-yard
     network: Amazon Associates
     url: https://www.amazon.com/dp/B0026MSQAG?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B0026MSQAG (HIGH); variant: URL slug names model 2200; listing may show 2200 DS. Extension panel is separate (B00M1Y9AIQ)."
   - id: fi-series-3-plus
     network: Amazon Associates
     url: https://www.amazon.com/dp/B0HJ3XJFQ7?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Verified 2026-11-18: Amazon redirects B0FH8HQS3V here; default is XS. Amazon ASIN B0FH8HQS3V (MEDIUM); variant: Many size/colour/membership ASINs, e.g. B0FH82MF55 (Blue L), B0FH81NHS1 (Blue XL), B0FH8F6LXZ (Small), B0CVN7RMMJ and B0HJ3XJFQ7 (XS). Owner to pick."
   - id: gunner-g1-kennel
     network: Amazon Associates
     url: https://www.amazon.com/dp/B016LHHXKK?tag={amazonTrackingId}
     approved: false
-    kind: product
     notes: "OFF 2026-11-18: unavailable on Amazon (no buy box). Set approved true when back in stock. Amazon ASIN B016LHHXKK (MEDIUM); variant: Size-specific: Intermediate shown. Small tan B0GVGLBLRS; Large B01MU0DSH9 (from Q&A page, unverified as listing). Medium not found."
   - id: kong-bench-seat-cover-hammock-xl
     network: Amazon Associates
     url: https://www.amazon.com/dp/B07Z45B7L3?tag={amazonTrackingId}
     approved: false
-    kind: product
     notes: "OFF 2026-11-18: unavailable on Amazon (no buy box). Set approved true when back in stock. Amazon ASIN B07Z45B7L3 (MEDIUM); variant: XL size not confirmed in title. Different KONG 2-in-1 car/SUV hammock is B08G993HSM (not ours)."
   - id: kurgo-backseat-barrier
     network: Amazon Associates
     url: https://www.amazon.com/dp/B000F71DF4?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B000F71DF4 (HIGH); variant: Not the Backseat Bridge."
   - id: kurgo-collaps-a-bowl
     network: Amazon Associates
     url: https://www.amazon.com/dp/B005QZ4YZQ?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Replaced 2026-11-19 with Barn Red listing B005QZ4YZQ (original B002FYQ4DG had no buy box). Amazon ASIN B002FYQ4DG (MEDIUM); variant: Colour variants have separate ASINs: B003EIDR5U (Blue), B005QZ4YZQ (Barn Red), B01MSLJWMU (Orange)."
   - id: kurgo-dog-first-aid-kit
     network: Amazon Associates
     url: https://www.amazon.com/dp/B00IKRVU90?tag={amazonTrackingId}
     approved: false
-    kind: product
     notes: "OFF 2026-11-18: unavailable on Amazon (no buy box). Set approved true when back in stock. Amazon ASIN B00IKRVU90 (HIGH); variant: Not the RSG kit (B07NZ1WMS3)."
   - id: kurgo-enhanced-strength-tru-fit
     network: Amazon Associates
     url: https://www.amazon.com/dp/B009CE8106?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B009CE8106 (MEDIUM); variant: Size/colour ASINs differ: B009CBTTNM (Black S), B0064ACNLO (Black L), B0CGRSLCVS (Violet L), B09S3XKMZT (Violet S). Owner to pick size."
   - id: kurgo-heather-booster-seat
     network: Amazon Associates
     url: https://www.amazon.com/dp/B01D0KEKHU?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B01D0KEKHU (MEDIUM); variant: Colour variants differ (e.g. Khaki B087VBQVZ2, listing shows different weight limit). Owner to pick."
   - id: north-states-petyard-passage-8-panel
     network: Amazon Associates
     url: https://www.amazon.com/dp/B00E3AMCSQ?tag={amazonTrackingId}
     approved: false
-    kind: product
     notes: "OFF 2026-11-18: unavailable on Amazon (no buy box). Set approved true when back in stock. Amazon ASIN B00E3AMCSQ (HIGH); variant: Maker's own product page links this Amazon listing (amazon.com/dp/B00E3AMCSQ) under buy-at-retailers; other colours may exist"
   - id: petsafe-happy-ride-folding-ramp
     network: Amazon Associates
     url: https://www.amazon.com/dp/B0016HNU12?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B0016HNU12 (HIGH); variant: Single size. A different ASIN B0BGZGKB4Y is a bundle with a Happy Ride metal barrier: do not use."
   - id: petsafe-happy-ride-hitch-step
     network: Amazon Associates
     url: https://www.amazon.com/dp/B01LCJAU4I?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B01LCJAU4I (HIGH); variant: Single size. B0C5S6S199 is a bundle with CareLift harness: do not use."
   - id: petsafe-happy-ride-side-door-steps
     network: Amazon Associates
     url: https://www.amazon.com/dp/B0CCZGJQTB?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B0CCZGJQTB (HIGH); variant: Single listing. Do not confuse with Happy Ride Dog Ramp Adaptor B00JZHRYG2."
   - id: ruffwear-climate-changer-fleece
     network: Amazon Associates
     url: https://www.amazon.com/dp/B0F5TMJTH1?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Verified 2026-11-18: Amazon redirects B0C7D1FY2G here; default is XXS. Amazon ASIN B0C7D1FY2G (MEDIUM); variant: Per size/colour ASINs. Others seen: B0C7CZVH84 (Strata Large) B0C7D2H6Y5 (Strata XL) B0C7D4HDY9 (Galaxy Small). Separate Climate Changer Fleece Vest listings (B"
   - id: ruffwear-float-coat
     network: Amazon Associates
     url: https://www.amazon.com/dp/B0DNM2J19V?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B0DNM2J19V (MEDIUM); variant: Per size/colour ASINs. Others seen: B0DNL6K6CW (Deep Blue Small) B0DNL4QB35 (Deep Blue Large) B0DNM72B89 (Deep Blue XS) B0DNLLPD8F (Purple Lily XXS) B08S2YKNG9"
   - id: ruffwear-load-up-car-harness
     network: Amazon Associates
     url: https://www.amazon.com/dp/B0C7D11DT4?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B0C7D11DT4 (MEDIUM); variant: Per size ASINs. Others seen: B0C7D2LCBL (XXS) B0C7D3CCBC (XS) B0C7D2T6K8 (S) B0C7D47Q3W (L/XL). Owner to confirm size."
   - id: ruffwear-quencher-bowl
     network: Amazon Associates
     url: https://www.amazon.com/dp/B0CLB4CV6F?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B0CLB4CV6F (MEDIUM); variant: Maker name now Quencher Collapsible Dog Bowl; our name says Packable. Other: B0CLB4YPM1 (Spring Mountains Medium); older B00R36HLIS (Forest Green Medium) B079J2"
   - id: ruffwear-timberline-fuse-vest
     network: Amazon Associates
     url: https://www.amazon.com/dp/B0H133R562?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B0H133R562 (MEDIUM); variant: Per size/colour ASINs. Others seen: B0H12YF47X (Deep Teal M) B0H12YTWF7 (Deep Teal S) B0H12YQHMR (Deep Teal XS) B0H133L4ZX (Deep Teal L) B0H133Y1MP (Driftwood L"
   - id: sleepypod-atom
     network: Amazon Associates
     url: https://www.amazon.com/dp/B08J7S6C4V?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B08J7S6C4V (HIGH); variant: Single size; colour variants differ: B08J82QZ3M (Strawberry Red) B08J896S2W (Robin Egg Blue). B0HNBGN5JY is a newer Atom Small Pet Carrier listing."
   - id: sleepypod-clickit-range
     network: Amazon Associates
     url: https://www.amazon.com/dp/B0HNBGWPMW?tag={amazonTrackingId}
     approved: false
-    kind: product
     notes: "OFF 2026-11-18: unavailable on Amazon (no buy box). Set approved true when back in stock. Amazon ASIN B0HNBGWPMW (MEDIUM); variant: Size/fit not shown in title. Other Clickit Range listings: B0GMS5DTJZ B0GMTFZGCP B0GMTKTKV9. Owner to confirm size and Regular/Long fit. Clickit Sport/Utility a"
   - id: vittles-vault-travel-tainer
     network: Amazon Associates
     url: https://www.amazon.com/dp/B000HHMCT8?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B000HHMCT8 (HIGH); variant: Single unit 6 cups. A 2-pack exists as B0CB656SGD."
   - id: north-states-mypet-universal-petgate
     network: Amazon Associates
     url: https://www.amazon.com/dp/B000A796WG?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B000A796WG (HIGH); variant: Model 8619; 26 in tall. Other MyPet gates (Essential B07BL382HM, Paws B0746RGRL3) are different models."
   - id: midwest-icrate-dog-crate
     network: Amazon Associates
     url: https://www.amazon.com/dp/B000QFWCK0?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B000QFWCK0 (MEDIUM); variant: Brand/model match but many sizes and single/double door each have own ASIN. 30in double door chosen as a common size. Others: 42in double B000QFT1RC. Cowork 2026-11-24 flag: the default offer on this 30-inch listing is Amazon Resale (used/open-box), so condition is NOT confirmed new; link left unchanged. Task 16 verified Buy New listings (all Amazon.com, buy box yes): 18 in B000TZ59ES up to 10 lb; 22 in B000QFUNWY up to 15 lb; 24 in B000QFWCJ6 12-20 lb; 36 in B000QFT1R2 41-70 lb (36.5 x 23.25 x 24.75 in; wired as midwest-icrate-36-inch-double-door-crate); 42 in B000QFT1RC 71-90 lb. 48 in B000QFWCLY has no buy box. 30 in B000QFWCK0 (this link) defaults to Amazon Resale; kept as is."
   - id: soggy-doggy-super-shammy-towel
     network: Amazon Associates
     url: https://www.amazon.com/dp/B007679312?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B007679312 (HIGH); variant: Beige. Other colours: Chocolate B00FKBN5AQ, Blue B005QDOG3I, Navy B09XCJTZTH."
   - id: petsafe-happy-ride-compact-telescoping-ramp
     network: Amazon Associates
     url: https://www.amazon.com/dp/B00YYL14FG?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B00YYL14FG (HIGH); variant: Exact Compact title. Do not use B000RUJEUU (Solvit/Deluxe, different model). Maker page not fetched."
   - id: kurgo-rover-hammock-extended-width
     network: Amazon Associates
     url: https://www.amazon.com/dp/B07CRTPX8D?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B07CRTPX8D (HIGH); variant: Black. Charcoal 63in is B07CRQJC19. Avoid the Extended Bench Seat Cover (B00K7J3UIS, B0FTNTK2QF), a different product. Cowork 2026-11-24: this listing is the EXTENDED 63-in model sold by a third-party seller (not Amazon.com). Standard 55 x 56 in model sold by Amazon.com is B00164SZPQ (kurgo-rover-hammock-standard)."
   - id: ruffwear-the-beacon-dog-safety-light
     network: Amazon Associates
     url: https://www.amazon.com/dp/B073WPG2KR?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B073WPG2KR (HIGH); variant: Current rechargeable version. Older battery-powered Red Currant is B005K0MQMA (not used). Check which version our record describes."
   - id: pet-parents-pawtect-pads
     network: Amazon Associates
     url: https://www.amazon.com/dp/B07DZSF2C2?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B07DZSF2C2 (MEDIUM); variant: 18x24 2-pack. Other sizes: 17in round B07ZVGXKT1, 34x36 B0C5N8MNWZ (wired as pet-parents-pawtect-pads-34x36). 24x36 2-pack B07H2RHVK4 verified 2026-11-24 and wired as pet-parents-pawtect-pads-24x36."
   - id: midwest-lifestages-dog-crate
     network: Amazon Associates
     url: https://www.amazon.com/dp/B0002AT3M4?tag={amazonTrackingId}
     approved: false
-    kind: product
     notes: "OFF 2026-11-18: unavailable on Amazon (no buy box). Set approved true when back in stock. Amazon ASIN B0002AT3M4 (MEDIUM); variant: 36in double door chosen. Others: 42in B0002AT3ME, 48in B0002AT3MO, 30in B0002TKBUS, 24in B000HCLDFC. Owner to confirm size."
   - id: green-pet-shop-cool-pet-pad
     network: Amazon Associates
     url: https://www.amazon.com/dp/B0C5N3713P?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B0C5N3713P (MEDIUM); variant: Medium sage grey. Medium blue B07XPGKJKM, Small B0C5N8G918, XS B0C5N1KGWJ."
   - id: ezydog-dfd-life-jacket
     network: Amazon Associates
     url: https://www.amazon.com/dp/B004PGW1IE?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B004PGW1IE (MEDIUM); variant: Medium yellow. Many size/colour ASINs: Small yellow B004PGWARQ, Small red B004ZQGM4I, Large red B004ZQGM4S, XL red B004AA1AXW. DFD X2 is a newer different model"
   - id: soggy-doggy-microfiber-doormat
     network: Amazon Associates
     url: https://www.amazon.com/dp/B00OZW8I4O?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B00OZW8I4O (MEDIUM); variant: Plain no-bone, Large beige. Caramel B00OZW8I4Y, Blue B00TVCA3NC, Gray B00UJSWWQI; 36x60 sizes exist."
   - id: iris-usa-airtight-dog-food-container-10-lb
     network: Amazon Associates
     url: https://www.amazon.com/dp/B08WHSVYV6?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B08WHSVYV6 (HIGH); variant: Clear/Gray. Clear/Black is B007RBB662; 2-pack B0CZLXQN4W."
   - id: kong-classic
     network: Amazon Associates
     url: https://www.amazon.com/dp/B0002AR0I8?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B0002AR0I8; Verified 2026-11-18: Large, third-party seller (Pattern Products). Other sizes have their own ASINs."
   - id: kurgo-kibble-carrier
     network: Amazon Associates
     url: https://www.amazon.com/dp/B07MWB9XW1?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B07MWB9XW1; Verified 2026-11-18: Coastal Blue, sold by Amazon. Navy variant B09NWGB6CG."
   - id: kurgo-splash-free-wander-bowl
     network: Amazon Associates
     url: https://www.amazon.com/dp/B06XWJGT88?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B06XWJGT88; Verified 2026-11-18: Blue, sold by Amazon."
   - id: midwest-exercise-pen-with-door
     network: Amazon Associates
     url: https://www.amazon.com/dp/B005OCWML4?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B005OCWML4; Verified 2026-11-18: 42-inch, sold by Amazon. 36-inch is B002904LZE."
   - id: outward-hound-dawson-swim-life-jacket
     network: Amazon Associates
     url: https://www.amazon.com/dp/B01NGUMOS7?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B01NGUMOS7; Verified 2026-11-18: Red, Medium, sold by Amazon. Other sizes have their own ASINs."
   - id: petcube-gps-tracker
     network: Amazon Associates
     url: https://www.amazon.com/dp/B0C89SV8VP?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B0C89SV8VP; Verified 2026-11-18: sold by Petcube. A subscription may apply."
   - id: petmate-precision-pet-soft-side-play-yard
     network: Amazon Associates
     url: https://www.amazon.com/dp/B001GS71KW?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B001GS71KW; Verified 2026-11-18: sold by Amazon. Another listing B001GS71KM not opened."
   - id: petsafe-happy-ride-bench-seat-cover
     network: Amazon Associates
     url: https://www.amazon.com/dp/B09MXG2K8L?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B09MXG2K8L; Verified 2026-11-18: Black, sold by Amazon."
   - id: petsafe-happy-ride-dog-barrier
     network: Amazon Associates
     url: https://www.amazon.com/dp/B00JZHRYFI?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B00JZHRYFI; Verified 2026-11-18: metal barrier, sold by Amazon."
   - id: ruffwear-polar-trex-boots
     network: Amazon Associates
     url: https://www.amazon.com/dp/B0H13D93JM?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B0H13D93JM; Verified 2026-11-18: 2.50 in, sold by Ruffwear. Other sizes have their own ASINs."
   - id: lucky-duck-lucky-kennel
     network: Amazon Associates
     url: https://www.amazon.com/dp/B0BMQY39R5?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Added 2026-11-19 as replacement for gunner-g1-kennel. Amazon ASIN B0BMQY39R5 (MEDIUM; title seen in search results: Lucky Dog Kennel, Durable Crash Tested Portable Dog Crates, Intermediate; URL slug Lucky-Duck-Kennel-Intermediate); ASIN from search results, not yet verified on the Amazon page; stock NOT confirmed. Intermediate size only. Correction 2026-11-24 (Cowork): B0CTP2VR2T is a LARGE listing, not Medium. Real Medium (Tan, dogs under 50 lb, interior 23.5L x 17.4W x 17H in) is B0DW9GGDJ9. Large (Tan) B0DW9JGDJM is wired as lucky-duck-lucky-kennel-large. This Intermediate link stays. CPS lists Lucky Duck Lucky Kennel Medium, Intermediate and Large as certified."
   - id: sleepypod-clickit-sport-plus
     network: Amazon Associates
     url: https://www.amazon.com/dp/B0FS4DL1QF?tag={amazonTrackingId}
     approved: false
-    kind: product
     notes: "OFF: Cowork 2026-11-19: no buy box, brand not on page, no weight range or CPS wording. Added 2026-11-19 as replacement for sleepypod-clickit-range. Amazon ASIN B0FS4DL1QF (MEDIUM; title seen in search results: Certified Dog Safety Car Harness Clickit Sport Plus); ASIN from search results, not yet verified on the Amazon page; stock NOT confirmed; size not stated. Size-specific listings seen: Medium Jet Black B08JQQF9YX, Large Jet Black B08JRR6V58, Small Charcoal B08JQSDXX4 (Large Charcoal B08JQT939P shown unavailable)."
   - id: sleepypod-clickit-sport
     network: Amazon Associates
     url: https://www.amazon.com/dp/B08JQQF9YX?tag={amazonTrackingId}
     approved: false
-    kind: product
     notes: "SKIPPED 2026-11-24: Amazon listing is the 2020 Clickit Sport, maker sells Clickit Sport Plus, weight ratings conflict. Earlier note: Cowork-verified 2026-11-18: page titled Sleepypod Clickit Sport, Crash-Tested Dog Car Harness, Jet Black, M; sold by Veterinary Preferred (third party), buy box present. Sized by chest measurement, not weight; Large is B08JRR6V58. Page quotes a five star rating from the Center for Pet Safety."
   - id: kurgo-loft-wander-dog-bed
     network: Amazon Associates
     url: https://www.amazon.com/dp/B01JFEAL1O?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B01JFEAL1O (MEDIUM); title 'Kurgo Loft Wander Dog Bed, Chili Red, Large'. Variant: Large (36 x 48 in, matches catalog). Medium B00T50S24W showed unavailable and an odd shipper; do not use. Colour variants may exist. Owner to confirm buy box."
   - id: springland-22oz-original-travel-bottle
     network: Amazon Associates
     url: https://www.amazon.com/dp/B09CHBNGDT?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B09CHBNGDT (MEDIUM); title 'Springland 22oz Classic Portable Dog Water Bottle with Built-in Bowl, Lilac'. Rename catalog record to match Amazon ('22oz Classic'); Amazon sells the 22oz under the name Classic, not Original. Variant: colours B09CH926J4 (Indigo), B09CHB8CM8 (Gray); B09CH9W2XS is a Sky Blue listing titled only 'Classic' with no size. The 'Original Springer 22oz' listing B0HP966BFQ is unavailable. Owner to confirm Classic equals the maker's 'Original'."
   - id: springland-20oz-flip-travel-bottle
     network: Amazon Associates
     url: https://www.amazon.com/dp/B0C15FWR7J?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B0C15FWR7J (HIGH); title 'Springland 20oz Flip Portable Dog Water Bottle with Collapsible Bowl, Black'. Variant: Green B0C15GPCKZ, Blue B0FNNJ32NW. Amazon lists material as Plastic with a foldable silicone bowl, consistent with catalog."
   - id: tractive-dog-6
     network: Amazon Associates
     url: https://www.amazon.com/dp/B0D6Z4L6BW?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Cowork 2026-11-19: Amazon seller, buy box present; page title does not say DOG 6 and model number was not captured. Amazon ASIN B0D6Z4L6BW (MEDIUM); title 'Tractive Smart Dog GPS Tracker' (does not say DOG 6). Identity inferred: listings give model TG6, dogs over 8 lb, 14-day battery, IP68, built-in SIM, matching the catalog DOG 6. Variant: other colour listing B0D6Z74WJY. Not for: B0D6Z7KPBP (shows Mint, 10 to 14 day battery, unclear), B0DZF21KRY and B0DZF4ZYW3 (6-month-subscription bundles), B0GKGK4PGV (DOG 6 Mini, a different product). Owner to confirm model on the product page."
   - id: kurgo-rover-backseat-bridge
     network: Amazon Associates
     url: https://www.amazon.com/dp/B0888TJNRS?tag={amazonTrackingId}
     approved: false
-    kind: product
     notes: "OFF: Cowork 2026-11-19: currently unavailable, no buy box. Amazon ASIN B0888TJNRS (MEDIUM); title 'Kurgo Dog Backseat Bridge Car Extender ... Up to 100 lbs' (title omits Rover). Matches catalog specs (100 lb, 16 x 52 x 1 in, not for gaps over 13 in, cup holder and pocket). Do not use B004OSUG8A or B0CGX7T3XF: older Rover Backseat Bridge rated 75 lb. Alt listing B0888S5Q6Y."
   - id: petsafe-happy-ride-collapsible-crate
     network: Amazon Associates
     url: https://www.amazon.com/dp/B09T1P2B7J?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B09T1P2B7J (HIGH); title 'PetSafe Happy Ride Collapsible Travel Dog Crate'. Matches catalog (60 lb, 27 x 19 x 28 in, two zip doors, headrest strap and seat belt slits). Single listing."
   - id: petsafe-happy-ride-extra-long-ramp
     network: Amazon Associates
     url: https://www.amazon.com/dp/B0016HPTFW?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B0016HPTFW (HIGH); title 'PetSafe Happy Ride Extra Long Telescoping Dog Ramp'. Matches catalog (47 to 87 in, 18 lb, 300 lb capacity, model 62320). This listing exists and an earlier worker wrongly rejected it. Do not use B0B541WCCV (bundle with ramp adaptor), B000RUJEUU (Deluxe ramp) or B083M9J8K9 (metric/UK-style listing)."
   - id: kurgo-rover-cargo-cape
     network: Amazon Associates
     url: https://www.amazon.com/dp/B01LY6DXU4?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B01LY6DXU4 (HIGH); title 'Kurgo Rover Cargo Cape ... Charcoal'. Matches catalog (52 x 62 in, centre zipper for 50/50 split, fold-out bumper flap)."
   - id: ruffwear-swamp-cooler
     network: Amazon Associates
     url: https://www.amazon.com/dp/B0DN4JBXSD?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B0DN4JBXSD (MEDIUM); title 'Ruffwear Swamp Cooler Dog Vest ... Compatible with Most Harnesses, Biolumin Blue, Medium'. Variant: many size/colour ASINs (XXS B09MSLJPD7, XS B0DN47YCQ6, L B09MSLPM6T). Owner to pick size. Do not use the Swamp Cooler Zip vest (B09MSMR1CD and others): different product."
   - id: gunner-dog-bowl
     network: Amazon Associates
     url: https://www.amazon.com/dp/B0CZ5F9L2H?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B0CZ5F9L2H (HIGH); title 'GUNNER Dog Bowl with Spill-Proof Travel Lid, Black, 7-Cup'. Variant: Green B0CZ5697BB, Gunmetal B0CZ5D2QBH, Tan B0CZ5CZVHF. Amazon listings disagree on nylon vs plastic and on dishwasher safety, same as the maker page."
   - id: ruffwear-knot-a-leash
     network: Amazon Associates
     url: https://www.amazon.com/dp/B0991GNL5B?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B0991GNL5B (HIGH); title 'Ruffwear Knot-a-Leash, Reflective 5 ft Rope Lead, Obsidian Black, Large'. Variant: Small Obsidian Black B098ZVLRNH, plus many colour ASINs, some unavailable. Owner to pick size."
   - id: ruffwear-grip-trex-boots
     network: Amazon Associates
     url: https://www.amazon.com/dp/B01MY7S3H8?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Cowork 2026-11-19: generic ASIN B0HMT6Q334 had no buy box; switched to the 2.00 in listing B01MY7S3H8 (Ruffwear, buy box). Other sizes: B01MR5M5YQ 2.25, B01MT8OV48 2.50, B01N21Z6W6 2.75. Amazon ASIN B01MY7S3H8 (MEDIUM); title 'Ruffwear Grip Trex Dog Boots' (generic listing, size not in title). Variant: per-size listings such as B01MY7S3H8 (Black 2.00 in), B01MZ9DL3J (1.50 in), B01MT8OV48 (2.50 in), B0HMV115YC. Sold as a set of two. Owner to confirm the generic ASIN has a buy box and pick a default size."
   - id: ruffwear-web-master-harness
     network: Amazon Associates
     url: https://www.amazon.com/dp/B0DNV6MBKK?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B0DNV6MBKK (MEDIUM); title 'Ruffwear Web Master Dog Body Harness, Basalt Gray, Large/X-Large'. Variant: other sizes/colours B0DNV56GG9 (Blaze Orange M), B0DNV8F2FS (Blaze Orange S), B0DNV52S3Y (Red Canyon S), B0B355SGQP (XXS). Generic 'with Handle' listing B0HMT31ZT5 is unavailable. Older B01MS7225D is the earlier model (fewer attachment points). Owner to pick size."
   - id: lucky-duck-lucky-kennel-large
     network: Amazon Associates
     url: https://www.amazon.com/dp/B0DW9JGDJM?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B0DW9JGDJM. Cowork-verified 2026-11-24: buy box present, listing read; specs from the Amazon listing, not the maker page. Large (Tan) size of the Lucky Kennel; separate from the Intermediate link on lucky-duck-lucky-kennel."
   - id: arca-pet-cat-dog-first-aid-kit-100
     network: Amazon Associates
     url: https://www.amazon.com/dp/B09FKVQQVH?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B09FKVQQVH. Cowork-verified 2026-11-24: buy box present, listing read; specs from the Amazon listing, not the maker page."
   - id: arca-pet-dog-first-aid-kit-35
     network: Amazon Associates
     url: https://www.amazon.com/dp/B097PLDD92?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B097PLDD92. Cowork-verified 2026-11-24: buy box present, listing read; specs from the Amazon listing, not the maker page."
   - id: arca-pet-car-first-aid-kit-muzzle
     network: Amazon Associates
     url: https://www.amazon.com/dp/B07WRPCLYR?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B07WRPCLYR. Cowork-verified 2026-11-24: buy box present, listing read; specs from the Amazon listing, not the maker page."
   - id: fdk-8-second-pet-thermometer
     network: Amazon Associates
     url: https://www.amazon.com/dp/B0FC2HZHPJ?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B0FC2HZHPJ. Cowork-verified 2026-11-24: buy box present, listing read; specs from the Amazon listing, not the maker page. Primary thermometer option; FDK is not a widely known brand."
   - id: reddoudou-20-second-pet-thermometer
     network: Amazon Associates
     url: https://www.amazon.com/dp/B0BB9V6PDZ?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B0BB9V6PDZ. Cowork-verified 2026-11-24: buy box present, listing read; specs from the Amazon listing, not the maker page. Alternative to the FDK thermometer; brand not widely known."
   - id: rabbitgoo-frosted-window-privacy-film
     network: Amazon Associates
     url: https://www.amazon.com/dp/B00RDVE71W?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B00RDVE71W. Cowork-verified 2026-11-24: buy box present, listing read; specs from the Amazon listing, not the maker page. Narrower 17.5 x 78.7 in roll is B0FPQ637BS (not wired)."
   - id: ameritex-waterproof-dog-bed-blanket-cover
     network: Amazon Associates
     url: https://www.amazon.com/dp/B08R74XVCS?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B08R74XVCS. Cowork-verified 2026-11-24: buy box present, listing read; specs from the Amazon listing, not the maker page."
   - id: hyha-waterproof-couch-cover-dogs
     network: Amazon Associates
     url: https://www.amazon.com/dp/B0GXYG22Z4?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B0GXYG22Z4. Cowork-verified 2026-11-24: buy box present, listing read; specs from the Amazon listing, not the maker page. Inactive alternative to the Ameritex cover; brand not widely known."
   - id: whoseid-qr-nfc-dog-tag-silicone-small
     network: Amazon Associates
     url: https://www.amazon.com/dp/B0C9MCCDH9?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B0C9MCCDH9. Cowork-verified 2026-11-24: buy box present, listing read; specs from the Amazon listing, not the maker page. Task 16: the listing's bullets and Q&A state a one-time purchase, no subscription fee, no app required; maker site unreadable, so product is active on listing facts only."
   - id: rabbitgoo-suv-dog-car-barrier
     network: Amazon Associates
     url: https://www.amazon.com/dp/B0CKQV4R3C?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B0CKQV4R3C. Cowork-verified 2026-11-24: buy box present, listing read; specs from the Amazon listing, not the maker page. Primary barrier option."
   - id: snagle-paw-50-inch-mesh-car-barrier
     network: Amazon Associates
     url: https://www.amazon.com/dp/B0CBHDSMDB?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B0CBHDSMDB. Cowork-verified 2026-11-24: buy box present, listing read; specs from the Amazon listing, not the maker page. Inactive alternative to the rabbitgoo barrier; only the title was captured."
   - id: kurgo-rover-hammock-standard
     network: Amazon Associates
     url: https://www.amazon.com/dp/B00164SZPQ?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B00164SZPQ. Cowork-verified 2026-11-24: buy box present, listing read; specs from the Amazon listing, not the maker page. Standard model, not the Extended 63-in (that is B07CRTPX8D on kurgo-rover-hammock-extended-width)."
   - id: amazon-basics-dog-crate-cover-36-inch
     network: Amazon Associates
     url: https://www.amazon.com/dp/B0DPQ4PFD6?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B0DPQ4PFD6. Cowork-verified 2026-11-24 (task 16): buy box present, listing read; specs from the Amazon listing, not the maker page."
   - id: gorilla-grip-dog-crate-cover-36-inch
     network: Amazon Associates
     url: https://www.amazon.com/dp/B0C3WT8C69?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B0C3WT8C69. Cowork-verified 2026-11-24 (task 16): buy box present, listing read; specs from the Amazon listing, not the maker page. Inactive alternative; seller GORILLA COMMERCE."
   - id: joejoy-xl-dog-bed-41-42-inch-crates
     network: Amazon Associates
     url: https://www.amazon.com/dp/B0FRMRRZV3?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B0FRMRRZV3. Cowork-verified 2026-11-24 (task 16): buy box present, listing read; specs from the Amazon listing, not the maker page. Lesser-known brand; title states up to 80 lb. Paw Inspired B0CJXRVMX5 was skipped."
   - id: midwest-icrate-36-inch-double-door-crate
     network: Amazon Associates
     url: https://www.amazon.com/dp/B000QFT1R2?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B000QFT1R2. Cowork-verified 2026-11-24 (task 16): buy box present, listing read; specs from the Amazon listing, not the maker page. Buy New by Amazon.com; listing states 41-70 lb, 36.5 x 23.25 x 24.75 in."
   - id: pet-parents-pawtect-pads-24x36
     network: Amazon Associates
     url: https://www.amazon.com/dp/B07H2RHVK4?tag={amazonTrackingId}
     approved: true
-    kind: product
     notes: "Amazon ASIN B07H2RHVK4. Cowork-verified 2026-11-24 (task 16): buy box present, listing read; specs from the Amazon listing, not the maker page. 24x36 2-pack, Grey & Beige; buy box present."

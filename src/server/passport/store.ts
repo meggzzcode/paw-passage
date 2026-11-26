@@ -1,7 +1,7 @@
 // Customer records. One record per customer plus a lookup from the purchase hash, both in the customers-<env> store.
 // Conflict rule: every write is a compare-and-set on the etag. On a lost race we re-read, re-apply the change on top of
 // the fresh record (progress goes through merge() from src/passport/progress.ts) and retry a bounded number of times.
-import { emptySave, merge, type Save } from "../../passport/progress";
+import { emptySave, merge, migrate, type Save } from "../../passport/progress";
 import { newCustomerId, stableStringify } from "./crypto";
 import type { KV } from "./kv";
 
@@ -45,7 +45,10 @@ export class CustomerStore {
 
   async get(id: string): Promise<{ rec: CustomerRecord; etag: string } | null> {
     const r = await this.kv.get(custKey(id));
-    return r ? { rec: r.value as CustomerRecord, etag: r.etag } : null;
+    if (!r) return null;
+    const rec = r.value as CustomerRecord;
+    // Older records hold a v1 Save: upgrade on read, so everything downstream (and every write) is v2.
+    return { rec: { ...rec, save: migrate(rec.save) ?? emptySave() }, etag: r.etag };
   }
 
   /** Read-modify-write with bounded retries. `fn` must be pure: it is re-run on the fresh record after a conflict. */

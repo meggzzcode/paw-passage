@@ -1,13 +1,4 @@
 import { site } from "@/config/site";
-import { visibleStays, type Stay } from "@/content/stays";
-import { getState, getTown } from "@/content/destinations";
-import {
-  stayIndexability,
-  townIndexability,
-  stateIndexability,
-  type Indexability,
-} from "@/content/publish-rule";
-
 interface PageMetaInput {
   title: string;
   description: string;
@@ -26,49 +17,6 @@ export function absoluteUrl(path: string) {
 
 /** Stable 1200x630 share image for pages without their own (not the hashed hero import, so cached shares survive rebuilds). */
 export const DEFAULT_SHARE_IMAGE = "/share/default.jpg";
-
-/** True when a verified stay exists in the town (kept for callers that ask only about verification; indexing no longer depends on it). */
-export function townHasVerifiedStay(
-  townSlug: string,
-  list: Stay[] = visibleStays({ includeSamples: false }),
-) {
-  return list.some((s) => s.town === townSlug && s.status === "verified");
-}
-
-// Indexing decisions. One source of truth for page heads AND the sitemap (see src/content/publish-rule.ts for the rule).
-const publicStays = () => visibleStays({ includeSamples: false });
-
-/** Why a stay page is or is not offered to search engines. */
-export function stayIndexDecision(s: Stay, list: Stay[] = publicStays()): Indexability {
-  return stayIndexability(s, list);
-}
-export function stayIsIndexable(s: Stay, list: Stay[] = publicStays()) {
-  return stayIndexDecision(s, list).indexable;
-}
-export function indexableStays(list: Stay[] = publicStays()) {
-  return list.filter((s) => stayIsIndexable(s, list));
-}
-export function townIndexDecision(
-  stateSlug: string,
-  townSlug: string,
-  list: Stay[] = publicStays(),
-): Indexability {
-  const t = getTown(stateSlug, townSlug);
-  if (!t) return { indexable: false, missing: ["unknown town"], sections: 0 };
-  return townIndexability(t, indexableStays(list).filter((s) => s.town === townSlug).length);
-}
-export const townIsIndexable = (
-  stateSlug: string,
-  townSlug: string,
-  list: Stay[] = publicStays(),
-) => townIndexDecision(stateSlug, townSlug, list).indexable;
-export function stateIndexDecision(stateSlug: string, list: Stay[] = publicStays()): Indexability {
-  const d = getState(stateSlug);
-  if (!d) return { indexable: false, missing: ["unknown destination"], sections: 0 };
-  return stateIndexability(d, d.towns.filter((t) => townIsIndexable(d.slug, t.slug, list)).length);
-}
-export const stateIsIndexable = (stateSlug: string, list: Stay[] = publicStays()) =>
-  stateIndexDecision(stateSlug, list).indexable;
 
 /** Date-only content dates (YYYY-MM-DD) as ISO 8601 with a timezone offset, as Google recommends for Article dates. */
 export function isoDate(d: string) {

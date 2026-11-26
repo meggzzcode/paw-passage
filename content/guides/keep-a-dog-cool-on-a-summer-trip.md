@@ -4,7 +4,6 @@ seoTitle: "Keep a Dog Cool on a Summer Trip: Car, Beach, Rental"
 seoDescription: "How to keep a dog cool in the car on a summer trip: heat signs and first aid, hot car laws, hot ground, and which cooling gear to buy first."
 dek: What to do if your dog overheats, what hot-car laws actually say, and which cooling gear is worth packing, if any.
 category: Planning
-states: []
 status: published
 approvedBy: Paws & Passage Editors
 approvedOn: 2026-11-19
@@ -32,7 +31,6 @@ faqs:
 relatedGuides:
   - two-large-dogs-in-one-car
   - dog-life-jacket-for-lakes-and-beaches
-  - can-you-leave-a-dog-alone-in-a-vacation-rental
   - dog-travel-first-aid-kit-guide
   - protect-your-car-interior-from-a-dog-on-a-road-trip
 relatedProducts:
@@ -42,7 +40,6 @@ relatedProducts:
   - springland-22oz-original-travel-bottle
 relatedTools:
   - packing-list
-  - checklist
 sources:
   - title: "Heatstroke in Dogs: Signs, Symptoms, Treatments"
     url: https://www.akc.org/expert-advice/health/heat-stroke-in-dogs/
@@ -182,7 +179,7 @@ Keep the dog out of parked cars, walk in the early morning and evening, and carr
 
 ## Which dogs are at higher risk
 
-Puppies, seniors, overweight dogs, short-snouted breeds, thick- or dark-coated dogs and dogs with health problems, including heart or breathing disorders ([AKC](https://www.akc.org/expert-advice/health/heat-stroke-in-dogs/), Cornell). If yours is one of them, ask your vet how much heat is too much. Our [senior dog rental guide](/guides/vacation-rental-with-a-senior-dog) and [puppy guide](/guides/puppy-at-a-vacation-rental) cover those trips.
+Puppies, seniors, overweight dogs, short-snouted breeds, thick- or dark-coated dogs and dogs with health problems, including heart or breathing disorders ([AKC](https://www.akc.org/expert-advice/health/heat-stroke-in-dogs/), Cornell). If yours is one of them, ask your vet how much heat is too much.
 
 ## Never leave a dog in a parked car
 
@@ -200,7 +197,7 @@ Use the hand test before every walk: hold your hand on the ground for ten second
 
 **Hydration.** [AKC](https://www.akc.org/expert-advice/health/heat-stroke-in-dogs/) says to bring enough water for your dog's size and activity and plan breaks. At the beach, Cornell advises half-hour breaks from the water, because a dog in and out of water all day can swallow a lot, and a good drink of fresh water before you go. Our [life jacket guide](/guides/dog-life-jacket-for-lakes-and-beaches) covers saltwater, algae and beach rules. Bring shade (a pop-up umbrella works) and skip the middle of the day.
 
-**At the rental.** Ask the host in writing whether the air conditioning covers the room where the dog will sleep and whether there is shaded outdoor space. See our guides on [leaving a dog alone in a rental](/guides/can-you-leave-a-dog-alone-in-a-vacation-rental) and [pools and hot tubs](/guides/can-dogs-go-in-a-rental-pool-or-hot-tub).
+**At the rental.** Ask the host in writing whether the air conditioning covers the room where the dog will sleep and whether there is shaded outdoor space.
 
 **A bowl for the car.** The [Kurgo](https://www.kurgo.com/p/splash-free-wander-dog-water-bowl/K01812) Splash Free Wander lays flat on a seat. Use it at a stop with someone with the dog, never as a reason to leave water for a dog alone. Skip it if your dog drinks mainly on walks.
 
@@ -230,4 +227,4 @@ Check the forecast for each day, plan walks for early and late, and find an emer
 2. **A vest** only if your trip is mostly on foot.
 3. **A pad** only if your dog mostly rests, with its warnings read first.
 
-Add a bowl and bottle to the [packing list tool](/tools/packing-list), and add air conditioning and shade to your [pre-booking checklist](/tools/checklist). More options are in the [comfort and cooling gear](/gear/comfort-and-cooling) and [feeding and hydration gear](/gear/feeding-and-hydration) sections.
+Add a bowl and bottle to the [packing list tool](/tools/packing-list), and ask about air conditioning and shade wherever you are staying. More options are in the [comfort and cooling gear](/gear/comfort-and-cooling) and [feeding and hydration gear](/gear/feeding-and-hydration) sections.

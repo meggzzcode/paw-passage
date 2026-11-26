@@ -1,16 +1,14 @@
 import { affiliates } from "virtual:content";
 import { site } from "@/config/site";
 
-// Affiliate / booking links, managed in one place. A booking button is shown ONLY when the
+// Affiliate links, managed in one place. A buy button is shown ONLY when the
 // link exists AND approved is true. Never add a partner you are not approved with.
 export interface AffiliateLink {
   id: string;
-  network: string; // e.g. "Vrbo (via CJ)", "Direct host"
+  network: string; // e.g. "Amazon Associates"
   url: string;
   approved: boolean;
   notes?: string;
-  /** "product" links (gear guides) vs "stay" links (booking buttons). Defaults to "stay". */
-  kind?: "stay" | "product";
 }
 
 /** Amazon's required sentence, exactly as in its Operating Agreement (Section 5). Do not reword it (for example "we"): the agreement allows only substantially similar statements it previously allowed. */

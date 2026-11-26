@@ -1,7 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { InfoPage } from "@/components/site/InfoPage";
 import { pageHead } from "@/lib/seo";
-import { site } from "@/config/site";
 import { AMAZON_DISCLOSURE } from "@/content/affiliates";
 import { affiliateDisclosureBody } from "@/lib/disclosure";
 
@@ -10,14 +9,14 @@ export const Route = createFileRoute("/affiliate-disclosure")({
     pageHead({
       title: "Affiliate disclosure",
       description:
-        "Where Paws & Passage earns money through affiliate links, where the notices appear, and how our stay and product choices work.",
+        "Where Paw & Passage earns money through affiliate links, where the notices appear, and how our product choices work.",
       path: "/affiliate-disclosure",
     }),
   component: () => (
     <InfoPage
       title="Affiliate disclosure"
-      updated="2026-11-25"
-      body={affiliateDisclosureBody(site.stayDirectoryMode, AMAZON_DISCLOSURE)}
+      updated="2026-11-26"
+      body={affiliateDisclosureBody(AMAZON_DISCLOSURE)}
     />
   ),
 });

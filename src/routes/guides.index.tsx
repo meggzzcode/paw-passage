@@ -8,24 +8,23 @@ import { pageHead } from "@/lib/seo";
 export const Route = createFileRoute("/guides/")({
   head: () =>
     pageHead({
-      title: "Dog travel guides: fees, yards, big dogs",
+      title: "Dog travel and outdoor guides",
       description:
-        "Researched, practical guides to booking dog-friendly cabins and beach rentals: secure yards, pet fees, large dogs, two dogs and what to pack.",
+        "Researched, practical guides for road trips and outdoor days with your dog: car safety, first aid, water and cold-weather gear, and what to pack.",
       path: "/guides",
     }),
   component: GuidesPage,
 });
 
 const groups = [
-  { key: "Destination", title: "Destination guides" },
   { key: "Planning", title: "Planning guides" },
   { key: "Checklist", title: "Checklists" },
   { key: "Gear", title: "Gear guides" },
 ] as const;
 
 const startHere = [
-  { slug: "how-vacation-rental-pet-fees-work", label: "How pet fees work" },
-  { slug: "pet-friendly-vacation-rental-checklist", label: "Before-you-book checklist" },
+  { slug: "dog-car-safety-harness-and-crate-guide", label: "Car harness or crate" },
+  { slug: "dog-friendly-cabin-packing-list", label: "What to pack" },
 ] as const;
 
 function GuidesPage() {

@@ -1,11 +1,10 @@
 // What a /gear/<category> page shows, worked out from the catalog. Kept out of the route so tests can call it directly.
 // Primary vs secondary: a product's first category is its primary one; a second entry is a cross-listing and shows as a
-// compact related row on that category's page (docs/GEAR-TAXONOMY.md).
+// compact related row on that category's page.
 import { products, type Product } from "./gear";
 import { gearCategories, getGearCategory, type GearCategory } from "./gear-categories";
 import { categoryIsLive, categoryProducts, guidesFeaturing } from "./gear-hub";
 import { allGuides, getGuide, isPublic } from "./guides";
-import { dogTypeIsLive, getDogType } from "./dog-types";
 import type { Guide } from "./types";
 
 /** The most guides a category page lists, so related reading never turns into a wall of cards. */
@@ -18,8 +17,6 @@ export interface CategoryView {
   /** Cross-listed products (this is their second category), in catalog order. */
   secondary: Product[];
   guides: Guide[];
-  /** A live /dogs page for readers with this kind of dog, if the category names one. */
-  dogType?: { slug: string; name: string };
   /** Safety-critical categories keep their essential distinctions visible above the products. */
   safetyCritical: boolean;
   /** Two or three plain sentences for safety-critical categories. */
@@ -53,14 +50,11 @@ export function buildCategoryView(
         .map((g) => [g.slug, g]),
     ).values(),
   ].slice(0, MAX_CATEGORY_GUIDES);
-  const dt = category.dogTypeSlug ? getDogType(category.dogTypeSlug) : undefined;
-  const dogType = dt && dogTypeIsLive(dt) ? { slug: dt.slug, name: dt.name } : undefined;
   return {
     category,
     primary,
     secondary,
     guides,
-    ...(dogType ? { dogType } : {}),
     safetyCritical: isSafetyCritical(category),
     ...(category.safetyNote ? { safetyNote: category.safetyNote } : {}),
   };

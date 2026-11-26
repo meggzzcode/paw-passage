@@ -7,30 +7,42 @@ export const Route = createFileRoute("/privacy")({
     pageHead({
       title: "Privacy policy",
       description:
-        "What information Paws & Passage collects, how analytics and cookies work, how affiliate links are handled, and the choices you have over your data.",
+        "What information Paw & Passage keeps on your device and on our server, what we never collect (photos), how analytics and cookies work, and your choices.",
       path: "/privacy",
     }),
   component: () => (
     <InfoPage
       title="Privacy policy"
-      updated="2026-11-18"
-      body={`This policy explains what happens to information when you use Paws & Passage.
+      updated="2026-11-26"
+      body={`This policy explains what happens to information when you use Paw & Passage and the Adventure Passport.
 
-## Information you type into our tools
+## Your progress stays on your device
 
-Our tools, including the checklist, the packing list and the dog policy checker, run entirely in your browser. What you enter is **not sent to us**. The checklist and packing list save your ticks and choices in your browser's local storage on your device only; you can clear it with the Reset button or your browser settings.
+The free Passport needs no account. Your dog's profile, your preferences, favorites, saved adventures, completed adventures, memories and collections are saved in your browser's local storage on your device. They are not sent to us. You can export a copy, or clear everything, from your Passport page, or by clearing your browser's site data.
+
+## Photos never leave your device
+
+Keepsakes are made from a photo you choose, entirely on your device. The photo is **not uploaded**, not sent to any server, not included in analytics or error reports, and not saved by the Passport unless you save the finished image yourself. Images you export are re-drawn so they do not carry the original photo's hidden metadata, such as location.
+
+## If you buy the full Passport
+
+- **Payment.** Checkout is handled by our checkout provider, Gumroad. They take your payment and send you a license code by email. We never see your card details. Their own privacy policy applies to what you give them.
+- **Unlocking.** When you enter your code, our server sends it to the checkout provider to confirm that it is valid. The code is sent in the body of a request, never in a web address. We keep it only in sealed (encrypted) form so we can check later whether a purchase was refunded.
+- **Sync.** To let your progress follow you across devices, we then keep a copy of your progress on our server, in storage hosted by Netlify. The record is tied to a random identifier, not to your name or email. Your free progress on the device is merged into it. We do not store photos or keepsake images there.
+- **A cookie.** Unlocking sets one signed, secure cookie that keeps you signed in on that device. It is needed for the full Passport to work and is not used for advertising.
+- **Your choices.** You can download your synced progress and you can delete your record from your Passport page. Deleting removes your synced record. It does not undo the purchase.
 
 ## Analytics
 
-We may use Google Analytics 4 to understand which pages are useful and how many visitors click through to booking partners. Google Analytics uses cookies and collects information such as pages viewed, approximate location, device and browser type. We do not use it to identify you personally. You can opt out with Google's [browser add-on](https://tools.google.com/dlpage/gaoptout).
+We may use Google Analytics 4 to understand which pages are useful. For the Passport we send only a short list of named events, such as an adventure being revealed or completed, with small labels like the adventure's identifier. We never put your dog's name, your memories, your license code, your email or any customer identifier in an event. Google Analytics uses cookies and collects information such as pages viewed, approximate location, device and browser type. We do not use it to identify you personally. You can opt out with Google's [browser add-on](https://tools.google.com/dlpage/gaoptout).
 
 ## Emails you send us
 
-If you email us, we use your message and address only to reply and, for property submissions, to review your listing.
+If you email us, we use your message and address only to reply. Please do not send photos of your dog or your license code.
 
 ## Pinterest
 
-Some pages have a "Save to Pinterest" link, and the site footer may link to our Pinterest profile. These are ordinary links: they open Pinterest only if you click them. Once you are on Pinterest, its own privacy policy applies.
+The site footer may link to our Pinterest profile. It is an ordinary link: it opens Pinterest only if you click it. Once you are on Pinterest, its own privacy policy applies.
 
 ## No newsletter
 
@@ -38,11 +50,11 @@ We do not run a newsletter or collect email addresses for marketing.
 
 ## Links to other sites
 
-Booking partners and other sites we link to have their own privacy policies. Some links may be affiliate links; see our [affiliate disclosure](/affiliate-disclosure).
+Sites we link to have their own privacy policies. Some links may be affiliate links; see our [affiliate disclosure](/affiliate-disclosure).
 
 ## Affiliate links, cookies and tracking
 
-If you click an affiliate link, the partner's site (or its affiliate network) may set cookies or use similar tracking technologies, such as pixels, to record that you came from our site, so a purchase or booking can be credited to us. Those cookies and what they collect are controlled by the partner and the network, not by us, and are covered by their privacy policies. We also use Google Analytics 4 to count clicks on affiliate and product links on our own pages; it records the click, not what you type into our tools. If we show a map of places to stay from our booking partner Stay22, that map is loaded from Stay22's servers and Stay22 may set cookies or use similar tracking technologies to credit a booking to us; see Stay22's own privacy policy. You can block or delete cookies in your browser settings, and blocking them does not change the price you pay.
+If you click an affiliate link, the partner's site (or its affiliate network) may set cookies or use similar tracking technologies, such as pixels, to record that you came from our site, so a purchase can be credited to us. Those cookies and what they collect are controlled by the partner and the network, not by us, and are covered by their privacy policies. We also use Google Analytics 4 to count clicks on affiliate and product links on our own pages. You can block or delete cookies in your browser settings, and blocking them does not change the price you pay.
 
 ## Children
 

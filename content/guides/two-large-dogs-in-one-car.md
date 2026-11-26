@@ -4,7 +4,6 @@ seoTitle: "Two Large Dogs in a Car: Safe Setups"
 seoDescription: "Two large dogs in a car? Choose crates or harnesses by vehicle and dog weight, and learn what to measure first. Barriers divide, they do not restrain."
 dek: Your cargo floor width and rear belt positions decide between two strapped crates and a harness per dog. Measure those before you shop.
 category: Planning
-states: []
 status: published
 approvedBy: Paws & Passage Editors
 approvedOn: 2026-11-18
@@ -28,8 +27,6 @@ faqs:
     a: The ASPCA calls a secured crate the safest option and describes a harness on a secured seat belt as the alternative. Use one restraint per dog, each rated for that dog's weight. We found no independent test of two dogs side by side.
 relatedGuides:
   - dog-car-safety-harness-and-crate-guide
-  - how-many-dogs-can-you-bring-to-a-vacation-rental
-  - vacation-rentals-that-welcome-large-dogs
   - dog-friendly-cabin-packing-list
   - keep-a-dog-cool-on-a-summer-trip
   - protect-your-car-interior-from-a-dog-on-a-road-trip
@@ -41,9 +38,7 @@ relatedProducts:
   - midwest-icrate-36-inch-double-door-crate
   - joejoy-xl-dog-bed-41-42-inch-crates
 relatedTools:
-  - will-my-dog-be-accepted
   - packing-list
-  - checklist
 sources:
   - title: Is Your Pet Safe When Riding in the Car? Tips to Help Ensure the Answer Is Yes
     url: https://www.vetstreet.com/?p=1117
@@ -248,3 +243,5 @@ The strapped crates above are for the car only. For the rental, a home crate suc
 - State laws checked along the route.
 
 More in our [car-safety gear category](/gear/car-safety).
+
+Planning something for the drive? The [Road Trip Adventures](/collections/road-trip-adventures) collection has little adventures to share with your dogs along the way.

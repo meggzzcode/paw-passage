@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { AppLink } from "./AppLink";
 import { Button } from "./Button";
-import { navItems, unlockCta } from "./nav-items";
+import { navItems, restoreLink, unlockCta } from "./nav-items";
 
 /** Simple dropdown sheet under the header (no focus trap needed: it is part of the page flow). Escape closes it. */
 export function MobileNav({ open, onClose }: { open: boolean; onClose: () => void }) {
@@ -26,6 +26,9 @@ export function MobileNav({ open, onClose }: { open: boolean; onClose: () => voi
             {unlockCta.label}
           </Button>
         </div>
+        <AppLink to={restoreLink.to} className="pp-sheetlink" onClick={onClose}>
+          {restoreLink.label}
+        </AppLink>
       </div>
     </nav>
   );

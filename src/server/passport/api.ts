@@ -1,7 +1,7 @@
 // All /api/ endpoints as one framework-light handler: (Request) -> Response. The Netlify Function is a thin wrapper.
 // Security rules enforced here: the browser never names a customer (the id comes from the signed cookie only), raw
 // license codes are never logged or returned, every response is no-store, state changes need same-origin plus a CSRF header.
-import { validateSave, type Save } from "../../passport/progress";
+import { migrate, validateSave, type Save } from "../../passport/progress";
 import { MAX_BODY_BYTES, MIN_SECRET_LENGTH, REVERIFY_MS } from "./config";
 import { open, purchaseRefHash, seal } from "./crypto";
 import type { KV } from "./kv";
@@ -195,9 +195,8 @@ export function createApi(deps: ApiDeps) {
     if (!CODE_RE.test(code)) return fail(400, "invalid_code_format");
     let local: Save | null = null;
     if (body["localSave"] !== undefined && body["localSave"] !== null) {
-      const problem = validateSave(body["localSave"]);
-      if (problem) return fail(400, "bad_local_save");
-      local = body["localSave"] as Save;
+      local = migrate(body["localSave"]); // v1 or v2; always handled as v2
+      if (!local) return fail(400, "bad_local_save");
     }
 
     const v = await deps.provider.verify(code);
@@ -279,10 +278,15 @@ export function createApi(deps: ApiDeps) {
 
   async function putProgress(req: Request, session: Session) {
     const body = await readBody(req); // any id or customer field in the body is ignored: only the cookie names the customer
-    const problem = validateSave(body["save"]);
-    if (problem) return fail(400, "bad_save", { detail: problem });
+    const incoming = migrate(body["save"]); // v1 or v2; always stored as v2
+    if (!incoming) {
+      const raw = body["save"] as { v?: unknown } | null | undefined;
+      return fail(400, "bad_save", {
+        detail: raw && raw.v === 2 ? (validateSave(raw) ?? "bad save") : "bad save",
+      });
+    }
     const baseRev = typeof body["baseRev"] === "number" ? body["baseRev"] : -1;
-    const out = await store.applyProgress(session.cus, body["save"] as Save);
+    const out = await store.applyProgress(session.cus, incoming);
     if (!out) return fail(401, "not_signed_in", {}, {}, [clearCookie()]);
     return json(200, {
       ok: true,

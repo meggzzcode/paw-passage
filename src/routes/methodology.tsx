@@ -7,13 +7,13 @@ export const Route = createFileRoute("/methodology")({
     pageHead({
       title: "Product review methodology",
       description:
-        "How Paws & Passage researches and chooses dog travel gear: what we read, what researched means, and why nothing is described as tested unless we say so.",
+        "How Paw & Passage researches and chooses dog travel gear: what we read, what researched means, and why nothing is described as tested unless we say so.",
       path: "/methodology",
     }),
   component: () => (
     <InfoPage
       title="Product review methodology"
-      updated="2026-11-18"
+      updated="2026-11-26"
       intro="We research gear. We do not test it."
       body={`This page explains how we choose the dog travel gear that appears in our guides. It is short on purpose, and it describes only what we actually do.
 
@@ -38,11 +38,11 @@ We write the criteria first, for example the safety standard, the size and weigh
 - No star ratings or scores.
 - No prices, because they change. Check the price on the retailer's page.
 - No customer reviews, quotes or testimonials, and no invented ones.
-- No claims of having used a product, visited a place or trained a dog with it.
+- No claims of having used a product or trained a dog with it.
 
 ## Affiliate relationships
 
-Some links may earn us a commission. We choose products from their specifications and published standards, and commissions do not change what we say about them. In articles we only point to a product when we have a working link for it, and some of those links earn us a commission. Links follow a fixed order. If we have an approved affiliate arrangement for the product, we use that link, marked \`sponsored\`. If not, we link to the manufacturer. If there is no suitable manufacturer page, we use a plain retailer link marked \`nofollow\`. We never create an affiliate link we are not approved for. Details are in our [affiliate disclosure](/affiliate-disclosure).
+Some links may earn us a commission. We choose products from their specifications and published standards, and commissions do not change what we say about them. In guides we only point to a product when we have a working link for it, and some of those links earn us a commission. Links follow a fixed order. If we have an approved affiliate arrangement for the product, we use that link, marked \`sponsored\`. If not, we link to the manufacturer. If there is no suitable manufacturer page, we use a plain retailer link marked \`nofollow\`. We never create an affiliate link we are not approved for. Details are in our [affiliate disclosure](/affiliate-disclosure).
 
 ## Updating and corrections
 

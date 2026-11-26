@@ -71,5 +71,5 @@ export function productButton(p: Product): ProductButton | undefined {
  */
 export function isMonetized(p: { id: string; affiliateId?: string | undefined }): boolean {
   const l = getApprovedLink(productLinkId(p));
-  return !!l && l.kind !== "stay";
+  return !!l;
 }

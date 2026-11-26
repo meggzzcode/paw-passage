@@ -1,4 +1,3 @@
-import { Link } from "@tanstack/react-router";
 import { PawPrint, ShieldCheck } from "lucide-react";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { SPEC_CARD_STYLE } from "@/components/site/ProductSpecCard";
@@ -12,7 +11,7 @@ const TONE: Record<string, { panel: string; icon: string }> = {
 
 /** Compact category header: breadcrumb, H1, two-sentence intro, decorative icon and what is on the page. */
 export function CategoryHero({ view }: { view: CategoryView }) {
-  const { category: c, primary, secondary, guides, dogType } = view;
+  const { category: c, primary, secondary, guides } = view;
   const style = SPEC_CARD_STYLE[c.slug];
   const Icon = style?.icon ?? PawPrint;
   const tone = TONE[style?.tone ?? "sand"]!;
@@ -39,18 +38,6 @@ export function CategoryHero({ view }: { view: CategoryView }) {
             <p className="mt-4 text-sm text-muted-foreground">
               {primary.length} {primary.length === 1 ? "pick" : "picks"}
               {secondary.length > 0 && <> and {secondary.length} more that also fit</>}
-              {dogType && (
-                <>
-                  {" · "}
-                  <Link
-                    to="/dogs/$slug"
-                    params={{ slug: dogType.slug }}
-                    className="text-primary underline underline-offset-2"
-                  >
-                    Also see {dogType.name.replace(/^The /, "the ")}
-                  </Link>
-                </>
-              )}
             </p>
             <nav aria-label="On this page" className="mt-3">
               <ul className="flex flex-wrap gap-2 text-sm">

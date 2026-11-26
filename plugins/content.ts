@@ -2,35 +2,20 @@
 //
 //  * Every file is checked against src/content/schema.ts. A mistake fails the build with a message
 //    naming the file and field, so a bad edit can never be published by accident.
-//  * Unpublished content (drafts, samples, unapproved guides) is LEFT OUT of the production code
+//  * Unpublished content (drafts, unapproved guides) is LEFT OUT of the production code
 //    completely, so it cannot be read from the downloadable JavaScript. It is included while
 //    developing locally, or when SHOW_DRAFTS=true (used for private preview builds).
-import {
-  readdirSync,
-  readFileSync,
-  existsSync,
-  statSync,
-  mkdtempSync,
-  writeFileSync,
-  rmSync,
-} from "node:fs";
+import { readdirSync, readFileSync, existsSync, statSync } from "node:fs";
 import { join, basename, resolve } from "node:path";
-import { tmpdir } from "node:os";
-import { pathToFileURL } from "node:url";
 import { parse as parseYaml } from "yaml";
-import { transformWithOxc, type Plugin, type ViteDevServer } from "vite";
+import type { Plugin, ViteDevServer } from "vite";
 import {
   guideSchema,
-  stayYamlSchema,
-  toStay,
-  placeYamlSchema,
-  toPlace,
   affiliatesSchema,
   settingsSchema,
   relatedProductProblems,
 } from "../src/content/schema";
-import { guideIsPublic, stayIsPublic, placeIsPublic } from "../src/content/publish-rule";
-import { destinations } from "../src/content/destinations";
+import { guideIsPublic } from "../src/content/publish-rule";
 import { readingMinutes } from "../src/lib/reading-time";
 import {
   productsSchema,
@@ -42,8 +27,6 @@ import { packingSchema, packingProblems, emptyPackingConfig } from "../src/lib/p
 const VIRTUAL = "virtual:content";
 const RESOLVED = "\0" + VIRTUAL;
 
-/** Guides that were merged into another and now 301 (see netlify.toml and src/routes/guides.<slug>.tsx). */
-const retiredGuideSlugs = new Set(["vacation-rentals-with-no-dog-weight-limit"]);
 // Guides are split so list pages do not download every article:
 //  * virtual:guides-meta     a small list of every guide WITHOUT its text (cards, lists, links, sitemap)
 //  * virtual:guide-loaders   one lazy loader per Markdown guide
@@ -117,27 +100,6 @@ function splitFrontmatter(file: string, text: string): { data: unknown; body: st
   }
 }
 
-/** Web addresses already used by guides written as code files. */
-function codeGuideSlugs(root: string): Set<string> {
-  const d = join(root, "src", "content", "guides");
-  return new Set(
-    existsSync(d)
-      ? readdirSync(d)
-          .filter((n) => n.endsWith(".ts") && n !== "index.ts")
-          .map((n) => basename(n, ".ts"))
-      : [],
-  );
-}
-/** Web addresses already used by stays written as code files. */
-function codeStaySlugs(root: string): Set<string> {
-  const out = new Set<string>();
-  for (const f of ["samples.ts", "verified.ts"]) {
-    const p = join(root, "src", "content", "stays", f);
-    if (existsSync(p))
-      for (const m of readFileSync(p, "utf8").matchAll(/\bslug:\s*"([a-z0-9-]+)"/g)) out.add(m[1]!);
-  }
-  return out;
-}
 /** Names of the built-in photos (the keys of `images` in src/lib/images.ts). */
 function builtInImageKeys(root: string): Set<string> {
   const p = join(root, "src", "lib", "images.ts");
@@ -156,10 +118,8 @@ export function loadContent(
   const dir = join(root, "content");
   const slugs = new Set<string>();
   const imageKeys = builtInImageKeys(root);
-  const codeGuides = codeGuideSlugs(root);
-  const codeStays = codeStaySlugs(root);
   const contentGuideSlugs = new Set<string>();
-  // Names of all affiliate links in content/affiliates.yml (approved or not). Articles and stays may only refer to these.
+  // Names of all affiliate links in content/affiliates.yml (approved or not). Articles may only refer to these.
   const affiliateIds = new Set<string>();
   {
     const early = affiliatesSchema.safeParse(
@@ -189,10 +149,6 @@ export function loadContent(
         throw new ContentError(formatIssues(file, parsed.error));
       }
       const slug = basename(f, ".md");
-      if (codeGuides.has(slug))
-        throw new ContentError(
-          `\n\nContent problem in ${file}:\n  - an article with the web address "${slug}" already exists. Open that article instead of creating a new one, or choose a different file name.\n`,
-        );
       contentGuideSlugs.add(slug);
       if (!/^[a-z0-9-]+$/.test(slug)) {
         const msg = `\n\nContent problem in ${file}:\n  - the file name must use only lowercase letters, numbers and hyphens (rename the file, for example to "${slug
@@ -252,146 +208,10 @@ export function loadContent(
 
   for (const g of guides as { slug: string; relatedGuides: string[] }[]) {
     for (const r of g.relatedGuides) {
-      // Retired guides keep a 301 to their replacement, so a leftover related-guide entry is harmless (the page skips it).
-      if (retiredGuideSlugs.has(r)) continue;
-      if (!contentGuideSlugs.has(r) && !codeGuides.has(r))
+      if (!contentGuideSlugs.has(r))
         throw new ContentError(
           `\n\nContent problem in content/guides/${g.slug}.md:\n  - related article "${r}" does not exist\n`,
         );
-    }
-  }
-
-  const stays: unknown[] = [];
-  const sdir = join(dir, "stays");
-  if (existsSync(sdir)) {
-    for (const f of readdirSync(sdir)
-      .filter((n) => n.endsWith(".yml") || n.endsWith(".yaml"))
-      .sort()) {
-      const file = join("content", "stays", f);
-      const raw = readYamlFile(join(sdir, f));
-      const parsed = stayYamlSchema.safeParse(raw);
-      const notLive = (raw as { status?: string })?.status !== "verified";
-      if (!parsed.success) {
-        if (notLive && skipBrokenDrafts) {
-          console.warn(
-            `[content] ${file} is not finished yet, so it is left out for now.${formatIssues(file, parsed.error)}`,
-          );
-          continue;
-        }
-        throw new ContentError(formatIssues(file, parsed.error));
-      }
-      const slug = basename(f).replace(/\.ya?ml$/, "");
-      if (!/^[a-z0-9-]+$/.test(slug)) {
-        const msg = `\n\nContent problem in ${file}:\n  - the file name must use only lowercase letters, numbers and hyphens (rename the file, for example to "${slug
-          .toLowerCase()
-          .replace(/[^a-z0-9]+/g, "-")
-          .replace(/^-+|-+$/g, "")}.yml")\n`;
-        if (notLive && skipBrokenDrafts) {
-          console.warn(
-            `[content] ${file} is not live and its file name is not valid yet, so it is left out for now.${msg}`,
-          );
-          continue;
-        }
-        throw new ContentError(msg);
-      }
-      if (codeStays.has(slug))
-        throw new ContentError(
-          `\n\nContent problem in ${file}:\n  - a stay with the web address "${slug}" already exists\n`,
-        );
-      if (slugs.has(`stay:${slug}`))
-        throw new ContentError(`\n\nTwo stays share the web address "${slug}".\n`);
-      slugs.add(`stay:${slug}`);
-      const s = parsed.data;
-      // A stay needs no photo: without one the pages show a clear "photos are on the booking page" panel instead of a stock picture.
-      if (s.affiliateId && !affiliateIds.has(s.affiliateId)) {
-        const msg = `\n\nContent problem in ${file}:\n  - the booking link "${s.affiliateId}" does not exist in Affiliate links\n`;
-        if (notLive && skipBrokenDrafts) {
-          console.warn(
-            `[content] ${file} is not live and refers to a booking link that does not exist yet, so it is left out for now.${msg}`,
-          );
-          continue;
-        }
-        throw new ContentError(msg);
-      }
-      if (!s.imageUpload && s.image && imageKeys.size > 0 && !imageKeys.has(s.image)) {
-        const msg = `\n\nContent problem in ${file}:\n  - the built-in photo "${s.image}" does not exist\n`;
-        if (skipDraftPhotoProblem(file, msg, notLive, skipBrokenDrafts)) continue;
-        throw new ContentError(msg);
-      }
-      if (s.imageUpload && !existsSync(join(root, "public", s.imageUpload))) {
-        const msg = `\n\nContent problem in ${file}:\n  - imageUpload "${s.imageUpload}" is not in the uploads folder\n`;
-        if (skipDraftPhotoProblem(file, msg, notLive, skipBrokenDrafts)) continue;
-        throw new ContentError(msg);
-      }
-      if (s.petFee === "charged" && (!s.petFeeAmount || !s.petFeeBasis))
-        throw new ContentError(
-          `\n\nContent problem in ${file}:\n  - pet fee is "charged", so enter an amount above zero and what it is charged per\n`,
-        );
-      if (s.status === "verified" && !s.lastVerified)
-        throw new ContentError(
-          `\n\nContent problem in ${file}:\n  - a verified stay needs a "last verified" date\n`,
-        );
-      const stay = toStay(slug, s);
-      if (includeUnpublished || stayIsPublic(stay)) stays.push(stay);
-    }
-  }
-
-  // Dog rules for places. Only places that are verified AND carry the official source, the exact quote and a
-  // check date are public; everything else is left out of the production code (same as unpublished stays).
-  const places: unknown[] = [];
-  const pdir = join(dir, "places");
-  if (existsSync(pdir)) {
-    const townSlugs = new Set(destinations.flatMap((d) => d.towns.map((t) => t.slug)));
-    for (const f of readdirSync(pdir)
-      .filter((n) => n.endsWith(".yml") || n.endsWith(".yaml"))
-      .sort()) {
-      const file = join("content", "places", f);
-      const raw = readYamlFile(join(pdir, f));
-      const parsed = placeYamlSchema.safeParse(raw);
-      const notLive = (raw as { status?: string })?.status !== "verified";
-      if (!parsed.success) {
-        if (notLive && skipBrokenDrafts) {
-          console.warn(
-            `[content] ${file} is not finished yet, so it is left out for now.${formatIssues(file, parsed.error)}`,
-          );
-          continue;
-        }
-        throw new ContentError(formatIssues(file, parsed.error));
-      }
-      const slug = basename(f).replace(/\.ya?ml$/, "");
-      if (!/^[a-z0-9-]+$/.test(slug)) {
-        const msg = `\n\nContent problem in ${file}:\n  - the file name must use only lowercase letters, numbers and hyphens (rename the file, for example to "${slug
-          .toLowerCase()
-          .replace(/[^a-z0-9]+/g, "-")
-          .replace(/^-+|-+$/g, "")}.yml")\n`;
-        if (notLive && skipBrokenDrafts) {
-          console.warn(
-            `[content] ${file} is not live and its file name is not valid yet, so it is left out for now.${msg}`,
-          );
-          continue;
-        }
-        throw new ContentError(msg);
-      }
-      if (slugs.has(`place:${slug}`))
-        throw new ContentError(`\n\nTwo places share the web address "${slug}".\n`);
-      slugs.add(`place:${slug}`);
-      const p = parsed.data;
-      if (p.nearTown && !townSlugs.has(p.nearTown))
-        throw new ContentError(
-          `\n\nContent problem in ${file}:\n  - "nearTown" must be the web-address name of one of our towns (${[...townSlugs].join(", ")}) or left empty\n`,
-        );
-      if (p.claimFrom && !contentGuideSlugs.has(p.claimFrom) && !codeGuides.has(p.claimFrom))
-        throw new ContentError(
-          `\n\nContent problem in ${file}:\n  - "claimFrom" names an article that does not exist: "${p.claimFrom}"\n`,
-        );
-      const place = toPlace(slug, p);
-      if (place.status === "verified" && !placeIsPublic(place)) {
-        // Not an error: it simply stays unpublished until the source, the exact quote and the check date are all filled in.
-        console.warn(
-          `[content] ${file} is set to Verified but is missing its official source address, the exact quote or the date checked, so it is not published.`,
-        );
-      }
-      if (includeUnpublished || placeIsPublic(place)) places.push(place);
     }
   }
 
@@ -408,7 +228,7 @@ export function loadContent(
     ids.add(l.id);
   }
 
-  // Products (gear guides, packing tool, /gear). Every affiliateId must name a link in affiliates.yml, and a stay link can never be a product link.
+  // Products (gear guides, packing tool, /gear). Every affiliateId must name a link in affiliates.yml,.
   const pfile = join(dir, "products.yml");
   const pparsed = productsSchema.safeParse(existsSync(pfile) ? readYamlFile(pfile) : {});
   if (!pparsed.success) throw new ContentError(formatIssues("content/products.yml", pparsed.error));
@@ -496,8 +316,6 @@ export function loadContent(
     : aparsed.data.links.filter((l) => l.approved).map(({ notes: _notes, ...l }) => l);
   return {
     guides: publicGuides,
-    stays,
-    places,
     affiliates: links,
     products: pparsed.data.products,
     packing: kparsed.data,
@@ -544,39 +362,6 @@ export function guideSummary<
   };
 }
 
-/** Guides written as code files (src/content/guides/*.ts). Read here (types removed) so their summary can be built without shipping their text. */
-async function loadLegacyGuides(root: string): Promise<
-  {
-    file: string;
-    guide: Record<string, unknown> & {
-      slug: string;
-      research: { researchComplete: boolean; unverified: string[] };
-    };
-  }[]
-> {
-  const d = join(root, "src", "content", "guides");
-  if (!existsSync(d)) return [];
-  const out = [];
-  for (const n of readdirSync(d)
-    .filter((x) => x.endsWith(".ts") && !x.endsWith(".d.ts") && x !== "index.ts")
-    .sort()) {
-    const file = join(d, n);
-    const js = await transformWithOxc(readFileSync(file, "utf8"), file, { lang: "ts" });
-    // The preview plugin runner cannot import data: URLs. A short-lived file works in both
-    // development and production builds, and is removed as soon as the article is read.
-    const tempDir = mkdtempSync(join(tmpdir(), "paws-guide-"));
-    try {
-      const tempFile = join(tempDir, "guide.mjs");
-      writeFileSync(tempFile, js.code);
-      const mod = await import(pathToFileURL(tempFile).href);
-      out.push({ file, guide: mod.guide });
-    } finally {
-      rmSync(tempDir, { recursive: true, force: true });
-    }
-  }
-  return out;
-}
-
 export function contentPlugin(): Plugin {
   let root = process.cwd();
   let isBuild = false;
@@ -620,23 +405,10 @@ export function contentPlugin(): Plugin {
               ? `export const guide = ${JSON.stringify(g)};`
               : this.error(`Unknown guide ${id}`);
           }
-          const legacy = await loadLegacyGuides(root);
-          for (const l of legacy) this.addWatchFile(l.file);
-          const lp = relatedProductProblems(
-            legacy.map(
-              (l) => l.guide as { slug: string; relatedProducts?: string[]; body?: string },
-            ),
-            data.products.map((p) => p.id),
-          );
-          if (lp.length)
-            throw new ContentError(
-              `\n\nContent problem in src/content/guides (relatedProducts):\n${lp.map((x) => `  - ${x}`).join("\n")}\n`,
-            );
           for (const f of readdirSync(join(root, "content", "guides")))
             this.addWatchFile(join(root, "content", "guides", f));
           // Development and tests keep the full text in the list (nothing to save there); a production build ships summaries only.
-          const all = [...legacy.map((l) => l.guide), ...content];
-          return `export const guidesMeta = ${JSON.stringify(isBuild ? all.map(guideSummary) : all)};`;
+          return `export const guidesMeta = ${JSON.stringify(isBuild ? content.map(guideSummary) : content)};`;
         } catch (e) {
           if (e instanceof ContentError) this.error(e.message);
           throw e;

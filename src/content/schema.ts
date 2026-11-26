@@ -37,8 +37,7 @@ export const guideSchema = z.object({
   seoTitle: nonEmpty.max(60, "should be 60 characters or fewer"),
   seoDescription: nonEmpty.max(160, "should be 160 characters or fewer"),
   dek: nonEmpty,
-  category: z.enum(["Destination", "Planning", "Checklist", "Gear"]),
-  states: z.array(z.enum(["georgia", "california"])).default([]),
+  category: z.enum(["Planning", "Checklist", "Gear"]),
   // If the Status box is ever left empty, the safe answer is "draft".
   status: z.enum(["draft", "published"]).default("draft"),
   approvedBy: optText,
@@ -64,9 +63,7 @@ export const guideSchema = z.object({
   relatedGuides: z.array(z.string()).default([]),
   // Product ids from content/products.yml shown as "Gear for this trip" after the article. Unknown ids stop the build.
   relatedProducts: z.array(nonEmpty).max(6, "can list at most 6 products").default([]),
-  relatedTools: z
-    .array(z.enum(["checklist", "will-my-dog-be-accepted", "packing-list"]))
-    .default([]),
+  relatedTools: z.array(z.enum(["packing-list"])).default([]),
   gear: z
     .array(
       z.object({
@@ -136,123 +133,6 @@ export function relatedProductProblems(
   return out;
 }
 
-// ---- Stays. "yes / no / not-confirmed" choices keep "we don't know" distinct from "no". ----
-const tri = z.enum(["yes", "no", "not-confirmed"]).default("not-confirmed");
-const triToBool = (v: "yes" | "no" | "not-confirmed") =>
-  v === "yes" ? true : v === "no" ? false : null;
-const optNum = z.preprocess(
-  (v) => (v === "" || v === null || v === undefined ? undefined : v),
-  z.coerce.number().optional(),
-);
-
-export const stayYamlSchema = z.object({
-  name: nonEmpty,
-  // If the Status box is ever left empty, the safe answer is "unverified" (never shown on the live site).
-  status: z.enum(["verified", "unverified"]).default("unverified"),
-  type: z.enum(["cabin", "vacation-home", "cottage", "beach-house", "unique"]),
-  state: z.enum(["georgia", "california"]),
-  town: nonEmpty,
-  summary: nonEmpty,
-  description: nonEmpty,
-  sleeps: optNum,
-  bedrooms: optNum,
-  bathrooms: optNum,
-  beds: z.array(z.string()).default([]),
-  amenityGroups: z
-    .array(z.object({ title: nonEmpty, items: z.array(z.string()).default([]) }))
-    .default([]),
-  locationNote: optText,
-  distances: z.array(z.string()).default([]),
-  checkIn: optText,
-  checkOut: optText,
-  minimumStay: optText,
-  cancellation: optText,
-  accessNotes: z.array(z.string()).default([]),
-  generalRules: z.array(z.string()).default([]),
-  guestNotes: z.array(z.string()).default([]),
-  maxDogs: optNum,
-  largeDogsOk: tri,
-  weightLimitLbs: optNum,
-  fencedYard: z.enum(["full", "partial", "none", "not-confirmed"]).default("not-confirmed"),
-  fenceNotes: optText,
-  privateOutdoor: tri,
-  petFee: z.enum(["not-confirmed", "none", "charged"]).default("not-confirmed"),
-  petFeeAmount: optNum,
-  petFeeBasis: z.enum(["stay", "night", "dog", "dog-night"]).optional(),
-  breedRestrictions: tri,
-  beach: z.boolean().default(false),
-  mountain: z.boolean().default(false),
-  hotTub: tri,
-  nearby: z.array(z.string()).default([]),
-  houseRules: z.array(z.string()).default([]),
-  image: optText,
-  imageUpload: z
-    .string()
-    .optional()
-    .transform((v) => (v && v.trim() ? v.trim() : undefined))
-    .pipe(uploadPath.optional()),
-  sourceUrl: z.string().default(""),
-  lastVerified: z
-    .string()
-    .optional()
-    .transform((v) => (v && v.trim() ? v : null))
-    .pipe(date.nullable()),
-  photoPermission: z.boolean().default(false),
-  affiliateId: optText,
-});
-
-export function toStay(slug: string, raw: z.infer<typeof stayYamlSchema>) {
-  const petFee =
-    raw.petFee === "none"
-      ? { amount: 0, basis: "stay" as const }
-      : raw.petFee === "charged"
-        ? { amount: raw.petFeeAmount ?? 0, basis: raw.petFeeBasis ?? "stay" }
-        : null;
-  return {
-    slug,
-    name: raw.name,
-    status: raw.status,
-    type: raw.type,
-    state: raw.state,
-    town: raw.town,
-    summary: raw.summary,
-    description: raw.description,
-    sleeps: raw.sleeps ?? null,
-    bedrooms: raw.bedrooms ?? null,
-    bathrooms: raw.bathrooms ?? null,
-    beds: raw.beds,
-    amenityGroups: raw.amenityGroups,
-    locationNote: raw.locationNote,
-    distances: raw.distances,
-    checkIn: raw.checkIn,
-    checkOut: raw.checkOut,
-    minimumStay: raw.minimumStay,
-    cancellation: raw.cancellation,
-    accessNotes: raw.accessNotes,
-    generalRules: raw.generalRules,
-    guestNotes: raw.guestNotes,
-    maxDogs: raw.maxDogs ?? null,
-    largeDogsOk: triToBool(raw.largeDogsOk),
-    weightLimitLbs: raw.weightLimitLbs ?? null,
-    fencedYard: raw.fencedYard === "not-confirmed" ? null : raw.fencedYard,
-    fenceNotes: raw.fenceNotes,
-    privateOutdoor: triToBool(raw.privateOutdoor),
-    petFee,
-    breedRestrictions: triToBool(raw.breedRestrictions),
-    beach: raw.beach,
-    mountain: raw.mountain,
-    hotTub: triToBool(raw.hotTub),
-    nearby: raw.nearby,
-    houseRules: raw.houseRules,
-    image: raw.image,
-    imageUpload: raw.imageUpload,
-    sourceUrl: raw.sourceUrl,
-    lastVerified: raw.lastVerified,
-    photoPermission: raw.photoPermission,
-    affiliateId: raw.affiliateId,
-  };
-}
-
 // ---- Affiliate links and site settings ----
 export const affiliatesSchema = z.object({
   links: z
@@ -262,7 +142,6 @@ export const affiliatesSchema = z.object({
         network: nonEmpty,
         url: httpsUrl,
         approved: z.boolean().default(false),
-        kind: z.enum(["stay", "product"]).default("stay"),
         notes: optText,
       }),
     )
@@ -310,14 +189,6 @@ export const settingsSchema = z.object({
       "must look like https://www.pinterest.com/yourname/ or be left empty",
     )
     .default(""),
-  stay22AccountId: z
-    .string()
-    .trim()
-    .refine(
-      (v) => v === "" || /^[A-Za-z0-9_-]+$/.test(v),
-      "must be your Stay22 account ID (letters, numbers, hyphens) or be left empty",
-    )
-    .default(""),
   /** Impact (impact.com) site-ownership verification value, issued to the account holder. Empty = no tag is sent. */
   impactSiteVerification: z
     .string()
@@ -327,90 +198,5 @@ export const settingsSchema = z.object({
       "must be the value Impact shows for site verification (letters, numbers, hyphens) or be left empty",
     )
     .default(""),
-  /**
-   * Which stays the directory lists. "affiliate-only" (the default, and what an empty value means): a stay is listed only
-   * while it has an approved affiliate link. "public-sources": every stay with a public Vrbo or Airbnb source address is
-   * listed with a plain, non-commission link and no affiliate label. See docs/BUYER_AFFILIATE_TRANSITION.md.
-   */
-  stayDirectoryMode: z.preprocess(
-    (v) => (typeof v === "string" && v.trim() === "" ? undefined : v),
-    z.enum(["affiliate-only", "public-sources"]).default("affiliate-only"),
-  ),
 });
 export type SiteSettings = z.infer<typeof settingsSchema>;
-
-// ---- Dog rules for places (parks, trails, beaches). A place goes live only when it is verified AND
-// has the official source address, the exact quoted sentence and the date someone read the page
-// (see placeIsPublic in publish-rule.ts). ----
-export const placeKinds = [
-  "state-park",
-  "national-park",
-  "national-forest",
-  "county-park",
-  "city-park",
-  "beach",
-  "trail",
-] as const;
-export const placeRules = ["yes", "leash", "no", "some"] as const;
-const optHttpsUrl = z
-  .string()
-  .optional()
-  .transform((v) => (v && v.trim() ? v.trim() : undefined))
-  .pipe(httpsUrl.optional());
-const optDate = z
-  .string()
-  .optional()
-  .transform((v) => (v && v.trim() ? v.trim() : undefined))
-  .pipe(date.optional());
-
-export const placeYamlSchema = z.object({
-  // If the Status box is ever left empty, the safe answer is "unverified" (never shown on the live site).
-  status: z.enum(["unverified", "verified"]).default("unverified"),
-  name: nonEmpty,
-  state: z.enum(["georgia", "california"]),
-  managedBy: nonEmpty,
-  kind: z.enum(placeKinds),
-  nearTown: optText,
-  dogsAllowed: z
-    .array(z.object({ area: nonEmpty, rule: z.enum(placeRules), note: optText }))
-    .default([]),
-  leash: optText,
-  fees: optText,
-  exclusions: z.array(z.string()).default([]),
-  seasonal: optText,
-  nearbyAlternative: optText,
-  conflictNote: optText,
-  sourceUrl: optHttpsUrl,
-  sourceQuote: optText,
-  sourcePageDate: optText,
-  lastChecked: optDate,
-  verifiedBy: optText,
-  claimFrom: optText,
-});
-export type PlaceYaml = z.infer<typeof placeYamlSchema>;
-
-export function toPlace(slug: string, raw: PlaceYaml) {
-  return {
-    slug,
-    status: raw.status,
-    name: raw.name,
-    state: raw.state,
-    managedBy: raw.managedBy,
-    kind: raw.kind,
-    nearTown: raw.nearTown ?? null,
-    dogsAllowed: raw.dogsAllowed.map((d) => ({ area: d.area, rule: d.rule, note: d.note ?? null })),
-    leash: raw.leash ?? null,
-    fees: raw.fees ?? null,
-    exclusions: raw.exclusions.filter((e) => e.trim()),
-    seasonal: raw.seasonal ?? null,
-    nearbyAlternative: raw.nearbyAlternative ?? null,
-    conflictNote: raw.conflictNote ?? null,
-    sourceUrl: raw.sourceUrl ?? null,
-    sourceQuote: raw.sourceQuote ?? null,
-    sourcePageDate: raw.sourcePageDate ?? null,
-    lastChecked: raw.lastChecked ?? null,
-    verifiedBy: raw.verifiedBy ?? null,
-    claimFrom: raw.claimFrom ?? null,
-  };
-}
-export type Place = ReturnType<typeof toPlace>;

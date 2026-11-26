@@ -4,7 +4,6 @@ seoTitle: "Dog Travel Bowls and Food Storage: What to Pack"
 seoDescription: "What to pack to feed and water your dog on a trip: a collapsible bowl, water from home and food kept in its bag, plus the bear-country rule for cabins."
 dek: One collapsible bowl, water from home and kibble kept in its bag cover most trips. Cabins in bear country change only where the food sleeps.
 category: Planning
-states: []
 status: published
 approvedBy: Paws & Passage Editors
 approvedOn: 2026-11-18
@@ -29,8 +28,6 @@ faqs:
 relatedGuides:
   - dog-friendly-cabin-packing-list
   - dog-travel-first-aid-kit-guide
-  - airbnb-pet-damage-charge-after-checkout
-  - what-a-dog-really-costs-on-a-vacation-rental
   - dog-hiking-gear-for-a-cabin-vacation
 relatedProducts:
   - kurgo-collaps-a-bowl
@@ -41,7 +38,6 @@ relatedProducts:
   - gunner-dog-bowl
 relatedTools:
   - packing-list
-  - checklist
 sources:
   - title: Traveling With Pets? Follow These Expert Dos and Don'ts to Keep Them Safe
     url: https://www.aspca.org/news/traveling-pets-follow-these-expert-dos-and-donts-keep-them-safe
@@ -211,7 +207,7 @@ If you would rather have food and bowls in one carry, the Vittles Vault Travel-T
 
 ## Washing bowls at a rental
 
-Wash the dog's bowls by hand with your own sponge, and dry them on your own towel. The FDA says to wash and dry pet food bowls after each use. In a rental, leave the host's dishes and dishwasher alone unless they say yes; top-rack safety says the bowl can take it, not that the host would welcome it. Feed on a mat you brought, because spills and stains are what a damage claim is made of (see [how the damage-charge process works](/guides/airbnb-pet-damage-charge-after-checkout)).
+Wash the dog's bowls by hand with your own sponge, and dry them on your own towel. The FDA says to wash and dry pet food bowls after each use. In a rental, leave the host's dishes and dishwasher alone unless they say yes; top-rack safety says the bowl can take it, not that the host would welcome it. Feed on a mat you brought, because spills and stains are what a damage claim is made of.
 
 If you want to confirm the food and bowl plan, send the host this:
 

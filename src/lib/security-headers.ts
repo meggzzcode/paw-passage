@@ -5,7 +5,7 @@ import { createMiddleware } from "@tanstack/react-start";
  * server function, so these are set here (request middleware runs in dev and in production).
  *
  * X-Frame-Options is deliberately NOT sent: the Lovable editor previews the site inside an iframe and would show a
- * blank pane. Frame protection is a documented decision in docs/SECURITY-AND-RECOVERY.md.
+ * blank pane. Frame protection is a deliberate decision (see netlify.toml).
  */
 export const HTML_SECURITY_HEADERS: Record<string, string> = {
   "Referrer-Policy": "strict-origin-when-cross-origin",

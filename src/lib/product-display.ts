@@ -46,7 +46,7 @@ export const DEFAULT_PICK_LABELS: Record<GearCategorySlug, string> = {
   "trail-and-hiking": "Trail gear pick",
   "cold-weather": "Cold-weather pick",
   "safety-id-first-aid": "Safety pick",
-  "rental-cleanup": "Cleanup pick",
+  "cleanup-and-protection": "Cleanup pick",
 };
 
 export function defaultPickLabel(p: { categories?: readonly string[] | undefined }): string {

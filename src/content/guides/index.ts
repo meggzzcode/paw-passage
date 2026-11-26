@@ -10,23 +10,10 @@ import type { Guide } from "../types";
 //  * `loadGuide(slug)`: the full guide, loaded on demand (only the guide page needs it). In development and tests the
 //    summaries already contain everything, so both give the same data.
 
-// Guides still written as code files (being moved to /content so they can be edited in Pages CMS). Loaded lazily.
-const legacyLoaders = import.meta.glob<Guide>(["./*.ts", "!./index.ts"], { import: "guide" });
-
-// Code-file guides were approved before the approval fields existed.
-const withApproval = (g: Guide): Guide => ({
-  ...g,
-  approvedBy: g.approvedBy ?? "Paws & Passage Editors",
-  approvedOn: g.approvedOn ?? g.lastReviewed,
-});
-
 const bySlug = new Map<string, Guide>();
 for (const g of guidesMeta) {
-  if (bySlug.has(g.slug))
-    throw new Error(
-      `Two guides share the web address "${g.slug}" (one in code, one in /content). Remove one.`,
-    );
-  bySlug.set(g.slug, withApproval(g));
+  if (bySlug.has(g.slug)) throw new Error(`Two guides share the web address "${g.slug}".`);
+  bySlug.set(g.slug, g);
 }
 
 export const allGuides: Guide[] = [...bySlug.values()].sort((a, b) =>
@@ -54,8 +41,6 @@ export async function loadGuide(
   const summary = getGuide(slug, includeDrafts);
   if (!summary) return undefined;
   if (summary.body) return summary; // development and tests: already complete
-  const legacy = legacyLoaders[`./${slug}.ts`];
-  if (legacy) return withApproval(await legacy());
   const load = guideLoaders[slug];
   return load ? load() : undefined;
 }

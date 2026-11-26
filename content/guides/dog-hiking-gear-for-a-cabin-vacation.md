@@ -4,7 +4,6 @@ seoTitle: "Dog Hiking Gear for a Cabin Trip: What to Bring"
 seoDescription: "What to bring on a dog hike from a cabin, what only some trails call for, and how trail rules, heat and terrain change the plan."
 dek: Most dog hikes need very little gear. A harness, boots or a light only suit steep, rough or late trails.
 category: Planning
-states: []
 status: published
 approvedBy: Paws & Passage Editors
 approvedOn: 2026-11-19
@@ -33,7 +32,6 @@ relatedProducts:
   - ruffwear-quencher-bowl
 relatedTools:
   - packing-list
-  - checklist
 sources:
   - title: Hiking with Pets
     url: https://www.nps.gov/subjects/trails/hiking-with-pets.htm
@@ -176,7 +174,7 @@ Rules differ by land manager, so start with who runs the trail. A trail the dog 
 - **National forests.** The Gila National Forest page says pets must be leashed in developed recreation sites, including campgrounds, picnic areas and trailheads, and not to let a pet bark, lunge or run up to people and dogs. That is one forest; read the page for yours.
 - **State, county and local trails.** The [Washington Trails Association](https://www.wta.org/hiking-info/basics/hiking-with-dogs) says dogs must be leashed on all King County trails, and to yield to hikers and horses. That is a Washington example, not a national rule.
 
-A posted limit overrides all of these. Ask the rental host which nearby trails allow dogs and get the trail name in writing; our [pre-booking checklist](/tools/checklist) has the other questions. If your dog is reactive in new spaces, NPS suggests leaving it at home, and our [guide to a reactive dog at a rental](/guides/vacation-rental-with-a-reactive-dog) covers the stay.
+A posted limit overrides all of these. Ask where you are staying which nearby trails allow dogs and get the trail name in writing. If your dog is reactive in new spaces, NPS suggests leaving it at home.
 
 ## Heat, terrain and daylight
 
@@ -207,6 +205,8 @@ The three cards below, and the light and leash after them, are Ruffwear, the cat
 **A new leash, only if yours does not work.** If your own fixed leash is retractable or longer than the trail allows, a rope leash such as [Ruffwear](https://ruffwear.com/products/knot-a-leash-dog-leash)'s Knot-a-Leash (5 ft, reflective) fits the rule. No strength rating is listed, so judge the rope thickness against your dog's pulling. Otherwise keep the one you have.
 
 Our [cabin packing list](/guides/dog-friendly-cabin-packing-list), [bowls and food storage guide](/guides/dog-travel-bowls-and-food-storage) and [life jacket guide](/guides/dog-life-jacket-for-lakes-and-beaches) (if the hike ends at a lake) cover the rest, and the [trail and hiking gear page](/gear/trail-and-hiking) lists the products together.
+
+For gentle outings to share with your dog once the hike is planned, browse the [Adventure Passport](/discover).
 
 ## What we could not confirm
 

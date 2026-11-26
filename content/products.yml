@@ -2,8 +2,8 @@
 # No prices, ratings, commissions or "tested" claims belong here. Facts come from the maker's own page or an
 # independent standard; specSource records where. manufacturerUrl, retailerUrl and alternativeRetailer are plain
 # (non-affiliate) links. A product stores NO affiliate URL: affiliateProgram and affiliateTrackingId are names of
-# entries in content/affiliates.yml and stay EMPTY until that file has an approved entry. See
-# docs/recovery/AFFILIATE-SWAP-PROCEDURE.md. imageRights "none" means the card has no photo.
+# entries in content/affiliates.yml and stay EMPTY until that file has an approved entry.
+# imageRights "none" means the card has no photo.
 # manufacturerClaimsVsIndependentTesting: "none cited" unless a named independent tester is cited.
 products:
   - id: sleepypod-clickit-range
@@ -142,7 +142,6 @@ products:
       url: ""
     relatedGuides:
       - dog-car-safety-harness-and-crate-guide
-      - vacation-rentals-that-welcome-large-dogs
     manufacturerClaimsVsIndependentTesting: Maker states the Small, Medium and Intermediate sizes are crash tested per the Center for Pet Safety; the Large is not listed as certified. Not independently confirmed here.
   - id: lucky-duck-lucky-kennel
     name: Lucky Kennel
@@ -183,7 +182,6 @@ products:
       url: ""
     relatedGuides:
       - dog-car-safety-harness-and-crate-guide
-      - vacation-rentals-that-welcome-large-dogs
     manufacturerClaimsVsIndependentTesting: Maker states it is crash-test rated by the Center for Pet Safety. Not independently confirmed here.
   - id: orvis-embossed-sherpa-throw
     name: Embossed Sherpa Throw
@@ -215,7 +213,6 @@ products:
       url: ""
     relatedGuides:
       - dog-friendly-cabin-packing-list
-      - airbnb-pet-damage-charge-after-checkout
     manufacturerClaimsVsIndependentTesting: none cited
   - id: kurgo-loft-wander-dog-bed
     name: Loft Wander Dog Bed
@@ -256,7 +253,6 @@ products:
       url: ""
     relatedGuides:
       - dog-friendly-cabin-packing-list
-      - vacation-rental-with-a-senior-dog
     manufacturerClaimsVsIndependentTesting: none cited
   - id: kurgo-heather-hammock
     name: Heather Hammock
@@ -502,7 +498,6 @@ products:
       url: ""
     relatedGuides:
       - dog-friendly-cabin-packing-list
-      - what-a-dog-really-costs-on-a-vacation-rental
     manufacturerClaimsVsIndependentTesting: none cited
   - id: springland-22oz-original-travel-bottle
     name: 22oz Classic Travel Dog Water Bottle
@@ -545,7 +540,6 @@ products:
       url: ""
     relatedGuides:
       - dog-friendly-cabin-packing-list
-      - what-a-dog-really-costs-on-a-vacation-rental
     manufacturerClaimsVsIndependentTesting: none cited
   - id: springland-20oz-flip-travel-bottle
     name: 20oz Flip Travel Dog Water Bottle
@@ -587,7 +581,6 @@ products:
       url: ""
     relatedGuides:
       - dog-friendly-cabin-packing-list
-      - what-a-dog-really-costs-on-a-vacation-rental
     manufacturerClaimsVsIndependentTesting: none cited
   - id: vittles-vault-travel-tainer
     name: Vittles Vault Travel-Tainer Portable Food Storage Container
@@ -625,7 +618,6 @@ products:
       url: ""
     relatedGuides:
       - dog-friendly-cabin-packing-list
-      - what-a-dog-really-costs-on-a-vacation-rental
     manufacturerClaimsVsIndependentTesting: none cited
   - id: kurgo-kibble-carrier
     name: Kibble Carrier
@@ -663,7 +655,6 @@ products:
       url: ""
     relatedGuides:
       - dog-friendly-cabin-packing-list
-      - what-a-dog-really-costs-on-a-vacation-rental
     manufacturerClaimsVsIndependentTesting: none cited
   - id: akc-reunite-stainless-collar-tag
     name: AKC Reunite ID Tag or ID Collar
@@ -1041,7 +1032,6 @@ products:
       url: ""
     relatedGuides:
       - dog-car-safety-harness-and-crate-guide
-      - puppy-at-a-vacation-rental
     manufacturerClaimsVsIndependentTesting: none cited
   - id: kurgo-rover-backseat-bridge
     name: Rover Backseat Bridge
@@ -1229,9 +1219,7 @@ products:
     alternativeRetailer:
       name: ""
       url: ""
-    relatedGuides:
-      - vacation-rental-with-a-senior-dog
-      - vacation-rentals-that-welcome-large-dogs
+    relatedGuides: []
     manufacturerClaimsVsIndependentTesting: The maker's page says "Independently tested and rated to support pets up to 150 lb" but names no tester or standard, so it is recorded as the maker's statement.
   - id: petsafe-happy-ride-extra-long-ramp
     name: Happy Ride Extra Long Telescoping Dog Ramp
@@ -1268,9 +1256,7 @@ products:
     alternativeRetailer:
       name: ""
       url: ""
-    relatedGuides:
-      - vacation-rental-with-a-senior-dog
-      - vacation-rentals-that-welcome-large-dogs
+    relatedGuides: []
     manufacturerClaimsVsIndependentTesting: Maker says the 300 lb rating was independently tested but names no tester. Treat as a manufacturer claim.
   - id: petsafe-happy-ride-side-door-steps
     name: Happy Ride Side Door Pet Steps
@@ -1305,8 +1291,7 @@ products:
     alternativeRetailer:
       name: ""
       url: ""
-    relatedGuides:
-      - vacation-rental-with-a-senior-dog
+    relatedGuides: []
     manufacturerClaimsVsIndependentTesting: none cited. The 200 lb rating is the maker's statement; no testing body is named.
   - id: petsafe-happy-ride-hitch-step
     name: Happy Ride Dog Hitch Step
@@ -1342,8 +1327,7 @@ products:
     alternativeRetailer:
       name: ""
       url: ""
-    relatedGuides:
-      - vacation-rentals-that-welcome-large-dogs
+    relatedGuides: []
     manufacturerClaimsVsIndependentTesting: none cited. The 200 lb rating is the maker's statement.
   - id: petsafe-happy-ride-bench-seat-cover
     name: Happy Ride Quilted Bench Seat Cover
@@ -1354,7 +1338,7 @@ products:
       - "Not a restraint"
     categories:
       - car-interior
-      - rental-cleanup
+      - cleanup-and-protection
     summary: A quilted, waterproof back-seat cover with seat belt access that is machine washable.
     keySpecs:
       - Dimensions 45 in long x 56 in wide
@@ -1379,8 +1363,7 @@ products:
     alternativeRetailer:
       name: ""
       url: ""
-    relatedGuides:
-      - what-a-dog-really-costs-on-a-vacation-rental
+    relatedGuides: []
     manufacturerClaimsVsIndependentTesting: none cited
   - id: kurgo-rover-cargo-cape
     name: Rover Cargo Cape
@@ -1479,8 +1462,7 @@ products:
     alternativeRetailer:
       name: ""
       url: ""
-    relatedGuides:
-      - vacation-rentals-that-welcome-large-dogs
+    relatedGuides: []
     manufacturerClaimsVsIndependentTesting: none cited
   - id: ruffwear-float-coat
     name: Float Coat Dog Life Jacket
@@ -1518,8 +1500,7 @@ products:
     alternativeRetailer:
       name: ""
       url: ""
-    relatedGuides:
-      - can-dogs-go-in-a-rental-pool-or-hot-tub
+    relatedGuides: []
     manufacturerClaimsVsIndependentTesting: Buoyancy wording is the maker's. No flotation rating, certification or testing body is named on the page.
   - id: outward-hound-dawson-swim-life-jacket
     name: Dawson Swim Dog Life Jacket
@@ -1556,8 +1537,7 @@ products:
     alternativeRetailer:
       name: ""
       url: ""
-    relatedGuides:
-      - can-dogs-go-in-a-rental-pool-or-hot-tub
+    relatedGuides: []
     manufacturerClaimsVsIndependentTesting: Buoyancy wording is the maker's. No certification, testing body or buoyancy figure is given on the page.
   - id: ruffwear-swamp-cooler
     name: Swamp Cooler Cooling Dog Vest
@@ -1603,7 +1583,7 @@ products:
     name: Mud Dog Travel Shower
     brand: Kurgo
     categories:
-      - rental-cleanup
+      - cleanup-and-protection
     summary: A food-grade silicone shower head that screws onto a standard plastic water bottle.
     keySpecs:
       - Fits standard PET water and soda bottles from 16 oz to 2 liters
@@ -1627,8 +1607,7 @@ products:
     alternativeRetailer:
       name: ""
       url: ""
-    relatedGuides:
-      - airbnb-pet-damage-charge-after-checkout
+    relatedGuides: []
     manufacturerClaimsVsIndependentTesting: none cited
   - id: adventure-medical-kits-dog-wipes
     name: Adventure Dog Wipes (8 wipes per pack)
@@ -1640,7 +1619,7 @@ products:
       - "Aloe, rosemary, witch hazel"
       - "Rinse-free, 60-day guarantee"
     categories:
-      - rental-cleanup
+      - cleanup-and-protection
     summary: Rinse-free pet wipes made to wipe dirt and odour off a dog.
     keySpecs:
       - 8 wipes per pack, each 8 x 8 in
@@ -1664,8 +1643,7 @@ products:
     alternativeRetailer:
       name: ""
       url: ""
-    relatedGuides:
-      - airbnb-pet-damage-charge-after-checkout
+    relatedGuides: []
     manufacturerClaimsVsIndependentTesting: none cited. Gentleness and durability wording are the maker's.
   - id: gunner-long-haul-bed
     name: Long Haul Bed
@@ -1765,8 +1743,7 @@ products:
     alternativeRetailer:
       name: ""
       url: ""
-    relatedGuides:
-      - what-a-dog-really-costs-on-a-vacation-rental
+    relatedGuides: []
     manufacturerClaimsVsIndependentTesting: The 4,000 mm and Food Contact Safe wording is the maker's; no tester is named.
   - id: kurgo-splash-free-wander-bowl
     name: Splash Free Wander Dog Water Bowl
@@ -1803,8 +1780,7 @@ products:
     alternativeRetailer:
       name: ""
       url: ""
-    relatedGuides:
-      - what-a-dog-really-costs-on-a-vacation-rental
+    relatedGuides: []
     manufacturerClaimsVsIndependentTesting: none cited
   - id: petmate-silicone-travel-bowl-duo
     name: Silicone Travel Bowl Duo
@@ -1834,8 +1810,7 @@ products:
     alternativeRetailer:
       name: ""
       url: ""
-    relatedGuides:
-      - what-a-dog-really-costs-on-a-vacation-rental
+    relatedGuides: []
     manufacturerClaimsVsIndependentTesting: none cited
   - id: gunner-dog-bowl
     name: Dog Bowl with Travel Lid
@@ -1914,7 +1889,6 @@ products:
       url: ""
     relatedGuides:
       - portable-dog-fence-and-playpen-guide-for-rentals
-      - puppy-at-a-vacation-rental
     manufacturerClaimsVsIndependentTesting: none cited. A soft-sided yard is not shown to hold a determined or large dog; the page makes no containment-strength claim.
   - id: ruffwear-knot-a-leash
     name: Knot-a-Leash Rope Dog Leash
@@ -2064,8 +2038,7 @@ products:
     alternativeRetailer:
       name: ""
       url: ""
-    relatedGuides:
-      - christmas-week-in-a-cabin-with-a-dog
+    relatedGuides: []
     manufacturerClaimsVsIndependentTesting: Warmth wording is the maker's; no test or rating is named.
   - id: ruffwear-polar-trex-boots
     name: Polar Trex Winter Dog Boots
@@ -2102,8 +2075,7 @@ products:
     alternativeRetailer:
       name: ""
       url: ""
-    relatedGuides:
-      - christmas-week-in-a-cabin-with-a-dog
+    relatedGuides: []
     manufacturerClaimsVsIndependentTesting: Waterproof, windproof and traction wording is the maker's; no test is named.
   - id: ruffwear-timberline-fuse-vest
     name: Timberline Fuse Fleece Vest
@@ -2228,7 +2200,7 @@ products:
       - "Maker: lifetime guarantee"
     categories:
       - car-interior
-      - rental-cleanup
+      - cleanup-and-protection
     summary: A 63 by 56 inch bench-seat hammock for full-size trucks and large SUVs, backed by the maker's lifetime guarantee.
     keySpecs:
       - Size 63 in W x 56 in L; maker says it fits most full size trucks and large SUVs
@@ -2293,10 +2265,7 @@ products:
     alternativeRetailer:
       name: ""
       url: ""
-    relatedGuides:
-      - can-you-leave-a-dog-alone-in-a-vacation-rental
-      - vacation-rental-secure-fenced-yard
-      - vacation-rental-with-a-reactive-dog
+    relatedGuides: []
     manufacturerClaimsVsIndependentTesting: none cited. The page makes no containment-strength claim.
   - id: midwest-icrate-dog-crate
     name: iCrate Dog Crate
@@ -2335,7 +2304,6 @@ products:
       name: ""
       url: ""
     relatedGuides:
-      - can-you-leave-a-dog-alone-in-a-vacation-rental
       - dog-friendly-cabin-packing-list
     manufacturerClaimsVsIndependentTesting: none cited. Reviewers on the page report latch and edge complaints; those are customer opinions, not specs.
   - id: green-pet-shop-cool-pet-pad
@@ -2377,7 +2345,6 @@ products:
       url: ""
     relatedGuides:
       - dog-friendly-cabin-packing-list
-      - can-dogs-go-in-a-rental-pool-or-hot-tub
     manufacturerClaimsVsIndependentTesting: Cooling duration and recharge are maker claims. No named independent tester cited. Reviewers (NBC Select, PetsRadar) name it best cooling mat; PetsRadar names no tester of its own; Reviewed (2021) was one author's home use over a few weeks.
   - id: iris-usa-airtight-dog-food-container-10-lb
     name: Airtight Dog Food Storage Container Up to 10 lbs
@@ -2427,7 +2394,7 @@ products:
       - "Hand pockets, microfiber"
       - "Care: tumble dry low"
     categories:
-      - rental-cleanup
+      - cleanup-and-protection
       - water-and-beach
     summary: A microfiber chenille drying towel with hand pockets, one size, for wet or muddy dogs.
     keySpecs:
@@ -2454,7 +2421,6 @@ products:
       name: ""
       url: ""
     relatedGuides:
-      - airbnb-pet-damage-charge-after-checkout
       - dog-friendly-cabin-packing-list
     manufacturerClaimsVsIndependentTesting: none cited.
   - id: soggy-doggy-microfiber-doormat
@@ -2468,7 +2434,7 @@ products:
       - "Non-slip backing"
       - "Machine washable, dryer safe"
     categories:
-      - rental-cleanup
+      - cleanup-and-protection
     summary: A microfiber chenille doormat for muddy paws, in Large and Extra Large, with a non-slip backing.
     keySpecs:
       - Large 26 x 36 in; Extra Large 36 x 60 in; 1 in pile height
@@ -2494,7 +2460,6 @@ products:
       name: ""
       url: ""
     relatedGuides:
-      - airbnb-pet-damage-charge-after-checkout
       - dog-friendly-cabin-packing-list
     manufacturerClaimsVsIndependentTesting: none cited. Absorbency wording is the maker's.
   - id: pet-parents-pawtect-pads
@@ -2508,7 +2473,7 @@ products:
       - "Floor-gripping backing"
       - "Machine washable; 2 per pack"
     categories:
-      - rental-cleanup
+      - cleanup-and-protection
     summary: Machine-washable reusable pads with a floor-gripping backing, sold in packs of two in four sizes.
     keySpecs:
       - Maker lists sizes Extra Small 18 x 24 in, Small 24 x 36 in, Medium 34 x 36 in, Large 41 x 41 in; 2 pads per pack
@@ -2532,9 +2497,7 @@ products:
     alternativeRetailer:
       name: ""
       url: ""
-    relatedGuides:
-      - puppy-at-a-vacation-rental
-      - vacation-rental-with-a-senior-dog
+    relatedGuides: []
     manufacturerClaimsVsIndependentTesting: none cited. Waterproof and wash-life statements are the maker's own.
   - id: midwest-lifestages-dog-crate
     name: LifeStages Dog Crate (single or double door, with divider panel)
@@ -2565,9 +2528,7 @@ products:
     alternativeRetailer:
       name: ""
       url: ""
-    relatedGuides:
-      - puppy-at-a-vacation-rental
-      - can-you-leave-a-dog-alone-in-a-vacation-rental
+    relatedGuides: []
     manufacturerClaimsVsIndependentTesting: none cited. Not described as crash-tested; it is not a car restraint.
   - id: kong-classic
     name: KONG Classic
@@ -2602,10 +2563,7 @@ products:
     alternativeRetailer:
       name: ""
       url: ""
-    relatedGuides:
-      - can-you-leave-a-dog-alone-in-a-vacation-rental
-      - puppy-at-a-vacation-rental
-      - christmas-week-in-a-cabin-with-a-dog
+    relatedGuides: []
     manufacturerClaimsVsIndependentTesting: none cited. Durability wording is the maker's.
   - id: ruffwear-the-beacon-dog-safety-light
     name: The Beacon Dog Safety Light
@@ -2645,7 +2603,6 @@ products:
       name: ""
       url: ""
     relatedGuides:
-      - new-years-eve-with-a-dog-in-a-vacation-rental
       - if-your-dog-gets-loose-on-a-trip
     manufacturerClaimsVsIndependentTesting: Run time and waterproof depth are maker figures. Tree Line Review lists the same 1 m / 30 min rating under its pick but does not state it re-tested it.
   - id: petcube-gps-tracker
@@ -2684,7 +2641,6 @@ products:
       url: ""
     relatedGuides:
       - if-your-dog-gets-loose-on-a-trip
-      - new-years-eve-with-a-dog-in-a-vacation-rental
     manufacturerClaimsVsIndependentTesting: Battery and coverage are maker claims. Tree Line Review compares it but names it an also-ran, not an award pick.
   - id: sleepypod-clickit-sport-plus
     name: Clickit Sport Plus Crash-Tested Harness
@@ -3017,7 +2973,7 @@ products:
       - "Machine washable"
       - "No weight range stated"
     categories:
-      - rental-cleanup
+      - cleanup-and-protection
     summary: "A dog bed and blanket cover; the listing states it is waterproof, reversible and machine washable."
     keySpecs:
       - "Listing states waterproof"
@@ -3053,7 +3009,7 @@ products:
       - "TPU waterproof layer"
       - "Non-slip dot backing"
     categories:
-      - rental-cleanup
+      - cleanup-and-protection
     summary: "A couch cover for dogs; the listing states a TPU waterproof layer, non-slip dot backing and washable."
     keySpecs:
       - "Listing states size 36 x 71 in"
@@ -3193,7 +3149,7 @@ products:
       - "Black"
     categories:
       - car-interior
-      - rental-cleanup
+      - cleanup-and-protection
     summary: "The standard Kurgo Rover Hammock; the listing states 55 x 56 in, black, sold by Amazon.com."
     keySpecs:
       - "Listing states size 55 x 56 in, color black"
@@ -3374,7 +3330,7 @@ products:
       - "Machine washable"
       - "Floor-gripping backing"
     categories:
-      - rental-cleanup
+      - cleanup-and-protection
     summary: "Machine-washable reusable pads sold two to a pack; this listing is the 24 x 36 in size in grey and beige, and the maker lists a floor-gripping backing."
     keySpecs:
       - "Listing states size 24 x 36 in, 2-pack, Grey & Beige"

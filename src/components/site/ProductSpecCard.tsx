@@ -43,7 +43,7 @@ export const SPEC_CARD_STYLE: Record<string, { icon: LucideIcon; tone: Tone }> =
   "trail-and-hiking": { icon: MountainSnow, tone: "sand" },
   "cold-weather": { icon: Snowflake, tone: "sage" },
   "safety-id-first-aid": { icon: BriefcaseMedical, tone: "terracotta" },
-  "rental-cleanup": { icon: Sparkles, tone: "sand" },
+  "cleanup-and-protection": { icon: Sparkles, tone: "sand" },
 };
 
 /** Product-type icons that fit better than the category icon (matched on the product name; first match wins). */

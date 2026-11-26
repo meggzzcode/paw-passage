@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { Save } from "lucide-react";
 import { ToolShell } from "@/components/site/ToolShell";
 import { PackingPlanner } from "@/components/packing/PackingPlanner";
@@ -12,9 +12,9 @@ export const Route = createFileRoute("/tools/packing-list")({
   validateSearch: (search: Record<string, unknown>) => parsePresetSearch(search, packingConfig),
   head: () =>
     pageHead({
-      title: "Dog Travel Packing List Builder | Paws & Passage",
+      title: "Road Trip Packing List for Dogs | Paw & Passage",
       description:
-        "Create a personalized dog travel packing list, customize it, check items off as you pack and print it. Free, with no signup.",
+        "Build a personalized packing list for a road trip adventure with your dog, customize it, check items off as you pack and print it. Free, with no signup.",
       path: "/tools/packing-list",
     }),
   component: Page,
@@ -25,9 +25,9 @@ function Page() {
   const navigate = Route.useNavigate();
   return (
     <ToolShell
-      eyebrow="Free dog-travel planner"
+      eyebrow="Road trip adventures"
       crumb="Packing list"
-      title="Pack for your next adventure."
+      title="Pack for your next road trip adventure."
       intro="Tell us a little about your trip. We'll help you build a packing list for your dog, without the stuff you don't need."
       note={
         <span className="pk-saves inline-flex items-center gap-2">
@@ -36,6 +36,17 @@ function Page() {
         </span>
       }
     >
+      <p className="mb-6 text-sm text-muted-foreground">
+        Looking for things to do along the way? Browse the{" "}
+        <Link
+          to="/collections/$slug"
+          params={{ slug: "road-trip-adventures" }}
+          className="text-primary underline"
+        >
+          Road Trip Adventures
+        </Link>{" "}
+        collection.
+      </p>
       <PackingPlanner
         preset={presetFromSearch(search)}
         onPresetHandled={() => void navigate({ search: {}, replace: true })}

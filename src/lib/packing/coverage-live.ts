@@ -1,9 +1,9 @@
-// The coverage report for the real catalog. Used by the test and by scripts/gear-coverage-report.ts.
+// The coverage report for the real catalog. Used by the test.
 import { products } from "@/content/gear";
 import { liveCategories, tripCollections, featuredProductIds } from "@/content/gear-hub";
 import { resolveProductLink } from "@/content/gear-links";
 import { packingConfig } from "@/content/packing";
-import { classifyCoverage, renderCoverageMarkdown, type CoverageReport } from "./coverage";
+import { classifyCoverage, type CoverageReport } from "./coverage";
 
 /** Products that are deliberately information-only (no button). None today: every active product has a link. */
 export const INFO_ONLY: Record<string, string> = {};
@@ -25,8 +25,4 @@ export function liveCoverage(): CoverageReport {
     },
     infoOnly: INFO_ONLY,
   });
-}
-
-export function liveCoverageMarkdown(): string {
-  return renderCoverageMarkdown(liveCoverage(), packingConfig);
 }

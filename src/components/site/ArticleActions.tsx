@@ -38,7 +38,7 @@ export function ArticleActions({ slug, title }: { slug?: string; title?: string 
       </button>
       {slug && title && site.siteUrl && (
         <a
-          href={`https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent(`${site.siteUrl}/guides/${slug}`)}&media=${encodeURIComponent(`${site.siteUrl}/pins/${slug}.jpg`)}&description=${encodeURIComponent(title)}`}
+          href={`https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent(`${site.siteUrl}/guides/${slug}`)}&media=${encodeURIComponent(`${site.siteUrl}/share/${slug}.jpg`)}&description=${encodeURIComponent(title)}`}
           target="_blank"
           rel="noopener noreferrer"
           className={btn}

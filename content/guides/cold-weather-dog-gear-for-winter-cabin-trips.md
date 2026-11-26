@@ -4,7 +4,6 @@ seoTitle: "Dog Coat or Boots for Winter? Cold Limits"
 seoDescription: "Does your dog need a coat or boots at a winter cabin? See how cold is too cold by dog type, salt and de-icer paw care, size charts and what to buy first."
 dek: Which layer, which boots, and when to skip both. Go by your dog's coat and size, then keep salt off the paws.
 category: Planning
-states: []
 status: published
 approvedBy: Paws & Passage Editors
 approvedOn: 2026-11-19
@@ -27,10 +26,8 @@ faqs:
   - q: What do I do with my dog's wet gear at a rental?
     a: Towel-dry the dog at the door, as ASPCA advises, and keep wipes, towels and wet boots in one spot by the entrance. Hang a wet fleece where it will not drip on a rug, and ask the host about the washer. Ruffwear says to hand wash the boots and air dry them.
 relatedGuides:
-  - christmas-week-in-a-cabin-with-a-dog
   - dog-friendly-cabin-packing-list
   - dog-car-safety-harness-and-crate-guide
-  - vacation-rental-with-a-senior-dog
 relatedProducts:
   - ruffwear-climate-changer-fleece
   - ruffwear-timberline-fuse-vest
@@ -38,7 +35,6 @@ relatedProducts:
   - soggy-doggy-super-shammy-towel
 relatedTools:
   - packing-list
-  - checklist
 sources:
   - title: How cold is too cold for your dog?
     url: https://www.petmd.com/dog/care/how-cold-too-cold-dog
@@ -207,6 +203,6 @@ Soggy Doggy's Super Shammy is a microfiber chenille towel, 31 by 14 inches. One 
 
 [ASPCA](https://www.aspca.org/pet-care/general-pet-care/cold-weather-safety-tips) says never to leave a dog alone in a car in cold weather, and Cornell says the inside can get as cold as a refrigerator. A veterinarian quoted by [NBC News Select](https://www.nbcnews.com/select/shopping/how-to-keep-dogs-warm-winter-rcna239641) says not to leave a dog in the car with the heat off. Unload the dog first, even if the luggage takes a few trips.
 
-Cornell says ethylene glycol antifreeze can be deadly to pets and to clean up spills around vehicles right away. Check the cabin's parking area before the dog does. Try the coat and boots on a short walk the day you arrive, not at dusk, and take the vest off before a nap so nothing catches. For an older dog, see our [senior dog guide](/guides/vacation-rental-with-a-senior-dog).
+Cornell says ethylene glycol antifreeze can be deadly to pets and to clean up spills around vehicles right away. Check the cabin's parking area before the dog does. Try the coat and boots on a short walk the day you arrive, not at dusk, and take the vest off before a nap so nothing catches.
 
-Before you go, measure paws and chest and add the towel to the [packing list tool](/tools/packing-list). The [winter travel gear page](/gear/cold-weather) has more, and the [pre-booking checklist](/tools/checklist) covers the question about what the host puts on paths.
+Before you go, measure paws and chest and add the towel to the [packing list tool](/tools/packing-list). The [winter travel gear page](/gear/cold-weather) has more. Ask wherever you are staying what they put on paths and steps.

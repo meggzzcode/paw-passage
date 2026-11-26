@@ -34,7 +34,7 @@ export const USE_CASE_LABEL: Record<string, string> = {
   "trail-and-hiking": "On the trail",
   "cold-weather": "Cold-weather trips",
   "safety-id-first-aid": "Safety and ID",
-  "rental-cleanup": "Rental cleanup",
+  "cleanup-and-protection": "Cleanup and protection",
 };
 
 const NO_TESTING = /^none cited\.?$/i;

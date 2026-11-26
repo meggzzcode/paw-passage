@@ -4,7 +4,6 @@ seoTitle: "Dog Got Loose on Vacation: First Hour Plan"
 seoDescription: "Dog got loose on vacation? Do these three things first, then who to call, what to say, and how to prepare ID, chip and tracker for the next trip."
 dek: The first hour is for searching and calling, in that order. Then the ID, chip and rental habits that make a safe return likelier.
 category: Planning
-states: []
 status: published
 approvedBy: Paws & Passage Editors
 approvedOn: 2026-11-18
@@ -26,18 +25,10 @@ faqs:
   - q: How do I stop my dog escaping from a vacation rental?
     a: Treat arrival as the riskiest moment, with one person holding the dog while another handles the bags, and keep a leash on for every outing. Ask the host what closes the yard and who opens the gates. A pen is a supervised tool, not a fence.
 relatedGuides:
-  - pet-friendly-vacation-rental-checklist
-  - vacation-rental-secure-fenced-yard
   - portable-dog-fence-and-playpen-guide-for-rentals
-  - new-years-eve-with-a-dog-in-a-vacation-rental
   - dog-friendly-cabin-packing-list
-  - can-you-leave-a-dog-alone-in-a-vacation-rental
-  - can-dogs-go-in-a-rental-pool-or-hot-tub
-  - vacation-rental-with-a-reactive-dog
-  - christmas-week-in-a-cabin-with-a-dog
   - dog-hiking-gear-for-a-cabin-vacation
 relatedTools:
-  - checklist
   - packing-list
 relatedProducts:
   - tractive-dog-6
@@ -210,7 +201,7 @@ Most of this takes ten minutes and no purchase.
 - [ ] **Tag on the collar** with your name and a number you will answer, plus a second number for a friend or relative ([ASPCA](https://www.aspca.org/pet-care/general-pet-care/finding-lost-pet)). Engrave or stamp it rather than use a sticker, and check the ring for wear.
 - [ ] **Microchip record current.** A chip is not a GPS; the number is like a blank tag until it is registered with your details, and [AKC Reunite](https://www.akcreunite.org/travel/) says to verify your enrollment before you travel. Find the chip number and registry (a vet can scan the chip), check the phone, email and alternate contacts on file, add one who lives outside your area, and save the registry's number in your phone. AAHA's free lookup tool shows which participating registries hold a chip; contact that registry to change the record.
 - [ ] **Make arrival the careful part.** [Patch](https://patch.com/massachusetts/across-ma/july-4-fireworks-cause-spike-lost-dog-reports-what-ma-pet-owners-should-know) warns that a dog that stays put at home can bolt from a rest stop, rental house, campground or hotel hallway if fireworks go off. One person holds the dog while another handles the bags, and the dog goes out only on a leash. Cornell advises a leash even in a fenced yard when fireworks or storms are the worry.
-- [ ] **Ask what closes the yard.** "Fenced" is not a yard you can trust. Our [secure fenced yard guide](/guides/vacation-rental-secure-fenced-yard) lists the questions and photos to request, and a freestanding pen can give a supervised space; see the [portable pen guide](/guides/portable-dog-fence-and-playpen-guide-for-rentals). Holiday nights carry extra risk; see our [New Year's Eve guide](/guides/new-years-eve-with-a-dog-in-a-vacation-rental#if-your-dog-bolts).
+- [ ] **Ask what closes the yard.** "Fenced" is not a yard you can trust. A freestanding pen can give a supervised space; see the [portable pen guide](/guides/portable-dog-fence-and-playpen-guide-for-rentals).
 
 If you want a tag that is silent on the collar, the WhoseID is a slide-on silicone tag with a QR code and NFC. The listing states a one-time purchase with no subscription and no app required; we could not read the brand's own page, so that is the listing's word. It only helps if the QR profile is filled in and the phone number is current, and a finder needs a phone that can scan it. Keep an engraved tag on the collar too.
 
@@ -236,4 +227,4 @@ A tracker does not stop an escape or tell a finder who you are, so sort out the 
 
 {{pick:ruffwear-the-beacon-dog-safety-light|A light to see the dog after dark|Has a Quick Clip for Ruffwear collars and light loops.|https://ruffwear.com/products/the-beacon-safety-dog-light}}
 
-Next step: run the [trip checklist](/tools/checklist) or add a tag, a flyer and a charger from the [packing list](/tools/packing-list).
+Next step: add a tag, a flyer and a charger from the [packing list](/tools/packing-list).

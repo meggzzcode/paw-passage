@@ -295,11 +295,7 @@ a.pp-card:hover {
   text-decoration: none;
   border-bottom: 2px solid transparent;
 }
-.pp-nav a.pp-navlink:hover,
-a.pp-navlink[aria-current="page"],
-a.pp-navlink.active {
-  border-bottom-color: var(--pp-red);
-}
+/* Active/hover marker is the butter highlight in everyday.css; no second (red) underline. */
 .pp-header-actions {
   display: flex;
   align-items: center;

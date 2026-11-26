@@ -146,6 +146,7 @@ export interface ThemeConfig {
 }
 
 import { EXTRA_THEMES } from "./themes-extra";
+import { MORE_THEMES } from "./themes-more";
 
 const P = (
   bg: string,
@@ -733,7 +734,7 @@ const BASE_THEMES: ThemeConfig[] = [
 ];
 
 export const THEMES: Readonly<Record<string, ThemeConfig>> = Object.fromEntries(
-  [...BASE_THEMES, ...EXTRA_THEMES].map((t) => [t.id, t]),
+  [...BASE_THEMES, ...EXTRA_THEMES, ...MORE_THEMES].map((t) => [t.id, t]),
 );
 
 /** Which themes each family offers. The first one is the family's default. */

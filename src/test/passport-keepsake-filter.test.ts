@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import { readFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 import { THEMES, THEME_REGISTRY, KEEPSAKE_FAMILY_LIST } from "../passport/keepsake/themes";
+import { MORE_THEMES } from "../passport/keepsake/themes-more";
 import { ART_SIZES, type SizeId } from "../passport/keepsake/kit";
 import { placed, type PlacedPhoto } from "../passport/keepsake/photo";
 import {
@@ -136,8 +137,8 @@ describe("filter style registry", () => {
     }
   });
 
-  it("spreads the 95 themes over all styles", () => {
-    expect(THEME_IDS.length).toBeGreaterThanOrEqual(95);
+  it("spreads the 117 themes over all styles", () => {
+    expect(THEME_IDS.length).toBeGreaterThanOrEqual(117);
     const used = new Set(THEME_IDS.map(defaultLookFor));
     expect(used.size).toBe(6);
     const dir = join(__dirname, "../../content/adventures");
@@ -153,6 +154,13 @@ describe("filter style registry", () => {
     expect(new Set(real.map(defaultLookFor)).size).toBeGreaterThanOrEqual(
       Math.floor(real.length * 0.4),
     );
+  });
+
+  it("spreads the newest themes over at least five of the six styles", () => {
+    const fresh = MORE_THEMES.map((t) => defaultLookFor(t.id));
+    expect(MORE_THEMES.length).toBeGreaterThanOrEqual(22);
+    expect(new Set(fresh).size).toBeGreaterThanOrEqual(5);
+    for (const id of MORE_THEMES.map((t) => t.id)) expect(id).toMatch(/^[a-z0-9]+(-[a-z0-9]+)*$/);
   });
 
   it("falls back to the theme's own look when the style is unknown", () => {

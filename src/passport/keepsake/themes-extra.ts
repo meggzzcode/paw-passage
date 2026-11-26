@@ -17,7 +17,7 @@ function pal(s: string): Palette {
   return { bg, bg2, ink, accent, accent2, muted, onAccent: "#ffffff", card };
 }
 
-function x(
+export function x(
   id: string,
   family: KeepsakeFamily,
   label: string,

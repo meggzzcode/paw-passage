@@ -148,18 +148,18 @@ describe("theme registry", () => {
   });
 
   it("offers a wide set of distinct themes in every family", () => {
-    expect(ALL.length).toBeGreaterThanOrEqual(90);
+    expect(ALL.length).toBeGreaterThanOrEqual(117);
     const min: Record<string, number> = {
-      "travel-postcard": 20,
-      "magazine-cover": 9,
-      "id-card": 8,
-      "trading-card": 9,
-      certificate: 9,
-      "seasonal-frame": 9,
-      "event-ticket": 7,
+      "travel-postcard": 30,
+      "magazine-cover": 10,
+      "id-card": 11,
+      "trading-card": 14,
+      certificate: 11,
+      "seasonal-frame": 13,
+      "event-ticket": 10,
       "then-and-now": 1,
-      collage: 6,
-      poster: 9,
+      collage: 7,
+      poster: 10,
     };
     for (const [f, n] of Object.entries(min))
       expect(THEME_REGISTRY[f as keyof typeof THEME_REGISTRY].length, f).toBeGreaterThanOrEqual(n);

@@ -54,6 +54,19 @@ describe("sets, repeats, achievements", () => {
     s = withDone(s, A, 40);
     expect(achievements(s, lib, cols).count).toBe(1);
   });
+  it("skipping, 'not for us', saving or favoriting never earns a stamp or milestone", () => {
+    const s: Save = {
+      ...emptySave(),
+      favorites: add(emptySave().favorites, A, 5),
+      saved: add(emptySave().saved, B, 5),
+      feedback: { [C]: { value: "not-for-us", at: 5 } },
+    };
+    const e = achievements(s, lib, cols);
+    expect(e.count).toBe(0);
+    expect(e.stamps).toEqual([]);
+    expect(e.milestones).toEqual([]);
+    expect(e.collectionsComplete).toEqual([]);
+  });
   it("repeat memories never count as new adventures", () => {
     let s = recordRepeat(recordRepeat(emptySave(), A), A);
     expect(s.repeats[A]).toBe(2);

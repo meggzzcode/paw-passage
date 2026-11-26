@@ -56,15 +56,13 @@ const themeModules = import.meta.glob("../passport/keepsake/themes.ts", { eager:
 const THEME_REGISTRY = Object.values(themeModules)[0]?.THEME_REGISTRY;
 
 describe("free adventure library", () => {
-  it("has 12 free adventure files, at least 9 of them published", () => {
-    // Three rewritten adventures stay draft until they are independently re-scored (see docs/CONTENT-REVIEW.md).
+  it("has only published free adventure files (drafts that fail the bar are deleted)", () => {
     const files = import.meta.glob("../../content/adventures/*.yml", {
       query: "?raw",
       eager: true,
     });
-    expect(Object.keys(files)).toHaveLength(12);
-    expect(adventures.length).toBeGreaterThanOrEqual(9);
-    expect(adventures.length).toBeLessThanOrEqual(12);
+    expect(Object.keys(files)).toHaveLength(adventures.length);
+    expect(adventures.length).toBeGreaterThanOrEqual(10);
     expect(freeLibrary()).toBe(adventures);
     for (const a of adventures) {
       expect(a.access).toBe("free");

@@ -4,9 +4,9 @@ Review date: 2026-11-26. This document is public: it describes only the free adv
 
 **Honest statement about the scores.** The 1 to 10 numbers in each adventure file are the independent reviewer's scores, not the authors' own (the authors scored about 0.8 points higher on average and were judged too generous). Publication bar (chosen by the owner on 2026-11-26): average of at least 7.0 and no criterion below 6, with an editorial goal of 7.5 or more for premium adventures. Nothing has been tested with dogs or owners. The scores are editorial judgements, not customer ratings, and must never be shown or described as such. The bar is an authoring gate, not a quality guarantee.
 
-**Status of the rewritten three.** The Paw-trait Studio, The Little Picnic Club and The Sunrise Breakfast Club each failed the bar on one criterion in the independent re-score. They have been rewritten to address that weakness, and their numbers in the files are our own honest estimates for the new versions, not independent scores. **They still need an independent re-score.** Until then they are `draft`, so the free library temporarily shows 9 published adventures (12 files in all).
+**Status.** The Little Picnic Club and The Sunrise Breakfast Club did not pass the bar after a rewrite and were deleted. The free library is the 10 published adventures.
 
-## Library (12 free files: 9 published, 3 draft awaiting re-score)
+## Library (10 free adventures, all published)
 
 Scores are the independent scores, 1 to 10: Owner appeal, Dog enjoyment, Originality, Adventure factor, Practicality, Memory value. Publish rule: average of at least 7.0 and no score below 6. Rows marked draft show our estimates for the rewritten version, pending an independent re-score.
 
@@ -22,10 +22,6 @@ Scores are the independent scores, 1 to 10: Owner appeal, Dog enjoyment, Origina
 | Tourists in Our Own Town      | 8   | 7   | 6    | 7   | 8    | 8   | 7.33 | published             |
 | A Trip Down Memory Lane       | 8   | 6   | 6    | 6   | 8    | 9   | 7.17 | published             |
 | The Paw-trait Studio          | 8   | 7   | 6    | 6   | 9    | 8   | 7.33 | draft, needs re-score |
-| The Little Picnic Club        | 8   | 7   | 6    | 7   | 8    | 8   | 7.33 | draft, needs re-score |
-| The Sunrise Breakfast Club    | 7   | 7   | 6    | 7   | 7    | 8   | 7.00 | draft, needs re-score |
-
-The three draft rows are not independent scores. Before the rewrite, the independent scores were 7.00 (Paw-trait Studio, adventure factor 5), 7.00 (Little Picnic Club, originality 5) and 6.50 (Sunrise Breakfast Club, dog enjoyment 5), each with one criterion under 6.
 
 The free share of costs is high because the honest cost of most of these really is zero. Eight keepsake families' worth of variety is shown: magazine-cover, id-card, trading-card, travel-postcard, seasonal-frame, event-ticket, poster and then-and-now.
 
@@ -107,8 +103,6 @@ Independent averages (Appeal / Dog / Original / Adventure / Practical / Memory):
 | Tourists in Our Own Town      | 7.33                |
 | A Trip Down Memory Lane       | 7.17                |
 | The Paw-trait Studio          | 7.00                |
-| The Little Picnic Club        | 7.00                |
-| The Sunrise Breakfast Club    | 6.50                |
 
 Free-set mean: 7.36 independent against 8.15 from the authors. **Calibration: the authors scored about 0.8 points higher than the independent reviewer on the free set.** Read the independent column as the more cautious view. Only one free adventure reaches 8.0 on that scale, so the original 8/10 gate was not independently met and the owner moved the bar to 7.0 average with no criterion below 6.
 
@@ -127,7 +121,7 @@ Fixes made after the re-score (ids unchanged, statuses unchanged, publication ga
 - The `review` numbers in all 12 free files are now the independent scores in the table above. Nothing else in the nine unchanged adventures was altered.
 - Three adventures failed the new bar on one criterion each and were rewritten rather than nudged: **The Paw-trait Studio** (adventure factor 5; now a three-set location scout where the dog's choice of where to settle picks the cover location, ending with a quiet cover launch), **The Little Picnic Club** (originality 5; the picnic menu is now made of three smells and the dog orders the dish of the day with their nose, ending with a toast) and **The Sunrise Breakfast Club** (dog enjoyment 5; the dog now leads a short dawn nose-round and finds a toy waiting under the blanket). Ids, keepsake families and themes are unchanged; each stays near home, free or very cheap and carries the welfare lines.
 - The three were rewritten a second time (a hidden scent surprise and dog-chosen props for the Paw-trait Studio; a chef's-surprise toy under a napkin and a toast to the winning dish for the Picnic Club; a paper-or-toy front-page choice and a headline ritual for the Sunrise Club) and are awaiting an independent re-score. They are `draft` and carry our own estimated scores until an independent reviewer re-scores them. If they reach the bar they can return to `published`, and the free library goes back to 12.
-- The free library only returns published adventures; the app and the test suite handle a smaller free set. The library test now expects 12 free files with at least 9 published, and two collections (Doggy Date Club, Seasons Together) are temporarily without a free adventure until the drafts are re-scored.
+- The free library only returns published adventures; the app and the test suite handle a smaller free set. Drafts that fail the bar are deleted, not kept; two collections (Doggy Date Club, Seasons Together) have no free adventure.
 
 ## Third round on the free drafts (2026-11-26)
 

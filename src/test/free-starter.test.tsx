@@ -176,9 +176,18 @@ describe("reveal state in the local save", () => {
 
 describe("free Discover: the introductory flow", () => {
   const show = () => renderUi(<DiscoverPage mode="made" onMode={() => undefined} />);
+  /** Skips (or advances) every remaining question, then finds the adventure. */
+  const finishQuiz = () => {
+    for (let i = 0; i < 12; i++) {
+      const next = screen.queryByRole("button", { name: /^(Skip|Next)$/ });
+      if (!next) break;
+      fireEvent.click(next);
+    }
+    fireEvent.click(screen.getByRole("button", { name: "Find our adventure" }));
+  };
   const start = () => {
     fireEvent.click(screen.getByRole("button", { name: "Find Our First Adventure" }));
-    fireEvent.click(screen.getByRole("button", { name: "Find our adventure" }));
+    finishQuiz();
   };
   const shownTitle = () => getSave().starter?.id;
 
@@ -193,11 +202,12 @@ describe("free Discover: the introductory flow", () => {
       "href",
       "/previews",
     );
-    expect(screen.queryByRole("group", { name: "Life stage" })).toBeNull();
+    expect(screen.queryByRole("group", { name: /life stage/i })).toBeNull();
     fireEvent.click(screen.getByRole("button", { name: "Find Our First Adventure" }));
-    const stage = screen.getByRole("group", { name: "Life stage" });
+    fireEvent.click(screen.getByRole("button", { name: "Skip" })); // the optional name
+    const stage = screen.getByRole("group", { name: /life stage/i });
     fireEvent.click(within(stage).getByRole("button", { name: "Puppy" }));
-    fireEvent.click(screen.getByRole("button", { name: "Find our adventure" }));
+    finishQuiz();
     expect(
       await screen.findByRole("article", { name: "Recommended adventure" }),
     ).toBeInTheDocument();
@@ -221,14 +231,15 @@ describe("free Discover: the introductory flow", () => {
     expect(getSave().starter?.revealedAt).toBeUndefined();
   });
 
-  it("'Not sure' stays unknown", async () => {
+  it("skipped questions stay unknown", async () => {
     await show();
-    fireEvent.click(screen.getByRole("button", { name: "Find Our First Adventure" }));
-    const people = screen.getByRole("group", { name: /unfamiliar people/i });
-    fireEvent.click(within(people).getByRole("button", { name: "Not sure" }));
-    fireEvent.click(screen.getByRole("button", { name: "Find our adventure" }));
+    start();
     await screen.findByRole("article", { name: "Recommended adventure" });
-    expect(getSave().profile.data.people).toBe("unknown");
+    const d = getSave().profile.data;
+    expect(d.lifeStage).toBeUndefined();
+    expect(d.people).toBeUndefined();
+    expect(d.noiseSensitive).toBeUndefined();
+    expect(getSave().owner.data.where).toBeUndefined();
   });
 
   it("lets you ask for another without limit, never repeating one, until the list runs out", async () => {
@@ -295,16 +306,17 @@ describe("free Discover: the introductory flow", () => {
   it("says plainly when nothing is eligible, and shows the pitch", async () => {
     await show();
     fireEvent.click(screen.getByRole("button", { name: "Find Our First Adventure" }));
+    fireEvent.click(screen.getByRole("button", { name: "Skip" }));
     fireEvent.click(
-      within(screen.getByRole("group", { name: "Life stage" })).getByRole("button", {
+      within(screen.getByRole("group", { name: /life stage/i })).getByRole("button", {
         name: "Senior",
       }),
     ); // none of the fixture adventures is meant for a senior
-    fireEvent.click(screen.getByRole("button", { name: "Find our adventure" }));
+    finishQuiz();
     expect(
       await screen.findByRole("heading", { name: "No free adventure fits yet" }),
     ).toBeInTheDocument();
-    expect(screen.getByText(/never suggest something your answers rule out/i)).toBeInTheDocument();
+    expect(screen.getByText(/leave out adventures that do not fit/i)).toBeInTheDocument();
     expect(screen.getByRole("link", { name: "See the full Passport" })).toBeInTheDocument();
     expect(getSave().starter).toBeUndefined();
     expect(screen.queryByRole("article")).toBeNull();

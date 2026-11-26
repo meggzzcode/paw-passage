@@ -93,11 +93,44 @@ describe("allowlist projection", () => {
   it("emits exactly the allowlisted keys and never a forbidden one", () => {
     const p = projectPreview(show("adv-pre001"))!;
     expect(Object.keys(p).sort()).toEqual([...PREVIEW_KEYS].sort());
+    // The allowlist, spelled out: a new public field must be added here on purpose (ownerEffort and stepFree were).
+    expect([...PREVIEW_KEYS].sort()).toEqual(
+      [
+        "id",
+        "title",
+        "teaser",
+        "category",
+        "minutesMin",
+        "minutesMax",
+        "costMin",
+        "costMax",
+        "setting",
+        "effort",
+        "ownerEffort",
+        "stepFree",
+        "needs",
+        "lifeStages",
+        "keepsake",
+        "role",
+        "collections",
+        "access",
+      ].sort(),
+    );
     expect(Object.keys(p.needs).sort()).toEqual(["booking", "car", "food", "water"]);
     expect(Object.keys(p.keepsake).sort()).toEqual(["family", "theme"]);
     const json = JSON.stringify(p);
     for (const k of FORBIDDEN_KEYS) expect(json).not.toContain(`"${k}"`);
     expect(() => assertPreviewShape(p)).not.toThrow();
+  });
+  it("projects ownerEffort from ownerMobility and carries stepFree", () => {
+    const eff = (m: "seated" | "minimal-walking" | "short-walk" | "long-walk") =>
+      projectPreview(show("adv-pre001", { ownerMobility: m }))!.ownerEffort;
+    expect(eff("seated")).toBe("seated");
+    expect(eff("minimal-walking")).toBe("easy-walking");
+    expect(eff("short-walk")).toBe("easy-walking");
+    expect(eff("long-walk")).toBe("active");
+    expect(projectPreview(show("adv-pre001", { stepFree: false }))!.stepFree).toBe(false);
+    expect(JSON.stringify(projectPreview(show("adv-pre001")))).not.toContain("ownerMobility");
   });
   it("fails the shape check if any extra field appears", () => {
     const p = { ...projectPreview(show("adv-pre001"))!, instructions: ["x"] };
@@ -472,5 +505,25 @@ describe("scripts/check-leaks.mjs", () => {
     writeFileSync(join(dirty2, "b.js"), 'const x={access:"premium",instructions:["a","b","c"]};');
     expect(run(dirty2)).toBe(1);
     expect(run(mkdtempSync(join(tmpdir(), "leak-empty-")))).toBe(2);
+  });
+});
+
+describe("match body: mixed households", () => {
+  it("accepts a short list of known life stages and the variable-energy flag", async () => {
+    const { validateMatchBody } = await import("../server/passport/match");
+    const ok = validateMatchBody({
+      dog: { lifeStages: ["puppy", "senior", "puppy"], energyVariable: true },
+    });
+    expect(ok?.dog.lifeStages).toEqual(["puppy", "senior"]);
+    expect(ok?.dog.energyVariable).toBe(true);
+  });
+  it("rejects unknown stages, too many stages and wrong types", async () => {
+    const { validateMatchBody } = await import("../server/passport/match");
+    expect(validateMatchBody({ dog: { lifeStages: ["tiny"] } })).toBeNull();
+    expect(
+      validateMatchBody({ dog: { lifeStages: ["puppy", "adult", "senior", "adult"] } }),
+    ).toBeNull();
+    expect(validateMatchBody({ dog: { lifeStages: "puppy" } })).toBeNull();
+    expect(validateMatchBody({ dog: { energyVariable: "yes" } })).toBeNull();
   });
 });

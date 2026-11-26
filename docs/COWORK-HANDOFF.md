@@ -29,6 +29,7 @@ The single list of things that need the owner's accounts, devices or money. Each
 | CW-PAY-4  | Yes                                                               |
 | CW-PAY-5  | No                                                                |
 | CW-PAY-6  | No (optional gift checkout evaluation)                            |
+| CW-PAY-7  | No (gating: `flags.gifting` stays false until this passes)        |
 | CW-QA-1   | Yes                                                               |
 | CW-ANA-1  | No                                                                |
 | CW-PIN-1  | No                                                                |
@@ -377,6 +378,30 @@ Partner and promotional discounts are done only with Gumroad discount codes. To 
 - **Blocks production?** No. Gift checkout is not a launch blocker and no page on the site mentions gifting.
 - **Safe handling:** Never paste a license code. Change nothing.
 
+## CW-PAY-7
+
+- **Task ID:** CW-PAY-7
+- **Objective:** Verify Gumroad's native "Give as a gift" end to end, then (and only then) set `flags.gifting` to `true` in `src/config/commercial.ts`. Until then the site says nothing about gifting. We build no gift platform: the gift action on `/unlock` links to the same checkout link and price.
+- **What Claude could and could not verify (read this first):** Gumroad's help article 213, "How do I give a product as a gift", could not be read in full from the build environment. From secondary sources only: Gumroad's API has an `is_gift_receiver_purchase` field on a purchase, and a public Gumroad issue (antiwork/gumroad #193) says the intended behavior is that only the recipient gets the license key. Everything else is **UNVERIFIED**: where the seller turns gifting on (and whether it is a per-product or account setting), whether the buyer sees the gift option on the same checkout link or needs a different URL, whether the recipient is emailed a receipt with the license key, whether the buyer also receives a key, whether a refund of the gift purchase disables the recipient's key, and the Gumroad license-verify field names (also CW-PAY-1). The wording on `/unlock` ("On the checkout page, choose the gift option") and in the gift FAQ is therefore UNVERIFIED and must be corrected to match what you see before the flag is turned on.
+- **Why Claude cannot do it:** It needs the seller account, real checkout and a second email address.
+- **URL:** The Gumroad help article https://gumroad.com/help/article/213-how-do-i-give-a-product-as-a-gift and the Gumroad product settings.
+- **Required owner authorization:** Creating one test product or 100%-off test coupon, one test purchase, and one refund of it.
+- **Prerequisite:** CW-PAY-1 to CW-PAY-3 (product, checkout link, license verification) done.
+- **Step-by-step:**
+  1. Read article 213 in full. Write down where the gift setting lives and any restriction (for example, which products or payment methods allow a gift).
+  2. Enable the seller setting that allows gifts for the Adventure Passport product (use a separate test product or a 100% coupon so no real charge is needed).
+  3. Make a test gift purchase as the buyer, using one email address for you and a second email address as the recipient. Note exactly what the buyer sees at checkout and whether it is on the same link as the normal purchase.
+  4. Confirm the RECIPIENT receives a receipt email with a usable license key (and note whether the buyer also receives one; the product design assumes the recipient's is the one that matters).
+  5. On a clean browser profile (the recipient's device), open `/unlock`, enter the recipient's license key under "Activate", and confirm the Passport unlocks. Confirm it starts with that browser's own progress only: the buyer's dog profile, progress and stamps must NOT appear. (In code, `store.activate` in `src/server/passport/store.ts` builds a new customer from an empty save plus the activating device's own local save, never from the purchaser's record. The test `src/test/launch-commerce.test.ts`, "gifted licenses", pins this against a fake Gumroad.)
+  6. Restore test: on a second clean browser, use Restore access with the recipient's key and confirm it reaches the same recipient passport.
+  7. Refund and revocation test: refund the gift purchase in Gumroad. Within about a day (the server re-checks every 24 hours) the recipient's premium library must stop loading, while their free passport and progress stay. Record what Gumroad reports for the key (disabled, refunded) so `provider.ts` maps it (see CW-PAY-1).
+  8. If all of steps 3 to 7 pass, correct the wording on `/unlock` and in the gift FAQ to match what you saw, set `flags.gifting` to `true`, and add the finding to `LAUNCH-CHECKLIST.md` row C9.
+- **Expected outcome:** A pass/fail note for each of steps 3 to 7, and a decision on the flag.
+- **Evidence to capture:** Screenshots of the gift option at checkout and of the recipient's receipt, with the license key hidden.
+- **Return to Claude:** The note. Never paste a license key.
+- **Blocks production?** No.
+- **Safe handling:** Never paste a license code. Refund the test purchase. Leave `flags.gifting` false if any step fails.
+
 ## CW-PUSH-1
 
 - **Task ID:** CW-PUSH-1
@@ -390,11 +415,11 @@ Partner and promotional discounts are done only with Gumroad discount codes. To 
   2. In the Netlify site settings, environment variables, add for the production context: `VAPID_PUBLIC_KEY` (the public key), `VAPID_PRIVATE_KEY` (the private key, mark it secret), `VAPID_SUBJECT` (`mailto:` plus a monitored address), and `NOTIFICATIONS_ENABLED` = `true`. Leave `NOTIFICATIONS_ENABLED` unset for previews.
   3. Trigger a production deploy so the functions see the values.
   4. Open the site on a phone, restore access with your own purchase code, open the notification settings, and turn on weekly reminders with a time about 20 minutes ahead. On iPhone first add the site to the Home Screen (iOS 16.4 or later).
-  5. In the Netlify Functions page open `push-deliver` and check that it appears as scheduled every 15 minutes. Use "Run now" once if needed and read its log: it shows counts only.
+  5. In the Netlify Functions page open `push-deliver`. While push is paused its 15-minute schedule is removed, so it will not show as scheduled; only after the schedule is restored (when notifications are resumed) check that it appears every 15 minutes. Use "Run now" once if needed and read its log: it shows counts only.
   6. Confirm the notification arrives once, opens the Discover page, and that turning it off in settings stops it.
   7. Kill switch drill: set `NOTIFICATIONS_ENABLED` to `false` and redeploy, or write the blob `notifications/flag` = `{"enabled": false}` in the `premium-production` store. Confirm the settings screen hides the option and the log shows `push_run_disabled`.
 - **Expected outcome:** One notification arrives at the chosen time, opens the right page, and opt-out stops it. The function log shows counts, never endpoints or keys.
-- **Evidence to capture:** A screenshot of the notification, the function log line (counts only), and the Functions page showing the 15-minute schedule.
+- **Evidence to capture:** A screenshot of the notification, the function log line (counts only), and, once notifications are resumed and the schedule restored, the Functions page showing the 15-minute schedule.
 - **Return to Claude:** Pass or fail per step, the device and browser, and whether an environment variable change needed a redeploy to take effect (UNVERIFIED in the docs).
 - **Blocks production?** No.
 - **Safe handling:** Never share the private key. If it is ever exposed, generate a new pair, replace both variables, and redeploy; customers re-subscribe automatically on their next visit to settings. Preview deploys do not run the schedule.

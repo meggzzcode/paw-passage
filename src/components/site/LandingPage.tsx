@@ -9,12 +9,6 @@ import type { PreviewItem } from "@/lib/previews";
 
 const FILTERS: Record<PreviewFilterKey, (p: PreviewItem) => boolean> = {
   any: () => true,
-  indoor: (p) => p.setting === "indoor",
-  date: (p) => p.collections.includes("doggy-date-club"),
-  puppy: (p) => p.lifeStages.includes("puppy"),
-  senior: (p) => p.lifeStages.includes("senior") && p.effort === "gentle",
-  free: (p) => p.costMax <= 0,
-  weekend: (p) => p.setting !== "indoor" && p.minutesMax >= 90,
 };
 
 export function LandingPage({ slug }: { slug: string }) {
@@ -39,6 +33,23 @@ export function LandingPage({ slug }: { slug: string }) {
             ))}
           </section>
         ))}
+        {l.journal ? (
+          <section className="pp-prose" aria-labelledby="hub-journal">
+            <h2 className="pp-h2" id="hub-journal">
+              Ideas from The Adventure Journal
+            </h2>
+            <p>Each article goes deeper on one kind of day.</p>
+            <ul>
+              {l.journal.map((j) => (
+                <li key={j.slug}>
+                  <AppLink to={`/journal/${j.slug}`} className="pp-textlink">
+                    {j.label}
+                  </AppLink>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ) : null}
         <PreviewCards filter={FILTERS[l.previews.filter]} heading={l.previews.heading} />
         <PurchasePrompt where="landing" />
         <nav aria-label="Related pages" className="pp-related">

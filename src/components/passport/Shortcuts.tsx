@@ -109,7 +109,7 @@ function Matches({
   const raw = rank(library, ctx, s.filters, history, { seed: `sc-${s.slug}` });
   const list = raw.ok ? refineAdventures(s, raw.ranked) : [];
   const heldCount = raw.ok ? raw.held.filter((h) => !s.refine || s.refine(h.adventure)).length : 0;
-  const who = dogName || "your dog";
+  const who = dogName || "your dog or dogs";
 
   if (list.length === 0)
     return (
@@ -118,7 +118,7 @@ function Matches({
         <p>
           {raw.ok && heldCount > 0
             ? `${heldCount} more ${heldCount === 1 ? "needs" : "need"} an answer about ${who} first. You can answer from Made for you.`
-            : `We never suggest something ${who}'s answers rule out, and adventures you have done are left out here.`}
+            : `We start with calmer options when we are unsure, and adventures you have done are left out here.`}
         </p>
       </div>
     );

@@ -1,5 +1,6 @@
 import { allGuides, isPublic } from "@/content/guides";
 import { hasGear, liveCategories } from "@/content/gear-hub";
+import { allJournal } from "@/lib/journal";
 import { collections } from "@/passport/content";
 
 export const staticPaths = [
@@ -9,14 +10,8 @@ export const staticPaths = [
   "/unlock",
   "/faq",
   "/printables",
-  // Landing pages for the main needs (indexable guidance; personalized filter combinations are never listed).
+  // The broad hub (indexable; personalized filter combinations are never listed). Topic pages live in the Journal.
   "/things-to-do-with-your-dog",
-  "/indoor-dog-adventures",
-  "/doggy-date-ideas",
-  "/puppy-bucket-list",
-  "/senior-dog-adventures",
-  "/free-things-to-do-with-your-dog",
-  "/weekend-adventure-finder",
   "/our-story",
   "/guides",
   "/tools/packing-list",
@@ -43,6 +38,18 @@ export function sitemapEntries(): { path: string; lastmod?: string }[] {
   }
   for (const g of allGuides.filter(isPublic))
     out.push({ path: `/guides/${g.slug}`, lastmod: g.lastReviewed });
+  // The Adventure Journal: the index (lastmod = newest article change) and every article with its real modified date.
+  const newest = allJournal
+    .map((a) => a.dateModified)
+    .sort()
+    .at(-1);
+  if (allJournal.length) {
+    out.push({
+      path: "/journal",
+      ...(newest ? { lastmod: newest } : {}),
+    });
+    for (const a of allJournal) out.push({ path: `/journal/${a.slug}`, lastmod: a.dateModified });
+  }
   return out;
 }
 

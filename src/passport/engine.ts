@@ -2,7 +2,15 @@
 // Stage A is hard eligibility: it is never overridden by ranking, randomness, session filters or a wish for more results.
 // Stage B ranks what is left with a deterministic, explainable score.
 // Missing information is UNKNOWN, never "safe": where an unknown fact decides an adventure, it is HELD with a question.
-import type { CustomCollection, DogProfile, OwnerPrefs, Scope, SessionFilters } from "./profile";
+import {
+  ENJOY_LABELS,
+  ENJOY_TYPES,
+  type CustomCollection,
+  type DogProfile,
+  type OwnerPrefs,
+  type Scope,
+  type SessionFilters,
+} from "./profile";
 import type { ActivityType, Adventure } from "./schema";
 
 export type Ctx = { dog: DogProfile; owner: OwnerPrefs; unlocked: boolean };
@@ -51,8 +59,20 @@ export function eligibility(a: Adventure, ctx: Ctx): Verdict {
   if (a.access === "premium" && !ctx.unlocked)
     reasons.push("This adventure is part of the full Passport.");
 
-  if (dog.lifeStage && !a.lifeStages.includes(dog.lifeStage))
-    reasons.push(`This one is not meant for a ${dog.lifeStage}.`);
+  // A mixed household lists several stages: the adventure must suit every one of them (most conservative wins).
+  const stages = [
+    ...new Set([...(dog.lifeStages ?? []), ...(dog.lifeStage ? [dog.lifeStage] : [])]),
+  ];
+  const unsuited = stages.filter((st) => !a.lifeStages.includes(st));
+  if (unsuited.length > 0)
+    reasons.push(
+      stages.length > 1
+        ? "This one does not suit every age in your household."
+        : `This one is not meant for a ${unsuited[0]}.`,
+    );
+  // "It varies" means gentle-to-moderate only, never the liveliest adventures.
+  if (dog.energyVariable && (a.energy === "lively" || a.dogMobility === "high"))
+    reasons.push("Your dog's energy varies, so we keep to gentle and moderate adventures.");
 
   if (a.sizes.length > 0) {
     if (dog.size === undefined) ask(Q.size);
@@ -107,6 +127,44 @@ export function eligibility(a: Adventure, ctx: Ctx): Verdict {
 
   // Reservation-needed adventures stay eligible; the reservation note is surfaced in the UI and in `why`.
   return { eligible: reasons.length === 0 && confirm.length === 0, reasons, confirm };
+}
+
+// ---------- Activity-specific confirmation ----------
+
+export type ActivityConfirm = {
+  /** One concise question about this adventure's single most relevant unknown. */
+  question: string;
+  field: "dogs" | "people" | "crowds" | "noiseSensitive";
+};
+
+/**
+ * The ONE question to ask before an eligible adventure is revealed, when the profile does not say how the dog copes with
+ * the thing this adventure involves (other dogs, new people, busy places, noise). Unknown is never treated as fine, so
+ * a "not sure" answer means "pick another". Returns null when nothing relevant is unknown.
+ */
+export function activityConfirm(a: Adventure, dog: DogProfile): ActivityConfirm | null {
+  const unknown = (v: string | undefined) => v === undefined || v === "unknown";
+  if (a.otherDogs && unknown(dog.dogs))
+    return {
+      field: "dogs",
+      question: "This one may meet other dogs. Is your dog comfortable with that?",
+    };
+  if (a.strangers && unknown(dog.people))
+    return {
+      field: "people",
+      question: "This one may meet new people. Is your dog comfortable with that?",
+    };
+  if (a.crowd !== "none" && unknown(dog.crowds))
+    return {
+      field: "crowds",
+      question: "This one can be busy. Is your dog comfortable in busy places?",
+    };
+  if (a.noise !== "quiet" && unknown(dog.noiseSensitive))
+    return {
+      field: "noiseSensitive",
+      question: "This one can be noisy. Is your dog fine with some noise?",
+    };
+  return null;
 }
 
 // ---------- Session filters (soft) ----------
@@ -229,6 +287,7 @@ export function profileUnknown(dog: DogProfile): boolean {
   const unset = (v: string | undefined) => v === undefined || v === "unknown";
   return (
     dog.lifeStage === undefined &&
+    !dog.lifeStages?.length &&
     unset(dog.people) &&
     unset(dog.dogs) &&
     unset(dog.crowds) &&
@@ -278,13 +337,21 @@ function score(
   if (ownerType && !dogType) note(2, `Matches your taste for ${TYPE_LOVE[ownerType]}`);
   else if (ownerType) s += 1;
 
+  // "What they enjoy" is a soft nudge only: it never rescues an adventure that failed Stage A.
+  const enjoyed = (dog.enjoy ?? []).find((e) =>
+    ENJOY_TYPES[e].some((t) => a.activityTypes.includes(t)),
+  );
+  if (enjoyed && !dogType) note(2.5, `Something they enjoy: ${ENJOY_LABELS[enjoyed]}`);
+  else if (enjoyed) s += 1;
+
   if (h.favorites.has(a.id)) note(2, "One of your favorites");
 
   for (const p of dog.personality ?? []) {
     const m = PERSONALITY_TYPES[p];
     if (a.activityTypes.some((t) => m.types.includes(t))) note(1.5, `Suits ${m.label}`);
   }
-  if (dog.energy && dog.energy === a.energy) note(1.5, `A ${a.energy} pace, like your dog`);
+  if (dog.energy && !dog.energyVariable && dog.energy === a.energy)
+    note(1.5, `A ${a.energy} pace, like your dog`);
 
   const budget = filters.budget ?? owner.typicalBudget;
   if (budget !== undefined) {

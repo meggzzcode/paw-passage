@@ -1,6 +1,7 @@
 // Scheduled delivery against in-memory stores and a FAKE sender (no network): due buckets, idempotence, quiet hours,
 // one general notification per week, pruning, stale items, kill switch, entitlement, bounds and logging hygiene.
 import { randomBytes } from "node:crypto";
+import { readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
 import { MemoryKV } from "../server/passport/kv";
 import { createNotificationsApi, type NotifEnv } from "../server/passport/notifications-api";
@@ -663,5 +664,20 @@ describe("bounds and hygiene", () => {
     const s = await w.run();
     expect(s.pruned).toBe(1);
     expect(w.sent).toHaveLength(0);
+  });
+});
+
+describe("scheduled function while push is paused", () => {
+  const src = readFileSync("netlify/functions/push-deliver.ts", "utf8");
+  it("has no active schedule, keeps the handler, and documents how to restore it", () => {
+    // No uncommented `config` export (the restore line lives only inside a comment).
+    const code = src
+      .split("\n")
+      .filter((l) => !l.trimStart().startsWith("//"))
+      .join("\n");
+    expect(code).not.toMatch(/schedule\s*:/);
+    expect(code).not.toMatch(/export const config/);
+    expect(code).toContain("handleScheduled");
+    expect(src).toContain('export const config = { schedule: "*/15 * * * *" };');
   });
 });

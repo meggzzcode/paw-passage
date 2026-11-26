@@ -5,7 +5,7 @@
 
 /** One short line that says what "Read your dog" is, wherever it appears. */
 export const RYD_EXPLAINER =
-  "Read your dog: three quick signs of how your dog feels, so you know when to ease off.";
+  "Read your dog: three quick signs of how your dog (or each dog) feels, so you know when to ease off.";
 
 export const DOG_SIGNS = {
   relaxed: "Loose body, easy sniffing, comes back by choice.",

@@ -14,6 +14,10 @@ export type PreviewItem = {
   costMax: number;
   setting: "indoor" | "outdoor" | "either";
   effort: "gentle" | "moderate" | "lively";
+  /** Projected from ownerMobility. Optional so an index stored before this field existed still parses. */
+  ownerEffort?: "seated" | "easy-walking" | "active";
+  /** True when no steps or uneven ground are needed. */
+  stepFree?: boolean;
   needs: { car: boolean; booking: boolean; food: boolean; water: boolean };
   lifeStages: ("puppy" | "adult" | "senior")[];
   keepsake: { family: string; theme: string };

@@ -17,7 +17,8 @@ import { has } from "@/passport/progress";
 import { stamps } from "@/passport/content";
 import { track } from "@/passport/events";
 import { usePassport } from "@/passport/usePassport";
-import { Keepsake } from "./Keepsake";
+import { KeepsakeGate } from "./KeepsakeGate";
+import { useKeepsakeEntitled } from "@/passport/useKeepsakeEntitled";
 import { AddToCollection } from "./AddToCollection";
 import { GoodToKnow } from "./ReadYourDog";
 import {
@@ -209,8 +210,9 @@ export function AdventureCard({
   const feedback = save.feedback[a.id]?.value;
   const [memory, setMem] = useState(save.memories[a.id]?.text ?? "");
   const [showKeepsake, setShowKeepsake] = useState(false);
+  const canMakeKeepsake = useKeepsakeEntitled();
   const [note, setNote] = useState("");
-  const dog = dogName || "your dog";
+  const dog = dogName || "your dog or dogs";
   // Restrictions first (yard, people, dogs), then the reassuring labels. Wording is shared with previews.
   const tags = (() => {
     const good = goodLabels(glanceOf(a), a.noise === "quiet");
@@ -353,7 +355,13 @@ export function AdventureCard({
               setShowKeepsake((v) => !v);
             }}
           >
-            {showKeepsake ? "Hide photo filter" : "Make my photo filter"}
+            {showKeepsake
+              ? canMakeKeepsake
+                ? "Hide photo filter"
+                : "Hide keepsake style"
+              : canMakeKeepsake
+                ? "Make my photo filter"
+                : "See the keepsake style"}
           </button>
         ) : (
           <button type="button" className="pp-btn pp-btn-primary" onClick={complete}>
@@ -439,7 +447,7 @@ export function AdventureCard({
       {done && (
         <div className="pd-keepsake">
           {memoryField}
-          {showKeepsake && <Keepsake adventure={a} dogName={dogName} memory={memory} />}
+          {showKeepsake && <KeepsakeGate adventure={a} dogName={dogName} memory={memory} />}
         </div>
       )}
     </article>

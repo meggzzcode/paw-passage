@@ -174,6 +174,38 @@ export function PreviewsPage() {
                 options={[ANY, ["puppy", "Puppy"], ["adult", "Adult"], ["senior", "Senior"]]}
               />
               <Select
+                label="Dog energy"
+                value={f.energy ?? ""}
+                onChange={(v) =>
+                  set(
+                    "energy",
+                    v === "gentle" || v === "moderate" || v === "lively" ? v : undefined,
+                  )
+                }
+                options={[
+                  ANY,
+                  ["gentle", "Gentle"],
+                  ["moderate", "Moderate"],
+                  ["lively", "Lively"],
+                ]}
+              />
+              <Select
+                label="Effort for you"
+                value={f.ownerEffort ?? ""}
+                onChange={(v) =>
+                  set(
+                    "ownerEffort",
+                    v === "seated" || v === "easy-walking" || v === "active" ? v : undefined,
+                  )
+                }
+                options={[
+                  ANY,
+                  ["seated", "Seated"],
+                  ["easy-walking", "Easy walking"],
+                  ["active", "More active"],
+                ]}
+              />
+              <Select
                 label="Kind of adventure"
                 value={f.role ?? ""}
                 onChange={(v) => set("role", v || undefined)}

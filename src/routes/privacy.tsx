@@ -22,7 +22,7 @@ The free Passport needs no account. Your dog's profile, your preferences, favori
 
 ## Photos never leave your device
 
-Keepsakes are made from a photo you choose, entirely on your device. The photo is **not uploaded**, not sent to any server, not included in analytics or error reports, and not saved by the Passport unless you save the finished image yourself. Images you export are re-drawn so they do not carry the original photo's hidden metadata, such as location.
+In the full Passport, keepsakes are made from a photo you choose, entirely on your device. The photo is **not uploaded**, not sent to any server, not included in analytics or error reports, and not saved by the Passport unless you save the finished image yourself. Images you export are re-drawn so they do not carry the original photo's hidden metadata, such as location.
 
 ## If you buy the full Passport
 

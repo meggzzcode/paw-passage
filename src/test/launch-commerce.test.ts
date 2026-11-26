@@ -3,6 +3,7 @@
 // pin OUR behavior given the assumed shape. The model is pull verification (no webhook): refunds are noticed by the
 // 24 hour re-check, so there is no signature to verify; replay and duplicate handling is by purchase reference.
 import { describe, expect, it } from "vitest";
+import { emptySave } from "../passport/progress";
 import { syntheticPremium } from "../passport/fixtures/premium.synthetic";
 import { createApi } from "../server/passport/api";
 import { MemoryKV } from "../server/passport/kv";
@@ -147,5 +148,63 @@ describe("launch: protected premium delivery", () => {
     // Entitled delivery is the only route that carries the text.
     const ok = await w.call("GET", "/api/premium/adventures", { cookie: a.cookie! });
     expect(ok.text).toContain(syntheticPremium[0]!.instructions[0]!);
+  });
+});
+
+describe("launch: gifted licenses (Gumroad gift behavior UNVERIFIED, CW-PAY-7)", () => {
+  // A gift purchase gives the RECIPIENT a license key. From our server's point of view that is an ordinary key: it must
+  // activate whatever session presents it, build a passport from that session's own device only (never the purchaser's),
+  // and a refund or revocation of the gift purchase must end access like any other purchase.
+  const mkSave = (name: string) => ({
+    ...emptySave(),
+    profile: { data: { name }, at: 5 },
+  });
+  it("a key activates independently of who bought it, and never copies the purchaser's profile", async () => {
+    const w = world();
+    // The purchaser activated their own copy earlier, with their own dog profile.
+    const buyer = await w.call("POST", "/api/access/activate", {
+      body: { code: KEY, localSave: mkSave("BuyerDogName") },
+    });
+    expect(buyer.status).toBe(200);
+    // A different, clean device (the recipient) presents a different gifted key for a different purchase reference.
+    w.st.ref = "sale-gift-2";
+    const GIFT = "GIFTED-KEY-WXYZ-9876";
+    const r = await w.call("POST", "/api/access/activate", { body: { code: GIFT } });
+    expect(r.status).toBe(200);
+    expect(JSON.parse(r.text).reason).toBe("activated");
+    expect(w.customers.keys().filter((k) => k.startsWith("customer/"))).toHaveLength(2);
+    expect(r.cookie).not.toBe(buyer.cookie);
+    expect(r.text).not.toContain("BuyerDogName");
+    const prog = await w.call("GET", "/api/progress", { cookie: r.cookie! });
+    expect(prog.text).not.toContain("BuyerDogName");
+    const lib = await w.call("GET", "/api/premium/adventures", { cookie: r.cookie! });
+    expect(lib.status).toBe(200);
+    // The recipient's own device progress is what attaches to the recipient's passport.
+    w.st.ref = "sale-gift-3";
+    const own = await w.call("POST", "/api/access/activate", {
+      body: { code: "GIFTED-KEY-OTHER-0001", localSave: mkSave("RecipientDog") },
+    });
+    expect(own.text).toContain("RecipientDog");
+    expect(own.text).not.toContain("BuyerDogName");
+  });
+  it("revoking or refunding the gift purchase ends the recipient's access at the next check", async () => {
+    const w = world();
+    w.st.ref = "sale-gift-9";
+    const r = await w.call("POST", "/api/access/activate", {
+      body: { code: "GIFTED-KEY-REVOKE-5555" },
+    });
+    expect((await w.call("GET", "/api/premium/adventures", { cookie: r.cookie! })).status).toBe(
+      200,
+    );
+    w.st.mode = "refunded";
+    w.st.t += DAY + 60_000;
+    const gone = await w.call("GET", "/api/premium/adventures", { cookie: r.cookie! });
+    expect(gone.status).toBe(403);
+    expect(gone.text).toContain("refunded");
+    // The purchaser's own, separate purchase is unaffected by the gift's refund.
+    w.st.mode = "valid";
+    w.st.ref = "sale-1";
+    const own = await w.call("POST", "/api/access/activate", { body: { code: KEY } });
+    expect(own.status).toBe(200);
   });
 });

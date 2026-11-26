@@ -179,6 +179,46 @@ describe("previews page", () => {
     expect(screen.getAllByRole("article")).toHaveLength(2);
   });
 
+  it("shows the public 'From a chair' and 'No stairs' badges only when true", async () => {
+    state.data = {
+      items: [
+        item("adv-pre555", { ownerEffort: "seated", stepFree: true }),
+        item("adv-pre666", { ownerEffort: "active", stepFree: false }),
+      ],
+      total: 72,
+      collections: 14,
+    };
+    await renderUi(<PreviewsPage />);
+    const a = screen.getByRole("article", { name: "Mystery adv-pre555" });
+    expect(within(a).getByText("From a chair")).toBeInTheDocument();
+    expect(within(a).getByText("No stairs")).toBeInTheDocument();
+    const b = screen.getByRole("article", { name: "Mystery adv-pre666" });
+    expect(within(b).queryByText("From a chair")).toBeNull();
+    expect(within(b).queryByText("No stairs")).toBeNull();
+  });
+
+  it("filters by dog energy and by owner effort", async () => {
+    state.data = {
+      items: [
+        item("adv-pre555", { ownerEffort: "seated", effort: "gentle" }),
+        item("adv-pre666", { ownerEffort: "active", effort: "lively" }),
+        item("adv-pre777", { effort: "moderate" }),
+      ],
+      total: 72,
+      collections: 14,
+    };
+    await renderUi(<PreviewsPage />);
+    fireEvent.change(screen.getByLabelText("Dog energy"), { target: { value: "lively" } });
+    expect(screen.queryByRole("article", { name: "Mystery adv-pre555" })).toBeNull();
+    expect(screen.getByRole("article", { name: "Mystery adv-pre666" })).toBeInTheDocument();
+    fireEvent.change(screen.getByLabelText("Dog energy"), { target: { value: "" } });
+    fireEvent.change(screen.getByLabelText("Effort for you"), { target: { value: "seated" } });
+    expect(screen.getByRole("article", { name: "Mystery adv-pre555" })).toBeInTheDocument();
+    expect(screen.queryByRole("article", { name: "Mystery adv-pre666" })).toBeNull();
+    // a record without the field (an older index) never matches an owner-effort filter
+    expect(screen.queryByRole("article", { name: "Mystery adv-pre777" })).toBeNull();
+  });
+
   it("filter helpers behave on synthetic items", () => {
     expect(filterPreviews([A, B], { setting: "indoor" }).map((i) => i.id)).toEqual([A.id]);
     expect(premiumPreviews([A, FREE]).map((i) => i.id)).toEqual([A.id]);

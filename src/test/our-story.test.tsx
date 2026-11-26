@@ -11,6 +11,16 @@ import {
 } from "@/passport/local-store";
 
 vi.mock("@/passport/content", async () => (await import("./collections-fixtures")).contentMock);
+const entStatus = vi.hoisted(() => ({ v: "entitled" as "entitled" | "free" }));
+vi.mock("@/passport/useEntitlement", () => ({
+  useEntitlement: () => ({
+    status: entStatus.v,
+    premium: [],
+    signedIn: false,
+    csrf: "",
+    message: null,
+  }),
+}));
 vi.mock("@/components/passport/Keepsake", () => ({
   Keepsake: ({ adventure, memory }: { adventure: { title: string }; memory: string }) => (
     <div data-testid="keepsake">{`${adventure.title}|${memory}`}</div>
@@ -18,6 +28,7 @@ vi.mock("@/components/passport/Keepsake", () => ({
 }));
 
 beforeEach(() => {
+  entStatus.v = "entitled";
   window.localStorage.clear();
   _resetForTests();
 });
@@ -68,8 +79,21 @@ describe("Our Story", () => {
     await renderUi(<StoryTimeline />);
     const li = screen.getByRole("heading", { name: A2.title }).closest("li")!;
     fireEvent.click(within(li).getByRole("button", { name: /Create a keepsake/ }));
-    expect(screen.getByTestId("keepsake")).toHaveTextContent(`${A2.title}|Cozy`);
+    expect(await screen.findByTestId("keepsake")).toHaveTextContent(`${A2.title}|Cozy`);
     expect(JSON.stringify(getSave())).not.toMatch(/data:image|blob:/);
     expect(screen.getByText(/No photos are saved anywhere/)).toBeInTheDocument();
+  });
+
+  it("shows a free visitor the keepsake style, not the editor", async () => {
+    entStatus.v = "free";
+    act(() => {
+      completeAdventure(A2.id, 1000);
+    });
+    await renderUi(<StoryTimeline />);
+    const li = screen.getByRole("heading", { name: A2.title }).closest("li")!;
+    fireEvent.click(within(li).getByRole("button", { name: /See the keepsake style/ }));
+    expect(screen.queryByTestId("keepsake")).toBeNull();
+    expect(li.querySelector('input[type="file"]')).toBeNull();
+    expect(within(li).getByRole("link", { name: /what is included/i })).toBeInTheDocument();
   });
 });

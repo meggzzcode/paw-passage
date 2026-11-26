@@ -108,7 +108,10 @@ export function WelcomePage() {
             <li>The full library is loading on this device</li>
           )}
           <li>Personalized picks, mystery reveals, filters and your own collections</li>
-          <li>More keepsake designs, and progress that follows you to your other devices</li>
+          <li>
+            Personalized keepsakes from your own photos, and progress that follows you to your other
+            devices
+          </li>
         </ul>
       </section>
 

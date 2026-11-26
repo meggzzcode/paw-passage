@@ -37,6 +37,9 @@ export function SiteFooter() {
               <AppLink to={guidesLink.to}>{guidesLink.label}</AppLink>
             </li>
             <li>
+              <AppLink to="/journal">The Adventure Journal</AppLink>
+            </li>
+            <li>
               <AppLink to={unlockCta.to}>{unlockCta.label}</AppLink>
             </li>
             <li>

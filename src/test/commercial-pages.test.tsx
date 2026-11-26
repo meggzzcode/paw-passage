@@ -30,48 +30,54 @@ import { landingHead } from "@/components/site/landing-head";
 import { sitemapEntries } from "@/lib/sitemap-entries";
 import { offer } from "@/config/site";
 
-const PRIORITY = [
-  "/things-to-do-with-your-dog",
-  "/indoor-dog-adventures",
-  "/doggy-date-ideas",
-  "/puppy-bucket-list",
-  "/senior-dog-adventures",
-  "/free-things-to-do-with-your-dog",
-  "/weekend-adventure-finder",
-];
+const REMOVED: Record<string, string> = {
+  "/doggy-date-ideas": "/journal/doggy-date-ideas",
+  "/puppy-bucket-list": "/journal/puppy-bucket-list",
+  "/senior-dog-adventures": "/journal/fun-things-to-do-with-your-senior-dog",
+  "/free-things-to-do-with-your-dog": "/journal/free-things-to-do-with-your-dog",
+  "/weekend-adventure-finder": "/journal/things-to-do-with-your-dog-this-weekend",
+  "/indoor-dog-adventures": "/journal/things-to-do-with-your-dog-at-home",
+};
 
-describe("landing pages", () => {
-  it("covers the seven priority needs, each with a route file and a sitemap entry", () => {
-    expect(LANDINGS.map((l) => l.path).sort()).toEqual([...PRIORITY].sort());
+describe("things-to-do hub and removed landing pages", () => {
+  it("keeps one hub with a route file and a sitemap entry, plus the Journal pages", () => {
+    expect(LANDINGS.map((l) => l.path)).toEqual(["/things-to-do-with-your-dog"]);
+    expect(existsSync("src/routes/things-to-do-with-your-dog.tsx")).toBe(true);
     const sm = sitemapEntries().map((e) => e.path);
-    for (const l of LANDINGS) {
-      expect(existsSync(`src/routes/${l.slug}.tsx`), l.slug).toBe(true);
-      expect(sm, l.path).toContain(l.path);
-    }
+    expect(sm).toContain("/things-to-do-with-your-dog");
+    expect(sm).toContain("/journal");
+    expect(sm.some((p) => p.startsWith("/journal/"))).toBe(true);
     expect(sm).toContain("/faq");
     expect(sm.some((p) => p.includes("?"))).toBe(false);
   });
-  it("has real guidance on each page (500+ words, several sections)", () => {
-    for (const l of LANDINGS) {
-      expect(landingWords(l), l.slug).toBeGreaterThanOrEqual(500);
-      expect(l.sections.length, l.slug).toBeGreaterThanOrEqual(5);
+  it("the hub links to all ten Journal articles and has useful guidance of its own", () => {
+    const hub = LANDINGS[0]!;
+    expect(hub.journal).toHaveLength(10);
+    for (const j of hub.journal!)
+      expect(existsSync(`content/journal/${j.slug}.md`), j.slug).toBe(true);
+    expect(hub.sections.length).toBeGreaterThanOrEqual(5);
+    expect(landingWords(hub)).toBeGreaterThanOrEqual(400);
+  });
+  it("declares a permanent forced 301 for each removed route and keeps no route or sitemap entry", () => {
+    const toml = readFileSync("netlify.toml", "utf8");
+    const sm = sitemapEntries().map((e) => e.path);
+    for (const [from, to] of Object.entries(REMOVED)) {
+      expect(toml).toContain(`from = "${from}"\n  to = "${to}"\n  status = 301\n  force = true`);
+      expect(existsSync(`src/routes${from}.tsx`), from).toBe(false);
+      expect(sm, from).not.toContain(from);
+      expect(existsSync(`content/journal/${to.replace("/journal/", "")}.md`), to).toBe(true);
     }
   });
-  it("has accurate, unique metadata and a canonical for each page", () => {
-    const titles = new Set<string>();
-    for (const l of LANDINGS) {
-      const h = landingHead(l.slug);
-      const title = h.meta.find((m) => "title" in m)?.["title"] ?? "";
-      expect(title.length, title).toBeLessThanOrEqual(60);
-      expect(title.length).toBeGreaterThan(10);
-      titles.add(title);
-      const desc = h.meta.find((m) => m["name"] === "description")?.["content"] ?? "";
-      expect(desc.length).toBeGreaterThan(70);
-      expect(desc.length).toBeLessThanOrEqual(155);
-      expect(h.links[0]?.href.endsWith(l.path)).toBe(true);
-      expect(h.meta.some((m) => m["name"] === "robots")).toBe(false);
-    }
-    expect(titles.size).toBe(LANDINGS.length);
+  it("has accurate, unique metadata and a canonical for the hub", () => {
+    const l = LANDINGS[0]!;
+    const h = landingHead(l.slug);
+    const title = h.meta.find((m) => "title" in m)?.["title"] ?? "";
+    expect(title.length).toBeLessThanOrEqual(60);
+    const desc = h.meta.find((m) => m["name"] === "description")?.["content"] ?? "";
+    expect(desc.length).toBeGreaterThan(70);
+    expect(desc.length).toBeLessThanOrEqual(155);
+    expect(h.links[0]?.href.endsWith(l.path)).toBe(true);
+    expect(h.meta.some((m) => m["name"] === "robots")).toBe(false);
   });
   it("links only to real internal addresses and never to a filter combination", () => {
     for (const l of LANDINGS) {
@@ -79,21 +85,16 @@ describe("landing pages", () => {
       for (const r of l.related) {
         expect(r.to.startsWith("/"), r.to).toBe(true);
         expect(r.to).not.toContain("?");
+        expect(Object.keys(REMOVED)).not.toContain(r.to);
       }
     }
-  });
-  it("explains that the free adventure differs from paid access", () => {
-    const l = LANDINGS.find((x) => x.slug === "free-things-to-do-with-your-dog")!;
-    const t = JSON.stringify(l.sections);
-    expect(t).toMatch(/separate from the paid library/);
-    expect(t).toMatch(/cost nothing extra/);
   });
 });
 
 describe("faq", () => {
-  it("answers all twenty-one questions, with unique ids", () => {
-    expect(FAQS).toHaveLength(21);
-    expect(new Set(FAQS.map((f) => f.id)).size).toBe(21);
+  it("answers all twenty-three questions (no gift question while gifting is off), with unique ids", () => {
+    expect(FAQS).toHaveLength(23);
+    expect(new Set(FAQS.map((f) => f.id)).size).toBe(23);
     const all = FAQS.map((f) => `${f.q} ${f.a}`).join(" ");
     for (const w of [
       "subscription",

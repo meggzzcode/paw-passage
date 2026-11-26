@@ -32,6 +32,18 @@ Pages are server-rendered by TanStack Start (`src/server.ts`, `src/start.ts`). T
 - `starter.ts`: the free visitor's single tailored adventure (`selectStarter`, `savedStarter`), saved in the Save as the optional `starter` field. No network.
 - `local-store.ts`: browser persistence in `localStorage` key `pp.save.v1`, with an in-memory fallback and a visible notice when storage is blocked; JSON export and import.
 - `keepsake/`: canvas renderer, ten families, themes, photo intake (`photo.ts`: in memory only, 20 MB and 2,400 px limits). Nothing in this folder talks to a server or writes to storage.
+
+### Personalized keepsake creation is paid (owner decision, 2026-11-26)
+
+Free visitors can view finished static examples; only entitled customers can upload or take a photo and make a keepsake. The free intro adventure still gives the intro stamp.
+
+- **Gate.** `components/passport/KeepsakeGate.tsx` reads `useEntitlement()`. Only `status === "entitled"` renders the editor. `free`, `checking`, `offline` and `revoked` never do: they render `KeepsakeUnlock.tsx` (a static example, a plain unlock link, no file input, no camera, no canvas) or a short "checking" line. An entitled session keeps full access, and access ends in the same render if the entitlement is revoked.
+- **Lazy delivery.** `components/passport/keepsake-loader.ts` is the only place the editor (`Keepsake.tsx`, `PhotoEditor.tsx`, and through them the template, theme, filter and renderer code in `passport/keepsake/`) and the milestone-card renderer are imported, and both imports are dynamic. They run only after the entitlement check passes, so free visitors never download the editor chunk. Nothing eager imports `passport/keepsake/themes` or `render`: public preview tiles (`PreviewArt`) use a tint derived from the theme id, and the small save/share helpers live in `passport/keepsake/download.ts` so free features (calendar and backup downloads) do not pull keepsake code.
+- **Entry points covered.** The adventure card button ("See the keepsake style" for free visitors, "Make my photo filter" for customers), Our Story ("Create a keepsake"), the free-intro completion (via the card), and the My Passport milestone card. There is no keepsake route. New entry points must go through `KeepsakeGate` or `useKeepsakeEntitled`, never import `Keepsake.tsx` or `keepsake/render` directly (tests in `keepsake-gating.test.tsx` and `our-story.test.tsx` cover the gate).
+- **Photos.** Unchanged: processed on the device only, never uploaded or stored, exports are fresh canvas encodes.
+
+**What this does and does not protect.** The repository is public, so the editor source, templates and themes can be read and run by anyone who clones it. The product gate is entitlement plus lazy delivery: the shipped site does not offer the editor to free visitors and does not send them the editor code, and hiding by CSS is not relied on. It is not DRM. Someone who builds the open source themselves can use the editor, and that is accepted. The paid value is the full library and the supported experience.
+
 - `events.ts`: allow-listed analytics events.
 
 ## Server (`src/server/passport/`)

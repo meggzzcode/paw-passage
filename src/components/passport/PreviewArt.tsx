@@ -1,7 +1,5 @@
 // A collectible mystery tile for a preview, tinted from its keepsake theme. Drawn with CSS only (no canvas, no image
 // fetch), so it is cheap and never shows anything about how the adventure works.
-import { themeFor } from "@/passport/keepsake/themes";
-import type { KeepsakeFamily } from "@/passport/keepsake/themes";
 
 const FAMILY_NAMES: Record<string, string> = {
   "travel-postcard": "Postcard",
@@ -16,18 +14,20 @@ const FAMILY_NAMES: Record<string, string> = {
   poster: "Poster",
 };
 
+// A stable tint from the theme id. The keepsake theme configuration is part of the editor and is not loaded here.
+function hueOf(key: string): number {
+  let h = 0;
+  for (const ch of key) h = (h * 31 + ch.charCodeAt(0)) % 360;
+  return h;
+}
+
 export function PreviewArt({ family, theme }: { family: string; theme: string }) {
-  let bg = "#2b4a63";
-  let bg2 = "#1d3446";
-  let accent = "#f0c36d";
-  let card = "#fbf6ea";
-  let ink = "#14283a";
-  try {
-    const p = themeFor(family as KeepsakeFamily, theme).palette;
-    ({ bg, bg2, accent, card, ink } = p);
-  } catch {
-    /* unknown family: keep the default colors */
-  }
+  const h = hueOf(`${family}/${theme}`);
+  const bg = `hsl(${h} 38% 26%)`;
+  const bg2 = `hsl(${(h + 20) % 360} 42% 17%)`;
+  const accent = `hsl(${(h + 40) % 360} 75% 72%)`;
+  const card = "#fbf6ea";
+  const ink = "#14283a";
   return (
     <div
       className="pv-art"

@@ -1,6 +1,7 @@
 // Product analytics. Only these named events are ever sent, with only the listed small fields.
 // Never put a dog's name, memory text, license code, email or any customer ID in an event.
 import { site } from "@/config/site";
+import { campaignFields } from "@/lib/campaign";
 
 export type EventName =
   | "profile_completed"
@@ -43,7 +44,12 @@ export type EventName =
   | "notification_opened"
   | "adventure_scheduled"
   | "calendar_event_exported"
-  | "scheduled_adventure_completed";
+  | "scheduled_adventure_completed"
+  | "journal_article_view"
+  | "journal_cta_click"
+  | "journal_collection_click"
+  | "journal_related_click"
+  | "journal_preview_click";
 
 const ALLOWED = new Set<EventName>([
   "profile_completed",
@@ -87,6 +93,11 @@ const ALLOWED = new Set<EventName>([
   "adventure_scheduled",
   "calendar_event_exported",
   "scheduled_adventure_completed",
+  "journal_article_view",
+  "journal_cta_click",
+  "journal_collection_click",
+  "journal_related_click",
+  "journal_preview_click",
 ]);
 const FIELD = /^[a-z0-9_-]{1,40}$/;
 
@@ -98,6 +109,9 @@ export function track(
   if (!ALLOWED.has(name)) return false;
   if (!site.ga4MeasurementId || typeof window === "undefined" || !window.gtag) return false;
   const safe: Record<string, string | number | boolean> = {};
+  // Aggregate campaign fields (sanitized utm_*) ride along on the two purchase-funnel events only.
+  if (name === "purchase_cta_clicked" || name === "checkout_started")
+    Object.assign(safe, campaignFields());
   for (const [k, v] of Object.entries(params)) {
     if (!FIELD.test(k)) continue;
     if (typeof v === "string" && !FIELD.test(v)) continue; // slugs and ids only: free text is dropped

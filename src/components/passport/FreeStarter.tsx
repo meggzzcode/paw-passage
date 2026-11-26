@@ -2,15 +2,21 @@
 // Flow: understand the product -> "Find Our First Adventure" -> a few preferences -> a recommendation shown with
 // practical info only (time, cost, setting, effort, prerequisites, restrictions; NOT the steps) -> Accept, or
 // "Show me another" as often as you like (never the same one twice in a session) -> reveal -> complete whenever ->
-// intro stamp and keepsake -> a quiet invitation to the full Passport.
+// intro stamp and a static keepsake example (making one is part of the full Passport) -> a quiet invitation to the full Passport.
 // This is a product choice, not a security gate (the free pool is public). Everything here runs on this device with no
 // network call. Unanswered questions stay UNKNOWN, never "safe". No account, email or card; nothing forces completion.
 import { RevealSurface } from "./RevealSurface";
+import { IntroQuiz } from "./IntroQuiz";
+import { KeepsakeUnlock } from "./KeepsakeUnlock";
+import { activityConfirm } from "@/passport/engine";
+import { parseCtx, type CtxKey } from "@/passport/journal-context";
+import { MULTI_DOG_NOTE, dogWho, hasManyDogs, type DogProfile } from "@/passport/profile";
+import { presetFor } from "@/passport/quiz";
 import { useEffect, useRef, useState } from "react";
 import { AppLink } from "@/components/shell/AppLink";
 import { Container } from "@/components/shell/Container";
 import { StampGrid } from "@/passport/art/stamps";
-import { getSave, revealStarter, setOwner, setStarter } from "@/passport/local-store";
+import { getSave, revealStarter, setProfile, setStarter } from "@/passport/local-store";
 import { has } from "@/passport/progress";
 import { PREVIEWS_PATH, isRevealed, savedStarter, selectStarter } from "@/passport/starter";
 import { usePassport } from "@/passport/usePassport";
@@ -20,10 +26,46 @@ import { AdventureCard, Chips } from "./AdventureCard";
 import { useAdventureLibrary } from "./collections-shared";
 import { flow } from "./flow-events";
 import { PreviewMatch } from "./PreviewMatch";
-import { COMFORT, Choice, patch } from "./ProfileEditor";
 import { needChips, glanceOf, suitabilityNotes, SUPPLY_LABELS } from "./labels";
 
-export const FREE_PROMISE = "Tell us about your dog. Get one adventure picked for them, free.";
+export const FREE_PROMISE =
+  "Tell us about your dog or dogs. Get one adventure picked for them, free.";
+
+/** One concise safety question before this adventure's reveal, using the same "confirm" idea as held adventures. */
+function ConfirmBeforeReveal({ a, onAnother }: { a: Adventure; onAnother: () => void }) {
+  const { profile } = usePassport();
+  const ask = activityConfirm(a, profile);
+  if (!ask) return null;
+  const nervous = ask.field === "noiseSensitive" ? "yes" : "nervous";
+  const fine = ask.field === "noiseSensitive" ? "no" : "comfortable";
+  const save = (v: string) => setProfile({ [ask.field]: v } as Partial<DogProfile>);
+  return (
+    <div className="pd-question" role="group" aria-label="Before you reveal">
+      <p className="pd-qtext">{ask.question}</p>
+      <div className="pa-chips">
+        <button type="button" className="pa-chip" onClick={() => save(fine)}>
+          Yes, that is fine
+        </button>
+        <button
+          type="button"
+          className="pa-chip"
+          onClick={() => {
+            save(nervous);
+            onAnother();
+          }}
+        >
+          No, find another
+        </button>
+        <button type="button" className="pa-chip" onClick={onAnother}>
+          Not sure, find another
+        </button>
+      </div>
+      <p className="pa-fine">
+        We never guess about your dog, so an unsure answer means another pick.
+      </p>
+    </div>
+  );
+}
 
 /** The unlock pitch. Pass the live summary where the page already fetches it; otherwise it uses the fallback wording. */
 export function UnlockPitch({
@@ -77,140 +119,6 @@ function SkipAheadLine() {
   );
 }
 
-function Survey({ onSubmit, submitLabel }: { onSubmit: () => void; submitLabel: string }) {
-  const { profile: p, save } = usePassport();
-  const owner = save.owner.data;
-  return (
-    <section className="pa-panel" aria-labelledby="fs-survey-h">
-      <h2 className="pa-h" id="fs-survey-h">
-        Who's coming on the adventure?
-      </h2>
-      <p className="pa-sub">
-        A few quick taps. Skip anything you are not sure about: “Not sure” is kept as unknown, and
-        we only pick something your answers allow. Nothing leaves this device.
-      </p>
-      <div className="pd-editor">
-        <label className="pa-field">
-          <span>Your dog's name (optional)</span>
-          <input
-            value={p.name ?? ""}
-            maxLength={30}
-            autoComplete="off"
-            onChange={(e) => patch({ name: e.target.value || undefined })}
-          />
-        </label>
-        <Choice
-          legend="Life stage"
-          options={[
-            { value: "puppy", label: "Puppy" },
-            { value: "adult", label: "Adult" },
-            { value: "senior", label: "Senior" },
-            { value: undefined, label: "Not sure" },
-          ]}
-          value={p.lifeStage}
-          onChange={(v) => patch({ lifeStage: v })}
-        />
-        <Choice
-          legend="Energy"
-          options={[
-            { value: "gentle", label: "Gentle" },
-            { value: "moderate", label: "Moderate" },
-            { value: "lively", label: "Lively" },
-            { value: undefined, label: "Not sure" },
-          ]}
-          value={p.energy}
-          onChange={(v) => patch({ energy: v })}
-        />
-        <Choice
-          legend="Size"
-          options={[
-            { value: "small", label: "Small" },
-            { value: "medium", label: "Medium" },
-            { value: "large", label: "Large" },
-            { value: undefined, label: "Not sure" },
-          ]}
-          value={p.size}
-          onChange={(v) => patch({ size: v })}
-        />
-        <Choice
-          legend="With unfamiliar people"
-          options={COMFORT}
-          value={p.people}
-          onChange={(v) => patch({ people: v })}
-        />
-        <Choice
-          legend="Around other dogs"
-          options={COMFORT}
-          value={p.dogs}
-          onChange={(v) => patch({ dogs: v })}
-        />
-        <details className="pa-fold">
-          <summary>A few more that help (optional)</summary>
-          <div className="pa-fold-body pd-editor">
-            <Choice
-              legend="Loud noises bother them"
-              options={[
-                { value: "yes", label: "Yes" },
-                { value: "no", label: "No" },
-                { value: "unknown", label: "Not sure" },
-              ]}
-              value={p.noiseSensitive}
-              onChange={(v) => patch({ noiseSensitive: v })}
-            />
-            <Choice
-              legend="Treats and food games are okay"
-              options={[
-                { value: "yes", label: "Yes" },
-                { value: "no", label: "No" },
-                { value: "unknown", label: "Not sure" },
-              ]}
-              value={p.foodActivities}
-              onChange={(v) => patch({ foodActivities: v })}
-            />
-            <Choice
-              legend="Moves slowly or not far"
-              hint="Only you know what is right for your dog. This just keeps longer outings out of the pick."
-              options={[
-                { value: true, label: "Yes" },
-                { value: false, label: "No" },
-                { value: undefined, label: "Not sure" },
-              ]}
-              value={p.limitedMobility}
-              onChange={(v) => patch({ limitedMobility: v })}
-            />
-            <Choice
-              legend="How much walking do you want"
-              options={[
-                { value: "seated", label: "None, I'd rather sit" },
-                { value: "short-walk", label: "A short walk" },
-                { value: "long-walk", label: "A longer walk" },
-                { value: undefined, label: "Not sure" },
-              ]}
-              value={owner.mobility}
-              onChange={(v) => setOwner({ mobility: v } as never)}
-            />
-            <Choice
-              legend="A car is handy"
-              options={[
-                { value: "yes", label: "Yes" },
-                { value: "no", label: "No" },
-                { value: "unknown", label: "Not sure" },
-              ]}
-              value={owner.hasCar}
-              onChange={(v) => setOwner({ hasCar: v } as never)}
-            />
-          </div>
-        </details>
-      </div>
-      <div className="pa-row">
-        <button type="button" className="pp-btn pp-btn-primary" onClick={onSubmit}>
-          {submitLabel}
-        </button>
-      </div>
-    </section>
-  );
-}
-
 /** The recommendation: practical facts only. The title, steps and twist stay a surprise until you accept. */
 function Recommendation({
   a,
@@ -227,6 +135,8 @@ function Recommendation({
   onAnother: () => void;
   onChange: () => void;
 }) {
+  const { profile } = usePassport();
+  const needsConfirm = activityConfirm(a, profile) !== null;
   const notes = [
     ...suitabilityNotes(a),
     ...needChips(glanceOf(a)).filter((n) => !n.startsWith("Involves food")),
@@ -258,11 +168,16 @@ function Recommendation({
           </p>
         )}
         <div className="pa-actions">
-          <RevealSurface adventureId={a.id} onReveal={onAccept} />
+          {needsConfirm ? (
+            <ConfirmBeforeReveal a={a} onAnother={onAnother} />
+          ) : (
+            <RevealSurface adventureId={a.id} onReveal={onAccept} />
+          )}
           <button type="button" className="pp-btn pp-btn-ghost" onClick={onAnother}>
             Show me another
           </button>
         </div>
+        {hasManyDogs(dogName) && <p className="pa-fine">{MULTI_DOG_NOTE}</p>}
       </article>
       <p className="pa-fine">
         Not the right fit? Show me another as many times as you like.{" "}
@@ -294,11 +209,12 @@ function writeOffered(s: Set<string>) {
   }
 }
 
-export function FreeStarter() {
+export function FreeStarter({ ctx }: { ctx?: CtxKey | undefined } = {}) {
   const { ready, save } = usePassport();
   const { all: library, status } = useAdventureLibrary();
   const [stage, setStage] = useState<"welcome" | "survey">("welcome");
-  const [none, setNone] = useState<"nothing" | "seen-all" | null>(null);
+  const [none, setNone] = useState<"nothing" | "seen-all" | "narrow" | null>(null);
+  const [quizMode, setQuizMode] = useState<"first" | "edit">("first");
   const offered = useRef<Set<string> | null>(null);
   const wasDone = useRef<boolean | null>(null);
 
@@ -322,11 +238,11 @@ export function FreeStarter() {
   const seen = (): Set<string> => (offered.current ??= readOffered());
   const dogName = save.profile.data.name;
 
-  function pickNext(replace: boolean) {
+  function pickNext(replace: boolean, relax = false) {
     const s = seen();
     const cur = getSave().starter?.id;
     if (cur) s.add(cur);
-    const pick = selectStarter(library, getSave(), s);
+    const pick = selectStarter(library, getSave(), s, { relax });
     if (pick.ok) {
       s.add(pick.adventure.id);
       writeOffered(s);
@@ -337,9 +253,15 @@ export function FreeStarter() {
       return;
     }
     // Never leave a pick the answers rule out, and say which kind of "nothing" this is.
-    const anyLeft = selectStarter(library, getSave()).ok;
+    const again = selectStarter(library, getSave(), new Set(), { relax });
     setStarter(null);
-    setNone(anyLeft ? "seen-all" : "nothing");
+    setNone(
+      again.ok
+        ? "seen-all"
+        : !relax && selectStarter(library, getSave(), new Set(), { relax: true }).ok
+          ? "narrow"
+          : "nothing",
+    );
     setStage("welcome");
   }
 
@@ -362,8 +284,7 @@ export function FreeStarter() {
       <>
         <h1 className="pa-h1">Your first adventure</h1>
         <p className="pa-sub">
-          {dogName ? `Picked for ${dogName}` : "Picked for your dog"}. It stays here, free, so you
-          can come back to it any time.
+          Picked for {dogWho(dogName)}. It stays here, free, so you can come back to it any time.
         </p>
         <AdventureCard a={adventure} dogName={dogName} />
         {done ? (
@@ -373,9 +294,7 @@ export function FreeStarter() {
                 Your first stamp
               </h2>
               <StampGrid earned={["first-adventure"]} slugs={["first-adventure"]} size={112} />
-              <p className="pa-fine">
-                Added to your passport. Make a keepsake from your photo above whenever you like.
-              </p>
+              <p className="pa-fine">Added to your passport.</p>
             </section>
             <p className="pa-fine" id="fs-storage-note">
               Your progress is kept on this device, in this browser, and nothing is uploaded. If you
@@ -383,6 +302,7 @@ export function FreeStarter() {
               browser, another device, or a home-screen shortcut, which keeps its own separate
               storage), it will not be there. Exporting a backup from My Passport is optional.
             </p>
+            <KeepsakeUnlock where="intro-complete" family={adventure.keepsake.family} />
             <UnlockPitch where="intro-complete" />
           </>
         ) : (
@@ -404,6 +324,7 @@ export function FreeStarter() {
           onAccept={accept}
           onAnother={() => pickNext(true)}
           onChange={() => {
+            setQuizMode("edit");
             setStage("survey");
           }}
         />
@@ -414,13 +335,19 @@ export function FreeStarter() {
     body = (
       <>
         <h1 className="pa-h1">
-          {none === "seen-all" ? "That was every free fit" : "No free adventure fits yet"}
+          {none === "seen-all"
+            ? "That was every free fit"
+            : none === "narrow"
+              ? "Nothing free fits all of that"
+              : "No free adventure fits yet"}
         </h1>
         <div className="pa-card" role="status">
           <p>
             {none === "seen-all"
               ? "You have seen every free adventure that suits what you told us. We can start the list over, or you can change your answers."
-              : "None of the free adventures suits what you told us, and we never suggest something your answers rule out. The full Passport has far more to choose from."}
+              : none === "narrow"
+                ? "Free adventures suit your dog, but none fits your where, time and spend answers together. You can widen those, or change your answers."
+                : "None of the free adventures suits what you told us. We use your answers to leave out adventures that do not fit. The full Passport has far more to choose from."}
           </p>
           <div className="pa-row">
             {none === "seen-all" && (
@@ -436,10 +363,26 @@ export function FreeStarter() {
                 Start the list over
               </button>
             )}
+            {none === "narrow" && (
+              <button
+                type="button"
+                className="pp-btn pp-btn-primary"
+                onClick={() => {
+                  seen().clear();
+                  writeOffered(seen());
+                  pickNext(false, true);
+                }}
+              >
+                Widen where, time and spend
+              </button>
+            )}
             <button
               type="button"
               className="pp-btn pp-btn-secondary"
-              onClick={() => setStage("survey")}
+              onClick={() => {
+                setQuizMode("edit");
+                setStage("survey");
+              }}
             >
               Change my answers
             </button>
@@ -452,8 +395,13 @@ export function FreeStarter() {
     body = (
       <>
         <h1 className="pa-h1">A few quick questions</h1>
-        <Survey
-          onSubmit={submit}
+
+        <IntroQuiz
+          save={save}
+          mode={quizMode}
+          preset={quizMode === "first" ? presetFor(ctx, save) : undefined}
+          onDone={submit}
+          onCancel={() => setStage("welcome")}
           submitLabel={adventure ? "Update my pick" : "Find our adventure"}
         />
       </>
@@ -463,12 +411,13 @@ export function FreeStarter() {
       <>
         <h1 className="pa-h1">Your first adventure is free</h1>
         <p className="pa-sub">{FREE_PROMISE}</p>
+        <KeepsakeUnlock where="intro-start" />
         <section className="pa-panel" aria-labelledby="fs-how-h">
           <h2 className="pa-h" id="fs-how-h">
             How it works
           </h2>
           <ol className="pa-steps">
-            <li>Answer a few quick questions, or skip any with “Not sure”.</li>
+            <li>Answer a few quick questions, or skip any of them.</li>
             <li>
               See a recommendation with the practical details: time, cost, setting and effort.
             </li>
@@ -481,6 +430,7 @@ export function FreeStarter() {
               className="pp-btn pp-btn-primary"
               onClick={() => {
                 flow("intro_started");
+                setQuizMode("first");
                 setStage("survey");
               }}
             >

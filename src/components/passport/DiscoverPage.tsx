@@ -19,6 +19,8 @@ import { listCollections, members, newCollectionId } from "@/passport/progress";
 import { newCollection, setProfile } from "@/passport/local-store";
 import { usePassport } from "@/passport/usePassport";
 import { track } from "@/passport/events";
+import { CtxChip } from "@/components/journal/CtxChip";
+import { ctxToFilters, type CtxKey } from "@/passport/journal-context";
 
 /** Everything the three tabs share: the library, who it is for, and what has been done. */
 function useDiscoverData() {
@@ -39,12 +41,41 @@ function useDiscoverData() {
  * Free visitors get one adventure picked for their dog (a short quiz, then "Your first adventure"). The full
  * browse / mystery / made-for-you experience is for entitled visitors. This is a product choice, not a security gate.
  */
-export function DiscoverPage(props: { mode: DiscoverMode; onMode: (m: DiscoverMode) => void }) {
+export function DiscoverPage(props: {
+  mode: DiscoverMode;
+  onMode: (m: DiscoverMode) => void;
+  /** Validated ?ctx= starting point from an Adventure Journal article. */
+  ctx?: CtxKey;
+  onClearCtx?: () => void;
+}) {
   const { unlocked } = useAdventureLibrary();
-  return unlocked ? <FullDiscover {...props} /> : <FreeStarter />;
+  const chip = props.ctx && props.onClearCtx && (
+    <Container>
+      <CtxChip ctx={props.ctx} onClear={props.onClearCtx} />
+    </Container>
+  );
+  return unlocked ? (
+    <>
+      {chip}
+      <FullDiscover {...props} />
+    </>
+  ) : (
+    <>
+      {chip}
+      <FreeStarter ctx={props.ctx} />
+    </>
+  );
 }
 
-function FullDiscover({ mode, onMode }: { mode: DiscoverMode; onMode: (m: DiscoverMode) => void }) {
+function FullDiscover({
+  mode,
+  onMode,
+  ctx: ctxKey,
+}: {
+  mode: DiscoverMode;
+  onMode: (m: DiscoverMode) => void;
+  ctx?: CtxKey;
+}) {
   const { ready, profile } = usePassport();
   const [onboarding, setOnboarding] = useState(false);
   const [editing, setEditing] = useState(false);
@@ -133,7 +164,13 @@ function FullDiscover({ mode, onMode }: { mode: DiscoverMode; onMode: (m: Discov
         >
           {mode === "made" && <MadeForYou onEditProfile={() => setEditing(true)} />}
           {mode === "surprise" && <SurpriseMe />}
-          {mode === "browse" && <BrowseAll onMode={onMode} />}
+          {mode === "browse" && (
+            <BrowseAll
+              key={ctxKey ?? "none"}
+              onMode={onMode}
+              start={ctxKey ? ctxToFilters(ctxKey) : {}}
+            />
+          )}
         </div>
       </div>
     </Container>
@@ -169,7 +206,7 @@ function Empty({ reason, onReset }: { reason: string; onReset?: (() => void) | u
 }
 
 const NONE_ELIGIBLE =
-  "Nothing in your library suits these answers yet. We never suggest something your answers rule out.";
+  "Nothing in your library suits these answers yet. We start with calmer options when we are unsure.";
 
 function Progress() {
   const { save, library, ctx } = useDiscoverData();
@@ -428,9 +465,16 @@ function SurpriseMe() {
 
 const BROWSE_PAGE = 8;
 
-function BrowseAll({ onMode }: { onMode: (m: DiscoverMode) => void }) {
+function BrowseAll({
+  onMode,
+  start,
+}: {
+  onMode: (m: DiscoverMode) => void;
+  /** Starting filters from an Adventure Journal link: ordinary, removable session filters; the saved profile is never touched. */
+  start: SessionFilters;
+}) {
   const { dog, save, library, ctx, history } = useDiscoverData();
-  const [filters, setFilters] = useState<SessionFilters>({});
+  const [filters, setFilters] = useState<SessionFilters>(start);
   const [shown, setShown] = useState(BROWSE_PAGE);
   const raw = rank(library, ctx, filters, history, { includeDone: true, seed: "browse" });
   const ordered = useStableOrder(

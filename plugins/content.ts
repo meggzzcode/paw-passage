@@ -24,7 +24,12 @@ import {
 } from "../src/content/products-schema";
 import { packingSchema, packingProblems, emptyPackingConfig } from "../src/lib/packing/schema";
 
+import { parseJournalFile } from "../src/lib/journal-parse";
+import type { JournalArticle } from "../src/lib/journal-schema";
+
 const VIRTUAL = "virtual:content";
+/** The Adventure Journal (content/journal/*.md): public articles, all shipped (they are public by definition). */
+const JOURNAL = "virtual:journal";
 /** Folder under content/ that the site build ignores completely (the paid adventure library, imported by script only). */
 export const EXCLUDED_CONTENT_DIR = "premium";
 const RESOLVED = "\0" + VIRTUAL;
@@ -109,6 +114,51 @@ function builtInImageKeys(root: string): Set<string> {
   const start = text.indexOf("export const images");
   const body = start >= 0 ? text.slice(start) : "";
   return new Set([...body.matchAll(/^\s{2}"?([a-z0-9-]+)"?:\s*\{/gm)].map((m) => m[1]!));
+}
+
+/** Reads content/journal/*.md. Cross-reference problems (related, collection, image) are returned, not thrown, so dev stays usable. */
+export function loadJournal(root: string): {
+  articles: JournalArticle[];
+  errors: string[];
+  problems: string[];
+} {
+  const jdir = join(root, "content", "journal");
+  const articles: JournalArticle[] = [];
+  const errors: string[] = [];
+  const problems: string[] = [];
+  if (!existsSync(jdir)) return { articles, errors, problems };
+  for (const f of readdirSync(jdir)
+    .filter((x) => x.endsWith(".md"))
+    .sort()) {
+    const r = parseJournalFile(f, readFileSync(join(jdir, f), "utf8"));
+    if (r.ok) articles.push(r.article);
+    else errors.push(r.error);
+  }
+  const slugs = new Set(articles.map((a) => a.slug));
+  let collectionSlugs = new Set<string>();
+  try {
+    const c = parseYaml(readFileSync(join(root, "content", "collections.yml"), "utf8")) as {
+      collections?: { slug: string }[];
+    };
+    collectionSlugs = new Set((c.collections ?? []).map((x) => x.slug));
+  } catch {
+    /* collections are checked elsewhere */
+  }
+  for (const a of articles) {
+    for (const r of a.related)
+      if (!slugs.has(r))
+        problems.push(`content/journal/${a.slug}.md: related article "${r}" does not exist`);
+    if (collectionSlugs.size && !collectionSlugs.has(a.collection))
+      problems.push(
+        `content/journal/${a.slug}.md: collection "${a.collection}" is not in content/collections.yml`,
+      );
+    if (!existsSync(join(root, "public", a.image)))
+      problems.push(`content/journal/${a.slug}.md: image file public${a.image} is missing`);
+  }
+  articles.sort(
+    (x, y) => y.datePublished.localeCompare(x.datePublished) || x.slug.localeCompare(y.slug),
+  );
+  return { articles, errors, problems };
 }
 
 export function loadContent(
@@ -387,10 +437,26 @@ export function contentPlugin(): Plugin {
     },
     resolveId(id) {
       if (id === VIRTUAL) return RESOLVED;
+      if (id === JOURNAL) return "\0" + JOURNAL;
       if (id === META || id === LOADERS || id.startsWith(ONE)) return "\0" + id;
       return undefined;
     },
     async load(id) {
+      if (id === "\0" + JOURNAL) {
+        const { articles, errors, problems } = loadJournal(root);
+        const jdir = join(root, "content", "journal");
+        if (existsSync(jdir)) for (const f of readdirSync(jdir)) this.addWatchFile(join(jdir, f));
+        if (errors.length)
+          this.error(`\n\nContent problem in the Adventure Journal:\n${errors.join("\n")}\n`);
+        if (problems.length) {
+          if (isBuild)
+            this.error(
+              `\n\nContent problem in the Adventure Journal:\n${problems.map((p) => "  - " + p).join("\n")}\n`,
+            );
+          for (const p of problems) console.warn(`[journal] ${p}`);
+        }
+        return `export const journalArticles = ${JSON.stringify(articles)};`;
+      }
       if (id === "\0" + META || id === "\0" + LOADERS || id.startsWith("\0" + ONE)) {
         try {
           const data = loadContent(root, includeUnpublished(), { skipBrokenDrafts: isBuild });
@@ -444,7 +510,7 @@ export function contentPlugin(): Plugin {
     configureServer(server: ViteDevServer) {
       const refresh = (file: string) => {
         if (!file.includes(`${join(root, "content")}`)) return;
-        for (const rid of [RESOLVED, "\0" + META, "\0" + LOADERS]) {
+        for (const rid of [RESOLVED, "\0" + META, "\0" + LOADERS, "\0" + JOURNAL]) {
           const mod = server.moduleGraph.getModuleById(rid);
           if (mod) server.moduleGraph.invalidateModule(mod);
         }

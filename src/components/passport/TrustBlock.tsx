@@ -21,8 +21,8 @@ export function TrustBlock({
           to another device.
         </li>
         <li>
-          <strong>Photos never leave your device.</strong> Photo filters are made in your browser
-          and are never uploaded.
+          <strong>Photos never leave your device.</strong> Personalized keepsakes in the full
+          Passport are made in your browser and are never uploaded.
         </li>
         <li>
           <strong>Buying adds sync.</strong> With the full Passport your progress follows you across

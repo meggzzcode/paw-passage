@@ -6,7 +6,8 @@ import { AccessForm } from "@/components/passport/AccessForms";
 import { track } from "@/passport/events";
 import { checkoutUrl } from "@/lib/passport-api";
 import { collections } from "@/passport/content";
-import { flags, price, pricing } from "@/config/commercial";
+import { flags, price, pricing, REFUND_SUMMARY, GIFT_CTA } from "@/config/commercial";
+import { DemoAdventure } from "@/components/site/DemoAdventure";
 import { TrustStrip } from "@/components/site/TrustStrip";
 import { unlockLine, usePremiumSummary } from "@/lib/premium-summary";
 import { TrustBlock } from "@/components/passport/TrustBlock";
@@ -68,7 +69,9 @@ function Unlock() {
               <li>
                 Practical details first (time, cost, setting, effort), and another pick if you like
               </li>
-              <li>A stamp for your passport and a keepsake made on your device</li>
+              <li>
+                A stamp for your passport, and the matching keepsake style shown as an example
+              </li>
               <li>Selected previews from the larger collection</li>
               <li>No account, no email, no card</li>
             </ul>
@@ -79,11 +82,6 @@ function Unlock() {
             </h2>
             <p className="pa-price">
               <strong>{price}</strong> <span>{pricing}</span>
-            </p>
-            <p className="pa-fine">
-              <AppLink to="/refund-policy" className="pa-linkbtn">
-                Refund policy
-              </AppLink>
             </p>
             <ul className="co-plain">
               <li>The whole library, in every collection, not just one adventure</li>
@@ -96,14 +94,30 @@ function Unlock() {
               {flags.notifications && (
                 <li>Optional reminders in My Passport, only if you turn them on</li>
               )}
-              <li>Your own collections, and more keepsake designs</li>
+              <li>
+                Personalized keepsakes: make your own from your dog's photo, drawn on your device
+                and never uploaded
+              </li>
+              <li>Your own collections</li>
               <li>Progress that can follow you to your other devices</li>
             </ul>
             <p className="pa-fine">
               Many adventures cost nothing extra to do. Each shows its cost range before you start.
               It is digital, so nothing ships. One purchase covers your household on your own
-              devices, and the Passport keeps one dog profile at a time.
+              devices. The Passport keeps one shared profile, so you can add one dog or several (for
+              example, Luna and Milo) and pick activities that suit every dog.
             </p>
+            <div className="pa-fine" data-testid="refund-terms">
+              <h3 className="pa-h">Refund terms, before you pay</h3>
+              <ul className="co-plain">
+                {REFUND_SUMMARY.map((t) => (
+                  <li key={t}>{t}</li>
+                ))}
+              </ul>
+              <AppLink to="/refund-policy" className="pa-linkbtn">
+                Read the full refund policy
+              </AppLink>
+            </div>
             {link ? (
               <a
                 className="pp-btn pp-btn-primary"
@@ -131,8 +145,27 @@ function Unlock() {
                 </p>
               </>
             )}
+            {flags.gifting && link && (
+              <p className="pa-fine">
+                <a
+                  className="pp-btn pp-btn-secondary"
+                  href={link}
+                  rel="noopener noreferrer"
+                  data-testid="gift-cta"
+                  onClick={() => {
+                    track("purchase_cta_clicked", { where: "unlock-gift" });
+                    track("checkout_started");
+                  }}
+                >
+                  {GIFT_CTA}
+                </a>{" "}
+                Same Passport, same price. On the checkout page, choose the gift option.
+              </p>
+            )}
           </section>
         </div>
+
+        <DemoAdventure open />
 
         <section className="pa-panel" aria-labelledby="faq-h">
           <h2 id="faq-h" className="pa-h">

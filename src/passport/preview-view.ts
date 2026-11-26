@@ -11,6 +11,8 @@ export type PreviewFilters = {
   setting?: "indoor" | "outdoor";
   lifeStage?: "puppy" | "adult" | "senior";
   role?: string;
+  energy?: PreviewItem["effort"];
+  ownerEffort?: NonNullable<PreviewItem["ownerEffort"]>;
 };
 
 export const ROLE_LABELS: Record<string, string> = {
@@ -31,7 +33,9 @@ export function filterPreviews(items: readonly PreviewItem[], f: PreviewFilters)
       (f.budget === undefined || (f.budget === "free" ? i.costMax === 0 : i.costMax <= f.budget)) &&
       (f.setting === undefined || i.setting === f.setting || i.setting === "either") &&
       (f.lifeStage === undefined || i.lifeStages.includes(f.lifeStage)) &&
-      (f.role === undefined || i.role === f.role),
+      (f.role === undefined || i.role === f.role) &&
+      (f.energy === undefined || i.effort === f.energy) &&
+      (f.ownerEffort === undefined || i.ownerEffort === f.ownerEffort),
   );
 }
 

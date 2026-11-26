@@ -17,6 +17,8 @@ export const PREVIEW_KEYS = [
   "costMax",
   "setting",
   "effort",
+  "ownerEffort",
+  "stepFree",
   "needs",
   "lifeStages",
   "keepsake",
@@ -76,6 +78,11 @@ export function teaserProblem(teaser: unknown): string | null {
   return null;
 }
 
+/** Owner effort, projected from ownerMobility: seated | easy-walking (minimal or short walk) | active (long walk). */
+export function ownerEffortOf(m: Adventure["ownerMobility"]): "seated" | "easy-walking" | "active" {
+  return m === "seated" ? "seated" : m === "long-walk" ? "active" : "easy-walking";
+}
+
 /** The public record for one card. Null when the card cannot be shown (not published, no valid teaser). */
 export function projectPreview(a: Adventure): PreviewItem | null {
   if (a.status !== "published") return null;
@@ -92,6 +99,8 @@ export function projectPreview(a: Adventure): PreviewItem | null {
     costMax: a.costMax,
     setting: a.setting,
     effort: a.energy,
+    ownerEffort: ownerEffortOf(a.ownerMobility),
+    stepFree: a.stepFree,
     needs: {
       car: a.transport === "car",
       booking: a.reservation.needed,

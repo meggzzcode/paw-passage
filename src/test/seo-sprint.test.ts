@@ -11,9 +11,11 @@ describe("sitemap lastmod rules", () => {
       expect(e?.lastmod).toMatch(/^\d{4}-\d{2}-\d{2}$/);
     }
   });
-  it("only guides, verified places and verified stays carry a lastmod", () => {
+  it("only guides, journal articles, verified places and verified stays carry a lastmod", () => {
     for (const e of entries.filter((x) => x.lastmod))
-      expect(/^\/(guides|dog-rules|stays)\/|\/things-to-do$/.test(e.path)).toBe(true);
+      expect(/^\/(guides|dog-rules|stays|journal)\/|\/things-to-do$|^\/journal$/.test(e.path)).toBe(
+        true,
+      );
   });
   it("has no duplicate URLs and no query-string (trip view) URLs", () => {
     const paths = entries.map((e) => e.path);

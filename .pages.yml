@@ -1901,6 +1901,100 @@ content:
               required: true,
             }
 
+  # ------------------------------------------------------------ The Adventure Journal
+  - name: journal
+    label: Journal
+    type: collection
+    path: content/journal
+    format: yaml-frontmatter
+    filename: "{primary}.md"
+    view:
+      fields: [title, collection, datePublished, dateModified]
+      primary: title
+      sort: [dateModified, title]
+      default:
+        sort: dateModified
+        order: desc
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: slug
+        label: "Web address ending (must match the file name; do not change after publishing)"
+        type: string
+        required: true
+      - name: description
+        label: "Search description (150 characters or fewer; shown on Google and when shared)"
+        type: text
+        required: true
+        options: { maxlength: 155 }
+      - name: datePublished
+        label: First published (YYYY-MM-DD)
+        type: string
+        required: true
+      - name: dateModified
+        label: "Last meaningfully updated (YYYY-MM-DD; change it when you change the advice)"
+        type: string
+        required: true
+      - name: primaryQuery
+        label: Main search phrase this article answers
+        type: string
+        required: true
+      - name: secondaryQueries
+        label: Related search phrases
+        type: string
+        list: true
+      - name: intent
+        label: What the reader wants (one sentence, for the team)
+        type: text
+      - name: collection
+        label: "Collection to link (the web address ending of a collection, e.g. rainy-day-club)"
+        type: string
+        required: true
+      - name: ctaLabel
+        label: Button text for the find-an-adventure button
+        type: string
+        required: true
+      - name: ctaContext
+        label: Starting point for the quiz
+        type: select
+        required: true
+        options:
+          values:
+            - { value: at-home, label: At home }
+            - { value: rainy-day, label: Rainy day }
+            - { value: weekend, label: This weekend }
+            - { value: doggy-date, label: Doggy date }
+            - { value: no-spend, label: No spend }
+            - { value: bond, label: Bonding }
+            - { value: puppy, label: Puppy }
+            - { value: senior, label: Senior dog }
+            - { value: family, label: Family time }
+            - { value: high-energy, label: High energy }
+      - name: related
+        label: "Two related articles (their web address endings)"
+        type: string
+        list: true
+      - name: image
+        label: "Picture path (e.g. /journal/my-article.webp). Upload new pictures to public/journal"
+        type: string
+        required: true
+      - name: imageAlt
+        label: Describe the picture in one sentence (for screen readers)
+        type: string
+        required: true
+      - name: sources
+        label: Sources you actually read
+        type: object
+        list: true
+        fields:
+          - { name: label, label: Name of the page, type: string }
+          - { name: url, label: Web address, type: string }
+      - name: body
+        label: Article text
+        type: rich-text
+
   # ------------------------------------------------------------ Business settings
   - name: settings
     label: Business settings

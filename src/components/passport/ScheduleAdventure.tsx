@@ -6,7 +6,7 @@ import type { Adventure } from "@/passport/schema";
 import { useEntitlement } from "@/passport/useEntitlement";
 import { track } from "@/passport/events";
 import { buildPlanIcs, REMIND_LABEL } from "@/passport/ics";
-import { downloadBlob } from "@/passport/keepsake/render";
+import { downloadBlob } from "@/passport/keepsake/download";
 import { detectPushSupport, permissionState } from "@/lib/push-support";
 import { deviceTz, getLocalDeviceId, type Plan, type Remind } from "@/lib/notifications";
 import { livePlanFor, pushPlan, savePlan, usePlans } from "@/lib/plans";

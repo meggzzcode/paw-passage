@@ -39,8 +39,8 @@ function copyFor(where: string, count?: number): { lead: string; line: string } 
       };
     case "keepsake":
       return {
-        lead: "Enjoyed making that?",
-        line: "The full Passport adds more keepsake designs and many more adventures to make them from.",
+        lead: "Like that style?",
+        line: "Making your own keepsake from your dog's photo is part of the full Passport.",
       };
     case "intro-complete":
       return {

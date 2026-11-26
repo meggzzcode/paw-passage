@@ -14,7 +14,7 @@ import {
   type AccessFailure,
   type AccessKind,
 } from "@/lib/passport-api";
-import { downloadBlob } from "@/passport/keepsake/render";
+import { downloadBlob } from "@/passport/keepsake/download";
 
 export const FAILURE_TEXT: Record<AccessFailure, string> = {
   invalid_format:

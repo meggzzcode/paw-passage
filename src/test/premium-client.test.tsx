@@ -23,7 +23,7 @@ import { usePassport } from "@/passport/usePassport";
 vi.mock("@/passport/content", async () => (await import("./collections-fixtures")).contentMock);
 vi.mock("@/components/passport/Keepsake", () => ({ Keepsake: () => null }));
 const downloads = vi.hoisted(() => vi.fn());
-vi.mock("@/passport/keepsake/render", () => ({ downloadBlob: downloads }));
+vi.mock("@/passport/keepsake/download", () => ({ downloadBlob: downloads }));
 
 const CODE = "TESTCODE-12345678";
 const PREMIUM = adv("adv-ppp111", "Lighthouse Secret Walk", {

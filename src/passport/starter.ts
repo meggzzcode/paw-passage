@@ -1,7 +1,8 @@
 // The one free introductory adventure. A free visitor answers a short quiz and the engine picks the single best match from the
 // public free pool. Hard eligibility comes first (never overridden), unknown answers are never "safe", and a dog we
 // know nothing about gets the gentle default. No network, no randomness beyond the engine's fixed tie-break.
-import { eligibility, rank, type Ctx, type History } from "./engine";
+import { activityConfirm, eligibility, rank, type Ctx, type History } from "./engine";
+import { starterFilters } from "./quiz";
 import { has, members, type Save } from "./progress";
 import type { Adventure } from "./schema";
 
@@ -9,7 +10,8 @@ import type { Adventure } from "./schema";
 export const PREVIEWS_PATH = "/previews";
 
 export type StarterPick =
-  { ok: true; adventure: Adventure; why: string[] } | { ok: false; reason: "none-eligible" };
+  | { ok: true; adventure: Adventure; why: string[] }
+  | { ok: false; reason: "none-eligible" | "filters-too-narrow" };
 
 const ctxOf = (save: Save): Ctx => ({
   dog: save.profile.data,
@@ -27,21 +29,28 @@ const historyOf = (save: Save): History => ({
 /**
  * Picks the best free adventure for this save's answers. Held (unanswered) adventures are never picked.
  * `exclude` holds ids already offered this session ("show me another" never repeats one).
+ * Where / time / spend answers act as today's filters; `relax` ignores them (hard eligibility still applies).
+ * An adventure that needs no safety question is preferred over one that does.
  */
 export function selectStarter(
   library: Adventure[],
   save: Save,
   exclude: ReadonlySet<string> = new Set(),
+  opts: { relax?: boolean } = {},
 ): StarterPick {
   const free = library.filter((a) => a.access === "free" && !exclude.has(a.id));
   const ctx = ctxOf(save);
   const history = historyOf(save);
+  const filters = opts.relax ? {} : starterFilters(save.owner.data);
+  let narrow = false;
   for (const includeDone of [false, true]) {
-    const r = rank(free, ctx, {}, history, { seed: "starter", includeDone });
-    const top = r.ok ? r.ranked[0] : undefined;
+    const r = rank(free, ctx, filters, history, { seed: "starter", includeDone });
+    if (!r.ok && r.reason === "filters-too-narrow") narrow = true;
+    const list = r.ok ? r.ranked : [];
+    const top = list.find((x) => !activityConfirm(x.adventure, ctx.dog)) ?? list[0];
     if (top) return { ok: true, adventure: top.adventure, why: top.why };
   }
-  return { ok: false, reason: "none-eligible" };
+  return { ok: false, reason: narrow ? "filters-too-narrow" : "none-eligible" };
 }
 
 /** How many free adventures suit the current answers (hard eligibility only). Used for honest "more to see" lines. */

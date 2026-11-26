@@ -14,15 +14,15 @@ export const Route = createFileRoute("/disclaimer")({
     <InfoPage
       title="Disclaimer"
       updated="2026-11-26"
-      body={`Paws & Passage adventures are ideas for spending time with your dog. They are general guidance, not veterinary advice.
+      body={`Paws & Passage adventures are ideas for spending time with your dog. They are general guidance, not veterinary advice. Adventures are enrichment ideas, not behavior treatment or veterinary advice.
 
 ## What this is not
 
-We are not veterinarians or trainers, and nothing here is vet-reviewed. Nothing on this site is veterinary, training, nutrition, medical or legal advice, and no adventure is a treatment or a way to change behavior.
+We are not veterinarians or trainers, and nothing here is vet-reviewed. Nothing on this site is veterinary, training, nutrition, medical or legal advice, and no adventure is intended as a treatment or a way to change behavior. We aim to match adventures to what you tell us, but we cannot know your dog or your surroundings, so we cannot promise that any adventure is right or safe for a particular dog.
 
 ## Your dog, your call
 
-You know your dog best. Check with your veterinarian about your dog's health, diet, fitness and age. Ask a qualified trainer about behavior. Your dog can stop any adventure at any time, and you can change or skip any step.
+You know your dog best. Check with your veterinarian about your dog's health, diet, fitness and age. Ask a qualified trainer about behavior. Your dog can stop any adventure at any time, and you can change or skip any step. If your dog seems unwell, stressed or uncomfortable, stop and ask your veterinarian or a qualified trainer.
 
 ## Your responsibility
 

@@ -12,3 +12,9 @@ declare module "virtual:content" {
   export const settings: SiteSettings;
   export const showDrafts: boolean;
 }
+
+declare module "virtual:journal" {
+  import type { JournalArticle } from "@/lib/journal-schema";
+  /** content/journal/*.md, newest first. */
+  export const journalArticles: JournalArticle[];
+}

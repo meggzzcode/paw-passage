@@ -347,6 +347,43 @@
   status = 301
   force = true
 
+# Landing pages folded into the Journal (the article answers the question; collections show the offering).
+[[redirects]]
+  from = "/doggy-date-ideas"
+  to = "/journal/doggy-date-ideas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/puppy-bucket-list"
+  to = "/journal/puppy-bucket-list"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/senior-dog-adventures"
+  to = "/journal/fun-things-to-do-with-your-senior-dog"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/free-things-to-do-with-your-dog"
+  to = "/journal/free-things-to-do-with-your-dog"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/weekend-adventure-finder"
+  to = "/journal/things-to-do-with-your-dog-this-weekend"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/indoor-dog-adventures"
+  to = "/journal/things-to-do-with-your-dog-at-home"
+  status = 301
+  force = true
+
 # Adventure Passport API (netlify/functions/api.ts). Customer data must never be cached by the CDN or a browser.
 [functions]
   directory = "netlify/functions"

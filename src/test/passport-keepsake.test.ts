@@ -305,7 +305,7 @@ describe("keepsake privacy", () => {
     }
   });
   it("revokes object URLs it creates", () => {
-    const src = readFileSync(join(dir, "render.ts"), "utf8");
+    const src = readFileSync(join(dir, "download.ts"), "utf8");
     const creates = (src.match(/createObjectURL/g) ?? []).length;
     const revokes = (src.match(/revokeObjectURL/g) ?? []).length;
     expect(creates).toBeGreaterThan(0);

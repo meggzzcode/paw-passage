@@ -67,19 +67,15 @@ Autocomplete and related-search widgets were not readable in this environment. B
 
 ## 3. First seven landing pages
 
-All are owned by the site build; this list defines target intent and what the page should do. Each links to /discover and to the matching collections, shows only previews (never premium text), and leads to the one free intro adventure.
+Owner directive (2026-11-26): no separate thin pages for near-identical keywords. The article answers the question; the collection page shows the offering. One broad hub remains, and the topic pages live in The Adventure Journal.
 
-| Path                             | Target intent                       | Page job                                                                                                | Linked collections                        |
-| -------------------------------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------- | ----------------------------------------- |
-| /things-to-do-with-your-dog      | Broad: "things to do with your dog" | Explain the product, show the finder, a handful of previews                                             | the-curious-explorer, five-minute-wonders |
-| /indoor-dog-adventures           | Rainy day, at home, low-energy      | Preview cards filtered to indoor, short                                                                 | rainy-day-club, home-sweet-home           |
-| /doggy-date-ideas                | Date night, Valentine               | Preview cards for the doggy date collection; seasonal in February                                       | doggy-date-club                           |
-| /puppy-bucket-list               | Puppy first-year firsts             | Gentle previews, keepsake angle                                                                         | puppys-first-chapter                      |
-| /senior-dog-adventures           | Older dogs, limited mobility        | Low-effort previews, "your dog can always opt out", vet-check line, no medical claims                   | the-golden-years                          |
-| /free-things-to-do-with-your-dog | Low-cost ideas                      | Previews with cost 0 to low; the one free adventure as the proof; no claim that premium content is free | five-minute-wonders                       |
-| /weekend-adventure-finder        | Weekend plans                       | The finder with time, setting, effort inputs                                                            | the-great-outdoors, city-explorers        |
+| Path                        | Target intent                       | Page job                                                                                 | Linked collections                        |
+| --------------------------- | ----------------------------------- | ---------------------------------------------------------------------------------------- | ----------------------------------------- |
+| /things-to-do-with-your-dog | Broad: "things to do with your dog" | Short hub: routes to the ten Journal articles and the collections, a handful of previews | the-curious-explorer, five-minute-wonders |
 
-Pins point to these paths or /discover. Birthday and keepsake pins point to /things-to-do-with-your-dog or /discover until dedicated pages earn their place.
+The former landing pages (/indoor-dog-adventures, /doggy-date-ideas, /puppy-bucket-list, /senior-dog-adventures, /free-things-to-do-with-your-dog, /weekend-adventure-finder) were removed and 301 to the matching `/journal/<slug>` article (see `netlify.toml`). They were never indexed, so the redirects are hygiene only.
+
+Pins point to the hub, a Journal article or /discover. Birthday and keepsake pins point to /things-to-do-with-your-dog or /discover until dedicated pages earn their place.
 
 ## 4. Seasonal calendar
 
@@ -88,7 +84,7 @@ Uses existing collections only. Never use a deadline, countdown or "limited time
 | Month                | Theme                       | Collections                                                                         | Pin and page focus                                          |
 | -------------------- | --------------------------- | ----------------------------------------------------------------------------------- | ----------------------------------------------------------- |
 | January              | A year of adventures        | seasons-together, the-curious-explorer                                              | "Start a year of little adventures", passport pins          |
-| February             | Valentine, doggy date       | doggy-date-club                                                                     | Date pins, /doggy-date-ideas                                |
+| February             | Valentine, doggy date       | doggy-date-club                                                                     | Date pins, /journal/doggy-date-ideas                        |
 | March to May         | Spring outdoors             | the-great-outdoors, city-explorers                                                  | Weekend and trail pins                                      |
 | June to August       | Summer comfort and vacation | beach-days-and-waterside, road-trip-adventures, camping-companions, home-sweet-home | Heat-aware and indoor-cool framing; travel postcard pins    |
 | September to October | Autumn harvest              | taste-and-treat, seasons-together                                                   | Cozy and neighborhood pins                                  |
@@ -144,3 +140,19 @@ Rules: change one thing at a time; run each test for a fixed period decided in a
 ## 8. Pin assets
 
 See marketing/README.md. 30 initial pins (1000 by 1500) across the directive themes are described in marketing/pins/pins.json; only generic ideas, no premium mechanics.
+
+## 9. Journal pins
+
+The Adventure Journal has ten articles. Each has three pins in marketing/pins/article-pins.json: a practical question or problem, an attractive lifestyle benefit, and a discovery message. Their destinations are the article pages (`/journal/<slug>`) with UTM parameters (`utm_source=pinterest&utm_medium=social&utm_campaign=<slug>-<n>`), so the site can attribute visits to one pin without storing personal data. Pin descriptions are plain prose with no hashtags, never suggest that paid content is free, make no health or behavior claims and reveal nothing about the paid adventures.
+
+Render: `node marketing/pins/generate.mjs --set article` writes 30 PNGs (1000 by 1500) to /home/user/premium-content/export/pins/article/. They are never committed.
+
+### Weekly routine for the owner (about 20 minutes, no paid scheduler)
+
+1. Monday: choose 3 Journal pins, each from a different article, and favor the season or weather (rainy-day pins on wet weeks, weekend pins on Thursdays, doggy-date pins near Valentine's Day).
+2. Upload each PNG on Pinterest, paste `title` and `description` from article-pins.json, and set the link to your site address plus the pin's `destination` exactly as written, UTM included.
+3. Save each pin to a board named for the article theme (for example "Rainy day dog ideas"). Pinterest's own scheduling for business accounts can spread the three across the week at no cost.
+4. Friday: look at outbound clicks per pin in Pinterest analytics and note the best and the weakest `utm_campaign` value.
+5. Each month, retire the weakest pins and re-render a variant by editing the headline in article-pins.json. Keep each article's three angles in rotation, and judge results over several weeks, not days.
+
+Keep a private local note of which pins were posted (do not commit it). The same rules as section 5 apply.

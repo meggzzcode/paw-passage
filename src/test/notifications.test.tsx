@@ -25,7 +25,7 @@ vi.mock("@/components/shell/AppLink", () => ({
     <a href={to}>{children}</a>
   ),
 }));
-vi.mock("@/passport/keepsake/render", () => ({ downloadBlob: vi.fn() }));
+vi.mock("@/passport/keepsake/download", () => ({ downloadBlob: vi.fn() }));
 
 const PREFS = {
   weekly: { enabled: false, day: 6, time: "09:00", tz: "America/Chicago" },

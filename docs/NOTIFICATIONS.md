@@ -2,11 +2,15 @@
 
 Optional, opt-in reminders for paying customers. The website works fully without them: nothing here is needed to buy, use or restore. No permission prompt is ever shown automatically; the client asks only after an explicit tap. Facts come from the code; anything not proven against a live service is marked **UNVERIFIED**.
 
+## Status: paused
+
+Push and the PWA are paused (`PWA_ENABLED=false`, `flags.notifications=false`). The scheduled function `netlify/functions/push-deliver.ts` therefore has **no `config.schedule`** and does not run on its own, so there are no idle invocations. The handler code is unchanged. To restore it when push is relaunched, add `export const config = { schedule: "*/15 * * * *" };` back to that file (the line is kept in a comment there), turn the flags on, and redeploy to production. Everything below describes the design once it is running; the 15-minute figures apply only after the schedule is restored.
+
 ## Architecture
 
 ```
 browser (settings UI, after an explicit tap)        Netlify Function api.ts            Netlify Scheduled Function
-  /api/push/*  /api/notifications/*  /api/schedule/*  --> src/server/passport/        push-deliver.ts, cron */15 (UTC)
+  /api/push/*  /api/notifications/*  /api/schedule/*  --> src/server/passport/        push-deliver.ts (schedule PAUSED)
   cookie pp_session + x-pp-csrf + same-origin           notifications-api.ts            -> push-deliver.ts (runDelivery)
                                                         push-store.ts (customers-<env>)    reads due buckets only
                                                         push-queue.ts (due-bucket index)   -> push-sender.ts -> web-push -> push service

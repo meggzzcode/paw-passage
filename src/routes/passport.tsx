@@ -12,7 +12,10 @@ import { TrustBlock } from "@/components/passport/TrustBlock";
 import { SyncStatus } from "@/components/passport/SyncStatus";
 import { achievements, members } from "@/passport/progress";
 import { clearLocal, exportJson, importJson } from "@/passport/local-store";
-import { downloadBlob, makeKeepsakeBlob } from "@/passport/keepsake/render";
+import { downloadBlob } from "@/passport/keepsake/download";
+import { loadMilestoneRenderer } from "@/components/passport/keepsake-loader";
+import { useKeepsakeEntitled } from "@/passport/useKeepsakeEntitled";
+import { KeepsakeUnlock } from "@/components/passport/KeepsakeUnlock";
 import { usePassport } from "@/passport/usePassport";
 import { track } from "@/passport/events";
 import { pageHead } from "@/lib/seo";
@@ -45,6 +48,7 @@ const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
 function PassportPage() {
   const { ready, save, saveState, profile } = usePassport();
   const { view, plan } = Route.useSearch();
+  const canMake = useKeepsakeEntitled();
   const [msg, setMsg] = useState("");
   const [askDelete, setAskDelete] = useState(false);
   const { all: lib } = useAdventureLibrary();
@@ -140,12 +144,16 @@ function PassportPage() {
               Next milestone at {earned.next} adventures{next ? `: ${next.title}` : ""}.
             </p>
           )}
-          {earned.milestones.length > 0 && (
+          {earned.milestones.length > 0 && !canMake && (
+            <KeepsakeUnlock where="card" family="certificate" />
+          )}
+          {earned.milestones.length > 0 && canMake && (
             <div className="pa-row">
               <button
                 type="button"
                 className="pp-btn pp-btn-secondary"
                 onClick={async () => {
+                  const { makeKeepsakeBlob } = await loadMilestoneRenderer();
                   const b = await makeKeepsakeBlob({
                     template: "milestone-card",
                     dogName: name,
@@ -176,8 +184,8 @@ function PassportPage() {
             </ul>
           ) : (
             <p className="pa-fine">
-              We don't know much about {name === "Your dog" ? "your dog" : name} yet. Anything we
-              don't know is treated as unknown, never as safe.
+              We don't know much about {name === "Your dog" ? "your dog or dogs" : name} yet.
+              Anything we don't know is treated as unknown, never as safe.
             </p>
           )}
           <div className="pa-row">

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Renders Pinterest pin PNGs (1000x1500, 2:3) from marketing/pins/pins.json + templates.
 // Fully offline: local Chromium via Playwright, local fonts, no network requests, nothing written into the repo.
-// Usage: node marketing/pins/generate.mjs [--out DIR] [--only pin-id]
+// Usage: node marketing/pins/generate.mjs [--set main|article] [--out DIR] [--only pin-id]
 import { readFileSync, writeFileSync, mkdirSync, mkdtempSync, rmSync, statSync } from "node:fs";
 import { createRequire } from "node:module";
 import { dirname, join, resolve } from "node:path";
@@ -12,7 +12,15 @@ const here = dirname(fileURLToPath(import.meta.url));
 const root = resolve(here, "../..");
 const args = process.argv.slice(2);
 const arg = (n, d) => (args.includes(n) ? args[args.indexOf(n) + 1] : d);
-const outDir = resolve(arg("--out", "/home/user/premium-content/export/pins"));
+// --set article renders article-pins.json (Journal pins) into .../pins/article by default.
+const set = arg("--set", "main");
+if (!["main", "article"].includes(set)) {
+  console.error("--set must be main or article.");
+  process.exit(1);
+}
+const outDir = resolve(
+  arg("--out", `/home/user/premium-content/export/pins${set === "article" ? "/article" : ""}`),
+);
 const only = arg("--only", null);
 
 if (resolve(outDir).startsWith(root + "/")) {
@@ -67,7 +75,9 @@ function sizeClass(h) {
   return n <= 22 ? "h-xl" : n <= 34 ? "h-lg" : n <= 48 ? "h-md" : "h-sm";
 }
 
-const pins = JSON.parse(read("pins.json")).pins.filter((p) => !only || p.id === only);
+const pins = JSON.parse(read(set === "article" ? "article-pins.json" : "pins.json")).pins.filter(
+  (p) => !only || p.id === only,
+);
 mkdirSync(outDir, { recursive: true });
 const tmp = mkdtempSync(join(tmpdir(), "pp-pins-"));
 

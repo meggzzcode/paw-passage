@@ -62,7 +62,8 @@ export function HeldQuestions({
       </h2>
       <p className="pa-fine">
         {held.length} {held.length === 1 ? "adventure is" : "adventures are"} on hold until we know
-        a little more. Answer to unlock them, or leave them: we never guess.
+        a little more. Answer to include them, or leave them: when we are unsure, we start with
+        calmer options.
       </p>
       <ul className="pd-plain">
         {[...counts.entries()].map(([q, n]) => {

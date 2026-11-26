@@ -201,3 +201,43 @@
     transition: none !important;
   }
 }
+
+/* Intro quiz: one concise question per step, with an honest progress indicator. */
+.pd-quiz-count {
+  margin: 0 0 0.4rem;
+  font-weight: 600;
+}
+.pd-quiz-bar {
+  height: 0.5rem;
+  border-radius: 999px;
+  background: var(--pp-line);
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+.pd-quiz-bar > span {
+  display: block;
+  height: 100%;
+  background: var(--pp-red);
+}
+.pd-quiz .pa-chip {
+  min-height: 44px;
+}
+.pd-quiz-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+.pd-quiz-more {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.pd-quiz .pd-editor > fieldset:only-child > legend {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}

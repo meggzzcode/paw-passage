@@ -6,7 +6,8 @@ import { setMemory } from "@/passport/local-store";
 import { members } from "@/passport/progress";
 import { usePassport } from "@/passport/usePassport";
 import { Button } from "@/components/shell/Button";
-import { Keepsake } from "./Keepsake";
+import { KeepsakeGate } from "./KeepsakeGate";
+import { useKeepsakeEntitled } from "@/passport/useKeepsakeEntitled";
 import { GoodToKnow } from "./ReadYourDog";
 import { useLibrary } from "./collections-shared";
 
@@ -19,6 +20,7 @@ function Entry({ a, at, dogName }: { a: Adventure; at: number; dogName: string |
   const [editing, setEditing] = useState(false);
   const [text, setText] = useState(memory);
   const [keepsake, setKeepsake] = useState(false);
+  const canMake = useKeepsakeEntitled();
   return (
     <li className="pa-card co-entry">
       <p className="pa-kicker">
@@ -101,12 +103,12 @@ function Entry({ a, at, dogName }: { a: Adventure; at: number; dogName: string |
             aria-expanded={keepsake}
             onClick={() => setKeepsake((v) => !v)}
           >
-            {keepsake ? "Hide keepsake" : "Create a keepsake"}
+            {keepsake ? "Hide keepsake" : canMake ? "Create a keepsake" : "See the keepsake style"}
             <span className="sr-only"> for {a.title}</span>
           </button>
         </div>
       )}
-      {keepsake && <Keepsake adventure={a} dogName={dogName} memory={memory} />}
+      {keepsake && <KeepsakeGate adventure={a} dogName={dogName} memory={memory} />}
     </li>
   );
 }
@@ -157,9 +159,9 @@ export function StoryTimeline() {
         </>
       )}
       <p className="pa-fine">
-        Memories are part of your passport progress (text only). No photos are saved anywhere: a
-        keepsake is made on your device from a photo you choose, and you can make it again at any
-        time.
+        Memories are part of your passport progress (text only). No photos are saved anywhere. With
+        the full Passport, a keepsake is made on your device from a photo you choose, and you can
+        make it again at any time.
       </p>
     </>
   );

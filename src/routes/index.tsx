@@ -13,6 +13,7 @@ import { FaqList } from "@/components/site/FaqList";
 import { FAQS } from "@/components/site/faq-content";
 import { PurchasePrompt } from "@/components/site/PurchasePrompt";
 import { ProductDemo } from "@/components/site/ProductDemo";
+import { DemoAdventure } from "@/components/site/DemoAdventure";
 import { SeasonalPicks } from "@/components/site/SeasonalPicks";
 import { TrustStrip } from "@/components/site/TrustStrip";
 import { PreviewCards } from "@/components/site/PreviewCards";
@@ -99,11 +100,14 @@ function Home() {
             <figure className="pp-hero-art">
               <img
                 src="/examples/postcard.webp"
-                alt="A finished postcard keepsake with a sample illustrated dog named Biscuit"
+                alt="An example postcard keepsake with a sample illustrated dog named Biscuit"
                 width={560}
                 height={560}
               />
-              <figcaption>A keepsake you make at the end of an adventure (sample art).</figcaption>
+              <figcaption>
+                An example keepsake style (sample art). Making your own is part of the full
+                Passport.
+              </figcaption>
             </figure>
           </div>
         </Container>
@@ -182,8 +186,9 @@ function Home() {
               <SectionHeading eyebrow="Personalized" title="Picked for your dog" id="discover-h">
                 Answer a few quick taps: your dog's age and energy, how they feel about people, dogs
                 and noise, and whether you have a car or a yard. We pick an adventure that fits. If
-                we do not know something that matters, we ask instead of guessing, and a nervous dog
-                is never sent into a crowd.
+                we do not know something that matters, we ask instead of guessing, and we leave out
+                crowds for dogs who find them hard. Have more than one dog? Add all their names and
+                pick activities that suit every one of them.
               </SectionHeading>
               <p className="mt-4">
                 Before you commit, you see the practical details: time, cost, setting, effort and
@@ -257,14 +262,16 @@ function Home() {
       <section className="pp-section pp-band" aria-labelledby="keepsake-h">
         <Container>
           <SectionHeading eyebrow="Keepsakes" title="Something to keep" id="keepsake-h">
-            Turn a favorite day into a postcard, a magazine cover, a detective ID or a trading card.
-            They are drawn on your own device, your photos are never uploaded, and you can save or
-            print them. The examples below use a sample illustrated dog, not a real customer.
+            The full Passport turns a favorite day into a postcard, a magazine cover, a detective ID
+            or a trading card, made from your own dog's photo. They are drawn on your own device,
+            your photos are never uploaded, and you can save or print them. Free visitors can see
+            the examples below, and the matching style after the free adventure. The examples use a
+            sample illustrated dog, not a real customer.
           </SectionHeading>
           <div className="mt-6">
             <PhotoFilterExamples
               images={FILTER_EXAMPLES}
-              caption="Sample keepsakes drawn by the same tool you will use. Sample dog art, not a customer."
+              caption="Examples drawn by the same tool the full Passport uses. Sample dog art, not a customer."
             />
           </div>
         </Container>
@@ -282,7 +289,7 @@ function Home() {
               <h3>Free</h3>
               <ul className="pp-plainlist-dots">
                 <li>One complete adventure, personalized to your dog</li>
-                <li>A stamp and a keepsake</li>
+                <li>A stamp, and the matching keepsake style as an example</li>
                 <li>Selected previews from the larger collection</li>
                 <li>No account, no email, no card</li>
               </ul>
@@ -295,7 +302,7 @@ function Home() {
               <ul className="pp-plainlist-dots">
                 <li>The whole library in every collection</li>
                 <li>Personalized picks, mystery reveals and filters</li>
-                <li>Your own collections and more keepsake designs</li>
+                <li>Personalized keepsakes from your own photos, and your own collections</li>
                 <li>Progress that can follow you to your other devices</li>
               </ul>
               <p className="mt-4">
@@ -306,8 +313,11 @@ function Home() {
           <p className="pp-fine mt-4">
             Many adventures cost nothing extra to do, and each shows its cost range before you
             start. One purchase covers your household on your own devices, and the Passport keeps
-            one dog profile at a time.
+            one shared profile for one dog or several.
           </p>
+          <div className="mt-6">
+            <DemoAdventure />
+          </div>
           <TrustStrip />
         </Container>
       </section>

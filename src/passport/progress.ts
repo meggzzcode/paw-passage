@@ -16,7 +16,17 @@ import {
   SUPPLY_KEYS,
   WATER,
 } from "./schema";
-import type { CustomCollection, DogProfile, OwnerPrefs, SessionFilters } from "./profile";
+import {
+  ENJOY,
+  KEEP_ITEMS,
+  SPEND_CHOICES,
+  TIME_CHOICES,
+  WHERE_CHOICES,
+  type CustomCollection,
+  type DogProfile,
+  type OwnerPrefs,
+  type SessionFilters,
+} from "./profile";
 
 export type TimedSet = { added: Record<string, number>; removed: Record<string, number> };
 export type Memory = { text: string; at: number };
@@ -258,6 +268,10 @@ const PROFILE_SPEC: Record<string, Spec> = {
   lifeStage: en(LIFE_STAGES),
   size: en(SIZES),
   energy: en(ENERGY),
+  lifeStages: arr(LIFE_STAGES, 3),
+  energyVariable: bool,
+  enjoy: arr(ENJOY, 6),
+  keepInMind: arr(KEEP_ITEMS, 10),
   limitedMobility: bool,
   restrictions: str(),
   personality: arr(["curious", "playful", "cozy", "gentle", "adventurous"], 5),
@@ -287,6 +301,11 @@ const OWNER_SPEC: Record<string, Spec> = {
   preferredTypes: arr(ACTIVITY_TYPES),
   preferredPlaces: arr(PLACES),
   supplies: arr(SUPPLY_KEYS),
+  where: en(WHERE_CHOICES),
+  time: en(TIME_CHOICES),
+  spend: en(SPEND_CHOICES),
+  quiet: bool,
+  kids: bool,
 };
 const FILTER_SPEC: Record<string, Spec> = {
   minutes: num(0, 1440),

@@ -330,3 +330,34 @@
 .wl-next {
   margin: 1.25rem 0;
 }
+
+/* Before/after keepsake examples (real, licensed dog photos): original photo next to the finished keepsake */
+.pp-examples-pair {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+}
+.pp-examples-side {
+  display: block;
+}
+.pp-examples-side img {
+  height: 12rem;
+  width: auto;
+  max-width: 100%;
+}
+.pp-examples-tag {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.75rem;
+  color: var(--pp-muted);
+}
+@media (min-width: 720px) {
+  .pp-examples-row {
+    flex-wrap: wrap;
+    overflow: visible;
+    gap: 1.5rem 1.25rem;
+  }
+  .pp-examples-pair img {
+    height: 15rem;
+  }
+}

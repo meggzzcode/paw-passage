@@ -26,7 +26,31 @@ export const flags = {
   printables: true,
   /** The public "selected previews" showcase (the /previews page and the preview cards). */
   previewsShowcase: true,
+  /**
+   * Gifting through Gumroad's native "Give as a gift" on the SAME product and price (no custom gift platform).
+   * FALSE until the owner has verified it end to end (docs/COWORK-HANDOFF.md, CW-PAY-7): the recipient receives a
+   * usable license key, activation attaches to the RECIPIENT, and a refund revokes it. While false, nothing on the
+   * site mentions gifting.
+   */
+  gifting: false,
 } as const;
+
+/** The Gumroad help article that describes the native gift option (read it before flipping `flags.gifting`). */
+export const GIFT_HELP_URL =
+  "https://gumroad.com/help/article/213-how-do-i-give-a-product-as-a-gift";
+/** Secondary action label on /unlock, shown only when `flags.gifting` is true. */
+export const GIFT_CTA = "Gift the Adventure Passport";
+
+/**
+ * The refund terms in one place, shown next to the buy button BEFORE payment. It summarizes src/routes/refund-policy.tsx
+ * and promises nothing it does not say: no refund window is stated here because the checkout page shows the terms that
+ * apply to the purchase (and wins if they differ). A test keeps this in step with the policy page.
+ */
+export const REFUND_SUMMARY: readonly string[] = [
+  "The checkout page shows the refund terms that apply before you pay, and it wins if it differs from our policy page.",
+  "To ask for a refund, contact us with the email you bought with and the date. It is issued through our checkout provider, to the way you paid.",
+  "When a purchase is refunded, full access is switched off, within about a day. The free Passport stays, and your progress stays yours.",
+];
 
 /**
  * How many selected previews the homepage shows, and how they are chosen: the API serves only adventures flagged
@@ -54,7 +78,7 @@ export const homePromo = {
   secondaryCta: "Explore the Adventure Collection",
   demo: {
     eyebrow: "See it in action",
-    title: "From first look to a keepsake, in five steps",
+    title: "From first look to a keepsake style, in five steps",
     intro:
       "These are real screens from the free introductory adventure, on a sample dog. Nothing here is a premium adventure.",
   },
@@ -164,11 +188,11 @@ export const DEMO_STEPS: readonly DemoStep[] = [
   },
   {
     id: "keepsake",
-    label: "Create",
-    title: "Create a keepsake",
-    body: "Turn the day into a postcard, a cover or a card. It is drawn on your device and your photo is never uploaded.",
+    label: "Keepsake",
+    title: "See your keepsake style",
+    body: "Finishing shows the matching keepsake style as an example. Making your own with your dog's photo is part of the full Passport, and the photo is never uploaded.",
     src: "/demo/5-keepsake.webp",
-    alt: "A finished keepsake preview with a sample illustrated dog and a cover headline, with a Download button below.",
+    alt: "An example keepsake with a sample illustrated dog and a cover headline.",
     width: 390,
     height: 700,
   },
@@ -180,6 +204,6 @@ export const TRUST_POINTS: readonly { id: string; text: string }[] = [
   { id: "one-time", text: `One payment of ${price}, no subscription` },
   { id: "no-extra", text: "Many adventures cost nothing extra to do" },
   { id: "dogs", text: "Picks adapt to your dog and to you" },
-  { id: "photos", text: "Photos stay on your device" },
+  { id: "photos", text: "Photos stay on your device, always" },
   { id: "recovery", text: "Lost access? Restore it with your purchase code" },
 ] as const;

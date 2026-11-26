@@ -208,6 +208,14 @@ export function effortChips(
   return [`Dog: ${DOG_EFFORT[g.effort]}`, `You: ${OWNER_MOBILITY_LABELS[owner]}`];
 }
 
+/** Public owner-effort badges for a preview, only when true: "From a chair" and "No stairs". */
+export function ownerBadges(p: { ownerEffort?: string; stepFree?: boolean }): string[] {
+  const out: string[] = [];
+  if (p.ownerEffort === "seated") out.push("From a chair");
+  if (p.stepFree === true) out.push("No stairs");
+  return out;
+}
+
 /** Practical prerequisites that matter before choosing: food, booking and travel are always obvious. */
 export function needChips(g: Pick<Glance, "needs">): string[] {
   const out: string[] = [];

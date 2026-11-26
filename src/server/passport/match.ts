@@ -61,7 +61,18 @@ export function validateMatchBody(body: unknown): { dog: DogProfile; owner: Owne
   if (!isObj(body) || !isObj(body["dog"])) return null;
   const owner = body["owner"] === undefined || body["owner"] === null ? {} : body["owner"];
   if (!isObj(owner)) return null;
-  const dog = pick(body["dog"], DOG_ENUMS, ["limitedMobility"]);
+  const dog = pick(body["dog"], DOG_ENUMS, ["limitedMobility", "energyVariable"]);
+  // Mixed households: lifeStages is a short list of known stages; any other value rejects the whole body.
+  const stages = body["dog"]["lifeStages"];
+  if (stages !== undefined && stages !== null) {
+    if (
+      !Array.isArray(stages) ||
+      stages.length > 3 ||
+      !stages.every((x) => typeof x === "string" && DOG_ENUMS["lifeStage"]?.includes(x))
+    )
+      return null;
+    if (dog) dog["lifeStages"] = [...new Set(stages as string[])];
+  }
   const own = pick(owner, OWNER_ENUMS, ["stepFree"]);
   if (!dog || !own) return null;
   return { dog: dog as DogProfile, owner: own as OwnerPrefs };

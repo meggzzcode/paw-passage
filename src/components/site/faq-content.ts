@@ -1,16 +1,16 @@
 // One source for the questions buyers ask. Used by /faq (all of them) and /unlock (a summary).
 // Rules: say only what the product does today. Nothing here promises a feature that is not built, quotes a number we
 // have not verified, or makes a medical or behavior claim. Price comes from the single offer constant.
-import { price, pricing } from "@/config/commercial";
+import { flags, price, pricing, GIFT_HELP_URL } from "@/config/commercial";
 
 export type Faq = { id: string; q: string; a: string; group: "buying" | "dogs" | "privacy" };
 
-export const FAQS: readonly Faq[] = [
+const BASE_FAQS: readonly Faq[] = [
   {
     id: "what-you-buy",
     group: "buying",
     q: "What exactly do I get when I buy?",
-    a: `${price}, paid once, unlocks the full Adventure Passport library: every adventure in every collection, the personalized discovery tools, and more keepsake designs. The one free introductory adventure and your passport pages stay free either way.`,
+    a: `${price}, paid once, unlocks the full Adventure Passport library: every adventure in every collection, the personalized discovery tools, and personalized keepsakes made from your own photos. The one free introductory adventure and your passport pages stay free either way.`,
   },
   {
     id: "subscription",
@@ -22,7 +22,7 @@ export const FAQS: readonly Faq[] = [
     id: "digital-not-book",
     group: "buying",
     q: "Is it a book or something that ships to me?",
-    a: "No. It is a digital product that you use on your phone, tablet or computer. Nothing is mailed. If you want something on paper, a finished keepsake can be saved as an image and printed at home or at a print shop.",
+    a: "No. It is a digital product that you use on your phone, tablet or computer. Nothing is mailed. If you want something on paper, a keepsake you make with the full Passport can be saved as an image and printed at home or at a print shop.",
   },
   {
     id: "no-app",
@@ -34,7 +34,7 @@ export const FAQS: readonly Faq[] = [
     id: "try-first",
     group: "buying",
     q: "Can I try before I buy?",
-    a: "Yes. Answer a few questions about your dog and we pick one complete adventure for them, free, with no account and no card. You can also browse selected previews from the larger collection. You do not have to finish the free adventure before you buy, and you can buy at any time.",
+    a: "Yes. Answer a few questions about your dog and we pick one complete adventure for them, free, with no account and no card. You can also browse selected previews from the larger collection. The free adventure gives you a stamp and shows the matching keepsake style as an example; making your own personalized keepsake is part of the full Passport. You do not have to finish the free adventure before you buy, and you can buy at any time.",
   },
   {
     id: "puppies",
@@ -58,7 +58,7 @@ export const FAQS: readonly Faq[] = [
     id: "quiet-dogs",
     group: "dogs",
     q: "Is it only for active, outgoing dogs?",
-    a: "No. There are calm, quiet adventures for homebodies, shy dogs and dogs who dislike crowds, noise or other dogs. A nervous dog is never sent to a crowd, and your dog can always opt out.",
+    a: "No. There are calm, quiet adventures for homebodies, shy dogs and dogs who dislike crowds, noise or other dogs. We leave out crowds for dogs who find them hard, and your dog can always opt out.",
   },
   {
     id: "backyard",
@@ -88,13 +88,19 @@ export const FAQS: readonly Faq[] = [
     id: "phone-use",
     group: "dogs",
     q: "Will I be on my phone the whole time?",
-    a: "No. Read the adventure, put the phone away and go. You only need it again to mark the adventure done, add a short note, or make a keepsake afterward.",
+    a: "No. Read the adventure, put the phone away and go. You only need it again to mark the adventure done, add a short note, or, with the full Passport, make a keepsake afterward.",
   },
   {
     id: "household",
     group: "dogs",
-    q: "Can I use it for more than one dog, or share it with my household?",
-    a: "One purchase covers your household's use on your own devices, so the people you live with can use it too, and you can restore it on your other devices with your purchase code. The Passport keeps one dog profile at a time: to switch to another dog, edit the profile, and your progress and stamps carry on in the same passport. Separate profiles for each dog are something we may add one day, but they are not part of the product today.",
+    q: "Can I share it with my household?",
+    a: "One purchase covers your household's use on your own devices, so the people you live with can use it too, and you can restore it on your other devices with your purchase code.",
+  },
+  {
+    id: "multi-dog",
+    group: "dogs",
+    q: "What if I have more than one dog?",
+    a: "You keep one shared profile for all your dogs. Type their names together, such as Luna and Milo, and choose activities that suit every dog, because the most careful needs win. There are no separate profiles, no switching and no extra charge. Not every activity suits several dogs: food, toy and group games can bring out guarding, so do those one dog at a time if that is safer.",
   },
   {
     id: "recover",
@@ -109,22 +115,28 @@ export const FAQS: readonly Faq[] = [
     a: "With the full Passport, your progress can follow you to your other devices once you restore access there. Free progress is stored on your own device, and you can export a backup file any time.",
   },
   {
+    id: "keepsake-paid",
+    group: "buying",
+    q: "Can I make a keepsake for free?",
+    a: "Free visitors can see finished examples, and the free adventure shows the matching keepsake style. Making a personalized keepsake from your own photo is part of the full Passport, and it is made on your device.",
+  },
+  {
     id: "keep-photos",
     group: "privacy",
-    q: "Can I keep my photos and keepsakes?",
-    a: "Yes. Keepsakes are made on your device and saved as images that you own and can print or share if you choose. Nothing is shared unless you share it.",
+    q: "Can I keep the photos I create?",
+    a: "Yes. In the full Passport, keepsakes are made on your device and saved as images that you own and can print or share if you choose. We do not keep a copy, and nothing is shared unless you share it.",
   },
   {
     id: "photos-not-uploaded",
     group: "privacy",
     q: "Are my photos uploaded anywhere?",
-    a: "No. Photos are used only in your browser to draw your keepsake. They are not uploaded, not stored by us and not included in analytics.",
+    a: "No. Photos are used only in your browser to draw your keepsake (in the full Passport) and they never leave your device. They are not uploaded, not stored by us and not included in analytics.",
   },
   {
     id: "refund",
     group: "buying",
     q: "What is the refund policy?",
-    a: "Refund terms are shown at checkout before you pay, and our refund policy page explains how to ask, what happens to your access and what happens to your progress, which always stays yours. If you were charged and cannot unlock, try Restore access first, then contact us.",
+    a: "The checkout page shows the refund terms that apply before you pay, and it wins if it differs from our policy page. To ask, contact us with the email you bought with and the date; the refund goes through our checkout provider, to the way you paid. Full access then switches off within about a day, the free Passport stays, and your progress stays yours. If you were charged and cannot unlock, try Restore access first, then contact us. The refund policy page has the details.",
   },
   {
     id: "contact",
@@ -132,15 +144,30 @@ export const FAQS: readonly Faq[] = [
     q: "How do I reach you?",
     a: "Use the contact page. For a purchase question, tell us the email you bought with, and never include your purchase code.",
   },
-] as const;
+];
 
-/** The six questions summarized on /unlock. */
+/** Only when gifting is on (verified): how a gift works. Built conditionally so nothing about gifts is published before then. */
+const GIFT_FAQ: Faq = {
+  id: "gift",
+  group: "buying",
+  q: "Can I give the Adventure Passport as a gift?",
+  a: `Yes. Choose the gift option at checkout: it is the same Passport at the same ${price}, and the recipient gets their own purchase code and their own passport. Your dog's profile and progress are never copied to them. Details are in the checkout provider's help article (${GIFT_HELP_URL}).`,
+};
+
+/** The FAQ list for a given gifting flag. Gift wording exists only when the flag is true. */
+export function buildFaqs(gifting: boolean): readonly Faq[] {
+  return gifting ? [...BASE_FAQS, GIFT_FAQ] : BASE_FAQS;
+}
+export const FAQS: readonly Faq[] = buildFaqs(flags.gifting);
+
+/** The questions summarized on /unlock. */
 export const UNLOCK_FAQ_IDS = [
   "what-you-buy",
   "subscription",
   "try-first",
   "spending",
-  "household",
+  "multi-dog",
+  "keepsake-paid",
   "recover",
   "refund",
 ] as const;

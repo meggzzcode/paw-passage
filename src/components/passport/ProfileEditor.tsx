@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 import { setProfile } from "@/passport/local-store";
 import { usePassport } from "@/passport/usePassport";
 import type { Comfort, DogProfile, Tri } from "@/passport/profile";
+import { MULTI_DOG_NOTE } from "@/passport/profile";
 import { ACTIVITY_TYPES, HOMES } from "@/passport/schema";
 import { ACTIVITY_LABELS } from "./labels";
 
@@ -116,14 +117,16 @@ export function ProfileEditor({ part = "all" }: { part?: "quick" | "more" | "all
       {quick && (
         <>
           <label className="pa-field">
-            <span>Your dog's name (optional)</span>
+            <span>Your dog's name, or names (optional)</span>
             <input
               value={p.name ?? ""}
-              maxLength={30}
+              maxLength={60}
+              placeholder="Luna and Milo"
               autoComplete="off"
               onChange={(e) => patch({ name: e.target.value || undefined })}
             />
           </label>
+          <p className="pa-fine">{MULTI_DOG_NOTE}</p>
           <Choice
             legend="Life stage"
             options={[

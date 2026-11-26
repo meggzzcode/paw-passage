@@ -352,13 +352,16 @@ describe("trust and objections", () => {
     for (const f of ["src/routes/index.tsx", "src/routes/unlock.tsx", "src/routes/faq.tsx"])
       expect(readFileSync(f, "utf8"), f).toContain("<TrustStrip");
   });
-  it("answers the household question honestly, and does not advertise multi-profile", () => {
+  it("answers household and multi-dog honestly: one shared profile, no separate profiles", () => {
     const h = FAQS.find((f) => f.id === "household")!;
     expect(h.a).toMatch(/household/);
-    expect(h.a).toMatch(/one dog profile at a time/);
-    expect(h.a).toMatch(/not part of the product today/);
+    const m = FAQS.find((f) => f.id === "multi-dog")!;
+    expect(m.a).toMatch(/one shared profile/);
+    expect(m.a).toMatch(/Luna and Milo/);
+    expect(m.a).toMatch(/suit every dog/);
+    expect(m.a).toMatch(/no separate profiles/);
     const unlock = readFileSync("src/routes/unlock.tsx", "utf8");
-    expect(unlock.replace(/\s+/g, " ")).toMatch(/one dog profile at a time/);
+    expect(unlock.replace(/\s+/g, " ")).toMatch(/one shared profile/);
   });
   it("has no display ads inside the paid Passport", () => {
     for (const f of walk("src/components/passport")) {

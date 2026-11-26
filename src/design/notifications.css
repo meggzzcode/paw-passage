@@ -70,7 +70,7 @@
   min-height: 7rem;
   border: 2px dashed var(--pp-ochre);
   border-radius: var(--pp-radius);
-  color: #14283a;
+  color: #2e2420;
   font: 600 1.1rem/1.3 var(--font-sans);
   cursor: pointer;
   touch-action: pan-y;

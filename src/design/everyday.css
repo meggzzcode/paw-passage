@@ -34,7 +34,7 @@ main h2, .pp-h2, .pa-h { font-family: var(--font-display); font-weight: 650; let
 .pp-eyebrow, .pa-kicker {
   display: inline-block; padding: .3rem .75rem; border-radius: 999px;
   background: color-mix(in oklab, var(--pp-strawberry) 55%, var(--pp-card));
-  color: var(--pp-ink); letter-spacing: .12em; rotate: -1.5deg;
+  color: var(--pp-ink); letter-spacing: .12em; rotate: -1.5deg; width: fit-content; max-width: 100%;
 }
 .pp-band .pp-eyebrow { background: var(--pp-ochre); color: var(--pp-ink); }
 
@@ -78,7 +78,7 @@ main :where(input, select, textarea):focus-visible { outline: 3px solid color-mi
 .pp-nav a:hover, .pp-nav a[aria-current=page] { background: color-mix(in oklab, var(--pp-ochre) 70%, transparent); }
 
 /* Dark bands get a hint of the butter accent. */
-.pp-band { background: var(--pp-ink); background-image: radial-gradient(circle at 92% 8%, color-mix(in oklab, var(--pp-ochre) 22%, transparent) 0 7rem, transparent 7.1rem); }
+.pp-band { background: var(--pp-ink); }
 
 /* Footer: banner strip on top, butter column headings. */
 .pp-footer .pp-marquee { border-bottom: 1px dashed color-mix(in oklab, var(--pp-paper) 30%, transparent); }
@@ -88,3 +88,8 @@ main :where(input, select, textarea):focus-visible { outline: 3px solid color-mi
 main nav[aria-label="Breadcrumb"] ol, main nav[aria-label="breadcrumb"] ol { display: inline-flex; flex-wrap: wrap; padding: .35rem .9rem; border-radius: 999px; background: var(--pp-paper-2); }
 main nav[aria-label="Breadcrumb"] ol { align-items: center; gap: .25rem; padding: 0 .9rem; }
 main a img, main figure img { border-radius: 1.25rem; }
+
+/* Mystery and dark sample cards: warm ink with a butter edge instead of plain dark slabs. */
+.pa-mystery { border: 2px solid var(--pp-ochre); border-radius: 1.5rem; box-shadow: 6px 6px 0 var(--pp-ochre); }
+.pa-mystery .pa-kicker { background: var(--pp-ochre); color: var(--pp-ink); }
+.pa-scratch { border-radius: 1.25rem; }

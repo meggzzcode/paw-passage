@@ -368,8 +368,8 @@ a.pp-navlink.active {
   color: var(--pp-paper);
 }
 .dark .pp-footer {
-  background: #0a1520;
-  color: #f3ead6;
+  background: #2e2420;
+  color: #fbf3df;
 }
 .pp-footer a {
   color: inherit;
@@ -500,8 +500,8 @@ a.pp-navlink.active {
   position: relative;
 }
 .dark .pp-passport {
-  background: #234a66;
-  color: #f3ead6;
+  background: #5f7f9c;
+  color: #fbf3df;
 }
 .pp-passport::before {
   content: "";
@@ -528,8 +528,8 @@ a.pp-navlink.active {
   border-radius: 4px;
 }
 .dark .pp-page {
-  background: #0f1e2b;
-  color: #f3ead6;
+  background: #2e2420;
+  color: #fbf3df;
 }
 .pp-page .pp-stamp {
   background: transparent;
@@ -575,7 +575,7 @@ a.pp-navlink.active {
   );
 }
 .dark .pp-face-back {
-  background: #234a66;
+  background: #5f7f9c;
 }
 .pp-face-front {
   background: var(--pp-card);
@@ -715,7 +715,7 @@ a.pp-navlink.active {
   margin-bottom: 0.6rem;
   border-radius: 50%;
   background: var(--pp-ochre);
-  color: #14283a;
+  color: #2e2420;
   font: 600 1.1rem var(--font-display);
 }
 .pp-steps h3 {

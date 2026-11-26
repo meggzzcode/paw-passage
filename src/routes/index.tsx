@@ -126,14 +126,14 @@ function Home() {
                 </figure>
                 <div className="pp-sticker">Little<br />moments.<br />Big<br />memories.</div>
               </div>
-              <p className="pp-collage-note">Illustrative images, not customers.</p>
+              <p className="pp-collage-note">Illustrative photos, not real families.</p>
             </div>
           </div>
         </Container>
       </section>
 
       <div className="pp-marquee" aria-hidden="true">
-        <div>{Array(2).fill("Your favorite little sidekick ✿ Let’s make a date ✿ Collect adventures, not just things ✿ Made for the two of you ✿ ").join("")}</div>
+        <div>{Array(2).fill("Your favorite little sidekick ✿ Let’s make a date ✿ Made for the two of you ✿ ").join("")}</div>
       </div>
 
       <section className="pp-section" aria-labelledby="demo-h">

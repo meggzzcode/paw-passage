@@ -309,7 +309,7 @@ export const magazineCover: FamilyDef = {
       size: 58,
       key: t.display,
       weight: 900,
-      color: c.ink === "#101820" || bold ? "#ffffff" : c.ink,
+      color: c.ink === "#2e2420" || bold ? "#ffffff" : c.ink,
       lh: 1,
     });
     const labelTop = paraUp(ctx, word(p, "star", "COVER STAR"), 70, nameTop - 2, {

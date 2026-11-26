@@ -27,7 +27,7 @@ export function PreviewArt({ family, theme }: { family: string; theme: string })
   const bg2 = `hsl(${(h + 20) % 360} 42% 17%)`;
   const accent = `hsl(${(h + 40) % 360} 75% 72%)`;
   const card = "#fbf6ea";
-  const ink = "#14283a";
+  const ink = "#2e2420";
   return (
     <div
       className="pv-art"

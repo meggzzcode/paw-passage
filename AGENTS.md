@@ -26,3 +26,4 @@ npx prettier --check <files>
 - Do not commit, push, deploy or touch live services unless the owner asks.
 - Netlify builds cost credits: do not change `netlify.toml` `ignore` without running `node scripts/test-netlify-ignore.mjs`.
 - Handwritten type (Caveat, `font-hand-note`) is decorative only: never for safety, eligibility, payment, refund or instructional text, so critical text stays easy to read.
+- Keepsake palettes are snapped onto the Everyday Magic swatches in `src/passport/keepsake/everyday-palette.ts` (keeps readability and sibling distinctness) so every keepsake matches the site; redraw `public/examples/` with the real renderer after palette changes.

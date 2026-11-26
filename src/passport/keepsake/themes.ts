@@ -147,6 +147,7 @@ export interface ThemeConfig {
 
 import { EXTRA_THEMES } from "./themes-extra";
 import { MORE_THEMES } from "./themes-more";
+import { toEveryday } from "./everyday-palette";
 
 const P = (
   bg: string,
@@ -733,8 +734,20 @@ const BASE_THEMES: ThemeConfig[] = [
   }),
 ];
 
+const TAKEN = new Map<string, Set<string>>();
+const takenFor = (f: string): Set<string> => {
+  const hit = TAKEN.get(f);
+  if (hit) return hit;
+  const s = new Set<string>();
+  TAKEN.set(f, s);
+  return s;
+};
+
 export const THEMES: Readonly<Record<string, ThemeConfig>> = Object.fromEntries(
-  [...BASE_THEMES, ...EXTRA_THEMES, ...MORE_THEMES].map((t) => [t.id, t]),
+  [...BASE_THEMES, ...EXTRA_THEMES, ...MORE_THEMES].map((t) => [
+    t.id,
+    { ...t, palette: toEveryday(t.palette, takenFor(t.family)) },
+  ]),
 );
 
 /** Which themes each family offers. The first one is the family's default. */

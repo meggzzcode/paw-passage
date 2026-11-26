@@ -592,3 +592,8 @@
   text-decoration-color: var(--terracotta);
   text-underline-offset: 3px;
 }
+
+/* Light theme only (owner decision): stops browsers from auto-darkening the page. */
+html {
+  color-scheme: only light;
+}

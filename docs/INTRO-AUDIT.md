@@ -1,6 +1,6 @@
 # Free introductory experience: audit
 
-Audited against the real free library (14 published free adventures in `content/adventures`). Proof lives in
+Audited against the real free library (16 published free adventures in `content/adventures`). Proof lives in
 `src/test/intro-audit.test.tsx` (real library, set `INTRO_AUDIT_TABLE=1` to print the profile table) plus the existing
 `free-starter.test.tsx`, `intro-quiz.test.tsx` and `passport-engine.test.ts`.
 
@@ -20,27 +20,27 @@ Audited against the real free library (14 published free adventures in `content/
 
 ## Representative profiles (real library)
 
-Eligible = free adventures passing hard eligibility (unknown answers held, not counted). All picks are from the free pool of 14.
+Eligible = free adventures passing hard eligibility (unknown answers held, not counted). All picks are from the free pool of 16.
 
-| Profile                                           | Eligible                 | Recommendation                               |
-| ------------------------------------------------- | ------------------------ | -------------------------------------------- |
-| Unknown dog (all skipped)                         | 11                       | The Secret Handshake Club                    |
-| Active adult                                      | 11                       | The Dog's Time Capsule Dig                   |
-| Young puppy                                       | 7                        | The Paw-trait Studio                         |
-| Senior, limited mobility                          | 7                        | The Paw-trait Studio                         |
-| Puppy + senior                                    | 7                        | The Paw-trait Studio                         |
-| Apartment / home only                             | 11                       | The Secret Handshake Club                    |
-| Owner seated                                      | 5                        | The Secret Handshake Club                    |
-| Family with children                              | 11 (2 are family-suited) | A Dog's-Eye Adventure                        |
-| No spending                                       | 11                       | The Secret Handshake Club                    |
-| Short time                                        | 11                       | The Secret Handshake Club                    |
-| No car                                            | 11                       | The Secret Handshake Club                    |
-| Quiet / noise sensitive                           | 7                        | The Paw-trait Studio                         |
-| Variable energy                                   | 10                       | The Secret Handshake Club                    |
-| Puppy + limited mobility + quiet                  | 6                        | The Paw-trait Studio                         |
-| Senior + seated + no spend + short + home         | 4                        | The Secret Handshake Club                    |
-| Puppy+adult+senior + variable + children + no car | 6 (no family fit)        | NONE strictly; widen finds a non-family pick |
-| Everything restrictive                            | 4                        | NONE strictly; widen finds a non-family pick |
+| Profile                                           | Eligible                 | Recommendation                                  |
+| ------------------------------------------------- | ------------------------ | ----------------------------------------------- |
+| Unknown dog (all skipped)                         | 13                       | The Secret Handshake Club                       |
+| Active adult                                      | 13                       | The Dog's Time Capsule Dig                      |
+| Young puppy                                       | 9                        | The Little Family Discovery Club                |
+| Senior, limited mobility                          | 9                        | The Little Family Discovery Club                |
+| Puppy + senior                                    | 9                        | The Little Family Discovery Club                |
+| Apartment / home only                             | 13                       | The Secret Handshake Club                       |
+| Owner seated                                      | 7                        | The Secret Handshake Club                       |
+| Family with children                              | 13 (4 are family-suited) | The Little Family Discovery Club                |
+| No spending                                       | 13                       | The Secret Handshake Club                       |
+| Short time                                        | 13                       | The Secret Handshake Club                       |
+| No car                                            | 13                       | The Secret Handshake Club                       |
+| Quiet / noise sensitive                           | 9                        | The Little Family Discovery Club                |
+| Variable energy                                   | 12                       | The Secret Handshake Club                       |
+| Puppy + limited mobility + quiet                  | 8                        | The Little Family Discovery Club                |
+| Senior + seated + no spend + short + home         | 6                        | The Secret Handshake Club                       |
+| Puppy+adult+senior + variable + children + no car | 8 (family-suited fits)   | The Little Family Discovery Club                |
+| Everything restrictive                            | 6                        | NONE strictly; widen finds a family-suited pick |
 
 Every single-trait profile has a result. Empty results arise only from combinations.
 
@@ -83,13 +83,38 @@ What the content owner could add later (not promised, not scheduled): one or two
 suit puppies and seniors (calm, short, home or yard), and one or two gentle, quiet, low-effort outdoor adventures for
 puppy, limited-mobility and noise-sensitive dogs (short, close to home, easy ground).
 
-## Library gaps and notes (no adventures written)
+## Gap closure pass (2026-11-26): what changed and what did not
 
-- Children joining + a puppy or senior in the household (all ages): no free family-suited adventure fits (see the decision above; widening now offers a non-family pick). Only 2 of 14 are
-  family-suited (one adult/senior only, one lively yard adventure).
-- Outdoor options are thin: only 3 outdoor adventures, all adult/senior, moderate dog effort, with some noise. Nearby
-  outdoors plus limited mobility, or plus a noise-sensitive dog, relies on the one "either" adventure.
+Owner approved about four experiences to close the two gaps above. Result:
+
+| Concept                           | Outcome                                                                                                                                 | Tier    |
+| --------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------- |
+| The Little Family Discovery Club  | NEW card. Supervised, quiet, indoor family observation club; puppy, adult and senior; no food, no strangers, no other dogs              | Free    |
+| The Family Storybook Afternoon    | NEW card. Gentle family booklet written from three real moments; puppy, adult and senior                                                | Free    |
+| The Quiet Garden Expedition       | NEW card, staged outside the repository. Quiet, seated, low effort; puppy, adult and senior                                             | Premium |
+| The Little Outdoor Treasure Trail | NOT written. An existing premium card already covers the same mechanic (puppy-suitable, family-tagged). Adapt it as a variation instead | n/a     |
+
+Coverage now, strictly (no widening):
+
+- **Puppy + senior + children:** now fits. The family-suited free pool is 4 (was 2), and two of those suit puppy, adult and
+  senior dogs. This gap is closed. "Widen" still sets children aside only when nothing family-suited remains.
+- **Puppy, limited mobility and noise-sensitive dogs, free pool, indoors:** 8 to 9 eligible adventures (was 6 to 7).
+- **Puppy, limited mobility and noise-sensitive dogs, FREE OUTDOORS: still a gap.** The free pool still has only 3 outdoor
+  adventures, all adult and senior, moderate and with some noise. The new outdoor card is premium, so a free visitor who
+  asks for nearby outdoors with those answers still sees the honest "Widen" offer. This was a deliberate decision
+  (the free pool stays near the 13 to 15 target; premium previews can show the gap closing), not an oversight.
+- Every new card keeps the hard rules: adult supervision, the dog may always leave, nothing is held or hugged, no food, no
+  face-to-face prompts, and nobody collects children's names or ages. Unknown is never treated as safe.
+
+## Library gaps and notes
+
+- Free outdoor options for puppy, limited-mobility and noise-sensitive dogs: still none (see above). The premium tier has
+  gentle outdoor cards for these dogs.
 - There is no vaccination field. Puppy suitability depends on authoring: "A Trip Down Memory Lane" is flagged puppy-suitable
-  with city and countryside places. Content owner should confirm that is intended for unvaccinated puppies.
+  with city and countryside places. Content owner should confirm that is intended for unvaccinated puppies. The new indoor
+  family cards avoid the question; the new outdoor premium card tells owners to follow their vet's vaccination advice.
 - "Short" means adventures whose minimum is 15 minutes or less. There is no ten-minute option; the shortest free
   adventure is 5 to 10 minutes.
+- Engine note for the lead: with no children answer at all, the new Discovery Club now ranks first for puppy and senior
+  profiles. It is safe for them, but that is the family tag's ranking bonus doing its work with the quiet, gentle profile; consider
+  whether a household tag should rank only when children are joining.

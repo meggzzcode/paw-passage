@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { site } from "@/config/site";
 import { hasApprovedAffiliates } from "@/lib/launch";
+import { AnalyticsChoicesButton } from "../site/ConsentNotice";
 import { AppLink } from "./AppLink";
 import { LogoMark } from "./Logo";
 import { guidesLink, navItems, restoreLink, unlockCta } from "./nav-items";
@@ -55,6 +56,9 @@ export function SiteFooter() {
                 <AppLink to={to}>{label}</AppLink>
               </li>
             ))}
+            <li>
+              <AnalyticsChoicesButton />
+            </li>
           </ul>
         </nav>
       </div>

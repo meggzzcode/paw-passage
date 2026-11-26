@@ -15,7 +15,7 @@ This document records what kinds of checking exist, what has never been done, an
 
 ### Premium-protection commands (owner machine, need `PREMIUM_DIR`)
 
-Premium text is not tracked in the repository (`HISTORICAL-EXPOSURE.md`). The default suite is green without it; checks against the real library are separate and report SKIPPED with a visible reason when `PREMIUM_DIR` is unset (`PREMIUM-INTEGRATION-TESTS.md`, "Owner-machine checks").
+Premium text is not tracked in the repository. The default suite is green without it; checks against the real library are separate and report SKIPPED with a visible reason when `PREMIUM_DIR` is unset (`PREMIUM-INTEGRATION-TESTS.md`, "Owner-machine checks").
 
 | Command                                                                                                                                                | What it proves                                                                |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------- |
@@ -76,13 +76,13 @@ Fill this table for the exact launch commit. Do not copy numbers from any earlie
 
 ### Other checks run on the same commit
 
-| Check                                                                                                                                      | Result                                                                                                                    |
-| ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
-| `node scripts/validate-journal.mjs`                                                                                                        | `journal content OK` (ten articles, word counts, banned phrases, premium sentence overlap)                                |
-| `node scripts/premium-import.mjs --dir content/premium` (dry run, nothing written)                                                         | Validated 99 premium adventures; 50 showcase previews; 113 published across 25 collections                                |
-| `node scripts/library-stats.mjs --md`                                                                                                      | 113 adventures (14 free pool, 99 premium), 117 keepsake themes, 25 collections                                            |
-| Entitlement, premium integration, photo-editor gating and security tests (`netlify-env`, `premium-e2e`, `keepsake-gating`, `security-api`) | 4 files, 88 tests passed (also part of the full run)                                                                      |
-| Secret scan of tracked text files (patterns for live keys, private keys, tokens)                                                           | no matches. This is a pattern scan of current files, not a git-history scan (gitleaks over history remains a Cowork task) |
-| `npx prettier --check` (src, docs, content, scripts, netlify, plugins, README, AGENTS, `.pages.yml`)                                       | 7 warnings, all in older `content/guides/*.md` files (formatting only); `netlify.toml` has no prettier parser             |
+| Check                                                                                                                                      | Result                                                                                                                        |
+| ------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
+| `node scripts/validate-journal.mjs`                                                                                                        | `journal content OK` (ten articles, word counts, banned phrases, premium sentence overlap)                                    |
+| `node scripts/premium-import.mjs --dir content/premium` (dry run, nothing written)                                                         | Validated 99 premium adventures; 50 showcase previews; 115 published across 25 collections (116 with the staged private card) |
+| `node scripts/library-stats.mjs --md`                                                                                                      | 115 adventures (16 free pool, 99 premium; 116 with the staged private card), 117 keepsake themes, 25 collections              |
+| Entitlement, premium integration, photo-editor gating and security tests (`netlify-env`, `premium-e2e`, `keepsake-gating`, `security-api`) | 4 files, 88 tests passed (also part of the full run)                                                                          |
+| Secret scan of tracked text files (patterns for live keys, private keys, tokens)                                                           | no matches. This is a pattern scan of current files, not a git-history scan (gitleaks over history remains a Cowork task)     |
+| `npx prettier --check` (src, docs, content, scripts, netlify, plugins, README, AGENTS, `.pages.yml`)                                       | 7 warnings, all in older `content/guides/*.md` files (formatting only); `netlify.toml` has no prettier parser                 |
 
 Warnings are reported separately from errors above: 0 errors in tsc and eslint; 41 eslint warnings; 7 prettier formatting warnings in legacy guide files.

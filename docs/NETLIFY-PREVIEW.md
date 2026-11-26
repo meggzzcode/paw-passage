@@ -87,7 +87,7 @@ node scripts/premium-import.mjs --dir <private folder> --env preview --write  # 
 
 ## 6. Pages CMS premium switch
 
-`.pages.yml` ships with the premium form OFF (commented out between `PREMIUM-CMS-SWITCH:BEGIN` and `PREMIUM-CMS-SWITCH:END`). Recommended: keep it OFF. While it is ON, every save would commit premium text to this repository, which no longer tracks it (`HISTORICAL-EXPOSURE.md`). To turn it ON, follow the instructions at the top of that block and run `npx vitest run src/test/handover-cms.test.ts`.
+`.pages.yml` ships with the premium form OFF (commented out between `PREMIUM-CMS-SWITCH:BEGIN` and `PREMIUM-CMS-SWITCH:END`). Recommended: keep it OFF. While it is ON, every save would commit premium text to this repository, which does not track it. To turn it ON, follow the instructions at the top of that block and run `npx vitest run src/test/handover-cms.test.ts`.
 
 ## 7. Camera and photo library on real phones (Permissions-Policy decision)
 
@@ -119,7 +119,7 @@ The keepsake editor (`src/components/passport/Keepsake.tsx`) has two native file
 These need the real premium folder, so they run only on the owner's machine with `PREMIUM_DIR` set to the `adventures/` folder of the protected package (they never run in CI or in this repository's clean state):
 
 ```bash
-export PREMIUM_DIR=/home/user/premium-content/package/premium-2026-11-26-1/adventures
+export PREMIUM_DIR=<protected package folder>/adventures
 node scripts/validate-journal.mjs                                  # Journal sentence-overlap rule against the real premium text
 node scripts/check-leaks.mjs dist --premium-dir "$PREMIUM_DIR"    # real titles, ids, instructions, twist, safety text in a build
 node scripts/check-leaks.mjs .netlify --premium-dir "$PREMIUM_DIR"

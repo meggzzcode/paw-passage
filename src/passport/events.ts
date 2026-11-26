@@ -13,10 +13,9 @@ export type EventName =
   | "share_clicked"
   | "share_completed"
   | "unlock_viewed"
-  | "checkout_started"
+  | "checkout_handoff"
   | "purchase_confirmed"
   | "access_restored"
-  | "affiliate_clicked"
   | "suggestion_revealed"
   | "calendar_reminder_downloaded"
   | "intro_started"
@@ -30,7 +29,6 @@ export type EventName =
   | "preview_unbookmarked"
   | "collection_preview_viewed"
   | "keepsake_downloaded"
-  | "keepsake_share_attempted"
   | "purchase_cta_clicked"
   | "install_guide_viewed"
   | "install_initiated"
@@ -40,8 +38,6 @@ export type EventName =
   | "notification_permission_declined"
   | "push_subscription_enabled"
   | "push_subscription_disabled"
-  | "notification_delivery_accepted"
-  | "notification_opened"
   | "adventure_scheduled"
   | "calendar_event_exported"
   | "scheduled_adventure_completed"
@@ -61,10 +57,9 @@ const ALLOWED = new Set<EventName>([
   "share_clicked",
   "share_completed",
   "unlock_viewed",
-  "checkout_started",
+  "checkout_handoff",
   "purchase_confirmed",
   "access_restored",
-  "affiliate_clicked",
   "suggestion_revealed",
   "calendar_reminder_downloaded",
   "intro_started",
@@ -78,7 +73,6 @@ const ALLOWED = new Set<EventName>([
   "preview_unbookmarked",
   "collection_preview_viewed",
   "keepsake_downloaded",
-  "keepsake_share_attempted",
   "purchase_cta_clicked",
   "install_guide_viewed",
   "install_initiated",
@@ -88,8 +82,6 @@ const ALLOWED = new Set<EventName>([
   "notification_permission_declined",
   "push_subscription_enabled",
   "push_subscription_disabled",
-  "notification_delivery_accepted",
-  "notification_opened",
   "adventure_scheduled",
   "calendar_event_exported",
   "scheduled_adventure_completed",
@@ -99,6 +91,16 @@ const ALLOWED = new Set<EventName>([
   "journal_related_click",
   "journal_preview_click",
 ]);
+// pp_checkout_handoff only means: the visitor clicked the outbound link that opens Gumroad. It does NOT mean checkout began,
+// a card was entered or anything was bought (this event was named checkout_started before 2026-11-26; GA4 may still list that
+// old name, see docs/GOOGLE-SETUP.md section 3.2). One click can reach this twice (re-render, double click), so a repeat within
+// 2 seconds is dropped.
+const HANDOFF_DEDUPE_MS = 2000;
+let lastHandoffAt = -Infinity;
+/** Test hook: forget the last hand-off so a test can send one again immediately. */
+export function resetHandoffDedupe() {
+  lastHandoffAt = -Infinity;
+}
 const FIELD = /^[a-z0-9_-]{1,40}$/;
 
 /** Returns true only when an event was actually handed to GA4. A click is never reported as a confirmed result. */
@@ -108,9 +110,14 @@ export function track(
 ): boolean {
   if (!ALLOWED.has(name)) return false;
   if (!site.ga4MeasurementId || typeof window === "undefined" || !window.gtag) return false;
+  if (name === "checkout_handoff") {
+    const now = Date.now();
+    if (now - lastHandoffAt < HANDOFF_DEDUPE_MS) return false;
+    lastHandoffAt = now;
+  }
   const safe: Record<string, string | number | boolean> = {};
   // Aggregate campaign fields (sanitized utm_*) ride along on the two purchase-funnel events only.
-  if (name === "purchase_cta_clicked" || name === "checkout_started")
+  if (name === "purchase_cta_clicked" || name === "checkout_handoff")
     Object.assign(safe, campaignFields());
   for (const [k, v] of Object.entries(params)) {
     if (!FIELD.test(k)) continue;

@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import { existsSync, readFileSync, readdirSync, statSync } from "node:fs";
 import { HTML_SECURITY_HEADERS } from "@/lib/security-headers";
 import { PWA_ENABLED } from "@/lib/pwa";
+import { site } from "@/config/site";
 
 // Guards for what a Netlify deploy depends on: netlify.toml, the API function's route list, static-file headers and the
 // camera decision. They read the files as text (no TOML parser is installed). A real preview deploy is still required to
@@ -33,7 +34,8 @@ describe("netlify.toml build settings", () => {
 });
 
 describe("netlify.toml redirects", () => {
-  const rules = blocks("redirects");
+  const hostRules = blocks("redirects").filter((r) => /^https?:\/\//.test(field(r, "from") ?? ""));
+  const rules = blocks("redirects").filter((r) => !hostRules.includes(r));
   it("every rule is a forced 301 or 410 and none sends visitors to the home page", () => {
     expect(rules.length).toBeGreaterThan(50);
     for (const r of rules) {
@@ -160,5 +162,31 @@ describe("PWA is paused", () => {
     expect(readFileSync("src/routes/__root.tsx", "utf8")).toMatch(
       /PWA_ENABLED \? \[\{ rel: "manifest"/,
     );
+  });
+});
+
+describe("netlify.toml canonical host redirect (bare domain to www)", () => {
+  const host = (u: string) => new URL(u.replace("/*", "/")).host;
+  const rules = blocks("redirects").filter((r) => /^https?:\/\//.test(field(r, "from") ?? ""));
+  const canonical = new URL(site.siteUrl);
+  it("has one permanent, forced rule per scheme for the bare host only", () => {
+    expect(rules.map((r) => field(r, "from")).sort()).toEqual([
+      "http://pawsandpassage.com/*",
+      "https://pawsandpassage.com/*",
+    ]);
+    for (const r of rules) {
+      expect(field(r, "status")).toBe("301");
+      expect(field(r, "force")).toBe("true");
+    }
+  });
+  it("sends to the canonical host from settings, keeps the path with :splat and never loops", () => {
+    for (const r of rules) {
+      const to = field(r, "to")!;
+      expect(to).toBe(`${canonical.origin}/:splat`);
+      expect(host(field(r, "from")!)).toBe(canonical.host.replace(/^www\./, ""));
+      expect(host(to.replace(":splat", ""))).toBe(canonical.host);
+      // The target host is not any rule's source host, so a redirected request is never redirected again.
+      expect(rules.map((x) => host(field(x, "from")!))).not.toContain(canonical.host);
+    }
   });
 });

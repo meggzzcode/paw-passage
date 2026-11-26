@@ -52,7 +52,7 @@ Everything is edited in Pages CMS under **Journal**. Each article is one file in
 ## Analytics and campaign attribution
 
 Events (names only; the article slug is sent as `source`): `journal_article_view`, `journal_cta_click`, `journal_collection_click`, `journal_related_click`, `journal_preview_click`.
-`src/lib/campaign.ts` keeps the first landing URL's `utm_source`, `utm_medium` and `utm_campaign` (lowercased, `a-z0-9_-`, 40 characters max) in `sessionStorage` and adds them to `purchase_cta_clicked` and `checkout_started` only. Internal links never carry utm.
+`src/lib/campaign.ts` keeps the first landing URL's `utm_source`, `utm_medium` and `utm_campaign` (lowercased, `a-z0-9_-`, 40 characters max) in `sessionStorage` and adds them to `purchase_cta_clicked` and `checkout_handoff` only. Internal links never carry utm.
 
 Limits, plainly: attribution lasts for that browser tab session; a visitor who returns later, switches device or opens Gumroad in another browser is not attributed; the confirmed purchase happens on Gumroad and is not tied to the campaign here; blockers and a missing GA4 ID drop it. Treat it as a directional signal, not proof of sales.
 

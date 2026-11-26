@@ -43,6 +43,15 @@ export function verifySession(
 export const csrfFor = (secret: string, s: Session): string =>
   hmac(deriveKey(secret, "csrf"), `${s.cus}|${s.exp}`);
 
+/**
+ * An opaque, one-way tag for the customer, safe to hand to the browser: the browser stores it next to its local copy of
+ * the progress so it can tell a DIFFERENT customer signing in on the same device (and not merge their data into the
+ * wrong account). Derived with its own key, so it cannot be used to forge a session or a CSRF token, and the customer id
+ * cannot be recovered from it.
+ */
+export const ownerTagFor = (secret: string, cus: string): string =>
+  hmac(deriveKey(secret, "device-owner"), cus).slice(0, 24);
+
 export function readCookie(header: string | null, name: string): string | null {
   if (!header) return null;
   for (const part of header.split(";")) {

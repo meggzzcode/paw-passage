@@ -77,8 +77,22 @@ const rows: Row[] = [
     false,
     `/collections/${collections[0]!.slug}`,
   ),
+  r(
+    "/collections?tab=mine",
+    () => import("@/routes/collections.index"),
+    () => search({ tab: "mine" }),
+    true,
+    null,
+  ),
+  r(
+    "/collections?tab=favorites",
+    () => import("@/routes/collections.index"),
+    () => search({ tab: "favorites" }),
+    true,
+    null,
+  ),
   r("/collections/mine/$id", () => import("@/routes/collections.mine.$id"), plain, true, null),
-  r("/previews", () => import("@/routes/previews"), plain, false, null), // OD7: indexable but unlisted today
+  r("/previews", () => import("@/routes/previews"), plain, true, null), // owner decision: noindex, still reachable, never listed
   r("/printables", () => import("@/routes/printables.index"), plain, false, "/printables"),
   r(
     "/printables/$slug (sample)",
@@ -151,8 +165,9 @@ describe("indexing table matches the code", () => {
       if (row.sitemapPath) expect(sitemap.has(row.sitemapPath)).toBe(true);
       else {
         // Not listed: the exact pattern (without its variant suffix) must not be a sitemap entry unless it is the plain indexable page.
-        const base = row.id.split(/[?\s]/)[0]!;
-        if (row.noindex) expect(sitemap.has(base) && base !== "/discover").toBe(false);
+        // A variant row (with a query) shares its base page, which is listed; only a plain noindex page must be absent.
+        if (row.noindex && !row.id.includes("?"))
+          expect(sitemap.has(row.id.split(/\s/)[0]!)).toBe(false);
       }
     });
     it(`${row.id}: is documented in docs/GOOGLE-SETUP.md`, () => {
@@ -188,6 +203,7 @@ describe("indexing table matches the code", () => {
       "/restore-access",
       "/install",
       "/previews",
+      "/concept",
     ])
       expect(sitemap.has(p)).toBe(false);
     for (const p of sitemap) {
@@ -226,15 +242,16 @@ describe("indexing table matches the code", () => {
 
 describe("analytics facts used by the GA4 steps", () => {
   const events = readFileSync("src/passport/events.ts", "utf8");
-  it("sends events with the pp_ prefix and no consent gate", () => {
+  it("sends events with the pp_ prefix", () => {
     expect(events).toContain("`pp_${name}`");
-    const root = readFileSync("src/routes/__root.tsx", "utf8");
-    expect(root).not.toMatch(/consent/i); // no consent mode today: see GOOGLE-SETUP.md OD4
+    // TODO(lead, after worker S reports): pin the consent facts here (what loads before and after a choice) and fill the
+    // "Consent (filled from worker S report)" section of docs/GOOGLE-SETUP.md. The old assertion that no consent code
+    // exists was removed because S is adding a notice; do not re-add it.
   });
   it("the key events named in the doc exist in the allow-list", () => {
     for (const n of [
       "purchase_cta_clicked",
-      "checkout_started",
+      "checkout_handoff",
       "intro_revealed",
       "journal_cta_click",
       "journal_article_view",
@@ -242,7 +259,7 @@ describe("analytics facts used by the GA4 steps", () => {
       expect(events).toContain(`"${n}"`);
     for (const n of [
       "pp_purchase_cta_clicked",
-      "pp_checkout_started",
+      "pp_checkout_handoff",
       "pp_intro_revealed",
       "pp_journal_cta_click",
     ])
@@ -250,5 +267,68 @@ describe("analytics facts used by the GA4 steps", () => {
   });
   it("the GA4 id in settings is the one the doc mentions", () => {
     expect(doc).toContain(site.ga4MeasurementId);
+  });
+});
+
+describe("indexing policy (owner amendment 2026-11-26)", () => {
+  it("/previews, /our-story and /concept are noindex and unlisted; /discover is indexable and listed", () => {
+    expect(sitemap.has("/discover")).toBe(true);
+    for (const p of ["/previews", "/our-story", "/concept"]) expect(sitemap.has(p)).toBe(false);
+    expect(readdirSync("src/routes")).not.toContain("concept.tsx"); // no such route; if one is added it must be noindex
+  });
+
+  it("the sitemap has only unique, canonical, query-free paths and genuine, past, valid lastmod dates", () => {
+    const entries = sitemapEntries();
+    const paths = entries.map((e) => e.path);
+    expect(new Set(paths).size).toBe(paths.length);
+    const today = new Date().toISOString().slice(0, 10);
+    for (const e of entries) {
+      expect(e.path).toMatch(/^\/[A-Za-z0-9\-_/.]*$/);
+      expect(e.path.length === 1 || !e.path.endsWith("/")).toBe(true);
+      if (e.lastmod !== undefined) {
+        expect(e.lastmod).toMatch(/^\d{4}-\d{2}-\d{2}$/);
+        expect(Number.isNaN(Date.parse(e.lastmod))).toBe(false);
+        expect(e.lastmod <= today).toBe(true);
+      }
+    }
+  });
+
+  it("sitemapXml writes absolute locs on the canonical host only", async () => {
+    const { sitemapXml } = await import("@/lib/sitemap-entries");
+    const xml = sitemapXml(site.siteUrl, sitemapEntries());
+    const locs = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]!);
+    expect(locs.length).toBe(sitemapEntries().length);
+    for (const l of locs) expect(new URL(l).origin).toBe(new URL(site.siteUrl).origin);
+  });
+
+  it("the canonical host is consistent: siteUrl is www, robots.txt and the bare-to-www rule agree", () => {
+    expect(new URL(site.siteUrl).host).toBe("www.pawsandpassage.com");
+    expect(site.siteUrl.endsWith("/")).toBe(false);
+    const toml = readFileSync("netlify.toml", "utf8");
+    expect(toml).toContain(`to = "${site.siteUrl}/:splat"`);
+  });
+
+  it("the doc states that noindex is not access control and lists the six Cowork groups", () => {
+    expect(doc).toMatch(/noindex is not access control/i);
+    for (const g of [
+      "Group 1",
+      "Group 2",
+      "Group 3",
+      "Group 4",
+      "Group 5",
+      "Group 6",
+      "Consent (filled from worker S report)",
+    ])
+      expect(doc).toContain(g);
+  });
+
+  it("the event inventory in the doc matches the allow-list: every event is named, the renamed one is documented", () => {
+    const src = readFileSync("src/passport/events.ts", "utf8");
+    const names = [...src.matchAll(/^ {2}\| "([a-z_]+)"$/gm)].map((m) => m[1]!);
+    for (const n of names) expect(doc, n).toContain(n);
+    expect(doc).toContain("pp_checkout_handoff");
+    expect(doc).toMatch(/formerly (named )?`?pp_checkout_started/);
+    for (const gone of ["affiliate_clicked", "keepsake_share_attempted", "notification_opened"])
+      expect(src).not.toContain(`"${gone}"`);
   });
 });

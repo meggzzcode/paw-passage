@@ -18,7 +18,13 @@ export type AccessFailure =
   | "network" // this device could not reach the site
   | "error";
 export type AccessResult =
-  | { ok: true; reason: "activated" | "restored" | "already_active"; save: unknown; csrf: string }
+  | {
+      ok: true;
+      reason: "activated" | "restored" | "already_active";
+      save: unknown;
+      csrf: string;
+      owner: string;
+    }
   | { ok: false; reason: AccessFailure };
 
 const CODE_RE = /^[A-Za-z0-9_-]{8,100}$/;
@@ -45,7 +51,7 @@ function failureFor(status: number, body: Record<string, unknown>): AccessFailur
   return "error";
 }
 
-/** Checks a purchase code. `localSave` (the browser's own progress) is offered so nothing is lost on first activation. */
+/** Checks a purchase code. `localSave` (the browser's own progress) is offered so nothing is lost on first activation. Callers leave it out when the local records already belong to a customer. */
 export async function submitAccessCode(
   kind: AccessKind,
   code: string,
@@ -74,6 +80,7 @@ export async function submitAccessCode(
         reason: reason === "restored" || reason === "already_active" ? reason : "activated",
         save: body["save"],
         csrf: typeof body["csrf"] === "string" ? body["csrf"] : "",
+        owner: typeof body["owner"] === "string" ? body["owner"] : "",
       };
     }
     return { ok: false, reason: failureFor(res.status, body) };

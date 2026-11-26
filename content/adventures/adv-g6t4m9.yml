@@ -1,0 +1,108 @@
+schema: 2
+id: adv-g6t4m9
+title: The Family Storybook Afternoon
+clue: "By teatime there will be a book nobody has read, written about someone who was in the room all along."
+reveal: "Your family writes a tiny picture book about a real afternoon with your dog. Three calm watching moments become three pages, a fourth page holds the ending, and the finished book is read aloud once, quietly, to the hero."
+objective: "Watch your dog at three calm moments across an afternoon, turn each into a page of a folded paper book and read it aloud to your dog."
+instructions:
+  - "Fold one sheet of paper into a small eight-page booklet (fold in half three times, or stack and fold four sheets). Pick a working title and a hero name, such as your dog's own name. An adult sets up a cozy spot with paper and pens at least 6 feet from where your dog likes to rest, and stays in the room while the book is being made."
+  - "Moment one: watch quietly for a few minutes at the start of the afternoon. Each person writes or draws one sentence or one picture about what the hero did, such as arriving in the room, sniffing, stretching or choosing a spot. Make it a gentle story, never an order or a lesson for the dog. Do not call, pose or follow the dog."
+  - "Go and do something else for a while, then come back for moment two. Whatever the hero is doing now becomes page two. If they are sleeping, that is a very good page: write about the dream."
+  - "Moment three comes when the hero settles for the afternoon, or leaves. Everyone adds a last page together: the ending. Add a title page and a back-cover line from an adult. Do not write the children's names or ages in the book."
+  - "Read the book aloud once, in a soft voice, from your cozy spot. Your dog may listen, nap, wander off or ignore it, and every choice is a fine one. Nobody hugs, lifts or reaches for them."
+  - "Leave the finished book on a shelf where the dog's resting place is in view. Tidy the pens away and let the hero rest."
+twist: "Nothing in the story is invented about the dog. Every page comes from something the hero really chose to do."
+variations:
+  - "For young children: draw one picture each instead of writing, and let an adult write the words underneath."
+  - "For a puppy: watch for one short moment at a time, and write the pages while the puppy naps."
+  - "For a senior or limited-mobility dog: let them stay on their own bed all afternoon. Their story is about a long nap."
+  - "For a quiet household of two: take turns, one watching while the other writes."
+completion: "The family has written three real moments and an ending into a booklet and read it aloud once to your dog."
+photoIdea: "The finished booklet open beside the dog's resting place, no faces needed."
+memoryPrompt: "Which page was the favorite in your dog's story?"
+minutesMin: 30
+minutesMax: 60
+activeMinutes: 20
+costMin: 0
+costMax: 0
+prep: light
+supplies:
+  - Paper
+  - Pens or crayons
+requires:
+  - paper-and-pens
+substitutes:
+  - No spare paper? Staple or fold the back of used printer sheets.
+transport: none
+reservation:
+  needed: false
+setting: indoor
+homes:
+  - apartment
+  - house-no-yard
+  - house-with-yard
+space: a-room
+places:
+  - home
+seasons: []
+avoidWeather: []
+lifeStages:
+  - puppy
+  - adult
+  - senior
+personalities:
+  - cozy
+  - gentle
+sizes: []
+energy: gentle
+dogMobility: low
+ownerMobility: seated
+stepFree: true
+crowd: none
+strangers: false
+otherDogs: false
+noise: quiet
+food: false
+water: none
+safety:
+  - An adult stays in the room throughout. Children and the dog are never alone together; everyone stays 6 feet back.
+  - Nobody hugs, kisses, lifts, corners or leans over the dog. The dog may leave or retreat to rest at any time.
+  - If your dog stiffens, lip licks, yawns, turns away or hides, stop the story and give them space.
+household:
+  - family
+activityTypes:
+  - creative-projects
+  - memory-making
+collections:
+  - creative-companions
+  - home-sweet-home
+  - rainy-day-club
+stamps:
+  - first-adventure
+  - memory-maker
+achievements: []
+keepsake:
+  family: travel-postcard
+  theme: partners-in-adventure
+  headline: ONCE UPON A NAP
+  subhead: A story about the real hero
+  explainer: "Storybook: every page was something I really did"
+access: free
+status: published
+relatedGuides: []
+affiliateProducts: []
+research:
+  - label: "Dogs Trust: enrichment activities for dogs"
+    url: https://www.dogstrust.org.uk/dog-advice/life-with-your-dog/enrichment/enrichment-activities-for-dogs
+  - label: "ASPCA: canine DIY enrichment"
+    url: https://www.aspca.org/pet-care/dog-care/canine-diy-enrichment
+review:
+  ownerAppeal: 8
+  dogEnjoyment: 6
+  originality: 6
+  adventureFactor: 6
+  practicality: 8
+  memoryValue: 9
+  reviewedOn: "2026-11-26"
+role: lifestyle
+teaser: "A tiny book gets written by the whole family, and the main character will never read it."

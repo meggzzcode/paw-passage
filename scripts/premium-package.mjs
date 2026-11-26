@@ -3,7 +3,7 @@
 // premium library, the public preview records, collections, keepsake configs, a validation report, a manifest and the
 // import / recovery instructions. It is the authoritative copy of the paid content and lives OUTSIDE the repository.
 //
-//   node scripts/premium-package.mjs --out /home/user/premium-content/package
+//   node scripts/premium-package.mjs --out <folder outside the repo>
 //   options: --source <folder> (or --dir, or env PREMIUM_DIR; no default)  premium JSON folder   --date YYYY-MM-DD  (default today, UTC)
 //
 // Safety: refuses to write inside the git repository; only ever runs the premium-import.mjs DRY RUN (never --write, and the

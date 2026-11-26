@@ -1,0 +1,108 @@
+schema: 2
+id: adv-f3k8r2
+title: The Little Family Discovery Club
+clue: "A club with one member who never speaks and a notebook that never stops filling."
+reveal: "Your family opens a club with one rule: the dog is always the expert. For one calm afternoon session, everyone takes a job, watches quietly and records what your dog is telling you, then your dog decides where the meeting ends."
+objective: "Watch your dog together for three short quiet sittings, record what they tell you on a club sheet and let them choose where the meeting ends."
+instructions:
+  - "An adult opens the club: choose one calm room and agree the club rules out loud. Everyone sits on the floor or a chair, stays at least 6 feet from your dog, stays quiet and never reaches for, calls or follows the dog. The dog may leave at any time, and an adult stays in the room the whole time."
+  - "Hand out the club jobs on a sheet of paper: Ear Reporter (writes down what the ears do), Eye Reporter (what the eyes do), Nose Reporter (sniffing and licking lips), Walk-Away Judge (notes every time the dog leaves, which always counts as a good answer) and Door Keeper (keeps the room calm and the door closed). Fewer people? Double up the jobs."
+  - "First sitting, 3 minutes: everyone watches and says nothing. Each reporter makes a small tick or a tiny drawing whenever they spot their clue. Nobody calls the dog or shows them anything."
+  - "Take a 3 minute break to compare ticks. Say what the ticks might mean in a kind voice, as a guess only. Then hold the second sitting after the dog has had time to settle, and the third once the dog has done something different, such as stretching, sniffing or resting."
+  - "Write three club findings on one sheet, such as the spot your dog liked most or the thing they noticed first. Give the club a name, then each member draws a small club badge for their own job and signs the sheet with a paw print drawn by hand. Nobody writes the names or ages of the children on the sheet."
+  - "End the meeting by the dog's vote: stay still and see where your dog goes. If they settle on a bed, rug or in a doorway, that is where the club meets next time. Put the sheet near it, quietly tidy away and leave your dog to rest."
+twist: "The dog is the only expert in the club, and leaving counts as an answer. Nobody ever calls the dog, touches the dog or asks for a trick."
+variations:
+  - "For young children: give each child one picture job, such as drawing every time the dog yawns, stretches or looks away."
+  - "For a puppy: hold one short sitting of one or two minutes, in a quiet room, and stop as soon as the puppy loses interest."
+  - "For a senior or limited-mobility dog: let them stay on their own bed and hold all three sittings where they already are."
+  - "For a dog who prefers privacy: keep the club to two people and sit further back, in a doorway."
+completion: "The family has held three quiet sittings, signed a club sheet and your dog has chosen where the meeting ended, or walked away."
+photoIdea: "The club sheet laid out beside the dog's chosen spot, no faces needed."
+memoryPrompt: "What did the club discover your dog was telling you?"
+minutesMin: 25
+minutesMax: 45
+activeMinutes: 15
+costMin: 0
+costMax: 0
+prep: light
+supplies:
+  - Paper
+  - Pens or crayons
+requires:
+  - paper-and-pens
+substitutes:
+  - No big paper? Use the back of an envelope or notebook pages.
+transport: none
+reservation:
+  needed: false
+setting: indoor
+homes:
+  - apartment
+  - house-no-yard
+  - house-with-yard
+space: a-room
+places:
+  - home
+seasons: []
+avoidWeather: []
+lifeStages:
+  - puppy
+  - adult
+  - senior
+personalities:
+  - curious
+  - gentle
+sizes: []
+energy: gentle
+dogMobility: low
+ownerMobility: seated
+stepFree: true
+crowd: none
+strangers: false
+otherDogs: false
+noise: quiet
+food: false
+water: none
+safety:
+  - An adult stays in the room throughout. Children and the dog are never alone together; the group stays 6 feet back.
+  - Nobody hugs, kisses, lifts, corners or leans over the dog. The dog may leave or retreat to rest at any time.
+  - If your dog stiffens, lip licks, yawns, turns away or hides, end the club and give them space.
+household:
+  - family
+activityTypes:
+  - creative-projects
+  - relaxation
+collections:
+  - creative-companions
+  - home-sweet-home
+  - rainy-day-club
+stamps:
+  - first-adventure
+  - cozy-companion
+achievements: []
+keepsake:
+  family: id-card
+  theme: library-borrower-card
+  headline: CLUB MEMBER
+  subhead: The dog is the expert
+  explainer: "Club notes: our dog told us everything"
+access: free
+status: published
+relatedGuides: []
+affiliateProducts: []
+research:
+  - label: "Dogs Trust: enrichment activities for dogs"
+    url: https://www.dogstrust.org.uk/dog-advice/life-with-your-dog/enrichment/enrichment-activities-for-dogs
+  - label: "ASPCA: canine DIY enrichment"
+    url: https://www.aspca.org/pet-care/dog-care/canine-diy-enrichment
+review:
+  ownerAppeal: 7
+  dogEnjoyment: 7
+  originality: 6
+  adventureFactor: 6
+  practicality: 8
+  memoryValue: 8
+  reviewedOn: "2026-11-26"
+role: everyday
+teaser: "A small club with one very important member, and no one is allowed to rush the meeting."

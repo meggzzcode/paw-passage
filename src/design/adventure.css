@@ -529,3 +529,45 @@
 .pa-mystery .pd-why {
   color: var(--pp-ink);
 }
+
+/* Analytics choice notice (src/components/site/ConsentNotice.tsx). Simple on purpose so the final design can restyle it. */
+.cn-notice {
+  position: fixed;
+  inset: auto 0 0 0;
+  z-index: 40;
+  max-width: 44rem;
+  margin: 0 auto 0.75rem;
+  padding: 0.9rem 1rem;
+  background: var(--background, #fff);
+  color: var(--foreground, #222);
+  border: 1px solid var(--border, #ccc);
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 18px rgb(0 0 0 / 0.15);
+}
+.cn-title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+.cn-text {
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+}
+.cn-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+.cn-btn {
+  min-height: 44px;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--foreground, #222);
+  border-radius: 0.5rem;
+  background: transparent;
+  color: inherit;
+  font-weight: 600;
+}
+.cn-link {
+  text-decoration: underline;
+  min-height: 44px;
+}

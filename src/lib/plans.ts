@@ -158,3 +158,14 @@ export async function pushPlan(
   if (res.ok) mergePlans([res.data]);
   return res.ok;
 }
+
+/** Forgets every planned adventure on this device (memory and storage). Used by "Sign out and clear this device". */
+export function clearPlansLocal(): void {
+  cache = [];
+  try {
+    window.localStorage.removeItem(PLANS_KEY);
+  } catch {
+    /* blocked storage: nothing was stored */
+  }
+  listeners.forEach((l) => l());
+}

@@ -214,3 +214,5 @@ export const TRUST_POINTS: readonly { id: string; text: string }[] = [
   { id: "photos", text: "Photos stay on your device, always" },
   { id: "recovery", text: "Lost access? Restore it with your purchase code" },
 ] as const;
+
+export { ANALYTICS_CONSENT_MODE, type AnalyticsConsentMode } from "./analytics";

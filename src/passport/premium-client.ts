@@ -5,6 +5,7 @@
 import { CSRF_HEADER } from "@/lib/passport-api";
 import { isStandalone } from "@/lib/pwa";
 import { collections, stamps } from "./content";
+import { noteSessionOwner, resetOwnerConflict } from "./device-owner";
 import { adventureSchema, type Adventure } from "./schema";
 
 export type EntitlementStatus = "free" | "checking" | "entitled" | "revoked" | "offline";
@@ -101,8 +102,8 @@ export function acceptPremium(raw: unknown): Adventure[] {
 type Loaded =
   | { kind: "free" } // no session
   | { kind: "offline" }
-  | { kind: "revoked"; csrf: string }
-  | { kind: "entitled"; csrf: string; premium: Adventure[] };
+  | { kind: "revoked"; csrf: string; owner?: unknown }
+  | { kind: "entitled"; csrf: string; premium: Adventure[]; owner?: unknown };
 
 async function json(res: Response): Promise<Record<string, unknown>> {
   try {
@@ -133,14 +134,15 @@ async function loadInner(): Promise<Loaded> {
   const s = await json(res);
   if (s["authenticated"] !== true) return { kind: "free" };
   const csrf = typeof s["csrf"] === "string" ? s["csrf"] : "";
-  if (s["entitled"] !== true) return { kind: "revoked", csrf };
+  const owner = s["owner"];
+  if (s["entitled"] !== true) return { kind: "revoked", csrf, owner };
   try {
     const p = await fetch("/api/premium/adventures", { credentials: "same-origin" });
-    if (p.status === 403) return { kind: "revoked", csrf };
+    if (p.status === 403) return { kind: "revoked", csrf, owner };
     if (p.status === 401) return { kind: "free" };
     if (!p.ok) return { kind: "offline" };
     const body = await json(p);
-    return { kind: "entitled", csrf, premium: acceptPremium(body["adventures"]) };
+    return { kind: "entitled", csrf, premium: acceptPremium(body["adventures"]), owner };
   } catch {
     return { kind: "offline" };
   }
@@ -166,6 +168,7 @@ export function refreshEntitlement(opts: { force?: boolean; probe?: boolean } = 
         setAccountFlag(false);
         set(FREE);
       } else if (r.kind === "revoked") {
+        noteSessionOwner(r.owner);
         set({
           status: "revoked",
           premium: [],
@@ -174,6 +177,7 @@ export function refreshEntitlement(opts: { force?: boolean; probe?: boolean } = 
           message: REVOKED_MESSAGE,
         });
       } else if (r.kind === "entitled") {
+        noteSessionOwner(r.owner); // a different customer than the one this device's local records belong to pauses sync
         set({
           status: "entitled",
           premium: r.premium,
@@ -219,6 +223,7 @@ export function entitlementGranted(csrf?: string): Promise<void> {
 /** The session ended (401) or the account copy was deleted: forget premium and the flag. Local progress is untouched. */
 export function clearEntitlement(): void {
   setAccountFlag(false);
+  resetOwnerConflict();
   set(FREE);
 }
 

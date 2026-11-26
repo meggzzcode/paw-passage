@@ -21,6 +21,7 @@ import { usePassport } from "@/passport/usePassport";
 import { track } from "@/passport/events";
 import { CtxChip } from "@/components/journal/CtxChip";
 import { ctxToFilters, type CtxKey } from "@/passport/journal-context";
+import { AppLink } from "@/components/shell/AppLink";
 
 /** Everything the three tabs share: the library, who it is for, and what has been done. */
 function useDiscoverData() {
@@ -35,6 +36,41 @@ function useDiscoverData() {
     feedback: Object.fromEntries(Object.entries(save.feedback).map(([k, v]) => [k, v.value])),
   };
   return { save, dog, library, ctx, history };
+}
+
+/**
+ * Public, server-rendered explanation of free adventure discovery. It is plain text that search engines can read without
+ * running any script (the interactive starter below it renders only in the browser). It holds no adventure steps and
+ * nothing from the protected library. Shown to visitors who have not unlocked the full Passport.
+ */
+export const DISCOVER_INTRO_HEADING = "How personalized adventure discovery works";
+function DiscoverIntro() {
+  return (
+    <Container>
+      <section className="pa-panel" aria-labelledby="dp-about-h" data-testid="discover-intro">
+        <h2 className="pa-h" id="dp-about-h">
+          {DISCOVER_INTRO_HEADING}
+        </h2>
+        <p>
+          Paws &amp; Passage helps you find one small adventure that fits your dog. You answer a few
+          quick questions about your dog and about you, and every question is optional. Then you get
+          a personalized pick with the practical details first: how long it takes, what it costs,
+          where it happens and how much effort it needs.
+        </p>
+        <p>
+          If it suits you, accept it and the full instructions are yours to keep. If not, ask for
+          another one as often as you like. Your first adventure is free, with no account, email or
+          card, and your answers stay on your device.
+        </p>
+        <p className="pa-fine">
+          Prefer to look around first? Browse the{" "}
+          <AppLink to="/previews">adventure previews</AppLink>, read the{" "}
+          <AppLink to="/journal">Adventure Journal</AppLink>, or see what the{" "}
+          <AppLink to="/unlock">full Passport</AppLink> includes.
+        </p>
+      </section>
+    </Container>
+  );
 }
 
 /**
@@ -63,6 +99,7 @@ export function DiscoverPage(props: {
     <>
       {chip}
       <FreeStarter ctx={props.ctx} />
+      <DiscoverIntro />
     </>
   );
 }

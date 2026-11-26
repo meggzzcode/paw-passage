@@ -7,7 +7,7 @@
 // By default it cannot see real premium text (not tracked in the repo), so it proves the pipeline cannot ship a card record.
 // OWNER-MACHINE MODE: add `--premium-dir <folder>` (or set PREMIUM_DIR) to also scan the build for REAL premium fragments
 // (titles, ids, instructions, twist, safety text, clue/reveal/objective/completion/memoryPrompt) taken from that folder:
-//   PREMIUM_DIR=/home/user/premium-content/package/premium-2026-11-26-1/adventures node scripts/check-leaks.mjs dist
+//   PREMIUM_DIR=<protected package folder>/adventures node scripts/check-leaks.mjs dist
 // Fragments are never printed in full (40 characters). Needs Node 22.18+ (imports the TypeScript fixture directly).
 import { readdirSync, readFileSync, statSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";

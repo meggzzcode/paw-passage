@@ -17,12 +17,14 @@ export const Route = createFileRoute("/collections/")({
   validateSearch: (s: Record<string, unknown>): { tab: CollectionsTab } => ({
     tab: s["tab"] === "mine" || s["tab"] === "favorites" ? s["tab"] : "curated",
   }),
-  head: () =>
+  // ?tab=mine and ?tab=favorites show the visitor's own lists (stored on their device): noindex, canonical stays /collections.
+  head: ({ match }) =>
     pageHead({
       title: "Adventure collections for dogs",
       description:
         "Themed decks of dog adventures: five-minute moments, rainy days, apartment life, the golden years and more. Self-paced, no deadlines.",
       path: "/collections",
+      noindex: match.search.tab === "mine" || match.search.tab === "favorites",
     }),
   component: CollectionsPage,
 });

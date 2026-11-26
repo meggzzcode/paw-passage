@@ -1285,8 +1285,7 @@ content:
   # Why: premium adventure text is NO LONGER TRACKED in this PUBLIC repository (owner directive 2026-11-26): content/premium/*.json is git-ignored and
   # Pages CMS edits tracked files in the repository, so it cannot edit a local, untracked folder and every save would try to commit premium text.
   # Premium adventures are edited from the protected package kept outside the repository and imported with PREMIUM_DIR (docs/PREMIUM-CONTENT-WORKFLOW.md).
-  # Older commits still contain the text: docs/HISTORICAL-EXPOSURE.md. Do NOT turn this switch ON unless the owner has completed a remediation option there
-  # (for example a private repository) AND decided to track premium text again. Turning it ON is the reverse of the steps below:
+  # Do NOT turn this switch ON unless the owner has decided to track premium text in a PRIVATE repository. Turning it ON is the reverse of the steps below:
   #   on every line between PREMIUM-CMS-SWITCH:BEGIN and PREMIUM-CMS-SWITCH:END delete the leading spaces and the "# " (so "  #   - name: x" becomes "  - name: x"),
   #   then run: npx vitest run src/test/handover-cms.test.ts. Turning it OFF again is the reverse.
   # The folder content/premium/ is a git-ignored local working copy (content/premium/README.md); the site build never reads it.

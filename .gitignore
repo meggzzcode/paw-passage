@@ -45,9 +45,9 @@ __pycache__/
 coverage
 
 # Premium adventure library lives OUTSIDE git (Netlify Blobs); never commit exports or backups
-/premium-content/
+/premium-package/
 *.premium.json
 
 # Premium adventure text is NOT tracked (owner directive 2026-11-26). content/premium/ may hold a LOCAL working copy restored from the
-# protected package (see content/premium/README.md); it must never be committed. Earlier commits still contain it: docs/HISTORICAL-EXPOSURE.md.
+# protected package (see content/premium/README.md); it must never be committed.
 content/premium/*.json

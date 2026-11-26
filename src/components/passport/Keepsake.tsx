@@ -232,6 +232,7 @@ export function Keepsake({
     const b = await build();
     if (!b) return;
     downloadBlob(b, outName);
+    track("keepsake_downloaded", { kind: isFilter ? "filter" : "artwork" });
     setStatus("Saved to your device. Look in your downloads or photos.");
   }
 

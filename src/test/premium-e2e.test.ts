@@ -163,11 +163,11 @@ describe("premium e2e: protected API response shape", () => {
     const a = new Device(w);
     const act = await a.activate();
     expect(Object.keys(act.json).sort()).toEqual(
-      ["csrf", "entitled", "ok", "reason", "rev", "save"].sort(),
+      ["csrf", "entitled", "ok", "owner", "reason", "rev", "save"].sort(),
     );
     const ses = await a.session();
     expect(Object.keys(ses.json).sort()).toEqual(
-      ["authenticated", "csrf", "entitled", "expiresAt", "ok", "status"].sort(),
+      ["authenticated", "csrf", "entitled", "expiresAt", "ok", "owner", "status"].sort(),
     );
     const prem = await a.premium();
     expect(Object.keys(prem.json).sort()).toEqual(["adventures", "ok"]);

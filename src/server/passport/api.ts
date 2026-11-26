@@ -18,6 +18,7 @@ import {
   CSRF_HEADER,
   readCookie,
   sameOrigin,
+  ownerTagFor,
   sessionCookie,
   signSession,
   verifySession,
@@ -314,6 +315,7 @@ export function createApi(deps: ApiDeps) {
         reason,
         entitled: true,
         csrf: csrfFor(secret, { cus: rec.id, exp }),
+        owner: ownerTagFor(secret, rec.id),
         save: rec.save,
         rev: rec.save.rev,
       },
@@ -350,6 +352,7 @@ export function createApi(deps: ApiDeps) {
       entitled: rec.entitlement.status === "active",
       status: rec.entitlement.status,
       csrf: csrfFor(secret, session),
+      owner: ownerTagFor(secret, session.cus),
       expiresAt: session.exp,
     });
   }

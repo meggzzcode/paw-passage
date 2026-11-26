@@ -1,4 +1,5 @@
 import { createMiddleware } from "@tanstack/react-start";
+import { site } from "@/config/site";
 
 /**
  * Response headers for every HTML page. netlify.toml [[headers]] only reaches static files; pages are rendered by the
@@ -33,17 +34,40 @@ export const HTML_SECURITY_HEADERS: Record<string, string> = {
   "Permissions-Policy": "camera=(), microphone=(), geolocation=(), payment=(), usb=()",
 };
 
+/**
+ * True when the request host is not the production site (a Netlify deploy preview or branch deploy, a Lovable preview,
+ * localhost). The production hosts are the host of siteUrl and its apex (www and bare). With no siteUrl nothing is flagged.
+ * Netlify itself adds X-Robots-Tag to deploy previews and older branch deploys but NOT to the latest branch deploy, and its
+ * docs do not say whether it reaches server-rendered pages, so the app adds it too. noindex is a request to search engines,
+ * not access control: anyone with the URL can still open the page.
+ */
+export function isNonProductionHost(host: string | null | undefined, siteUrl: string): boolean {
+  if (!siteUrl || !host) return false;
+  let prod: string;
+  try {
+    prod = new URL(siteUrl).hostname.toLowerCase();
+  } catch {
+    return false;
+  }
+  const h = host.toLowerCase().replace(/:\d+$/, "");
+  const apex = prod.replace(/^www\./, "");
+  return h !== prod && h !== apex && h !== `www.${apex}`;
+}
+
 /** Adds the headers to an HTML response; other content types are left alone. Returns the response to send. */
-export function withHtmlSecurityHeaders(response: Response): Response {
+export function withHtmlSecurityHeaders(response: Response, nonProduction = false): Response {
   if (!(response.headers.get("content-type") ?? "").toLowerCase().includes("text/html"))
     return response;
+  const all: Record<string, string> = nonProduction
+    ? { ...HTML_SECURITY_HEADERS, "X-Robots-Tag": "noindex, nofollow" }
+    : HTML_SECURITY_HEADERS;
   try {
-    for (const [k, v] of Object.entries(HTML_SECURITY_HEADERS)) response.headers.set(k, v);
+    for (const [k, v] of Object.entries(all)) response.headers.set(k, v);
     return response;
   } catch {
     // Immutable headers: copy the response with the extra headers.
     const headers = new Headers(response.headers);
-    for (const [k, v] of Object.entries(HTML_SECURITY_HEADERS)) headers.set(k, v);
+    for (const [k, v] of Object.entries(all)) headers.set(k, v);
     return new Response(response.body, {
       status: response.status,
       statusText: response.statusText,
@@ -52,11 +76,14 @@ export function withHtmlSecurityHeaders(response: Response): Response {
   }
 }
 
-export const securityHeadersMiddleware = createMiddleware().server(async ({ next }) => {
+export const securityHeadersMiddleware = createMiddleware().server(async ({ next, request }) => {
   const result = await next();
   const response = (result as { response?: Response }).response;
   if (response instanceof Response) {
-    const updated = withHtmlSecurityHeaders(response);
+    const updated = withHtmlSecurityHeaders(
+      response,
+      isNonProductionHost(request.headers.get("host") ?? new URL(request.url).host, site.siteUrl),
+    );
     if (updated !== response) return { ...result, response: updated } as typeof result;
   }
   return result;

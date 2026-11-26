@@ -44,3 +44,29 @@ describe("404 head", () => {
     expect(isNotFoundLane(undefined)).toBe(false);
   });
 });
+
+describe("non-production hosts are asked to stay out of search results", () => {
+  const SITE = "https://www.pawsandpassage.com";
+  it("flags previews and localhost, never the production hosts", async () => {
+    const { isNonProductionHost } = await import("@/lib/security-headers");
+    for (const h of [
+      "deploy-preview-4--x.netlify.app",
+      "main--x.netlify.app",
+      "x.lovable.app",
+      "localhost:3000",
+    ])
+      expect(isNonProductionHost(h, SITE), h).toBe(true);
+    for (const h of ["www.pawsandpassage.com", "pawsandpassage.com", "WWW.PawsAndPassage.com:443"])
+      expect(isNonProductionHost(h, SITE), h).toBe(false);
+    expect(isNonProductionHost("x.netlify.app", "")).toBe(false);
+  });
+  it("adds X-Robots-Tag to HTML only, only when asked", () => {
+    const html = () => new Response("<p>x</p>", { headers: { "content-type": "text/html" } });
+    expect(withHtmlSecurityHeaders(html(), true).headers.get("x-robots-tag")).toBe(
+      "noindex, nofollow",
+    );
+    expect(withHtmlSecurityHeaders(html(), false).headers.get("x-robots-tag")).toBeNull();
+    const json = new Response("{}", { headers: { "content-type": "application/json" } });
+    expect(withHtmlSecurityHeaders(json, true).headers.get("x-robots-tag")).toBeNull();
+  });
+});

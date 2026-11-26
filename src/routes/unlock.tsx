@@ -128,7 +128,7 @@ function Unlock() {
                 rel="noopener noreferrer"
                 onClick={() => {
                   track("purchase_cta_clicked", { where: "unlock" });
-                  track("checkout_started");
+                  track("checkout_handoff");
                 }}
               >
                 Continue to checkout
@@ -157,7 +157,7 @@ function Unlock() {
                   data-testid="gift-cta"
                   onClick={() => {
                     track("purchase_cta_clicked", { where: "unlock-gift" });
-                    track("checkout_started");
+                    track("checkout_handoff");
                   }}
                 >
                   {GIFT_CTA}

@@ -1,5 +1,6 @@
 // Runs live sync for an entitled visitor and exposes its state. One controller per page; free visitors never start it.
 import { useEffect, useSyncExternalStore } from "react";
+import { ownerConflictState, subscribeOwner } from "./device-owner";
 import { getSave, mergeRemote, subscribe as subscribeLocal } from "./local-store";
 import {
   clearEntitlement,
@@ -43,7 +44,9 @@ export function useSyncState(): { status: SyncStatus; label: string | null } {
  */
 export function useSync(): void {
   const { status } = useEntitlement();
-  const entitled = status === "entitled";
+  // A different customer than the one this device's records belong to: nothing is uploaded or merged until they choose.
+  const conflict = useSyncExternalStore(subscribeOwner, ownerConflictState, () => "none" as const);
+  const entitled = status === "entitled" && conflict === "none";
   useEffect(() => {
     if (!entitled) {
       controller?.stop();
@@ -86,6 +89,10 @@ export function useSync(): void {
   }, [entitled]);
 }
 
+export function useOwnerConflict(): "none" | "ask" | "kept" {
+  return useSyncExternalStore(subscribeOwner, ownerConflictState, () => "none" as const);
+}
+
 /** Mounted once in the root layout. Renders nothing. */
 export function PassportRuntime() {
   useSync();
@@ -96,4 +103,9 @@ export function PassportRuntime() {
 export function _resetSyncForTests() {
   controller?.stop();
   controller = null;
+}
+
+/** Stops live sync at once (sign-out, clear-device) without waiting for the next render. */
+export function stopSync() {
+  controller?.stop();
 }

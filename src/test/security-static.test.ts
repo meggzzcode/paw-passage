@@ -54,7 +54,7 @@ describe("secrets are not in git-tracked files", () => {
   });
   it(".gitignore keeps env files, local dev vars and premium exports out of git", () => {
     const g = read(".gitignore");
-    for (const line of [".env", ".env.*", ".dev.vars", "*.premium.json", "/premium-content/"])
+    for (const line of [".env", ".env.*", ".dev.vars", "*.premium.json", "/premium-package/"])
       expect(g).toContain(line);
     expect(
       trackedFiles().filter((f) => /(^|\/)\.env(\.|$)/.test(f) && f !== ".env.example"),

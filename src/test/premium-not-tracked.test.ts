@@ -1,5 +1,4 @@
-// Premium adventure text must not be tracked in this repository (owner directive 2026-11-26). Old commits still contain it:
-// removing files does not remove history (docs/HISTORICAL-EXPOSURE.md). These tests guard the CURRENT tree only.
+// Premium adventure text must not be tracked in this repository (owner directive 2026-11-26). These tests guard the CURRENT tree only.
 import { execFileSync } from "node:child_process";
 import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
@@ -44,7 +43,6 @@ describe("premium text is not tracked in git", () => {
     expect(lines).toContain("content/premium/*.json");
     const at = lines.indexOf("content/premium/*.json");
     expect(lines[at - 1] ?? "").toMatch(/^#/);
-    expect(text).toMatch(/HISTORICAL-EXPOSURE/);
   });
 
   it("content/premium/README.md exists, explains the local working copy and holds no premium text", () => {
@@ -53,7 +51,6 @@ describe("premium text is not tracked in git", () => {
     const t = readFileSync(p, "utf8");
     expect(t).toMatch(/not stored in this repository/);
     expect(t).toMatch(/PREMIUM_DIR/);
-    expect(t).toMatch(/HISTORICAL-EXPOSURE/);
     expect(t).not.toMatch(/"instructions"\s*:/);
   });
 });

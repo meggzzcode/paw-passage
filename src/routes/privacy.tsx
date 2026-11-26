@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { InfoPage } from "@/components/site/InfoPage";
 import { pageHead } from "@/lib/seo";
+import { AnalyticsChoicesButton } from "@/components/site/ConsentNotice";
 
 export const Route = createFileRoute("/privacy")({
   head: () =>
@@ -21,17 +22,18 @@ export const Route = createFileRoute("/privacy")({
 - The free Passport needs no account, no email and no card. Your dog's profile and progress stay in your browser on your device.
 - Photos are never uploaded. Keepsakes are drawn on your device.
 - If you buy the full Passport, we keep a copy of your progress on our server so it can follow you across devices. You can download it or delete it yourself.
-- We use Google Analytics 4 for page views and a short list of named events. Those events carry no personal data. Google Analytics sets its own cookies.
+- Analytics are OFF until you choose "Allow analytics". If you do, we use Google Analytics 4 for page views and a short list of named events, which carry no personal data, and Google sets a cookie. "Essential only" changes nothing about how the site works, and you can change your mind at any time with "Analytics choices" in the footer.
 - We do not sell your data, run ads or run a mailing list.
 
 ## What your browser stores on your device
 
 The free Passport saves its state in your browser, on your device, and does not send it to us. It uses:
 
-- **Local storage:** your dog's profile and preferences, favorites, saved and completed adventures, memories, collections and the free introductory adventure (the main save, called "pp.save.v1"); the packing planner's checklist; planned adventures; which adventures you have already revealed; your hemisphere choice for seasonal ideas; and small flags such as whether you dismissed an install hint, or whether this browser has a purchase signed in.
-- **Session storage** (cleared when the tab closes): the adventures already offered during the introductory flow, and, if you arrived from a link with campaign tags (utm_source, utm_medium, utm_campaign), those three short labels, so a purchase click can be counted by campaign.
+- **Local storage:** your dog's profile and preferences, favorites, saved and completed adventures, memories, collections and the free introductory adventure (the main save, called "pp.save.v1"); the packing planner's checklist; planned adventures; which adventures you have already revealed; your hemisphere choice for seasonal ideas; and small flags such as whether you dismissed an install hint, or whether this browser has a purchase signed in. This is essential: the site cannot keep your progress without it.
+- **Your analytics choice** ("pp.consent.v1"): "granted" or "denied" and the date you chose, kept on this device so we do not ask again.
+- **Session storage** (cleared when the tab closes): the adventures already offered during the introductory flow (essential). Only if you have allowed analytics, and you arrived from a link with campaign tags (utm_source, utm_medium, utm_campaign), those three short labels, so a purchase click can be counted by campaign. Without your permission they are not stored.
 
-You can export a copy of your progress, or delete everything on this device, from your Passport page. Clearing your browser's site data also removes all of it. If you clear it without exporting, that progress is gone, because we do not have a copy of free progress.
+You can export a copy of your progress, or delete everything on this device, from your Passport page. On a shared or borrowed device use "Sign out and clear this device" there: it removes your dog's names and profile, saved items, memories, collections, planned adventures, packing lists and the notification subscription from that browser. A different person signing in on the same device never has the earlier person's progress merged into their account; they are asked whether to start fresh. Clearing your browser's site data also removes all of it. If you clear it without exporting, that progress is gone, because we do not have a copy of free progress.
 
 The site does not install a service worker or offer push notifications at the moment (both are paused). If either is switched on later, we will update this page first. Any older worker or cache from an earlier visit is removed when you open the site.
 
@@ -48,16 +50,26 @@ In the full Passport, keepsakes are made from a photo you choose, entirely in yo
 - **How long we keep it.** Your record stays until you delete it. We do not delete it automatically. If a purchase is refunded, access is switched off but the progress record stays until you delete it.
 - **Your choices.** When you are signed in, your Passport page shows "Download account data", "Sign out of this device" and "Delete account copy". Signing out clears that cookie on the device you are using and hides the full library there; your progress stays on the device, and you can sign back in with your license key via Restore access. It does not sign out your other devices. Downloading gives you a file with your synced progress and your access status. Deleting removes the whole server record: your synced progress, the sealed license key and the purchase fingerprint. It does not undo the purchase and does not touch the copy in your browser. You can restore access later with your license key, which starts a new record. If you cannot sign in on any device and want a record deleted, email us (see Contact); tell us the date of purchase, and do not send the license key itself.
 
-## Analytics
+## Analytics (optional, off until you allow it)
 
-We use Google Analytics 4 on the site, including when you use the free Passport. It records page views and basic information such as approximate location, device and browser type. It sets cookies in your browser (for example "_ga") to tell visits apart. We do not use it to identify you personally.
+Nothing from Google loads, no analytics cookie is set and no campaign tag is kept until you choose "Allow analytics" in the small notice at the bottom of the page. "Essential only" leaves all of that off. If your browser sends a Global Privacy Control or Do Not Track signal we treat it as "Essential only" until you choose otherwise. Analytics also never run in the development or preview copies of the site. Browsing, the introductory adventure, the quiz, revealing and completing adventures, keepsakes, buying, activating, syncing and restoring access all work the same whichever you choose.
 
-For the Passport and the tools we also send a short list of named events, such as an adventure being revealed or completed, a purchase button clicked, or a keepsake downloaded. Each carries only small labels such as an adventure identifier or the page, and campaign tags if you arrived with them. Any free text is dropped before sending. We never put your dog's name, your memories, your photos, your license key, your email or any customer identifier into an event. A click on a purchase or checkout button is counted as a click, not as a confirmed purchase. You can opt out with Google's [browser add-on](https://tools.google.com/dlpage/gaoptout) or by blocking cookies and scripts in your browser. The site works without analytics.
+If you allow it, we use Google Analytics 4 on the site, including when you use the free Passport. It records page views and basic information such as approximate location, device and browser type, and it sets cookies in your browser (for example "_ga" and a "_ga_" cookie for our measurement ID) to tell visits apart. We do not use it to identify you personally, and we do not use advertising features.
+
+For the Passport and the tools we also send a short list of named events, such as an adventure being revealed or completed, a purchase button clicked, or a keepsake downloaded. Each carries only small labels such as an adventure identifier or the page, and campaign tags if you arrived with them. Any free text is dropped before sending. We never put your dog's name, your memories, your photos, your license key, your email or any customer identifier into an event. A click on a purchase or checkout button is counted as a click, not as a confirmed purchase.
+
+**Changing your mind.** Use "Analytics choices" in the footer (or the button at the end of this page) at any time. Choosing "Essential only" afterwards stops sending, tells Google's tag that analytics storage is denied, and deletes the Google Analytics cookies and the campaign tags we could remove from this browser. Data Google already received is kept by Google under our retention setting; we do not have a way to find and delete one visitor's records, and we do not identify visitors. You can also use Google's [browser add-on](https://tools.google.com/dlpage/gaoptout) or block scripts and cookies in your browser.
+
+The site owner is responsible for confirming which rules apply in the places the site sells to; this page describes what the site does, it does not claim legal compliance.
+
+## Purchases and photos
+
+Payment and the purchase code are handled by Gumroad on gumroad.com, under Gumroad's own privacy policy; we never see your card details. Photos you pick for a keepsake are processed in your browser on your device and are not uploaded.
 
 ## Cookies, in full
 
-- **pp_session:** set only after you unlock or restore the full Passport, as described above.
-- **Google Analytics cookies:** set by Google Analytics as described above.
+- **pp_session (essential):** a signed, secure, HTTP-only cookie set only after you unlock or restore the full Passport. It lasts up to 30 days, or until you sign out of this device. It is per device: signing out on one device does not sign out another, and we cannot remotely cancel it before it expires.
+- **Google Analytics cookies (optional):** "_ga" and "_ga_" cookies, set only after you choose "Allow analytics", and deleted when you withdraw.
 - **Partner cookies:** only if you click an affiliate link and leave for another site (see below).
 
 We do not set advertising cookies of our own.
@@ -93,6 +105,10 @@ This site is not directed at children under 13, and we do not knowingly collect 
 ## Changes and contact
 
 We will update this page, and its date, if our practices change. Questions, or a request to see or delete a record? [Contact us](/contact).`}
-    />
+    >
+      <p className="mt-6">
+        <AnalyticsChoicesButton className="pp-btn pp-btn-secondary" />
+      </p>
+    </InfoPage>
   ),
 });

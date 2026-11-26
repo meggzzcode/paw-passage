@@ -15,7 +15,7 @@ Owner instructions for the Pinterest pin system. Plan and rationale: docs/MARKET
 node marketing/pins/generate.mjs
 ```
 
-Output goes to `/home/user/premium-content/export/pins/` (1000 by 1500 PNG). The script refuses to write inside the repository, so generated images are never committed. Options: `--set article` (render the Journal pins into `/home/user/premium-content/export/pins/article/`), `--out DIR`, `--only pin-id`. If Chromium is not found, set `CHROME_PATH` to a Chrome or Chromium binary. Playwright is looked up in the project first, then in the shared tools location.
+Output goes to ``paws-passage-export/pins/` next to the repository folder` (1000 by 1500 PNG). The script refuses to write inside the repository, so generated images are never committed. Options: `--set article` (render the Journal pins into ``paws-passage-export/pins/article/` next to the repository folder (never inside it)`), `--out DIR`, `--only pin-id`. If Chromium is not found, set `CHROME_PATH` to a Chrome or Chromium binary. Playwright is looked up in the project first, then in the shared tools location.
 
 ## Render the Journal pins
 
@@ -23,7 +23,7 @@ Output goes to `/home/user/premium-content/export/pins/` (1000 by 1500 PNG). The
 node marketing/pins/generate.mjs --set article
 ```
 
-Output: 30 PNGs (1000 by 1500) in `/home/user/premium-content/export/pins/article/`, named `<slug>-<n>.png`. Never inside the repository.
+Output: 30 PNGs (1000 by 1500) in ``paws-passage-export/pins/article/` next to the repository folder (never inside it)`, named `<slug>-<n>.png`. Never inside the repository.
 
 ## Post a pin (about 30 minutes a week)
 

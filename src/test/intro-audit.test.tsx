@@ -110,8 +110,9 @@ function run(r: Row) {
 }
 
 describe("free pool", () => {
-  it("is the 14 public free adventures, all published and free", () => {
-    expect(lib.length).toBe(14);
+  it("is the 16 public free adventures, all published and free", () => {
+    // 14 + 2 family-suited, puppy-and-senior-safe adventures added 2026-11-26 (Discovery Club, Storybook Afternoon).
+    expect(lib.length).toBe(16);
     expect(lib.every((a) => a.access === "free" && a.status === "published")).toBe(true);
   });
 });
@@ -198,8 +199,20 @@ describe("relaxing optional preferences", () => {
     }
   });
 
-  it("mixed ages with children: no free family fit strictly, but widening finds a safe non-family one", () => {
+  it("mixed ages with children: two free family-suited adventures now fit strictly", () => {
     const save = saveFor({ lifeStages: ["puppy", "senior"], kids: true, energy: "variable" });
+    const strict = selectStarter(lib, save);
+    expect(strict.ok).toBe(true);
+    if (strict.ok) expect(strict.adventure.household).toContain("family");
+  });
+
+  it("mixed ages with children and nearby outdoors: no free outdoor family fit strictly, widening finds a safe one", () => {
+    const save = saveFor({
+      lifeStages: ["puppy", "senior"],
+      kids: true,
+      energy: "variable",
+      where: "nearby",
+    });
     expect(selectStarter(lib, save).ok).toBe(false);
     const r = selectStarter(lib, save, new Set(), { relax: true });
     expect(r.ok).toBe(true);
@@ -260,9 +273,9 @@ describe("empty results in the page", () => {
     fireEvent.click(screen.getByRole("button", { name: /Find our adventure/ }));
   };
 
-  it("puppy + senior + children: nothing strictly fits, widening is offered, says what was set aside and keeps safety", async () => {
+  it("puppy + senior + children + nearby outdoors: nothing strictly fits, widening is offered, says what was set aside and keeps safety", async () => {
     setProfile({ lifeStages: ["puppy", "senior"], energyVariable: true });
-    setOwner({ kids: true });
+    setOwner({ kids: true, where: "nearby" });
     await renderUi(<FreeStarter />);
     finish();
     expect(
@@ -278,11 +291,12 @@ describe("empty results in the page", () => {
     expect(
       await screen.findByRole("article", { name: "Recommended adventure" }),
     ).toBeInTheDocument();
-    expect(
-      screen.getByText(/We also set aside the children-joining preference/),
-    ).toBeInTheDocument();
+    // a family-suited adventure now fits, so children joining is NOT set aside; only where/time/spend were widened
+    expect(screen.getByText(/We widened your where, time and spend answers/)).toBeInTheDocument();
+    expect(screen.queryByText(/children-joining preference/)).toBeNull();
     expect(getSave().owner.data.kids).toBe(true); // the saved answer itself is untouched
     const a = lib.find((x) => x.id === getSave().starter?.id)!;
+    expect(a.household).toContain("family");
     expect(a.lifeStages).toEqual(expect.arrayContaining(["puppy", "senior"]));
   });
 

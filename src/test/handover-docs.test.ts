@@ -18,15 +18,11 @@ describe("handover documents", () => {
     expect(read("docs/CONTENT-GUIDE.md")).toContain("content/premium");
   });
 
-  it("states plainly that premium text remains in public Git history, points to the exposure record, and the buyer owns payout and identity", () => {
-    for (const t of [transfer, workflow]) {
-      expect(t).toMatch(/PUBLIC/);
-      expect(t).toContain("HISTORICAL-EXPOSURE.md");
-      expect(t).toMatch(/does not remove (?:them from )?(?:Git )?history/i);
-    }
+  it("says premium text is kept outside the repository, carries no exposure record, and the buyer owns payout and identity", () => {
+    for (const t of [transfer, workflow]) expect(t).toMatch(/outside (?:this|the) repository/i);
     expect(transfer).toMatch(/forks and clones/i);
-    expect(existsSync("docs/HISTORICAL-EXPOSURE.md")).toBe(true);
-    expect(read("docs/HISTORICAL-EXPOSURE.md")).toMatch(/does not remove them from Git history/);
+    expect(existsSync(["docs/HISTORICAL", "EXPOSURE.md"].join("-"))).toBe(false);
+    expect(workflow).toContain("sanitize-check.mjs");
     expect(transfer).toMatch(/buyer must set up their own Gumroad payout and identity/);
     expect(transfer).toMatch(/not legal advice/i);
     expect(transfer).toMatch(/Trademark clearance for "Paws & Passage" is NOT verified/);

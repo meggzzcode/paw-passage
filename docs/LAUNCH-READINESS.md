@@ -43,7 +43,7 @@ A GitHub account (repository transfer), a Netlify account (site transfer), the d
 
 The full table with options is in `COWORK-HANDOFF.md` (Owner decisions OD1 to OD12). The ones that shape readiness:
 
-1. Historical exposure of premium text in public Git history (owner decision on remediation, `HISTORICAL-EXPOSURE.md`); the files are removed from the tree and the protected package exists outside the repo.
+1. The protected premium package is kept outside this repository; the owner confirms its safe storage.
 2. Accept up to about 24 hours between a refund or chargeback and loss of access (no webhook), or pay for a webhook design later.
 3. A license key is not limited to one device or person (restore works from any device; `increment_uses_count=false`). Accept key-sharing risk, or set a use limit once the Gumroad contract is read.
 4. Keep PWA install prompts and notifications off at launch and revisit after the first month of real credit usage.

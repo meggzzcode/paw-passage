@@ -21,7 +21,7 @@ const here = dirname(fileURLToPath(import.meta.url));
 const root = resolve(here, "..");
 const args = process.argv.slice(2);
 const arg = (n, d) => (args.includes(n) ? args[args.indexOf(n) + 1] : d);
-const out = resolve(arg("--out", "/home/user/premium-content/owner-package"));
+const out = resolve(arg("--out", join(root, "..", "paws-passage-export", "owner-package")));
 if (out.startsWith(root + "/")) {
   console.error("Refusing to build the package inside the repository.");
   process.exit(1);

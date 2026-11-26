@@ -13,7 +13,7 @@ All fixtures are SYNTHETIC. No premium text lives in these tests, this document 
 
 ## Owner-machine checks (need PREMIUM_DIR)
 
-Premium adventure text is not tracked in this repository (`docs/HISTORICAL-EXPOSURE.md`). Everything above uses SYNTHETIC fixtures and runs everywhere. A few checks need the REAL library, so they run only when `PREMIUM_DIR` points at the folder of `<id>.json` files (for example the `adventures/` folder of the protected package). Without it each one is reported as SKIPPED with a visible title that starts with `OWNER-MACHINE` and says why; none passes silently by reading nothing.
+Premium adventure text is not tracked in this repository. Everything above uses SYNTHETIC fixtures and runs everywhere. A few checks need the REAL library, so they run only when `PREMIUM_DIR` points at the folder of `<id>.json` files (for example the `adventures/` folder of the protected package). Without it each one is reported as SKIPPED with a visible title that starts with `OWNER-MACHINE` and says why; none passes silently by reading nothing.
 
 | Skipped without PREMIUM_DIR                              | File                           | What it proves with the real library                                                           |
 | -------------------------------------------------------- | ------------------------------ | ---------------------------------------------------------------------------------------------- |
@@ -29,7 +29,7 @@ Always-on (synthetic) counterparts: `premium-not-tracked.test.ts` (no `content/p
 Run on the owner machine:
 
 ```bash
-export PREMIUM_DIR=/home/user/premium-content/package/premium-2026-11-26-1/adventures
+export PREMIUM_DIR=<protected package folder>/adventures
 npx vitest run src/test/premium-owner-checks.test.ts src/test/library-inventory.test.ts src/test/unlock-v6.test.tsx
 node scripts/validate-journal.mjs
 node scripts/check-leaks.mjs dist --premium-dir "$PREMIUM_DIR"   # after a build

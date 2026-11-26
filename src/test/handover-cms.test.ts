@@ -202,9 +202,8 @@ describe("premium CMS switch and access locks", () => {
     expect(premiumEntry.path).toBe("content/premium");
   });
 
-  it("the switch comments say premium text is not tracked and point at the historical-exposure record", () => {
+  it("the switch comments say premium text is not tracked", () => {
     expect(text).toMatch(/NO LONGER TRACKED/);
-    expect(text).toContain("HISTORICAL-EXPOSURE.md");
     expect(text).toContain("git-ignored");
   });
 

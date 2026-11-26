@@ -1,6 +1,6 @@
 # Visual and accessibility review
 
-Method: Playwright Chromium against the Vite dev server, widths 320, 390, 768 and 1280. **This is browser emulation, not physical-device testing.** No real iPhone, Android phone, tablet or screen reader was used. Screenshots (160 files, 40 page states) are in `/home/user/premium-content/export/screens/` as `<page>-<width>.png` (outside the repo).
+Method: Playwright Chromium against the Vite dev server, widths 320, 390, 768 and 1280. **This is browser emulation, not physical-device testing.** No real iPhone, Android phone, tablet or screen reader was used. Screenshots (160 files, 40 page states) are in a folder outside the repo, as `<page>-<width>.png`.
 
 Per page and width the script checked: horizontal page scroll, elements past the viewport edge, axe-core (WCAG 2.0/2.1/2.2 A/AA plus best practices, including color contrast), touch targets of 44px or more (inline text links inside paragraphs are exempt), heading order, one H1, image alt. API responses were mocked (previews from synthetic text only; entitled, 401 and offline sessions). Premium text was not used.
 

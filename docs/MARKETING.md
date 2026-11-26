@@ -93,7 +93,7 @@ Uses existing collections only. Never use a deadline, countdown or "limited time
 
 ## 5. Pinterest routine (owner-operable, about 30 minutes per week, no paid scheduler)
 
-Pinterest's own tools (free) are enough. Pins are made by the generator in /home/user/premium-content/export/pins/ (never in the repo).
+Pinterest's own tools (free) are enough. Pins are made by the generator in `paws-passage-export/pins/` next to the repository folder (never in the repo).
 
 1. Monday, 5 minutes: open marketing/pins/pins.json, pick the 5 next unposted pins (rotate themes, favor the current season from section 4). Note the ones posted in marketing/pins/posted.log (create locally if wanted, do not commit).
 2. 15 minutes: on Pinterest, create each pin: upload the PNG, paste the `title` and `description` from pins.json, set the link to your site plus the `destination` path. Use a board per theme. Pinterest's native scheduling for a business account can spread the five across the week at no cost (check the current Pinterest interface; this was not verified here).
@@ -112,7 +112,7 @@ Rules: no hashtags, no suggested customer captions, no fake scarcity, no claim t
 
 None of these are results. All are hypotheses until measured.
 
-Primary metric: net revenue per qualified visitor (revenue after refunds and fees, divided by visitors who viewed a preview or started the finder). Secondary: intro_started rate, preview_viewed rate, purchase_cta_clicked rate, checkout_started to purchase.
+Primary metric: net revenue per qualified visitor (revenue after refunds and fees, divided by visitors who viewed a preview or started the finder). Secondary: intro_started rate, preview_viewed rate, purchase_cta_clicked rate, checkout_handoff to purchase.
 
 Rules: change one thing at a time; run each test for a fixed period decided in advance; do not read results from tiny samples (a few dozen visitors says nothing); log the date of each change in docs/DECISIONS.md.
 
@@ -133,8 +133,8 @@ Rules: change one thing at a time; run each test for a fixed period decided in a
 | Visitors, few intro_started         | Landing page clarity           | Headline, first screen, finder visibility       |
 | intro_started, few intro_completed  | Adventure quality or fit       | Eligibility, effort level, time shown           |
 | Completed, few purchase_cta_clicked | Value after the free adventure | Unlock prompt placement, preview relevance      |
-| CTA clicks, few checkout_started    | Price or trust at the CTA      | Price clarity, no dark patterns, refund wording |
-| checkout_started, few purchases     | Checkout friction              | Provider flow, license code delivery            |
+| CTA clicks, few checkout_handoff    | Price or trust at the CTA      | Price clarity, no dark patterns, refund wording |
+| checkout_handoff, few purchases     | Checkout friction              | Provider flow, license code delivery            |
 | Purchases, many refunds             | Expectation mismatch           | Preview honesty, what the library is            |
 
 ## 8. Pin assets
@@ -145,7 +145,7 @@ See marketing/README.md. 30 initial pins (1000 by 1500) across the directive the
 
 The Adventure Journal has ten articles. Each has three pins in marketing/pins/article-pins.json: a practical question or problem, an attractive lifestyle benefit, and a discovery message. Their destinations are the article pages (`/journal/<slug>`) with UTM parameters (`utm_source=pinterest&utm_medium=social&utm_campaign=<slug>-<n>`), so the site can attribute visits to one pin without storing personal data. Pin descriptions are plain prose with no hashtags, never suggest that paid content is free, make no health or behavior claims and reveal nothing about the paid adventures.
 
-Render: `node marketing/pins/generate.mjs --set article` writes 30 PNGs (1000 by 1500) to /home/user/premium-content/export/pins/article/. They are never committed.
+Render: `node marketing/pins/generate.mjs --set article` writes 30 PNGs (1000 by 1500) to `paws-passage-export/pins/article/` next to the repository folder. They are never committed.
 
 ### Weekly routine for the owner (about 20 minutes, no paid scheduler)
 

@@ -159,8 +159,18 @@ describe("ctx presets", () => {
 });
 
 describe("campaign attribution", () => {
-  beforeEach(() => sessionStorage.clear());
-  afterEach(() => sessionStorage.clear());
+  // Attribution is analytics storage, so it exists only after the visitor allowed analytics (see consent.test.tsx).
+  beforeEach(() => {
+    sessionStorage.clear();
+    localStorage.setItem(
+      "pp.consent.v1",
+      JSON.stringify({ v: 1, choice: "granted", at: "2026-11-26" }),
+    );
+  });
+  afterEach(() => {
+    sessionStorage.clear();
+    localStorage.removeItem("pp.consent.v1");
+  });
   it("sanitizes and caps values", () => {
     expect(sanitizeCampaignValue("Pinterest Pin!<x>")).toBe("pinterest-pin-x");
     expect(sanitizeCampaignValue("a".repeat(80))!.length).toBe(40);

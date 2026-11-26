@@ -19,7 +19,7 @@ if (!["main", "article"].includes(set)) {
   process.exit(1);
 }
 const outDir = resolve(
-  arg("--out", `/home/user/premium-content/export/pins${set === "article" ? "/article" : ""}`),
+  arg("--out", join(root, "..", "paws-passage-export", "pins", set === "article" ? "article" : "")),
 );
 const only = arg("--only", null);
 

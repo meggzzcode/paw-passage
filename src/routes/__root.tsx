@@ -19,6 +19,7 @@ import { SiteHeader } from "../components/shell/SiteHeader";
 import { SiteFooter } from "../components/shell/SiteFooter";
 import { InstallRuntime } from "../components/site/InstallRuntime";
 import { PassportRuntime } from "../passport/useSync";
+import { ConsentNotice } from "../components/site/ConsentNotice";
 
 function NotFoundComponent() {
   return (
@@ -157,15 +158,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           ...(site.pinterestUrl ? { sameAs: [site.pinterestUrl] } : {}),
         }),
       },
-      ...(site.ga4MeasurementId
-        ? [
-            {
-              // The gtag stub is defined at once so events are queued; the 180 KB Google loader is fetched after the page
-              // has loaded (and the browser is idle), so it never competes with the hero photo. Pageviews are still counted.
-              children: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)};window.gtag=gtag;gtag('js',new Date());gtag('config','${site.ga4MeasurementId}');(function(){function l(){var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=${site.ga4MeasurementId}';document.head.appendChild(s)}function g(){if('requestIdleCallback' in window){requestIdleCallback(l,{timeout:3000})}else{setTimeout(l,1)}}if(document.readyState==='complete'){g()}else{window.addEventListener('load',g)}})();`,
-            },
-          ]
-        : []),
     ],
   }),
   shellComponent: RootShell,
@@ -213,6 +205,7 @@ function RootComponent() {
         <Outlet />
       </main>
       <SiteFooter />
+      <ConsentNotice />
     </QueryClientProvider>
   );
 }

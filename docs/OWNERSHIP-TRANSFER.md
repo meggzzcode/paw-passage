@@ -4,7 +4,7 @@ For the seller and a non-technical buyer. It lists everything that changes hands
 
 ## 0. Plain statements before anything else
 
-- **Premium text was in a PUBLIC repository's history.** The paid adventures were committed to `content/premium/` on 2026-11-26 (`195d159`, `c776905`) and are removed from the tree at the next commit, but removing files does not remove them from Git history. The owner decides the remediation (`HISTORICAL-EXPOSURE.md`: private repository, history rewrite, a new clean repository, or accepting it). Tell a buyer plainly that the files were public for a period and may have been copied. The website build never read that folder, so the site never shipped it.
+- **Premium text is not in this repository.** The protected premium package is kept outside it and handed over privately by the seller (see `PREMIUM-CONTENT-WORKFLOW.md`). The website build never reads `content/premium/`, so the site never ships it.
 - **The buyer must set up their own Gumroad payout and identity.** Gumroad payouts and identity verification are tied to a person or company and cannot be handed over. The seller's payout details, tax identity and balance stay with the seller. The buyer opens or uses their own Gumroad account, completes Gumroad's identity and payout setup themselves, and creates or receives the product there. Whether an existing Gumroad product and its license keys can move between accounts is **UNVERIFIED** (A8 in `COWORK-HANDOFF.md`); ask Gumroad support in writing before the sale closes.
 - No customer data goes to a prospective buyer during diligence (`FLIP-HANDOFF.md`).
 
@@ -48,7 +48,7 @@ Names only; values live in the Netlify site settings and are never written in fi
 
 Do the steps in this order; each depends on the one before.
 
-1. Seller: apply the owner's chosen remediation from `HISTORICAL-EXPOSURE.md` and check forks and clones. Export a fresh premium backup (`node scripts/premium-export.mjs --dir <folder outside the repo> --env production`) and store it safely.
+1. Seller: check for forks and clones of the repository. Export a fresh premium backup (`node scripts/premium-export.mjs --dir <folder outside the repo> --env production`) and store it safely.
 2. Seller: write the handover notes (registrar, renewal date, who has access to what), without secrets.
 3. Both: sign the sale agreement (lawyer reviewed) and agree what moves and when.
 4. Buyer: create their GitHub, Netlify, Gumroad (identity and payout), Google and password-manager accounts.

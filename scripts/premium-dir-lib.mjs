@@ -1,7 +1,7 @@
 // Shared helpers for the `--dir` mode of premium-import.mjs and premium-export.mjs: one JSON file per premium adventure.
 // Pure file handling, no network. The folder must be OUTSIDE the repository, except the single sanctioned in-repo folder
 // content/premium, which is a GIT-IGNORED local working copy (premium text is NOT tracked in this repository; content/premium/README.md,
-// docs/PREMIUM-CONTENT-WORKFLOW.md, docs/HISTORICAL-EXPOSURE.md). The source folder is never assumed: it comes from --dir or PREMIUM_DIR.
+// docs/PREMIUM-CONTENT-WORKFLOW.md). The source folder is never assumed: it comes from --dir or PREMIUM_DIR.
 import {
   existsSync,
   mkdirSync,
@@ -14,7 +14,7 @@ import { join, relative, resolve, sep } from "node:path";
 
 export const NO_PREMIUM_DIR_MESSAGE =
   "No premium folder given. Premium text is not stored in this repository. Pass --dir <folder> or set PREMIUM_DIR to the folder of one <id>.json per adventure " +
-  "(the adventures/ folder of the protected package, for example /home/user/premium-content/package/premium-2026-11-26-1/adventures). See content/premium/README.md.";
+  "(the adventures/ folder of the protected package, kept outside this repository). See content/premium/README.md.";
 
 /** The premium folder named on the command line (--dir <folder>) or in PREMIUM_DIR; undefined when neither is set. Never a default path. */
 export function premiumDirFromArgs(args, env = process.env, flag = "--dir") {

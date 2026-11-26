@@ -37,6 +37,27 @@
     Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
 
 # ---------------------------------------------------------------------------------------------------------------------
+# Canonical host. https://www.pawsandpassage.com is the PROPOSED canonical host (siteUrl in content/settings.yml, robots.txt,
+# sitemap, canonicals, JSON-LD and og:url all use it). The bare domain answers one permanent redirect to the same path on www.
+# The rule matches only the bare host, so a request already on www never matches it and cannot loop. The path is kept by
+# :splat. Netlify passes the query string through on redirects without one in "to" (UNVERIFIED until a live check:
+# scripts/check-live-seo.mjs and docs/GOOGLE-SETUP.md section 2). Netlify's own primary-domain setting does the same job for
+# the domain; this rule is the in-repo statement of it. Deploy previews (*.netlify.app) are not the bare host and are not
+# affected. If the owner picks the bare domain as canonical instead, change this block AND siteUrl AND robots.txt together.
+# ---------------------------------------------------------------------------------------------------------------------
+[[redirects]]
+  from = "https://pawsandpassage.com/*"
+  to = "https://www.pawsandpassage.com/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://pawsandpassage.com/*"
+  to = "https://www.pawsandpassage.com/:splat"
+  status = 301
+  force = true
+
+# ---------------------------------------------------------------------------------------------------------------------
 # Retired addresses (removed sections, tools, data files and guides). The pages are gone for good and have no
 # relevant replacement, so they answer 410 Gone. They are never redirected to the home page.
 # Order matters: the first matching rule wins.

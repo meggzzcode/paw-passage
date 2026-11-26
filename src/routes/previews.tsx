@@ -9,6 +9,8 @@ export const Route = createFileRoute("/previews")({
       description:
         "A hand-picked selection of previews from the full Adventure Passport. Browse and save favorites, no account needed.",
       path: "/previews",
+      // Reachable by URL and linked from the product, but not a search landing page (client-rendered cards). Not in the sitemap.
+      noindex: true,
     }),
   component: PreviewsPage,
 });

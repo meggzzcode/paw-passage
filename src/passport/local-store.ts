@@ -13,6 +13,7 @@ import {
   remove,
   removeFromCollection,
   renameCollection,
+  revealStarter as revealStarterIn,
   reorderCollection,
   setSmartFilters,
   MAX_MEMORY_CHARS,
@@ -77,6 +78,10 @@ export const unfavorite = mutateSet("favorites", remove);
 export const saveForLater = mutateSet("saved", add);
 export const unsaveForLater = mutateSet("saved", remove);
 
+/** Save-before-you-buy: bookmarks of public preview ids use the same "saved" set, so they survive a purchase. */
+export const bookmarkPreview = saveForLater;
+export const unbookmarkPreview = unsaveForLater;
+
 export function setMemory(id: string, text: string, now = Date.now()) {
   const s = getSave();
   const clean = text.trim().slice(0, MAX_MEMORY_CHARS);
@@ -130,6 +135,8 @@ const apply = (next: Save) => {
 /** Remembers the free visitor's one picked adventure (null clears it). Ignored once that adventure is completed. */
 export const setStarter = (id: string | null, now = Date.now()) =>
   apply(chooseStarter(getSave(), id, now));
+/** Accepts the recommendation: from here the full instructions stay readable on this device. */
+export const revealStarter = (now = Date.now()) => apply(revealStarterIn(getSave(), now));
 export const newCollection = (c: CustomCollection, now = Date.now()) =>
   apply(createCollection(getSave(), c, now));
 export const renameCustomCollection = (id: string, name: string, now = Date.now()) =>

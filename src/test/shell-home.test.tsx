@@ -28,27 +28,19 @@ describe("shell navigation", () => {
 
 describe("homepage copy", () => {
   const src = readFileSync("src/routes/index.tsx", "utf8");
-  it("has the single primary CTA and the five placeholder collections", () => {
-    expect(src).toContain("Pick our free adventure");
-    expect(src).toContain("Tell us about your dog. Get one adventure picked for them, free.");
-    for (const c of [
-      "Five-Minute Moments",
-      "Rainy Day Club",
-      "Road Trip Adventures",
-      "The Golden Years",
-      "Puppy's First Chapter",
-    ])
-      expect(src).toContain(c);
+  it("leads with the adventure headline and one clear primary CTA", () => {
+    expect(src).toContain("Life is better with a little");
+    expect(src).toContain("Find Our First Adventure");
+    expect(src).toContain("Explore the Adventure Collection");
+    expect(src).toContain("One payment, not a subscription");
+    expect(src).toContain("No account");
   });
   it("shows the price from the one offer constant, with no discount or unproven claim", () => {
     expect(src).toContain("offer.price");
     expect(src).toContain("offer.pricing");
     expect(src).not.toMatch(/\$\d|% off|\breviews?\b|customers|testimonial/i);
   });
-  it("leads with a concrete H1 and keeps the old slogan out of the hero", () => {
-    expect(src).toContain("Little adventures for you and");
-    expect(src).toContain("Free to start");
-    expect(src).toContain("No account");
+  it("keeps the old slogan out of the hero", () => {
     expect(src).not.toMatch(/collect\s+adventures/i);
   });
 });

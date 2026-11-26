@@ -17,7 +17,20 @@ export type EventName =
   | "access_restored"
   | "affiliate_clicked"
   | "suggestion_revealed"
-  | "calendar_reminder_downloaded";
+  | "calendar_reminder_downloaded"
+  | "intro_started"
+  | "intro_personalized"
+  | "intro_recommended"
+  | "intro_replaced"
+  | "intro_revealed"
+  | "intro_completed"
+  | "preview_viewed"
+  | "preview_bookmarked"
+  | "preview_unbookmarked"
+  | "collection_preview_viewed"
+  | "keepsake_downloaded"
+  | "keepsake_share_attempted"
+  | "purchase_cta_clicked";
 
 const ALLOWED = new Set<EventName>([
   "profile_completed",
@@ -35,6 +48,19 @@ const ALLOWED = new Set<EventName>([
   "affiliate_clicked",
   "suggestion_revealed",
   "calendar_reminder_downloaded",
+  "intro_started",
+  "intro_personalized",
+  "intro_recommended",
+  "intro_replaced",
+  "intro_revealed",
+  "intro_completed",
+  "preview_viewed",
+  "preview_bookmarked",
+  "preview_unbookmarked",
+  "collection_preview_viewed",
+  "keepsake_downloaded",
+  "keepsake_share_attempted",
+  "purchase_cta_clicked",
 ]);
 const FIELD = /^[a-z0-9_-]{1,40}$/;
 

@@ -22,15 +22,17 @@ import {
   ACTIVITY_LABELS,
   PREP_LABELS,
   SUPPLY_LABELS,
+  effortChips,
   formatCost,
   formatSetting,
   formatTime,
+  glanceOf,
+  goodLabels,
   keepsakeName,
+  needChips,
   suitabilityNotes,
   tagChips,
 } from "./labels";
-
-const EFFORT = { gentle: "Gentle effort", moderate: "Moderate effort", lively: "Lively effort" };
 
 function logistics(a: Adventure): string[] {
   const out: string[] = [];
@@ -48,7 +50,9 @@ export function Chips({ a }: { a: Adventure }) {
       <li>{formatTime(a)}</li>
       <li>{formatCost(a)}</li>
       <li>{formatSetting(a)}</li>
-      <li>{EFFORT[a.energy]}</li>
+      {effortChips(glanceOf(a), a.ownerMobility).map((c) => (
+        <li key={c}>{c}</li>
+      ))}
       <li>{PREP_LABELS[a.prep]}</li>
     </ul>
   );
@@ -112,12 +116,16 @@ export function FactChips({ a }: { a: Adventure }) {
     ["Cost", formatCost(a)],
     ["Where", formatSetting(a)],
   ];
+  const effort = effortChips(glanceOf(a), a.ownerMobility);
   return (
     <ul className="pa-facts" aria-label="At a glance">
       {facts.map(([k, v]) => (
         <li key={k}>
           <span className="pa-facts-k">{k}</span> {v}
         </li>
+      ))}
+      {effort.map((c) => (
+        <li key={c}>{c}</li>
       ))}
     </ul>
   );
@@ -193,7 +201,15 @@ export function AdventureCard({
   const [showKeepsake, setShowKeepsake] = useState(false);
   const [note, setNote] = useState("");
   const dog = dogName || "your dog";
-  const tags = tagChips(a);
+  // Restrictions first (yard, people, dogs), then the reassuring labels. Wording is shared with previews.
+  const tags = (() => {
+    const good = goodLabels(glanceOf(a), a.noise === "quiet");
+    const restrict = tagChips(a).filter(
+      (t) => !["Puppy-friendly", "Senior-friendly", "Quiet"].includes(t),
+    );
+    const travel = needChips(glanceOf(a)).filter((t) => t !== "Involves food or treats");
+    return [...new Set([...restrict, ...travel, ...good])].slice(0, 7);
+  })();
   const notes = suitabilityNotes(a);
   const book = logistics(a);
   const memoryField = (
@@ -285,7 +301,6 @@ export function AdventureCard({
                 {[...a.activityTypes.map((t) => ACTIVITY_LABELS[t]), ...book, ...notes].map((n) => (
                   <li key={n}>{n}</li>
                 ))}
-                <li>{EFFORT[a.energy]}</li>
                 <li>{PREP_LABELS[a.prep]}</li>
               </ul>
             </>

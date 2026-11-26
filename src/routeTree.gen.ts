@@ -16,17 +16,26 @@ import { Route as ContactRouteImport } from './routes/contact'
 import { Route as CorrectionsRouteImport } from './routes/corrections'
 import { Route as DisclaimerRouteImport } from './routes/disclaimer'
 import { Route as DiscoverRouteImport } from './routes/discover'
+import { Route as DoggyDateIdeasRouteImport } from './routes/doggy-date-ideas'
 import { Route as EditorialStandardsRouteImport } from './routes/editorial-standards'
+import { Route as FaqRouteImport } from './routes/faq'
+import { Route as FreeThingsToDoWithYourDogRouteImport } from './routes/free-things-to-do-with-your-dog'
 import { Route as HowWeWriteAdventuresRouteImport } from './routes/how-we-write-adventures'
+import { Route as IndoorDogAdventuresRouteImport } from './routes/indoor-dog-adventures'
 import { Route as MethodologyRouteImport } from './routes/methodology'
 import { Route as OurStoryRouteImport } from './routes/our-story'
 import { Route as PassportRouteImport } from './routes/passport'
+import { Route as PreviewsRouteImport } from './routes/previews'
 import { Route as PrivacyRouteImport } from './routes/privacy'
+import { Route as PuppyBucketListRouteImport } from './routes/puppy-bucket-list'
 import { Route as RefundPolicyRouteImport } from './routes/refund-policy'
 import { Route as RestoreAccessRouteImport } from './routes/restore-access'
+import { Route as SeniorDogAdventuresRouteImport } from './routes/senior-dog-adventures'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as TermsRouteImport } from './routes/terms'
+import { Route as ThingsToDoWithYourDogRouteImport } from './routes/things-to-do-with-your-dog'
 import { Route as UnlockRouteImport } from './routes/unlock'
+import { Route as WeekendAdventureFinderRouteImport } from './routes/weekend-adventure-finder'
 import { Route as CollectionsIndexRouteImport } from './routes/collections.index'
 import { Route as CollectionsSlugRouteImport } from './routes/collections.$slug'
 import { Route as GearIndexRouteImport } from './routes/gear.index'
@@ -71,14 +80,35 @@ const DiscoverRoute = DiscoverRouteImport.update({
   path: '/discover',
   getParentRoute: () => rootRouteImport,
 } as any)
+const DoggyDateIdeasRoute = DoggyDateIdeasRouteImport.update({
+  id: '/doggy-date-ideas',
+  path: '/doggy-date-ideas',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const EditorialStandardsRoute = EditorialStandardsRouteImport.update({
   id: '/editorial-standards',
   path: '/editorial-standards',
   getParentRoute: () => rootRouteImport,
 } as any)
+const FaqRoute = FaqRouteImport.update({
+  id: '/faq',
+  path: '/faq',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FreeThingsToDoWithYourDogRoute =
+  FreeThingsToDoWithYourDogRouteImport.update({
+    id: '/free-things-to-do-with-your-dog',
+    path: '/free-things-to-do-with-your-dog',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const HowWeWriteAdventuresRoute = HowWeWriteAdventuresRouteImport.update({
   id: '/how-we-write-adventures',
   path: '/how-we-write-adventures',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const IndoorDogAdventuresRoute = IndoorDogAdventuresRouteImport.update({
+  id: '/indoor-dog-adventures',
+  path: '/indoor-dog-adventures',
   getParentRoute: () => rootRouteImport,
 } as any)
 const MethodologyRoute = MethodologyRouteImport.update({
@@ -96,9 +126,19 @@ const PassportRoute = PassportRouteImport.update({
   path: '/passport',
   getParentRoute: () => rootRouteImport,
 } as any)
+const PreviewsRoute = PreviewsRouteImport.update({
+  id: '/previews',
+  path: '/previews',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PrivacyRoute = PrivacyRouteImport.update({
   id: '/privacy',
   path: '/privacy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PuppyBucketListRoute = PuppyBucketListRouteImport.update({
+  id: '/puppy-bucket-list',
+  path: '/puppy-bucket-list',
   getParentRoute: () => rootRouteImport,
 } as any)
 const RefundPolicyRoute = RefundPolicyRouteImport.update({
@@ -111,6 +151,11 @@ const RestoreAccessRoute = RestoreAccessRouteImport.update({
   path: '/restore-access',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SeniorDogAdventuresRoute = SeniorDogAdventuresRouteImport.update({
+  id: '/senior-dog-adventures',
+  path: '/senior-dog-adventures',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
   id: '/sitemap.xml',
   path: '/sitemap.xml',
@@ -121,9 +166,19 @@ const TermsRoute = TermsRouteImport.update({
   path: '/terms',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ThingsToDoWithYourDogRoute = ThingsToDoWithYourDogRouteImport.update({
+  id: '/things-to-do-with-your-dog',
+  path: '/things-to-do-with-your-dog',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const UnlockRoute = UnlockRouteImport.update({
   id: '/unlock',
   path: '/unlock',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WeekendAdventureFinderRoute = WeekendAdventureFinderRouteImport.update({
+  id: '/weekend-adventure-finder',
+  path: '/weekend-adventure-finder',
   getParentRoute: () => rootRouteImport,
 } as any)
 const CollectionsIndexRoute = CollectionsIndexRouteImport.update({
@@ -175,17 +230,26 @@ export interface FileRoutesByFullPath {
   '/corrections': typeof CorrectionsRoute
   '/disclaimer': typeof DisclaimerRoute
   '/discover': typeof DiscoverRoute
+  '/doggy-date-ideas': typeof DoggyDateIdeasRoute
   '/editorial-standards': typeof EditorialStandardsRoute
+  '/faq': typeof FaqRoute
+  '/free-things-to-do-with-your-dog': typeof FreeThingsToDoWithYourDogRoute
   '/how-we-write-adventures': typeof HowWeWriteAdventuresRoute
+  '/indoor-dog-adventures': typeof IndoorDogAdventuresRoute
   '/methodology': typeof MethodologyRoute
   '/our-story': typeof OurStoryRoute
   '/passport': typeof PassportRoute
+  '/previews': typeof PreviewsRoute
   '/privacy': typeof PrivacyRoute
+  '/puppy-bucket-list': typeof PuppyBucketListRoute
   '/refund-policy': typeof RefundPolicyRoute
   '/restore-access': typeof RestoreAccessRoute
+  '/senior-dog-adventures': typeof SeniorDogAdventuresRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
+  '/things-to-do-with-your-dog': typeof ThingsToDoWithYourDogRoute
   '/unlock': typeof UnlockRoute
+  '/weekend-adventure-finder': typeof WeekendAdventureFinderRoute
   '/collections/$slug': typeof CollectionsSlugRoute
   '/gear/$category': typeof GearCategoryRoute
   '/guides/$slug': typeof GuidesSlugRoute
@@ -203,17 +267,26 @@ export interface FileRoutesByTo {
   '/corrections': typeof CorrectionsRoute
   '/disclaimer': typeof DisclaimerRoute
   '/discover': typeof DiscoverRoute
+  '/doggy-date-ideas': typeof DoggyDateIdeasRoute
   '/editorial-standards': typeof EditorialStandardsRoute
+  '/faq': typeof FaqRoute
+  '/free-things-to-do-with-your-dog': typeof FreeThingsToDoWithYourDogRoute
   '/how-we-write-adventures': typeof HowWeWriteAdventuresRoute
+  '/indoor-dog-adventures': typeof IndoorDogAdventuresRoute
   '/methodology': typeof MethodologyRoute
   '/our-story': typeof OurStoryRoute
   '/passport': typeof PassportRoute
+  '/previews': typeof PreviewsRoute
   '/privacy': typeof PrivacyRoute
+  '/puppy-bucket-list': typeof PuppyBucketListRoute
   '/refund-policy': typeof RefundPolicyRoute
   '/restore-access': typeof RestoreAccessRoute
+  '/senior-dog-adventures': typeof SeniorDogAdventuresRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
+  '/things-to-do-with-your-dog': typeof ThingsToDoWithYourDogRoute
   '/unlock': typeof UnlockRoute
+  '/weekend-adventure-finder': typeof WeekendAdventureFinderRoute
   '/collections/$slug': typeof CollectionsSlugRoute
   '/gear/$category': typeof GearCategoryRoute
   '/guides/$slug': typeof GuidesSlugRoute
@@ -232,17 +305,26 @@ export interface FileRoutesById {
   '/corrections': typeof CorrectionsRoute
   '/disclaimer': typeof DisclaimerRoute
   '/discover': typeof DiscoverRoute
+  '/doggy-date-ideas': typeof DoggyDateIdeasRoute
   '/editorial-standards': typeof EditorialStandardsRoute
+  '/faq': typeof FaqRoute
+  '/free-things-to-do-with-your-dog': typeof FreeThingsToDoWithYourDogRoute
   '/how-we-write-adventures': typeof HowWeWriteAdventuresRoute
+  '/indoor-dog-adventures': typeof IndoorDogAdventuresRoute
   '/methodology': typeof MethodologyRoute
   '/our-story': typeof OurStoryRoute
   '/passport': typeof PassportRoute
+  '/previews': typeof PreviewsRoute
   '/privacy': typeof PrivacyRoute
+  '/puppy-bucket-list': typeof PuppyBucketListRoute
   '/refund-policy': typeof RefundPolicyRoute
   '/restore-access': typeof RestoreAccessRoute
+  '/senior-dog-adventures': typeof SeniorDogAdventuresRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/terms': typeof TermsRoute
+  '/things-to-do-with-your-dog': typeof ThingsToDoWithYourDogRoute
   '/unlock': typeof UnlockRoute
+  '/weekend-adventure-finder': typeof WeekendAdventureFinderRoute
   '/collections/$slug': typeof CollectionsSlugRoute
   '/gear/$category': typeof GearCategoryRoute
   '/guides/$slug': typeof GuidesSlugRoute
@@ -262,17 +344,26 @@ export interface FileRouteTypes {
     | '/corrections'
     | '/disclaimer'
     | '/discover'
+    | '/doggy-date-ideas'
     | '/editorial-standards'
+    | '/faq'
+    | '/free-things-to-do-with-your-dog'
     | '/how-we-write-adventures'
+    | '/indoor-dog-adventures'
     | '/methodology'
     | '/our-story'
     | '/passport'
+    | '/previews'
     | '/privacy'
+    | '/puppy-bucket-list'
     | '/refund-policy'
     | '/restore-access'
+    | '/senior-dog-adventures'
     | '/sitemap.xml'
     | '/terms'
+    | '/things-to-do-with-your-dog'
     | '/unlock'
+    | '/weekend-adventure-finder'
     | '/collections/$slug'
     | '/gear/$category'
     | '/guides/$slug'
@@ -290,17 +381,26 @@ export interface FileRouteTypes {
     | '/corrections'
     | '/disclaimer'
     | '/discover'
+    | '/doggy-date-ideas'
     | '/editorial-standards'
+    | '/faq'
+    | '/free-things-to-do-with-your-dog'
     | '/how-we-write-adventures'
+    | '/indoor-dog-adventures'
     | '/methodology'
     | '/our-story'
     | '/passport'
+    | '/previews'
     | '/privacy'
+    | '/puppy-bucket-list'
     | '/refund-policy'
     | '/restore-access'
+    | '/senior-dog-adventures'
     | '/sitemap.xml'
     | '/terms'
+    | '/things-to-do-with-your-dog'
     | '/unlock'
+    | '/weekend-adventure-finder'
     | '/collections/$slug'
     | '/gear/$category'
     | '/guides/$slug'
@@ -318,17 +418,26 @@ export interface FileRouteTypes {
     | '/corrections'
     | '/disclaimer'
     | '/discover'
+    | '/doggy-date-ideas'
     | '/editorial-standards'
+    | '/faq'
+    | '/free-things-to-do-with-your-dog'
     | '/how-we-write-adventures'
+    | '/indoor-dog-adventures'
     | '/methodology'
     | '/our-story'
     | '/passport'
+    | '/previews'
     | '/privacy'
+    | '/puppy-bucket-list'
     | '/refund-policy'
     | '/restore-access'
+    | '/senior-dog-adventures'
     | '/sitemap.xml'
     | '/terms'
+    | '/things-to-do-with-your-dog'
     | '/unlock'
+    | '/weekend-adventure-finder'
     | '/collections/$slug'
     | '/gear/$category'
     | '/guides/$slug'
@@ -347,17 +456,26 @@ export interface RootRouteChildren {
   CorrectionsRoute: typeof CorrectionsRoute
   DisclaimerRoute: typeof DisclaimerRoute
   DiscoverRoute: typeof DiscoverRoute
+  DoggyDateIdeasRoute: typeof DoggyDateIdeasRoute
   EditorialStandardsRoute: typeof EditorialStandardsRoute
+  FaqRoute: typeof FaqRoute
+  FreeThingsToDoWithYourDogRoute: typeof FreeThingsToDoWithYourDogRoute
   HowWeWriteAdventuresRoute: typeof HowWeWriteAdventuresRoute
+  IndoorDogAdventuresRoute: typeof IndoorDogAdventuresRoute
   MethodologyRoute: typeof MethodologyRoute
   OurStoryRoute: typeof OurStoryRoute
   PassportRoute: typeof PassportRoute
+  PreviewsRoute: typeof PreviewsRoute
   PrivacyRoute: typeof PrivacyRoute
+  PuppyBucketListRoute: typeof PuppyBucketListRoute
   RefundPolicyRoute: typeof RefundPolicyRoute
   RestoreAccessRoute: typeof RestoreAccessRoute
+  SeniorDogAdventuresRoute: typeof SeniorDogAdventuresRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   TermsRoute: typeof TermsRoute
+  ThingsToDoWithYourDogRoute: typeof ThingsToDoWithYourDogRoute
   UnlockRoute: typeof UnlockRoute
+  WeekendAdventureFinderRoute: typeof WeekendAdventureFinderRoute
   CollectionsSlugRoute: typeof CollectionsSlugRoute
   GearCategoryRoute: typeof GearCategoryRoute
   GuidesSlugRoute: typeof GuidesSlugRoute
@@ -419,6 +537,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof DiscoverRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/doggy-date-ideas': {
+      id: '/doggy-date-ideas'
+      path: '/doggy-date-ideas'
+      fullPath: '/doggy-date-ideas'
+      preLoaderRoute: typeof DoggyDateIdeasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/editorial-standards': {
       id: '/editorial-standards'
       path: '/editorial-standards'
@@ -426,11 +551,32 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof EditorialStandardsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/faq': {
+      id: '/faq'
+      path: '/faq'
+      fullPath: '/faq'
+      preLoaderRoute: typeof FaqRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/free-things-to-do-with-your-dog': {
+      id: '/free-things-to-do-with-your-dog'
+      path: '/free-things-to-do-with-your-dog'
+      fullPath: '/free-things-to-do-with-your-dog'
+      preLoaderRoute: typeof FreeThingsToDoWithYourDogRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/how-we-write-adventures': {
       id: '/how-we-write-adventures'
       path: '/how-we-write-adventures'
       fullPath: '/how-we-write-adventures'
       preLoaderRoute: typeof HowWeWriteAdventuresRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/indoor-dog-adventures': {
+      id: '/indoor-dog-adventures'
+      path: '/indoor-dog-adventures'
+      fullPath: '/indoor-dog-adventures'
+      preLoaderRoute: typeof IndoorDogAdventuresRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/methodology': {
@@ -454,11 +600,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PassportRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/previews': {
+      id: '/previews'
+      path: '/previews'
+      fullPath: '/previews'
+      preLoaderRoute: typeof PreviewsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/privacy': {
       id: '/privacy'
       path: '/privacy'
       fullPath: '/privacy'
       preLoaderRoute: typeof PrivacyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/puppy-bucket-list': {
+      id: '/puppy-bucket-list'
+      path: '/puppy-bucket-list'
+      fullPath: '/puppy-bucket-list'
+      preLoaderRoute: typeof PuppyBucketListRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/refund-policy': {
@@ -475,6 +635,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof RestoreAccessRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/senior-dog-adventures': {
+      id: '/senior-dog-adventures'
+      path: '/senior-dog-adventures'
+      fullPath: '/senior-dog-adventures'
+      preLoaderRoute: typeof SeniorDogAdventuresRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/sitemap.xml': {
       id: '/sitemap.xml'
       path: '/sitemap.xml'
@@ -489,11 +656,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof TermsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/things-to-do-with-your-dog': {
+      id: '/things-to-do-with-your-dog'
+      path: '/things-to-do-with-your-dog'
+      fullPath: '/things-to-do-with-your-dog'
+      preLoaderRoute: typeof ThingsToDoWithYourDogRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/unlock': {
       id: '/unlock'
       path: '/unlock'
       fullPath: '/unlock'
       preLoaderRoute: typeof UnlockRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/weekend-adventure-finder': {
+      id: '/weekend-adventure-finder'
+      path: '/weekend-adventure-finder'
+      fullPath: '/weekend-adventure-finder'
+      preLoaderRoute: typeof WeekendAdventureFinderRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/collections/': {
@@ -563,17 +744,26 @@ const rootRouteChildren: RootRouteChildren = {
   CorrectionsRoute: CorrectionsRoute,
   DisclaimerRoute: DisclaimerRoute,
   DiscoverRoute: DiscoverRoute,
+  DoggyDateIdeasRoute: DoggyDateIdeasRoute,
   EditorialStandardsRoute: EditorialStandardsRoute,
+  FaqRoute: FaqRoute,
+  FreeThingsToDoWithYourDogRoute: FreeThingsToDoWithYourDogRoute,
   HowWeWriteAdventuresRoute: HowWeWriteAdventuresRoute,
+  IndoorDogAdventuresRoute: IndoorDogAdventuresRoute,
   MethodologyRoute: MethodologyRoute,
   OurStoryRoute: OurStoryRoute,
   PassportRoute: PassportRoute,
+  PreviewsRoute: PreviewsRoute,
   PrivacyRoute: PrivacyRoute,
+  PuppyBucketListRoute: PuppyBucketListRoute,
   RefundPolicyRoute: RefundPolicyRoute,
   RestoreAccessRoute: RestoreAccessRoute,
+  SeniorDogAdventuresRoute: SeniorDogAdventuresRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   TermsRoute: TermsRoute,
+  ThingsToDoWithYourDogRoute: ThingsToDoWithYourDogRoute,
   UnlockRoute: UnlockRoute,
+  WeekendAdventureFinderRoute: WeekendAdventureFinderRoute,
   CollectionsSlugRoute: CollectionsSlugRoute,
   GearCategoryRoute: GearCategoryRoute,
   GuidesSlugRoute: GuidesSlugRoute,

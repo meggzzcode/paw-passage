@@ -1,9 +1,12 @@
-// The one free adventure. A free visitor answers a short survey and the engine picks the single best match from the
+// The one free introductory adventure. A free visitor answers a short survey and the engine picks the single best match from the
 // public free pool. Hard eligibility comes first (never overridden), unknown answers are never "safe", and a dog we
 // know nothing about gets the gentle default. No network, no randomness beyond the engine's fixed tie-break.
 import { eligibility, rank, type Ctx, type History } from "./engine";
 import { has, members, type Save } from "./progress";
 import type { Adventure } from "./schema";
+
+/** Public address of the premium previews showcase. Other pages link here (plain `to`/`href`, no query string). */
+export const PREVIEWS_PATH = "/previews";
 
 export type StarterPick =
   { ok: true; adventure: Adventure; why: string[] } | { ok: false; reason: "none-eligible" };
@@ -21,9 +24,16 @@ const historyOf = (save: Save): History => ({
   feedback: Object.fromEntries(Object.entries(save.feedback).map(([k, v]) => [k, v.value])),
 });
 
-/** Picks the best free adventure for this save's answers. Held (unanswered) adventures are never picked. */
-export function selectStarter(library: Adventure[], save: Save): StarterPick {
-  const free = library.filter((a) => a.access === "free");
+/**
+ * Picks the best free adventure for this save's answers. Held (unanswered) adventures are never picked.
+ * `exclude` holds ids already offered this session ("show me another" never repeats one).
+ */
+export function selectStarter(
+  library: Adventure[],
+  save: Save,
+  exclude: ReadonlySet<string> = new Set(),
+): StarterPick {
+  const free = library.filter((a) => a.access === "free" && !exclude.has(a.id));
   const ctx = ctxOf(save);
   const history = historyOf(save);
   for (const includeDone of [false, true]) {
@@ -34,14 +44,26 @@ export function selectStarter(library: Adventure[], save: Save): StarterPick {
   return { ok: false, reason: "none-eligible" };
 }
 
+/** How many free adventures suit the current answers (hard eligibility only). Used for honest "more to see" lines. */
+export function eligibleFreeCount(library: Adventure[], save: Save): number {
+  const ctx = ctxOf(save);
+  return library.filter((a) => a.access === "free" && eligibility(a, ctx).eligible).length;
+}
+
 /**
- * The saved starter, if it is still usable: it must exist in the free pool and either be completed (the keepsake stays
- * whatever the answers say) or still be eligible for the current answers.
+ * The saved starter, if it is still usable: it must exist in the free pool and either be revealed or completed (it
+ * stays readable whatever the answers say) or still be eligible for the current answers.
  */
 export function savedStarter(library: Adventure[], save: Save): Adventure | undefined {
   const id = save.starter?.id;
   if (!id) return undefined;
   const a = library.find((x) => x.id === id && x.access === "free");
   if (!a) return undefined;
-  return has(save.done, id) || eligibility(a, ctxOf(save)).eligible ? a : undefined;
+  // Once revealed (or completed) it stays readable whatever the answers say now.
+  const kept = has(save.done, id) || save.starter?.revealedAt !== undefined;
+  return kept || eligibility(a, ctxOf(save)).eligible ? a : undefined;
 }
+
+/** True once the visitor accepted the recommendation (or completed it): the full instructions are theirs to re-read. */
+export const isRevealed = (save: Save): boolean =>
+  !!save.starter && (save.starter.revealedAt !== undefined || has(save.done, save.starter.id));

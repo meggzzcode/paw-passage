@@ -274,7 +274,7 @@ describe("discover: completion and cards", () => {
     expect(glance.textContent).toMatch(/Cost/);
     expect(glance.textContent).toMatch(/Where/);
     const tags = card.querySelector(".pa-tags");
-    expect((tags?.querySelectorAll("li").length ?? 0) <= 4).toBe(true);
+    expect((tags?.querySelectorAll("li").length ?? 0) <= 7).toBe(true);
     const more = within(card).getByText("More details").closest("details")!;
     expect(more.open).toBe(false);
     expect(within(card).getByText("How it goes")).toBeInTheDocument();

@@ -50,7 +50,12 @@ export type Save = {
 };
 
 /** The free visitor's single picked adventure (an ID only, never a copy of the adventure). */
-export type Starter = { id: string; at: number };
+export type Starter = {
+  id: string;
+  at: number;
+  /** When the visitor accepted the recommendation and saw the full instructions. Absent until then. */
+  revealedAt?: number;
+};
 
 export const MAX_MEMORY_CHARS = 280;
 export const MAX_IDS = 400;
@@ -202,7 +207,15 @@ export function merge(a: Save, b: Save): Save {
     const cur = collections[k];
     collections[k] = cur ? mergeCollection(cur, c) : c;
   }
-  const starter = a.starter && b.starter ? later(a.starter, b.starter) : (a.starter ?? b.starter);
+  let starter = a.starter && b.starter ? later(a.starter, b.starter) : (a.starter ?? b.starter);
+  // A reveal is never undone by merging: if either side revealed the same adventure, the result is revealed.
+  if (starter) {
+    const rev = [a.starter, b.starter]
+      .filter((x) => x?.id === starter!.id && x.revealedAt !== undefined)
+      .map((x) => x!.revealedAt!);
+    if (rev.length > 0 && starter.revealedAt === undefined)
+      starter = { ...starter, revealedAt: Math.min(...rev) };
+  }
   return clamp({
     v: 2,
     rev: Math.max(a.rev, b.rev),
@@ -408,9 +421,11 @@ function checkTree(x: Record<string, unknown>): string | null {
   if (Object.keys(x).some((k) => !allowed.includes(k))) return "unknown field";
   if ("starter" in x) {
     const st = x["starter"];
-    if (!isObj(st) || Object.keys(st).some((k) => k !== "id" && k !== "at")) return "bad starter";
+    if (!isObj(st) || Object.keys(st).some((k) => k !== "id" && k !== "at" && k !== "revealedAt"))
+      return "bad starter";
     if (typeof st["id"] !== "string" || !ADV_RE.test(st["id"]) || !goodTime(st["at"]))
       return "bad starter";
+    if ("revealedAt" in st && !goodTime(st["revealedAt"])) return "bad starter";
   }
   if (typeof x["rev"] !== "number" || !Number.isInteger(x["rev"]) || x["rev"] < 0) return "bad rev";
   for (const [key, specs] of [
@@ -509,7 +524,7 @@ export function migrate(raw: unknown): Save | null {
  */
 export function chooseStarter(s: Save, id: string | null, now: number): Save {
   const cur = s.starter;
-  if (cur && has(s.done, cur.id)) return s;
+  if (cur && (has(s.done, cur.id) || cur.revealedAt !== undefined)) return s; // revealed stays for good
   if (id === null) {
     if (!cur) return s;
     const { starter: _gone, ...rest } = s;
@@ -517,6 +532,13 @@ export function chooseStarter(s: Save, id: string | null, now: number): Save {
   }
   if (cur?.id === id) return s;
   return { ...s, starter: { id, at: Math.max(now, (cur?.at ?? 0) + 1) } };
+}
+
+/** Marks the current recommendation as accepted and revealed. It then stays readable on this device. */
+export function revealStarter(s: Save, now: number): Save {
+  const cur = s.starter;
+  if (!cur || cur.revealedAt !== undefined) return s;
+  return { ...s, starter: { ...cur, revealedAt: Math.max(now, cur.at) } };
 }
 
 // ---------------------------------------------------------------- collections API

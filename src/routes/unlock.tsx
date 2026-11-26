@@ -10,13 +10,16 @@ import { offer } from "@/config/site";
 import { unlockLine, usePremiumSummary } from "@/lib/premium-summary";
 import { TrustBlock } from "@/components/passport/TrustBlock";
 import { pageHead } from "@/lib/seo";
+import { PREVIEWS_PATH } from "@/passport/starter";
+import { FaqList } from "@/components/site/FaqList";
+import { FAQS, UNLOCK_FAQ_IDS } from "@/components/site/faq-content";
 
 export const Route = createFileRoute("/unlock")({
   head: () =>
     pageHead({
-      title: "Get the Adventure Passport",
+      title: `Get the Adventure Passport: ${offer.price} Once`,
       description:
-        "What the free Adventure Passport includes and what the full Passport adds. One-time purchase, no subscription.",
+        "One free adventure picked for your dog, then the full Adventure Passport library for a single payment. No subscription, no account.",
       path: "/unlock",
     }),
   component: Unlock,
@@ -32,12 +35,25 @@ function Unlock() {
     <Container>
       <div className="pa-page">
         <p className="pa-kicker">The Adventure Passport</p>
-        <h1 className="pa-h1">Get the full Passport</h1>
+        <h1 className="pa-h1">The full Passport: one payment, no subscription</h1>
         <p className="pa-sub">
-          Tell us about your dog. Get one adventure picked for them, free. The full Passport is for
-          when you want more.
+          A digital collection of little adventures for you and your dog, in your browser. Start
+          with one free adventure picked for your dog. When you want more, the full Passport opens
+          the whole library for {offer.price}, once.
         </p>
-        <p>Want more little adventures with your dog? {unlockLine(summary)}</p>
+        <p>{unlockLine(summary)}</p>
+        <p className="pp-cta-row">
+          <AppLink to="/discover" className="pp-btn pp-btn-primary">
+            Find Our First Adventure — Free
+          </AppLink>
+          <AppLink
+            to={PREVIEWS_PATH}
+            className="pp-btn pp-btn-secondary"
+            onClick={() => track("preview_viewed", { where: "unlock" })}
+          >
+            Explore the Adventure Collection
+          </AppLink>
+        </p>
 
         <div className="co-compare">
           <section className="pa-card" aria-labelledby="free-h">
@@ -45,11 +61,15 @@ function Unlock() {
               Free, always
             </h2>
             <ul className="co-plain">
-              <li>A short survey about your dog, then one adventure picked for them</li>
-              <li>“Your first adventure”: do it, collect it, make a photo filter</li>
-              <li>A stamp and a keepsake postcard made on your device</li>
-              <li>Re-read your pick and keep your keepsake any time</li>
-              <li>No account needed</li>
+              <li>
+                A few quick questions about your dog, then one complete adventure picked for them
+              </li>
+              <li>
+                Practical details first (time, cost, setting, effort), and another pick if you like
+              </li>
+              <li>A stamp for your passport and a keepsake made on your device</li>
+              <li>Selected previews from the larger collection</li>
+              <li>No account, no email, no card</li>
             </ul>
           </section>
           <section className="pa-card" aria-labelledby="full-h">
@@ -57,7 +77,7 @@ function Unlock() {
               The full Passport adds
             </h2>
             <p className="pa-price">
-              <strong>{offer.price}</strong> <span>one-time, no subscription</span>
+              <strong>{offer.price}</strong> <span>{offer.pricing}</span>
             </p>
             <p className="pa-fine">
               <AppLink to="/refund-policy" className="pa-linkbtn">
@@ -65,20 +85,28 @@ function Unlock() {
               </AppLink>
             </p>
             <ul className="co-plain">
-              <li>Browse and pick from the whole library, not just one adventure</li>
-              <li>Mystery reveals and “Made for you” picks, matched to your dog</li>
-              <li>Every collection, from puppies to seniors, hyper dogs to homebodies</li>
+              <li>The whole library, in every collection, not just one adventure</li>
+              <li>
+                Mystery reveals and picks matched to your dog, with filters for time, budget and
+                setting
+              </li>
+              <li>Collections from puppies to seniors, homebodies to hikers</li>
               <li>Daily and seasonal suggestions, plus birthday and adoption reminders</li>
-              <li>Your own collections and more keepsake designs</li>
-              <li>Synced progress that follows you across devices</li>
+              <li>Your own collections, and more keepsake designs</li>
+              <li>Progress that can follow you to your other devices</li>
             </ul>
-            <p className="pa-fine">One-time purchase, no subscription.</p>
+            <p className="pa-fine">
+              Many adventures cost nothing extra to do. Each shows its cost range before you start.
+            </p>
             {link ? (
               <a
                 className="pp-btn pp-btn-primary"
                 href={link}
                 rel="noopener noreferrer"
-                onClick={() => track("checkout_started")}
+                onClick={() => {
+                  track("purchase_cta_clicked", { where: "unlock" });
+                  track("checkout_started");
+                }}
               >
                 Continue to checkout
               </a>
@@ -100,12 +128,26 @@ function Unlock() {
           </section>
         </div>
 
+        <section className="pa-panel" aria-labelledby="faq-h">
+          <h2 id="faq-h" className="pa-h">
+            Quick answers
+          </h2>
+          <FaqList
+            items={FAQS.filter((f) => (UNLOCK_FAQ_IDS as readonly string[]).includes(f.id))}
+          />
+          <p className="pa-fine">
+            <AppLink to="/faq" className="pa-linkbtn">
+              All questions and answers
+            </AppLink>
+          </p>
+        </section>
+
         <section className="pa-panel" aria-labelledby="coll-h">
           <h2 id="coll-h" className="pa-h">
             The {collections.length} collections
           </h2>
           <p className="pa-fine">
-            Premium adventures fill these collections. We do not list individual premium adventures.
+            The full library fills these collections. You can see selected previews before you buy.
           </p>
           <ul className="co-plain pa-cols">
             {collections.map((c) => (

@@ -146,3 +146,88 @@ export function tagChips(a: Adventure): string[] {
   if (a.lifeStages.includes("senior")) out.push("Senior-friendly");
   return out.slice(0, 4);
 }
+
+// ---------------------------------------------------------------- at a glance (cards and previews)
+
+/** The facts a card shows at a glance. Both a full adventure and a public preview can be read as one. */
+export type Glance = {
+  minutesMin: number;
+  minutesMax: number;
+  costMin: number;
+  costMax: number;
+  setting: "indoor" | "outdoor" | "either";
+  effort: "gentle" | "moderate" | "lively";
+  needs: { car: boolean; booking: boolean; food: boolean; water: boolean };
+  lifeStages: readonly ("puppy" | "adult" | "senior")[];
+};
+
+export const glanceOf = (a: Adventure): Glance => ({
+  minutesMin: a.minutesMin,
+  minutesMax: a.minutesMax,
+  costMin: a.costMin,
+  costMax: a.costMax,
+  setting: a.setting,
+  effort: a.energy,
+  needs: {
+    car: a.transport === "car" || a.requires.includes("car"),
+    booking: a.reservation.needed,
+    food: a.food,
+    water: a.water !== "none",
+  },
+  lifeStages: a.lifeStages,
+});
+
+export const timeText = (g: Pick<Glance, "minutesMin" | "minutesMax">): string =>
+  g.minutesMin === g.minutesMax ? `${g.minutesMin} min` : `${g.minutesMin}–${g.minutesMax} min`;
+export const costText = (g: Pick<Glance, "costMin" | "costMax">): string =>
+  g.costMax === 0
+    ? "Free"
+    : g.costMin === g.costMax
+      ? `$${g.costMax}`
+      : `$${g.costMin}–$${g.costMax}`;
+export const settingText = (s: Glance["setting"]): string =>
+  s === "either" ? "Indoors or out" : s === "indoor" ? "Indoors" : "Outdoors";
+
+const DOG_EFFORT = { gentle: "Gentle", moderate: "Moderate", lively: "Lively" } as const;
+const OWNER_AS_EFFORT: Record<Adventure["ownerMobility"], Glance["effort"]> = {
+  seated: "gentle",
+  "minimal-walking": "gentle",
+  "short-walk": "moderate",
+  "long-walk": "lively",
+};
+
+/**
+ * One effort chip when the dog's effort and yours are alike, two when they differ ("Dog: Lively", "You: Seated").
+ * A preview has no owner field, so it shows the one effort level.
+ */
+export function effortChips(
+  g: Pick<Glance, "effort">,
+  owner?: Adventure["ownerMobility"],
+): string[] {
+  if (!owner || OWNER_AS_EFFORT[owner] === g.effort) return [`${DOG_EFFORT[g.effort]} effort`];
+  return [`Dog: ${DOG_EFFORT[g.effort]}`, `You: ${OWNER_MOBILITY_LABELS[owner]}`];
+}
+
+/** Practical prerequisites that matter before choosing: food, booking and travel are always obvious. */
+export function needChips(g: Pick<Glance, "needs">): string[] {
+  const out: string[] = [];
+  if (g.needs.car) out.push("Car needed");
+  if (g.needs.booking) out.push("Booking needed");
+  if (g.needs.food) out.push("Involves food or treats");
+  if (g.needs.water) out.push("Near or in water");
+  return out;
+}
+
+/** Positive labels, only when true of this adventure. `quiet` is known only for a full adventure. */
+export function goodLabels(g: Glance, quiet?: boolean): string[] {
+  const out: string[] = [];
+  if (!g.needs.food) out.push("Food-free");
+  if (g.costMax === 0) out.push("No additional spending");
+  if (!g.needs.car) out.push("No car needed");
+  if (g.effort === "gentle") out.push("Gentle");
+  if (g.setting === "indoor") out.push("Indoor");
+  if (g.lifeStages.includes("puppy")) out.push("Puppy-compatible");
+  if (g.lifeStages.includes("senior")) out.push("Senior-friendly");
+  if (quiet) out.push("Quiet");
+  return out;
+}

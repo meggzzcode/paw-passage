@@ -454,3 +454,73 @@
 .pa-cols {
   columns: 2 14rem;
 }
+
+/* Public previews: collectible mystery tiles, filters, grid. */
+.pv-grid {
+  grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+}
+.pv-card {
+  padding: 0.9rem;
+}
+.pv-article {
+  display: grid;
+  gap: 0.6rem;
+}
+.pv-art {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  border: 3px solid;
+  border-radius: var(--pp-radius);
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+.pv-art-mark {
+  display: grid;
+  place-items: center;
+  width: 3.2rem;
+  height: 3.2rem;
+  border: 2px dashed;
+  border-radius: 50%;
+  font-family: var(--font-display);
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+.pv-art-tag {
+  position: absolute;
+  left: 0.6rem;
+  bottom: 0.6rem;
+  padding: 0.1rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+.pv-teaser {
+  margin: 0;
+  font-style: italic;
+}
+.pv-views {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.pv-filters {
+  grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr));
+}
+.pv-select select {
+  font: inherit;
+  min-height: 44px;
+  padding: 0.4rem 0.6rem;
+  border: 2px solid var(--pp-line);
+  border-radius: var(--pp-radius);
+  background: var(--pp-paper);
+  color: var(--pp-ink);
+}
+.pm-lead {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+}
+.pa-mystery .pd-why {
+  color: var(--pp-ink);
+}

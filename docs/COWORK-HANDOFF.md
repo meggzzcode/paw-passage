@@ -28,6 +28,7 @@ The single list of things that need the owner's accounts, devices or money. Each
 | CW-PAY-3  | Yes                                                               |
 | CW-PAY-4  | Yes                                                               |
 | CW-PAY-5  | No                                                                |
+| CW-PAY-6  | No (optional gift checkout evaluation)                            |
 | CW-QA-1   | Yes                                                               |
 | CW-ANA-1  | No                                                                |
 | CW-PIN-1  | No                                                                |
@@ -35,7 +36,7 @@ The single list of things that need the owner's accounts, devices or money. Each
 
 ## Price constant must match Gumroad
 
-`offer.price` in `src/config/site.ts` (currently "$19.99", one-time, no subscription) is shown on the home and unlock pages. Before launch it must equal the Gumroad listing price exactly. Change both together; never show a discount or "was" price in the app.
+`offer.price` in `src/config/site.ts` (currently "$19.99", one-time, no subscription) is shown on the home, unlock and FAQ pages. Before launch it must equal the Gumroad listing price exactly. Change both together; never show a discount or "was" price in the app.
 
 ## Partner discounts (Gumroad discount codes)
 
@@ -357,3 +358,21 @@ Partner and promotional discounts are done only with Gumroad discount codes. To 
 - **Return to Claude:** Branch name, pass or fail, any form error.
 - **Blocks production?** No
 - **Safe handling:** Do not edit adventures in the CMS (known form defect, see `OPERATIONS.md`).
+
+## CW-PAY-6
+
+- **Task ID:** CW-PAY-6
+- **Objective:** Evaluate, as an optional extra, whether the checkout provider can sell the Passport as a gift (a code the buyer passes on), and record what it would take. Do not build or advertise gifting.
+- **Why Claude cannot do it:** It needs the seller account and the provider's current documentation and settings.
+- **URL:** The checkout provider's product settings and documentation.
+- **Required owner authorization:** Read-only. No product, price or listing changes.
+- **Prerequisite:** CW-PAY-1 (license behavior verified).
+- **Step-by-step:**
+  1. Read the provider's current documentation on gifting, multiple purchases and license-code transfer.
+  2. Note whether a purchase code redeemed by someone else would work with our restore and refund checks, and whether the provider shows the buyer or the recipient as the purchaser.
+  3. Write down the finding in two or three lines. Do not change anything.
+- **Expected outcome:** A short written finding: possible as is, possible with changes, or not supported.
+- **Evidence to capture:** The documentation page or setting that supports the finding.
+- **Return to Claude:** The finding.
+- **Blocks production?** No. Gift checkout is not a launch blocker and no page on the site mentions gifting.
+- **Safe handling:** Never paste a license code. Change nothing.

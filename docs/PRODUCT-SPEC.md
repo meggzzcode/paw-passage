@@ -4,23 +4,43 @@ Everything here is backed by code in this repository unless marked **UNVERIFIED*
 
 ## What it is
 
-A collectible, self-paced set of little adventures to do with a dog. Each adventure is a short, concrete activity (a game, a walk with a twist, a small project) with a mystery clue, a natural finish, a memory prompt, a stamp and a keepsake. There are no timers, streaks, scores, leaderboards or deadlines.
+A digital, collectible, self-paced library of little adventures to do with a dog, used in the browser (no app, nothing shipped). Each adventure is a short, concrete activity (a game, a walk with a twist, a small project) with a mystery clue, a natural finish, a memory prompt, a stamp and a keepsake. There are no timers, streaks, scores, leaderboards or deadlines.
+
+**Product model (single source of truth, owner directive of 2026-11-26).**
+
+- **Free:** one complete, personalized first adventure from a pool of free adventures. No account, email or card. Selected public previews of the larger collection can be browsed without any onboarding.
+- **Paid:** one payment of $19.99 (`offer` in `src/config/site.ts`), not a subscription, unlocks the full library.
+- **Brand line:** "A lifetime of little adventures." The homepage headline is "Life is better with a little adventure." The retired slogan stays out of the hero and headings (guard test).
 
 ## Journey
 
-1. **Arrive** on the home page. The free promise: "Tell us about your dog. Get one adventure picked for them, free." No account.
-2. **Tell us about your dog.** A short survey (life stage, energy, size, comfort with people, other dogs and noise, mobility, food) with "Not sure" always available. Skipped answers stay unknown, never "safe".
-3. **Get one adventure.** Free visitors get exactly one adventure picked by the engine from the free pool: hard eligibility first, unknown never safe, the gentle default when the profile is unknown. It is shown as "Your first adventure". Paid visitors get Discover in three modes (below).
-4. **Do it, then mark it done.** Completion adds the adventure to the passport once. Repeating an adventure logs a repeat memory and never raises the unique count.
-5. **Remember.** Add a short memory note (up to 280 characters) and optionally make a keepsake.
-6. **Collect.** Stamps, milestones and collection progress are derived from what is done.
-7. **Optionally unlock** the full Passport with a one-time purchase, activate a license code, and use the library and sync on any device (restore with the same code).
+1. **Arrive** on the home page and understand within the first screen: a digital dog-adventure product, a substantial library, personalized, one free first adventure, one payment and no subscription.
+2. **Find our first adventure.** A few preferences (life stage, energy, size, mobility, comfort with people, dogs and noise, food, car, yard). "Not sure" is always available; skipped answers stay unknown, never "safe".
+3. **Personalized recommendation.** The engine picks one free adventure. The visitor first sees practical information only: time, cost, setting, effort, prerequisites and restrictions, never the steps.
+4. **Accept, or ask for another** (no limit before the reveal). Accepting reveals the full instructions, which stay available on the device afterward.
+5. **Do it and complete it whenever ready.** Completion adds the stamp once; repeats log a memory and never raise the unique count.
+6. **Keepsake.** A short memory note (up to 280 characters) and an optional keepsake made on the device.
+7. **A tasteful unlock opportunity.** Contextual in-page notes only (no popups, no modals, no urgency). A visitor can browse previews and buy at any time, with no need to finish the free adventure first.
+8. **After purchase,** activate with the purchase code, use the library, and (with the sync wiring) have progress follow the code to other devices.
 
-Routes: `/` home, `/discover`, `/collections` (and `/collections/<slug>`, `/collections/mine/<id>`), `/passport`, `/unlock`, `/restore-access`, plus guides, gear, the packing list and trust pages.
+Routes: `/` home, `/discover`, `/previews` (selected previews), `/collections` (and `/collections/<slug>`, `/collections/mine/<id>`), `/passport`, `/unlock`, `/faq`, `/restore-access`, seven landing pages (`/things-to-do-with-your-dog`, `/indoor-dog-adventures`, `/doggy-date-ideas`, `/puppy-bucket-list`, `/senior-dog-adventures`, `/free-things-to-do-with-your-dog`, `/weekend-adventure-finder`), plus guides, gear, the packing list and trust pages. Personalized filter combinations are never indexed or listed in the sitemap.
 
-## Free starter (one tailored adventure)
+## Public previews
 
-`src/passport/starter.ts` (`selectStarter`, `savedStarter`) runs `rank()` over the public free pool for the survey answers and takes the top result. The pick is saved in the local Save as the additive optional field `starter: { id, at }` (`chooseStarter` in `progress.ts`), so it does not change on each visit. Re-answering the survey may change it only until that adventure is completed; after that it stays as the free keepsake and can be re-read. If no free adventure is eligible the page says so plainly and shows the unlock pitch. The gate is a product and UX choice, not security: the free pool is public in this repository. The free flow makes no network call.
+About 50 curated showcase adventures are served from an allowlisted public record (`GET /api/previews`), never the full adventure record. Public fields: id, public title, teaser, activity label, minutes and cost ranges, setting, effort, prerequisites flags, life stages, keepsake family and theme, role and collections. Never public: instructions, twist, reveal, clue, objective, variations, completion, safety text, supplies detail, photo idea, memory prompt, review scores or research. Pages say previews are "selected previews from a larger collection". Counts on public pages come only from the endpoint (or the live premium summary) and fall back to plain wording; no number such as "150" is ever claimed until verified.
+
+## Commercial pages
+
+- **Home** sections in order: emotional benefit, adventure variety (verified counts with fallback), personalized discovery, mystery reveal demo (a clue only), collectible passport (real stamp art), keepsake demonstrations, what is included, one-time price, FAQ, final call to action.
+- **/unlock** is the purchase page; **/faq** answers twenty buyer questions, and the same content is summarized on `/unlock`. Sync and recovery wording must match `ARCHITECTURE.md`.
+- **Keepsake demonstrations** are produced by the real renderer from original sample art (an illustrated sample dog named Biscuit, clearly not a customer) and stored as small webp files in `public/examples/` (each under 120 KB, under 1.2 MB in total).
+- **Landing pages** hold original owner-perspective guidance (500+ words each), preview cards, a call to action to the free adventure and the Passport, and internal links. They never contain the steps of any adventure. The free landing page states plainly that the free adventure differs from paid access and that many paid adventures cost nothing extra to do.
+- **Purchase prompts** are one reusable component (`where`, optional `count`) that fires `purchase_cta_clicked` with the `where` slug.
+- No fake testimonials, ratings, counts or urgency anywhere (guard tests scan the new pages).
+
+## Free first adventure (one tailored adventure)
+
+`src/passport/starter.ts` (`selectStarter`, `savedStarter`) runs `rank()` over the public free pool (about 13 to 15 adventures) for the survey answers and takes the top result; "show me another" excludes ones already offered this visit. The pick is saved in the local Save as the additive optional field `starter: { id, at }` (`chooseStarter` in `progress.ts`), so it does not change on each visit. Re-answering the survey may change it only until that adventure is completed; after that it stays as the free keepsake and can be re-read. If no free adventure is eligible the page says so plainly and shows the unlock pitch. The gate is a product and UX choice, not security: the free pool is public in this repository. The free flow makes no network call.
 
 ## Discovery modes (full Passport)
 
@@ -83,14 +103,14 @@ Ten keepsake families (travel postcard, magazine cover, ID card, trading card, c
 
 |                                                      | Free                                                                                                           | Full Passport (one-time purchase)                                                                                                                    |
 | ---------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Adventures                                           | One adventure picked for your dog from the free pool in this repository                                        | A much larger library, protected and delivered by the server                                                                                         |
+| Adventures                                           | One complete adventure picked for your dog from the free pool, plus selected public previews                   | A much larger library, protected and delivered by the server                                                                                         |
 | Account                                              | None                                                                                                           | None; a license code activates access                                                                                                                |
 | Discovery, collections, stamps, milestones, memories | Yes                                                                                                            | Yes                                                                                                                                                  |
 | Suggestions                                          | "For you today" card, "This season" shelf, occasion card and smart-collection picks, all from the free library | The same, from the much larger library; plus yearly calendar reminders (`.ics`, built on the device) for the dog's birthday and adoption anniversary |
 | Keepsakes                                            | Yes (device only)                                                                                              | More designs and premium-only collections                                                                                                            |
 | Progress                                             | On the device                                                                                                  | Also synced across devices, restorable with the code                                                                                                 |
 
-Premium adventures are never in this repository, the bundle or any public file. **Current gap (verified in code):** the server endpoint for premium adventures exists, but the browser does not yet request it; the discovery screens use the free library with `unlocked: false`. The sync endpoint `PUT /api/progress` is also not yet called by the browser. Activation does merge the device's progress into the synced record and returns it.
+Premium adventures are never in this repository, the bundle or any public file. **Status:** the browser loads the premium library into memory only (never storage) for a browser that has activated, and pulls, merges and pushes the Save for sync (see `ARCHITECTURE.md`). This is covered by tests against a fake server and is **UNVERIFIED** against the real Function, Blobs and Gumroad. Public pages therefore describe sync and recovery in plain terms (progress can follow the purchase code to other devices) and nothing more.
 
 ## Pricing stance
 
@@ -102,7 +122,7 @@ Collecting, not competing. Stamps and milestones reward doing things with the do
 
 ## Analytics
 
-Only 15 named events are sent (profile completed, adventure revealed, completed, saved, favorite added, keepsake created, share clicked and completed, unlock viewed, checkout started, purchase confirmed, access restored, affiliate clicked, suggestion revealed, calendar reminder downloaded), each with a few slug-safe fields. Free text is dropped. Dog names, memories, license codes, emails and customer ids are never sent.
+Only allow-listed, named events are sent (`src/passport/events.ts`), each with a few slug-safe fields; free text is dropped. Existing: profile completed, adventure revealed, completed, saved, favorite added, share clicked and completed, unlock viewed, checkout started, purchase confirmed, access restored, affiliate clicked, suggestion revealed, calendar reminder downloaded. Added for the free-first flow and previews: intro_started, intro_personalized, intro_recommended, intro_replaced, intro_revealed, intro_completed, preview_viewed, preview_bookmarked, preview_unbookmarked, collection_preview_viewed, keepsake_created, keepsake_downloaded, keepsake_share_attempted and purchase_cta_clicked (with a `where` slug). Dog names, memories, license codes, emails and customer ids are never sent, and a click is never reported as a verified purchase.
 
 ## What is excluded
 

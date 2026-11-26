@@ -5,6 +5,7 @@ import { members } from "@/passport/progress";
 import { AppLink } from "@/components/shell/AppLink";
 import { Button } from "@/components/shell/Button";
 import { usePassport } from "@/passport/usePassport";
+import { CollectionPreviews } from "./CollectionPreviews";
 import { AdventureRow, useAdventureLibrary, useLibrary } from "./collections-shared";
 
 export function useCuratedProgress(slug: string) {
@@ -101,6 +102,7 @@ export function CuratedDetail({ c }: { c: Collection }) {
             </Button>
           </div>
         </div>
+        <CollectionPreviews slug={c.slug} />
         <p>
           <AppLink to="/collections" className="pa-linkbtn">
             All collections

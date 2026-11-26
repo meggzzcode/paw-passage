@@ -25,3 +25,4 @@ npx prettier --check <files>
 - Write only facts the code supports; mark anything unproven as UNVERIFIED.
 - Do not commit, push, deploy or touch live services unless the owner asks.
 - Netlify builds cost credits: do not change `netlify.toml` `ignore` without running `node scripts/test-netlify-ignore.mjs`.
+- Handwritten type (Caveat, `font-hand-note`) is decorative only: never for safety, eligibility, payment, refund or instructional text, so critical text stays easy to read.

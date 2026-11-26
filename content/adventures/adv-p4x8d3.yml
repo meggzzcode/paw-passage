@@ -1,25 +1,25 @@
 schema: 2
 id: adv-p4x8d3
 title: The Little Picnic Club
-clue: A tiny party for two, with a blanket for a ballroom and a very serious guest.
-reveal: Hold a small picnic with a theme taken from your dog. Spread a blanket somewhere quiet, settle in at their pace, and write a picnic postcard home before you leave the blanket.
-objective: Spend a relaxed stretch on a blanket together under a theme taken from your dog, and write a picnic postcard.
+clue: "A blanket, a menu of mysteries and a guest who orders with their nose."
+reveal: "Hold a small picnic where the menu is made of smells. Set out three scent courses on a blanket, let your dog choose the dish of the day by where they linger, then close the club with a toast and a picnic postcard."
+objective: "Lay out a three-course scent menu on a blanket, let your dog choose the dish of the day, and write a picnic postcard."
 instructions:
-  - "Choose a theme from your dog: their coat colour, a favourite toy, the way they greet you or the sound of their name. Choose one prop that fits, such as a red cloth for a red dog or the favourite toy itself."
-  - "Choose a quiet spot where your dog is already relaxed: your yard, a patio or a balcony. A quiet park corner is only for a day when it is empty and stays that way. Check the ground for hot surfaces, sharp bits and plants."
-  - Pack a blanket, a bowl and fresh water, shade if it is sunny, your own snack and the prop.
-  - Lay the blanket with the prop in the middle and let your dog arrive in their own time. They can explore, sit on it or ignore it, and the picnic works every way.
-  - Settle in for at least ten minutes. Keep your own food on the far side of the blanket, out of reach of your dog's nose, and give the picnic a club name such as The Red Dog Social.
-  - Write a postcard to your future selves with the theme, the weather and what your dog did first on the blanket.
-twist: The whole picnic is decorated around who your dog is, and the postcard is written before you leave the blanket.
+  - "Choose a theme from your dog: their coat colour, a favourite toy, the way they greet you or the sound of their name. Use it for the club name, such as The Red Dog Social."
+  - "Choose a quiet spot where your dog is already relaxed: your yard, a patio, a balcony or a corner of the living room. Check the ground for hot surfaces, sharp bits and plants."
+  - "Write the scent menu: three courses, each a smell that is safe and too big to swallow. For example a large fallen leaf from outside, a clean cloth that has been near the kitchen window, and a T-shirt you have worn. Lay each course on its own corner of the blanket with space between them."
+  - "Let your dog arrive in their own time and take the menu in any order. Do not point or lead. They can sniff, skip a course or leave the blanket, and the picnic works every way."
+  - "Watch for the dish of the day: the course they linger over longest. Put the other two away and give the winner the middle of the blanket. Sit down on the far side with your own snack, out of reach of your dog's nose."
+  - "Close the club with a toast: clink your cup against the rim of their water bowl, say the club name once, then write a postcard to your future selves with the theme, the dish of the day and what your dog did first on the blanket."
+twist: "The picnic menu is made of smells, not food: your dog orders the dish of the day with their nose, and the toast comes last."
 variations:
   - "Rain version: lay the blanket on the living-room floor and open a window."
-  - "For a nervous dog: use your own yard or balcony and keep it to ten minutes."
-  - "For a lively dog: bring a favourite chew toy to settle with."
-  - "For limited mobility: picnic from a chair on a porch or patio, with the blanket beside you."
-completion: You have spent about ten minutes on the blanket together and written the postcard.
-photoIdea: Your dog on or beside the blanket with the theme prop, taken from their eye level.
-memoryPrompt: What was the theme, and what did your dog do first on the blanket?
+  - "For a nervous dog: use your own yard or balcony, offer only one course and keep it to ten minutes."
+  - "For a lively dog: add a fourth course that is their favourite toy."
+  - "For limited mobility: picnic from a chair on a porch or patio with the blanket beside you and the three courses within a few steps."
+completion: "Your dog has chosen a dish of the day, you have toasted the club and written the postcard."
+photoIdea: "Your dog investigating the scent menu on the blanket, taken from their eye level."
+memoryPrompt: "What was the theme, and which course did your dog choose?"
 minutesMin: 45
 minutesMax: 90
 activeMinutes: 20
@@ -27,11 +27,11 @@ costMin: 0
 costMax: 20
 prep: light
 supplies:
-  - Blanket
-  - Water bowl and fresh water
-  - Your own snack
-  - A postcard or paper
-  - One small themed prop
+  - "Blanket"
+  - "Water bowl and fresh water"
+  - "Your own snack and cup"
+  - "A postcard or paper"
+  - "A large leaf, a clean cloth and a worn T-shirt for the scent menu"
 optionalSupplies:
   - Shade umbrella
   - Folding chair
@@ -39,6 +39,7 @@ optionalSupplies:
 requires:
   - blanket
   - picnic-gear
+  - household-items
   - paper-and-pens
 substitutes:
   - No picnic blanket? A bed sheet or a large towel works.
@@ -85,6 +86,7 @@ water: none
 safety:
   - Check the weather and the ground first. Keep your dog out of strong sun and off hot surfaces, and bring shade and water.
   - Keep your own food out of reach and check that nothing on the ground is something your dog should not chew.
+  - Choose scent courses that are clean, non-toxic and too large to swallow, and take away anything your dog starts to chew.
   - Choose a spot where your dog can move away from the blanket whenever they like.
   - Keep to your own yard, patio or balcony by default. At a park corner, leave at once if other dogs or people turn up and your dog seems unsettled.
   - For a puppy, check with your vet about vaccination and readiness before any public outing, and keep to your own yard or home until then.
@@ -106,7 +108,7 @@ keepsake:
   headline: GREETINGS FROM THE PICNIC
   subhead: A party for two. Wish you were here
 access: free
-status: published
+status: draft
 relatedGuides: []
 affiliateProducts: []
 research:
@@ -114,9 +116,9 @@ research:
     url: https://www.dogstrust.org.uk/dog-advice/life-with-your-dog/enrichment/enrichment-activities-for-dogs
 review:
   ownerAppeal: 8
-  dogEnjoyment: 8
-  originality: 7
-  adventureFactor: 8
+  dogEnjoyment: 7
+  originality: 6
+  adventureFactor: 7
   practicality: 8
-  memoryValue: 9
+  memoryValue: 8
   reviewedOn: 2026-11-26

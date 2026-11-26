@@ -63,6 +63,14 @@ export const KEEPSAKE_FAMILIES = [
   "poster",
 ] as const;
 
+// Publication bar for the internal editorial `review` scores (1-10), chosen by the owner on 2026-11-26 ("option C")
+// after an independent re-score on one consistent scale (5 = ordinary pet-blog idea, 7 = good, 8 = genuinely
+// excellent) found that almost nothing reaches 8 and that authors' own scores run about 0.6 to 1.1 points higher.
+// The `review` numbers on published adventures must therefore be the INDEPENDENT scores, not the author's.
+// Editorial goal: premium adventures at 7.5 or more. To restore the original bar, set 8 and 7.
+export const PUBLISH_MIN_AVERAGE = 7.0;
+export const PUBLISH_MIN_CRITERION = 6;
+
 const researchRef = z.object({
   label: nonEmpty.max(120),
   url: z.string().url().startsWith("https://"),
@@ -204,12 +212,13 @@ export const adventureSchema = z
       ];
       if (
         a.status === "published" &&
-        (Math.min(...vals) < 7 || vals.reduce((x, y) => x + y, 0) / 6 < 8)
+        (Math.min(...vals) < PUBLISH_MIN_CRITERION ||
+          vals.reduce((x, y) => x + y, 0) / 6 < PUBLISH_MIN_AVERAGE)
       )
         ctx.addIssue({
           code: "custom",
           path: ["review"],
-          message: "a published adventure needs an average of at least 8 and no score below 7",
+          message: `a published adventure needs an average of at least ${PUBLISH_MIN_AVERAGE} and no score below ${PUBLISH_MIN_CRITERION}`,
         });
     }
   });

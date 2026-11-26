@@ -1,40 +1,44 @@
 schema: 2
 id: adv-r6j3b8
 title: The Sunrise Breakfast Club
-clue: The world is quiet, the sky is changing colour and the only agenda is a nose report.
-reveal: Greet the morning together from a doorstep, balcony, window seat or yard edge. You have a warm drink, your dog gives the morning briefing with their nose, and the two of you watch the day arrive.
-objective: Watch a sunrise together from a spot you can reach easily, with one photo and no phones otherwise.
+clue: "The world is quiet, the sky is changing colour and someone has left the morning paper under the blanket."
+reveal: "Start the day with a dawn nose-round of a small patch near home, with your dog choosing which way to read the morning news. A favourite toy waits under the blanket at the club spot, and you finish with a warm drink and one sunrise photo."
+objective: "Take a short dog-led sniff round at dawn, let your dog find the toy waiting at the club spot, and watch the sunrise from there."
 instructions:
-  - The evening before, check tomorrow's sunrise time and set an alarm twenty-five minutes earlier.
-  - "Choose a comfortable spot you can reach easily: a window seat, balcony, doorstep or yard edge. Bring a blanket for you and a spot for your dog."
-  - Settle in with your drink. Put the phone away; it comes out once, for the single sunrise photo.
-  - "Give the morning briefing: let your dog arrive and sniff the air at their own pace, and notice which way their nose points as the light comes up. That is today's report."
-  - Name three things you can see, hear or smell, taking turns. Say them quietly.
-  - "Take your one photo. Then write the club minutes: the date, the colour of the sky and who noticed the first thing."
-twist: "A club of two with one rule: no phones except for a single sunrise photograph. The only agenda is your dog's morning briefing."
+  - "The evening before, check tomorrow's sunrise time, set an alarm thirty minutes earlier and pick a comfortable club spot you can reach easily: a window seat, balcony, doorstep or yard edge. Tuck one of your dog's favourite toys under a folded corner of a blanket there, partly showing."
+  - "In the morning, take your dog out on a leash or into an enclosed space for the morning round: three short stops within sight of home, such as the doorstep, the nearest tree and the garden edge. Stand still and let your dog choose which stop to read first and how long to stay. That is the morning news."
+  - "Follow their nose rather than leading it. If they stop to sniff, wait. If they want to go home early, go home early."
+  - "Walk to the club spot together. Let your dog find the toy under the blanket in their own time, and let them play with it or simply settle beside it."
+  - "Settle in with your warm drink and put the phone away; it comes out once, for the single sunrise photo. Name three things you can see, hear or smell, taking turns, quietly."
+  - "Close the club by leaving the toy on the blanket for your dog to keep for the rest of the morning, and take your one photo as the light comes up."
+twist: "Your dog reads the morning news first with their nose, picking the stops, and the toy waiting under the blanket is today's front page."
 variations:
-  - "From bed or the sofa: open a window and watch the sky from inside."
+  - "From bed or the sofa: open a window, hide the toy under the blanket beside you and skip the outdoor round."
   - "Away from home: only at a spot where your dog is already comfortable, and keep well back from water edges and drops."
   - "For a dog who sleeps in: skip the sunrise and hold the club at the first sunny spot of the morning."
-completion: You have watched the sky change for a few minutes and taken your one photo.
-photoIdea: One photo of the sky, and if the light allows, your dog's silhouette against it.
-memoryPrompt: What colour was the sky, and what did your dog notice first?
+  - "For limited mobility: make it one stop, a few steps from the door, and sit for the rest."
+completion: "Your dog has read the morning news, found the toy and you have watched the sky change and taken your one photo."
+photoIdea: "One photo of the sky, and if the light allows, your dog's silhouette with their toy."
+memoryPrompt: "Which stop did your dog read first, and what colour was the sky?"
 minutesMin: 30
 minutesMax: 60
-activeMinutes: 10
+activeMinutes: 20
 costMin: 0
 costMax: 10
 prep: light
 supplies:
-  - Blanket
-  - A warm drink for you
-  - Phone for one photo
+  - "Blanket"
+  - "A warm drink for you"
+  - "Phone for one photo"
+  - "One favourite toy of your dog's"
 optionalSupplies:
   - Breakfast pastry for you from a bakery
   - Thermos
 requires:
   - blanket
   - camera-phone
+  - toys
+  - leash-and-harness
 substitutes:
   - No blanket? A coat or a thick towel on the step works.
 transport: none
@@ -75,7 +79,8 @@ food: false
 water: none
 safety:
   - Mornings can be cold. Check the temperature and give your dog a blanket if the air is cool, and stay with them outdoors.
-  - Keep your dog on a leash or in an enclosed space, since dawn is when wildlife is most active.
+  - Keep your dog on a leash or in an enclosed space, since dawn is when wildlife is most active, and keep the round short and within sight of home.
+  - Use a toy your dog already knows and that is safe for them, and stay with them while they play with it.
   - Keep hot drinks well away from your dog and use a cup that cannot easily tip.
   - For a puppy, check with your vet about vaccination and readiness before any public outing, and keep to your own yard or home until then.
 activityTypes:
@@ -98,17 +103,17 @@ keepsake:
   headline: SUNRISE BREAKFAST CLUB
   subhead: Member for the morning
 access: free
-status: published
+status: draft
 relatedGuides: []
 affiliateProducts: []
 research:
   - label: "Cornell Riney Canine Health Center: senior dog enrichment"
     url: https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/senior-dog-enrichment
 review:
-  ownerAppeal: 8
+  ownerAppeal: 7
   dogEnjoyment: 7
-  originality: 8
-  adventureFactor: 8
-  practicality: 8
-  memoryValue: 9
+  originality: 6
+  adventureFactor: 7
+  practicality: 7
+  memoryValue: 8
   reviewedOn: 2026-11-26

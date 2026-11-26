@@ -1,36 +1,41 @@
 schema: 2
 id: adv-c2h7v4
 title: The Paw-trait Studio
-clue: Soft window light, a plain wall and a face made for the front page.
-reveal: Set up a tiny photo corner beside a window and take relaxed portraits of your dog in natural light. Pick the frame that looks most like them and turn it into a make-believe magazine cover.
-objective: Take a set of relaxed window-light portraits and choose one for a magazine cover.
+clue: "Three little sets, one very particular art director and a front page waiting for a face."
+reveal: "Build three tiny photo sets around your home, then let your dog scout them. Wherever they choose to settle becomes the location for their make-believe magazine cover, and you finish with a quiet cover launch on that very spot."
+objective: "Let your dog scout three tiny sets, take relaxed portraits where they settle, and choose one for a magazine cover."
 instructions:
-  - Find the brightest window with soft, indirect light and a plain wall or curtain behind. Lay your dog's bed or blanket where the light falls gently.
-  - Turn the flash off and turn the phone's shutter sound down. Sit or lie low, at your dog's eye level, a couple of steps back.
-  - Do not pose or place your dog. Take photos over about ten minutes while they relax, sniff, stretch or watch the window. A soft word or a quiet squeak is allowed if they enjoy it.
-  - Pick the three frames where their eyes, ears or whiskers look most like them, then choose one as the cover.
-  - Give the cover a magazine name, a silly headline and one line about the exclusive inside.
-twist: "Your dog is the art director: only moments they offer count, so there are no props, no poses and no second takes."
+  - "Build three small sets in soft indirect light, away from busy walkways: a bed or blanket by the window, a folded towel and cushion in a quiet corner, and a different rug or throw in a third spot. Put a worn T-shirt of yours on each so each set smells of you. Turn the flash off and the shutter sound down."
+  - "Open the scouting: walk your dog to the first set, then the second, then the third, with a slack lead or no lead indoors. Let them sniff each one for as long as they like and move on when they do. Do not call them, point or place them."
+  - "Watch where they choose to settle, or where they linger longest. That set is the location. If they ignore all three, the cover is a candid of whatever they do instead, and that counts."
+  - "Sit or lie low at their eye level a couple of steps back and take photos over about ten minutes while they relax, sniff, stretch or watch the window. A soft word is allowed if they enjoy it."
+  - "Pick three frames where their eyes, ears or whiskers look most like them and choose one as the cover. Give it a magazine name, a silly headline and one line about the exclusive inside."
+  - "Hold the cover launch: prop the cover up on your phone beside the chosen set, say the headline aloud once in a quiet voice, then leave your dog to rest there while you tidy the other two sets away."
+twist: "Your dog is both location scout and art director: the cover is shot wherever they choose to settle, and only moments they offer count, with no poses and no second takes."
 variations:
   - "For a dog who will not stay still: photograph them while they nap, with the camera quiet."
-  - "No bright window: use a lamp with a soft shade instead of overhead light."
-  - "For a puppy: take just a few frames in a minute or two and try again another day."
-completion: You have chosen a cover shot and given it a headline.
-photoIdea: "The cover itself: a candid portrait at your dog's eye level."
-memoryPrompt: What was the headline of your dog's cover?
-minutesMin: 20
-minutesMax: 30
-activeMinutes: 10
+  - "No bright window: use a lamp with a soft shade instead of overhead light, and build all three sets in one room."
+  - "For a puppy: build only two sets, scout for a minute or two and try again another day."
+  - "For limited mobility: set all three sets within a few steps of your dog's bed and sit while they scout."
+completion: "Your dog has scouted the sets, you have chosen a cover shot and given it a headline."
+photoIdea: "The cover itself: a candid portrait at your dog's eye level, on the set they chose."
+memoryPrompt: "Which set did your dog choose, and what was the headline?"
+minutesMin: 25
+minutesMax: 40
+activeMinutes: 20
 costMin: 0
 costMax: 0
-prep: none
+prep: light
 supplies:
   - Phone or camera
   - Blanket or bed
+  - Towel, cushion or throw
+  - A worn T-shirt
 optionalSupplies: []
 requires:
   - camera-phone
   - blanket
+  - household-items
 substitutes:
   - No spare blanket? A folded towel or a clean sheet works.
 transport: none
@@ -67,6 +72,7 @@ water: none
 safety:
   - Never force a pose or hold your dog in place. Take photos only while they are relaxed and stop if they look uneasy.
   - Skip the flash, which can startle some dogs.
+  - Keep the sets simple and non-slip, with nothing your dog could chew or tangle in, and let them walk away from any set at any time.
 activityTypes:
   - photography
   - creative-projects
@@ -85,17 +91,17 @@ keepsake:
   headline: COVER STAR
   subhead: Exclusive portrait. No flash
 access: free
-status: published
+status: draft
 relatedGuides: []
 affiliateProducts: []
 research:
   - label: "Dogs Trust: enrichment activities for dogs"
     url: https://www.dogstrust.org.uk/dog-advice/life-with-your-dog/enrichment/enrichment-activities-for-dogs
 review:
-  ownerAppeal: 9
-  dogEnjoyment: 8
-  originality: 7
-  adventureFactor: 7
+  ownerAppeal: 8
+  dogEnjoyment: 7
+  originality: 6
+  adventureFactor: 6
   practicality: 9
-  memoryValue: 9
+  memoryValue: 8
   reviewedOn: 2026-11-26

@@ -56,9 +56,15 @@ const themeModules = import.meta.glob("../passport/keepsake/themes.ts", { eager:
 const THEME_REGISTRY = Object.values(themeModules)[0]?.THEME_REGISTRY;
 
 describe("free adventure library", () => {
-  it("has 12 to 13 free published adventures", () => {
-    expect(adventures.length).toBeGreaterThanOrEqual(12);
-    expect(adventures.length).toBeLessThanOrEqual(13);
+  it("has 12 free adventure files, at least 9 of them published", () => {
+    // Three rewritten adventures stay draft until they are independently re-scored (see docs/CONTENT-REVIEW.md).
+    const files = import.meta.glob("../../content/adventures/*.yml", {
+      query: "?raw",
+      eager: true,
+    });
+    expect(Object.keys(files)).toHaveLength(12);
+    expect(adventures.length).toBeGreaterThanOrEqual(9);
+    expect(adventures.length).toBeLessThanOrEqual(12);
     expect(freeLibrary()).toBe(adventures);
     for (const a of adventures) {
       expect(a.access).toBe("free");
@@ -137,8 +143,9 @@ describe("free adventure library", () => {
 });
 
 describe("who the free library serves", () => {
-  it.each(LIFE_STAGES)("has at least 6 free adventures for a default %s", (lifeStage) => {
-    expect(count({ dog: { lifeStage }, owner: {}, unlocked: false })).toBeGreaterThanOrEqual(6);
+  // Temporarily 5 (was 6) while three rewritten adventures are draft awaiting an independent re-score.
+  it.each(LIFE_STAGES)("has at least 5 free adventures for a default %s", (lifeStage) => {
+    expect(count({ dog: { lifeStage }, owner: {}, unlocked: false })).toBeGreaterThanOrEqual(5);
   });
   it("keeps at least 4 for a limited-mobility dog nervous with dogs and people and no car", () => {
     expect(
@@ -190,7 +197,11 @@ describe("collections, stamps, achievements", () => {
     expect(new Set(collections.map((c) => c.order)).size).toBe(collections.length);
   });
   it("fills every non-premium collection with at least 1 free adventure and leaves premium-only ones empty", () => {
-    for (const c of collections.filter((x) => !x.premiumOnly))
+    // Doggy Date Club and Seasons Together are held only by the rewritten drafts (Picnic, Sunrise) until re-scored.
+    const TEMPORARILY_EMPTY = ["doggy-date-club", "seasons-together"];
+    for (const c of collections.filter(
+      (x) => !x.premiumOnly && !TEMPORARILY_EMPTY.includes(x.slug),
+    ))
       expect(
         adventures.filter((a) => a.collections.includes(c.slug)).length,
         c.slug,

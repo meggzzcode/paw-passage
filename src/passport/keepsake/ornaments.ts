@@ -2,6 +2,7 @@
 // centred on (cx, cy). Used as ornaments, frame corners, and as the picture when no photo is chosen.
 import { circle, drawPaw, type Ctx } from "./render";
 import type { MotifId } from "./themes";
+import { motifMore } from "./ornaments2";
 
 export function roundRectPath(
   ctx: Ctx,
@@ -342,6 +343,9 @@ export function motif(
         ctx.arc(cx, cy + h * 0.1, r, Math.PI * 0.12, Math.PI * (0.35 + (i % 2) * 0.3));
         ctx.stroke();
       }
+      break;
+    default:
+      motifMore(ctx, id, cx, cy, s, c, c2);
       break;
   }
   ctx.restore();

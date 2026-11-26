@@ -15,6 +15,7 @@ import {
   paraHeight,
   paraOutlined,
   paraUp,
+  pattern,
   placeholder,
   rays,
   rnd,
@@ -170,7 +171,7 @@ export const magazineCover: FamilyDef = {
     const { t, H } = p;
     const c = t.palette;
     const s = slots[0] as Slot;
-    const bold = t.frame !== "none";
+    const bold = t.frame === "bold";
     const hasPhoto = Boolean(photos[0]);
     if (hasPhoto) drawSlot(ctx, t, s, photos[0], 0);
     else {
@@ -203,6 +204,7 @@ export const magazineCover: FamilyDef = {
     ctx.fillStyle = bot;
     ctx.fillRect(0, H - bh, W, bh);
 
+    if (!bold && t.frame !== "none") frame(ctx, t, 26, 26, W - 52, H - 52, c.accent, c.accent);
     const mTop = p.story ? 170 : 50;
     const dateTxt = p.date;
     if (bold) {
@@ -415,14 +417,35 @@ export const idCard: FamilyDef = {
           w: 840,
           h: H - (p.story ? 250 : 90) - (p.story ? 290 : 90),
         };
-    // lanyard strap
-    ctx.fillStyle = c.accent;
-    ctx.fillRect(card.x + card.w / 2 - 38, 0, 76, card.y + 30);
-    ctx.fillStyle = "rgba(0,0,0,0.18)";
-    ctx.fillRect(card.x + card.w / 2 + 20, 0, 18, card.y + 30);
+    const passport = t.variant === "passport";
+    const tagCard = t.variant === "tag";
+    if (!passport) {
+      // lanyard strap (a thin string for a parcel tag)
+      const sw = tagCard ? 10 : 76;
+      ctx.fillStyle = tagCard ? c.accent2 : c.accent;
+      ctx.fillRect(card.x + card.w / 2 - sw / 2, 0, sw, card.y + 30);
+      if (!tagCard) {
+        ctx.fillStyle = "rgba(0,0,0,0.18)";
+        ctx.fillRect(card.x + card.w / 2 + 20, 0, 18, card.y + 30);
+      }
+    }
     // card with shadow
     fillRound(ctx, card.x + 10, card.y + 14, card.w, card.h, 34, "rgba(0,0,0,0.35)");
     fillRound(ctx, card.x, card.y, card.w, card.h, 34, c.card, c.accent, 5);
+    if (passport) {
+      ctx.save();
+      ctx.globalAlpha = 0.13;
+      motif(
+        ctx,
+        t.motif,
+        card.x + card.w / 2,
+        card.y + card.h * 0.55,
+        Math.min(card.w, card.h) * 0.8,
+        c.accent,
+        c.accent2,
+      );
+      ctx.restore();
+    }
     // header band
     ctx.save();
     roundRectPath(ctx, card.x, card.y, card.w, card.h, 34);
@@ -433,7 +456,11 @@ export const idCard: FamilyDef = {
     ctx.fillRect(card.x, card.y + 112, card.w, 8);
     ctx.restore();
     const onAcc = inkOn(c.accent, t);
-    fillRound(ctx, card.x + card.w / 2 - 70, card.y + 18, 140, 22, 11, c.bg);
+    if (tagCard) {
+      circle(ctx, card.x + card.w / 2, card.y + 26, 13);
+      ctx.fillStyle = c.bg;
+      ctx.fill();
+    } else if (!passport) fillRound(ctx, card.x + card.w / 2 - 70, card.y + 18, 140, 22, 11, c.bg);
     para(ctx, cased(p, word(p, "org", "PAW & PASSAGE")), card.x + card.w / 2, card.y + 52, {
       w: card.w - 120,
       lines: 1,
@@ -590,7 +617,8 @@ export const tradingCard: FamilyDef = {
     const pad = Math.round(b.w * 0.045);
     ctx.fillStyle = c.ink;
     ctx.fillRect(0, 0, W, H);
-    rays(ctx, W / 2, H / 2, Math.hypot(W, H), 36, c.bg, 0.22);
+    if (t.pattern) pattern(ctx, t.pattern, W, H, c.bg, 0.3);
+    else rays(ctx, W / 2, H / 2, Math.hypot(W, H), 36, c.bg, 0.22);
     for (let i = 0; i < 14; i++) {
       ctx.globalAlpha = 0.2;
       motif(
@@ -864,7 +892,7 @@ export const certificate: FamilyDef = {
     ctx.lineWidth = 2;
     circle(ctx, cx, sy, 56);
     ctx.stroke();
-    drawPaw(ctx, cx, sy - 4, 62, inkOn(c.accent, t));
+    motif(ctx, t.motif, cx, sy - 2, 64, inkOn(c.accent, t), inkOn(c.accent, t));
     ctx.strokeStyle = c.ink;
     ctx.lineWidth = 1.5;
     ctx.beginPath();

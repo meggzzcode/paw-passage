@@ -7,6 +7,7 @@ import {
   FONTS,
   KEEPSAKE_FAMILY_LIST,
   THEMES,
+  MOTIFS,
   THEME_REGISTRY,
   themeFor,
 } from "../passport/keepsake/themes";
@@ -144,6 +145,66 @@ describe("theme registry", () => {
       ).toBeGreaterThan(1);
       expect(luminance(t.palette.bg)).toBeGreaterThanOrEqual(0);
     }
+  });
+
+  it("offers a wide set of distinct themes in every family", () => {
+    expect(ALL.length).toBeGreaterThanOrEqual(90);
+    const min: Record<string, number> = {
+      "travel-postcard": 20,
+      "magazine-cover": 9,
+      "id-card": 8,
+      "trading-card": 9,
+      certificate: 9,
+      "seasonal-frame": 9,
+      "event-ticket": 7,
+      "then-and-now": 1,
+      collage: 6,
+      poster: 9,
+    };
+    for (const [f, n] of Object.entries(min))
+      expect(THEME_REGISTRY[f as keyof typeof THEME_REGISTRY].length, f).toBeGreaterThanOrEqual(n);
+    const ids = ALL.map((t) => t.id);
+    expect(new Set(ids).size).toBe(ids.length);
+  });
+
+  it("uses only known motifs, frames and variants, and never copies another theme's look", () => {
+    const frames = [
+      "double",
+      "ticks",
+      "scallop",
+      "bold",
+      "none",
+      "stripes",
+      "filmstrip",
+      "rope",
+      "marquee",
+      "lace",
+      "stitch",
+    ];
+    const looks = new Set<string>();
+    for (const t of ALL) {
+      expect(MOTIFS, t.id).toContain(t.motif);
+      expect(MOTIFS, t.id).toContain(t.motif2);
+      expect(frames, t.id).toContain(t.frame);
+      const look = [t.family, t.palette.bg, t.palette.accent, t.motif, t.motif2].join("|");
+      expect(looks.has(look), `${t.id} duplicates another theme's look`).toBe(false);
+      looks.add(look);
+    }
+  });
+
+  it("keeps text readable on the ground the family prints it on", () => {
+    const onPaper = ["travel-postcard", "certificate", "then-and-now", "collage", "poster"];
+    const bad: string[] = [];
+    for (const t of ALL) {
+      const p = t.palette;
+      if (!onPaper.includes(t.family)) continue;
+      if (contrast(p.bg, p.ink) < 4.5) bad.push(`${t.id} ink ${contrast(p.bg, p.ink).toFixed(2)}`);
+      if (contrast(p.bg, p.accent) < 3)
+        bad.push(`${t.id} accent ${contrast(p.bg, p.accent).toFixed(2)}`);
+      if (t.family !== "poster" && contrast(p.bg, p.muted) < 4.5)
+        bad.push(`${t.id} muted ${contrast(p.bg, p.muted).toFixed(2)}`);
+    }
+    expect(bad).toEqual([]);
   });
 
   it("falls back to the family's first theme for an unknown or mismatched theme", () => {

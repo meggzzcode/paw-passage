@@ -1,5 +1,5 @@
 // Families 6-10: seasonal frame, event ticket, then-and-now, collage, poster.
-import { circle, type Ctx } from "./render";
+import { circle, perforatedRect, type Ctx } from "./render";
 import {
   W,
   barcode,
@@ -13,6 +13,7 @@ import {
   paperBackground,
   para,
   paraUp,
+  pattern,
   perforation,
   rays,
   rnd,
@@ -165,17 +166,13 @@ export const eventTicket: FamilyDef = {
     const horizontal = p.spec.size === "square";
     ctx.fillStyle = c.bg;
     ctx.fillRect(0, 0, W, H);
-    ctx.save();
-    ctx.strokeStyle = c.bg2;
-    ctx.lineWidth = 36;
-    ctx.globalAlpha = 0.55;
-    for (let d = -H; d < W + H; d += 110) {
-      ctx.beginPath();
-      ctx.moveTo(d, 0);
-      ctx.lineTo(d + H, H);
-      ctx.stroke();
+    pattern(ctx, t.pattern ?? "diag", W, H, c.bg2, t.pattern === "stripes" ? 0.7 : 0.55);
+    if (["filmstrip", "marquee", "stripes", "rope"].includes(t.frame))
+      frame(ctx, t, 26, 26, W - 52, H - 52, c.accent, c.accent2);
+    if (t.variant === "pass") {
+      ctx.fillStyle = c.accent;
+      ctx.fillRect(W / 2 - 40, 0, 80, T.y + 24);
     }
-    ctx.restore();
     for (let i = 0; i < 8; i++)
       motif(
         ctx,
@@ -194,6 +191,15 @@ export const eventTicket: FamilyDef = {
     // ticket shape: one rounded card; perforation and notches mark the stub
     fillRound(ctx, T.x + 10, T.y + 14, T.w, T.h, 26, "rgba(0,0,0,0.35)");
     fillRound(ctx, T.x, T.y, T.w, T.h, 26, c.card);
+    if (t.frame === "stitch") {
+      ctx.save();
+      ctx.strokeStyle = c.accent2;
+      ctx.lineWidth = 4;
+      ctx.setLineDash([12, 9]);
+      roundRectPath(ctx, T.x + 12, T.y + 12, T.w - 24, T.h - 24, 18);
+      ctx.stroke();
+      ctx.restore();
+    }
     const ink = inkOn(c.card, t);
     const soft = softOn(c.card, t);
     ctx.save();
@@ -523,7 +529,7 @@ function collageTiles(p: Prep, n: number): Slot[] {
 
 export const collage: FamilyDef = {
   slots(p, count) {
-    const n = count <= 0 ? 3 : Math.min(4, count);
+    const n = p.t.variant === "quad" ? 4 : count <= 0 ? 3 : Math.min(4, count);
     return collageTiles(p, n).map((t) => ({
       x: t.x + 14,
       y: t.y + 14,
@@ -542,6 +548,24 @@ export const collage: FamilyDef = {
       ctx.fill();
     }
     ctx.globalAlpha = 1;
+    const v = t.variant ?? "";
+    if (t.frame !== "none") frame(ctx, t, 28, 28, W - 56, H - 56, c.ink, c.accent2);
+    if (v === "map" && slots.length > 1) {
+      ctx.save();
+      ctx.strokeStyle = c.accent;
+      ctx.lineWidth = 7;
+      ctx.lineCap = "round";
+      ctx.setLineDash([2, 18]);
+      ctx.beginPath();
+      slots.forEach((s, i) => {
+        const px = s.x + s.w / 2;
+        const py = s.y + s.h / 2;
+        if (i) ctx.lineTo(px, py);
+        else ctx.moveTo(px, py);
+      });
+      ctx.stroke();
+      ctx.restore();
+    }
     const top = p.story ? 190 : 70;
     let y = para(ctx, word(p, "kicker", "FAVORITE MOMENTS"), W / 2, top, {
       w: 800,
@@ -567,10 +591,45 @@ export const collage: FamilyDef = {
     slots.forEach((s, i) => {
       ctx.save();
       tilt(ctx, s, rots[i % 4] ?? 0);
-      mat(ctx, s, c.card, 14, 56);
+      if (v === "stamps") perforatedRect(ctx, s.x - 14, s.y - 14, s.w + 28, s.h + 70, 9, c.bg);
+      else mat(ctx, s, c.card, 14, 56);
+      if (v === "swatch") {
+        ctx.fillStyle = [c.accent, c.accent2, c.ink, c.bg2][i % 4] as string;
+        ctx.fillRect(s.x, s.y + s.h + 8, s.w, 34);
+      }
       drawSlot(ctx, t, s, photos[i], i);
-      // tiny motif where a polaroid caption would be
-      motif(ctx, i % 2 ? t.motif2 : "paw", s.x + s.w - 24, s.y + s.h + 32, 30, c.accent2, c.accent);
+      if (v === "quad") {
+        ctx.fillStyle = ["#7fc97f", "#f2d14a", "#e08a2e", "#8ec5ef"][i % 4] as string;
+        ctx.globalAlpha = 0.24;
+        ctx.fillRect(s.x, s.y, s.w, s.h);
+        ctx.globalAlpha = 1;
+        para(
+          ctx,
+          ["SPRING", "SUMMER", "AUTUMN", "WINTER"][i % 4] as string,
+          s.x + 12,
+          s.y + s.h + 12,
+          {
+            w: s.w - 60,
+            lines: 1,
+            size: 26,
+            key: "sans",
+            weight: 700,
+            color: softOn(c.card, t),
+          },
+        );
+      }
+      if (v === "map") motif(ctx, "pin", s.x + s.w - 6, s.y - 6, 62, c.accent, c.card);
+      else if (v !== "swatch" && v !== "quad")
+        // tiny motif where a polaroid caption would be
+        motif(
+          ctx,
+          i % 2 ? t.motif2 : t.motif,
+          s.x + s.w - 24,
+          s.y + s.h + 32,
+          30,
+          c.accent2,
+          c.accent,
+        );
       ctx.restore();
     });
     const last = slots.reduce((m, s) => Math.max(m, s.y + s.h), 0);
@@ -606,7 +665,7 @@ export const collage: FamilyDef = {
         color: softOn(c.bg, t),
         align: "center",
       });
-    brand(ctx, W / 2, H - p.safeBottom + 44, "center", softOn(c.bg, t), 22);
+    brand(ctx, W / 2, H - p.safeBottom + 34, "center", softOn(c.bg, t), 22);
   },
 };
 
@@ -614,7 +673,7 @@ export const collage: FamilyDef = {
 
 export const poster: FamilyDef = {
   slots(p) {
-    const bold = p.t.frame === "bold";
+    const bold = p.t.frame === "bold" && p.t.variant !== "framed";
     if (bold) {
       if (p.spec.size === "square") return [{ x: 80, y: 430, w: 410, h: 410 }];
       if (p.story) return [{ x: 190, y: 770, w: 700, h: 700 }];
@@ -628,13 +687,13 @@ export const poster: FamilyDef = {
     const { t, H } = p;
     const c = t.palette;
     const s = slots[0] as Slot;
-    const bold = t.frame === "bold";
+    const bold = t.frame === "bold" && t.variant !== "framed";
     const sq = p.spec.size === "square";
     const top = p.story ? 190 : 60;
     if (bold) {
       ctx.fillStyle = c.bg;
       ctx.fillRect(0, 0, W, H);
-      rays(ctx, s.x + s.w / 2, s.y + s.h / 2, Math.hypot(W, H), 28, c.bg2, 1);
+      pattern(ctx, t.pattern ?? "rays", W, H, c.bg2, 1, s.x + s.w / 2, s.y + s.h / 2);
       // kicker band
       ctx.fillStyle = c.accent;
       ctx.fillRect(0, top, W, 66);
@@ -711,6 +770,23 @@ export const poster: FamilyDef = {
       const fx = sq ? s.x + s.w + 90 : 70;
       const fw = sq ? W - fx - 70 : 940;
       let y = sq ? s.y + 10 : s.y + s.h + 56;
+      if (t.pattern === "stripes" || t.pattern === "dots") {
+        // a calm card behind the words so a busy backdrop never fights the text
+        ctx.save();
+        ctx.globalAlpha = 0.9;
+        const px = sq ? fx - 24 : 50;
+        const py = sq ? s.y - 10 : y - 22;
+        fillRound(
+          ctx,
+          px,
+          py,
+          sq ? W - px - 50 : W - 100,
+          (sq ? H - p.safeBottom - 20 : H - p.safeBottom + 50) - py,
+          26,
+          c.card,
+        );
+        ctx.restore();
+      }
       const al: CanvasTextAlign = sq ? "left" : "center";
       const x = sq ? fx : W / 2;
       if (!sq) {
@@ -807,21 +883,24 @@ export const poster: FamilyDef = {
         24,
       );
     } else {
-      // field report on graph paper
+      // field report on graph paper (or a framed print for the "framed" variant)
+      const report = t.variant !== "framed";
       paperBackground(ctx, t, W, H);
       ctx.strokeStyle = c.bg2;
       ctx.lineWidth = 1.5;
-      for (let x = 0; x <= W; x += 40) {
-        ctx.beginPath();
-        ctx.moveTo(x, 0);
-        ctx.lineTo(x, H);
-        ctx.stroke();
-      }
-      for (let y = 0; y <= H; y += 40) {
-        ctx.beginPath();
-        ctx.moveTo(0, y);
-        ctx.lineTo(W, y);
-        ctx.stroke();
+      if (report) {
+        for (let x = 0; x <= W; x += 40) {
+          ctx.beginPath();
+          ctx.moveTo(x, 0);
+          ctx.lineTo(x, H);
+          ctx.stroke();
+        }
+        for (let y = 0; y <= H; y += 40) {
+          ctx.beginPath();
+          ctx.moveTo(0, y);
+          ctx.lineTo(W, y);
+          ctx.stroke();
+        }
       }
       ctx.save();
       ctx.globalAlpha = 0.16;
@@ -853,28 +932,41 @@ export const poster: FamilyDef = {
       drawSlot(ctx, t, s, photos[0], 0);
       ctx.strokeStyle = c.ink;
       ctx.lineWidth = 2;
-      for (let i = 0; i <= 20; i++) {
+      if (t.variant === "ground") {
+        ctx.fillStyle = c.accent;
+        for (let gx = s.x; gx < s.x + s.w; gx += 22) {
+          const gh = 14 + ((gx * 7) % 5) * 5;
+          ctx.beginPath();
+          ctx.moveTo(gx, s.y + s.h + 12);
+          ctx.lineTo(gx + 5, s.y + s.h + 12 - gh);
+          ctx.lineTo(gx + 11, s.y + s.h + 12);
+          ctx.closePath();
+          ctx.fill();
+        }
+      }
+      for (let i = 0; report && i <= 20; i++) {
         const tx = s.x + (s.w * i) / 20;
         ctx.beginPath();
         ctx.moveTo(tx, s.y - 12);
         ctx.lineTo(tx, s.y - (i % 5 ? 20 : 32));
         ctx.stroke();
       }
-      for (let i = 0; i <= 20; i++) {
+      for (let i = 0; report && i <= 20; i++) {
         const ty = s.y + (s.h * i) / 20;
         ctx.beginPath();
         ctx.moveTo(s.x - 12, ty);
         ctx.lineTo(s.x - (i % 5 ? 20 : 32), ty);
         ctx.stroke();
       }
-      para(ctx, "FIG. 1", s.x, s.y + s.h + 18, {
-        w: 200,
-        lines: 1,
-        size: 24,
-        key: "condensed",
-        weight: 700,
-        color: softOn(c.bg, t),
-      });
+      if (report)
+        para(ctx, "FIG. 1", s.x, s.y + s.h + 18, {
+          w: 200,
+          lines: 1,
+          size: 24,
+          key: "condensed",
+          weight: 700,
+          color: softOn(c.bg, t),
+        });
       // fields table
       const fx = sq ? s.x + s.w + 60 : 70;
       const fw = sq ? W - fx - 70 : 940;
@@ -920,32 +1012,36 @@ export const poster: FamilyDef = {
           color: c.ink,
         });
       }
-      // stamp
+      // stamp (a motif sticker on framed prints)
+      if (!report)
+        motif(ctx, t.motif, s.x + s.w - 14, s.y + 24, sq ? 150 : 190, c.accent, c.accent2);
       const sx = sq ? s.x + s.w - 20 : s.x + s.w - 70;
       const sy = s.y + s.h - 40;
-      ctx.save();
-      ctx.translate(sx, sy);
-      ctx.rotate(-0.28);
-      ctx.strokeStyle = c.accent;
-      ctx.fillStyle = c.accent;
-      ctx.lineWidth = 7;
-      ctx.globalAlpha = 0.85;
-      roundRectPath(ctx, -150, -52, 300, 104, 10);
-      ctx.stroke();
-      ctx.lineWidth = 2;
-      roundRectPath(ctx, -140, -42, 280, 84, 6);
-      ctx.stroke();
-      para(ctx, word(p, "seal", "FOUND"), 0, -26, {
-        w: 250,
-        lines: 1,
-        size: 40,
-        key: "condensed",
-        weight: 900,
-        color: c.accent,
-        align: "center",
-        lh: 1,
-      });
-      ctx.restore();
+      if (report) {
+        ctx.save();
+        ctx.translate(sx, sy);
+        ctx.rotate(-0.28);
+        ctx.strokeStyle = c.accent;
+        ctx.fillStyle = c.accent;
+        ctx.lineWidth = 7;
+        ctx.globalAlpha = 0.85;
+        roundRectPath(ctx, -150, -52, 300, 104, 10);
+        ctx.stroke();
+        ctx.lineWidth = 2;
+        roundRectPath(ctx, -140, -42, 280, 84, 6);
+        ctx.stroke();
+        para(ctx, word(p, "seal", "FOUND"), 0, -26, {
+          w: 250,
+          lines: 1,
+          size: 40,
+          key: "condensed",
+          weight: 900,
+          color: c.accent,
+          align: "center",
+          lh: 1,
+        });
+        ctx.restore();
+      }
       brand(ctx, sq ? W - 70 : W - 70, H - p.safeBottom + 30, "right", softOn(c.bg, t), 24);
     }
   },

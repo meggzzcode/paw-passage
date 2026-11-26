@@ -332,8 +332,146 @@ export function frame(
       ctx.lineWidth = 3;
       ctx.strokeRect(x + 26, y + 26, w - 52, h - 52);
       break;
+    case "stripes":
+    case "filmstrip": {
+      const bw = t.frame === "stripes" ? 30 : 54;
+      ctx.beginPath();
+      ctx.rect(x - bw / 2, y - bw / 2, w + bw, h + bw);
+      ctx.rect(x + bw / 2, y + bw / 2, w - bw, h - bw);
+      ctx.save();
+      ctx.clip("evenodd");
+      if (t.frame === "stripes") {
+        ctx.fillStyle = color2;
+        ctx.fillRect(x - bw, y - bw, w + bw * 2, h + bw * 2);
+        ctx.fillStyle = color;
+        for (let d = -h - bw; d < w + h + bw * 2; d += 44) {
+          ctx.beginPath();
+          ctx.moveTo(x + d, y - bw);
+          ctx.lineTo(x + d + 22, y - bw);
+          ctx.lineTo(x + d + 22 + h + bw * 2, y + h + bw);
+          ctx.lineTo(x + d + h + bw * 2, y + h + bw);
+          ctx.closePath();
+          ctx.fill();
+        }
+      } else {
+        ctx.fillStyle = "#0c0c10";
+        ctx.fillRect(x - bw, y - bw, w + bw * 2, h + bw * 2);
+        ctx.fillStyle = color2;
+        for (let px = x - bw / 2 + 8; px < x + w + bw / 2; px += 40) {
+          ctx.fillRect(px, y - bw / 2 + 12, 20, 28);
+          ctx.fillRect(px, y + h + bw / 2 - 40, 20, 28);
+        }
+        for (let py = y + bw / 2 + 8; py < y + h - bw / 2; py += 40) {
+          ctx.fillRect(x - bw / 2 + 12, py, 28, 20);
+          ctx.fillRect(x + w + bw / 2 - 40, py, 28, 20);
+        }
+      }
+      ctx.restore();
+      break;
+    }
+    case "rope":
+      ctx.strokeStyle = color;
+      ctx.lineWidth = 14;
+      ctx.strokeRect(x, y, w, h);
+      ctx.strokeStyle = color2;
+      ctx.lineWidth = 14;
+      ctx.setLineDash([9, 9]);
+      ctx.strokeRect(x, y, w, h);
+      ctx.setLineDash([]);
+      break;
+    case "marquee": {
+      ctx.fillStyle = color;
+      const step = 46;
+      for (let px = x; px <= x + w; px += step) {
+        circle(ctx, px, y, 9);
+        ctx.fill();
+        circle(ctx, px, y + h, 9);
+        ctx.fill();
+      }
+      ctx.fillStyle = color2;
+      for (let py = y + step; py < y + h; py += step) {
+        circle(ctx, x, py, 9);
+        ctx.fill();
+        circle(ctx, x + w, py, 9);
+        ctx.fill();
+      }
+      break;
+    }
+    case "lace": {
+      ctx.strokeStyle = color;
+      ctx.lineWidth = 3;
+      const r = 17;
+      for (let px = x + r; px < x + w; px += r * 2) {
+        ctx.beginPath();
+        ctx.arc(px, y + r, r, 0, Math.PI * 2);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(px, y + h - r, r, 0, Math.PI * 2);
+        ctx.stroke();
+      }
+      for (let py = y + r * 3; py < y + h - r * 2; py += r * 2) {
+        ctx.beginPath();
+        ctx.arc(x + r, py, r, 0, Math.PI * 2);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(x + w - r, py, r, 0, Math.PI * 2);
+        ctx.stroke();
+      }
+      ctx.strokeStyle = color2;
+      ctx.lineWidth = 2;
+      ctx.strokeRect(x + r * 2 + 6, y + r * 2 + 6, w - r * 4 - 12, h - r * 4 - 12);
+      break;
+    }
+    case "stitch":
+      ctx.strokeStyle = color;
+      ctx.lineWidth = 4;
+      roundRectPath(ctx, x, y, w, h, 18);
+      ctx.stroke();
+      ctx.strokeStyle = color2;
+      ctx.lineWidth = 3;
+      ctx.setLineDash([12, 9]);
+      roundRectPath(ctx, x + 14, y + 14, w - 28, h - 28, 10);
+      ctx.stroke();
+      ctx.setLineDash([]);
+      break;
     case "none":
       break;
+  }
+  ctx.restore();
+}
+
+/** Pattern drawn over an already-filled ground: rays, stripes, dots or diagonal bands. */
+export function pattern(
+  ctx: Ctx,
+  kind: "rays" | "stripes" | "dots" | "diag" | "plain",
+  w: number,
+  h: number,
+  color: string,
+  alpha: number,
+  cx = w / 2,
+  cy = h / 2,
+): void {
+  if (kind === "plain") return;
+  ctx.save();
+  ctx.globalAlpha = alpha;
+  ctx.fillStyle = color;
+  ctx.strokeStyle = color;
+  if (kind === "rays") rays(ctx, cx, cy, Math.hypot(w, h), 28, color, 1);
+  else if (kind === "stripes") for (let px = 0; px < w; px += 120) ctx.fillRect(px, 0, 60, h);
+  else if (kind === "dots")
+    for (let py = 30; py < h; py += 64)
+      for (let px = (py / 64) % 2 ? 62 : 30; px < w; px += 64) {
+        circle(ctx, px, py, 14);
+        ctx.fill();
+      }
+  else {
+    ctx.lineWidth = 36;
+    for (let d = -h; d < w + h; d += 110) {
+      ctx.beginPath();
+      ctx.moveTo(d, 0);
+      ctx.lineTo(d + h, h);
+      ctx.stroke();
+    }
   }
   ctx.restore();
 }

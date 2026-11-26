@@ -131,6 +131,19 @@ export async function deleteAccount(csrf: string): Promise<boolean> {
   }
 }
 
+/**
+ * Asks the server to clear this device's session cookie. Stateless cookies mean this does not sign other devices out.
+ * Returns true when the server confirmed; callers sign out locally either way.
+ */
+export async function signOutRequest(csrf: string): Promise<boolean> {
+  try {
+    const res = await post("/api/session/signout", csrf, {});
+    return res.ok;
+  } catch {
+    return false;
+  }
+}
+
 /** The configured checkout link, or null until one is set. Only https links are accepted. */
 export function checkoutUrl(): string | null {
   const v = (import.meta.env["VITE_CHECKOUT_URL"] as string | undefined)?.trim();

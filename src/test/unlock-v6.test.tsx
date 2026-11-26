@@ -78,20 +78,28 @@ describe("/unlock: refund terms and the full demonstration adventure", () => {
     expect(DEMO_ADVENTURE.steps.length).toBeGreaterThanOrEqual(5);
     expect(DEMO_ADVENTURE.safety.length).toBeGreaterThanOrEqual(3);
   });
-  it("the demonstration card is original: not a library card, public or premium", () => {
-    const title = DEMO_ADVENTURE.title;
-    const files = [
-      ...readdirSync("content/adventures").map((f) => `content/adventures/${f}`),
-      ...(existsSync("content/premium")
-        ? readdirSync("content/premium").map((f) => `content/premium/${f}`)
-        : []),
-    ];
+  const demoFiles = (dir: string, ext: string) =>
+    readdirSync(dir)
+      .filter((f) => f.endsWith(ext))
+      .map((f) => `${dir}/${f}`);
+  const notACopy = (files: string[]) => {
+    expect(files.length).toBeGreaterThan(0);
     for (const f of files) {
       const t = readFileSync(f, "utf8");
-      expect(t, f).not.toContain(title);
+      expect(t, f).not.toContain(DEMO_ADVENTURE.title);
       for (const step of DEMO_ADVENTURE.steps) expect(t, f).not.toContain(step.slice(0, 60));
     }
+  };
+  it("the demonstration card is original: not a public library card", () => {
+    notACopy(demoFiles("content/adventures", ".yml"));
   });
+  const PREMIUM_DIR = process.env["PREMIUM_DIR"]?.trim() || "";
+  it.skipIf(!PREMIUM_DIR || !existsSync(PREMIUM_DIR))(
+    "OWNER-MACHINE check (skipped without PREMIUM_DIR): the demonstration card is not a premium card either",
+    () => {
+      notACopy(demoFiles(PREMIUM_DIR, ".json"));
+    },
+  );
   it("the homepage mounts it collapsed", () => {
     const home = readFileSync("src/routes/index.tsx", "utf8");
     expect(home).toContain("<DemoAdventure />");

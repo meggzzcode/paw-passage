@@ -10,6 +10,10 @@ const run = (flag: string) =>
     encoding: "utf8",
     stdio: ["ignore", "pipe", "ignore"],
   });
+// Premium text is not tracked in the repository. The script runs in FREE-ONLY mode unless PREMIUM_DIR points at the premium folder.
+// The checks that need the real library are OWNER-MACHINE checks (skipped here, visibly, without PREMIUM_DIR; docs/PREMIUM-INTEGRATION-TESTS.md).
+const PREMIUM_DIR = process.env["PREMIUM_DIR"]?.trim() || "";
+const HAS_PREMIUM = Boolean(PREMIUM_DIR) && existsSync(PREMIUM_DIR);
 const sum = (o: Record<string, number>) => Object.values(o).reduce((a, b) => a + b, 0);
 
 describe("library inventory script", () => {
@@ -30,12 +34,29 @@ describe("library inventory script", () => {
     expect(c.showcaseWithoutTeaser).toEqual([]);
     const free = readdirSync(join(root, "content/adventures")).filter((f) => f.endsWith(".yml"));
     expect(c.freeIntroPool + c.freeDraft).toBe(free.length);
-    const premDir = join(root, "content/premium");
-    const prem = existsSync(premDir)
-      ? readdirSync(premDir).filter((f) => f.endsWith(".json")).length
+    const prem = HAS_PREMIUM
+      ? readdirSync(PREMIUM_DIR).filter((f) => f.endsWith(".json")).length
       : 0;
     expect(c.premiumPublished + c.premiumDraft).toBe(prem);
   });
+
+  it("states its mode: free-only (with a notice) without PREMIUM_DIR, full with it", () => {
+    expect(s.mode).toBe(HAS_PREMIUM ? "full" : "free-only");
+    expect(typeof s.notice).toBe("string");
+    if (!HAS_PREMIUM) {
+      expect(s.notice).toMatch(/PARTIAL MODE/);
+      expect(s.cards.premiumPublished).toBe(0);
+      expect(run("--md")).toMatch(/PARTIAL MODE/);
+    }
+  });
+
+  it.skipIf(!HAS_PREMIUM)(
+    "OWNER-MACHINE check (skipped without PREMIUM_DIR): full mode counts every premium file",
+    () => {
+      expect(s.cards.premiumPublished + s.cards.premiumDraft).toBeGreaterThan(0);
+      expect(s.cards.publicPremiumPreviews).toBeGreaterThan(0);
+    },
+  );
 
   it("single-valued distributions each add up to the published count", () => {
     const n = s.cards.published;
@@ -84,16 +105,18 @@ describe("library inventory script", () => {
     expect(md).toContain("Free intro pool");
   });
 
-  it("prints no premium titles or teasers", () => {
-    const premDir = join(root, "content/premium");
-    if (!existsSync(premDir)) return;
-    for (const f of readdirSync(premDir).filter((x) => x.endsWith(".json"))) {
-      const a = JSON.parse(readFileSync(join(premDir, f), "utf8")) as {
-        title: string;
-        teaser?: string;
-      };
-      expect(out).not.toContain(a.title);
-      if (a.teaser) expect(out).not.toContain(a.teaser);
-    }
-  });
+  it.skipIf(!HAS_PREMIUM)(
+    "OWNER-MACHINE check (skipped without PREMIUM_DIR): prints no premium titles or teasers",
+    () => {
+      const premDir = PREMIUM_DIR;
+      for (const f of readdirSync(premDir).filter((x) => x.endsWith(".json"))) {
+        const a = JSON.parse(readFileSync(join(premDir, f), "utf8")) as {
+          title: string;
+          teaser?: string;
+        };
+        expect(out).not.toContain(a.title);
+        if (a.teaser) expect(out).not.toContain(a.teaser);
+      }
+    },
+  );
 });

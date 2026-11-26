@@ -6,7 +6,7 @@ import { ACCENTS, collectionSchema, stampSchema, achievementSchema } from "@/pas
 
 // The Pages CMS forms (.pages.yml) must offer every field of the CURRENT adventure schema, mark every required field as
 // required and offer exactly the schema's choices. A schema change that is not mirrored in the CMS fails here, so the
-// CMS cannot drift silently. The premium form (content/premium) is checked against the same rules.
+// CMS cannot drift silently. The premium form (content/premium; OFF, because that folder is git-ignored and untracked) is checked against the same rules.
 type Field = {
   name: string;
   type?: string;
@@ -200,6 +200,12 @@ describe("premium CMS switch and access locks", () => {
     expect(text).toContain("RECOMMENDED STATE: OFF");
     expect(premiumLive, "premium-adventures is commented out (OFF)").toBe(false);
     expect(premiumEntry.path).toBe("content/premium");
+  });
+
+  it("the switch comments say premium text is not tracked and point at the historical-exposure record", () => {
+    expect(text).toMatch(/NO LONGER TRACKED/);
+    expect(text).toContain("HISTORICAL-EXPOSURE.md");
+    expect(text).toContain("git-ignored");
   });
 
   it("the premium block (live or uncommented) is a premium-locked collection", () => {

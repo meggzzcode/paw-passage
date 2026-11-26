@@ -1282,18 +1282,17 @@ content:
 
   # ------------------------------------------------------------ Premium adventures (paid library) : SWITCH
   # PREMIUM-CMS-SWITCH: this form is currently OFF (commented out). RECOMMENDED STATE: OFF.
-  # Why: the latest owner directive is that the public repository must not need to contain the premium library, and every
-  # Pages CMS save here would commit premium text to this PUBLIC repository. While OFF, premium adventures are edited and
-  # imported from the private package kept outside the repository (docs/PREMIUM-CONTENT-WORKFLOW.md).
-  # To turn it ON (only while the repository is still public by the owner's explicit decision, or once it is private):
+  # Why: premium adventure text is NO LONGER TRACKED in this PUBLIC repository (owner directive 2026-11-26): content/premium/*.json is git-ignored and
+  # Pages CMS edits tracked files in the repository, so it cannot edit a local, untracked folder and every save would try to commit premium text.
+  # Premium adventures are edited from the protected package kept outside the repository and imported with PREMIUM_DIR (docs/PREMIUM-CONTENT-WORKFLOW.md).
+  # Older commits still contain the text: docs/HISTORICAL-EXPOSURE.md. Do NOT turn this switch ON unless the owner has completed a remediation option there
+  # (for example a private repository) AND decided to track premium text again. Turning it ON is the reverse of the steps below:
   #   on every line between PREMIUM-CMS-SWITCH:BEGIN and PREMIUM-CMS-SWITCH:END delete the leading spaces and the "# " (so "  #   - name: x" becomes "  - name: x"),
   #   then run: npx vitest run src/test/handover-cms.test.ts. Turning it OFF again is the reverse.
-  # Files already in content/premium/ are untouched by this switch; the site build never reads them either way.
+  # The folder content/premium/ is a git-ignored local working copy (content/premium/README.md); the site build never reads it.
   # PREMIUM-CMS-SWITCH:BEGIN
-  #   # DECISION (owner, 2026-11-26): the premium adventures are stored here, one JSON file per adventure in content/premium/, even though
-  #   # this repository is still PUBLIC. They are protected from the website only because the build never reads content/premium/.
-  #   # The paid library is NOT protected from the public until the repository is made PRIVATE (docs/PREMIUM-CONTENT-WORKFLOW.md).
-  #   # Saving here only commits a file; it does not change the live store. Import is a separate step: scripts/premium-import.mjs --dir content/premium.
+  #   # DISABLED BY DEFAULT (owner directive 2026-11-26): content/premium/*.json is git-ignored and not tracked; this form would commit premium text.
+  #   # Saving here only commits a file; it does not change the live store. Import is a separate step: PREMIUM_DIR=<folder> node scripts/premium-import.mjs.
   #   - name: premium-adventures
   #     label: Adventures (premium)
   #     type: collection

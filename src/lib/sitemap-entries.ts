@@ -1,5 +1,6 @@
 import { allGuides, isPublic } from "@/content/guides";
 import { hasGear, liveCategories } from "@/content/gear-hub";
+import { PRINTABLES } from "@/components/printables/data";
 import { allJournal } from "@/lib/journal";
 import { collections } from "@/passport/content";
 
@@ -12,7 +13,6 @@ export const staticPaths = [
   "/printables",
   // The broad hub (indexable; personalized filter combinations are never listed). Topic pages live in the Journal.
   "/things-to-do-with-your-dog",
-  "/our-story",
   "/guides",
   "/tools/packing-list",
   "/about",
@@ -23,14 +23,17 @@ export const staticPaths = [
   "/refund-policy",
   "/disclaimer",
   "/editorial-standards",
+  "/how-we-write-adventures",
   "/methodology",
   "/corrections",
 ];
 
-/** Only public, indexable pages: the Passport pages, curated collections, published guides and the gear hub. Never drafts, and never the private pages (/passport, /restore-access, customer collections). */
+/** Only public, indexable pages: the Passport pages, curated collections, published guides and the gear hub. Never drafts, and never the private pages (/passport, /our-story, /restore-access, customer collections). */
 export function sitemapEntries(): { path: string; lastmod?: string }[] {
   const out: { path: string; lastmod?: string }[] = staticPaths.map((path) => ({ path }));
   for (const c of collections) out.push({ path: `/collections/${c.slug}` });
+  // Free sample printables are public pages; the rest are noindex (entitled) and never listed.
+  for (const p of PRINTABLES.filter((x) => x.sample)) out.push({ path: `/printables/${p.slug}` });
   // The gear hub and its category pages are indexable only once a category has enough products (see src/content/gear-hub.ts).
   if (hasGear()) {
     out.push({ path: "/gear" });

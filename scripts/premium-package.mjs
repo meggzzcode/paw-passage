@@ -4,7 +4,7 @@
 // import / recovery instructions. It is the authoritative copy of the paid content and lives OUTSIDE the repository.
 //
 //   node scripts/premium-package.mjs --out /home/user/premium-content/package
-//   options: --source <folder>  premium JSON folder (default content/premium)   --date YYYY-MM-DD  (default today, UTC)
+//   options: --source <folder> (or --dir, or env PREMIUM_DIR; no default)  premium JSON folder   --date YYYY-MM-DD  (default today, UTC)
 //
 // Safety: refuses to write inside the git repository; only ever runs the premium-import.mjs DRY RUN (never --write, and the
 // Netlify credentials are removed from the child's environment); reads no store; never includes customer data (the package is
@@ -25,7 +25,12 @@ import {
 import { dirname, join, relative, resolve, sep } from "node:path";
 import { fileURLToPath } from "node:url";
 import { parse as parseYaml } from "yaml";
-import { readPremiumDir, resolvePremiumDir } from "./premium-dir-lib.mjs";
+import {
+  NO_PREMIUM_DIR_MESSAGE,
+  premiumDirFromArgs,
+  readPremiumDir,
+  resolvePremiumDir,
+} from "./premium-dir-lib.mjs";
 import { adventureSchema } from "../src/passport/schema.ts";
 import { buildPreviewIndex } from "../src/server/passport/previews.ts";
 
@@ -58,7 +63,9 @@ if (outAbs === root || outAbs.startsWith(root + sep))
 
 let srcAbs;
 try {
-  srcAbs = resolvePremiumDir(opt("--source") ?? join(root, "content", "premium"), root);
+  const srcOpt = opt("--source") ?? premiumDirFromArgs(args);
+  if (!srcOpt) die(`Missing --source <folder>. ${NO_PREMIUM_DIR_MESSAGE}`);
+  srcAbs = resolvePremiumDir(srcOpt, root);
 } catch (e) {
   die(e instanceof Error ? e.message : "bad source folder");
 }
@@ -267,7 +274,7 @@ export SITE_ID=...
 node scripts/premium-export.mjs --dir <BACKUP_FOLDER> --env production
 \`\`\`
 
-One \`<id>.json\` per live adventure. The folder must be outside the repository (or exactly \`content/premium\`). It refuses to overwrite files unless \`--overwrite\`.
+One \`<id>.json\` per live adventure. The folder must be outside the repository (or exactly \`content/premium\`, a git-ignored local working copy). It refuses to overwrite files unless \`--overwrite\`.
 
 ## Restore
 

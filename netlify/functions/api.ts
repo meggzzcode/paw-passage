@@ -7,6 +7,7 @@ export default async (req: Request, context: NetlifyContextLike): Promise<Respon
 export const config = {
   path: [
     "/api/session",
+    "/api/session/signout",
     "/api/access/activate",
     "/api/access/restore",
     "/api/progress",

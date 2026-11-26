@@ -2,13 +2,18 @@
 // Owner-only, run LOCALLY. Splits one premium JSON array (the old single-file format) into one <id>.json file per adventure,
 // the layout that premium-import.mjs --dir and Pages CMS use. Needs no network and no tokens; never writes to a store.
 //
-//   node scripts/premium-split.mjs --file ~/private/premium.json --dir content/premium            # writes the files
+//   node scripts/premium-split.mjs --file ~/private/premium.json --dir <folder>   # writes the files (or set PREMIUM_DIR)
 //   add --overwrite to replace files that already exist. Reverse (backup from the store): premium-export.mjs --dir.
-// The folder must be outside the repository or exactly content/premium (see docs/PREMIUM-CONTENT-WORKFLOW.md).
+// The folder must be outside the repository or exactly content/premium (a git-ignored local working copy; see docs/PREMIUM-CONTENT-WORKFLOW.md).
 import { readFileSync, realpathSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
-import { resolvePremiumDir, writePremiumDir } from "./premium-dir-lib.mjs";
+import {
+  NO_PREMIUM_DIR_MESSAGE,
+  premiumDirFromArgs,
+  resolvePremiumDir,
+  writePremiumDir,
+} from "./premium-dir-lib.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const args = process.argv.slice(2);
@@ -18,7 +23,13 @@ const die = (m, c = 2) => {
   process.exit(c);
 };
 const file = opt("--file") ?? die("Missing --file <premium JSON array>");
-const dirOpt = opt("--dir") ?? die("Missing --dir <target folder>");
+let dirOpt;
+try {
+  dirOpt = premiumDirFromArgs(args);
+} catch (e) {
+  die(e instanceof Error ? e.message : "bad --dir");
+}
+if (!dirOpt) die(`Missing --dir <target folder>. ${NO_PREMIUM_DIR_MESSAGE}`);
 let data;
 try {
   data = JSON.parse(readFileSync(realpathSync(resolve(file)), "utf8"));

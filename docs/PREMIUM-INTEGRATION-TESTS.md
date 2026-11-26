@@ -11,6 +11,30 @@ All fixtures are SYNTHETIC. No premium text lives in these tests, this document 
 - Files: `src/test/premium-e2e.test.ts` (purchase to library), `src/test/premium-e2e-ops.test.ts` (production safety, export package, smoke script), `src/test/premium-e2e-harness.ts` (shared setup).
 - Run: `npx vitest run src/test/premium-e2e`.
 
+## Owner-machine checks (need PREMIUM_DIR)
+
+Premium adventure text is not tracked in this repository (`docs/HISTORICAL-EXPOSURE.md`). Everything above uses SYNTHETIC fixtures and runs everywhere. A few checks need the REAL library, so they run only when `PREMIUM_DIR` points at the folder of `<id>.json` files (for example the `adventures/` folder of the protected package). Without it each one is reported as SKIPPED with a visible title that starts with `OWNER-MACHINE` and says why; none passes silently by reading nothing.
+
+| Skipped without PREMIUM_DIR                              | File                           | What it proves with the real library                                                           |
+| -------------------------------------------------------- | ------------------------------ | ---------------------------------------------------------------------------------------------- |
+| Journal has no sentence from the real premium library    | `premium-owner-checks.test.ts` | the Journal sentence-overlap rule (`scripts/validate-journal.mjs`)                             |
+| no real premium fragment in `src/` or `public/`          | `premium-owner-checks.test.ts` | `scripts/check-leaks.mjs --premium-dir` finds no real title, instruction, twist or safety text |
+| the premium folder imports as a dry run and counts match | `premium-owner-checks.test.ts` | `scripts/premium-import.mjs --dir` validates every file                                        |
+| full mode counts every premium file                      | `library-inventory.test.ts`    | `scripts/library-stats.mjs` full mode                                                          |
+| prints no premium titles or teasers                      | `library-inventory.test.ts`    | the inventory output carries aggregates only                                                   |
+| the demonstration card is not a premium card either      | `unlock-v6.test.tsx`           | the homepage demo card is original                                                             |
+
+Always-on (synthetic) counterparts: `premium-not-tracked.test.ts` (no `content/premium/*.json` is tracked; `.gitignore` carries the rule; skipped only when git is unavailable), `premium-owner-checks.test.ts` (check-leaks `--premium-dir` and the Journal overlap rule against temporary synthetic folders), `handover-scripts.test.ts` (scripts stop with an explicit message when neither `--dir` nor `PREMIUM_DIR` is set).
+
+Run on the owner machine:
+
+```bash
+export PREMIUM_DIR=/home/user/premium-content/package/premium-2026-11-26-1/adventures
+npx vitest run src/test/premium-owner-checks.test.ts src/test/library-inventory.test.ts src/test/unlock-v6.test.tsx
+node scripts/validate-journal.mjs
+node scripts/check-leaks.mjs dist --premium-dir "$PREMIUM_DIR"   # after a build
+```
+
 ## Test provider safety
 
 `TestProvider` exists only when `PP_ALLOW_TEST_PROVIDER=1` AND the deploy context is `dev`, `deploy-preview` or `branch-deploy`. A missing, empty or any other context (including `production`) is treated as production: the flag is ignored and the real provider (or `unconfigured`, which never grants) is used. Preview and production also use separate stores (`customers-preview` vs `customers-production`).

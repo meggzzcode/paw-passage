@@ -1,6 +1,7 @@
 // Shared helpers for the `--dir` mode of premium-import.mjs and premium-export.mjs: one JSON file per premium adventure.
 // Pure file handling, no network. The folder must be OUTSIDE the repository, except the single sanctioned in-repo folder
-// content/premium, which is tracked in this repository by the owner decision (private repository recommended; docs/PREMIUM-CONTENT-WORKFLOW.md).
+// content/premium, which is a GIT-IGNORED local working copy (premium text is NOT tracked in this repository; content/premium/README.md,
+// docs/PREMIUM-CONTENT-WORKFLOW.md, docs/HISTORICAL-EXPOSURE.md). The source folder is never assumed: it comes from --dir or PREMIUM_DIR.
 import {
   existsSync,
   mkdirSync,
@@ -10,6 +11,20 @@ import {
   writeFileSync,
 } from "node:fs";
 import { join, relative, resolve, sep } from "node:path";
+
+export const NO_PREMIUM_DIR_MESSAGE =
+  "No premium folder given. Premium text is not stored in this repository. Pass --dir <folder> or set PREMIUM_DIR to the folder of one <id>.json per adventure " +
+  "(the adventures/ folder of the protected package, for example /home/user/premium-content/package/premium-2026-11-26-1/adventures). See content/premium/README.md.";
+
+/** The premium folder named on the command line (--dir <folder>) or in PREMIUM_DIR; undefined when neither is set. Never a default path. */
+export function premiumDirFromArgs(args, env = process.env, flag = "--dir") {
+  const i = args.indexOf(flag);
+  const fromArg = i >= 0 ? args[i + 1] : undefined;
+  if (i >= 0 && (!fromArg || fromArg.startsWith("--")))
+    throw new Error(`${flag} needs a folder. ${NO_PREMIUM_DIR_MESSAGE}`);
+  const v = fromArg ?? env.PREMIUM_DIR;
+  return v && v.trim() ? v : undefined;
+}
 
 /** Resolves and checks a premium folder. Returns the real path. Throws an Error with a plain message. */
 export function resolvePremiumDir(dir, root, { create = false } = {}) {
@@ -24,7 +39,7 @@ export function resolvePremiumDir(dir, root, { create = false } = {}) {
   const inside = abs === realRoot || abs.startsWith(realRoot + sep);
   if (inside && abs !== sanctioned && !abs.startsWith(sanctioned + sep))
     throw new Error(
-      "Refusing: the premium folder must be outside the repository, or exactly content/premium (tracked here by the owner decision; make the repository private).",
+      "Refusing: the premium folder must be outside the repository, or exactly content/premium (a git-ignored local working copy; premium text is not tracked here).",
     );
   return abs;
 }

@@ -65,10 +65,17 @@ export function wordCount(body) {
   return text.split(/\s+/).filter((w) => /[A-Za-z0-9]/.test(w)).length;
 }
 
-function premiumSentences() {
-  const dir = path.join(root, "content/premium");
+/** Premium folder for the Journal sentence-overlap check: env PREMIUM_DIR (or --premium-dir / --dir). Premium text is not tracked in this repository. */
+export function premiumDirFromEnv(argv = process.argv.slice(2), env = process.env) {
+  const i = Math.max(argv.indexOf("--premium-dir"), argv.indexOf("--dir"));
+  const v = (i >= 0 ? argv[i + 1] : undefined) ?? env.PREMIUM_DIR;
+  return v && v.trim() ? v : undefined;
+}
+
+function premiumSentences(dir) {
   const out = new Set();
-  if (!fs.existsSync(dir)) return out;
+  if (!dir) return out;
+  if (!fs.existsSync(dir)) throw new Error(`Premium folder not found: ${dir}`);
   for (const f of fs.readdirSync(dir)) {
     if (!f.endsWith(".json")) continue;
     let j;
@@ -90,7 +97,8 @@ function premiumSentences() {
   return out;
 }
 
-export function validate() {
+/** premiumDir: folder of premium JSON for the sentence-overlap check; without it that one check is SKIPPED (see main below). */
+export function validate(premiumDir = premiumDirFromEnv()) {
   const errors = [];
   const dir = path.join(root, "content/journal");
   const files = fs.existsSync(dir) ? fs.readdirSync(dir).filter((f) => f.endsWith(".md")) : [];
@@ -105,7 +113,7 @@ export function validate() {
         .matchAll(/slug:\s*"([^"]+)"/g),
     ].map((m) => m[1]),
   );
-  const premium = premiumSentences();
+  const premium = premiumSentences(premiumDir);
   const all = new Set(SLUGS);
   for (const f of files) {
     const slug = f.replace(/\.md$/, "");
@@ -176,10 +184,19 @@ export function validate() {
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
-  const errors = validate();
+  const premiumDir = premiumDirFromEnv();
+  if (!premiumDir)
+    console.warn(
+      "NOTICE: no premium folder (PREMIUM_DIR or --premium-dir): the Journal/premium sentence-overlap check was SKIPPED. Run it on the owner machine with PREMIUM_DIR set.",
+    );
+  const errors = validate(premiumDir);
   if (errors.length) {
     console.error(errors.join("\n"));
     process.exit(1);
   }
-  console.log("journal content OK");
+  console.log(
+    premiumDir
+      ? "journal content OK (including the premium sentence-overlap check)"
+      : "journal content OK (premium overlap check skipped)",
+  );
 }

@@ -1,12 +1,12 @@
 # Library inventory
 
-Computed by `node scripts/library-stats.mjs` (add `--json` or `--md`). The script is read-only, validates every card with the real schema, and prints only counts and card ids, never premium text. `src/test/library-inventory.test.ts` runs it and checks the numbers agree with each other. Re-run it before quoting any number in copy. Last run: **2026-11-26**.
+Computed by `node scripts/library-stats.mjs` (add `--json` or `--md`). The counts below are the FULL-mode figures: they need the premium folder (`PREMIUM_DIR=<package>/adventures`, or `--premium-dir`). Without it the script runs in a labelled free-only (partial) mode and premium counts read 0. The script is read-only, validates every card with the real schema, and prints only counts and card ids, never premium text. `src/test/library-inventory.test.ts` runs it and checks the numbers agree with each other. Re-run it before quoting any number in copy. Last run: **2026-11-26**.
 
 ## Counts
 
 | Measure                                    | Count   | Definition                                                                                                              |
 | ------------------------------------------ | ------- | ----------------------------------------------------------------------------------------------------------------------- |
-| Unique core adventures                     | 113     | Unique ids across `content/adventures/*.yml` and `content/premium/*.json` that pass the schema                          |
+| Unique core adventures                     | 113     | Unique ids across `content/adventures/*.yml` and the premium folder (`PREMIUM_DIR`) that pass the schema                |
 | Published / draft                          | 113 / 0 | `status`                                                                                                                |
 | Free intro pool                            | 14      | published, `access: free`                                                                                               |
 | Premium                                    | 99      | published, `access: premium`                                                                                            |

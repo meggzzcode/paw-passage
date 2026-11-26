@@ -4,12 +4,17 @@
 //
 //   NETLIFY_AUTH_TOKEN=... SITE_ID=... node scripts/premium-export.mjs --out ~/private/premium-backup.json --env production
 //
-// --dir <folder> writes one <id>.json per adventure instead of one array file (the same files premium-import.mjs --dir reads).
+// --dir <folder> (or env PREMIUM_DIR; no default) writes one <id>.json per adventure instead of one array file (the same files premium-import.mjs --dir reads).
 // The output path must be OUTSIDE the git repository (the repo is public). The file is the same array premium-import.mjs reads.
 import { existsSync, realpathSync, writeFileSync } from "node:fs";
 import { dirname, join, resolve, sep } from "node:path";
 import { fileURLToPath } from "node:url";
-import { resolvePremiumDir, writePremiumDir } from "./premium-dir-lib.mjs";
+import {
+  NO_PREMIUM_DIR_MESSAGE,
+  premiumDirFromArgs,
+  resolvePremiumDir,
+  writePremiumDir,
+} from "./premium-dir-lib.mjs";
 import { getStore } from "@netlify/blobs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -19,10 +24,18 @@ const die = (m, c = 2) => {
   console.error(m);
   process.exit(c);
 };
-const dirOpt = opt("--dir");
+let dirOpt;
+try {
+  dirOpt = opt("--out") ? opt("--dir") : premiumDirFromArgs(args);
+} catch (e) {
+  die(e instanceof Error ? e.message : "bad --dir");
+}
 if (dirOpt && opt("--out")) die("Use either --out or --dir, not both.");
 const out =
-  opt("--out") ?? (dirOpt ? "" : die("Missing --out <file outside the repo> or --dir <folder>"));
+  opt("--out") ??
+  (dirOpt
+    ? ""
+    : die(`Missing --out <file outside the repo> or --dir <folder>. ${NO_PREMIUM_DIR_MESSAGE}`));
 const env = opt("--env") ?? "preview";
 if (!["preview", "production"].includes(env)) die("--env must be preview or production");
 let dirAbs;

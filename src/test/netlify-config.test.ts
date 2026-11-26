@@ -134,6 +134,7 @@ describe("netlify/functions/api.ts route list", () => {
   it("routes every /api endpoint the client calls, including the public previews", () => {
     for (const p of [
       "/api/session",
+      "/api/session/signout",
       "/api/access/activate",
       "/api/access/restore",
       "/api/progress",

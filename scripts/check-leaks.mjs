@@ -4,16 +4,22 @@
 // Fails (exit 1) when it finds
 //   1. any marker string taken from the synthetic premium fixtures (src/passport/fixtures/premium.synthetic.ts), or
 //   2. an `instructions` array that sits next to `access:"premium"` (a non-free card shipped in the bundle).
-// It cannot see real premium text (that never enters the repo), so it proves the pipeline cannot ship a card record,
-// not that the owner's private content is clean. Needs Node 22.18+ (imports the TypeScript fixture directly).
+// By default it cannot see real premium text (not tracked in the repo), so it proves the pipeline cannot ship a card record.
+// OWNER-MACHINE MODE: add `--premium-dir <folder>` (or set PREMIUM_DIR) to also scan the build for REAL premium fragments
+// (titles, ids, instructions, twist, safety text, clue/reveal/objective/completion/memoryPrompt) taken from that folder:
+//   PREMIUM_DIR=/home/user/premium-content/package/premium-2026-11-26-1/adventures node scripts/check-leaks.mjs dist
+// Fragments are never printed in full (40 characters). Needs Node 22.18+ (imports the TypeScript fixture directly).
 import { readdirSync, readFileSync, statSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { syntheticPremium } from "../src/passport/fixtures/premium.synthetic.ts";
 
-const dir = process.argv[2];
+const argv = process.argv.slice(2);
+const pdIdx = argv.indexOf("--premium-dir");
+const premiumDir = (pdIdx >= 0 ? argv[pdIdx + 1] : process.env.PREMIUM_DIR) || undefined;
+const dir = argv.find((a, i) => !a.startsWith("--") && (pdIdx < 0 || i !== pdIdx + 1));
 if (!dir) {
-  console.error("usage: node scripts/check-leaks.mjs <build output dir>");
+  console.error("usage: node scripts/check-leaks.mjs <build output dir> [--premium-dir <folder>]");
   process.exit(2);
 }
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
@@ -27,6 +33,28 @@ export const PREMIUM_TEXT_KEYS = [
   "completion",
   "memoryPrompt",
 ];
+/** Real premium fragments from a folder of <id>.json files: whole fields only, at least 12 characters. */
+export function realMarkers(folder) {
+  const out = new Set();
+  for (const f of readdirSync(folder)) {
+    if (!f.endsWith(".json")) continue;
+    let a;
+    try {
+      a = JSON.parse(readFileSync(join(folder, f), "utf8"));
+    } catch {
+      continue;
+    }
+    const parts = [
+      a.title,
+      a.id,
+      ...PREMIUM_TEXT_KEYS.map((k) => a[k]),
+      ...(Array.isArray(a.instructions) ? a.instructions : []),
+      ...(Array.isArray(a.safety) ? a.safety : []),
+    ];
+    for (const p of parts) if (typeof p === "string" && p.trim().length >= 12) out.add(p.trim());
+  }
+  return [...out];
+}
 export function markers() {
   const out = new Set();
   for (const a of syntheticPremium) {
@@ -62,6 +90,19 @@ function* walk(d) {
 const abs = resolve(dir);
 const found = [];
 const ms = markers();
+let real = [];
+if (premiumDir) {
+  try {
+    real = realMarkers(resolve(premiumDir));
+  } catch (e) {
+    console.error(`Premium folder not readable: ${premiumDir}`);
+    process.exit(2);
+  }
+  if (real.length === 0) {
+    console.error(`No premium fragments found in ${premiumDir}: wrong folder?`);
+    process.exit(2);
+  }
+}
 let files = 0;
 for (const f of walk(abs)) {
   files++;
@@ -69,6 +110,11 @@ for (const f of walk(abs)) {
   for (const m of ms)
     if (text.includes(m))
       found.push(`${f.replace(root + "/", "")}: contains fixture marker "${m.slice(0, 40)}"`);
+  for (const m of real)
+    if (text.includes(m))
+      found.push(
+        `${f.replace(root + "/", "")}: contains a REAL premium fragment (${m.length} chars, starts "${m.slice(0, 40)}")`,
+      );
   for (const at of premiumInstructionHits(text))
     found.push(
       `${f.replace(root + "/", "")}: instructions array next to access:"premium" at offset ${at}`,
@@ -83,5 +129,5 @@ if (found.length) {
   process.exit(1);
 }
 console.log(
-  `Leak check passed: ${files} files scanned, ${ms.length} markers, no premium instructions.`,
+  `Leak check passed: ${files} files scanned, ${ms.length} fixture markers${premiumDir ? `, ${real.length} REAL premium fragments` : " (no premium folder given: real premium text NOT checked; set PREMIUM_DIR on the owner machine)"}, no premium instructions.`,
 );

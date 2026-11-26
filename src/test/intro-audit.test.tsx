@@ -168,7 +168,7 @@ vi.mock("@/passport/useEntitlement", () => ({
 vi.mock("@/components/passport/Keepsake", () => ({ Keepsake: () => <div /> }));
 
 describe("relaxing optional preferences", () => {
-  it("drops where/time/spend only; no-car, quiet and children-joining stay", () => {
+  it("drops where/time/spend and children joining; no-car and quiet stay", () => {
     const owner = {
       where: "nearby",
       time: "short",
@@ -181,26 +181,38 @@ describe("relaxing optional preferences", () => {
     expect(starterFilters(owner, { relax: true })).toEqual({
       transport: "none-or-walk",
       quiet: true,
-      household: ["family"],
     });
+    expect(starterFilters(owner).household).toEqual(["family"]); // strict pass still narrows to family-suited
     expect(
       starterFilters({ where: "home", time: "short", spend: "none" }, { relax: true }),
     ).toEqual({});
   });
 
-  it("a relaxed pick never ignores the children-joining answer", () => {
+  it("a relaxed pick still prefers a family-suited adventure when one fits", () => {
     const save = saveFor({ lifeStages: ["adult"], where: "nearby", kids: true });
     const r = selectStarter(lib, save, new Set(), { relax: true });
     expect(r.ok).toBe(true);
     if (r.ok) {
       expect(r.adventure.household).toContain("family");
+      expect(r.why).toContain("Suited to families with children");
     }
   });
 
-  it("mixed ages with children has no free fit: reported as nothing, never loosened", () => {
+  it("mixed ages with children: no free family fit strictly, but widening finds a safe non-family one", () => {
     const save = saveFor({ lifeStages: ["puppy", "senior"], kids: true, energy: "variable" });
     expect(selectStarter(lib, save).ok).toBe(false);
-    expect(selectStarter(lib, save, new Set(), { relax: true }).ok).toBe(false);
+    const r = selectStarter(lib, save, new Set(), { relax: true });
+    expect(r.ok).toBe(true);
+    if (r.ok) {
+      // hard eligibility was never relaxed
+      const v = eligibility(r.adventure, {
+        dog: save.profile.data,
+        owner: save.owner.data,
+        unlocked: false,
+      });
+      expect(v.eligible).toBe(true);
+      expect(r.adventure.lifeStages).toEqual(expect.arrayContaining(["puppy", "senior"]));
+    }
   });
 });
 
@@ -248,25 +260,30 @@ describe("empty results in the page", () => {
     fireEvent.click(screen.getByRole("button", { name: /Find our adventure/ }));
   };
 
-  it("nothing fits (puppy + senior + children): adjusting offered, safety kept, not a sales pitch", async () => {
-    const f = vi.fn();
-    vi.stubGlobal("fetch", f);
+  it("puppy + senior + children: nothing strictly fits, widening is offered, says what was set aside and keeps safety", async () => {
     setProfile({ lifeStages: ["puppy", "senior"], energyVariable: true });
     setOwner({ kids: true });
     await renderUi(<FreeStarter />);
     finish();
     expect(
-      await screen.findByRole("heading", { name: "No free adventure fits yet" }),
+      await screen.findByRole("heading", { name: "Nothing free fits all of that" }),
     ).toBeInTheDocument();
-    expect(screen.getByRole("button", { name: "Change my answers" })).toBeInTheDocument();
-    expect(screen.queryByRole("button", { name: /Widen/ })).toBeNull();
-    expect(screen.getByText(/we never loosen those/i)).toBeInTheDocument();
-    // one secondary mention of the full Passport, no pitch panel
+    // not a sales pitch: one secondary mention of the full Passport
     expect(screen.getAllByRole("link", { name: "See the full Passport" })).toHaveLength(1);
     expect(screen.queryByText(/Want more little adventures/)).toBeNull();
-    expect(screen.queryByRole("link", { name: "Browse previews" })).toBeNull();
     expect(getSave().starter).toBeUndefined();
-    expect(f).not.toHaveBeenCalled();
+    fireEvent.click(
+      screen.getByRole("button", { name: "Widen where, time, spend and children joining" }),
+    );
+    expect(
+      await screen.findByRole("article", { name: "Recommended adventure" }),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByText(/We also set aside the children-joining preference/),
+    ).toBeInTheDocument();
+    expect(getSave().owner.data.kids).toBe(true); // the saved answer itself is untouched
+    const a = lib.find((x) => x.id === getSave().starter?.id)!;
+    expect(a.lifeStages).toEqual(expect.arrayContaining(["puppy", "senior"]));
   });
 
   it("only optional answers rule everything out (adult + children + nearby outdoors): offers widening, keeps hard rules", async () => {
@@ -278,14 +295,16 @@ describe("empty results in the page", () => {
       await screen.findByRole("heading", { name: "Nothing free fits all of that" }),
     ).toBeInTheDocument();
     expect(screen.queryByText(/Want more little adventures/)).toBeNull();
-    fireEvent.click(screen.getByRole("button", { name: "Widen where, time and spend" }));
+    fireEvent.click(
+      screen.getByRole("button", { name: "Widen where, time, spend and children joining" }),
+    );
     expect(
       await screen.findByRole("article", { name: "Recommended adventure" }),
     ).toBeInTheDocument();
     const id = getSave().starter?.id;
     const a = lib.find((x) => x.id === id)!;
     expect(a.lifeStages).toContain("adult"); // hard rule kept
-    expect(a.household).toContain("family"); // the children answer kept
+    expect(a.household).toContain("family"); // a family-suited adventure still ranks first when one fits
     expect(getSave().owner.data.where).toBe("nearby"); // the saved answer itself is untouched
   });
 });

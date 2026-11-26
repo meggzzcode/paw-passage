@@ -361,3 +361,76 @@ describe("push endpoint SSRF allow-list", () => {
     expect(validateEndpoint(u)).toBeNull();
   });
 });
+
+describe("sign-out clears this device's cookie only", () => {
+  it("a signed-in customer needs same origin and the CSRF token, and the cookie is cleared with the same attributes", async () => {
+    const h = setup();
+    const a = await signIn(h, "TEST-VALID-SIGNOUT01");
+    expect((await call(h, "POST", "/api/session/signout", { cookie: a.cookie })).status).toBe(403);
+    expect(
+      (
+        await call(h, "POST", "/api/session/signout", {
+          cookie: a.cookie,
+          csrf: "x".repeat(a.csrf.length),
+        })
+      ).status,
+    ).toBe(403);
+    expect(
+      (
+        await call(h, "POST", "/api/session/signout", {
+          cookie: a.cookie,
+          csrf: a.csrf,
+          origin: "https://evil.example",
+        })
+      ).status,
+    ).toBe(403);
+    expect(
+      (
+        await call(h, "POST", "/api/session/signout", {
+          cookie: a.cookie,
+          csrf: a.csrf,
+          origin: null,
+        })
+      ).status,
+    ).toBe(403);
+    expect((await call(h, "GET", "/api/session/signout", { cookie: a.cookie })).status).toBe(405);
+    const ok = await call(h, "POST", "/api/session/signout", { cookie: a.cookie, csrf: a.csrf });
+    expect(ok.status).toBe(200);
+    expect(ok.json).toEqual({ ok: true });
+    expect(ok.res.headers.get("set-cookie")).toBe(
+      "pp_session=; Path=/; Max-Age=0; HttpOnly; Secure; SameSite=Lax",
+    );
+    expect(ok.res.headers.get("cache-control")).toBe("no-store");
+  });
+  it("is idempotent and works with no cookie or an invalid one, still needing a same-origin request", async () => {
+    const h = setup();
+    for (const cookie of [undefined, "pp_session=garbage", "pp_session=abc.def"]) {
+      for (let i = 0; i < 2; i++) {
+        const r = await call(h, "POST", "/api/session/signout", { ...(cookie ? { cookie } : {}) });
+        expect(r.status).toBe(200);
+        expect(r.json).toEqual({ ok: true });
+        expect(r.res.headers.get("set-cookie")).toContain("Max-Age=0");
+      }
+    }
+    expect((await call(h, "POST", "/api/session/signout", { origin: null })).status).toBe(403);
+    expect(
+      (await call(h, "POST", "/api/session/signout", { origin: "https://evil.example" })).status,
+    ).toBe(403);
+  });
+  it("makes no store writes and does not revoke the stateless cookie on another device", async () => {
+    const h = setup();
+    const a = await signIn(h, "TEST-VALID-SIGNOUT02");
+    const puts: string[] = [];
+    for (const kv of [h.customers, h.premium]) {
+      const orig = kv.put.bind(kv);
+      kv.put = ((...args: Parameters<typeof orig>) => {
+        puts.push(String(args[0]));
+        return orig(...args);
+      }) as typeof kv.put;
+    }
+    await call(h, "POST", "/api/session/signout", { cookie: a.cookie, csrf: a.csrf });
+    expect(puts).toEqual([]);
+    // Documented limit: the same signed cookie, kept on another device, still works until it expires.
+    expect((await call(h, "GET", "/api/session", { cookie: a.cookie })).status).toBe(200);
+  });
+});

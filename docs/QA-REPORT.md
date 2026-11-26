@@ -13,6 +13,18 @@ This document records what kinds of checking exist, what has never been done, an
 | `node scripts/test-netlify-ignore.mjs` | The Netlify build-skip rule skips docs-only pushes and builds everything else.                                                                  |
 | `node scripts/check-leaks.mjs dist`    | The build output carries no premium text markers (run after the build; it cannot see the owner's real private text, only that no record ships). |
 
+### Premium-protection commands (owner machine, need `PREMIUM_DIR`)
+
+Premium text is not tracked in the repository (`HISTORICAL-EXPOSURE.md`). The default suite is green without it; checks against the real library are separate and report SKIPPED with a visible reason when `PREMIUM_DIR` is unset (`PREMIUM-INTEGRATION-TESTS.md`, "Owner-machine checks").
+
+| Command                                                                                                                                                | What it proves                                                                |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------- |
+| `npx vitest run src/test/premium-not-tracked.test.ts`                                                                                                  | No `content/premium/*.json` is tracked in git; `.gitignore` carries the rule. |
+| `PREMIUM_DIR=<package>/adventures npx vitest run src/test/premium-owner-checks.test.ts src/test/library-inventory.test.ts src/test/unlock-v6.test.tsx` | The owner-machine checks run instead of skipping.                             |
+| `PREMIUM_DIR=<package>/adventures node scripts/validate-journal.mjs`                                                                                   | Journal sentence-overlap rule against the real premium text.                  |
+| `node scripts/check-leaks.mjs dist --premium-dir <package>/adventures`                                                                                 | The build carries no real premium fragment.                                   |
+| `PREMIUM_DIR=<package>/adventures node scripts/library-stats.mjs --md`                                                                                 | Full library inventory (without `PREMIUM_DIR`: labelled free-only mode).      |
+
 ## What the automated tests cover
 
 Content and schema validation (adventures, collections, stamps, achievements, guides, Journal, products, packing); the eligibility and ranking engine; the free-first journey (quiz with 8 default and at most 10 steps, free starter, reveal) and a 17-profile audit over the real free pool (`INTRO-AUDIT.md`); discovery screens; Save v2 merge, migration and limits; the local store; custom collections; keepsake families, artwork, the premium-only gate and the photo path (in memory); the server API with an in-memory store and a fake provider (activation, restore, refund, dispute, revoke, outage, CSRF, origin, rate limit, body size, conflict retry, export, delete, test-provider exclusion in production); premium end to end over the real handler with the test provider (`PREMIUM-INTEGRATION-TESTS.md`); public previews and the leak guards; library inventory; security (`SECURITY-REVIEW.md`); security headers; policies and pay-once copy guards; Netlify configuration (redirect rules, env inventory); Pages CMS configuration structure and the premium switch; SEO and Journal content; PWA and notification code (paused); affiliate link rules; disclosure labels; accessibility structure checks in component tests; trust pages.

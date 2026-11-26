@@ -303,6 +303,19 @@ describe("free Discover: the introductory flow", () => {
     expect(fetchSpy).not.toHaveBeenCalled();
   });
 
+  it("shows the keepsake explainer at most once after completion, and only when the visitor opens the keepsake style", async () => {
+    await show();
+    start();
+    await screen.findByRole("article", { name: "Recommended adventure" });
+    fireEvent.click(screen.getByRole("button", { name: "Scratch or tap to reveal." }));
+    await screen.findByText("How it goes");
+    fireEvent.click(screen.getByRole("button", { name: "Collect it" }));
+    await screen.findByRole("heading", { name: "Your first stamp" });
+    expect(screen.queryAllByLabelText("About personalized keepsakes")).toHaveLength(0);
+    fireEvent.click(screen.getByRole("button", { name: "See the keepsake style" }));
+    expect(screen.getAllByLabelText("About personalized keepsakes")).toHaveLength(1);
+  });
+
   it("says plainly when nothing is eligible, and shows the pitch", async () => {
     await show();
     fireEvent.click(screen.getByRole("button", { name: "Find Our First Adventure" }));

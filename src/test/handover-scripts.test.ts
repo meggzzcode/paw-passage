@@ -111,21 +111,29 @@ describe("premium-import.mjs --dir", () => {
     ).toContain("Folder not found");
   });
 
-  it("content/premium is an accepted folder (checked read-only: nothing is created or written)", () => {
-    const had = existsSync(join(REPO, "content", "premium"));
-    if (had) {
-      const r = run("premium-import.mjs", [
-        "--dir",
-        join(REPO, "content", "premium"),
-        "--env",
-        "preview",
-      ]);
-      expect(r.err).not.toContain("outside the repository");
-    } else {
-      // folder absent: the error is "not found", not the in-repo refusal
-      const r = run("premium-import.mjs", ["--dir", join(REPO, "content", "premium")]);
-      expect(r.err).toContain("Folder not found");
+  it("content/premium is still the one accepted in-repo folder (git-ignored local working copy): not refused as in-repo", () => {
+    // Absent in a clean checkout (the premium text is not tracked): the error must be "not found", never the in-repo refusal.
+    const target = join(REPO, "content", "premium");
+    const r = run("premium-import.mjs", ["--dir", target, "--env", "preview"]);
+    expect(r.err).not.toContain("outside the repository");
+    if (!existsSync(target)) expect(r.err).toContain("Folder not found");
+  });
+
+  it("without --dir and without PREMIUM_DIR it stops with an explicit message; PREMIUM_DIR is honored", () => {
+    for (const script of ["premium-import.mjs", "premium-split.mjs"]) {
+      const r = run(script, script === "premium-split.mjs" ? ["--file", "x.json"] : []);
+      expect(r.code, script).toBe(2);
+      expect(r.err, script).toContain("PREMIUM_DIR");
+      expect(r.err, script).toContain("not stored in this repository");
     }
+    const d = tmp();
+    fill(d);
+    const out = execFileSync("node", [join(REPO, "scripts", "premium-import.mjs")], {
+      stdio: "pipe",
+      env: { PATH: process.env["PATH"] ?? "", HOME: tmpdir(), PREMIUM_DIR: d },
+    }).toString();
+    expect(out).toContain(`Validated ${syntheticPremium.length} premium adventures`);
+    expect(out).toContain("Dry run");
   });
 });
 

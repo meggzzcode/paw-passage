@@ -68,7 +68,7 @@ Common SERP pattern: results are pet-brand and retailer blogs (Rover, Chewy, Dog
 - Observed competition: results for this exact query are general "fun things" lists (Best Friends, Chewy 25 things, Care.com 101, Dogster, Fatherly, Hepper, AOL). Few treat cost honestly; some include camping or paid venues. Gap: honest definition of free (free to do versus fees to reach) and a strict use-what-you-own list.
 - Angle: free to complete, hidden-cost notes, and a clear statement that free to do is not free access to the product.
 - Collection `adventures-without-spending`; CTA `no-spend`; related: things-to-do-with-your-dog-at-home, things-to-do-with-your-dog-this-weekend.
-- Count check (2026-11-26): `content/premium/*.json` has 99 cards, all published, 58 with costMax 0; `content/adventures/*.yml` has 14 published, 12 with costMax 0. That is 70 free-to-do adventures across the combined library on this date. The page deliberately says "a large number" and does not hard-code it. Note `adventures-without-spending` itself has only 1 card tagged to it; do not claim it holds the free ones.
+- Count check (2026-11-26): the premium folder (protected package) had 99 cards, all published, 58 with costMax 0; `content/adventures/*.yml` has 14 published, 12 with costMax 0. That is 70 free-to-do adventures across the combined library on this date. The page deliberately says "a large number" and does not hard-code it. Note `adventures-without-spending` itself has only 1 card tagged to it; do not claim it holds the free ones.
 
 ### 6. Activities to bond with your dog
 

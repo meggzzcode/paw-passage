@@ -276,6 +276,9 @@ describe("keepsake creation is paid", () => {
     await screen.findByText("How it goes");
     fireEvent.click(screen.getByRole("button", { name: "Collect it" }));
     await screen.findByRole("heading", { name: "Your first stamp" });
+    // the explainer appears once, inside the card, when the visitor opens the keepsake style
+    expect(screen.queryByLabelText("About personalized keepsakes")).toBeNull();
+    fireEvent.click(screen.getByRole("button", { name: "See the keepsake style" }));
     expect(screen.getByLabelText("About personalized keepsakes")).toBeInTheDocument();
     expect(container.querySelector('input[type="file"]')).toBeNull();
   });

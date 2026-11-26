@@ -18,12 +18,15 @@ describe("handover documents", () => {
     expect(read("docs/CONTENT-GUIDE.md")).toContain("content/premium");
   });
 
-  it("states plainly that premium text is in a public repo and the buyer owns payout and identity", () => {
+  it("states plainly that premium text remains in public Git history, points to the exposure record, and the buyer owns payout and identity", () => {
     for (const t of [transfer, workflow]) {
       expect(t).toMatch(/PUBLIC/);
-      expect(t).toMatch(/make the repository private/i);
-      expect(t).toMatch(/forks and clones/i);
+      expect(t).toContain("HISTORICAL-EXPOSURE.md");
+      expect(t).toMatch(/does not remove (?:them from )?(?:Git )?history/i);
     }
+    expect(transfer).toMatch(/forks and clones/i);
+    expect(existsSync("docs/HISTORICAL-EXPOSURE.md")).toBe(true);
+    expect(read("docs/HISTORICAL-EXPOSURE.md")).toMatch(/does not remove them from Git history/);
     expect(transfer).toMatch(/buyer must set up their own Gumroad payout and identity/);
     expect(transfer).toMatch(/not legal advice/i);
     expect(transfer).toMatch(/Trademark clearance for "Paws & Passage" is NOT verified/);
@@ -43,7 +46,8 @@ describe("handover documents", () => {
   });
 
   it("the workflow documents the --dir flow, backup before import, and an Action with a manual write gate", () => {
-    expect(workflow).toContain("premium-import.mjs --dir content/premium");
+    expect(workflow).toContain("premium-import.mjs --dir");
+    expect(workflow).toContain("PREMIUM_DIR");
     expect(workflow).toContain("premium-export.mjs --dir");
     expect(workflow).toMatch(/workflow_dispatch/);
     expect(workflow).toMatch(/OWNER MUST REVIEW BEFORE ENABLING/);

@@ -2,18 +2,19 @@
 
 How the paid adventure library is edited, checked, backed up and loaded into the live store, written so a non-technical owner or buyer can follow it. Nothing here needs a developer except the optional GitHub Action (section 7). No secret, license code or customer detail belongs in this file or anywhere in the repository.
 
-## 0. Read this first: where the premium text lives today
+## 0. Read this first: where the premium text lives now
 
-**By the owner's decision of 2026-11-26, the premium adventures are stored in THIS repository, in `content/premium/`, one JSON file per adventure, and the repository is still PUBLIC.** Anyone on the internet can read a public repository, including its history and any fork or clone. So:
+**By the owner's directive of 2026-11-26, the premium adventure text is NOT tracked in this repository any more.** The 99 premium adventure JSON files were removed from the current source tree (`content/premium/*.json` is git-ignored; a test fails if one is ever tracked again). What stays public: marketing previews (teasers, never instructions), the schema, free adventures and synthetic test fixtures.
 
-- The paid library is **protected only once the repository is made private.** Until then the files are readable by anyone who looks.
-- The website itself is safe from this folder: the site build never reads, watches or bundles `content/premium/` (the content plugin skips it, no import glob can match it, and `src/test/handover-premium-isolation.test.ts` fails if that changes). Customers receive premium text only from the server, after a purchase.
-- **Next step: make the repository private, then check forks and clones** (checklist in section 1). Do this before any real marketing, and before sharing the repository with a buyer.
-- Making a repository private later does not erase what was public before. Assume anyone who cloned or forked it while it was public still has a copy. The business answer to that is the owner's call; this document only records the fact.
+**Removing the files does not remove them from Git history.** They were committed earlier (first `195d159`, then `c776905`) to a PUBLIC repository, are in the history of `main` and `claude/lucid-davinci-l2fixa`, and may exist in forks, clones, caches and search indexes. The facts and the owner's options (private repository, history rewrite, a new clean repository, or accepting the exposure) are in **`docs/HISTORICAL-EXPOSURE.md`**. That decision is the owner's; nothing here changes repository visibility or rewrites history.
+
+- The website never reads premium text from the repository: the content plugin skips `content/premium/`, no import glob can match it, and `src/test/handover-premium-isolation.test.ts` fails if that changes. Customers receive premium text only from the server, after a purchase.
+- Scripts and tests that need the real library take its folder from `--dir <folder>` or the environment variable `PREMIUM_DIR`. There is no default folder. Without it, scripts that need premium data stop with an explicit message, and `library-stats` and the Journal overlap check run in a clearly labelled free-only (partial) mode.
+- Real premium content is loaded into a store only in a protected environment, after the owner authorizes it. An undisclosed URL is not access control.
 
 ## 0a. The protected content package (authoritative copy)
 
-**The protected package is the authoritative copy of the paid library.** To be plain about the current risk: `content/premium/` in the PUBLIC repository **currently also holds the premium text**, by the owner's earlier decision. Until the repository is private, that text is readable by anyone, including through history, forks and clones. **Recommended next step: make the repository private and check forks (section 1), and commit no further premium text.** Treat the package, not the repository folder, as the source of truth for restores and transfers.
+**The protected package is the authoritative copy of the paid library.** The repository no longer tracks the text (section 0), but old history still contains it (`docs/HISTORICAL-EXPOSURE.md`). **Commit no further premium text.** Treat the package, never the repository, as the source of truth for restores and transfers.
 
 | Item       | Value                                                                                                                                                                                                                          |
 | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -21,7 +22,7 @@ How the paid adventure library is edited, checked, backed up and loaded into the
 | Current    | `premium-2026-11-26-1` (99 adventures, 50 showcase previews, 25 collections in the library)                                                                                                                                    |
 | Drive copy | Google Drive file id `16_18luRbxED1OLmYAfyJQGx4UMO2xp4Z`, `premium-package-premium-2026-11-26-1.zip`, folder id `1quEq2z0rfSUeA4SpHCyezaL2wZQhxFuc`; sha256 `d83e792ea577e477f8db9180e5fe7a0571bc63606fd711acc7f493b3362a1900` |
 
-What is inside: `premium-import.json` (one array), `adventures/` (one file per adventure, the `content/premium` layout), `public-previews.json`, `collections.json`, `keepsake-configs.json` (per card family, theme, headline, subhead, explainer, plus the registered theme ids), `validation-report.txt` (the exact dry-run output), `MANIFEST.json` (version, date, git commit, sha256 of every file, counts), `IMPORT.md` and `EXPORT-RECOVERY.md`.
+What is inside: `premium-import.json` (one array), `adventures/` (one file per adventure; point `PREMIUM_DIR` here), `public-previews.json`, `collections.json`, `keepsake-configs.json` (per card family, theme, headline, subhead, explainer, plus the registered theme ids), `validation-report.txt` (the exact dry-run output), `MANIFEST.json` (version, date, git commit, sha256 of every file, counts), `IMPORT.md` and `EXPORT-RECOVERY.md`.
 
 - **Access:** open the Drive file (it is private to the Drive account that owns it; share it only with someone you trust) or use the local folder. Check the zip against its `.sha256` file and the files against `MANIFEST.json`.
 - **Update:** change adventures where you keep them, then from the repository run `node scripts/premium-package.mjs --out <folder outside the repo>`. It validates with the real schema through the import script's dry run, writes the next numbered version (`premium-<date>-<n>`), never writes to any store and refuses to write inside the repository. Upload the new zip to Drive and update the table above.
@@ -29,42 +30,29 @@ What is inside: `premium-import.json` (one array), `adventures/` (one file per a
 - **Transfer to a new owner:** hand over the zip and its sha256 privately; they follow `IMPORT.md` with their own store credentials. Details in `EXPORT-RECOVERY.md`.
 - The package holds adventure text only: no customer data, no secrets. Keep it private anyway.
 
-## 1. One-time checklist: make the repository private
+## 1. Historical exposure: owner decision needed
 
-Do these in order, on GitHub, as the repository owner.
-
-1. **Check visibility now.** Repository, Settings, General, "Danger Zone" shows "Change repository visibility". Note today's visibility and the date.
-2. **Check forks and clones.** Repository, Insights, Forks (or the "Forks" count on the front page) lists public forks. A private repository's public forks stay public and detached; ask each fork owner to delete theirs or report them to GitHub if they hold the paid text. You cannot see private local clones; treat any past clone as existing.
-3. **Make it private.** Settings, General, Danger Zone, "Change visibility", "Make private". Read the warning: stars and watchers are lost, GitHub Pages (if used) is affected, Actions minutes become metered by plan.
-4. **Confirm Pages CMS access.** Pages CMS signs in with GitHub. Open the CMS as the owner and confirm the repository still opens and the free menus work (the "Adventures (premium)" menu is OFF by default, see section 3). Any other person who edits must be added as a repository collaborator (Settings, Collaborators) first.
-5. **Confirm Netlify can still build.** Netlify's GitHub connection needs access to private repositories. Trigger a deploy and confirm it succeeds. If it fails with an access error, re-authorize the Netlify GitHub app for this repository.
-6. **Rotate nothing.** No secret is stored in the repository, so making it private requires no rotation. (Rotation rules for a sale are in `OWNERSHIP-TRANSFER.md`.)
-7. **Run the leak check on a build.** A developer or the owner, with Node 22.18 or newer: `npm ci`, `npm run build`, then `node scripts/check-leaks.mjs dist` (use the output folder the build reports if it is different). It must say "Leak check passed". It proves the build output carries no premium text; it cannot judge the repository itself.
-8. **Record it.** Write the date and the result under "Repository visibility" in your own notes (not in the repository).
+The remediation options, their trade-offs and exactly which steps need the owner's separate approval are in `docs/HISTORICAL-EXPOSURE.md` (recommended: option C, a new clean public repository, possibly with option A applied to the old repository). The old checklist for making the repository private now lives there as option A. Whatever is chosen, run the leak check on every build (section 5a).
 
 ## 2. The folder and the file format
 
 ```
-content/premium/
+<PREMIUM_DIR>/            (the package's adventures/ folder, or a git-ignored local copy in content/premium/)
   adv-k3m9x2.json
   adv-p4r8c1.json
   ... one file per premium adventure
 ```
 
-- **One JSON file per adventure, named exactly `<id>.json`** (for example `adv-k3m9x2.json`). The id is permanent and never edited. Sub-folders are allowed (for example by collection) and are read too; only `.json` files count, so `.gitkeep` or notes are ignored.
+- To make a LOCAL working copy in the repository folder (git-ignored): `mkdir -p content/premium && cp /home/user/premium-content/package/premium-2026-11-26-1/adventures/*.json content/premium/` (see `content/premium/README.md`). `git status` must stay clean.
+- **One JSON file per adventure, named exactly `<id>.json`** (for example `adv-k3m9x2.json`). The id is permanent and never edited. Sub-folders are allowed and are read too; only `.json` files count.
 - The file holds **one adventure object**, not a list. Its fields are exactly the adventure schema in `src/passport/schema.ts` (the same fields as a free adventure, with `"access": "premium"`).
 - `docs/CONTENT-GUIDE.md` explains how to write one. The rules there (no medical claims, honest classification, independent review scores) apply unchanged.
 
-## 3. Editing without a developer (Pages CMS)
+## 3. Editing (Pages CMS premium form stays OFF)
 
-**The premium form is OFF by default (owner decision OD2):** `.pages.yml` ships it commented out between `PREMIUM-CMS-SWITCH:BEGIN` and `PREMIUM-CMS-SWITCH:END`, so the menu does not exist until the owner turns it on, and every save while it is on commits premium text to the public repository. If it is switched on, Pages CMS has a menu **Adventures (premium)** that edits `content/premium/*.json` with a form listing every field, with drop-downs for every controlled choice. It is generated from, and tested against, the schema (`src/test/handover-cms.test.ts` fails if the form and the schema drift apart), so a new adventure made in the CMS passes the same checks as one written by hand.
+**The premium form is OFF and must stay off (owner decision OD2, reinforced by the 2026-11-26 directive):** `.pages.yml` ships it commented out between `PREMIUM-CMS-SWITCH:BEGIN` and `PREMIUM-CMS-SWITCH:END`. Pages CMS edits tracked files in the repository, and `content/premium/*.json` is git-ignored, so the form could only commit premium text again. Premium adventures are edited in the protected package folder (or a local working copy) with any editor, then validated with the dry run (section 5) and re-packaged (section 0a). The form is still generated from, and tested against, the schema (`src/test/handover-cms.test.ts`), so it cannot drift if the owner ever re-enables it after a remediation decision.
 
-1. With the switch on, open Pages CMS, choose **Adventures (premium)**, open an adventure (or "Add" for a new one).
-2. Change the fields. Every label says what it wants and its length limit.
-3. Save. This only saves a file in the repository. **It does not change the live store.** The paid library on the site changes only when you run the import (section 5).
-4. Leave `status` on `draft` until the adventure has been independently scored (see `CONTENT-GUIDE.md`, Scoring).
-
-Be aware: until the repository is private, a save here commits premium text to a public repository. Wait for section 1 before writing new premium content this way, or write it somewhere private and bring it in afterwards.
+Leave `status` on `draft` until the adventure has been independently scored (see `CONTENT-GUIDE.md`, Scoring).
 
 ## 4. Previews, showcase flags and teasers
 
@@ -82,30 +70,30 @@ Keep the showcase to roughly 50 cards across roles and collections. The dry run 
 
 ## 5. Validate and import
 
-All commands run on your own computer in the repository folder, with Node 22.18 or newer (`npm ci` once). The scripts are never deployed, are not web endpoints and are never run automatically on the live site.
+All commands run on your own computer in the repository folder, with Node 22.18 or newer (`npm ci` once). First `export PREMIUM_DIR=/home/user/premium-content/package/premium-2026-11-26-1/adventures` (or pass `--dir <folder>` each time). The scripts are never deployed, are not web endpoints and are never run automatically on the live site.
 
 **Step A: validate (dry run, the default, writes nothing, needs no password):**
 
 ```bash
-node scripts/premium-import.mjs --dir content/premium --env preview
+node scripts/premium-import.mjs --dir "$PREMIUM_DIR" --env preview
 ```
 
 It checks every file against the schema, that each file name equals the adventure id, that every adventure is `premium`, that ids are unique, builds the preview records and refuses a showcase card with a missing or mechanics-style teaser. It prints the totals, for example "Validated 120 premium adventures" and "Showcase previews: 50". Fix every line it complains about (each names the file and field) and run again until it passes.
 
 **Step B: back up first (this is your rollback).** Before any write, export what is live now (section 6).
 
-**Step C: write to the preview store and look at a preview deploy:**
+**Step C: write to the preview store and look at a preview deploy.** Ordinary preview integration testing should use SYNTHETIC content (`src/passport/fixtures/premium.synthetic.ts`); import the real library only into a protected environment after the owner authorizes it:
 
 ```bash
 export NETLIFY_AUTH_TOKEN=...   # a Netlify personal access token, typed in your terminal, never in a file
 export SITE_ID=...              # the site's API id
-node scripts/premium-import.mjs --dir content/premium --env preview --write
+node scripts/premium-import.mjs --dir "$PREMIUM_DIR" --env preview --write
 ```
 
 **Step D: write to the live store only when satisfied:**
 
 ```bash
-node scripts/premium-import.mjs --dir content/premium --env production --write --yes-production
+node scripts/premium-import.mjs --dir "$PREMIUM_DIR" --env production --write --yes-production
 ```
 
 `--prune` also deletes stored adventures that are no longer in the folder; use it only deliberately (it is how a retired adventure leaves the paid library). Nothing is ever written unless `--write` is typed.
@@ -114,13 +102,13 @@ The older single-file mode (`--file <one JSON array>`) still works. To convert a
 
 ## 6. Back up and roll back
 
-**The backup rule:** export the live store to files before every import that writes to production, keep at least the last three exports, and also keep a dated export once a quarter. Store backups outside the public repository (an encrypted drive or a private cloud folder). The repository's own history is a second copy only once it is private.
+**The backup rule:** export the live store to files before every import that writes to production, keep at least the last three exports, and also keep a dated export once a quarter. Store backups outside the public repository (an encrypted drive or a private cloud folder). The repository is not a backup of the premium text.
 
 ```bash
 node scripts/premium-export.mjs --dir ~/premium-backups/2026-12-01 --env production
 ```
 
-This writes one `<id>.json` per live adventure into a new folder (it refuses to overwrite existing files unless `--overwrite`). The folder must be outside the repository, or exactly `content/premium`. The older single-file form `--out <file>` still works.
+This writes one `<id>.json` per live adventure into a new folder (it refuses to overwrite existing files unless `--overwrite`). The folder must be outside the repository, or exactly `content/premium` (a git-ignored local working copy). The older single-file form `--out <file>` still works.
 
 **Rollback:** the export folder has the same layout the import reads, so rolling back is an import of the backup:
 
@@ -131,11 +119,11 @@ node scripts/premium-import.mjs --dir ~/premium-backups/2026-12-01 --env product
 
 `--prune` here removes adventures that were added after the backup. Run a dry run first and read the counts.
 
-**To fill `content/premium/` from the live store (or to restore it):** `node scripts/premium-export.mjs --dir content/premium --env production` (add `--overwrite` to refresh existing files).
+**To fill a local working copy from the live store:** `node scripts/premium-export.mjs --dir content/premium --env production` (git-ignored; add `--overwrite` to refresh existing files), or restore it from the package (`content/premium/README.md`).
 
 ## 7. Optional: GitHub Action for review and approved imports
 
-This is optional and works only once the repository is private (a workflow that writes to the live store must never run in a public repository). Put the file below at `.github/workflows/premium-import.yml`. It costs nothing beyond the GitHub free tier (private repositories have a monthly allowance of free Actions minutes; the amount is **UNVERIFIED** here, check GitHub's current plan page). It makes three promises:
+This is optional, **not usable as written while premium text is untracked** (the workflow below checks out files that no longer exist in the public repository), and works only in a PRIVATE repository that tracks premium text, such as the one in section 8 or option A/C of `HISTORICAL-EXPOSURE.md`. A workflow that writes to the live store must never run in a public repository. It is kept as a template only. Put the file below at `.github/workflows/premium-import.yml`. It costs nothing beyond the GitHub free tier (private repositories have a monthly allowance of free Actions minutes; the amount is **UNVERIFIED** here, check GitHub's current plan page). It makes three promises:
 
 - On a pull request that changes `content/premium/`, it runs the **dry run only**, with no secrets.
 - It writes to a store only when a person manually starts it and, for production, types the word `production` and the run is approved by a reviewer you set up on a GitHub Environment (reviewer rules on private repositories may need a paid GitHub plan: **UNVERIFIED**; without them, the typed confirmation is the only gate).
@@ -204,7 +192,7 @@ jobs:
           retention-days: 14
       - name: Write preview
         if: inputs.target == 'preview'
-        run: node scripts/premium-import.mjs --dir content/premium --env preview --write
+        run: node scripts/premium-import.mjs --dir "$PREMIUM_DIR" --env preview --write
       - name: Write production
         if: inputs.target == 'production' && inputs.confirm == 'production'
         run: node scripts/premium-import.mjs --dir content/premium --env production --write --yes-production
@@ -212,17 +200,27 @@ jobs:
 
 Notes: the dry run never needs credentials. The export step needs them, so it runs only in the approved job. Pull requests from forks never receive secrets. The Action never uses `--prune`; retiring an adventure is a deliberate local step (section 5). The upload step stores premium text as a private run artifact; it is private only if the repository is private.
 
-## 8. Alternative (kept short): a separate private repository
+## 8. Recommended layout for CMS editing: a separate private repository
 
-If you would rather keep premium text out of the website's repository entirely, create a private GitHub repository (suggested name `premium-content-private`), put the same `content/premium/*.json` layout in it, copy the "Adventures (premium)" block from `.pages.yml` into that repository's own `.pages.yml` (change nothing but, if you like, the path), and run `node <path to site repo>/scripts/premium-import.mjs --dir <folder in the private repo>` from a checkout of both. The scripts accept any folder outside the website repository. This is the safer layout for a public website repository, and the one to choose if the website repository is ever meant to stay public.
+This is now the recommended layout (premium text is out of the website repository). Create a private GitHub repository (suggested name `premium-content-private`), put the same `content/premium/*.json` layout in it, copy the "Adventures (premium)" block from `.pages.yml` into that repository's own `.pages.yml` (change nothing but, if you like, the path), and run `node <path to site repo>/scripts/premium-import.mjs --dir <folder in the private repo>` from a checkout of both. The scripts accept any folder outside the website repository. The website repository stays free of premium text.
 
 ## 9. Who does what
 
-| Task                                       | Non-technical owner or buyer        | Developer                     |
-| ------------------------------------------ | ----------------------------------- | ----------------------------- |
-| Edit or add a premium adventure in the CMS | Yes                                 |                               |
-| Run the dry run, read its messages         | Yes (copy and paste commands)       |                               |
-| Export a backup, run an import             | Yes, with the commands above        |                               |
-| Make the repository private (section 1)    | Yes                                 |                               |
-| Enable and review the GitHub Action        | Owner reviews; developer sets it up | Recommended                   |
-| Change the schema or the CMS form          |                                     | Yes (tests keep them in step) |
+| Task                                                   | Non-technical owner or buyer        | Developer                     |
+| ------------------------------------------------------ | ----------------------------------- | ----------------------------- |
+| Edit or add a premium adventure in the CMS             | Yes                                 |                               |
+| Run the dry run, read its messages                     | Yes (copy and paste commands)       |                               |
+| Export a backup, run an import                         | Yes, with the commands above        |                               |
+| Decide the historical-exposure remediation (section 1) | Yes (owner only)                    |                               |
+| Enable and review the GitHub Action                    | Owner reviews; developer sets it up | Recommended                   |
+| Change the schema or the CMS form                      |                                     | Yes (tests keep them in step) |
+
+## 5a. Leak scans (owner-machine checks)
+
+Two checks need the real library and so run only where `PREMIUM_DIR` is set (the tests skip visibly otherwise, `docs/PREMIUM-INTEGRATION-TESTS.md`):
+
+```bash
+export PREMIUM_DIR=/home/user/premium-content/package/premium-2026-11-26-1/adventures
+node scripts/validate-journal.mjs                      # includes the Journal vs premium sentence-overlap rule
+node scripts/check-leaks.mjs dist --premium-dir "$PREMIUM_DIR"   # after a build: real titles, instructions, twist, safety text
+```

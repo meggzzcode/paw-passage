@@ -48,7 +48,7 @@ therefore assumes 1 GB of memory and counts every request.
 
 | Item                         | Value                                                                                                                     | Basis                                                                        |
 | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| Premium library, JSON        | 504,863 bytes (99 records)                                                                                                | MEASURED, `content/premium/*.json` wrapped as the endpoint returns it        |
+| Premium library, JSON        | 504,863 bytes (99 records)                                                                                                | MEASURED, the premium package files wrapped as the endpoint returns it       |
 | Premium library, gzip        | 136,399 bytes                                                                                                             | MEASURED (brotli 108,338). Assumes the CDN compresses the response: ESTIMATE |
 | Library fetched              | every app open of a signed-in customer                                                                                    | `premium-client.ts` holds it in memory only, never in storage                |
 | Blob reads per library fetch | 100 (index + one per adventure)                                                                                           | MEASURED, `readPremium` in `store.ts`                                        |

@@ -48,6 +48,7 @@ function server(over: { entitled?: boolean; save?: Save } = {}) {
     urls: [] as string[],
     puts: 0,
     deleted: false,
+    signedOut: false,
     exports: 0,
     lastBodies: [] as { path: string; body: unknown; csrf: string | null }[],
   };
@@ -92,6 +93,10 @@ function server(over: { entitled?: boolean; save?: Save } = {}) {
       case "POST /api/account/export":
         s.exports++;
         return new Response(JSON.stringify({ progress: s.save }), { status: 200 });
+      case "POST /api/session/signout":
+        s.signedOut = true;
+        s.authenticated = false;
+        return r(200, { ok: true });
       case "POST /api/account/delete":
         if (body?.confirm !== "DELETE") return r(400, { ok: false });
         s.deleted = true;
@@ -425,6 +430,62 @@ describe("account panel", () => {
     act(() => completeAdventure("adv-aaa222", 2000));
     await settle();
     expect(srv.fn.mock.calls.length).toBe(n);
+  });
+
+  it("sign out asks first, posts with the CSRF header, then resets entitlement, flag and library but keeps device progress", async () => {
+    flag();
+    install(server());
+    completeAdventure("adv-aaa111", 1000);
+    await renderUi(
+      <>
+        <PassportRuntime />
+        <AccountPanel />
+        <Probe />
+      </>,
+    );
+    await waitFor(() => expect(screen.getByTestId("unlocked").textContent).toBe("true"));
+    fireEvent.click(screen.getByRole("button", { name: "Sign out of this device" }));
+    expect(srv.s.signedOut).toBe(false); // needs a second, explicit click
+    expect(screen.getByText(/Your progress stays on this device/)).toBeInTheDocument();
+    expect(screen.getByText(/Restore access/)).toBeInTheDocument();
+    fireEvent.click(screen.getByRole("button", { name: "Yes, sign out of this device" }));
+    await waitFor(() => expect(srv.s.signedOut).toBe(true));
+    const call = srv.s.lastBodies.find((b) => b.path === "/api/session/signout")!;
+    expect(call.csrf).toBe("csrf-1");
+    expect(call.body).toEqual({});
+    expect(
+      await screen.findByText(/Signed out of this device\. Your progress is still here/),
+    ).toBeInTheDocument();
+    expect(getEntitlement()).toMatchObject({
+      status: "free",
+      premium: [],
+      signedIn: false,
+      csrf: "",
+    });
+    expect(window.localStorage.getItem(ACCOUNT_FLAG)).toBeNull();
+    expect(screen.getByTestId("unlocked").textContent).toBe("false");
+    expect(titles("all")).not.toContain("Lighthouse Secret Walk");
+    expect(has(getSave().done, "adv-aaa111")).toBe(true);
+    expect(srv.s.deleted).toBe(false); // the server copy is not deleted
+    const n = srv.fn.mock.calls.length;
+    act(() => completeAdventure("adv-aaa222", 2000));
+    await settle();
+    expect(srv.fn.mock.calls.length).toBe(n); // sync stopped
+    expect(window.location.href).not.toMatch(/code|key|token/i);
+  });
+
+  it("sign out still works locally when the site cannot be reached, and says so", async () => {
+    flag();
+    install(server());
+    await renderUi(<AccountPanel />);
+    fireEvent.click(await screen.findByRole("button", { name: "Sign out of this device" }));
+    srv.s.offline = true;
+    fireEvent.click(screen.getByRole("button", { name: "Yes, sign out of this device" }));
+    expect(
+      await screen.findByText(/couldn't reach the site to clear the sign-in cookie/),
+    ).toBeInTheDocument();
+    expect(getEntitlement().status).toBe("free");
+    expect(window.localStorage.getItem(ACCOUNT_FLAG)).toBeNull();
   });
 
   it("a failed delete says so and keeps the account", async () => {

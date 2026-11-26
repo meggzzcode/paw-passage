@@ -127,6 +127,7 @@ export function createApi(deps: ApiDeps) {
     const method = req.method.toUpperCase();
     const routes: Record<string, string[]> = {
       "/api/session": ["GET"],
+      "/api/session/signout": ["POST"],
       "/api/access/activate": ["POST"],
       "/api/access/restore": ["POST"],
       "/api/progress": ["GET", "PUT"],
@@ -193,6 +194,17 @@ export function createApi(deps: ApiDeps) {
         );
 
       const session = verifySession(secret, readCookie(req.headers.get("cookie"), COOKIE), now());
+      // Sign out of THIS device: clears the cookie only. Sessions are stateless signed cookies, so no store is touched
+      // and other devices are not signed out. Idempotent: with no valid session there is nothing to protect, so it
+      // still clears whatever cookie arrived and answers ok. With a valid session the CSRF token is required.
+      if (path === "/api/session/signout") {
+        if (session) {
+          const sent = req.headers.get(CSRF_HEADER) ?? "";
+          const want = csrfFor(secret, session);
+          if (!sent || sent.length !== want.length || sent !== want) return fail(403, "bad_csrf");
+        }
+        return json(200, { ok: true }, {}, [clearCookie()]);
+      }
       if (!session)
         return fail(
           401,

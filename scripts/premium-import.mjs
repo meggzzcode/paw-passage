@@ -6,9 +6,10 @@
 //   NETLIFY_AUTH_TOKEN=... SITE_ID=... node scripts/premium-import.mjs --file ~/private/premium.json --env preview --write  # writes
 //   add --env production --write --yes-production to touch the live store; add --prune to delete adventures not in the file.
 //
-// --dir <folder> instead of --file: one JSON file per adventure (<id>.json, any sub-folders). Standard path in the single-repo
-// workflow: --dir content/premium (tracked in this repo by the owner decision; docs/PREMIUM-CONTENT-WORKFLOW.md). Same validation, same dry-run default.
-// The file is a JSON array of adventures (schema: src/passport/schema.ts), kept OUTSIDE git. Paths inside this repo are refused.
+// --dir <folder> instead of --file: one JSON file per adventure (<id>.json, any sub-folders). The folder comes from --dir or the
+// environment variable PREMIUM_DIR (no default: premium text is not tracked in this repository). Use the adventures/ folder of the
+// protected package, or a git-ignored local working copy in content/premium (content/premium/README.md). Same validation, same dry-run default.
+// The file is a JSON array of adventures (schema: src/passport/schema.ts), kept OUTSIDE git. Paths inside this repo are refused (except content/premium).
 // Public previews: cards flagged showcase:true are projected (allowlist, src/server/passport/previews.ts) into `previews/index`,
 // together with library totals and structural match fields for every published card (free ones are read from content/adventures).
 // A showcase card with no teaser, or a teaser that explains mechanics, is REFUSED. The dry run reports the showcase count.
@@ -18,7 +19,12 @@ import { dirname, join, resolve, sep } from "node:path";
 import { fileURLToPath } from "node:url";
 import { getStore } from "@netlify/blobs";
 import { parse as parseYaml } from "yaml";
-import { readPremiumDir, resolvePremiumDir } from "./premium-dir-lib.mjs";
+import {
+  NO_PREMIUM_DIR_MESSAGE,
+  premiumDirFromArgs,
+  readPremiumDir,
+  resolvePremiumDir,
+} from "./premium-dir-lib.mjs";
 import { adventureSchema, validateLibrary } from "../src/passport/schema.ts";
 import { buildPreviewIndex, PREVIEW_INDEX_KEY } from "../src/server/passport/previews.ts";
 
@@ -31,12 +37,17 @@ const die = (m, c = 2) => {
   process.exit(c);
 };
 
-const dirOpt = opt("--dir");
+let dirOpt;
+try {
+  dirOpt = opt("--file") ? opt("--dir") : premiumDirFromArgs(args);
+} catch (e) {
+  die(e instanceof Error ? e.message : "bad --dir");
+}
 if (dirOpt && opt("--file")) die("Use either --file or --dir, not both.");
 const file =
   dirOpt ??
   opt("--file") ??
-  die("Missing --file <path to premium JSON outside the repo> or --dir <folder>");
+  die(`Missing --file <premium JSON array> or --dir <folder>. ${NO_PREMIUM_DIR_MESSAGE}`);
 const env = opt("--env") ?? "preview";
 if (!["preview", "production"].includes(env)) die("--env must be preview or production");
 let abs;

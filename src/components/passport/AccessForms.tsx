@@ -10,6 +10,7 @@ import { track } from "@/passport/events";
 import {
   deleteAccount,
   exportAccount,
+  signOutRequest,
   submitAccessCode,
   type AccessFailure,
   type AccessKind,
@@ -132,7 +133,23 @@ export function AccountPanel() {
   const ent = useEntitlement();
   const [msg, setMsg] = useState("");
   const [askDelete, setAskDelete] = useState(false);
-  if (!ent.signedIn) return null;
+  const [askSignOut, setAskSignOut] = useState(false);
+  const [outMsg, setOutMsg] = useState("");
+  if (!ent.signedIn && !outMsg) return null;
+  if (!ent.signedIn)
+    return (
+      <section className="pa-panel" aria-labelledby="acct-h">
+        <h2 id="acct-h" className="pa-h">
+          Full Passport account
+        </h2>
+        <p role="status">{outMsg}</p>
+        <p className="pa-row">
+          <AppLink to="/restore-access" className="pp-btn pp-btn-secondary">
+            Restore access
+          </AppLink>
+        </p>
+      </section>
+    );
   /** Calls the API; if the token went stale, fetches a fresh one and tries once more. */
   async function withCsrf<T>(run: (csrf: string) => Promise<T | null | false>): Promise<T | null> {
     const first = await run(ent.csrf);
@@ -195,6 +212,51 @@ export function AccountPanel() {
               onClick={() => setAskDelete(false)}
             >
               Keep it
+            </button>
+          </>
+        )}
+      </div>
+      <div className="pa-row">
+        {!askSignOut ? (
+          <button type="button" className="pp-btn pp-btn-ghost" onClick={() => setAskSignOut(true)}>
+            Sign out of this device
+          </button>
+        ) : (
+          <>
+            <p className="pa-fine" id="signout-note">
+              Your progress stays on this device. This only signs this device out of the full
+              Passport and hides the premium adventures here; it does not sign out other devices.
+              Sign back in anytime with your purchase code via Restore access.
+            </p>
+            <button
+              type="button"
+              className="pp-btn pp-btn-primary"
+              aria-describedby="signout-note"
+              onClick={async () => {
+                // Best effort: the server clears the cookie; the device signs out locally whatever the answer.
+                // A stale CSRF token gets one fresh-token retry.
+                let ok = await signOutRequest(ent.csrf);
+                if (!ok) {
+                  const csrf = await refreshCsrf();
+                  if (csrf) ok = await signOutRequest(csrf);
+                }
+                setAskSignOut(false);
+                clearEntitlement(); // flag, in-memory premium library and sync all reset; local progress untouched
+                setOutMsg(
+                  ok
+                    ? "Signed out of this device. Your progress is still here. Sign back in anytime with your purchase code via Restore access."
+                    : "Signed out on this device. We couldn't reach the site to clear the sign-in cookie, so it may still be valid until it expires. Your progress is still here.",
+                );
+              }}
+            >
+              Yes, sign out of this device
+            </button>
+            <button
+              type="button"
+              className="pp-btn pp-btn-secondary"
+              onClick={() => setAskSignOut(false)}
+            >
+              Stay signed in
             </button>
           </>
         )}

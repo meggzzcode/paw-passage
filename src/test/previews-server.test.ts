@@ -449,7 +449,7 @@ describe("leak scans", () => {
     ])
       markers.add(t);
   }
-  // content/premium/ is the owner-approved home of the real premium JSON (one file per adventure). It is never read by the site
+  // content/premium/ may hold a git-ignored LOCAL working copy of the real premium JSON (not tracked). It is never read by the site
   // build (see src/test/handover-premium-isolation.test.ts); the public bundle is protected by scripts/check-leaks.mjs on dist/.
   it("no premium text marker appears in src/, public/ or content/ (fixtures, tests and content/premium excluded)", () => {
     const hits: string[] = [];

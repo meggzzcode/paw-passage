@@ -382,6 +382,9 @@ function score(
     if (steps >= GENTLE_NOTE_MIN) note(steps * GENTLE_STEP, GENTLE_START_NOTE);
     else s += steps * GENTLE_STEP;
   }
+  // Children joining is a preference (a hard filter only in the strict pass of the free quiz): family-suited adventures
+  // still rank first when it was set aside by "widen".
+  if (owner.kids && a.household.includes("family")) note(2, "Suited to families with children");
   if (a.reservation.needed) notes.push({ w: 0, text: "Needs a booking ahead" });
 
   const fb = h.feedback?.[a.id];

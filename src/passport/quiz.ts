@@ -262,8 +262,8 @@ export function applyAnswers(
 
 /**
  * Today's filters from the owner's quiz answers, through the existing SessionFilters mechanism.
- * `relax` drops only the OPTIONAL preferences (where, time, spend). What the owner told us about the household (no car,
- * quiet, children joining) stays, and so does every hard suitability rule in the engine.
+ * `relax` drops only the OPTIONAL preferences (where, time, spend, children joining). No car and quiet stay, and so does
+ * every hard suitability rule in the engine (life stage, mobility, noise/crowd/dogs, food, water).
  */
 export function starterFilters(owner: OwnerPrefs, opts: { relax?: boolean } = {}): SessionFilters {
   const f: SessionFilters = {};
@@ -280,7 +280,9 @@ export function starterFilters(owner: OwnerPrefs, opts: { relax?: boolean } = {}
   }
   if (owner.hasCar === "no") f.transport = "none-or-walk";
   if (owner.quiet) f.quiet = true;
-  if (owner.kids) f.household = ["family"];
+  // Children joining is an optional preference: it narrows the list, and "widen" can set it aside. The engine still
+  // prefers family-friendly adventures when it is set (see `score`). Hard suitability is never relaxed.
+  if (owner.kids && !opts.relax) f.household = ["family"];
   return f;
 }
 

@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import { readFileSync, readdirSync, statSync } from "node:fs";
 import { join } from "node:path";
 
-// The paid library lives in content/premium/ (one JSON per adventure). The website build must never read, glob, watch or
+// The paid library is NOT tracked; a git-ignored local working copy may sit in content/premium/ (one JSON per adventure). The website build must never read, glob, watch or
 // bundle it. This test builds nothing: it asserts the source of every build-time reader excludes that folder.
 const REPO = process.cwd();
 const walk = (d: string): string[] =>

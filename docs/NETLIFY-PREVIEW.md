@@ -10,7 +10,7 @@ Run on this branch with `rm -rf dist .netlify .output && NITRO_PRESET=netlify np
 - Server-rendered pages: `.netlify/functions-internal/server/` (a Nitro function that answers `/*`, `preferStatic: true`, `excludedPath: /.netlify/*`). `.output/` is not produced.
 - Nitro wrote `dist/_headers` (only the `/assets/*` cache rule) and an empty `dist/_redirects`. The real redirects, 410s and security headers come from `netlify.toml` (46 rules answering 410 to `/gone.html`, 10 rules answering 301; all `force = true`). `netlify.toml` rules are read by Netlify at deploy time; they are not visible in `dist`. **UNVERIFIED until a deploy.**
 - `netlify/functions/api.ts` bundles (esbuild, node, about 870 KB) and declares `config.path` for 18 `/api/...` routes. `push-deliver.ts` bundles and has no schedule (paused). Netlify bundles these itself at deploy; the local esbuild run only proves the imports resolve.
-- Leak scan: `node scripts/check-leaks.mjs dist` and `node scripts/check-leaks.mjs .netlify` both pass (synthetic markers only). An extra local scan against the real `content/premium` text found none in `dist` or `.netlify`; it did find one premium adventure id inside the home/discover bundle because a collection lists it by id (an id only, no text).
+- Leak scan: `node scripts/check-leaks.mjs dist` and `node scripts/check-leaks.mjs .netlify` both pass (synthetic markers only). An extra local scan against the real premium text (`--premium-dir`) found none in `dist` or `.netlify`; it did find one premium adventure id inside the home/discover bundle because a collection lists it by id (an id only, no text).
 - Local smoke test of the built server function (called as a fetch handler, not through Netlify): `/`, `/unlock`, `/journal`, `/discover`, `/guides` return 200 HTML with the Referrer-Policy and Permissions-Policy headers; `/stays` returns 404 from the function because the 410 is Netlify's job (redirect rule). `/api/*` is NOT served by this function: it belongs to `netlify/functions/api.ts`, so those paths 404 here by design.
 - API logic smoke test (`createApi` with in-memory stores): `/api/previews` 200 `{items:[],total:0,collections:0}` (no preview store yet), `/api/session` 401 `not_signed_in`, `/api/access/activate` with a `TEST-VALID-...` code: 200 in `deploy-preview`, **503 `provider_unavailable` in `production` and with no context**, even with `PP_ALLOW_TEST_PROVIDER=1`.
 - NOT proven locally: Netlify routing of `/api/*` to the API function instead of the catch-all SSR function (Netlify normally prefers the more specific path; **UNVERIFIED**), real Netlify Blobs, headers/redirects from `netlify.toml`, the build-skip behavior on Netlify.
@@ -72,7 +72,7 @@ Pages CMS edits `content/` by committing to a branch, which starts a Netlify bui
 
 ## 5. Import the premium library into the PREVIEW store only
 
-Prerequisite: the protected premium package exists outside this repository (private folder on the owner's computer). Never use `--env production` for this test.
+Prerequisite: ordinary preview integration testing uses SYNTHETIC content (`src/passport/fixtures/premium.synthetic.ts`; write it to a temporary folder with `premium-split.mjs`). The REAL protected package (outside this repository) goes only into a protected environment AFTER the owner authorizes it; an undisclosed preview URL is not access control. Never use `--env production` for this test.
 
 ```bash
 export NETLIFY_AUTH_TOKEN=...   # personal access token, your terminal only
@@ -81,13 +81,13 @@ node scripts/premium-import.mjs --dir <private folder> --env preview          # 
 node scripts/premium-import.mjs --dir <private folder> --env preview --write  # writes premium-preview
 ```
 
-(If the package is in `content/premium` the scripts accept `--dir content/premium`; see `PREMIUM-CONTENT-WORKFLOW.md`.) The dry run prints the validated count and the showcase count; a showcase card with no valid teaser is refused. After `--write`, reload `/api/previews` on the preview: `items` now lists the showcase previews and `total` is the library size; the response must contain no instructions, twist, reveal, clue, objective, variations or safety text. Then activate with a test code and open the full library on the preview.
+(`--dir` can be replaced by the environment variable `PREMIUM_DIR`; there is no default folder; see `PREMIUM-CONTENT-WORKFLOW.md`.) The dry run prints the validated count and the showcase count; a showcase card with no valid teaser is refused. After `--write`, reload `/api/previews` on the preview: `items` now lists the showcase previews and `total` is the library size; the response must contain no instructions, twist, reveal, clue, objective, variations or safety text. Then activate with a test code and open the full library on the preview.
 
-> **Decision before importing the real library (OD12).** On a branch deploy with `PP_ALLOW_TEST_PROVIDER=1`, anyone who finds the preview URL can activate a `TEST-VALID-...` code and read whatever is in the preview store. The URL is obscure, not protected. Either import the real package only for the test window, keep the URL private and clear the preview store afterwards; use Netlify site protection if the plan offers it (**UNVERIFIED**); or test with the synthetic library only (B7) and import the real one straight to production (F3).
+> **Decision before importing the real library (OD12).** On a branch deploy with `PP_ALLOW_TEST_PROVIDER=1`, anyone who finds the preview URL can activate a `TEST-VALID-...` code and read whatever is in the preview store. The URL is obscure, not protected. Recommended: test with the synthetic library only (B7, B8) and import the real one straight to production (F3). Import the real package into a preview only after the owner authorizes it, only into a protected environment (Netlify site protection if the plan offers it, **UNVERIFIED**), and clear the store afterwards.
 
 ## 6. Pages CMS premium switch
 
-`.pages.yml` ships with the premium form OFF (commented out between `PREMIUM-CMS-SWITCH:BEGIN` and `PREMIUM-CMS-SWITCH:END`). Recommended: keep it OFF. While it is ON, every save commits premium text to this public repository. To turn it ON, follow the instructions at the top of that block and run `npx vitest run src/test/handover-cms.test.ts`.
+`.pages.yml` ships with the premium form OFF (commented out between `PREMIUM-CMS-SWITCH:BEGIN` and `PREMIUM-CMS-SWITCH:END`). Recommended: keep it OFF. While it is ON, every save would commit premium text to this repository, which no longer tracks it (`HISTORICAL-EXPOSURE.md`). To turn it ON, follow the instructions at the top of that block and run `npx vitest run src/test/handover-cms.test.ts`.
 
 ## 7. Camera and photo library on real phones (Permissions-Policy decision)
 
@@ -113,3 +113,18 @@ The keepsake editor (`src/components/passport/Keepsake.tsx`) has two native file
 - **HSTS:** not set by the app or `netlify.toml`; Netlify serves it on its HTTPS domains. **UNVERIFIED:** confirm `Strict-Transport-Security` on the deployed domain (`curl -I https://<domain>/`), including the custom domain once attached.
 - **`/api/previews` caching:** `netlify.toml` has `/api/*` `Cache-Control: no-store`, while the previews handler sends `public, max-age=300`. Netlify `[[headers]]` apply to static files, not to responses a function builds, so the function's own header should win and previews stay cacheable. Whether it really does is **UNVERIFIED**: on the preview, `curl -I https://<preview>/api/previews` and read `Cache-Control`. I did not add a more specific rule (precedence between overlapping `[[headers]]` rules is not something I could verify). If `no-store` shows, the endpoint is uncached, which is acceptable at this scale (see `OPERATING-COSTS.md`).
 - **Cost pointer:** `docs/OPERATING-COSTS.md` covers function invocations and credits.
+
+## 8. Owner-machine leak and overlap checks (need the real library)
+
+These need the real premium folder, so they run only on the owner's machine with `PREMIUM_DIR` set to the `adventures/` folder of the protected package (they never run in CI or in this repository's clean state):
+
+```bash
+export PREMIUM_DIR=/home/user/premium-content/package/premium-2026-11-26-1/adventures
+node scripts/validate-journal.mjs                                  # Journal sentence-overlap rule against the real premium text
+node scripts/check-leaks.mjs dist --premium-dir "$PREMIUM_DIR"    # real titles, ids, instructions, twist, safety text in a build
+node scripts/check-leaks.mjs .netlify --premium-dir "$PREMIUM_DIR"
+node scripts/library-stats.mjs --md                                # full inventory (free-only notice without PREMIUM_DIR)
+npx vitest run src/test/premium-owner-checks.test.ts               # the OWNER-MACHINE tests stop being skipped
+```
+
+Pass: "Leak check passed ... REAL premium fragments", "journal content OK (including the premium sentence-overlap check)". A check run without `PREMIUM_DIR` says it skipped the real-text part; that is not a pass for real text.

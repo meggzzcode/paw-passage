@@ -3,8 +3,11 @@
 //   node scripts/library-stats.mjs            JSON, then a markdown table
 //   node scripts/library-stats.mjs --json     JSON only
 //   node scripts/library-stats.mjs --md       markdown only
-// Reads content/adventures/*.yml (free), content/premium/*.json (premium, tracked here by the owner decision), content/collections.yml,
+// Reads content/adventures/*.yml (free), the premium folder (--premium-dir <folder> or env PREMIUM_DIR; premium text is NOT tracked in this
+// repository), content/collections.yml,
 // stamps.yml, achievements.yml and the keepsake theme registry (src/passport/keepsake/themes.ts).
+// Without a premium folder it runs in FREE-ONLY (partial) mode and says so (stats.mode, a notice on stderr and in the markdown): premium
+// counts are then 0 and are NOT the real library. Set PREMIUM_DIR for the full inventory (owner machine).
 // It prints ONLY aggregates and card ids: no premium title, teaser or instruction text ever reaches the output.
 import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { register } from "node:module";
@@ -40,7 +43,19 @@ const readJsonDir = (d) =>
     : [];
 
 const rawFree = readYamlDir(join(root, "content/adventures"));
-const rawPremium = readJsonDir(join(root, "content/premium"));
+const cliArgs = process.argv.slice(2);
+const pdIdx = cliArgs.indexOf("--premium-dir");
+const premiumDir = (pdIdx >= 0 ? cliArgs[pdIdx + 1] : process.env.PREMIUM_DIR) || undefined;
+if (premiumDir && !existsSync(premiumDir)) {
+  console.error(`Premium folder not found: ${premiumDir}`);
+  process.exit(2);
+}
+const FULL_MODE = Boolean(premiumDir);
+const MODE_NOTICE = FULL_MODE
+  ? "Full mode: premium folder read (aggregates only)."
+  : "PARTIAL MODE (free only): no premium folder given. Premium counts below are 0 and are NOT the real library. Set PREMIUM_DIR=<adventures folder of the protected package> or pass --premium-dir for the full inventory.";
+if (!FULL_MODE) console.error(MODE_NOTICE);
+const rawPremium = premiumDir ? readJsonDir(premiumDir) : [];
 const invalid = [];
 const byId = new Map();
 const duplicates = [];
@@ -135,6 +150,8 @@ const freeCostFlags = pub
 
 const stats = {
   generatedOn: new Date().toISOString().slice(0, 10),
+  mode: FULL_MODE ? "full" : "free-only",
+  notice: MODE_NOTICE,
   validation: { invalidCards: invalid, duplicateIds: duplicates },
   cards: {
     uniqueCore: all.length,
@@ -230,6 +247,8 @@ const obj = (o) =>
 const md = [
   `Library inventory (generated ${stats.generatedOn})`,
   "",
+  `> ${MODE_NOTICE}`,
+  "",
   "| Measure | Value |",
   "| --- | --- |",
   row("Unique core adventures", stats.cards.uniqueCore),
@@ -273,6 +292,6 @@ const md = [
   ...Object.entries(stats.showcase).map(([k, v]) => row(k, typeof v === "object" ? obj(v) : v)),
 ].join("\n");
 
-const arg = process.argv[2];
+const arg = cliArgs.find((a) => a === "--md" || a === "--json");
 if (arg !== "--md") console.log(JSON.stringify(stats, null, 2));
 if (arg !== "--json") console.log((arg === "--md" ? "" : "\n") + md);

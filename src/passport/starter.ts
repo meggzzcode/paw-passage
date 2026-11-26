@@ -29,8 +29,8 @@ const historyOf = (save: Save): History => ({
 /**
  * Picks the best free adventure for this save's answers. Held (unanswered) adventures are never picked.
  * `exclude` holds ids already offered this session ("show me another" never repeats one).
- * Where / time / spend answers act as today's filters; `relax` ignores only those three optional ones. Hard eligibility,
- * no-car, quiet and children-joining always still apply.
+ * Where / time / spend answers act as today's filters; `relax` ignores only the optional ones (those three and children joining, which
+ * is still preferred in ranking). Hard eligibility, no-car and quiet always still apply.
  * An adventure that needs no safety question is preferred over one that does.
  */
 export function selectStarter(
@@ -47,7 +47,10 @@ export function selectStarter(
   for (const includeDone of [false, true]) {
     const r = rank(free, ctx, filters, history, { seed: "starter", includeDone });
     if (!r.ok && r.reason === "filters-too-narrow") narrow = true;
-    const list = r.ok ? r.ranked : [];
+    const all = r.ok ? r.ranked : [];
+    // With children joining set aside by "widen", a family-suited adventure that fits is still preferred.
+    const fam = ctx.owner.kids ? all.filter((x) => x.adventure.household.includes("family")) : [];
+    const list = fam.length > 0 ? fam : all;
     const top = list.find((x) => !activityConfirm(x.adventure, ctx.dog)) ?? list[0];
     if (top) return { ok: true, adventure: top.adventure, why: top.why };
   }

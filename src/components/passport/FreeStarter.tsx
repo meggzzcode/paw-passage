@@ -124,6 +124,7 @@ function Recommendation({
   a,
   dogName,
   why,
+  widenedNote,
   onAccept,
   onAnother,
   onChange,
@@ -131,6 +132,8 @@ function Recommendation({
   a: Adventure;
   dogName: string | undefined;
   why: string[];
+  /** Plain words about optional answers that were set aside to find this pick, or null. */
+  widenedNote: string | null;
   onAccept: () => void;
   onAnother: () => void;
   onChange: () => void;
@@ -162,6 +165,7 @@ function Recommendation({
             ))}
           </ul>
         )}
+        {widenedNote && <p className="pa-fine">{widenedNote}</p>}
         {why.length > 0 && (
           <p className="pd-why">
             <strong>Why this one:</strong> {why.join(". ")}.
@@ -215,6 +219,7 @@ export function FreeStarter({ ctx }: { ctx?: CtxKey | undefined } = {}) {
   const [stage, setStage] = useState<"welcome" | "survey">("welcome");
   const [none, setNone] = useState<"nothing" | "seen-all" | "narrow" | null>(null);
   const [quizMode, setQuizMode] = useState<"first" | "edit">("first");
+  const [widened, setWidened] = useState(false);
   const offered = useRef<Set<string> | null>(null);
   const wasDone = useRef<boolean | null>(null);
 
@@ -238,7 +243,9 @@ export function FreeStarter({ ctx }: { ctx?: CtxKey | undefined } = {}) {
   const seen = (): Set<string> => (offered.current ??= readOffered());
   const dogName = save.profile.data.name;
 
-  function pickNext(replace: boolean, relax = false) {
+  function pickNext(replace: boolean, relaxNow?: boolean) {
+    const relax = relaxNow ?? widened; // "show me another" keeps the widening the visitor chose
+    if (relaxNow !== undefined) setWidened(relaxNow);
     const s = seen();
     const cur = getSave().starter?.id;
     if (cur) s.add(cur);
@@ -270,7 +277,7 @@ export function FreeStarter({ ctx }: { ctx?: CtxKey | undefined } = {}) {
     seen().clear();
     writeOffered(seen());
     setStarter(null); // a fresh set of answers starts a fresh list
-    pickNext(false);
+    pickNext(false, false);
   }
 
   function accept() {
@@ -302,7 +309,6 @@ export function FreeStarter({ ctx }: { ctx?: CtxKey | undefined } = {}) {
               browser, another device, or a home-screen shortcut, which keeps its own separate
               storage), it will not be there. Exporting a backup from My Passport is optional.
             </p>
-            <KeepsakeUnlock where="intro-complete" family={adventure.keepsake.family} />
             <UnlockPitch where="intro-complete" />
           </>
         ) : (
@@ -315,12 +321,26 @@ export function FreeStarter({ ctx }: { ctx?: CtxKey | undefined } = {}) {
       const pick = selectStarter(library, save);
       return pick.ok && pick.adventure.id === adventure.id ? pick.why : [];
     })();
+    const o = save.owner.data;
+    const widenedNote = !widened
+      ? null
+      : [
+          o.where || o.time || o.spend
+            ? "We widened your where, time and spend answers to find this one."
+            : "",
+          o.kids && !adventure.household.includes("family")
+            ? "We also set aside the children-joining preference."
+            : "",
+        ]
+          .filter(Boolean)
+          .join(" ") || null;
     body = (
       <>
         <Recommendation
           a={adventure}
           dogName={dogName}
           why={why}
+          widenedNote={widenedNote}
           onAccept={accept}
           onAnother={() => pickNext(true)}
           onChange={() => {
@@ -346,7 +366,7 @@ export function FreeStarter({ ctx }: { ctx?: CtxKey | undefined } = {}) {
             {none === "seen-all"
               ? "You have seen every free adventure that suits what you told us. We can start the list over, or you can change your answers."
               : none === "narrow"
-                ? "Free adventures suit your dog, but none fits your where, time and spend answers together. You can widen those, or change your answers."
+                ? `Free adventures suit your dog, but none fits your ${save.owner.data.kids ? "optional answers (where, time, spend and children joining)" : "where, time and spend answers"} together. You can widen those, or change your answers. Widening never loosens what keeps your dog safe and comfortable.`
                 : "None of the free adventures suits what you told us. We use your answers to leave out adventures that do not fit, and we never loosen those. If you picked something by mistake, or answered optional questions such as children joining or keeping it quiet, you can change your answers."}
           </p>
           <div className="pa-row">
@@ -373,7 +393,9 @@ export function FreeStarter({ ctx }: { ctx?: CtxKey | undefined } = {}) {
                   pickNext(false, true);
                 }}
               >
-                Widen where, time and spend
+                {save.owner.data.kids
+                  ? "Widen where, time, spend and children joining"
+                  : "Widen where, time and spend"}
               </button>
             )}
             <button

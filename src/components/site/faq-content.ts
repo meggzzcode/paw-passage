@@ -1,7 +1,7 @@
 // One source for the questions buyers ask. Used by /faq (all of them) and /unlock (a summary).
 // Rules: say only what the product does today. Nothing here promises a feature that is not built, quotes a number we
 // have not verified, or makes a medical or behavior claim. Price comes from the single offer constant.
-import { offer } from "@/config/site";
+import { price, pricing } from "@/config/commercial";
 
 export type Faq = { id: string; q: string; a: string; group: "buying" | "dogs" | "privacy" };
 
@@ -10,13 +10,13 @@ export const FAQS: readonly Faq[] = [
     id: "what-you-buy",
     group: "buying",
     q: "What exactly do I get when I buy?",
-    a: `${offer.price}, paid once, unlocks the full Adventure Passport library: every adventure in every collection, the personalized discovery tools, and more keepsake designs. The one free introductory adventure and your passport pages stay free either way.`,
+    a: `${price}, paid once, unlocks the full Adventure Passport library: every adventure in every collection, the personalized discovery tools, and more keepsake designs. The one free introductory adventure and your passport pages stay free either way.`,
   },
   {
     id: "subscription",
     group: "buying",
     q: "Is this a subscription?",
-    a: `No. It is a ${offer.pricing}. There is no renewal, no trial that turns into a charge, and nothing to cancel.`,
+    a: `No. It is a ${pricing}. There is no renewal, no trial that turns into a charge, and nothing to cancel.`,
   },
   {
     id: "digital-not-book",
@@ -91,6 +91,12 @@ export const FAQS: readonly Faq[] = [
     a: "No. Read the adventure, put the phone away and go. You only need it again to mark the adventure done, add a short note, or make a keepsake afterward.",
   },
   {
+    id: "household",
+    group: "dogs",
+    q: "Can I use it for more than one dog, or share it with my household?",
+    a: "One purchase covers your household's use on your own devices, so the people you live with can use it too, and you can restore it on your other devices with your purchase code. The Passport keeps one dog profile at a time: to switch to another dog, edit the profile, and your progress and stamps carry on in the same passport. Separate profiles for each dog are something we may add one day, but they are not part of the product today.",
+  },
+  {
     id: "recover",
     group: "buying",
     q: "What if I lose access or switch devices?",
@@ -118,7 +124,7 @@ export const FAQS: readonly Faq[] = [
     id: "refund",
     group: "buying",
     q: "What is the refund policy?",
-    a: "Refund terms are shown at checkout before you pay, and our refund policy page explains how to ask and what happens to your access and progress.",
+    a: "Refund terms are shown at checkout before you pay, and our refund policy page explains how to ask, what happens to your access and what happens to your progress, which always stays yours. If you were charged and cannot unlock, try Restore access first, then contact us.",
   },
   {
     id: "contact",
@@ -134,6 +140,7 @@ export const UNLOCK_FAQ_IDS = [
   "subscription",
   "try-first",
   "spending",
+  "household",
   "recover",
   "refund",
 ] as const;

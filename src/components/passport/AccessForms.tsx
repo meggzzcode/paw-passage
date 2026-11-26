@@ -1,5 +1,6 @@
 // Activation and restore forms, plus the account panel for someone who is signed in.
 // The code is held only in this component's input while typing. It is never put in a URL, a log, storage or an event.
+import { AppLink } from "@/components/shell/AppLink";
 import { InstallPrompt } from "@/components/site/InstallPrompt";
 import { useState } from "react";
 import { importJson, getSave } from "@/passport/local-store";
@@ -110,6 +111,13 @@ export function AccessForm({ kind }: { kind: AccessKind }) {
         {error && <p className="co-error">{FAILURE_TEXT[error]}</p>}
         {done && <p>{done}</p>}
       </div>
+      {done && (
+        <p className="pa-row">
+          <AppLink to="/welcome" className="pp-btn pp-btn-primary">
+            Continue to your welcome page
+          </AppLink>
+        </p>
+      )}
       {done && <InstallPrompt where="purchase" />}
       <p className="pa-fine">
         Your code is only sent to confirm your purchase. It is never added to a web address or saved

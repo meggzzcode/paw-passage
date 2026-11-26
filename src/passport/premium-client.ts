@@ -3,6 +3,7 @@
 // sessionStorage, IndexedDB, the Cache API or a service worker, never sent to analytics and never logged. The only thing
 // stored is a bare "this browser has an account" flag with no content, so a free visitor makes no network calls at all.
 import { CSRF_HEADER } from "@/lib/passport-api";
+import { isStandalone } from "@/lib/pwa";
 import { collections, stamps } from "./content";
 import { adventureSchema, type Adventure } from "./schema";
 
@@ -149,10 +150,12 @@ async function loadInner(): Promise<Loaded> {
  * Asks the server who this browser is and loads the premium library into memory. Runs only when this browser has
  * been activated before (or `force` after a successful activation); a free visitor never reaches the network.
  */
-export function refreshEntitlement(opts: { force?: boolean } = {}): Promise<void> {
+export function refreshEntitlement(opts: { force?: boolean; probe?: boolean } = {}): Promise<void> {
   if (typeof window === "undefined") return Promise.resolve();
   if (opts.force) setAccountFlag(true);
-  else if (!hasAccountFlag() && !state.signedIn) return Promise.resolve();
+  // `probe`: an installed home-screen app may start with a copied session cookie but no localStorage flag (iOS copies
+  // cookies, not other storage). The installed app asks the server once; a 401 simply leaves it free.
+  else if (!hasAccountFlag() && !state.signedIn && !opts.probe) return Promise.resolve();
   if (inflight) return inflight;
   if (state.status === "free" || state.status === "offline")
     set({ ...state, status: "checking", message: null });
@@ -204,7 +207,7 @@ export function refreshEntitlement(opts: { force?: boolean } = {}): Promise<void
 export function startEntitlement(): void {
   if (started || typeof window === "undefined") return;
   started = true;
-  void refreshEntitlement();
+  void refreshEntitlement({ probe: isStandalone() });
 }
 
 /** After a successful activate or restore: remember this browser has an account and load everything now. */

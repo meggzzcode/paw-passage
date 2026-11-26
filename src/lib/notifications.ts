@@ -189,7 +189,7 @@ export const getPlans = () =>
     return Array.isArray(list) ? list.map(parsePlan).filter((p): p is Plan => p !== null) : [];
   });
 export const putPlan = (plan: Plan) =>
-  call<Plan>("PUT", `/api/schedule/${plan.id}`, plan, () => plan);
+  call<Plan>("PUT", `/api/schedule/${plan.id}`, plan, (v) => parsePlan(obj(v)["plan"]) ?? plan);
 export const deletePlanRemote = (id: string) =>
   call<true>("DELETE", `/api/schedule/${id}`, undefined, () => true);
 

@@ -3,6 +3,7 @@ import { Container } from "@/components/shell/Container";
 import { Button } from "@/components/shell/Button";
 import { Breadcrumbs } from "@/components/site/Breadcrumbs";
 import { FaqList } from "@/components/site/FaqList";
+import { TrustStrip } from "@/components/site/TrustStrip";
 import { PurchasePrompt } from "@/components/site/PurchasePrompt";
 import { FAQS } from "@/components/site/faq-content";
 import { breadcrumbLd, jsonLd, pageHead } from "@/lib/seo";
@@ -45,6 +46,7 @@ function Faq() {
           photos are treated.
         </p>
         <FaqList />
+        <TrustStrip />
         <p className="pp-cta-row">
           <Button to="/discover">Find Our First Adventure — Free</Button>
           <Button to="/unlock" variant="secondary">

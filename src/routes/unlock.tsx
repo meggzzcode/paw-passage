@@ -6,7 +6,8 @@ import { AccessForm } from "@/components/passport/AccessForms";
 import { track } from "@/passport/events";
 import { checkoutUrl } from "@/lib/passport-api";
 import { collections } from "@/passport/content";
-import { offer } from "@/config/site";
+import { flags, price, pricing } from "@/config/commercial";
+import { TrustStrip } from "@/components/site/TrustStrip";
 import { unlockLine, usePremiumSummary } from "@/lib/premium-summary";
 import { TrustBlock } from "@/components/passport/TrustBlock";
 import { pageHead } from "@/lib/seo";
@@ -17,7 +18,7 @@ import { FAQS, UNLOCK_FAQ_IDS } from "@/components/site/faq-content";
 export const Route = createFileRoute("/unlock")({
   head: () =>
     pageHead({
-      title: `Get the Adventure Passport: ${offer.price} Once`,
+      title: `Get the Adventure Passport: ${price} Once`,
       description:
         "One free adventure picked for your dog, then the full Adventure Passport library for a single payment. No subscription, no account.",
       path: "/unlock",
@@ -39,7 +40,7 @@ function Unlock() {
         <p className="pa-sub">
           A digital collection of little adventures for you and your dog, in your browser. Start
           with one free adventure picked for your dog. When you want more, the full Passport opens
-          the whole library for {offer.price}, once.
+          the whole library for {price}, once.
         </p>
         <p>{unlockLine(summary)}</p>
         <p className="pp-cta-row">
@@ -77,7 +78,7 @@ function Unlock() {
               The full Passport adds
             </h2>
             <p className="pa-price">
-              <strong>{offer.price}</strong> <span>{offer.pricing}</span>
+              <strong>{price}</strong> <span>{pricing}</span>
             </p>
             <p className="pa-fine">
               <AppLink to="/refund-policy" className="pa-linkbtn">
@@ -92,11 +93,16 @@ function Unlock() {
               </li>
               <li>Collections from puppies to seniors, homebodies to hikers</li>
               <li>Daily and seasonal suggestions, plus birthday and adoption reminders</li>
+              {flags.notifications && (
+                <li>Optional reminders in My Passport, only if you turn them on</li>
+              )}
               <li>Your own collections, and more keepsake designs</li>
               <li>Progress that can follow you to your other devices</li>
             </ul>
             <p className="pa-fine">
               Many adventures cost nothing extra to do. Each shows its cost range before you start.
+              It is digital, so nothing ships. One purchase covers your household on your own
+              devices, and the Passport keeps one dog profile at a time.
             </p>
             {link ? (
               <a
@@ -156,6 +162,7 @@ function Unlock() {
           </ul>
         </section>
 
+        <TrustStrip />
         <TrustBlock />
 
         <p className="pa-fine">

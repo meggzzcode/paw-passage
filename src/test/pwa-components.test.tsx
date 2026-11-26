@@ -7,6 +7,8 @@ import { InstallPrompt } from "@/components/site/InstallPrompt";
 import { InstallGuide } from "@/components/site/InstallGuide";
 
 import { vi } from "vitest";
+// The launch gate and the purchase-and-synced state are tested in pwa-gate.test.tsx; here the prompt is made eligible.
+vi.mock("@/components/site/useInstallEligibility", () => ({ useInstallEligible: () => true }));
 vi.mock("@/components/shell/AppLink", () => ({
   AppLink: ({ to, children, ...r }: { to: string; children: React.ReactNode }) => (
     <a href={to} {...r}>
@@ -60,8 +62,8 @@ describe("install guide", () => {
     expect(container.querySelectorAll("svg[role=img][aria-label]").length).toBe(figs.length);
     expect(container.textContent).not.toMatch(/screenshot/i);
   });
-  it("the two mounts exist and the prompt is not mounted in discovery or checkout", () => {
-    expect(readFileSync("src/components/passport/FreeStarter.tsx", "utf8")).toContain(
+  it("the prompt is mounted only after activation, never in the free flow, discovery or checkout", () => {
+    expect(readFileSync("src/components/passport/FreeStarter.tsx", "utf8")).not.toContain(
       "InstallPrompt",
     );
     expect(readFileSync("src/components/passport/AccessForms.tsx", "utf8")).toContain(

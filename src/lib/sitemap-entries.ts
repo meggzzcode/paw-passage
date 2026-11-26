@@ -8,6 +8,7 @@ export const staticPaths = [
   "/collections",
   "/unlock",
   "/faq",
+  "/printables",
   // Landing pages for the main needs (indexable guidance; personalized filter combinations are never listed).
   "/things-to-do-with-your-dog",
   "/indoor-dog-adventures",

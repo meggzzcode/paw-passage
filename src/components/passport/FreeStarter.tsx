@@ -5,7 +5,6 @@
 // intro stamp and keepsake -> a quiet invitation to the full Passport.
 // This is a product choice, not a security gate (the free pool is public). Everything here runs on this device with no
 // network call. Unanswered questions stay UNKNOWN, never "safe". No account, email or card; nothing forces completion.
-import { InstallPrompt } from "@/components/site/InstallPrompt";
 import { RevealSurface } from "./RevealSurface";
 import { useEffect, useRef, useState } from "react";
 import { AppLink } from "@/components/shell/AppLink";
@@ -378,7 +377,12 @@ export function FreeStarter() {
                 Added to your passport. Make a keepsake from your photo above whenever you like.
               </p>
             </section>
-            <InstallPrompt where="intro-complete" />
+            <p className="pa-fine" id="fs-storage-note">
+              Your progress is kept on this device, in this browser, and nothing is uploaded. If you
+              clear your browser's site data, or open Paws &amp; Passage somewhere else (another
+              browser, another device, or a home-screen shortcut, which keeps its own separate
+              storage), it will not be there. Exporting a backup from My Passport is optional.
+            </p>
             <UnlockPitch where="intro-complete" />
           </>
         ) : (

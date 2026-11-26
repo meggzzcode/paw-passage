@@ -6,8 +6,8 @@ import { completeAdventure } from "@/passport/local-store";
 import { has } from "@/passport/progress";
 import { track } from "@/passport/events";
 import { useAdventureLibrary } from "./collections-shared";
-import { deletePlanRemote, getPlans as fetchPlans, putPlan, type Plan } from "@/lib/notifications";
-import { isLive, mergePlans, savePlan, setPlanStatus, usePlans } from "@/lib/plans";
+import type { Plan } from "@/lib/notifications";
+import { isLive, pushPlan, savePlan, setPlanStatus, syncPlans, usePlans } from "@/lib/plans";
 import { CALENDAR_NOTE, dateInput, exportPlanFile, timeInput } from "./ScheduleAdventure";
 
 function when(p: Plan): string {
@@ -45,13 +45,7 @@ export function UpcomingAdventures({
   // A paying customer opening this list may refresh it from the server. Free visitors make no request.
   useEffect(() => {
     if (!entitled) return;
-    let live = true;
-    void fetchPlans().then((r) => {
-      if (live && r.ok) mergePlans(r.data);
-    });
-    return () => {
-      live = false;
-    };
+    void syncPlans(); // pull and merge first, then push anything the server lacks
   }, [entitled]);
   useEffect(() => {
     if (focus) root.current?.scrollIntoView?.({ block: "start" });
@@ -60,10 +54,10 @@ export function UpcomingAdventures({
   if (plans.length === 0 && !focus) return null;
   const title = (p: Plan) => lib.find((a) => a.id === p.adventureId)?.title ?? "An adventure";
 
-  async function remote(p: Plan, action: "put" | "delete") {
-    if (!entitled || !p.push) return true;
-    const r = action === "put" ? await putPlan(p) : await deletePlanRemote(p.id);
-    return r.ok;
+  /** Every change (edit, cancel, done) is sent as the plan's new state, so other devices see the tombstone. */
+  async function remote(p: Plan) {
+    if (!entitled) return true;
+    return pushPlan(p);
   }
   async function saveEdit(p: Plan) {
     const start = new Date(`${date}T${time}`);
@@ -71,7 +65,7 @@ export function UpcomingAdventures({
     const next = savePlan({ ...p, startAt: start.toISOString() });
     if (!next) return;
     setEditing(null);
-    const ok = await remote(next, "put");
+    const ok = await remote(next);
     setMsg(
       (ok ? "Plan updated." : "Updated on this device; we couldn't update the reminder just now.") +
         " If you saved a calendar file, edit or delete that event in your calendar too.",
@@ -79,7 +73,7 @@ export function UpcomingAdventures({
   }
   async function cancel(p: Plan) {
     const next = setPlanStatus(p.id, "cancelled");
-    const ok = next ? await remote(next, "delete") : true;
+    const ok = next ? await remote(next) : true;
     setMsg(
       (ok ? "Plan cancelled." : "Cancelled here; we couldn't clear the reminder just now.") +
         " If you saved a calendar file, delete that event in your calendar too.",
@@ -89,7 +83,7 @@ export function UpcomingAdventures({
     if (!has(save.done, p.adventureId)) completeAdventure(p.adventureId);
     const next = setPlanStatus(p.id, "done");
     track("scheduled_adventure_completed");
-    if (next) await remote(next, "delete");
+    if (next) await remote(next);
     setMsg("Marked done and added to your passport.");
   }
 

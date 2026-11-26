@@ -91,9 +91,9 @@ describe("landing pages", () => {
 });
 
 describe("faq", () => {
-  it("answers all twenty questions, with unique ids", () => {
-    expect(FAQS).toHaveLength(20);
-    expect(new Set(FAQS.map((f) => f.id)).size).toBe(20);
+  it("answers all twenty-one questions, with unique ids", () => {
+    expect(FAQS).toHaveLength(21);
+    expect(new Set(FAQS.map((f) => f.id)).size).toBe(21);
     const all = FAQS.map((f) => `${f.q} ${f.a}`).join(" ");
     for (const w of [
       "subscription",

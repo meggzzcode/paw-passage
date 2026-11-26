@@ -1,0 +1,310 @@
+/* Printables: the sheet you see is the sheet the browser prints. Colors are fixed to the light palette so a printout
+   is never dark, whatever theme the screen is in. Uses the brand palette from passport.css. */
+.pr-page {
+  max-width: 52rem;
+}
+.pr-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem 1rem;
+  margin-bottom: 1rem;
+}
+.pr-toolbar .pa-fine {
+  flex-basis: 100%;
+  margin: 0;
+}
+.pr-index {
+  list-style: none;
+  padding: 0;
+  margin: 1.2rem 0;
+  display: grid;
+  gap: 1rem;
+}
+@media (min-width: 640px) {
+  .pr-index {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+.pr-index-card {
+  display: grid;
+  gap: 0.5rem;
+  align-content: start;
+}
+.pr-index-card p {
+  margin: 0;
+}
+
+.pr-sheet {
+  --pr-ink: #14283a;
+  --pr-paper: #fffdf7;
+  --pr-red: #a82f23;
+  --pr-ochre: #e0a53a;
+  --pr-line: #14283a;
+  --pr-soft: #efe5cf;
+  display: grid;
+  gap: 1rem;
+  padding: 1.25rem;
+  color: var(--pr-ink);
+  background: var(--pr-paper);
+  border: 3px solid var(--pr-line);
+  border-radius: 8px;
+  box-shadow: 4px 4px 0 rgb(20 40 58 / 0.85);
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+.pr-head {
+  display: grid;
+  gap: 0.25rem;
+  text-align: center;
+  padding-bottom: 0.8rem;
+  border-bottom: 3px double var(--pr-line);
+}
+.pr-brand {
+  margin: 0;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--pr-red);
+}
+.pr-title {
+  margin: 0;
+  font-size: clamp(1.5rem, 5vw, 2.1rem);
+  line-height: 1.1;
+}
+.pr-intro {
+  margin: 0;
+  font-size: 0.95rem;
+}
+.pr-h3 {
+  margin: 0 0 0.4rem;
+  font-size: 1.05rem;
+  color: var(--pr-red);
+}
+.pr-foot {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  padding-top: 0.6rem;
+  border-top: 1.5px solid var(--pr-line);
+  font-size: 0.78rem;
+}
+
+/* Checklists */
+.pr-groups {
+  display: grid;
+  gap: 1rem;
+}
+@media (min-width: 640px) {
+  .pr-groups {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+.pr-group {
+  break-inside: avoid;
+}
+.pr-checks {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+.pr-checks li {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  min-height: 1.6rem;
+}
+.pr-box {
+  flex: none;
+  width: 1.15rem;
+  height: 1.15rem;
+  border: 2px solid var(--pr-line);
+  border-radius: 3px;
+  background: #fff;
+}
+.pr-line {
+  flex: 1;
+  min-height: 1.5rem;
+  border-bottom: 1.5px solid var(--pr-line);
+}
+
+/* Bingo */
+.pr-bingo {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.3rem;
+}
+.pr-cell {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 0.1rem;
+  min-height: 4.2rem;
+  padding: 0.25rem;
+  text-align: center;
+  font-size: 0.72rem;
+  line-height: 1.15;
+  background: #fff;
+  border: 2px solid var(--pr-line);
+  border-radius: 4px;
+  overflow-wrap: anywhere;
+}
+@media (min-width: 480px) {
+  .pr-cell {
+    font-size: 0.88rem;
+    min-height: 5.2rem;
+  }
+}
+.pr-cell-free {
+  background: var(--pr-ochre);
+  font-weight: 700;
+}
+.pr-free {
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* Planner */
+.pr-planner {
+  display: grid;
+  gap: 1rem;
+}
+@media (min-width: 640px) {
+  .pr-planner {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .pr-wide {
+    grid-column: 1 / -1;
+  }
+}
+.pr-day {
+  display: grid;
+  gap: 0.4rem;
+  align-content: start;
+  padding: 0.7rem;
+  background: var(--pr-soft);
+  border: 2px solid var(--pr-line);
+  border-radius: 6px;
+  break-inside: avoid;
+}
+.pr-slot {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.6rem;
+  min-height: 2.2rem;
+}
+.pr-slot-label {
+  flex: none;
+  min-width: 5.2rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+/* Certificate */
+.pr-sheet-landscape {
+  text-align: center;
+}
+.pr-cert {
+  display: grid;
+  gap: 0.7rem;
+  justify-items: center;
+  padding: 0.5rem 0;
+}
+.pr-cert-line {
+  margin: 0;
+  font-size: 1.05rem;
+}
+.pr-field {
+  display: grid;
+  gap: 0.1rem;
+  width: min(100%, 26rem);
+}
+.pr-field-label {
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.pr-input {
+  min-height: 44px;
+  padding: 0.3rem 0.5rem;
+  font: inherit;
+  font-size: 1.35rem;
+  text-align: center;
+  color: var(--pr-ink);
+  background: #fff;
+  border: 0;
+  border-bottom: 2px solid var(--pr-line);
+  border-radius: 0;
+}
+.pr-input:focus-visible {
+  outline: 3px solid var(--pr-red);
+  outline-offset: 2px;
+}
+.pr-cert-seal {
+  margin: 0.3rem 0 0;
+  display: grid;
+  place-items: center;
+  width: 3.4rem;
+  height: 3.4rem;
+  border-radius: 50%;
+  background: var(--pr-ochre);
+  border: 3px solid var(--pr-line);
+  font-size: 1.6rem;
+}
+
+@page {
+  size: letter;
+  margin: 0.5in;
+}
+@page pr-landscape {
+  size: letter landscape;
+  margin: 0.5in;
+}
+@media print {
+  body.pr-active {
+    background: #fff !important;
+  }
+  body.pr-active .pr-noprint,
+  body.pr-active .no-print,
+  body.pr-active .skip-link,
+  body.pr-active #pp-announcer {
+    display: none !important;
+  }
+  body.pr-active .pp-container,
+  body.pr-active .pa-page {
+    max-width: none;
+    padding: 0;
+    margin: 0;
+  }
+  .pr-sheet {
+    box-shadow: none;
+    border-radius: 0;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  .pr-sheet-landscape {
+    page: pr-landscape;
+  }
+  .pr-groups,
+  .pr-planner {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .pr-cell {
+    min-height: 1.35in;
+    font-size: 0.95rem;
+  }
+  .pr-input::placeholder {
+    color: transparent;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .pr-sheet * {
+    transition: none !important;
+    animation: none !important;
+  }
+}

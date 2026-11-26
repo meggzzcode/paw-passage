@@ -27,7 +27,9 @@ describe("shell navigation", () => {
 });
 
 describe("homepage copy", () => {
-  const src = readFileSync("src/routes/index.tsx", "utf8");
+  // The homepage copy lives in the one commercial config; the route reads it.
+  const src =
+    readFileSync("src/routes/index.tsx", "utf8") + readFileSync("src/config/commercial.ts", "utf8");
   it("leads with the adventure headline and one clear primary CTA", () => {
     expect(src).toContain("Life is better with a little");
     expect(src).toContain("Find Our First Adventure");
@@ -38,6 +40,7 @@ describe("homepage copy", () => {
   it("shows the price from the one offer constant, with no discount or unproven claim", () => {
     expect(src).toContain("offer.price");
     expect(src).toContain("offer.pricing");
+    expect(readFileSync("src/routes/index.tsx", "utf8")).toContain("{price}");
     expect(src).not.toMatch(/\$\d|% off|\breviews?\b|customers|testimonial/i);
   });
   it("keeps the old slogan out of the hero", () => {

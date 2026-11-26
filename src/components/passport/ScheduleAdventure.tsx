@@ -8,8 +8,8 @@ import { track } from "@/passport/events";
 import { buildPlanIcs, REMIND_LABEL } from "@/passport/ics";
 import { downloadBlob } from "@/passport/keepsake/render";
 import { detectPushSupport, permissionState } from "@/lib/push-support";
-import { deviceTz, getLocalDeviceId, putPlan, type Plan, type Remind } from "@/lib/notifications";
-import { livePlanFor, savePlan, usePlans } from "@/lib/plans";
+import { deviceTz, getLocalDeviceId, type Plan, type Remind } from "@/lib/notifications";
+import { livePlanFor, pushPlan, savePlan, usePlans } from "@/lib/plans";
 
 export const CALENDAR_NOTE =
   "A calendar file is a copy. If you change or cancel this plan later, edit or delete the event in your calendar too.";
@@ -75,13 +75,15 @@ export function ScheduleAdventure({ a }: { a: Adventure }) {
     }
     track("adventure_scheduled");
     const parts: string[] = [existing ? "Plan updated." : "Planned."];
-    if (entitled && wantPush) {
-      const res = await putPlan(plan);
-      parts.push(
-        res.ok
-          ? "We'll send a reminder."
-          : "Saved on this device, but we couldn't set up the reminder just now. You can edit the plan in Upcoming adventures to try again.",
-      );
+    if (entitled) {
+      // Plans of paying customers always sync (local first), reminder or not; the reminder text only when push is on.
+      const ok = await pushPlan(plan);
+      if (wantPush)
+        parts.push(
+          ok
+            ? "We'll send a reminder."
+            : "Saved on this device, but we couldn't set up the reminder just now. You can edit the plan in Upcoming adventures to try again.",
+        );
     }
     if (file) {
       exportPlanFile(plan, a.title);

@@ -47,7 +47,7 @@ A GitHub account (repository transfer), a Netlify account (site transfer), the d
 4. Disable CMS adventure editing until the form is rebuilt.
 5. Keep notifications off at launch and revisit after the first week of real credit usage.
 6. Analytics: confirm GA4 stays opt-out friendly and slug-only, and that no dog names are ever allowed as slugs.
-7. Slogan: the tagline is "A lifetime of little adventures."; "Collect adventures, not just things" stays out of the hero and H1 with its guard test, unless the owner says otherwise.
+7. Slogan: the tagline is "A lifetime of little adventures."; the retired signature line stays out of the hero and H1 with its guard test, unless the owner says otherwise.
 
 ## Tests added
 

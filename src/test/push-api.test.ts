@@ -436,10 +436,22 @@ describe("schedule plans", () => {
   it("creates, updates, lists and deletes a plan", async () => {
     const h = setup();
     const who = await signIn(h);
-    const r = await call(h, "PUT", "/api/schedule/pl-abcd1234", who, plan());
+    const r = await call(
+      h,
+      "PUT",
+      "/api/schedule/pl-abcd1234",
+      who,
+      plan("pl-abcd1234", { updatedAt: NOW - 10 }),
+    );
     expect(r.status).toBe(200);
-    expect(r.json["plan"].updatedAt).toBe(NOW);
-    await call(h, "PUT", "/api/schedule/pl-abcd1234", who, plan("pl-abcd1234", { remind: "1d" }));
+    expect(r.json["plan"].updatedAt).toBe(NOW - 10);
+    await call(
+      h,
+      "PUT",
+      "/api/schedule/pl-abcd1234",
+      who,
+      plan("pl-abcd1234", { remind: "1d", updatedAt: NOW - 5 }),
+    );
     const l = await call(h, "GET", "/api/schedule", who);
     expect(l.json["plans"]).toHaveLength(1);
     expect(l.json["plans"][0].remind).toBe("1d");

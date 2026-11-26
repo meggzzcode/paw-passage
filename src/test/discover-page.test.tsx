@@ -15,6 +15,10 @@ import {
 import { has, listCollections, members } from "@/passport/progress";
 import type { DogProfile, SessionFilters } from "@/passport/profile";
 
+// Shortcuts and itineraries have their own tests (they use router links); keep this suite about Discover itself.
+vi.mock("@/components/passport/Shortcuts", () => ({ Shortcuts: () => null }));
+vi.mock("@/components/passport/Itineraries", () => ({ Itineraries: () => null }));
+
 vi.mock("@/passport/useEntitlement", () => ({
   useEntitlement: () => ({
     status: "entitled",

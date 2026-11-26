@@ -22,7 +22,15 @@ export type PreviewItem = {
   access: "free" | "premium";
 };
 export type PreviewsResponse = { items: PreviewItem[]; total: number; collections: number };
-export type MatchResponse = { matching: number; total: number; previews: string[] };
+export type MatchResponse = {
+  matching: number;
+  total: number;
+  previews: string[];
+  /** Verified aggregates, added later: absent when the server could not compute them. */
+  matchingNoSpend?: number;
+  /** Slugs of collections with at least one matching adventure (max 6). Public collection titles only. */
+  collections?: string[];
+};
 
 const isNum = (v: unknown): v is number => typeof v === "number" && Number.isFinite(v);
 
@@ -66,11 +74,18 @@ export async function fetchMatch(
     if (!res.ok) return null;
     const b = (await res.json()) as Record<string, unknown>;
     if (!isNum(b["matching"]) || !isNum(b["total"]) || !Array.isArray(b["previews"])) return null;
-    return {
+    const out: MatchResponse = {
       matching: b["matching"],
       total: b["total"],
       previews: (b["previews"] as unknown[]).filter((x): x is string => typeof x === "string"),
     };
+    const ns = b["matchingNoSpend"];
+    if (isNum(ns) && ns >= 0 && ns <= b["matching"]) out.matchingNoSpend = ns;
+    if (Array.isArray(b["collections"]))
+      out.collections = (b["collections"] as unknown[])
+        .filter((x): x is string => typeof x === "string" && /^[a-z0-9-]{1,60}$/.test(x))
+        .slice(0, 6);
+    return out;
   } catch {
     return null;
   }

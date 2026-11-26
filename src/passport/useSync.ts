@@ -10,6 +10,7 @@ import {
 } from "./premium-client";
 import { useEntitlement } from "./useEntitlement";
 import { CSRF_HEADER } from "@/lib/passport-api";
+import { planSyncBusy, subscribePlans, syncPlans } from "@/lib/plans";
 import { FOCUS_MIN_MS, SyncController, syncLabel, type SyncStatus } from "./sync";
 
 let controller: SyncController | null = null;
@@ -49,8 +50,16 @@ export function useSync(): void {
       return;
     }
     const c = getSyncController();
-    void c.start();
+    // Progress first (pull, merge, then push), then scheduled adventures the same way. Plans sync for every entitled
+    // customer, with or without reminders.
+    void c.start().then(() => syncPlans());
     const unsub = subscribeLocal(() => c.notifyLocalChange());
+    let planTimer: ReturnType<typeof setTimeout> | null = null;
+    const unsubPlans = subscribePlans(() => {
+      if (planSyncBusy()) return; // our own merge, not an edit
+      if (planTimer) clearTimeout(planTimer);
+      planTimer = setTimeout(() => void syncPlans(), 1500);
+    });
     const hide = () => {
       if (document.visibilityState === "hidden") void c.flush({ keepalive: true });
     };
@@ -58,15 +67,17 @@ export function useSync(): void {
     const wake = () => {
       if (document.visibilityState === "hidden") return;
       if (Date.now() - lastEntitlementCheck() >= FOCUS_MIN_MS) void refreshEntitlement();
-      void c.resume();
+      void c.resume().then(() => syncPlans());
     };
-    const online = () => void c.resume();
+    const online = () => void c.resume().then(() => syncPlans());
     document.addEventListener("visibilitychange", hide);
     document.addEventListener("visibilitychange", wake);
     window.addEventListener("pagehide", pagehide);
     window.addEventListener("online", online);
     return () => {
       unsub();
+      unsubPlans();
+      if (planTimer) clearTimeout(planTimer);
       document.removeEventListener("visibilitychange", hide);
       document.removeEventListener("visibilitychange", wake);
       window.removeEventListener("pagehide", pagehide);

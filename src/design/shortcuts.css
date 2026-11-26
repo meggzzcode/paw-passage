@@ -1,0 +1,124 @@
+/* Discovery shortcuts and itineraries. Uses the tokens from passport.css. */
+.sc-wrap,
+.it-wrap {
+  display: grid;
+  gap: 0.8rem;
+}
+.sc-tiles,
+.it-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.6rem;
+}
+.sc-tiles {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+@media (min-width: 640px) {
+  .sc-tiles {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+  .it-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+.sc-tile {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-areas: "mark label" "mark blurb";
+  column-gap: 0.55rem;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  min-height: 64px;
+  padding: 0.55rem 0.65rem;
+  font: inherit;
+  text-align: left;
+  color: var(--pp-ink);
+  background: var(--pp-card);
+  border: 2px solid var(--pp-line);
+  border-radius: var(--pp-radius);
+  box-shadow: var(--pp-shadow);
+  cursor: pointer;
+}
+@media (min-width: 640px) {
+  .sc-tile {
+    grid-template-columns: 1fr;
+    grid-template-areas: "mark" "label" "blurb";
+    row-gap: 0.15rem;
+    align-content: start;
+  }
+}
+.sc-tile:hover {
+  background: var(--pp-paper-2);
+}
+.sc-tile[aria-pressed="true"] {
+  background: var(--pp-ink);
+  color: var(--pp-paper);
+}
+.sc-mark {
+  grid-area: mark;
+  display: grid;
+  place-items: center;
+  width: 2.1rem;
+  height: 2.1rem;
+  border-radius: 50%;
+  background: var(--pp-ochre);
+  color: #14283a;
+  font-weight: 800;
+  font-size: 0.95rem;
+}
+.sc-label {
+  grid-area: label;
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: 0.95rem;
+}
+.sc-blurb {
+  grid-area: blurb;
+  font-size: 0.8rem;
+  line-height: 1.25;
+  opacity: 0.85;
+}
+.sc-result {
+  display: grid;
+  gap: 0.8rem;
+}
+.sc-count {
+  margin: 0;
+  font-weight: 600;
+}
+.it-card {
+  display: grid;
+  gap: 0.5rem;
+  align-content: start;
+}
+.it-card p {
+  margin: 0;
+}
+.it-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.7rem;
+}
+.it-item {
+  display: grid;
+  gap: 0.3rem;
+  padding-top: 0.6rem;
+  border-top: 1.5px dashed var(--pp-hairline);
+}
+.it-warn {
+  padding: 0.4rem 0.6rem;
+  background: var(--pp-paper-2);
+  border-left: 4px solid var(--pp-ochre);
+  border-radius: 3px;
+}
+.it-details summary {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}

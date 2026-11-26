@@ -191,3 +191,142 @@
 .pp-related {
   margin-top: 2rem;
 }
+
+/* Trust strip: factual, compact, reused on home, unlock and FAQ */
+.pp-trust {
+  margin: 2rem 0;
+  padding: 1rem 1.25rem;
+  background: var(--pp-card);
+  border: 1.5px solid var(--pp-line);
+  border-radius: var(--pp-radius);
+}
+.pp-trust-h {
+  margin: 0 0 0.6rem;
+  font-size: 1.05rem;
+}
+.pp-trust-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.4rem 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+.pp-trust-list li {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+  line-height: 1.4;
+}
+.pp-trust-list svg {
+  flex: 0 0 auto;
+  margin-top: 0.2rem;
+  color: var(--pp-pine);
+}
+.pp-trust-links {
+  margin: 0.8rem 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.25rem;
+}
+.pp-trust-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+
+/* Product demonstration stepper */
+.pp-demo {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+@media (min-width: 52rem) {
+  .pp-demo {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: center;
+  }
+}
+.pp-demo-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0 0 1rem;
+  padding: 0;
+}
+.pp-demo-tab {
+  min-height: 44px;
+  min-width: 44px;
+  padding: 0.4rem 0.85rem;
+  border: 1.5px solid var(--pp-line);
+  border-radius: 999px;
+  background: var(--pp-card);
+  color: var(--pp-ink);
+  font: inherit;
+  cursor: pointer;
+}
+.pp-demo-tab[aria-current="step"] {
+  background: var(--pp-ink);
+  color: var(--pp-paper);
+}
+.pp-demo-tab:focus-visible,
+.pp-demo-nav button:focus-visible {
+  outline: 3px solid var(--pp-focus);
+  outline-offset: 2px;
+}
+.pp-demo-text h3 {
+  margin: 0 0 0.4rem;
+}
+.pp-demo-text p {
+  margin: 0 0 1rem;
+  line-height: 1.55;
+}
+.pp-demo-nav {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+.pp-demo-fig {
+  margin: 0 auto;
+  max-width: 19rem;
+  border: 1.5px solid var(--pp-line);
+  border-radius: 1.1rem;
+  box-shadow: var(--pp-shadow);
+  background: var(--pp-card);
+  overflow: hidden;
+}
+.pp-demo-fig img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Here's what's waiting for you */
+.pv-waiting {
+  margin-top: 1rem;
+}
+.pp-season-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  list-style: none;
+  padding: 0;
+  margin: 0.75rem 0 0;
+}
+.pp-season-list a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0.3rem 0.9rem;
+  border: 1.5px solid var(--pp-line);
+  border-radius: 999px;
+  background: var(--pp-card);
+  color: var(--pp-ink);
+  text-decoration: none;
+}
+
+/* Welcome page */
+.wl-next {
+  margin: 1.25rem 0;
+}

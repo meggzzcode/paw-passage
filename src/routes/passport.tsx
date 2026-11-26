@@ -16,6 +16,8 @@ import { usePassport } from "@/passport/usePassport";
 import { track } from "@/passport/events";
 import { pageHead } from "@/lib/seo";
 import { NotificationSettings } from "@/components/passport/NotificationSettings";
+import { RestoreAccessCallout } from "@/components/passport/RestoreAccessCallout";
+import { PrintablesCard } from "@/components/printables/PrintablesIndex";
 import { InstallCard } from "@/components/site/InstallCard";
 import { UpcomingAdventures } from "@/components/passport/UpcomingAdventures";
 
@@ -88,6 +90,7 @@ function PassportPage() {
   return (
     <Container>
       <div className="pa-page">
+        <RestoreAccessCallout />
         <p className="pa-kicker">Adventure Passport</p>
         <h1 className="pa-h1">{name}'s passport</h1>
         <p className="pa-sub">
@@ -112,6 +115,7 @@ function PassportPage() {
         <StampShelf earned={earned.stamps} />
 
         <UpcomingAdventures focus={view === "upcoming"} planId={plan} />
+        <PrintablesCard />
         <NotificationSettings />
         <InstallCard />
 

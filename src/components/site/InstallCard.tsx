@@ -1,5 +1,5 @@
-// Always-available install entry for My Passport and settings. Not subject to the prompt cooldown (the customer is
-// looking for it), hidden once the app is already installed.
+// A quiet install entry for My Passport settings, for entitled customers only (same gate as InstallPrompt: renders
+// nothing while PWA_PROMPTS_ENABLED is false). Not subject to the prompt cooldown, hidden once installed.
 import { useEffect, useState, useSyncExternalStore } from "react";
 import { AppLink } from "@/components/shell/AppLink";
 import {
@@ -11,16 +11,18 @@ import {
   subscribeInstallState,
   trackPwa,
 } from "@/lib/pwa";
+import { useInstallEligible } from "./useInstallEligibility";
 import "./install.css";
 
 export function InstallCard() {
   const [standalone, setStandalone] = useState<boolean | null>(null);
+  const eligible = useInstallEligible();
   const native = useSyncExternalStore(subscribeInstallState, canPromptNatively, () => false);
   useEffect(() => {
     startInstallCapture();
     setStandalone(isStandalone());
   }, []);
-  if (standalone === null) return null;
+  if (!eligible || standalone === null) return null;
   if (standalone) {
     return (
       <section className="pa-card ins-card" aria-labelledby="ins-card-h">

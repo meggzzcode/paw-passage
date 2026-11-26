@@ -145,6 +145,9 @@ export const MATCH_KEYS = [
   "transport",
   "homes",
   "space",
+  // Aggregates only: the cost ceiling (for "needs no extra spending") and collection slugs (for "where your matches are").
+  "costMax",
+  "collections",
 ] as const;
 export type MatchRecord = Pick<Adventure, (typeof MATCH_KEYS)[number]>;
 

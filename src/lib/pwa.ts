@@ -3,6 +3,14 @@
 // nothing in this file asks for a permission. No dependencies; storage access is always wrapped in try/catch.
 import { track, type EventName } from "@/passport/events";
 
+/**
+ * LAUNCH GATE (`pwaInstallPrompts`). While false, no proactive install prompt or install card renders anywhere, and no
+ * customer-facing page advertises installing or offline use. The /install guide stays reachable by URL (noindex).
+ * Flip to true only after the "Install prompts stay hidden until these pass" rule in docs/PWA-DEVICE-TEST.md is met
+ * on real devices. Q2 may later mirror this in commercial config; this constant is the one the components read.
+ */
+export const PWA_PROMPTS_ENABLED = false;
+
 export const INSTALL_DISMISS_KEY = "pp.install.dismissedAt";
 export const INSTALL_DETECTED_KEY = "pp.install.detected";
 export const INSTALL_COOLDOWN_MS = 90 * 24 * 60 * 60 * 1000;

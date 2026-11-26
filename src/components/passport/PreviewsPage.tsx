@@ -4,6 +4,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { AppLink } from "@/components/shell/AppLink";
 import { Container } from "@/components/shell/Container";
+import { ONE_PAYMENT_LINE } from "@/config/commercial";
 import { usePreviews } from "@/lib/usePreviews";
 import {
   filterPreviews,
@@ -225,7 +226,7 @@ export function PreviewsPage() {
                   {saved.length > 0
                     ? "They stay saved on this device, and they are still here if you get the full Passport. "
                     : "The full Passport opens every adventure's instructions. "}
-                  One-time purchase, no subscription, no account.
+                  {ONE_PAYMENT_LINE}
                 </p>
                 <div className="pa-row">
                   <AppLink

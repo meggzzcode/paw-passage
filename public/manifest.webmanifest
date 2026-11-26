@@ -5,7 +5,7 @@
   "description": "A lifetime of little adventures. The Adventure Passport for you and your dog.",
   "lang": "en-US",
   "dir": "ltr",
-  "start_url": "/",
+  "start_url": "/passport",
   "scope": "/",
   "display": "standalone",
   "orientation": "portrait-primary",

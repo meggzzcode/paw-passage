@@ -397,14 +397,27 @@ export function createNotificationsApi(deps: NotifApiDeps) {
         );
         return okRes({ ok: true }); // a pending bucket entry finds no plan and is dropped when due
       }
-      const p = validatePlan(await readBody(SMALL_MAX_BYTES), now);
+      const raw = await readBody(SMALL_MAX_BYTES);
+      const p = validatePlan(raw, now);
       if (!p || p.id !== id) return bad("bad_plan");
-      const plan: Plan = { ...p, updatedAt: now };
-      const box: { err: NotifResult | null } = { err: null };
+      // The client's own edit time decides (clamped, so a wrong clock cannot pin a plan in the far future). A write that
+      // is older than what is stored never overwrites it: the stored plan is returned and the client merges it.
+      const claimed =
+        isObj(raw) && typeof raw["updatedAt"] === "number" && raw["updatedAt"] > 0
+          ? Math.min(raw["updatedAt"], now + 5 * 60_000)
+          : now;
+      const plan: Plan = { ...p, updatedAt: claimed };
+      const box: { err: NotifResult | null; stale: Plan | null } = { err: null, stale: null };
       const out = await store.mutate(
         cus,
         (r) => {
           box.err = null;
+          box.stale = null;
+          const cur = r.plans.find((x) => x.id === id);
+          if (cur && cur.updatedAt > claimed) {
+            box.stale = cur;
+            return null;
+          }
           const others = r.plans.filter((x) => x.id !== id);
           const live = others.filter((x) => x.status === "planned").length;
           if (plan.status === "planned" && live >= MAX_LIVE_PLANS) {
@@ -426,6 +439,7 @@ export function createNotificationsApi(deps: NotifApiDeps) {
       );
       if (box.err) return box.err;
       if (!out) return bad("not_found", 404);
+      if (box.stale) return okRes({ ok: true, plan: box.stale, stale: true });
       await enqueuePlan(store, cus, plan, now);
       return okRes({ ok: true, plan });
     }

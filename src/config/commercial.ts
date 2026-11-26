@@ -1,0 +1,185 @@
+// The ONE place for commercial configuration: price, feature flags, homepage promo copy, seasonal collection mapping,
+// how featured adventures are chosen, and how verified counts are worded. Pages import from here (or from site.ts for
+// the offer itself); a test fails if a price or a hard-coded library count appears anywhere else in the source.
+//
+// Rules: nothing here is premium text, and nothing here names a premium adventure. Counts are never written down:
+// they come from the previews API (published total and collections) or from the server's match aggregates, and
+// when those are unavailable the wording below says so plainly instead of inventing a number.
+import { offer } from "./site";
+
+/** The price. Defined once, in `offer` in src/config/site.ts (it must equal the checkout listing). */
+export const price = offer.price;
+export const pricing = offer.pricing;
+/** The one-line promise repeated near purchase prompts. */
+export const ONE_PAYMENT_LINE = "One-time purchase, no subscription, no account.";
+
+/**
+ * Feature flags for what the pages may MENTION. A flag is false until the feature is shipped and verified, so the
+ * site never advertises something that is not there. Flipping a flag changes copy only; it does not build a feature.
+ */
+export const flags = {
+  /** Optional reminders in My Passport (push and calendar). Never required, never advertised as a reason to buy. */
+  notifications: true,
+  /** Trip itineraries. Shipped. */
+  itineraries: true,
+  /** Printable keepsakes and sheets. Shipped. */
+  printables: true,
+  /** The public "selected previews" showcase (the /previews page and the preview cards). */
+  previewsShowcase: true,
+} as const;
+
+/**
+ * How many selected previews the homepage shows, and how they are chosen: the API serves only adventures flagged
+ * `showcase: true` in the PRIVATE library data, so the choice is made there. This config never lists adventure ids
+ * and never names a premium card.
+ */
+export const featured = {
+  method: "showcase-flag-in-private-data",
+  homeCards: 3,
+} as const;
+
+/** Homepage promo copy. Keys, not layout: the page reads these so wording lives in one place. */
+export const homePromo = {
+  eyebrow: "Digital adventures for you and your dog",
+  titleLead: "Life is better with a little",
+  titleEm: "adventure",
+  lede: "Five-minute games at home, doggy dates, weekend adventures. A personalized library of little adventures for you and your dog, with a free first adventure picked just for them.",
+  points: [
+    "One free adventure to start",
+    "Personalized to your dog",
+    "One payment, not a subscription",
+    "No account",
+  ],
+  primaryCta: "Find Our First Adventure — Free",
+  secondaryCta: "Explore the Adventure Collection",
+  demo: {
+    eyebrow: "See it in action",
+    title: "From first look to a keepsake, in five steps",
+    intro:
+      "These are real screens from the free introductory adventure, on a sample dog. Nothing here is a premium adventure.",
+  },
+} as const;
+
+/** Honest wording for the library size. `total`/`collections` must come from the previews API, never from here. */
+export const LIBRARY_FALLBACK = "A much larger library of adventures, for every kind of dog.";
+export function libraryLine(
+  total: number | null | undefined,
+  collections: number | null | undefined,
+) {
+  if (typeof total !== "number" || !Number.isFinite(total) || total < 1) return LIBRARY_FALLBACK;
+  const c = typeof collections === "number" && collections > 0 ? collections : 0;
+  return `${total} adventures${c ? ` across ${c} ${c === 1 ? "collection" : "collections"}` : ""}, for every kind of dog.`;
+}
+
+/**
+ * Ideas for the current month, by calendar month (1 = January). Hemisphere-agnostic on purpose: only collections that
+ * do not depend on the weather or the season are mapped, and the copy names the month, never "summer" or "winter".
+ * Every slug must exist in content/collections.yml (a test checks).
+ */
+export const SEASONAL_COLLECTIONS: Readonly<Record<number, readonly string[]>> = {
+  1: ["five-minute-wonders", "home-sweet-home", "creative-companions"],
+  2: ["doggy-date-club", "creative-companions", "taste-and-treat"],
+  3: ["the-curious-explorer", "city-explorers", "seasons-together"],
+  4: ["seasons-together", "the-curious-explorer", "city-explorers"],
+  5: ["doggy-date-club", "city-explorers", "the-curious-explorer"],
+  6: ["seasons-together", "five-minute-wonders", "taste-and-treat"],
+  7: ["seasons-together", "taste-and-treat", "five-minute-wonders"],
+  8: ["seasons-together", "city-explorers", "the-playful-pup"],
+  9: ["seasons-together", "the-curious-explorer", "creative-companions"],
+  10: ["holidays-and-celebrations", "seasons-together", "doggy-date-club"],
+  11: ["holidays-and-celebrations", "home-sweet-home", "taste-and-treat"],
+  12: ["holidays-and-celebrations", "home-sweet-home", "five-minute-wonders"],
+};
+export const MONTH_NAMES = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+] as const;
+
+/** The mapped collection slugs for a month (1-12). Anything else gives an empty list. */
+export function seasonalFor(month: number): readonly string[] {
+  return SEASONAL_COLLECTIONS[month] ?? [];
+}
+
+/** The five-step product demonstration shown on the homepage. Images are real screens of the free adventure. */
+export type DemoStep = {
+  id: "discover" | "reveal" | "experience" | "collect" | "keepsake";
+  label: string;
+  title: string;
+  body: string;
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+};
+export const DEMO_STEPS: readonly DemoStep[] = [
+  {
+    id: "discover",
+    label: "Discover",
+    title: "Discover an adventure picked for your dog",
+    body: "Answer a few taps and see one pick with its time, cost, setting and effort. Not the steps yet. Ask for another as often as you like.",
+    src: "/demo/1-discover.webp",
+    alt: "A free adventure picked for a sample dog: a mystery title with its time, cost, setting and effort, what it needs, and a short reason it was chosen.",
+    width: 390,
+    height: 700,
+  },
+  {
+    id: "reveal",
+    label: "Reveal",
+    title: "Scratch or tap to reveal",
+    body: "When you say yes, the card is revealed with a scratch or a tap. Whichever you prefer.",
+    src: "/demo/2-reveal.webp",
+    alt: "The same card with a golden panel that says Scratch or tap to reveal, and a button to see another adventure instead.",
+    width: 390,
+    height: 700,
+  },
+  {
+    id: "experience",
+    label: "Experience",
+    title: "Go and do it together",
+    body: "Clear, gentle instructions, with signs to watch for. Put the phone away and stop whenever your dog wants to.",
+    src: "/demo/3-experience.webp",
+    alt: "The revealed free adventure with its twist, what you will need, practical details and numbered instructions.",
+    width: 390,
+    height: 700,
+  },
+  {
+    id: "collect",
+    label: "Collect",
+    title: "Collect a stamp",
+    body: "Finish whenever you like and a stamp lands in your passport. No streaks, no scores.",
+    src: "/demo/4-collect.webp",
+    alt: "A passport page showing three illustrated stamps earned from finishing the first adventure.",
+    width: 390,
+    height: 700,
+  },
+  {
+    id: "keepsake",
+    label: "Create",
+    title: "Create a keepsake",
+    body: "Turn the day into a postcard, a cover or a card. It is drawn on your device and your photo is never uploaded.",
+    src: "/demo/5-keepsake.webp",
+    alt: "A finished keepsake preview with a sample illustrated dog and a cover headline, with a Download button below.",
+    width: 390,
+    height: 700,
+  },
+] as const;
+
+/** The trust points repeated on the homepage, /unlock and /faq. Plain statements of what the product does today. */
+export const TRUST_POINTS: readonly { id: string; text: string }[] = [
+  { id: "digital", text: "Digital: nothing ships, and you use it in your browser" },
+  { id: "one-time", text: `One payment of ${price}, no subscription` },
+  { id: "no-extra", text: "Many adventures cost nothing extra to do" },
+  { id: "dogs", text: "Picks adapt to your dog and to you" },
+  { id: "photos", text: "Photos stay on your device" },
+  { id: "recovery", text: "Lost access? Restore it with your purchase code" },
+] as const;

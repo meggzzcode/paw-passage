@@ -201,9 +201,10 @@ function Panel() {
   else if (support === "ios-needs-install")
     body = (
       <p className="pa-fine">
-        On iPhone and iPad, reminders need Paws &amp; Passage added to your home screen first.{" "}
+        On iPhone and iPad, reminders need Paws &amp; Passage added to your home screen first, and
+        we have not confirmed them on every iPhone version.{" "}
         <AppLink to="/install" className="pa-linkbtn">
-          How to add it
+          Read the optional install guide
         </AppLink>
         . Calendar files work without it.
       </p>

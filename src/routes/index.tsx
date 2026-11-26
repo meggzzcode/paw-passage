@@ -6,12 +6,17 @@ import { Container } from "@/components/shell/Container";
 import { SectionHeading } from "@/components/shell/SectionHeading";
 import { Stamp } from "@/passport/art/stamps";
 import { pageHead } from "@/lib/seo";
-import { site, offer } from "@/config/site";
+import { site } from "@/config/site";
 import { PhotoFilterExamples } from "@/components/site/PhotoFilterExamples";
 import { FILTER_EXAMPLES } from "@/components/site/keepsake-examples";
 import { FaqList } from "@/components/site/FaqList";
 import { FAQS } from "@/components/site/faq-content";
 import { PurchasePrompt } from "@/components/site/PurchasePrompt";
+import { ProductDemo } from "@/components/site/ProductDemo";
+import { SeasonalPicks } from "@/components/site/SeasonalPicks";
+import { TrustStrip } from "@/components/site/TrustStrip";
+import { PreviewCards } from "@/components/site/PreviewCards";
+import { featured, flags, homePromo, libraryLine, price, pricing } from "@/config/commercial";
 import { unlockLine, usePremiumSummary } from "@/lib/premium-summary";
 import { usePreviews } from "@/lib/usePreviews";
 import { track } from "@/passport/events";
@@ -21,7 +26,7 @@ export const Route = createFileRoute("/")({
   head: () =>
     pageHead({
       title: `Dog Adventures, Free to Start | ${site.name}`,
-      description: `Life is better with a little adventure. One free adventure picked for your dog, then a large library for ${offer.price}, once. No subscription.`,
+      description: `Life is better with a little adventure. One free adventure picked for your dog, then a large library for ${price}, once. No subscription.`,
       path: "/",
     }),
   component: Home,
@@ -52,11 +57,10 @@ const COLLECTION_TASTE = [
 function Home() {
   const summary = usePremiumSummary();
   const previews = usePreviews();
-  const total = previews.data?.total ?? 0;
-  const cols = previews.data?.collections ?? 0;
+  // Counts are advertised only when the previews API verified them; otherwise the summary or honest fallback wording.
   const variety =
-    previews.status === "ready" && total > 0
-      ? `${total} adventures across ${cols} ${cols === 1 ? "collection" : "collections"}, for every kind of dog.`
+    previews.status === "ready" && (previews.data?.total ?? 0) > 0
+      ? libraryLine(previews.data?.total, previews.data?.collections)
       : unlockLine(summary);
   return (
     <>
@@ -64,25 +68,20 @@ function Home() {
         <Container>
           <div className="pp-hero-grid">
             <div>
-              <p className="pp-eyebrow">Digital adventures for you and your dog</p>
+              <p className="pp-eyebrow">{homePromo.eyebrow}</p>
               <h1 id="home-h1" className="pp-h1">
-                Life is better with a little <em>adventure</em>.
+                {homePromo.titleLead} <em>{homePromo.titleEm}</em>.
               </h1>
-              <p className="pp-lede">
-                Five-minute games at home, doggy dates, weekend adventures. A personalized library
-                of little adventures for you and your dog, with a free first adventure picked just
-                for them.
-              </p>
+              <p className="pp-lede">{homePromo.lede}</p>
               <ul className="pp-hero-points" aria-label="Good to know">
-                <li>One free adventure to start</li>
-                <li>Personalized to your dog</li>
-                <li>One payment, not a subscription</li>
-                <li>No account</li>
+                {homePromo.points.map((t) => (
+                  <li key={t}>{t}</li>
+                ))}
               </ul>
               <p className="pp-cta-row">
-                <Button to="/discover">Find Our First Adventure — Free</Button>
+                <Button to="/discover">{homePromo.primaryCta}</Button>
                 <Button to={PREVIEWS_PATH} variant="secondary">
-                  Explore the Adventure Collection
+                  {homePromo.secondaryCta}
                 </Button>
               </p>
               <p className="pp-fine">
@@ -92,7 +91,7 @@ function Home() {
                   className="pp-textlink"
                   onClick={() => track("purchase_cta_clicked", { where: "home-hero" })}
                 >
-                  Get the full Passport, {offer.price} once
+                  Get the full Passport, {price} once
                 </AppLink>
                 .
               </p>
@@ -111,6 +110,15 @@ function Home() {
       </section>
 
       <div className="pp-perf" aria-hidden="true" />
+
+      <section className="pp-section" aria-labelledby="demo-h">
+        <Container>
+          <SectionHeading eyebrow={homePromo.demo.eyebrow} title={homePromo.demo.title} id="demo-h">
+            {homePromo.demo.intro}
+          </SectionHeading>
+          <ProductDemo />
+        </Container>
+      </section>
 
       <section className="pp-section" aria-labelledby="benefit-h">
         <Container>
@@ -154,6 +162,16 @@ function Home() {
               See selected previews
             </Button>
           </p>
+          <SeasonalPicks />
+          {flags.previewsShowcase &&
+            previews.status === "ready" &&
+            (previews.data?.items.length ?? 0) > 0 && (
+              <PreviewCards
+                limit={featured.homeCards}
+                filter={(p) => p.access === "premium"}
+                heading="A few selected previews"
+              />
+            )}
         </Container>
       </section>
 
@@ -272,7 +290,7 @@ function Home() {
             <div className="pp-card pp-pad">
               <h3>The full Passport</h3>
               <p className="pp-price-line">
-                <strong>{offer.price}</strong> <span>{offer.pricing}</span>
+                <strong>{price}</strong> <span>{pricing}</span>
               </p>
               <ul className="pp-plainlist-dots">
                 <li>The whole library in every collection</li>
@@ -287,8 +305,10 @@ function Home() {
           </div>
           <p className="pp-fine mt-4">
             Many adventures cost nothing extra to do, and each shows its cost range before you
-            start.
+            start. One purchase covers your household on your own devices, and the Passport keeps
+            one dog profile at a time.
           </p>
+          <TrustStrip />
         </Container>
       </section>
 
@@ -313,9 +333,9 @@ function Home() {
             ready.
           </SectionHeading>
           <p className="mt-6 pp-cta-row">
-            <Button to="/discover">Find Our First Adventure — Free</Button>
+            <Button to="/discover">{homePromo.primaryCta}</Button>
             <Button to={PREVIEWS_PATH} variant="secondary">
-              Explore the Adventure Collection
+              {homePromo.secondaryCta}
             </Button>
           </p>
           <PurchasePrompt where="home" />

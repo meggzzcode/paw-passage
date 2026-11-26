@@ -3,15 +3,15 @@
 // fit the basics, and say so. Counts are never invented.
 import { useState } from "react";
 import { fetchMatch, type MatchResponse, type PreviewItem } from "@/lib/previews";
-import { matchPayload, previewFitsBasics } from "@/passport/preview-view";
+import { matchPayload, previewFitsBasics, savedIdCount } from "@/passport/preview-view";
+import { useEntitlement } from "@/passport/useEntitlement";
 import { usePassport } from "@/passport/usePassport";
+import { PurchaseValue } from "./PurchaseValue";
 
 type Result =
   | { kind: "match"; data: MatchResponse }
   | { kind: "fallback"; fit: number; of: number }
   | { kind: "unavailable" };
-
-const n = (count: number, one: string, many: string) => `${count} ${count === 1 ? one : many}`;
 
 export function PreviewMatch({
   items,
@@ -23,6 +23,7 @@ export function PreviewMatch({
   hasIntro?: boolean;
 }) {
   const { save } = usePassport();
+  const { status } = useEntitlement();
   const [busy, setBusy] = useState(false);
   const [result, setResult] = useState<Result | null>(null);
 
@@ -53,36 +54,16 @@ export function PreviewMatch({
         </button>
       </div>
       <div role="status" aria-live="polite">
-        {result?.kind === "match" && (
-          <>
-            <p className="pm-lead">
-              We found {n(result.data.matching, "adventure", "adventures")} that match your current
-              preferences.
-            </p>
-            <ul className="pa-list-plain">
-              {hasIntro && <li>1 is your free introductory adventure.</li>}
-              <li>
-                {n(result.data.previews.length, "matching adventure is", "matching adventures are")}{" "}
-                among the public previews.
-              </li>
-              <li>
-                The full Passport has all {result.data.matching}
-                {result.data.total > 0 ? `, from a library of ${result.data.total}` : ""}. This
-                count includes the introductory adventure and the previews.
-              </li>
-            </ul>
-          </>
-        )}
-        {result?.kind === "fallback" && (
-          <p>
-            We could not check the whole library just now. Of the {result.of} public previews,{" "}
-            {result.fit} fit the basics you told us (life stage, food, car and how far your dog
-            likes to move). The full check also looks at things a preview does not show, so treat
-            this as a rough guide.
-          </p>
-        )}
         {result?.kind === "unavailable" && (
           <p>We could not check right now. Please try again in a little while.</p>
+        )}
+        {result && result.kind !== "unavailable" && (
+          <PurchaseValue
+            result={result}
+            saved={savedIdCount(save)}
+            hasIntro={hasIntro}
+            entitled={status === "entitled"}
+          />
         )}
       </div>
     </section>

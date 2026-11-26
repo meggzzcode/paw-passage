@@ -8,13 +8,14 @@ export const Route = createFileRoute("/install")({
     pageHead({
       title: "Add to your home screen",
       description:
-        "Optional: keep Paws & Passage one tap away on iPhone, iPad, Android or your computer.",
+        "Optional: add Paws & Passage to your home screen. The website works fully in your browser.",
       path: "/install",
+      noindex: true,
     }),
   component: () => (
     <Container>
       <div className="pa-page">
-        <h1 className="pa-h1">Keep your adventures one tap away</h1>
+        <h1 className="pa-h1">Add to your home screen (optional)</h1>
         <InstallGuide />
       </div>
     </Container>

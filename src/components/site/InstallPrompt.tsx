@@ -1,6 +1,6 @@
-// A quiet, optional invitation to add the site to the home screen. Shown only where a parent places it (after a
-// purchase or after the first adventure or keepsake), never during discovery or checkout, never inside the installed
-// app, and not again for 90 days after "Not now". The website works the same without installing.
+// A quiet, optional invitation to add the site to the home screen. Renders nothing unless PWA_PROMPTS_ENABLED is true
+// AND the customer has purchased, activated, and the first sync succeeded (see useInstallEligible). Never during
+// discovery, checkout or the free flow; never inside the installed app; not again for 90 days after "Not now".
 import { useEffect, useState, useSyncExternalStore } from "react";
 import { AppLink } from "@/components/shell/AppLink";
 import {
@@ -14,6 +14,7 @@ import {
   subscribeInstallState,
   trackPwa,
 } from "@/lib/pwa";
+import { useInstallEligible } from "./useInstallEligibility";
 import "./install.css";
 
 export const INSTALL_HEADLINE = "Keep your adventures one tap away.";
@@ -22,12 +23,13 @@ export const INSTALL_BODY =
 
 export function InstallPrompt({ where }: { where: string }) {
   const [show, setShow] = useState(false);
+  const eligible = useInstallEligible();
   const native = useSyncExternalStore(subscribeInstallState, canPromptNatively, () => false);
   useEffect(() => {
     startInstallCapture();
     setShow(shouldShowInstallPrompt());
   }, []);
-  if (!show) return null;
+  if (!eligible || !show) return null;
 
   async function install() {
     trackPwa("install_initiated", { where, how: "native" });

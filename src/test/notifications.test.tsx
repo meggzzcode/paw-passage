@@ -214,7 +214,10 @@ describe("notification settings", () => {
       .mockReturnValue("Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS) Safari");
     expect(detectPushSupport()).toBe("ios-needs-install");
     render(<NotificationSettings />);
-    expect(screen.getByRole("link", { name: "How to add it" })).toHaveAttribute("href", "/install");
+    expect(screen.getByRole("link", { name: "Read the optional install guide" })).toHaveAttribute(
+      "href",
+      "/install",
+    );
     expect(calls).toHaveLength(0);
     ua.mockRestore();
   });
@@ -304,10 +307,19 @@ describe("upcoming adventures", () => {
       expect(calls.some((c) => c.method === "PUT" && c.url === `/api/schedule/${p.id}`)).toBe(true),
     );
     fireEvent.click(screen.getByRole("button", { name: /Cancel plan/ }));
+    // A cancel is sent as the plan's new state (a tombstone), not a delete, so other devices learn about it.
     await waitFor(() =>
-      expect(calls.some((c) => c.method === "DELETE" && c.url === `/api/schedule/${p.id}`)).toBe(
-        true,
-      ),
+      expect(
+        calls.some(
+          (c) =>
+            c.method === "PUT" &&
+            c.url === `/api/schedule/${p.id}` &&
+            (c.body as { status?: string } | undefined)?.status === "cancelled",
+        ),
+      ).toBe(true),
+    );
+    expect(calls.some((c) => c.method === "DELETE" && c.url.startsWith("/api/schedule/"))).toBe(
+      false,
     );
     expect(getPlans()[0]!.status).toBe("cancelled");
   });

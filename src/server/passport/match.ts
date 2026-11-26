@@ -7,6 +7,8 @@ import type { Adventure } from "../../passport/schema";
 import type { PreviewIndex } from "./previews";
 
 export const MATCH_MAX_BODY_BYTES = 4096;
+/** At most this many collection slugs are returned. */
+export const MATCH_MAX_COLLECTIONS = 6;
 
 const TRI = ["yes", "no", "unknown"] as const;
 const COMFORT = ["comfortable", "nervous", "unknown"] as const;
@@ -65,7 +67,12 @@ export function validateMatchBody(body: unknown): { dog: DogProfile; owner: Owne
   return { dog: dog as DogProfile, owner: own as OwnerPrefs };
 }
 
-/** Hard eligibility over the whole library, premium included. Held (unknown) cards are not eligible, so not counted. */
+/**
+ * Hard eligibility over the whole library, premium included. Held (unknown) cards are not eligible, so not counted.
+ * Additive aggregates: `matchingNoSpend` (matches whose cost ceiling is zero) and `collections` (slugs of collections
+ * with at least one match, most matches first, max 6). They are included only when every record in the stored pool
+ * carries the fields they need (an older index does not), so a missing number is absent, never a guessed zero.
+ */
 export function matchProfile(
   index: PreviewIndex | null,
   dog: DogProfile,
@@ -73,14 +80,33 @@ export function matchProfile(
 ): MatchResponse {
   if (!index) return { matching: 0, total: 0, previews: [] };
   const ok = new Set<string>();
+  let noSpend = 0;
+  const perCollection = new Map<string, number>();
+  let haveCost = true;
+  let haveCollections = true;
   for (const rec of index.pool) {
     // The engine reads structural fields only; the pool holds exactly those.
-    if (eligibility(rec as unknown as Adventure, { dog, owner, unlocked: true }).eligible)
-      ok.add(rec.id);
+    if (!eligibility(rec as unknown as Adventure, { dog, owner, unlocked: true }).eligible)
+      continue;
+    ok.add(rec.id);
+    if (typeof rec.costMax === "number") {
+      if (rec.costMax <= 0) noSpend += 1;
+    } else haveCost = false;
+    if (Array.isArray(rec.collections))
+      for (const slug of new Set(rec.collections))
+        perCollection.set(slug, (perCollection.get(slug) ?? 0) + 1);
+    else haveCollections = false;
   }
-  return {
+  const out: MatchResponse = {
     matching: ok.size,
     total: index.total,
     previews: index.items.filter((i) => ok.has(i.id)).map((i) => i.id),
   };
+  if (haveCost) out.matchingNoSpend = noSpend;
+  if (haveCollections)
+    out.collections = [...perCollection.entries()]
+      .sort((a, b) => b[1] - a[1] || (a[0] < b[0] ? -1 : 1))
+      .slice(0, MATCH_MAX_COLLECTIONS)
+      .map(([slug]) => slug);
+  return out;
 }

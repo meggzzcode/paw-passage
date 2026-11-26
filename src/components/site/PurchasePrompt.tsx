@@ -1,7 +1,7 @@
 // A quiet, in-page purchase prompt. No modal, no popup, no urgency, no discount. Placed where a visitor has just
 // seen something they might want more of. `where` is a slug (it is sent to analytics as-is, so keep it plain).
 import { AppLink } from "@/components/shell/AppLink";
-import { offer } from "@/config/site";
+import { price } from "@/config/commercial";
 import { track } from "@/passport/events";
 
 export type PromptPlace =
@@ -73,7 +73,7 @@ export function PurchasePrompt({ where, count }: { where: PromptPlace | string; 
           className="pp-btn pp-btn-secondary pp-btn-sm"
           onClick={() => track("purchase_cta_clicked", { where })}
         >
-          See what is included, {offer.price}
+          See what is included, {price}
         </AppLink>
       </p>
     </aside>

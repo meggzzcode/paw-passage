@@ -1,3 +1,5 @@
+import { Shortcuts } from "./Shortcuts";
+import { Itineraries } from "./Itineraries";
 import { useRef, useState } from "react";
 import { Container } from "@/components/shell/Container";
 import { Onboarding } from "./Onboarding";
@@ -64,6 +66,9 @@ function FullDiscover({ mode, onMode }: { mode: DiscoverMode; onMode: (m: Discov
           Your full Passport. No deadlines. Pick one when it suits you
           {profile.name ? ` and ${profile.name}` : ""}.
         </p>
+
+        <Shortcuts />
+        <Itineraries />
 
         {showBanner && (
           <aside className="pd-banner" aria-label="Personalize">

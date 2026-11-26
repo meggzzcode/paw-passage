@@ -37,12 +37,15 @@ import { Route as TermsRouteImport } from './routes/terms'
 import { Route as ThingsToDoWithYourDogRouteImport } from './routes/things-to-do-with-your-dog'
 import { Route as UnlockRouteImport } from './routes/unlock'
 import { Route as WeekendAdventureFinderRouteImport } from './routes/weekend-adventure-finder'
+import { Route as WelcomeRouteImport } from './routes/welcome'
 import { Route as CollectionsIndexRouteImport } from './routes/collections.index'
 import { Route as CollectionsSlugRouteImport } from './routes/collections.$slug'
 import { Route as GearIndexRouteImport } from './routes/gear.index'
 import { Route as GearCategoryRouteImport } from './routes/gear.$category'
 import { Route as GuidesIndexRouteImport } from './routes/guides.index'
 import { Route as GuidesSlugRouteImport } from './routes/guides.$slug'
+import { Route as PrintablesIndexRouteImport } from './routes/printables.index'
+import { Route as PrintablesSlugRouteImport } from './routes/printables.$slug'
 import { Route as ToolsPackingListRouteImport } from './routes/tools.packing-list'
 import { Route as CollectionsMineIdRouteImport } from './routes/collections.mine.$id'
 
@@ -187,6 +190,11 @@ const WeekendAdventureFinderRoute = WeekendAdventureFinderRouteImport.update({
   path: '/weekend-adventure-finder',
   getParentRoute: () => rootRouteImport,
 } as any)
+const WelcomeRoute = WelcomeRouteImport.update({
+  id: '/welcome',
+  path: '/welcome',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const CollectionsIndexRoute = CollectionsIndexRouteImport.update({
   id: '/collections/',
   path: '/collections/',
@@ -215,6 +223,16 @@ const GuidesIndexRoute = GuidesIndexRouteImport.update({
 const GuidesSlugRoute = GuidesSlugRouteImport.update({
   id: '/guides/$slug',
   path: '/guides/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrintablesIndexRoute = PrintablesIndexRouteImport.update({
+  id: '/printables/',
+  path: '/printables/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrintablesSlugRoute = PrintablesSlugRouteImport.update({
+  id: '/printables/$slug',
+  path: '/printables/$slug',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ToolsPackingListRoute = ToolsPackingListRouteImport.update({
@@ -257,13 +275,16 @@ export interface FileRoutesByFullPath {
   '/things-to-do-with-your-dog': typeof ThingsToDoWithYourDogRoute
   '/unlock': typeof UnlockRoute
   '/weekend-adventure-finder': typeof WeekendAdventureFinderRoute
+  '/welcome': typeof WelcomeRoute
   '/collections/$slug': typeof CollectionsSlugRoute
   '/gear/$category': typeof GearCategoryRoute
   '/guides/$slug': typeof GuidesSlugRoute
+  '/printables/$slug': typeof PrintablesSlugRoute
   '/tools/packing-list': typeof ToolsPackingListRoute
   '/collections/': typeof CollectionsIndexRoute
   '/gear/': typeof GearIndexRoute
   '/guides/': typeof GuidesIndexRoute
+  '/printables/': typeof PrintablesIndexRoute
   '/collections/mine/$id': typeof CollectionsMineIdRoute
 }
 export interface FileRoutesByTo {
@@ -295,13 +316,16 @@ export interface FileRoutesByTo {
   '/things-to-do-with-your-dog': typeof ThingsToDoWithYourDogRoute
   '/unlock': typeof UnlockRoute
   '/weekend-adventure-finder': typeof WeekendAdventureFinderRoute
+  '/welcome': typeof WelcomeRoute
   '/collections/$slug': typeof CollectionsSlugRoute
   '/gear/$category': typeof GearCategoryRoute
   '/guides/$slug': typeof GuidesSlugRoute
+  '/printables/$slug': typeof PrintablesSlugRoute
   '/tools/packing-list': typeof ToolsPackingListRoute
   '/collections': typeof CollectionsIndexRoute
   '/gear': typeof GearIndexRoute
   '/guides': typeof GuidesIndexRoute
+  '/printables': typeof PrintablesIndexRoute
   '/collections/mine/$id': typeof CollectionsMineIdRoute
 }
 export interface FileRoutesById {
@@ -334,13 +358,16 @@ export interface FileRoutesById {
   '/things-to-do-with-your-dog': typeof ThingsToDoWithYourDogRoute
   '/unlock': typeof UnlockRoute
   '/weekend-adventure-finder': typeof WeekendAdventureFinderRoute
+  '/welcome': typeof WelcomeRoute
   '/collections/$slug': typeof CollectionsSlugRoute
   '/gear/$category': typeof GearCategoryRoute
   '/guides/$slug': typeof GuidesSlugRoute
+  '/printables/$slug': typeof PrintablesSlugRoute
   '/tools/packing-list': typeof ToolsPackingListRoute
   '/collections/': typeof CollectionsIndexRoute
   '/gear/': typeof GearIndexRoute
   '/guides/': typeof GuidesIndexRoute
+  '/printables/': typeof PrintablesIndexRoute
   '/collections/mine/$id': typeof CollectionsMineIdRoute
 }
 export interface FileRouteTypes {
@@ -374,13 +401,16 @@ export interface FileRouteTypes {
     | '/things-to-do-with-your-dog'
     | '/unlock'
     | '/weekend-adventure-finder'
+    | '/welcome'
     | '/collections/$slug'
     | '/gear/$category'
     | '/guides/$slug'
+    | '/printables/$slug'
     | '/tools/packing-list'
     | '/collections/'
     | '/gear/'
     | '/guides/'
+    | '/printables/'
     | '/collections/mine/$id'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -412,13 +442,16 @@ export interface FileRouteTypes {
     | '/things-to-do-with-your-dog'
     | '/unlock'
     | '/weekend-adventure-finder'
+    | '/welcome'
     | '/collections/$slug'
     | '/gear/$category'
     | '/guides/$slug'
+    | '/printables/$slug'
     | '/tools/packing-list'
     | '/collections'
     | '/gear'
     | '/guides'
+    | '/printables'
     | '/collections/mine/$id'
   id:
     | '__root__'
@@ -450,13 +483,16 @@ export interface FileRouteTypes {
     | '/things-to-do-with-your-dog'
     | '/unlock'
     | '/weekend-adventure-finder'
+    | '/welcome'
     | '/collections/$slug'
     | '/gear/$category'
     | '/guides/$slug'
+    | '/printables/$slug'
     | '/tools/packing-list'
     | '/collections/'
     | '/gear/'
     | '/guides/'
+    | '/printables/'
     | '/collections/mine/$id'
   fileRoutesById: FileRoutesById
 }
@@ -489,13 +525,16 @@ export interface RootRouteChildren {
   ThingsToDoWithYourDogRoute: typeof ThingsToDoWithYourDogRoute
   UnlockRoute: typeof UnlockRoute
   WeekendAdventureFinderRoute: typeof WeekendAdventureFinderRoute
+  WelcomeRoute: typeof WelcomeRoute
   CollectionsSlugRoute: typeof CollectionsSlugRoute
   GearCategoryRoute: typeof GearCategoryRoute
   GuidesSlugRoute: typeof GuidesSlugRoute
+  PrintablesSlugRoute: typeof PrintablesSlugRoute
   ToolsPackingListRoute: typeof ToolsPackingListRoute
   CollectionsIndexRoute: typeof CollectionsIndexRoute
   GearIndexRoute: typeof GearIndexRoute
   GuidesIndexRoute: typeof GuidesIndexRoute
+  PrintablesIndexRoute: typeof PrintablesIndexRoute
   CollectionsMineIdRoute: typeof CollectionsMineIdRoute
 }
 
@@ -697,6 +736,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof WeekendAdventureFinderRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/welcome': {
+      id: '/welcome'
+      path: '/welcome'
+      fullPath: '/welcome'
+      preLoaderRoute: typeof WelcomeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/collections/': {
       id: '/collections/'
       path: '/collections'
@@ -737,6 +783,20 @@ declare module '@tanstack/react-router' {
       path: '/guides/$slug'
       fullPath: '/guides/$slug'
       preLoaderRoute: typeof GuidesSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/printables/': {
+      id: '/printables/'
+      path: '/printables'
+      fullPath: '/printables/'
+      preLoaderRoute: typeof PrintablesIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/printables/$slug': {
+      id: '/printables/$slug'
+      path: '/printables/$slug'
+      fullPath: '/printables/$slug'
+      preLoaderRoute: typeof PrintablesSlugRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/tools/packing-list': {
@@ -785,13 +845,16 @@ const rootRouteChildren: RootRouteChildren = {
   ThingsToDoWithYourDogRoute: ThingsToDoWithYourDogRoute,
   UnlockRoute: UnlockRoute,
   WeekendAdventureFinderRoute: WeekendAdventureFinderRoute,
+  WelcomeRoute: WelcomeRoute,
   CollectionsSlugRoute: CollectionsSlugRoute,
   GearCategoryRoute: GearCategoryRoute,
   GuidesSlugRoute: GuidesSlugRoute,
+  PrintablesSlugRoute: PrintablesSlugRoute,
   ToolsPackingListRoute: ToolsPackingListRoute,
   CollectionsIndexRoute: CollectionsIndexRoute,
   GearIndexRoute: GearIndexRoute,
   GuidesIndexRoute: GuidesIndexRoute,
+  PrintablesIndexRoute: PrintablesIndexRoute,
   CollectionsMineIdRoute: CollectionsMineIdRoute,
 }
 export const routeTree = rootRouteImport

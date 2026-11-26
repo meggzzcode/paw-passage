@@ -218,7 +218,16 @@ describe("POST /api/previews/match", () => {
     const { kv, free, premium } = await seeded();
     const r = await harness(kv).call("POST", "/api/previews/match", { dog, owner: {} });
     expect(r.status).toBe(200);
-    expect(Object.keys(r.json).sort()).toEqual(["matching", "previews", "total"]);
+    expect(Object.keys(r.json).sort()).toEqual([
+      "collections",
+      "matching",
+      "matchingNoSpend",
+      "previews",
+      "total",
+    ]);
+    expect(r.json.matchingNoSpend).toBeLessThanOrEqual(r.json.matching);
+    expect(r.json.collections.length).toBeLessThanOrEqual(6);
+    for (const c of r.json.collections) expect(c).toMatch(/^[a-z0-9-]+$/);
     expect(r.json.total).toBe(free.length + 4);
     // pre001, pre003 and pre004 suit an adult who does food; pre002 is puppy-only; pre005 is a draft.
     const premiumMatches = 3;

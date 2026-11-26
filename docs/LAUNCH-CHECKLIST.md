@@ -68,3 +68,10 @@ Items 1 to 5 are external verification or setup. Gift checkout is an optional ev
 2. Set production environment variables (CW-NET-4), import the premium library with `--env production --write --yes-production`, export a backup.
 3. Deploy, run `scripts/verify-site.mjs`, run one permitted purchase and refund (CW-PAY-4).
 4. Keep the previous deploy available for rollback until the first week is clean.
+
+## PWA install (added 2026-11-26)
+
+| #   | Gate                                                                                                                                                        | Status  | Evidence or blocker                                                                                      |
+| --- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- | -------------------------------------------------------------------------------------------------------- |
+| PW1 | Install prompts stay hidden (`PWA_PROMPTS_ENABLED = false`), `/install` is noindex and unlinked, nothing customer-facing claims PWA or offline use          | Pass    | `src/test/pwa-gate.test.tsx`                                                                             |
+| PW2 | Home-screen install, authentication continuity, Restore Access fallback, empty-state protection, updates and notification delivery verified on real devices | Blocked | `docs/PWA-DEVICE-TEST.md` (owner or Cowork); does not block launch; the flag stays false until it passes |

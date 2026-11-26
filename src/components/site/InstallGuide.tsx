@@ -24,9 +24,14 @@ export function InstallGuide() {
   return (
     <div className="ins-guide">
       <p className="pa-sub">
-        Installing is optional. Paws &amp; Passage works the same in your browser, and you never
-        need to install to use or buy anything. Adding it to your home screen just puts it one tap
-        away.
+        Installing is optional. The website works fully in your browser, and you never need to
+        install to use or buy anything. A home-screen icon is just a shortcut.
+      </p>
+      <p className="pa-fine" id="ins-free-note">
+        Free adventures and progress are saved on this device only, with no account. A home-screen
+        app keeps its own separate storage, so progress made in the browser will not appear in it,
+        and clearing site data removes it. Exporting a backup from My Passport is optional. Paid
+        Passport owners can restore access with their purchase code.
       </p>
 
       <section aria-labelledby="ins-ios">
@@ -88,11 +93,12 @@ export function InstallGuide() {
           Restore access
         </h2>
         <p>
-          The installed app can keep its own saved progress, separate from your browser, especially
-          on iPhone and iPad. If your progress or Passport access is missing after installing, use{" "}
+          A home-screen app can start with its own empty storage, especially on iPhone and iPad. If
+          your Passport access is missing after installing, use{" "}
           <AppLink to="/restore-access">Restore access</AppLink> with the code from your purchase
-          email, or import a progress file you exported earlier from My Passport. The free adventure
-          needs no code. Your purchase code is never put in a web address.
+          email; your saved progress then comes back from your account. Free progress can be moved
+          only by exporting and importing a file in My Passport. Your purchase code is never put in
+          a web address.
         </p>
       </section>
     </div>

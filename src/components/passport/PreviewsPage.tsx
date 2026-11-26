@@ -1,4 +1,4 @@
-// The public previews showcase. Anyone can browse it: no survey, no account, no purchase. The page says plainly that
+// The public previews showcase. Anyone can browse it: no quiz, no account, no purchase. The page says plainly that
 // these are selected previews from a larger collection, using the verified totals from the API (or plain wording when
 // they cannot be loaded). Saving a preview is local to this device.
 import { useEffect, useMemo, useState } from "react";

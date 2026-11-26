@@ -63,7 +63,7 @@ No other recurring costs are known. There is no subscription, no AI API cost and
 
 **Headline:** The Adventure Passport - a built, pre-launch product for dog owners: collectible little adventures, free samples, a one-time paid library.
 
-**What it is:** A complete web product on TanStack Start, Netlify Functions and Netlify Blobs. Visitors answer a short dog survey and get one free adventure picked for their dog with no account, a matching engine that picks adventures for their dog, collections (20 defined), stamps and milestones, memory notes and keepsake images made on the device. A one-time purchase through Gumroad is designed to unlock a much larger protected library, synced progress and more keepsakes.
+**What it is:** A complete web product on TanStack Start, Netlify Functions and Netlify Blobs. Visitors answer a short dog quiz and get one free adventure picked for their dog with no account, a matching engine that picks adventures for their dog, collections (20 defined), stamps and milestones, memory notes and keepsake images made on the device. A one-time purchase through Gumroad is designed to unlock a much larger protected library, synced progress and more keepsakes.
 
 **What is true and checkable:**
 

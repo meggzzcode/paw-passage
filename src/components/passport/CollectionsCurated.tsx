@@ -92,8 +92,7 @@ export function CuratedDetail({ c }: { c: Collection }) {
         <div className="pa-card">
           <p>The adventures in this collection are in the full Passport.</p>
           <p className="pa-fine">
-            Free visitors get one adventure picked for their dog. Take the short survey to get
-            yours.
+            Free visitors get one adventure picked for their dog. Take the short quiz to get yours.
           </p>
           <div className="pa-row">
             <Button to="/discover">Get my free pick</Button>

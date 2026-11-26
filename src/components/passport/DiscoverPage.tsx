@@ -34,7 +34,7 @@ function useDiscoverData() {
 }
 
 /**
- * Free visitors get one adventure picked for their dog (a short survey, then "Your first adventure"). The full
+ * Free visitors get one adventure picked for their dog (a short quiz, then "Your first adventure"). The full
  * browse / mystery / made-for-you experience is for entitled visitors. This is a product choice, not a security gate.
  */
 export function DiscoverPage(props: { mode: DiscoverMode; onMode: (m: DiscoverMode) => void }) {

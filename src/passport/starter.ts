@@ -1,4 +1,4 @@
-// The one free introductory adventure. A free visitor answers a short survey and the engine picks the single best match from the
+// The one free introductory adventure. A free visitor answers a short quiz and the engine picks the single best match from the
 // public free pool. Hard eligibility comes first (never overridden), unknown answers are never "safe", and a dog we
 // know nothing about gets the gentle default. No network, no randomness beyond the engine's fixed tie-break.
 import { eligibility, rank, type Ctx, type History } from "./engine";

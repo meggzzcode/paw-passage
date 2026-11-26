@@ -1,4 +1,4 @@
-// The free experience: a short preference survey, then ONE introductory adventure picked for this dog.
+// The free experience: a short preference quiz, then ONE introductory adventure picked for this dog.
 // Flow: understand the product -> "Find Our First Adventure" -> a few preferences -> a recommendation shown with
 // practical info only (time, cost, setting, effort, prerequisites, restrictions; NOT the steps) -> Accept, or
 // "Show me another" as often as you like (never the same one twice in a session) -> reveal -> complete whenever ->

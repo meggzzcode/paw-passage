@@ -40,7 +40,7 @@ About 50 curated showcase adventures are served from an allowlisted public recor
 
 ## Free first adventure (one tailored adventure)
 
-`src/passport/starter.ts` (`selectStarter`, `savedStarter`) runs `rank()` over the public free pool (about 13 to 15 adventures) for the survey answers and takes the top result; "show me another" excludes ones already offered this visit. The pick is saved in the local Save as the additive optional field `starter: { id, at }` (`chooseStarter` in `progress.ts`), so it does not change on each visit. Re-answering the survey may change it only until that adventure is completed; after that it stays as the free keepsake and can be re-read. If no free adventure is eligible the page says so plainly and shows the unlock pitch. The gate is a product and UX choice, not security: the free pool is public in this repository. The free flow makes no network call.
+`src/passport/starter.ts` (`selectStarter`, `savedStarter`) runs `rank()` over the public free pool (about 13 to 15 adventures) for the quiz answers and takes the top result; "show me another" excludes ones already offered this visit. The pick is saved in the local Save as the additive optional field `starter: { id, at }` (`chooseStarter` in `progress.ts`), so it does not change on each visit. Re-answering the quiz may change it only until that adventure is completed; after that it stays as the free keepsake and can be re-read. If no free adventure is eligible the page says so plainly and shows the unlock pitch. The gate is a product and UX choice, not security: the free pool is public in this repository. The free flow makes no network call.
 
 ## Discovery modes (full Passport)
 

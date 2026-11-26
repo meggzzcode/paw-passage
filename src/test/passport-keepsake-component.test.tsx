@@ -17,6 +17,14 @@ vi.mock("../passport/keepsake/artwork", async (orig) => {
     makeArtworkBlob: async () => new Blob(["png"], { type: "image/png" }),
   };
 });
+vi.mock("../passport/keepsake/filter", async (orig) => {
+  const real = await orig<typeof import("../passport/keepsake/filter")>();
+  return {
+    ...real,
+    drawFilterPreview: () => true,
+    makeFilterBlob: async () => new Blob(["png"], { type: "image/png" }),
+  };
+});
 vi.mock("../passport/keepsake/render", async (orig) => {
   const real = await orig<typeof import("../passport/keepsake/render")>();
   return {
@@ -65,6 +73,7 @@ describe("<Keepsake />", () => {
 
   it("prefills the dog name from the profile when none is passed, limits the memory to 140", () => {
     render(<Keepsake adventure={adventure} memory={"m".repeat(200)} />);
+    fireEvent.click(screen.getByRole("radio", { name: /Keepsake card/ }));
     expect(screen.getByDisplayValue("Pip")).toBeInTheDocument();
     expect(screen.getByText("140 of 140")).toBeInTheDocument();
   });
@@ -82,8 +91,43 @@ describe("<Keepsake />", () => {
     expect(screen.getByRole("radio", { name: /Story/ })).toBeChecked();
   });
 
+  it("makes the photo filter the default, with the keepsake card as a labelled second choice", () => {
+    render(<Keepsake adventure={adventure} memory="" />);
+    expect(screen.getByRole("radio", { name: /Make my photo filter/ })).toBeChecked();
+    expect(screen.getByRole("radio", { name: /Keepsake card/ })).not.toBeChecked();
+    expect(screen.getByRole("button", { name: "Try another look" })).toBeInTheDocument();
+    expect(screen.queryByText(/A short memory/)).toBeNull();
+    fireEvent.click(screen.getByRole("radio", { name: /Keepsake card/ }));
+    expect(screen.queryByRole("button", { name: "Try another look" })).toBeNull();
+    expect(screen.getByText(/A short memory/)).toBeInTheDocument();
+  });
+
+  it("cycles through four looks with Try another look and comes back to the first", () => {
+    render(<Keepsake adventure={adventure} memory="" />);
+    const seen: string[] = [];
+    for (let i = 0; i < 5; i++) {
+      seen.push(
+        /Look \d of 4: (.*)/.exec(screen.getByText(/Look \d of 4/).textContent ?? "")?.[1] ?? "",
+      );
+      fireEvent.click(screen.getByRole("button", { name: "Try another look" }));
+    }
+    expect(new Set(seen.slice(0, 4)).size).toBe(4);
+    expect(seen[4]).toBe(seen[0]);
+  });
+
+  it("downloads the filter with a look and size specific name, and never claims a post", async () => {
+    sharedResult.value = "download";
+    render(<Keepsake adventure={adventure} memory="" />);
+    fireEvent.click(screen.getByRole("radio", { name: /Story/ }));
+    fireEvent.click(screen.getByRole("button", { name: "Share" }));
+    await waitFor(() => expect(downloaded).toHaveLength(1));
+    expect(downloaded[0]).toMatch(/^paws-and-passage-filter-[a-z0-9-]+-story\.png$/);
+    expect(screen.getByRole("status").textContent).toMatch(/Nothing was posted/);
+  });
+
   it("downloads with a size-specific name", async () => {
     render(<Keepsake adventure={adventure} memory="" />);
+    fireEvent.click(screen.getByRole("radio", { name: /Keepsake card/ }));
     fireEvent.click(screen.getByRole("radio", { name: /Square/ }));
     fireEvent.click(screen.getByRole("button", { name: "Download PNG" }));
     await waitFor(() => expect(downloaded).toEqual(["paw-and-passage-magazine-cover-square.png"]));
@@ -93,6 +137,7 @@ describe("<Keepsake />", () => {
   it("falls back to a download with an honest message and never claims a post", async () => {
     sharedResult.value = "download";
     render(<Keepsake adventure={adventure} memory="" />);
+    fireEvent.click(screen.getByRole("radio", { name: /Keepsake card/ }));
     fireEvent.click(screen.getByRole("button", { name: "Share" }));
     await waitFor(() => expect(downloaded).toHaveLength(1));
     const msg = screen.getByRole("status").textContent ?? "";
@@ -104,6 +149,7 @@ describe("<Keepsake />", () => {
   it("says so when sharing is cancelled", async () => {
     sharedResult.value = "cancelled";
     render(<Keepsake adventure={adventure} memory="" />);
+    fireEvent.click(screen.getByRole("radio", { name: /Keepsake card/ }));
     fireEvent.click(screen.getByRole("button", { name: "Share" }));
     await waitFor(() => expect(screen.getByRole("status")).toHaveTextContent(/cancelled/));
     expect(downloaded).toHaveLength(0);
@@ -146,6 +192,8 @@ describe("<Keepsake />", () => {
 
   it("then-and-now asks for two photos", () => {
     render(<Keepsake adventure={collageAdv} memory="" />);
+    expect(screen.queryByText("Then photo")).toBeNull();
+    fireEvent.click(screen.getByRole("radio", { name: /Keepsake card/ }));
     expect(screen.getByText("Then photo")).toBeInTheDocument();
     expect(screen.getByText("Now photo")).toBeInTheDocument();
   });

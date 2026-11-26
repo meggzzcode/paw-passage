@@ -583,7 +583,7 @@ function renderCertificate(ctx: Ctx, spec: KeepsakeSpec): void {
   ctx.fillStyle = MUTED;
   ctx.textAlign = "center";
   ctx.fillText(date || "Date", 265, 1092);
-  ctx.fillText("Paw & Passage", W - 265, 1092);
+  ctx.fillText("Paws & Passage", W - 265, 1092);
   footer(ctx, W, H);
 }
 

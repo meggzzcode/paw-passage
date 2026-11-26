@@ -909,7 +909,7 @@ export const certificate: FamilyDef = {
       color: softOn(c.bg, t),
       align: "center",
     });
-    para(ctx, "Paw & Passage", W - 255, sy + 48, {
+    para(ctx, "Paws & Passage", W - 255, sy + 48, {
       w: 240,
       lines: 1,
       size: 22,

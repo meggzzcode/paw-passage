@@ -9,6 +9,20 @@ import {
   type ArtSpec,
   type SizeId,
 } from "@/passport/keepsake/artwork";
+import {
+  drawFilterPreview,
+  explainerFor,
+  filterPhotoSlot,
+  makeFilterBlob,
+  stampTitle,
+  type FilterSpec,
+} from "@/passport/keepsake/filter";
+import {
+  filterStyleLabel,
+  looksForTheme,
+  nextLook,
+  type FilterStyleId,
+} from "@/passport/keepsake/filter-styles";
 import { MEMORY_MAX, downloadBlob, shareBlob } from "@/passport/keepsake/render";
 import {
   closePhoto,
@@ -24,6 +38,8 @@ import { PhotoEditor } from "./PhotoEditor";
 
 const SIZE_IDS: SizeId[] = ["square", "portrait", "story"];
 
+type Mode = "filter" | "card";
+
 function slotNames(family: KeepsakeFamily, count: number): string[] {
   if (family === "then-and-now") return ["Then photo", "Now photo"];
   if (family === "collage") return Array.from({ length: count }, (_, i) => `Photo ${i + 1}`);
@@ -35,8 +51,9 @@ function fileName(family: string, size: SizeId): string {
 }
 
 /**
- * The whole keepsake flow: pick or take a photo (or use the illustrated option), frame it, add a name and
- * a short memory, preview, then download or share. Photos stay in memory on this device: they are never
+ * The whole keepsake flow, in two modes. "Make my photo filter" (the default) puts a small playful overlay on the
+ * photo: sticker title, one explainer line, a name and date stamp and a tiny brand mark. "Keepsake card" is the
+ * illustrated artwork. In both: pick or take a photo (or skip it): frame it, add a name, preview, then download or share. Photos stay in memory on this device: they are never
  * uploaded or stored, and the exported PNG is a fresh canvas encode with no original metadata.
  */
 export function Keepsake({
@@ -49,6 +66,11 @@ export function Keepsake({
   memory?: string | undefined;
 }) {
   const { family, theme, headline, subhead } = adventure.keepsake;
+  const [mode, setMode] = useState<Mode>("filter");
+  const isFilter = mode === "filter";
+  const [lookIdx, setLookIdx] = useState(0);
+  const looks = useMemo(() => looksForTheme(theme), [theme]);
+  const look: FilterStyleId = looks[lookIdx % looks.length] ?? looks[0]!;
   const limits = photoLimits(family);
   const [photos, setPhotos] = useState<(PlacedPhoto | null)[]>([]);
   const [active, setActive] = useState(0);
@@ -80,9 +102,14 @@ export function Keepsake({
   );
 
   const filled = photos.filter(Boolean).length;
-  const shown =
-    family === "then-and-now" ? 2 : family === "collage" ? Math.min(limits.max, filled + 1) : 1;
-  const names = slotNames(family, shown);
+  const shown = isFilter
+    ? 1
+    : family === "then-and-now"
+      ? 2
+      : family === "collage"
+        ? Math.min(limits.max, filled + 1)
+        : 1;
+  const names = isFilter ? ["Photo"] : slotNames(family, shown);
 
   const spec: ArtSpec = useMemo(
     () => ({
@@ -97,6 +124,20 @@ export function Keepsake({
     }),
     [family, theme, headline, subhead, name, date, note, size],
   );
+  const filterSpec: FilterSpec = useMemo(
+    () => ({
+      family,
+      theme,
+      title: headline || adventure.title,
+      explainer: explainerFor(adventure.keepsake.explainer, adventure.objective),
+      dogName: name,
+      date,
+      stamp: stampTitle(adventure.stamps),
+      size,
+      style: look,
+    }),
+    [family, theme, headline, adventure, name, date, size, look],
+  );
   const ordered = useMemo(
     () => (family === "collage" ? photos.filter(Boolean) : photos.slice(0, limits.max)),
     [family, photos, limits.max],
@@ -108,13 +149,14 @@ export function Keepsake({
     if (!c) return;
     const raf = requestAnimationFrame(() => {
       try {
-        drawPreview(c, spec, { photos: ordered });
+        if (isFilter) drawFilterPreview(c, filterSpec, photos[0] ?? null);
+        else drawPreview(c, spec, { photos: ordered });
       } catch {
         setStatus("Sorry, this browser couldn't draw the preview.");
       }
     });
     return () => cancelAnimationFrame(raf);
-  }, [spec, ordered]);
+  }, [spec, ordered, isFilter, filterSpec, photos]);
 
   const setSlot = useCallback(
     (i: number, next: PlacedPhoto | null) => {
@@ -157,17 +199,23 @@ export function Keepsake({
   const activeIdx = Math.min(active, Math.max(0, shown - 1));
   const activePhoto = photos[activeIdx] ?? null;
   const editorAspect = useMemo(() => {
+    if (isFilter) {
+      const r = filterPhotoSlot(filterSpec);
+      return r.w / r.h;
+    }
     const count = family === "collage" ? Math.max(1, filled) : 1;
     const s = photoSlots(spec, count)[
       family === "collage" ? Math.min(activeIdx, count - 1) : activeIdx
     ];
     return s ? s.w / s.h : 1;
-  }, [spec, family, filled, activeIdx]);
+  }, [spec, family, filled, activeIdx, isFilter, filterSpec]);
 
   async function build(): Promise<Blob | null> {
     setBusy(true);
     try {
-      const b = await makeArtworkBlob(spec, { photos: ordered });
+      const b = isFilter
+        ? await makeFilterBlob(filterSpec, photos[0] ?? null)
+        : await makeArtworkBlob(spec, { photos: ordered });
       track("keepsake_created", { adventure: adventure.id });
       return b;
     } catch {
@@ -178,10 +226,12 @@ export function Keepsake({
     }
   }
 
+  const outName = isFilter ? `paws-and-passage-filter-${look}-${size}.png` : fileName(family, size);
+
   async function onDownload() {
     const b = await build();
     if (!b) return;
-    downloadBlob(b, fileName(family, size));
+    downloadBlob(b, outName);
     setStatus("Saved to your device. Look in your downloads or photos.");
   }
 
@@ -189,13 +239,13 @@ export function Keepsake({
     const b = await build();
     if (!b) return;
     track("share_clicked", { kind: "keepsake" });
-    const r = await shareBlob(b, fileName(family, size), "");
+    const r = await shareBlob(b, outName, "");
     if (r === "shared") {
       track("share_completed", { kind: "keepsake" });
       setStatus("Sent to your device's share sheet.");
     } else if (r === "cancelled") setStatus("Sharing cancelled. Nothing was sent.");
     else {
-      downloadBlob(b, fileName(family, size));
+      downloadBlob(b, outName);
       setStatus(
         "This browser can't share images directly, so the picture was saved to your device instead. Nothing was posted anywhere.",
       );
@@ -231,12 +281,41 @@ export function Keepsake({
         onChange={onFile}
       />
 
+      <fieldset className="kp-modes">
+        <legend>What would you like to make?</legend>
+        {(
+          [
+            ["filter", "Make my photo filter", "Your photo, with a cute sticker overlay"],
+            ["card", "Keepsake card", "The illustrated keepsake artwork"],
+          ] as const
+        ).map(([id, title, hint]) => (
+          <label key={id} className={`kp-mode${mode === id ? " kp-mode-on" : ""}`}>
+            <input
+              type="radio"
+              name="kp-mode"
+              value={id}
+              checked={mode === id}
+              onChange={() => {
+                setMode(id);
+                setStatus("");
+              }}
+            />
+            <span>
+              {title}
+              <small>{hint}</small>
+            </span>
+          </label>
+        ))}
+      </fieldset>
+
       <section className="kp-step" aria-labelledby="kp-h-photo">
         <h3 id="kp-h-photo" className="kp-h">
           1. Photo
         </h3>
         <p className="pa-fine">
-          Take a new photo, choose one you have, or skip it and use the illustrated version.
+          {isFilter
+            ? "Take a new photo of your dog or choose one you have. No photo yet? A cute placeholder stands in."
+            : "Take a new photo, choose one you have, or skip it and use the illustrated version."}
         </p>
         <ul className="kp-slots">
           {names.map((n, i) => {
@@ -313,18 +392,20 @@ export function Keepsake({
             onChange={(e) => setName(e.target.value)}
           />
         </label>
-        <label className="pa-field">
-          <span>A short memory (optional)</span>
-          <textarea
-            rows={3}
-            maxLength={MEMORY_MAX}
-            value={note}
-            onChange={(e) => setNote(e.target.value)}
-          />
-          <span className="pa-fine" aria-live="polite">
-            {note.length} of {MEMORY_MAX}
-          </span>
-        </label>
+        {!isFilter && (
+          <label className="pa-field">
+            <span>A short memory (optional)</span>
+            <textarea
+              rows={3}
+              maxLength={MEMORY_MAX}
+              value={note}
+              onChange={(e) => setNote(e.target.value)}
+            />
+            <span className="pa-fine" aria-live="polite">
+              {note.length} of {MEMORY_MAX}
+            </span>
+          </label>
+        )}
       </section>
 
       <section className="kp-step" aria-labelledby="kp-h-out">
@@ -351,12 +432,32 @@ export function Keepsake({
             </label>
           ))}
         </fieldset>
+        {isFilter && (
+          <div className="kp-row">
+            <button
+              type="button"
+              className="pp-btn pp-btn-secondary"
+              onClick={() =>
+                setLookIdx((i) => looks.indexOf(nextLook(theme, looks[i % looks.length]!)))
+              }
+            >
+              Try another look
+            </button>
+            <span className="pa-fine" aria-live="polite">
+              Look {(lookIdx % looks.length) + 1} of {looks.length}: {filterStyleLabel(look)}
+            </span>
+          </div>
+        )}
         <canvas
           ref={previewRef}
           className="kp-preview"
           style={{ aspectRatio: `${ART_SIZES[size].width} / ${ART_SIZES[size].height}` }}
           role="img"
-          aria-label={`Preview of the ${headline} keepsake for ${name || "your dog"}`}
+          aria-label={
+            isFilter
+              ? `Preview of the ${headline} photo filter for ${name || "your dog"}, ${filterStyleLabel(look)} look`
+              : `Preview of the ${headline} keepsake for ${name || "your dog"}`
+          }
         />
         <div className="kp-row">
           <button

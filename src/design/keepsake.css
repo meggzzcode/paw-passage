@@ -160,3 +160,65 @@
     animation: none !important;
   }
 }
+
+/* Mode picker: photo filter (default) or illustrated keepsake card. */
+.kp-modes {
+  display: grid;
+  gap: 0.5rem;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+.kp-modes legend {
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0;
+  margin-bottom: 0.35rem;
+  color: var(--pp-ink);
+}
+.kp-mode {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0.6rem 1rem;
+  border: 2px solid var(--pp-line);
+  border-radius: var(--pp-radius);
+  background: var(--pp-paper);
+  color: var(--pp-ink);
+  cursor: pointer;
+  font-weight: 700;
+}
+.kp-mode input {
+  position: absolute;
+  opacity: 0;
+  inset: 0;
+  margin: 0;
+  cursor: pointer;
+}
+.kp-mode small {
+  display: block;
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: var(--pp-muted);
+}
+.kp-mode-on {
+  background: var(--pp-ink);
+  color: var(--pp-paper);
+  box-shadow: var(--pp-shadow);
+}
+.kp-mode-on small {
+  color: var(--pp-paper);
+}
+.kp-mode:focus-within {
+  outline: 3px solid var(--pp-focus);
+  outline-offset: 2px;
+}
+@media (min-width: 40rem) {
+  .kp-modes {
+    grid-template-columns: 1fr 1fr;
+  }
+  .kp-modes legend {
+    grid-column: 1 / -1;
+  }
+}

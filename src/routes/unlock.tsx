@@ -47,7 +47,7 @@ function Unlock() {
         <p>{unlockLine(summary)}</p>
         <p className="pp-cta-row">
           <AppLink to="/discover" className="pp-btn pp-btn-primary">
-            Find Our First Adventure — Free
+            Take the Quiz — Your First Adventure Is Free
           </AppLink>
           <AppLink
             to={PREVIEWS_PATH}

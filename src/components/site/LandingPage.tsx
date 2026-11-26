@@ -20,7 +20,7 @@ export function LandingPage({ slug }: { slug: string }) {
         <h1 className="pp-h1">{l.h1}</h1>
         <p className="pp-lede">{l.intro}</p>
         <p className="pp-cta-row">
-          <Button to="/discover">Find Our First Adventure — Free</Button>
+          <Button to="/discover">Take the Quiz — Your First Adventure Is Free</Button>
           <Button to="/passport" variant="secondary">
             See the Passport
           </Button>

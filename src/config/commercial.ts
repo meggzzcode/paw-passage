@@ -81,7 +81,7 @@ export const homePromo = {
     "One payment, not a subscription",
     "No account",
   ],
-  primaryCta: "Find Our First Adventure — Free",
+  primaryCta: "Take the Quiz — Your First Adventure Is Free",
   secondaryCta: "Explore the Adventure Collection",
   demo: {
     eyebrow: "See it in action",

@@ -48,7 +48,7 @@ function Faq() {
         <FaqList />
         <TrustStrip />
         <p className="pp-cta-row">
-          <Button to="/discover">Find Our First Adventure — Free</Button>
+          <Button to="/discover">Take the Quiz — Your First Adventure Is Free</Button>
           <Button to="/unlock" variant="secondary">
             See what is included
           </Button>

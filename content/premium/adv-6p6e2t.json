@@ -1,0 +1,122 @@
+{
+  "schema": 2,
+  "access": "premium",
+  "status": "published",
+  "relatedGuides": [],
+  "affiliateProducts": [],
+  "achievements": [],
+  "prep": "light",
+  "id": "adv-6p6e2t",
+  "title": "Our Perfect Day",
+  "clue": "Spot the good bits first, then give them all a day to themselves.",
+  "reveal": "Notice what your dog already loves, drop each one on a slip of paper, then give them a day. At four moments you offer two slips, your dog picks, and rest is always on the menu. By evening you have a front page.",
+  "objective": "Gather a jar of your dog's real favorites, then fit four short dog-chosen chapters into an ordinary day with plenty of rest, ending with a front page of what they picked.",
+  "instructions": [
+    "In the days before, simply notice. Whenever your dog seems keen about something (the doorstep at seven, a sunny rug, a certain sniff post, a lap), jot it on a slip of paper and drop it in a jar. Collect six to eight, with at least three at home.",
+    "Pick a day when nothing is urgent. Keep meals and routines as usual. Choose four moments in your day for Morning, Midday, Afternoon and Evening chapters, 10 to 20 minutes each. Anything outdoors is only for comfortable weather.",
+    "At each chapter, draw two slips and give a tiny preview of each (open the door, pick up the toy, pat the sofa corner), then stand back. Whichever your dog moves toward is the chapter. If neither, or they head for bed, rest is the chapter and it counts in full.",
+    "Do the chapter at your dog's pace and say very little. Stop at the first sign they would rather be elsewhere.",
+    "Between chapters leave long gaps: nap, water, nothing planned. Ending the day early is a good ending.",
+    "After each chapter, tape its slip onto a big sheet of paper and add a one-line headline (for example, Nose to the wind). Unchosen slips return to the jar.",
+    "In the evening, dim the lights, read the headlines aloud and pick the lead story. Give the front page a name and a date.",
+    "Fold the front page into the jar. Next year you can add a second edition beside it."
+  ],
+  "twist": "Before the day you only notice, during it you only offer pairs, and the front page is made from your dog's own choices.",
+  "variations": [
+    "Short version: two chapters and one long rest, all at home.",
+    "At-home day: draw only the indoor and yard slips.",
+    "For a senior dog: keep each chapter to ten minutes, add a long nap between and put comfort first.",
+    "For a seated owner: build the slips around sofa, window and doorstep moments."
+  ],
+  "completion": "Your dog has chosen at least two chapters (rest counts) and the front page has a headline and a date.",
+  "photoIdea": "One relaxed picture at a chapter your dog enjoyed, or a single end-of-day picture of your dog resting beside the front page.",
+  "memoryPrompt": "Which of your dog's choices surprised you most?",
+  "minutesMin": 60,
+  "minutesMax": 180,
+  "activeMinutes": 60,
+  "costMin": 0,
+  "costMax": 10,
+  "supplies": [
+    "Slips of paper and a pen",
+    "A jar or envelope",
+    "A big sheet of paper and tape",
+    "Your dog's usual gear and water"
+  ],
+  "optionalSupplies": ["Phone for photos", "A favorite toy"],
+  "substitutes": [
+    "Sticky notes instead of slips",
+    "The back of a cereal box instead of a big sheet"
+  ],
+  "requires": ["paper-and-pens", "leash-and-harness"],
+  "transport": "walkable",
+  "reservation": {
+    "needed": false
+  },
+  "setting": "either",
+  "homes": ["apartment", "house-no-yard", "house-with-yard"],
+  "space": "none",
+  "places": ["home", "city", "countryside"],
+  "seasons": [],
+  "avoidWeather": [],
+  "lifeStages": ["adult", "senior"],
+  "sizes": [],
+  "energy": "gentle",
+  "personalities": ["cozy", "playful", "gentle"],
+  "dogMobility": "low",
+  "ownerMobility": "minimal-walking",
+  "stepFree": false,
+  "crowd": "none",
+  "strangers": true,
+  "otherDogs": true,
+  "noise": "quiet",
+  "food": false,
+  "water": "none",
+  "safety": [
+    "Outdoor chapters need a heat or cold check: cool hours, shade, water and the sidewalk hand test.",
+    "Keep a leash on in public and meals unchanged, and politely decline strangers who want to pet or feed."
+  ],
+  "activityTypes": ["memory-making", "celebrations"],
+  "collections": ["our-story", "holidays-and-celebrations", "home-sweet-home"],
+  "stamps": ["first-adventure", "memory-maker"],
+  "keepsake": {
+    "family": "magazine-cover",
+    "theme": "sunrise-edition",
+    "headline": "OUR PERFECT DAY",
+    "subhead": "Edited entirely by the dog",
+    "explainer": "Our perfect day, edited by the dog"
+  },
+  "research": [
+    {
+      "label": "Dogs Trust: enrichment activities for dogs",
+      "url": "https://www.dogstrust.org.uk/dog-advice/life-with-your-dog/enrichment/enrichment-activities-for-dogs"
+    },
+    {
+      "label": "Cornell Riney Canine Health Center: canine enrichment ideas",
+      "url": "https://riney.vet.cornell.edu/member-benefits-health-tips/canine-enrichment-ideas"
+    },
+    {
+      "label": "AKC: offer your dog more choices and autonomy",
+      "url": "https://www.akc.org/expert-advice/training/offer-dog-more-choices-and-autonomy/"
+    },
+    {
+      "label": "Cornell Riney Canine Health Center: summer heat safety tips for dogs",
+      "url": "https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/health-info/summer-heat-safety-tips-dogs"
+    },
+    {
+      "label": "RSPCA Australia: what does my dog's body language mean?",
+      "url": "https://kb.rspca.org.au/knowledge-base/what-does-my-dogs-body-language-mean/"
+    }
+  ],
+  "review": {
+    "ownerAppeal": 8,
+    "dogEnjoyment": 8,
+    "originality": 6,
+    "adventureFactor": 7,
+    "practicality": 8,
+    "memoryValue": 9,
+    "reviewedOn": "2026-11-26"
+  },
+  "role": "aspirational",
+  "teaser": "One ordinary day, rebuilt around everything your dog loves most.",
+  "showcase": true
+}

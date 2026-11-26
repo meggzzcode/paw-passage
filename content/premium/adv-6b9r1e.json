@@ -1,0 +1,108 @@
+{
+  "schema": 2,
+  "variations": [
+    "Candle search: hide one small find for every year of your dog's age (up to five, plus a bonus pot for any extra years) at floor level in one room, every one open so a nose can reach it. Count each find aloud like a candle being lit, and save their favorite thing for their favorite spot. Pick up any unfound hides at the end of the day.",
+    "For a puppy or a very short celebration: use one box and one favorite item (soft puppy toys), and take away any cardboard that gets chewed.",
+    "For a senior dog, or a dog who dislikes boxes: keep the boxes next to their bed at an easy height, or lay the same three items on a blanket instead.",
+    "Night-before timetable: pin a card with three stops (Play, Sniff, You) and 'Departs tomorrow, when the passenger is ready'. Next day, use low open boxes or shoebox lids and circle the stop your dog visits first on the card; a nap counts as a stop."
+  ],
+  "supplies": [
+    "Three cardboard boxes",
+    "Favorite toy",
+    "Familiar blanket",
+    "Paper and a pen",
+    "An envelope"
+  ],
+  "optionalSupplies": ["Phone for a photo", "Second favorite toy"],
+  "substitutes": ["No boxes? Use laundry baskets or plain paper bags with the handles removed."],
+  "requires": ["cardboard-boxes", "toys", "blanket", "paper-and-pens"],
+  "reservation": {
+    "needed": false
+  },
+  "seasons": [],
+  "avoidWeather": [],
+  "sizes": [],
+  "personalities": ["curious", "playful", "cozy"],
+  "achievements": [],
+  "relatedGuides": [],
+  "affiliateProducts": [],
+  "access": "premium",
+  "status": "published",
+  "homes": ["apartment", "house-no-yard", "house-with-yard"],
+  "food": true,
+  "water": "none",
+  "strangers": false,
+  "otherDogs": false,
+  "crowd": "none",
+  "noise": "quiet",
+  "id": "adv-6b9r1e",
+  "title": "The Birthday Adventure Box",
+  "clue": "Three boxes, three surprises, and the birthday guest decides what happens first.",
+  "reveal": "Birthdays are about the dog, not the cake. Fill three boxes from your dog's own year (something to play with, something to sniff and some time with you), let them open the presents in any order, and seal a wish note to open next birthday.",
+  "objective": "Let your dog explore three boxes drawn from their year in any order, then seal a wish note to open next birthday.",
+  "instructions": [
+    "Choose three presents from your dog's year, none of them bought: Play, the toy they carried around most (in good shape); Sniff, a clean cloth rubbed on their favorite blanket or a favorite spot; and You, a folded blanket that stays empty for your company.",
+    "Find three open cardboard boxes big enough for your dog to look into. Use no tape, staples, wrapping paper, ribbon or string. Put one present in each box.",
+    "Set the boxes about a meter apart on a non-slip floor. Sit nearby, quiet and relaxed, and let your dog arrive and explore in any order, or just one box.",
+    "follow their lead. If they pick up the toy, play for a minute or two. If they sniff the scent box, let them take their time. If they settle in the blanket box, sit with them.",
+    "While they relax, read three birthday wishes aloud, one for each present: what you hope they play with, sniff and share this year. Write them on one small note.",
+    "Close the party with a quiet minute beside the box they chose, then fold the note into an envelope marked 'open on the next birthday' and put it somewhere safe and out of reach.",
+    "Put the boxes away when they lose interest, checking that no cardboard has been chewed off. Let them rest."
+  ],
+  "twist": "Three presents you do not buy, drawn from your dog's own year: Play, Sniff and You. Their opening order is the birthday story, and the wish note waits for next year.",
+  "completion": "Your dog has visited at least one box, you have shared a quiet celebration and the wish note is sealed.",
+  "photoIdea": "Your dog with their nose in a box or settled beside the three boxes, taken from the same low level.",
+  "memoryPrompt": "Which box did your dog open first, and what did the wish note say?",
+  "minutesMin": 20,
+  "minutesMax": 45,
+  "activeMinutes": 15,
+  "costMin": 0,
+  "costMax": 5,
+  "prep": "light",
+  "transport": "none",
+  "setting": "indoor",
+  "space": "small-indoor",
+  "places": ["home"],
+  "lifeStages": ["puppy", "adult", "senior"],
+  "energy": "gentle",
+  "dogMobility": "low",
+  "ownerMobility": "seated",
+  "stepFree": true,
+  "safety": [
+    "Take away any cardboard your dog chews into pieces, and keep wrapping paper and balloons out of reach.",
+    "Candle search: use only foods your dog already eats, no chocolate, grapes, raisins or xylitol, and no flames."
+  ],
+  "activityTypes": ["celebrations", "play-and-games", "scent-and-discovery"],
+  "collections": ["holidays-and-celebrations", "home-sweet-home", "our-story"],
+  "stamps": ["first-adventure", "playtime-champion", "memory-maker"],
+  "keepsake": {
+    "family": "magazine-cover",
+    "theme": "birthday-cover",
+    "headline": "BIRTHDAY STAR",
+    "subhead": "Three boxes, one very good dog",
+    "explainer": "Three birthday boxes, opened in the dog's order"
+  },
+  "research": [
+    {
+      "label": "VCA Animal Hospitals: enrichment",
+      "url": "https://vcahospitals.com/know-your-pet/enrichment"
+    },
+    {
+      "label": "Dogs Trust: enrichment activities for dogs",
+      "url": "https://www.dogstrust.org.uk/dog-advice/life-with-your-dog/enrichment/enrichment-activities-for-dogs"
+    }
+  ],
+  "review": {
+    "ownerAppeal": 8,
+    "dogEnjoyment": 8,
+    "originality": 7,
+    "adventureFactor": 7,
+    "practicality": 9,
+    "memoryValue": 8,
+    "reviewedOn": "2026-11-26"
+  },
+  "dietNotes": "Candle-search finds come from the day's normal ration, only foods your dog already eats safely; use toys instead if you prefer. Ask your vet about diet limits or allergies.",
+  "role": "lifestyle",
+  "teaser": "A birthday gift made from the year behind you, with a wish for the year ahead.",
+  "showcase": true
+}

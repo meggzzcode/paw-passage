@@ -1,0 +1,102 @@
+{
+  "schema": 2,
+  "optionalSupplies": ["Paper and tape for a 'VIP pass'"],
+  "substitutes": ["No door wedge? A heavy book or a rolled towel holds the door open."],
+  "requires": ["toys", "towels", "household-items"],
+  "reservation": {
+    "needed": false
+  },
+  "seasons": [],
+  "avoidWeather": [],
+  "sizes": [],
+  "homes": ["apartment", "house-no-yard", "house-with-yard"],
+  "lifeStages": ["puppy", "adult", "senior"],
+  "stepFree": true,
+  "crowd": "none",
+  "strangers": false,
+  "otherDogs": false,
+  "noise": "quiet",
+  "food": true,
+  "water": "none",
+  "transport": "none",
+  "achievements": [],
+  "relatedGuides": [],
+  "affiliateProducts": [],
+  "research": [],
+  "access": "premium",
+  "status": "published",
+  "id": "adv-d8cz2k",
+  "title": "The VIP Discovery Room",
+  "clue": "One door in your home has never once been opened for your dog. Today it is.",
+  "reveal": "Open the room that is normally off limits for five supervised minutes and let your dog explore as a one-time guest, with one small find waiting inside. No shut room? A small overnight rearrangement does the same job.",
+  "objective": "Give your dog a short, supervised guest pass to a room they are not normally allowed in, and follow their lead.",
+  "instructions": [
+    "Choose the room: a spare room, study or utility room. Make it safe first. Clear medicines, cleaning products, chocolate, plants, cables, small objects, trash can lids and anything that could tip. Prop the door open so it cannot swing shut.",
+    "Place one find inside: a toy they love, or a piece of their usual ration on a folded towel by the far wall. Check the floor is non-slip. Hang a hand-lettered 'VIP pass' on the outside of the door at your own height, or just hold it up, and take it down afterwards: no tape or paper within your dog's reach.",
+    "Bring your dog to the door and say a quiet 'ready?'. Then open it, step aside and say nothing else. They may walk straight in, hover on the threshold or turn away. All of those are fine.",
+    "Follow a step behind and stay out of their way. Keep your hands off. Their first stop, their longest sniff and any digging at the find are the story.",
+    "After about five minutes, or sooner if they are done, sit on the floor for a quiet minute in the room together if they want to.",
+    "Let them walk out first. Close the door as normal. It was a guest pass, not a new rule, and the room goes back to being off limits. Write one line in a guest book (what they sniffed first) and put the pass on the fridge."
+  ],
+  "twist": "Nothing is added except the open door: the shut room itself becomes the event, and your dog is the first guest.",
+  "variations": [
+    "No shut room? After bedtime, move three small things (a basket, a chair, a towel over a chair back), tuck a toy inside one change, and open the door in the morning. Leave the changes for a few days.",
+    "For a seated or limited-mobility owner: sit in the open doorway and let your dog wander from there for a couple of minutes.",
+    "For a new or nervous dog: make only one small change, keep the visit to a minute or two, and never change their safe spot. Skip the rearranging altogether for a dog who startles at changes.",
+    "For a bigger version: a different shut corner each evening for a week, never the same one twice."
+  ],
+  "completion": "Your dog has had their guest pass, even if they only peered in, and the door has gone back to normal.",
+  "photoIdea": "Your dog on the threshold, or nose down in the middle of the room, photographed from behind in the doorway.",
+  "memoryPrompt": "Where did your dog go first, and what was the biggest surprise in the room?",
+  "minutesMin": 5,
+  "minutesMax": 15,
+  "activeMinutes": 5,
+  "costMin": 0,
+  "costMax": 0,
+  "prep": "light",
+  "supplies": [
+    "A favorite toy or a piece of your dog's usual food",
+    "A folded towel",
+    "A door wedge or heavy book"
+  ],
+  "setting": "indoor",
+  "space": "a-room",
+  "places": ["home"],
+  "energy": "gentle",
+  "personalities": ["curious", "adventurous"],
+  "dogMobility": "low",
+  "ownerMobility": "minimal-walking",
+  "dietNotes": "Only a piece of your dog's usual ration, or use a toy instead.",
+  "safety": [
+    "Prop the door open and do a quick dog-height sweep for medicines, cables and plants first.",
+    "Keep any change small for a shy or newly arrived dog, and leave their safe space untouched.",
+    "Use only your dog's usual food, never chocolate, grapes, raisins, xylitol or onion."
+  ],
+  "activityTypes": ["scent-and-discovery", "play-and-games"],
+  "collections": [
+    "the-curious-explorer",
+    "home-sweet-home",
+    "five-minute-wonders",
+    "rainy-day-club"
+  ],
+  "stamps": ["first-adventure", "memory-maker"],
+  "keepsake": {
+    "family": "magazine-cover",
+    "theme": "hotel-corridor",
+    "headline": "FIRST GUEST IN THE ROOM",
+    "subhead": "The shut door, opened once for the guest of honor",
+    "explainer": "First time through the door that is always shut"
+  },
+  "review": {
+    "ownerAppeal": 8,
+    "dogEnjoyment": 7,
+    "originality": 8,
+    "adventureFactor": 7,
+    "practicality": 8,
+    "memoryValue": 8,
+    "reviewedOn": "2026-11-26"
+  },
+  "role": "signature",
+  "teaser": "There is a door that always stays closed. Today your dog is the guest of honor.",
+  "showcase": true
+}

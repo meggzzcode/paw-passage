@@ -1,0 +1,102 @@
+{
+  "schema": 2,
+  "access": "premium",
+  "status": "published",
+  "optionalSupplies": ["A friend or family helper", "A folder for the Co-Pilot's Guide"],
+  "achievements": [],
+  "relatedGuides": [],
+  "affiliateProducts": [],
+  "research": [],
+  "reservation": {
+    "needed": false
+  },
+  "homes": ["apartment", "house-no-yard", "house-with-yard"],
+  "space": "none",
+  "seasons": [],
+  "sizes": [],
+  "food": false,
+  "transport": "walkable",
+  "water": "none",
+  "prep": "light",
+  "costMin": 0,
+  "costMax": 0,
+  "substitutes": [
+    "No card? Use the back of an envelope or a notes app.",
+    "No folder? Staple the cards together."
+  ],
+  "stamps": ["first-adventure", "trail-blazer", "city-explorer"],
+  "id": "adv-e0bc7m",
+  "title": "The Co-Pilot's Route",
+  "clue": "A route where the wheels set the course and the nose writes the review.",
+  "reveal": "Made for people who roll, use a frame or cane, or simply travel slowly. Pick a smooth, step-free loop; your dog sets the pace and pauses where their nose says. The loop then gets two reviews, Wheels from you and Nose from your dog, and they rarely agree.",
+  "objective": "Travel one short, step-free loop at the pace your dog sets, note where they choose to pause, and write two reviews of it: Wheels and Nose.",
+  "instructions": [
+    "Optional dress rehearsal at home: roll or walk slowly through a hallway or yard while your dog does their own thing, and let them sniff the wheels, frame or cane if they wish. Never push them to approach. If moving wheels or a frame worry them, or they keep getting underfoot, stop here: this card is not for today and nothing else depends on it.",
+    "Chart the loop. You know your surfaces better than any app: pick a short loop or out-and-back of smooth sidewalk or path with dropped curbs, no steep slopes or heavy camber, no crossings without a safe curb, and a bench or flat, wide spot near the middle. A quiet time of day suits. Write the card header: Route, Date, Wheels, Nose.",
+    "Handle the leash safely. Hold it loosely in the hand away from the wheels or frame. Never loop it around a wrist, wheel, armrest or handle, and never tie or clip it to a chair, scooter or frame. If you cannot keep a hand free for it, bring a helper to walk your dog beside you.",
+    "Set off at your dog's pace. When they stop to sniff, stop too and let the stop run its course; follow a safe verge if their nose wants one, and lift your dog away from anything they try to eat. Each pause is a station: jot it on the card (\"mailbox, long read\"). Nothing needs collecting. One station or six, both are a full route.",
+    "At the bench or flat spot, hold the Pilot's Pause. Offer water, sit, and let your dog show you one of three votes: onward, rest here or home. Any of them is a good answer, and turning for home is the co-pilot's right.",
+    "Write the reviews. Wheels is yours: smooth, bumpy, narrow, curbs. Nose is your dog's: give stars to the station where they lingered longest and write what you think made it worth it. Read both aloud to your dog, in your best airline-announcement voice, then let them rest.",
+    "File the card in a folder called the Co-Pilot's Guide. Over time, you collect a pocket guide to your own area with two ratings on every loop: where the surface is kind, and where the smells are."
+  ],
+  "twist": "Your dog is not steering, they are the route's second reviewer: the same loop gets rated for wheels and for noses, and the best surface and the best smells are almost never in the same place.",
+  "variations": [
+    "Hallway pilot: do the whole card indoors, with three doorways or corners as stations, before trying a street.",
+    "Yard or courtyard version for a slow, senior or nervous dog: one patio or path loop, two stations, a seat in the shade.",
+    "With a helper: a friend or family member walks alongside to hold the leash and watch the curbs while you steer. A good first outing.",
+    "Bigger version, optional: a flat, quiet park loop or accessible paved trail that you can roll or walk to, with a bench at the middle. The local smooth loop stays the core."
+  ],
+  "completion": "Your dog has set the pace for at least one pause, or you turned for home when they wished, and the two reviews are written. A shorter loop counts.",
+  "photoIdea": "Your dog at their favorite station, nose busy, with a wheel or the edge of your frame in the corner of the frame. Take it while you are stopped, or ask a helper.",
+  "memoryPrompt": "Where did the Wheels review and the Nose review disagree most?",
+  "minutesMin": 20,
+  "minutesMax": 45,
+  "activeMinutes": 25,
+  "supplies": [
+    "Leash",
+    "Well-fitting harness or collar with ID",
+    "Water and a bowl",
+    "Card and pen"
+  ],
+  "requires": ["leash-and-harness", "paper-and-pens"],
+  "setting": "outdoor",
+  "places": ["home", "city"],
+  "avoidWeather": ["heat", "cold", "rain"],
+  "lifeStages": ["adult", "senior"],
+  "energy": "gentle",
+  "personalities": ["adventurous", "gentle"],
+  "dogMobility": "moderate",
+  "ownerMobility": "seated",
+  "stepFree": true,
+  "crowd": "some",
+  "strangers": true,
+  "otherDogs": true,
+  "noise": "some",
+  "safety": [
+    "Sidewalk too hot for the back of your hand is too hot for paws; in cold or frost, shorten the loop and head home early.",
+    "Keep your dog on the side away from the wheels on a loose leash, and follow local rules.",
+    "On verges, lift your dog away from anything they try to eat."
+  ],
+  "activityTypes": ["outdoor-exploration", "scent-and-discovery", "memory-making"],
+  "collections": ["the-great-outdoors", "the-curious-explorer", "city-explorers"],
+  "keepsake": {
+    "family": "id-card",
+    "theme": "world-tour-passport",
+    "headline": "CO-PILOT ON DUTY",
+    "subhead": "Navigator: the dog. Route: theirs.",
+    "explainer": "Same loop, rated twice: once for wheels, once for noses"
+  },
+  "review": {
+    "ownerAppeal": 8,
+    "dogEnjoyment": 7,
+    "originality": 8,
+    "adventureFactor": 6,
+    "practicality": 7,
+    "memoryValue": 7,
+    "reviewedOn": "2026-11-26"
+  },
+  "_source": "premium-private",
+  "role": "everyday",
+  "teaser": "One familiar loop, rated by two very different reviewers.",
+  "showcase": false
+}

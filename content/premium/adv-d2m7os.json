@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "optionalSupplies": ["Charity-shop finds for the acquisitions trip"],
+  "substitutes": ["No spare plinths? Lay a folded towel on the floor for each exhibit."],
+  "requires": ["household-items", "towels", "paper-and-pens"],
+  "reservation": {
+    "needed": false
+  },
+  "seasons": [],
+  "avoidWeather": [],
+  "sizes": [],
+  "homes": ["apartment", "house-no-yard", "house-with-yard"],
+  "lifeStages": ["puppy", "adult", "senior"],
+  "stepFree": true,
+  "crowd": "none",
+  "strangers": false,
+  "otherDogs": false,
+  "noise": "quiet",
+  "food": false,
+  "water": "none",
+  "transport": "none",
+  "achievements": [],
+  "relatedGuides": [],
+  "affiliateProducts": [],
+  "research": [],
+  "access": "premium",
+  "status": "published",
+  "id": "adv-d2m7os",
+  "title": "After Hours at the Museum",
+  "clue": "The gallery has closed to the public. One very special visitor has the place to themselves.",
+  "reveal": "Your hallway becomes a gallery after closing time. Your dog tours five exhibits at their own pace, then meets one covered mystery piece. Whichever exhibit holds them longest earns a place in the permanent collection.",
+  "objective": "Set up a five-exhibit gallery of safe objects, let your dog tour it freely, and give the favorite a place of honor.",
+  "instructions": [
+    "Gather five clean, washable objects with different smells, each too big for your dog to fit in their mouth or swallow, with no loose parts, strings or threads: a folded fleece blanket, a bath towel, a cardboard tube, a silicone spatula too large to fit the mouth, a folded worn T-shirt. Wash anything second-hand first.",
+    "Set each on a 'plinth' (a folded towel or low upturned box) down a hallway or along a room edge, a stride apart on a non-slip floor. Then prepare the sixth exhibit, the mystery piece: a clean hand towel that has picked up an outdoor smell from a few minutes in your coat pocket on a walk or held at an open window. Fold a plain cloth over it and keep it out of sight until the end.",
+    "Dim the lights a little, but keep enough light to see. Announce 'the gallery is open' in your best curator voice, then follow two meters behind. No pointing, no steering.",
+    "Let your dog tour in any order and at any pace. They can sniff, nose, linger, skip any exhibit or leave. Watch which one holds them longest.",
+    "At the end, place the covered mystery piece on the last plinth and let your dog nose off the cover if they like.",
+    "Close the gallery with a quiet minute on the floor. Pick up every object. Put the favorite on a high shelf near their bed with a hand-lettered museum label ('Fleece, c. today. Favorite of the visitor')."
+  ],
+  "twist": "The last plinth is covered and holds a smell from outside the house, the only thing your dog has not met before.",
+  "variations": [
+    "An acquisitions trip: spend a few coins in a charity shop on two or three large, chew-proof objects (a wool scarf, a canvas bag), wash them at home, and add them as new exhibits.",
+    "A gallery of firsts: replace the usual objects with five things your dog has never met (a clean fleece, a cardboard tube, a canvas tote, a hand towel from a friend's house, a cushion cover). No plants or food.",
+    "For a seated owner, a low-mobility dog, or a dog resting on your vet's advice (ask your vet first): set three exhibits within a few steps of the dog's bed, make it sniff-only with cloth and cardboard, and sit beside them.",
+    "For a puppy: use only towels and cardboard, keep it to two exhibits, and finish at the first sign of mouthing."
+  ],
+  "completion": "Your dog has toured the gallery, or walked away from it, and you have chosen a favorite and given it a label.",
+  "photoIdea": "Your dog at the plinth where they lingered longest, taken from the end of the hallway.",
+  "memoryPrompt": "Which exhibit held your dog longest, and what did the label say?",
+  "minutesMin": 15,
+  "minutesMax": 25,
+  "activeMinutes": 10,
+  "costMin": 0,
+  "costMax": 6,
+  "prep": "light",
+  "supplies": [
+    "Five clean, large, safe objects (towels, fleece, cardboard)",
+    "Towels or low boxes for plinths",
+    "A clean cloth",
+    "Paper and a pen for the label"
+  ],
+  "setting": "either",
+  "space": "a-room",
+  "places": ["home"],
+  "energy": "gentle",
+  "personalities": ["curious", "gentle"],
+  "dogMobility": "low",
+  "ownerMobility": "minimal-walking",
+  "safety": [
+    "Choose objects too big to swallow, with no strings, buttons or small parts.",
+    "If your dog starts chewing an exhibit, take it away and end with a rest."
+  ],
+  "activityTypes": ["scent-and-discovery", "creative-projects"],
+  "collections": [
+    "home-sweet-home",
+    "rainy-day-club",
+    "the-curious-explorer",
+    "creative-companions"
+  ],
+  "stamps": ["first-adventure", "memory-maker"],
+  "keepsake": {
+    "family": "magazine-cover",
+    "theme": "gallery-portrait",
+    "headline": "PERMANENT COLLECTION",
+    "subhead": "Curated by nose, after hours",
+    "explainer": "Closed to the public, open to one dog"
+  },
+  "review": {
+    "ownerAppeal": 8,
+    "dogEnjoyment": 7,
+    "originality": 8,
+    "adventureFactor": 8,
+    "practicality": 8,
+    "memoryValue": 8,
+    "reviewedOn": "2026-11-26"
+  },
+  "role": "signature",
+  "teaser": "The doors are closed to the public, but the most inquisitive visitor is already inside.",
+  "showcase": true
+}

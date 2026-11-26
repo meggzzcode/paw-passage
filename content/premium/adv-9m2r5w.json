@@ -1,0 +1,113 @@
+{
+  "schema": 2,
+  "seasons": [],
+  "avoidWeather": ["heat", "rain"],
+  "sizes": [],
+  "household": [],
+  "achievements": [],
+  "relatedGuides": [],
+  "affiliateProducts": [],
+  "optionalSupplies": ["Marker", "Clipboard"],
+  "substitutes": ["No printer? Sketch the streets by hand from memory."],
+  "reservation": {
+    "needed": false
+  },
+  "access": "premium",
+  "status": "published",
+  "prep": "light",
+  "costMin": 0,
+  "costMax": 0,
+  "water": "none",
+  "food": false,
+  "research": [
+    {
+      "label": "Cornell Riney Canine Health Center: canine enrichment ideas",
+      "url": "https://riney.vet.cornell.edu/member-benefits-health-tips/canine-enrichment-ideas"
+    },
+    {
+      "label": "Dogs Trust: enrichment ideas, mental work and rest",
+      "url": "https://www.dogstrust.org.uk/help-advice/behaviour/enrichment-ideas-for-bored-dogs"
+    },
+    {
+      "label": "AKC: indoor games for dogs",
+      "url": "https://www.akc.org/expert-advice/training/indoor-games-with-dog/"
+    }
+  ],
+  "id": "adv-9m2r5w",
+  "title": "The Monogram Route",
+  "clue": "The walk is ordinary. The map you bring home is not.",
+  "reveal": "Trace a big letter, your dog's initial, along real streets or park paths on a paper map. Walk it with a sniff stop at each corner, and let your dog add a detour squiggle on every leg. At the final corner a favorite toy waits for them, and at home the map shows a letter with a wobbly signature.",
+  "objective": "Walk a route shaped like your dog's initial, add the dog's detours to a paper map, finish at the last corner with a toy find, and keep the finished map.",
+  "instructions": [
+    "Look at your dog's first initial and sketch your streets or park paths on paper, a free printed map or a hand drawing. Find a route that makes a rough version of the letter. L, T, H, E, Z and U are easy. Rough is perfect. Use sidewalks and paths away from busy roads.",
+    "Trace the route in pencil and mark three to five corners with a small circle. Check leash rules and note any crossings. No app and no tracking are needed.",
+    "Take a harness, six-foot leash, water, waste bags, a pencil, a clipboard or hardcover book, and your dog's favorite toy tucked in a bag. Walk at your dog's easy, brisk stride and let them take the sniff stops they want.",
+    "At each corner, stop and give your dog a free minute of sniffing while you tick the circle. A turn toward the next leg is their signal to go.",
+    "Detour rule: once on each leg your dog may lead a side-trip of up to about twenty steps on safe ground, then you return to the letter. Draw it as a squiggle. Say yes to a detour only where it is safe and legal.",
+    "If a stretch is blocked, crowded or hot underfoot, skip it and draw the letter with a gap. A gap in a letter is part of its charm.",
+    "At the final corner, the end of the letter, find a clear spot well away from traffic. Let your dog watch you set the favorite toy half hidden at the edge of the spot, then release them with 'find it' and let them keep it. Offer water and sit together. At home, trace the whole route in marker, add the squiggles, the date and your dog's name, and pin it up."
+  ],
+  "twist": "The destination is a drawing: your route spells your dog's initial on a paper map, the dog's own detours become the signature squiggles, and the last corner pays off with a toy find.",
+  "variations": [
+    "Easier: pick a short, simple letter such as L or T on one park path system.",
+    "Hot-day or short-walk version: walk just the corners of a block and draw the rest of the letter from memory.",
+    "Wheelchair or limited-mobility owner: choose a letter on smooth, curb-cut paths and skip the detours.",
+    "Quiet-streets version: choose a letter on calm residential streets or a park path at a quiet hour, and shorten any leg your dog finds busy."
+  ],
+  "completion": "It counts once you have walked at least two legs of the letter, added one squiggle and ended with the toy find at your last corner. A partial letter is a finished map.",
+  "photoIdea": "The finished map on the floor with your dog's nose or paw next to the squiggles, shot from above.",
+  "memoryPrompt": "What letter did your route make, and where did your dog insist on a detour?",
+  "minutesMin": 35,
+  "minutesMax": 60,
+  "activeMinutes": 35,
+  "supplies": [
+    "Paper map or sheet of paper",
+    "Pencil",
+    "Harness and six-foot leash",
+    "Water and waste bags",
+    "Favorite toy"
+  ],
+  "requires": ["leash-and-harness", "paper-and-pens", "toys"],
+  "setting": "outdoor",
+  "homes": ["apartment", "house-no-yard", "house-with-yard"],
+  "space": "none",
+  "places": ["city", "countryside"],
+  "lifeStages": ["adult"],
+  "personalities": ["adventurous", "curious"],
+  "energy": "lively",
+  "dogMobility": "high",
+  "ownerMobility": "long-walk",
+  "stepFree": false,
+  "crowd": "some",
+  "strangers": true,
+  "otherDogs": true,
+  "noise": "some",
+  "transport": "walkable",
+  "safety": [
+    "Stay on sidewalks and paths; cross only at crossings and keep detours off roads and verges.",
+    "Check the sidewalk with the back of your hand and skip hot or icy ground.",
+    "Keep the leash on and slack in streets; a long line only on a park path where it is allowed."
+  ],
+  "activityTypes": ["outdoor-exploration", "creative-projects", "memory-making"],
+  "collections": ["city-explorers", "the-great-outdoors", "creative-companions", "our-story"],
+  "stamps": ["first-adventure", "city-explorer", "memory-maker"],
+  "keepsake": {
+    "family": "collage",
+    "theme": "friendship-map",
+    "headline": "MONOGRAM ROUTE",
+    "subhead": "The walk drew my initial",
+    "explainer": "Walked my own initial across town, squiggles included"
+  },
+  "review": {
+    "ownerAppeal": 7,
+    "dogEnjoyment": 8,
+    "originality": 7,
+    "adventureFactor": 7,
+    "practicality": 6,
+    "memoryValue": 8,
+    "reviewedOn": "2026-11-26"
+  },
+  "role": "everyday",
+  "teaser": "A walk that signs its own name.",
+  "showcase": false
+}

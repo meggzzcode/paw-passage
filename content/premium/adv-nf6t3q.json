@@ -1,0 +1,117 @@
+{
+  "schema": 2,
+  "access": "premium",
+  "status": "published",
+  "achievements": [],
+  "household": [],
+  "relatedGuides": [],
+  "affiliateProducts": [],
+  "showcase": true,
+  "lifeStages": ["adult", "senior"],
+  "sizes": [],
+  "otherDogs": false,
+  "strangers": false,
+  "crowd": "none",
+  "noise": "quiet",
+  "water": "none",
+  "stepFree": true,
+  "seasons": ["spring", "summer", "autumn"],
+  "avoidWeather": [],
+  "stamps": ["first-adventure"],
+  "reservation": {
+    "needed": false
+  },
+  "dogMobility": "low",
+  "homes": ["apartment", "house-no-yard", "house-with-yard"],
+  "places": ["home"],
+  "transport": "none",
+  "setting": "indoor",
+  "optionalSupplies": ["Shop sign cards"],
+  "substitutes": ["No lick mat? Use a flat saucer or a clean tile."],
+  "id": "adv-nf6t3q",
+  "title": "The Frozen Treasure Bar",
+  "clue": "Something glitters inside the ice, and it is not going to stay hidden for long.",
+  "reveal": "Open a tiny frozen treasure shop with three flavors of small ice blocks, each with a dog-safe treasure inside. Your dog chooses which to lick first and you supervise the dig.",
+  "objective": "Freeze three small dog-safe 'treasure blocks' and let your dog choose which to explore.",
+  "instructions": [
+    "Pick three treasures from this safe list: a blueberry, a slice of banana, a spoonful of plain 100% pumpkin puree, a thin cucumber or carrot piece. Skip raspberries, seeds, pits and rinds.",
+    "Place one treasure in each cup of a silicone muffin tray or ice tray, cover with plain water and freeze for about four hours. Make blocks too large to swallow whole, and serve them held in your hand or on a lick mat.",
+    "Set up the shop on a towel or tiled floor near a wipe-clean spot, and label the three flavors on cards.",
+    "Offer one block at a time, on a lick mat or flat dish. Your dog decides how long to lick, nose or nudge it.",
+    "Stay with them the whole time and take the block away when it gets small enough to swallow or they lose interest.",
+    "Say which flavor won, then rinse the dish and wipe the floor."
+  ],
+  "twist": "The treasure is hidden in the ice itself, so the licking slowly reveals the prize, and the dog picks the shop's bestseller.",
+  "variations": [
+    "Warm-day version: serve outdoors on a shaded surface.",
+    "No-food version: serve a plain-water ice block, or chill a sturdy toy too big to swallow in the fridge, and supervise the whole time.",
+    "For small dogs: use mini ice trays and tiny treasures cut small.",
+    "For dogs on special diets: freeze only plain water or a spoonful of their usual wet food, as your vet allows."
+  ],
+  "completion": "Your dog has explored one or more blocks, and a flavor has been chosen as bestseller.",
+  "photoIdea": "Your dog's nose beside a block with the treasure showing, on a towel.",
+  "memoryPrompt": "Which treasure got found first, and which flavor sold out?",
+  "minutesMin": 15,
+  "minutesMax": 30,
+  "activeMinutes": 15,
+  "costMin": 0,
+  "costMax": 4,
+  "prep": "some",
+  "supplies": [
+    "Blueberries, banana, plain pumpkin or cucumber",
+    "Silicone muffin or ice tray",
+    "Plain water",
+    "Towel and lick mat or flat dish"
+  ],
+  "requires": ["household-items", "towels"],
+  "space": "small-indoor",
+  "energy": "gentle",
+  "personalities": ["curious", "playful"],
+  "ownerMobility": "minimal-walking",
+  "food": true,
+  "dietNotes": "Only the dog-safe foods named here, counted in the day's allowance. No xylitol, chocolate, grapes, raisins, onion, garlic, macadamia. Allergy or prescription diet: use the no-food version.",
+  "safety": [
+    "Supervise the whole time and take blocks away once small enough to swallow whole; frozen items can chip teeth.",
+    "Never use xylitol, grapes, raisins, onion or garlic, and skip seeds, pits and rinds.",
+    "Count the treasures in the day's allowance and ask your vet about diet."
+  ],
+  "activityTypes": ["food-and-treats", "scent-and-discovery", "play-and-games"],
+  "collections": ["taste-and-treat", "seasons-together", "home-sweet-home"],
+  "keepsake": {
+    "family": "poster",
+    "theme": "pool-party",
+    "headline": "FROZEN TREASURE",
+    "subhead": "The Frozen Treasure Bar",
+    "explainer": "Open: three flavors, one tasty prize"
+  },
+  "role": "everyday",
+  "teaser": "Something sparkling is waiting to thaw.",
+  "previewTitle": "Hidden in the Ice",
+  "research": [
+    {
+      "label": "VCA Animal Hospitals: enrichment and foraging toys",
+      "url": "https://vcahospitals.com/know-your-pet/enrichment"
+    },
+    {
+      "label": "Cornell Riney Canine Health Center: canine enrichment ideas",
+      "url": "https://riney.vet.cornell.edu/member-benefits-health-tips/canine-enrichment-ideas"
+    },
+    {
+      "label": "AKC: fruits and vegetables dogs can and can't eat",
+      "url": "https://www.akc.org/expert-advice/nutrition/fruits-vegetables-dogs-can-and-cant-eat/"
+    },
+    {
+      "label": "ASPCA: people foods to avoid feeding your pets",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/people-foods-avoid-feeding-your-pets"
+    }
+  ],
+  "review": {
+    "ownerAppeal": 8,
+    "dogEnjoyment": 8,
+    "originality": 6,
+    "adventureFactor": 8,
+    "practicality": 7,
+    "memoryValue": 7,
+    "reviewedOn": "2026-11-26"
+  }
+}

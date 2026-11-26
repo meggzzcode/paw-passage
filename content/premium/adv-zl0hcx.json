@@ -1,0 +1,113 @@
+{
+  "schema": 2,
+  "seasons": [],
+  "avoidWeather": ["heat", "rain", "cold"],
+  "sizes": [],
+  "household": [],
+  "achievements": [],
+  "relatedGuides": [],
+  "affiliateProducts": [],
+  "optionalSupplies": ["Long line and harness"],
+  "substitutes": ["No second ball? Use a soft tug toy for the trade."],
+  "reservation": {
+    "needed": false
+  },
+  "access": "premium",
+  "status": "published",
+  "crowd": "some",
+  "strangers": true,
+  "otherDogs": true,
+  "noise": "some",
+  "food": true,
+  "water": "none",
+  "stepFree": false,
+  "prep": "none",
+  "costMin": 0,
+  "costMax": 15,
+  "transport": "none",
+  "id": "adv-zl0hcx",
+  "title": "The Vanishing Ball",
+  "clue": "Three acts, one magician, and a prop that is not allowed an encore.",
+  "reveal": "For the dog who would fetch until they fall over. You get exactly three throws, each one a different job, and then the ball disappears into your pocket. The show closes with a sniff scatter, not a fourth throw.",
+  "objective": "Run three short ball jobs (a roll, a blind find, a trade), retire the ball, and finish with a scatter and a settle.",
+  "instructions": [
+    "Pick flat, dry, grippy ground: a fenced yard, or a park patch on a 20 to 30 foot long line and harness. Bring a soft rubber ball bigger than your dog's mouth with no squeaker, a second ball like it and a handful of treats.",
+    "Count in: let your dog sniff for a minute, then show the ball and say 'three'. Put the second ball in your pocket. The rule: three throws, not four, whatever happens.",
+    "Act one, the roll: roll the ball along the ground about ten big steps. No lofted throw, so there is no full-speed leap or skid stop. When your dog picks it up, show the second ball low and still. When the first one drops, roll the second. Never grab it, chase your dog or pry a ball free. With another dog at home, one dog at a time.",
+    "Water break: balls in your pocket, stand still for thirty seconds and let your dog drink and breathe.",
+    "Act two, the blind find: with your dog facing away, toss a ball a few steps into knee-high grass or leaves (check for holes and sharp things). Release your dog with 'find it' and let them use their nose. If stuck, walk a slow circle and let the air move.",
+    "Act three, the trade: roll once more about ten steps, then trade for the second ball the same way. That is the last throw.",
+    "The vanishing: show empty hands, put both balls in a bag or pocket and say 'that is the show'. Scatter a small handful of treats in the grass and let your dog sniff-forage as long as they like. If they stare at your pocket, scatter again and walk away from the field.",
+    "Settle: sit down beside your dog with water, and stay a few quiet minutes before you walk home."
+  ],
+  "twist": "Three throws only, each a different job (roll, blind find, trade), and then the ball is retired for the day and the show ends with a sniff scatter.",
+  "variations": [
+    "Easier: two rolls only and no blind find. The ball still vanishes at the end.",
+    "No-yard version: a park patch on a long line and harness, or a hallway with a non-slip runner and a soft ball rolled the length of it.",
+    "Ball-obsessed dog: swap the ball for a clean soft toy, and put the toy away in a closed container after act three.",
+    "Harder: add a two-second wait before each release and let your dog pick which of two balls is act two's find."
+  ],
+  "completion": "It counts when the ball has vanished and your dog has had the scatter. If they lose interest after act one, skip to the vanishing: that is a full show.",
+  "photoIdea": "Your dog nose-down in the grass during the scatter, with the empty pocket-hand visible at the edge of the frame.",
+  "memoryPrompt": "Which act did your dog love most, and how did they react when the ball vanished?",
+  "minutesMin": 15,
+  "minutesMax": 25,
+  "activeMinutes": 12,
+  "supplies": ["Two identical soft rubber balls bigger than your dog's mouth", "Treats"],
+  "requires": ["toys", "treats"],
+  "setting": "outdoor",
+  "homes": ["apartment", "house-no-yard", "house-with-yard"],
+  "space": "yard",
+  "places": ["home", "city", "countryside"],
+  "lifeStages": ["adult"],
+  "personalities": ["playful", "adventurous"],
+  "energy": "lively",
+  "dogMobility": "high",
+  "ownerMobility": "minimal-walking",
+  "dietNotes": "Tiny treats from the daily ration. Check labels for xylitol; ask your vet about diet limits.",
+  "safety": [
+    "Use a soft rubber ball bigger than your dog's mouth, no squeaker; retire any that is cracked. Tennis balls wear teeth.",
+    "Stop at three throws, watch for heavy panting and offer water. Never chase a dog who runs off with the ball.",
+    "Off-leash only in a fully fenced yard. In a park, keep the long line on."
+  ],
+  "activityTypes": ["play-and-games", "scent-and-discovery"],
+  "collections": ["the-playful-pup", "the-great-outdoors", "home-sweet-home"],
+  "stamps": ["first-adventure", "playtime-champion"],
+  "keepsake": {
+    "family": "event-ticket",
+    "theme": "cinema-marquee",
+    "headline": "THE VANISHING BALL",
+    "subhead": "Three throws, then the magic act",
+    "explainer": "The ball disappears after throw three. Dog checks the pocket"
+  },
+  "research": [
+    {
+      "label": "PDSA: choosing a safe ball",
+      "url": "https://www.pdsa.org.uk/what-we-do/blog/how-to-choose-a-safe-ball-for-your-dog"
+    },
+    {
+      "label": "AKC: tug rules, drop cue and cool-down",
+      "url": "https://www.akc.org/expert-advice/lifestyle/is-tug-of-war-bad-for-dogs/"
+    },
+    {
+      "label": "Dogs Trust: enrichment ideas, mental work and rest",
+      "url": "https://www.dogstrust.org.uk/help-advice/behaviour/enrichment-ideas-for-bored-dogs"
+    },
+    {
+      "label": "Cornell Riney Canine Health Center: canine enrichment ideas",
+      "url": "https://riney.vet.cornell.edu/member-benefits-health-tips/canine-enrichment-ideas"
+    }
+  ],
+  "review": {
+    "ownerAppeal": 7,
+    "dogEnjoyment": 8,
+    "originality": 7,
+    "adventureFactor": 7,
+    "practicality": 8,
+    "memoryValue": 7,
+    "reviewedOn": "2026-11-26"
+  },
+  "role": "everyday",
+  "teaser": "Now you see it, now you don't. The ball still has a trick or two left.",
+  "showcase": true
+}

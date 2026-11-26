@@ -1,0 +1,104 @@
+{
+  "schema": 2,
+  "seasons": [],
+  "avoidWeather": [],
+  "sizes": [],
+  "household": [],
+  "achievements": [],
+  "relatedGuides": [],
+  "affiliateProducts": [],
+  "access": "premium",
+  "reservation": {
+    "needed": false
+  },
+  "homes": ["apartment", "house-no-yard", "house-with-yard"],
+  "crowd": "none",
+  "strangers": false,
+  "otherDogs": false,
+  "noise": "quiet",
+  "water": "none",
+  "stepFree": true,
+  "prep": "light",
+  "costMin": 0,
+  "costMax": 0,
+  "transport": "none",
+  "food": true,
+  "stamps": ["first-adventure", "memory-maker"],
+  "setting": "indoor",
+  "places": ["home"],
+  "space": "a-room",
+  "dogMobility": "low",
+  "ownerMobility": "seated",
+  "personalities": ["curious", "gentle"],
+  "id": "adv-6a3n7y",
+  "title": "The Smell Postcards",
+  "status": "published",
+  "clue": "Little dishes of faraway places, set at nose height for an old friend.",
+  "reveal": "Collect small, safe scents from places your senior dog has loved. Your dog votes for a postcard with their nose, and the winning place becomes their next outing, or just a story and a snack at home.",
+  "objective": "Set out tiny scent souvenirs from your dog's favorite places, see which one holds their attention longest, and let that place star next.",
+  "instructions": [
+    "Think of three or four places your dog has loved: a trail, the beach, a park, a grandparent's yard. You need only a blade of grass, a clean twig or a pinch of sand from each.",
+    "Check each one is clean and too large to swallow in one gulp. Skip anything prickly, moldy or treated. Keep souvenirs to grass, a clean twig and a pinch of sand.",
+    "Place each souvenir on its own saucer or paper plate on a low mat, close to where your dog rests. Label each with the place name.",
+    "Bring your dog over gently, only if they want to come. Do not lead them to any plate.",
+    "Watch which postcard holds their nose longest, and which one makes the tail move. Take your time. Note the winner.",
+    "Sit near the winning postcard and tell the story of the place quietly, with a treat from the day's food.",
+    "If the place is easy to reach, plan a gentle outing there in good weather. If not, the souvenirs go back in a jar for another day."
+  ],
+  "twist": "Your dog picks a destination with their nose, and the winning smell decides the next little outing.",
+  "variations": [
+    "Yard version: collect a blade of grass from your own garden each season.",
+    "Seated version: bring the plates to your dog's bed so they can stay lying down.",
+    "Two-postcard version: only two choices, closer together.",
+    "Keepsake version: write the winning place on the postcard."
+  ],
+  "completion": "It counts once your dog has sniffed at least one postcard and you have shared its place story. Stop if they walk away.",
+  "photoIdea": "Your dog sniffing the winning postcard, close and low, with natural light on the gray muzzle.",
+  "memoryPrompt": "Which place won the sniff, and what do you remember about going there?",
+  "minutesMin": 10,
+  "minutesMax": 25,
+  "activeMinutes": 10,
+  "supplies": ["Small safe natural souvenirs", "Saucers or paper plates", "Marker"],
+  "optionalSupplies": ["A small jar"],
+  "substitutes": ["No souvenirs? Use a blade of grass or a dry leaf from your own safe garden."],
+  "requires": ["household-items", "paper-and-pens"],
+  "lifeStages": ["senior"],
+  "energy": "gentle",
+  "dietNotes": "A single small treat from the day's food. Ask your vet about your senior dog's diet.",
+  "safety": [
+    "Use only grass, a clean twig or a pinch of sand, too large to swallow. Take them away if your dog mouths them.",
+    "Set the plates at your dog's resting height so they never need to stand up, stretch or climb.",
+    "Let your dog walk away at any time, and follow your vet's advice on activity."
+  ],
+  "activityTypes": ["scent-and-discovery", "memory-making"],
+  "collections": ["the-golden-years", "home-sweet-home", "our-story"],
+  "keepsake": {
+    "family": "travel-postcard",
+    "theme": "retro-holiday",
+    "headline": "WISH YOU WERE HERE",
+    "subhead": "Souvenirs from the places I love",
+    "explainer": "Picked my favorite place by sniffing the postcards"
+  },
+  "research": [
+    {
+      "label": "Cornell Riney Canine Health Center: senior dog enrichment",
+      "url": "https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/senior-dog-enrichment"
+    },
+    {
+      "label": "Dogs Trust: enrichment activities for dogs",
+      "url": "https://www.dogstrust.org.uk/dog-advice/life-with-your-dog/enrichment/enrichment-activities-for-dogs"
+    }
+  ],
+  "review": {
+    "ownerAppeal": 7,
+    "dogEnjoyment": 7,
+    "originality": 7,
+    "adventureFactor": 7,
+    "practicality": 7,
+    "memoryValue": 8,
+    "reviewedOn": "2026-11-26"
+  },
+  "role": "lifestyle",
+  "teaser": "Postcards from the places they love most, delivered straight to the nose.",
+  "showcase": false
+}

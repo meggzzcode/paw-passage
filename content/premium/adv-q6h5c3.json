@@ -1,0 +1,113 @@
+{
+  "schema": 2,
+  "access": "premium",
+  "status": "published",
+  "affiliateProducts": [],
+  "relatedGuides": [],
+  "achievements": [],
+  "household": ["family"],
+  "reservation": {
+    "needed": false
+  },
+  "lifeStages": ["adult", "senior", "puppy"],
+  "crowd": "none",
+  "strangers": false,
+  "otherDogs": false,
+  "noise": "quiet",
+  "dogMobility": "low",
+  "stepFree": true,
+  "water": "none",
+  "sizes": [],
+  "avoidWeather": [],
+  "seasons": [],
+  "id": "adv-q6h5c3",
+  "title": "The Rec Room League",
+  "role": "everyday",
+  "teaser": "Tonight the humans play. The dog runs the snack bar.",
+  "clue": "Two sports, one living room, and a very serious spectator.",
+  "reveal": "Turn a hallway into a tiny sports hall with a soft mini golf hole and a plush-pin bowling lane. You play, your dog is mascot and referee with a snack bar, and a turn is on offer whenever they like.",
+  "objective": "Play a soft ball mini golf hole and a plush-pin bowling lane yourself, while your dog watches, visits the snack bar and joins in if they want.",
+  "instructions": [
+    "Clear a hallway or open floor about three meters long, with grippy footing (a runner or yoga mat). Use a soft foam or fabric ball bigger than your dog's mouth, with no squeaker. Put a mat with a water bowl and a few pieces of the ration to one side, away from the lane. That is the snack bar.",
+    "Build the golf hole: lay a large laundry basket on its side against a wall as the cup, with a rolled towel to guide it in. Add a folded towel as a 'bunker' halfway.",
+    "Build the bowling lane: stand six large plush toys or rolled towels in a triangle at the far end, with a rolled towel along each side as bumpers.",
+    "Round one, golf: sit or kneel and roll the ball toward the cup, three goes. Your dog may watch, wander or sniff. Announce each shot in your best commentator voice.",
+    "Round two, bowling: roll the ball down the lane at the pins and cheer the 'strikes'. Reset the pins with a flourish.",
+    "Intermission: after each round, call the snack bar to order. Whatever your dog nibbles or sniffs there is the half-time show.",
+    "Your dog's turn (only if they are keen): roll the ball softly past them or toward the pins and let them nudge, chase or ignore it. Stop the moment they lose interest, then name the league champion."
+  ],
+  "twist": "You are the athlete: your dog is the mascot, the referee and the snack bar's best customer, and gets a turn whenever they fancy it.",
+  "variations": [
+    "For a seated owner: play from a chair and roll the ball a shorter distance.",
+    "For a dog who likes to run: use the yard or a long hallway and let them chase a slow, soft roll after you have bowled.",
+    "For a dog who ignores balls: skip your dog's turn and keep the snack bar.",
+    "For a puppy: use one soft ball and two large plush pins, with no stuffing coming out, and play for five minutes."
+  ],
+  "completion": "You have played both rounds, your dog has visited the snack bar, and a league champion has been named.",
+  "photoIdea": "Photograph the plush pins mid-tumble with your dog watching from the edge, or the snack bar with your dog's nose in it.",
+  "memoryPrompt": "Who took the first strike, you or the dog?",
+  "minutesMin": 15,
+  "minutesMax": 25,
+  "activeMinutes": 12,
+  "costMin": 0,
+  "costMax": 10,
+  "prep": "light",
+  "supplies": [
+    "A soft ball bigger than your dog's mouth",
+    "Six large plush toys or rolled towels",
+    "A laundry basket",
+    "Towels",
+    "A mat and water bowl"
+  ],
+  "optionalSupplies": ["A few pieces of today's ration", "A paper scorecard"],
+  "substitutes": [
+    "No soft ball? Use a rolled pair of socks bigger than your dog's mouth, or a large soft toy.",
+    "No plush? Use rolled towels."
+  ],
+  "requires": ["toys", "household-items"],
+  "transport": "none",
+  "setting": "indoor",
+  "homes": ["apartment", "house-no-yard", "house-with-yard"],
+  "space": "a-room",
+  "places": ["home"],
+  "energy": "moderate",
+  "personalities": ["playful", "curious"],
+  "ownerMobility": "minimal-walking",
+  "food": true,
+  "dietNotes": "The snack bar is only a few pieces counted from the day's ration. Ask your vet about your dog's diet. For a food-free version put a toy on the mat.",
+  "safety": [
+    "Use only soft, large balls and plush pins, with nothing hard or breakable in the lane.",
+    "Check the floor is grippy and clear before any chase; stop if your dog starts to slide.",
+    "Remove plush toys your dog starts to tear, and run it one dog at a time."
+  ],
+  "activityTypes": ["play-and-games", "celebrations"],
+  "collections": ["five-minute-wonders", "rainy-day-club", "the-playful-pup", "doggy-date-club"],
+  "stamps": ["first-adventure", "playtime-champion"],
+  "keepsake": {
+    "family": "event-ticket",
+    "theme": "league-night-ticket",
+    "headline": "LEAGUE NIGHT",
+    "subhead": "Rec Room champion spectator",
+    "explainer": "My human bowled. I supervised from the snack bar"
+  },
+  "research": [
+    {
+      "label": "Dogs Trust: enrichment activities for dogs",
+      "url": "https://www.dogstrust.org.uk/dog-advice/life-with-your-dog/enrichment/enrichment-activities-for-dogs"
+    },
+    {
+      "label": "VCA Animal Hospitals: enrichment for pets",
+      "url": "https://vcahospitals.com/know-your-pet/enrichment"
+    }
+  ],
+  "review": {
+    "ownerAppeal": 7,
+    "dogEnjoyment": 7,
+    "originality": 7,
+    "adventureFactor": 6,
+    "practicality": 8,
+    "memoryValue": 7,
+    "reviewedOn": "2026-11-26"
+  },
+  "showcase": false
+}

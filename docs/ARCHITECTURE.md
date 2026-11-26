@@ -87,7 +87,7 @@ Flow:
 - Request bodies over 64 KB are refused. Per-IP limits (12 access attempts and 120 other calls per minute) are held in function memory: best effort per instance, not global.
 - Test provider only when `PP_ALLOW_TEST_PROVIDER=1` in `dev`, `deploy-preview` or `branch-deploy`.
 - Fail closed: no valid `SESSION_SECRET` (32+ characters) means 503.
-- Premium text is absent from the repository, the bundle and public files.
+- Premium text is absent from the bundle and public files; the build never reads `content/premium/`. Owner's decision (2026-11-26): the premium authoring files are in that folder of this repository while it is still PUBLIC, so the paid library is protected only once the repository is private (`PREMIUM-CONTENT-WORKFLOW.md`).
 - `netlify.toml` sets `no-store` for `/api/*` and static security headers.
 
 ## Build and deploy

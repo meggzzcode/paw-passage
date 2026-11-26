@@ -1,0 +1,104 @@
+{
+  "schema": 2,
+  "access": "premium",
+  "status": "published",
+  "optionalSupplies": [
+    "Small towel for muddy paws",
+    "Familiar toy for the Breeze Delivers version"
+  ],
+  "achievements": [],
+  "relatedGuides": [],
+  "affiliateProducts": [],
+  "research": [],
+  "reservation": {
+    "needed": false
+  },
+  "homes": ["apartment", "house-no-yard", "house-with-yard"],
+  "space": "none",
+  "seasons": [],
+  "sizes": [],
+  "food": false,
+  "transport": "walkable",
+  "water": "none",
+  "prep": "light",
+  "costMin": 0,
+  "costMax": 0,
+  "substitutes": [
+    "No ribbon? Use a strip torn from a tissue or a thin scrap of cloth, held in your hand.",
+    "No breeze at all? A raised licked finger or a feather will tell you if there is any."
+  ],
+  "stamps": ["first-adventure", "trail-blazer", "seasonal-explorer"],
+  "id": "adv-ejbg17",
+  "title": "The Wind Compass",
+  "clue": "Today nobody picks the route. A strip of tissue and a nose will.",
+  "reveal": "Tie a ribbon at your door and watch which way the wind blows it. Then walk into the breeze and let your dog's nose find the Source, the first big smell the wind has been carrying. You steer only for safety.",
+  "objective": "Walk into the wind from your door, let your dog read the air until they find a Source, then take the tailwind home.",
+  "instructions": [
+    "Tie a strip of tissue or light ribbon to a doorknob, railing or fence. Watch it for ten seconds: it streams away from the wind. Say it aloud like a ship's captain: \"Wind from the west, so we go west.\" Walk toward where the wind is coming from, opposite to the way the ribbon points.",
+    "Take the ribbon with you, plus the leash and a water bowl. Stand outside your door for a full minute and let your dog lift their nose into the air before you set off. This minute is the departure.",
+    "Walk the sidewalks and paths you already know, turning into the wind. The wind is a compass, not a law: if it points at a wall or a main road, take the nearest safe street that still turns into it. Never cross anywhere you would not normally cross.",
+    "Let the nose lead the pace. When your dog slows, lifts their head or goes quiet and busy, stop and wait. Do not tug them on. Name the first place where they really settle in to read the Source: a hedge corner, a bakery vent, a gatepost, a tree.",
+    "Stay at the Source for as long as your dog likes: no counting, no goal. If there is somewhere to sit, sit. If the smell is trash cans, fumes or other dogs' business, call it a false Source, step away and keep sailing.",
+    "When your dog turns away or the time you planned is up, offer water. Then turn around: the wind is now at your back and this is the Tailwind Home. Walk back the way you came, letting them sniff as they like.",
+    "At your door, tie the ribbon back where it streams and say the Source out loud once. Water for the dog, something warm for you, and the ribbon stays up as your doorstep wind-sock until tomorrow."
+  ],
+  "twist": "You never decide where you are going: the wind sets the direction, your dog's nose picks the destination, and you keep only a safety veto.",
+  "variations": [
+    "Doorstep Compass for a slow or senior dog, or any puppy not yet cleared for public places: sit on the step or in the yard and let the wind bring the news for ten minutes. Same ribbon, same Source ceremony.",
+    "Breeze Delivers: in a fenced yard or a quiet spot on a short leash, put one familiar toy behind a bush or post upwind, out of sight. Walk your dog in from downwind and let the breeze deliver it. If they ignore it, that is a valid result.",
+    "Rainy or very still day: no wind means no walk. Use a window you can open instead, read the ribbon there, and name the best smell that arrives.",
+    "Sun and shade: on a cool, bright day, let the line where a building's shadow ends and the sun begins be the Source, and see whether your dog chooses the light or the shade. Walk home with the wind at your back as usual."
+  ],
+  "completion": "You have found a Source, or the wind took you somewhere your dog really wanted to linger, and you have walked home with the wind at your back. Turning back early counts.",
+  "photoIdea": "Your dog with their nose lifted into the wind, taken from behind or the side, with the ribbon streaming in the frame. No calling, no posing.",
+  "memoryPrompt": "Where did the wind send you, and what was waiting at the Source?",
+  "minutesMin": 20,
+  "minutesMax": 40,
+  "activeMinutes": 25,
+  "supplies": ["Leash", "A strip of tissue, ribbon or light scarf", "Water and a bowl"],
+  "requires": ["leash-and-harness", "household-items"],
+  "setting": "outdoor",
+  "places": ["home", "city", "countryside"],
+  "avoidWeather": ["heat", "cold"],
+  "lifeStages": ["puppy", "adult", "senior"],
+  "energy": "gentle",
+  "personalities": ["curious", "adventurous"],
+  "dogMobility": "moderate",
+  "ownerMobility": "short-walk",
+  "stepFree": false,
+  "crowd": "some",
+  "strangers": true,
+  "otherDogs": true,
+  "noise": "some",
+  "safety": [
+    "Sidewalk too hot for the back of your hand is too hot for paws; head home if your dog pants hard or shivers.",
+    "Keep your dog on a leash, follow local rules, and steer them off anything they find on the ground.",
+    "Puppies: stick to the Doorstep Compass until your vet says public places are fine."
+  ],
+  "activityTypes": ["outdoor-exploration", "scent-and-discovery", "problem-solving"],
+  "collections": [
+    "the-great-outdoors",
+    "five-minute-wonders",
+    "seasons-together",
+    "the-curious-explorer"
+  ],
+  "keepsake": {
+    "family": "certificate",
+    "theme": "explorer",
+    "headline": "SOURCE FOUND BY NOSE",
+    "subhead": "Route set by the wind, destination by the dog",
+    "explainer": "The wind chose the route and the nose chose the stop"
+  },
+  "review": {
+    "ownerAppeal": 8,
+    "dogEnjoyment": 8,
+    "originality": 8,
+    "adventureFactor": 8,
+    "practicality": 7,
+    "memoryValue": 8,
+    "reviewedOn": "2026-11-26"
+  },
+  "role": "signature",
+  "teaser": "No map, no plan, no destination. Just a breeze and a very good nose.",
+  "showcase": true
+}

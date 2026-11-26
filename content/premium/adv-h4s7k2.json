@@ -1,0 +1,108 @@
+{
+  "schema": 2,
+  "id": "adv-h4s7k2",
+  "access": "premium",
+  "status": "published",
+  "activeMinutes": 15,
+  "costMin": 0,
+  "costMax": 0,
+  "supplies": [
+    "Two blankets or towels",
+    "A worn T-shirt of yours",
+    "Paper and pen",
+    "Phone for the Strip photos"
+  ],
+  "optionalSupplies": [
+    "Water bowl",
+    "Warm drink for you",
+    "Leash and towel for the outdoor edge",
+    "A tub for a plain-water ice block"
+  ],
+  "substitutes": [
+    "No spare blanket? Use a bath towel, a coat or a folded duvet cover.",
+    "No printer for the Strip? A phone collage is fine."
+  ],
+  "requires": ["blanket", "paper-and-pens", "camera-phone", "household-items"],
+  "transport": "none",
+  "reservation": {
+    "needed": false
+  },
+  "seasons": [],
+  "avoidWeather": [],
+  "sizes": [],
+  "crowd": "none",
+  "strangers": false,
+  "otherDogs": false,
+  "noise": "quiet",
+  "food": false,
+  "water": "none",
+  "stepFree": true,
+  "achievements": [],
+  "relatedGuides": [],
+  "affiliateProducts": [],
+  "research": [],
+  "lifeStages": ["puppy", "adult", "senior"],
+  "homes": ["apartment", "house-no-yard", "house-with-yard"],
+  "title": "The Sunbeam Timetable",
+  "clue": "The destination moves all afternoon, and your dog probably knows where it is going before you do.",
+  "reveal": "Follow one sun patch across a room in three stops. At each stop your dog picks between two blankets, one with your worn T-shirt, and you seal a guess about their choice. Three photos from the same spot line up as a Sunbeam Strip of the afternoon.",
+  "objective": "Follow one sun patch for three stops, seal a guess about which blanket your dog picks, score it and make a three-photo Strip.",
+  "instructions": [
+    "Pick a bright day and a room that gets floor sun. Gather two blankets or towels, a worn T-shirt of yours, paper, a pen and your phone. The paper map is your marker, so nothing needs taping down.",
+    "Sketch a rough floor plan, mark where the patch is now with the time, and write one sealed guess: \"At Stop 2 my dog will lie on the ___ blanket\" (plain or T-shirt). Fold it under the pen. Choose a spot to sit where you can photograph the patch; every Strip photo comes from there.",
+    "Stop 1: feel the fabric first, since sun through glass can warm it. If it is comfortably warm at most, lay both blankets side by side in the patch, with the T-shirt tucked under a fold of one, and take photo 1. Sit nearby with a book. Your dog may pick one, sniff, or ignore the lot. Note which they choose.",
+    "Wait about 15 to 20 minutes and do something else. The patch moves like the hand of a clock, and you do not need to watch it. Note where your dog is each time you look up.",
+    "Stop 2, the Arrival: before moving anything, take photo 2 from your spot and see where the patch and your dog are now. Lay both blankets in the new patch, T-shirt under a fold of one, say nothing and sit back. If your dog has already moved with the light, write \"dog got there first\" and score the guess on the blanket they are on.",
+    "Open the guess and score it: hit, miss or no idea. Never pull a blanket from under a dog or move one who is resting; if the patch gets ahead of them, let it go.",
+    "Stop 3, the Last Patch: after another 15 to 20 minutes, take photo 3 from your spot and mark where the patch and your dog are. If your dog is still on the old blanket, leave the new one in the patch and note whether they ever come over.",
+    "Make the Sunbeam Strip: put the three photos side by side (a phone collage will do), label each with its time and where your dog was, and add the patch's route to your map. Take your own turn on the best patch with a warm drink and leave a blanket out for the evening if your dog likes it."
+  ],
+  "twist": "You bet on which blanket your dog picks, the dog answers, and the Sunbeam Strip shows the afternoon moving in three frames.",
+  "variations": [
+    "Moving edge, outdoors: pick a sun, frost or shade edge on your doorstep, yard or a short walk that will visibly move in 20 minutes. Mark A is where it is now, Mark B a few strides along. Keep your dog on a leash to read both sides, and when the line reaches Mark B, say \"border closed\" and go home. The edge sets closing time, and your dog's favorite spot may end up across the border.",
+    "Warm-day cool map: read floors and corners with the back of your hand, rank the spots coolest to warmest on your sketch, and guess which one your dog picks. In the afternoon add a plain-water ice block in a shallow bowl and take it away if they start crunching hard.",
+    "Seated or quiet dog: one room, the same seat and three photos. Skip moving blankets and just mark which spots your dog drifts to.",
+    "Two dogs: each gets their own guess and their own row on the Strip, and the winner is whoever you guessed right about."
+  ],
+  "completion": "You have followed the sun for three stops or watched it drift, scored your guess and made the Strip. However your dog used the patch counts.",
+  "photoIdea": "The three Strip photos, taken from the same spot at each stop, with your dog in the patch if they chose it. Take them only if they are already resting.",
+  "memoryPrompt": "Did you guess the right blanket, and who was in the last frame?",
+  "minutesMin": 45,
+  "minutesMax": 75,
+  "prep": "none",
+  "setting": "either",
+  "space": "a-room",
+  "places": ["home"],
+  "energy": "gentle",
+  "personalities": ["cozy", "curious", "gentle"],
+  "dogMobility": "low",
+  "ownerMobility": "minimal-walking",
+  "safety": [
+    "Feel any blanket first, since sun through glass can warm it. Keep fabric off heaters and leave water and a cooler spot.",
+    "Never lift or move a resting dog; lay the blankets beside them. Use a T-shirt too big to swallow and remove it if chewed.",
+    "Outdoor edge or ice block: hand-test the ground, skip salted or de-icer paths, plain water ice only, and puppies stay home."
+  ],
+  "activityTypes": ["relaxation", "photography", "memory-making"],
+  "collections": ["seasons-together", "the-golden-years", "home-sweet-home", "rainy-day-club"],
+  "stamps": ["first-adventure", "cozy-companion", "seasonal-explorer"],
+  "keepsake": {
+    "family": "seasonal-frame",
+    "theme": "sundial-log",
+    "headline": "SUNBEAM TIMETABLE",
+    "subhead": "Where the sun went, and which blanket won",
+    "explainer": "Sealed guess: which blanket the dog picks in the sun"
+  },
+  "review": {
+    "ownerAppeal": 7,
+    "dogEnjoyment": 6,
+    "originality": 7,
+    "adventureFactor": 6,
+    "practicality": 8,
+    "memoryValue": 8,
+    "reviewedOn": "2026-11-26"
+  },
+  "_source": "premium-private",
+  "role": "everyday",
+  "teaser": "The warmest spot in the house moves all afternoon. Care to guess where it goes?",
+  "showcase": false
+}

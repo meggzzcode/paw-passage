@@ -1,0 +1,100 @@
+{
+  "schema": 2,
+  "access": "premium",
+  "status": "published",
+  "relatedGuides": [],
+  "affiliateProducts": [],
+  "achievements": [],
+  "household": [],
+  "sizes": [],
+  "id": "adv-m53p4q",
+  "role": "everyday",
+  "showcase": false,
+  "title": "The New Park Passport",
+  "clue": "Somewhere nearby is a patch of green you have always meant to visit, and it has awards to give.",
+  "reveal": "Visit a park you have never explored and hand out four awards chosen by your dog's own behavior. The visit ends with a hand-drawn passport stamp and a reading of the awards at the Best Rest spot.",
+  "objective": "Explore a new park with your dog, give four awards based on what they do, and finish with a passport stamp for your collection.",
+  "instructions": [
+    "Choose a park you have never visited, or never walked past the car park. Check its dog rules on the official site: leash laws, off-leash hours, seasonal bans and closed areas. Go at a quiet time.",
+    "Make a blank passport page: an index card or paper square with the park's name, four award lines and a circle in the corner for the stamp.",
+    "Arrive, leash on, and pause at the main gate for a minute. Let your dog sniff the entrance.",
+    "Wander a gentle loop and watch your dog for four awards: Best Sniff (where they linger longest), Best Look (where they stop to watch or prick their ears), Best Find (the thing they notice first, from a distance) and Best Rest (where they settle or slow down). Doodle each one on the card as it happens.",
+    "At the Best Rest spot, sit for five minutes with water. Read the four awards aloud to your dog, then let them watch the world or doze.",
+    "Draw your passport stamp in the circle: the park's initials, today's date and a tiny picture of the Best Sniff.",
+    "Keep the card with your other park pages, so next time you can choose a park by its awards."
+  ],
+  "twist": "The four awards are won by your dog's own behavior, so the passport stamp records exactly what they chose: the best sniff, look, find and rest.",
+  "variations": [
+    "Easier: a short flat park with a bench near the entrance, with only two awards.",
+    "Seated version: stay on one bench, give Best Seat and Best Sniff only, and let your dog explore the leash length.",
+    "Farther afield: drive to a park further away, with a car harness or crate and no time alone in the car.",
+    "Quiet version: go early on a weekday or in the off-season when fewer dogs are around."
+  ],
+  "completion": "You have explored the park at your dog's pace, handed out your four awards and drawn the stamp.",
+  "photoIdea": "Your dog at the Best Seat or Best Sniff spot, with the park behind them.",
+  "memoryPrompt": "Which award did your dog win, and would you come back?",
+  "minutesMin": 30,
+  "minutesMax": 90,
+  "activeMinutes": 40,
+  "costMin": 0,
+  "costMax": 10,
+  "prep": "light",
+  "supplies": ["Leash and harness", "Water and bowl", "Waste bags", "Index card and pen"],
+  "optionalSupplies": ["Colored pencils", "Car harness or crate for a farther park"],
+  "substitutes": ["Any scrap of paper or a notes app"],
+  "requires": ["leash-and-harness", "paper-and-pens"],
+  "transport": "walkable",
+  "reservation": {
+    "needed": false,
+    "note": "Nothing to book, but check the park's dog rules, leash laws and any closed or off-leash areas before you go."
+  },
+  "setting": "outdoor",
+  "homes": ["apartment", "house-no-yard", "house-with-yard"],
+  "space": "none",
+  "places": ["city", "countryside"],
+  "seasons": [],
+  "avoidWeather": ["heat", "rain"],
+  "lifeStages": ["adult", "senior"],
+  "energy": "moderate",
+  "personalities": ["curious", "adventurous", "playful"],
+  "dogMobility": "moderate",
+  "ownerMobility": "short-walk",
+  "stepFree": false,
+  "crowd": "some",
+  "strangers": true,
+  "otherDogs": true,
+  "noise": "some",
+  "food": false,
+  "water": "near-water",
+  "safety": [
+    "Check the park's dog rules and keep your dog on leash unless an off-leash area is posted and secure.",
+    "Keep your dog away from pond edges, algae, goose droppings and dropped food.",
+    "Bring water, rest in shade and head home if it is hot, crowded or your dog seems tired."
+  ],
+  "activityTypes": ["outdoor-exploration", "scent-and-discovery", "memory-making"],
+  "collections": ["the-curious-explorer", "city-explorers", "the-great-outdoors", "our-story"],
+  "stamps": ["first-adventure", "city-explorer", "trail-blazer", "memory-maker"],
+  "keepsake": {
+    "family": "collage",
+    "theme": "four-seasons-grid",
+    "headline": "NEW PARK STAMPED",
+    "subhead": "Four awards, one stamp",
+    "explainer": "Park visit: four awards handed out by the dog's nose"
+  },
+  "teaser": "A park you have never visited is about to get your dog's seal of approval.",
+  "research": [
+    {
+      "label": "Cornell Riney Canine Health Center: summer heat safety tips",
+      "url": "https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/health-info/summer-heat-safety-tips-dogs"
+    }
+  ],
+  "review": {
+    "ownerAppeal": 7,
+    "dogEnjoyment": 7,
+    "originality": 5,
+    "adventureFactor": 8,
+    "practicality": 8,
+    "memoryValue": 7,
+    "reviewedOn": "2026-11-26"
+  }
+}

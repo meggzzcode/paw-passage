@@ -1,0 +1,133 @@
+{
+  "schema": 2,
+  "access": "premium",
+  "status": "published",
+  "relatedGuides": [],
+  "affiliateProducts": [],
+  "achievements": [],
+  "household": [],
+  "sizes": [],
+  "id": "adv-m1c5b8",
+  "role": "aspirational",
+  "showcase": true,
+  "title": "Cabin Companion Getaway",
+  "clue": "Somewhere with a porch, a rug by the stove and a dog's corner that gets built before yours.",
+  "reveal": "A cozy weekend at a dog-welcoming cabin. Before you unpack your own bag, you build a copy of your dog's home corner, so the cabin feels theirs from the first minute.",
+  "objective": "Spend a night or two at a dog-welcoming cabin, set up your dog's corner first, and share a porch hour, a woodland wander and a familiar game.",
+  "instructions": [
+    "Book a dog-welcoming cabin and confirm the pet policy in writing: fees, number and size limits, furniture rules, fencing and any trail access. Prefer a single-level cabin with a porch. Look up the nearest vet.",
+    "Pack a home kit: bed or crate, blanket, regular food and bowls, towels for muddy paws, leash, ID, and a favorite toy. Use a car harness or crate, take breaks, and never leave your dog in the car.",
+    "Walk your dog round the outside of the cabin on leash first. Inside, set their corner before you unpack: bed, blanket and water, laid out like home, away from the door and any stove.",
+    "Let your dog explore the cabin on a loose leash at their own pace. Pick up anything dropped, close off loft stairs or the stove area if you can, and keep them out of anywhere that worries you.",
+    "Porch Hour: spread a blanket on the porch or doorstep and sit with a warm drink. Watch where your dog settles and treat it as their Porch Post.",
+    "Take a short woodland wander on a leash from the door, staying on the path and well back from any stream or pond. No unsupervised water access, and turn back if your dog wants to.",
+    "Back at the cabin, play one familiar game on the rug (a toy hunt or gentle tug), then dim the lights. Never leave your dog alone, even briefly.",
+    "In the morning, take a slow coffee on the porch with your dog, check their coat and paws, tidy up and leave the cabin as you found it."
+  ],
+  "twist": "Your dog's corner is built first, a copy of home before your own bag is opened, and the porch spot they pick becomes the cabin's favorite place.",
+  "variations": [
+    "Easier: a single dog-welcoming room or cottage with a ground-floor entrance, if a whole cabin is too much.",
+    "Day visit: a few hours at a dog-welcoming cabin, shelter or lodge, with the porch hour as the heart of the visit.",
+    "Seated version: choose a cabin with a ramp or step-free entrance and a porch with a chair, and keep the wander to the doorstep.",
+    "Quiet version: pick a weekday in the off-season for fewer other guests and less noise."
+  ],
+  "completion": "Your dog has spent time at the cabin in their own corner, and you have shared a porch hour at whatever pace suited them.",
+  "photoIdea": "Your dog at their Porch Post, taken from the doorway with soft light behind.",
+  "memoryPrompt": "Where did your dog end up settling at the cabin, and was it where you expected?",
+  "minutesMin": 720,
+  "minutesMax": 2880,
+  "activeMinutes": 150,
+  "costMin": 100,
+  "costMax": 350,
+  "prep": "some",
+  "supplies": [
+    "Dog's bed and blanket",
+    "Regular food and bowls",
+    "Towels",
+    "Leash, harness and ID tag",
+    "A familiar toy"
+  ],
+  "optionalSupplies": [
+    "Camp chair for the porch",
+    "Bright jacket for woodland walks",
+    "Pet first-aid kit",
+    "Car harness or crate"
+  ],
+  "substitutes": [
+    "A spare duvet or bath towel as bedding",
+    "A bath mat by the door for muddy paws"
+  ],
+  "requires": ["car", "blanket", "towels", "leash-and-harness", "toys"],
+  "transport": "car",
+  "reservation": {
+    "needed": true,
+    "note": "Book a dog-welcoming cabin ahead and confirm pet rules, fees, fencing and limits in writing before you pay."
+  },
+  "setting": "either",
+  "homes": ["apartment", "house-no-yard", "house-with-yard"],
+  "space": "none",
+  "places": ["countryside", "mountains", "road-trip"],
+  "seasons": [],
+  "avoidWeather": ["heat"],
+  "lifeStages": ["adult", "senior"],
+  "energy": "gentle",
+  "personalities": ["cozy", "gentle", "curious"],
+  "dogMobility": "moderate",
+  "ownerMobility": "short-walk",
+  "stepFree": false,
+  "crowd": "none",
+  "strangers": true,
+  "otherDogs": true,
+  "noise": "quiet",
+  "food": true,
+  "dietNotes": "Bring and feed only your dog's usual food and portions; nothing new on the trip. Ask your vet about travel diet. Treats are optional and can be skipped entirely.",
+  "water": "near-water",
+  "safety": [
+    "Confirm the dog policy in writing and never leave your dog alone in the cabin or in the car.",
+    "Guard stoves, fireplaces and heaters; check floors for dropped food, medication and small objects.",
+    "Wear bright colors if hunting is in season, keep a leash on, and check for ticks after woodland walks."
+  ],
+  "activityTypes": ["travel", "relaxation", "outdoor-exploration"],
+  "collections": [
+    "road-trip-adventures",
+    "little-splurges",
+    "camping-companions",
+    "doggy-date-club"
+  ],
+  "stamps": ["first-adventure", "cozy-companion", "road-tripper", "memory-maker"],
+  "keepsake": {
+    "family": "seasonal-frame",
+    "theme": "autumn",
+    "headline": "CABIN COMPANION",
+    "subhead": "A weekend away, home corner included",
+    "explainer": "Cabin weekend: the dog's corner was built first"
+  },
+  "teaser": "A woodland weekend, a warm porch and a dog who gets the best seat.",
+  "research": [
+    {
+      "label": "Cornell Riney Canine Health Center: winter safety tips",
+      "url": "https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/winter-safety-tips"
+    },
+    {
+      "label": "Cornell Riney Canine Health Center: summer heat safety tips",
+      "url": "https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/health-info/summer-heat-safety-tips-dogs"
+    },
+    {
+      "label": "PDSA: safe car travel for pets",
+      "url": "https://pdsa.org.uk/car-travel"
+    },
+    {
+      "label": "AKC: camping with dogs",
+      "url": "https://www.akc.org/expert-advice/travel/camping-with-dogs/"
+    }
+  ],
+  "review": {
+    "ownerAppeal": 8,
+    "dogEnjoyment": 7,
+    "originality": 6,
+    "adventureFactor": 8,
+    "practicality": 6,
+    "memoryValue": 8,
+    "reviewedOn": "2026-11-26"
+  }
+}

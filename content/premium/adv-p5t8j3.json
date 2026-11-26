@@ -1,0 +1,112 @@
+{
+  "schema": 2,
+  "reservation": {
+    "needed": false
+  },
+  "seasons": ["winter"],
+  "avoidWeather": [],
+  "sizes": [],
+  "household": [],
+  "achievements": [],
+  "relatedGuides": [],
+  "affiliateProducts": [],
+  "optionalSupplies": ["A new toy", "A portion of regular meal"],
+  "substitutes": ["No bag? Use a second small box."],
+  "access": "premium",
+  "status": "published",
+  "showcase": true,
+  "stepFree": true,
+  "strangers": false,
+  "otherDogs": false,
+  "crowd": "none",
+  "noise": "some",
+  "water": "none",
+  "food": true,
+  "homes": ["apartment", "house-no-yard", "house-with-yard"],
+  "lifeStages": ["puppy", "adult", "senior"],
+  "id": "adv-p5t8j3",
+  "title": "The Christmas Morning Mystery",
+  "clue": "Three parcels, no wrapping paper, and one very curious nose.",
+  "reveal": "Skip the ribbon and tape: set out three open parcels made from plain boxes, a bag and a towel, each with a familiar surprise. Your dog opens them in any order, and the first one they choose is the present of the day.",
+  "objective": "Let your dog investigate three safe parcels of familiar surprises in their own order.",
+  "instructions": [
+    "Clear a calm spot away from the tree, lights and decorations. Close the door to anything with tinsel, ribbon, candles, gift wrap or tree water. Poinsettia, holly, mistletoe and lilies stay out of the room.",
+    "Make three parcels with no tape, bows or tissue: a cardboard box with a wide open top, a plain paper bag on its side with the handles removed, and a rolled towel with a pocket.",
+    "Put a familiar toy in one, a toy they have not seen for a few weeks in another, and a portion of their regular meal or a second favorite toy in the third.",
+    "Sit nearby, say nothing and let your dog wander in. They may sniff, nudge or pull out anything in any order, or skip the lot.",
+    "Note which parcel they choose first and let them play. If they chew the box or bag, swap it for the toy and take the card away.",
+    "Tidy parcels, tape bits and all the cardboard before they leave the room. Leave one toy out for later."
+  ],
+  "twist": "There is nothing to unwrap: your dog picks the order of the mystery, and the first parcel they choose is the present of the day.",
+  "variations": [
+    "Food-free: put toys in all three parcels.",
+    "For a sound-sensitive dog: skip the paper bag and use only towels and boxes.",
+    "For a puppy: one box, one toy, two minutes.",
+    "For limited mobility: set the parcels beside their bed."
+  ],
+  "completion": "Your dog has investigated at least one parcel and you know which they chose first.",
+  "photoIdea": "Your dog beside the parcel they picked, photographed at a distance, natural light, no props in the shot.",
+  "memoryPrompt": "Which parcel did your dog choose first, and what was inside?",
+  "minutesMin": 15,
+  "minutesMax": 30,
+  "activeMinutes": 15,
+  "costMin": 0,
+  "costMax": 20,
+  "prep": "light",
+  "supplies": ["Cardboard box", "Paper bag", "Towel", "Familiar toys"],
+  "requires": ["toys", "cardboard-boxes", "household-items"],
+  "transport": "none",
+  "setting": "indoor",
+  "space": "a-room",
+  "places": ["home"],
+  "energy": "gentle",
+  "dogMobility": "low",
+  "ownerMobility": "seated",
+  "dietNotes": "Optional: a portion of the regular meal the dog already eats. No chocolate, raisins or leftovers. Ask your vet; food-free option given.",
+  "safety": [
+    "Keep tinsel, ribbon, wrapping paper, tape, lights, candles and ornaments out of reach.",
+    "Poinsettia, holly, mistletoe and lilies can harm dogs; keep them out of the room.",
+    "Supervise all boxes and bags; stop if they eat cardboard."
+  ],
+  "personalities": ["curious", "playful"],
+  "activityTypes": ["celebrations", "scent-and-discovery", "play-and-games"],
+  "collections": [
+    "holidays-and-celebrations",
+    "seasons-together",
+    "home-sweet-home",
+    "rainy-day-club"
+  ],
+  "stamps": ["first-adventure", "seasonal-explorer", "cozy-companion"],
+  "keepsake": {
+    "family": "travel-postcard",
+    "theme": "christmas-card",
+    "headline": "CHRISTMAS MORNING",
+    "subhead": "Three parcels, one first pick",
+    "explainer": "Opened the parcels in my own order"
+  },
+  "role": "lifestyle",
+  "teaser": "Christmas morning is about to get a lot more interesting from the floor.",
+  "research": [
+    {
+      "label": "ASPCA: people foods to avoid feeding your pets",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/people-foods-avoid-feeding-your-pets"
+    },
+    {
+      "label": "ASPCA: toxic and non-toxic plants database",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants"
+    },
+    {
+      "label": "VCA Animal Hospitals: enrichment",
+      "url": "https://vcahospitals.com/know-your-pet/enrichment"
+    }
+  ],
+  "review": {
+    "ownerAppeal": 8,
+    "dogEnjoyment": 8,
+    "originality": 6,
+    "adventureFactor": 7,
+    "practicality": 9,
+    "memoryValue": 8,
+    "reviewedOn": "2026-11-26"
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "schema": 2,
+  "access": "premium",
+  "status": "published",
+  "affiliateProducts": [],
+  "relatedGuides": [],
+  "achievements": [],
+  "household": [],
+  "reservation": {
+    "needed": false
+  },
+  "lifeStages": ["adult", "senior", "puppy"],
+  "crowd": "none",
+  "strangers": false,
+  "otherDogs": false,
+  "noise": "quiet",
+  "dogMobility": "low",
+  "stepFree": true,
+  "water": "none",
+  "sizes": [],
+  "avoidWeather": [],
+  "seasons": [],
+  "id": "adv-q4m7k2",
+  "title": "The Open-Door Escape Room",
+  "role": "signature",
+  "showcase": true,
+  "teaser": "A case file is open, and only your dog can crack it.",
+  "clue": "Three locks, no ticking clock, and a door that was never actually shut.",
+  "reveal": "Turn a room into an escape room where nothing is timed and nothing can go wrong. Your dog meets three different kinds of lock, you play the game master, and the vault opens on a favorite toy.",
+  "objective": "Let your dog investigate three open, low 'locks' in any order, then open a vault with a favorite toy inside.",
+  "instructions": [
+    "Pick one room, close the other doors and clear breakables. Put a rug or mat under the play area if the floor is slippery. Keep the exit doorway open: your dog can leave at any time and the game simply pauses.",
+    "Build three locks, each a different kind of find and all in plain view within a body-length of each other. The Sniff Lock: a folded towel with two or three pieces of today's ration (or a toy that smells of you) tucked in a fold. The Peek Lock: a soft toy lying in a shallow open box on its side. The Nudge Lock: a toy under a cloth draped loosely so one nose push moves it.",
+    "Put the vault, a pillowcase with your dog's favorite toy inside, on a chair or in your lap. Draw three paper keys and put them with a pen on a clipboard or tray. This is your case file.",
+    "Read the case aloud in a calm voice (something like 'The Mystery of the Missing Squeaker') and sit down. Say nothing else, and do not point or guide. Your dog explores in whatever order they like.",
+    "Every time your dog sniffs, peeks into or nudges a lock, or takes what is in it, tick a key. Give the dog a minute or two per lock. If one gets ignored, open it yourself with a flourish ('master key') and count it. Nobody fails an escape room.",
+    "When all three keys are ticked, bring out the vault and open it. Play with the toy for a minute or two in the doorway, then walk out of the room together. That is the escape.",
+    "Close the file: write which lock your dog liked best, and which clue they ignored."
+  ],
+  "twist": "Nothing is locked and nobody is timed: your dog cracks three different kinds of clue in any order, and a 'wrong' move just opens a different lock.",
+  "variations": [
+    "For a quick game: two locks and the vault, about eight minutes.",
+    "For a seated owner or a slower dog: put all three locks on one blanket within a few steps and stay in your chair.",
+    "For a puppy: two locks with soft puppy toys and no food, and keep it to about five minutes.",
+    "For a shy or cautious dog: open just the Sniff Lock and the vault, and let them watch before they take part."
+  ],
+  "completion": "Your dog has met the locks they wanted to, you have ticked your keys, and the vault toy has been enjoyed.",
+  "photoIdea": "Photograph your dog next to the opened vault pillowcase and the toy, relaxed, with the case file in the corner of the frame.",
+  "memoryPrompt": "Which lock did your dog open first, and was it the one you expected?",
+  "minutesMin": 15,
+  "minutesMax": 30,
+  "activeMinutes": 15,
+  "costMin": 0,
+  "costMax": 0,
+  "prep": "light",
+  "supplies": [
+    "A towel and a cloth",
+    "A shallow cardboard box (no tape or staples)",
+    "A pillowcase for the vault",
+    "A favorite toy",
+    "Paper and a pen"
+  ],
+  "optionalSupplies": ["Today's ration for the Sniff Lock", "A clipboard"],
+  "substitutes": [
+    "No box? Use a clean laundry basket lying on its side, or skip the Peek Lock.",
+    "No clipboard? Use a cookie tray."
+  ],
+  "requires": ["toys", "household-items", "paper-and-pens"],
+  "transport": "none",
+  "setting": "indoor",
+  "homes": ["apartment", "house-no-yard", "house-with-yard"],
+  "space": "a-room",
+  "places": ["home"],
+  "energy": "gentle",
+  "personalities": ["curious", "playful"],
+  "ownerMobility": "seated",
+  "food": true,
+  "dietNotes": "Use a few pieces of the usual ration only, counted out of the day's food. Ask your vet about your dog's diet. The food-free version uses a worn cloth or toy.",
+  "safety": [
+    "Keep the exit open and never shut your dog in or behind anything.",
+    "Use boxes and cloths bigger than your dog's head, with no tape, staples or loose threads.",
+    "Toss any toy with loose parts, and play with only one dog at a time."
+  ],
+  "activityTypes": ["problem-solving", "scent-and-discovery", "play-and-games"],
+  "collections": [
+    "five-minute-wonders",
+    "rainy-day-club",
+    "the-curious-explorer",
+    "home-sweet-home"
+  ],
+  "stamps": ["first-adventure", "playtime-champion"],
+  "keepsake": {
+    "family": "certificate",
+    "theme": "escape-room-certificate",
+    "headline": "ESCAPE ARTIST",
+    "subhead": "Case closed. The door was never shut.",
+    "explainer": "Cracked three locks. The exit was open all along"
+  },
+  "research": [
+    {
+      "label": "Dogs Trust: enrichment activities for dogs",
+      "url": "https://www.dogstrust.org.uk/dog-advice/life-with-your-dog/enrichment/enrichment-activities-for-dogs"
+    },
+    {
+      "label": "VCA Animal Hospitals: enrichment for pets",
+      "url": "https://vcahospitals.com/know-your-pet/enrichment"
+    },
+    {
+      "label": "ASPCA: canine DIY enrichment",
+      "url": "https://www.aspca.org/pet-care/dog-care/canine-diy-enrichment"
+    }
+  ],
+  "review": {
+    "ownerAppeal": 8,
+    "dogEnjoyment": 8,
+    "originality": 7,
+    "adventureFactor": 8,
+    "practicality": 8,
+    "memoryValue": 8,
+    "reviewedOn": "2026-11-26"
+  }
+}

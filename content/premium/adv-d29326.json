@@ -1,0 +1,100 @@
+{
+  "schema": 2,
+  "optionalSupplies": ["A book, to read at the end", "A water bowl"],
+  "substitutes": [
+    "No baby gate? A half-open door your dog can see and hear through works, or a helper at the start line."
+  ],
+  "requires": ["household-items"],
+  "reservation": {
+    "needed": false
+  },
+  "seasons": [],
+  "avoidWeather": [],
+  "sizes": [],
+  "homes": ["apartment", "house-no-yard", "house-with-yard"],
+  "lifeStages": ["puppy", "adult", "senior"],
+  "stepFree": true,
+  "crowd": "none",
+  "strangers": false,
+  "otherDogs": false,
+  "noise": "quiet",
+  "food": true,
+  "water": "none",
+  "transport": "none",
+  "achievements": [],
+  "relatedGuides": [],
+  "affiliateProducts": [],
+  "research": [],
+  "access": "premium",
+  "status": "published",
+  "id": "adv-d29326",
+  "title": "The Missing Human Mystery",
+  "clue": "Someone on the case file has vanished into thin air, and the only lead is a trail of footsteps.",
+  "reveal": "You are the ghost. Lay a short, winding trail through your home, settle behind a half-open door where your dog can easily reach you, and let them follow the footsteps to wherever you went. The only thing waiting at the end is you.",
+  "objective": "Lay a short owner-scent trail, hide where your dog can easily reach you, and let them track you down at their own pace.",
+  "instructions": [
+    "Choose a short, bent route through one room, a hallway or the yard, with a hiding spot you can sit at: behind a half-open door, a yard chair or the far side of the sofa. Clear the floor of anything slippery or breakable. Keep the hide easy to reach, with no closed doors between you and your dog.",
+    "Settle your dog behind a baby gate or at a doorway where they can see and hear you. Keep it light: no instructions, no 'stay', no excitement. A second person can help if you have one.",
+    "Walk the trail slowly in socks or flat shoes, zigzagging a little. At each of the first three turns, set down one piece of your dog's usual ration (or skip the food and just walk). Keep the first trail short, only a few meters.",
+    "Settle at the end with a book or your phone, in plain earshot. A page turn, a cough or a quiet hum is plenty, so your dog never has to wonder where you are. Say nothing to start them off.",
+    "Open the gate or let your dog through the doorway and say only 'case open'. Then stay still. Let them sniff the start, wander, double back and solve it whichever way they like. Do not call, point or hurry them along.",
+    "When they arrive, give a calm greeting and a little water if they want it. If they come straight to you without following the trail, or lose interest halfway, that is a solved case too.",
+    "Close the case with a quiet minute together where the trail ended. Leave the start door open as the 'case closed' sign."
+  ],
+  "twist": "The trail is you: your dog is not hunting a treat, they are tracking a person, and the best find is you at the end.",
+  "variations": [
+    "For a dog who dislikes you disappearing, or who follows you everywhere and frets at gates: skip the hide and the gate. Rub a worn T-shirt along the trail (too big to swallow), then sit in plain view at the end holding it.",
+    "For limited mobility, a seated owner, a puppy or a first try: lay a trail of only four or five steps in one room, hide in view for a few seconds, and finish in your armchair.",
+    "Swap roles, the Both Ways round: after a rest and water, let your dog choose where to settle, such as their bed or the sunny spot. Tiptoe about announcing in a stage whisper that you are searching, then \"find\" them, sit nearby and let them decide whether to say hello. Never reach into or block a spot they have retreated to; if they want to rest, pretend to look elsewhere.",
+    "Welcome-home trail, for a new dog or a returning family member: before they arrive, lay three pieces of the day's ration in a gentle line from the front door to the dog's bed. Nobody says a word, and every piece is picked up afterwards."
+  ],
+  "completion": "Your dog has followed the trail at their own pace, or walked away from it, and you have shared a quiet minute at the end.",
+  "photoIdea": "Your dog's face arriving at the hiding spot, or the two of you in the quiet minute at the end of the trail.",
+  "memoryPrompt": "How did your dog work out the trail, and what did the ghost's hiding place give away?",
+  "minutesMin": 10,
+  "minutesMax": 25,
+  "activeMinutes": 10,
+  "costMin": 0,
+  "costMax": 0,
+  "prep": "light",
+  "supplies": [
+    "Socks or flat shoes",
+    "A few pieces of your dog's usual food (optional)",
+    "Baby gate or a doorway"
+  ],
+  "setting": "either",
+  "space": "a-room",
+  "places": ["home"],
+  "energy": "moderate",
+  "personalities": ["curious", "adventurous"],
+  "dogMobility": "low",
+  "ownerMobility": "minimal-walking",
+  "dietNotes": "Only a few pieces from your dog's normal daily ration; count them in and out. Skip the food entirely if you prefer.",
+  "safety": [
+    "Never hide behind a closed door or where your dog cannot reach you, and keep each hide to seconds.",
+    "If they fret when you are out of sight, use the plain-sight version and mention it to your vet if it keeps up.",
+    "Use only a few pieces of your dog's usual food, never chocolate, grapes, raisins or xylitol."
+  ],
+  "activityTypes": ["scent-and-discovery", "play-and-games"],
+  "collections": ["the-curious-explorer", "rainy-day-club", "the-playful-pup", "home-sweet-home"],
+  "stamps": ["first-adventure", "playtime-champion", "memory-maker"],
+  "keepsake": {
+    "family": "id-card",
+    "theme": "explorer-id",
+    "headline": "CASE CLOSED",
+    "subhead": "One missing human, found by nose alone",
+    "explainer": "Mission: hide behind the door, get found by scent"
+  },
+  "review": {
+    "ownerAppeal": 8,
+    "dogEnjoyment": 8,
+    "originality": 6,
+    "adventureFactor": 7,
+    "practicality": 9,
+    "memoryValue": 7,
+    "reviewedOn": "2026-11-26"
+  },
+  "role": "signature",
+  "teaser": "Someone has vanished from the house, and the best tracker around is on the case.",
+  "showcase": true
+}

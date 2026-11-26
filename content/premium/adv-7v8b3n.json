@@ -1,0 +1,108 @@
+{
+  "schema": 2,
+  "access": "premium",
+  "status": "published",
+  "variations": [
+    "One-dog mode: one strip, with an easy way around the towel.",
+    "Seated version: tape the strip near your chair and wait for the dog to come.",
+    "Puppy or hesitant dog: use a barely damp cloth and a short strip.",
+    "No-paper version: damp towel then a plain dark tile or bath mat."
+  ],
+  "optionalSupplies": ["A phone camera"],
+  "substitutes": ["Black trash bags cut open instead of craft paper, taped down flat"],
+  "reservation": {
+    "needed": false
+  },
+  "seasons": [],
+  "avoidWeather": [],
+  "sizes": [],
+  "household": ["two-dogs"],
+  "achievements": [],
+  "relatedGuides": [],
+  "affiliateProducts": [],
+  "prep": "light",
+  "costMin": 0,
+  "costMax": 0,
+  "transport": "none",
+  "crowd": "none",
+  "strangers": false,
+  "otherDogs": false,
+  "noise": "quiet",
+  "food": false,
+  "water": "near-water",
+  "stepFree": true,
+  "homes": ["apartment", "house-no-yard", "house-with-yard"],
+  "lifeStages": ["adult", "senior"],
+  "setting": "indoor",
+  "places": ["home"],
+  "space": "a-room",
+  "dogMobility": "low",
+  "ownerMobility": "seated",
+  "energy": "gentle",
+  "id": "adv-7v8b3n",
+  "title": "The Vanishing Prints",
+  "clue": "A strip of dark paper holds a secret that only lasts a minute or two.",
+  "reveal": "Your dog walks, when they like, over a damp towel and then a strip of dark paper. Prints appear and fade as they dry, so there is a short window to photograph them. With two dogs, each takes a turn alone.",
+  "objective": "Let your dog leave a line of damp prints on dark paper, photograph them while they last, and, with two dogs, compare both sets.",
+  "instructions": [
+    "Tape a strip of dark craft paper on a non-slip floor. Lay a folded damp (not dripping) towel at the start. With two dogs, the other dog waits behind a closed door in another room with a toy.",
+    "Put a mat with a toy and water at the far end so your dog has somewhere nice to arrive.",
+    "Bring dog A in on leash or loose and stand at the far end with a toy. Let them walk across the towel and paper at their own pace. Do not push or coax a reluctant dog; a route around is fine.",
+    "Prints show as darker marks, then fade. As soon as your dog steps off, photograph the strip while it is wet.",
+    "Dry their paws on a clean towel and let them rest. With two dogs, move dog A out of sight, lay fresh paper, then bring in dog B for their own strip.",
+    "When both dogs are done, bring the photos together on a phone and compare: whose are bigger, who walked straighter, who left the most prints.",
+    "Optional: write the dog's name and the date beside the strip as it dries to keep a faded print."
+  ],
+  "twist": "The art disappears: the prints show up for a minute or two while the paper is wet, so you have a short window to photograph the tracks.",
+  "completion": "Each dog has left at least one print or chosen not to, and the photo is taken.",
+  "photoIdea": "The finished strip with prints, shot top-down within a minute of the walk, with the dog's paw at the edge.",
+  "memoryPrompt": "Whose prints were bigger, and who took the straighter line?",
+  "minutesMin": 15,
+  "minutesMax": 25,
+  "activeMinutes": 10,
+  "supplies": [
+    "Dark craft paper or poster board",
+    "Two damp towels",
+    "Painter's tape",
+    "Dry towels for paws"
+  ],
+  "requires": ["towels", "household-items", "paper-and-pens", "camera-phone"],
+  "safety": [
+    "Check the floor under the paper is non-slip and wipe up drips; never tape paper over stairs.",
+    "One dog at a time; the other stays out of sight behind a closed door, and no toys or bowls are shared.",
+    "Dry their paws after, and skip the walk if a dog avoids wet surfaces."
+  ],
+  "activityTypes": ["creative-projects", "photography"],
+  "collections": ["rainy-day-club", "creative-companions", "home-sweet-home"],
+  "stamps": ["first-adventure", "memory-maker"],
+  "keepsake": {
+    "family": "travel-postcard",
+    "theme": "two-tone-postcard",
+    "headline": "TWO SETS OF PRINTS",
+    "subhead": "Gone in two minutes, kept in one photo",
+    "explainer": "My paw prints, gone in two minutes"
+  },
+  "research": [
+    {
+      "label": "Cornell Riney Canine Health Center: canine enrichment ideas",
+      "url": "https://riney.vet.cornell.edu/member-benefits-health-tips/canine-enrichment-ideas"
+    },
+    {
+      "label": "Dogs Trust: enrichment activities for dogs",
+      "url": "https://www.dogstrust.org.uk/dog-advice/life-with-your-dog/enrichment/enrichment-activities-for-dogs"
+    }
+  ],
+  "personalities": ["curious", "gentle"],
+  "review": {
+    "ownerAppeal": 7,
+    "dogEnjoyment": 7,
+    "originality": 8,
+    "adventureFactor": 8,
+    "practicality": 6,
+    "memoryValue": 8,
+    "reviewedOn": "2026-11-26"
+  },
+  "role": "lifestyle",
+  "teaser": "Beautiful art that only lasts a moment, so be ready.",
+  "showcase": true
+}

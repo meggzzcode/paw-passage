@@ -1,0 +1,104 @@
+{
+  "schema": 2,
+  "seasons": [],
+  "avoidWeather": [],
+  "sizes": [],
+  "household": [],
+  "achievements": [],
+  "relatedGuides": [],
+  "affiliateProducts": [],
+  "access": "premium",
+  "reservation": {
+    "needed": false
+  },
+  "homes": ["apartment", "house-no-yard", "house-with-yard"],
+  "crowd": "none",
+  "strangers": false,
+  "otherDogs": false,
+  "noise": "quiet",
+  "water": "none",
+  "stepFree": true,
+  "prep": "light",
+  "costMin": 0,
+  "costMax": 0,
+  "transport": "none",
+  "food": true,
+  "stamps": ["first-adventure", "memory-maker"],
+  "setting": "indoor",
+  "places": ["home"],
+  "space": "a-room",
+  "dogMobility": "low",
+  "ownerMobility": "seated",
+  "personalities": ["curious", "gentle"],
+  "id": "adv-6k2e8u",
+  "title": "Room Service",
+  "status": "published",
+  "clue": "Breakfast in bed, delivered on a tray, with a menu.",
+  "reveal": "Your dog never has to leave their bed. You deliver three tiny courses straight to them, reading the menu aloud, and your dog can wave away any course by looking away.",
+  "objective": "Deliver three small sensory courses to your dog's bed, so a senior can enjoy a treat day without standing up.",
+  "instructions": [
+    "Write a three-course menu on paper: a Smell, a Lick and a Sip. Give each a hotel-style name.",
+    "Prepare a tray with: a fresh sniff (a blade of grass), a lick mat with a smear of your dog's usual wet food, and a shallow bowl of fresh water.",
+    "Kneel or sit by their bed, and say the menu quietly. Do not wake a sleeping dog; wait until they are awake.",
+    "Course one, the Smell: hold the blade of grass at nose height and let them sniff for as long as they like.",
+    "Course two, the Lick: set the lick mat where they can reach it lying down. Let them lick at their own pace.",
+    "Course three, the Sip: offer the bowl at bed level and remove the tray when done.",
+    "If your dog looks away or closes their eyes, the room is on Do Not Disturb. Take the tray away, no questions."
+  ],
+  "twist": "Room Service arrives at the bed, and your dog can decline any course by looking away, so the only thing required is enjoying it.",
+  "variations": [
+    "One-course version: just the Lick.",
+    "Sofa version: serve on the sofa where your dog already lies.",
+    "Outdoor version: bring the tray to a shady patio bed.",
+    "Menu-only version: read the menu and give a single treat."
+  ],
+  "completion": "It counts after one course has been served, enjoyed or politely declined.",
+  "photoIdea": "The tray beside the bed, with your dog's nose in the lick mat. Soft light, no posing.",
+  "memoryPrompt": "Which course did they like best, and did anyone decline?",
+  "minutesMin": 10,
+  "minutesMax": 20,
+  "activeMinutes": 10,
+  "supplies": ["Tray", "Lick mat", "Water bowl", "Paper and pen"],
+  "optionalSupplies": [],
+  "substitutes": ["No lick mat? A flat plate with a smear of food works."],
+  "requires": ["household-items", "paper-and-pens", "treats"],
+  "lifeStages": ["senior"],
+  "energy": "gentle",
+  "dietNotes": "One smear of food from the day's ration. Ask your vet about your senior dog's diet.",
+  "safety": [
+    "Serve at bed level so your dog never has to stand, and let them choose to eat, sniff or sleep.",
+    "Offer food only from the day's usual diet, and ask your vet about any diet changes.",
+    "Take away the tray when finished, and keep an eye on chewing."
+  ],
+  "activityTypes": ["food-and-treats", "relaxation"],
+  "collections": ["the-golden-years", "little-splurges", "home-sweet-home"],
+  "keepsake": {
+    "family": "travel-postcard",
+    "theme": "deco-hotel",
+    "headline": "ROOM SERVICE",
+    "subhead": "Three courses, delivered to the bed",
+    "explainer": "Had breakfast in bed and did not get up"
+  },
+  "research": [
+    {
+      "label": "Cornell Riney Canine Health Center: senior dog enrichment",
+      "url": "https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/senior-dog-enrichment"
+    },
+    {
+      "label": "VCA Animal Hospitals: enrichment for dogs",
+      "url": "https://www.vcahospitals.com/know-your-pet/enrichment"
+    }
+  ],
+  "review": {
+    "ownerAppeal": 8,
+    "dogEnjoyment": 7,
+    "originality": 7,
+    "adventureFactor": 6,
+    "practicality": 8,
+    "memoryValue": 7,
+    "reviewedOn": "2026-11-26"
+  },
+  "role": "lifestyle",
+  "teaser": "Small courses delivered to the best seat in the house, with the finest service.",
+  "showcase": false
+}

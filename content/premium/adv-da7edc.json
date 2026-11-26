@@ -1,0 +1,98 @@
+{
+  "schema": 2,
+  "optionalSupplies": ["A favorite toy, to bury"],
+  "substitutes": [
+    "No spare fabrics? Use the towels and blankets you already have clean and fold them back after."
+  ],
+  "requires": ["blanket", "towels", "household-items"],
+  "reservation": {
+    "needed": false
+  },
+  "seasons": [],
+  "avoidWeather": ["heat"],
+  "sizes": [],
+  "homes": ["apartment", "house-no-yard", "house-with-yard"],
+  "lifeStages": ["puppy", "adult", "senior"],
+  "stepFree": true,
+  "crowd": "none",
+  "strangers": false,
+  "otherDogs": false,
+  "noise": "quiet",
+  "food": false,
+  "water": "none",
+  "transport": "none",
+  "achievements": [],
+  "relatedGuides": [],
+  "affiliateProducts": [],
+  "research": [],
+  "access": "premium",
+  "status": "published",
+  "id": "adv-da7edc",
+  "title": "Nest Architects",
+  "clue": "A pile of soft materials, a building site and an architect who needs no plans.",
+  "reveal": "Hand your dog a heap of clean laundry and let them design their own nest: digging, circling, rearranging and settling. You do not tidy or help, and the finished build stays up for as long as you are home and watching.",
+  "objective": "Offer a pile of safe, soft fabrics and let your dog build, rearrange and settle into a nest of their own design.",
+  "instructions": [
+    "Gather a generous heap of clean, soft fabrics with no zips, buttons, drawstrings, ribbons or loose threads: old T-shirts, towels, a fleece blanket, a plain sweater that smells of you, with no hood cords, toggles or elastic cuffs. Check each item for holes or loose edges.",
+    "Tip the pile in a corner of the room on a non-slip floor, taller than your dog's bed. Tuck a favorite toy deep in the heap for a surprise if you like.",
+    "Announce the building site in a low voice and sit down with a book. Offer nothing and show nothing.",
+    "Let your dog dig, pull, rearrange, circle and eventually settle. You do not tidy, adjust or help. Watch the design process.",
+    "If they start to chew or swallow fabric, swap the pile for their bed and end the build calmly. If they ignore it, that is a result too.",
+    "When they have settled, or lost interest, give the nest a name and say it quietly ('Fort Wiggle'). Leave it out while you are home and watching, then clear it at bedtime or when you go out, unless your dog has never chewed fabric. Next time, add one new fabric."
+  ],
+  "twist": "You hand over the materials, not an object: your dog is the architect and designs the home themselves.",
+  "variations": [
+    "Just a top-up: add three of your worn items to the bed your dog already uses and let them reshape it.",
+    "A cave: drape a light blanket over the back of a chair with both ends open and weigh the corners so nothing can fall in on them. Sit well away.",
+    "A warm welcome: warm a clean blanket in the dryer for a few minutes and check it on your inner wrist, so it is pleasantly warm and never hot. Lay it on their favorite bed with a toy they know and let them move in. Never use a hot-water bottle, heat pad or electric blanket.",
+    "For a puppy: use towels only and keep it to a few minutes. End at the first sign of chewing."
+  ],
+  "completion": "Your dog has dug, rearranged or settled into the pile, or investigated it and walked away, and the build is left standing.",
+  "photoIdea": "The finished nest with your dog curled in it, taken from a step back.",
+  "memoryPrompt": "What did your dog's nest look like, and what did you call it?",
+  "minutesMin": 10,
+  "minutesMax": 25,
+  "activeMinutes": 15,
+  "costMin": 0,
+  "costMax": 0,
+  "prep": "light",
+  "supplies": ["A pile of clean soft fabrics (towels, T-shirts, fleece)", "A book"],
+  "setting": "indoor",
+  "space": "a-room",
+  "places": ["home"],
+  "energy": "gentle",
+  "personalities": ["cozy", "gentle"],
+  "dogMobility": "low",
+  "ownerMobility": "seated",
+  "safety": [
+    "Use tight-weave fabric with no zips, ribbons or drawstrings, and skip this one if your dog eats fabric.",
+    "In warm weather, make sure the pile does not trap heat."
+  ],
+  "activityTypes": ["relaxation", "creative-projects"],
+  "collections": [
+    "rainy-day-club",
+    "home-sweet-home",
+    "rescue-and-new-beginnings",
+    "the-golden-years"
+  ],
+  "stamps": ["first-adventure", "cozy-companion"],
+  "keepsake": {
+    "family": "collage",
+    "theme": "swatch-card",
+    "headline": "NEST ARCHITECT",
+    "subhead": "Designed, built and approved by the dog",
+    "explainer": "Nest architect: I supplied the towels, nothing else"
+  },
+  "review": {
+    "ownerAppeal": 7,
+    "dogEnjoyment": 8,
+    "originality": 7,
+    "adventureFactor": 6,
+    "practicality": 9,
+    "memoryValue": 7,
+    "reviewedOn": "2026-11-26"
+  },
+  "role": "everyday",
+  "teaser": "Soft materials, a quiet corner and one very particular architect.",
+  "showcase": true
+}

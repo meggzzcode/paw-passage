@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "sizes": [],
+  "household": [],
+  "achievements": [],
+  "relatedGuides": [],
+  "affiliateProducts": [],
+  "reservation": {
+    "needed": false,
+    "note": "Check local dog rules, leash laws and any parking or permit fees before you go."
+  },
+  "access": "premium",
+  "status": "published",
+  "crowd": "some",
+  "strangers": true,
+  "otherDogs": true,
+  "noise": "some",
+  "food": true,
+  "water": "none",
+  "stepFree": false,
+  "prep": "some",
+  "costMin": 0,
+  "costMax": 15,
+  "transport": "car",
+  "lifeStages": ["adult"],
+  "dogMobility": "high",
+  "research": [
+    {
+      "label": "Cornell Riney Canine Health Center: canine enrichment ideas",
+      "url": "https://riney.vet.cornell.edu/member-benefits-health-tips/canine-enrichment-ideas"
+    },
+    {
+      "label": "Dogs Trust: enrichment ideas for bored dogs",
+      "url": "https://www.dogstrust.org.uk/help-advice/behaviour/enrichment-ideas-for-bored-dogs"
+    },
+    {
+      "label": "AKC: indoor games, hide-and-seek and obstacle courses",
+      "url": "https://www.akc.org/expert-advice/training/indoor-games-with-dog/"
+    }
+  ],
+  "minutesMin": 60,
+  "minutesMax": 180,
+  "activeMinutes": 60,
+  "setting": "outdoor",
+  "homes": ["apartment", "house-no-yard", "house-with-yard"],
+  "space": "none",
+  "places": ["countryside", "mountains"],
+  "energy": "lively",
+  "ownerMobility": "long-walk",
+  "seasons": ["spring", "autumn", "winter"],
+  "avoidWeather": ["heat", "rain"],
+  "optionalSupplies": ["Dog-friendly trail map", "Small first-aid kit"],
+  "substitutes": ["No chew toy? Use a rubber toy and a small amount of your dog's regular food."],
+  "requires": ["leash-and-harness", "treats", "blanket", "towels", "car"],
+  "personalities": ["adventurous", "curious"],
+  "id": "adv-5h3n8z",
+  "title": "Lunch With a View",
+  "clue": "The seat is chosen, the chew is saved, and every sniff stop on the way is your dog's to take.",
+  "reveal": "Pick a lookout, bench or clearing with a view and make it a long, slow lunch date. Your dog gets a special lookout chew that exists only at that seat, plus a sniff budget of short stops all the way there. The view is the destination; the chew is the reason.",
+  "objective": "Walk to a scouted lookout seat, share a sit-down lunch with a chew saved for that spot, and wander home at your dog's pace.",
+  "instructions": [
+    "Set the turnaround rule before you leave: if it is hot, the ground feels warm to your hand, or you spot wildlife near the path, turn back and the nearest bench becomes the lookout. Pick a cooler part of the day.",
+    "Scout the spot first: dogs allowed, leash rules, shade, water, and a bench, rock or clearing at the end. Choose a distance your dog can manage easily with room to spare.",
+    "Pack a harness, six-foot leash, plenty of water and a bowl, waste bags, a towel, a mat and a stuffed chew toy (frozen or plain). The chew is the 'lookout chew': your dog meets it only at the seat.",
+    "Walk to the lookout on a loose leash. Your dog has a sniff budget: every stop of a minute or less is free. Offer water at each pause, wave to others and leave a gap on narrow paths.",
+    "At the lookout, lay the mat in a shady spot with a slight view. Offer water, wait a minute and then hand over the chew. Eat your own lunch while they settle, and never leave the chew unsupervised.",
+    "Stay for the long sit: let your dog look, sniff and doze for as long as they like. No training, no tricks and no photo requests until they have relaxed.",
+    "Walk back slowly. Check paws and coat for burrs and ticks at the car or at home, and offer water."
+  ],
+  "twist": "The chew exists only at the lookout: it rides in your pack and appears only at the seat, so the walk has a reason and an ending your dog can anticipate.",
+  "variations": [
+    "Short version: a flat loop to a nearby bench with a view and the same chew ritual.",
+    "Shady version: a tree-lined path to a shaded seat, skipping any water crossing.",
+    "No-car version: a local park hill, your own backyard high point or a rooftop park.",
+    "No food: use a favorite non-edible toy as the lookout item."
+  ],
+  "completion": "Counts when you have reached a lookout, bench or turnaround and your dog has had the lookout item. A turnaround early still counts.",
+  "photoIdea": "Your dog on the mat, looking out at the view from behind, with the pack beside them.",
+  "memoryPrompt": "What did your dog look at from the top, and how long did they stay?",
+  "supplies": [
+    "Harness and six-foot leash",
+    "Water and a bowl",
+    "Waste bags",
+    "A stuffable chew toy and filling",
+    "A mat or blanket",
+    "Towel"
+  ],
+  "dietNotes": "Use a small amount of your dog's regular food, counted in the day's ration. Ask your vet about diet and trail fitness.",
+  "safety": [
+    "Scout it first: dogs allowed, leash rules, wildlife and drop-offs. Never go off-leash where it is not permitted.",
+    "Turn back if it is hot, the ground feels warm to your hand, you see wildlife, or your dog slows, pants hard or limps.",
+    "Never leave a dog in a car. Keep the chew supervised and pick it up when finished."
+  ],
+  "activityTypes": ["outdoor-exploration", "relaxation", "memory-making"],
+  "collections": [
+    "the-great-outdoors",
+    "road-trip-adventures",
+    "camping-companions",
+    "seasons-together"
+  ],
+  "stamps": ["first-adventure", "trail-blazer", "road-tripper"],
+  "keepsake": {
+    "family": "travel-postcard",
+    "theme": "lake-dock",
+    "headline": "LUNCH WITH A VIEW",
+    "subhead": "The long way to a good seat",
+    "explainer": "The real prize was lunch at the lookout"
+  },
+  "review": {
+    "ownerAppeal": 8,
+    "dogEnjoyment": 8,
+    "originality": 6,
+    "adventureFactor": 8,
+    "practicality": 6,
+    "memoryValue": 8,
+    "reviewedOn": "2026-11-26"
+  },
+  "role": "aspirational",
+  "teaser": "A good view, a good lunch and a long, lazy afternoon for two.",
+  "showcase": false
+}

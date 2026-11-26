@@ -1,0 +1,113 @@
+{
+  "schema": 2,
+  "access": "premium",
+  "status": "published",
+  "affiliateProducts": [],
+  "relatedGuides": [],
+  "achievements": [],
+  "household": ["family"],
+  "reservation": {
+    "needed": false
+  },
+  "lifeStages": ["adult", "senior", "puppy"],
+  "crowd": "none",
+  "strangers": false,
+  "otherDogs": false,
+  "noise": "quiet",
+  "dogMobility": "moderate",
+  "stepFree": false,
+  "water": "none",
+  "sizes": [],
+  "avoidWeather": ["rain", "heat", "cold"],
+  "seasons": ["spring", "summer", "autumn"],
+  "id": "adv-q7r4j5",
+  "title": "The Treasure Island Map",
+  "role": "signature",
+  "teaser": "The map was drawn by someone with a nose, and X is closer than you think.",
+  "clue": "The map was drawn by the most reliable explorer in the house, and it is not you.",
+  "reveal": "Your fenced yard becomes an island. Your dog leads a slow survey and chooses the landmarks, you draw the map, and a second lap ends at the treasure.",
+  "objective": "Draw a treasure map from the spots your dog chooses to stop at in your yard, then follow it on a second lap to find a toy.",
+  "instructions": [
+    "Pick a secure space: your fenced yard. Check the ground is clear and dry and the weather is mild.",
+    "Lap one, the survey: walk slowly and let your dog lead. Every time they stop to sniff something for a few seconds, that is a landmark. Jot a quick sketch and a funny name ('Sniff Rock', 'Old Stump'), until you have three or four.",
+    "Back at the start, lay a map on a clipboard or paper and join the landmarks with a dotted line. Mark the last one with an X.",
+    "Plant the treasure at the X while your dog watches from a comfortable distance or waits with someone else: a favorite toy under a towel or a few leaves, in plain sight. Never leave your dog alone on the island.",
+    "Lap two, the treasure run: show your dog the map, then walk from landmark to landmark in order. Let them lead at a walk or easy trot. At each stop, wait twenty seconds. No racing, and no pulling.",
+    "At the X, let your dog find and uncover the treasure, and play with it for a minute. Then sit on the island and read the map back to them.",
+    "Keep the map somewhere you will see it."
+  ],
+  "twist": "Your dog draws the map without knowing it: every landmark is a place they chose to stop, and you are just the cartographer.",
+  "variations": [
+    "For a seated owner: use a small yard patch with two landmarks and sit while the dog browses.",
+    "For a dog who doesn't like to wait: skip the hiding and put the treasure under a towel at the X in plain view.",
+    "For a puppy: ask your vet before any outdoor ground, including your own yard. Until then, play the indoor hallway version with two landmarks.",
+    "For a rainy day: draw an island of your hallway, with the sofa, rug and door as landmarks."
+  ],
+  "completion": "Your dog has led a lap, the treasure has been found and the map is drawn.",
+  "photoIdea": "Photograph your dog sitting beside the X on the ground with the map next to them.",
+  "memoryPrompt": "Which landmark did your dog pick that surprised you?",
+  "minutesMin": 15,
+  "minutesMax": 30,
+  "activeMinutes": 15,
+  "costMin": 0,
+  "costMax": 0,
+  "prep": "light",
+  "supplies": [
+    "Paper and a pen",
+    "A clipboard or book",
+    "A favorite toy",
+    "A towel",
+    "Leash and harness"
+  ],
+  "optionalSupplies": ["Colored pencils"],
+  "substitutes": ["No clipboard? Use a hardback book."],
+  "requires": ["toys", "paper-and-pens", "leash-and-harness", "towels"],
+  "transport": "none",
+  "setting": "outdoor",
+  "homes": ["house-with-yard"],
+  "space": "yard",
+  "places": ["home"],
+  "energy": "gentle",
+  "personalities": ["curious", "adventurous"],
+  "ownerMobility": "short-walk",
+  "food": false,
+  "safety": [
+    "Check the space for glass, sharp items and anything toxic before you start.",
+    "Check the fence is secure and keep your dog on a line if there is any gap; follow local rules.",
+    "Skip hot or icy weather, and never leave your dog unattended in the yard."
+  ],
+  "activityTypes": ["outdoor-exploration", "scent-and-discovery"],
+  "collections": ["the-curious-explorer", "the-great-outdoors", "our-story", "seasons-together"],
+  "stamps": ["first-adventure", "trail-blazer"],
+  "keepsake": {
+    "family": "travel-postcard",
+    "theme": "treasure-island-postcard",
+    "headline": "TREASURE FOUND",
+    "subhead": "Map drawn by my own nose",
+    "explainer": "Followed my own footprints. X marked the spot"
+  },
+  "research": [
+    {
+      "label": "Dogs Trust: enrichment activities for dogs",
+      "url": "https://www.dogstrust.org.uk/dog-advice/life-with-your-dog/enrichment/enrichment-activities-for-dogs"
+    },
+    {
+      "label": "ASPCA: canine DIY enrichment",
+      "url": "https://www.aspca.org/pet-care/dog-care/canine-diy-enrichment"
+    },
+    {
+      "label": "RSPCA: heatstroke in dogs",
+      "url": "https://www.rspca.org.uk/adviceandwelfare/pets/dogs/health/heatstroke"
+    }
+  ],
+  "review": {
+    "ownerAppeal": 8,
+    "dogEnjoyment": 8,
+    "originality": 7,
+    "adventureFactor": 8,
+    "practicality": 7,
+    "memoryValue": 9,
+    "reviewedOn": "2026-11-26"
+  },
+  "showcase": true
+}

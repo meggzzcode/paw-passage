@@ -1,0 +1,113 @@
+{
+  "schema": 2,
+  "reservation": {
+    "needed": false
+  },
+  "seasons": [],
+  "avoidWeather": [],
+  "sizes": [],
+  "household": [],
+  "achievements": [],
+  "relatedGuides": [],
+  "affiliateProducts": [],
+  "optionalSupplies": ["Watercolors (non-toxic)", "Lick mat or snuffle towel", "Frame or card"],
+  "substitutes": [
+    "No lick mat? A toy rolled in a towel works.",
+    "No paper? Use the back of an envelope or cardboard."
+  ],
+  "access": "premium",
+  "status": "published",
+  "showcase": true,
+  "stepFree": true,
+  "strangers": false,
+  "otherDogs": false,
+  "crowd": "none",
+  "noise": "quiet",
+  "water": "none",
+  "food": true,
+  "homes": ["apartment", "house-no-yard", "house-with-yard"],
+  "lifeStages": ["puppy", "adult", "senior"],
+  "id": "adv-p4a7k2",
+  "title": "The Gallery Opening",
+  "clue": "Three little still lifes, one hushed gallery and a guest list of one.",
+  "reveal": "Sketch three of your dog's own things as still lifes while they enjoy a quiet enrichment, then open a tiny gallery with each drawing leaning beside the real thing. The object your dog visits first and lingers at longest wins Best in Show, and they get to play with it.",
+  "objective": "Draw three of your dog's favorite things, set them up as a gallery, and award Best in Show to the one your dog chooses.",
+  "instructions": [
+    "Set up a studio corner in good light with a mat or bed for your dog. Choose three objects from their world, such as a favorite toy, their blanket and a clean worn T-shirt of yours. Keep paper, pencils or washable markers, tape and any paint, water jar or brush where your dog cannot reach them.",
+    "Give your dog their enrichment on the mat: a snuffle towel with a toy rolled inside, or a lick mat with a small part of a regular meal. They may wander off at any time, and that is fine.",
+    "Sketch each object as a still life, about five minutes each: wobbly lines welcome. Give each drawing a grand title ('Blue Squeaker, Study in Chewing').",
+    "Open the gallery: lean each drawing against the wall in a low spot in a hallway or room, with its real object a body-length away. Keep the three spots a few steps apart.",
+    "Stroll the gallery slowly at your dog's pace, leash slack or off indoors. Let them visit in any order. The object they reach first and linger at longest wins Best in Show.",
+    "Award it: write 'Best in Show' on a paper ribbon and hang the winning drawing at your height. Then hand over the prize: a few minutes of play or a cuddle with the winning object.",
+    "Hold a hushed opening: fresh water in the bowl, a quiet 'bravo' and a last sniff of the new hanging before they settle."
+  ],
+  "twist": "Your dog is the judge: the first object they reach and linger at takes Best in Show, and the prize is time with the real thing.",
+  "variations": [
+    "No art supplies? Sketch on the back of an envelope with a pen, or make a quick phone-note doodle.",
+    "Food-free version: use a toy rolled in a towel instead of a lick mat.",
+    "For a dog who will not settle: draw while they nap, or do the gallery tour first.",
+    "For a puppy: one drawing, one exhibit, then a nap."
+  ],
+  "completion": "You have drawn your three objects, your dog has toured the gallery and Best in Show is on the wall.",
+  "photoIdea": "Your dog beside their winning object and its drawing, relaxed and not posed. The artwork is the star.",
+  "memoryPrompt": "Which object won Best in Show, and which drawing did your dog ignore?",
+  "minutesMin": 30,
+  "minutesMax": 60,
+  "activeMinutes": 20,
+  "costMin": 0,
+  "costMax": 15,
+  "prep": "light",
+  "supplies": [
+    "Paper",
+    "Pencils or washable markers",
+    "Tape",
+    "Mat or bed",
+    "Favorite toy, blanket and a worn T-shirt"
+  ],
+  "requires": ["paper-and-pens", "toys", "blanket"],
+  "transport": "none",
+  "setting": "indoor",
+  "space": "a-room",
+  "places": ["home"],
+  "energy": "gentle",
+  "dogMobility": "low",
+  "ownerMobility": "seated",
+  "dietNotes": "Optional: use a small part of the regular meal the dog already eats. Ask your vet about portions. Food-free option given.",
+  "safety": [
+    "Keep paints, markers, water jars and brushes out of reach; they are not for licking or chewing.",
+    "Supervise any lick mat or toy, and remove anything they start to chew apart.",
+    "The dog may leave the studio at any time; skip the drawing and just enjoy the tour."
+  ],
+  "personalities": ["cozy", "curious", "gentle"],
+  "activityTypes": ["creative-projects", "memory-making", "relaxation"],
+  "collections": ["creative-companions", "rainy-day-club", "our-story", "home-sweet-home"],
+  "stamps": ["first-adventure", "cozy-companion", "memory-maker"],
+  "keepsake": {
+    "family": "certificate",
+    "theme": "toy-champion-certificate",
+    "headline": "BEST IN SHOW",
+    "subhead": "Chosen by the dog on opening day",
+    "explainer": "Toured the gallery. Best in Show was my own toy"
+  },
+  "role": "lifestyle",
+  "teaser": "A very small gallery is opening, and the critic has a wet nose.",
+  "research": [
+    {
+      "label": "Dogs Trust: enrichment activities for dogs",
+      "url": "https://www.dogstrust.org.uk/dog-advice/life-with-your-dog/enrichment/enrichment-activities-for-dogs"
+    },
+    {
+      "label": "VCA Animal Hospitals: enrichment",
+      "url": "https://vcahospitals.com/know-your-pet/enrichment"
+    }
+  ],
+  "review": {
+    "ownerAppeal": 8,
+    "dogEnjoyment": 7,
+    "originality": 7,
+    "adventureFactor": 7,
+    "practicality": 8,
+    "memoryValue": 8,
+    "reviewedOn": "2026-11-26"
+  }
+}

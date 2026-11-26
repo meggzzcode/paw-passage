@@ -9,7 +9,7 @@ import {
   writeFileSync,
 } from "node:fs";
 import { tmpdir } from "node:os";
-import { join } from "node:path";
+import { join, sep } from "node:path";
 import { describe, expect, it } from "vitest";
 import { syntheticPremium } from "../passport/fixtures/premium.synthetic";
 import {
@@ -416,11 +416,17 @@ describe("leak scans", () => {
     ])
       markers.add(t);
   }
-  it("no premium text marker appears in src/, public/ or content/ (fixtures and tests excluded)", () => {
+  // content/premium/ is the owner-approved home of the real premium JSON (one file per adventure). It is never read by the site
+  // build (see src/test/handover-premium-isolation.test.ts); the public bundle is protected by scripts/check-leaks.mjs on dist/.
+  it("no premium text marker appears in src/, public/ or content/ (fixtures, tests and content/premium excluded)", () => {
     const hits: string[] = [];
     for (const top of ["src", "public", "content"])
       for (const f of walk(join(REPO, top))) {
-        if (f.includes(join("src", "passport", "fixtures")) || f.includes(join("src", "test")))
+        if (
+          f.includes(join("src", "passport", "fixtures")) ||
+          f.includes(join("src", "test")) ||
+          f.includes(join("content", "premium") + sep)
+        )
           continue;
         const text = readFileSync(f, "utf8");
         for (const m of markers) if (text.includes(m)) hits.push(`${f}: ${m}`);

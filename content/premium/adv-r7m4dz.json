@@ -1,0 +1,109 @@
+{
+  "schema": 2,
+  "access": "premium",
+  "status": "published",
+  "relatedGuides": [],
+  "affiliateProducts": [],
+  "achievements": [],
+  "reservation": {
+    "needed": false
+  },
+  "sizes": [],
+  "showcase": false,
+  "research": [
+    {
+      "label": "Cornell Riney Canine Health Center: senior dog enrichment",
+      "url": "https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/senior-dog-enrichment"
+    },
+    {
+      "label": "VCA Hospitals: enrichment for pets",
+      "url": "https://www.vcahospitals.com/know-your-pet/enrichment"
+    }
+  ],
+  "id": "adv-r7m4dz",
+  "title": "Garden Window Safari",
+  "role": "everyday",
+  "teaser": "The best show in town is playing just outside, and you have front-row seats.",
+  "clue": "A quiet hide, a few supplies and the whole outdoors on the other side of the glass.",
+  "reveal": "You build a cozy hide at a window or open doorway and bring the garden to your dog's nose, with scent finds on the blanket and a feeder that draws visitors.",
+  "objective": "Settle your dog in a sheltered hide at a window or doorway and enjoy the sights, sounds and smells of the outdoors together.",
+  "instructions": [
+    "A day or two ahead, put a small bird feeder or a dish of birdseed outside the window, a few meters from the glass and well out of your dog's reach.",
+    "Make the hide: a bed or blanket at the window or doorway, with a chair beside it. If you use an open doorway, keep your dog on a leash or behind a baby gate so they cannot bolt. Check the floor is non-slip, the window is secure and the view is calm.",
+    "Make the Ranger's Picnic: scatter four or five pieces of usual food, or tuck a scent cloth under the blanket corner, so your dog has a find the moment they arrive. Keep a second scent cloth in your pocket for later.",
+    "Settle in and open the window a crack if the weather is mild, so the smells and sounds of outside come in. Whisper, keep still and let your dog look, sniff or doze.",
+    "When something appears, a bird, a leaf blown past, a neighbor's cat, a squirrel, make a tally mark on a paper card as a 'sighting'. Nothing needs to be found for it to count. After the first visitor, slide out the second scent cloth as the Ranger's Reward.",
+    "End with a nap in the hide. Count the tally, name the Visitor of the Day on the card, and leave the feeder up and the hide in place for a repeat visit tomorrow."
+  ],
+  "twist": "You bring the safari to your dog: scent finds on the hide blanket, a reward when the first visitor arrives, and a feeder that sends visitors to the glass.",
+  "variations": [
+    "Puppy: keep it to five minutes in a doorway on your lap, with your puppy indoors.",
+    "No feeder: watch the street, the clouds and the breeze.",
+    "Seated owner: put the chair and bed side by side at the glass door.",
+    "Fretful watcher: close the curtains halfway and swap to the picnic scent finds."
+  ],
+  "completion": "You have settled in the hide for a while and your dog has had a sniff, a look or a snooze there.",
+  "photoIdea": "The hide at golden hour with a visitor in the background, or your dog's ears pointed to the window. No posing.",
+  "memoryPrompt": "Who visited the feeder, and what did your dog make of the sightings?",
+  "minutesMin": 10,
+  "minutesMax": 20,
+  "activeMinutes": 10,
+  "costMin": 0,
+  "costMax": 8,
+  "prep": "some",
+  "supplies": ["Bed or blanket", "Chair", "Paper card and a pen"],
+  "optionalSupplies": ["Bird feeder and seed", "A few pieces of usual food", "A scent cloth"],
+  "substitutes": ["No feeder? A shallow dish of water for birds.", "No card? Notes on your phone."],
+  "requires": ["blanket", "household-items"],
+  "transport": "none",
+  "dietNotes": "Use only a few pieces of the usual diet, or use a scent cloth. Keep birdseed away from your dog, and ask your vet about diet.",
+  "setting": "indoor",
+  "homes": ["apartment", "house-no-yard", "house-with-yard"],
+  "space": "small-indoor",
+  "places": ["home", "city", "countryside"],
+  "seasons": [],
+  "avoidWeather": [],
+  "lifeStages": ["puppy", "adult", "senior"],
+  "energy": "gentle",
+  "personalities": ["curious", "cozy", "gentle"],
+  "dogMobility": "low",
+  "ownerMobility": "seated",
+  "stepFree": true,
+  "crowd": "none",
+  "strangers": false,
+  "otherDogs": false,
+  "noise": "quiet",
+  "food": true,
+  "water": "none",
+  "safety": [
+    "Keep your dog on the floor, never on a sill, and keep windows secure or screened.",
+    "If your dog barks or fixates at the glass, close the curtains and try again another day.",
+    "Puppies stay indoors until your vet says public places are fine; keep seed and feeders out of reach."
+  ],
+  "activityTypes": ["relaxation", "scent-and-discovery", "outdoor-exploration"],
+  "collections": [
+    "the-golden-years",
+    "the-gentle-soul",
+    "home-sweet-home",
+    "adventures-without-spending",
+    "apartment-adventures",
+    "puppys-first-chapter"
+  ],
+  "stamps": ["first-adventure", "sunshine-seeker", "cozy-companion"],
+  "keepsake": {
+    "family": "seasonal-frame",
+    "theme": "window-safari-frame",
+    "headline": "WINDOW SAFARI",
+    "subhead": "Front-row seats, zero steps",
+    "explainer": "Went on safari without leaving the blanket"
+  },
+  "review": {
+    "ownerAppeal": 8,
+    "dogEnjoyment": 7,
+    "originality": 6,
+    "adventureFactor": 7,
+    "practicality": 8,
+    "memoryValue": 7,
+    "reviewedOn": "2026-11-26"
+  }
+}

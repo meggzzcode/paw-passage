@@ -1,0 +1,109 @@
+{
+  "schema": 2,
+  "access": "premium",
+  "status": "published",
+  "variations": [
+    "Chalk snail trail: draw a spiral on paving with non-toxic sidewalk chalk, put your dog's sniff dots along it and rinse it away afterwards. Skip the chalk if your dog licks the sidewalk.",
+    "Seated version: use a smaller 2 by 2 meter spiral on a rug and sit at the edge throughout.",
+    "Tiny version: one loop of tape around a mat, with three dots.",
+    "Puppy or senior version: wider lanes, fewer dots, and a thicker rest mat at the center."
+  ],
+  "supplies": [
+    "Low-tack painter's tape or flat rope",
+    "A mat or folded blanket",
+    "A small bowl of water",
+    "A little of today's regular food"
+  ],
+  "optionalSupplies": [
+    "Paper and a pencil for the plan",
+    "Non-toxic sidewalk chalk",
+    "A phone for the overhead photo"
+  ],
+  "substitutes": [
+    "No tape? Use a line of rolled towels laid flat or a clothesline rope pegged flat on grass."
+  ],
+  "requires": ["household-items", "treats"],
+  "transport": "none",
+  "reservation": {
+    "needed": false
+  },
+  "seasons": [],
+  "avoidWeather": [],
+  "sizes": [],
+  "relatedGuides": [],
+  "affiliateProducts": [],
+  "achievements": [],
+  "research": [],
+  "stamps": ["first-adventure", "cozy-companion"],
+  "id": "adv-l2k9w5",
+  "title": "The Hallway Labyrinth",
+  "clue": "A floor pattern with no wrong turns and a quiet place at the very middle.",
+  "reveal": "Lay a life-size spiral on the floor or the lawn, scatter a few sniff dots along it, and let your dog wander in. The walls are only suggestions, and the center is a place to rest, not a finish line.",
+  "objective": "Build a small spiral labyrinth, let your dog explore it at their own pace, and end with a rest at the center.",
+  "instructions": [
+    "Sketch a spiral on paper first if it helps. Then lay it out about 3 by 3 meters with low-tack painter's tape on the floor, or flat rope on the lawn, leaving the lanes at least two dog-widths wide. Test the tape on a hidden spot first.",
+    "Put a non-slip rug under any slippery floor, and place a mat or folded blanket in the middle as the center.",
+    "Lay six to eight pieces of today's ration along the path as sniff dots, spaced irregularly. Put a slightly better-smelling piece on the center mat.",
+    "Invite your dog in. Walk the path beside them on a loose leash outdoors, or sit and watch if you are indoors. They set the pace, and stepping over the lines counts as a valid route.",
+    "At the center, sit and be still. Offer water. The center is for rest, so let them lie down, sniff, or leave.",
+    "Take your overhead photo from a chair before anything is moved. When your dog has moved off, peel the tape up in a slow reel, so the labyrinth 'melts' away."
+  ],
+  "twist": "The walls are optional, so there is no wrong way through. Dogs never fail a labyrinth.",
+  "completion": "Your dog has explored the labyrinth, over or through the lines, or you have enjoyed the build and the center mat with them.",
+  "photoIdea": "A tall overhead photo of the labyrinth with your dog resting on the center mat, taken from a chair.",
+  "memoryPrompt": "What route did your dog take, and what did the center turn into?",
+  "minutesMin": 15,
+  "minutesMax": 30,
+  "activeMinutes": 10,
+  "costMin": 0,
+  "costMax": 3,
+  "prep": "some",
+  "setting": "either",
+  "homes": ["apartment", "house-no-yard", "house-with-yard"],
+  "space": "a-room",
+  "places": ["home"],
+  "lifeStages": ["puppy", "adult", "senior"],
+  "energy": "gentle",
+  "personalities": ["curious", "gentle", "cozy"],
+  "dogMobility": "low",
+  "ownerMobility": "minimal-walking",
+  "stepFree": true,
+  "crowd": "none",
+  "strangers": false,
+  "otherDogs": false,
+  "noise": "quiet",
+  "food": true,
+  "dietNotes": "Use part of today's normal ration and count it in. Ask your vet if your dog has dietary restrictions, allergies or health conditions.",
+  "water": "none",
+  "safety": [
+    "Lay low-tack tape or rope flat on a non-slip floor, never as a loose leash, and take it up afterwards.",
+    "Skip tape and rope for dogs who mouth floor items; use rolled towels instead.",
+    "Use only part of today's normal food, never chocolate, grapes, raisins or xylitol."
+  ],
+  "activityTypes": ["scent-and-discovery", "relaxation", "creative-projects"],
+  "collections": [
+    "rainy-day-club",
+    "home-sweet-home",
+    "five-minute-wonders",
+    "the-curious-explorer"
+  ],
+  "keepsake": {
+    "family": "event-ticket",
+    "theme": "meadow-pass",
+    "headline": "NO WRONG TURNS",
+    "subhead": "A labyrinth with a rest at the middle",
+    "explainer": "Walked the labyrinth. No wrong turns, one nap"
+  },
+  "review": {
+    "ownerAppeal": 7,
+    "dogEnjoyment": 7,
+    "originality": 7,
+    "adventureFactor": 7,
+    "practicality": 7,
+    "memoryValue": 7,
+    "reviewedOn": "2026-11-26"
+  },
+  "role": "everyday",
+  "teaser": "Wrong turns are impossible, and a lovely spot to rest waits at the heart of it.",
+  "showcase": false
+}

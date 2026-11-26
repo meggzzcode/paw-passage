@@ -1,0 +1,106 @@
+{
+  "schema": 2,
+  "access": "premium",
+  "status": "published",
+  "optionalSupplies": ["Bright scarf for the lamp", "Folding seat or flask"],
+  "achievements": [],
+  "relatedGuides": [],
+  "affiliateProducts": [],
+  "research": [],
+  "reservation": {
+    "needed": false
+  },
+  "homes": ["apartment", "house-no-yard", "house-with-yard"],
+  "space": "none",
+  "seasons": [],
+  "sizes": [],
+  "food": false,
+  "transport": "walkable",
+  "water": "none",
+  "prep": "light",
+  "costMin": 0,
+  "costMax": 15,
+  "substitutes": [
+    "No long line? Use the Free Lighthouse in a secure yard or the Living-Room Lighthouse: both work with no line at all."
+  ],
+  "stamps": ["first-adventure", "trail-blazer"],
+  "id": "adv-efxova",
+  "title": "The Lighthouse Hour",
+  "clue": "You are not allowed to move. Your dog is not allowed to be steered.",
+  "reveal": "You are the lighthouse on a bench; your dog sails the radius of a long line and returns to the beacon whenever they like. You steer nothing. You only keep the line clear and keep still.",
+  "objective": "Sit still on a bench or yard seat while your dog explores the radius of a long line freely, then dim the beacon and walk home the same quiet way.",
+  "instructions": [
+    "Only if you already have a lightweight long line and your dog walks calmly on a harness; otherwise start with the Living-Room Lighthouse. Choose a quiet, legal spot with a seat: your own yard, a fenced yard or a quiet corner of a park where a long line is allowed. Check the local rules first. Roads, water and other dogs must all be out of reach of the line.",
+    "Light the beacon: put on gloves, clip a lightweight five to ten meter line to a well-fitting harness (never a collar), and put your dog's mat or a towel by the bench as the port. A bright scarf over the bench back is the lamp.",
+    "Sit. Hand the radius to your dog: this is their kingdom. You may not tell them where to go. The only things you do are keep the line clear of your legs, the bench and snags, and keep still.",
+    "When your dog is sailing, they are exploring. When they come back to your feet or the mat, that is In Port: wait, say nothing and let them rest as long as they like. When they go out again, they are sailing. Name each, quietly, to yourself.",
+    "If the line gets tangled or your dog heads toward a hazard, stand slowly and walk in toward them rather than pulling the line. If they surge ahead, step on the line with your foot instead of grabbing it. Never wrap it around your hand or body.",
+    "After the time you planned, or when your dog is done, dim the beacon: take the scarf off the bench, stand slowly and call quietly. As your dog walks in, coil the line in loose loops, never reeling them in.",
+    "Walk home by the same quiet path with the line coiled, water at the door, and your dog's mat for the rest of the hour."
+  ],
+  "twist": "You are not allowed to tell the dog where to go: the lighthouse only shines, and a seated owner gives a lively dog a real kingdom.",
+  "variations": [
+    "Living-Room Lighthouse, no line at all, for apartments and rainy days: sit in an armchair, let your dog roam the room and name the places they visit like harbors. A Seated Safari.",
+    "Short Kingdom for a slow or senior dog: a three-meter radius on a flat lawn or patio, with the line held lightly in loops.",
+    "Free Lighthouse for a dog with no line: in a securely fenced yard or yard, just sit and let your dog roam.",
+    "Bigger version, optional: an afternoon at a quiet, legal open space you can walk to, with a ten-meter line and a flask. The yard hour is the real adventure."
+  ],
+  "completion": "You have sat through your planned time, or until your dog is done, and watched them sail and return. If your dog stays on the mat the whole time, that is a whole voyage.",
+  "photoIdea": "Your dog at the end of the line, nose down, with the empty bench and scarf in the foreground. A photo from the seat, no calling.",
+  "memoryPrompt": "How far did your dog sail, and where did they go when nobody was steering?",
+  "minutesMin": 20,
+  "minutesMax": 40,
+  "activeMinutes": 30,
+  "supplies": [
+    "Lightweight long line of five to ten meters",
+    "Well-fitting harness",
+    "Gloves",
+    "Mat or towel",
+    "Water and a bowl"
+  ],
+  "requires": ["leash-and-harness", "towels"],
+  "setting": "outdoor",
+  "places": ["home", "countryside", "city"],
+  "avoidWeather": ["heat", "cold"],
+  "lifeStages": ["adult", "senior"],
+  "energy": "gentle",
+  "personalities": ["cozy", "gentle", "curious"],
+  "dogMobility": "low",
+  "ownerMobility": "seated",
+  "stepFree": true,
+  "crowd": "some",
+  "strangers": true,
+  "otherDogs": true,
+  "noise": "quiet",
+  "safety": [
+    "Sidewalk too hot for the back of your hand is too hot for paws; head home if your dog pants hard or shivers.",
+    "Wear gloves, clip the long line to a harness (never a collar) and never wrap it around yourself.",
+    "Use the line only where it is allowed, away from roads, water and other dogs."
+  ],
+  "activityTypes": ["outdoor-exploration", "relaxation", "scent-and-discovery"],
+  "collections": [
+    "the-great-outdoors",
+    "the-golden-years",
+    "the-curious-explorer",
+    "little-splurges"
+  ],
+  "keepsake": {
+    "family": "trading-card",
+    "theme": "tide-line-card",
+    "headline": "KEEPER OF THE LIGHT",
+    "subhead": "Stayed put while the dog sailed",
+    "explainer": "I stayed on the bench. The dog did the exploring"
+  },
+  "review": {
+    "ownerAppeal": 7,
+    "dogEnjoyment": 8,
+    "originality": 8,
+    "adventureFactor": 7,
+    "practicality": 6,
+    "memoryValue": 7,
+    "reviewedOn": "2026-11-26"
+  },
+  "role": "aspirational",
+  "teaser": "A quiet hour at the edge of the world, with a very good view.",
+  "showcase": false
+}

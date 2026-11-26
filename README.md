@@ -2,7 +2,7 @@
 
 The Adventure Passport is a collectible, self-paced set of little adventures to share with a dog. Visitors try free sample adventures with no account. A one-time purchase unlocks a much larger, protected library, progress that syncs across devices, and extra keepsakes. There are no subscriptions, no AI APIs and no accounts for the free experience.
 
-This repository is **public**. It holds the website, the free adventures, the engine and the server code. It does **not** hold the premium library, any secret or any customer data.
+This repository is **public**. It holds the website, the free adventures, the engine and the server code. It does **not** hold any secret or customer data. By the owner's decision (2026-11-26) it holds the premium library in `content/premium/` (one JSON file per adventure) while still public; the paid library is protected only once the repository is made private (see `docs/PREMIUM-CONTENT-WORKFLOW.md`).
 
 ## Run it
 
@@ -38,28 +38,30 @@ node scripts/test-netlify-ignore.mjs   # regression test for the Netlify build-s
 ## Where content lives
 
 - **Free adventures, collections, stamps, achievements, guides, products, affiliate links and site settings:** plain files under `content/`, edited through Pages CMS or directly in git. A build validates every file.
-- **Premium adventures:** not in this repository. They are stored in Netlify Blobs (store `premium-<env>`), loaded by an owner-only script from a JSON file kept outside the repository, and delivered only by the server to a signed-in, entitled session. The browser bundle and public files never contain them. Tests use a clearly marked synthetic fixture (`src/passport/fixtures/premium.synthetic.ts`).
+- **Premium adventures:** the authoring files are `content/premium/<id>.json` in this repository (owner's decision, 2026-11-26; the repository is still PUBLIC, so the paid library is protected only once it is private). The website build never reads that folder. The live copy is in Netlify Blobs (store `premium-<env>`), loaded by an owner-only script (`premium-import.mjs --dir content/premium`), and delivered only by the server to a signed-in, entitled session. The browser bundle and public files never contain them. Tests use a clearly marked synthetic fixture (`src/passport/fixtures/premium.synthetic.ts`).
 - **Customer progress:** Netlify Blobs (store `customers-<env>`), keyed by a random customer id. Photos are never stored anywhere: keepsakes are drawn on the device.
 
 ## Rules for contributors
 
-- Never commit secrets, customer data, premium adventure text or exports (`/premium-content/` and `*.premium.json` are git-ignored).
+- Never commit secrets or customer data. Premium text belongs only in `content/premium/` (see above); never in `src/`, `public/`, `content/adventures/` or docs. `/premium-content/` and `*.premium.json` stay git-ignored for exports.
 - Eligibility is a hard rule: an unknown fact about a dog is never treated as safe.
 - Affiliate links are limited to verified Amazon products listed in `content/affiliates.yml`.
 - See `AGENTS.md` for the short list used by coding agents.
 
 ## Documents
 
-| Document                                             | Subject                                           |
-| ---------------------------------------------------- | ------------------------------------------------- |
-| [docs/PRODUCT-SPEC.md](docs/PRODUCT-SPEC.md)         | What the product is and how it behaves            |
-| [docs/DESIGN-SYSTEM.md](docs/DESIGN-SYSTEM.md)       | Tokens, type, components, motion, accessibility   |
-| [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)         | Code structure, data, server, security            |
-| [docs/DECISIONS.md](docs/DECISIONS.md)               | Current architecture and commercial decisions     |
-| [docs/CONTENT-GUIDE.md](docs/CONTENT-GUIDE.md)       | How to write an adventure                         |
-| [docs/CONTENT-REVIEW.md](docs/CONTENT-REVIEW.md)     | Editorial review of the free library              |
-| [docs/OPERATIONS.md](docs/OPERATIONS.md)             | Maintenance, CMS workflow, premium runbook, costs |
-| [docs/QA-REPORT.md](docs/QA-REPORT.md)               | Verified test results and what is not tested      |
-| [docs/LAUNCH-CHECKLIST.md](docs/LAUNCH-CHECKLIST.md) | Launch gates and verdict                          |
-| [docs/COWORK-HANDOFF.md](docs/COWORK-HANDOFF.md)     | External tasks only the owner can do              |
-| [docs/FLIP-HANDOFF.md](docs/FLIP-HANDOFF.md)         | Transfer plan for a sale                          |
+| Document                                                             | Subject                                              |
+| -------------------------------------------------------------------- | ---------------------------------------------------- |
+| [docs/PRODUCT-SPEC.md](docs/PRODUCT-SPEC.md)                         | What the product is and how it behaves               |
+| [docs/DESIGN-SYSTEM.md](docs/DESIGN-SYSTEM.md)                       | Tokens, type, components, motion, accessibility      |
+| [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)                         | Code structure, data, server, security               |
+| [docs/DECISIONS.md](docs/DECISIONS.md)                               | Current architecture and commercial decisions        |
+| [docs/CONTENT-GUIDE.md](docs/CONTENT-GUIDE.md)                       | How to write an adventure                            |
+| [docs/CONTENT-REVIEW.md](docs/CONTENT-REVIEW.md)                     | Editorial review of the free library                 |
+| [docs/OPERATIONS.md](docs/OPERATIONS.md)                             | Maintenance, CMS workflow, premium runbook, costs    |
+| [docs/PREMIUM-CONTENT-WORKFLOW.md](docs/PREMIUM-CONTENT-WORKFLOW.md) | Editing, importing and backing up the paid library   |
+| [docs/OWNERSHIP-TRANSFER.md](docs/OWNERSHIP-TRANSFER.md)             | Selling the business: accounts, rotation, checklists |
+| [docs/QA-REPORT.md](docs/QA-REPORT.md)                               | Verified test results and what is not tested         |
+| [docs/LAUNCH-CHECKLIST.md](docs/LAUNCH-CHECKLIST.md)                 | Launch gates and verdict                             |
+| [docs/COWORK-HANDOFF.md](docs/COWORK-HANDOFF.md)                     | External tasks only the owner can do                 |
+| [docs/FLIP-HANDOFF.md](docs/FLIP-HANDOFF.md)                         | Transfer plan for a sale                             |

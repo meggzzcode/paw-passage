@@ -1,0 +1,103 @@
+{
+  "schema": 2,
+  "access": "premium",
+  "status": "published",
+  "variations": [
+    "Indoor version: a big sheet of paper on the floor as a house plan, with a sticker for each sniff spot.",
+    "Fewer dots: stop at six stops and connect them in order.",
+    "Seated adult: sit on a bench with a short leash and let the dog sniff the paving around you while the kids mark.",
+    "Easier: just one child marks and the adult holds everything else."
+  ],
+  "optionalSupplies": ["A bucket of water to rinse away the chalk"],
+  "substitutes": ["Masking tape with a marker, on a driveway or floor, instead of chalk"],
+  "reservation": {
+    "needed": false
+  },
+  "seasons": [],
+  "avoidWeather": ["rain", "heat", "cold"],
+  "sizes": [],
+  "household": ["family"],
+  "achievements": [],
+  "relatedGuides": [],
+  "affiliateProducts": [],
+  "prep": "light",
+  "costMin": 0,
+  "costMax": 0,
+  "transport": "walkable",
+  "crowd": "none",
+  "strangers": false,
+  "otherDogs": false,
+  "noise": "quiet",
+  "food": false,
+  "water": "none",
+  "stepFree": true,
+  "homes": ["apartment", "house-no-yard", "house-with-yard"],
+  "lifeStages": ["adult", "senior"],
+  "setting": "outdoor",
+  "places": ["home", "city"],
+  "space": "yard",
+  "dogMobility": "moderate",
+  "ownerMobility": "short-walk",
+  "energy": "moderate",
+  "id": "adv-7h9t5j",
+  "title": "Connect the Sniffs",
+  "clue": "Every stop your dog makes is a dot, and nobody knows what the picture is until the very end.",
+  "reveal": "While your dog sniffs their way along a quiet stretch, the kids mark each long sniff with a chalk dot, a few steps behind. Afterward they join the dots into a mystery shape and give it a name.",
+  "objective": "Mark every long sniff with a chalk dot, then connect them into a constellation of your dog's walk and name it.",
+  "instructions": [
+    "Pick a quiet paved area (your own driveway, a patio or a quiet empty court) and a dog who is happy on a loose leash. Bring washable non-toxic chalk and water. An adult holds the leash; kids carry the chalk.",
+    "Rules for kids: stay behind or beside the adult, never in front of or crowding the dog, and never reach or call. Mark only after the dog has moved at least six feet on.",
+    "Walk slowly and let the dog choose. Whenever they stop to sniff for a few seconds, the adult says 'dot' quietly. Once the dog has moved six feet on, a kid marks a chalk X where they sniffed.",
+    "Keep it going for ten to fifteen stops or as long as the dog is interested, steering the dog away from any chalked paving. Skip the game if the dog seems tense.",
+    "At the end, move away from the dog and have the kids connect the dots with chalk lines, from the first to the last. A shape appears: a boat, a bird, a snail.",
+    "Name the constellation (for example, 'The Great Squirrel') and write the dog's name and date by it.",
+    "Photograph the map from above, then rinse the chalk away with a bucket of water before the dog goes back near that spot."
+  ],
+  "twist": "The dog draws the picture without knowing it: the kids join the dots of their longest sniffs, and the shape is a surprise.",
+  "completion": "Several dots are marked and joined into a shape, and a name is on the map. If the dog wants to go home early, the dots so far are enough.",
+  "photoIdea": "The chalk constellation from above, with the dog's paws at the edge of the map.",
+  "memoryPrompt": "What did the dog's constellation look like, and what did the family name it?",
+  "minutesMin": 20,
+  "minutesMax": 40,
+  "activeMinutes": 20,
+  "supplies": ["Sidewalk chalk", "Leash and harness", "Water for the dog"],
+  "requires": ["leash-and-harness", "household-items"],
+  "safety": [
+    "Kids stay behind the dog and never grab or crowd; the adult holds the leash.",
+    "Use dry paving and check it is not hot. Keep the dog off chalked ground and rinse it away before they return.",
+    "Use only washable non-toxic chalk, kept out of reach; stop if the dog licks the ground."
+  ],
+  "activityTypes": ["outdoor-exploration", "scent-and-discovery", "creative-projects"],
+  "collections": ["the-great-outdoors", "creative-companions", "the-curious-explorer"],
+  "stamps": ["first-adventure", "city-explorer"],
+  "keepsake": {
+    "family": "seasonal-frame",
+    "theme": "star-chart",
+    "headline": "NEW CONSTELLATION",
+    "subhead": "Charted by nose, connected by kids",
+    "explainer": "Every sniff is a dot; the dots made a picture"
+  },
+  "research": [
+    {
+      "label": "Cornell Riney Canine Health Center: canine enrichment ideas",
+      "url": "https://riney.vet.cornell.edu/member-benefits-health-tips/canine-enrichment-ideas"
+    },
+    {
+      "label": "Dogs Trust: enrichment activities for dogs",
+      "url": "https://www.dogstrust.org.uk/dog-advice/life-with-your-dog/enrichment/enrichment-activities-for-dogs"
+    }
+  ],
+  "personalities": ["curious", "adventurous"],
+  "review": {
+    "ownerAppeal": 8,
+    "dogEnjoyment": 7,
+    "originality": 8,
+    "adventureFactor": 7,
+    "practicality": 7,
+    "memoryValue": 8,
+    "reviewedOn": "2026-11-26"
+  },
+  "role": "everyday",
+  "teaser": "Every walk draws a picture. Today you get to see it.",
+  "showcase": true
+}

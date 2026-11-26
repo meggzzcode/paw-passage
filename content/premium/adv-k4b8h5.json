@@ -1,0 +1,112 @@
+{
+  "schema": 2,
+  "household": [],
+  "achievements": [],
+  "relatedGuides": [],
+  "affiliateProducts": [],
+  "sizes": [],
+  "access": "premium",
+  "status": "published",
+  "showcase": false,
+  "research": [
+    {
+      "label": "Dogs Trust: enrichment ideas for bored dogs",
+      "url": "https://www.dogstrust.org.uk/help-advice/behaviour/enrichment-ideas-for-bored-dogs"
+    },
+    {
+      "label": "ASPCA: canine DIY enrichment",
+      "url": "https://www.aspca.org/pet-care/dog-care/canine-diy-enrichment"
+    }
+  ],
+  "stamps": ["first-adventure"],
+  "avoidWeather": ["rain", "heat"],
+  "substitutes": ["No dog-welcoming bookshop? Use books from home or the library."],
+  "optionalSupplies": ["A tote bag for the book", "A thermos for you"],
+  "variations": [
+    "No bookshop nearby: bring three books from your own shelf to a park bench.",
+    "Seated version: a bench or lawn right outside the venue, no browsing inside.",
+    "No food: skip the lick mat and let the Bookmark Find toy be the treat.",
+    "Quiet version: skip the browse and just read aloud for ten minutes outdoors."
+  ],
+  "id": "adv-k4b8h5",
+  "role": "lifestyle",
+  "title": "The Bookshop & Biscuit Date",
+  "clue": "Somewhere between the shelves and the bench, a good story is waiting to be chosen.",
+  "reveal": "A slow date for book lovers: browse somewhere that genuinely welcomes dogs, or lay out a book spot outdoors, then read the first page aloud on a bench. If your dog settles beside you, the book is a keeper.",
+  "objective": "Browse for one book in a dog-welcoming spot, then read its first page aloud to your dog on a quiet bench with a treat break.",
+  "instructions": [
+    "Pick your venue: a bookshop that welcomes dogs, an outdoor book market, a second-hand table outside a shop, or simply a library lawn bench with books you already own. Phone ahead and ask; never assume dogs are allowed.",
+    "Choose the quietest time, usually just after opening on a weekday. If the venue is crowded or your dog hesitates at the door, stay outside and do the bench part only.",
+    "Browse for ten minutes at most, with your dog close on a short leash, away from low shelves and tails of other visitors. Let them sniff the floor or sit near the door if they prefer.",
+    "Choose one book that catches your eye. Skip anything your dog might knock over, and watch for slippery floors.",
+    "Find a quiet bench or lawn nearby. Lay out the mat, offer water, and let your dog 'read the lawn': five minutes of free sniffing on a loose leash around the bench. Then bring out the Bookmark Find, a favorite toy you tucked in your tote, and set it on the mat for your dog to discover. Finish with a lick mat or a small portion of regular food.",
+    "Read the first page aloud in a calm voice. If your dog lies down or settles near you, the book is a keeper. If they wander off, it simply isn't the day, so close it and enjoy the view.",
+    "Stay for as long as you both like, then head home with the book."
+  ],
+  "twist": "Your dog is the book club's tiebreaker: the bench is their chapter, a Bookmark Find waits on the mat, and the story only comes home if it can be read aloud while your dog settles beside you.",
+  "completion": "Counts once you have found a book and spent a few quiet minutes reading beside your dog, even if it is not the day to buy.",
+  "photoIdea": "Your dog resting beside the open book on the bench, taken from above or the side, without asking them to pose.",
+  "memoryPrompt": "What was the book, and how did your dog react to the first page?",
+  "minutesMin": 45,
+  "minutesMax": 90,
+  "activeMinutes": 30,
+  "costMin": 0,
+  "costMax": 30,
+  "prep": "light",
+  "supplies": [
+    "Leash and harness",
+    "Water and a bowl",
+    "Waste bags",
+    "A mat or blanket",
+    "A favorite toy for the Bookmark Find",
+    "A lick mat or a small portion of regular food"
+  ],
+  "requires": ["leash-and-harness", "blanket", "treats"],
+  "transport": "walkable",
+  "reservation": {
+    "needed": false,
+    "note": "Phone ahead: the owner must confirm the shop or market welcomes dogs and when it is quiet. Never assume a venue accepts dogs."
+  },
+  "setting": "either",
+  "homes": ["apartment", "house-no-yard", "house-with-yard"],
+  "space": "none",
+  "places": ["city"],
+  "seasons": ["spring", "summer", "autumn", "winter"],
+  "lifeStages": ["adult", "senior"],
+  "energy": "gentle",
+  "personalities": ["cozy", "curious", "gentle"],
+  "dogMobility": "low",
+  "ownerMobility": "minimal-walking",
+  "stepFree": false,
+  "crowd": "some",
+  "strangers": true,
+  "otherDogs": true,
+  "noise": "quiet",
+  "food": true,
+  "dietNotes": "Use a small portion of your dog's regular food, counted in the day's meals. Ask your vet about diet. A food-free option is included.",
+  "water": "none",
+  "safety": [
+    "Venue first: confirm dogs are welcome and keep the leash short in aisles near shelves and other visitors.",
+    "Dogs are never required to enter a shop; stay outside if your dog hesitates or the space is busy.",
+    "Watch floors for slips, and never leave your dog tied outside a shop."
+  ],
+  "activityTypes": ["relaxation", "outdoor-exploration", "memory-making"],
+  "collections": ["doggy-date-club", "little-splurges", "city-explorers", "the-golden-years"],
+  "keepsake": {
+    "family": "travel-postcard",
+    "theme": "bookshop-postcard",
+    "headline": "THE READING COMPANION",
+    "subhead": "Book club for two",
+    "explainer": "The book came home. My dog approved"
+  },
+  "teaser": "A slow date between the shelves and the bench, with a good book in the offing.",
+  "review": {
+    "ownerAppeal": 8,
+    "dogEnjoyment": 7,
+    "originality": 6,
+    "adventureFactor": 7,
+    "practicality": 7,
+    "memoryValue": 7,
+    "reviewedOn": "2026-11-26"
+  }
+}

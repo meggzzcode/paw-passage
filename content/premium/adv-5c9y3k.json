@@ -1,0 +1,115 @@
+{
+  "schema": 2,
+  "sizes": [],
+  "household": [],
+  "achievements": [],
+  "relatedGuides": [],
+  "affiliateProducts": [],
+  "reservation": {
+    "needed": false
+  },
+  "access": "premium",
+  "status": "published",
+  "crowd": "none",
+  "strangers": false,
+  "otherDogs": false,
+  "noise": "quiet",
+  "food": true,
+  "water": "none",
+  "stepFree": true,
+  "prep": "light",
+  "costMin": 0,
+  "costMax": 0,
+  "transport": "none",
+  "lifeStages": ["adult"],
+  "dogMobility": "moderate",
+  "research": [
+    {
+      "label": "Cornell Riney Canine Health Center: canine enrichment ideas",
+      "url": "https://riney.vet.cornell.edu/member-benefits-health-tips/canine-enrichment-ideas"
+    },
+    {
+      "label": "Dogs Trust: enrichment ideas for bored dogs",
+      "url": "https://www.dogstrust.org.uk/help-advice/behaviour/enrichment-ideas-for-bored-dogs"
+    },
+    {
+      "label": "AKC: indoor games, hide-and-seek and obstacle courses",
+      "url": "https://www.akc.org/expert-advice/training/indoor-games-with-dog/"
+    }
+  ],
+  "minutesMin": 10,
+  "minutesMax": 25,
+  "activeMinutes": 10,
+  "setting": "indoor",
+  "homes": ["apartment", "house-no-yard", "house-with-yard"],
+  "space": "a-room",
+  "places": ["home"],
+  "energy": "moderate",
+  "ownerMobility": "seated",
+  "seasons": [],
+  "avoidWeather": [],
+  "optionalSupplies": [],
+  "substitutes": ["No box? Use a cushion for a station."],
+  "requires": ["treats", "cardboard-boxes", "towels"],
+  "personalities": ["curious", "playful"],
+  "id": "adv-5c9y3k",
+  "title": "The Combination Lock",
+  "clue": "Three stations, one secret order, and a vault that only opens for the right sequence.",
+  "reveal": "Three stations stand in a row: a mat, a box and a towel. Only one order opens the vault, and the only hint is a happy 'yes' from you. Your dog works out the combination by trial, and gets the vault.",
+  "objective": "Teach your dog by trial and error to visit three stations in a set order, ending at an opening vault.",
+  "instructions": [
+    "Set three stations in a row of one room or hallway: a mat, a shallow box and a folded towel. Put the vault, a lidded box with soft treats, at the end. Non-slip floor. Pick your secret order, like box, mat, towel.",
+    "Teach the marker first: say 'yes' and hand over a treat, five times. Now 'yes' means treat is coming.",
+    "Let your dog roam. Say 'yes' and toss a treat away whenever they touch the first station in your order. Ignore other stations.",
+    "Next, mark only when they go to the second station after the first. No luring and no pointing. If they get stuck, repeat the earlier step.",
+    "When the full sequence happens, say 'yes' and open the vault. Let your dog eat from it. Keep each round to a minute or two and rest between.",
+    "Mix up the order on another day or build a longer combination. Two stations is a fine combination.",
+    "Stop if your dog looks frustrated: whining, barking or leaving. Pay the previous step, then end."
+  ],
+  "twist": "Your dog has to discover the correct order of three stations, with nothing to go on but your marker, and the vault opens only when the sequence is right.",
+  "variations": [
+    "Easier: two stations in a short line, one order.",
+    "Apartment: use two rooms, a mat in each.",
+    "Harder: add a fourth station or reverse the order.",
+    "Quiet dog: skip the marker and drop treats silently."
+  ],
+  "completion": "Counts when your dog has done one step of the combination on their own. The vault opening is a bonus.",
+  "photoIdea": "Your dog standing on the third station, with the vault box open in front of them.",
+  "memoryPrompt": "What order did your dog crack first, and where did they get stuck?",
+  "supplies": [
+    "A mat",
+    "A shallow plain cardboard box",
+    "A towel",
+    "A lidded box or container",
+    "Tiny soft treats"
+  ],
+  "dietNotes": "Tiny treats from the daily ration; check labels for xylitol. Ask your vet about diet limits.",
+  "safety": [
+    "Non-slip floor and plain cardboard only, no tape or plastic. Take away any box that is chewed.",
+    "Rounds last a minute or two. A frustrated dog is a stop sign, so end on a success.",
+    "One dog at a time, with no treats left on the floor between rounds."
+  ],
+  "activityTypes": ["problem-solving", "play-and-games"],
+  "collections": ["rainy-day-club", "five-minute-wonders", "home-sweet-home"],
+  "stamps": ["first-adventure", "cozy-companion"],
+  "keepsake": {
+    "family": "id-card",
+    "theme": "gotcha-passport",
+    "headline": "CODE CRACKER",
+    "subhead": "Three stations, one secret order",
+    "explainer": "Cracked the combination; my owner only said yes"
+  },
+  "review": {
+    "ownerAppeal": 7,
+    "dogEnjoyment": 7,
+    "originality": 7,
+    "adventureFactor": 7,
+    "practicality": 7,
+    "memoryValue": 7,
+    "reviewedOn": "2026-11-26"
+  },
+  "role": "signature",
+  "teaser": "A vault is waiting, and the combination is a mystery.",
+  "previewTitle": "The Vault",
+  "showcase": false
+}

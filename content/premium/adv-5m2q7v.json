@@ -1,0 +1,107 @@
+{
+  "schema": 2,
+  "seasons": [],
+  "avoidWeather": [],
+  "sizes": [],
+  "household": [],
+  "achievements": [],
+  "relatedGuides": [],
+  "affiliateProducts": [],
+  "optionalSupplies": [],
+  "substitutes": ["No basket? Use a laundry hamper or a folded towel."],
+  "reservation": {
+    "needed": false
+  },
+  "access": "premium",
+  "status": "published",
+  "crowd": "none",
+  "strangers": false,
+  "otherDogs": false,
+  "noise": "quiet",
+  "food": true,
+  "water": "none",
+  "stepFree": true,
+  "prep": "light",
+  "costMin": 0,
+  "costMax": 0,
+  "transport": "none",
+  "lifeStages": ["adult"],
+  "personalities": ["curious", "playful"],
+  "dogMobility": "moderate",
+  "research": [
+    {
+      "label": "Cornell Riney Canine Health Center: canine enrichment ideas",
+      "url": "https://riney.vet.cornell.edu/member-benefits-health-tips/canine-enrichment-ideas"
+    },
+    {
+      "label": "Dogs Trust: enrichment ideas for bored dogs",
+      "url": "https://www.dogstrust.org.uk/help-advice/behaviour/enrichment-ideas-for-bored-dogs"
+    },
+    {
+      "label": "AKC: indoor games, hide-and-seek and obstacle courses",
+      "url": "https://www.akc.org/expert-advice/training/indoor-games-with-dog/"
+    }
+  ],
+  "id": "adv-5m2q7v",
+  "title": "The Memory Master Challenge",
+  "clue": "The prize is hidden in plain sight, but the wait between seeing it and running for it is the whole test.",
+  "reveal": "Your dog watches you hide one prize in one of four spots, then you both take a slow lap of the room before the release. Does your dog remember where it went? Spoiler: the tail will tell you.",
+  "objective": "Hide one prize where your dog can see, take a short lap together, and release your dog to find it from memory.",
+  "instructions": [
+    "Set four spots in one room or a hallway, three steps apart: a mat, an open cardboard box, a chair seat and a basket. Make sure the floor is non-slip. You need five tiny soft treats or a favorite small toy.",
+    "Show your dog the prize, then tuck it into one spot while they watch, at their pace. Say nothing about it.",
+    "The lap: walk once around the room together at a normal pace, a short loop, ending at the starting point. Start with just a few seconds between hide and release.",
+    "Say 'go find' and let your dog go. Whatever spot they choose, wait. If it is right, celebrate and let them have the prize. If it is wrong, stay cheerful: they may try again on their own.",
+    "Round two: change the spot, then make the lap a little longer, with a sniff stop on the way. Stop after three or four rounds so it stays a game.",
+    "Bonus round: hide two prizes in two different spots in view, then see which your dog remembers first. Ask for no order.",
+    "Finish with a free-for-all: sprinkle a handful of treats in the open room and let your dog sniff them up."
+  ],
+  "twist": "Your dog sees the hiding and must hold the memory through a slow lap together before the release, so it is remembering, not sniffing.",
+  "variations": [
+    "Easier: release at once, no lap.",
+    "Small apartment: use two spots only and a lap around the sofa.",
+    "Harder: a 20-second lap that includes a stop to say hello to the window.",
+    "Ball-obsessed dog: swap the prize for a favorite chew, never thrown."
+  ],
+  "completion": "Counts when your dog has visited a spot after the lap. Getting it wrong is part of the game; no scores are kept.",
+  "photoIdea": "Your dog standing in the middle of the room pointing a nose at the right spot.",
+  "memoryPrompt": "Which spot did they check first, and did they ever second-guess themselves?",
+  "minutesMin": 10,
+  "minutesMax": 25,
+  "activeMinutes": 10,
+  "supplies": ["A mat, a box, a chair and a basket", "Tiny soft treats or a small toy"],
+  "requires": ["treats", "household-items", "cardboard-boxes"],
+  "setting": "indoor",
+  "homes": ["apartment", "house-no-yard", "house-with-yard"],
+  "space": "a-room",
+  "places": ["home"],
+  "energy": "moderate",
+  "ownerMobility": "minimal-walking",
+  "dietNotes": "Tiny treats from the daily ration; check labels for xylitol. Ask your vet about diet limits.",
+  "safety": [
+    "Non-slip floor only; use rugs or a mat on tile or wood and skip any slippery room.",
+    "Keep each round short and end on a find. Supervise any box or basket."
+  ],
+  "activityTypes": ["problem-solving", "play-and-games"],
+  "collections": ["rainy-day-club", "five-minute-wonders", "home-sweet-home"],
+  "stamps": ["first-adventure", "cozy-companion"],
+  "keepsake": {
+    "family": "magazine-cover",
+    "theme": "storybook-cover",
+    "headline": "MEMORY MASTER",
+    "subhead": "One prize, four spots, one good guess",
+    "explainer": "Remembered where the prize went after a slow lap"
+  },
+  "review": {
+    "ownerAppeal": 7,
+    "dogEnjoyment": 7,
+    "originality": 7,
+    "adventureFactor": 7,
+    "practicality": 8,
+    "memoryValue": 6,
+    "reviewedOn": "2026-11-26"
+  },
+  "role": "everyday",
+  "teaser": "How good is your dog's memory? Prepare to be impressed.",
+  "showcase": false
+}

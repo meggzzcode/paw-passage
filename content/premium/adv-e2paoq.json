@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "access": "premium",
+  "status": "published",
+  "optionalSupplies": ["Small coin purse or pouch"],
+  "achievements": [],
+  "relatedGuides": [],
+  "affiliateProducts": [],
+  "research": [],
+  "reservation": {
+    "needed": false
+  },
+  "homes": ["apartment", "house-no-yard", "house-with-yard"],
+  "space": "none",
+  "seasons": [],
+  "sizes": [],
+  "food": true,
+  "transport": "walkable",
+  "water": "none",
+  "prep": "light",
+  "costMin": 0,
+  "costMax": 6,
+  "substitutes": [
+    "No bakery or flower shop nearby? Use a market stall, a hedge in flower, a coffee cart or a plant nursery doorway."
+  ],
+  "stamps": ["first-adventure", "city-explorer"],
+  "id": "adv-e2paoq",
+  "title": "The Bazaar of Smells",
+  "clue": "Every morning your neighborhood sets up a market that costs nothing to browse.",
+  "reveal": "Bakery vent, flower shop, laundrette, coffee roaster: your high street is a smell market, and your dog is the shopper. Browse the doorways at their pace, find the stall that holds them longest and bring a small piece of it home.",
+  "objective": "Browse four or five fragrant doorways at your dog's pace, crown the Best Stall, and carry one purchase home to unwrap on the doormat.",
+  "instructions": [
+    "Scout it yourself first, nose in the air: walk the shortest loop near home and note four or five doorways with a good smell, such as a bakery vent, flower shop, laundrette, coffee shop, deli or greengrocer. Pick a morning when the shops are just opening and the bakery is warm.",
+    "Pack the purse: leash, a water bowl, a bag for shopping, and a few of your dog's own usual treats from their daily ration, to be used only at the end.",
+    "At the first stall, approach along the sidewalk edge, loosen the leash and wait. Your dog sets how long to browse and when to move on. Do not pull them in or out of a doorway, and do not go into shops unless a sign says dogs are welcome.",
+    "Walk to each stall in turn and give each a name: the Bread Stall, the Soap Stall, the Flower Stall. Step aside for anyone going in or out. If your dog never looks at a stall, you have learned something about the market.",
+    "Notice the stall they return to or stay longest at. That is the Best Stall. Walk back to it for the last purchase.",
+    "Make the one purchase for yourself from the Best Stall's shop: a roll, a coffee, a bar of soap, a single stem. Keep it in your bag and never share it with your dog. Dog-safe items only come out of your dog's purse: one of their usual treats at the stall as the dog's purchase, if they want it.",
+    "Walk home, unwrap the purchase on the doormat so your dog can read the bag again, then water and a rest on their mat."
+  ],
+  "twist": "Your dog sets the market's closing time and crowns the Best Stall by the length of their linger, and the winning smell comes home in a bag.",
+  "variations": [
+    "Quiet Bazaar: go very early or late with only two stalls, for a nervous or noise-sensitive dog. One good stall is a whole market.",
+    "Bench Bazaar for a senior or slow dog: sit on a bench outside the best doorway and let the market come to you. A quarter of an hour is a morning's browsing.",
+    "Kitchen Bazaar, no-car, no-street version: stalls are the places smells collect at home: the shoe rack, the laundry basket, the bookshelf, the coat pegs. Walk your dog through at their pace and crown the best stall.",
+    "Bigger version, optional: the outer edge of a quiet market at opening time, if dogs are allowed. Stay at the edge only and leave at once if it fills."
+  ],
+  "completion": "You have browsed at least two stalls, named a Best Stall, and unwrapped a purchase at home. Heading home early because your dog is done counts.",
+  "photoIdea": "Your dog at a doorway with the shop sign above them, nose busy, taken from a few steps back.",
+  "memoryPrompt": "Which stall won, and what did the bag smell like when you got it home?",
+  "minutesMin": 25,
+  "minutesMax": 50,
+  "activeMinutes": 30,
+  "supplies": [
+    "Leash",
+    "Water and a bowl",
+    "Shopping bag",
+    "Your dog's usual treats from their daily ration"
+  ],
+  "requires": ["leash-and-harness", "treats"],
+  "setting": "outdoor",
+  "places": ["city"],
+  "avoidWeather": ["heat", "cold"],
+  "lifeStages": ["adult", "senior"],
+  "energy": "gentle",
+  "personalities": ["curious", "adventurous"],
+  "dogMobility": "moderate",
+  "ownerMobility": "short-walk",
+  "stepFree": false,
+  "crowd": "some",
+  "strangers": true,
+  "otherDogs": true,
+  "noise": "some",
+  "dietNotes": "Only your dog's usual treats from the daily ration. Nothing from shops, strangers or the sidewalk; ask your vet about diet, allergies or restrictions.",
+  "safety": [
+    "Sidewalk too hot for the back of your hand is too hot for paws; head home if your dog pants hard or shivers.",
+    "Steer clear of dropped food, gutters and vent fumes; chocolate and xylitol are dangerous if swallowed.",
+    "Keep your dog on a leash, follow local rules, and stay out of shops unless dogs are welcome."
+  ],
+  "activityTypes": ["scent-and-discovery", "outdoor-exploration", "food-and-treats"],
+  "collections": ["city-explorers", "little-splurges", "taste-and-treat", "the-curious-explorer"],
+  "keepsake": {
+    "family": "event-ticket",
+    "theme": "market-day",
+    "headline": "BEST STALL IN TOWN",
+    "subhead": "Chosen by nose, bought with a coin",
+    "explainer": "Smell market: one coin, one stall, one very long sniff"
+  },
+  "review": {
+    "ownerAppeal": 8,
+    "dogEnjoyment": 8,
+    "originality": 7,
+    "adventureFactor": 8,
+    "practicality": 7,
+    "memoryValue": 8,
+    "reviewedOn": "2026-11-26"
+  },
+  "role": "aspirational",
+  "teaser": "A little market of aromas, and exactly one very discerning customer.",
+  "showcase": true
+}

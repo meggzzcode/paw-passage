@@ -1,0 +1,116 @@
+{
+  "schema": 2,
+  "household": [],
+  "achievements": [],
+  "relatedGuides": [],
+  "affiliateProducts": [],
+  "sizes": [],
+  "access": "premium",
+  "status": "published",
+  "showcase": false,
+  "research": [
+    {
+      "label": "Dogs Trust: enrichment ideas for bored dogs",
+      "url": "https://www.dogstrust.org.uk/help-advice/behaviour/enrichment-ideas-for-bored-dogs"
+    },
+    {
+      "label": "ASPCA: canine DIY enrichment",
+      "url": "https://www.aspca.org/pet-care/dog-care/canine-diy-enrichment"
+    }
+  ],
+  "stamps": ["first-adventure"],
+  "avoidWeather": ["rain", "heat", "cold"],
+  "substitutes": ["No mat? Use a folded towel or an old picnic cloth."],
+  "optionalSupplies": ["A snack for you"],
+  "variations": [
+    "Home version: lay the mat on a balcony, doorstep or living-room floor.",
+    "No food: pack a favorite toy instead of the lick mat.",
+    "Seated version: pick a spot you can reach with a short, flat walk.",
+    "Weather version: a short hallway picnic when it is too hot or wet outside."
+  ],
+  "id": "adv-k7p3g6",
+  "role": "everyday",
+  "title": "Picnic To-Go",
+  "clue": "It is already packed and by the door, and you can be gone in two minutes.",
+  "reveal": "A grab-and-go outing for the days when a big plan is too much. A small bag lives by the door, so a spare half hour becomes a snack outside with your dog in the time it takes to find your shoes.",
+  "objective": "Pack a small go-bag once, then use it for a quick snack-and-sniff outing at the nearest comfortable spot.",
+  "instructions": [
+    "Set up the bag once: a small tote with a mat, collapsible bowl, waste bags, a small water bottle and a sealed lick mat or portion of your dog's regular food. Hang it by the door.",
+    "When a spare half hour appears, grab the bag and the leash. Choose the nearest comfortable spot within ten minutes' walk: a courtyard, park corner, quiet bench or your own yard.",
+    "Check the spot is dog-welcoming under local rules, and not too hot, cold or crowded. Leash your dog and keep them close until you settle.",
+    "Lay out the mat and offer water first. Give your dog a minute to sniff around before any food appears.",
+    "Snack time: offer the dog's portion on the lick mat while you enjoy your own snack. If your dog is not interested, there is no pressure; just sit together.",
+    "Spend ten quiet minutes looking around. Notice five things you would have walked past, and let your dog watch or sniff as they choose.",
+    "Pack up, leave the spot as you found it, and restock the bag when you get home."
+  ],
+  "twist": "The bag is packed before the mood strikes, so 'maybe later' becomes 'leaving in two minutes'.",
+  "completion": "Counts once the mat is down and you have spent a few minutes together at the spot, even if the snack stays in the bag.",
+  "photoIdea": "The packed mat with your dog's paws or nose at the edge of it, shot low, with no posing.",
+  "memoryPrompt": "Where did you end up, and what did you both notice that you usually walk past?",
+  "minutesMin": 20,
+  "minutesMax": 40,
+  "activeMinutes": 15,
+  "costMin": 0,
+  "costMax": 5,
+  "prep": "light",
+  "supplies": [
+    "Small tote bag",
+    "Mat or small blanket",
+    "Collapsible bowl and water",
+    "Waste bags",
+    "A lick mat or small portion of regular food"
+  ],
+  "requires": ["picnic-gear", "blanket", "treats", "leash-and-harness"],
+  "transport": "walkable",
+  "reservation": {
+    "needed": false,
+    "note": "Check local leash and dog rules; the owner must confirm any cafe or garden allows dogs before using it."
+  },
+  "setting": "outdoor",
+  "homes": ["apartment", "house-no-yard", "house-with-yard"],
+  "space": "none",
+  "places": ["city", "countryside", "home"],
+  "seasons": ["spring", "summer", "autumn"],
+  "lifeStages": ["adult", "senior"],
+  "energy": "gentle",
+  "personalities": ["cozy", "curious", "gentle"],
+  "dogMobility": "low",
+  "ownerMobility": "minimal-walking",
+  "stepFree": true,
+  "crowd": "some",
+  "strangers": true,
+  "otherDogs": true,
+  "noise": "some",
+  "food": true,
+  "dietNotes": "Use a small portion of the dog's regular food, counted in the day's meals. Ask your vet about diet. Food-free option included.",
+  "water": "none",
+  "safety": [
+    "Check ground, shade and temperature for your dog; offer water and head home if they pant hard or get restless.",
+    "Keep the leash on, watch for dropped food and litter, and keep unsafe human foods out of reach.",
+    "Confirm local dog rules before you settle; leave if the spot is busy."
+  ],
+  "activityTypes": ["food-and-treats", "outdoor-exploration", "relaxation"],
+  "collections": [
+    "five-minute-wonders",
+    "doggy-date-club",
+    "taste-and-treat",
+    "the-great-outdoors"
+  ],
+  "keepsake": {
+    "family": "id-card",
+    "theme": "luggage-tag-card",
+    "headline": "PICNIC TO-GO",
+    "subhead": "Packed once, ready always",
+    "explainer": "Two minutes from door to mat"
+  },
+  "teaser": "A small bag by the door and a spare half hour can change the whole afternoon.",
+  "review": {
+    "ownerAppeal": 8,
+    "dogEnjoyment": 7,
+    "originality": 5,
+    "adventureFactor": 7,
+    "practicality": 9,
+    "memoryValue": 6,
+    "reviewedOn": "2026-11-26"
+  }
+}

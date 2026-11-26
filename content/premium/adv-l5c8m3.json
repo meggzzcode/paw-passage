@@ -1,0 +1,100 @@
+{
+  "schema": 2,
+  "access": "premium",
+  "status": "published",
+  "variations": [
+    "Easier: only one layer, left loosely open, for a puppy or a dog new to puzzles.",
+    "Seated or limited-mobility: put the parcel on a tray or low table beside the dog's bed.",
+    "Delivery day: only with a sealed, empty box or bag that smells of nothing strong (packing chemicals are not for noses). Let your dog sniff it where it lands, then open it yourself out of their reach.",
+    "Bigger: four layers over a weekend, one new layer each time, with the toy in the middle."
+  ],
+  "supplies": [
+    "Three soft fabrics (dish towel, pillowcase, hand towel)",
+    "A favorite soft toy",
+    "A little of today's regular food"
+  ],
+  "optionalSupplies": ["A blanket for the nap pile"],
+  "substitutes": [
+    "No pillowcase? A clean cotton scarf or small towel.",
+    "No dish towel? A flannel or small hand towel."
+  ],
+  "requires": ["towels", "toys", "treats"],
+  "transport": "none",
+  "reservation": {
+    "needed": false
+  },
+  "seasons": [],
+  "avoidWeather": [],
+  "sizes": [],
+  "relatedGuides": [],
+  "affiliateProducts": [],
+  "achievements": [],
+  "research": [],
+  "stamps": ["first-adventure", "playtime-champion"],
+  "id": "adv-l5c8m3",
+  "title": "The Mystery Unwrapping Party",
+  "clue": "Open it, and there is another inside, and another inside that.",
+  "reveal": "A tiny unwrapping party: one favorite toy sits in the middle, wrapped in layers of soft fabric, each hiding a small find. Your dog opens them in their own time, and the best moment is layer three.",
+  "objective": "Wrap a toy in three washable fabric layers with a small find in each, and let your dog work through them at their own pace.",
+  "instructions": [
+    "Gather three fabrics: a dish towel, a clean pillowcase and a rolled hand towel, each large enough to knot loosely. No paper, tape, cling film or string.",
+    "Wrap the favorite toy in the hand towel and tie it loosely. Put a few pieces of today's ration in the pillowcase around the towel, and loosely knot the pillowcase. Put a few more inside the dish towel around that.",
+    "Let your dog watch you wrap it, if they like, then sit on the floor or a sofa a little away. Set the parcel down.",
+    "Let your dog explore and open each layer: nose, nudge, paw, pull. Do not pull back if they tug on a knot, simply let go.",
+    "As each layer comes off, take it away or let it lie. If your dog gets stuck, loosen a knot for them, never snatch.",
+    "At the center, the toy is theirs. Leave the layers in a pile for them to rest on, and sit quietly beside them while they enjoy it."
+  ],
+  "twist": "The best moment is layer three, when your dog realizes there is a toy at the center.",
+  "completion": "Your dog has worked through at least one layer or walked away, and the parcel has been unwrapped or abandoned.",
+  "photoIdea": "Your dog lying on the pile of unwrapped fabric layers with the center toy between their paws.",
+  "memoryPrompt": "Which layer did your dog choose to open first, and which was the best moment?",
+  "minutesMin": 10,
+  "minutesMax": 20,
+  "activeMinutes": 10,
+  "costMin": 0,
+  "costMax": 0,
+  "prep": "light",
+  "setting": "indoor",
+  "homes": ["apartment", "house-no-yard", "house-with-yard"],
+  "space": "small-indoor",
+  "places": ["home"],
+  "lifeStages": ["puppy", "adult", "senior"],
+  "energy": "gentle",
+  "personalities": ["curious", "playful", "gentle"],
+  "dogMobility": "low",
+  "ownerMobility": "seated",
+  "stepFree": true,
+  "crowd": "none",
+  "strangers": false,
+  "otherDogs": false,
+  "noise": "quiet",
+  "food": true,
+  "dietNotes": "Use part of today's normal ration and count it in. Ask your vet if your dog has dietary restrictions, allergies or health conditions.",
+  "water": "none",
+  "safety": [
+    "Cloth only, never paper, tape or string, and remove each layer as it comes off.",
+    "If your dog guards the parcel or tugs at a knot, let go and run it one dog at a time.",
+    "Use only part of today's normal food, never chocolate, grapes, raisins or xylitol."
+  ],
+  "activityTypes": ["problem-solving", "scent-and-discovery", "play-and-games"],
+  "collections": ["the-playful-pup", "rainy-day-club", "five-minute-wonders", "home-sweet-home"],
+  "keepsake": {
+    "family": "id-card",
+    "theme": "parcel-courier",
+    "headline": "PARCEL OPENER",
+    "subhead": "Three layers deep, found by nose",
+    "explainer": "A parcel inside a parcel inside a parcel"
+  },
+  "review": {
+    "ownerAppeal": 7,
+    "dogEnjoyment": 8,
+    "originality": 7,
+    "adventureFactor": 7,
+    "practicality": 9,
+    "memoryValue": 7,
+    "reviewedOn": "2026-11-26"
+  },
+  "role": "signature",
+  "teaser": "Something wonderful is wrapped up and waiting. Take all the time in the world.",
+  "showcase": true
+}

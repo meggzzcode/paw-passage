@@ -1,0 +1,136 @@
+{
+  "id": "adv-9v7c2z",
+  "title": "The Letter Arrives",
+  "clue": "A letter has come for someone with a very good nose. It has been out all day, and it has news from the other side of the door.",
+  "reveal": "A clean cotton cloth spends a day out in the world, in your pocket on errands or on your own sheltered balcony, porch or windowsill, and arrives that evening in a paper envelope. Your dog opens the letter their own way, nose first and in no hurry, and the cloth they nap on afterwards is the reply.",
+  "objective": "Send a plain cotton cloth out into your day, deliver it as a sealed letter, let your dog read it in their own time and seal their reply.",
+  "instructions": [
+    "In the morning, post the letter. Take a clean, plain cotton cloth with no fragrance and let it spend the day somewhere that gets outside smells: in your coat pocket or bag on errands, or on your own sheltered balcony, porch or windowsill. Keep it out of rain, off the ground and out of reach of other dogs and wildlife.",
+    "Write the note. Address it to your dog and write three small facts about where the cloth has been: \"Dear Biscuit, this letter has been to the bakery and the mailbox.\" Slip the note and the cloth into a paper envelope or bag in the evening and seal it.",
+    "Delivery. Put the sealed envelope on the floor of a quiet room and let it sit in plain view. If your dog is curious, that is the first reading. Do not call, point or hold it for them.",
+    "Read the note aloud in your ordinary voice, then open the envelope and lay the cloth flat on a non-slip floor a few meters from your dog's bed. Step back and sit. Your dog may sniff for a long time, glance and leave, or fall asleep, and all of these are answers.",
+    "Watch how they read: quick or slow, which end first, whether the body stays soft. A cloth is not a toy: if your dog grabs it, paws at it or tries to tear it, calmly pick it up and put it back in the envelope.",
+    "The reply. When they have had enough, fold the cloth into its envelope. Put a second clean cloth in their usual resting spot for the evening, with no fuss. In the morning, seal that cloth in its own envelope with one line about how they read the letter: this is your dog's letter back.",
+    "Date it and store the reply out of reach. Next season, open it beside a fresh letter and see what your dog makes of the pair."
+  ],
+  "twist": "Your dog gets a letter made of smell from a day in the world outside, and replies in the only language they have: the cloth they slept on.",
+  "variations": [
+    "Pen-pal week: ask a healthy friend who lives elsewhere to hold a plain paper card for an hour, bag it and hand it over at the door, dogs apart. Leave one card a day on the floor for a sniff with a line from the friend read aloud, then send back a card your dog sniffed. Letters only, no meeting; puppies not yet fully vaccinated skip this.",
+    "Family letter: a household member who is away or at work sends a worn scarf or cloth in an envelope for the evening reading.",
+    "Seated version: everything happens from a chair; lay the cloth on a low stool or the floor beside you and just sit.",
+    "For a senior or shy dog: use soft, familiar cotton and keep it to a few minutes. Lay it on their bed so they never have to move, or leave the sealed envelope in a doorway and let them come to it."
+  ],
+  "completion": "The letter has been opened and left for your dog to read as they chose, even if that was a glance, and the reply is sealed.",
+  "photoIdea": "Your dog beside the cloth, nose just touching or turned away, in soft light. If they ignore it, photograph the cloth on the floor with the envelope.",
+  "memoryPrompt": "How did your dog read the letter, and what was the very first thing they did?",
+  "minutesMin": 10,
+  "minutesMax": 25,
+  "activeMinutes": 10,
+  "costMin": 0,
+  "costMax": 0,
+  "prep": "some",
+  "supplies": [
+    "Two clean cotton cloths (old pillowcases or dish towels)",
+    "Two paper envelopes or bags",
+    "A pen and paper"
+  ],
+  "optionalSupplies": ["Your dog's own bed beside the cloth"],
+  "substitutes": [
+    "No envelopes? Use paper lunch bags.",
+    "No outdoor spot? Carry the cloth in your pocket for the day."
+  ],
+  "requires": ["household-items", "paper-and-pens"],
+  "transport": "none",
+  "reservation": {
+    "needed": false
+  },
+  "setting": "either",
+  "homes": ["apartment", "house-no-yard", "house-with-yard"],
+  "space": "small-indoor",
+  "places": ["home"],
+  "seasons": [],
+  "avoidWeather": [],
+  "lifeStages": ["adult", "senior"],
+  "sizes": [],
+  "energy": "gentle",
+  "personalities": ["curious", "gentle", "cozy"],
+  "dogMobility": "low",
+  "ownerMobility": "seated",
+  "stepFree": true,
+  "crowd": "none",
+  "strangers": false,
+  "otherDogs": false,
+  "noise": "quiet",
+  "food": false,
+  "water": "none",
+  "safety": [
+    "Use cloths only from healthy dogs or people you know, and skip it for a puppy who is not yet fully vaccinated.",
+    "Use plain unscented cotton, kept away from food, medicines and dirty ground; take it away if your dog chews it.",
+    "A pen-pal friend hands cards over at the door and never comes in; stop if your dog shows worry."
+  ],
+  "activityTypes": ["scent-and-discovery", "play-and-games", "memory-making"],
+  "collections": [
+    "doggy-date-club",
+    "home-sweet-home",
+    "the-curious-explorer",
+    "rainy-day-club",
+    "rescue-and-new-beginnings"
+  ],
+  "stamps": ["first-adventure", "cozy-companion", "memory-maker"],
+  "keepsake": {
+    "family": "travel-postcard",
+    "theme": "parcel-post",
+    "headline": "SPECIAL DELIVERY",
+    "subhead": "Read by nose, answered in kind",
+    "explainer": "Special delivery, addressed to the nose"
+  },
+  "research": [
+    {
+      "label": "PetMD: the importance of scent walks for dogs",
+      "url": "https://petmd.com/dog/behavior/importance-scent-walks-dogs"
+    },
+    {
+      "label": "Dogs Trust: sensory enrichment",
+      "url": "https://www.dogstrust.ie/dog-advice/life-with-your-dog/enrichment/sensory-enrichment"
+    },
+    {
+      "label": "Dogs Trust: sniff-ari at home",
+      "url": "https://dogstrust.ie/dog-advice/life-with-your-dog/enrichment/sniffari"
+    },
+    {
+      "label": "Cornell Riney Canine Health Center: canine enrichment ideas",
+      "url": "https://riney.vet.cornell.edu/member-benefits-health-tips/canine-enrichment-ideas"
+    },
+    {
+      "label": "Dogs Trust: enrichment activities for dogs",
+      "url": "https://www.dogstrust.org.uk/dog-advice/life-with-your-dog/enrichment/enrichment-activities-for-dogs"
+    },
+    {
+      "label": "Dogs Trust: signs your dog may be stressed",
+      "url": "https://www.dogstrust.ie/dog-advice/training/understanding-your-dog/signs-your-dog-may-be-stressed"
+    },
+    {
+      "label": "AKC: offer your dog more choices and autonomy",
+      "url": "https://www.akc.org/expert-advice/training/offer-dog-more-choices-and-autonomy/"
+    }
+  ],
+  "review": {
+    "ownerAppeal": 8,
+    "dogEnjoyment": 7,
+    "originality": 8,
+    "adventureFactor": 7,
+    "practicality": 7,
+    "memoryValue": 8,
+    "reviewedOn": "2026-11-26"
+  },
+  "status": "published",
+  "schema": 2,
+  "access": "premium",
+  "achievements": [],
+  "relatedGuides": [],
+  "affiliateProducts": [],
+  "_source": "premium-private",
+  "role": "lifestyle",
+  "teaser": "A letter has come for your dog, and it is full of news from outside.",
+  "showcase": true
+}

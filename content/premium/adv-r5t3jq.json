@@ -1,0 +1,110 @@
+{
+  "schema": 2,
+  "access": "premium",
+  "status": "published",
+  "relatedGuides": [],
+  "affiliateProducts": [],
+  "achievements": [],
+  "reservation": {
+    "needed": false
+  },
+  "sizes": [],
+  "showcase": false,
+  "research": [
+    {
+      "label": "Cornell Riney Canine Health Center: senior dog enrichment",
+      "url": "https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/senior-dog-enrichment"
+    },
+    {
+      "label": "VCA Hospitals: enrichment for pets",
+      "url": "https://www.vcahospitals.com/know-your-pet/enrichment"
+    }
+  ],
+  "id": "adv-r5t3jq",
+  "title": "The Armchair Salvage Club",
+  "role": "signature",
+  "teaser": "The treasure is coming to you. You will not need to stand up.",
+  "clue": "Something precious is out at sea, and the tide only comes in as fast as you let it.",
+  "reveal": "A cloth raft carries treasure slowly across the floor to your seated dog, who may greet it, sniff it and open it at their own pace.",
+  "objective": "Bring a small treasure to your dog's bed on a slow floor-level raft, with no jumping or walking required.",
+  "instructions": [
+    "Settle your dog on a bed or rug on a non-slip floor, a few steps from your chair. You stay seated; the club meets in comfort.",
+    "Make the raft: a smooth dish towel or sheet on a bare floor. Give it a name and a paper flag to wave as it sets sail. Place the treasure on it: a favorite soft toy, with a few pieces of usual food in a fold of cloth if your dog enjoys that.",
+    "From a few meters away, pull the corner of the raft slowly toward you, like a tide coming in. Never pull it away from your dog, and stop the second they show interest.",
+    "Let your dog watch, sniff, walk over or just wait. Take the flag off, let the raft dock at their bed or paws, and nobody has to get up.",
+    "Once it docks, your dog may open the treasure, sniff it, lick the cloth or ignore it. Whatever they choose counts.",
+    "For round two, load a new treasure: a cloth that smells of a favorite place, or a different toy, and sail again."
+  ],
+  "twist": "The adventure travels to your dog: a cloth raft carries the treasure slowly across the floor so your dog can claim it without standing up, jumping or hurrying.",
+  "variations": [
+    "Carpet: use a smooth bath mat as the raft.",
+    "No food: use toys and scent cloths only.",
+    "Very short voyage: start only a meter away.",
+    "Two dogs: sail one raft at a time, with a cloth each."
+  ],
+  "completion": "A treasure has docked and your dog has met it in whatever way they like.",
+  "photoIdea": "The raft docked at the bed, with the treasure and your dog's nose near it.",
+  "memoryPrompt": "How did your dog greet the raft, and which treasure was the favorite?",
+  "minutesMin": 10,
+  "minutesMax": 20,
+  "activeMinutes": 10,
+  "costMin": 0,
+  "costMax": 0,
+  "prep": "none",
+  "supplies": [
+    "Dish towel or smooth sheet",
+    "A favorite soft toy",
+    "A bed or rug",
+    "A paper flag (kept out of reach)"
+  ],
+  "optionalSupplies": ["A few pieces of usual food", "A cloth that smells of a favorite place"],
+  "substitutes": [
+    "No dish towel? A smooth pillowcase.",
+    "No soft toy? Any large soft toy too big to swallow."
+  ],
+  "requires": ["household-items", "toys", "blanket"],
+  "transport": "none",
+  "dietNotes": "Use only a few pieces of the usual diet, or skip food. Ask your vet about your senior dog's diet.",
+  "setting": "indoor",
+  "homes": ["apartment", "house-no-yard", "house-with-yard"],
+  "space": "a-room",
+  "places": ["home"],
+  "seasons": [],
+  "avoidWeather": [],
+  "lifeStages": ["senior", "adult"],
+  "energy": "gentle",
+  "personalities": ["cozy", "gentle", "curious"],
+  "dogMobility": "low",
+  "ownerMobility": "seated",
+  "stepFree": true,
+  "crowd": "none",
+  "strangers": false,
+  "otherDogs": false,
+  "noise": "quiet",
+  "food": true,
+  "water": "none",
+  "safety": [
+    "Keep the pulling slow and never drag it away; stop if your dog tenses or grabs and pulls.",
+    "Keep it on a non-slip floor with no jumping, stairs or sharp turns; take away anything chewed apart.",
+    "Follow your vet's advice on activity, and stop when your dog has had enough."
+  ],
+  "activityTypes": ["play-and-games", "scent-and-discovery", "relaxation"],
+  "collections": ["the-golden-years", "the-gentle-soul", "home-sweet-home", "apartment-adventures"],
+  "stamps": ["first-adventure", "cozy-companion"],
+  "keepsake": {
+    "family": "id-card",
+    "theme": "swim-club-card",
+    "headline": "SALVAGE CLUB MEMBER",
+    "subhead": "Treasure delivered, chair not left",
+    "explainer": "The treasure came to me. I did not even stand up"
+  },
+  "review": {
+    "ownerAppeal": 7,
+    "dogEnjoyment": 7,
+    "originality": 7,
+    "adventureFactor": 7,
+    "practicality": 9,
+    "memoryValue": 7,
+    "reviewedOn": "2026-11-26"
+  }
+}

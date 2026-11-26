@@ -1,0 +1,102 @@
+{
+  "schema": 2,
+  "seasons": [],
+  "avoidWeather": ["rain", "heat", "cold"],
+  "sizes": [],
+  "achievements": [],
+  "relatedGuides": [],
+  "affiliateProducts": [],
+  "reservation": {
+    "needed": false
+  },
+  "access": "premium",
+  "status": "published",
+  "food": false,
+  "water": "none",
+  "crowd": "some",
+  "strangers": true,
+  "otherDogs": true,
+  "noise": "some",
+  "stepFree": true,
+  "optionalSupplies": ["Phone for photos", "Dog stroller or wagon if your dog already enjoys it"],
+  "substitutes": ["A cup or a collapsible bowl for water", "A folded coat to sit on"],
+  "id": "adv-5g9x4p",
+  "title": "The Gentle Explorer's Tour",
+  "clue": "A route measured in benches and sniffs, never in miles.",
+  "reveal": "Plan a stroll that treats rest as part of the route. You choose a flat, easy spot with places to sit and plan the stops first. Your dog decides how far to go, and every stop is a destination.",
+  "objective": "Take a bench-to-bench stroll at your dog's pace, with rest stops planned first and stopping whenever your dog has had enough.",
+  "instructions": [
+    "Pick a flat, smooth spot with places to sit, such as a paved park path, a quiet yard or a level promenade, within easy reach. Choose a cool part of the day.",
+    "Before you set off, pick two or three rest points, such as benches or a shady patch, with only short, gentle stretches between them.",
+    "Pack water and a bowl, a leash and a harness your dog already wears, and a towel or blanket to sit on.",
+    "Walk to the first stop at your dog's pace. Let them sniff as much as they like, since this is a sniffing tour, not exercise.",
+    "At each rest point, sit with your dog, offer water and watch the world go by. Stay as long as they like.",
+    "Move on to the next stop only if your dog wants to. If they sit, slow or turn for home, that is the signal that this tour is over.",
+    "Head home by the same easy route, then give your dog a quiet rest and water. Say the count of stops aloud ('two benches today') instead of counting steps."
+  ],
+  "twist": "The route is measured in 'stops', not distance: rest is the plan, so you can go home proud after just one bench.",
+  "variations": [
+    "Single-stop tour: go to one bench and sit for 15 minutes.",
+    "Wheels version: use a dog stroller or wagon only if your dog already enjoys it, to reach the bench.",
+    "Seated-owner version: choose a spot with a bench and a fully level path near where you can park. If you drive, restrain your dog in the car.",
+    "Yard version: make the 'tour' a series of rest points around your own yard."
+  ],
+  "completion": "You have visited at least one planned stop and your dog has had as much sniffing and rest as they wanted.",
+  "photoIdea": "Your dog resting on or beside a bench in natural light, relaxed and unposed.",
+  "memoryPrompt": "Which stop was your dog's favorite, and what held their attention there?",
+  "minutesMin": 15,
+  "minutesMax": 45,
+  "activeMinutes": 15,
+  "costMin": 0,
+  "costMax": 0,
+  "prep": "light",
+  "supplies": ["Leash and harness", "Water and a bowl", "Towel or blanket to sit on"],
+  "requires": ["leash-and-harness", "blanket"],
+  "transport": "walkable",
+  "setting": "outdoor",
+  "homes": ["apartment", "house-no-yard", "house-with-yard"],
+  "space": "none",
+  "places": ["city", "countryside", "home"],
+  "lifeStages": ["senior"],
+  "energy": "gentle",
+  "personalities": ["gentle", "curious", "cozy"],
+  "dogMobility": "low",
+  "ownerMobility": "short-walk",
+  "safety": [
+    "Choose cool times and level ground with no steps, bring water, and skip heat, cold or rain.",
+    "Senior dogs push past their limits: stop for them when they slow, lag or sit down.",
+    "Keep your dog on a leash, follow local rules, and ask your vet what activity suits their age."
+  ],
+  "activityTypes": ["outdoor-exploration", "relaxation"],
+  "collections": ["the-golden-years", "the-great-outdoors", "the-curious-explorer"],
+  "stamps": ["first-adventure", "sunshine-seeker"],
+  "keepsake": {
+    "family": "travel-postcard",
+    "theme": "bench-postcard",
+    "headline": "GENTLE EXPLORER'S TOUR",
+    "subhead": "Benches, breezes and sniffs",
+    "explainer": "A tour measured in benches, not miles"
+  },
+  "research": [
+    {
+      "label": "Cornell Riney Canine Health Center: senior dog enrichment",
+      "url": "https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/senior-dog-enrichment"
+    },
+    {
+      "label": "Dogs Trust: enrichment activities for dogs",
+      "url": "https://www.dogstrust.org.uk/dog-advice/life-with-your-dog/enrichment/enrichment-activities-for-dogs"
+    }
+  ],
+  "review": {
+    "ownerAppeal": 8,
+    "dogEnjoyment": 8,
+    "originality": 6,
+    "adventureFactor": 6,
+    "practicality": 9,
+    "memoryValue": 8,
+    "reviewedOn": "2026-11-26"
+  },
+  "role": "everyday",
+  "teaser": "A leisurely tour of the neighborhood with plenty of benches and no hurry whatsoever.",
+  "showcase": true
+}

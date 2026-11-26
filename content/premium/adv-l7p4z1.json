@@ -1,0 +1,101 @@
+{
+  "schema": 2,
+  "access": "premium",
+  "status": "published",
+  "variations": [
+    "Missing Glove: tuck one of your worn gloves under a cushion across the room, and let your dog find it.",
+    "Easier: one coat only, with the pocket flap held open and the pouch just visible.",
+    "Seated or low-mobility: drape the coat over your own chair arm and stay in the chair.",
+    "Bigger: a three-coat line-up with two decoys, run over two evenings."
+  ],
+  "supplies": [
+    "Two coats, one worn by you and one freshly washed",
+    "A small cloth pouch",
+    "A little of today's regular food or a favorite toy"
+  ],
+  "optionalSupplies": ["A phone for the after photo"],
+  "substitutes": [
+    "No pouch? Put the loot loose in the pocket instead.",
+    "No second coat? Use a scarf or sweater."
+  ],
+  "requires": ["household-items", "treats"],
+  "transport": "none",
+  "reservation": {
+    "needed": false
+  },
+  "seasons": [],
+  "avoidWeather": [],
+  "sizes": [],
+  "relatedGuides": [],
+  "affiliateProducts": [],
+  "achievements": [],
+  "research": [],
+  "stamps": ["first-adventure", "playtime-champion"],
+  "id": "adv-l7p4z1",
+  "title": "The Pocket Heist",
+  "clue": "Someone is napping on the sofa, and the loot is in their coat.",
+  "reveal": "You play the sleeping mark while your dog finds the loot in your coat pocket. A worn coat, a sealed pouch, a second decoy coat and a nose that knows exactly which is yours.",
+  "objective": "Hide a sealed pouch of loot in your own worn coat beside a decoy coat, and let your dog find the right pocket.",
+  "instructions": [
+    "Make the loot: a few pieces of today's ration in a small cloth pouch knotted shut, or a favorite toy. Check the pocket is empty of everything else.",
+    "Wear your coat for a few minutes first so it carries your scent. Hang it over a chair beside a decoy coat, a freshly washed one you have not worn, with the loot in your coat's pocket.",
+    "Sit or lie on the sofa and play the sleeping mark, eyes soft, with a slow breath. Your dog is free to come and go.",
+    "Let your dog investigate. If they sniff, nose or paw at the right coat, that is the heist. Do not point, peek or help.",
+    "When they have the pouch, let them take it to wherever they like. Wake slowly with a quiet stretch and a soft word, rather than a gasp.",
+    "Open the pouch for them if they want, then take the cloth away: the loot is theirs, not the pouch. Check the pocket is empty and put the coats away."
+  ],
+  "twist": "You are the unwitting mark: your dog identifies your coat among two, using nothing but scent.",
+  "completion": "Your dog has had a go at the coat and the loot is found or the dog has walked off, and either counts.",
+  "photoIdea": "A relaxed photo of your dog with the opened pouch beside the coat, taken from the sofa.",
+  "memoryPrompt": "Which coat did your dog choose, and how long did the mark stay asleep?",
+  "minutesMin": 5,
+  "minutesMax": 10,
+  "activeMinutes": 5,
+  "costMin": 0,
+  "costMax": 0,
+  "prep": "light",
+  "setting": "indoor",
+  "homes": ["apartment", "house-no-yard", "house-with-yard"],
+  "space": "small-indoor",
+  "places": ["home"],
+  "lifeStages": ["puppy", "adult", "senior"],
+  "energy": "gentle",
+  "personalities": ["playful", "curious", "cozy"],
+  "dogMobility": "low",
+  "ownerMobility": "seated",
+  "stepFree": true,
+  "crowd": "none",
+  "strangers": false,
+  "otherDogs": false,
+  "noise": "quiet",
+  "food": true,
+  "dietNotes": "Use part of today's normal ration and count it in. Ask your vet if your dog has dietary restrictions, allergies or health conditions.",
+  "water": "none",
+  "safety": [
+    "Once the pouch is open, take the cloth away and never snatch the loot back or chase if they carry it off.",
+    "Run it one dog at a time, and skip the dramatic gasp if yours is easily startled.",
+    "Use only part of today's normal food, never chocolate, grapes, raisins or xylitol."
+  ],
+  "activityTypes": ["scent-and-discovery", "play-and-games", "problem-solving"],
+  "collections": ["the-playful-pup", "five-minute-wonders", "rainy-day-club", "home-sweet-home"],
+  "keepsake": {
+    "family": "trading-card",
+    "theme": "mystery-card",
+    "headline": "MASTER OF THE POCKET",
+    "subhead": "Case closed by one very good nose",
+    "explainer": "Mission: find the loot in my coat pocket"
+  },
+  "review": {
+    "ownerAppeal": 8,
+    "dogEnjoyment": 8,
+    "originality": 8,
+    "adventureFactor": 7,
+    "practicality": 9,
+    "memoryValue": 7,
+    "reviewedOn": "2026-11-26"
+  },
+  "role": "signature",
+  "teaser": "Someone has been in your pockets. Fortunately, it is the best kind of crime.",
+  "previewTitle": "The Case of the Curious Coat",
+  "showcase": true
+}

@@ -1,0 +1,107 @@
+{
+  "schema": 2,
+  "access": "premium",
+  "status": "published",
+  "affiliateProducts": [],
+  "relatedGuides": [],
+  "achievements": [],
+  "household": ["family"],
+  "reservation": {
+    "needed": false
+  },
+  "lifeStages": ["adult", "senior"],
+  "crowd": "none",
+  "strangers": false,
+  "otherDogs": false,
+  "noise": "quiet",
+  "dogMobility": "moderate",
+  "stepFree": false,
+  "water": "none",
+  "sizes": [],
+  "avoidWeather": ["rain", "heat", "cold"],
+  "seasons": ["spring", "summer", "autumn"],
+  "id": "adv-q2w8n4",
+  "title": "The Field Day",
+  "role": "lifestyle",
+  "teaser": "Five tryouts, one gold medal, and the dog does the judging.",
+  "clue": "Nobody is racing anybody. The gold goes to whatever your dog loves best.",
+  "reveal": "Run five one-minute auditions in your fenced yard and watch which one your dog leans into. The winner gets a drawn medal and a victory encore. Every dog medals in something.",
+  "objective": "Offer five gentle one-minute events in your yard, tally your dog's own enthusiasm, and award the medal to their favorite.",
+  "instructions": [
+    "Use your fenced yard. Check it is not hot (see the safety lines), the grass is dry and grippy, and the ground is clear of glass and sharp things.",
+    "Write five event cards: Sniff Scatter, Soft Roll, Towel Find, Flag Stroll and Free Browse. Put a bowl of water and a shade spot (a blanket or shady corner) as the rest stop, and draw a tally sheet with three columns: 'leaned in', 'joined briefly', 'passed'.",
+    "Sniff Scatter: scatter five or six pieces of the day's ration across a few square feet of your own lawn (or press them into a snuffle mat). Soft Roll: roll a soft ball bigger than your dog's mouth along the ground about five steps. Towel Find: put a toy under a towel in plain view. Flag Stroll: walk a slow line past four towels laid on the grass. Free Browse: let your dog roam the yard.",
+    "Run one event at a time for a minute or two, then rest and offer water. Tick the column that matches your dog's reaction. If they are not into one, say nothing and move on: passing is also an answer.",
+    "Add up the ticks. The event with the most 'leaned in' takes gold, the next silver. Draw a medal and announce the verdict.",
+    "Hold a one-minute victory encore of the gold event, then finish with water and rest in the shade."
+  ],
+  "twist": "Every event is an audition, not a contest: your dog's own enthusiasm picks the gold, so a sniffer, a roller and a loafer all take home a medal.",
+  "variations": [
+    "For a dog who already loves discs: swap Soft Roll for a soft, flexible disc rolled along the ground like a wheel, with no air throws and stop if they leap.",
+    "For a seated owner: do the five events in a small area and stay on a chair.",
+    "For a senior or slower dog: shorten each event to thirty seconds and add a longer rest after each.",
+    "For a food-free day: use toys for Sniff Scatter and Towel Find."
+  ],
+  "completion": "Your dog has tried at least three events and a gold medal has been awarded.",
+  "photoIdea": "Photograph your dog with the paper medal on the grass, relaxed, from a low angle.",
+  "memoryPrompt": "Which event took gold, and which one did your dog ignore?",
+  "minutesMin": 20,
+  "minutesMax": 40,
+  "activeMinutes": 12,
+  "costMin": 0,
+  "costMax": 5,
+  "prep": "light",
+  "supplies": ["A soft ball", "A toy", "Four towels", "Paper and a pen", "Water and bowl"],
+  "optionalSupplies": ["Today's ration for Sniff Scatter", "A snuffle mat", "A soft flexible disc"],
+  "substitutes": [],
+  "requires": ["toys", "paper-and-pens", "leash-and-harness", "towels"],
+  "transport": "none",
+  "setting": "outdoor",
+  "homes": ["house-with-yard"],
+  "space": "yard",
+  "places": ["home"],
+  "energy": "moderate",
+  "personalities": ["playful", "adventurous"],
+  "ownerMobility": "short-walk",
+  "food": true,
+  "dietNotes": "Sniff Scatter uses a few pieces counted from the day's ration. Ask your vet about your dog's diet. For a food-free version use a toy instead.",
+  "safety": [
+    "Skip hot days and hot ground: check with the back of your hand for five seconds, and always have shade and water.",
+    "Keep every event gentle: no jumping, sharp turns or chasing at speed, and rest between them.",
+    "Use only a fully fenced yard, stay with your dog the whole time, and run one dog at a time."
+  ],
+  "activityTypes": ["play-and-games", "outdoor-exploration"],
+  "collections": ["the-playful-pup", "the-great-outdoors", "seasons-together", "our-story"],
+  "stamps": ["first-adventure", "playtime-champion", "sunshine-seeker"],
+  "keepsake": {
+    "family": "trading-card",
+    "theme": "field-day-medal-card",
+    "headline": "FIELD DAY GOLD",
+    "subhead": "Chosen by the dog's own enthusiasm",
+    "explainer": "Five tryouts. The gold was decided by my nose"
+  },
+  "research": [
+    {
+      "label": "Dogs Trust: enrichment activities for dogs",
+      "url": "https://www.dogstrust.org.uk/dog-advice/life-with-your-dog/enrichment/enrichment-activities-for-dogs"
+    },
+    {
+      "label": "VCA Animal Hospitals: enrichment for pets",
+      "url": "https://vcahospitals.com/know-your-pet/enrichment"
+    },
+    {
+      "label": "RSPCA: heatstroke in dogs",
+      "url": "https://www.rspca.org.uk/adviceandwelfare/pets/dogs/health/heatstroke"
+    }
+  ],
+  "review": {
+    "ownerAppeal": 8,
+    "dogEnjoyment": 8,
+    "originality": 7,
+    "adventureFactor": 7,
+    "practicality": 7,
+    "memoryValue": 8,
+    "reviewedOn": "2026-11-26"
+  },
+  "showcase": true
+}

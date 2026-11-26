@@ -1,0 +1,123 @@
+{
+  "schema": 2,
+  "access": "premium",
+  "status": "published",
+  "variations": [
+    "Shorter or slower: reverse just one block and back with one sniff stop. For a senior dog or a warm day take the flattest route in shade with a bench at the halfway point, and ask your vet which routes suit an older or stiff dog.",
+    "Seated or yard version: do the reverse along a hallway, yard or the nearest bench and take both photos from a chair; 'backwards' is simply sitting at the other end of the bench.",
+    "Nervous dog or puppy: go at the quietest hour on a street with room to move away, or cross to the opposite sidewalk for the whole walk. For a puppy before full vaccination, keep to your yard or doorstep, not streets, and ask your vet where they can walk. A quiet public-holiday dawn can suit a shy dog, but scan for glass and dropped food first, and skip it if loose dogs or people are about.",
+    "Bigger version: the same rules on a path through a nearby wood, park or riverside, on foot or by car. Check dog and leash rules and closures, keep away from edges, do not let your dog drink river water, restrain them in the car."
+  ],
+  "optionalSupplies": ["Water and a bowl"],
+  "substitutes": ["Your yard or a hallway instead of a street loop"],
+  "reservation": {
+    "needed": false,
+    "note": "The core needs nothing booked. For the bigger version, check the path's dog and leash rules and any closures."
+  },
+  "seasons": [],
+  "avoidWeather": ["heat", "cold"],
+  "sizes": [],
+  "achievements": [],
+  "relatedGuides": [],
+  "affiliateProducts": [],
+  "transport": "walkable",
+  "homes": ["apartment", "house-no-yard", "house-with-yard"],
+  "stepFree": true,
+  "crowd": "some",
+  "strangers": true,
+  "otherDogs": true,
+  "food": false,
+  "water": "none",
+  "lifeStages": ["puppy", "adult", "senior"],
+  "dogMobility": "moderate",
+  "id": "adv-s2r6bq",
+  "title": "The Same Street, Backwards",
+  "clue": "You know this walk by heart, until you walk it the other way round.",
+  "reveal": "Walk the loop you always do, but in reverse. The smells arrive in a different order and the street looks like a different place. A photo at the same spot, in both directions, becomes a then-and-now pair.",
+  "objective": "Walk a familiar loop in reverse, at a calm odd hour if you can, give one hurried-past spot all the time your dog wants and take a matching photo from each direction.",
+  "instructions": [
+    "The day before, from memory, name three spots on your usual loop: where your dog always stops, one place you always hurry past, and one place your dog tries to go that you never allow. Choose a fixed anchor for photos (a post, bench or gate) and leave a note by the door: 'Tomorrow: backwards.'",
+    "On your usual walk, go the usual way. At the anchor take one photo at your dog's eye level, then carry on.",
+    "On the reverse day pick a calm hour in daylight or on a lit street, away from the school run, ideally near the usual time. Do the heat or cold check, then at the door turn the other way and pause for twenty seconds to watch your dog's nose. Your dog's exit: if they sit, lie down or turn for home, follow.",
+    "Walk the loop in reverse on a loose leash at your dog's pace, with no destination and no timer. Plan three sniff stops with no goal and never cut one short. If you would rather go out and back, the spot of your dog's longest, most absorbed sniff can be the Turnaround, and you walk the same street home.",
+    "At the spot you always hurry past, give it all the time your dog wants: five seconds or five minutes. If your dog heads for the place you never let them go and it is safe, let them look from the leash's length.",
+    "At the anchor take the second photo from the other side, again at eye level, without calling or posing your dog. Let them wander in.",
+    "Finish with water and a rest; a nap is normal. Look back along the street the way you did not come for one quiet minute, then knock once on your own door and let your dog go in first if they like. Put the two photos side by side."
+  ],
+  "twist": "Nothing changes but direction and hour: the same street with its smells in the other order, one hurried-past spot that finally gets its full stop, and two photos from one anchor.",
+  "completion": "You have walked the loop in reverse, your dog has had their sniff stops, and you have two photos from the same spot.",
+  "photoIdea": "Your dog beside the anchor spot, at eye level and from the same distance, once each way.",
+  "memoryPrompt": "What did you notice walking back that you had missed walking out?",
+  "minutesMin": 15,
+  "minutesMax": 40,
+  "activeMinutes": 15,
+  "costMin": 0,
+  "costMax": 0,
+  "prep": "none",
+  "supplies": ["A leash", "A phone camera"],
+  "requires": ["leash-and-harness", "camera-phone"],
+  "setting": "outdoor",
+  "space": "none",
+  "places": ["home", "city"],
+  "energy": "gentle",
+  "ownerMobility": "short-walk",
+  "noise": "some",
+  "personalities": ["curious", "adventurous"],
+  "safety": [
+    "Sidewalk too hot for the back of your hand is too hot for paws; head home if your dog pants hard or shivers.",
+    "Follow local leash rules, keep your dog away from traffic and anything edible, and never plan a meeting.",
+    "Puppies: before full vaccination keep to your yard or doorstep, and ask your vet where they can walk."
+  ],
+  "activityTypes": ["outdoor-exploration", "scent-and-discovery", "photography"],
+  "collections": ["five-minute-wonders", "the-curious-explorer", "city-explorers", "our-story"],
+  "stamps": ["first-adventure", "city-explorer", "memory-maker"],
+  "keepsake": {
+    "family": "collage",
+    "theme": "stamp-montage",
+    "headline": "THE SAME STREET, BACKWARDS",
+    "subhead": "Same spot, opposite directions",
+    "explainer": "Same street, other direction, new smells"
+  },
+  "research": [
+    {
+      "label": "Cornell Riney Canine Health Center: canine enrichment ideas",
+      "url": "https://riney.vet.cornell.edu/member-benefits-health-tips/canine-enrichment-ideas"
+    },
+    {
+      "label": "Dogs Trust: sniff-ari at home",
+      "url": "https://dogstrust.ie/dog-advice/life-with-your-dog/enrichment/sniffari"
+    },
+    {
+      "label": "Dogs Trust: sensory enrichment",
+      "url": "https://www.dogstrust.ie/dog-advice/life-with-your-dog/enrichment/sensory-enrichment"
+    },
+    {
+      "label": "Cornell Riney Canine Health Center: summer heat safety tips for dogs",
+      "url": "https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/health-info/summer-heat-safety-tips-dogs"
+    },
+    {
+      "label": "Cornell Riney Canine Health Center: senior dog enrichment",
+      "url": "https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/senior-dog-enrichment"
+    },
+    {
+      "label": "Dogtipper: Plan a Sniffari",
+      "url": "https://www.dogtipper.com/sniffari/"
+    },
+    {
+      "label": "PetMD: the importance of scent walks for dogs",
+      "url": "https://petmd.com/dog/behavior/importance-scent-walks-dogs"
+    }
+  ],
+  "review": {
+    "ownerAppeal": 8,
+    "dogEnjoyment": 7,
+    "originality": 7,
+    "adventureFactor": 7,
+    "practicality": 9,
+    "memoryValue": 8,
+    "reviewedOn": "2026-11-26"
+  },
+  "role": "everyday",
+  "teaser": "The street you know best, seen from a direction you have never tried.",
+  "showcase": true
+}

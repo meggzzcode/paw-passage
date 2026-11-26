@@ -1,0 +1,102 @@
+{
+  "schema": 2,
+  "access": "premium",
+  "status": "published",
+  "relatedGuides": [],
+  "affiliateProducts": [],
+  "research": [],
+  "achievements": [],
+  "optionalSupplies": ["A few pieces of their usual dry food"],
+  "substitutes": [
+    "No screen? Drape a blanket over a chair.",
+    "No bed? A folded duvet in a corner."
+  ],
+  "seasons": [],
+  "sizes": [],
+  "reservation": {
+    "needed": false
+  },
+  "id": "adv-i8yy6z",
+  "title": "Base Camp",
+  "clue": "Every great climb starts with a long stay at the bottom, and no one is in a hurry.",
+  "reveal": "A bonus for the first days and weeks with a new dog, adopted or a puppy. Climbers spend weeks acclimating before they go up; your dog gets the same: a cozy camp, a home that opens one door at a time and no timetable.",
+  "objective": "Give a new-to-home dog a safe base, open the home one room at a time at their pace, and celebrate whichever camp they choose to rest in.",
+  "instructions": [
+    "Build Base Camp before the dog explores: a bed or blanket in a quiet corner, fresh water, and a low screen or a draped chair so they can retreat. Close doors to the other rooms and keep visitors, children and other pets out of the camp room for now.",
+    "Camp One is the room itself. Sit nearby, low and quiet, and be a landmark: read, hum or just sit. Make no calls or approaches. The dog may sleep, watch or wander as they like.",
+    "When the dog looks relaxed, open Camp Two: one more door, such as the next room or the yard door. Stand at the threshold and narrate in a whispered 'real-estate agent' voice ('lovely light, excellent baseboards').",
+    "Leave a small welcome pack just inside: a cloth that smells of home, or a few pieces from their usual ration. Then step back. The dog may enter, stand, sniff or leave; nothing is asked.",
+    "If your dog does not come, leave the door open, close the viewing and try it tomorrow, or never. Staying at base camp is a perfect result.",
+    "When your dog chooses to rest in a room beyond Camp One, say nothing and wait. Later, when they have moved away, put their blanket there as the Summit Blanket.",
+    "Close the day by returning to Base Camp, putting out water and sitting quietly nearby. Add the next camp only when they seem ready, or not at all."
+  ],
+  "twist": "The expedition runs on the dog's pace and veto: no timetable, no required summit, and base camp is allowed to be the whole trip.",
+  "variations": [
+    "Open House day: show only one room per session in the whispered-listing voice, with a few pieces of ration scattered in each room.",
+    "Small apartment: the camps are corners, so Camp Two is the next corner and the window.",
+    "Puppy: keep sessions very short, plan lots of rest, and ask your vet before any outdoor camps or other dogs.",
+    "Yard camp: only once the dog is relaxed indoors, and only on a leash in a fully secure yard."
+  ],
+  "completion": "The dog has had a safe base and the chance to explore beyond it. It counts even if they stay at Base Camp; there is no summit required, and no new dog needs it all done in a week.",
+  "photoIdea": "The empty camp or a quiet view of the dog at rest from a distance. Skip posed shots.",
+  "memoryPrompt": "Which camp did your dog reach, and what was the first thing they did when they got there?",
+  "minutesMin": 10,
+  "minutesMax": 30,
+  "activeMinutes": 10,
+  "costMin": 0,
+  "costMax": 0,
+  "prep": "light",
+  "supplies": [
+    "Bed or blanket",
+    "Water bowl",
+    "Low screen or draped chair",
+    "A cloth that smells of home"
+  ],
+  "requires": ["blanket", "household-items"],
+  "transport": "none",
+  "dietNotes": "Only a few pieces from the dog's usual ration, or skip food and use scent cloths; check any diet restrictions with your vet or rescue.",
+  "setting": "indoor",
+  "homes": ["apartment", "house-no-yard", "house-with-yard"],
+  "space": "a-room",
+  "places": ["home"],
+  "avoidWeather": [],
+  "lifeStages": ["puppy", "adult", "senior"],
+  "energy": "gentle",
+  "personalities": ["gentle", "cozy", "curious"],
+  "dogMobility": "low",
+  "ownerMobility": "minimal-walking",
+  "stepFree": true,
+  "crowd": "none",
+  "strangers": false,
+  "otherDogs": false,
+  "noise": "quiet",
+  "food": true,
+  "water": "none",
+  "safety": [
+    "Never pull or coax a dog into a room; some dogs need much longer than a rough timetable suggests.",
+    "Keep doors, windows and gates secure in the first weeks, and update ID and microchip details.",
+    "Puppies: ask your vet before outdoor camps or other dogs."
+  ],
+  "activityTypes": ["relaxation", "scent-and-discovery", "memory-making"],
+  "collections": ["rescue-and-new-beginnings", "puppys-first-chapter", "home-sweet-home"],
+  "stamps": ["first-adventure", "cozy-companion", "memory-maker"],
+  "keepsake": {
+    "family": "id-card",
+    "theme": "ranger-card",
+    "headline": "BASE CAMP ESTABLISHED",
+    "subhead": "Summit optional, pace is theirs",
+    "explainer": "Made it to base camp. Stayed there on purpose"
+  },
+  "review": {
+    "ownerAppeal": 8,
+    "dogEnjoyment": 8,
+    "originality": 8,
+    "adventureFactor": 7,
+    "practicality": 8,
+    "memoryValue": 8,
+    "reviewedOn": "2026-11-26"
+  },
+  "role": "everyday",
+  "teaser": "A gentle welcome for the newest member of the household.",
+  "showcase": true
+}

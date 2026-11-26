@@ -1,0 +1,108 @@
+{
+  "schema": 2,
+  "seasons": [],
+  "avoidWeather": [],
+  "sizes": [],
+  "household": [],
+  "achievements": [],
+  "relatedGuides": [],
+  "affiliateProducts": [],
+  "access": "premium",
+  "reservation": {
+    "needed": false
+  },
+  "homes": ["apartment", "house-no-yard", "house-with-yard"],
+  "crowd": "none",
+  "strangers": false,
+  "otherDogs": false,
+  "noise": "quiet",
+  "water": "none",
+  "stepFree": true,
+  "prep": "light",
+  "costMin": 0,
+  "costMax": 0,
+  "transport": "none",
+  "food": true,
+  "stamps": ["first-adventure", "memory-maker"],
+  "setting": "indoor",
+  "places": ["home"],
+  "space": "a-room",
+  "dogMobility": "low",
+  "ownerMobility": "seated",
+  "personalities": ["curious", "gentle"],
+  "id": "adv-6c8k3d",
+  "title": "The Ice Cream Truck",
+  "status": "published",
+  "clue": "A tiny bell rings somewhere in the house, and it is not for you.",
+  "reveal": "You are the ice cream truck, and your puppy is the whole neighborhood. Ring one soft bell, park the truck somewhere new, and serve a scoop to whoever turns up first.",
+  "objective": "Run a pretend ice cream truck that parks in a different spot each round and serves two flavors your puppy already eats.",
+  "instructions": [
+    "Choose two 'flavors' from foods your puppy already eats, such as their usual wet food and kibble softened into a paste. Put a small spoonful of each on two small saucers.",
+    "Pick a bell with a soft tone: a bike bell or a spoon tapped once on a mug. Keep the sound gentle and short.",
+    "Park the truck: carry the saucers to a spot out of sight, such as the next room or a corner of another room. Ring the bell once.",
+    "Wait. Do not call. When your puppy arrives, set both saucers down a step apart and let them choose which flavor they try first.",
+    "Note the pick on a sticky note menu ('Chicken wins'). Let them finish, then pick up the saucers.",
+    "Drive to a new stop: a different corner, a different room, a different surface, all indoors. Ring once and serve again. Three stops is a full route.",
+    "Close the truck when your puppy wanders off. Wash the saucers and call the day done."
+  ],
+  "twist": "A single bell ring means the truck has parked somewhere new, and your puppy tracks it down and orders by picking a flavor.",
+  "variations": [
+    "No-bell version: sit down at the new stop and wait for your puppy to find you.",
+    "Lick mat truck: serve one flavor on a lick mat at a stop instead of two saucers.",
+    "One-room truck: park at three spots inside a single room.",
+    "Quiet version: tap the spoon on a bowl softly, or skip the bell and use your puppy's name once."
+  ],
+  "completion": "It counts after one stop where your puppy finds the truck and picks a flavor. Whenever they lose interest, the truck closes.",
+  "photoIdea": "Your puppy arriving at the truck, nose first toward the saucers. Natural light, no posing.",
+  "memoryPrompt": "Where did the truck park, and which flavor won?",
+  "minutesMin": 10,
+  "minutesMax": 20,
+  "activeMinutes": 10,
+  "supplies": [
+    "Two small saucers",
+    "A soft bell or spoon and mug",
+    "Two foods your puppy already eats"
+  ],
+  "optionalSupplies": ["Sticky notes", "Paper for a menu"],
+  "substitutes": ["No bell? Tap a spoon on a mug once, softly."],
+  "requires": ["household-items", "treats"],
+  "lifeStages": ["puppy"],
+  "energy": "gentle",
+  "dietNotes": "Count the scoops out of today's food and use only foods your puppy already eats. Ask your vet about diet and portions.",
+  "safety": [
+    "Serve only foods your puppy already eats, taken from the day's ration, and pick up the saucers when they are finished.",
+    "Keep the bell soft and brief. If the sound worries your puppy, skip it and call their name softly.",
+    "Serve one puppy at a time if you have other pets, and stay close while saucers are down."
+  ],
+  "activityTypes": ["food-and-treats", "play-and-games"],
+  "collections": ["puppys-first-chapter", "home-sweet-home", "taste-and-treat"],
+  "keepsake": {
+    "family": "travel-postcard",
+    "theme": "ice-cream-shop",
+    "headline": "THE ICE CREAM TRUCK",
+    "subhead": "Today's flavor: whichever was picked first",
+    "explainer": "The truck parked twice, and I found it both times"
+  },
+  "research": [
+    {
+      "label": "Dogs Trust: enrichment activities for dogs",
+      "url": "https://www.dogstrust.org.uk/dog-advice/life-with-your-dog/enrichment/enrichment-activities-for-dogs"
+    },
+    {
+      "label": "VCA Animal Hospitals: enrichment for dogs",
+      "url": "https://www.vcahospitals.com/know-your-pet/enrichment"
+    }
+  ],
+  "review": {
+    "ownerAppeal": 8,
+    "dogEnjoyment": 7,
+    "originality": 7,
+    "adventureFactor": 7,
+    "practicality": 8,
+    "memoryValue": 7,
+    "reviewedOn": "2026-11-26"
+  },
+  "role": "everyday",
+  "teaser": "Listen closely. That jingle means something delicious has parked nearby.",
+  "showcase": false
+}

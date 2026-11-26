@@ -1,0 +1,104 @@
+{
+  "schema": 2,
+  "optionalSupplies": ["A clipboard"],
+  "substitutes": ["No coin? Use a button, with one side marked, or a bottle cap."],
+  "reservation": {
+    "needed": false
+  },
+  "seasons": [],
+  "avoidWeather": ["heat", "cold"],
+  "sizes": [],
+  "homes": ["apartment", "house-no-yard", "house-with-yard"],
+  "lifeStages": ["adult", "senior"],
+  "stepFree": true,
+  "access": "premium",
+  "status": "published",
+  "achievements": [],
+  "relatedGuides": [],
+  "affiliateProducts": [],
+  "research": [
+    {
+      "label": "PDSA: children and dogs",
+      "url": "https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/puppies-dogs/children-and-dogs"
+    },
+    {
+      "label": "RSPCA: children and dogs",
+      "url": "https://www.rspca.org.uk/adviceandwelfare/pets/dogs/company/children"
+    }
+  ],
+  "water": "none",
+  "transport": "walkable",
+  "strangers": true,
+  "otherDogs": true,
+  "crowd": "some",
+  "noise": "some",
+  "food": false,
+  "household": ["family"],
+  "dogMobility": "moderate",
+  "id": "adv-ai4eir",
+  "title": "The Veto Walk",
+  "clue": "A coin picks every turn, and one member of the household has the power to overrule it.",
+  "reveal": "A kid flips a coin at each corner to pick left or right, an adult holds the leash, and the dog holds a veto: if the dog stops, sits or turns the other way, the coin is overruled and the scoreboard says so.",
+  "objective": "Take a 15 to 20 minute walk where a coin picks each turn and your dog can overrule it, keeping a running coin versus dog score.",
+  "instructions": [
+    "At the door, set the rules in one minute. The adult holds the leash the whole walk. Kids walk beside the adult and never hold the leash, call the dog over, hug it or run ahead. Roles: Coin Flipper, Scorekeeper, Announcer (one kid can swap all three).",
+    "The adult chooses the loop and decides in advance which corners count as flip corners: quiet ones with no road crossings. Heads is left, tails is right (or straight on).",
+    "At a flip corner, everyone stops. The Flipper tosses, the Announcer says the result in an indoor voice: 'The coin says left.' The adult waits three seconds and asks the dog: 'Veto?'",
+    "The veto: if the dog sits, stops, turns or leans another way, the coin is overruled and the Announcer says 'Vetoed.' The dog's direction wins if it is safe. The Scorekeeper marks a tally for the coin or the dog.",
+    "Sniff stops are dog recess, outside the game. Walk on when the dog is done. If the dog wants to go home, that is a veto of the whole trip and counts as the winning point.",
+    "After about eight flips, or when time is up, the adult picks the way home. The dog gets water and a rest.",
+    "Inside, the Scorekeeper draws the route on paper, marking each corner C or D for who won it. The Announcer reads the final score and the ruling out loud, once."
+  ],
+  "twist": "The coin is never the one deciding. Every overruled flip is the dog's, so the scoreboard is really a count of how often the dog had a better idea.",
+  "variations": [
+    "Indoor version: the coin picks which room to visit, the dog still has the veto, ten minutes in the house.",
+    "Garden or building-hall version: the coin picks which of two spots to stand in, for dogs who do not walk far.",
+    "One kid: one child flips and keeps score, the adult announces.",
+    "No coin: an adult picks left or right silently at each corner, and the kid announces the dog's veto."
+  ],
+  "completion": "Counts when you have taken a walk with at least a few flips and the dog has overruled, or not, and the score has been read out.",
+  "photoIdea": "The hand-drawn route map with C and D marked at the corners, held up with the leash or the coin on top of it.",
+  "memoryPrompt": "Who won, the coin or the dog, and which veto was the funniest?",
+  "minutesMin": 15,
+  "minutesMax": 25,
+  "activeMinutes": 18,
+  "costMin": 0,
+  "costMax": 0,
+  "prep": "none",
+  "supplies": ["A coin", "Paper and pen", "A leash"],
+  "requires": ["leash-and-harness", "paper-and-pens"],
+  "setting": "outdoor",
+  "space": "none",
+  "places": ["city", "home"],
+  "energy": "moderate",
+  "personalities": ["curious", "adventurous", "playful"],
+  "ownerMobility": "short-walk",
+  "safety": [
+    "An adult holds the leash; kids never hold it, chase or crowd the dog. The dog's veto never overrides safety.",
+    "Skip flip corners near roads, other dogs or glass, and never ask a dog to go toward something it avoids.",
+    "Check the sidewalk for heat or ice with the back of your hand, and keep to local leash rules."
+  ],
+  "activityTypes": ["outdoor-exploration", "play-and-games"],
+  "collections": ["the-curious-explorer", "city-explorers", "five-minute-wonders"],
+  "stamps": ["first-adventure", "trail-blazer"],
+  "keepsake": {
+    "family": "travel-postcard",
+    "theme": "street-art",
+    "headline": "OVERRULED BY THE DOG",
+    "subhead": "Coin versus dog, final score inside",
+    "explainer": "The coin picked the route and the dog picked the real one"
+  },
+  "review": {
+    "ownerAppeal": 8,
+    "dogEnjoyment": 7,
+    "originality": 7,
+    "adventureFactor": 7,
+    "practicality": 8,
+    "memoryValue": 8,
+    "reviewedOn": "2026-11-26"
+  },
+  "role": "everyday",
+  "teaser": "Every corner brings a decision, and this household has a very opinionated vote.",
+  "previewTitle": "Who Chose This Route?",
+  "showcase": true
+}

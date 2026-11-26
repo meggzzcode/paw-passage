@@ -1,0 +1,103 @@
+{
+  "schema": 2,
+  "seasons": [],
+  "avoidWeather": [],
+  "sizes": [],
+  "achievements": [],
+  "relatedGuides": [],
+  "affiliateProducts": [],
+  "reservation": {
+    "needed": false
+  },
+  "access": "premium",
+  "status": "published",
+  "food": false,
+  "water": "none",
+  "crowd": "none",
+  "strangers": false,
+  "otherDogs": false,
+  "noise": "quiet",
+  "stepFree": true,
+  "optionalSupplies": ["Phone for the tally"],
+  "substitutes": ["A thick knotted bath towel works as a carry item"],
+  "lifeStages": ["puppy"],
+  "transport": "none",
+  "setting": "indoor",
+  "homes": ["apartment", "house-no-yard", "house-with-yard"],
+  "places": ["home"],
+  "energy": "gentle",
+  "dogMobility": "low",
+  "ownerMobility": "seated",
+  "household": [],
+  "prep": "light",
+  "space": "a-room",
+  "research": [
+    {
+      "label": "VCA Hospitals: teething and chewing in puppies",
+      "url": "https://vcahospitals.com/know-your-pet/teeth-teething-and-chewing-in-puppies"
+    },
+    {
+      "label": "ASPCA: canine DIY enrichment",
+      "url": "https://www.aspca.org/pet-care/dog-care/canine-diy-enrichment"
+    }
+  ],
+  "id": "adv-or9d3m",
+  "title": "The Doggy Delivery Service",
+  "clue": "Three items, two addresses, and a mover with strong opinions about both.",
+  "reveal": "Puppies carry things, and they have very firm views on where things belong. Set up a pickup and a depot, offer three chunky, washable items and let your puppy decide what moves, how, and where it finally ends up. The delivery address is the discovery.",
+  "objective": "Offer three safe carry items, let your puppy move whatever they like wherever they like, and write the delivery receipt from where each one ends up.",
+  "instructions": [
+    "Choose a room with a clear floor. Set the Pickup (a folded towel in one corner) and the Depot (a blanket or bed) about five steps away. Close the doors.",
+    "Pick three carry items, each too big to swallow and light enough to carry: a large plush with embroidered eyes, a thick knotted old towel, a big soft rubber puppy toy. Check every seam and toss anything coming apart.",
+    "Put all three on the Pickup. Sit on the floor near the Depot, look at your phone and say nothing. Anything lifted counts as a pickup, even for one step.",
+    "Keep a tally of what was lifted, carried and where it was dropped. Nobody takes anything: no trading, chasing or reaching into the mouth. If your puppy lies down with an item, leave it there.",
+    "Second shift: after a minute or two, swap one item for a new chunky one, such as a thick folded dish towel. See whether the delivery address changes.",
+    "Lunch break: put water down, sit quietly and let your puppy rest on the blanket. Stop the company the moment they lose interest.",
+    "Write the delivery receipt: for each item the address where it ended up ('under the coffee table', 'nowhere, he fell asleep on it'). When your puppy is done or asleep, tidy the stock back to the Pickup."
+  ],
+  "twist": "You are only the customer: the puppy decides what moves and the address on the receipt is wherever it actually ends up.",
+  "variations": [
+    "Easier: one item and two minutes, then a nap.",
+    "Yard version: the same setup on dry grass in your own yard, in shade, with you beside them. Ask your vet whether your own yard is fine for now.",
+    "With another dog at home: run it one dog at a time so nothing gets guarded.",
+    "Scent edition: put a worn T-shirt at the Pickup and see whether it moves."
+  ],
+  "completion": "At least one item has lifted, carried or investigated, and you have written a delivery address, or your puppy has fallen asleep on the stock.",
+  "photoIdea": "Your puppy mid-carry or flopped on the delivered item, from floor level. Natural, never posed.",
+  "memoryPrompt": "What did the delivery receipt say, and was the address a surprise?",
+  "minutesMin": 10,
+  "minutesMax": 20,
+  "activeMinutes": 8,
+  "costMin": 0,
+  "costMax": 0,
+  "supplies": ["Three large, soft carry items", "A folded towel", "A blanket"],
+  "requires": ["toys", "blanket", "towels"],
+  "personalities": ["playful", "curious"],
+  "safety": [
+    "Use only items too big to swallow; remove anything coming apart. No toy is fully safe, so watch the whole time.",
+    "Never chase, grab or trade for an item; leave a puppy who lies down with one alone.",
+    "Ask your vet which toys suit your puppy's age."
+  ],
+  "activityTypes": ["play-and-games", "problem-solving"],
+  "collections": ["puppys-first-chapter", "the-playful-pup", "rainy-day-club", "home-sweet-home"],
+  "stamps": ["first-adventure", "playtime-champion"],
+  "keepsake": {
+    "family": "trading-card",
+    "theme": "shop-awning-card",
+    "headline": "MOVER OF THE WEEK",
+    "subhead": "Three items moved, addresses at his discretion",
+    "explainer": "Delivery receipt: all three items, none to the address I wrote"
+  },
+  "review": {
+    "ownerAppeal": 7,
+    "dogEnjoyment": 8,
+    "originality": 7,
+    "adventureFactor": 6,
+    "practicality": 8,
+    "memoryValue": 7,
+    "reviewedOn": "2026-11-26"
+  },
+  "role": "everyday",
+  "teaser": "Parcels in, parcels out. This courier is small, but the service is outstanding.",
+  "showcase": false
+}

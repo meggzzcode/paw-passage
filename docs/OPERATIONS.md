@@ -22,7 +22,8 @@ Menu names in Pages CMS and the file each one edits:
 
 | Menu name                    | File                       | Typical owner task                                                                                                                      |
 | ---------------------------- | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| Adventures (free)            | `content/adventures/*.yml` | Small wording fixes only (see warning below)                                                                                            |
+| Adventures (free)            | `content/adventures/*.yml` | Edit or add free adventures (the form matches the schema)                                                                               |
+| Adventures (premium)         | `content/premium/*.json`   | Edit or add paid adventures; saving does not change the live store until you import (`PREMIUM-CONTENT-WORKFLOW.md`)                     |
 | Adventure collections        | `content/collections.yml`  | Edit a title, tagline, description or order. The code (slug) must not change once adventures use it.                                    |
 | Passport stamps              | `content/stamps.yml`       | Edit title, blurb or rule text. Do not change a stamp code that an adventure lists.                                                     |
 | Achievements and milestones  | `content/achievements.yml` | Edit a milestone title and reward text                                                                                                  |
@@ -34,11 +35,15 @@ Menu names in Pages CMS and the file each one edits:
 
 Workflow: open the menu, open the item, change it, read the labels (they explain each field), Save. Wait for the Netlify build, then open the page. If the build fails, Netlify shows the content error naming the file and field; correct that field in Pages CMS.
 
-**Adventures warning (known defect).** The Pages CMS adventure form is older than schema v2: it shows 29 fields while the schema has 56, includes three fields the schema does not use (`description`, `environments`, `mobilityFriendly`), and omits required v2 fields (reveal, objective, completion, homes, space, places, transport, and others). `.pages.yml` sets `merge: true`, so fields the form does not know are kept when an existing adventure is saved, but creating a new adventure in Pages CMS will not produce a valid file. Until the form is updated by a developer, write new adventures as files following `docs/CONTENT-GUIDE.md`, and use the CMS only for small wording edits to existing ones. Do not change an adventure's id or its `access` value, and never add a premium adventure to `content/adventures/` (the build refuses it).
+**Adventure forms.** The free adventure form and the premium form list every field of the current adventure schema (all 56 fields, including role, teaser, previewTitle, showcase, household, keepsake explainer, review, and the collection, stamp and achievement references), with drop-downs matching the schema's controlled lists. `src/test/handover-cms.test.ts` fails if `.pages.yml` and `src/passport/schema.ts` drift apart, so a developer who changes the schema must update the form in the same change. Do not change an adventure's id. Free adventures are `access: free` only; premium adventures are a separate menu (**Adventures (premium)**, `content/premium/*.json`) and are never part of the website build. Static page wording (home, FAQ, policies and the like) is code, not content: only Business settings are editable in the CMS.
+
+**Premium files are in this repository, which is still public (owner's decision, 2026-11-26).** The paid library is protected only once the repository is private; the next step is to make it private and check forks and clones. See `PREMIUM-CONTENT-WORKFLOW.md`.
 
 Collections and stamps: every collection or stamp code listed on an adventure must exist, or the build fails with a clear message.
 
 ## Premium library runbook (import, export, backup)
+
+The standard path is one JSON file per adventure in `content/premium/`: validate with `node scripts/premium-import.mjs --dir content/premium --env preview` (dry run), back up with `node scripts/premium-export.mjs --dir <folder> --env production`, then import with `--write`. The full workflow, rollback, the optional GitHub Action and the "make the repository private" checklist are in `PREMIUM-CONTENT-WORKFLOW.md`; handing the business to a new owner is `OWNERSHIP-TRANSFER.md`. The single-file commands below still work.
 
 The premium adventures live only in Netlify Blobs, in store `premium-production` (live site) and `premium-preview` (previews and tests). They are loaded by two owner-run scripts on your own computer. The scripts are never deployed, are not web endpoints and are never run by Claude.
 
@@ -95,7 +100,7 @@ Affiliate links are limited to verified Amazon products.
 | `NETLIFY_AUTH_TOKEN`     | Your terminal only            | Used by the premium scripts                                                                             |
 | `SITE_ID`                | Your terminal only            | Used by the premium scripts                                                                             |
 
-Rotating `SESSION_SECRET` signs everyone out. Rotating `PP_DATA_KEY` breaks purchase lookups and the stored-code re-check, so treat it as permanent. If either leaks, set a new `SESSION_SECRET` immediately and plan `PP_DATA_KEY` migration with a developer.
+Notification variables (`NOTIFICATIONS_ENABLED`, `VAPID_PUBLIC_KEY`, `VAPID_PRIVATE_KEY`, `VAPID_SUBJECT`) are in `NOTIFICATIONS.md`; what to rotate when ownership changes is in `OWNERSHIP-TRANSFER.md`, section 2. Rotating `SESSION_SECRET` signs everyone out. Rotating `PP_DATA_KEY` breaks purchase lookups and the stored-code re-check, so treat it as permanent. If either leaks, set a new `SESSION_SECRET` immediately and plan `PP_DATA_KEY` migration with a developer.
 
 ## Check-ins after launch
 

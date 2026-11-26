@@ -1,0 +1,113 @@
+{
+  "schema": 2,
+  "access": "premium",
+  "status": "published",
+  "relatedGuides": [],
+  "affiliateProducts": [],
+  "achievements": [],
+  "reservation": {
+    "needed": false
+  },
+  "sizes": [],
+  "showcase": true,
+  "research": [
+    {
+      "label": "Cornell Riney Canine Health Center: senior dog enrichment",
+      "url": "https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-information/senior-dog-enrichment"
+    },
+    {
+      "label": "VCA Hospitals: enrichment for pets",
+      "url": "https://www.vcahospitals.com/know-your-pet/enrichment"
+    }
+  ],
+  "id": "adv-r4w7fa",
+  "title": "The Little World's Fair",
+  "role": "signature",
+  "teaser": "Opening day is here, and your puppy is the guest of honor.",
+  "clue": "A brand-new fair is opening in your living room, and there is only one guest on the list.",
+  "reveal": "Four tiny pavilions, each with its own feel underfoot and its own little prize. Your puppy chooses the order, and your puppy decides when the fair closes.",
+  "objective": "Open a pocket-size fair at home where a young puppy visits stations of safe, gentle textures and finds a small prize at each.",
+  "instructions": [
+    "Build four pavilions on the floor in one room, each about the size of a dinner tray: a folded fleece (Fluff), a flat sheet of paper (Crinkle), a smooth tile or baking tray (Cool), and a firm folded duvet (Squish). Keep every one low and stable.",
+    "Hide a prize at each pavilion's center: two or three pieces of your puppy's usual food, or a favorite soft toy. Cover it loosely with a corner of the surface so a nose has to do the finding.",
+    "Make a paper 'passport' with four empty boxes. Put it on your lap and sit on the floor away from the pavilions. The fair opens when your puppy walks over.",
+    "Say nothing and let your puppy pick the order. Each time they step on a pavilion or sniff out its prize, stamp one box with a pen or a stamp pad (on the paper, never on your puppy).",
+    "Skipped pavilions are fine. If a surface worries them, slide it away and leave the prize beside it. Nothing is carried over or coaxed.",
+    "When your puppy wanders off, flops or finds a nap, the fair is closed. Pack up the pavilions you used and leave the unvisited ones for tomorrow."
+  ],
+  "twist": "Nothing is judged: your puppy is the only visitor, every stamp is earned by their own paws and nose, and a prize is waiting under each surface.",
+  "variations": [
+    "No food: hide a favorite soft toy or a cloth that smells of home as the prize.",
+    "Two pavilions only for very young or very sleepy puppies, then a nap.",
+    "Add a 'Rumble' pavilion later: a lightweight towel-wrapped cardboard tube lying flat.",
+    "Seated owner: put the pavilions in a row within arm's reach of your chair."
+  ],
+  "completion": "Your puppy has visited at least one pavilion and found its prize. Any number of stamps counts.",
+  "photoIdea": "The finished fair from floor level with the passport beside it, or the puppy in mid-sniff on a pavilion.",
+  "memoryPrompt": "Which pavilion did your puppy pick first, and which surprised you?",
+  "minutesMin": 10,
+  "minutesMax": 20,
+  "activeMinutes": 10,
+  "costMin": 0,
+  "costMax": 0,
+  "prep": "light",
+  "supplies": [
+    "Fleece or towel",
+    "Sheet of paper",
+    "Baking tray or tile",
+    "Folded duvet",
+    "Paper and pen"
+  ],
+  "optionalSupplies": ["Stamp pad (for the paper only)", "A favorite soft toy"],
+  "substitutes": ["No tile? A cool, clean baking tray.", "No stamp? Draw a star."],
+  "requires": ["household-items", "blanket", "paper-and-pens"],
+  "transport": "none",
+  "dietNotes": "Use only a few pieces of your puppy's usual food from the day's ration, or skip food and use a toy. Ask your vet about puppy diet.",
+  "setting": "indoor",
+  "homes": ["apartment", "house-no-yard", "house-with-yard"],
+  "space": "a-room",
+  "places": ["home"],
+  "seasons": [],
+  "avoidWeather": [],
+  "lifeStages": ["puppy"],
+  "energy": "gentle",
+  "personalities": ["curious", "playful", "gentle"],
+  "dogMobility": "moderate",
+  "ownerMobility": "minimal-walking",
+  "stepFree": true,
+  "crowd": "none",
+  "strangers": false,
+  "otherDogs": false,
+  "noise": "quiet",
+  "food": true,
+  "water": "none",
+  "safety": [
+    "Home only: keep your puppy indoors until your vet says public places are fine, and ask about vaccinations.",
+    "Paper is for stepping on, not chewing. Take away anything your teething puppy shreds or mouths.",
+    "Keep it short, offer rest, and never place or coax your puppy onto a surface."
+  ],
+  "activityTypes": ["scent-and-discovery", "play-and-games", "celebrations"],
+  "collections": [
+    "puppys-first-chapter",
+    "home-sweet-home",
+    "the-curious-explorer",
+    "apartment-adventures"
+  ],
+  "stamps": ["first-adventure", "memory-maker", "cozy-companion"],
+  "keepsake": {
+    "family": "event-ticket",
+    "theme": "safari-pass",
+    "headline": "ADMIT ONE PUPPY",
+    "subhead": "Opening day at the Little World's Fair",
+    "explainer": "Visited the fair. Four pavilions, four prizes, found by nose"
+  },
+  "review": {
+    "ownerAppeal": 8,
+    "dogEnjoyment": 8,
+    "originality": 7,
+    "adventureFactor": 7,
+    "practicality": 8,
+    "memoryValue": 8,
+    "reviewedOn": "2026-11-26"
+  }
+}

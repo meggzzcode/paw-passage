@@ -762,148 +762,1050 @@ content:
     format: yaml
     filename: "{fields.id}.yml"
     view:
-      fields: [title, status, access]
+      fields:
+        - title
+        - status
+        - access
       primary: title
-      sort: [title]
+      sort:
+        - title
     fields:
-      - {
-          name: id,
-          label: Adventure ID,
-          type: string,
-          required: true,
-          readonly: true,
-          description: "A permanent code like adv-k3m9x2. It never changes, even if you rename the adventure. Do not edit it.",
-        }
-      - { name: title, label: Title, type: string, required: true }
-      - {
-          name: clue,
-          label: "Mystery clue shown before the reveal (must not contain the title)",
-          type: string,
-          required: true,
-        }
-      - { name: description, label: Description, type: text, required: true }
-      - { name: instructions, label: "Steps (2 to 8)", type: string, list: true, required: true }
-      - {
-          name: twist,
-          label: "The twist (what makes this one different)",
-          type: text,
-          required: true,
-        }
-      - {
-          name: prep,
-          label: Preparation,
-          type: select,
-          required: true,
-          options: { values: [none, light, some] },
-        }
-      - { name: supplies, label: Supplies, type: string, list: true }
-      - { name: minutesMin, label: Minimum minutes, type: number, required: true }
-      - { name: minutesMax, label: Maximum minutes, type: number, required: true }
-      - { name: costMin, label: Minimum cost (dollars), type: number, required: true }
-      - { name: costMax, label: Maximum cost (dollars), type: number, required: true }
-      - {
-          name: setting,
-          label: Setting,
-          type: select,
-          required: true,
-          options: { values: [indoor, outdoor, either] },
-        }
-      - {
-          name: environments,
-          label: Places it works,
-          type: select,
-          list: true,
-          required: true,
-          options: { values: [apartment, house, city, countryside, beach, mountains, road-trip] },
-        }
-      - {
-          name: lifeStages,
-          label: Life stages,
-          type: select,
-          list: true,
-          required: true,
-          options: { values: [puppy, adult, senior] },
-        }
-      - {
-          name: energy,
-          label: Energy,
-          type: select,
-          required: true,
-          options: { values: [gentle, moderate, lively] },
-        }
-      - {
-          name: mobilityFriendly,
-          label: "Can be done at a very gentle pace or in place",
-          type: boolean,
-        }
-      - {
-          name: crowd,
-          label: Other people around,
-          type: select,
-          required: true,
-          options: { values: [none, some, busy] },
-        }
-      - { name: otherDogs, label: Other dogs likely nearby, type: boolean }
-      - {
-          name: seasons,
-          label: "Seasons (leave empty for any season)",
-          type: select,
-          list: true,
-          options: { values: [spring, summer, autumn, winter] },
-        }
-      - {
-          name: safety,
-          label: "Dog-welfare safety lines (at least one; no medical claims)",
-          type: string,
-          list: true,
-          required: true,
-        }
-      - { name: variations, label: Variations, type: string, list: true }
-      - { name: memoryPrompt, label: "Memory prompt (one line)", type: string, required: true }
-      - {
-          name: keepsake,
-          label: Keepsake,
-          type: select,
-          required: true,
-          options:
-            {
+      - name: schema
+        label: Schema version (leave as 2)
+        type: number
+        required: true
+        default: 2
+        readonly: true
+      - name: id
+        label: Adventure ID
+        type: string
+        required: true
+        readonly: true
+        description: A permanent code like adv-k3m9x2 (adv- and six lowercase letters or digits). It never changes, even if you rename the adventure. Do not edit it.
+      - name: title
+        label: Title (70 characters or fewer)
+        type: string
+        required: true
+        options:
+          maxlength: 70
+      - name: clue
+        label: Mystery clue shown before the reveal (140 characters or fewer; must not contain the title)
+        type: string
+        required: true
+        options:
+          maxlength: 140
+      - name: reveal
+        label: "Reveal: the introduction shown after the reveal (300 characters or fewer)"
+        type: text
+        required: true
+        options:
+          maxlength: 300
+      - name: objective
+        label: Objective (200 characters or fewer)
+        type: text
+        required: true
+        options:
+          maxlength: 200
+      - name: instructions
+        label: Steps (3 to 9)
+        type: text
+        list: true
+        required: true
+      - name: twist
+        label: "The twist: what makes this one different (220 characters or fewer)"
+        type: text
+        required: true
+        options:
+          maxlength: 220
+      - name: variations
+        label: Easier or more accessible versions (up to 4)
+        type: text
+        list: true
+      - name: completion
+        label: When it counts as done (200 characters or fewer)
+        type: text
+        required: true
+        options:
+          maxlength: 200
+      - name: photoIdea
+        label: Photo idea (optional, 200 characters or fewer; never ask for a pose)
+        type: text
+        options:
+          maxlength: 200
+      - name: memoryPrompt
+        label: Memory prompt (one line, 160 characters or fewer)
+        type: string
+        required: true
+        options:
+          maxlength: 160
+      - name: minutesMin
+        label: Minimum minutes
+        type: number
+        required: true
+      - name: minutesMax
+        label: Maximum minutes (not less than the minimum)
+        type: number
+        required: true
+      - name: activeMinutes
+        label: Minutes the dog is actively involved (optional)
+        type: number
+      - name: costMin
+        label: Minimum cost (dollars)
+        type: number
+        required: true
+      - name: costMax
+        label: Maximum cost (dollars, not less than the minimum)
+        type: number
+        required: true
+      - name: prep
+        label: Preparation
+        type: select
+        options:
+          values:
+            - none
+            - light
+            - some
+        required: true
+      - name: supplies
+        label: Supplies (up to 10)
+        type: string
+        list: true
+      - name: optionalSupplies
+        label: Optional supplies (up to 8)
+        type: string
+        list: true
+      - name: substitutes
+        label: Household stand-ins for supplies (up to 6)
+        type: string
+        list: true
+      - name: requires
+        label: What you need (controlled list; a car adventure must include car)
+        type: select
+        options:
+          values:
+            - toys
+            - treats
+            - blanket
+            - camera-phone
+            - paper-and-pens
+            - picnic-gear
+            - bake-ingredients
+            - towels
+            - household-items
+            - cardboard-boxes
+            - leash-and-harness
+            - car
+        list: true
+      - name: transport
+        label: Getting there
+        type: select
+        options:
+          values:
+            - none
+            - walkable
+            - car
+        required: true
+      - name: reservation
+        label: Booking
+        type: object
+        fields:
+          - name: needed
+            label: Booking needed?
+            type: boolean
+            default: false
+            required: true
+          - name: note
+            label: What to book (required if booking is needed; 160 characters or fewer)
+            type: string
+            options:
+              maxlength: 160
+      - name: setting
+        label: Setting
+        type: select
+        options:
+          values:
+            - indoor
+            - outdoor
+            - either
+        required: true
+      - name: homes
+        label: Homes it suits
+        type: select
+        options:
+          values:
+            - apartment
+            - house-no-yard
+            - house-with-yard
+        list: true
+        required: true
+      - name: space
+        label: Space needed
+        type: select
+        options:
+          values:
+            - small-indoor
+            - a-room
+            - yard
+            - none
+        required: true
+      - name: places
+        label: Places it works
+        type: select
+        options:
+          values:
+            - home
+            - city
+            - countryside
+            - beach
+            - mountains
+            - road-trip
+        list: true
+        required: true
+      - name: seasons
+        label: Seasons (leave empty for any season)
+        type: select
+        options:
+          values:
+            - spring
+            - summer
+            - autumn
+            - winter
+        list: true
+      - name: avoidWeather
+        label: Do not do it in this weather
+        type: select
+        options:
+          values:
+            - rain
+            - heat
+            - cold
+        list: true
+      - name: lifeStages
+        label: Life stages
+        type: select
+        options:
+          values:
+            - puppy
+            - adult
+            - senior
+        list: true
+        required: true
+      - name: sizes
+        label: Dog sizes (leave empty for any size)
+        type: select
+        options:
+          values:
+            - small
+            - medium
+            - large
+        list: true
+      - name: energy
+        label: Energy
+        type: select
+        options:
+          values:
+            - gentle
+            - moderate
+            - lively
+        required: true
+      - name: personalities
+        label: Who tends to enjoy it (a hint only)
+        type: select
+        options:
+          values:
+            - curious
+            - playful
+            - cozy
+            - gentle
+            - adventurous
+        list: true
+      - name: dogMobility
+        label: Dog mobility needed (low = fine for a dog who moves slowly or not far)
+        type: select
+        options:
+          values:
+            - low
+            - moderate
+            - high
+        required: true
+      - name: ownerMobility
+        label: Owner mobility needed
+        type: select
+        options:
+          values:
+            - seated
+            - minimal-walking
+            - short-walk
+            - long-walk
+        required: true
+      - name: stepFree
+        label: Step-free (no steps or uneven ground needed)
+        type: boolean
+        required: true
+      - name: crowd
+        label: Other people around
+        type: select
+        options:
+          values:
+            - none
+            - some
+            - busy
+        required: true
+      - name: strangers
+        label: Meets unfamiliar people
+        type: boolean
+        required: true
+      - name: otherDogs
+        label: Other dogs likely nearby
+        type: boolean
+        required: true
+      - name: noise
+        label: Noise
+        type: select
+        options:
+          values:
+            - quiet
+            - some
+            - loud
+        required: true
+      - name: food
+        label: Food or treats are part of it
+        type: boolean
+        required: true
+      - name: dietNotes
+        label: Diet notes (required for food adventures unless the main type is food and treats; 200 characters or fewer)
+        type: text
+        options:
+          maxlength: 200
+      - name: water
+        label: Water
+        type: select
+        options:
+          values:
+            - none
+            - near-water
+            - in-water
+        required: true
+      - name: safety
+        label: Dog-welfare safety lines (1 to 6; no medical claims; water adventures need a supervise or check line)
+        type: string
+        list: true
+        required: true
+      - name: activityTypes
+        label: Activity types (1 to 3; the first is the main one)
+        type: select
+        options:
+          values:
+            - play-and-games
+            - food-and-treats
+            - scent-and-discovery
+            - problem-solving
+            - creative-projects
+            - photography
+            - outdoor-exploration
+            - travel
+            - water
+            - relaxation
+            - celebrations
+            - memory-making
+        list: true
+        required: true
+      - name: collections
+        label: Collections (use the collection codes from Adventure collections)
+        type: string
+        list: true
+        required: true
+      - name: household
+        label: Household tags (two dogs, family)
+        type: select
+        options:
+          values:
+            - two-dogs
+            - family
+        list: true
+      - name: stamps
+        label: Stamps (use the stamp codes from Passport stamps)
+        type: string
+        list: true
+      - name: achievements
+        label: Achievements (codes; milestones are mostly automatic)
+        type: string
+        list: true
+      - name: keepsake
+        label: Keepsake artwork
+        type: object
+        required: true
+        fields:
+          - name: family
+            label: Keepsake family
+            type: select
+            options:
               values:
-                [
-                  postcard,
-                  magazine-cover,
-                  then-and-now,
-                  milestone-card,
-                  certificate,
-                  seasonal-recap,
-                  collage,
-                  collection-complete,
-                ],
-            },
-        }
-      - {
-          name: collections,
-          label: "Collections (use the collection codes)",
-          type: string,
-          list: true,
-          required: true,
-        }
-      - { name: stamps, label: "Stamps (use the stamp codes)", type: string, list: true }
-      - {
-          name: access,
-          label: Access,
-          type: select,
-          required: true,
-          description: "Only 'free' belongs in this public repository.",
-          options: { values: [free, premium] },
-        }
-      - {
-          name: status,
-          label: Status,
-          type: select,
-          required: true,
-          options: { values: [draft, published] },
-        }
-      - { name: relatedGuides, label: Related guide codes, type: string, list: true }
+                - travel-postcard
+                - magazine-cover
+                - id-card
+                - trading-card
+                - certificate
+                - seasonal-frame
+                - event-ticket
+                - then-and-now
+                - collage
+                - poster
+            required: true
+          - name: theme
+            label: Theme code (names the artwork variant; lowercase letters, digits, hyphens)
+            type: string
+            required: true
+          - name: headline
+            label: Big words on the artwork (40 characters or fewer)
+            type: string
+            required: true
+            options:
+              maxlength: 40
+          - name: subhead
+            label: Smaller line (optional, 60 characters or fewer)
+            type: string
+            options:
+              maxlength: 60
+          - name: explainer
+            label: Explainer line printed on the photo filter (optional, 64 characters or fewer; no hashtags, no emoji)
+            type: string
+            options:
+              maxlength: 64
+      - name: role
+        label: Role (signature = flagship; everyday = easy at home or nearby; lifestyle = dates, creativity, seasons, celebrations; aspirational = weekends, travel, special outings)
+        type: select
+        options:
+          values:
+            - signature
+            - everyday
+            - lifestyle
+            - aspirational
+        required: true
+        default: everyday
+      - name: teaser
+        label: "Public teaser (optional, 110 characters or fewer; tease without explaining how it works: no steps, mechanics or twists)"
+        type: string
+        options:
+          maxlength: 110
+      - name: previewTitle
+        label: Mystery-style title for public previews (optional, 60 characters or fewer)
+        type: string
+        options:
+          maxlength: 60
+      - name: showcase
+        label: Show in the public preview showcase (needs a teaser)
+        type: boolean
+        default: false
+      - name: access
+        label: Access
+        type: select
+        options:
+          values:
+            - free
+        required: true
+        description: "Only 'free' belongs in this public repository. Premium adventures are NOT edited in this CMS: they live in a separate private repository (docs/PREMIUM-CONTENT-WORKFLOW.md)."
+      - name: status
+        label: Status
+        type: select
+        options:
+          values:
+            - draft
+            - published
+        required: true
+      - name: relatedGuides
+        label: Related guide codes
+        type: string
+        list: true
+      - name: affiliateProducts
+        label: Optional product codes from Products (never required to finish)
+        type: string
+        list: true
+      - name: research
+        label: Research pages you actually read
+        type: object
+        list: true
+        fields:
+          - name: label
+            label: Label (120 characters or fewer)
+            type: string
+            required: true
+          - name: url
+            label: Address (must start with https://)
+            type: string
+            required: true
+      - name: review
+        label: Internal editorial review (independent scores only; never shown to customers, never customer ratings)
+        type: object
+        fields:
+          - name: ownerAppeal
+            label: Owner Appeal (1 to 10)
+            type: number
+            options:
+              min: 1
+              max: 10
+          - name: dogEnjoyment
+            label: Dog Enjoyment (1 to 10)
+            type: number
+            options:
+              min: 1
+              max: 10
+          - name: originality
+            label: Originality (1 to 10)
+            type: number
+            options:
+              min: 1
+              max: 10
+          - name: adventureFactor
+            label: Adventure Factor (1 to 10)
+            type: number
+            options:
+              min: 1
+              max: 10
+          - name: practicality
+            label: Practicality (1 to 10)
+            type: number
+            options:
+              min: 1
+              max: 10
+          - name: memoryValue
+            label: Memory Value (1 to 10)
+            type: number
+            options:
+              min: 1
+              max: 10
+          - name: reviewedOn
+            label: Reviewed on (date)
+            type: string
+
+  # ------------------------------------------------------------ Premium adventures (paid library)
+  # DECISION (owner, 2026-11-26): the premium adventures are stored here, one JSON file per adventure in content/premium/, even though
+  # this repository is still PUBLIC. They are protected from the website only because the build never reads content/premium/.
+  # The paid library is NOT protected from the public until the repository is made PRIVATE (docs/PREMIUM-CONTENT-WORKFLOW.md).
+  # Saving here only commits a file; it does not change the live store. Import is a separate step: scripts/premium-import.mjs --dir content/premium.
+  - name: premium-adventures
+    label: Adventures (premium)
+    type: collection
+    path: content/premium
+    format: json
+    filename: "{fields.id}.json"
+    view:
+      fields:
+        - title
+        - status
+        - access
+      primary: title
+      sort:
+        - title
+    fields:
+      - name: schema
+        label: Schema version (leave as 2)
+        type: number
+        required: true
+        default: 2
+        readonly: true
+      - name: id
+        label: Adventure ID
+        type: string
+        required: true
+        readonly: true
+        description: A permanent code like adv-k3m9x2 (adv- and six lowercase letters or digits). It never changes, even if you rename the adventure. Do not edit it.
+      - name: title
+        label: Title (70 characters or fewer)
+        type: string
+        required: true
+        options:
+          maxlength: 70
+      - name: clue
+        label: Mystery clue shown before the reveal (140 characters or fewer; must not contain the title)
+        type: string
+        required: true
+        options:
+          maxlength: 140
+      - name: reveal
+        label: "Reveal: the introduction shown after the reveal (300 characters or fewer)"
+        type: text
+        required: true
+        options:
+          maxlength: 300
+      - name: objective
+        label: Objective (200 characters or fewer)
+        type: text
+        required: true
+        options:
+          maxlength: 200
+      - name: instructions
+        label: Steps (3 to 9)
+        type: text
+        list: true
+        required: true
+      - name: twist
+        label: "The twist: what makes this one different (220 characters or fewer)"
+        type: text
+        required: true
+        options:
+          maxlength: 220
+      - name: variations
+        label: Easier or more accessible versions (up to 4)
+        type: text
+        list: true
+      - name: completion
+        label: When it counts as done (200 characters or fewer)
+        type: text
+        required: true
+        options:
+          maxlength: 200
+      - name: photoIdea
+        label: Photo idea (optional, 200 characters or fewer; never ask for a pose)
+        type: text
+        options:
+          maxlength: 200
+      - name: memoryPrompt
+        label: Memory prompt (one line, 160 characters or fewer)
+        type: string
+        required: true
+        options:
+          maxlength: 160
+      - name: minutesMin
+        label: Minimum minutes
+        type: number
+        required: true
+      - name: minutesMax
+        label: Maximum minutes (not less than the minimum)
+        type: number
+        required: true
+      - name: activeMinutes
+        label: Minutes the dog is actively involved (optional)
+        type: number
+      - name: costMin
+        label: Minimum cost (dollars)
+        type: number
+        required: true
+      - name: costMax
+        label: Maximum cost (dollars, not less than the minimum)
+        type: number
+        required: true
+      - name: prep
+        label: Preparation
+        type: select
+        options:
+          values:
+            - none
+            - light
+            - some
+        required: true
+      - name: supplies
+        label: Supplies (up to 10)
+        type: string
+        list: true
+      - name: optionalSupplies
+        label: Optional supplies (up to 8)
+        type: string
+        list: true
+      - name: substitutes
+        label: Household stand-ins for supplies (up to 6)
+        type: string
+        list: true
+      - name: requires
+        label: What you need (controlled list; a car adventure must include car)
+        type: select
+        options:
+          values:
+            - toys
+            - treats
+            - blanket
+            - camera-phone
+            - paper-and-pens
+            - picnic-gear
+            - bake-ingredients
+            - towels
+            - household-items
+            - cardboard-boxes
+            - leash-and-harness
+            - car
+        list: true
+      - name: transport
+        label: Getting there
+        type: select
+        options:
+          values:
+            - none
+            - walkable
+            - car
+        required: true
+      - name: reservation
+        label: Booking
+        type: object
+        fields:
+          - name: needed
+            label: Booking needed?
+            type: boolean
+            default: false
+            required: true
+          - name: note
+            label: What to book (required if booking is needed; 160 characters or fewer)
+            type: string
+            options:
+              maxlength: 160
+      - name: setting
+        label: Setting
+        type: select
+        options:
+          values:
+            - indoor
+            - outdoor
+            - either
+        required: true
+      - name: homes
+        label: Homes it suits
+        type: select
+        options:
+          values:
+            - apartment
+            - house-no-yard
+            - house-with-yard
+        list: true
+        required: true
+      - name: space
+        label: Space needed
+        type: select
+        options:
+          values:
+            - small-indoor
+            - a-room
+            - yard
+            - none
+        required: true
+      - name: places
+        label: Places it works
+        type: select
+        options:
+          values:
+            - home
+            - city
+            - countryside
+            - beach
+            - mountains
+            - road-trip
+        list: true
+        required: true
+      - name: seasons
+        label: Seasons (leave empty for any season)
+        type: select
+        options:
+          values:
+            - spring
+            - summer
+            - autumn
+            - winter
+        list: true
+      - name: avoidWeather
+        label: Do not do it in this weather
+        type: select
+        options:
+          values:
+            - rain
+            - heat
+            - cold
+        list: true
+      - name: lifeStages
+        label: Life stages
+        type: select
+        options:
+          values:
+            - puppy
+            - adult
+            - senior
+        list: true
+        required: true
+      - name: sizes
+        label: Dog sizes (leave empty for any size)
+        type: select
+        options:
+          values:
+            - small
+            - medium
+            - large
+        list: true
+      - name: energy
+        label: Energy
+        type: select
+        options:
+          values:
+            - gentle
+            - moderate
+            - lively
+        required: true
+      - name: personalities
+        label: Who tends to enjoy it (a hint only)
+        type: select
+        options:
+          values:
+            - curious
+            - playful
+            - cozy
+            - gentle
+            - adventurous
+        list: true
+      - name: dogMobility
+        label: Dog mobility needed (low = fine for a dog who moves slowly or not far)
+        type: select
+        options:
+          values:
+            - low
+            - moderate
+            - high
+        required: true
+      - name: ownerMobility
+        label: Owner mobility needed
+        type: select
+        options:
+          values:
+            - seated
+            - minimal-walking
+            - short-walk
+            - long-walk
+        required: true
+      - name: stepFree
+        label: Step-free (no steps or uneven ground needed)
+        type: boolean
+        required: true
+      - name: crowd
+        label: Other people around
+        type: select
+        options:
+          values:
+            - none
+            - some
+            - busy
+        required: true
+      - name: strangers
+        label: Meets unfamiliar people
+        type: boolean
+        required: true
+      - name: otherDogs
+        label: Other dogs likely nearby
+        type: boolean
+        required: true
+      - name: noise
+        label: Noise
+        type: select
+        options:
+          values:
+            - quiet
+            - some
+            - loud
+        required: true
+      - name: food
+        label: Food or treats are part of it
+        type: boolean
+        required: true
+      - name: dietNotes
+        label: Diet notes (required for food adventures unless the main type is food and treats; 200 characters or fewer)
+        type: text
+        options:
+          maxlength: 200
+      - name: water
+        label: Water
+        type: select
+        options:
+          values:
+            - none
+            - near-water
+            - in-water
+        required: true
+      - name: safety
+        label: Dog-welfare safety lines (1 to 6; no medical claims; water adventures need a supervise or check line)
+        type: string
+        list: true
+        required: true
+      - name: activityTypes
+        label: Activity types (1 to 3; the first is the main one)
+        type: select
+        options:
+          values:
+            - play-and-games
+            - food-and-treats
+            - scent-and-discovery
+            - problem-solving
+            - creative-projects
+            - photography
+            - outdoor-exploration
+            - travel
+            - water
+            - relaxation
+            - celebrations
+            - memory-making
+        list: true
+        required: true
+      - name: collections
+        label: Collections (use the collection codes from Adventure collections)
+        type: string
+        list: true
+        required: true
+      - name: household
+        label: Household tags (two dogs, family)
+        type: select
+        options:
+          values:
+            - two-dogs
+            - family
+        list: true
+      - name: stamps
+        label: Stamps (use the stamp codes from Passport stamps)
+        type: string
+        list: true
+      - name: achievements
+        label: Achievements (codes; milestones are mostly automatic)
+        type: string
+        list: true
+      - name: keepsake
+        label: Keepsake artwork
+        type: object
+        required: true
+        fields:
+          - name: family
+            label: Keepsake family
+            type: select
+            options:
+              values:
+                - travel-postcard
+                - magazine-cover
+                - id-card
+                - trading-card
+                - certificate
+                - seasonal-frame
+                - event-ticket
+                - then-and-now
+                - collage
+                - poster
+            required: true
+          - name: theme
+            label: Theme code (names the artwork variant; lowercase letters, digits, hyphens)
+            type: string
+            required: true
+          - name: headline
+            label: Big words on the artwork (40 characters or fewer)
+            type: string
+            required: true
+            options:
+              maxlength: 40
+          - name: subhead
+            label: Smaller line (optional, 60 characters or fewer)
+            type: string
+            options:
+              maxlength: 60
+          - name: explainer
+            label: Explainer line printed on the photo filter (optional, 64 characters or fewer; no hashtags, no emoji)
+            type: string
+            options:
+              maxlength: 64
+      - name: role
+        label: Role (signature = flagship; everyday = easy at home or nearby; lifestyle = dates, creativity, seasons, celebrations; aspirational = weekends, travel, special outings)
+        type: select
+        options:
+          values:
+            - signature
+            - everyday
+            - lifestyle
+            - aspirational
+        required: true
+        default: everyday
+      - name: teaser
+        label: "Public teaser (optional, 110 characters or fewer; tease without explaining how it works: no steps, mechanics or twists)"
+        type: string
+        options:
+          maxlength: 110
+      - name: previewTitle
+        label: Mystery-style title for public previews (optional, 60 characters or fewer)
+        type: string
+        options:
+          maxlength: 60
+      - name: showcase
+        label: Show in the public preview showcase (needs a teaser)
+        type: boolean
+        default: false
+      - name: access
+        label: Access
+        type: select
+        options:
+          values:
+            - premium
+        required: true
+        description: "Must be 'premium' here."
+      - name: status
+        label: Status
+        type: select
+        options:
+          values:
+            - draft
+            - published
+        required: true
+      - name: relatedGuides
+        label: Related guide codes
+        type: string
+        list: true
+      - name: affiliateProducts
+        label: Optional product codes from Products (never required to finish)
+        type: string
+        list: true
+      - name: research
+        label: Research pages you actually read
+        type: object
+        list: true
+        fields:
+          - name: label
+            label: Label (120 characters or fewer)
+            type: string
+            required: true
+          - name: url
+            label: Address (must start with https://)
+            type: string
+            required: true
+      - name: review
+        label: Internal editorial review (independent scores only; never shown to customers, never customer ratings)
+        type: object
+        fields:
+          - name: ownerAppeal
+            label: Owner Appeal (1 to 10)
+            type: number
+            options:
+              min: 1
+              max: 10
+          - name: dogEnjoyment
+            label: Dog Enjoyment (1 to 10)
+            type: number
+            options:
+              min: 1
+              max: 10
+          - name: originality
+            label: Originality (1 to 10)
+            type: number
+            options:
+              min: 1
+              max: 10
+          - name: adventureFactor
+            label: Adventure Factor (1 to 10)
+            type: number
+            options:
+              min: 1
+              max: 10
+          - name: practicality
+            label: Practicality (1 to 10)
+            type: number
+            options:
+              min: 1
+              max: 10
+          - name: memoryValue
+            label: Memory Value (1 to 10)
+            type: number
+            options:
+              min: 1
+              max: 10
+          - name: reviewedOn
+            label: Reviewed on (date)
+            type: string
+  #
 
   - name: collections
     label: Adventure collections

@@ -1,0 +1,113 @@
+{
+  "schema": 2,
+  "seasons": [],
+  "avoidWeather": ["heat", "rain", "cold"],
+  "sizes": [],
+  "household": [],
+  "achievements": [],
+  "relatedGuides": [],
+  "affiliateProducts": [],
+  "optionalSupplies": [],
+  "substitutes": [],
+  "reservation": {
+    "needed": false
+  },
+  "access": "premium",
+  "status": "published",
+  "prep": "light",
+  "costMin": 0,
+  "costMax": 0,
+  "water": "none",
+  "food": false,
+  "research": [
+    {
+      "label": "Cornell Riney Canine Health Center: canine enrichment ideas",
+      "url": "https://riney.vet.cornell.edu/member-benefits-health-tips/canine-enrichment-ideas"
+    },
+    {
+      "label": "Dogs Trust: enrichment ideas, mental work and rest",
+      "url": "https://www.dogstrust.org.uk/help-advice/behaviour/enrichment-ideas-for-bored-dogs"
+    },
+    {
+      "label": "AKC: indoor games for dogs",
+      "url": "https://www.akc.org/expert-advice/training/indoor-games-with-dog/"
+    }
+  ],
+  "id": "adv-9p4c7k",
+  "title": "The Pace Car",
+  "clue": "Your dog drives, you keep up, and the pit stops are the whole point.",
+  "reveal": "You jog or stride a flat loop and your dog sets the speed. Four pit stops, picked by your dog's nose, get a line each in a pit-crew report. Then your dog picks the finish spot, and a trophy toy appears there. You are the pace car; the throttle is theirs.",
+  "objective": "Run or stride a flat loop at the speed your dog chooses, stop at four pit stops, let your dog pick the finish spot and find the trophy toy there.",
+  "instructions": [
+    "Pick a flat loop with soft footing (dirt path, grass track, quiet park lane) away from traffic, in cool, dry hours. Choose four pit stops you can name: bench, gate, big tree, water tap. Pack a favorite toy as the trophy, a harness, six-foot leash, water, bowl, waste bags and a pocket notebook.",
+    "Start with a relaxed walk. Check the ground with the back of your hand: skip hot, icy or sharp surfaces. Note the leash rules for the path.",
+    "Rev up: say 'ready' and pick up to a jog only if your dog moves into a trot on their own. You are the pace car: you match them, never the other way round. If the leash tightens, you slow down. Never tug or speed up to keep them going.",
+    "Pit stops: at each landmark, drop to a walk, stop and let your dog sniff for a full minute while you offer water. Jot one line for the pit report ('Stop 2, the bench: extremely interesting, 40 seconds of nose').",
+    "Traffic rules: when you meet other dogs, bikes or runners, drop to a walk, move aside and keep the leash slack. No dashing past anyone.",
+    "Your dog can switch to a walk, sit down or head for the nearest shade whenever they like. A walked lap counts exactly the same: the pace car simply walks.",
+    "Checkered flag: walk the last stretch slowly and let your dog choose the finish spot, a patch of shade or soft grass they like. When they settle there, bring out the trophy toy from your bag and let them have it. Offer water and sit a while, read the pit-crew report out loud, then check paws and between the toes."
+  ],
+  "twist": "Your dog is the driver and you are only the pace car: they set the speed, name the pit stops with their nose and choose the finish spot, where a trophy toy is revealed.",
+  "variations": [
+    "Walking version: stride briskly instead of jogging and keep the same four pit stops.",
+    "Hot-day version: go early or late, shorten the loop to two pit stops and finish in the shade.",
+    "Owner who cannot jog: roll or walk the loop with the dog trotting alongside only if they choose to, and skip the speed-up step.",
+    "Small dog: halve the stretch between pit stops and let them trot at their own rhythm."
+  ],
+  "completion": "It counts once you have reached one pit stop at your dog's pace, written one line in the report and let your dog pick a finish spot. A walk-only lap counts in full.",
+  "photoIdea": "Your dog at a pit stop, nose down, with the landmark behind them, from the side at their level.",
+  "memoryPrompt": "Which pit stop held your dog longest, and where did they decide to trot?",
+  "minutesMin": 30,
+  "minutesMax": 50,
+  "activeMinutes": 30,
+  "supplies": [
+    "Harness and six-foot leash",
+    "Water and a bowl",
+    "Waste bags",
+    "Notebook or phone for the pit report",
+    "Favorite toy as the trophy"
+  ],
+  "requires": ["leash-and-harness", "camera-phone", "toys"],
+  "setting": "outdoor",
+  "homes": ["apartment", "house-no-yard", "house-with-yard"],
+  "space": "none",
+  "places": ["city", "countryside"],
+  "lifeStages": ["adult"],
+  "personalities": ["adventurous", "playful"],
+  "energy": "lively",
+  "dogMobility": "high",
+  "ownerMobility": "long-walk",
+  "stepFree": false,
+  "crowd": "some",
+  "strangers": true,
+  "otherDogs": true,
+  "noise": "some",
+  "transport": "walkable",
+  "safety": [
+    "Cool, dry hours only. Check the ground with the back of your hand and skip hot sidewalk.",
+    "The dog sets the speed: never tug or speed up, and slow to a walk if they lag or pant hard.",
+    "Jog only on soft, level ground. Skip it for dogs with joint trouble."
+  ],
+  "activityTypes": ["outdoor-exploration", "play-and-games"],
+  "collections": ["the-great-outdoors", "the-playful-pup", "seasons-together"],
+  "stamps": ["first-adventure", "trail-blazer", "playtime-champion"],
+  "keepsake": {
+    "family": "magazine-cover",
+    "theme": "adventure-legend",
+    "headline": "THE PACE CAR",
+    "subhead": "Four pit stops, one driver",
+    "explainer": "I set the pace today. My human just kept up"
+  },
+  "review": {
+    "ownerAppeal": 7,
+    "dogEnjoyment": 8,
+    "originality": 6,
+    "adventureFactor": 7,
+    "practicality": 8,
+    "memoryValue": 6,
+    "reviewedOn": "2026-11-26"
+  },
+  "role": "everyday",
+  "teaser": "A race with no rivals, a leader who loves it and a trophy at the finish line.",
+  "showcase": false
+}

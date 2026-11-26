@@ -1,0 +1,110 @@
+{
+  "schema": 2,
+  "reservation": {
+    "needed": false
+  },
+  "seasons": [],
+  "avoidWeather": [],
+  "sizes": [],
+  "household": [],
+  "achievements": [],
+  "relatedGuides": [],
+  "affiliateProducts": [],
+  "optionalSupplies": ["Colored pens"],
+  "substitutes": ["No paper bag? Use a large sheet of newspaper laid flat."],
+  "access": "premium",
+  "status": "published",
+  "showcase": false,
+  "stepFree": true,
+  "strangers": false,
+  "otherDogs": false,
+  "crowd": "none",
+  "noise": "some",
+  "water": "none",
+  "food": false,
+  "homes": ["apartment", "house-no-yard", "house-with-yard"],
+  "lifeStages": ["puppy", "adult", "senior"],
+  "id": "adv-p7s3e6",
+  "title": "The Sound Effects Department",
+  "clue": "Every good comic needs a CRUNCH, a SQUEAK and a THUMP.",
+  "reveal": "Open a tiny sound stage for your dog: three safe things that make noises when they investigate them. Whatever your dog makes happen becomes a panel in a comic page, with the sound effect lettered large.",
+  "objective": "Let your dog trigger three gentle sound effects at their own pace, then turn the best three moments into comic panels.",
+  "instructions": [
+    "Make a stage on a non-slip floor with three stations, a few steps apart: a flat clean paper bag (handles removed) to crinkle, a squeaky toy they already know, and a soft ball to bounce on a folded blanket. Leave out any station you think may worry your dog.",
+    "Add a mat with water to one side as the dressing room. Keep your voice low and let your dog come when they like.",
+    "Sit back and let them wander the stage for five to ten minutes. Each time they cause a sound, jot the sound on a card in your own words: CRINKLE, SQUEAK, THUD. Also jot sounds they make naturally: a sigh, a jingle, a nail click, a tail thump.",
+    "If they ignore a station, swap its spot once. If a sound makes them back away, take it away and note that too. Never squeak, crinkle or push the toy at them.",
+    "Choose three favorites and take a quick photo or sketch of the moment, or draw it afterwards from memory.",
+    "Lay the three panels in a row on a sheet of paper and letter each sound effect big and bold beside its panel. Add a thought bubble if you like.",
+    "Read the page aloud softly and tidy the stage, leaving the toy for them."
+  ],
+  "twist": "Your dog is the sound designer: they decide which sounds exist by what they choose to investigate, and you only letter them.",
+  "variations": [
+    "Quiet version: use only natural sounds (sigh, tag jingle, tail thump) during a nap or settle.",
+    "For a sound-sensitive dog: skip the paper bag and squeaker and use a plush toy and soft ball on a blanket.",
+    "For limited mobility: make one station beside the bed and work from a chair.",
+    "For a puppy: one station, two minutes, then a nap."
+  ],
+  "completion": "Your dog has had a go at the stage and you have three lettered panels.",
+  "photoIdea": "Your dog mid-investigation at their favorite station, taken from low and without calling them. Each panel can be a natural moment.",
+  "memoryPrompt": "Which sound effect did your dog earn, and how did you spell it?",
+  "minutesMin": 20,
+  "minutesMax": 35,
+  "activeMinutes": 15,
+  "costMin": 0,
+  "costMax": 0,
+  "prep": "light",
+  "supplies": [
+    "Paper bag",
+    "Squeaky toy",
+    "Soft ball",
+    "Folded blanket",
+    "Paper and pen",
+    "Phone for photos"
+  ],
+  "requires": ["paper-and-pens", "toys", "blanket", "camera-phone"],
+  "transport": "none",
+  "setting": "indoor",
+  "space": "a-room",
+  "places": ["home"],
+  "energy": "gentle",
+  "dogMobility": "low",
+  "ownerMobility": "seated",
+  "safety": [
+    "Take away paper or toys they start to tear or swallow, and supervise throughout.",
+    "Never squeak, crinkle or shake things at them. If a sound worries them, remove it.",
+    "One dog on the stage at a time so no toy gets guarded."
+  ],
+  "personalities": ["curious", "playful"],
+  "activityTypes": ["creative-projects", "play-and-games", "photography"],
+  "collections": ["creative-companions", "rainy-day-club", "the-playful-pup", "home-sweet-home"],
+  "stamps": ["first-adventure", "playtime-champion", "memory-maker"],
+  "keepsake": {
+    "family": "collage",
+    "theme": "comic-strip-collage",
+    "headline": "SOUND EFFECTS DEPT.",
+    "subhead": "Three panels, all made by the dog",
+    "explainer": "Made three sound effects. Spelled them very loudly"
+  },
+  "role": "lifestyle",
+  "teaser": "A tiny comic page is about to be written by someone who has never read a word.",
+  "research": [
+    {
+      "label": "Dogs Trust: enrichment activities for dogs",
+      "url": "https://www.dogstrust.org.uk/dog-advice/life-with-your-dog/enrichment/enrichment-activities-for-dogs"
+    },
+    {
+      "label": "VCA Animal Hospitals: enrichment",
+      "url": "https://vcahospitals.com/know-your-pet/enrichment"
+    }
+  ],
+  "review": {
+    "ownerAppeal": 7,
+    "dogEnjoyment": 7,
+    "originality": 8,
+    "adventureFactor": 6,
+    "practicality": 8,
+    "memoryValue": 8,
+    "reviewedOn": "2026-11-26"
+  }
+}

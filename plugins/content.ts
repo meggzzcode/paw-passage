@@ -25,6 +25,8 @@ import {
 import { packingSchema, packingProblems, emptyPackingConfig } from "../src/lib/packing/schema";
 
 const VIRTUAL = "virtual:content";
+/** Folder under content/ that the site build ignores completely (the paid adventure library, imported by script only). */
+export const EXCLUDED_CONTENT_DIR = "premium";
 const RESOLVED = "\0" + VIRTUAL;
 
 // Guides are split so list pages do not download every article:
@@ -419,6 +421,8 @@ export function contentPlugin(): Plugin {
       // Rebuild when any content file changes.
       const walk = (d: string) => {
         if (!existsSync(d)) return;
+        // content/premium holds the paid library (one JSON per adventure). The site build must never read or watch it.
+        if (d === join(dir, EXCLUDED_CONTENT_DIR)) return;
         for (const n of readdirSync(d)) {
           const p = join(d, n);
           if (statSync(p).isDirectory()) walk(p);

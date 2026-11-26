@@ -1,0 +1,111 @@
+{
+  "schema": 2,
+  "seasons": ["spring", "summer", "autumn"],
+  "avoidWeather": ["heat", "cold", "rain"],
+  "sizes": [],
+  "household": [],
+  "achievements": [],
+  "relatedGuides": [],
+  "affiliateProducts": [],
+  "access": "premium",
+  "reservation": {
+    "needed": true,
+    "note": "Check the beach's dog rules, leash rules and seasonal dog bans before you go; many beaches restrict dogs."
+  },
+  "prep": "light",
+  "lifeStages": ["adult", "senior"],
+  "personalities": ["curious", "adventurous"],
+  "ownerMobility": "short-walk",
+  "stepFree": false,
+  "crowd": "some",
+  "strangers": true,
+  "otherDogs": true,
+  "noise": "some",
+  "food": true,
+  "substitutes": ["No bottle? A small sealed plastic tub or a rolled sock works as the 'message'."],
+  "optionalSupplies": ["Long line (15 ft)", "Dog life vest", "Small cloth bag for the prize"],
+  "research": [
+    {
+      "label": "The Humane Society (HSUS): keeping dogs safe around water, algae and rinsing",
+      "url": "https://www.humaneworld.org/en/resources/keeping-dogs-safe-water"
+    },
+    {
+      "label": "Dogs Trust: enrichment activities, scent, choice and rest",
+      "url": "https://www.dogstrust.org.uk/dog-advice/life-with-your-dog/enrichment/enrichment-activities-for-dogs"
+    }
+  ],
+  "id": "adv-3w1m4a",
+  "title": "The Message in a Bottle",
+  "clue": "Something has washed up, and only one nose on this beach can tell where it came from.",
+  "reveal": "A sealed bottle waits at the water's edge with a note inside, and the note points to your dog's real prize. You plant it, your dog finds it by scent, and the shoreline becomes a treasure map.",
+  "objective": "Plant a clean sealed bottle above the waterline, let your dog sniff it out, read the note aloud and follow it to a second hidden find.",
+  "instructions": [
+    "Check the beach first: local dog rules, leash required or not, tide times, no algae scum, no strong currents or surf, no glass or sharp debris. If anything looks off, pick another day. Harness, six-foot leash, towel, fresh water.",
+    "At home, write a short note ('Look under the driftwood!'), roll it into a clean plastic bottle with a screw cap and drop in two treats' worth of smell by rubbing the outside with a treat. Pack a second prize: a favorite toy or a few treats in a small cloth bag.",
+    "While your dog waits with a helper or on a mat, tuck the bottle on dry sand or rocks well above the wet line, partly hidden by a log or a hollow. Plant the second prize 15 to 20 steps away in the opposite direction from the water.",
+    "Release your dog with 'find the message'. Walk the shoreline on a loose leash and let them sniff as long as they like. When they investigate the bottle, say 'yes' and open it yourself.",
+    "Read the note out loud in your best pirate voice and follow it together to the second prize. Let your dog find and keep it.",
+    "Optional paddle: if your dog wants water, stand where it is ankle deep, flat and hard-bottomed, and let them wade a few steps. Never lure or carry a reluctant dog in.",
+    "Pack out the bottle and note, offer fresh water, rinse sandy or salty paws and coat and dry them with the towel."
+  ],
+  "twist": "The 'wreck' is yours: you plant a scented bottle whose note leads to the real prize, so a plain shoreline sniff has a find, a reading and a payoff.",
+  "variations": [
+    "Easier: plant the bottle on a dry boardwalk, backyard or park lawn and skip the shoreline.",
+    "Seated version: an owner on a bench lets a helper plant the bottle in sight and your dog walks out to it on a long line.",
+    "Senior version: hide the bottle in plain view on flat sand, three steps away, and make the note a treat jar.",
+    "Harder: plant two bottles with two different notes and let your dog choose which to find first."
+  ],
+  "completion": "It counts when your dog has sniffed the bottle and you have read the note, whatever happens after. Skipping the water is fully part of it.",
+  "photoIdea": "Your dog nose to nose with the bottle in the sand, shot low at their eye level with the water blurred behind.",
+  "memoryPrompt": "What did your note say, and where did your dog's nose go first?",
+  "minutesMin": 30,
+  "minutesMax": 60,
+  "activeMinutes": 25,
+  "costMin": 0,
+  "costMax": 5,
+  "supplies": [
+    "Harness and six-foot leash",
+    "Clean plastic bottle with screw cap",
+    "Paper and pen",
+    "Fresh water and a bowl",
+    "Towel"
+  ],
+  "requires": ["leash-and-harness", "towels", "paper-and-pens", "car"],
+  "transport": "car",
+  "setting": "outdoor",
+  "homes": ["apartment", "house-no-yard", "house-with-yard"],
+  "space": "none",
+  "places": ["beach", "countryside"],
+  "energy": "moderate",
+  "dogMobility": "high",
+  "dietNotes": "Optional tiny treats from the daily ration; ask your vet about diet. Treats are the scent, not required.",
+  "water": "in-water",
+  "safety": [
+    "Supervise the whole time; check tide, surf, currents and algae first. A life vest is an option for dogs who wade.",
+    "Never required: the dog may skip water. Keep a short leash near surf, and check for glass, hooks and dead wildlife.",
+    "Offer fresh water so they do not drink seawater; rinse coat and paws after, and give wildlife and nests space."
+  ],
+  "activityTypes": ["scent-and-discovery", "outdoor-exploration", "water"],
+  "collections": ["beach-days-and-waterside", "the-curious-explorer", "seasons-together"],
+  "stamps": ["first-adventure", "beach-explorer"],
+  "keepsake": {
+    "family": "travel-postcard",
+    "theme": "sunset-shore",
+    "headline": "MESSAGE IN A BOTTLE",
+    "subhead": "Washed up at the water's edge",
+    "explainer": "Mission: sniff out the bottle and follow the note"
+  },
+  "status": "published",
+  "review": {
+    "ownerAppeal": 8,
+    "dogEnjoyment": 8,
+    "originality": 7,
+    "adventureFactor": 8,
+    "practicality": 6,
+    "memoryValue": 8,
+    "reviewedOn": "2026-11-26"
+  },
+  "role": "aspirational",
+  "teaser": "Something has washed ashore, and it has your dog's name on it.",
+  "showcase": false
+}

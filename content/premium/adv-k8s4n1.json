@@ -1,0 +1,115 @@
+{
+  "schema": 2,
+  "household": [],
+  "achievements": [],
+  "relatedGuides": [],
+  "affiliateProducts": [],
+  "sizes": [],
+  "access": "premium",
+  "status": "published",
+  "showcase": false,
+  "research": [
+    {
+      "label": "Dogs Trust: enrichment ideas for bored dogs",
+      "url": "https://www.dogstrust.org.uk/help-advice/behaviour/enrichment-ideas-for-bored-dogs"
+    },
+    {
+      "label": "ASPCA: canine DIY enrichment",
+      "url": "https://www.aspca.org/pet-care/dog-care/canine-diy-enrichment"
+    }
+  ],
+  "stamps": ["first-adventure"],
+  "avoidWeather": ["rain", "heat", "cold"],
+  "substitutes": ["No jar? Use a mug or a hat."],
+  "optionalSupplies": ["A small treat reward from your dog's regular food", "A snack for you"],
+  "variations": [
+    "Home version: slips for the yard, balcony, hallway or window, one rainy-day pick.",
+    "Seated version: only benches and viewpoints that need a short, flat walk.",
+    "Quiet version: only low-traffic spots and early-morning times.",
+    "No-car version: keep every slip within a ten-minute walk."
+  ],
+  "id": "adv-k8s4n1",
+  "role": "lifestyle",
+  "title": "Saturday Morning Mystery",
+  "clue": "Five folded slips sit in a jar, and none of them knows which one gets picked.",
+  "reveal": "Mid-week, you write a few pre-checked local ideas on slips of paper. On Saturday morning you draw one blind and go. Your dog holds a veto: if they are not keen, you draw again.",
+  "objective": "Draw a pre-checked local outing at random and enjoy it together, with your dog holding a veto.",
+  "instructions": [
+    "Mid-week, write five to six slips of paper, each naming a dog-friendly local idea within an easy trip: a street you have never walked, the far corner of a park, a quiet square, a viewpoint, a lakeside path on leash.",
+    "Check each idea in advance: dogs allowed, leash rules, opening hours, ground and shade. The owner confirms any shop, cafe or garden allows dogs, or leaves it out. Every slip must be a good outing in the weather you will have.",
+    "Add one wildcard slip: 'follow your dog's nose for twenty minutes, where it is safe'. Fold all slips and put them in a jar.",
+    "On Saturday morning, pour a drink, call your dog and draw one slip without looking at the others. Read it out loud in your best announcer voice.",
+    "Veto rule: if your dog hangs back, wants to turn around or seems uneasy at the spot, you may redraw once, no questions asked.",
+    "Go and enjoy it for an hour or two, with water, waste bags and a short rest in the middle. Head home when your dog has had enough.",
+    "Drop the used slip in a 'done' envelope and write a fresh idea to refill the jar for next time."
+  ],
+  "twist": "Chance picks the plan, your dog holds a veto, and the jar refills every week.",
+  "completion": "Counts once a slip has been drawn and you have spent time at the spot, including when a veto swaps it.",
+  "photoIdea": "Your dog beside the jar with the drawn slip, or the first moment at the chosen place, caught naturally.",
+  "memoryPrompt": "What did the jar choose, and did your dog use the veto?",
+  "minutesMin": 60,
+  "minutesMax": 120,
+  "activeMinutes": 45,
+  "costMin": 0,
+  "costMax": 20,
+  "prep": "light",
+  "supplies": [
+    "A jar or bowl",
+    "Paper slips and a pen",
+    "Leash and harness",
+    "Water and a bowl",
+    "Waste bags"
+  ],
+  "requires": ["paper-and-pens", "leash-and-harness"],
+  "transport": "walkable",
+  "reservation": {
+    "needed": false,
+    "note": "Check each slip first. The owner must confirm that any shop, cafe or garden allows dogs; leave it off if unsure."
+  },
+  "setting": "outdoor",
+  "homes": ["apartment", "house-no-yard", "house-with-yard"],
+  "space": "none",
+  "places": ["city", "countryside"],
+  "seasons": ["spring", "summer", "autumn", "winter"],
+  "lifeStages": ["adult", "senior"],
+  "energy": "moderate",
+  "personalities": ["curious", "adventurous", "playful"],
+  "dogMobility": "moderate",
+  "ownerMobility": "short-walk",
+  "stepFree": false,
+  "crowd": "some",
+  "strangers": true,
+  "otherDogs": true,
+  "noise": "some",
+  "food": false,
+  "water": "near-water",
+  "safety": [
+    "Check every slip in advance for dog rules, hours, shade and ground, and keep your dog leashed where required.",
+    "Honor the veto: go home or choose a quieter slip if your dog is uneasy, tired or too warm or cold.",
+    "Leash near any water, no swimming unless it is safe and your dog wants to; never leave your dog tied up outside a venue."
+  ],
+  "activityTypes": ["outdoor-exploration", "problem-solving", "memory-making"],
+  "collections": [
+    "the-curious-explorer",
+    "doggy-date-club",
+    "the-great-outdoors",
+    "seasons-together"
+  ],
+  "keepsake": {
+    "family": "event-ticket",
+    "theme": "saturday-draw-ticket",
+    "headline": "SATURDAY MYSTERY",
+    "subhead": "Drawn from the jar",
+    "explainer": "The jar chose. My dog held the veto"
+  },
+  "teaser": "A jar, a few folded slips and a Saturday morning with no plan except the one you draw.",
+  "review": {
+    "ownerAppeal": 8,
+    "dogEnjoyment": 7,
+    "originality": 6,
+    "adventureFactor": 7,
+    "practicality": 8,
+    "memoryValue": 8,
+    "reviewedOn": "2026-11-26"
+  }
+}

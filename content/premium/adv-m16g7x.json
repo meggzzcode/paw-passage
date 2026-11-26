@@ -1,0 +1,104 @@
+{
+  "schema": 2,
+  "access": "premium",
+  "status": "published",
+  "relatedGuides": [],
+  "affiliateProducts": [],
+  "achievements": [],
+  "household": [],
+  "sizes": [],
+  "id": "adv-m16g7x",
+  "role": "lifestyle",
+  "showcase": false,
+  "title": "The Secret Garden Expedition",
+  "clue": "Behind a gate you have passed a hundred times is somewhere you have never been.",
+  "reveal": "Seek out a dog-welcoming garden you have never visited and give it three stops, each with its own sense: your eyes at the gate, your ears in the heart, and your dog's nose in the hidden corner.",
+  "objective": "Visit a new dog-welcoming garden and make three stops: a Gate for your eyes, a Heart for your ears and a Hidden Corner for your dog's nose.",
+  "instructions": [
+    "Choose a garden or green space you have never entered: a community garden, pocket park, botanic garden or churchyard path. Check its website or phone to confirm dogs are allowed, leash rules and any entry fee.",
+    "Take a leash, water, waste bags and, if you like, a small notebook. Go at a quiet time, such as a weekday morning.",
+    "Stop 1, the Gate: stand at the entrance for a minute and look. What color is the first thing you see? Let your dog sniff the entrance on a loose leash.",
+    "Stop 2, the Heart: wander until your dog's route leads to the middle of the garden. Close your eyes for a minute and listen: water, birds, wind, leaves. Name the best sound.",
+    "Stop 3, the Hidden Corner: find the quietest, least-used corner. Let your dog sniff as long as they like on a clear path edge, away from mulch, mushrooms, plants and ponds, and see which smell is worth most of their time.",
+    "Keep your dog away from flowerbeds, mulch, mushrooms and pond edges, and do not pick or collect anything. Rest on a bench with water.",
+    "On the way out, say your three notes aloud: the color, the sound, the sniff. That is the garden's entry in your passport."
+  ],
+  "twist": "Each stop belongs to a sense: you read the Gate with your eyes, the Heart with your ears and the Hidden Corner with your nose, led by your dog.",
+  "variations": [
+    "Garden center version: visit a dog-welcoming garden center in a quiet hour; before buying a plant for home, check its name on the ASPCA toxic and non-toxic plant list.",
+    "Easier: a garden with level paths and benches, with only the Gate and Heart stops.",
+    "Seated version: sit on a bench at the Heart and let your dog explore the leash length.",
+    "Quieter version: go first thing in the morning and skip the Hidden Corner if it is busy."
+  ],
+  "completion": "You have made your three stops in a new garden at your dog's pace, and left everything as you found it.",
+  "photoIdea": "Your dog at the Hidden Corner, photographed from the side with the planting behind them.",
+  "memoryPrompt": "Which color, sound and smell did you choose, and which did your dog care about most?",
+  "minutesMin": 30,
+  "minutesMax": 60,
+  "activeMinutes": 30,
+  "costMin": 0,
+  "costMax": 15,
+  "prep": "light",
+  "supplies": ["Leash and harness", "Water and bowl", "Waste bags"],
+  "optionalSupplies": ["Small notebook and pen", "Blanket for a bench stop"],
+  "substitutes": ["Phone notes instead of a notebook"],
+  "requires": ["leash-and-harness", "paper-and-pens"],
+  "transport": "walkable",
+  "reservation": {
+    "needed": false,
+    "note": "Nothing to book, but confirm the garden allows dogs, its leash rules and any entry fee, as many gardens do not."
+  },
+  "setting": "outdoor",
+  "homes": ["apartment", "house-no-yard", "house-with-yard"],
+  "space": "none",
+  "places": ["city", "countryside"],
+  "seasons": ["spring", "summer", "autumn"],
+  "avoidWeather": ["heat", "rain"],
+  "lifeStages": ["adult", "senior"],
+  "energy": "gentle",
+  "personalities": ["curious", "gentle"],
+  "dogMobility": "moderate",
+  "ownerMobility": "short-walk",
+  "stepFree": false,
+  "crowd": "some",
+  "strangers": true,
+  "otherDogs": true,
+  "noise": "quiet",
+  "food": false,
+  "water": "near-water",
+  "safety": [
+    "Confirm dogs are allowed and keep yours leashed; no sniffing of mulch, mushrooms, bait or pond edges.",
+    "Many garden plants are toxic to dogs, so keep them from eating plants and check any plant names on the ASPCA lists.",
+    "Watch for bees, slippery paths and warm paving; skip hot days and leave if it gets busy."
+  ],
+  "activityTypes": ["outdoor-exploration", "scent-and-discovery", "photography"],
+  "collections": ["the-curious-explorer", "city-explorers", "doggy-date-club", "seasons-together"],
+  "stamps": ["first-adventure", "city-explorer", "sunshine-seeker", "seasonal-explorer"],
+  "keepsake": {
+    "family": "travel-postcard",
+    "theme": "garden-gate-postcard",
+    "headline": "THE SECRET GARDEN",
+    "subhead": "Three stops, three senses",
+    "explainer": "Garden visit: eyes at the gate, nose in the corner"
+  },
+  "teaser": "There is a garden you have never seen, and your dog is about to find its secrets.",
+  "research": [
+    {
+      "label": "ASPCA: toxic and non-toxic plants",
+      "url": "https://www.aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants"
+    },
+    {
+      "label": "Cornell Riney Canine Health Center: summer heat safety tips",
+      "url": "https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/health-info/summer-heat-safety-tips-dogs"
+    }
+  ],
+  "review": {
+    "ownerAppeal": 7,
+    "dogEnjoyment": 7,
+    "originality": 6,
+    "adventureFactor": 7,
+    "practicality": 8,
+    "memoryValue": 7,
+    "reviewedOn": "2026-11-26"
+  }
+}

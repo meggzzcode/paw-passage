@@ -1,0 +1,113 @@
+{
+  "schema": 2,
+  "access": "premium",
+  "status": "published",
+  "variations": [
+    "Fewer statues: two kids or two stuffed animals on Xs in a short hall.",
+    "Seated version: statues sit on chairs and the adult sits beside the basket.",
+    "Shy dog: skip the statues and just place the basket; if the dog avoids the line, the tour is done.",
+    "Outdoor version: statues beside a fenced-yard path, dog on a slack leash held by the adult."
+  ],
+  "optionalSupplies": ["Stickers for the kids"],
+  "substitutes": ["A towel over a laundry basket"],
+  "reservation": {
+    "needed": false
+  },
+  "seasons": [],
+  "avoidWeather": [],
+  "sizes": [],
+  "household": ["family"],
+  "achievements": [],
+  "relatedGuides": [],
+  "affiliateProducts": [],
+  "prep": "light",
+  "costMin": 0,
+  "costMax": 0,
+  "transport": "none",
+  "crowd": "none",
+  "strangers": false,
+  "otherDogs": false,
+  "noise": "quiet",
+  "food": false,
+  "water": "none",
+  "stepFree": true,
+  "homes": ["apartment", "house-no-yard", "house-with-yard"],
+  "lifeStages": ["adult", "senior"],
+  "setting": "indoor",
+  "places": ["home"],
+  "space": "a-room",
+  "dogMobility": "low",
+  "ownerMobility": "seated",
+  "energy": "gentle",
+  "id": "adv-7f2m6r",
+  "title": "The Statue Garden",
+  "clue": "The children have turned into statues, and the visitor has the whole gallery to themselves.",
+  "reveal": "Your kids freeze like statues along a hallway or path, and your dog is the only visitor allowed to move. At the end of the gallery, a basket holds a toy. Dog first, kids still, adult close.",
+  "objective": "Line the kids up as still statues, let your dog stroll the gallery at their own pace, and unveil a find at the end.",
+  "instructions": [
+    "Adult job first: pick a room or fenced yard path wide enough for a walking lane, with statue spots at least three feet to the side of it. Mark an X for each statue with tape. The adult holds a slack leash, or the dog is loose in a gated room.",
+    "Explain the rules to the kids: statues stand with hands down, eyes on their shoes, mouths closed, and never reach for or call the dog. Statues are for kids age five and up. They stay frozen until the dog has moved well past them.",
+    "Let the kids hide a toy in a basket at the end of the gallery, under a cloth. Everyone stays in place while the adult brings the dog to the entrance.",
+    "Say 'the gallery is open' and wait. Let your dog walk the lane however they like: sniffing statues, skipping any, taking their time. Do not call or lure.",
+    "When the dog passes a statue, that kid may unfreeze, sit down quietly and stay on their X. The last statue is the one nearest the basket.",
+    "Adult lifts the cloth when the dog arrives. The toy is theirs; kids stay seated and quiet for a moment.",
+    "Close with the guest book: the kids write or draw one line for each statue ('Dog sniffed me twice') and give the dog a stamp-like sticker on the book, not on the dog."
+  ],
+  "twist": "The kids are the exhibits, frozen until the dog has passed, and the dog's route through them decides what the guest book says.",
+  "completion": "The dog has walked some or all of the gallery, or chosen to skip it, and the guest book has one entry.",
+  "photoIdea": "The dog passing a frozen statue, shot from behind the kids at dog height, with faces turned away.",
+  "memoryPrompt": "Which statue did the dog sniff longest, and who froze best?",
+  "minutesMin": 15,
+  "minutesMax": 25,
+  "activeMinutes": 10,
+  "supplies": [
+    "Painter's tape",
+    "A basket and a cloth",
+    "A toy",
+    "Paper and a pen for the guest book"
+  ],
+  "requires": ["toys", "paper-and-pens", "household-items"],
+  "safety": [
+    "An adult stays with the dog on a slack leash. Statues stand three feet or more from the path; kids never touch or follow.",
+    "Kids under five watch from a seat instead of being statues. They stay quiet until the dog has passed.",
+    "The dog may skip any statue or leave at any time; end the gallery if they show worry."
+  ],
+  "activityTypes": ["play-and-games", "scent-and-discovery"],
+  "collections": ["rainy-day-club", "doggy-date-club", "home-sweet-home"],
+  "stamps": ["first-adventure", "memory-maker"],
+  "keepsake": {
+    "family": "collage",
+    "theme": "favorite-moments",
+    "headline": "THE STATUE GARDEN",
+    "subhead": "Open to one visitor, all afternoon",
+    "explainer": "Toured a gallery of very still children"
+  },
+  "research": [
+    {
+      "label": "Cornell Riney Canine Health Center: canine enrichment ideas",
+      "url": "https://riney.vet.cornell.edu/member-benefits-health-tips/canine-enrichment-ideas"
+    },
+    {
+      "label": "Dogs Trust: enrichment activities for dogs",
+      "url": "https://www.dogstrust.org.uk/dog-advice/life-with-your-dog/enrichment/enrichment-activities-for-dogs"
+    },
+    {
+      "label": "VCA Animal Hospitals: enrichment, multiple pets and food toys",
+      "url": "https://www.vcahospitals.com/know-your-pet/enrichment"
+    }
+  ],
+  "personalities": ["curious", "gentle"],
+  "review": {
+    "ownerAppeal": 7,
+    "dogEnjoyment": 6,
+    "originality": 8,
+    "adventureFactor": 7,
+    "practicality": 6,
+    "memoryValue": 8,
+    "reviewedOn": "2026-11-26"
+  },
+  "role": "everyday",
+  "teaser": "An unusual gallery, a very distinguished visitor and a surprise at the end.",
+  "previewTitle": "A Very Unusual Gallery",
+  "showcase": false
+}

@@ -1,0 +1,109 @@
+{
+  "schema": 2,
+  "access": "premium",
+  "status": "published",
+  "achievements": [],
+  "relatedGuides": [],
+  "affiliateProducts": [],
+  "id": "adv-4k3z8f",
+  "title": "The Dog Line",
+  "clue": "Follow, never lead, and let the path draw itself.",
+  "reveal": "For ten minutes your dog explores a safe private space while you trace their route as one unbroken line. Then the drawing gets a title, a gallery card and a tiny opening night, with your dog as artist and guest of honor.",
+  "objective": "Follow your dog around a safe, private space, trace their route as one unbroken line, then hold a tiny gallery opening for the finished work.",
+  "instructions": [
+    "Choose a private, safe space: a cleared room, a hall, a fenced yard or a quiet corner where nobody else can wander in. Remove anything breakable, wobbly or small enough to swallow, and close doors so no other dog or visitor drops in.",
+    "Tape a sheet of paper to a clipboard or a book and keep the pen capped until you start. Sit at the edge. If you like, add one new safe thing for them to find, such as a cardboard box or a folded towel, or add nothing.",
+    "When your dog starts to explore, set the pen on the paper and draw their path as one unbroken line as they move. Look at your dog, not at the page; wobbly is the point. Make a small dot where they stand still and a loop where they sniff for long.",
+    "The whole time you follow and never lead: no calling, no treats, no pointing. If they come to you, stay still. If they leave, stay in your seat. The door stays open to their rest spot so they can walk away at any time.",
+    "When your dog settles or leaves, lift the pen. That is the end of the line. Offer water and let them rest.",
+    "Name the piece after its best part ('The Long Sniff', 'Great Loop of the Afternoon'). Sign it with your name and a dot or paw for the artist, and write a gallery card: Title, Artist, Medium ('one pen, one dog, one afternoon') and date.",
+    "Hold the opening. Lean the piece on a shelf or hang it low on a wall in a calm room, dim the lights a little and read the card aloud once. Your dog is the guest of honor: they can wander the gallery, nap on their blanket in front of the work or ignore the whole thing. Add each new line to the wall over time."
+  ],
+  "twist": "You draw only what your dog does: one unbroken line, no calling and no leading, so the artwork is the route they chose, and it earns an opening night.",
+  "variations": [
+    "Small home: a hallway or one room, five minutes.",
+    "Seated owner: stay in one chair in the middle of the room and draw without moving.",
+    "Private field, the upgrade (needs a booking and usually a car): book a secure field exclusively for your slot, with no other dogs or people. Ask about fence height, latches, vaccination rules and cancellation. Restrain your dog in the car, check the weather and keep a long line on if you are unsure about recall.",
+    "Shy dog or new to your home: no new objects and no paper; sit and watch in a quiet room for five minutes."
+  ],
+  "completion": "Your dog has explored at their own pace, the line is drawn and the piece has had its opening, even if the room was quiet.",
+  "photoIdea": "The finished line on the wall with a gallery card, and your dog resting nearby, or a wide shot of your dog small in the space.",
+  "memoryPrompt": "Where did the line loop, and what did you title the piece?",
+  "minutesMin": 15,
+  "minutesMax": 35,
+  "activeMinutes": 15,
+  "costMin": 0,
+  "costMax": 0,
+  "prep": "none",
+  "supplies": [
+    "Paper",
+    "A pen",
+    "A clipboard or a book to rest on",
+    "A small card for the gallery label"
+  ],
+  "optionalSupplies": ["A cardboard box or folded towel as one new thing", "Tape or a frame"],
+  "substitutes": ["No clipboard: a tray or a hardback book"],
+  "requires": ["paper-and-pens"],
+  "transport": "none",
+  "reservation": {
+    "needed": false,
+    "note": "The core needs nothing booked. The private-field upgrade needs an exclusive-use booking and usually a car."
+  },
+  "setting": "either",
+  "homes": ["apartment", "house-no-yard", "house-with-yard"],
+  "space": "a-room",
+  "places": ["home"],
+  "seasons": [],
+  "avoidWeather": [],
+  "lifeStages": ["puppy", "adult", "senior"],
+  "sizes": [],
+  "energy": "gentle",
+  "personalities": ["curious", "gentle"],
+  "dogMobility": "low",
+  "ownerMobility": "seated",
+  "stepFree": true,
+  "crowd": "none",
+  "strangers": false,
+  "otherDogs": false,
+  "noise": "quiet",
+  "food": false,
+  "water": "none",
+  "safety": [
+    "Clear the space of hazards and small items, and keep the pen capped and out of reach.",
+    "Puppies: a few minutes in a puppy-proofed room, and ask your vet before outings. Seniors: non-slip floors.",
+    "Field or car trips: check the fence, provide shade and water, and restrain your dog in the car."
+  ],
+  "activityTypes": ["creative-projects", "memory-making"],
+  "collections": [
+    "creative-companions",
+    "home-sweet-home",
+    "the-curious-explorer",
+    "the-golden-years"
+  ],
+  "stamps": ["first-adventure", "cozy-companion", "memory-maker"],
+  "keepsake": {
+    "family": "poster",
+    "theme": "paint-studio",
+    "headline": "THE DOG LINE",
+    "subhead": "One line, one opening night",
+    "explainer": "One line on the map, drawn by following the dog"
+  },
+  "research": [
+    {
+      "label": "Cornell Riney Canine Health Center: senior dog enrichment",
+      "url": "https://www.vet.cornell.edu/departments-centers-and-institutes/riney-canine-health-center/canine-health-topics/senior-dog-enrichment"
+    }
+  ],
+  "review": {
+    "ownerAppeal": 7,
+    "dogEnjoyment": 7,
+    "originality": 8,
+    "adventureFactor": 6,
+    "practicality": 9,
+    "memoryValue": 8,
+    "reviewedOn": "2026-11-26"
+  },
+  "role": "everyday",
+  "teaser": "One unbroken line, one very busy dog and a drawing nobody could have planned.",
+  "showcase": true
+}

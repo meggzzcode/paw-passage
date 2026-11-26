@@ -6,6 +6,8 @@
 //   NETLIFY_AUTH_TOKEN=... SITE_ID=... node scripts/premium-import.mjs --file ~/private/premium.json --env preview --write  # writes
 //   add --env production --write --yes-production to touch the live store; add --prune to delete adventures not in the file.
 //
+// --dir <folder> instead of --file: one JSON file per adventure (<id>.json, any sub-folders). Standard path in the single-repo
+// workflow: --dir content/premium (git-ignored; docs/PREMIUM-CONTENT-WORKFLOW.md). Same validation, same dry-run default.
 // The file is a JSON array of adventures (schema: src/passport/schema.ts), kept OUTSIDE git. Paths inside this repo are refused.
 // Public previews: cards flagged showcase:true are projected (allowlist, src/server/passport/previews.ts) into `previews/index`,
 // together with library totals and structural match fields for every published card (free ones are read from content/adventures).
@@ -16,6 +18,7 @@ import { dirname, join, resolve, sep } from "node:path";
 import { fileURLToPath } from "node:url";
 import { getStore } from "@netlify/blobs";
 import { parse as parseYaml } from "yaml";
+import { readPremiumDir, resolvePremiumDir } from "./premium-dir-lib.mjs";
 import { adventureSchema, validateLibrary } from "../src/passport/schema.ts";
 import { buildPreviewIndex, PREVIEW_INDEX_KEY } from "../src/server/passport/previews.ts";
 
@@ -28,23 +31,44 @@ const die = (m, c = 2) => {
   process.exit(c);
 };
 
-const file = opt("--file") ?? die("Missing --file <path to premium JSON outside the repo>");
+const dirOpt = opt("--dir");
+if (dirOpt && opt("--file")) die("Use either --file or --dir, not both.");
+const file =
+  dirOpt ??
+  opt("--file") ??
+  die("Missing --file <path to premium JSON outside the repo> or --dir <folder>");
 const env = opt("--env") ?? "preview";
 if (!["preview", "production"].includes(env)) die("--env must be preview or production");
-const abs = realpathSync(resolve(file));
-if (abs === root || abs.startsWith(root + sep))
-  die("Refusing: the premium file must live OUTSIDE the git repository.");
+let abs;
+let dirProblems = [];
+if (dirOpt) {
+  try {
+    abs = resolvePremiumDir(dirOpt, root);
+  } catch (e) {
+    die(e instanceof Error ? e.message : "bad folder");
+  }
+} else {
+  abs = realpathSync(resolve(file));
+  if (abs === root || abs.startsWith(root + sep))
+    die("Refusing: the premium file must live OUTSIDE the git repository.");
+}
 if (env === "production" && flag("--write") && !flag("--yes-production"))
   die("Writing to production needs --yes-production.");
 
 let data;
-try {
-  data = JSON.parse(readFileSync(abs, "utf8"));
-} catch (e) {
-  die(`Could not read JSON: ${e instanceof Error ? e.message : "error"}`);
+if (dirOpt) {
+  const r = readPremiumDir(abs);
+  data = r.items.map((i) => i.raw);
+  dirProblems = r.problems;
+} else {
+  try {
+    data = JSON.parse(readFileSync(abs, "utf8"));
+  } catch (e) {
+    die(`Could not read JSON: ${e instanceof Error ? e.message : "error"}`);
+  }
+  if (!Array.isArray(data)) die("The file must be a JSON array of adventures.");
 }
-if (!Array.isArray(data)) die("The file must be a JSON array of adventures.");
-const problems = [];
+const problems = [...dirProblems];
 const adventures = [];
 for (const [i, raw] of data.entries()) {
   const r = adventureSchema.safeParse(raw);

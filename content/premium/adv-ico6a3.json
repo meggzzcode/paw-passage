@@ -1,0 +1,100 @@
+{
+  "schema": 2,
+  "access": "premium",
+  "status": "published",
+  "relatedGuides": [],
+  "affiliateProducts": [],
+  "research": [],
+  "achievements": [],
+  "optionalSupplies": ["A quiet chew your dog already knows"],
+  "substitutes": [
+    "No rubber mat? A yoga mat.",
+    "No scent cloths? Rub a clean T-shirt on their bed."
+  ],
+  "seasons": [],
+  "sizes": [],
+  "reservation": {
+    "needed": false
+  },
+  "id": "adv-ico6a3",
+  "title": "The Waymarked Walk",
+  "clue": "The path was built for a dog who knows the world by feel and smell, and every turn has its own marker.",
+  "reveal": "A short indoor or yard path for a dog who sees or hears less, or who is older or unsure on new ground: two textures underfoot and a familiar smell at each marker, so they can read the route with paws and nose and arrive confidently.",
+  "objective": "Build a short waymarked route of two textures and scents, walk it together once, and let your dog use it as they choose.",
+  "instructions": [
+    "Pick a short route (a hallway, one room, or a straight stretch of fully secure yard) with no steps, no furniture corners and no slippery floors. Keep the layout the same from now on: no moving furniture.",
+    "Lay two waymarks on a non-slip underlay: a rubber mat at the start and a rug at the destination. At each, place a different mild home scent: a corner of your worn T-shirt, their blanket or a clean cloth from their favorite spot.",
+    "Before the walk, make sure they know you are there: stay where they can see or smell you, offer your hand to sniff, and never touch a sleeping or unaware dog from behind or startle them.",
+    "Walk the route once together on a loose leash or alongside, speaking softly, pausing at each waymark while they sniff. Do not steer; they can repeat any section or stop.",
+    "At the end, a comfy bed and a quiet chew are waiting. Let them settle with no cues.",
+    "Leave the waymarks in place as their 'lighthouses'. If they seem to enjoy it, add one new waymark a week, and change nothing else in the route."
+  ],
+  "twist": "The route is built from the dog's strengths, touch and smell, so a dog who sees or hears less, or who is less sure of the world, reads it with confidence.",
+  "variations": [
+    "Easiest: one waymark and a bed, just a few steps long.",
+    "Yard version: paving, turf and a mat in a secure yard on a calm day.",
+    "After a week, add a third waymark that smells of a favorite place or person, and keep the rest unchanged.",
+    "Seated owner: lay the route and sit at the end; the dog walks it to you."
+  ],
+  "completion": "Your dog has met the route and walked or sniffed some of it; counts even if they stop, return or go to bed.",
+  "photoIdea": "Their nose resting on the rug at the end, or the line of waymarks seen from the doorway.",
+  "memoryPrompt": "Which waymark did your dog spend longest on, and how did they seem on the way back?",
+  "minutesMin": 10,
+  "minutesMax": 20,
+  "activeMinutes": 10,
+  "costMin": 0,
+  "costMax": 5,
+  "prep": "some",
+  "supplies": [
+    "Rubber mat",
+    "Rug",
+    "Non-slip underlay",
+    "Worn T-shirt, blanket or cloth for scents"
+  ],
+  "requires": ["blanket", "household-items", "towels"],
+  "transport": "none",
+  "dietNotes": "Chew only if your dog already eats it safely; skip it and use a blanket scent instead if you prefer.",
+  "setting": "either",
+  "homes": ["apartment", "house-no-yard", "house-with-yard"],
+  "space": "a-room",
+  "places": ["home"],
+  "avoidWeather": [],
+  "lifeStages": ["adult", "senior"],
+  "energy": "gentle",
+  "personalities": ["gentle", "curious", "cozy"],
+  "dogMobility": "low",
+  "ownerMobility": "minimal-walking",
+  "stepFree": true,
+  "crowd": "none",
+  "strangers": false,
+  "otherDogs": false,
+  "noise": "quiet",
+  "food": true,
+  "water": "none",
+  "safety": [
+    "Approach where they can see or smell you, and never startle or touch a dog from behind.",
+    "Keep scents mild (no essential oils or candles) and the route clear of steps, with mats flat on non-slip underlay."
+  ],
+  "activityTypes": ["scent-and-discovery", "relaxation"],
+  "collections": ["the-golden-years", "home-sweet-home", "the-curious-explorer"],
+  "stamps": ["first-adventure", "cozy-companion"],
+  "keepsake": {
+    "family": "trading-card",
+    "theme": "trail-marker-card",
+    "headline": "THE WAYMARKER",
+    "subhead": "Navigates by nose and paw",
+    "explainer": "Followed the markers. The nose checked every one"
+  },
+  "review": {
+    "ownerAppeal": 7,
+    "dogEnjoyment": 8,
+    "originality": 8,
+    "adventureFactor": 6,
+    "practicality": 7,
+    "memoryValue": 7,
+    "reviewedOn": "2026-11-26"
+  },
+  "role": "everyday",
+  "teaser": "A short, gentle path made for confident noses and paws.",
+  "showcase": false
+}

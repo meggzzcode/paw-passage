@@ -21,7 +21,7 @@ export const Route = createFileRoute("/restore-access")({
         </p>
         <AccessForm kind="restore" />
         <p className="pa-fine">
-          Haven't bought it? The free adventures work without any code or account.
+          Haven't bought it? Your free adventure works without any code or account.
         </p>
       </div>
     </Container>

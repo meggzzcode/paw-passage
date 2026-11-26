@@ -248,7 +248,7 @@ describe("discover: completion and cards", () => {
     if (more.getAttribute("aria-expanded") !== "true") fireEvent.click(more);
   };
 
-  it("completion updates progress everywhere and moves on to the photo filter", () => {
+  it("completion updates progress everywhere and moves on to the photo keepsake", () => {
     show("browse");
     const first = panelCards()[0]!;
     const title = within(first).getAllByRole("heading")[0]!.textContent!;

@@ -51,7 +51,7 @@ function fileName(family: string, size: SizeId): string {
 }
 
 /**
- * The whole keepsake flow, in two modes. "Make my photo filter" (the default) puts a small playful overlay on the
+ * The whole keepsake flow, in two modes. "Make my photo keepsake" (the default) puts a small playful overlay on the
  * photo: sticker title, one explainer line, a name and date stamp and a tiny brand mark. "Keepsake card" is the
  * illustrated artwork. In both: pick or take a photo (or skip it): frame it, add a name, preview, then download or share. Photos stay in memory on this device: they are never
  * uploaded or stored, and the exported PNG is a fresh canvas encode with no original metadata.
@@ -286,7 +286,7 @@ export function Keepsake({
         <legend>What would you like to make?</legend>
         {(
           [
-            ["filter", "Make my photo filter", "Your photo, with a cute sticker overlay"],
+            ["filter", "Make my photo keepsake", "Your photo, with a cute sticker overlay"],
             ["card", "Keepsake card", "The illustrated keepsake artwork"],
           ] as const
         ).map(([id, title, hint]) => (
@@ -456,7 +456,7 @@ export function Keepsake({
           role="img"
           aria-label={
             isFilter
-              ? `Preview of the ${headline} photo filter for ${name || "your dog"}, ${filterStyleLabel(look)} look`
+              ? `Preview of the ${headline} photo keepsake for ${name || "your dog"}, ${filterStyleLabel(look)} look`
               : `Preview of the ${headline} keepsake for ${name || "your dog"}`
           }
         />

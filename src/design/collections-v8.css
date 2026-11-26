@@ -520,3 +520,47 @@ html[data-acct] .pp-header .pp-header-cta,
 html[data-acct] .pp-header .pp-restore-link {
   visibility: hidden;
 }
+
+/* Home for returning customers: until access is known the visitor home is not painted (no flash of the sales page). */
+html[data-acct] .pp-home-visitor {
+  visibility: hidden;
+  height: 100vh;
+  overflow: hidden;
+}
+.pp-home-skeleton {
+  min-height: 70vh;
+}
+.pp-returning-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.25rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+.pp-returning-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+
+/* Tap targets: links in short lines and running text get a 44px touch area without changing how the sentence reads. */
+.co-crumbs a,
+a.pa-linkbtn {
+  display: inline-block;
+  min-height: 44px;
+  line-height: 44px;
+  padding-block: 0;
+}
+.pa-fine a:not(.pp-btn) {
+  display: inline-block;
+  padding-block: 0.7rem;
+  margin-block: -0.7rem;
+}
+.pp-footer a {
+  min-width: 2.75rem;
+  justify-content: center;
+}
+#access-status:focus {
+  outline: none;
+}

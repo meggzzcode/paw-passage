@@ -23,6 +23,9 @@ import { PurchasePrompt } from "@/components/site/PurchasePrompt";
 import { ProductDemo } from "@/components/site/ProductDemo";
 import { DemoAdventure } from "@/components/site/DemoAdventure";
 import { SeasonalPicks } from "@/components/site/SeasonalPicks";
+import { HeroCollage } from "@/components/site/HeroCollage";
+import { HomeSkeleton, ReturningHome } from "@/components/site/ReturningHome";
+import { useNavMode } from "@/components/shell/useNavMode";
 import { TrustStrip } from "@/components/site/TrustStrip";
 import { PreviewCards } from "@/components/site/PreviewCards";
 import {
@@ -49,6 +52,22 @@ export const Route = createFileRoute("/")({
     }),
   component: Home,
 });
+
+/**
+ * One home page, two audiences. Server HTML and the first client render are the visitor page (hydration matches and the
+ * indexable content stays); a verified customer gets the returning-customer home, and a browser that holds an account
+ * flag shows a neutral skeleton until access is known (CSS hides the visitor page from the first frame via data-acct).
+ */
+function Home() {
+  const { mode } = useNavMode();
+  if (mode === "paid" || mode === "error") return <ReturningHome />;
+  if (mode === "loading") return <HomeSkeleton />;
+  return (
+    <div className="pp-home-visitor">
+      <SalesHome />
+    </div>
+  );
+}
 
 const HOME_FAQ_IDS = [
   "what-you-buy",
@@ -105,7 +124,7 @@ const COLLECTION_TASTE = [
   },
 ];
 
-function Home() {
+function SalesHome() {
   const summary = usePremiumSummary();
   const previews = usePreviews();
   // Counts are advertised only when the previews API verified them; otherwise the summary or honest fallback wording.
@@ -148,49 +167,7 @@ function Home() {
               </p>
             </div>
             <div>
-              <div className="pp-collage" aria-hidden="true">
-                <figure
-                  className="pp-polaroid"
-                  style={{ width: "58%", height: "78%", left: "4%", top: "4%", rotate: "-5deg" }}
-                >
-                  <span className="pp-tape" />
-                  <img src={picnicImg} alt="" width={1024} height={1280} />
-                  <span>sunday picnic</span>
-                </figure>
-                <figure
-                  className="pp-polaroid"
-                  style={{ width: "44%", height: "46%", right: "2%", top: "0%", rotate: "6deg" }}
-                >
-                  <img src={dateImg} alt="" width={1024} height={1024} loading="lazy" />
-                  <span>coffee date ☕</span>
-                </figure>
-                <figure
-                  className="pp-polaroid"
-                  style={{
-                    width: "42%",
-                    height: "44%",
-                    right: "6%",
-                    bottom: "0%",
-                    rotate: "-3deg",
-                  }}
-                >
-                  <img src={puppyImg} alt="" width={1024} height={1024} loading="lazy" />
-                  <span>first puddle!</span>
-                </figure>
-                <div className="pp-sticker">
-                  Little
-                  <br />
-                  moments.
-                  <br />
-                  Big
-                  <br />
-                  memories.
-                </div>
-              </div>
-              <p className="pp-collage-note">
-                Illustrative images only. They are not photos of real dogs, people or completed
-                adventures.
-              </p>
+              <HeroCollage />
             </div>
           </div>
         </Container>

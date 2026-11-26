@@ -296,6 +296,14 @@ export function FreeStarter({ ctx }: { ctx?: CtxKey | undefined } = {}) {
     if (prev !== null && prev !== view && view !== "quiz") focusInto(head.current);
   }, [ready, view]);
 
+  // Leaving the preferences quiz (save or cancel) puts focus back on the page heading rather than dropping it.
+  const prevStage = useRef(stage);
+  useEffect(() => {
+    if (prevStage.current === "survey" && stage === "welcome" && view !== "quiz")
+      focusInto(head.current);
+    prevStage.current = stage;
+  }, [stage, view]);
+
   if (!ready || status === "checking")
     return (
       <Container>

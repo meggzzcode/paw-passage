@@ -1,6 +1,6 @@
 import { Shortcuts } from "./Shortcuts";
 import { Itineraries } from "./Itineraries";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Container } from "@/components/shell/Container";
 import { ProfileEditor } from "./ProfileEditor";
 import { OwnerPrefsEditor } from "./OwnerPrefsEditor";
@@ -20,6 +20,8 @@ import type { CustomCollection, DogProfile, Scope, SessionFilters } from "@/pass
 import { listCollections, members, newCollectionId } from "@/passport/progress";
 import { newCollection, setProfile } from "@/passport/local-store";
 import { usePassport } from "@/passport/usePassport";
+import { isRevealed } from "@/passport/starter";
+import { hasAccountFlag } from "@/passport/premium-client";
 import { track } from "@/passport/events";
 import { CtxChip } from "@/components/journal/CtxChip";
 import { ctxToFilters, type CtxKey } from "@/passport/journal-context";
@@ -72,6 +74,12 @@ export function DiscoverPage(props: {
   onClearCtx?: () => void;
 }) {
   const { unlocked } = useAdventureLibrary();
+  const { ready, save } = usePassport();
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
+  // The public explainer is for visitors still deciding. Server HTML and the first render keep it (crawlable); a returning
+  // customer's browser or a visitor who already revealed an adventure no longer sees it.
+  const showIntro = !(mounted && (hasAccountFlag() || (ready && isRevealed(save))));
   const chip = props.ctx && props.onClearCtx && (
     <Container>
       <CtxChip ctx={props.ctx} onClear={props.onClearCtx} />
@@ -86,7 +94,7 @@ export function DiscoverPage(props: {
     <>
       {chip}
       <FreeStarter ctx={props.ctx} />
-      <DiscoverIntro />
+      {showIntro && <DiscoverIntro />}
     </>
   );
 }

@@ -161,7 +161,7 @@
   }
 }
 
-/* Mode picker: photo filter (default) or illustrated keepsake card. */
+/* Mode picker: photo keepsake (default) or illustrated keepsake card. */
 .kp-modes {
   display: grid;
   gap: 0.5rem;

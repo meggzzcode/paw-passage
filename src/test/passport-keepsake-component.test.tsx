@@ -91,9 +91,9 @@ describe("<Keepsake />", () => {
     expect(screen.getByRole("radio", { name: /Story/ })).toBeChecked();
   });
 
-  it("makes the photo filter the default, with the keepsake card as a labelled second choice", () => {
+  it("makes the photo keepsake the default, with the keepsake card as a labelled second choice", () => {
     render(<Keepsake adventure={adventure} memory="" />);
-    expect(screen.getByRole("radio", { name: /Make my photo filter/ })).toBeChecked();
+    expect(screen.getByRole("radio", { name: /Make my photo keepsake/ })).toBeChecked();
     expect(screen.getByRole("radio", { name: /Keepsake card/ })).not.toBeChecked();
     expect(screen.getByRole("button", { name: "Try another look" })).toBeInTheDocument();
     expect(screen.queryByText(/A short memory/)).toBeNull();

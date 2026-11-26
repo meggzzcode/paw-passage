@@ -242,7 +242,8 @@ export function IntroQuiz({
     Math.min(resume.current?.idx ?? 0, Math.max(0, steps.length - 1)),
   );
   const heading = useRef<HTMLHeadingElement>(null);
-  const moved = useRef(resume.current.idx > 0);
+  // Editing starts on the first question after a tap on "Edit preferences", so focus follows it from the start.
+  const moved = useRef(resume.current.idx > 0 || mode === "edit");
 
   const setHistory = useCallback(
     (n: number) => {

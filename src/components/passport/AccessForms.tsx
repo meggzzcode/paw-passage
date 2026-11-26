@@ -2,7 +2,7 @@
 // The code is held only in this component's input while typing. It is never put in a URL, a log, storage or an event.
 import { AppLink } from "@/components/shell/AppLink";
 import { InstallPrompt } from "@/components/site/InstallPrompt";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { importJson, getSave } from "@/passport/local-store";
 import {
   clearThisDevice,
@@ -48,6 +48,11 @@ export function AccessForm({ kind }: { kind: AccessKind }) {
   const [done, setDone] = useState<string | null>(null);
   const [error, setError] = useState<AccessFailure | null>(null);
   const restoring = kind === "restore";
+  // After Activate the focused button may disappear (the page changes to its confirmed state): focus the result instead.
+  const status = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    if (done || error) status.current?.focus({ preventScroll: true });
+  }, [done, error]);
 
   async function submit(e: React.FormEvent) {
     e.preventDefault();
@@ -123,7 +128,7 @@ export function AccessForm({ kind }: { kind: AccessKind }) {
           {busy ? "Checking…" : restoring ? "Restore access" : "Activate"}
         </button>
       </div>
-      <div id="access-status" role="status" aria-live="polite">
+      <div id="access-status" role="status" aria-live="polite" tabIndex={-1} ref={status}>
         {error && <p className="co-error">{FAILURE_TEXT[error]}</p>}
         {done && <p>{done}</p>}
       </div>

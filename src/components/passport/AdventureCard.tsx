@@ -208,7 +208,12 @@ export function AdventureCard({
   }, [focusOnMount]);
   // Restrictions first (yard, people, dogs), then the reassuring labels. Wording is shared with previews.
   const tags = (() => {
-    const good = goodLabels(glanceOf(a), a.noise === "quiet");
+    // The fact row above already says cost, setting and effort, so the tags never repeat them.
+    const stated = new Set<string>();
+    if (a.costMax === 0) stated.add("No additional spending");
+    if (a.setting === "indoor") stated.add("Indoor");
+    if (a.energy === "gentle") stated.add("Gentle");
+    const good = goodLabels(glanceOf(a), a.noise === "quiet").filter((t) => !stated.has(t));
     const restrict = tagChips(a).filter(
       (t) => !["Puppy-friendly", "Senior-friendly", "Quiet"].includes(t),
     );

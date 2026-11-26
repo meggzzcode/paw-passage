@@ -165,10 +165,12 @@ describe("keepsake claims: free means examples only", () => {
     "src/components/passport/TrustBlock.tsx",
     "src/config/commercial.ts",
   ];
-  it("no marketing copy says free visitors can make or create a keepsake or photo filter", () => {
+  it("no marketing copy says free visitors can make or create a keepsake or photo keepsake", () => {
     for (const f of files) {
       const t = readFileSync(f, "utf8").replace(/\s+/g, " ");
-      expect(t, f).not.toMatch(/Make my photo filter|turn it into a photo filter/i);
+      expect(t, f).not.toMatch(
+        /Make my photo (?:filter|keepsake)|turn it into a photo (?:filter|keepsake)/i,
+      );
       expect(t, f).not.toMatch(/a stamp(?: for your passport)? and a keepsake you can make/i);
       expect(t, f).not.toMatch(/A stamp and a keepsake</);
       expect(t, f).not.toMatch(/more keepsake designs/i);

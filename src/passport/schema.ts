@@ -155,7 +155,7 @@ export const adventureSchema = z
       theme: slug, // names the variant of the family: palette, wording and ornaments are chosen from it
       headline: nonEmpty.max(40), // the big words on the artwork, e.g. "TOY CHAMPION"
       subhead: nonEmpty.max(60).optional(),
-      // One cute line printed on the photo filter that says what the adventure was ("Mission: loot found in my human's
+      // One cute line printed on the photo keepsake that says what the adventure was ("Mission: loot found in my human's
       // pocket"). It is part of the artwork, never a suggested caption; no hashtags, no emoji.
       explainer: nonEmpty.max(64).optional(),
     }),

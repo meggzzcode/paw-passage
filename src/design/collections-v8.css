@@ -107,6 +107,9 @@
   line-height: 1.15;
 }
 .co-featured-title a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   color: inherit;
   text-decoration: none;
 }

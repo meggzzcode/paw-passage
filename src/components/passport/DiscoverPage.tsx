@@ -34,6 +34,8 @@ import { track } from "@/passport/events";
 import { CtxChip } from "@/components/journal/CtxChip";
 import type { CtxKey } from "@/passport/journal-context";
 import { AppLink } from "@/components/shell/AppLink";
+import { useNavMode } from "@/components/shell/useNavMode";
+import { AccessCheckFailed } from "@/components/site/ReturningHome";
 
 /**
  * Public, server-rendered explanation of free adventure discovery. It is plain text that search engines can read without
@@ -83,6 +85,7 @@ export function DiscoverPage(props: {
 }) {
   const { unlocked } = useAdventureLibrary();
   const { ready, save } = usePassport();
+  const { mode: accessMode } = useNavMode();
   const [mounted, setMounted] = useState(false);
   useEffect(() => setMounted(true), []);
   // The public explainer is for visitors still deciding. Server HTML and the first render keep it (crawlable); a returning
@@ -93,6 +96,8 @@ export function DiscoverPage(props: {
       <CtxChip ctx={props.ctx} onClear={props.onClearCtx} />
     </Container>
   );
+  // A paying customer whose access could not be confirmed gets the friendly retry, not the free quiz.
+  if (accessMode === "error") return <AccessCheckFailed />;
   return unlocked ? (
     <>
       {chip}

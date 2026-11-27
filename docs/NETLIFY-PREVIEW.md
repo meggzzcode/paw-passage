@@ -25,7 +25,9 @@ Use a branch deploy, not a pull request into `main`:
 
 Expected URL: `https://<branch>--<site-name>.netlify.app`, where Netlify rewrites the slash in the branch name (so about `claude-lucid-davinci-l2fixa--<site-name>.netlify.app`; **UNVERIFIED**, copy the exact link from the deploy page). Share only with the people who test; it is not password protected unless you enable Netlify's deploy protection (a billing-plan feature, do not change plans for this).
 
-## 2. Set preview-scoped environment variables
+## 2. Preview environment variables (optional for previews)
+
+**No variables are needed for a preview.** On a Netlify branch deploy or deploy preview the site falls back to fixed, public, throwaway values for `SESSION_SECRET` and `PP_DATA_KEY` and switches the test provider on (`withPreviewDefaults` in `src/server/passport/config.ts`; production and dev never use it). This is safe only because previews use separate preview stores and must hold SYNTHETIC content only: anyone who finds a preview URL can forge a preview session and use `TEST-VALID-` codes. Set your own values (table below) only if you want them, and set real, different values for Production at launch.
 
 **Site configuration, Environment variables.** For each variable use **different value per context** and fill only **Branch deploys** (and **Deploy Previews** if used). Leave **Production** empty for the first four rows. Names only; never write values into files or chat.
 

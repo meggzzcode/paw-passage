@@ -100,3 +100,35 @@ describe("every environment variable read by server code is documented", () => {
     for (const n of used) expect(docs, n).toContain(n);
   });
 });
+
+describe("preview defaults (no environment variables needed on a preview)", () => {
+  it("fills throwaway secrets and the test provider on branch deploys and deploy previews only", async () => {
+    const { withPreviewDefaults } = await import("@/server/passport/config");
+    for (const ctx of ["branch-deploy", "deploy-preview"]) {
+      const e = withPreviewDefaults({}, ctx);
+      expect((e.SESSION_SECRET ?? "").length).toBeGreaterThanOrEqual(32);
+      expect((e.PP_DATA_KEY ?? "").length).toBeGreaterThanOrEqual(32);
+      expect(e.SESSION_SECRET).not.toBe(e.PP_DATA_KEY);
+      expect(e.PP_ALLOW_TEST_PROVIDER).toBe("1");
+      expect(selectProvider(e, ctx).name).not.toBe("unconfigured");
+    }
+  });
+  it("never changes production, dev or an unknown context", async () => {
+    const { withPreviewDefaults } = await import("@/server/passport/config");
+    for (const ctx of ["production", "dev", undefined, "something-else"]) {
+      const e = withPreviewDefaults({}, ctx);
+      expect(e.SESSION_SECRET).toBeUndefined();
+      expect(e.PP_DATA_KEY).toBeUndefined();
+      expect(e.PP_ALLOW_TEST_PROVIDER).toBeUndefined();
+    }
+  });
+  it("keeps values the owner did set", async () => {
+    const { withPreviewDefaults } = await import("@/server/passport/config");
+    const e = withPreviewDefaults(
+      { SESSION_SECRET: "x".repeat(40), PP_ALLOW_TEST_PROVIDER: "0" },
+      "branch-deploy",
+    );
+    expect(e.SESSION_SECRET).toBe("x".repeat(40));
+    expect(e.PP_ALLOW_TEST_PROVIDER).toBe("0");
+  });
+});

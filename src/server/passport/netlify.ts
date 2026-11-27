@@ -1,7 +1,7 @@
 // Wires the handler to Netlify Blobs and the real environment. Kept separate so tests never import @netlify/blobs.
 import { getStore } from "@netlify/blobs";
 import { createApi, type ApiDeps } from "./api";
-import { customersStoreName, premiumStoreName, type Env } from "./config";
+import { customersStoreName, premiumStoreName, withPreviewDefaults, type Env } from "./config";
 import { BlobsKV, type BlobStoreLike } from "./kv";
 import { createRateLimiter } from "./limits";
 import { selectProvider } from "./provider";
@@ -13,8 +13,8 @@ const generalLimiter = createRateLimiter({ windowMs: 60_000, max: 120 });
 export type NetlifyContextLike = { ip?: string; deploy?: { context?: string } };
 
 export function handleNetlify(req: Request, context: NetlifyContextLike): Promise<Response> {
-  const env = process.env as Env;
   const ctx = context.deploy?.context ?? process.env["CONTEXT"];
+  const env = withPreviewDefaults(process.env as Env, ctx);
   const strong = (name: string) =>
     new BlobsKV(getStore({ name, consistency: "strong" }) as unknown as BlobStoreLike);
   const deps: ApiDeps = {

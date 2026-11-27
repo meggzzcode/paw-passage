@@ -37,3 +37,10 @@ The one current list of what remains, in the owner's seven phases. Google tasks 
 ## Still to confirm (owner)
 
 Canonical host (www or apex); the two flagged 301s (`docs/GOOGLE-SETUP.md` 2.3); Gumroad attribution option; internal-traffic IPs for GA4 (never written to the repo); GA4 retention; deleting old GA4 items; source and license of every Lovable image and font (`docs/DESIGN-ASSET-LICENSES.md`); deletion-request policy and lawyer review of trust pages (`docs/POLICIES-REVIEW.md`); the definition of "bonus experiences" before any public copy uses a number. Transfer facts for a future sale are in `docs/TRANSFER-INVENTORY.md`.
+
+## Release candidate notes (2026-11-27)
+
+- Release candidate code: commit `5ad59c8` on `claude/lucid-davinci-l2fixa` (docs-only commits may follow). Do not merge to `main` or deploy without the owner.
+- Protected package to import at launch (dry run, then preview with SYNTHETIC content only, then production): the newest private package folder `premium-2026-11-26-4` (117 unique: 17 free + 100 premium; 25 collections). It carries the metadata fixes, the collection additions that let all 25 collections qualify for Collection Complete, and two car-safety lines. Its zip sha256 is held with the owner's private records; compare it after any Drive download.
+- Netlify preview (free per Netlify's credit page): a branch deploy starts when a commit is pushed while builds are on. Re-run the shared-device check (A then B on one browser; the panel with 'Start fresh on this device' must appear) and the paid-home no-flash check on the preview of this commit; then stop builds again.
+- Still external: Lovable terms URL and date for the image rights record (owner confirmation is not independent verification); support mailbox reply; real iPhone and Android checks; consent network check on the production host; Google setup (R, P, L, T, M, A groups in `docs/GOOGLE-SETUP.md`); Gumroad dedicated-account setup and live transaction test; production authorization.

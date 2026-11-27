@@ -57,11 +57,14 @@ describe("/unlock: refund terms and the full demonstration adventure", () => {
   });
   it("the refund summary matches the policy page", () => {
     const policy = readFileSync("src/routes/refund-policy.tsx", "utf8");
-    expect(policy).toMatch(/checkout page for your purchase applies/);
+    expect(policy).toMatch(/provider's terms for your purchase apply/);
+    expect(policy).not.toMatch(/\bwins\b/);
     expect(policy).toMatch(/up to about a day/);
     expect(policy).toMatch(/Your progress is yours/);
     const all = REFUND_SUMMARY.join(" ");
     expect(all).toMatch(/checkout page/);
+    expect(all).toMatch(/provider's terms for the transaction apply/);
+    expect(all).not.toMatch(/\bwins\b/);
     expect(all).toMatch(/within about a day/);
     expect(all).toMatch(/progress stays yours/);
     expect(all).not.toMatch(/\b\d+[- ]day|money.back guarantee|no questions/i);

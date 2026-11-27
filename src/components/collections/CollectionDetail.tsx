@@ -13,6 +13,7 @@ import {
   UNSAVED_NOTE,
 } from "@/components/passport/SaveForLater";
 import { usePreviews } from "@/lib/usePreviews";
+import { PREVIEWS_ERROR_COPY } from "@/components/passport/PreviewsNotice";
 import { discoverHref } from "@/passport/journal-context";
 import { saveForLater, unsaveForLater } from "@/passport/local-store";
 import { has, members } from "@/passport/progress";
@@ -55,7 +56,7 @@ function Header({ c }: { c: Collection }) {
 
 function PublicCollection({ c }: { c: Collection }) {
   const stats = useCollectionStats();
-  const { status, data } = usePreviews();
+  const { status, data, retry } = usePreviews();
   const n = useNarrow();
   const items = premiumPreviews(data?.items ?? []).filter((i) => i.collections.includes(c.slug));
   const shown = narrow(items, n.on);
@@ -75,7 +76,14 @@ function PublicCollection({ c }: { c: Collection }) {
           ? `${items.length} selected ${items.length === 1 ? "preview" : "previews"} below.`
           : status === "loading"
             ? "Loading previews..."
-            : "Previews aren't available right now."}
+            : status === "ready"
+              ? "No previews are published for this collection yet."
+              : PREVIEWS_ERROR_COPY}{" "}
+        {status === "unavailable" && (
+          <button type="button" className="pa-linkbtn" onClick={() => retry?.()}>
+            Retry
+          </button>
+        )}
       </p>
       {items.length > 0 && (
         <section aria-labelledby="cd-prev-h" className="co-block">

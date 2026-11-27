@@ -25,20 +25,20 @@ import { ConsentNotice } from "../components/site/ConsentNotice";
 function NotFoundComponent() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
-      <div className="max-w-md text-center">
-        <h1 className="text-7xl font-bold text-foreground">404</h1>
-        <h2 className="mt-4 text-xl font-semibold text-foreground">Page not found</h2>
-        <p className="mt-2 text-sm text-muted-foreground">
+      <div className="ws-state text-center" style={{ justifyItems: "center" }}>
+        <p
+          className="font-display text-7xl font-bold leading-none text-foreground"
+          aria-hidden="true"
+        >
+          404
+        </p>
+        <h1 className="font-display text-2xl font-bold text-foreground">Page not found</h1>
+        <p className="text-sm text-muted-foreground">
           The page you're looking for doesn't exist or has been moved.
         </p>
-        <div className="mt-6">
-          <Link
-            to="/"
-            className="inline-flex min-h-11 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
-          >
-            Go home
-          </Link>
-        </div>
+        <Link to="/" className="pp-btn pp-btn-primary">
+          Go home
+        </Link>
       </div>
     </div>
   );

@@ -1,8 +1,9 @@
 // Theme configuration for the ten keepsake families. A family is a layout; a theme gives it a palette,
 // type, a motif drawn with canvas paths, and its own small labels, so a Toy Champion magazine cover, a
 // Secret Agent ID card and a bake-off poster each look like their own thing, not one frame with new words.
-// Only system serif/sans font stacks are used: nothing is downloaded.
+// Fonts are the self-hosted faces from fonts.ts (display, body); condensed and heavy stay system stacks.
 // The family list mirrors KEEPSAKE_FAMILIES in schema.ts (a test keeps them equal) so this file pulls no zod into the page.
+import { FONT_BODY, FONT_DISPLAY } from "./fonts";
 export const KEEPSAKE_FAMILY_LIST = [
   "travel-postcard",
   "magazine-cover",
@@ -18,8 +19,8 @@ export const KEEPSAKE_FAMILY_LIST = [
 export type KeepsakeFamily = (typeof KEEPSAKE_FAMILY_LIST)[number];
 
 export const FONTS = {
-  serif: '"Bricolage Grotesque", Georgia, "Times New Roman", Times, serif',
-  sans: 'Figtree, "Helvetica Neue", Helvetica, Arial, sans-serif',
+  serif: FONT_DISPLAY,
+  sans: FONT_BODY,
   condensed: '"Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif',
   heavy: '"Arial Black", "Helvetica Neue", Helvetica, Arial, sans-serif',
 } as const;

@@ -18,6 +18,11 @@ import { CompletionPanel } from "./CompletionPanel";
 import "@/design/ux-detail.css";
 import { AddToCollection } from "./AddToCollection";
 import { DogSigns } from "./ReadYourDog";
+import { journeyPhoto } from "./journey-art";
+import { useKeepsakeEntitled } from "@/passport/useKeepsakeEntitled";
+import { StampGrid } from "@/passport/art/stamps";
+import { stamps as stampList } from "@/passport/content";
+import "@/design/qr-journey.css";
 import {
   PREP_LABELS,
   SUPPLY_LABELS,
@@ -178,6 +183,7 @@ export function AdventureCard({
   onAnother,
   anotherLabel = "Try another",
   focusOnMount = false,
+  entering = false,
 }: {
   a: Adventure;
   dogName?: string | undefined;
@@ -188,6 +194,8 @@ export function AdventureCard({
   anotherLabel?: string | undefined;
   /** Move keyboard and screen-reader focus to the title when the card first appears (after a reveal). */
   focusOnMount?: boolean | undefined;
+  /** Play the short in-place "unwrap" fade (the mystery card has just turned into this adventure). */
+  entering?: boolean | undefined;
 }) {
   const { save } = usePassport();
   const done = has(save.done, a.id);
@@ -199,8 +207,23 @@ export function AdventureCard({
   const [justDone, setJustDone] = useState(false);
   const titleRef = useRef<HTMLHeadingElement>(null);
   const dog = dogName || "your dog or dogs";
+  const paid = useKeepsakeEntitled();
+  const stampNames = a.stamps
+    .map((s) => stampList.find((x) => x.slug === s)?.title)
+    .filter(Boolean)
+    .join(", ");
   useEffect(() => {
-    if (focusOnMount) titleRef.current?.focus();
+    const el = titleRef.current;
+    if (!focusOnMount || !el) return;
+    // Focus the title without the browser's own scroll, then keep the card where the mystery card was: only bring
+    // it into view (instantly, never animated) when the swap left it above or far below the viewport.
+    el.focus({ preventScroll: true });
+    const top = el.getBoundingClientRect().top;
+    if (top < 72 || top > (window.innerHeight || 800) * 0.8) {
+      const card = el.closest("article") ?? el;
+      const y = card.getBoundingClientRect().top + window.scrollY - 88;
+      window.scrollTo({ top: Math.max(0, y), behavior: "auto" });
+    }
   }, [focusOnMount]);
   // Restrictions first (yard, people, dogs), then the reassuring labels. Wording is shared with previews.
   const tags = (() => {
@@ -250,13 +273,20 @@ export function AdventureCard({
   );
 
   return (
-    <article className="pa-card pd-card" aria-label={a.title}>
+    <article
+      className={`pa-card pd-card qr-adv${entering ? " qr-unwrap" : ""}`}
+      aria-label={a.title}
+    >
+      <div className="qr-adv-hero" aria-hidden="true">
+        <img src={journeyPhoto(a)} alt="" width={640} height={200} decoding="async" />
+      </div>
       {(done || repeats > 0) && (
         <p className="pd-types">
           {done && <span className="pd-done">✓ Done together</span>}
           {repeats > 0 && <span>Repeated {repeats}×</span>}
         </p>
       )}
+      {dogName && <p className="qr-adv-for">Picked for {dogName}</p>}
       <h2 className="pa-title" tabIndex={-1} ref={titleRef}>
         {a.title}
       </h2>
@@ -339,6 +369,23 @@ export function AdventureCard({
         </details>
       )}
 
+      {!done && (a.stamps.length > 0 || !paid) && (
+        <div className="qr-reward">
+          {!paid && (
+            <StampGrid
+              earned={["first-adventure"]}
+              slugs={["first-adventure"]}
+              size={52}
+              showLabels={false}
+            />
+          )}
+          <p>
+            {paid
+              ? `Finish to add it to your passport${stampNames ? `. It counts toward ${stampNames}` : ""}.`
+              : "Finish and you earn your first passport stamp."}
+          </p>
+        </div>
+      )}
       {!done && (
         <div className="pa-actions">
           <button type="button" className="pp-btn pp-btn-primary" onClick={complete}>

@@ -83,8 +83,11 @@ export function RevealSurface({
   const [progress, setProgress] = useState(0);
   const drag = useRef<{ x: number; y: number; dist: number } | null>(null);
   const swallowClick = useRef(false);
+  const fired = useRef(false);
 
   function go() {
+    if (fired.current) return; // scratch end + click, or a double tap: one reveal only
+    fired.current = true;
     markRevealed(adventureId);
     announce("Adventure revealed.");
     onReveal();

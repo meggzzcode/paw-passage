@@ -47,7 +47,7 @@ export function CompletionPanel({
   );
 
   return (
-    <section className="ux-done" aria-labelledby={`${a.id}-done`} data-testid="completion">
+    <section className="ux-done qr-done" aria-labelledby={`${a.id}-done`} data-testid="completion">
       <h3 className="pa-h" id={`${a.id}-done`} tabIndex={-1} ref={h}>
         {COMPLETION_HEADING}
       </h3>
@@ -57,8 +57,10 @@ export function CompletionPanel({
         </p>
       ) : (
         <>
-          <StampGrid earned={["first-adventure"]} slugs={["first-adventure"]} size={96} />
-          <p className="pa-fine">Your first stamp is in your passport.</p>
+          <div className="qr-stamp">
+            <StampGrid earned={["first-adventure"]} slugs={["first-adventure"]} size={112} />
+            <p>Your first stamp is in your passport.</p>
+          </div>
         </>
       )}
       {memoryField}

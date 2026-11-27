@@ -48,14 +48,17 @@ export function CollectionRow({
   c,
   stats,
   dogName,
+  thumb = true,
 }: {
   c: Collection;
   stats: CollectionStats;
   dogName: string | undefined;
+  /** False where every row would repeat the same picture (a world page already shows it in its header). */
+  thumb?: boolean;
 }) {
   return (
     <li className="co-crow">
-      <Thumb world={worldOf(c.slug)} accent={c.accent} />
+      {thumb ? <Thumb world={worldOf(c.slug)} accent={c.accent} /> : null}
       <div className="co-crow-main">
         <p className="co-crow-title">
           <AppLink to={`/collections/${c.slug}`}>{c.title}</AppLink>

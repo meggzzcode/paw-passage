@@ -50,7 +50,7 @@ export function MineInvite() {
 export function SavedPublic() {
   const { save } = usePassport();
   const { all } = useAccessLibrary();
-  const { status, data } = usePreviews();
+  const { status, data, retry } = usePreviews();
   const previews = savedPreviews(premiumPreviews(data?.items ?? []), save);
   const savedTotal = savedIdCount(save);
   const own = all.filter((a) => has(save.favorites, a.id) || a.id === save.starter?.id);
@@ -82,8 +82,13 @@ export function SavedPublic() {
       )}
       {previews.length === 0 && savedTotal > 0 && status !== "loading" && (
         <p className="pa-fine" role="status">
-          {savedTotal} saved {savedTotal === 1 ? "preview is" : "previews are"} on this device. We
-          can't load the previews right now.
+          {savedTotal} saved {savedTotal === 1 ? "preview is" : "previews are"} on this device.
+          {status === "unavailable" ? " We can't load the previews right now. " : " "}
+          {status === "unavailable" && (
+            <button type="button" className="pa-linkbtn" onClick={() => retry?.()}>
+              Retry
+            </button>
+          )}
         </p>
       )}
       {empty && savedTotal === 0 && (

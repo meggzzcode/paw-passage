@@ -6,7 +6,7 @@ import { AccessForm } from "@/components/passport/AccessForms";
 import { track } from "@/passport/events";
 import { hasAccountFlag } from "@/passport/premium-client";
 import { useEntitlement } from "@/passport/useEntitlement";
-import { PASSPORT_INVITE, PASSPORT_PAYMENT } from "@/components/passport/purchase-copy";
+import { PASSPORT_PAYMENT } from "@/components/passport/purchase-copy";
 import { checkoutUrl } from "@/lib/passport-api";
 import { collections } from "@/passport/content";
 import { unlockLine, usePremiumSummary } from "@/lib/premium-summary";
@@ -23,7 +23,7 @@ import {
   REFUND_SUMMARY,
 } from "@/config/commercial";
 import { PhotoFilterExamples } from "@/components/site/PhotoFilterExamples";
-import { FILTER_EXAMPLES } from "@/components/site/keepsake-examples";
+import { PURCHASE_EXAMPLES } from "@/components/site/keepsake-examples";
 import { pageHead } from "@/lib/seo";
 import "@/design/ux-detail.css";
 import "@/design/home-v9.css";
@@ -40,6 +40,9 @@ export const Route = createFileRoute("/unlock")({
     }),
   component: Unlock,
 });
+
+const ACTIVATE_ID = "activate-code";
+const ACTIVATE_HASH = `#${ACTIVATE_ID}`;
 
 /** True on this browser when a purchase was activated here before. Server render and first client render say false. */
 const noopSubscribe = () => () => {};
@@ -94,6 +97,29 @@ function Unlock() {
     if (!entitled && !pending) track("unlock_viewed");
   }, [entitled, pending]);
   const showCode = (!entitled && !pending) || submitted;
+  // "Already have a code?" near the top is a real link to the single activation form lower on the page. It opens the form
+  // and moves focus to the code input (keyboard and screen reader users land in the field, not just near it).
+  const [focusTick, setFocusTick] = useState(0);
+  useEffect(() => {
+    if (!showCode) return;
+    if (window.location.hash === ACTIVATE_HASH) {
+      setCodeOpen(true);
+      setFocusTick((n) => n + 1);
+    }
+  }, [showCode]);
+  const openCode = (e: React.MouseEvent) => {
+    e.preventDefault();
+    setCodeOpen(true);
+    setFocusTick((n) => n + 1);
+  };
+  useEffect(() => {
+    if (focusTick === 0) return;
+    const form = document.getElementById(ACTIVATE_ID);
+    form?.scrollIntoView?.({ block: "start" });
+    form
+      ?.querySelector<HTMLInputElement>("input[name=purchase-code]")
+      ?.focus({ preventScroll: true });
+  }, [focusTick]);
   // ONE activation form. It sits at the same place in the tree in every state, so activating here (which flips the page
   // to its entitled state) keeps the confirmation message and the Continue links on screen.
   const code = showCode ? (
@@ -102,6 +128,7 @@ function Unlock() {
       className="ux-code pa-card"
       open={codeOpen}
       onSubmitCapture={() => setSubmitted(true)}
+      id={ACTIVATE_ID}
       data-testid="code-section"
     >
       <summary
@@ -110,7 +137,7 @@ function Unlock() {
           setCodeOpen((v) => !v);
         }}
       >
-        Already have a code?
+        Enter your purchase code
       </summary>
       <AccessForm kind="activate" embedded />
     </details>
@@ -168,8 +195,8 @@ function Unlock() {
         <p className="pa-kicker">The Adventure Passport</p>
         <h1 className="pa-h1">{BRAND.unlockHeadline}</h1>
         <p className="pa-sub">
-          <strong>{PASSPORT_INVITE}</strong> Your digital Adventure Passport: little adventures for
-          you and your dog, in your browser.
+          Your digital Adventure Passport for you and your dog: personalized adventures for every
+          kind of day, stamps to collect and keepsakes to make, all in your browser.
         </p>
       </>
     );
@@ -182,9 +209,92 @@ function Unlock() {
         data-testid={entitled ? "unlock-entitled" : undefined}
       >
         <div key="top">{top}</div>
-        {code}
         {sales && (
           <>
+            <section className="pa-panel" aria-labelledby="buy-h" data-testid="buy-panel">
+              <h2 id="buy-h" className="pa-h">
+                Get the Adventure Passport
+              </h2>
+              <p className="ux-price">
+                <strong>{PASSPORT_PAYMENT}</strong> {KEEP_LINE}
+              </p>
+              <details className="pa-fold" data-testid="refund-terms">
+                <summary>Refund terms, before you pay</summary>
+                <div className="pa-fold-body">
+                  <ul className="co-plain">
+                    {REFUND_SUMMARY.map((t) => (
+                      <li key={t}>{t}</li>
+                    ))}
+                  </ul>
+                  <AppLink to="/refund-policy" className="pa-linkbtn inline-flex items-center">
+                    Read the full refund policy
+                  </AppLink>
+                </div>
+              </details>
+              {link ? (
+                <>
+                  <a
+                    className="pp-btn pp-btn-primary"
+                    href={link}
+                    rel="noopener noreferrer"
+                    onClick={() => {
+                      track("purchase_cta_clicked", { where: "unlock" });
+                      track("checkout_handoff");
+                    }}
+                  >
+                    Continue to checkout
+                  </a>
+                  <p className="pa-fine">
+                    You will leave this site for our checkout provider to pay securely, then come
+                    back with your code.
+                  </p>
+                </>
+              ) : (
+                <>
+                  <button
+                    type="button"
+                    className="pp-btn pp-btn-primary"
+                    disabled
+                    aria-describedby="checkout-note"
+                  >
+                    Checkout opens soon
+                  </button>
+                  <p id="checkout-note" className="pa-fine">
+                    Nothing can be bought yet, and nothing is charged.
+                  </p>
+                </>
+              )}
+              <p className="pa-fine">
+                <a
+                  href={ACTIVATE_HASH}
+                  className="pa-linkbtn inline-flex items-center"
+                  data-testid="have-code-link"
+                  onClick={openCode}
+                >
+                  Already have a code?
+                </a>{" "}
+                Enter it in the box below.
+              </p>
+              {flags.gifting && link && (
+                <p className="pa-fine">
+                  <a
+                    className="pp-btn pp-btn-secondary"
+                    href={link}
+                    rel="noopener noreferrer"
+                    data-testid="gift-cta"
+                    onClick={() => {
+                      track("purchase_cta_clicked", { where: "unlock-gift" });
+                      track("checkout_handoff");
+                    }}
+                  >
+                    {GIFT_CTA}
+                  </a>{" "}
+                  {BRAND.giftLine} Same Passport, same price. On the checkout page, choose the gift
+                  option.
+                </p>
+              )}
+            </section>
+
             <section className="pa-panel" aria-labelledby="benefit-h" data-testid="benefits">
               <h2 id="benefit-h" className="pa-h">
                 What the Passport gives you
@@ -234,85 +344,15 @@ function Unlock() {
               </div>
             </section>
 
-            <section className="pa-panel" aria-labelledby="buy-h" data-testid="buy-panel">
-              <h2 id="buy-h" className="pa-h">
-                Get the Adventure Passport
+            <section className="pa-panel" aria-labelledby="delivery-h" data-testid="delivery">
+              <h2 className="pa-h" id="delivery-h">
+                How you get it, and get it back
               </h2>
               <p className="pa-fine">
-                Digital and browser-based, so nothing is shipped. {PASSPORT_PAYMENT} One purchase
-                covers your household on your own devices, with one shared profile for one dog or
-                several (for example, Luna and Milo).
-              </p>
-              <details className="pa-fold" data-testid="refund-terms">
-                <summary>Refund terms, before you pay</summary>
-                <div className="pa-fold-body">
-                  <ul className="co-plain">
-                    {REFUND_SUMMARY.map((t) => (
-                      <li key={t}>{t}</li>
-                    ))}
-                  </ul>
-                  <AppLink to="/refund-policy" className="pa-linkbtn inline-flex items-center">
-                    Read the full refund policy
-                  </AppLink>
-                </div>
-              </details>
-              {link ? (
-                <>
-                  <a
-                    className="pp-btn pp-btn-primary"
-                    href={link}
-                    rel="noopener noreferrer"
-                    onClick={() => {
-                      track("purchase_cta_clicked", { where: "unlock" });
-                      track("checkout_handoff");
-                    }}
-                  >
-                    Continue to checkout
-                  </a>
-                  <p className="pa-fine">
-                    You will leave this site for our checkout provider to pay securely, then come
-                    back with your code.
-                  </p>
-                </>
-              ) : (
-                <>
-                  <button
-                    type="button"
-                    className="pp-btn pp-btn-primary"
-                    disabled
-                    aria-describedby="checkout-note"
-                  >
-                    Checkout opens soon
-                  </button>
-                  <p id="checkout-note" className="pa-fine">
-                    Nothing can be bought yet, and nothing is charged.
-                  </p>
-                </>
-              )}
-              {flags.gifting && link && (
-                <p className="pa-fine">
-                  <a
-                    className="pp-btn pp-btn-secondary"
-                    href={link}
-                    rel="noopener noreferrer"
-                    data-testid="gift-cta"
-                    onClick={() => {
-                      track("purchase_cta_clicked", { where: "unlock-gift" });
-                      track("checkout_handoff");
-                    }}
-                  >
-                    {GIFT_CTA}
-                  </a>{" "}
-                  {BRAND.giftLine} Same Passport, same price. On the checkout page, choose the gift
-                  option.
-                </p>
-              )}
-              <h3 className="pa-h" id="delivery-h">
-                How you get it, and get it back
-              </h3>
-              <p className="pa-fine">
-                After you pay, our checkout provider emails you a purchase code. Enter it under
-                "Already have a code?" above and the full Passport opens on this device. On a new
+                Digital and browser-based, so nothing is shipped. One purchase covers your household
+                on your own devices, with one shared profile for one dog or several (for example,
+                Luna and Milo). After you pay, our checkout provider emails you a purchase code.
+                Enter it in the box below and the full Passport opens on this device. On a new
                 device, use Restore access with the same code. Questions?{" "}
                 <AppLink to="/contact" className="pa-linkbtn">
                   Contact support
@@ -320,7 +360,11 @@ function Unlock() {
                 .
               </p>
             </section>
-
+          </>
+        )}
+        {code}
+        {sales && (
+          <>
             <EarlyTesters compact headingLevel={2} />
 
             <section className="pa-panel" aria-labelledby="examples-h" style={{ minWidth: 0 }}>
@@ -333,8 +377,9 @@ function Unlock() {
                 would use, with sample names.
               </p>
               <PhotoFilterExamples
-                images={FILTER_EXAMPLES}
-                caption="Original photo on the left, finished keepsake on the right. Photos are CC0 (public domain) from Wikimedia Commons."
+                images={PURCHASE_EXAMPLES}
+                compact
+                caption="Your photo on the left, your little keepsake on the right. Photos are CC0 (public domain) from Wikimedia Commons."
               />
             </section>
 

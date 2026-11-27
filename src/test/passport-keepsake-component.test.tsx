@@ -3,6 +3,8 @@ import { cleanup, fireEvent, render, screen, waitFor } from "@testing-library/re
 import type { Adventure } from "../passport/schema";
 
 const downloaded: string[] = [];
+const previewTags: (string | undefined)[] = [];
+const blobTags: (string | undefined)[] = [];
 const sharedResult = { value: "download" as "shared" | "cancelled" | "download" };
 
 vi.mock("../passport/usePassport", () => ({
@@ -21,8 +23,22 @@ vi.mock("../passport/keepsake/filter", async (orig) => {
   const real = await orig<typeof import("../passport/keepsake/filter")>();
   return {
     ...real,
-    drawFilterPreview: () => true,
-    makeFilterBlob: async () => new Blob(["png"], { type: "image/png" }),
+    drawFilterPreview: (_c: unknown, _s: unknown, p: { fx?: string } | null) => {
+      previewTags.push(p?.fx);
+      return true;
+    },
+    makeFilterBlob: async (_s: unknown, p: { fx?: string } | null) => {
+      blobTags.push(p?.fx);
+      return new Blob(["png"], { type: "image/png" });
+    },
+  };
+});
+vi.mock("../passport/keepsake/filter-effects", async (orig) => {
+  const real = await orig<typeof import("../passport/keepsake/filter-effects")>();
+  return {
+    ...real,
+    effectThumb: () => null,
+    applyPhotoEffect: (p: object, e: string) => ({ ...p, fx: e }),
   };
 });
 vi.mock("../passport/keepsake/render", async (orig) => {
@@ -55,6 +71,8 @@ beforeEach(() => {
 afterEach(() => {
   cleanup();
   downloaded.length = 0;
+  previewTags.length = 0;
+  blobTags.length = 0;
   vi.unstubAllGlobals();
 });
 
@@ -196,5 +214,23 @@ describe("<Keepsake />", () => {
     fireEvent.click(screen.getByRole("radio", { name: /Keepsake card/ }));
     expect(screen.getByText("Then photo")).toBeInTheDocument();
     expect(screen.getByText("Now photo")).toBeInTheDocument();
+  });
+
+  it("shows the photo look picker once a photo is added; the preview and the download use the same look", async () => {
+    sharedResult.value = "download";
+    vi.stubGlobal("createImageBitmap", async () => ({ width: 800, height: 600, close: vi.fn() }));
+    const { container } = render(<Keepsake adventure={adventure} memory="" />);
+    expect(screen.queryByRole("radio", { name: /Golden hour/ })).toBeNull();
+    const input = container.querySelectorAll<HTMLInputElement>('input[type="file"]')[1]!;
+    fireEvent.change(input, {
+      target: { files: [new File(["x"], "a.jpg", { type: "image/jpeg" })] },
+    });
+    const golden = await screen.findByRole("radio", { name: /Golden hour/ });
+    expect(screen.getByRole("radio", { name: /Original/ })).toBeChecked();
+    fireEvent.click(golden);
+    await waitFor(() => expect(previewTags.at(-1)).toBe("golden-hour"));
+    fireEvent.click(screen.getByRole("button", { name: "Share" }));
+    await waitFor(() => expect(downloaded).toHaveLength(1));
+    expect(blobTags.at(-1)).toBe("golden-hour");
   });
 });

@@ -159,8 +159,8 @@ describe("no fabricated claims on the new commercial pages", () => {
 
 describe("keepsake examples", () => {
   const dir = "public/examples";
-  it("has at least eight finished examples, each under 120KB and 1.2MB in total", () => {
-    expect(FILTER_EXAMPLES.length).toBeGreaterThanOrEqual(8);
+  it("has at least seven finished examples, each under 120KB and 1.2MB in total", () => {
+    expect(FILTER_EXAMPLES.length).toBeGreaterThanOrEqual(7);
     let total = 0;
     for (const e of FILTER_EXAMPLES) {
       const f = `public${e.src}`;

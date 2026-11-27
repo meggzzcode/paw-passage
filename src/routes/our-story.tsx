@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { BRAND } from "@/config/brand";
 import { AppLink } from "@/components/shell/AppLink";
 import { InfoPage } from "@/components/site/InfoPage";
+import { StoryStrip } from "@/components/site/StoryStrip";
 import { ABOUT_BODY, ABOUT_UPDATED } from "@/components/site/about-content";
 import { isRevealed } from "@/passport/starter";
 import { members } from "@/passport/progress";
@@ -24,7 +25,13 @@ function OurStory() {
   const { ready, save } = usePassport();
   const hasProgress = ready && (members(save.done).length > 0 || isRevealed(save));
   return (
-    <InfoPage title="Our Story" intro={BRAND.ourStory} updated={ABOUT_UPDATED} body={ABOUT_BODY}>
+    <InfoPage
+      title="Our Story"
+      intro={BRAND.ourStory}
+      updated={ABOUT_UPDATED}
+      body={ABOUT_BODY}
+      lead={<StoryStrip />}
+    >
       {hasProgress && (
         <p className="mt-8">
           <AppLink to="/passport" hash="memories" className="pa-linkbtn">

@@ -59,7 +59,8 @@ describe("homepage copy", () => {
     expect(homePromo.ctaNote).toBe("Your first adventure is free.");
     expect(homePromo.commercial).toBe("One payment of $19.99. Yours to keep.");
     expect(homePromo.primaryCta).toBe("Find our first adventure — free.");
-    expect(src).toContain("Explore the Adventure Collection");
+    expect(homePromo.collectionsCta).toBe("Browse collections");
+    expect(homePromo.secondaryCta).toBe("See adventure previews");
     expect(src).toContain("KEEP_LINE");
   });
   it("shows the price from the one offer constant, with no discount or unproven claim", () => {

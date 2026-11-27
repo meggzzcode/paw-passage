@@ -13,16 +13,17 @@ All fixtures are SYNTHETIC. No premium text lives in these tests, this document 
 
 ## Owner-machine checks (need PREMIUM_DIR)
 
-Premium adventure text is not tracked in this repository. Everything above uses SYNTHETIC fixtures and runs everywhere. A few checks need the REAL library, so they run only when `PREMIUM_DIR` points at the folder of `<id>.json` files (for example the `adventures/` folder of the protected package). Without it each one is reported as SKIPPED with a visible title that starts with `OWNER-MACHINE` and says why; none passes silently by reading nothing.
+Premium adventure text is not tracked in this repository. Everything above uses SYNTHETIC fixtures and runs everywhere. A few checks need the REAL library, so they run only when `PREMIUM_DIR` points at the folder of `<id>.json` files (for example the `adventures/` folder of the protected package; the current one is the newest package folder, number 6). Without it each one is reported as SKIPPED with a visible title that starts with `OWNER-MACHINE` and says why; none passes silently by reading nothing.
 
-| Skipped without PREMIUM_DIR                              | File                           | What it proves with the real library                                                           |
-| -------------------------------------------------------- | ------------------------------ | ---------------------------------------------------------------------------------------------- |
-| Journal has no sentence from the real premium library    | `premium-owner-checks.test.ts` | the Journal sentence-overlap rule (`scripts/validate-journal.mjs`)                             |
-| no real premium fragment in `src/` or `public/`          | `premium-owner-checks.test.ts` | `scripts/check-leaks.mjs --premium-dir` finds no real title, instruction, twist or safety text |
-| the premium folder imports as a dry run and counts match | `premium-owner-checks.test.ts` | `scripts/premium-import.mjs --dir` validates every file                                        |
-| full mode counts every premium file                      | `library-inventory.test.ts`    | `scripts/library-stats.mjs` full mode                                                          |
-| prints no premium titles or teasers                      | `library-inventory.test.ts`    | the inventory output carries aggregates only                                                   |
-| the demonstration card is not a premium card either      | `unlock-v6.test.tsx`           | the homepage demo card is original                                                             |
+| Skipped without PREMIUM_DIR                                                                                              | File                           | What it proves with the real library                                                                               |
+| ------------------------------------------------------------------------------------------------------------------------ | ------------------------------ | ------------------------------------------------------------------------------------------------------------------ |
+| Journal has no sentence from the real premium library                                                                    | `premium-owner-checks.test.ts` | the Journal sentence-overlap rule (`scripts/validate-journal.mjs`)                                                 |
+| no real premium fragment in `src/` or `public/`                                                                          | `premium-owner-checks.test.ts` | `scripts/check-leaks.mjs --premium-dir` finds no real title, instruction, twist or safety text                     |
+| the premium folder imports as a dry run and counts match                                                                 | `premium-owner-checks.test.ts` | `scripts/premium-import.mjs --dir` validates every file                                                            |
+| full mode counts every premium file                                                                                      | `library-inventory.test.ts`    | `scripts/library-stats.mjs` full mode                                                                              |
+| prints no premium titles or teasers                                                                                      | `library-inventory.test.ts`    | the inventory output carries aggregates only                                                                       |
+| the demonstration card is not a premium card either                                                                      | `unlock-v6.test.tsx`           | the homepage demo card is original                                                                                 |
+| all cards resolve to a supported keepsake family and theme, no fallback; every mapped theme renders at all three formats | `keepsake-coverage.test.ts`    | the keepsake fields (family, theme, headline lengths) of the real library; no card text is read into any assertion |
 
 Always-on (synthetic) counterparts: `premium-not-tracked.test.ts` (no `content/premium/*.json` is tracked; `.gitignore` carries the rule; skipped only when git is unavailable), `premium-owner-checks.test.ts` (check-leaks `--premium-dir` and the Journal overlap rule against temporary synthetic folders), `handover-scripts.test.ts` (scripts stop with an explicit message when neither `--dir` nor `PREMIUM_DIR` is set).
 
@@ -30,7 +31,7 @@ Run on the owner machine:
 
 ```bash
 export PREMIUM_DIR=<protected package folder>/adventures
-npx vitest run src/test/premium-owner-checks.test.ts src/test/library-inventory.test.ts src/test/unlock-v6.test.tsx
+npx vitest run src/test/premium-owner-checks.test.ts src/test/library-inventory.test.ts src/test/unlock-v6.test.tsx src/test/keepsake-coverage.test.ts
 node scripts/validate-journal.mjs
 node scripts/check-leaks.mjs dist --premium-dir "$PREMIUM_DIR"   # after a build
 ```

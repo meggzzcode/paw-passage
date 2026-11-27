@@ -273,7 +273,7 @@ describe("free Discover: the introductory flow", () => {
     expect(await screen.findByText("How it goes")).toBeInTheDocument();
     const h = screen.getByRole("heading", { name: "Your first adventure" });
     expect(h).toBeInTheDocument();
-    expect(document.activeElement).toBe(h); // focus lands on the revealed content
+    expect(document.activeElement).toBe(document.querySelector(".pd-card h2")); // focus lands on the adventure title
     expect(getSave().starter?.revealedAt).toBeTypeOf("number");
     expect(screen.queryByRole("button", { name: "Show me another" })).toBeNull();
     first.unmount();

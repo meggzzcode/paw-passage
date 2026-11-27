@@ -40,15 +40,15 @@ export function summaryText(s: PremiumSummary | null): string {
   return m > 0 ? `${adv} across ${m} ${m === 1 ? "collection" : "collections"}` : adv;
 }
 
-const KINDS = "puppies, seniors, hyper dogs, homebodies and more";
+const KINDS = "puppies, seniors, lively dogs, homebodies and more";
 
 /** The warm unlock line. Uses the live counts when we have them, and honest fallback wording when we do not. */
 export function unlockLine(s: PremiumSummary | null): string {
   if (!s)
-    return `Unlock a much larger library of adventures and challenges, for every kind of dog: ${KINDS}.`;
+    return `Unlock a much larger library of little adventures, for every kind of dog: ${KINDS}.`;
   const m = COLLECTION_COUNT;
   const where = m > 0 ? ` across ${m} ${m === 1 ? "collection" : "collections"}` : "";
-  return `Unlock ${s.count} adventures and challenges${where}, for every kind of dog: ${KINDS}.`;
+  return `Unlock ${s.count} little adventures${where}, for every kind of dog: ${KINDS}.`;
 }
 
 export function usePremiumSummary(): PremiumSummary | null {

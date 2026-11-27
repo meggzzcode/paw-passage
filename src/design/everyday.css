@@ -779,7 +779,11 @@ html .pp-h1 {
   justify-self: stretch;
 }
 
-/* FAQ: paper rounded rows */
+/* FAQ: paper rounded rows, separated by a comfortable gap */
+.pp-faq {
+  display: grid;
+  gap: 0.875rem;
+}
 .pp-faq details {
   background: var(--pp-card);
   border: 0;

@@ -20,6 +20,12 @@ import { hasProfile } from "./ProfileEditor";
 import { collections as allCollections } from "@/passport/content";
 import { PreviewCard } from "./PreviewCard";
 import { PreviewMatch } from "./PreviewMatch";
+import {
+  PREVIEWS_NONE_COPY,
+  PREVIEWS_NO_MATCH_COPY,
+  PreviewsError,
+  PreviewsLoading,
+} from "./PreviewsNotice";
 import { flow } from "./flow-events";
 
 function Select({
@@ -52,7 +58,7 @@ const ANY: [string, string] = ["", "Any"];
 export function PreviewsPage() {
   const { ready, save, profile } = usePassport();
   const { status: entitlement } = useEntitlement();
-  const { status, data } = usePreviews();
+  const { status, data, retry } = usePreviews();
   const [view, setView] = useState<"all" | "saved">("all");
   const [f, setF] = useState<PreviewFilters>({});
   const items = useMemo(() => premiumPreviews(data?.items ?? []), [data]);
@@ -98,26 +104,30 @@ export function PreviewsPage() {
           </p>
         )}
 
-        {status === "loading" && <p aria-busy="true">Loading previews...</p>}
+        {status === "loading" && <PreviewsLoading />}
         {status === "unavailable" && (
-          <div className="pa-card" role="status">
-            <p>The previews could not be loaded just now. Please try again in a little while.</p>
+          <PreviewsError retry={retry}>
             {ready && savedIdCount(save) > 0 && (
               <p className="pa-fine">
                 {savedIdCount(save)} saved on this device. They are still here.
               </p>
             )}
             <div className="pa-row">
+              <AppLink to="/discover" className="pp-btn pp-btn-ghost">
+                Find our free first adventure
+              </AppLink>
+            </div>
+          </PreviewsError>
+        )}
+
+        {status === "ready" && items.length === 0 && (
+          <div className="pa-card" role="status" data-testid="previews-none">
+            <p>{PREVIEWS_NONE_COPY}</p>
+            <div className="pa-row">
               <AppLink to="/discover" className="pp-btn pp-btn-secondary">
                 Find our free first adventure
               </AppLink>
             </div>
-          </div>
-        )}
-
-        {status === "ready" && items.length === 0 && (
-          <div className="pa-card" role="status">
-            <p>There are no previews to show yet.</p>
           </div>
         )}
 
@@ -224,7 +234,7 @@ export function PreviewsPage() {
             )}
             {shown.length === 0 && (view === "all" || saved.length > 0) && (
               <p className="pa-fine" role="status">
-                No previews match those filters. Try loosening one.
+                {PREVIEWS_NO_MATCH_COPY} Try loosening one.
               </p>
             )}
             <h2 className="sr-only">Previews</h2>

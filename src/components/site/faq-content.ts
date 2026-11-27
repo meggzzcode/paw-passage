@@ -35,7 +35,7 @@ const BASE_FAQS: readonly Faq[] = [
     id: "keep-access",
     group: "buying",
     q: "How long do I keep access?",
-    a: "You pay once and never renew. It is yours to keep on your own devices, and you can restore it with your purchase code. We may add adventures over time, but we do not promise future additions. Access ends only if a purchase is refunded or reversed, as described in our refund policy.",
+    a: `${ONE_TIME_LINE} ${KEEP_LINE} You can use it on your own devices and restore it with your purchase code. We aim to keep the Passport available and will tell customers well ahead of any significant change, but we cannot promise it will never change, so keep a copy of your purchase email and code, and download a backup of your progress now and then. We may add adventures over time, but we do not promise future additions. Access ends only if a purchase is refunded or reversed, as described in our refund policy.`,
   },
   {
     id: "digital-not-book",
@@ -53,7 +53,7 @@ const BASE_FAQS: readonly Faq[] = [
     id: "try-first",
     group: "buying",
     q: "Can I try before I buy?",
-    a: "Yes. Answer a few questions about your dog and we pick one complete adventure for them, free, with no account and no card. You can also browse selected previews from the larger collection. The free adventure gives you a stamp and shows the matching keepsake style as an example; making your own personalized keepsake is part of the full Passport. You do not have to finish the free adventure before you buy, and you can buy at any time.",
+    a: 'Yes. Answer a few questions about your dog and we pick one complete adventure for them, free, with no account and no card. You can also browse selected previews from the larger collection. The free adventure gives you a stamp and shows the matching keepsake style as an example; making your own personalized keepsake is part of the full Passport. If the first pick is not right, ask for another before you reveal: the first adventure you reveal is your free one. Questions about your dog keep the pick suitable, and an answer you skip or mark "Not sure" is treated cautiously, never as safe. You do not have to finish the free adventure before you buy, and you can buy at any time.',
   },
   {
     id: "puppies",
@@ -155,7 +155,7 @@ const BASE_FAQS: readonly Faq[] = [
     id: "refund",
     group: "buying",
     q: "What is the refund policy?",
-    a: "The checkout page shows the refund terms that apply before you pay, and it wins if it differs from our policy page. To ask, contact us with the email you bought with and the date; the refund goes through our checkout provider, to the way you paid. Full access then switches off within about a day, the free Passport stays, and your progress stays yours. If you were charged and cannot unlock, try Restore access first, then contact us. The refund policy page has the details.",
+    a: "Our checkout provider's terms govern the transaction and are shown on the checkout page before you pay. Our refund policy page describes our process; if the two differ, the provider's terms for your purchase apply. To ask, contact us with the email you bought with and the date; the refund goes through our checkout provider, to the way you paid. Full access then switches off within about a day, the free Passport stays, and your progress stays yours. If you were charged and cannot unlock, try Restore access first, then contact us. The refund policy page has the details.",
   },
   {
     id: "contact",

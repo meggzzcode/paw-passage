@@ -5,6 +5,7 @@ import { migrate, validateSave, type Save } from "../../passport/progress";
 import { MAX_BODY_BYTES, MIN_SECRET_LENGTH, REVERIFY_MS } from "./config";
 import { MATCH_MAX_BODY_BYTES, matchProfile, validateMatchBody } from "./match";
 import { PREVIEW_INDEX_KEY, parsePreviewIndex } from "./previews";
+import { buildSyntheticPreviewIndex, SYNTHETIC_HEADER } from "./synthetic-previews";
 import { open, purchaseRefHash, seal } from "./crypto";
 import { createNotificationsApi, type NotifEnv } from "./notifications-api";
 import { PushConflictError } from "./push-store";
@@ -50,6 +51,11 @@ export type ApiDeps = {
   notifEnv?: NotifEnv;
   /** Per-customer limit for notification writes. Defaults to a shared in-memory limiter (best effort per instance). */
   notifLimiter?: RateLimiter;
+  /**
+   * Netlify branch deploys and deploy previews only (set by netlify.ts from syntheticPreviewsEnabled): when the preview
+   * store holds no previews index, serve the built-in SYNTHETIC teaser catalogue instead of an empty one.
+   */
+  syntheticPreviews?: boolean;
 };
 
 // Module-level so counters survive between requests handled by the same function instance.
@@ -396,18 +402,24 @@ export function createApi(deps: ApiDeps) {
     }
   }
 
+  /** The stored index, or (preview contexts only, and only when none is stored) the synthetic one. */
   async function readPreviewStore() {
-    return parsePreviewIndex((await deps.premium.get(PREVIEW_INDEX_KEY))?.value);
+    const stored = parsePreviewIndex((await deps.premium.get(PREVIEW_INDEX_KEY))?.value);
+    if (stored || deps.syntheticPreviews !== true) return { index: stored, synthetic: false };
+    return { index: buildSyntheticPreviewIndex(), synthetic: true };
   }
 
   /** Cacheable for 5 minutes. No store (or an empty one) is an honest empty answer, not an error. */
   async function previews() {
     try {
-      const idx = await readPreviewStore();
+      const { index: idx, synthetic } = await readPreviewStore();
       const body = idx
         ? { items: idx.items, total: idx.total, collections: idx.collections }
         : { items: [], total: 0, collections: 0 };
-      return json(200, body, { "cache-control": "public, max-age=300" });
+      return json(200, body, {
+        "cache-control": "public, max-age=300",
+        ...(synthetic ? { [SYNTHETIC_HEADER]: "1" } : {}),
+      });
     } catch {
       log("previews_unavailable");
       return fail(503, "previews_unavailable", {}, { "retry-after": "60" });
@@ -420,7 +432,12 @@ export function createApi(deps: ApiDeps) {
     try {
       const parsed = validateMatchBody(await readBody(req, MATCH_MAX_BODY_BYTES));
       if (!parsed) return fail(400, "bad_profile");
-      return json(200, matchProfile(await readPreviewStore(), parsed.dog, parsed.owner));
+      const { index, synthetic } = await readPreviewStore();
+      return json(
+        200,
+        matchProfile(index, parsed.dog, parsed.owner),
+        synthetic ? { [SYNTHETIC_HEADER]: "1" } : {},
+      );
     } catch (e) {
       if (e instanceof HttpError) return fail(e.status, e.code);
       log("previews_unavailable");

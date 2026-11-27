@@ -1,17 +1,18 @@
 /**
- * DEV TOOL, NOT SHIPPED. Renders the homepage / unlock-page keepsake examples from REAL, licensed dog photos using
- * the REAL keepsake editor component (src/components/passport/Keepsake.tsx), driven in a headless browser.
+ * DEV TOOL, NOT SHIPPED. Renders the public keepsake examples (home page, unlock page) from REAL, licensed CC0 dog
+ * photographs through the REAL keepsake renderer (src/passport/keepsake/artwork.ts, with the real fonts and the real
+ * photo loader), driven in headless Chromium. Output is the Story format (1080x1920), shrunk to 540x960 webp.
  *
  * How it works
- *   1. Starts the minimal vite server in scripts/demo/vite.config.mjs (serves scripts/demo/harness.html, which mounts
- *      <Keepsake/> directly; no entitlement hook is involved, so nothing needs mocking).
- *   2. For each entry in scripts/demo/examples.json it loads the photo from SRC_DIR (default: ./.demo-photos, never
- *      committed), puts it in the editor's file input, clicks the real "Download PNG" button and keeps the PNG.
- *   3. Builds a before/after pair (original photo on the left | finished keepsake on the right) and writes optimized
- *      webp files into public/examples/ (each <= 90 KB, total <= 900 KB). Credits live in docs/IMAGE-CREDITS.md.
+ *   1. Starts the minimal vite server in scripts/demo/vite.config.mjs (serves scripts/demo/harness-art.html, which
+ *      exposes window.renderOne). No entitlement hook is involved, so nothing needs mocking.
+ *   2. For each entry in scripts/demo/examples.json it loads the photo from SRC_DIR (never committed), renders the
+ *      keepsake with the entry's crop (zoom, panX, panY) and keeps the PNG in RAW_DIR.
+ *   3. compose.py writes public/examples/<id>.webp (finished keepsake) and <id>-photo.webp (the original photo, resized
+ *      only), each <= 90 KB, no metadata. Credits live in docs/IMAGE-CREDITS.md.
  *
- * Run:  SRC_DIR=/path/to/photos node scripts/demo/render-examples.mjs
- * Needs: Playwright (PLAYWRIGHT_MODULE env var or `playwright` resolvable), python3 with Pillow for the final webp.
+ * Run:  SRC_DIR=/path/to/originals node scripts/demo/render-examples.mjs
+ * Needs: Playwright (PLAYWRIGHT_MODULE env var or `playwright` resolvable), python3 with Pillow.
  */
 import { spawn, execFileSync } from "node:child_process";
 import fs from "node:fs";
@@ -28,52 +29,40 @@ const { chromium } = await import(
 );
 const examples = JSON.parse(fs.readFileSync(path.join(here, "examples.json"), "utf8"));
 fs.mkdirSync(rawDir, { recursive: true });
+const mimeOf = (f) => (/\.webp$/i.test(f) ? "image/webp" : "image/jpeg");
 
 const server = spawn("npx", ["vite", "--config", path.join(here, "vite.config.mjs")], {
   cwd: root,
   stdio: "ignore",
 });
 try {
-  for (let i = 0; i < 60; i++) {
+  for (let i = 0; i < 80; i++) {
     try {
-      if ((await fetch(`${base}/scripts/demo/harness.html`)).ok) break;
+      if ((await fetch(`${base}/scripts/demo/harness-art.html`)).ok) break;
     } catch {}
     await new Promise((r) => setTimeout(r, 500));
   }
   const browser = await chromium.launch();
-  const page = await browser.newPage({ viewport: { width: 900, height: 1400 } });
+  const page = await browser.newPage({ viewport: { width: 800, height: 800 } });
+  await page.goto(`${base}/scripts/demo/harness-art.html`);
+  await page.waitForFunction(() => document.title === "ready", null, { timeout: 60000 });
   for (const ex of examples) {
-    await page.goto(
-      `${base}/scripts/demo/harness.html?spec=${encodeURIComponent(JSON.stringify(ex.spec))}`,
+    const file = path.join(srcDir, ex.photo);
+    const png = await page.evaluate(
+      async ([spec, photo]) =>
+        window.renderOne({ ...spec, date: "November 2026", size: "story" }, [photo], "original"),
+      [
+        ex.spec,
+        { b64: fs.readFileSync(file).toString("base64"), mime: mimeOf(file), ...ex.placement },
+      ],
     );
-    await page.waitForSelector("input[type=file]", { state: "attached" });
-    const files = ex.photos.map((f) => path.join(srcDir, f));
-    if (ex.mode === "card") await page.getByLabel(/Keepsake card/).check();
-    for (let n = 0; n < files.length; n++) {
-      const [fc] = await Promise.all([
-        page.waitForEvent("filechooser"),
-        page
-          .getByRole("button", { name: /Choose from photos/ })
-          .nth(n)
-          .click(),
-      ]);
-      await fc.setFiles(files[n]);
-      await page.waitForTimeout(900);
-    }
-    if (ex.size) await page.getByLabel(new RegExp(ex.size, "i")).first().check();
-    await page.waitForTimeout(600);
-    const [dl] = await Promise.all([
-      page.waitForEvent("download"),
-      page.getByRole("button", { name: /Download PNG/ }).click(),
-    ]);
-    await dl.saveAs(path.join(rawDir, `${ex.id}.png`));
+    fs.writeFileSync(path.join(rawDir, `${ex.id}.png`), Buffer.from(png, "base64"));
     console.log("rendered", ex.id);
   }
   await browser.close();
 } finally {
   server.kill();
 }
-// Compose before/after pairs and write the optimized webp files.
 execFileSync(
   "python3",
   [
@@ -84,7 +73,5 @@ execFileSync(
     path.join(root, "public/examples"),
     path.join(here, "examples.json"),
   ],
-  {
-    stdio: "inherit",
-  },
+  { stdio: "inherit" },
 );

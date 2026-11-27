@@ -34,6 +34,8 @@ import {
 import { usePassport } from "@/passport/usePassport";
 import type { Adventure } from "@/passport/schema";
 import { AdventureCard, Chips } from "./AdventureCard";
+import { GiftBow, journeyPhoto } from "./journey-art";
+import "@/design/qr-journey.css";
 import { useAdventureLibrary } from "./collections-shared";
 import { flow } from "./flow-events";
 import { needChips, glanceOf, suitabilityNotes, SUPPLY_LABELS } from "./labels";
@@ -137,23 +139,41 @@ function Recommendation({
     ...needChips(glanceOf(a)).filter((n) => !n.startsWith("Involves food")),
     ...a.requires.filter((r) => r !== "car").map((r) => `Needs: ${SUPPLY_LABELS[r]}`),
   ];
+  const who = dogName ? dogName : null;
   return (
     <>
       <h1 className="pa-h1" tabIndex={-1} ref={headRef}>
         A little adventure awaits...
       </h1>
-      <article className="pa-card pa-mystery" aria-label="Recommended adventure">
+      <article className="pa-card pa-mystery qr-gift" aria-label="Recommended adventure">
+        <div className="qr-gift-art" aria-hidden="true">
+          <img src={journeyPhoto(a)} alt="" width={640} height={200} decoding="async" />
+          <GiftBow />
+        </div>
         <p className="pa-kicker">
-          {dogName ? `Your free first adventure for ${dogName}` : "Your free first adventure"}
+          {who ? `Your free first adventure for ${who}` : "Your free first adventure"}
+        </p>
+        <p className="qr-gift-line">
+          {who
+            ? `A little something picked just for ${who}. Here is what to expect.`
+            : "A little something picked just for you and your dog. Here is what to expect."}
         </p>
         {a.teaser && <p className="pa-clue">“{a.teaser}”</p>}
         <Chips a={a} />
+        {needsConfirm ? (
+          <ConfirmBeforeReveal a={a} onAnother={another ? onAnother : onChange} another={another} />
+        ) : (
+          <RevealSurface adventureId={a.id} onReveal={onAccept} />
+        )}
         {notes.length > 0 && (
-          <ul className="pa-meta" aria-label="Good to know before you reveal">
-            {[...new Set(notes)].map((n) => (
-              <li key={n}>{n}</li>
-            ))}
-          </ul>
+          <div className="qr-good" role="group" aria-label="Good to know before you reveal">
+            <p className="qr-good-k">Good to know</p>
+            <ul className="pa-meta">
+              {[...new Set(notes)].map((n) => (
+                <li key={n}>{n}</li>
+              ))}
+            </ul>
+          </div>
         )}
         {widenedNote && <p className="pa-fine">{widenedNote}</p>}
         {why && (
@@ -161,16 +181,7 @@ function Recommendation({
             <strong>Why this one:</strong> {why}.
           </p>
         )}
-        <div className="pa-actions">
-          {needsConfirm ? (
-            <ConfirmBeforeReveal
-              a={a}
-              onAnother={another ? onAnother : onChange}
-              another={another}
-            />
-          ) : (
-            <RevealSurface adventureId={a.id} onReveal={onAccept} />
-          )}
+        <div className="pa-actions qr-gift-actions">
           {another ? (
             <button type="button" className="pp-btn pp-btn-ghost" onClick={onAnother}>
               Show me another
@@ -181,6 +192,12 @@ function Recommendation({
             </p>
           )}
         </div>
+        {another && (
+          <p className="pa-fine">
+            Not quite right? Choose another before you reveal. The first adventure you reveal is
+            your free one.
+          </p>
+        )}
         {hasManyDogs(dogName) && <p className="pa-fine">{MULTI_DOG_NOTE}</p>}
       </article>
       <p className="pa-fine">
@@ -256,6 +273,8 @@ export function FreeStarter({ ctx }: { ctx?: CtxKey | undefined } = {}) {
   const wasDone = useRef<boolean | null>(null);
   const head = useRef<HTMLHeadingElement>(null);
   const lastView = useRef<string | null>(null);
+  // True only for the reveal that happened in this page view: a refresh never steals focus or scrolls.
+  const [justRevealed, setJustRevealed] = useState(false);
 
   const adventure = ready ? savedStarter(library, save) : undefined;
   const done = adventure ? has(save.done, adventure.id) : false;
@@ -293,7 +312,8 @@ export function FreeStarter({ ctx }: { ctx?: CtxKey | undefined } = {}) {
     if (!ready) return;
     const prev = lastView.current;
     lastView.current = view;
-    if (prev !== null && prev !== view && view !== "quiz") focusInto(head.current);
+    if (prev !== null && prev !== view && view !== "quiz" && !view.startsWith("revealed"))
+      focusInto(head.current);
   }, [ready, view]);
 
   // Leaving the preferences quiz (save or cancel) puts focus back on the page heading rather than dropping it.
@@ -345,7 +365,18 @@ export function FreeStarter({ ctx }: { ctx?: CtxKey | undefined } = {}) {
   }
 
   function accept() {
+    if (isRevealed(getSave())) return; // a second tap, double-click or stray event never reveals twice
     revealStarter();
+    setJustRevealed(true);
+    // Silent history marker (same URL, no new entry): Back never re-offers a reveal or rolls another adventure.
+    try {
+      window.history.replaceState(
+        { ...((window.history.state as object | null) ?? {}), ppRevealed: true },
+        "",
+      );
+    } catch {
+      /* history unavailable: nothing to restore */
+    }
     flow("intro_revealed");
   }
 
@@ -364,7 +395,12 @@ export function FreeStarter({ ctx }: { ctx?: CtxKey | undefined } = {}) {
         <p className="pa-sub">
           Picked for {dogWho(dogName)}. It stays here, free, so you can come back to it any time.
         </p>
-        <AdventureCard a={adventure} dogName={dogName} focusOnMount />
+        <AdventureCard
+          a={adventure}
+          dogName={dogName}
+          focusOnMount={justRevealed}
+          entering={justRevealed}
+        />
         {!done && <SkipAheadLine />}
         <p className="pa-fine">
           <button type="button" className="pa-linkbtn" onClick={editPrefs}>

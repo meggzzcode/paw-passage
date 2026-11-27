@@ -53,14 +53,36 @@ function parsePreviews(b: unknown): PreviewsResponse | null {
   return { items, total: r["total"], collections: r["collections"] };
 }
 
-export async function fetchPreviews(): Promise<PreviewsResponse | null> {
+/** Why previews could not be loaded. Never confused with an empty catalogue. */
+export type PreviewsFailure = "network" | "server" | "unavailable";
+export type PreviewsResult =
+  { ok: true; data: PreviewsResponse; synthetic: boolean } | { ok: false; kind: PreviewsFailure };
+
+/**
+ * A successful answer (even an empty one) is ok:true; anything else is a failure with a reason. The `x-pp-synthetic`
+ * header marks the sample catalogue served on Netlify preview deploys; the UI may ignore it.
+ */
+export async function fetchPreviewsResult(): Promise<PreviewsResult> {
+  let res: Response;
   try {
-    const res = await fetch("/api/previews", { credentials: "same-origin" });
-    if (!res.ok) return null;
-    return parsePreviews(await res.json());
+    res = await fetch("/api/previews", { credentials: "same-origin" });
   } catch {
-    return null;
+    return { ok: false, kind: "network" };
   }
+  if (!res.ok) return { ok: false, kind: res.status === 503 ? "unavailable" : "server" };
+  try {
+    const data = parsePreviews(await res.json());
+    return data
+      ? { ok: true, data, synthetic: res.headers.get("x-pp-synthetic") === "1" }
+      : { ok: false, kind: "server" };
+  } catch {
+    return { ok: false, kind: "server" };
+  }
+}
+
+export async function fetchPreviews(): Promise<PreviewsResponse | null> {
+  const r = await fetchPreviewsResult();
+  return r.ok ? r.data : null;
 }
 
 /** Sent only on an explicit user action, never automatically. Returns null on any failure. */

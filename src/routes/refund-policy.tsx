@@ -18,7 +18,7 @@ export const Route = createFileRoute("/refund-policy")({
 
 ## Refund terms at checkout
 
-Any refund terms that apply to your purchase, including how long you have to ask, are shown on the checkout page before you pay. If they differ from this page, the checkout page for your purchase applies. We do not state a refund window here because it is set on the checkout listing, not on this site.
+Any refund terms that apply to your purchase, including how long you have to ask, are shown on the checkout page before you pay. They are set by our checkout provider and govern the transaction. This page describes our process; if it differs from the provider's terms, the provider's terms for your purchase apply. We do not state a refund window here because it is set on the checkout listing, not on this site.
 
 ## How to ask
 

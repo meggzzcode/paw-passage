@@ -50,6 +50,11 @@
 }
 .ux-code {
   margin: var(--space-3, 0.75rem) 0;
+  scroll-margin-top: 5rem;
+}
+.ux-price {
+  font-size: 1.125rem;
+  margin: 0.25rem 0 0.75rem;
 }
 .ux-code > summary {
   min-height: 44px;

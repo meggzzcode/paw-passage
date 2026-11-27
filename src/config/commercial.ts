@@ -52,10 +52,10 @@ export const GIFT_CTA = "Gift the Adventure Passport";
 /**
  * The refund terms in one place, shown next to the buy button BEFORE payment. It summarizes src/routes/refund-policy.tsx
  * and promises nothing it does not say: no refund window is stated here because the checkout page shows the terms that
- * apply to the purchase (and wins if they differ). A test keeps this in step with the policy page.
+ * apply to the purchase (the provider's terms govern the transaction if they differ). A test keeps this in step with the policy page.
  */
 export const REFUND_SUMMARY: readonly string[] = [
-  "The checkout page shows the refund terms that apply before you pay, and it wins if it differs from our policy page.",
+  "The checkout provider's terms govern your purchase and are shown on the checkout page before you pay. Our policy page describes our process; if the two differ, the provider's terms for the transaction apply.",
   "To ask for a refund, contact us with the email you bought with and the date. It is issued through our checkout provider, to the way you paid.",
   "When a purchase is refunded, full access is switched off, within about a day. The free Passport stays, and your progress stays yours.",
 ];
@@ -84,7 +84,10 @@ export const homePromo = {
   productLine: BRAND.hero.productLine,
   commercial: ONE_TIME_LINE,
   primaryCta: BRAND.hero.primaryCtaFree,
-  secondaryCta: "Explore the Adventure Collection",
+  /** The one clear secondary action under "A few places to start": opens the collections. */
+  collectionsCta: "Browse collections",
+  /** The quiet link beside it: selected public previews (cards without the steps). */
+  secondaryCta: "See adventure previews",
   demo: {
     eyebrow: "See it in action",
     title: "From first look to a keepsake style, in five steps",
@@ -159,7 +162,7 @@ export const DEMO_STEPS: readonly DemoStep[] = [
     id: "discover",
     label: "Discover",
     title: "Discover an adventure picked for your dog",
-    body: "Answer a few taps and see one pick with its time, cost, setting and effort. Not the steps yet. Ask for another as often as you like.",
+    body: "Answer a few taps and see one pick with its time, cost, setting and effort. Not the steps yet. Not quite right? Ask for another before you reveal. The first adventure you reveal is your free one.",
     src: "/demo/1-discover.webp",
     alt: "A free adventure picked for a sample dog: a mystery title with its time, cost, setting and effort, what it needs, and a short reason it was chosen.",
     width: 390,

@@ -45,6 +45,7 @@ None found in the code. One owner decision is outstanding and is a risk to the p
 2. Test entitlements: `TestProvider` throws in production, unknown and empty contexts, and needs `PP_ALLOW_TEST_PROVIDER` exactly "1"; the flag set by mistake in production grants nothing (503, no cookie).
 3. Preview defaults (public throwaway secrets plus the test flag) apply only to `branch-deploy` and `deploy-preview`, never to production, dev or unknown.
 4. Missing production configuration (no `SESSION_SECRET`/`PP_DATA_KEY`, or no `GUMROAD_PRODUCT_ID`) returns a safe 503 from session and activation, never a grant and never a fallback to preview defaults.
+   4a. Synthetic previews: with no stored previews index, `/api/previews` and `/api/previews/match` serve the built-in sample catalogue (`synthetic-previews.ts`) only when `syntheticPreviewsEnabled(context)` is true (`branch-deploy`, `deploy-preview`), through the same `buildPreviewIndex` allowlist, marked `X-PP-Synthetic: 1`. Production, dev and unknown contexts return the empty JSON (`previews-fallback.test.ts`).
 5. Premium endpoints: no session means 401/503 with no premium text in every context; a preview serves only what its own `premium-preview` store holds (empty or synthetic unless the owner imports content).
 6. The real premium package is not bundled in `dist` or the functions bundle (leak scan above; `premium-package.test.ts`, `security-static.test.ts`).
 7. Analytics never load on non-production hosts, even after consent (`consent.test.tsx`).

@@ -1,0 +1,502 @@
+/* Website-wide Everyday Magic consistency pass (WS). Presentation only, existing --pp-* tokens, no new assets.
+   Loaded last so it can bring the remaining older-looking pieces (breadcrumbs, policy pages, status cards,
+   adventure lists, disclosures, footer, 404) into the same soft, collected look as the home page. */
+
+/* ---- Breadcrumbs: one tidy pill, never stacked on phones ---- */
+main nav[aria-label="Breadcrumb"] ol {
+  flex-wrap: nowrap;
+  max-width: 100%;
+  gap: 0 0.2rem;
+  padding: 0 0.85rem;
+  background: color-mix(in oklab, var(--pp-ochre) 38%, var(--pp-paper));
+}
+main nav[aria-label="Breadcrumb"] li {
+  flex: 0 1 auto !important;
+}
+main nav[aria-label="Breadcrumb"] li > span[aria-hidden] {
+  display: inline !important;
+  opacity: 0.6;
+  margin-left: 0.2rem;
+}
+main nav[aria-label="Breadcrumb"] li > a {
+  min-width: 0;
+  padding-inline: 0.15rem;
+  text-decoration: none;
+}
+main nav[aria-label="Breadcrumb"] li > [aria-current="page"] {
+  max-width: 11rem;
+  font-weight: 600;
+}
+
+/* ---- Policy, contact, story pages: a soft paper card with a calmer reading rhythm ---- */
+.ws-paper {
+  background: var(--pp-card);
+  border: 1.5px solid var(--pp-hairline);
+  border-radius: 1.75rem;
+  box-shadow: var(--pp-shadow);
+  padding: clamp(1.25rem, 4.5vw, 2.5rem);
+}
+.ws-paper > h1 {
+  font-size: clamp(2rem, 7vw, 3rem);
+  line-height: 1.05;
+}
+.ws-paper .prose-article {
+  font-size: 1rem;
+  line-height: 1.65;
+}
+.ws-paper .prose-article h2 {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  line-height: 1.2;
+  font-weight: 650;
+  margin-top: 1.9em;
+  padding-top: 1.1rem;
+  border-top: 1.5px dashed var(--pp-hairline);
+}
+.ws-paper .prose-article h2:first-child {
+  border-top: 0;
+  padding-top: 0;
+  margin-top: 0;
+}
+.ws-paper .prose-article h3 {
+  font-family: var(--font-display);
+  font-size: 1.08rem;
+  font-weight: 650;
+}
+.ws-paper .prose-article ul > li::marker {
+  color: var(--pp-red);
+}
+.ws-paper .prose-article strong {
+  font-weight: 650;
+}
+.ws-paper .prose-article a:not(.pp-btn) {
+  text-decoration: none;
+  background: linear-gradient(var(--pp-ochre), var(--pp-ochre)) 0 100% / 100% 0.35em no-repeat;
+  color: inherit;
+  font-weight: 600;
+}
+.ws-paper .prose-article a:not(.pp-btn):hover {
+  background-size: 100% 100%;
+}
+.ws-lead {
+  font-size: 1.12rem;
+  line-height: 1.5;
+  color: var(--pp-muted);
+}
+
+/* Story strip: two tilted polaroids at the top of the brand pages (decorative, existing illustrative images) */
+.ws-strip {
+  display: flex;
+  justify-content: center;
+  gap: 0.9rem;
+  margin: 1.5rem 0 0.25rem;
+  padding: 0.3rem 0 0.6rem;
+}
+.ws-strip figure {
+  position: relative;
+  margin: 0;
+  width: min(44%, 11rem);
+  padding: 0.45rem 0.45rem 1.9rem;
+  background: var(--pp-card);
+  border-radius: 6px;
+  box-shadow: var(--pp-shadow);
+  rotate: -3deg;
+}
+.ws-strip figure:nth-child(2) {
+  rotate: 3deg;
+  margin-top: 0.8rem;
+}
+.ws-strip img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: 50% 35%;
+  border-radius: 3px !important;
+}
+.ws-strip figcaption {
+  position: absolute;
+  inset: auto 0 0.2rem;
+  text-align: center;
+  font-family: var(--font-hand);
+  font-weight: 600;
+  font-size: 1.15rem;
+  line-height: 1.2;
+  color: var(--pp-ink);
+}
+.ws-strip-note {
+  margin: 0 0 1rem;
+  text-align: center;
+  font-size: 0.8125rem;
+  color: var(--pp-muted);
+}
+@media (prefers-reduced-motion: reduce) {
+  .ws-strip figure,
+  .ws-strip figure:nth-child(2) {
+    rotate: 0deg;
+  }
+}
+
+/* ---- Friendly state cards: loading, empty, error and locked notes share one soft look ---- */
+.pa-card[role="status"],
+.pa-panel[role="status"],
+.ws-state {
+  background: color-mix(in oklab, var(--pp-ochre) 22%, var(--pp-card));
+  border: 1.5px dashed color-mix(in oklab, var(--pp-ink) 28%, transparent);
+  box-shadow: none;
+  border-radius: 1.5rem;
+  position: relative;
+}
+.pa-card[role="status"]::before,
+.ws-state::before {
+  content: "\1F43E" / "";
+  display: grid;
+  place-items: center;
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
+  background: var(--pp-card);
+  font-size: 1.25rem;
+  box-shadow: 0 0 0 1.5px var(--pp-hairline);
+}
+.ws-state {
+  display: grid;
+  gap: 0.8rem;
+  padding: clamp(1.25rem, 4vw, 2rem);
+  max-width: 34rem;
+  margin-inline: auto;
+}
+.ws-state h1 {
+  font-size: clamp(1.7rem, 6vw, 2.4rem);
+  line-height: 1.08;
+  margin: 0;
+}
+.ws-state p {
+  margin: 0;
+}
+.pp-home-error .pp-h1 {
+  font-size: clamp(1.7rem, 6vw, 2.4rem);
+  line-height: 1.08;
+}
+.pp-home-error,
+.pp-home-skeleton {
+  padding-block: 2rem 3rem;
+}
+.pp-home-skeleton .pp-fine {
+  text-align: center;
+}
+.pp-retry {
+  white-space: nowrap;
+  font-size: 0.8125rem;
+}
+
+/* ---- Header and footer ---- */
+@media (max-width: 767px) {
+  .pp-footer > .pp-container.grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem 1rem;
+    padding-block: 2rem;
+  }
+  .pp-footer > .pp-container.grid > div:first-child {
+    grid-column: 1 / -1;
+  }
+}
+.pp-sheet {
+  box-shadow: 0 22px 40px -26px oklch(0.27 0.015 40 / 0.5);
+}
+
+/* ---- Home: steps become little cards, offer card gets its ticket ---- */
+.pp-steps {
+  gap: 0.8rem;
+}
+.pp-steps li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 0.9rem;
+  align-items: start;
+  padding: 1rem 1.1rem;
+  background: var(--pp-card);
+  border: 1.5px solid var(--pp-hairline);
+  border-radius: 1.5rem;
+  box-shadow: var(--pp-shadow);
+}
+.pp-steps li::before {
+  grid-row: 1 / span 2;
+  margin: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.pp-steps li:nth-child(2)::before {
+  background: var(--pp-strawberry);
+}
+.pp-steps li:nth-child(3)::before {
+  background: var(--pp-powder);
+}
+.pp-steps h3 {
+  font-weight: 650;
+  font-size: 1.2rem;
+}
+.pp-steps p {
+  margin: 0.15rem 0 0;
+  opacity: 1;
+  color: var(--pp-muted);
+  font-size: 0.97rem;
+}
+@media (min-width: 768px) {
+  .pp-steps li {
+    grid-template-columns: 1fr;
+  }
+  .pp-steps li::before {
+    grid-row: auto;
+    margin-bottom: 0.6rem;
+  }
+}
+.pp-invite .co-compare > .pp-card:last-child {
+  background: color-mix(in oklab, var(--pp-ochre) 55%, var(--pp-card));
+  border-color: color-mix(in oklab, var(--pp-ochre) 80%, var(--pp-ink));
+}
+.pp-invite .pp-price-line strong {
+  font-size: 2.4rem;
+  letter-spacing: -0.04em;
+  line-height: 1;
+}
+.pp-invite .co-compare > .pp-card:last-child .pp-btn-secondary {
+  background: var(--pp-red);
+  color: var(--pp-on-red);
+  border-color: transparent;
+}
+
+/* ---- Intro quiz: even tiles, no orphan, calmer explainer below ---- */
+.pd-quiz .pa-chips {
+  grid-auto-rows: minmax(6rem, auto);
+}
+.pd-quiz .pa-h {
+  margin-bottom: 0.9rem;
+}
+@media (max-width: 640px) {
+  .pd-quiz .pa-chips > .pa-chip:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    min-height: 4.5rem;
+  }
+}
+[data-testid="discover-intro"] {
+  background: var(--pp-paper-2);
+  box-shadow: none;
+  border-style: dashed;
+  font-size: 0.92rem;
+}
+[data-testid="discover-intro"] .pa-h {
+  font-size: 1.1rem;
+}
+
+/* ---- Mystery card: readable helper text on ink ---- */
+.pa-mystery .pa-fine,
+.pa-mystery .pa-sub {
+  color: color-mix(in oklab, var(--pp-paper) 86%, transparent);
+}
+
+/* ---- Adventure detail: steps, lists and disclosures ---- */
+.pa-steps {
+  list-style: none;
+  padding: 0;
+  counter-reset: ws-step;
+  gap: 0.8rem;
+}
+.pa-steps > li {
+  counter-increment: ws-step;
+  position: relative;
+  padding-left: 2.6rem;
+  line-height: 1.55;
+}
+.pa-steps > li::before {
+  content: counter(ws-step);
+  position: absolute;
+  left: 0;
+  top: 0.05rem;
+  width: 1.85rem;
+  height: 1.85rem;
+  border-radius: 50%;
+  background: var(--pp-ochre);
+  color: var(--pp-ink);
+  font: 700 0.95rem/1.85rem var(--font-display);
+  text-align: center;
+}
+.pa-list-plain > li::marker,
+.co-plain > li::marker,
+.pa-list > li::marker {
+  color: var(--pp-red);
+}
+.pa-sec {
+  margin-top: 0.7rem;
+  padding-top: 0.8rem;
+  border-top: 1.5px dashed var(--pp-hairline);
+}
+.pa-fold,
+.pa-gtk {
+  background: color-mix(in oklab, var(--pp-paper-2) 70%, var(--pp-card));
+  border-radius: 1.25rem;
+}
+.pa-fold summary,
+.pa-gtk summary {
+  justify-content: space-between;
+  gap: 0.75rem;
+  list-style: none;
+}
+.pa-fold summary::-webkit-details-marker,
+.pa-gtk summary::-webkit-details-marker {
+  display: none;
+}
+.pa-fold summary::after,
+.pa-gtk summary::after {
+  content: "+";
+  color: var(--pp-red);
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1;
+}
+.pa-fold[open] summary::after,
+.pa-gtk[open] summary::after {
+  content: "\2212";
+}
+
+/* ---- Purchase page: the offer card first, with a ticket feel ---- */
+[data-testid="buy-panel"] {
+  background: linear-gradient(
+    180deg,
+    color-mix(in oklab, var(--pp-ochre) 42%, var(--pp-card)),
+    var(--pp-card) 70%
+  );
+  border: 2px solid color-mix(in oklab, var(--pp-ochre) 75%, var(--pp-ink));
+  border-radius: 1.75rem;
+}
+[data-testid="buy-panel"] .ux-price strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: clamp(1.45rem, 5vw, 1.8rem);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+[data-testid="buy-panel"] .pp-btn-primary {
+  width: 100%;
+  justify-content: center;
+}
+[data-testid="benefits"] .co-plain,
+[data-testid="compare"] .co-plain {
+  list-style: none;
+  padding-left: 0;
+}
+[data-testid="benefits"] .co-plain > li,
+[data-testid="compare"] .co-plain > li {
+  position: relative;
+  padding-left: 1.7rem;
+}
+[data-testid="benefits"] .co-plain > li::before,
+[data-testid="compare"] .co-plain > li::before {
+  content: "\2713";
+  position: absolute;
+  left: 0;
+  top: 0.12em;
+  display: grid;
+  place-items: center;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  background: var(--pp-sage);
+  color: var(--pp-ink);
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+.pa-panel .pp-faq {
+  gap: 0.5rem;
+}
+.pa-panel .pp-faq details {
+  background: var(--pp-paper-2);
+  padding: 0.2rem 1.1rem;
+}
+.pa-panel .pp-faq summary {
+  min-height: 3rem;
+}
+
+/* ---- Inline helper links inside sentences keep a 44px touch area without stretching the line ---- */
+.pa-fine a.pa-linkbtn {
+  display: inline-block;
+  line-height: inherit;
+  min-height: 0;
+  padding: 0.7rem 0.1rem;
+  margin-block: -0.7rem;
+}
+
+/* ---- Home hero on phones: tighter rhythm, sticker moved off the polaroid caption ---- */
+@media (max-width: 640px) {
+  .pp-hero {
+    padding-block: 2.25rem 2.5rem;
+  }
+  .pp-collage {
+    height: 24rem;
+  }
+  .pp-sticker {
+    left: 2%;
+    top: auto;
+    bottom: 0;
+    width: 5.5rem;
+    height: 5.5rem;
+    font-size: 0.72rem;
+    rotate: -8deg;
+  }
+}
+details.pa-card:not([open]) {
+  display: block;
+}
+
+/* ---- Spacing pass ---- */
+:where(p, h1, h2) + .pp-faq {
+  margin-top: 1.5rem;
+}
+.pp-faq details {
+  padding: 0.3rem 1.25rem;
+}
+.pp-faq summary {
+  min-height: 3.25rem;
+  display: flex;
+  align-items: center;
+}
+.pa-panel .pp-faq details {
+  padding: 0.15rem 1.1rem;
+}
+
+/* Keepsake editor: the visually hidden radio inside each look tile must be positioned by its tile, otherwise it sits
+   outside the scrolling row and widens the whole page on phones. */
+.kp-fx-opt {
+  position: relative;
+}
+.kp-fx-row {
+  scroll-snap-type: x proximity;
+  padding-inline: 2px;
+}
+.kp-fx {
+  min-width: 0;
+}
+.dt-results > .pd-list + * {
+  margin-top: 1rem;
+}
+
+/* Home keepsake examples: one sideways row at every width (the wrapped desktop pile added about 600px of length) */
+@media (min-width: 720px) {
+  [aria-labelledby="keepsake-h"] .pp-examples-row {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 1.25rem;
+    padding: 1rem 0.5rem 1.25rem;
+    scroll-snap-type: x proximity;
+  }
+  [aria-labelledby="keepsake-h"] .pp-examples-row > li {
+    scroll-snap-align: start;
+  }
+  [aria-labelledby="keepsake-h"] .pp-examples-pair img,
+  [aria-labelledby="keepsake-h"] .pp-examples-row img {
+    height: 11rem;
+  }
+}
+.ux-options > .pa-card {
+  align-content: start;
+}

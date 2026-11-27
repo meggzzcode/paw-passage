@@ -369,6 +369,7 @@ const filterFiles = ownFiles.filter(({ f }) => f.startsWith("filter"));
 describe("filter source rules", () => {
   it("lives in files named filter*.ts", () => {
     expect(filterFiles.map((x) => x.f).sort()).toEqual([
+      "filter-effects.ts",
       "filter-kit.ts",
       "filter-looks.ts",
       "filter-styles.ts",

@@ -53,7 +53,7 @@ describe("offer and premium summary", () => {
       }),
     ).toMatch(
       new RegExp(
-        `^Unlock 120 adventures and challenges across ${allCollections.length} collections, for every kind of dog: puppies, seniors`,
+        `^Unlock 120 little adventures across ${allCollections.length} collections, for every kind of dog: puppies, seniors`,
       ),
     );
     expect(unlockLine(null)).toMatch(/^Unlock a much larger library/);

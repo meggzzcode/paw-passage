@@ -23,6 +23,7 @@ import {
   nextLook,
   type FilterStyleId,
 } from "@/passport/keepsake/filter-styles";
+import { ensureKeepsakeFonts } from "@/passport/keepsake/fonts";
 import { MEMORY_MAX, downloadBlob, shareBlob } from "@/passport/keepsake/render";
 import {
   closePhoto,
@@ -35,6 +36,8 @@ import type { KeepsakeFamily } from "@/passport/keepsake/themes";
 import { track } from "@/passport/events";
 import { usePassport } from "@/passport/usePassport";
 import { PhotoEditor } from "./PhotoEditor";
+import { EffectPicker } from "./EffectPicker";
+import { applyPhotoEffect, type PhotoEffectId } from "@/passport/keepsake/filter-effects";
 
 const SIZE_IDS: SizeId[] = ["square", "portrait", "story"];
 
@@ -74,6 +77,7 @@ export function Keepsake({
   const limits = photoLimits(family);
   const [photos, setPhotos] = useState<(PlacedPhoto | null)[]>([]);
   const [active, setActive] = useState(0);
+  const [effect, setEffect] = useState<PhotoEffectId>("original");
   const { profile } = usePassport();
   const [typedName, setName] = useState<string | null>(null);
   const name = typedName ?? dogName ?? profile.name ?? "";
@@ -138,25 +142,38 @@ export function Keepsake({
     }),
     [family, theme, headline, adventure, name, date, size, look],
   );
+  const lookPhotos = useMemo(
+    () => photos.map((p) => (p ? applyPhotoEffect(p, effect) : p)),
+    [photos, effect],
+  );
   const ordered = useMemo(
-    () => (family === "collage" ? photos.filter(Boolean) : photos.slice(0, limits.max)),
-    [family, photos, limits.max],
+    () => (family === "collage" ? lookPhotos.filter(Boolean) : lookPhotos.slice(0, limits.max)),
+    [family, lookPhotos, limits.max],
   );
 
   // live preview
   useEffect(() => {
     const c = previewRef.current;
     if (!c) return;
-    const raf = requestAnimationFrame(() => {
-      try {
-        if (isFilter) drawFilterPreview(c, filterSpec, photos[0] ?? null);
-        else drawPreview(c, spec, { photos: ordered });
-      } catch {
-        setStatus("Sorry, this browser couldn't draw the preview.");
-      }
+    let live = true;
+    let raf = 0;
+    // Draw only once the self-hosted fonts are ready, so the preview matches the downloaded file.
+    void ensureKeepsakeFonts().then(() => {
+      if (!live) return;
+      raf = requestAnimationFrame(() => {
+        try {
+          if (isFilter) drawFilterPreview(c, filterSpec, lookPhotos[0] ?? null);
+          else drawPreview(c, spec, { photos: ordered });
+        } catch {
+          setStatus("Sorry, this browser couldn't draw the preview.");
+        }
+      });
     });
-    return () => cancelAnimationFrame(raf);
-  }, [spec, ordered, isFilter, filterSpec, photos]);
+    return () => {
+      live = false;
+      cancelAnimationFrame(raf);
+    };
+  }, [spec, ordered, isFilter, filterSpec, lookPhotos]);
 
   const setSlot = useCallback(
     (i: number, next: PlacedPhoto | null) => {
@@ -189,6 +206,7 @@ export function Keepsake({
     try {
       const src = await loadPhotoFile(f);
       setSlot(family === "collage" ? Math.min(i, filled) : i, placed(src));
+      setEffect("original");
       setActive(family === "collage" ? Math.min(i, filled) : i);
       setStatus("Photo ready. Drag it to frame the picture.");
     } catch (err) {
@@ -213,8 +231,9 @@ export function Keepsake({
   async function build(): Promise<Blob | null> {
     setBusy(true);
     try {
+      await ensureKeepsakeFonts();
       const b = isFilter
-        ? await makeFilterBlob(filterSpec, photos[0] ?? null)
+        ? await makeFilterBlob(filterSpec, lookPhotos[0] ?? null)
         : await makeArtworkBlob(spec, { photos: ordered });
       track("keepsake_created", { adventure: adventure.id });
       return b;
@@ -257,6 +276,7 @@ export function Keepsake({
     for (const p of photosRef.current) closePhoto(p?.source);
     setPhotos([]);
     setActive(0);
+    setEffect("original");
     setStatus("Ready for a new photo.");
   }
 
@@ -377,6 +397,10 @@ export function Keepsake({
             onChange={(next) => setSlot(activeIdx, next)}
           />
         </section>
+      )}
+
+      {activePhoto && (
+        <EffectPicker value={effect} source={activePhoto.source} onChange={setEffect} />
       )}
 
       <section className="kp-step" aria-labelledby="kp-h-words">

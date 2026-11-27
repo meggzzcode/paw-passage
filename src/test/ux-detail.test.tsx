@@ -193,7 +193,7 @@ describe("completion", () => {
 });
 
 describe("/unlock purchase clarity and entitled state", () => {
-  it("free: two clear options, price once, no shipping, code form up top, honest disabled checkout", () => {
+  it("free: two clear options, price once, no shipping, offer and checkout before the code form, honest disabled checkout", () => {
     render(<Unlock />);
     expect(screen.getByRole("heading", { name: "Your first adventure — free." })).toBeTruthy();
     expect(
@@ -205,24 +205,38 @@ describe("/unlock purchase clarity and entitled state", () => {
     expect(t).not.toMatch(/forever|lifetime|unlimited updates/i);
     const btn = screen.getByRole("button", { name: "Checkout opens soon" });
     expect(btn).toBeDisabled();
-    // The code form is reachable before the options, not at the bottom.
+    // A new purchaser sees the headline, price and primary action BEFORE the activation form.
     const code = screen.getByTestId("code-section");
-    const free = screen.getByRole("heading", { name: "Your first adventure — free." });
-    expect(code.compareDocumentPosition(free) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
-    fireEvent.click(screen.getByText("Already have a code?", { selector: "summary" }));
-    expect(screen.getByLabelText("Purchase code")).toBeTruthy();
-    // one form, one "Already have a code?" label (the summary), no second heading
-    expect(screen.getAllByText("Already have a code?")).toHaveLength(1);
+    const h1 = screen.getByRole("heading", { level: 1 });
+    const price = screen.getAllByText(/One payment of \$19\.99\. Yours to keep\./)[0]!;
+    const follows = (a: Element, b: Element) =>
+      !!(a.compareDocumentPosition(b) & Node.DOCUMENT_POSITION_FOLLOWING);
+    expect(follows(h1, price)).toBe(true);
+    expect(follows(price, btn)).toBe(true);
+    expect(follows(btn, code)).toBe(true);
+    // The h1 and the supporting paragraph do not repeat each other.
+    expect(h1.nextElementSibling?.textContent ?? "").not.toContain(h1.textContent ?? "");
+    // Existing customers: a real anchor near the top that opens the single form and focuses the input.
+    const link = screen.getByRole("link", { name: "Already have a code?" });
+    expect(link.getAttribute("href")).toBe("#activate-code");
+    expect(code.id).toBe("activate-code");
+    expect(follows(link, code)).toBe(true);
+    fireEvent.click(link);
+    expect(code.hasAttribute("open")).toBe(true);
+    expect(document.activeElement).toBe(screen.getByLabelText("Purchase code"));
+    // one form, one code input
     expect(screen.getAllByLabelText("Purchase code")).toHaveLength(1);
+    expect(screen.getAllByRole("form", { name: "Activate your code" })).toHaveLength(1);
   });
   it("right after activating here: the label appears once, with the confirmation, the single form and the welcome link", () => {
     const { rerender } = render(<Unlock />);
-    fireEvent.click(screen.getByText("Already have a code?", { selector: "summary" }));
+    fireEvent.click(screen.getByText("Enter your purchase code", { selector: "summary" }));
     fireEvent.submit(screen.getByRole("form", { name: "Activate your code" })); // marks "activated here"
     ent.state = { ...ent.state, status: "entitled", signedIn: true };
     rerender(<Unlock />);
     const main = document.body.textContent ?? "";
-    expect(main.match(/Already have a code\?/g)).toHaveLength(1);
+    expect(main.match(/Enter your purchase code/g)).toHaveLength(1);
+    expect(main).not.toMatch(/Already have a code\?/); // the sales-state link is gone once entitled
     expect(screen.getAllByLabelText("Purchase code")).toHaveLength(1);
     expect(screen.queryByRole("heading", { name: "Already have a code?" })).toBeNull();
   });

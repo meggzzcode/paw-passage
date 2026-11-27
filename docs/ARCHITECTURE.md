@@ -33,6 +33,15 @@ Pages are server-rendered by TanStack Start (`src/server.ts`, `src/start.ts`). T
 - `local-store.ts`: browser persistence in `localStorage` key `pp.save.v1`, with an in-memory fallback and a visible notice when storage is blocked; JSON export and import.
 - `keepsake/`: canvas renderer, ten families, themes, photo intake (`photo.ts`: in memory only, 20 MB and 2,400 px limits). Nothing in this folder talks to a server or writes to storage.
 
+### Keepsake mapping and coverage
+
+Each adventure names its own keepsake in the `keepsake` block of its card: `family` (one of the ten in `KEEPSAKE_FAMILIES`), `theme` (a theme id registered for that family in `keepsake/themes*.ts`), `headline` (max 40), and optional `subhead` (max 60) and `explainer` (max 64). There is no automatic assignment: the card is the single source. `themeFor(family, theme)` falls back to the family's first theme for an unknown or mismatched name; that fallback is a safety net for bad data, not a normal mapping, and `src/test/keepsake-coverage.test.ts` fails if any published card would use it. Themes are drawn entirely with canvas paths (motifs from `MOTIFS`, system fonts), so a theme has no image files that can go missing.
+
+- Modes: "photo keepsake" (a sticker overlay on the person's photo; six looks in `filter-styles.ts`, four per adventure, chosen by a stable hash of the theme id) and "keepsake card" (the illustrated family artwork).
+- Formats: Square 1080x1080, Portrait 1080x1350, Story 1080x1920; every family lays out natively for each (the story format keeps larger top and bottom safe areas).
+- Personalization: dog name, date (defaults to today), a memory line (max 140 characters), crop/zoom/rotate per photo, plus the card's own headline, subhead and explainer. Then-and-now needs two photos, collage up to four. Photos stay in memory; the exported PNG is a fresh canvas encode with no input metadata.
+- Coverage test: free cards always; the full 117-card library only on the owner machine (`PREMIUM_DIR`, see `docs/PREMIUM-INTEGRATION-TESTS.md`). Premium mapping fixes are made in the protected package, never here.
+
 ### Personalized keepsake creation is paid (owner decision, 2026-11-26)
 
 Free visitors can view finished static examples; only entitled customers can upload or take a photo and make a keepsake. The free intro adventure still gives the intro stamp.

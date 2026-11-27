@@ -5,6 +5,7 @@ import { customersStoreName, premiumStoreName, withPreviewDefaults, type Env } f
 import { BlobsKV, type BlobStoreLike } from "./kv";
 import { createRateLimiter } from "./limits";
 import { selectProvider } from "./provider";
+import { syntheticPreviewsEnabled } from "./synthetic-previews";
 
 // Module-level so counters survive between requests handled by the same function instance.
 const accessLimiter = createRateLimiter({ windowMs: 60_000, max: 12 });
@@ -30,6 +31,7 @@ export function handleNetlify(req: Request, context: NetlifyContextLike): Promis
       VAPID_SUBJECT: env.VAPID_SUBJECT,
     },
     ip: context.ip ?? req.headers.get("x-nf-client-connection-ip") ?? undefined,
+    syntheticPreviews: syntheticPreviewsEnabled(ctx),
     accessLimiter,
     generalLimiter,
   };

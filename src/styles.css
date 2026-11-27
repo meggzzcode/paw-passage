@@ -12,6 +12,7 @@
 @import "./design/notifications.css";
 @import "./design/everyday.css";
 @import "./design/passport-v8.css";
+@import "./design/ws-polish.css";
 
 @custom-variant dark (&:is(.dark *));
 

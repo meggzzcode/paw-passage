@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ABOUT_BODY, ABOUT_INTRO, ABOUT_UPDATED } from "@/components/site/about-content";
 import { InfoPage } from "@/components/site/InfoPage";
+import { StoryStrip } from "@/components/site/StoryStrip";
 import { pageHead } from "@/lib/seo";
 
 export const Route = createFileRoute("/about")({
@@ -17,6 +18,7 @@ export const Route = createFileRoute("/about")({
       intro={ABOUT_INTRO}
       updated={ABOUT_UPDATED}
       body={ABOUT_BODY}
+      lead={<StoryStrip />}
     />
   ),
 });

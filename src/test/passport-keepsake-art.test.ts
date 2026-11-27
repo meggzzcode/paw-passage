@@ -19,6 +19,7 @@ import {
   type ArtSpec,
   type SizeId,
 } from "../passport/keepsake/artwork";
+import { FONT_HAND } from "../passport/keepsake/fonts";
 import { SERIF, downloadBlob, shareBlob } from "../passport/keepsake/render";
 import {
   MAX_PHOTO_BYTES,
@@ -268,7 +269,7 @@ describe("artwork drawing", () => {
   );
 
   it("uses only system serif and sans font stacks", () => {
-    const allowed = [...Object.values(FONTS), SERIF];
+    const allowed = [...Object.values(FONTS), SERIF, FONT_HAND];
     for (const t of ALL) {
       const f = fakeCtx();
       renderArtwork(f.ctx, baseSpec(t.family, t.id, "portrait"), {});

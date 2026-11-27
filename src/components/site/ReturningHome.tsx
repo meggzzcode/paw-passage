@@ -62,7 +62,7 @@ export function HomeSkeleton() {
       aria-label="Checking your access"
     >
       <Container>
-        <p className="pp-fine" role="status">
+        <p className="pp-fine ws-state" role="status">
           Checking your access...
         </p>
       </Container>
@@ -83,20 +83,22 @@ export function AccessCheckFailed() {
       data-testid="access-check-failed"
     >
       <Container>
-        <h1 id="home-h1" className="pp-h1">
-          Having a little trouble opening your Passport. Let's try again.
-        </h1>
-        <p className="pp-cta-row">
-          <button type="button" className="pp-btn pp-btn-primary" onClick={retry}>
-            Retry
-          </button>
-        </p>
-        <p className="pp-fine">
-          Your adventures and progress on this device are safe.{" "}
-          <AppLink to="/contact" className="pp-textlink">
-            Contact support
-          </AppLink>
-        </p>
+        <div className="ws-state">
+          <h1 id="home-h1" className="pp-h1">
+            Having a little trouble opening your Passport. Let's try again.
+          </h1>
+          <p className="pp-cta-row">
+            <button type="button" className="pp-btn pp-btn-primary" onClick={retry}>
+              Retry
+            </button>
+          </p>
+          <p className="pp-fine">
+            Your adventures and progress on this device are safe.{" "}
+            <AppLink to="/contact" className="pp-textlink">
+              Contact support
+            </AppLink>
+          </p>
+        </div>
       </Container>
     </section>
   );

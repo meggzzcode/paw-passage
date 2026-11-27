@@ -36,7 +36,7 @@ Your access is for personal use by you and your household, on your own devices. 
 
 ## Refunds and access
 
-See our [refund policy](/refund-policy). If a purchase is refunded or reversed by a payment dispute, access to the full Passport for that purchase is switched off. Your progress on your device is kept, and the free Passport keeps working.
+See our [refund policy](/refund-policy), which describes our process. Our checkout provider's terms govern the transaction itself; if they differ from our policy page, the provider's terms for your purchase apply. If a purchase is refunded or reversed by a payment dispute, access to the full Passport for that purchase is switched off. Your progress on your device is kept, and the free Passport keeps working.
 
 ## Tools and guides
 

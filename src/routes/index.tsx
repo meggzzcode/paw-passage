@@ -1,16 +1,14 @@
 import { collections } from "@/passport/content";
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { PawPrint } from "lucide-react";
 import { Button } from "@/components/shell/Button";
 import { AppLink } from "@/components/shell/AppLink";
 import { Container } from "@/components/shell/Container";
 import { SectionHeading } from "@/components/shell/SectionHeading";
-import { Stamp } from "@/passport/art/stamps";
 import { pageHead } from "@/lib/seo";
 import { site } from "@/config/site";
 import { BRAND } from "@/config/brand";
 import { PhotoFilterExamples } from "@/components/site/PhotoFilterExamples";
-import { FILTER_EXAMPLES } from "@/components/site/keepsake-examples";
+import { HOME_EXAMPLES } from "@/components/site/keepsake-examples";
 import { FaqList } from "@/components/site/FaqList";
 import { FAQS } from "@/components/site/faq-content";
 import { HeroCollage } from "@/components/site/HeroCollage";
@@ -157,31 +155,30 @@ function SalesHome() {
             ))}
           </ul>
           <p className="pp-invite-links">
-            <AppLink to="/collections" className="pp-textlink">
-              Browse all collections
+            <AppLink to="/collections" className="pp-btn pp-btn-secondary">
+              {homePromo.collectionsCta}
             </AppLink>
+          </p>
+          <p className="pa-fine">
+            Collections group adventures by the kind of day you are having.{" "}
             <AppLink to={PREVIEWS_PATH} className="pp-textlink">
               {homePromo.secondaryCta}
-            </AppLink>
+            </AppLink>{" "}
+            to peek at a few selected adventure cards, without the steps.
           </p>
         </Container>
       </section>
 
       <section className="pp-section pp-band" aria-labelledby="keepsake-h">
         <Container>
-          <div className="pp-keep-grid">
-            <div>
-              <SectionHeading eyebrow="Keepsakes" title={BRAND.keepsakeHeadline} id="keepsake-h">
-                Every adventure earns a stamp for your passport. The full Passport adds personalized
-                keepsakes: a postcard, magazine cover or trading card from your own dog's photo,
-                drawn on your device and never uploaded.
-              </SectionHeading>
-            </div>
-            <PassportPreview />
-          </div>
+          <SectionHeading eyebrow="Keepsakes" title={BRAND.keepsakeHeadline} id="keepsake-h">
+            Every adventure earns a stamp for your passport. The full Passport adds personalized
+            keepsakes: a postcard, magazine cover or trading card from your own dog's photo, drawn
+            on your device and never uploaded.
+          </SectionHeading>
           <div className="mt-6">
             <PhotoFilterExamples
-              images={FILTER_EXAMPLES}
+              images={HOME_EXAMPLES}
               caption="Sample keepsakes, drawn by the same tool you would use. Examples, not customer stories. Photos are CC0 (public domain) from Wikimedia Commons."
             />
           </div>
@@ -248,29 +245,5 @@ function SalesHome() {
         </Container>
       </section>
     </>
-  );
-}
-
-const SAMPLE_STAMPS = [
-  "first-adventure",
-  "cozy-companion",
-  "road-tripper",
-  "memory-maker",
-] as const;
-
-function PassportPreview() {
-  return (
-    <div className="pp-passport" role="group" aria-label="Sample passport page with earned stamps">
-      <p className="pp-passport-title">
-        <PawPrint aria-hidden="true" size={16} /> Adventure Passport (sample page)
-      </p>
-      <ul className="pp-stamp-sample">
-        {SAMPLE_STAMPS.map((s, i) => (
-          <li key={s}>
-            <Stamp slug={s} earned={i < 3} size={92} />
-          </li>
-        ))}
-      </ul>
-    </div>
   );
 }

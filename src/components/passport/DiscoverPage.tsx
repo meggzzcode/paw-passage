@@ -52,14 +52,16 @@ function DiscoverIntro() {
         </h2>
         <p>
           Paws &amp; Passage helps you find one small adventure that fits your dog. You answer a few
-          quick questions about your dog and about you, and every question is optional. Then you get
-          a personalized pick with the practical details first: how long it takes, what it costs,
+          quick questions about your dog and about you. The ones about your dog are what keep
+          suggestions suitable, and anything you skip or answer with “Not sure” is treated
+          cautiously, never as safe. Extras like names, time and budget are optional. Then you get a
+          personalized pick with the practical details first: how long it takes, what it costs,
           where it happens and how much effort it needs.
         </p>
         <p>
-          If it suits you, accept it and the full instructions are yours to keep. If not, ask for
-          another one as often as you like. Your first adventure is free, with no account, email or
-          card, and your answers stay on your device.
+          If it suits you, reveal it and the full instructions are yours to keep. If not, ask for
+          another pick before you reveal. The first adventure you reveal is your free one. It needs
+          no account, email or card, and your answers stay on your device.
         </p>
         <p className="pa-fine">
           Prefer to look around first? Browse the{" "}

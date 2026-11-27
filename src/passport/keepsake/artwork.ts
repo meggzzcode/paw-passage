@@ -14,6 +14,7 @@ import {
 } from "./kit";
 import { certificate, idCard, magazineCover, tradingCard, travelPostcard } from "./families-a";
 import { collage, eventTicket, poster, seasonalFrame, thenAndNow } from "./families-b";
+import { ensureKeepsakeFonts } from "./fonts";
 import { PHOTO_COUNT, themeFor, type KeepsakeFamily } from "./themes";
 
 export { ART_SIZES };
@@ -87,6 +88,7 @@ export function renderArtwork(ctx: Ctx, spec: ArtSpec, assets: ArtAssets = {}): 
 /** Renders to a PNG blob in the browser. Re-encoding through a fresh canvas drops all source metadata. */
 export async function makeArtworkBlob(spec: ArtSpec, assets: ArtAssets = {}): Promise<Blob> {
   const { width: w, height: h } = artworkSize(spec.size);
+  await ensureKeepsakeFonts();
   if (typeof OffscreenCanvas !== "undefined") {
     const c = new OffscreenCanvas(w, h);
     const ctx = c.getContext("2d");

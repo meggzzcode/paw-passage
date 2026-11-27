@@ -20,9 +20,14 @@ const state = vi.hoisted(() => ({
   status: "ready" as "ready" | "loading" | "unavailable",
   data: null as null | { items: unknown[]; total: number; collections: number },
   ent: "free" as "free" | "entitled",
+  retry: undefined as undefined | (() => void),
 }));
 vi.mock("@/lib/usePreviews", () => ({
-  usePreviews: () => ({ status: state.status, data: state.status === "ready" ? state.data : null }),
+  usePreviews: () => ({
+    status: state.status,
+    data: state.status === "ready" ? state.data : null,
+    retry: state.retry,
+  }),
 }));
 vi.mock("@/passport/useEntitlement", () => ({
   useEntitlement: () => ({
@@ -80,6 +85,7 @@ beforeEach(() => {
   window.localStorage.clear();
   _resetForTests();
   state.status = "ready";
+  state.retry = undefined;
   state.ent = "free";
   state.data = { items: [A, B, FREE, LEAKY], total: 72, collections: 14 };
 });
@@ -117,8 +123,35 @@ describe("previews page", () => {
   it("says so plainly when the previews cannot be loaded", async () => {
     state.status = "unavailable";
     await renderUi(<PreviewsPage />);
-    expect(screen.getByText(/could not be loaded just now/)).toBeInTheDocument();
+    expect(screen.getByText(/Having a little trouble loading the previews/)).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: "Retry" })).toBeInTheDocument();
+    expect(screen.queryByText(/no previews/i)).toBeNull();
     expect(screen.queryByRole("article")).toBeNull();
+  });
+
+  it("shows a neutral loading state, never an empty or error message", async () => {
+    state.status = "loading";
+    await renderUi(<PreviewsPage />);
+    expect(screen.getByTestId("previews-loading")).toHaveAttribute("aria-busy", "true");
+    expect(screen.queryByText(/no previews/i)).toBeNull();
+    expect(screen.queryByText(/trouble/)).toBeNull();
+  });
+
+  it("says nothing is published yet only when the API succeeded with an empty catalogue", async () => {
+    state.data = { items: [], total: 0, collections: 0 };
+    await renderUi(<PreviewsPage />);
+    expect(screen.getByText(/No previews are published yet/)).toBeInTheDocument();
+    expect(screen.queryByText(/trouble/)).toBeNull();
+    expect(screen.queryByRole("button", { name: "Retry" })).toBeNull();
+  });
+
+  it("Retry runs the request again", async () => {
+    const retry = vi.fn();
+    state.status = "unavailable";
+    state.retry = retry;
+    await renderUi(<PreviewsPage />);
+    fireEvent.click(screen.getByRole("button", { name: "Retry" }));
+    expect(retry).toHaveBeenCalledTimes(1);
   });
 
   it("shows metadata, labels and obvious food, booking and travel needs", async () => {

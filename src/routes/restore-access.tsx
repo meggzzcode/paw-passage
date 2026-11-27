@@ -18,7 +18,13 @@ export const Route = createFileRoute("/restore-access")({
         <h1 className="pa-h1">Restore access on a new device</h1>
         <p className="pa-sub">
           Bought the Passport already? Enter the code from your purchase email. No second purchase
-          needed, and your saved progress comes with you.
+          needed.
+        </p>
+        <p className="pa-fine" data-testid="restore-scope">
+          Restoring brings back your access and the progress that was synced to your account.
+          Progress that only exists on another device and never synced, and private records kept
+          only on that device, do not transfer automatically. Your first adventure works without any
+          code.
         </p>
         <AccessForm kind="restore" />
         <p className="pa-fine">
@@ -30,7 +36,7 @@ export const Route = createFileRoute("/restore-access")({
           with the email you bought with (never your code).
         </p>
         <p className="pa-fine">
-          Haven't bought it? Your first adventure is free and needs no code or account.{" "}
+          Haven't bought it? Your first adventure works without any code, and needs no account.{" "}
           <AppLink to="/unlock" className="pa-linkbtn">
             See the Passport
           </AppLink>

@@ -1,6 +1,8 @@
-// Finished keepsake examples, drawn by the real keepsake editor from real, licensed dog photographs (credits in
-// docs/IMAGE-CREDITS.md). Each item can show the original photo ("before") next to the finished keepsake ("after").
-// They are examples, not customer stories. Renders nothing while the list is empty, so no placeholder ever shows.
+// Finished keepsake examples, drawn by the real keepsake renderer from real CC0 dog photographs (credits in
+// docs/IMAGE-CREDITS.md). Each item shows "Your photo" next to "Your little keepsake" in fixed-ratio boxes, so nothing
+// jumps while images load. Examples, not customer stories. Renders nothing while the list is empty.
+import "@/design/examples.css";
+
 export type ExampleImage = {
   src: string;
   alt: string;
@@ -9,55 +11,89 @@ export type ExampleImage = {
   height?: number;
   /** The original photo the keepsake was made from. */
   before?: { src: string; alt: string; width?: number; height?: number };
+  /** Photographer, shown in the small credits disclosure ("Photo by <author>, CC0, via Wikimedia Commons"). */
+  credit?: { author: string; url: string };
+  /** An illustration rather than a keepsake made from a photo. */
+  illustration?: boolean;
 };
+
+export const BEFORE_LABEL = "Your photo";
+export const AFTER_LABEL = "Your little keepsake";
 
 export function PhotoFilterExamples({
   images,
   caption = "Examples of the photo keepsakes",
+  compact = false,
 }: {
   images: readonly (string | ExampleImage)[];
   caption?: string;
+  /** A smaller sideways row (purchase page) instead of the larger grid (home). */
+  compact?: boolean;
 }) {
   if (images.length === 0) return null;
+  const items: ExampleImage[] = images.map((it) =>
+    typeof it === "string" ? { src: it, alt: "" } : it,
+  );
+  const credited = items.filter((e) => e.credit);
   return (
-    <figure className="pp-examples">
-      <ul className="pp-examples-row" tabIndex={0} aria-label="Keepsake examples, scrolls sideways">
-        {images.map((it) => {
-          const e: ExampleImage = typeof it === "string" ? { src: it, alt: "" } : it;
-          return (
-            <li key={e.src}>
-              <div className={e.before ? "pp-examples-pair" : undefined}>
-                {e.before && (
-                  <span className="pp-examples-side">
+    <figure className={compact ? "kx kx-compact" : "kx"}>
+      <ul className="kx-row" tabIndex={0} aria-label="Keepsake examples">
+        {items.map((e) => (
+          <li key={e.src} className="kx-item">
+            <div className={e.before ? "kx-pair" : "kx-pair kx-solo"}>
+              {e.before && (
+                <span className="kx-side kx-before">
+                  <span className="kx-box kx-fill">
                     <img
                       src={e.before.src}
                       alt={e.before.alt}
                       loading="lazy"
                       decoding="async"
-                      width={e.before.width ?? 160}
-                      height={e.before.height ?? 200}
+                      width={e.before.width ?? 360}
+                      height={e.before.height ?? 640}
                     />
-                    <span className="pp-examples-tag">Original photo</span>
                   </span>
-                )}
-                <span className="pp-examples-side">
+                  <span className="kx-tag">{BEFORE_LABEL}</span>
+                </span>
+              )}
+              <span className="kx-side kx-after">
+                <span
+                  className="kx-box"
+                  style={{ aspectRatio: `${e.width ?? 540} / ${e.height ?? 960}` }}
+                >
                   <img
                     src={e.src}
                     alt={e.alt}
                     loading="lazy"
                     decoding="async"
-                    width={e.width ?? 160}
-                    height={e.height ?? 200}
+                    width={e.width ?? 540}
+                    height={e.height ?? 960}
                   />
-                  {e.before && <span className="pp-examples-tag">Finished keepsake</span>}
                 </span>
-              </div>
-              {e.label && <span className="pp-examples-label">{e.label}</span>}
-            </li>
-          );
-        })}
+                <span className="kx-tag">{e.before ? AFTER_LABEL : (e.label ?? "")}</span>
+              </span>
+            </div>
+            {e.label && e.before && <span className="kx-label">{e.label}</span>}
+          </li>
+        ))}
       </ul>
       <figcaption>{caption}</figcaption>
+      {credited.length > 0 && (
+        <details className="kx-credits">
+          <summary>Photo credits</summary>
+          <ul>
+            {credited.map((e) => (
+              <li key={e.src}>
+                {e.label}: Photo by{" "}
+                <a href={e.credit!.url} rel="noopener noreferrer" target="_blank">
+                  {e.credit!.author}
+                </a>
+                , CC0, via Wikimedia Commons.
+              </li>
+            ))}
+          </ul>
+        </details>
+      )}
     </figure>
   );
 }

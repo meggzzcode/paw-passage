@@ -1,163 +1,241 @@
-// Families 1-5: travel postcard, magazine cover, ID card, trading card, certificate.
-import { circle, drawPaw, perforatedRect, postmark, type Ctx } from "./render";
+// Families 1-5, photo-first: travel postcard, magazine cover, detective ID, trading card, certificate.
+// The photograph is the artwork (full-bleed, or a collectible card that is nearly all photo). Everything else is a
+// delicate, semi-transparent overlay in the margins: soft local scrims, small handwriting, hairline frames and vector
+// ornaments. Adventure personality comes from theme entries (accent colours, motifs, frame style and words).
+import { circle, fitText, postmark, type Ctx } from "./render";
 import {
   W,
-  barcode,
   brand,
-  drawSlot,
   fillRound,
-  frame,
-  inkOn,
-  linesFit,
-  mat,
-  paperBackground,
+  fontOf,
   para,
-  paraHeight,
-  paraOutlined,
-  paraUp,
-  pattern,
   placeholder,
   rays,
   rnd,
-  softOn,
-  tilt,
   type FamilyDef,
   type Prep,
   type Slot,
 } from "./kit";
 import { motif, roundRectPath, starPath } from "./ornaments";
-import type { PlacedPhoto } from "./photo";
+import { drawPlacedPhoto, type PlacedPhoto } from "./photo";
+import {
+  Stack,
+  handFont,
+  lightLeak,
+  mix,
+  onDark,
+  pool,
+  rgba,
+  scrimV,
+  shadowed,
+  tracked,
+  vignette,
+} from "./kit-photo-first-a";
+import {
+  badge,
+  cornerBrackets,
+  hairFrame,
+  holoSheen,
+  laurelRule,
+  lensRing,
+  postageStamp,
+  rosette,
+  softBarcode,
+  sparkle,
+  squiggle,
+  stampRing,
+} from "./ornaments-a";
+import { hash } from "./kit";
 
 type Photos = ReadonlyArray<PlacedPhoto | null | undefined>;
 const word = (p: Prep, k: string, d = "") => p.t.words[k] ?? d;
 const cased = (p: Prep, s: string) => (p.t.upper ? s.toUpperCase() : s);
+const WHITE = "#ffffff";
+const SOFT_WHITE = "rgba(255,255,255,0.92)";
+
+const full = (p: Prep): Slot => ({ x: 0, y: 0, w: W, h: p.H });
+
+/** Margins and edges of the area where essential text lives. The photo itself stays full-bleed. */
+function zone(p: Prep) {
+  const story = p.story;
+  const sq = p.spec.size === "square";
+  return {
+    story,
+    sq,
+    mx: story ? 76 : 68,
+    top: story ? 262 : sq ? 64 : 76,
+    bottom: p.H - (story ? 352 : sq ? 66 : 88),
+    /** Tallest the bottom text stack may get, so the dog keeps the photograph. */
+    maxStack: Math.round(p.H * (story ? 0.4 : sq ? 0.5 : 0.44)),
+  };
+}
+
+/** Date on the left, a small barcode (optional) and the quiet brand line on the right. */
+function footerRow(
+  ctx: Ctx,
+  st: Stack,
+  p: Prep,
+  x: number,
+  w: number,
+  o: { code?: boolean; drop?: number } = {},
+): void {
+  st.add(
+    42,
+    (y) => {
+      const base = y + 32;
+      let right = x + w;
+      brand(ctx, right, base, "right", "rgba(255,255,255,0.82)", 26);
+      ctx.font = fontOf("serif", 400, true)(26);
+      right -= ctx.measureText("pawsandpassage.com").width + 22;
+      if (o.code) {
+        softBarcode(ctx, right - 120, y + 2, 120, 38, hash(p.name + p.head), WHITE, 0.8);
+        right -= 142;
+      }
+      if (p.date)
+        tracked(ctx, p.date, x, base, {
+          size: 34,
+          key: "sans",
+          weight: 600,
+          color: SOFT_WHITE,
+          maxW: Math.max(160, right - x),
+          track: 3,
+        });
+    },
+    { gap: 22 },
+  );
+}
+
+/** The photo, full-bleed in its slot. Without one: a quiet theme ground with the adventure's motif in the upper half. */
+function basePhoto(ctx: Ctx, p: Prep, photo: PlacedPhoto | null | undefined, s: Slot): void {
+  if (photo && drawPlacedPhoto(ctx, photo, s.x, s.y, s.w, s.h)) return;
+  const { t } = p;
+  const c = t.palette;
+  ctx.save();
+  ctx.beginPath();
+  ctx.rect(s.x, s.y, s.w, s.h);
+  ctx.clip();
+  const g = ctx.createLinearGradient(0, s.y, 0, s.y + s.h);
+  g.addColorStop(0, c.bg2);
+  g.addColorStop(1, mix(c.bg, "#000000", 0.55));
+  ctx.fillStyle = g;
+  ctx.fillRect(s.x, s.y, s.w, s.h);
+  const cy = s.y + s.h * 0.34;
+  rays(ctx, s.x + s.w / 2, cy, Math.hypot(s.w, s.h), 24, c.accent2, 0.12);
+  for (let i = 0; i < 6; i++) {
+    ctx.globalAlpha = 0.2;
+    motif(
+      ctx,
+      i % 2 ? t.motif2 : "paw",
+      s.x + (0.1 + rnd(i + 4) * 0.8) * s.w,
+      s.y + (0.08 + rnd(i + 9) * 0.4) * s.h,
+      s.w * 0.11,
+      c.muted,
+      c.muted,
+    );
+  }
+  ctx.globalAlpha = 1;
+  motif(ctx, t.motif, s.x + s.w / 2, cy, Math.min(s.w, s.h * 0.6) * 0.62, c.accent, c.accent2);
+  ctx.restore();
+}
+
+/** Scrim sized to the text stack, so the type is readable on any photo without a visible panel. */
+function stackScrim(ctx: Ctx, p: Prep, bottom: number, height: number, a = 0.62): void {
+  const top = Math.max(p.H * 0.3, bottom - height - 300);
+  scrimV(ctx, top, p.H, 0, a, W);
+  pool(ctx, W / 2, bottom - height / 2, W * 0.75, height * 0.9 + 140, 0.18);
+}
 
 // ====================================================================== travel-postcard
 
 export const travelPostcard: FamilyDef = {
   slots(p) {
-    if (p.spec.size === "square") return [{ x: 70, y: 100, w: 520, h: 780 }];
-    if (p.story) return [{ x: 90, y: 230, w: 900, h: 860 }];
-    return [{ x: 90, y: 110, w: 900, h: 620 }];
+    return [full(p)];
   },
   draw(ctx, p, photos, slots) {
     const { t, H } = p;
     const c = t.palette;
-    const s = slots[0] as Slot;
-    const side = p.spec.size === "square";
-    paperBackground(ctx, t, W, H);
-    // a tint band so the three postcard themes differ beyond colour
-    ctx.fillStyle = c.bg2;
-    ctx.globalAlpha = 0.45;
-    ctx.fillRect(0, side ? H - 150 : H - 260, W, side ? 150 : 260);
-    ctx.globalAlpha = 1;
-    frame(ctx, t, 28, 28, W - 56, H - 56, c.ink, c.accent2);
+    const z = zone(p);
+    basePhoto(ctx, p, photos[0], slots[0] as Slot);
+    vignette(ctx, W, H, 0.2);
+    const acc = onDark(c.accent);
+    const acc2 = onDark(c.accent2, 5);
+    lightLeak(ctx, W, H, acc, 0.12, "tl");
 
-    ctx.save();
-    tilt(ctx, s, -0.012);
-    mat(ctx, s, c.card, 14);
-    drawSlot(ctx, t, s, photos[0], 0);
-    ctx.restore();
-
-    // stamp and postmark
-    const sx = side ? 830 : s.x + s.w - 150;
-    const sy = side ? 95 : s.y - 46;
-    ctx.save();
-    ctx.translate(sx + 85, sy + 105);
-    ctx.rotate(0.05);
-    ctx.translate(-(sx + 85), -(sy + 105));
-    perforatedRect(ctx, sx, sy, 170, 210, 7, c.bg);
-    ctx.strokeStyle = c.accent;
-    ctx.lineWidth = 2;
-    ctx.strokeRect(sx + 16, sy + 16, 138, 178);
-    motif(ctx, t.motif, sx + 85, sy + 96, 92, c.accent, c.accent2);
-    para(ctx, word(p, "stamp", "ADVENTURE"), sx + 85, sy + 158, {
-      w: 120,
-      lines: 1,
-      size: 20,
-      min: 10,
-      key: "serif",
-      weight: 700,
-      color: c.accent,
-      align: "center",
-    });
-    ctx.restore();
-    postmark(
-      ctx,
-      side ? sx - 52 : sx - 120,
-      sy + 150,
-      66,
-      p.date || word(p, "mark", "ON THE ROAD"),
-      c.ink,
+    const x = z.mx;
+    const w = W - 2 * z.mx;
+    const st = new Stack();
+    st.add(
+      42,
+      (y) => {
+        tracked(ctx, word(p, "kicker", "ADVENTURE POSTCARD"), x, y + 34, {
+          size: 34,
+          key: "sans",
+          weight: 700,
+          color: acc,
+          maxW: w - 40,
+          track: 5,
+        });
+      },
+      { gap: 12 },
     );
-
-    const x = side ? 630 : s.x;
-    const w = side ? 380 : s.w;
-    let y = side ? 340 : s.y + s.h + 56;
-    const k = p.story ? 1.4 : 1;
-    y = para(ctx, word(p, "kicker", "ADVENTURE POSTCARD"), x, y, {
-      w,
-      lines: 1,
-      size: 24 * k,
-      key: "sans",
-      weight: 700,
-      color: c.accent,
-    });
-    ctx.strokeStyle = c.accent2;
-    ctx.lineWidth = 3;
-    ctx.beginPath();
-    ctx.moveTo(x, y + 2);
-    ctx.lineTo(x + 120, y + 2);
-    ctx.stroke();
-    y += 22;
-    y = para(ctx, p.head, x, y, {
-      w,
-      lines: side ? 3 : 2,
-      size: (side ? 56 : 72) * k,
-      key: t.display,
-      weight: 700,
-      color: c.ink,
-      lh: 1.1,
-    });
-    y = para(ctx, `Starring ${p.name}`, x, y + 10, {
-      w,
-      lines: 1,
-      size: 38 * k,
-      key: "serif",
-      italic: true,
-      color: c.accent,
-    });
-    if (p.date)
-      y = para(ctx, p.date, x, y, {
+    st.para(
+      ctx,
+      p.head,
+      x,
+      {
         w,
-        lines: 1,
-        size: 26 * k,
-        key: t.body,
-        color: softOn(c.bg, t),
-      });
-    if (p.sub)
-      y = para(ctx, p.sub, x, y + 6, {
-        w,
-        lines: 2,
-        size: 28 * k,
-        key: t.body,
+        lines: z.story ? 3 : 2,
+        size: z.sq ? 74 : 90,
+        min: 48,
+        key: t.display,
         weight: 700,
-        color: c.ink,
-      });
-    const limit = H - p.safeBottom - 50;
-    if (p.memory) {
-      const size = 30 * k;
-      para(ctx, p.memory, x, y + 22, {
-        w,
-        lines: Math.min(5, linesFit(y + 22, limit, size, 1.32)),
-        size,
-        key: "serif",
-        italic: true,
-        color: c.ink,
-        lh: 1.32,
-      });
-    }
-    brand(ctx, x + w, H - p.safeBottom + 8, "right", softOn(c.bg, t), 24);
+        color: WHITE,
+        lh: 1.05,
+      },
+      { gap: 10 },
+    );
+    st.hand(ctx, `Starring ${p.name}`, x, { w, lines: 1, size: 72, color: "#fff2dc" }, { gap: 4 });
+    st.add(14, (y) => squiggle(ctx, x, x + 230, y + 8, acc2, 0.95), { gap: 18 });
+    st.para(
+      ctx,
+      p.sub,
+      x,
+      { w, lines: 2, size: 38, min: 34, key: t.body, weight: 600, color: SOFT_WHITE, lh: 1.2 },
+      { gap: 14, drop: 2 },
+    );
+    st.hand(
+      ctx,
+      p.memory,
+      x,
+      { w, lines: z.story ? 4 : 3, size: 50, color: SOFT_WHITE, lh: 1.08 },
+      { gap: 16, drop: 1 },
+    );
+    footerRow(ctx, st, p, x, w);
+
+    const h = st.height(z.maxStack);
+    stackScrim(ctx, p, z.bottom, h);
+    shadowed(ctx, () => st.draw(z.bottom, z.maxStack), 16, 0.5);
+
+    // stamp and postmark, top right
+    const sw = z.sq ? 118 : 134;
+    const sh = Math.round(sw * 1.24);
+    const sx = W - z.mx - sw + 8;
+    const sy = z.story ? z.top : z.top - 22;
+    postageStamp(ctx, sx, sy, sw, sh, 0.06, {
+      paper: mix(c.card, "#ffffff", 0.35),
+      ink: c.ink,
+      accent: c.accent,
+      accent2: c.accent2,
+      motifId: t.motif,
+      alpha: 0.9,
+    });
+    shadowed(
+      ctx,
+      () => postmark(ctx, sx - 16, sy + sh * 0.66, 50, word(p, "mark", "ON THE ROAD"), WHITE),
+      8,
+      0.5,
+    );
+    hairFrame(ctx, t, 26, 26, W - 52, H - 52, WHITE, acc);
   },
 };
 
@@ -165,448 +243,282 @@ export const travelPostcard: FamilyDef = {
 
 export const magazineCover: FamilyDef = {
   slots(p) {
-    return [{ x: 0, y: 0, w: W, h: p.H }];
+    return [full(p)];
   },
   draw(ctx, p, photos, slots) {
     const { t, H } = p;
     const c = t.palette;
-    const s = slots[0] as Slot;
-    const bold = t.frame === "bold";
-    const hasPhoto = Boolean(photos[0]);
-    if (hasPhoto) drawSlot(ctx, t, s, photos[0], 0);
-    else {
-      ctx.fillStyle = c.bg;
-      ctx.fillRect(0, 0, W, H);
-      rays(ctx, W / 2, H * 0.5, H, 28, c.bg2, 0.22);
-      motif(ctx, t.motif, W / 2, H * 0.47, 640, c.accent, c.accent2);
-      for (let i = 0; i < 10; i++)
-        motif(
-          ctx,
-          t.motif2,
-          80 + rnd(i + 3) * 920,
-          330 + rnd(i + 11) * (H - 700),
-          46 + rnd(i) * 40,
-          c.accent2,
-          c.accent,
-        );
-    }
-    // scrims keep the type readable over any photo
-    const top = ctx.createLinearGradient(0, 0, 0, 520);
-    top.addColorStop(0, "rgba(0,0,0,0.6)");
-    top.addColorStop(1, "rgba(0,0,0,0)");
-    ctx.fillStyle = top;
-    ctx.fillRect(0, 0, W, 520);
-    const bh = Math.round(H * 0.58);
-    const bot = ctx.createLinearGradient(0, H - bh, 0, H);
-    bot.addColorStop(0, "rgba(0,0,0,0)");
-    bot.addColorStop(0.55, "rgba(0,0,0,0.6)");
-    bot.addColorStop(1, "rgba(0,0,0,0.85)");
-    ctx.fillStyle = bot;
-    ctx.fillRect(0, H - bh, W, bh);
+    const z = zone(p);
+    const bold = t.frame === "bold" || t.display === "heavy";
+    basePhoto(ctx, p, photos[0], slots[0] as Slot);
+    vignette(ctx, W, H, 0.2);
+    const acc = onDark(c.accent, 5);
 
-    if (!bold && t.frame !== "none") frame(ctx, t, 26, 26, W - 52, H - 52, c.accent, c.accent);
-    const mTop = p.story ? 170 : 50;
-    const dateTxt = p.date;
+    // masthead, small and overlaid at the top
+    const mSize = z.sq ? 88 : 104;
+    scrimV(ctx, 0, z.top + mSize + 150, 0.5, 0, W);
+    shadowed(
+      ctx,
+      () => {
+        tracked(ctx, word(p, "masthead", "PAW & PASSAGE"), W / 2, z.top + mSize * 0.82, {
+          size: mSize,
+          key: bold ? "heavy" : "serif",
+          weight: bold ? 900 : 700,
+          color: bold ? WHITE : acc,
+          align: "center",
+          maxW: W - 2 * z.mx,
+          track: bold ? 4 : 10,
+          min: 56,
+        });
+        tracked(ctx, word(p, "tagline"), W / 2, z.top + mSize + 40, {
+          size: 34,
+          key: "sans",
+          weight: 600,
+          color: SOFT_WHITE,
+          align: "center",
+          maxW: W - 2 * z.mx,
+          track: 6,
+        });
+      },
+      14,
+      0.55,
+    );
     if (bold) {
-      // solid masthead band, loud and flat
-      const bandH = p.story ? 230 : 190;
-      ctx.fillStyle = c.bg;
-      ctx.fillRect(0, mTop - 20, W, bandH);
-      ctx.fillStyle = c.accent;
-      ctx.fillRect(0, mTop - 20 + bandH, W, 52);
-      for (const [x, y] of [
-        [70, mTop + 40],
-        [W - 70, mTop + 40],
-      ] as const)
-        motif(ctx, t.motif2, x, y, 60, c.accent, c.accent2);
-      para(ctx, word(p, "masthead", "PAW & PASSAGE"), W / 2, mTop - 4, {
-        w: 800,
-        lines: 1,
-        size: 170,
-        key: t.display,
-        weight: 900,
-        color: c.accent,
-        align: "center",
-        lh: 1,
-      });
-      para(ctx, word(p, "tagline"), 40, mTop - 20 + bandH + 8, {
-        w: 600,
-        lines: 1,
-        size: 28,
-        key: "condensed",
-        weight: 700,
-        color: inkOn(c.accent, t),
-      });
-      para(ctx, dateTxt, W - 40, mTop - 20 + bandH + 8, {
-        w: 360,
-        lines: 1,
-        size: 28,
-        key: "condensed",
-        weight: 700,
-        color: inkOn(c.accent, t),
-        align: "right",
-      });
-    } else {
-      const mx = W / 2;
-      para(ctx, word(p, "masthead", "PAW & PASSAGE"), mx, mTop, {
-        w: 920,
-        lines: 1,
-        size: 120,
-        key: "serif",
-        weight: 700,
-        color: c.accent,
-        align: "center",
-        lh: 1,
-      });
-      ctx.strokeStyle = c.accent;
-      ctx.lineWidth = 2;
-      for (const y of [mTop + 140, mTop + 148]) {
-        ctx.beginPath();
-        ctx.moveTo(60, y);
-        ctx.lineTo(W - 60, y);
-        ctx.stroke();
-      }
-      para(ctx, word(p, "tagline"), 60, mTop + 160, {
-        w: 640,
-        lines: 1,
-        size: 22,
-        key: "sans",
-        weight: 700,
-        color: c.ink,
-      });
-      para(ctx, dateTxt, W - 60, mTop + 160, {
-        w: 320,
-        lines: 1,
-        size: 22,
-        key: "sans",
-        weight: 700,
-        color: c.ink,
-        align: "right",
-      });
+      ctx.fillStyle = acc;
+      ctx.fillRect(W / 2 - 60, z.top + mSize + 62, 120, 8);
     }
 
-    // cover lines, stacked up from the bottom edge
-    const bottom = H - p.safeBottom + (p.story ? 0 : 10);
-    const bw = 190;
-    const by = bottom - 118;
-    ctx.fillStyle = "#ffffff";
-    ctx.fillRect(W - 60 - bw, by, bw, 118);
-    barcode(ctx, W - 60 - bw + 16, by + 12, bw - 32, 62, p.name + p.head, "#111111");
-    para(ctx, "pawsandpassage.com", W - 60 - bw / 2, by + 82, {
-      w: bw - 20,
-      lines: 1,
-      size: 18,
-      key: "sans",
-      weight: 700,
-      color: "#111111",
-      align: "center",
-    });
-    // cover star
-    const starW = 660;
-    const nameTop = paraUp(ctx, p.name, 70, bottom, {
-      w: starW,
-      lines: 1,
-      size: 58,
-      key: t.display,
-      weight: 900,
-      color: c.ink === "#2e2420" || bold ? "#ffffff" : c.ink,
-      lh: 1,
-    });
-    const labelTop = paraUp(ctx, word(p, "star", "COVER STAR"), 70, nameTop - 2, {
-      w: starW,
-      lines: 1,
-      size: 24,
-      key: "sans",
-      weight: 700,
-      color: c.accent,
-    });
-    let y = labelTop - 26;
-    if (p.memory)
-      y = paraUp(ctx, `“${p.memory}”`, 70, y, {
-        w: 940,
-        lines: p.story ? 3 : 2,
-        size: 30,
-        key: "serif",
-        italic: true,
-        color: "#ffffff",
-        lh: 1.25,
-      });
-    y -= 12;
-    if (p.sub)
-      y = paraUp(ctx, p.sub, 70, y, {
-        w: 940,
-        lines: 2,
-        size: 44,
+    const x = z.mx;
+    const w = W - 2 * z.mx;
+    const st = new Stack();
+    st.add(
+      42,
+      (y) =>
+        void tracked(ctx, word(p, "star", "COVER STAR"), x, y + 34, {
+          size: 34,
+          key: "sans",
+          weight: 700,
+          color: acc,
+          maxW: w,
+          track: 6,
+        }),
+      { gap: 8 },
+    );
+    st.para(
+      ctx,
+      cased(p, p.name),
+      x,
+      {
+        w,
+        lines: 1,
+        size: z.sq ? 112 : 132,
+        min: 60,
+        key: t.display,
+        weight: bold ? 900 : 700,
+        color: WHITE,
+        lh: 1,
+      },
+      { gap: 14 },
+    );
+    st.para(
+      ctx,
+      p.head,
+      x,
+      {
+        w,
+        lines: z.story ? 3 : 2,
+        size: 52,
+        min: 36,
         key: bold ? "condensed" : "serif",
         weight: 700,
         italic: !bold,
-        color: c.accent,
+        color: acc,
         lh: 1.1,
-      });
-    y -= 8;
-    const hs = p.story ? 190 : p.spec.size === "portrait" ? 160 : 128;
-    const lines = p.story ? 3 : 2;
-    const text = p.head;
-    if (bold) {
-      const o = {
-        w: 940,
-        lines,
-        size: hs,
-        key: t.display,
-        weight: 900,
-        color: "#ffffff",
-        lh: 0.98,
-      } as const;
-      paraOutlined(ctx, text, 70, y - paraHeight(ctx, text, o), o, "rgba(0,0,0,0.85)", 10);
-    } else {
-      paraUp(ctx, text, 70, y, {
-        w: 940,
-        lines,
-        size: hs * 0.82,
-        key: "serif",
-        weight: 700,
-        color: "#ffffff",
-        lh: 1.02,
-      });
-    }
+      },
+      { gap: 12 },
+    );
+    st.para(
+      ctx,
+      p.sub,
+      x,
+      { w, lines: 2, size: 38, min: 34, key: t.body, weight: 600, color: SOFT_WHITE, lh: 1.2 },
+      { gap: 12, drop: 2 },
+    );
+    st.hand(
+      ctx,
+      p.memory ? `“${p.memory}”` : "",
+      x,
+      { w, lines: z.story ? 3 : 2, size: 48, color: SOFT_WHITE, lh: 1.08 },
+      { gap: 14, drop: 1 },
+    );
+    footerRow(ctx, st, p, x, w, { code: true });
+    const h = st.height(z.maxStack);
+    stackScrim(ctx, p, z.bottom, h, 0.66);
+    shadowed(ctx, () => st.draw(z.bottom, z.maxStack), 16, 0.5);
+    hairFrame(ctx, t, 26, 26, W - 52, H - 52, acc, acc, 0.6);
   },
 };
 
-// ====================================================================== id-card
+// ====================================================================== id-card (detective ID)
 
 export const idCard: FamilyDef = {
   slots(p) {
-    if (p.spec.size === "square") return [{ x: 105, y: 290, w: 300, h: 400 }];
-    const cy = p.story ? 250 : 90;
-    return [{ x: 230, y: cy + 140, w: 620, h: p.story ? 660 : 460 }];
+    return [full(p)];
   },
   draw(ctx, p, photos, slots) {
     const { t, H } = p;
     const c = t.palette;
-    const s = slots[0] as Slot;
-    const horizontal = p.spec.size === "square";
-    ctx.fillStyle = c.bg;
-    ctx.fillRect(0, 0, W, H);
-    // faint grid and watermark motif
-    ctx.strokeStyle = c.bg2;
-    ctx.lineWidth = 2;
-    for (let x = 0; x < W; x += 54) {
-      ctx.beginPath();
-      ctx.moveTo(x, 0);
-      ctx.lineTo(x, H);
-      ctx.stroke();
-    }
-    for (let y = 0; y < H; y += 54) {
-      ctx.beginPath();
-      ctx.moveTo(0, y);
-      ctx.lineTo(W, y);
-      ctx.stroke();
-    }
-    ctx.save();
-    ctx.globalAlpha = 0.18;
-    motif(ctx, t.motif, W * 0.82, H * 0.16, 520, c.accent, c.accent2);
-    ctx.restore();
+    const z = zone(p);
+    basePhoto(ctx, p, photos[0], slots[0] as Slot);
+    vignette(ctx, W, H, 0.22);
+    const acc = onDark(c.accent, 8.5);
+    const acc2 = onDark(c.accent2, 4.5);
 
-    const cardInk = inkOn(c.card, t);
-    const cardSoft = softOn(c.card, t);
-    const card: Slot = horizontal
-      ? { x: 60, y: 150, w: 960, h: 790 }
-      : {
-          x: 120,
-          y: p.story ? 250 : 90,
-          w: 840,
-          h: H - (p.story ? 250 : 90) - (p.story ? 290 : 90),
-        };
-    const passport = t.variant === "passport";
-    const tagCard = t.variant === "tag";
-    if (!passport) {
-      // lanyard strap (a thin string for a parcel tag)
-      const sw = tagCard ? 10 : 76;
-      ctx.fillStyle = tagCard ? c.accent2 : c.accent;
-      ctx.fillRect(card.x + card.w / 2 - sw / 2, 0, sw, card.y + 30);
-      if (!tagCard) {
-        ctx.fillStyle = "rgba(0,0,0,0.18)";
-        ctx.fillRect(card.x + card.w / 2 + 20, 0, 18, card.y + 30);
-      }
-    }
-    // card with shadow
-    fillRound(ctx, card.x + 10, card.y + 14, card.w, card.h, 34, "rgba(0,0,0,0.35)");
-    fillRound(ctx, card.x, card.y, card.w, card.h, 34, c.card, c.accent, 5);
-    if (passport) {
-      ctx.save();
-      ctx.globalAlpha = 0.13;
-      motif(
-        ctx,
-        t.motif,
-        card.x + card.w / 2,
-        card.y + card.h * 0.55,
-        Math.min(card.w, card.h) * 0.8,
-        c.accent,
-        c.accent2,
-      );
-      ctx.restore();
-    }
-    // header band
-    ctx.save();
-    roundRectPath(ctx, card.x, card.y, card.w, card.h, 34);
-    ctx.clip();
-    ctx.fillStyle = c.accent;
-    ctx.fillRect(card.x, card.y, card.w, 112);
-    ctx.fillStyle = c.accent2;
-    ctx.fillRect(card.x, card.y + 112, card.w, 8);
-    ctx.restore();
-    const onAcc = inkOn(c.accent, t);
-    if (tagCard) {
-      circle(ctx, card.x + card.w / 2, card.y + 26, 13);
-      ctx.fillStyle = c.bg;
-      ctx.fill();
-    } else if (!passport) fillRound(ctx, card.x + card.w / 2 - 70, card.y + 18, 140, 22, 11, c.bg);
-    para(ctx, cased(p, word(p, "org", "PAW & PASSAGE")), card.x + card.w / 2, card.y + 52, {
-      w: card.w - 120,
-      lines: 1,
-      size: 28,
-      key: "sans",
-      weight: 700,
-      color: onAcc,
-      align: "center",
-    });
-    para(ctx, word(p, "title", "OFFICIAL ID"), card.x + card.w / 2, card.y + 52 + 40, {
-      w: card.w - 120,
-      lines: 1,
-      size: 20,
-      key: "sans",
-      color: onAcc,
-      align: "center",
-    });
+    const bx = 46;
+    const by = z.story ? 262 : z.sq ? 52 : 60;
+    const bw = W - 92;
+    const bh = z.bottom + 22 - by;
+    cornerBrackets(ctx, bx, by, bw, bh, 70, acc, 6, 0.92);
 
-    // photo with corner brackets
-    ctx.save();
-    drawSlot(ctx, t, s, photos[0], 0);
-    ctx.restore();
-    ctx.strokeStyle = c.accent;
-    ctx.lineWidth = 6;
-    const L = 40;
-    for (const [x, y, dx, dy] of [
-      [s.x, s.y, 1, 1],
-      [s.x + s.w, s.y, -1, 1],
-      [s.x, s.y + s.h, 1, -1],
-      [s.x + s.w, s.y + s.h, -1, -1],
-    ] as const) {
-      ctx.beginPath();
-      ctx.moveTo(x + dx * L, y);
-      ctx.lineTo(x, y);
-      ctx.lineTo(x, y + dy * L);
-      ctx.stroke();
-    }
-
-    const fk = horizontal ? 1 : p.story ? 1.3 : 1;
-    const field = (
-      label: string,
-      value: string,
-      x: number,
-      y: number,
-      w: number,
-      size0: number,
-    ) => {
-      const size = size0 * fk;
-      para(ctx, label, x, y, {
+    const x = z.mx;
+    const w = W - 2 * z.mx;
+    const st = new Stack();
+    st.add(
+      42,
+      (y) =>
+        void tracked(ctx, cased(p, word(p, "org", "PAW & PASSAGE")), x, y + 34, {
+          size: 34,
+          key: "sans",
+          weight: 700,
+          color: acc,
+          maxW: w,
+          track: 4,
+        }),
+      { gap: 10, drop: 3 },
+    );
+    st.add(
+      40,
+      (y) =>
+        void tracked(ctx, word(p, "name", "NAME"), x, y + 32, {
+          size: 34,
+          key: "sans",
+          weight: 600,
+          color: "rgba(255,255,255,0.8)",
+          maxW: w,
+          track: 6,
+        }),
+      { gap: 4 },
+    );
+    st.para(
+      ctx,
+      cased(p, p.name),
+      x,
+      {
         w,
         lines: 1,
-        size: 20 * fk,
-        key: "sans",
-        weight: 700,
-        color: cardSoft,
-      });
-      return para(ctx, value, x, y + 22 * fk, {
-        w,
-        lines: 1,
-        size,
+        size: z.sq ? 100 : 118,
+        min: 56,
         key: t.display,
-        weight: 700,
-        color: cardInk,
-        lh: 1.1,
-      });
-    };
-    if (horizontal) {
-      const x = card.x + 390;
-      const w = card.w - 390 - 40;
-      let y = card.y + 150;
-      y = field(word(p, "name", "NAME"), cased(p, p.name), x, y, w, 64) + 16;
-      y = field(word(p, "code", "CODENAME"), cased(p, p.head), x, y, w, 46) + 16;
-      if (p.sub) y = field(word(p, "rank", "RANK"), cased(p, p.sub), x, y, w, 34) + 16;
-      if (p.date) y = field(word(p, "date", "DATE"), p.date, x, y, w, 30) + 10;
-      if (p.memory) {
-        para(ctx, word(p, "note", "NOTE"), x, y, {
-          w,
-          lines: 1,
-          size: 20,
+        weight: 800,
+        color: WHITE,
+        lh: 1,
+      },
+      { gap: 12 },
+    );
+    st.add(
+      40,
+      (y) =>
+        void tracked(ctx, word(p, "code", "CODENAME"), x, y + 32, {
+          size: 34,
           key: "sans",
-          weight: 700,
-          color: cardSoft,
-        });
-        para(ctx, p.memory, x, y + 22, {
-          w,
-          lines: linesFit(y + 22, card.y + card.h - 150, 24, 1.25),
-          size: 24,
-          key: "serif",
-          italic: true,
-          color: cardInk,
-        });
-      }
-      barcode(ctx, card.x + 40, card.y + card.h - 120, card.w - 80, 50, p.name + p.head, cardInk);
-      brand(ctx, card.x + card.w / 2, card.y + card.h - 28, "center", cardSoft, 24, "sans");
-    } else {
-      const x = card.x + 60;
-      const w = card.w - 120;
-      let y = s.y + s.h + 36;
-      y = field(word(p, "name", "NAME"), cased(p, p.name), x, y, w, 66) + 14;
-      y = field(word(p, "code", "CODENAME"), cased(p, p.head), x, y, w, 46) + 14;
-      if (p.sub && p.date) {
-        const half = (w - 30) / 2;
-        const y1 = field(word(p, "rank", "RANK"), cased(p, p.sub), x, y, half, 32);
-        const y2 = field(word(p, "date", "DATE"), p.date, x + half + 30, y, half, 32);
-        y = Math.max(y1, y2) + 10;
-      } else if (p.sub) y = field(word(p, "rank", "RANK"), cased(p, p.sub), x, y, w, 32) + 10;
-      else if (p.date) y = field(word(p, "date", "DATE"), p.date, x, y, w, 32) + 10;
-      const limit = card.y + card.h - 150;
-      if (p.memory && y + 80 < limit) {
-        para(ctx, word(p, "note", "NOTE"), x, y, {
-          w,
-          lines: 1,
-          size: 20,
+          weight: 600,
+          color: "rgba(255,255,255,0.8)",
+          maxW: w,
+          track: 6,
+        }),
+      { gap: 4, drop: 4 },
+    );
+    st.hand(
+      ctx,
+      p.head,
+      x,
+      { w, lines: z.story ? 2 : 1, size: 78, color: acc, lh: 1.05 },
+      { gap: 10 },
+    );
+    st.add(
+      42,
+      (y) => {
+        if (!p.sub) return;
+        tracked(ctx, `${word(p, "rank", "RANK")}: ${cased(p, p.sub)}`, x, y + 34, {
+          size: 34,
           key: "sans",
-          weight: 700,
-          color: cardSoft,
+          weight: 600,
+          color: SOFT_WHITE,
+          maxW: w,
+          track: 3,
         });
-        para(ctx, p.memory, x, y + 22, {
-          w,
-          lines: Math.min(4, linesFit(y + 22, limit, 26, 1.25)),
-          size: 26,
-          key: "serif",
-          italic: true,
-          color: cardInk,
-        });
-      }
-      barcode(ctx, x, card.y + card.h - 124, w, 50, p.name + p.head, cardInk);
-      brand(ctx, card.x + card.w / 2, card.y + card.h - 28, "center", cardSoft, 24, "sans");
+      },
+      { gap: 10, drop: 2 },
+    );
+    if (!p.sub) st.add(0, () => undefined, { gap: 0, drop: 0 });
+    st.hand(
+      ctx,
+      p.memory,
+      x,
+      { w, lines: 2, size: 48, color: SOFT_WHITE, lh: 1.08 },
+      { gap: 12, drop: 1 },
+    );
+    footerRow(ctx, st, p, x, w, { code: true });
+    const h = st.height(z.maxStack);
+    stackScrim(ctx, p, z.bottom, h, 0.66);
+    shadowed(ctx, () => st.draw(z.bottom, z.maxStack), 16, 0.5);
+
+    // top corners: tiny badge and magnifier lens
+    const topY = by + 112;
+    badge(ctx, bx + 112, topY, 64, { fill: acc, ink: inkFor(acc), motifId: t.motif, alpha: 0.92 });
+    shadowed(ctx, () => lensRing(ctx, bx + bw - 120, topY, 54, WHITE, 0.62), 10, 0.45);
+    if (t.variant === "passport") {
+      const sy = z.bottom - h - 130;
+      stampRing(ctx, W - z.mx - 100, sy, 84, WHITE, -0.22, 0.7);
+      ctx.save();
+      ctx.globalAlpha = 0.7;
+      motif(ctx, t.motif, W - z.mx - 100, sy, 80, WHITE, WHITE);
+      ctx.restore();
+    } else if (t.variant === "tag") {
+      ctx.save();
+      ctx.strokeStyle = acc2;
+      ctx.globalAlpha = 0.85;
+      ctx.lineWidth = 4;
+      circle(ctx, bx + bw / 2, by - 4 + 38, 16);
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.moveTo(bx + bw / 2, by + 22);
+      ctx.bezierCurveTo(bx + bw / 2 + 60, by - 40, bx + bw / 2 - 60, by - 40, bx + bw / 2, by + 22);
+      ctx.stroke();
+      ctx.restore();
     }
   },
 };
+
+function inkFor(bg: string): string {
+  return mix(bg, "#000000", 0.78);
+}
 
 // ====================================================================== trading-card
 
 function cardBox(p: Prep): Slot {
-  const ch = p.spec.size === "square" ? 960 : p.spec.size === "portrait" ? 1200 : 1316;
+  const ch = p.spec.size === "square" ? 1040 : p.spec.size === "portrait" ? 1290 : 1340;
   const cw = Math.round(ch * (5 / 7));
-  return { x: (W - cw) / 2, y: (p.H - ch) / 2, w: cw, h: ch };
+  return { x: Math.round((W - cw) / 2), y: Math.round((p.H - ch) / 2), w: cw, h: ch };
 }
+
+const CARD_EDGE = 10;
 
 export const tradingCard: FamilyDef = {
   slots(p) {
     const b = cardBox(p);
-    const pad = Math.round(b.w * 0.045);
     return [
-      { x: b.x + pad + 14, y: b.y + pad + 108, w: b.w - 2 * pad - 28, h: Math.round(b.h * 0.4) },
+      { x: b.x + CARD_EDGE, y: b.y + CARD_EDGE, w: b.w - 2 * CARD_EDGE, h: b.h - 2 * CARD_EDGE },
     ];
   },
   draw(ctx, p, photos, slots) {
@@ -614,310 +526,296 @@ export const tradingCard: FamilyDef = {
     const c = t.palette;
     const s = slots[0] as Slot;
     const b = cardBox(p);
-    const pad = Math.round(b.w * 0.045);
-    ctx.fillStyle = c.ink;
+    const acc = onDark(c.accent, 5);
+
+    // backdrop: a soft theme-colour gradient with a gentle glow and vignette (no enlarged ghost copy of the photo)
+    const g = ctx.createLinearGradient(0, 0, 0, H);
+    g.addColorStop(0, mix(c.bg, "#000000", 0.42));
+    g.addColorStop(0.5, mix(c.bg, "#000000", 0.62));
+    g.addColorStop(1, mix(c.bg2, "#000000", 0.7));
+    ctx.fillStyle = g;
     ctx.fillRect(0, 0, W, H);
-    if (t.pattern) pattern(ctx, t.pattern, W, H, c.bg, 0.3);
-    else rays(ctx, W / 2, H / 2, Math.hypot(W, H), 36, c.bg, 0.22);
-    for (let i = 0; i < 14; i++) {
-      ctx.globalAlpha = 0.2;
-      motif(
-        ctx,
-        i % 2 ? t.motif2 : t.motif,
-        rnd(i + 2) * W,
-        rnd(i + 30) * H,
-        60 + rnd(i) * 50,
-        c.bg2,
-        c.bg2,
-      );
-    }
-    ctx.globalAlpha = 1;
-    // card body: thick coloured border, cream inner panel
-    fillRound(ctx, b.x + 12, b.y + 16, b.w, b.h, 40, "rgba(0,0,0,0.45)");
-    fillRound(ctx, b.x, b.y, b.w, b.h, 40, c.bg);
-    fillRound(ctx, b.x + pad, b.y + pad, b.w - 2 * pad, b.h - 2 * pad, 24, c.card, c.accent, 4);
-    const inkC = inkOn(c.card, t);
-    const softC = softOn(c.card, t);
-    const ix = b.x + pad + 14;
-    const iw = b.w - 2 * pad - 28;
-    // name bar
-    const nameH = 84;
-    const ny = b.y + pad + 12;
-    para(ctx, p.name, ix, ny + 4, {
-      w: iw - 90,
-      lines: 1,
-      size: 58,
-      key: t.display,
-      weight: 700,
-      color: inkC,
-      lh: 1,
+    pool(ctx, W / 2, H / 2, W * 0.85, H * 0.5, 0.35, "255,255,255");
+    vignette(ctx, W, H, 0.35);
+
+    // card edge: a thin print border in the theme's own colour, with a soft drop shadow
+    ctx.save();
+    ctx.shadowColor = "rgba(0,0,0,0.5)";
+    ctx.shadowBlur = 40;
+    ctx.shadowOffsetY = 14;
+    fillRound(ctx, b.x, b.y, b.w, b.h, 44, mix(c.bg, "#ffffff", 0.18));
+    ctx.restore();
+
+    // photo fills the card
+    ctx.save();
+    roundRectPath(ctx, s.x, s.y, s.w, s.h, 32);
+    ctx.clip();
+    basePhoto(ctx, p, photos[0], s);
+    scrimV(ctx, s.y, s.y + 300, 0.5, 0, W);
+    ctx.restore();
+    holoSheen(ctx, s.x, s.y, s.w, s.h, 32, [acc, "#ffffff", onDark(c.accent2, 4.5)], 0.14);
+    ctx.save();
+    ctx.strokeStyle = "rgba(255,255,255,0.35)";
+    ctx.lineWidth = 2;
+    roundRectPath(ctx, s.x, s.y, s.w, s.h, 32);
+    ctx.stroke();
+    ctx.restore();
+
+    const ix = s.x + 34;
+    const iw = s.w - 68;
+    const y0 = s.y + 30;
+    shadowed(
+      ctx,
+      () => {
+        tracked(ctx, word(p, "series", "ADVENTURE CARDS"), ix, y0 + 32, {
+          size: 34,
+          key: "sans",
+          weight: 600,
+          color: "rgba(255,255,255,0.88)",
+          maxW: iw - 120,
+          track: 4,
+        });
+        para(ctx, p.name, ix, y0 + 44, {
+          w: iw - 120,
+          lines: 1,
+          size: 72,
+          min: 40,
+          key: t.display,
+          weight: 700,
+          color: WHITE,
+          lh: 1,
+        });
+      },
+      14,
+      0.5,
+    );
+    badge(ctx, ix + iw - 46, y0 + 58, 46, {
+      fill: acc,
+      ink: inkFor(acc),
+      motifId: t.motif,
+      alpha: 0.9,
     });
-    para(ctx, word(p, "series", "ADVENTURE CARDS"), ix, ny + 62, {
-      w: iw - 90,
-      lines: 1,
-      size: 18,
-      key: "sans",
-      weight: 700,
-      color: softC,
-    });
-    circle(ctx, ix + iw - 36, ny + nameH / 2 - 4, 36);
-    ctx.fillStyle = c.accent;
-    ctx.fill();
-    motif(ctx, t.motif, ix + iw - 36, ny + nameH / 2 - 4, 44, inkOn(c.accent, t), c.accent2);
-    // photo window
-    ctx.fillStyle = c.accent;
-    ctx.fillRect(s.x - 8, s.y - 8, s.w + 16, s.h + 16);
-    drawSlot(ctx, t, s, photos[0], 0);
-    ctx.strokeStyle = c.accent2;
-    ctx.lineWidth = 3;
-    ctx.strokeRect(s.x - 8, s.y - 8, s.w + 16, s.h + 16);
-    // type ribbon
-    const ty = s.y + s.h + 22;
-    fillRound(ctx, ix, ty, iw, 52, 26, c.accent);
-    para(ctx, `${word(p, "type", "EXPLORER")}  •  ${cased(p, p.head)}`, ix + iw / 2, ty + 9, {
-      w: iw - 40,
-      lines: 1,
-      size: 30,
-      key: "sans",
-      weight: 700,
-      color: inkOn(c.accent, t),
-      align: "center",
-    });
-    // flavour box
-    const fy = ty + 70;
-    const fh = b.y + b.h - pad - 70 - fy;
-    fillRound(ctx, ix, fy, iw, fh, 14, c.bg2, c.accent2, 2);
-    const fInk = inkOn(c.bg2, t);
-    let y = fy + 14;
-    const fz = Math.max(1, b.h / 1100);
-    if (p.sub)
-      y = para(ctx, p.sub, ix + 18, y, {
-        w: iw - 36,
-        lines: 2,
-        size: 32 * fz,
-        key: t.body,
-        weight: 700,
-        color: fInk,
-        lh: 1.15,
-      });
-    if (p.memory) {
-      const size = 27 * fz;
-      para(ctx, p.memory, ix + 18, y + 4, {
-        w: iw - 36,
-        lines: Math.min(5, linesFit(y + 4, fy + fh - 10, size, 1.25)),
-        size,
-        key: "serif",
-        italic: true,
-        color: fInk,
-        lh: 1.25,
-      });
-    }
-    // footer row
-    const fyb = b.y + b.h - pad - 52;
-    if (p.date)
-      para(ctx, p.date, ix + 4, fyb, {
-        w: iw * 0.5,
-        lines: 1,
-        size: 22,
-        key: "sans",
-        weight: 700,
-        color: softC,
-      });
-    brand(ctx, ix + iw - 4, fyb + 22, "right", softC, 22);
+
+    // bottom: soft scrim, then type pill, line and note
+    const bottom = s.y + s.h - 34;
+    const st = new Stack();
+    st.add(
+      58,
+      (y) => {
+        const label = `${word(p, "type", "EXPLORER")}  •  ${cased(p, p.head)}`;
+        const fit = fitText(ctx, label, {
+          maxWidth: iw - 56,
+          maxLines: 1,
+          size: 34,
+          minSize: 34,
+          font: fontOf("sans", 700),
+        });
+        ctx.font = fontOf("sans", 700)(fit.size);
+        const tw = ctx.measureText(fit.lines[0] ?? "").width;
+        const pw = Math.min(iw, tw + 56);
+        fillRound(ctx, ix, y, pw, 58, 29, rgba(c.accent, 0.92));
+        ctx.fillStyle = pickInk(c.accent);
+        ctx.textAlign = "left";
+        ctx.textBaseline = "alphabetic";
+        ctx.fillText(fit.lines[0] ?? "", ix + 28, y + 40);
+      },
+      { gap: 12 },
+    );
+    st.para(
+      ctx,
+      p.sub,
+      ix,
+      { w: iw, lines: 2, size: 46, min: 36, key: t.display, weight: 700, color: WHITE, lh: 1.1 },
+      { gap: 8, drop: 2 },
+    );
+    st.hand(
+      ctx,
+      p.memory,
+      ix,
+      { w: iw, lines: 3, size: 46, color: SOFT_WHITE, lh: 1.08 },
+      { gap: 10, drop: 1 },
+    );
+    st.add(
+      40,
+      (y) => {
+        brand(ctx, ix + iw, y + 30, "right", "rgba(255,255,255,0.8)", 24);
+        if (p.date)
+          tracked(ctx, p.date, ix, y + 30, {
+            size: 34,
+            key: "sans",
+            weight: 600,
+            color: SOFT_WHITE,
+            maxW: iw * 0.5,
+            track: 3,
+          });
+      },
+      { gap: 14 },
+    );
+    const maxH = Math.round(s.h * 0.4);
+    const h = st.height(maxH);
+    ctx.save();
+    roundRectPath(ctx, s.x, s.y, s.w, s.h, 32);
+    ctx.clip();
+    scrimV(ctx, bottom - h - 260, s.y + s.h, 0, 0.74, W);
+    ctx.restore();
+    shadowed(ctx, () => st.draw(bottom, maxH), 14, 0.5);
+    sparkle(ctx, s.x + s.w - 60, s.y + 150, 14, WHITE, 0.8);
+    sparkle(ctx, s.x + s.w - 100, s.y + 190, 8, acc, 0.8);
+    // shine for a hint of collectible foil
+    void rnd;
   },
 };
+
+function pickInk(bg: string): string {
+  // near-black or white, whichever reads better on the pill colour
+  const dark = "#14181d";
+  const lum = (hex: string) => {
+    const h = hex.replace("#", "");
+    const n = h.length === 3 ? h.replace(/./g, (x) => x + x) : h;
+    const v = [0, 2, 4].map((i) => parseInt(n.slice(i, i + 2), 16) / 255);
+    return 0.2126 * v[0]! + 0.7152 * v[1]! + 0.0722 * v[2]!;
+  };
+  return lum(bg) > 0.35 ? dark : WHITE;
+}
 
 // ====================================================================== certificate
 
 export const certificate: FamilyDef = {
   slots(p) {
-    const d = p.spec.size === "square" ? 190 : p.story ? 300 : 250;
-    const y = p.spec.size === "square" ? 262 : p.story ? 470 : 340;
-    return [{ x: (W - d) / 2, y, w: d, h: d }];
+    return [full(p)];
   },
   draw(ctx, p, photos, slots) {
     const { t, H } = p;
     const c = t.palette;
-    const s = slots[0] as Slot;
-    const k = p.spec.size === "square" ? 0.8 : p.story ? 1.3 : 1;
+    const z = zone(p);
+    basePhoto(ctx, p, photos[0], slots[0] as Slot);
+    vignette(ctx, W, H, 0.2);
+    const acc = onDark(c.accent, 5.5);
+    const gold = onDark(c.accent2, 5);
     const cx = W / 2;
-    paperBackground(ctx, t, W, H);
-    ctx.fillStyle = c.bg2;
-    ctx.globalAlpha = 0.35;
-    ctx.fillRect(48, 48, W - 96, 110);
-    ctx.fillRect(48, H - 158, W - 96, 110);
-    ctx.globalAlpha = 1;
-    frame(ctx, t, 40, 40, W - 80, H - 80, c.ink, c.accent2);
-    for (const [x, y] of [
-      [62, 62],
-      [W - 62, 62],
-      [62, H - 62],
-      [W - 62, H - 62],
-    ] as const) {
-      circle(ctx, x, y, 22);
-      ctx.fillStyle = c.bg;
-      ctx.fill();
-      ctx.strokeStyle = c.accent2;
-      ctx.lineWidth = 2;
-      ctx.stroke();
-      motif(ctx, t.motif2, x, y, 24, c.accent2, c.accent);
-    }
-    const top = p.story ? 210 : p.spec.size === "square" ? 100 : 130;
-    let y = para(ctx, word(p, "top", "CERTIFICATE OF"), cx, top, {
-      w: 800,
-      lines: 1,
-      size: 30 * k,
-      key: "sans",
-      weight: 700,
-      color: c.accent,
-      align: "center",
-    });
-    y = para(ctx, word(p, "title", "ADVENTURE"), cx, y + 2, {
-      w: 860,
-      lines: 1,
-      size: 92 * k,
-      key: t.display,
-      weight: 700,
-      color: c.ink,
-      align: "center",
-      lh: 1,
-    });
-    // medallion with laurel
-    const mcx = s.x + s.w / 2;
-    const mcy = s.y + s.h / 2;
-    ctx.save();
-    ctx.strokeStyle = c.accent2;
-    ctx.lineWidth = 6;
-    circle(ctx, mcx, mcy, s.w / 2 + 12);
-    ctx.stroke();
-    for (const side of [-1, 1])
-      for (let i = 0; i < 9; i++) {
-        const a = Math.PI * (0.62 + i * 0.085);
-        const lx = mcx + side * Math.cos(a) * (s.w / 2 + 34) * -1;
-        const ly = mcy + Math.sin(a) * (s.w / 2 + 34);
-        motif(ctx, "leaf", lx, ly, 26, c.accent2, c.accent2);
-      }
-    ctx.beginPath();
-    ctx.arc(mcx, mcy, s.w / 2, 0, Math.PI * 2);
-    ctx.clip();
-    drawSlot(ctx, t, s, photos[0], 0);
-    ctx.restore();
-    ctx.strokeStyle = c.ink;
-    ctx.lineWidth = 3;
-    circle(ctx, mcx, mcy, s.w / 2);
-    ctx.stroke();
+    const w = W - 2 * z.mx - 40;
+    const k = z.sq ? 0.82 : 1;
 
-    y = s.y + s.h + 54 * k;
-    y = para(ctx, word(p, "intro", "This certifies that"), cx, y, {
-      w: 800,
-      lines: 1,
-      size: 30 * k,
-      key: "serif",
-      italic: true,
-      color: softOn(c.bg, t),
-      align: "center",
-    });
-    y = para(ctx, p.name, cx, y + 6, {
-      w: 860,
-      lines: 1,
-      size: 110 * k,
-      key: t.display,
-      weight: 700,
-      color: c.accent,
-      align: "center",
-      lh: 1,
-    });
-    ctx.strokeStyle = c.accent2;
-    ctx.lineWidth = 2;
-    ctx.beginPath();
-    ctx.moveTo(cx - 300, y + 4);
-    ctx.lineTo(cx + 300, y + 4);
-    ctx.stroke();
-    y = para(ctx, word(p, "verb", "has earned"), cx, y + 22, {
-      w: 800,
-      lines: 1,
-      size: 30 * k,
-      key: "serif",
-      italic: true,
-      color: softOn(c.bg, t),
-      align: "center",
-    });
-    const footY = H - (p.story ? 340 : p.spec.size === "square" ? 250 : 290);
-    y = para(ctx, p.head, cx, y + 10, {
-      w: 820,
-      lines: 2,
-      size: 64 * k,
-      key: t.display,
-      weight: 700,
-      color: c.ink,
-      align: "center",
-      lh: 1.1,
-    });
-    const sub = p.sub || word(p, "foot");
-    if (sub)
-      y = para(ctx, sub, cx, y + 6, {
-        w: 780,
+    const st = new Stack();
+    st.add(
+      40,
+      (y) =>
+        void tracked(ctx, word(p, "top", "CERTIFICATE OF"), cx, y + 32, {
+          size: 34,
+          key: "sans",
+          weight: 600,
+          color: SOFT_WHITE,
+          align: "center",
+          maxW: w,
+          track: 7,
+        }),
+      { gap: 6, drop: 3 },
+    );
+    st.para(
+      ctx,
+      word(p, "title", "ADVENTURE"),
+      cx,
+      {
+        w,
+        lines: 1,
+        size: 76 * k,
+        min: 46,
+        key: t.display,
+        weight: 700,
+        color: WHITE,
+        align: "center",
+        lh: 1,
+      },
+      { gap: 8 },
+    );
+    st.add(30, (y) => laurelRule(ctx, cx, y + 14, 120, gold), { gap: 14, drop: 4 });
+    st.hand(
+      ctx,
+      word(p, "intro", "This certifies that"),
+      cx,
+      { w, lines: 1, size: 54 * k, color: SOFT_WHITE, align: "center" },
+      { gap: 0, drop: 2 },
+    );
+    st.hand(
+      ctx,
+      p.name,
+      cx,
+      { w, lines: 1, size: 112 * k, color: WHITE, align: "center", lh: 1, min: 60 },
+      { gap: 6 },
+    );
+    st.para(
+      ctx,
+      `${word(p, "verb", "has earned")} ${p.head}`,
+      cx,
+      {
+        w,
         lines: 2,
-        size: 28 * k,
+        size: 46 * k,
+        min: 34,
+        key: t.display,
+        weight: 600,
+        color: WHITE,
+        align: "center",
+        lh: 1.12,
+      },
+      { gap: 10, drop: 5 },
+    );
+    st.para(
+      ctx,
+      p.sub || word(p, "foot"),
+      cx,
+      {
+        w,
+        lines: 2,
+        size: 38,
+        min: 34,
         key: "serif",
         italic: true,
-        color: softOn(c.bg, t),
+        color: SOFT_WHITE,
         align: "center",
-      });
-    if (p.memory && y + 70 < footY)
-      para(ctx, `“${p.memory}”`, cx, y + 8, {
-        w: 780,
-        lines: Math.min(2, linesFit(y + 8, footY, 26, 1.25)),
-        size: 26,
-        key: "serif",
-        italic: true,
-        color: c.ink,
-        align: "center",
-      });
-    // seal and signature lines
-    const sy = H - (p.story ? 250 : 175);
-    ctx.fillStyle = c.accent;
-    ctx.beginPath();
-    for (let i = 0; i < 48; i++) {
-      const a = (i / 48) * Math.PI * 2;
-      const rr = (i % 2 ? 78 : 71) * (k > 1 ? 1 : 0.95);
-      const x = cx + Math.cos(a) * rr;
-      const yy = sy + Math.sin(a) * rr;
-      if (i === 0) ctx.moveTo(x, yy);
-      else ctx.lineTo(x, yy);
-    }
-    ctx.closePath();
-    ctx.fill();
-    ctx.strokeStyle = inkOn(c.accent, t);
-    ctx.lineWidth = 2;
-    circle(ctx, cx, sy, 56);
-    ctx.stroke();
-    motif(ctx, t.motif, cx, sy - 2, 64, inkOn(c.accent, t), inkOn(c.accent, t));
-    ctx.strokeStyle = c.ink;
-    ctx.lineWidth = 1.5;
-    ctx.beginPath();
-    ctx.moveTo(130, sy + 40);
-    ctx.lineTo(380, sy + 40);
-    ctx.moveTo(W - 380, sy + 40);
-    ctx.lineTo(W - 130, sy + 40);
-    ctx.stroke();
-    para(ctx, p.date || "Date", 255, sy + 48, {
-      w: 240,
-      lines: 1,
-      size: 22,
-      key: "serif",
-      color: softOn(c.bg, t),
-      align: "center",
+        lh: 1.2,
+      },
+      { gap: 10, drop: 1 },
+    );
+    st.add(
+      74,
+      (y) => {
+        if (p.date)
+          tracked(ctx, p.date, cx, y + 32, {
+            size: 34,
+            key: "sans",
+            weight: 600,
+            color: SOFT_WHITE,
+            align: "center",
+            maxW: w,
+            track: 4,
+          });
+        brand(ctx, cx, y + 68, "center", "rgba(255,255,255,0.8)", 26);
+      },
+      { gap: 20 },
+    );
+    // the stack stays in the bottom third so it never lands on the face; tight formats keep name, title, date
+    const maxH = Math.round(H * (z.story ? 0.25 : z.sq ? 0.34 : 0.3));
+    const h = st.height(maxH);
+    stackScrim(ctx, p, z.bottom, h, 0.62);
+    shadowed(ctx, () => st.draw(z.bottom + 12, maxH), 16, 0.5);
+
+    // small award rosette in the top-left outer margin, clear of a typical head position
+    rosette(ctx, z.mx + 20, z.top + 56, z.sq ? 44 : 52, {
+      fill: c.accent,
+      fill2: mix(c.accent, "#000000", 0.25),
+      ink: pickInk(c.accent),
+      motifId: t.motif,
     });
-    para(ctx, "Paws & Passage", W - 255, sy + 48, {
-      w: 240,
-      lines: 1,
-      size: 22,
-      key: "serif",
-      color: softOn(c.bg, t),
-      align: "center",
-    });
-    brand(ctx, cx, sy + 110, "center", softOn(c.bg, t), 22);
+    hairFrame(ctx, t, 26, 26, W - 52, H - 52, WHITE, gold);
+    for (const [x, y] of [
+      [W - z.mx + 10, z.top + 10],
+      [z.mx - 10, z.bottom + 20],
+    ] as const)
+      sparkle(ctx, x + 10, y, 16, gold, 0.85);
+    void starPath;
+    void placeholder;
+    void handFont;
   },
 };
 

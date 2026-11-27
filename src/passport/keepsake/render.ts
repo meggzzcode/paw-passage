@@ -20,6 +20,7 @@ export interface KeepsakeSpec {
   stampSlugs?: string[];
 }
 
+import { FONT_DISPLAY, ensureKeepsakeFonts } from "./fonts";
 import { loadPhotoFile, sourceSize, type PhotoSource } from "./photo";
 export { loadPhotoFile };
 export type { PhotoSource };
@@ -30,7 +31,7 @@ export interface KeepsakeAssets {
 export const FOOTER_TEXT = "pawsandpassage.com";
 export const MEMORY_MAX = 140;
 
-export const SERIF = '"Bricolage Grotesque", Georgia, "Times New Roman", serif';
+export const SERIF = FONT_DISPLAY;
 const PAPER = "#fbf3df";
 const INK = "#43352e";
 const RED = "#c8343f";
@@ -747,9 +748,8 @@ export async function makeKeepsakeBlob(
   photo?: PhotoSource | null,
 ): Promise<Blob> {
   const { width: w, height: h } = keepsakeSize(spec);
-  // Wait for the self-hosted brand fonts so keepsakes draw in them (falls back to system fonts).
-  if (typeof document !== "undefined" && document.fonts)
-    await document.fonts.ready.catch(() => undefined);
+  // Wait for the self-hosted brand fonts so keepsakes draw in them (falls back to the stacks on failure).
+  await ensureKeepsakeFonts();
   if (typeof OffscreenCanvas !== "undefined") {
     const c = new OffscreenCanvas(w, h);
     const ctx = c.getContext("2d");

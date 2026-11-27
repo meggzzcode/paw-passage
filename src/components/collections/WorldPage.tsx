@@ -44,7 +44,7 @@ export function WorldPage({ w }: { w: World }) {
       </header>
       <ul className="co-clist">
         {list.map((c) => (
-          <CollectionRow key={c.slug} c={c} stats={stats} dogName={dogName} />
+          <CollectionRow key={c.slug} c={c} stats={stats} dogName={dogName} thumb={false} />
         ))}
       </ul>
       {!stats.unlocked && (

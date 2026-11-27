@@ -21,6 +21,7 @@ import {
 } from "@/passport/shortcuts";
 import { usePassport } from "@/passport/usePassport";
 import { usePreviews } from "@/lib/usePreviews";
+import { PREVIEWS_NONE_COPY, PreviewsError, PreviewsLoading } from "./PreviewsNotice";
 import { track } from "@/passport/events";
 
 const PAGE = 4;
@@ -212,7 +213,7 @@ function SurpriseUs({
 
 /** Free: matching public previews (no premium text), or the free intro quiz when previews cannot say. */
 function FreeResult({ s }: { s: Shortcut }) {
-  const { status, data } = usePreviews();
+  const { status, data, retry } = usePreviews();
   const items = useMemo(() => premiumPreviews(data?.items ?? []), [data]);
   const matches = useMemo(() => previewMatches(s, items), [s, items]);
 
@@ -232,15 +233,23 @@ function FreeResult({ s }: { s: Shortcut }) {
         </div>
       </div>
     );
-  if (status === "loading") return <p aria-busy="true">Loading previews...</p>;
+  if (status === "loading") return <PreviewsLoading />;
   if (status === "unavailable")
     return (
+      <PreviewsError retry={retry} className="pa-card">
+        <p className="pa-fine">
+          You can still{" "}
+          <AppLink to="/discover" className="pa-linkbtn">
+            find a free first adventure
+          </AppLink>
+          .
+        </p>
+      </PreviewsError>
+    );
+  if (items.length === 0)
+    return (
       <p className="pa-fine" role="status">
-        The previews could not be loaded just now. You can still{" "}
-        <AppLink to="/discover" className="pa-linkbtn">
-          find a free first adventure
-        </AppLink>
-        .
+        {PREVIEWS_NONE_COPY}
       </p>
     );
   return (

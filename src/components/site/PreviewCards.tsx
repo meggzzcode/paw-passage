@@ -4,6 +4,12 @@ import { AppLink } from "@/components/shell/AppLink";
 import { PREVIEWS_PATH } from "@/passport/starter";
 import type { PreviewItem } from "@/lib/previews";
 import { usePreviews } from "@/lib/usePreviews";
+import {
+  PREVIEWS_NONE_COPY,
+  PREVIEWS_NO_MATCH_COPY,
+  PreviewsError,
+  PreviewsLoading,
+} from "@/components/passport/PreviewsNotice";
 
 const costText = (p: PreviewItem) =>
   p.costMax <= 0
@@ -24,15 +30,17 @@ export function PreviewCards({
   limit?: number;
   heading?: string;
 }) {
-  const { status, data } = usePreviews();
-  const items = (data?.items ?? []).filter((p) => (filter ? filter(p) : true)).slice(0, limit);
+  const { status, data, retry } = usePreviews();
+  const all = data?.items ?? [];
+  const items = all.filter((p) => (filter ? filter(p) : true)).slice(0, limit);
   return (
     <section className="pp-previews" aria-label={heading}>
       <h2 className="pp-h2">{heading}</h2>
-      {status === "loading" && <p className="pp-lede">Loading previews.</p>}
-      {status !== "loading" && items.length === 0 && (
-        <p className="pp-lede">
-          Previews are not available here right now.{" "}
+      {status === "loading" && <PreviewsLoading />}
+      {status === "unavailable" && <PreviewsError retry={retry} />}
+      {status === "ready" && items.length === 0 && (
+        <p className="pp-lede" role="status">
+          {all.length > 0 ? PREVIEWS_NO_MATCH_COPY : PREVIEWS_NONE_COPY}{" "}
           <AppLink to={PREVIEWS_PATH} className="pp-textlink">
             Explore the adventure collection
           </AppLink>

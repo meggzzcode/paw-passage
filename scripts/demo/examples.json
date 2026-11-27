@@ -1,92 +1,114 @@
 [
   {
-    "id": "magazine",
-    "file": "magazine.webp",
-    "photos": ["lab-portrait.jpg"],
-    "mode": "card",
-    "size": "Portrait",
-    "spec": {
-      "family": "magazine-cover",
-      "theme": "editorial-cover",
-      "headline": "COVER STAR",
-      "subhead": "Exclusive portrait. No flash",
-      "explainer": "Cover shoot",
-      "name": "Juno"
-    }
-  },
-  {
     "id": "postcard",
-    "file": "postcard.webp",
-    "photos": ["mountain-pair.jpg"],
-    "mode": "card",
-    "size": "Square",
+    "photo": "postcard.jpg",
     "spec": {
       "family": "travel-postcard",
       "theme": "day-trip",
       "headline": "CAPTAIN'S ROUTE",
       "subhead": "Route chosen by the dog",
-      "explainer": "Route",
-      "name": "Biscuit"
+      "dogName": "Biscuit"
+    },
+    "placement": {
+      "zoom": 1,
+      "panX": 0,
+      "panY": 0
+    }
+  },
+  {
+    "id": "magazine",
+    "photo": "magazine.jpg",
+    "spec": {
+      "family": "magazine-cover",
+      "theme": "editorial-cover",
+      "headline": "COVER STAR",
+      "subhead": "Exclusive portrait. No flash",
+      "dogName": "Juno"
+    },
+    "placement": {
+      "zoom": 1,
+      "panX": 0,
+      "panY": 0
     }
   },
   {
     "id": "detective",
-    "file": "detective.webp",
-    "photos": ["terrier-ball.jpg"],
-    "mode": "card",
-    "size": "Portrait",
+    "photo": "detective.jpg",
     "spec": {
       "family": "id-card",
       "theme": "secret-agent",
       "headline": "DETECTIVE ID",
       "subhead": "Cases solved by nose",
-      "explainer": "Case file",
-      "name": "Biscuit"
+      "dogName": "Biscuit"
+    },
+    "placement": {
+      "zoom": 1,
+      "panX": -0.3,
+      "panY": 0
     }
   },
   {
     "id": "birthday",
-    "file": "birthday.webp",
-    "photos": ["golden-sitting.jpg"],
-    "mode": "card",
-    "size": "Portrait",
+    "photo": "birthday.jpg",
     "spec": {
       "family": "magazine-cover",
       "theme": "birthday-cover",
       "headline": "HAPPY BIRTHDAY",
       "subhead": "The celebration issue",
-      "explainer": "Birthday",
-      "name": "Juno"
+      "dogName": "Juno"
+    },
+    "placement": {
+      "zoom": 1,
+      "panX": -0.5,
+      "panY": 0
     }
   },
   {
     "id": "certificate",
-    "file": "certificate.webp",
-    "photos": ["choc-puppy.jpg"],
-    "mode": "card",
-    "size": "Portrait",
+    "photo": "certificate.jpg",
     "spec": {
       "family": "certificate",
       "theme": "toy-champion-certificate",
       "headline": "TOY CHAMPION",
       "subhead": "Chosen by the dog",
-      "explainer": "Toy",
-      "name": "Juno"
+      "dogName": "Juno"
+    },
+    "placement": {
+      "zoom": 1.28,
+      "panX": 0,
+      "panY": 1
     }
   },
   {
     "id": "trading-card",
-    "file": "trading-card.webp",
-    "photos": ["golden-forest.jpg"],
-    "mode": "card",
-    "size": "Portrait",
+    "photo": "trading-card.jpg",
     "spec": {
       "family": "trading-card",
       "theme": "explorer-card",
       "headline": "SAFARI EXPLORER",
       "subhead": "Tracked by one very good nose",
-      "explainer": "Safari",
-      "name": "Biscuit"
+      "dogName": "Biscuit"
+    },
+    "placement": {
+      "zoom": 1,
+      "panX": 0,
+      "panY": 0
+    }
+  },
+  {
+    "id": "seasonal",
+    "photo": "seasonal.jpg",
+    "spec": {
+      "family": "seasonal-frame",
+      "theme": "winter",
+      "headline": "WINTER WALK",
+      "subhead": "First snow of the year",
+      "dogName": "Juno"
+    },
+    "placement": {
+      "zoom": 1,
+      "panX": -0.1,
+      "panY": 0
     }
   }
 ]

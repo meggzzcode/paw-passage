@@ -1,0 +1,465 @@
+/* Free journey polish: quiz, mystery gift, in-place reveal, adventure guide, completion. Tokens from everyday.css only.
+   Selectors are doubled (.x.qr-x) so they win over the earlier files whatever the import order. */
+
+/* ---------- Quiz ---------- */
+.pd-quiz.qr-quiz {
+  position: relative;
+  padding: 1.25rem 1.1rem 1.4rem;
+  border-radius: 2rem;
+  gap: 1rem;
+  overflow: hidden;
+}
+.qr-quiz .qr-polaroid {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 3.9rem;
+  height: 3.9rem;
+}
+.qr-polaroid {
+  display: block;
+  padding: 0.25rem;
+  background: var(--pp-card);
+  border-radius: 0.5rem;
+  box-shadow: 0 3px 10px rgb(46 36 32 / 0.18);
+  rotate: 5deg;
+}
+.qr-polaroid img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.3rem;
+}
+.qr-quiz .pd-quiz-count {
+  margin: 0;
+  padding-right: 4.8rem;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+}
+.qr-quiz .pd-quiz-bar {
+  margin-right: 4.8rem;
+  height: 0.5rem;
+}
+.qr-quiz .pd-quiz-q.pa-h {
+  margin: 0.6rem 0 0.9rem;
+  font-size: clamp(1.9rem, 7.4vw, 2.7rem);
+  line-height: 1.02;
+  text-wrap: balance;
+}
+.pd-quiz.qr-quiz .pa-chips {
+  gap: 0.875rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.pd-quiz.qr-quiz .pa-chip {
+  position: relative;
+  min-height: 7rem;
+  padding: 1rem 0.9rem;
+  gap: 0.55rem;
+  font-size: 1.05rem;
+  line-height: 1.2;
+  box-shadow: 0 2px 0 rgb(46 36 32 / 0.08);
+}
+.pd-quiz.qr-quiz .pa-chip[aria-pressed="true"] {
+  box-shadow: inset 0 0 0 3px var(--pp-red);
+}
+/* The selected state is never colour alone: a ring plus a check mark. */
+.pd-quiz.qr-quiz .pa-chip[aria-pressed="true"]::after {
+  content: "\2713";
+  position: absolute;
+  top: 0.55rem;
+  right: 0.6rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--pp-red);
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+.qr-quiz .pa-chip-emoji {
+  display: grid;
+  place-items: center;
+  width: 2.9rem;
+  height: 2.9rem;
+  border-radius: 50%;
+  background: color-mix(in oklab, var(--pp-ochre) 45%, var(--pp-card));
+  font-size: 1.6rem;
+}
+.qr-quiz .pd-quiz-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+.qr-quiz .pd-quiz-nav .pp-btn,
+.qr-quiz .qr-skip {
+  min-height: 2.75rem;
+  display: inline-flex;
+  align-items: center;
+  padding-inline: 1rem;
+}
+.pd-quiz.qr-quiz .qr-compact .pa-chip {
+  min-height: 3.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.6rem 2.3rem 0.6rem 0.8rem;
+  font-size: 0.98rem;
+}
+.pd-quiz.qr-quiz .qr-compact .pa-chip[aria-pressed="true"]::after {
+  top: 50%;
+  translate: 0 -50%;
+  width: 1.3rem;
+  height: 1.3rem;
+}
+.pd-quiz.qr-quiz .qr-compact .pa-chip-emoji {
+  width: 2.1rem;
+  height: 2.1rem;
+  font-size: 1.2rem;
+  flex: none;
+}
+.qr-quiz .qr-skip {
+  margin-left: auto;
+  font-weight: 600;
+}
+.qr-quiz .pd-quiz-more {
+  border-top: 1.5px dotted color-mix(in oklab, var(--pp-ink) 30%, transparent);
+  padding-top: 0.9rem;
+}
+.qr-quiz .pd-quiz-more > .pa-linkbtn {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  min-height: 2.75rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--pp-ink);
+}
+.qr-plus {
+  display: grid;
+  place-items: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  background: var(--pp-card);
+  font-weight: 700;
+}
+.qr-quiz .pd-personal {
+  background: color-mix(in oklab, var(--pp-card) 75%, transparent);
+  border-radius: 1.25rem;
+  padding: 1rem;
+  gap: 1.1rem;
+}
+.qr-quiz .pd-personal input {
+  min-height: 2.75rem;
+  width: 100%;
+  border-radius: 0.9rem;
+  border: 2px solid var(--pp-hairline);
+  padding: 0 0.9rem;
+  font: inherit;
+  background: var(--pp-card);
+}
+.pd-quiz.qr-quiz .pd-personal .pa-chips {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.6rem;
+}
+.pd-quiz.qr-quiz .pd-personal .pa-chip {
+  min-height: 2.75rem;
+  padding: 0.55rem 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+}
+.pd-quiz.qr-quiz .pd-personal .pa-chip-emoji {
+  width: 1.9rem;
+  height: 1.9rem;
+  font-size: 1.1rem;
+}
+.qr-quiz > .pa-fine:last-child {
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
+@media (min-width: 700px) {
+  .pd-quiz.qr-quiz {
+    padding: 2rem 2.25rem 2.25rem;
+  }
+  .qr-quiz .qr-polaroid {
+    width: 5.5rem;
+    height: 5.5rem;
+    top: 1.75rem;
+    right: 2rem;
+  }
+  .pd-quiz.qr-quiz .pa-chips {
+    grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+    gap: 1rem;
+  }
+}
+
+/* ---------- Mystery gift ---------- */
+.pa-mystery.qr-gift {
+  gap: 0.75rem;
+  padding: 0 1rem 1.1rem;
+  overflow: hidden;
+}
+.qr-gift-art {
+  position: relative;
+  margin: 0 -1rem;
+  height: 6.25rem;
+  overflow: hidden;
+}
+.qr-gift-art img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 30%;
+  opacity: 0.9;
+}
+.qr-gift-art .qr-bow {
+  position: absolute;
+  right: 1rem;
+  bottom: -0.2rem;
+  width: 4rem;
+  height: auto;
+  filter: drop-shadow(0 2px 2px rgb(0 0 0 / 0.25));
+}
+.pa-mystery.qr-gift .pa-kicker {
+  justify-self: start;
+  margin: 0;
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+}
+.qr-gift-line {
+  margin: 0;
+  color: var(--pp-paper);
+  opacity: 0.9;
+}
+.pa-mystery.qr-gift .pa-clue {
+  font-size: 1.2rem;
+}
+.qr-gift .pa-scratch {
+  width: 100%;
+  aspect-ratio: auto;
+  min-height: 9.5rem;
+  rotate: -1deg;
+  padding: 1rem;
+  border: 2px dashed color-mix(in oklab, var(--pp-ink) 45%, transparent);
+  justify-content: center;
+}
+.qr-gift .pa-scratch-hand {
+  font-size: 1.6rem;
+}
+.qr-gift .pa-scratch-text {
+  font-size: 1.3rem;
+}
+.qr-good-k {
+  margin: 0 0 0.35rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--pp-ochre);
+  font-weight: 700;
+}
+.qr-gift .qr-gift-actions {
+  display: flex;
+  justify-content: center;
+}
+.qr-gift .qr-gift-actions .pp-btn-ghost {
+  color: var(--pp-paper);
+  border-color: rgb(247 240 225 / 0.5);
+  min-height: 2.75rem;
+}
+.qr-gift .pa-fine {
+  color: var(--pp-paper);
+  opacity: 0.85;
+}
+@media (prefers-reduced-motion: reduce) {
+  .qr-gift .pa-scratch {
+    rotate: 0deg;
+  }
+}
+
+/* ---------- In-place reveal: the gift turns into the adventure, same spot, a short fade ---------- */
+.qr-unwrap {
+  animation: qr-unwrap 260ms ease-out;
+}
+@keyframes qr-unwrap {
+  from {
+    opacity: 0;
+    transform: translateY(6px) scale(0.99);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .qr-unwrap {
+    animation: none;
+  }
+}
+
+/* ---------- Adventure guide ---------- */
+.pa-card.pd-card.qr-adv {
+  padding: 0 1.1rem 1.25rem;
+  gap: 0.9rem;
+  overflow: hidden;
+}
+.qr-adv-hero {
+  margin: 0 -1.1rem;
+  height: 7.5rem;
+  overflow: hidden;
+  border-bottom: 3px solid var(--pp-ochre);
+}
+.qr-adv-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 30%;
+}
+.qr-adv-for {
+  margin: 0;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--pp-red);
+}
+.qr-adv .pa-title {
+  font-size: clamp(1.6rem, 6vw, 2.1rem);
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+}
+.qr-adv .pa-twist {
+  font-size: 1.05rem;
+}
+.qr-adv .pa-facts li,
+.qr-adv .pa-tags li {
+  font-size: 0.9rem;
+}
+.qr-adv .ux-before {
+  margin: 0.25rem 0;
+  padding: 0.9rem 1rem 0.5rem;
+  background: color-mix(in oklab, var(--pp-ochre) 22%, var(--pp-card));
+  border: 2px solid var(--pp-ochre);
+  border-radius: 1.1rem;
+  display: grid;
+  gap: 0.6rem;
+}
+.qr-adv .ux-before .pa-sec {
+  color: var(--pp-ink);
+}
+.qr-adv .pa-steps.ux-steps {
+  list-style: none;
+  padding: 0;
+  counter-reset: qr-step;
+  gap: 1.1rem;
+  font-size: 1.0625rem;
+  line-height: 1.55;
+}
+.qr-adv .pa-steps.ux-steps li {
+  counter-increment: qr-step;
+  position: relative;
+  padding-left: 2.6rem;
+  margin: 0;
+}
+.qr-adv .pa-steps.ux-steps li::before {
+  content: counter(qr-step);
+  position: absolute;
+  left: 0;
+  top: 0.05rem;
+  width: 1.9rem;
+  height: 1.9rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--pp-ochre);
+  color: var(--pp-ink);
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+.qr-adv .qr-reward {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem 0.9rem;
+  border-radius: 1rem;
+  background: color-mix(in oklab, var(--pp-strawberry) 30%, var(--pp-card));
+}
+.qr-adv .qr-reward p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+.qr-adv .qr-reward ul {
+  flex: none;
+}
+.qr-adv .pa-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+}
+.qr-adv .pa-actions .pp-btn-primary {
+  grid-column: 1 / -1;
+  min-height: 3.25rem;
+  font-size: 1.1rem;
+}
+.qr-adv .pa-actions .pp-btn,
+.qr-adv .pa-more > .pp-btn {
+  min-height: 2.75rem;
+  width: 100%;
+}
+
+/* ---------- Completion ---------- */
+.ux-done.qr-done {
+  margin: 0.5rem -1.1rem -1.25rem;
+  padding: 1.4rem 1.1rem 1.5rem;
+  background: color-mix(in oklab, var(--pp-ochre) 28%, var(--pp-paper));
+  border-top: 3px solid var(--pp-ochre);
+  display: grid;
+  gap: 1rem;
+}
+.qr-done > .pa-h {
+  margin: 0;
+  font-size: clamp(1.7rem, 6.5vw, 2.3rem);
+  line-height: 1.05;
+}
+.qr-stamp {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.qr-stamp p {
+  margin: 0;
+  font-weight: 600;
+}
+.qr-stamp ul {
+  rotate: -6deg;
+  flex: none;
+}
+.qr-done .kp-unlock-fig {
+  margin: 0;
+  display: grid;
+  justify-items: start;
+}
+.qr-done .kp-unlock-fig img {
+  border-radius: 0.9rem;
+  box-shadow: 0 4px 14px rgb(46 36 32 / 0.18);
+  max-width: min(150px, 100%) !important;
+  rotate: 2deg;
+}
+.qr-done .ux-invite {
+  background: var(--pp-card);
+  border-radius: 1.1rem;
+  padding: 1rem;
+  border: 2px solid var(--pp-line);
+}
+.qr-done .ux-invite .pp-btn {
+  min-height: 2.75rem;
+}
+@media (min-width: 700px) {
+  .ux-done.qr-done {
+    margin-inline: -1.1rem;
+  }
+}

@@ -11,6 +11,7 @@ import {
   type KeepItem,
   type OwnerPrefs,
 } from "@/passport/profile";
+import { Polaroid, QUIZ_PHOTOS } from "./journey-art";
 import { setOwner, setProfile } from "@/passport/local-store";
 import type { Save } from "@/passport/progress";
 import {
@@ -393,7 +394,7 @@ export function IntroQuiz({
       break;
     default:
       body = (
-        <fieldset className="pa-field pd-choices" aria-labelledby={qid}>
+        <fieldset className="pa-field pd-choices qr-compact" aria-labelledby={qid}>
           <p className="pa-fine">
             Pick any that apply. Only you know your dog. “Not sure” stays unknown, and we ask before
             an adventure that depends on it.
@@ -428,7 +429,8 @@ export function IntroQuiz({
   const answered = answeredIn(id, draft);
   const personalId = "fs-personal";
   return (
-    <section className="pa-panel pd-quiz">
+    <section className="pa-panel pd-quiz qr-quiz">
+      <Polaroid src={QUIZ_PHOTOS[idx % QUIZ_PHOTOS.length]!} className="qr-quiz-photo" />
       <p className="pd-quiz-count" id="fs-quiz-count">
         Question {idx + 1} of {n}
       </p>
@@ -460,6 +462,9 @@ export function IntroQuiz({
             aria-controls={personalId}
             onClick={() => setOpen((o) => !o)}
           >
+            <span className="qr-plus" aria-hidden="true">
+              {open ? "−" : "+"}
+            </span>
             Make it more personal (optional)
           </button>
           {open && (
@@ -574,12 +579,16 @@ export function IntroQuiz({
             {submitLabel}
           </button>
         ) : (
-          <button type="button" className="pa-linkbtn" onClick={advance}>
+          <button type="button" className="pa-linkbtn qr-skip" onClick={advance}>
             {answered ? "Next" : "Skip"}
           </button>
         )}
       </div>
-      <p className="pa-fine">Skipped questions stay unknown. Nothing leaves this device.</p>
+      <p className="pa-fine">
+        The questions about your dog are what keep suggestions suitable. A skipped or “Not sure”
+        answer stays unknown and is treated cautiously, never as safe. Names, time, budget and
+        interests are optional extras. Nothing leaves this device.
+      </p>
     </section>
   );
 }

@@ -65,8 +65,7 @@ export function WelcomePage() {
         <h1 className="pa-h1">Welcome</h1>
         <p className="pa-sub">
           We could not find an active full Passport on this device. If you have already bought it,
-          restore access with your purchase code. Nothing is lost either way, and your first
-          adventure keeps working.
+          restore access with your purchase code. Your first adventure works without any code.
         </p>
         <p className="pp-cta-row">
           <AppLink to="/restore-access" className="pp-btn pp-btn-primary">

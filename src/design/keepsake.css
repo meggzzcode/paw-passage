@@ -222,3 +222,52 @@
     grid-column: 1 / -1;
   }
 }
+
+/* Photo look picker */
+.kp-fx {
+  border: 0;
+  margin: 12px 0;
+  padding: 0;
+}
+.kp-fx legend {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.kp-fx-row {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+.kp-fx-opt {
+  flex: 0 0 auto;
+  width: 84px;
+  display: grid;
+  gap: 4px;
+  justify-items: center;
+  text-align: center;
+  font-size: 0.8125rem;
+  cursor: pointer;
+}
+.kp-fx-opt input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.kp-fx-thumb {
+  width: 76px;
+  height: 76px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.08);
+  border: 2px solid transparent;
+}
+.kp-fx-on .kp-fx-thumb {
+  border-color: currentColor;
+}
+.kp-fx-on span {
+  font-weight: 600;
+}
+.kp-fx-opt:focus-within .kp-fx-thumb {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}

@@ -36,9 +36,9 @@ export const STAMP_LABELS: Record<StampSlug, string> = {
   "adventure-legend": "Adventure Legend",
 };
 
-const PAPER = "#fbf6ea";
+export const PAPER = "#fbf6ea";
 const FAINT = "#9a9486";
-const SERIF = '"Bricolage Grotesque", Georgia, "Times New Roman", serif';
+export const SERIF = '"Bricolage Grotesque", Georgia, "Times New Roman", serif';
 
 // ------------------------------------------------------------------ outlines (viewBox 0 0 120 120)
 
@@ -62,7 +62,7 @@ function burst(points: number, outer: number, inner: number): string {
   return d + "Z";
 }
 
-const OUTLINES: Record<StampSlug, string> = {
+export const OUTLINES: Record<StampSlug, string> = {
   // postage stamp, scalloped
   "first-adventure": scallop(10, 10, 110, 110, 10),
   // arched doorway
@@ -93,10 +93,10 @@ const OUTLINES: Record<StampSlug, string> = {
 
 // ------------------------------------------------------------------ illustrations
 
-type Inks = { a: string; b: string };
+export type Inks = { a: string; b: string };
 type Art = (i: Inks) => ReactNode;
 
-const Paw = ({ x, y, s, fill }: { x: number; y: number; s: number; fill: string }) => (
+export const Paw = ({ x, y, s, fill }: { x: number; y: number; s: number; fill: string }) => (
   <g fill={fill} transform={`translate(${x} ${y}) scale(${s})`}>
     <path d="M0 4C-9 4-13 12-9 17 -5 22 5 22 9 17 13 12 9 4 0 4Z" />
     <ellipse cx="-13" cy="-3" rx="4" ry="5.5" transform="rotate(-20 -13 -3)" />
@@ -106,7 +106,7 @@ const Paw = ({ x, y, s, fill }: { x: number; y: number; s: number; fill: string 
   </g>
 );
 
-const ART: Record<StampSlug, Art> = {
+export const ART: Record<StampSlug, Art> = {
   "first-adventure": ({ a, b }) => (
     <g>
       <Paw x={60} y={52} s={1.5} fill={a} />
@@ -306,7 +306,7 @@ const ART: Record<StampSlug, Art> = {
   ),
 };
 
-const INKS: Record<StampSlug, Inks> = {
+export const INKS: Record<StampSlug, Inks> = {
   "first-adventure": { a: "#c8343f", b: "#4f8a5b" },
   "cozy-companion": { a: "#8a4f3a", b: "#c9786a" },
   "beach-explorer": { a: "#2c6e8a", b: "#d19a3a" },
@@ -392,7 +392,7 @@ export function Stamp({ slug, earned = false, size = 120, label }: StampProps) {
 }
 
 /** The "cancelled" postmark: a double ring with wavy cancellation bars, tilted, overlapping the corner. */
-function PostmarkRing({ id, ink }: { id: string; ink: string }) {
+export function PostmarkRing({ id, ink }: { id: string; ink: string }) {
   return (
     <g
       data-postmark="true"
@@ -404,10 +404,11 @@ function PostmarkRing({ id, ink }: { id: string; ink: string }) {
     >
       <circle r="17" strokeWidth="1.8" />
       <circle r="12.5" strokeWidth="0.9" />
+      <Paw x={0} y={-5} s={0.3} fill={ink} />
       <text
-        y="3"
+        y="8"
         textAnchor="middle"
-        fontSize="7"
+        fontSize="5.5"
         fontWeight="700"
         fontFamily={SERIF}
         fill={ink}

@@ -21,10 +21,16 @@ export const BRAND = {
     titleLead: "A passport full of",
     titleEm: "little adventures",
     titleTail: "for you and your dog.",
-    support: `Discover ${LIBRARY_CLAIM_MIN}+ fun, creative and memorable things to do together, personalized to your dog and your lifestyle.`,
+    support: `${LIBRARY_CLAIM_MIN}+ personalized ideas for more fun, more time together and more memories.`,
     primaryCta: "Find our first adventure",
+    /** The home page's one primary action (starts the quiz directly). Other pages keep `primaryCta`. */
+    primaryCtaFree: "Find our first adventure — free.",
     ctaNote: "Your first adventure is free.",
   },
+  /** The two options a visitor chooses between (home invitation and /unlock). The paid label adds the price in commercial.ts. */
+  freeOption: "Your first adventure — free.",
+  fullOptionName: "The full Adventure Passport",
+  testersHeading: "A little love from our early testers.",
   discoverHeadline: "Adventures picked for your dog. Memories made by you.",
   unlockHeadline: `One passport. ${LIBRARY_CLAIM_WORDS} adventures. Endless little memories.`,
   keepsakeHeadline: "Adventures for your dog. Keepsakes for you.",
@@ -32,8 +38,6 @@ export const BRAND = {
   ourStory: "A lifetime of little adventures.",
   mysteryHeadline: "A little adventure awaits...",
   journalHeadline: "More than walks. More than fetch. More little adventures.",
-  /** Decorative (aria-hidden) strip under the home hero, as Lovable designed it. It carries no information. */
-  marquee: `Your favorite little sidekick ✿ Let’s make a date ✿ ${"Collect adventures, not just things.".replace(".", "")} ✿ Made for the two of you ✿ `,
   /** Rendered only while flags.gifting is true (it stays false until gifting is verified). */
   giftLine: "Give a lifetime of little adventures.",
 } as const;

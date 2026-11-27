@@ -137,3 +137,9 @@ export function seasonalPick(month: number): { slug: string; lead: string } {
 
 /** The collection to feature at the top of the directory. */
 export const FEATURED_SLUG = "home-sweet-home";
+
+/** The one featured collection: this season's pick when the calendar has one, otherwise the evergreen starting point. */
+export function featuredPick(month: number): { slug: string; lead: string } {
+  if (month === 0 || month === 1) return { slug: FEATURED_SLUG, lead: "Start here" };
+  return seasonalPick(month);
+}

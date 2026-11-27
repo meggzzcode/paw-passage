@@ -70,6 +70,9 @@ export const featured = {
   homeCards: 3,
 } as const;
 
+/** The paid option's label, shown beside the free one: "The full Adventure Passport — <price> once." */
+export const FULL_OPTION_LABEL = `${BRAND.fullOptionName} — ${price} once.`;
+
 /** Homepage promo copy. Keys, not layout: the page reads these so wording lives in one place. */
 export const homePromo = {
   eyebrow: BRAND.hero.eyebrow,
@@ -79,13 +82,7 @@ export const homePromo = {
   lede: BRAND.hero.support,
   ctaNote: BRAND.hero.ctaNote,
   commercial: ONE_TIME_LINE,
-  points: [
-    "One free adventure to start",
-    "Personalized to your dog",
-    "One payment, not a subscription",
-    "No account",
-  ],
-  primaryCta: BRAND.hero.primaryCta,
+  primaryCta: BRAND.hero.primaryCtaFree,
   secondaryCta: "Explore the Adventure Collection",
   demo: {
     eyebrow: "See it in action",

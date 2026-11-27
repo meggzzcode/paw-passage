@@ -352,8 +352,8 @@ describe("trust and objections", () => {
     expect(TRUST_POINTS.length).toBeGreaterThanOrEqual(6);
     expect(t).not.toMatch(/testimonial|rated|\bstars?\b|customers love|thousands/i);
   });
-  it("is reused on the homepage, unlock and FAQ", () => {
-    for (const f of ["src/routes/index.tsx", "src/routes/unlock.tsx", "src/routes/faq.tsx"])
+  it("is reused on unlock and FAQ (the home page keeps only the quiet refund, restore and support links)", () => {
+    for (const f of ["src/routes/unlock.tsx", "src/routes/faq.tsx"])
       expect(readFileSync(f, "utf8"), f).toContain("<TrustStrip");
   });
   it("answers household and multi-dog honestly: one shared profile, no separate profiles", () => {

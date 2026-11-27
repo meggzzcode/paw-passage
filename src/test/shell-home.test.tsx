@@ -21,13 +21,8 @@ describe("shell navigation", () => {
     expect(unlockCta).toEqual({ to: "/unlock", label: "Get the Passport" });
     expect(restoreLink).toEqual({ to: "/restore-access", label: "Restore access" });
   });
-  it("paid nav: Discover, Collections, My Passport, Saved; the rest is secondary and has no upsell", () => {
-    expect(paidNav.map((n) => n.label)).toEqual([
-      "Discover",
-      "Collections",
-      "My Passport",
-      "Saved",
-    ]);
+  it("paid nav: Discover, Collections, My Passport; the rest is secondary and has no upsell", () => {
+    expect(paidNav.map((n) => n.label)).toEqual(["Discover", "Collections", "My Passport"]);
     expect(paidMore.map((n) => n.label)).toEqual([
       "Journal",
       "Our Story",
@@ -58,15 +53,14 @@ describe("homepage copy", () => {
     expect(`${homePromo.titleLead} ${homePromo.titleEm} ${homePromo.titleTail}`).toBe(
       "A passport full of little adventures for you and your dog.",
     );
-    expect(homePromo.lede).toMatch(
-      /^Discover 100\+ fun, creative and memorable things to do together/,
+    expect(homePromo.lede).toBe(
+      "100+ personalized ideas for more fun, more time together and more memories.",
     );
     expect(homePromo.ctaNote).toBe("Your first adventure is free.");
     expect(homePromo.commercial).toBe("One payment of $19.99. Yours to keep.");
-    expect(homePromo.primaryCta).toBe("Find our first adventure");
+    expect(homePromo.primaryCta).toBe("Find our first adventure — free.");
     expect(src).toContain("Explore the Adventure Collection");
-    expect(src).toContain("One payment, not a subscription");
-    expect(src).toContain("No account");
+    expect(src).toContain("KEEP_LINE");
   });
   it("shows the price from the one offer constant, with no discount or unproven claim", () => {
     expect(src).toContain("offer.price");

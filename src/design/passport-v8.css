@@ -1,0 +1,192 @@
+/* My Passport as an adventure journal: cover, chapters (disclosures) and collectible artwork. Uses --pp-* tokens. */
+.pv8-page {
+  display: grid;
+  gap: 1.1rem;
+}
+.pv8-cover {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  gap: 0.6rem;
+  padding: 1.6rem 1.25rem 1.4rem;
+  border-radius: var(--pp-radius);
+  background:
+    radial-gradient(
+      circle at 88% 12%,
+      color-mix(in oklab, var(--pp-ochre) 35%, transparent),
+      transparent 40%
+    ),
+    color-mix(in oklab, var(--pp-pine) 88%, black);
+  color: var(--pp-on-red);
+  box-shadow: var(--pp-shadow);
+  outline: 2px dashed color-mix(in oklab, var(--pp-on-red) 45%, transparent);
+  outline-offset: -0.55rem;
+}
+.pv8-cover-kicker {
+  margin: 0;
+  font: 700 1.25rem/1.1 var(--font-hand);
+  color: var(--pp-ochre);
+}
+.pv8-cover-h1 {
+  margin: 0;
+  font: 800 clamp(1.5rem, 6vw, 2.2rem) / 1.1 var(--font-display);
+}
+.pv8-cover-progress,
+.pv8-cover-facts {
+  margin: 0;
+  font-weight: 600;
+}
+.pv8-cover-facts {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+.pv8-cover-stamps {
+  list-style: none;
+  display: flex;
+  gap: 0.4rem;
+  margin: 0.2rem 0;
+  padding: 0;
+}
+.pv8-cover-stamps li {
+  margin: 0;
+}
+.pv8-cover-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.9rem;
+  margin-top: 0.4rem;
+}
+.pv8-cover-link {
+  color: var(--pp-on-red);
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.pv8-chapters {
+  display: grid;
+  gap: 0.7rem;
+}
+.pv8-sec {
+  background: var(--pp-card);
+  border: 1.5px solid var(--pp-hairline);
+  border-radius: var(--pp-radius);
+  padding: 0 1rem;
+}
+.pv8-sec[open] {
+  border-color: var(--pp-line);
+}
+.pv8-sec-quiet {
+  background: transparent;
+}
+.pv8-sum {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  min-height: 56px;
+  padding: 0.5rem 0;
+  cursor: pointer;
+  list-style: none;
+}
+.pv8-sum::-webkit-details-marker {
+  display: none;
+}
+.pv8-sum:focus-visible {
+  outline: 3px solid var(--pp-focus);
+  outline-offset: 2px;
+  border-radius: 0.75rem;
+}
+.pv8-h {
+  margin: 0;
+  font: 700 1.15rem/1.2 var(--font-display);
+}
+.pv8-sumline {
+  display: block;
+  color: var(--pp-muted);
+  font-size: 0.9rem;
+}
+.pv8-chev {
+  width: 0.6rem;
+  height: 0.6rem;
+  flex: none;
+  border-right: 2.5px solid var(--pp-ink);
+  border-bottom: 2.5px solid var(--pp-ink);
+  rotate: 45deg;
+  transition: rotate 0.15s;
+}
+.pv8-sec[open] .pv8-chev {
+  rotate: -135deg;
+}
+@media (prefers-reduced-motion: reduce) {
+  .pv8-chev {
+    transition: none;
+  }
+}
+.pv8-body {
+  display: grid;
+  gap: 0.8rem;
+  padding: 0.2rem 0 1rem;
+}
+.pv8-body > .pa-panel {
+  border: 0;
+  padding: 0;
+  box-shadow: none;
+  background: transparent;
+}
+.pv8-plain {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+.pv8-stack {
+  display: grid;
+  gap: 1.4rem;
+}
+.pv8-h3 {
+  margin: 0 0 0.2rem;
+  font: 700 1rem/1.2 var(--font-display);
+}
+.pv8-shelf {
+  list-style: none;
+  margin: 0.5rem 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(7.5rem, 1fr));
+  gap: 1.1rem 0.6rem;
+  justify-items: center;
+}
+.pv8-tile {
+  display: grid;
+  justify-items: center;
+  gap: 0.15rem;
+  text-align: center;
+  margin: 0;
+}
+.pv8-art {
+  max-width: 100%;
+  height: auto;
+  filter: drop-shadow(0 6px 5px oklch(0.27 0.015 40 / 0.18));
+}
+.pv8-tile-name {
+  font: 700 0.85rem/1.2 var(--font-display);
+}
+.pv8-tile-state {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--pp-ochre-text);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.pv8-tile[data-state="earned"] .pv8-tile-state {
+  color: var(--pp-pine);
+}
+.pv8-tile[data-state="full-passport"] .pv8-tile-state {
+  color: var(--pp-red);
+}
+.pv8-tile-note {
+  font-size: 0.78rem;
+  color: var(--pp-muted);
+  max-width: 11rem;
+}

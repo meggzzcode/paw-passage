@@ -38,7 +38,7 @@ describe("home page by access state", () => {
       screen.getAllByRole("link", { name: /Find our first adventure/ }).length,
     ).toBeGreaterThan(0);
     expect(document.body.textContent).toMatch(/\$19\.99/);
-    expect(screen.getAllByRole("link", { name: /full Passport/i }).length).toBeGreaterThan(0);
+    expect(screen.getAllByRole("link", { name: /Get the Passport/ }).length).toBeGreaterThan(0);
   });
 
   it("entitled: a short welcome, Find today's adventure, quiet links, and no price, purchase, free pitch or restore", async () => {

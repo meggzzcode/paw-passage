@@ -42,7 +42,14 @@ export const FAILURE_TEXT: Record<AccessFailure, string> = {
   error: "Something went wrong on our side. Please try again in a little while.",
 };
 
-export function AccessForm({ kind }: { kind: AccessKind }) {
+export function AccessForm({
+  kind,
+  embedded = false,
+}: {
+  kind: AccessKind;
+  /** Inside a disclosure whose summary already says "Already have a code?": no second heading. */
+  embedded?: boolean;
+}) {
   const [code, setCode] = useState("");
   const [busy, setBusy] = useState(false);
   const [done, setDone] = useState<string | null>(null);
@@ -98,7 +105,9 @@ export function AccessForm({ kind }: { kind: AccessKind }) {
       onSubmit={submit}
       aria-label={restoring ? "Restore access" : "Activate your code"}
     >
-      <h2 className="pa-h">{restoring ? "Restore access" : "Already have a code?"}</h2>
+      {!embedded && (
+        <h2 className="pa-h">{restoring ? "Restore access" : "Already have a code?"}</h2>
+      )}
       <p className="pa-fine">
         {restoring
           ? "Enter the code from your purchase email. No second purchase needed."

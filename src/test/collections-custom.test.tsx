@@ -128,8 +128,16 @@ describe("shared completion", () => {
     expect(screen.getByText("1 of 2 done")).toBeInTheDocument();
   });
 
-  it("the directory lists every collection and gives counts from the library", async () => {
+  it("the landing is short; one action opens the compact list of every collection with counts", async () => {
     await renderUi(<CuratedCollections />);
+    expect(document.getElementById("all-collections")).toBeNull();
+    expect(screen.queryByRole("heading", { name: /Good places to start|Suited to/ })).toBeNull();
+    expect(screen.getAllByRole("link", { name: /^Rainy day$/i }).length).toBe(1); // the shortcut only
+    fireEvent.click(
+      screen.getByRole("button", {
+        name: `Browse all ${contentMock.collections.length} collections`,
+      }),
+    );
     const all = document.getElementById("all-collections")!;
     for (const c of contentMock.collections)
       expect(within(all).getByRole("link", { name: c.title })).toBeInTheDocument();

@@ -14,14 +14,13 @@ export const freeNav: readonly NavItem[] = [
 export const firstAdventureLink: NavItem = { to: "/discover", label: "My First Adventure" };
 
 /**
- * Paying customers. "Saved" is a primary shortcut, not a tab buried inside Collections: it is the thing a customer
- * returns to most, and on a phone a shortcut is one menu tap away where the tab is menu, Collections, Saved.
+ * Paying customers: three principal destinations. Saved is not a fourth tab: it lives in My Passport (our bucket list),
+ * behind the Saved shortcut on Discover and as a tab inside Collections; /collections?tab=favorites keeps working.
  */
 export const paidNav: readonly NavItem[] = [
   { to: "/discover", label: "Discover" },
   { to: "/collections", label: "Collections" },
   { to: "/passport", label: "My Passport" },
-  { to: "/collections", label: "Saved", search: { tab: "favorites" } },
 ];
 
 /** Paying customers, secondary (the "More" menu on wide screens, below the main links in the phone menu). */

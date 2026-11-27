@@ -1,0 +1,112 @@
+/* Final polish: the shorter home page, the purchase invitation, early-tester notes. Existing tokens only. */
+.pp-offer-line {
+  margin: 0.9rem 0 0;
+  font-weight: 600;
+}
+.pp-offer-line span {
+  display: block;
+  font-weight: 400;
+  color: var(--pp-muted);
+}
+.pp-home-visitor .pp-section {
+  padding-block: clamp(2rem, 6vw, 3.5rem);
+}
+.pp-home-visitor .pp-moods > li {
+  flex-basis: 12.5rem;
+}
+.pp-home-visitor .pp-mood {
+  min-height: 14rem;
+  padding: 1rem;
+}
+.pp-home-visitor .pp-mood h3 {
+  font-size: 1.5rem;
+}
+.pp-home-visitor .pp-mood p {
+  font-size: 1.05rem;
+}
+.pp-home-visitor .pp-mood-img {
+  height: 6.5rem;
+}
+.pp-keep-grid {
+  display: grid;
+  gap: 1.5rem;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .pp-keep-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.pp-invite .pp-card h3 {
+  margin: 0;
+}
+.pp-invite .pp-price-line {
+  margin: 0.4rem 0 0;
+}
+.pp-invite-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 1rem;
+  margin: 0.5rem 0 0;
+}
+.pp-testers {
+  margin: 0;
+}
+.pp-testers-h {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  line-height: 1.1;
+}
+.pp-testers-list {
+  display: grid;
+  gap: 1rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+@media (min-width: 720px) {
+  .pp-testers-list {
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  }
+}
+.pp-testers-list figure {
+  margin: 0;
+  padding: 1rem 1.1rem;
+  background: var(--pp-card);
+  border: 1.5px solid var(--pp-line);
+  border-radius: var(--pp-radius);
+  height: 100%;
+}
+.pp-testers-list blockquote {
+  margin: 0;
+  line-height: 1.5;
+}
+.pp-testers-list figcaption {
+  margin-top: 0.6rem;
+  font-size: 0.875rem;
+  color: var(--pp-muted);
+}
+.pp-testers-stars {
+  margin: 0 0 0.4rem;
+  color: var(--pp-red);
+  letter-spacing: 0.1em;
+}
+.pp-testers-compact {
+  margin-top: 1.5rem;
+}
+.ux-trustline {
+  margin: 0.75rem 0 0;
+}
+/* Nested trust list must never force the page wider than a 320px screen. */
+.pp-trust-list {
+  grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%), 1fr));
+}
+.pa-panel .pp-trust {
+  margin: 1rem 0 0;
+  padding: 0.75rem 0 0;
+  border: 0;
+  border-top: 1.5px solid var(--pp-line);
+  border-radius: 0;
+  background: transparent;
+}

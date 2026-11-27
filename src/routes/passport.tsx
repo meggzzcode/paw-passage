@@ -5,9 +5,13 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Container } from "@/components/shell/Container";
 import { Button } from "@/components/shell/Button";
 import { AppLink } from "@/components/shell/AppLink";
-import { StampShelf } from "@/components/passport/StampShelf";
+import { PassportCover } from "@/components/passport/PassportCover";
+import { PassportSection } from "@/components/passport/PassportSection";
+import { StampsAndMilestones } from "@/components/passport/PassportRewards";
+import { StoryTimeline } from "@/components/passport/StoryTimeline";
+import { isLive, usePlans } from "@/lib/plans";
 import { AccountPanel } from "@/components/passport/AccessForms";
-import { achievements as achDefs, collections } from "@/passport/content";
+import { achievements as achDefs, collections, stamps as stampDefs } from "@/passport/content";
 import { useAdventureLibrary } from "@/components/passport/collections-shared";
 import { TrustBlock } from "@/components/passport/TrustBlock";
 import { SyncStatus } from "@/components/passport/SyncStatus";
@@ -53,6 +57,7 @@ function PassportPage() {
   const [msg, setMsg] = useState("");
   const [askDelete, setAskDelete] = useState(false);
   const { all: lib, unlocked: entitled } = useAdventureLibrary();
+  const livePlans = usePlans().filter(isLive);
   const cols = Object.fromEntries(
     collections.map((c) => [
       c.slug,
@@ -60,11 +65,8 @@ function PassportPage() {
     ]),
   );
   const earned = achievements(save, lib, cols);
-  const favs = members(save.favorites)
-    .map((id) => lib.find((a) => a.id === id))
-    .filter((a) => a !== undefined)
-    .slice(0, 5);
-  const next = achDefs.find((x) => x.kind === "count" && x.threshold === earned.next);
+  const savedIds = [...new Set([...members(save.favorites), ...members(save.saved)])];
+  const saved = savedIds.map((id) => lib.find((a) => a.id === id)).filter((a) => a !== undefined);
 
   function doExport() {
     downloadBlob(
@@ -92,150 +94,168 @@ function PassportPage() {
     save.owner.data.typicalBudget !== undefined && `Budget about $${save.owner.data.typicalBudget}`,
     save.owner.data.prep && `Prep: ${save.owner.data.prep}`,
   ].filter((x): x is string => Boolean(x));
+  const rewardTotal = stampDefs.length;
+  const nextAch = achDefs.find((x) => x.kind === "count" && x.threshold === earned.next);
+  const showPlans = entitled || livePlans.length > 0 || view === "upcoming";
 
   return (
     <Container>
-      <div className="pa-page">
+      <div className="pa-page pv8-page">
         <RestoreAccessCallout />
-        <p className="pa-kicker">{name}'s Adventure Passport</p>
-        <h1 className="pa-h1">{BRAND.passportHeadline}</h1>
-        <p className="pa-sub">
-          {earned.count} {earned.count === 1 ? "adventure" : "adventures"} collected ·{" "}
-          {earned.stamps.length} {earned.stamps.length === 1 ? "stamp" : "stamps"}
-        </p>
-        <p className="pa-fine" role="status">
-          {saveState === "saved"
-            ? "Your progress is saved in this browser on this device. It isn't uploaded anywhere. Export a backup below to keep a copy or move to another device."
-            : "This browser couldn't save your progress, so it is only kept while this tab stays open. Export a backup below before you leave."}
-        </p>
-
-        <div className="pa-row">
-          <button type="button" className="pp-btn pp-btn-primary" onClick={doExport}>
-            Export my progress
-          </button>
-          <span className="pa-fine">Free, always. A small file with your progress.</span>
-        </div>
-
-        <SyncStatus />
-
-        <StampShelf earned={earned.stamps} />
-
-        <UpcomingAdventures focus={view === "upcoming"} planId={plan} />
-        <PrintablesCard />
-        {flags.notifications && <NotificationSettings />}
-        <InstallCard />
-
-        <section className="pa-panel" aria-labelledby="ms-h">
-          <h2 id="ms-h" className="pa-h">
-            Milestones
-          </h2>
-          {earned.milestones.length > 0 ? (
-            <ul>
-              {earned.milestones.map((t) => (
-                <li key={t}>
-                  {achDefs.find((x) => x.threshold === t)?.title ?? `${t} adventures`}
-                </li>
-              ))}
-            </ul>
-          ) : (
-            <p className="pa-fine">Your first milestone is one adventure away.</p>
-          )}
-          {earned.next && (
-            <p className="pa-fine">
-              Next milestone at {earned.next} adventures{next ? `: ${next.title}` : ""}.
-            </p>
-          )}
-          {earned.milestones.length > 0 && !canMake && (
-            <KeepsakeUnlock where="card" family="certificate" />
-          )}
-          {earned.milestones.length > 0 && canMake && (
-            <div className="pa-row">
-              <button
-                type="button"
-                className="pp-btn pp-btn-secondary"
-                onClick={async () => {
-                  const { makeKeepsakeBlob } = await loadMilestoneRenderer();
-                  const b = await makeKeepsakeBlob({
-                    template: "milestone-card",
-                    dogName: name,
-                    title: `${earned.count} adventures`,
-                    stampCount: earned.stamps.length,
-                    stampSlugs: earned.stamps,
-                    variant: "square",
-                  });
-                  downloadBlob(b, "paw-and-passage-milestone.png");
-                  track("keepsake_created", { kind: "milestone" });
-                }}
-              >
-                Download milestone card
-              </button>
-            </div>
-          )}
-        </section>
-
-        <section className="pa-panel" aria-labelledby="prof-h">
-          <h2 id="prof-h" className="pa-h">
-            Profile and preferences
-          </h2>
-          {facts.length + prefs.length > 0 ? (
-            <ul className="pa-meta" aria-label="What we know">
-              {[...facts, ...prefs].map((t) => (
-                <li key={t}>{t}</li>
-              ))}
-            </ul>
-          ) : (
-            <p className="pa-fine">
-              We don't know much about {name === "Your dog" ? "your dog or dogs" : name} yet.
-              Anything we don't know is treated as unknown, never as safe.
-            </p>
-          )}
-          <div className="pa-row">
+        <PassportCover
+          name={name}
+          headline={BRAND.passportHeadline}
+          adventures={earned.count}
+          stamps={earned.stamps.length}
+          earnedStamps={earned.stamps}
+          facts={facts}
+        >
+          <div className="pv8-cover-actions">
+            <Button to="/discover">Find another adventure</Button>
             <AppLink
               to="/discover"
               search={{ mode: "made" } as never}
               hash="profile"
-              className="pp-btn pp-btn-secondary"
+              className="pv8-cover-link"
             >
               Personalize
             </AppLink>
           </div>
-        </section>
+        </PassportCover>
+        {saveState !== "saved" && (
+          <p className="pa-fine" role="status">
+            This browser couldn't save your progress, so it is only kept while this tab stays open.
+            Export a backup from Account and privacy before you leave.
+          </p>
+        )}
+        <SyncStatus />
 
-        {favs.length > 0 && (
-          <section className="pa-panel" aria-labelledby="fav-h">
-            <h2 id="fav-h" className="pa-h">
-              Recent favorites
-            </h2>
-            <ul>
-              {favs.map((a) => (
-                <li key={a.id}>{a.title}</li>
-              ))}
-            </ul>
+        <div className="pv8-chapters">
+          <PassportSection
+            id="bucket"
+            title="Our bucket list"
+            summary={
+              saved.length > 0
+                ? `${savedIds.length} saved for later`
+                : "Adventures you'd like to try together"
+            }
+          >
+            {saved.length > 0 ? (
+              <ul className="pv8-plain">
+                {saved.slice(0, 6).map((a) => (
+                  <li key={a.id}>{a.title}</li>
+                ))}
+              </ul>
+            ) : (
+              <p className="pa-fine">
+                Nothing saved yet. Tap the heart on an adventure to keep it here.
+              </p>
+            )}
             <AppLink
               to="/collections"
               search={{ tab: "favorites" } as never}
               className="pa-linkbtn"
             >
-              All favorites
+              {saved.length > 0 ? "See all saved adventures" : "Browse adventures"}
             </AppLink>
-          </section>
-        )}
+          </PassportSection>
 
-        <div className="pa-row">
-          <Button to="/discover">Find another adventure</Button>
-          <Button to="/our-story" variant="secondary">
-            Our Story
-          </Button>
+          <PassportSection
+            id="memories"
+            title="Our little memories"
+            summary={
+              earned.count > 0
+                ? `${earned.count} ${earned.count === 1 ? "adventure" : "adventures"} completed`
+                : "Your story starts with the first one"
+            }
+          >
+            <StoryTimeline />
+          </PassportSection>
+
+          <PassportSection
+            id="stamps-h"
+            anchors={["stamps", "milestones"]}
+            title="Stamps and milestones"
+            summary={`${earned.stamps.length} of ${rewardTotal} stamps · ${earned.milestones.length + earned.collectionsComplete.length} ${earned.milestones.length + earned.collectionsComplete.length === 1 ? "milestone" : "milestones"}`}
+          >
+            <StampsAndMilestones
+              earnedStamps={earned.stamps}
+              earnedMilestones={earned.milestones}
+              collectionsComplete={earned.collectionsComplete.length}
+              entitled={entitled}
+            />
+            {earned.next && (
+              <p className="pa-fine">
+                Next milestone at {earned.next} adventures{nextAch ? `: ${nextAch.title}` : ""}.
+              </p>
+            )}
+            {earned.milestones.length > 0 && !canMake && (
+              <KeepsakeUnlock where="card" family="certificate" />
+            )}
+            {earned.milestones.length > 0 && canMake && (
+              <div className="pa-row">
+                <button
+                  type="button"
+                  className="pp-btn pp-btn-secondary"
+                  onClick={async () => {
+                    const { makeKeepsakeBlob } = await loadMilestoneRenderer();
+                    const b = await makeKeepsakeBlob({
+                      template: "milestone-card",
+                      dogName: name,
+                      title: `${earned.count} adventures`,
+                      stampCount: earned.stamps.length,
+                      stampSlugs: earned.stamps,
+                      variant: "square",
+                    });
+                    downloadBlob(b, "paw-and-passage-milestone.png");
+                    track("keepsake_created", { kind: "milestone" });
+                  }}
+                >
+                  Download milestone card
+                </button>
+              </div>
+            )}
+          </PassportSection>
+
+          {showPlans && (
+            <PassportSection
+              id="plans"
+              anchors={["upcoming"]}
+              defaultOpen={view === "upcoming"}
+              title="Little plans ahead"
+              summary={
+                livePlans.length > 0
+                  ? `${livePlans.length} ${livePlans.length === 1 ? "adventure" : "adventures"} planned`
+                  : "Nothing planned yet"
+              }
+            >
+              <UpcomingAdventures focus={view === "upcoming"} planId={plan} />
+              {flags.notifications && <NotificationSettings />}
+            </PassportSection>
+          )}
         </div>
 
-        <section className="pa-panel" aria-labelledby="bk-h">
-          <h2 id="bk-h" className="pa-h">
-            Keep your progress safe
-          </h2>
+        <PrintablesCard />
+        <InstallCard />
+
+        <PassportSection
+          id="account"
+          anchors={["acct-h", "privacy"]}
+          quiet
+          title="Account and privacy"
+          summary="Backup, sync, sign out and support"
+        >
+          <p role="status" className="pa-fine">
+            {saveState === "saved"
+              ? entitled
+                ? "Your progress is saved in this browser and kept in sync with your passport account."
+                : "Your progress is saved in this browser on this device. It isn't uploaded anywhere."
+              : "This browser couldn't save your progress, so it is only kept while this tab stays open."}
+          </p>
           <p>
-            Export a backup, or restore one on another device. A backup holds your profile,
-            completed adventures, favorites, memories and collections. It never holds photos or
-            keepsakes.
+            Photos are processed locally on your device and are not stored online. A backup holds
+            your profile, completed adventures, saved adventures, memories and collections, never
+            photos or keepsakes.
           </p>
           <div className="pa-row">
             <button type="button" className="pp-btn pp-btn-secondary" onClick={doExport}>
@@ -287,11 +307,19 @@ function PassportPage() {
             )}
           </div>
           {msg && <p role="status">{msg}</p>}
-        </section>
-
-        <TrustBlock heading="Where your data lives" entitled={entitled} />
-
-        <AccountPanel />
+          {facts.length + prefs.length > 0 && (
+            <ul className="pa-meta" aria-label="What we know">
+              {[...facts, ...prefs].map((t) => (
+                <li key={t}>{t}</li>
+              ))}
+            </ul>
+          )}
+          <TrustBlock heading="Where your data lives" entitled={entitled} />
+          <AccountPanel />
+          <p className="pa-fine">
+            Questions? <AppLink to="/contact">Contact support</AppLink>
+          </p>
+        </PassportSection>
       </div>
     </Container>
   );

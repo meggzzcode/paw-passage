@@ -55,7 +55,7 @@ describe("navigation by access state", () => {
     );
   });
 
-  it("paid: Discover, Collections, My Passport, Saved; no purchase action anywhere in the header or footer", async () => {
+  it("paid: Discover, Collections, My Passport; no purchase action anywhere in the header or footer", async () => {
     ent.status = "entitled";
     await renderUi(
       <>
@@ -63,11 +63,7 @@ describe("navigation by access state", () => {
         <SiteFooter />
       </>,
     );
-    expect(labels()).toEqual(["Discover", "Collections", "My Passport", "Saved"]);
-    expect(within(nav()).getByRole("link", { name: "Saved" })).toHaveAttribute(
-      "href",
-      expect.stringContaining("tab=favorites"),
-    );
+    expect(labels()).toEqual(["Discover", "Collections", "My Passport"]);
     expect(screen.queryByRole("link", { name: "Get the Passport" })).toBeNull();
     expect(screen.queryByRole("link", { name: "Restore access" })).toBeNull();
     expect(screen.getByRole("button", { name: /More/ })).toBeInTheDocument();

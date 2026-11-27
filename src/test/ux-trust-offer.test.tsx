@@ -10,7 +10,7 @@ import {
 } from "@/lib/premium-summary";
 import { PhotoFilterExamples } from "@/components/site/PhotoFilterExamples";
 import { TrustBlock } from "@/components/passport/TrustBlock";
-import { StampShelf } from "@/components/passport/StampShelf";
+import { StampsAndMilestones } from "@/components/passport/PassportRewards";
 import { tagChips } from "@/components/passport/labels";
 import { adventures, collections as allCollections, stamps } from "@/passport/content";
 
@@ -122,15 +122,20 @@ describe("trust block", () => {
 });
 
 describe("stamps", () => {
-  it("shows earned stamps first and the rest collapsed as text", () => {
-    const { container } = render(<StampShelf earned={[stamps[0]!.slug]} />);
-    const d = container.querySelector("details")!;
-    expect(d.open).toBe(false);
-    expect(d.textContent).toContain("Stamps to discover");
-    expect(container.querySelectorAll("section > ul svg, section > ul li").length).toBeGreaterThan(
-      0,
+  it("shows earned stamps first, then the stamps still to earn, all in full colour", () => {
+    const { container } = render(
+      <StampsAndMilestones
+        earnedStamps={[stamps[0]!.slug]}
+        earnedMilestones={[1]}
+        collectionsComplete={0}
+        entitled
+      />,
     );
-    expect(screen.getByText(/1 stamp collected/)).toBeTruthy();
+    expect(container.querySelectorAll('svg[data-art="stamp"][data-state="earned"]')).toHaveLength(
+      1,
+    );
+    expect(container.querySelectorAll('svg[data-art="stamp"][data-state="next"]')).toHaveLength(1);
+    expect(screen.getByText(/1 of 12 collected/)).toBeTruthy();
   });
   it("never patronises slow, senior or apartment dogs", () => {
     for (const s of stamps)

@@ -37,3 +37,4 @@ obtained. Replace them when licensed photos are added: run `scripts/demo/render-
 ## Other photos on the site
 
 Guide photos are licensed from Unsplash (Unsplash License); see /editorial-standards. They are not part of this file's scope.
+Stamp and badge artwork: original SVG in this repo.

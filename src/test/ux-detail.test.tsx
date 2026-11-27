@@ -184,9 +184,9 @@ describe("completion", () => {
 describe("/unlock purchase clarity and entitled state", () => {
   it("free: two clear options, price once, no shipping, code form up top, honest disabled checkout", () => {
     render(<Unlock />);
-    expect(screen.getByRole("heading", { name: "Try your first adventure: free" })).toBeTruthy();
+    expect(screen.getByRole("heading", { name: "Your first adventure — free." })).toBeTruthy();
     expect(
-      screen.getByRole("heading", { name: /The complete Adventure Passport: \$19\.99 once/ }),
+      screen.getByRole("heading", { name: /The full Adventure Passport — \$19\.99 once/ }),
     ).toBeTruthy();
     const t = document.body.textContent ?? "";
     expect(t).toMatch(/nothing is shipped/i);
@@ -196,10 +196,13 @@ describe("/unlock purchase clarity and entitled state", () => {
     expect(btn).toBeDisabled();
     // The code form is reachable before the options, not at the bottom.
     const code = screen.getByTestId("code-section");
-    const free = screen.getByRole("heading", { name: "Try your first adventure: free" });
+    const free = screen.getByRole("heading", { name: "Your first adventure — free." });
     expect(code.compareDocumentPosition(free) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
     fireEvent.click(screen.getByText("Already have a code?", { selector: "summary" }));
     expect(screen.getByLabelText("Purchase code")).toBeTruthy();
+    // one form, one "Already have a code?" label (the summary), no second heading
+    expect(screen.getAllByText("Already have a code?")).toHaveLength(1);
+    expect(screen.getAllByLabelText("Purchase code")).toHaveLength(1);
   });
   it("entitled: no sales page, no Buy button, links to Discover, My Passport, restore and support", () => {
     ent.state = { ...ent.state, status: "entitled", signedIn: true };

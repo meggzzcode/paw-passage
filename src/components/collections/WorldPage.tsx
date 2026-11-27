@@ -49,6 +49,7 @@ export function WorldPage({ w }: { w: World }) {
       </ul>
       {!stats.unlocked && (
         <aside className="pa-panel co-invite" aria-labelledby="co-wi-h">
+          <p className="pa-kicker">Full Passport</p>
           <h3 className="pa-h" id="co-wi-h">
             Selected previews, and one adventure free
           </h3>

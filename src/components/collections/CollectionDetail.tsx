@@ -4,7 +4,6 @@ import { useEffect } from "react";
 import type { Collection } from "@/passport/content";
 import { AppLink } from "@/components/shell/AppLink";
 import { Button } from "@/components/shell/Button";
-import { PreviewCard } from "@/components/passport/PreviewCard";
 import { flow } from "@/components/passport/flow-events";
 import { AdventureRow, useAccessLibrary } from "@/components/passport/collections-shared";
 import { usePreviews } from "@/lib/usePreviews";
@@ -15,6 +14,7 @@ import { premiumPreviews } from "@/passport/preview-view";
 import { worldOf } from "@/passport/worlds";
 import { NarrowBar, narrow, useNarrow } from "./Narrow";
 import { Thumb } from "./parts";
+import { PreviewRow } from "./PreviewRow";
 import { BackToDirectory } from "./WorldPage";
 import { adventureWord, useCollectionStats } from "./stats";
 
@@ -80,9 +80,9 @@ function PublicCollection({ c }: { c: Collection }) {
           {shown.length === 0 ? (
             <p className="pa-fine">Nothing in these previews matches. Clear a choice above.</p>
           ) : (
-            <ul className="pa-grid pv-grid">
+            <ul className="co-clist">
               {shown.map((i) => (
-                <PreviewCard key={i.id} item={i} />
+                <PreviewRow key={i.id} item={i} accent={c.accent} />
               ))}
             </ul>
           )}
@@ -106,6 +106,7 @@ function PublicCollection({ c }: { c: Collection }) {
         </section>
       )}
       <aside className="pa-panel co-invite" aria-labelledby="cd-inv-h">
+        <p className="pa-kicker">Full Passport</p>
         <h2 className="pa-h" id="cd-inv-h">
           Your first adventure is free
         </h2>

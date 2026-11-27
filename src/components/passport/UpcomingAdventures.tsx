@@ -89,9 +89,9 @@ export function UpcomingAdventures({
 
   return (
     <section className="pa-panel" id="upcoming" aria-labelledby="up-h" ref={root}>
-      <h2 id="up-h" className="pa-h">
+      <h3 id="up-h" className="pa-h">
         Upcoming adventures
-      </h2>
+      </h3>
       {plans.length === 0 ? (
         <p className="pa-fine">
           Nothing planned yet. Use “Schedule adventure” on any adventure you've revealed.

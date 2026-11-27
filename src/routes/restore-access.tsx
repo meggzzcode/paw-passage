@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { AppLink } from "@/components/shell/AppLink";
 import { Container } from "@/components/shell/Container";
 import { AccessForm } from "@/components/passport/AccessForms";
 import { pageHead } from "@/lib/seo";
@@ -21,7 +22,19 @@ export const Route = createFileRoute("/restore-access")({
         </p>
         <AccessForm kind="restore" />
         <p className="pa-fine">
-          Haven't bought it? Your free adventure works without any code or account.
+          Can't find your code? It was emailed to you by our checkout provider when you paid. Still
+          stuck?{" "}
+          <AppLink to="/contact" className="pa-linkbtn">
+            Contact support
+          </AppLink>{" "}
+          with the email you bought with (never your code).
+        </p>
+        <p className="pa-fine">
+          Haven't bought it? Your first adventure is free and needs no code or account.{" "}
+          <AppLink to="/unlock" className="pa-linkbtn">
+            See the Passport
+          </AppLink>
+          .
         </p>
       </div>
     </Container>

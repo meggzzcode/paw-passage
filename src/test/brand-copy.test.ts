@@ -5,7 +5,7 @@ import { existsSync, readdirSync, readFileSync, statSync } from "node:fs";
 import { join } from "node:path";
 import { describe, expect, it } from "vitest";
 import { BRAND, LIBRARY_CLAIM_MIN, LIBRARY_CLAIM_WORDS, SIGNATURE_PHRASES } from "@/config/brand";
-import { flags, homePromo, ONE_TIME_LINE, KEEP_LINE } from "@/config/commercial";
+import { flags, homePromo, FULL_OPTION_LABEL, ONE_TIME_LINE, KEEP_LINE } from "@/config/commercial";
 import { site } from "@/config/site";
 
 const read = (f: string) => readFileSync(f, "utf8");
@@ -34,9 +34,13 @@ describe("approved brand copy", () => {
       "A passport full of little adventures for you and your dog.",
     );
     expect(BRAND.hero.support).toBe(
-      "Discover 100+ fun, creative and memorable things to do together, personalized to your dog and your lifestyle.",
+      "100+ personalized ideas for more fun, more time together and more memories.",
     );
     expect(BRAND.hero.primaryCta).toBe("Find our first adventure");
+    expect(BRAND.hero.primaryCtaFree).toBe("Find our first adventure — free.");
+    expect(BRAND.freeOption).toBe("Your first adventure — free.");
+    expect(FULL_OPTION_LABEL).toBe("The full Adventure Passport — $19.99 once.");
+    expect(BRAND.testersHeading).toBe("A little love from our early testers.");
     expect(BRAND.hero.ctaNote).toBe("Your first adventure is free.");
     expect(ONE_TIME_LINE).toBe("One payment of $19.99. Yours to keep.");
     expect(BRAND.discoverHeadline).toBe("Adventures picked for your dog. Memories made by you.");
@@ -68,9 +72,10 @@ describe("approved brand copy", () => {
     expect(read("src/components/journal/JournalIndex.tsx")).toContain("BRAND.journalHeadline");
     expect(read("src/components/shell/SiteFooter.tsx")).toContain("BRAND.lifetime");
     expect(read("src/components/printables/PrintableSheet.tsx")).toContain("BRAND.lifetime");
-    expect(read("src/routes/index.tsx")).toContain("BRAND.discoverHeadline");
     expect(read("src/routes/index.tsx")).toContain("BRAND.keepsakeHeadline");
-    expect(read("src/routes/index.tsx")).toContain("BRAND.mysteryHeadline");
+    expect(read("src/routes/index.tsx")).toContain("BRAND.freeOption");
+    expect(read("src/routes/unlock.tsx")).toContain("BRAND.freeOption");
+    expect(read("src/config/commercial.ts")).toContain("BRAND.fullOptionName");
     expect(site.tagline).toContain(BRAND.lifetime.replace(".", "").toLowerCase());
     const manifest = JSON.parse(read("public/manifest.webmanifest")) as { description: string };
     expect(manifest.description.startsWith(BRAND.lifetime)).toBe(true);
@@ -97,8 +102,6 @@ describe("approved brand copy", () => {
       .map((f) => f.replace(/\\/g, "/"));
     expect(hits).toEqual(["src/config/brand.ts"]);
     expect(read("src/routes/index.tsx")).not.toMatch(/passportHeadline|BRAND\.collect/);
-    expect(read("src/routes/index.tsx")).toContain("BRAND.marquee");
-    expect(BRAND.marquee).toContain("Collect adventures, not just things ✿");
     expect(read("src/config/commercial.ts")).not.toMatch(/BRAND\.collect|passportHeadline/);
   });
 

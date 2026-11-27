@@ -100,10 +100,9 @@ describe("/unlock: refund terms and the full demonstration adventure", () => {
       notACopy(demoFiles(PREMIUM_DIR, ".json"));
     },
   );
-  it("the homepage mounts it collapsed", () => {
+  it("the shorter homepage no longer repeats the full demonstration adventure", () => {
     const home = readFileSync("src/routes/index.tsx", "utf8");
-    expect(home).toContain("<DemoAdventure />");
-    expect(home).not.toContain("<DemoAdventure open");
+    expect(home).not.toContain("<DemoAdventure");
   });
   it("keeps the price single-sourced", () => {
     const src = [

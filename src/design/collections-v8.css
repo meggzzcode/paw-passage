@@ -18,14 +18,18 @@
   gap: 0.7rem;
   align-content: start;
 }
-.co-two {
-  display: grid;
-  gap: 1.5rem;
+.co-browse {
+  justify-items: start;
 }
-@media (min-width: 800px) {
-  .co-two {
-    grid-template-columns: 1fr 1fr;
-  }
+.co-browse #all-collections {
+  width: 100%;
+}
+.co-prow .co-crow-main {
+  flex: 1;
+}
+.co-prow-save {
+  flex: none;
+  min-height: 44px;
 }
 .co-back,
 .co-crumbs {

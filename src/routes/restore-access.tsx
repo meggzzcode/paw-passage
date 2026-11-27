@@ -8,7 +8,7 @@ export const Route = createFileRoute("/restore-access")({
   head: () =>
     pageHead({
       title: "Restore access",
-      description: "Already bought the Adventure Passport? Restore it on a new device.",
+      description: "Already have the Adventure Passport? Restore access on a new device.",
       path: "/restore-access",
       noindex: true,
     }),

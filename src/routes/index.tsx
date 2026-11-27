@@ -37,7 +37,7 @@ export const Route = createFileRoute("/")({
   head: () =>
     pageHead({
       title: `Dog Adventures, Free to Start | ${site.name}`,
-      description: `${BRAND.lifetime} One free adventure picked for your dog, then a large library for ${price}, once. No subscription.`,
+      description: `Cozy days at home to little outings: a free first adventure for your dog, then the full Adventure Passport for ${price}, once. No subscription.`,
       path: "/",
     }),
   component: Home,
@@ -72,11 +72,11 @@ const HOME_FAQ_IDS = [
 const MOOD_BG = ["butter", "powder", "strawberry", "sage"] as const;
 
 const STEPS = [
-  { h: "Discover", p: "Answer a few taps about your dog and we pick something that fits." },
-  { h: "Adventure", p: "Reveal it, go and do it together, and stop whenever your dog wants to." },
+  { h: "Discover", p: "Tell us a little about your dog and find an adventure that fits." },
+  { h: "Adventure", p: "Reveal your adventure and go make a little memory." },
   {
     h: "Collect",
-    p: "Your first stamp is collected free. Personalized photo keepsakes belong to the full Passport.",
+    p: "Earn Passport stamps and create personalized keepsakes with the full Passport. Your first stamp is free.",
   },
 ];
 
@@ -99,12 +99,11 @@ function SalesHome() {
                 {homePromo.titleLead} <em>{homePromo.titleEm}</em> {homePromo.titleTail}
               </h1>
               <p className="pp-lede">{homePromo.lede}</p>
-              <p className="pp-fine">{homePromo.productLine}</p>
               <p className="pp-cta-row">
                 <Button to="/discover">{homePromo.primaryCta}</Button>
               </p>
               <p className="pp-offer-line">
-                {ONE_TIME_LINE} <span>{KEEP_LINE}</span>
+                {homePromo.productLine} {ONE_TIME_LINE} <span>{KEEP_LINE}</span>
               </p>
             </div>
             <div>
@@ -131,11 +130,12 @@ function SalesHome() {
       <section className="pp-section pp-library" aria-labelledby="variety-h">
         <Container>
           <SectionHeading
-            eyebrow="A few places to start"
+            eyebrow="A taste of the possibilities"
             title="Something for every kind of day"
             id="variety-h"
           >
-            {variety}
+            Cozy days at home, little doggy dates, playful moments, outdoor discoveries and quiet
+            little adventures. {variety}
           </SectionHeading>
           <ul className="pp-moods pp-plainlist" aria-label="Collections">
             {WORLDS.map((w, i) => (
@@ -172,9 +172,9 @@ function SalesHome() {
           <div className="pp-keep-grid">
             <div>
               <SectionHeading eyebrow="Keepsakes" title={BRAND.keepsakeHeadline} id="keepsake-h">
-                Every adventure earns a stamp for your passport. The full Passport also turns a
-                favorite day into a postcard, magazine cover or trading card from your own dog's
-                photo, drawn on your device and never uploaded.
+                Every adventure earns a stamp for your passport. The full Passport adds personalized
+                keepsakes: a postcard, magazine cover or trading card from your own dog's photo,
+                drawn on your device and never uploaded.
               </SectionHeading>
             </div>
             <PassportPreview />
@@ -198,7 +198,7 @@ function SalesHome() {
           <div className="co-compare mt-6">
             <div className="pp-card pp-pad">
               <h3>{BRAND.freeOption}</h3>
-              <p>One complete adventure picked for your dog, with a stamp and no card needed.</p>
+              <p>One complete adventure picked for your dog, with a stamp. No account or card.</p>
               <p className="mt-4">
                 <Button to="/discover">{homePromo.primaryCta}</Button>
               </p>
@@ -208,14 +208,14 @@ function SalesHome() {
               <p className="pp-price-line">
                 <strong>{price}</strong> <span>{pricing}</span>
               </p>
-              <p>The whole library, your own keepsakes and your own collections.</p>
+              <p>The full library, personalized keepsakes and your own collections.</p>
               <p className="mt-4">
                 <AppLink
                   to="/unlock"
                   className="pp-btn pp-btn-secondary"
                   onClick={() => track("purchase_cta_clicked", { where: "home-invite" })}
                 >
-                  Get the Passport
+                  Get the Adventure Passport
                 </AppLink>
               </p>
             </div>

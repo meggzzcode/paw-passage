@@ -66,17 +66,18 @@ describe("/unlock: refund terms and the full demonstration adventure", () => {
     expect(all).toMatch(/progress stays yours/);
     expect(all).not.toMatch(/\b\d+[- ]day|money.back guarantee|no questions/i);
   });
-  it("shows one fully visible adventure, open, labeled, with steps, twist and safety", async () => {
+  it("is one focused purchase page: benefits, one comparison, one primary action, no demo adventure", async () => {
     const { container } = await renderUnlock(false);
-    const d = container.querySelector('[data-testid="demo-adventure"]') as HTMLDetailsElement;
-    expect(d.open).toBe(true);
-    expect(container.textContent).toContain(DEMO_LABEL);
-    expect(DEMO_LABEL).toBe("A full adventure, shown in full");
-    expect(d.textContent).toContain(DEMO_ADVENTURE.twist);
-    for (const s of DEMO_ADVENTURE.steps) expect(d.textContent).toContain(s);
-    for (const s of DEMO_ADVENTURE.safety) expect(d.textContent).toContain(s);
-    expect(DEMO_ADVENTURE.steps.length).toBeGreaterThanOrEqual(5);
-    expect(DEMO_ADVENTURE.safety.length).toBeGreaterThanOrEqual(3);
+    expect(container.querySelector('[data-testid="demo-adventure"]')).toBeNull();
+    expect(container.querySelector('[data-testid="benefits"]')).toBeTruthy();
+    expect(container.querySelectorAll('[data-testid="compare"]').length).toBe(1);
+    expect(container.querySelectorAll('[data-testid="code-section"]').length).toBe(1);
+    expect(container.textContent).toMatch(/Supported progress sync across devices/);
+    expect(container.textContent).not.toMatch(/\b(tier|membership)\b/i);
+    const primary = container
+      .querySelector('[data-testid="buy-panel"]')!
+      .querySelectorAll("button.pp-btn-primary, a.pp-btn-primary");
+    expect(primary.length).toBe(1);
   });
   const demoFiles = (dir: string, ext: string) =>
     readdirSync(dir)
@@ -185,8 +186,8 @@ describe("keepsake claims: free means examples only", () => {
   });
   it("the unlock page lists the matching style as an example for free and creation for paid", () => {
     const u = readFileSync("src/routes/unlock.tsx", "utf8").replace(/\s+/g, " ");
-    expect(u).toMatch(/matching keepsake style shown as an example/);
-    expect(u).toMatch(/Personalized keepsakes: make your own from your dog's photo/);
+    expect(u).toMatch(/Public previews/);
+    expect(u).toMatch(/Personalized keepsakes/);
   });
   it("the demo stepper says making your own is part of the full Passport", async () => {
     const { DEMO_STEPS } = await import("@/config/commercial");

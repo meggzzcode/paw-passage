@@ -93,8 +93,8 @@ describe("single-choice screens move on by themselves", () => {
     expect(counter()).toBe("Question 2 of 4");
     expect(heading()).toBe("What's their usual vibe?");
     pickChip("Lively");
-    expect(heading()).toBe("What are we in the mood for?");
-    pickChip("A little outdoor adventure");
+    expect(heading()).toBe("What feels right today?");
+    pickChip("A little outing");
     expect(heading()).toBe("Anything we should keep in mind?");
     // the last screen is multi-select: nothing moves on until the explicit button
     pickChip("Noise");
@@ -308,12 +308,24 @@ describe("answers map onto the existing profile", () => {
   it("children joining is an owner preference on the same screen; mood maps onto where and enjoy", () => {
     expect(applyAnswers({ kids: true }, ["keep"], emptySave()).owner.kids).toBe(true);
     expect(applyAnswers({ mood: "cozy" }, ["mood"], emptySave()).owner.where).toBe("home");
-    expect(applyAnswers({ mood: "outdoor" }, ["mood"], emptySave()).owner.where).toBe("nearby");
+    expect(applyAnswers({ mood: "outing" }, ["mood"], emptySave()).owner.where).toBe("nearby");
+    const quiet = applyAnswers({ mood: "quiet" }, ["mood"], emptySave());
+    expect(quiet.owner.where).toBe("anywhere");
+    expect(quiet.owner.quiet).toBe(true); // the existing noise-quiet filter, no new field
+    expect(quiet.dog.enjoy).toBeUndefined();
     const play = applyAnswers({ mood: "playful" }, ["mood"], emptySave());
     expect(play.owner.where).toBe("anywhere");
     expect(play.dog.enjoy).toEqual(["games"]);
     expect(applyAnswers({ mood: "surprise" }, ["mood"], emptySave()).dog.enjoy).toBeUndefined();
     expect(applyAnswers({}, ["mood"], emptySave()).owner.where).toBeUndefined(); // skipped = unknown
+    // moving off "quiet" clears only a quiet that choice set; a quiet saved with another where stays
+    const wasQuiet = { ...emptySave(), owner: { data: { where: "anywhere", quiet: true }, at: 1 } };
+    const moved = applyAnswers({ mood: "cozy" }, ["mood"], wasQuiet as never);
+    expect(Object.hasOwn(moved.owner, "quiet") && moved.owner.quiet === undefined).toBe(true);
+    const keeps = { ...emptySave(), owner: { data: { where: "home", quiet: true }, at: 1 } };
+    expect(
+      Object.hasOwn(applyAnswers({ mood: "outing" }, ["mood"], keeps as never).owner, "quiet"),
+    ).toBe(false);
   });
 
   it("owner walking, steps and car map to ownerMobility, stepFree and transport", () => {
@@ -424,8 +436,8 @@ describe("Starting from a Journal context", () => {
     setProfile({ energy: "moderate" });
     await renderUi(<FreeStarter ctx="rainy-day" />);
     next(); // life stage; energy is saved, so the mood screen is next, with the preset pre-selected
-    const mood = screen.getByRole("group", { name: /mood/i });
-    expect(within(mood).getByRole("button", { name: "Cozy at home" })).toHaveAttribute(
+    const mood = screen.getByRole("group", { name: /feels right today/i });
+    expect(within(mood).getByRole("button", { name: "A cozy day at home" })).toHaveAttribute(
       "aria-pressed",
       "true",
     );
@@ -451,7 +463,7 @@ describe("keepsake creation is paid", () => {
     expect(screen.queryByLabelText("About personalized keepsakes")).toBeNull();
     fireEvent.click(screen.getByRole("button", { name: "Scratch or tap to reveal." }));
     await screen.findByText("How it goes");
-    fireEvent.click(screen.getByRole("button", { name: "We did it" }));
+    fireEvent.click(screen.getByRole("button", { name: "Complete adventure" }));
     await screen.findByRole("heading", { name: "Another little memory made." });
     // one static example and one plain line, with no separate keepsake explainer to open
     expect(screen.queryByLabelText("About personalized keepsakes")).toBeNull();

@@ -24,6 +24,7 @@ import {
   LIFE_CHOICES,
   MIXED_STAGES,
   MOOD_OPTIONS,
+  whereOfMood,
   PERSONAL_STEPS,
   SPEND_OPTIONS,
   STEP_QUESTION,
@@ -54,8 +55,9 @@ const TILE_EMOJI: Record<string, string> = {
   Creative: "🎨",
   Relaxing: "🛋️",
   "A mix of ages": "🐾",
-  "Cozy at home": "🛋️",
-  "A little outdoor adventure": "🌳",
+  "A cozy day at home": "🛋️",
+  "A little outing": "🌳",
+  "Something quiet": "🤫",
   "Something playful": "🎾",
   "Surprise us": "🎁",
   "Mobility limits": "🐾",
@@ -383,7 +385,7 @@ export function IntroQuiz({
           onPick={(v) =>
             pick({
               mood: v,
-              where: v === "cozy" ? "home" : v === "outdoor" ? "nearby" : "anywhere",
+              where: whereOfMood(v),
             })
           }
         />

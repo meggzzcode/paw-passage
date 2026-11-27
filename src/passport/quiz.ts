@@ -16,8 +16,12 @@ import type { Adventure } from "./schema";
 
 export type LifeStage = NonNullable<DogProfile["lifeStage"]>;
 
-/** The adventure mood: it maps onto the existing where / enjoy answers. */
-export type Mood = "cozy" | "outdoor" | "playful" | "surprise";
+/**
+ * "What feels right today?": it maps onto the existing where / enjoy / quiet answers (no new engine field).
+ * cozy = at home; outing = nearby outdoors (walkable, no car); playful = anywhere, leaning on games;
+ * quiet = anywhere, noise-quiet adventures only; surprise = anywhere suitable.
+ */
+export type Mood = "cozy" | "outing" | "playful" | "quiet" | "surprise";
 
 export type QuizAnswers = {
   names?: string;
@@ -60,7 +64,7 @@ export const STEP_QUESTION: Record<StepId, string> = {
   names: "Who's coming on the adventure?",
   life: "Who is your little sidekick?",
   energy: "What's their usual vibe?",
-  mood: "What are we in the mood for?",
+  mood: "What feels right today?",
   enjoy: "What do they enjoy?",
   keep: "Anything we should keep in mind?",
   where: "Where would you like to go?",
@@ -85,9 +89,10 @@ export const LIFE_CHOICES: Opt<LifeStage | "mixed">[] = [
   { value: "mixed", label: "A mix of ages" },
 ];
 export const MOOD_OPTIONS: Opt<Mood>[] = [
-  { value: "cozy", label: "Cozy at home" },
-  { value: "outdoor", label: "A little outdoor adventure" },
+  { value: "cozy", label: "A cozy day at home" },
+  { value: "outing", label: "A little outing" },
   { value: "playful", label: "Something playful" },
+  { value: "quiet", label: "Something quiet" },
   { value: "surprise", label: "Surprise us" },
 ];
 export const ENERGY_OPTIONS: Opt<NonNullable<QuizAnswers["energy"]>>[] = [
@@ -155,16 +160,22 @@ export const CAR_OPTIONS: Opt<"yes" | "no">[] = [
 
 type Loose<T> = { [K in keyof T]?: T[K] | undefined };
 
-/** The mood a where/enjoy pair stands for (undefined when no where answer is held). */
+/** The mood a where/enjoy/quiet triple stands for (undefined when no where answer is held). */
 export function moodOf(
   where: QuizAnswers["where"],
   enjoy: readonly Enjoy[] | undefined,
+  quiet?: boolean,
 ): Mood | undefined {
   if (where === "home") return "cozy";
-  if (where === "nearby") return "outdoor";
-  if (where === "anywhere") return enjoy?.includes("games") ? "playful" : "surprise";
+  if (where === "nearby") return "outing";
+  if (where === "anywhere")
+    return quiet ? "quiet" : enjoy?.includes("games") ? "playful" : "surprise";
   return undefined;
 }
+
+/** The `where` answer a mood writes. */
+export const whereOfMood = (m: Mood): NonNullable<QuizAnswers["where"]> =>
+  m === "cozy" ? "home" : m === "outing" ? "nearby" : "anywhere";
 
 /** The quiz answers this save already holds (undefined fields are unanswered). */
 export function answersFromSave(save: Save): QuizAnswers {
@@ -183,7 +194,7 @@ export function answersFromSave(save: Save): QuizAnswers {
   add("dogs", d.dogs === "nervous");
   const out: Loose<QuizAnswers> = {
     names: d.name,
-    mood: moodOf(o.where, d.enjoy),
+    mood: moodOf(o.where, d.enjoy, o.quiet),
     lifeStages: stages,
     energy: d.energyVariable ? "variable" : d.energy,
     enjoy: d.enjoy,
@@ -275,7 +286,11 @@ export function applyAnswers(
   if (has("mood")) {
     // The mood maps onto the existing where / enjoy answers. "Playful" leans on games, never overriding other interests.
     const m = a.mood;
-    owner.where = m === "cozy" ? "home" : m === "outdoor" ? "nearby" : m ? "anywhere" : undefined;
+    owner.where = m ? whereOfMood(m) : undefined;
+    // "Something quiet" is the existing noise-quiet filter. Moving off it clears only a quiet it set itself.
+    const owned = moodOf(save.owner.data.where, cur.enjoy, save.owner.data.quiet) === "quiet";
+    if (m === "quiet") owner.quiet = true;
+    else if (owned && !has("extra")) owner.quiet = undefined;
     if (m === "playful" && !has("enjoy") && !(a.enjoy ?? cur.enjoy)?.includes("games"))
       dog.enjoy = ENJOY.filter((e) => e === "games" || (a.enjoy ?? cur.enjoy)?.includes(e));
   }
@@ -374,6 +389,11 @@ export function quizAnswersFromCtx(a: CtxAnswers): Partial<QuizAnswers> {
     out.where = a.where;
     const m = moodOf(a.where, a.enjoy);
     if (m) out.mood = m;
+  }
+  if (a.mood) {
+    out.mood = a.mood;
+    out.where = whereOfMood(a.mood);
+    if (a.mood === "quiet") out.quiet = true;
   }
   if (a.time) out.time = a.time;
   if (a.spend) out.spend = a.spend;

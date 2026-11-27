@@ -1,16 +1,15 @@
 import { useEffect, useId, useRef, useState, type ReactNode } from "react";
 import { RevealSurface, wasRevealed } from "./RevealSurface";
+import { SAVE_LABEL, SAVED_LABEL, useSaveForLater } from "./SaveForLater";
 import { ScheduleAdventure } from "./ScheduleAdventure";
 import type { Adventure } from "@/passport/schema";
 import {
   completeAdventure,
   favorite,
   repeatAdventure,
-  saveForLater,
   setFeedback,
   undoCompletion,
   unfavorite,
-  unsaveForLater,
 } from "@/passport/local-store";
 import { has } from "@/passport/progress";
 import { track } from "@/passport/events";
@@ -67,8 +66,7 @@ export function MysteryCard({
   onReveal: () => void;
   onAnother?: (() => void) | undefined;
 }) {
-  const { save } = usePassport();
-  const later = has(save.saved, a.id);
+  const { later, message, toggle } = useSaveForLater(a.id, true);
   const notes = [
     ...suitabilityNotes(a),
     ...logistics(a),
@@ -103,15 +101,13 @@ export function MysteryCard({
             Try another
           </button>
         )}
-        <button
-          type="button"
-          className="pp-btn pp-btn-ghost"
-          aria-pressed={later}
-          onClick={() => (later ? unsaveForLater(a.id) : saveForLater(a.id))}
-        >
-          {later ? "Saved for later ✓" : "Save for later"}
+        <button type="button" className="pp-btn pp-btn-ghost" aria-pressed={later} onClick={toggle}>
+          {later ? SAVED_LABEL : SAVE_LABEL}
         </button>
       </div>
+      <p className="pd-status" role="status">
+        {message}
+      </p>
     </article>
   );
 }
@@ -196,7 +192,7 @@ export function AdventureCard({
   const { save } = usePassport();
   const done = has(save.done, a.id);
   const fav = has(save.favorites, a.id);
-  const later = has(save.saved, a.id);
+  const { later, message: savedNote, toggle: toggleSaved } = useSaveForLater(a.id);
   const repeats = save.repeats[a.id] ?? 0;
   const feedback = save.feedback[a.id]?.value;
   const [note, setNote] = useState("");
@@ -245,14 +241,11 @@ export function AdventureCard({
       className="pp-btn pp-btn-ghost"
       aria-pressed={later}
       onClick={() => {
-        if (later) unsaveForLater(a.id);
-        else {
-          saveForLater(a.id);
-          track("adventure_saved", { adventure: a.id });
-        }
+        setNote("");
+        toggleSaved();
       }}
     >
-      {later ? "Saved for later ✓" : "Save for later"}
+      {later ? SAVED_LABEL : SAVE_LABEL}
     </button>
   );
 
@@ -349,7 +342,7 @@ export function AdventureCard({
       {!done && (
         <div className="pa-actions">
           <button type="button" className="pp-btn pp-btn-primary" onClick={complete}>
-            We did it
+            Complete adventure
           </button>
           {saveButton}
           {onAnother && (
@@ -373,7 +366,7 @@ export function AdventureCard({
       )}
       <ScheduleAdventure a={a} />
       <p className="pd-status" role="status">
-        {note}
+        {note || savedNote}
       </p>
 
       {done && <CompletionPanel a={a} dogName={dogName} focus={justDone} />}

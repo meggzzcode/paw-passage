@@ -736,11 +736,27 @@ export type Earned = {
   next: number | null; // next milestone not yet reached
 };
 
+/** Every count milestone in content/achievements.yml (the eighth reward is Collection Complete). */
+export const ALL_MILESTONES = [1, 5, 10, 20, 30, 50, 75] as const;
+/** Smallest curated collection that can be "completed" (fewer adventures would be too easy to finish). */
+export const MIN_COLLECTION_SIZE = 3;
+/** Memory Maker: a saved memory note on this many different completed adventures. */
+export const MEMORY_MAKER_COUNT = 3;
+
 /** Milestone thresholds are capped to the delivered library size so every one is reachable. */
 export function thresholds(librarySize: number): number[] {
-  return [1, 5, 10, 20, 30, 50, 75].filter((t) => t <= librarySize);
+  return ALL_MILESTONES.filter((t) => t <= librarySize);
 }
 
+/**
+ * Everything earned is DERIVED from the sets, never stored, so it cannot be double-awarded and a stamp keeps the same
+ * id forever. Only completing an adventure (the `done` set) counts: browsing, revealing, saving, favoriting and adding
+ * to a collection never do, and a repeat (`repeats`) never adds to the unique count.
+ *
+ * Stamps: those named on the cards you completed (the original rule, kept so nothing earned is ever taken away), plus
+ * two that are awarded automatically as the passport says: Memory Maker (memory notes on three different completed
+ * adventures) and Adventure Legend (every count milestone, 75 included, and at least one Collection Complete).
+ */
 export function achievements(save: Save, lib: Library, collections: Collections): Earned {
   const doneIds = new Set(members(save.done));
   const known = new Set(lib.map((a) => a.id));
@@ -749,8 +765,18 @@ export function achievements(save: Save, lib: Library, collections: Collections)
   const stamps = new Set<string>();
   for (const a of lib) if (doneIds.has(a.id)) for (const s of a.stamps) stamps.add(s);
   const collectionsComplete = Object.entries(collections)
-    .filter(([, ids]) => ids.length >= 3 && ids.every((id) => doneIds.has(id)))
+    .filter(([, ids]) => ids.length >= MIN_COLLECTION_SIZE && ids.every((id) => doneIds.has(id)))
     .map(([slug]) => slug);
+  const noted = Object.entries(save.memories).filter(
+    ([id, m]) => doneIds.has(id) && m.text.trim().length > 0,
+  ).length;
+  if (noted >= MEMORY_MAKER_COUNT) stamps.add("memory-maker");
+  if (
+    th.length === ALL_MILESTONES.length &&
+    th.every((t) => count >= t) &&
+    collectionsComplete.length > 0
+  )
+    stamps.add("adventure-legend");
   return {
     count,
     milestones: th.filter((t) => count >= t),

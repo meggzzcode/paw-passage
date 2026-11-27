@@ -84,7 +84,7 @@ export function AccessCheckFailed() {
     >
       <Container>
         <h1 id="home-h1" className="pp-h1">
-          We couldn't confirm your access just now. Try again.
+          Having a little trouble opening your Passport. Let's try again.
         </h1>
         <p className="pp-cta-row">
           <button type="button" className="pp-btn pp-btn-primary" onClick={retry}>

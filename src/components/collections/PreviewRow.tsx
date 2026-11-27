@@ -39,7 +39,7 @@ export function PreviewRow({ item, accent }: { item: PreviewItem; accent: Collec
           }
         }}
       >
-        {saved ? "Saved ✓" : "Save"}
+        {saved ? "Saved for later ✓" : "Save for later"}
       </button>
     </li>
   );

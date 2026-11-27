@@ -50,6 +50,8 @@ const show = (mode: DiscoverMode = "made") => {
     fireEvent.click(screen.getByText("More ways to find an adventure"));
   return r;
 };
+/** Today's advanced filters and the dog/household details sit behind "More preferences". */
+const openPrefs = () => fireEvent.click(screen.getByText("More preferences"));
 const panelCards = () => within(screen.getByRole("tabpanel")).getAllByRole("article");
 
 function ctxHistory(filters: SessionFilters = {}) {
@@ -74,17 +76,18 @@ describe("discover: onboarding and browsing", () => {
     show("browse");
     expect(panelCards().length).toBeGreaterThan(0);
     expect(screen.getByRole("heading", { level: 1, name: "What shall we do today?" })).toBeTruthy();
-    const today = screen.getByTestId("today");
-    expect(within(today).getByRole("heading", { name: "A good place to start" })).toBeTruthy();
-    expect(screen.queryByRole("complementary", { name: "Personalize" })).toBeNull();
-    // A quiet, optional invitation, not a questionnaire.
-    fireEvent.click(within(today).getByRole("button", { name: "Personalize" }));
+    expect(screen.getByRole("group", { name: "Where are we today?" })).toBeTruthy();
+    expect(screen.getByRole("button", { name: "Find our adventure" })).toBeTruthy();
+    // Dog and household details are optional and tucked away, not a questionnaire.
+    openPrefs();
+    fireEvent.click(screen.getByRole("button", { name: "Our dog and household details" }));
     expect(screen.getByRole("heading", { name: "Your dog and you" })).toBeTruthy();
   });
 
   it("saves quick answers as you go and keeps 'Not sure' as unknown", () => {
     show("browse");
-    fireEvent.click(screen.getByRole("button", { name: "Preferences" }));
+    openPrefs();
+    fireEvent.click(screen.getByRole("button", { name: "Our dog and household details" }));
     fireEvent.change(screen.getByLabelText(/dog's name/i), { target: { value: "Biscuit" } });
     const people = screen.getByRole("group", { name: /unfamiliar people/i });
     fireEvent.click(within(people).getByRole("button", { name: "Nervous" }));
@@ -137,30 +140,36 @@ describe("discover: held questions", () => {
 describe("discover: filters", () => {
   it("combines filters and matches the engine's count", () => {
     show("browse");
+    openPrefs();
     const all = ctxHistory();
     fireEvent.click(
-      within(screen.getByRole("group", { name: /budget/i })).getByRole("button", { name: "Free" }),
+      within(screen.getByRole("group", { name: /budget/i })).getByRole("button", {
+        name: "Up to $15",
+      }),
     );
     fireEvent.click(
       within(screen.getByRole("group", { name: /indoors or outdoors/i })).getByRole("button", {
         name: "Indoors",
       }),
     );
-    const combined = ctxHistory({ budget: 0, setting: "indoor" });
+    const combined = ctxHistory({ budget: 15, setting: "indoor" });
     const n = combined.ok ? combined.ranked.length : 0;
     const total = all.ok ? all.ranked.length : 0;
     expect(n).toBeLessThanOrEqual(total);
-    expect(screen.getByText(/Showing: .*free/i)).toBeInTheDocument();
+    expect(screen.getByText(/Showing: .*\$15/i)).toBeInTheDocument();
     fireEvent.click(screen.getByRole("button", { name: "Reset filters" }));
     expect(screen.queryByText(/Showing:/)).toBeNull();
   });
 
   it("offers More filters and saves the current filters as a smart collection", () => {
     show("browse");
+    openPrefs();
     fireEvent.click(screen.getByRole("button", { name: "More filters" }));
     expect(screen.getByRole("group", { name: /supplies i have/i })).toBeInTheDocument();
     fireEvent.click(
-      within(screen.getByRole("group", { name: /^budget/i })).getByRole("button", { name: "Free" }),
+      within(screen.getByRole("group", { name: /^budget/i })).getByRole("button", {
+        name: "Up to $15",
+      }),
     );
     fireEvent.click(screen.getByRole("button", { name: /save these filters as a smart/i }));
     fireEvent.change(screen.getByLabelText(/name this smart collection/i), {
@@ -169,7 +178,7 @@ describe("discover: filters", () => {
     fireEvent.click(screen.getByRole("button", { name: "Save collection" }));
     const saved = listCollections(getSave());
     expect(saved).toHaveLength(1);
-    expect(saved[0]).toMatchObject({ kind: "smart", name: "Free fun", filters: { budget: 0 } });
+    expect(saved[0]).toMatchObject({ kind: "smart", name: "Free fun", filters: { budget: 15 } });
   });
 });
 
@@ -252,15 +261,13 @@ describe("discover: completion and cards", () => {
     show("browse");
     const first = panelCards()[0]!;
     const title = within(first).getAllByRole("heading")[0]!.textContent!;
-    expect(within(first).queryByRole("button", { name: "Make a photo keepsake" })).toBeNull();
-    fireEvent.click(within(first).getByRole("button", { name: "We did it" }));
+    expect(within(first).queryByRole("button", { name: "Create a keepsake" })).toBeNull();
+    fireEvent.click(within(first).getByRole("button", { name: "Complete adventure" }));
     expect(getSave().done.added[library.find((a) => a.title === title)!.id]).toBeTruthy();
     expect(
       within(first).getByRole("heading", { name: "Another little memory made." }),
     ).toBeTruthy();
-    expect(
-      within(first).getByRole("button", { name: "Make a photo keepsake" }),
-    ).toBeInTheDocument();
+    expect(within(first).getByRole("button", { name: "Create a keepsake" })).toBeInTheDocument();
     // A paying customer is never sold the Passport again.
     expect(within(first).queryByTestId("purchase-invite")).toBeNull();
     expect(screen.getByText(new RegExp(`^1 of ${library.length} adventures`))).toBeTruthy();
@@ -297,7 +304,7 @@ describe("discover: completion and cards", () => {
     expect(within(card).getByRole("list", { name: /safety and preparation/i })).toBeTruthy();
     expect(within(card).getByRole("heading", { name: "How it goes" })).toBeInTheDocument();
     expect(card.querySelector("ol.pa-steps")).not.toBeNull();
-    expect(within(card).getByRole("button", { name: "We did it" })).toBeInTheDocument();
+    expect(within(card).getByRole("button", { name: "Complete adventure" })).toBeInTheDocument();
     expect(within(card).getByRole("button", { name: /Save for later/ })).toBeInTheDocument();
     // Overlapping buttons are gone: no separate Liked, no loose Favorite or Save until More is opened.
     expect(within(card).queryByRole("button", { name: "Liked" })).toBeNull();

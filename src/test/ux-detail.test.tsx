@@ -65,16 +65,22 @@ describe("paid Discover", () => {
   beforeEach(() => {
     ent.state = { ...ent.state, status: "entitled", signedIn: true };
   });
-  it("leads with one suggestion and five clear actions; advanced browsing is collapsed", () => {
+  it("leads with today's choices and clear actions; advanced browsing is collapsed", () => {
     render(<Harness />);
     expect(screen.getByRole("heading", { level: 1, name: "What shall we do today?" })).toBeTruthy();
-    expect(within(screen.getByTestId("today")).getAllByRole("article")).toHaveLength(1);
-    for (const n of ["Surprise us", "Explore collections", "Saved", "Preferences"])
+    expect(screen.getByText("Find a little adventure that fits your day.")).toBeTruthy();
+    for (const n of [
+      "Find our adventure",
+      "Surprise us!",
+      "Collections",
+      "Saved",
+      "More preferences",
+    ])
       expect(screen.getByText(n)).toBeTruthy();
     // Collapsed by default: no tabs, no filter panel, no card list, no quick-way tiles.
     expect(screen.queryByRole("tablist")).toBeNull();
     expect(screen.queryByTestId("sc")).toBeNull();
-    expect(screen.getAllByRole("article")).toHaveLength(1);
+    expect(screen.queryAllByRole("article")).toHaveLength(0);
     const more = screen.getByText("More ways to find an adventure");
     fireEvent.click(more);
     expect(screen.getByRole("tablist")).toBeTruthy();
@@ -91,28 +97,33 @@ describe("paid Discover", () => {
   });
   it("Surprise us offers a mystery in place", () => {
     render(<Harness />);
-    fireEvent.click(screen.getByRole("button", { name: "Surprise us" }));
+    fireEvent.click(screen.getByRole("button", { name: "Surprise us!" }));
     expect(screen.getByLabelText("Mystery adventure")).toBeTruthy();
   });
-  it("opening the suggestion shows the full card and focuses its title", () => {
+  it("Find our adventure shows a small set; a result opens straight to the full card", () => {
     render(<Harness />);
-    fireEvent.click(screen.getByRole("button", { name: "Let's do this one" }));
-    const card = within(screen.getByTestId("today")).getByRole("article");
-    expect(document.activeElement).toBe(within(card).getAllByRole("heading")[0]);
+    fireEvent.click(screen.getByRole("button", { name: "Find our adventure" }));
+    const list = screen.getByTestId("today-matches");
+    expect(within(list).getAllByRole("article").length).toBeLessThanOrEqual(5);
+    fireEvent.click(within(list).getAllByRole("button", { name: "Let's do this one" })[0]!);
+    expect(within(list).getByRole("heading", { name: "Before you start" })).toBeTruthy();
   });
 });
 
 describe("paid completion focus", () => {
-  it("the suggestion stays put once done and focus moves to the celebration", () => {
+  it("an opened result stays put once done and focus moves to the celebration", () => {
     ent.state = { ...ent.state, status: "entitled", signedIn: true };
     render(<Harness />);
-    fireEvent.click(screen.getByRole("button", { name: "Let's do this one" }));
-    const title = within(screen.getByTestId("today")).getAllByRole("heading")[1]!.textContent;
-    fireEvent.click(screen.getByRole("button", { name: "We did it" }));
-    const today = screen.getByTestId("today");
-    expect(within(today).getAllByRole("heading")[1]!.textContent).toBe(title);
+    fireEvent.click(screen.getByRole("button", { name: "Find our adventure" }));
+    fireEvent.click(screen.getAllByRole("button", { name: "Let's do this one" })[0]!);
+    const list = screen.getByTestId("today-matches");
+    const title = within(list).getAllByRole("listitem")[0]!.querySelector("h2, h3")!.textContent;
+    fireEvent.click(within(list).getByRole("button", { name: "Complete adventure" }));
+    expect(within(list).getAllByRole("listitem")[0]!.querySelector("h2, h3")!.textContent).toBe(
+      title,
+    );
     expect(document.activeElement).toBe(
-      within(today).getByRole("heading", { name: "Another little memory made." }),
+      within(list).getByRole("heading", { name: "Another little memory made." }),
     );
   });
 });
@@ -134,7 +145,7 @@ describe("adventure detail hierarchy", () => {
       expect(d.open).toBe(false);
     }
     expect(container.querySelector("ol")).not.toBeNull();
-    expect(screen.getByRole("button", { name: "We did it" })).toBeTruthy();
+    expect(screen.getByRole("button", { name: "Complete adventure" })).toBeTruthy();
     expect(screen.getByRole("button", { name: /Save for later/ })).toBeTruthy();
     // plain language: no internal classification
     expect(container.textContent).not.toMatch(/activity type|keepsake family|classification/i);
@@ -144,7 +155,7 @@ describe("adventure detail hierarchy", () => {
 describe("completion", () => {
   it("free: memory made, first stamp, one example, one invitation, no upload, progress help folded", () => {
     const { container } = render(<AdventureCard a={A} />);
-    fireEvent.click(screen.getByRole("button", { name: "We did it" }));
+    fireEvent.click(screen.getByRole("button", { name: "Complete adventure" }));
     const heading = screen.getByRole("heading", { name: "Another little memory made." });
     expect(document.activeElement).toBe(heading);
     const panel = screen.getByTestId("completion");
@@ -164,12 +175,12 @@ describe("completion", () => {
   it("paid: celebrates and offers the keepsake maker, never sells again", () => {
     ent.state = { ...ent.state, status: "entitled", signedIn: true };
     render(<AdventureCard a={A} />);
-    fireEvent.click(screen.getByRole("button", { name: "We did it" }));
+    fireEvent.click(screen.getByRole("button", { name: "Complete adventure" }));
     const panel = screen.getByTestId("completion");
     expect(
       within(panel).getByRole("heading", { name: "Another little memory made." }),
     ).toBeTruthy();
-    expect(within(panel).getByRole("button", { name: "Make a photo keepsake" })).toBeTruthy();
+    expect(within(panel).getByRole("button", { name: "Create a keepsake" })).toBeTruthy();
     expect(screen.queryByTestId("purchase-invite")).toBeNull();
     expect(panel.textContent).not.toMatch(/\$19\.99|Passport\./);
   });

@@ -34,7 +34,7 @@ describe("approved brand copy", () => {
       "A passport full of little adventures for you and your dog.",
     );
     expect(BRAND.hero.support).toBe(
-      "100+ personalized ideas for more fun, more time together and more memories.",
+      "From cozy days at home to little outings and big adventures, discover 100+ personalized activities that fit your day and your dog.",
     );
     expect(BRAND.hero.primaryCta).toBe("Find our first adventure");
     expect(BRAND.hero.primaryCtaFree).toBe("Find our first adventure — free.");
@@ -43,7 +43,7 @@ describe("approved brand copy", () => {
     expect(BRAND.testersHeading).toBe("A little love from our early testers.");
     expect(BRAND.hero.ctaNote).toBe("Your first adventure is free.");
     expect(ONE_TIME_LINE).toBe("One payment of $19.99. Yours to keep.");
-    expect(BRAND.discoverHeadline).toBe("Adventures picked for your dog. Memories made by you.");
+    expect(BRAND.discoverHeadline).toBe("What shall we do today?");
     expect(BRAND.unlockHeadline).toBe(
       "One passport. Over a hundred adventures. Endless little memories.",
     );

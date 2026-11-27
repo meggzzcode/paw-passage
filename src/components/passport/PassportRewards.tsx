@@ -79,7 +79,19 @@ export function useRewardItems({
       a.kind === "collection-complete"
         ? collectionsComplete > 0
         : a.threshold !== undefined && earnedMilestones.includes(a.threshold);
-    return { id, name: a.title, note: a.reward, state: earned ? "earned" : "available" };
+    // Say how it is earned, so Collection Complete is never a mystery: only curated collections count.
+    const how =
+      a.kind === "collection-complete"
+        ? "Finish every adventure in one of our curated collections that has three or more. Your own collections do not count."
+        : a.threshold !== undefined
+          ? `Complete ${a.threshold} different ${a.threshold === 1 ? "adventure" : "adventures"}.`
+          : "";
+    return {
+      id,
+      name: a.title,
+      note: `${how} ${a.reward}`.trim(),
+      state: earned ? "earned" : "available",
+    };
   });
   for (const s of stampItems) if (got.has(s.id)) s.state = "earned";
   if (entitled) {

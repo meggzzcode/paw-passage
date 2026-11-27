@@ -45,7 +45,7 @@ export function CollectionsLanding() {
   return (
     <div className="co-landing">
       <p className="co-lede">
-        Pick a feeling and see what fits. Every collection is self-paced, with no deadlines.
+        Little adventures for every kind of day. Every collection is self-paced, with no deadlines.
       </p>
 
       {featured && (

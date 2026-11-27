@@ -29,6 +29,32 @@ export function markRevealed(id: string) {
   }
 }
 
+// Mystery adventures saved BEFORE they were revealed. A device-local presentation flag only (the saved item itself is
+// the ordinary save-for-later id in the Save, so sync, restore and the adventure id are unaffected). Cleared by a reveal.
+const SAVED_MYSTERY_KEY = "pp.mystery-saved.v1";
+function readSavedMysteries(): string[] {
+  try {
+    const v: unknown = JSON.parse(window.localStorage.getItem(SAVED_MYSTERY_KEY) ?? "[]");
+    return Array.isArray(v) ? v.filter((x): x is string => typeof x === "string") : [];
+  } catch {
+    return [];
+  }
+}
+export function markMysterySaved(id: string, on: boolean) {
+  try {
+    const all = readSavedMysteries().filter((x) => x !== id);
+    window.localStorage.setItem(
+      SAVED_MYSTERY_KEY,
+      JSON.stringify((on ? [...all, id] : all).slice(-300)),
+    );
+  } catch {
+    /* blocked storage: the saved item simply shows as an ordinary saved adventure */
+  }
+}
+/** True while a saved adventure is still an unrevealed mystery on this device. Revealing it ends that. */
+export const isSavedMystery = (id: string): boolean =>
+  typeof window !== "undefined" && readSavedMysteries().includes(id) && !wasRevealed(id);
+
 /** One persistent polite live region, so the announcement survives the card being swapped for the revealed one. */
 export function announce(message: string) {
   if (typeof document === "undefined") return;

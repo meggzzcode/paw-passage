@@ -44,7 +44,8 @@ export type EventName =
   | "journal_cta_click"
   | "journal_collection_click"
   | "journal_related_click"
-  | "journal_preview_click";
+  | "journal_preview_click"
+  | "discover_context_used";
 
 const ALLOWED = new Set<EventName>([
   "adventure_revealed",
@@ -88,6 +89,8 @@ const ALLOWED = new Set<EventName>([
   "journal_collection_click",
   "journal_related_click",
   "journal_preview_click",
+  // Discover "Where are we today?": aggregate place category + count of preferences only (never names, text or location).
+  "discover_context_used",
 ]);
 // pp_checkout_handoff only means: the visitor clicked the outbound link that opens Gumroad. It does NOT mean checkout began,
 // a card was entered or anything was bought (this event was named checkout_started before 2026-11-26; GA4 may still list that

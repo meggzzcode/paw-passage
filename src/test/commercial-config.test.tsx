@@ -353,8 +353,11 @@ describe("trust and objections", () => {
     expect(t).not.toMatch(/testimonial|rated|\bstars?\b|customers love|thousands/i);
   });
   it("is reused on unlock and FAQ (the home page keeps only the quiet refund, restore and support links)", () => {
-    for (const f of ["src/routes/unlock.tsx", "src/routes/faq.tsx"])
-      expect(readFileSync(f, "utf8"), f).toContain("<TrustStrip");
+    expect(readFileSync("src/routes/faq.tsx", "utf8")).toContain("<TrustStrip");
+    // The focused purchase page states delivery, restore, support and refund terms itself (before the buy button).
+    const unlock = readFileSync("src/routes/unlock.tsx", "utf8");
+    expect(unlock).toContain("Refund terms, before you pay");
+    expect(unlock).toContain("/refund-policy");
   });
   it("answers household and multi-dog honestly: one shared profile, no separate profiles", () => {
     const h = FAQS.find((f) => f.id === "household")!;

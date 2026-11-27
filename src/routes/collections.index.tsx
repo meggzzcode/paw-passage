@@ -28,7 +28,7 @@ export const Route = createFileRoute("/collections/")({
     pageHead({
       title: "Adventure collections for dogs",
       description:
-        "Themed decks of dog adventures: five-minute moments, rainy days, apartment life, the golden years and more. Self-paced, no deadlines.",
+        "Little adventures for every kind of day: cozy days at home, doggy dates, playful moments and outdoor discoveries. Self-paced, no deadlines.",
       path: "/collections",
       noindex:
         match.search.tab === "mine" || match.search.tab === "favorites" || !!match.search.world,

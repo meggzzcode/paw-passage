@@ -49,7 +49,10 @@ export function FilterPanel({
   filters,
   onChange,
   onSaveSmart,
+  simple = false,
 }: {
+  /** Today's Discover: "Quick", "No spending", "No treats" and "Quiet" live on the simple chips, so they are not repeated here. */
+  simple?: boolean;
   filters: SessionFilters;
   onChange: (f: SessionFilters) => void;
   onSaveSmart?: ((name: string, f: SessionFilters) => void) | undefined;
@@ -79,7 +82,7 @@ export function FilterPanel({
         legend="Budget"
         options={[
           ANY,
-          { value: 0, label: "Free" },
+          ...(simple ? [] : [{ value: 0, label: "Free" }]),
           { value: 15, label: "Up to $15" },
           { value: 40, label: "Up to $40" },
         ]}
@@ -115,7 +118,12 @@ export function FilterPanel({
 
       <MultiChoice
         legend="Quick picks"
-        options={QUICK_PICKS.map((v) => ({ value: v, label: QUICK_PICK_LABELS[v] }))}
+        options={QUICK_PICKS.filter((v) => !simple || (v !== "quick" && v !== "quiet")).map(
+          (v) => ({
+            value: v,
+            label: QUICK_PICK_LABELS[v],
+          }),
+        )}
         values={picksOf(filters)}
         onChange={(v) => onChange(withPicks(filters, v))}
       />
@@ -178,18 +186,22 @@ export function FilterPanel({
             value={filters.weather}
             onChange={(v) => onChange(set(filters, "weather", v))}
           />
-          <Choice
-            legend="Food"
-            options={[ANY, { value: true, label: "Food-free only" }]}
-            value={filters.foodFree ? true : undefined}
-            onChange={(v) => onChange(set(filters, "foodFree", v))}
-          />
-          <Choice
-            legend="Noise"
-            options={[ANY, { value: true, label: "Quiet only" }]}
-            value={filters.quiet ? true : undefined}
-            onChange={(v) => onChange(set(filters, "quiet", v))}
-          />
+          {!simple && (
+            <>
+              <Choice
+                legend="Food"
+                options={[ANY, { value: true, label: "Food-free only" }]}
+                value={filters.foodFree ? true : undefined}
+                onChange={(v) => onChange(set(filters, "foodFree", v))}
+              />
+              <Choice
+                legend="Noise"
+                options={[ANY, { value: true, label: "Quiet only" }]}
+                value={filters.quiet ? true : undefined}
+                onChange={(v) => onChange(set(filters, "quiet", v))}
+              />
+            </>
+          )}
           <Choice
             legend="New or done"
             options={[

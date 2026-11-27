@@ -10,6 +10,8 @@ export type CtxAnswers = Partial<{
   /** Quiz step 4 ids: sniffing, games, exploring, food, creative, relaxing. */
   enjoy: ("sniffing" | "games" | "exploring" | "food" | "creative" | "relaxing")[];
   where: "home" | "nearby" | "anywhere";
+  /** Quiz step 3 ("What feels right today?"): pre-selects that tile. Ignored by the paid Discover filters. */
+  mood: "cozy" | "outing" | "playful" | "quiet" | "surprise";
   time: "short" | "medium" | "longer";
   spend: "none" | "inexpensive" | "flexible";
   /** What works for the owner (quiz step 9). */
@@ -21,30 +23,54 @@ export type CtxAnswers = Partial<{
 export type CtxPreset = { label: string; answers: CtxAnswers };
 
 export const ctxPresets = {
-  "at-home": { label: "At home", answers: { where: "home", time: "short", spend: "none" } },
+  "at-home": {
+    label: "At home",
+    answers: { mood: "cozy", where: "home", time: "short", spend: "none" },
+  },
   "rainy-day": {
     label: "Rainy day",
-    answers: { where: "home", enjoy: ["games", "creative", "sniffing"], spend: "inexpensive" },
+    answers: {
+      mood: "cozy",
+      where: "home",
+      enjoy: ["games", "creative", "sniffing"],
+      spend: "inexpensive",
+    },
   },
   weekend: {
     label: "This weekend",
-    answers: { where: "anywhere", time: "longer", spend: "flexible" },
+    answers: { mood: "outing", time: "longer", spend: "flexible" },
   },
   "doggy-date": {
     label: "Doggy date",
-    answers: { where: "anywhere", time: "medium", enjoy: ["exploring", "food"], spend: "flexible" },
+    answers: {
+      mood: "outing",
+      time: "medium",
+      enjoy: ["exploring", "food"],
+      spend: "flexible",
+    },
   },
   "no-spend": { label: "No spend", answers: { spend: "none" } },
-  bond: { label: "Bonding", answers: { enjoy: ["games", "sniffing", "relaxing"], time: "short" } },
+  bond: {
+    label: "Bonding",
+    answers: { mood: "playful", enjoy: ["games", "sniffing", "relaxing"], time: "short" },
+  },
   puppy: { label: "Puppy", answers: { lifeStage: "puppy", energy: "moderate", time: "short" } },
   senior: {
     label: "Senior dog",
-    answers: { lifeStage: "senior", energy: "gentle", enjoy: ["sniffing", "relaxing"] },
+    answers: {
+      mood: "quiet",
+      lifeStage: "senior",
+      energy: "gentle",
+      enjoy: ["sniffing", "relaxing"],
+    },
   },
-  family: { label: "Family time", answers: { refine: ["kids"], where: "nearby", spend: "none" } },
+  family: {
+    label: "Family time",
+    answers: { mood: "outing", refine: ["kids"], where: "nearby", spend: "none" },
+  },
   "high-energy": {
     label: "High energy",
-    answers: { energy: "lively", enjoy: ["games", "exploring"], where: "nearby" },
+    answers: { mood: "outing", energy: "lively", enjoy: ["games", "exploring"], where: "nearby" },
   },
 } as const satisfies Record<string, CtxPreset>;
 

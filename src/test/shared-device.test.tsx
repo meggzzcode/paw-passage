@@ -1,5 +1,6 @@
 import { act, cleanup, fireEvent, screen, waitFor } from "@testing-library/react";
-import { readFileSync } from "node:fs";
+import { readFileSync, readdirSync, statSync } from "node:fs";
+import { join } from "node:path";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { adv, renderUi } from "./collections-fixtures";
 import { AccessForm, AccountPanel, SharedDeviceChoice } from "@/components/passport/AccessForms";
@@ -8,6 +9,7 @@ import { ACCOUNT_FLAG, _resetEntitlementForTests, getEntitlement } from "@/passp
 import { _resetForTests, completeAdventure, getSave, setProfile } from "@/passport/local-store";
 import {
   ANONYMOUS_PREFERENCE_KEYS,
+  ANONYMOUS_SESSION_KEYS,
   CUSTOMER_LOCAL_KEYS,
   CUSTOMER_SESSION_KEYS,
   OWNER_KEY,
@@ -363,5 +365,58 @@ describe("Sign out and clear this device", () => {
     ).toBeInTheDocument();
     expect(window.localStorage.getItem("pp.save.v1")).toBeNull();
     void s;
+  });
+});
+
+describe("every browser storage key in src is classified for shared devices (static scan)", () => {
+  const walk = (dir: string): string[] =>
+    readdirSync(dir).flatMap((f) => {
+      const p = join(dir, f);
+      if (statSync(p).isDirectory()) return f === "test" ? [] : walk(p);
+      return /\.(ts|tsx)$/.test(f) ? [p] : [];
+    });
+  const found = new Set<string>();
+  for (const f of walk("src")) {
+    const text = readFileSync(f, "utf8");
+    for (const m of text.matchAll(/["'`](pp[._][a-zA-Z0-9._-]*[a-zA-Z0-9])["'`]/g))
+      found.add(m[1]!);
+  }
+  const classified = new Set<string>([
+    ...CUSTOMER_LOCAL_KEYS,
+    ...CUSTOMER_SESSION_KEYS,
+    ...ANONYMOUS_PREFERENCE_KEYS,
+    ...ANONYMOUS_SESSION_KEYS,
+  ]);
+
+  it("finds the known keys (the scan itself works)", () => {
+    expect(found.has("pp.save.v1")).toBe(true);
+    expect(found.size).toBeGreaterThan(10);
+  });
+
+  it("has no pp.* / pp_* storage key that is missing from device-owner.ts (add new keys to the right list)", () => {
+    // pp_session is the HttpOnly server sign-in cookie (not a storage key; removed by the sign-out call).
+    const missing = [...found].filter((k) => !classified.has(k) && k !== "pp_session");
+    expect(missing).toEqual([]);
+  });
+
+  it("classifies each key once: a key is never both customer-specific and anonymous", () => {
+    const all = [
+      ...CUSTOMER_LOCAL_KEYS,
+      ...CUSTOMER_SESSION_KEYS,
+      ...ANONYMOUS_PREFERENCE_KEYS,
+      ...ANONYMOUS_SESSION_KEYS,
+    ];
+    expect(new Set(all).size).toBe(all.length);
+  });
+
+  it("no other storage mechanism (IndexedDB, Cache API writes, cookie writes) exists in src (consent.ts only deletes _ga cookies)", () => {
+    const offenders: string[] = [];
+    for (const f of walk("src")) {
+      const text = readFileSync(f, "utf8");
+      if (f.endsWith("consent.ts")) continue; // deletes the _ga cookies when analytics is declined; sets none
+      if (/indexedDB\s*\.\s*open|caches\s*\.\s*open|document\.cookie\s*=/.test(text))
+        offenders.push(f);
+    }
+    expect(offenders).toEqual([]);
   });
 });

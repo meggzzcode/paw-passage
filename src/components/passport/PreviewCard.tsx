@@ -1,5 +1,6 @@
 // One public preview card. It shows only the allowlisted preview fields: a mystery tile, the public title and teaser,
 // and at-a-glance facts. Never instructions or anything about how the adventure works. Bookmarking is local.
+import { useState } from "react";
 import type { PreviewItem } from "@/lib/previews";
 import { bookmarkPreview, unbookmarkPreview } from "@/passport/local-store";
 import { has } from "@/passport/progress";
@@ -19,6 +20,7 @@ import {
 export function PreviewCard({ item }: { item: PreviewItem }) {
   const { save } = usePassport();
   const saved = has(save.saved, item.id);
+  const [said, setSaid] = useState(false);
   const labels = goodLabels(item);
   const needs = needChips(item);
   const badges = ownerBadges(item);
@@ -65,16 +67,23 @@ export function PreviewCard({ item }: { item: PreviewItem }) {
             onClick={() => {
               if (saved) {
                 unbookmarkPreview(item.id);
+                setSaid(false);
                 flow("preview_unbookmarked", { preview: item.id });
               } else {
                 bookmarkPreview(item.id);
+                setSaid(true);
                 flow("preview_bookmarked", { preview: item.id });
               }
             }}
           >
-            {saved ? "Saved ✓" : "Save for later"}
+            {saved ? "Saved for later ✓" : "Save for later"}
           </button>
         </div>
+        {saved && said && (
+          <p className="pd-status" role="status">
+            Saved for later. Find it in Collections under Saved.
+          </p>
+        )}
       </article>
     </li>
   );

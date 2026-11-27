@@ -13,10 +13,18 @@ import { collections } from "@/passport/content";
 import { useAdventureLibrary } from "./collections-shared";
 import { FreeStarter } from "./FreeStarter";
 import { useDiscoverData } from "./discover-data";
-import { QuickSurprise, TodayCard } from "./PaidDiscover";
+import { DiscoverToday } from "./DiscoverToday";
 import "@/design/ux-detail.css";
 import { FILTER_LABELS, pickSurprise, rank, type Ctx, type History } from "@/passport/engine";
-import type { CustomCollection, DogProfile, Scope, SessionFilters } from "@/passport/profile";
+import type { CustomCollection, DogProfile, Scope } from "@/passport/profile";
+import {
+  EMPTY_TODAY,
+  ctxToToday,
+  narrowLibrary,
+  readToday,
+  writeToday,
+  type TodayState,
+} from "@/passport/context";
 import { listCollections, members, newCollectionId } from "@/passport/progress";
 import { newCollection, setProfile } from "@/passport/local-store";
 import { usePassport } from "@/passport/usePassport";
@@ -24,7 +32,7 @@ import { isRevealed } from "@/passport/starter";
 import { hasAccountFlag } from "@/passport/premium-client";
 import { track } from "@/passport/events";
 import { CtxChip } from "@/components/journal/CtxChip";
-import { ctxToFilters, type CtxKey } from "@/passport/journal-context";
+import type { CtxKey } from "@/passport/journal-context";
 import { AppLink } from "@/components/shell/AppLink";
 
 /**
@@ -99,7 +107,16 @@ export function DiscoverPage(props: {
   );
 }
 
-function FullDiscover({
+function FullDiscover(props: {
+  mode: DiscoverMode;
+  onMode: (m: DiscoverMode) => void;
+  ctx?: CtxKey;
+}) {
+  // A new (or removed) Journal starting point starts today's choices afresh.
+  return <FullDiscoverBody key={props.ctx ?? "none"} {...props} />;
+}
+
+function FullDiscoverBody({
   mode,
   onMode,
   ctx: ctxKey,
@@ -110,9 +127,12 @@ function FullDiscover({
 }) {
   const { ready, profile } = usePassport();
   const [editing, setEditing] = useState(false);
-  // Advanced browsing is tucked away unless the address asks for it (?mode=surprise|browse or a journal ?ctx=).
+  // Today's choices are temporary (this tab only) and never touch the saved profile.
+  const [today, setToday] = useState<TodayState>(() => (ctxKey ? ctxToToday(ctxKey) : readToday()));
+  useEffect(() => writeToday(today), [today]);
+  // Advanced browsing and extra preferences stay tucked away unless the address asks for browsing.
   const [moreOpen, setMoreOpen] = useState(mode !== "made");
-  const [surprise, setSurprise] = useState(false);
+  const [prefsOpen, setPrefsOpen] = useState(false);
 
   if (!ready)
     return (
@@ -121,64 +141,76 @@ function FullDiscover({
       </Container>
     );
 
+  const seeMore = () => {
+    setMoreOpen(true);
+    onMode("browse");
+  };
+
   return (
     <Container>
       <div className="pa-page pd-page">
-        <h1 className="pa-h1">What shall we do today?</h1>
-        <p className="pa-sub">
-          Your full Passport. No deadlines{profile.name ? `, just you and ${profile.name}` : ""}.
+        <p className="pa-kicker dt-hello">
+          {profile.name ? `Hello, you and ${profile.name}.` : "Hello, adventurer."}
         </p>
+        <h1 className="pa-h1">What shall we do today?</h1>
+        <p className="pa-sub">Find a little adventure that fits your day.</p>
 
-        <TodayCard onPersonalize={() => setEditing(true)} />
+        <DiscoverToday
+          state={today}
+          onChange={setToday}
+          onSeeMore={seeMore}
+          startSearched={!!ctxKey}
+        />
 
-        <div className="ux-quick" role="group" aria-label="Other ways in">
-          <button
-            type="button"
-            className="pp-btn pp-btn-secondary"
-            aria-expanded={surprise}
-            onClick={() => setSurprise((v) => !v)}
+        <details className="ux-more dt-prefs" open={prefsOpen}>
+          <summary
+            onClick={(e) => {
+              e.preventDefault();
+              setPrefsOpen((v) => !v);
+            }}
           >
-            Surprise us
-          </button>
-          <AppLink to="/collections" className="pp-btn pp-btn-secondary">
-            Explore collections
-          </AppLink>
-          <AppLink
-            to="/collections"
-            search={{ tab: "favorites" } as never}
-            className="pp-btn pp-btn-secondary"
-          >
-            Saved
-          </AppLink>
-          <button
-            type="button"
-            className="pp-btn pp-btn-ghost"
-            aria-expanded={editing}
-            onClick={() => setEditing((v) => !v)}
-          >
-            Preferences
-          </button>
-        </div>
-        {surprise && <QuickSurprise />}
-        {editing && (
-          <section className="pa-panel" aria-labelledby="pd-edit-h">
-            <h2 className="pa-h" id="pd-edit-h">
-              Your dog and you
-            </h2>
-            <ProfileEditor part="all" />
-            <h3 className="pa-h">About you</h3>
-            <OwnerPrefsEditor />
-            <div className="pa-row">
+            More preferences
+          </summary>
+          {prefsOpen && (
+            <div className="dt-prefs-body">
+              <FilterPanel
+                simple
+                filters={today.filters}
+                onChange={(f) => setToday({ ...today, filters: f })}
+                onSaveSmart={(name, f) =>
+                  newCollection({ id: newCollectionId(), kind: "smart", name, filters: f })
+                }
+              />
               <button
                 type="button"
-                className="pp-btn pp-btn-primary"
-                onClick={() => setEditing(false)}
+                className="pp-btn pp-btn-ghost"
+                aria-expanded={editing}
+                onClick={() => setEditing((v) => !v)}
               >
-                Done
+                Our dog and household details
               </button>
+              {editing && (
+                <section className="pa-panel" aria-labelledby="pd-edit-h">
+                  <h2 className="pa-h" id="pd-edit-h">
+                    Your dog and you
+                  </h2>
+                  <ProfileEditor part="all" />
+                  <h3 className="pa-h">About you</h3>
+                  <OwnerPrefsEditor />
+                  <div className="pa-row">
+                    <button
+                      type="button"
+                      className="pp-btn pp-btn-primary"
+                      onClick={() => setEditing(false)}
+                    >
+                      Done
+                    </button>
+                  </div>
+                </section>
+              )}
             </div>
-          </section>
-        )}
+          )}
+        </details>
 
         <details className="ux-more" open={moreOpen}>
           <summary
@@ -204,11 +236,7 @@ function FullDiscover({
                 {mode === "made" && <MadeForYou onEditProfile={() => setEditing(true)} />}
                 {mode === "surprise" && <SurpriseMe />}
                 {mode === "browse" && (
-                  <BrowseAll
-                    key={ctxKey ?? "none"}
-                    onMode={onMode}
-                    start={ctxKey ? ctxToFilters(ctxKey) : {}}
-                  />
+                  <BrowseAll onMode={onMode} today={today} onReset={() => setToday(EMPTY_TODAY)} />
                 )}
               </div>
             </>
@@ -511,34 +539,27 @@ const BROWSE_PAGE = 8;
 
 function BrowseAll({
   onMode,
-  start,
+  today,
+  onReset,
 }: {
   onMode: (m: DiscoverMode) => void;
-  /** Starting filters from an Adventure Journal link: ordinary, removable session filters; the saved profile is never touched. */
-  start: SessionFilters;
+  /** Today's temporary choices (place + the shared filters). The saved profile is never touched. */
+  today: TodayState;
+  onReset: () => void;
 }) {
-  const { dog, save, library, ctx, history } = useDiscoverData();
-  const [filters, setFilters] = useState<SessionFilters>(start);
+  const { dog, save, library: full, ctx, history } = useDiscoverData();
+  const library = narrowLibrary(full, today);
+  const filters = today.filters;
   const [shown, setShown] = useState(BROWSE_PAGE);
   const raw = rank(library, ctx, filters, history, { includeDone: true, seed: "browse" });
   const ordered = useStableOrder(
     raw.ok ? raw.ranked : [],
-    JSON.stringify([save.profile.data, save.owner.data, filters]),
+    JSON.stringify([save.profile.data, save.owner.data, today]),
   );
   const result = raw.ok ? { ...raw, ranked: ordered } : raw;
 
   return (
     <>
-      <FilterPanel
-        filters={filters}
-        onChange={(f) => {
-          setFilters(f);
-          setShown(BROWSE_PAGE);
-        }}
-        onSaveSmart={(name, f) =>
-          newCollection({ id: newCollectionId(), kind: "smart", name, filters: f })
-        }
-      />
       {!result.ok ? (
         result.reason === "none-eligible" ? (
           <Empty reason={NONE_ELIGIBLE} />
@@ -549,12 +570,8 @@ function BrowseAll({
               Try loosening: {result.relax.map((k) => FILTER_LABELS[k]).join(", ") || "a filter"}.
               Your dog's comfort answers stay as you set them.
             </p>
-            <button
-              type="button"
-              className="pp-btn pp-btn-secondary"
-              onClick={() => setFilters({})}
-            >
-              Reset filters
+            <button type="button" className="pp-btn pp-btn-secondary" onClick={onReset}>
+              Reset today's choices
             </button>
           </div>
         )

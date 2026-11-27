@@ -280,6 +280,50 @@ describe("relaxing optional preferences", () => {
   });
 });
 
+describe("What feels right today? (question 3) against the real free library", () => {
+  const PROFILES: [string, QuizAnswers][] = [
+    ["unknown dog", {}],
+    ["puppy", { lifeStages: ["puppy"], keepInMind: ["none"] }],
+    ["senior", { lifeStages: ["senior"], energy: "gentle", keepInMind: ["none"] }],
+    ["mixed ages", { lifeStages: ["puppy", "adult", "senior"], keepInMind: ["none"] }],
+    ["limited mobility", { lifeStages: ["adult"], keepInMind: ["mobility"] }],
+    ["noise sensitive", { lifeStages: ["adult"], keepInMind: ["noise"] }],
+    ["short time, no spend", { lifeStages: ["adult"], time: "short", spend: "none" }],
+  ];
+  const MOODS = ["cozy", "outing", "playful", "quiet", "surprise"] as const;
+
+  it("every choice gives a safe pick for every representative profile (hard eligibility holds)", () => {
+    for (const [name, a] of PROFILES)
+      for (const mood of MOODS) {
+        const save = saveFor({ ...a, mood });
+        const r = selectStarter(lib, save);
+        expect(r.ok, `${name} / ${mood}`).toBe(true);
+        if (!r.ok) continue;
+        const v = eligibility(r.adventure, {
+          dog: save.profile.data,
+          owner: save.owner.data,
+          unlocked: false,
+        });
+        expect(v.eligible, `${name} / ${mood}`).toBe(true);
+        if (mood === "cozy") expect(r.adventure.places).toContain("home");
+        if (mood === "outing") expect(r.adventure.setting).not.toBe("indoor");
+        if (mood === "quiet") expect(r.adventure.noise).toBe("quiet");
+      }
+  });
+
+  it("an outing with children joining has no strict match: the friendly widen path finds one, kids stay a preference", () => {
+    const save = saveFor({
+      lifeStages: ["adult"],
+      kids: true,
+      keepInMind: ["none"],
+      mood: "outing",
+    });
+    expect(selectStarter(lib, save).ok).toBe(false);
+    expect(noMatchCause(lib, save).kind).toBe("single");
+    expect(selectStarter(lib, save, new Set(), { relax: ["where"] }).ok).toBe(true);
+  });
+});
+
 describe("Journal context presets", () => {
   it("all ten keys have a preset, prefill empty answers and never overwrite saved ones", () => {
     expect(CTX_KEYS.length).toBe(10);
@@ -301,6 +345,25 @@ describe("Journal context presets", () => {
       expect(presetFor(k, saved)).toEqual({});
       expect(fresh.keepInMind).toBeUndefined(); // safety answers are never preset
     }
+  });
+
+  it("the ten Journal CTAs pre-select question 3 where it applies, so the quiz does not ask it twice", () => {
+    const expected: Record<string, string | undefined> = {
+      "at-home": "cozy",
+      "rainy-day": "cozy",
+      weekend: "outing",
+      "doggy-date": "outing",
+      bond: "playful",
+      senior: "quiet",
+      family: "outing",
+      "high-energy": "outing",
+      "no-spend": undefined, // a spend preference only: question 3 stays the visitor's call
+      puppy: undefined, // life stage, energy and time are preset; question 3 stays the visitor's call
+    };
+    for (const k of CTX_KEYS) expect(presetFor(k, emptySave()).mood, k).toBe(expected[k]);
+    // a saved where answer wins: the preset never overwrites it
+    const saved = saveFor({ where: "home" });
+    expect(presetFor("weekend", saved).mood).toBeUndefined();
   });
 });
 

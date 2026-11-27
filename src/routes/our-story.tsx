@@ -8,15 +8,14 @@ import { members } from "@/passport/progress";
 import { usePassport } from "@/passport/usePassport";
 import { pageHead } from "@/lib/seo";
 
-// Public "Our Story" is the brand story (the same content as /about). It stays noindex and out of the sitemap until the
-// owner decides; /about is the indexed page. The personal timeline lives in My Passport ("Our little memories").
+// Public "Our Story" shows the same brand story as /about, so /about is the ONE canonical, indexed page: this route
+// canonicals to /about (no noindex, which would contradict a canonical) and stays out of the sitemap. The personal timeline lives in My Passport ("Our little memories").
 export const Route = createFileRoute("/our-story")({
   head: () =>
     pageHead({
       title: "Our Story",
       description: "The story behind Paws & Passage and the Adventure Passport.",
-      path: "/our-story",
-      noindex: true,
+      path: "/about",
     }),
   component: OurStory,
 });

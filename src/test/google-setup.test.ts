@@ -120,7 +120,7 @@ const rows: Row[] = [
     false,
     "/tools/packing-list",
   ),
-  r("/our-story", () => import("@/routes/our-story"), plain, true, null),
+  r("/our-story", () => import("@/routes/our-story"), plain, false, null), // canonical /about, unlisted
   r("/passport", () => import("@/routes/passport"), plain, true, null),
   r("/welcome", () => import("@/routes/welcome"), plain, true, null),
   r("/restore-access", () => import("@/routes/restore-access"), plain, true, null),
@@ -271,7 +271,7 @@ describe("analytics facts used by the GA4 steps", () => {
 });
 
 describe("indexing policy (owner amendment 2026-11-26)", () => {
-  it("/previews, /our-story and /concept are noindex and unlisted; /discover is indexable and listed", () => {
+  it("/previews and /concept are noindex and unlisted, /our-story canonicals to /about and is unlisted; /discover is indexable and listed", () => {
     expect(sitemap.has("/discover")).toBe(true);
     for (const p of ["/previews", "/our-story", "/concept"]) expect(sitemap.has(p)).toBe(false);
     expect(readdirSync("src/routes")).not.toContain("concept.tsx"); // no such route; if one is added it must be noindex

@@ -11,12 +11,18 @@ import { StampsAndMilestones } from "@/components/passport/PassportRewards";
 import { StoryTimeline } from "@/components/passport/StoryTimeline";
 import { isLive, usePlans } from "@/lib/plans";
 import { AccountPanel, SharedDeviceChoice } from "@/components/passport/AccessForms";
-import { achievements as achDefs, collections, stamps as stampDefs } from "@/passport/content";
+import {
+  achievements as achDefs,
+  collections,
+  freeLibrary,
+  stamps as stampDefs,
+} from "@/passport/content";
 import { useAdventureLibrary } from "@/components/passport/collections-shared";
 import { TrustBlock } from "@/components/passport/TrustBlock";
 import { SyncStatus } from "@/components/passport/SyncStatus";
 import { isRevealed } from "@/passport/starter";
-import { achievements, members } from "@/passport/progress";
+import { achievements, has, members } from "@/passport/progress";
+import { isSavedMystery } from "@/components/passport/RevealSurface";
 import { clearLocal, exportJson, importJson } from "@/passport/local-store";
 import { downloadBlob } from "@/passport/keepsake/download";
 import { loadMilestoneRenderer } from "@/components/passport/keepsake-loader";
@@ -59,14 +65,25 @@ function PassportPage() {
   const [askDelete, setAskDelete] = useState(false);
   const { all: lib, unlocked: entitled } = useAdventureLibrary();
   const livePlans = usePlans().filter(isLive);
-  const cols = Object.fromEntries(
-    collections.map((c) => [
-      c.slug,
-      lib.filter((a) => a.collections.includes(c.slug)).map((a) => a.id),
-    ]),
-  );
+  // Collection Complete is judged against the WHOLE curated collection, so it only counts once the full library is
+  // loaded for an entitled customer (never against the free pool alone, which would "complete" a larger collection early).
+  const fullLibrary = entitled && lib.length > freeLibrary().length;
+  const cols = fullLibrary
+    ? Object.fromEntries(
+        collections.map((c) => [
+          c.slug,
+          lib.filter((a) => a.collections.includes(c.slug)).map((a) => a.id),
+        ]),
+      )
+    : {};
   const earned = achievements(save, lib, cols);
-  const savedIds = [...new Set([...members(save.favorites), ...members(save.saved)])];
+  // Without the full Passport the list holds only the visitor's own revealed intro adventure (public previews are
+  // bookmarked on /previews and Saved).
+  const mayList = (id: string) =>
+    entitled || (save.starter?.id === id && save.starter.revealedAt !== undefined);
+  const savedIds = [...new Set([...members(save.favorites), ...members(save.saved)])].filter(
+    mayList,
+  );
   const saved = savedIds.map((id) => lib.find((a) => a.id === id)).filter((a) => a !== undefined);
 
   function doExport() {
@@ -96,6 +113,9 @@ function PassportPage() {
     save.owner.data.prep && `Prep: ${save.owner.data.prep}`,
   ].filter((x): x is string => Boolean(x));
   const rewardTotal = stampDefs.length;
+  // Collection Complete is one milestone, however many collections have been finished.
+  const milestonesReached =
+    earned.milestones.length + (earned.collectionsComplete.length > 0 ? 1 : 0);
   const nextAch = achDefs.find((x) => x.kind === "count" && x.threshold === earned.next);
   const showPlans = entitled || livePlans.length > 0 || view === "upcoming";
 
@@ -146,7 +166,11 @@ function PassportPage() {
             {saved.length > 0 ? (
               <ul className="pv8-plain">
                 {saved.slice(0, 6).map((a) => (
-                  <li key={a.id}>{a.title}</li>
+                  <li key={a.id}>
+                    {!has(save.done, a.id) && isSavedMystery(a.id)
+                      ? "A mystery adventure, saved and not revealed yet"
+                      : a.title}
+                  </li>
                 ))}
               </ul>
             ) : (
@@ -179,7 +203,7 @@ function PassportPage() {
             id="stamps-h"
             anchors={["stamps", "milestones"]}
             title="Stamps and milestones"
-            summary={`${earned.stamps.length} of ${rewardTotal} stamps · ${earned.milestones.length + earned.collectionsComplete.length} ${earned.milestones.length + earned.collectionsComplete.length === 1 ? "milestone" : "milestones"}`}
+            summary={`${earned.stamps.length} of ${rewardTotal} stamps · ${milestonesReached} ${milestonesReached === 1 ? "milestone" : "milestones"}`}
           >
             <StampsAndMilestones
               earnedStamps={earned.stamps}

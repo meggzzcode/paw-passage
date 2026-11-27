@@ -8,7 +8,8 @@ import { eligibility, smartMembers, type Ctx, type History } from "@/passport/en
 import { members, type Save } from "@/passport/progress";
 import type { CustomCollection, SessionFilters } from "@/passport/profile";
 import type { Adventure } from "@/passport/schema";
-import { RevealedCard } from "@/components/passport/AdventureCard";
+import { MysteryCard, RevealedCard } from "@/components/passport/AdventureCard";
+import { isSavedMystery } from "@/components/passport/RevealSurface";
 
 export function ctxFor(save: Save, unlocked = false): Ctx {
   return { dog: save.profile.data, owner: save.owner.data, unlocked };
@@ -108,19 +109,23 @@ export function AdventureRow({
   dogName?: string | undefined;
 }) {
   const [open, setOpen] = useState(false);
+  const [, bump] = useState(0);
   const { unlocked, introId } = useAccessLibrary();
   // Defense in depth: only an entitled visitor, or the visitor's own intro adventure, can be opened from a list.
   const canOpen = unlocked || a.id === introId;
+  // A saved adventure that was never revealed stays a mystery here: no title, no instructions, until it is revealed.
+  const mystery = !done && isSavedMystery(a.id);
   return (
-    <li className="co-row">
+    <li className="co-row" data-mystery={mystery ? "true" : undefined}>
       <div className="co-row-main">
         <p className="co-row-title">
           {done && <span aria-label="Completed">✓ </span>}
-          {a.title}
+          {mystery ? "Mystery adventure, saved for later" : a.title}
         </p>
         <p className="pa-fine">
           {timeText(a)} · {costText(a)}
           {done ? " · completed" : ""}
+          {mystery ? " · not revealed yet" : ""}
           {note ? ` · ${note}` : ""}
         </p>
       </div>
@@ -133,14 +138,18 @@ export function AdventureRow({
             aria-expanded={open}
             onClick={() => setOpen((v) => !v)}
           >
-            {open ? "Close" : "Open"}
-            <span className="sr-only"> {a.title}</span>
+            {open ? "Close" : mystery ? "Reveal" : "Open"}
+            <span className="sr-only"> {mystery ? "this mystery adventure" : a.title}</span>
           </button>
         )}
       </div>
       {open && canOpen && (
         <div className="co-row-detail">
-          <RevealedCard a={a} dogName={dogName} />
+          {mystery ? (
+            <MysteryCard a={a} onReveal={() => bump((n) => n + 1)} />
+          ) : (
+            <RevealedCard a={a} dogName={dogName} />
+          )}
         </div>
       )}
     </li>

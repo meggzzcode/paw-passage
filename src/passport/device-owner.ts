@@ -23,6 +23,7 @@ export const CUSTOMER_LOCAL_KEYS = [
   "pp.save.v1", // dog profile and names, owner preferences, favorites, saved, completed, memories, collections, free starter
   "pp.plans.v1", // planned adventures and reminders
   "pp.revealed.v1", // which adventures were revealed (personal progress)
+  "pp.mystery-saved.v1", // saved-for-later adventures that are still unrevealed mysteries (presentation flag)
   "pp.packing.v1", // packing checklists (legacy format)
   "pp.packing.v2", // packing checklists: trip details, custom items
   "pp.packing.v2.corrupt", // a backup copy of a damaged packing list
@@ -30,7 +31,14 @@ export const CUSTOMER_LOCAL_KEYS = [
   "pp.acct.v1", // "this browser has an account" flag
   OWNER_KEY,
 ] as const;
-export const CUSTOMER_SESSION_KEYS = ["pp.intro.offered"] as const;
+export const CUSTOMER_SESSION_KEYS = [
+  "pp.intro.offered", // free-starter adventures already offered this visit
+  "pp.today.v1", // today's temporary Discover choices (place, filters); never part of the saved profile
+  "pp.today.v2", // same, current version
+  "pp.quiz.draft.v1", // an unfinished quiz draft (answers about the dog and the day)
+] as const;
+/** Session-only keys that hold no customer data (campaign attribution tags, held until analytics is allowed). */
+export const ANONYMOUS_SESSION_KEYS = ["pp_campaign"] as const;
 
 export const ANONYMOUS_PREFERENCE_KEYS = [
   "pp.hemisphere.v1",

@@ -1,14 +1,20 @@
 // One collection. Entitled visitors: the adventures that suit their dog, with save and open (plan) actions.
 // Everyone else: the public preview cards only, with ONE section-level invitation and a relevant intro-quiz link.
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import type { Collection } from "@/passport/content";
 import { AppLink } from "@/components/shell/AppLink";
 import { Button } from "@/components/shell/Button";
 import { flow } from "@/components/passport/flow-events";
 import { AdventureRow, useAccessLibrary } from "@/components/passport/collections-shared";
+import {
+  SAVE_LABEL,
+  SAVED_LABEL,
+  SAVED_WHERE,
+  UNSAVED_NOTE,
+} from "@/components/passport/SaveForLater";
 import { usePreviews } from "@/lib/usePreviews";
 import { discoverHref } from "@/passport/journal-context";
-import { favorite, unfavorite } from "@/passport/local-store";
+import { saveForLater, unsaveForLater } from "@/passport/local-store";
 import { has, members } from "@/passport/progress";
 import { premiumPreviews } from "@/passport/preview-view";
 import { worldOf } from "@/passport/worlds";
@@ -137,8 +143,14 @@ function FullCollection({ c }: { c: Collection }) {
   const shown = narrow(eligible, n.on);
   const doneIds = new Set(members(save.done));
   const s = stats.suitedOf(c.slug);
+  const [saveNote, setSaveNote] = useState("");
   return (
     <>
+      {saveNote && (
+        <p className="pa-fine" role="status">
+          {saveNote}
+        </p>
+      )}
       <p className="pa-fine" role="status">
         {adventureWord(items.length)} in this collection
         {s ? `, ${s.total} suit ${dogName || "your dog"}, ${s.done} done` : ""}.
@@ -160,7 +172,7 @@ function FullCollection({ c }: { c: Collection }) {
           <NarrowBar {...n} shown={shown.length} of={eligible.length} />
           <ul className="co-list">
             {shown.map((a) => {
-              const saved = has(save.favorites, a.id);
+              const saved = has(save.saved, a.id);
               return (
                 <AdventureRow
                   key={a.id}
@@ -172,9 +184,13 @@ function FullCollection({ c }: { c: Collection }) {
                       type="button"
                       className="pp-btn pp-btn-secondary"
                       aria-pressed={saved}
-                      onClick={() => (saved ? unfavorite(a.id) : favorite(a.id))}
+                      onClick={() => {
+                        if (saved) unsaveForLater(a.id);
+                        else saveForLater(a.id);
+                        setSaveNote(saved ? UNSAVED_NOTE : SAVED_WHERE);
+                      }}
                     >
-                      {saved ? "Saved" : "Save"}
+                      {saved ? SAVED_LABEL : SAVE_LABEL}
                       <span className="sr-only"> {a.title}</span>
                     </button>
                   }

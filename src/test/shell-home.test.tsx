@@ -54,7 +54,7 @@ describe("homepage copy", () => {
       "A passport full of little adventures for you and your dog.",
     );
     expect(homePromo.lede).toBe(
-      "100+ personalized ideas for more fun, more time together and more memories.",
+      "From cozy days at home to little outings and big adventures, discover 100+ personalized activities that fit your day and your dog.",
     );
     expect(homePromo.ctaNote).toBe("Your first adventure is free.");
     expect(homePromo.commercial).toBe("One payment of $19.99. Yours to keep.");

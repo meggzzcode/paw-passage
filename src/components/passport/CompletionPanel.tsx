@@ -73,7 +73,7 @@ export function CompletionPanel({
               setShowKeepsake((v) => !v);
             }}
           >
-            {showKeepsake ? "Hide photo keepsake" : "Make a photo keepsake"}
+            {showKeepsake ? "Hide keepsake maker" : "Create a keepsake"}
           </button>
           {showKeepsake && <KeepsakeGate adventure={a} dogName={dogName} memory={memory} />}
         </>

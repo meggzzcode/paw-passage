@@ -10,7 +10,7 @@ export const Route = createFileRoute("/discover")({
     pageHead({
       title: "Find a little adventure for your dog",
       description:
-        "Answer a few questions about your dog and get a personalized little adventure to try together. Your first adventure is free, with no account needed.",
+        "What shall we do today? Tell us a little about your dog and find an adventure that fits your day. Your first adventure is free, with no account needed.",
       path: "/discover",
       noindex: !!(match.search.ctx || match.search.mode),
     }),
@@ -27,7 +27,7 @@ function DiscoverRoute() {
   const navigate = useNavigate({ from: "/discover" });
   return (
     <DiscoverPage
-      mode={mode ?? (ctx ? "browse" : "made")}
+      mode={mode ?? "made"}
       onMode={(m) => void navigate({ search: { mode: m, ...(ctx ? { ctx } : {}) }, replace: true })}
       {...(ctx ? { ctx } : {})}
       onClearCtx={() => void navigate({ search: mode ? { mode } : {}, replace: true })}

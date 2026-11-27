@@ -21,19 +21,19 @@ export const BRAND = {
     titleLead: "A passport full of",
     titleEm: "little adventures",
     titleTail: "for you and your dog.",
-    support: `${LIBRARY_CLAIM_MIN}+ personalized ideas for more fun, more time together and more memories.`,
+    support: `From cozy days at home to little outings and big adventures, discover ${LIBRARY_CLAIM_MIN}+ personalized activities that fit your day and your dog.`,
     primaryCta: "Find our first adventure",
     /** The home page's one primary action (starts the quiz directly). Other pages keep `primaryCta`. */
     primaryCtaFree: "Find our first adventure — free.",
     ctaNote: "Your first adventure is free.",
     /** One plain line saying what the product is (home hero). */
-    productLine: "Your digital Adventure Passport. Ready whenever you are.",
+    productLine: "Your digital Adventure Passport.",
   },
   /** The two options a visitor chooses between (home invitation and /unlock). The paid label adds the price in commercial.ts. */
   freeOption: "Your first adventure — free.",
   fullOptionName: "The full Adventure Passport",
   testersHeading: "A little love from our early testers.",
-  discoverHeadline: "Adventures picked for your dog. Memories made by you.",
+  discoverHeadline: "What shall we do today?",
   unlockHeadline: `One passport. ${LIBRARY_CLAIM_WORDS} adventures. Endless little memories.`,
   keepsakeHeadline: "Adventures for your dog. Keepsakes for you.",
   passportHeadline: "Collect adventures, not just things.",

@@ -14,7 +14,7 @@ export const Route = createFileRoute("/faq")({
     ...pageHead({
       title: "Adventure Passport FAQ",
       description:
-        "Answers about the Adventure Passport: what you buy, the free adventure, puppies and senior dogs, privacy, restoring access and refunds.",
+        "Answers about the Adventure Passport: what you buy, your free first adventure, puppies and senior dogs, privacy, restoring access and refunds.",
       path: "/faq",
     }),
     scripts: [

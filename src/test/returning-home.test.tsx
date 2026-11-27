@@ -38,7 +38,9 @@ describe("home page by access state", () => {
       screen.getAllByRole("link", { name: /Find our first adventure/ }).length,
     ).toBeGreaterThan(0);
     expect(document.body.textContent).toMatch(/\$19\.99/);
-    expect(screen.getAllByRole("link", { name: /Get the Passport/ }).length).toBeGreaterThan(0);
+    expect(
+      screen.getAllByRole("link", { name: /Get the (Adventure )?Passport/ }).length,
+    ).toBeGreaterThan(0);
   });
 
   it("entitled: a short welcome, Find today's adventure, quiet links, and no price, purchase, free pitch or restore", async () => {
@@ -78,7 +80,7 @@ describe("home page by access state", () => {
     ent.status = "offline";
     await renderUi(<Home />);
     expect(screen.getByRole("heading", { level: 1 }).textContent).toMatch(
-      /couldn't confirm your access just now/,
+      /Having a little trouble opening your Passport/,
     );
     expect(screen.getByRole("button", { name: "Retry" })).toBeInTheDocument();
     expect(screen.getByRole("link", { name: "Contact support" })).toHaveAttribute(
@@ -92,11 +94,9 @@ describe("home page by access state", () => {
 
   it("states the product in one line and the steps say the first stamp is free, keepsakes are in the full Passport", async () => {
     await renderUi(<Home />);
-    expect(
-      screen.getByText("Your digital Adventure Passport. Ready whenever you are."),
-    ).toBeInTheDocument();
-    expect(document.body.textContent).toMatch(/first stamp is collected free/);
-    expect(document.body.textContent).toMatch(/photo keepsakes belong to the full Passport/);
+    expect(document.body.textContent).toMatch(/Your digital Adventure Passport\./);
+    expect(document.body.textContent).toMatch(/first stamp is free/);
+    expect(document.body.textContent).toMatch(/personalized keepsakes with the full Passport/);
   });
 
   it("hides the visitor page from the first frame for a returning browser (data-acct) and leaves it alone otherwise", async () => {

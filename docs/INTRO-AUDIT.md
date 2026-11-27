@@ -128,3 +128,20 @@ Coverage now, strictly (no widening):
 - `saveFor` in the audit test applies every step (default + optional + extra) through `applyAnswers`, deriving the mood from `where` so older rows keep their meaning.
 - No-match handling is tested per cause: `noMatchCause` (single, several, hard) and a loop over every profile asserting a safe pick or a friendly specific no-match whose offered relaxation finds a hard-rule-clean pick. "Show me another" is tested to never consume the last match (`hasAnother`).
 - Measured typical path (headless Chrome, 390x844): 7 views / 7 taps from the homepage to a revealed adventure (baseline 11 / 18).
+
+## Question 3 alignment (2026-11-27): "What feels right today?"
+
+Still four default screens. Question 3 keeps the existing tiles and maps onto existing answers only (no new engine field):
+"A cozy day at home" = where home; "A little outing" = where nearby (outdoor or either setting, no car needed);
+"Something playful" = anywhere, leaning on games; "Something quiet" = anywhere plus the existing noise-quiet filter;
+"Surprise us" = anywhere suitable. Moving off "quiet" clears only a quiet that choice set. Proof: `intro-audit.test.tsx`
+("What feels right today?"), checked against the real 17 free adventures.
+
+Coverage, strictly (7 representative profiles x 5 choices, all safe picks): cozy, playful, quiet and surprise always find one.
+"A little outing" finds one for unknown, puppy, senior, mixed ages, limited mobility, noise-sensitive, short time and no
+spend (5 free adventures are outdoor or either-setting; The Listening Post and A Trip Down Memory Lane suit puppies).
+Thin spot: an outing with children joining has no strict match (the one family-suited outdoor adventure needs a yard
+confirmation, so unknown is held). The friendly no-match offers to set aside "where" or "children joining" (never a safety
+answer). Journal `?ctx=` presets pre-select this tile (at-home, rainy-day = cozy; weekend, doggy-date, family,
+high-energy = outing; bond = playful; senior = quiet; no-spend and puppy leave it for the visitor), still never overwriting
+a saved answer or presetting safety answers.

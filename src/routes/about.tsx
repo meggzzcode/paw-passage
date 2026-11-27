@@ -8,7 +8,7 @@ export const Route = createFileRoute("/about")({
     pageHead({
       title: "About Paws & Passage",
       description:
-        "Paws & Passage makes the Adventure Passport, a collectible set of little adventures to share with your dog, plus researched dog travel and outdoor guides.",
+        "The Adventure Passport: little adventures for everyday life with your dog, from cozy days at home to outings, plus researched dog travel and outdoor guides",
       path: "/about",
     }),
   component: () => (

@@ -36,8 +36,12 @@ describe("/our-story is the public brand story", () => {
     );
   });
 
-  it("stays noindex", () => {
-    const head = Route.options.head!({} as never) as { meta?: Array<Record<string, string>> };
-    expect(JSON.stringify(head.meta)).toMatch(/noindex/);
+  it("canonicals to /about and carries no noindex", () => {
+    const head = Route.options.head!({} as never) as {
+      meta?: Array<Record<string, string>>;
+      links?: Array<Record<string, string>>;
+    };
+    expect(JSON.stringify(head.meta)).not.toMatch(/noindex/);
+    expect(head.links?.[0]?.["href"]).toMatch(/\/about$/);
   });
 });

@@ -308,7 +308,7 @@ describe("free Discover: the introductory flow", () => {
       "href",
       "/unlock",
     ); // but buying never waits for it
-    fireEvent.click(screen.getByRole("button", { name: "We did it" }));
+    fireEvent.click(screen.getByRole("button", { name: "Complete adventure" }));
     expect(
       await screen.findByRole("heading", { name: "Another little memory made." }),
     ).toBeInTheDocument();
@@ -326,7 +326,7 @@ describe("free Discover: the introductory flow", () => {
     await screen.findByRole("article", { name: "Recommended adventure" });
     fireEvent.click(screen.getByRole("button", { name: "Scratch or tap to reveal." }));
     await screen.findByText("How it goes");
-    fireEvent.click(screen.getByRole("button", { name: "We did it" }));
+    fireEvent.click(screen.getByRole("button", { name: "Complete adventure" }));
     await screen.findByRole("heading", { name: "Another little memory made." });
     expect(
       screen.getByRole("heading", { name: "Another little memory made." }),

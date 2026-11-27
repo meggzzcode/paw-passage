@@ -26,6 +26,16 @@ import {
   type Slot,
 } from "./kit";
 import { motif, roundRectPath, starPath } from "./ornaments";
+import {
+  captionFloor,
+  edgeDoodles,
+  fullBleed,
+  hairlineFrame,
+  inkFor,
+  stackUp,
+  toneAt,
+  type Block,
+} from "./overlay";
 import type { PlacedPhoto } from "./photo";
 
 type Photos = ReadonlyArray<PlacedPhoto | null | undefined>;
@@ -36,128 +46,112 @@ const cased = (p: Prep, s: string) => (p.t.upper ? s.toUpperCase() : s);
 
 export const travelPostcard: FamilyDef = {
   slots(p) {
-    if (p.spec.size === "square") return [{ x: 70, y: 100, w: 520, h: 780 }];
-    if (p.story) return [{ x: 90, y: 230, w: 900, h: 860 }];
-    return [{ x: 90, y: 110, w: 900, h: 620 }];
+    return [{ x: 0, y: 0, w: W, h: p.H }];
   },
   draw(ctx, p, photos, slots) {
     const { t, H } = p;
     const c = t.palette;
-    const s = slots[0] as Slot;
-    const side = p.spec.size === "square";
-    paperBackground(ctx, t, W, H);
-    // a tint band so the three postcard themes differ beyond colour
-    ctx.fillStyle = c.bg2;
-    ctx.globalAlpha = 0.45;
-    ctx.fillRect(0, side ? H - 150 : H - 260, W, side ? 150 : 260);
-    ctx.globalAlpha = 1;
-    frame(ctx, t, 28, 28, W - 56, H - 56, c.ink, c.accent2);
+    fullBleed(ctx, p, photos[0], 0);
 
-    ctx.save();
-    tilt(ctx, s, -0.012);
-    mat(ctx, s, c.card, 14);
-    drawSlot(ctx, t, s, photos[0], 0);
-    ctx.restore();
+    // The caption colour comes from the picture actually sitting under it.
+    const floor = captionFloor(p);
+    const band = p.story ? 470 : 350;
+    const tone = toneAt(ctx, 0, floor - band, W, band, "light");
+    const ink = inkFor(tone, p);
 
-    // stamp and postmark
-    const sx = side ? 830 : s.x + s.w - 150;
-    const sy = side ? 95 : s.y - 46;
+    hairlineFrame(ctx, p, ink.hair, 30, 2);
+    edgeDoodles(ctx, p, 5, ink.hair, c.accent2, 3, 0.42, 70);
+
+    // A tiny postage stamp in the top corner, with a light postmark over its edge.
+    const st = p.story ? 152 : 126;
+    const sx = W - 54 - st;
+    const sy = (p.story ? 214 : 56) - 12;
     ctx.save();
-    ctx.translate(sx + 85, sy + 105);
+    ctx.globalAlpha = 0.9;
+    ctx.translate(sx + st / 2, sy + st * 0.62);
     ctx.rotate(0.05);
-    ctx.translate(-(sx + 85), -(sy + 105));
-    perforatedRect(ctx, sx, sy, 170, 210, 7, c.bg);
+    ctx.translate(-(sx + st / 2), -(sy + st * 0.62));
+    perforatedRect(ctx, sx, sy, st, st * 1.24, 6, c.card);
     ctx.strokeStyle = c.accent;
     ctx.lineWidth = 2;
-    ctx.strokeRect(sx + 16, sy + 16, 138, 178);
-    motif(ctx, t.motif, sx + 85, sy + 96, 92, c.accent, c.accent2);
-    para(ctx, word(p, "stamp", "ADVENTURE"), sx + 85, sy + 158, {
-      w: 120,
+    ctx.strokeRect(sx + st * 0.12, sy + st * 0.12, st * 0.76, st * 1.0);
+    motif(ctx, t.motif, sx + st / 2, sy + st * 0.55, st * 0.5, c.accent, c.accent2);
+    para(ctx, word(p, "stamp", "ADVENTURE"), sx + st / 2, sy + st * 0.94, {
+      w: st * 0.8,
       lines: 1,
-      size: 20,
-      min: 10,
-      key: "serif",
+      size: 15,
+      min: 9,
+      key: "sans",
       weight: 700,
       color: c.accent,
       align: "center",
     });
     ctx.restore();
-    postmark(
-      ctx,
-      side ? sx - 52 : sx - 120,
-      sy + 150,
-      66,
-      p.date || word(p, "mark", "ON THE ROAD"),
-      c.ink,
-    );
+    postmark(ctx, sx - 44, sy + st * 1.16, 52, p.date || word(p, "mark", "ON THE ROAD"), ink.main);
 
-    const x = side ? 630 : s.x;
-    const w = side ? 380 : s.w;
-    let y = side ? 340 : s.y + s.h + 56;
-    const k = p.story ? 1.4 : 1;
-    y = para(ctx, word(p, "kicker", "ADVENTURE POSTCARD"), x, y, {
-      w,
-      lines: 1,
-      size: 24 * k,
-      key: "sans",
-      weight: 700,
-      color: c.accent,
-    });
-    ctx.strokeStyle = c.accent2;
-    ctx.lineWidth = 3;
-    ctx.beginPath();
-    ctx.moveTo(x, y + 2);
-    ctx.lineTo(x + 120, y + 2);
-    ctx.stroke();
-    y += 22;
-    y = para(ctx, p.head, x, y, {
-      w,
-      lines: side ? 3 : 2,
-      size: (side ? 56 : 72) * k,
-      key: t.display,
-      weight: 700,
-      color: c.ink,
-      lh: 1.1,
-    });
-    y = para(ctx, `Starring ${p.name}`, x, y + 10, {
-      w,
-      lines: 1,
-      size: 38 * k,
-      key: "serif",
-      italic: true,
-      color: c.accent,
-    });
-    if (p.date)
-      y = para(ctx, p.date, x, y, {
+    // The words, drawn straight onto the picture: no panel, no opaque band.
+    const x = 64;
+    const w = W - 128;
+    const blocks: Block[] = [
+      {
+        text: word(p, "kicker", "ADVENTURE POSTCARD"),
         w,
         lines: 1,
-        size: 26 * k,
-        key: t.body,
-        color: softOn(c.bg, t),
-      });
-    if (p.sub)
-      y = para(ctx, p.sub, x, y + 6, {
-        w,
-        lines: 2,
-        size: 28 * k,
-        key: t.body,
+        size: p.story ? 30 : 25,
+        key: "sans",
         weight: 700,
-        color: c.ink,
-      });
-    const limit = H - p.safeBottom - 50;
-    if (p.memory) {
-      const size = 30 * k;
-      para(ctx, p.memory, x, y + 22, {
+        color: ink.accent,
+        outline: ink.outline,
+        gap: 12,
+      },
+      {
+        text: p.head,
         w,
-        lines: Math.min(5, linesFit(y + 22, limit, size, 1.32)),
-        size,
-        key: "serif",
-        italic: true,
-        color: c.ink,
-        lh: 1.32,
-      });
-    }
-    brand(ctx, x + w, H - p.safeBottom + 8, "right", softOn(c.bg, t), 24);
+        lines: p.story ? 3 : 2,
+        size: p.story ? 92 : 74,
+        key: t.display,
+        weight: 700,
+        color: ink.main,
+        outline: ink.outline,
+        lh: 1.06,
+        gap: 10,
+      },
+      {
+        text: p.name,
+        w,
+        lines: 1,
+        size: p.story ? 58 : 48,
+        key: "hand",
+        weight: 500,
+        color: ink.main,
+        outline: ink.outline,
+        gap: 6,
+      },
+      {
+        text: p.memory,
+        w: Math.min(w, 820),
+        lines: p.story ? 4 : 3,
+        size: p.story ? 38 : 32,
+        key: "hand",
+        weight: 400,
+        color: ink.soft,
+        outline: ink.outline,
+        lh: 1.16,
+        gap: 4,
+      },
+      {
+        text: p.date,
+        w,
+        lines: 1,
+        size: p.story ? 28 : 24,
+        key: t.body,
+        color: ink.soft,
+        outline: ink.outline,
+      },
+    ];
+    stackUp(ctx, blocks, x, floor + 14);
+
+    brand(ctx, W - 58, H - 40, "right", ink.soft, 22);
   },
 };
 

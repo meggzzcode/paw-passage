@@ -1,6 +1,7 @@
-// Finished keepsake examples, drawn by the real keepsake editor from real, licensed dog photographs (credits in
-// docs/IMAGE-CREDITS.md). Each item can show the original photo ("before") next to the finished keepsake ("after").
-// They are examples, not customer stories. Renders nothing while the list is empty, so no placeholder ever shows.
+// Finished keepsake examples, drawn by the real keepsake renderer from original sample art: an illustrated
+// sample dog ("Biscuit"), not a customer's dog. Each item can show the photo it was made from ("before") next
+// to the finished keepsake ("after"). They are examples, not customer stories. Renders nothing while the list
+// is empty, so no placeholder ever shows.
 export type ExampleImage = {
   src: string;
   alt: string;

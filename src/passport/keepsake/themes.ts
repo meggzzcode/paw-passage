@@ -22,6 +22,8 @@ export const FONTS = {
   sans: 'Figtree, "Helvetica Neue", Helvetica, Arial, sans-serif',
   condensed: '"Arial Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif',
   heavy: '"Arial Black", "Helvetica Neue", Helvetica, Arial, sans-serif',
+  /** Decorative handwriting only: captions and dates, never safety, payment or instructions. */
+  hand: '"Caveat", "Segoe Script", "Bradley Hand", "Comic Sans MS", cursive',
 } as const;
 export type FontKey = keyof typeof FONTS;
 

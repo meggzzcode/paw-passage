@@ -2,6 +2,15 @@
 import type { ReactNode } from "react";
 import { StampArt } from "./art/StampArt";
 
+/**
+ * The cover's one primary action, by state: a new or free visitor with no reveal is invited to the first adventure, a free
+ * visitor who has revealed their intro adventure goes back to it, and a paying customer looks for another.
+ */
+export function passportPrimaryLabel(entitled: boolean, revealed: boolean): string {
+  if (entitled) return "Find another adventure";
+  return revealed ? "Revisit our adventure" : "Find our first adventure";
+}
+
 export function PassportCover({
   name,
   headline,

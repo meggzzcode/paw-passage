@@ -194,7 +194,6 @@ export function AccountPanel() {
       <h2 id="acct-h" className="pa-h">
         Full Passport account
       </h2>
-      <SharedDeviceChoice />
       <p className="pa-fine">
         Access status: {ent.status === "entitled" ? "active" : "not active"}. This copy is separate
         from the one stored in this browser.

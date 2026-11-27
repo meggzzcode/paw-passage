@@ -49,8 +49,12 @@ export const csrfFor = (secret: string, s: Session): string =>
  * wrong account). Derived with its own key, so it cannot be used to forge a session or a CSRF token, and the customer id
  * cannot be recovered from it.
  */
+// Lowercase hex, 24 characters: the browser (src/passport/device-owner.ts) only accepts /^[a-f0-9]{8,64}$/ and treats any other
+// value as "an older server", which silently turned the shared-device protection off. A test pins both ends together.
 export const ownerTagFor = (secret: string, cus: string): string =>
-  hmac(deriveKey(secret, "device-owner"), cus).slice(0, 24);
+  Buffer.from(hmac(deriveKey(secret, "device-owner"), cus), "base64url")
+    .toString("hex")
+    .slice(0, 24);
 
 export function readCookie(header: string | null, name: string): string | null {
   if (!header) return null;

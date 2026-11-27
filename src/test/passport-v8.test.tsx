@@ -5,7 +5,7 @@ import { BadgeArt, BADGE_IDS, badgeIdFor } from "@/components/passport/art/Badge
 import { STATE_TEXT } from "@/components/passport/art/art-shared";
 import type { CollectibleState } from "@/components/passport/art/art-shared";
 import { PassportSection } from "@/components/passport/PassportSection";
-import { PassportCover } from "@/components/passport/PassportCover";
+import { PassportCover, passportPrimaryLabel } from "@/components/passport/PassportCover";
 import { StampsAndMilestones } from "@/components/passport/PassportRewards";
 import { achievements, stamps } from "@/passport/content";
 import { renderUi } from "./collections-fixtures";
@@ -145,6 +145,13 @@ describe("passport chapters", () => {
     );
     expect(screen.getByText("Biscuit's Adventure Passport")).toBeTruthy();
     expect(screen.getByText(/2 adventures collected · 1 stamp$/)).toBeTruthy();
+  });
+
+  it("the cover's primary action follows the state", () => {
+    expect(passportPrimaryLabel(false, false)).toBe("Find our first adventure");
+    expect(passportPrimaryLabel(false, true)).toBe("Revisit our adventure");
+    expect(passportPrimaryLabel(true, false)).toBe("Find another adventure");
+    expect(passportPrimaryLabel(true, true)).toBe("Find another adventure");
   });
 
   it("starts collapsed, mounts content on open, and opens for its hash anchor", async () => {

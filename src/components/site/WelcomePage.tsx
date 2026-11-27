@@ -65,8 +65,8 @@ export function WelcomePage() {
         <h1 className="pa-h1">Welcome</h1>
         <p className="pa-sub">
           We could not find an active full Passport on this device. If you have already bought it,
-          restore access with your purchase code. Nothing is lost either way, and the free
-          adventures keep working.
+          restore access with your purchase code. Nothing is lost either way, and your first
+          adventure keeps working.
         </p>
         <p className="pp-cta-row">
           <AppLink to="/restore-access" className="pp-btn pp-btn-primary">
@@ -106,7 +106,7 @@ export function WelcomePage() {
             <li>
               {n(t.adventures, "premium adventure", "premium adventures")}
               {t.collections > 0 ? ` across ${n(t.collections, "collection", "collections")}` : ""},
-              on top of the free ones
+              on top of your first adventure
             </li>
           ) : (
             <li>The full library is loading on this device</li>

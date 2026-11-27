@@ -19,6 +19,7 @@ import { SiteHeader } from "../components/shell/SiteHeader";
 import { SiteFooter } from "../components/shell/SiteFooter";
 import { InstallRuntime } from "../components/site/InstallRuntime";
 import { PassportRuntime } from "../passport/useSync";
+import { HomePendingGate } from "../components/shell/HomePendingGate";
 import { ConsentNotice } from "../components/site/ConsentNotice";
 
 function NotFoundComponent() {
@@ -186,7 +187,7 @@ function RootShell({ children }: { children: ReactNode }) {
         <script
           dangerouslySetInnerHTML={{
             __html:
-              "try{if(window.localStorage.getItem('pp.acct.v1'))document.documentElement.setAttribute('data-acct','1')}catch(e){}",
+              "try{if(window.localStorage.getItem('pp.acct.v1')){var d=document.documentElement;d.setAttribute('data-acct','1');d.setAttribute('data-home-pending','1')}}catch(e){}",
           }}
         />
       </head>
@@ -208,6 +209,7 @@ function RootComponent() {
       </a>
       <PassportRuntime />
       <InstallRuntime />
+      <HomePendingGate />
       <SiteHeader />
       <main id="main" tabIndex={-1}>
         {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}

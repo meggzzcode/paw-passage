@@ -256,7 +256,9 @@ function Progress() {
   const n = members(save.done).filter((id) => known.has(id)).length;
   return (
     <p className="pa-fine">
-      {n} of {library.length} {ctx.unlocked ? "" : "free "}adventures completed.{" "}
+      {ctx.unlocked
+        ? `${n} of ${library.length} adventures completed.`
+        : `${n} ${n === 1 ? "adventure" : "adventures"} completed.`}{" "}
       <a href="/passport">See your passport</a>
     </p>
   );

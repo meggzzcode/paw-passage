@@ -13,6 +13,7 @@ import { clearPlansLocal } from "@/lib/plans";
 import { disableOnThisDevice, getLocalDeviceId } from "@/lib/notifications";
 
 export const OWNER_KEY = "pp.owner.v1";
+const ACCOUNT_FLAG_KEY = "pp.acct.v1"; // same key as premium-client ACCOUNT_FLAG (that module imports this one)
 
 /**
  * CUSTOMER-SPECIFIC data on this device: removed by "Sign out and clear this device" and by "start fresh".
@@ -120,8 +121,21 @@ export function wipeCustomerData(): void {
 /** "Start fresh on this device": the previous customer's local records are removed, the new customer's sync pulls theirs. */
 export function startFreshForNewCustomer(): void {
   const next = conflict?.next ?? null;
+  // The new customer is signed in right now: the "this browser has an account" flag belongs to THEM, so it survives the wipe
+  // (otherwise the next page load would treat the browser as free until they activate again).
+  let hadAccount: string | null = null;
+  try {
+    hadAccount = window.localStorage.getItem(ACCOUNT_FLAG_KEY);
+  } catch {
+    /* blocked storage */
+  }
   wipeCustomerData();
   setDeviceOwner(next);
+  try {
+    if (hadAccount) window.localStorage.setItem(ACCOUNT_FLAG_KEY, hadAccount);
+  } catch {
+    /* blocked storage */
+  }
   if (conflict) {
     conflict = null;
     emit();

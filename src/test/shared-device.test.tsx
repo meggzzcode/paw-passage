@@ -1,4 +1,5 @@
 import { act, cleanup, fireEvent, screen, waitFor } from "@testing-library/react";
+import { readFileSync } from "node:fs";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { adv, renderUi } from "./collections-fixtures";
 import { AccessForm, AccountPanel, SharedDeviceChoice } from "@/components/passport/AccessForms";
@@ -14,6 +15,7 @@ import {
 } from "@/passport/device-owner";
 import { has } from "@/passport/progress";
 import { _resetPlansForTests } from "@/lib/plans";
+import { ownerTagFor } from "@/server/passport/session";
 
 vi.mock("@/passport/content", async () => (await import("./collections-fixtures")).contentMock);
 vi.mock("@/components/passport/Keepsake", () => ({ Keepsake: () => null }));
@@ -27,7 +29,11 @@ const PREMIUM = adv("adv-ppp111", "Lighthouse Secret Walk", {
 });
 
 function server(owner: string) {
-  const s = { calls: [] as { method: string; url: string; body: unknown }[], signedOut: false };
+  const s = {
+    calls: [] as { method: string; url: string; body: unknown }[],
+    signedOut: false,
+    owner,
+  };
   const fn = vi.fn(async (url: string, init: RequestInit = {}) => {
     const method = (init.method ?? "GET").toUpperCase();
     const body = init.body ? JSON.parse(String(init.body)) : undefined;
@@ -41,7 +47,7 @@ function server(owner: string) {
           entitled: true,
           status: "active",
           csrf: "c1",
-          owner,
+          owner: s.owner,
         });
       case "GET /api/premium/adventures":
         return r(200, { ok: true, adventures: [PREMIUM] });
@@ -59,7 +65,7 @@ function server(owner: string) {
           reason: "activated",
           entitled: true,
           csrf: "c1",
-          owner,
+          owner: s.owner,
           save: null,
           rev: 1,
         });
@@ -153,6 +159,106 @@ describe("a second customer on the same device", () => {
     expect(JSON.stringify(call.body)).not.toContain("localSave");
     expect(JSON.stringify(call.body)).not.toContain("Biscuit");
     expect(screen.getByRole("button", { name: "Start fresh on this device" })).toBeInTheDocument();
+  });
+});
+
+// The REAL tag format, produced by the real server function (not a hand-written hex string). A mismatch between the server's
+// tag and the browser's accepted format once silently disabled this whole feature, because the tests seeded their own tags.
+const REAL_A = ownerTagFor("s".repeat(48), "cus_firstcustomer0000000000000000001");
+const REAL_B = ownerTagFor("s".repeat(48), "cus_secondcustomer000000000000000002");
+
+describe("the real server tag and the browser agree", () => {
+  it("the server tag is the format the browser accepts, stable per customer and different between customers", () => {
+    expect(REAL_A).toMatch(/^[a-f0-9]{8,64}$/);
+    expect(REAL_B).toMatch(/^[a-f0-9]{8,64}$/);
+    expect(REAL_A).not.toBe(REAL_B);
+    expect(ownerTagFor("s".repeat(48), "cus_firstcustomer0000000000000000001")).toBe(REAL_A);
+  });
+});
+
+describe("customer A signs out, customer B activates on the same device (real tags, full sequence)", () => {
+  async function activateWith(code: string) {
+    fireEvent.change(screen.getByLabelText("Purchase code"), { target: { value: code } });
+    fireEvent.click(screen.getByRole("button", { name: "Activate" }));
+  }
+
+  it("tags A at activation (no sync needed), A signs out, B is offered the choice and A's records are never uploaded", async () => {
+    // A: anonymous intro progress exists first; it MAY merge into the first paying customer.
+    completeAdventure("adv-aaa111", 1000);
+    setProfile({ name: "Biscuit" } as never, 1000);
+    const s = server(REAL_A);
+    // no PassportRuntime: sync never runs for A, so the only thing that can tag the save is the activation itself
+    await renderUi(<AccessForm kind="activate" />);
+    await activateWith("TESTCODE-AAAAAAAA");
+    await screen.findByText(/Your purchase is confirmed/);
+    const first = s.calls.find((c) => c.url === "/api/access/activate")!;
+    expect(JSON.stringify(first.body)).toContain("Biscuit"); // anonymous progress is offered to the FIRST customer
+    expect(window.localStorage.getItem(OWNER_KEY)).toBe(REAL_A);
+    expect(screen.queryByText(/someone else's progress/)).toBeNull();
+
+    cleanup(); // A goes to My Passport (account panel) and signs out; the page for B then opens /unlock again
+    await renderUi(<AccountPanel />);
+    fireEvent.click(await screen.findByRole("button", { name: "Sign out of this device" }));
+    fireEvent.click(screen.getByRole("button", { name: "Yes, sign out of this device" }));
+    await waitFor(() => expect(s.signedOut).toBe(true));
+    await settle();
+    cleanup();
+    await renderUi(<AccessForm kind="activate" />);
+    expect(window.localStorage.getItem(OWNER_KEY)).toBe(REAL_A); // A's progress and tag stay on the device after sign-out
+    expect(has(getSave().done, "adv-aaa111")).toBe(true);
+
+    // B activates on the same device
+    s.owner = REAL_B;
+    s.calls.length = 0;
+    await activateWith("TESTCODE-BBBBBBBB");
+    await screen.findByText(/nothing has been merged yet/);
+    const second = s.calls.find((c) => c.url === "/api/access/activate")!;
+    expect(JSON.stringify(second.body)).not.toContain("Biscuit");
+    expect(JSON.stringify(second.body)).not.toContain("localSave");
+    expect(screen.getByText(/someone else's progress/)).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: "Start fresh on this device" })).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: "Keep it on this device only" })).toBeInTheDocument();
+    expect(has(getSave().done, "adv-aaa111")).toBe(true); // nothing removed until B chooses
+    expect(s.calls.filter((c) => c.method === "PUT")).toEqual([]);
+
+    fireEvent.click(screen.getByRole("button", { name: "Start fresh on this device" }));
+    await waitFor(() => expect(has(getSave().done, "adv-aaa111")).toBe(false));
+    expect(window.localStorage.getItem(OWNER_KEY)).toBe(REAL_B);
+    expect(window.localStorage.getItem(ACCOUNT_FLAG)).toBe("1"); // B is still signed in: a reload must not look free
+    expect(JSON.stringify({ ...window.localStorage })).not.toContain("Biscuit");
+  });
+
+  it("the choice is also shown after a reload (session check) for a different customer, with sync paused", async () => {
+    window.localStorage.setItem(OWNER_KEY, REAL_A);
+    completeAdventure("adv-aaa111", 1000);
+    window.localStorage.setItem(ACCOUNT_FLAG, "1");
+    const s = server(REAL_B);
+    await renderUi(
+      <>
+        <PassportRuntime />
+        <SharedDeviceChoice />
+      </>,
+    );
+    await screen.findByText(/someone else's progress/);
+    await settle();
+    expect(syncCalls(s)).toEqual([]);
+  });
+});
+
+describe("where the choice appears on My Passport", () => {
+  it("is shown up front on the page, not inside the collapsed Account and privacy section", () => {
+    const page = readFileSync("src/routes/passport.tsx", "utf8");
+    const choice = page.indexOf("<SharedDeviceChoice />");
+    expect(choice).toBeGreaterThan(-1);
+    expect(choice).toBeLessThan(page.indexOf("<PassportCover"));
+    expect(choice).toBeLessThan(page.indexOf("<AccountPanel />"));
+    // one copy only: the account panel does not render a second, hidden one
+    const forms = readFileSync("src/components/passport/AccessForms.tsx", "utf8");
+    const panel = forms.slice(
+      forms.indexOf("export function AccountPanel"),
+      forms.indexOf("export function SharedDeviceChoice"),
+    );
+    expect(panel).not.toContain("<SharedDeviceChoice />");
   });
 });
 

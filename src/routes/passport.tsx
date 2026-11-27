@@ -5,16 +5,17 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Container } from "@/components/shell/Container";
 import { Button } from "@/components/shell/Button";
 import { AppLink } from "@/components/shell/AppLink";
-import { PassportCover } from "@/components/passport/PassportCover";
+import { PassportCover, passportPrimaryLabel } from "@/components/passport/PassportCover";
 import { PassportSection } from "@/components/passport/PassportSection";
 import { StampsAndMilestones } from "@/components/passport/PassportRewards";
 import { StoryTimeline } from "@/components/passport/StoryTimeline";
 import { isLive, usePlans } from "@/lib/plans";
-import { AccountPanel } from "@/components/passport/AccessForms";
+import { AccountPanel, SharedDeviceChoice } from "@/components/passport/AccessForms";
 import { achievements as achDefs, collections, stamps as stampDefs } from "@/passport/content";
 import { useAdventureLibrary } from "@/components/passport/collections-shared";
 import { TrustBlock } from "@/components/passport/TrustBlock";
 import { SyncStatus } from "@/components/passport/SyncStatus";
+import { isRevealed } from "@/passport/starter";
 import { achievements, members } from "@/passport/progress";
 import { clearLocal, exportJson, importJson } from "@/passport/local-store";
 import { downloadBlob } from "@/passport/keepsake/download";
@@ -102,6 +103,8 @@ function PassportPage() {
     <Container>
       <div className="pa-page pv8-page">
         <RestoreAccessCallout />
+        {/* Up front, not inside the collapsed "Account and privacy" section: a different customer must see this choice. */}
+        <SharedDeviceChoice />
         <PassportCover
           name={name}
           headline={BRAND.passportHeadline}
@@ -111,7 +114,7 @@ function PassportPage() {
           facts={facts}
         >
           <div className="pv8-cover-actions">
-            <Button to="/discover">Find another adventure</Button>
+            <Button to="/discover">{passportPrimaryLabel(entitled, isRevealed(save))}</Button>
             <AppLink
               to="/discover"
               search={{ mode: "made" } as never}

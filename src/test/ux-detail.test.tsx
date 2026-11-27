@@ -204,6 +204,17 @@ describe("/unlock purchase clarity and entitled state", () => {
     expect(screen.getAllByText("Already have a code?")).toHaveLength(1);
     expect(screen.getAllByLabelText("Purchase code")).toHaveLength(1);
   });
+  it("right after activating here: the label appears once, with the confirmation, the single form and the welcome link", () => {
+    const { rerender } = render(<Unlock />);
+    fireEvent.click(screen.getByText("Already have a code?", { selector: "summary" }));
+    fireEvent.submit(screen.getByRole("form", { name: "Activate your code" })); // marks "activated here"
+    ent.state = { ...ent.state, status: "entitled", signedIn: true };
+    rerender(<Unlock />);
+    const main = document.body.textContent ?? "";
+    expect(main.match(/Already have a code\?/g)).toHaveLength(1);
+    expect(screen.getAllByLabelText("Purchase code")).toHaveLength(1);
+    expect(screen.queryByRole("heading", { name: "Already have a code?" })).toBeNull();
+  });
   it("entitled: no sales page, no Buy button, links to Discover, My Passport, restore and support", () => {
     ent.state = { ...ent.state, status: "entitled", signedIn: true };
     render(<Unlock />);

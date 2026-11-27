@@ -28,10 +28,10 @@ export function InstallGuide() {
         install to use or buy anything. A home-screen icon is just a shortcut.
       </p>
       <p className="pa-fine" id="ins-free-note">
-        Free adventures and progress are saved on this device only, with no account. A home-screen
-        app keeps its own separate storage, so progress made in the browser will not appear in it,
-        and clearing site data removes it. Exporting a backup from My Passport is optional. Paid
-        Passport owners can restore access with their purchase code.
+        Your first adventure and your progress are saved on this device only, with no account. A
+        home-screen app keeps its own separate storage, so progress made in the browser will not
+        appear in it, and clearing site data removes it. Exporting a backup from My Passport is
+        optional. Paid Passport owners can restore access with their purchase code.
       </p>
 
       <section aria-labelledby="ins-ios">

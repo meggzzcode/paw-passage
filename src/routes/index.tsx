@@ -14,7 +14,7 @@ import { FILTER_EXAMPLES } from "@/components/site/keepsake-examples";
 import { FaqList } from "@/components/site/FaqList";
 import { FAQS } from "@/components/site/faq-content";
 import { HeroCollage } from "@/components/site/HeroCollage";
-import { HomeSkeleton, ReturningHome } from "@/components/site/ReturningHome";
+import { AccessCheckFailed, HomeSkeleton, ReturningHome } from "@/components/site/ReturningHome";
 import { EarlyTesters } from "@/components/site/EarlyTesters";
 import { useNavMode } from "@/components/shell/useNavMode";
 import {
@@ -50,7 +50,8 @@ export const Route = createFileRoute("/")({
  */
 function Home() {
   const { mode } = useNavMode();
-  if (mode === "paid" || mode === "error") return <ReturningHome />;
+  if (mode === "paid") return <ReturningHome />;
+  if (mode === "error") return <AccessCheckFailed />;
   if (mode === "loading") return <HomeSkeleton />;
   return (
     <div className="pp-home-visitor">
@@ -73,7 +74,10 @@ const MOOD_BG = ["butter", "powder", "strawberry", "sage"] as const;
 const STEPS = [
   { h: "Discover", p: "Answer a few taps about your dog and we pick something that fits." },
   { h: "Adventure", p: "Reveal it, go and do it together, and stop whenever your dog wants to." },
-  { h: "Collect", p: "Finish and a stamp lands in your passport, ready to turn into a keepsake." },
+  {
+    h: "Collect",
+    p: "Your first stamp is collected free. Personalized photo keepsakes belong to the full Passport.",
+  },
 ];
 
 function SalesHome() {
@@ -95,6 +99,7 @@ function SalesHome() {
                 {homePromo.titleLead} <em>{homePromo.titleEm}</em> {homePromo.titleTail}
               </h1>
               <p className="pp-lede">{homePromo.lede}</p>
+              <p className="pp-fine">{homePromo.productLine}</p>
               <p className="pp-cta-row">
                 <Button to="/discover">{homePromo.primaryCta}</Button>
               </p>

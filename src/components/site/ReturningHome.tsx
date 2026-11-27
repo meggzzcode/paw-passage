@@ -4,6 +4,8 @@ import { Link } from "@tanstack/react-router";
 import { Button } from "@/components/shell/Button";
 import { Container } from "@/components/shell/Container";
 import { HeroCollage } from "@/components/site/HeroCollage";
+import { AppLink } from "@/components/shell/AppLink";
+import { useNavMode } from "@/components/shell/useNavMode";
 
 const QUIET_LINKS = [
   { label: "Collections", to: "/collections" as const, search: undefined },
@@ -62,6 +64,38 @@ export function HomeSkeleton() {
       <Container>
         <p className="pp-fine" role="status">
           Checking your access...
+        </p>
+      </Container>
+    </section>
+  );
+}
+
+/**
+ * Entitlement could not be verified (API error or offline) for a browser that holds an account flag. Calm and neutral:
+ * it never shows the confirmed customer welcome, and offers no purchase, restore push or price. Retry re-checks access.
+ */
+export function AccessCheckFailed() {
+  const { retry } = useNavMode();
+  return (
+    <section
+      className="pp-hero pp-hero-returning pp-home-error"
+      aria-labelledby="home-h1"
+      data-testid="access-check-failed"
+    >
+      <Container>
+        <h1 id="home-h1" className="pp-h1">
+          We couldn't confirm your access just now. Try again.
+        </h1>
+        <p className="pp-cta-row">
+          <button type="button" className="pp-btn pp-btn-primary" onClick={retry}>
+            Retry
+          </button>
+        </p>
+        <p className="pp-fine">
+          Your adventures and progress on this device are safe.{" "}
+          <AppLink to="/contact" className="pp-textlink">
+            Contact support
+          </AppLink>
         </p>
       </Container>
     </section>

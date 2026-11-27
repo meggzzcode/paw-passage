@@ -124,4 +124,11 @@ Rules that stay in force for these images, regardless of the commercial-use conf
 - Where context could imply real photos (the home hero collage), the page carries the line "Illustrative images only. They are not photos of real dogs, people or completed adventures."
 - Low priority for Cowork: record the Lovable terms URL and date when convenient. This is not a launch blocker.
 
+### Image rights record (updated 2026-11-27)
+
+- Provenance as stated, not independently verified: the embedded C2PA manifests (read as text, not cryptographically validated) declare the images AI-generated through an image API; Lovable stated they were created with its image tool.
+- Commercial-use status: OWNER-CONFIRMED on 2026-11-26 (the owner confirms commercial use is OK). This is the owner's confirmation, recorded here; it is not a verification of Lovable's or the generator's terms.
+- Business-transfer rights: owner confirms the assets are owned/usable by the business. The terms URL and date are not yet recorded (low-priority Cowork task).
+- The AI-imagery disclosure line stays on the pages that show these images ("Illustrative images only. They are not photos of real dogs, people or completed adventures."). No purchases of image rights were made.
+
 Still UNVERIFIED (unchanged, not part of this trial): authorship of `public/examples/then-and-now.webp`, `seasonal.webp`, `camping-patch.webp`; the journal and guide illustrations (Lovable-generated per Lovable).

@@ -73,11 +73,30 @@ describe("home page by access state", () => {
     expect(document.body.textContent).not.toMatch(/\$\d|Get the Passport/);
   });
 
-  it("offline with the flag: still no purchase pitch", async () => {
+  it("verification failed (offline or API error with the flag): a calm retry state, never the confirmed welcome", async () => {
     window.localStorage.setItem(ACCOUNT_FLAG, "1");
     ent.status = "offline";
     await renderUi(<Home />);
+    expect(screen.getByRole("heading", { level: 1 }).textContent).toMatch(
+      /couldn't confirm your access just now/,
+    );
+    expect(screen.getByRole("button", { name: "Retry" })).toBeInTheDocument();
+    expect(screen.getByRole("link", { name: "Contact support" })).toHaveAttribute(
+      "href",
+      "/contact",
+    );
+    expect(document.body.textContent).not.toMatch(/Welcome back|What shall we do/i);
     expect(document.body.textContent).not.toMatch(priceOrPitch);
+    expect(document.querySelector('a[href="/unlock"], a[href="/restore-access"]')).toBeNull();
+  });
+
+  it("states the product in one line and the steps say the first stamp is free, keepsakes are in the full Passport", async () => {
+    await renderUi(<Home />);
+    expect(
+      screen.getByText("Your digital Adventure Passport. Ready whenever you are."),
+    ).toBeInTheDocument();
+    expect(document.body.textContent).toMatch(/first stamp is collected free/);
+    expect(document.body.textContent).toMatch(/photo keepsakes belong to the full Passport/);
   });
 
   it("hides the visitor page from the first frame for a returning browser (data-acct) and leaves it alone otherwise", async () => {

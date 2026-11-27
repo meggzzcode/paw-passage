@@ -26,6 +26,8 @@ export const BRAND = {
     /** The home page's one primary action (starts the quiz directly). Other pages keep `primaryCta`. */
     primaryCtaFree: "Find our first adventure — free.",
     ctaNote: "Your first adventure is free.",
+    /** One plain line saying what the product is (home hero). */
+    productLine: "Your digital Adventure Passport. Ready whenever you are.",
   },
   /** The two options a visitor chooses between (home invitation and /unlock). The paid label adds the price in commercial.ts. */
   freeOption: "Your first adventure — free.",

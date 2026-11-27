@@ -81,6 +81,7 @@ export const homePromo = {
   titleTail: BRAND.hero.titleTail,
   lede: BRAND.hero.support,
   ctaNote: BRAND.hero.ctaNote,
+  productLine: BRAND.hero.productLine,
   commercial: ONE_TIME_LINE,
   primaryCta: BRAND.hero.primaryCtaFree,
   secondaryCta: "Explore the Adventure Collection",

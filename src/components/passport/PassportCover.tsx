@@ -36,15 +36,16 @@ export function PassportCover({
     <header className="pv8-cover">
       <p className="pv8-cover-kicker">{name}'s Adventure Passport</p>
       <h1 className="pv8-cover-h1">{headline}</h1>
-      <p className="pv8-cover-progress">
-        {adventures === 0
-          ? access === "paid"
-            ? "Your Passport is ready. Nothing collected yet. Let's find a first little adventure."
-            : access === "unconfirmed"
-              ? "Nothing collected on this device yet."
+      {/* While access cannot be confirmed with nothing collected, say nothing about progress: the error card below speaks. */}
+      {!(access === "unconfirmed" && adventures === 0) && (
+        <p className="pv8-cover-progress">
+          {adventures === 0
+            ? access === "paid"
+              ? "Your Passport is ready. Nothing collected yet. Let's find a first little adventure."
               : "Your first adventure is waiting."
-          : `${adventures} ${adventures === 1 ? "adventure" : "adventures"} collected · ${stamps} ${stamps === 1 ? "stamp" : "stamps"}`}
-      </p>
+            : `${adventures} ${adventures === 1 ? "adventure" : "adventures"} collected · ${stamps} ${stamps === 1 ? "stamp" : "stamps"}`}
+        </p>
+      )}
       {shown.length > 0 && (
         <ul className="pv8-cover-stamps" aria-label="Stamps on your cover">
           {shown.map((s, i) => (

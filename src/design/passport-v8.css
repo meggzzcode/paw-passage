@@ -193,3 +193,10 @@
   color: var(--pp-muted);
   max-width: 11rem;
 }
+
+/* The reassurance line sits on the dark green cover: keep it readable (it was dark-on-dark). */
+.pv8-cover .pv8-cover-safe,
+.pv8-cover-error .pa-fine {
+  color: var(--pp-on-red, #fff);
+  opacity: 0.92;
+}

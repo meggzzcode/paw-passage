@@ -151,7 +151,9 @@ function PassportPage() {
                   Restore access
                 </AppLink>
               </div>
-              <p className="pa-fine">Your adventures and progress on this device are safe.</p>
+              <p className="pa-fine pv8-cover-safe">
+                Your adventures and progress on this device are safe.
+              </p>
             </div>
           ) : (
             <div className="pv8-cover-actions">

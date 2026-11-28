@@ -164,6 +164,8 @@ describe("passport chapters", () => {
     expect(cover("paid")).not.toMatch(/first adventure is waiting/);
     expect(cover("free")).toMatch(/Your first adventure is waiting\./);
     expect(cover("unconfirmed")).not.toMatch(/waiting|free|ready/i);
+    // The error card carries the message; no progress claim is made while access is unconfirmed and nothing is collected.
+    expect(cover("unconfirmed")).not.toMatch(/nothing collected/i);
   });
 
   it("the cover's primary action follows the state", () => {

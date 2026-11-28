@@ -18,7 +18,7 @@ import { CompletionPanel } from "./CompletionPanel";
 import "@/design/ux-detail.css";
 import { AddToCollection } from "./AddToCollection";
 import { DogSigns } from "./ReadYourDog";
-import { journeyPhoto } from "./journey-art";
+import { journeyPhoto, journeyPhotoKey } from "./journey-art";
 import { useKeepsakeEntitled } from "@/passport/useKeepsakeEntitled";
 import { StampGrid } from "@/passport/art/stamps";
 import { stamps as stampList } from "@/passport/content";
@@ -277,8 +277,8 @@ export function AdventureCard({
       className={`pa-card pd-card qr-adv${entering ? " qr-unwrap" : ""}`}
       aria-label={a.title}
     >
-      <div className="qr-adv-hero" aria-hidden="true">
-        <img src={journeyPhoto(a)} alt="" width={640} height={200} decoding="async" />
+      <div className="qr-adv-hero" data-photo={journeyPhotoKey(a)} aria-hidden="true">
+        <img src={journeyPhoto(a)} alt="" width={640} height={360} decoding="async" />
       </div>
       {(done || repeats > 0) && (
         <p className="pd-types">

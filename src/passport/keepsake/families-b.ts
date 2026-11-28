@@ -3,7 +3,17 @@
 // local scrim, delicate type, a little handwriting and a few vector details kept to margins and corners.
 // Adventure personality comes from the theme (accent, symbols, short wording), never from a per-adventure canvas.
 import { circle, type Ctx } from "./render";
-import { W, barcode, inkOn, readable, softOn, type FamilyDef, type Prep, type Slot } from "./kit";
+import {
+  W,
+  barcode,
+  inkOn,
+  isDark,
+  readable,
+  softOn,
+  type FamilyDef,
+  type Prep,
+  type Slot,
+} from "./kit";
 import {
   brandMark,
   displayFont,
@@ -14,6 +24,7 @@ import {
   fullSlot,
   handFont,
   heightOf,
+  layout,
   mix,
   noteStyle,
   paintPhoto,
@@ -23,6 +34,7 @@ import {
   scrim,
   sentence,
   sparkleRule,
+  textHalo,
   tiltedMotif,
   tintOf,
   whoLine,
@@ -88,41 +100,256 @@ const MOTIF_NIGHT = ["constellation", "moon", "star"];
 
 // ====================================================================== seasonal-frame
 
+type SeasonLook =
+  | "rays"
+  | "leaves"
+  | "snow"
+  | "blossom"
+  | "sprigs"
+  | "lantern"
+  | "constellation"
+  | "bokeh"
+  | "ring"
+  | "moon"
+  | "stars"
+  | "viewfinder"
+  | "hearts";
+
+/** Small per-theme details, so every season looks like its own thing on the same photograph. */
+const SEASON_LOOK: Record<string, SeasonLook> = {
+  sunrise: "rays",
+  autumn: "leaves",
+  winter: "snow",
+  spring: "blossom",
+  "botanical-plate": "sprigs",
+  "lantern-woods": "lantern",
+  "star-chart": "constellation",
+  "golden-hour": "bokeh",
+  "sundial-log": "ring",
+  "moonlight-frame": "moon",
+  "constellation-night": "stars",
+  "window-safari-frame": "viewfinder",
+  "partners-portrait": "hearts",
+};
+
+function lookOf(t: ThemeConfig): SeasonLook {
+  const known = SEASON_LOOK[t.id];
+  if (known) return known;
+  if (t.motif === "snowflake") return "snow";
+  if (MOTIF_NIGHT.includes(t.motif) || MOTIF_NIGHT.includes(t.motif2)) return "stars";
+  if (t.motif === "sun") return "rays";
+  if (t.motif === "heart") return "hearts";
+  if (MOTIF_GREEN.includes(t.motif)) return "sprigs";
+  return "bokeh";
+}
+
+const rand = (i: number, n: number) => {
+  const v = Math.sin((i + n * 31) * 91.3 + 7.7) * 43758.5453;
+  return v - Math.floor(v);
+};
+
 function seasonDecor(ctx: Ctx, t: ThemeConfig, k: Tint, p: Prep): void {
-  const z = zoneOf(p);
   const top = p.story ? 262 : 122;
-  tiltedMotif(ctx, t, "motif", 118, top, 96, -0.28, k.a, k.b, 0.9);
-  tiltedMotif(ctx, t, "motif2", W - 112, top, 70, 0.32, k.b, k.a, 0.82);
-  if (t.motif === "snowflake") {
-    ctx.save();
-    ctx.fillStyle = WHITE;
-    for (let i = 0; i < 34; i++) {
-      const edge = i % 3;
-      const r = (n: number) => {
-        const v = Math.sin((i + n) * 91.3 + 7.7) * 43758.5453;
-        return v - Math.floor(v);
-      };
-      const x =
-        edge === 0 ? 20 + r(1) * 120 : edge === 1 ? W - 140 + r(2) * 120 : 40 + r(3) * (W - 80);
-      const y = edge === 2 ? 20 + r(4) * 220 : 40 + r(5) * (p.H - 120);
-      ctx.globalAlpha = 0.35 + r(6) * 0.4;
-      circle(ctx, x, y, 3 + r(7) * 6);
-      ctx.fill();
-    }
-    ctx.restore();
-  } else if (MOTIF_NIGHT.includes(t.motif) || MOTIF_NIGHT.includes(t.motif2)) {
-    twinkles(ctx, 40, p.story ? 262 : 40, W - 80, 230, 11, 3, k.a, 0.85);
-    twinkles(ctx, 30, 300, 80, p.H - 700, 4, 11, WHITE, 0.6);
-    twinkles(ctx, W - 110, 300, 80, p.H - 700, 4, 17, WHITE, 0.6);
-  } else if (MOTIF_GREEN.includes(t.motif)) {
-    for (let i = 0; i < 4; i++) {
-      const y = (p.story ? 520 : 300) + i * ((p.H - (p.story ? 1100 : 760)) / 3);
-      tiltedMotif(ctx, t, "motif", 52, y, 44, -0.5 + i * 0.25, k.a, k.b, 0.55);
-      tiltedMotif(ctx, t, "motif", W - 52, y + 70, 44, 0.5 - i * 0.25, k.a, k.b, 0.55);
-    }
-  } else {
-    twinkles(ctx, 40, p.story ? 262 : 40, W - 80, 200, 5, 5, k.a, 0.7);
+  const look = lookOf(t);
+  if (look !== "ring" && look !== "moon") {
+    tiltedMotif(ctx, t, "motif", 118, top, 96, -0.28, k.a, k.b, 0.9);
+    tiltedMotif(ctx, t, "motif2", W - 112, top, 70, 0.32, k.b, k.a, 0.82);
   }
+  ctx.save();
+  switch (look) {
+    case "snow":
+      ctx.fillStyle = WHITE;
+      for (let i = 0; i < 34; i++) {
+        const edge = i % 3;
+        const x =
+          edge === 0
+            ? 20 + rand(i, 1) * 120
+            : edge === 1
+              ? W - 140 + rand(i, 2) * 120
+              : 40 + rand(i, 3) * (W - 80);
+        const y = edge === 2 ? 20 + rand(i, 4) * 220 : 40 + rand(i, 5) * (p.H - 120);
+        ctx.globalAlpha = 0.35 + rand(i, 6) * 0.4;
+        circle(ctx, x, y, 3 + rand(i, 7) * 6);
+        ctx.fill();
+      }
+      break;
+    case "stars":
+      twinkles(ctx, 40, p.story ? 262 : 40, W - 80, 230, 11, 3, k.a, 0.85);
+      twinkles(ctx, 30, 300, 80, p.H - 700, 4, 11, WHITE, 0.6);
+      twinkles(ctx, W - 110, 300, 80, p.H - 700, 4, 17, WHITE, 0.6);
+      break;
+    case "constellation": {
+      const ox = 60;
+      const oy = (p.story ? 262 : 60) + 190;
+      const pts: Array<[number, number]> = [
+        [ox + 20, oy + 30],
+        [ox + 130, oy - 20],
+        [ox + 250, oy + 40],
+        [ox + 360, oy - 10],
+        [ox + 470, oy + 60],
+      ];
+      ctx.strokeStyle = k.a;
+      ctx.globalAlpha = 0.55;
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+      pts.forEach(([x, y], i) => (i ? ctx.lineTo(x, y) : ctx.moveTo(x, y)));
+      ctx.stroke();
+      ctx.globalAlpha = 0.95;
+      ctx.fillStyle = k.a;
+      for (const [x, y] of pts) {
+        circle(ctx, x, y, 7);
+        ctx.fill();
+      }
+      twinkles(ctx, W - 330, p.story ? 262 : 40, 260, 160, 5, 21, WHITE, 0.7);
+      break;
+    }
+    case "moon": {
+      const mx = W - 150;
+      const my = top + 30;
+      const g = ctx.createRadialGradient(mx, my, 10, mx, my, 150);
+      g.addColorStop(0, "rgba(255,244,200,0.45)");
+      g.addColorStop(1, "rgba(255,244,200,0)");
+      ctx.fillStyle = g;
+      ctx.fillRect(mx - 150, my - 150, 300, 300);
+      ctx.globalAlpha = 0.95;
+      tiltedMotif(ctx, t, "motif", mx, my, 96, 0.2, k.a, k.b, 0.95);
+      twinkles(ctx, 40, p.story ? 262 : 40, W - 360, 200, 6, 9, WHITE, 0.75);
+      break;
+    }
+    case "rays": {
+      ctx.strokeStyle = k.a;
+      ctx.lineWidth = 5;
+      ctx.lineCap = "round";
+      for (let i = 0; i < 9; i++) {
+        const a = Math.PI * (0.52 + i * 0.045);
+        ctx.globalAlpha = 0.26 - i * 0.012;
+        ctx.beginPath();
+        ctx.moveTo(W - 40 + Math.cos(a) * 90, -10 + Math.sin(a) * 90);
+        ctx.lineTo(W - 40 + Math.cos(a) * 560, -10 + Math.sin(a) * 560);
+        ctx.stroke();
+      }
+      break;
+    }
+    case "bokeh":
+      ctx.fillStyle = k.a;
+      for (let i = 0; i < 9; i++) {
+        const x = W - 60 - rand(i, 1) * 330;
+        const y = 30 + rand(i, 2) * 200 + (p.story ? 230 : 0);
+        ctx.globalAlpha = 0.12 + rand(i, 3) * 0.16;
+        circle(ctx, x, y, 16 + rand(i, 4) * 44);
+        ctx.fill();
+      }
+      for (let i = 0; i < 4; i++) {
+        ctx.globalAlpha = 0.14 + rand(i, 8) * 0.12;
+        circle(
+          ctx,
+          30 + rand(i, 5) * 70,
+          380 + i * 190 + (p.story ? 150 : 0),
+          20 + rand(i, 6) * 30,
+        );
+        ctx.fill();
+      }
+      break;
+    case "ring": {
+      const cx = W - 120;
+      const cy = top + 30;
+      ctx.strokeStyle = k.a;
+      ctx.lineWidth = 2.5;
+      for (const [r, al] of [
+        [44, 0.9],
+        [78, 0.6],
+        [112, 0.35],
+      ] as const) {
+        ctx.globalAlpha = al;
+        circle(ctx, cx, cy, r);
+        ctx.stroke();
+      }
+      ctx.globalAlpha = 0.85;
+      ctx.lineWidth = 3;
+      for (let i = 0; i < 12; i++) {
+        const a = (i / 12) * Math.PI * 2;
+        ctx.beginPath();
+        ctx.moveTo(cx + Math.cos(a) * 112, cy + Math.sin(a) * 112);
+        ctx.lineTo(cx + Math.cos(a) * 126, cy + Math.sin(a) * 126);
+        ctx.stroke();
+      }
+      ctx.beginPath();
+      ctx.moveTo(cx, cy);
+      ctx.lineTo(cx + 30, cy - 34);
+      ctx.stroke();
+      tiltedMotif(ctx, t, "motif", 118, top, 90, -0.2, k.a, k.b, 0.9);
+      break;
+    }
+    case "leaves":
+      for (let i = 0; i < 11; i++) {
+        const left = i % 2 === 0;
+        const x = left ? 30 + rand(i, 1) * 110 : W - 30 - rand(i, 2) * 110;
+        const y = (p.story ? 360 : 200) + rand(i, 3) * (p.H * (p.story ? 0.42 : 0.4));
+        tiltedMotif(ctx, t, "motif", x, y, 34 + rand(i, 4) * 36, rand(i, 5) * 6, k.a, k.b, 0.7);
+      }
+      break;
+    case "blossom":
+      for (let i = 0; i < 16; i++) {
+        const x = 40 + rand(i, 1) * (W - 80);
+        const y = (p.story ? 262 : 50) + rand(i, 2) * 230;
+        ctx.fillStyle = i % 3 ? k.b : WHITE;
+        ctx.globalAlpha = 0.55 + rand(i, 3) * 0.35;
+        circle(ctx, x, y, 5 + rand(i, 4) * 10);
+        ctx.fill();
+      }
+      break;
+    case "lantern":
+      for (let i = 0; i < 6; i++) {
+        const x = i < 3 ? 40 + rand(i, 1) * 140 : W - 40 - rand(i, 2) * 140;
+        const y = 340 + rand(i, 3) * (p.H * 0.45);
+        const g = ctx.createRadialGradient(x, y, 0, x, y, 46);
+        g.addColorStop(0, "rgba(255,214,120,0.55)");
+        g.addColorStop(1, "rgba(255,214,120,0)");
+        ctx.fillStyle = g;
+        ctx.fillRect(x - 46, y - 46, 92, 92);
+      }
+      break;
+    case "viewfinder":
+      ctx.strokeStyle = WHITE;
+      ctx.lineWidth = 4;
+      ctx.lineCap = "round";
+      ctx.globalAlpha = 0.8;
+      ctx.beginPath();
+      ctx.moveTo(W / 2 - 40, p.H * 0.42);
+      ctx.lineTo(W / 2 + 40, p.H * 0.42);
+      ctx.stroke();
+      ctx.fillStyle = "#e5483b";
+      ctx.globalAlpha = 0.9;
+      circle(ctx, 92, top + 26, 10);
+      ctx.fill();
+      break;
+    case "hearts":
+      for (let i = 0; i < 8; i++) {
+        const x = 50 + rand(i, 1) * (W - 100);
+        const y = (p.story ? 262 : 50) + rand(i, 2) * 240;
+        tiltedMotif(
+          ctx,
+          t,
+          "motif",
+          x,
+          y,
+          26 + rand(i, 3) * 30,
+          (rand(i, 4) - 0.5) * 0.8,
+          k.b,
+          k.a,
+          0.75,
+        );
+      }
+      break;
+    case "sprigs":
+      for (let i = 0; i < 4; i++) {
+        const y = (p.story ? 520 : 300) + i * ((p.H - (p.story ? 1100 : 760)) / 3);
+        tiltedMotif(ctx, t, "motif", 52, y, 44, -0.5 + i * 0.25, k.a, k.b, 0.55);
+        tiltedMotif(ctx, t, "motif", W - 52, y + 70, 44, 0.5 - i * 0.25, k.a, k.b, 0.55);
+      }
+      break;
+  }
+  ctx.restore();
 }
 
 export const seasonalFrame: FamilyDef = {
@@ -137,6 +364,12 @@ export const seasonalFrame: FamilyDef = {
     const sq = p.spec.size === "square";
     paintPhoto(ctx, t, s, photos[0], 0);
     finish(ctx, s, k.deep, 0.24, ["sun", "lantern"].includes(t.motif) ? k.a : undefined);
+    // a gentle seasonal wash: deep tone for night themes, the second accent for light ones
+    ctx.save();
+    ctx.globalAlpha = isDark(t.palette.bg) ? 0.16 : 0.1;
+    ctx.fillStyle = isDark(t.palette.bg) ? t.palette.bg : t.palette.accent2;
+    ctx.fillRect(0, 0, W, H);
+    ctx.restore();
     const w = 800;
     const cx = W / 2;
     const handText = sq && p.sub ? p.sub : sentence(word(p, "kicker"));
@@ -176,6 +409,7 @@ export const seasonalFrame: FamilyDef = {
           lines: 1,
           size: 36,
           min: 34,
+          wrap: 2,
           font: sansFont,
           color: SOFT,
           align: "center",
@@ -190,6 +424,7 @@ export const seasonalFrame: FamilyDef = {
           lines: 1,
           size: 38,
           min: 34,
+          wrap: 2,
           font: sansBold,
           color: WHITE,
           align: "center",
@@ -214,9 +449,11 @@ export const seasonalFrame: FamilyDef = {
       H - Math.max(0, bottom - h - 170),
       "bottom",
       k.deep,
-      0.7,
+      0.6,
     );
     scrim(ctx, 0, 0, W, 300, "top", k.deep, 0.3);
+    // a feathered patch behind the caption, darker when the photo there is bright (cream or snowy fur)
+    textHalo(ctx, photos[0], s, 40, bottom - h - 70, W - 80, h + 110, k.deep);
     seasonDecor(ctx, t, k, p);
     edgeFrame(ctx, t, 34, 34, W - 68, H - 68, k.a, 0.5);
     // top-down in the same order, with the rule between the title block and the name line
@@ -294,10 +531,64 @@ export const eventTicket: FamilyDef = {
     finish(ctx, s, k.deep, 0.22);
 
     const tk = ticketSize(p);
+    const stubX = tk.w - 172;
+    const mw = stubX - 52;
+    const ink = inkOn(c.card, t);
+    const mute = readable(c.card, c.accent, c.ink, softOn(c.card, t));
+    // every ticket line shrinks first, then wraps; the ticket grows a little for each extra line
+    const evSt: TextStyle = {
+      w: mw,
+      lines: 1,
+      size: 26,
+      min: 22,
+      wrap: 2,
+      font: sansBold,
+      color: mute,
+    };
+    const nameSt: TextStyle = {
+      w: mw,
+      lines: 1,
+      size: sq ? 54 : 58,
+      min: 34,
+      wrap: 2,
+      font: displayFont(800),
+      color: ink,
+      lh: 1.08,
+    };
+    const headSt: TextStyle = {
+      w: mw,
+      lines: 1,
+      size: 34,
+      min: 30,
+      wrap: 2,
+      font: sansFont,
+      color: ink,
+    };
+    const dateSt: TextStyle = {
+      w: mw,
+      lines: 1,
+      size: 28,
+      min: 24,
+      wrap: 2,
+      font: sansBold,
+      color: mute,
+    };
+    const dateText = p.date ? `${word(p, "date", "DATE")}  \u00b7  ${p.date}` : "";
+    const evText = word(p, "event", "ADMIT ONE");
+    const nameText = cased(p, p.name);
+    for (const [txt, st] of [
+      [evText, evSt],
+      [nameText, nameSt],
+      [p.head, headSt],
+      [dateText, dateSt],
+    ] as const) {
+      if (!txt) continue;
+      const L = layout(ctx, txt, st);
+      tk.h += (L.lines.length - 1) * L.lh;
+    }
     const by = brandY(p);
     const tx = 52;
     const ty = by - 34 - tk.h;
-    const stubX = tk.w - 172;
 
     // handwriting above the ticket
     const noteW = 760;
@@ -327,6 +618,8 @@ export const eventTicket: FamilyDef = {
     const sTop = Math.max(0, Math.min(noteBottom - noteH, ty) - 120);
     scrim(ctx, 0, sTop, W, H - sTop, "bottom", k.deep, 0.5);
     scrim(ctx, 0, 0, W, 240, "top", k.deep, 0.2);
+    if (noteH > 0)
+      textHalo(ctx, photos[0], s, tx - 20, noteBottom - noteH - 30, 840, noteH + 60, k.deep);
     ticketDecor(ctx, t, k, p);
     stackUp(ctx, rows, tx + 4, noteBottom);
 
@@ -359,45 +652,12 @@ export const eventTicket: FamilyDef = {
     ctx.stroke();
     ctx.restore();
 
-    const ink = inkOn(c.card, t);
-    const mute = readable(c.card, c.accent, c.ink, softOn(c.card, t));
     const mx = tx + 32;
-    const mw = stubX - 52;
     let y = ty + 16;
-    y = draw(ctx, word(p, "event", "ADMIT ONE"), mx, y, {
-      w: mw,
-      lines: 1,
-      size: 26,
-      min: 22,
-      font: sansBold,
-      color: mute,
-    });
-    y = draw(ctx, cased(p, p.name), mx, y - 2, {
-      w: mw,
-      lines: 1,
-      size: sq ? 54 : 58,
-      min: 34,
-      font: displayFont(800),
-      color: ink,
-      lh: 1.08,
-    });
-    y = draw(ctx, p.head, mx, y, {
-      w: mw,
-      lines: 1,
-      size: 34,
-      min: 30,
-      font: sansFont,
-      color: ink,
-    });
-    if (p.date)
-      draw(ctx, `${word(p, "date", "DATE")}  ·  ${p.date}`, mx, y + 2, {
-        w: mw,
-        lines: 1,
-        size: 28,
-        min: 24,
-        font: sansBold,
-        color: mute,
-      });
+    y = draw(ctx, evText, mx, y, evSt);
+    y = draw(ctx, nameText, mx, y - 2, nameSt);
+    y = draw(ctx, p.head, mx, y, headSt);
+    if (dateText) draw(ctx, dateText, mx, y + 2, dateSt);
     // the tear-off end
     const sx = tx + stubX + 22;
     const sw = tk.w - stubX - 44;
@@ -421,22 +681,45 @@ export const eventTicket: FamilyDef = {
 
 // ====================================================================== then-and-now
 
-const STRIP = { story: 136, portrait: 126, square: 130 } as const;
+const STRIP_BASE = { story: 136, portrait: 126, square: 130 } as const;
+
+/** Rough line count of the handwritten note, so caption strips can be sized from the text alone. */
+function noteLines(m: string): number {
+  return m ? (m.length <= 48 ? 1 : m.length <= 96 ? 2 : 3) : 0;
+}
+
+/** Which optional handwritten lines the then-and-now strip carries: both when stacked, one when side by side. */
+function thenNowNotes(p: Prep): { sub: boolean; memory: boolean } {
+  const sq = p.spec.size === "square";
+  return { sub: Boolean(p.sub) && (!sq || !p.memory), memory: Boolean(p.memory) };
+}
+
+/** Strip height from the text alone (geometry has no canvas): title and name, plus the notes. */
+function thenNowStrip(p: Prep): number {
+  const size = p.spec.size;
+  const n = thenNowNotes(p);
+  return (
+    STRIP_BASE[size] +
+    (whoLine(p.name, p.date).length > 40 ? 44 : 0) +
+    (n.sub ? (p.sub.length > 52 ? 100 : 50) : 0) +
+    (n.memory ? noteLines(p.memory) * 50 + 10 : 0)
+  );
+}
 
 export const thenAndNow: FamilyDef = {
   slots(p) {
+    const strip = thenNowStrip(p);
     if (p.spec.size === "square") {
-      const h = 1080 - STRIP.square;
+      const h = 1080 - strip;
       return [
         { x: 0, y: 0, w: 534, h },
         { x: 546, y: 0, w: 534, h },
       ];
     }
-    const strip = p.story ? STRIP.story : STRIP.portrait;
     const each = Math.floor((p.H - strip) / 2);
     return [
       { x: 0, y: 0, w: W, h: each },
-      { x: 0, y: each + strip, w: W, h: each },
+      { x: 0, y: each + strip, w: W, h: p.H - each - strip },
     ];
   },
   draw(ctx, p, photos, slots) {
@@ -454,44 +737,80 @@ export const thenAndNow: FamilyDef = {
     finish(ctx, a, k.deep, 0.18);
     finish(ctx, b, k.deep, 0.18);
 
-    // the caption strip: paper, with the title and the dog's name
-    const sy = sq ? a.h : a.h;
-    const sh = sq ? STRIP.square : p.story ? STRIP.story : STRIP.portrait;
+    // the caption strip sits exactly on the seam between the photographs; every line of text lives on it
+    const sy = a.y + a.h;
+    const sh = sq ? H - a.h : b.y - sy;
     const ink = inkOn(c.bg, t);
     const cx = W / 2;
-    ctx.save();
-    ctx.globalAlpha = 0.55;
-    ctx.fillStyle = c.accent2;
-    if (sq) ctx.fillRect(a.w, 0, 12, a.h);
-    ctx.restore();
-    const headStyle: TextStyle = {
-      w: 940,
-      lines: 1,
-      size: p.story ? 48 : 46,
-      min: 34,
-      font: displayFont(700),
-      color: ink,
-      align: "center",
-    };
-    const whoStyle: TextStyle = {
-      w: 900,
-      lines: 1,
-      size: 34,
-      min: 34,
-      font: sansBold,
-      color: readable(c.bg, c.accent, softOn(c.bg, t), ink),
-      align: "center",
-    };
-    const hh = heightOf(ctx, p.head, headStyle) + heightOf(ctx, whoLine(p.name, p.date), whoStyle);
-    const top = sy + Math.max(10, (sh - hh) / 2);
-    const mid = draw(ctx, p.head, cx, top, headStyle);
-    draw(ctx, whoLine(p.name, p.date), cx, mid + 2, whoStyle);
+    if (sq) {
+      ctx.save();
+      ctx.globalAlpha = 0.55;
+      ctx.fillStyle = c.accent2;
+      ctx.fillRect(a.w, 0, 12, a.h);
+      ctx.restore();
+    }
+    const notes = thenNowNotes(p);
+    const accentInk = readable(c.bg, c.accent, softOn(c.bg, t), ink);
+    const rows: Row[] = [
+      {
+        text: p.head,
+        style: {
+          w: 940,
+          lines: 1,
+          size: p.story ? 48 : 46,
+          min: 34,
+          wrap: 2,
+          font: displayFont(700),
+          color: ink,
+          align: "center",
+        },
+      },
+      {
+        text: whoLine(p.name, p.date),
+        gap: 2,
+        style: {
+          w: 900,
+          lines: 1,
+          size: 34,
+          min: 34,
+          wrap: 2,
+          font: sansBold,
+          color: accentInk,
+          align: "center",
+        },
+      },
+      {
+        text: notes.sub ? p.sub : "",
+        gap: 4,
+        style: {
+          w: 900,
+          lines: 1,
+          size: 50,
+          min: 44,
+          wrap: 2,
+          font: handFont,
+          color: accentInk,
+          align: "center",
+        },
+      },
+      {
+        text: notes.memory ? p.memory : "",
+        gap: 4,
+        style: {
+          ...noteStyle(ctx, p.memory, 900, noteLines(p.memory) + 1, ink, "center", 46),
+          shadow: 0,
+        },
+      },
+    ];
+    const hh = stackHeight(ctx, rows);
+    stackUp(ctx, rows, cx, sy + sh - Math.max(8, (sh - hh) / 2));
 
-    // labels: small handwriting with a swash, one on each photograph
-    const label = (text: string, x: number, bottom: number, from: "bottom" | "top", s: Slot) => {
-      scrim(ctx, s.x, from === "bottom" ? bottom - 200 : s.y, s.w, 200, from, k.deep, 0.4);
-      const tw = 140 + text.length * 26;
-      draw(ctx, text, x, bottom - 86, {
+    // labels: small handwriting with a swash, in the outer corners of each photograph
+    const label = (text: string, s: Slot, atBottom: boolean) => {
+      const y0 = atBottom ? s.y + s.h - 200 : s.y;
+      scrim(ctx, s.x, y0, s.w, 200, atBottom ? "bottom" : "top", k.deep, 0.4);
+      const ty = atBottom ? s.y + s.h - 118 : s.y + 24;
+      draw(ctx, text, s.x + 40, ty, {
         w: 420,
         lines: 1,
         size: 80,
@@ -501,84 +820,20 @@ export const thenAndNow: FamilyDef = {
         shadow: 16,
         rot: -0.03,
       });
-      swash(ctx, x + 2, x + Math.min(tw, 260), bottom - 4, k.a, 0.95, 5);
+      swash(ctx, s.x + 42, s.x + 40 + Math.min(260, 120 + text.length * 22), ty + 88, k.a, 0.95, 5);
     };
     const thenWord = sentence(word(p, "then", "then"));
     const nowWord = sentence(word(p, "now", "now"));
     if (sq) {
-      const topLabel = (text: string, sl: Slot) => {
-        scrim(ctx, sl.x, sl.y, sl.w, 200, "top", k.deep, 0.4);
-        draw(ctx, text, sl.x + 40, sl.y + 26, {
-          w: 420,
-          lines: 1,
-          size: 80,
-          min: 60,
-          font: handFont,
-          color: WHITE,
-          shadow: 16,
-          rot: -0.03,
-        });
-        swash(
-          ctx,
-          sl.x + 42,
-          sl.x + 40 + Math.min(260, 120 + text.length * 22),
-          sl.y + 112,
-          k.a,
-          0.95,
-          5,
-        );
-      };
-      topLabel(thenWord, a);
-      topLabel(nowWord, b);
+      label(thenWord, a, false);
+      label(nowWord, b, false);
       arrowBadge(ctx, a.w + 6, a.h / 2, 32, false, c.accent, inkOn(c.accent, t));
+      brandMark(ctx, W - 30, a.h - 20, "right");
     } else {
-      label(thenWord, z.left, a.h - 26, "bottom", a);
-      // the "now" label hangs just under the strip, so its baseline mirrors the first
-      const ny = b.y + 120;
-      scrim(ctx, b.x, b.y, b.w, 210, "top", k.deep, 0.4);
-      draw(ctx, nowWord, z.left, ny - 86, {
-        w: 420,
-        lines: 1,
-        size: 80,
-        min: 60,
-        font: handFont,
-        color: WHITE,
-        shadow: 16,
-        rot: -0.03,
-      });
-      swash(ctx, z.left + 2, z.left + 150, ny - 4, k.a, 0.95, 5);
+      label(thenWord, a, true);
+      label(nowWord, b, false);
+      brandMark(ctx, W - 40, p.story ? z.bottom : H - 34, "right");
     }
-
-    // a note across the foot of the second photograph
-    const noteRows: Row[] = [
-      {
-        text: p.sub,
-        style: { w: 880, lines: 1, size: 54, min: 44, font: handFont, color: SOFT, shadow: 14 },
-      },
-      {
-        text: p.memory,
-        gap: 4,
-        style: noteStyle(ctx, p.memory, 880, p.story ? 3 : 2, WHITE, "left", 48),
-      },
-    ];
-    const by = sq ? H - sh - 28 : brandY(p) - 40;
-    if (p.sub || p.memory) {
-      const nh = stackHeight(ctx, noteRows);
-      const from = by - nh - 130;
-      scrim(ctx, b.x, from, b.w, b.y + b.h - from, "bottom", k.deep, 0.62);
-      const noteX = sq ? b.x + 30 : z.left;
-      if (sq) {
-        noteRows.forEach((r) => (r.style.w = 480));
-      }
-      stackUp(ctx, noteRows, noteX, by);
-    }
-    brandMark(
-      ctx,
-      W - 40,
-      sq ? H - 30 - (sh - 150) : p.story ? z.bottom : H - 34,
-      "right",
-      softOn(c.bg, t),
-    );
   },
 };
 
@@ -595,15 +850,15 @@ function gutterOf(p: Prep): number {
   return p.t.variant === "quad" || p.t.frame === "bold" ? 14 : 10;
 }
 
-/** Rough line count of the handwritten note, so the caption strip can be sized from the text alone. */
-function noteLines(m: string): number {
-  return m ? (m.length <= 48 ? 1 : m.length <= 96 ? 2 : 3) : 0;
-}
-
 /** Height of the slim paper caption strip that sits between the photographs (collages of two or more). */
 function captionHeight(p: Prep): number {
   const n = noteLines(p.memory);
-  return (p.story ? 160 : 146) + (p.sub ? 50 : 0) + (n ? n * 50 + 10 : 0);
+  return (
+    (p.story ? 160 : 146) +
+    (whoLine(p.name, p.date).length > 40 ? 44 : 0) +
+    (p.sub ? (p.sub.length > 52 ? 100 : 50) : 0) +
+    (n ? n * 50 + 10 : 0)
+  );
 }
 
 interface Grid {
@@ -829,7 +1084,8 @@ export const collage: FamilyDef = {
       w: 940,
       lines: 1,
       size: p.story ? 56 : 52,
-      min: 36,
+      min: 34,
+      wrap: 2,
       font: displayFont(700),
       color: inkOn(c.bg, t),
       align: "center",
@@ -839,6 +1095,7 @@ export const collage: FamilyDef = {
       lines: 1,
       size: 36,
       min: 34,
+      wrap: 2,
       font: sansBold,
       color: readable(c.bg, c.accent, softOn(c.bg, t), c.ink),
       align: "center",
@@ -856,6 +1113,7 @@ export const collage: FamilyDef = {
             lines: 1,
             size: 50,
             min: 44,
+            wrap: 2,
             font: handFont,
             color: readable(c.bg, c.accent, c.ink),
             align: "center",
@@ -912,7 +1170,8 @@ export const collage: FamilyDef = {
         { text: p.memory, gap: 12, style: noteStyle(ctx, p.memory, 820, 2, WHITE, "center", 48) },
       ];
       const h = stackHeight(ctx, rows);
-      scrim(ctx, 0, bottom - h - 150, W, H - (bottom - h - 150), "bottom", k.deep, 0.74);
+      scrim(ctx, 0, bottom - h - 150, W, H - (bottom - h - 150), "bottom", k.deep, 0.6);
+      textHalo(ctx, photos[0], slots[0] as Slot, 40, bottom - h - 60, W - 80, h + 100, k.deep);
       stackUp(ctx, rows, cx, bottom);
       brandMark(ctx, cx, by, "center");
     }
@@ -1003,6 +1262,7 @@ export const poster: FamilyDef = {
           lines: 1,
           size: 44,
           min: 34,
+          wrap: 2,
           font: displayFont(700),
           color: WHITE,
           align,
@@ -1017,6 +1277,7 @@ export const poster: FamilyDef = {
           lines: 1,
           size: 34,
           min: 34,
+          wrap: 2,
           font: sansFont,
           color: SOFT,
           align,
@@ -1030,8 +1291,9 @@ export const poster: FamilyDef = {
       },
     ];
     const h = stackHeight(ctx, rows);
-    scrim(ctx, 0, bottom - h - 170, W, H - (bottom - h - 170), "bottom", k.deep, 0.72);
+    scrim(ctx, 0, bottom - h - 170, W, H - (bottom - h - 170), "bottom", k.deep, 0.6);
     scrim(ctx, 0, 0, W, 280, "top", k.deep, 0.26);
+    textHalo(ctx, photos[0], s, 40, bottom - h - 70, W - 80, h + 110, k.deep);
 
     const topY = p.story ? 268 : 110;
     const hasBunting = t.motif === "bunting" || t.motif2 === "bunting";
@@ -1058,8 +1320,45 @@ export const poster: FamilyDef = {
       ctx.restore();
       edgeFrame(ctx, t, 30, 30, W - 60, H - 60, k.a, 0.45);
     } else if (kind === "report") {
-      ruler(ctx, 34, topY, H - topY - 160, true, 28, WHITE, 0.6);
-      ruler(ctx, 80, 34, W - 160, false, 28, WHITE, 0.6);
+      ruler(ctx, 34, topY, H - topY - 160, true, 28, k.a, 0.7);
+      ruler(ctx, 80, 34, W - 160, false, 28, k.a, 0.7);
+      tiltedMotif(ctx, t, "motif", 118, topY + 40, 80, -0.2, k.a, k.b, 0.88);
+      if (t.variant === "ground") {
+        // blades of grass along the foot of the piece: the view from the floor
+        ctx.save();
+        ctx.fillStyle = k.b;
+        ctx.globalAlpha = 0.6;
+        for (let gx = 0; gx < W; gx += 20) {
+          const gh = 12 + ((gx * 7) % 5) * 4;
+          ctx.beginPath();
+          ctx.moveTo(gx, H);
+          ctx.lineTo(gx + 5, H - gh);
+          ctx.lineTo(gx + 12, H);
+          ctx.closePath();
+          ctx.fill();
+        }
+        ctx.restore();
+      } else if (t.id.includes("trench")) {
+        // a faint survey grid over the whole photograph
+        ctx.save();
+        ctx.strokeStyle = WHITE;
+        ctx.globalAlpha = 0.26;
+        ctx.lineWidth = 2;
+        ctx.setLineDash([14, 12]);
+        ctx.beginPath();
+        for (const gx of [W / 3, (2 * W) / 3]) {
+          ctx.moveTo(gx, 40);
+          ctx.lineTo(gx, H - 40);
+        }
+        for (const gy of [H / 3, (2 * H) / 3]) {
+          ctx.moveTo(40, gy);
+          ctx.lineTo(W - 40, gy);
+        }
+        ctx.stroke();
+        ctx.restore();
+      } else {
+        tiltedMotif(ctx, t, "motif2", 232, topY + 52, 54, 0.3, k.b, k.a, 0.8);
+      }
       stampFrame(ctx, W - 135, topY + 52, 240, 104, 0.07, WHITE, 0.8);
       ctx.save();
       ctx.translate(W - 135, topY + 52);

@@ -182,11 +182,90 @@ export function scrim(
       ? ctx.createLinearGradient(0, y, 0, y + h)
       : ctx.createLinearGradient(0, y + h, 0, y);
   g.addColorStop(0, rgba(color, 0));
-  g.addColorStop(0.45, rgba(color, alpha * 0.4));
+  g.addColorStop(0.3, rgba(color, alpha * 0.45));
+  g.addColorStop(0.65, rgba(color, alpha * 0.85));
   g.addColorStop(1, rgba(color, alpha));
   ctx.save();
   ctx.fillStyle = g;
   ctx.fillRect(x, y, w, h);
+  ctx.restore();
+}
+
+/**
+ * Average brightness (0 to 1) of a horizontal band of the placed photo, read from a tiny scaled copy so it is
+ * cheap. Undefined when there is no photo or no readable canvas (then callers assume a middling photo).
+ */
+export function bandLuma(
+  photo: PlacedPhoto | null | undefined,
+  slot: Slot,
+  y0: number,
+  y1: number,
+): number | undefined {
+  if (!photo) return undefined;
+  try {
+    const sc = 1 / 16;
+    const w = Math.max(8, Math.round(slot.w * sc));
+    const h = Math.max(8, Math.round(slot.h * sc));
+    let cv: OffscreenCanvas | HTMLCanvasElement;
+    if (typeof OffscreenCanvas !== "undefined") cv = new OffscreenCanvas(w, h);
+    else if (
+      typeof document !== "undefined" &&
+      !(typeof navigator !== "undefined" && /jsdom/i.test(navigator.userAgent))
+    ) {
+      cv = document.createElement("canvas");
+      cv.width = w;
+      cv.height = h;
+    } else return undefined;
+    const c = cv.getContext("2d") as CanvasRenderingContext2D | null;
+    if (!c || typeof c.getImageData !== "function") return undefined;
+    if (!drawPlacedPhoto(c, photo, 0, 0, w, h)) return undefined;
+    const r0 = Math.min(h - 1, Math.max(0, Math.floor((y0 - slot.y) * sc)));
+    const r1 = Math.min(h, Math.max(r0 + 1, Math.ceil((y1 - slot.y) * sc)));
+    const d = c.getImageData(0, r0, w, r1 - r0).data;
+    let sum = 0;
+    let n = 0;
+    for (let i = 0; i + 3 < d.length; i += 4) {
+      sum += 0.2126 * (d[i] ?? 0) + 0.7152 * (d[i + 1] ?? 0) + 0.0722 * (d[i + 2] ?? 0);
+      n++;
+    }
+    return n ? sum / n / 255 : undefined;
+  } catch {
+    return undefined;
+  }
+}
+
+/** Scrim opacity for text over a photo band of this brightness: 0.35 (dark photo) to 0.6 (bright photo). */
+export function haloAlpha(luma: number | undefined): number {
+  if (luma === undefined) return 0.48;
+  return 0.35 + 0.25 * Math.max(0, Math.min(1, (luma - 0.22) / 0.4));
+}
+
+/**
+ * A soft, feathered patch of the theme's deep tone behind a block of text, as dark as the photo needs.
+ * No hard edge: it is a blurred shadow of a rectangle.
+ */
+export function textHalo(
+  ctx: Ctx,
+  photo: PlacedPhoto | null | undefined,
+  slot: Slot,
+  x: number,
+  y: number,
+  w: number,
+  h: number,
+  deep: string,
+): void {
+  const a = haloAlpha(bandLuma(photo, slot, y, y + h));
+  const OFF = 4000;
+  ctx.save();
+  ctx.beginPath();
+  ctx.rect(slot.x, slot.y, slot.w, slot.h);
+  ctx.clip();
+  ctx.shadowColor = rgba(deep, a);
+  ctx.shadowBlur = 90;
+  ctx.shadowOffsetX = OFF;
+  ctx.shadowOffsetY = 0;
+  ctx.fillStyle = "#000";
+  ctx.fillRect(x - OFF, y, w, h);
   ctx.restore();
 }
 
@@ -201,6 +280,8 @@ export interface TextStyle {
   color: string;
   align?: CanvasTextAlign;
   lh?: number;
+  /** Lines allowed once the text has shrunk to its minimum size (shrink first, then wrap, then ellipsize). */
+  wrap?: number;
   /** Soft shadow blur in px (text over a photo). */
   shadow?: number;
   /** Rotation in radians about the text's anchor point. */
@@ -215,28 +296,42 @@ export interface Laid {
   truncated: boolean;
 }
 
-/** Fits text in a width and line count: shrinks to the minimum without breaking words, then ellipsizes. */
+/**
+ * Fits text: first shrink toward the minimum size so it stays on `lines` lines; at the minimum, wrap onto
+ * up to `wrap` lines; only then ellipsize, at a word boundary. Words are never broken unless one alone is
+ * wider than the box.
+ */
 export function layout(ctx: Ctx, text: string, o: TextStyle): Laid {
   const min = o.min ?? Math.round(o.size * 0.6);
-  let size = o.size;
+  const maxLines = Math.max(o.lines, o.wrap ?? o.lines);
   const words = text.split(" ").filter(Boolean);
-  while (size > min) {
+  const build = (size: number, lines: string[], truncated: boolean): Laid => {
+    const lh = size * (o.lh ?? 1.2);
+    return { size, lines, lh, height: lines.length * lh, truncated };
+  };
+  for (let size = o.size; size >= min; size -= 2) {
     ctx.font = o.font(size);
-    if (words.every((w) => ctx.measureText(w).width <= o.w)) break;
-    size -= 2;
+    if (words.some((w) => ctx.measureText(w).width > o.w)) continue;
+    const lines = wrapText(ctx, text, o.w);
+    if (lines.length <= o.lines) return build(size, lines, false);
   }
-  size = Math.max(min, size);
-  const r = fitText(ctx, text, {
-    maxWidth: o.w,
-    maxLines: o.lines,
-    size,
-    minSize: min,
-    font: o.font,
-  });
-  ctx.font = o.font(r.size);
-  const truncated = wrapText(ctx, text, o.w).length > r.lines.length;
-  const lh = r.size * (o.lh ?? 1.2);
-  return { size: r.size, lines: r.lines, lh, height: r.lines.length * lh, truncated };
+  ctx.font = o.font(min);
+  const lines = wrapText(ctx, text, o.w);
+  if (lines.length <= maxLines) return build(min, lines, false);
+  const kept = lines.slice(0, maxLines);
+  const rest = [kept[maxLines - 1] ?? "", ...lines.slice(maxLines)].join(" ").split(" ");
+  let take = rest.length;
+  const fits = (n: number) => ctx.measureText(rest.slice(0, n).join(" ") + "\u2026").width <= o.w;
+  while (take > 1 && !fits(take)) take--;
+  let last = rest.slice(0, take).join(" ");
+  if (!fits(take)) {
+    let chars = Array.from(last);
+    while (chars.length > 1 && ctx.measureText(chars.join("") + "\u2026").width > o.w)
+      chars = chars.slice(0, -1);
+    last = chars.join("");
+  }
+  kept[maxLines - 1] = last + "\u2026";
+  return build(min, kept, true);
 }
 
 /** Draws text with its top edge at `top`. Returns the y just below it. */
@@ -249,19 +344,26 @@ export function draw(ctx: Ctx, text: string, x: number, top: number, o: TextStyl
     ctx.rotate(o.rot);
     ctx.translate(-x, -top);
   }
-  if (o.shadow) {
-    ctx.shadowColor = "rgba(12,8,6,0.62)";
-    ctx.shadowBlur = o.shadow;
-    ctx.shadowOffsetX = 0;
-    ctx.shadowOffsetY = Math.max(1, Math.round(o.shadow / 5));
-  }
   ctx.font = o.font(L.size);
   ctx.fillStyle = o.color;
   ctx.textAlign = o.align ?? "left";
   ctx.textBaseline = "alphabetic";
-  L.lines.forEach((line, i) => {
-    ctx.fillText(line, x, top + i * L.lh + (L.lh + L.size * 0.72) / 2);
-  });
+  const paint = () =>
+    L.lines.forEach((line, i) => {
+      ctx.fillText(line, x, top + i * L.lh + (L.lh + L.size * 0.72) / 2);
+    });
+  if (o.shadow) {
+    // a thin tight shadow keeps the letter edges crisp, a wide soft one lifts the line off the photo
+    ctx.shadowColor = "rgba(12,8,6,0.55)";
+    ctx.shadowBlur = 3;
+    ctx.shadowOffsetX = 0;
+    ctx.shadowOffsetY = 1;
+    paint();
+    ctx.shadowColor = "rgba(12,8,6,0.62)";
+    ctx.shadowBlur = o.shadow;
+    ctx.shadowOffsetY = Math.max(1, Math.round(o.shadow / 5));
+  }
+  paint();
   ctx.restore();
   return top + L.height;
 }

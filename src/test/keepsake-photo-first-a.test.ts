@@ -85,7 +85,7 @@ describe("photo-first families (KA)", () => {
       for (const size of SIZES) {
         const s = photoSlots(spec(f, THEME_REGISTRY[f][0]!, size), 1)[0]!;
         const area = (s.w * s.h) / (1080 * ART_SIZES[size].height);
-        expect(area, `${f} ${size}`).toBeGreaterThan(f === "trading-card" ? 0.5 : 0.99);
+        expect(area, `${f} ${size}`).toBeGreaterThan(f === "trading-card" ? 0.6 : 0.99);
       }
   });
 
@@ -156,5 +156,49 @@ describe("photo-first families (KA)", () => {
       renderArtwork(f.ctx, spec("trading-card", "explorer-card", size), { photos: [photo()] });
       expect(f.draws.n).toBe(1);
     }
+  });
+
+  it("magazine masthead stays in the top 12% band and nothing else sits in the 12%-38% band", () => {
+    for (const theme of THEME_REGISTRY["magazine-cover"])
+      for (const size of SIZES) {
+        const f = fake();
+        renderArtwork(f.ctx, spec("magazine-cover", theme, size), { photos: [photo()] });
+        const H = ART_SIZES[size].height;
+        const masts = f.texts.filter((t) => t.y < H * 0.2);
+        expect(masts.length, `${theme} ${size}`).toBeGreaterThan(0);
+        for (const t of f.texts)
+          expect(t.y < H * 0.125 || t.y > H * 0.38, `${theme} ${size} "${t.text}" y=${t.y}`).toBe(
+            true,
+          );
+      }
+  });
+
+  it("travel greeting is one small line in the top margin, not part of the bottom stack", () => {
+    for (const theme of THEME_REGISTRY["travel-postcard"]) {
+      const f = fake();
+      renderArtwork(f.ctx, spec("travel-postcard", theme, "story"), { photos: [photo()] });
+      const small = f.texts.filter((t) => t.y < 1920 * 0.25 && t.size >= 34);
+      expect(small.length, theme).toBeGreaterThan(0);
+      // the biggest type (the headline) is below the middle of the frame
+      const big = f.texts.filter((t) => t.size >= 60);
+      for (const t of big) expect(t.y, theme).toBeGreaterThan(1920 * 0.5);
+    }
+  });
+
+  it("certificate sentence never prints a theme label as a title", () => {
+    for (const theme of THEME_REGISTRY["certificate"]) {
+      const f = fake();
+      renderArtwork(f.ctx, spec("certificate", theme, "story"), { photos: [photo()] });
+      const all = f.texts.map((t) => t.text).join("|");
+      expect(all, theme).toMatch(/in recognition of|has earned the title of/);
+      expect(all, theme).not.toMatch(/named|member of|has officially|has been named|forecast/);
+    }
+    const f = fake();
+    renderArtwork(
+      f.ctx,
+      { ...spec("certificate", "explorer", "story"), headline: "Trail Champion" },
+      { photos: [photo()] },
+    );
+    expect(f.texts.map((t) => t.text)).toContain("has earned the title of");
   });
 });

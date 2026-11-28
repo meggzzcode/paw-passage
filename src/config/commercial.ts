@@ -6,7 +6,7 @@
 // they come from the previews API (published total and collections) or from the server's match aggregates, and
 // when those are unavailable the wording below says so plainly instead of inventing a number.
 import { offer } from "./site";
-import { BRAND } from "./brand";
+import { BRAND, LIBRARY_CLAIM_MIN } from "./brand";
 
 /** The price. Defined once, in `offer` in src/config/site.ts (it must equal the checkout listing). */
 export const price = offer.price;
@@ -104,7 +104,9 @@ export function libraryLine(
 ) {
   if (typeof total !== "number" || !Number.isFinite(total) || total < 1) return LIBRARY_FALLBACK;
   const c = typeof collections === "number" && collections > 0 ? collections : 0;
-  return `${total} adventures${c ? ` across ${c} ${c === 1 ? "collection" : "collections"}` : ""}, for every kind of dog.`;
+  // Never print a number below the approved claim ("100+"): a small count (a preview, an empty store) is not the library.
+  const shown = total >= LIBRARY_CLAIM_MIN ? `${total}` : `${LIBRARY_CLAIM_MIN}+`;
+  return `${shown} adventures${c ? ` across ${c} ${c === 1 ? "collection" : "collections"}` : ""}, for every kind of dog.`;
 }
 
 /**

@@ -284,6 +284,8 @@ describe("entitled visitor", () => {
     // offline: no premium library, and the collections library holds no free-pool adventure without a revealed intro
     expect(titles("all")).toEqual([]);
     expect(screen.getByText(OFFLINE_MESSAGE)).toBeInTheDocument();
+    expect(OFFLINE_MESSAGE).toBe("Having a little trouble opening your Passport. Let's try again.");
+    expect(OFFLINE_MESSAGE).not.toMatch(/free adventures|only the free/i);
     expect(document.body.textContent).not.toMatch(/locked/i);
     // back online: the next check recovers
     srv.s.offline = false;

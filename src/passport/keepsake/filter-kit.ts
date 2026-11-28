@@ -1,6 +1,7 @@
 // Shared drawing kit for the photo filter looks: colour helpers, hand-drawn shapes (sparkles, hearts, paws),
 // sticker plates, tape, text-in-a-plate fitting and the tiny Paws & Passage mark.
 // Pure drawing over a canvas context. Nothing here touches the network or browser storage.
+import { fontSpec } from "./fonts";
 import { cleanText, circle, drawPaw, fitText, type Ctx } from "./render";
 import { ART_SIZES, hash, isDark, readable, rnd, type Slot, type SizeId } from "./kit";
 import { drawPlacedPhoto, type PlacedPhoto } from "./photo";
@@ -9,21 +10,15 @@ import { themeFor, type KeepsakeFamily, type ThemeConfig } from "./themes";
 
 export type { Slot };
 
-// ---------------------------------------------------------------- fonts (system stacks only)
-
-export const SCRIPT =
-  '"Snell Roundhand", "Segoe Script", "Bradley Hand", "Chalkboard SE", "Comic Sans MS", "Comic Neue", cursive';
-export const ROUND =
-  '"Arial Rounded MT Bold", "Nunito", "Varela Round", "Trebuchet MS", "Helvetica Neue", Arial, sans-serif';
-export const MONO = '"Courier New", Courier, "Liberation Mono", monospace';
-export const HEAVY = '"Arial Black", "Helvetica Neue", Helvetica, Arial, sans-serif';
+// ---------------------------------------------------------------- fonts (self-hosted faces via fonts.ts)
 
 export type FontFn = (size: number) => string;
-export const fScript: FontFn = (s) => `italic 700 ${s}px ${SCRIPT}`;
-export const fRound: FontFn = (s) => `800 ${s}px ${ROUND}`;
-export const fRoundReg: FontFn = (s) => `600 ${s}px ${ROUND}`;
-export const fMono: FontFn = (s) => `700 ${s}px ${MONO}`;
-export const fHeavy: FontFn = (s) => `900 ${s}px ${HEAVY}`;
+export const fScript: FontFn = (s) => fontSpec("hand", 600, s);
+export const fRound: FontFn = (s) => fontSpec("display", 700, s);
+export const fRoundReg: FontFn = (s) => fontSpec("body", 600, s);
+// The camcorder / ticket overlay: small, bold, tracked caps in the body face (callers set `upper`).
+export const fMono: FontFn = (s) => fontSpec("body", 700, s);
+export const fHeavy: FontFn = (s) => fontSpec("display", 800, s);
 
 // ---------------------------------------------------------------- colour
 

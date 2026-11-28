@@ -1,0 +1,99 @@
+/* Purchase page: compact visual strip beside the offer. Small on purpose (about 170px tall at 390). */
+.ps-strip {
+  margin: 0.75rem 0 0.25rem;
+  padding: 0.6rem 0.7rem 0.5rem;
+  border: 1.5px solid var(--pp-hairline, #ecdcc7);
+  border-radius: 1rem;
+  background: var(--pp-card, #fff8ef);
+}
+.ps-sum {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+.ps-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.ps-art {
+  margin-top: 0.4rem;
+}
+.ps-keep,
+.ps-world {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  justify-content: center;
+}
+.ps-keep img {
+  width: auto;
+  height: 5.5rem;
+  aspect-ratio: 9 / 16;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 6px rgb(60 40 20 / 0.18);
+  transform: rotate(-2deg);
+  background: var(--pp-butter, #f5de91);
+}
+.ps-keep:nth-child(2) img {
+  transform: rotate(1.5deg);
+}
+.ps-world img {
+  width: 5.5rem;
+  height: 5.5rem;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 6px rgb(60 40 20 / 0.18);
+  background: var(--pp-garden, #a8bd9b);
+}
+.ps-art li {
+  flex: 1 1 0;
+  display: flex;
+  justify-content: center;
+}
+.ps-cap {
+  margin: 0.35rem 0 0;
+  font-size: 0.75rem;
+  line-height: 1.3;
+  text-align: center;
+  color: var(--pp-muted, #6b5a4a);
+}
+@media (min-width: 900px) {
+  .ps-row {
+    max-width: 34rem;
+    margin-inline: auto;
+  }
+  .ps-keep img {
+    height: 7rem;
+  }
+  .ps-world img {
+    width: 7rem;
+    height: 7rem;
+  }
+}
+/* Checkout not open yet: friendly, clearly not an active button (muted butter, dashed border, no lift). */
+html .pp-btn.pp-btn-soon,
+html .pp-btn.pp-btn-soon:hover {
+  background: #f3ead2;
+  color: #6b5a4a;
+  border: 2px dashed #c9b88e;
+  box-shadow: none;
+  transform: none;
+  cursor: not-allowed;
+  opacity: 1;
+}
+[data-testid="buy-panel"] .pp-btn.pp-btn-soon {
+  width: 100%;
+}

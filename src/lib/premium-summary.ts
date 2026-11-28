@@ -2,6 +2,7 @@
 // Any failure returns null and the page shows honest fallback copy instead of a number.
 import { useEffect, useState } from "react";
 import { collections as allCollections } from "@/passport/content";
+import { LIBRARY_CLAIM_MIN } from "@/config/brand";
 
 /** Collections are counted the one way everywhere: the collections the site lists (same number as /collections). */
 const COLLECTION_COUNT = allCollections.length;
@@ -34,7 +35,8 @@ export async function fetchPremiumSummary(): Promise<PremiumSummary | null> {
 
 /** "N premium adventures across M collections", or the fallback text when the summary is unavailable. */
 export function summaryText(s: PremiumSummary | null): string {
-  if (!s) return SUMMARY_FALLBACK;
+  // A count below the approved claim is never printed (a preview or empty store is not the library).
+  if (!s || s.count < LIBRARY_CLAIM_MIN) return SUMMARY_FALLBACK;
   const m = COLLECTION_COUNT;
   const adv = `${s.count} premium ${s.count === 1 ? "adventure" : "adventures"}`;
   return m > 0 ? `${adv} across ${m} ${m === 1 ? "collection" : "collections"}` : adv;
@@ -48,7 +50,8 @@ export function unlockLine(s: PremiumSummary | null): string {
     return `Unlock a much larger library of little adventures, for every kind of dog: ${KINDS}.`;
   const m = COLLECTION_COUNT;
   const where = m > 0 ? ` across ${m} ${m === 1 ? "collection" : "collections"}` : "";
-  return `Unlock ${s.count} little adventures${where}, for every kind of dog: ${KINDS}.`;
+  const shown = s.count >= LIBRARY_CLAIM_MIN ? `${s.count}` : `${LIBRARY_CLAIM_MIN}+`;
+  return `Unlock ${shown} little adventures${where}, for every kind of dog: ${KINDS}.`;
 }
 
 export function usePremiumSummary(): PremiumSummary | null {

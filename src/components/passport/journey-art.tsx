@@ -9,9 +9,17 @@ import type { Adventure } from "@/passport/schema";
 
 /** One existing photo that suits where the adventure happens. Setting only: it never hints at the title or steps. */
 export function journeyPhoto(a: Pick<Adventure, "setting" | "lifeStages">): string {
-  if (a.setting === "indoor") return cozy;
-  if (a.setting === "outdoor") return trail;
-  return a.lifeStages.length === 1 && a.lifeStages[0] === "puppy" ? puppy : picnic;
+  return JOURNEY_PHOTOS[journeyPhotoKey(a)];
+}
+
+export type JourneyPhotoKey = "cozy" | "trail" | "puppy" | "picnic";
+const JOURNEY_PHOTOS: Record<JourneyPhotoKey, string> = { cozy, trail, puppy, picnic };
+
+/** Which photo, by name, so the header can crop each one around the faces (qr-journey.css `data-photo`). */
+export function journeyPhotoKey(a: Pick<Adventure, "setting" | "lifeStages">): JourneyPhotoKey {
+  if (a.setting === "indoor") return "cozy";
+  if (a.setting === "outdoor") return "trail";
+  return a.lifeStages.length === 1 && a.lifeStages[0] === "puppy" ? "puppy" : "picnic";
 }
 
 /** A different existing photo for each quiz question, as a small "polaroid" in the corner of the panel. */

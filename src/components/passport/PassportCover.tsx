@@ -6,8 +6,8 @@ import { StampArt } from "./art/StampArt";
  * The cover's one primary action, by state: a new or free visitor with no reveal is invited to the first adventure, a free
  * visitor who has revealed their intro adventure goes back to it, and a paying customer looks for another.
  */
-export function passportPrimaryLabel(entitled: boolean, revealed: boolean): string {
-  if (entitled) return "Find another adventure";
+export function passportPrimaryLabel(entitled: boolean, revealed: boolean, completed = 0): string {
+  if (entitled) return completed > 0 ? "Find another adventure" : "Find an adventure";
   return revealed ? "Revisit our adventure" : "Find our first adventure";
 }
 
@@ -18,6 +18,7 @@ export function PassportCover({
   stamps,
   earnedStamps,
   facts,
+  access = "free",
   children,
 }: {
   name: string;
@@ -26,6 +27,8 @@ export function PassportCover({
   stamps: number;
   earnedStamps: readonly string[];
   facts: readonly string[];
+  /** "paid" = verified customer, "unconfirmed" = access check failing (never claims the free state). */
+  access?: "free" | "paid" | "unconfirmed";
   children?: ReactNode;
 }) {
   const shown = earnedStamps.slice(0, 3);
@@ -35,7 +38,11 @@ export function PassportCover({
       <h1 className="pv8-cover-h1">{headline}</h1>
       <p className="pv8-cover-progress">
         {adventures === 0
-          ? "Your first adventure is waiting."
+          ? access === "paid"
+            ? "Your Passport is ready. Nothing collected yet. Let's find a first little adventure."
+            : access === "unconfirmed"
+              ? "Nothing collected on this device yet."
+              : "Your first adventure is waiting."
           : `${adventures} ${adventures === 1 ? "adventure" : "adventures"} collected · ${stamps} ${stamps === 1 ? "stamp" : "stamps"}`}
       </p>
       {shown.length > 0 && (

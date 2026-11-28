@@ -10,9 +10,8 @@ import { PASSPORT_PAYMENT } from "@/components/passport/purchase-copy";
 import { checkoutUrl } from "@/lib/passport-api";
 import { collections } from "@/passport/content";
 import { unlockLine, usePremiumSummary } from "@/lib/premium-summary";
-import { usePreviews } from "@/lib/usePreviews";
 import { EarlyTesters } from "@/components/site/EarlyTesters";
-import { BRAND } from "@/config/brand";
+import { BRAND, LIBRARY_CLAIM_MIN } from "@/config/brand";
 import {
   flags,
   FULL_OPTION_LABEL,
@@ -22,6 +21,7 @@ import {
   price,
   REFUND_SUMMARY,
 } from "@/config/commercial";
+import { PurchaseStrip } from "@/components/site/PurchaseStrip";
 import { PhotoFilterExamples } from "@/components/site/PhotoFilterExamples";
 import { PURCHASE_EXAMPLES } from "@/components/site/keepsake-examples";
 import { pageHead } from "@/lib/seo";
@@ -83,7 +83,6 @@ const FULL_INCLUDES = [
 function Unlock() {
   const ent = useEntitlement();
   const summary = usePremiumSummary();
-  const previews = usePreviews();
   const flagged = useSyncExternalStore(noopSubscribe, hasAccountFlag, () => false);
   const entitled = ent.status === "entitled";
   // A returning customer is never shown the sales page while we are still checking: neutral state until we know.
@@ -144,10 +143,9 @@ function Unlock() {
   ) : null;
 
   const link = checkoutUrl();
-  const verified =
-    previews.status === "ready" && (previews.data?.total ?? 0) > 0
-      ? libraryLine(previews.data?.total, collections.length)
-      : unlockLine(summary);
+  const verified = summary
+    ? unlockLine(summary)
+    : libraryLine(LIBRARY_CLAIM_MIN, collections.length);
 
   let top: React.ReactNode;
   if (pending && !submitted)
@@ -253,8 +251,10 @@ function Unlock() {
                 <>
                   <button
                     type="button"
-                    className="pp-btn pp-btn-primary"
+                    className="pp-btn pp-btn-soon"
                     disabled
+                    aria-disabled="true"
+                    data-testid="checkout-soon"
                     aria-describedby="checkout-note"
                   >
                     Checkout opens soon
@@ -264,6 +264,7 @@ function Unlock() {
                   </p>
                 </>
               )}
+              <PurchaseStrip />
               <p className="pa-fine">
                 <a
                   href={ACTIVATE_HASH}

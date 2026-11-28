@@ -24,8 +24,7 @@ export type EntitlementState = {
 export const ACCOUNT_FLAG = "pp.acct.v1";
 export const REVOKED_MESSAGE =
   "Your full Passport access is no longer active, so premium adventures are hidden. Your progress is still saved and nothing was deleted.";
-export const OFFLINE_MESSAGE =
-  "We couldn't reach the site, so only the free adventures are showing for now. Your progress is safe.";
+export const OFFLINE_MESSAGE = "Having a little trouble opening your Passport. Let's try again.";
 
 const FREE: EntitlementState = {
   status: "free",

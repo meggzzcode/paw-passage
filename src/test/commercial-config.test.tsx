@@ -99,7 +99,8 @@ describe("single-sourced commercial facts", () => {
     expect(libraryLine(null, null)).toBe(LIBRARY_FALLBACK);
     expect(libraryLine(0, 3)).toBe(LIBRARY_FALLBACK);
     expect(libraryLine(Number.NaN, 3)).toBe(LIBRARY_FALLBACK);
-    expect(libraryLine(40, 5)).toBe("40 adventures across 5 collections, for every kind of dog.");
+    expect(libraryLine(40, 5)).toBe("100+ adventures across 5 collections, for every kind of dog.");
+    expect(libraryLine(117, 5)).toBe("117 adventures across 5 collections, for every kind of dog.");
     expect(libraryLine(40, 0)).not.toMatch(/collection/);
     expect(LIBRARY_FALLBACK).not.toMatch(/\d/);
   });

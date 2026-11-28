@@ -309,7 +309,7 @@
 }
 .qr-adv-hero {
   margin: 0 -1.1rem;
-  height: 7.5rem;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
   border-bottom: 3px solid var(--pp-ochre);
 }
@@ -318,6 +318,24 @@
   height: 100%;
   object-fit: cover;
   object-position: 50% 30%;
+}
+/* Face-safe crops: each photo is framed around the dog's face (and the people's), never the middle of a banner. */
+.qr-adv-hero[data-photo="picnic"] img {
+  object-position: 50% 38%;
+}
+.qr-adv-hero[data-photo="puppy"] img {
+  object-position: 50% 35%;
+}
+.qr-adv-hero[data-photo="cozy"] img {
+  object-position: 58% 42%;
+}
+.qr-adv-hero[data-photo="trail"] img {
+  object-position: 50% 75%;
+}
+@media (min-width: 900px) {
+  .qr-adv-hero {
+    aspect-ratio: 2 / 1;
+  }
 }
 .qr-adv-for {
   margin: 0;

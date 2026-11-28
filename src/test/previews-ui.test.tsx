@@ -103,7 +103,7 @@ describe("previews page", () => {
     expect(
       screen.getByText(
         new RegExp(
-          `3 hand-picked previews from a larger collection of 72 adventures across ${allCollections.length} collections`,
+          `3 hand-picked previews from a larger collection of 100\\+ adventures across ${allCollections.length} collections`,
         ),
       ),
     ).toBeInTheDocument();
@@ -321,7 +321,9 @@ describe("personalized match", () => {
     expect(
       screen.getByText(/2 matching adventures are among the public previews/),
     ).toBeInTheDocument();
-    expect(screen.getByText(/full Passport has all 31, from a library of 72/)).toBeInTheDocument();
+    // a library total below the approved claim is never printed
+    expect(screen.getByText(/full Passport has all 31\. This count includes/)).toBeInTheDocument();
+    expect(screen.queryByText(/from a library of 72/)).toBeNull();
     const body = JSON.parse(String(((fetchSpy.mock.calls[0] as unknown[])[1] as RequestInit).body));
     expect(body.dog).toEqual({ lifeStage: "adult" }); // no name
   });

@@ -2,6 +2,8 @@ import { afterEach, describe, expect, it, vi } from "vitest";
 import { cleanup, render, screen, waitFor } from "@testing-library/react";
 import { readFileSync } from "node:fs";
 import { offer } from "@/config/site";
+import { LIBRARY_CLAIM_MIN } from "@/config/brand";
+import { libraryLine } from "@/config/commercial";
 import {
   fetchPremiumSummary,
   summaryText,
@@ -58,6 +60,21 @@ describe("offer and premium summary", () => {
     );
     expect(unlockLine(null)).toMatch(/^Unlock a much larger library/);
     expect(unlockLine(null)).not.toMatch(/\d/);
+  });
+  it("never prints a library number below the approved claim, whatever the summary says", () => {
+    for (const count of [1, 17, 47, 99]) {
+      const s = { count, collections: [] };
+      const lines = [unlockLine(s), summaryText(s), libraryLine(count, 25)];
+      for (const t of lines) {
+        const nums = (t.match(/\d+/g) ?? []).map(Number).filter((n) => n !== 25);
+        for (const n of nums) expect(n).toBeGreaterThanOrEqual(LIBRARY_CLAIM_MIN);
+        expect(t).not.toMatch(new RegExp(`\\b${count}\\b`));
+      }
+      expect(unlockLine(s)).toMatch(/^Unlock 100\+ little adventures/);
+    }
+    const big = { count: 117, collections: [] };
+    expect(unlockLine(big)).toMatch(/^Unlock 117 little adventures/);
+    expect(libraryLine(117, 25)).toMatch(/^117 adventures/);
   });
   it("formats the count, and falls back honestly", () => {
     expect(summaryText(null)).toBe(SUMMARY_FALLBACK);

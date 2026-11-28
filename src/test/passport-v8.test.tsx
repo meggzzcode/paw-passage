@@ -147,11 +147,32 @@ describe("passport chapters", () => {
     expect(screen.getByText(/2 adventures collected · 1 stamp$/)).toBeTruthy();
   });
 
+  it("the cover copy follows the access state and never claims free when unconfirmed", () => {
+    const cover = (access: "free" | "paid" | "unconfirmed") =>
+      render(
+        <PassportCover
+          name="Biscuit"
+          headline="H"
+          adventures={0}
+          stamps={0}
+          earnedStamps={[]}
+          facts={[]}
+          access={access}
+        />,
+      ).container.textContent ?? "";
+    expect(cover("paid")).toMatch(/Your Passport is ready\. Nothing collected yet\./);
+    expect(cover("paid")).not.toMatch(/first adventure is waiting/);
+    expect(cover("free")).toMatch(/Your first adventure is waiting\./);
+    expect(cover("unconfirmed")).not.toMatch(/waiting|free|ready/i);
+  });
+
   it("the cover's primary action follows the state", () => {
     expect(passportPrimaryLabel(false, false)).toBe("Find our first adventure");
     expect(passportPrimaryLabel(false, true)).toBe("Revisit our adventure");
-    expect(passportPrimaryLabel(true, false)).toBe("Find another adventure");
-    expect(passportPrimaryLabel(true, true)).toBe("Find another adventure");
+    expect(passportPrimaryLabel(true, false)).toBe("Find an adventure");
+    expect(passportPrimaryLabel(true, true, 0)).toBe("Find an adventure");
+    expect(passportPrimaryLabel(true, false, 1)).toBe("Find another adventure");
+    expect(passportPrimaryLabel(true, true, 3)).toBe("Find another adventure");
   });
 
   it("starts collapsed, mounts content on open, and opens for its hash anchor", async () => {

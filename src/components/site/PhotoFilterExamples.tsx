@@ -38,7 +38,7 @@ export function PhotoFilterExamples({
   return (
     <figure className={compact ? "kx kx-compact" : "kx"}>
       <ul className="kx-row" tabIndex={0} aria-label="Keepsake examples">
-        {items.map((e) => (
+        {items.map((e, i) => (
           <li key={e.src} className="kx-item">
             <div className={e.before ? "kx-pair" : "kx-pair kx-solo"}>
               {e.before && (
@@ -47,7 +47,7 @@ export function PhotoFilterExamples({
                     <img
                       src={e.before.src}
                       alt={e.before.alt}
-                      loading="lazy"
+                      loading={i < 2 ? "eager" : "lazy"}
                       decoding="async"
                       width={e.before.width ?? 360}
                       height={e.before.height ?? 640}
@@ -64,7 +64,7 @@ export function PhotoFilterExamples({
                   <img
                     src={e.src}
                     alt={e.alt}
-                    loading="lazy"
+                    loading={i < 2 ? "eager" : "lazy"}
                     decoding="async"
                     width={e.width ?? 540}
                     height={e.height ?? 960}

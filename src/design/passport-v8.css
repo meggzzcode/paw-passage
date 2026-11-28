@@ -57,6 +57,9 @@
   gap: 0.9rem;
   margin-top: 0.4rem;
 }
+.pv8-cover-error p {
+  margin: 0 0 0.4rem;
+}
 .pv8-cover-link {
   color: var(--pp-on-red);
   min-height: 44px;

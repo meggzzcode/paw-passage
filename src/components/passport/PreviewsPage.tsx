@@ -5,6 +5,7 @@ import { useEffect, useMemo, useState } from "react";
 import { AppLink } from "@/components/shell/AppLink";
 import { Container } from "@/components/shell/Container";
 import { ONE_PAYMENT_LINE } from "@/config/commercial";
+import { LIBRARY_CLAIM_MIN } from "@/config/brand";
 import { usePreviews } from "@/lib/usePreviews";
 import {
   filterPreviews,
@@ -81,7 +82,7 @@ export function PreviewsPage() {
   const collections = allCollections.length;
   const intro =
     status === "ready" && items.length > 0 && total > 0
-      ? `${items.length} hand-picked previews from a larger collection of ${total} adventures${
+      ? `${items.length} hand-picked previews from a larger collection of ${total >= LIBRARY_CLAIM_MIN ? total : `${LIBRARY_CLAIM_MIN}+`} adventures${
           collections > 0 ? ` across ${collections} collections` : ""
         }.`
       : "A hand-picked selection from a larger collection of adventures.";

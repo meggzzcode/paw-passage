@@ -13,8 +13,12 @@ describe("keepsake gallery", () => {
       expect(it.textContent).toContain("Your photo");
       expect(it.textContent).toContain("Your little keepsake");
     }
+    // the first two pairs load eagerly (above the fold), the rest lazily
+    items.forEach((it, i) => {
+      for (const img of it.querySelectorAll("img"))
+        expect(img.getAttribute("loading")).toBe(i < 2 ? "eager" : "lazy");
+    });
     for (const img of container.querySelectorAll("img")) {
-      expect(img.getAttribute("loading")).toBe("lazy");
       expect(img.getAttribute("alt")!.length).toBeGreaterThan(20);
       expect(Number(img.getAttribute("width"))).toBeGreaterThan(0);
       expect(Number(img.getAttribute("height"))).toBeGreaterThan(0);

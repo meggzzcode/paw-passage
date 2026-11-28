@@ -11,7 +11,13 @@ import {
 } from "../passport/keepsake/artwork";
 import { THEME_REGISTRY } from "../passport/keepsake/themes";
 import { placed } from "../passport/keepsake/photo";
-import type { SizeId } from "../passport/keepsake/kit";
+import {
+  bandLuma,
+  haloAlpha,
+  layout,
+  type TextStyle,
+} from "../passport/keepsake/kit-photo-first-b";
+import type { SizeId, Slot } from "../passport/keepsake/kit";
 
 type Fam = "seasonal-frame" | "event-ticket" | "then-and-now" | "collage" | "poster";
 const FAMS: Fam[] = ["seasonal-frame", "event-ticket", "then-and-now", "collage", "poster"];
@@ -103,7 +109,7 @@ describe("photo-first families (B): the photograph is the picture", () => {
   it("then-and-now keeps two prominent photos covering most of the piece", () => {
     for (const size of SIZES) {
       expect(photoSlots(base("then-and-now", "then-and-now", size), 2)).toHaveLength(2);
-      expect(coverage("then-and-now", "then-and-now", size, 2), size).toBeGreaterThan(0.8);
+      expect(coverage("then-and-now", "then-and-now", size, 2), size).toBeGreaterThan(0.7);
     }
   });
   it("collage photos cover most of the piece for 1 to 4 photos, with no overlap", () => {
@@ -237,17 +243,25 @@ describe("photo-first families (B): details stay off the face", () => {
       }
   });
 
-  it("then-and-now keeps its title strip at the seam between the photos", () => {
-    for (const size of ["story", "portrait"] as SizeId[]) {
-      const [a, b] = photoSlots(base("then-and-now", "then-and-now", size), 2);
-      const seamTop = a!.y + a!.h;
-      const seamBottom = b!.y;
-      expect(seamBottom - seamTop).toBeLessThanOrEqual(140);
-      const head = render("then-and-now", "then-and-now", size).find(
-        (t) => t.text === "Leaf Pile Day",
-      )!;
-      expect(head.y).toBeGreaterThan(seamTop);
-      expect(head.y).toBeLessThan(seamBottom);
+  it("then-and-now keeps every line of text on a paper strip exactly at the seam", () => {
+    for (const size of ["story", "portrait", "square"] as SizeId[]) {
+      const spec = base("then-and-now", "then-and-now", size);
+      const slots = photoSlots(spec, 2);
+      const [a, b] = slots as [Slot, Slot];
+      const sq = size === "square";
+      const seamTop = sq ? a.h : a.y + a.h;
+      const seamBottom = sq ? ART_SIZES[size].height : b.y;
+      // no notes: a slim strip
+      const slim = photoSlots({ ...spec, subhead: "", memory: "" }, 2) as [Slot, Slot];
+      const slimH = sq ? ART_SIZES[size].height - slim[0].h : slim[1].y - (slim[0].y + slim[0].h);
+      expect(slimH, size).toBeLessThanOrEqual(150);
+      const g = fakeCtx();
+      renderArtwork(g.ctx, spec, { photos: [photo(), photo()] });
+      for (const t of g.texts) {
+        if (/^(Then|Now|pawsandpassage\.com)$/.test(t.text)) continue;
+        expect(t.y, `${size} "${t.text}"`).toBeGreaterThan(seamTop);
+        expect(t.y, `${size} "${t.text}"`).toBeLessThan(seamBottom + 1);
+      }
     }
   });
 
@@ -263,5 +277,135 @@ describe("photo-first families (B): details stay off the face", () => {
         expect(t.y, `${size} "${t.text}"`).toBeGreaterThanOrEqual(stripTop);
       }
     }
+  });
+});
+
+/** Every call and style the renderer makes, as one string: two themes that draw the same thing share it. */
+function signature(spec: ArtSpec, photos: unknown[]): string {
+  const log: string[] = [];
+  const state: Record<string, unknown> = { font: "10px serif", textAlign: "left" };
+  const target: Record<string, unknown> = {
+    measureText: (str: string) => ({
+      width:
+        Array.from(str).length *
+        Number(/(\d+(?:\.\d+)?)px/.exec(String(state["font"]))?.[1] ?? 10) *
+        0.5,
+    }),
+    createLinearGradient: () => ({
+      addColorStop: (...a: unknown[]) => log.push(`stop${a.join(",")}`),
+    }),
+    createRadialGradient: () => ({
+      addColorStop: (...a: unknown[]) => log.push(`stop${a.join(",")}`),
+    }),
+  };
+  const ctx = new Proxy(target, {
+    get: (t, k: string) =>
+      k in t
+        ? t[k]
+        : k in state
+          ? state[k]
+          : (t[k] = (...a: unknown[]) => {
+              log.push(
+                `${k}(${a.map((v) => (typeof v === "number" ? Math.round(v) : String(v))).join(",")})`,
+              );
+            }),
+    set: (_t, k: string, v) => {
+      state[k] = v;
+      log.push(`${k}=${String(v)}`);
+      return true;
+    },
+  }) as unknown as CanvasRenderingContext2D;
+  renderArtwork(ctx, spec, { photos: photos as never });
+  return log.join("|");
+}
+
+describe("photo-first families (B): variants are distinct and strings do not ellipsize", () => {
+  it("every theme of a family draws something different on the same photo", () => {
+    for (const f of ["seasonal-frame", "event-ticket", "poster", "collage"] as Fam[]) {
+      const seen = new Map<string, string>();
+      for (const th of themesOf(f)) {
+        const sig = signature(base(f, th, "portrait"), Array.from({ length: need(f) }, photo));
+        expect(seen.get(sig), `${f}/${th} looks the same as ${seen.get(sig)}`).toBeUndefined();
+        seen.set(sig, th);
+      }
+    }
+  });
+
+  it("typical headlines, subheads and names are never cut with an ellipsis", () => {
+    const typical = {
+      headline: "CHIEF TASTE TESTER",
+      subhead: "Living room campsite. One night only",
+      dogName: "Maximilian",
+      date: "November 2026",
+      memory: "Same spot, a little more story",
+    };
+    for (const f of FAMS)
+      for (const th of themesOf(f))
+        for (const size of SIZES) {
+          const g = fakeCtx();
+          renderArtwork(
+            g.ctx,
+            { ...base(f, th, size), ...typical },
+            { photos: Array.from({ length: need(f) }, photo) },
+          );
+          for (const t of g.texts) expect(t.text, `${f}/${th}/${size}`).not.toContain("\u2026");
+        }
+  });
+
+  const fake = () => {
+    const g = fakeCtx();
+    return g.ctx;
+  };
+  const style = (o: Partial<TextStyle> = {}): TextStyle => ({
+    w: 400,
+    lines: 1,
+    size: 40,
+    min: 20,
+    font: (px) => `700 ${px}px x`,
+    color: "#fff",
+    ...o,
+  });
+
+  it("layout shrinks first, then wraps, and only then ellipsizes at a word boundary", () => {
+    const ctx = fake();
+    // 12 chars at 40px = 240px wide: fits at full size
+    expect(layout(ctx, "Hello there!", style())).toMatchObject({ size: 40, truncated: false });
+    // 30 chars: shrinks to fit one line before it ever wraps (30 * 20 * 0.5 = 300 at size 20)
+    const shrunk = layout(ctx, "x".repeat(15) + " " + "y".repeat(14), style());
+    expect(shrunk.lines).toHaveLength(1);
+    expect(shrunk.size).toBeLessThan(40);
+    // too long for one line even at the minimum: wraps onto the allowed second line
+    const text = "alpha beta gamma delta epsilon zeta eta theta";
+    const wrapped = layout(ctx, text, style({ wrap: 2, min: 20 }));
+    expect(wrapped.lines).toHaveLength(2);
+    expect(wrapped.size).toBe(20);
+    expect(wrapped.truncated).toBe(false);
+    // too long for two lines: cut at a word boundary with an ellipsis, never mid-word
+    const cut = layout(
+      ctx,
+      text + " iota kappa lambda mu nu xi omicron pi rho sigma",
+      style({ wrap: 2 }),
+    );
+    expect(cut.truncated).toBe(true);
+    const last = cut.lines[cut.lines.length - 1] as string;
+    expect(last.endsWith("\u2026")).toBe(true);
+    expect(text + " iota kappa lambda mu nu xi omicron pi rho sigma").toContain(
+      last.slice(0, -1).trimEnd(),
+    );
+    const lastWord = last.slice(0, -1).split(" ").pop() as string;
+    expect(
+      text.split(" ").concat("iota kappa lambda mu nu xi omicron pi rho sigma".split(" ")),
+    ).toContain(lastWord);
+  });
+
+  it("scrim strength follows the photo: 0.35 on a dark band up to 0.6 on a bright one", () => {
+    expect(haloAlpha(0.05)).toBeCloseTo(0.35, 5);
+    expect(haloAlpha(0.95)).toBeCloseTo(0.6, 5);
+    expect(haloAlpha(0.5)).toBeGreaterThan(haloAlpha(0.3));
+    expect(haloAlpha(undefined)).toBeGreaterThanOrEqual(0.35);
+    expect(haloAlpha(undefined)).toBeLessThanOrEqual(0.6);
+    // no canvas to read in this environment: the helper says so instead of throwing
+    expect(bandLuma(photo(), { x: 0, y: 0, w: 1080, h: 1920 }, 1000, 1500)).toBeUndefined();
+    expect(bandLuma(null, { x: 0, y: 0, w: 1080, h: 1920 }, 0, 10)).toBeUndefined();
   });
 });

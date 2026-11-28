@@ -3,6 +3,7 @@
 // could not be verified is left out, never invented. No popup, no urgency; one contextual purchase link.
 import { AppLink } from "@/components/shell/AppLink";
 import { price, pricing } from "@/config/commercial";
+import { LIBRARY_CLAIM_MIN } from "@/config/brand";
 import { collections } from "@/passport/content";
 import { track } from "@/passport/events";
 import type { MatchResponse } from "@/lib/previews";
@@ -64,8 +65,8 @@ export function PurchaseValue({
             {titles.length > 0 && <li>Found in: {titles.join(", ")}.</li>}
             <li>
               The full Passport has all {data.matching}
-              {data.total > 0 ? `, from a library of ${data.total}` : ""}. This count includes the
-              introductory adventure and the previews.
+              {data.total >= LIBRARY_CLAIM_MIN ? `, from a library of ${data.total}` : ""}. This
+              count includes the introductory adventure and the previews.
             </li>
           </ul>
         </>

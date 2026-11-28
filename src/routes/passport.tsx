@@ -35,6 +35,7 @@ import { NotificationSettings } from "@/components/passport/NotificationSettings
 import { RestoreAccessCallout } from "@/components/passport/RestoreAccessCallout";
 import { PrintablesCard } from "@/components/printables/PrintablesIndex";
 import { InstallCard } from "@/components/site/InstallCard";
+import { useNavMode } from "@/components/shell/useNavMode";
 import { UpcomingAdventures } from "@/components/passport/UpcomingAdventures";
 
 export const Route = createFileRoute("/passport")({
@@ -64,6 +65,8 @@ function PassportPage() {
   const [msg, setMsg] = useState("");
   const [askDelete, setAskDelete] = useState(false);
   const { all: lib, unlocked: entitled } = useAdventureLibrary();
+  const { mode: accessMode, retry } = useNavMode();
+  const accessError = accessMode === "error";
   const livePlans = usePlans().filter(isLive);
   // Collection Complete is judged against the WHOLE curated collection, so it only counts once the full library is
   // loaded for an entitled customer (never against the free pool alone, which would "complete" a larger collection early).
@@ -132,18 +135,39 @@ function PassportPage() {
           stamps={earned.stamps.length}
           earnedStamps={earned.stamps}
           facts={facts}
+          access={accessError ? "unconfirmed" : entitled ? "paid" : "free"}
         >
-          <div className="pv8-cover-actions">
-            <Button to="/discover">{passportPrimaryLabel(entitled, isRevealed(save))}</Button>
-            <AppLink
-              to="/discover"
-              search={{ mode: "made" } as never}
-              hash="profile"
-              className="pv8-cover-link"
-            >
-              Personalize
-            </AppLink>
-          </div>
+          {accessError ? (
+            <div className="pv8-cover-error" data-testid="access-check-failed" role="status">
+              <p>Having a little trouble opening your Passport. Let's try again.</p>
+              <div className="pv8-cover-actions">
+                <button type="button" className="pp-btn pp-btn-primary" onClick={retry}>
+                  Retry
+                </button>
+                <AppLink to="/contact" className="pv8-cover-link">
+                  Contact support
+                </AppLink>
+                <AppLink to="/restore-access" className="pv8-cover-link">
+                  Restore access
+                </AppLink>
+              </div>
+              <p className="pa-fine">Your adventures and progress on this device are safe.</p>
+            </div>
+          ) : (
+            <div className="pv8-cover-actions">
+              <Button to="/discover">
+                {passportPrimaryLabel(entitled, isRevealed(save), earned.count)}
+              </Button>
+              <AppLink
+                to="/discover"
+                search={{ mode: "made" } as never}
+                hash="profile"
+                className="pv8-cover-link"
+              >
+                Personalize
+              </AppLink>
+            </div>
+          )}
         </PassportCover>
         {saveState !== "saved" && (
           <p className="pa-fine" role="status">
@@ -151,7 +175,7 @@ function PassportPage() {
             Export a backup from Account and privacy before you leave.
           </p>
         )}
-        <SyncStatus />
+        {!accessError && <SyncStatus />}
 
         <div className="pv8-chapters">
           <PassportSection

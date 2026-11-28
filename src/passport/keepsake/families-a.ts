@@ -2,13 +2,14 @@
 // The photograph is the artwork (full-bleed, or a collectible card that is nearly all photo). Everything else is a
 // delicate, semi-transparent overlay in the margins: soft local scrims, small handwriting, hairline frames and vector
 // ornaments. Adventure personality comes from theme entries (accent colours, motifs, frame style and words).
-import { circle, fitText, postmark, type Ctx } from "./render";
+import { circle, cleanText, fitText, postmark, type Ctx } from "./render";
 import {
   W,
   brand,
   fillRound,
   fontOf,
   para,
+  paraHeight,
   placeholder,
   rays,
   rnd,
@@ -48,6 +49,8 @@ import {
 import { hash } from "./kit";
 
 type Photos = ReadonlyArray<PlacedPhoto | null | undefined>;
+const TITLE_LIKE =
+  /\b(champion|master|expert|explorer|captain|ranger|legend|star|hero|detective|agent|chef|ace|wizard|boss|queen|king|genius|pro)\b/i;
 const word = (p: Prep, k: string, d = "") => p.t.words[k] ?? d;
 const cased = (p: Prep, s: string) => (p.t.upper ? s.toUpperCase() : s);
 const WHITE = "#ffffff";
@@ -164,20 +167,6 @@ export const travelPostcard: FamilyDef = {
     const x = z.mx;
     const w = W - 2 * z.mx;
     const st = new Stack();
-    st.add(
-      42,
-      (y) => {
-        tracked(ctx, word(p, "kicker", "ADVENTURE POSTCARD"), x, y + 34, {
-          size: 34,
-          key: "sans",
-          weight: 700,
-          color: acc,
-          maxW: w - 40,
-          track: 5,
-        });
-      },
-      { gap: 12 },
-    );
     st.para(
       ctx,
       p.head,
@@ -235,6 +224,28 @@ export const travelPostcard: FamilyDef = {
       8,
       0.5,
     );
+    scrimV(ctx, 0, z.top + 130, 0.28, 0, W);
+    // the greeting is a small letterspaced line in the top margin, not part of the text stack
+    shadowed(
+      ctx,
+      () =>
+        void tracked(
+          ctx,
+          word(p, "kicker", "ADVENTURE POSTCARD"),
+          z.mx,
+          z.top + (z.story ? 40 : 18),
+          {
+            size: 34,
+            key: "sans",
+            weight: 700,
+            color: SOFT_WHITE,
+            maxW: sx - z.mx - 70,
+            track: 4,
+          },
+        ),
+      12,
+      0.55,
+    );
     hairFrame(ctx, t, 26, 26, W - 52, H - 52, WHITE, acc);
   },
 };
@@ -254,39 +265,35 @@ export const magazineCover: FamilyDef = {
     vignette(ctx, W, H, 0.2);
     const acc = onDark(c.accent, 5);
 
-    // masthead, small and overlaid at the top
-    const mSize = z.sq ? 88 : 104;
-    scrimV(ctx, 0, z.top + mSize + 150, 0.5, 0, W);
+    // masthead: small, left-aligned and kept inside the top 12% band, clear of the subject
+    const mSize = z.story ? 68 : z.sq ? 52 : 58;
+    const pad = z.story ? 84 : z.sq ? 30 : 40;
+    const mBase = pad + Math.round(mSize * 0.85);
+    scrimV(ctx, 0, mBase + 90, 0.42, 0, W);
     shadowed(
       ctx,
       () => {
-        tracked(ctx, word(p, "masthead", "PAW & PASSAGE"), W / 2, z.top + mSize * 0.82, {
+        tracked(ctx, word(p, "masthead", "PAW & PASSAGE"), z.mx, mBase, {
           size: mSize,
           key: bold ? "heavy" : "serif",
           weight: bold ? 900 : 700,
           color: bold ? WHITE : acc,
-          align: "center",
           maxW: W - 2 * z.mx,
-          track: bold ? 4 : 10,
-          min: 56,
+          track: bold ? 3 : 7,
+          min: 40,
         });
-        tracked(ctx, word(p, "tagline"), W / 2, z.top + mSize + 40, {
+        tracked(ctx, word(p, "tagline"), z.mx, mBase + 46, {
           size: 34,
           key: "sans",
           weight: 600,
           color: SOFT_WHITE,
-          align: "center",
           maxW: W - 2 * z.mx,
-          track: 6,
+          track: 5,
         });
       },
       14,
       0.55,
     );
-    if (bold) {
-      ctx.fillStyle = acc;
-      ctx.fillRect(W / 2 - 60, z.top + mSize + 62, 120, 8);
-    }
 
     const x = z.mx;
     const w = W - 2 * z.mx;
@@ -507,9 +514,14 @@ function inkFor(bg: string): string {
 // ====================================================================== trading-card
 
 function cardBox(p: Prep): Slot {
-  const ch = p.spec.size === "square" ? 1040 : p.spec.size === "portrait" ? 1290 : 1340;
-  const cw = Math.round(ch * (5 / 7));
-  return { x: Math.round((W - cw) / 2), y: Math.round((p.H - ch) / 2), w: cw, h: ch };
+  // nearly the whole canvas: about 90% of the width and 84-86% of the height on Story
+  const [cw, ch, y] =
+    p.spec.size === "square"
+      ? [900, 1010, 35]
+      : p.spec.size === "portrait"
+        ? [972, 1190, 80]
+        : [972, 1590, 90];
+  return { x: Math.round((W - cw) / 2), y, w: cw, h: ch };
 }
 
 const CARD_EDGE = 10;
@@ -528,22 +540,21 @@ export const tradingCard: FamilyDef = {
     const b = cardBox(p);
     const acc = onDark(c.accent, 5);
 
-    // backdrop: a soft theme-colour gradient with a gentle glow and vignette (no enlarged ghost copy of the photo)
+    // ground: a light, clean pastel from the theme accent and vanilla, with a very gentle vignette
+    const VANILLA = "#FFF8EF";
     const g = ctx.createLinearGradient(0, 0, 0, H);
-    g.addColorStop(0, mix(c.bg, "#000000", 0.42));
-    g.addColorStop(0.5, mix(c.bg, "#000000", 0.62));
-    g.addColorStop(1, mix(c.bg2, "#000000", 0.7));
+    g.addColorStop(0, mix(c.accent, VANILLA, 0.8));
+    g.addColorStop(1, mix(c.accent2, VANILLA, 0.86));
     ctx.fillStyle = g;
     ctx.fillRect(0, 0, W, H);
-    pool(ctx, W / 2, H / 2, W * 0.85, H * 0.5, 0.35, "255,255,255");
-    vignette(ctx, W, H, 0.35);
+    vignette(ctx, W, H, 0.1);
 
     // card edge: a thin print border in the theme's own colour, with a soft drop shadow
     ctx.save();
-    ctx.shadowColor = "rgba(0,0,0,0.5)";
-    ctx.shadowBlur = 40;
-    ctx.shadowOffsetY = 14;
-    fillRound(ctx, b.x, b.y, b.w, b.h, 44, mix(c.bg, "#ffffff", 0.18));
+    ctx.shadowColor = "rgba(60,40,20,0.3)";
+    ctx.shadowBlur = 36;
+    ctx.shadowOffsetY = 12;
+    fillRound(ctx, b.x, b.y, b.w, b.h, 44, mix(c.bg, "#ffffff", 0.3));
     ctx.restore();
 
     // photo fills the card
@@ -597,7 +608,7 @@ export const tradingCard: FamilyDef = {
     });
 
     // bottom: soft scrim, then type pill, line and note
-    const bottom = s.y + s.h - 34;
+    const bottom = Math.min(s.y + s.h - 34, H - 312);
     const st = new Stack();
     st.add(
       58,
@@ -651,7 +662,7 @@ export const tradingCard: FamilyDef = {
       },
       { gap: 14 },
     );
-    const maxH = Math.round(s.h * 0.4);
+    const maxH = Math.round(s.h * 0.21);
     const h = st.height(maxH);
     ctx.save();
     roundRectPath(ctx, s.x, s.y, s.w, s.h, 32);
@@ -740,26 +751,48 @@ export const certificate: FamilyDef = {
       ctx,
       p.name,
       cx,
-      { w, lines: 1, size: 112 * k, color: WHITE, align: "center", lh: 1, min: 60 },
+      { w, lines: 1, size: 112 * k, color: WHITE, align: "center", lh: 1, min: 48 },
       { gap: 6 },
     );
-    st.para(
-      ctx,
-      `${word(p, "verb", "has earned")} ${p.head}`,
-      cx,
-      {
+    const raw = cleanText(p.spec.headline, 60);
+    if (raw) {
+      // "has earned the title of" only for a title-like headline; otherwise "in recognition of"
+      const phrase = TITLE_LIKE.test(raw) ? "has earned the title of" : "in recognition of";
+      const start = 56 * k;
+      let size = start;
+      let lines = 2;
+      for (; size >= 46; size -= 2) {
+        ctx.font = fontOf(t.display, 600)(size);
+        if (ctx.measureText(raw).width <= w) {
+          lines = 1;
+          break;
+        }
+      }
+      if (lines === 2) size = Math.max(46, Math.round(start * 0.9));
+      const o = {
         w,
-        lines: 2,
-        size: 46 * k,
-        min: 34,
+        lines,
+        size,
+        min: 36,
         key: t.display,
         weight: 600,
         color: WHITE,
-        align: "center",
-        lh: 1.12,
-      },
-      { gap: 10, drop: 5 },
-    );
+        align: "center" as const,
+        lh: 1.1,
+      };
+      st.add(
+        46 + paraHeight(ctx, raw, o),
+        (y) => {
+          ctx.font = fontOf("serif", 400, true)(38);
+          ctx.fillStyle = SOFT_WHITE;
+          ctx.textAlign = "center";
+          ctx.textBaseline = "alphabetic";
+          ctx.fillText(phrase, cx, y + 34);
+          para(ctx, raw, cx, y + 46, o);
+        },
+        { gap: 10, drop: 5 },
+      );
+    }
     st.para(
       ctx,
       p.sub || word(p, "foot"),

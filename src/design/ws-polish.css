@@ -19,7 +19,10 @@ main nav[aria-label="Breadcrumb"] li > span[aria-hidden] {
   margin-left: 0.2rem;
 }
 main nav[aria-label="Breadcrumb"] li > a {
-  min-width: 0;
+  min-width: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   padding-inline: 0.15rem;
   text-decoration: none;
 }

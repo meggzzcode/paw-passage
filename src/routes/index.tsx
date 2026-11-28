@@ -6,7 +6,7 @@ import { Container } from "@/components/shell/Container";
 import { SectionHeading } from "@/components/shell/SectionHeading";
 import { pageHead } from "@/lib/seo";
 import { site } from "@/config/site";
-import { BRAND } from "@/config/brand";
+import { BRAND, LIBRARY_CLAIM_MIN } from "@/config/brand";
 import { PhotoFilterExamples } from "@/components/site/PhotoFilterExamples";
 import { HOME_EXAMPLES } from "@/components/site/keepsake-examples";
 import { FaqList } from "@/components/site/FaqList";
@@ -25,7 +25,6 @@ import {
   pricing,
 } from "@/config/commercial";
 import { unlockLine, usePremiumSummary } from "@/lib/premium-summary";
-import { usePreviews } from "@/lib/usePreviews";
 import { track } from "@/passport/events";
 import { PREVIEWS_PATH } from "@/passport/starter";
 import { WORLDS } from "@/passport/worlds";
@@ -80,12 +79,10 @@ const STEPS = [
 
 function SalesHome() {
   const summary = usePremiumSummary();
-  const previews = usePreviews();
-  // Counts are advertised only when the previews API verified them; otherwise the summary or honest fallback wording.
-  const variety =
-    previews.status === "ready" && (previews.data?.total ?? 0) > 0
-      ? libraryLine(previews.data?.total, collections.length)
-      : unlockLine(summary);
+  // Public counts: the verified summary count when it is at least the approved claim, else the claim itself (never a smaller number).
+  const variety = summary
+    ? unlockLine(summary)
+    : libraryLine(LIBRARY_CLAIM_MIN, collections.length);
   return (
     <>
       <section className="pp-hero" aria-labelledby="home-h1">
